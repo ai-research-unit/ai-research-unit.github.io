@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Krein Form and Its Physical Interpretation — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-krein-form-and-its-physical-interpretation"><strong>The Krein Form and Its Physical Interpretation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four forms, one to each of its four general
+products, and the fourth is the <strong>Krein form</strong></p>
+<p>$$
+\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu}=P_t\overline{Q_t}-P_x\overline{Q_x}-P_y\overline{Q_y}-P_z\overline{Q_z},
+$$</p>
+<p>the gauge form of the framework: Hermitian, indefinite, of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
+$\mathbb{R}$, real at its two equal arguments, and unable to normalise a state. The four forms and their
+readings are <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>; the general product
+whose scalar part it is belongs to <em>The Products, Their Forms
+and Their Norms</em>; and the band whose product is the form read on a pair is <em>The Biquaternioid Symmetric Quaternionic Sesqualgebra
+(SQS) over $\mathbb{C}$</em>.</p>
+<p>The form carries a whole indefinite structure, grouped in the mathematics menu under <em>The Krein Form</em>: the <strong>fundamental
+symmetry</strong> that makes it a definite form in disguise, its <strong>Gram matrix</strong> and the signatures of its restrictions, its <strong>isotropic
+structure</strong>, its <strong>orthogonality</strong> and the fundamental decomposition, and the <strong>two cones</strong> of its positivity. This article
+collects those results, each with the mathematics article that owns it, and gives the physical interpretation of each. It proves
+nothing; every result is owned on the mathematics side, and every reading is labelled as a reading.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
+$e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is
+$\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the
+coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is
+$\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$;
+$\|\tilde Q\|_E^{2}=\langle\tilde Q,\tilde Q\rangle_{*}$ is the Euclidean square; and $c,v$ are the centre and vector parts of an
+element. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<h2 id="the-results">The Results</h2>
+<h3 id="the-form-and-its-fundamental-symmetry">The Form and Its Fundamental Symmetry</h3>
+<ul>
+<li><strong>The fundamental symmetry.</strong> The natural conjugation $J={}^{\natural}$ is a fundamental symmetry of the form: it is
+$\mathbb{C}$-<strong>linear</strong>, $J^{2}=\mathrm{id}$, self-adjoint for the Krein form, and it carries the bridge identity
+$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$ from the indefinite form to the positive
+definite Hermitian one. Owner: <em>The Fundamental Symmetry of the Biquaternioid Algebra</em>.</li>
+<li><strong>The eigenspaces and the family.</strong> The eigenspaces of $J$ are the centre and the vector subspace, and they are the
+<strong>fundamental decomposition</strong> of the algebra; all the other fundamental symmetries are parametrised by the open unit ball
+$\lVert\tilde V\rVert_E<1$ of the vector subspace. Among them ${}^{\natural}$ alone is an <strong>anti-automorphism</strong> of the
+algebra. Owner: <em>The Fundamental Symmetry of the Biquaternioid Algebra</em>.</li>
+<li><strong>The Pontryagin data.</strong> The inertia of the form is $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, with negative
+index $3$ and $6$ and Pontryagin index $1$ and $2$, so the algebra is a $\Pi_3$ space over $\mathbb{C}$ and a $\Pi_6$ one over
+$\mathbb{R}$. Owner: <em>The Fundamental Symmetry of the Biquaternioid Algebra</em>.</li>
+</ul>
+<h3 id="the-gram-matrix-and-the-restrictions">The Gram Matrix and the Restrictions</h3>
+<ul>
+<li><strong>The Gram matrix.</strong> In the coefficient basis the Gram matrix is the sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$ of
+determinant $-1$, and in the real basis it is $\operatorname{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$; in the $2\times2$
+model the form is the Hilbert–Schmidt pairing
+$\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde Q)^{\dagger}\mathsf{M}_2(\tilde P))$.
+Owner: <em>The Krein Gram Matrix and the Restrictions of the Form</em>.</li>
+<li><strong>The restrictions.</strong> By Sylvester's law the inertia is $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; on the
+remarkable subspaces the restriction is $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the
+quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces. Owner: <em>The Krein Gram Matrix and the Restrictions of the
+Form</em>.</li>
+<li><strong>The complementarity.</strong> The centre and the vector subspace are mutual Krein-orthogonal complements, and the discriminant is of
+class $-1$ over $\mathbb{R}$. Owner: <em>The Krein Gram Matrix and the Restrictions of the Form</em>.</li>
+</ul>
+<h3 id="the-isotropic-structure">The Isotropic Structure</h3>
+<ul>
+<li><strong>The null set.</strong> The <strong>Krein null set</strong> is
+$\mathcal{K}=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$, a real cone of
+dimension $7$, non-singular off the apex. Owner: <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>.</li>
+<li><strong>The comparison with the zero-divisor cone.</strong> The zero-divisor cone of the algebraic norm is a real cone of dimension $6$,
+and it meets the Krein null set in the union of the <strong>doubly-null lines</strong> $\mathbb{C}(e_t\pm i\hat\mu)$ over the real unit
+directions $\hat\mu$, a cone of real dimension $4$; those lines are exactly the Peirce lines of the rank-one Hermitian idempotents.
+Owner: <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>.</li>
+<li><strong>The totally isotropic subspaces.</strong> The Witt index is $\min(1,3)=1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; the maximal
+isotropic complex line is $\mathbb{C}(e_t+\vec e_x)$ and the maximal isotropic real plane is
+$\mathrm{span}_\mathbb{R}\{e_t+\vec e_x,i(e_t+\vec e_x)\}$. Owner: <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>.</li>
+</ul>
+<h3 id="the-krein-orthogonality-and-the-fundamental-decomposition">The Krein Orthogonality and the Fundamental Decomposition</h3>
+<ul>
+<li><strong>The complement.</strong> Two elements are Krein-orthogonal when their form vanishes, and a subspace and its Krein-orthogonal
+complement satisfy $\dim\mathbb{W}+\dim\mathbb{W}^{\perp_K}=4$ over $\mathbb{C}$, with non-degeneracy exactly when
+$\mathbb{W}\cap\mathbb{W}^{\perp_K}=\{0\}$. Owner: <em>Krein Orthogonality and the Fundamental Decomposition</em>.</li>
+<li><strong>The classification.</strong> A subspace is definite, neutral, degenerate or totally isotropic according to the inertia of the
+restricted form; the neutral plane is $\mathrm{span}_\mathbb{R}\{e_t+\vec e_x,e_t-\vec e_x\}$ and the complex dimension bounds are
+$1$ and $3$. Owner: <em>Krein Orthogonality and the Fundamental Decomposition</em>.</li>
+<li><strong>The fundamental decomposition and the projections.</strong> The maximal positive definite subspaces are the lines
+$\mathbb{C}(e_t+\tilde V)$ with $\lVert\tilde V\rVert_E<1$; the decomposition $\mathbb{W}\perp_K\mathbb{W}^{\perp_K}$ carries its
+fundamental symmetry $J_{\mathbb{W}}$, and the $J$-self-adjoint idempotents are exactly the Krein-orthogonal projections onto
+the non-degenerate subspaces, a class strictly larger than the definite-orthogonal projections that commute with $J$.
+Owner: <em>Krein Orthogonality and the Fundamental Decomposition</em>.</li>
+</ul>
+<h3 id="the-indefinite-positivity-and-the-krein-cone">The Indefinite Positivity and the Krein Cone</h3>
+<ul>
+<li><strong>The Krein cone.</strong> On the elements the set of non-negative Krein square,
+$P_K=\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}\ge0\}=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$, is a cone whose
+boundary is the Krein null set; it is closed but neither convex nor pointed. Owner: <em>Indefinite Positivity and the Krein Cone of
+the Biquaternioid Algebra</em>.</li>
+<li><strong>The Hermitian cone inside it.</strong> The intersection of $P_K$ with the Hermitian subspace is the full light cone of the interval
+form, and its future nappe is the Hermitian cone $P=\{\tilde Q^{*}\tilde Q\}$ of the dagger; hence $P\subseteq P_K$. Owner:
+<em>Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra</em>.</li>
+<li><strong>The operator cone.</strong> On the operators the $J$-positive cone
+$\mathcal{P}_J=\{T=T^{\dagger}:\langle\tilde Q,T\tilde Q\rangle_{\natural*}\ge0\}=J\cdot\{S\ge0\}$ is closed and convex, stable
+under sums and $J$-adjoints, and contains $J$ but not the identity;
+the $J$-projections are exactly the Krein-orthogonal projections onto the non-degenerate subspaces, and the
+$J$-Cartan involution $\theta_J(T)=(T^{\dagger})^{-1}$ has the fixed group $U_J(\mathbb{B})\cong \mathrm{U}(1,3)$. Owner:
+<em>Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra</em>.</li>
+</ul>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<ul>
+<li><strong>The gauge form pairs two frames and never ranks them.</strong> It is indefinite — positive on the centre directions and negative
+on the vector ones — so it fixes no overall sign and ranks nothing. It normalises nothing: its real value at equal arguments
+carries a signature and is not a weight. The definite companion that carries a weight is the Hermitian form
+$\langle\tilde P,\tilde Q\rangle_{*}$, the Born pairing, and the two are the invariant pair of the frame — the same pair the
+gauge band reads as a product.</li>
+<li><strong>On matter, the gauge form and the interval are one form read with a sign.</strong> On the material sector the Krein form is minus
+the interval, $\langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{\natural}$, so the gauge calibration of matter
+is minus the spacetime interval; the light cone of the interval is the Krein null cone of the gauge form, and the level sets of
+one are the level sets of the other up to sign. The framework reads this as the statement that the metric of the material sector
+and the form of the frame are the same algebra object, the sign being the whole of their difference; on the informational sector
+the two coincide.</li>
+<li><strong>The fundamental symmetry is the frame's own parity.</strong> The gauge form is the definite Hermitian form transported by
+$J={}^{\natural}$, the natural conjugation that fixes the scale and reverses every direction. Physically this is the parity of
+the frame: the split of the algebra into the clock direction (the centre) and the spatial directions (the vector subspace). That
+${}^{\natural}$ alone is an anti-automorphism of the algebra is the statement that the gauge's parity is not an extra choice but
+the algebra's own involution, the one that respects the multiplication.</li>
+<li><strong>The sign vector is the gauge itself and not an index.</strong> The metric of the series is the sign vector $\varepsilon$ inside the
+product, so no index is raised and none is lowered, and the gauge is a permanent $(1,3)$: one sense of scale and three of
+direction. The framework reads the Minkowski-type sign pattern as carried by the algebra and not imposed from outside — it is
+the natural conjugation of the first slot that installs the sign, exactly as the star of the second slot installs the bar.</li>
+<li><strong>The gauge null cone is not the zero-divisor cone.</strong> Over the complex space the Krein null cone (dimension $7$) and the
+zero-divisor cone (real dimension $6$) are two different sets and neither contains the other: $e_t+\vec e_x$ is gauge-null
+with interval $2$, and $\vec e_x+i\vec e_y$ has interval $0$ with gauge square $-2$. They meet exactly on the doubly-null
+lines $\mathbb{C}(e_t\pm i\hat\mu)$, the Peirce lines of the rank-one Hermitian idempotents, which generate the minimal
+ideals. On the material sector, where the gauge form is minus the interval, the two null sets coincide with the light cone,
+so the distinction is a property of the complex space and not of a sector.</li>
+<li><strong>Orthogonality is indefinite, so a projection is a frame and not a metric.</strong> Two subspaces can be gauge-orthogonal and still
+meet, and a projection is Krein-orthogonal — self-adjoint for the form — exactly when it projects onto a non-degenerate
+subspace. The maximal positive definite subspaces are the lines $\mathbb{C}(e_t+\tilde V)$ with
+$\lVert\tilde V\rVert_E<1$, the time axes of observers. Physically: a gauge projection is fixed by the form together with the chosen time line, so two observers with
+different time lines project differently, and the Krein Gram–Schmidt is the frame-dependent form of the orthogonalisation.</li>
+<li><strong>The positivity of the gauge is twofold, and its identity is the frame reflection.</strong> The Krein cone is a causal structure and
+not a state space: it is closed but not convex and not pointed, and it carries the interval's light cone on the informational
+sector. The operator cone $J\cdot\{S\ge0\}$ contains $J$ and not the algebra unit, so the "identity" of the gauge is the frame
+reflection. Physically: the gauge's positivity is transported by the reflection of the vector directions, which is why the gauge
+compares frames and never counts states — the counting is the Hermitian form's work.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ is the fourth form of
+the biquaternion algebra, the indefinite Hermitian gauge form of signature $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over
+$\mathbb{R}$. Its structure is fivefold and is owned on the mathematics side: the fundamental symmetry $J={}^{\natural}$ with the
+bridge to the definite form, the Gram matrix and the signatures of the restrictions, the isotropic structure with the doubly-null
+lines, the Krein orthogonality and the fundamental decomposition with the Krein-orthogonal projections, and the two cones of the
+indefinite positivity. On the material sector the form is minus the interval, so the metric and the gauge form are one object read
+with a sign; the readings above are the framework's, each labelled, and none of them is a proof.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$</td>
+<td>the Krein form, the gauge form; signature $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\varepsilon=(1,-1,-1,-1)$</td>
+<td>the sign vector, the gauge inside the product</td>
+</tr>
+<tr>
+<td>$E=\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>the Gram matrix of the form in the coefficient basis</td>
+</tr>
+<tr>
+<td>$J={}^{\natural}$</td>
+<td>the fundamental symmetry, $\mathbb{C}$-linear, $J^{2}=\mathrm{id}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*}$</td>
+<td>the bridge from the indefinite form to the definite one</td>
+</tr>
+<tr>
+<td>$\mathcal{K}=\{\lVert c\rVert_E=\lVert v\rVert_E\}$</td>
+<td>the Krein null set, of real dimension $7$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_t\pm i\hat\mu)$</td>
+<td>the doubly-null lines, crossing of the Krein and the zero-divisor cones</td>
+</tr>
+<tr>
+<td>$\mathbb{C}(e_t+\tilde V)$, $\lVert\tilde V\rVert_E<1$</td>
+<td>the maximal positive definite subspaces, the time axes</td>
+</tr>
+<tr>
+<td>$P_K=\{\lVert c\rVert_E\ge\lVert v\rVert_E\}$</td>
+<td>the Krein cone; closed, not convex, not pointed</td>
+</tr>
+<tr>
+<td>$\mathcal{P}_J=J\cdot\{S\ge0\}$</td>
+<td>the $J$-positive operator cone, containing $J$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the informational and material sectors; $K=\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_+$ and $K=-\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1,3)$</td>
+<td>the fixed group of the $J$-Cartan involution</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The mathematics group <em>The Krein Form</em> (<code>maths.md</code>), for the five articles whose results are listed above: <em>The Fundamental
+Symmetry of the Biquaternioid Algebra</em>, <em>The Krein Gram Matrix and the Restrictions of the Form</em>, <em>The Isotropic Structure of the
+General Quaternionic Sesqualgebra</em>, <em>Krein Orthogonality and the Fundamental Decomposition</em> and <em>Indefinite Positivity and the
+Krein Cone of the Biquaternioid Algebra</em>.</li>
+<li>Mathematics article <em>The Fundamental Symmetry of the Biquaternioid Algebra</em>
+(<code>articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md</code>), for the symmetry $J={}^{\natural}$, the bridge and
+the Pontryagin data.</li>
+<li>Mathematics article <em>The Krein Gram Matrix and the Restrictions of the Form</em>
+(<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>), for the Gram matrix, the inertia and the
+restrictions.</li>
+<li>Mathematics article <em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>
+(<code>articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md</code>), for the null set, the Witt index and
+the doubly-null lines.</li>
+<li>Mathematics article <em>Krein Orthogonality and the Fundamental Decomposition</em>
+(<code>articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md</code>), for the complement, the classification and the
+projections.</li>
+<li>Mathematics article <em>Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra</em>
+(<code>articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md</code>), for the two cones and the $J$-Cartan
+involution.</li>
+<li>Companion article <em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>, for the four forms, their signatures and
+their readings.</li>
+<li>Companion article <em>The Biquaternion Mathematics Corpus</em>, for the mathematics corpus as a whole and for the principle that no
+result is owned on the physics side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,7 +51,7 @@
       <div class="article-body">
         <h1 id="one-sided-operators-on-the-general-plain-sesqualgebra"><strong>One-Sided Operators on the General Plain Sesqualgebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde T,\tilde R)=\mathrm{Sc}(\tilde{T}^{*}\tilde R)$, whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is the identity. For $\tilde B\in\mathbb{B}$ define the <strong>left</strong> and the <strong>right multiplication</strong></p>
+<p>Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde T,\tilde R)=\mathrm{Sc}(\tilde{T}^{*}\tilde R)$, whose Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the identity. For $\tilde B\in\mathbb{B}$ define the <strong>left</strong> and the <strong>right multiplication</strong></p>
 <p>$$
 L_{\tilde B}(\tilde R) = \tilde B\,\tilde R ,\qquad R_{\tilde C}(\tilde R) = \tilde R\,\tilde C .
 $$</p>
@@ -66,10 +65,10 @@ L_{\tilde B}(\tilde R)=\tilde B\,\tilde R,\qquad R_{\tilde C}(\tilde R)=\tilde R
 $$</p>
 <p><strong>Proposition (linearity in the parameter).</strong> The assignments $\tilde B\mapsto L_{\tilde B}$ and $\tilde C\mapsto R_{\tilde C}$ are $\mathbb{C}$-linear and injective:</p>
 <p>$$
-L_{\alpha \tilde B+\beta \tilde B'} = \alpha L_{\tilde B} + \beta L_{\tilde B'},\qquad R_{\alpha \tilde C+\beta \tilde C'} = \alpha R_{\tilde C} + \beta R_{\tilde C'},
+L_{\alpha \tilde B_1+\beta \tilde B_2} = \alpha L_{\tilde B_1} + \beta L_{\tilde B_2},\qquad R_{\alpha \tilde C_1+\beta \tilde C_2} = \alpha R_{\tilde C_1} + \beta R_{\tilde C_2},
 $$</p>
 <p>and $L_{\tilde B}=0$ or $R_{\tilde C}=0$ implies $\tilde B=0$ or $\tilde C=0$.</p>
-<p><em>Proof.</em> The two displays are the distributivity of the algebra, and the injectivity follows by evaluating on $e_{0}$.</p>
+<p><em>Proof.</em> The two displays are the distributivity of the algebra, and the injectivity follows by evaluating on $e_t$.</p>
 <p><strong>Remark (the contrast with the two-sided case).</strong> The parameter enters <strong>once</strong>, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta \tilde Q}(\tilde R)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde R)+\beta\beta^{*}\Theta_{\tilde Q}(\tilde R)+(\alpha\beta^{*}\tilde T\tilde R \bar{\tilde Q}+\beta\alpha^{*}\tilde Q\tilde R\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.</p>
 <h2 id="the-composition-laws">The Composition Laws</h2>
 <p><strong>Theorem (the four composition laws).</strong> For all $\tilde B,\tilde C\in\mathbb{B}$,</p>
@@ -101,29 +100,29 @@ L_{\tilde B}\ \text{unitary} \iff \tilde B\in U,\qquad
 L_{\tilde B}\ \text{an automorphism of } (\cdot,\cdot) \iff \tilde B\in U,
 $$</p>
 <p>and $L_{\tilde B}$ is invertible if and only if $\tilde B\in\mathbb{B}^{\times}$, with inverse $L_{\tilde B^{-1}}$. The same four statements hold for the right multiplication with the same criteria on the parameter.</p>
-<p><em>Proof.</em> By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde R,L_{\tilde B}\tilde Q)=(\tilde R,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element.</p>
+<p><em>Proof.</em> By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_t$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde R,L_{\tilde B}\tilde Q)=(\tilde R,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element.</p>
 <p><strong>Corollary (the two sectors give the two types).</strong> The Hermitian and the anti-Hermitian elements act by the self-adjoint and by the skew-adjoint operators respectively, and the correspondence is exactly that of the involutions of the algebra:</p>
 <p>$$
 L_{\mathbb{M}_+} = \text{self-adjoint operators},\qquad L_{\mathbb{M}_-} = \text{skew-adjoint operators}.
 $$</p>
 <p>This is the sharpest contrast with the companion article, where both sectors give self-adjoint operators and no nonzero operator is skew: there the parameter appears twice, and the sign that separates the sectors is squared away.</p>
-<p><strong>Corollary (the exponential and the unitary group).</strong> Since $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, the image of the slice $U$ under $L$ is a group of unitary operators isomorphic to $U(2)$, and the image of the anti-Hermitian subspace $\mathbb{M}_-$ is a space of skew-adjoint operators closed under the commutator, that is the Lie algebra of that unitary group. The exponential of a skew-adjoint one-sided operator is again one-sided: $\exp(L_{\tilde B})=L_{\exp(\tilde B)}$ for $\tilde B\in\mathbb{M}_-$, since the exponential series and the linearity of the assignment commute. In the matrix model this is the familiar statement that the anti-Hermitian matrices exponentiate into $U(2)$.</p>
+<p><strong>Corollary (the exponential and the unitary group).</strong> Since $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, the image of the slice $U$ under $L$ is a group of unitary operators isomorphic to $\mathrm{U}(2)$, and the image of the anti-Hermitian subspace $\mathbb{M}_-$ is a space of skew-adjoint operators closed under the commutator, that is the Lie algebra of that unitary group. The exponential of a skew-adjoint one-sided operator is again one-sided: $\exp(L_{\tilde B})=L_{\exp(\tilde B)}$ for $\tilde B\in\mathbb{M}_-$, since the exponential series and the linearity of the assignment commute. In the matrix model this is the familiar statement that the anti-Hermitian matrices exponentiate into $\mathrm{U}(2)$.</p>
 <h2 id="the-commutant-and-the-double-centraliser">The Commutant and the Double Centraliser</h2>
 <p><strong>Theorem (the double centraliser).</strong> An operator $S\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ commutes with every left multiplication if and only if it is a right multiplication, and conversely:</p>
 <p>$$
 \{\,S : SL_{\tilde B}=L_{\tilde B}S\ \ \forall \tilde B\,\} = \{\,R_{\tilde C} : \tilde C\in\mathbb{B}\,\},\qquad
 \{\,S : SR_{\tilde C}=R_{\tilde C}S\ \ \forall \tilde C\,\} = \{\,L_{\tilde B} : \tilde B\in\mathbb{B}\,\}.
 $$</p>
-<p><em>Proof.</em> Let $S$ commute with all $L_{\tilde B}$ and put $\tilde C=S(e_{0})$. For every $\tilde B$, using $\tilde B=L_{\tilde B}(e_{0})$ and the commutation,</p>
+<p><em>Proof.</em> Let $S$ commute with all $L_{\tilde B}$ and put $\tilde C=S(e_t)$. For every $\tilde B$, using $\tilde B=L_{\tilde B}(e_t)$ and the commutation,</p>
 <p>$$
-S(\tilde B) = S\bigl(L_{\tilde B}(e_{0})\bigr) = L_{\tilde B}\bigl(S(e_{0})\bigr) = \tilde B\,\tilde C = R_{\tilde C}(\tilde B),
+S(\tilde B) = S\bigl(L_{\tilde B}(e_t)\bigr) = L_{\tilde B}\bigl(S(e_t)\bigr) = \tilde B\,\tilde C = R_{\tilde C}(\tilde B),
 $$</p>
 <p>so $S=R_{\tilde C}$; the converse is the third composition law. The second identity is the same argument with the roles exchanged.</p>
 <p><strong>Corollary (the bicommutant is the scalars).</strong> An operator commuting with both families is a scalar multiple of the identity:</p>
 <p>$$
 \{\,S : SL_{\tilde B}=L_{\tilde B}S\ \text{and}\ SR_{\tilde C}=R_{\tilde C}S\ \ \forall \tilde B,\tilde C\,\} = \mathbb{C}\,\mathrm{id}.
 $$</p>
-<p><em>Proof.</em> By the theorem $S=R_{\tilde C}$ for some $\tilde C$, and the commutation with every $R_{c}$ reads $R_{c}R_{\tilde C}=R_{\tilde C}R_{c}$, that is $\tilde Cc=c\tilde C$ for all $c$ by the second composition law; so $\tilde C$ is central, $\tilde C=\lambda e_{0}$, and $R_{\lambda e_{0}}=\lambda\,\mathrm{id}$.</p>
+<p><em>Proof.</em> By the theorem $S=R_{\tilde C}$ for some $\tilde C$, and the commutation with every $R_{\tilde B}$ reads $R_{\tilde B}R_{\tilde C}=R_{\tilde C}R_{\tilde B}$, that is $\tilde C\tilde B=\tilde B\tilde C$ for all $\tilde B$ by the second composition law; so $\tilde C$ is central, $\tilde C=\lambda e_t$, and $R_{\lambda e_t}=\lambda\,\mathrm{id}$.</p>
 <p><strong>Remark (why the two families are exactly two).</strong> The algebra is central simple, of complex dimension four, and the left regular representation has the same dimension; the double centraliser theorem then says that the left and the right multiplications exhaust each other's commutants, with the centre as the only overlap. There is no room for a third independent family of one-sided operators.</p>
 <h2 id="the-form-that-makes-the-action-self-adjoint">The Form That Makes the Action Self-Adjoint</h2>
 <p><strong>Theorem (the defining property of the form).</strong> The scalar form satisfies, for all $\tilde B,\tilde R,\tilde Q$,</p>
@@ -134,14 +133,14 @@ $$</p>
 <p><em>Proof.</em> The identity is the adjoint theorem. For the uniqueness, let $\phi$ be such a form with matrix $G$ in the basis. The invariance with respect to every $L_{\tilde B}$ reads $G A = A^{\dagger}G$ for every matrix $A=\mathsf{M}_2(\tilde B)$ of the algebra; taking $A$ running over the matrix units forces $G$ to be a scalar matrix, and positivity then forces the scalar to be positive. See <em>Hermitian Modules over a Hermitian Algebra with Hermitian Adjoint</em> and <em>The Adjoint of the One-Sided Action with Hermitian Adjoint</em> for the general statement.</p>
 <p><strong>Corollary (the module picture).</strong> The algebra, seen as a module over itself carrying the form $(\cdot,\cdot)$, is a <strong>Hermitian Clifford module</strong> in the sense of the corpus: the action is by left multiplication and the adjoint of the action is the action of the adjoint element. The two-sided operator is then the operator of the module with both factors, $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}=L_{\tilde B}(R_{\tilde B})^{*}$, the product of the action with the adjoint of the <em>other</em> action. Note that $L_{\tilde B}L_{\tilde B}^{*}=L_{\tilde B}L_{\tilde{B}^{*}}=L_{\tilde B\tilde{B}^{*}}$ is left multiplication by the Hermitian element $\tilde B\tilde{B}^{*}$, which is <strong>not</strong> $\Theta_{\tilde B}$; the two factors of the sandwich are one left and one right, and never two left.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The identity and the central scalars.</strong> $L_{e_{0}}=R_{e_{0}}=\mathrm{id}$. For a central scalar $\lambda e_{0}$ the two one-sided operators agree, $L_{\lambda e_{0}}=R_{\lambda e_{0}}=\lambda\,\mathrm{id}$, and they are self-adjoint exactly for $\lambda$ real, skew-adjoint exactly for $\lambda$ imaginary, unitary exactly for $\lvert\lambda\rvert=1$. The central circle gives the scalar unitary operators, a subgroup $U(1)$ of the group of unitary operators, to be compared with the kernel $U(1)$ of the two-sided assignment.</p>
-<p><strong>The vector generators.</strong> For $\tilde B=e_{k}$, $k=1,2,3$, one has $e_{k}^{\dagger}=-e_{k}$ and $e_{k}^{2}=-e_{0}$, so $L_{e_{k}}$ is skew-adjoint and $L_{e_{k}}^{2}=L_{-e_{0}}=-\mathrm{id}$: the left multiplication by a vector generator is a complex structure on the algebra, of square minus the identity. This is the operator form of the relations of the Clifford structure (<em>Biquaternion Other Algebraic Element Representations</em>), and the three operators $L_{e_{1}},L_{e_{2}},L_{e_{3}}$ satisfy the anticommutation relations of the generators.</p>
-<p><strong>A parameter in neither sector.</strong> For $\tilde B=e_{1}+ie_{2}$ the dagger acts as $\tilde{B}^{*}=-e_{1}+ie_{2}$, so the Hermitian part of the parameter is $(\tilde B+\tilde{B}^{*})/2=ie_{2}$, which lies in $\mathbb{M}_+$, and the anti-Hermitian part is $(\tilde B-\tilde{B}^{*})/2=e_{1}$, which lies in $\mathbb{M}_-$. Accordingly the operator splits into a self-adjoint and a skew-adjoint part,</p>
+<p><strong>The identity and the central scalars.</strong> $L_{e_t}=R_{e_t}=\mathrm{id}$. For a central scalar $\lambda e_t$ the two one-sided operators agree, $L_{\lambda e_t}=R_{\lambda e_t}=\lambda\,\mathrm{id}$, and they are self-adjoint exactly for $\lambda$ real, skew-adjoint exactly for $\lambda$ imaginary, unitary exactly for $\lvert\lambda\rvert=1$. The central circle gives the scalar unitary operators, a subgroup $\mathrm{U}(1)$ of the group of unitary operators, to be compared with the kernel $\mathrm{U}(1)$ of the two-sided assignment.</p>
+<p><strong>The vector generators.</strong> For $\tilde B=\vec e_\mu$, $\mu\in\{x,y,z\}$, one has $\vec e_\mu^{\dagger}=-\vec e_\mu$ and $\vec e_\mu^{2}=-e_t$, so $L_{\vec e_\mu}$ is skew-adjoint and $L_{\vec e_\mu}^{2}=L_{-e_t}=-\mathrm{id}$: the left multiplication by a vector generator is a complex structure on the algebra, of square minus the identity. This is the operator form of the relations of the Clifford structure (<em>Biquaternion Other Algebraic Element Representations</em>), and the three operators $L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}$ satisfy the anticommutation relations of the generators.</p>
+<p><strong>A parameter in neither sector.</strong> For $\tilde B=\vec e_x+i\vec e_y$ the dagger acts as $\tilde{B}^{*}=-\vec e_x+i\vec e_y$, so the Hermitian part of the parameter is $(\tilde B+\tilde{B}^{*})/2=i\vec e_y$, which lies in $\mathbb{M}_+$, and the anti-Hermitian part is $(\tilde B-\tilde{B}^{*})/2=\vec e_x$, which lies in $\mathbb{M}_-$. Accordingly the operator splits into a self-adjoint and a skew-adjoint part,</p>
 <p>$$
-L_{\tilde B} = L_{ie_{2}} + L_{e_{1}},
+L_{\tilde B} = L_{i\vec e_y} + L_{\vec e_x},
 $$</p>
 <p>and is therefore of neither of the two types, in agreement with the theorem: the parameter is in neither sector. The example records where the type is decided: by the parameter, through the sector it lies in, and never by the argument.</p>
-<p><strong>A mixed operator that is not two-sided.</strong> The operator $\tilde R\mapsto e_{1}\tilde Re_{2}=L_{e_{1}}R_{e_{2}}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_{0})=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde B}R_{\tilde C}$ is two-sided only if $\tilde B\tilde C\in\mathbb{M}_+$, and when $\tilde C=\lambda \tilde{B}^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde B}R_{\tilde C}=\Theta_{\mu \tilde B}$. Its adjoint is $L_{e_{1}^{\dagger}}R_{e_{2}^{\dagger}}=L_{-e_{1}}R_{-e_{2}}=L_{e_{1}}R_{e_{2}}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.</p>
+<p><strong>A mixed operator that is not two-sided.</strong> The operator $\tilde R\mapsto \vec e_x\tilde R\vec e_y=L_{\vec e_x}R_{\vec e_y}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_t)=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_x\vec e_y=\vec e_z$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde B}R_{\tilde C}$ is two-sided only if $\tilde B\tilde C\in\mathbb{M}_+$, and when $\tilde C=\lambda \tilde{B}^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde B}R_{\tilde C}=\Theta_{\mu \tilde B}$. Its adjoint is $L_{\vec e_x^{\dagger}}R_{\vec e_y^{\dagger}}=L_{-\vec e_x}R_{-\vec e_y}=L_{\vec e_x}R_{\vec e_y}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.</p>
 <p><strong>A check of the composition and the adjoint.</strong> For random $\tilde B,\tilde C$ and random $\tilde R,\tilde Q$, the identities $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ and $(L_{\tilde B}\tilde R,\tilde Q)=(\tilde R,L_{\tilde{B}^{*}}\tilde Q)$ were verified to machine precision, as were the four type criteria over the four subspaces.</p>
 <h2 id="summary">Summary</h2>
 <p>The left and the right multiplications $L_{\tilde B}(\tilde R)=\tilde B\tilde R$ and $R_{\tilde C}(\tilde R)=\tilde R\tilde C$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}$. The parameter enters <strong>linearly</strong>, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $R_{\tilde B}R_{\tilde C}=R_{\tilde C\tilde B}$ and $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$, the adjoints are $(L_{\tilde B})^{*}=L_{\tilde{B}^{*}}$ and $(R_{\tilde C})^{*}=R_{\tilde{C}^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The <strong>type criteria</strong> are the ones of the involution lattice: $L_{\tilde B}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $\exp(L_{\tilde B})=L_{\exp(\tilde B)}$. The <strong>double centraliser theorem</strong> holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde B}R_{\tilde C}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.</p>
@@ -156,7 +155,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
-<td>The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$</td>
+<td>The biquaternion algebra; basis $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
 </tr>
 <tr>
 <td>${}^{*}$</td>
@@ -191,7 +190,7 @@ $$</p>
 <td>The adjoints; $L$ is a $*$-representation</td>
 </tr>
 <tr>
-<td>$U=\{\tilde{T}^{*}\tilde T=e_{0}\}=U(2)$</td>
+<td>$U=\{\tilde{T}^{*}\tilde T=e_t\}=\mathrm{U}(2)$</td>
 <td>The unitary slice; the automorphisms and the unitary operators</td>
 </tr>
 <tr>

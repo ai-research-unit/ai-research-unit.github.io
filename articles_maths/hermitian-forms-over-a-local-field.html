@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,7 +59,7 @@
 <p><strong>Proof.</strong> This is the classification of the locally compact fields, in <em>Local Fields</em>; the statement about the involutions is the fundamental theorem of Galois theory for the quadratic extension together with the fact that $\mathbb{R}$ and $\mathbb{C}$ admit only the identity and complex conjugation.</p>
 <h3 id="hermitian-and-symmetric-forms">Hermitian and symmetric forms</h3>
 <p><strong>Definition.</strong> Let $(K,c)$ be a local field with involution. A form $h$ is <strong>Hermitian</strong> if $h(x,y)=c(h(y,x))$, and <strong>symmetric</strong> if $c=\mathrm{id}$ and $h(x,y)=h(y,x)$. A Hermitian form over a non-Archimedean $(K,c)$ is <strong>nondegenerate</strong> if its matrix $H$ is invertible.</p>
-<p><strong>Proposition.</strong> The isometry group of a nondegenerate Hermitian form is the unitary group $U(H)=\{g:g^*Hg=H\}$, a closed subgroup of $\mathrm{GL}_n(K)$, compact modulo the scalars when $K$ is non-Archimedean. The forms on $K^n$ correspond to the $c$-Hermitian matrices, and the isometry classes correspond to the orbits of $\mathrm{GL}_n(K)$ acting by $H\mapsto g^*Hg$.</p>
+<p><strong>Proposition.</strong> The isometry group of a nondegenerate Hermitian form is the unitary group $\mathrm{U}(H)=\{g:g^*Hg=H\}$, a closed subgroup of $\mathrm{GL}_n(K)$, compact modulo the scalars when $K$ is non-Archimedean. The forms on $K^n$ correspond to the $c$-Hermitian matrices, and the isometry classes correspond to the orbits of $\mathrm{GL}_n(K)$ acting by $H\mapsto g^*Hg$.</p>
 <p><strong>Proof.</strong> This is the definition of the isometry group and the change-of-basis formula for the matrix of a form; the compactness statement is the standard property of the unitary groups over a non-Archimedean field, in <em>Local Fields</em>.</p>
 <h2 id="classification">Classification</h2>
 <h3 id="archimedean">Archimedean</h3>
@@ -78,7 +77,7 @@
 <p><strong>Proof.</strong> The matrix $H$ is invertible, so the form is a perfect pairing; the lattice statements are elementary once the pairing is perfect, and the existence of an isotropic vector over a non-Archimedean local field is decided by the Hasse invariant because the anisotropic residual form has rank at most two. This is the standard local duality of <em>Quadratic Forms</em>.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>Example ($K=\mathbb{R}$).</strong> The standard form $x_1^2+\dots+x_p^2-x_{p+1}^2-\dots-x_n^2$ has signature $(p,n-p)$; the isometry group is $O(p,n-p)$.</p>
-<p><strong>Example ($K=\mathbb{C}$, $c$ the conjugation).</strong> The form $\sum|x_i|^2$ has signature $(n,0)$ and isometry group the unitary group $U(n)$; the form $\sum_{i\le p}|x_i|^2-\sum_{i>p}|x_i|^2$ has signature $(p,n-p)$.</p>
+<p><strong>Example ($K=\mathbb{C}$, $c$ the conjugation).</strong> The form $\sum|x_i|^2$ has signature $(n,0)$ and isometry group the unitary group $\mathrm{U}(n)$; the form $\sum_{i\le p}|x_i|^2-\sum_{i>p}|x_i|^2$ has signature $(p,n-p)$.</p>
 <p><strong>Example ($K=\mathbb{Q}_p$, $c=\mathrm{id}$).</strong> The forms $\langle1,1,\dots,1\rangle$ of rank $r$ have discriminant $1$ and Hasse invariants varying with $r$ and $p$; the form $\langle1,-1\rangle$ is hyperbolic and represents zero.</p>
 <p><strong>Example (the norm form of $\mathbb{Q}_p(\sqrt{p})$).</strong> The extension is ramified, the norm form has Hasse invariant $-1$, and it is anisotropic of rank $2$; this is the boundary between the hyperbolic and the anisotropic cases.</p>
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
@@ -127,7 +126,7 @@
 <td>Norm of a quadratic extension</td>
 </tr>
 <tr>
-<td>$U(H)$</td>
+<td>$\mathrm{U}(H)$</td>
 <td>Isometry group</td>
 </tr>
 </tbody>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -139,7 +138,7 @@
 </table></div>
 <p>Thus $\mathbb{Z}[x]$ is simultaneously the exact object at the boundary of the Bézout property and the exact object at the boundary of the principal-ideal property, and $\overline{\mathbb{Z}}$ is the exact object at the boundary of unique factorisation. The refinement itself is the subject of <em>GCD Domains</em> and <em>Bézout Domains</em>.</p>
 <h2 id="the-boundary-at-commutativity">The Boundary at Commutativity</h2>
-<p>The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is a unit, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $e_1e_2 = -e_2e_1$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in <em>List of Structures from Rings to Division Rings</em>, and the division-ring property itself in <em>Division Rings</em>.</p>
+<p>The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is a unit, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $\vec e_x \vec e_y = -\vec e_y \vec e_x$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in <em>List of Structures from Rings to Division Rings</em>, and the division-ring property itself in <em>Division Rings</em>.</p>
 <h2 id="the-boundary-at-reducedness">The Boundary at Reducedness</h2>
 <p>A ring is reduced when it has no nonzero nilpotent. The strongest structure that fails to be reduced is local and Artinian with a nilpotent maximal ideal; the exact object is the dual numbers $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, in which $\varepsilon \neq 0$ and $\varepsilon^2 = 0$. The ring $\mathbb{Z}/4\mathbb{Z}$ is the same phenomenon in finite form, with $2^2 = 0$; the dual numbers are the stronger witness because they are an algebra over a field and their only nilpotents are the elements of the maximal ideal $(\varepsilon)$. The nilradical, its identification with the intersection of the prime ideals, and the counterexamples that fix the rung are the subject of <em>Reduced Rings and the Nilradical</em>.</p>
 <h2 id="the-boundary-at-the-domain-property">The Boundary at the Domain Property</h2>
@@ -232,11 +231,6 @@
 <td>$\mathbb{B}$</td>
 <td>it has zero divisors and is not commutative; it is not maximal before any one property of the ladder</td>
 <td><em>Zero Divisors of the Biquaternion Algebra</em></td>
-</tr>
-<tr>
-<td>$\mathbb{O}$</td>
-<td>not a ring, so no rung of the ladder applies</td>
-<td><em>Octonion Algebra</em></td>
 </tr>
 <tr>
 <td>the zero ring $\{0\}$</td>

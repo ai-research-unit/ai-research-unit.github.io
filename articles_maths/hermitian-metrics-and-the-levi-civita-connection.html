@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -66,10 +65,10 @@
 $$</p>
 <p>and in a coordinate chart its components are the Christoffel symbols</p>
 <p>$$
-\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial_j g_{kl} + \partial_k g_{jl} - \partial_l g_{jk}\bigr).
+\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr).
 $$</p>
 <p><em>Proof.</em> This is the theorem of <em>The Covariant Derivative</em> in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.</p>
-<p><strong>Proposition (properties of the Levi-Civita connection).</strong> Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{\dot\gamma}\dot\gamma=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.</p>
+<p><strong>Proposition (properties of the Levi-Civita connection).</strong> Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{d\gamma/dt}d\gamma/dt=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.</p>
 <h2 id="hermitian-metrics-and-the-involution">Hermitian Metrics and the Involution</h2>
 <h3 id="the-hermitian-condition">The Hermitian Condition</h3>
 <p><strong>Definition.</strong> An <strong>almost complex structure</strong> on $M$ is a bundle endomorphism $J : TM \to TM$ with $J^2 = -\mathrm{id}_{TM}$; it is an involution of the tangent spaces whose square is minus the identity, and the pair $(M,J)$ is an almost complex manifold. A Riemannian metric $g$ is <strong>Hermitian</strong> for $J$ if $J$ is an isometry of each tangent space:</p>
@@ -141,7 +140,7 @@ $$</p>
 <td>The unique metric-compatible torsion-free connection</td>
 </tr>
 <tr>
-<td>$\Gamma^i_{jk} = \tfrac12g^{il}(\partial_jg_{kl}+\partial_kg_{jl}-\partial_lg_{jk})$</td>
+<td>$\Gamma^i_{jk} = \tfrac12g^{il}(\partial/\partial x^j\,g_{kl}+\partial/\partial x^k\,g_{jl}-\partial/\partial x^l\,g_{jk})$</td>
 <td>Christoffel symbols</td>
 </tr>
 <tr>

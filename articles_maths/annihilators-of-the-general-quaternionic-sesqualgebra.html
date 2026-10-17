@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -65,7 +64,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.</p>
 <p>The block of this article is the <strong>general quaternionic sesquimultiplication</strong>
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}
-=\bigl[P_0Q_0+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q},
+=\bigl[P_tQ_t+(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q},
 $$
 the product of the natural conjugate of the first factor with the conjugate of the second
 (<em>Introduction to the General Quaternionic Sesqualgebra</em>). It is the block with
@@ -121,11 +120,11 @@ planes.</p>
 second is the same computation with $\tilde X^{\natural}\tilde Q^{*}=0$, whose left multiplication
 by $\tilde Q^{*}$ has the same rank as that by $\tilde Q^{\natural}$. They are distinct by the
 examples below, whose second generators differ.</p>
-<p><strong>Example.</strong> For the non-pure zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the two
+<p><strong>Example.</strong> For the non-pure zero divisor $\tilde Q=e_t+i\vec e_x$, of central square $1-1=0$, the two
 annihilators are
 $$
-A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2-ie_3\},\qquad
-B_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\},
+A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y-i\vec e_z\},\qquad
+B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\},
 $$
 two distinct planes sharing the line $\mathbb{C}\tilde Q$.</p>
 <h2 id="the-multiplication-operator-and-the-rank">The Multiplication Operator and the Rank</h2>
@@ -177,8 +176,8 @@ general plain sesqualgebra and from the general quaternionic algebra, each of wh
 two sides by its single involution. In the meeting of the two signs the coincidence is lost.</p>
 <h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
 <p><strong>On the centre the annihilator is $\{0\}$; on the vector subspace a nonzero element has a complex-plane annihilator exactly when its vector part is isotropic; and on the Hermitian and anti-Hermitian subspaces the two annihilators meet in the conjugate of the plain annihilator, the distinction of the sides being read off the anti-Hermitian directions.</strong></p>
-<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has
-$L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_t$ has
+$L_{\lambda e_t}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
 $\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
 annihilator is $\{0\}$.</p>
 <p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\vec P$ has
@@ -195,8 +194,8 @@ quaternionic sesquimultiplication $\tilde P\star\tilde X=\tilde P^{\natural}\til
 both the natural conjugation and the star, and its two annihilators of an element are <strong>distinct</strong>.
 The left annihilator is the star of the plain annihilator of $\tilde P^{\natural}$, and the right
 annihilator is the corresponding object of the other side; both are $\{0\}$ off the cone and
-complex planes on the cone, and for $\tilde Q=e_0+ie_1$ they are the distinct planes spanned by
-$\tilde Q$ and $e_2\mp ie_3$. The block is the meeting point of the two general families, and the
+complex planes on the cone, and for $\tilde Q=e_t+i\vec e_x$ they are the distinct planes spanned by
+$\tilde Q$ and $\vec e_y\mp i\vec e_z$. The block is the meeting point of the two general families, and the
 meeting of the two involution signs is exactly what makes the two sides two again.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

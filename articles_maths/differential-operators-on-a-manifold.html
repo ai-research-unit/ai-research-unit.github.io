@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,11 +59,11 @@
 <p>Let $M$ be a smooth manifold and let $E \to M$ and $F \to M$ be smooth vector bundles of ranks $r$ and $s$; write $\Gamma(E)$ for the module of smooth sections, a module over the ring $C^\infty(M)$.</p>
 <p><strong>Definition.</strong> An $\mathbb{R}$-linear map $P : \Gamma(E) \to \Gamma(F)$ is a <strong>differential operator of order at most $k$</strong> if over every chart $(U, x^1, \ldots, x^n)$ with trivialisations of $E$ and $F$, and writing a local section as $u = (u^1, \ldots, u^r)$ in the frame of $E$, the image has components</p>
 <p>$$
-(Pu)^i = \sum_{a=1}^{r} \sum_{|\alpha| \le k} A^{i\alpha}_{a}(x)\, \partial_\alpha u^a, \qquad i = 1, \ldots, s,
+(Pu)^i = \sum_{a=1}^{r} \sum_{|\alpha| \le k} A^{i\alpha}_{a}(x)\, \partial/\partial x_\alpha u^a, \qquad i = 1, \ldots, s,
 $$</p>
 <p>with coefficient functions $A^{i\alpha}_{a} \in C^\infty(U)$ and multi-indices $\alpha = (\alpha_1, \ldots, \alpha_n)$ of length $|\alpha| = \alpha_1 + \cdots + \alpha_n$. The <strong>order</strong> $\operatorname{ord}(P)$ is the least $k$ for which this holds, and $P$ is a differential operator if it has finite order. The space of operators of order at most $k$ from $E$ to $F$ is written $D^k(E, F)$, and $D(E,F) = \bigcup_k D^k(E,F)$.</p>
 <p><strong>Proposition.</strong> The property of being of order at most $k$ is independent of the charts and the frames, so the definition is intrinsic.</p>
-<p><em>Proof sketch.</em> Let $y = \psi(x)$ be another chart and let $g(x)$, $h(x)$ be the change-of-frame matrices of $E$ and $F$. The chain rule expresses each $\partial_\alpha$ in the $x$-coordinates as a sum of the $\partial_\beta$ in the $y$-coordinates with $|\beta| \le |\alpha|$, with coefficients that are polynomial in the derivatives of $\psi$ and involve only derivatives of $\psi$ of order at most $|\alpha|$; the terms of order exactly $|\alpha|$ carry the symmetric $|\alpha|$-th power of the Jacobian of $\psi$, and the lower-order terms have coefficients involving the lower derivatives of $\psi$. Conjugating the coefficient matrix by $g$ and $h$ therefore preserves the shape displayed, and the order. The statement is local and the bundle is locally trivial, so the local verifications patch.</p>
+<p><em>Proof sketch.</em> Let $y = \psi(x)$ be another chart and let $g(x)$, $h(x)$ be the change-of-frame matrices of $E$ and $F$. The chain rule expresses each $\partial/\partial x_\alpha$ in the $x$-coordinates as a sum of the $\partial/\partial x_\beta$ in the $y$-coordinates with $|\beta| \le |\alpha|$, with coefficients that are polynomial in the derivatives of $\psi$ and involve only derivatives of $\psi$ of order at most $|\alpha|$; the terms of order exactly $|\alpha|$ carry the symmetric $|\alpha|$-th power of the Jacobian of $\psi$, and the lower-order terms have coefficients involving the lower derivatives of $\psi$. Conjugating the coefficient matrix by $g$ and $h$ therefore preserves the shape displayed, and the order. The statement is local and the bundle is locally trivial, so the local verifications patch.</p>
 <p><strong>Examples.</strong> A smooth vector field $X$, read as the map $f \mapsto X(f)$ on functions, is an operator of order at most $1$ from the trivial line bundle to itself, and it is of order exactly $1$ where $X \neq 0$. The exterior derivative $d : \Omega^p(M) \to \Omega^{p+1}(M)$ is of order at most $1$. The covariant derivative $\nabla_X$ along a vector field, on the sections of a vector bundle, is of order at most $1$; the connection Laplacian $\nabla^*\nabla$ and the Laplace–Beltrami operator of a metric are of order at most $2$. An operator of order $0$ is exactly a bundle homomorphism $E \to F$, that is, a section of $\operatorname{Hom}(E, F)$ acting fibrewise.</p>
 <h3 id="order-composition-and-the-commutator">Order, Composition and the Commutator</h3>
 <p><strong>Proposition.</strong> The order has the following formal properties.</p>
@@ -77,7 +76,7 @@ $$</p>
 <h3 id="definition-and-tensoriality">Definition and Tensoriality</h3>
 <p>Let $P \in D^k(E,F)$ and let $x \in M$. In a chart with coordinates $x^j$ and frames of $E$ and $F$, write the top-order part of $P$ as</p>
 <p>$$
-P_k u = \sum_{|\alpha| = k} A_\alpha(x)\,\partial_\alpha u
+P_k u = \sum_{|\alpha| = k} A_\alpha(x)\,\partial/\partial x_\alpha u
 $$</p>
 <p>with $A_\alpha$ an $s \times r$ matrix of functions. For a covector $\xi = \sum_j \xi_j\, dx^j$ at $x$ put</p>
 <p>$$
@@ -113,7 +112,7 @@ $$</p>
 <p><strong>Definition.</strong> Let $E \to M$ be a vector bundle and $k \ge 0$. Two sections $s, t \in \Gamma(E)$ <strong>agree to order $k$</strong> at $x \in M$ if in one, hence every, chart and trivialisation about $x$ the difference $s - t$ and all its partial derivatives of total order at most $k$ vanish at $x$. This is an equivalence relation, and the class of $s$ is the <strong>$k$-jet</strong> $j_k s(x)$ of $s$ at $x$. The set of $k$-jets at $x$ is $J^k_xE$, and the disjoint union $J^kE = \bigsqcup_{x \in M} J^k_xE$ is the <strong>bundle of $k$-jets</strong> of $E$.</p>
 <p><strong>Proposition.</strong> The set $J^k_xE$ is a real vector space of dimension $r\binom{n+k}{k}$, the bundle $J^kE \to M$ is a smooth vector bundle of that rank, and a chart $(U,x^1,\ldots,x^n)$ with a frame $e_1,\ldots,e_r$ of $E$ provides fibrewise coordinates $(x^j, u^a, u^a_{j_1}, u^a_{j_1j_2}, \ldots)$ indexed by the multi-indices $|\alpha| \le k$, in which the jet of a section $s = \sum_a s^a e_a$ is</p>
 <p>$$
-j_k s(x) = \left(x,\ s^a(x),\ \partial_j s^a(x),\ \partial_{j_1j_2} s^a(x),\ \ldots\right)_{|\alpha| \le k}.
+j_k s(x) = \left(x,\ s^a(x),\ \partial/\partial x_j s^a(x),\ \partial^2/\partial x_{j_1}\partial x_{j_2} s^a(x),\ \ldots\right)_{|\alpha| \le k}.
 $$</p>
 <p>The assignment $s \mapsto j_k s$ is a linear map $\Gamma(E) \to \Gamma(J^kE)$ over the identity of $M$.</p>
 <p><em>Proof.</em> A section is locally a tuple of functions; the derivatives of total order at most $k$ of the tuple, evaluated at $x$, depend only on the $k$-jet and determine it, by Taylor's theorem with the remainder vanishing to order $k$. This gives the bijection with the displayed coordinate vector space; the transition functions are polynomial in the derivatives of the transition function of the bundle and smooth, which makes $J^kE$ a smooth bundle, and the map on sections is linear because differentiation is.</p>
@@ -133,7 +132,7 @@ $$</p>
 <p>$$
 D^k(E,F) \longrightarrow \Gamma\!\left(\operatorname{Hom}(J^kE, F)\right).
 $$</p>
-<p><em>Proof.</em> If such a $\Phi$ exists, its expression in a chart and a frame is $\sum_{|\alpha|\le k} A_\alpha(x)\partial_\alpha s(x)$ with $A_\alpha$ the matrix of $\Phi$ on the fibre coordinates, so $P$ has order at most $k$; and $\Phi$ is smooth because $P$ is. Conversely, if $P$ has order at most $k$, its local expression shows that $P(s)(x)$ depends on $s$ only through $j_k s(x)$: two sections agreeing to order $k$ at $x$ have the same $P$-image at $x$, by the shape of the expression in any chart. This defines a map $\Phi_x : J^k_xE \to F_x$ by choosing a section $s$ with the given jet — the Taylor polynomial of the coordinate expression realises every jet — and putting $\Phi_x(j_k s(x)) = P(s)(x)$; the map is linear because $P$ is, and it is smooth because it is given in coordinates by the coefficient matrices, which are smooth. Uniqueness is the surjectivity of $j_k$ on the fibres: a homomorphism vanishing on every jet vanishes on every fibre. The module structure is read from the composition with functions, which act on $J^kE$ through the coordinate functions of the jets.</p>
+<p><em>Proof.</em> If such a $\Phi$ exists, its expression in a chart and a frame is $\sum_{|\alpha|\le k} A_\alpha(x)\partial/\partial x_\alpha s(x)$ with $A_\alpha$ the matrix of $\Phi$ on the fibre coordinates, so $P$ has order at most $k$; and $\Phi$ is smooth because $P$ is. Conversely, if $P$ has order at most $k$, its local expression shows that $P(s)(x)$ depends on $s$ only through $j_k s(x)$: two sections agreeing to order $k$ at $x$ have the same $P$-image at $x$, by the shape of the expression in any chart. This defines a map $\Phi_x : J^k_xE \to F_x$ by choosing a section $s$ with the given jet — the Taylor polynomial of the coordinate expression realises every jet — and putting $\Phi_x(j_k s(x)) = P(s)(x)$; the map is linear because $P$ is, and it is smooth because it is given in coordinates by the coefficient matrices, which are smooth. Uniqueness is the surjectivity of $j_k$ on the fibres: a homomorphism vanishing on every jet vanishes on every fibre. The module structure is read from the composition with functions, which act on $J^kE$ through the coordinate functions of the jets.</p>
 <p><strong>Corollary.</strong> The principal symbol of $P$ is the composition of the bundle surjection $S^kT^*M \otimes E \to J^kE$ of the jet exact sequence with $\Phi$:</p>
 <p>$$
 \sigma_k(P) : S^kT^*M \otimes E \longrightarrow J^kE \xrightarrow{\ \Phi\ } F .
@@ -184,7 +183,7 @@ $$</p>
 <td>Order of the operator $P$; least $k$ with $P \in D^k$</td>
 </tr>
 <tr>
-<td>$\partial_\alpha$, $\lvert\alpha\rvert$</td>
+<td>$\partial/\partial x_\alpha$, $\lvert\alpha\rvert$</td>
 <td>Multiple partial derivative and the length of its multi-index</td>
 </tr>
 <tr>

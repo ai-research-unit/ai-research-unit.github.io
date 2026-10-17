@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,7 +52,7 @@
         <h1 id="the-specificities-of-the-antisymmetric-plain-algebra"><strong>The Specificities of the Antisymmetric Plain Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
+$\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ of
 <em>Introduction to the Antisymmetric Plain Algebra</em>. This article states what singles
 the block out among the companion products of the space: the two identities it satisfies, the classes its
 laws empty, and the place it takes in the law table of <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
@@ -76,24 +75,24 @@ Plain Algebra</em>, <em>Square Roots of One and the Idempotents in the Algebraic
 <em>Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>, all below this article
 in this category. The law vocabulary is <em>Definitions for the Study of
 the Algebraic Structures</em> and the law table <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the centre is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 The laws are those of <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <h3 id="the-two-properties">The Two Properties</h3>
 <p><strong>Theorem (the isolating pair).</strong> The block is <strong>alternating</strong>,</p>
 <p>$$
-\tilde p\times\tilde p=0\qquad\text{for every }\tilde p,
+\tilde q\times\tilde q=0\qquad\text{for every }\tilde q,
 $$</p>
 <p>and satisfies the <strong>Jacobi identity</strong>,</p>
 <p>$$
-\tilde p\times(\tilde q\times\tilde r)+\tilde q\times(\tilde r\times\tilde p)+\tilde r\times(\tilde p\times\tilde q)=0
-\qquad\text{for all }\tilde p,\tilde q,\tilde r .
+\tilde q_1\times(\tilde q_2\times\tilde q_3)+\tilde q_2\times(\tilde q_3\times\tilde q_1)+\tilde q_3\times(\tilde q_1\times\tilde q_2)=0
+\qquad\text{for all }\tilde q_1,\tilde q_2,\tilde q_3 .
 $$</p>
-<p><em>Proof.</em> The alternation is $\tfrac12(\tilde p\tilde p-\tilde p\tilde p)=0$, the two terms of the
+<p><em>Proof.</em> The alternation is $\tfrac12(\tilde q\tilde q-\tilde q\tilde q)=0$, the two terms of the
 difference coinciding. The cyclic sum is the one of the vector product of the vector parts,
-$(\vec p\times\vec q)\times\vec r+(\vec q\times\vec r)\times\vec p+(\vec r\times\vec p)\times\vec q$,
+$(\vec q_1\times\vec q_2)\times\vec q_3+(\vec q_2\times\vec q_3)\times\vec q_1+(\vec q_3\times\vec q_1)\times\vec q_2$,
 which vanishes by the anticommutativity of the vector product; it is verified on general elements and
 on the $64$ triples of the units.</p>
 <p><strong>Corollary (the block is the Lie product of the space).</strong> An alternating bilinear rule satisfying
@@ -105,32 +104,32 @@ Plain Algebra</em>, below this article in this category.</p>
 <h3 id="the-laws-that-follow">The Laws That Follow</h3>
 <p><strong>Proposition.</strong> The block is <strong>flexible</strong>, <strong>power-associative</strong> and <strong>cube-zero</strong>,</p>
 <p>$$
-(\tilde p\times\tilde q)\times\tilde p=\tilde p\times(\tilde q\times\tilde p),\qquad
-(\tilde p\times\tilde p)\times\tilde p=\tilde p\times(\tilde p\times\tilde p),\qquad
-\tilde p\times(\tilde p\times\tilde p)=0,
+(\tilde q_1\times\tilde q_2)\times\tilde q_1=\tilde q_1\times(\tilde q_2\times\tilde q_1),\qquad
+(\tilde q\times\tilde q)\times\tilde q=\tilde q\times(\tilde q\times\tilde q),\qquad
+\tilde q\times(\tilde q\times\tilde q)=0,
 $$</p>
 <p>and it is <strong>not</strong> associative and <strong>not</strong> alternative: the associator
-$(\tilde p\times\tilde q)\times\tilde r-\tilde p\times(\tilde q\times\tilde r)$ does not vanish, and
-the right alternative law fails at $e_1,e_2,e_2$.</p>
+$(\tilde q_1\times\tilde q_2)\times\tilde q_3-\tilde q_1\times(\tilde q_2\times\tilde q_3)$ does not vanish, and
+the right alternative law fails at $\vec e_x,\vec e_y,\vec e_y$.</p>
 <p><em>Proof.</em> A bilinear alternating rule is antisymmetric, and the implications "alternating and bilinear
-$\Rightarrow$ flexible, power-associative, cube-zero" of <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em> give the first three; flexibility is checked at $e_1,e_2$, where
-$(e_1\times e_2)\times e_1=e_3\times e_1=e_2$ and $e_1\times(e_2\times e_1)=e_1\times(-e_3)=e_2$. The
-associator is read on the units, where $(e_1\times e_2)\times e_2=e_3\times e_2=-e_1$ is different
-from $e_1\times(e_2\times e_2)=0$, so the rule is not associative; the same triple is the failure of
+$\Rightarrow$ flexible, power-associative, cube-zero" of <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em> give the first three; flexibility is checked at $\vec e_x,\vec e_y$, where
+$(\vec e_x\times \vec e_y)\times \vec e_x=\vec e_z\times \vec e_x=\vec e_y$ and $\vec e_x\times(\vec e_y\times \vec e_x)=\vec e_x\times(-\vec e_z)=\vec e_y$. The
+associator is read on the units, where $(\vec e_x\times \vec e_y)\times \vec e_y=\vec e_z\times \vec e_y=-\vec e_x$ is different
+from $\vec e_x\times(\vec e_y\times \vec e_y)=0$, so the rule is not associative; the same triple is the failure of
 the right alternative law.</p>
 <h2 id="the-absence-of-a-unit-of-an-inverse-and-of-a-norm">The Absence of a Unit, of an Inverse and of a Norm</h2>
 <p><strong>Theorem.</strong> The block has no two-sided unit and no one-sided unit; hence it has no inverse, its group
 of units is empty, and it carries no algebraic norm in the sense of the block.</p>
-<p><em>Proof.</em> Every value is pure, whereas $\tilde p\times\tilde q=\tilde p$ at a non-pure $\tilde p$
-would be a non-pure value; and the scalar direction is not reached at all, $\tilde p\times\tilde q$
+<p><em>Proof.</em> Every value is pure, whereas $\tilde q_1\times\tilde q_2=\tilde q_1$ at a non-pure $\tilde q_1$
+would be a non-pure value; and the scalar direction is not reached at all, $\tilde q_1\times\tilde q_2$
 having zero scalar part. So no element is a unit on either side, the inverse being defined relative to
 a two-sided unit. The algebraic norm of a product is a quadratic form multiplicative for the product;
 the diagonal form of the block is the vanishing function $\tilde q\times\tilde q=0$, so the block's own
 algebraic norm is the zero form, and the norms $\langle\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural}$ of the space are not multiplicative for
 $\times$.</p>
-<p><strong>Remark (the contrast with the plain and symmetric blocks).</strong> The plain algebra has the unit $e_0$
+<p><strong>Remark (the contrast with the plain and symmetric blocks).</strong> The plain algebra has the unit $e_t$
 and the multiplicative norm $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$; the symmetric plain algebra
-keeps the unit $e_0$, but it is no longer a division algebra and its norm is no longer multiplicative;
+keeps the unit $e_t$, but it is no longer a division algebra and its norm is no longer multiplicative;
 the antisymmetric block has neither, its two quadratic objects $\langle\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural}$ being carried by the
 symmetric products instead. The absence is <em>definitional</em>, not accidental: it follows from alternation
 alone.</p>
@@ -221,13 +220,13 @@ law table the Jacobi identity alone already points at the block, since it is the
 product satisfies the identity; alternation is the further demand that turns a Jacobi product into a
 Lie product. The criterion does not reach the element theory of the symmetric blocks, which is read on
 the basis.</p>
-<p><em>Proof.</em> The failure of alternation alone is the witness $(e_0,e_1,e_2)$ of the antisymmetric
-quaternionic structure, whose cyclic sum is a nonzero multiple of $e_3$; the Jacobi row of the table is
+<p><em>Proof.</em> The failure of alternation alone is the witness $(e_t,\vec e_x,\vec e_y)$ of the antisymmetric
+quaternionic structure, whose cyclic sum is a nonzero multiple of $\vec e_z$; the Jacobi row of the table is
 zero for every structure but the block. The element theory of the symmetric structures requires a
 basis computation, as the table of empty classes records.</p>
 <h2 id="summary">Summary</h2>
 <p>The antisymmetric plain block is isolated among the companion products by a single pair of identities: it is
-alternating, $\tilde p\times\tilde p=0$, and it satisfies the Jacobi identity, so it is the unique Lie
+alternating, $\tilde q\times\tilde q=0$, and it satisfies the Jacobi identity, so it is the unique Lie
 structure of the space. Its laws are those the two properties force: flexible, power-associative and
 cube-zero, and neither associative nor alternative in the nonzero sense. The block has no unit on
 either side, hence an empty group of units and no algebraic norm of its own, the diagonal form of the
@@ -245,11 +244,11 @@ the Jacobi identity is the whole of the difference between them.</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde p\times\tilde p=0$</td>
+<td>$\tilde q\times\tilde q=0$</td>
 <td>the alternation, the isolating law</td>
 </tr>
 <tr>
-<td>$\tilde p\times(\tilde q\times\tilde r)+\text{cyclic}=0$</td>
+<td>$\tilde q_1\times(\tilde q_2\times\tilde q_3)+\text{cyclic}=0$</td>
 <td>the Jacobi identity, the second isolating law</td>
 </tr>
 <tr>

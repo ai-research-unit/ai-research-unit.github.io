@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,50 +51,50 @@
       <div class="article-body">
         <h1 id="the-quaternion-algebra-in-the-44-matrix-element-representation-math0"><strong>The Quaternion Algebra in the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The left regular representation of $\mathbb{H}$ is the map that sends a quaternion to the matrix of left multiplication by it in the basis $e_0,e_1,e_2,e_3$. On that image the quaternion product is the product of the regular matrices, the plain form is a quarter of the trace pairing, the invariants are the trace $4q_0$ and the determinant $\langle\tilde q\rangle_{\natural}^2$, the transpose corresponds to the natural sign, and the centraliser of the image is the second, commuting copy of the algebra, namely the right regular representation of the opposite. This article reads the block's objects in that model and compares with the complex case. The quaternion product is <em>Introduction to the Quaternion Algebra</em>, above this article in this category; the form and the transpose calculus are <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category; the enveloping algebra and the two commuting copies are <em>The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure</em>, above this article in this category; the complex matrix model is <em>The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this category.</p>
+<p>The left regular representation of $\mathbb{H}$ is the map that sends a quaternion to the matrix of left multiplication by it in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$. On that image the quaternion product is the product of the regular matrices, the plain form is a quarter of the trace pairing, the invariants are the trace $4q_t$ and the determinant $\langle\tilde q\rangle_{\natural}^2$, the transpose corresponds to the natural sign, and the centraliser of the image is the second, commuting copy of the algebra, namely the right regular representation of the opposite. This article reads the block's objects in that model and compares with the complex case. The quaternion product is <em>Introduction to the Quaternion Algebra</em>, above this article in this category; the form and the transpose calculus are <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category; the enveloping algebra and the two commuting copies are <em>The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure</em>, above this article in this category; the complex matrix model is <em>The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$</em>, above this article in this category.</p>
 <h2 id="the-left-regular-representation">The Left Regular Representation</h2>
 <p><strong>Definition.</strong> The <strong>left regular representation</strong> is the map</p>
 <p>$$
 \mathsf M_4:\mathbb{H}\to M_4(\mathbb{R}),\qquad \mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r,
 $$</p>
-<p>the matrix of the operator $L_{\tilde q}$ in the basis $e_0,e_1,e_2,e_3$; its entries are the coordinates of the products, $(\mathsf M_4(\tilde q))_{ij}=$ the $e_i$-coordinate of $\tilde q e_j$.</p>
-<p><strong>Theorem.</strong> $\mathsf M_4$ is an injective algebra homomorphism, $\mathsf M_4(\tilde p\tilde q)=\mathsf M_4(\tilde p)\mathsf M_4(\tilde q)$, and its image has real dimension $4$.</p>
-<p><em>Proof.</em> The left multiplications satisfy $L_{\tilde p}L_{\tilde q}=L_{\tilde p\tilde q}$, and the matrix of a composite is the product of the matrices; injectivity is $L_{\tilde q}(e_0)=\tilde q$, so only $0$ has the zero matrix, and the dimension is $4$.</p>
+<p>the matrix of the operator $L_{\tilde q}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$; its entries are the coordinates of the products, $(\mathsf M_4(\tilde q))_{\mu\nu}=$ the $e_\mu$-coordinate of $\tilde q e_\nu$.</p>
+<p><strong>Theorem.</strong> $\mathsf M_4$ is an injective algebra homomorphism, $\mathsf M_4(\tilde q_1\tilde q_2)=\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)$, and its image has real dimension $4$.</p>
+<p><em>Proof.</em> The left multiplications satisfy $L_{\tilde q_1}L_{\tilde q_2}=L_{\tilde q_1\tilde q_2}$, and the matrix of a composite is the product of the matrices; injectivity is $L_{\tilde q}(e_t)=\tilde q$, so only $0$ has the zero matrix, and the dimension is $4$.</p>
 <p><strong>Example.</strong> For the basis elements,</p>
 <p>$$
-\mathsf M_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\mathsf M_4(\vec e_x)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 \qquad
-\mathsf M_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+\mathsf M_4(\vec e_y)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
 $$</p>
-<p>and $\mathsf M_4(e_3)=\mathsf M_4(e_1)\mathsf M_4(e_2)$, $\mathsf M_4(e_0)=\mathrm I_4$.</p>
+<p>and $\mathsf M_4(\vec e_z)=\mathsf M_4(\vec e_x)\mathsf M_4(\vec e_y)$, $\mathsf M_4(e_t)=\mathrm I_4$.</p>
 <h2 id="standard-forms-and-conventions">Standard Forms and Conventions</h2>
-<p><strong>Conventions of the block.</strong> The generic product is written by juxtaposition, never with the bracket $[\,]$; the basis is $e_0,e_1,e_2,e_3$ with $e_0$ the unit; the generic element is $\tilde q$; the natural sign is ${}^{\natural}$, the quaternion conjugation; $L_{\tilde a}$ and $R_{\tilde b}$ are the left and right multiplications; and $\tilde a[\,]\tilde b$ is Conway's sandwich $\tilde q\mapsto\tilde a\tilde q\tilde b$. Each name is used in one sense only.</p>
+<p><strong>Conventions of the block.</strong> The generic product is written by juxtaposition, never with the bracket $[\,]$; the basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit; the generic element is $\tilde q$; the natural sign is ${}^{\natural}$, the quaternion conjugation; $L_{\tilde a}$ and $R_{\tilde b}$ are the left and right multiplications; and $\tilde a[\,]\tilde b$ is Conway's sandwich $\tilde q\mapsto\tilde a\tilde q\tilde b$. Each name is used in one sense only.</p>
 <p><em>Remark.</em> The conventions are collected here because the article is the last of the block and uses the whole apparatus: a reader who meets a symbol above reads its fixed sense here. The list is a convention and not a mathematical result.</p>
 <h2 id="the-product">The Product</h2>
-<p><strong>Theorem.</strong> On the image, the quaternion product is the matrix product: $\mathsf M_4(\tilde p\tilde q)=\mathsf M_4(\tilde p)\mathsf M_4(\tilde q)$. In particular the image is a four-dimensional subalgebra of $M_4(\mathbb{R})$ isomorphic to $\mathbb{H}$, with the identity matrix for unit.</p>
+<p><strong>Theorem.</strong> On the image, the quaternion product is the matrix product: $\mathsf M_4(\tilde q_1\tilde q_2)=\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)$. In particular the image is a four-dimensional subalgebra of $M_4(\mathbb{R})$ isomorphic to $\mathbb{H}$, with the identity matrix for unit.</p>
 <p><em>Proof.</em> The homomorphism property above.</p>
 <h2 id="the-form">The Form</h2>
 <p><strong>Theorem.</strong> The plain form is a quarter of the trace pairing:</p>
 <p>$$
-\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)=\tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde p)\mathsf M_4(\tilde q)\bigr).
+\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)=\tfrac14\operatorname{tr}\bigl(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2)\bigr).
 $$</p>
-<p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(\tilde q)=4q_0$: the diagonal entry $(\mathsf M_4(\tilde q))_{ii}$ is the $e_i$-coordinate of $\tilde qe_i$, and summing over $i$ the contribution of the scalar part of $\tilde q$ is $4q_0$ while the vector contributions cancel pairwise; hence $\operatorname{tr}(\mathsf M_4(\tilde p\tilde q))=4(\tilde p\tilde q)_0=4\,\mathrm{Sc}(\tilde p\tilde q)$.</p>
+<p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$: the diagonal entry $(\mathsf M_4(\tilde q))_{\mu\mu}$ is the $e_\mu$-coordinate of $\tilde qe_\mu$, and summing over $\mu$ the contribution of the scalar part of $\tilde q$ is $4q_t$ while the vector contributions cancel pairwise; hence $\operatorname{tr}(\mathsf M_4(\tilde q_1\tilde q_2))=4(\tilde q_1\tilde q_2)_t=4\,\mathrm{Sc}(\tilde q_1\tilde q_2)$.</p>
 <p><strong>Theorem (the same Gram matrix).</strong> $G_{\mu\nu}=\tfrac14\operatorname{tr}(\mathsf M_4(e_\mu)\mathsf M_4(e_\nu))=\operatorname{diag}(1,-1,-1,-1)=D$, of signature $(1,3)$, the same matrix as in the $2\times2$ model.</p>
-<p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(e_0)=4$ and $\operatorname{tr}\mathsf M_4(e_k^2)=\operatorname{tr}(-\mathrm I_4)=-4$, with the cross traces $0$; the computation is the one of the trace of the product of the four basis matrices.</p>
+<p><em>Proof.</em> $\operatorname{tr}\mathsf M_4(e_t)=4$ and $\operatorname{tr}\mathsf M_4(\vec e_\mu^2)=\operatorname{tr}(-\mathrm I_4)=-4$, with the cross traces $0$; the computation is the one of the trace of the product of the four basis matrices.</p>
 <h2 id="the-two-commuting-copies">The Two Commuting Copies</h2>
-<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q)(\tilde r)=\tilde r\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde p\tilde q)=\mathsf R_4(\tilde q)\mathsf R_4(\tilde p)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.</p>
-<p><strong>Theorem.</strong> The two images commute: $\mathsf M_4(\tilde p)\mathsf R_4(\tilde q)=\mathsf R_4(\tilde q)\mathsf M_4(\tilde p)$ for all $\tilde p,\tilde q$, and the image of $\mathsf M_4$ and the image of $\mathsf R_4$ are two commuting four-dimensional algebras inside $M_4(\mathbb{R})$.</p>
-<p><em>Proof.</em> $L_{\tilde p}R_{\tilde q}=R_{\tilde q}L_{\tilde p}$, the commutativity of the two-sided operators, read in the regular matrices.</p>
+<p><strong>Definition.</strong> The <strong>right regular representation</strong> is $\mathsf R_4(\tilde q)(\tilde r)=\tilde r\tilde q$, the matrix of $R_{\tilde q}$; it is an anti-homomorphism, $\mathsf R_4(\tilde q_1\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf R_4(\tilde q_1)$, and an algebra map on $\mathbb{H}^{\mathrm{opp}}$.</p>
+<p><strong>Theorem.</strong> The two images commute: $\mathsf M_4(\tilde q_1)\mathsf R_4(\tilde q_2)=\mathsf R_4(\tilde q_2)\mathsf M_4(\tilde q_1)$ for all $\tilde q_1,\tilde q_2$, and the image of $\mathsf M_4$ and the image of $\mathsf R_4$ are two commuting four-dimensional algebras inside $M_4(\mathbb{R})$.</p>
+<p><em>Proof.</em> $L_{\tilde q_1}R_{\tilde q_2}=R_{\tilde q_2}L_{\tilde q_1}$, the commutativity of the two-sided operators, read in the regular matrices.</p>
 <h2 id="the-transposition-relation">The Transposition Relation</h2>
 <p><strong>Theorem.</strong> $\mathsf M_4(\tilde q)^{\mathsf T}=\mathsf M_4(\tilde q^{\natural})$: the transpose of the left regular matrix is the left regular matrix of the natural sign.</p>
-<p><em>Proof.</em> $(\mathsf M_4(\tilde q))_{ij}$ is the $e_i$-coordinate of $\tilde qe_j$, that is $\mathrm{Sc}(\tilde qe_je_i^{\natural})$ up to the sign of the basis product; transposing exchanges $i$ and $j$, and inserting the natural sign on the parameter absorbs the sign, giving the entry of $\mathsf M_4(\tilde q^{\natural})$. The identity is checked on the four basis matrices, and holds on all of them.</p>
+<p><em>Proof.</em> $(\mathsf M_4(\tilde q))_{\mu\nu}$ is the $e_\mu$-coordinate of $\tilde qe_\nu$, that is $\mathrm{Sc}(\tilde q e_\nu e_\mu^{\natural})$ up to the sign of the basis product; transposing exchanges $\mu$ and $\nu$, and inserting the natural sign on the parameter absorbs the sign, giving the entry of $\mathsf M_4(\tilde q^{\natural})$. The identity is checked on the four basis matrices, and holds on all of them.</p>
 <p><strong>Corollary.</strong> The image is closed under transpose, and the transpose of the image is the natural sign; the transposition is the matrix form of the self-transpose operator $\natural$ of <em>Association and the Transpose on the Quaternion Algebra</em>, above this article in this category.</p>
 <h2 id="the-invariants">The Invariants</h2>
 <p><strong>Theorem (trace and determinant).</strong> For every $\tilde q$,</p>
 <p>$$
-\operatorname{tr}\mathsf M_4(\tilde q)=4q_0,\qquad \det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2=(q_0^2+q_1^2+q_2^2+q_3^2)^2.
+\operatorname{tr}\mathsf M_4(\tilde q)=4q_t,\qquad \det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2=(q_t^2+q_x^2+q_y^2+q_z^2)^2.
 $$</p>
-<p><em>Proof.</em> The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha=q_0+|\vec q|i$ is a root of the complex quadratic $\alpha^2-2q_0\alpha+\langle\tilde q\rangle_{\natural}=0$; hence $\det L_{\tilde q}=\alpha^2\overline{\alpha}^2=\langle\tilde q\rangle_{\natural}^2$. The eigenvalues are read from the minimal polynomial of $L_{\tilde q}$ in the two-dimensional subalgebra generated by $\tilde q$, which is a copy of $\mathbb{C}$.</p>
+<p><em>Proof.</em> The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha=q_t+|\vec q|i$ is a root of the complex quadratic $\alpha^2-2q_t\alpha+\langle\tilde q\rangle_{\natural}=0$; hence $\det L_{\tilde q}=\alpha^2\overline{\alpha}^2=\langle\tilde q\rangle_{\natural}^2$. The eigenvalues are read from the minimal polynomial of $L_{\tilde q}$ in the two-dimensional subalgebra generated by $\tilde q$, which is a copy of $\mathbb{C}$.</p>
 <p><strong>Corollary.</strong> $\mathsf M_4(\tilde q)$ is invertible exactly when $\tilde q\neq0$, and $\det\mathsf M_4(\tilde q)>0$; the image of the group of units is the group of invertible matrices in the image, isomorphic to $\mathbb{H}^{\times}$.</p>
 <p><em>Proof.</em> $\det=\langle\tilde q\rangle_{\natural}^2>0$ for $\tilde q\neq0$, and the image is a subalgebra.</p>
 <h2 id="the-double-centraliser">The Double Centraliser</h2>
@@ -106,7 +105,7 @@ $$</p>
 <h2 id="comparison-with-the-complex-case">Comparison with the Complex Case</h2>
 <p>The difference is the coefficient field and the module on which the matrices act: over $\mathbb{R}$ the standard module is the four-dimensional $\mathbb{H}$, while over $\mathbb{C}$ the left regular module of $M_2(\mathbb{C})$ is a sum of two copies of the column space.</p>
 <h2 id="summary">Summary</h2>
-<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde p,\tilde q\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde p)\mathsf M_4(\tilde q))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_0$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.</p>
+<p>The left regular representation $\mathsf M_4$ with $\mathsf M_4(\tilde q)(\tilde r)=\tilde q\tilde r$ is an injective real-algebra homomorphism of $\mathbb{H}$ into $M_4(\mathbb{R})$ with four-dimensional image; on it the quaternion product is the matrix product, the plain form is $\langle\tilde q_1,\tilde q_2\rangle=\tfrac14\operatorname{tr}(\mathsf M_4(\tilde q_1)\mathsf M_4(\tilde q_2))$ with the same Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ of signature $(1,3)$, and the invariants are $\operatorname{tr}\mathsf M_4(\tilde q)=4q_t$ and $\det\mathsf M_4(\tilde q)=\langle\tilde q\rangle_{\natural}^2$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

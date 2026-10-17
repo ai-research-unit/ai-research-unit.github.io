@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries two real slices whose geometries differ, and this article reads both. The Lorentzian slice is Minkowski space with its light cone and its null lines; the split slice carries a neutral signature and a real quadric ruled by real lines. The two are the real loci of the complex null quadric, and on the celestial sphere of the Lorentzian slice the Lorentz group acts as the conformal group. The conformal model of Euclidean space, in which spheres and planes become vectors and the transformations become versors, is the further picture the algebra supports.</p>
 <p>The article presupposes the biquaternion norm and its real forms (<em>Norm and Invertibility in the General Quaternionic Algebra</em>), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (<em>The Null Quadric and Its Projective Geometry</em>), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Criterion</em>, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Criterion</em>, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.</p>
 <hr />
 <h2 id="the-sign-of-the-form-as-the-organising-data">The Sign of the Form as the Organising Data</h2>
 <p>In the Cayley–Klein picture a geometry is its group of motions, and the geometry the algebra carries is read from the real form of the norm. The norm is complex-valued, so it has no signature by itself; the signature appears on a real form, and the sign of the restricted form is the organising datum:</p>
@@ -64,14 +63,14 @@
 <li>a <strong>neutral</strong> form, the realification of signature $(4,4)$, gives a split geometry, whose real quadric is ruled by real lines;</li>
 <li>the degenerate case, the <strong>null</strong> form, is the null cone and its projective quadric — the figure rather than a space.</li>
 </ul>
-<p>The same algebra carries the several geometries at once, and the passage from one to another is a change of real form, not a change of algebra. The group of motions is the invariant of the geometry: $Sp(1)=S^3$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and its quotient $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ for the two-sided action on the Euclidean form. These are the isometries, and they preserve a form; the full symmetry group of the algebra is wider, because an automorphism need not preserve any form (<em>Biquaternion Automorphisms and Derivations</em>).</p>
+<p>The same algebra carries the several geometries at once, and the passage from one to another is a change of real form, not a change of algebra. The group of motions is the invariant of the geometry: $Sp(1)=S^3$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and its quotient $\mathbb{B}^\times_1/\{\pm e_t\}\cong SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_t\}\cong SO(4)$ for the two-sided action on the Euclidean form. These are the isometries, and they preserve a form; the full symmetry group of the algebra is wider, because an automorphism need not preserve any form (<em>Biquaternion Automorphisms and Derivations</em>).</p>
 <h2 id="the-lorentzian-slice-and-its-light-cone">The Lorentzian Slice and Its Light Cone</h2>
-<p>By the table of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Algebraic Norm on the Remarkable Subspaces</em>, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,</p>
+<p>By the table of <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The Algebraic Norm on the Remarkable Subspaces</em>, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
+\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_t)^2=q_x^2+q_y^2+q_z^2,
 $$</p>
 <p>is the <strong>light cone</strong>, a double cone with apex at the origin. With this identification, the <strong>null biquaternions of the Minkowski subspace</strong> are exactly the elements of the light cone.</p>
-<p>Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_0=\pm1/\sqrt2$ and $q_1^2+q_2^2+q_3^2=1/2$, so the link of the light cone is the disjoint union</p>
+<p>Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_t=\pm1/\sqrt2$ and $q_x^2+q_y^2+q_z^2=1/2$, so the link of the light cone is the disjoint union</p>
 <p>$$
 S^2\sqcup S^2,
 $$</p>

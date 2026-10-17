@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -58,7 +57,7 @@
 <h2 id="the-centre-and-vector-decomposition">The Centre and Vector Decomposition</h2>
 <p>The quaternion conjugation ${}^{\natural}$ is one of the three commuting involutions. Its eigenspaces are the centre $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:</p>
 <p>$$
-\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_0 e_0 \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 \in \mathrm{Vect}(\mathbb{B}),
+\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_t e_t \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z \in \mathrm{Vect}(\mathbb{B}),
 $$</p>
 <p>with</p>
 <p>$$
@@ -116,19 +115,19 @@ $$</p>
 <h2 id="a-worked-element-in-the-three-decompositions">A Worked Element in the Three Decompositions</h2>
 <p>Take the element</p>
 <p>$$
-\tilde{Q} = (2+i)e_0 + 3e_1 + ie_2 - 4e_3 .
+\tilde{Q} = (2+i)e_t + 3\vec e_x + i\vec e_y - 4\vec e_z .
 $$</p>
 <p>Its three readings, one per decomposition, follow from the projection formulas above:</p>
 <p>$$
-\tilde{Q} = \underbrace{(2+i)e_0}_{\mathbb{C}_{\mathbb{B}}} + \underbrace{3e_1 + ie_2 - 4e_3}_{\mathrm{Vect}(\mathbb{B})},
+\tilde{Q} = \underbrace{(2+i)e_t}_{\mathbb{C}_{\mathbb{B}}} + \underbrace{3\vec e_x + i\vec e_y - 4\vec e_z}_{\mathrm{Vect}(\mathbb{B})},
 $$</p>
 <p>$$
-\tilde{Q} = \underbrace{2e_0 + 3e_1 - 4e_3}_{\mathbb{H}_{\mathbb{B}}} + \underbrace{ie_0 + ie_2}_{i\mathbb{H}_{\mathbb{B}}},
+\tilde{Q} = \underbrace{2e_t + 3\vec e_x - 4\vec e_z}_{\mathbb{H}_{\mathbb{B}}} + \underbrace{ie_t + i\vec e_y}_{i\mathbb{H}_{\mathbb{B}}},
 $$</p>
 <p>$$
-\tilde{Q} = \underbrace{2e_0 + ie_2}_{\mathbb{M}_+} + \underbrace{ie_0 + 3e_1 - 4e_3}_{\mathbb{M}_-}.
+\tilde{Q} = \underbrace{2e_t + i\vec e_y}_{\mathbb{M}_+} + \underbrace{ie_t + 3\vec e_x - 4\vec e_z}_{\mathbb{M}_-}.
 $$</p>
-<p>The three lines add up to the same element, as they must, since each is a direct sum decomposition of the same eight real coordinates $(2, 3, 0, -4, 1, 0, 1, 0)$. The scalar–vector reading takes the whole scalar coefficient $2+i$ against the whole vector part $3e_1 + ie_2 - 4e_3$. The quaternion reading splits each coefficient into its real and imaginary parts and puts the real parts $2e_0 + 3e_1 - 4e_3$ in $\mathbb{H}_{\mathbb{B}}$ and the imaginary parts $ie_0 + ie_2$ in $i\mathbb{H}_{\mathbb{B}}$. The Hermitian reading pairs the real scalar part and the imaginary vector part, $2e_0 + ie_2$, against the imaginary scalar part and the real vector part, $ie_0 + 3e_1 - 4e_3$. No one of the three readings can be recovered from another: the same eight coordinates are cut along three different planes.</p>
+<p>The three lines add up to the same element, as they must, since each is a direct sum decomposition of the same eight real coordinates $(2, 3, 0, -4, 1, 0, 1, 0)$. The scalar–vector reading takes the whole scalar coefficient $2+i$ against the whole vector part $3\vec e_x + i\vec e_y - 4\vec e_z$. The quaternion reading splits each coefficient into its real and imaginary parts and puts the real parts $2e_t + 3\vec e_x - 4\vec e_z$ in $\mathbb{H}_{\mathbb{B}}$ and the imaginary parts $ie_t + i\vec e_y$ in $i\mathbb{H}_{\mathbb{B}}$. The Hermitian reading pairs the real scalar part and the imaginary vector part, $2e_t + i\vec e_y$, against the imaginary scalar part and the real vector part, $ie_t + 3\vec e_x - 4\vec e_z$. No one of the three readings can be recovered from another: the same eight coordinates are cut along three different planes.</p>
 <h2 id="summary">Summary</h2>
 <p>The remarkable real subspaces of $\mathbb{B}$ come in three pairs, one pair to each of the three commuting conjugations, and each pair sums directly to the whole space:</p>
 <p>$$
@@ -152,15 +151,15 @@ $$</p>
 </tr>
 <tr>
 <td>$\bar{\cdot}$</td>
-<td>Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$</td>
+<td>Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_t} e_t + \vec Q^*$</td>
 </tr>
 <tr>
 <td>${}^{*}$</td>
-<td>Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$</td>
+<td>Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_t} e_t - \vec Q^*$</td>
 </tr>
 <tr>
 <td>${}^{\natural}$</td>
-<td>Quaternion conjugation; $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$</td>
+<td>Quaternion conjugation; $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$</td>
 </tr>
 <tr>
 <td>$\flat$</td>
@@ -168,27 +167,27 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}$</td>
-<td>Centre, fixed space of ${}^{\natural}$; basis $e_0, ie_0$, dimension $2$</td>
+<td>Centre, fixed space of ${}^{\natural}$; basis $e_t, ie_t$, dimension $2$</td>
 </tr>
 <tr>
 <td>$\mathrm{Vect}(\mathbb{B})$</td>
-<td>Vector subspace, anti-fixed space of ${}^{\natural}$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, dimension $6$</td>
+<td>Vector subspace, anti-fixed space of ${}^{\natural}$; basis $\vec e_x, \vec e_y, \vec e_z, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $6$</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>Quaternion subspace, fixed space of $\bar{\cdot}$; basis $e_0, e_1, e_2, e_3$, dimension $4$</td>
+<td>Quaternion subspace, fixed space of $\bar{\cdot}$; basis $e_t, \vec e_x, \vec e_y, \vec e_z$, dimension $4$</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>Anti-quaternion subspace, anti-fixed space of $\bar{\cdot}$; basis $ie_0, ie_1, ie_2, ie_3$, dimension $4$</td>
+<td>Anti-quaternion subspace, anti-fixed space of $\bar{\cdot}$; basis $ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $4$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
-<td>Hermitian subspace, fixed space of ${}^{*}$; basis $e_0, ie_1, ie_2, ie_3$, dimension $4$</td>
+<td>Hermitian subspace, fixed space of ${}^{*}$; basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $4$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>Anti-Hermitian subspace, anti-fixed space of ${}^{*}$; basis $ie_0, e_1, e_2, e_3$, dimension $4$</td>
+<td>Anti-Hermitian subspace, anti-fixed space of ${}^{*}$; basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, dimension $4$</td>
 </tr>
 <tr>
 <td>$\tilde{Q}_{\mathrm{c}}, \tilde{Q}_{\mathrm{v}}$</td>

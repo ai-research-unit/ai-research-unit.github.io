@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,7 +59,7 @@
 <p>$$
 L_{\tilde{P}} : \tilde{R} \mapsto \tilde{P}\tilde{R}, \qquad\qquad R_{\tilde{P}} : \tilde{R} \mapsto \tilde{R}\tilde{P}.
 $$</p>
-<p>Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_0) = \tilde{P}$ and $R_{\tilde{P}}(e_0) = \tilde{P}$. Their <strong>composition rules</strong> are the associativity of the product read on the maps,</p>
+<p>Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_t) = \tilde{P}$ and $R_{\tilde{P}}(e_t) = \tilde{P}$. Their <strong>composition rules</strong> are the associativity of the product read on the maps,</p>
 <p>$$
 L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}, \qquad\qquad R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}},
 $$</p>
@@ -74,15 +73,15 @@ $$</p>
 <p>$$
 \tilde{Q}\;\longmapsto\; L_{\tilde{Q}}
 $$</p>
-<p>is an <strong>injective algebra homomorphism</strong> from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_0$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_0) = \tilde{Q}$ recovers the element from the map. This is the <strong>left regular representation</strong> of the algebra, and it is the abstract content of the two matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.</p>
+<p>is an <strong>injective algebra homomorphism</strong> from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_t$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_t) = \tilde{Q}$ recovers the element from the map. This is the <strong>left regular representation</strong> of the algebra, and it is the abstract content of the two matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.</p>
 <h2 id="the-monoid-of-acting-maps">The Monoid of Acting Maps</h2>
 <p>The image of the regular representation is the set of left multiplications,</p>
 <p>$$
 \mathcal{L} = \{\,L_{\tilde{Q}} \;:\; \tilde{Q}\in\mathbb{B}\,\},
 $$</p>
-<p>and its structure is fixed by the composition rule. Composition of maps is associative always, so $\mathcal{L}$ is <strong>associative</strong>; the identity element is the left multiplication by the algebra's unit, $L_{e_0} = \mathrm{id}$; and $\mathcal{L}$ is closed under composition by the rule. Therefore</p>
+<p>and its structure is fixed by the composition rule. Composition of maps is associative always, so $\mathcal{L}$ is <strong>associative</strong>; the identity element is the left multiplication by the algebra's unit, $L_{e_t} = \mathrm{id}$; and $\mathcal{L}$ is closed under composition by the rule. Therefore</p>
 <p>$$
-(\mathcal{L},\,\circ,\;L_{e_0})
+(\mathcal{L},\,\circ,\;L_{e_t})
 $$</p>
 <p>is a <strong>monoid</strong>: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}}$ is invertible <strong>iff</strong> $\tilde{Q}$ is a unit, that is iff $\langle\tilde{Q}\rangle_{\natural}\neq0$, in which case $L_{\tilde{Q}}^{-1} = L_{\tilde{Q}^{-1}}$ with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$; if $\langle\tilde{Q}\rangle_{\natural} = 0$ the element is a zero divisor and $L_{\tilde{Q}}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and <strong>the zero divisors are the non-invertible maps</strong>.</p>
 <p>Two features of the monoid are read physically and are stated here before the interpretation. The first is that the monoid is <strong>oriented</strong>. Since the product does not commute, $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$ in general, so the composition of the maps remembers the order of the operations; the element is an <strong>ordered</strong> operation and not a magnitude, and the same two operations composed in the two orders give two different maps. This is the map-level form of the corpus's statement that the material composition is oriented and cannot measure. The second is that the monoid has a <strong>zero</strong>: the zero element of the algebra gives the zero map, $L_0 = 0$, and it is absorbing, $L_{\tilde{Q}}\circ L_0 = L_0$. A monoid with a zero and with non-invertible elements is exactly the shape of a set of <strong>processes</strong> that can be composed and that can fail to be reversed, and this is the shape the interpretation uses.</p>
@@ -125,7 +124,7 @@ $$</p>
 <p>Read as a <strong>resource theory</strong>, the monoid's split is the framework's version of free and resourceful operations: the units are the free, reversible operations, the non-units the operations that consume a resource, and the states are ordered by the monotones the algebra carries, the norm and the entropy functional, so the monoid is the framework's setting for Landauer-type accounting (<em>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</em>, <em>Coarse-Graining and the Biquaternion Entropy Functional</em>). Boundary: no complete set of monotones and no resource theory in the strict sense is constructed; the interpretation names the shape of the split and not a theorem about it.</p>
 <p>Read as a <strong>horizon</strong>, the zero-divisor cone is at once the locus of light, the boundary of the state space and the locus of the non-invertible acting maps, so read physically the cone is where a process loses information: the maps on it are the irreversible ones, and an element of the cone has no inverse on either side. Boundary: the identification of the cone with a horizon is an interpretation and not an entropy; the area law, the temperature and the second law are not supplied by the algebra, whose thermodynamic content is owned by <em>Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form</em> and by the KMS articles, and the corpus's own arrow is a dichotomy and not an orientation.</p>
 <h2 id="summary">Summary</h2>
-<p>An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a <strong>monoid</strong> under composition: associative, with identity $L_{e_0}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.</p>
+<p>An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a <strong>monoid</strong> under composition: associative, with identity $L_{e_t}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.</p>
 <p>The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$, which is why it is a congruence and not a similarity. The states are the projectors, and idempotent elements are idempotent maps under the injective representation; the projectors lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one projectors, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -149,7 +148,7 @@ $$</p>
 <td>the monoid of left multiplications</td>
 </tr>
 <tr>
-<td>$L_{e_0}$</td>
+<td>$L_{e_t}$</td>
 <td>the identity of the monoid</td>
 </tr>
 <tr>

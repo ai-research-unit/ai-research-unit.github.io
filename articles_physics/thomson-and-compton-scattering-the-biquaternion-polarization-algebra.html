@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,8 +51,8 @@
       <div class="article-body">
         <h1 id="thomson-and-compton-scattering-the-biquaternion-polarization-algebra"><strong>Thomson and Compton Scattering: The Biquaternion Polarization Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Photon–electron scattering is the simplest process in which light, charge, and spin meet, and it is the process in which the polarization of the photon is an observable rather than a label. In its classical limit it is <strong>Thomson scattering</strong>: a free charge driven by a plane wave radiates at the same frequency, and the cross-section depends on the incident and outgoing polarization through the single geometric factor $|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}|^2$. In its quantum form it is <strong>Compton scattering</strong>: a photon of four-momentum $k$ scatters off an electron of four-momentum $p$ into $k'$, $p'$, the frequency changes by the Compton shift, and the cross-section is the Klein–Nishina formula. The two are one process in two limits, and the difference between them is the electron mass: the Thomson limit is the limit in which the recoil is negligible, which is the massless limit of the previous article. This article develops the <strong>polarization algebra</strong> of the process in biquaternion form — the encoding of the photon's polarization states as elements of the algebra, the coherence biquaternion that carries the Stokes parameters, and the helicity operator — and uses it to organise the Thomson cross-section, its polarization transfer, and the Klein–Nishina generalisation.</p>
-<p>Three results are established. First, the <strong>polarization states are native to the material sector</strong>. The transverse polarizations of a plane wave are the two real directions of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, and the two circular polarizations are the complex combinations that diagonalise left multiplication by $\vec u_k$, with eigenvalues $\mp i$; this is the companion photon article's characterisation, restated here because every formula below uses it. Second, the <strong>coherence biquaternion</strong> $\tilde{\rho} = \frac12(S_0e_0 + i\vec S\cdot\tilde{e}) \in \mathbb{M}_+$ carries the Stokes parameters, and its biquaternion norm $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2 - |\vec S|^2)$ is the algebra's measure of the degree of polarization: the fully polarized states are the biquaternion-norm cone of $\mathbb{M}_+$, which is the Poincaré sphere, and the interior is the partially polarized ball. Third, the <strong>Thomson cross-section is a biquaternion-norm pairing</strong>. Its polarization dependence is $|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}|^2 = |\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$ for pure-vector polarization biquaternions, and its value follows from the biquaternion norm with no further input. The unpolarized Thomson cross-section was re-integrated to $8\pi r_e^2/3 = 0.66524587$ barn, the CODATA value; the polarization sum over the two physical states was verified to reproduce the transverse projector $\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$; the Compton shift was verified to put the recoil electron on its mass shell; and the Klein–Nishina differential cross-section was integrated numerically and shown to agree with the standard analytic total to one part in $10^{11}$ and to reduce to the Thomson value as the photon energy tends to zero.</p>
+<p>Photon–electron scattering is the simplest process in which light, charge, and spin meet, and it is the process in which the polarization of the photon is an observable rather than a label. In its classical limit it is <strong>Thomson scattering</strong>: a free charge driven by a plane wave radiates at the same frequency, and the cross-section depends on the incident and outgoing polarization through the single geometric factor $|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}|^2$. In its quantum form it is <strong>Compton scattering</strong>: a photon of four-momentum $k$ scatters off an electron of four-momentum $p$ into $k'$, $p'$, the frequency changes by the Compton shift, and the cross-section is the Klein–Nishina formula. The two are one process in two limits, and the difference between them is the electron mass: the Thomson limit is the limit in which the recoil is negligible, which is the massless limit of the previous article. This article develops the <strong>polarization algebra</strong> of the process in biquaternion form — the encoding of the photon's polarization states as elements of the algebra, the coherence biquaternion that carries the Stokes parameters, and the helicity operator — and uses it to organise the Thomson cross-section, its polarization transfer, and the Klein–Nishina generalisation.</p>
+<p>Three results are established. First, the <strong>polarization states are native to the material sector</strong>. The transverse polarizations of a plane wave are the two real directions of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, and the two circular polarizations are the complex combinations that diagonalise left multiplication by $\vec u_k$, with eigenvalues $\mp i$; this is the companion photon article's characterisation, restated here because every formula below uses it. Second, the <strong>coherence biquaternion</strong> $\tilde{\rho} = \frac12(S_0e_t + i S_k\vec e_k) \in \mathbb{M}_+$ carries the Stokes parameters, and its biquaternion norm $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2 - |\vec S|^2)$ is the algebra's measure of the degree of polarization: the fully polarized states are the biquaternion-norm cone of $\mathbb{M}_+$, which is the Poincaré sphere, and the interior is the partially polarized ball. Third, the <strong>Thomson cross-section is a biquaternion-norm pairing</strong>. Its polarization dependence is $|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}|^2 = |\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$ for pure-vector polarization biquaternions, and its value follows from the biquaternion norm with no further input. The unpolarized Thomson cross-section was re-integrated to $8\pi r_e^2/3 = 0.66524587$ barn, the CODATA value; the polarization sum over the two physical states was verified to reproduce the transverse projector $\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$; the Compton shift was verified to put the recoil electron on its mass shell; and the Klein–Nishina differential cross-section was integrated numerically and shown to agree with the standard analytic total to one part in $10^{11}$ and to reduce to the Thomson value as the photon energy tends to zero.</p>
 <p>The scope is relativistic and quantum, and it is the worked application that closes the subcategory. The electron is treated as a Dirac particle whose free equation belongs to the spin-1/2 companions, and the photon as the massless Maxwell field of the spin-1 companions; what this article supplies is the algebra of the <strong>polarizations</strong> and the way the cross-sections are built from it. The classical relativistic particle and the Lorentz group belong to the non-quantum theory. The only limit used from outside is the non-relativistic one, which enters when the electron's recoil is neglected.</p>
 <ul>
 <li>Companion article <em>The Photon in Biquaternionic Form</em>, for the polarization space as the material sector, the circular basis, and the helicity operator.</li>
@@ -65,7 +64,7 @@
 </ul>
 <h2 id="the-polarization-biquaternions">The Polarization Biquaternions</h2>
 <h3 id="linear-and-circular-polarizations-in-the-material-sector">Linear and circular polarizations in the material sector</h3>
-<p>A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde{K} = i(\omega/c)e_0 + \vec k$ has a polarization biquaternion that is a pure vector, $\tilde{\varepsilon} = \vec\varepsilon$, and the field-strength biquaternion of the wave is
+<p>A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde{K} = i(\omega/c)e_t + \vec k$ has a polarization biquaternion that is a pure vector, $\tilde{\varepsilon} = \vec\varepsilon$, and the field-strength biquaternion of the wave is
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
 = \tilde{K}\,\tilde{\varepsilon} \quad\text{up to a phase and a normalisation},
@@ -95,7 +94,7 @@ and the circular pair obeys the same sum. In the framework this projector is nat
 <h3 id="the-coherence-biquaternion-and-the-stokes-parameters">The coherence biquaternion and the Stokes parameters</h3>
 <p>A beam is described not by one polarization vector but by its coherence matrix. Writing the Stokes parameters $S_0, S_1, S_2, S_3$ for the intensities in the linear and circular bases, the coherence matrix is encoded in the <strong>coherence biquaternion</strong>
 $$
-\tilde{\rho} = \tfrac12\bigl(S_0e_0 + i\,S_1e_1 + i\,S_2e_2 + i\,S_3e_3\bigr) \in \mathbb{M}_+ ,
+\tilde{\rho} = \tfrac12\bigl(S_0e_t + i\,S_1\vec e_x + i\,S_2\vec e_y + i\,S_3\vec e_z\bigr) \in \mathbb{M}_+ ,
 $$
 which is Hermitian by construction, as every element of $\mathbb{M}_+$ is. Its biquaternion norm is
 $$
@@ -113,13 +112,13 @@ $$
 \qquad
 \sin 2\chi = \frac{S_3}{\sqrt{S_1^2+S_2^2+S_3^2}} ,
 $$
-with $\chi>0$ right-handed and $\chi<0$ left-handed, and the sign of the $S_3$ coefficient in the coherence biquaternion is the algebraic carrier of the handedness. Two combinations are invariant under the rotations of the transverse plane that the algebra generates. The <strong>trace part</strong> $\frac12S_0e_0$ is the intensity, the rotation-invariant scalar of the coherence biquaternion, and the <strong>biquaternion norm</strong> $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$ is the purity, also invariant because the rotation acts on $\vec S$ by the vector rotation. Every other feature of the beam — the orientation of the ellipse, the azimuth of the Stokes vector — is a frame-dependent coordinate, and the decomposition
+with $\chi>0$ right-handed and $\chi<0$ left-handed, and the sign of the $S_3$ coefficient in the coherence biquaternion is the algebraic carrier of the handedness. Two combinations are invariant under the rotations of the transverse plane that the algebra generates. The <strong>trace part</strong> $\frac12S_0e_t$ is the intensity, the rotation-invariant scalar of the coherence biquaternion, and the <strong>biquaternion norm</strong> $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$ is the purity, also invariant because the rotation acts on $\vec S$ by the vector rotation. Every other feature of the beam — the orientation of the ellipse, the azimuth of the Stokes vector — is a frame-dependent coordinate, and the decomposition
 $$
-\tilde{\rho} = \frac12 S_0 e_0 + \tilde{\rho}_{\mathrm{pol}} ,
+\tilde{\rho} = \frac12 S_0 e_t + \tilde{\rho}_{\mathrm{pol}} ,
 \qquad
-\tilde{\rho}_{\mathrm{pol}} = \frac{i}{2}\vec S\cdot\tilde{e} ,
+\tilde{\rho}_{\mathrm{pol}} = \frac{i}{2}S_k\vec e_k ,
 $$
-separates the invariant unpolarized part from the polarized part whose norm is $-\frac14|\vec S|^2$. A fully polarized beam is one whose polarized part saturates the cone, $\langle\tilde{\rho}\rangle_{\natural} = 0$; depolarization transfers weight from the vector part to the scalar part, which is the operation the density-matrix formalism calls the completely-positive trace-preserving map. The two invariants of the beam and the two invariants of the action — the bilinear norm and the Hermitian pairing — are thus the same two forms: the trace part is the Hermitian pairing of $\tilde{\rho}$ with $e_0$, and the biquaternion norm is the bilinear pairing $\tilde{\rho}\tilde{\rho}^{\natural}$.</p>
+separates the invariant unpolarized part from the polarized part whose norm is $-\frac14|\vec S|^2$. A fully polarized beam is one whose polarized part saturates the cone, $\langle\tilde{\rho}\rangle_{\natural} = 0$; depolarization transfers weight from the vector part to the scalar part, which is the operation the density-matrix formalism calls the completely-positive trace-preserving map. The two invariants of the beam and the two invariants of the action — the bilinear norm and the Hermitian pairing — are thus the same two forms: the trace part is the Hermitian pairing of $\tilde{\rho}$ with $e_t$, and the biquaternion norm is the bilinear pairing $\tilde{\rho}\tilde{\rho}^{\natural}$.</p>
 <h3 id="the-self-dual-split-and-helicity">The self-dual split and helicity</h3>
 <p>The two circular polarizations are the two eigenstates of the helicity, and they are also the two irreducible pieces of the field. The Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$ splits the field into its self-dual and anti-self-dual halves,
 $$
@@ -130,28 +129,28 @@ $$
 where $\vec N_+$ is the self-dual half and $\vec N_- = \vec N^*$ the anti-self-dual one, the two being complex conjugates for a real field. They are the two halves of the field tensor in the companion's convention, $\vec N \leftrightarrow F + i\star F$ and $\vec N^* \leftrightarrow F - i\star F$ with $\star\vec N = -i\vec N$, and they are not a partition of $\vec N$ into a sum but a partition of the six real field components into two complex triples. For a plane wave of definite helicity the field is supported on one half: the helicity $+1$ amplitude appears in $\vec N_+ = \vec E + ic\vec B$ and the helicity $-1$ amplitude in $\vec N_- = \vec E - ic\vec B$. The companion articles on the field strength and on the photon establish this and identify the two pieces as the two three-dimensional complex representations of the Lorentz group and as the $\pm1$ eigenspaces of the helicity operator. The reason it belongs to the scattering article is that the two helicity amplitudes of the scattering process are the amplitudes for the field to remain in, or move between, these two pieces, and the self-dual split is the algebraic reason there are two of them and not four. A scattering process that conserves helicity is one that leaves the decomposition intact; a helicity-flip process transfers amplitude between the two halves.</p>
 <h2 id="thomson-scattering">Thomson Scattering</h2>
 <h3 id="the-classical-cross-section">The classical cross-section</h3>
-<p>A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega t)$, so $\partial_t \to -i\omega$ and the equation $m\dot{\vec v} = -e\vec E$ gives that velocity, radiates as an oscillating dipole, and the time-averaged power per unit solid angle is the Larmor result. Dividing by the incident intensity gives the Thomson differential cross-section
+<p>A free electron of charge $-e$ and mass $m$ in a plane wave of amplitude $E_0$ acquires the oscillating velocity $\vec v = e\vec E/(mi\omega)$: the phase is $\exp(-i\omega t)$, so $\partial/\partial t \to -i\omega$ and the equation $md\vec v/dt = -e\vec E$ gives that velocity, radiates as an oscillating dipole, and the time-averaged power per unit solid angle is the Larmor result. Dividing by the incident intensity gives the Thomson differential cross-section
 $$
-\frac{d\sigma_T}{d\Omega} = r_e^2\,\bigl|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 ,
+\frac{d\sigma_T}{d\Omega} = r_e^2\,\bigl|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 ,
 \qquad
 r_e = \frac{e^2}{4\pi\epsilon_0 mc^2} ,
 $$
-where $\varepsilon^{\mathrm{fop}}$ and $\varepsilon^{\mathrm{fop}}'$ are the incident and outgoing <strong>linear</strong> polarization unit vectors. In the biquaternion form the geometric factor is a pairing in the material sector,
+where $\varepsilon^{\mathrm{fop}}$ and ${\varepsilon^{\mathrm{fop}}}'$ are the incident and outgoing <strong>linear</strong> polarization unit vectors. In the biquaternion form the geometric factor is a pairing in the material sector,
 $$
-\bigl|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2
+\bigl|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2
 = \bigl|\mathrm{Sc}\bigl(\tilde{\varepsilon}'^\dagger \tilde{\varepsilon}\bigr)\bigr|^2 ,
 $$
-since for pure vectors $\tilde{\varepsilon}^{*} = -\tilde{\varepsilon}$ and $\mathrm{Sc}(\tilde{\varepsilon}'\tilde{\varepsilon}) = -\vec\varepsilon'\cdot\vec\varepsilon$. The amplitude's polarization dependence is therefore a single Hermitian pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical amplitude is the modulus squared of a matrix element. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar $\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}$. And it is the <strong>square of a projector</strong>: summing over the two outgoing polarizations by the completeness relation gives
+since for pure vectors $\tilde{\varepsilon}^{*} = -\tilde{\varepsilon}$ and $\mathrm{Sc}(\tilde{\varepsilon}'\tilde{\varepsilon}) = -\vec\varepsilon'\cdot\vec\varepsilon$. The amplitude's polarization dependence is therefore a single Hermitian pairing of two elements of $\mathbb{M}_-$, and the cross-section is its modulus squared, exactly as a quantum-mechanical amplitude is the modulus squared of a matrix element. Two features of the formula are worth stating. It factors: incident polarization, propagation direction, outgoing direction, and outgoing polarization enter only through the one scalar ${\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}$. And it is the <strong>square of a projector</strong>: summing over the two outgoing polarizations by the completeness relation gives
 $$
-\sum_{\lambda'}\bigl|\varepsilon^{\mathrm{fop}}\cdot\varepsilon^{\mathrm{fop}}'^{(\lambda')}\bigr|^2
+\sum_{\lambda'}\bigl|\varepsilon^{\mathrm{fop}}\cdot{\varepsilon^{\mathrm{fop}}}'^{(\lambda')}\bigr|^2
 = 1 - \bigl(\varepsilon^{\mathrm{fop}}\cdot\vec u_k'\bigr)^2 = \sin^2\Xi ,
 $$
 where $\Xi$ is the angle between the incident polarization and the outgoing propagation direction; this was verified on two hundred random geometries to $10^{-15}$. For an incident beam polarized in the scattering plane, $\Xi$ is the complement of the scattering angle and the sum reproduces the familiar $\cos^2$ behaviour; for an incident beam polarized perpendicular to the plane, $\Xi = \pi/2$ and the sum is one, independent of angle — the classic statement that light scattered in the plane of its polarization vanishes at $90^\circ$.</p>
 <h3 id="the-helicity-amplitudes">The helicity amplitudes</h3>
-<p>The two circular amplitudes of the classical process carry the helicity information in the simplest possible form. Writing the amplitude as $\varepsilon^{\mathrm{fop}}'^*\cdot\varepsilon^{\mathrm{fop}}$ in the circular basis, the two independent elements are the <strong>helicity-conserving</strong> and <strong>helicity-flip</strong> amplitudes
+<p>The two circular amplitudes of the classical process carry the helicity information in the simplest possible form. Writing the amplitude as ${\varepsilon^{\mathrm{fop}}}'^*\cdot\varepsilon^{\mathrm{fop}}$ in the circular basis, the two independent elements are the <strong>helicity-conserving</strong> and <strong>helicity-flip</strong> amplitudes
 $$
-M_{++} = \varepsilon^{\mathrm{fop}}_+'^*\cdot\varepsilon^{\mathrm{fop}}_+ , \qquad
-M_{+-} = \varepsilon^{\mathrm{fop}}_-'^*\cdot\varepsilon^{\mathrm{fop}}_+ ,
+M_{++} = {\varepsilon^{\mathrm{fop}}_+}'^*\cdot\varepsilon^{\mathrm{fop}}_+ , \qquad
+M_{+-} = {\varepsilon^{\mathrm{fop}}_-}'^*\cdot\varepsilon^{\mathrm{fop}}_+ ,
 $$
 and they evaluate, up to the phases of the circular basis, to
 $$
@@ -163,7 +162,7 @@ so that the flip-to-conserve amplitude ratio is $(1-\cos\theta)/(1+\cos\theta)$ 
 <h3 id="the-unpolarized-cross-section-and-its-integral">The unpolarized cross-section and its integral</h3>
 <p>Averaging the factor over the two incident polarizations,
 $$
-\bigl|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 \longrightarrow \frac{1+\cos^2\theta}{2} ,
+\bigl|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}\bigr|^2 \longrightarrow \frac{1+\cos^2\theta}{2} ,
 $$
 gives the unpolarized Thomson cross-section
 $$
@@ -208,7 +207,7 @@ $$
 $$
 and it is the biquaternion-norm statement of the kinematics: the photon stays on the null cone and the electron stays on its mass shell. The formula was verified by an independent route: for four scattering angles and four incident energies (0.1, 0.511, 2 and 10 MeV) the recoil four-momentum reconstructed from energy–momentum conservation satisfied $E_e^2 - p^2c^2 = m^2c^4$ to $3\times10^{-14}$ MeV$^2$, so the shifted frequency is the one that puts the electron back on shell. No approximation beyond the rest-frame kinematics and the plane-wave conditions enters, and the derivation is the standard one; the note that belongs to this series is that the kinematics is a statement entirely about the biquaternion norm on the two momenta.</p>
 <h3 id="the-recoil-electron">The recoil electron</h3>
-<p>The shift is one half of the kinematics; the other half is the recoil. In the laboratory frame the initial electron is at rest, $\tilde{P} = mc\,e_0$ up to the $ict$ factor, and conservation of the four-momentum fixes the recoil momentum to $\tilde{P}' = \tilde{P} + \tilde{K} - \tilde{K}'$, whose components have the standard form: energy $E' = mc^2 + \hbar\omega - \hbar\omega'$, and momentum in the scattering plane with the electron recoiling at the complement of the photon angle. The reconstruction was part of the numerical check above, where the recoil four-momentum was verified to sit on the electron mass shell to $3\times10^{-14}$ MeV$^2$; what matters for the polarization algebra is that the recoil direction $\vec u_k\times\vec u_k'$ (the normal to the scattering plane) and the electron spin direction are both material-sector vectors, so the spin asymmetry of the previous section pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\hbar(\omega - \omega')$, and this recoil is the physical origin of the dimensionless scale $x$.</p>
+<p>The shift is one half of the kinematics; the other half is the recoil. In the laboratory frame the initial electron is at rest, $\tilde{P} = mc\,e_t$ up to the $ict$ factor, and conservation of the four-momentum fixes the recoil momentum to $\tilde{P}' = \tilde{P} + \tilde{K} - \tilde{K}'$, whose components have the standard form: energy $E' = mc^2 + \hbar\omega - \hbar\omega'$, and momentum in the scattering plane with the electron recoiling at the complement of the photon angle. The reconstruction was part of the numerical check above, where the recoil four-momentum was verified to sit on the electron mass shell to $3\times10^{-14}$ MeV$^2$; what matters for the polarization algebra is that the recoil direction $\vec u_k\times\vec u_k'$ (the normal to the scattering plane) and the electron spin direction are both material-sector vectors, so the spin asymmetry of the previous section pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\hbar(\omega - \omega')$, and this recoil is the physical origin of the dimensionless scale $x$.</p>
 <h3 id="the-kleinnishina-cross-section">The Klein–Nishina cross-section</h3>
 <p>The quantum differential cross-section for unpolarized photons and electrons is the Klein–Nishina formula,
 $$
@@ -240,12 +239,12 @@ where $\phi$ is the azimuth of the scattering plane measured from the direction 
 <h2 id="the-electron-spin-biquaternion">The Electron Spin Biquaternion</h2>
 <p>The electron's spin enters the scattering through the same algebra as the photon's polarization, and the correspondence is worth stating. A spin-$\tfrac12$ state is encoded in a Hermitian biquaternion
 $$
-\tilde{\rho}_e = \tfrac12\bigl(e_0 + i\,\vec s\cdot\tilde{e}\bigr) \in \mathbb{M}_+ ,
+\tilde{\rho}_e = \tfrac12\bigl(e_t + i\,s_k\vec e_k\bigr) \in \mathbb{M}_+ ,
 \qquad
 \langle\tilde{\rho}_e\rangle_{\natural} = \tfrac14\bigl(1 - |\vec s|^2\bigr) ,
 $$
-the $i$ being what puts the vector part in the imaginary-vector direction that membership in $\mathbb{M}_+$ requires, and with the normalisation $\mathrm{Sc}(\tilde{\rho}_e) = \tfrac12$ that a density matrix carries. At $\vec s = \pm\vec u$ it reduces to the informational sector's idempotents $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm i\vec u\cdot\tilde{e})$, so the identification here is the companion article's, read on the spin instead of on the boost. Here $\vec s$ is the Bloch vector of the spin; the pure spin states have $|\vec s| = 1$ and lie on the biquaternion-norm cone of $\mathbb{M}_+$, the mixed states fill the interior, and the spin-up and spin-down states along any axis are the two idempotents on the cone. The structure is formally identical to the coherence biquaternion of the beam: $\tilde{\rho}$ and $\tilde{\rho}_e$ are both elements of $\mathbb{M}_+$ whose biquaternion norm measures purity, the Stokes vector playing the role of the Bloch vector. The photon's <em>polarization</em> states, by contrast, are vectors of $\mathbb{M}_-$; the spin-$\tfrac12$ <em>states</em> are elements of $\mathbb{M}_+$. The scattering problem therefore pairs an element of $\mathbb{M}_-$ (the photon polarization) with an element of $\mathbb{M}_+$ (the electron spin), and the amplitude is a pairing across the two sectors — a structural feature of the framework that the standard treatment hides inside the spinor and vector indices.</p>
-<p>Two consequences are standard and are stated here in the algebra's language. First, <strong>averaging over the electron spin</strong> replaces the spin biquaternion by its trace part, $\tilde{\rho}_e\to\tfrac12 e_0$ for the unpolarized ensemble, and the spin-dependent terms in the amplitude integrate to zero; the spin sum in the Dirac trace is the corresponding projector onto the positive-mass shell, $\sum_s \xi_s\bar{\xi}_s = \not{p} + m$ (in the normalisation of the companion <em>The Dirac Equation in Biquaternionic Form</em>), which is the statement that the averaged spin is the mass shell's projector. Second, <strong>resolving the spin</strong> leaves a term odd in $\vec s$ of the form
+the $i$ being what puts the vector part in the imaginary-vector direction that membership in $\mathbb{M}_+$ requires, and with the normalisation $\mathrm{Sc}(\tilde{\rho}_e) = \tfrac12$ that a density matrix carries. At $\vec s = \pm\vec u$ it reduces to the informational sector's idempotents $\tilde\Pi_{1,2} = \tfrac12(e_t \pm i\vec u)$, so the identification here is the companion article's, read on the spin instead of on the boost. Here $\vec s$ is the Bloch vector of the spin; the pure spin states have $|\vec s| = 1$ and lie on the biquaternion-norm cone of $\mathbb{M}_+$, the mixed states fill the interior, and the spin-up and spin-down states along any axis are the two idempotents on the cone. The structure is formally identical to the coherence biquaternion of the beam: $\tilde{\rho}$ and $\tilde{\rho}_e$ are both elements of $\mathbb{M}_+$ whose biquaternion norm measures purity, the Stokes vector playing the role of the Bloch vector. The photon's <em>polarization</em> states, by contrast, are vectors of $\mathbb{M}_-$; the spin-$\tfrac12$ <em>states</em> are elements of $\mathbb{M}_+$. The scattering problem therefore pairs an element of $\mathbb{M}_-$ (the photon polarization) with an element of $\mathbb{M}_+$ (the electron spin), and the amplitude is a pairing across the two sectors — a structural feature of the framework that the standard treatment hides inside the spinor and vector indices.</p>
+<p>Two consequences are standard and are stated here in the algebra's language. First, <strong>averaging over the electron spin</strong> replaces the spin biquaternion by its trace part, $\tilde{\rho}_e\to\tfrac12 e_t$ for the unpolarized ensemble, and the spin-dependent terms in the amplitude integrate to zero; the spin sum in the Dirac trace is the corresponding projector onto the positive-mass shell, $\sum_s \xi_s\bar{\xi}_s = \not{p} + m$ (in the normalisation of the companion <em>The Dirac Equation in Biquaternionic Form</em>), which is the statement that the averaged spin is the mass shell's projector. Second, <strong>resolving the spin</strong> leaves a term odd in $\vec s$ of the form
 $$
 \Delta\frac{d\sigma}{d\Omega} \propto \vec s\cdot\bigl(\vec u_k\times\vec u_k'\bigr) \,f(\omega,\theta) ,
 $$
@@ -253,7 +252,7 @@ the magnetic Compton asymmetry, whose geometric factor is the vector normal to t
 <h2 id="the-polarization-algebra-in-one-place">The Polarization Algebra in One Place</h2>
 <p>The three objects of the scattering problem — the photon's polarization, the electron's spin, and the geometric factor — sit in definite places in the algebra, and the cross-section is their pairing.</p>
 <p>The <strong>photon polarization</strong> is a pure vector of $\mathbb{M}_-$, either real (linear) or complexified (circular). It is not an idempotent and not in $\mathbb{M}_+$; it is a direction in the transverse plane, and the two physical directions are the plane's basis.</p>
-<p>The <strong>coherence biquaternion</strong> $\tilde{\rho} = \frac12(S_0e_0+i\vec S\cdot\tilde{e})$ <strong>is an element of $\mathbb{M}_+$</strong>, and it is the object that carries the beam's polarization state including partial coherence. Its biquaternion norm is the mass-shell-like invariant $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$, so the polarized states are the cone and the unpolarized state is the axis. The beam's polarization therefore lives on the same cone as the framework's spin-$\tfrac12$ idempotents and the photon's helicity states, which is the structural reason the Stokes algebra and the biquaternion-norm algebra agree.</p>
+<p>The <strong>coherence biquaternion</strong> $\tilde{\rho} = \frac12(S_0e_t+i S_k\vec e_k)$ <strong>is an element of $\mathbb{M}_+$</strong>, and it is the object that carries the beam's polarization state including partial coherence. Its biquaternion norm is the mass-shell-like invariant $\langle\tilde{\rho}\rangle_{\natural} = \frac14(S_0^2-|\vec S|^2)$, so the polarized states are the cone and the unpolarized state is the axis. The beam's polarization therefore lives on the same cone as the framework's spin-$\tfrac12$ idempotents and the photon's helicity states, which is the structural reason the Stokes algebra and the biquaternion-norm algebra agree.</p>
 <p>The <strong>helicity operator</strong> is $\lambda = \tfrac{i}{2}\mathrm{ad}_{\vec u_k}$, represented in $\mathbb{M}_+$ by $i\vec u_k \in \mathbb{M}_+$; the two physical polarizations are its $\pm1$ eigenvectors and the longitudinal direction is its zero eigenvector, and it is the generator of the circular-to-linear geometry: the azimuthal modulation $\cos2\phi$ of the Compton cross-section is a statement about this operator's eigenspaces.</p>
 <p>The <strong>geometric factor</strong> of the scattering is the transverse projector $\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$, which is the polarization sum, and the cross-section's polarization dependence is the pairing $|\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$ of two material-sector vectors. The unpolarized average replaces the pairing by the projector's diagonal, and the integral over solid angle of the projector's trace is the total cross-section.</p>
 <p>Assembled, the amplitude of the Thomson process is a pairing of two material-sector vectors,
@@ -271,7 +270,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <p>What the framework does <strong>not</strong> supply is the dynamics. The Thomson cross-section and the Klein–Nishina formula are consequences of the Maxwell–Dirac action and its quantisation, not of the algebra; the algebra organises the polarization bookkeeping and exhibits the states, the observables, and the geometric factors as elements of one structure, but the $r_e^2$ and the $(\omega'/\omega)^2$ come from the field theory. This is the same boundary the photon article draws: the framework transcribes the standard physics faithfully, and the specific facts attached to the photon and the electron are supplied from outside.</p>
 <h2 id="summary">Summary</h2>
 <p>The polarization algebra of photon–electron scattering in the biquaternion framework places the photon's polarization in the vector part of the material sector, the beam's coherence in the Hermitian sector, and the scattering geometry in the transverse projector of the material sector.</p>
-<p>Thomson scattering has the differential cross-section $d\sigma_T/d\Omega = r_e^2|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}|^2 = r_e^2|\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$, whose outgoing-polarization sum is $r_e^2\sin^2\Xi$ (verified to $10^{-15}$) and whose unpolarized average is $r_e^2(1+\cos^2\theta)/2$, integrating to $\sigma_T = 8\pi r_e^2/3 = 0.66524587$ barn (verified to eleven decimals). The Mueller matrix transfers linear polarization with degree $P(\theta) = \sin^2\theta/(1+\cos^2\theta)$, equal to one at $90^\circ$ (verified at six angles), and does not convert circular to linear polarization.</p>
+<p>Thomson scattering has the differential cross-section $d\sigma_T/d\Omega = r_e^2|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}|^2 = r_e^2|\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})|^2$, whose outgoing-polarization sum is $r_e^2\sin^2\Xi$ (verified to $10^{-15}$) and whose unpolarized average is $r_e^2(1+\cos^2\theta)/2$, integrating to $\sigma_T = 8\pi r_e^2/3 = 0.66524587$ barn (verified to eleven decimals). The Mueller matrix transfers linear polarization with degree $P(\theta) = \sin^2\theta/(1+\cos^2\theta)$, equal to one at $90^\circ$ (verified at six angles), and does not convert circular to linear polarization.</p>
 <p>Compton scattering shifts the frequency to $\omega' = \omega/[1+(\hbar\omega/mc^2)(1-\cos\theta)]$, verified to put the recoil electron on its mass shell to $3\times10^{-14}$ MeV$^2$; the Klein–Nishina differential cross-section integrates to the standard analytic total to one part in $10^{11}$ at five energies and reduces to the Thomson value as $x\to0$ ($8.3760\,r_e^2$ at $x=10^{-4}$ against $8.3776\,r_e^2$). The polarized cross-section carries an azimuthal $\cos2\phi$ modulation and an electron-spin asymmetry $\propto\vec S_e\cdot(\vec u_k\times\vec u_k')$, standard results cited rather than re-derived; in the framework the electron's spin biquaternion is a Hermitian element with the same cone structure as the photon's coherence biquaternion.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -283,7 +282,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{K} = i(\omega/c)e_0+\vec k$</td>
+<td>$\tilde{K} = i(\omega/c)e_t+\vec k$</td>
 <td>Photon wave biquaternion; $\langle\tilde{K}\rangle_{\natural} = 0$</td>
 </tr>
 <tr>
@@ -291,7 +290,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <td>Electron four-momentum; $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$</td>
 </tr>
 <tr>
-<td>$\varepsilon^{\mathrm{fop}}, \varepsilon^{\mathrm{fop}}'$</td>
+<td>$\varepsilon^{\mathrm{fop}}, {\varepsilon^{\mathrm{fop}}}'$</td>
 <td>Incident and outgoing linear polarization unit vectors</td>
 </tr>
 <tr>
@@ -311,7 +310,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <td>Stokes parameters</td>
 </tr>
 <tr>
-<td>$\tilde{\rho} = \frac12(S_0e_0+i\vec S\cdot\tilde{e})\in\mathbb{M}_+$</td>
+<td>$\tilde{\rho} = \frac12(S_0e_t+i S_k\vec e_k)\in\mathbb{M}_+$</td>
 <td>Coherence biquaternion</td>
 </tr>
 <tr>
@@ -327,7 +326,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <td>Classical electron radius</td>
 </tr>
 <tr>
-<td>$d\sigma_T/d\Omega = r_e^2|\varepsilon^{\mathrm{fop}}'\cdot\varepsilon^{\mathrm{fop}}|^2$</td>
+<td>$d\sigma_T/d\Omega = r_e^2|{\varepsilon^{\mathrm{fop}}}'\cdot\varepsilon^{\mathrm{fop}}|^2$</td>
 <td>Thomson differential cross-section</td>
 </tr>
 <tr>
@@ -371,7 +370,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <td>Electron-spin asymmetry (magnetic Compton)</td>
 </tr>
 <tr>
-<td>$\tilde{\rho}_e = \frac12(e_0+i\vec s\cdot\tilde{e})\in\mathbb{M}_+$</td>
+<td>$\tilde{\rho}_e = \frac12(e_t+i s_k\vec e_k)\in\mathbb{M}_+$</td>
 <td>Electron spin biquaternion; $\langle\tilde{\rho}_e\rangle_{\natural} = \frac14(1-|\vec s|^2)$</td>
 </tr>
 </tbody>

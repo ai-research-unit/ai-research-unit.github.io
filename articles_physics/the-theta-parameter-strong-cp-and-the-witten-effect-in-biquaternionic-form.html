@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,15 +60,15 @@
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$</p>
-<p>as <em>Instantons and Solitons in Biquaternionic Form</em> recomputed from the component conventions of <em>The Field-Strength Biquaternion and Its Invariants</em>. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the <strong>pseudoscalar</strong> invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.</p>
+<p>as <em>Instantons and Solitons in Biquaternionic Form</em> recomputed from the component conventions of <em>The Field-Strength Biquaternion and Its Invariants</em>. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the <strong>pseudoscalar</strong> invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.</p>
 <p>Three things follow, and the article states them separately. The algebra <strong>supplies</strong> the theta term's density and its discrete periodicity; it <strong>supplies</strong> the structure of the Witten effect, in the sense that a theta shift and a magnetic charge together generate an electric charge; and it <strong>does not supply</strong> the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.</p>
 <p><strong>Conventions.</strong> We use those of <em>Conventions in the Biquaternion Universe</em> and of the companion gauge articles. The field-strength biquaternion is $F^{\mathrm{dual}}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, its dual is $F^{\mathrm{dual}}_\star=-iF^{\mathrm{dual}}$, and the invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The topological charge and theta term are</p>
 <p>$$
 Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
 \qquad
-S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu} ,
+S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu} ,
 \qquad
-F^{\mathrm{dual}}^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} ,
+{F^{\mathrm{dual}}}^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$</p>
 <p>with all indices summed in the $ict$ convention as in the companion gauge articles. Charges are in units $\hbar=c=1$ where a quantisation statement is made. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the informational trace formula.</p>
 <ul>
@@ -82,12 +81,12 @@ $$</p>
 <h2 id="the-theta-term-and-its-density">The Theta Term and Its Density</h2>
 <p>The theta term of a non-abelian gauge theory is</p>
 <p>$$
-S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}F^{\mathrm{dual}}^{a\,\mu\nu}
+S_\theta=\frac{\theta}{32\pi^2}\int d^4x\,F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}
 =\frac{\theta}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr) ,
 $$</p>
-<p>so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int F^aF^{\mathrm{dual}}^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,</p>
+<p>so that $S_\theta=\theta\,Ϙ$ with the charge normalisation used here, since $\int F^a{F^{\mathrm{dual}}}^a=4\int\mathrm{Tr}(F\wedge F)=32\pi^2Ϙ$. It is a total derivative,</p>
 <p>$$
-F^a_{\mu\nu}F^{\mathrm{dual}}^{a\,\mu\nu}=\partial_\mu K^\mu ,
+F^a_{\mu\nu}{F^{\mathrm{dual}}}^{a\,\mu\nu}=\langle\tilde\nabla,\tilde K\rangle_{\natural} ,
 \qquad
 K^\mu=\epsilon^{\mu\nu\rho\sigma}\Bigl(A^a_\nu F^a_{\rho\sigma}
 -\tfrac{g}{3}\,\epsilon^{abc}A^a_\nu A^b_\rho A^c_\sigma\Bigr),
@@ -95,9 +94,9 @@ $$</p>
 <p>the standard non-abelian Chern–Simons current, whose abelian part is the primitive $K^\mu=\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ of <em>Instantons and Solitons in Biquaternionic Form</em> and whose form identity $F\wedge F=d\Omega_{\mathrm{CS}}$ is that article's. Two consequences of the total-derivative property are stated there and are used here: the integral depends only on the boundary data, hence on the instanton number, and the local equations of motion are unaffected by the theta term, so its effects are topological and quantum-mechanical rather than classical.</p>
 <p><strong>The abelian density is the framework's invariant.</strong> In the Maxwell sector the density collapses to the second invariant,</p>
 <p>$$
-F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
+F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
-F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
+F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
 \qquad
 I_2=\vec E\cdot\vec B ,
 $$</p>
@@ -184,11 +183,11 @@ M\;\ge\;v\sqrt{ϙ_m^2+ϙ_e^2}
 $$</p>
 <p>which reduces at $\theta=0$ to the monopole mass $M=4\pi v/g$ of the monopole article and to the W-boson mass $M=gv$ for $(m,n)=(1,0)$. The mass formula is the BPS bound of the $\mathcal N=2$ theory; its theta dependence is the standard one, and the framework's contribution is the identification of the charges with its invariants.</p>
 <h2 id="summary">Summary</h2>
-<p>The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:</p>
+<p>The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:</p>
 <p>$$
-F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
+F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-F_{\mu\nu}F^{\mathrm{dual}}^{\mu\nu}=4\,I_2 \quad(\text{Euclidean}).
+F_{\mu\nu}{F^{\mathrm{dual}}}^{\mu\nu}=4\,I_2 \quad(\text{Euclidean}).
 $$</p>
 <p>Because it is the integral of a parity-odd density, the theta term violates $P$ and $T$ unless $\theta=0$ or $\pi$. The theta dependence enters through the instanton sum $Z(\theta)=\sum_Ϙ\exp(iϘ\theta)Z_Ϙ$ and is periodic with period $2\pi$, verified to machine precision; the periodicity is the $T$ generator of the modular group and originates in the integrality of the topological charge.</p>
 <p>The physical theta parameter is $\bar\theta=\theta+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$ and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.</p>
@@ -231,7 +230,7 @@ $$</p>
 <td>Theta term of the action</td>
 </tr>
 <tr>
-<td>$F^{\mathrm{dual}}^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$</td>
+<td>${F^{\mathrm{dual}}}^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$</td>
 <td>Hodge dual field strength</td>
 </tr>
 <tr>
@@ -240,7 +239,7 @@ $$</p>
 </tr>
 <tr>
 <td>$K^\mu$</td>
-<td>Chern–Simons current, $FF^{\mathrm{dual}}=\partial_\mu K^\mu$</td>
+<td>Chern–Simons current, $FF^{\mathrm{dual}}=\langle\tilde\nabla,\tilde K\rangle_{\natural}$</td>
 </tr>
 <tr>
 <td>$Z(\theta)=\sum_Ϙ \exp(iϘ\theta)Z_Ϙ$</td>

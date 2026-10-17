@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -100,15 +99,15 @@ $$</p>
 <p>The non-Archimedean case has no analogue of the delicate boundary behaviour of the Archimedean case, and this is the same rigidity as before: the absolute value of the $n$-th term at a boundary point is a function of the radius alone. Over an algebraically closed non-Archimedean field with dense value group the convergence disc is not merely open but is a union of closed balls of radii $< R$, and the "generic" values of $\lvert x - a \rvert$ make the convergence set neither the open disc nor the closed disc of any fixed radius; the honest statement is the one above.</p>
 <h2 id="analytic-functions">Analytic Functions</h2>
 <h3 id="definition-and-elementary-properties">Definition and Elementary Properties</h3>
-<p><strong>Definition.</strong> Let $F$ be a complete valued field and $U \subseteq F$ open. A function $f : U \to F$ is <strong>analytic on $U$</strong> if for every $a \in U$ there is a power series $\sum_n c_n (x-a)^n$ with positive radius of convergence whose sum agrees with $f$ on $B(a,\rho)$ for some $\rho > 0$. The set of analytic functions on $U$ is written $\mathcal{O}(U)$.</p>
+<p><strong>Definition.</strong> Let $F$ be a complete valued field and $\Omega \subseteq F$ open. A function $f : \Omega \to F$ is <strong>analytic on $\Omega$</strong> if for every $a \in \Omega$ there is a power series $\sum_n c_n (x-a)^n$ with positive radius of convergence whose sum agrees with $f$ on $B(a,\rho)$ for some $\rho > 0$. The set of analytic functions on $\Omega$ is written $\mathcal{O}(\Omega)$.</p>
 <p>The definition is local: analyticity is a property of the germ of $f$ at each point, and it is inherited by restrictions to smaller open sets. A polynomial is analytic on $F$, and a power series with radius $R$ is analytic on its disc of convergence, with the expansion about any interior point $a$ obtained by expanding $(x - b)^n = ((x-a) + (a-b))^n$ and regrouping; the regrouping is legitimate because the resulting double series converges absolutely in the Archimedean case, and because its terms tend to $0$ in each variable in the non-Archimedean case.</p>
-<p><strong>Theorem.</strong> Let $f$ be analytic on $U$. Then:</p>
-<p><strong>(a)</strong> $f$ is continuous on $U$;</p>
-<p><strong>(b)</strong> $f$ is differentiable on $U$, in the sense that</p>
+<p><strong>Theorem.</strong> Let $f$ be analytic on $\Omega$. Then:</p>
+<p><strong>(a)</strong> $f$ is continuous on $\Omega$;</p>
+<p><strong>(b)</strong> $f$ is differentiable on $\Omega$, in the sense that</p>
 <p>$$
 f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
 $$</p>
-<p>exists for every $a \in U$, and $f'$ is analytic on $U$, with $f'(x) = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;</p>
+<p>exists for every $a \in \Omega$, and $f'$ is analytic on $\Omega$, with $f'(x) = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;</p>
 <p><strong>(c)</strong> if $f$ is analytic and $f(a) \neq 0$ then $1/f$ is analytic on a neighbourhood of $a$;</p>
 <p><strong>(d)</strong> the sum and the product of analytic functions are analytic, and the composition $f \circ g$ of analytic functions is analytic wherever it is defined.</p>
 <p><strong>Proof sketch.</strong> (a) A power series is continuous on its disc by Cauchy–Hadamard and the Weierstrass test. (b) The usual algebraic division of the difference quotient gives $\bigl(\sum_{n \leq N} c_n ((a+h)^n - a^n)\bigr)/h = \sum_{n \leq N} c_n \sum_{k<n} a^{n-1-k}(a+h)^k$, and the limit as $N \to \infty$ and then $h \to 0$ is $\sum_n n c_n a^{n-1}$; the interchange of the two limits is licensed by the uniform convergence on a small disc. Denominators are avoided because $h \neq 0$ is a field element. (c) and (d) are the standard manipulations of absolutely convergent series, and in the non-Archimedean case the manipulations are simpler because every rearrangement is legitimate.</p>
@@ -253,8 +252,8 @@ $$</p>
 <td>Radius of convergence $1/\limsup \lvert a_n \rvert^{1/n}$</td>
 </tr>
 <tr>
-<td>$\mathcal{O}(U)$</td>
-<td>Ring of analytic functions on $U$</td>
+<td>$\mathcal{O}(\Omega)$</td>
+<td>Ring of analytic functions on $\Omega$</td>
 </tr>
 <tr>
 <td>$f'$, $f^{(n)}$</td>

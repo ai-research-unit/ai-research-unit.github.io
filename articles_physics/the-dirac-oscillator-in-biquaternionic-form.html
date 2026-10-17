@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -71,7 +70,7 @@ $$</p>
 <p><strong>It is linear in the position</strong>, so it grows without bound. The oscillator potential is confining; the spectrum is discrete; and the model is a relativistic confinement model rather than a scattering problem. This is the physical reason for its use in quark-confinement phenomenology, and it is the reason the spectrum consists of bound levels with the mass gap at their base.</p>
 <p>The covariant form of the equation, obtained by multiplying the Hamiltonian equation by $\beta$ and using $\beta\boldsymbol\alpha = \boldsymbol\gamma$, is</p>
 <p>$$
-\left(i\gamma^\mu\partial_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
+\left(i\gamma^\mu\partial/\partial Q_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
 $$</p>
 <p>The right-hand side is a spacelike Clifford vector times the frame, linear in $x$: the non-minimal term is a position-dependent generator of the odd part. This is the form in which the biquaternion interpretation is made below.</p>
 <h2 id="reduction-to-two-component-equations">Reduction to Two-Component Equations</h2>
@@ -202,7 +201,7 @@ $$</p>
 <p>The comparison isolates where the relativistic content lives. In the free theory, the spin–orbit coupling is a $1/c^2$ correction; in the oscillator it is present at leading order because the confining substitution is itself linear in the position and frame-odd. The biquaternion framework reads this as the statement that the substitution shifts the <strong>odd</strong> part of the operator, and the odd part is precisely what the square converts into an even operator with a spin–orbit component.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p>Three structural statements can now be made in the algebra.</p>
-<p><strong>The substitution is a shift of the odd part.</strong> In the biquaternion decomposition, the gradient $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ has an even frame part ($e_0\partial_{ict}$, the timelike direction) and a frame-odd part ($e_k\partial_k$, the spacelike directions). The oscillator substitution $\vec p \to \vec p - im\omega\beta\vec r$ adds to the odd part a term linear in the position with the same frame parity. Squaring the coupled first-order operators therefore returns a <strong>central</strong> second-order operator — because the cross terms of the two conjugate gradients cancel as in the free case — plus a remainder in the Hermitian sector $\mathbb{M}_+$, namely the spin–orbit element $-2m\omega\,\boldsymbol\sigma\cdot\vec L$. That the remainder is in $\mathbb{M}_+$ (it is Hermitian and spinorial) rather than in the centre is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue; it adds a Hermitian operator to the square.</p>
+<p><strong>The substitution is a shift of the odd part.</strong> In the biquaternion decomposition, the gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\partial/\partial Q_\mu$ has an even frame part ($e_t\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\vec e_\mu\partial/\partial Q_\mu$, the spacelike directions). The oscillator substitution $\vec p \to \vec p - im\omega\beta\vec r$ adds to the odd part a term linear in the position with the same frame parity. Squaring the coupled first-order operators therefore returns a <strong>central</strong> second-order operator — because the cross terms of the two conjugate gradients cancel as in the free case — plus a remainder in the Hermitian sector $\mathbb{M}_+$, namely the spin–orbit element $-2m\omega\,\boldsymbol\sigma\cdot\vec L$. That the remainder is in $\mathbb{M}_+$ (it is Hermitian and spinorial) rather than in the centre is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue; it adds a Hermitian operator to the square.</p>
 <p><strong>The zero point is a commutator.</strong> The constant $-3m\hbar\omega$ arises from the commutator of the two biquaternionic components of the shifted gradient. In the algebra, the two conjugate operators do not commute, and their commutator is the central scalar that shifts the zero point. This is why the oscillator's ground state sits at the mass gap for the aligned states: the commutator has removed the zero-point energy exactly, and the cancellation is a property of the three-dimensional quaternion algebra (three directions, three units), not of a particular representation.</p>
 <p><strong>The zero modes are supersymmetric.</strong> The operator identity has the form of a factorisation. Write</p>
 <p>$$
@@ -306,7 +305,7 @@ $$</p>
 <td>Biquaternion mass pair</td>
 </tr>
 <tr>
-<td>$\Box = \partial_{ict}^2 + \Delta$</td>
+<td>$\Box = \partial^2/\partial Q_t^2 + \Delta$</td>
 <td>Series d'Alembertian</td>
 </tr>
 </tbody>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -98,7 +97,7 @@ $$</p>
 <h2 id="the-baire-based-cornerstones">The Baire-Based Cornerstones</h2>
 <h3 id="baire-category">Baire Category</h3>
 <p><strong>Theorem (Baire).</strong> A complete metric space is not the union of countably many nowhere dense subsets; equivalently, a countable intersection of dense open subsets of a complete metric space is dense.</p>
-<p><em>Proof.</em> Standard: given dense open $G_n$ and a nonempty open $U$, choose a closed ball $\overline B_1 \subseteq G_1 \cap U$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap U$.</p>
+<p><em>Proof.</em> Standard: given dense open $G_n$ and a nonempty open $\Omega$, choose a closed ball $\overline B_1 \subseteq G_1 \cap \Omega$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap \Omega$.</p>
 <h3 id="uniform-boundedness">Uniform Boundedness</h3>
 <p><strong>Theorem (uniform boundedness principle, Banach–Steinhaus).</strong> Let $X$ be a Banach space, $Y$ a normed space, and $\mathcal{F} \subseteq B(X,Y)$ a family that is pointwise bounded: $\sup_{T \in \mathcal{F}}\|Tx\|<\infty$ for every $x$. Then $\mathcal{F}$ is uniformly bounded, $\sup_{T \in \mathcal{F}}\|T\|<\infty$.</p>
 <p><em>Proof.</em> Put $X_n=\{x:\sup_{T \in \mathcal{F}}\|Tx\| \le n\}$; each $X_n$ is closed and the hypothesis is $X=\bigcup_nX_n$. By Baire, some $X_N$ has nonempty interior, so there are $x_0$ and $\delta>0$ with $\|x\| \le \delta \Rightarrow \sup_T\|T(x_0+x)\| \le N$. Then for $\|x\|\le\delta$ and $T \in \mathcal{F}$, $\|Tx\| \le \|T(x_0+x)\|+\|Tx_0\| \le 2N$, so $\|T\| \le 2N/\delta$.</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,21 +59,21 @@ the fourth of the four general products and one of the twelve structures that th
 <p>The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$, the two rules for forms and the table of the four effects are <strong>The Realification and the Effect of the Change of Scalars</strong>.</p>
 <p><strong>Boundary.</strong> The product itself is defined in <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em>; its complex body — the table, the two scalar rules, the associator, the ternary product, the square, the idempotents, the nilpotents and the zero divisors — is <em>Introduction to the General Quaternionic Sesqualgebra</em>, <em>The Specificities of the General Quaternionic Sesqualgebra</em> and the articles they cite, and none of it is repeated here. What the real reading adds is stated below and nowhere else.</p>
 <h2 id="the-change-of-scalars">The Change of Scalars</h2>
-<p>The biquaternion space is the complex vector space of dimension four on the basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$; the scalars are $\mathbb{C}$, read on the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the image of the scalar action $A\mapsto Ae_0$, which is <strong>not</strong> the centre here, the centre of the multiplication being trivial; and the base involution is the conjugation $\varsigma(z)=\bar z$ on it. Read over $\mathbb{R}$ the same set is the real vector space
+<p>The biquaternion space is the complex vector space of dimension four on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$; the scalars are $\mathbb{C}$, read on the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the image of the scalar action $A\mapsto Ae_t$, which is <strong>not</strong> the centre here, the centre of the multiplication being trivial; and the base involution is the conjugation $\varsigma(z)=\bar z$ on it. Read over $\mathbb{R}$ the same set is the real vector space
 $$
-\mathbb{R}^8=\operatorname{span}_\mathbb{R}\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\},
+\mathbb{R}^8=\operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 with the same addition and the same product: <strong>restriction of scalars</strong>, no new multiplication and a smaller field. The complex structure is
 $$
 J:\tilde Y\longmapsto i\tilde Y,\qquad J^2=-\mathrm{id},
 $$
-an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ of square $-\mathrm{id}$; it commutes with itself, so it is $\mathbb{C}$-linear by the criterion $TJ=JT$, and it is <strong>not</strong> a left multiplication of this product, since $L_{ie_0}(\tilde Y)=(ie_0)^{\natural}\tilde Y^{*}=i\tilde Y^{*}\neq i\tilde Y$: the scalar action of the block is one-sided, and the complex structure belongs to the underlying space and not to the multiplication.</p>
+an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ of square $-\mathrm{id}$; it commutes with itself, so it is $\mathbb{C}$-linear by the criterion $TJ=JT$, and it is <strong>not</strong> a left multiplication of this product, since $L_{ie_t}(\tilde Y)=(ie_t)^{\natural}\tilde Y^{*}=i\tilde Y^{*}\neq i\tilde Y$: the scalar action of the block is one-sided, and the complex structure belongs to the underlying space and not to the multiplication.</p>
 <p>The product is $\mathbb{C}$-linear in its first slot and $\varsigma$-semilinear in its second. Over $\mathbb{R}$ the involution $\varsigma$ restricts to the identity — the only automorphism of $\mathbb{R}$ is the identity — and a semilinear law with the identity involution <strong>is</strong> a bilinear law. The passage therefore <strong>changes the kind</strong> of this product: a <strong>sesqualgebra over $(\mathbb{C},\varsigma)$</strong> over $\mathbb{C}$, an <strong>$\mathbb{R}$-algebra</strong> on $\mathbb{R}^8$ in the broad sense. The distinction does not vanish; it migrates from the field to the scalar line, where it is the conjugate-linearity of the second slot over $\mathbb{C}_{\mathbb{B}}$, equivalently the anticommutation $LJ=-JL$ of every left multiplication with the complex structure, proved in §<em>The Second Slot and the Two One-Sided Multiplications</em> below. This is the general effect of §<em>The Effect on the Twelve Algebraic Structures</em> of <em>The Realification and the Effect of the Change of Scalars</em>, of which the block is the instance in the quaternionic sesquilinear row.</p>
 <p>The statements that do not move are those about the ring. The failure of associativity, of flexibility and of power associativity, the absence of a unit on either side and the triviality of the centre of the multiplication, the associator, the ternary product, the square, the idempotent family, the square-zero family, the zero divisors and the plain invertibility criterion $C(\tilde Q)\neq0$ are written with the addition, the product and quantification over the elements, and they are the same in the two readings, by §<em>The Four Effects on a Structure</em> of the same article. What moves is every notion that names the field: the dimension, the sesqualgebra structure, and the linear or the conjugate-linear character of a map.</p>
 <h2 id="the-product-read-over-math34">The Product Read over $\mathbb{R}$</h2>
 <p>The product is $\mathbb{R}$-bilinear, because a $\mathbb{C}$-sesquilinear law is additive in each argument and linear over the subfield $\mathbb{R}$. The block is therefore an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense, a module with a bilinear multiplication, with no further axiom. Its list is the complex one, unchanged:</p>
 <ul>
-<li><strong>no unit on either side</strong>, the two one-sided actions of $e_0$ being the two conjugations, $e_0\star\tilde Q=\tilde Q^{*}$ on the left and $\tilde P\star e_0=\tilde P^{\natural}$ on the right;</li>
+<li><strong>no unit on either side</strong>, the two one-sided actions of $e_t$ being the two conjugations, $e_t\star\tilde Q=\tilde Q^{*}$ on the left and $\tilde P\star e_t=\tilde P^{\natural}$ on the right;</li>
 <li>neither associative nor commutative, so that no reading of the product is a commutative law;</li>
 <li>the values fill the whole space, the products of two basis elements being $\pm e_\mu$ and their complex span being $\mathbb{B}$;</li>
 <li>the left multiplications do not form a monoid.</li>
@@ -95,7 +94,7 @@ $$
 L_{\tilde P}\,J=-J\,L_{\tilde P},\qquad R_{\tilde Q}\,J=+J\,R_{\tilde Q}.
 $$</p>
 <p><em>Proof.</em> The product is $\mathbb{C}$-linear in its first slot and conjugate-linear in its second, so $L_{\tilde P}$ is conjugate-linear and $R_{\tilde Q}$ is linear in the variable, by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>. A conjugate-linear $\mathbb{R}$-linear map anticommutes with the complex structure and a linear one commutes with it, by the two criteria of the same section.</p>
-<p><strong>Corollary (the two block shapes).</strong> In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ the left multiplication has the matrix
+<p><strong>Corollary (the two block shapes).</strong> In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ the left multiplication has the matrix
 $$
 \begin{pmatrix}A&B\\ B&-A\end{pmatrix},
 \qquad\text{and the right multiplication}\qquad
@@ -115,7 +114,7 @@ so the two blocks differ in their elements, their tables and their forms, and no
 <h2 id="the-realified-form">The Realified Form</h2>
 <p>The product carries the general quaternionic sesquilinear form, the Krein form
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu},\qquad\varepsilon=(1,-1,-1,-1),
+\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu},\qquad\varepsilon=(1,-1,-1,-1),
 $$
 Hermitian of complex inertia $(1,3)$ (<em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>). It is real on the diagonal, and its imaginary part, alternating and non-zero off the diagonal, is no second independent form: it is recovered from the real part by $\operatorname{Im}\langle\tilde P,\tilde Q\rangle_{\natural*}=-K_{\mathbb{R}}(J\tilde P,\tilde Q)$, so the realification is one real symmetric bilinear form and not the split pair that a bilinear form gives. By §<em>The Realification of a Form</em> of <em>The Realification and the Effect of the Change of Scalars</em> its signature is the double of the complex inertia,
 $$
@@ -127,17 +126,17 @@ $$
 K_{\mathbb{R}}(J\tilde P,J\tilde Q)=+K_{\mathbb{R}}(\tilde P,\tilde Q),
 $$
 as it does for the Hermitian form and in contrast with the two bilinear forms, whose realifications are reversed by $J$. The sign is the block structure of the Gram matrix: the two blocks of $\operatorname{diag}(\varepsilon,\varepsilon)$ are equal where those of the split matrices are opposite.</p>
-<p><strong>Remark (the null set).</strong> For the two bilinear forms the realification enlarges the null set, from a complex cone of real dimension $6$ to a real hypersurface of real dimension $7$, because the discarded imaginary part is a second real form. For the two Hermitian forms there is nothing to enlarge, their diagonals being real, so that the realified null set is the null set itself. For the Krein form the null set is therefore the complex one, the real cone $\lVert c\rVert_E=\lVert v\rVert_E$ of real dimension $7$ — the scalar coordinate against the vector part — non-singular off the apex, with its maximal isotropic real plane $\operatorname{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$ (<em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>, and §<em>The Realified Null Cones</em> of <em>The Realification of the Four Forms</em>).</p>
+<p><strong>Remark (the null set).</strong> For the two bilinear forms the realification enlarges the null set, from a complex cone of real dimension $6$ to a real hypersurface of real dimension $7$, because the discarded imaginary part is a second real form. For the two Hermitian forms there is nothing to enlarge, their diagonals being real, so that the realified null set is the null set itself. For the Krein form the null set is therefore the complex one, the real cone $\lVert c\rVert_E=\lVert v\rVert_E$ of real dimension $7$ — the scalar coordinate against the vector part — non-singular off the apex, with its maximal isotropic real plane $\operatorname{span}_{\mathbb{R}}\{e_t+\vec e_x,i(e_t+\vec e_x)\}$ (<em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>, and §<em>The Realified Null Cones</em> of <em>The Realification of the Four Forms</em>).</p>
 <h2 id="what-is-specific-to-the-real-interpretation">What Is Specific to the Real Interpretation</h2>
 <p>The passage adds three things that the complex reading does not state in this form, and their scope is not the same: the first and the third belong to the whole sesquilinear family, and only the second is particular to the form of the block.</p>
 <p><strong>The parity split of the one-sided operators.</strong> Over $\mathbb{C}$ the block is separated from the $A$ family by its scalar rules. Read over $\mathbb{R}$ the separation is read on the operators: the left multiplications lie in the anticommuting summand $\operatorname{Ant}_{\mathbb{C}}(\mathbb{B})$ and the right multiplications in the commuting one $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$. The split is the $S$ family's, and the block shares it with the sibling general plain sesquilinear product, whose left-multiplication family its own family reproduces through the reindexing by $\natural$. The composition of two left multiplications crosses from one summand to the other, which is the operator form of the failure of the left multiplications to be a monoid.</p>
 <p><strong>The indefinite Hermitian realification.</strong> The Krein form realifies by the doubling of its inertia, $(1,3)\mapsto(2,6)$, and this is the item particular to the block: among the four forms of the corpus its form is the only one that is indefinite on the complex side, so the realified form is the only one that is neither definite, as the $\mathrm{I}_8$ of the Hermitian form, nor split, as the $(\mathrm{D},-\mathrm{D})$ and the $(\mathrm{I}_4,-\mathrm{I}_4)$ of the two bilinear forms.</p>
 <p><strong>The traceless left multiplications.</strong> A conjugate-linear map has no intrinsic trace over $\mathbb{C}$; read over $\mathbb{R}$, the left multiplication is a real endomorphism and its trace vanishes for every $\tilde P$, whereas the right multiplications have no such vanishing. The two families, already distinguished by their parities, are separated by their traces as well, and the tracelessness, like the parity split, is the whole $S$ family's.</p>
-<p>The rest of the block's body is unchanged, and the reason is the dictionary: the unit, the associativity, the idempotents, the nilpotents, the square-zero family and the zero divisors are read from the ring alone. In particular the idempotents are those of the complex reading, $0$, $e_0$ and the family
+<p>The rest of the block's body is unchanged, and the reason is the dictionary: the unit, the associativity, the idempotents, the nilpotents, the square-zero family and the zero divisors are read from the ring alone. In particular the idempotents are those of the complex reading, $0$, $e_t$ and the family
 $$
-\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1\ \text{in the real vector subspace};
+\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u,\qquad(\vec u,\vec u)=1\ \text{in the real vector subspace};
 $$
-the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_0+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\vec u$ a real unit vector, of which $e_0+ie_1$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.</p>
+the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_t+\tilde\Xi)$, with $\lambda\in\mathbb{C}$ and $\vec u$ a real unit vector, of which $e_t+i\vec e_x$ is the witness; and the plain invertibility criterion $C(\tilde Q)\neq0$ is the same in the two readings. The count of the ring-theoretic objects of the block does not change with the scalars.</p>
 <h2 id="summary">Summary</h2>
 <p>Read over $\mathbb{R}$ the general quaternionic sesqualgebra is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense, with no unit on either side and neither associative nor commutative; the sesqualgebra structure over $(\mathbb{C},\varsigma)$ disappears with the involution of the base field and survives as the conjugate-linearity of the second slot over the scalar line $\mathbb{C}_{\mathbb{B}}$. Its left multiplications are conjugate-linear, hence anticommute with the complex structure and are traceless, with the block matrix $\left(\begin{smallmatrix}A&B\\B&-A\end{smallmatrix}\right)$, and its right multiplications are linear, commute with $J$ and have the block matrix $\left(\begin{smallmatrix}A&-B\\B&A\end{smallmatrix}\right)$: the two one-sided families lie in the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$. The form it carries is the Krein form, whose realification has signature $(2,6)$ and is preserved by $J$ — the only realified form of the corpus that is indefinite without being split — and whose null set is not enlarged by the passage, its quadratic form being already real. Everything the block states about its elements — the absence of a unit, the associator, the ternary product, the square, the idempotents, the nilpotents and the zero divisors — is a statement about the ring and is the same in the two readings.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -155,11 +154,11 @@ the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_0+\tilde\
 </tr>
 <tr>
 <td>$\mathbb{R}^8$</td>
-<td>the realification of $\mathbb{B}$, the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$</td>
+<td>the realification of $\mathbb{B}$, the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
-<td>the scalar line, the image of the scalar action $A\mapsto Ae_0$; not the centre, which is trivial</td>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$</td>
+<td>the scalar line, the image of the scalar action $A\mapsto Ae_t$; not the centre, which is trivial</td>
 </tr>
 <tr>
 <td>$J$</td>
@@ -190,7 +189,7 @@ the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_0+\tilde\
 <td>the signature and the Gram matrix of the realified form</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$</td>
+<td>$\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$</td>
 <td>the nontrivial idempotents, a ring statement unchanged by the passage</td>
 </tr>
 </tbody>
@@ -199,9 +198,9 @@ the square-zero family is $\lambda(\vec u+i)$, equivalently $\lambda(e_0+\tilde\
 <ul>
 <li><strong>The Realification and the Effect of the Change of Scalars</strong> (<code>articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md</code>), for the general construction, the two rules of the realification of a form, the table of the four effects and the splitting $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Ant}_{\mathbb{C}}$.</li>
 <li><strong>The Realification of the Eight Derived Structures</strong> (<code>articles_maths/the-realification-of-the-eight-derived-structures.md</code>), for the four realified Gram matrices and signatures, the Krein row $\operatorname{diag}(\varepsilon,\varepsilon)$ of signature $(2,6)$, the restrictions and the realified null cones.</li>
-<li><strong>Introduction to the General Quaternionic Sesqualgebra</strong> (<code>articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md</code>), for the product, its table, its scalar rules, the two one-sided actions of $e_0$, the associator, the ternary product and the idempotents.</li>
+<li><strong>Introduction to the General Quaternionic Sesqualgebra</strong> (<code>articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md</code>), for the product, its table, its scalar rules, the two one-sided actions of $e_t$, the associator, the ternary product and the idempotents.</li>
 <li><strong>The Specificities of the General Quaternionic Sesqualgebra</strong> (<code>articles_maths/the-specificities-of-the-general-quaternionic-sesqualgebra.md</code>), for the star identity, the factorization, the parity obstruction and the isolation of the block among the twelve.</li>
-<li><strong>Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra</strong> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md</code>), <strong>Zero Divisors of the General Quaternionic Sesqualgebra</strong> and <strong>Norm and Invertibility in the General Quaternionic Sesqualgebra</strong>, for the idempotent family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$, the square-zero elements and the plain criterion $C\neq0$ quoted in §<em>What Is Specific to the Real Interpretation</em>.</li>
+<li><strong>Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra</strong> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.md</code>), <strong>Zero Divisors of the General Quaternionic Sesqualgebra</strong> and <strong>Norm and Invertibility in the General Quaternionic Sesqualgebra</strong>, for the idempotent family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, the square-zero elements and the plain criterion $C\neq0$ quoted in §<em>What Is Specific to the Real Interpretation</em>.</li>
 <li><strong>The Left and Right Multiplications of the General Quaternionic Sesquilinear Product</strong> (<code>articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.md</code>), for the two one-sided families over $\mathbb{C}$, which this article reads over $\mathbb{R}$.</li>
 <li><strong>The Krein Gram Matrix and the Restrictions of the Form</strong> (<code>articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md</code>) and <strong>The Isotropic Structure of the General Quaternionic Sesqualgebra</strong>, for the form, its inertia, its Gram matrix in the real basis and its null cone, which the passage does not move.</li>
 <li><strong>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</strong> (<code>articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md</code>) and <strong>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</strong>, for the twelve structures and the four general products.</li>

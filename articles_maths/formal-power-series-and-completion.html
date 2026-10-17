@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -196,7 +195,7 @@ $$</p>
 <p>$$
 f = \sum_{a \in \mathbb{N}^n} \frac{1}{a!}\,\partial^a f(0)\, x^a, \qquad a! = a_1!\cdots a_n!,
 $$</p>
-<p>where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathrm{M}/\mathrm{M}^2, R)$ with components $\partial_1 f(0), \ldots, \partial_n f(0)$; the cotangent space is $\mathrm{M}/\mathrm{M}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathrm{M}/\mathrm{M}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.</p>
+<p>where $\partial^a f(0)$ denotes the iterated formal derivative evaluated at the origin; the formula is the definition of the derivatives read backwards: the iterated derivative $\partial^a f(0)$ is $a_1!\cdots a_n!$ times the coefficient of $x^a$. The linear part of $f$ is the element of $\operatorname{Hom}_R(\mathrm{M}/\mathrm{M}^2, R)$ with components $\partial f/\partial x_1(0), \ldots, \partial f/\partial x_n(0)$; the cotangent space is $\mathrm{M}/\mathrm{M}^2 \cong \operatorname{Sym}^1(M) \cong R^n$, and its dual $(\mathrm{M}/\mathrm{M}^2)^*$, the algebraic tangent space (a name for this dual module only, no manifold is meant), is the module of $R$-derivations of $R[[x_1,\ldots,x_n]]$ at the origin. The formal inverse function theorem is the statement that an invertible linear part lifts to an invertible series.</p>
 <p><strong>Remark.</strong> In characteristic zero the Taylor formula identifies $R[[x_1,\ldots,x_n]]$ with the completed divided-power algebra, and the natural divided powers $\gamma_k(x) = x^k/k!$ are the coefficients of the exponential; the divided-power algebra of <em>Divided Powers</em> is the correct substitute in small characteristic, where the factorials are not invertible. The completion, the symmetric algebra and the divided-power algebra therefore agree in characteristic zero and diverge in small characteristic, exactly as in the uncompleted case.</p>
 <h2 id="summary">Summary</h2>
 <p>The formal power series algebra $R[[x_1,\ldots,x_n]]$ is the completed polynomial algebra: it is the $I$-adic completion</p>

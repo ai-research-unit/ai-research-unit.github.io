@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,16 +56,16 @@
 <p>The article assumes the metric, the connection, the geodesics, the exponential map, the curvature and the Jacobi fields of <em>Curvature and Geodesics</em>, <em>Riemannian Geometry</em> and <em>The Geodesic Flow Operator</em> of this category. The symmetric spaces themselves, the Cartan decomposition, the classification and the rank theory are <em>Symmetric Spaces</em> of a later category of this Part, and the group-theoretic side is <em>Riemannian Symmetric Spaces and the Involution</em>, the following article of this category. No physics is invoked.</p>
 <h2 id="the-local-geodesic-symmetry">The Local Geodesic Symmetry</h2>
 <h3 id="definition-in-normal-coordinates">Definition in Normal Coordinates</h3>
-<p><strong>Definition.</strong> Let $(M, g)$ be a Riemannian manifold and $p \in M$. On a normal neighbourhood $U$ of $p$, on which the exponential map $\exp_p$ is a diffeomorphism from a ball of $T_pM$ onto $U$, the <strong>geodesic symmetry</strong> at $p$ is</p>
+<p><strong>Definition.</strong> Let $(M, g)$ be a Riemannian manifold and $p \in M$. On a normal neighbourhood $\Omega$ of $p$, on which the exponential map $\exp_p$ is a diffeomorphism from a ball of $T_pM$ onto $\Omega$, the <strong>geodesic symmetry</strong> at $p$ is</p>
 <p>$$
-\sigma_p : U \longrightarrow U, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
+\sigma_p : \Omega \longrightarrow \Omega, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
 $$</p>
 <p>equivalently, on a geodesic $\gamma$ with $\gamma(0) = p$, the map $\sigma_p(\gamma(t)) = \gamma(-t)$. The manifold is symmetric at $p$ if there is a global isometry with these two properties, and <strong>symmetric</strong> if it is connected and symmetric at every point.</p>
-<p><strong>Theorem.</strong> The geodesic symmetry is well defined, smooth and an involution of $U$, it fixes $p$ and only $p$ in $U$, and its differential at $p$ is $-\mathrm{id}$:</p>
+<p><strong>Theorem.</strong> The geodesic symmetry is well defined, smooth and an involution of $\Omega$, it fixes $p$ and only $p$ in $\Omega$, and its differential at $p$ is $-\mathrm{id}$:</p>
 <p>$$
-\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_U, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM} .
+\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_\Omega, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM} .
 $$</p>
-<p><strong>Proof.</strong> The exponential map is a diffeomorphism on a ball of $T_pM$, and the reflection $v \mapsto -v$ is a diffeomorphism of the ball, so the composition is a smooth map; applying it twice returns the original point, $\sigma_p^2 = \mathrm{id}$. The fixed points in $U$ are the images of the fixed points of $v\mapsto -v$, that is of $v = 0$, so $p$ is the only fixed point; and the differential at $0$ of $v \mapsto -v$ is $-\mathrm{id}$, which is $d(\sigma_p)_p$ because $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.</p>
+<p><strong>Proof.</strong> The exponential map is a diffeomorphism on a ball of $T_pM$, and the reflection $v \mapsto -v$ is a diffeomorphism of the ball, so the composition is a smooth map; applying it twice returns the original point, $\sigma_p^2 = \mathrm{id}$. The fixed points in $\Omega$ are the images of the fixed points of $v\mapsto -v$, that is of $v = 0$, so $p$ is the only fixed point; and the differential at $0$ of $v \mapsto -v$ is $-\mathrm{id}$, which is $d(\sigma_p)_p$ because $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.</p>
 <h3 id="uniqueness-and-the-involution-property">Uniqueness and the Involution Property</h3>
 <p><strong>Theorem.</strong> A local isometry defined on a connected neighbourhood of $p$ with $F(p) = p$ and $dF_p = -\mathrm{id}$ coincides with $\sigma_p$ on a normal neighbourhood. Consequently the geodesic symmetry at $p$, when it is a local isometry, is the unique local isometry with these two properties, and it reverses every geodesic through $p$.</p>
 <p><strong>Proof.</strong> Two local isometries with the same value and the same differential at $p$ agree on a connected normal neighbourhood, by the faithfulness argument of <em>Isometries as Operators</em>: the composition $F^{-1}\circ\sigma_p$ fixes $p$ with identity differential, so it is the identity. The reversal of the geodesics follows from the definition through the exponential, $\sigma_p(\exp_p v) = \exp_p(-v)$, and the uniqueness of the geodesic with a given initial velocity.</p>
@@ -125,7 +124,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\sigma_p$, $U$, $\exp_p$</td>
+<td>$\sigma_p$, $\Omega$, $\exp_p$</td>
 <td>Geodesic symmetry at $p$; normal neighbourhood; exponential</td>
 </tr>
 <tr>

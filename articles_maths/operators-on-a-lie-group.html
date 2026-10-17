@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,8 +51,8 @@
       <div class="article-body">
         <h1 id="operators-on-a-lie-group"><strong>Operators on a Lie Group</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A Lie group $G$ is a smooth manifold as well as a group, so its operator layer is richer than that of a topological group: beside the translations and the automorphisms there are the <strong>differential operators</strong>, and among them the ones that commute with the translations. The left-invariant differential operators form an algebra isomorphic to the universal enveloping algebra $U(\mathrm{G})$ of the Lie algebra, and the bi-invariant ones form its centre. On the other side the group carries a convolution product on its functions, and the two pictures meet in the statement that a left-invariant operator is a convolution by a distribution supported at the identity.</p>
-<p>This article fixes the operator layer of a Lie group: the smooth operators, the invariant differential operators and their identification with $U(\mathrm{G})$, the bi-invariant operators and the Casimir operator as their first example, and the convolution algebra with the operators it defines. It is the first article of the <code>- Operator Theory</code> group of the category; the Casimir operator is <em>The Casimir Operator of a Lie Group</em>, the exponential map read as an operator is <em>The Exponential Map as an Operator</em>, and the action on functions is <em>The Regular Representation of a Lie Group</em>, all below in this group.</p>
+<p>A Lie group $G$ is a smooth manifold as well as a group, so its operator layer is richer than that of a topological group: beside the translations and the automorphisms there are the <strong>differential operators</strong>, and among them the ones that commute with the translations. The left-invariant differential operators form an algebra isomorphic to the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ of the Lie algebra, and the bi-invariant ones form its centre. On the other side the group carries a convolution product on its functions, and the two pictures meet in the statement that a left-invariant operator is a convolution by a distribution supported at the identity.</p>
+<p>This article fixes the operator layer of a Lie group: the smooth operators, the invariant differential operators and their identification with $\mathrm{U}(\mathrm{G})$, the bi-invariant operators and the Casimir operator as their first example, and the convolution algebra with the operators it defines. It is the first article of the <code>- Operator Theory</code> group of the category; the Casimir operator is <em>The Casimir Operator of a Lie Group</em>, the exponential map read as an operator is <em>The Exponential Map as an Operator</em>, and the action on functions is <em>The Regular Representation of a Lie Group</em>, all below in this group.</p>
 <p>The article assumes the definition and the elementary structure of a Lie group from <em>Lie Groups</em>, the Lie algebra as the space of left-invariant vector fields with the commutator bracket from <em>The Lie Algebra and the Exponential Map</em>, the universal enveloping algebra and the Poincaré--Birkhoff--Witt theorem from <em>Universal Enveloping Algebras</em>, and the smooth structure of a manifold with its differential operators from <em>Smooth Manifolds and Differential Geometry</em> and <em>Differential Operators on a Manifold</em>. From the analysis of groups it assumes the convolution of continuous functions of compact support and the Haar integral of <em>Locally Compact Groups and Haar Measure</em>; the specific analysis of $L^1(G)$ and the Fourier theory are <em>The Convolution Algebra $L^1(G)$</em> and <em>Harmonic Analysis on Groups</em>, cited here and not used. No form, no norm and no distance is introduced beyond the differentiability the definitions require, and no geometry is made.</p>
 <h2 id="the-smooth-operators">The Smooth Operators</h2>
 <h3 id="the-operator-layer">The Operator Layer</h3>
@@ -88,28 +87,28 @@ $$</p>
 <p>A <strong>differential operator of order at most $k$</strong> on $G$ is a $\mathbb{C}$-linear operator on $C^\infty(G)$ that in every chart is a polynomial of degree at most $k$ in the coordinate derivations; the differential operators form a filtered algebra $D(G)$ whose associated graded algebra is commutative, and the order is the degree of the top symbol. The theory of the algebra is <em>Differential Operators on a Manifold</em>, and the next theorem is its Lie-theoretic specialisation.</p>
 <p><strong>Theorem (the universal enveloping algebra).</strong> Evaluation at the identity gives an isomorphism of filtered $\mathbb{C}$-algebras</p>
 <p>$$
-U(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}} ,
+\mathrm{U}(\mathrm{G}) \ \xrightarrow{\ \sim\ }\ D_L(G), \qquad X_1 \cdots X_k \ \longmapsto\ X_1^{\mathrm{lift}} \cdots X_k^{\mathrm{lift}} ,
 $$</p>
-<p>from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $U(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.</p>
-<p><em>Proof.</em> The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $U(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $U(\mathrm{G})$ by PBW.</p>
-<p><strong>Corollary.</strong> $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $U(\mathrm{G})$ and $D_L(G)$ are isomorphic.</p>
+<p>from the universal enveloping algebra of $\mathrm{G}$ onto the algebra of left-invariant differential operators on $G$. The inverse sends a left-invariant operator $D$ to its value at the identity, read as an element of $\mathrm{U}(\mathrm{G})$ by the Poincaré--Birkhoff--Witt identification.</p>
+<p><em>Proof.</em> The assignment $X \mapsto X^{\mathrm{lift}}$ is a Lie algebra homomorphism $\mathrm{G} \to D(G)$ whose image consists of left-invariant operators, so by the universal property it extends to an algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$. It is injective because the images of a PBW basis are independent operators: on the coordinate functions $x^1, \ldots, x^n$ of a chart at $e$, the monomials in the $X_i^{\mathrm{lift}}$ have linearly independent symbols. It is surjective because a left-invariant differential operator is determined by its action at $e$, and that action is a polynomial in the derivations $X_i^{\mathrm{lift}}$ of bounded degree, hence an element of $\mathrm{U}(\mathrm{G})$ by PBW.</p>
+<p><strong>Corollary.</strong> $D_L(G)$ is generated as an algebra by the first-order operators $X^{\mathrm{lift}}$, $X \in \mathrm{G}$, it is filtered by the order, and its associated graded algebra is the symmetric algebra $S(\mathrm{G})$; in particular $\mathrm{U}(\mathrm{G})$ and $D_L(G)$ are isomorphic.</p>
 <p><em>Proof.</em> Generation and the filtration are the content of the theorem; the associated graded statement is the Poincaré--Birkhoff--Witt theorem.</p>
 <h2 id="the-bi-invariant-operators">The Bi-Invariant Operators</h2>
 <h3 id="the-adjoint-action-on-the-enveloping-algebra">The Adjoint Action on the Enveloping Algebra</h3>
-<p><strong>Definition.</strong> For $g \in G$ the <strong>adjoint action</strong> on $U(\mathrm{G})$ is the algebra automorphism</p>
+<p><strong>Definition.</strong> For $g \in G$ the <strong>adjoint action</strong> on $\mathrm{U}(\mathrm{G})$ is the algebra automorphism</p>
 <p>$$
-\operatorname{Ad}_g : U(\mathrm{G}) \to U(\mathrm{G}), \qquad \operatorname{Ad}_g(X_1 \cdots X_k) = \operatorname{Ad}_gX_1 \cdots \operatorname{Ad}_gX_k ,
+\operatorname{Ad}_g : \mathrm{U}(\mathrm{G}) \to \mathrm{U}(\mathrm{G}), \qquad \operatorname{Ad}_g(X_1 \cdots X_k) = \operatorname{Ad}_gX_1 \cdots \operatorname{Ad}_gX_k ,
 $$</p>
-<p>extending the adjoint representation of $G$ on $\mathrm{G}$; its derivative at $e$ is the derivation $\operatorname{ad}_X = [X, \cdot]$ extended to $U(\mathrm{G})$.</p>
-<p><strong>Theorem (the centre is the bi-invariant algebra).</strong> The algebra $D_L(G) \cap D_R(G)$ of bi-invariant differential operators is the centre $Z(U(\mathrm{G}))$ of the universal enveloping algebra, under the isomorphism of the preceding section.</p>
-<p><em>Proof.</em> A bi-invariant operator is left-invariant, hence of the form $u \in U(\mathrm{G})$; the right invariance is equivalent to $\operatorname{Ad}_g u = u$ for all $g$, and since $\operatorname{Ad}_g$ is the exponential of $\operatorname{ad}$, to $\operatorname{ad}_Y u = 0$ for all $Y \in \mathrm{G}$, that is to the centrality of $u$.</p>
+<p>extending the adjoint representation of $G$ on $\mathrm{G}$; its derivative at $e$ is the derivation $\operatorname{ad}_X = [X, \cdot]$ extended to $\mathrm{U}(\mathrm{G})$.</p>
+<p><strong>Theorem (the centre is the bi-invariant algebra).</strong> The algebra $D_L(G) \cap D_R(G)$ of bi-invariant differential operators is the centre $Z(\mathrm{U}(\mathrm{G}))$ of the universal enveloping algebra, under the isomorphism of the preceding section.</p>
+<p><em>Proof.</em> A bi-invariant operator is left-invariant, hence of the form $u \in \mathrm{U}(\mathrm{G})$; the right invariance is equivalent to $\operatorname{Ad}_g u = u$ for all $g$, and since $\operatorname{Ad}_g$ is the exponential of $\operatorname{ad}$, to $\operatorname{ad}_Y u = 0$ for all $Y \in \mathrm{G}$, that is to the centrality of $u$.</p>
 <h3 id="the-casimir-operator">The Casimir Operator</h3>
 <p><strong>Definition.</strong> Let $\mathrm{G}$ be finite-dimensional and semisimple with Killing form $B$, and let $(X_i)$ be a basis of $\mathrm{G}$ with dual basis $(X^i)$ defined by $B(X_i, X^j) = \delta_i^j$. The <strong>Casimir element</strong> is</p>
 <p>$$
-\Omega = \sum_i X_i X^i \ \in\ Z(U(\mathrm{G})),
+\Omega = \sum_i X_i X^i \ \in\ Z(\mathrm{U}(\mathrm{G})),
 $$</p>
 <p>and the <strong>Casimir operator</strong> of $G$ is the bi-invariant differential operator it defines.</p>
-<p><strong>Theorem.</strong> The Casimir element is independent of the basis, it lies in the centre $Z(U(\mathrm{G}))$, and in an irreducible representation of $G$ it acts as a scalar. Its definition, its eigenvalues and its role in the representation theory are <em>The Casimir Operator of a Lie Group</em>, below in this group.</p>
+<p><strong>Theorem.</strong> The Casimir element is independent of the basis, it lies in the centre $Z(\mathrm{U}(\mathrm{G}))$, and in an irreducible representation of $G$ it acts as a scalar. Its definition, its eigenvalues and its role in the representation theory are <em>The Casimir Operator of a Lie Group</em>, below in this group.</p>
 <p><em>Proof.</em> A change of basis replaces the pair of dual bases by a contragredient pair, and the sum is invariant; centrality is the invariance of the form under the adjoint action, $B(\operatorname{ad}_Z X, Y) + B(X, \operatorname{ad}_Z Y) = 0$; the scalar statement is Schur's lemma, developed in the companion article.</p>
 <h2 id="the-convolution-algebra">The Convolution Algebra</h2>
 <h3 id="convolution-on-the-group">Convolution on the Group</h3>
@@ -136,21 +135,21 @@ $$</p>
 <p>$$
 \langle u * v, f\rangle = \langle u \otimes v, (x,y) \mapsto f(xy)\rangle .
 $$</p>
-<p><strong>Theorem (the operators are the distributions).</strong> The algebra $\mathcal{D}_e(G)$ of distributions supported at the identity is isomorphic to $U(\mathrm{G})$, and a left-invariant operator $D$ is the convolution by the distribution $u \in \mathcal{D}_e(G)$ that corresponds to it,</p>
+<p><strong>Theorem (the operators are the distributions).</strong> The algebra $\mathcal{D}_e(G)$ of distributions supported at the identity is isomorphic to $\mathrm{U}(\mathrm{G})$, and a left-invariant operator $D$ is the convolution by the distribution $u \in \mathcal{D}_e(G)$ that corresponds to it,</p>
 <p>$$
 D f = u * f \qquad (f \in C_c^\infty(G)) .
 $$</p>
-<p><em>Proof.</em> Evaluation at $e$ is a bijection from the distributions supported at $e$ onto the formal polynomials in the coordinate derivations at $e$, that is onto $U(\mathrm{G})$; convolution of two such distributions is composition of the corresponding operators, because the two-sided action of $G$ on itself makes the convolution reproduce the higher derivatives. Composing with the isomorphism of the first theorem identifies the distributions with the left-invariant operators, and the identity $Df = u * f$ on test functions extends to $C^\infty(G)$.</p>
-<p><strong>Corollary.</strong> The convolution algebra $C_c^\infty(G)$ is represented on $C^\infty(G)$ by the operators $\lambda(f)$, and the map $u \mapsto (f \mapsto u * f)$ is an algebra isomorphism from $U(\mathrm{G})$ onto the left-invariant operators.</p>
+<p><em>Proof.</em> Evaluation at $e$ is a bijection from the distributions supported at $e$ onto the formal polynomials in the coordinate derivations at $e$, that is onto $\mathrm{U}(\mathrm{G})$; convolution of two such distributions is composition of the corresponding operators, because the two-sided action of $G$ on itself makes the convolution reproduce the higher derivatives. Composing with the isomorphism of the first theorem identifies the distributions with the left-invariant operators, and the identity $Df = u * f$ on test functions extends to $C^\infty(G)$.</p>
+<p><strong>Corollary.</strong> The convolution algebra $C_c^\infty(G)$ is represented on $C^\infty(G)$ by the operators $\lambda(f)$, and the map $u \mapsto (f \mapsto u * f)$ is an algebra isomorphism from $\mathrm{U}(\mathrm{G})$ onto the left-invariant operators.</p>
 <h2 id="the-examples">The Examples</h2>
 <h3 id="the-additive-group-of-a-vector-space">The Additive Group of a Vector Space</h3>
-<p>Let $G = \mathbb{R}^n$ with the additive structure. The left-invariant vector fields are the constant coefficient derivations $\partial_1, \ldots, \partial_n$, the universal enveloping algebra is the polynomial algebra $\mathbb{C}[\partial_1, \ldots, \partial_n]$, and the left-invariant differential operators are the constant coefficient operators. Convolution is the ordinary convolution of functions, and the distributions supported at the origin are the finite linear combinations of the delta distribution and its derivatives.</p>
+<p>Let $G = \mathbb{R}^n$ with the additive structure. The left-invariant vector fields are the constant coefficient derivations $\partial/\partial x_1, \ldots, \partial/\partial x_n$, the universal enveloping algebra is the polynomial algebra $\mathbb{C}[\partial/\partial x_1, \ldots, \partial/\partial x_n]$, and the left-invariant differential operators are the constant coefficient operators. Convolution is the ordinary convolution of functions, and the distributions supported at the origin are the finite linear combinations of the delta distribution and its derivatives.</p>
 <h3 id="a-torus">A Torus</h3>
 <p>Let $G = T^n = \mathbb{R}^n/\mathbb{Z}^n$. The left-invariant differential operators are the constant coefficient operators in the coordinate derivations, and on the character $\exp(2\pi i\,m\cdot x)$, $m \in \mathbb{Z}^n$, the operator $P(\partial)$ acts by the scalar $P(2\pi i m)$. Convolution acts on the Fourier coefficients by multiplication, which is the convolution theorem of <em>Harmonic Analysis on Groups</em>.</p>
 <h3 id="a-compact-matrix-group">A Compact Matrix Group</h3>
 <p>Let $G$ be a compact connected Lie group, such as $SU(2)$ or $SO(3)$. The bi-invariant operators are the polynomials in the Casimir element, and by <em>Harmonic Analysis on Groups</em> the Peter--Weyl theorem decomposes $C^\infty(G)$ into finite-dimensional irreducible components on each of which the Casimir operator acts by a scalar; the operator layer of $G$ is therefore diagonalised by the representation theory, which is the content of <em>The Casimir Operator of a Lie Group</em> and of <em>Unitary Representations of a Lie Group</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $U(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto X^{\mathrm{lift}}$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(U(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $U(\mathrm{G})$.</p>
+<p>A Lie group carries the monoid of its smooth self-maps, whose units are the diffeomorphisms, and it acts on its smooth functions by the translations $L_g$, $R_g$ and the inversion. A differential operator is left-invariant when it commutes with every $L_g$ and right-invariant when it commutes with every $R_g$; the left-invariant ones form an algebra isomorphic to the universal enveloping algebra $\mathrm{U}(\mathrm{G})$ by evaluation at the identity, with the correspondence $X \mapsto X^{\mathrm{lift}}$ on the first order and the Poincaré--Birkhoff--Witt monomials giving independent operators. The bi-invariant operators are exactly the centre $Z(\mathrm{U}(\mathrm{G}))$, and the first member of that centre is the Casimir element of a semisimple algebra, which acts as a scalar on each irreducible representation. On the group side the Haar integral makes $C_c^\infty(G)$ an associative algebra under convolution, and convolution by a function is a smoothing operator commuting with the left translations, so the assignment $f \mapsto \lambda(f)$ is a representation of the convolution algebra. The distributions supported at the identity form the same algebra of operators, and they are the same object as the left-invariant differential operators: a left-invariant operator is the convolution by a distribution supported at $e$, and the algebra of these distributions is $\mathrm{U}(\mathrm{G})$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -185,11 +184,11 @@ $$</p>
 <td>the left-invariant vector field determined by $X$</td>
 </tr>
 <tr>
-<td>$U(\mathrm{G}) \cong D_L(G)$</td>
+<td>$\mathrm{U}(\mathrm{G}) \cong D_L(G)$</td>
 <td>the isomorphism of the enveloping algebra with the left-invariant operators</td>
 </tr>
 <tr>
-<td>$Z(U(\mathrm{G})) = D_L(G) \cap D_R(G)$</td>
+<td>$Z(\mathrm{U}(\mathrm{G})) = D_L(G) \cap D_R(G)$</td>
 <td>the centre, the bi-invariant operators</td>
 </tr>
 <tr>
@@ -205,7 +204,7 @@ $$</p>
 <td>the convolution operator</td>
 </tr>
 <tr>
-<td>$\mathcal{D}_e(G) \cong U(\mathrm{G})$</td>
+<td>$\mathcal{D}_e(G) \cong \mathrm{U}(\mathrm{G})$</td>
 <td>the distributions supported at the identity</td>
 </tr>
 </tbody>

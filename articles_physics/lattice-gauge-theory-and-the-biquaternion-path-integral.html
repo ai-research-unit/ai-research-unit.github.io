@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,13 +52,13 @@
         <h1 id="lattice-gauge-theory-and-the-biquaternion-path-integral"><strong>Lattice Gauge Theory and the Biquaternion Path Integral</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The functional integral of the companion article <em>The Functional Integral in Biquaternionic Form</em> is a formal object: the measure $\mathcal{D}\mathcal{A}$ is a product over uncountably many field components, the action is a four-dimensional integral, and the Gaussian evaluations that make the integral computable are the evaluations of a finite-dimensional approximation. The companion article <em>The Gauge Field Path Integral in Biquaternionic Form</em> removes the gauge redundancy but keeps the continuum; the result is an integral over gauge orbits, still formal. This article supplies the regulator. A lattice discretization replaces the continuum by a finite set of variables whose number is proportional to the volume in lattice units, replaces the formal measure by a finite product of compact-group integrals, and replaces the ill-defined continuum limit by a limit in which the lattice spacing is taken to zero together with a renormalization of the coupling. The result is the only construction in the subcategory in which the path integral is a genuine finite-dimensional integral, and it is the setting in which the confining behaviour of the non-abelian theory is established rather than inferred.</p>
-<p>The framework's contribution is specific. A lattice link variable is the parallel transporter along a link, and for the algebra's compact factor it is an element of the group, which in the biquaternion realization is a <strong>unit quaternion</strong> — the compact subset $\{Q\in\mathbb{B}:Q\bar Q=e_0\}$ of the algebra. The group is compact, so the Haar measure on it is finite and normalized, and the lattice path integral is a finite product of compact integrals. The trace that the action uses is the real part of the quaternion,
+<p>The framework's contribution is specific. A lattice link variable is the parallel transporter along a link, and for the algebra's compact factor it is an element of the group, which in the biquaternion realization is a <strong>unit quaternion</strong> — the compact subset $\{Q\in\mathbb{B}:Q\bar Q=e_t\}$ of the algebra. The group is compact, so the Haar measure on it is finite and normalized, and the lattice path integral is a finite product of compact integrals. The trace that the action uses is the real part of the quaternion,
 $$
 \mathrm{Tr}\,\tilde U=\mathrm{Tr}\,\Phi(\tilde U)=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
 $$
-for $\tilde U=\tilde U_0e_0+\tilde U_1e_1+\tilde U_2e_2+\tilde U_3e_3$; the action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.</p>
+for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$; the action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.</p>
 <p>The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its gauge law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the <strong>physical interpretation</strong> rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.</p>
-<p>We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$. The compact gauge algebra is taken in the Hermitian-generator realization: the generators are $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, Hermitian and traceless, with the standard algebra and normalization $[T_a,T_b]=i\varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\mathcal{A}_\mu^a T_a$, the coupling is $\kappa=ϙ/\hbar$, the covariant derivative is $D_\mu=\partial_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{M}_-$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> records as open. The lattice does not settle it in general, but in Euclidean signature the $ict$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of <em>Wilson Loops in Biquaternionic Form</em> already uses. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The lattice is introduced in Euclidean signature, where the weight is $\exp(-S_W)$ with $S_W$ real and positive; the rotation that relates the two signatures is the one of the companion articles. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed.</p>
+<p>We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The compact gauge algebra is taken in the Hermitian-generator realization: the generators are $T_a=\tfrac12 ie_a\in\mathbb{M}_+$, Hermitian and traceless, with the standard algebra and normalization $[T_a,T_b]=i\varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\mathcal{A}_\mu^a T_a$, the coupling is $\kappa=ϙ/\hbar$, the covariant derivative is $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{M}_-$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> records as open. The lattice does not settle it in general, but in Euclidean signature the $ict$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of <em>Wilson Loops in Biquaternionic Form</em> already uses. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\,\partial/\partial Q_\mu$ with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The lattice is introduced in Euclidean signature, where the weight is $\exp(-S_W)$ with $S_W$ real and positive; the rotation that relates the two signatures is the one of the companion articles. Natural units $\hbar=c=1$ are used where no dimensionful quantity is displayed.</p>
 <ul>
 <li>Companion article <em>The Functional Integral in Biquaternionic Form</em>, for the measure, the Gaussian evaluation and the Euclidean rotation.</li>
 <li>Companion article <em>The Gauge Field Path Integral in Biquaternionic Form</em>, for the abelian gauge orbit and the gauge-fixing determinant.</li>
@@ -85,16 +84,16 @@ is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathc
 <h3 id="sites-links-and-the-group">Sites, Links, and the Group</h3>
 <p>A hypercubic lattice of spacing $a$ consists of sites $n=(n_0,n_1,n_2,n_3)$ with $n_\mu\in\mathbb{Z}$, and the link from $n$ to $n+\vec u_\mu$ carries a group element $\tilde U_\mu(n)$. The group is the compact factor of the algebra,
 $$
-\tilde U_\mu(n)\in SU(2)=\{Q\in\mathbb{H}_{\mathbb{B}}:Q\bar Q=e_0\},
+\tilde U_\mu(n)\in SU(2)=\{Q\in\mathbb{H}_{\mathbb{B}}:Q\bar Q=e_t\},
 \qquad
-\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\},
+\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
-the set of unit real quaternions — the coefficients of $e_0,e_1,e_2,e_3$ are real, so that $\bar Q=Q^{*}=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathrm{SU}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
+the set of unit real quaternions — the coefficients of $e_t,\vec e_x,\vec e_y,\vec e_z$ are real, so that $\bar Q=Q^{*}=Q^{-1}$ and the quaternion conjugate, the Hermitian conjugate and the inverse coincide; it is a three-sphere embedded in the algebra, and it is the group that exponentiates the compact factor $\mathrm{SU}(2)$ in the Hermitian-generator realization fixed above. The link is the lattice approximation to the parallel transporter,
 $$
 \tilde U_\mu(n)=\exp\!\big(ia\kappa\mathcal{A}_\mu(n)\big)
 =\sum_{m=0}^{\infty}\frac{1}{m!}\big(ia\kappa\mathcal{A}_\mu(n)\big)^m ,
 $$
-which for $\mathcal{A}_\mu=\mathcal{A}_\mu^aT_a$ is a unit quaternion, $\tilde U_\mu(n)\bar{\tilde U}_\mu(n)=e_0$. The exponential is the ordinary algebra product; the fact that it lands in the group, and not merely in the algebra, is the statement that the compact factor exponentiates into the compact group, and it is the reason the link variable is bounded.</p>
+which for $\mathcal{A}_\mu=\mathcal{A}_\mu^aT_a$ is a unit quaternion, $\tilde U_\mu(n)\bar{\tilde U}_\mu(n)=e_t$. The exponential is the ordinary algebra product; the fact that it lands in the group, and not merely in the algebra, is the statement that the compact factor exponentiates into the compact group, and it is the reason the link variable is bounded.</p>
 <h3 id="the-lattice-gauge-transformation">The Lattice Gauge Transformation</h3>
 <p>A lattice gauge transformation is a group-valued function $\tilde U(n)\in SU(2)$ on the sites, under which
 $$
@@ -108,7 +107,7 @@ for a matter field in the fundamental representation. This is the lattice form o
 $$
 (D_\mu\phi)(n)\longmapsto\frac{1}{a}\Big(\tilde U_\mu(n)\phi(n+\vec u_\mu)-\phi(n)\Big),
 $$
-which transforms as $\tilde U(n)\big(D_\mu\phi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.</p>
+which transforms as $\tilde U(n)\big(D_\mu\phi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\,\partial/\partial Q_\mu$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.</p>
 <h2 id="the-plaquette-and-the-wilson-action">The Plaquette and the Wilson Action</h2>
 <h3 id="the-plaquette">The Plaquette</h3>
 <p>The elementary gauge-invariant object on the lattice is the <strong>plaquette</strong>, the product of links around the boundary of an elementary square in the $\mu\nu$ plane,
@@ -155,7 +154,7 @@ which is the standard lattice normalization, written in the framework's coupling
 $$
 Z=\int\prod_{n}\prod_{\mu=0}^{3}dU_\mu(n)\;\exp\!\big(-S_W[\tilde U]\big),
 $$
-where $dU_\mu(n)$ is the Haar measure on $SU(2)$, normalized to $\int dU=1$, and the product is over all sites and all positive directions in a finite box with periodic boundary conditions. In angular coordinates, writing $\tilde U=\cos\theta\,e_0+\sin\theta\,(\vec u_1e_1+\vec u_2e_2+\vec u_3e_3)$ with $\vec u\in S^2$ and $\theta\in[0,\pi]$,
+where $dU_\mu(n)$ is the Haar measure on $SU(2)$, normalized to $\int dU=1$, and the product is over all sites and all positive directions in a finite box with periodic boundary conditions. In angular coordinates, writing $\tilde U=\cos\theta\,e_t+\sin\theta\,(\vec u_x\vec e_x+\vec u_y\vec e_y+\vec u_z\vec e_z)$ with $\vec u\in S^2$ and $\theta\in[0,\pi]$,
 $$
 dU=\frac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega(\vec u),
 \qquad
@@ -278,8 +277,8 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -298,7 +297,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 <td>Connection and coupling</td>
 </tr>
 <tr>
-<td>$F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$</td>
+<td>$F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$</td>
 <td>Non-abelian curvature</td>
 </tr>
 <tr>

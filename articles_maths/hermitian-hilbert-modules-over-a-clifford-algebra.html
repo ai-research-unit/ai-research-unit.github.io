@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -147,7 +146,7 @@ scalar is unitary.</p>
 $\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$.</p>
 <h3 id="the-adjoint-of-the-operator-math59">The Adjoint of the Operator $D$</h3>
 <p><strong>Theorem (formal adjointness and the boundary term).</strong> On $L^2(\Omega;\mathcal{S})$ the operator
-$D=\sum_\mu c(e_\mu)\partial_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
+$D=\sum_\mu c(e_\mu)\partial/\partial x_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
 sections, and for sections on a bounded domain with smooth boundary,</p>
 <p>$$
 \langle Df,g\rangle-\langle f,D^{\dagger}g\rangle = \int_{\partial\Omega}\bigl(c(\nu_B)f,g\bigr)\,dS ,
@@ -160,7 +159,7 @@ $D^{\dagger}=-\bar D$.</p>
 <p><strong>Corollary (self-adjointness on a closed domain, and on the Hardy space).</strong> If the boundary term
 vanishes — for example on the boundary values of monogenic functions, or on a domain without
 boundary — then $D$ is skew-adjoint up to the conjugation, and the operator
-$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial_i$ is self-adjoint on the appropriate domain, with
+$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial/\partial x_i$ is self-adjoint on the appropriate domain, with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum. The spectral theory of that operator is <em>Dirac
 Differential Operators</em>', and the passage from the formal adjoint to the unbounded self-adjoint
 operator is the one of <em>Unbounded Operators and Spectral Measures</em> in <em>Analysis on Linear Spaces</em>.</p>
@@ -240,7 +239,7 @@ an Adjoint</em>; the reproducing kernels are <em>Positive Definite Kernels in Cl
 <td>Operator and its formal adjoint; conormal boundary term</td>
 </tr>
 <tr>
-<td>$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i)\partial_i$</td>
+<td>$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i)\partial/\partial x_i$</td>
 <td>Self-adjoint vector operator; $D_{\mathrm{sa}}^2=-\Delta$</td>
 </tr>
 <tr>

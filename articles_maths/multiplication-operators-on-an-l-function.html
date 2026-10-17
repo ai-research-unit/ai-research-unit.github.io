@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -109,8 +108,8 @@ $$
 that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an involution up to the scalar $\epsilon$, and it intertwines $M_h$ with $M_{h^*}$ in the sense that $\mathcal{R}\Lambda_{M_hf}=\epsilon\,\Lambda_{h^**(M_hf)}$.</p>
 <p><strong>Proof.</strong> The change of variable $s\mapsto1-s$ in the defining integral of the completed $L$-function gives the functional equation in the stated form; conjugation of the coefficients produces $f^*$, and the two reflections compose to the identity because applying the change twice returns $s$. The intertwining is the multiplicativity of the coefficient involution, $M_hf$ has coefficients $(h*f)$, whose conjugate-involution is $h^**(f^*)$.</p>
 <h3 id="the-dual-form">The dual form</h3>
-<p><strong>Definition.</strong> The <strong>dual form</strong> $f^{\mathrm{dual}}$ is the arithmetic function with Dirichlet series $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapstof^{\mathrm{dual}}$ is an involution on the forms whose completion satisfies the equation.</p>
-<p><strong>Proposition.</strong> $L(f^{\mathrm{dual}},s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f}=M_{h^*}f^{\mathrm{dual}}$. The operator identity of the previous theorem and the definition of $f^{\mathrm{dual}}$ are the same identity read on two sides.</p>
+<p><strong>Definition.</strong> The <strong>dual form</strong> $f^{\mathrm{dual}}$ is the arithmetic function with Dirichlet series $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapsto f^{\mathrm{dual}}$ is an involution on the forms whose completion satisfies the equation.</p>
+<p><strong>Proposition.</strong> $L(f^{\mathrm{dual}},s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f=M_{h^*}f^{\mathrm{dual}}$. The operator identity of the previous theorem and the definition of $f^{\mathrm{dual}}$ are the same identity read on two sides.</p>
 <p><strong>Proof.</strong> Substitute $s\mapsto1-s$ into the definition of $f^{\mathrm{dual}}$ and use the functional equation; the compatibility with $M_h$ is the multiplicativity of the involution on coefficients. This is the operator form of the functional equation in the sense of <em>L-Functions</em>.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>Example (the divisor-sum operator).</strong> For $h=\mathbf{1}$, the constant function $1$, $M_{\mathbf 1}f(n)=\sum_{d\mid n}f(d)$ is the divisor-sum operator, $L(M_{\mathbf 1}f,s)=\zeta(s)L(f,s)$, and $\|M_{\mathbf 1}\|_{\mathcal{H}}=\zeta(2)$. Its Euler factors are $M_{\mathbf 1_p}$ with $\mathbf{1}_p(p^r)=1$.</p>

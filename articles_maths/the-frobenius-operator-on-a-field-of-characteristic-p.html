@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -108,7 +107,7 @@ D\bigl(x^p\bigr) = p\,x^{p-1}D(x) = 0 \quad \text{for all } x \in F, \qquad D\bi
 $$
 Hence $F^p \subseteq F^{D}$ for every derivation $D$, and if $F$ is perfect every derivation is zero.</p>
 <p><strong>Proof.</strong> The power rule for a derivation in a commutative ring gives $D(x^p) = p\,x^{p-1}D(x)$, and $p = 0$ in $F$. For a perfect field $F = F^p$, so $D = 0$ on all of $F$.</p>
-<p><strong>Example.</strong> On $\mathbb{F}_p(t)$ the derivation $\partial/\partial t$ is nonzero and kills $\mathbb{F}_p(t^p) = F^p$. The pair $(\varphi, \partial_t)$ exhibits the two operators in characteristic $p$: the Frobenius is the endomorphism with image the constants of the derivation, and the derivation is the one that the Frobenius's image annihilates. This is the algebraic skeleton of the theory of derivations of an imperfect field, and it is used in <em>Derivations of a Ring</em>.</p>
+<p><strong>Example.</strong> On $\mathbb{F}_p(t)$ the derivation $\partial/\partial t$ is nonzero and kills $\mathbb{F}_p(t^p) = F^p$. The pair $(\varphi, \partial/\partial t)$ exhibits the two operators in characteristic $p$: the Frobenius is the endomorphism with image the constants of the derivation, and the derivation is the one that the Frobenius's image annihilates. This is the algebraic skeleton of the theory of derivations of an imperfect field, and it is used in <em>Derivations of a Ring</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>In a field $F$ of characteristic $p$ the Frobenius operator $\varphi(x) = x^p$ is multiplicative and, because the binomial coefficients $\binom{p}{k}$ vanish modulo $p$, additive; it is therefore a unital ring endomorphism of $F$, the freshman's dream $(x+y)^p = x^p+y^p$ being the additivity. In characteristic $0$ the coefficients do not vanish, the expansion does not collapse, and the power map is not additive: this is the failure that distinguishes the two characteristics. In a noncommutative ring of characteristic $p$ the map is a homomorphism only on commuting elements, and the fields of the article are commutative.</p>
 <p>The Frobenius is injective with image the subfield $F^p$; it is an automorphism exactly when $F$ is perfect, and otherwise it is a bijection onto the proper subfield $F^p$ with $F/F^p$ purely inseparable. Its fixed field is the prime field $\mathbb{F}_p$, the roots of $X^p - X$. On the finite field $\mathbb{F}_{p^n}$ it is an automorphism of order $n$ generating $\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p) \cong \mathbb{Z}/n$. Every derivation of $F$ annihilates $F^p$, so on a perfect field there are no nonzero derivations; the Frobenius and the derivations are the two characteristic-$p$ operators, and the image of the one is the zero set of the other.</p>

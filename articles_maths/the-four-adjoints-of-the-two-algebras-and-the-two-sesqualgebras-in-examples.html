@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,33 +51,33 @@
       <div class="article-body">
         <h1 id="the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples"><strong>The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries four pairings, and every pairing carries its own adjoint of a linear map. The corpus gives each of the four pairings an operator family, and it has named those families by their adjoints: <em>Association</em>, <em>Signed Inner Conjugation</em>, <em>Hermitian Adjoint</em> and <em>Signed Hermitian Adjoint</em>. Two of those names were also the titles of the operator articles until 2026-09-27; those two titles now name the algebra of their subcategory (<em>Two-Sided Operators on the Biquaternion Algebra</em> and <em>Two-Sided Operators on the General Quaternionic Algebra</em>), and the adjoint names are kept here for the adjoints themselves. The names look unrelated and the suffixes look arbitrary, so this article sets the four adjoints side by side and works them out on explicit maps and explicit matrices, in the coefficient basis $e_0,e_1,e_2,e_3$.</p>
+<p>The biquaternion algebra carries four pairings, and every pairing carries its own adjoint of a linear map. The corpus gives each of the four pairings an operator family, and it has named those families by their adjoints: <em>Association</em>, <em>Signed Inner Conjugation</em>, <em>Hermitian Adjoint</em> and <em>Signed Hermitian Adjoint</em>. Two of those names were also the titles of the operator articles until 2026-09-27; those two titles now name the algebra of their subcategory (<em>Two-Sided Operators on the Biquaternion Algebra</em> and <em>Two-Sided Operators on the General Quaternionic Algebra</em>), and the adjoint names are kept here for the adjoints themselves. The names look unrelated and the suffixes look arbitrary, so this article sets the four adjoints side by side and works them out on explicit maps and explicit matrices, in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$.</p>
 <p>The result is a one-line rule, and the examples below are the evidence for it: <strong>each of the four adjoint names is the adjoint of one of the four forms, and the adjective names the insertion of the sign.</strong> <em>Association</em> is the transpose of the general plain bilinear form, the reversal of a product with no conjugation anywhere, and it is the name of that adjoint because the adjoint carries no conjugation to name. <em>Signed inner conjugation</em> is the name of the adjoint of the general quaternionic bilinear form: there the adjoint of $L_{\tilde A}$ is the left multiplication by $\tilde A^{\natural}$, the <strong>signed left multiplication</strong>, and the sandwich built from it is the inner conjugation up to the norm. <em>Hermitian adjoint</em> is the name of the adjoint of the general plain sesquilinear form, which is the conjugate linear $\ast$; and <em>signed Hermitian adjoint</em> is the <strong>same</strong> form with the sign inserted into the operator, which is why the Hermitian layer carries two families where the plain layer carries one. The word <strong>signed</strong> always has the same meaning in the corpus: the grade involution $\natural$, the conjugation that negates the vector part and fixes the centre, has been inserted.</p>
 <p>The forms are <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>; the four conjugations are <em>The Group of Involutions</em>; the plain transpose is the general transpose of a bilinear form of <em>Bilinear Forms</em>, §<em>Isometries</em>, and its operator family is <em>Two-Sided Operators on the Biquaternion Algebra</em>; the two other families are <em>Two-Sided Operators on the General Quaternionic Algebra</em> and <em>Two-Sided Operators on the General Plain Sesqualgebra</em>. The last section of examples turns the same two involutions on the <em>two-sided operators</em> themselves: the coefficient involution $\sigma$ and the sign character $\alpha$ are the two switches of the twisted right factor $c_{\sigma,\alpha}(\tilde A)=\sigma(\alpha(\tilde A))$, and the four settings of the two switches return the four forms read at the unit. The article is pure algebra; no argument uses a distance, a limit or a derivative.</p>
 <h2 id="conventions-and-the-four-forms">Conventions and the Four Forms</h2>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; the central scalar imaginary is $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $\mathrm{Sc}$ is the scalar part. The four conjugations on elements are the identity, the <strong>natural conjugation</strong> $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the <strong>coefficient conjugation</strong> $\bar{\tilde Q}=\overline{Q_0}e_0+\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$, and the <strong>Hermitian conjugation</strong> ${}^{\ast}={}^{\natural}\bar{\cdot}=\bar{\cdot}\,{}^{\natural}$, so that $\tilde Q^{\ast}=\overline{Q_0}e_0-\overline{Q_1}e_1-\overline{Q_2}e_2-\overline{Q_3}e_3$. The natural conjugation is the sign of the algebra, equal to $+1$ on the centre and $-1$ on the vector subspace $V=\mathbb{C}\{e_1,e_2,e_3\}$; in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ it is the Clifford conjugation $\alpha(X^{r})$, the grade involution itself being the coefficient conjugation (<em>The Number Systems as Clifford Algebras</em>). It is $\mathbb{C}$-linear and an anti-automorphism; the coefficient conjugation is conjugate linear and an automorphism; the Hermitian conjugation is conjugate linear and an anti-automorphism.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $\mathrm{Sc}$ is the scalar part. The four conjugations on elements are the identity, the <strong>natural conjugation</strong> $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the <strong>coefficient conjugation</strong> $\bar{\tilde Q}=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z$, and the <strong>Hermitian conjugation</strong> ${}^{\ast}={}^{\natural}\bar{\cdot}=\bar{\cdot}\,{}^{\natural}$, so that $\tilde Q^{\ast}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$. The natural conjugation is the sign of the algebra, equal to $+1$ on the centre and $-1$ on the vector subspace $V=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$; in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ it is the Clifford conjugation $\alpha(X^{r})$, the grade involution itself being the coefficient conjugation (<em>The Number Systems as Clifford Algebras</em>). It is $\mathbb{C}$-linear and an anti-automorphism; the coefficient conjugation is conjugate linear and an automorphism; the Hermitian conjugation is conjugate linear and an anti-automorphism.</p>
 <p><strong>Theorem (the four forms and their Gram matrices).</strong> The four pairings of the algebra are</p>
 <p>$$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),
 $$
 $$
-\langle\tilde P,\tilde Q\rangle_{\ast}=\mathrm{Sc}(\tilde P\tilde Q^{\ast}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\ast}),
 \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{\ast}),
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\ast}),
 $$</p>
-<p>and in the basis $e_0,e_1,e_2,e_3$ their Gram matrices are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$. The first two are bilinear and the last two are sesquilinear, conjugate linear in the second argument. All four are non-degenerate and no two of them agree.</p>
+<p>and in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ their Gram matrices are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$. The first two are bilinear and the last two are sesquilinear, conjugate linear in the second argument. All four are non-degenerate and no two of them agree.</p>
 <p><em>Proof.</em> Each pairing is the scalar part of one of the four general products of <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em>, and $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$; the natural and the Hermitian conjugations are diagonal in the basis, of diagonal entries $\varepsilon$ and $-\varepsilon$ respectively, which gives the four Gram matrices. The diagonal forms $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\sum_\mu Q_\mu^{2}$, $\sum_\mu|Q_\mu|^{2}$ and $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ separate the four pairings on the units.</p>
-<p><strong>Remark (the four forms are one family).</strong> Any two of the four are recovered from the others by the two sign characters of the argument, $\langle\tilde P,\tilde Q\rangle_{\natural}=\langle\tilde P^{\natural},\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{\ast}=\langle\tilde P,\bar{\tilde Q}\rangle_{\natural}$, so the four forms differ only in which of the identity, $\natural$, $\bar{\cdot}$ and $\ast$ is inserted into which slot. The four adjoints below differ in exactly the same way, and that is the whole point of the article.</p>
+<p><strong>Remark (the four forms are one family).</strong> Any two of the four are recovered from the others by the two sign characters of the argument, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\langle\tilde Q_1,\bar{\tilde Q}_2\rangle_{\natural}$, so the four forms differ only in which of the identity, $\natural$, $\bar{\cdot}$ and $\ast$ is inserted into which slot. The four adjoints below differ in exactly the same way, and that is the whole point of the article.</p>
 <h2 id="the-four-adjoints">The Four Adjoints</h2>
 <p><strong>Definition.</strong> For each of the four pairings $\phi=\langle\cdot,\cdot\rangle,\langle\cdot,\cdot\rangle_{\natural},\langle\cdot,\cdot\rangle_{\ast},\langle\cdot,\cdot\rangle_{\natural\ast}$ and each $\mathbb{C}$-linear map $F$ of $\mathbb{B}$, the <strong>adjoint of $F$ for $\phi$</strong> is the unique $\mathbb{C}$-linear map $F^{\phi}$ with</p>
 <p>$$
-\phi\bigl(F\tilde X,\tilde Y\bigr)=\phi\bigl(\tilde X,F^{\phi}\tilde Y\bigr)\qquad\text{for all }\tilde X,\tilde Y\in\mathbb{B}.
+\phi\bigl(F\tilde Q_1,\tilde Q_2\bigr)=\phi\bigl(\tilde Q_1,F^{\phi}\tilde Q_2\bigr)\qquad\text{for all }\tilde Q_1,\tilde Q_2\in\mathbb{B}.
 $$</p>
 <p>The form is non-degenerate, so the adjoint exists and is unique, and $F\mapsto F^{\phi}$ is conjugate linear in the sesquilinear cases and linear in the bilinear ones.</p>
 <p>The corpus writes the first adjoint $F^{\approx}$ and calls it the <strong>associate</strong>; it writes the second $F^{N}$ and calls it the $\langle\cdot\rangle_{\natural}$-adjoint, the adjoint for the norm form; the third is the <strong>Hermitian adjoint</strong> $F^{\ast}$. This article writes $F^{\phi}$ with the form for the subscript, which is the notation of the notation table of <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>, and uses $\approx$ and $N$ as the two names of the corpus.</p>
-<p><strong>Theorem (the adjoints of the one-sided and two-sided operators).</strong> For the left multiplication $L_{\tilde A}(\tilde X)=\tilde A\tilde X$, the right multiplication $R_{\tilde B}(\tilde X)=\tilde X\tilde B$, and their product $L_{\tilde A}R_{\tilde B}$,</p>
+<p><strong>Theorem (the adjoints of the one-sided and two-sided operators).</strong> For the left multiplication $L_{\tilde A}(\tilde Q)=\tilde A\tilde Q$, the right multiplication $R_{\tilde B}(\tilde Q)=\tilde Q\tilde B$, and their product $L_{\tilde A}R_{\tilde B}$,</p>
 <p>$$
 (L_{\tilde A})^{\approx}=R_{\tilde A},\qquad (R_{\tilde B})^{\approx}=L_{\tilde B},\qquad (L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A};
 $$
@@ -91,7 +90,7 @@ $$
 $$
 (L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}},\qquad (R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}},\qquad (L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}.
 $$</p>
-<p><em>Proof.</em> For the first pair, $\mathrm{Sc}(\tilde A\tilde X\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y\tilde A)$ by the cyclicity of $\mathrm{Sc}$, which is $\langle L_{\tilde A}\tilde X,\tilde Y\rangle=\langle\tilde X,R_{\tilde A}\tilde Y\rangle$, and the two-sided formula follows from the reversal of the adjoint of a composite, $(FG)^{\approx}=G^{\approx}F^{\approx}$. For the second, $\mathrm{Sc}((\tilde A\tilde X)^{\natural}\tilde Y)=\mathrm{Sc}(\tilde X^{\natural}\tilde A^{\natural}\tilde Y)=\langle\tilde X,L_{\tilde A^{\natural}}\tilde Y\rangle_{\natural}$, and the factors are <strong>not</strong> reversed because the adjoint of a left multiplication is again a left multiplication; the two-sided formula is $R_{\tilde B^{\natural}}L_{\tilde A^{\natural}}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$. The third is the same computation with the conjugate linear $\ast$ in place of $\natural$. For the fourth, $\mathrm{Sc}((\tilde A\tilde X)^{\natural}\tilde Y^{\ast})=\mathrm{Sc}(\tilde X^{\natural}\tilde A^{\natural}\tilde Y^{\ast})$ and $\mathrm{Sc}(\tilde X^{\natural}\tilde A^{\natural}\tilde Y^{\ast})=\mathrm{Sc}(\tilde X^{\natural}(\tilde Y\bar{\tilde A})^{\ast})$ by the cyclic property together with $(\tilde Y\bar{\tilde A})^{\ast}=\tilde A^{\natural}\tilde Y^{\ast}$, so the adjoint of $L_{\tilde A}$ is $R_{\bar{\tilde A}}$; the two-sided formula again reverses. Every identity was verified on the sixteen pairs of basis elements.</p>
+<p><em>Proof.</em> For the first pair, $\mathrm{Sc}(\tilde A\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2\tilde A)$ by the cyclicity of $\mathrm{Sc}$, which is $\langle L_{\tilde A}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde A}\tilde Q_2\rangle$, and the two-sided formula follows from the reversal of the adjoint of a composite, $(FG)^{\approx}=G^{\approx}F^{\approx}$. For the second, $\mathrm{Sc}((\tilde A\tilde Q_1)^{\natural}\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde A^{\natural}\tilde Q_2)=\langle\tilde Q_1,L_{\tilde A^{\natural}}\tilde Q_2\rangle_{\natural}$, and the factors are <strong>not</strong> reversed because the adjoint of a left multiplication is again a left multiplication; the two-sided formula is $R_{\tilde B^{\natural}}L_{\tilde A^{\natural}}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$. The third is the same computation with the conjugate linear $\ast$ in place of $\natural$. For the fourth, $\mathrm{Sc}((\tilde A\tilde Q_1)^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde A^{\natural}\tilde Q_2^{\ast})$ and $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde A^{\natural}\tilde Q_2^{\ast})=\mathrm{Sc}(\tilde Q_1^{\natural}(\tilde Q_2\bar{\tilde A})^{\ast})$ by the cyclic property together with $(\tilde Q_2\bar{\tilde A})^{\ast}=\tilde A^{\natural}\tilde Q_2^{\ast}$, so the adjoint of $L_{\tilde A}$ is $R_{\bar{\tilde A}}$; the two-sided formula again reverses. Every identity was verified on the sixteen pairs of basis elements.</p>
 <p><strong>Corollary (the plain adjoint swaps, the signed adjoint conjugates).</strong> The first two lines above read</p>
 <p>$$
 (L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A},
@@ -108,24 +107,24 @@ $$</p>
 $$</p>
 <p>and on a pair of elements the defining property reads</p>
 <p>$$
-\mathrm{Sc}\bigl(F(\tilde R)\,\tilde S\bigr)=\mathrm{Sc}\bigl(\tilde R\,F^{\approx}(\tilde S)\bigr)\qquad\text{for all }\tilde R,\tilde S\in\mathbb{B}.
+\mathrm{Sc}\bigl(F(\tilde Q_1)\,\tilde Q_2\bigr)=\mathrm{Sc}\bigl(\tilde Q_1\,F^{\approx}(\tilde Q_2)\bigr)\qquad\text{for all }\tilde Q_1,\tilde Q_2\in\mathbb{B}.
 $$</p>
-<p><em>Proof.</em> The involution and the reversal are the uniqueness of the adjoint applied twice, as in the two-sided line of the theorem above; the second display is the definition with $\langle\tilde R,\tilde S\rangle=\mathrm{Sc}(\tilde R\tilde S)$ substituted.</p>
-<p><strong>Proposition (association reverses the factors of the Conway basis).</strong> On the Conway operator basis $e_n[\,]e_m$, the elementary operator being $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$,</p>
+<p><em>Proof.</em> The involution and the reversal are the uniqueness of the adjoint applied twice, as in the two-sided line of the theorem above; the second display is the definition with $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ substituted.</p>
+<p><strong>Proposition (association reverses the factors of the Conway basis).</strong> On the Conway operator basis $e_n[\,]e_m$, the elementary operator being $(e_n[\,]e_m)(\tilde Q)=e_n\tilde Q e_m$,</p>
 <p>$$
 \bigl(e_n[\,]e_m\bigr)^{\approx}=e_m[\,]e_n,
 \qquad\text{so}\qquad
 \Bigl(\sum_{n,m}A_{nm}\,e_n[\,]e_m\Bigr)^{\approx}=\sum_{n,m}A_{nm}\,e_m[\,]e_n .
 $$</p>
-<p>The edge rows $L_a=\sum_n a_n\,e_n[\,]e_0$ and $R_b=\sum_m b_m\,e_0[\,]e_m$ give back $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$.</p>
-<p><em>Proof.</em> $\langle(a[\,]b)\tilde R,\tilde S\rangle=\mathrm{Sc}(a\tilde Rb\tilde S)$ and the scalar part is invariant under the cyclic permutation of its three factors, $\mathrm{Sc}(a\tilde Rb\tilde S)=\mathrm{Sc}(\tilde Rb\tilde Sa)=\langle\tilde R,(b[\,]a)\tilde S\rangle$; the identity is satisfied by $b[\,]a$ and it is unique by non-degeneracy. The edge rows are the special cases $b=e_0$ and $a=e_0$. The Conway basis is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Conway Operator Basis</em>.</p>
-<p><strong>Proposition (the matrix of the associate).</strong> Let $F$ have matrix $M$ in the coefficient basis $e_0,e_1,e_2,e_3$. Then the matrix of the associate is</p>
+<p>The edge rows $L_a=\sum_n a_n\,e_n[\,]e_t$ and $R_b=\sum_m b_m\,e_t[\,]e_m$ give back $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$.</p>
+<p><em>Proof.</em> $\langle(a[\,]b)\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(a\tilde Q_1b\tilde Q_2)$ and the scalar part is invariant under the cyclic permutation of its three factors, $\mathrm{Sc}(a\tilde Q_1b\tilde Q_2)=\mathrm{Sc}(\tilde Q_1b\tilde Q_2a)=\langle\tilde Q_1,(b[\,]a)\tilde Q_2\rangle$; the identity is satisfied by $b[\,]a$ and it is unique by non-degeneracy. The edge rows are the special cases $b=e_t$ and $a=e_t$. The Conway basis is <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>, §<em>The Conway Operator Basis</em>.</p>
+<p><strong>Proposition (the matrix of the associate).</strong> Let $F$ have matrix $M$ in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$. Then the matrix of the associate is</p>
 <p>$$
 M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E},
 $$</p>
 <p>the sign matrix $\mathrm{E}$ conjugating the plain transpose.</p>
-<p><em>Proof.</em> Write the form as $\langle\tilde P,\tilde Q\rangle=P^{\mathsf T}\mathrm{E}Q$ on the coordinate columns. Then $\langle F\tilde R,\tilde S\rangle=(MR)^{\mathsf T}\mathrm{E}S=R^{\mathsf T}M^{\mathsf T}\mathrm{E}S$ and $\langle\tilde R,F^{\approx}\tilde S\rangle=R^{\mathsf T}\mathrm{E}M^{\approx}S$ for all $R,S$, so $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$, that is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ because $\mathrm{E}^{-1}=\mathrm{E}$.</p>
-<p><strong>Remark (when the associate is the plain transpose).</strong> The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes the scalar unit $e_0$ and preserves the vector subspace has the block form $\operatorname{diag}(1,N)$ with $\langle\cdot,\cdot\rangle_{\natural}$ a $3\times3$ matrix, and the conjugation by $\mathrm{E}$ acts as the sign $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The formula is the coordinate form of the general statement that the transpose of a bilinear form is taken with the Gram matrix conjugating both sides, $M\mapsto G^{-1}M^{\mathsf T}G$ (<em>Bilinear Forms</em>, §<em>Isometries</em>, and <em>Quadratic Forms and Polarisation</em>, §<em>Isometry of Forms</em>).</p>
+<p><em>Proof.</em> Write the form as $\langle\tilde Q_1,\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}Q_2$ on the coordinate columns. Then $\langle F\tilde Q_1,\tilde Q_2\rangle=(MQ_1)^{\mathsf T}\mathrm{E}Q_2=Q_1^{\mathsf T}M^{\mathsf T}\mathrm{E}Q_2$ and $\langle\tilde Q_1,F^{\approx}\tilde Q_2\rangle=Q_1^{\mathsf T}\mathrm{E}M^{\approx}Q_2$ for all $Q_1,Q_2$, so $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$, that is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ because $\mathrm{E}^{-1}=\mathrm{E}$.</p>
+<p><strong>Remark (when the associate is the plain transpose).</strong> The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes the scalar unit $e_t$ and preserves the vector subspace has the block form $\operatorname{diag}(1,N)$ with $N$ a $3\times3$ matrix, and the conjugation by $\mathrm{E}$ acts as the sign $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The formula is the coordinate form of the general statement that the transpose of a bilinear form is taken with the Gram matrix conjugating both sides, $M\mapsto G^{-1}M^{\mathsf T}G$ (<em>Bilinear Forms</em>, §<em>Isometries</em>, and <em>Quadratic Forms and Polarisation</em>, §<em>Isometry of Forms</em>).</p>
 <p><strong>Proposition (association against the Hermitian adjoint).</strong> Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient. Then</p>
 <p>$$
 \bar F^{\approx}=\mathrm{E}\,F^{\ast}\,\mathrm{E},
@@ -134,7 +133,7 @@ $$</p>
 <p><em>Proof.</em> Conjugating the coefficients conjugates the entries of the matrix, taking $M$ to $\bar M$, so $\bar F^{\approx}$ has matrix $\mathrm{E}\bar M^{\mathsf T}\mathrm{E}$. The Hermitian adjoint has matrix $M^{\dagger}=\overline{M^{\mathsf T}}$, the conjugate transpose, so $\mathrm{E}F^{\ast}\mathrm{E}=\mathrm{E}\overline{M^{\mathsf T}}\mathrm{E}$, the same matrix.</p>
 <p><strong>Corollary (the collapse on the vector-preserving unitaries).</strong> On the operators of the block form $\operatorname{diag}(1,N)$ the conjugation by $\mathrm{E}$ is invisible, so the proposition reads $\bar F^{\approx}=F^{\ast}$, and for a unitary $F$ it reads $F^{\ast}=F^{-1}$. On those operators the plain transpose, the associate and the Hermitian adjoint are one involution, which is why the source literature writes the three interchangeably; for a general linear map they are three, and the corpus keeps the association, the transpose for the indefinite form of Gram matrix $\mathrm{E}$, apart from the dagger, the adjoint for the positive definite form of Gram matrix $\mathrm{I}_4$.</p>
 <h2 id="one-operator-four-adjoints">One Operator, Four Adjoints</h2>
-<p>The example works one operator $F=L_{\tilde A}R_{\tilde B}$ with $\tilde A=e_0+2e_1$ and $\tilde B=e_0+ie_3$ through all four adjoints. The matrices are written in the basis $e_0,e_1,e_2,e_3$, the columns being the images of the four units.</p>
+<p>The example works one operator $F=L_{\tilde A}R_{\tilde B}$ with $\tilde A=e_t+2\vec e_x$ and $\tilde B=e_t+i\vec e_z$ through all four adjoints. The matrices are written in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the columns being the images of the four units.</p>
 <p>$$
 F=\mathsf{M}_4(\tilde A)\mathsf{M}_4^{R}(\tilde B)=
 \begin{pmatrix}
@@ -178,23 +177,23 @@ F^{\natural\ast}=\mathsf{M}_4(\bar{\tilde B})\mathsf{M}_4^{R}(\bar{\tilde A})=
 -i&2i&-2&1
 \end{pmatrix}.
 $$</p>
-<p>The five matrices are distinct. Reading the four adjoint matrices against $F$: the associate $F^{\approx}$ differs from $F$ by the reversal of the two factors, $2e_1$ and $ie_3$ changing places; the $N$-adjoint differs by the replacement $\tilde A\mapsto\tilde A^{\natural}=e_0-2e_1$ and $\tilde B\mapsto\tilde B^{\natural}=e_0-ie_3$; the Hermitian adjoint by $\tilde A\mapsto\tilde A^{\ast}=e_0-2e_1$ and $\tilde B\mapsto\tilde B^{\ast}=e_0-ie_3$ as well, the two differing only in the bar on the coefficients of $F$ itself; and the fourth adjoint by both operations, the swap of $L_{\bar{\tilde B}}R_{\bar{\tilde A}}$ and the two conjugations. None of the four adjoints equals $F$: the example is self-adjoint for no pairing, which is the generic case.</p>
+<p>The five matrices are distinct. Reading the four adjoint matrices against $F$: the associate $F^{\approx}$ differs from $F$ by the reversal of the two factors, $2\vec e_x$ and $i\vec e_z$ changing places; the $N$-adjoint differs by the replacement $\tilde A\mapsto\tilde A^{\natural}=e_t-2\vec e_x$ and $\tilde B\mapsto\tilde B^{\natural}=e_t-i\vec e_z$; the Hermitian adjoint by $\tilde A\mapsto\tilde A^{\ast}=e_t-2\vec e_x$ and $\tilde B\mapsto\tilde B^{\ast}=e_t-i\vec e_z$ as well, the two differing only in the bar on the coefficients of $F$ itself; and the fourth adjoint by both operations, the swap of $L_{\bar{\tilde B}}R_{\bar{\tilde A}}$ and the two conjugations. None of the four adjoints equals $F$: the example is self-adjoint for no pairing, which is the generic case.</p>
 <p><strong>Remark (the sign is a bar and a swap in the entries).</strong> The four matrices above are the same matrix up to the conjugations and the transposition along the anti-diagonal of the parameter pair, which is what the corollary predicts; the reader who wants the transposition alone can compare $F$ with $F^{\approx}$, and the reader who wants the conjugation alone can compare $F$ with $F^{N}$.</p>
 <h2 id="signed-unsigned-and-associated">Signed, Unsigned and Associated</h2>
 <p>The second meaning of the word <em>signed</em> lives in the operators rather than in the adjoints. Two maps carry the same name in the corpus and differ by the sign $\natural$:</p>
 <p>$$
-\mathrm{Ad}_{\tilde A}(\tilde X)=\tilde A\tilde X\tilde A^{-1},
+\mathrm{Ad}_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{-1},
 \qquad
-\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X)=\tilde A^{\natural}\tilde X\tilde A^{-1},
+\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Q)=\tilde A^{\natural}\tilde Q\tilde A^{-1},
 $$</p>
 <p>the <strong>unsigned inner conjugation</strong> and the <strong>signed inner conjugation</strong>; the second is the first with the grade involution $\alpha=\natural$ inserted on the left factor, and it is the operator of the general theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, where $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$.</p>
 <p><strong>Proposition (the difference is the vector part).</strong> For an invertible $\tilde A$ with scalar part $a_0$ and vector part $\vec A$,</p>
 <p>$$
-\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X)-\mathrm{Ad}_{\tilde A}(\tilde X)=\bigl(\tilde A^{\natural}-\tilde A\bigr)\tilde X\tilde A^{-1}=-2\,\vec A\,\tilde X\tilde A^{-1},
+\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Q)-\mathrm{Ad}_{\tilde A}(\tilde Q)=\bigl(\tilde A^{\natural}-\tilde A\bigr)\tilde Q\tilde A^{-1}=-2\,\vec A\,\tilde Q\tilde A^{-1},
 $$</p>
 <p>moreover $\mathrm{Ad}^{\alpha}_{\tilde A}=\mathrm{Ad}_{\tilde A}$ when $\tilde A$ is central, and $\mathrm{Ad}^{\alpha}_{\tilde A}=-\mathrm{Ad}_{\tilde A}$ when $\tilde A$ lies in the vector subspace $V$. The second case is the insertion of the sign at its sharpest: for $\tilde A\in V$ the whole operator is negated.</p>
-<p><em>Proof.</em> The first two displays are the definition, and $\tilde A^{\natural}-\tilde A=-2\vec A$ with $\vec A=\tilde A-a_0e_0$. If $\vec A=0$ the difference vanishes; if $a_0=0$ then $\tilde A^{\natural}=-\tilde A$.</p>
-<p><strong>Worked example ($\tilde A=e_0+e_1$, mixed, neither central nor in $V$).</strong> The two operators and their difference are</p>
+<p><em>Proof.</em> The first two displays are the definition, and $\tilde A^{\natural}-\tilde A=-2\vec A$ with $\vec A=\tilde A-a_0e_t$. If $\vec A=0$ the difference vanishes; if $a_0=0$ then $\tilde A^{\natural}=-\tilde A$.</p>
+<p><strong>Worked example ($\tilde A=e_t+\vec e_x$, mixed, neither central nor in $V$).</strong> The two operators and their difference are</p>
 <p>$$
 \mathrm{Ad}_{\tilde A}=
 \begin{pmatrix}
@@ -221,15 +220,15 @@ $$
 0&0&-1&1
 \end{pmatrix}.
 $$</p>
-<p>The unsigned operator is the identity on the plane $\mathbb{C}\{e_0,e_1\}$ and the quarter turn $e_2\mapsto e_3$, $e_3\mapsto-e_2$ on $\mathbb{C}\{e_2,e_3\}$; the signed operator interchanges the two roles, it is a quarter turn on $\mathbb{C}\{e_0,e_1\}$ and the identity on $\mathbb{C}\{e_2,e_3\}$. The difference is twice the vector part, $2\vec A=2e_1$, and it reads as the matrix above.</p>
-<p><strong>Worked example (the two extreme cases).</strong> For $\tilde A=ie_0$, central, both operators are the identity: $\mathrm{Ad}^{\alpha}_{ie_0}=\mathrm{Ad}_{ie_0}=\mathrm{id}$. For $\tilde A=e_1\in V$, of norm one, with $e_1^{-1}=-e_1$,</p>
+<p>The unsigned operator is the identity on the plane $\mathbb{C}\{e_t,\vec e_x\}$ and the quarter turn $\vec e_y\mapsto \vec e_z$, $\vec e_z\mapsto-\vec e_y$ on $\mathbb{C}\{\vec e_y,\vec e_z\}$; the signed operator interchanges the two roles, it is a quarter turn on $\mathbb{C}\{e_t,\vec e_x\}$ and the identity on $\mathbb{C}\{\vec e_y,\vec e_z\}$. The difference is twice the vector part, $2\vec A=2\vec e_x$, and it reads as the matrix above.</p>
+<p><strong>Worked example (the two extreme cases).</strong> For $\tilde A=ie_t$, central, both operators are the identity: $\mathrm{Ad}^{\alpha}_{ie_t}=\mathrm{Ad}_{ie_t}=\mathrm{id}$. For $\tilde A=\vec e_x\in V$, of norm one, with $\vec e_x^{-1}=-\vec e_x$,</p>
 <p>$$
-\mathrm{Ad}_{e_1}=\operatorname{diag}(1,1,-1,-1),
+\mathrm{Ad}_{\vec e_x}=\operatorname{diag}(1,1,-1,-1),
 \qquad
-\mathrm{Ad}^{\alpha}_{e_1}=\operatorname{diag}(-1,-1,1,1)=-\mathrm{Ad}_{e_1}.
+\mathrm{Ad}^{\alpha}_{\vec e_x}=\operatorname{diag}(-1,-1,1,1)=-\mathrm{Ad}_{\vec e_x}.
 $$</p>
-<p>The unsigned operator fixes $e_0$ and $e_1$ and negates the plane $\mathbb{C}\{e_2,e_3\}$; the signed operator does the opposite. Both are isometries of the plain form, both of determinant one on the four-dimensional space, because the space has even dimension.</p>
-<p><strong>Corollary (the sign costs multiplicativity).</strong> The unsigned inner conjugation is an algebra automorphism for every unit, $\mathrm{Ad}_{\tilde A}(\tilde X\tilde Y)=\mathrm{Ad}_{\tilde A}(\tilde X)\mathrm{Ad}_{\tilde A}(\tilde Y)$. The signed inner conjugation with a parameter in $V$ is <strong>anti</strong>-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X\tilde Y)=-\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X)\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Y)$; both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.</p>
+<p>The unsigned operator fixes $e_t$ and $\vec e_x$ and negates the plane $\mathbb{C}\{\vec e_y,\vec e_z\}$; the signed operator does the opposite. Both are isometries of the plain form, both of determinant one on the four-dimensional space, because the space has even dimension.</p>
+<p><strong>Corollary (the sign costs multiplicativity).</strong> The unsigned inner conjugation is an algebra automorphism for every unit, $\mathrm{Ad}_{\tilde A}(\tilde Q_1\tilde Q_2)=\mathrm{Ad}_{\tilde A}(\tilde Q_1)\mathrm{Ad}_{\tilde A}(\tilde Q_2)$. The signed inner conjugation with a parameter in $V$ is <strong>anti</strong>-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Q_1)\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde Q_2)$; both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.</p>
 <p><strong>Remark (two places for the sign, and the norm reads it).</strong> The corpus inserts the sign on the left factor in $\mathrm{Ad}^{\alpha}$, and it writes the twisted two-sided operator $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$, with the sign on the right factor. The two are exchanged by the inverse and by the norm:</p>
 <p>$$
 \Theta_{\tilde A}=\langle\tilde A\rangle_{\natural}\,\mathrm{Ad}_{\tilde A},
@@ -245,7 +244,7 @@ $$</p>
 <p>$$
 c_{\sigma,\alpha}(\tilde A)=\sigma\bigl(\alpha(\tilde A)\bigr),
 \qquad
-\Phi^{\sigma,\alpha}_{\tilde A}(\tilde Y)=\tilde A\,\tilde Y\,c_{\sigma,\alpha}(\tilde A).
+\Phi^{\sigma,\alpha}_{\tilde A}(\tilde Q)=\tilde A\,\tilde Q\,c_{\sigma,\alpha}(\tilde A).
 $$</p>
 <p><strong>The four settings.</strong> Each switch is either the identity or its involution, so there are four right factors:</p>
 <div class="table-scroll"><table>
@@ -255,7 +254,7 @@ $$</p>
 <th>$\alpha$</th>
 <th>$c_{\sigma,\alpha}(\tilde A)$</th>
 <th>the operator</th>
-<th>value at $e_0$</th>
+<th>value at $e_t$</th>
 </tr>
 </thead>
 <tbody>
@@ -263,7 +262,7 @@ $$</p>
 <td>$\mathrm{id}$</td>
 <td>$\mathrm{id}$</td>
 <td>$\tilde A$</td>
-<td>$\tilde Y\mapsto\tilde A\tilde Y\tilde A$</td>
+<td>$\tilde Q\mapsto\tilde A\tilde Q\tilde A$</td>
 <td>$\tilde A^{2}$</td>
 </tr>
 <tr>
@@ -277,7 +276,7 @@ $$</p>
 <td>$\sigma$</td>
 <td>$\mathrm{id}$</td>
 <td>$\bar{\tilde A}$</td>
-<td>$\tilde Y\mapsto\tilde A\tilde Y\bar{\tilde A}$</td>
+<td>$\tilde Q\mapsto\tilde A\tilde Q\bar{\tilde A}$</td>
 <td>$\tilde A\bar{\tilde A}$, scalar part the split norm</td>
 </tr>
 <tr>
@@ -290,9 +289,9 @@ $$</p>
 </tbody>
 </table></div>
 <p>The fifth conjugation of the algebra, the reversal $\flat=-\ast$ of <em>The Group of Involutions</em>, is the last row with the extra central sign: $\tilde A^{\flat}=-\tilde A^{\ast}$, so the reversal sandwich is minus the Hermitian sandwich.</p>
-<p><strong>Proposition (which right factors close the family).</strong> For a right factor $c$ one has $\Phi^{\sigma,\alpha}_{\tilde A}\circ\Phi^{\sigma,\alpha}_{\tilde B}=\Phi^{\sigma,\alpha}_{\tilde A\tilde B}$ for all $\tilde A,\tilde B$ exactly when $C(\tilde B)C(\tilde A)=C(\tilde A\tilde B)$, that is exactly when $c$ is an anti-automorphism. This holds for the two rows with $\alpha$, that is $c=\natural$ and $c=\ast$. For $c$ the identity or the coefficient conjugation the composite is $\tilde A\tilde B\,\tilde Y\,C(\tilde B\tilde A)$, the operator whose right factor is read on the product in the opposite order; the family is then closed only after replacing the parameter $\tilde A\tilde B$ by $\tilde B\tilde A$. The reversal satisfies $C(\tilde B)C(\tilde A)=-C(\tilde A\tilde B)$, so it closes the family up to the central sign $-1$.</p>
-<p><em>Proof.</em> Evaluating the composite on $\tilde Y$ and using that $\alpha$ is an automorphism and that $\sigma$ is multiplicative, $\Phi^{\sigma,\alpha}_{\tilde A}(\Phi^{\sigma,\alpha}_{\tilde B}(\tilde Y))=\tilde A\tilde B\,\tilde Y\,C(\tilde B)C(\tilde A)$, which is $\Phi^{\sigma,\alpha}_{\tilde A\tilde B}(\tilde Y)=\tilde A\tilde B\,\tilde Y\,C(\tilde A\tilde B)$ exactly when $C(\tilde B)C(\tilde A)=C(\tilde A\tilde B)$; a map with that property is an anti-automorphism, and $\natural$ and $\ast$ are anti-automorphisms while the identity and $\bar{\cdot}$ are automorphisms, giving $C(\tilde B)C(\tilde A)=C(\tilde B\tilde A)$ in those two cases. For the reversal $C(\tilde B)C(\tilde A)=(-\tilde B^{\ast})(-\tilde A^{\ast})=\tilde B^{\ast}\tilde A^{\ast}=(\tilde A\tilde B)^{\ast}=-C(\tilde A\tilde B)$.</p>
-<p><strong>Worked example.</strong> Take the unit $\tilde A=(1+i)e_0+e_1$, of norm $\langle\tilde A\rangle_{\natural}=(1+i)^{2}+1=1+2i$. The four right factors, the four values at $e_0$ and their scalar parts are</p>
+<p><strong>Proposition (which right factors close the family).</strong> For a right factor $c$ one has $\Phi^{\sigma,\alpha}_{\tilde A}\circ\Phi^{\sigma,\alpha}_{\tilde B}=\Phi^{\sigma,\alpha}_{\tilde A\tilde B}$ for all $\tilde A,\tilde B$ exactly when $C(\tilde B)C(\tilde A)=C(\tilde A\tilde B)$, that is exactly when $c$ is an anti-automorphism. This holds for the two rows with $\alpha$, that is $c=\natural$ and $c=\ast$. For $c$ the identity or the coefficient conjugation the composite is $\tilde A\tilde B\,\tilde Q\,C(\tilde B\tilde A)$, the operator whose right factor is read on the product in the opposite order; the family is then closed only after replacing the parameter $\tilde A\tilde B$ by $\tilde B\tilde A$. The reversal satisfies $C(\tilde B)C(\tilde A)=-C(\tilde A\tilde B)$, so it closes the family up to the central sign $-1$.</p>
+<p><em>Proof.</em> Evaluating the composite on $\tilde Q$ and using that $\alpha$ is an automorphism and that $\sigma$ is multiplicative, $\Phi^{\sigma,\alpha}_{\tilde A}(\Phi^{\sigma,\alpha}_{\tilde B}(\tilde Q))=\tilde A\tilde B\,\tilde Q\,C(\tilde B)C(\tilde A)$, which is $\Phi^{\sigma,\alpha}_{\tilde A\tilde B}(\tilde Q)=\tilde A\tilde B\,\tilde Q\,C(\tilde A\tilde B)$ exactly when $C(\tilde B)C(\tilde A)=C(\tilde A\tilde B)$; a map with that property is an anti-automorphism, and $\natural$ and $\ast$ are anti-automorphisms while the identity and $\bar{\cdot}$ are automorphisms, giving $C(\tilde B)C(\tilde A)=C(\tilde B\tilde A)$ in those two cases. For the reversal $C(\tilde B)C(\tilde A)=(-\tilde B^{\ast})(-\tilde A^{\ast})=\tilde B^{\ast}\tilde A^{\ast}=(\tilde A\tilde B)^{\ast}=-C(\tilde A\tilde B)$.</p>
+<p><strong>Worked example.</strong> Take the unit $\tilde A=(1+i)e_t+\vec e_x$, of norm $\langle\tilde A\rangle_{\natural}=(1+i)^{2}+1=1+2i$. The four right factors, the four values at $e_t$ and their scalar parts are</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -307,35 +306,35 @@ $$</p>
 <tr>
 <td>$\mathrm{id}$</td>
 <td>$\mathrm{id}$</td>
-<td>$(1+i)e_0+e_1$</td>
-<td>$(-1+2i)e_0+(2+2i)e_1$</td>
+<td>$(1+i)e_t+\vec e_x$</td>
+<td>$(-1+2i)e_t+(2+2i)\vec e_x$</td>
 <td>$-1+2i$</td>
 </tr>
 <tr>
 <td>$\mathrm{id}$</td>
 <td>$\alpha$</td>
-<td>$(1+i)e_0-e_1$</td>
-<td>$(1+2i)e_0$</td>
+<td>$(1+i)e_t-\vec e_x$</td>
+<td>$(1+2i)e_t$</td>
 <td>$1+2i$</td>
 </tr>
 <tr>
 <td>$\sigma$</td>
 <td>$\mathrm{id}$</td>
-<td>$(1-i)e_0+e_1$</td>
-<td>$e_0+2e_1$</td>
+<td>$(1-i)e_t+\vec e_x$</td>
+<td>$e_t+2\vec e_x$</td>
 <td>$1$</td>
 </tr>
 <tr>
 <td>$\sigma$</td>
 <td>$\alpha$</td>
-<td>$(1-i)e_0-e_1$</td>
-<td>$3e_0-2ie_1$</td>
+<td>$(1-i)e_t-\vec e_x$</td>
+<td>$3e_t-2i\vec e_x$</td>
 <td>$3$</td>
 </tr>
 </tbody>
 </table></div>
-<p>Only the second value is central; the fourth is fixed by the dagger and is not central, $(3e_0-2ie_1)^{\ast}=3e_0-2ie_1$; the first and the third are fixed by neither map, and the reversal negates the fourth. The four values are pairwise distinct, and so are their scalar parts.</p>
-<p><strong>Remark (the four scalar parts are the four forms).</strong> On a general element $\tilde A=\sum_\mu\lambda_\mu e_\mu$ the scalar part of the value at $e_0$ is one of the four forms of the corpus read on that element:</p>
+<p>Only the second value is central; the fourth is fixed by the dagger and is not central, $(3e_t-2i\vec e_x)^{\ast}=3e_t-2i\vec e_x$; the first and the third are fixed by neither map, and the reversal negates the fourth. The four values are pairwise distinct, and so are their scalar parts.</p>
+<p><strong>Remark (the four scalar parts are the four forms).</strong> On a general element $\tilde A=\sum_\mu\lambda_\mu e_\mu$ the scalar part of the value at $e_t$ is one of the four forms of the corpus read on that element:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -358,7 +357,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>so the coefficient involution $\sigma$ replaces the squares $\lambda_\mu^{2}$ by the moduli $\lvert\lambda_\mu\rvert^{2}$, while the sign character $\alpha$ replaces the signed sum $\sum\varepsilon_\mu\lambda_\mu^{2}$ by the unsigned one $\sum\lambda_\mu^{2}$. The two entries of the left column are complex bilinear sums and vanish on the norm cone and on the plain cone; the two of the right column are real sums of moduli and vanish only at the origin. The values $2i-1$ and $1+2i$ are the two bilinear readings of the example, and $1$ and $3$ the two sesquilinear ones.</p>
-<p><strong>Remark (the same two switches on the left factor).</strong> The left slot may also carry a twist, and there it must be an automorphism, so the two possibilities are the identity and $\sigma$. With the right factor $c$ the inverse, $\natural$ or $\ast$, and the left slot either the identity or $\sigma$, the six members are the ones the corpus uses: the inner conjugation $\mathrm{Ad}_{\tilde A}$, the conjugation sandwich $\tilde A\,\tilde Y\,\tilde A^{\natural}$ and the Hermitian sandwich $\tilde A\,\tilde Y\,\tilde A^{\ast}$ are the three with the identity on the left, while $\bar{\tilde A}\,\tilde Y\,\tilde A^{-1}$ is the $\sigma$-twisted one, the operator of the general theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and $(\sigma,\natural)$, $(\sigma,\ast)$ are the two remaining. Every one of the remarkable subspaces is multiplicative in the parameter, by the proposition above.</p>
+<p><strong>Remark (the same two switches on the left factor).</strong> The left slot may also carry a twist, and there it must be an automorphism, so the two possibilities are the identity and $\sigma$. With the right factor $c$ the inverse, $\natural$ or $\ast$, and the left slot either the identity or $\sigma$, the six members are the ones the corpus uses: the inner conjugation $\mathrm{Ad}_{\tilde A}$, the conjugation sandwich $\tilde A\,\tilde Q\,\tilde A^{\natural}$ and the Hermitian sandwich $\tilde A\,\tilde Q\,\tilde A^{\ast}$ are the three with the identity on the left, while $\bar{\tilde A}\,\tilde Q\,\tilde A^{-1}$ is the $\sigma$-twisted one, the operator of the general theory of <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, and $(\sigma,\natural)$, $(\sigma,\ast)$ are the two remaining. Every one of the remarkable subspaces is multiplicative in the parameter, by the proposition above.</p>
 <p><strong>Remark (which switch does what).</strong> The four adjoints of the left multiplication separate by the switch that each one carries:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -443,7 +442,7 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>$\tilde A=e_1$</td>
+<td>$\tilde A=\vec e_x$</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -472,24 +471,24 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>plain bilinear $\mathrm{Sc}(\tilde P\tilde Q)$</td>
+<td>plain bilinear $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
 <td>$\mathrm{E}$</td>
 <td>$R_{\tilde A}$, a swap, no conjugation</td>
 <td>$\{L_{\tilde A}R_{\tilde B}\}$, two independent parameters; the article <em>Two-Sided Operators on the Biquaternion Algebra</em></td>
 <td><strong>Association</strong></td>
 </tr>
 <tr>
-<td>quaternionic bilinear $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$</td>
+<td>quaternionic bilinear $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$</td>
 <td>$\mathrm{I}_4$</td>
 <td>$L_{\tilde A^{\natural}}=\Lambda^{\alpha}_{\tilde A}$, the signed left multiplication</td>
-<td>$\{\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}=\tilde A\,\tilde X\,\tilde A^{\natural}\}$; the article <em>Two-Sided Operators on the General Quaternionic Algebra</em></td>
+<td>$\{\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}=\tilde A\,\tilde Q\,\tilde A^{\natural}\}$; the article <em>Two-Sided Operators on the General Quaternionic Algebra</em></td>
 <td><strong>Signed Inner Conjugation</strong></td>
 </tr>
 <tr>
-<td>plain sesquilinear $\mathrm{Sc}(\tilde P\tilde Q^{\ast})$</td>
+<td>plain sesquilinear $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\ast})$</td>
 <td>$\mathrm{I}_4$</td>
 <td>$L_{\tilde A^{\ast}}$</td>
-<td>the sandwich with the dagger, $\tilde X\mapsto\tilde A\tilde X\tilde A^{\ast}$, plain left factor; the article <em>Two-Sided Operators on the General Plain Sesqualgebra</em></td>
+<td>the sandwich with the dagger, $\tilde Q\mapsto\tilde A\tilde Q\tilde A^{\ast}$, plain left factor; the article <em>Two-Sided Operators on the General Plain Sesqualgebra</em></td>
 <td><strong>with Hermitian Adjoint</strong></td>
 </tr>
 <tr>
@@ -500,7 +499,7 @@ $$</p>
 <td><strong>with Signed Hermitian Adjoint</strong></td>
 </tr>
 <tr>
-<td>quaternionic sesquilinear $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{\ast})$</td>
+<td>quaternionic sesquilinear $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\ast})$</td>
 <td>$\mathrm{E}$</td>
 <td>$R_{\bar{\tilde A}}$, a swap with a bar</td>
 <td>— the biquaternion corpus has no operator family for this form</td>
@@ -508,7 +507,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the two words, and what they select).</strong> <em>Association</em> is the name of the transpose of the plain form: it reverses the factors and conjugates nothing, and it is the name of the adjoint whenever the form is the plain bilinear one, because there is no conjugation to put in the name. <em>Signed</em> is the name of the insertion of the grade involution $\natural$. For the general quaternionic bilinear form the adjoint <strong>is</strong> the signed left multiplication, $\Lambda^{\alpha}_{\tilde A}(\tilde X)=\tilde A^{\natural}\tilde X$, so the sign enters the name of the adjoint directly; the sandwich $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$ is then the inner conjugation up to the norm, which is the "inner conjugation" half of the name. For the general plain sesquilinear form the adjoint is the dagger and the sandwich needs no sign; the corpus writes that family as <strong>Hermitian Adjoint</strong>, and it writes the family of the <em>same</em> form with the sign inserted into the operator as <strong>Signed Hermitian Adjoint</strong>, so the Hermitian layer carries two rows where the plain layer carries one. Read together, the three names of the biquaternion layer — Association, Signed Inner Conjugation, Hermitian Adjoint — are the three possible answers to "which conjugation does the adjoint of the form carry?": none, the sign $\natural$, or the conjugate linear $\ast$.</p>
+<p><strong>Remark (the two words, and what they select).</strong> <em>Association</em> is the name of the transpose of the plain form: it reverses the factors and conjugates nothing, and it is the name of the adjoint whenever the form is the plain bilinear one, because there is no conjugation to put in the name. <em>Signed</em> is the name of the insertion of the grade involution $\natural$. For the general quaternionic bilinear form the adjoint <strong>is</strong> the signed left multiplication, $\Lambda^{\alpha}_{\tilde A}(\tilde Q)=\tilde A^{\natural}\tilde Q$, so the sign enters the name of the adjoint directly; the sandwich $\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}$ is then the inner conjugation up to the norm, which is the "inner conjugation" half of the name. For the general plain sesquilinear form the adjoint is the dagger and the sandwich needs no sign; the corpus writes that family as <strong>Hermitian Adjoint</strong>, and it writes the family of the <em>same</em> form with the sign inserted into the operator as <strong>Signed Hermitian Adjoint</strong>, so the Hermitian layer carries two rows where the plain layer carries one. Read together, the three names of the biquaternion layer — Association, Signed Inner Conjugation, Hermitian Adjoint — are the three possible answers to "which conjugation does the adjoint of the form carry?": none, the sign $\natural$, or the conjugate linear $\ast$.</p>
 <p><strong>Remark (what the adjoint name does not say).</strong> The name records the adjoint of the form; it does not assert that the operator of the family is an isometry, that it is self-adjoint, or that it is an automorphism, and the tables above show the three properties failing for the generic parameter. The name is a name for the adjoint, and the article of the family is to be read with the form in hand.</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra has four pairings, and each pairing has its own adjoint of a linear map. For the general plain bilinear form the adjoint is the exchange of the two factors with no conjugation, $\approx$, which the corpus calls <strong>association</strong>, the name of the adjoint that the plain family carries. The associate has a calculus of its own: it is an involution, it reverses composition, $(FG)^{\approx}=G^{\approx}F^{\approx}$, it reverses the factors of the Conway basis, $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, its matrix in the coefficient basis is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\bar F^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries. For the general quaternionic bilinear form the adjoint of the left multiplication is the left multiplication by $\tilde A^{\natural}$, the <strong>signed left multiplication</strong>, and the sandwich built on it is the inner conjugation up to the norm, which the corpus calls the <strong>signed inner conjugation</strong>, the name of the adjoint that the quaternionic family carries. For the general plain sesquilinear form the adjoint is the <strong>Hermitian adjoint</strong> $\ast$; and <em>signed Hermitian adjoint</em> is the same form with the sign inserted into the operator. The word <em>signed</em> has one meaning throughout: the insertion of the grade involution $\natural$, which is the identity on the centre and minus the identity on the vector subspace. The examples give the four adjoint matrices of one two-sided operator, the two matrices of the signed and the unsigned inner conjugation of a mixed element and of the two extreme parameters, and the four self-adjointness criteria on the same parameters. No step of the article uses a topology, a distance or a limit.</p>
@@ -523,19 +522,19 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, Gram $\mathrm{E}$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, Gram $\mathrm{E}$</td>
 <td>the general plain bilinear form, the form of <strong>association</strong></td>
 </tr>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, Gram $\mathrm{I}_4$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, Gram $\mathrm{I}_4$</td>
 <td>the general quaternionic bilinear form, the form of the <strong>signed inner conjugation</strong></td>
 </tr>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{\ast}=\mathrm{Sc}(\tilde P\tilde Q^{\ast})$, Gram $\mathrm{I}_4$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\ast})$, Gram $\mathrm{I}_4$</td>
 <td>the general plain sesquilinear form, the form of the <strong>Hermitian adjoint</strong></td>
 </tr>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{\ast})$, Gram $\mathrm{E}$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{\ast})$, Gram $\mathrm{E}$</td>
 <td>the general quaternionic sesquilinear form, the form of the <strong>signed Hermitian adjoint</strong></td>
 </tr>
 <tr>
@@ -563,7 +562,7 @@ $$</p>
 <td>the Hermitian adjoint; $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$ the signed one</td>
 </tr>
 <tr>
-<td>$\mathrm{Ad}_{\tilde A}=\tilde A\,\tilde X\,\tilde A^{-1}$, $\mathrm{Ad}^{\alpha}_{\tilde A}=\tilde A^{\natural}\tilde X\tilde A^{-1}$</td>
+<td>$\mathrm{Ad}_{\tilde A}=\tilde A\,\tilde Q\,\tilde A^{-1}$, $\mathrm{Ad}^{\alpha}_{\tilde A}=\tilde A^{\natural}\tilde Q\tilde A^{-1}$</td>
 <td>the unsigned and the signed inner conjugation; $\mathrm{Ad}^{\alpha}=\mathrm{Ad}$ on the centre, $-\mathrm{Ad}$ on $V$</td>
 </tr>
 <tr>
@@ -575,7 +574,7 @@ $$</p>
 <td>the twisted right factor: $\tilde A$, $\tilde A^{\natural}$, $\bar{\tilde A}$ or $\tilde A^{\ast}$ according to the two switches</td>
 </tr>
 <tr>
-<td>$\Phi^{\sigma,\alpha}_{\tilde A}=\tilde A\,\tilde Y\,c_{\sigma,\alpha}(\tilde A)$</td>
+<td>$\Phi^{\sigma,\alpha}_{\tilde A}=\tilde A\,\tilde Q\,c_{\sigma,\alpha}(\tilde A)$</td>
 <td>the two-sided operator of the switches; multiplicative in $\tilde A$ for $\alpha=\natural$</td>
 </tr>
 </tbody>

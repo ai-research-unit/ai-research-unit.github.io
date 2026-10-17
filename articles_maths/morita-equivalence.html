@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -81,9 +80,9 @@ $$</p>
 $$</p>
 <p>by the tensor–hom adjunction, applied to the bimodule ${}_{M_n(A)}P_A$. We show that the unit and counit of the adjunction are isomorphisms. For $M \in \operatorname{Mod}(A)$ the unit is the natural map</p>
 <p>$$
-M \longrightarrow \operatorname{Hom}_{M_n(A)}(A^n, M^n), \qquad m \longmapsto \bigl(u \mapsto (u_1 m,\dots,u_n m)\bigr),
+M \longrightarrow \operatorname{Hom}_{M_n(A)}(A^n, M^n), \qquad m \longmapsto \bigl(u \mapsto (u_x m,\dots,u_n m)\bigr),
 $$</p>
-<p>which is an isomorphism: an $M_n(A)$-linear map $g: A^n \to M^n$ is determined by $g(e_1)$, since equivariance under the matrix units gives $g(e_j)=g(E_{j1}e_1)=E_{j1}g(e_1)$; the same equivariance with $E_{11}$ forces $g(e_1)=E_{11}g(e_1)=(m,0,\dots,0)$ for a unique $m \in M$; and then $g(e_j)$ is the vector with $m$ in the $j$-th place, so that $g(u)=(u_1m,\dots,u_nm)$ for every $u$. For $N \in \operatorname{Mod}(M_n(A))$ the counit is the natural map</p>
+<p>which is an isomorphism: an $M_n(A)$-linear map $g: A^n \to M^n$ is determined by $g(\vec e_x)$, since equivariance under the matrix units gives $g(e_j)=g(E_{j1}\vec e_x)=E_{j1}g(\vec e_x)$; the same equivariance with $E_{11}$ forces $g(\vec e_x)=E_{11}g(\vec e_x)=(m,0,\dots,0)$ for a unique $m \in M$; and then $g(e_j)$ is the vector with $m$ in the $j$-th place, so that $g(u)=(u_xm,\dots,u_nm)$ for every $u$. For $N \in \operatorname{Mod}(M_n(A))$ the counit is the natural map</p>
 <p>$$
 A^n \otimes_A \operatorname{Hom}_{M_n(A)}(A^n, N) \longrightarrow N,
 $$</p>

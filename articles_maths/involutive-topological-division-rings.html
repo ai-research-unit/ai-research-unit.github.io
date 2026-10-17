@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -78,11 +77,11 @@ $$</p>
 $$</p>
 <p>and $N(x) = 0$ if and only if $x = 0$; hence $N$ is anisotropic. The norm form of $\sigma(x)$ is the $\sigma$-image of the norm form, $N(\sigma(x)) = \sigma(N(x))$, and the norm-one set</p>
 <p>$$
-U(D,\sigma) = \{x\in D^\times : N(x) = 1\}
+\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}
 $$</p>
 <p>is a closed subgroup of $D^\times$.</p>
 <p><strong>Proof.</strong> $\sigma(x\sigma(x)) = \sigma(\sigma(x))\sigma(x) = x\sigma(x)$, so the value is self-adjoint; in a division ring a product of nonzero elements is nonzero, so $N(x) = 0$ only for $x = 0$; and $N(\sigma(x)) = \sigma(x)\sigma(\sigma(x)) = \sigma(x)x = \sigma(N(x))$. For the subgroup: if $N(u) = 1$ then $\sigma(u)u = \sigma(u\sigma(u)) = \sigma(N(u)) = 1$, so $\sigma(u) = u^{-1}$ and $N(u^{-1}) = u^{-1}\sigma(u)^{-1} = u^{-1}u = 1$; and if $N(u) = N(v) = 1$ then $N(uv) = uv\,\sigma(v)\sigma(u) = u\,(v\sigma(v))\,\sigma(u) = u\,\sigma(u) = 1$, the middle factor telescoping. Closedness is the continuity of $N$ on $D^\times$.</p>
-<p><strong>Corollary (multiplicativity in the commutative case only).</strong> If $D$ is a field the norm form is multiplicative, $N(xy) = N(x)N(y)$, and $U(D,\sigma)$ is the kernel of $N$ on the units; in the noncommutative case $N$ is multiplicative on the elements whose norm is central, and the norm-one condition $N(u) = 1$ implies $\sigma(u) = u^{-1}$, so $U(D,\sigma)$ is contained in the inverted set $I(D,\sigma)$.</p>
+<p><strong>Corollary (multiplicativity in the commutative case only).</strong> If $D$ is a field the norm form is multiplicative, $N(xy) = N(x)N(y)$, and $\mathrm{U}(D,\sigma)$ is the kernel of $N$ on the units; in the noncommutative case $N$ is multiplicative on the elements whose norm is central, and the norm-one condition $N(u) = 1$ implies $\sigma(u) = u^{-1}$, so $\mathrm{U}(D,\sigma)$ is contained in the inverted set $I(D,\sigma)$.</p>
 <p><strong>Proof.</strong> In the commutative case $\sigma(xy) = \sigma(y)\sigma(x) = \sigma(x)\sigma(y)$; in general $N(uv) = u\,N(v)\,\sigma(u)$, which is $N(u)N(v)$ when $N(v)$ is central, and the implication $N(u)=1\Rightarrow\sigma(u)=u^{-1}$ is the computation of the theorem.</p>
 <h2 id="the-topological-interpretation">The Topological Interpretation</h2>
 <p><strong>Theorem (continuity and closedness).</strong> A continuous involution of a topological division ring is a homeomorphism, the self-adjoint and the skew sets are closed, the averaging maps are continuous when $2$ is invertible, and the fixed division subring $D^\sigma$ is a closed topological division ring; the completion $\widehat{D}$ is an involutive topological division ring when $D$ is a valued division ring with an isometric involution, and $\widehat{D}^{\widehat\sigma} = \widehat{D^\sigma}$ then.</p>
@@ -90,7 +89,7 @@ $$</p>
 <p><strong>Corollary (the locally compact case).</strong> A locally compact non-discrete division ring is either $\mathbb{R}$, $\mathbb{C}$, the quaternions $\mathbb{H}$ or a finite-dimensional division algebra over a local field; a continuous involution of it has compact self-adjoint and norm-one sets, and the fixed division subring is closed and locally compact.</p>
 <p><strong>Proof.</strong> The classification of locally compact division rings is the standard one; the self-adjoint and norm-one sets are closed and bounded, hence compact in a locally compact ring, and the fixed division subring is closed and locally compact.</p>
 <h2 id="examples">Examples</h2>
-<p><strong>Example (the quaternions $\mathbb{H}$).</strong> With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_1e_1 + q_2e_2 + q_3e_3$, and $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.</p>
+<p><strong>Example (the quaternions $\mathbb{H}$).</strong> With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, and $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.</p>
 <p><strong>Example ($\mathbb{C}$ with the conjugation).</strong> The field of complex numbers is a topological division ring with the conjugation, an involution of the second kind because its centre is $\mathbb{C}$ and the involution acts nontrivially on it; the self-adjoint elements are the reals, a closed subfield of index two, and $N(Z) = Z\bar Z = |Z|^2$.</p>
 <p><strong>Example (a local field with the identity).</strong> A local field with the identity involution has $D^\sigma = D$, skew set zero and norm form the square; this is the degenerate case.</p>
 <p><strong>Example (a valued division ring).</strong> For a division ring with a valuation and an isometric involution, the valuation ring $\mathcal{O}_D$ is stable, the self-adjoint elements of $\mathcal{O}_D$ form a closed additive subgroup, and the norm form satisfies $v(N(x)) = 2v(x)$; this is the valued companion of the field case of <em>Involutions of a Non-Archimedean Field</em>.</p>
@@ -132,7 +131,7 @@ $$</p>
 <td>Norm form, self-adjoint and anisotropic</td>
 </tr>
 <tr>
-<td>$U(D,\sigma)$</td>
+<td>$\mathrm{U}(D,\sigma)$</td>
 <td>Norm-one set, closed in $D^\times$</td>
 </tr>
 <tr>

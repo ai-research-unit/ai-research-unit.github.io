@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -91,7 +90,7 @@ $$</p>
 $$</p>
 <p>and in a coordinate frame it has the Christoffel symbols</p>
 <p>$$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr).
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr).
 $$</p>
 <p><strong>Proof.</strong> The proof of the Riemannian case used only the nondegeneracy of $g$: the right-hand side of the Koszul formula is a tensor, and since the pairing $g(\,\cdot\,, \,\cdot\,)$ is nondegenerate, a vector field is determined by its pairings with all $Z$. Metricity and torsion-freeness follow by substitution exactly as before.</p>
 <p><strong>Remark.</strong> Everything in this section and the next carries over verbatim from the Riemannian case, and no new phenomenon appears. Parallel transport is an isometry of tangent spaces, $\nabla_{\gamma'}\gamma' = 0$ is the geodesic equation, the exponential map is a local diffeomorphism at the origin of each tangent space, and normal coordinates put the metric into the form $g_{ij} = \eta_{ij} - \frac{1}{3}\sum_{kl}R_{ikjl}x^kx^l + O(|x|^3)$. The exponential map is defined by the same differential equation, whose solvability is the theory of Part III.</p>

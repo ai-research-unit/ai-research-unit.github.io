@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -100,7 +99,7 @@ S\mathbb{H}^n = \{(x, v) : x \in \mathbb{H}^n,\ v \in T_x\mathbb{H}^n,\ g_x(v,v)
 $$</p>
 <p>a manifold of dimension $2n - 1$. The <strong>geodesic flow</strong> is the one-parameter group of diffeomorphisms</p>
 <p>$$
-\phi_t : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \phi_t(x,v) = (\gamma_{x,v}(t), \dot\gamma_{x,v}(t)) ,
+\phi_t : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \phi_t(x,v) = (\gamma_{x,v}(t), \left(d\gamma_{x,v}/dt\right)(t)) ,
 $$</p>
 <p>where $\gamma_{x,v}$ is the geodesic with the initial point $x$ and the initial velocity $v$; the flow translates the base point along the geodesic and carries the velocity by the parallel transport.</p>
 <p><strong>Proposition.</strong> The geodesic flow is a one-parameter group of diffeomorphisms of $S\mathbb{H}^n$, $\phi_{t+s} = \phi_t\circ\phi_s$, and it is the flow of the <strong>geodesic spray</strong>, the vector field on $S\mathbb{H}^n$ whose value at $(x,v)$ is the tangent vector of the curve $t \mapsto \phi_t(x,v)$ at $t = 0$; the flow preserves the volume of the Liouville measure on the unit tangent bundle, and it commutes with the isometries acting on the bundle by the differentials.</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,15 +52,15 @@
         <h1 id="split-biquaternion-automorphisms-and-derivations"><strong>Split-Biquaternion Automorphisms and Derivations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The <strong>split biquaternion algebra</strong> is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, an eight-dimensional real algebra isomorphic to $\mathbb{H} \oplus \mathbb{H}$. It carries two structures distinguished by the ground ring: over the split complex algebra $\mathbb{D}$ it is a free $\mathbb{D}$-algebra of rank $4$, and over $\mathbb{R}$ the same set is an eight-dimensional real algebra. This article describes its algebra <strong>automorphisms</strong> and its <strong>derivations</strong>, over each ground structure, and compares them with the biquaternion case. The algebra and its decomposition are used from <em>Split-Biquaternion Algebra</em> and <em>Split-Biquaternion Ideals and Peirce Decomposition</em>; the split complex unit and the idempotents are those of <em>Split-Complex Algebra</em>.</p>
-<p>We use the conventions of the split biquaternion algebra: the basis $\{e_0,e_1,e_2,e_3\}$ with $e_k^2 = -e_0$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = A + jB$ with $A, B \in \mathbb{H}$.</p>
+<p>We use the conventions of the split biquaternion algebra: the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ with $\vec e_k^2 = -e_t$; the central split complex unit $j$ with $j^2 = +1$; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$; the conjugations ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ (Hermitian) and ${}^{\flat} = -{}^{*}$ (anti-Hermitian); and the four distinguished subspaces $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = \tilde q + j\tilde q'$ with $\tilde q, \tilde q' \in \mathbb{H}$.</p>
 <p>No physics is invoked and no new results are claimed. Everything below is the standard structure theory of a product of two quaternion algebras.</p>
 <h2 id="standing-facts-the-centre-and-the-two-halves">Standing Facts: the Centre and the Two Halves</h2>
 <p>Two structural facts govern the whole article.</p>
-<p><strong>The centre.</strong> The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D} e_0 = \mathrm{span}_{\mathbb{R}}\{e_0, je_0\}$, a real two-dimensional algebra isomorphic to $\mathbb{D}$, with the idempotents $\tilde\Pi_{1,2}$ as its two nontrivial idempotents. Hence $\mathbb{H}_{\mathbb{D}}$ is <strong>not</strong> central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_0$.</p>
+<p><strong>The centre.</strong> The centre of $\mathbb{H}_{\mathbb{D}}$ is $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D} e_t = \mathrm{span}_{\mathbb{R}}\{e_t, je_t\}$, a real two-dimensional algebra isomorphic to $\mathbb{D}$, with the idempotents $\tilde\Pi_{1,2}$ as its two nontrivial idempotents. Hence $\mathbb{H}_{\mathbb{D}}$ is <strong>not</strong> central over $\mathbb{R}$: its centre is strictly larger than $\mathbb{R}e_t$.</p>
 <p><strong>The two halves.</strong> The algebra is a product of two copies of the quaternion division algebra, $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$, the isomorphism sending $\tilde{Q}$ to the pair $(\tilde{Q}_+, \tilde{Q}_-)$ of its idempotent components. It is <strong>semisimple but not simple</strong>: the two factors are its minimal two-sided ideals. Every automorphism and every derivation must respect this splitting, up to the one permutation that interchanges the two factors.</p>
 <h2 id="automorphisms-over-the-split-complex-numbers">Automorphisms over the Split Complex Numbers</h2>
 <p>Throughout this section the ground ring is $\mathbb{D}$, and an automorphism is $\mathbb{D}$-linear.</p>
-<p><strong>Definition.</strong> A <strong>$\mathbb{D}$-algebra automorphism</strong> of $\mathbb{H}_{\mathbb{D}}$ is a bijective $\mathbb{D}$-linear map $\sigma$ with $\sigma(\tilde Q\tilde P) = \sigma(\tilde Q)\sigma(\tilde P)$ and $\sigma(1) = 1$. These maps form a group $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$.</p>
+<p><strong>Definition.</strong> A <strong>$\mathbb{D}$-algebra automorphism</strong> of $\mathbb{H}_{\mathbb{D}}$ is a bijective $\mathbb{D}$-linear map $\sigma$ with $\sigma(\tilde Q_1\tilde Q_2) = \sigma(\tilde Q_1)\sigma(\tilde Q_2)$ and $\sigma(1) = 1$. These maps form a group $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$.</p>
 <p><strong>Theorem.</strong> $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$.</p>
 <p><strong>Proof.</strong> A $\mathbb{D}$-linear automorphism fixes the centre $\mathbb{D}$ pointwise, hence fixes the idempotents $\tilde\Pi_{1,2}$ and preserves each of the two factors $\mathbb{H} \tilde\Pi_1$ and $\mathbb{H} \tilde\Pi_2$. On each factor it is an $\mathbb{R}$-algebra automorphism of $\mathbb{H}$, and every such automorphism is inner, by the Skolem–Noether theorem for the division algebra $\mathbb{H}$: it is $\iota_{u}(\tilde q) = u \tilde q u^{-1}$ for some $u \in \mathbb{H}^\times$, depending only on $u$ modulo the central scalars $\mathbb{R}^\times$. Thus the automorphisms of the first factor form $\mathbb{H}^\times / \mathbb{R}^\times \cong S^3/\{\pm 1\} = SO(3)$, and likewise for the second, giving the product.</p>
 <p><strong>Corollary.</strong> As a Lie group, $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$ has dimension $6$ and is connected and compact.</p>
@@ -77,7 +76,7 @@ $$</p>
 <p>$$
 c(\tilde{Q}) = \bar{\tilde{Q}} , \qquad c(j) = -j ,
 $$</p>
-<p>is an $\mathbb{R}$-algebra automorphism, because $\bar{\cdot}$ is a ring automorphism of the commutative coefficient algebra $\mathbb{D}$ and fixes the quaternion units $e_k$. It induces the nontrivial element of $\mathbb{Z}/2$ on the centre, it is not $\mathbb{D}$-linear since $c(j) = -j \neq j$, and it is not inner because inner automorphisms fix the centre pointwise. So $\rho$ is surjective and the extension is nontrivial. Since $c^{2} = \mathrm{id}$, the sequence splits:</p>
+<p>is an $\mathbb{R}$-algebra automorphism, because $\bar{\cdot}$ is a ring automorphism of the commutative coefficient algebra $\mathbb{D}$ and fixes the quaternion units $\vec e_k$. It induces the nontrivial element of $\mathbb{Z}/2$ on the centre, it is not $\mathbb{D}$-linear since $c(j) = -j \neq j$, and it is not inner because inner automorphisms fix the centre pointwise. So $\rho$ is surjective and the extension is nontrivial. Since $c^{2} = \mathrm{id}$, the sequence splits:</p>
 <p><strong>Theorem.</strong> $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong \left(SO(3) \times SO(3)\right) \rtimes \mathbb{Z}/2$, the generator of $\mathbb{Z}/2$ acting by interchanging the two factors of $SO(3)\times SO(3)$.</p>
 <p><strong>Proof.</strong> There is a short exact sequence $1 \to SO(3)\times SO(3) \to \mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \xrightarrow{\rho} \mathbb{Z}/2 \to 1$, split by $c$ because $c^2 = \mathrm{id}$. The action of $c$ on the kernel conjugates an automorphism of the first factor into one of the second and conversely, that is, swaps the factors.</p>
 <p><strong>Concretely</strong>, every real automorphism of $\mathbb{H}_{\mathbb{D}}$ has exactly one of the two forms</p>
@@ -88,7 +87,7 @@ $$</p>
 <p><strong>Corollary.</strong> $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ has real dimension $6$ and exactly two connected components, each a copy of $SO(3)\times SO(3)$.</p>
 <p><strong>Remark.</strong> Quaternion conjugation ${}^{\natural}$ is an anti-automorphism, not an automorphism, so it is not in either group. The split complex conjugation $\bar{\cdot}$ is an automorphism and appears above. The Hermitian conjugation ${}^{*}$ and the anti-Hermitian conjugation ${}^{\flat}$ are anti-automorphisms and do not appear.</p>
 <h2 id="derivations">Derivations</h2>
-<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-linear derivation</strong> of $\mathbb{H}_{\mathbb{D}}$ is an $\mathbb{R}$-linear map $D$ with $D(\tilde Q\tilde P) = D(\tilde Q)\tilde P + \tilde Q D(\tilde P)$. The set is a real vector space $\mathrm{Der}(\mathbb{H}_{\mathbb{D}})$, a Lie algebra under $[D_1,D_2] = D_1D_2 - D_2D_1$. A <strong>$\mathbb{D}$-linear derivation</strong> is additionally $\mathbb{D}$-linear; the set is $\mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$.</p>
+<p><strong>Definition.</strong> An <strong>$\mathbb{R}$-linear derivation</strong> of $\mathbb{H}_{\mathbb{D}}$ is an $\mathbb{R}$-linear map $D$ with $D(\tilde Q_1\tilde Q_2) = D(\tilde Q_1)\tilde Q_2 + \tilde Q_1 D(\tilde Q_2)$. The set is a real vector space $\mathrm{Der}(\mathbb{H}_{\mathbb{D}})$, a Lie algebra under $[D_1,D_2] = D_1D_2 - D_2D_1$. A <strong>$\mathbb{D}$-linear derivation</strong> is additionally $\mathbb{D}$-linear; the set is $\mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}})$.</p>
 <p><strong>Every real derivation is $\mathbb{D}$-linear.</strong> A derivation maps the centre to the centre, since for central $A$ and every $\tilde Q$, $D(A)\tilde Q = D(A\tilde Q) - A D(\tilde Q) = D(\tilde Q A) - D(\tilde Q)A = \tilde Q D(A)$. A derivation of $\mathbb{D}$ over $\mathbb{R}$ vanishes, because $0 = D(1) = D(j^2) = 2jD(j)$ forces $D(j) = 0$ and $j$ generates $\mathbb{D}$ over $\mathbb{R}$. Hence $D$ vanishes on the centre and, since $j$ is central, $D(j\tilde Q) = jD(\tilde Q)$, so $D$ is $\mathbb{D}$-linear. Therefore</p>
 <p>$$
 \mathrm{Der}(\mathbb{H}_{\mathbb{D}}) = \mathrm{Der}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) .
@@ -105,15 +104,15 @@ $$</p>
 $$</p>
 <p>an isomorphism of Lie algebras because $[\mathrm{ad}_a,\mathrm{ad}_b] = \mathrm{ad}_{[a,b]}$.</p>
 <p><strong>Derivations and automorphisms.</strong> The two structures are linked by the exponential, $\exp(t\,\mathrm{ad}_a)(\tilde Q) = \exp(ta)\tilde Q \exp(-ta)$, the inner automorphism determined by $\exp(ta)$. Hence the Lie algebra of the identity component of $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}})$ is the derivation algebra: $\mathrm{Lie}\left(SO(3)\times SO(3)\right) \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3)$.</p>
-<p><strong>An explicit basis.</strong> The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{je_k}$ act with opposite signs on the two factors. Their combinations</p>
+<p><strong>An explicit basis.</strong> The derivations $A_k = \tfrac{1}{2}\mathrm{ad}_{\vec e_k}$, $k = 1,2,3$, act on the two factors simultaneously, each as $\mathrm{ad}_{\vec e_k}$, and satisfy $[A_1,A_2] = A_3$ together with its cyclic permutations; the companion derivations $\tfrac{1}{2}\mathrm{ad}_{j\vec e_k}$ act with opposite signs on the two factors. Their combinations</p>
 <p>$$
-D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_1}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{je_k}\right) = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_2}
+D_k^{+} = \tfrac{1}{2}\left(A_k + \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_1}, \qquad D_k^{-} = \tfrac{1}{2}\left(A_k - \tfrac{1}{2}\mathrm{ad}_{j\vec e_k}\right) = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_2}
 $$</p>
 <p>act on the first and on the second factor respectively and vanish on the other, and each triple satisfies $[D_1^{\pm},D_2^{\pm}] = D_3^{\pm}$ together with its cyclic permutations. The six elements $D_k^{\pm}$ are linearly independent and form a real basis of the six-dimensional derivation algebra.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>The factor swap.</strong> The map $c(\tilde{Q}) = \tilde{Q}^{*}$ fixes $e_k$ and $je_k$ in the sense $c(e_k) = e_k$, $c(je_k) = -je_k$, and swaps the two halves: $c(\tilde Q_+,\tilde Q_-) = (\tilde Q_-,\tilde Q_+)$ in components. It satisfies $c^2 = \mathrm{id}$, preserves the product because ${}^{*}$ is an automorphism of $\mathbb{D}$, and is not inner, since the inner automorphisms fix the centre pointwise.</p>
-<p><strong>An inner automorphism.</strong> For $u = e_1$ in the first factor, $\sigma(\tilde Q_+,\tilde Q_-) = (e_1 \tilde Q_+ e_1^{-1}, \tilde Q_-)$ has $e_1^{-1} = -e_1$, so it fixes $e_1$ and reverses the signs of $e_2$ and $e_3$ in the first factor while leaving the second untouched: $\sigma(e_2,0) = (-e_2,0)$, $\sigma(e_3,0) = (-e_3,0)$.</p>
-<p><strong>A derivation.</strong> Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{e_3 \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(e_1,0) = (\cos t\,e_1 + \sin t\,e_2, 0)$, matching $A(\exp(te_3/2),0)$; the second factor is fixed, because $\mathrm{ad}_{e_3\tilde\Pi_1}$ acts as zero there.</p>
+<p><strong>The factor swap.</strong> The map $c(\tilde{Q}) = \tilde{Q}^{*}$ fixes $\vec e_k$ and $j\vec e_k$ in the sense $c(\vec e_k) = \vec e_k$, $c(j\vec e_k) = -j\vec e_k$, and swaps the two halves: $c(\tilde Q_+,\tilde Q_-) = (\tilde Q_-,\tilde Q_+)$ in components. It satisfies $c^2 = \mathrm{id}$, preserves the product because ${}^{*}$ is an automorphism of $\mathbb{D}$, and is not inner, since the inner automorphisms fix the centre pointwise.</p>
+<p><strong>An inner automorphism.</strong> For $u = \vec e_x$ in the first factor, $\sigma(\tilde Q_+,\tilde Q_-) = (\vec e_x \tilde Q_+ \vec e_x^{-1}, \tilde Q_-)$ has $\vec e_x^{-1} = -\vec e_x$, so it fixes $\vec e_x$ and reverses the signs of $\vec e_y$ and $\vec e_z$ in the first factor while leaving the second untouched: $\sigma(\vec e_y,0) = (-\vec e_y,0)$, $\sigma(\vec e_z,0) = (-\vec e_z,0)$.</p>
+<p><strong>A derivation.</strong> Take $D = D_3^{+} = \tfrac{1}{2}\mathrm{ad}_{\vec e_z \tilde\Pi_1}$, acting on the first factor alone. Its exponential acts by $\exp(tD)(\vec e_x,0) = (\cos t\,\vec e_x + \sin t\,\vec e_y, 0)$, matching $A(\exp(t\vec e_z/2),0)$; the second factor is fixed, because $\mathrm{ad}_{\vec e_z\tilde\Pi_1}$ acts as zero there.</p>
 <p><strong>A derivation that mixes nothing.</strong> Any $a = a_+ \tilde\Pi_1 + a_- \tilde\Pi_2$ gives the pair $\mathrm{ad}_a = (\mathrm{ad}_{a_+}, \mathrm{ad}_{a_-})$, and $\mathrm{ad}_a$ depends only on $a$ modulo the centre: adding a central element changes neither component.</p>
 <h2 id="summary">Summary</h2>
 <p>The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$ of two quaternion division algebras, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathbb{D}$ and two minimal two-sided ideals. Over the split complex algebra every automorphism is $\mathbb{D}$-linear and consists of an inner automorphism of each factor, so $\mathrm{Aut}_{\mathbb{D}}(\mathbb{H}_{\mathbb{D}}) \cong SO(3) \times SO(3)$, connected, of dimension $6$. Over $\mathbb{R}$ an automorphism may also interchange the two factors, and the split complex conjugation $c(\tilde{Q}) = \bar{\tilde{Q}}$ realises that swap, an outer automorphism; hence $\mathrm{Aut}_{\mathbb{R}}(\mathbb{H}_{\mathbb{D}}) \cong (SO(3)\times SO(3)) \rtimes \mathbb{Z}/2$, of dimension $6$ with two connected components. Every real derivation is automatically $\mathbb{D}$-linear, because the centre $\mathbb{D}$ admits no nonzero derivation; every derivation preserves the splitting and is inner, so $\mathrm{Der}(\mathbb{H}_{\mathbb{D}}) \cong \mathbb{H}_{\mathbb{D}}/\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cong \mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathrm{SO}(4)$, of dimension $6$, the Lie algebra of the identity component of the automorphism group. The contrast with the biquaternion case is exact: there the algebra is simple and central over $\mathbb{C}$, every automorphism is inner, $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C})$ and $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, with derivation algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}} \cong \mathrm{SO}(1,3)$; here the semisimple product structure replaces the simple algebra, the compact group $SO(3)\times SO(3)$ replaces the projective Lorentz group, and the derivation algebra $\mathrm{SO}(4)$ replaces $\mathrm{SO}(1,3)$.</p>
@@ -131,8 +130,8 @@ $$</p>
 <td>Split biquaternion algebra; product of two quaternion algebras</td>
 </tr>
 <tr>
-<td>$e_0,e_1,e_2,e_3$</td>
-<td>Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$</td>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Algebra basis, $e_t = 1$, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$j$</td>
@@ -143,7 +142,7 @@ $$</p>
 <td>Central idempotents, the two factors</td>
 </tr>
 <tr>
-<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathrm{span}_{\mathbb{R}}\{e_0, je_0\}$</td>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \mathrm{span}_{\mathbb{R}}\{e_t, je_t\}$</td>
 <td>Centre of the algebra</td>
 </tr>
 <tr>
@@ -175,7 +174,7 @@ $$</p>
 <td>Inner derivation</td>
 </tr>
 <tr>
-<td>$D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{e_k \tilde\Pi_{1,2}}$</td>
+<td>$D_k^{\pm} = \tfrac{1}{2}\mathrm{ad}_{\vec e_k \tilde\Pi_{1,2}}$</td>
 <td>Derivation basis: $D_k^{+}$ acts on the first factor, $D_k^{-}$ on the second, $[D_1^{\pm},D_2^{\pm}]=D_3^{\pm}$</td>
 </tr>
 </tbody>

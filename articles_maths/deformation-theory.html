@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -73,9 +72,9 @@ $$
 which is the cocycle condition for $HH^2(A,A)$ up to sign, and the associativity of $*$ is exactly this condition.</p>
 <p><strong>Theorem.</strong> The first-order deformations of $A$ up to equivalence are in natural bijection with $HH^2(A,A)$, the equivalence being the difference by a Hochschild coboundary. The trivial deformation $a*b=ab$ corresponds to the class $0$.</p>
 <p><em>Proof.</em> For each $f$, the associativity of $*$ on $A\otimes\mathbb{D}'$ is equivalent to the cocycle condition on $f$ once the products of the three elements are expanded and the $\varepsilon$-linear terms collected. An equivalence between the deformation given by $f$ and the deformation given by $f'$ is an isomorphism of $\mathbb{D}'$-algebras that is the identity modulo $\varepsilon$, hence of the form $a+\varepsilon g(a)$ for a $k$-linear $g:A\to A$; conjugating the product by it changes $f$ to $f+\partial g$, where $\partial g(a,b)=ag(b)-g(ab)+g(a)b$ is the Hochschild coboundary. Hence the deformations modulo equivalence are the classes in $HH^2(A,A)$.</p>
-<p><strong>Example.</strong> For the polynomial algebra $A=k[x_1,\dots,x_m]$ the second Hochschild cohomology is, by the Hochschild–Kostant–Rosenberg theorem, the direct sum $HH^2(A,A)\cong\bigoplus_{p+q=2}\Lambda^p\operatorname{Der}_k(A)\otimes_A\Omega^q_{A/k}=\Lambda^2\operatorname{Der}\oplus(\operatorname{Der}\otimes_A\Omega^1)\oplus\Omega^2$ of the bivectors, the derivations twisted by the one-forms, and the two-forms; every bivector $\sum_{i<j}c_{ij}\partial_i\wedge\partial_j$ with $c_{ij}\in A$ gives a first-order deformation by the product
+<p><strong>Example.</strong> For the polynomial algebra $A=k[x_1,\dots,x_m]$ the second Hochschild cohomology is, by the Hochschild–Kostant–Rosenberg theorem, the direct sum $HH^2(A,A)\cong\bigoplus_{p+q=2}\Lambda^p\operatorname{Der}_k(A)\otimes_A\Omega^q_{A/k}=\Lambda^2\operatorname{Der}\oplus(\operatorname{Der}\otimes_A\Omega^1)\oplus\Omega^2$ of the bivectors, the derivations twisted by the one-forms, and the two-forms; every bivector $\sum_{i<j}c_{ij}\partial/\partial x_i\wedge\partial/\partial x_j$ with $c_{ij}\in A$ gives a first-order deformation by the product
 $$
-a*b=ab+\varepsilon\sum_{i<j}c_{ij}(\partial_ia\,\partial_jb-\partial_ja\,\partial_ib),
+a*b=ab+\varepsilon\sum_{i<j}c_{ij}(\partial/\partial x_i\,a\,\partial/\partial x_j\,b-\partial/\partial x_j\,a\,\partial/\partial x_i\,b),
 $$
 which is the deformation of the polynomial algebra by a Poisson bracket; this is the algebraic form of the deformation quantisation of a Poisson structure, and the associativity of $*$ is the Jacobi identity for the bracket. The summand $\operatorname{Der}\otimes_A\Omega^1$ carries the deformations that change the differential calculus rather than the Poisson structure, and $\Omega^2$ the deformations of the two-forms; only the summand of bivectors gives the Poisson family displayed.</p>
 <p><strong>Example.</strong> For the matrix algebra $A=M_n(k)$ the deformations of $A$ are all trivial: $HH^2(M_n(k),M_n(k))=0$ because Hochschild cohomology is Morita invariant and $M_n(k)$ is Morita equivalent to $k$, whose Hochschild cohomology is $k$ in degree zero. So the matrix algebra is rigid.</p>

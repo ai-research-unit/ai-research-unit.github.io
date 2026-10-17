@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,9 +52,9 @@
         <h1 id="harmonic-analysis-over-hypercomplex-systems"><strong>Harmonic Analysis over Hypercomplex Systems</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Harmonic analysis over a hypercomplex system means the analysis of functions on the finite-dimensional algebra $A$ that exploits two structures simultaneously: the abelian group structure underlying the addition of $A \cong \mathbb{R}^m$, which carries the Euclidean Fourier transform, and the subspace of regular functions defined by the Cauchy–Riemann operator $D$, which carries the Cauchy kernel and the Cauchy transform. The two are tied together by the symbol of $D$: on the Fourier side, differentiation becomes multiplication by the symbol, so the regularity condition becomes an algebraic condition on the Fourier transform, and the class of regular functions is described by the characteristic variety of the operator.</p>
-<p>This is the general method. The explicit transforms, reproducing kernels, bases of spherical monogenics and $L^2$ decompositions of the particular systems — the complex numbers, the quaternions, the split and dual and biquaternion systems — are worked out in categories 26 to 29, and they are not repeated here. What is common to them is the shape of the analysis, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of <em>Hypercomplex Analysis</em>: $A$ is finite-dimensional of dimension $m$ over $\mathbb{R}$, with basis $e_0 = 1, \dots, e_{m-1}$, and</p>
+<p>This is the general method. The explicit transforms, reproducing kernels, bases of spherical monogenics and $L^2$ decompositions of the particular systems — the complex numbers, the quaternions, the split and dual and biquaternion systems — are worked out in categories 26 to 29, and they are not repeated here. What is common to them is the shape of the analysis, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of <em>Hypercomplex Analysis</em>: $A$ is finite-dimensional of dimension $m$ over $\mathbb{R}$, with basis $e_t = 1, \dots, e_{m-1}$, and</p>
 <p>$$
-D = \partial_0 + \sum_{k\geq1} B_k\partial_k, \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1} B_k\xi_k, \qquad D\bar D = \bar D D = \Delta,
+D = \partial/\partial x_0 + \sum_{k\geq1} B_k\partial/\partial x_k, \qquad \sigma(\xi) = \xi_0 + \sum_{k\geq1} B_k\xi_k, \qquad D\bar D = \bar D D = \Delta,
 $$</p>
 <p>with $B_jB_k + B_kB_j = -2\delta_{jk}$, $B_k^2 = -1$. The symbol $\sigma(\xi)$ and its reflected companion $\sigma^{\mathrm{refl}}(\xi)$ are those of <em>Regularity and the Cauchy–Riemann Operator</em>, and $E$ is a fundamental solution of $D$.</p>
 <h2 id="the-additive-fourier-transform">The Additive Fourier Transform</h2>
@@ -71,7 +70,7 @@ $$</p>
 <p>For $A$-valued $f$ the transform is $A$-valued, the exponentials being scalar-valued.</p>
 <p><strong>Theorem (basic properties).</strong> The Fourier transform extends to a unitary equivalence of $L^2(A)$ with itself up to the factor $(2\pi)^{-m/2}$ (Plancherel); it interchanges differentiation and multiplication by the coordinate,</p>
 <p>$$
-\widehat{\partial_\alpha f}(\xi) = i\,\xi_\alpha \,(\mathcal F f)(\xi);
+\widehat{\partial/\partial x_\alpha f}(\xi) = i\,\xi_\alpha \,(\mathcal F f)(\xi);
 $$</p>
 <p>and it turns the convolution</p>
 <p>$$
@@ -122,27 +121,27 @@ $$</p>
 <tr>
 <td>$\mathbb{H}$</td>
 <td>4</td>
-<td>$\xi_0 + e_1\xi_1 + e_2\xi_2 + e_3\xi_3$</td>
+<td>$\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$</td>
 <td>$\xi \neq 0$</td>
 <td>$\{0\}$, elliptic</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{D}}$</td>
 <td>8</td>
-<td>$\xi_0 + e_1\xi_1 + e_2\xi_2 + e_3\xi_3$</td>
+<td>$\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$</td>
 <td>$\xi \neq 0$</td>
 <td>$\{0\}$, elliptic</td>
 </tr>
 <tr>
 <td>$\mathbb{B}$</td>
 <td>8</td>
-<td>$\xi_0 + e_1\xi_1 + e_2\xi_2 + e_3\xi_3$</td>
+<td>$\xi_0 + \vec e_x\xi_1 + \vec e_y\xi_2 + \vec e_z\xi_3$</td>
 <td>$\xi \neq 0$</td>
 <td>$\{0\}$, elliptic</td>
 </tr>
 </tbody>
 </table></div>
-<p>In the last two rows the algebra is eight-dimensional while the operator is built on the four-term quaternion frame $1, e_1, e_2, e_3$; the remaining four real coordinates of the algebra enter the transform as parameters rather than as derivatives, and the ellipticity statement is about the four differentiated directions.</p>
+<p>In the last two rows the algebra is eight-dimensional while the operator is built on the four-term quaternion frame $1, \vec e_x, \vec e_y, \vec e_z$; the remaining four real coordinates of the algebra enter the transform as parameters rather than as derivatives, and the ellipticity statement is about the four differentiated directions.</p>
 <p>In the four elliptic rows the symbol is invertible off the origin, so a left regular tempered distribution has Fourier transform supported at $\xi = 0$ and is therefore a polynomial, and a compactly supported left regular distribution vanishes — the vanishing theorem of the next section. On the elliptic systems the transform is thus a sharp but restricted tool, and the analysis of regular functions on unbounded domains is carried by the Cauchy representation below instead. In the two degenerate rows the symbol is not invertible on a real set of positive dimension, and the regularity condition becomes a support condition rather than a vanishing one: for $\mathbb{D}$ a left regular function has transform supported on the two lines $\xi_0 = \pm\xi_1$, the value on the line $\xi_0 = \xi_1$ lying in the null line $\mathbb{R}(1-j)$ and the value on the line $\xi_0 = -\xi_1$ in the null line $\mathbb{R}(1+j)$, which is the Fourier-side form of the fact that a regular function depends on one characteristic coordinate; for $\mathbb{D}'$ the transform is supported on the hyperplane $\xi_0 = 0$: writing $\mathcal F f = \mathcal F f_0 + \varepsilon\mathcal F f_1$, the two equations $\xi_0\mathcal F f_0 = 0$ and $\xi_0\mathcal F f_1 + \xi_1\mathcal F f_0 = 0$ force the support into that hyperplane, and there they impose no restriction on the data. Indeed</p>
 <p>$$
 \mathcal F f_0 = \mathcal F u(\xi_1)\,\delta(\xi_0), \qquad \mathcal F f_1 = -i\,\mathcal F u'(\xi_1)\,\delta'(\xi_0) + \mathcal F w(\xi_1)\,\delta(\xi_0)
@@ -160,7 +159,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> By linearity and the differentiation rule of the previous theorem,</p>
 <p>$$
-\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial_\alpha f} = i\sum_\alpha B_\alpha\xi_\alpha \mathcal F f = i\,\sigma(\xi)\mathcal F f.
+\widehat{Df} = \sum_\alpha B_\alpha\,\widehat{\partial/\partial x_\alpha f} = i\sum_\alpha B_\alpha\xi_\alpha \mathcal F f = i\,\sigma(\xi)\mathcal F f.
 $$</p>
 <p><strong>Definition.</strong> The <strong>characteristic variety</strong> of $D$ is</p>
 <p>$$
@@ -199,7 +198,7 @@ $$</p>
 E(x) = \frac{x^{\natural}}{\omega_{m-1}\,|x|^m}, \qquad x \neq 0,
 $$</p>
 <p>is a fundamental solution of $D$.</p>
-<p><em>Proof.</em> Let $\Phi$ be the fundamental solution of the Laplacian, $\Phi(x) = \frac{1}{(2-m)\omega_{m-1}}|x|^{2-m}$ for $m \geq 3$ and $\Phi(x) = \frac{1}{\omega_1}\log|x|$ for $m = 2$. In both cases $\Delta \Phi = \delta_0$. By the theorem of <em>Regularity and the Cauchy–Riemann Operator</em>, $E = \bar D \Phi$ is a fundamental solution of $D$. Now $\partial_\alpha|x|^{2-m} = (2-m)x_\alpha|x|^{-m}$ for $m\neq 2$ and $\partial_\alpha\log|x| = x_\alpha|x|^{-2}$ for $m = 2$; in both cases</p>
+<p><em>Proof.</em> Let $\Phi$ be the fundamental solution of the Laplacian, $\Phi(x) = \frac{1}{(2-m)\omega_{m-1}}|x|^{2-m}$ for $m \geq 3$ and $\Phi(x) = \frac{1}{\omega_1}\log|x|$ for $m = 2$. In both cases $\Delta \Phi = \delta_0$. By the theorem of <em>Regularity and the Cauchy–Riemann Operator</em>, $E = \bar D \Phi$ is a fundamental solution of $D$. Now $\partial/\partial x_\alpha|x|^{2-m} = (2-m)x_\alpha|x|^{-m}$ for $m\neq 2$ and $\partial/\partial x_\alpha\,\log|x| = x_\alpha|x|^{-2}$ for $m = 2$; in both cases</p>
 <p>$$
 \bar D \Phi = \frac{1}{\omega_{m-1}}\sum_{\alpha}B_\alpha^{\natural}\, x_\alpha\,|x|^{-m} = \frac{x^{\natural}}{\omega_{m-1}|x|^m},
 $$</p>
@@ -270,7 +269,7 @@ $$</p>
 <p>$$
 (\mathcal{M}f)(s) = \int_0^\infty f(r)\,r^{s-1}\,dr,
 $$</p>
-<p>the Fourier transform of the multiplicative group $\mathbb{R}_+$, and it is the transform adapted to the radial variable of $A$. Its infinitesimal generator is the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial_\alpha$, which the Mellin transform converts into the multiplier $s$: a function homogeneous of degree $\lambda$ in the radius is a single Mellin mode, with exponent $\lambda$. This is why the Mellin transform is the natural bookkeeping device for the radial exponents of the theory: the solid spherical monogenics $\mathcal{M}_\nu$ are homogeneous of degree $\nu$, the Fischer decomposition is the statement that the exponents $\nu, \nu-2, \dots$ occur with multiplicity $\dim\mathcal{H}_{\nu-2j}$, and the Cauchy kernel is homogeneous of degree $-(m-1)$ in the Clifford sense, so its radial content is a single exponent. The Mellin transform also mediates between the Laplace and the Fourier transforms along each ray, and it is the transform in which the dilation-invariant operators of the theory (the Euler operator and the Laplacian composed with $|x|^2$) are diagonal.</p>
+<p>the Fourier transform of the multiplicative group $\mathbb{R}_+$, and it is the transform adapted to the radial variable of $A$. Its infinitesimal generator is the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial/\partial x_\alpha$, which the Mellin transform converts into the multiplier $s$: a function homogeneous of degree $\lambda$ in the radius is a single Mellin mode, with exponent $\lambda$. This is why the Mellin transform is the natural bookkeeping device for the radial exponents of the theory: the solid spherical monogenics $\mathcal{M}_\nu$ are homogeneous of degree $\nu$, the Fischer decomposition is the statement that the exponents $\nu, \nu-2, \dots$ occur with multiplicity $\dim\mathcal{H}_{\nu-2j}$, and the Cauchy kernel is homogeneous of degree $-(m-1)$ in the Clifford sense, so its radial content is a single exponent. The Mellin transform also mediates between the Laplace and the Fourier transforms along each ray, and it is the transform in which the dilation-invariant operators of the theory (the Euler operator and the Laplacian composed with $|x|^2$) are diagonal.</p>
 <p><strong>The Radon transform.</strong> For $\omega \in \partial B(0,1)$ and $t \in \mathbb{R}$ let $H(\omega,t) = \{x \in A : \langle x,\omega\rangle = t\}$ be the hyperplane. The <strong>Radon transform</strong> of a suitable $f$ is</p>
 <p>$$
 (Rf)(\omega,t) = \int_{H(\omega,t)}f(x)\,dS(x).
@@ -281,9 +280,9 @@ $$</p>
 $$</p>
 <p>so for a left regular $f$ the left-hand side vanishes unless $\tau\omega \in \operatorname{Char}(D)$, the Fourier transform being supported where the symbol is not invertible. The operator itself transforms by the symbol,</p>
 <p>$$
-R(Df)(\omega,t) = \sigma(\omega)\,\partial_t(Rf)(\omega,t),
+R(Df)(\omega,t) = \sigma(\omega)\,\partial/\partial t(Rf)(\omega,t),
 $$</p>
-<p>so $D$ becomes the first-order operator $\sigma(\omega)\partial_t$ along the normal; a hyperplane restriction of a regular function is therefore not regular but satisfies a one-dimensional equation. The Radon transform exhibits the regular functions as superpositions of plane waves whose frequencies lie on the characteristic variety, which is the geometric form of the Ehrenpreis–Palamodov representation recorded above. Inversion of the Radon transform is the standard inversion $f = c_m\,\Delta^{(m-1)/2}\int_{\partial B}Rf(\omega,\langle x,\omega\rangle)\,d\omega$ with the appropriate power of the Laplacian for the parity of $m$, and it is a theorem of the Euclidean theory, independent of the algebra.</p>
+<p>so $D$ becomes the first-order operator $\sigma(\omega)\partial/\partial t$ along the normal; a hyperplane restriction of a regular function is therefore not regular but satisfies a one-dimensional equation. The Radon transform exhibits the regular functions as superpositions of plane waves whose frequencies lie on the characteristic variety, which is the geometric form of the Ehrenpreis–Palamodov representation recorded above. Inversion of the Radon transform is the standard inversion $f = c_m\,\Delta^{(m-1)/2}\int_{\partial B}Rf(\omega,\langle x,\omega\rangle)\,d\omega$ with the appropriate power of the Laplacian for the parity of $m$, and it is a theorem of the Euclidean theory, independent of the algebra.</p>
 <p><strong>The Calderón–Zygmund theory.</strong> The boundary operator $S$ above is not a convolution on a group, and the general theorem that makes it tractable is the theory of singular integrals. A <strong>Calderón–Zygmund kernel</strong> on $\mathbb{R}^d$ is a distribution $K$ away from the origin that is homogeneous of degree $-d$, smooth on the sphere, and has mean zero there, $\int_{\partial B}K\,dS = 0$; the associated operator $Tf(x) = \mathrm{p.v.}\int K(x-y)f(y)\,dy$ is bounded on $L^{n}$ for $1 < p < \infty$ and of weak type $(1,1)$. The boundary kernel of a hypercomplex system meets the hypothesis after the singular part is subtracted: the Cauchy kernel is homogeneous of degree $-(m-1)$, the boundary $\partial\Omega$ has dimension $m-1$, and the difference $\mathcal{C}^+ - \mathcal{C}^-$ is the identity, so the principal-value operator $S$ is a Calderón–Zygmund operator on $\partial\Omega$, bounded on $L^{n}(\partial\Omega)$ for $1 < p < \infty$ by the general theorem. This is the general reason the Cauchy transform of an $L^2$ boundary datum may be formed and why the jump formula holds pointwise almost everywhere, and it is the reason the one-dimensional theory of the Hilbert transform and the multi-dimensional theory of the boundary Cauchy transform are instances of one theorem. For a non-commutative $A$ the kernel takes values in $A$, and the theory is applied with operator-valued kernels: since $A$ is finite-dimensional and left multiplication by an element of $A$ is a bounded operator, the boundedness statements are unchanged, the relevant vector-valued theory being that of Cotlar–Stein.</p>
 <h2 id="the-discrete-case-and-the-reduction-to-the-factor-algebra">The Discrete Case and the Reduction to the Factor Algebra</h2>
 <p><strong>Lattices and Fourier series.</strong> Let $\Gamma \subseteq A$ be a lattice, that is, a discrete cocompact subgroup of the additive group, with dual lattice $\Gamma^* = \{\gamma^* : \langle \gamma^*,\gamma\rangle \in 2\pi\mathbb{Z} \text{ for all } \gamma \in \Gamma\}$. A function on the torus $A/\Gamma$ has a Fourier series</p>
@@ -310,12 +309,12 @@ $$</p>
 $$</p>
 <p>where $d_\rho = \dim V_\rho$ and the sum runs over the irreducible unitary representations. These are standard facts of the representation theory of finite groups. The finite quaternion group</p>
 <p>$$
-Q_8 = \{\pm 1, \pm e_1, \pm e_2, \pm e_3\}
+Q_8 = \{\pm 1, \pm \vec e_x, \pm \vec e_y, \pm \vec e_z\}
 $$</p>
 <p>has $Q_8/\{\pm1\} \cong \mathbb{Z}/2 \times \mathbb{Z}/2$, so it has four one-dimensional representations, and $\sum_\rho d_\rho^2 = |Q_8| = 8$ then forces exactly one two-dimensional irreducible representation, namely the defining one. The transform of $k[Q_8]$ is therefore the discrete Fourier transform of the four characters together with one $2\times2$ matrix-valued component; the first part is the transform of the abelian quotient and the second is the genuinely non-commutative addition. For a compact group the same statement holds with the sum over representations replaced by a direct integral over the unitary dual: for the group $S^3$ of unit quaternions, isomorphic to $\mathrm{Sp}(1)$ and to $SU(2)$, the irreducible representations are indexed by $\ell = 0, \tfrac12, 1, \tfrac32, \dots$ with $d_\ell = 2\ell + 1$, and the <strong>Peter–Weyl theorem</strong> decomposes $L^2(S^3)$ as the $\ell^2$-sum of the matrix-coefficient spaces $V_\ell^* \otimes V_\ell$, again matrix-valued.</p>
 <p>The contrast with the additive theory is exact. The additive group $\mathbb{R}^m$ is abelian, its dual is a group, and its transform is a function theory on that dual; the multiplicative quaternion groups are non-abelian, their dual is not a group, and the transform is matrix-valued and is a sum or integral over representations. This is the reason the analysis of a non-abelian group algebra is not a Gelfand theory of a commutative algebra, and it is the same non-commutativity that is met in operator algebras: the group von Neumann algebra $L(G)$ and the reduced group $\mathrm{C}^*$-algebra $\mathrm{C}^*_r(G)$ of <em>Operator Algebras</em> are the completions of $\mathbb{C}[G]$ with respect to which the matrix-valued transform becomes a functional calculus, and they are the objects that replace the algebra of continuous functions on a dual group.</p>
 <p><strong>Obstruction and reduction to the factor algebra.</strong> The convolution algebra $(L^1(A),*)$ contains $A$ as the subalgebra of measures supported at the origin, $a \mapsto a\delta_0$, so every zero divisor of $A$ is a zero divisor of the convolution algebra; and the algebra is commutative exactly when $A$ is, in which case a Gelfand transform exists and the convolution algebra is a function algebra on the dual group. For a non-commutative $A$ there is no Gelfand transform, and the Fourier transform is an isomorphism of $(L^1(A),*)$ onto the algebra of bounded continuous $A$-valued functions with the pointwise product: the translation-invariant algebra is non-commutative and its representation theory is that of $A$ itself, which belongs to category 08.</p>
-<p>When $A$ decomposes, so does the analysis. If $e_1, \dots, e_r$ is a complete set of orthogonal central idempotents, then $A = \bigoplus_i A_i$ with $A_i = e_iA = Ae_i$, every $A$-valued function is the sum of its components $f_i = e_ife_i$, the Fourier transform acts componentwise,</p>
+<p>When $A$ decomposes, so does the analysis. If $\vec e_x, \dots, e_r$ is a complete set of orthogonal central idempotents, then $A = \bigoplus_i A_i$ with $A_i = e_iA = Ae_i$, every $A$-valued function is the sum of its components $f_i = e_ife_i$, the Fourier transform acts componentwise,</p>
 <p>$$
 \mathcal F f = \sum_i \mathcal F f_i, \qquad \mathcal F f_i(\xi) \in A_i,
 $$</p>
@@ -330,13 +329,13 @@ $$</p>
 k=\tfrac12(1+\sigma),\qquad j=\tfrac12(i_0-i_1),
 \qquad k^2=k,\quad j^2=-k,\quad kj=jk=j ,
 $$</p>
-<p>for which $J=\operatorname{span}\{k,j\}$ is an ideal with $J\cap\bar J=\{0\}$, so the elements of $J$ and of the complementary ideal annihilate one another, $k(1-k)=0$: the abstract conditions are realised by the same idempotent that carries out the Fourier reduction. Two consequences of the realisation are recorded here because they are what the criterion costs in the physical reading: the exponential degenerates, $k\exp(jt)=k\exp(it)$, so the two sectors are not independent of one another; and the double conjugate $q^\dagger q$ of a sector-valued wave function is the non-real multiple $k$ of the constant $1$ rather than a positive real density, so the Born rule has no direct analogue and the authors leave physical interpretation open. On the sector the momentum operator is ambiguous in eigenvalue: $\varphi_J=k \exp(j(px-Et))$ is an eigenfunction of $-i\partial_x$ whose eigenvalue can be read either as $p$ or as the non-real $kp$ it equals, and only the $k$-fold operator applied to the complex sector produces an unambiguously non-real eigenvalue.</p>
+<p>for which $J=\operatorname{span}\{k,j\}$ is an ideal with $J\cap\bar J=\{0\}$, so the elements of $J$ and of the complementary ideal annihilate one another, $k(1-k)=0$: the abstract conditions are realised by the same idempotent that carries out the Fourier reduction. Two consequences of the realisation are recorded here because they are what the criterion costs in the physical reading: the exponential degenerates, $k\exp(jt)=k\exp(it)$, so the two sectors are not independent of one another; and the double conjugate $q^\dagger q$ of a sector-valued wave function is the non-real multiple $k$ of the constant $1$ rather than a positive real density, so the Born rule has no direct analogue and the authors leave physical interpretation open. On the sector the momentum operator is ambiguous in eigenvalue: $\varphi_J=k \exp(j(px-Et))$ is an eigenfunction of $-i\partial/\partial x$ whose eigenvalue can be read either as $p$ or as the non-real $kp$ it equals, and only the $k$-fold operator applied to the complex sector produces an unambiguously non-real eigenvalue.</p>
 <p>The paper is a survey-level treatment and is used here for the criterion alone; its quantum-theoretic conclusions are its own and are not taken up. The criterion is also the sharp form of the constraint recorded elsewhere in the corpus: a purely non-real sector suited to this analysis must be an ideal of the ambient algebra whose identity is a zero divisor, which is why the four-dimensional commutative algebra and not a quaternion algebra supplies it. One notational caution for a reader who consults the source: its oblique-basis table is consistent only with its generator taken as $i = -i_1$, not as $i_1$. The criterion is checkable in the source's own basis and was checked there, the multiplication table, the ideal conditions and the two exponentials reproducing exactly.</p>
 <h2 id="summary">Summary</h2>
 <p>The additive group of $A$ is $\mathbb{R}^m$, and the Euclidean <strong>Fourier transform</strong> $(\mathcal F f)(\xi) = \int_A f(x)\exp(-i\langle\xi,x\rangle)dx$ intertwines differentiation with multiplication, turns <strong>convolution</strong> into the algebra product, and satisfies <strong>Plancherel</strong>. On the Fourier side the Cauchy–Riemann operator acts as multiplication by its symbol, $\widehat{Df}(\xi) = i\sigma(\xi)(\mathcal F f)(\xi)$, so a function is <strong>left regular</strong> exactly when $\sigma(\xi)(\mathcal F f)(\xi) = 0$ for all $\xi$. The <strong>characteristic variety</strong> $\operatorname{Char}(D) = \{\zeta \in \mathbb{C}^m : \sum_\alpha\zeta_\alpha^2 = 0\}$ is the complex isotropic cone, independent of the finer structure of a Clifford-type system, and it is the support locus of the Fourier transforms of regular functions; by the <strong>Ehrenpreis–Palamodov theorem</strong>, solutions on a convex domain are limits of exponential-polynomial solutions with frequencies in $\operatorname{Char}(D)$. A compactly supported left regular function on all of $A$ is zero, by Paley–Wiener and analytic continuation.</p>
 <p>The Fourier transform of the Cauchy kernel is the inverse of the multiplier, $\mathcal F E(\xi) = \sigma^{\mathrm{refl}}(\xi)/(i\sum_\alpha\xi_\alpha^2)$ away from $\operatorname{Char}(D)$, and inverting it gives the explicit kernel $E(x) = x^{\natural}/(\omega_{m-1}|x|^m)$ with $x^{\natural} = x_0 - \sum_kB_kx_k$ and $\omega_{m-1}$ the surface area of the unit sphere; for $m=2$ this is $1/(2\pi z)$, the classical Cauchy kernel.</p>
 <p>The Euclidean structure gives the <strong>Fischer decomposition</strong> $\mathcal{P}_\nu = \bigoplus_j |x|^{2j}\mathcal{H}_{\nu-2j}$ of homogeneous polynomials into harmonic pieces, of dimensions $\binom{\nu+m-1}{m-1} - \binom{\nu+m-3}{m-1}$; the <strong>solid spherical monogenics</strong> $\mathcal{M}_\nu = \mathcal{P}_\nu \cap \ker D$ refine it, they lie in $\mathcal{H}_\nu$, and $\dim\mathcal{M}_1 = m^2 - m$. A regular function on a ball has a convergent <strong>Taylor expansion</strong> in solid spherical monogenics, and for a Clifford-type system the traces on the sphere of different degrees are mutually orthogonal, which is the hypercomplex <strong>Fourier series</strong>. The <strong>Cauchy transform</strong> reproduces regular functions and is the projection of boundary data onto them, the harmonic-analytic counterpart of the Szegő projection.</p>
-<p>The Fourier transform is one of a family determined by the group on which it is taken. The <strong>Laplace transform</strong> $\mathcal{L}f(s) = \int_Af(x)\exp(-\langle s,x\rangle)dx$ is holomorphic in a tube and agrees with the Fourier transform on the imaginary axis, but $\mathcal{L}f = 0$ for every compactly supported left regular distribution, so the Laplace theory of regular functions is a theory on cones; the <strong>Hilbert transform</strong> is the principal value operator $S$ with the conormal Cauchy kernel, the boundary operator of the jump formula, and on the line it has multiplier $-i\,\mathrm{sgn}(\xi)$; the <strong>Mellin transform</strong> is the Fourier transform of the multiplicative group, it diagonalises the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial_\alpha$, and it records the radial exponents $\nu, \nu-2, \dots$ of the Fischer decomposition and the single homogeneity degree $-(m-1)$ of the Cauchy kernel; the <strong>Radon transform</strong> satisfies the central-slice theorem and the intertwining $R(Df) = \sigma(\omega)\partial_t(Rf)$, so the regular functions are superpositions of plane waves with frequencies on $\operatorname{Char}(D)$. The <strong>Calderón–Zygmund theory</strong> of singular integrals applies to $S$, whose kernel is homogeneous of degree $-(m-1)$ on the $(m-1)$-dimensional boundary with the singular part subtracted, and it gives the boundedness of the Cauchy transform on $L^{n}(\partial\Omega)$ with operator-valued kernels in the non-commutative case.</p>
+<p>The Fourier transform is one of a family determined by the group on which it is taken. The <strong>Laplace transform</strong> $\mathcal{L}f(s) = \int_Af(x)\exp(-\langle s,x\rangle)dx$ is holomorphic in a tube and agrees with the Fourier transform on the imaginary axis, but $\mathcal{L}f = 0$ for every compactly supported left regular distribution, so the Laplace theory of regular functions is a theory on cones; the <strong>Hilbert transform</strong> is the principal value operator $S$ with the conormal Cauchy kernel, the boundary operator of the jump formula, and on the line it has multiplier $-i\,\mathrm{sgn}(\xi)$; the <strong>Mellin transform</strong> is the Fourier transform of the multiplicative group, it diagonalises the Euler operator $\vartheta = \sum_\alpha x_\alpha\partial/\partial x_\alpha$, and it records the radial exponents $\nu, \nu-2, \dots$ of the Fischer decomposition and the single homogeneity degree $-(m-1)$ of the Cauchy kernel; the <strong>Radon transform</strong> satisfies the central-slice theorem and the intertwining $R(Df) = \sigma(\omega)\partial/\partial t(Rf)$, so the regular functions are superpositions of plane waves with frequencies on $\operatorname{Char}(D)$. The <strong>Calderón–Zygmund theory</strong> of singular integrals applies to $S$, whose kernel is homogeneous of degree $-(m-1)$ on the $(m-1)$-dimensional boundary with the singular part subtracted, and it gives the boundedness of the Cauchy transform on $L^{n}(\partial\Omega)$ with operator-valued kernels in the non-commutative case.</p>
 <p>In the <strong>discrete case</strong> the Fourier coefficients of a left regular function on a torus $A/\Gamma$ are supported on $\Gamma^* \cap \operatorname{Char}(D)$, so a lattice whose dual meets the isotropic cone only at the origin supports only constant regular functions; for a finite abelian group the transform is the discrete Fourier transform making $k[G] \cong \prod_\chi k$. Since the additive group of every $A$ is the same $\mathbb{R}^m$, the Euclidean transform of the systems differs only through the symbol: it is elliptic for $\mathbb{C}$, $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$, where a left regular tempered distribution has transform supported at the origin, and it is a support condition on the two lines $\xi_0 = \pm\xi_1$ for $\mathbb{D}$ and on the hyperplane $\xi_0 = 0$ for $\mathbb{D}'$. The <strong>quaternion groups</strong> show the non-commutative case: for a finite group the transform is matrix-valued, $(\mathcal F f)(\rho) = \sum_gf(g)\rho(g)$ with inversion and Plancherel summing over the irreducible representations weighted by $d_\rho = \dim V_\rho$, and for the finite quaternion group $Q_8$ it consists of the four characters of $Q_8/\{\pm1\}$ together with one two-dimensional component, while for the compact group $S^3$ of unit quaternions the <strong>Peter–Weyl theorem</strong> replaces the sum by the direct integral over representations of dimension $2\ell+1$. The convolution algebra $(L^1(A),*)$ contains $A$ as the measures at the origin, so its zero divisors are those of $A$, and it is commutative exactly when $A$ is. When $A$ has a complete set of orthogonal central idempotents the Fourier transform acts componentwise and the analysis splits as the product of the analyses of the subalgebras $A_i = e_iA = Ae_i$; a simple matrix algebra such as $\mathbb{B} \cong M_2(\mathbb{C})$ is instead handled entrywise, and the two reductions together reduce the harmonic analysis of any finite-dimensional semisimple $A$ to that of a division algebra, repeated over the matrix blocks. The same idempotents decide a second question of the same kind: a purely non-real subspace closed under multiplication and carrying its own exponentials, Schrödinger-type equation and two-way Fourier transform must be a subalgebra isomorphic to $\mathbb{C}$ whose identity is an idempotent different from $1$, hence an ideal with a zero divisor as identity — a condition satisfied by the four-dimensional commutative algebra and by no division algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -352,7 +351,7 @@ $$</p>
 <td>Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$</td>
 </tr>
 <tr>
-<td>$D = \partial_0 + \sum_kB_k\partial_k$</td>
+<td>$D = \partial/\partial x_0 + \sum_kB_k\partial/\partial x_k$</td>
 <td>Cauchy–Riemann operator</td>
 </tr>
 <tr>
@@ -436,7 +435,7 @@ $$</p>
 <td>Mellin transform, $(\mathcal{M}f)(s) = \int_0^\infty f(r)r^{s-1}dr$</td>
 </tr>
 <tr>
-<td>$\vartheta = \sum_\alpha x_\alpha\partial_\alpha$</td>
+<td>$\vartheta = \sum_\alpha x_\alpha\partial/\partial x_\alpha$</td>
 <td>Euler (dilation) operator, distinct from the kernel $E$</td>
 </tr>
 <tr>
@@ -453,7 +452,7 @@ $$</p>
 </tr>
 <tr>
 <td>$Q_8$</td>
-<td>Finite quaternion group $\{\pm1,\pm e_1,\pm e_2,\pm e_3\}$</td>
+<td>Finite quaternion group $\{\pm1,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z\}$</td>
 </tr>
 <tr>
 <td>$S^3 \cong \mathrm{Sp}(1) \cong SU(2)$</td>

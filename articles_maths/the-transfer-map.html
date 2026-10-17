@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -78,9 +77,9 @@ $$</p>
 <p>and $\tau_n : C_n(B;R) \to C_n(E;R)$ is its $R$-linear extension.</p>
 <p>A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely, simply connected: path lifting along $\sigma$ from a chosen lift of $\sigma(v_0)$ produces $\sigma^{\mathrm{lift}}$ and, by the homotopy lifting property of <em>The Fundamental Group and Covering Spaces</em>, the lift is unique. The image of $\tau_n$ is a sum over the whole fibre orbit, which is the surgical point of the definition.</p>
 <p><strong>Lemma.</strong> $\tau_n$ is well defined: it does not depend on the choice of the lift $\sigma^{\mathrm{lift}}$.</p>
-<p><em>Proof.</em> Let $\sigma^{\mathrm{lift}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with $\sigma^{\mathrm{lift}}' = h \circ \sigma^{\mathrm{lift}}$. Then</p>
+<p><em>Proof.</em> Let ${\sigma^{\mathrm{lift}}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with ${\sigma^{\mathrm{lift}}}' = h \circ \sigma^{\mathrm{lift}}$. Then</p>
 <p>$$
-\sum_{g \in G} g \circ \sigma^{\mathrm{lift}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
+\sum_{g \in G} g \circ {\sigma^{\mathrm{lift}}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
 $$</p>
 <p>the last equality because $g \mapsto gh$ is a bijection of $G$.</p>
 <p>Note that no global section of $p$ and no choice of a basepoint of $E$ is involved: each simplex is handled separately, and the ambiguity is absorbed by the summation over the finite group.</p>

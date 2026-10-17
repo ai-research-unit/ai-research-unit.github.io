@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -248,13 +247,13 @@
 </thead>
 <tbody>
 <tr>
-<td>$U(\mathrm{G})$, the universal enveloping algebra</td>
+<td>$\mathrm{U}(\mathrm{G})$, the universal enveloping algebra</td>
 <td>the associative $R$-algebra $T(\mathrm{G})$ modulo $x \otimes y - y \otimes x - [x,y]$</td>
 <td><em>Universal Enveloping Algebras</em></td>
 </tr>
 <tr>
-<td>The universal property of $U(\mathrm{G})$</td>
-<td>every $R$-linear $\varphi : \mathrm{G} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathrm{G} \to U(\mathrm{G})$</td>
+<td>The universal property of $\mathrm{U}(\mathrm{G})$</td>
+<td>every $R$-linear $\varphi : \mathrm{G} \to A$ into an associative $R$-algebra with $\varphi([x,y]) = \varphi(x)\varphi(y) - \varphi(y)\varphi(x)$ factors uniquely through $\mathrm{G} \to \mathrm{U}(\mathrm{G})$</td>
 <td><em>Universal Enveloping Algebras</em></td>
 </tr>
 <tr>
@@ -269,7 +268,7 @@
 </tr>
 <tr>
 <td>The Poincaré–Birkhoff–Witt theorem</td>
-<td>the ordered monomials in a basis of $\mathrm{G}$ form a basis of $U(\mathrm{G})$, and $\mathrm{gr}\,U(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$</td>
+<td>the ordered monomials in a basis of $\mathrm{G}$ form a basis of $\mathrm{U}(\mathrm{G})$, and $\mathrm{gr}\,\mathrm{U}(\mathrm{G}) \cong \operatorname{Sym}(\mathrm{G})$</td>
 <td><em>Universal Enveloping Algebras</em></td>
 </tr>
 </tbody>
@@ -310,11 +309,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>$\mathbb{O}$, the octonions</td>
-<td>the associator is nonzero, $[e_1,e_2,e_4] = 2e_7$; alternative, flexible and power-associative</td>
-<td><em>Octonion Algebra</em></td>
-</tr>
 <tr>
 <td>$\mathbb{S}$, the sedenions</td>
 <td>the doubling loses the multiplicative norm: it has zero divisors and is not a division algebra, and it is neither associative nor alternative</td>
@@ -366,7 +360,7 @@
 </tbody>
 </table></div>
 <h2 id="summary">Summary</h2>
-<p>This article has listed the associative algebras of the corpus. The property that gathers them is the vanishing of the associator $[x,y,z] = (xy)z - x(yz)$, a polynomial identity and a linear condition in each argument; power-associativity, alternativity, flexibility and the Moufang identities are the weaker identities implied by it, and the corpus's algebras $A$ and $B$ show that the ladder is strict. The free associative algebras are the tensor algebra $T(V)$ and the free algebra, with the universal property that makes every presented algebra a quotient; the symmetric, exterior and Clifford algebras, the Weyl algebra, the group algebra and the polynomial algebra remain associative because they are quotients of $T(V)$ or are defined by an associative product. The model is the matrix algebra $M_n(R)$ and its endomorphism algebra $\operatorname{End}_A(M)$, the simple finite-dimensional case being $M_n(D)$ over a division ring. The universal enveloping algebra $U(\mathrm{G})$ is the associative algebra attached to the Lie algebra $\mathrm{G}$ by a quotient of $T(\mathrm{G})$. The non-examples — the octonions, the sedenions, the Lie algebras, the Jordan algebras, the cross product on $\mathbb{R}^3$ and the commutator algebra $A_{\mathrm{Lie}}$ — each name the failure of associativity.</p>
+<p>This article has listed the associative algebras of the corpus. The property that gathers them is the vanishing of the associator $[x,y,z] = (xy)z - x(yz)$, a polynomial identity and a linear condition in each argument; power-associativity, alternativity, flexibility and the Moufang identities are the weaker identities implied by it, and the corpus's algebras $A$ and $B$ show that the ladder is strict. The free associative algebras are the tensor algebra $T(V)$ and the free algebra, with the universal property that makes every presented algebra a quotient; the symmetric, exterior and Clifford algebras, the Weyl algebra, the group algebra and the polynomial algebra remain associative because they are quotients of $T(V)$ or are defined by an associative product. The model is the matrix algebra $M_n(R)$ and its endomorphism algebra $\operatorname{End}_A(M)$, the simple finite-dimensional case being $M_n(D)$ over a division ring. The universal enveloping algebra $\mathrm{U}(\mathrm{G})$ is the associative algebra attached to the Lie algebra $\mathrm{G}$ by a quotient of $T(\mathrm{G})$. The non-examples — the octonions, the sedenions, the Lie algebras, the Jordan algebras, the cross product on $\mathbb{R}^3$ and the commutator algebra $A_{\mathrm{Lie}}$ — each name the failure of associativity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <p>A catalogue denotes its objects by name rather than by symbol. The symbols that appear in the tables are the following.</p>
 <div class="table-scroll"><table>
@@ -410,7 +404,7 @@
 <td>The matrix ring over a division ring</td>
 </tr>
 <tr>
-<td>$U(\mathrm{G})$, $A_{\mathrm{Lie}}$</td>
+<td>$\mathrm{U}(\mathrm{G})$, $A_{\mathrm{Lie}}$</td>
 <td>The universal enveloping algebra, and the commutator Lie algebra of an associative algebra</td>
 </tr>
 <tr>

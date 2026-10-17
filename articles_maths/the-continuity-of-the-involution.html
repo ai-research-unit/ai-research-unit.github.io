@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,7 +58,7 @@
 <h3 id="the-scalar-involution">The Scalar Involution</h3>
 <p><strong>Definition.</strong> An <strong>involutive topological ring</strong> is a topological ring $R$ with a continuous involution $\varsigma$, an additive map with $\varsigma(1) = 1$, $\varsigma(ab) = \varsigma(b)\varsigma(a)$ and $\varsigma^{2} = \mathrm{id}$; the notion, the closed fixed subring $R^{\varsigma}$ and the $I$-adic criterion are <em>Involutive Topological Rings and Fields</em>, §<em>Continuous Involutions</em>. In the layer the datum is the pair $(R,\varsigma)$ with $\varsigma$ continuous, and the entry <em>Topological Sesqualgebras</em> states this as a standing hypothesis, §<em>The Definition</em>.</p>
 <p><strong>Proposition (continuity at the origin).</strong> Let $\varphi : M \to N$ be an additive map of topological groups. Then $\varphi$ is continuous if and only if it is continuous at $0$; applied to the layer, $\varsigma$ is continuous if and only if it is continuous at $0$, and the same holds for $*$.</p>
-<p><em>Proof.</em> If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + U) \subseteq \varphi(a) + \varphi(U)$ for every neighbourhood $U$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.</p>
+<p><em>Proof.</em> If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + \Omega) \subseteq \varphi(a) + \varphi(\Omega)$ for every neighbourhood $\Omega$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.</p>
 <p><strong>Theorem (the twisted action).</strong> Let $A$ be a topological $R$-module and suppose $\varsigma$ continuous. Then the twisted action</p>
 <p>$$
 R \times A \longrightarrow A, \qquad (\lambda,x) \longmapsto \lambda \cdot x = \varsigma(\lambda)x,

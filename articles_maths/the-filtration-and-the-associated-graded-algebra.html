@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -111,7 +110,7 @@ $$</p>
 <p><strong>Proof.</strong> The associated graded algebra of a filtered vector space has the same dimension as the space, and it is $\Lambda(V)$ by the theorem.</p>
 <h2 id="the-parallel-with-the-universal-enveloping-algebra">The Parallel with the Universal Enveloping Algebra</h2>
 <p>The construction is the quadratic analogue of a classical one for Lie algebras.</p>
-<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a Lie algebra and $U(\mathrm{G})$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathrm{G}$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$.</p>
+<p><strong>Theorem.</strong> Let $\mathrm{G}$ be a Lie algebra and $\mathrm{U}(\mathrm{G})$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathrm{G}$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}\mathrm{U}(\mathrm{G})\cong S(\mathrm{G})$.</p>
 <p><strong>Proof.</strong> This is the Poincaré–Birkhoff–Witt theorem for Lie algebras, as recorded in <em>Representations of Lie Algebras</em>.</p>
 <p>The two theorems are read side by side as a dictionary:</p>
 <div class="table-scroll"><table>
@@ -135,7 +134,7 @@ $$</p>
 <td>Alternating normal form</td>
 </tr>
 <tr>
-<td>$\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$</td>
+<td>$\operatorname{gr}\mathrm{U}(\mathrm{G})\cong S(\mathrm{G})$</td>
 <td>$\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})\cong\Lambda(V)$</td>
 </tr>
 <tr>
@@ -148,7 +147,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $U(\mathrm{G})$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,\mathfrak{Q})$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.</p>
+<p>The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $\mathrm{U}(\mathrm{G})$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,\mathfrak{Q})$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="one-and-two-dimensions">One and Two Dimensions</h3>
 <p>Let $m$ be non-degenerate on $V$ of dimension $1$, with $\mathfrak{Q}(e_1)=a\neq0$. Then $F_0=F$, $F_1=\mathrm{Cl}(V,\mathfrak{Q})$ and $F_k=\mathrm{Cl}(V,\mathfrak{Q})$ for $k\ge1$, with $\operatorname{gr}_0\cong F$ and $\operatorname{gr}_1\cong V$, of dimensions $1$ and $1$; the associated graded algebra is $\Lambda(V)=\Lambda^0\oplus\Lambda^1$.</p>
@@ -199,7 +198,7 @@ $$</p>
 <td>Symbol map, the antisymmetrisation</td>
 </tr>
 <tr>
-<td>$U(\mathrm{G})$, $S(\mathrm{G})$</td>
+<td>$\mathrm{U}(\mathrm{G})$, $S(\mathrm{G})$</td>
 <td>Enveloping algebra and symmetric algebra, the parallel case</td>
 </tr>
 </tbody>

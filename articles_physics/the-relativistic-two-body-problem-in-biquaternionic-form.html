@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -66,11 +65,11 @@
 </li>
 </ol>
 <p>The article is the foundation for the later exercise on the relativistic kinematics of a two-body decay, so the kinematics are worked out explicitly: the centre-of-momentum energies and momentum, the relative rapidity, the invariant mass, the boost to an arbitrary frame, and the reduction to an effective one-body problem. A decay is the special case in which the total four-momentum is that of a single body at rest.</p>
-<p>The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\vec v$ denotes particle velocities.</p>
+<p>The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\vec v$ denotes particle velocities.</p>
 <h2 id="the-two-four-momenta-in-the-material-sector">The Two Four-Momenta in the Material Sector</h2>
 <p>The first body has rest mass $m_1$, velocity $\vec v_1$, and four-momentum</p>
 <p>$$
-\tilde{P}_1 = m_1\tilde{V}_1 = i\frac{E_1}{c}\,e_0 + \vec p_1,
+\tilde{P}_1 = m_1\tilde{V}_1 = i\frac{E_1}{c}\,e_t + \vec p_1,
 \qquad
 E_1 = \gamma_1 m_1 c^2,
 \qquad
@@ -84,7 +83,7 @@ $$</p>
 $$</p>
 <p>which is the biquaternion form of $E_a^2 = \vec p_a^2c^2 + m_a^2c^4$. The <strong>unit four-velocities</strong> are</p>
 <p>$$
-\tilde{v}_a = \frac{\tilde{V}_a}{c} = \gamma_a\left(i\,e_0 + \frac{\vec v_a}{c}\right),
+\tilde{v}_a = \frac{\tilde{V}_a}{c} = \gamma_a\left(i\,e_t + \frac{\vec v_a}{c}\right),
 \qquad
 \langle\tilde{v}_a\rangle_{\natural} = -1,
 $$</p>
@@ -94,7 +93,7 @@ $$</p>
 <p>$$
 \langle \tilde{A}, \tilde{B}\rangle := \mathrm{Sc}\!\left(\tilde{A}\tilde{B}^{\natural}\right).
 $$</p>
-<p>For elements of $\mathbb{M}_-$ this is <strong>real</strong>: writing $\tilde{A} = i\alpha\,e_0 + \vec a$ and $\tilde{B} = i\beta\,e_0 + \vec b$ with real $\alpha, \beta$ and real $\vec a, \vec b$, one has</p>
+<p>For elements of $\mathbb{M}_-$ this is <strong>real</strong>: writing $\tilde{A} = i\alpha\,e_t + \vec a$ and $\tilde{B} = i\beta\,e_t + \vec b$ with real $\alpha, \beta$ and real $\vec a, \vec b$, one has</p>
 <p>$$
 \langle \tilde{A},\tilde{B}\rangle = (i\alpha)(i\beta) + \vec a\cdot\vec b = -\alpha\beta + \vec a\cdot\vec b.
 $$</p>
@@ -102,7 +101,7 @@ $$</p>
 <p>$$
 \langle \tilde{A}, \tilde{A}\rangle = \langle\tilde{A}\rangle_{\natural}.
 $$</p>
-<p>Its signature is $(3,1)$ in the basis $\{ie_0, e_1, e_2, e_3\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the biquaternion norm of $\mathbb{M}_-$.</p>
+<p>Its signature is $(3,1)$ in the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the biquaternion norm of $\mathbb{M}_-$.</p>
 <p>For the four-momenta the pairing reads</p>
 <p>$$
 \langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \vec p_1\cdot\vec p_2,
@@ -115,7 +114,7 @@ $$</p>
 <h2 id="the-total-four-momentum-and-its-norm">The Total Four-Momentum and Its Norm</h2>
 <p>The <strong>total four-momentum</strong> of the pair is the sum</p>
 <p>$$
-\tilde{P} = \tilde{P}_1 + \tilde{P}_2 = i\frac{E_1+E_2}{c}\,e_0 + (\vec p_1+\vec p_2).
+\tilde{P} = \tilde{P}_1 + \tilde{P}_2 = i\frac{E_1+E_2}{c}\,e_t + (\vec p_1+\vec p_2).
 $$</p>
 <p>Because $\mathbb{M}_-$ is a real vector space, $\tilde{P} \in \mathbb{M}_-$: the total energy is $E_1+E_2$, the total momentum $\vec p_1+\vec p_2$. In the biquaternion formulation this is the statement that $\mathbb{M}_-$ is closed under addition.</p>
 <p>The biquaternion norm is multiplicative on $\mathbb{B}$ but <strong>not additive</strong>. For any $\tilde{A}, \tilde{B} \in \mathbb{B}$,</p>
@@ -177,23 +176,23 @@ $$</p>
 $$</p>
 <p>Asterisks denote quantities in this frame. In the biquaternion formulation the condition is that the vector part of the total four-momentum vanishes, so that $\tilde{P}$ is a pure imaginary scalar:</p>
 <p>$$
-\tilde{P}^* = \tilde{\Lambda}_{\rm CM}\,\tilde{P}\,\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_0.
+\tilde{P}^* = \tilde{\Lambda}_{\rm CM}\,\tilde{P}\,\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_t.
 $$</p>
 <p>The sign is fixed by the physical branch $E^* = Mc^2 > 0$, possible because a future-timelike four-vector can always be rotated to the time axis by a boost. Writing $\tilde{v}_P = \tilde{P}/(Mc)$ for the unit four-velocity of the pair, the companion article's relation $\tilde{\Lambda} = \sqrt{-i\tilde{v}^{\natural}}$ gives</p>
 <p>$$
 \tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{i}{Mc}\,\tilde{P}^{\natural}},
 \qquad
-\tilde{\Lambda}_{\rm CM}\tilde{\Lambda}^{\natural}_{\rm CM} = e_0.
+\tilde{\Lambda}_{\rm CM}\tilde{\Lambda}^{\natural}_{\rm CM} = e_t.
 $$</p>
-<p>Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde{\Lambda}_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_0$ unchanged.</p>
+<p>Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\vec u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde{\Lambda}_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_t$ unchanged.</p>
 <h3 id="constituent-energies-and-momentum">Constituent Energies and Momentum</h3>
 <p>In the COM frame the two four-momenta are</p>
 <p>$$
-\tilde{P}_1^* = i\frac{E_1^*}{c}\,e_0 + \vec p^*,
+\tilde{P}_1^* = i\frac{E_1^*}{c}\,e_t + \vec p^*,
 \qquad
-\tilde{P}_2^* = i\frac{E_2^*}{c}\,e_0 - \vec p^*,
+\tilde{P}_2^* = i\frac{E_2^*}{c}\,e_t - \vec p^*,
 $$</p>
-<p>with $\vec p^* = \vec p_1^* = -\vec p_2^*$. Summing and comparing with $\tilde{P}^* = iMc\,e_0$ gives</p>
+<p>with $\vec p^* = \vec p_1^* = -\vec p_2^*$. Summing and comparing with $\tilde{P}^* = iMc\,e_t$ gives</p>
 <p>$$
 E_1^* + E_2^* = Mc^2.
 $$</p>
@@ -218,7 +217,7 @@ $$</p>
 <p>The COM frame exhibits the two bodies moving in opposite directions, but the invariant that governs the pair is the relative motion. The <strong>relative four-velocity</strong> is the four-velocity of body 2 as seen in the rest frame of body 1. It is obtained by rotor conjugation with the boost biquaternion $\tilde{\Lambda}_1 = \sqrt{-i\tilde{v}^{\natural}_1}$ that carries body 1 to rest:</p>
 <p>$$
 \tilde{v}_{2|1} = \tilde{\Lambda}_1\,\tilde{v}_2\,\tilde{\Lambda}_1^{*}
-= i\gamma_{\rm rel}\,e_0 + \gamma_{\rm rel}\,\frac{\vec v_{\rm rel}}{c},
+= i\gamma_{\rm rel}\,e_t + \gamma_{\rm rel}\,\frac{\vec v_{\rm rel}}{c},
 $$</p>
 <p>where $\vec v_{\rm rel}$ is the velocity of body 2 in the rest frame of body 1 and</p>
 <p>$$
@@ -263,7 +262,7 @@ A \;\longrightarrow\; 1 + 2,
 \qquad
 \tilde{P}_A = \tilde{P}_1 + \tilde{P}_2.
 $$</p>
-<p>In the rest frame of $A$ the parent four-momentum is $\tilde{P}_A = iMc\,e_0$, so the rest frame of the parent <strong>is</strong> the COM frame of the two daughters, and the results above apply unchanged. The conservation law is the biquaternion equation $\tilde{P}_A = \tilde{P}_1+\tilde{P}_2$; its scalar and vector parts are energy and three-momentum conservation, and its biquaternion norm is $\langle\tilde{P}_A\rangle_{\natural} = -M^2c^2 = \langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$.</p>
+<p>In the rest frame of $A$ the parent four-momentum is $\tilde{P}_A = iMc\,e_t$, so the rest frame of the parent <strong>is</strong> the COM frame of the two daughters, and the results above apply unchanged. The conservation law is the biquaternion equation $\tilde{P}_A = \tilde{P}_1+\tilde{P}_2$; its scalar and vector parts are energy and three-momentum conservation, and its biquaternion norm is $\langle\tilde{P}_A\rangle_{\natural} = -M^2c^2 = \langle\tilde{P}_1+\tilde{P}_2\rangle_{\natural}$.</p>
 <p>The daughter quantities in the parent rest frame are therefore</p>
 <p>$$
 E_1^* = \frac{\left(M^2 + m_1^2 - m_2^2\right)c^2}{2M},
@@ -389,8 +388,8 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The relativistic two-body problem in the biquaternion framework is expressed entirely through the three operations of the algebra restricted to the material sector $\mathbb{M}_-$: addition, the biquaternion norm, and the rotor conjugation. The two four-momenta $\tilde{P}_1, \tilde{P}_2$ are elements of $\mathbb{M}_-$; their sum $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ is again in $\mathbb{M}_-$, with norm $\langle\tilde{P}\rangle_{\natural} = -M^2c^2$, which defines the invariant mass $M$ of the pair. Conservation of four-momentum is the single equation $\tilde{P}_1+\tilde{P}_2 = \text{constant}$, whose scalar and vector parts are energy and momentum conservation.</p>
-<p>The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_0$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{v}_1,\tilde{v}_2\rangle$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.</p>
-<p>A two-body decay is the special case in which the total four-momentum is $\tilde{P}_A = iMc\,e_0$; the general results then give the daughter energies, the common momentum magnitude $p^*$, the threshold condition $M \ge m_1+m_2$, and the boost to the laboratory frame. The non-relativistic limit reproduces the Newtonian centre-of-mass motion, the reduced mass, and the partition of the released energy, confirming that the framework reduces correctly to the established theory.</p>
+<p>The centre-of-momentum frame is reached by the boost biquaternion $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$, which rotates the total four-momentum to $iMc\,e_t$; in that frame the pair has back-to-back momenta and energies $E_1^*$ and $E_2^*$ fixed by the masses. The relative motion is characterised by the relative rapidity $\psi_{\rm rel}$, defined by $\cosh\psi_{\rm rel} = -\langle\tilde{v}_1,\tilde{v}_2\rangle$; the invariant mass satisfies $M^2c^4 = m_1^2c^4+m_2^2c^4+2m_1m_2c^4\cosh\psi_{\rm rel}$. The kinematic reduction to an effective one-body problem is the exact dispersion relation $Mc^2 = \sqrt{m_1^2c^4+p^{*2}c^2}+\sqrt{m_2^2c^4+p^{*2}c^2}$, whose non-relativistic limit is the reduced-mass kinetic energy.</p>
+<p>A two-body decay is the special case in which the total four-momentum is $\tilde{P}_A = iMc\,e_t$; the general results then give the daughter energies, the common momentum magnitude $p^*$, the threshold condition $M \ge m_1+m_2$, and the boost to the laboratory frame. The non-relativistic limit reproduces the Newtonian centre-of-mass motion, the reduced mass, and the partition of the released energy, confirming that the framework reduces correctly to the established theory.</p>
 <p>The dynamics of two <em>interacting</em> spin-$\tfrac12$ particles begins with the Breit equation, whose Dirac–Coulomb–Breit Hamiltonian adds to the two one-particle Dirac Hamiltonians and the instantaneous Coulomb term a magnetic and retardation operator $B_{ij}$ of order $1/c^2$. Its non-relativistic reduction is the Breit–Pauli Hamiltonian of relativistic kinetic, orbit–orbit, spin–orbit, Darwin and spin–spin terms, and its instantaneous synchronisation of the two worldlines is the standard choice of the convention this article leaves open.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -426,7 +425,7 @@ $$</p>
 <td>Invariant pairing on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_0+\vec p_a$</td>
+<td>$\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_t+\vec p_a$</td>
 <td>Four-momentum of body $a$</td>
 </tr>
 <tr>

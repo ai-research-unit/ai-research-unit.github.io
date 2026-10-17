@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,9 +59,9 @@ $$</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, and its idempotent decomposition.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
-<p>The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.</p>
+<p>The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, where $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_t} e_t + \bar{\vec Q}$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.</p>
 <p>The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is</p>
 <p>$$
 \tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2,
@@ -85,7 +84,7 @@ $$</p>
 <p>$$
 \xi_+^2 = -1, \qquad \xi_-^2 = -1,
 $$</p>
-<p>where $\xi_\pm \in \mathbb{H}$ are ordinary quaternions, and $-1$ is understood as $-e_0 = -1_{\mathbb{H}}$ in each copy of $\mathbb{H}$.</p>
+<p>where $\xi_\pm \in \mathbb{H}$ are ordinary quaternions, and $-1$ is understood as $-e_t = -1_{\mathbb{H}}$ in each copy of $\mathbb{H}$.</p>
 <p>So the roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are exactly the pairs $(\xi_+, \xi_-)$ where $\xi_+$ and $\xi_-$ are roots of $-1$ in the quaternion algebra $\mathbb{H}$.</p>
 <h3 id="reduction-to-the-quaternion-case">Reduction to the Quaternion Case</h3>
 <p>The problem therefore reduces to the problem of finding the roots of $-1$ in $\mathbb{H}$, which is a solved problem: the roots of $-1$ in $\mathbb{H}$ are exactly the unit pure quaternions, i.e., the elements $\mu \in \mathbb{H}$ with $\mu^2 = -1$ and $\mu \in \mathbb{R}^3_{\mathbb{H}}$.</p>
@@ -117,7 +116,7 @@ $$</p>
 $$</p>
 <p>The scalar part of $\tilde\Xi$ (with respect to the quaternion basis) is the split complex number</p>
 <p>$$
-\xi_0 = \frac{1}{2}(\mu_+ + \mu_-),
+\xi_t = \frac{1}{2}(\mu_+ + \mu_-),
 $$</p>
 <p>which is a real quaternion in general. The vector part is</p>
 <p>$$
@@ -174,7 +173,7 @@ $$</p>
 <h3 id="the-relation-between-roots-and-idempotents">The Relation Between Roots and Idempotents</h3>
 <p>In the biquaternion case, the roots of $-1$ are related to the idempotents by the formula</p>
 <p>$$
-\tilde P = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i,
+\tilde P = \tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i,
 $$</p>
 <p>where $\tilde\Xi$ is a root of $-1$ and $i$ is the scalar imaginary. This formula gives all the idempotents of the biquaternion algebra.</p>
 <p>In the split biquaternion case, the idempotents are the fixed elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not obtained from the roots of $-1$ by a similar formula. The reason is that the split complex algebra has no scalar imaginary, so there is no element to multiply the root by to obtain an idempotent.</p>
@@ -233,7 +232,7 @@ $$</p>
 </tr>
 <tr>
 <td>Idempotents</td>
-<td>$\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i$</td>
+<td>$\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$</td>
 <td>$0, \tilde\Pi_1, \tilde\Pi_2, 1$</td>
 </tr>
 </tbody>
@@ -243,7 +242,7 @@ $$</p>
 <li><strong>No scalar root.</strong> The split biquaternion algebra has no scalar root of $-1$, because the split complex algebra has no square root of $-1$.</li>
 <li><strong>No non-trivial roots.</strong> The biquaternion algebra has a four-dimensional family of non-trivial roots, which arise from the combination of the scalar imaginary with the quaternion roots. The split biquaternion algebra has no such family, because there is no scalar imaginary.</li>
 <li><strong>The root set is a product.</strong> The split biquaternion root set is the product of two copies of the quaternion root set, parametrized by a pair of unit pure real quaternions. The biquaternion root set is more complicated, because the scalar imaginary interacts with the quaternion roots.</li>
-<li><strong>The idempotents are different.</strong> The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \tilde\Xi i$.</li>
+<li><strong>The idempotents are different.</strong> The idempotents of the split biquaternion algebra are the four elements $0, \tilde\Pi_1, \tilde\Pi_2, 1$, and they are not generated by the roots of $-1$. The idempotents of the biquaternion algebra are generated by the roots of $-1$ via the formula $\tfrac{1}{2} e_t \pm \tfrac{1}{2} \tilde\Xi i$.</li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The roots of $-1$ in the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ are exactly the elements of the form</p>

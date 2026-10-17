@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -96,7 +95,7 @@ $$</p>
 <p><strong>Remark.</strong> For the datum, $H(A,*) = H(A)$ is the Hermitian part and $S(A,*) = S(A)$ the skew-Hermitian part, so the definitions generalise the two halves from one involution to all of them. The generalised halves are $R^{\varsigma}$-submodules and not $R$-submodules, by the same argument as for the datum: a scalar with $\varsigma(\lambda) = -\lambda$ exchanges the two.</p>
 <h2 id="the-inner-involutions">The Inner Involutions</h2>
 <h3 id="the-family-of-a-unitary-element">The Family of a Unitary Element</h3>
-<p><strong>Theorem.</strong> Let $u \in U(A)$ be unitary and let $\sigma_{u}(x) = ux^{*}u^{*}$. Then $\sigma_{u}$ is a $\varsigma$-semilinear anti-automorphism of $A$ with $\sigma_{u} = \alpha_{u} \circ *$, where $\alpha_{u}(x) = uxu^{*}$ is the inner $*$-automorphism of <em>Units and the Unitary Elements</em>, and</p>
+<p><strong>Theorem.</strong> Let $u \in \mathrm{U}(A)$ be unitary and let $\sigma_{u}(x) = ux^{*}u^{*}$. Then $\sigma_{u}$ is a $\varsigma$-semilinear anti-automorphism of $A$ with $\sigma_{u} = \alpha_{u} \circ *$, where $\alpha_{u}(x) = uxu^{*}$ is the inner $*$-automorphism of <em>Units and the Unitary Elements</em>, and</p>
 <p>$$
 \sigma_{u}^{2} = \alpha_{u^{2}} , \qquad \text{so that} \qquad \sigma_{u} \in \operatorname{Inv}(A) \iff u^{2} \in Z(A) .
 $$</p>
@@ -109,11 +108,11 @@ $$</p>
 \sigma_{u}^{2}(x) = u(u x^{*} u^{*})^{*}u^{*} = u\,(u x u^{*})\,u^{*} = u^{2}\,x\,(u^{*})^{2} = \alpha_{u^{2}}(x) ,
 $$</p>
 <p>so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, that is $u^{2} \in Z(A)$.</p>
-<p><strong>Remark.</strong> The criterion is not $u \in U(A)$ alone: the unitary element $u = \mathrm{diag}(i,1)$ of $M_{2}(\mathbb{C})$ has $u^{2} = \mathrm{diag}(-1,1)$, which is not central, and $\sigma_{u}$ is then not an involution, since $\sigma_{u}^{2}(E_{12}) = -E_{12}$; the unitary element $u = \mathrm{diag}(i,i)$ has $u^{2} = -I$ central and $\sigma_{u}$ is an involution. The condition $u^{2} \in Z(A)$ holds in particular for every unitary involution, $u^{2} = 1$, and for every central unitary.</p>
+<p><strong>Remark.</strong> The criterion is not $u \in \mathrm{U}(A)$ alone: the unitary element $u = \mathrm{diag}(i,1)$ of $M_{2}(\mathbb{C})$ has $u^{2} = \mathrm{diag}(-1,1)$, which is not central, and $\sigma_{u}$ is then not an involution, since $\sigma_{u}^{2}(E_{12}) = -E_{12}$; the unitary element $u = \mathrm{diag}(i,i)$ has $u^{2} = -I$ central and $\sigma_{u}$ is an involution. The condition $u^{2} \in Z(A)$ holds in particular for every unitary involution, $u^{2} = 1$, and for every central unitary.</p>
 <p><strong>Corollary.</strong> The family $\{\sigma_{u}\}$ is a family of involutions exactly over the unitary elements with $u^{2} \in Z(A)$, and $\sigma_{u} = *$ for every central unitary $u$.</p>
 <p><strong>Proof.</strong> The criterion above gives the first statement. For a central unitary $u$ one has $\sigma_{u}(x) = ux^{*}u^{*} = uu^{*}x^{*} = x^{*}$, by the centrality of $u$.</p>
 <h3 id="the-orbit-of-the-datum">The Orbit of the Datum</h3>
-<p><strong>Proposition.</strong> For $u, v \in U(A)$ the maps $\sigma_{u}$ and $\sigma_{v}$ are equal exactly when $v^{*}u$ is central, and the assignment $u \mapsto \sigma_{u}$ identifies the family with the unitary elements modulo the central unitary ones.</p>
+<p><strong>Proposition.</strong> For $u, v \in \mathrm{U}(A)$ the maps $\sigma_{u}$ and $\sigma_{v}$ are equal exactly when $v^{*}u$ is central, and the assignment $u \mapsto \sigma_{u}$ identifies the family with the unitary elements modulo the central unitary ones.</p>
 <p><strong>Proof.</strong> From $ux^{*}u^{*} = vx^{*}v^{*}$ for every $x$, multiplying by $v^{*}$ on the left and by $v$ on the right, one gets $w x^{*} = x^{*} w$ with $w = v^{*}u$, for every $x$; this says exactly that $w$ is central. Conversely a central $w$ gives the equality.</p>
 <p><strong>Remark.</strong> The family is the coset of the inner $*$-automorphisms applied to the datum: $\sigma_{u} = \alpha_{u} \circ *$, so the family is the orbit of $*$ under the inner automorphism group, and its stabiliser is the group of the central unitary elements, the kernel computed in <em>Units and the Unitary Elements</em>, §<em>Inner $*$-Automorphisms</em>. The datum is therefore the base point of the family, and an involution outside the family is reached from it only by an automorphism that is not inner, as in <em>Involutions of a Central Simple Algebra</em>, §<em>Comparing Two Involutions</em>.</p>
 <h2 id="the-galois-type-correspondence">The Galois-Type Correspondence</h2>

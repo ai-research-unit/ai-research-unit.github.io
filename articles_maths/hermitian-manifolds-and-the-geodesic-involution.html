@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -64,9 +63,9 @@ $$</p>
 <p>that reverses every tangent vector. It is smooth, it commutes with the bundle projection, and it restricts on each fibre $T_pM$ to the central symmetry $-\mathrm{id}$. Its orbits are the pairs $\{v, -v\}$ at the nonzero vectors and the single zero vector; the orbit space $TM/\iota$ is the <strong>unoriented tangent bundle</strong>, in which a direction is a line through the origin rather than an oriented vector.</p>
 <p><strong>Definition.</strong> The <strong>geodesic symmetry</strong> at $p$ is the conjugate of $\iota$ by the exponential map,</p>
 <p>$$
-\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1} : U \longrightarrow U, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
+\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1} : \Omega \longrightarrow \Omega, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
 $$</p>
-<p>on a normal neighbourhood $U$ of $p$; the previous articles of this category use it as the defining involution of a locally symmetric space.</p>
+<p>on a normal neighbourhood $\Omega$ of $p$; the previous articles of this category use it as the defining involution of a locally symmetric space.</p>
 <p><strong>Theorem.</strong> The geodesic symmetry is an involution of the normal neighbourhood, fixing $p$ alone and reversing every geodesic through $p$, and its differential at $p$ is the geodesic involution of the tangent space:</p>
 <p>$$
 \sigma_p^2 = \mathrm{id}, \qquad d(\sigma_p)_p = -\mathrm{id} = \iota|_{T_pM} .

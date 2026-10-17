@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,9 +58,9 @@
 <h3 id="the-double-cover-and-its-transfer">The Double Cover and Its Transfer</h3>
 <p><strong>Definition.</strong> Let $\sigma$ act freely on $X$, let $B = X/\sigma$ be the orbit space and let $p : X \to B$ be the quotient, a double cover with deck transformation $\sigma$. The <strong>transfer</strong> is the chain map</p>
 <p>$$
-\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}\eta^{\mathrm{lift}}^{\pm},
+\tau : C_*(B;R) \longrightarrow C_*(X;R), \qquad \tau(\eta) = \sum_{\pm}{\eta^{\mathrm{lift}}}^{\pm},
 $$</p>
-<p>where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices $\eta^{\mathrm{lift}}^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.</p>
+<p>where the singular simplex $\eta : \Delta_n\to B$ is lifted to the two simplices ${\eta^{\mathrm{lift}}}^{\pm} : \Delta_n \to X$ of the cover over $\eta$, the two lifts differing by $\sigma$, and the sum is extended $R$-linearly; the definition is independent of the choice of the base lift because the other lift changes the sum into itself.</p>
 <p><strong>Theorem.</strong> The transfer is a well-defined chain map and it satisfies</p>
 <p>$$
 p_\# \tau = 2\,\mathrm{id}, \qquad\qquad \tau p_\# = 1 + T = N,

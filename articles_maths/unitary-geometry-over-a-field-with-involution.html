@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -90,26 +89,26 @@ $$</p>
 <h3 id="definition-and-the-exact-sequences">Definition and the Exact Sequences</h3>
 <p><strong>Definition.</strong> Let $(V,h)$ be a Hermitian space. The <strong>unitary group</strong> is</p>
 <p>$$
-U(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\} ,
+\mathrm{U}(V,h) = \{T \in GL(V) : h(Tx, Ty) = h(x,y) \ \text{for all } x, y\} ,
 $$</p>
 <p>the group of the isometries of the form; the <strong>general unitary group</strong> is the group of the <strong>similitudes</strong>,</p>
 <p>$$
 GU(V,h) = \{T \in GL(V) : h(Tx,Ty) = \lambda(T)\, h(x,y),\ \lambda(T) \in K_0^\times\} ,
 $$</p>
-<p>and the <strong>special unitary group</strong> $SU(V,h) = U(V,h) \cap SL(V)$ is the subgroup of determinant one; over a real field the groups are the compact groups of the classical theory.</p>
+<p>and the <strong>special unitary group</strong> $SU(V,h) = \mathrm{U}(V,h) \cap SL(V)$ is the subgroup of determinant one; over a real field the groups are the compact groups of the classical theory.</p>
 <p><strong>Theorem.</strong> The unitary group is a subgroup of $GL(V)$ defined by the polynomial equations $T^{*}HT = H$ in a basis, and the general unitary group sits in the exact sequence</p>
 <p>$$
-1 \longrightarrow U(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times ,
+1 \longrightarrow \mathrm{U}(V,h) \longrightarrow GU(V,h) \xrightarrow{\ \lambda\ } K_0^\times ,
 $$</p>
 <p>with $\lambda$ the similarity factor, a homomorphism whose kernel is the unitary group and whose image contains the squares of $K_0$ and the norms $N(K^\times)$; the determinant of an element of the unitary group lies in $K_0$ with norm one in the nontrivial case, so the special unitary group $SU(V,h)$ has index the group of the determinants of norm one, and the dimension of the unitary group over $K_0$ is $n^2$ in the quadratic case and $\frac{n(n-1)}{2}$ in the symmetric case.</p>
 <p><strong>Proof.</strong> The isometry condition in coordinates is $T^{*}HT = H$, which is the displayed matrix equation; the similarity factor is a homomorphism to $K_0^\times$ because the form is Hermitian and the factor is fixed by the involution, and the kernel is the unitary group. The determinant statement follows because $\det(T^{*}HT) = \overline{\det T}\det H \det T = \det H$ forces $N(\det T) = 1$ in the nontrivial case while the trivial case has no condition beyond the determinant being a square class; the dimension counts are those of the ambient matrix space minus the conditions, computed as in the previous section.</p>
-<p><strong>Example (the classical unitary groups).</strong> Over $\mathbb{C}$ with the complex conjugation and the form $\sum |x_i|^2$ the unitary group is the compact group $U(n)$, of real dimension $n^2$, and the special unitary group $SU(n)$ has dimension $n^2 - 1$; over $\mathbb{R}$ with the trivial involution and the form $\sum x_i^2$ the unitary group is the orthogonal group $O(n)$ and the special one is $SO(n)$, of dimension $\frac{n(n-1)}{2}$. The two families are the two extreme instances of the field with an involution, and the unitary geometry of this article interpolates between them.</p>
+<p><strong>Example (the classical unitary groups).</strong> Over $\mathbb{C}$ with the complex conjugation and the form $\sum |x_i|^2$ the unitary group is the compact group $\mathrm{U}(n)$, of real dimension $n^2$, and the special unitary group $SU(n)$ has dimension $n^2 - 1$; over $\mathbb{R}$ with the trivial involution and the form $\sum x_i^2$ the unitary group is the orthogonal group $O(n)$ and the special one is $SO(n)$, of dimension $\frac{n(n-1)}{2}$. The two families are the two extreme instances of the field with an involution, and the unitary geometry of this article interpolates between them.</p>
 <h3 id="the-geometries-of-the-unitary-group">The Geometries of the Unitary Group</h3>
 <p><strong>Definition.</strong> The <strong>unitary geometry</strong> is the projective space $\mathbb{P}(V)$ together with the nondegenerate Hermitian form $h$; the <strong>Hermitian quadric</strong> is the set of the isotropic points</p>
 <p>$$
 Q = \{[x] : h(x,x) = 0\} ,
 $$</p>
-<p>and the <strong>unitary group</strong> $U(V,h)$ is the operator group of the geometry, the group of the projective operators preserving the quadric and the polarity.</p>
+<p>and the <strong>unitary group</strong> $\mathrm{U}(V,h)$ is the operator group of the geometry, the group of the projective operators preserving the quadric and the polarity.</p>
 <p><strong>Theorem.</strong> The projective operators preserving the Hermitian quadric are exactly the projectivities induced by the general unitary group modulo the scalars, so the operator group of the unitary geometry is $GU(V,h)/K_0^\times$ acting on $\mathbb{P}(V)$; the group acts transitively on the isotropic points and preserves the polarity, and the geometry of the isotropic points is the homogeneous space of the group modulo the stabiliser of one of them.</p>
 <p><strong>Proof.</strong> A projectivity preserving the quadric preserves the polarity induced by the form and hence the form up to a scalar, which is the similarity condition; conversely a similarity preserves the quadric and the polarity. The transitivity on the isotropic points is the Witt extension theorem for the Hermitian forms, which is stated in <em>Hermitian Forms and Unitary Geometry</em>; the stabiliser of a point is the subgroup fixing a vector, and the orbit statement follows.</p>
 <h2 id="the-two-kinds-of-involution">The Two Kinds of Involution</h2>
@@ -118,7 +117,7 @@ $$</p>
 <p><strong>Proof.</strong> In the nontrivial case $h(x,x) = \overline{h(x,x)}$ is fixed by the involution, so it lies in $K_0$; the polarisation of the resulting quadratic form over $K_0$ gives back the Hermitian form, and the two are in bijection; in the trivial case the situation is the classical one of a quadratic form and its polar bilinear form. The statement is the standard descent of the Hermitian forms to the fixed field, in <em>Quadratic Forms and Polarisation</em>.</p>
 <p><strong>Remark (the two involutions of the corpus).</strong> The involution of the present article sits on the <strong>elements</strong> of the field, and the adjoint of an operator that it induces sits on the <strong>operators</strong>; the two are different structures, and the article in the operator layer that pairs them is <em>The Adjoint under a Hermitian Pairing</em>. The unitary group is the group of the operators that are isometric for the pairing, while the involution on the elements alone does not produce the adjoint without the choice of the pairing; this is the distinction the conventions of the corpus record, and it is the reason the unitary geometry is placed in the <code>*</code> Theory layer and the adjoint in the <code>*</code> Operator Theory layer.</p>
 <h2 id="summary">Summary</h2>
-<p>A field with an involution $(K,\sigma)$ has a fixed field $K_0$, equal to $K$ for the trivial involution or of index two in the nontrivial case, with the norm $N(x) = x\bar{x}$ and the trace $x + \bar{x}$ landing in $K_0$. A Hermitian form is a sesquilinear form with $h(x,y) = \overline{h(y,x)}$, represented in a basis by a matrix with $H^{*} = H$, nondegenerate when $H$ is invertible, with the radical as the kernel of the adjoint map and with the polarity $W \mapsto W^\perp$ on the lattice of the subspaces. The unitary group $U(V,h)$ is the isometry group of the form, the general unitary group $GU$ is the group of the similitudes with the factor $\lambda \in K_0^\times$, and the special unitary group $SU$ is the determinant-one subgroup; over $\mathbb{C}$ and $\mathbb{R}$ the groups are the classical $U(n)$, $SU(n)$, $O(n)$ and $SO(n)$ with the dimensions $n^2$, $n^2-1$ and $\frac{n(n-1)}{2}$. The unitary geometry is the projective space with the Hermitian quadric of the isotropic points, and its operator group is the general unitary group modulo the scalars; the trivial involution recovers the orthogonal geometry, and the classification of the forms and the Witt theorem are <em>Hermitian Forms and Unitary Geometry</em> and, over a local field, <em>Hermitian Spaces over a Local Field</em>.</p>
+<p>A field with an involution $(K,\sigma)$ has a fixed field $K_0$, equal to $K$ for the trivial involution or of index two in the nontrivial case, with the norm $N(x) = x\bar{x}$ and the trace $x + \bar{x}$ landing in $K_0$. A Hermitian form is a sesquilinear form with $h(x,y) = \overline{h(y,x)}$, represented in a basis by a matrix with $H^{*} = H$, nondegenerate when $H$ is invertible, with the radical as the kernel of the adjoint map and with the polarity $W \mapsto W^\perp$ on the lattice of the subspaces. The unitary group $\mathrm{U}(V,h)$ is the isometry group of the form, the general unitary group $GU$ is the group of the similitudes with the factor $\lambda \in K_0^\times$, and the special unitary group $SU$ is the determinant-one subgroup; over $\mathbb{C}$ and $\mathbb{R}$ the groups are the classical $\mathrm{U}(n)$, $SU(n)$, $O(n)$ and $SO(n)$ with the dimensions $n^2$, $n^2-1$ and $\frac{n(n-1)}{2}$. The unitary geometry is the projective space with the Hermitian quadric of the isotropic points, and its operator group is the general unitary group modulo the scalars; the trivial involution recovers the orthogonal geometry, and the classification of the forms and the Witt theorem are <em>Hermitian Forms and Unitary Geometry</em> and, over a local field, <em>Hermitian Spaces over a Local Field</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -161,7 +160,7 @@ $$</p>
 <td>Orthogonal complement, the polarity</td>
 </tr>
 <tr>
-<td>$U(V,h)$</td>
+<td>$\mathrm{U}(V,h)$</td>
 <td>Unitary group (isometries)</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,9 +54,9 @@
 <p>Two invariants of an algebra are its group of automorphisms and its Lie algebra of derivations, and for the quaternion algebra both can be computed completely: the automorphism group is the rotation group of the imaginary subspace, and the derivation algebra is the imaginary subspace itself under the commutator bracket. Here the ground field is $\mathbb{R}$ throughout, and the algebra is central simple over it.</p>
 <p>The article uses <em>Quaternion Algebra</em> for the algebra and its centre, <em>Quaternion Ideals and Simplicity</em> for the central-simplicity of $\mathbb{H}$ over $\mathbb{R}$, <em>Quaternion Norm and Invertibility</em> for the unit group, and <em>Quaternion Rotations and Reflections</em> for the identification of the unit sphere with the rotation group.</p>
 <p>The results are the case of the standard structure theory of a central simple algebra: over a field $k$, every $k$-algebra automorphism of a finite-dimensional central simple algebra is inner, and every derivation is inner. Those two theorems are cited as standard; the specific computations for $\mathbb{H}$ are shown.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$, conjugate $\tilde{q}^{\natural}$, and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([\tilde q,\tilde p]) = 0$, so $[\tilde q,\tilde p]\in\operatorname{Im}\mathbb{H}$ always.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with centre $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t$, conjugate $\tilde{q}^{\natural}$, and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$. The scalar part of a commutator gives $\mathrm{Sc}([\tilde q_1,\tilde q_2]) = 0$, so $[\tilde q_1,\tilde q_2]\in\operatorname{Im}\mathbb{H}$ always.</p>
 <h2 id="automorphisms-of-the-quaternion-algebra">Automorphisms of the Quaternion Algebra</h2>
-<p><strong>Definition.</strong> An <strong>automorphism</strong> of $\mathbb{H}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}\to\mathbb{H}$ with $\sigma(\tilde q\tilde p) = \sigma(\tilde q)\sigma(\tilde p)$ and $\sigma(1) = 1$. The automorphisms form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$.</p>
+<p><strong>Definition.</strong> An <strong>automorphism</strong> of $\mathbb{H}$ is a bijective $\mathbb{R}$-linear map $\sigma : \mathbb{H}\to\mathbb{H}$ with $\sigma(\tilde q_1\tilde q_2) = \sigma(\tilde q_1)\sigma(\tilde q_2)$ and $\sigma(1) = 1$. The automorphisms form a group under composition, written $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$.</p>
 <p><strong>Definition.</strong> For a unit $u\in\mathbb{H}$ the map $\iota_u(\tilde q) = u\tilde qu^{-1}$ is the <strong>inner automorphism</strong> determined by $u$. Since the centre is $\mathbb{R}$, one has $\iota_u = \iota_{\lambda u}$ for every non-zero real $\lambda$, so $\iota_u$ depends only on the class of $u$ in $Sp(1)/\{\pm1\}$.</p>
 <p><strong>Proposition.</strong> $\iota_u$ is an automorphism for every unit $u$, the assignment $u\mapsto\iota_u$ is a group homomorphism $Sp(1)\to\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$, and its kernel is $\{\pm1\}$.</p>
 <p><em>Proof.</em> For units $u,v$, $\iota_u\iota_v = \iota_{uv}$, and $\iota_u^{-1} = \iota_{u^{-1}}$, so the assignment is a homomorphism into bijective $\mathbb{R}$-algebra maps. Its kernel consists of the units with $u\tilde qu^{-1} = \tilde q$ for all $\tilde q$, namely the units of the centre $\mathbb{R}$, that is $\{\pm1\}$.</p>
@@ -73,30 +72,30 @@ $$</p>
 \operatorname{Aut}_{\mathbb{R}}(\mathbb{H})\cong SO(3),
 $$</p>
 <p>the rotation group of the three-dimensional space $\operatorname{Im}\mathbb{H}$.</p>
-<p><em>Proof.</em> An automorphism $\sigma$ fixes the centre $\mathbb{R}e_0$ and preserves squares, so it preserves the set $\operatorname{Im}\mathbb{H} = \{\vec q : \vec q^2\in\mathbb{R}e_0,\ \vec q^2\leq0\}$: a quaternion has real square exactly when it is real or pure, and the square is non-positive exactly when it is pure (or zero). On that set the quaternion norm is $\langle \vec q\rangle_{\natural} = -\vec q^2$, whence $\sigma$ preserves the quaternion norm. Thus every automorphism restricts to an orthogonal map of $\operatorname{Im}\mathbb{H}$; since by Skolem–Noether every automorphism is inner and every inner automorphism is the adjoint action of a unit, the restriction has determinant $+1$ by <em>Quaternion Rotations and Reflections</em>. Conversely every rotation of $\operatorname{Im}\mathbb{H}$ extends to an automorphism — it is the adjoint action of a unit quaternion — and the extension is unique because $\mathbb{H}$ is generated by $\operatorname{Im}\mathbb{H}$. Identifying the cover $Sp(1)\to SO(3)$ with $u\mapsto\iota_u$ gives the isomorphism.</p>
+<p><em>Proof.</em> An automorphism $\sigma$ fixes the centre $\mathbb{R}e_t$ and preserves squares, so it preserves the set $\operatorname{Im}\mathbb{H} = \{\vec q : \vec q^2\in\mathbb{R}e_t,\ \vec q^2\leq0\}$: a quaternion has real square exactly when it is real or pure, and the square is non-positive exactly when it is pure (or zero). On that set the quaternion norm is $\langle \vec q\rangle_{\natural} = -\vec q^2$, whence $\sigma$ preserves the quaternion norm. Thus every automorphism restricts to an orthogonal map of $\operatorname{Im}\mathbb{H}$; since by Skolem–Noether every automorphism is inner and every inner automorphism is the adjoint action of a unit, the restriction has determinant $+1$ by <em>Quaternion Rotations and Reflections</em>. Conversely every rotation of $\operatorname{Im}\mathbb{H}$ extends to an automorphism — it is the adjoint action of a unit quaternion — and the extension is unique because $\mathbb{H}$ is generated by $\operatorname{Im}\mathbb{H}$. Identifying the cover $Sp(1)\to SO(3)$ with $u\mapsto\iota_u$ gives the isomorphism.</p>
 <p><strong>Corollary.</strong> As a real manifold, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H})$ is diffeomorphic to the projective space $\mathbb{RP}^3$ and has dimension $3$; it is connected and compact, and it is isomorphic to the group of orientation-preserving isometries of $\operatorname{Im}\mathbb{H}$ fixing the origin.</p>
 <p><em>Proof.</em> $Sp(1)/\{\pm1\}\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, of dimension three; $SO(3)$ is connected and compact.</p>
-<p><strong>Example.</strong> For $u = e_1$ the inner automorphism $\iota_{e_1}$ fixes $e_1$ and the centre and reverses the signs of $e_2$ and $e_3$: indeed $e_1e_2e_1^{-1} = -(e_1e_2)e_1 = -e_3e_1 = -e_2$, using $e_1e_2 = e_3$ and $e_3e_1 = e_2$. It is the half-turn about the axis $e_1$.</p>
-<p><strong>Remark.</strong> The automorphisms of order two are exactly the halfturns about the axes. An inner automorphism $\iota_u$ satisfies $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the identity, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $\iota_u = \iota_\nu$, which fixes the plane $\operatorname{span}(e_0,\nu)$ and is the half-turn about the axis line $\mathbb{R}\nu$. There is thus one non-trivial automorphism of order two for each axis line of $\operatorname{Im}\mathbb{H}$, and they are the involutions of <em>Quaternion Involutions and Projections</em>.</p>
+<p><strong>Example.</strong> For $u = \vec e_x$ the inner automorphism $\iota_{\vec e_x}$ fixes $\vec e_x$ and the centre and reverses the signs of $\vec e_y$ and $\vec e_z$: indeed $\vec e_x\vec e_y\vec e_x^{-1} = -(\vec e_x\vec e_y)\vec e_x = -\vec e_z\vec e_x = -\vec e_y$, using $\vec e_x\vec e_y = \vec e_z$ and $\vec e_z\vec e_x = \vec e_y$. It is the half-turn about the axis $\vec e_x$.</p>
+<p><strong>Remark.</strong> The automorphisms of order two are exactly the halfturns about the axes. An inner automorphism $\iota_u$ satisfies $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the identity, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $\iota_u = \iota_\nu$, which fixes the plane $\operatorname{span}(e_t,\nu)$ and is the half-turn about the axis line $\mathbb{R}\nu$. There is thus one non-trivial automorphism of order two for each axis line of $\operatorname{Im}\mathbb{H}$, and they are the involutions of <em>Quaternion Involutions and Projections</em>.</p>
 <h2 id="derivations-of-the-quaternion-algebra">Derivations of the Quaternion Algebra</h2>
-<p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathbb{H}$ is an $\mathbb{R}$-linear map $D : \mathbb{H}\to\mathbb{H}$ satisfying the Leibniz rule $D(\tilde q\tilde p) = D(\tilde q)\tilde p+\tilde q D(\tilde p)$ for all $\tilde q,\tilde p$. The derivations form a real vector space $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$, a Lie algebra under the commutator bracket $[D_1,D_2] = D_1D_2-D_2D_1$.</p>
+<p><strong>Definition.</strong> A <strong>derivation</strong> of $\mathbb{H}$ is an $\mathbb{R}$-linear map $D : \mathbb{H}\to\mathbb{H}$ satisfying the Leibniz rule $D(\tilde q_1\tilde q_2) = D(\tilde q_1)\tilde q_2+\tilde q_1 D(\tilde q_2)$ for all $\tilde q_1,\tilde q_2$. The derivations form a real vector space $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$, a Lie algebra under the commutator bracket $[D_1,D_2] = D_1D_2-D_2D_1$.</p>
 <p><strong>Proposition.</strong> Every derivation annihilates $1$ and maps the centre into itself.</p>
 <p><em>Proof.</em> $D(1) = D(1\cdot1) = 2D(1)$, so $D(1) = 0$; if $c$ is central then $D(c)\tilde q = D(c\tilde q)-cD(\tilde q) = D(\tilde q c)-D(\tilde q)c = \tilde q D(c)$, so $D(c)$ is central.</p>
 <p><strong>Definition.</strong> For $a\in\mathbb{H}$ the <strong>inner derivation</strong> determined by $a$ is $\operatorname{ad}_a(\tilde q) = a\tilde q-\tilde q a = [a,\tilde q]$.</p>
-<p><strong>Proposition.</strong> $\operatorname{ad}_a$ is a derivation for every $a$, the map $\operatorname{ad} : \mathbb{H}\to\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is $\mathbb{R}$-linear with kernel the centre $\mathbb{R}e_0$, and $[\operatorname{ad}_a,\operatorname{ad}_b] = \operatorname{ad}_{[a,b]}$.</p>
-<p><em>Proof.</em> The Jacobi identity in the form $[a,[\tilde q,\tilde p]] = [[a,\tilde q],\tilde p]+[\tilde q,[a,\tilde p]]$ is exactly the Leibniz rule for $\operatorname{ad}_a$; linearity is clear; $\operatorname{ad}_a = 0$ iff $a$ commutes with every quaternion, iff $a$ is central. The bracket identity is the Jacobi identity again.</p>
+<p><strong>Proposition.</strong> $\operatorname{ad}_a$ is a derivation for every $a$, the map $\operatorname{ad} : \mathbb{H}\to\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is $\mathbb{R}$-linear with kernel the centre $\mathbb{R}e_t$, and $[\operatorname{ad}_a,\operatorname{ad}_b] = \operatorname{ad}_{[a,b]}$.</p>
+<p><em>Proof.</em> The Jacobi identity in the form $[a,[\tilde q_1,\tilde q_2]] = [[a,\tilde q_1],\tilde q_2]+[\tilde q_1,[a,\tilde q_2]]$ is exactly the Leibniz rule for $\operatorname{ad}_a$; linearity is clear; $\operatorname{ad}_a = 0$ iff $a$ commutes with every quaternion, iff $a$ is central. The bracket identity is the Jacobi identity again.</p>
 <p><strong>Theorem.</strong> Every derivation of $\mathbb{H}$ is inner, so there is an isomorphism</p>
 <p>$$
-\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_0\cong\operatorname{Im}\mathbb{H},
+\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H},
 $$</p>
-<p>of real vector spaces and of Lie algebras, the bracket on the right being $[\vec q,\vec p] = 2(\vec q\times\vec p)$.</p>
-<p><em>Proof.</em> For a finite-dimensional central simple algebra over a field, every derivation is inner; quoting this as standard and applying it to $\mathbb{H}$, the map $\operatorname{ad}$ is surjective, and its kernel is the centre, so it induces the first isomorphism. A commutator is pure, and the space $\mathbb{H}/\mathbb{R}e_0$ is identified with the pure quaternions $\operatorname{Im}\mathbb{H}$; the bracket identity of the proposition becomes $[\vec q,\vec p] = \vec q\vec p-\vec p\vec q = 2(\vec q\times\vec p)$ for pure quaternions by the product rule $\vec p\vec q = -\langle\vec p,\vec q\rangle+\vec p\times\vec q$.</p>
-<p><strong>Corollary.</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ has dimension $3$, with basis $\{D_1,D_2,D_3\}$, $D_k = \tfrac12\operatorname{ad}_{e_k}$, and the structure constants</p>
+<p>of real vector spaces and of Lie algebras, the bracket on the right being $[\vec q_1,\vec q_2] = 2(\vec q_1\times\vec q_2)$.</p>
+<p><em>Proof.</em> For a finite-dimensional central simple algebra over a field, every derivation is inner; quoting this as standard and applying it to $\mathbb{H}$, the map $\operatorname{ad}$ is surjective, and its kernel is the centre, so it induces the first isomorphism. A commutator is pure, and the space $\mathbb{H}/\mathbb{R}e_t$ is identified with the pure quaternions $\operatorname{Im}\mathbb{H}$; the bracket identity of the proposition becomes $[\vec q_1,\vec q_2] = \vec q_1\vec q_2-\vec q_2\vec q_1 = 2(\vec q_1\times\vec q_2)$ for pure quaternions by the product rule $\vec q_1\vec q_2 = -\langle\vec q_1,\vec q_2\rangle+\vec q_1\times\vec q_2$.</p>
+<p><strong>Corollary.</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ has dimension $3$, with basis $\{D_1,D_2,D_3\}$, $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$, and the structure constants</p>
 <p>$$
 [D_1,D_2] = D_3, \qquad [D_2,D_3] = D_1, \qquad [D_3,D_1] = D_2.
 $$</p>
-<p><em>Proof.</em> The three inner derivations span $\operatorname{Im}\mathbb{H}/\mathbb{R}e_0$ modulo the centre, which is three-dimensional; the brackets follow from $[e_1,e_2] = 2e_3$, $[e_2,e_3] = 2e_1$, $[e_3,e_1] = 2e_2$ and $D_k = \tfrac12\operatorname{ad}_{e_k}$.</p>
-<p><strong>Example.</strong> $D_1 = \tfrac12\operatorname{ad}_{e_1}$ vanishes on $e_1$ and acts by $D_1(e_2) = e_3$, $D_1(e_3) = -e_2$: indeed $\tfrac12(e_1e_2-e_2e_1) = \tfrac12(e_3+e_3) = e_3$ and $\tfrac12(e_1e_3-e_3e_1) = \tfrac12(-e_2-e_2) = -e_2$. It is the infinitesimal generator of the half-turn about $e_1$.</p>
+<p><em>Proof.</em> The three inner derivations span $\operatorname{Im}\mathbb{H}/\mathbb{R}e_t$ modulo the centre, which is three-dimensional; the brackets follow from $[\vec e_x,\vec e_y] = 2\vec e_z$, $[\vec e_y,\vec e_z] = 2\vec e_x$, $[\vec e_z,\vec e_x] = 2\vec e_y$ and $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$.</p>
+<p><strong>Example.</strong> $D_1 = \tfrac12\operatorname{ad}_{\vec e_x}$ vanishes on $\vec e_x$ and acts by $D_1(\vec e_y) = \vec e_z$, $D_1(\vec e_z) = -\vec e_y$: indeed $\tfrac12(\vec e_x\vec e_y-\vec e_y\vec e_x) = \tfrac12(\vec e_z+\vec e_z) = \vec e_z$ and $\tfrac12(\vec e_x\vec e_z-\vec e_z\vec e_x) = \tfrac12(-\vec e_y-\vec e_y) = -\vec e_y$. It is the infinitesimal generator of the half-turn about $\vec e_x$.</p>
 <h2 id="the-lie-algebra-statement">The Lie Algebra Statement</h2>
 <p><strong>Theorem.</strong> The derivation Lie algebra is the orthogonal Lie algebra of the vector subspace,</p>
 <p>$$
@@ -108,7 +107,7 @@ $$</p>
 <p><em>Proof.</em> The dependence only on the class modulo the centre is the kernel of $\operatorname{ad}$; the exponential statement is the identity quoted in the theorem.</p>
 <h2 id="summary">Summary</h2>
 <p>Every $\mathbb{R}$-algebra automorphism of the quaternion algebra is inner, by Skolem–Noether applied to the central simple algebra $\mathbb{H}$, and the inner automorphisms form the group $Sp(1)/\{\pm1\}\cong SO(3)$ of rotations of the imaginary subspace; the group is connected and compact, diffeomorphic to $\mathbb{RP}^3$, of dimension three, and the anti-automorphism of quaternion conjugation is not among its elements. There is no further coset of automorphisms, because the centre $\mathbb{R}$ has no non-trivial automorphism.</p>
-<p>Every derivation of $\mathbb{H}$ is inner, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_0\cong\operatorname{Im}\mathbb{H}$, a three-dimensional real Lie algebra with basis $D_k = \tfrac12\operatorname{ad}_{e_k}$ and brackets $[D_1,D_2] = D_3$ and cyclic; under the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ it is $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, and $\exp(t\operatorname{ad}_a) = \iota_{\exp(ta)}$ identifies it as the Lie algebra of the automorphism group.</p>
+<p>Every derivation of $\mathbb{H}$ is inner, so $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})\cong\mathbb{H}/\mathbb{R}e_t\cong\operatorname{Im}\mathbb{H}$, a three-dimensional real Lie algebra with basis $D_k = \tfrac12\operatorname{ad}_{\vec e_k}$ and brackets $[D_1,D_2] = D_3$ and cyclic; under the bracket $[\vec q,\vec p] = 2(\vec q\times\vec p)$ it is $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, and $\exp(t\operatorname{ad}_a) = \iota_{\exp(ta)}$ identifies it as the Lie algebra of the automorphism group.</p>
 <p>The definite norm of $\mathbb{H}$ is what keeps its two groups compact, and the smallness of its centre leaves no further coset of automorphisms.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -124,15 +123,15 @@ $$</p>
 <td>The quaternion algebra, central simple over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Basis, $e_k^2 = -e_0$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>${}^{\natural}$</td>
 <td>Quaternion conjugation, an anti-automorphism, not in $\operatorname{Aut}$</td>
 </tr>
 <tr>
-<td>$\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$</td>
+<td>$\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t$</td>
 <td>Centre; kernel of every derivation</td>
 </tr>
 <tr>
@@ -156,7 +155,7 @@ $$</p>
 <td>Derivation algebra, dimension $3$</td>
 </tr>
 <tr>
-<td>$D_k = \tfrac12\operatorname{ad}_{e_k}$</td>
+<td>$D_k = \tfrac12\operatorname{ad}_{\vec e_k}$</td>
 <td>Basis with $[D_1,D_2] = D_3$ and cyclic</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,7 +60,7 @@
 </ul>
 <p>Two mechanisms generate the twelve, and they are the two sections that follow. The first is the <strong>grid of the four general products</strong>, a product with an involution inserted into a slot, which gives the four general products and their four physical jobs. The second is the <strong>class-preserving split</strong> of each general product into its symmetric and its antisymmetric half, which gives the eight parts. The twelve are the four general products together with the eight parts.</p>
 <p><strong>Boundaries.</strong> The comparison of the four general products with one another is <em>The Four General Products and Their Physical Readings</em>, which owns the grid, the two slot rules and the signature table of the four forms on the remarkable subspaces. The operators of the twelve, their adjoints and their brackets, are <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, which follows this article and reads the same twelve through the maps their elements define. The naming of the twelve, the method of the split, the products in coordinates, the laws, the units and the images are the mathematics articles <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> and <em>The 12 Products of the Biquaternioid Complex Space</em>. What is added here is the reading of the twelve structures side by side on the three axes, and the placement of each structure by its form.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$ and $e_1e_2=e_3$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with complex coefficients $Q_\mu$ and vector part $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $e_1,e_2,e_3$; the coefficientwise conjugation $\bar{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The scalar part is $\mathrm{Sc}(\tilde X)=X_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$; $(\vec P,\vec Q)$ is the complex bilinear dot product and $\vec P\times\vec Q$ the complex bilinear cross product; $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the sectors $\mathbb{M}_{\pm}$, and the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the relations $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and central $i$ with $i^{2}=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with complex coefficients $Q_\mu$ and vector part $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $\vec e_x,\vec e_y,\vec e_z$; the coefficientwise conjugation $\bar{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The scalar part is $\mathrm{Sc}(\tilde X)=X_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$; $(\vec P,\vec Q)$ is the complex bilinear dot product and $\vec P\times\vec Q$ the complex bilinear cross product; $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the sectors $\mathbb{M}_{\pm}$, and the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
 <h2 id="the-grid-of-the-four-general-products">The Grid of the Four General Products</h2>
 <p><strong>Definition (a general product with an involution in a slot).</strong> A general product is written</p>
 <p>$$
@@ -83,28 +82,28 @@ $$</p>
 <tr>
 <td>GPA (algebra over $\mathbb{C}$)</td>
 <td>$\tilde P\tilde Q$</td>
-<td>$P_0Q_0-(\vec P,\vec Q)$</td>
+<td>$P_0Q_t-(\vec P,\vec Q)$</td>
 <td>identity</td>
 <td>composition</td>
 </tr>
 <tr>
 <td>GPS (sesqualgebra over $(\mathbb{C},\bar{\cdot})$)</td>
 <td>$\tilde P\tilde Q^{*}$</td>
-<td>$P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$</td>
+<td>$P_0\overline{Q_t}+(\vec P,\overline{\vec Q})$</td>
 <td>${}^{*}$</td>
 <td>probability</td>
 </tr>
 <tr>
 <td>GQA (algebra over $\mathbb{C}$)</td>
 <td>$\tilde P^{\natural}\tilde Q$</td>
-<td>$P_0Q_0+(\vec P,\vec Q)$</td>
+<td>$P_0Q_t+(\vec P,\vec Q)$</td>
 <td>identity</td>
 <td>causality</td>
 </tr>
 <tr>
 <td>GQS (sesqualgebra over $(\mathbb{C},\bar{\cdot})$)</td>
 <td>$\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>$P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
+<td>$P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$</td>
 <td>${}^{*}$</td>
 <td>gauge</td>
 </tr>
@@ -142,50 +141,50 @@ $$</p>
 <tr>
 <td>GPA</td>
 <td>$\tilde P\tilde Q$</td>
-<td>$P_0Q_0-(\vec P,\vec Q)$</td>
-<td>$+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$</td>
+<td>$P_0Q_t-(\vec P,\vec Q)$</td>
+<td>$+P_0\vec Q+Q_t\vec P+\vec P\times\vec Q$</td>
 </tr>
 <tr>
 <td>GPS</td>
 <td>$\tilde P\tilde Q^{*}$</td>
-<td>$P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$</td>
-<td>$-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$</td>
+<td>$P_0\overline{Q_t}+(\vec P,\overline{\vec Q})$</td>
+<td>$-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$</td>
 </tr>
 <tr>
 <td>GQA</td>
 <td>$\tilde P^{\natural}\tilde Q$</td>
-<td>$P_0Q_0+(\vec P,\vec Q)$</td>
-<td>$+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$</td>
+<td>$P_0Q_t+(\vec P,\vec Q)$</td>
+<td>$+P_0\vec Q-Q_t\vec P-\vec P\times\vec Q$</td>
 </tr>
 <tr>
 <td>GQS</td>
 <td>$\tilde P^{\natural}\tilde Q^{*}$</td>
-<td>$P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
-<td>$-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$</td>
+<td>$P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$</td>
+<td>$-P_0\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}$</td>
 </tr>
 <tr>
 <td>SPA</td>
 <td>$\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)$</td>
-<td>$P_0Q_0-(\vec P,\vec Q)$</td>
-<td>$+P_0\vec Q+Q_0\vec P$</td>
+<td>$P_0Q_t-(\vec P,\vec Q)$</td>
+<td>$+P_0\vec Q+Q_t\vec P$</td>
 </tr>
 <tr>
 <td>SPS</td>
 <td>$\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q}\tilde P^{\natural}\bigr)$</td>
-<td>$P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$</td>
+<td>$P_0\overline{Q_t}+(\vec P,\overline{\vec Q})$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>SQA</td>
 <td>$\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)$</td>
-<td>$P_0Q_0+(\vec P,\vec Q)$</td>
+<td>$P_0Q_t+(\vec P,\vec Q)$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>SQS</td>
 <td>$\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$</td>
-<td>$P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$</td>
-<td>$-P_0\overline{\vec Q}-\overline{Q_0}\vec P$</td>
+<td>$P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$</td>
+<td>$-P_0\overline{\vec Q}-\overline{Q_t}\vec P$</td>
 </tr>
 <tr>
 <td>APA</td>
@@ -197,13 +196,13 @@ $$</p>
 <td>APS</td>
 <td>$\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q}\tilde P^{\natural}\bigr)$</td>
 <td>$0$</td>
-<td>$-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$</td>
+<td>$-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$</td>
 </tr>
 <tr>
 <td>AQA</td>
 <td>$\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)$</td>
 <td>$0$</td>
-<td>$P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$</td>
+<td>$P_0\vec Q-Q_t\vec P-\vec P\times\vec Q$</td>
 </tr>
 <tr>
 <td>AQS</td>
@@ -233,7 +232,7 @@ $$</p>
 <tr>
 <td>GPA</td>
 <td>$\tilde P\tilde Q$</td>
-<td>$e_0$, both sides</td>
+<td>$e_t$, both sides</td>
 <td>associative</td>
 <td>—</td>
 <td>all of $\mathbb{B}$</td>
@@ -243,7 +242,7 @@ $$</p>
 <tr>
 <td>GPS</td>
 <td>$\tilde P\tilde Q^{*}$</td>
-<td>$e_0$, right only</td>
+<td>$e_t$, right only</td>
 <td>not associative</td>
 <td>—</td>
 <td>all of $\mathbb{B}$</td>
@@ -253,7 +252,7 @@ $$</p>
 <tr>
 <td>GQA</td>
 <td>$\tilde P^{\natural}\tilde Q$</td>
-<td>$e_0$, left only</td>
+<td>$e_t$, left only</td>
 <td>not associative</td>
 <td>—</td>
 <td>all of $\mathbb{B}$</td>
@@ -273,7 +272,7 @@ $$</p>
 <tr>
 <td>SPA</td>
 <td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
-<td>$e_0$, both sides</td>
+<td>$e_t$, both sides</td>
 <td>commutative</td>
 <td><strong>Jordan holds</strong></td>
 <td>all of $\mathbb{B}$</td>
@@ -352,7 +351,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Read as a whole, the table has three patterns, and the three comparison sections below take them one at a time. The <strong>units</strong> are carried by four structures and by no others: the two-sided unit $e_0$ by the two plain bilinear structures and by no other pair, the right unit by the general plain sesquilinear product, and the left unit by the general quaternionic product. The <strong>images</strong> fall into four classes — the whole space for the five structures with a scalar or a vector part in both, the centre for the two central-valued symmetric parts, the vector subspace for the four antisymmetric parts, and no remarkable subspace for SQS. The <strong>forms</strong> are carried by eight of the twelve and by no antisymmetric part.</p>
+<p>Read as a whole, the table has three patterns, and the three comparison sections below take them one at a time. The <strong>units</strong> are carried by four structures and by no others: the two-sided unit $e_t$ by the two plain bilinear structures and by no other pair, the right unit by the general plain sesquilinear product, and the left unit by the general quaternionic product. The <strong>images</strong> fall into four classes — the whole space for the five structures with a scalar or a vector part in both, the centre for the two central-valued symmetric parts, the vector subspace for the four antisymmetric parts, and no remarkable subspace for SQS. The <strong>forms</strong> are carried by eight of the twelve and by no antisymmetric part.</p>
 <h2 id="compared-by-law-which-identity-survives">Compared by Law: Which Identity Survives</h2>
 <p><strong>Definition (the law and the identity of a structure).</strong> Each of the twelve is asked for the law of its kind: associativity for a general product, (conjugate-)commutativity for a symmetric part, (conjugate-)alternation for an antisymmetric part. In addition, a symmetrisation is a <strong>Jordan</strong> product exactly when it satisfies the Jordan identity $\tilde X^{2}\bullet(\tilde Y\bullet\tilde X)=(\tilde X^{2}\bullet\tilde Y)\bullet\tilde X$ with $\tilde X^{2}=\tilde X\bullet\tilde X$, and an antisymmetrisation is a <strong>Lie</strong> product exactly when it satisfies the Jacobi identity in the cyclic form of the conventions of <em>The 12 Products of the Biquaternioid Complex Space</em>.</p>
 <h3 id="the-two-classical-products">The Two Classical Products</h3>
@@ -378,48 +377,48 @@ $$</p>
 <tr>
 <td>SPS</td>
 <td>Jordan</td>
-<td>$\tilde X=e_1$</td>
-<td>the sides are $0$ and $e_0$</td>
+<td>$\tilde X=\vec e_x$</td>
+<td>the sides are $0$ and $e_t$</td>
 <td>$7$ of $8$</td>
 </tr>
 <tr>
 <td>SQA</td>
 <td>Jordan</td>
-<td>$\tilde X=e_1$</td>
-<td>the sides are $0$ and $e_0$</td>
+<td>$\tilde X=\vec e_x$</td>
+<td>the sides are $0$ and $e_t$</td>
 <td>$6$ of $8$ elements</td>
 </tr>
 <tr>
 <td>SQS</td>
 <td>Jordan</td>
-<td>$\tilde X=e_1$</td>
-<td>the sides are $-e_0$ and $e_0$</td>
+<td>$\tilde X=\vec e_x$</td>
+<td>the sides are $-e_t$ and $e_t$</td>
 <td>$4$ of $8$</td>
 </tr>
 <tr>
 <td>APS</td>
 <td>Jacobi</td>
-<td>$(e_0,e_1,e_2)$</td>
-<td>$e_3$</td>
+<td>$(e_t,\vec e_x,\vec e_y)$</td>
+<td>$\vec e_z$</td>
 <td>$252$ of $512$</td>
 </tr>
 <tr>
 <td>AQA</td>
 <td>Jacobi</td>
-<td>$(e_0,e_1,e_2)$</td>
-<td>$-e_3$</td>
+<td>$(e_t,\vec e_x,\vec e_y)$</td>
+<td>$-\vec e_z$</td>
 <td>$144$ of $512$ triples</td>
 </tr>
 <tr>
 <td>AQS</td>
 <td>Jacobi</td>
-<td>$(e_1,e_1,ie_2)$</td>
-<td>$-2ie_2$</td>
+<td>$(\vec e_x,\vec e_x,i\vec e_y)$</td>
+<td>$-2i\vec e_y$</td>
 <td>$72$ of $512$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The three Jacobi failures have three different reasons. For APS and AQS the reason is the <strong>obstruction of the sesquilinear antisymmetrisation</strong>, which is a Lie bracket only after the collapse of the two involutions that a genuine sesqualgebra forbids (<em>Lie Algebras of Sesqualgebras</em>); for AQA it is the <strong>non-associativity</strong> of the general quaternionic product it comes from. The three Jordan failures are witnessed on the same element and are of two shapes: the outright vanishing of SPS and SQA, whose symmetric square on $e_1$ is $e_0$, and the central shift of SQS, whose symmetric square on $e_1$ is $-e_0$, differing by $2e_0$ rather than by $e_0$.</p>
+<p>The three Jacobi failures have three different reasons. For APS and AQS the reason is the <strong>obstruction of the sesquilinear antisymmetrisation</strong>, which is a Lie bracket only after the collapse of the two involutions that a genuine sesqualgebra forbids (<em>Lie Algebras of Sesqualgebras</em>); for AQA it is the <strong>non-associativity</strong> of the general quaternionic product it comes from. The three Jordan failures are witnessed on the same element and are of two shapes: the outright vanishing of SPS and SQA, whose symmetric square on $\vec e_x$ is $e_t$, and the central shift of SQS, whose symmetric square on $\vec e_x$ is $-e_t$, differing by $2e_t$ rather than by $e_t$.</p>
 <p><strong>Caution on the counts.</strong> The counts are counts on a chosen basis and are not invariants of the operation; they are given as the <strong>shape</strong> of each failure and they change with the basis. What is invariant is the existence of the failure and its witness. The one structural distinction the counts carry is that the Jacobi failure of AQS is the sparsest and the only one whose witness needs a complex element off the real basis, so it is the failure invisible on the real forms; the failure of APS is the densest, failing on half the triples.</p>
 <h2 id="compared-by-form-what-each-structure-measures">Compared by Form: What Each Structure Measures</h2>
 <p>The form axis is where the twelve are the least alike, and it is decided by one principle and one slot rule.</p>
@@ -475,22 +474,22 @@ $$</p>
 <h3 id="the-image">The Image</h3>
 <p>The image of a product is the subspace its values fill, and it falls into three classes.</p>
 <ul>
-<li>The <strong>whole space</strong> $\mathbb{B}$ is the image of the five structures whose value has both a scalar and a vector part in general: the four general products, where no term is forced to vanish, and the symmetric plain bilinear product SPA, whose cross term drops but which still reaches every direction through $P_0\vec Q+Q_0\vec P$.</li>
-<li>The <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$ is the image of the two central-valued symmetric parts SPS and SQA, whose closed forms are scalar multiples of $e_0$. A central-valued product is a <strong>measurement</strong> and not a composition: its value is a number, not an element that can be fed back into the product.</li>
+<li>The <strong>whole space</strong> $\mathbb{B}$ is the image of the five structures whose value has both a scalar and a vector part in general: the four general products, where no term is forced to vanish, and the symmetric plain bilinear product SPA, whose cross term drops but which still reaches every direction through $P_0\vec Q+Q_t\vec P$.</li>
+<li>The <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}$ is the image of the two central-valued symmetric parts SPS and SQA, whose closed forms are scalar multiples of $e_t$. A central-valued product is a <strong>measurement</strong> and not a composition: its value is a number, not an element that can be fed back into the product.</li>
 <li>The <strong>vector subspace</strong> $\mathrm{Vect}(\mathbb{B})$ is the image of the four antisymmetric parts, whose scalar part vanishes identically.</li>
 </ul>
 <p>The one structure whose image is in no remarkable subspace is <strong>SQS</strong>: its value is the sum of a central scalar and a mixed vector term that is a multiple of neither the centre nor a fixed direction, so no subspace of the remarkable subspaces contains all its values.</p>
 <h3 id="the-unit">The Unit</h3>
-<p>$e_0$ is a unit of a structure exactly when the structure is the plain product read symmetrically enough. The two-sided unit is carried by exactly two structures, GPA and SPA, and it is the same fact: the symmetrisation drops the cross term, which is the term that stops a plain product from being commutative, and it leaves $e_0$ a unit. The general plain sesquilinear product GPS has $e_0$ as a <strong>right</strong> unit only, because the star conjugates the second factor; the general quaternionic product GQA has $e_0$ as a <strong>left</strong> unit only, because the natural conjugation of the second factor reads the parameter, not the argument. No other structure has a unit, and in particular no antisymmetric part has one and the fourth general product GQS has none on either side.</p>
+<p>$e_t$ is a unit of a structure exactly when the structure is the plain product read symmetrically enough. The two-sided unit is carried by exactly two structures, GPA and SPA, and it is the same fact: the symmetrisation drops the cross term, which is the term that stops a plain product from being commutative, and it leaves $e_t$ a unit. The general plain sesquilinear product GPS has $e_t$ as a <strong>right</strong> unit only, because the star conjugates the second factor; the general quaternionic product GQA has $e_t$ as a <strong>left</strong> unit only, because the natural conjugation of the second factor reads the parameter, not the argument. No other structure has a unit, and in particular no antisymmetric part has one and the fourth general product GQS has none on either side.</p>
 <h2 id="the-twelve-on-the-real-forms-twelve-to-ten">The Twelve on the Real Forms: Twelve to Ten</h2>
-<p>The twelve structures are pairwise distinct on the complex space, but on the <strong>real part</strong> — the real span of $e_0,e_1,e_2,e_3$, where the coefficientwise conjugation fixes every element — two pairs coincide, and the twelve fall to ten. The two coincidences are</p>
+<p>The twelve structures are pairwise distinct on the complex space, but on the <strong>real part</strong> — the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, where the coefficientwise conjugation fixes every element — two pairs coincide, and the twelve fall to ten. The two coincidences are</p>
 <p>$$
 \mathrm{SPS}=\mathrm{SQA}
 \qquad\text{and}\qquad
 \mathrm{APA}=\mathrm{AQS}
 \qquad\text{on the real part,}
 $$</p>
-<p>because on a real vector the coefficientwise conjugation is the identity, so the symmetric plain sesquilinear product collapses to the quaternionic scalar form of SQA, and the antisymmetric quaternionic sesquilinear product $\vec P\times\overline{\vec Q}$ becomes the plain cross product $\vec P\times\vec Q$ of APA. A third distinction also disappears: the Jacobi failure of AQS, whose witness is $(e_1,e_1,ie_2)$ and needs a complex element, is <strong>invisible on the real forms</strong>, so the parity of APA and AQS, which the Jacobi identity separates on the complex space, is not separated on the real one.</p>
+<p>because on a real vector the coefficientwise conjugation is the identity, so the symmetric plain sesquilinear product collapses to the quaternionic scalar form of SQA, and the antisymmetric quaternionic sesquilinear product $\vec P\times\overline{\vec Q}$ becomes the plain cross product $\vec P\times\vec Q$ of APA. A third distinction also disappears: the Jacobi failure of AQS, whose witness is $(\vec e_x,\vec e_x,i\vec e_y)$ and needs a complex element, is <strong>invisible on the real forms</strong>, so the parity of APA and AQS, which the Jacobi identity separates on the complex space, is not separated on the real one.</p>
 <p>The real-form collapse is the reason the corpus says the twelve are twelve on the complex space and ten on the real part, and it is the one place where the complex dimension of the coefficient field, and not the algebra alone, decides a comparison. The three failures of the Jacobi kind are one on the real forms and two proper to the complex ones, and the one proper to AQS is the one whose witness carries the central imaginary.</p>
 <h2 id="the-ledger">The Ledger</h2>
 <p><strong>Proved.</strong> The twelve products, their closed forms, their scalar and vector parts, their units, their laws and their images are the mathematics of <em>The 12 Products of the Biquaternioid Complex Space</em>, recomputed here on the eight-element basis: the four general products are the four insertions of an involution into a slot; the eight parts are the class-preserving symmetrisation and antisymmetrisation of the four; exactly one general product is associative, exactly one symmetric part satisfies the Jordan identity and exactly one antisymmetric part satisfies the Jacobi identity, the two being the plain ones SPA and APA; the six other parts fail, with the witnesses and counts of the table; exactly four scalar forms are carried, by the general and the symmetric member of each family, and the antisymmetric parts carry none; the four forms are one bilinear form read through the two involutions, $H=\langle\tilde P,\tilde Q^{*}\rangle$, $N=\langle\tilde P^{\natural},\tilde Q\rangle$, $K=\langle\tilde P^{\natural},\tilde Q^{*}\rangle$; the units are carried by GPA, GPS, GQA and SPA alone; the images are the whole space, the centre or the vector subspace; and on the real part the twelve fall to ten through $\mathrm{SPS}=\mathrm{SQA}$ and $\mathrm{APA}=\mathrm{AQS}$.</p>
@@ -569,7 +568,7 @@ $$</p>
 <li>Mathematics article <em>Lie Algebras of Sesqualgebras</em>, for the obstruction that fails the Jacobi identity of the two sesquilinear antisymmetrisations, and <em>The Unitary Lie Algebra</em> and <em>The Hermitian Jordan Algebra</em> for the two structures that pass.</li>
 <li>Companion article <em>The Four General Products and Their Physical Readings</em>, for the grid, the two slot rules and the signature table of the four forms on the remarkable subspaces.</li>
 <li>Companion article <em>The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket</em>, for the same twelve read through the maps their elements define.</li>
-<li>Companion article <em>The Bilinear Product on the Biquaternion Space</em>, for the sector sign $\langle\tilde P,\tilde Q\rangle$ and the composition reading of the plain product, and <em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em>, for the interval $\langle\cdot\rangle_{\natural}$ read as the square of a product.</li>
+<li>Companion article <em>The Products, Their Forms and Their Norms</em>, for the sector sign $\langle\tilde P,\tilde Q\rangle$ and the composition reading of the plain product, and <em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em>, for the interval $\langle\cdot\rangle_{\natural}$ read as the square of a product.</li>
 <li>Companion article <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em>, for the positivity of $\langle\tilde P,\tilde Q\rangle_{*}$ and the Born pairing, and <em>The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$</em>, for the indefiniteness of the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}$.</li>
 <li>Companion article <em>Conventions in the Biquaternion Universe</em>, for the conventions of the algebra, its conjugations and its subspaces.</li>
 </ul>

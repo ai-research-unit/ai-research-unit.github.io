@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,27 +51,27 @@
       <div class="article-body">
         <h1 id="reduced-biquaternion-objects-and-their-matrix-correspondences"><strong>Reduced Biquaternion Objects and Their Matrix Correspondences</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $T=A+Bj$ and idempotent coordinates $(q_1,q_2)=(A+B,A-B)$. The regular representation, developed in <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>, sends $T$ to the matrix of the left multiplication $L_{T}$ in the basis $1,j$,</p>
+<p>The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_++jQ_-$ and idempotent coordinates $(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$. The regular representation, developed in <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>, sends $Q_\pm$ to the matrix of the left multiplication $L_{Q_\pm}$ in the basis $1,j$,</p>
 <p>$$
-\mathsf{M}(T)=\begin{pmatrix}A&B\\ B&A\end{pmatrix},
+\mathsf{M}(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
 $$</p>
 <p>and the change of basis to the idempotent coordinates diagonalises it. This article is the catalogue: it takes the objects of the algebra — the elements, the four forms and their norms, the idempotents, the zero divisors, the groups, the ideals, the operators — and writes the matrix that corresponds to each, records which classical invariant of a matrix computes which object, and states which correspondences are special to the commutative case.</p>
-<p>The first correspondence is the reason the model is simple: in the idempotent basis the algebra acts by diagonal matrices, so the eigenvalues of $\mathsf{M}(T)$ are exactly the idempotent coordinates, the determinant is exactly the reduced norm and the trace is twice the scalar part, and the spectrum of the element is the pair of its idempotent coordinates. The second is the failure of the model to see everything: because the matrices are diagonal, the left and the right multiplications coincide, the minimal left ideals of the model are the coordinate lines rather than the columns, and the two-sided multipliers span only the diagonal endomorphisms, of real dimension four, not the sixteen-dimensional space of all real-linear endomorphisms.</p>
-<p>The article owns the dictionary and the list of objects. The model and the map on the basis are <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the algebra read in the model is <em>The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em>; the representations among themselves are <em>Reduced Biquaternion Other Algebraic Element Representations</em>; the multiplication operators are <em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em>; the forms and the norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the ideals and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>; the groups are <em>The Group of Units of the General Plain Algebra of the Reduced Biquaternions</em>, <em>The Unitary Group of the Reduced Biquaternion Algebra</em> and <em>Reduced Biquaternion Versors and the Orthogonal Group</em>. The non-commutative companion, where the same dictionary has a different shape because left and right multiplication differ, is <em>Biquaternion Objects and Their Matrix Correspondences</em>.</p>
+<p>The first correspondence is the reason the model is simple: in the idempotent basis the algebra acts by diagonal matrices, so the eigenvalues of $\mathsf{M}(Q_\pm)$ are exactly the idempotent coordinates, the determinant is exactly the reduced norm and the trace is twice the scalar part, and the spectrum of the element is the pair of its idempotent coordinates. The second is the failure of the model to see everything: because the matrices are diagonal, the left and the right multiplications coincide, the minimal left ideals of the model are the coordinate lines rather than the columns, and the two-sided multipliers span only the diagonal endomorphisms, of real dimension four, not the sixteen-dimensional space of all real-linear endomorphisms.</p>
+<p>The article owns the dictionary and the list of objects. The model and the map on the basis are <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the algebra read in the model is <em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em>; the representations among themselves are <em>Reduced Biquaternion Other Algebraic Element Representations</em>; the multiplication operators are <em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em>; the forms and the norms are <em>The Four Products, Their Forms and Their Algebraic Norms</em>; the ideals and the Peirce decomposition are <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the groups are <em>The Group of Units of the Algebra of the Reduced Biquaternions</em>, <em>The Unitary Group of the Reduced Biquaternion Algebra</em> and <em>Reduced Biquaternion Versors and the Orthogonal Group</em>. The non-commutative companion, where the same dictionary has a different shape because left and right multiplication differ, is <em>Biquaternion Objects and Their Matrix Correspondences</em>.</p>
 <h2 id="the-element-and-its-matrix">The Element and Its Matrix</h2>
-<p><strong>Proposition (the matrix of an element).</strong> In the basis $1,j$ the matrix of the left multiplication by $T=A+Bj$ is</p>
+<p><strong>Proposition (the matrix of an element).</strong> In the basis $1,j$ the matrix of the left multiplication by $Q_\pm=Q_++jQ_-$ is</p>
 <p>$$
-\mathsf{M}(T)=\begin{pmatrix}A&B\\ B&A\end{pmatrix},
+\mathsf{M}(Q_\pm)=\begin{pmatrix}Q_+&Q_-\\ Q_-&Q_+\end{pmatrix},
 $$</p>
-<p>of trace $2A$ and determinant $A^{2}-B^{2}$; its eigenvalues are $A+B=q_1$ and $A-B=q_2$, with eigenvectors $1+j$ and $1-j$; and the change of basis to $(\Pi_{1},\Pi_{2})$ conjugates it to the diagonal form</p>
+<p>of trace $2Q_+$ and determinant $Q_+^{2}-Q_-^{2}$; its eigenvalues are $Q_++Q_-=Q_{++}$ and $Q_+-Q_-=Q_{--}$, with eigenvectors $1+j$ and $1-j$; and the change of basis to $(\Pi_+,\Pi_-)$ conjugates it to the diagonal form</p>
 <p>$$
-\mathsf{M}_{\mathrm{d}}(T)=\begin{pmatrix}q_1&0\\ 0&q_2\end{pmatrix}.
+\mathsf{M}_{\mathrm{d}}(Q_\pm)=\begin{pmatrix}Q_{++}&0\\ 0&Q_{--}\end{pmatrix}.
 $$</p>
-<p><strong>Proof.</strong> $L_{T}(1)=T=A+Bj$ and $L_{T}(j)=Tj=B+Aj$, giving the two columns; the trace and the determinant are read from the matrix; the eigenvector $1+j$ has $L_{T}(1+j)=A+B+(A+B)j=q_1(1+j)$, and likewise $1-j$; the change of basis is the involution $\left(\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}\right)$ up to the factor $\tfrac12$, and it diagonalises the matrix.</p>
-<p><strong>Corollary (the spectrum is the idempotent pair).</strong> The spectrum of the element, that is of the operator $L_{T}$, is the pair $\{q_1,q_2\}$ of its idempotent coordinates; the reduced norm is the determinant, $\langle T\rangle_{\natural}=q_1q_2=\det\mathsf{M}(T)$; the scalar part is half the trace, $A=\tfrac12\operatorname{tr}\mathsf{M}(T)$; and the spectral radius is $\max(|q_1|,|q_2|)$.</p>
-<p><strong>Proof.</strong> The eigenvalues are $q_1$ and $q_2$ by the proposition, the product and the half-sum give the determinant and the trace, and the spectral radius is the largest modulus of an eigenvalue.</p>
-<p><strong>Remark (the two-sided multiplier and its rank).</strong> A two-sided multiplier $T\mapsto P\,T\,Q$ acts in the diagonal model by $\operatorname{diag}(p q\,q_1,\;p'q'\,q_2)$ where $p,p'$ and $q,q'$ are the idempotent coordinates of $P$ and $Q$; the space of two-sided multipliers is therefore the two-dimensional space of diagonal endomorphisms of the algebra, of complex dimension two, a proper subspace of the space of complex-linear endomorphisms, of complex dimension four, while the space of $\mathbb{R}$-linear endomorphisms has real dimension sixteen.</p>
-<p><strong>Proof.</strong> In the idempotent basis the multiplication is diagonal with the two coordinates acting independently, so $P\,T\,Q$ has coordinates $p\,q\,q_1$ and $p'q'\,q_2$; the two complex parameters $p q$ and $p'q'$ are the two diagonal entries of the matrix and the two off-diagonal entries remain zero, which is the statement about the dimensions. In the biquaternion case the analogue spans the sixteen-dimensional space, which is the difference between a commutative and a non-commutative algebra.</p>
+<p><strong>Proof.</strong> $L_{Q_\pm}(1)=Q_\pm=Q_++jQ_-$ and $L_{Q_\pm}(j)=Q_\pm j=Q_-+Q_+j$, giving the two columns; the trace and the determinant are read from the matrix; the eigenvector $1+j$ has $L_{Q_\pm}(1+j)=Q_++Q_-+(Q_++Q_-)j=Q_{++}(1+j)$, and likewise $1-j$; the change of basis is the involution $\left(\begin{smallmatrix}1&1\\ 1&-1\end{smallmatrix}\right)$ up to the factor $\tfrac12$, and it diagonalises the matrix.</p>
+<p><strong>Corollary (the spectrum is the idempotent pair).</strong> The spectrum of the element, that is of the operator $L_{Q_\pm}$, is the pair $\{Q_{++},Q_{--}\}$ of its idempotent coordinates; the reduced norm is the determinant, $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}=\det\mathsf{M}(Q_\pm)$; the scalar part is half the trace, $Q_+=\tfrac12\operatorname{tr}\mathsf{M}(Q_\pm)$; and the spectral radius is $\max(|Q_{++}|,|Q_{--}|)$.</p>
+<p><strong>Proof.</strong> The eigenvalues are $Q_{++}$ and $Q_{--}$ by the proposition, the product and the half-sum give the determinant and the trace, and the spectral radius is the largest modulus of an eigenvalue.</p>
+<p><strong>Remark (the two-sided multiplier and its rank).</strong> A two-sided multiplier $Q_\pm\mapsto P\,Q_\pm\,Q$ acts in the diagonal model by $\operatorname{diag}(p q\,Q_{++},\;p'q'\,Q_{--})$ where $p,p'$ and $q,q'$ are the idempotent coordinates of $P$ and $Q$; the space of two-sided multipliers is therefore the two-dimensional space of diagonal endomorphisms of the algebra, of complex dimension two, a proper subspace of the space of complex-linear endomorphisms, of complex dimension four, while the space of $\mathbb{R}$-linear endomorphisms has real dimension sixteen.</p>
+<p><strong>Proof.</strong> In the idempotent basis the multiplication is diagonal with the two coordinates acting independently, so $P\,Q_\pm\,Q$ has coordinates $p\,q\,Q_{++}$ and $p'q'\,Q_{--}$; the two complex parameters $p q$ and $p'q'$ are the two diagonal entries of the matrix and the two off-diagonal entries remain zero, which is the statement about the dimensions. In the biquaternion case the analogue spans the sixteen-dimensional space, which is the difference between a commutative and a non-commutative algebra.</p>
 <h2 id="the-objects-and-their-matrices">The Objects and Their Matrices</h2>
 <p><strong>The dictionary.</strong> The following table records each object of the algebra against its matrix image and against the classical invariant that computes it.</p>
 <div class="table-scroll"><table>
@@ -85,42 +84,42 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>element $T$</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)=\operatorname{diag}(q_1,q_2)$</td>
+<td>element $Q_\pm$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)=\operatorname{diag}(Q_{++},Q_{--})$</td>
 <td>the diagonal entries</td>
 </tr>
 <tr>
-<td>scalar part $A$</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)$</td>
+<td>scalar part $Q_+$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
 <td>$\tfrac12\operatorname{tr}$</td>
 </tr>
 <tr>
-<td>reduced norm $\langle T\rangle_{\natural}=q_1q_2$</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)$</td>
+<td>reduced norm $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
 <td>$\det$</td>
 </tr>
 <tr>
-<td>topological norm $\langle T\rangle_{\natural*}$</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)$</td>
+<td>topological norm $\langle Q_\pm\rangle_{\natural*}$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
 <td>$\tfrac12\lVert\cdot\rVert_{F}^{2}$, the Frobenius norm</td>
 </tr>
 <tr>
-<td>indefinite norm $\langle T\rangle_{*}=\operatorname{Re}(q_1\bar q_2)$</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)$</td>
+<td>indefinite norm $\langle Q_\pm\rangle_{*}=\operatorname{Re}(Q_{++}\bar Q_{--})$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
 <td>$\operatorname{Re}$ of the Hermitian pairing of the eigenvalues</td>
 </tr>
 <tr>
 <td>spectrum</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)$</td>
-<td>the eigenvalue set $\{q_1,q_2\}$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
+<td>the eigenvalue set $\{Q_{++},Q_{--}\}$</td>
 </tr>
 <tr>
-<td>idempotent $\Pi_{1}$</td>
+<td>idempotent $\Pi_+$</td>
 <td>$\operatorname{diag}(1,0)$</td>
 <td>the first matrix unit</td>
 </tr>
 <tr>
-<td>idempotent $\Pi_{2}$</td>
+<td>idempotent $\Pi_-$</td>
 <td>$\operatorname{diag}(0,1)$</td>
 <td>the second matrix unit</td>
 </tr>
@@ -135,8 +134,8 @@ $$</p>
 <td>$\det\neq0$</td>
 </tr>
 <tr>
-<td>inverse $T^{-1}$</td>
-<td>$\operatorname{diag}(1/q_1,1/q_2)$</td>
+<td>inverse $Q_\pm^{-1}$</td>
+<td>$\operatorname{diag}(1/Q_{++},1/Q_{--})$</td>
 <td>the inverse</td>
 </tr>
 <tr>
@@ -150,12 +149,12 @@ $$</p>
 <td>the singular values all $1$</td>
 </tr>
 <tr>
-<td>left multiplication $L_{T}$</td>
-<td>left multiplication by $\mathsf{M}_{\mathrm{d}}(T)$</td>
-<td>$\max(|q_1|,|q_2|)$</td>
+<td>left multiplication $L_{Q_\pm}$</td>
+<td>left multiplication by $\mathsf{M}_{\mathrm{d}}(Q_\pm)$</td>
+<td>$\max(\lvert Q_{++}\rvert,\lvert Q_{--}\rvert)$</td>
 </tr>
 <tr>
-<td>right multiplication $R_{T}$</td>
+<td>right multiplication $R_{Q_\pm}$</td>
 <td>the same</td>
 <td>the same</td>
 </tr>
@@ -167,46 +166,46 @@ $$</p>
 <tr>
 <td>coefficient conjugation $\bar{\cdot}$</td>
 <td>entrywise conjugation of the diagonal</td>
-<td>$\mathsf{M}_{\mathrm{d}}(T)\mapsto\overline{\mathsf{M}_{\mathrm{d}}(T)}$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)\mapsto\overline{\mathsf{M}_{\mathrm{d}}(Q_\pm)}$</td>
 </tr>
 <tr>
 <td>natural sign ${}^{\natural}$</td>
 <td>conjugation by the swap matrix $W$</td>
-<td>$W\mathsf{M}_{\mathrm{d}}(T)W$</td>
+<td>$W\mathsf{M}_{\mathrm{d}}(Q_\pm)W$</td>
 </tr>
 <tr>
 <td>star ${}^{*}$</td>
 <td>conjugation by $W$ and entrywise conjugation</td>
-<td>$W\overline{\mathsf{M}_{\mathrm{d}}(T)}W$</td>
+<td>$W\overline{\mathsf{M}_{\mathrm{d}}(Q_\pm)}W$</td>
 </tr>
 <tr>
-<td>bilinear form $\langle T,U\rangle_{\natural}$</td>
+<td>bilinear form $\langle Q_{\pm,1},Q_{\pm,2}\rangle_{\natural}$</td>
 <td>the pair of matrices</td>
-<td>$\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(T)\,W\,\mathsf{M}_{\mathrm{d}}(U)\,W\bigr)$</td>
+<td>$\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(Q_{\pm,1})\,W\,\mathsf{M}_{\mathrm{d}}(Q_{\pm,2})\,W\bigr)$</td>
 </tr>
 </tbody>
 </table></div>
 <p><strong>Proposition (the conjugation correspondences).</strong> Under the map $\mathsf{M}$ the coefficient conjugation is the entrywise conjugation, the natural sign is the conjugation by the permutation matrix $W=\left(\begin{smallmatrix}0&1\\ 1&0\end{smallmatrix}\right)$, and the star is their composite; these are the only three of the eight algebra automorphisms that are visible as matrix operations on the diagonal model.</p>
-<p><strong>Proof.</strong> The coefficient conjugation conjugates the two diagonal entries, as the elementary computation $\overline{\operatorname{diag}(q_1,q_2)}=\operatorname{diag}(\bar q_1,\bar q_2)$ gives; the natural sign exchanges them, and the permutation matrix $W$ conjugates a diagonal matrix into the diagonal matrix with exchanged entries; the star is the composite by its definition.</p>
-<p><strong>Remark (the commutativity visible in the table).</strong> The entries for $L_{T}$ and $R_{T}$ are the same row, the reason being that the algebra is commutative and its regular representation is by diagonal matrices. In the biquaternion model the two rows are different, the left and the right multiplications differ, and the difference is the whole non-commutative content of the model.</p>
+<p><strong>Proof.</strong> The coefficient conjugation conjugates the two diagonal entries, as the elementary computation $\overline{\operatorname{diag}(Q_{++},Q_{--})}=\operatorname{diag}(\bar Q_{++},\bar Q_{--})$ gives; the natural sign exchanges them, and the permutation matrix $W$ conjugates a diagonal matrix into the diagonal matrix with exchanged entries; the star is the composite by its definition.</p>
+<p><strong>Remark (the commutativity visible in the table).</strong> The entries for $L_{Q_\pm}$ and $R_{Q_\pm}$ are the same row, the reason being that the algebra is commutative and its regular representation is by diagonal matrices. In the biquaternion model the two rows are different, the left and the right multiplications differ, and the difference is the whole non-commutative content of the model.</p>
 <h2 id="the-forms-the-norms-and-the-determinants">The Forms, the Norms and the Determinants</h2>
 <p><strong>Proposition (the forms in the model).</strong> In the diagonal model</p>
 <p>$$
-\langle T\rangle_{\natural*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(T)^{*}\mathsf{M}_{\mathrm{d}}(T)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(T)\rVert_{F}^{2},
+\langle Q_\pm\rangle_{\natural*}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_{\mathrm{d}}(Q_\pm)^{*}\mathsf{M}_{\mathrm{d}}(Q_\pm)\bigr)=\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(Q_\pm)\rVert_{F}^{2},
 $$</p>
-<p>and $\langle T\rangle_{*}=\operatorname{Re}(q_1\bar q_2)$, the real part of the Hermitian pairing of the two eigenvalues, while the algebraic norm is the determinant.</p>
-<p><strong>Proof.</strong> $\operatorname{tr}(\operatorname{diag}(\bar q_1,\bar q_2)\operatorname{diag}(q_1,q_2))=|q_1|^{2}+|q_2|^{2}$, and $\langle\cdot\rangle_{\natural*}=\tfrac12(|q_1|^{2}+|q_2|^{2})$; the second identity is the computation of $\langle\cdot\rangle_{*}$ in the idempotent coordinates. The algebraic norm is an element of the algebra and is the determinant, the topological norm is a positive real and is half the squared Frobenius norm, and the two are different objects.</p>
+<p>and $\langle Q_\pm\rangle_{*}=\operatorname{Re}(Q_{++}\bar Q_{--})$, the real part of the Hermitian pairing of the two eigenvalues, while the algebraic norm is the determinant.</p>
+<p><strong>Proof.</strong> $\operatorname{tr}(\operatorname{diag}(\bar Q_{++},\bar Q_{--})\operatorname{diag}(Q_{++},Q_{--}))=|Q_{++}|^{2}+|Q_{--}|^{2}$, and $\langle\cdot\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; the second identity is the computation of $\langle\cdot\rangle_{*}$ in the idempotent coordinates. The algebraic norm is an element of the algebra and is the determinant, the topological norm is a positive real and is half the squared Frobenius norm, and the two are different objects.</p>
 <p><strong>Corollary (the Cauchy–Schwarz defect).</strong> The algebraic norm is multiplicative and the topological norm is not, so the determinant of a product is the product of the determinants while the Frobenius norm of a product need not be the product of the Frobenius norms; the two statements are the matrix form of the warning that the algebraic and the topological norms are distinct.</p>
-<p><strong>Proof.</strong> $\det(\mathsf{M}(T)\mathsf{M}(W))=\det\mathsf{M}(T)\det\mathsf{M}(W)$, which is $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$; the Frobenius norm is not multiplicative in general.</p>
+<p><strong>Proof.</strong> $\det(\mathsf{M}(Q_{\pm,1})\mathsf{M}(Q_{\pm,2}))=\det\mathsf{M}(Q_{\pm,1})\det\mathsf{M}(Q_{\pm,2})$, which is $\langle Q_{\pm,1}Q_{\pm,2}\rangle_{\natural}=\langle Q_{\pm,1}\rangle_{\natural}\langle Q_{\pm,2}\rangle_{\natural}$; the Frobenius norm is not multiplicative in general.</p>
 <h2 id="the-groups-in-the-model">The Groups in the Model</h2>
-<p><strong>Proposition (the groups).</strong> The group of units is the diagonal subgroup of $GL_{2}(\mathbb{C})$; the norm-one group is its determinant-one part; the unitary group $U(\mathbb{B}_{\mathrm{r}})$ is the group of diagonal unitary matrices, which is a maximal torus of the unitary group $U(2)$; and the versors of the bilinear form are the determinant-one diagonal matrices without the modulus restriction.</p>
-<p><strong>Proof.</strong> Every unit is $\operatorname{diag}(q_1,q_2)$ with $q_1q_2\neq0$, and these form the diagonal subgroup; the conditions $\langle\cdot,\cdot\rangle_{\natural}=1$ and $|q_1|=|q_2|=1$ cut the determinant-one part and the diagonal unitary group; the diagonal unitary matrices are the diagonal matrices inside $U(2)$, which is a maximal torus because it is a maximal abelian subgroup consisting of diagonalisable elements.</p>
+<p><strong>Proposition (the groups).</strong> The group of units is the diagonal subgroup of $GL_{2}(\mathbb{C})$; the norm-one group is its determinant-one part; the unitary group $\mathrm{U}(\mathbb{B}_{\mathrm{r}})$ is the group of diagonal unitary matrices, which is a maximal torus of the unitary group $\mathrm{U}(2)$; and the versors of the bilinear form are the determinant-one diagonal matrices without the modulus restriction.</p>
+<p><strong>Proof.</strong> Every unit is $\operatorname{diag}(Q_{++},Q_{--})$ with $Q_{++}Q_{--}\neq0$, and these form the diagonal subgroup; the conditions $\langle\cdot,\cdot\rangle_{\natural}=1$ and $|Q_{++}|=|Q_{--}|=1$ cut the determinant-one part and the diagonal unitary group; the diagonal unitary matrices are the diagonal matrices inside $\mathrm{U}(2)$, which is a maximal torus because it is a maximal abelian subgroup consisting of diagonalisable elements.</p>
 <h2 id="the-ideals-the-idempotents-and-the-zero-divisors">The Ideals, the Idempotents and the Zero Divisors</h2>
 <p><strong>Proposition (the ideals and the minimal ideals).</strong> The minimal left ideals of the algebra correspond to the two coordinate lines of the diagonal model; the two-sided ideals are $\{0\}$, the two lines, and the algebra; and the zero divisors are the singular elements, that is the matrices of rank one and the zero matrix.</p>
-<p><strong>Proof.</strong> $\mathbb{B}_{\mathrm{r}}\Pi_{1}=\mathbb{C}\Pi_{1}$ is a minimal left ideal, and in the model it is the span of the first matrix unit; a two-sided ideal is a sum of the two coordinate lines, and the only possible sums are the empty one, the two single lines and the whole algebra; the zero divisors are the elements with a vanishing coordinate, which are exactly the singular diagonal matrices.</p>
+<p><strong>Proof.</strong> $\mathbb{B}_{\mathrm{r}}\Pi_+=\mathbb{C}\Pi_+$ is a minimal left ideal, and in the model it is the span of the first matrix unit; a two-sided ideal is a sum of the two coordinate lines, and the only possible sums are the empty one, the two single lines and the whole algebra; the zero divisors are the elements with a vanishing coordinate, which are exactly the singular diagonal matrices.</p>
 <p><strong>Remark (the difference from the biquaternion model).</strong> In the biquaternion algebra the minimal left ideals are two-dimensional, being the columns of $M_{2}(\mathbb{C})$, and the algebra is simple, so it has no proper two-sided ideal; in the reduced algebra the minimal ideals are one-dimensional, the algebra is semisimple with two simple components, and the two lines are the two summands of the direct product.</p>
 <h2 id="summary">Summary</h2>
-<p>The matrix model of the reduced biquaternion algebra sends an element $T=A+Bj$ to the two-by-two matrix $\left(\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}\right)$, and the change of basis to the idempotents conjugates it to the diagonal matrix $\operatorname{diag}(q_1,q_2)$. The dictionary is then exact: the eigenvalues are the idempotent coordinates, the determinant is the reduced norm, half the trace is the scalar part, half the squared Frobenius norm is the topological norm, the indefinite norm is the real part of the Hermitian pairing of the eigenvalues, the idempotents are the matrix units, the zero divisors are the singular matrices, the units are the invertible diagonal matrices, the norm-one group is their determinant-one part, the unitary group is the diagonal unitary group, a maximal torus of $U(2)$, and the left and the right multiplications coincide because the model is diagonal. The coefficient conjugation, the natural sign and the star are the entrywise conjugation, the conjugation by the swap matrix and their composite. The two-sided multipliers span exactly the diagonal endomorphisms, of complex dimension two, where in the biquaternion model they span the whole endomorphism algebra, of complex dimension sixteen; the minimal ideals are one-dimensional and the algebra is a direct product of two fields, which are the two lines visible as the two coordinate lines of the diagonal model.</p>
+<p>The matrix model of the reduced biquaternion algebra sends an element $Q_\pm=Q_++jQ_-$ to the two-by-two matrix $\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$, and the change of basis to the idempotents conjugates it to the diagonal matrix $\operatorname{diag}(Q_{++},Q_{--})$. The dictionary is then exact: the eigenvalues are the idempotent coordinates, the determinant is the reduced norm, half the trace is the scalar part, half the squared Frobenius norm is the topological norm, the indefinite norm is the real part of the Hermitian pairing of the eigenvalues, the idempotents are the matrix units, the zero divisors are the singular matrices, the units are the invertible diagonal matrices, the norm-one group is their determinant-one part, the unitary group is the diagonal unitary group, a maximal torus of $\mathrm{U}(2)$, and the left and the right multiplications coincide because the model is diagonal. The coefficient conjugation, the natural sign and the star are the entrywise conjugation, the conjugation by the swap matrix and their composite. The two-sided multipliers span exactly the diagonal endomorphisms, of complex dimension two, where in the biquaternion model they span the whole endomorphism algebra, of complex dimension sixteen; the minimal ideals are one-dimensional and the algebra is a direct product of two fields, which are the two lines visible as the two coordinate lines of the diagonal model.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -217,31 +216,31 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathsf{M}(T)=\left(\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}\right)$</td>
+<td>$\mathsf{M}(Q_\pm)=\left(\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}\right)$</td>
 <td>the matrix of the left multiplication in the basis $1,j$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_{\mathrm{d}}(T)=\operatorname{diag}(q_1,q_2)$</td>
+<td>$\mathsf{M}_{\mathrm{d}}(Q_\pm)=\operatorname{diag}(Q_{++},Q_{--})$</td>
 <td>its diagonal form in the idempotent basis</td>
 </tr>
 <tr>
-<td>$q_1=A+B$, $q_2=A-B$</td>
+<td>$Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$</td>
 <td>the eigenvalues, the idempotent coordinates</td>
 </tr>
 <tr>
-<td>$\det\mathsf{M}_{\mathrm{d}}(T)=q_1q_2=\langle T\rangle_{\natural}$</td>
+<td>$\det\mathsf{M}_{\mathrm{d}}(Q_\pm)=Q_{++}Q_{--}=\langle Q_\pm\rangle_{\natural}$</td>
 <td>the reduced norm</td>
 </tr>
 <tr>
-<td>$\tfrac12\operatorname{tr}\mathsf{M}_{\mathrm{d}}(T)=A$</td>
+<td>$\tfrac12\operatorname{tr}\mathsf{M}_{\mathrm{d}}(Q_\pm)=Q_+$</td>
 <td>the scalar part</td>
 </tr>
 <tr>
-<td>$\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(T)\rVert_{F}^{2}=\langle T\rangle_{\natural*}$</td>
+<td>$\tfrac12\lVert\mathsf{M}_{\mathrm{d}}(Q_\pm)\rVert_{F}^{2}=\langle Q_\pm\rangle_{\natural*}$</td>
 <td>the topological norm</td>
 </tr>
 <tr>
-<td>$\operatorname{Re}(q_1\bar q_2)=\langle T\rangle_{*}$</td>
+<td>$\operatorname{Re}(Q_{++}\bar Q_{--})=\langle Q_\pm\rangle_{*}$</td>
 <td>the indefinite norm</td>
 </tr>
 <tr>
@@ -249,7 +248,7 @@ $$</p>
 <td>the swap matrix, giving the natural sign by conjugation</td>
 </tr>
 <tr>
-<td>$L_{T}=R_{T}$</td>
+<td>$L_{Q_\pm}=R_{Q_\pm}$</td>
 <td>the equality of the left and the right multiplication, the commutativity in the model</td>
 </tr>
 </tbody>
@@ -257,9 +256,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em> (<code>articles_maths/introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.md</code>), for the construction of the model and the map on the basis.</li>
-<li><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md</code>), for the algebra read in the model.</li>
+<li><em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md</code>), for the algebra read in the model.</li>
 <li><em>Reduced Biquaternion Other Algebraic Element Representations</em> (<code>articles_maths/reduced-biquaternion-other-algebraic-element-representations.md</code>), for the other presentations and their relations.</li>
-<li><em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the operators $L_{T}$ and $R_{T}$ and their norms.</li>
+<li><em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em> (<code>articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the operators $L_{Q_\pm}$ and $R_{Q_\pm}$ and their norms.</li>
 <li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the forms, the norms and the Gram matrices.</li>
 <li><em>Biquaternion Objects and Their Matrix Correspondences</em> (<code>articles_maths/biquaternion-objects-and-their-matrix-correspondences.md</code>), for the companion in which the left and the right multiplications differ.</li>
 </ul>

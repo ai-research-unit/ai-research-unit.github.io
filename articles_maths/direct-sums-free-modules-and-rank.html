@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -77,7 +76,7 @@ $$</p>
 <p><strong>Proposition (product).</strong> For every module $N$ and every family of homomorphisms $f_i : N \to M_i$ there is a unique $f : N \to \prod_i M_i$ with $\pi_i \circ f=f_i$ for all $i$.</p>
 <p><strong>Proposition (sum).</strong> For every module $N$ and every family of homomorphisms $g_i : M_i \to N$ there is a unique $g : \bigoplus_i M_i \to N$ with $g \circ \iota_i=g_i$ for all $i$.</p>
 <p><em>Proof.</em> For the product take $f(n)=(f_i(n))$. For the sum take $g((m_i))=\sum_i g_i(m_i)$, a finite sum because $(m_i)$ is finitely supported; uniqueness follows on the summands.</p>
-<p>Neither universal property restricts the family of maps, and the finiteness in the second statement lies in the <em>elements</em> of $\bigoplus_i M_i$, not in the maps out of it. The asymmetry between the two constructions appears when $I$ is infinite, and it is an asymmetry between the elements: $\bigoplus_i M_i$ is the submodule of $\prod_i M_i$ consisting of the finitely supported families, the inclusion is injective and not surjective, and the direct sum is therefore a coproduct but not a product, while the product is a product but not a coproduct. When $I$ is finite the two objects coincide, and the two universal properties make $\bigoplus_i M_i$ both a product and a coproduct; such an object is a <strong>biproduct</strong>. In the finite case the injections and projections satisfy the relations $\pi_j\iota_j=\operatorname{id}$, $\pi_j\iota_k=0$ for $j\neq k$, $\sum_j \iota_j\pi_j=\operatorname{id}$, and every element of the biproduct is recovered from them by $m=\iota_1\pi_1(m)+\iota_2\pi_2(m)$.</p>
+<p>Neither universal property restricts the family of maps, and the finiteness in the second statement lies in the <em>elements</em> of $\bigoplus_i M_i$, not in the maps out of it. The asymmetry between the two constructions appears when $I$ is infinite, and it is an asymmetry between the elements: $\bigoplus_i M_i$ is the submodule of $\prod_i M_i$ consisting of the finitely supported families, the inclusion is injective and not surjective, and the direct sum is therefore a coproduct but not a product, while the product is a product but not a coproduct. When $I$ is finite the two objects coincide, and the two universal properties make $\bigoplus_i M_i$ both a product and a coproduct; such an object is a <strong>biproduct</strong>. In the finite case the injections and projections satisfy the relations $\pi_j\iota_j=\operatorname{id}$, $\pi_j\iota_k=0$ for $j\neq k$, $\sum_j \iota_j\pi_j=\operatorname{id}$, and every element of the biproduct is recovered from them by $m=\iota_1\pi_x(m)+\iota_2\pi_y(m)$.</p>
 <h3 id="internal-direct-sums">Internal Direct Sums</h3>
 <p>The external constructions are matched by an internal description, which is how direct sum decompositions are recognised in practice.</p>
 <p><strong>Definition.</strong> Let $N_1,\dots,N_k$ be submodules of $M$. Then $M$ is their <strong>internal direct sum</strong>, written $M=N_1\oplus\cdots\oplus N_k$, if every $m \in M$ has a unique expression $m=n_1+\cdots+n_k$ with $n_i \in N_i$.</p>
@@ -170,11 +169,11 @@ $$</p>
 <h3 id="over-a-principal-ideal-domain">Over a Principal Ideal Domain</h3>
 <p>Over a principal ideal domain, every submodule of a free module is free. This is the theorem that makes a presentation $0 \to K \to R^n \to M \to 0$ computable: $K$ has a basis, so it is described by a matrix, and the structure of $M$ is read off from that matrix. Over a general commutative ring the corresponding statement is false, and the standard counterexample is the ideal $(x,y) \subseteq R=k[x,y]$, which is a submodule of the free module $R$ of rank $1$ and is not free: it is not principal, so it is not free of rank $1$, and it is not free of rank $n \ge 2$ either, since tensoring with the fraction field $k(x,y)$ turns it into $k(x,y)$ itself, of dimension $1$, while a free module of rank $n$ would give dimension $n$.</p>
 <h3 id="over-the-split-complex-numbers">Over the Split Complex Numbers</h3>
-<p>The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_1^2=\pi_1$, $\pi_2^2=\pi_2$, $\pi_1\pi_2=0$ and $\pi_1+\pi_2=1$. The ring isomorphism</p>
+<p>The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_x^2=\pi_x$, $\pi_y^2=\pi_y$, $\pi_x\pi_y=0$ and $\pi_x+\pi_y=1$. The ring isomorphism</p>
 <p>$$
 \mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$</p>
-<p>sends $\pi_1$ to $(1,0)$ and $\pi_2$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and</p>
+<p>sends $\pi_x$ to $(1,0)$ and $\pi_y$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and</p>
 <p>$$
 \mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}
 $$</p>

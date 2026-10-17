@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -65,7 +64,7 @@ $$</p>
 <p><strong>Proof.</strong> Each of the four maps is a ring endomorphism in the sense of the conjugation articles, so $g(\tilde Q^2)=(g\tilde Q)^2$, and each preserves the Euclidean norm, hence boundedness. Applying $g$ to $\tilde Q^2+\tilde C$ gives the identity. This is the equivariance theorem of <em>The Biquaternion Quadratic Map and Its Julia Sets</em>.</p>
 <p><strong>Remark (the fourth conjugation is excluded by a sign).</strong> The natural, the complex and the Hermitian conjugations are anti-automorphisms or automorphisms of the ring; the anti-Hermitian conjugation is an anti-automorphism only up to the central sign,</p>
 <p>$$
-(\tilde P\tilde Q)^{\flat}=-\tilde Q^{\flat}\tilde P^{\flat} ,
+(\tilde Q_2\tilde Q)^{\flat}=-\tilde Q^{\flat}\tilde Q_2^{\flat} ,
 $$</p>
 <p>so that $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde C}=F^{-}_{\flat(\tilde C)}\circ\flat$, where $F^{-}_{\tilde C'}(\tilde Q)=-\tilde Q^2+\tilde C'$ is the <em>odd</em> quadratic family. <strong>The anti-Hermitian conjugation relates the even family to the odd family, not to itself, and is therefore not a symmetry of the even fractal.</strong> The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are the ones the article uses.</p>
 <h2 id="the-stabiliser-and-the-symmetry-group">The Stabiliser and the Symmetry Group</h2>
@@ -76,13 +75,13 @@ $$</p>
 <p>where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-\tilde Q$.</p>
 <p><strong>Theorem (the stabiliser).</strong> $G_{\tilde C}$ is one of the following.</p>
 <ol>
-<li>$G$, when $\tilde C=Ce_0$ with $C$ real.</li>
-<li>$\{\mathrm{id},{}^{\natural}\}$, when $\tilde C=Ce_0$ with $C$ non-real.</li>
-<li>$\{\mathrm{id},\bar{\cdot}\}$, when $\tilde C$ is a non-central element fixed by complex conjugation, that is $\tilde C\in\mathbb{H}_{\mathbb{B}}$ with $\tilde C\notin\mathbb{C}e_0$.</li>
-<li>$\{\mathrm{id},{}^{*}\}$, when $\tilde C$ is a non-central element fixed by Hermitian conjugation, that is $\tilde C\in\mathbb{M}_+$ with $\tilde C\notin\mathbb{C}e_0$.</li>
+<li>$G$, when $\tilde C=Ce_t$ with $C$ real.</li>
+<li>$\{\mathrm{id},{}^{\natural}\}$, when $\tilde C=Ce_t$ with $C$ non-real.</li>
+<li>$\{\mathrm{id},\bar{\cdot}\}$, when $\tilde C$ is a non-central element fixed by complex conjugation, that is $\tilde C\in\mathbb{H}_{\mathbb{B}}$ with $\tilde C\notin\mathbb{C}e_t$.</li>
+<li>$\{\mathrm{id},{}^{*}\}$, when $\tilde C$ is a non-central element fixed by Hermitian conjugation, that is $\tilde C\in\mathbb{M}_+$ with $\tilde C\notin\mathbb{C}e_t$.</li>
 <li>$\{\mathrm{id}\}$, otherwise.</li>
 </ol>
-<p><strong>Proof.</strong> The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (<em>The Group of Involutions</em>, <em>Introduction to the Remarkable Subspaces</em>). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_0\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}e_0$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_0$.</p>
+<p><strong>Proof.</strong> The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (<em>The Group of Involutions</em>, <em>Introduction to the Remarkable Subspaces</em>). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_t\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}e_t$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_t$.</p>
 <p><strong>Theorem (the even symmetry).</strong> For every parameter, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under $\tilde Q\mapsto-\tilde Q$, and the full symmetry group of the two sets contains $\Gamma_{\tilde C}$.</p>
 <p><strong>Proof.</strong> $F_{\tilde C}(-\tilde Q)=(-\tilde Q)^2+\tilde C=\tilde Q^2+\tilde C=F_{\tilde C}(\tilde Q)$, because the square is an even map; hence $-\tilde Q$ and $\tilde Q$ have the same orbit after the first term, and one orbit is bounded exactly when the other is. The invariance under $G_{\tilde C}$ is the equivariance theorem restricted to the stabiliser. The two families of maps commute: $-\mathrm{id}$ is $(-\mathrm{id})\mathrm{id}$-linear and composes with the conjugations to the conjugations.</p>
 <h2 id="the-symmetric-families">The Symmetric Families</h2>
@@ -94,13 +93,13 @@ $$</p>
 <p><strong>Proof.</strong> Immediate from the two theorems above; the orders are those of the products.</p>
 <p><strong>Remark (the names are the fixed subspaces).</strong> The five families are named by the symmetry subspace that contains the parameter, and each family is symmetric about the remarkable subspaces of the algebra: the real central fractals about the centre, the quaternion subspace, the Hermitian sector and the vector part; the central fractals about the centre; the quaternion-symmetric fractals about the quaternion subspace; the Hermitian-symmetric ones about the Hermitian sector. <strong>The symmetry axes of the biquaternion fractals are the remarkable subspaces</strong>, and the classification above is the statement that the parameter lies on the intersection of the axes it preserves.</p>
 <h2 id="the-central-slice-and-the-mirror">The Central Slice and the Mirror</h2>
-<p><strong>Proposition (the complex conjugation acts as the mirror on the central slice).</strong> For a central parameter $\tilde C=Ce_0$, the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and</p>
+<p><strong>Proposition (the complex conjugation acts as the mirror on the central slice).</strong> For a central parameter $\tilde C=Ce_t$, the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and</p>
 <p>$$
-\bar{\cdot}\bigl(J_{Ce_0}\cap\mathbb{C}e_0\bigr)=J_{\bar C e_0}\cap\mathbb{C}e_0 .
+\bar{\cdot}\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=J_{\bar C e_t}\cap\mathbb{C}e_t .
 $$</p>
 <p>So the Julia set of the complex quadratic map and that of its conjugate parameter are mirror images in the central slice, and they coincide exactly when $C$ is real.</p>
 <p><strong>Proof.</strong> The restriction of the equivariance to the centre, where the dynamics is the complex quadratic map and $\bar{\cdot}$ acts as the coefficientwise conjugation.</p>
-<p><strong>Remark (why the central fractal is not mirror-symmetric for non-real C).</strong> For non-real $C$ the group $G_C$ contains only ${}^{\natural}$, and the mirror $C\mapsto\bar C$ is not in it, so the central slice of $J_{Ce_0}$ is the complex Julia set $J_C$ and not its mirror $J_{\bar C}$; the two are distinct unless $J_C$ happens to be symmetric. <strong>The complex Julia set of a non-real parameter appears in the biquaternion theory exactly as itself, without its mirror, and the mirror is a second slice at the conjugate parameter.</strong> This is the precise content of the failure of the mirror symmetry.</p>
+<p><strong>Remark (why the central fractal is not mirror-symmetric for non-real C).</strong> For non-real $C$ the group $G_C$ contains only ${}^{\natural}$, and the mirror $C\mapsto\bar C$ is not in it, so the central slice of $J_{Ce_t}$ is the complex Julia set $J_C$ and not its mirror $J_{\bar C}$; the two are distinct unless $J_C$ happens to be symmetric. <strong>The complex Julia set of a non-real parameter appears in the biquaternion theory exactly as itself, without its mirror, and the mirror is a second slice at the conjugate parameter.</strong> This is the precise content of the failure of the mirror symmetry.</p>
 <h2 id="the-central-inversion-and-the-antipodal-structure">The Central Inversion and the Antipodal Structure</h2>
 <p><strong>Remark (the antipodal quotient).</strong> The even symmetry $\tilde Q\mapsto-\tilde Q$ is present for every parameter and is not a symmetry of the algebra but of the map; the quotient by it is the natural projective picture of the subject. <strong>Every biquaternion Julia set is antipodally symmetric, and a fundamental domain for the inversion is one half of the space; a picture of the whole slice always shows two copies.</strong> The symmetry is a symmetry of the map at every parameter and is not a statement about the parameter: $J_{\tilde C}$ and $J_{-\tilde C}$ are different sets in general, and only the map is invariant under the inversion, not the family.</p>
 <p><strong>Remark (the quaternion slice as the visible symmetry).</strong> In the quaternion slice $\mathbb{H}_{\mathbb{B}}$ the symmetry under ${}^{\natural}$ and $\bar{\cdot}$ is the classical conjugacy symmetry of the quaternion Julia sets, and the symmetry under $\tilde Q\mapsto-\tilde Q$ is the antipodal one; the two generate a group of order four acting on the three-dimensional picture. <strong>The quaternion pictures of the subject are the pictures of the quaternion-symmetric family, and their symmetry is a slice of the full group and not the full group.</strong></p>

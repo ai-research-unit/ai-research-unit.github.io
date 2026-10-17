@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -123,21 +122,21 @@ $$</p>
 <p>which preserves the empty set, the whole set, arbitrary unions and finite intersections. These are exactly the operations from which the topology is built, so the restriction is the induced map on the algebra of open sets that the menu of this article names: the algebra is the open lattice, and the induced map is the preimage.</p>
 <p><strong>Theorem.</strong> For a continuous $f$ the restricted preimage $f^{-1} : \mathcal{O}(Y) \to \mathcal{O}(X)$ preserves the whole set, finite intersections and arbitrary unions, and it therefore has a <strong>right adjoint</strong> in the order of the lattices, given by</p>
 <p>$$
-f_{\forall}(U) = \bigcup \{\, V \in \mathcal{O}(Y) : f^{-1}(V) \subseteq U \,\},
+f_{\forall}(\Omega) = \bigcup \{\, V \in \mathcal{O}(Y) : f^{-1}(V) \subseteq \Omega \,\},
 $$</p>
 <p>so that $f^{-1} \dashv f_{\forall}$, that is,</p>
 <p>$$
-f^{-1}(V) \subseteq U \iff V \subseteq f_{\forall}(U)
+f^{-1}(V) \subseteq \Omega \iff V \subseteq f_{\forall}(\Omega)
 $$</p>
-<p>for every open $U \subseteq X$ and every open $V \subseteq Y$. The preimage has a <strong>left adjoint</strong> exactly when it preserves all intersections of open sets, and when it exists that adjoint sends $W$ to the smallest open set of $Y$ containing $f_{*}(W)$.</p>
-<p><strong>Proof.</strong> The preimage of the whole set is the whole set and the preimage commutes with intersections, so the restriction to open sets preserves the top and finite meets; it commutes with arbitrary unions, so $f_{\forall}(U)$ is a legitimate open set, being a union of open sets. For the equivalence, if $f^{-1}(V) \subseteq U$ then $V$ is one of the open sets whose union is $f_{\forall}(U)$, so $V \subseteq f_{\forall}(U)$; conversely $f^{-1}(f_{\forall}(U)) = \bigcup \{f^{-1}(V) : f^{-1}(V) \subseteq U\} \subseteq U$, so $V \subseteq f_{\forall}(U)$ gives $f^{-1}(V) \subseteq f^{-1}(f_{\forall}(U)) \subseteq U$. For the left adjoint, a monotone map of complete lattices has a left adjoint exactly when it preserves all meets; when it does, the left adjoint is the meet $\bigwedge\{V : W \subseteq f^{-1}(V)\}$, the smallest open set containing $f_{*}(W)$.</p>
+<p>for every open $\Omega \subseteq X$ and every open $V \subseteq Y$. The preimage has a <strong>left adjoint</strong> exactly when it preserves all intersections of open sets, and when it exists that adjoint sends $W$ to the smallest open set of $Y$ containing $f_{*}(W)$.</p>
+<p><strong>Proof.</strong> The preimage of the whole set is the whole set and the preimage commutes with intersections, so the restriction to open sets preserves the top and finite meets; it commutes with arbitrary unions, so $f_{\forall}(\Omega)$ is a legitimate open set, being a union of open sets. For the equivalence, if $f^{-1}(V) \subseteq \Omega$ then $V$ is one of the open sets whose union is $f_{\forall}(\Omega)$, so $V \subseteq f_{\forall}(\Omega)$; conversely $f^{-1}(f_{\forall}(\Omega)) = \bigcup \{f^{-1}(V) : f^{-1}(V) \subseteq \Omega\} \subseteq \Omega$, so $V \subseteq f_{\forall}(\Omega)$ gives $f^{-1}(V) \subseteq f^{-1}(f_{\forall}(\Omega)) \subseteq \Omega$. For the left adjoint, a monotone map of complete lattices has a left adjoint exactly when it preserves all meets; when it does, the left adjoint is the meet $\bigwedge\{V : W \subseteq f^{-1}(V)\}$, the smallest open set containing $f_{*}(W)$.</p>
 <p>The two adjoints of the preimage on the powersets are the direct image and the <strong>universal image</strong></p>
 <p>$$
 \forall_{f}(A) = \{\, y \in Y : f^{-1}(\{y\}) \subseteq A \,\},
 $$</p>
 <p>and the pair satisfies $f_{*} \dashv f^{-1} \dashv \forall_{f}$ on the Boolean algebras. The restriction of this triple to the open lattices keeps only the lower adjunction of the preimage, because the direct image of an open set need not be open and the universal image of an open set need not be open. This is the reason the open lattice carries one adjunction and the power set two.</p>
 <h3 id="what-the-preimage-does-not-preserve">What the Preimage Does Not Preserve</h3>
-<p>The restriction of $f^{-1}$ to the open sets does not determine the direct image, and the direct image of an open set need not be open. The right adjoint $f_{\forall}$ repairs the defect from the side of the target: $f_{\forall}(U)$ is the largest open set of $Y$ whose preimage lies in $U$, and it is the best open approximation to a direct image that the preimage operator can certify.</p>
+<p>The restriction of $f^{-1}$ to the open sets does not determine the direct image, and the direct image of an open set need not be open. The right adjoint $f_{\forall}$ repairs the defect from the side of the target: $f_{\forall}(\Omega)$ is the largest open set of $Y$ whose preimage lies in $\Omega$, and it is the best open approximation to a direct image that the preimage operator can certify.</p>
 <p><strong>Example (an open set whose image is not open).</strong> Let $f : \mathbb{R} \to \mathbb{R}$ be the map $f(x) = x^{2}$ in the usual topology. The image of the open interval $(-1, 1)$ is $[0, 1)$, which is not open; its interior is $(0,1)$. The function is continuous and not open, and the failure of openness is exactly the failure of $f_{*}$ to land in $\mathcal{O}(\mathbb{R})$. Its right adjoint is the operator $f_{\forall}$: the largest open $V \subseteq \mathbb{R}$ with $f^{-1}(V) \subseteq (-2,2)$ is $V = (-4,4)$, since $f^{-1}((-4,4)) = (-2,2)$ and any larger open set contains a value above $4$, whose preimage leaves $(-2,2)$.</p>
 <p><strong>Example (a closed map that is not open).</strong> The inclusion $\iota : [0,1] \to \mathbb{R}$ is closed and continuous; it is not open, since $[0,1]$ is open in itself and its image is not open in $\mathbb{R}$. The preimage operator of $\iota$ is $B \mapsto B \cap [0,1]$, which is surjective onto the open sets of the subspace and preserves all the lattice operations.</p>
 <p><strong>Remark.</strong> A continuous bijection need not have continuous inverse, so the induced map on the open lattices need not be bijective even when the map on points is: the identity from the discrete topology to the trivial topology on a set with two points is a continuous bijection whose preimage operator is injective but not surjective onto the open sets. The point of the operator language is that this is visible as a property of $f^{-1}$ alone.</p>
@@ -170,7 +169,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A, B, C$</td>
-<td>Subsets; $U, V, W$ open; $F$ closed; $A^{c}$ the complement of $A$</td>
+<td>Subsets; $\Omega, V, W$ open; $F$ closed; $A^{c}$ the complement of $A$</td>
 </tr>
 <tr>
 <td>$f^{-1}$</td>
@@ -198,7 +197,7 @@ $$</p>
 </tr>
 <tr>
 <td>$f_{\forall}$</td>
-<td>Right adjoint of the restricted preimage: the largest open $V \subseteq Y$ with $f^{-1}(V) \subseteq U$</td>
+<td>Right adjoint of the restricted preimage: the largest open $V \subseteq Y$ with $f^{-1}(V) \subseteq \Omega$</td>
 </tr>
 <tr>
 <td>$T_0$</td>

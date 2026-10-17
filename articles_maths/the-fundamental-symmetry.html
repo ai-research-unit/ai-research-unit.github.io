@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -84,7 +83,7 @@ $$</p>
 <p><strong>Corollary (the decomposition is read by $J$).</strong> A fundamental decomposition is a pair of definite eigenspaces of an involutive operator; the signature of the space is $(\dim V_{+},\dim V_{-})$, and the operator $J$ is the fundamental symmetry of that decomposition.</p>
 <p><strong>Proof.</strong> Immediate from the proposition and the definition of the signature.</p>
 <h2 id="non-uniqueness-and-the-angular-operator">Non-Uniqueness and the Angular Operator</h2>
-<p><strong>Theorem (parametrisation of the symmetries).</strong> Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $Q_{+}^{\max}}$, each of which is the <strong>graph</strong>
+<p><strong>Theorem (parametrisation of the symmetries).</strong> Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $Q_{+}^{\max}$, each of which is the <strong>graph</strong>
 $$
 M_T = \{\, x_{+} + Tx_{+} : x_{+}\in V_{+} \,\}
 $$
@@ -93,7 +92,7 @@ $$
 \|Tx_{+}\| < \|x_{+}\| \qquad \text{for } x_{+}\neq0 .
 $$
 Distinct $T$ give distinct symmetries, and the correspondence is a bijection.</p>
-<p><strong>Proof.</strong> Let $Q_{+}^{\max}}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $Q_{+}^{\max}}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dimQ_{+}^{\max}} = \dim V_{+}$; so $Q_{+}^{\max}}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $Q_{+}^{\max}}$ definite and maximal makes $J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $Q_{+}^{\max}}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapstoJ$ is a bijection.</p>
+<p><strong>Proof.</strong> Let $Q_{+}^{\max}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $Q_{+}^{\max}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dim Q_{+}^{\max} = \dim V_{+}$; so $Q_{+}^{\max}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $Q_{+}^{\max}$ definite and maximal makes $J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $Q_{+}^{\max}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapsto J$ is a bijection.</p>
 <p><strong>Definition.</strong> The operator $T$ above is the <strong>angular operator</strong> between the two decompositions, and its contraction constant measures the opening between their positive parts: $T = 0$ exactly when the two positive parts coincide.</p>
 <p><strong>Proposition (equivalence of the induced forms).</strong> The definite forms induced by any two fundamental symmetries are equivalent, and the topology they define is the same.</p>
 <p><strong>Proof.</strong> Let $J'$ be the second symmetry and write $\langle x,x\rangle' = [J'x,x] = \langle JJ'x,x\rangle$. The operator $JJ'$ is bounded and self-adjoint for $\langle\cdot,\cdot\rangle$ and it is invertible, with $(JJ')^{-1} = J'J$ because $J^{2} = J'^{2} = \mathrm{id}$; its spectrum is therefore a compact subset of $(0,\infty)$, so there are constants $0 < c\leq C < \infty$ with $c\|x\|^{2}\leq\langle x,x\rangle'\leq C\|x\|^{2}$, and the two norms are equivalent.</p>

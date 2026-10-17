@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -147,11 +146,11 @@ $$</p>
 <p><strong>Definition.</strong> Let $A$ be a finite abelian group. A <strong>central extension</strong> of $G$ by $A$ is a short exact sequence $1\to A\to E\to G\to1$ with the image of $A$ in the centre of $E$; the set of equivalence classes of such extensions with a fixed action of $G$ on $A$ is in bijection with $H^2(G;A)$ by the standard theorem of <em>Group Cohomology</em>, the class of the extension being its factor set.</p>
 <p><strong>Theorem (Schur, standard).</strong> Let $G$ be a finite group. Then there is a central extension</p>
 <p>$$
-1\longrightarrow M(G)\longrightarrowG^{\mathrm{cov}}\longrightarrow G\longrightarrow1
+1\longrightarrow M(G)\longrightarrow G^{\mathrm{cov}}\longrightarrow G\longrightarrow1
 $$</p>
 <p>by the Schur multiplier — a <strong>representation group</strong> or <strong>Schur cover</strong> of $G$ — with the property that every projective representation of $G$ with any factor set is equivalent to the composite of a lift $G^{\mathrm{cov}}\to E$ with an ordinary representation of the covering group: every projective representation of $G$ is the restriction, through the covering map, of an ordinary representation of $G^{\mathrm{cov}}$, and the irreducible projective representations of $G$ are obtained equivalently as the ordinary irreducible representations of $G^{\mathrm{cov}}$ on which the centre $M(G)$ acts by a fixed character. The extension is universal for the property of lifting the projective representations, and it is determined up to an isomorphism inducing the identity on $G$ and on $M(G)$.</p>
 <p><em>Proof (outline).</em> One takes the fibre product of the central extensions classified by the cocycles representing the elements of $M(G)$ and uses the universal coefficients; the lifting of the projective representations is then the statement that a cocycle on $G$ becomes a coboundary after a central extension by the group in which the class lives, which is the standard argument of the theory of the Schur covers. The proof is recorded in the references.</p>
-<p><strong>Corollary.</strong> A projective representation of $G$ with factor set $\alpha$ is the same data as an ordinary representation of the group $G^{\mathrm{cov}}_\alpha$ of the central extension $1\to\langle\alpha\rangle\toG^{\mathrm{cov}}_\alpha\to G\to1$ classified by $\alpha$, on which the central subgroup acts by the character corresponding to $\alpha$; consequently the projective representations of $G$ are ordinary representations of central extensions of $G$, and the classification of the projective representations is the classification of the ordinary representations of the finitely many covering groups together with the central characters.</p>
+<p><strong>Corollary.</strong> A projective representation of $G$ with factor set $\alpha$ is the same data as an ordinary representation of the group $G^{\mathrm{cov}}_\alpha$ of the central extension $1\to\langle\alpha\rangle\to G^{\mathrm{cov}}_\alpha\to G\to1$ classified by $\alpha$, on which the central subgroup acts by the character corresponding to $\alpha$; consequently the projective representations of $G$ are ordinary representations of central extensions of $G$, and the classification of the projective representations is the classification of the ordinary representations of the finitely many covering groups together with the central characters.</p>
 <p><strong>Example.</strong> For $G = V_4$ the Schur multiplier is $\mathbb{Z}/2$, and the two central extensions of $V_4$ by $\mathbb{Z}/2$ are the dihedral group $D_8$ and the quaternion group $Q_8$; the extension corresponding to the nontrivial cocycle of the previous section is $Q_8$, and its two-dimensional irreducible representation, the one on which the centre acts by $-1$, is the projective representation of $V_4$ with the quaternion factor set. The classification of the projective representations of $V_4$ in the nontrivial class is thereby the classification of the representations of $Q_8$ with the given central character, and it contains exactly one irreducible class, of dimension two.</p>
 <h2 id="the-little-group-method">The Little Group Method</h2>
 <p><strong>Theorem (the projective representations of a semidirect product).</strong> Let $G = N\rtimes H$ with $N$ abelian, let $\alpha$ be a factor set and suppose that $\alpha$ is <strong>normalised</strong> with respect to the action, $\alpha(n,h) = \alpha(h,n) = 1$ for $n\in N$, $h\in H$. Then the irreducible projective representations of $G$ with factor set $\alpha$ are classified by the <strong>Mackey little group method</strong>: one lets $H$ act on the characters of $N$ by $(h\cdot\chi)(n) = \chi(h^{-1}nh)$, decomposes the set of characters into orbits, and for each orbit with stabiliser $H_\chi$ and a chosen extension of $\chi$ to $N\rtimes H_\chi$ the irreducible projective representations of $G$ over the orbit are induced from the irreducible projective representations of $H_\chi$ with the <strong>Mackey obstruction</strong> cocycle determined by the failure of $\chi$ to extend; consequently the projective representations of $G$ are built from those of the stabilisers of the characters of $N$, exactly as in the ordinary Clifford theory of <em>Induced Representations</em>.</p>
@@ -210,7 +209,7 @@ $$</p>
 <td>projective character and twisted conjugacy classes</td>
 </tr>
 <tr>
-<td>$1\to M(G)\toG^{\mathrm{cov}}\to G\to1$</td>
+<td>$1\to M(G)\to G^{\mathrm{cov}}\to G\to1$</td>
 <td>representation group (Schur cover)</td>
 </tr>
 <tr>

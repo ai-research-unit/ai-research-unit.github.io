@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -103,13 +102,13 @@ $$</p>
 <p>whenever $2$ is invertible in $A$; for $A = M_n(F)$ over a field of characteristic not two this is the usual passage between the quadratic and the Hermitian form.</p>
 <p><strong>Proof.</strong> $\mathfrak{Q}(ax) = ax\sigma(ax) = ax\sigma(x)\sigma(a) = aq(x)\sigma(a)$. For the polarisation, expand $\mathfrak{Q}(x+y)$ and use $h(y,x) = \sigma(h(x,y))$, so that $h(x,y)+\sigma(h(y,x)) = 2h(x,y)$; the displayed identity is the expansion. The last statement is the matrix computation with $\sigma$ the transpose or the conjugate transpose.</p>
 <h3 id="the-unitary-elements-are-the-isometries">The unitary elements are the isometries</h3>
-<p><strong>Definition.</strong> An element $u \in A$ is <strong>unitary</strong> when $u\sigma(u) = \sigma(u)u = 1$; the unitary elements form the <strong>unitary group</strong> $U(A)$ of the involutive ring, the group of <em>Involutive Rings</em>.</p>
-<p><strong>Proposition.</strong> The $A$-linear isometries of $h$ are exactly the right multiplications $R_u$ by the unitary elements, $u \in U(A)$; they form a group isomorphic to $U(A)$. A left multiplication $L_u$ is an isometry exactly when $u$ is a central unitary element.</p>
+<p><strong>Definition.</strong> An element $u \in A$ is <strong>unitary</strong> when $u\sigma(u) = \sigma(u)u = 1$; the unitary elements form the <strong>unitary group</strong> $\mathrm{U}(A)$ of the involutive ring, the group of <em>Involutive Rings</em>.</p>
+<p><strong>Proposition.</strong> The $A$-linear isometries of $h$ are exactly the right multiplications $R_u$ by the unitary elements, $u \in \mathrm{U}(A)$; they form a group isomorphic to $\mathrm{U}(A)$. A left multiplication $L_u$ is an isometry exactly when $u$ is a central unitary element.</p>
 <p><strong>Proof.</strong> The $A$-linear endomorphisms of ${}_AA$ are the right multiplications $R_b$, $\operatorname{End}_A({}_AA) \cong A^{\mathrm{opp}}$, by <em>The Regular Module and the Regular Bimodule</em>. Now $h(xb,yb) = xb\,\sigma(yb) = xb\sigma(b)\sigma(y) = x\,b\sigma(b)\,\sigma(y)$, so $R_b$ preserves $h$ for all $x,y$ exactly when $b\sigma(b) = 1$, which for a unit $b$ is the unitary condition. For a left multiplication, $h(ux,uy) = u\,h(x,y)\,\sigma(u)$; preservation forces $u\sigma(u) = 1$ from $x = y = 1$, and then $uz\sigma(u) = z$ for every $z$ in the image of $h$, which is all of $A$ because $h(1,y) = \sigma(y)$; multiplying $uz\sigma(u) = z$ on the right by $u$ gives $uz = zu$, so $u$ is central.</p>
 <p><strong>Corollary (the two readings).</strong> The unitary elements of the involutive ring act on the regular module as the isometries of its canonical form, on the right, and the right regular representation carries the unitary group into the isometry group. A unitary element that is not central acts as an isometry through $R_u$ and not through $L_u$, so the two one-sided readings of the same element differ as soon as the ring is non-commutative.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="the-matrix-algebra-with-the-conjugate-transpose">The matrix algebra with the conjugate transpose</h3>
-<p>Let $F$ be a field with an involution, for instance $F = \mathbb{C}$ with complex conjugation, let $A = M_n(F)$, and let $\sigma(X) = \overline{X}^{\mathsf{T}} = X^{*}$ be the conjugate transpose. Then the symmetric elements are the Hermitian matrices and the skew elements the anti-Hermitian ones, the unitary elements are the matrices with $UU^{*} = 1$, and the canonical form is $h(X,Y) = XY^{*}$. Its $A$-linear isometries are the right multiplications by the unitary matrices, which is the natural right action of $U(n)$ on the space of matrices; the left multiplications by unitary matrices are isometries only for the scalars, since those are the central unitary elements. The form $h$ is the algebraic Hilbert–Schmidt form of the matrix algebra, and its positivity is Part II.</p>
+<p>Let $F$ be a field with an involution, for instance $F = \mathbb{C}$ with complex conjugation, let $A = M_n(F)$, and let $\sigma(X) = \overline{X}^{\mathsf{T}} = X^{*}$ be the conjugate transpose. Then the symmetric elements are the Hermitian matrices and the skew elements the anti-Hermitian ones, the unitary elements are the matrices with $UU^{*} = 1$, and the canonical form is $h(X,Y) = XY^{*}$. Its $A$-linear isometries are the right multiplications by the unitary matrices, which is the natural right action of $\mathrm{U}(n)$ on the space of matrices; the left multiplications by unitary matrices are isometries only for the scalars, since those are the central unitary elements. The form $h$ is the algebraic Hilbert–Schmidt form of the matrix algebra, and its positivity is Part II.</p>
 <h3 id="the-group-algebra">The group algebra</h3>
 <p>Let $A = F[G]$ for a group $G$, with the involution $\sigma(g) = g^{-1}$ extended $F$-linearly, as in <em>Involutions of a Group Ring</em>. The symmetric elements are the group-ring elements fixed by the antipode, the skew elements those negated by it, the unitary elements are the $x$ with $x^{*}x = 1$, and these include the elements of $G$; the canonical form is $h(x,y) = x\sigma(y)$, and the right multiplications by the group elements are isometries. For $G$ finite and $F$ a field in which $|G|$ is invertible the form is the algebraic descendant of the standard orthogonality of the character table, whose positivity is Part II.</p>
 <h3 id="the-commutative-case">The commutative case</h3>
@@ -117,7 +116,7 @@ $$</p>
 <h3 id="the-biquaternions">The biquaternions</h3>
 <p>The biquaternion algebra $\mathbb{B}$ carries four natural involutions, the complex conjugation, the quaternion conjugation, the conjugate transpose and their product, and each gives its own twist, its own $\sigma$-swap isomorphism and its own Hermitian form on the regular bimodule. The lattice they form is <em>Comparison of the Remarkable Subspaces</em>, in Part VI, where the same regular module is read through each of them; the present article supplies only the general construction.</p>
 <h2 id="summary">Summary</h2>
-<p>For a ring $A$ with an involution $\sigma$ the regular object acquires three structures. The twist of the left regular module is the right regular module up to the comparison $\sigma : ({}_AA)^{\sigma} \to A_A$, which is an isomorphism of right modules; the involution is a bimodule isomorphism of ${}_AA_A$ onto its $\sigma$-swap, $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$, and conversely every bimodule isomorphism of the regular bimodule onto its $\sigma$-swap is $x \mapsto d\sigma(x)$ with $d$ a central unit, the involution itself being the normalised case $d = 1$; over a noncommutative ring the involution must be carried in the target, the plain swap being its commutative case. The regular module carries the canonical Hermitian $\sigma$-sesquilinear form $h(x,y) = x\sigma(y)$ with values in $A$, non-degenerate, with associated quadratic form $\mathfrak{Q}(x) = x\sigma(x)$ and polarisation identity when $2$ is invertible. Its $A$-linear isometries are the right multiplications $R_u$ by the unitary elements $u\sigma(u) = 1$, forming the unitary group $U(A)$, while a left multiplication $L_u$ is an isometry only for a central unitary $u$. The matrix algebra with the conjugate transpose, the group algebra with $g^{*} = g^{-1}$ and the commutative ring with the identity involution are the three worked cases, and the positivity of the form is deferred to Part II.</p>
+<p>For a ring $A$ with an involution $\sigma$ the regular object acquires three structures. The twist of the left regular module is the right regular module up to the comparison $\sigma : ({}_AA)^{\sigma} \to A_A$, which is an isomorphism of right modules; the involution is a bimodule isomorphism of ${}_AA_A$ onto its $\sigma$-swap, $\sigma(axb) = \sigma(b)\sigma(x)\sigma(a)$, and conversely every bimodule isomorphism of the regular bimodule onto its $\sigma$-swap is $x \mapsto d\sigma(x)$ with $d$ a central unit, the involution itself being the normalised case $d = 1$; over a noncommutative ring the involution must be carried in the target, the plain swap being its commutative case. The regular module carries the canonical Hermitian $\sigma$-sesquilinear form $h(x,y) = x\sigma(y)$ with values in $A$, non-degenerate, with associated quadratic form $\mathfrak{Q}(x) = x\sigma(x)$ and polarisation identity when $2$ is invertible. Its $A$-linear isometries are the right multiplications $R_u$ by the unitary elements $u\sigma(u) = 1$, forming the unitary group $\mathrm{U}(A)$, while a left multiplication $L_u$ is an isometry only for a central unitary $u$. The matrix algebra with the conjugate transpose, the group algebra with $g^{*} = g^{-1}$ and the commutative ring with the identity involution are the three worked cases, and the positivity of the form is deferred to Part II.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -172,11 +171,11 @@ $$</p>
 <td>the associated quadratic form</td>
 </tr>
 <tr>
-<td>$U(A) = \{u : u\sigma(u) = 1\}$</td>
+<td>$\mathrm{U}(A) = \{u : u\sigma(u) = 1\}$</td>
 <td>the unitary group</td>
 </tr>
 <tr>
-<td>$R_u$ with $u \in U(A)$</td>
+<td>$R_u$ with $u \in \mathrm{U}(A)$</td>
 <td>the $A$-linear isometries of $h$</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -157,7 +156,7 @@ $$</p>
 <p><strong>Example (the Euler characteristic).</strong> For a finite CW complex $X$ the alternating sum of the ranks changes under suspension by $\chi(\Sigma X) = 2 - \chi(X)$, since $\chi^{\mathrm{red}}(\Sigma X) = -\chi^{\mathrm{red}}(X)$ and $\chi = \chi^{\mathrm{red}} + 1$ for a non-empty connected space. For $X = S^0$ this gives $\chi(S^1) = 2 - 2 = 0$, and for $X = S^2$ it gives $\chi(S^3) = 2 - 2 = 0$, as the alternating sums of the sphere homologies require.</p>
 <p><strong>Example (the projective spaces).</strong> The suspension operator gives $H_{k+1,\mathrm{red}}(\Sigma\mathbb{RP}^n;\mathbb{F}_2)\cong H_{k,\mathrm{red}}(\mathbb{RP}^n;\mathbb{F}_2)$, so the mod-2 Betti numbers of the suspension are those of the space shifted by one; the product, however, is not transported, by the theorem on the trivial product of a suspension, and the mod-2 cohomology ring of a suspension is square-zero in positive degrees.</p>
 <h2 id="summary">Summary</h2>
-<p>The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X$ glued along $X$, and the cone operator $C$ satisfies the chain identity $\partial C + C\partial = \iota$ with the inclusion of the space in its cone, so that the cone is contractible. The pair $(C X, X)$ has its connecting homomorphism an isomorphism, and the <strong>suspension operator</strong> $\sigma : H_{n,\mathrm{red}}(X;R)\to H_{n+1,\mathrm{red}}(\Sigma X;R)$ is its inverse, realized on a cycle by the cone with a sign, $(-1)^{n+1}C$. The suspension operator is a natural isomorphism, functorial in based maps and homotopies, iterating to $H_{n+k,\mathrm{red}}(\Sigma^k X)\congH_{n,\mathrm{red}}(X)$; it is compatible with the boundary, in that it inverts the connecting homomorphism and commutes with the connecting maps of a pair, giving a map of the long exact sequences of the suspended pair. It is compatible with the transfer of a covering, suspending the fixed-part isomorphism of <em>The Transfer Map</em>; and it is not compatible with the products, because the reduced cohomology of a suspension has trivial product, which is why the products reappear only in the stable category of <em>Stable Homotopy Theory</em>. The suspension isomorphism for the homotopy groups is the Freudenthal theorem of <em>Homotopy Groups and Fibrations</em>, and the periodic isomorphism of the topological $K$-theory of <em>Topological K-Theory</em> is the same operator for that cohomology theory. Nothing analytic and nothing geometric was used.</p>
+<p>The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X$ glued along $X$, and the cone operator $C$ satisfies the chain identity $\partial C + C\partial = \iota$ with the inclusion of the space in its cone, so that the cone is contractible. The pair $(C X, X)$ has its connecting homomorphism an isomorphism, and the <strong>suspension operator</strong> $\sigma : H_{n,\mathrm{red}}(X;R)\to H_{n+1,\mathrm{red}}(\Sigma X;R)$ is its inverse, realized on a cycle by the cone with a sign, $(-1)^{n+1}C$. The suspension operator is a natural isomorphism, functorial in based maps and homotopies, iterating to $H_{n+k,\mathrm{red}}(\Sigma^k X)\cong H_{n,\mathrm{red}}(X)$; it is compatible with the boundary, in that it inverts the connecting homomorphism and commutes with the connecting maps of a pair, giving a map of the long exact sequences of the suspended pair. It is compatible with the transfer of a covering, suspending the fixed-part isomorphism of <em>The Transfer Map</em>; and it is not compatible with the products, because the reduced cohomology of a suspension has trivial product, which is why the products reappear only in the stable category of <em>Stable Homotopy Theory</em>. The suspension isomorphism for the homotopy groups is the Freudenthal theorem of <em>Homotopy Groups and Fibrations</em>, and the periodic isomorphism of the topological $K$-theory of <em>Topological K-Theory</em> is the same operator for that cohomology theory. Nothing analytic and nothing geometric was used.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -188,7 +187,7 @@ $$</p>
 <td>Cone pair; its connecting map is an isomorphism</td>
 </tr>
 <tr>
-<td>$\partial : H_{n+1,\mathrm{red}}(\Sigma X)\toH_{n,\mathrm{red}}(X)$</td>
+<td>$\partial : H_{n+1,\mathrm{red}}(\Sigma X)\to H_{n,\mathrm{red}}(X)$</td>
 <td>Connecting isomorphism of the cone pair</td>
 </tr>
 <tr>
@@ -208,7 +207,7 @@ $$</p>
 <td>Trivial product in the positive reduced cohomology of a suspension</td>
 </tr>
 <tr>
-<td>$H_{n+k,\mathrm{red}}(\Sigma^k X)\congH_{n,\mathrm{red}}(X)$</td>
+<td>$H_{n+k,\mathrm{red}}(\Sigma^k X)\cong H_{n,\mathrm{red}}(X)$</td>
 <td>Iterated suspension isomorphism</td>
 </tr>
 </tbody>

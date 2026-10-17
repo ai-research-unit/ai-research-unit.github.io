@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,66 +51,66 @@
       <div class="article-body">
         <h1 id="the-two-products-of-the-complexoid-space"><strong>The Two Products of the Complexoid Space</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The complex space carries two products: the <strong>general plain bilinear product</strong> $AC$, which is the multiplication of the field, and the <strong>general plain sesquilinear product</strong> $A\bar C$, the derived operation of the algebra with its conjugate-linear involution. They are the two products on which the whole <code>## Complex Numbers</code> chapter is built.</p>
+<p>The complex space carries two products: the <strong>general plain bilinear product</strong> $Q_1Q_2$, which is the multiplication of the field, and the <strong>general plain sesquilinear product</strong> $Q_1\bar Q_2$, the derived operation of the algebra with its conjugate-linear involution. They are the two products on which the whole <code>## Complex Numbers</code> chapter is built.</p>
 <p>This article defines the two products, writes them in coordinates, states the defining property of each, and names the two structures they define. The full relations between them and their comparison, as a table with witnesses, are <em>Relations and Comparison Between the Two Products</em>, below this article in this category; the multiplication of the field is <em>Complex Algebra</em>, below this article in this category, which owns it; and the two forms carried by the two products are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>, also below.</p>
-<p>The elements are written $A = a + ia'$ and $C = c + ic'$. The <strong>bar</strong> is complex conjugation and the <strong>Hermitian star</strong> coincides with it, $A^{*} = \bar A$.</p>
+<p>The elements are written $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. The <strong>bar</strong> is complex conjugation and the <strong>Hermitian star</strong> coincides with it, $Q_1^{*} = \bar Q_1$.</p>
 <h2 id="the-two-products">The Two Products</h2>
 <p><strong>Definition.</strong> The <strong>general plain bilinear product</strong> is the multiplication of the field,</p>
 <p>$$
-A \cdot C = AC,
+Q_1 \cdot Q_2 = Q_1Q_2,
 $$</p>
 <p>and the <strong>general plain sesquilinear product</strong> is the derived operation</p>
 <p>$$
-A \cdot C = A\bar C,
+Q_1 \star Q_2 = Q_1\bar Q_2,
 $$</p>
 <p>the multiplication of the first element by the conjugate of the second.</p>
 <p>Both are $\mathbb{R}$-bilinear in the pair. The bilinear product is $\mathbb{C}$-linear in each argument; the sesquilinear product is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second.</p>
-<p><strong>Remark (why exactly two).</strong> The two products are the two ways the involution of the field can enter a multiplication of a pair: it enters not at all, giving $AC$, or it enters in the second argument, giving $A\bar C$. There is no third way, the insertion of the bar in the first argument only reproducing the second product by commutativity, $(\bar A)C = \overline{(\bar C)A}$. The two products are the whole product structure of the complex space.</p>
+<p><strong>Remark (why exactly two).</strong> The two products are the two ways the involution of the field can enter a multiplication of a pair: it enters not at all, giving $Q_1Q_2$, or it enters in the second argument, giving $Q_1\bar Q_2$. There is no third way, the insertion of the bar in the first argument only reproducing the second product by commutativity, $(\bar Q_1)Q_2 = \overline{(\bar Q_2)Q_1}$. The two products are the whole product structure of the complex space.</p>
 <h2 id="the-two-products-in-coordinates">The Two Products in Coordinates</h2>
-<p>With $A = a + ia'$ and $C = c + ic'$,</p>
+<p>With $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$,</p>
 <p>$$
-AC = \bigl(ac - a'c'\bigr) + i\bigl(ac' + a'c\bigr), \qquad
-A\bar C = \bigl(ac + a'c'\bigr) + i\bigl(a'c - ac'\bigr) .
+Q_1Q_2 = \bigl(q_1q_2 - q'_1q'_2\bigr) + i\bigl(q_1q'_2 + q'_1q_2\bigr), \qquad
+Q_1\bar Q_2 = \bigl(q_1q_2 + q'_1q'_2\bigr) + i\bigl(q'_1q_2 - q_1q'_2\bigr) .
 $$</p>
-<p><strong>Proof.</strong> The first is the multiplication of complex numbers. For the second, $\bar C = c - ic'$ and</p>
+<p><strong>Proof.</strong> The first is the multiplication of complex numbers. For the second, $\bar Q_2 = q_2 - iq'_2$ and</p>
 <p>$$
-A\bar C = (a + ia')(c - ic') = ac + a'c' + i(a'c - ac') .
+Q_1\bar Q_2 = (q_1 + iq'_1)(q_2 - iq'_2) = q_1q_2 + q'_1q'_2 + i(q'_1q_2 - q_1q'_2) .
 $$</p>
-<p>Both are single complex numbers, neither has a remainder outside the algebra, and each is $\mathbb{R}$-bilinear in the pair. The two products differ only in the sign of the $a'c'$ term of the real part and in the order of the factors of the imaginary part.</p>
-<h2 id="the-plain-product-math20">The Plain Product $AC$</h2>
-<p><strong>Proposition.</strong> The product $AC$ has the following properties.</p>
+<p>Both are single complex numbers, neither has a remainder outside the algebra, and each is $\mathbb{R}$-bilinear in the pair. The two products differ only in the sign of the $q'_1q'_2$ term of the real part and in the order of the factors of the imaginary part.</p>
+<h2 id="the-plain-product-math20">The Plain Product $Q_1Q_2$</h2>
+<p><strong>Proposition.</strong> The product $Q_1Q_2$ has the following properties.</p>
 <ol>
-<li>It is $\mathbb{C}$-bilinear: $A(\lambda C) = (\lambda A)C = \lambda(AC)$ for every $\lambda \in \mathbb{C}$.</li>
-<li>It is associative, $(AC)D = A(CD)$, and commutative, $AC = CA$.</li>
-<li>The unit $1$ is a two-sided unit, $1 \cdot A = A \cdot 1 = A$.</li>
-<li>It has no zero divisor: $AC = 0$ implies $A = 0$ or $C = 0$, and every nonzero element is invertible.</li>
+<li>It is $\mathbb{C}$-bilinear: $Q_1(\lambda Q_2) = (\lambda Q_1)Q_2 = \lambda(Q_1Q_2)$ for every $\lambda \in \mathbb{C}$.</li>
+<li>It is associative, $(Q_1Q_2)Q_3 = Q_1(Q_2Q_3)$, and commutative, $Q_1Q_2 = Q_2Q_1$.</li>
+<li>The unit $1$ is a two-sided unit, $1 \cdot Q_1 = Q_1 \cdot 1 = Q_1$.</li>
+<li>It has no zero divisor: $Q_1Q_2 = 0$ implies $Q_1 = 0$ or $Q_2 = 0$, and every nonzero element is invertible.</li>
 </ol>
-<p><strong>Proof.</strong> Items 1 to 3 are the axioms of the field and are owned by <em>Complex Algebra</em>. Item 4 holds because $\mathbb{C}$ is a field: if $A \neq 0$ then $C = A^{-1}(AC) = 0$.</p>
-<p>The product $AC$ is the multiplication of the field, the left multiplications form a monoid isomorphic to the multiplicative monoid of $\mathbb{C}$, and the product is the operation of the first of the two structures defined below.</p>
-<h2 id="the-plain-sesquilinear-product-math37">The Plain Sesquilinear Product $A\bar C$</h2>
-<p><strong>Proposition.</strong> The product $A\bar C$ has the following properties.</p>
+<p><strong>Proof.</strong> Items 1 to 3 are the axioms of the field and are owned by <em>Complex Algebra</em>. Item 4 holds because $\mathbb{C}$ is a field: if $Q_1 \neq 0$ then $Q_2 = Q_1^{-1}(Q_1Q_2) = 0$.</p>
+<p>The product $Q_1Q_2$ is the multiplication of the field, the left multiplications form a monoid isomorphic to the multiplicative monoid of $\mathbb{C}$, and the product is the operation of the first of the two structures defined below.</p>
+<h2 id="the-plain-sesquilinear-product-math37">The Plain Sesquilinear Product $Q_1\bar Q_2$</h2>
+<p><strong>Proposition.</strong> The product $Q_1\bar Q_2$ has the following properties.</p>
 <ol>
 <li>It is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second:
-   $(\lambda A)\bar C = \lambda (A\bar C)$ and $A\overline{(\lambda C)} = \bar\lambda (A\bar C)$.</li>
-<li>It is conjugate-commutative, $A\bar C = \overline{C\bar A}$.</li>
-<li>The unit $1$ is a right unit but not a left unit, $A\bar 1 = A$ and $1\bar C = \bar C$.</li>
+   $(\lambda Q_1)\bar Q_2 = \lambda (Q_1\bar Q_2)$ and $Q_1\overline{(\lambda Q_2)} = \bar\lambda (Q_1\bar Q_2)$.</li>
+<li>It is conjugate-commutative, $Q_1\bar Q_2 = \overline{Q_2\bar Q_1}$.</li>
+<li>The unit $1$ is a right unit but not a left unit, $Q_1\bar 1 = Q_1$ and $1\bar Q_2 = \bar Q_2$.</li>
 <li>It is not associative.</li>
 </ol>
-<p><strong>Proof.</strong> Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{C\bar A} = \bar C A = A\bar C$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $A\bar 1 = A$, while $1\bar C = \bar C$, which equals $C$ only for real $C$. For item 4 the witness is $A = 1$, $C = 1$, $D = i$:</p>
+<p><strong>Proof.</strong> Item 1 follows from the multiplication being bilinear and the bar being an involution. For item 2, $\overline{Q_2\bar Q_1} = \bar Q_2 Q_1 = Q_1\bar Q_2$, the last step by commutativity. For item 3, $\bar 1 = 1$ gives $Q_1\bar 1 = Q_1$, while $1\bar Q_2 = \bar Q_2$, which equals $Q_2$ only for real $Q_2$. For item 4 the witness is $Q_1 = 1$, $Q_2 = 1$, $Q_3 = i$:</p>
 <p>$$
-(A\bar C)\bar D = 1 \cdot \bar i = -i, \qquad A\overline{(C\bar D)} = \overline{1 \cdot \bar i} = \overline{-i} = i .
+(Q_1\bar Q_2)\bar Q_3 = 1 \cdot \bar i = -i, \qquad Q_1\overline{(Q_2\bar Q_3)} = \overline{1 \cdot \bar i} = \overline{-i} = i .
 $$</p>
 <p>The two differ, so the product is not associative; it also fails alternation and flexibility and the degree-three identity, the weaker laws of an associative product, with witnesses in <em>Relations and Comparison Between the Two Products</em>, below this article in this category, and the failure is the general one for a sesquilinear product, the second slot carrying the conjugate.</p>
-<p>The product $A\bar C$ is the derived operation of the algebra with its conjugate-linear involution: it is the sesquilinear form of the algebra read as a multiplication, it is conjugate-commutative, and it has no zero divisor, since $A\bar C = 0$ with $A \neq 0$ forces $\bar C = 0$. Its properties against those of $AC$ are tabulated in <em>Relations and Comparison Between the Two Products</em>, below this article in this category.</p>
+<p>The product $Q_1\bar Q_2$ is the derived operation of the algebra with its conjugate-linear involution: it is the sesquilinear form of the algebra read as a multiplication, it is conjugate-commutative, and it has no zero divisor, since $Q_1\bar Q_2 = 0$ with $Q_1 \neq 0$ forces $\bar Q_2 = 0$. Its properties against those of $Q_1Q_2$ are tabulated in <em>Relations and Comparison Between the Two Products</em>, below this article in this category.</p>
 <h2 id="the-two-structures-the-two-products-define">The Two Structures the Two Products Define</h2>
 <p>The two products define two structures on the complex space.</p>
-<p><strong>The field.</strong> The product $AC$ makes $\mathbb{C}$ a field: associative, commutative, with the two-sided unit $1$ and with every nonzero element invertible. This structure is the <strong>general plain algebra</strong> of the complex space, and the multiplication is owned by <em>Complex Algebra</em>.</p>
-<p><strong>The sesqualgebra.</strong> The product $A\bar C$, read over the pair $(\mathbb{C}, \bar\cdot)$, makes the complex space a <strong>general plain sesqualgebra</strong>: a left $\mathbb{C}$-module with a product that is conjugate-linear in the second argument, conjugate-commutative, with the right unit $1$ alone and without associativity. It is the structure that carries the Hermitian form.</p>
+<p><strong>The field.</strong> The product $Q_1Q_2$ makes $\mathbb{C}$ a field: associative, commutative, with the two-sided unit $1$ and with every nonzero element invertible. This structure is the <strong>general plain algebra</strong> of the complex space, and the multiplication is owned by <em>Complex Algebra</em>.</p>
+<p><strong>The sesqualgebra.</strong> The product $Q_1\bar Q_2$, read over the pair $(\mathbb{C}, \bar\cdot)$, makes the complex space a <strong>general plain sesqualgebra</strong>: a left $\mathbb{C}$-module with a product that is conjugate-linear in the second argument, conjugate-commutative, with the right unit $1$ alone and without associativity. It is the structure that carries the Hermitian form.</p>
 <p>Together the field and the sesqualgebra are the whole structure block of the complex space: the field carries the products and the inverses, and the sesqualgebra carries the conjugate-linear form.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex space carries two products: the general plain bilinear product $AC$, the multiplication of the field, and the general plain sesquilinear product $A\bar C$, the derived operation of the algebra with its conjugate-linear involution. The first is the involution-free product of the pair; the second is the product in which the bar enters the second argument.</p>
-<p>In coordinates, $AC = (ac - a'c') + i(ac' + a'c)$ and $A\bar C = (ac + a'c') + i(a'c - ac')$. The product $AC$ is $\mathbb{C}$-bilinear, associative, commutative, unital and without zero divisors; the product $A\bar C$ is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second, conjugate-commutative, right-unital but not left-unital, and not associative, with the witness $(1, 1, i)$.</p>
-<p>The two products define two structures: the field $\mathbb{C}$ under $AC$, and the general plain sesqualgebra over $(\mathbb{C}, \bar\cdot)$ under $A\bar C$.</p>
+<p>The complex space carries two products: the general plain bilinear product $Q_1Q_2$, the multiplication of the field, and the general plain sesquilinear product $Q_1\bar Q_2$, the derived operation of the algebra with its conjugate-linear involution. The first is the involution-free product of the pair; the second is the product in which the bar enters the second argument.</p>
+<p>In coordinates, $Q_1Q_2 = (q_1q_2 - q'_1q'_2) + i(q_1q'_2 + q'_1q_2)$ and $Q_1\bar Q_2 = (q_1q_2 + q'_1q'_2) + i(q'_1q_2 - q_1q'_2)$. The product $Q_1Q_2$ is $\mathbb{C}$-bilinear, associative, commutative, unital and without zero divisors; the product $Q_1\bar Q_2$ is $\mathbb{C}$-linear in the first argument and conjugate-linear in the second, conjugate-commutative, right-unital but not left-unital, and not associative, with the witness $(1, 1, i)$.</p>
+<p>The two products define two structures: the field $\mathbb{C}$ under $Q_1Q_2$, and the general plain sesqualgebra over $(\mathbb{C}, \bar\cdot)$ under $Q_1\bar Q_2$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -122,15 +121,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$AC$</td>
+<td>$Q_1Q_2$</td>
 <td>the general plain bilinear product, the multiplication of the field</td>
 </tr>
 <tr>
-<td>$A\bar C$</td>
+<td>$Q_1\bar Q_2 = Q_1\star Q_2$</td>
 <td>the general plain sesquilinear product, the derived operation with the bar</td>
 </tr>
 <tr>
-<td>$A = a + ia'$, $C = c + ic'$</td>
+<td>$Q_1 = q_1 + iq'_1$, $Q_2 = q_2 + iq'_2$</td>
 <td>the elements, with real coordinates</td>
 </tr>
 <tr>
@@ -143,11 +142,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{alg}$</td>
-<td>the algebra slot, the field under $AC$</td>
+<td>the algebra slot, the field under $Q_1Q_2$</td>
 </tr>
 <tr>
 <td>$\mathrm{sesq}$</td>
-<td>the sesqualgebra slot, over $(\mathbb{C}, \bar\cdot)$ under $A\bar C$</td>
+<td>the sesqualgebra slot, over $(\mathbb{C}, \bar\cdot)$ under $Q_1\bar Q_2$</td>
 </tr>
 </tbody>
 </table></div>

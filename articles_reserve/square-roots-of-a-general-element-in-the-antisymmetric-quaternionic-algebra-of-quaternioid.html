@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -56,7 +55,7 @@
 <p>$$
 \tilde p\diamond\tilde q
 =\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)
-=p_0\vec q-q_0\vec p-\vec p\times\vec q ,
+=p_0\vec q-q_t\vec p-\vec p\times\vec q ,
 $$</p>
 <p>which is alternating and without a unit (<em>Introduction to the Antisymmetric Quaternionic Algebra of Quaternions</em>). The article solves, for a general element $a\in\mathbb{H}$, the equation</p>
 <p>$$
@@ -64,14 +63,14 @@ $$</p>
 $$</p>
 <p>in the element $\tilde\xi$.</p>
 <p>The reduction is the same as the reduction of the three central values, and it is the whole of the problem: the block is alternating, so its square is zero at every element, and the equation is the equation $0=a$. <strong>The origin alone has square roots, and every element of the space is a square root of it; no nonzero element has a square root.</strong> The classification is therefore the two-line classification of the equation $0=a$, and it is the extreme case of the general reduction of <em>Square Roots of a General Element in the General Plain Algebra</em>, where the quadratic in the scalar part supplies the finite families of the plain theory. The central values are read off as a special case, and their article is cited.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\vec p$, $\tilde q=q_0e_0+\vec q$ and $\tilde\xi=\xi_0e_0+\vec\xi$ name elements of $\mathbb{H}$ with real coefficients, $(\vec p,\vec q)$ is the dot product and $\vec p\times\vec q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation. The equation $\tilde\xi\diamond\tilde\xi=a$ is read in the product $\diamond$; the element $a$ is general, with no central or pure restriction, and the value $a=0$ is the origin of the space. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$.</p>
+<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_t+\vec p$, $\tilde q=q_te_t+\vec q$ and $\tilde\xi=\xi_te_t+\vec\xi$ name elements of $\mathbb{H}$ with real coefficients, $(\vec p,\vec q)$ is the dot product and $\vec p\times\vec q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation. The equation $\tilde\xi\diamond\tilde\xi=a$ is read in the product $\diamond$; the element $a$ is general, with no central or pure restriction, and the value $a=0$ is the origin of the space. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$.</p>
 <p><strong>Boundaries.</strong> The operation and its alternation are <em>Introduction to the Antisymmetric Quaternionic Algebra of Quaternions</em>; the definitions of the square and of the square root of an element are <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>. The general reduction of the equation in the plain product is <em>Square Roots of a General Element in the General Plain Algebra</em>; the special case of the three central values is <em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra</em>; the square-zero elements and the zero divisors are <em>Nilpotents of the Antisymmetric Quaternionic Algebra</em> and <em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em>.</p>
 <h2 id="the-notion-and-its-product">The Notion and Its Product</h2>
 <p><strong>Definition (square root of an element).</strong> Let $\star$ be a product on $\mathbb{H}$ and let $a\in\mathbb{H}$. A <strong>square root of $a$ in $\star$</strong> is an element $\tilde\xi$ with</p>
 <p>$$
 \tilde\xi\star\tilde\xi=a .
 $$</p>
-<p>The roots of a central value are the special case $a=\lambda e_0$, and at the central values the two notions coincide, no nonzero condition being imposed on a root in this chapter.</p>
+<p>The roots of a central value are the special case $a=\lambda e_t$, and at the central values the two notions coincide, no nonzero condition being imposed on a root in this chapter.</p>
 <p>Throughout this article the product is the <strong>antisymmetric quaternionic multiplication</strong> $\diamond$, and unqualified, <em>square root</em> means a square root of the block. The general reduction of the equation in the plain product, and the square it uses, are <em>Square Roots of a General Element in the General Plain Algebra</em>; the special case of the three central values is <em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra</em>.</p>
 <h2 id="the-reduction">The Reduction</h2>
 <p><strong>Proposition (the reduction).</strong> For every element $\tilde\xi$ the square vanishes,</p>
@@ -116,17 +115,17 @@ $$</p>
 </table></div>
 <p>The table is the reduction read value by value. The case-by-case classification of the general plain algebra, with its finite families of roots determined by a discriminant, does not occur here, because the quadratic has collapsed. The single element with square roots is the origin, and its square roots are as many as the space allows; every other element has none. This is the reading of the root problem at a general element for the entry $\mathrm{AQA}$ of <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-central-values">The Central Values</h2>
-<p><strong>Remark (the three central values).</strong> The central values are the case $a=\lambda e_0$. At $\lambda=0$ the square roots of $\lambda e_0$ in the sense of this article are all the elements; at $\lambda=-1$ and at $\lambda=+1$ the equation $\tilde\xi\diamond\tilde\xi=\lambda e_0$ has no solution, as the reduction shows and as <em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra</em> records. The central case of the classification therefore adds no new computation and no new distinction over the real field, the two notions of root coinciding at the central values; it is the paper $a=0$ of the table, read at the three named values.</p>
+<p><strong>Remark (the three central values).</strong> The central values are the case $a=\lambda e_t$. At $\lambda=0$ the square roots of $\lambda e_t$ in the sense of this article are all the elements; at $\lambda=-1$ and at $\lambda=+1$ the equation $\tilde\xi\diamond\tilde\xi=\lambda e_t$ has no solution, as the reduction shows and as <em>Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra</em> records. The central case of the classification therefore adds no new computation and no new distinction over the real field, the two notions of root coinciding at the central values; it is the paper $a=0$ of the table, read at the three named values.</p>
 <p><strong>Remark (the relation to the zero divisors).</strong> A square root of $0$ that is nonzero is a square-zero element and hence a zero divisor of the block, the square-zero set and the zero-divisor set coinciding off the origin (<em>Zero Divisors of the Antisymmetric Quaternionic Algebra</em>). The origin is a square root of itself and is not a zero divisor, by the exclusion of the origin from the definition; the square roots of the origin are therefore the zero divisors of the block together with the origin.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p>The examples are read from the explicit form $\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, and each is the reduction at a displayed value.</p>
+<p>The examples are read from the explicit form $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$, and each is the reduction at a displayed value.</p>
 <ul>
-<li><strong>The square root of $e_0$.</strong> The equation $\tilde\xi\diamond\tilde\xi=e_0$ has no solution: the left side is a pure vector, the right side is central and nonzero, and the two cannot agree.</li>
-<li><strong>The square root of $e_1$.</strong> The equation $\tilde\xi\diamond\tilde\xi=e_1$ has no solution, for the same reason: the left side is zero and the right side is the nonzero pure vector $e_1$.</li>
-<li><strong>The square root of a product, $e_1\diamond e_2=-e_3$.</strong> The equation $\tilde\xi\diamond\tilde\xi=-e_3$ has no solution, the left side vanishing and the right side being the nonzero pure vector $-e_3$.</li>
-<li><strong>The square root of $0$.</strong> Every element is a square root: $e_0$, $e_0+e_1$, $e_0+e_1+e_2+e_3$, and $e_1+2e_2-e_3$, each satisfying $\tilde\xi\diamond\tilde\xi=0$ by the reduction.</li>
+<li><strong>The square root of $e_t$.</strong> The equation $\tilde\xi\diamond\tilde\xi=e_t$ has no solution: the left side is a pure vector, the right side is central and nonzero, and the two cannot agree.</li>
+<li><strong>The square root of $\vec e_x$.</strong> The equation $\tilde\xi\diamond\tilde\xi=\vec e_x$ has no solution, for the same reason: the left side is zero and the right side is the nonzero pure vector $\vec e_x$.</li>
+<li><strong>The square root of a product, $\vec e_x\diamond \vec e_y=-\vec e_z$.</strong> The equation $\tilde\xi\diamond\tilde\xi=-\vec e_z$ has no solution, the left side vanishing and the right side being the nonzero pure vector $-\vec e_z$.</li>
+<li><strong>The square root of $0$.</strong> Every element is a square root: $e_t$, $e_t+\vec e_x$, $e_t+\vec e_x+\vec e_y+\vec e_z$, and $\vec e_x+2\vec e_y-\vec e_z$, each satisfying $\tilde\xi\diamond\tilde\xi=0$ by the reduction.</li>
 </ul>
-<p>The four examples are the two rows of the classification, read four times: the second row of the table is entered by the central value, by the pure generator and by the computed value $e_1\diamond e_2=-e_3$, a product rather than a chosen element, and the first row is entered by the origin, which is the single element named there although the whole space belongs to it.</p>
+<p>The four examples are the two rows of the classification, read four times: the second row of the table is entered by the central value, by the pure generator and by the computed value $\vec e_x\diamond \vec e_y=-\vec e_z$, a product rather than a chosen element, and the first row is entered by the origin, which is the single element named there although the whole space belongs to it.</p>
 <h2 id="summary">Summary</h2>
 <p>The square root of an element $a$ is an element whose square in the block is $a$, and for the antisymmetric quaternionic multiplication the square vanishes identically, so the equation $\tilde\xi\diamond\tilde\xi=a$ reduces to the equation $0=a$. The origin alone has square roots, and its square roots are all the elements of $\mathbb{H}$; no nonzero element has a square root, whether central, pure or general. The classification is the two rows of the table $a=0$ and $a\neq0$, with the whole space in the first row and the empty set in the second, and it is the extreme collapse of the case-by-case theory of the general plain algebra. The central values add no new computation: the square roots of $0$ are all the elements, the nonzero ones among them being the nilpotents and the zero divisors of the block, while the roots of $-1$ and of $+1$ are empty.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -155,7 +154,7 @@ $$</p>
 <td>the set of square roots of a nonzero element in the block</td>
 </tr>
 <tr>
-<td>$e_1\diamond e_2=-e_3$</td>
+<td>$\vec e_x\diamond \vec e_y=-\vec e_z$</td>
 <td>a computed nonzero value, of which there is no square root</td>
 </tr>
 <tr>

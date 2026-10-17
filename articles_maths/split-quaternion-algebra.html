@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -58,88 +57,88 @@
 <h3 id="definition">Definition</h3>
 <p>The <strong>split-quaternion algebra</strong> $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis</p>
 <p>$$
-1, \qquad e_1, \qquad e_2, \qquad e_3,
+1, \qquad \vec e_x, \qquad \vec e_y, \qquad \vec e_z,
 $$</p>
 <p>and multiplication rules</p>
 <p>$$
-e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1 e_2, \qquad e_1 e_2 = -e_2 e_1.
+\vec e_x^2 = -e_t, \qquad \vec e_y^2 = +e_t, \qquad \vec e_z = \vec e_x \vec e_y, \qquad \vec e_x \vec e_y = -\vec e_y \vec e_x.
 $$</p>
 <p>A general split-quaternion is written in developed form as</p>
 <p>$$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R},
 $$</p>
 <p>or, more compactly, as</p>
 <p>$$
-\tilde q = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad e_0 = 1.
+\tilde q = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu, \qquad e_t = 1.
 $$</p>
-<p>The real number $q_0$ is the <strong>scalar part</strong>, and the triple $(q_1, q_2, q_3)$ is the <strong>vector part</strong>. We also write</p>
+<p>The real number $q_t$ is the <strong>scalar part</strong>, and the triple $(q_x, q_y, q_z)$ is the <strong>vector part</strong>. We also write</p>
 <p>$$
-\tilde q = q_0 + \vec v, \qquad \vec v = q_1 e_1 + q_2 e_2 + q_3 e_3,
+\tilde q = q_t + \vec v, \qquad \vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z,
 $$</p>
-<p>and we write $\operatorname{Sc}(\tilde q) = q_0$ and $\operatorname{Vec}(\tilde q) = \vec v$ for the two components.</p>
-<p>The four elements $1, e_1, e_2, e_3$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.</p>
+<p>and we write $\operatorname{Sc}(\tilde q) = q_t$ and $\operatorname{Vec}(\tilde q) = \vec v$ for the two components.</p>
+<p>The four elements $1, \vec e_x, \vec e_y, \vec e_z$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.</p>
 <h3 id="the-multiplication-table">The Multiplication Table</h3>
-<p>The rules of the definition determine the whole multiplication table. From $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$ one computes</p>
+<p>The rules of the definition determine the whole multiplication table. From $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$ one computes</p>
 <p>$$
-e_3^2 = e_1 e_2 e_1 e_2 = -e_1^2 e_2^2 = -(-1)(+1) = +1,
+\vec e_z^2 = \vec e_x \vec e_y \vec e_x \vec e_y = -\vec e_x^2 \vec e_y^2 = -(-e_t)(+e_t) = +e_t,
 $$</p>
 <p>$$
-e_2 e_3 = e_2 e_1 e_2 = -e_1 e_2^2 = -e_1, \qquad e_3 e_2 = e_1 e_2 e_2 = +e_1,
+\vec e_y \vec e_z = \vec e_y \vec e_x \vec e_y = -\vec e_x \vec e_y^2 = -\vec e_x, \qquad \vec e_z \vec e_y = \vec e_x \vec e_y \vec e_y = +\vec e_x,
 $$</p>
 <p>$$
-e_3 e_1 = e_1 e_2 e_1 = -e_1^2 e_2 = +e_2, \qquad e_1 e_3 = e_1 e_1 e_2 = -e_2.
+\vec e_z \vec e_x = \vec e_x \vec e_y \vec e_x = -\vec e_x^2 \vec e_y = +\vec e_y, \qquad \vec e_x \vec e_z = \vec e_x \vec e_x \vec e_y = -\vec e_y.
 $$</p>
-<p>The products are collected in the following table, whose entry in row $i$ and column $j$ is $e_i e_j$.</p>
+<p>The products are collected in the following table, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th></th>
 <th>$1$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>$1$</td>
 <td>$1$</td>
-<td>$e_1$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$e_1$</td>
-<td>$-1$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$e_2$</td>
-<td>$-e_3$</td>
-<td>$+1$</td>
-<td>$-e_1$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$+e_t$</td>
+<td>$-\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$e_3$</td>
-<td>$e_2$</td>
-<td>$e_1$</td>
-<td>$+1$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_x$</td>
+<td>$+e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is read off from the definition; the entry $e_1 e_3 = -e_2$, for instance, is the identity $e_1 e_3 = e_1 e_1 e_2 = -e_2$.</p>
+<p>The table is read off from the definition; the entry $\vec e_x \vec e_z = -\vec e_y$, for instance, is the identity $\vec e_x \vec e_z = \vec e_x \vec e_x \vec e_y = -\vec e_y$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
-<p><strong>Associative.</strong> Split-quaternion multiplication is associative. It suffices to check the associativity of the generating products, since the product is defined by bilinear extension of the table; the four elements $1, e_1, e_2, e_3$ satisfy the relations of the Clifford algebra $\mathrm{Cl}_{1,1}$, and every Clifford algebra is associative.</p>
-<p><strong>Non-commutative.</strong> Split-quaternion multiplication is not commutative: $e_1 e_2 = e_3$ while $e_2 e_1 = -e_3$. The centre is computed in <em>The Centre and Simplicity</em> below, and it is one-dimensional.</p>
-<p><strong>Not a division algebra.</strong> The element $1 + e_2$ is nonzero and</p>
+<p><strong>Associative.</strong> Split-quaternion multiplication is associative. It suffices to check the associativity of the generating products, since the product is defined by bilinear extension of the table; the four elements $1, \vec e_x, \vec e_y, \vec e_z$ satisfy the relations of the Clifford algebra $\mathrm{Cl}_{1,1}$, and every Clifford algebra is associative.</p>
+<p><strong>Non-commutative.</strong> Split-quaternion multiplication is not commutative: $\vec e_x \vec e_y = \vec e_z$ while $\vec e_y \vec e_x = -\vec e_z$. The centre is computed in <em>The Centre and Simplicity</em> below, and it is one-dimensional.</p>
+<p><strong>Not a division algebra.</strong> The element $1 + \vec e_y$ is nonzero and</p>
 <p>$$
-(1 + e_2)(1 - e_2) = 1 - e_2^2 = 0,
+(1 + \vec e_y)(1 - \vec e_y) = 1 - \vec e_y^2 = 0,
 $$</p>
-<p>so $1 + e_2$ and $1 - e_2$ are nonzero zero divisors. The algebra therefore has zero divisors and is not a division algebra. Frobenius' theorem, recalled in <em>Normed Division Algebras and the Hurwitz Theorem</em>, states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the split-quaternion algebra is a fourth four-dimensional associative real algebra, and the failure of the division property is exactly the appearance of the zero divisors above. The zero divisor set is the subject of <em>Split-Quaternion Zero Divisors</em>.</p>
+<p>so $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero zero divisors. The algebra therefore has zero divisors and is not a division algebra. Frobenius' theorem, recalled in <em>Normed Division Algebras and the Hurwitz Theorem</em>, states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the split-quaternion algebra is a fourth four-dimensional associative real algebra, and the failure of the division property is exactly the appearance of the zero divisors above. The zero divisor set is the subject of <em>Split-Quaternion Zero Divisors</em>.</p>
 <p><strong>The matrix model.</strong> The algebra is isomorphic to the algebra of $2\times2$ real matrices: the low-dimensional Clifford classification gives</p>
 <p>$$
 \mathbb{H}_{\mathrm{s}} \cong \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})
@@ -149,17 +148,17 @@ $$</p>
 <h3 id="the-conjugation">The Conjugation</h3>
 <p><strong>Definition.</strong> The <strong>split-quaternion conjugation</strong> is the map</p>
 <p>$$
-\tilde{q}^{\natural} = q_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 .
+\tilde{q}^{\natural} = q_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z .
 $$</p>
 <p>It negates the three vector basis elements and fixes the scalars.</p>
-<p><strong>Proposition.</strong> The conjugation is an involutive algebra anti-automorphism: it is $\mathbb{R}$-linear, it satisfies $(\tilde q \tilde p)^{\natural} = \tilde{p}^{\natural}\, \tilde{q}^{\natural}$ and $(\tilde{q}^{\natural})^{\natural} = \tilde q$, and its fixed-point set is the scalar line $\mathbb{R}$.</p>
-<p><strong>Proof.</strong> Linearity and the second identity are immediate from the definition. For the anti-automorphism property it suffices to check the generators: $(e_1 e_2)^{\natural} = e_3^{\natural} = -e_3$, while $e_2^{\natural} e_1^{\natural} = (-e_2)(-e_1) = e_2 e_1 = -e_3$, and the other products are similar. The fixed points satisfy $q_1 e_1 + q_2 e_2 + q_3 e_3 = -(q_1 e_1 + q_2 e_2 + q_3 e_3)$, hence $q_1 = q_2 = q_3 = 0$.</p>
+<p><strong>Proposition.</strong> The conjugation is an involutive algebra anti-automorphism: it is $\mathbb{R}$-linear, it satisfies $(\tilde q_1 \tilde q_2)^{\natural} = \tilde q_2^{\natural}\, \tilde q_1^{\natural}$ and $(\tilde{q}^{\natural})^{\natural} = \tilde q$, and its fixed-point set is the scalar line $\mathbb{R}$.</p>
+<p><strong>Proof.</strong> Linearity and the second identity are immediate from the definition. For the anti-automorphism property it suffices to check the generators: $(\vec e_x \vec e_y)^{\natural} = \vec e_z^{\natural} = -\vec e_z$, while $\vec e_y^{\natural} \vec e_x^{\natural} = (-\vec e_y)(-\vec e_x) = \vec e_y \vec e_x = -\vec e_z$, and the other products are similar. The fixed points satisfy $q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = -(q_x \vec e_x + q_y \vec e_y + q_z \vec e_z)$, hence $q_x = q_y = q_z = 0$.</p>
 <h3 id="the-two-eigenspaces">The Two Eigenspaces</h3>
 <p>Since ${}^{\natural}$ is an involutive linear map, the algebra decomposes into its $+1$ and $-1$ eigenspaces:</p>
 <p>$$
 \mathbb{H}_{\mathrm{s}} = S \oplus V, \qquad
 S = \{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R} \cdot 1, \qquad
-V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\} = \operatorname{span}\{e_1, e_2, e_3\}.
+V = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\} = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}.
 $$</p>
 <p>The <strong>scalar subspace</strong> $S$ is one-dimensional and is a subalgebra isomorphic to $\mathbb{R}$; it is the centre, as <em>The Centre and Simplicity</em> below shows. The <strong>vector subspace</strong> $V$ is three-dimensional, it is not a subalgebra, and it is the natural home of the geometry of the system. Every element decomposes uniquely as</p>
 <p>$$
@@ -169,33 +168,33 @@ $$</p>
 <h3 id="the-other-two-involutions">The Other Two Involutions</h3>
 <p>Two further involutions act on the algebra, and they are recorded here because the subspaces of <em>Split-Quaternion Subspaces and the Involutions</em> are cut out by them. The <strong>principal involution</strong> $\alpha$ is the algebra automorphism defined on the generators by</p>
 <p>$$
-\alpha(e_1) = -e_1, \qquad \alpha(e_2) = -e_2, \qquad \alpha(e_3) = e_3,
+\alpha(\vec e_x) = -\vec e_x, \qquad \alpha(\vec e_y) = -\vec e_y, \qquad \alpha(\vec e_z) = \vec e_z,
 $$</p>
 <p>and the <strong>reversal</strong> $\rho$ is the algebra anti-automorphism defined by</p>
 <p>$$
-\rho(e_1) = e_1, \qquad \rho(e_2) = e_2, \qquad \rho(e_3) = -e_3 .
+\rho(\vec e_x) = \vec e_x, \qquad \rho(\vec e_y) = \vec e_y, \qquad \rho(\vec e_z) = -\vec e_z .
 $$</p>
-<p>Both are involutions, they commute, and their composite is the conjugation: $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$. Because they commute, each preserves the eigenspaces of the other, and the algebra decomposes into their common eigenspaces. The two involutions do not separate $e_1$ from $e_2$, however: $\alpha$ acts as $-1$ on the whole plane $\operatorname{span}\{e_1,e_2\}$, and $\rho$ acts as $+1$ on that plane, so the common eigenspaces are</p>
+<p>Both are involutions, they commute, and their composite is the conjugation: $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$. Because they commute, each preserves the eigenspaces of the other, and the algebra decomposes into their common eigenspaces. The two involutions do not separate $\vec e_x$ from $\vec e_y$, however: $\alpha$ acts as $-1$ on the whole plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, and $\rho$ acts as $+1$ on that plane, so the common eigenspaces are</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R} \cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3,
+\mathbb{H}_{\mathrm{s}} = \mathbb{R} \cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$</p>
-<p>of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb{R}\cdot 1$, $(-,+)$ on $\operatorname{span}\{e_1,e_2\}$ and $(+,-)$ on $\mathbb{R}e_3$. This is the finest decomposition produced by the three involutions: on $\operatorname{span}\{e_1,e_2\}$ all three act as $-1$, so no eigenspace of any of them splits that plane. The eigenspaces of the involutions taken one at a time are the ones used in <em>Split-Quaternion Analysis</em>: the principal involution has $+1$ on $\operatorname{span}\{1,e_3\}$ and $-1$ on $\operatorname{span}\{e_1,e_2\}$; the reversal has $+1$ on $\operatorname{span}\{1,e_1,e_2\}$ and $-1$ on $\mathbb{R}e_3$; and the conjugation has $+1$ on $\mathbb{R}\cdot 1$ and $-1$ on $V$.</p>
+<p>of dimensions $1, 2, 1$, the sign pair $(\alpha,\rho)$ being $(+,+)$ on $\mathbb{R}\cdot 1$, $(-,+)$ on $\operatorname{span}\{\vec e_x,\vec e_y\}$ and $(+,-)$ on $\mathbb{R}\vec e_z$. This is the finest decomposition produced by the three involutions: on $\operatorname{span}\{\vec e_x,\vec e_y\}$ all three act as $-1$, so no eigenspace of any of them splits that plane. The eigenspaces of the involutions taken one at a time are the ones used in <em>Split-Quaternion Analysis</em>: the principal involution has $+1$ on $\operatorname{span}\{1,\vec e_z\}$ and $-1$ on $\operatorname{span}\{\vec e_x,\vec e_y\}$; the reversal has $+1$ on $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ and $-1$ on $\mathbb{R}\vec e_z$; and the conjugation has $+1$ on $\mathbb{R}\cdot 1$ and $-1$ on $V$.</p>
 <h2 id="the-inner-product">The Inner Product</h2>
 <p>The <strong>inner product</strong> of two split-quaternions is the real scalar</p>
 <p>$$
-\langle\tilde q,\tilde p\rangle = \operatorname{Sc}(\tilde q\, \tilde{p}^{\natural}) = q_0 p_0 + q_1 p_1 - q_2 p_2 - q_3 p_3,
+\langle\tilde q_1,\tilde q_2\rangle = \operatorname{Sc}(\tilde q_1\, \tilde q_2^{\natural}) = q_{1t} q_{2t} + q_{1x} q_{2x} - q_{1y} q_{2y} - q_{1z} q_{2z},
 $$</p>
-<p>for $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde p = p_0 e_0 + p_1 e_1 + p_2 e_2 + p_3 e_3$. It is symmetric and bilinear, and it is <strong>non-degenerate</strong>: if $\langle\tilde q,\tilde p\rangle = 0$ for every $\tilde p$, then $\tilde q = 0$, since testing against the units gives $q_\mu = 0$.</p>
+<p>for $\tilde q_1 = q_{1t} e_t + q_{1x} \vec e_x + q_{1y} \vec e_y + q_{1z} \vec e_z$ and $\tilde q_2 = q_{2t} e_t + q_{2x} \vec e_x + q_{2y} \vec e_y + q_{2z} \vec e_z$. It is symmetric and bilinear, and it is <strong>non-degenerate</strong>: if $\langle\tilde q_1,\tilde q_2\rangle = 0$ for every $\tilde q_2$, then $\tilde q_1 = 0$, since testing against the units gives $q_\mu = 0$.</p>
 <p>Forming the inner product, evaluating it to a scalar and asking when it vanishes is all that is done with it here. Its diagonal value is the product</p>
 <p>$$
-\langle\tilde q,\tilde q\rangle = \tilde q \tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+\langle\tilde q,\tilde q\rangle = \tilde q \tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
 $$</p>
-<p>which lies in the centre $S$ and is multiplicative, $(\tilde q \tilde p)((\tilde q \tilde p))^{\natural} = (\tilde q\tilde{q}^{\natural})(\tilde p \tilde{p}^{\natural})$, because $\tilde q\tilde{q}^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $\langle\tilde q,\tilde q\rangle = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in <em>Split-Quaternion Zero Divisors</em>. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in <em>Split-Quaternion Norm and Invertibility</em>.</p>
+<p>which lies in the centre $S$ and is multiplicative, $(\tilde q_1 \tilde q_2)((\tilde q_1 \tilde q_2))^{\natural} = (\tilde q_1\tilde q_1^{\natural})(\tilde q_2 \tilde q_2^{\natural})$, because $\tilde q_1\tilde q_1^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $\langle\tilde q,\tilde q\rangle = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in <em>Split-Quaternion Zero Divisors</em>. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in <em>Split-Quaternion Norm and Invertibility</em>.</p>
 <h2 id="the-idempotents-and-the-split-complex-subspaces">The Idempotents and the Split-Complex Subspaces</h2>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p><strong>Definition.</strong> The two elements</p>
 <p>$$
-\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2)
+\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)
 $$</p>
 <p>are the <strong>split-quaternion idempotents</strong>.</p>
 <p><strong>Theorem.</strong> The elements $\tilde\pi_1$ and $\tilde\pi_2$ satisfy</p>
@@ -209,34 +208,34 @@ $$</p>
 <p>is a direct sum of two minimal left ideals of real dimension $2$, and the corresponding statement holds on the right, $\mathbb{H}_{\mathrm{s}} = \tilde\pi_1 \mathbb{H}_{\mathrm{s}} \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}}$. The decomposition is a decomposition of left modules and not of algebras: the subalgebra generated by $\tilde\pi_1$ and $\tilde\pi_2$ is two-dimensional and is not the whole algebra.</p>
 <p><strong>Proof.</strong> The four identities are the computation</p>
 <p>$$
-\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_1,
+\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2\vec e_y + \vec e_y^2) = \tfrac{1}{4}(2 + 2\vec e_y) = \tilde\pi_1,
 $$</p>
-<p>and its analogue for $\tilde\pi_2$, together with $\tilde\pi_1\tilde\pi_2 = \tfrac14(1 - e_2^2) = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$. For non-centrality, $e_1 \tilde\pi_1 = \tfrac12(e_1 + e_3)$ while $\tilde\pi_1 e_1 = \tfrac12(e_1 - e_3)$, so $e_1 \tilde\pi_1 \neq \tilde\pi_1 e_1$. An element $\tilde q \tilde\pi_1$ of the first summand is fixed by right multiplication by $\tilde\pi_1$, since $\tilde q \tilde\pi_1 \tilde\pi_1 = \tilde q \tilde\pi_1$, and the map $\tilde q \mapsto \tilde q \tilde\pi_1$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_1 + \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2)$, and the intersection is zero: if $\tilde q \tilde\pi_1 = \tilde p \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q \tilde\pi_1 = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of <em>Split-Quaternion Idempotents and Projections</em> shows. The final claim holds because $\tilde\pi_1 \tilde\pi_2 = 0$ and the span of $\tilde\pi_1, \tilde\pi_2$ has dimension $2$.</p>
+<p>and its analogue for $\tilde\pi_2$, together with $\tilde\pi_1\tilde\pi_2 = \tfrac14(1 - \vec e_y^2) = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$. For non-centrality, $\vec e_x \tilde\pi_1 = \tfrac12(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac12(\vec e_x - \vec e_z)$, so $\vec e_x \tilde\pi_1 \neq \tilde\pi_1 \vec e_x$. An element $\tilde q \tilde\pi_1$ of the first summand is fixed by right multiplication by $\tilde\pi_1$, since $\tilde q \tilde\pi_1 \tilde\pi_1 = \tilde q \tilde\pi_1$, and the map $\tilde q \mapsto \tilde q \tilde\pi_1$ has image of dimension $2$ because its kernel is $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The sum $\mathbb{H}_{\mathrm{s}} \tilde\pi_1 + \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ is all of $\mathbb{H}_{\mathrm{s}}$, since $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2)$, and the intersection is zero: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. Hence the sum is direct, and each summand is a minimal left ideal, as the idempotent theory of <em>Split-Quaternion Idempotents and Projections</em> shows. The final claim holds because $\tilde\pi_1 \tilde\pi_2 = 0$ and the span of $\tilde\pi_1, \tilde\pi_2$ has dimension $2$.</p>
 <h3 id="the-split-complex-subspaces">The Split-Complex Subspaces</h3>
 <p>The line $\mathbb{R} \cdot 1$ together with either of the two square-$+1$ generators spans a copy of the split-complex algebra inside $\mathbb{H}_{\mathrm{s}}$:</p>
 <p>$$
-\mathbb{D}_2 = \operatorname{span}\{1, e_2\} \cong \mathbb{D}, \qquad
-\mathbb{D}_3 = \operatorname{span}\{1, e_3\} \cong \mathbb{D},
+\mathbb{D}_2 = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{D}, \qquad
+\mathbb{D}_3 = \operatorname{span}\{1, \vec e_z\} \cong \mathbb{D},
 $$</p>
-<p>where $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is the split-complex algebra of <em>Split-Complex Algebra</em>. Both are commutative subalgebras, both have the two idempotents $\tfrac12(1 \pm e_2)$ and $\tfrac12(1 \pm e_3)$ respectively, and both carry the zero divisors $1 \pm e_2$ and $1 \pm e_3$. The whole algebra is generated by $\mathbb{D}_2$ together with the single element $e_1$:</p>
+<p>where $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ is the split-complex algebra of <em>Split-Complex Algebra</em>. Both are commutative subalgebras, both have the two idempotents $\tfrac12(1 \pm \vec e_y)$ and $\tfrac12(1 \pm \vec e_z)$ respectively, and both carry the zero divisors $1 \pm \vec e_y$ and $1 \pm \vec e_z$. The whole algebra is generated by $\mathbb{D}_2$ together with the single element $\vec e_x$:</p>
 <p>$$
-\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 e_1 , \qquad e_1 d = \bar{d} e_1 \ \ (d \in \mathbb{D}_2),
+\mathbb{H}_{\mathrm{s}} = \mathbb{D}_2 \oplus \mathbb{D}_2 \vec e_x , \qquad \vec e_x d = \bar{d} \vec e_x \ \ (d \in \mathbb{D}_2),
 $$</p>
-<p>which exhibits $\mathbb{H}_{\mathrm{s}}$ as a two-dimensional module over the split-complex algebra with a conjugation-twisted multiplication. The idempotents $\tilde\pi_{1,2}$ of the algebra are the idempotents of the subalgebra $\mathbb{D}_2$; they are non-central in $\mathbb{H}_{\mathrm{s}}$ precisely because $e_1$ does not commute with $e_2$.</p>
+<p>which exhibits $\mathbb{H}_{\mathrm{s}}$ as a two-dimensional module over the split-complex algebra with a conjugation-twisted multiplication. The idempotents $\tilde\pi_{1,2}$ of the algebra are the idempotents of the subalgebra $\mathbb{D}_2$; they are non-central in $\mathbb{H}_{\mathrm{s}}$ precisely because $\vec e_x$ does not commute with $\vec e_y$.</p>
 <h2 id="the-centre-and-simplicity">The Centre and Simplicity</h2>
 <p><strong>Theorem (The Centre).</strong> The centre of $\mathbb{H}_{\mathrm{s}}$ is the scalar line:</p>
 <p>$$
-Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q : \tilde q \tilde p = \tilde p\tilde q \ \text{for all} \ \tilde p\} = \mathbb{R} \cdot 1 .
+Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q_1 : \tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1 \ \text{for all} \ \tilde q_2\} = \mathbb{R} \cdot 1 .
 $$</p>
-<p><strong>Proof.</strong> The scalars are central. Conversely, suppose $\tilde q = q_0 + \vec v$ is central. Commuting $\tilde q$ with $e_1$ gives</p>
+<p><strong>Proof.</strong> The scalars are central. Conversely, suppose $\tilde q = q_t + \vec v$ is central. Commuting $\tilde q$ with $\vec e_x$ gives</p>
 <p>$$
-0 = \tilde q e_1 - e_1 \tilde q .
+0 = \tilde q \vec e_x - \vec e_x \tilde q .
 $$</p>
-<p>The scalar part of $\tilde q$ commutes with everything, so the condition is $\vec v e_1 - e_1 \vec v = 0$. Writing $\vec v = q_1 e_1 + q_2 e_2 + q_3 e_3$ and using the table,</p>
+<p>The scalar part of $\tilde q$ commutes with everything, so the condition is $\vec v \vec e_x - \vec e_x \vec v = 0$. Writing $\vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ and using the table,</p>
 <p>$$
-\vec v e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \vec v = -q_1 + q_2 e_3 - q_3 e_2,
+\vec v \vec e_x = -q_x - q_y \vec e_z + q_z \vec e_y, \qquad \vec e_x \vec v = -q_x + q_y \vec e_z - q_z \vec e_y,
 $$</p>
-<p>so $\vec v e_1 - e_1 \vec v = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\vec v = 0$ and $\tilde q = q_0$ is scalar.</p>
+<p>so $\vec v \vec e_x - \vec e_x \vec v = -2q_y \vec e_z + 2q_z \vec e_y = 0$, giving $q_y = q_z = 0$. Commuting with $\vec e_y$ similarly gives $q_x = 0$. Hence $\vec v = 0$ and $\tilde q = q_t$ is scalar.</p>
 <p><strong>Theorem (Simplicity).</strong> The split-quaternion algebra is <strong>simple</strong>: it has no two-sided ideal other than $0$ and the algebra itself.</p>
 <p><strong>Proof.</strong> Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of <em>Split-Quaternion Norm and Invertibility</em>, so $I = \mathbb{H}_{\mathrm{s}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and</p>
 <p>$$
@@ -245,9 +244,9 @@ $$</p>
 <p>which is nonzero for every $\lambda$ outside the two-element set $\{0, -2\operatorname{Sc}(\tilde q)\}$. Choosing such a $\lambda$ exhibits a unit in $I$, so again $I = \mathbb{H}_{\mathrm{s}}$. Hence the only two-sided ideals are $0$ and the algebra.</p>
 <p>The algebra is thus <strong>associative, non-commutative, simple</strong>, with centre $\mathbb{R}$, and it is <strong>not</strong> a division algebra. The combination — associative, non-commutative, simple, centre $\mathbb{R}$, and not a division algebra — is the one the comparisons below set against the quaternions and the split-biquaternions.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
-<p>The algebra carries the commutator bracket $[\tilde q, \tilde p] = \tilde q \tilde p - \tilde p\tilde q$, which makes it a real Lie algebra. The bracket of two elements of $V$ lies in $V$, since</p>
+<p>The algebra carries the commutator bracket $[\tilde q_1, \tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$, which makes it a real Lie algebra. The bracket of two elements of $V$ lies in $V$, since</p>
 <p>$$
-[e_1, e_2] = 2 e_3, \qquad [e_2, e_3] = -2 e_1, \qquad [e_3, e_1] = 2 e_2 .
+[\vec e_x, \vec e_y] = 2 \vec e_z, \qquad [\vec e_y, \vec e_z] = -2 \vec e_x, \qquad [\vec e_z, \vec e_x] = 2 \vec e_y .
 $$</p>
 <p>So $V$ is a three-dimensional Lie subalgebra of $\mathbb{H}_{\mathrm{s}}$, and the displayed relations are those of the three-dimensional simple real Lie algebra $\mathrm{SL}_2(\mathbb{R})$; the bracket algebra on $V$ is therefore $\mathrm{SL}_2(\mathbb{R})$. This is the algebraic origin of the relation between the split-quaternions and the Lorentz group: the vector subspace is a Lie algebra of infinitesimal Lorentz transformations, and the exponential of the bracket gives the rotations of <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
 <p>The scalar line $S$ is the centre of $\mathbb{H}_{\mathrm{s}}$ and therefore contributes nothing to the bracket. The full Lie algebra $\mathbb{H}_{\mathrm{s}}$ is the direct sum of the bracket algebra on $V$ and a central scalar line.</p>
@@ -265,13 +264,13 @@ $$</p>
 <tbody>
 <tr>
 <td>basis and squares</td>
-<td>$e_1^2=e_2^2=e_3^2=-1$</td>
-<td>$e_1^2=-1$, $e_2^2=e_3^2=+1$</td>
+<td>$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$</td>
+<td>$\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$</td>
 </tr>
 <tr>
 <td>diagonal product $\tilde q\tilde{q}^{\natural}$</td>
-<td>$q_0^2+q_1^2+q_2^2+q_3^2$</td>
-<td>$q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$q_t^2+q_x^2+q_y^2+q_z^2$</td>
+<td>$q_t^2+q_x^2-q_y^2-q_z^2$</td>
 </tr>
 <tr>
 <td>zero divisors</td>
@@ -349,12 +348,12 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The two rows that separate the algebras most sharply are the last two. A nilpotent is an element $\tilde q \neq 0$ with $\tilde q^2 = 0$, and the split-quaternion algebra has them: $(e_1 + e_3)^2 = e_1^2 + e_1e_3 + e_3e_1 + e_3^2 = -1 + 0 + 1 = 0$, since $e_1 e_3 = -e_3 e_1$. An algebra that is a product of two division algebras, as $\mathbb{H}_{\mathbb{D}}$ is by the dictionary of <em>The Number Systems as Clifford Algebras</em>, has no nilpotents at all, because a nilpotent would have a nilpotent component in one of the factors and a division algebra has none. Simultaneously, the split-quaternion algebra is <strong>simple</strong>, while a product of two algebras is not. A <strong>simple</strong> algebra with nilpotents and non-central idempotents is therefore entirely different from a <strong>semisimple, non-simple</strong> product of two division algebras with central idempotents and no nilpotents.</p>
+<p>The two rows that separate the algebras most sharply are the last two. A nilpotent is an element $\tilde q \neq 0$ with $\tilde q^2 = 0$, and the split-quaternion algebra has them: $(\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -e_t + 0 + e_t = 0$, since $\vec e_x \vec e_z = -\vec e_z \vec e_x$. An algebra that is a product of two division algebras, as $\mathbb{H}_{\mathbb{D}}$ is by the dictionary of <em>The Number Systems as Clifford Algebras</em>, has no nilpotents at all, because a nilpotent would have a nilpotent component in one of the factors and a division algebra has none. Simultaneously, the split-quaternion algebra is <strong>simple</strong>, while a product of two algebras is not. A <strong>simple</strong> algebra with nilpotents and non-central idempotents is therefore entirely different from a <strong>semisimple, non-simple</strong> product of two division algebras with central idempotents and no nilpotents.</p>
 <p>The eight-dimensional relative of the corpus is treated later in Part V, under Split-Biquaternions; nothing in it is used here. What is stated here is stated from the algebra of this article and from the conventions: a four-dimensional simple real algebra with zero divisors and non-central idempotents, on the one hand, and the eight-dimensional $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, on the other.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis $1, e_1, e_2, e_3$, the products $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$, the anticommutation $e_1 e_2 = -e_2 e_1$ and $e_3 = e_1 e_2$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + e_2$ and $1 - e_2$ are nonzero and multiply to zero.</p>
-<p>The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\tilde{q}^{\natural}$ is the Clifford conjugation. The diagonal product $\tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of units and the action of the group on $V$ are treated in <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
-<p>The conjugation $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{e_1,e_2\}$ and the line $\mathbb{R}e_3$. The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,e_2\}$ and $\operatorname{span}\{1,e_3\}$ are copies of $\mathbb{D}$ and carry the zero divisors of the algebra.</p>
+<p>The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, the products $\vec e_x^2 = -e_t$, $\vec e_y^2 = \vec e_z^2 = +e_t$, the anticommutation $\vec e_x \vec e_y = -\vec e_y \vec e_x$ and $\vec e_z = \vec e_x \vec e_y$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero and multiply to zero.</p>
+<p>The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\tilde{q}^{\natural}$ is the Clifford conjugation. The diagonal product $\tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of units and the action of the group on $V$ are treated in <em>Split-Quaternion Norm and Invertibility</em> and <em>Split-Quaternion Rotations and the Lorentz Group</em>.</p>
+<p>The conjugation $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,\vec e_y\}$ and $\operatorname{span}\{1,\vec e_z\}$ are copies of $\mathbb{D}$ and carry the zero divisors of the algebra.</p>
 <p>The system is not the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, which is neither simple nor free of nilpotents; the two are distinguished once, in <em>The Number Systems as Clifford Algebras</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -372,17 +371,17 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$1, e_1, e_2, e_3$</td>
-<td>the basis, with $e_1^2=-1$, $e_2^2=e_3^2=+1$, $e_3=e_1e_2$</td>
+<td>$1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>the basis, with $\vec e_x^2=-e_t$, $\vec e_y^2=\vec e_z^2=+e_t$, $\vec e_z=\vec e_x \vec e_y$</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
+<td>$\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$</td>
 <td>a general split-quaternion</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$q_0 = \operatorname{Sc}(\tilde q)$</td>
+<td>$q_t = \operatorname{Sc}(\tilde q)$</td>
 <td>the scalar part</td>
 <td>this article</td>
 </tr>
@@ -397,47 +396,47 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
 <td>the vector subspace</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$</td>
 <td>the split-quaternion conjugation</td>
 <td>this article</td>
 </tr>
 <tr>
 <td>$\alpha$</td>
-<td>the principal involution, $e_1,e_2 \mapsto -e_1,-e_2$, $e_3 \mapsto e_3$</td>
+<td>the principal involution, $\vec e_x,\vec e_y \mapsto -\vec e_x,-\vec e_y$, $\vec e_z \mapsto \vec e_z$</td>
 <td>this article</td>
 </tr>
 <tr>
 <td>$\rho$</td>
-<td>the reversal, $e_1,e_2 \mapsto e_1,e_2$, $e_3 \mapsto -e_3$</td>
+<td>the reversal, $\vec e_x,\vec e_y \mapsto \vec e_x,\vec e_y$, $\vec e_z \mapsto -\vec e_z$</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\langle\tilde q,\tilde p\rangle = \operatorname{Sc}(\tilde q \tilde{p}^{\natural}) = q_0p_0+q_1p_1-q_2p_2-q_3p_3$</td>
+<td>$\langle\tilde q_1,\tilde q_2\rangle = \operatorname{Sc}(\tilde q_1 \tilde q_2^{\natural}) = q_{1t}q_{2t}+q_{1x}q_{2x}-q_{1y}q_{2y}-q_{1z}q_{2z}$</td>
 <td>the inner product, formed and evaluated algebraically</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$</td>
 <td>the split-quaternion norm, named here only by forward reference</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>
 <tr>
-<td>$\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$</td>
+<td>$\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$</td>
 <td>the non-central idempotents</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>$\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$, $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$</td>
 <td>the split-complex subalgebras</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$[\tilde q,\tilde p] = \tilde q \tilde p - \tilde p\tilde q$</td>
+<td>$[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$</td>
 <td>the commutator bracket</td>
 <td>this article</td>
 </tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -143,8 +142,8 @@ $$</p>
 <p><strong>Theorem (Whitney approximation).</strong> Every continuous map between smooth manifolds is homotopic to a smooth map, and if it is already smooth on a closed subset it may be approximated there by smooth maps agreeing with it on a neighbourhood of that subset.</p>
 <h3 id="tubular-neighbourhoods">Tubular Neighbourhoods</h3>
 <p><strong>Definition.</strong> Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from <em>Smooth Manifolds and Differential Geometry</em>. The <strong>normal bundle</strong> of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $n$ is the orthogonal complement of $T_pS$ with respect to $g_n$. The <strong>exponential map of the metric</strong>, defined, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.</p>
-<p><strong>Theorem (tubular neighbourhood).</strong> Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $U$, the <strong>tubular neighbourhood</strong>, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow U$ is a homotopy equivalence.</p>
-<p><strong>Proof sketch.</strong> Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $U$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section.</p>
+<p><strong>Theorem (tubular neighbourhood).</strong> Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $\Xi$, the <strong>tubular neighbourhood</strong>, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow \Xi$ is a homotopy equivalence.</p>
+<p><strong>Proof sketch.</strong> Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $\Xi$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section.</p>
 <h2 id="morse-theory">Morse Theory</h2>
 <h3 id="morse-functions-and-the-morse-lemma">Morse Functions and the Morse Lemma</h3>
 <p><strong>Definition.</strong> Let $f : M \to \mathbb{R}$ be a smooth function. A critical point $n$ of $f$ is <strong>nondegenerate</strong> if the Hessian bilinear form on $T_pM$,</p>

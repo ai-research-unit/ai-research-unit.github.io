@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -97,7 +96,7 @@ $$</p>
 $$</p>
 <p><em>Proof.</em> Apply both sides to $x$: $\delta(ax) = \delta(a)x + a\delta(x) = L_{\delta(a)}(x) + L_a(\delta x)$.</p>
 <p><strong>Corollary.</strong> The $R$-linear map $\operatorname{Der}_R(A) \to L(A)$, $\delta \mapsto L_{\delta(a)}$ for a fixed $a$, is the restriction of the adjoint action of $\operatorname{Der}_R(A)$ on the operator algebra; on the whole of $L(A)$ the derivation acts by $L_b \mapsto L_{\delta(b)}$, and this is the derivation of the commutative algebra $L(A) \cong A$ carried across the isomorphism. In particular the derivation space depends only on the algebra structure of $A$, as it must.</p>
-<p><strong>Example.</strong> For $A = R[x]$ the derivations form the free module $R[x]\partial_x$ of rank one, and $[\partial_x, L_f] = L_{f'}$ where $f' = \partial_x f$ is the formal derivative. The operator identity $[\partial_x, L_f] = L_{f'}$ is the operator form of the product rule.</p>
+<p><strong>Example.</strong> For $A = R[x]$ the derivations form the free module $R[x]\partial/\partial x$ of rank one, and $[\partial/\partial x, L_f] = L_{f'}$ where $f' = \partial/\partial x f$ is the formal derivative. The operator identity $[\partial/\partial x, L_f] = L_{f'}$ is the operator form of the product rule.</p>
 <h2 id="characters-and-the-gelfand-transform">Characters and the Gelfand Transform</h2>
 <h3 id="characters">Characters</h3>
 <p><strong>Definition.</strong> A <strong>character</strong> of $A$ over $R$ is a unital $R$-algebra homomorphism $\chi : A \to R$, so that $\chi(1) = 1$, $\chi(a+b) = \chi(a)+\chi(b)$ and $\chi(ab) = \chi(a)\chi(b)$. The <strong>character set</strong> is</p>

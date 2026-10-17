@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -62,10 +61,10 @@
 <p><strong>(b)</strong> the canonical bundle $K_M = \Lambda^n(T^{1,0}M)^*$ is torsion, $K_M^{\otimes m}\cong\mathcal{O}_M$ for some $m\geq1$; equivalently, a finite étale cover of $M$ has trivial canonical bundle and carries a nowhere vanishing holomorphic $n$-form $\Omega$;</p>
 <p><strong>(c)</strong> $M$ carries a Kähler metric with vanishing Ricci form, and therefore a Ricci-flat Kähler metric;</p>
 <p><strong>(d)</strong> the reduced holonomy group of some Kähler metric on $M$ is contained in $SU(n)$.</p>
-<p><strong>Proof sketch.</strong> (a)$\Leftrightarrow$(c) is Yau's theorem, stated below: the Ricci form represents $2\pi c_1(M)$, so a Kähler class is the class of a Ricci-flat metric exactly when $c_1=0$. (c)$\Rightarrow$(d): a Ricci-flat Kähler metric has reduced holonomy in $SU(n)$, the subgroup of $U(n)$ fixing the complex volume form. (d)$\Rightarrow$(b): a metric of holonomy in $SU(n)$ has a parallel complex volume form, which is a nowhere vanishing holomorphic $n$-form on the finite étale cover that makes the holonomy connected, so that the canonical bundle is trivial there and torsion in general. (b)$\Rightarrow$(a): a torsion canonical bundle has $c_1(K_M)=0$ in $H^2(M;\mathbb{R})$, and $c_1(M) = -c_1(K_M)$. The passage from the vanishing of $c_1$ in real cohomology to the torsion of the canonical bundle is the theorem of Bogomolov and Beauville; it is the step that makes the equivalence a statement about compact Kähler manifolds.</p>
+<p><strong>Proof sketch.</strong> (a)$\Leftrightarrow$(c) is Yau's theorem, stated below: the Ricci form represents $2\pi c_1(M)$, so a Kähler class is the class of a Ricci-flat metric exactly when $c_1=0$. (c)$\Rightarrow$(d): a Ricci-flat Kähler metric has reduced holonomy in $SU(n)$, the subgroup of $\mathrm{U}(n)$ fixing the complex volume form. (d)$\Rightarrow$(b): a metric of holonomy in $SU(n)$ has a parallel complex volume form, which is a nowhere vanishing holomorphic $n$-form on the finite étale cover that makes the holonomy connected, so that the canonical bundle is trivial there and torsion in general. (b)$\Rightarrow$(a): a torsion canonical bundle has $c_1(K_M)=0$ in $H^2(M;\mathbb{R})$, and $c_1(M) = -c_1(K_M)$. The passage from the vanishing of $c_1$ in real cohomology to the torsion of the canonical bundle is the theorem of Bogomolov and Beauville; it is the step that makes the equivalence a statement about compact Kähler manifolds.</p>
 <p><strong>Theorem (Yau, on the Calabi conjecture).</strong> Let $M$ be a compact Kähler manifold with $c_1(M)=0$. Then every Kähler class on $M$ contains exactly one Ricci-flat Kähler metric. The metric is obtained by solving the complex Monge–Ampère equation</p>
 <p>$$
-\det\Bigl(g_{i\bar j} + \partial_i\partial_{\bar j}\varphi\Bigr) = \det(g_{i\bar j})
+\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \det(g_{i\bar j})
 $$</p>
 <p>for the potential $\varphi$, where $g$ is any Kähler metric in the given class.</p>
 <p><strong>Proof sketch.</strong> The statement is that of <em>Kähler Geometry</em>; the proof is the continuity method for the Monge–Ampère equation, with the a priori estimates of Yau and the openness from the implicit function theorem. The analysis is that of Part III, where the measure and the limit are available.</p>
@@ -159,7 +158,7 @@ $$</p>
 </tr>
 <tr>
 <td>$g_{i\bar j}$, $\varphi$</td>
-<td>Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial_i\partial_{\bar j}\varphi)=\det(g_{i\bar j})$</td>
+<td>Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial^2/\partial z_i\partial\bar z_j\,\varphi)=\det(g_{i\bar j})$</td>
 </tr>
 <tr>
 <td>$h^{n,m}$, $\chi$</td>

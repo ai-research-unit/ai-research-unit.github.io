@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -110,7 +109,7 @@ $$</p>
 <li>Every open subset of $X$ is quasicompact, but $X$ is not in general Hausdorff and the compact subsets in the metric sense have no role: the topology is not metrisable when $\dim X>0$ and $k$ is uncountable.</li>
 <li>The closure of a constructible set is closed, and a morphism of varieties carries constructible sets to constructible sets.</li>
 </ol>
-<p><em>Proof.</em> (1) If $U,V$ are nonempty open and disjoint, the complements are proper closed sets covering $X$, against irreducibility; in a $T_1$ space points are closed, and the only further separation available is that of distinct points by open sets, not by disjoint ones. (2) and (3) are the Noetherian property of the topology, which is inherited by the open subsets over a Noetherian ring. (4) is Chevalley's theorem on constructible sets, quoted as standard; the constructible subsets, finite unions of locally closed sets, are exactly the images of morphisms of varieties, the statement being the algebraic form of the elimination of quantifiers.</p>
+<p><em>Proof.</em> (1) If $\Omega,V$ are nonempty open and disjoint, the complements are proper closed sets covering $X$, against irreducibility; in a $T_1$ space points are closed, and the only further separation available is that of distinct points by open sets, not by disjoint ones. (2) and (3) are the Noetherian property of the topology, which is inherited by the open subsets over a Noetherian ring. (4) is Chevalley's theorem on constructible sets, quoted as standard; the constructible subsets, finite unions of locally closed sets, are exactly the images of morphisms of varieties, the statement being the algebraic form of the elimination of quantifiers.</p>
 <p><strong>Remark (why the topology is so weak).</strong> The Zariski topology is designed so that the points of a variety can be recovered from the algebra of functions with no analytic input: the closed sets are the zero loci of finitely many polynomials, and there are so few of them that a nonempty open set is always dense in the irreducible case. Consequences recorded throughout the article follow: the constant sheaf has the wrong cohomology in this topology, a morphism need not have closed image, and the "compactness" of $X$ is the algebraic descending chain condition rather than a metric compactness. The compensating structure is the structure sheaf of <em>Sheaves in Algebraic Geometry</em>, whose sections over an open set are the regular functions, and which carries all the local information the topology omits.</p>
 <h2 id="morphisms-of-varieties">Morphisms of Varieties</h2>
 <p><strong>Definition.</strong> Let $X\subseteq\mathbb{A}^m_k$ and $Y\subseteq\mathbb{A}^n_k$ be affine varieties. A map $\varphi : X\to Y$ is a <strong>morphism of varieties</strong> if it is the restriction of a polynomial map, that is, $\varphi(P) = (f_1(P),\ldots,f_n(P))$ for polynomials $f_1,\ldots,f_n\in k[x_1,\ldots,x_m]$. A map is <strong>regular</strong> if it is a morphism in this sense, and an <strong>isomorphism</strong> if it is a bijective morphism whose inverse is a morphism.</p>
@@ -136,7 +135,7 @@ $$</p>
 <p>$$
 V(F) = \{[a]\in\mathbb{P}^n_k : F(a_0,\ldots,a_n) = 0\}
 $$</p>
-<p>is well defined because $F(\lambda a) = \lambda^{\deg F}F(a)$, and a <strong>projective variety</strong> is the zero set in $\mathbb{P}^n_k$ of a set of homogeneous polynomials with the induced Zariski topology. Writing $U_i = \{[a] : a_i\neq0\}\cong\mathbb{A}^n_k$ with coordinates $x_j/x_i$, the $n+1$ open sets $U_i$ cover $\mathbb{P}^n_k$, and the <strong>homogeneous coordinate ring</strong> of a projective variety $X\subseteq\mathbb{P}^n_k$ is</p>
+<p>is well defined because $F(\lambda a) = \lambda^{\deg F}F(a)$, and a <strong>projective variety</strong> is the zero set in $\mathbb{P}^n_k$ of a set of homogeneous polynomials with the induced Zariski topology. Writing $\Omega_i = \{[a] : a_i\neq0\}\cong\mathbb{A}^n_k$ with coordinates $x_j/x_i$, the $n+1$ open sets $\Omega_i$ cover $\mathbb{P}^n_k$, and the <strong>homogeneous coordinate ring</strong> of a projective variety $X\subseteq\mathbb{P}^n_k$ is</p>
 <p>$$
 S(X) = k[x_0,\ldots,x_n]/I(X), \qquad I(X) = \{F \text{ homogeneous} : F|_X = 0\},
 $$</p>
@@ -144,10 +143,10 @@ $$</p>
 <p><strong>Theorem (the projective Nullstellensatz and the affine charts).</strong> Let $k$ be algebraically closed.</p>
 <ol>
 <li>The maps $V$ and $I$ give inclusion-reversing bijections between the nonempty closed subsets of $\mathbb{P}^n_k$ and the <strong>saturated</strong> homogeneous radical ideals $\mathrm{A}$ of $k[x_0,\ldots,x_n]$ with $\mathrm{A}\neq(x_0,\ldots,x_n)$, where the saturation of a homogeneous ideal is $\bigcup_{m\geq0}(\mathrm{A}:(x_0,\ldots,x_n)^m)$; the zero set in $\mathbb{P}^n_k$ depends only on the saturation, and $V(\mathrm{A}) = V(\sqrt{\mathrm{A}})$ for homogeneous $\mathrm{A}$.</li>
-<li>$X\cap U_i$ is an affine variety with coordinate ring the degree-zero part $S(X)_{(x_i)}$ of the localisation of the homogeneous coordinate ring at $x_i$; the passages $X\cap U_i = X\cap U_j$ glue the charts, and a closed subset of $\mathbb{P}^n_k$ is irreducible if and only if its homogeneous vanishing ideal is prime.</li>
+<li>$X\cap \Omega_i$ is an affine variety with coordinate ring the degree-zero part $S(X)_{(x_i)}$ of the localisation of the homogeneous coordinate ring at $x_i$; the passages $X\cap \Omega_i = X\cap \Omega_j$ glue the charts, and a closed subset of $\mathbb{P}^n_k$ is irreducible if and only if its homogeneous vanishing ideal is prime.</li>
 <li>The image of a morphism from a projective variety to any variety is closed: projective varieties are <strong>complete</strong>.</li>
 </ol>
-<p><em>Proof.</em> (1) and (2) are the projective forms of the Nullstellensatz and of the localisation of the homogeneous coordinate ring in the cover by the $U_i$, both standard; the graded version of the radical correspondence is proved as in the affine case, the irrelevant ideal being the only one with empty zero set. (3) is the fundamental theorem of elimination theory: a morphism $\varphi : X\to Y$ with $X$ projective is given by homogeneous polynomials on the charts, and the image is the zero set of the resultants obtained by eliminating the homogeneous coordinates; the proof is the elimination theory of Part I's <em>Gröbner Bases and Elimination Theory</em>.</p>
+<p><em>Proof.</em> (1) and (2) are the projective forms of the Nullstellensatz and of the localisation of the homogeneous coordinate ring in the cover by the $\Omega_i$, both standard; the graded version of the radical correspondence is proved as in the affine case, the irrelevant ideal being the only one with empty zero set. (3) is the fundamental theorem of elimination theory: a morphism $\varphi : X\to Y$ with $X$ projective is given by homogeneous polynomials on the charts, and the image is the zero set of the resultants obtained by eliminating the homogeneous coordinates; the proof is the elimination theory of Part I's <em>Gröbner Bases and Elimination Theory</em>.</p>
 <p><strong>Example (the Segre and Veronese embeddings).</strong>
 The <strong>Segre embedding</strong></p>
 <p>$$
@@ -160,7 +159,7 @@ $$</p>
 <p>is a closed embedding whose image is a linearly normal variety, and it linearises the hypersurfaces of degree $d$: the $d$-fold hypersurfaces in $\mathbb{P}^n$ correspond to the hyperplane sections of the Veronese variety. Both are standard examples of the projective constructions that replace the products and the quotients unavailable in the affine category.</p>
 <p><strong>Remark (projective versus affine).</strong> A projective variety is complete, and an affine variety of positive dimension is never complete; the standard proof that $\mathbb{A}^1_k$ is not complete is the existence of the nonconstant nonclosed-image morphism $\mathbb{A}^1_k\to\mathbb{A}^1_k\setminus\{0\}$ of the previous section. Completeness is the algebraic counterpart of compactness, and it is an algebraic condition — the closedness of the images of morphisms — not a topological one: in the Zariski topology every variety already satisfies the finite-subcover property, so the two notions of compactness do not coincide and the algebraic one is the useful one. The general treatment of properness is in <em>Schemes</em>.</p>
 <h2 id="rational-maps-function-fields-and-birational-geometry">Rational Maps, Function Fields and Birational Geometry</h2>
-<p><strong>Definition.</strong> Let $X$ be an irreducible affine or projective variety. The <strong>function field</strong> $k(X)$ is the fraction field of the coordinate ring $k[X]$ in the affine case, and in the projective case the field of fractions of the degree-zero part of the localisation of $S(X)$ at a coordinate, the field being independent of the chart; its elements are the <strong>rational functions</strong> on $X$. A <strong>rational map</strong> $\varphi : X\dashrightarrow Y$ is an equivalence class of morphisms $U\to Y$ from nonempty open subsets $U\subseteq X$, two such being equivalent if they agree on a nonempty open subset. A rational map is <strong>dominant</strong> if its image is dense in $Y$; it is <strong>birational</strong> if it has a rational inverse, and $X,Y$ are then <strong>birational</strong> or <strong>birationally equivalent</strong>.</p>
+<p><strong>Definition.</strong> Let $X$ be an irreducible affine or projective variety. The <strong>function field</strong> $k(X)$ is the fraction field of the coordinate ring $k[X]$ in the affine case, and in the projective case the field of fractions of the degree-zero part of the localisation of $S(X)$ at a coordinate, the field being independent of the chart; its elements are the <strong>rational functions</strong> on $X$. A <strong>rational map</strong> $\varphi : X\dashrightarrow Y$ is an equivalence class of morphisms $\Omega\to Y$ from nonempty open subsets $\Omega\subseteq X$, two such being equivalent if they agree on a nonempty open subset. A rational map is <strong>dominant</strong> if its image is dense in $Y$; it is <strong>birational</strong> if it has a rational inverse, and $X,Y$ are then <strong>birational</strong> or <strong>birationally equivalent</strong>.</p>
 <p><strong>Theorem (the equivalence of categories of function fields).</strong> Let $X,Y$ be irreducible varieties over $k$. Pulling back a rational function along a dominant rational map induces an embedding $k(Y)\hookrightarrow k(X)$ of fields, and the assignment is a contravariant equivalence between the category of irreducible varieties over $k$ with dominant rational maps and the category of finitely generated field extensions of $k$, of transcendence degree $\dim X$. In particular:</p>
 <ol>
 <li>$X$ and $Y$ are birational if and only if $k(X)\cong k(Y)$ over $k$;</li>
@@ -210,7 +209,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{A}^n_k$, $\mathbb{P}^n_k$</td>
-<td>affine and projective $n$-space; $U_i$ the standard affine charts</td>
+<td>affine and projective $n$-space; $\Omega_i$ the standard affine charts</td>
 </tr>
 <tr>
 <td>$V(S)$, $I(X)$</td>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,36 +60,36 @@
 <p>The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$, the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$, and the four four-dimensional ones — the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the informational sector $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.</p>
 <p><strong>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</strong> An element has the form</p>
 <p>$$
-\tilde{Q} = q_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3 = (ct')\, e_0 + x\, e_1 + y\, e_2 + z\, e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct')\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$</p>
 <p>All four coefficients are <strong>real</strong>. The quadratic form</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
 $$</p>
 <p>has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.</p>
 <p><strong>The material sector $\mathbb{M}_-$.</strong> An element has the form</p>
 <p>$$
-\tilde{Q} = i q'_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
 $$</p>
 <p>The first coefficient is <strong>imaginary</strong>, the three remaining coefficients are <strong>real</strong>. The quadratic form</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2
 $$</p>
 <p>has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.</p>
 <p><strong>The informational sector $\mathbb{M}_+$.</strong> An element has the form</p>
 <p>$$
-\tilde{Q} = q_0\, e_0 + i q'_1\, e_1 + i q'_2\, e_2 + i q'_3\, e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + i q'_x\, \vec e_x + i q'_y\, \vec e_y + i q'_z\, \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
 $$</p>
 <p>The first coefficient is <strong>real</strong>, the three remaining coefficients are <strong>imaginary</strong>. The quadratic form</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2
+\langle\tilde{Q}\rangle_{\natural} = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2
 $$</p>
 <p>has signature $(1, 3)$, the mirror image of the signature on $\mathbb{M}_-$.</p>
 <p>The three subspaces are distinct, and each has its own algebraic and analytic character. The specific form of the differential operators on each subspace — the gradient, the d'Alembertian, and the square of the gradient — has been developed in the companion articles on the biquaternion analysis.</p>
 <h2 id="the-standard-wick-rotation">The Standard Wick Rotation</h2>
 <p>In relativistic field theory, a point of the material sector is written</p>
 <p>$$
-\tilde{Q}_- = i c t\, e_0 + x\, e_1 + y\, e_2 + z\, e_3 \in \mathbb{M}_-,
+\tilde{Q}_- = i c t\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z \in \mathbb{M}_-,
 $$</p>
 <p>where $t$ is the time coordinate, $x, y, z$ are the spatial coordinates, and the four coefficients are $ict, x, y, z$ respectively.</p>
 <p>The <strong>standard Wick rotation</strong> is the substitution</p>
@@ -103,9 +102,9 @@ i c t \;\longmapsto\; i c\,(-i\tau) = c\tau,
 $$</p>
 <p>while the spatial coefficients $x, y, z$ are unchanged. The rotated point is</p>
 <p>$$
-\tilde{Q}_\mathbb{H} = c\tau\, e_0 + x\, e_1 + y\, e_2 + z\, e_3,
+\tilde{Q}_\mathbb{H} = c\tau\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z,
 $$</p>
-<p>with <strong>all four coefficients real</strong>. In the notation of the quaternion subspace these are the four parameters $q_0 = c\tau$, $q_1 = x$, $q_2 = y$, $q_3 = z$.</p>
+<p>with <strong>all four coefficients real</strong>. In the notation of the quaternion subspace these are the four parameters $q_t = c\tau$, $q_x = x$, $q_y = y$, $q_z = z$.</p>
 <p>So the standard Wick rotation is the identification</p>
 <p>$$
 \mathbb{M}_- \;\longrightarrow\; \mathbb{H}_{\mathbb{B}}, \qquad (ict, x, y, z) \;\longmapsto\; (c\tau, x, y, z),
@@ -120,7 +119,7 @@ $$</p>
 <p>$$
 Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
 $$</p>
-<p>with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial_t^2/c^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.</p>
+<p>with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial t^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.</p>
 <p>In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,</p>
 <p>$$
 \Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \Delta,
@@ -150,7 +149,7 @@ $$</p>
 <tr>
 <td>d'Alembertian</td>
 <td>$\partial_\tau^2/c^2 + \Delta$ (elliptic)</td>
-<td>$-\partial_t^2/c^2 + \Delta$ (hyperbolic)</td>
+<td>$-c^{-2}\,\partial^2/\partial t^2 + \Delta$ (hyperbolic)</td>
 </tr>
 <tr>
 <td>Zero divisors</td>
@@ -253,20 +252,20 @@ $$</p>
 <td>Material sector: signature $(3, 1)$, hyperbolic</td>
 </tr>
 <tr>
-<td>$q_0, q_1, q_2, q_3$</td>
-<td>Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_0, e_1, e_2, e_3$; the rotated point has $q_0 = c\tau$</td>
+<td>$q_t, q_x, q_y, q_z$</td>
+<td>Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$</td>
 </tr>
 <tr>
-<td>$(ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$</td>
-<td>The same element in physical coordinates; $q_0 = ct'$ and $(q_1,q_2,q_3) = (x,y,z)$</td>
+<td>$(ct')\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$</td>
+<td>The same element in physical coordinates; $q_t = ct'$ and $(q_x,q_y,q_z) = (x,y,z)$</td>
 </tr>
 <tr>
-<td>$q'_0, q_1, q_2, q_3$</td>
-<td>Real parameters on $\mathbb{M}_-$, on $ie_0, e_1, e_2, e_3$; the material point has $q'_0 = ct$</td>
+<td>$q'_t, q_x, q_y, q_z$</td>
+<td>Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $q'_t = ct$</td>
 </tr>
 <tr>
-<td>$q_0, q'_1, q'_2, q'_3$</td>
-<td>Real parameters on $\mathbb{M}_+$, on $e_0, ie_1, ie_2, ie_3$; $q_0 = ct'$</td>
+<td>$q_t, q'_x, q'_y, q'_z$</td>
+<td>Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $q_t = ct'$</td>
 </tr>
 <tr>
 <td>$c$</td>

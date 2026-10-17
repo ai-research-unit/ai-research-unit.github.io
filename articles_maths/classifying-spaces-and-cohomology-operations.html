@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,7 +58,7 @@
 <h2 id="principal-bundles-and-the-classifying-property">Principal Bundles and the Classifying Property</h2>
 <h3 id="principal-bundles">Principal Bundles</h3>
 <p><strong>Definition.</strong> Let $G$ be a topological group. A <strong>principal $G$-bundle</strong> over a space $B$ is a map $p : P \to B$ with a right action of $G$ on $P$ preserving the fibres, such that each fibre is a free orbit of $G$ and $B$ is covered by open sets $U$ for which there is a $G$-equivariant homeomorphism $p^{-1}(U) \cong U \times G$ over $U$, the action on the right being by multiplication on $G$. A <strong>morphism</strong> of principal $G$-bundles is a $G$-equivariant map over $B$; the <strong>pullback</strong> $f^*P$ of $P$ along a map $f : X \to B$ is the bundle whose fibre over $x$ is the fibre of $P$ over $f(x)$, with the evident $G$-action. Two bundles over $B$ are <strong>isomorphic</strong> if a morphism between them is a homeomorphism, and the set of isomorphism classes of principal $G$-bundles over $X$ is written $\operatorname{Prin}_G(X)$.</p>
-<p><strong>Example.</strong> The trivial bundle is $X \times G \to X$ with the action on the second factor. For $G = U(1)$ the associated bundle of a principal $G$-bundle via the standard representation on $\mathbb{C}$ is a complex line bundle, and the passage between the two is the standard dictionary which makes the first Chern class of a line bundle a degree-two class of the base; the differentiable theory of a principal connection on such a bundle is that of <em>Fibre Bundles, Connections and Curvature</em>.</p>
+<p><strong>Example.</strong> The trivial bundle is $X \times G \to X$ with the action on the second factor. For $G = \mathrm{U}(1)$ the associated bundle of a principal $G$-bundle via the standard representation on $\mathbb{C}$ is a complex line bundle, and the passage between the two is the standard dictionary which makes the first Chern class of a line bundle a degree-two class of the base; the differentiable theory of a principal connection on such a bundle is that of <em>Fibre Bundles, Connections and Curvature</em>.</p>
 <h3 id="the-classifying-property">The Classifying Property</h3>
 <p><strong>Definition.</strong> Let $G$ be a topological group. A <strong>universal principal $G$-bundle</strong> is a principal $G$-bundle $p : EG \to BG$ with $EG$ weakly contractible, that is, with $\pi_n(EG) = 0$ for all $n \geq 0$. The base $BG$ is the <strong>classifying space</strong> of $G$.</p>
 <p><strong>Theorem (classifying property).</strong> Let $p : EG \to BG$ be a universal principal $G$-bundle and let $X$ be a CW complex. The pullback of $p$ along a map $f : X \to BG$ defines a natural bijection</p>
@@ -112,7 +111,7 @@ $$</p>
 \cdots \to \pi_n(G) \to \pi_n(EG) \to \pi_n(BG) \to \pi_{n-1}(G) \to \pi_{n-1}(EG) \to \cdots
 $$</p>
 <p>of <em>Homotopy Groups and Fibrations</em>. Every group in the middle vanishes because $EG$ is weakly contractible, so every connecting map is an isomorphism where both neighbouring terms vanish, which gives the displayed identifications; for $n = 1$ the sequence ends $\pi_0(EG) \to \pi_0(BG) \to \pi_0(G) \to \pi_0(EG)$, reading $\pi_1(BG)$ when basepoints are fixed.</p>
-<p><strong>Example.</strong> For $G = U(1)$ the group is connected with $\pi_1(U(1)) = \mathbb{Z}$ and $\pi_n(U(1)) = 0$ for $n \geq 2$, so $BU(1)$ has $\pi_2 = \mathbb{Z}$ and all other homotopy groups trivial; it is therefore $K(\mathbb{Z},2)$, and indeed $BU(1) = \mathbb{CP}^\infty$. For $G = \mathbb{Z}/2\mathbb{Z}$ discrete one has $\pi_0(G) = \mathbb{Z}/2\mathbb{Z}$, so $B(\mathbb{Z}/2\mathbb{Z})$ has fundamental group $\mathbb{Z}/2\mathbb{Z}$ and no higher homotopy, that is, $B(\mathbb{Z}/2\mathbb{Z}) = K(\mathbb{Z}/2\mathbb{Z},1) = \mathbb{RP}^\infty$.</p>
+<p><strong>Example.</strong> For $G = \mathrm{U}(1)$ the group is connected with $\pi_1(\mathrm{U}(1)) = \mathbb{Z}$ and $\pi_n(\mathrm{U}(1)) = 0$ for $n \geq 2$, so $BU(1)$ has $\pi_2 = \mathbb{Z}$ and all other homotopy groups trivial; it is therefore $K(\mathbb{Z},2)$, and indeed $BU(1) = \mathbb{CP}^\infty$. For $G = \mathbb{Z}/2\mathbb{Z}$ discrete one has $\pi_0(G) = \mathbb{Z}/2\mathbb{Z}$, so $B(\mathbb{Z}/2\mathbb{Z})$ has fundamental group $\mathbb{Z}/2\mathbb{Z}$ and no higher homotopy, that is, $B(\mathbb{Z}/2\mathbb{Z}) = K(\mathbb{Z}/2\mathbb{Z},1) = \mathbb{RP}^\infty$.</p>
 <h2 id="the-standard-cases">The Standard Cases</h2>
 <h3 id="discrete-groups-and-math274">Discrete Groups and $K(G,1)$</h3>
 <p><strong>Theorem.</strong> Let $H$ be a discrete group. Then $BH$ is a $K(H,1)$: it has fundamental group $H$ and trivial higher homotopy groups, and its universal cover is $EH$, which is contractible. Conversely every $K(H,1)$ is a classifying space for $H$. A connected CW complex $X$ with $\pi_1(X) = H$ and $\pi_n(X) = 0$ for $n \geq 2$ is therefore a $BH$, so it classifies the principal $H$-bundles over every CW complex.</p>
@@ -182,7 +181,7 @@ $$</p>
 <td>tautological oriented bundle</td>
 </tr>
 <tr>
-<td>$U(n)$</td>
+<td>$\mathrm{U}(n)$</td>
 <td>$\mathrm{Gr}_n(\mathbb{C}^\infty) = BU(n)$</td>
 <td>tautological $\mathbb{C}^n$-bundle</td>
 </tr>
@@ -197,7 +196,7 @@ $$</p>
 <td>tautological $\mathbb{H}^n$-bundle</td>
 </tr>
 <tr>
-<td>$U(1)$</td>
+<td>$\mathrm{U}(1)$</td>
 <td>$\mathbb{CP}^\infty = BU(1)$</td>
 <td>tautological line bundle</td>
 </tr>
@@ -206,7 +205,7 @@ $$</p>
 <p>The Grassmannians and the Stiefel manifolds, together with the universal property of the tautological bundle, are treated in <em>Grassmannians and Stiefel Manifolds</em>; here they supply the concrete models of the classifying spaces of the classical groups, and the inclusions $\mathrm{Gr}_n(\mathbb{K}^N) \hookrightarrow \mathrm{Gr}_n(\mathbb{K}^{N+1})$ exhibit $BG$ as the colimit of finite-dimensional Grassmannians.</p>
 <p><strong>Proposition.</strong> For a compact connected Lie group $G$ the classifying space satisfies $\pi_1(BG) = 0$ and $\pi_2(BG) \cong \pi_1(G)$; for a general topological group $\pi_n(BG) \cong \pi_{n-1}(G)$ for $n \geq 2$ and $\pi_1(BG) \cong \pi_0(G)$. In particular $B$ of a compact connected Lie group is simply connected, and $B$ of a finite group is a $K(G,1)$.</p>
 <p><em>Proof.</em> Immediate from the path–loop theorem: a connected group has $\pi_0(G) = 0$, so $\pi_1(BG) = 0$, and the remaining statements are the degree shift already established.</p>
-<p><strong>Example.</strong> $BU(1) = \mathbb{CP}^\infty$ has $\pi_2 = \mathbb{Z}$ and higher homotopy trivial, so it is $K(\mathbb{Z},2)$; $BO(1) = \mathbb{RP}^\infty$ is $K(\mathbb{Z}/2\mathbb{Z},1)$; $BSO(2) = BU(1)$ because $SO(2) \cong U(1)$. The descriptions of these groups as matrix groups with their real, complex and quaternionic forms are those of <em>Matrix Groups and Classical Groups</em>.</p>
+<p><strong>Example.</strong> $BU(1) = \mathbb{CP}^\infty$ has $\pi_2 = \mathbb{Z}$ and higher homotopy trivial, so it is $K(\mathbb{Z},2)$; $BO(1) = \mathbb{RP}^\infty$ is $K(\mathbb{Z}/2\mathbb{Z},1)$; $BSO(2) = BU(1)$ because $SO(2) \cong \mathrm{U}(1)$. The descriptions of these groups as matrix groups with their real, complex and quaternionic forms are those of <em>Matrix Groups and Classical Groups</em>.</p>
 <h3 id="products-and-abelian-groups">Products and Abelian Groups</h3>
 <p><strong>Theorem.</strong> Let $G$ and $H$ be topological groups. Then $B(G \times H)$ is homotopy equivalent to $BG \times BH$, the classifying space of the trivial group is a point, and for a discrete abelian group $A$ the space $BA$ is again an abelian group in the homotopy category, with a homotopy equivalence $\Omega BA \simeq A$ when $A$ is discrete.</p>
 <p><em>Proof.</em> The product $EG \times EH$ is weakly contractible and carries the free action of $G \times H$ with quotient $BG \times BH$, so it is a universal principal $(G\times H)$-bundle by the defining property; the classifying space is therefore $BG \times BH$ up to weak homotopy equivalence, and up to homotopy equivalence when the spaces are CW complexes. For the last statement the path–loop theorem gives $\Omega BA \simeq A$ because the loop space of a classifying space is the group itself in the discrete case, the loops at the basepoint being the group elements.</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -76,14 +75,14 @@ $$</p>
 <p>In particular $\|R(\lambda)\|\to0$ as $|\lambda|\to\infty$, so $R$ is bounded on every contour lying outside a disc containing the spectrum.</p>
 <p><em>Proof.</em> The resolvent identity follows by multiplying the identity $(\lambda-a)-(\mu-a)=(\lambda-\mu)$ on both sides by $R(\lambda)$ and $R(\mu)$; it exhibits the resolvent as continuous, and dividing by $\lambda-\mu$ gives its analyticity. The estimate follows from the Neumann series $R(\lambda)=-\lambda^{-1}\sum_{n\ge0}(a/\lambda)^n$.</p>
 <h3 id="the-definition">The Definition</h3>
-<p>Let $f$ be holomorphic on an open set $U\supseteq\sigma(a)$, and let $\Gamma$ be a finite union of positively oriented simple closed curves in $U\cap\rho(a)$, disjoint and with $\sigma(a)$ in the interior of $\Gamma$; such a contour exists because $\sigma(a)$ is compact and $U\cap\rho(a)$ is an open neighbourhood of it.</p>
+<p>Let $f$ be holomorphic on an open set $\Omega\supseteq\sigma(a)$, and let $\Gamma$ be a finite union of positively oriented simple closed curves in $\Omega\cap\rho(a)$, disjoint and with $\sigma(a)$ in the interior of $\Gamma$; such a contour exists because $\sigma(a)$ is compact and $\Omega\cap\rho(a)$ is an open neighbourhood of it.</p>
 <p><strong>Definition.</strong> The <strong>holomorphic functional calculus</strong> of $a$ is</p>
 <p>$$
 f(a) = \frac{1}{2\pi i}\oint_\Gamma f(\lambda)\,R(\lambda)\,d\lambda ,
 $$</p>
 <p>the integral of a continuous $A$-valued function on a compact contour.</p>
 <p><strong>Proposition (well-definedness).</strong> The integral does not depend on the contour $\Gamma$: for two admissible contours the difference of the integrals is the integral of the analytic $A$-valued function $f(\lambda)R(\lambda)$ over the boundary of a region on which it is analytic, and it vanishes by Cauchy's theorem.</p>
-<p><em>Proof.</em> On the region between the two contours the integrand is analytic, since $f$ is holomorphic on $U$ and $R$ on $\rho(a)$; Cauchy's theorem for vector-valued analytic functions (the scalar theorem applied to each continuous linear functional) gives the vanishing.</p>
+<p><em>Proof.</em> On the region between the two contours the integrand is analytic, since $f$ is holomorphic on $\Omega$ and $R$ on $\rho(a)$; Cauchy's theorem for vector-valued analytic functions (the scalar theorem applied to each continuous linear functional) gives the vanishing.</p>
 <p><strong>Theorem (the calculus is a continuous homomorphism).</strong> The map $f\mapsto f(a)$ from the algebra of germs of functions holomorphic on neighbourhoods of $\sigma(a)$ to $A$ is a unital algebra homomorphism: $(f+g)(a)=f(a)+g(a)$, $(fg)(a)=f(a)g(a)$, $1(a)=1$, $\lambda(a)=a$; it is continuous with respect to uniform convergence on neighbourhoods of $\sigma(a)$.</p>
 <p><em>Proof.</em> Linearity is immediate from the linearity of the integral. For the product, use the resolvent identity and the identity $R(\lambda)R(\mu)=(\lambda-\mu)^{-1}(R(\mu)-R(\lambda))$ for $\lambda\neq\mu$ to reduce the double contour integral of $f(\lambda)g(\mu)R(\lambda)R(\mu)$ to the sum of the two integrals representing $f(a)g(a)$ and $g(a)f(a)$; the function $(\lambda-\mu)^{-1}$ has poles only on the diagonals $\lambda=\mu$, which the contours avoid. The constants are immediate: $1(a)=\frac{1}{2\pi i}\oint\Gamma R(\lambda)d\lambda=1$, and $\lambda(a)=\frac{1}{2\pi i}\oint\Gamma\lambda R(\lambda)d\lambda=a$. Continuity follows from the estimate $\|f(a)\|\le\frac{1}{2\pi}\ell(\Gamma)\max_\Gamma|f|\|R\|$.</p>
 <p><strong>Theorem (spectral mapping).</strong> For every $f$ holomorphic on a neighbourhood of $\sigma(a)$,</p>
@@ -121,8 +120,8 @@ $$</p>
 <h3 id="the-exponential-the-logarithm-and-the-square-root">The Exponential, the Logarithm and the Square Root</h3>
 <p><strong>Proposition (entire functions).</strong> If $f(\lambda)=\sum_{n\ge0}c_n\lambda^n$ is entire, then the series $\sum_nc_na^n$ converges in $A$ and its sum is $f(a)$; hence the calculus for entire functions is the substitution of $a$ into the power series.</p>
 <p><em>Proof.</em> The series converges absolutely because $f$ has infinite radius of convergence and $\|a^n\|\le\|a\|^n$; the integral defining $f(a)$ can be expanded as the uniformly convergent sum of the integrals of $c_n\lambda^nR(\lambda)$, and each of those is $c_na^n$ by the resolvent expansion.</p>
-<p><strong>Proposition (the logarithm).</strong> Let $a\in A$ and suppose $\sigma(a)$ is contained in a simply connected open set $U\subseteq\mathbb{C}\setminus\{0\}$. Then there exists $b\in A$ with $\exp(b)=a$; if $\sigma(a)\subset\{|\lambda-1|<1\}$ then $b=\log a$ is given by the series $\sum_{n\ge1}(-1)^{n+1}(a-1)^n/n$.</p>
-<p><em>Proof.</em> Let $g$ be a holomorphic branch of the logarithm on $U$; set $b=g(a)$. Then $\exp(g(\lambda))=\lambda$ on a neighbourhood of $\sigma(a)$, so by the composition rule $\exp(b)=(\exp(\,\cdot)\circ g)(a)=\lambda(a)=a$. The series statement is the principal branch and the power-series case of the preceding proposition.</p>
+<p><strong>Proposition (the logarithm).</strong> Let $a\in A$ and suppose $\sigma(a)$ is contained in a simply connected open set $\Omega\subseteq\mathbb{C}\setminus\{0\}$. Then there exists $b\in A$ with $\exp(b)=a$; if $\sigma(a)\subset\{|\lambda-1|<1\}$ then $b=\log a$ is given by the series $\sum_{n\ge1}(-1)^{n+1}(a-1)^n/n$.</p>
+<p><em>Proof.</em> Let $g$ be a holomorphic branch of the logarithm on $\Omega$; set $b=g(a)$. Then $\exp(g(\lambda))=\lambda$ on a neighbourhood of $\sigma(a)$, so by the composition rule $\exp(b)=(\exp(\,\cdot)\circ g)(a)=\lambda(a)=a$. The series statement is the principal branch and the power-series case of the preceding proposition.</p>
 <p><strong>Proposition (the square root).</strong> If $0\notin\sigma(a)$ and the spectrum lies in a simply connected set avoiding $0$, then $a$ has a square root in the closed subalgebra generated by $1$ and $a$, namely $f(a)$ for a holomorphic branch $f(\lambda)=\lambda^{1/2}$. If in addition $\sigma(a)\subset(0,\infty)$ then the square root is the limit of the Newton iteration and is a function of $a$ in the strong sense.</p>
 <p><em>Proof.</em> The branch $f$ is holomorphic on the domain and $f^2=\lambda$, so $f(a)^2=(f^2)(a)=\lambda(a)=a$ by the homomorphism property.</p>
 <h3 id="the-matrix-case">The Matrix Case</h3>

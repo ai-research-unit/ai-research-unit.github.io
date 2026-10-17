@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -130,14 +129,14 @@ $$</p>
 <h3 id="classical-points-and-the-comparison-functor">Classical Points and the Comparison Functor</h3>
 <p><strong>Definition.</strong> A point $x \in M(A)$ is <strong>classical</strong> when its kernel $\mathrm{P}_x$ is a maximal ideal of $A$; the assignment $x \mapsto \mathrm{P}_x$ then gives a bijection between the classical points of $M(A)$ and the rigid spectrum $\operatorname{Sp} A$. For an arbitrary point $x$ the kernel $\mathrm{P}_x$ is only prime, and its <strong>reduction</strong> is the nonempty closed subset of $\operatorname{Sp} A$ consisting of the maximal ideals containing $\mathrm{P}_x$, that is, the Zariski closure of $\mathrm{P}_x$ in $\operatorname{Sp} A$; a classical point is exactly a point whose reduction is a single point.</p>
 <p><strong>Theorem (comparison of topologies).</strong> Let $X = \operatorname{Sp} A$ be an affinoid space with its weak G-topology and let $M(A)$ be its Berkovich spectrum.</p>
-<p><strong>(a)</strong> For every affinoid subdomain $U \subseteq X$ the set</p>
+<p><strong>(a)</strong> For every affinoid subdomain $\Omega \subseteq X$ the set</p>
 <p>$$
-U^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } U\}
+\Omega^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } \Omega\}
 $$</p>
-<p>is a closed subset of $M(A)$, the assignment $U \mapsto U^{\mathrm{an}}$ preserves inclusions and finite intersections, its classical points are exactly the points of $U$, and the family of the $U^{\mathrm{an}}$ generates the topology of $M(A)$: the Berkovich topology is the coarsest topology in which all the sets $U^{\mathrm{an}}$ are closed.</p>
-<p><strong>(b)</strong> The assignment $U \mapsto U^{\mathrm{an}}$ is compatible with the structure sheaves, and the global sections of the structure sheaf of $M(A)$ are $A$.</p>
+<p>is a closed subset of $M(A)$, the assignment $\Omega \mapsto \Omega^{\mathrm{an}}$ preserves inclusions and finite intersections, its classical points are exactly the points of $\Omega$, and the family of the $\Omega^{\mathrm{an}}$ generates the topology of $M(A)$: the Berkovich topology is the coarsest topology in which all the sets $\Omega^{\mathrm{an}}$ are closed.</p>
+<p><strong>(b)</strong> The assignment $\Omega \mapsto \Omega^{\mathrm{an}}$ is compatible with the structure sheaves, and the global sections of the structure sheaf of $M(A)$ are $A$.</p>
 <p><strong>(c)</strong> The coherent sheaves on the Berkovich space $M(A)$ are the sheaves associated to finitely generated $A$-modules, and their higher cohomology vanishes on affinoids, as in Kiehl's theorem.</p>
-<p><strong>Proof.</strong> (a) Each $U^{\mathrm{an}}$ is an intersection of the closed sets $\{x : \lvert f\rvert_x\leq1\}$, hence closed, and the classical points of $U^{\mathrm{an}}$ are the maximal ideals $\mathrm{M}$ at which $\lvert f(\mathrm{M})\rvert\leq1$ for all $f$ that are bounded by $1$ on $U$, which by the universal property of the affinoid algebra $A_U$ is exactly $U$. The generation statement is Berkovich's comparison theorem for analytic domains. (b) and (c) follow by transporting the rigid structure sheaf across the comparison, using Tate's acyclicity and Kiehl's theorem of <em>Rigid Analytic Geometry</em>.</p>
+<p><strong>Proof.</strong> (a) Each $\Omega^{\mathrm{an}}$ is an intersection of the closed sets $\{x : \lvert f\rvert_x\leq1\}$, hence closed, and the classical points of $\Omega^{\mathrm{an}}$ are the maximal ideals $\mathrm{M}$ at which $\lvert f(\mathrm{M})\rvert\leq1$ for all $f$ that are bounded by $1$ on $\Omega$, which by the universal property of the affinoid algebra $A_\Omega$ is exactly $\Omega$. The generation statement is Berkovich's comparison theorem for analytic domains. (b) and (c) follow by transporting the rigid structure sheaf across the comparison, using Tate's acyclicity and Kiehl's theorem of <em>Rigid Analytic Geometry</em>.</p>
 <p><strong>Remark.</strong> The passage from rigid to Berkovich is a passage from a Grothendieck topology to a genuine topology, and the two carry the same coherent sheaf theory. The advantage of the Berkovich presentation is that connectedness, compactness and path-connectedness become properties of an ordinary topological space, and that fibre products and proper maps behave as in algebraic geometry. The rigid presentation retains the advantage that its points are exactly the classical points, so statements about the maximal spectrum are stated directly.</p>
 <h3 id="analytification">Analytification</h3>
 <p><strong>Definition.</strong> Let $X$ be a scheme of finite type over $K$. The <strong>Berkovich analytification</strong> $X^{\mathrm{an}}$ is the set of pairs $(x, \lvert \cdot \rvert)$ where $x \in X$ is a scheme point and $\lvert \cdot \rvert$ is an absolute value on the residue field $\kappa(x)$ extending the absolute value of $K$ and bounded on an affine neighbourhood with respect to a choice of coordinates, equipped with the weakest topology making the maps $x \mapsto \lvert f(x) \rvert$ continuous for local functions $f$, and with the evident structure sheaf.</p>

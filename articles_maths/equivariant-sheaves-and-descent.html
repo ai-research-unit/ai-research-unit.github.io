@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -78,7 +77,7 @@ $$</p>
 <p>$$
 \mathcal{F}^{G}(V)=\mathcal{F}\bigl(q^{-1}V\bigr)^{G}.
 $$</p>
-<p>This is a sheaf on the quotient $X/G$, the <strong>fixed sheaf</strong> of $\mathcal{F}$, also written $q_*^{G}\mathcal{F}$ and called the <strong>descent</strong> of $\mathcal{F}$; the assignment $\mathcal{F}\mapsto\mathcal{F}^{G}$ is a functor $\mathrm{Sh}_G(X)\to\mathrm{Sh}(X/G)$. For a $G$-invariant open $U\subseteq X$ the same formula with $U$ in place of $q^{-1}V$ gives the invariants of the $G$-module $\mathcal{F}(U)$, which is the local description of the fixed sheaf.</p>
+<p>This is a sheaf on the quotient $X/G$, the <strong>fixed sheaf</strong> of $\mathcal{F}$, also written $q_*^{G}\mathcal{F}$ and called the <strong>descent</strong> of $\mathcal{F}$; the assignment $\mathcal{F}\mapsto\mathcal{F}^{G}$ is a functor $\mathrm{Sh}_G(X)\to\mathrm{Sh}(X/G)$. For a $G$-invariant open $\Omega\subseteq X$ the same formula with $\Omega$ in place of $q^{-1}V$ gives the invariants of the $G$-module $\mathcal{F}(\Omega)$, which is the local description of the fixed sheaf.</p>
 <p><strong>Proposition (the fixed sheaf is a sheaf, and left exact).</strong> The presheaf $V\mapsto\mathcal{F}(q^{-1}V)^{G}$ on $X/G$ is a sheaf, and the functor $(-)^{G}$ is left exact.</p>
 <p><em>Proof.</em> Let $V=\bigcup_iV_i$ be a cover and let $s_i\in\mathcal{F}(q^{-1}V_i)^{G}$ be a matching family. The preimages $q^{-1}V_i$ cover $q^{-1}V$, and the $s_i$ are matching sections of $\mathcal{F}$; they glue to a section $s$ of $\mathcal{F}(q^{-1}V)$, which is invariant because each of its restrictions $s_i$ is invariant and the action is compatible with restriction, and which is unique because $\mathcal{F}$ is a sheaf. Left exactness is the left exactness of the invariants of a $G$-module, which is a limit.</p>
 <p><strong>Proposition (adjunction).</strong> The pullback along the quotient and the invariants are an adjoint pair, $q^*\dashv q_*^{G}$: for $\mathcal{G}$ on $X/G$ and $\mathcal{F}$ a $G$-sheaf on $X$,</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -65,7 +64,7 @@ $$</p>
 <li><strong>The AC effect and the AB effect are electric–magnetic duals.</strong> The AB phase is $\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.</li>
 <li><strong>The phase is measurable and has been measured.</strong> Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.</li>
 </ol>
-<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>The Path Integral in Biquaternionic Form</em>, for the phase from the action and the Lagrangian route.
 - Companion article <em>The Berry Phase and Geometric Phases in Biquaternionic Form</em>, for the geometric phase and the solid-angle formula.
@@ -107,7 +106,7 @@ $$</p>
 <p>$$
 \mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r,
 $$</p>
-<p>a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation</p>
+<p>a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation</p>
 <p>$$
 \phi_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
 $$</p>
@@ -158,7 +157,7 @@ $$</p>
 \phi_{AB} = \frac{ϙ}{\hbar}\oint_{\mathcal{C}}\vec A\cdot d\vec r
 = \frac{ϙ}{\hbar}\Phi_B,
 $$</p>
-<p>the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $U(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\phi_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is</p>
+<p>the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\phi_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -185,7 +184,7 @@ $$</p>
 </tr>
 <tr>
 <td>Structure group</td>
-<td>$U(1)$</td>
+<td>$\mathrm{U}(1)$</td>
 <td>$SU(2)$ for spin-1/2</td>
 </tr>
 <tr>
@@ -302,8 +301,8 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>

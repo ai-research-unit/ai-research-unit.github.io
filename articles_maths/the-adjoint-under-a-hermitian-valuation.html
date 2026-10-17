@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>A Hermitian valuation on a ring with an involution is a valuation compatible with the involution and with the norm form: it is isometric, $v(\sigma(x)) = v(x)$, and it satisfies $v(x\sigma(x)) = 2v(x)$, so that the norm form is valued exactly as the square of the element. The Hermitian form $B(x,y) = \tau(x\sigma(y))$ then takes values whose valuation is controlled by those of $x$ and $y$, the adjoint it defines is continuous and carries the valuation ring to itself, and the norm form forces the unitary elements into the valuation units: from $u\sigma(u) = 1$ one reads $2v(u) = 0$ and hence $v(u) = 0$. This article defines the Hermitian valuation, proves that it makes the form valued, computes the adjoint and shows that it preserves the filtration, identifies the unitary elements and the norm form, proves that the unitary group is bounded and closed, and reads the locally compact case, where the unitary group is compact.</p>
 <p>The article assumes the valuation, the absolute value, the valuation ring, the residue field and the completion from <em>Absolute Values, Valuations and Completions</em>; the valuation as an operator and its extension to the completion from <em>The Valuation Operator</em>; the isometric involution, the norm form and the residue involution from <em>Involutive Valued Fields</em> and <em>Involutions of a Non-Archimedean Field</em>; the involutive topological ring, the closed fixed set and the averaging map from <em>Involutive Topological Rings and Fields</em>; the self-adjoint, skew and norm form of a division ring with involution from <em>Involutive Topological Division Rings</em>; and the operator adjoint, the form of the category and the <code>*</code>-representation from <em>The Involution on Bounded Operators of a Ring</em>.</p>
-<p>Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\sigma$-invariant trace $\tau$; the valuation is <strong>Hermitian</strong> when $v(\sigma(x)) = v(x)$ and $v(x\sigma(x)) = 2v(x)$ for all $x$; the <strong>Hermitian form</strong> is $B(x,y) = \tau(x\sigma(y))$; the <strong>norm form</strong> is $N(x) = x\sigma(x)$; the adjoint $T^\dagger$ is defined by $B(Tx,y) = B(x,T^\dagger y)$; the <strong>unitary group</strong> is $U(R,\sigma) = \{u\in R^\times : u\sigma(u) = 1\}$; and $\mathcal{O}$, $\mathrm{M}$, $k$ are the valuation ring, maximal ideal and residue field.</p>
+<p>Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\sigma$-invariant trace $\tau$; the valuation is <strong>Hermitian</strong> when $v(\sigma(x)) = v(x)$ and $v(x\sigma(x)) = 2v(x)$ for all $x$; the <strong>Hermitian form</strong> is $B(x,y) = \tau(x\sigma(y))$; the <strong>norm form</strong> is $N(x) = x\sigma(x)$; the adjoint $T^\dagger$ is defined by $B(Tx,y) = B(x,T^\dagger y)$; the <strong>unitary group</strong> is $\mathrm{U}(R,\sigma) = \{u\in R^\times : u\sigma(u) = 1\}$; and $\mathcal{O}$, $\mathrm{M}$, $k$ are the valuation ring, maximal ideal and residue field.</p>
 <h2 id="the-hermitian-valuation-and-the-form">The Hermitian Valuation and the Form</h2>
 <p><strong>Theorem (the form is valued).</strong> Let $v$ be a Hermitian valuation. Then $v(B(x,y))\geq v(x)+v(y)$ for all $x,y$, the form $B$ is nondegenerate on the quotient by its radical, and the norm form satisfies $v(N(x)) = 2v(x)$; in particular $N(x)$ has valuation zero exactly when $x$ has, and the norm form is a map from the units to the units.</p>
 <p><strong>Proof.</strong> The valuation is Hermitian and isometric, so $v(x\sigma(y))\geq v(x)+v(\sigma(y)) = v(x)+v(y)$, and the trace does not decrease the valuation beyond the addition of the valuations of the terms; taking $y = x$ gives $v(N(x)) = 2v(x)$ by the Hermitian condition. Nondegeneracy is that the radical consists of the elements whose products with all others are nonunits, which is the maximal ideal when the form is Hermitian, as in <em>Adjoints under the Residue Pairing</em>.</p>
@@ -68,7 +67,7 @@
 <h2 id="the-unitary-elements-and-the-norm-form">The Unitary Elements and the Norm Form</h2>
 <p><strong>Theorem (the unitary group is bounded).</strong> Under a Hermitian valuation a unitary element $u$, with $u\sigma(u) = 1$, generates the norm form value $N(u) = 1$ and therefore has $2v(u) = 0$; for a real-valued valuation this gives $v(u) = 0$, so</p>
 <p>$$
-U(R,\sigma)\subseteq\mathcal{O}^\times .
+\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times .
 $$</p>
 <p>The unitary group is a subgroup of the units, it is closed when $N$ is continuous, and it is bounded.</p>
 <p><strong>Proof.</strong> $N(u) = u\sigma(u) = 1$, and $v(N(u)) = 2v(u)$ by the Hermitian condition, so $2v(u) = 0$ and $v(u) = 0$ for a real-valued valuation; hence $u$ is a unit of the valuation ring. Closure under multiplication and inversion is the computation of <em>Involutive Topological Division Rings</em>, and closedness is the continuity of the norm form; boundedness is $v(u) = 0$ for all unitary $u$.</p>
@@ -85,13 +84,13 @@ $$</p>
 <p><strong>Proof.</strong> $N(uv) = uv\sigma(v)\sigma(u) = u\,N(v)\,\sigma(u)$; the multiplicative case is $uN(v) = N(v)u$; the residue statement is that $N$ preserves $\mathcal{O}$ by $v(N(u)) = 2v(u)\geq0$ for a unit and respects $\mathrm{M}$, so it descends.</p>
 <p><strong>Corollary (the unitary group as the kernel of the norm).</strong> The norm form maps the units into the units of the fixed field, $N(R^\times)\subseteq (R^\times)^\sigma$, since $\sigma(N(u)) = N(u)$, and its kernel on the units is the unitary group,</p>
 <p>$$
-U(R,\sigma) = \{u\in R^\times : N(u) = 1\} .
+\mathrm{U}(R,\sigma) = \{u\in R^\times : N(u) = 1\} .
 $$</p>
 <p>For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstruction to unitarity: the unitaries are exactly the units of norm one.</p>
 <p><strong>Proof.</strong> $\sigma(N(u)) = \sigma(u\sigma(u)) = \sigma(\sigma(u))\,\sigma(u) = u\sigma(u) = N(u)$, so the values are fixed; the kernel is the unitarity condition by definition; the self-adjoint case is $N(x) = x\sigma(x) = x^2$.</p>
 <p><strong>Theorem (the unitary action on the lattice).</strong> The unitary group preserves the valuation ring and each ideal of the filtration,</p>
 <p>$$
-u\in U(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
+u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
 $$</p>
 <p>and acts by isometries of the form, $v(B(ux,uy)) = v(B(x,y))$; the induced action on the residue field is by isometries of the residue form, and the residue action is the reduction of the involution.</p>
 <p><strong>Proof.</strong> $v(u) = 0$ gives $u\in\mathcal{O}^\times$, so $u\mathcal{O} = \mathcal{O}$ and $u\mathrm{M}^n = \mathrm{M}^n$. The form transforms as $B(ux,uy) = \tau(ux\,\sigma(uy)) = \tau(ux\,\sigma(y)\sigma(u))$, and $v(u) = v(\sigma(u)) = 0$, so the valuation of the argument of the trace is $v(x\sigma(y))$ and hence $v(B(ux,uy)) = v(B(x,y))$ when the trace does not change the valuation; the residue action is that of a unit of the valuation ring on the residue field.</p>
@@ -133,11 +132,11 @@ $$</p>
 <td>The adjoint of the left multiplication</td>
 </tr>
 <tr>
-<td>$U(R,\sigma) = \{u : u\sigma(u) = 1\}$</td>
+<td>$\mathrm{U}(R,\sigma) = \{u : u\sigma(u) = 1\}$</td>
 <td>The unitary group, bounded</td>
 </tr>
 <tr>
-<td>$U(R,\sigma)\subseteq\mathcal{O}^\times$</td>
+<td>$\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times$</td>
 <td>Unitarity forces valuation zero</td>
 </tr>
 <tr>

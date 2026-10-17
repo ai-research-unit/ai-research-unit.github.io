@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,7 +58,7 @@ E(\phi) = \frac12\int_M|d\phi|^2\,dV_g ,
 $$</p>
 <p>the norm of the differential being taken with respect to the metric of the source and that of the target. Its Euler–Lagrange operator is the <strong>tension field</strong> $\tau(\phi) = \operatorname{trace}_g\nabla d\phi$, and $\phi$ is harmonic when $\tau(\phi)=0$; in local coordinates the equation is</p>
 <p>$$
-\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial_i\phi^\beta\partial_j\phi^\gamma = 0 ,
+\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0 ,
 $$</p>
 <p>a semilinear elliptic system whose nonlinearity is quadratic in the gradient and whose coefficients are the Christoffel symbols of the target. The system is the Laplace equation when the target is flat, the geodesic equation when the source is one-dimensional, and the minimal surface equation when the source is a surface and the map is conformal.</p>
 <p>The article treats the definition and the first variation, the examples, the existence theory of Eells and Sampson for targets of nonpositive curvature, in which the harmonic map flow deforms a map into a harmonic representative of its homotopy class, the regularity theory, in which harmonic maps from surfaces are always smooth while maps from higher-dimensional domains may have singularities, the Bochner formula and the vanishing theorems it gives, and the second variation and stability. The Riemannian structures of the source and the target, their Laplacians and their curvature tensors, are those of Part II, and the variational techniques are those of the calculus of variations of this Part; the conformal case is the minimal surface theory of the preceding article, and the parabolic evolution of a map is treated here only as the harmonic map flow, the mean curvature flow of a surface being a separate subject.</p>
@@ -67,7 +66,7 @@ $$</p>
 <h3 id="definitions">Definitions</h3>
 <p><strong>Definition.</strong> Let $(M,g)$ and $(N,h)$ be Riemannian manifolds, $M$ compact and without boundary unless stated, and let $\phi : M \to N$ be a map of class $C^1$. The <strong>energy</strong> of $\phi$ is</p>
 <p>$$
-E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = g^{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial_i\phi^\alpha\,\partial_j\phi^\beta ,
+E(\phi) = \frac12\int_M|d\phi|^2\,dV_g, \qquad |d\phi|^2 = g^{ij}(x)\,h_{\alpha\beta}(\phi(x))\,\partial/\partial x_i\,\phi^\alpha\,\partial/\partial x_j\,\phi^\beta ,
 $$</p>
 <p>in local coordinates $x$ on $M$ and $\phi$ on $N$; a map with finite energy is an element of the Sobolev space $W^{1,2}(M,N)$ of maps whose local expressions lie in $W^{1,2}$.</p>
 <p><strong>Definition.</strong> The <strong>tension field</strong> of $\phi$ is the section of the pull-back bundle $\phi^*TN$ defined by</p>
@@ -75,18 +74,18 @@ $$</p>
 \tau(\phi) = \operatorname{trace}_g(\nabla d\phi) ,
 $$</p>
 <p>where $\nabla$ is the connection on $T^*M\otimes\phi^*TN$ induced by the Levi-Civita connections of $g$ and $h$. The map is <strong>harmonic</strong> if $\tau(\phi)=0$.</p>
-<p><strong>Theorem (first variation and the harmonic map equation).</strong> For every variation $\phi_t$ of $\phi$ with variational field $V = \partial_t\phi_t|_{t=0}$ compactly supported,</p>
+<p><strong>Theorem (first variation and the harmonic map equation).</strong> For every variation $\phi_t$ of $\phi$ with variational field $V = \partial/\partial t\,\phi_t|_{t=0}$ compactly supported,</p>
 <p>$$
 \frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = -\int_M h\bigl(\tau(\phi),V\bigr)dV_g .
 $$</p>
 <p>Hence $\phi$ is a critical point of the energy if and only if $\tau(\phi)=0$, and in local coordinates this is the system</p>
 <p>$$
-\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial_i\phi^\beta\partial_j\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N ,
+\Delta_g\phi^\alpha + g^{ij}\,\Gamma^\alpha_{\beta\gamma}(\phi)\,\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma = 0, \qquad \alpha = 1,\dots,\dim N ,
 $$</p>
 <p>where $\Delta_g$ is the Laplace–Beltrami operator of $(M,g)$ and $\Gamma$ the Christoffel symbols of $(N,h)$.</p>
 <p><em>Proof.</em> The derivative of the energy is</p>
 <p>$$
-\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M g^{ij}h_{\alpha\beta}\bigl(\partial_iV^\alpha\partial_j\phi^\beta + \dots\bigr) ,
+\frac{d}{dt}E(\phi_t)\Bigr|_{t=0} = \int_M g^{ij}h_{\alpha\beta}\bigl(\partial/\partial x_i\,V^\alpha\partial/\partial x_j\,\phi^\beta + \dots\bigr) ,
 $$</p>
 <p>and integrating by parts on $M$, which has no boundary or on which $V$ vanishes, produces the integral of $V$ against the trace of $\nabla d\phi$ with the sign displayed; the arbitrariness of $V$ gives the equation.</p>
 <p><strong>Proposition (the three classical cases).</strong> If $N = \mathbb{R}$ then harmonicity is $\Delta_gu=0$, the harmonic functions; if $M = \mathbb{R}$ or $S^1$ then harmonicity is the geodesic equation of $(N,h)$; if $\dim M = 2$ and $\phi$ is a conformal immersion then harmonicity is the vanishing of the mean curvature of the image, so the image is a minimal surface.</p>
@@ -151,7 +150,7 @@ H_\phi(V,V) = \int_M\Bigl(|\nabla V|^2 - |d\phi|^2|V|^2\Bigr)dV_g ,
 $$</p>
 <p>with $V$ restricted to be perpendicular to $\phi$. The identity map of $S^m$ is unstable for every $m\ge2$: the variations induced by the conformal vector fields of the round sphere give null directions, and there are further directions of negative energy, so the index is positive. The computation is the harmonic-map analogue of the instability of a non-minimising geodesic and of the helicoid among minimal surfaces.</p>
 <h2 id="summary">Summary</h2>
-<p>A harmonic map $\phi : (M,g)\to(N,h)$ is a critical point of the energy $E(\phi) = \frac12\int|d\phi|^2dV_g$, and its Euler–Lagrange equation is the vanishing of the tension field, $\tau(\phi) = \operatorname{trace}_g\nabla d\phi = 0$, which in coordinates reads $\Delta_g\phi^\alpha + g^{ij}\Gamma^\alpha_{\beta\gamma}\partial_i\phi^\beta\partial_j\phi^\gamma=0$. The theory specialises to harmonic functions for a flat target, to geodesics for a one-dimensional source, and to minimal surfaces for a conformal source of dimension two, and it includes the holomorphic maps between Kähler manifolds. The harmonic map flow $\partial_t\phi=\tau(\phi)$ is the gradient flow of the energy and is quasilinear parabolic; for a compact target of nonpositive curvature it exists for all time and converges, which is the Eells–Sampson theorem and gives a harmonic representative in every homotopy class. Harmonic maps from surfaces are smooth; from higher-dimensional domains they are smooth off a closed singular set of codimension at least three, and the result is sharp, as the map $x/|x|$ shows in dimension three. The Bochner formula for the energy density combines the Ricci curvature of the source and the Riemann curvature of the target and gives the Eells–Wood vanishing theorem; and the second variation defines the index form and stability, the identity map of a sphere being unstable.</p>
+<p>A harmonic map $\phi : (M,g)\to(N,h)$ is a critical point of the energy $E(\phi) = \frac12\int|d\phi|^2dV_g$, and its Euler–Lagrange equation is the vanishing of the tension field, $\tau(\phi) = \operatorname{trace}_g\nabla d\phi = 0$, which in coordinates reads $\Delta_g\phi^\alpha + g^{ij}\Gamma^\alpha_{\beta\gamma}\partial/\partial x_i\,\phi^\beta\partial/\partial x_j\,\phi^\gamma=0$. The theory specialises to harmonic functions for a flat target, to geodesics for a one-dimensional source, and to minimal surfaces for a conformal source of dimension two, and it includes the holomorphic maps between Kähler manifolds. The harmonic map flow $\partial/\partial t\,\phi=\tau(\phi)$ is the gradient flow of the energy and is quasilinear parabolic; for a compact target of nonpositive curvature it exists for all time and converges, which is the Eells–Sampson theorem and gives a harmonic representative in every homotopy class. Harmonic maps from surfaces are smooth; from higher-dimensional domains they are smooth off a closed singular set of codimension at least three, and the result is sharp, as the map $x/|x|$ shows in dimension three. The Bochner formula for the energy density combines the Ricci curvature of the source and the Riemann curvature of the target and gives the Eells–Wood vanishing theorem; and the second variation defines the index form and stability, the identity map of a sphere being unstable.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -175,7 +174,7 @@ $$</p>
 </tr>
 <tr>
 <td>$|d\phi|^2$</td>
-<td>$g^{ij}h_{\alpha\beta}\partial_i\phi^\alpha\partial_j\phi^\beta$</td>
+<td>$g^{ij}h_{\alpha\beta}\partial/\partial x_i\,\phi^\alpha\partial/\partial x_j\,\phi^\beta$</td>
 </tr>
 <tr>
 <td>$\tau(\phi)$</td>
@@ -195,7 +194,7 @@ $$</p>
 </tr>
 <tr>
 <td>harmonic map flow</td>
-<td>$\partial_t\phi = \tau(\phi)$</td>
+<td>$\partial/\partial t\,\phi = \tau(\phi)$</td>
 </tr>
 <tr>
 <td>$R^N$, $\operatorname{Ric}^M$</td>

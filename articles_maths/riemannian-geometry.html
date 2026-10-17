@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,7 +56,7 @@
 <p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds, tangent spaces and the metric; it constructs the Levi–Civita connection and derives the curvature tensor, the structure equation and the Bianchi identity itself; the Chern–Weil construction is not used; uses <em>Curvature and Geodesics</em>, an earlier article of the same category, for the interpretation of the curvature invariants and the model geometries; the quadratic form theory of <em>Bilinear Forms</em>, <em>Quadratic Forms and Polarisation</em> and <em>Isometries and Orthogonal Transformations</em>; and the Lie group theory of <em>Lie Groups</em> and <em>The Lie Correspondence and the Adjoint Representation</em> for the isometry-group theorem. The solvability of the geodesic and Jacobi equations and the analytic core of the comparison theorems belong to Part III, where the differential equations and the limit are available, and they are stated here with proof sketches only. The metric is the base on which the complex, Hermitian, Kähler, quaternionic and hyperkähler structures are laid; those are developed in the articles of the same category being written in parallel, and they cite this one for the metric, the connection and the curvature. No physics is invoked.</p>
 <h2 id="riemannian-metrics-and-the-metric-structure">Riemannian Metrics and the Metric Structure</h2>
 <h3 id="metrics-and-isometries">Metrics and Isometries</h3>
-<p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A <strong>Riemannian manifold</strong> is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x^i$ the <strong>first fundamental form</strong> is $ds^2 = \sum_{ij} g_{ij}\,dx^i dx^j$ with $g_{ij} = g(\partial_{x^i}, \partial_{x^j})$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law</p>
+<p><strong>Definition.</strong> A <strong>Riemannian metric</strong> on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A <strong>Riemannian manifold</strong> is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x^i$ the <strong>first fundamental form</strong> is $ds^2 = \sum_{ij} g_{ij}\,dx^i dx^j$ with $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law</p>
 <p>$$
 g'_{kl} = \sum_{ij} g_{ij}\,\frac{\partial x^i}{\partial y^k}\frac{\partial x^j}{\partial y^l}
 $$</p>
@@ -94,7 +93,7 @@ $$</p>
 <p><strong>Proof.</strong> The right-hand side is $C^\infty(M)$-linear in $X, Y, Z$, hence a tensor, and nondegeneracy of $g$ determines $\nabla_XY$; the two properties follow by substitution, the metricity from the first three terms and the torsion-freeness from the last three.</p>
 <p><strong>Definition.</strong> In a coordinate frame the connection is described by the <strong>Christoffel symbols</strong></p>
 <p>$$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr),
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr),
 $$</p>
 <p>which are symmetric in $i, j$, and the connection form is $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$.</p>
 <p><strong>Remark.</strong> The symmetry $\Gamma^k_{ij} = \Gamma^k_{ji}$ is exactly the torsion-freeness, and the vanishing of $\nabla g$ is exactly the metricity. Both are visible in the Koszul formula and neither survives if the metric is dropped: a general connection has neither property, and the pair of properties is what makes the Levi-Civita connection canonical.</p>
@@ -127,14 +126,14 @@ $$</p>
 <p><strong>Proof.</strong> The symmetries of $R$ leave one independent component in dimension two and the Ricci tensor in dimension three; in dimension two the single value is $K$ itself, and in dimension three the map from curvature to Ricci is injective, since the Weyl tensor vanishes.</p>
 <h2 id="geodesics-the-exponential-map-and-completeness">Geodesics, the Exponential Map and Completeness</h2>
 <h3 id="geodesics-and-the-exponential-map">Geodesics and the Exponential Map</h3>
-<p><strong>Definition.</strong> A <strong>geodesic</strong> is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$. A geodesic is <strong>complete</strong> if it is defined for all real $t$. The <strong>exponential map</strong> at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is <strong>geodesically complete</strong> if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.</p>
+<p><strong>Definition.</strong> A <strong>geodesic</strong> is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$. A geodesic is <strong>complete</strong> if it is defined for all real $t$. The <strong>exponential map</strong> at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is <strong>geodesically complete</strong> if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.</p>
 <p><strong>Theorem.</strong> Every geodesic has constant speed: $g(\gamma', \gamma')$ is constant along $\gamma$, and a geodesic parametrised by arclength is locally minimising.</p>
 <p><strong>Proof.</strong> Differentiate $g(\gamma', \gamma')$ along $\gamma$ and use metricity and the geodesic equation:</p>
 <p>$$
 \frac{d}{dt}g(\gamma', \gamma') = 2g(\nabla_{\gamma'}\gamma', \gamma') = 0 .
 $$</p>
 <p>The local minimising property is the Gauss lemma and the first-variation computation of <em>Curvature and Geodesics</em>.</p>
-<p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $n$ are the coordinates $x^i$ defined by $x = \exp_n(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial_k g_{ij}(n) = 0$, and</p>
+<p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $n$ are the coordinates $x^i$ defined by $x = \exp_n(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial/\partial x^k\,g_{ij}(n) = 0$, and</p>
 <p>$$
 g_{ij}(x) = \delta_{ij} - \frac{1}{3}\sum_{k,l} R_{ikjl}(n)\,x^kx^l + O(|x|^3),
 $$</p>
@@ -156,7 +155,7 @@ $$</p>
 <p>$$
 \frac{D^2J}{dt^2} + R(J, \gamma')\gamma' = 0 ,
 $$</p>
-<p>where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is the linearisation of the geodesic equation: $J$ is the variation field of a family of geodesics, $\partial_s\gamma_s$ at $s = 0$.</p>
+<p>where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is the linearisation of the geodesic equation: $J$ is the variation field of a family of geodesics, $\partial\gamma_s/\partial s$ at $s = 0$.</p>
 <p><strong>Proposition.</strong> The Jacobi fields along a geodesic form a real vector space of dimension $2n$, and the map from a Jacobi field to its initial data $(J(0), \tfrac{DJ}{dt}(0))$ is a linear isomorphism onto $T_{\gamma(0)}M \oplus T_{\gamma(0)}M$.</p>
 <p><strong>Proof.</strong> The Jacobi equation is a second-order linear ordinary differential equation, and the existence and uniqueness theory of Part III identifies its solution space with the space of initial data; the equation is that of the linearisation of the geodesic flow.</p>
 <p><strong>Definition.</strong> Points $n = \gamma(0)$ and $m = \gamma(t_0)$ are <strong>conjugate along $\gamma$</strong> if there is a nonzero Jacobi field along $\gamma$ vanishing at $t = 0$ and $t = t_0$. The <strong>multiplicity</strong> is the dimension of the space of such fields.</p>

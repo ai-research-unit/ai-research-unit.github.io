@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,152 +51,152 @@
       <div class="article-body">
         <h1 id="square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra"><strong>Square Roots of One and the Idempotents of the Quaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde p\tilde q$ of <em>Introduction to the Quaternion Algebra</em>, the multiplication of the quaternion algebra. It is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.</p>
-<p>The article treats two subjects, and in this order. The first is the square roots of the central value $+e_0$, the elements $\tilde\xi\in\mathbb{H}$ with</p>
+<p>The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde q_1\tilde q_2$ of <em>Introduction to the Quaternion Algebra</em>, the multiplication of the quaternion algebra. It is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.</p>
+<p>The article treats two subjects, and in this order. The first is the square roots of the central value $+e_t$, the elements $\tilde\xi\in\mathbb{H}$ with</p>
 <p>$$
-\tilde\xi^2=e_0.
+\tilde\xi^2=e_t.
 $$</p>
 <p>The second is the idempotents of the algebra, the elements $\tilde\pi$ with $\tilde\pi^2=\tilde\pi$. The two subjects are one subject, because the <strong>halving map</strong></p>
 <p>$$
-\tilde\xi\longmapsto\tilde\pi=\tfrac12(e_0+\tilde\xi),\qquad \tilde\xi^2=e_0,
+\tilde\xi\longmapsto\tilde\pi=\tfrac12(e_t+\tilde\xi),\qquad \tilde\xi^2=e_t,
 $$</p>
-<p>is a bijection from the roots of $+e_0$ onto the idempotents, with inverse $\tilde\xi=2\tilde\pi-e_0$. The reason is a two-line computation: if $\tilde\xi^2=e_0$ then $\tilde\pi^2=\tfrac14(e_0+2\tilde\xi+e_0)=\tilde\pi$, and if $\tilde\pi^2=\tilde\pi$ then $(2\tilde\pi-e_0)^2=4\tilde\pi^2-4\tilde\pi+e_0=e_0$. Every idempotent of the algebra is read through that map, on the roots of $+e_0$ alone, and the families of idempotents are the families of the roots of $+e_0$ read through it.</p>
-<p><strong>The results.</strong> The roots of $+e_0$ are the two central scalars $\pm e_0$, and there are no others; the class is the two-point set, the central part of the level set $\{N=1\}$ of the algebra. The idempotents are the origin and the unit, $\tilde\pi\in\{0,e_0\}$; the halving map $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$ is a bijection carrying the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_0-\tilde\pi\}$; and the Peirce decomposition is degenerate, one Peirce space being the whole algebra and the other three $\{0\}$. The roots of $-e_0$ are one paragraph: over $\mathbb{R}$ the centre has no element of square $-e_0$, so the sign cannot be flipped, and the roots of $-e_0$ are read from the same reduction as the level set $\{N=1\}$ of the vector subspace.</p>
-<p>The article is algebraic. It does not treat the roots of the general quadratic $\tilde\xi^2=\tilde q$, which is <em>Square Roots of a General Element in the Quaternion Algebra</em>; the roots of $0$ and the nilpotents, which are <em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em>; the structure of the zero-divisor set, which is <em>Zero Divisors of the Quaternion Algebra</em>; or the idempotent theory of the complexified block, which is <em>Square Roots of One and the Idempotents of the Quaternion Algebra</em>. The last paragraph of §<em>The Roots of One</em> records how the roots of $-e_0$ are read; it is a remark, it is used nowhere, and it opens nothing.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the <strong>norm</strong> is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by <em>Norm and Invertibility in the Quaternion Algebra</em>; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§<em>The Root Convention</em> of <em>Conventions in Mathematics</em>), an idempotent $\tilde\pi$ (§<em>The Idempotent Convention</em>), and a generic element $\tilde q$ or $\tilde p$.</p>
+<p>is a bijection from the roots of $+e_t$ onto the idempotents, with inverse $\tilde\xi=2\tilde\pi-e_t$. The reason is a two-line computation: if $\tilde\xi^2=e_t$ then $\tilde\pi^2=\tfrac14(e_t+2\tilde\xi+e_t)=\tilde\pi$, and if $\tilde\pi^2=\tilde\pi$ then $(2\tilde\pi-e_t)^2=4\tilde\pi^2-4\tilde\pi+e_t=e_t$. Every idempotent of the algebra is read through that map, on the roots of $+e_t$ alone, and the families of idempotents are the families of the roots of $+e_t$ read through it.</p>
+<p><strong>The results.</strong> The roots of $+e_t$ are the two central scalars $\pm e_t$, and there are no others; the class is the two-point set, the central part of the level set $\{N=1\}$ of the algebra. The idempotents are the origin and the unit, $\tilde\pi\in\{0,e_t\}$; the halving map $\tilde\xi\mapsto\tfrac12(e_t+\tilde\xi)$ is a bijection carrying the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$; and the Peirce decomposition is degenerate, one Peirce space being the whole algebra and the other three $\{0\}$. The roots of $-e_t$ are one paragraph: over $\mathbb{R}$ the centre has no element of square $-e_t$, so the sign cannot be flipped, and the roots of $-e_t$ are read from the same reduction as the level set $\{N=1\}$ of the vector subspace.</p>
+<p>The article is algebraic. It does not treat the roots of the general quadratic $\tilde\xi^2=\tilde q$, which is <em>Square Roots of a General Element in the Quaternion Algebra</em>; the roots of $0$ and the nilpotents, which are <em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em>; the structure of the zero-divisor set, which is <em>Zero Divisors of the Quaternion Algebra</em>; or the idempotent theory of the complexified block, which is <em>Square Roots of One and the Idempotents of the Quaternion Algebra</em>. The last paragraph of §<em>The Roots of One</em> records how the roots of $-e_t$ are read; it is a remark, it is used nowhere, and it opens nothing.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_t=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_te_t-\vec q$, and the <strong>norm</strong> is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by <em>Norm and Invertibility in the Quaternion Algebra</em>; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_t$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§<em>The Root Convention</em> of <em>Conventions in Mathematics</em>), an idempotent $\tilde\pi$ (§<em>The Idempotent Convention</em>), and a generic element $\tilde q$.</p>
 <p>The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are <em>Algebras: A General Introduction</em>; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>. Throughout this article the square is the one of the quaternion product, the multiplication of the algebra.</p>
 <h2 id="the-roots-of-one">The Roots of One</h2>
-<p><strong>The roots of $+e_0$ are exactly the two central scalars $\pm e_0$; there are no others, and the class is the two-point set.</strong></p>
-<p>A <strong>root of $+e_0$</strong> is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=e_0$, the square being the one of the quaternion product.</p>
+<p><strong>The roots of $+e_t$ are exactly the two central scalars $\pm e_t$; there are no others, and the class is the two-point set.</strong></p>
+<p>A <strong>root of $+e_t$</strong> is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=e_t$, the square being the one of the quaternion product.</p>
 <h3 id="the-reduction">The Reduction</h3>
 <p>Write the root in scalar and vector parts,</p>
 <p>$$
-\tilde\xi=\xi_0e_0+\vec\xi,\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
+\tilde\xi=\xi_te_t+\vec\xi,\qquad \vec\xi=\xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z,\qquad \xi_k\in\mathbb{R}.
 $$</p>
 <p>The square of an element of the algebra closes in two terms, one central and one along the vector part, because the square of a pure element is central:</p>
 <p>$$
-\vec\xi^2=-|\vec\xi|^2e_0,\qquad \tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q.
+\vec\xi^2=-|\vec\xi|^2e_t,\qquad \tilde q^2=\bigl[q_t^2-|\vec q|^2\bigr]e_t+2q_t\vec q.
 $$</p>
-<p><strong>Proposition (the central reduction).</strong> For $\tilde\xi=\xi_0e_0+\vec\xi$ and $\lambda\in\mathbb{R}$,</p>
+<p><strong>Proposition (the central reduction).</strong> For $\tilde\xi=\xi_te_t+\vec\xi$ and $\lambda\in\mathbb{R}$,</p>
 <p>$$
-\tilde\xi^2=\lambda e_0\qquad\Longleftrightarrow\qquad
+\tilde\xi^2=\lambda e_t\qquad\Longleftrightarrow\qquad
 \begin{cases}
-2\xi_0\vec\xi=0,\\[2pt]
-\xi_0^2-|\vec\xi|^2=\lambda.
+2\xi_t\vec\xi=0,\\[2pt]
+\xi_t^2-|\vec\xi|^2=\lambda.
 \end{cases}
 $$</p>
-<p><em>Proof.</em> The square is $\tilde\xi^2=(\xi_0^2-|\vec\xi|^2)e_0+2\xi_0\vec\xi$, and the element equals the central element $\lambda e_0$ exactly when its vector part vanishes and its scalar part is $\lambda$, which is the displayed pair.</p>
-<p>Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\vec\xi=0$. <strong>Only the scalar equation survives on each branch</strong>: the root is pure, $\xi_0=0$, or it is a real scalar, $\vec\xi=0$. The case $\lambda=0$ is <em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em>, below this article in this category, and the general radicand $\tilde q$ is <em>Square Roots of a General Element in the Quaternion Algebra</em>, below this article in this category.</p>
+<p><em>Proof.</em> The square is $\tilde\xi^2=(\xi_t^2-|\vec\xi|^2)e_t+2\xi_t\vec\xi$, and the element equals the central element $\lambda e_t$ exactly when its vector part vanishes and its scalar part is $\lambda$, which is the displayed pair.</p>
+<p>Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_t=0$ or $\vec\xi=0$. <strong>Only the scalar equation survives on each branch</strong>: the root is pure, $\xi_t=0$, or it is a real scalar, $\vec\xi=0$. The case $\lambda=0$ is <em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em>, below this article in this category, and the general radicand $\tilde q$ is <em>Square Roots of a General Element in the Quaternion Algebra</em>, below this article in this category.</p>
 <h3 id="the-scalar-case">The Scalar Case</h3>
-<p>In the scalar case $\tilde\xi=\xi_0e_0$ and the scalar equation reads $\xi_0^2=1$, whose roots are the two central elements</p>
+<p>In the scalar case $\tilde\xi=\xi_te_t$ and the scalar equation reads $\xi_t^2=1$, whose roots are the two central elements</p>
 <p>$$
-\tilde\xi=+e_0,\qquad \tilde\xi=-e_0.
+\tilde\xi=+e_t,\qquad \tilde\xi=-e_t.
 $$</p>
-<p>They are the only roots of $+e_0$ with non-vanishing scalar part and the only ones in the centre $\mathbb{R}e_0$.</p>
+<p>They are the only roots of $+e_t$ with non-vanishing scalar part and the only ones in the centre $\mathbb{R}e_t$.</p>
 <h3 id="the-pure-case-is-empty">The Pure Case Is Empty</h3>
 <p>In the pure case $\tilde\xi=\vec\xi$ and the scalar equation reads</p>
 <p>$$
 -|\vec\xi|^2=1,
 $$</p>
-<p>a value no real vector attains. <strong>There is no pure root of $+e_0$.</strong> The reason is the definiteness of the sum of squares: the square of a pure element is the negative scalar $\vec\xi^2=-|\vec\xi|^2e_0$, so a pure element is a root of a negative central value and never of a positive one.</p>
+<p>a value no real vector attains. <strong>There is no pure root of $+e_t$.</strong> The reason is the definiteness of the sum of squares: the square of a pure element is the negative scalar $\vec\xi^2=-|\vec\xi|^2e_t$, so a pure element is a root of a negative central value and never of a positive one.</p>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
-<p><strong>Theorem.</strong> The roots of $+e_0$ of the algebra are exactly the two central scalars</p>
+<p><strong>Theorem.</strong> The roots of $+e_t$ of the algebra are exactly the two central scalars</p>
 <p>$$
-\tilde\xi=+e_0,\qquad \tilde\xi=-e_0,
+\tilde\xi=+e_t,\qquad \tilde\xi=-e_t,
 $$</p>
-<p>the class being the two-point set $\{+e_0,-e_0\}$.</p>
-<p><em>Proof.</em> By the reduction the root is pure or scalar. The pure case is impossible, $|\vec\xi|^2=-1$ having no real solution. The scalar case gives $\xi_0^2=1$, that is $\pm e_0$. The two cases exhaust the equation and the set has two elements.</p>
+<p>the class being the two-point set $\{+e_t,-e_t\}$.</p>
+<p><em>Proof.</em> By the reduction the root is pure or scalar. The pure case is impossible, $|\vec\xi|^2=-1$ having no real solution. The scalar case gives $\xi_t^2=1$, that is $\pm e_t$. The two cases exhaust the equation and the set has two elements.</p>
 <h3 id="verification">Verification</h3>
-<p>The two elements are roots, $(\pm e_0)^2=e_0$, and nothing else is, because the reduction yields only the two branches and the pure branch is empty. The class is the <strong>central part of the level set</strong> $\{N=1\}$: the level set is the elements of norm one, and a central element is a real scalar $se_0$ of norm $\langle se_0\rangle_{\natural}=s^2$, so the central elements of the level set are $\pm e_0$.</p>
+<p>The two elements are roots, $(\pm e_t)^2=e_t$, and nothing else is, because the reduction yields only the two branches and the pure branch is empty. The class is the <strong>central part of the level set</strong> $\{N=1\}$: the level set is the elements of norm one, and a central element is a real scalar $se_t$ of norm $\langle se_t\rangle_{\natural}=s^2$, so the central elements of the level set are $\pm e_t$.</p>
 <h3 id="the-roots-of-one-are-units">The Roots of One Are Units</h3>
-<p>A root of $+e_0$ is a <strong>unit</strong>: $\tilde\xi^2=e_0$ reads $\tilde\xi\tilde\xi=e_0$, so $\tilde\xi$ is invertible with inverse</p>
+<p>A root of $+e_t$ is a <strong>unit</strong>: $\tilde\xi^2=e_t$ reads $\tilde\xi\tilde\xi=e_t$, so $\tilde\xi$ is invertible with inverse</p>
 <p>$$
 \tilde\xi^{-1}=\tilde\xi,
 $$</p>
-<p>and a unit is not a zero divisor. The single element common to the roots of $+e_0$ and the idempotents is $e_0$: an element that is both a root of $+e_0$ and an idempotent satisfies $\tilde\xi^2=e_0$ and $\tilde\xi^2=\tilde\xi$, hence $\tilde\xi=e_0$. The two classes are different sets, and the halving map of §<em>The Idempotents</em> is the bijection between them.</p>
-<p><strong>The roots of minus one.</strong> The roots of $-e_0$ are not the image of the roots of $+e_0$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a <strong>central element of square $-e_0$</strong>, an element $i$ of the centre with $i^2=-e_0$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_0$ are read off the roots of $+e_0$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_0$ and no central element has square $-e_0$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §<em>The Reduction</em> reads $-\lvert\vec\xi\rvert^2=-1$ on the pure branch, that is $\lvert\vec\xi\rvert^2=1$, so the roots of $-e_0$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $\langle \vec\xi\rangle_{\natural}=|\vec\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_0$ alone, and the roots of $-e_0$ are quoted here and used nowhere in this article.</p>
+<p>and a unit is not a zero divisor. The single element common to the roots of $+e_t$ and the idempotents is $e_t$: an element that is both a root of $+e_t$ and an idempotent satisfies $\tilde\xi^2=e_t$ and $\tilde\xi^2=\tilde\xi$, hence $\tilde\xi=e_t$. The two classes are different sets, and the halving map of §<em>The Idempotents</em> is the bijection between them.</p>
+<p><strong>The roots of minus one.</strong> The roots of $-e_t$ are not the image of the roots of $+e_t$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a <strong>central element of square $-e_t$</strong>, an element $i$ of the centre with $i^2=-e_t$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_t$ are read off the roots of $+e_t$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_t$ and no central element has square $-e_t$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §<em>The Reduction</em> reads $-\lvert\vec\xi\rvert^2=-1$ on the pure branch, that is $\lvert\vec\xi\rvert^2=1$, so the roots of $-e_t$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $\langle \vec\xi\rangle_{\natural}=|\vec\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_t$ alone, and the roots of $-e_t$ are quoted here and used nowhere in this article.</p>
 <h2 id="the-idempotents">The Idempotents</h2>
-<p><strong>The idempotents of the algebra are exactly the origin and the unit, $\tilde\pi\in\{0,e_0\}$; the class is the two-point set, and there is no non-trivial idempotent.</strong></p>
-<p>The <strong>idempotents</strong> of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the quaternion product. They are the algebraic form of a projection, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_0$, the complementary pairs, and a degenerate Peirce decomposition.</p>
+<p><strong>The idempotents of the algebra are exactly the origin and the unit, $\tilde\pi\in\{0,e_t\}$; the class is the two-point set, and there is no non-trivial idempotent.</strong></p>
+<p>The <strong>idempotents</strong> of the algebra are the elements satisfying $\tilde\pi^2=\tilde\pi$, the square being the one of the quaternion product. They are the algebraic form of a projection, and the algebra has only the two trivial ones; what remains of the theory is the halving map from the roots of $+e_t$, the complementary pairs, and a degenerate Peirce decomposition.</p>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> An element $\tilde\pi$ of $\mathbb{H}$ is an <strong>idempotent of the quaternion algebra</strong> when</p>
 <p>$$
 \tilde\pi^2=\tilde\pi.
 $$</p>
-<p>The origin is an idempotent, and so is the unit $e_0$; the two are the <strong>trivial idempotents</strong>. The equation names a product, and the notion is relative to it: throughout this article the product is the quaternion product, the multiplication of the algebra, and another product is named where it is meant.</p>
+<p>The origin is an idempotent, and so is the unit $e_t$; the two are the <strong>trivial idempotents</strong>. The equation names a product, and the notion is relative to it: throughout this article the product is the quaternion product, the multiplication of the algebra, and another product is named where it is meant.</p>
 <p>Idempotents encode direct summands of the regular module,</p>
 <p>$$
-\mathbb{H}=\mathbb{H}\tilde\pi\oplus\mathbb{H}(e_0-\tilde\pi),\qquad \mathbb{H}=\tilde\pi\mathbb{H}\oplus(e_0-\tilde\pi)\mathbb{H},
+\mathbb{H}=\mathbb{H}\tilde\pi\oplus\mathbb{H}(e_t-\tilde\pi),\qquad \mathbb{H}=\tilde\pi\mathbb{H}\oplus(e_t-\tilde\pi)\mathbb{H},
 $$</p>
 <p>and every such decomposition arises from an idempotent. A <strong>primitive</strong> idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates an <strong>indecomposable</strong> left ideal; here that ideal is $\mathbb{H}$ itself, minimal because the algebra is a division algebra. The general statements, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, are <em>Unital Algebras</em>, §<em>Idempotents and the Peirce Decomposition</em>. Over $\mathbb{R}$ the possibilities are as small as an algebra permits, and the sections below compute them.</p>
 <h3 id="the-classification">The Classification</h3>
 <p><strong>Theorem (the idempotents).</strong> The idempotents of the algebra are exactly the origin and the unit:</p>
 <p>$$
-\tilde\pi\in\{0,\ e_0\}.
+\tilde\pi\in\{0,\ e_t\}.
 $$</p>
 <p>There is no non-trivial idempotent.</p>
-<p><em>Proof.</em> Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_0)=0$. The quaternion product is a <strong>division rule</strong>: it has the two-sided unit $e_0$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/\langle\tilde\pi\rangle_{\natural}$ (<em>Norm and Invertibility in the Quaternion Algebra</em>). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_0=0$. The same conclusion in coordinates reads the square $\tilde\pi^2=(\pi_0^2-|\vec\pi|^2)e_0+2\pi_0\vec\pi$ and the pair $2\pi_0\vec\pi=\vec\pi$, $\pi_0^2-|\vec\pi|^2=\pi_0$: the first forces $(2\pi_0-1)\vec\pi=0$, and $\vec\pi\neq0$ with $\pi_0=\tfrac12$ would give $|\vec\pi|^2=-\tfrac14$, which has no real solution, so $\vec\pi=0$ and $\pi_0\in\{0,1\}$. <strong>The two cases exhaust the equation and no non-trivial idempotent occurs.</strong></p>
-<p><strong>Remark (why the class collapses over $\mathbb{R}$).</strong> The standard construction of a non-trivial idempotent is the element $\tfrac12(e_0+\tilde\xi)$ with $\tilde\xi$ a <strong>non-central root of $+e_0$</strong>: the square $\tfrac14(e_0+2\tilde\xi+\tilde\xi^2)$ equals $\tfrac12(e_0+\tilde\xi)$ exactly when $\tilde\xi^2=e_0$. Over $\mathbb{R}$ the roots of $+e_0$ are the two central scalars $\pm e_0$, so $\tfrac12(e_0+\tilde\xi)$ returns only $e_0$ and $0$; a non-central root of $+e_0$ would need a pure element of square $+e_0$, and the pure square is the non-positive $-|\vec\xi|^2e_0$. In the complexified block the roots of $+e_0$ include non-central elements, the construction closes, and a whole family of idempotents lies between the two trivial ones; that counterpart is <em>Square Roots of One and the Idempotents of the Quaternion Algebra</em>.</p>
-<p><strong>Corollary (the class is two-point).</strong> The idempotent class of the algebra is $\{0,e_0\}$, and the two are orthogonal, $0\cdot e_0=0$.</p>
+<p><em>Proof.</em> Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_t)=0$. The quaternion product is a <strong>division rule</strong>: it has the two-sided unit $e_t$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/\langle\tilde\pi\rangle_{\natural}$ (<em>Norm and Invertibility in the Quaternion Algebra</em>). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_t=0$. The same conclusion in coordinates reads the square $\tilde\pi^2=(\pi_t^2-|\vec\pi|^2)e_t+2\pi_t\vec\pi$ and the pair $2\pi_t\vec\pi=\vec\pi$, $\pi_t^2-|\vec\pi|^2=\pi_t$: the first forces $(2\pi_t-1)\vec\pi=0$, and $\vec\pi\neq0$ with $\pi_t=\tfrac12$ would give $|\vec\pi|^2=-\tfrac14$, which has no real solution, so $\vec\pi=0$ and $\pi_t\in\{0,1\}$. <strong>The two cases exhaust the equation and no non-trivial idempotent occurs.</strong></p>
+<p><strong>Remark (why the class collapses over $\mathbb{R}$).</strong> The standard construction of a non-trivial idempotent is the element $\tfrac12(e_t+\tilde\xi)$ with $\tilde\xi$ a <strong>non-central root of $+e_t$</strong>: the square $\tfrac14(e_t+2\tilde\xi+\tilde\xi^2)$ equals $\tfrac12(e_t+\tilde\xi)$ exactly when $\tilde\xi^2=e_t$. Over $\mathbb{R}$ the roots of $+e_t$ are the two central scalars $\pm e_t$, so $\tfrac12(e_t+\tilde\xi)$ returns only $e_t$ and $0$; a non-central root of $+e_t$ would need a pure element of square $+e_t$, and the pure square is the non-positive $-|\vec\xi|^2e_t$. In the complexified block the roots of $+e_t$ include non-central elements, the construction closes, and a whole family of idempotents lies between the two trivial ones; that counterpart is <em>Square Roots of One and the Idempotents of the Quaternion Algebra</em>.</p>
+<p><strong>Corollary (the class is two-point).</strong> The idempotent class of the algebra is $\{0,e_t\}$, and the two are orthogonal, $0\cdot e_t=0$.</p>
 <h3 id="orthogonal-and-complete-families">Orthogonal and Complete Families</h3>
-<p>An <strong>orthogonal family</strong> is a family of idempotents with $\tilde\pi_i\tilde\pi_j=0$ for $i\neq j$; it is <strong>complete</strong> when the sum of its members is $e_0$. A nonzero idempotent is <strong>primitive</strong> when it is not the sum of two nonzero orthogonal idempotents.</p>
+<p>An <strong>orthogonal family</strong> is a family of idempotents with $\tilde\pi_i\tilde\pi_j=0$ for $i\neq j$; it is <strong>complete</strong> when the sum of its members is $e_t$. A nonzero idempotent is <strong>primitive</strong> when it is not the sum of two nonzero orthogonal idempotents.</p>
 <p><strong>Theorem (the families).</strong> In the algebra:</p>
 <ul>
 <li>every orthogonal family contains at most one nonzero idempotent;</li>
-<li>the only complete orthogonal family of nonzero idempotents is the singleton $\{e_0\}$;</li>
-<li>the unit $e_0$ is the only primitive idempotent, and $0$ is not primitive.</li>
+<li>the only complete orthogonal family of nonzero idempotents is the singleton $\{e_t\}$;</li>
+<li>the unit $e_t$ is the only primitive idempotent, and $0$ is not primitive.</li>
 </ul>
-<p><em>Proof.</em> By the theorem above every idempotent is $0$ or $e_0$. Two distinct nonzero idempotents would both be $e_0$, which is not orthogonal to itself, $e_0e_0=e_0\neq0$; so no orthogonal family contains two nonzero members. A complete orthogonal family of nonzero idempotents sums to $e_0$, and since it contains at most one nonzero idempotent it is either empty, with sum $0\neq e_0$, or the singleton $\{e_0\}$. For primitivity, $e_0$ is not a sum of two nonzero orthogonal idempotents because there are no two distinct nonzero idempotents to sum; and $0$ is not primitive under the convention that a primitive idempotent is nonzero.</p>
-<p><strong>Corollary (no nontrivial decomposition).</strong> The only decompositions of the algebra carried by an idempotent are the two trivial ones: for $\tilde\pi=e_0$,</p>
+<p><em>Proof.</em> By the theorem above every idempotent is $0$ or $e_t$. Two distinct nonzero idempotents would both be $e_t$, which is not orthogonal to itself, $e_t e_t=e_t\neq0$; so no orthogonal family contains two nonzero members. A complete orthogonal family of nonzero idempotents sums to $e_t$, and since it contains at most one nonzero idempotent it is either empty, with sum $0\neq e_t$, or the singleton $\{e_t\}$. For primitivity, $e_t$ is not a sum of two nonzero orthogonal idempotents because there are no two distinct nonzero idempotents to sum; and $0$ is not primitive under the convention that a primitive idempotent is nonzero.</p>
+<p><strong>Corollary (no nontrivial decomposition).</strong> The only decompositions of the algebra carried by an idempotent are the two trivial ones: for $\tilde\pi=e_t$,</p>
 <p>$$
-\mathbb{H}=e_0\mathbb{H}\oplus(e_0-e_0)\mathbb{H}=\mathbb{H}\oplus\{0\},
+\mathbb{H}=e_t\mathbb{H}\oplus(e_t-e_t)\mathbb{H}=\mathbb{H}\oplus\{0\},
 $$</p>
 <p>and for $\tilde\pi=0$,</p>
 <p>$$
-\mathbb{H}=0\cdot\mathbb{H}\oplus(e_0-0)\mathbb{H}=\{0\}\oplus\mathbb{H}.
+\mathbb{H}=0\cdot\mathbb{H}\oplus(e_t-0)\mathbb{H}=\{0\}\oplus\mathbb{H}.
 $$</p>
 <p>There is no proper nonzero direct summand of the regular module in the quaternion product.</p>
 <h3 id="the-peirce-decomposition">The Peirce Decomposition</h3>
 <p>For an idempotent $\tilde\pi$ the <strong>Peirce decomposition</strong> is the direct sum</p>
 <p>$$
-\mathbb{H}=\tilde\pi\mathbb{H}\tilde\pi\;\oplus\;\tilde\pi\mathbb{H}(e_0-\tilde\pi)\;\oplus\;(e_0-\tilde\pi)\mathbb{H}\tilde\pi\;\oplus\;(e_0-\tilde\pi)\mathbb{H}(e_0-\tilde\pi),
+\mathbb{H}=\tilde\pi\mathbb{H}\tilde\pi\;\oplus\;\tilde\pi\mathbb{H}(e_t-\tilde\pi)\;\oplus\;(e_t-\tilde\pi)\mathbb{H}\tilde\pi\;\oplus\;(e_t-\tilde\pi)\mathbb{H}(e_t-\tilde\pi),
 $$</p>
 <p>the four <strong>Peirce spaces</strong> of the idempotent.</p>
 <p><strong>Theorem (the Peirce decomposition is trivial).</strong> For each of the two idempotents of the algebra one Peirce space is the whole algebra and the other three are $\{0\}$:</p>
 <p>$$
-\tilde\pi=e_0:\quad \mathbb{H}=\mathbb{H}\oplus\{0\}\oplus\{0\}\oplus\{0\},\qquad \tilde\pi=0:\quad \mathbb{H}=\{0\}\oplus\{0\}\oplus\{0\}\oplus\mathbb{H}.
+\tilde\pi=e_t:\quad \mathbb{H}=\mathbb{H}\oplus\{0\}\oplus\{0\}\oplus\{0\},\qquad \tilde\pi=0:\quad \mathbb{H}=\{0\}\oplus\{0\}\oplus\{0\}\oplus\mathbb{H}.
 $$</p>
-<p><em>Proof.</em> For $\tilde\pi=e_0$ the four spaces are $e_0\mathbb{H}e_0=\mathbb{H}$, $e_0\mathbb{H}(e_0-e_0)=0$, $(e_0-e_0)\mathbb{H}e_0=0$ and $(e_0-e_0)\mathbb{H}(e_0-e_0)=0$. For $\tilde\pi=0$ the same computation exchanges the outer factors.</p>
+<p><em>Proof.</em> For $\tilde\pi=e_t$ the four spaces are $e_t\mathbb{H}e_t=\mathbb{H}$, $e_t\mathbb{H}(e_t-e_t)=0$, $(e_t-e_t)\mathbb{H}e_t=0$ and $(e_t-e_t)\mathbb{H}(e_t-e_t)=0$. For $\tilde\pi=0$ the same computation exchanges the outer factors.</p>
 <p>So the Peirce decomposition of the algebra is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal space. In particular the two off-diagonal Peirce units, which in the complexified block generate the minimal ideals, do not exist over $\mathbb{R}$: such a unit satisfies $\tilde\nu^2=0$ with $\tilde\nu\neq0$, and there is none (<em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em>).</p>
 <h3 id="the-halving-map-and-the-bijection-with-the-roots-of-one">The Halving Map and the Bijection With the Roots of One</h3>
 <p><strong>Theorem (the halving bijection).</strong> The map</p>
 <p>$$
-\tilde\xi\longmapsto\tilde\pi(\tilde\xi),\qquad \tilde\pi(\tilde\xi)=\tfrac12(e_0+\tilde\xi),
+\tilde\xi\longmapsto\tilde\pi(\tilde\xi),\qquad \tilde\pi(\tilde\xi)=\tfrac12(e_t+\tilde\xi),
 $$</p>
-<p>is a <strong>bijection</strong> from the set of roots of $+e_0$ onto the set of idempotents of the algebra, with inverse $\tilde\xi=2\tilde\pi-e_0$, and it carries the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_0-\tilde\pi\}$.</p>
-<p><em>Proof.</em> The equivalence $\tilde\pi^2=\tilde\pi\Longleftrightarrow(2\tilde\pi-e_0)^2=e_0$ is the two-line computation of the introduction, read in both directions. <em>Well defined:</em> if $\tilde\xi^2=e_0$ then $\tilde\pi(\tilde\xi)^2=\tfrac14(e_0+2\tilde\xi+\tilde\xi^2)=\tfrac12(e_0+\tilde\xi)=\tilde\pi(\tilde\xi)$. <em>Injective and surjective:</em> if $\tilde\xi$ is a root of $+e_0$ then $\tilde\pi=\tfrac12(e_0+\tilde\xi)$ is an idempotent, and every idempotent arises so, its inverse image being $\tilde\xi=2\tilde\pi-e_0$; the two maps are inverse to each other. <em>The pair:</em> $\tilde\pi(-\tilde\xi)=\tfrac12(e_0-\tilde\xi)=e_0-\tilde\pi(\tilde\xi)$.</p>
-<p><strong>Corollary (the correspondence).</strong> The roots of $+e_0$ being the two points $\pm e_0$, the correspondence is</p>
+<p>is a <strong>bijection</strong> from the set of roots of $+e_t$ onto the set of idempotents of the algebra, with inverse $\tilde\xi=2\tilde\pi-e_t$, and it carries the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$.</p>
+<p><em>Proof.</em> The equivalence $\tilde\pi^2=\tilde\pi\Longleftrightarrow(2\tilde\pi-e_t)^2=e_t$ is the two-line computation of the introduction, read in both directions. <em>Well defined:</em> if $\tilde\xi^2=e_t$ then $\tilde\pi(\tilde\xi)^2=\tfrac14(e_t+2\tilde\xi+\tilde\xi^2)=\tfrac12(e_t+\tilde\xi)=\tilde\pi(\tilde\xi)$. <em>Injective and surjective:</em> if $\tilde\xi$ is a root of $+e_t$ then $\tilde\pi=\tfrac12(e_t+\tilde\xi)$ is an idempotent, and every idempotent arises so, its inverse image being $\tilde\xi=2\tilde\pi-e_t$; the two maps are inverse to each other. <em>The pair:</em> $\tilde\pi(-\tilde\xi)=\tfrac12(e_t-\tilde\xi)=e_t-\tilde\pi(\tilde\xi)$.</p>
+<p><strong>Corollary (the correspondence).</strong> The roots of $+e_t$ being the two points $\pm e_t$, the correspondence is</p>
 <p>$$
-0\longleftrightarrow-e_0,\qquad e_0\longleftrightarrow+e_0,
+0\longleftrightarrow-e_t,\qquad e_t\longleftrightarrow+e_t,
 $$</p>
-<p>so the two-point idempotent class is the image of the two-point root class, and the count of the idempotents of the algebra equals the count of the roots of $+e_0$, two on each side. Consequently the <strong>complementary pairs</strong> $\{\tilde\pi,e_0-\tilde\pi\}$ of idempotents are in bijection with the roots of $+e_0$ modulo the sign identification $\tilde\xi\sim-\tilde\xi$.</p>
+<p>so the two-point idempotent class is the image of the two-point root class, and the count of the idempotents of the algebra equals the count of the roots of $+e_t$, two on each side. Consequently the <strong>complementary pairs</strong> $\{\tilde\pi,e_t-\tilde\pi\}$ of idempotents are in bijection with the roots of $+e_t$ modulo the sign identification $\tilde\xi\sim-\tilde\xi$.</p>
 <h3 id="the-complementary-idempotent">The Complementary Idempotent</h3>
-<p><strong>Proposition (the complementary idempotent).</strong> If $\tilde\pi$ is an idempotent of the algebra, then so is $e_0-\tilde\pi$, and the two are <strong>orthogonal</strong>:</p>
+<p><strong>Proposition (the complementary idempotent).</strong> If $\tilde\pi$ is an idempotent of the algebra, then so is $e_t-\tilde\pi$, and the two are <strong>orthogonal</strong>:</p>
 <p>$$
-(e_0-\tilde\pi)^2=e_0-\tilde\pi,\qquad \tilde\pi(e_0-\tilde\pi)=0.
+(e_t-\tilde\pi)^2=e_t-\tilde\pi,\qquad \tilde\pi(e_t-\tilde\pi)=0.
 $$</p>
-<p><em>Proof.</em> $(e_0-\tilde\pi)^2=e_0-2\tilde\pi+\tilde\pi^2=e_0-\tilde\pi$, using $\tilde\pi^2=\tilde\pi$; and $\tilde\pi(e_0-\tilde\pi)=\tilde\pi-\tilde\pi^2=0$.</p>
-<p><strong>Corollary (the complement swaps the two idempotents).</strong> For the two idempotents of the algebra the map $\tilde\pi\mapsto e_0-\tilde\pi$ is the exchange $0\leftrightarrow e_0$, and $0\cdot e_0=0$. The complement is available because $e_0$ is the unit, and it is the reason the two-point class is closed under it.</p>
+<p><em>Proof.</em> $(e_t-\tilde\pi)^2=e_t-2\tilde\pi+\tilde\pi^2=e_t-\tilde\pi$, using $\tilde\pi^2=\tilde\pi$; and $\tilde\pi(e_t-\tilde\pi)=\tilde\pi-\tilde\pi^2=0$.</p>
+<p><strong>Corollary (the complement swaps the two idempotents).</strong> For the two idempotents of the algebra the map $\tilde\pi\mapsto e_t-\tilde\pi$ is the exchange $0\leftrightarrow e_t$, and $0\cdot e_t=0$. The complement is available because $e_t$ is the unit, and it is the reason the two-point class is closed under it.</p>
 <h3 id="idempotents-the-zero-divisors-and-the-units">Idempotents, the Zero Divisors and the Units</h3>
 <p><strong>Proposition (no idempotent is a zero divisor).</strong> No idempotent of the algebra is a zero divisor, and every idempotent is either the origin or a unit.</p>
-<p><em>Proof.</em> The idempotents are $0$ and $e_0$. The element $0$ is not a zero divisor by the requirement that a divisor be nonzero, and $e_0$ is the unit and a nonzero element, hence invertible with $e_0^{-1}=e_0$. This is a reading of the division property: an idempotent that is neither $0$ nor a unit would be a non-invertible nonzero element, and there is none.</p>
-<p>A non-trivial idempotent would be a zero divisor, since $\tilde\pi(e_0-\tilde\pi)=0$ with both factors nonzero; over $\mathbb{R}$ the statement is vacuous, because there is no non-trivial idempotent and no zero divisor at all. The zero-divisor set is empty (<em>Zero Divisors of the Quaternion Algebra</em>), and the idempotent reading of it has nothing to describe. In the complexified block the non-trivial idempotents sit inside the zero-divisor cone as its non-pure family, which is what disappears here.</p>
+<p><em>Proof.</em> The idempotents are $0$ and $e_t$. The element $0$ is not a zero divisor by the requirement that a divisor be nonzero, and $e_t$ is the unit and a nonzero element, hence invertible with $e_t^{-1}=e_t$. This is a reading of the division property: an idempotent that is neither $0$ nor a unit would be a non-invertible nonzero element, and there is none.</p>
+<p>A non-trivial idempotent would be a zero divisor, since $\tilde\pi(e_t-\tilde\pi)=0$ with both factors nonzero; over $\mathbb{R}$ the statement is vacuous, because there is no non-trivial idempotent and no zero divisor at all. The zero-divisor set is empty (<em>Zero Divisors of the Quaternion Algebra</em>), and the idempotent reading of it has nothing to describe. In the complexified block the non-trivial idempotents sit inside the zero-divisor cone as its non-pure family, which is what disappears here.</p>
 <h3 id="the-reading-on-the-centre-and-the-vector-subspace">The Reading on the Centre and the Vector Subspace</h3>
-<p>Both idempotents are <strong>central</strong>: $0$ and $e_0$ lie in the centre $\mathbb{R}e_0$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\vec q_a$ having square $\vec q_a^2=-|\vec q_a|^2e_0$, which equals $\vec q_a$ only for $\vec q_a=0$. <strong>Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone</strong>, the origin belonging to both.</p>
+<p>Both idempotents are <strong>central</strong>: $0$ and $e_t$ lie in the centre $\mathbb{R}e_t$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\vec q$ having square $\vec q^2=-|\vec q|^2e_t$, which equals $\vec q$ only for $\vec q=0$. <strong>Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone</strong>, the origin belonging to both.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion product is the multiplication of the quaternion algebra, and the roots of $+e_0$ in that product are, by the reduction $\tilde\xi^2=\lambda e_0\Longleftrightarrow\{2\xi_0\vec\xi=0,\ \xi_0^2-|\vec\xi|^2=\lambda\}$, the two central scalars $\pm e_0$ alone: the pure branch needs $|\vec\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_0^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_0$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.</p>
-<p>The roots of $-e_0$ are read from the same reduction at $\lambda=-1$: they are the elements of the vector subspace with $N=1$, a quadric of real dimension two. The sign cannot be flipped, the centre $\mathbb{R}e_0$ having no element of square $-e_0$, so the roots of $-e_0$ are not the image of the roots of $+e_0$; the paragraph is a remark, and the roots of $-e_0$ index no idempotent.</p>
-<p>The idempotents are the trivial elements $0$ and $e_0$ and nothing else, the equation $\tilde\pi(\tilde\pi-e_0)=0$ and the absence of zero divisors leaving the two; there is no orthogonal family of two nonzero idempotents, no complete orthogonal family but the singleton $\{e_0\}$, no primitive idempotent but $e_0$, and no nontrivial direct sum decomposition of the algebra. The Peirce decomposition is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal unit. The halving map $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$ is a bijection from the roots of $+e_0$ onto the idempotents, with inverse $\tilde\xi=2\tilde\pi-e_0$, and it carries the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_0-\tilde\pi\}$; the complement $e_0-\tilde\pi$ exchanges the two idempotents. No idempotent is a zero divisor, and every idempotent is the origin or a unit; both idempotents are central, so the vector subspace carries the origin alone.</p>
+<p>The quaternion product is the multiplication of the quaternion algebra, and the roots of $+e_t$ in that product are, by the reduction $\tilde\xi^2=\lambda e_t\Longleftrightarrow\{2\xi_t\vec\xi=0,\ \xi_t^2-|\vec\xi|^2=\lambda\}$, the two central scalars $\pm e_t$ alone: the pure branch needs $|\vec\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_t^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_t$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.</p>
+<p>The roots of $-e_t$ are read from the same reduction at $\lambda=-1$: they are the elements of the vector subspace with $N=1$, a quadric of real dimension two. The sign cannot be flipped, the centre $\mathbb{R}e_t$ having no element of square $-e_t$, so the roots of $-e_t$ are not the image of the roots of $+e_t$; the paragraph is a remark, and the roots of $-e_t$ index no idempotent.</p>
+<p>The idempotents are the trivial elements $0$ and $e_t$ and nothing else, the equation $\tilde\pi(\tilde\pi-e_t)=0$ and the absence of zero divisors leaving the two; there is no orthogonal family of two nonzero idempotents, no complete orthogonal family but the singleton $\{e_t\}$, no primitive idempotent but $e_t$, and no nontrivial direct sum decomposition of the algebra. The Peirce decomposition is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal unit. The halving map $\tilde\xi\mapsto\tfrac12(e_t+\tilde\xi)$ is a bijection from the roots of $+e_t$ onto the idempotents, with inverse $\tilde\xi=2\tilde\pi-e_t$, and it carries the pair $\{\tilde\xi,-\tilde\xi\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$; the complement $e_t-\tilde\pi$ exchanges the two idempotents. No idempotent is a zero divisor, and every idempotent is the origin or a unit; both idempotents are central, so the vector subspace carries the origin alone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -212,47 +211,47 @@ $$</p>
 <td>Quaternion algebra, real dimension four</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$</td>
 </tr>
 <tr>
-<td>$\tilde q=q_0e_0+\vec q$</td>
-<td>General element, scalar part $q_0$, vector part $\vec q$</td>
+<td>$\tilde q=q_te_t+\vec q$</td>
+<td>General element, scalar part $q_t$, vector part $\vec q$</td>
 </tr>
 <tr>
-<td>$\langle\tilde q\rangle_{\natural}=q_0^2+\lvert\vec q\rvert^2$</td>
+<td>$\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$</td>
 <td>Quaternion norm, positive definite</td>
 </tr>
 <tr>
-<td>$\mathbb{R}e_0$, $\mathrm{Vect}(\mathbb{H})$</td>
+<td>$\mathbb{R}e_t$, $\mathrm{Vect}(\mathbb{H})$</td>
 <td>Centre and vector subspace</td>
 </tr>
 <tr>
 <td>$\tilde\xi$</td>
-<td>A root of a central value; of $+e_0$ through the body, of $-e_0$ in the closing remark</td>
+<td>A root of a central value; of $+e_t$ through the body, of $-e_t$ in the closing remark</td>
 </tr>
 <tr>
-<td>$\tilde\xi=\xi_0e_0+\vec\xi$</td>
+<td>$\tilde\xi=\xi_te_t+\vec\xi$</td>
 <td>Scalar and vector parts of a root</td>
 </tr>
 <tr>
-<td>$\{+e_0,-e_0\}$</td>
-<td>The two roots of $+e_0$, the central part of $\{N=1\}$</td>
+<td>$\{+e_t,-e_t\}$</td>
+<td>The two roots of $+e_t$, the central part of $\{N=1\}$</td>
 </tr>
 <tr>
 <td>$\tilde\pi$</td>
 <td>An idempotent, $\tilde\pi^2=\tilde\pi$</td>
 </tr>
 <tr>
-<td>$\tilde\pi(\tilde\xi)=\tfrac12(e_0+\tilde\xi)$</td>
+<td>$\tilde\pi(\tilde\xi)=\tfrac12(e_t+\tilde\xi)$</td>
 <td>The idempotent of the root $\tilde\xi$; $\tilde\xi\mapsto\tilde\pi(\tilde\xi)$ is a bijection</td>
 </tr>
 <tr>
-<td>$0$, $e_0$</td>
-<td>The two idempotents, orthogonal: $0\cdot e_0=0$</td>
+<td>$0$, $e_t$</td>
+<td>The two idempotents, orthogonal: $0\cdot e_t=0$</td>
 </tr>
 <tr>
-<td>$e_0-\tilde\pi$</td>
+<td>$e_t-\tilde\pi$</td>
 <td>The complementary idempotent</td>
 </tr>
 <tr>
@@ -268,7 +267,7 @@ $$</p>
 <li><em>Norm and Invertibility in the Quaternion Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md</code>), for the division property on which the classification rests.</li>
 <li><em>Zero Divisors of the Quaternion Algebra</em> (<code>articles_maths/zero-divisors-of-the-quaternion-algebra.md</code>), for the empty zero-divisor set and the two families of the complexified block.</li>
 <li><em>Square Roots of Zero and the Nilpotents of the Quaternion Algebra</em> (<code>articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-quaternion-algebra.md</code>), for the roots of $0$, the square-zero class and the off-diagonal Peirce units.</li>
-<li><em>Square Roots of a General Element in the Quaternion Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md</code>), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $+e_0$ here are one case.</li>
+<li><em>Square Roots of a General Element in the Quaternion Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md</code>), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $+e_t$ here are one case.</li>
 <li><em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code>), the complexified counterpart, for the idempotent family, the bijection with the roots of one and the minimal left ideals.</li>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the origin of the imaginary units and the roots of $-1$.</li>
 <li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the square of a quaternion and its classes of element.</li>

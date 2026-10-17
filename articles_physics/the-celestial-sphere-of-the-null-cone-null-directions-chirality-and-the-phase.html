@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -56,11 +55,11 @@
 <h2 id="the-null-cone-of-the-algebra">The Null Cone of the Algebra</h2>
 <p>The null cone is the zero set of the biquaternion norm,</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0,
 $$</p>
-<p>and its nonzero elements are exactly the <strong>zero divisors</strong> of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_0 + \vec x$, the norm is the interval,</p>
+<p>and its nonzero elements are exactly the <strong>zero divisors</strong> of the algebra, the elements whose matrix image $\mathsf{M}_2(\tilde{Q})$ has rank one. On the material sector $\mathbb{M}_-$, with $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm is the interval,</p>
 <p>$$
-\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + |\vec x|^2,
+\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2,
 $$</p>
 <p>so the null cone of the algebra restricts to the <strong>light cone</strong> of the material sector, and its nonzero elements are the lightlike four-vectors. The cone is a real three-dimensional cone in the four real dimensions of the sector; it has a single point at the origin and is otherwise regular, and its nonzero elements are the lightlike directions of the material geometry.</p>
 <h2 id="the-projective-null-cone-the-celestial-sphere">The Projective Null Cone: the Celestial Sphere</h2>
@@ -90,13 +89,13 @@ $$</p>
 $$</p>
 <p>This is the standard identification of the Riemann sphere with the celestial sphere: the spinor $\xi$ is a pair of complex numbers, its ray is a point of $\mathbb{C}\mathbb{P}^1$, and the transition between the two presentations is the stereographic projection of the sphere. The metric the sphere carries in this presentation, and the transition probability between two of its rays, are <em>The Fubini–Study Geometry and the Biquaternion Norm</em>; this article records only the identification of the object.</p>
 <h2 id="the-little-group-and-the-phase">The Little Group and the Phase</h2>
-<p>A null direction is fixed by a subgroup of the Lorentz group, its <strong>little group</strong>, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto \exp(i\alpha)\xi$, which is the compact $U(1)$ part of the little group; a massless field of <strong>helicity</strong> $h$ transforms under that phase by</p>
+<p>A null direction is fixed by a subgroup of the Lorentz group, its <strong>little group</strong>, and the little group is what attaches the phase to the point. On the spinor $\xi$ the direction is invariant under the phase $\xi\mapsto \exp(i\alpha)\xi$, which is the compact $\mathrm{U}(1)$ part of the little group; a massless field of <strong>helicity</strong> $h$ transforms under that phase by</p>
 <p>$$
 \xi \;\longmapsto\; \exp(i\alpha)\xi, \qquad \text{the field} \;\longmapsto\; \exp(i h\alpha)\,\text{the field},
 $$</p>
-<p>so the helicity is the <strong>weight</strong> of the central $U(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are <em>The Spinor-Helicity Formalism and Biquaternions</em>; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em>. What the celestial sphere supplies here is only the <strong>base</strong>: the point of $S^2$ at which the phase sits.</p>
+<p>so the helicity is the <strong>weight</strong> of the central $\mathrm{U}(1)$ carried at the point of the sphere. The full statement of the little group, the two helicities of the photon and the weights of the massless amplitudes, are <em>The Spinor-Helicity Formalism and Biquaternions</em>; the bundle the phase describes, the unit spinors over the sphere with fibre a circle, is the Hopf fibration of the algebra, and it is <em>The Hopf Fibration and the Biquaternion Gauge Bundle</em>. What the celestial sphere supplies here is only the <strong>base</strong>: the point of $S^2$ at which the phase sits.</p>
 <h2 id="the-reading">The Reading</h2>
-<p>The interpretation is one sentence and it is the reason the sphere is worth naming. <strong>A massless element is a point of the celestial sphere together with a phase</strong>: the point is its direction, the phase is the little-group $U(1)$ the helicity weights, and the norm — which is zero — has removed only the scale. Read physically, the sphere is the <strong>sky of a photon</strong>: the direction of propagation is a point of $S^2$, the two helicities are the two weights of the phase over that point, and the transitive action of the Lorentz group on the sphere is the statement that no direction is preferred. The two chiralities make the statement spinorial: the complexified sphere is the product of the two chiral spheres, and a massless field of definite chirality lives on one of the two rulings while the real, physical directions are the diagonal on which the two are conjugate.</p>
+<p>The interpretation is one sentence and it is the reason the sphere is worth naming. <strong>A massless element is a point of the celestial sphere together with a phase</strong>: the point is its direction, the phase is the little-group $\mathrm{U}(1)$ the helicity weights, and the norm — which is zero — has removed only the scale. Read physically, the sphere is the <strong>sky of a photon</strong>: the direction of propagation is a point of $S^2$, the two helicities are the two weights of the phase over that point, and the transitive action of the Lorentz group on the sphere is the statement that no direction is preferred. The two chiralities make the statement spinorial: the complexified sphere is the product of the two chiral spheres, and a massless field of definite chirality lives on one of the two rulings while the real, physical directions are the diagonal on which the two are conjugate.</p>
 <p>The interpretation also fixes the boundary of the object. The sphere is the set of <strong>directions</strong> and not of momenta: it carries no scale, and the norm that would give the scale vanishes on all of it. It carries no dynamics: the helicity is a weight, and a weight is a representation datum and not an equation of motion. And it is the <strong>real</strong> light cone's sphere when the physics is the real light cone; the two chiral spheres belong to the complexified cone, and the real diagonal of the pair is the physical sphere. A reader who wants the metric, the bundle or the little group is sent to the three articles that own them; a reader who wants the object and its name has it here.</p>
 <h2 id="what-the-reading-does-not-claim">What the Reading Does Not Claim</h2>
 <ul>
@@ -106,7 +105,7 @@ $$</p>
 <li>It does <strong>not</strong> claim that the direction datum and the phase are independent in every representation. The spinor presentation ties them — the direction is the ray and the phase is the remaining freedom of the representative — and the article states the tie rather than a product decomposition.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The null cone of the biquaternion norm is the zero-divisor cone, and on the material sector it is the light cone. Its <strong>directions</strong>, the null elements up to scale, form the <strong>celestial sphere</strong> $\mathcal{C}\cong S^2$, the sphere of lightlike directions. Complexified, the projective null cone is the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1$, the product of the two <strong>chiral celestial spheres</strong>, whose real diagonal is the physical sphere; the two rulings are the two chiral spinor families. In spinor coordinates a null Hermitian element is $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$, its direction is the <strong>ray</strong> of $\xi$, and the sphere is $\mathbb{C}\mathbb{P}^1$, with the metric and the transition probability delegated to the Fubini–Study article. The little group of a direction is a $U(1)$ phase, the <strong>helicity</strong> is the weight of that phase, and the bundle it describes is the Hopf fibration of the algebra. The interpretation is that <strong>a massless element is a point of the celestial sphere together with a phase</strong>: the point is the direction, the phase is the helicity's $U(1)$, and the norm, being zero, has removed only the scale.</p>
+<p>The null cone of the biquaternion norm is the zero-divisor cone, and on the material sector it is the light cone. Its <strong>directions</strong>, the null elements up to scale, form the <strong>celestial sphere</strong> $\mathcal{C}\cong S^2$, the sphere of lightlike directions. Complexified, the projective null cone is the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1$, the product of the two <strong>chiral celestial spheres</strong>, whose real diagonal is the physical sphere; the two rulings are the two chiral spinor families. In spinor coordinates a null Hermitian element is $\tilde{\Pi}_\xi = \xi\xi^{\dagger}$, its direction is the <strong>ray</strong> of $\xi$, and the sphere is $\mathbb{C}\mathbb{P}^1$, with the metric and the transition probability delegated to the Fubini–Study article. The little group of a direction is a $\mathrm{U}(1)$ phase, the <strong>helicity</strong> is the weight of that phase, and the bundle it describes is the Hopf fibration of the algebra. The interpretation is that <strong>a massless element is a point of the celestial sphere together with a phase</strong>: the point is the direction, the phase is the helicity's $\mathrm{U}(1)$, and the norm, being zero, has removed only the scale.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -122,7 +121,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>the material sector, $\tilde{Q} = ict\,e_0 + \vec x$</td>
+<td>the material sector, $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
 </tr>
 <tr>
 <td>$\mathcal{C} \cong S^2$</td>
@@ -142,7 +141,7 @@ $$</p>
 </tr>
 <tr>
 <td>$h$</td>
-<td>the helicity, the weight of the little-group $U(1)$</td>
+<td>the helicity, the weight of the little-group $\mathrm{U}(1)$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}\mathbb{P}^1 \cong S^2$</td>

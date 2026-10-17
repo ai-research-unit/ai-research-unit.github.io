@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,7 +54,7 @@
 <p>Because the quaternion algebra is a division algebra, every non-zero element is invertible and the spectrum of a single quaternion is easy to describe; but because it is non-commutative, the left and right eigenvalue problems for quaternionic matrices differ, and the word "spectrum" splits into several inequivalent sets. This article fixes the definitions, describes the spectrum of a quaternion and of a quaternionic matrix, proves the Cayley–Hamilton identity and describes the trace and determinant functionals, classifies the similarity classes and states the eigenvalue dichotomy, computes the eigenspaces, treats the resolvent and the spectral radius, and presents the S-spectrum and the quaternionic spectral theorem.</p>
 <p>The article uses <em>Quaternion Algebra</em> and <em>Quaternion Norm and Invertibility</em> for the algebra, the quaternion norm and invertibility, <em>Quaternion Roots of Minus One</em> for the sphere of imaginary units, <em>Quaternion Automorphisms and Derivations</em> for conjugation and similarity, and <em>Quaternion Exponential and Lie Group Structure</em> for the exponential. The standard results on quaternionic matrices that are not computed here are quoted from the literature and named as standard.</p>
 <p>The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \vec q$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = q_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_t$, vector part $\mathrm{Vect}\tilde q = \vec q$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.</p>
 <h2 id="the-spectrum-of-a-quaternion">The Spectrum of a Quaternion</h2>
 <p><strong>Definition.</strong> The <strong>spectrum</strong> of a quaternion $\tilde q$ in the algebra is $\sigma_{\mathbb{H}}(\tilde q) = \{\lambda\in\mathbb{H} : \tilde q-\lambda \text{ is not invertible}\}$.</p>
 <p><strong>Theorem.</strong> For every quaternion $\tilde q$, $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$; the algebra is a division algebra, so $\tilde q-\lambda$ fails to be invertible only when $\tilde q-\lambda = 0$.</p>
@@ -69,17 +68,17 @@
 <h2 id="the-sphere-of-eigenvalues">The Sphere of Eigenvalues</h2>
 <p><strong>Theorem.</strong> For the $1\times1$ matrix $M = [\tilde q]$ the two spectra are</p>
 <p>$$
-\sigma_L([\tilde q]) = \{\tilde q\}, \qquad \sigma_R([\tilde q]) = \{v^{-1}qv : v\in\mathbb{H}^{\times}\},
+\sigma_L([\tilde q]) = \{\tilde q\}, \qquad \sigma_R([\tilde q]) = \{v^{-1}\tilde q v : v\in\mathbb{H}^{\times}\},
 $$</p>
 <p>and the right spectrum is the <strong>similarity class</strong> of $\tilde q$,</p>
 <p>$$
-\sigma_R([\tilde q]) = \{q_0+\vec w : \vec w\in\operatorname{Im}\mathbb{H},\ |\vec w| = |\mathrm{Vect}\tilde q|\},
+\sigma_R([\tilde q]) = \{q_t+\vec w : \vec w\in\operatorname{Im}\mathbb{H},\ |\vec w| = |\mathrm{Vect}\tilde q|\},
 $$</p>
-<p>a point $\{q_0\}$ when $\tilde q$ is real and a two-sphere of radius $|\mathrm{Vect}\tilde q|$ about the real point $q_0$ otherwise.</p>
+<p>a point $\{q_t\}$ when $\tilde q$ is real and a two-sphere of radius $|\mathrm{Vect}\tilde q|$ about the real point $q_t$ otherwise.</p>
 <p><em>Proof.</em> $\tilde q v = \lambda v$ with $v = 1$ gives $\lambda = \tilde q$, and conversely $(\tilde q-\lambda)v = 0$ with $v\neq0$ forces $\tilde q = \lambda$ because $\mathbb{H}$ has no zero divisors; this is the left spectrum. For the right spectrum, $\tilde q v = v\lambda$ gives $\lambda = v^{-1}\tilde q v$, and the map $v\mapsto v^{-1}\tilde q v$ is the conjugacy action, which fixes the real part and rotates the vector part; the vector part of $v^{-1}\tilde q v$ has the same modulus as $\mathrm{Vect}\tilde q$, and every vector of that modulus is attained.</p>
-<p><strong>Corollary.</strong> For a non-real quaternion the left and right spectra differ: the left spectrum is a single point, the right spectrum a two-sphere. For a real quaternion both are the point $\{q_0\}$.</p>
+<p><strong>Corollary.</strong> For a non-real quaternion the left and right spectra differ: the left spectrum is a single point, the right spectrum a two-sphere. For a real quaternion both are the point $\{q_t\}$.</p>
 <p><em>Proof.</em> The left spectrum is $\{\tilde q\}$, which is one point of the class $\sigma_R([\tilde q])$; the class is a two-sphere exactly when $\tilde q$ is non-real.</p>
-<p><strong>Remark.</strong> The right spectrum of $[\tilde q]$ is the sphere of <em>Quaternion Roots of Minus One</em>: for $\tilde q$ of the form $q_0+\mu$ with $\mu$ a pure unit, the right spectrum is $q_0+S^2$, where $S^2$ is the sphere of imaginary units. The two notions of "spectrum" are thus connected through the geometry of the imaginary sphere.</p>
+<p><strong>Remark.</strong> The right spectrum of $[\tilde q]$ is the sphere of <em>Quaternion Roots of Minus One</em>: for $\tilde q$ of the form $q_t+\mu$ with $\mu$ a pure unit, the right spectrum is $q_t+S^2$, where $S^2$ is the sphere of imaginary units. The two notions of "spectrum" are thus connected through the geometry of the imaginary sphere.</p>
 <h2 id="the-standard-spectrum-of-a-quaternionic-matrix">The Standard Spectrum of a Quaternionic Matrix</h2>
 <p>For $n\geq2$ the two spectra are studied through complex scalars. A complex scalar commutes with every quaternion, so a complex number $\lambda$ may be written on either side, and the left and right problems then agree for complex eigenvalues.</p>
 <p><strong>Theorem (standard form).</strong> Every $M\in M_n(\mathbb{H})$ is similar over $\mathbb{H}$ to an upper triangular matrix whose diagonal entries are complex numbers $\lambda_1,\dots,\lambda_n$ with $\operatorname{Im}\lambda_i\geq0$. The <strong>right spectrum</strong> is the union of the corresponding similarity classes,</p>
@@ -90,44 +89,44 @@ $$</p>
 <p><em>Proof.</em> The standard form and the eigenvalue statement are standard in quaternionic linear algebra (Zhang 1997; Rodman 2014); the classes $[\lambda_i]$ are the right eigenvalues, and every right eigenvalue lies in one of them by the invariance of $\sigma_R$ under conjugation.</p>
 <p><strong>Definition.</strong> The <strong>standard spectrum</strong> of $M$ is the multiset $\{\lambda_1,\dots,\lambda_n\}$ of complex numbers with non-negative imaginary part given by the standard form; it is a set of representatives, one for each right eigenvalue class, and depends only on $M$ up to a simultaneous choice of slice.</p>
 <p><strong>Proposition.</strong> For a complex scalar $\lambda$ the left and right eigenvalue problems coincide: $\lambda\in\sigma_L(M)$ if and only if $\lambda\in\sigma_R(M)$. In general the two spectra are incomparable, and neither is contained in the other.</p>
-<p><em>Proof.</em> A complex scalar commutes with every quaternion, so $Mv = \lambda v$ and $Mv = v\lambda$ are the same equation whenever $\lambda$ is complex; this is the equivalence. For the incomparability, take $n = 2$. For $M = \operatorname{diag}(e_1,e_2)$ the right spectrum is the whole sphere of pure units, since every conjugate of $e_1$ and of $e_2$ is a right eigenvalue, while the only left eigenvalues are $e_1$ and $e_2$, because $(e_1-\lambda)v_1 = 0$ forces $\lambda = e_1$ or $v_1 = 0$; hence $\sigma_R(M)\not\subseteq\sigma_L(M)$. For $M = \begin{pmatrix}0&e_1\\-4e_1&0\end{pmatrix}$ the standard eigenvalues are the real numbers $2$ and $-2$, so $\sigma_R(M) = \{2,-2\}$, while the left spectrum is infinite (Huang and So), namely the two-sphere $\{\tilde q\in\operatorname{span}(1,e_2,e_3) : |\tilde q| = 2\}$; hence $\sigma_L(M)\not\subseteq\sigma_R(M)$.</p>
+<p><em>Proof.</em> A complex scalar commutes with every quaternion, so $Mv = \lambda v$ and $Mv = v\lambda$ are the same equation whenever $\lambda$ is complex; this is the equivalence. For the incomparability, take $n = 2$. For $M = \operatorname{diag}(\vec e_x,\vec e_y)$ the right spectrum is the whole sphere of pure units, since every conjugate of $\vec e_x$ and of $\vec e_y$ is a right eigenvalue, while the only left eigenvalues are $\vec e_x$ and $\vec e_y$, because $(\vec e_x-\lambda)v_1 = 0$ forces $\lambda = \vec e_x$ or $v_1 = 0$; hence $\sigma_R(M)\not\subseteq\sigma_L(M)$. For $M = \begin{pmatrix}0&\vec e_x\\-4\vec e_x&0\end{pmatrix}$ the standard eigenvalues are the real numbers $2$ and $-2$, so $\sigma_R(M) = \{2,-2\}$, while the left spectrum is infinite (Huang and So), namely the two-sphere $\{\tilde q\in\operatorname{span}(1,\vec e_y,\vec e_z) : |\tilde q| = 2\}$; hence $\sigma_L(M)\not\subseteq\sigma_R(M)$.</p>
 <p><strong>Remark.</strong> Unlike the right spectrum, the left spectrum of a quaternionic matrix need not be a finite union of spheres: for $n\geq2$ it can be infinite, a union of continua of spheres. This is a genuine phenomenon of non-commutative linear algebra, established by Huang and So, and it is the reason that the right spectrum and the S-spectrum, not the left spectrum, are the objects of the functional calculus. For $n = 1$ the left spectrum is finite, a single point.</p>
 <h2 id="cayleyhamilton-and-the-trace-and-norm-functionals">Cayley–Hamilton and the Trace and Norm Functionals</h2>
 <p><strong>Definition.</strong> The <strong>trace functional</strong> and <strong>determinant functional</strong> — more precisely the <strong>reduced trace</strong> and <strong>reduced norm</strong> — of a quaternion are</p>
 <p>$$
-T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2.
+T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_t, \qquad D(\tilde q) = \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+|\vec q|^2.
 $$</p>
 <p><strong>Theorem (Cayley–Hamilton for a quaternion).</strong> Every quaternion satisfies</p>
 <p>$$
-\tilde q^2-T(\tilde q)\,\tilde q+D(\tilde q) = 0, \qquad \text{that is} \qquad \tilde q^2-2q_0\tilde q+\langle\tilde q\rangle_{\natural} = 0.
+\tilde q^2-T(\tilde q)\,\tilde q+D(\tilde q) = 0, \qquad \text{that is} \qquad \tilde q^2-2q_t\tilde q+\langle\tilde q\rangle_{\natural} = 0.
 $$</p>
-<p><em>Proof.</em> With $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\vec q^2 = -|\vec q|^2$,</p>
+<p><em>Proof.</em> With $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ and $\vec q^2 = -|\vec q|^2$,</p>
 <p>$$
-\tilde q^2 = q_0^2+2q_0\vec q+\vec q^2 = q_0^2+2q_0\vec q-|\vec q|^2 = 2q_0\tilde q-(q_0^2+|\vec q|^2) = T(\tilde q)\tilde q-D(\tilde q).
+\tilde q^2 = q_t^2+2q_t\vec q+\vec q^2 = q_t^2+2q_t\vec q-|\vec q|^2 = 2q_t\tilde q-(q_t^2+|\vec q|^2) = T(\tilde q)\tilde q-D(\tilde q).
 $$</p>
 <p><strong>Corollary.</strong> A non-zero quaternion is a root of its own quadratic $x^2-T(\tilde q)x+D(\tilde q)$, which has the <strong>non-positive</strong> discriminant</p>
 <p>$$
-T(\tilde q)^2-4D(\tilde q) = 4q_0^2-4(q_0^2+|\vec q|^2) = -4|\vec q|^2\leq0;
+T(\tilde q)^2-4D(\tilde q) = 4q_t^2-4(q_t^2+|\vec q|^2) = -4|\vec q|^2\leq0;
 $$</p>
-<p>over the quaternions a negative discriminant is not a failure of existence but the statement that the two roots are the conjugate pair $q_0\pm\mu|\vec q|$ for any imaginary unit $\mu$.</p>
+<p>over the quaternions a negative discriminant is not a failure of existence but the statement that the two roots are the conjugate pair $q_t\pm\mu|\vec q|$ for any imaginary unit $\mu$.</p>
 <p><strong>Proposition.</strong> The functionals satisfy</p>
 <p>$$
-T(p+\tilde q) = T(p)+T(\tilde q), \quad T(\lambda \tilde q) = \lambda T(\tilde q)\ (\lambda\in\mathbb{R}), \quad T(e_0) = 2, \quad T(\tilde q) = T(\tilde q^{-1})\langle\tilde q\rangle_{\natural},
+T(\tilde q_1+\tilde q_2) = T(\tilde q_1)+T(\tilde q_2), \quad T(\lambda \tilde q) = \lambda T(\tilde q)\ (\lambda\in\mathbb{R}), \quad T(e_t) = 2, \quad T(\tilde q) = T(\tilde q^{-1})\langle\tilde q\rangle_{\natural},
 $$</p>
 <p>$$
-D(p\tilde q) = D(p)D(\tilde q), \quad D(\lambda \tilde q) = \lambda^2D(\tilde q)\ (\lambda\in\mathbb{R}), \quad D(e_0) = 1,
+D(\tilde q_1\tilde q_2) = D(\tilde q_1)D(\tilde q_2), \quad D(\lambda \tilde q) = \lambda^2D(\tilde q)\ (\lambda\in\mathbb{R}), \quad D(e_t) = 1,
 $$</p>
-<p>and both are invariant under similarity, $T(v^{-1}qv) = T(\tilde q)$ and $D(v^{-1}qv) = D(\tilde q)$ for $v\neq0$. The determinant functional is multiplicative, the trace functional is real-linear but not multiplicative, and $T(\tilde q^{-1}) = T(\tilde q)/\langle\tilde q\rangle_{\natural}$.</p>
-<p><em>Proof.</em> The scalar part and the quaternion norm are additive and multiplicative as stated; similarity preserves the scalar part because $v^{-1}qv$ has the same real part, and preserves the quaternion norm by multiplicativity of $\langle\cdot\rangle_{\natural}$.</p>
+<p>and both are invariant under similarity, $T(v^{-1}\tilde qv) = T(\tilde q)$ and $D(v^{-1}\tilde qv) = D(\tilde q)$ for $v\neq0$. The determinant functional is multiplicative, the trace functional is real-linear but not multiplicative, and $T(\tilde q^{-1}) = T(\tilde q)/\langle\tilde q\rangle_{\natural}$.</p>
+<p><em>Proof.</em> The scalar part and the quaternion norm are additive and multiplicative as stated; similarity preserves the scalar part because $v^{-1}\tilde qv$ has the same real part, and preserves the quaternion norm by multiplicativity of $\langle\cdot\rangle_{\natural}$.</p>
 <p><strong>Remark.</strong> For matrices the corresponding statements are more delicate. The trace $\operatorname{tr}M = \sum_iM_{ii}$ is not similarity-invariant, since trace is not cyclic over a non-commutative ring; only its real part is, $\mathrm{Sc}\operatorname{tr}(M) = \mathrm{Sc}\operatorname{tr}(S^{-1}MS)$. The determinant is replaced by the <strong>Dieudonné determinant</strong> $\det M$, with values in the abelianisation $\mathbb{H}^{\times}/[\mathbb{H}^{\times},\mathbb{H}^{\times}]\cong\mathbb{R}_{>0}$; it is multiplicative, and $|\det M| = \prod_{i=1}^{n}|\lambda_i|$ for the standard spectrum. These are the correct replacements for the commutative trace and determinant, and their use is standard (Rodman 2014).</p>
 <h2 id="similarity-classes-and-the-eigenvalue-dichotomy">Similarity Classes and the Eigenvalue Dichotomy</h2>
-<p><strong>Definition.</strong> Two quaternions $\tilde q,\tilde q'$ are <strong>similar</strong> if $\tilde q' = v^{-1}qv$ for some $v\in\mathbb{H}^{\times}$; two matrices are similar if $M' = S^{-1}MS$ for some invertible $S$.</p>
+<p><strong>Definition.</strong> Two quaternions $\tilde q_1,\tilde q_2$ are <strong>similar</strong> if $\tilde q_2 = v^{-1}\tilde q_1v$ for some $v\in\mathbb{H}^{\times}$; two matrices are similar if $M' = S^{-1}MS$ for some invertible $S$.</p>
 <p><strong>Theorem (classification).</strong> Two quaternions are similar if and only if they have the same trace and determinant functionals,</p>
 <p>$$
-\tilde q'\sim \tilde q\iff T(\tilde q') = T(\tilde q)\ \text{and}\ D(\tilde q') = D(\tilde q),
+\tilde q_2\sim \tilde q_1\iff T(\tilde q_2) = T(\tilde q_1)\ \text{and}\ D(\tilde q_2) = D(\tilde q_1),
 $$</p>
 <p>equivalently if and only if they have the same real part and the same modulus of the vector part. Consequently the similarity class of $\tilde q$ is a point when $\tilde q$ is real and a two-sphere otherwise, and the classes are parametrised by the half-plane $\{(t,d) : d\geq t^2/4\}$ through $(T,D)$.</p>
-<p><em>Proof.</em> A conjugation $v^{-1}qv$ preserves the real part and the modulus of the vector part, hence $(T,D)$; conversely two quaternions with equal $(q_0,|\vec q|)$ are carried one to the other by conjugation by a unit quaternion, which preserves both invariants; this is the transitivity of the adjoint action in <em>Quaternion Rotations and Reflections</em>. The class is a point for real $\tilde q$, where $|\vec q| = 0$.</p>
+<p><em>Proof.</em> A conjugation $v^{-1}\tilde qv$ preserves the real part and the modulus of the vector part, hence $(T,D)$; conversely two quaternions with equal $(q_t,|\vec q|)$ are carried one to the other by conjugation by a unit quaternion, which preserves both invariants; this is the transitivity of the adjoint action in <em>Quaternion Rotations and Reflections</em>. The class is a point for real $\tilde q$, where $|\vec q| = 0$.</p>
 <p><strong>Theorem (eigenvalue dichotomy).</strong> For a quaternionic matrix the right spectrum is a finite union of similarity classes, each of which is of exactly one of two kinds: a <strong>real point</strong> $\{t\}$ or a non-degenerate <strong>two-sphere</strong> $[t+\mu s]$ with $s > 0$ and $\mu$ a pure unit. The two kinds cannot mix within one class.</p>
 <p><em>Proof.</em> Each class $[\lambda_i]$ of the standard spectrum is a point if $\lambda_i$ is real and a two-sphere if it is not, by the classification of the previous theorem.</p>
 <p><strong>Corollary.</strong> For the standard spectrum $\{\lambda_1,\dots,\lambda_n\}$ the multiset of real classes is exactly the set of real eigenvalues, and the non-real classes are the genuine spheres; the sum of the sizes of the classes is not finite unless every eigenvalue is real, which is why multiplicity is counted on the standard representatives rather than on the spherical classes.</p>
@@ -137,8 +136,8 @@ $$</p>
 V_{[\lambda]} = \{v\in\mathbb{H}^n : Mv = v\mu \text{ for some } \mu\in[\lambda]\},
 $$</p>
 <p>and the <strong>geometric multiplicity</strong> of the class is its dimension as a right $\mathbb{H}$-vector space.</p>
-<p><strong>Proposition.</strong> $V_{[\lambda]}$ is a right $\mathbb{H}$-subspace; for a single quaternion, $V_{[\tilde q]} = \mathbb{H}$, of dimension one over $\mathbb{H}$; and the set $\{v : qv = v\lambda\}$ for one fixed non-real representative $\lambda$ is not a right $\mathbb{H}$-subspace but a right $\mathbb{R}[\lambda]$-module of real dimension two.</p>
-<p><em>Proof.</em> If $Mv = v\mu$ and $Mw = w\nu$ with $\mu,\nu\in[\lambda]$, then $M(v\alpha+w\beta) = v\mu\alpha+w\nu\beta$ for any quaternions $\alpha,\beta$, and $\mu\alpha,\nu\beta\in[\lambda]$ for $\alpha,\beta\neq0$; for $\alpha = \beta = 0$ the vector is zero. Hence $V_{[\lambda]}$ is a right $\mathbb{H}$-subspace. For $n = 1$ every non-zero $v$ satisfies $qv = v(v^{-1}qv)$, so $V_{[\tilde q]} = \mathbb{H}$. For a fixed non-real $\lambda$, closure under right scaling by $\alpha$ requires $\lambda\alpha = \alpha\lambda$, that is $\alpha\in\mathbb{R}[\lambda]\cong\mathbb{C}$, giving a complex line of real dimension two.</p>
+<p><strong>Proposition.</strong> $V_{[\lambda]}$ is a right $\mathbb{H}$-subspace; for a single quaternion, $V_{[\tilde q]} = \mathbb{H}$, of dimension one over $\mathbb{H}$; and the set $\{v : \tilde qv = v\lambda\}$ for one fixed non-real representative $\lambda$ is not a right $\mathbb{H}$-subspace but a right $\mathbb{R}[\lambda]$-module of real dimension two.</p>
+<p><em>Proof.</em> If $Mv = v\mu$ and $Mw = w\nu$ with $\mu,\nu\in[\lambda]$, then $M(v\alpha+w\beta) = v\mu\alpha+w\nu\beta$ for any quaternions $\alpha,\beta$, and $\mu\alpha,\nu\beta\in[\lambda]$ for $\alpha,\beta\neq0$; for $\alpha = \beta = 0$ the vector is zero. Hence $V_{[\lambda]}$ is a right $\mathbb{H}$-subspace. For $n = 1$ every non-zero $v$ satisfies $\tilde qv = v(v^{-1}\tilde qv)$, so $V_{[\tilde q]} = \mathbb{H}$. For a fixed non-real $\lambda$, closure under right scaling by $\alpha$ requires $\lambda\alpha = \alpha\lambda$, that is $\alpha\in\mathbb{R}[\lambda]\cong\mathbb{C}$, giving a complex line of real dimension two.</p>
 <p><strong>Proposition (left eigenspace).</strong> For $\lambda\in\sigma_L(M)$ the <strong>left eigenspace</strong> $\{v : Mv = \lambda v\}$ is a right $\mathbb{H}$-subspace; for a single quaternion with $\lambda = \tilde q$ it is all of $\mathbb{H}$.</p>
 <p><em>Proof.</em> If $Mv = \lambda v$ and $Mw = \lambda w$, then $M(v\alpha+w\beta) = \lambda v\alpha+\lambda w\beta = \lambda(v\alpha+w\beta)$, so the set is a right $\mathbb{H}$-subspace; for $[\tilde q]$ and $\lambda = \tilde q$ every $v$ satisfies $\tilde q v = \tilde q v$.</p>
 <p><strong>Corollary.</strong> For a single quaternion the left eigenspace is all of $\mathbb{H}$ (dimension one over $\mathbb{H}$) while the right eigenspace attached to the fixed representative $\tilde q$ is a complex line (real dimension two); this is the eigenspace reflection of the fact that the left spectrum is a point and the right spectrum a sphere.</p>
@@ -150,10 +149,10 @@ $$</p>
 <p>where $\sigma_S(M)$ is the S-spectrum defined below.</p>
 <p><strong>Theorem.</strong> For a single quaternion $\tilde q$ and $s\notin[\tilde q]$ the S-resolvent is</p>
 <p>$$
-\mathcal{R}_s(\tilde q) = \frac{a-2(q_0-s_0)\vec v}{a^2+4(q_0-s_0)^2|\vec v|^2}, \qquad a = (q_0-s_0)^2-|\vec v|^2+|\vec w|^2,
+\mathcal{R}_s(\tilde q) = \frac{a-2(q_t-s_0)\vec v}{a^2+4(q_t-s_0)^2|\vec v|^2}, \qquad a = (q_t-s_0)^2-|\vec v|^2+|\vec w|^2,
 $$</p>
-<p>with $\tilde q = q_0+\vec v$ and $s = s_0+\vec w$; it has a simple pole on the two-sphere $[\tilde q]$ and is analytic off it.</p>
-<p><em>Proof.</em> Writing $\tilde q^2-2\operatorname{Re}(s)\tilde q+|s|^2 = a+2(q_0-s_0)\vec v$ with $a$ real and $2(q_0-s_0)\vec v$ pure, the inverse is $(a-2(q_0-s_0)\vec v)/(a^2+4(q_0-s_0)^2|\vec v|^2)$. The denominator vanishes exactly when $a = 0$ and $s_0 = q_0$, that is when $s\in[\tilde q]$, which is the S-spectrum.</p>
+<p>with $\tilde q = q_t+\vec v$ and $s = s_0+\vec w$; it has a simple pole on the two-sphere $[\tilde q]$ and is analytic off it.</p>
+<p><em>Proof.</em> Writing $\tilde q^2-2\operatorname{Re}(s)\tilde q+|s|^2 = a+2(q_t-s_0)\vec v$ with $a$ real and $2(q_t-s_0)\vec v$ pure, the inverse is $(a-2(q_t-s_0)\vec v)/(a^2+4(q_t-s_0)^2|\vec v|^2)$. The denominator vanishes exactly when $a = 0$ and $s_0 = q_t$, that is when $s\in[\tilde q]$, which is the S-spectrum.</p>
 <p><strong>Definition.</strong> The <strong>spectral radius</strong> is $\rho(M) = \max\{|s| : s\in\sigma_S(M)\}$.</p>
 <p><strong>Proposition.</strong> For a single quaternion the spectral radius is the modulus, $\rho(\tilde q) = |\tilde q|$; the S-spectrum $[\tilde q]$ consists of elements all of the same modulus $|\tilde q|$, so the maximum is attained everywhere on it.</p>
 <p><em>Proof.</em> Every element of the class $[\tilde q]$ has the same norm $\langle\tilde q\rangle_{\natural}$ as $\tilde q$, hence the same modulus; the S-spectrum is the class.</p>
@@ -177,7 +176,7 @@ $$</p>
 <p><strong>Corollary.</strong> For a normal matrix the S-spectrum determines the operator up to unitary equivalence, the spectral radius equals the operator norm, and a Hermitian matrix has real S-spectrum, a unitary one has S-spectrum contained in the unit sphere $S^3$.</p>
 <h2 id="summary">Summary</h2>
 <p>The spectrum of a single quaternion in the algebra is the single point $\{\tilde q\}$, but the eigenvector problems of the operator $[\tilde q]$ give two different sets: the left spectrum $\sigma_L([\tilde q]) = \{\tilde q\}$ and the right spectrum $\sigma_R([\tilde q]) = $ the similarity class $[\tilde q]$, which is a point for real $\tilde q$ and a two-sphere of fixed modulus for non-real $\tilde q$. For a quaternionic matrix the right spectrum is a finite union of at most $n$ similarity classes, described by the standard form with complex representatives of non-negative imaginary part; the left spectrum is not invariant under similarity and need not be a finite union of classes, and the two spectra are in general incomparable, agreeing when the eigenvalue is complex.</p>
-<p>The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ holds with the reduced trace $T(\tilde q) = 2q_0$ and reduced norm $D(\tilde q) = \langle\tilde q\rangle_{\natural}$, both similarity-invariant, the former real-linear and the latter multiplicative; for matrices the trace is replaced by its real part and the determinant by the Dieudonné determinant, with $|\det M| = \prod_i|\lambda_i|$. Similarity of quaternions is classified by $(T,D)$, so the classes are points or spheres, and the eigenvalue dichotomy separates each class as a real point or a non-degenerate two-sphere.</p>
+<p>The Cayley–Hamilton identity $\tilde q^2-T(\tilde q)\tilde q+D(\tilde q) = 0$ holds with the reduced trace $T(\tilde q) = 2q_t$ and reduced norm $D(\tilde q) = \langle\tilde q\rangle_{\natural}$, both similarity-invariant, the former real-linear and the latter multiplicative; for matrices the trace is replaced by its real part and the determinant by the Dieudonné determinant, with $|\det M| = \prod_i|\lambda_i|$. Similarity of quaternions is classified by $(T,D)$, so the classes are points or spheres, and the eigenvalue dichotomy separates each class as a real point or a non-degenerate two-sphere.</p>
 <p>The right eigenspace attached to a class is a right $\mathbb{H}$-subspace, of dimension one over $\mathbb{H}$ for a single quaternion, whereas the eigenspace of a fixed non-real representative is only a complex line; the left eigenspace for a single quaternion is all of $\mathbb{H}$. The S-resolvent and the left resolvent have explicit closed forms, and the spectral radius of a single quaternion is its modulus; in general the spectral radius obeys the Gelfand-type limit formula and, for normal matrices, equals the operator norm.</p>
 <p>The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ singular}\}$ equals the right spectrum, and the quaternionic spectral theorem diagonalises a normal matrix as $M = U\operatorname{diag}(\lambda_i)U^{*}$ with $\sigma_S(M) = \bigcup_i[\lambda_i]$; Hermitian matrices have real S-spectrum and unitary ones S-spectrum on $S^3$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -194,8 +193,8 @@ $$</p>
 <td>Quaternion algebra, a division algebra; scalars non-central</td>
 </tr>
 <tr>
-<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$</td>
-<td>Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\vec q = \mathrm{Vect}\tilde q$</td>
+<td>$\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$</td>
+<td>Quaternion; $q_t = \mathrm{Sc}\tilde q$, $\vec q = \mathrm{Vect}\tilde q$</td>
 </tr>
 <tr>
 <td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{\langle\tilde q\rangle_{\natural}}$</td>
@@ -222,7 +221,7 @@ $$</p>
 <td>Standard spectrum, complex with $\operatorname{Im}\lambda_i\geq0$</td>
 </tr>
 <tr>
-<td>$T(\tilde q) = 2q_0$, $D(\tilde q) = \langle\tilde q\rangle_{\natural}$</td>
+<td>$T(\tilde q) = 2q_t$, $D(\tilde q) = \langle\tilde q\rangle_{\natural}$</td>
 <td>Reduced trace and reduced norm functionals</td>
 </tr>
 <tr>

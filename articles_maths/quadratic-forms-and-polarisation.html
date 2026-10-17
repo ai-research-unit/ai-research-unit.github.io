@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -184,11 +183,11 @@ $$</p>
 <p>and $\mathfrak{Q}(x) = a_1 x_1^2 + \cdots + a_n x_n^2$ in the coordinates of the basis. The symbol $\cong$ denotes isometry of quadratic forms.</p>
 <h3 id="diagonalisation-over-a-field">Diagonalisation over a Field</h3>
 <p><strong>Theorem (diagonalisation).</strong> Let $F$ be a field of characteristic not $2$, let $V$ be a finite-dimensional $F$-space, and let $m$ be a quadratic form on $V$. Then $m$ has an orthogonal basis, so $m \cong \langle a_1, \ldots, a_n\rangle$ for some $a_i \in F$.</p>
-<p><strong>Proof.</strong> If $m = 0$ every basis is orthogonal. Otherwise choose $e_1$ with $\mathfrak{Q}(e_1) \neq 0$. Then</p>
+<p><strong>Proof.</strong> If $m = 0$ every basis is orthogonal. Otherwise choose $\vec e_x$ with $\mathfrak{Q}(\vec e_x) \neq 0$. Then</p>
 <p>$$
-V = F e_1 \perp e_1^{\perp}, \qquad e_1^\perp = \{v : B(e_1, v) = 0\},
+V = F \vec e_x \perp \vec e_x^{\perp}, \qquad \vec e_x^\perp = \{v : B(\vec e_x, v) = 0\},
 $$</p>
-<p>because every $v$ decomposes as $v = \frac{B(v, e_1)}{\mathfrak{Q}(e_1)} e_1 + \bigl(v - \frac{B(v, e_1)}{\mathfrak{Q}(e_1)} e_1\bigr)$, and the second summand lies in $e_1^\perp$; the two subspaces meet in $0$ since $\mathfrak{Q}(e_1) \neq 0$. The restriction of $m$ to $e_1^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $e_1^\perp$; adjoining $e_1$ finishes the proof.</p>
+<p>because every $v$ decomposes as $v = \frac{B(v, \vec e_x)}{\mathfrak{Q}(\vec e_x)} \vec e_x + \bigl(v - \frac{B(v, \vec e_x)}{\mathfrak{Q}(\vec e_x)} \vec e_x\bigr)$, and the second summand lies in $\vec e_x^\perp$; the two subspaces meet in $0$ since $\mathfrak{Q}(\vec e_x) \neq 0$. The restriction of $m$ to $\vec e_x^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $\vec e_x^\perp$; adjoining $\vec e_x$ finishes the proof.</p>
 <p><strong>Corollary.</strong> Over a field of characteristic not $2$, every quadratic form is isometric to a diagonal form. The diagonal entries are determined only up to two operations: permuting them, and replacing $a_i$ by $c^2 a_i$ with $c \in F^\times$, since $a_i x_i^2 = a_i (c x_i)^2$ after rescaling the basis vector.</p>
 <p><strong>Definition.</strong> The form $\langle a\rangle$ with $a \in F^\times$ is determined up to isometry by the <strong>square class</strong> of $\mathfrak{a}$ in $F^\times/(F^\times)^2$. If all the $a_i$ are nonzero the form is non-degenerate, and the product $a_1 \cdots a_n$ modulo squares is the <strong>discriminant</strong> of $m$,</p>
 <p>$$

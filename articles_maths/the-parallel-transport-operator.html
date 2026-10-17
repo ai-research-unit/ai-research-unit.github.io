@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -108,13 +107,13 @@ $$</p>
 R(X, Y)v = -\lim_{s,t\to0}\frac{1}{st}\Bigl(P^{-1}_{\partial[0,s]\times[0,t]}(v) - v\Bigr)
 $$</p>
 <p>up to the ordering of the transport, where the loop is the boundary of a small coordinate parallelogram spanned by $X$ and $Y$.</p>
-<p><strong>Proof.</strong> The transport along the geodesic satisfies the ordinary differential equation $\frac{D}{dt}V = 0$ with $V(0) = v$, which is $\dot V(t) = -\Gamma(\gamma',V)$; substituting and taking the limit gives the covariant derivative. The parallelogram statement is the same computation one order further: the transport around the closed parallelogram differs from the identity by the curvature, which is the infinitesimal holonomy, $R(X,Y) = [\nabla_X,\nabla_Y]-\nabla_{[X,Y]}$.</p>
+<p><strong>Proof.</strong> The transport along the geodesic satisfies the ordinary differential equation $\frac{D}{dt}V = 0$ with $V(0) = v$, which is $\left(dV/dt\right)(t) = -\Gamma(\gamma',V)$; substituting and taking the limit gives the covariant derivative. The parallelogram statement is the same computation one order further: the transport around the closed parallelogram differs from the identity by the curvature, which is the infinitesimal holonomy, $R(X,Y) = [\nabla_X,\nabla_Y]-\nabla_{[X,Y]}$.</p>
 <h2 id="transport-along-a-geodesic">Transport Along a Geodesic</h2>
 <p><strong>Proposition.</strong> Along a geodesic $\gamma$ the transport $P_t : T_{\gamma(0)}M \to T_{\gamma(t)}M$ is the derivative of the geodesic flow at $(\gamma(0),\gamma'(0))$ read on the vertical directions, it preserves the velocity, $P_t(\gamma'(0)) = \gamma'(t)$, and the Jacobi fields along $\gamma$ are the fields $t \mapsto P_t J_0(t)$ with $J_0$ the solution of the transported Jacobi equation at the origin. The transport along $\gamma$ is the <strong>fundamental matrix</strong> of the linear system</p>
 <p>$$
 \frac{D}{dt}V = 0, \qquad V(0) = v,
 $$</p>
-<p>equivalently $\dot V^k(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'^i(t)V^j(t)$.</p>
+<p>equivalently $\left(dV^{k}/dt\right)(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'^i(t)V^j(t)$.</p>
 <p><strong>Proof.</strong> A vector field $t\mapsto\gamma'(t)/|\gamma'|$ is parallel along a geodesic because the geodesic equation is $\frac{D}{dt}\gamma'=0$, so the velocity is preserved. The Jacobi fields are the fields $P_t$ applied to the solutions of the Jacobi equation at the origin, which is the statement that the transport trivialises the tangent bundle along the geodesic and the curvature is the transported curvature; the fundamental-matrix statement is the linear system read in a chart.</p>
 <p><strong>Corollary (the transported curvature).</strong> Along a path $\gamma$ the transport carries the curvature to the curvature, $P_\gamma\bigl(R(X,Y)Z\bigr) = R\bigl(P_\gamma X, P_\gamma Y\bigr)P_\gamma Z$, so the curvature is a parallel tensor, $\nabla R$ is well defined, and the manifold is locally symmetric exactly when $\nabla R = 0$, the condition studied in <em>The Geodesic Symmetry and Locally Symmetric Spaces</em> later in this category.</p>
 <p><strong>Proof.</strong> The curvature is built from the connection and the Lie bracket, and the transport is an isometry that carries the connection to itself by the composition rule; hence it carries every expression in the connection to the corresponding expression. The local symmetry statement is the equivalence of $\nabla R = 0$ with the local geodesic symmetry, which is the following article of the category.</p>

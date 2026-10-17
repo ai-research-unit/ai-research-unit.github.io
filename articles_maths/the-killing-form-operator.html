@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -92,10 +91,10 @@ $$</p>
 <h2 id="the-casimir-operator-and-the-laplacian">The Casimir Operator and the Laplacian</h2>
 <p><strong>Definition.</strong> Let $\mathrm{G}$ be semisimple, let $x_1,\dots,x_m$ be a basis and let $x^1,\dots,x^m$ be the basis determined by $\kappa(x_i,x^j)=\delta_i^j$. The <strong>Casimir operator</strong> is</p>
 <p>$$
-\Omega=\sum_{i=1}^{m}x_ix^i\in U(\mathrm{G}),
+\Omega=\sum_{i=1}^{m}x_ix^i\in \mathrm{U}(\mathrm{G}),
 $$</p>
 <p>and its image in $\operatorname{End}_K(V)$ under a representation $\rho$ is the <strong>Laplacian of the representation</strong>, $\Omega=\sum_i\rho(x_i)\rho(x^i)$.</p>
-<p><strong>Theorem.</strong> The element $\Omega$ is independent of the choice of basis, it lies in the centre of $U(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.</p>
+<p><strong>Theorem.</strong> The element $\Omega$ is independent of the choice of basis, it lies in the centre of $\mathrm{U}(\mathrm{G})$, and the Laplacian commutes with the image of the representation; on an irreducible finite-dimensional representation the Laplacian is a scalar.</p>
 <p><strong>Proof.</strong> A change of basis changes the two bases by inverse matrices, whose contributions cancel in the sum; centrality and the commuting property, with the scalar statement, are established in <em>The Casimir Operator</em>.</p>
 <p><strong>Remark.</strong> The operator $\kappa^{\flat}$ is what makes the sum basis-free: it identifies $\mathrm{G}$ with $\mathrm{G}^*$, so a sum over a basis of $\mathrm{G}$ and the dual basis is an invariant element. The Laplacian is the operator form of the Casimir element and is used in <em>The Casimir Operator</em> and in <em>Representations of Lie Algebras</em>.</p>
 <h2 id="worked-case-math88">Worked Case: $\mathrm{sl}(2,K)$</h2>
@@ -109,7 +108,7 @@ $$</p>
 $$</p>
 <p>which acts on the irreducible representation of highest weight $n$ by the scalar $\tfrac18 n(n+2)$, the value recorded in <em>The Casimir Operator</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The Killing form defines the <strong>Killing form operator</strong> $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, whose kernel is the radical of the form. It is a morphism of $\mathrm{G}$-modules with a sign, $\kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\kappa^{\flat}(y)$, and this is the invariance of $\kappa$; equivalently every $\operatorname{ad}_x$ is skew for $\kappa$, $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$, so the adjoint representation lands in the operators preserving the form, and the derivations preserve $\kappa$ as well. By Cartan's criterion, recorded in <em>Structure of Lie Algebras</em>, the algebra is semisimple exactly when $\kappa^{\flat}$ is injective, and then $\kappa^{\flat}$ is an isomorphism of $\mathrm{G}$-modules between the adjoint and the coadjoint representations. The isomorphism makes the Casimir operator $\Omega=\sum x_ix^i$ and the Laplacian $\Omega=\sum\rho(x_i)\rho(x^i)$ basis-free invariant operators, central in $U(\mathrm{G})$ and scalar on irreducibles, as in <em>The Casimir Operator</em>. For $\mathrm{sl}(2,K)$ the form is nondegenerate with matrix displayed above, and the Laplacian acts on the representation of highest weight $n$ by $\tfrac12 n(n+2)$.</p>
+<p>The Killing form defines the <strong>Killing form operator</strong> $\kappa^{\flat}:\mathrm{G}\to\mathrm{G}^*$, $x\mapsto\kappa(x,-)$, whose kernel is the radical of the form. It is a morphism of $\mathrm{G}$-modules with a sign, $\kappa^{\flat}(\operatorname{ad}_x y)=-\operatorname{ad}_x^{*}\kappa^{\flat}(y)$, and this is the invariance of $\kappa$; equivalently every $\operatorname{ad}_x$ is skew for $\kappa$, $\kappa(\operatorname{ad}_x y,z)+\kappa(y,\operatorname{ad}_x z)=0$, so the adjoint representation lands in the operators preserving the form, and the derivations preserve $\kappa$ as well. By Cartan's criterion, recorded in <em>Structure of Lie Algebras</em>, the algebra is semisimple exactly when $\kappa^{\flat}$ is injective, and then $\kappa^{\flat}$ is an isomorphism of $\mathrm{G}$-modules between the adjoint and the coadjoint representations. The isomorphism makes the Casimir operator $\Omega=\sum x_ix^i$ and the Laplacian $\Omega=\sum\rho(x_i)\rho(x^i)$ basis-free invariant operators, central in $\mathrm{U}(\mathrm{G})$ and scalar on irreducibles, as in <em>The Casimir Operator</em>. For $\mathrm{sl}(2,K)$ the form is nondegenerate with matrix displayed above, and the Laplacian acts on the representation of highest weight $n$ by $\tfrac12 n(n+2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

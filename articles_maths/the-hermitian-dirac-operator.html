@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -62,9 +61,9 @@ to the finite-dimensional Dirac element of Part II's <em>Dirac Operators with He
 <p>The setting is that of <em>Hermitian Clifford Analysis and the Hermitian Monogenic Functions</em> and
 <em>Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator</em>: the even-dimensional
 space $\mathbb{R}^{2n}=\mathbb{C}^n$ with the Witt basis and the pair
-$\partial_{\underline z}=\sum_jf_j\partial_{z_j}$,
-$\partial_{\bar z}=\sum_jf_j^{*}\partial_{\bar z_j}$, or the four-dimensional-per-block quaternionic
-case with the four operators $\partial_{Z_r}$; the value module $\mathcal{S}$ with its Hermitian
+$\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$,
+$\partial/\partial\bar z=\sum_jf_j^{*}\partial/\partial\bar z_j$, or the four-dimensional-per-block quaternionic
+case with the four operators $\partial/\partial Z_r$; the value module $\mathcal{S}$ with its Hermitian
 form; and the Hilbert module $L^2(\Omega;\mathcal{S})$ of <em>Hermitian Hilbert Modules over a Clifford
 Algebra</em>. The operator-algebraic content of the split — the symbols, the Fischer decomposition, the
 bivariate representation — is <em>The Hermitian Dirac Operator and the Fischer Decomposition</em>, and is
@@ -76,30 +75,30 @@ Differential Operators</em>' and <em>Unbounded Operators and Spectral Measures</
 <h2 id="the-operator-and-its-splitting">The Operator and its Splitting</h2>
 <p><strong>Definition.</strong> The <strong>Hermitian Dirac operator</strong> is</p>
 <p>$$
-\mathcal{D} = \partial_{\underline z}+\partial_{\bar z} ,
+\mathcal{D} = \partial/\partial\underline z+\partial/\partial\bar z ,
 $$</p>
 <p>the sum of the two Hermitian Dirac operators of the complex refinement; in the quaternionic
 refinement the corresponding operator is the sum of the four,
-$\mathcal{D}=\sum_{r=0}^{3}\partial_{Z_r}$.</p>
+$\mathcal{D}=\sum_{r=0}^{3}\partial/\partial Z_r$.</p>
 <p><strong>Theorem (the square is the Laplacian).</strong> The Hermitian Dirac operator satisfies</p>
 <p>$$
-\mathcal{D}^2 = \{\partial_{\underline z},\partial_{\bar z}\} = \tfrac14\Delta_{2n} ,
+\mathcal{D}^2 = \{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\Delta_{2n} ,
 $$</p>
 <p>because the two squares vanish separately; in the quaternionic case the sum of the four operators
 has square the corresponding multiple of $\Delta_N$ from the split
-$\Delta_N=16\sum_r\partial_{Z_r}\partial_{Z_r}^{\dagger}$.</p>
-<p><em>Proof.</em> Expand $(\partial_{\underline z}+\partial_{\bar z})^2$ and use
-$\partial_{\underline z}^2=\partial_{\bar z}^2=0$ and
-$\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$ of <em>Hermitian Clifford Analysis
+$\Delta_N=16\sum_r\partial/\partial Z_r\partial/\partial Z_r^{\dagger}$.</p>
+<p><em>Proof.</em> Expand $(\partial/\partial\underline z+\partial/\partial\bar z)^2$ and use
+$(\partial/\partial\underline z)^2=(\partial/\partial\bar z)^2=0$ and
+$\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$ of <em>Hermitian Clifford Analysis
 and the Hermitian Monogenic Functions</em>.</p>
 <p><strong>Remark (two square roots of the Laplacian).</strong> The Euclidean operator gives another square root,
-$D=2(\partial_{\underline z}-\partial_{\bar z})$ with $D^2=-\Delta_{2n}$; the two square roots are
-interchanged by the reflection $\partial_{\bar z}\mapsto-\partial_{\bar z}$, i.e. by the complex
+$D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ with $D^2=-\Delta_{2n}$; the two square roots are
+interchanged by the reflection $\partial/\partial\bar z\mapsto-\partial/\partial\bar z$, i.e. by the complex
 conjugation of the Hermitian structure, and they correspond to the two signs of the complex
 structure. The Hermitian Dirac operator is the one adapted to the Hermitian form, as the next
 section shows.</p>
 <p><strong>Remark (the splitting as a grading).</strong> The splitting
-$\mathcal{D}=\partial_{\underline z}+\partial_{\bar z}$ is a decomposition into two <strong>isotropic</strong>
+$\mathcal{D}=\partial/\partial\underline z+\partial/\partial\bar z$ is a decomposition into two <strong>isotropic</strong>
 parts: each part alone has square zero, so the operator is a sum of two anticommuting square-zero
 operators, and the algebra they generate is the exterior algebra on the Witt basis. This is the
 operator form of the bidegree decomposition of <em>The Hermitian Dirac Operator and the Fischer
@@ -110,8 +109,8 @@ differential of the resulting bicomplex.</p>
 <p><strong>Theorem (the Hermitian Dirac operator is symmetric).</strong> With respect to the Hermitian form of the
 module, the involution $*$ exchanges the two halves of the split,</p>
 <p>$$
-(\partial_{\underline z})^{\dagger} \sim \partial_{\bar z} , \qquad
-(\partial_{\bar z})^{\dagger} \sim \partial_{\underline z} ,
+(\partial/\partial\underline z)^{\dagger} \sim \partial/\partial\bar z , \qquad
+(\partial/\partial\bar z)^{\dagger} \sim \partial/\partial\underline z ,
 $$</p>
 <p>the symbol $\sim$ meaning equality up to the conjugation of the variables and the normalisation of
 the theorem; consequently the Hermitian Dirac operator is <strong>symmetric</strong>,</p>
@@ -121,15 +120,15 @@ $$</p>
 <p>on compactly supported smooth sections.</p>
 <p><em>Proof.</em> The involution $*$ is the composition of the conjugation of the coefficient field with the
 Clifford conjugation; it carries the Witt basis element $f_j$ to $f_j^{*}$, the coefficient
-differentiation $\partial_{z_j}$ to $\partial_{\bar z_j}$, and conversely, so it interchanges
-$\partial_{\underline z}$ and $\partial_{\bar z}$; a sum of two terms that the involution
+differentiation $\partial/\partial z_j$ to $\partial/\partial\bar z_j$, and conversely, so it interchanges
+$\partial/\partial\underline z$ and $\partial/\partial\bar z$; a sum of two terms that the involution
 interchanges is fixed by it, and the symmetry with respect to the form is precisely the fixed-point
 property. Integrating by parts on compactly supported sections removes the boundary terms.</p>
 <p><strong>Remark (why the two halves are conjugate).</strong> The pairing is the module form's version of the
-pairing of $\partial_{\underline z}$ with $\partial_{\bar z}$: the two operators are conjugate
+pairing of $\partial/\partial\underline z$ with $\partial/\partial\bar z$: the two operators are conjugate
 linear in each other under $*$, so each is the adjoint of the other with respect to the form, and
 any symmetric combination of them is a symmetric operator. The Hermitian Dirac operator is the
-symmetric combination; the Euclidean operator $D=2(\partial_{\underline z}-\partial_{\bar z})$ is
+symmetric combination; the Euclidean operator $D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ is
 the antisymmetric one — being the difference it changes sign under the exchange — and this is why
 $D$ is skew-adjoint rather than self-adjoint with respect to the form, with $\bar D$ as its formal
 adjoint as in <em>Hermitian Hilbert Modules over a Clifford Algebra</em>.</p>
@@ -179,14 +178,14 @@ object, developed in <em>The Hermitian Dirac Operator and the Fischer Decomposit
 Cauchy Integral and the Boundary Values</em> and <em>The Hermitian Cauchy Kernel as an Adjoint</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>Hermitian Dirac operator</strong> of the complex refinement is
-$\mathcal{D}=\partial_{\underline z}+\partial_{\bar z}$, the sum of the two Hermitian Dirac
+$\mathcal{D}=\partial/\partial\underline z+\partial/\partial\bar z$, the sum of the two Hermitian Dirac
 operators; because each square vanishes,
-$\mathcal{D}^2=\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$, so $\mathcal{D}$
+$\mathcal{D}^2=\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$, so $\mathcal{D}$
 is a square root of the Laplacian, the other being the Euclidean operator
-$D=2(\partial_{\underline z}-\partial_{\bar z})$ with $D^2=-\Delta_{2n}$. The involution $*$ of the
+$D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ with $D^2=-\Delta_{2n}$. The involution $*$ of the
 Hermitian form interchanges the two halves,
-$(\partial_{\underline z})^{\dagger}\sim\partial_{\bar z}$ and
-$(\partial_{\bar z})^{\dagger}\sim\partial_{\underline z}$, so the <strong>sum</strong> is symmetric with respect
+$(\partial/\partial\underline z)^{\dagger}\sim\partial/\partial\bar z$ and
+$(\partial/\partial\bar z)^{\dagger}\sim\partial/\partial\underline z$, so the <strong>sum</strong> is symmetric with respect
 to the form while the <strong>difference</strong> is antisymmetric; this is the operator-theoretic meaning of the
 split. On the Hilbert module $L^2(\mathbb{R}^{2n};\mathcal{S})$, on the Sobolev space $H^1$,
 $\mathcal{D}$ is essentially self-adjoint, its closure has square the Laplacian, and its spectrum is
@@ -211,19 +210,19 @@ Cauchy Integral and the Boundary Values</em> and <em>The Hermitian Cauchy Kernel
 </thead>
 <tbody>
 <tr>
-<td>$\partial_{\underline z},\partial_{\bar z}$</td>
+<td>$\partial/\partial\underline z,\partial/\partial\bar z$</td>
 <td>Hermitian Dirac operators; isotropic, anticommuting</td>
 </tr>
 <tr>
-<td>$\mathcal{D}=\partial_{\underline z}+\partial_{\bar z}$</td>
+<td>$\mathcal{D}=\partial/\partial\underline z+\partial/\partial\bar z$</td>
 <td>Hermitian Dirac operator; $\mathcal{D}^2=\tfrac14\Delta_{2n}$</td>
 </tr>
 <tr>
-<td>$D=2(\partial_{\underline z}-\partial_{\bar z})$</td>
+<td>$D=2(\partial/\partial\underline z-\partial/\partial\bar z)$</td>
 <td>Euclidean operator; $D^2=-\Delta_{2n}$; formal adjoint $D^{\dagger}=-\bar D$</td>
 </tr>
 <tr>
-<td>$(\partial_{\underline z})^{\dagger}\sim\partial_{\bar z}$, $(\partial_{\bar z})^{\dagger}\sim\partial_{\underline z}$</td>
+<td>$(\partial/\partial\underline z)^{\dagger}\sim\partial/\partial\bar z$, $(\partial/\partial\bar z)^{\dagger}\sim\partial/\partial\underline z$</td>
 <td>Conjugation interchanging the halves</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -95,7 +94,7 @@ the origin alone, the parent being a division product.</p>
 <p><strong>Definition (root of a central value).</strong> Let $\star$ be a product on $\mathbb{H}$ and let
 $\lambda\in\mathbb{R}$. A <strong>root of $\lambda$ in $\star$</strong> is a nonzero element $\tilde\xi$ with</p>
 <p>$$
-\tilde\xi\star\tilde\xi=\lambda e_0 .
+\tilde\xi\star\tilde\xi=\lambda e_t .
 $$</p>
 <p>The three central values the quaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $+1$
 are the involutions, the roots of $0$ are the nonzero nilpotents of the product, and the roots of $-1$
@@ -140,12 +139,12 @@ by no other; and an element is a two-sided zero divisor of an alternating produc
 nonzero, with itself as partner (<em>Zero Divisors of the Antisymmetric Plain Algebra</em>).</p>
 <p><strong>Remark (the whole space, and not only the vector subspace).</strong> The root set of $0$ is the whole
 space, and <strong>not</strong> the vector subspace: the scalar coordinate does not enter the square, since
-$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_0+\vec q$
+$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_t+\vec q$
 lies in the set as soon as it is nonzero. The set has real dimension four, and its elements are
 pairwise partners of themselves.</p>
 <p><strong>Remark (the maximum class).</strong> The root set of $0$ is the <strong>maximum possible</strong>, the whole punctured
 space, and it is the only nondegenerate one: for $\lambda\neq0$ the root equation
-$\tilde\xi\times\tilde\xi=\lambda e_0$ reduces to $0=\lambda e_0$ and is empty, and for $\lambda=0$ it
+$\tilde\xi\times\tilde\xi=\lambda e_t$ reduces to $0=\lambda e_t$ and is empty, and for $\lambda=0$ it
 is universal. The specification of the root is by the target value alone, the value $0$ accepting
 every nonzero element and every other value accepting none; this is the opposite of the parent plain
 product, where the roots of a central value form a sphere or a pair and degenerate only on a
@@ -231,7 +230,7 @@ other order, and the two sides coincide for the block, the product being alterna
 the Antisymmetric Plain Algebra</em>). Hence every element is its own annihilating partner, on the left
 and on the right.</p>
 <p>The self-annihilation is the element-level form of the totality of the class. For a noncentral element
-the annihilator is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec\nu$ of real dimension two, which
+the annihilator is the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec\nu$ of real dimension two, which
 contains the element; for a central element it is the whole space. The element lies in its annihilator
 in every case, which is the statement that the square vanishes.</p>
 <h3 id="the-conjugations-and-the-remarkable-subspaces">The Conjugations and the Remarkable Subspaces</h3>
@@ -261,8 +260,8 @@ the empty set off the origin. Over $\mathbb{R}$ the plain square has no isotropi
 isotropic cone being real only after complexification, so the pure elements that would be square zero
 over $\mathbb{C}$ are not available. The block is the antisymmetric half of the parent, and the
 comparison is the comparison of the whole space with the origin alone: the block's class strictly
-contains the parent's, the element $e_0$ lying in the class of the block ($e_0\times e_0=0$) and not of
-the parent ($e_0^2=e_0$). The enlargement is the removal of the scalar part: the parent's criterion is
+contains the parent's, the element $e_t$ lying in the class of the block ($e_t\times e_t=0$) and not of
+the parent ($e_t^2=e_t$). The enlargement is the removal of the scalar part: the parent's criterion is
 a condition on the square, and the block's square is identically zero, so the condition is satisfied by
 every element.</p>
 <h3 id="the-reading-among-the-six-structures">The Reading among the Six Structures</h3>
@@ -307,7 +306,7 @@ totality for an antisymmetric block is not an artefact of the real field.</p>
 <td>$\{0\}$</td>
 </tr>
 <tr>
-<td>SQA, $N(\tilde p,\tilde q)e_0$</td>
+<td>SQA, $N(\tilde p,\tilde q)e_t$</td>
 <td>none</td>
 <td>$\{0\}$</td>
 </tr>
@@ -378,7 +377,7 @@ enlargement being the removal of the scalar part from the square.</p>
 <td>the nilpotent class of the parent plain product, the empty set off the origin</td>
 </tr>
 <tr>
-<td>$\tfrac12(e_0+\tilde\xi)\mapsto$ idempotents</td>
+<td>$\tfrac12(e_t+\tilde\xi)\mapsto$ idempotents</td>
 <td>the halving map, not used here; the idempotents are the companion article</td>
 </tr>
 </tbody>

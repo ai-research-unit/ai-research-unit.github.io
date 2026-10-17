@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -96,8 +95,8 @@ $$</p>
 <tbody>
 <tr>
 <td>A III</td>
-<td>$SU(n,m)/S(U(n)\times U(m))$</td>
-<td>$SU(n+m)/S(U(n)\times U(m))$</td>
+<td>$SU(n,m)/S(\mathrm{U}(n)\times \mathrm{U}(m))$</td>
+<td>$SU(n+m)/S(\mathrm{U}(n)\times \mathrm{U}(m))$</td>
 <td>$2pq$</td>
 <td>$\min(n,m)$</td>
 </tr>
@@ -110,29 +109,29 @@ $$</p>
 </tr>
 <tr>
 <td>C I</td>
-<td>$Sp(2n,\mathbb{R})/U(n)$</td>
-<td>$Sp(n)/U(n)$</td>
+<td>$Sp(2n,\mathbb{R})/\mathrm{U}(n)$</td>
+<td>$Sp(n)/\mathrm{U}(n)$</td>
 <td>$n(n+1)$</td>
 <td>$n$</td>
 </tr>
 <tr>
 <td>D III</td>
-<td>$SO^{*}(2n)/U(n)$</td>
-<td>$SO(2n)/U(n)$</td>
+<td>$SO^{*}(2n)/\mathrm{U}(n)$</td>
+<td>$SO(2n)/\mathrm{U}(n)$</td>
 <td>$n(n-1)$</td>
 <td>$\lfloor n/2\rfloor$</td>
 </tr>
 <tr>
 <td>E III</td>
-<td>$E_{6(-14)}/(Spin(10)\times U(1))$</td>
-<td>$E_6/(Spin(10)\times U(1))$</td>
+<td>$E_{6(-14)}/(Spin(10)\times \mathrm{U}(1))$</td>
+<td>$E_6/(Spin(10)\times \mathrm{U}(1))$</td>
 <td>$32$</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>E VII</td>
-<td>$E_{7(-25)}/(E_6\times U(1))$</td>
-<td>$E_7/(E_6\times U(1))$</td>
+<td>$E_{7(-25)}/(E_6\times \mathrm{U}(1))$</td>
+<td>$E_7/(E_6\times \mathrm{U}(1))$</td>
 <td>$54$</td>
 <td>$3$</td>
 </tr>
@@ -147,17 +146,17 @@ $$</p>
 <li><strong>A III</strong>: $\mathfrak{n}\cong\mathbb{C}^{pq}$ with the multiplication by $i$ on the entries of the matrix $Z$; the domain is the matrix unit ball of <em>The Unitary Group and the Hermitian Symmetric Space</em>.</li>
 <li><strong>B D I</strong>: $\mathfrak{n}\cong\mathbb{C}^{n}$ with the complex structure of $\mathbb{C}^n$; the domain is the tube over the Lorentz cone, $\{z : \operatorname{Im} z \in \Omega\}$ with $\Omega$ the positive cone of a form of signature $(1,n-1)$.</li>
 <li><strong>C I</strong>: $\mathfrak{n}\cong\mathbb{C}^{n(n+1)/2}$ with the complex structure of the symmetric matrices; the domain is the Siegel upper half space $\{Z = Z^{t} : \operatorname{Im} Z > 0\}$.</li>
-<li><strong>D III</strong>: $\mathfrak{n}\cong\mathbb{C}^{n(n-1)/2}$; the compact dual $SO(2n)/U(n)$ is the manifold of orthogonal complex structures on $\mathbb{R}^{2n}$, the <strong>isotropic Grassmannian</strong>, and the noncompact dual is the same manifold with the opposite complex structure.</li>
+<li><strong>D III</strong>: $\mathfrak{n}\cong\mathbb{C}^{n(n-1)/2}$; the compact dual $SO(2n)/\mathrm{U}(n)$ is the manifold of orthogonal complex structures on $\mathbb{R}^{2n}$, the <strong>isotropic Grassmannian</strong>, and the noncompact dual is the same manifold with the opposite complex structure.</li>
 </ul>
-<p><strong>Proof.</strong> In each case the central element $Z \in \mathfrak{z}(\mathfrak{k})$ is exhibited and the adjoint action on $\mathfrak{n}$ is computed; the identification of the domain is the Harish-Chandra embedding of <em>Riemannian Symmetric Spaces and the Involution</em> for the type. The isotropic Grassmannian is the quotient $SO(2n)/U(n)$, whose points are the complex structures on $\mathbb{R}^{2n}$ compatible with the metric; the Grassmannians and the flag manifolds as homogeneous spaces are the subject of <em>Geometry on Linear Spaces</em>, below this Part.</p>
+<p><strong>Proof.</strong> In each case the central element $Z \in \mathfrak{z}(\mathfrak{k})$ is exhibited and the adjoint action on $\mathfrak{n}$ is computed; the identification of the domain is the Harish-Chandra embedding of <em>Riemannian Symmetric Spaces and the Involution</em> for the type. The isotropic Grassmannian is the quotient $SO(2n)/\mathrm{U}(n)$, whose points are the complex structures on $\mathbb{R}^{2n}$ compatible with the metric; the Grassmannians and the flag manifolds as homogeneous spaces are the subject of <em>Geometry on Linear Spaces</em>, below this Part.</p>
 <h2 id="worked-cases">Worked Cases</h2>
-<p><strong>Example (the disc and the ball).</strong> Type A III with $\min(n,m) = 1$ gives the complex hyperbolic spaces: $SU(1,n)/S(U(1)\times U(n))$ is the unit ball of $\mathbb{C}^n$ with the complex structure of $\mathbb{C}^n$ and rank one, the smallest-rank Hermitian symmetric space of the family. The disc $SU(1,1)/U(1)$ is the case $n = 1$, the Poincaré disc with the involution $\theta(g) = JgJ^{-1}$.</p>
-<p><strong>Example (the Siegel upper half space).</strong> Type C I, $Sp(2n,\mathbb{R})/U(n)$, realises the Siegel upper half space $\mathfrak{H}_n = \{Z \in \mathbb{C}^{n\times n} : Z = Z^{t},\ \operatorname{Im} Z > 0\}$, of dimension $n(n+1)$ and rank $n$; the involution is the conjugation by the form matrix $\Omega = \begin{pmatrix}0 & I \\ -I & 0\end{pmatrix}$ and the central element of $U(n)$ acts by the complex structure on the symmetric matrices. The domain is the source of the theory of modular forms of degree $n$, which is arithmetic and lies outside this article.</p>
+<p><strong>Example (the disc and the ball).</strong> Type A III with $\min(n,m) = 1$ gives the complex hyperbolic spaces: $SU(1,n)/S(\mathrm{U}(1)\times \mathrm{U}(n))$ is the unit ball of $\mathbb{C}^n$ with the complex structure of $\mathbb{C}^n$ and rank one, the smallest-rank Hermitian symmetric space of the family. The disc $SU(1,1)/\mathrm{U}(1)$ is the case $n = 1$, the Poincaré disc with the involution $\theta(g) = JgJ^{-1}$.</p>
+<p><strong>Example (the Siegel upper half space).</strong> Type C I, $Sp(2n,\mathbb{R})/\mathrm{U}(n)$, realises the Siegel upper half space $\mathfrak{H}_n = \{Z \in \mathbb{C}^{n\times n} : Z = Z^{t},\ \operatorname{Im} Z > 0\}$, of dimension $n(n+1)$ and rank $n$; the involution is the conjugation by the form matrix $\Omega = \begin{pmatrix}0 & I \\ -I & 0\end{pmatrix}$ and the central element of $\mathrm{U}(n)$ acts by the complex structure on the symmetric matrices. The domain is the source of the theory of modular forms of degree $n$, which is arithmetic and lies outside this article.</p>
 <p><strong>Example (the tube domain).</strong> Type B D I, $SO(2,n)/(SO(2)\times SO(n))$, realises the tube $\{z \in \mathbb{C}^{n} : \operatorname{Im} z \in \Omega\}$ over the Lorentz cone $\Omega = \{x : x_1^2 > x_2^2 + \cdots + x_n^2,\ x_1 > 0\}$ of a form of signature $(1,n-1)$; it has dimension $2n$ and rank two, and its complex structure is the complex structure of $\mathbb{C}^n$. For $n = 2$ the tube is the product of two discs, and for $n = 3$ it is the tube over the cone of positive-definite $2\times 2$ matrices.</p>
-<p><strong>Example (the isotropic Grassmannian).</strong> Type D III, with compact dual $SO(2n)/U(n)$, is the manifold of complex structures $J$ on $\mathbb{R}^{2n}$ with $J^2 = -\mathrm{id}$ and $J \in SO(2n)$; the involution is the conjugation by such a $J$, the isotropy $U(n)$ is the stabiliser of one complex structure, and the rank is $\lfloor n/2\rfloor$. The space is the only classical Hermitian symmetric space whose compact dual is a quotient of the rotation group by the unitary group.</p>
-<p><strong>Example (the exceptional spaces).</strong> Types E III and E VII are the two exceptional Hermitian symmetric spaces, of dimensions $32$ and $54$ and ranks $2$ and $3$, with isotropy groups $Spin(10)\times U(1)$ and $E_6\times U(1)$; they have no classical description as a Grassmannian and their domains are the exceptional bounded symmetric domains. They show that the Hermitian condition is not a property of the classical families alone.</p>
+<p><strong>Example (the isotropic Grassmannian).</strong> Type D III, with compact dual $SO(2n)/\mathrm{U}(n)$, is the manifold of complex structures $J$ on $\mathbb{R}^{2n}$ with $J^2 = -\mathrm{id}$ and $J \in SO(2n)$; the involution is the conjugation by such a $J$, the isotropy $\mathrm{U}(n)$ is the stabiliser of one complex structure, and the rank is $\lfloor n/2\rfloor$. The space is the only classical Hermitian symmetric space whose compact dual is a quotient of the rotation group by the unitary group.</p>
+<p><strong>Example (the exceptional spaces).</strong> Types E III and E VII are the two exceptional Hermitian symmetric spaces, of dimensions $32$ and $54$ and ranks $2$ and $3$, with isotropy groups $Spin(10)\times \mathrm{U}(1)$ and $E_6\times \mathrm{U}(1)$; they have no classical description as a Grassmannian and their domains are the exceptional bounded symmetric domains. They show that the Hermitian condition is not a property of the classical families alone.</p>
 <h2 id="summary">Summary</h2>
-<p>A symmetric space $G/K$ is Hermitian exactly when its Cartan involution is inner, $\theta = \operatorname{Ad}(z)$ for an element $z$ of the centre of the maximal compact subgroup $K$, and then the logarithm $Z \in \mathfrak{z}(\mathfrak{k})$ has $\mathrm{ad}(Z)|_{\mathfrak{n}}$ an invariant complex structure with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{n}$ and $\mathrm{ad}(Z) = 0$ on $\mathfrak{k}$; equivalently the isotropy representation admits an invariant complex structure, equivalently the centre of $\mathfrak{k}$ is one-dimensional. The compact dual shares the involution and the complex structure and reverses the curvature. Cartan's classification of the irreducible Hermitian symmetric spaces has six types — the four infinite families A III $SU(n,m)/S(U(n)\times U(m))$, B D I $SO(2,n)/(SO(2)\times SO(n))$, C I $Sp(2n,\mathbb{R})/U(n)$ and D III $SO^{*}(2n)/U(n)$, and the two exceptional spaces E III and E VII of ranks two and three — with the dimensions and ranks of the table; the reducible cases are products. The complex structure of each type is the isotropy element, and the noncompact types realise the bounded symmetric domains: the matrix unit ball, the Siegel upper half space and the tube over the Lorentz cone. The invariant Kähler metric and the Bergman kernel are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The object classified is the involution on the elements; no adjoint is taken.</p>
+<p>A symmetric space $G/K$ is Hermitian exactly when its Cartan involution is inner, $\theta = \operatorname{Ad}(z)$ for an element $z$ of the centre of the maximal compact subgroup $K$, and then the logarithm $Z \in \mathfrak{z}(\mathfrak{k})$ has $\mathrm{ad}(Z)|_{\mathfrak{n}}$ an invariant complex structure with $\mathrm{ad}(Z)^2 = -\mathrm{id}$ on $\mathfrak{n}$ and $\mathrm{ad}(Z) = 0$ on $\mathfrak{k}$; equivalently the isotropy representation admits an invariant complex structure, equivalently the centre of $\mathfrak{k}$ is one-dimensional. The compact dual shares the involution and the complex structure and reverses the curvature. Cartan's classification of the irreducible Hermitian symmetric spaces has six types — the four infinite families A III $SU(n,m)/S(\mathrm{U}(n)\times \mathrm{U}(m))$, B D I $SO(2,n)/(SO(2)\times SO(n))$, C I $Sp(2n,\mathbb{R})/\mathrm{U}(n)$ and D III $SO^{*}(2n)/\mathrm{U}(n)$, and the two exceptional spaces E III and E VII of ranks two and three — with the dimensions and ranks of the table; the reducible cases are products. The complex structure of each type is the isotropy element, and the noncompact types realise the bounded symmetric domains: the matrix unit ball, the Siegel upper half space and the tube over the Lorentz cone. The invariant Kähler metric and the Bergman kernel are <em>Hermitian Symmetric Spaces and the Bergman Metric</em>, below this Part. The object classified is the involution on the elements; no adjoint is taken.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -200,7 +199,7 @@ $$</p>
 <td>the Siegel upper half space; type C I</td>
 </tr>
 <tr>
-<td>$SO(2n)/U(n)$</td>
+<td>$SO(2n)/\mathrm{U}(n)$</td>
 <td>the isotropic Grassmannian; the compact dual of D III</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -75,11 +74,11 @@
 <h3 id="the-four-momentum-biquaternion">The four-momentum biquaternion</h3>
 <p>The four-momentum of a particle of rest mass $m$ and velocity $\vec v$ is the element of the material sector $\mathbb{M}_-$</p>
 <p>$$
-\tilde{P} \;=\; m\tilde{V} \;=\; \gamma m\left(ic\,e_0 + \vec v\right) \;=\; i\,\frac{E}{c}\,e_0 + \vec p,
+\tilde{P} \;=\; m\tilde{V} \;=\; \gamma m\left(ic\,e_t + \vec v\right) \;=\; i\,\frac{E}{c}\,e_t + \vec p,
 $$</p>
 <p>with $\gamma = (1-\vec v^2/c^2)^{-1/2}$, $E=\gamma mc^2$ the relativistic energy and $\vec p=\gamma m\vec v$ the three-momentum. The scalar part of $\tilde{P}$ is purely imaginary and the vector part is real, which is exactly the defining shape of the material sector; the same holds for the four-velocity $\tilde{V}$. The four-velocity is the four-momentum divided by one number, $m$, and that single number is where the mass enters.</p>
 <h3 id="the-norm-is-the-shell">The norm is the shell</h3>
-<p>Because the biquaternion norm of a four-vector of the material sector is $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + \vec x^2$ for $\tilde{Q}=ict\,e_0+\vec x$, the norm of the four-momentum is</p>
+<p>Because the biquaternion norm of a four-vector of the material sector is $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ for $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the norm of the four-momentum is</p>
 <p>$$
 \langle\tilde{P}\rangle_{\natural} \;=\; -\frac{E^2}{c^2} + \vec p^2 \;=\; -m^2c^2,
 $$</p>
@@ -100,7 +99,7 @@ $$</p>
 <p>What the cone adds to the bare equation $E=c|\vec p|$ is that the equation is not an accident of the units but the statement that the four-momentum is not invertible in the algebra, and that the non-invertibility is the same non-invertibility that the wave operator exhibits.</p>
 <p><strong>Uniqueness of the shell.</strong> Among the level sets of $\langle\cdot\rangle_{\natural}$ on $\mathbb{M}_-$, the null set is the only cone. The set $N = -m^2c^2$ with $m\neq0$ is a two-sheeted hyperboloid, disconnected and with a positive minimum gap from the origin; the set $N=0$ is a cone, and it is the only level set with the apex at the origin and with scaling invariance. So the algebra does not merely admit the massless case; it <strong>singles it out geometrically</strong> as the degenerate level. It singles it out and does not select it, and that gap is the subject of the next section.</p>
 <h3 id="the-propagation-speed-is-math39-and-is-frame-independent">The propagation speed is $c$, and is frame-independent</h3>
-<p>For a four-wavevector $\tilde{K}=i(\omega/c)e_0+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \langle\tilde{K}\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde{K}\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.</p>
+<p>For a four-wavevector $\tilde{K}=i(\omega/c)e_t+\vec k$, the cone article establishes $\Box f(\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})) = \langle\tilde{K}\rangle_{\natural}f''$ for every smooth $f$, so the wave equation holds for every phase exactly when $\langle\tilde{K}\rangle_{\natural}=0$, that is $\omega=c|\vec k|$. That is where the propagation speed comes from, and it is taken as given here.</p>
 <p>What this article isolates is why the same $c$ governs every frame. The rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}$ of unit norm acts on the sector, and the norm is multiplicative, so</p>
 <p>$$
 N\!\left(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\right) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \left|\langle\tilde{\Lambda}\rangle_{\natural}\right|^2\langle\tilde{Q}\rangle_{\natural},
@@ -166,7 +165,7 @@ $$</p>
 </table></div>
 <h2 id="what-the-cone-does-not-derive">What the Cone Does Not Derive</h2>
 <h3 id="mass-is-a-value-not-a-structure">Mass is a value, not a structure</h3>
-<p>Every statement in the previous section is a statement about the <em>shape</em> of the theory: which locus is special, which quantity is invariant, which configurations are forbidden. None of them is a statement about the <em>value</em> of $m$. The mass enters the four-momentum as a single free real multiplicative constant on the four-velocity, $\tilde{P}=m\tilde{V}$, and the algebra treats every value alike. A massive four-momentum is exactly as native to $\mathbb{M}_-$ as a null one: the check above confirmed that $\tilde{P}=i(E/c)e_0+\vec p$ lies in the material sector for every $m$, null or not, with $N=-m^2c^2$ in every case.</p>
+<p>Every statement in the previous section is a statement about the <em>shape</em> of the theory: which locus is special, which quantity is invariant, which configurations are forbidden. None of them is a statement about the <em>value</em> of $m$. The mass enters the four-momentum as a single free real multiplicative constant on the four-velocity, $\tilde{P}=m\tilde{V}$, and the algebra treats every value alike. A massive four-momentum is exactly as native to $\mathbb{M}_-$ as a null one: the check above confirmed that $\tilde{P}=i(E/c)e_t+\vec p$ lies in the material sector for every $m$, null or not, with $N=-m^2c^2$ in every case.</p>
 <p>The cone marks the value $m=0$ and only that value. Distinguishing a value is not supplying it. The cone tells us that if a particle is massless its four-momentum is a zero divisor; it does not tell us that any particle is massless.</p>
 <h3 id="the-algebra-has-no-mass-scale">The algebra has no mass scale</h3>
 <p>There is a structural reason behind the previous paragraph, and it is stronger than a statement about what the cone happens to say. The norm is homogeneous of degree two,</p>
@@ -182,11 +181,11 @@ $$</p>
 <p>A separate input, often blurred with masslessness, is the transversality of the physical modes. The cone says nothing about it, and the reduction itself belongs to <em>The Photon in Biquaternionic Form</em>, which owns both the space in which it happens — the four polarization directions of $\mathbb{M}_-$ with the indefinite metric $\zeta=(-1,+1,+1,+1)$ — and the gauge gap by which it is made. This article records only the status of the reduction for the null element: it is imported, and it is not a consequence of the cone. Masslessness is what makes the removal natural, since it is what makes helicity Lorentz invariant, but natural is not the same as derived.</p>
 <h2 id="the-null-four-momentum-as-the-canonical-zero-divisor">The Null Four-Momentum as the Canonical Zero Divisor</h2>
 <h3 id="the-null-momentum-is-an-idempotent-multiple">The null momentum is an idempotent multiple</h3>
-<p>The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_0+\vec p$ with $\vec u=\vec p/|\vec p|$,</p>
+<p>The null element has a second face, and it is the one that connects the material and informational sectors. For a null four-momentum $\tilde{P}=i(E/c)e_t+\vec p$ with $\vec u=\vec p/|\vec p|$,</p>
 <p>$$
 \tilde{P} \;=\; 2i\,\frac{E}{c}\,\tilde\Pi(-\vec u),
 \qquad
-\tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_0 + i\vec u\right),
+\tilde\Pi(\vec u) \;=\; \tfrac{1}{2}\left(e_t + i\vec u\right),
 $$</p>
 <p>an imaginary multiple of an idempotent of the informational sector. The idempotent satisfies $\tilde\Pi^2=\tilde\Pi$, is Hermitian, and has norm zero, so the null four-momentum is a scalar multiple of a <strong>rank-one projector</strong>.</p>
 <p>This is what makes the identification "the photon's four-momentum is a zero divisor" more than a restatement of $E=c|\vec p|$. The null momentum is, up to the factor $2iE/c$, a <strong>pure state</strong> of the informational sector: the flagpole interpretation of the companion article <em>The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation</em>, where the null direction and the projector are two faces of one object. The photon's lightlike momentum and a rank-one projector are the same element read in two sectors.</p>
@@ -290,7 +289,7 @@ $$</p>
 <li><strong>Not claimed.</strong> No dynamics: the projector describes a momentum, not an equation of motion. No derivation of $m=0$, of any mass scale, or of the choice of the null branch. The speed $c$ is taken from the cone article's $\Box$ computation.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>The four-momentum of a massless particle is $\tilde{P}=i(E/c)e_0+\vec p$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the projector sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.</p>
+<p>The four-momentum of a massless particle is $\tilde{P}=i(E/c)e_t+\vec p$, an element of the material sector whose biquaternion norm is $-m^2c^2$; mass is the value of the invariant, and the massless shell is the level set $N=0$, which is the zero-divisor cone. The cone derives, without further input, that the massless shell is the only level set that is a cone, that the propagation speed is $c$ and is the same in every frame by the multiplicativity of the norm, that a null four-momentum has no rest frame, and that a massless particle moves at $c$ for every momentum. The null four-momentum is moreover a scaled idempotent of the informational sector, so the cone of the material sector is the scaled image of the projector sphere, and the lightlike momentum and a rank-one pure state are one element read in two sectors.</p>
 <p>The cone does not derive masslessness. The mass enters as a single free real scale on the four-velocity, $\tilde{P}=m\tilde{V}$, and the algebra treats every value alike; there is a structural reason, namely that the norm is homogeneous and the cone is scale-invariant, so the algebra contains no preferred scale and cannot manufacture one. The mass term is a term in the dynamics, and the massless and massive cases are the Maxwell and Proca alternatives, equally writable. The cone <strong>marks</strong> the massless case — sharply, uniquely, and non-trivially — and does not <strong>choose</strong> it. The correct statement is a conditional whose antecedent is empirical: if the field is massless, then the cone is its shell and all the derived consequences follow.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -303,7 +302,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
-<td>Biquaternion algebra; basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$</td>
+<td>Biquaternion algebra; basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -314,27 +313,27 @@ $$</p>
 <td>Biquaternion norm</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$</td>
+<td>$\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$</td>
 <td>Material (anti-Hermitian) sector</td>
 </tr>
 <tr>
-<td>$\mathbb{M}_+ = \mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$</td>
+<td>$\mathbb{M}_+ = \mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$</td>
 <td>Informational (Hermitian) sector</td>
 </tr>
 <tr>
-<td>$\tilde{Q}=ict\,e_0+\vec x$</td>
-<td>Material coordinate; $\langle\tilde{Q}\rangle_{\natural}=-c^2t^2+\vec x^2$</td>
+<td>$\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>Material coordinate; $\langle\tilde{Q}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural}=0$</td>
 <td>The light cone; the material part of the zero-divisor set $\mathcal{Z}$</td>
 </tr>
 <tr>
-<td>$\tilde{P}=m\tilde{V}=i\frac{E}{c}e_0+\vec p$</td>
+<td>$\tilde{P}=m\tilde{V}=i\frac{E}{c}e_t+\vec p$</td>
 <td>Four-momentum, in $\mathbb{M}_-$; $E=\gamma mc^2$, $\vec p=\gamma m\vec v$</td>
 </tr>
 <tr>
-<td>$\tilde{V}=\gamma(ic\,e_0+\vec v)$</td>
+<td>$\tilde{V}=\gamma(ic\,e_t+\vec v)$</td>
 <td>Four-velocity, in $\mathbb{M}_-$; $\langle\tilde{V}\rangle_{\natural}=-c^2$</td>
 </tr>
 <tr>
@@ -354,11 +353,11 @@ $$</p>
 <td>Speed from the shell; $v=c$ exactly at $m=0$</td>
 </tr>
 <tr>
-<td>$\tilde{K}=i\frac{\omega}{c}e_0+\vec k$</td>
+<td>$\tilde{K}=i\frac{\omega}{c}e_t+\vec k$</td>
 <td>Four-wavevector; $\langle\tilde{K}\rangle_{\natural}=0\Leftrightarrow\omega=c\lvert\vec k\rvert$</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$</td>
+<td>$\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$</td>
 <td>Lorentz rotor (unit norm)</td>
 </tr>
 <tr>
@@ -366,7 +365,7 @@ $$</p>
 <td>Rotor conjugation; $\langle\cdot\rangle_{\natural}$ invariant, so the cone and $c$ are frame-independent</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\vec u)=\tfrac{1}{2}(e_0+i\vec u)$</td>
+<td>$\tilde\Pi(\vec u)=\tfrac{1}{2}(e_t+i\vec u)$</td>
 <td>Idempotent of $\mathbb{M}_+$; $\tilde\Pi^2=\tilde\Pi$, $\langle\tilde\Pi\rangle_{\natural}=0$</td>
 </tr>
 <tr>

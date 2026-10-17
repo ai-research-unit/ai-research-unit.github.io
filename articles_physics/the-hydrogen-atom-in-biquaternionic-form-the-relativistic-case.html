@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -56,21 +55,21 @@
 <p>$$
 V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{\mathfrak{Z}e^2}{4\pi\epsilon_0},
 $$</p>
-<p>with $\mathfrak{Z}$ the nuclear charge. It is the relativistic completion of the problem treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H = h_0e_0$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $j$.</p>
+<p>with $\mathfrak{Z}$ the nuclear charge. It is the relativistic completion of the problem treated in the companion article <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and the differences are structural rather than quantitative. There the Coulomb Hamiltonian was the central scalar $\tilde H = h_te_t$; the spin was a spectator, the orbital and spin operators occupied complementary slots that commuted, and the level depended on $n$ alone. Here the Hamiltonian is no longer central, the spin is dynamical, and the level depends on $n$ and $j$.</p>
 <p>The article asks what the biquaternion framework contributes to this problem, and the honest answer is stated before the derivation.</p>
 <ul>
 <li><strong>Algebraic, and recomputed here.</strong> The total angular momentum $\tilde J_k = \tilde L_k + \tilde S_k$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $\tilde L_k\tilde S_k$ is a Hermitian element of the informational sector $\mathbb{M}_+$; it commutes with $\tilde J_k$, but not with $\tilde L_k$ or $\tilde S_k$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,j)$ and not by $(n,l)$: the $l$-degeneracy is lifted, and at fixed $n$ and $j$ the two states $l = j\pm\tfrac12$ are degenerate. All of this is checked below.</li>
 <li><strong>Transcribed, not derived.</strong> The exact bound-state energies are the standard Sommerfeld–Dirac spectrum, quoted in full in its place. The transcription reproduces them and predicts no deviation. Its non-relativistic limit and fine structure are worked through in the companion article <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em> and its exercise, which is where the elimination of the small component lives; the exact bound-state solution itself is the standard radial Dirac–Coulomb one, and it is not reproduced anywhere in the corpus. No independent biquaternionic derivation is claimed.</li>
-<li><strong>Gap, left visible.</strong> The corpus's biquaternion Dirac equation carries the <strong>linear</strong>, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, and this mass term passes through a local central phase: the central $U(1)$ (fermion number) is exact for the massive field, and the symmetry the mass breaks is the axial one. The algebra-level electromagnetic coupling is therefore available in the massive case, and its precise form is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra; the Coulomb field is introduced here in the <strong>spinor-module transcription</strong>, where the algebra and the module agree, and the spectrum is transcribed. This is the gap that remains, and it is not closed by notation.</li>
+<li><strong>Gap, left visible.</strong> The corpus's biquaternion Dirac equation carries the <strong>linear</strong>, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, and this mass term passes through a local central phase: the central $\mathrm{U}(1)$ (fermion number) is exact for the massive field, and the symmetry the mass breaks is the axial one. The algebra-level electromagnetic coupling is therefore available in the massive case, and its precise form is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra; the Coulomb field is introduced here in the <strong>spinor-module transcription</strong>, where the algebra and the module agree, and the spectrum is transcribed. This is the gap that remains, and it is not closed by notation.</li>
 <li><strong>Conditional, and input.</strong> The transcription is written for continuous functions, and a numerical realization of it needs a finite basis, which the corpus does not carry. The framework puts one condition on that basis — the small component must be generated from the large by the framework's own operator — and the condition is the non-relativistic relation of the companion exercise read the other way round; with a field present the covariance identity forces the covariant version of the operator and the phase of the basis. The basis sets themselves, and the variational argument that makes the condition necessary, are input.</li>
 </ul>
 <p>The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.</p>
-<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, its quaternion conjugate is $\tilde\nabla^{\natural} = e_0\partial_{ict} - e_k\partial_k$, and $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$. The isomorphism is $\mathsf{M}_2(e_0) = I_2$, $\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, so that $\mathsf{M}_2(ie_k) = \sigma_k$. The idempotents are $\tilde\Pi(\pm\vec u) = \tfrac12(e_0 \pm i\vec u)$. The orbital operators are $\tilde L_k = L_k e_0$ with $L_k = -i\hbar\epsilon_{klm}x_l\partial_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}ie_k$, and $\tilde J_k = \tilde L_k + \tilde S_k$. The large and the small component of the four-component spinor $\psi$ are written $\psi_{\mathrm{large}}$ and $\psi_{\mathrm{small}}$, as in the companion exercise on the non-relativistic limit — the words refer to the elimination of the small component and not to the chiral pair $\tilde\Psi_R$, $\tilde\Psi_L$ of the parent — and a finite basis for the large component is written $\{f_\mu\}$, the basis of the small component being generated from it by the framework's balancing operator. The rest of the notation is inherited from the read-list articles unchanged.</p>
+<p><strong>Conventions.</strong> The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu \neq \nu$; the scalar imaginary $i$ is central with $i^2 = -e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$, its quaternion conjugate is $\tilde\nabla^{\natural} = e_t\partial/\partial Q_t - \vec e_k\partial/\partial Q_k$, and $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$. The isomorphism is $\mathsf{M}_2(e_t) = I_2$, $\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i) = iI_2$, so that $\mathsf{M}_2(i\vec e_k) = \sigma_k$. The idempotents are $\tilde\Pi(\pm\vec u) = \tfrac12(e_t \pm i\vec u)$. The orbital operators are $\tilde L_k = L_k e_t$ with $L_k = -i\hbar\epsilon_{klm}x_l\partial/\partial x_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$, and $\tilde J_k = \tilde L_k + \tilde S_k$. The large and the small component of the four-component spinor $\psi$ are written $\psi_{\mathrm{large}}$ and $\psi_{\mathrm{small}}$, as in the companion exercise on the non-relativistic limit — the words refer to the elimination of the small component and not to the chiral pair $\tilde\Psi_R$, $\tilde\Psi_L$ of the parent — and a finite basis for the large component is written $\{f_\mu\}$, the basis of the small component being generated from it by the framework's balancing operator. The rest of the notation is inherited from the read-list articles unchanged.</p>
 <h2 id="the-diraccoulomb-problem">The Dirac–Coulomb Problem</h2>
 <h3 id="the-potential-in-the-frameworks-notation">The potential in the framework's notation</h3>
 <p>The framework's four-potential is the material-sector object</p>
 <p>$$
-\tilde A = \frac{i\phi}{c}\,e_0 + \vec A \in \mathbb{M}_-,
+\tilde A = \frac{i\phi}{c}\,e_t + \vec A \in \mathbb{M}_-,
 $$</p>
 <p>and a static point nucleus is the special case $\vec A = 0$ with $\phi = \mathfrak{Z}e/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $ϙ$ in it is $ϙ\phi = -\kappa/r$ for the electron. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is <strong>input</strong>: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling</p>
 <p>$$
@@ -78,19 +77,19 @@ $$</p>
 $$</p>
 <p>which enters the spectrum as a parameter.</p>
 <h3 id="the-module-transcription">The module transcription</h3>
-<p>The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde P \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t,\vec x) \in \mathbb{B}\tilde P \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,</p>
+<p>The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde P \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{B}\tilde P \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,</p>
 <p>$$
-i\hbar\,\partial_t\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
+i\hbar\,\partial/\partial t\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot p + \beta mc^2 + V(r)\,\Bigr]\psi,
 \qquad \boldsymbol\alpha^k = \gamma^0\gamma^k, \quad \beta = \gamma^0,
 $$</p>
 <p>with $V(r) = ϙ\phi = -\kappa/r$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation</p>
 <p>$$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*} .
 $$</p>
-<p>The Coulomb term is a <strong>central scalar</strong>, $V(r)e_0 \in \mathbb{C}_{\mathbb{B}}$, so it multiplies the field without ambiguity of order, and in this respect its placement is the same as the non-relativistic potential's.</p>
+<p>The Coulomb term is a <strong>central scalar</strong>, $V(r)e_t \in \mathbb{C}_{\mathbb{B}}$, so it multiplies the field without ambiguity of order, and in this respect its placement is the same as the non-relativistic potential's.</p>
 <p>A structural caveat must accompany this transcription. The matrix $\beta$ is an <strong>odd</strong> element of the Clifford algebra $\mathrm{Cl}_{1,3}$, while $\mathbb{B}$ is isomorphic to the <strong>even</strong> subalgebra $\mathrm{Cl}^+_{1,3}$. The module transcription therefore uses structure that the algebra-level field $\tilde\Psi$ does not contain: $\beta$ has no representative in the even subalgebra. The algebra-level equation carries the same linear mass as the spinor module, so the transcription is not forced by an obstruction at the mass term; the two descriptions agree on the mass, and the module supplies the Clifford-odd structure that the Hamiltonian's Foldy–Wouthuysen reduction needs. The transcription is the one the corpus's electron and solutions articles use, and it is adopted here on that basis, with the caveat recorded rather than hidden.</p>
 <h2 id="the-hamiltonian-leaves-the-scalar-slot">The Hamiltonian Leaves the Scalar Slot</h2>
-<p>In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H = h_0e_0$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this, and the change is algebraic: they occupy the vector slots of $\mathbb{M}_+$.</p>
+<p>In the non-relativistic problem the Hamiltonian is a scalar multiple of the identity, $\tilde H = h_te_t$, and its vanishing vector part is what makes the spin a spectator. The relativistic corrections change this, and the change is algebraic: they occupy the vector slots of $\mathbb{M}_+$.</p>
 <p>At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian</p>
 <p>$$
 H = \frac{\vec\pi^2}{2m} + ϙ\mathsf{M}_2 - \frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B
@@ -105,9 +104,9 @@ $$</p>
 $$</p>
 <p>and in the framework's operators the scalar coupling is</p>
 <p>$$
-\tilde L_k\tilde S_k = \frac{\hbar}{2}\,i\,L_k e_k \in \mathbb{M}_+ .
+\tilde L_k\tilde S_k = \frac{\hbar}{2}\,i\,L_k \vec e_k \in \mathbb{M}_+ .
 $$</p>
-<p>This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore <strong>not central</strong> — a central element lies in the complex line $\mathbb{C}_{\mathbb{B}}$, and $\tilde L_k\tilde S_k$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_0$.</p>
+<p>This is a Hermitian element of the informational sector: its scalar part vanishes and its vector part is purely imaginary. It is therefore <strong>not central</strong> — a central element lies in the complex line $\mathbb{C}_{\mathbb{B}}$, and $\tilde L_k\tilde S_k$ has a nonzero imaginary vector part whenever the orbital motion is non-trivial. The relativistic Coulomb Hamiltonian is not a scalar multiple of $e_t$.</p>
 <p><strong>The spin is no longer a spectator.</strong> The algebraic statement of this is the commutator structure of the spin–orbit operator. It is rotationally invariant,</p>
 <p>$$
 \bigl[\tilde L_k\tilde S_k,\ \tilde J_j\bigr] = 0,
@@ -121,7 +120,7 @@ $$</p>
 <h2 id="total-angular-momentum-and-the-good-quantum-numbers">Total Angular Momentum and the Good Quantum Numbers</h2>
 <p>The <strong>total angular-momentum operator</strong> is the sum of the orbital and spin parts,</p>
 <p>$$
-\tilde J_k = \tilde L_k + \tilde S_k = L_k\,e_0 + \frac{\hbar}{2}\,i e_k ,
+\tilde J_k = \tilde L_k + \tilde S_k = L_k\,e_t + \frac{\hbar}{2}\,i \vec e_k ,
 \qquad
 \mathsf{M}_2(\tilde J_k) = L_k I_2 + \frac{\hbar}{2}\sigma_k .
 $$</p>
@@ -139,7 +138,7 @@ $$</p>
 n, \quad j, \quad m_j, \qquad j = \tfrac12, \tfrac32, \dots, n-\tfrac12, \qquad m_j = -j,\dots,+j ,
 $$</p>
 <p>together with the parity. The orbital quantum number $l$ is not among them: at fixed $n$ and $j$ the states $l = j-\tfrac12$ and $l = j+\tfrac12$ are degenerate, and they are the two members of a single relativistic level. This is the precise form of the statement that the $l$-degeneracy is lifted relativistically.</p>
-<p><strong>What is algebraic and what is not.</strong> The framework's contribution to this section is the spin factor: the $\tilde S_k = \tfrac{\hbar}{2}ie_k$ in the vector slots, the commutator $[\tilde S_i,\tilde S_j] = i\hbar\epsilon_{ijk}\tilde S_k$, and the Hermitian placement of $\tilde J_k$ in $\mathbb{M}_+$. The orbital factor is carried by the position dependence of the field, not by the finite-dimensional algebra, and the Clebsch–Gordan coefficients are the standard ones. As the companion article records, the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ realises as modules only $j = 0$ and $j = \tfrac12$; the orbital representation is external structure on which the algebra's spin acts. The coupling of the two, which is what makes this problem relativistic, is therefore only partly algebraic.</p>
+<p><strong>What is algebraic and what is not.</strong> The framework's contribution to this section is the spin factor: the $\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ in the vector slots, the commutator $[\tilde S_i,\tilde S_j] = i\hbar\epsilon_{ijk}\tilde S_k$, and the Hermitian placement of $\tilde J_k$ in $\mathbb{M}_+$. The orbital factor is carried by the position dependence of the field, not by the finite-dimensional algebra, and the Clebsch–Gordan coefficients are the standard ones. As the companion article records, the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ realises as modules only $j = 0$ and $j = \tfrac12$; the orbital representation is external structure on which the algebra's spin acts. The coupling of the two, which is what makes this problem relativistic, is therefore only partly algebraic.</p>
 <h2 id="the-exact-spectrum">The Exact Spectrum</h2>
 <h3 id="the-sommerfelddirac-formula">The Sommerfeld–Dirac formula</h3>
 <p>The companion non-relativistic article already quotes the following formula in its closing bridge to this case. It is restated here because the present article is where its labels, its domain, its degeneracy bookkeeping, and its derivation status are developed; the formula itself is inherited from that article and from the standard solution, not rederived.</p>
@@ -188,21 +187,21 @@ $$</p>
 <p>$$
 D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$</p>
-<p>the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed right-hand side is $m\lambda\tilde\Psi_L$, because the central phase commutes with the mass. The two sides transform identically, so the massive coupled equation is <strong>form-invariant</strong> under the local phase and holds in every gauge when it holds in one. <strong>Every local central phase is allowed, and the central $U(1)$ (fermion number) is exact for the massive field.</strong></p>
+<p>the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed right-hand side is $m\lambda\tilde\Psi_L$, because the central phase commutes with the mass. The two sides transform identically, so the massive coupled equation is <strong>form-invariant</strong> under the local phase and holds in every gauge when it holds in one. <strong>Every local central phase is allowed, and the central $\mathrm{U}(1)$ (fermion number) is exact for the massive field.</strong></p>
 <p>The object the phase cannot pass through is not the mass but the algebra's real structure: a coupling built on $\flat = -{}^{*}$, which is antilinear, transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$, so a Majorana-type mass $m\tilde\Psi^\flat$ would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and be form-invariant only for $\lambda = \pm1$. That is a statement about the real structure, not about the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality. What the mass breaks is the <strong>axial</strong> symmetry,</p>
 <p>$$
 \partial_\mu j_5^\mu = 2im\,\bar\psi\gamma_5\psi ,
 $$</p>
 <p>which vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).</p>
-<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $p \to p - ϙ\vec A$ and $i\hbar\partial_t \to i\hbar\partial_t - ϙ\mathsf{M}_2$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
+<p>The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $p \to p - ϙ\vec A$ and $i\hbar\partial/\partial t \to i\hbar\partial/\partial t - ϙ\mathsf{M}_2$ — is set out in the companion article <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.</p>
 <h2 id="the-finite-basis-and-the-balance-of-the-two-components">The Finite Basis and the Balance of the Two Components</h2>
 <p>The transcription above is written for continuous fields, and a numerical realization of it needs an object the corpus does not carry: a <strong>finite basis</strong>. The four-component spinor is expanded in a finite set of functions, the matrix problem is assembled, and the levels are read from it. This section states the one condition the framework puts on the choice of basis, says which part of the condition is the framework's and which is input, and records what the condition does not give.</p>
 <h3 id="the-two-expansions">The two expansions</h3>
 <p>In the Dirac basis the four-component spinor $\psi$ of the preceding section splits into an <strong>upper</strong> (large) and a <strong>lower</strong> (small) component, as in the companion exercise on the non-relativistic limit; the two components are written $\psi_{\mathrm{large}}$ and $\psi_{\mathrm{small}}$, coupled by</p>
 <p>$$
-i\hbar\,\partial_t\psi_{\mathrm{large}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{small}}+V\psi_{\mathrm{large}},
+i\hbar\,\partial/\partial t\psi_{\mathrm{large}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{small}}+V\psi_{\mathrm{large}},
 \qquad
-i\hbar\,\partial_t\psi_{\mathrm{small}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{large}}-2mc^2\psi_{\mathrm{small}}+V\psi_{\mathrm{small}} ,
+i\hbar\,\partial/\partial t\psi_{\mathrm{small}} = c\,\boldsymbol\sigma\cdot\vec\pi\,\psi_{\mathrm{large}}-2mc^2\psi_{\mathrm{small}}+V\psi_{\mathrm{small}} ,
 $$</p>
 <p>with $V(r) = ϙ\phi = -\kappa/r$ and the kinetic momentum $\vec\pi = p-ϙ\vec A$. The Coulomb problem has $\vec A = 0$, so that $\vec\pi = p$ there. A finite basis chooses an expansion for each of the two components — functions $\{f_\mu\}$ for the large component, and a set of its own for the small — and the two choices are independent unless a further condition is imposed.</p>
 <p>The condition is read off the corpus's own elimination. Neglecting, in the second equation, the terms that are small compared with $2mc^2$ is what produces the Pauli Hamiltonian; it also produces the relation</p>
@@ -215,12 +214,12 @@ $$</p>
 <p>$$
 \frac{\hbar}{2mc}\,\mathsf{M}_2\!\left(\mathrm{Vect}\,\tilde\nabla\right) = \frac{\boldsymbol\sigma\cdot p}{2mc},
 $$</p>
-<p>because $\mathsf{M}_2(e_k) = -i\sigma_k$ carries $\mathrm{Vect}\,\tilde\nabla = e_k\partial_k$ to $-i\boldsymbol\sigma\cdot\nabla$. The identity is exact. Applied to the large functions, the operator produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two components of</p>
+<p>because $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ carries $\mathrm{Vect}\,\tilde\nabla = \vec e_k\partial/\partial Q_k$ to $-i\boldsymbol\sigma\cdot\nabla$. The identity is exact. Applied to the large functions, the operator produces the small ones: the condition is that the small expansion be the image of the large one under it, every large function $f_\mu$ contributing the two components of</p>
 <p>$$
 \tfrac{\hbar}{2mc}\,\mathsf{M}_2\!\left(\mathrm{Vect}\,\tilde\nabla\right)f_\mu .
 $$</p>
 <p>The condition is called <strong>kinetic balance</strong> when the small set is any set that represents those functions, and <strong>restricted kinetic balance</strong> when it is taken to be exactly them (Stanton and Havriliak 1984; Dyall and Fægri 2007). In the framework's words it is the non-relativistic relation of the companion exercise read as a condition on the basis rather than as a limit.</p>
-<p>The framework's contribution is one identification and no more. The operator is $\mathsf{M}_2$ of the vector part of $\tilde\nabla$, so the balance is a statement in the algebra's own slots; that the operator is spin-type is the corpus's placement of the spin in the vector slots, since $\mathsf{M}_2(ie_k) = \sigma_k$; and that it is first order in the gradient is why the small functions carry one derivative more than the large. Nothing else in the condition is algebraic: the basis sets, and the variational argument that makes the condition necessary, belong to the literature quoted.</p>
+<p>The framework's contribution is one identification and no more. The operator is $\mathsf{M}_2$ of the vector part of $\tilde\nabla$, so the balance is a statement in the algebra's own slots; that the operator is spin-type is the corpus's placement of the spin in the vector slots, since $\mathsf{M}_2(i\vec e_k) = \sigma_k$; and that it is first order in the gradient is why the small functions carry one derivative more than the large. Nothing else in the condition is algebraic: the basis sets, and the variational argument that makes the condition necessary, belong to the literature quoted.</p>
 <h3 id="the-field-and-the-phase-of-the-basis">The field, and the phase of the basis</h3>
 <p>With a field present the gradient in the balancing operator cannot be the ordinary one, and the reason is the covariance identity this article has already used. The minimal-coupling article replaces $\tilde\nabla$ by the covariant derivative</p>
 <p>$$
@@ -253,7 +252,7 @@ $$</p>
 <tr>
 <td>Total angular momentum $\tilde J_k$, its algebra, $\tilde J^{\,2} \to \hbar^2 j(j+1)$</td>
 <td>Algebraic (inherited, rechecked)</td>
-<td>$\tilde S_k = \tfrac{\hbar}{2}ie_k$ in the vector slots; quaternion product</td>
+<td>$\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$ in the vector slots; quaternion product</td>
 </tr>
 <tr>
 <td>Spin–orbit operator $\tilde L_k\tilde S_k$ and its eigenvalues</td>
@@ -333,7 +332,7 @@ $$</p>
 <li><strong>Empirical content.</strong> The spectrum predicts nothing beyond standard relativistic quantum physics for hydrogen. Whether any framework-level effect distinguishes the two remains the standing open question.</li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde J_k = \tilde L_k + \tilde S_k$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde J_i,\tilde J_j] = i\hbar\epsilon_{ijk}\tilde J_k$ with $\tilde J^{\,2} \to \hbar^2 j(j+1)$. The spin–orbit operator $\tilde L_k\tilde S_k = \tfrac{\hbar}{2}i L_ke_k$ is a Hermitian element of $\mathbb{M}_+$; it commutes with $\tilde J_j$ but not with $\tilde L_j$ or $\tilde S_j$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,j,m_j)$, the $l$-degeneracy is lifted, and the residual degeneracy joins $l = j\mp\tfrac12$ at fixed $j$, with the total count $2n^2$ unchanged.</p>
+<p>The relativistic hydrogen atom in biquaternionic form is the Dirac–Coulomb problem, and what the framework contributes to it is algebraic. The total angular momentum $\tilde J_k = \tilde L_k + \tilde S_k$ has its orbital part in the scalar slot and its spin part in the vector slots, and it closes on $[\tilde J_i,\tilde J_j] = i\hbar\epsilon_{ijk}\tilde J_k$ with $\tilde J^{\,2} \to \hbar^2 j(j+1)$. The spin–orbit operator $\tilde L_k\tilde S_k = \tfrac{\hbar}{2}i L_k\vec e_k$ is a Hermitian element of $\mathbb{M}_+$; it commutes with $\tilde J_j$ but not with $\tilde L_j$ or $\tilde S_j$, which is the algebraic content of "the spin is no longer a spectator". The relativistic level is labelled by $(n,j,m_j)$, the $l$-degeneracy is lifted, and the residual degeneracy joins $l = j\mp\tfrac12$ at fixed $j$, with the total count $2n^2$ unchanged.</p>
 <p>The exact bound-state energies are the Sommerfeld–Dirac formula</p>
 <p>$$
 E_{nj} = mc^2\left[1 + \frac{(\mathfrak{Z}\alpha)^2}{\bigl(n-\delta_j\bigr)^2}\right]^{-1/2},
@@ -347,7 +346,7 @@ E_{nj} = mc^2 - \frac{mc^2(\mathfrak{Z}\alpha)^2}{2n^2}
 $$</p>
 <p>returns the non-relativistic $E_n$ at leading order and the fine structure at the next, the latter verified by exact rational arithmetic against the kinetic, spin–orbit, and Darwin terms of the companion exercise. The spectrum is the standard one and no deviation is predicted.</p>
 <p>A numerical realization of the transcription needs one further object that the corpus does not carry, a <strong>finite basis</strong>: functions $\{f_\mu\}$ for the large component of the spinor, the functions of the small component being generated from them. The framework puts one condition on the choice. Its own non-relativistic relation, $\psi_{\mathrm{small}} = \frac{\boldsymbol\sigma\cdot\vec\pi}{2mc}\psi_{\mathrm{large}}+O(c^{-3})$, says that the small component is not independent of the large, and read as a condition on the basis it requires the small functions to be generated by the balancing operator $\frac{\hbar}{2mc}\mathsf{M}_2(\mathrm{Vect}\,\tilde\nabla) = \frac{\boldsymbol\sigma\cdot p}{2mc}$; this is the restricted kinetic balance of relativistic quantum chemistry, and without it a finite basis fails variationally. With a field present the covariant derivative replaces the gradient in that operator and the basis functions themselves carry the central phase $\lambda$, both forced by the covariance identity $D'(\lambda\tilde\Psi) = \lambda D\tilde\Psi$ with $\tilde A' = \tilde A-\tilde\nabla\Gamma$; these are the restricted magnetic balance and the London atomic orbitals of the same literature. The condition is on the workspace and not on the algebra, and it supplies no radial solution.</p>
-<p>One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equation carries the linear, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, through which a local central phase passes; the massive equation therefore admits the algebra-level minimal coupling, and the central $U(1)$ (fermion number) is exact for the massive field, with the axial symmetry broken instead. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra: the algebra-level form of the coupling is set out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, and the spectrum above is obtained in the spinor-module transcription, where the algebra and the module agree. The relativistic hydrogen atom is therefore, in this framework, an algebraically structured <strong>transcription</strong> of the standard solution — with the spin algebra, the sector placement, the good quantum numbers, and the level bookkeeping genuinely algebraic, and the derivation from the framework's own field equation an open problem.</p>
+<p>One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equation carries the linear, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$, through which a local central phase passes; the massive equation therefore admits the algebra-level minimal coupling, and the central $\mathrm{U}(1)$ (fermion number) is exact for the massive field, with the axial symmetry broken instead. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra: the algebra-level form of the coupling is set out in <em>The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism</em>, and the spectrum above is obtained in the spinor-module transcription, where the algebra and the module agree. The relativistic hydrogen atom is therefore, in this framework, an algebraically structured <strong>transcription</strong> of the standard solution — with the spin algebra, the sector placement, the good quantum numbers, and the level bookkeeping genuinely algebraic, and the derivation from the framework's own field equation an open problem.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -362,12 +361,12 @@ $$</p>
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$, $e_je_k = \epsilon_{jkl}e_l$ $(j\neq k)$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$</td>
 </tr>
 <tr>
 <td>$i$</td>
-<td>Central scalar imaginary, $i^2 = -e_0$</td>
+<td>Central scalar imaginary, $i^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
@@ -382,15 +381,15 @@ $$</p>
 <td>Real quaternion subspace</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$</td>
+<td>$\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_t, ie_t\}$</td>
 <td>Centre of the algebra</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(e_k) = -i\sigma_k$, $\mathsf{M}_2(ie_k) = \sigma_k$</td>
+<td>$\mathsf{M}_2(\vec e_k) = -i\sigma_k$, $\mathsf{M}_2(i\vec e_k) = \sigma_k$</td>
 <td>Isomorphism with $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$</td>
+<td>$\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$</td>
 <td>Biquaternionic gradient (Dirac operator)</td>
 </tr>
 <tr>
@@ -402,7 +401,7 @@ $$</p>
 <td>Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term)</td>
 </tr>
 <tr>
-<td>$\tilde A = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$</td>
+<td>$\tilde A = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$</td>
 <td>Electromagnetic four-potential</td>
 </tr>
 <tr>
@@ -418,15 +417,15 @@ $$</p>
 <td>Fine-structure constant</td>
 </tr>
 <tr>
-<td>$L_k = -i\hbar\epsilon_{klm}x_l\partial_m$</td>
+<td>$L_k = -i\hbar\epsilon_{klm}x_l\partial/\partial x_m$</td>
 <td>Orbital angular momentum</td>
 </tr>
 <tr>
-<td>$\tilde L_k = L_k e_0$</td>
+<td>$\tilde L_k = L_k e_t$</td>
 <td>Orbital operators, scalar slot, in $\mathbb{M}_+$</td>
 </tr>
 <tr>
-<td>$\tilde S_k = \tfrac{\hbar}{2}ie_k$</td>
+<td>$\tilde S_k = \tfrac{\hbar}{2}i\vec e_k$</td>
 <td>Spin operators, vector slots, in $\mathbb{M}_+$</td>
 </tr>
 <tr>

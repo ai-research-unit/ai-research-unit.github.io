@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -138,13 +137,13 @@ $$</p>
 <p>extended linearly. Coassociativity and the counit axioms are immediate from the group axioms; the antipode identity is $g^{-1}g = 1$. Thusdescribes a Hopf algebra, and the group-like elements are exactly the elements of $G$. The algebra is cocommutative, and it is commutative exactly when $G$ is abelian; when $G$ is abelian and $k$ contains the $\lvert G\rvert$-th roots of unity, the dual Hopf algebra is the group algebra of the dual group $\widehat G$, by Pontryagin duality for finite abelian groups.</p>
 <p><strong>Example (the universal enveloping algebra).</strong> Let $\mathrm{G}$ be a Lie algebra over $k$, with bracket $[\cdot,\cdot]$, and let</p>
 <p>$$
-U(\mathrm{G}) = T(\mathrm{G})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
+\mathrm{U}(\mathrm{G}) = T(\mathrm{G})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
 $$</p>
-<p>be its universal enveloping algebra, as in <em>Quotients of the Tensor Algebra</em>; the systematic theory of $U(\mathrm{G})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $U(\mathrm{G})$ is a Hopf algebra with</p>
+<p>be its universal enveloping algebra, as in <em>Quotients of the Tensor Algebra</em>; the systematic theory of $\mathrm{U}(\mathrm{G})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $\mathrm{U}(\mathrm{G})$ is a Hopf algebra with</p>
 <p>$$
 \Delta(x) = x\otimes 1 + 1\otimes x, \qquad \varepsilon(x) = 0, \qquad S(x) = -x \qquad (x \in \mathrm{G}),
 $$</p>
-<p>extended so that $\Delta$ and $\varepsilon$ are algebra homomorphisms and $S$ is an algebra anti-homomorphism. The primitive elements are exactly $\mathrm{G}$, which is the statement that the Lie algebra can be recovered from its enveloping algebra. The Hopf algebra $U(\mathrm{G})$ is cocommutative, and it is commutative exactly when $\mathrm{G}$ is abelian, in which case $U(\mathrm{G}) = \operatorname{Sym}(\mathrm{G})$ as a Hopf algebra.</p>
+<p>extended so that $\Delta$ and $\varepsilon$ are algebra homomorphisms and $S$ is an algebra anti-homomorphism. The primitive elements are exactly $\mathrm{G}$, which is the statement that the Lie algebra can be recovered from its enveloping algebra. The Hopf algebra $\mathrm{U}(\mathrm{G})$ is cocommutative, and it is commutative exactly when $\mathrm{G}$ is abelian, in which case $\mathrm{U}(\mathrm{G}) = \operatorname{Sym}(\mathrm{G})$ as a Hopf algebra.</p>
 <p><strong>Example (functions on a finite group).</strong> Let $G$ be finite and let $k^G = \operatorname{Hom}_k(k[G],k)$ be the dual of the group algebra, with basis the coordinate functions $\delta_g$, $\delta_g(h) = \delta_{gh}$. The product in the dual is pointwise, $(fg)(h) = (f\otimes g)(\Delta h) = f(h)g(h)$, so $\delta_g\delta_h = \delta_{gh}\,\delta_g$ where $\delta_{gh}$ is the Kronecker symbol; the algebra is therefore the product $\prod_{g\in G}k$ of $\lvert G\rvert$ copies of $k$, and it has $\lvert G\rvert$ orthogonal idempotents $\delta_g$. The Hopf structure is</p>
 <p>$$
 \Delta(\delta_g) = \sum_{h\ell = g}\delta_h\otimes \delta_\ell, \qquad \varepsilon(\delta_g) = \delta_{g,1}, \qquad S(\delta_g) = \delta_{g^{-1}} .
@@ -217,7 +216,7 @@ $$</p>
 <p><strong>Boundary note.</strong> The word <em>quantum group</em> also names the locally compact quantum groups, which are objects of operator algebra theory defined by a comultiplication on a von Neumann algebra together with left and right Haar weights, and the compact quantum groups defined by Woronowicz with a dense $C^*$-subalgebra and a Haar state. Those theories require a topology, a norm and a completion, and they belong to a later Part; the Hopf algebras of this article and the algebraic quantum groups of the next are the algebraic objects, and no topological statement is made here.</p>
 <h2 id="summary">Summary</h2>
 <p>A <strong>coalgebra</strong> is the formal dual of an algebra: a space with a coassociative comultiplication $\Delta$ and a counit $\varepsilon$ satisfying $(\varepsilon\otimes\mathrm{id})\Delta = \mathrm{id} = (\mathrm{id}\otimes\varepsilon)\Delta$. A <strong>bialgebra</strong> is an algebra and a coalgebra whose comultiplication and counit are algebra homomorphisms, and the <strong>convolution product</strong> $(f*g)(h) = f(h_{(1)})g(h_{(2)})$ makes $\operatorname{Hom}_k(C,A)$ an algebra with identity $\eta\varepsilon$. A <strong>Hopf algebra</strong> is a bialgebra whose identity map is convolution-invertible; the inverse is the <strong>antipode</strong> $S$, characterised by $S(h_{(1)})h_{(2)} = \varepsilon(h)1 = h_{(1)}S(h_{(2)})$. The antipode is unique, it is an algebra and coalgebra anti-homomorphism, and $\Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)})$; the <strong>group-like</strong> elements $\Delta(g) = g\otimes g$ form a group, and the <strong>primitive</strong> elements $\Delta(x) = x\otimes 1 + 1\otimes x$ form a Lie algebra.</p>
-<p>The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $U(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the <strong>Larson–Sweedler theorem</strong>; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic <strong>Maschke theorem</strong> and specialises to the classical one for $k[G]$; and it is a <strong>Frobenius algebra</strong> in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The <strong>fundamental theorem of Hopf modules</strong> identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.</p>
+<p>The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $\mathrm{U}(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the <strong>Larson–Sweedler theorem</strong>; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic <strong>Maschke theorem</strong> and specialises to the classical one for $k[G]$; and it is a <strong>Frobenius algebra</strong> in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The <strong>fundamental theorem of Hopf modules</strong> identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -272,7 +271,7 @@ $$</p>
 <td>group algebra, $S(g)=g^{-1}$</td>
 </tr>
 <tr>
-<td>$U(\mathrm{G})$</td>
+<td>$\mathrm{U}(\mathrm{G})$</td>
 <td>enveloping algebra, $S(x)=-x$</td>
 </tr>
 <tr>

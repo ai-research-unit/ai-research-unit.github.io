@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -66,25 +65,25 @@ $$</p>
 $$</p>
 <p>and it is fixed by its values on the basis, the rest following by $\mathbb{R}$-linearity. The generators are assigned the matrices</p>
 <p>$$
-\mathsf{M}_2(1) = I, \quad \mathsf{M}_2(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
-\mathsf{M}_2(e_2) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\mathsf{M}_2(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
+\mathsf{M}_2(1) = I, \quad \mathsf{M}_2(\vec e_x) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_2(\vec e_y) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_2(\vec e_z) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
 $$</p>
 <p>so that on a general element</p>
 <p>$$
-\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}.
+\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = \begin{pmatrix} q_t - q_z & q_y - q_x \\ q_x + q_y & q_t + q_z \end{pmatrix}.
 $$</p>
 <p>The defining representation is the model in which every statement of this article is computed.</p>
 <p><strong>The check.</strong> The assignment is the right one because the four matrices multiply as the four generators do. Squaring the vector images,</p>
 <p>$$
-\mathsf{M}_2(e_1)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\mathsf{M}_2(1), \qquad
-\mathsf{M}_2(e_2)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(1),
+\mathsf{M}_2(\vec e_x)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\mathsf{M}_2(1), \qquad
+\mathsf{M}_2(\vec e_y)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(1),
 $$</p>
-<p>and the same gives $\mathsf{M}_2(e_3)^2 = \mathsf{M}_2(1)$; so $e_1^2 = -1$, $e_2^2 = e_3^2 = 1$ are reproduced. Multiplying the first two,</p>
+<p>and the same gives $\mathsf{M}_2(\vec e_z)^2 = \mathsf{M}_2(1)$; so $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = 1$ are reproduced. Multiplying the first two,</p>
 <p>$$
-\mathsf{M}_2(e_1)\mathsf{M}_2(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(e_3),
+\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(\vec e_z),
 $$</p>
-<p>reproducing $e_1e_2 = e_3$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.</p>
+<p>reproducing $\vec e_x\vec e_y = \vec e_z$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.</p>
 <h2 id="existence">Existence</h2>
 <p><strong>Theorem (Existence).</strong> The split-quaternion algebra has a faithful real matrix representation of degree $2$, namely $\mathsf{M}_2$, and therefore</p>
 <p>$$
@@ -115,9 +114,9 @@ $$</p>
 <p>The determinant of the matrix model is the split-quaternion norm, a quadratic form of signature $(2,2)$, and the trace is twice the scalar part; the restriction of the trace to the vector subspace vanishes, so $\mathsf{M}_2(V)$ is the space of traceless matrices.</p>
 <p><strong>Proof.</strong> The determinant computation is (<em>Split-Quaternion Norm and Invertibility</em>, §<em>The Split-Quaternion Norm</em>). For the trace,</p>
 <p>$$
-\operatorname{tr}\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = (q_0 - q_3) + (q_0 + q_3) = 2q_0 = 2\operatorname{Sc}(\tilde q).
+\operatorname{tr}\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = (q_t - q_z) + (q_t + q_z) = 2q_t = 2\operatorname{Sc}(\tilde q).
 $$</p>
-<p>The vanishing of the trace on $V$ is the case $q_0 = 0$.</p>
+<p>The vanishing of the trace on $V$ is the case $q_t = 0$.</p>
 <p><strong>Corollary (Formulas in the Model).</strong> For every $\tilde q$,</p>
 <p>$$
 \det \mathsf{M}_2(\tilde{q}^{\natural}) = \det \mathsf{M}_2(\tilde q), \qquad \mathsf{M}_2(\tilde{q}^{\natural}) = \operatorname{adj}\mathsf{M}_2(\tilde q),
@@ -147,17 +146,17 @@ $$</p>
 <td>the scalar matrices</td>
 </tr>
 <tr>
-<td>$V = \operatorname{span}\{e_1,e_2,e_3\}$</td>
+<td>$V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$</td>
 <td>$\mathrm{SL}_2(\mathbb{R})$</td>
 <td>the traceless matrices</td>
 </tr>
 <tr>
-<td>$\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$</td>
+<td>$\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$</td>
 <td>$\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$</td>
 <td>the symmetric matrices with equal diagonal</td>
 </tr>
 <tr>
-<td>$\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$</td>
+<td>$\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$</td>
 <td>$\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$</td>
 <td>the diagonal matrices</td>
 </tr>
@@ -188,7 +187,7 @@ $$</p>
 \tilde q \cdot v = \mathsf{M}_2(\tilde q) v, \qquad \tilde q \in \mathbb{H}_{\mathrm{s}}, \quad v \in \mathbb{R}^2 .
 $$</p>
 <p><strong>Theorem (Irreducibility).</strong> The defining module is simple: it has no nonzero proper submodule. Consequently the defining representation is irreducible, and it is the unique irreducible representation of the algebra up to equivalence.</p>
-<p><strong>Proof.</strong> The submodules of the defining module are the $\mathsf{M}_2(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\mathsf{M}_2$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 e_1$ lies in $W$, so $e_1 \in W$, and then $E_{12}e_1 = e_2 \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $e_2 \in W$ and then $e_1 \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in <em>Split-Quaternion Element Representations</em>.</p>
+<p><strong>Proof.</strong> The submodules of the defining module are the $\mathsf{M}_2(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\mathsf{M}_2$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 \vec e_x$ lies in $W$, so $\vec e_x \in W$, and then $E_{12}\vec e_x = \vec e_y \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $\vec e_y \in W$ and then $\vec e_x \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in <em>Split-Quaternion Element Representations</em>.</p>
 <p>The defining module is the concrete reason the matrix model is the right one: an eight-dimensional algebra cannot be a matrix algebra of this size, but a four-dimensional simple algebra is exactly a full matrix algebra over $\mathbb{R}$, and the module of the model is the module that the algebra realises.</p>
 <h2 id="comparison-with-the-quaternion-case-and-with-math149">Comparison with the Quaternion Case and with $\mathbb{H}_{\mathbb{D}}$</h2>
 <h3 id="the-quaternion-case">The Quaternion Case</h3>
@@ -204,7 +203,7 @@ $$</p>
 <p><strong>Proof.</strong> Such a homomorphism would embed a real vector space of dimension $8$ into one of dimension $4$, which is impossible for an injective linear map.</p>
 <p>The algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond its dimension, which is fixed by the notation table. Its faithful linear representations have degree at least $3$, since $3^2 = 9 \geq 8$, and the description of them belongs to the later category.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.</p>
+<p>The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = \begin{pmatrix} q_t-q_z & q_y-q_x \\ q_x+q_y & q_t+q_z\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.</p>
 <p>The determinant of the model is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.</p>
 <p>The quaternion algebra has no faithful real degree-two representation, because an isomorphism with $M_2(\mathbb{R})$ would contradict its being a division algebra, although its complexification is $M_2(\mathbb{C})$; the eight-dimensional algebra has none either, by the dimension count alone, and its representations belong to the later category.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -224,12 +223,12 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2$</td>
-<td>the defining representation, $\tilde q \mapsto \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$</td>
+<td>the defining representation, $\tilde q \mapsto \begin{pmatrix} q_t-q_z & q_y-q_x \\ q_x+q_y & q_t+q_z\end{pmatrix}$</td>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
 <td>$I, J, K, D$</td>
-<td>the images of $1, e_1, e_2, e_3$</td>
+<td>the images of $1, \vec e_x, \vec e_y, \vec e_z$</td>
 <td>this article</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -58,39 +57,39 @@
 <h3 id="points-and-distance">Points and Distance</h3>
 <p>A complex number is written</p>
 <p>$$
-A = a + i a', \qquad a, a' \in \mathbb{R},
+Q = q + i q', \qquad q, q' \in \mathbb{R},
 $$</p>
-<p>where $i^2 = -1$. The real number $a$ is the <strong>real part</strong>, and $a'$ is the <strong>imaginary part</strong>. We write $a = \operatorname{Re} A$ and $a' = \operatorname{Im} A$.</p>
-<p>The <strong>modulus</strong> of $A$ is</p>
+<p>where $i^2 = -1$. The real number $q$ is the <strong>real part</strong>, and $q'$ is the <strong>imaginary part</strong>. We write $q = \operatorname{Re} Q$ and $q' = \operatorname{Im} Q$.</p>
+<p>The <strong>modulus</strong> of $Q$ is</p>
 <p>$$
-|A| = \sqrt{a^2 + a'^2},
+|Q| = \sqrt{q^2 + q'^2},
 $$</p>
-<p>and the <strong>distance</strong> between two complex numbers $A$ and $B$ is</p>
+<p>and the <strong>distance</strong> between two complex numbers $Q$ and $Q_1$ is</p>
 <p>$$
-d(A, B) = |A - B|.
+d(Q, Q_1) = |Q - Q_1|.
 $$</p>
 <p>This makes $\mathbb{C}$ a metric space isometric to $\mathbb{R}^2$. The modulus satisfies</p>
 <p>$$
-|A B| = |A| |B|, \qquad |A + B| \leq |A| + |B|, \qquad |\operatorname{Re} A| \leq |A|, \qquad |\operatorname{Im} A| \leq |A|.
+|Q Q_1| = |Q| |Q_1|, \qquad |Q + Q_1| \leq |Q| + |Q_1|, \qquad |\operatorname{Re} Q| \leq |Q|, \qquad |\operatorname{Im} Q| \leq |Q|.
 $$</p>
 <p>The last two inequalities are used constantly: they say that convergence of complex numbers is equivalent to convergence of real and imaginary parts.</p>
 <h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
-<p>The <strong>open ball</strong> of radius $r > 0$ centred at $A_0$ is</p>
+<p>The <strong>open ball</strong> of radius $r > 0$ centred at $Q_0$ is</p>
 <p>$$
-B(A_0, r) = \{A \in \mathbb{C} : |A - A_0| < r\}.
+B(Q_0, r) = \{Q \in \mathbb{C} : |Q - Q_0| < r\}.
 $$</p>
 <p>It is an open disk. The <strong>closed ball</strong> is</p>
 <p>$$
-\overline{B}(A_0, r) = \{A \in \mathbb{C} : |A - A_0| \leq r\}.
+\overline{B}(Q_0, r) = \{Q \in \mathbb{C} : |Q - Q_0| \leq r\}.
 $$</p>
-<p>A <strong>neighborhood</strong> of $A_0$ is any set containing some $B(A_0, r)$.</p>
+<p>A <strong>neighborhood</strong> of $Q_0$ is any set containing some $B(Q_0, r)$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $U \subseteq \mathbb{C}$ is <strong>open</strong> if for every $A_0 \in U$ there exists $r > 0$ with $B(A_0, r) \subseteq U$.</p>
+<p>A set $\Omega \subseteq \mathbb{C}$ is <strong>open</strong> if for every $Q_0 \in \Omega$ there exists $r > 0$ with $B(Q_0, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{C}$ is <strong>closed</strong> if its complement $\mathbb{C} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually, arbitrary intersections of closed sets are closed. Finite unions of closed sets are closed.</p>
 <p><strong>Theorem.</strong> A set $F$ is closed iff every convergent sequence in $F$ has its limit in $F$.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
-<p>A set $U \subseteq \mathbb{C}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{C}$, connectedness and path-connectedness are equivalent.</p>
+<p>A set $\Omega \subseteq \mathbb{C}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{C}$, connectedness and path-connectedness are equivalent.</p>
 <p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{C}$. Domains are the natural setting for complex analysis, because differentiability on a domain imposes strong global constraints.</p>
 <h3 id="compactness">Compactness</h3>
 <p>A set $K \subseteq \mathbb{C}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
@@ -98,75 +97,75 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous complex-valued function on a compact set is bounded and attains its maximum and minimum modulus.</p>
 <h2 id="limits-and-continuity">Limits and Continuity</h2>
 <h3 id="limits-of-sequences">Limits of Sequences</h3>
-<p>A sequence $(A_n)$ of complex numbers <strong>converges</strong> to $L \in \mathbb{C}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ of complex numbers <strong>converges</strong> to $L \in \mathbb{C}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-n \geq N \implies |A_n - L| < \epsilon.
+n \geq N \implies |Q_n - L| < \epsilon.
 $$</p>
-<p>We write $A_n \to L$ or $\lim_{n \to \infty} A_n = L$.</p>
-<p><strong>Uniqueness.</strong> If $A_n \to L$ and $A_n \to L'$, then $L = L'$.</p>
-<p><strong>Componentwise convergence.</strong> Write $A_n = a_n + i a'_n$ and $L = a + i b$. Then</p>
+<p>We write $Q_n \to L$ or $\lim_{n \to \infty} Q_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $Q_n \to L$ and $Q_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $Q_n = q_n + i q'_n$ and $L = a + i b$. Then</p>
 <p>$$
-A_n \to L \iff a_n \to a \text{ and } a'_n \to b.
+Q_n \to L \iff q_n \to a \text{ and } q'_n \to b.
 $$</p>
 <p>This is the reason complex convergence is no harder than real convergence: it is two real convergences in parallel.</p>
 <p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
-<p><strong>Algebra of limits.</strong> If $A_n \to L$ and $B_n \to M$, then</p>
+<p><strong>Algebra of limits.</strong> If $Q_n \to L$ and $Q_{1,n} \to M$, then</p>
 <p>$$
-A_n + B_n \to L + M, \qquad A_n B_n \to L M, \qquad \frac{A_n}{B_n} \to \frac{L}{M} \text{ if } M \neq 0.
+Q_n + Q_{1,n} \to L + M, \qquad Q_n Q_{1,n} \to L M, \qquad \frac{Q_n}{Q_{1,n}} \to \frac{L}{M} \text{ if } M \neq 0.
 $$</p>
 <h3 id="cauchy-sequences">Cauchy Sequences</h3>
-<p>A sequence $(A_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>A sequence $(Q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
 <p>$$
-m, n \geq N \implies |A_m - A_n| < \epsilon.
+m, n \geq N \implies |Q_m - Q_n| < \epsilon.
 $$</p>
 <p><strong>Theorem.</strong> In $\mathbb{C}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{C}$ as a metric space. It follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
 <h3 id="limits-of-functions">Limits of Functions</h3>
-<p>Let $f : D \to \mathbb{C}$ with $D \subseteq \mathbb{C}$, and let $A_0$ be a limit point of $D$. We say</p>
+<p>Let $f : D \to \mathbb{C}$ with $D \subseteq \mathbb{C}$, and let $Q_0$ be a limit point of $D$. We say</p>
 <p>$$
-\lim_{A \to A_0} f(A) = L
+\lim_{Q \to Q_0} f(Q) = L
 $$</p>
 <p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A \in D, \; 0 < |A - A_0| < \delta \implies |f(A) - L| < \epsilon.
+Q \in D, \; 0 < |Q - Q_0| < \delta \implies |f(Q) - L| < \epsilon.
 $$</p>
 <p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
-<p><strong>Sequential criterion.</strong> $\lim_{A \to A_0} f(A) = L$ iff for every sequence $(A_n)$ in $D \setminus \{A_0\}$ with $A_n \to A_0$, we have $f(A_n) \to L$.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{Q \to Q_0} f(Q) = L$ iff for every sequence $(Q_n)$ in $D \setminus \{Q_0\}$ with $Q_n \to Q_0$, we have $f(Q_n) \to L$.</p>
 <p><strong>Algebra of limits.</strong> Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.</p>
 <h3 id="continuity">Continuity</h3>
-<p>A function $f : D \to \mathbb{C}$ is <strong>continuous at</strong> $A_0 \in D$ if $\lim_{A \to A_0} f(A) = f(A_0)$ when $A_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>A function $f : D \to \mathbb{C}$ is <strong>continuous at</strong> $Q_0 \in D$ if $\lim_{Q \to Q_0} f(Q) = f(Q_0)$ when $Q_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A \in D, \; |A - A_0| < \delta \implies |f(A) - f(A_0)| < \epsilon.
+Q \in D, \; |Q - Q_0| < \delta \implies |f(Q) - f(Q_0)| < \epsilon.
 $$</p>
 <p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
-<p><strong>Theorem.</strong> $f$ is continuous at $A_0$ iff for every sequence $(A_n)$ in $D$ with $A_n \to A_0$, we have $f(A_n) \to f(A_0)$.</p>
+<p><strong>Theorem.</strong> $f$ is continuous at $Q_0$ iff for every sequence $(Q_n)$ in $D$ with $Q_n \to Q_0$, we have $f(Q_n) \to f(Q_0)$.</p>
 <p><strong>Theorem.</strong> Sums, products, and quotients (where defined) of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
 <p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
-<p><strong>Componentwise continuity.</strong> Write $f(A) = u(a, a') + i v(a, a')$. Then $f$ is continuous at $A_0 = a_0 + i a'_0$ iff $u$ and $v$ are continuous at $(a_0, a'_0)$. This reduces complex continuity to real continuity of two functions of two variables.</p>
+<p><strong>Componentwise continuity.</strong> Write $f(Q) = u(q, q') + i v(q, q')$. Then $f$ is continuous at $Q_0 = q_0 + i q'_0$ iff $u$ and $v$ are continuous at $(q_0, q'_0)$. This reduces complex continuity to real continuity of two functions of two variables.</p>
 <h3 id="uniform-continuity">Uniform Continuity</h3>
 <p>A function $f : D \to \mathbb{C}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
 <p>$$
-A, B \in D, \; |A - B| < \delta \implies |f(A) - f(B)| < \epsilon.
+Q, Q_1 \in D, \; |Q - Q_1| < \delta \implies |f(Q) - f(Q_1)| < \epsilon.
 $$</p>
 <p>The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="complex-differentiability">Complex Differentiability</h2>
 <h3 id="the-derivative">The Derivative</h3>
-<p>Let $f : U \to \mathbb{C}$ with $U$ open, and let $A_0 \in U$. The <strong>derivative</strong> of $f$ at $A_0$ is</p>
+<p>Let $f : \Omega \to \mathbb{C}$ with $\Omega$ open, and let $Q_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $Q_0$ is</p>
 <p>$$
-f'(A_0) = \lim_{h \to 0} \frac{f(A_0 + h) - f(A_0)}{h},
+f'(Q_0) = \lim_{h \to 0} \frac{f(Q_0 + h) - f(Q_0)}{h},
 $$</p>
-<p>provided the limit exists. If it does, $f$ is <strong>complex differentiable</strong> at $A_0$, or <strong>holomorphic</strong> at $A_0$.</p>
+<p>provided the limit exists. If it does, $f$ is <strong>complex differentiable</strong> at $Q_0$, or <strong>holomorphic</strong> at $Q_0$.</p>
 <p>The limit is taken in the complex plane, so $h$ can approach $0$ from any direction. This is a much stronger condition than real differentiability: the difference quotient must tend to the same limit along every path.</p>
 <p><strong>Theorem.</strong> Holomorphic implies continuous. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
-<p>Write $f(A) = u(a, a') + i v(a, a')$, where $A = a + i a'$ and $u, v : U \to \mathbb{R}$.</p>
-<p><strong>Theorem.</strong> $f$ is holomorphic at $A_0 = a_0 + i a'_0$ iff $u$ and $v$ are real differentiable at $(a_0, a'_0)$ and satisfy the <strong>Cauchy–Riemann equations</strong></p>
+<p>Write $f(Q) = u(q, q') + i v(q, q')$, where $Q = q + i q'$ and $u, v : \Omega \to \mathbb{R}$.</p>
+<p><strong>Theorem.</strong> $f$ is holomorphic at $Q_0 = q_0 + i q'_0$ iff $u$ and $v$ are real differentiable at $(q_0, q'_0)$ and satisfy the <strong>Cauchy–Riemann equations</strong></p>
 <p>$$
-\frac{\partial u}{\partial a} = \frac{\partial v}{\partial a'}, \qquad \frac{\partial u}{\partial a'} = -\frac{\partial v}{\partial a}.
+\frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = -\frac{\partial v}{\partial q}.
 $$</p>
 <p><strong>Proof.</strong> Write $h = h_1 + i h_2$. The difference quotient is</p>
 <p>$$
-\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(u_a h_1 + u_{a'} h_2) + i (v_a h_1 + v_{a'} h_2)}{h_1 + i h_2} + o(1).
+\frac{f(Q_0 + h) - f(Q_0)}{h} = \frac{(u_q h_1 + u_{q'} h_2) + i (v_q h_1 + v_{q'} h_2)}{h_1 + i h_2} + o(1).
 $$</p>
 <p>For the limit to exist independently of the direction of $h$, the numerator must be a complex multiple of $h$. This forces the Cauchy–Riemann equations.</p>
 <p><strong>Corollary.</strong> If $f$ is holomorphic, then $u$ and $v$ are harmonic:</p>
@@ -177,145 +176,145 @@ $$</p>
 <h3 id="the-wirtinger-derivatives">The Wirtinger Derivatives</h3>
 <p>Define the <strong>Wirtinger derivatives</strong></p>
 <p>$$
-\frac{\partial}{\partial A} = \frac{1}{2}\left( \frac{\partial}{\partial a} - i \frac{\partial}{\partial a'} \right), \qquad \frac{\partial}{\partial \bar{A}} = \frac{1}{2}\left( \frac{\partial}{\partial a} + i \frac{\partial}{\partial a'} \right).
+\frac{\partial}{\partial Q} = \frac{1}{2}\left( \frac{\partial}{\partial q} - i \frac{\partial}{\partial q'} \right), \qquad \frac{\partial}{\partial \bar{Q}} = \frac{1}{2}\left( \frac{\partial}{\partial q} + i \frac{\partial}{\partial q'} \right).
 $$</p>
-<p><strong>Theorem.</strong> $f$ is holomorphic iff $f$ is real differentiable and $\partial f / \partial \bar{A} = 0$. In that case,</p>
+<p><strong>Theorem.</strong> $f$ is holomorphic iff $f$ is real differentiable and $\partial f / \partial \bar{Q} = 0$. In that case,</p>
 <p>$$
-f'(A) = \frac{\partial f}{\partial A}.
+f'(Q) = \frac{\partial f}{\partial Q}.
 $$</p>
-<p>The condition $\partial f / \partial \bar{A} = 0$ is the Cauchy–Riemann equations in compact form.</p>
+<p>The condition $\partial f / \partial \bar{Q} = 0$ is the Cauchy–Riemann equations in compact form.</p>
 <h3 id="rules-of-differentiation">Rules of Differentiation</h3>
 <p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
 <p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
 <p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.</p>
-<p><strong>Chain rule.</strong> $(f \circ g)'(A) = f'(g(A)) g'(A)$.</p>
-<p><strong>Inverse function rule.</strong> If $f$ is holomorphic at $A_0$ with $f'(A_0) \neq 0$ and $f^{-1}$ is defined near $f(A_0)$, then</p>
+<p><strong>Chain rule.</strong> $(f \circ g)'(Q) = f'(g(Q)) g'(Q)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$ and $f^{-1}$ is defined near $f(Q_0)$, then</p>
 <p>$$
-(f^{-1})'(f(A_0)) = \frac{1}{f'(A_0)}.
+(f^{-1})'(f(Q_0)) = \frac{1}{f'(Q_0)}.
 $$</p>
 <h2 id="conformal-maps">Conformal Maps</h2>
 <h3 id="definition">Definition</h3>
-<p>A map $f : U \to \mathbb{C}$ is <strong>conformal</strong> at $A_0$ if it preserves angles between curves through $A_0$. In particular, if $f$ is holomorphic at $A_0$ with $f'(A_0) \neq 0$, then $f$ is conformal at $A_0$.</p>
-<p><strong>Theorem.</strong> If $f$ is holomorphic at $A_0$ with $f'(A_0) \neq 0$, then $f$ is conformal at $A_0$, and the local behavior of $f$ near $A_0$ is multiplication by $f'(A_0)$, i.e., a rotation by $\arg f'(A_0)$ and a scaling by $|f'(A_0)|$.</p>
-<p><strong>Proof.</strong> Write $f(A) - f(A_0) = f'(A_0)(A - A_0) + o(|A - A_0|)$. The linear term is multiplication by $f'(A_0)$, which is a rotation and a scaling.</p>
+<p>A map $f : \Omega \to \mathbb{C}$ is <strong>conformal</strong> at $Q_0$ if it preserves angles between curves through $Q_0$. In particular, if $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$, then $f$ is conformal at $Q_0$.</p>
+<p><strong>Theorem.</strong> If $f$ is holomorphic at $Q_0$ with $f'(Q_0) \neq 0$, then $f$ is conformal at $Q_0$, and the local behavior of $f$ near $Q_0$ is multiplication by $f'(Q_0)$, i.e., a rotation by $\arg f'(Q_0)$ and a scaling by $|f'(Q_0)|$.</p>
+<p><strong>Proof.</strong> Write $f(Q) - f(Q_0) = f'(Q_0)(Q - Q_0) + o(|Q - Q_0|)$. The linear term is multiplication by $f'(Q_0)$, which is a rotation and a scaling.</p>
 <h3 id="mobius-transformations">Möbius Transformations</h3>
 <p>A <strong>Möbius transformation</strong> is a map of the form</p>
 <p>$$
-f(A) = \frac{aA + b}{cA + d}, \qquad ad - bc \neq 0.
+f(Q) = \frac{aQ + b}{cQ + d}, \qquad ad - bc \neq 0.
 $$</p>
-<p>It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ when $c \neq 0$, and entire when $c = 0$; it is conformal wherever $f'(A) \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.</p>
+<p>It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ when $c \neq 0$, and entire when $c = 0$; it is conformal wherever $f'(Q) \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.</p>
 <h3 id="the-riemann-mapping-theorem">The Riemann Mapping Theorem</h3>
-<p><strong>Theorem (Riemann Mapping).</strong> Let $U \subsetneq \mathbb{C}$ be a simply connected domain. Then there exists a biholomorphic map $f : U \to B(0, 1)$.</p>
+<p><strong>Theorem (Riemann Mapping).</strong> Let $\Omega \subsetneq \mathbb{C}$ be a simply connected domain. Then there exists a biholomorphic map $f : \Omega \to B(0, 1)$.</p>
 <p>The map is unique up to composition with a Möbius transformation of the disk.</p>
 <h2 id="integration">Integration</h2>
 <h3 id="contour-integrals">Contour Integrals</h3>
 <p>Let $\gamma : [a, b] \to \mathbb{C}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
 <p>$$
-\int_\gamma f(A) \, dA = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+\int_\gamma f(Q) \, dQ = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
 $$</p>
 <p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
 <p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
 <p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
-<p><strong>Estimation.</strong> If $|f(A)| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p><strong>Estimation.</strong> If $|f(Q)| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
 <p>$$
-\left| \int_\gamma f(A) \, dA \right| \leq M L.
+\left| \int_\gamma f(Q) \, dQ \right| \leq M L.
 $$</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
-<p><strong>Theorem (Cauchy–Goursat).</strong> If $f$ is holomorphic on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then</p>
+<p><strong>Theorem (Cauchy–Goursat).</strong> If $f$ is holomorphic on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
 <p>$$
-\oint_\gamma f(A) \, dA = 0.
+\oint_\gamma f(Q) \, dQ = 0.
 $$</p>
 <p><strong>Proof.</strong> For a triangle, subdivide repeatedly and use the fact that the integral over the small triangles is bounded by the area times the supremum of $|f'|$. For a general contour, approximate by polygons.</p>
 <p><strong>Corollary.</strong> On a simply connected domain, the integral of a holomorphic function is path-independent. The function</p>
 <p>$$
-F(A) = \int_{A_0}^A f(B) \, dB
+F(Q) = \int_{Q_0}^Q f(Q_1) \, dQ_1
 $$</p>
 <p>is well-defined, holomorphic, and satisfies $F' = f$.</p>
 <h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
-<p><strong>Theorem (Cauchy Integral Formula).</strong> Let $f$ be holomorphic on a domain containing the closed disk $\overline{B}(A_0, r)$. Then for every $A$ in the open disk,</p>
+<p><strong>Theorem (Cauchy Integral Formula).</strong> Let $f$ be holomorphic on a domain containing the closed disk $\overline{B}(Q_0, r)$. Then for every $Q$ in the open disk,</p>
 <p>$$
-f(A) = \frac{1}{2\pi i} \oint_{|B - A_0| = r} \frac{f(B)}{B - A} \, dB.
+f(Q) = \frac{1}{2\pi i} \oint_{|Q_1 - Q_0| = r} \frac{f(Q_1)}{Q_1 - Q} \, dQ_1.
 $$</p>
-<p><strong>Proof.</strong> Apply the Cauchy–Goursat theorem to the function $g(B) = (f(B) - f(A))/(B - A)$ on the punctured disk, then let the radius of the small circle around $A$ tend to zero.</p>
+<p><strong>Proof.</strong> Apply the Cauchy-Goursat theorem to the function $g(Q_1) = (f(Q_1) - f(Q))/(Q_1 - Q)$ on the punctured disk, then let the radius of the small circle around $Q$ tend to zero.</p>
 <p><strong>Corollary (derivatives).</strong> Under the same hypotheses, $f$ is infinitely differentiable, and</p>
 <p>$$
-f^{(n)}(A) = \frac{n!}{2\pi i} \oint_{|B - A_0| = r} \frac{f(B)}{(B - A)^{n+1}} \, dB.
+f^{(n)}(Q) = \frac{n!}{2\pi i} \oint_{|Q_1 - Q_0| = r} \frac{f(Q_1)}{(Q_1 - Q)^{n+1}} \, dQ_1.
 $$</p>
-<p><strong>Corollary (Cauchy estimates).</strong> If $|f| \leq M$ on $|B - A_0| = r$, then</p>
+<p><strong>Corollary (Cauchy estimates).</strong> If $|f| \leq M$ on $|Q_1 - Q_0| = r$, then</p>
 <p>$$
-|f^{(n)}(A_0)| \leq \frac{n! M}{r^n}.
+|f^{(n)}(Q_0)| \leq \frac{n! M}{r^n}.
 $$</p>
 <h3 id="liouvilles-theorem">Liouville's Theorem</h3>
 <p><strong>Theorem (Liouville).</strong> Every bounded entire function is constant.</p>
-<p><strong>Proof.</strong> Apply the Cauchy estimates to $f'$ on a circle of radius $r$ around $A_0$. Since $f$ is bounded by $M$, we have $|f'(A_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $f'(A_0) = 0$. Since $A_0$ is arbitrary, $f' = 0$ everywhere, so $f$ is constant.</p>
+<p><strong>Proof.</strong> Apply the Cauchy estimates to $f'$ on a circle of radius $r$ around $Q_0$. Since $f$ is bounded by $M$, we have $|f'(Q_0)| \leq M/r$ for every $r > 0$. Let $r \to \infty$ to get $f'(Q_0) = 0$. Since $Q_0$ is arbitrary, $f' = 0$ everywhere, so $f$ is constant.</p>
 <p><strong>Corollary (Fundamental Theorem of Algebra).</strong> Every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.</p>
-<p><strong>Proof.</strong> If $p$ has no root, then $1/p$ is entire and bounded (since $|p(A)| \to \infty$ as $|A| \to \infty$), hence constant by Liouville. Contradiction.</p>
+<p><strong>Proof.</strong> If $p$ has no root, then $1/p$ is entire and bounded (since $|p(Q)| \to \infty$ as $|Q| \to \infty$), hence constant by Liouville. Contradiction.</p>
 <h3 id="moreras-theorem">Morera's Theorem</h3>
-<p><strong>Theorem (Morera).</strong> If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is holomorphic on $U$.</p>
-<p><strong>Proof.</strong> Define $F(A) = \int_{A_0}^A f(B) \, dB$. The hypothesis makes $F$ well-defined, and $F' = f$. Since $F$ is holomorphic, $F$ is infinitely differentiable, so $f$ is holomorphic.</p>
+<p><strong>Theorem (Morera).</strong> If $f$ is continuous on a domain $\Omega$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $\Omega$, then $f$ is holomorphic on $\Omega$.</p>
+<p><strong>Proof.</strong> Define $F(Q) = \int_{Q_0}^Q f(Q_1) \, dQ_1$. The hypothesis makes $F$ well-defined, and $F' = f$. Since $F$ is holomorphic, $F$ is infinitely differentiable, so $f$ is holomorphic.</p>
 <h2 id="series-representations">Series Representations</h2>
 <h3 id="power-series">Power Series</h3>
-<p>A <strong>power series</strong> centred at $A_0$ is</p>
+<p>A <strong>power series</strong> centred at $Q_0$ is</p>
 <p>$$
-\sum_{n=0}^\infty c_n (A - A_0)^n, \qquad c_n \in \mathbb{C}.
+\sum_{n=0}^\infty c_n (Q - Q_0)^n, \qquad c_n \in \mathbb{C}.
 $$</p>
 <p>The <strong>radius of convergence</strong> is</p>
 <p>$$
 R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
 $$</p>
 <p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
-<p><strong>Theorem.</strong> The series converges absolutely for $|A - A_0| < R$ and diverges for $|A - A_0| > R$. On $|A - A_0| < R$ it converges uniformly on compact subsets.</p>
-<p><strong>Theorem.</strong> A power series is holomorphic on $|A - A_0| < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|Q - Q_0| < R$ and diverges for $|Q - Q_0| > R$. On $|Q - Q_0| < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is holomorphic on $|Q - Q_0| < R$, and its derivative is obtained by term-by-term differentiation:</p>
 <p>$$
-\frac{d}{dA} \sum_{n=0}^\infty c_n (A - A_0)^n = \sum_{n=1}^\infty n c_n (A - A_0)^{n-1}.
+\frac{d}{dQ} \sum_{n=0}^\infty c_n (Q - Q_0)^n = \sum_{n=1}^\infty n c_n (Q - Q_0)^{n-1}.
 $$</p>
 <p>The differentiated series has the same radius of convergence.</p>
 <h3 id="taylor-series">Taylor Series</h3>
-<p><strong>Theorem (Taylor).</strong> If $f$ is holomorphic on a domain containing the closed disk $\overline{B}(A_0, r)$, then $f$ has a power series expansion</p>
+<p><strong>Theorem (Taylor).</strong> If $f$ is holomorphic on a domain containing the closed disk $\overline{B}(Q_0, r)$, then $f$ has a power series expansion</p>
 <p>$$
-f(A) = \sum_{n=0}^\infty \frac{f^{(n)}(A_0)}{n!} (A - A_0)^n
+f(Q) = \sum_{n=0}^\infty \frac{f^{(n)}(Q_0)}{n!} (Q - Q_0)^n
 $$</p>
-<p>valid for $|A - A_0| < r$.</p>
-<p><strong>Proof.</strong> Use the Cauchy integral formula and expand $1/(B - A)$ as a geometric series in $(A - A_0)/(B - A_0)$.</p>
+<p>valid for $|Q - Q_0| < r$.</p>
+<p><strong>Proof.</strong> Use the Cauchy integral formula and expand $1/(Q_1 - Q)$ as a geometric series in $(Q - Q_0)/(Q_1 - Q_0)$.</p>
 <p><strong>Corollary.</strong> A holomorphic function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
-<p><strong>Corollary (identity theorem).</strong> If two holomorphic functions on a domain $U$ agree on a set with an accumulation point in $U$, they agree on all of $U$.</p>
+<p><strong>Corollary (identity theorem).</strong> If two holomorphic functions on a domain $\Omega$ agree on a set with an accumulation point in $\Omega$, they agree on all of $\Omega$.</p>
 <h3 id="laurent-series">Laurent Series</h3>
-<p><strong>Theorem (Laurent).</strong> If $f$ is holomorphic on an annulus $r < |A - A_0| < R$, then $f$ has a unique expansion</p>
+<p><strong>Theorem (Laurent).</strong> If $f$ is holomorphic on an annulus $r < |Q - Q_0| < R$, then $f$ has a unique expansion</p>
 <p>$$
-f(A) = \sum_{n=-\infty}^\infty c_n (A - A_0)^n
+f(Q) = \sum_{n=-\infty}^\infty c_n (Q - Q_0)^n
 $$</p>
 <p>valid on the annulus, with</p>
 <p>$$
-c_n = \frac{1}{2\pi i} \oint_{|B - A_0| = \rho} \frac{f(B)}{(B - A_0)^{n+1}} \, dB, \qquad r < \rho < R.
+c_n = \frac{1}{2\pi i} \oint_{|Q_1 - Q_0| = \rho} \frac{f(Q_1)}{(Q_1 - Q_0)^{n+1}} \, dQ_1, \qquad r < \rho < R.
 $$</p>
 <p><strong>Proof.</strong> Apply the Cauchy integral formula on the annulus and expand the kernel in two geometric series, one for the inner boundary and one for the outer boundary.</p>
 <h2 id="singularities">Singularities</h2>
 <h3 id="classification">Classification</h3>
-<p>Let $f$ be holomorphic on a punctured disk $0 < |A - A_0| < R$.</p>
-<p><strong>Removable singularity.</strong> $A_0$ is removable if $f$ extends to a holomorphic function on $|A - A_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.</p>
-<p><strong>Pole.</strong> $A_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.</p>
-<p><strong>Essential singularity.</strong> $A_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.</p>
-<p><strong>Theorem (Riemann).</strong> $A_0$ is removable iff $f$ is bounded near $A_0$.</p>
-<p><strong>Theorem (Casorati–Weierstrass).</strong> If $A_0$ is an essential singularity, then $f$ takes values arbitrarily close to every complex number in every neighborhood of $A_0$.</p>
-<p><strong>Theorem (Picard).</strong> If $A_0$ is an essential singularity, then $f$ takes every complex value, with at most one exception, in every punctured neighborhood of $A_0$.</p>
+<p>Let $f$ be holomorphic on a punctured disk $0 < |Q - Q_0| < R$.</p>
+<p><strong>Removable singularity.</strong> $Q_0$ is removable if $f$ extends to a holomorphic function on $|Q - Q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.</p>
+<p><strong>Pole.</strong> $Q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.</p>
+<p><strong>Essential singularity.</strong> $Q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.</p>
+<p><strong>Theorem (Riemann).</strong> $Q_0$ is removable iff $f$ is bounded near $Q_0$.</p>
+<p><strong>Theorem (Casorati–Weierstrass).</strong> If $Q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every complex number in every neighborhood of $Q_0$.</p>
+<p><strong>Theorem (Picard).</strong> If $Q_0$ is an essential singularity, then $f$ takes every complex value, with at most one exception, in every punctured neighborhood of $Q_0$.</p>
 <h3 id="residues">Residues</h3>
-<p>The <strong>residue</strong> of $f$ at an isolated singularity $A_0$ is the coefficient $c_{-1}$ in the Laurent expansion:</p>
+<p>The <strong>residue</strong> of $f$ at an isolated singularity $Q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:</p>
 <p>$$
-\operatorname{Res}(f, A_0) = c_{-1} = \frac{1}{2\pi i} \oint_{|A - A_0| = \rho} f(A) \, dA.
+\operatorname{Res}(f, Q_0) = c_{-1} = \frac{1}{2\pi i} \oint_{|Q - Q_0| = \rho} f(Q) \, dQ.
 $$</p>
-<p><strong>Theorem (Residue Theorem).</strong> Let $f$ be holomorphic on a simply connected domain except for isolated singularities $A_1, \dots, A_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $A_k$ and winds once around each. Then</p>
+<p><strong>Theorem (Residue Theorem).</strong> Let $f$ be holomorphic on a simply connected domain except for isolated singularities $Q_1, \dots, Q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $Q_k$ and winds once around each. Then</p>
 <p>$$
-\oint_\gamma f(A) \, dA = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, A_k).
+\oint_\gamma f(Q) \, dQ = 2\pi i \sum_{k=1}^n \operatorname{Res}(f, Q_k).
 $$</p>
 <p><strong>Proof.</strong> Apply the Cauchy–Goursat theorem to the domain with small disks removed around each singularity, then use the definition of the residue.</p>
 <h3 id="computation-of-residues">Computation of Residues</h3>
-<p><strong>Simple pole.</strong> If $f(A) = g(A)/h(A)$ with $g(A_0) \neq 0$, $h(A_0) = 0$, and $h'(A_0) \neq 0$, then</p>
+<p><strong>Simple pole.</strong> If $f(Q) = g(Q)/h(Q)$ with $g(Q_0) \neq 0$, $h(Q_0) = 0$, and $h'(Q_0) \neq 0$, then</p>
 <p>$$
-\operatorname{Res}(f, A_0) = \frac{g(A_0)}{h'(A_0)}.
+\operatorname{Res}(f, Q_0) = \frac{g(Q_0)}{h'(Q_0)}.
 $$</p>
-<p><strong>Pole of order $m$.</strong> If $f$ has a pole of order $m$ at $A_0$, then</p>
+<p><strong>Pole of order $m$.</strong> If $f$ has a pole of order $m$ at $Q_0$, then</p>
 <p>$$
-\operatorname{Res}(f, A_0) = \frac{1}{(m-1)!} \lim_{A \to A_0} \frac{d^{m-1}}{dA^{m-1}} \left[ (A - A_0)^m f(A) \right].
+\operatorname{Res}(f, Q_0) = \frac{1}{(m-1)!} \lim_{Q \to Q_0} \frac{d^{m-1}}{dQ^{m-1}} \left[ (Q - Q_0)^m f(Q) \right].
 $$</p>
 <h2 id="applications-of-the-residue-theorem">Applications of the Residue Theorem</h2>
 <h3 id="evaluation-of-real-integrals">Evaluation of Real Integrals</h3>
@@ -323,7 +322,7 @@ $$</p>
 <p>$$
 \int_0^{2\pi} R(\cos\theta, \sin\theta) \, d\theta,
 $$</p>
-<p>substitute $A = \exp(i\theta)$, so that $\cos\theta = (A + A^{-1})/2$, $\sin\theta = (A - A^{-1})/(2i)$, and $d\theta = dA/(iA)$. The integral becomes a contour integral over the unit circle, evaluated by residues.</p>
+<p>substitute $Q = \exp(i\theta)$, so that $\cos\theta = (Q + Q^{-1})/2$, $\sin\theta = (Q - Q^{-1})/(2i)$, and $d\theta = dQ/(iQ)$. The integral becomes a contour integral over the unit circle, evaluated by residues.</p>
 <p><strong>Integrals over the real line.</strong> For an integral of the form</p>
 <p>$$
 \int_{-\infty}^\infty f(a) \, da,
@@ -335,20 +334,20 @@ $$</p>
 $$</p>
 <p>where $f$ is a rational function decaying at infinity with no poles on the real axis, use the same contour as above, with <strong>Jordan's lemma</strong> controlling the contribution from the semicircle.</p>
 <h3 id="the-argument-principle">The Argument Principle</h3>
-<p><strong>Theorem (Argument Principle).</strong> Let $f$ be meromorphic on a simply connected domain with zeros $A_1, \dots, A_m$ and poles $p_1, \dots, p_n$ (counted with multiplicity). Let $\gamma$ be a closed contour that winds once around each and does not pass through any. Then</p>
+<p><strong>Theorem (Argument Principle).</strong> Let $f$ be meromorphic on a simply connected domain with zeros $Q_1, \dots, Q_m$ and poles $p_1, \dots, p_n$ (counted with multiplicity). Let $\gamma$ be a closed contour that winds once around each and does not pass through any. Then</p>
 <p>$$
-\frac{1}{2\pi i} \oint_\gamma \frac{f'(A)}{f(A)} \, dA = \sum_{k=1}^m \operatorname{ord}(f, A_k) - \sum_{k=1}^n \operatorname{ord}(f, p_k),
+\frac{1}{2\pi i} \oint_\gamma \frac{f'(Q)}{f(Q)} \, dQ = \sum_{k=1}^m \operatorname{ord}(f, Q_k) - \sum_{k=1}^n \operatorname{ord}(f, p_k),
 $$</p>
-<p>where $\operatorname{ord}(f, A_k)$ is the order of the zero and $\operatorname{ord}(f, p_k)$ is the order of the pole.</p>
+<p>where $\operatorname{ord}(f, Q_k)$ is the order of the zero and $\operatorname{ord}(f, p_k)$ is the order of the pole.</p>
 <p><strong>Interpretation.</strong> The integral counts the winding number of $f(\gamma)$ around the origin, which equals the number of zeros minus the number of poles enclosed by $\gamma$.</p>
 <h3 id="rouches-theorem">Rouché's Theorem</h3>
-<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a simply connected domain, and let $\gamma$ be a closed contour such that $|g(A)| < |f(A)|$ on $\gamma$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
+<p><strong>Theorem (Rouché).</strong> Let $f$ and $g$ be holomorphic on a simply connected domain, and let $\gamma$ be a closed contour such that $|g(Q)| < |f(Q)|$ on $\gamma$. Then $f$ and $f + g$ have the same number of zeros inside $\gamma$, counted with multiplicity.</p>
 <p><strong>Proof.</strong> Apply the argument principle to $f + tg$ for $t \in [0, 1]$ and note that the number of zeros is a continuous integer-valued function of $t$.</p>
 <p><strong>Corollary (Fundamental Theorem of Algebra, again).</strong> Every polynomial of degree $n \geq 1$ has exactly $n$ roots in $\mathbb{C}$, counted with multiplicity.</p>
-<p><strong>Proof.</strong> Write $p(A) = a_n A^n + \dots + a_0$. On a large circle, $|a_n A^n| > |a_{n-1} A^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n A^n$, which is $n$.</p>
+<p><strong>Proof.</strong> Write $p(Q) = a_n Q^n + \dots + a_0$. On a large circle, $|a_n Q^n| > |a_{n-1} Q^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n Q^n$, which is $n$.</p>
 <h2 id="summary">Summary</h2>
-<p>Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\lvert A\rvert = \sqrt{a^2 + a'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.</p>
-<p>The derivative $f'(A_0) = \lim_{h \to 0} (f(A_0 + h) - f(A_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.</p>
+<p>Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\lvert Q\rvert = \sqrt{q^2 + q'^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.</p>
+<p>The derivative $f'(Q_0) = \lim_{h \to 0} (f(Q_0 + h) - f(Q_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.</p>
 <p>Integration along paths defines the contour integral, and the theorems the derivative buys are the substance of the subject: Cauchy's theorem, the Cauchy integral formula, the Liouville theorem, and the residue theorem, which evaluates an integral by summing the local contributions of the singularities. Power series, Taylor series and Laurent series describe the local behaviour of a holomorphic function, and the Laurent expansion classifies the isolated singularities as removable, a pole, or essential. The article closes by applying the residue theorem to the evaluation of real integrals.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -364,63 +363,63 @@ $$</p>
 <td>Complex plane</td>
 </tr>
 <tr>
-<td>$A = a + i a'$</td>
+<td>$Q = q + i q'$</td>
 <td>General complex number</td>
 </tr>
 <tr>
-<td>$\bar{A} = a - i a'$</td>
+<td>$\bar{Q} = q - i q'$</td>
 <td>Complex conjugate</td>
 </tr>
 <tr>
-<td>$\|A\| = \sqrt{a^2 + a'^2}$</td>
+<td>$|Q| = \sqrt{q^2 + q'^2}$</td>
 <td>Modulus</td>
 </tr>
 <tr>
-<td>$d(A, B) = \|A - B\|$</td>
+<td>$d(Q, Q_1) = |Q - Q_1|$</td>
 <td>Distance</td>
 </tr>
 <tr>
-<td>$B(A_0, r)$</td>
+<td>$B(Q_0, r)$</td>
 <td>Open disk of radius $r$</td>
 </tr>
 <tr>
-<td>$U, F, K$</td>
+<td>$\Omega, F, K$</td>
 <td>Open, closed, compact sets</td>
 </tr>
 <tr>
-<td>$A_n \to L$</td>
+<td>$Q_n \to L$</td>
 <td>Convergence of a sequence</td>
 </tr>
 <tr>
-<td>$\lim_{A \to A_0} f(A)$</td>
+<td>$\lim_{Q \to Q_0} f(Q)$</td>
 <td>Limit of a function</td>
 </tr>
 <tr>
-<td>$f'(A)$</td>
+<td>$f'(Q)$</td>
 <td>Complex derivative</td>
 </tr>
 <tr>
-<td>$\partial/\partial A, \partial/\partial \bar{A}$</td>
+<td>$\partial/\partial Q, \partial/\partial \bar{Q}$</td>
 <td>Wirtinger derivatives</td>
 </tr>
 <tr>
-<td>$\int_\gamma f(A) \, dA$</td>
+<td>$\int_\gamma f(Q) \, dQ$</td>
 <td>Contour integral</td>
 </tr>
 <tr>
-<td>$f^{(n)}(A)$</td>
+<td>$f^{(n)}(Q)$</td>
 <td>$n$-th derivative</td>
 </tr>
 <tr>
-<td>$\sum c_n (A - A_0)^n$</td>
+<td>$\sum c_n (Q - Q_0)^n$</td>
 <td>Power series</td>
 </tr>
 <tr>
-<td>$\operatorname{Res}(f, A_0)$</td>
+<td>$\operatorname{Res}(f, Q_0)$</td>
 <td>Residue</td>
 </tr>
 <tr>
-<td>$\operatorname{ord}(f, A_0)$</td>
+<td>$\operatorname{ord}(f, Q_0)$</td>
 <td>Order of zero or pole</td>
 </tr>
 </tbody>

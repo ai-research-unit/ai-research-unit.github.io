@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -130,11 +129,11 @@ $$</p>
 <h2 id="derivations-and-automorphisms">Derivations and Automorphisms</h2>
 <p><strong>Theorem (derivations).</strong> The $k$-derivations of $k[x_1,\dots,x_n]$ form a free $k[x_1,\dots,x_n]$-module of rank $n$,</p>
 <p>$$
-\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial_i,
+\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i,
 $$</p>
-<p>where $\partial_i = \partial/\partial x_i$. In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial_x$.</p>
-<p><em>Proof.</em> Every $\sum_i f_i\partial_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\partial_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\partial_i$, and the expression is unique because the $\partial_i$ are linearly independent over the algebra.</p>
-<p><strong>Example (the Euler derivation).</strong> The derivation $\vartheta = \sum_i x_i\partial_i$ acts on monomials by $\vartheta(x^\alpha) = |\alpha| x^\alpha$, where $|\alpha| = \sum_i\alpha_i$. Over $k = \mathbb{R}$ or $\mathbb{C}$ it is the infinitesimal generator of the one-parameter group of algebra automorphisms $x_i \mapsto \lambda x_i$, $\lambda = \exp(t) \in k^\times$, whose derivative at $\lambda = 1$ is $\vartheta$; over a general field the one-parameter group need not be available, and only the derivation is available. It is not inner, because $k[x_1,\dots,x_n]$ is commutative and therefore has no nonzero inner derivations.</p>
+<p>In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial/\partial x$.</p>
+<p><em>Proof.</em> Every $\sum_i f_i\,\partial/\partial x_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\,\partial/\partial x_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\,\partial/\partial x_i$, and the expression is unique because the $\partial/\partial x_i$ are linearly independent over the algebra.</p>
+<p><strong>Example (the Euler derivation).</strong> The derivation $\vartheta = \sum_i x_i\,\partial/\partial x_i$ acts on monomials by $\vartheta(x^\alpha) = |\alpha| x^\alpha$, where $|\alpha| = \sum_i\alpha_i$. Over $k = \mathbb{R}$ or $\mathbb{C}$ it is the infinitesimal generator of the one-parameter group of algebra automorphisms $x_i \mapsto \lambda x_i$, $\lambda = \exp(t) \in k^\times$, whose derivative at $\lambda = 1$ is $\vartheta$; over a general field the one-parameter group need not be available, and only the derivation is available. It is not inner, because $k[x_1,\dots,x_n]$ is commutative and therefore has no nonzero inner derivations.</p>
 <p><strong>Proposition (automorphisms in one variable).</strong> Every $k$-algebra automorphism of $k[x]$ is of the form</p>
 <p>$$
 \varphi(x) = ax + b, \qquad a \in k^\times, \quad b \in k,
@@ -149,7 +148,7 @@ k[x_1,\dots,x_n] \cong \frac{k\langle x_1,\dots,x_n\rangle}{(x_ix_j - x_jx_i : 1
 $$</p>
 <p>This is the general quotient construction of <em>Quotients of the Tensor Algebra</em>, and it is the reason the polynomial algebra is called the <strong>symmetric algebra</strong> of an $n$-dimensional vector space; that symmetric-algebra viewpoint belongs to category 06 and is not pursued here.</p>
 <h2 id="summary">Summary</h2>
-<p>The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutative integral domain, and has units $k^\times$ and degree function satisfying $\deg(fg) = \deg f + \deg g$. Its <strong>universal property</strong> is that $k$-algebra homomorphisms $k[x] \to A$ correspond bijectively to elements of $A$ by evaluation, and the same statement in $n$ variables gives $\operatorname{Hom}_{k\text{-alg}}(k[x_1,\dots,x_n], A) \cong A^n$. The division algorithm and the remainder theorem give $f = (x-a)q + f(a)$, so that $a$ is a root of $f$ exactly when $(x-a)$ divides $f$, and a nonzero polynomial of degree $d$ has at most $d$ roots in a domain. Every ideal of $k[x]$ is principal, and $k[x]/(f)$ is a field exactly when $f$ is irreducible, of dimension $\deg f$; the Chinese remainder theorem decomposes $k[x]/(f)$ over the coprime factorisation of $f$. The two-dimensional real algebras are the quotients by $x^2+1$, $x^2-1$ and $x^2$. In $n$ variables the algebra is Noetherian but not principal for $n \geq 2$, its maximal ideals over an algebraically closed field are the ideals of points, and it is the quotient of the free algebra by the commutators, hence the symmetric algebra of $k^n$. Its $k$-derivations form the free module $\bigoplus_i k[x_1,\dots,x_n]\partial_i$ on the partial derivatives, and the automorphisms of $k[x]$ are the affine maps $x\mapsto ax+b$, so that $\operatorname{Aut}_k(k[x])$ is the affine group.</p>
+<p>The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutative integral domain, and has units $k^\times$ and degree function satisfying $\deg(fg) = \deg f + \deg g$. Its <strong>universal property</strong> is that $k$-algebra homomorphisms $k[x] \to A$ correspond bijectively to elements of $A$ by evaluation, and the same statement in $n$ variables gives $\operatorname{Hom}_{k\text{-alg}}(k[x_1,\dots,x_n], A) \cong A^n$. The division algorithm and the remainder theorem give $f = (x-a)q + f(a)$, so that $a$ is a root of $f$ exactly when $(x-a)$ divides $f$, and a nonzero polynomial of degree $d$ has at most $d$ roots in a domain. Every ideal of $k[x]$ is principal, and $k[x]/(f)$ is a field exactly when $f$ is irreducible, of dimension $\deg f$; the Chinese remainder theorem decomposes $k[x]/(f)$ over the coprime factorisation of $f$. The two-dimensional real algebras are the quotients by $x^2+1$, $x^2-1$ and $x^2$. In $n$ variables the algebra is Noetherian but not principal for $n \geq 2$, its maximal ideals over an algebraically closed field are the ideals of points, and it is the quotient of the free algebra by the commutators, hence the symmetric algebra of $k^n$. Its $k$-derivations form the free module $\bigoplus_i k[x_1,\dots,x_n]\,\partial/\partial x_i$ on the partial derivatives, and the automorphisms of $k[x]$ are the affine maps $x\mapsto ax+b$, so that $\operatorname{Aut}_k(k[x])$ is the affine group.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -196,7 +195,7 @@ $$</p>
 <td>Maximal ideal of the origin</td>
 </tr>
 <tr>
-<td>$\partial_i = \partial/\partial x_i$</td>
+<td>$\partial/\partial x_i$</td>
 <td>Partial derivative</td>
 </tr>
 <tr>
@@ -204,7 +203,7 @@ $$</p>
 <td>Module of $k$-derivations</td>
 </tr>
 <tr>
-<td>$\vartheta = \sum_i x_i\partial_i$</td>
+<td>$\vartheta = \sum_i x_i\,\partial/\partial x_i$</td>
 <td>Euler derivation</td>
 </tr>
 <tr>

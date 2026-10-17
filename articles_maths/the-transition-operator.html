@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -89,7 +88,7 @@ $$
 R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm{id},\qquad R_\lambda(\lambda-L)=\mathrm{id}\ \text{on }\mathcal D(L),
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
-<p><em>Proof.</em> The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial_t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.</p>
+<p><em>Proof.</em> The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial/\partial t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.</p>
 <h3 id="the-hilleyosida-characterisation">The Hille–Yosida characterisation</h3>
 <p><strong>Theorem (Hille–Yosida).</strong> A linear operator $L$ on $C_0(E)$ is the generator of a Feller semigroup if and only if its domain is dense, $L$ is dissipative, and the range of $\lambda-L$ is dense for some, equivalently every, $\lambda>0$. Equivalently, $\lambda-L$ is invertible with $\|\lambda R_\lambda\|\le1$ for every $\lambda>0$.</p>
 <p><em>Proof.</em> The necessity is the contraction property of the semigroup written through the resolvent; the sufficiency is the construction of the semigroup as the strong limit of the Yosida approximations $P_t=\lim_n \exp(tLnR_n)$, by the exponential formula. The theorem is <em>Markov Chains and Processes</em>, and it is the functional-analytic characterisation that makes the generator an equivalent description of the process.</p>
@@ -97,9 +96,9 @@ and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.</p>
 <h3 id="the-forward-and-backward-equations">The forward and backward equations</h3>
 <p><strong>Theorem (Kolmogorov equations).</strong> Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the <strong>backward equation</strong>
 $$
-\partial_t u=Lu,\qquad u(0,x)=f(x),
+\partial/\partial t u=Lu,\qquad u(0,x)=f(x),
 $$
-and the transition kernels solve the <strong>forward equation</strong> $\partial_t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.</p>
+and the transition kernels solve the <strong>forward equation</strong> $\partial/\partial t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.</p>
 <p><em>Proof.</em> The backward equation is the semigroup law differentiated at $t=0$ in the space variable; the forward equation is the same statement read on the measures, where the generator acts as the transpose $L^*$ on the predual. The exponential formula is the Hille–Yosida approximation.</p>
 <h3 id="the-math80-matrix-of-a-countable-chain">The $Q$-matrix of a countable chain</h3>
 <p><strong>Definition.</strong> For a continuous-time chain on a countable $E$ the <strong>generator matrix</strong> (or $Q$-matrix) has entries
@@ -107,7 +106,7 @@ $$
 q_{xy}=\lim_{t\to0}\frac{p_t(x,y)-\delta_{xy}}{t},\qquad q_{xy}\ge0\ (x\ne y),\qquad \sum_y q_{xy}=0 .
 $$</p>
 <p><strong>Theorem.</strong> The $Q$-matrix acts on finitely supported functions by $Lf(x)=\sum_y q_{xy}f(y)$, and on a finite state space the semigroup is the matrix exponential $P_t=\exp(tQ)$.</p>
-<p><em>Proof.</em> The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial_tP_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.</p>
+<p><em>Proof.</em> The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial/\partial t\,P_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.</p>
 <h2 id="the-invariant-measures-of-the-semigroup">The Invariant Measures of the Semigroup</h2>
 <p><strong>Definition.</strong> A probability measure $\pi$ is <strong>invariant</strong> for the semigroup if $\pi P_t=\pi$ for all $t\ge0$; it is <strong>ergodic</strong> if the only invariant sets of the semigroup have measure $0$ or $1$.</p>
 <p><strong>Theorem (invariance and the generator).</strong> Let the semigroup be Feller with generator $L$ and let $\pi$ be a probability measure with $\pi(Lf)=0$ for every $f$ in a core of $L$. Then $\pi$ is invariant. Conversely, if $\pi$ is invariant then $\pi(Lf)=0$ for $f\in\mathcal D(L)$, and $\pi$ is ergodic exactly when the fixed space of the semigroup in $L^2(\pi)$ is one-dimensional.</p>
@@ -177,7 +176,7 @@ and the invariant law is the normal distribution $N(0,\sigma^2/(2\theta))$, for 
 <td>resolvent</td>
 </tr>
 <tr>
-<td>$P_t=\exp(tL)$, $\partial_t u=Lu$</td>
+<td>$P_t=\exp(tL)$, $\partial/\partial t u=Lu$</td>
 <td>exponential formula and Kolmogorov backward equation</td>
 </tr>
 <tr>
@@ -193,7 +192,7 @@ and the invariant law is the normal distribution $N(0,\sigma^2/(2\theta))$, for 
 <td>heat semigroup on $\mathbb R^d$</td>
 </tr>
 <tr>
-<td>$L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$</td>
+<td>$L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial^2/\partial x^2-\theta x\partial/\partial x$</td>
 <td>Brownian and Ornstein–Uhlenbeck generators</td>
 </tr>
 </tbody>

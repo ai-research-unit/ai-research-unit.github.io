@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,11 +60,11 @@ $$</p>
 <p>the cross product of the two vector parts, which is alternating and without a unit (<em>Introduction to
 the Antisymmetric Plain Algebra of Quaternions</em>).</p>
 <p>The article treats two subjects, and in this order. The first is the <strong>square roots of the central
-value $+1$</strong>, the nonzero elements $\tilde\xi$ with $\tilde\xi\times\tilde\xi=+e_0$. The second is
+value $+1$</strong>, the nonzero elements $\tilde\xi$ with $\tilde\xi\times\tilde\xi=+e_t$. The second is
 the <strong>idempotents of the block</strong>, the elements $\tilde\pi$ with $\tilde\pi\times\tilde\pi=\tilde\pi$.
 The two subjects are one subject, because the idempotent is the root of $+1$ in a scaled sense: in a
-unital product the <strong>halving map</strong> $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$ carries the roots of
-$+1$ onto the idempotents, with inverse $\tilde\pi\mapsto2\tilde\pi-e_0$. For the block the map is
+unital product the <strong>halving map</strong> $\tilde\xi\mapsto\tfrac12(e_t+\tilde\xi)$ carries the roots of
+$+1$ onto the idempotents, with inverse $\tilde\pi\mapsto2\tilde\pi-e_t$. For the block the map is
 degenerate, and its degeneration and the absence of the roots have one cause, the vanishing square:
 the block is alternating, so $\tilde\xi\times\tilde\xi=0$ for every element, and neither the root
 equation nor the scaled equation can be met off the origin.</p>
@@ -73,7 +72,7 @@ equation nor the scaled equation can be met off the origin.</p>
 <strong>no root of $+1$</strong>, because the square of every element vanishes; and it has <strong>one idempotent, the
 origin</strong>, because its idempotent equation reduces to $0=\tilde\pi$. It therefore has no nontrivial
 idempotent, no orthogonal family, no primitive idempotent, no projection and no Peirce decomposition,
-and the unit $e_0$ of the ambient algebra is not an idempotent of the block, the block being a
+and the unit $e_t$ of the ambient algebra is not an idempotent of the block, the block being a
 bracket and not a product. The roots of $-1$ are settled by the same reduction and are recorded in a
 short remark at the end of §<em>The Roots of One</em>; the remark is used nowhere.</p>
 <p>The article is algebraic. It does not treat the roots of $0$ and the nilpotents, which are <em>Square
@@ -83,17 +82,17 @@ zero-divisor set, which is <em>Zero Divisors of the Antisymmetric Plain Algebra<
 families of the parent product, which are <em>Square Roots of One and the Idempotents of the General Plain Algebra</em>.</p>
 <p><strong>The results.</strong> For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$
 the square of every element vanishes, $\tilde\xi\times\tilde\xi=0$, and the root equation of $+1$
-therefore reduces to $0=+e_0$: the block has <strong>no root of $+1$</strong>, and <strong>no root of $-1$</strong> either, by
+therefore reduces to $0=+e_t$: the block has <strong>no root of $+1$</strong>, and <strong>no root of $-1$</strong> either, by
 the same reduction. The idempotent equation $\tilde\pi\times\tilde\pi=\tilde\pi$ reduces to
 $0=\tilde\pi$, so the block has <strong>one idempotent, the origin</strong>, and <strong>no nontrivial idempotent</strong>,
 hence no orthogonal family, no primitive idempotent, no projection and no Peirce decomposition; the
-unit $e_0$ of the ambient algebra is not an idempotent of the block. The comparison with the parent
-plain product is the comparison of the origin alone with the two-point set $\{0,e_0\}$.</p>
+unit $e_t$ of the ambient algebra is not an idempotent of the block. The comparison with the parent
+plain product is the comparison of the origin alone with the two-point set $\{0,e_t\}$.</p>
 <h2 id="the-notion-and-its-product">The Notion and Its Product</h2>
 <p><strong>Definition (root of a central value).</strong> Let $\star$ be a product on $\mathbb{H}$ and let
 $\lambda\in\mathbb{R}$. A <strong>root of $\lambda$ in $\star$</strong> is a nonzero element $\tilde\xi$ with</p>
 <p>$$
-\tilde\xi\star\tilde\xi=\lambda e_0 .
+\tilde\xi\star\tilde\xi=\lambda e_t .
 $$</p>
 <p>The three central values the quaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$
 are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero
@@ -109,9 +108,9 @@ article records that the idempotents contain the origin and every unit (<em>Defi
 the Algebraic Structures</em>, §<em>The Element Vocabulary</em>), and the origin and the unit are the
 <strong>trivial idempotents</strong> here, the other idempotents being <strong>nontrivial</strong>. In a unital product the
 idempotent is the root of $+1$ in a scaled sense, through the halving map
-$\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$, which carries the roots of $+1$ onto the idempotents, with
-inverse $\tilde\pi\mapsto2\tilde\pi-e_0$, the two computations
-$\tfrac12(e_0+\tilde\xi)^2=\tfrac12(e_0+\tilde\xi)$ and $(2\tilde\pi-e_0)^2=e_0$ reading the same
+$\tilde\xi\mapsto\tfrac12(e_t+\tilde\xi)$, which carries the roots of $+1$ onto the idempotents, with
+inverse $\tilde\pi\mapsto2\tilde\pi-e_t$, the two computations
+$\tfrac12(e_t+\tilde\xi)^2=\tfrac12(e_t+\tilde\xi)$ and $(2\tilde\pi-e_t)^2=e_t$ reading the same
 identity (the map of the roots/idempotents architecture, <em>Square Roots of One and the Idempotents in
 the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>).</p>
 <p>Throughout this article the product is the antisymmetric plain multiplication $\times$, and
@@ -125,9 +124,9 @@ Antisymmetric Parts of an Algebra Product</em>.</p>
 $$</p>
 <p>and the two central equations therefore reduce to the scalar equations</p>
 <p>$$
-\tilde\xi\times\tilde\xi=+e_0\quad\Longrightarrow\quad 0=+e_0 ,
+\tilde\xi\times\tilde\xi=+e_t\quad\Longrightarrow\quad 0=+e_t ,
 \qquad
-\tilde\xi\times\tilde\xi=-e_0\quad\Longrightarrow\quad 0=-e_0 .
+\tilde\xi\times\tilde\xi=-e_t\quad\Longrightarrow\quad 0=-e_t .
 $$</p>
 <p><em>Proof.</em> The block is alternating, $\tilde x\times\tilde x=0$ for every $\tilde x$, by <em>Introduction
 to the Antisymmetric Plain Algebra of Quaternions</em>; read at $\tilde x=\tilde\xi$ this is the display.
@@ -135,21 +134,21 @@ Substituting the display into each central equation, whose left side is the squa
 equation.</p>
 <p><strong>Theorem (no root of $+1$).</strong> The block has no root of $+1$:</p>
 <p>$$
-\{\tilde\xi:\tilde\xi\times\tilde\xi=+e_0\}=\varnothing .
+\{\tilde\xi:\tilde\xi\times\tilde\xi=+e_t\}=\varnothing .
 $$</p>
-<p><em>Proof.</em> The reduction reads the equation as $0=+e_0$, a scalar equation failing for every
-$\tilde\xi$: the left side is the origin and the right side the nonzero central value $+e_0$.</p>
+<p><em>Proof.</em> The reduction reads the equation as $0=+e_t$, a scalar equation failing for every
+$\tilde\xi$: the left side is the origin and the right side the nonzero central value $+e_t$.</p>
 <p>The criterion is the whole of the computation, because the left side of the equation is identically
 zero and the equation constrains the right side alone. There is no exceptional element and no
 exceptional central value.</p>
 <p><strong>Remark (the roots of $-1$).</strong> The other equation cancels in the same way and the block has no root
 of $-1$ either:</p>
 <p>$$
-\tilde\xi\times\tilde\xi=-e_0\quad\Longrightarrow\quad 0=-e_0 ,
+\tilde\xi\times\tilde\xi=-e_t\quad\Longrightarrow\quad 0=-e_t ,
 $$</p>
 <p>with no solution. The remark is used nowhere in this article and is recorded for completeness. The
 absence is not the failure of the parent algebra, where the roots of $-1$ are the pure unit
-quaternions and those of $+1$ are the two units $\pm e_0$: the block has neither, because its square
+quaternions and those of $+1$ are the two units $\pm e_t$: the block has neither, because its square
 is not a scalar at all but the zero element, whatever the coordinates of the alleged root. The
 totality of the roots of $0$ is the same fact (<em>Square Roots of Zero and the Nilpotents of the
 Antisymmetric Plain Algebra</em>).</p>
@@ -172,19 +171,19 @@ zero and the equation constrains the right side alone, and it is the same criter
 recorded for the class of nonzero idempotents in <em>Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, §<em>The Criterion for an Empty Class</em>. Every candidate idempotent is excluded at once, and
 no coordinate computation is needed.</p>
 <p><strong>Corollary (no nontrivial idempotent).</strong> The block has no nontrivial idempotent. In particular the
-unit $e_0$ of the ambient algebra is not an idempotent of the block:
-$e_0\times e_0=\mathbf 0\times\mathbf 0=0\neq e_0$.</p>
+unit $e_t$ of the ambient algebra is not an idempotent of the block:
+$e_t\times e_t=\mathbf 0\times\mathbf 0=0\neq e_t$.</p>
 <p><em>Proof.</em> A nontrivial idempotent is one different from the origin and, when the product is unital, from
 the unit; the theorem says that the origin is the only idempotent, so there is none other. The element
-$e_0$ satisfies $e_0\times e_0=0$ and $0\neq e_0$, so it is not an idempotent of the block, although
+$e_t$ satisfies $e_t\times e_t=0$ and $0\neq e_t$, so it is not an idempotent of the block, although
 it is the unit of the parent product.</p>
 <p>The equation is read in the product and not in the algebra, and the block is not the plain product.
-The element $e_0$ is an idempotent of the parent and not of the block; the origin is an idempotent of
+The element $e_t$ is an idempotent of the parent and not of the block; the origin is an idempotent of
 both, being the trivial idempotent of every product. The halving map of §<em>The Notion and Its Product</em>
-degenerates here beyond the loss of the unit: the halving $\tfrac12(e_0+\tilde\xi)$ of an element of
-the block is square-zero, $\tfrac12(e_0+\tilde\xi)\times\tfrac12(e_0+\tilde\xi)=0$, because every
+degenerates here beyond the loss of the unit: the halving $\tfrac12(e_t+\tilde\xi)$ of an element of
+the block is square-zero, $\tfrac12(e_t+\tilde\xi)\times\tfrac12(e_t+\tilde\xi)=0$, because every
 square of the block vanishes, so no root of $+1$ produces a nontrivial idempotent, the root set being
-empty; the origin is the sole idempotent, and it is the halving of $-e_0$.</p>
+empty; the origin is the sole idempotent, and it is the halving of $-e_t$.</p>
 <h3 id="the-absence-of-the-projector-and-of-the-peirce-calculus">The Absence of the Projector and of the Peirce Calculus</h3>
 <p><strong>Proposition (no nontrivial projector).</strong> The only idempotent of the block is the origin, whose left
 multiplication operator is the zero operator. The block therefore carries no nontrivial projector:
@@ -205,16 +204,16 @@ the ideals and the module theory built from idempotents have no entry point in i
 belong to the plain product and to its blocks.</p>
 <h3 id="the-comparison-with-the-parent-product">The Comparison with the Parent Product</h3>
 <p><strong>Remark (the parent idempotents).</strong> The parent general plain bilinear product is associative and
-unital, and its idempotents are the two-point set $\{0,e_0\}$: the equation $\tilde x^2=\tilde x$
-reads $\tilde x(\tilde x-e_0)=0$, and the parent is a division product, so $\tilde x=0$ or
-$\tilde x=e_0$ (<em>The Specificities of the General Plain Algebra</em>; <em>Square Roots of One and the Idempotents of the General Plain
+unital, and its idempotents are the two-point set $\{0,e_t\}$: the equation $\tilde x^2=\tilde x$
+reads $\tilde x(\tilde x-e_t)=0$, and the parent is a division product, so $\tilde x=0$ or
+$\tilde x=e_t$ (<em>The Specificities of the General Plain Algebra</em>; <em>Square Roots of One and the Idempotents of the General Plain
 Algebra</em>). The block is the antisymmetric half of that product, and the comparison is the comparison
-of a one-point set with a two-point set: the block keeps the trivial idempotent and loses $e_0$, and
+of a one-point set with a two-point set: the block keeps the trivial idempotent and loses $e_t$, and
 it loses with it the entire idempotent calculus. The count is the point of the article — one
 idempotent for the block against two for the parent — and it is decided by the single value of the
-square at $e_0$, which is $e_0$ in the parent and $0$ in the block.</p>
+square at $e_t$, which is $e_t$ in the parent and $0$ in the block.</p>
 <p><strong>Remark (the contrast with the biquaternion chapter).</strong> Over $\mathbb{C}$ the same parent product
-carries the idempotent family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$, of real
+carries the idempotent family $\tfrac12(e_t+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$, of real
 dimension four, and the four general products of the biquaternion space carry four idempotent sets
 whose sizes range from the trivial pair to the continuum (<em>Square Roots of One and the Idempotents in the Algebraic Structures
 over the Biquaternion $\mathbb{C}$ Space</em>). The real block is poorer than any of them: it has the
@@ -236,14 +235,14 @@ are read, are the following.</p>
 <tr>
 <td>GPA, $\tilde p\tilde q$</td>
 <td>the pure unit quaternions</td>
-<td>$\pm e_0$</td>
-<td>$\{0,e_0\}$</td>
+<td>$\pm e_t$</td>
+<td>$\{0,e_t\}$</td>
 </tr>
 <tr>
 <td>SPA, $\tilde p\bullet\tilde q$</td>
 <td>the pure unit quaternions</td>
-<td>$\pm e_0$</td>
-<td>$\{0,e_0\}$</td>
+<td>$\pm e_t$</td>
+<td>$\{0,e_t\}$</td>
 </tr>
 <tr>
 <td>APA, $\tilde p\times\tilde q$</td>
@@ -255,13 +254,13 @@ are read, are the following.</p>
 <td>GQA, $\tilde p^{\natural}\tilde q$</td>
 <td>none</td>
 <td>the unit sphere</td>
-<td>$\{0,e_0\}$</td>
+<td>$\{0,e_t\}$</td>
 </tr>
 <tr>
-<td>SQA, $N(\tilde p,\tilde q)e_0$</td>
+<td>SQA, $N(\tilde p,\tilde q)e_t$</td>
 <td>none</td>
 <td>the unit sphere</td>
-<td>$\{0,e_0\}$</td>
+<td>$\{0,e_t\}$</td>
 </tr>
 <tr>
 <td>AQA, $\tilde p\wedge^{\natural}\tilde q$</td>
@@ -282,14 +281,14 @@ Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$ the
 square of every element vanishes, $\tilde\xi\times\tilde\xi=0$, so the root equation of $+1$ reduces
-to the scalar equation $0=+e_0$ and the block has no root of $+1$; the root equation of $-1$ reduces
-to $0=-e_0$ and the block has no root of $-1$ either. The idempotent equation
+to the scalar equation $0=+e_t$ and the block has no root of $+1$; the root equation of $-1$ reduces
+to $0=-e_t$ and the block has no root of $-1$ either. The idempotent equation
 $\tilde\pi\times\tilde\pi=\tilde\pi$ reduces to $0=\tilde\pi$, because the block is alternating, so
-the block has one idempotent, the origin, and no nontrivial idempotent. The unit $e_0$ of the ambient
+the block has one idempotent, the origin, and no nontrivial idempotent. The unit $e_t$ of the ambient
 algebra is not an idempotent of the block, the block being a bracket. No orthogonal family, no
 primitive idempotent, no projection and no Peirce decomposition exists, and the only projector the
 block carries is the zero operator, from the origin. The comparison with the parent product is the
-comparison of the origin alone with the two-point set $\{0,e_0\}$, and the idempotent calculus — the
+comparison of the origin alone with the two-point set $\{0,e_t\}$, and the idempotent calculus — the
 left ideals, the direct sum decompositions, the Peirce decomposition — belongs to the parent and not
 to the block.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -306,12 +305,12 @@ to the block.</p>
 <td>the antisymmetric plain multiplication, the operation $\mathrm{APA}$</td>
 </tr>
 <tr>
-<td>$\tilde\xi\times\tilde\xi=+e_0$</td>
-<td>the root equation of $+1$, equivalent to $0=+e_0$</td>
+<td>$\tilde\xi\times\tilde\xi=+e_t$</td>
+<td>the root equation of $+1$, equivalent to $0=+e_t$</td>
 </tr>
 <tr>
-<td>$\tilde\xi\times\tilde\xi=-e_0$</td>
-<td>the root equation of $-1$, equivalent to $0=-e_0$</td>
+<td>$\tilde\xi\times\tilde\xi=-e_t$</td>
+<td>the root equation of $-1$, equivalent to $0=-e_t$</td>
 </tr>
 <tr>
 <td>$\varnothing$</td>
@@ -330,11 +329,11 @@ to the block.</p>
 <td>the left multiplication operator of an idempotent, the zero operator at the origin</td>
 </tr>
 <tr>
-<td>$\{0,e_0\}$</td>
+<td>$\{0,e_t\}$</td>
 <td>the idempotents of the parent product, of which the block keeps only the origin</td>
 </tr>
 <tr>
-<td>$\tfrac12(e_0+\tilde\xi)\mapsto$ idempotents</td>
+<td>$\tfrac12(e_t+\tilde\xi)\mapsto$ idempotents</td>
 <td>the halving map, onto in a unital product and degenerate in the block</td>
 </tr>
 </tbody>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -82,7 +81,7 @@ $$</p>
 $$</p>
 <p>A <strong>neighborhood</strong> of $a$ is any set containing some $B(a, r)$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $U \subseteq \mathbb{R}$ is <strong>open</strong> if for every $a \in U$ there exists $r > 0$ with $B(a, r) \subseteq U$.</p>
+<p>A set $\Omega \subseteq \mathbb{R}$ is <strong>open</strong> if for every $a \in \Omega$ there exists $r > 0$ with $B(a, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{R}$ is <strong>closed</strong> if its complement $\mathbb{R} \setminus F$ is open.</p>
 <p><strong>Theorem.</strong> The open sets of $\mathbb{R}$ are exactly the unions of open intervals.</p>
 <p><strong>Theorem.</strong> Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually, arbitrary intersections of closed sets are closed. Finite unions of closed sets are closed.</p>
@@ -228,18 +227,18 @@ P = \{a = c_0 < c_1 < \dots < c_n = b\}.
 $$</p>
 <p>The <strong>upper sum</strong> and <strong>lower sum</strong> are</p>
 <p>$$
-U(f, P) = \sum_{i=1}^n M_i (c_i - c_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (c_i - c_{i-1}),
+\Omega(f, P) = \sum_{i=1}^n M_i (c_i - c_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (c_i - c_{i-1}),
 $$</p>
 <p>where $M_i = \sup_{[c_{i-1}, c_i]} f$ and $m_i = \inf_{[c_{i-1}, c_i]} f$.</p>
 <p>The <strong>upper integral</strong> and <strong>lower integral</strong> are</p>
 <p>$$
-\overline{\int_a^b} f = \inf_P U(f, P), \qquad \underline{\int_a^b} f = \sup_P L(f, P).
+\overline{\int_a^b} f = \inf_P \Omega(f, P), \qquad \underline{\int_a^b} f = \sup_P L(f, P).
 $$</p>
 <p>$f$ is <strong>Riemann integrable</strong> if the two agree. The common value is</p>
 <p>$$
 \int_a^b f.
 $$</p>
-<p><strong>Theorem (Cauchy criterion).</strong> $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $U(f, P) - L(f, P) < \epsilon$.</p>
+<p><strong>Theorem (Cauchy criterion).</strong> $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $\Omega(f, P) - L(f, P) < \epsilon$.</p>
 <p><strong>Theorem.</strong> Continuous functions on $[a, b]$ are Riemann integrable. Monotone functions on $[a, b]$ are Riemann integrable. Functions with finitely many discontinuities on $[a, b]$ are Riemann integrable.</p>
 <p><strong>Theorem (Fundamental Theorem of Calculus, I).</strong> If $f$ is continuous on $[a, b]$ and</p>
 <p>$$
@@ -368,7 +367,7 @@ $$</p>
 <td>Open ball of radius $r$</td>
 </tr>
 <tr>
-<td>$U, F$</td>
+<td>$\Omega, F$</td>
 <td>Open, closed sets</td>
 </tr>
 <tr>

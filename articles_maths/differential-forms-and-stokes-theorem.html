@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -68,11 +67,11 @@ $$</p>
 \Omega^\bullet(M) = \bigoplus_{k=0}^{n} \Omega^k(M)
 $$</p>
 <p>is the <strong>algebra of differential forms</strong>, a graded-commutative algebra under the wedge product.</p>
-<p><strong>Proposition.</strong> In a chart $(U, x^1, \ldots, x^n)$, every $k$-form on $U$ has a unique expression</p>
+<p><strong>Proposition.</strong> In a chart $(\Xi, x^1, \ldots, x^n)$, every $k$-form on $\Xi$ has a unique expression</p>
 <p>$$
 \omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx^{i_1} \wedge \cdots \wedge dx^{i_k}
 $$</p>
-<p>with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(U)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $U$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of <strong>top forms</strong>.</p>
+<p>with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(\Xi)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $\Xi$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of <strong>top forms</strong>.</p>
 <p><strong>Proof.</strong> The cotangent bundle is locally trivial with fibre $\mathbb{R}^n$, and the exterior power of a free module of rank $n$ has the stated basis; the sections are smooth precisely when the coefficients are.</p>
 <h3 id="smooth-sections-and-the-module-structure">Smooth Sections and the Module Structure</h3>
 <p><strong>Proposition.</strong> $\Omega^\bullet(M)$ is a module over $C^\infty(M)$ and a graded-commutative algebra over $\mathbb{R}$; the wedge product is associative, unital, and satisfies $\alpha \wedge \beta = (-1)^{pq}\beta\wedge\alpha$ for $\alpha$ of degree $p$ and $\beta$ of degree $q$.</p>
@@ -86,7 +85,7 @@ $$</p>
 <p><strong>Proof.</strong> At each point the pullback is the transpose of $dF_x$ applied to an alternating form, and pulling back an alternating form along a linear map preserves the wedge product, by the functoriality of the exterior algebra; the module structure is preserved because $F^*$ pulls functions back by composition. Contravariant functoriality is the chain rule. The commutation with $d$ is proved after the exterior derivative is defined.</p>
 <h2 id="the-exterior-derivative">The Exterior Derivative</h2>
 <h3 id="definition-in-coordinates">Definition in Coordinates</h3>
-<p><strong>Definition.</strong> The <strong>exterior derivative</strong> is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(U, x^1, \ldots, x^n)$ by</p>
+<p><strong>Definition.</strong> The <strong>exterior derivative</strong> is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(\Xi, x^1, \ldots, x^n)$ by</p>
 <p>$$
 d\Bigl(\sum_{I} \omega_I\, dx^I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x^j}\, dx^j \wedge dx^I,
 $$</p>
@@ -121,28 +120,28 @@ $$</p>
 <h3 id="functoriality-and-the-mayervietoris-sequence">Functoriality and the Mayer–Vietoris Sequence</h3>
 <p><strong>Theorem.</strong> The pullback along a smooth map $F : M \to N$ induces a linear map $F^* : H^k_{dR}(N) \to H^k_{dR}(M)$ on cohomology, and this assignment is contravariantly functorial; homotopic maps induce the same map on cohomology.</p>
 <p><strong>Proof.</strong> The commutation $F^* d = d F^*$ shows that $F^*$ preserves closed and exact forms, so it descends. Functoriality is the functoriality of the pullback. The homotopy invariance follows from the construction of a chain homotopy between the pullbacks of homotopic maps, the <strong>prism operator</strong>, which is built from the integral of the pullback along the homotopy.</p>
-<p><strong>Theorem (Mayer–Vietoris).</strong> Let $M = U \cup V$ be an open cover. Then there is a long exact sequence</p>
+<p><strong>Theorem (Mayer–Vietoris).</strong> Let $M = \Xi \cup V$ be an open cover. Then there is a long exact sequence</p>
 <p>$$
-\cdots \longrightarrow H^k_{dR}(M) \longrightarrow H^k_{dR}(U) \oplus H^k_{dR}(V) \longrightarrow H^k_{dR}(U \cap V) \xrightarrow{\ \delta\ } H^{k+1}_{dR}(M) \longrightarrow \cdots,
+\cdots \longrightarrow H^k_{dR}(M) \longrightarrow H^k_{dR}(\Xi) \oplus H^k_{dR}(V) \longrightarrow H^k_{dR}(\Xi \cap V) \xrightarrow{\ \delta\ } H^{k+1}_{dR}(M) \longrightarrow \cdots,
 $$</p>
-<p>where the connecting map $\delta$ is the boundary operator of the short exact sequence of complexes $0 \to \Omega^\bullet(M) \to \Omega^\bullet(U)\oplus\Omega^\bullet(V) \to \Omega^\bullet(U\cap V) \to 0$ built from a partition of unity.</p>
+<p>where the connecting map $\delta$ is the boundary operator of the short exact sequence of complexes $0 \to \Omega^\bullet(M) \to \Omega^\bullet(\Xi)\oplus\Omega^\bullet(V) \to \Omega^\bullet(\Xi\cap V) \to 0$ built from a partition of unity.</p>
 <p><strong>Proof sketch.</strong> The restriction maps fit into a short exact sequence of complexes; the existence of a partition of unity subordinate to the cover shows that the third map is surjective, and the snake lemma produces the long exact sequence.</p>
 <h3 id="the-poincare-lemma">The Poincaré Lemma</h3>
-<p><strong>Definition.</strong> An open set $U \subseteq \mathbb{R}^n$ is <strong>star-shaped</strong> with respect to a point $p$ if for every $x \in U$ the segment from $p$ to $x$ lies in $U$; a manifold is <strong>contractible</strong> if it is homotopy equivalent to a point.</p>
-<p><strong>Theorem (Poincaré lemma).</strong> If $U \subseteq \mathbb{R}^n$ is star-shaped (in particular if $U$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:</p>
+<p><strong>Definition.</strong> An open set $\Xi \subseteq \mathbb{R}^n$ is <strong>star-shaped</strong> with respect to a point $p$ if for every $x \in \Xi$ the segment from $p$ to $x$ lies in $\Xi$; a manifold is <strong>contractible</strong> if it is homotopy equivalent to a point.</p>
+<p><strong>Theorem (Poincaré lemma).</strong> If $\Xi \subseteq \mathbb{R}^n$ is star-shaped (in particular if $\Xi$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:</p>
 <p>$$
-H^k_{dR}(U) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(U) = \mathbb{R}.
+H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}.
 $$</p>
-<p><strong>Proof.</strong> Let $U$ be star-shaped with respect to $0$. Define a <strong>homotopy operator</strong> $h : \Omega^k(U) \to \Omega^{k-1}(U)$ by</p>
+<p><strong>Proof.</strong> Let $\Xi$ be star-shaped with respect to $0$. Define a <strong>homotopy operator</strong> $h : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ by</p>
 <p>$$
 h(\omega) = \int_0^1 t^{k-1}\, \iota_{x}\, \omega(tx)\, dt,
 $$</p>
-<p>where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial_{x^j}$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(U)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.</p>
+<p>where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial/\partial x^j$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(\Xi)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.</p>
 <p><strong>Corollary.</strong> The de Rham cohomology of a contractible manifold is $\mathbb{R}$ in degree $0$ and zero in positive degrees. In particular the de Rham complex computes a homotopy invariant of the manifold, not merely a differential-geometric one.</p>
 <h2 id="integration-of-forms">Integration of Forms</h2>
 <h3 id="orientation-and-the-integral-of-a-top-form">Orientation and the Integral of a Top Form</h3>
 <p><strong>Definition.</strong> An <strong>orientation</strong> of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) > 0$.</p>
-<p><strong>Definition.</strong> Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(U, x)$, and define the <strong>integral</strong> of $\omega$ over $U$ to be the ordinary integral $\int_{x(U)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.</p>
+<p><strong>Definition.</strong> Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(\Xi, x)$, and define the <strong>integral</strong> of $\omega$ over $\Xi$ to be the ordinary integral $\int_{x(\Xi)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.</p>
 <p><strong>Theorem (change of variables).</strong> The integral is well defined, and if $F : N \to M$ is an orientation-preserving diffeomorphism between oriented $n$-manifolds, then</p>
 <p>$$
 \int_N F^*\omega = \int_M \omega
@@ -278,7 +277,7 @@ $$</p>
 </tr>
 <tr>
 <td>Poincaré lemma</td>
-<td>$H^k_{dR}(U) = 0$ for $k \geq 1$ on a star-shaped open set</td>
+<td>$H^k_{dR}(\Xi) = 0$ for $k \geq 1$ on a star-shaped open set</td>
 </tr>
 <tr>
 <td>$\mathrm{vol}$, orientation</td>

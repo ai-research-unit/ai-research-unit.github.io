@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -63,19 +62,19 @@
 $$</p>
 <p>and $B(\mathcal{H})$ denotes the algebra of all bounded operators. The <strong>adjoint</strong> $T^*$ of $T \in B(\mathcal{H})$ is the unique bounded operator with $\langle Tv, w\rangle = \langle v, T^*w\rangle$ for all $v, w$; $T$ is <strong>self-adjoint</strong> if $T = T^*$, <strong>unitary</strong> if $T^*T = TT^* = 1$, and <strong>positive</strong> if $\langle Tv, v\rangle \geq 0$ for all $v$. The <strong>unitary group</strong></p>
 <p>$$
-U(\mathcal{H}) = \{T \in B(\mathcal{H}) : T \text{ unitary}\}
+\mathrm{U}(\mathcal{H}) = \{T \in B(\mathcal{H}) : T \text{ unitary}\}
 $$</p>
 <p>is a group under composition. The systematic theory of Hilbert spaces, their completions, their orthonormal bases and the spectral theorem for self-adjoint operators is that ; the elementary facts quoted here — the Cauchy–Schwarz inequality, the parallelogram law, the existence of orthogonal projections onto closed subspaces, and the orthogonal decomposition $\mathcal{H} = M \oplus M^\perp$ for a closed subspace $M$ — are standard and are used with that attribution.</p>
-<p><strong>Definition.</strong> The <strong>strong operator topology</strong> on $B(\mathcal{H})$ is the initial topology for the family of maps $\{T \mapsto Tv\}_{v \in \mathcal{H}}$, where $\mathcal{H}$ carries its norm topology; a net $T_\alpha \to T$ strongly if and only if $T_\alpha v \to Tv$ for every $v$. The <strong>weak operator topology</strong> is the initial topology for the family $\{T \mapsto \langle Tv, w\rangle\}_{v,w \in \mathcal{H}}$. The unitary group $U(\mathcal{H})$ carries the subspace topology from the strong operator topology; with it, $U(\mathcal{H})$ is a topological group.</p>
-<p><strong>Proposition.</strong> On $U(\mathcal{H})$ the strong and weak operator topologies coincide. Multiplication is strongly continuous, and inversion is strongly continuous on $U(\mathcal{H})$; hence $U(\mathcal{H})$ is a topological group for the strong operator topology. Equivalently, $U(\mathcal{H})$ is a closed subgroup of the product $\mathcal{H}^{\mathcal{H}}$ with the product topology.</p>
+<p><strong>Definition.</strong> The <strong>strong operator topology</strong> on $B(\mathcal{H})$ is the initial topology for the family of maps $\{T \mapsto Tv\}_{v \in \mathcal{H}}$, where $\mathcal{H}$ carries its norm topology; a net $T_\alpha \to T$ strongly if and only if $T_\alpha v \to Tv$ for every $v$. The <strong>weak operator topology</strong> is the initial topology for the family $\{T \mapsto \langle Tv, w\rangle\}_{v,w \in \mathcal{H}}$. The unitary group $\mathrm{U}(\mathcal{H})$ carries the subspace topology from the strong operator topology; with it, $\mathrm{U}(\mathcal{H})$ is a topological group.</p>
+<p><strong>Proposition.</strong> On $\mathrm{U}(\mathcal{H})$ the strong and weak operator topologies coincide. Multiplication is strongly continuous, and inversion is strongly continuous on $\mathrm{U}(\mathcal{H})$; hence $\mathrm{U}(\mathcal{H})$ is a topological group for the strong operator topology. Equivalently, $\mathrm{U}(\mathcal{H})$ is a closed subgroup of the product $\mathcal{H}^{\mathcal{H}}$ with the product topology.</p>
 <p><strong>Proof.</strong> For unitary $T$ and any $v$, $\|Tv - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle Tv, v\rangle$, so convergence of the matrix coefficients $\langle T_\alpha v, v\rangle$ at every $v$ implies strong convergence; replacing $\langle T_\alpha v, v\rangle$ by $\langle T_\alpha v, Tv\rangle$ in the same identity, and using unitarity of $T$, shows that weak convergence of $T_\alpha$ to $T$ implies strong convergence. Multiplication: $\|T_\alpha S_\alpha v - TSv\| \leq \|T_\alpha(S_\alpha v - Sv)\| + \|(T_\alpha - T)Sv\| = \|S_\alpha v - Sv\| + \|(T_\alpha - T)Sv\|$ by unitarity. Inversion: $\|T_\alpha^{-1}v - T^{-1}v\| = \|T_\alpha^{-1}(v - T_\alpha T^{-1}v)\| = \|v - T_\alpha T^{-1}v\| \to 0$. The last statement follows from the description of the initial topology as a subspace of the product.</p>
 <h3 id="definition-and-continuity">Definition and Continuity</h3>
 <p><strong>Definition.</strong> A <strong>unitary representation</strong> of a locally compact group $G$ on a Hilbert space $\mathcal{H}$ is a group homomorphism</p>
 <p>$$
-\pi : G \longrightarrow U(\mathcal{H})
+\pi : G \longrightarrow \mathrm{U}(\mathcal{H})
 $$</p>
-<p>that is continuous for the strong operator topology on $U(\mathcal{H})$; equivalently, the map $G \times \mathcal{H} \to \mathcal{H}$, $(g, v) \mapsto \pi(g)v$, is continuous. The space $\mathcal{H}$ is the <strong>representation space</strong> of $\pi$, written $\mathcal{H}_\pi$ when several representations occur; the <strong>degree</strong> of $\pi$ is $\dim \mathcal{H}_\pi$.</p>
-<p><strong>Theorem (continuity criteria).</strong> For a homomorphism $\pi : G \to U(\mathcal{H})$ the following are equivalent:</p>
+<p>that is continuous for the strong operator topology on $\mathrm{U}(\mathcal{H})$; equivalently, the map $G \times \mathcal{H} \to \mathcal{H}$, $(g, v) \mapsto \pi(g)v$, is continuous. The space $\mathcal{H}$ is the <strong>representation space</strong> of $\pi$, written $\mathcal{H}_\pi$ when several representations occur; the <strong>degree</strong> of $\pi$ is $\dim \mathcal{H}_\pi$.</p>
+<p><strong>Theorem (continuity criteria).</strong> For a homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ the following are equivalent:</p>
 <p><strong>(a)</strong> $\pi$ is strongly continuous;</p>
 <p><strong>(b)</strong> $\pi$ is weakly continuous, that is, $g \mapsto \langle \pi(g)v, w\rangle$ is continuous for all $v, w \in \mathcal{H}$;</p>
 <p><strong>(c)</strong> for every $v \in \mathcal{H}$, the <strong>matrix coefficient</strong> $c_{v,w}(g) = \langle \pi(g)v, w\rangle$ is continuous for every $w$, equivalently $g \mapsto \pi(g)v$ is continuous;</p>
@@ -85,7 +84,7 @@ $$</p>
 <p><strong>Example (characters of an abelian group).</strong> Let $G$ be locally compact abelian. Every character $\chi : G \to S^1$ of <em>Abelian Topological Groups</em> is a one-dimensional unitary representation on $\mathbb{C}$ with $\pi_\chi(g)z = \chi(g)z$. Conversely every irreducible unitary representation of $G$ is one-dimensional and of this form: the operators $\pi(g)$ commute with one another, so they lie in the commutant of an irreducible representation, which is $\mathbb{C}\cdot 1$ by Schur's lemma below, and each $\pi(g)$ is therefore a scalar. Hence the unitary dual of a locally compact abelian group, in the sense of the classification of irreducible unitary representations, is <em>exactly</em> the Pontryagin dual $G^\vee$ of <em>Pontryagin Duality</em>; the two theories coincide in the abelian case, and this is the sense in which the present article generalises Pontryagin duality to the non-abelian case.</p>
 <p><strong>Example (finite-dimensional representations of a compact Lie group).</strong> If $K$ is a compact Lie group and $\rho : K \to GL_n(\mathbb{C})$ is a continuous representation, then averaging any inner product on $\mathbb{C}^n$ over $K$ against its normalised Haar measure — the invariant integration of Part III on the compact group — produces an invariant inner product for which $\rho$ is unitary, with the same underlying homomorphism; this is the <strong>Weyl unitary trick</strong>. In its Lie-algebraic form, a finite-dimensional representation of a complex semisimple Lie algebra is completely reducible because it integrates to a representation of a compact real form, to which the averaging argument applies. The finite-dimensional representation theory of compact Lie groups, including the classification by highest weights of <em>Representations of Lie Algebras</em> and <em>Root Systems and Classification</em>, therefore embeds in the unitary theory, and every finite-dimensional unitary representation is completely reducible by the orthogonal-complement argument above.</p>
 <h3 id="equivalence-intertwiners-and-direct-sums">Equivalence, Intertwiners and Direct Sums</h3>
-<p><strong>Definition.</strong> Let $\pi : G \to U(\mathcal{H})$ and $\pi' : G \to U(\mathcal{H}')$ be unitary representations.</p>
+<p><strong>Definition.</strong> Let $\pi : G \to \mathrm{U}(\mathcal{H})$ and $\pi' : G \to \mathrm{U}(\mathcal{H}')$ be unitary representations.</p>
 <p><strong>(a)</strong> An <strong>intertwining operator</strong> or <strong>intertwiner</strong> is a bounded linear map $T : \mathcal{H} \to \mathcal{H}'$ with $T\pi(g) = \pi'(g)T$ for all $g \in G$. The set of intertwiners is a vector space $\operatorname{Hom}_G(\pi, \pi')$, and $\operatorname{End}_G(\pi)$ is the <strong>commutant</strong> of $\pi$.</p>
 <p><strong>(b)</strong> $\pi$ and $\pi'$ are <strong>unitarily equivalent</strong>, written $\pi \cong \pi'$, if there is a unitary intertwiner $T : \mathcal{H} \to \mathcal{H}'$; they are <strong>isomorphic</strong> if there is an invertible intertwiner, and this is the same relation.</p>
 <p><strong>(c)</strong> $\pi$ is <strong>irreducible</strong> if $\mathcal{H} \neq 0$ and the only closed subspaces invariant under all $\pi(g)$, $g \in G$, are $0$ and $\mathcal{H}$; otherwise $\pi$ is <strong>reducible</strong>. A representation is <strong>completely reducible</strong> if it is a direct sum of irreducible representations.</p>
@@ -151,7 +150,7 @@ $$</p>
 <li>What is <em>not</em> deferred: the representation theory as such — equivalence, irreducibility, intertwiners, Schur's lemma, tensor products, contragredients, restrictions, and the classification statements in the compact and abelian cases — is developed here and in the next three articles, and is used throughout the corpus.</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<p>A unitary representation of a locally compact group $G$ is a strongly continuous homomorphism $\pi : G \to U(\mathcal{H})$ into the unitary group of a Hilbert space; strong, weak and matrix-coefficient continuity coincide, and the identity $\|\pi(g)v - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle\pi(g)v, v\rangle$ is the basic tool. Intertwiners, unitary equivalence, subrepresentations, direct sums, tensor products and contragredients form the algebraic frame; every closed invariant subspace has a closed invariant orthogonal complement, so unitary representations are reduced by their invariant subspaces, and finite-dimensional ones are completely reducible.</p>
+<p>A unitary representation of a locally compact group $G$ is a strongly continuous homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ into the unitary group of a Hilbert space; strong, weak and matrix-coefficient continuity coincide, and the identity $\|\pi(g)v - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle\pi(g)v, v\rangle$ is the basic tool. Intertwiners, unitary equivalence, subrepresentations, direct sums, tensor products and contragredients form the algebraic frame; every closed invariant subspace has a closed invariant orthogonal complement, so unitary representations are reduced by their invariant subspaces, and finite-dimensional ones are completely reducible.</p>
 <p>Schur's lemma states that the commutant of an irreducible unitary representation is $\mathbb{C}\cdot 1$ (the finite-dimensional case proved by eigenvalues, the general case by the spectral theorem of Part III), that intertwiners between inequivalent irreducibles vanish, and that the irreducible unitary representations of an abelian group are exactly its characters, so that the unitary dual of an abelian group is its Pontryagin dual. For a compact group the irreducibles are finite-dimensional, every unitary representation is a direct sum of them with finite multiplicities, the matrix coefficients satisfy the orthogonality relations and are dense in $L^2(K)$ (Peter–Weyl), and the irreducibles are classified by dominant weights; the proofs of these facts use the invariant integral and the spectral theory of compact operators and belong to Part III.</p>
 <p>The unitary dual $\operatorname{Irr}(G)$ is the set of equivalence classes of irreducible unitary representations; it is $G^\vee$ for abelian $G$, the dominant weights for compact $G$, the coadjoint orbits for a nilpotent Lie group by the orbit method, and a union of principal, discrete and complementary series for $SL_2(\mathbb{R})$. The decomposition of an arbitrary unitary representation into a direct integral over $\operatorname{Irr}(G)$, the convolution algebra $L^1(G)$, the group $C^*$-algebra, the regular representation and the Plancherel theorem are <em>Analysis on Groups</em> in Part III; the algebraic representation theory is completed by the induced representations, Mackey theory and type classification.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -172,7 +171,7 @@ $$</p>
 <td>Inner product and norm</td>
 </tr>
 <tr>
-<td>$B(\mathcal{H})$, $U(\mathcal{H})$</td>
+<td>$B(\mathcal{H})$, $\mathrm{U}(\mathcal{H})$</td>
 <td>Bounded operators; unitary group, a topological group</td>
 </tr>
 <tr>
@@ -184,7 +183,7 @@ $$</p>
 <td>Topologies of pointwise convergence of $Tv$ and of $\langle Tv, w\rangle$</td>
 </tr>
 <tr>
-<td>$\pi : G \to U(\mathcal{H})$</td>
+<td>$\pi : G \to \mathrm{U}(\mathcal{H})$</td>
 <td>A unitary representation; $\deg \pi = \dim \mathcal{H}_\pi$</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -101,7 +100,7 @@ T^{\ddagger}T = \mathrm{id} \quad \Longleftrightarrow \quad T^{\dagger}T = \math
 $$</p>
 <p>so the signed-unitary conformal operators are exactly the isometries of the form, the intersection of the conformal group with the unitary group,</p>
 <p>$$
-\operatorname{CO}(V,\mathfrak{Q}) \cap U(V,h) = O(V,\mathfrak{Q}) ,
+\operatorname{CO}(V,\mathfrak{Q}) \cap \mathrm{U}(V,h) = O(V,\mathfrak{Q}) ,
 $$</p>
 <p>and the sign-reversing adjoint is the obstruction that removes the operators with a nontrivial factor; the unitarity condition defines the orthogonal group inside the conformal group.</p>
 <p><strong>Proof.</strong> The condition $T^{\ddagger}T = \mathrm{id}$ reads $\alpha(T^\dagger T) = \mathrm{id}$; because $\alpha$ is an involution and the identity is even, this is $T^\dagger T = \mathrm{id}$; the adjoint of a conformal operator is $\lambda T^{-1}$, so the condition is $\lambda T^{-1}T = \lambda \mathrm{id} = \mathrm{id}$, that is, $\lambda = 1$; the isometry condition is the definition of the orthogonal group and of the unitary group of the form. The statement is in <em>The Conformal Operator</em> and <em>Unitary Geometry over a Field with Involution</em>.</p>
@@ -112,7 +111,7 @@ $$</p>
 <p><strong>Proof.</strong> For $\alpha = \mathrm{id}$ the signed adjoint is the adjoint by the definition; for a degenerate form the Clifford algebra has zero divisors and the inverse $a^{-1} = a/\mathfrak{Q}(a)$ does not exist for $\mathfrak{Q}(a) = 0$, so the sandwich formula of the adjoint loses its meaning. The statement is the degenerate-case analysis of <em>The Signed Adjoint of the Reflection on a Linear Space</em> and <em>Clifford Algebras</em>.</p>
 <p><strong>Remark (the Weyl tensor and the sign).</strong> The conformal operators of a conformal manifold act on the densities of a conformal weight, and the unitarity condition of the article is the infinitesimal form of the conformal invariance of the conformal Laplacian; the Weyl tensor of <em>The Conformal Operator</em> is the invariant that survives when the signed-unitary operators are divided out, and the sign-reversing adjoint measures the difference between the conformal and the isometric structures. The article owns the operator-layer sign and leaves the manifold theory to the companion.</p>
 <h2 id="summary">Summary</h2>
-<p>A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The <strong>signed adjoint</strong> is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\Theta^\alpha_{a,b})^{\ddagger} = \Theta^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The <strong>signed unitarity condition</strong> $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap U(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.</p>
+<p>A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The <strong>signed adjoint</strong> is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\Theta^\alpha_{a,b})^{\ddagger} = \Theta^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The <strong>signed unitarity condition</strong> $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -155,7 +154,7 @@ $$</p>
 <td>Signed unitarity condition</td>
 </tr>
 <tr>
-<td>$\operatorname{CO}(V,\mathfrak{Q}) \cap U(V,h) = O(V,\mathfrak{Q})$</td>
+<td>$\operatorname{CO}(V,\mathfrak{Q}) \cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$</td>
 <td>Signed-unitary conformal operators, the isometries</td>
 </tr>
 <tr>

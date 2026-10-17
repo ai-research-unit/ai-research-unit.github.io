@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,13 +51,13 @@
       <div class="article-body">
         <h1 id="riemannian-quaternions"><strong>Riemannian Quaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_0^2-\vec q\cdot\vec q$. A <strong>Riemannian quaternion</strong> is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.</p>
+<p>Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_t^2-\vec q\cdot\vec q$. A <strong>Riemannian quaternion</strong> is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.</p>
 <p>The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the <em>general equivalence principle</em>. The third is the <strong>rope</strong>, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.</p>
 <p>The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$. A quaternion is $\tilde q = q_te_t+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_t$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_te_t-\vec q$, and the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.</p>
 <h2 id="the-frame">The Frame</h2>
 <h3 id="a-scaled-basis">A Scaled Basis</h3>
-<p><strong>Definition.</strong> A <strong>frame</strong> on a domain $U\subseteq\mathbb{R}^4$ is a quadruple of nowhere-zero real functions $\imath_0,\imath_1,\imath_2,\imath_3$ on $U$. The <strong>frame elements</strong> are</p>
+<p><strong>Definition.</strong> A <strong>frame</strong> on a domain $\Omega\subseteq\mathbb{R}^4$ is a quadruple of nowhere-zero real functions $\imath_0,\imath_1,\imath_2,\imath_3$ on $\Omega$. The <strong>frame elements</strong> are</p>
 <p>$$
 \hat\imath_\mu = \imath_\mu e_\mu, \qquad \mu = 0,1,2,3,
 $$</p>
@@ -74,7 +73,7 @@ $$</p>
 A = w_0a_0\hat\imath_0 + w_1a_1\hat\imath_1 + w_2a_2\hat\imath_2 + w_3a_3\hat\imath_3, \qquad a_\mu\in\mathbb{R},
 $$</p>
 <p>where $w_0 = 1$ and $w_1 = w_2 = w_3 = \tfrac13$ are the source's weights and $a_0,a_1,a_2,a_3$ are the four coefficient functions. The weights are a normalisation of the components and are part of the definition; with all four weights equal to one, the Riemannian quaternion is an arbitrary quaternion in the frame basis.</p>
-<p><strong>Proposition.</strong> The Riemannian quaternion is an element of $\mathbb{H}$, and in the fixed basis $e_0,e_1,e_2,e_3$ its components are $a_0\imath_0$ and $\tfrac13a_k\imath_k$.</p>
+<p><strong>Proposition.</strong> The Riemannian quaternion is an element of $\mathbb{H}$, and in the fixed basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its components are $a_0\imath_0$ and $\tfrac13a_k\imath_k$.</p>
 <p><em>Proof.</em> Each frame element is a real multiple of a basis element, so a real linear combination of the four is a quaternion, and the coordinate read-off is immediate. Multiplication of two Riemannian quaternions is the multiplication of the algebra, in the fixed basis, once the coordinates are read off.</p>
 <p><strong>Remark (the parity weights).</strong> The weights $1$ and $\tfrac13$ are the source's convention, stated there as a parity between the scalar and the sum of the three spatial components, by the observation that on the light cone the total change in space equals the change in time. They introduce a single numerical factor $\tfrac19$ in the spatial part of the interval, displayed below, so that the interval of the frame equals the interval of the unscaled coordinates with the three spatial coefficients measured in units of three. With unit weights the same construction is free of that factor.</p>
 <h2 id="the-interval">The Interval</h2>
@@ -135,7 +134,7 @@ $$</p>
 <p>With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a temporal frame element with a spatial one are the source's <strong>3-rope</strong>.</p>
 <p><em>Proof.</em> Write $\mathrm dA = c_0\hat\imath_0+\vec c$ with $\vec c = \sum_k c_k\hat\imath_k$ and $c_k = w_k\mathrm da_k$. Then $\mathrm dA^2 = c_0^2\hat\imath_0^2 + c_0\hat\imath_0\vec c + \vec c c_0\hat\imath_0 + \vec c^2$. The vector part of $\vec c^2$ is zero, because the square of a pure quaternion is a scalar, and the two middle terms are each $c_0\hat\imath_0\vec c$, with $\hat\imath_0$ central; adding them gives the display.</p>
 <p><strong>Corollary.</strong> The rope vanishes exactly when the displacement has no temporal part or no spatial part, that is when $\mathrm da_0 = 0$ or $\mathrm da_1 = \mathrm da_2 = \mathrm da_3 = 0$; otherwise it is a nonzero pure quaternion, and it lies in the three-dimensional subspace spanned by $\hat\imath_0\hat\imath_1,\hat\imath_0\hat\imath_2,\hat\imath_0\hat\imath_3$.</p>
-<p><em>Proof.</em> The frame elements are linearly independent, so the rope is zero exactly when every product $\mathrm da_0\mathrm da_k$ vanishes, that is when one of the two factors fails. The three products $\hat\imath_0\hat\imath_k = \imath_0\imath_k e_k$ span the vector subspace with the frame scales, and the rope is a real linear combination of them.</p>
+<p><em>Proof.</em> The frame elements are linearly independent, so the rope is zero exactly when every product $\mathrm da_0\mathrm da_k$ vanishes, that is when one of the two factors fails. The three products $\hat\imath_0\hat\imath_k = \imath_0\imath_k \vec e_k$ span the vector subspace with the frame scales, and the rope is a real linear combination of them.</p>
 <p>The rope is the companion of the metric in the construction: the interval is the scalar part of the square of a displacement and is quadratic in the displacement alone, while the rope is the vector part and is bilinear in the temporal part and the spatial part. A displacement that is purely temporal or purely spatial has no rope, and a general displacement has both an interval and a rope.</p>
 <p><strong>Remark.</strong> The interval and the rope together are the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2) + \mathrm{Vect}(\mathrm dA^2)$, so a Riemannian quaternion displacement is determined by the pair, and the interval is the scalar half of the data of the square. The rope, the vector half, records the failure of the displacement to be either purely temporal or purely spatial in the frame.</p>
 <h2 id="an-example-the-frame-of-a-central-function">An Example: the Frame of a Central Function</h2>
@@ -173,12 +172,12 @@ $$</p>
 <td>Quaternion algebra over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Fixed basis, $e_k^2=-e_0$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Fixed basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
-<td>$\tilde q = q_0e_0+\vec q$</td>
-<td>Quaternion, scalar part $q_0$, vector part $\vec q$</td>
+<td>$\tilde q = q_te_t+\vec q$</td>
+<td>Quaternion, scalar part $q_t$, vector part $\vec q$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc},\mathrm{Vect}$</td>

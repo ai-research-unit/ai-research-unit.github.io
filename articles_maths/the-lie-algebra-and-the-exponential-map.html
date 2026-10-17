@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -139,10 +138,10 @@ $$</p>
 <p><strong>Proof.</strong> (a) The binomial theorem applies to commuting $A, B$ and gives the product series. (b) The inverse is $\exp(-A)$ from (a) with $B = -A$. For the determinant, reduce to the triangular case: over $\mathbb{C}$ every matrix is conjugate to an upper triangular matrix; for upper triangular $T$ with diagonal entries $t_i$ the matrix $e^T$ is upper triangular with diagonal $\exp(t_i)$, so $\det e^T = \prod_i \exp(t_i) = \exp(\sum_i t_i) = \exp(\operatorname{tr}T)$; conjugating by (d) and extending from $\mathbb{C}$ to $\mathbb{K}$ gives the general case. (c) is immediate from the series. (d) is $(BAB^{-1})^k = B A^k B^{-1}$.</p>
 <p><strong>Example.</strong> For $A = \begin{pmatrix} 0 & -t \\ t & 0 \end{pmatrix}$ one has $\exp(A) = \begin{pmatrix} \cos t & -\sin t \\ \sin t & \cos t\end{pmatrix}$, the rotation by angle $t$. This exhibits the exponential as the map from the line of skew matrices to the circle group $SO(2)$, and it shows that $\exp$ is not injective: $\exp(A) = I$ for $t = 2\pi$.</p>
 <h3 id="local-diffeomorphism">Local Diffeomorphism</h3>
-<p><strong>Theorem (inverse function theorem for the exponential).</strong> The exponential map is a local diffeomorphism at the origin of $\mathrm{G}$: there is an open neighbourhood $U$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_U : U \to V$ is a diffeomorphism.</p>
+<p><strong>Theorem (inverse function theorem for the exponential).</strong> The exponential map is a local diffeomorphism at the origin of $\mathrm{G}$: there is an open neighbourhood $\Omega$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_\Omega : \Omega \to V$ is a diffeomorphism.</p>
 <p><strong>Proof.</strong> The differential $d(\exp)_0$ is the identity by the corollary above, hence invertible; the inverse function theorem for smooth manifolds gives a neighbourhood on which $\exp$ is a diffeomorphism onto its image.</p>
 <p><strong>Corollary.</strong> The pair $(G, \mathrm{G})$ is locally determined by $\mathrm{G}$: exponential coordinates on $V$ identify a neighbourhood of the identity with a neighbourhood of $0$ in the vector space $\mathrm{G}$.</p>
-<p><strong>Remark (global failure of injectivity and surjectivity).</strong> The exponential is only a local diffeomorphism in general. It is not injective: for the circle group $U(1)$ the kernel consists of the multiples of $2\pi i$. It is not surjective onto a connected group in general: for $G = SL_2(\mathbb{R})$ there are matrices with no real logarithm, so they lie outside the image of $\exp$. It is surjective when $G$ is connected and nilpotent, and when $G$ is compact and connected; the failure of surjectivity is a global phenomenon with no counterpart in the algebra.</p>
+<p><strong>Remark (global failure of injectivity and surjectivity).</strong> The exponential is only a local diffeomorphism in general. It is not injective: for the circle group $\mathrm{U}(1)$ the kernel consists of the multiples of $2\pi i$. It is not surjective onto a connected group in general: for $G = SL_2(\mathbb{R})$ there are matrices with no real logarithm, so they lie outside the image of $\exp$. It is surjective when $G$ is connected and nilpotent, and when $G$ is compact and connected; the failure of surjectivity is a global phenomenon with no counterpart in the algebra.</p>
 <h3 id="naturality-and-conjugation">Naturality and Conjugation</h3>
 <p><strong>Definition.</strong> For $g \in G$ the <strong>conjugation</strong> by $g$ is the automorphism $c_g : G \to G$, $c_g(h) = ghg^{-1}$.</p>
 <p><strong>Definition.</strong> The <strong>adjoint representation</strong> of $G$ is $\operatorname{Ad} : G \to GL(\mathrm{G})$, $\operatorname{Ad}(g) = d(c_g)_e$.</p>
@@ -195,7 +194,7 @@ $$</p>
 <h2 id="example-the-unit-quaternions">Example: The Unit Quaternions</h2>
 <p>Let $G = S^3 = \{q \in \mathbb{H} : |q| = 1\}$, the group of unit quaternions under multiplication; it is the spin group $\operatorname{Spin}(3)$, and it is a Lie group of dimension $3$. The tangent space at $1$ is the space of purely imaginary quaternions,</p>
 <p>$$
-\mathrm{G} = \operatorname{Im}\mathbb{H} = \{u = u_1 e_1 + u_2 e_2 + u_3 e_3\},
+\mathrm{G} = \operatorname{Im}\mathbb{H} = \{u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z\},
 $$</p>
 <p>which is a three-dimensional real vector space. With the commutator bracket inherited from the associative algebra $\mathbb{H}$, the bracket of two imaginary quaternions is</p>
 <p>$$

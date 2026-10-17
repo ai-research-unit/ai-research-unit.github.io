@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -86,7 +85,7 @@ $$</p>
 <p><strong>Corollary (the kernel of the differential).</strong> $d\exp_X$ is invertible exactly when $\operatorname{ad}_X$ has no eigenvalue in $2\pi i\,\mathbb{Z}\setminus\{0\}$; in particular $d\exp_0 = \mathrm{id}$, so $\exp$ is a local diffeomorphism at the origin.</p>
 <p><em>Proof.</em> The eigenvalues of $\frac{1-\exp(-\operatorname{ad}_X)}{\operatorname{ad}_X}$ are $\frac{1-\exp(-\lambda)}{\lambda}$ on the generalised eigenspaces of $\operatorname{ad}_X$ with eigenvalue $\lambda$, and such an expression vanishes exactly for $\lambda \in 2\pi i\mathbb{Z}\setminus\{0\}$; at $X = 0$ the series is the identity.</p>
 <h3 id="the-local-diffeomorphism">The Local Diffeomorphism</h3>
-<p><strong>Theorem (the logarithm).</strong> There is an open neighbourhood $U$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp$ restricts to a diffeomorphism $U \to V$ whose inverse is a smooth map $\log : V \to U$.</p>
+<p><strong>Theorem (the logarithm).</strong> There is an open neighbourhood $\Omega$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp$ restricts to a diffeomorphism $\Omega \to V$ whose inverse is a smooth map $\log : V \to \Omega$.</p>
 <p><em>Proof.</em> The differential at the origin is the identity, so the inverse function theorem of <em>Smooth Manifolds and Differential Geometry</em> applies at $0$ and gives open neighbourhoods and a smooth inverse; the inverse is the logarithm, which is therefore defined and smooth near the identity.</p>
 <p><strong>Corollary (exponential coordinates).</strong> The map $X \mapsto \exp X$ carries the coordinate $X$ of $\mathrm{G}$ to a chart at the identity of $G$, the <strong>exponential chart</strong>; in this chart the group law is the Campbell--Baker--Hausdorff series, and the left-invariant fields are the coordinate derivations transformed by the same series.</p>
 <p><em>Proof.</em> The chart is the inverse of $\log$ and the group law in it is by definition $\log(\exp X\exp Y)$, which is the Campbell--Baker--Hausdorff series expanded in the neighbourhood of the identity; the field statement is the transformation rule for the trivialisation.</p>
@@ -97,7 +96,7 @@ $$</p>
 \log(\exp X\exp Y) = X + Y + \tfrac12[X,Y] + \tfrac1{12}\bigl([X,[X,Y]] + [Y,[Y,X]]\bigr) + \cdots ,
 $$</p>
 <p>a series in the free Lie algebra on two generators whose terms of degree $n$ are polynomials of degree $n$ in $X$ and $Y$; the series is the exponential of the Lie series $\log(\exp(X)\exp(Y))$, and its coefficients are the Bernoulli numbers.</p>
-<p><em>Proof.</em> The series is obtained by taking the logarithm of the product of the two exponentials in the free associative algebra on two generators and collecting the result in the free Lie algebra; the bracket operation enters through the associative product, and the integration of the differential equation $\frac{\partial}{\partial t}Z(t) = \frac{\operatorname{ad}_{Z(t)}}{1-\exp(-\operatorname{ad}_{Z(t)})}\dot Z(t)$ with $Z(t) = \log(\exp(tX)\exp(Y))$ produces the displayed low order terms. The convergence and the closed form are those of the free Lie algebra, developed in <em>Universal Enveloping Algebras</em>.</p>
+<p><em>Proof.</em> The series is obtained by taking the logarithm of the product of the two exponentials in the free associative algebra on two generators and collecting the result in the free Lie algebra; the bracket operation enters through the associative product, and the integration of the differential equation $\frac{\partial}{\partial t}Z(t) = \frac{\operatorname{ad}_{Z(t)}}{1-\exp(-\operatorname{ad}_{Z(t)})}\left(dZ/dt\right)(t)$ with $Z(t) = \log(\exp(tX)\exp(Y))$ produces the displayed low order terms. The convergence and the closed form are those of the free Lie algebra, developed in <em>Universal Enveloping Algebras</em>.</p>
 <p><strong>Corollary.</strong> The group law is recovered from the bracket by the series, so the Lie algebra determines the local Lie group; the map $\exp$ is a homomorphism exactly when the bracket vanishes, that is on an abelian algebra, and the first obstruction is the bilinear term $\tfrac12[X,Y]$.</p>
 <p><em>Proof.</em> The first two terms of the series are $X + Y$ and the group is abelian exactly when the commutator vanishes; the first nonzero correction away from the abelian case is the bracket term.</p>
 <h3 id="the-adjoint-representation">The Adjoint Representation</h3>
@@ -132,7 +131,7 @@ $$</p>
 <td>the exponential map</td>
 </tr>
 <tr>
-<td>$\log : V \to U$</td>
+<td>$\log : V \to \Omega$</td>
 <td>the local inverse, the logarithm</td>
 </tr>
 <tr>

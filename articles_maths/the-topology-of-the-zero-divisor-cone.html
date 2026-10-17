@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,20 +53,20 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra is not a division algebra, and its zero divisors are not scattered through it: they form a cone. This article is the topology of that cone. Nothing below is read from the four forms. The cone is the <strong>singular set</strong> of the algebra, singled out by the failure of invertibility alone, and the only metric input is the topological norm</p>
 <p>$$
-\|\tilde Q\|_E=\Bigl(\sum_{\mu=0}^{3}|Q_\mu|^{2}\Bigr)^{1/2}
+\|\tilde Q\|_E=\Bigl(\sum_{\mu\in\{t,x,y,z\}}|Q_\mu|^{2}\Bigr)^{1/2}
 $$</p>
 <p>of the underlying real space $\mathbb{B}\cong\mathbb{R}^8$ (<em>Topology in the Space of Biquaternions</em>). That norm is one of the equivalent norms of that space; any equivalent norm gives the same topology, the same singular set and the same link, and it is the only metric input of the article.</p>
 <p>That the singular set is also the null set $\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$ of the algebraic norm is a computational convenience and nothing more. The equation describes the cone; it does not equip the space with its topology, which is fixed by the linear structure alone. The algebraic norm itself — its multiplicativity, its real forms and its polarisations — belongs to <em>Norm and Invertibility in the General Quaternionic Algebra</em>, and the zero-divisor set in its own right to <em>Zero Divisors of the Biquaternion Algebra</em>. The space with its unique topology is <em>Topology in the Space of Biquaternions</em>; the ambient Euclidean structure, the topological unit sphere and the contractibility of the algebra are <em>The Euclidean Topology of the Biquaternion Algebra</em>; the complement of the cone, with its group structure and its own topology, is <em>The Biquaternion Unit Group as a Topological Group</em>; and the projective geometry of the complex lines the cone contains — the quadric surface, its two rulings and its polarity — is <em>The Null Quadric and Its Projective Geometry</em>.</p>
 <p><strong>Scope.</strong> The article owns the singular set as a closed algebraic cone, its smooth structure away from its apex, its contractibility, its link with the topological unit sphere, and the homotopy invariants of that link, together with the sphere of real roots of $-1$ that the pure real slice carries. The ambient Euclidean structure and the unit sphere are quoted from <em>The Euclidean Topology of the Biquaternion Algebra</em> rather than re-derived; the two facts about the cone that are read from that sphere are proved here.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, and central imaginary unit $i$ with $i^{2}=-1$; the natural conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$ and fixes $e_0$ and $i$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the topological norm is $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central imaginary unit $i$ with $i^{2}=-1$; the natural conjugation ${}^{\natural}$ negates $\vec e_x,\vec e_y,\vec e_z$ and fixes $e_t$ and $i$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, and the topological norm is $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$.</p>
 <h2 id="the-singular-set">The Singular Set</h2>
-<p><strong>Definition (the singular set).</strong> An element is <strong>singular</strong> if it is nonzero and not invertible. A <strong>zero divisor</strong> is a nonzero $\tilde Q$ for which there is a nonzero $\tilde R$ with $\tilde Q\tilde R=0$ or $\tilde R\tilde Q=0$. For the biquaternion algebra the two notions coincide (<em>Zero Divisors of the Biquaternion Algebra</em>): a nonzero element is singular exactly when it is a zero divisor. The <strong>singular set</strong> of the algebra is</p>
+<p><strong>Definition (the singular set).</strong> An element is <strong>singular</strong> if it is nonzero and not invertible. A <strong>zero divisor</strong> is a nonzero $\tilde Q_1$ for which there is a nonzero $\tilde Q_2$ with $\tilde Q_1\tilde Q_2=0$ or $\tilde Q_2\tilde Q_1=0$. For the biquaternion algebra the two notions coincide (<em>Zero Divisors of the Biquaternion Algebra</em>): a nonzero element is singular exactly when it is a zero divisor. The <strong>singular set</strong> of the algebra is</p>
 <p>$$
 \mathcal{N}=\mathcal{Z}\cup\{0\},\qquad \mathcal{Z}=\{\tilde Q\in\mathbb{B}:\tilde Q\neq0\text{ and }\tilde Q\text{ is not invertible}\},
 $$</p>
 <p>and $\mathcal{Z}$ is the <strong>zero-divisor cone</strong>. The group of units is its complement, $\mathbb{B}^\times=\mathbb{B}\setminus\mathcal{N}$ (<em>The Biquaternion Unit Group as a Topological Group</em>).</p>
 <p>The two descriptions agree with the null set of the algebraic norm.</p>
-<p><strong>Proposition (the singular set is the null set; quoted).</strong> $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (<em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>; <em>Zero Divisors of the Biquaternion Algebra</em>).</p>
+<p><strong>Proposition (the singular set is the null set; quoted).</strong> $\mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, with $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$; so $\mathcal{Z}=\mathcal{N}\setminus\{0\}$ (<em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>; <em>Zero Divisors of the Biquaternion Algebra</em>).</p>
 <p><strong>Proposition (elementary properties).</strong> With the Euclidean topology of the ambient space:</p>
 <ol>
 <li>$\mathcal{N}$ is <strong>closed</strong>, and $\mathcal{Z}$ is neither open nor closed.</li>
@@ -80,7 +79,7 @@ $$</p>
 <p>The apex is the only singular point of the cone, and away from it the cone is a manifold.</p>
 <p><strong>Proposition (regularity).</strong> The algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$ is irreducible over $\mathbb{C}$, and its complex gradient</p>
 <p>$$
-\bigl(2Q_0,2Q_1,2Q_2,2Q_3\bigr)
+\bigl(2Q_t,2Q_x,2Q_y,2Q_z\bigr)
 $$</p>
 <p>vanishes only at $\tilde Q=0$. Hence $0$ is the only singular point of $\mathcal{N}$, and the punctured cone</p>
 <p>$$
@@ -107,9 +106,9 @@ $$</p>
 <p><strong>Proposition (the link is a $5$-manifold).</strong> $L$ is a closed connected real $5$-manifold, and it is an $S^1$-bundle over the space of complex lines contained in the cone.</p>
 <p><em>Proof.</em> In the linear coordinates</p>
 <p>$$
-Z_0=Q_0-iQ_3,\quad Z_1=-iQ_1-Q_2,\quad Z_2=-iQ_1+Q_2,\quad Z_3=Q_0+iQ_3
+Z_0=Q_t-iQ_3,\quad Z_1=-iQ_1-Q_y,\quad Z_2=-iQ_1+Q_y,\quad Z_3=Q_t+iQ_3
 $$</p>
-<p>the algebraic norm is $Z_0Z_3-Z_1Z_2$, and the two norms are related by the identity $|Z|^{2}=2\|\tilde Q\|_E^{2}$, since $|Z_0|^{2}+|Z_3|^{2}=2(|Q_0|^{2}+|Q_3|^{2})$ and $|Z_1|^{2}+|Z_2|^{2}=2(|Q_1|^{2}+|Q_2|^{2})$. A non-zero null element is exactly</p>
+<p>the algebraic norm is $Z_0Z_3-Z_1Z_2$, and the two norms are related by the identity $|Z|^{2}=2\|\tilde Q\|_E^{2}$, since $|Z_0|^{2}+|Z_3|^{2}=2(|Q_t|^{2}+|Q_z|^{2})$ and $|Z_1|^{2}+|Z_2|^{2}=2(|Q_x|^{2}+|Q_y|^{2})$. A non-zero null element is exactly</p>
 <p>$$
 (Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)
 $$</p>
@@ -125,7 +124,7 @@ $$</p>
 <p>$$
 q:L\longrightarrow\mathbb{P}(\mathcal{N}),\qquad \varphi(u,v)\longmapsto([u],[v]),
 $$</p>
-<p>is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(\exp(i\theta)u_0,\exp(-i\theta)v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is <em>The Null Quadric and Its Projective Geometry</em>.</p>
+<p>is well defined and is a fibre bundle whose fibre over $([u],[v])$ is the circle of pairs $(\exp(i\theta)u_t,\exp(-i\theta)v_0)$; the base is the projectivised cone $\mathbb{P}(\mathcal{N})$, a copy of $\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$ whose geometry — the Segre quadric, its rulings and its polarity — is <em>The Null Quadric and Its Projective Geometry</em>.</p>
 <p><strong>Proposition (homotopy invariants of the link).</strong> The quotient map $S^3\times S^3\to L$ is a principal $S^1$-bundle, and its long exact homotopy sequence, with $\pi_1(S^3\times S^3)=\pi_2(S^3\times S^3)=0$, gives</p>
 <p>$$
 \pi_1(L)=0,\qquad \pi_2(L)\cong\pi_1(S^1)=\mathbb{Z}.
@@ -135,39 +134,39 @@ $$</p>
 <h2 id="the-pure-slices-and-the-sphere-of-real-roots-of-math131">The Pure Slices and the Sphere of Real Roots of $-1$</h2>
 <p>A biquaternion is <strong>pure</strong> if its complex scalar part vanishes,</p>
 <p>$$
-P=\{\tilde Q\in\mathbb{B}:Q_0=0\}=\{Q_1e_1+Q_2e_2+Q_3e_3:Q_k\in\mathbb{C}\}\cong\mathbb{C}^3,
+P=\{\tilde Q\in\mathbb{B}:Q_t=0\}=\{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z:Q_k\in\mathbb{C}\}\cong\mathbb{C}^3,
 $$</p>
 <p>a contractible real six-dimensional subspace of the algebra.</p>
 <p>Complex conjugation splits $P$ into two real three-dimensional subspaces. The real condition $\bar{\tilde Q}=\tilde Q$ gives the <strong>pure real quaternions</strong></p>
 <p>$$
-P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\cong\mathbb{R}^3,
+P\cap\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\cong\mathbb{R}^3,
 $$</p>
 <p>and the imaginary condition $\bar{\tilde Q}=-\tilde Q$ gives</p>
 <p>$$
-P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}\cong\mathbb{R}^3.
+P\cap i\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}\cong\mathbb{R}^3.
 $$</p>
 <p>Both slices are closed, and both are subspaces of real dimension three inside the eight-dimensional algebra.</p>
 <p><strong>Proposition (the cone meets a pure slice only at the apex).</strong> $\mathcal{N}\cap(P\cap\mathbb{H}_{\mathbb{B}})=\{0\}$ and $\mathcal{N}\cap(P\cap i\mathbb{H}_{\mathbb{B}})=\{0\}$.</p>
-<p><em>Proof.</em> Write an element of the first slice as $\tilde Q=q_1e_1+q_2e_2+q_3e_3$ with $q_k\in\mathbb{R}$. Its algebraic norm is</p>
+<p><em>Proof.</em> Write an element of the first slice as $\tilde Q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $q_k\in\mathbb{R}$. Its algebraic norm is</p>
 <p>$$
-\langle\tilde Q,\tilde Q\rangle_{\natural}=q_1^{2}+q_2^{2}+q_3^{2},
+\langle\tilde Q,\tilde Q\rangle_{\natural}=q_x^{2}+q_y^{2}+q_z^{2},
 $$</p>
-<p>a sum of three squares, which vanishes only at $\tilde Q=0$; so $\mathcal{N}$ meets the first slice only at the apex. Write an element of the second slice as $\tilde Q=i(q'_1e_1+q'_2e_2+q'_3e_3)$, again with $q'_k\in\mathbb{R}$. Its algebraic norm is</p>
+<p>a sum of three squares, which vanishes only at $\tilde Q=0$; so $\mathcal{N}$ meets the first slice only at the apex. Write an element of the second slice as $\tilde Q=i(q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z)$, again with $q'_k\in\mathbb{R}$. Its algebraic norm is</p>
 <p>$$
-\langle\tilde Q,\tilde Q\rangle_{\natural}=-\bigl((q'_1)^{2}+(q'_2)^{2}+(q'_3)^{2}\bigr),
+\langle\tilde Q,\tilde Q\rangle_{\natural}=-\bigl((q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}\bigr),
 $$</p>
 <p>the negative of a sum of three squares, which likewise vanishes only at $\tilde Q=0$.</p>
-<p><strong>Remark (what the argument does and does not use).</strong> The two slices are <strong>not</strong> subalgebras, and no multiplication property is invoked above. Neither is closed under multiplication: $e_1^{2}=-e_0$ leaves the first slice, and $(ie_1)(ie_2)=-e_3$ leaves the second. What makes each slice meet the cone only at the apex is that the algebraic norm restricted to it is <strong>definite</strong> — positive on the first slice, negative on the second.</p>
+<p><strong>Remark (what the argument does and does not use).</strong> The two slices are <strong>not</strong> subalgebras, and no multiplication property is invoked above. Neither is closed under multiplication: $\vec e_x^{2}=-e_t$ leaves the first slice, and $(i\vec e_x)(i\vec e_y)=-\vec e_z$ leaves the second. What makes each slice meet the cone only at the apex is that the algebraic norm restricted to it is <strong>definite</strong> — positive on the first slice, negative on the second.</p>
 <p><strong>Proposition (the sphere of real roots of $-1$).</strong> The unit sphere of the slice $P\cap\mathbb{H}_{\mathbb{B}}$ is</p>
 <p>$$
-S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^{2}=-e_0\},
+S^2=\{\mu\in\mathbb{H}_{\mathbb{B}}:\mu^{2}=-e_t\},
 $$</p>
 <p>the sphere of <strong>real roots of $-1$</strong>; it is compact, connected and simply connected, with $\pi_2(S^2)\cong\mathbb{Z}$, and it is <strong>not</strong> a group. It is a homogeneous space of the unit quaternions and the base of the Hopf fibration $S^3\to S^2$; the sphere of roots of $+1$ in the slice $i\mathbb{H}_{\mathbb{B}}$ is its image under multiplication by the central unit $i$ and is homeomorphic to it.</p>
-<p><em>Proof.</em> A real root of $-1$ in the slice is an element $\mu=q_1e_1+q_2e_2+q_3e_3$ with $q_k\in\mathbb{R}$ and $\mu^{2}=-e_0$. Since</p>
+<p><em>Proof.</em> A real root of $-1$ in the slice is an element $\mu=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with $q_k\in\mathbb{R}$ and $\mu^{2}=-e_t$. Since</p>
 <p>$$
-\mu^{2}=-\bigl(q_1^{2}+q_2^{2}+q_3^{2}\bigr)e_0,
+\mu^{2}=-\bigl(q_x^{2}+q_y^{2}+q_z^{2}\bigr)e_t,
 $$</p>
-<p>the condition is $q_1^{2}+q_2^{2}+q_3^{2}=1$: the real roots of $-1$ are exactly the unit vectors of the three-dimensional slice, so the set is the ordinary $2$-sphere. Its cell structure gives compactness, connectedness and simple connectedness, and $\pi_2(S^2)\cong\mathbb{Z}$ is standard; conjugation by the unit quaternions acts transitively on it, so it is the homogeneous space $Sp(1)/U(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$. It is not a group, since the only spheres that carry a continuous group structure are $S^0$, $S^1$ and $S^3$. For the roots of $+1$: if $\mu$ is a root of $-1$ in the slice then $(i\mu)^{2}=i^{2}\mu^{2}=e_0$, and conversely every root of $+1$ in $i\mathbb{H}_{\mathbb{B}}$ is of this form, so the two spheres correspond under multiplication by $i$ and are homeomorphic. The classifications of the roots of $-1$, $0$ and $+1$ are <em>Square Roots of Minus One, Zero and Plus One in the Biquaternion Algebra</em>.</p>
+<p>the condition is $q_x^{2}+q_y^{2}+q_z^{2}=1$: the real roots of $-1$ are exactly the unit vectors of the three-dimensional slice, so the set is the ordinary $2$-sphere. Its cell structure gives compactness, connectedness and simple connectedness, and $\pi_2(S^2)\cong\mathbb{Z}$ is standard; conjugation by the unit quaternions acts transitively on it, so it is the homogeneous space $Sp(1)/\mathrm{U}(1)$ and the base of the Hopf fibration $S^{3}\to S^{2}$. It is not a group, since the only spheres that carry a continuous group structure are $S^0$, $S^1$ and $S^3$. For the roots of $+1$: if $\mu$ is a root of $-1$ in the slice then $(i\mu)^{2}=i^{2}\mu^{2}=e_t$, and conversely every root of $+1$ in $i\mathbb{H}_{\mathbb{B}}$ is of this form, so the two spheres correspond under multiplication by $i$ and are homeomorphic. The classifications of the roots of $-1$, $0$ and $+1$ are <em>Square Roots of Minus One, Zero and Plus One in the Biquaternion Algebra</em>.</p>
 <p>The three-dimensional spaces above are the pure real slices. The Minkowski slices $\mathbb{M}_\pm$ behave differently: their null set is the three-dimensional light cone, treated in the Lorentzian reading of the real slices (<em>Biquaternion Lorentzian and Conformal Geometry</em>, §<em>The Lorentzian Slice and Its Light Cone</em>). The point of the contrast is that the cone of the algebra meets the pure slices only at its apex while it cuts the Minkowski slices in a genuine three-dimensional cone.</p>
 <h2 id="summary">Summary</h2>
 <ul>
@@ -191,7 +190,7 @@ $$</p>
 <td>Biquaternion algebra as a real topological space; contractible</td>
 </tr>
 <tr>
-<td>$\|\tilde Q\|_E = \big(\sum_{\mu=0}^{3} \lvert Q_\mu\rvert^2\big)^{1/2}$</td>
+<td>$\|\tilde Q\|_E = \big(\sum_{\mu\in\{t,x,y,z\}} \lvert Q_\mu\rvert^2\big)^{1/2}$</td>
 <td>Topological norm of the underlying real space; makes $\mathbb{B}$ a topological algebra</td>
 </tr>
 <tr>
@@ -223,7 +222,7 @@ $$</p>
 <td>Projectivised cone; its geometry is <em>The Null Quadric and Its Projective Geometry</em></td>
 </tr>
 <tr>
-<td>$P = \{Q_0 = 0\} \cong \mathbb{C}^3$</td>
+<td>$P = \{Q_t = 0\} \cong \mathbb{C}^3$</td>
 <td>Pure biquaternions; contractible</td>
 </tr>
 <tr>
@@ -231,7 +230,7 @@ $$</p>
 <td>The two pure real slices, each $\cong \mathbb{R}^3$</td>
 </tr>
 <tr>
-<td>$S^2 = \{\mu \in \mathbb{H}_{\mathbb{B}} : \mu^2 = -e_0\}$</td>
+<td>$S^2 = \{\mu \in \mathbb{H}_{\mathbb{B}} : \mu^2 = -e_t\}$</td>
 <td>Sphere of real roots of $-1$</td>
 </tr>
 <tr>

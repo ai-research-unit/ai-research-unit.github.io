@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,7 +60,7 @@
 <p>$$
 U \cdot T = UTU^{\dagger} .
 $$</p>
-<p>Then $\cdot$ is a left action of the unitary group $U(A,h)$ on $B(A)$: $1 \cdot T = T$ and $(UV)\cdot T = U\cdot(V\cdot T)$. The action preserves the adjoint, $(U\cdot T)^{\dagger} = U\cdot T^{\dagger}$, and it therefore preserves self-adjointness, skew-adjointness, normality and unitarity.</p>
+<p>Then $\cdot$ is a left action of the unitary group $\mathrm{U}(A,h)$ on $B(A)$: $1 \cdot T = T$ and $(UV)\cdot T = U\cdot(V\cdot T)$. The action preserves the adjoint, $(U\cdot T)^{\dagger} = U\cdot T^{\dagger}$, and it therefore preserves self-adjointness, skew-adjointness, normality and unitarity.</p>
 <p><em>Proof.</em> The unit acts by $1T1 = T$, and $(UV)T(UV)^{\dagger} = U(VTV^{\dagger})U^{\dagger}$ by the anti-multiplicativity and the identity $(UV)^{\dagger} = V^{\dagger}U^{\dagger} = V^{-1}U^{-1}$. For the adjoint, $(UTU^{\dagger})^{\dagger} = (U^{\dagger})^{\dagger}T^{\dagger}U^{\dagger} = UT^{\dagger}U^{\dagger}$, using the order two of the adjoint operation. The preservation of the four properties is immediate from the preservation of the adjoint.</p>
 <p><strong>Proposition (the covariance of the matrix elements).</strong> For a unitary $U$ and an operator $T$,</p>
 <p>$$
@@ -115,7 +114,7 @@ $$</p>
 <p><strong>Remark (what congruence forgets and what it keeps).</strong> A congruence of the form keeps the spectrum, because the transport is a similarity; it forgets self-adjointness, because the conjugate of a self-adjoint operator of $h$ is self-adjoint for the congruent form and not for $h$ unless the congruence is an isometry. This is the precise sense in which the layer's operator theory lives on the pair (algebra, form) and not on the algebra alone: the form is exactly the datum that selects the unitary group inside the general linear group, and with it the self-adjoint operators and the spectral theory.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-matrices">The Matrices</h3>
-<p><strong>Example (the matrices).</strong> Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, whose Gram matrix in the standard basis is the identity of size $n^{2}$. A congruent form has Gram matrix $\Gamma^{T}\varsigma(\Gamma)$, which is positive definite for every invertible $\Gamma$; the inertia of the identity is $(n^{2},0,0)$, so every congruent form is positive definite by Sylvester's law, and the inertia $(n^{2},0,0)$ is the complete invariant over $\mathbb{C}$ as well. The unitary group of $h$ is $U(n^{2})$ by <em>Unitary and Isometric Operators of the Form</em>, §<em>The Matrices</em>, and it is the stabiliser of the form; the unitary equivalence of the operators is the conjugation $T \mapsto UTU^{\dagger}$ by a unitary of $M_{n^{2}}(\mathbb{C})$. The example is the model in which both relations are visible on the same object, the congruence acting on the Gram matrix and the unitary equivalence on the operator. At $n=2$ the Gram matrix is $I_4$ and the congruence by $\Gamma=I_4+E_{12}$ gives</p>
+<p><strong>Example (the matrices).</strong> Let $A = M_{n}(\mathbb{C})$ with the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, whose Gram matrix in the standard basis is the identity of size $n^{2}$. A congruent form has Gram matrix $\Gamma^{T}\varsigma(\Gamma)$, which is positive definite for every invertible $\Gamma$; the inertia of the identity is $(n^{2},0,0)$, so every congruent form is positive definite by Sylvester's law, and the inertia $(n^{2},0,0)$ is the complete invariant over $\mathbb{C}$ as well. The unitary group of $h$ is $\mathrm{U}(n^{2})$ by <em>Unitary and Isometric Operators of the Form</em>, §<em>The Matrices</em>, and it is the stabiliser of the form; the unitary equivalence of the operators is the conjugation $T \mapsto UTU^{\dagger}$ by a unitary of $M_{n^{2}}(\mathbb{C})$. The example is the model in which both relations are visible on the same object, the congruence acting on the Gram matrix and the unitary equivalence on the operator. At $n=2$ the Gram matrix is $I_4$ and the congruence by $\Gamma=I_4+E_{12}$ gives</p>
 <p>$$
 \Gamma=\begin{pmatrix}1&1&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad \Gamma^{T}\Gamma=\begin{pmatrix}1&1&0&0\\1&2&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 $$</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -93,7 +92,7 @@ $$</p>
 <p>for the noncompact type, where the bracket is that of $\mathrm{G}$ and $\|[X,Y]\|$ is computed in the invariant inner product.</p>
 <p><strong>Proof sketch.</strong> For the compact type, the geodesic symmetry argument gives the formula $R(X,Y)Z = -[[X,Y],Z]$ (the curvature of a symmetric space with the canonical connection, which is the Levi-Civita connection), and the contraction with the invariant inner product, using the identity $\langle[[X,Y],Y],X\rangle = -\|[X,Y]\|^2$ that follows from $\operatorname{Ad}$-invariance, gives the sectional curvature. The noncompact type is the sign reversal of the duality, explained below.</p>
 <p><strong>Corollary (constancy of the curvature invariants).</strong> On a symmetric space the curvature tensor, the Ricci tensor and the scalar curvature are parallel; the Ricci tensor is a multiple of the restriction to $\mathrm{M}$ of the Killing form of $\mathrm{G}$, with the sign of the type, and the space is Einstein precisely when the isotropy representation is irreducible, by Schur's lemma applied to the invariant bilinear form $\mathrm{Ric}$.</p>
-<p><strong>Example (the four families of rank-one).</strong> The compact rank-one symmetric spaces are $S^n = SO(n+1)/SO(n)$ and $\mathbb{RP}^n = S^n/\{\pm1\}$ of constant curvature $+1$; the complex projective spaces $\mathbb{CP}^m = S^{2m+1}/S^1 = SU(m+1)/S(U(m)\times U(1))$ of real dimension $2m$; the quaternionic projective spaces $\mathbb{HP}^m = S^{4m+3}/Sp(1) = Sp(m+1)/(Sp(m)\times Sp(1))$ of real dimension $4m$; and the Cayley projective plane $\mathbb{OP}^2 = F_4/\mathrm{Spin}(9)$ of dimension $16$. Their curvature is positive but, except in the real case, not constant, and together with the four hyperbolic spaces they are the simply connected symmetric spaces of rank one. The Cayley plane is the only one not obtained from an associative division algebra, and its geometry is that of the octonions.</p>
+<p><strong>Example (the four families of rank-one).</strong> The compact rank-one symmetric spaces are $S^n = SO(n+1)/SO(n)$ and $\mathbb{RP}^n = S^n/\{\pm1\}$ of constant curvature $+1$; the complex projective spaces $\mathbb{CP}^m = S^{2m+1}/S^1 = SU(m+1)/S(\mathrm{U}(m)\times \mathrm{U}(1))$ of real dimension $2m$; the quaternionic projective spaces $\mathbb{HP}^m = S^{4m+3}/Sp(1) = Sp(m+1)/(Sp(m)\times Sp(1))$ of real dimension $4m$; and the Cayley projective plane $\mathbb{OP}^2 = F_4/\mathrm{Spin}(9)$ of dimension $16$. Their curvature is positive but, except in the real case, not constant, and together with the four hyperbolic spaces they are the simply connected symmetric spaces of rank one. The Cayley plane is the only one not obtained from an associative division algebra, and its geometry is that of the octonions.</p>
 <h2 id="the-two-types-and-cartan-duality">The Two Types and Cartan Duality</h2>
 <h3 id="compact-and-noncompact-type">Compact and Noncompact Type</h3>
 <p><strong>Definition.</strong> A symmetric space $M = G/H$ is of <strong>compact type</strong> if $G$ is compact and the Ricci curvature is nonnegative (indeed $M$ has nonnegative sectional curvature); it is of <strong>noncompact type</strong> if it is simply connected, has nonpositive sectional curvature, and is not a product with a Euclidean factor; it is <strong>of Euclidean type</strong> if it is flat, hence a quotient of $\mathbb{R}^n$ by a discrete group of translations. The <strong>Cartan duality</strong> assigns to a symmetric pair of noncompact type its <strong>compact dual</strong>, obtained by replacing the isotropy complement $\mathrm{M}$ by $i\mathrm{M}$ in the complexification, which yields a symmetric pair of compact type with the same isotropy algebra.</p>
@@ -149,7 +148,7 @@ $$</p>
 </tr>
 <tr>
 <td>C I</td>
-<td>$Sp(n)/U(n)$</td>
+<td>$Sp(n)/\mathrm{U}(n)$</td>
 <td>$\mathrm{U}(n)$</td>
 </tr>
 <tr>
@@ -159,7 +158,7 @@ $$</p>
 </tr>
 <tr>
 <td>D III</td>
-<td>$SO(2n)/U(n)$</td>
+<td>$SO(2n)/\mathrm{U}(n)$</td>
 <td>$\mathrm{U}(n)$</td>
 </tr>
 </tbody>
@@ -222,7 +221,7 @@ $$</p>
 <p><strong>Corollary (local structure and holonomy).</strong> A complete manifold is locally symmetric if and only if its curvature tensor is parallel, equivalently if the holonomy group of the Levi-Civita connection at a point fixes the curvature tensor at that point; its universal cover is then a symmetric space, and the locally symmetric space is the quotient of that symmetric space by a discrete group of isometries acting freely and properly discontinuously.</p>
 <p><strong>Corollary (the holonomy classification).</strong> The irreducible simply connected Riemannian manifolds that are not locally symmetric have restricted holonomy one of</p>
 <p>$$
-SO(n), \quad U(n), \quad SU(n), \quad Sp(n), \quad Sp(n)\cdot Sp(1), \quad G_2, \quad \mathrm{Spin}(7) ,
+SO(n), \quad \mathrm{U}(n), \quad SU(n), \quad Sp(n), \quad Sp(n)\cdot Sp(1), \quad G_2, \quad \mathrm{Spin}(7) ,
 $$</p>
 <p>by the Berger classification of the holonomy groups; the locally symmetric manifolds are the remaining equality cases, in which the holonomy is the compact part of the isotropy representation of the symmetric pair. The special holonomy manifolds themselves — Calabi–Yau, hyperkähler, quaternionic Kähler, $G_2$ and $\mathrm{Spin}(7)$ — are <em>Kähler Geometry</em>, <em>Calabi–Yau Manifolds</em>, <em>Quaternionic Geometry</em>, <em>$G_2$ and $\mathrm{Spin}(7)$ Manifolds</em>, written in parallel, and the holonomy classification is cited there.</p>
 <p><strong>Example (locally symmetric but not symmetric).</strong> A compact Riemann surface of genus $g \geq 2$ is locally symmetric of noncompact type — its universal cover is the hyperbolic plane, which is symmetric — but a generic such surface is not itself symmetric: the geodesic symmetries do not descend, and the moduli space of hyperbolic structures has positive dimension. This is the same phenomenon as the failure of Mostow rigidity in dimension two, and it lies outside this article. In dimension at least three the local symmetric structures are rigid, and a finite-volume locally symmetric space of noncompact type is determined by its fundamental group.</p>
@@ -309,7 +308,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Hol}$, special holonomy</td>
-<td>Holonomy of the Levi-Civita connection; $U(n)$, $SU(n)$, $Sp(n)$, $G_2$, $\mathrm{Spin}(7)$</td>
+<td>Holonomy of the Levi-Civita connection; $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $G_2$, $\mathrm{Spin}(7)$</td>
 </tr>
 </tbody>
 </table></div>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -70,7 +69,7 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 </li>
 </ol>
 <p>The article proceeds as follows. Relative entropy is recalled with the properties that make it basic. The states of $\mathbb{B}$ and their logarithms are fixed. The closed form is derived. Positivity, asymmetry and monotonicity are read off in the Bloch geometry. Araki's relative modular operator is identified, because it is the object the modular companions generalize. The field-theoretic setting, in which relative entropy is the right quantity precisely where entanglement entropy is not, is recalled. The article closes with the established/interpretation/open split.</p>
-<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. A state is $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$ and $\mathrm{Tr}(\tilde\rho)=1$; the GNS data are those of <em>The GNS Construction in the Biquaternion Framework</em>.</p>
+<p><strong>Conventions.</strong> Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Hermitian conjugation is ${}^{*}$, and the trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. A state is $\tilde\rho\in\mathbb{M}_+$ with $\tilde\rho\ge0$ and $\mathrm{Tr}(\tilde\rho)=1$; the GNS data are those of <em>The GNS Construction in the Biquaternion Framework</em>.</p>
 <h2 id="relative-entropy-the-standard-quantity">Relative Entropy: The Standard Quantity</h2>
 <h3 id="definition">Definition</h3>
 <p>Let $\rho$ and $\sigma$ be density matrices on a finite-dimensional Hilbert space, with $\rho$ a state and $\sigma$ positive of trace one. The <strong>relative entropy</strong> (Umegaki, 1962) is
@@ -105,8 +104,8 @@ with conditional relative entropies defined recursively.</li>
 <h3 id="density-matrices-in-math49">Density Matrices in $\mathbb{M}_+$</h3>
 <p>By the GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde A)=\mathrm{Tr}(\tilde\rho\tilde A)$ with $\tilde\rho\in\mathbb{M}_+$ positive and of trace one. Writing
 $$
-\tilde\rho=\tfrac12\big(e_0+i\vec r\cdot\mathbf e\big),\qquad
-\vec r\in\mathbb{R}^3,\qquad \mathbf e=(e_1,e_2,e_3),
+\tilde\rho=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
+\vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
 $$
 the eigenvalues are
 $$
@@ -116,16 +115,16 @@ and positivity plus the trace condition give exactly
 $$
 \tilde\rho\ \text{a state}\iff |\vec r|\le1 .
 $$
-The state is <strong>pure</strong> on the Bloch sphere $|\vec r|=1$, where $\tilde\rho=\tilde\Pi(\vec u_r)=\tfrac12(e_0+i\vec u_r)$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is <strong>faithful</strong> on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the <strong>trace state</strong> at $\vec r=0$, where $\tilde\rho=\tfrac12e_0$ and $\omega$ is the normalized algebra trace.</p>
+The state is <strong>pure</strong> on the Bloch sphere $|\vec r|=1$, where $\tilde\rho=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is a minimal idempotent and $\tilde\rho^2=\tilde\rho$; it is <strong>faithful</strong> on the open Bloch ball $|\vec r|<1$, where both eigenvalues are positive; and it is the <strong>trace state</strong> at $\vec r=0$, where $\tilde\rho=\tfrac12e_t$ and $\omega$ is the normalized algebra trace.</p>
 <p>The parameter is a genuine superposition coordinate: $\vec r$ is the Bloch vector of the state in the basis of the Pauli matrices, and a generic state has all three components nonzero. The computations below are performed on such generic vectors.</p>
 <h3 id="the-logarithm-of-a-biquaternion-state">The Logarithm of a Biquaternion State</h3>
-<p>The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\vec u_r$ one has $(i\vec u_r)^2=e_0$, so
+<p>The logarithm of a positive element of $\mathbb{B}$ is again an element of $\mathbb{B}$, and for the state above it takes a closed form. Two ingredients give it. First, the exponential of an element in the plane of a unit direction: for a unit pure quaternion $\vec u_r$ one has $(i\vec u_r)^2=e_t$, so
 $$
-\exp\big(\theta\,i\vec u_r\big)=\cosh\theta\,e_0+i\sinh\theta\,\vec u_r.
+\exp\big(\theta\,i\vec u_r\big)=\cosh\theta\,e_t+i\sinh\theta\,\vec u_r.
 $$
 Second, the determinant of the state, $\det\mathsf{M}_2(\tilde\rho)=\lambda_+\lambda_-=\tfrac14(1-|\vec r|^2)=\langle\tilde\rho\rangle_{\natural}$, which vanishes exactly on the pure boundary. Writing the logarithm in the same form as the state,
 $$
-\log\tilde\rho=b_0\,e_0+i\,\vec b\cdot\mathbf e,
+\log\tilde\rho=b_0\,e_t+i\,\vec b\cdot\mathbf e,
 $$
 the scalar part is fixed by the product of eigenvalues and the vector part by their ratio,
 $$
@@ -134,7 +133,7 @@ b_0=\tfrac12\log\det\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4},\qquad
 $$
 so that
 $$
-\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_0
+\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}\,e_t
 +i\,\mathrm{artanh}\big(|\vec r|\big)\,\vec u_r,
 \qquad |\vec r|<1 .
 $$
@@ -144,8 +143,8 @@ The formula was checked by exponentiating it and recovering $\tilde\rho$ coeffic
 <h3 id="the-closed-form">The Closed Form</h3>
 <p>Let
 $$
-\tilde\rho=\tfrac12\big(e_0+i\vec r\cdot\mathbf e\big),\qquad
-\tilde\sigma=\tfrac12\big(e_0+i\vec s\cdot\mathbf e\big)
+\tilde\rho=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
+\tilde\sigma=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
 $$
 be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde\sigma$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
 $$
@@ -175,7 +174,7 @@ for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: t
 <p>Two features are worth naming. First, the relative entropy of two biquaternion states is <strong>not</strong> a function of the Bloch distance $|\vec r-\vec s|$ alone; it depends on the two radii and the angle, and is therefore sensitive to the direction of the Bloch vectors and not only to their separation. Second, it is manifestly <strong>asymmetric</strong> in the exchange $\vec r\leftrightarrow\vec s$, because the coefficient in front of the bracket is $|\vec r|$ and the bracket is not symmetric.</p>
 <p>The limits are the expected ones. If $\tilde\rho=\tilde\sigma$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
 $$
-S\big(\tfrac12e_0\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
+S\big(\tfrac12e_t\big\|\tilde\sigma\big)=-\tfrac12\log\big(1-|\vec s|^2\big),
 $$
 the relative entropy of the trace state from $\tilde\sigma$, which is finite for every faithful $\tilde\sigma$ and tends to $+\infty$ only as $\tilde\sigma$ itself approaches the pure boundary. If $|\vec r|\to1$ with $|\vec s|<1$ the expression tends to the finite limit
 $$
@@ -240,7 +239,7 @@ which is the boxed expression; the two were checked against each other on the ge
 <p>None of these facts is derived here; they are standard quantum field theory, and the framework transcribes their finite-dimensional shadow.</p>
 <h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
 <p><strong>Established (theorem, imported).</strong> The Umegaki relative entropy and the properties of positivity, joint convexity, monotonicity and additivity; the Araki relative entropy and the relative modular operator for general von Neumann algebras; the finiteness of the relative entropy of a local excitation of the vacuum; the role of the relative modular operator in the Bisognano–Wichmann theorem. All of this is standard.</p>
-<p><strong>Established (recomputed here).</strong> The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\vec u_r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.</p>
+<p><strong>Established (recomputed here).</strong> The states of $\mathbb{B}$ are the Bloch ball $|\vec r|\le1$; the logarithm of a faithful state is $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$; the entropy of a state is $-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r|$; and the relative entropy of two states is the boxed closed form, verified at twelve decimal places against the matrix computation on generic Bloch vectors and on states with one argument at the centre.</p>
 <p><strong>Interpretation.</strong> That the closed form, the identity of the trace, and the zero-divisor boundary give a biquaternion interpretation of relative entropy in which the algebra's own conjugation supplies the logarithm and the relative modular operator. The algebra houses the interpretation; it does not force it.</p>
 <p><strong>Gaps, left visible.</strong> The logarithm exists only on the faithful states, so the framework's own algebra carries the relative entropy of a pair only when the second state is in the interior; on the pure boundary the quantity is an imported limit. The framework supplies no state selection and no dynamics, and the field-theoretic relative entropy lives on a module over $\mathbb{B}$ and not in $\mathbb{B}$. No empirical consequence is derived.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -251,7 +250,7 @@ which is the boxed expression; the two were checked against each other on the ge
 <p><strong>5. Empirical contact.</strong> As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum information theory is derived.</p>
 <h2 id="summary">Summary</h2>
 <p>Relative entropy is Umegaki's $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$, extended to general von Neumann algebras by Araki's relative modular operator. It is the basic quantity of the information-theoretic interpretation of quantum theory because it is monotone under every physical process, and in quantum field theory it is the only one of the two entropic quantities that is defined, the local algebras being type III and carrying no density matrix.</p>
-<p>The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_0+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
+<p>The states of the biquaternion algebra are the elements of $\mathbb{M}_+$ of the form $\tilde\rho=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ with $|\vec r|\le1$, and the logarithm of a faithful state is the biquaternion element $\log\tilde\rho=\tfrac12\log\frac{1-|\vec r|^2}{4}e_t+i\,\mathrm{artanh}(|\vec r|)\vec u_r$. The relative entropy of two biquaternion states is therefore a closed expression in their Bloch vectors,
 $$
 S(\tilde\rho\|\tilde\sigma)
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
@@ -273,8 +272,8 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -286,14 +285,14 @@ verified against the explicit matrix computation on generic superpositions and n
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
-<td>Trace pairing; $\mathrm{Tr}(e_0)=2$</td>
+<td>Trace pairing; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$</td>
+<td>$\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$</td>
 <td>Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$</td>
+<td>$\tilde\rho=\tfrac12(e_t+i\vec r\cdot\mathbf e)$</td>
 <td>State of $\mathbb{B}$; Bloch vector $\vec r$</td>
 </tr>
 <tr>
@@ -325,7 +324,7 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>Vacuum idempotent (pure state)</td>
 </tr>
 <tr>
-<td>$\tfrac12 e_0$</td>
+<td>$\tfrac12 e_t$</td>
 <td>Trace state (maximally mixed)</td>
 </tr>
 </tbody>

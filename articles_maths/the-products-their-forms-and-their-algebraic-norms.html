@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Products, Their Forms and Their Algebraic Norms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-products-their-forms-and-their-algebraic-norms"><strong>The Products, Their Forms and Their Algebraic Norms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The underlying $\mathbb{C}$-vector space of $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries <strong>four general products</strong>, and no more, once the two slots of a product are allowed to carry either the identity or the conjugation of the algebra. Writing $\tilde Q_1$ in the left slot as $\tilde Q_1$ or $\tilde Q_1^{\natural}$, and $\tilde Q_2$ in the right slot as $\tilde Q_2$ or $\tilde Q_2^{*}$, gives the four operations</p>
+<p>$$
+\tilde Q_1\tilde Q_2, \qquad \tilde Q_1\tilde Q_2^{*}, \qquad \tilde Q_1^{\natural}\tilde Q_2, \qquad \tilde Q_1^{\natural}\tilde Q_2^{*} .
+$$</p>
+<p>Only the first is a multiplication in the strict sense — associative, unital, $\mathbb{C}$-bilinear; the other three are the companions the conjugations produce. This article is the compact reference the rest of the Biquaternions category reads: it states the four general products, their <strong>symmetric and antisymmetric parts</strong>, which are the twelve products, their <strong>scalar parts</strong>, which are the four forms, and their <strong>algebraic norms</strong>, which are the four functions of one element the forms produce. The detailed development — the relations between the four, the comparison of the four, the operators they define, their restriction to the remarkable subspaces — belongs to the companion category <em>Biquaternioid Algebraic Structures</em>.</p>
+<p>The four products are defined and studied one by one in <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em>, and the twelve operations obtained from them by symmetrisation and antisymmetrisation are the subject of <em>The 12 Products of the Biquaternioid Complex Space</em> and <em>The 12 Multiplication Tables of the Biquaternioid Complex Space</em>. The four forms are developed in <em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>, the four algebraic norms in <em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>, and their restriction to the remarkable subspaces in <em>Remarkable Subspaces and the Four Forms</em> and <em>Remarkable Subspaces and the Four Algebraic Norms</em>. The element, the basis, the table and the conjugations used here are <em>Introduction to the Biquaternion Algebra</em> and <em>The Group of Involutions</em>.</p>
+<p><strong>Conventions.</strong> $\tilde Q_1 = \sum_{\mu\in\{t,x,y,z\}}Q_{1\mu} e_\mu = Q_{1,0}e_t+\vec Q_1$ and $\tilde Q_2 = Q_{2t}e_t+\vec Q_2$, with coefficients in $\mathbb{C}$; $i$ is central. The conjugations are $\tilde Q^{\natural} = Q_te_t-\vec Q$, $\tilde Q^{*} = \bar Q_te_t-\overline{\vec Q}$ and $(\overline{\tilde Q})_\mu = \bar Q_\mu$, with $\varepsilon = (1,-1,-1,-1)$ the sign vector of $\natural$. The scalar part is written $\mathrm{Sc}$, and the four forms are collected in the single bracket $\langle\cdot,\cdot\rangle$ with a subscript recording the pair.</p>
+<h2 id="the-products">The Products</h2>
+<h3 id="the-two-slots">The Two Slots</h3>
+<p><strong>Definition.</strong> The <strong>four general products</strong> are the operations obtained from the plain bilinear product by applying, independently, the identity or the natural conjugation in the first slot and the identity or the star conjugation in the second:</p>
+<p>$$
+(\tilde Q_1,\tilde Q_2)\longmapsto \tilde Q_1\tilde Q_2, \qquad \tilde Q_1\tilde Q_2^{*}, \qquad \tilde Q_1^{\natural}\tilde Q_2, \qquad \tilde Q_1^{\natural}\tilde Q_2^{*} .
+$$</p>
+<p>Their names record the two slots: the <strong>general plain bilinear</strong> product $\tilde Q_1\tilde Q_2$, the <strong>general plain sesquilinear</strong> product $\tilde Q_1\tilde Q_2^{*}$, the <strong>general quaternionic bilinear</strong> product $\tilde Q_1^{\natural}\tilde Q_2$ and the <strong>general quaternionic sesquilinear</strong> product $\tilde Q_1^{\natural}\tilde Q_2^{*}$.</p>
+<p><strong>Proposition.</strong> The first slot decides the $\mathbb{C}$-linearity and the Gram matrix; the second decides whether the product is bilinear or sesquilinear:</p>
+<p>$$
+\text{bilinear} : \tilde Q_1\tilde Q_2,\ \tilde Q_1^{\natural}\tilde Q_2, \qquad\qquad
+\text{sesquilinear} : \tilde Q_1\tilde Q_2^{*},\ \tilde Q_1^{\natural}\tilde Q_2^{*} .
+$$</p>
+<p>The products are $\mathbb{C}$-bilinear in the second slot always (the second slot carries $*$ or its absence in a $\mathbb{C}$-sesquilinear way), and $\mathbb{C}$-linear in the first slot for the plain pair and conjugate-linear for the quaternionic pair.</p>
+<p><strong>Proof.</strong> The natural conjugation is $\mathbb{R}$-linear and $\mathbb{C}$-antilinear, since $(\lambda\tilde Q_1)^{\natural} = \bar\lambda\tilde Q_1^{\natural}$ for $\lambda\in\mathbb{C}$; the star conjugation is likewise $\mathbb{C}$-antilinear. Hence a product whose first factor carries $\natural$ is conjugate-linear in that factor, and the second slot $*$ makes the product conjugate-linear in the second factor. The plain products are linear in the first factor by bilinearity of the multiplication.</p>
+<h3 id="the-symmetric-and-antisymmetric-parts">The Symmetric and Antisymmetric Parts</h3>
+<p><strong>Definition.</strong> Each of the four general products is split in its two arguments into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>, the half-sum and the half-difference of the two orders. The exchange is the interchange of the arguments for the two bilinear products and the conjugate transpose for the two sesquilinear ones; it is the exchange that keeps the class of the product. The four symmetric parts are written with the <strong>full dot</strong> $\bullet$ and the four antisymmetric with the <strong>wedge</strong> $\wedge$, the subscript naming the slot as it does for the forms: none for the plain bilinear product, ${}_{\natural}$ for the quaternionic bilinear, ${}_{*}$ for the plain sesquilinear and ${}_{\natural*}$ for the quaternionic sesquilinear.</p>
+<p><strong>The symmetric parts.</strong> The four half-sums.</p>
+<p><strong>The symmetric plain bilinear product</strong>, the half-sum of the two orders, the <strong>Jordan product</strong> $\tilde Q_1\bullet\tilde Q_2$:</p>
+<p>$$
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1 .
+$$</p>
+<p><strong>The symmetric quaternionic bilinear product</strong>, the half-sum of the two orders, the <strong>quaternion form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$:</p>
+<p>$$
+\tilde Q_1\bullet_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr] .
+$$</p>
+<p><strong>The symmetric plain sesquilinear product</strong>, the half-sum under the conjugate transpose, the <strong>Hermitian form</strong> $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$:</p>
+<p>$$
+\tilde Q_1\bullet_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr] .
+$$</p>
+<p><strong>The symmetric quaternionic sesquilinear product</strong>, the half-sum under the conjugate transpose:</p>
+<p>$$
+\tilde Q_1\bullet_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\bigl[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1 .
+$$</p>
+<p><strong>The antisymmetric parts.</strong> The four half-differences under the same exchange; all four have zero scalar part and lie in the vector subspace.</p>
+<p><strong>The antisymmetric plain bilinear product</strong>, the half-difference of the two orders, the <strong>outer product</strong> $\tilde Q_1\wedge\tilde Q_2$:</p>
+<p>$$
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The antisymmetric quaternionic bilinear product</strong>, the half-difference of the two orders:</p>
+<p>$$
+\tilde Q_1\wedge_{\natural}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1\bigr)=Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .
+$$</p>
+<p><strong>The antisymmetric plain sesquilinear product</strong>, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$:</p>
+<p>$$
+\tilde Q_1\wedge_{*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-(\tilde Q_1\tilde Q_2^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})=-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>The antisymmetric quaternionic sesquilinear product</strong>, the half-difference under the conjugate transpose, the cross product $\vec Q_1\times\overline{\vec Q_2}$:</p>
+<p>$$
+\tilde Q_1\wedge_{\natural*}\tilde Q_2=\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2} .
+$$</p>
+<p><strong>Proposition.</strong> The dot and the wedge rebuild the four general products, so the eight parts carry the whole of them:</p>
+<p>$$
+\tilde Q_1\tilde Q_2=\tilde Q_1\bullet\tilde Q_2+\tilde Q_1\wedge\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2=\tilde Q_1\bullet_{\natural}\tilde Q_2+\tilde Q_1\wedge_{\natural}\tilde Q_2,\qquad
+\tilde Q_1\tilde Q_2^{*}=\tilde Q_1\bullet_{*}\tilde Q_2+\tilde Q_1\wedge_{*}\tilde Q_2,\qquad
+\tilde Q_1^{\natural}\tilde Q_2^{*}=\tilde Q_1\bullet_{\natural*}\tilde Q_2+\tilde Q_1\wedge_{\natural*}\tilde Q_2 .
+$$</p>
+<p>The eight coordinate formulas and the four reconstructions are verified by recomputation on one hundred random pairs of $\mathbb{B}$.</p>
+<p><strong>Proposition.</strong> Only the plain product is associative, so only its split names a classical algebra: $\tilde Q_1\bullet\tilde Q_2$ is the <strong>Jordan product</strong> of the plain product, commutative and not associative, and $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$ is the <strong>Lie bracket</strong>, the cross product of the vector parts, of algebra $\mathfrak{so}(3)\cong\mathfrak{su}(2)$. The symmetrisations of the other three products are no Jordan algebras, the products being not associative (see §<em>The Twelve Products and Their Names</em> of <em>Conventions in Mathematics</em>).</p>
+<h3 id="the-collapse-to-four-by-scalar-part">The Collapse to Four by Scalar Part</h3>
+<p><strong>Proposition.</strong> The twelve products of the section above collapse to four when the scalar part is taken: the passage to the scalar part keeps the symmetric half and kills the antisymmetric half, so the twelve carry <strong>four scalar parts and no more</strong>, one to each of the four symmetric products and the zero form on the four antisymmetric ones.</p>
+<p><strong>Proof.</strong> The antisymmetric part of $\tilde Q_1\tilde Q_2$ is $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1) = \vec Q_1\times\vec Q_2$, whose scalar part is $0$; the same holds for the other three, since their symmetrised part has the same scalar part as the product and their antisymmetrised part has none. The count of twelve and the assignment of the four forms to the four symmetric products are <em>The 12 Products of the Biquaternioid Complex Space</em>.</p>
+<h2 id="the-four-forms">The Four Forms</h2>
+<p><strong>Definition.</strong> The <strong>four forms</strong> are the scalar parts of the four general products,</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2), \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}), \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2), \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = \mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}),
+$$</p>
+<p>named the <strong>general plain bilinear</strong>, the <strong>general plain sesquilinear</strong> (the <strong>Hermitian</strong>), the <strong>general quaternionic bilinear</strong> and the <strong>general quaternionic sesquilinear</strong> (the <strong>Krein</strong>) form.</p>
+<p><strong>Theorem.</strong> On the coordinates the four forms read</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle = \sum_{\mu}\varepsilon_\mu Q_{1\mu} Q_{2\mu}, \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_{\mu}Q_{1\mu}\bar Q_{2\mu}, \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_{\mu}Q_{1\mu} Q_{2\mu}, \qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = \sum_{\mu}\varepsilon_\mu Q_{1\mu}\bar Q_{2\mu} .
+$$</p>
+<p><strong>Proof.</strong> The scalar part of a product of basis elements is $\mathrm{Sc}(e_\mu e_\nu) = \varepsilon_\mu\delta_{\mu\nu}$. Hence $\mathrm{Sc}(\tilde Q_1\tilde Q_2) = \sum_\mu Q_{1\mu} Q_{2\mu}\varepsilon_\mu$; replacing $\tilde Q_2$ by $\tilde Q_2^{*}$, whose $\mu$-th coefficient is $\varepsilon_\mu\bar Q_{2\mu}$, gives $H = \sum_\mu Q_{1\mu}\varepsilon_\mu\bar Q_{2\mu}\varepsilon_\mu = \sum_\mu Q_{1\mu}\bar Q_{2\mu}$; replacing $\tilde Q_1$ by $\tilde Q_1^{\natural}$, of $\mu$-th coefficient $\varepsilon_\mu Q_{1\mu}$, gives $N = \sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}\varepsilon_\mu = \sum_\mu Q_{1\mu} Q_{2\mu}$; and both replacements give $K = \sum_\mu\varepsilon_\mu Q_{1\mu}\bar Q_{2\mu}$.</p>
+<p><strong>Theorem.</strong> $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are symmetric bilinear forms, of Gram matrices $\mathrm E = \operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$; $\langle\cdot,\cdot\rangle_{*}$ is a Hermitian form of Gram matrix $\mathrm I_4$, positive definite; $\langle\cdot,\cdot\rangle_{\natural*}$ is a Hermitian form of Gram matrix $\mathrm E$, indefinite. Their realifications have signatures</p>
+<p>$$
+B:(4,4), \qquad H:(8,0), \qquad N:(4,4), \qquad K:(2,6),
+$$</p>
+<p>and the classical groups that preserve them are $O_4(\mathbb{C})$, $\mathrm{U}(4)$, $O_4(\mathbb{C})$ and $\mathrm{U}(1,3)$, of real dimensions $12$, $16$, $12$ and $16$.</p>
+<p><strong>Proof.</strong> The Gram matrices are read from the coordinate formulas, the $\mu$-th diagonal entry being $\varepsilon_\mu$, $1$, $1$ and $\varepsilon_\mu$ respectively. $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are complex bilinear; their realification on the real basis $e_t,\dots,\vec e_z,ie_t,\dots,i\vec e_z$ doubles each signature, giving $(4,4)$ and $(4,4)$. $\langle\cdot,\cdot\rangle_{*}$ is the standard positive definite Hermitian form, $\langle\tilde Q,\tilde Q\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^2 > 0$ for $\tilde Q\neq0$, so its realification has signature $(8,0)$. $\langle\cdot,\cdot\rangle_{\natural*}$ has one positive and three negative diagonal entries relative to the complex structure, giving $(2,6)$; the group computations are the classical groups of those forms.</p>
+<p><strong>Corollary.</strong> The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is the only one of the four that is <strong>positive definite</strong>; it is the square of the Euclidean norm, $\langle\tilde Q,\tilde Q\rangle_{*} = \lVert\tilde Q\rVert_E^2$, and it is the unique topological norm of the space. The plain bilinear form $\langle\cdot,\cdot\rangle$ is the <strong>hyperbolic</strong> one, of index $2$ over $\mathbb{C}$: $h_1 = e_t+\vec e_x$, $h_2 = \tfrac12(e_t-\vec e_x)$, $h_3 = \vec e_y+i\vec e_z$, $h_4 = \tfrac12(i\vec e_z-\vec e_y)$ are isotropic with $\langle h_1,h_2\rangle = \langle h_3,h_4\rangle = 1$ and all other pairings zero.</p>
+<h2 id="the-four-algebraic-norms">The Four Algebraic Norms</h2>
+<p><strong>Definition.</strong> The <strong>algebraic norm</strong> attached to a form $\varphi$ is the function of one element obtained by setting the two arguments equal, $\varphi(\tilde Q) = \varphi(\tilde Q,\tilde Q)$. The four forms give</p>
+<p>$$
+\langle\tilde Q\rangle = \sum_{\mu}\varepsilon_\mu Q_\mu^2, \qquad
+\langle\tilde Q\rangle_{*} = \sum_{\mu}\lvert Q_\mu\rvert^2, \qquad
+\langle\tilde Q\rangle_{\natural} = \sum_{\mu}Q_\mu^2, \qquad
+\langle\tilde Q\rangle_{\natural*} = \sum_{\mu}\varepsilon_\mu\lvert Q_\mu\rvert^2 .
+$$</p>
+<p><strong>Theorem.</strong> $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are complex-valued; $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ are real-valued. Only $\langle\cdot,\cdot\rangle_{*}$ is definite — it is $\lVert\tilde Q\rVert_E^2$, positive for $\tilde Q\neq0$. Only $\langle\cdot,\cdot\rangle_{\natural}$ is <strong>multiplicative</strong>,</p>
+<p>$$
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
+$$</p>
+<p>and it is the reduced norm of the algebra: the determinant in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$, the criterion of invertibility, and the vanishing set $\mathcal N = \{\tilde Q\neq0 : \langle\tilde Q\rangle_{\natural} = 0\}$ is the zero-divisor cone.</p>
+<p><strong>Proof.</strong> The formulas are the definition read from the coordinate forms of the previous section. $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$ are sums of $\lvert Q_\mu\rvert^2$ with real coefficients, hence real-valued, while $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{\natural}$ are sums of squares and are complex-valued; $H\geq0$ with equality only at the origin. The multiplicativity of $\langle\cdot\rangle_{\natural}$ is the multiplicativity of the determinant under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>Introduction to the Biquaternion Algebra</em>, where $\langle\tilde Q\rangle_{\natural} = \det\rho(\tilde Q)$; the criterion of invertibility and the zero-divisor cone are the same theorem.</p>
+<p><strong>Corollary.</strong> <strong>No single one of the four is both definite and multiplicative.</strong> The four are the two-slot grid completed: the second slot ($*$ or its absence) decides whether the algebraic norm is real or complex, the first slot ($\natural$ or its absence) whether the Gram matrix is the sign matrix or the identity. On the whole Biquaternions category this is why the word <em>norm</em> must be qualified: the <em>algebraic</em> norm is the function above, valued in $\mathbb{C}$ or $\mathbb{R}$, while the <em>topological</em> norm is the single Euclidean $\lVert\tilde Q\rVert_E$, the square root of $\langle\cdot,\cdot\rangle_{*}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Product</th>
+<th>Scalar part</th>
+<th>Gram</th>
+<th>Kind</th>
+<th>Realification</th>
+<th>Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\cdot,\cdot\rangle$</td>
+<td>$\tilde Q_1\tilde Q_2$</td>
+<td>$\sum_\mu\varepsilon_\mu Q_{1\mu} Q_{2\mu}$</td>
+<td>$\mathrm E$</td>
+<td>symmetric bilinear</td>
+<td>$(4,4)$</td>
+<td>$O_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{*}$</td>
+<td>$\tilde Q_1\tilde Q_2^{*}$</td>
+<td>$\sum_\mu Q_{1\mu}\bar Q_{2\mu}$</td>
+<td>$\mathrm I_4$</td>
+<td>Hermitian, definite</td>
+<td>$(8,0)$</td>
+<td>$\mathrm{U}(4)$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{\natural}$</td>
+<td>$\tilde Q_1^{\natural}\tilde Q_2$</td>
+<td>$\sum_\mu Q_{1\mu} Q_{2\mu}$</td>
+<td>$\mathrm I_4$</td>
+<td>symmetric bilinear</td>
+<td>$(4,4)$</td>
+<td>$O_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>$\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
+<td>$\sum_\mu\varepsilon_\mu Q_{1\mu}\bar Q_{2\mu}$</td>
+<td>$\mathrm E$</td>
+<td>Hermitian, indefinite</td>
+<td>$(2,6)$</td>
+<td>$\mathrm{U}(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion $\mathbb{C}$-space carries exactly four general products, obtained from the plain bilinear product by letting each slot carry the identity or a conjugation: $\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$. Each splits in its two arguments into a symmetric part $\tilde Q_1\bullet\tilde Q_2$ and an antisymmetric part $\tilde Q_1\wedge\tilde Q_2$, so the four general products give the twelve products, and the dot and the wedge rebuild the four. The twelve collapse to four by scalar part, since antisymmetrisation kills the scalar part and symmetrisation preserves it.</p>
+<p>Their scalar parts are the four forms: the general plain bilinear $\langle\cdot,\cdot\rangle$, the general plain sesquilinear or Hermitian $\langle\cdot,\cdot\rangle_{*}$, the general quaternionic bilinear $\langle\cdot,\cdot\rangle_{\natural}$ and the general quaternionic sesquilinear or Krein $\langle\cdot,\cdot\rangle_{\natural*}$, of Gram matrices $\mathrm E, \mathrm I_4, \mathrm I_4, \mathrm E$ and realified signatures $(4,4), (8,0), (4,4), (2,6)$. The first slot decides the Gram matrix and so the signature, the second decides bilinear against sesquilinear and so complex against real values.</p>
+<p>Setting the two arguments equal gives the four algebraic norms $\langle\cdot\rangle, \langle\cdot\rangle_{*}, \langle\cdot\rangle_{\natural}, \langle\cdot\rangle_{\natural*}$ of one element, complex or real according to the slot, of which only $\langle\cdot,\cdot\rangle_{*}$ is definite and only $\langle\cdot,\cdot\rangle_{\natural}$ is multiplicative. $\langle\cdot,\cdot\rangle_{*}$ is the Euclidean norm squared and the unique topological norm; $\langle\cdot,\cdot\rangle_{\natural}$ is the reduced norm, the determinant in $\mathbb{B}\cong M_2(\mathbb{C})$, and it is the criterion of invertibility, its zero set being the cone of the zero divisors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q_1, \tilde Q_2$</td>
+<td>The two elements of a product, left slot and right slot</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
+<td>The four general products</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\bullet\tilde Q_2$, $\tilde Q_1\bullet_{*}\tilde Q_2$, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, $\tilde Q_1\bullet_{\natural*}\tilde Q_2$</td>
+<td>The four symmetric parts, the half-sums; the Jordan product for the plain slot</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\wedge\tilde Q_2$, $\tilde Q_1\wedge_{*}\tilde Q_2$, $\tilde Q_1\wedge_{\natural}\tilde Q_2$, $\tilde Q_1\wedge_{\natural*}\tilde Q_2$</td>
+<td>The four antisymmetric parts, the half-differences; the outer or Lie product for the plain slot</td>
+</tr>
+<tr>
+<td>$(\mathrm{id},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},\mathrm{id})$, $({}^{\natural},{}^{*})$</td>
+<td>The two slots, the subscript of each bracket</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>The scalar part, the coefficient of $e_t$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{\natural*}$</td>
+<td>The four forms and their algebraic norms</td>
+</tr>
+<tr>
+<td>$\varepsilon = (1,-1,-1,-1)$</td>
+<td>The sign vector of $\natural$</td>
+</tr>
+<tr>
+<td>$\mathrm E = \operatorname{diag}(1,-1,-1,-1)$, $\mathrm I_4$</td>
+<td>Gram matrices of $(B,K)$ and of $(H,N)$</td>
+</tr>
+<tr>
+<td>$(4,4), (8,0), (4,4), (2,6)$</td>
+<td>Realified signatures of $\langle\cdot,\cdot\rangle, \langle\cdot,\cdot\rangle_{*}, \langle\cdot,\cdot\rangle_{\natural}, \langle\cdot,\cdot\rangle_{\natural*}$</td>
+</tr>
+<tr>
+<td>$O_4(\mathbb{C}), \mathrm{U}(4), \mathrm{U}(1,3)$</td>
+<td>The groups preserving $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$</td>
+</tr>
+<tr>
+<td>$h_1,\dots,h_4$</td>
+<td>The hyperbolic basis of $\langle\cdot,\cdot\rangle$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>The reduced norm, the multiplicative one</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^2$</td>
+<td>The Euclidean norm squared, the definite one</td>
+</tr>
+<tr>
+<td>$\mathcal N$</td>
+<td>The zero-divisor cone, the null cone of $\langle\cdot,\cdot\rangle_{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md</code>), for the four products defined and developed one by one.</li>
+<li><em>The 12 Products of the Biquaternioid Complex Space</em> (<code>articles_maths/the-12-products-of-the-biquaternioid-complex-space.md</code>) and <em>The 12 Multiplication Tables of the Biquaternioid Complex Space</em> (<code>articles_maths/the-12-multiplication-tables-of-the-biquaternioid-complex-space.md</code>), for the twelve operations and their tables, from which the collapse to four forms is read.</li>
+<li><em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternioid-c-space.md</code>) and <em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md</code>), for the forms and the algebraic norms in full.</li>
+<li><em>Introduction to the Biquaternion Algebra</em> (<code>articles_maths/introduction-to-the-biquaternion-algebra.md</code>), for the element, the basis, the multiplication table and the four conjugations used here.</li>
+<li><em>The Group of Involutions</em> (<code>articles_maths/the-group-of-involutions.md</code>), for the group the four conjugations generate.</li>
+<li><em>Norm and Invertibility in the General Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md</code>), for the reduced norm as the criterion of invertibility and the zero-divisor cone.</li>
+<li><em>Remarkable Subspaces and the Four Forms</em> and <em>Remarkable Subspaces and the Four Algebraic Norms</em> (<code>articles_maths/remarkable-subspaces-and-the-four-forms.md</code>, <code>articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md</code>), for the four forms and their algebraic norms read on the remarkable subspaces.</li>
+<li><em>Bilinear Forms</em>, <em>Hermitian Forms and Unitary Geometry</em> and <em>Quadratic Forms and Polarisation</em>, for the general theory of a bilinear or sesquilinear form, of its Gram matrix, of its signature and of the group that preserves it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

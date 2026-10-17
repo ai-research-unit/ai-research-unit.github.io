@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,10 +54,10 @@
 <p>This article puts the remarkable subspaces of the reduced biquaternion algebra side by side. The eight planes of real dimension two — the six coordinate planes of the involutions and the two idempotent lines — are listed with their defining equations, their bases, their dimensions, their norm type and their <strong>closure</strong> under the multiplication, and the comparison shows the three regularities of the list: the closed planes are exactly the fixed spaces of the three involutions, the idempotent lines alone are the ideals, and the invariance under the involutions is the one property all eight share. The article is the reference of the section: it collects in tables the statements proved in <em>Introduction to the Remarkable Subspaces</em> and <em>Decompositions Along the Remarkable Subspaces</em>, and it places the reduced biquaternion list beside the biquaternion one.</p>
 <p><strong>The results.</strong> The eight spaces are</p>
 <p>$$
-\mathbb{C},\quad \mathbb{C}j,\quad \mathbb{R}\{1,j\},\quad \mathbb{R}\{i,ij\},\quad \mathbb{R}\{1,ij\},\quad \mathbb{R}\{i,j\},\quad \mathbb{C}\Pi_{1},\quad \mathbb{C}\Pi_{2},
+\mathbb{C},\quad \mathbb{C}j,\quad \mathbb{R}\{1,j\},\quad \mathbb{R}\{i,ij\},\quad \mathbb{R}\{1,ij\},\quad \mathbb{R}\{i,j\},\quad \mathbb{C}\Pi_+,\quad \mathbb{C}\Pi_-,
 $$</p>
-<p>and the comparison is summarised by three statements. <strong>The subalgebras among the coordinate planes are the three fixed planes</strong> $\mathbb{C}=\mathbb{R}\{1,i\}$, $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{1,ij\}$; the three anti-fixed planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, because each contains a basis element whose square leaves it. <strong>The ideals are the two idempotent lines alone</strong>, the minimal ideals $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$, which are also the two simple modules; no coordinate plane is an ideal, since none is stable under the whole algebra except the whole space. <strong>All eight planes are permuted by the three involutions</strong>, each involution fixing or exchanging them, and this invariance is the reason the space decomposes along them. Among the subalgebras, $\mathbb{C}$, $\mathbb{R}\{1,ij\}$, $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$ are copies of the complex field — four copies, with the imaginary units $i$, $ij$, $i\Pi_{1}$ and $i\Pi_{2}$ respectively — and $\mathbb{R}\{1,j\}$ is a copy of the split-complex numbers.</p>
-<p><strong>Boundaries.</strong> The spaces, their characters and their norms are <em>Introduction to the Remarkable Subspaces</em>; the decompositions are <em>Decompositions Along the Remarkable Subspaces</em>; the involutions are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>; the idempotents and the ideals are <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em> and <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>. The forms restricted to the planes are <em>Remarkable Subspaces and the Four Forms of the Reduced Biquaternions</em> and the norms <em>Remarkable Subspaces and the Four Algebraic Norms of the Reduced Biquaternions</em>, of the later subsections of this category. The biquaternion counterpart is <em>Comparison of the Remarkable Subspaces</em> of the biquaternion category.</p>
+<p>and the comparison is summarised by three statements. <strong>The subalgebras among the coordinate planes are the three fixed planes</strong> $\mathbb{C}=\mathbb{R}\{1,i\}$, $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{1,ij\}$; the three anti-fixed planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, because each contains a basis element whose square leaves it. <strong>The ideals are the two idempotent lines alone</strong>, the minimal ideals $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, which are also the two simple modules; no coordinate plane is an ideal, since none is stable under the whole algebra except the whole space. <strong>All eight planes are permuted by the three involutions</strong>, each involution fixing or exchanging them, and this invariance is the reason the space decomposes along them. Among the subalgebras, $\mathbb{C}$, $\mathbb{R}\{1,ij\}$, $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ are copies of the complex field — four copies, with the imaginary units $i$, $ij$, $i\Pi_+$ and $i\Pi_-$ respectively — and $\mathbb{R}\{1,j\}$ is a copy of the split-complex numbers.</p>
+<p><strong>Boundaries.</strong> The spaces, their characters and their norms are <em>Introduction to the Remarkable Subspaces</em>; the decompositions are <em>Decompositions Along the Remarkable Subspaces</em>; the involutions are <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em>; the idempotents and the ideals are <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> and <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The forms restricted to the planes are <em>Remarkable Subspaces and the Four Forms of the Reduced Biquaternions</em> and the norms <em>Remarkable Subspaces and the Four Algebraic Norms of the Reduced Biquaternions</em>, of the later subsections of this category. The biquaternion counterpart is <em>Comparison of the Remarkable Subspaces</em> of the biquaternion category.</p>
 <h2 id="the-table-of-the-spaces">The Table of the Spaces</h2>
 <p><strong>The eight spaces, with their defining equation, their basis, their real dimension and the type of their norm, are the following.</strong></p>
 <div class="table-scroll"><table>
@@ -75,71 +74,71 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}$</td>
-<td>$T^{\natural}=T$</td>
+<td>$Q_\pm^{\natural}=Q_\pm$</td>
 <td>$1,\ i$</td>
 <td>$2$</td>
 <td>yes</td>
-<td>$A^{2}$, complex</td>
+<td>$Q_+^{2}$, complex</td>
 </tr>
 <tr>
 <td>$\mathbb{C}j$</td>
-<td>$T^{\natural}=-T$</td>
+<td>$Q_\pm^{\natural}=-Q_\pm$</td>
 <td>$j,\ ij$</td>
 <td>$2$</td>
 <td>yes</td>
-<td>$-B^{2}$, complex</td>
+<td>$-Q_-^{2}$, complex</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\{1,j\}$</td>
-<td>$\bar T=T$</td>
+<td>$\bar Q_\pm=Q_\pm$</td>
 <td>$1,\ j$</td>
 <td>$2$</td>
 <td>no</td>
-<td>$a^{2}-b^{2}$, split</td>
+<td>$Q_+^{2}-Q_-^{2}$, split</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\{i,ij\}$</td>
-<td>$\bar T=-T$</td>
+<td>$\bar Q_\pm=-Q_\pm$</td>
 <td>$i,\ ij$</td>
 <td>$2$</td>
 <td>no</td>
-<td>$-(a^{2}-b^{2})$, split</td>
+<td>$-(Q_+^{2}-Q_-^{2})$, split</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\{1,ij\}$</td>
-<td>$T^{*}=T$</td>
+<td>$Q_\pm^{*}=Q_\pm$</td>
 <td>$1,\ ij$</td>
 <td>$2$</td>
 <td>no</td>
-<td>$a^{2}+b^{2}$, positive definite</td>
+<td>$Q_+^{2}+Q_-^{2}$, positive definite</td>
 </tr>
 <tr>
 <td>$\mathbb{R}\{i,j\}$</td>
-<td>$T^{*}=-T$</td>
+<td>$Q_\pm^{*}=-Q_\pm$</td>
 <td>$i,\ j$</td>
 <td>$2$</td>
 <td>no</td>
-<td>$-(a^{2}+b^{2})$, negative definite</td>
+<td>$-(Q_+^{2}+Q_-^{2})$, negative definite</td>
 </tr>
 <tr>
-<td>$\mathbb{C}\Pi_{1}$</td>
-<td>$jT=T$</td>
-<td>$\Pi_{1},\ i\Pi_{1}$</td>
+<td>$\mathbb{C}\Pi_+$</td>
+<td>$jQ_\pm=Q_\pm$</td>
+<td>$\Pi_+,\ i\Pi_+$</td>
 <td>$2$</td>
 <td>yes</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$\mathbb{C}\Pi_{2}$</td>
-<td>$jT=-T$</td>
-<td>$\Pi_{2},\ i\Pi_{2}$</td>
+<td>$\mathbb{C}\Pi_-$</td>
+<td>$jQ_\pm=-Q_\pm$</td>
+<td>$\Pi_-,\ i\Pi_-$</td>
 <td>$2$</td>
 <td>yes</td>
 <td>$0$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The four complex lines $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{C}\Pi_{1}$, $\mathbb{C}\Pi_{2}$ are one-dimensional over $\mathbb{C}$; the four real planes $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{1,ij\}$, $\mathbb{R}\{i,j\}$ have no complex structure of their own, and the multiplication by $i$ permutes them in pairs, $\mathbb{R}\{1,j\}\leftrightarrow\mathbb{R}\{i,ij\}$ and $\mathbb{R}\{1,ij\}\leftrightarrow\mathbb{R}\{i,j\}$. The two idempotent lines are the null set of the norm, and their nonzero elements are the zero divisors.</p>
+<p>The four complex lines $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ are one-dimensional over $\mathbb{C}$; the four real planes $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{1,ij\}$, $\mathbb{R}\{i,j\}$ have no complex structure of their own, and the multiplication by $i$ permutes them in pairs, $\mathbb{R}\{1,j\}\leftrightarrow\mathbb{R}\{i,ij\}$ and $\mathbb{R}\{1,ij\}\leftrightarrow\mathbb{R}\{i,j\}$. The two idempotent lines are the null set of the norm, and their nonzero elements are the zero divisors.</p>
 <p><em>Proof.</em> The defining equations are the fixed and anti-fixed conditions of <em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em> and the eigenconditions of the multiplication by $j$; the bases and dimensions are those of <em>Introduction to the Remarkable Subspaces</em>; the norms are the table of §<em>The Norm on the Spaces</em> of that article.</p>
 <h2 id="the-subalgebras-and-the-non-closed-planes">The Subalgebras and the Non-Closed Planes</h2>
 <p><strong>A coordinate plane is closed under the multiplication exactly when it is the fixed plane of one of the three involutions, and then it is a subalgebra.</strong></p>
@@ -147,37 +146,37 @@ $$</p>
 <ul>
 <li>$\mathbb{C}$, $\mathbb{R}\{1,j\}$, $\mathbb{R}\{1,ij\}$ are <strong>subalgebras</strong>, closed under the multiplication;</li>
 <li>$\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are <strong>not</strong> closed;</li>
-<li>$\mathbb{C}\Pi_{1}$, $\mathbb{C}\Pi_{2}$ are subalgebras, and in fact ideals.</li>
+<li>$\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ are subalgebras, and in fact ideals.</li>
 </ul>
-<p><em>Proof.</em> For a plane spanned by two basis elements it suffices to check the products of the basis elements. For $\mathbb{C}=\mathbb{R}\{1,i\}$: $1\cdot1=1$, $1\cdot i=i$ and $i\cdot i=-1$ lie in the plane. For $\mathbb{R}\{1,j\}$: $j\cdot j=1$. For $\mathbb{R}\{1,ij\}$: $(ij)^{2}=-1$. For $\mathbb{C}j=\mathbb{R}\{j,ij\}$: $j\cdot ij=j^{2}i=i\notin\mathbb{C}j$, so it is not closed. For $\mathbb{R}\{i,ij\}$: $i\cdot ij=i^{2}j=-j\notin$ the plane. For $\mathbb{R}\{i,j\}$: $i\cdot j=ij\notin$ the plane. The idempotent lines are the principal ideals $\mathbb{C}\Pi_{i}=\mathbb{B}_{\mathrm{r}}\Pi_{i}$, hence closed, by <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>.</p>
+<p><em>Proof.</em> For a plane spanned by two basis elements it suffices to check the products of the basis elements. For $\mathbb{C}=\mathbb{R}\{1,i\}$: $1\cdot1=1$, $1\cdot i=i$ and $i\cdot i=-1$ lie in the plane. For $\mathbb{R}\{1,j\}$: $j\cdot j=1$. For $\mathbb{R}\{1,ij\}$: $(ij)^{2}=-1$. For $\mathbb{C}j=\mathbb{R}\{j,ij\}$: $j\cdot ij=j^{2}i=i\notin\mathbb{C}j$, so it is not closed. For $\mathbb{R}\{i,ij\}$: $i\cdot ij=i^{2}j=-j\notin$ the plane. For $\mathbb{R}\{i,j\}$: $i\cdot j=ij\notin$ the plane. The idempotent lines are the principal ideals $\mathbb{C}\Pi_{i}=\mathbb{B}_{\mathrm{r}}\Pi_{i}$, hence closed, by <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>.</p>
 <p><strong>Corollary (the criterion).</strong> The three closed coordinate planes are the fixed spaces of the three involutions, and the three non-closed ones are the anti-fixed spaces. In a fixed plane every basis element has square in the plane; in an anti-fixed plane the square of a basis element may leave it. The three subalgebras are also the realifiable ones in the sense of the two scalar systems.</p>
 <p><strong>Corollary (the shapes of the subalgebras).</strong> The three coordinate subalgebras and the two idempotent lines are
 $$
 \mathbb{C}\cong\mathbb{C},\qquad \mathbb{R}\{1,j\}\cong\mathbb{R}[j]/(j^{2}-1)\cong\mathbb{R}\times\mathbb{R},\qquad \mathbb{R}\{1,ij\}\cong\mathbb{C},
 $$
 $$
-\mathbb{C}\Pi_{1}\cong\mathbb{C},\qquad \mathbb{C}\Pi_{2}\cong\mathbb{C},
+\mathbb{C}\Pi_+\cong\mathbb{C},\qquad \mathbb{C}\Pi_-\cong\mathbb{C},
 $$
 so the algebra contains <strong>four copies of the complex field</strong> — the scalar line, the Hermitian subspace and the two idempotent lines — and one copy of the split-complex numbers, the real subalgebra.</p>
 <h2 id="the-ideals-and-the-lattice">The Ideals and the Lattice</h2>
 <p><strong>The only ideals among the planes are the two idempotent lines, and they are the two minimal ideals of the algebra.</strong></p>
-<p><strong>Theorem (the ideals).</strong> The subspaces of the list that are ideals of the algebra are exactly $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$, and they are the two minimal ideals, the two simple modules and the two summands of the direct-product decomposition.</p>
-<p><em>Proof.</em> The ideal lattice is $0\subsetneq\mathbb{C}\Pi_{1},\mathbb{C}\Pi_{2}\subsetneq\mathbb{B}_{\mathrm{r}}$ by <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>; the coordinate planes are not ideals: an ideal is stable under the multiplication by every element, and each coordinate plane is moved by one — the multiplication by $j$ moves $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{R}\{1,ij\}$ and $\mathbb{R}\{i,j\}$ ($j\cdot1=j$, $j\cdot j=1$, $j\cdot i=ij$), and the multiplication by $i$ moves $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ ($i\cdot1=i$, $i\cdot i=-1$) — while stability under the whole algebra holds only for the two idempotent lines and their sums, by the ideal theorem.</p>
+<p><strong>Theorem (the ideals).</strong> The subspaces of the list that are ideals of the algebra are exactly $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are the two minimal ideals, the two simple modules and the two summands of the direct-product decomposition.</p>
+<p><em>Proof.</em> The ideal lattice is $0\subsetneq\mathbb{C}\Pi_+,\mathbb{C}\Pi_-\subsetneq\mathbb{B}_{\mathrm{r}}$ by <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>; the coordinate planes are not ideals: an ideal is stable under the multiplication by every element, and each coordinate plane is moved by one — the multiplication by $j$ moves $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{R}\{1,ij\}$ and $\mathbb{R}\{i,j\}$ ($j\cdot1=j$, $j\cdot j=1$, $j\cdot i=ij$), and the multiplication by $i$ moves $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ ($i\cdot1=i$, $i\cdot i=-1$) — while stability under the whole algebra holds only for the two idempotent lines and their sums, by the ideal theorem.</p>
 <p><strong>Corollary (the character of the section).</strong> The section's two kinds of plane therefore divide the work: the coordinate planes carry the decompositions into gradings and the invariance under the involutions, and the idempotent lines carry the algebra decomposition into the two ideals. No plane belongs to both kinds: a coordinate plane is never an ideal, and an idempotent line is never a coordinate plane.</p>
 <h2 id="stability-under-the-involutions">Stability under the Involutions</h2>
 <p><strong>The three involutions permute the eight planes, fixing or exchanging them.</strong></p>
 <p><strong>Theorem (the stability).</strong> Each of the three involutions permutes the eight spaces: it maps each of the six coordinate planes onto itself, and it fixes each idempotent line for the bar and exchanges the two lines for the natural sign and the star; on the coordinate planes the involution is the reflection of the fixed or the anti-fixed character.</p>
-<p><em>Proof.</em> A coordinate plane spanned by two basis elements is stable because each involution sends a basis element to $\pm$ that element. The bar fixes $\Pi_{1}$ and $\Pi_{2}$, while ${}^{\natural}$ and ${}^{*}$ exchange them, by <em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em>; since the line $\mathbb{C}\Pi_{i}$ is the complex span of $\Pi_{i}$, the exchange of the idempotents exchanges the lines and the bar fixes each.</p>
+<p><em>Proof.</em> A coordinate plane spanned by two basis elements is stable because each involution sends a basis element to $\pm$ that element. The bar fixes $\Pi_+$ and $\Pi_-$, while ${}^{\natural}$ and ${}^{*}$ exchange them, by <em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em>; since the line $\mathbb{C}\Pi_{i}$ is the complex span of $\Pi_{i}$, the exchange of the idempotents exchanges the lines and the bar fixes each.</p>
 <p><strong>Corollary (why the section exists).</strong> The permutation is the reason the algebra has three splittings: a plane stable under an involution gives a decomposition only when the involution acts on it by a single sign, that is when it is a fixed or an anti-fixed plane. The idempotent lines are permuted but are not eigenspaces of the natural sign or the star (they are eigenspaces of the bar), and this is why the idempotent decomposition is of a different kind from the halvings.</p>
 <h2 id="the-dimensions-and-the-lattice-of-the-spaces">The Dimensions and the Lattice of the Spaces</h2>
 <p><strong>The eight planes are all of real dimension two and complex dimension one; their incidence lattice is the one of the four real lines.</strong></p>
 <p><strong>Theorem (the incidence).</strong> Each space has real dimension two and is a complex line or a real plane; the four real lines $\mathbb{R}$, $\mathbb{R}i$, $\mathbb{R}j$, $\mathbb{R}ij$ are the atoms, every coordinate plane is the sum of two atoms, and there are exactly three complementary pairs of coordinate planes, the three halvings of <em>Decompositions Along the Remarkable Subspaces</em>. The idempotent lines are not sums of atoms.</p>
-<p><em>Proof.</em> The atoms are the common eigenspaces of the two involutions, of real dimension one, and the coordinate planes are spanned by pairs of them, by §<em>The Character of Each Space</em> of <em>Introduction to the Remarkable Subspaces</em>. A plane is the sum of two atoms when it is a coordinate plane; the idempotent lines have basis $\Pi_{i},i\Pi_{i}$ with $\Pi_{i}$ not an atom, since it is not an eigenvector of the bar with a single sign pair... rather $\Pi_{1}$ is bar-fixed and natural-negated, so it is a complex combination of atoms with mixed signs, not a real combination of a single atom and its $i$-multiple.</p>
+<p><em>Proof.</em> The atoms are the common eigenspaces of the two involutions, of real dimension one, and the coordinate planes are spanned by pairs of them, by §<em>The Character of Each Space</em> of <em>Introduction to the Remarkable Subspaces</em>. A plane is the sum of two atoms when it is a coordinate plane; the idempotent lines have basis $\Pi_{i},i\Pi_{i}$ with $\Pi_{i}$ not an atom, since it is not a common eigenvector of the bar and the natural sign: $\Pi_+$ is bar-fixed and natural-negated, so it is a complex combination of atoms with mixed signs, not a real combination of a single atom and its $i$-multiple.</p>
 <h2 id="comparison-with-the-biquaternion-counterparts">Comparison with the Biquaternion Counterparts</h2>
 <p><strong>The reduced biquaternion list is the biquaternion list collapsed by the commutativity, and the closure pattern is the visible difference.</strong></p>
 <p>In the biquaternion category the remarkable subspaces are also the fixed and anti-fixed spaces of the involutions and the idempotent lines, but the algebra is not commutative, the vector subspace has real dimension three, and the fixed spaces of the two involutions are richer: the natural sign fixes only the scalar line, the bar fixes a four-dimensional split-quaternion subspace, and the star fixes a real plane of the Hermitian elements. In the reduced biquaternion case the two involutions are two generators of $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ acting on a four-dimensional space, so their fixed spaces are two-dimensional planes, and the three involutions with their three fixed planes exhaust the list. The closure comparison is the sharp one: the biquaternion has the same subalgebra and ideal structure on fewer spaces, and the reduced biquaternion shows the closure of a coordinate plane as a purely combinatorial fact about the signs of its two basis elements, read from the character table. The comparison is <em>Comparison of the Remarkable Subspaces</em> of the biquaternion category.</p>
 <h2 id="summary">Summary</h2>
-<p>The eight remarkable subspaces of the reduced biquaternion algebra are the six coordinate planes $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{1,ij\}$, $\mathbb{R}\{i,j\}$ and the two idempotent lines $\mathbb{C}\Pi_{1}$, $\mathbb{C}\Pi_{2}$, all of real dimension two. They are listed with their defining equations, bases, dimensions, complex-linearity character and norm type; the norm is positive definite on the Hermitian plane, negative definite on the anti-Hermitian plane, split on the real subalgebra and its $i$-multiple, complex on the two complex lines, and zero on the idempotent lines. Under the multiplication, the subalgebras among the coordinate planes are exactly the three <strong>fixed</strong> planes $\mathbb{C}$, $\mathbb{R}\{1,j\}$, $\mathbb{R}\{1,ij\}$, while the three <strong>anti-fixed</strong> planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, each containing a basis element whose square leaves it; the four coordinate subalgebras and lines comprise four copies of $\mathbb{C}$ and one copy of the split-complex numbers. The only ideals among the eight are the two idempotent lines, the two minimal ideals and simple modules, and no coordinate plane is an ideal; no plane is both a coordinate plane and an idempotent line. All eight planes are permuted by the three involutions, which fix or exchange them, and that invariance is why the space has the three halvings and the block decomposition; the idempotent lines are permuted but are not eigenspaces of the natural sign or the star, which is why the idempotent decomposition is a direct product and not a grading. The list is the commutativity-collapsed image of the biquaternion list.</p>
+<p>The eight remarkable subspaces of the reduced biquaternion algebra are the six coordinate planes $\mathbb{C}$, $\mathbb{C}j$, $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{1,ij\}$, $\mathbb{R}\{i,j\}$ and the two idempotent lines $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$, all of real dimension two. They are listed with their defining equations, bases, dimensions, complex-linearity character and norm type; the norm is positive definite on the Hermitian plane, negative definite on the anti-Hermitian plane, split on the real subalgebra and its $i$-multiple, complex on the two complex lines, and zero on the idempotent lines. Under the multiplication, the subalgebras among the coordinate planes are exactly the three <strong>fixed</strong> planes $\mathbb{C}$, $\mathbb{R}\{1,j\}$, $\mathbb{R}\{1,ij\}$, while the three <strong>anti-fixed</strong> planes $\mathbb{C}j$, $\mathbb{R}\{i,ij\}$, $\mathbb{R}\{i,j\}$ are not closed, each containing a basis element whose square leaves it; the four coordinate subalgebras and lines comprise four copies of $\mathbb{C}$ and one copy of the split-complex numbers. The only ideals among the eight are the two idempotent lines, the two minimal ideals and simple modules, and no coordinate plane is an ideal; no plane is both a coordinate plane and an idempotent line. All eight planes are permuted by the three involutions, which fix or exchange them, and that invariance is why the space has the three halvings and the block decomposition; the idempotent lines are permuted but are not eigenspaces of the natural sign or the star, which is why the idempotent decomposition is a direct product and not a grading. The list is the commutativity-collapsed image of the biquaternion list.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -212,7 +211,7 @@ so the algebra contains <strong>four copies of the complex field</strong> — th
 <td>anti-Hermitian subspace, anti-fixed space of the star, not closed</td>
 </tr>
 <tr>
-<td>$\mathbb{C}\Pi_{1},\ \mathbb{C}\Pi_{2}$</td>
+<td>$\mathbb{C}\Pi_+,\ \mathbb{C}\Pi_-$</td>
 <td>idempotent lines, the two minimal ideals and simple modules</td>
 </tr>
 <tr>
@@ -230,8 +229,8 @@ so the algebra contains <strong>four copies of the complex field</strong> — th
 <li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.md</code>), for the defining equations, bases and norms.</li>
 <li><em>Decompositions Along the Remarkable Subspaces</em> (<code>articles_maths/decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.md</code>), for the block decomposition, the halvings and the idempotent decomposition.</li>
 <li><em>The Two Involutions and the Group of Involutions of the Reduced Biquaternions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), for the fixed and anti-fixed spaces.</li>
-<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the two minimal ideals and the Peirce decomposition.</li>
-<li><em>Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the idempotents and the two lines.</li>
+<li><em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the two minimal ideals and the Peirce decomposition.</li>
+<li><em>Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the idempotents and the two lines.</li>
 <li><em>Comparison of the Remarkable Subspaces</em> (<code>articles_maths/comparison-of-the-remarkable-subspaces.md</code>), for the non-commutative companion.</li>
 </ul>
       </div>

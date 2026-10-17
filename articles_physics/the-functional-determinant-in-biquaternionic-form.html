@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -72,7 +71,7 @@ $$
 \det\big(L_{\tilde Q}\big) = \det\big(R_{\tilde Q}\big) = \langle\tilde Q\rangle_{\natural}^2 .
 $$
 This is the framework's algebraic determinant; it is checked below and it is the reason the biquaternion norm, and not an auxiliary object, is the determinant of an algebra element.</li>
-<li><strong>Established (algebra): the module determinant is a square.</strong> A biquaternion field's fluctuation operator acts on a two-complex-dimensional fibre per mode, and for a central operator $S''=\kappa e_0$ the determinant on that fibre is the square of the operator's value on a single complex dimension,
+<li><strong>Established (algebra): the module determinant is a square.</strong> A biquaternion field's fluctuation operator acts on a two-complex-dimensional fibre per mode, and for a central operator $S''=\kappa e_t$ the determinant on that fibre is the square of the operator's value on a single complex dimension,
 $$
 \det\big(S''\big)\Big|_{\text{module}} = \kappa^2 ,
 $$
@@ -87,7 +86,7 @@ the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\ze
 <li><strong>The physical faces.</strong> Two structural consequences are recorded here because later articles use them: the <strong>phase</strong> of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta$ vacuum of <em>The Theta Vacuum in Biquaternionic Form</em>, and the <strong>conformal variation</strong> of the determinant is the trace anomaly of <em>The Trace Anomaly in Biquaternionic Form</em>.</li>
 </ul>
 <p>The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; the isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_0+\vec p$ with $\tilde k\tilde k^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as <em>Conventions in the Biquaternion Universe</em> fixes.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; the isomorphism is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}\in\mathbb{C}_{\mathbb{B}}$; the trace is $\mathrm{Tr}(\tilde{Q})=2\mathrm{Sc}(\tilde{Q})$; the real bilinear form is $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$, positive on $\mathbb{M}_+$ and negative on $\mathbb{M}_-$; the sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian). The central kinetic operator is $\tilde K=\Box-m^2$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the wave biquaternion is $\tilde k=iEe_t+\vec p$ with $\tilde k\tilde k^{\natural}=-p^2$. The Dirac operator and its mass term are linear and chirality-off-diagonal, $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$, as <em>Conventions in the Biquaternion Universe</em> fixes.</p>
 <h2 id="the-determinant-of-a-module-operator">The Determinant of a Module Operator</h2>
 <p>Let $S''$ be a linear operator on the biquaternion module, and suppose for the moment that its spectrum is discrete and its determinant exists. Then
 $$
@@ -96,9 +95,9 @@ $$
 \log\det S'' = \sum_n \log\lambda_n = \mathrm{Tr}\log S'' ,
 $$
 the second equality making sense on the principal branch. The operator acts on the module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ per mode, so each $\lambda_n$ is a two-fold object: the module contributes two complex dimensions, and the determinant is taken over both.</p>
-<p><strong>The central case.</strong> If $S''=\kappa\,e_0$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde k\tilde k^{\natural}+m^2=\mathcal{M}(\tilde k)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
+<p><strong>The central case.</strong> If $S''=\kappa\,e_t$ is a central scalar (for instance the free kinetic operator at a given mode, $\kappa=\tilde k\tilde k^{\natural}+m^2=\mathcal{M}(\tilde k)$, whose Lorentzian continuation differs from the action's operator $\Box-m^2$ only by the overall sign that the module's even dimension absorbs), then on the module it is multiplication by $\kappa$ on $\mathbb{C}^2$, and
 $$
-\det\big(\kappa\,e_0\big)\Big|_{\text{module}} = \kappa^2 .
+\det\big(\kappa\,e_t\big)\Big|_{\text{module}} = \kappa^2 .
 $$
 The factor $\kappa^2$ is the module's two complex dimensions; equivalently, the central eigenvalue contributes once per complex dimension. On the algebra itself, regarded as a four-complex-dimensional space, multiplication by $\kappa$ has determinant $\kappa^4$, and the two are related by the change of the space on which the determinant is taken. The framework's determinant is thus defined once the module is chosen, and the module is fixed by the algebra.</p>
 <p><strong>The non-central case.</strong> If $S''$ is not central, it mixes the two chiralities (the minimal left ideals) and the determinant does not factor. The mass term's right-multiplication form is the standard instance: the Dirac operator
@@ -113,7 +112,7 @@ $$
 \det\mathsf{M}_2(\tilde Q) = \mathrm{Sc}\big(\tilde Q\tilde Q^{\natural}\big) = \langle\tilde Q\rangle_{\natural},
 $$
 where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot\rangle_{\natural}$ is the biquaternion norm.</p>
-<p><strong>Proof.</strong> Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_0)=I_2$ both sides are $1$; on $\mathsf{M}_2(e_k)=-i\sigma_k$, $\det(-i\sigma_k)=1$ while $\langle e_k\rangle_{\natural}=e_k\bar e_k=-e_k^2=e_0$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde B))=\det\mathsf{M}_2(\tilde A)\det\mathsf{M}_2(\tilde B)$ and $\langle\tilde A\tilde B\rangle_{\natural}=\tilde A\tilde B\bar{\tilde A\tilde B}=\tilde A\,\langle\tilde B\rangle_{\natural}\,\tilde A^{\natural}=\tilde A\tilde A^{\natural}\,\langle\tilde B\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde B\rangle_{\natural}$ using the centrality of $\langle\tilde B\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.</p>
+<p><strong>Proof.</strong> Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\det(-i\sigma_\mu)=1$ while $\langle \vec e_\mu\rangle_{\natural}=\vec e_\mu \vec e_\mu^{\natural}=-\vec e_\mu^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde A)\mathsf{M}_2(\tilde B))=\det\mathsf{M}_2(\tilde A)\det\mathsf{M}_2(\tilde B)$ and $\langle\tilde A\tilde B\rangle_{\natural}=\tilde A\tilde B(\tilde A\tilde B)^{\natural}=\tilde A\,\langle\tilde B\rangle_{\natural}\,\tilde A^{\natural}=\tilde A\tilde A^{\natural}\,\langle\tilde B\rangle_{\natural}=\langle\tilde A\rangle_{\natural}\langle\tilde B\rangle_{\natural}$ using the centrality of $\langle\tilde B\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.</p>
 <p>The determinant of $\tilde Q$ is thus the <strong>biquaternion norm</strong>, the same object that supplies the Minkowski interval of <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>.</p>
 <p><strong>Proposition (regular representation).</strong> Left multiplication $L_{\tilde Q}:\tilde{R}\mapsto\tilde Q\tilde R$ and right multiplication $R_{\tilde Q}:\tilde{R}\mapsto \tilde R\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
@@ -225,7 +224,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 <p><strong>Established (algebra).</strong>
 - The fundamental determinant of an element is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde Q^{\natural})$; verified and proved.
 - Left and right multiplication by $\tilde Q$ on the algebra have equal determinant $\langle\tilde Q\rangle_{\natural}^2$; verified and proved.
-- A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_0)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.</p>
+- A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.</p>
 <p><strong>Standard, and transcribed.</strong>
 - Zeta-function regularization and $-\zeta'(0)=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the trace anomaly.</p>
 <p><strong>Interpretation.</strong>
@@ -243,7 +242,7 @@ $$
 \det L_{\tilde Q} = \det R_{\tilde Q} = \langle\tilde Q\rangle_{\natural}^2 .
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.</p>
-<p>For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_0)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a <strong>phase</strong>, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\zeta'(0)$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (article 11) and the phase's topology is the $\theta$ vacuum (article 12). None of the regularization is the algebra's; the operator on which it acts is.</p>
+<p>For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S''$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a <strong>phase</strong>, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\zeta'(0)$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (article 11) and the phase's topology is the $\theta$ vacuum (article 12). None of the regularization is the algebra's; the operator on which it acts is.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -258,7 +257,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$\mathsf{M}_2(e_k)=-i\sigma_k$</td>
+<td>$\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$</td>
 <td>Isomorphism onto $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
@@ -286,7 +285,7 @@ Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$,
 <td>Functional determinant; one-loop action</td>
 </tr>
 <tr>
-<td>$\det(\kappa e_0)|_{\text{module}}=\kappa^2$</td>
+<td>$\det(\kappa e_t)|_{\text{module}}=\kappa^2$</td>
 <td>Central operator's module determinant</td>
 </tr>
 <tr>

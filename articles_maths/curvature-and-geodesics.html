@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,7 +56,7 @@
 <p>The article assumes <em>Smooth Manifolds and Differential Geometry</em> for manifolds, tangent spaces, vector fields and the Riemannian metric; it defines the connection on the tangent bundle, its curvature and the Bianchi identity itself; the quadratic forms of <em>Bilinear Forms</em>, <em>Quadratic Forms and Polarisation</em> and <em>Isometries and Orthogonal Transformations</em>; and <em>The Three Two-Dimensional Algebras and the Three Kinds of Rotation</em> for the three model geometries in dimension two. The existence, uniqueness and smooth-dependence theory of the geodesic equation, the first-variation computation and the completeness theory that depend on limits belong to Part III, where the differential equations and the limit are available; they are stated here and not proved. The comparison theorems and the submanifold theory are not developed here, and the systematic account of them is not part of this article. No physics is invoked.</p>
 <h2 id="the-metric-as-a-distance">The Metric as a Distance</h2>
 <h3 id="length-and-the-riemannian-distance">Length and the Riemannian Distance</h3>
-<p>Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of <em>Smooth Manifolds and Differential Geometry</em>: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial_{x^i}, \partial_{x^j})$. The <strong>speed</strong> of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the <strong>length</strong> is the integral of the speed. The <strong>Riemannian distance</strong> $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.</p>
+<p>Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of <em>Smooth Manifolds and Differential Geometry</em>: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$. The <strong>speed</strong> of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the <strong>length</strong> is the integral of the speed. The <strong>Riemannian distance</strong> $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.</p>
 <p><strong>Definition.</strong> The <strong>volume form</strong> of an oriented Riemannian manifold is the unique $n$-form $\mathrm{vol}_g \in \Omega^n(M)$ that assigns the value $1$ to every positively oriented orthonormal frame; in a positively oriented chart,</p>
 <p>$$
 \mathrm{vol}_g = \sqrt{\det(g_{ij})}\; dx^1 \wedge \cdots \wedge dx^n .
@@ -84,9 +83,9 @@ $$</p>
 <p><strong>Proof.</strong> The right-hand side is manifestly $\mathbb{R}$-linear in $X$ and, by the Leibniz rule for $X, Y, Z$ acting on functions, it is $C^\infty(M)$-linear in each of $X, Y, Z$. It therefore defines a tensor, and since $g$ is nondegenerate it determines the vector field $\nabla_XY$ uniquely. The two required properties follow by substituting into the formula and cancelling terms: metricity uses the first three terms and the skew symmetry of the bracket, torsion-freeness uses the last three and the identity $[X, Y] = -[Y, X]$.</p>
 <p><strong>Definition.</strong> In a chart the Christoffel symbols are</p>
 <p>$$
-\nabla_{\partial_{x^i}}\partial_{x^j} = \sum_k \Gamma^k_{ij}\,\partial_{x^k},
+\nabla_{\partial/\partial x^i}\partial/\partial x^j = \sum_k \Gamma^k_{ij}\,\partial/\partial x^k,
 \qquad
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\Bigr),
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\Bigr),
 $$</p>
 <p>where $(g^{kl})$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta^i_{\ j})$ of $1$-forms with $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.</p>
 <h3 id="parallel-transport">Parallel Transport</h3>
@@ -122,7 +121,7 @@ $$</p>
 g_{\exp_p(v)}\bigl(d(\exp_p)_v(v),\, d(\exp_p)_v(w)\bigr) = g_p(v, w).
 $$</p>
 <p>In words, the radial geodesics leave $p$ orthogonally to the spheres of constant radius, and the exponential map is a radial isometry.</p>
-<p><strong>Proof sketch.</strong> The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial_s\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.</p>
+<p><strong>Proof sketch.</strong> The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial/\partial s\,\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.</p>
 <p><strong>Definition.</strong> The <strong>normal coordinates</strong> at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x^i = v^i$, where $v = \sum_i v^i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.</p>
 <h3 id="geodesics-minimise-locally">Geodesics Minimise Locally</h3>
 <p><strong>Definition.</strong> A curve joining $p$ to $q$ is <strong>locally minimising</strong> if every sufficiently short subarc of it has length not exceeding the length of any nearby curve with the same endpoints.</p>
@@ -332,7 +331,7 @@ $$</p>
 <td>Geodesic equation in invariant form</td>
 </tr>
 <tr>
-<td>$\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$</td>
+<td>$d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$</td>
 <td>Geodesic equation in a chart</td>
 </tr>
 <tr>
@@ -345,7 +344,7 @@ $$</p>
 </tr>
 <tr>
 <td>Normal coordinates</td>
-<td>Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial_k g_{ij}(p) = 0$</td>
+<td>Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial/\partial x^k g_{ij}(p) = 0$</td>
 </tr>
 <tr>
 <td>$\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$</td>

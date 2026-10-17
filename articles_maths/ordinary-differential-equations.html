@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -191,7 +190,7 @@ y(x) = \int_a^b G(x,s)\,f(s)\,ds .
 $$</p>
 <p>The function $G$ is continuous, $G(x,s)$ solves $L_xG = 0$ for $x \neq s$ and satisfies the boundary conditions in $x$, and at $x = s$ its derivatives up to order $n-2$ are continuous while</p>
 <p>$$
-\partial_x^{n-1}G(s^+,s) - \partial_x^{n-1}G(s^-,s) = \frac{1}{a_n(s)} ,
+\partial/\partial x^{n-1}G(s^+,s) - \partial/\partial x^{n-1}G(s^-,s) = \frac{1}{a_n(s)} ,
 $$</p>
 <p>where $a_n$ is the leading coefficient of $L$.</p>
 <p><em>Proof.</em> Construct $G$ from a basis of solutions of $Ly=0$ adjusted to the boundary conditions, as the standard variation-of-parameters construction; the jump condition makes $L_x$ of the integral return $f$, and the boundary conditions are satisfied because each factor does, since the integral in $s$ commutes with the boundary conditions in $x$. Uniqueness follows from the uniqueness of the solution of the boundary-value problem.</p>
@@ -199,7 +198,7 @@ $$</p>
 <p>$$
 G(x,s) = \begin{cases} x(1-s), & x \le s,\\ s(1-x), & x > s,\end{cases}
 $$</p>
-<p>which is symmetric, continuous, piecewise linear and vanishes at both endpoints; the jump in $\partial_xG$ at $x=s$ is $-1$, matching the leading coefficient $-1$.</p>
+<p>which is symmetric, continuous, piecewise linear and vanishes at both endpoints; the jump in $\partial/\partial x\,G$ at $x=s$ is $-1$, matching the leading coefficient $-1$.</p>
 <p>The Green's function is the kernel of the inverse of the differential operator, and its symmetry $G(x,s) = G(s,x)$ for a self-adjoint problem is the symmetry of the inverse operator. The theory of the inverse as a bounded operator, and of the problem as a Fredholm equation when the homogeneous problem is nontrivial, is the Fredholm theory of operators.</p>
 <h2 id="sturmliouville-problems">Sturm–Liouville Problems</h2>
 <h3 id="the-self-adjoint-form">The Self-Adjoint Form</h3>
@@ -290,7 +289,7 @@ $$</p>
 <p><strong>Standing of the result.</strong> The representation itself is not new: the series solution of a second-order linear equation in this form goes back to Weyl's 1910 paper, and the same representation is used in inverse spectral theory. What the hypothesis $g_0, 1/g_0 \in L^\infty$ adds is that the particular solution is nonvanishing and nondegenerate at both endpoints, which is what makes the coefficients computable and of controlled size across the whole interval rather than only locally; a singular endpoint, at which $1/g_0$ need not be bounded, is outside the statement. The method has been developed for complex-valued coefficients, which is the case that matters when $q$ is a complex potential or a frequency-dependent medium parameter; the electromagnetic instance, where the equation is $-(pu')' + qu = \omega^2u$ in a stratified medium, is recorded in <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, where the same function $g$ appears as the carrier of a factorisation of the operator. The author reports that the truncated series is more accurate than Matlab's adaptive solver <code>ode45</code> on test problems by several orders of magnitude, up to an absolute error of $0.28$ for the solver against $10^{-9}$ for the series at the stiffest test case; the comparison is the author's own and with a single solver, and it is recorded as reported.</p>
 <h2 id="autonomous-systems-and-the-phase-plane">Autonomous Systems and the Phase Plane</h2>
 <h3 id="equilibria-and-linearisation">Equilibria and Linearisation</h3>
-<p><strong>Definition.</strong> For an autonomous equation $y' = f(y)$ a point $y_*$ is an <strong>equilibrium</strong> if $f(y_*) = 0$, and the equilibrium is <strong>stable</strong> if for every neighbourhood $U$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq U$ for all $t \ge 0$; it is <strong>asymptotically stable</strong> if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and <strong>unstable</strong> if it is not stable.</p>
+<p><strong>Definition.</strong> For an autonomous equation $y' = f(y)$ a point $y_*$ is an <strong>equilibrium</strong> if $f(y_*) = 0$, and the equilibrium is <strong>stable</strong> if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq \Omega$ for all $t \ge 0$; it is <strong>asymptotically stable</strong> if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and <strong>unstable</strong> if it is not stable.</p>
 <p><strong>Theorem (linearisation).</strong> Let $f$ be of class $C^1$ near an equilibrium $y_*$, with derivative $A = Df(y_*)$. Then:</p>
 <p><strong>(a)</strong> if every eigenvalue of $A$ has strictly negative real part, $y_*$ is asymptotically stable;</p>
 <p><strong>(b)</strong> if some eigenvalue of $A$ has strictly positive real part, $y_*$ is unstable;</p>

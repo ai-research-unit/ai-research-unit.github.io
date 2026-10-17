@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article introduces the representation theory of the quaternion algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over a field $F$ of characteristic not two.</p>
-<p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
+<p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
 <h2 id="the-algebra-and-its-ground-field">The Algebra and Its Ground Field</h2>
 <h3 id="definition">Definition</h3>
 <p>A <strong>representation</strong> of $\mathbb{H}$ is a vector space $V$ over $F$ together with a bilinear map</p>
@@ -79,7 +78,7 @@ $$</p>
 <h3 id="the-left-and-right-regular-representations">The Left and Right Regular Representations</h3>
 <p>Because $\mathbb{H}$ is not commutative, there are two distinct regular representations:</p>
 <p><strong>Left regular representation.</strong> $\mathsf{M}_4(\tilde q) r = \tilde q r$.</p>
-<p><strong>Right regular representation.</strong> $\mathsf{M}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_4^{R}(\tilde q) \mathsf{M}_4^{R}(\tilde q') = \mathsf{M}_4^{R}(\tilde q' \tilde q)$.</p>
+<p><strong>Right regular representation.</strong> $\mathsf{M}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_4^{R}(\tilde q_1) \mathsf{M}_4^{R}(\tilde q_2) = \mathsf{M}_4^{R}(\tilde q_2 \tilde q_1)$.</p>
 <p>Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\mathsf{M}_4^{R}(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\mathsf{M}_4$, so the two regular representations are isomorphic.</p>
 <h2 id="representations-of-the-algebra">Representations of the Algebra</h2>
 <h3 id="the-classification-theorem">The Classification Theorem</h3>
@@ -107,7 +106,7 @@ $$</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{H}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{H}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{H}}(V, U)$.</p>
 <p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{H}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{H}}(V, V) \cong \mathbb{H}$.</p>
-<p><strong>Dimension count.</strong> For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus \tilde q}$,</p>
+<p><strong>Dimension count.</strong> For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus q}$,</p>
 <p>$$
 \dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq.
 $$</p>
@@ -125,7 +124,7 @@ $$</p>
 <p>So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the centre. The centre of $\mathbb{H}$ is $F$ (the scalars), and $\mathbb{H}$ is four-dimensional over $F$, so it is a central simple algebra of degree two.</p>
 <h3 id="the-brauer-class">The Brauer Class</h3>
 <p>As a central simple algebra over $F$, the quaternion algebra $\mathbb{H}$ has a class in the Brauer group $\operatorname{Br}(F)$. This class is trivial if and only if $\mathbb{H}$ is isomorphic to the matrix algebra $M_2(F)$, which happens if and only if the quaternion algebra splits over $F$. The quaternion algebra is a division algebra precisely when its class in the Brauer group is non-trivial.</p>
-<p><strong>Example.</strong> Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $e_1^2 = e_2^2 = e_3^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.</p>
+<p><strong>Example.</strong> Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.</p>
 <h2 id="the-representation-ring">The Representation Ring</h2>
 <h3 id="definition_2">Definition</h3>
 <p>The <strong>representation ring</strong> $R(\mathbb{H})$ is the Grothendieck ring of finite-dimensional representations of $\mathbb{H}$. As an abelian group, it is generated by the isomorphism class $[\rho_{\mathrm{reg}}]$, with no relations. So</p>
@@ -181,7 +180,7 @@ $$</p>
 <p>$$
 \tilde q \cdot (v \otimes w) = (\tilde q \cdot v) \otimes (\tilde q \cdot w).
 $$</p>
-<p>This is a representation because the diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism: $\Delta(\tilde q) \Delta(\tilde q') = (\tilde q \tilde q') \otimes (\tilde q \tilde q') = \Delta(\tilde q \tilde q')$.</p>
+<p>This is a representation because the diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism: $\Delta(\tilde q_1) \Delta(\tilde q_2) = (\tilde q_1 \tilde q_2) \otimes (\tilde q_1 \tilde q_2) = \Delta(\tilde q_1 \tilde q_2)$.</p>
 <h3 id="basic-properties_2">Basic Properties</h3>
 <p><strong>Associativity.</strong> $(U \otimes V) \otimes W \cong U \otimes (V \otimes W)$.</p>
 <p><strong>Commutativity.</strong> $V \otimes W \cong W \otimes V$.</p>

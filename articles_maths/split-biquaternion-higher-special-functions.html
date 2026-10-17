@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,12 +58,12 @@
 <p>For functions defined by integrals, the situation is different. The integral definitions require convergence conditions and a notion of the integrand for split biquaternion arguments. The gamma function and the zeta function are in this class, and their theory is only partially developed.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
-<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p>The <strong>idempotent components</strong> of $\tilde{Q}$ are the real quaternions</p>
 <p>$$
-\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+\tilde{Q}_+ = \sum_{\mu\in\{t,x,y,z\}} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu\in\{t,x,y,z\}} (q_\mu - q'_\mu) e_\mu.
 $$</p>
 <h2 id="bessel-functions">Bessel Functions</h2>
 <h3 id="definition">Definition</h3>
@@ -82,9 +81,9 @@ $$</p>
 <p>The split complex order $\nu \in \mathbb{D}$ is decomposed in the idempotent basis as $\nu = \nu_+ \tilde\Pi_1 + \nu_- \tilde\Pi_2$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.</p>
 <p>So the split biquaternion Bessel function is the pair of the quaternion Bessel functions of the two idempotent components. This is the cleanest form of the function, and it is the reason the split biquaternion Bessel function is simpler than the biquaternion Bessel function.</p>
 <h3 id="the-pure-oscillatory-regime">The Pure Oscillatory Regime</h3>
-<p>For a component $\tilde{Q}_\pm = \theta_\pm \vec u_\pm$ with $\theta_\pm \neq 0$ and $\vec u_\pm^2 = -e_0$, the quaternion Bessel function is</p>
+<p>For a component $\tilde{Q}_\pm = \theta_\pm \vec u_\pm$ with $\theta_\pm \neq 0$ and $\vec u_\pm^2 = -e_t$, the quaternion Bessel function is</p>
 <p>$$
-J_n(\theta_\pm \vec u_\pm) = I_n(\theta_\pm) \, \vec u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \vec u_\pm & \text{if } n \text{ is odd}, \end{cases}
+J_n(\theta_\pm \vec u_\pm) = I_n(\theta_\pm) \, \vec u_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_t & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \vec u_\pm & \text{if } n \text{ is odd}, \end{cases}
 $$</p>
 <p>where $I_n(\theta_\pm)$ on the right is the ordinary complex <strong>modified</strong> Bessel function evaluated at the real (or complex) number $\theta_\pm$. The two signs $(-1)^m$ in the defining series cancel, which is why the modified function appears in place of $J_n$.</p>
 <h3 id="the-pure-nilpotent-regime">The Pure Nilpotent Regime</h3>
@@ -105,34 +104,34 @@ $$</p>
 <p>$$
 \frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < R(\tilde{Q}),
 $$</p>
-<p>where $t$ is a real parameter, the square root is the split biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible. For $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but not in general: for $\tilde{Q} = 3e_0$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$, so the series converges only for $|t| < 3 - 2\sqrt{2} \approx 0.172$. Equivalently, they satisfy the recurrence</p>
+<p>where $t$ is a real parameter, the square root is the split biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible. For $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but not in general: for $\tilde{Q} = 3e_t$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$, so the series converges only for $|t| < 3 - 2\sqrt{2} \approx 0.172$. Equivalently, they satisfy the recurrence</p>
 <p>$$
 (n+1) P_{n+1}(\tilde{Q}) = (2n+1) \tilde{Q} P_n(\tilde{Q}) - n P_{n-1}(\tilde{Q}),
 $$</p>
-<p>with $P_0 = e_0$ and $P_1 = \tilde{Q}$.</p>
+<p>with $P_0 = e_t$ and $P_1 = \tilde{Q}$.</p>
 <p>The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients, and they decompose in the idempotent basis:</p>
 <p>$$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) \tilde\Pi_1 + P_n(\tilde{Q}_-) \tilde\Pi_2,
 $$</p>
-<p>where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does <strong>not</strong> reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\vec u$ with $\vec u^2 = -e_0$ one has $P_n(\theta\vec u) = P_n(i\theta)$ with $i$ replaced by $\vec u$, since the generator $\vec u$ plays the role of the imaginary unit. For instance $P_2(\theta\vec u) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\vec u$. The analogous statement is discussed in the biquaternion higher special functions article.</p>
+<p>where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does <strong>not</strong> reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\vec u$ with $\vec u^2 = -e_t$ one has $P_n(\theta\vec u) = P_n(i\theta)$ with $i$ replaced by $\vec u$, since the generator $\vec u$ plays the role of the imaginary unit. For instance $P_2(\theta\vec u) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_t$ and only the odd part on $\vec u$. The analogous statement is discussed in the biquaternion higher special functions article.</p>
 <h3 id="chebyshev-polynomials">Chebyshev Polynomials</h3>
 <p>The <strong>Chebyshev polynomials of the first kind</strong> $T_n(\tilde{Q})$ are defined by the recurrence</p>
 <p>$$
 T_{n+1}(\tilde{Q}) = 2\tilde{Q} T_n(\tilde{Q}) - T_{n-1}(\tilde{Q}),
 $$</p>
-<p>with $T_0 = e_0$ and $T_1 = \tilde{Q}$. The same analysis applies: the polynomials decompose in the idempotent basis, and each component reduces to the ordinary quaternion Chebyshev polynomial.</p>
+<p>with $T_0 = e_t$ and $T_1 = \tilde{Q}$. The same analysis applies: the polynomials decompose in the idempotent basis, and each component reduces to the ordinary quaternion Chebyshev polynomial.</p>
 <h3 id="hermite-polynomials">Hermite Polynomials</h3>
 <p>The <strong>Hermite polynomials</strong> $H_n(\tilde{Q})$ are defined by the recurrence</p>
 <p>$$
 H_{n+1}(\tilde{Q}) = 2\tilde{Q} H_n(\tilde{Q}) - 2n H_{n-1}(\tilde{Q}),
 $$</p>
-<p>with $H_0 = e_0$ and $H_1 = 2\tilde{Q}$. The same analysis applies.</p>
+<p>with $H_0 = e_t$ and $H_1 = 2\tilde{Q}$. The same analysis applies.</p>
 <h3 id="laguerre-polynomials">Laguerre Polynomials</h3>
 <p>The <strong>Laguerre polynomials</strong> $L_n(\tilde{Q})$ are defined by the recurrence</p>
 <p>$$
 (n+1) L_{n+1}(\tilde{Q}) = (2n+1-\tilde{Q}) L_n(\tilde{Q}) - n L_{n-1}(\tilde{Q}),
 $$</p>
-<p>with $L_0 = e_0$ and $L_1 = e_0 - \tilde{Q}$. The same analysis applies.</p>
+<p>with $L_0 = e_t$ and $L_1 = e_t - \tilde{Q}$. The same analysis applies.</p>
 <h3 id="the-general-principle-for-polynomials">The General Principle for Polynomials</h3>
 <p>The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of split biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, and they decompose in the idempotent basis:</p>
 <p>$$
@@ -153,9 +152,9 @@ $$</p>
 {}_2F_1(a, b; c; \tilde{Q}) = {}_2F_1(a_+, b_+; c_+; \tilde{Q}_+) \tilde\Pi_1 + {}_2F_1(a_-, b_-; c_-; \tilde{Q}_-) \tilde\Pi_2,
 $$</p>
 <p>where $a_\pm, b_\pm, c_\pm$ are the idempotent components of the parameters, and ${}_2F_1(a_\pm, b_\pm; c_\pm; \tilde{Q}_\pm)$ is the ordinary quaternion hypergeometric function of the component.</p>
-<p>In the pure oscillatory regime the quaternion hypergeometric function does <strong>not</strong> reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\vec u$ with $\vec u^2 = -e_0$ one has</p>
+<p>In the pure oscillatory regime the quaternion hypergeometric function does <strong>not</strong> reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\vec u$ with $\vec u^2 = -e_t$ one has</p>
 <p>$$
-{}_2F_1(a, b; c; \theta\vec u) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_0 + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \vec u,
+{}_2F_1(a, b; c; \theta\vec u) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_t + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \vec u,
 $$</p>
 <p>the Pochhammer symbols sitting at $2k$ and $2k+1$ rather than at $k$, which is the even/odd decomposition stated for the biquaternion case.</p>
 <h3 id="the-generalized-hypergeometric-function">The Generalized Hypergeometric Function</h3>
@@ -234,7 +233,7 @@ $$</p>
 <p><strong>Special values.</strong> Are there split biquaternion analogues of the special values $\zeta(2) = \pi^2/6$, $\zeta(4) = \pi^4/90$, etc.?</p>
 </li>
 <li>
-<p><strong>The functional equation.</strong> Is there a split biquaternion analogue of the functional equation relating $\zeta(\tilde{Q})$ to $\zeta(e_0 - \tilde{Q})$?</p>
+<p><strong>The functional equation.</strong> Is there a split biquaternion analogue of the functional equation relating $\zeta(\tilde{Q})$ to $\zeta(e_t - \tilde{Q})$?</p>
 </li>
 <li>
 <p><strong>The Riemann hypothesis.</strong> Is there an analogue of the Riemann hypothesis?</p>
@@ -252,7 +251,7 @@ $$</p>
 <p>$$
 \tilde{G}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}, \qquad \tilde{Q} \neq 0.
 $$</p>
-<p>It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions. In the idempotent basis, it decomposes:</p>
+<p>It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:</p>
 <p>$$
 \tilde{G}(\tilde{Q}) = \tilde{G}(\tilde{Q}_+) \tilde\Pi_1 + \tilde{G}(\tilde{Q}_-) \tilde\Pi_2,
 $$</p>
@@ -266,7 +265,7 @@ $$</p>
 <h3 id="the-greens-function">The Green's Function</h3>
 <p>The <strong>Green's function</strong> for the d'Alembertian on a domain $\Omega$ satisfies</p>
 <p>$$
-\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{R}) = \delta(\tilde{Q} - \tilde{R}) e_0, \qquad G(\tilde{Q}, \tilde{R}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
+\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{R}) = \delta(\tilde{Q} - \tilde{R}) e_t, \qquad G(\tilde{Q}, \tilde{R}) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
 $$</p>
 <p>Its construction is standard from the fundamental solution, and it decomposes in the idempotent basis.</p>
 <h3 id="the-open-questions_2">The Open Questions</h3>
@@ -335,7 +334,7 @@ $$</p>
 <td>Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
 <td>Quaternion basis</td>
 </tr>
 <tr>
@@ -347,7 +346,7 @@ $$</p>
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
+<td>$\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
 <td>General split biquaternion</td>
 </tr>
 <tr>

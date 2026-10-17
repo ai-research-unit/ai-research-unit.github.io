@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -71,7 +70,7 @@ $$</p>
 <h2 id="hamiltonian-floer-homology-and-the-arnold-conjecture">Hamiltonian Floer Homology and the Arnold Conjecture</h2>
 <p><strong>Definition.</strong> Let $(M,\omega)$ be a closed symplectic manifold, let $H : S^1\times M\to\mathbb{R}$ be a periodic Hamiltonian with associated time-dependent vector field $X_H$ and flow $\phi^1_H$, and let $J$ be a compatible almost complex structure. The <strong>Hamiltonian Floer complex</strong> $CF_*(M,H)$ is the free module on the $1$-periodic orbits $x : S^1\to M$ of $X_H$ that are contractible and nondegenerate, graded by the <strong>Conley–Zehnder index</strong> $\mu(x)$. The <strong>Floer equation</strong> for a map $u : \mathbb{R}\times S^1\to M$ is</p>
 <p>$$
-\partial_s u + J(u)\bigl(\partial_t u - X_H(t,u)\bigr) = 0 ,
+\partial/\partial s u + J(u)\bigl(\partial/\partial t u - X_H(t,u)\bigr) = 0 ,
 $$</p>
 <p>and the differential $\partial$ counts, with signs, the solutions that converge at the two ends to prescribed periodic orbits, the count being finite for a generic choice of $J$ and of a time-dependent perturbation of $H$.</p>
 <p><strong>Theorem (Floer).</strong> The Hamiltonian Floer complex is well defined, $\partial^2=0$, and the homology is independent of $H$ and $J$ up to canonical isomorphism. When the symplectic form is aspherical or the manifold is monotone, there is a canonical isomorphism</p>
@@ -94,7 +93,7 @@ $$</p>
 <h2 id="lagrangian-floer-homology">Lagrangian Floer Homology</h2>
 <p><strong>Definition.</strong> Let $(M,\omega)$ be a closed or exact symplectic manifold, let $L_0, L_1\subseteq M$ be closed Lagrangian submanifolds intersecting transversely, and let $J$ be a compatible almost complex structure. The <strong>Lagrangian Floer complex</strong> $CF_*(L_0,L_1)$ is the free module on the intersection points $L_0\cap L_1$, graded by the <strong>Maslov index</strong> $\mu(p)$. The differential counts the pseudoholomorphic strips $u:\mathbb{R}\times[0,1]\to M$ with $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$ and $u(s,\cdot)\to p_\pm$ as $s\to\pm\infty$, which solve the Cauchy–Riemann equation</p>
 <p>$$
-\partial_s u + J(u)\partial_t u = 0
+\partial/\partial s u + J(u)\partial/\partial t u = 0
 $$</p>
 <p>with Lagrangian boundary conditions; the counts are finite for a generic $J$ and a generic Hamiltonian perturbation of one of the Lagrangians.</p>
 <p><strong>Theorem (Floer).</strong> For a pair of closed Lagrangian submanifolds $L_0,L_1$ of a closed symplectic manifold with $L_0$ and $L_1$ intersecting transversely and with the relevant moduli spaces regular, the Lagrangian Floer complex is well defined, $\partial^2=0$, and the homology $HF_*(L_0,L_1)$ is invariant under Hamiltonian isotopies of the $L_i$ and under the choice of $J$. The construction extends to the case of a single Lagrangian $L$ with $CF_*(L,L)$ computing the Floer homology of $L$ with itself, which is invariant under Hamiltonian isotopies of $L$, vanishes for a displaceable $L$, and is isomorphic to $H_*(L;\mathbb{Z})$, with the grading shifted by the Maslov index, whenever the obstruction to the definition of the complex vanishes.</p>
@@ -171,7 +170,7 @@ $$</p>
 </tr>
 <tr>
 <td>Floer equation</td>
-<td>$\partial_s u + J(u)(\partial_t u - X_H(t,u))=0$, a pseudoholomorphic cylinder with a Hamiltonian term</td>
+<td>$\partial/\partial s u + J(u)(\partial/\partial t u - X_H(t,u))=0$, a pseudoholomorphic cylinder with a Hamiltonian term</td>
 </tr>
 <tr>
 <td>$CF_*(M,H)$</td>
@@ -183,7 +182,7 @@ $$</p>
 </tr>
 <tr>
 <td>Pseudoholomorphic strip</td>
-<td>$\partial_s u + J(u)\partial_t u = 0$, $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$</td>
+<td>$\partial/\partial s u + J(u)\partial/\partial t u = 0$, $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$</td>
 </tr>
 <tr>
 <td>$\mathrm{CS}(A)$</td>

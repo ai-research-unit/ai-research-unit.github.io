@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -90,11 +89,11 @@ $$</p>
 <p>$$
 A^{*}A = \mathrm{id} \iff B(Ax,Ay) = B(x,y) \text{ for all } x,y ,
 $$</p>
-<p>and they form a subgroup $U(V,B)$ of $E^{\times}$; in the bilinear symmetric case it contains $-1$ and the scalars $\lambda$ with $\lambda^{2} = 1$, in the antisymmetric case it contains $1$ and the scalars are $1$ only, and in the sesquilinear case it contains the scalars $\lambda$ with $\lambda\varsigma(\lambda) = 1$.</p>
+<p>and they form a subgroup $\mathrm{U}(V,B)$ of $E^{\times}$; in the bilinear symmetric case it contains $-1$ and the scalars $\lambda$ with $\lambda^{2} = 1$, in the antisymmetric case it contains $1$ and the scalars are $1$ only, and in the sesquilinear case it contains the scalars $\lambda$ with $\lambda\varsigma(\lambda) = 1$.</p>
 <p><strong>Proof.</strong> If $A^{*} = A^{-1}$ then $B(Ax,Ay) = B(x,A^{*}Ay) = B(x,y)$; conversely $B(Ax,Ay)=B(x,y)$ for all $x,y$ gives $B(x,A^{*}Ay) = B(x,y)$, hence $A^{*}A = \mathrm{id}$ by non-degeneracy, and $AA^{*} = \mathrm{id}$ follows because $A$ is invertible, with inverse $A^{*}$. The product of two unitaries is unitary because $(AB)^{*}AB = B^{*}A^{*}AB = B^{*}B = \mathrm{id}$; the identity and inverses are unitary because $(A^{-1})^{*} = (A^{*})^{-1}$. The scalar computation is $(\lambda\mathrm{id})^{*}(\lambda\mathrm{id}) = \varsigma(\lambda)\lambda\,\mathrm{id}$.</p>
 <p><strong>Proposition (the determinant).</strong> In the bilinear case $\det A \det A^{*} = \det(AA^{*}) = 1$ and $\det A^{*} = \det A$, so $\det(A)^{2} = 1$ for a symmetric pairing; for an antisymmetric pairing $\det(A^{*}) = \det(A)$ and one has $\det A = 1$, because the adjoint of a symplectic transformation has determinant $1$ in even dimension.</p>
 <p><strong>Proof.</strong> The first part is multiplicativity of the determinant and $\det A^{*}=\det A$; the antisymmetric case is the standard determinant identity for the symplectic group, quoted from the theory of the classical groups and belonging to <em>Symmetric Algebras</em> and <em>Anti-symmetric Algebras</em>.</p>
-<p><strong>Remark (the unitary elements as a set, not yet a group of operators).</strong> This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $U(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are <em>Unitary Endomorphisms</em>, which follows.</p>
+<p><strong>Remark (the unitary elements as a set, not yet a group of operators).</strong> This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $\mathrm{U}(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are <em>Unitary Endomorphisms</em>, which follows.</p>
 <h2 id="summary">Summary</h2>
 <p>A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines an involution $A \mapsto A^{*}$ of the endomorphism algebra $E = \operatorname{End}_F(V)$ by $B(Ax,y) = B(x,A^{*}y)$; the adjoint exists and is unique, and the assignment is an additive, anti-multiplicative, order-two map, $F$-linear for a bilinear pairing and $\varsigma$-semilinear for a sesquilinear one. Over a field with $2 \neq 0$ and a bilinear pairing the algebra is the direct sum of the self-adjoint and the skew-adjoint parts, of dimensions $n(n+1)/2$ and $n(n-1)/2$ for a symmetric pairing and exchanged for an antisymmetric one; in the sesquilinear case the fixed part is only $F^{\varsigma}$-linear. In a basis the involution is $A \mapsto \Phi^{-1}\overline{A}^{\mathsf{T}}\Phi$ with $\Phi$ the Gram matrix, so it depends on the congruence class of the pairing; the trace and, in the bilinear case, the determinant are preserved. The unitary elements, $A^{*}A = AA^{*} = \mathrm{id}$, are exactly the endomorphisms preserving $B$ and form a subgroup containing the appropriate scalars, with determinant satisfying $\det(A)^{2}=1$ in the symmetric bilinear case and $\det A = 1$ in the antisymmetric case. The classification of the involutions of the matrix algebra, the group structure of the unitary elements and the analytic theory of the forms belong to <em>Involutive Rings</em>, <em>Unitary Endomorphisms</em> and <em>Hilbert Algebras</em> respectively.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -143,7 +142,7 @@ $$</p>
 <td>the matrix form of the involution</td>
 </tr>
 <tr>
-<td>$U(V,B)$</td>
+<td>$\mathrm{U}(V,B)$</td>
 <td>the unitary elements, $A^{*}A=AA^{*}=\mathrm{id}$</td>
 </tr>
 <tr>

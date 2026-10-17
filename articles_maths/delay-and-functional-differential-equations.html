@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -125,7 +124,7 @@ $$</p>
 <p>$$
 \|y_t\|_\infty \le \|\phi\|_\infty\, \exp(Mt) \qquad (t \ge 0).
 $$</p>
-<p><em>Proof.</em> The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $u(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $u(t) \le \|\phi\|_\infty + M\int_\sigma^t u(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.</p>
+<p><em>Proof.</em> The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $q(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $q(t) \le \|\phi\|_\infty + M\int_\sigma^t q(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.</p>
 <h2 id="stability-and-lyapunov-functionals">Stability and Lyapunov Functionals</h2>
 <h3 id="asymptotic-stability">Asymptotic Stability</h3>
 <p><strong>Definition.</strong> The zero solution of a linear delay equation is <strong>exponentially stable</strong> if there are constants $C \ge 1$ and $\gamma > 0$ with $\|y_t\|_\infty \le C \exp(-\gamma t)\|\phi\|_\infty$ for every history $\phi$, and <strong>asymptotically stable</strong> if $y_t \to 0$ for every $\phi$. For the nonlinear equation $y'(t) = f(t,y(t),y(t-r))$ with $f(t,0,0) = 0$, the zero solution is <strong>stable</strong> if for every $\varepsilon > 0$ there is $\delta > 0$ with $\|\phi\|_\infty < \delta$ implying $\|y_t\|_\infty < \varepsilon$ for all $t \ge 0$, and <strong>asymptotically stable</strong> if in addition $y_t \to 0$.</p>
@@ -144,18 +143,18 @@ $$</p>
 <p>The spectral criterion is available only for linear equations with constant coefficients. For a nonlinear equation one uses a functional that decreases along solutions, and the two standard tools are the Lyapunov functional and the Razumikhin condition.</p>
 <p><strong>Definition.</strong> A <strong>Lyapunov functional</strong> for the equation $y'(t) = f(t,y_t)$ is a continuous functional $V : \mathbb{R}\times C \to \mathbb{R}$ that is positive definite, $V(t,0)=0$ and $V(t,\phi) \ge w(\|\phi(0)\|)$ for a continuous increasing $w$ with $w(0)=0$, and whose <strong>right derivative</strong> along solutions,</p>
 <p>$$
-\dot V(t,\phi) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\phi)\bigr) - V(t,\phi)}{h},
+\left(dV/dt\right)(t,\phi) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\phi)\bigr) - V(t,\phi)}{h},
 $$</p>
 <p>is nonpositive, where $y_{t+h}(t,\phi)$ is the history of the solution starting from $\phi$ at time $t$.</p>
-<p><strong>Theorem (Lyapunov stability).</strong> If a Lyapunov functional exists with $\dot V \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $\dot V \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.</p>
+<p><strong>Theorem (Lyapunov stability).</strong> If a Lyapunov functional exists with $dV/dt \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $dV/dt \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.</p>
 <p><em>Proof.</em> This is the direct method of Lyapunov, transplanted from finite dimensions: the monotonicity of $t \mapsto V(t,y_t)$ confines the solution to sublevel sets of $V$, which are neighbourhoods of the origin by positive definiteness, and the stronger decay condition forces the solution to the origin, the boundedness of $V$ on bounded sets providing the uniformity in the initial history.</p>
 <p><strong>Example (a quadratic functional).</strong> For $y'(t) = -ay(t) + by(t-r)$ with $a > 0$ and $|b| < a$, the functional</p>
 <p>$$
 V(\phi) = \phi(0)^2 + \mu\int_{-r}^{0}\phi(\theta)^2\,d\theta
 $$</p>
 <p>has derivative along a solution equal to $-2a\phi(0)^2 + 2b\phi(0)\phi(-r) + \mu\bigl(\phi(0)^2 - \phi(-r)^2\bigr)$ up to the boundary term of the integral, and choosing $\mu$ large enough makes the expression negative definite; hence the zero solution is asymptotically stable. The condition $|b|<a$ is sufficient but not necessary, the sharp condition being the spectral one.</p>
-<p><strong>Theorem (Razumikhin).</strong> Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\dot V(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\theta, y(t+\theta)) \le V(t,y(t))$ for all $\theta \in [-r,0]$, where $\dot V$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.</p>
-<p><em>Proof.</em> If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $\dot V < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.</p>
+<p><strong>Theorem (Razumikhin).</strong> Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\left(dV/dt\right)(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\theta, y(t+\theta)) \le V(t,y(t))$ for all $\theta \in [-r,0]$, where $dV/dt$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.</p>
+<p><em>Proof.</em> If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $dV/dt < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.</p>
 <p>Razumikhin's method avoids the integral over the history, at the cost of a hypothesis on the whole history only at the instants at which the maximum is attained; it is the more flexible tool for a nonlinearity that depends on the past through a bounded function.</p>
 <h2 id="general-functional-differential-equations">General Functional Differential Equations</h2>
 <h3 id="the-general-form">The General Form</h3>
@@ -250,7 +249,7 @@ $$</p>
 </tr>
 <tr>
 <td>$V(t,\phi)$</td>
-<td>Lyapunov functional; $\dot V$ its right derivative along solutions</td>
+<td>Lyapunov functional; $dV/dt$ its right derivative along solutions</td>
 </tr>
 <tr>
 <td>$L$</td>

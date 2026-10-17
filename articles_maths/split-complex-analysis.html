@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -82,11 +81,11 @@ B(A_0, r) = \{A \in \mathbb{D} : \|A - A_0\|_E < r\}.
 $$</p>
 <p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{D}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
 <h3 id="open-and-closed-sets">Open and Closed Sets</h3>
-<p>A set $U \subseteq \mathbb{D}$ is <strong>open</strong> if for every $A_0 \in U$ there exists $r > 0$ with $B(A_0, r) \subseteq U$.</p>
+<p>A set $\Omega \subseteq \mathbb{D}$ is <strong>open</strong> if for every $A_0 \in \Omega$ there exists $r > 0$ with $B(A_0, r) \subseteq \Omega$.</p>
 <p>A set $F \subseteq \mathbb{D}$ is <strong>closed</strong> if its complement $\mathbb{D} \setminus F$ is open.</p>
 <p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
 <h3 id="connectedness-and-domains">Connectedness and Domains</h3>
-<p>A set $U \subseteq \mathbb{D}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.</p>
+<p>A set $\Omega \subseteq \mathbb{D}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.</p>
 <p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{D}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
 <h3 id="compactness">Compactness</h3>
 <p>A set $K \subseteq \mathbb{D}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
@@ -150,7 +149,7 @@ $$</p>
 <p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
 <h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
 <h3 id="the-derivative">The Derivative</h3>
-<p>Let $f : U \to \mathbb{D}$ with $U$ open, and let $A_0 \in U$. The <strong>derivative</strong> of $f$ at $A_0$ is</p>
+<p>Let $f : \Omega \to \mathbb{D}$ with $\Omega$ open, and let $A_0 \in \Omega$. The <strong>derivative</strong> of $f$ at $A_0$ is</p>
 <p>$$
 f'(A_0) = \lim_{h \to 0} \frac{f(A_0 + h) - f(A_0)}{h},
 $$</p>
@@ -158,14 +157,14 @@ $$</p>
 <p>The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
 <p><strong>Theorem.</strong> Split complex differentiability implies continuity. The converse fails.</p>
 <h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
-<p>Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : U \to \mathbb{R}$.</p>
+<p>Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : \Omega \to \mathbb{R}$.</p>
 <p><strong>Theorem.</strong> $f$ is split complex differentiable at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are real differentiable at $(a_0, a'_0)$ and satisfy the <strong>split Cauchy–Riemann equations</strong></p>
 <p>$$
 \frac{\partial u}{\partial a} = \frac{\partial v}{\partial a'}, \qquad \frac{\partial u}{\partial a'} = \frac{\partial v}{\partial a}.
 $$</p>
 <p><strong>Proof.</strong> Write $h = h_1 + j h_2$. The difference quotient is</p>
 <p>$$
-\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(u_a h_1 + u_{a'} h_2) + j (v_a h_1 + v_{a'} h_2)}{h_1 + j h_2} + o(1).
+\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(\partial u/\partial a h_1 + \partial u/\partial a' h_2) + j (\partial v/\partial a h_1 + \partial v/\partial a' h_2)}{h_1 + j h_2} + o(1).
 $$</p>
 <p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.</p>
 <p><strong>Corollary.</strong> If $f$ is split complex differentiable, then $u$ and $v$ satisfy the <strong>wave equation</strong>:</p>
@@ -230,7 +229,7 @@ $$</p>
 $$</p>
 <p>The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|A B\|_E \leq \sqrt{2} \|A\|_E \|B\|_E$, and the constant is sharp.</p>
 <h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
-<p><strong>Theorem (Cauchy–Goursat, split version).</strong> If $f$ is split complex differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then</p>
+<p><strong>Theorem (Cauchy–Goursat, split version).</strong> If $f$ is split complex differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then</p>
 <p>$$
 \oint_\gamma f(A) \, dA = 0.
 $$</p>
@@ -305,8 +304,8 @@ $$</p>
 </tr>
 <tr>
 <td>Cauchy–Riemann</td>
-<td>$u_a = v_{a'}$, $u_{a'} = -v_a$</td>
-<td>$u_a = v_{a'}$, $u_{a'} = v_a$</td>
+<td>$\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = -\partial v/\partial a$</td>
+<td>$\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = \partial v/\partial a$</td>
 </tr>
 <tr>
 <td>Harmonic equation</td>
@@ -412,7 +411,7 @@ $$</p>
 <td>Contour integral</td>
 </tr>
 <tr>
-<td>$\Box = \partial_a^2 - \partial_{a'}^2$</td>
+<td>$\Box = \partial^2/\partial a^2 - \partial^2/\partial a'^2$</td>
 <td>d'Alembertian</td>
 </tr>
 </tbody>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,14 +51,14 @@
       <div class="article-body">
         <h1 id="hyperkahler-manifolds-and-the-twistor-space"><strong>Hyperkähler Manifolds and the Twistor Space</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A hyperkähler manifold carries three complex structures $J_1,J_2,J_3$ with the quaternionic relations, each a Kähler structure for the same metric. The three are not isolated: every unit quaternion $\lambda=ae_1+be_2+ce_3$ gives a complex structure</p>
+<p>A hyperkähler manifold carries three complex structures $J_1,J_2,J_3$ with the quaternionic relations, each a Kähler structure for the same metric. The three are not isolated: every unit quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$ gives a complex structure</p>
 <p>$$
 I_\lambda = aJ_1+bJ_2+cJ_3 , \qquad I_\lambda^2=-\mathrm{id} ,
 $$</p>
 <p>and the whole family is a two-sphere, the <strong>twistor family</strong> of the manifold. The quaternionic conjugation $\lambda\mapsto\bar\lambda$ acts on the family by the antipode $I_\lambda\mapsto-I_\lambda$, and the pair $\{I_\lambda,I_{-\lambda}\}$ is the fibre over a point of the quotient sphere. The <strong>twistor space</strong> of the hyperkähler manifold is the total space of the family, and its complex structure makes the family a holomorphic fibration over $\mathbb{CP}^1$ with a holomorphic symplectic form on each fibre. This article treats the family, the twistor space, and the conjugation on both.</p>
 <p><strong>The boundaries.</strong> The hyperkähler structure, the forms $\omega_i$, the holonomy $Sp(n)$ and the hyperkähler quotient are <em>Hyperkähler Geometry</em>; the quaternionic structure and the conjugation on the structure bundle are <em>Quaternionic Geometry</em> and <em>Quaternionic Geometry and the Conjugate Structure</em>; the Kähler condition and the holomorphic symplectic form are <em>Kähler Geometry</em> and <em>Complex Manifolds</em>; the twistor space of a four-dimensional conformal manifold, its real structure and its Hermitian form are <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>, and the twistor operator is <em>The Twistor Operator</em>. The construction of the complex structure of the twistor space and the existence of the metrics on it use the elliptic methods of Part III and are cited. The base field is $\mathbb{R}$.</p>
 <h2 id="the-twistor-family-of-complex-structures">The Twistor Family of Complex Structures</h2>
-<p><strong>Definition.</strong> Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=ae_1+be_2+ce_3$, $a^2+b^2+c^2=1$, the <strong>twistor family</strong> is</p>
+<p><strong>Definition.</strong> Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$, $a^2+b^2+c^2=1$, the <strong>twistor family</strong> is</p>
 <p>$$
 I_\lambda=aJ_1+bJ_2+cJ_3 , \qquad \Omega_\lambda = a\omega_1+b\omega_2+c\omega_3 .
 $$</p>
@@ -78,7 +77,7 @@ $$</p>
 Z = M\times S^2 \quad\text{with the fibration}\quad \pi : Z\longrightarrow S^2=\mathbb{CP}^1 ,
 $$</p>
 <p>the fibre over $\lambda$ being $M$ with the complex structure $I_\lambda$; the <strong>twistor lines</strong> are the sections $x\mapsto (x,\lambda)$ for fixed $\lambda$, identified with $M$ as a complex manifold for that $\lambda$.</p>
-<p><strong>Theorem (the complex structure, quoted).</strong> The total space $Z$ carries a complex structure $I$ whose restriction to the fibre $\pi^{-1}(\lambda)$ is $I_\lambda$ and whose horizontal part is the family of the $I_\lambda$ transported across the sphere; with respect to it the fibration $\pi$ is holomorphic, the twistor lines are holomorphic sections with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and on each fibre the two-form $\Omega_2+i\Omega_3$, restricted to the fibre $\pi^{-1}(e_1)$ and extended by the family, is a <strong>holomorphic symplectic form</strong> $\omega$ of $Z$: it is closed, of type $(2,0)$ with respect to $I$, and non-degenerate on the vertical tangent space.</p>
+<p><strong>Theorem (the complex structure, quoted).</strong> The total space $Z$ carries a complex structure $I$ whose restriction to the fibre $\pi^{-1}(\lambda)$ is $I_\lambda$ and whose horizontal part is the family of the $I_\lambda$ transported across the sphere; with respect to it the fibration $\pi$ is holomorphic, the twistor lines are holomorphic sections with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and on each fibre the two-form $\Omega_2+i\Omega_3$, restricted to the fibre $\pi^{-1}(\vec e_x)$ and extended by the family, is a <strong>holomorphic symplectic form</strong> $\omega$ of $Z$: it is closed, of type $(2,0)$ with respect to $I$, and non-degenerate on the vertical tangent space.</p>
 <p><strong>Proof sketch.</strong> The integrability of $I$ uses the parallelness of the family and the holomorphicity of the fibration uses the anti-holomorphicity of the antipodal conjugation; the closedness of $\omega$ is that of the $\omega_i$ and the type is read from the Kähler forms of the family; the normal-bundle statement is the deformation computation of the twistor theory of <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>, quoted. The construction is the standard hyperkähler twistor construction and its details are the cited literature.</p>
 <p><strong>Proposition (the compatibility with the four-dimensional case).</strong> For a four-dimensional hyperkähler manifold the twistor space just defined agrees with the twistor space $\mathbb{P}(\mathcal{S}^-)$ of the conformal class, the twistor lines agree, and the real structure of the conformal twistor space restricts on each fibre to the antipodal map induced by the conjugation.</p>
 <p><strong>Proof.</strong> In dimension four a hyperkähler structure is the same datum as a self-dual conformal structure with a parallel spinor, so the projective spinor bundle is the bundle of compatible complex structures, the two fibrations have the same fibres and the same lines; the real structure is computed from the conjugation of the spinor bundle and coincides with the antipode on the fibres by the identification of <em>Twistor Spaces and the Hermitian Structure of a Conformal Manifold</em>.</p>
@@ -89,7 +88,7 @@ $$</p>
 <p><strong>Proof.</strong> The composite is anti-linear on the fibres because the conjugation is anti-linear on the parameter and the extra involution may be taken anti-linear on $M$; the fibration is preserved because the antipode preserves the base; the reality statement is the restriction of the four-dimensional one.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-flat-quaternionic-space">The Flat Quaternionic Space</h3>
-<p>For $\mathbb{H}^n$ with the flat metric the three structures are the constant left multiplications by $e_1,e_2,e_3$, the family $I_\lambda$ is constant in $\lambda$, and the twistor space is the product $\mathbb{H}^n\times\mathbb{CP}^1$ with the product complex structure; the holomorphic symplectic form is the constant form $\Omega_2+i\Omega_3$.</p>
+<p>For $\mathbb{H}^n$ with the flat metric the three structures are the constant left multiplications by $\vec e_x,\vec e_y,\vec e_z$, the family $I_\lambda$ is constant in $\lambda$, and the twistor space is the product $\mathbb{H}^n\times\mathbb{CP}^1$ with the product complex structure; the holomorphic symplectic form is the constant form $\Omega_2+i\Omega_3$.</p>
 <h3 id="the-four-torus">The Four-Torus</h3>
 <p>For $T^4=\mathbb{H}/\Lambda$ the twistor family is the family of the flat Kähler structures of the same metric, and the twistor space is the product of the torus with the sphere; the twistor lines are the horizontal sections, and the conjugation pairs the two complex structures of each fibre.</p>
 <h3 id="a-math83-surface">A $K3$ Surface</h3>
@@ -110,7 +109,7 @@ $$</p>
 <td>Hyperkähler triple; $\omega_i(X,Y)=g(J_iX,Y)$</td>
 </tr>
 <tr>
-<td>$\lambda=ae_1+be_2+ce_3$</td>
+<td>$\lambda=a\vec e_x+b\vec e_y+c\vec e_z$</td>
 <td>Unit imaginary quaternion</td>
 </tr>
 <tr>

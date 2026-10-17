@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -71,7 +70,7 @@ $$</p>
 <p><strong>Example.</strong> For the quadratic family $f_c(z) = z^2 + c$ the only finite critical point is $0$, the critical orbit is $0 \mapsto c \mapsto c^2+c \mapsto \cdots$, and $f_c$ is post-critically finite exactly when this orbit is finite; $c = 0$ and $c = -2$ are the first examples, and $c = i$ gives the finite orbit $0 \mapsto i \mapsto -1+i \mapsto -i \mapsto -1+i$, of preperiod $1$ and period $2$.</p>
 <h2 id="the-fatou-and-julia-sets">The Fatou and Julia Sets</h2>
 <h3 id="normal-families">Normal Families</h3>
-<p><strong>Definition.</strong> Let $U \subseteq \hat{\mathbb{C}}$ be open and let $\mathcal{F}$ be a family of holomorphic maps $U \to \hat{\mathbb{C}}$. The family is <strong>normal</strong> if every sequence in it has a subsequence converging locally uniformly on $U$, in the spherical metric, to a holomorphic map $U \to \hat{\mathbb{C}}$. Equivalently, by <em>Complex Analysis</em>, the family is <strong>equicontinuous</strong> on compact subsets of $U$ with respect to the spherical metric.</p>
+<p><strong>Definition.</strong> Let $\Omega \subseteq \hat{\mathbb{C}}$ be open and let $\mathcal{F}$ be a family of holomorphic maps $\Omega \to \hat{\mathbb{C}}$. The family is <strong>normal</strong> if every sequence in it has a subsequence converging locally uniformly on $\Omega$, in the spherical metric, to a holomorphic map $\Omega \to \hat{\mathbb{C}}$. Equivalently, by <em>Complex Analysis</em>, the family is <strong>equicontinuous</strong> on compact subsets of $\Omega$ with respect to the spherical metric.</p>
 <p><strong>Theorem (Montel).</strong> A family of holomorphic maps on a domain that omits three fixed values of $\hat{\mathbb{C}}$ is normal.</p>
 <p><strong>Proof sketch.</strong> Three omitted values may be moved to $0, 1, \infty$ by a Möbius transformation; the classical Montel theorem states that the family of holomorphic maps into $\hat{\mathbb{C}} \setminus \{0,1,\infty\}$ is normal, and conjugating by the Möbius map returns the statement. This is the normal-family theorem of <em>Complex Analysis</em>.</p>
 <h3 id="the-two-sets">The Two Sets</h3>
@@ -109,7 +108,7 @@ $$</p>
 <p><strong>(a)</strong> $J(f) = \partial K(f) = \partial A(\infty)$;</p>
 <p><strong>(b)</strong> $F(f) = \mathring{K}(f) \cup A(\infty)$, the union of the interior of the filled Julia set and the basin of infinity;</p>
 <p><strong>(c)</strong> $A(\infty)$ is connected and simply connected, and $K(f)$ is connected if and only if $A(\infty)$ is simply connected;</p>
-<p><strong>(d)</strong> $J(f)$ is the boundary of <strong>every</strong> Fatou component: if $U$ is a component of $F(f)$, then $\partial U = J(f)$;</p>
+<p><strong>(d)</strong> $J(f)$ is the boundary of <strong>every</strong> Fatou component: if $\Omega$ is a component of $F(f)$, then $\partial \Omega = J(f)$;</p>
 <p><strong>(e)</strong> $K(f)$ is connected if and only if every critical point of $f$ lies in $K(f)$; for the quadratic family this reads $K(f_c)$ connected $\iff 0 \in K(f_c) \iff c \in M$, where $M$ is the Mandelbrot set of <em>The Mandelbrot Set and the Quadratic Family</em>.</p>
 <p><strong>Proof sketch.</strong> (a) A point of $\partial K$ is not in the basin and cannot have a neighbourhood on which the iterates are normal and bounded, so it lies in $J$; conversely the iterates near a point of $A(\infty)$ converge locally uniformly to $\infty$, so $A(\infty) \subseteq F$, and near a point of $\mathring K$ the iterates are bounded and hence normal, so $F = \mathring K \cup A(\infty)$ and $J = \partial K = \partial A(\infty)$. (c) $A(\infty)$ is the domain of the Böttcher coordinate, whose construction is the subject of <em>The Escape Radius and the Green's Function</em>; a Riemann-map argument shows that $K$ is connected exactly when $A(\infty)$ is simply connected. (d) Each Fatou component is mapped eventually into a periodic component, and the boundary of every component is carried onto the boundary of its image by the open map $f$; the common boundary is therefore a closed completely invariant set with more than two points, hence $J$ by the corollary above. (e) If a critical point lies in $A(\infty)$ then its image and the whole critical orbit escape, and the preimages of a neighbourhood of $\infty$ disconnect $K$; conversely the escape of the critical orbit forces $K$ disconnected. The detailed arguments are in <em>The Geometry of the Julia Sets</em> and in the local-connectivity theory cited there.</p>
 <h2 id="self-similarity-and-coding">Self-Similarity and Coding</h2>

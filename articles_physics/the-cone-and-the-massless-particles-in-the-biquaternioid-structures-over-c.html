@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -95,17 +94,17 @@ tenth gathers, across the whole corpus and without regard to the older boundarie
 the cone, each cited in place. The closing sections are the ledger, the boundaries, the summary, the
 notation table and the literature.</p>
 <p><strong>Conventions.</strong> We use those of the companion articles unchanged. The biquaternion algebra is
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$,
-$e_k^{2}=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and $i$ the central scalar imaginary.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$,
+$\vec e_\mu^{2}=-e_t$ and $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ the central scalar imaginary.
 The conjugations are the natural conjugation ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$
 and the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with
 $\tilde Q^{\flat}=-\tilde Q^{*}$. The biquaternion norm is
 $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$,
-which is the determinant of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e_0)=I_2$ and
-$\mathsf{M}_2(e_k)=-i\sigma_k$. The subspaces are the anti-Hermitian material sector $\mathbb{M}_-$,
+which is the determinant of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e_t)=I_2$ and
+$\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$. The subspaces are the anti-Hermitian material sector $\mathbb{M}_-$,
 the Hermitian informational sector $\mathbb{M}_+$, the real-quaternion subspace
-$\mathbb{H}_{\mathbb{B}}$ and the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$.
-The material coordinate is $\tilde Q=ict\,e_0+\vec x$, so that $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+\vec x^{2}$,
+$\mathbb{H}_{\mathbb{B}}$ and the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$.
+The material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so that $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$,
 and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula is
 $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\langle\tilde P,\tilde H\rangle$. The
 plain product is written $\tilde P\tilde Q$ and the plain sesquilinear product
@@ -117,8 +116,8 @@ convention for a square-zero element is that of <em>Conventions in the Biquatern
 <p>$$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}=\det\mathsf{M}_2(\tilde Q).
 $$</p>
-<p>On the material sector the norm is the Minkowski interval, $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+\vec x^{2}$ for
-$\tilde Q=ict\,e_0+\vec x$, so its zero set is the light cone $|\vec x|=c|t|$. The algebraic
+<p>On the material sector the norm is the Minkowski interval, $\langle\tilde Q\rangle_{\natural}=-c^{2}t^{2}+x^2+y^2+z^2$ for
+$\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, so its zero set is the light cone $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=c|t|$. The algebraic
 character of that zero set is the subject of <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>: a
 nonzero biquaternion has vanishing norm if and only if it is a zero divisor, that is, if and only if it
 annihilates some nonzero element. The same article splits the zero divisors into the <strong>nilpotents</strong>, whose
@@ -132,7 +131,7 @@ does exactly one thing with it.</p>
 <p>In the <strong>composition</strong>, the cone is the boundary of invertibility. A nonzero element $\tilde Q$ has a
 two-sided plain inverse precisely when $\langle\tilde Q\rangle_{\natural}\neq0$, the inverse being
 $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$, and it has none when $\langle\tilde Q\rangle_{\natural}=0$. The plain product is the
-operation that composes transformations and iterates a process (<em>The Bilinear Product on the Biquaternion Space</em>), so the cone is the set of elements that cannot be composed further, and the physics of that
+operation that composes transformations and iterates a process (<em>The Products, Their Forms and Their Norms</em>), so the cone is the set of elements that cannot be composed further, and the physics of that
 failure is propagation, taken up in its own section below.</p>
 <p>In the <strong>probability</strong>, the cone is a rank drop. The plain sesquilinear product gives no element a
 two-sided inverse at all, and its one-sided inverse exists exactly off the cone, so element invertibility
@@ -175,10 +174,10 @@ they are kept apart.</p>
 <li><strong>The zero-divisor cone</strong>, $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the null set of the norm. It is the
   subject of this article, and "the cone" without qualification always means this set here.</li>
 <li><strong>The state cone</strong> of the informational sector, the future cone of $\mathbb{M}_+$, that is
-  $\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, sliced by $\mathrm{Tr}\,\tilde\varrho=1$
+  $\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, sliced by $\mathrm{Tr}\,\tilde\varrho=1$
   for the states. It is a cone of <em>positive</em> elements, and it is the image of the sesquilinear square; the
   zero-divisor cone is its rank-one boundary, as the next sections show.</li>
-<li><strong>The cone of an operation</strong>, the one-dimensional ray $\mathbb{R}_{\ge0}e_0$ that is the image of the
+<li><strong>The cone of an operation</strong>, the one-dimensional ray $\mathbb{R}_{\ge0}e_t$ that is the image of the
   symmetric plain sesquilinear product. <em>Why Probability Values Are Central: the Symmetric Sesquilinear
   Product and Its Cone</em> warns of exactly this collision: its ray is the <strong>normalisation direction</strong> of a
   probability and "is not the state cone".</li>
@@ -323,7 +322,7 @@ belongs to a product.</p>
   failure. These are the four rows whose invertibility criterion is the norm, and for them the cone is what
   the companion article calls the boundary of the band. For six of the eight parts the left multiplication
   is already degenerate off the cone, and those six carry no unit; the two exceptions are the
-  algebra-valued symmetric rows, SPA carrying the two-sided unit $e_0$ and SQS none, which are invertible
+  algebra-valued symmetric rows, SPA carrying the two-sided unit $e_t$ and SQS none, which are invertible
   at a generic element off the cone and off the pure subspace and degenerate only on the pure subspace and
   on the cone.</li>
 <li><strong>The cone is absorbing for exactly those four rows.</strong> The product of a lightlike element with anything
@@ -334,7 +333,7 @@ belongs to a product.</p>
 <p>The reasons the eight parts degenerate are visible in the table. The four antisymmetric rows have no scalar
 part, so the centre lies in their kernel; the two central-valued symmetric rows have the centre for their
 whole image, so their operators are of rank two everywhere; and the two algebra-valued symmetric rows SPA
-and SQS are singular on the pure subspace $\{Q_0=0\}$ as well. Their symmetrised left multiplication is
+and SQS are singular on the pure subspace $\{Q_t=0\}$ as well. Their symmetrised left multiplication is
 the anticommutator of the matrix model, with eigenvalues $\tfrac12(\lambda_i+\lambda_j)$ of the eigenvalues
 $\lambda_i$ of $\mathsf M_2(\tilde P)$, whose product carries the factor $\mathrm{Sc}(\tilde P)^{2}$ and so
 vanishes on the pure subspace and on the cone alike. The determinant vanishing is not the whole rank
@@ -357,7 +356,7 @@ is the exact boundary of invertibility, and it is absorbing. <strong>The physica
 probability reading of the same boundary: the sesquilinear square drops from rank two to rank one exactly on
 the cone, so the cone is the rank-drop locus of the Born weight and the pure-state boundary of the state
 cone. The reading is <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em> and <em>The Spinor Space as a Module and as a Hilbert Space</em>.</p>
-<p>The element $e_0$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{*}$; the cone is the complement of those elements.</p>
+<p>The element $e_t$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{*}$; the cone is the complement of those elements.</p>
 <h3 id="math122-the-general-quaternionic-algebra-causality">$\mathrm{GQA}$, the general quaternionic algebra — causality</h3>
 <p>The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first
 slot, and its square is the central interval. The rank is eight off the cone and four on it, so the cone is
@@ -366,7 +365,7 @@ reading of the same boundary: a lightlike element cannot be composed with, the r
 form of that statement, and the orientation of the product makes the band measure a sign rather than a size.
 The reading is <em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em> and <em>Why the Material
 Composition Is Oriented and Cannot Measure</em>.</p>
-<p>The element $e_0$ is a left unit alone; the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural}$, and the cone is the complement of those elements.</p>
+<p>The element $e_t$ is a left unit alone; the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural}$, and the cone is the complement of those elements.</p>
 <h3 id="math127-the-general-quaternionic-sesqualgebra-gauge">$\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge</h3>
 <p>The product is the fourth product $\tilde P^{\natural}\tilde Q^{*}$. The rank is eight off the cone and four
 on it, so the cone is the exact boundary of invertibility, and it is absorbing.
@@ -381,9 +380,9 @@ rank eight off the cone, except on the pure subspace where it is four, and on th
 part and six on the rest. The cone is a degeneration locus of the row and not the whole one, and the row is
 not absorbing: the symmetrisation mixes a lightlike term with a second term that need not be lightlike.
 <strong>The physical interpretation</strong> is that a symmetrised material composition is a coupling, and a coupling can
-vanish on the pure family even when both factors are non-degenerate, as the witness $e_1\bullet e_2=0$ shows.
+vanish on the pure family even when both factors are non-degenerate, as the witness $\vec e_x\bullet \vec e_y=0$ shows.
 The reading is <em>The Biquaternioid Symmetric Plain Algebra (SPA) over $\mathbb{C}$</em> and <em>Square Roots of One and the Idempotents: the Hermitian Observables and the States</em>.</p>
-<p>The unit $e_0$ is two-sided, and the invertible elements of the row are the complement of its zero-divisor set, the smaller set $\{Q_0\neq0,\ \mathrm{Norm}\neq0\}$ (together with $0$, which is in the complement and is no zero divisor). They form no group, the product being non-associative. The pure family is the difference: an element with $Q_0=0$ and $\mathrm{Norm}\neq0$ is a plain unit, invertible in the composition, and a zero divisor of the symmetrised row.</p>
+<p>The unit $e_t$ is two-sided, and the invertible elements of the row are the complement of its zero-divisor set, the smaller set $\{Q_t\neq0,\ \mathrm{Norm}\neq0\}$ (together with $0$, which is in the complement and is no zero divisor). They form no group, the product being non-associative. The pure family is the difference: an element with $Q_t=0$ and $\mathrm{Norm}\neq0$ is a plain unit, invertible in the composition, and a zero divisor of the symmetrised row.</p>
 <h3 id="math140-the-symmetric-plain-sesqualgebra-positivity">$\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity</h3>
 <p>The product is the symmetrisation $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$, which is
 scalar-valued, with the non-negative value $\langle\tilde P,\tilde Q\rangle_{*}$. The rank is two off the cone and two on
@@ -395,7 +394,7 @@ Symmetric Sesquilinear Product and Its Cone</em>.</p>
 <p>The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.</p>
 <h3 id="math143-the-symmetric-quaternionic-algebra-coupling">$\mathrm{SQA}$, the symmetric quaternionic algebra — coupling</h3>
 <p>The product is the symmetrisation
-$\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$, central and
+$\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$, central and
 scalar-valued. The left multiplication has rank two off the cone and two on it: the cone is nothing for the
 row, because the image is the centre whatever the operand. <strong>The physical interpretation</strong> is that a scalar
 coupling of two operations returns a number, and a number composes with nothing, so the cone leaves no trace
@@ -410,10 +409,10 @@ the cone, except on the pure subspace where it is four, and on the cone it is fo
 on the rest: the cone is a degeneration locus of the row and not the whole one, and the row is not
 absorbing. <strong>The physical interpretation</strong> is that the symmetric part of the gauge metric is again a
 coupling, and the same witness applies: a symmetrised gauge coupling annihilates two operations whose vector
-parts are conjugate-orthogonal, $e_1\star e_2=0$, so the pure family and the cone degenerate together. The
+parts are conjugate-orthogonal, $\vec e_x\star \vec e_y=0$, so the pure family and the cone degenerate together. The
 reading is <em>The Biquaternioid Symmetric Quaternionic Sesqualgebra (SQS) over $\mathbb{C}$</em> and <em>Values in
 No Subspace: Why the Symmetric Gauge Product Is Not a State</em>.</p>
-<p>The row has no unit, so the complement of the enlarged set, $\{Q_0\neq0,\ \mathrm{Norm}\neq0\}\cup\{0\}$, carries no group of units.</p>
+<p>The row has no unit, so the complement of the enlarged set, $\{Q_t\neq0,\ \mathrm{Norm}\neq0\}\cup\{0\}$, carries no group of units.</p>
 <h3 id="math150-the-antisymmetric-plain-algebra-rotation">$\mathrm{APA}$, the antisymmetric plain algebra — rotation</h3>
 <p>The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, which is
 alternating, and the left multiplication has real rank four off the cone and four on it. The cone is nothing
@@ -465,7 +464,7 @@ parametrised cone $X_1=1$, $X_2=i\cos t$, $X_3=i\sin t$, which satisfies $\sum_k
 $t$. The pure isotropic cone is therefore the square-zero locus, and its nilpotent index is <strong>two</strong>: the
 first power is nonzero and the second vanishes.</p>
 <p>The square-zero locus is a proper part of the cone. An idempotent multiple, for instance the Hermitian
-idempotent $\tilde\Pi=\tfrac12(e_0+i\vec u)$ with
+idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with
 $\tilde\Pi^{2}=\tilde\Pi$, has vanishing norm and a nonzero square, so the cone is the disjoint union of
 the square-zero elements and the elements whose square is not zero.</p>
 <h3 id="the-pairing-nothing-squares-to-zero-and-the-cone-is-nilpotent-of-index-three">The pairing: nothing squares to zero, and the cone is nilpotent of index three</h3>
@@ -498,7 +497,7 @@ idempotent multiples are nilpotent in neither band.</p>
 <p>The shift is the sharpest single contrast of the comparison. Lightlike propagation is square-zero in the
 operation that composes and cubically-zero in the operation that evaluates.</p>
 <h3 id="the-recomputation">The recomputation</h3>
-<p>Every claim of this section was recomputed in the matrix model with $\mathsf{M}_2(e_k)=-i\sigma_k$, on
+<p>Every claim of this section was recomputed in the matrix model with $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, on
 $100$ random elements and on the parametrised pure isotropic cone.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -546,10 +545,10 @@ the natural conjugation is what produces the interval, while the plain product c
 <p>The <strong>sector sign</strong> is $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$, of signature $(4,4)$ on the
 complex space. Its algebraic norm is</p>
 <p>$$
-\langle\tilde Q,\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})=Q_0^{2}-\sum_k Q_k^{2},
+\langle\tilde Q,\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})=Q_t^{2}-\sum_k Q_k^{2},
 $$</p>
 <p>which is not the norm: the vector part enters with the opposite sign. On the material sector, where
-$Q_0=ict$ and the $Q_k$ are real, the sector sign is $-c^{2}t^{2}-\vec x^{2}$, a negative definite
+$Q_t=ict$ and the $Q_k$ are real, the sector sign is $-c^{2}t^{2}-(x^2+y^2+z^2)$, a negative definite
 form, so the material sector contains no real direction on which $\langle\cdot,\cdot\rangle$ vanishes. The light cone is not the
 null cone of the sector sign. <em>The Bilinear Product on the Material Sector</em> states the same separation
 from the other side, that the sector sign is definite on each sector and has no cone there, so that the
@@ -567,7 +566,7 @@ the sum $\sum_\mu P_\mu Q_\mu$, and whose algebraic norm is the biquaternion nor
 $\langle\tilde Q,\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$. The light cone is its null set by construction.</p>
 <p>The <strong>fourth form</strong> is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, the gauge
 metric of the quaternionic sesquilinear product, whose algebraic norm is
-$\lvert Q_0\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$; it is indefinite, of realified signature $(2,6)$,
+$\lvert Q_t\rvert^{2}-\sum_k\lvert Q_k\rvert^{2}$; it is indefinite, of realified signature $(2,6)$,
 positive on the centre and negative on the vector subspace.</p>
 <p>Its null set is not the light cone, and the comparison is sharper than "different". On the two sectors the
 interval and the gauge metric are one form up to sign,</p>
@@ -582,16 +581,16 @@ coincide, $\langle\cdot,\cdot\rangle_{\natural*}=0\iff\langle\cdot,\cdot\rangle_
 Indefinite Metric Cannot Normalise</em>: the pure states are the intersection of the gauge-metric null set, the
 zero-divisor cone and the trace-one slice, so the cone is at once the locus of light and the boundary of
 the state space. Off the two sectors the null sets separate in both directions, with the witnesses
-$\tilde Q=e_0+e_1$, where $\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ and $\langle\tilde Q,\tilde Q\rangle_{\natural}=2$, and $\tilde Q=e_0+i\sqrt{2}\,e_1+e_2$, where $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$ and
+$\tilde Q=e_t+\vec e_x$, where $\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ and $\langle\tilde Q,\tilde Q\rangle_{\natural}=2$, and $\tilde Q=e_t+i\sqrt{2}\,\vec e_x+\vec e_y$, where $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$ and
 $\langle\tilde Q,\tilde Q\rangle_{\natural*}=-2$. The gauge metric therefore contains the cone as a subset and adds to it; it is not the interval.</p>
 <p>Of the four, only the interval has the light cone as its null set. The other two indefinite forms meet the
 cone, and each meets it on one remarkable subspace: the sector sign on the pure part, where
 $\langle\tilde Q,\tilde Q\rangle=-\langle\tilde Q\rangle_{\natural}$, and on the centre, where $\langle\tilde Q,\tilde Q\rangle=\langle\tilde Q\rangle_{\natural}$, so the two
 forms coincide up to sign on the pure subspace and the sector sign vanishes on the pure isotropic elements;
 and the gauge metric on the two sectors, where $\langle\cdot,\cdot\rangle_{\natural*}=\pm\langle\cdot,\cdot\rangle_{\natural}$. Neither meeting is the whole cone, and each of the
-two forms has its own null set, the quadrics $Q_0^{2}=\sum_kQ_k^{2}$ and $\langle\cdot,\cdot\rangle_{\natural*}=0$, which contain points off
-the cone and miss points of it. The witness $\tilde Q=e_0+i e_1+i e_2+e_3$ has $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, $\langle\tilde Q,\tilde Q\rangle=2$ and $\langle\tilde Q,\tilde Q\rangle_{\natural*}=-2$, so
-it lies on the cone and in neither of the other null sets, while $\tilde Q=e_0+e_1$ has $\langle\tilde Q,\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ with
+two forms has its own null set, the quadrics $Q_t^{2}=\sum_kQ_k^{2}$ and $\langle\cdot,\cdot\rangle_{\natural*}=0$, which contain points off
+the cone and miss points of it. The witness $\tilde Q=e_t+i \vec e_x+i \vec e_y+\vec e_z$ has $\langle\tilde Q,\tilde Q\rangle_{\natural}=0$, $\langle\tilde Q,\tilde Q\rangle=2$ and $\langle\tilde Q,\tilde Q\rangle_{\natural*}=-2$, so
+it lies on the cone and in neither of the other null sets, while $\tilde Q=e_t+\vec e_x$ has $\langle\tilde Q,\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle_{\natural*}=0$ with
 $\langle\tilde Q,\tilde Q\rangle_{\natural}=2$, so it lies in both of them and off the cone. The interval is therefore the only one of the four
 whose null set is the cone, and the only one that meets the cone in all of it. The statement matters for
 the comparison, because it locates the cause of the cone. The cone is not "where the plain product
@@ -672,7 +671,7 @@ in $\mathbb{M}_+$, and it is positive:</p>
 \qquad
 \mathrm{rank}\,\tilde X\star\tilde X=1\ \Longleftrightarrow\ \langle\tilde X\rangle_{\natural}=0.
 $$</p>
-<p>Writing the image as $\alpha e_0+i\vec w$ with $\alpha$ real and $\vec w$ a real vector, the
+<p>Writing the image as $\alpha e_t+i\vec w$ with $\alpha$ real and $\vec w$ a real vector, the
 positivity is the inequality $\alpha\geq\lvert\vec w\rvert$, and the determinant identity is</p>
 <p>$$
 \alpha^{2}-\lvert\vec w\rvert^{2}=\lvert \langle\tilde X\rangle_{\natural}\rvert^{2}.
@@ -680,7 +679,7 @@ $$</p>
 <p>Three statements follow, and together they are the band's reading of the cone.</p>
 <ul>
 <li><strong>The image is the state cone.</strong> The image of the sesquilinear square is exactly the set of positive
-  elements of $\mathbb{M}_+$, that is, the set $\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}$.
+  elements of $\mathbb{M}_+$, that is, the set $\{\alpha e_t+i\vec w:\alpha\geq\lvert\vec w\rvert\}$.
   Every positive element is a sesquilinear square, by taking the positive square root, and the map is onto
   by that construction. This set is the future light cone of the informational sector, and <em>The Spinor Space as a Module and as a Hilbert Space</em> identifies it with the state cone.</li>
 <li><strong>The boundary is the image of the zero divisors.</strong> The rank-one elements are the boundary
@@ -706,7 +705,7 @@ $X\mapsto M X M^{\dagger}$ with $M=\mathsf M_2(\tilde Q)$, and <em>The 2×2 Matr
 $\mathsf M_2(\mathbb C)$ of Biquaternions</em> computes the collapse: on the cone the matrix is a product
 $M=uv^{\dagger}$ of rank one and every operand is sent to a multiple of $uu^{\dagger}$, the line of a
 minimal idempotent. The surviving scalar decides which face of the cone the operand sits on: for the pure
-part $Q_0=0$ and the operator is nilpotent, while for an idempotent multiple $Q_0\neq0$ and it is a scaled
+part $Q_t=0$ and the operator is nilpotent, while for an idempotent multiple $Q_t\neq0$ and it is a scaled
 projection. Read as a process the collapse is irreversible, a completely positive map with a single Kraus
 operator and hence the algebraic shape of a destructive measurement, and it is the geometric form of the
 decoherence of <em>Decoherence as Idempotent Projection</em>. The division of the cone into the nilpotent part and
@@ -717,14 +716,14 @@ seen here as the two possible survivors of the collapse.</p>
 <p>The photon is the massless case the corpus has built, and it exhibits both jobs of the cone at once. Its
 four-momentum is</p>
 <p>$$
-\tilde P=i\frac{E}{c}e_0+\vec p,
+\tilde P=i\frac{E}{c}e_t+\vec p,
 \qquad
 \langle\tilde P\rangle_{\natural}=-\frac{E^{2}}{c^{2}}+\vec p^{2},
 $$</p>
 <p>so the massless condition $\langle\tilde P\rangle_{\natural}=0$ is $\lvert\vec p\rvert=E/c$, and the four-momentum is a zero
 divisor. The lightlike momentum has a second face. With
 $\vec u=\vec p/\lvert\vec p\rvert$ and
-$\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$, it is the imaginary multiple</p>
+$\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$, it is the imaginary multiple</p>
 <p>$$
 \tilde P=2i\frac{E}{c}\,\tilde\Pi(-\vec u)
 $$</p>
@@ -807,12 +806,12 @@ corpus reads, not by the article it is read in.</p>
 <h3 id="the-cone-as-the-singular-set-of-the-algebra">The cone as the singular set of the algebra</h3>
 <p>The cone is not a surface laid inside the algebra; it is the algebra's singular set, and its shape is known.</p>
 <p>On the norm alone the cone is the set $\mathcal{C}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}$. Its <strong>apex is the only
-singular point</strong>: the algebraic norm is irreducible over $\mathbb{C}$ and its gradient $(2Q_0,2Q_1,2Q_2,2Q_3)$
+singular point</strong>: the algebraic norm is irreducible over $\mathbb{C}$ and its gradient $(2Q_t,2Q_x,2Q_y,2Q_z)$
 vanishes only at the origin, so the punctured cone is a smooth complex three-manifold, of real dimension six
 (<em>The Topology of the Zero-Divisor Cone</em>). The cone is <strong>contractible</strong>, the straight-line homotopy to the
 apex staying inside it because scaling by a complex number preserves the equation. Its <strong>link</strong>, the
 intersection with the unit sphere $S^7_E$, is a closed connected real five-manifold, an $S^1$-bundle over
-$\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$, with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$, so the link
+$\mathbb{P}^1\times\mathbb{P}^1\cong S^2\times S^2$, with $\pi_x=0$ and $\pi_y\cong\mathbb{Z}$, so the link
 is simply connected and is not a sphere; that homotopy group is the proof that the apex is a genuine
 singularity and not a removable point. The projectivised cone, $\mathbb{P}^1\times\mathbb{P}^1$, is the
 <strong>Segre quadric</strong>, and its two rulings are the two families of chiral null planes
@@ -826,8 +825,8 @@ while the null set of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ is the 
 dimension six to four on the vector subspace and to three on the quaternion subspace and on the two sectors,
 carried at every stage by the indefinite forms alone (<em>Remarkable Subspaces and the Four Forms</em>). The cone is
 also <strong>the complement of the unit group</strong>: the units are the elements off it, forming
-$\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_1\cong\mathbb{Z}$ and $\pi_2=0$, while the cone's
-link has $\pi_2\cong\mathbb{Z}$, and the real slice of the cone is the Minkowski light cone of real dimension
+$\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ with $\pi_x\cong\mathbb{Z}$ and $\pi_y=0$, while the cone's
+link has $\pi_y\cong\mathbb{Z}$, and the real slice of the cone is the Minkowski light cone of real dimension
 three with link $S^{2}\sqcup S^{2}$, one sphere per nappe (<em>The Biquaternion Unit Group as a Topological
 Group</em>, <em>Biquaternion Lorentzian and Conformal Geometry</em>).</p>
 <p><strong>The physical interpretation</strong> is that the cone is where the algebra is not locally trivial: away from the
@@ -841,7 +840,7 @@ complement of the cone is the units, so the same norm decides whether an element
 the two homotopy groups vanishes.</p>
 <h3 id="the-cone-as-the-critical-set-of-the-square">The cone as the critical set of the square</h3>
 <p>The cone is not only a locus of degeneracy; it is where the square itself degenerates, and the corpus reads
-it as a critical set. On the cone the square is affine, $\tilde Q^{2}=2Q_0\tilde Q$, so squaring a null
+it as a critical set. On the cone the square is affine, $\tilde Q^{2}=2Q_t\tilde Q$, so squaring a null
 element stays on its own complex line and preserves the cone; the critical set of the
 quadratic map $\tilde Q\mapsto\tilde Q^{2}+\tilde C$ is the union of the cone and the vector subspace, and
 the cone is the part of it on which the square can collapse, on which no
@@ -877,15 +876,15 @@ $$</p>
 differ only by which conjugation is applied to the kernel.</p>
 <p>The left and the right annihilators coincide in ten of the twelve structures and differ in exactly two,
 the plain product $\tilde P\tilde Q$ and the general quaternionic sesquilinear product
-$\tilde P^{\natural}\tilde Q^{*}$, and only at a cone element. At the non-pure cone element $e_0+ie_1$ the
+$\tilde P^{\natural}\tilde Q^{*}$, and only at a cone element. At the non-pure cone element $e_t+i\vec e_x$ the
 two plain planes are</p>
 <p>$$
-A_{\mathrm{plain}}(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\},\qquad
-B_{\mathrm{plain}}(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3-ie_2\},
+A_{\mathrm{plain}}(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},\qquad
+B_{\mathrm{plain}}(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\},
 $$</p>
-<p>which share the line of the natural conjugate $\tilde P^{\natural}=e_0-ie_1$ and differ in their second
+<p>which share the line of the natural conjugate $\tilde P^{\natural}=e_t-i\vec e_x$ and differ in their second
 generator. A lightlike element kills its own conjugate on both sides,
-$\tilde P\tilde P^{\natural}=\langle\tilde P\rangle_{\natural}e_0=0$ on the cone, and the two-sided annihilator is that line. The
+$\tilde P\tilde P^{\natural}=\langle\tilde P\rangle_{\natural}e_t=0$ on the cone, and the two-sided annihilator is that line. The
 difference between the two sides is a <strong>chirality</strong>, the annihilator face of the one-sidedness of the
 internal action.</p>
 <p><strong>The physical interpretation</strong> is that the cone is the locus where an operation forgets a direction, and
@@ -901,15 +900,15 @@ mathematics in its companion <em>Annihilators in the Algebraic Structures over t
 in the four general products it is a different part of the same cone, because the square is a different
 square while the zero-divisor set is one set:</p>
 <ul>
-<li>$\mathrm{GPA}$: the pure isotropic cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four,
+<li>$\mathrm{GPA}$: the pure isotropic cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four,
   the lightlike displacements of the composition;</li>
 <li>$\mathrm{GPS}$: the origin alone, because the sesquilinear square has the definite scalar part
   $\sum_\mu\lvert Q_\mu\rvert^{2}$, so the probability band has no lightlike element;</li>
 <li>$\mathrm{GQA}$: the whole cone $\mathcal{C}$, of real dimension six, because the natural square is the
   norm and every lightlike element annihilates itself;</li>
 <li>$\mathrm{GQS}$: the subfamily $\overline{\tilde Q}\tilde Q=0$, of real dimension four, a proper part of
-  the cone that contains $e_0+ie_1$ and misses both the pure isotropic element $e_1+ie_2$ and the
-  lightlike $ie_0+e_1+e_2+ie_3$.</li>
+  the cone that contains $e_t+i\vec e_x$ and misses both the pure isotropic element $\vec e_x+i\vec e_y$ and the
+  lightlike $ie_t+\vec e_x+\vec e_y+i\vec e_z$.</li>
 </ul>
 <p>The four root sets are nested and separated in a fixed way. Writing $Z_1$ for the composition, $Z_2$ for
 the interval, $Z_3$ for the probability and $Z_4$ for the gauge, the order is
@@ -959,11 +958,11 @@ cone is where a signal is, not merely where it may not exceed.</p>
 <p>In the informational sector the same set is the boundary of positivity, and the corpus reads three faces of
 that boundary.</p>
 <p>The <strong>positive cone</strong> of the Hermitian sector is the future light cone of the norm: for
-$\tilde H=h_0e_0+i\vec h$, positivity is $\langle\tilde H\rangle_{\natural}=h_0^{2}-\lvert\vec h\rvert^{2}\geq0$ together
+$\tilde H=h_0e_t+i\vec h$, positivity is $\langle\tilde H\rangle_{\natural}=h_0^{2}-\lvert\vec h\rvert^{2}\geq0$ together
 with $h_0\geq0$, that is $h_0\geq\lvert\vec h\rvert$, and this cone is <strong>self-dual</strong> with respect to the
 trace pairing, which is the algebraic reason the pairing serves at once as the Born rule and as the duality
 that makes the measurement formalism work (<em>POVMs and the Positive Cone in Biquaternionic Form</em>). The
-<strong>states</strong> are its trace-one slice: $\tilde\rho=\tfrac12(e_0+i\vec r)$ with
+<strong>states</strong> are its trace-one slice: $\tilde\rho=\tfrac12(e_t+i\vec r)$ with
 $\lvert\vec r\rvert\leq1$, the closed unit ball whose boundary — the pure states — is at once the
 idempotents, the extreme rays of the cone and the zero divisors at trace one
 (<em>The Bloch Ball as the Trace-One Slice of the Future Light Cone</em>). The <strong>entropy</strong> is written in the
@@ -1031,7 +1030,7 @@ Readings of a Biquaternion: Norm, Rank, Charge and Scale</em>). The <strong>Krei
 indefinite-sector positivity is stated; its inertia is $(1,3,0)$ on the complexified Hermitian subspace and
 $(2,6,0)$ over $\mathbb{R}$ (<em>Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra</em>).
 The <strong>vacuum</strong> lies on the cone: the minimal idempotent $\tilde\Pi(\vec u)$ is null for every
-unit $\vec u$, so $e_0=\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)$
+unit $\vec u$, so $e_t=\tilde\Pi(\vec u)+\tilde\Pi(-\vec u)$
 decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is
 the union of the rays that the projectors single out (<em>The Biquaternion Vacuum as a Minimal Idempotent</em>).
 The <strong>Lorentz group is the group of norm automorphisms</strong> whose nonzero null vectors are the zero divisors,
@@ -1057,11 +1056,11 @@ the punctured cone exactly for $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$ an
 other; the eight derived sets are strictly larger, the six antisymmetric and scalar-valued symmetric
 structures covering the whole punctured space and the two remaining symmetric structures
 $\mathrm{SPA}$ and $\mathrm{SQS}$ carrying the enlarged set
-$(\{Q_0=0\}\cup\mathcal{C})\setminus\{0\}$. Hence the <strong>corollary</strong> that the punctured cone is contained in
+$(\{Q_t=0\}\cup\mathcal{C})\setminus\{0\}$. Hence the <strong>corollary</strong> that the punctured cone is contained in
 the zero-divisor set of each of the twelve and is equal to the set of exactly four: the cone is the largest
 subset on which the twelve agree, and an element of vanishing norm admits an annihilating factor in all
 twelve products. The corollary also breaks the ring-theoretic picture on the derived structures, since
-$e_1$, of norm $1$, is a zero divisor of $\mathrm{SPA}$ and of $\mathrm{SQS}$ — a zero divisor need not be a
+$\vec e_x$, of norm $1$, is a zero divisor of $\mathrm{SPA}$ and of $\mathrm{SQS}$ — a zero divisor need not be a
 non-unit unless the product has a two-sided unit (<em>Zero Divisors in the Algebraic Structures over the
 Biquaternioid $\mathbb{C}$ Space</em>).</p>
 <p>The four <strong>forms</strong> are the grid's second statement about the cone. The form of each family is one of $\langle\cdot,\cdot\rangle$,
@@ -1077,7 +1076,7 @@ made with the <strong>Krein cone</strong> of the negative of the interval
 (<em>Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra</em>).</p>
 <p>Two further grid statements belong here. The cone's <strong>isotropic lines are its Peirce lines</strong>: the doubly null
 lines, the isotropic lines that lie in the norm cone as well, are exactly the Peirce lines
-$\mathbb{C}(e_0\pm i\vec u)$ spanned by the rank-one Hermitian idempotents, each generating a
+$\mathbb{C}(e_t\pm i\vec u)$ spanned by the rank-one Hermitian idempotents, each generating a
 minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and
 the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension
 four (<em>The Isotropic Structure of the General Quaternionic Sesqualgebra</em>, <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>). And the cone is the <strong>boundary of the Hermitian level sets</strong>: the level sets of
@@ -1220,7 +1219,7 @@ the norm is the one quadratic form every band inherits.</p>
 <td><em>The Topology of the Zero-Divisor Cone</em></td>
 </tr>
 <tr>
-<td>The link of the cone is an $S^1$-bundle over $S^2\times S^2$, with $\pi_2\cong\mathbb{Z}$, so the apex is a genuine singularity</td>
+<td>The link of the cone is an $S^1$-bundle over $S^2\times S^2$, with $\pi_y\cong\mathbb{Z}$, so the apex is a genuine singularity</td>
 <td>Theorem</td>
 <td><em>The Topology of the Zero-Divisor Cone</em></td>
 </tr>
@@ -1507,17 +1506,17 @@ $\overline{\tilde Q}\tilde Q=0$ of the gauge, with the states as the remainder o
 non-invertible without being lightlike.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <ul>
-<li>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$.</li>
+<li>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$.</li>
 <li>${}^{\natural}$ natural conjugation; $\bar{\cdot}$ coefficient conjugation; ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ Hermitian conjugation; $\tilde Q^{\flat}=-\tilde Q^{*}$.</li>
 <li>$\mathrm{Sc}$ scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$; $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$.</li>
 <li>$\tilde P\tilde Q$ the plain product (composition, GPA); $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ the plain sesquilinear product (probability, GPS).</li>
 <li>$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ the sector sign; $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ the probability weight; $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ the interval; $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ the fourth form.</li>
 <li>The cone is $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the zero-divisor set; pure means $\mathrm{Sc}\,\tilde X=0$, isotropic means $\sum_k X_k^{2}=0$.</li>
-<li>"The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_0$. The gauge metric has its own null set $\{\langle\cdot,\cdot\rangle_{\natural*}=0\}$.</li>
+<li>"The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_t$. The gauge metric has its own null set $\{\langle\cdot,\cdot\rangle_{\natural*}=0\}$.</li>
 <li>The twelve rows: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.</li>
 <li>$\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.</li>
-<li>$\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.</li>
-<li>$\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$; $\mathrm{ISO}(2)$ the massless little group.</li>
+<li>$\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.</li>
+<li>$\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$; $\mathrm{ISO}(2)$ the massless little group.</li>
 </ul>
 <h2 id="further-reading">Further Reading</h2>
 <ul>

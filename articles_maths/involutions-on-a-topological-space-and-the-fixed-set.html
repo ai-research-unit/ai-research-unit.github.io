@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -88,8 +87,8 @@ $$</p>
 <p><strong>Proof.</strong> The complement of a closed set is open; the orbit of a fixed point is a singleton, so the orbit map is injective there; the last statement is the definition of closure of an open set.</p>
 <p><strong>Remark.</strong> The closedness fails for spaces that are not Hausdorff, and the failure is the one exhibited in <em>Continuous Maps and the Orbit Map</em>: on the line with two origins the involution that interchanges the two origins and fixes the rest has as fixed set a punctured line, which is not closed, since each origin is a limit point of it.</p>
 <h3 id="fixed-points-of-an-involution-of-order-two">Fixed Points of an Involution of Order Two</h3>
-<p><strong>Proposition.</strong> If $\sigma$ is a continuous involution and $x$ is moved, then the two points of the orbit have homeomorphic neighbourhoods: the involution is a homeomorphism carrying every neighbourhood of $x$ to a neighbourhood of $\sigma(x)$. In particular the orbit map is a local homeomorphism at a moved point exactly when there is a neighbourhood $U$ of $x$ with $U \cap \sigma(U) = \emptyset$.</p>
-<p><strong>Proof.</strong> $\sigma$ is a homeomorphism, so it carries the neighbourhood filter of $x$ bijectively onto that of $\sigma(x)$. The local homeomorphism statement is the definition of a covering at the orbit: the image of $U$ is open, and its preimage is $U \cup \sigma(U)$, which is two disjoint copies exactly when $U \cap \sigma(U) = \emptyset$.</p>
+<p><strong>Proposition.</strong> If $\sigma$ is a continuous involution and $x$ is moved, then the two points of the orbit have homeomorphic neighbourhoods: the involution is a homeomorphism carrying every neighbourhood of $x$ to a neighbourhood of $\sigma(x)$. In particular the orbit map is a local homeomorphism at a moved point exactly when there is a neighbourhood $\Omega$ of $x$ with $\Omega \cap \sigma(\Omega) = \emptyset$.</p>
+<p><strong>Proof.</strong> $\sigma$ is a homeomorphism, so it carries the neighbourhood filter of $x$ bijectively onto that of $\sigma(x)$. The local homeomorphism statement is the definition of a covering at the orbit: the image of $\Omega$ is open, and its preimage is $\Omega \cup \sigma(\Omega)$, which is two disjoint copies exactly when $\Omega \cap \sigma(\Omega) = \emptyset$.</p>
 <h2 id="the-orbit-space-as-the-quotient">The Orbit Space as the Quotient</h2>
 <h3 id="the-orbits">The Orbits</h3>
 <p><strong>Definition.</strong> The <strong>orbit</strong> of $x$ under $\sigma$ is $\{x, \sigma(x)\}$, and the <strong>orbit space</strong> is the set of orbits,</p>
@@ -110,7 +109,7 @@ $$</p>
 <p>An involution on $X$ acts on $\mathcal{P}(X)$ by $\sigma(A) = \{\sigma(x) : x \in A\}$, and this action is itself an involution of the power set; the fixed points of this induced involution are the invariant subsets, and they form a Boolean subalgebra $\mathcal{P}(X)^{\sigma}$.</p>
 <p><strong>Theorem.</strong> The map $A \mapsto \sigma(A)$ is an involution of the Boolean algebra $\mathcal{P}(X)$ preserving all unions and intersections, and its fixed subalgebra $\mathcal{P}(X)^{\sigma}$ consists of the unions of orbits. The orbit map is a bijection of $\mathcal{P}(X/\sigma)$ onto $\mathcal{P}(X)^{\sigma}$, and the saturation $A \mapsto A \cup \sigma(A)$ is the closure operator of the partition into orbits.</p>
 <p><strong>Proof.</strong> $\sigma$ is a bijection, so $A \mapsto \sigma(A)$ preserves the Boolean operations and has order two; a set is fixed exactly when it is a union of orbits. The remaining clauses are those of <em>The Orbit Map</em> for the group $\mathbb{Z}/2$.</p>
-<p><strong>Remark.</strong> The induced involution on the power set is the simplest instance of the observation that an involution on a structure induces one on the structures built from it. On the lattice of open sets it is the map $U \mapsto \sigma(U)$, which is an automorphism of the lattice and restricts to an automorphism of the clopen algebra; on the cohomology the induced involution is the subject of the group <code>- * Operator Theory</code> of this category.</p>
+<p><strong>Remark.</strong> The induced involution on the power set is the simplest instance of the observation that an involution on a structure induces one on the structures built from it. On the lattice of open sets it is the map $\Omega \mapsto \sigma(\Omega)$, which is an automorphism of the lattice and restricts to an automorphism of the clopen algebra; on the cohomology the induced involution is the subject of the group <code>- * Operator Theory</code> of this category.</p>
 <h2 id="examples">Examples</h2>
 <p><strong>Example (the antipodal involution).</strong> On the sphere $S^{n}$ the map $\sigma(x) = -x$ is a continuous involution with no fixed points; it is free, the orbit space is real projective space $\mathbb{RP}^{n}$, and the orbit map is a two-fold covering. The antipodal involution is the standard example of every notion defined in this group.</p>
 <p><strong>Example (the identity involution).</strong> On any space the identity is an involution; it is continuous, its fixed set is the whole space, its orbits are singletons, and its orbit space is the space itself.</p>

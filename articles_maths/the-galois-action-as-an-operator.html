@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -86,7 +85,7 @@ $$</p>
 <p><em>Proof.</em> A $k$-point is an $L$-point that is already defined over $k$, and $\operatorname{Spec}\sigma$ fixes every $k$-morphism, so $X(k)\subseteq X(L)^G$. Conversely let $X = \operatorname{Spec}A$ be affine and let $P$ correspond to the $k$-algebra homomorphism $\varphi : A\to L$. That $P$ is fixed by $\sigma$ says $\sigma\circ\varphi = \varphi$, that is $\varphi(a) = \sigma(\varphi(a))$ for all $a$ and all $\sigma$, so $\varphi$ takes values in $L^G = k$ and is a $k$-homomorphism $A\to k$, which is a $k$-point. The general case follows by covering $X$ with affine charts, the condition being local.</p>
 <p><strong>Corollary.</strong> For $X$ of finite type over $k$ and $L = \bar k$ the separable closure, the action of $G = \operatorname{Gal}(\bar k/k)$ on the geometric points $X(\bar k)$ has fixed set $X(k)$; in particular the $k$-points are recovered from the geometric points by taking invariants, which is the elementary case of Galois descent.</p>
 <h2 id="the-action-on-functions-and-on-the-structure-sheaf">The Action on Functions and on the Structure Sheaf</h2>
-<p><strong>Definition.</strong> For an open $U\subseteq X_L$ and a function $f\in\mathcal{O}_{X_L}(U)$, the <strong>translate</strong> of $f$ by $\sigma$ is the function on $\sigma_X^{-1}(U)$ defined by
+<p><strong>Definition.</strong> For an open $\Omega\subseteq X_L$ and a function $f\in\mathcal{O}_{X_L}(\Omega)$, the <strong>translate</strong> of $f$ by $\sigma$ is the function on $\sigma_X^{-1}(\Omega)$ defined by
 $$
 (\sigma\cdot f)(x) = \sigma\bigl(f(\sigma_X^{-1}x)\bigr) .
 $$</p>

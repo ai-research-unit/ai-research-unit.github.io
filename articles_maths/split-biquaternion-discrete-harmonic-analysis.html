@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -58,15 +57,15 @@
 <p>Unlike the biquaternion case, the split biquaternion Fourier kernel is <strong>not</strong> defined by the split complex unit $j$, which is the only scalar candidate in the algebra. The unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $\exp(j\theta) = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split biquaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.</p>
 <p>Throughout, a split biquaternion is written</p>
 <p>$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$</p>
-<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
+<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.</p>
 <p>The <strong>idempotent components</strong> of $\tilde{Q}$ are the real quaternions</p>
 <p>$$
-\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+\tilde{Q}_+ = \sum_{\mu\in\{t,x,y,z\}} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu\in\{t,x,y,z\}} (q_\mu - q'_\mu) e_\mu.
 $$</p>
 <p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.</p>
-<p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
+<p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.</p>
 <h2 id="the-fourier-kernel">The Fourier Kernel</h2>
 <h3 id="definition">Definition</h3>
 <p>Fix a root $\rho$ of $-1$ in the quaternion algebra $\mathbb{H}$, i.e., an element $\rho \in \mathbb{H}$ with</p>
@@ -86,9 +85,9 @@ $$</p>
 <p>because the same root $\rho$ is used in both components. The kernel is the same in each idempotent component, so the split biquaternion kernel is the diagonal embedding of the quaternion kernel.</p>
 <p>Since $\rho^2 = -1$, the kernel takes the closed form</p>
 <p>$$
-W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_0 - \sin\left(2\pi \frac{nu}{N}\right) \rho,
+W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_t - \sin\left(2\pi \frac{nu}{N}\right) \rho,
 $$</p>
-<p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_0$:</p>
+<p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_t$:</p>
 <p>$$
 \langle W_N(n, u)\rangle_{\natural} = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1.
 $$</p>
@@ -103,9 +102,9 @@ $$</p>
 <h3 id="the-choice-of-root">The Choice of Root</h3>
 <p>The choice of the root $\rho$ determines the <strong>axis</strong> of the Fourier transform, i.e., the direction in the space of pure quaternions along which the transform decomposes the signal. Different choices of $\rho$ give different decompositions, and the transforms are related by conjugation.</p>
 <p>There are three natural choices:</p>
-<p><strong>$\rho = e_1$.</strong> The kernel is the ordinary complex exponential in the $e_1$ direction, embedded in the quaternion algebra. The transform decomposes the signal into components along the $e_1$ axis.</p>
-<p><strong>$\rho = e_2$.</strong> Similarly, with the $e_2$ axis.</p>
-<p><strong>$\rho = e_3$.</strong> Similarly, with the $e_3$ axis.</p>
+<p><strong>$\rho = \vec e_x$.</strong> The kernel is the ordinary complex exponential in the $\vec e_x$ direction, embedded in the quaternion algebra. The transform decomposes the signal into components along the $\vec e_x$ axis.</p>
+<p><strong>$\rho = \vec e_y$.</strong> Similarly, with the $\vec e_y$ axis.</p>
+<p><strong>$\rho = \vec e_z$.</strong> Similarly, with the $\vec e_z$ axis.</p>
 <p>The three choices are related by the quaternion multiplication, and they correspond to three different but equivalent decompositions of the signal.</p>
 <h3 id="the-kernel-in-the-split-complex-subspace">The Kernel in the Split Complex Subspace</h3>
 <p>If the signal takes values in the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., if all coefficients are split complex scalars), then the kernel acts on each coefficient separately. The kernel is the quaternion kernel $\cos\theta - \sin\theta \rho$, and it multiplies the split complex coefficients. Since the root $\rho$ is a real quaternion, it commutes with the split complex coefficients, and the transform reduces to the ordinary complex Fourier transform applied to each of the four complex coefficients (after splitting into real and split parts).</p>
@@ -121,7 +120,7 @@ f[n] = \frac{1}{N} \sum_{u=0}^{N-1} W_N(n, u)^{-1} F[u], \qquad n \in \{0, 1, \l
 $$</p>
 <p>Since the kernel is a unit quaternion, its inverse is its quaternion conjugate:</p>
 <p>$$
-W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_0 + \sin\left(2\pi \frac{nu}{N}\right) \rho.
+W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_t + \sin\left(2\pi \frac{nu}{N}\right) \rho.
 $$</p>
 <p>So the inverse transform is</p>
 <p>$$
@@ -134,7 +133,7 @@ $$</p>
 <p>The two transforms are closely related: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K_u[n] f[n]} = \overline{f[n]}\,\overline{K_u[n]}$.)</p>
 <h3 id="invertibility">Invertibility</h3>
 <p>The invertibility of the transform depends on the properties of the kernel and of the signal.</p>
-<p><strong>The kernel has unit norm.</strong> For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $\langle W_N(n, u)\rangle_{\natural} = e_0$, as shown above. So the kernel is always invertible.</p>
+<p><strong>The kernel has unit norm.</strong> For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $\langle W_N(n, u)\rangle_{\natural} = e_t$, as shown above. So the kernel is always invertible.</p>
 <p><strong>The signal may have vanishing norm.</strong> A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split biquaternion zero divisors.</p>
 <p><strong>Theorem (invertibility).</strong> If every sample $f[n]$ has non-vanishing norm, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.</p>
 <p><strong>Proof.</strong> Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:</p>
@@ -143,7 +142,7 @@ $$</p>
 $$</p>
 <p>The inner sum is the standard orthogonality relation:</p>
 <p>$$
-\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
 $$</p>
 <p>which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.</p>
 <p><strong>The transform is not invertible on signals containing zero-divisor samples.</strong> If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.</p>
@@ -183,9 +182,9 @@ $$</p>
 G[u] = \sum_{n=0}^{N-1} W_N(n, u) g[n],
 $$</p>
 <p>where $W_N(n, u) = \exp(-2\pi \rho nu/N)$ and $\rho$ is a unit pure real quaternion.</p>
-<p>The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$:</p>
+<p>The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_t, \rho, \nu, \xi\}$:</p>
 <p>$$
-g[n] = g_0[n] e_0 + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
+g[n] = g_0[n] e_t + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
 $$</p>
 <p>The quaternion Fourier transform then decomposes into <strong>four complex Fourier transforms</strong>, one for each complex coefficient, as discussed in the biquaternion discrete harmonic analysis article.</p>
 <h3 id="the-full-factorization">The Full Factorization</h3>
@@ -332,7 +331,7 @@ $$</p>
 <td>Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
 <td>Quaternion basis</td>
 </tr>
 <tr>
@@ -344,7 +343,7 @@ $$</p>
 <td>Idempotents of $\mathbb{D}$</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
+<td>$\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$</td>
 <td>General split biquaternion</td>
 </tr>
 <tr>

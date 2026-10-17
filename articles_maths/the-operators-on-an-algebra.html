@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -192,12 +191,12 @@ L : A \longrightarrow \operatorname{End}_k(A), \qquad R : A \longrightarrow \ope
 $$</p>
 <p>and their images are subspaces of dimension $n$. The map $L$ is an algebra homomorphism, $L(a)L(b) = L(ab)$, while $R$ reverses the order, $R(a)R(b) = R(ba)$; the image of $L$ is the <strong>regular representation</strong> of $A$, and the image of $R$ is a copy of the opposite algebra $A^{\mathrm{opp}}$.</p>
 <p>The asymmetry between $L$ and $R$ is the whole difficulty of the noncommutative case. As a transformation of $A$, a left multiplication by a noncentral element is not $A$-linear; it is the action itself rather than a map commuting with the action.</p>
-<p><strong>Example.</strong> For $\mathbb{B}$ on the basis $(e_0,e_1,e_2,e_3)$,</p>
+<p><strong>Example.</strong> For $\mathbb{B}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,</p>
 <p>$$
-L(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
-R(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
+L(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
+R(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
 $$</p>
-<p>The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(e_1)^{\mathsf T} = -L(e_1)$ and likewise for $R(e_1)$.</p>
+<p>The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(\vec e_x)^{\mathsf T} = -L(\vec e_x)$ and likewise for $R(\vec e_x)$.</p>
 <h3 id="the-math128-linear-operators">The $A$-Linear Operators</h3>
 <p><strong>Definition.</strong> An operator $M$ is <strong>$A$-linear</strong>, or $A$-module endomorphism of the regular module, when $M L(a) = L(a) M$ for every $a \in A$.</p>
 <p>This is an intertwining condition, hence linear in $M$, and the $A$-linear operators are exactly the <strong>centralizer</strong> of $L(A)$ in $\operatorname{End}_k(A)$.</p>
@@ -311,8 +310,8 @@ $$</p>
 \mathbb{C}\cdot I \subset L(\mathbb{B}) \subset M_4(\mathbb{C}), \qquad
 \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{skew}_4(\mathbb{C}) \subset M_4(\mathbb{C}).
 $$</p>
-<p>Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(e_1)$, $L(e_2)$ and $L(e_3)$, while $L(e_0) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary <em>The Orthogonal Lie Algebra</em> of Part II supplies.</p>
-<p>Two finer statements sharpen the picture. First, the element $L(e_0) = I$ is the identity operator and is not skew, while $L(e_1)$, $L(e_2)$, $L(e_3)$ are skew, so that</p>
+<p>Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(\vec e_x)$, $L(\vec e_y)$ and $L(\vec e_z)$, while $L(e_t) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary <em>The Orthogonal Lie Algebra</em> of Part II supplies.</p>
+<p>Two finer statements sharpen the picture. First, the element $L(e_t) = I$ is the identity operator and is not skew, while $L(\vec e_x)$, $L(\vec e_y)$, $L(\vec e_z)$ are skew, so that</p>
 <p>$$
 L(\mathbb{B}) = \mathbb{C}\cdot I \ \oplus\ L(\text{pure}),
 $$</p>
@@ -450,7 +449,7 @@ $$</p>
 \operatorname{Der}_{\mathbb{R}}(\mathbb{B}) = \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathrm{SL}_2(\mathbb{C})_{\mathbb{R}},
 $$</p>
 <p>of real dimension $6$. The automorphism group acquires a second coset from complex conjugation, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PSL_2(\mathbb{C}) \rtimes \mathbb{Z}/2$, again of dimension $6$. The identification of this six-dimensional space with the orthogonal Lie algebra of a form of signature $(3,1)$ needs the form, belongs to Part II, and is named only.</p>
-<p><strong>The two three-dimensional pieces.</strong> The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{e_k}$ and $b_k = \mathrm{ad}_{i e_k}$ for $k = 1,2,3$, the brackets are</p>
+<p><strong>The two three-dimensional pieces.</strong> The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{\vec e_k}$ and $b_k = \mathrm{ad}_{i \vec e_k}$ for $k = 1,2,3$, the brackets are</p>
 <p>$$
 [r_i, r_j] = 2\varepsilon_{ijk} r_k, \qquad [r_i, b_j] = 2\varepsilon_{ijk} b_k, \qquad [b_i, b_j] = -2\varepsilon_{ijk} r_k .
 $$</p>
@@ -526,7 +525,7 @@ $$</p>
 <td>Skew operators relative to the trace pairing</td>
 </tr>
 <tr>
-<td>$r_k = \mathrm{ad}_{e_k}$, $b_k = \mathrm{ad}_{ie_k}$</td>
+<td>$r_k = \mathrm{ad}_{\vec e_k}$, $b_k = \mathrm{ad}_{i\vec e_k}$</td>
 <td>The two three-dimensional pieces of $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$</td>
 </tr>
 <tr>

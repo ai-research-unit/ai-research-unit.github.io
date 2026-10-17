@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -80,7 +79,7 @@ $$</p>
 $$</p>
 <p>and it is the same operator as the Riemannian codifferential of <em>The Codifferential</em>, its sign convention fixed by the even dimension.</p>
 <p><em>Proof.</em> The general formula $\delta=(-1)^{r(k+1)+1}\star d\star$ of the codifferential in real dimension $r$ becomes $\delta=-\star d\star$ when $r=2m$ is even, because $(-1)^{2m(k+1)+1}=(-1)^{\text{even}+1}=-1$. The adjointness is the integration by parts proved in <em>The Codifferential</em>, and the Hermitian pairing induces the same $L^2$ inner product as the Riemannian one on the complex-valued forms, so the adjoint operator is the same. The local formula $\delta\omega=-\sum_i\iota_{e_i}\nabla_{e_i}\omega$ of <em>The Codifferential</em> holds as well.</p>
-<p><strong>Example.</strong> On $\mathbb{C}$ with the Euclidean metric, $m=1$, $2m=2$, and $\delta = -\star d\star$ on the forms of the plane: on a function $f$, $\delta f=0$; on the $1$-form $\alpha = a\,dx + b\,dy$, $\delta\alpha = -(\partial_x a + \partial_y b)$, the negative divergence; on the $2$-form $h\,dx\wedge dy$, $\delta = 0$. The signs are those of the Euclidean Hodge theory.</p>
+<p><strong>Example.</strong> On $\mathbb{C}$ with the Euclidean metric, $m=1$, $2m=2$, and $\delta = -\star d\star$ on the forms of the plane: on a function $f$, $\delta f=0$; on the $1$-form $\alpha = a\,dx + b\,dy$, $\delta\alpha = -(\partial/\partial x a + \partial/\partial y b)$, the negative divergence; on the $2$-form $h\,dx\wedge dy$, $\delta = 0$. The signs are those of the Euclidean Hodge theory.</p>
 <h2 id="the-bidegree-split-of-the-codifferential">The Bidegree Split of the Codifferential</h2>
 <p><strong>Theorem.</strong> On an integrable almost complex structure, with $d=\partial+\bar\partial$, the codifferential decomposes by type,</p>
 <p>$$

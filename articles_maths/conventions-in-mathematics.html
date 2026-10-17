@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,174 +51,32 @@
       <div class="article-body">
         <h1 id="conventions-in-mathematics"><strong>Conventions in Mathematics</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article gathers the conventions the mathematical articles assume: the symbols, the arithmetic conventions, the shape of a generic element and its coefficients, the marks reserved for the conjugations of an algebra with an involution and for the adjoint of an operator, the convention of the form and the norm, the typographic rules of the source, and the working conventions of the corpus itself — the menu, the groups inside a category, the article files and the skeleton.</p>
+<p>This article gathers the conventions the mathematical articles assume: the symbols, the arithmetic conventions, the shape of a generic element and its coefficients, the marks reserved for the conjugations of an algebra with an involution and for the adjoint of an operator, the convention of the form and the norm, the working conventions of the corpus itself — the menu, the groups inside a category, the article files and the skeleton — and the typographic rules of the source.</p>
 <p>They are stated once, here, so that no other article need repeat them. This article states conventions only: the proofs and the properties of the objects it names belong to the articles cited beside them. How the articles are organised into the six parts and their categories is the subject of the companion article <em>Introduction to Mathematics</em>; this one is the reference for the elements, the marks, the glyphs and the layout.</p>
-<h2 id="notational-conventions">Notational Conventions</h2>
-<p>The conventions below are those used throughout the corpus.</p>
-<h3 id="symbols">Symbols</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$</td>
-<td>The naturals, integers, rationals, reals, complex numbers</td>
-</tr>
-<tr>
-<td>$\mathbb{D}$</td>
-<td>The split-complex numbers, $\mathbb{R}[x]/(x^2-1)$</td>
-</tr>
-<tr>
-<td>$\mathbb{D}'$</td>
-<td>The dual numbers, $\mathbb{R}[x]/(x^2)$</td>
-</tr>
-<tr>
-<td>$\mathbb{H}$</td>
-<td>The real quaternions</td>
-</tr>
-<tr>
-<td>$\mathbb{H}_{\mathrm{s}}$</td>
-<td>The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$</td>
-</tr>
-<tr>
-<td>$\mathbb{B}_{\mathrm{r}}$</td>
-<td>The reduced biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, equivalently the tessarines or the double-complex numbers</td>
-</tr>
-<tr>
-<td>$\mathbb{B}$</td>
-<td>The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
-</tr>
-<tr>
-<td>$\mathbb{H}_{\mathbb{D}}$</td>
-<td>The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
-</tr>
-<tr>
-<td>$G$</td>
-<td>A group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra</td>
-</tr>
-<tr>
-<td>$\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$</td>
-<td>Lie algebras</td>
-</tr>
-<tr>
-<td>$\mathrm{M}, \mathrm{P}$</td>
-<td>Ideals and prime ideals</td>
-</tr>
-<tr>
-<td>$\operatorname{Sym}(X), \operatorname{Aut}(X)$</td>
-<td>Symmetric group of a set; automorphism group of a structure</td>
-</tr>
-<tr>
-<td>$\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$</td>
-<td>Endomorphisms, derivations, inner and outer automorphisms</td>
-</tr>
-<tr>
-<td>$GL, SL, PGL, O, SO, U, SU, Sp$</td>
-<td>The classical groups</td>
-</tr>
-<tr>
-<td>$T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$</td>
-<td>Tensor, symmetric, exterior and Clifford algebras</td>
-</tr>
-<tr>
-<td>$V^{\otimes n}, S^n V, \Lambda^n V$</td>
-<td>Tensor, symmetric and exterior powers</td>
-</tr>
-<tr>
-<td>$\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$</td>
-<td>Bilinear form, quadratic form, norm</td>
-</tr>
-<tr>
-<td>$\mathfrak{Q}$</td>
-<td>The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements (§<em>The Elements and their Coefficients</em>)</td>
-</tr>
-<tr>
-<td>$\bullet$</td>
-<td>The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$; the circle $\circ$ is reserved for the composition of maps</td>
-</tr>
-<tr>
-<td>$\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$</td>
-<td>The conjugations of an algebra with an involution, and the adjoint of an operator; <em>The Conjugations and the Adjoint</em> below fixes their meanings</td>
-</tr>
-<tr>
-<td>$\tilde\Pi$, $\tilde\pi$, $\Pi$</td>
-<td>An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$ (§<em>The Idempotent Convention</em>)</td>
-</tr>
-<tr>
-<td>$\tilde\Xi$, $\tilde\xi$, $\Xi$</td>
-<td>A root of $1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$ (§<em>The Root Convention</em>)</td>
-</tr>
-<tr>
-<td>$\tilde q, \tilde Q$</td>
-<td>A generic element of the algebra: the quaternion, split-quaternion, biquaternion or split-biquaternion one; a second and a third in one statement are $\tilde Q_1$ and $\tilde Q_2$</td>
-</tr>
-<tr>
-<td>$\vec q, \vec Q$</td>
-<td>A pure element, an element with no scalar part: the quaternion and split-quaternion layers write $\vec q$, the biquaternion and split-biquaternion layers $\vec Q$ (§<em>Pure Elements and their Coefficients</em>)</td>
-</tr>
-<tr>
-<td>$\vec u$</td>
-<td>A unit pure quaternion, the axis of a rotation</td>
-</tr>
-<tr>
-<td>$\vec U$</td>
-<td>A unit pure biquaternion, of norm one</td>
-</tr>
-<tr>
-<td>$\vec\Xi$</td>
-<td>A pure root of $1$ of the biquaternion or split-biquaternion layer</td>
-</tr>
-<tr>
-<td>$\vec\Upsilon$</td>
-<td>A pure nilpotent of the biquaternion or split-biquaternion layer</td>
-</tr>
-<tr>
-<td>$F^{\mathrm{fn}}, G^{\mathrm{fn}}, H^{\mathrm{fn}}$</td>
-<td>A function from a domain into the algebra, $F^{\mathrm{fn}} : \Omega \to \mathbb{B}$; the tilde marks a value and is never put on a map, since a function is not an element</td>
-</tr>
-<tr>
-<td>$\tilde\nabla$</td>
-<td>The biquaternionic gradient, $\tilde\nabla = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu$; the one operator that keeps the tilde, because its symbol is an algebra unit and not a letter</td>
-</tr>
-<tr>
-<td>$g^{\mathrm{spin}}$</td>
-<td>An element of the group $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle; not an element of the algebra</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="groups-rings-and-operations">Groups, Rings and Operations</h3>
+<h2 id="groups-rings-and-operations">Groups, Rings and Operations</h2>
 <p>A group is written multiplicatively by default, with unit $e$ and inverse $x^{-1}$, and additively when it is the underlying group of a ring, with zero $0$ and inverse $-x$. A ring is a triple $(R, +, \cdot)$; a ring need not be commutative and need not have a unit, and the article that introduces it says which conventions it adopts. A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. A module is written with its scalars on the left unless the article says otherwise, and the side matters as soon as the ring is non-commutative. Products are written by juxtaposition: $ab$ for the product in a group or an algebra, $fv$ for the action of a scalar on a vector. The <strong>symmetrised (Jordan) product</strong> is written with a bullet, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and the circle $\circ$ is kept for the <strong>composition of maps</strong>, as in $\mathrm{H}_{\tilde Q}\circ\mathrm{H}_{\tilde R}$.</p>
-<h3 id="latex-and-typesetting">LaTeX and Typesetting</h3>
-<p>The articles are rendered with KaTeX on the page, and the following rules are observed in the source.</p>
+<h2 id="the-base-and-its-units">The Base and Its Units</h2>
+<p>The base is written with the letter $e$, one unit to a direction. The scalar unit is $e_t = 1$ and the three vector units are $\vec e_x, \vec e_y, \vec e_z$; the arrow is the only mark that separates the scalar unit from the vector units. <strong>The three vector units are the quaternion units, the corpus's replacement for Hamilton's $i, j, k$.</strong> A general element is written in the base,</p>
+<p>$$
+\tilde Q = Q_t e_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu ,
+$$</p>
+<p>with $e_\mu$ the unit of the direction $\mu$. In the quaternion layers the three vector units square to the negative of the scalar unit, $\vec e_k^2 = -e_t$; the split-quaternion layer keeps $\vec e_x^2 = -e_t$ and takes $\vec e_y^2 = \vec e_z^2 = +e_t$ (§<em>The Conjugations and the Adjoint</em>). <strong>The notation is the unit along the axis.</strong> A coefficient carries the name of the direction it multiplies: $Q_x$ is the coefficient of $\vec e_x$, the label on the unit names the direction and the label on the coefficient names the same direction, so $q_x = x$ reads without ambiguity. <strong>The base letter is $e$ and the unit-element letter is $u$, and the two are never exchanged.</strong> The base units carry $e$, so $e$ is not available for the exponential, which is written $\exp(\cdot)$; a unit element of a layer carries the glyph of the unit element, $\tilde u$ or $\tilde U$ (§<em>The Unitary Convention</em>).</p>
+<p><strong>The replacement of Hamilton's $i, j, k$ by the base rests on three reasons:</strong></p>
 <ul>
-<li>Inline mathematics is written between single dollars, and display mathematics between double dollars on lines of their own.</li>
-<li>Inline mathematics never spans a line break. If a formula is too long, it is displayed.</li>
-<li>Display mathematics inside a list is indented four spaces.</li>
-<li>A prime may follow a subscript as well as precede it: the forms <code>q'_t</code> and <code>q_t'</code> are both admitted, and an article keeps one order throughout.</li>
-<li>Tables are Markdown tables. A LaTeX array is never used for a table.</li>
-<li>Every heading that introduces a comparison or a classification is a real <code>###</code> heading, and the objects are defined before they are tabulated.</li>
-<li><strong>Bold marks the result.</strong> In a Remark that states a verdict, the clause carrying the outcome is
-  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace </em><em>is a
-  commutative Jordan algebra over $\mathbb{R}$ of degree two</em>**. A statement already displayed as a
-  Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
-  to the lead sentence of a section that states an outcome.</li>
-<li>The macros <code>\dddot</code> and <code>\slashed</code> are available. The characters <code>|</code>, <code>{</code>, <code>}</code>, <code>&lt;</code> and <code>&gt;</code> inside mathematics need no escaping.</li>
-<li>A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.</li>
+<li><strong>The letters $i$ and $j$ are already taken.</strong> Hamilton's $i, j, k$ collides with the complex $i$, kept for the central imaginary, and with the hyperbolic unit $j$, so a vector unit written with either letter would be misread.</li>
+<li><strong>The base names the directions of spacetime.</strong> The labels $t, x, y, z$ are the coordinates of physical spacetime, so the base states the physics directly, and $e_\mu$ remains an acceptable notation in mathematics, the unit along the axis $\mu$.</li>
+<li><strong>The base spends no digit.</strong> The labels carry no digit, so every digit stays free to count the generic objects: $Q_1, Q_2$, $\tilde Q_1, \tilde Q_2$ and $\tilde q_1, \tilde q_2$.</li>
 </ul>
 <h2 id="the-elements-and-their-coefficients">The Elements and their Coefficients</h2>
-<p>The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor.</p>
+<p>The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is written so that the glyph alone identifies its algebra, two features being read together: the <strong>case</strong> separates a real scalar from a complex one, and a <strong>tilde</strong> marks the quaternionic factor. <strong>The generic element belongs to the Q family and to no other letter</strong>: $\tilde q$ is the quaternion or split-quaternion element, $\tilde Q$ the biquaternion or split-biquaternion one, in every layer of the quaternion family. A letter outside the family is never generic: it names an object, or an element bound at the point of use.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>System</th>
 <th>Name</th>
 <th>Generic element</th>
-<th>Scalar–vector decomposition</th>
-<th>Coefficients</th>
+<th>Scalar part</th>
+<th>Vector part</th>
 </tr>
 </thead>
 <tbody>
@@ -247,167 +104,99 @@
 <tr>
 <td>$\mathbb{Q}$</td>
 <td>Rationals</td>
-<td>$a, b, c, \dots$</td>
-<td>—</td>
+<td>$q, q_1, q_2, \dots$</td>
+<td>$q$, real</td>
 <td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{R}$</td>
 <td>Reals</td>
-<td>$a, b, c$</td>
-<td>—</td>
+<td>$q, q_1, q_2$</td>
+<td>$q$, real</td>
 <td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{C}$</td>
 <td>Complex numbers</td>
-<td>$A = a + ia'$, $B = b + ib'$</td>
-<td>Scalar $a$, vector $ia'$</td>
-<td>Real, $a, a'$</td>
+<td>$Q = q + iq'$</td>
+<td>$q$, real; $q'$, real</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{D}$</td>
 <td>Split-complex numbers</td>
-<td>$A = a + ja'$, $B = b + jb'$</td>
-<td>Scalar $a$, vector $ja'$</td>
-<td>Real, $a, a'$</td>
+<td>$Q = q + jq'$</td>
+<td>$q$, real; $q'$, real</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{D}'$</td>
 <td>Dual numbers</td>
-<td>$A = a + \varepsilon a'$, $B = b + \varepsilon b'$</td>
-<td>Scalar $a$, vector $\varepsilon a'$</td>
-<td>Real, $a, a'$</td>
+<td>$Q = q + \varepsilon q'$</td>
+<td>$q$, real; $q'$, real</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>Reduced biquaternions</td>
+<td>$Q_\pm = Q_+ + jQ_-$</td>
+<td>$Q_+$, complex; $Q_-$, complex; idempotent $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathbb{H}$</td>
 <td>Quaternions</td>
 <td>$\tilde q = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$</td>
-<td>$q_te_t + \vec q$, $\vec q = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$</td>
-<td>Real, $q_\mu$</td>
+<td>$q_t$, real</td>
+<td>$q_x\vec e_x$, $q_y\vec e_y$, $q_z\vec e_z$, real</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathrm{s}}$</td>
 <td>Split-quaternions</td>
 <td>$\tilde q = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$</td>
-<td>$q_te_t + \vec q$, $\vec q = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$</td>
-<td>Real, $q_\mu$</td>
-</tr>
-<tr>
-<td>$\mathbb{B}_{\mathrm{r}}$</td>
-<td>Reduced biquaternions</td>
-<td>$T = A + Bj$</td>
-<td>Scalar $A$, vector $Bj$</td>
-<td>Complex, $A = a + ia'$, $B = b + ib'$</td>
+<td>$q_t$, real</td>
+<td>$q_x\vec e_x$, $q_y\vec e_y$, $q_z\vec e_z$, real</td>
 </tr>
 <tr>
 <td>$\mathbb{B}$</td>
 <td>Biquaternions</td>
 <td>$\tilde Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$</td>
-<td>$Q_te_t + \vec Q$, $\vec Q = Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$, $Q_\mu\in\mathbb{C}$</td>
-<td>Complex, $Q_\mu = q_\mu + iq'_\mu$</td>
+<td>$Q_t$, complex</td>
+<td>$Q_x\vec e_x$, $Q_y\vec e_y$, $Q_z\vec e_z$, complex</td>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{D}}$</td>
 <td>Split-biquaternions</td>
 <td>$\tilde Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$</td>
-<td>$Q_te_t + \vec Q$, $\vec Q = Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$, $Q_\mu\in\mathbb{D}$</td>
-<td>Split-complex, $Q_\mu = q_\mu + jq'_\mu$</td>
+<td>$Q_t$, split-complex</td>
+<td>$Q_x\vec e_x$, $Q_y\vec e_y$, $Q_z\vec e_z$, split-complex</td>
 </tr>
 </tbody>
 </table></div>
+<p>Under this framework, the <strong>vector part</strong> is the part carried by the three vector units $\vec e_x,\vec e_y,\vec e_z$; it exists only in the four quaternionic layers.</p>
+<p><strong>The two part columns.</strong> The fourth column gives the scalar part — the $\mathbb{C}$ scalar part in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{r}}$, the split scalar part in $\mathbb{H}_{\mathbb{D}}$ — and the fifth the vector part, each coefficient with its nature. In $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{B}_{\mathrm{r}}$ there is no vector direction, so both coefficients are scalars of the coefficient field and the vector column is empty.</p>
+<p><strong>Several elements of one kind take subscripts.</strong> Where a statement needs more than one element of the same kind, each occurrence takes a number: three generic biquaternions are $\tilde Q_1, \tilde Q_2, \tilde Q_3$, two quaternions are $\tilde q_1, \tilde q_2$, and two complex numbers are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. The number counts the element and never names a direction; a letter names the direction.</p>
 <p><strong>The four coordinates are labelled $t, x, y, z$.</strong> So that a sum over the coordinates of a quaternion, a split-quaternion, a biquaternion or a split-biquaternion shows at once which unit each term carries, the coefficients take the labels of the physical directions in place of the numbers: $Q_t$ with $e_t$, and $Q_x, Q_y, Q_z$ with $\vec e_x, \vec e_y, \vec e_z$. A sum over the four therefore runs over those labels,</p>
 <p>$$
 \tilde Q = \sum_{\mu \in \{t,x,y,z\}} Q_\mu e_\mu ,
 $$</p>
 <p>with $\mu$ the label and $e_\mu$ the unit it carries — the arrowless $e_t$ at $\mu = t$ and the arrowed $\vec e_\mu$ at $\mu = x, y, z$. The same rule reads a quaternion, $\tilde q = \sum_{\mu} q_\mu e_\mu$, and a four-vector of the algebra, and the primed coefficients follow the same labels, $Q_\mu = q_\mu + iq'_\mu$: the label marks the direction and the prime marks the slot that carries the $i$.</p>
-<p>Five rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers. <strong>The four quaternionic elements carry a tilde</strong>: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. The reduced biquaternion element carries <strong>no tilde</strong>: its algebra has no quaternionic factor, being the commutative two-parameter system over the complex scalars, and it is written $T = A + Bj$ with the two complex coordinates $A = a + ia'$ and $B = b + ib'$, the second unit $j$ being the hyperbolic unit of the corpus, $j^{2} = +1$ and $ji = ij$, so that the basis is $1, i, j, ij$. And <strong>the arithmetic systems and the reals carry a letter that is theirs alone</strong>: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $a, b, c$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, <strong>the element is a scalar part plus a vector part</strong>: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_t$ in the quaternionic ones — and the vector part by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_te_t + \vec Q$ is written in the coefficients according to the system; the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part. <strong>A pure element carries the arrow.</strong> A pure element is one with no scalar part, a vector of its layer, and it is written with the arrow of the vector part: $\vec q$ and $\vec Q$ are the pure elements of the quaternion and of the biquaternion layers, standing by themselves (§<em>Pure Elements and their Coefficients</em>). The arrow names the vector part of a named element, $\vec Q$ in $\tilde Q = Q_te_t + \vec Q$, and it names the same object when the element is read on its own; the arrow and the tilde are never stacked.</p>
+<p><strong>A complex element carries a majuscule</strong>, $Q$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $Q = q + iq'$, with $j$ in place of $i$ for the split-complex numbers and $\varepsilon$ for the dual numbers; a second and a third complex element are $Q_1 = q_1 + iq'_1$ and $Q_2 = q_2 + iq'_2$. <strong>The four quaternionic elements carry a tilde</strong>: lower case for the quaternions and the split-quaternions, $\tilde q$, and upper case for the biquaternions and the split-biquaternions, $\tilde Q$. The reduced biquaternion element carries <strong>no tilde</strong>: its algebra has no quaternionic factor, being the commutative two-parameter system over the complex scalars, and it is written $Q_\pm = Q_+ + jQ_-$ with the two complex coordinates $Q_+ = q_+ + iq'_+$ and $Q_- = q_- + iq'_-$, the second unit $j$ being the hyperbolic unit of the corpus, $j^{2} = +1$ and $ji = ij$, so that the basis is $1, i, j, ij$. And <strong>the arithmetic systems and the reals carry a letter that is theirs alone</strong>: $\alpha, \beta$ the Booleans, $n, m$ the naturals and the integers, and $q, q_1, q_2$ the rationals and the reals — a letter, no prime, no tilde, no coefficient sector, since these elements are not written as linear combinations. Finally, <strong>the element is a scalar part plus, where the layer has one, a vector part</strong>: the scalar part is carried by the unit — $1$ in the commutative two-parameter systems, $e_t$ in the quaternionic ones — and the vector part, in the quaternionic layers alone, by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_te_t + \vec Q$ is written in the coefficients according to the system; in the commutative two-parameter systems the second term is an imaginary, hyperbolic or dual part and not a vector part; in the quaternionic layers the two are the fixed and the anti-fixed spaces of the intrinsic conjugate, and the arithmetic systems, which are not written as linear combinations, have no vector part. <strong>A pure element carries the arrow.</strong> A pure element is one with no scalar part, a vector of its layer, and it is written with the arrow of the vector part: $\vec q$ and $\vec Q$ are the pure elements of the quaternion and of the biquaternion layers, standing by themselves (§<em>Pure Elements and their Coefficients</em>). The arrow names the vector part of a named element, $\vec Q$ in $\tilde Q = Q_te_t + \vec Q$, and it names the same object when the element is read on its own; the arrow and the tilde are never stacked.</p>
 <p>For the biquaternions, whose basis is $e_t, \vec e_x, \vec e_y, \vec e_z$ with $e_t = 1$ the unit,</p>
 <p>$$
 \tilde Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_\mu = q_\mu + iq'_\mu,
 $$</p>
 <p>where the four coefficients $Q_\mu$ are complex, and each of them splits into a real part $q_\mu$ and an imaginary part $q'_\mu$. <strong>The two parts of a coefficient share its letter</strong>, the imaginary part carrying a prime. The shape is the same in the quaternion systems; only the coefficient sector changes, and the table above gives the element and the coefficients of each system. The unit $e_t$ is the identity in the two quaternion systems, and the real and the imaginary part of a coefficient may be read off only where the scalar sector is larger than the reals, which is the case in $\mathbb{C}$ and $\mathbb{B}$ and not in $\mathbb{R}$ or $\mathbb{H}$.</p>
-<p>The case and the tilde are read independently, and the glyph of a generic element is the two together: $a$ is real, $A$ complex, split-complex or dual, $T$ reduced biquaternion — upper case, no tilde, and two complex coordinates — $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion.</p>
-<p><strong>The generic element is written $\tilde{Q}$.</strong> A statement that holds for every element is written with $\tilde Q$; a statement that needs two writes them $\tilde Q_1$ and $\tilde Q_2$, and a third takes the next number. The trace pairing is $\operatorname{Tr}(\tilde Q_1\tilde Q_2) = 2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the commutator bracket $[\tilde Q_1, \tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$, the general plain bilinear form $\langle\tilde Q_1, \tilde Q_2\rangle$ and the multiplicativity $\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, inherited from <em>Idempotents of the General Plain Algebra</em> and its companions, which write the generic element $\tilde Q$ beside the idempotent $\tilde\Pi$. The argument of an operator, the dummy of an annihilator, the second entry of a bracket and the element a map is applied to carry the same glyph: $L_{\tilde Q}(\tilde Q_1) = \tilde Q \bullet \tilde Q_1$, $\{\tilde Q_1 : \tilde Q \star \tilde Q_1 = 0\}$, $[\tilde Q, \tilde Q_1]$. The letters $X$, $Y$, $Z$ and $W$ name no element of the algebra: $X$ is kept for the universal cover $X^{\mathrm{cov}}$ and the left-invariant field, and $Y$, $Z$, $W$ are free of any element role.</p>
-<p>This is a <strong>preferred convention</strong> — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_t, \dots, \vec e_z$, the central unit $i$, the Euclidean vector $\vec q$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, k$, structure constants, and the individual elements an article defines keep the symbols that article gives them. Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
-<p><strong>The letters of the mathematical quantities.</strong> The glyphs of the elements are kept for the algebra, and a quantity that would borrow one is written with a letter of its own. The <strong>quadratic form</strong> takes the Fraktur $\mathfrak{Q}$ — Fraktur is already the script of a distinguished object here, as in $\mathfrak{a}$, $\mathfrak{p}$ and $\mathfrak{k}$, and the letter is free of every other use — so that the plain $q$ and $Q$ stay with the elements; its polarisation is written with the bracket $\langle\cdot,\cdot\rangle$, with $\mathfrak{Q}(v)=\langle v,v\rangle$, so that no letter is spent on it. The other quantities keep the letters of the table below, and where a quantity is itself an element of the algebra it carries the glyph of an element.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Mathematical quantity</th>
-<th>Symbol</th>
-<th>Meaning and note</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Quadratic form</td>
-<td>$\mathfrak{Q}$</td>
-<td>The form of a quadratic space, as in $\mathrm{Cl}(V,\mathfrak{Q})$ and the evaluation $\mathfrak{Q}(v)=\langle v,v\rangle$; Fraktur, so that $q$ and $Q$ stay with the elements</td>
-</tr>
-<tr>
-<td>Generic element</td>
-<td>$\tilde q$, $\tilde Q$</td>
-<td>The quaternion/split-quaternion and biquaternion/split-biquaternion element; never the quadratic form</td>
-</tr>
-<tr>
-<td>Coefficients of an element</td>
-<td>$q_\mu$, $Q_\mu$</td>
-<td>The coordinates of $\tilde q$ and $\tilde Q$, a real or complex scalar carrying the letter of the element</td>
-</tr>
-<tr>
-<td>Signature indices</td>
-<td>$n$, $m$</td>
-<td>The counts of positive and negative directions of a real form, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$; the $m$ here is the index, not the element $\tilde q$ and not the form $\mathfrak{Q}$</td>
-</tr>
-<tr>
-<td>Exponent</td>
-<td>$m$</td>
-<td>The exponent conjugate to $n$, $1/n+1/m=1$, in $L^{m}$, $\ell^{m}$ and the Besov space $B^{s}_{n,m}$; not the element</td>
-</tr>
-<tr>
-<td>Finite field</td>
-<td>$\mathbb{F}_q$</td>
-<td>The field of $q$ elements; the same $q$ is the order in $\mathrm{PSL}_2(q)$</td>
-</tr>
-<tr>
-<td>Rationals</td>
-<td>$\mathbb{Q}$</td>
-<td>The field of rational numbers, in blackboard bold</td>
-</tr>
-<tr>
-<td>Null quadric</td>
-<td>$\mathcal{Q}$</td>
-<td>The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$; not the element $\tilde Q$</td>
-</tr>
-<tr>
-<td>Dimension</td>
-<td>$n$</td>
-<td>The dimension of a space, $\dim V=n$; the signature indices are $n,m$, with $n+m$ the total dimension of a real form</td>
-</tr>
-<tr>
-<td>Circle constant</td>
-<td>$\pi$</td>
-<td>The number; not the idempotent, which is written $\tilde\Pi$</td>
-</tr>
-<tr>
-<td>Imaginary unit</td>
-<td>$i$</td>
-<td>The central unit of the complex and biquaternion scalars, as in $A=a+ia'$</td>
-</tr>
-<tr>
-<td>Dual and split units</td>
-<td>$\varepsilon$, $j$</td>
-<td>The square-zero unit of the dual numbers and the hyperbolic unit of the split-complex numbers</td>
-</tr>
-</tbody>
-</table></div>
+<p>The case and the tilde are read independently, and the glyph of a generic element is the two together: $q$ is real, $Q$ complex, split-complex or dual, $Q_\pm$ reduced biquaternion — upper case, no tilde, and two complex coordinates — $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion.</p>
+<p><strong>The generic element is written $\tilde{Q}$, and only the Q family is generic.</strong> A statement that holds for every element is written with $\tilde Q$; a statement that needs two writes them $\tilde Q_1$ and $\tilde Q_2$, and a third takes the next number. The trace pairing is $\operatorname{Tr}(\tilde Q_1\tilde Q_2) = 2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, the commutator bracket $[\tilde Q_1, \tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$, the general plain bilinear form $\langle\tilde Q_1, \tilde Q_2\rangle$ and the multiplicativity $\langle\tilde Q_1\tilde Q_2\rangle_{\natural} = \langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, inherited from <em>Idempotents of the General Plain Algebra</em> and its companions, which write the generic element $\tilde Q$ beside the idempotent $\tilde\Pi$. The argument of an operator, the dummy of an annihilator, the second entry of a bracket and the element a map is applied to carry the same glyph: $L_{\tilde Q}(\tilde Q_1) = \tilde Q \bullet \tilde Q_1$, $\{\tilde Q_1 : \tilde Q \star \tilde Q_1 = 0\}$, $[\tilde Q, \tilde Q_1]$. The letters $X$, $Y$, $Z$ and $W$ name no element of the algebra: $X$ is kept for the universal cover $X^{\mathrm{cov}}$ and the left-invariant field, and $Y$, $Z$, $W$ are free of any element role.</p>
+<p>Where the constructions that share a glyph must be told apart — the complex from the split-complex and the dual, the quaternion from the split-quaternion, the biquaternion from the split-biquaternion — the glyph is qualified by a subscript, as in $\mathbb{H}$, $\mathbb{H}_{\mathrm{s}}$ and $\mathbb{H}_{\mathbb{D}}$.</p>
+<p><strong>The letters of the mathematical quantities.</strong> The glyphs of the elements are kept for the algebra, and a quantity that would borrow one is written with a letter of its own. The <strong>quadratic form</strong> takes the Fraktur $\mathfrak{Q}$ — Fraktur is already the script of a distinguished object here, as in $\mathfrak{a}$, $\mathfrak{p}$ and $\mathfrak{k}$, and the letter is free of every other use — so that the plain $q$ and $Q$ stay with the elements; its polarisation is written with the bracket $\langle\cdot,\cdot\rangle$, with $\mathfrak{Q}(v)=\langle v,v\rangle$, so that no letter is spent on it. The <strong>null quadric</strong> takes the calligraphic $\mathcal{Q}$, as in $\mathcal{Q}^{n+1}$, and the <strong>signature indices</strong> take $n$ and $m$, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$; the table of §<em>Notational Conventions</em> lists the three with the other quantities, and where a quantity is itself an element of the algebra it carries the glyph of an element.</p>
 <h2 id="pure-elements-and-their-coefficients">Pure Elements and their Coefficients</h2>
-<p>A <strong>pure element</strong> is an element with no scalar part. In the quaternion and biquaternion layers the scalar part is carried by $e_t$, so a pure element is one whose $e_t$-coefficient vanishes and which is carried by the three vector directions alone. The pure elements of a layer are exactly the elements of its <strong>vector subspace</strong> $\mathrm{Vect}$, the anti-fixed space of the intrinsic conjugate,</p>
+<p>A <strong>pure element</strong> is an element with no scalar part. The notion belongs to the four quaternionic layers alone. In these layers the scalar part is carried by $e_t$, so a pure element is one whose $e_t$-coefficient vanishes and which is carried by the three vector directions alone. The pure elements are exactly the elements of the <strong>vector subspace</strong> $\mathrm{Vect}$, the anti-fixed space of the intrinsic conjugate,</p>
 <p>$$
 \vec q^{\natural} = -\vec q, \qquad \vec Q^{\natural} = -\vec Q,
 $$</p>
-<p>so a pure real quaternion is a vector of $\mathbb{R}^{3}$ and a pure biquaternion an element of a complex vector space of real dimension six.</p>
+<p>so a pure real quaternion is a vector of $\mathbb{R}^{3}$ and a pure biquaternion an element of a complex vector space of real dimension six. <strong>The layers $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{B}_{\mathrm{r}}$ have no vector part</strong>, so they have no pure element: their element is a scalar part beside an imaginary, hyperbolic or dual part — in $\mathbb{B}_{\mathrm{r}}$, the $j$-part $jQ_-$ — and that second part is not a vector of anything.</p>
 <p><strong>The glyph drops the tilde and carries the arrow.</strong> The tilde marks the quaternionic factor of an element that is read with its scalar part beside its vector part; a pure element is read on its vector part alone, so it is written with the arrow and without the tilde, $\vec q$ in the quaternion and split-quaternion layers and $\vec Q$ in the biquaternion and split-biquaternion ones. The case is unchanged, and the arrow is the only mark: the vector part of a named element and a pure element standing by itself are one object, written with the one glyph, so a pure element is never written with a tilde.</p>
 <p><strong>The arrow is reserved for pure elements.</strong> Three rules follow from this. First, <strong>the arrow marks a pure element and nothing else</strong>: an element with a nonzero scalar part is never written with an arrow, whatever its magnitude or its role. Second, <strong>a unit element carries the arrow only if it is pure</strong>: the unit pure quaternion $\vec u$ and the unit pure biquaternion $\vec U$ carry it, whereas a unit element that has a scalar part — a rotor $\tilde q$ of unit norm, say — carries no arrow, its unit length being carried by the construction that names it. Third, <strong>a unit in the direction of an element takes that element as a subscript</strong>, written $\vec u_{e}$ as in $\vec u_B$ for the unit along the field $B$; the subscript names the element whose direction is taken, and the arrow on $\vec u$ records that the unit is pure.</p>
 <div class="table-scroll"><table>
@@ -456,10 +245,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Three rules are read off the table. <strong>A pure element is the vector part of an element read on its own.</strong> For $\tilde q = q_te_t + \vec q$ the vector part $\vec q$ is a pure quaternion, and for $\tilde Q = Q_te_t + \vec Q$ the vector part $\vec Q$ is a pure biquaternion; the vector part of a named element and a pure element standing by itself are one object, and the arrow names both. <strong>A pure element is anti-fixed by the intrinsic conjugate</strong>, $\vec q^{\natural} = -\vec q$, having no scalar part to be fixed. <strong>The arrow marks purity, not magnitude.</strong> A pure element is of arbitrary magnitude; a unit pure element — a unit pure quaternion $\vec u$ — carries no second mark, its unit length being carried by the construction.</p>
+<p>Three rules are read off the table. <strong>A pure element is the vector part of an element read on its own.</strong> For $\tilde q = q_te_t + \vec q$ the vector part $\vec q$ is a pure quaternion, and for $\tilde Q = Q_te_t + \vec Q$ the vector part $\vec Q$ is a pure biquaternion; the vector part of a named element and a pure element standing by itself are one object, and the arrow names both. <strong>A pure element is anti-fixed by the intrinsic conjugate</strong>, $\vec q^{\natural} = -\vec q$, having no scalar part to be fixed; the quaternionic layers are the only ones where this splitting leaves three directions to be pure in. <strong>The arrow marks purity, not magnitude.</strong> A pure element is of arbitrary magnitude; a unit pure element — a unit pure quaternion $\vec u$ — carries no second mark, its unit length being carried by the construction.</p>
 <p><strong>The pure glyphs.</strong> The arrow is laid on the glyph of a special element on the same case rule that governs the layer: the pure root is $\vec\Xi$ in the biquaternion and split-biquaternion layers and $\vec\xi$ in the quaternion and split-quaternion ones, and the pure nilpotent is $\vec\Upsilon$ in the biquaternion and split-biquaternion layers and $\vec\nu$ in the quaternion and split-quaternion ones.</p>
 <p><strong>The arrow has priority over the tilde.</strong> Where an element is pure, the arrow is written whatever else the element is, and the tilde of a special glyph is dropped: a pure root is $\vec\Xi$ and a pure nilpotent is $\vec\Upsilon$ (or $\vec\xi$ and $\vec\nu$ in the quaternion layers), never $\tilde\Xi$ or $\tilde\Upsilon$. The tilde belongs to the general element, read with its scalar part beside its vector part, and a pure element has no scalar part to be read against; purity therefore decides the mark. The special conventions that write the root $\tilde\Xi$ or the nilpotent $\tilde\Upsilon$ name the <strong>general</strong> element of that class, which need not be pure, and an element that is at once special and pure is written with the arrow and only the arrow.</p>
-<p>A pure glyph is given from the quaternions to the biquaternions only. The layers with no quaternionic factor have no intrinsic conjugate to take a vector part against, and the commutative two-parameter systems carry their imaginary part in a single coefficient, $A = a + ia'$.</p>
+<p>A pure glyph is given from the quaternions to the biquaternions only. The layers with no quaternionic factor have no vector subspace, hence no pure element and no arrow: their second term is an imaginary, hyperbolic, dual or $j$-part carried by one coefficient — real in $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{D}'$, complex in $\mathbb{B}_{\mathrm{r}}$ — and written $Q = q + iq'$, with $j$ or $\varepsilon$ in place of $i$, in the three two-dimensional layers.</p>
 <h2 id="the-conjugations-and-the-adjoint">The Conjugations and the Adjoint</h2>
 <p>The biquaternion algebra carries four natural involutions, all of them used in the series, together with the adjoint of an operator, which belongs to the operators and not to the algebra:</p>
 <div class="table-scroll"><table>
@@ -498,14 +287,15 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<p>Outside the quaternionic layers there is no vector part for the natural sign to negate: in $\mathbb{C}$, $\mathbb{D}$, $\mathbb{D}'$ and $\mathbb{B}_{\mathrm{r}}$ it fixes the scalar line and negates the second line — the imaginary, hyperbolic, dual or $j$-line.</p>
 <p>Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The four examples below fix it system by system.</p>
 <p><strong>The complex numbers $\mathbb{C}$.</strong> Only the bar has a sense, the algebra carrying a single non-trivial involution:</p>
 <p>$$
-\bar A = a - ia' .
+\bar Q = q - iq' .
 $$</p>
 <p><strong>The split-complex numbers $\mathbb{D}$.</strong> Only the bar has a sense:</p>
 <p>$$
-\bar A = a - ja' , \qquad j^2 = +1 .
+\bar Q = q - jq' , \qquad j^2 = +1 .
 $$</p>
 <p><strong>The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{s}}$.</strong> Only the natural sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:</p>
 <p>$$
@@ -524,7 +314,7 @@ $$</p>
 <p>The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§<em>The Idempotent Convention</em>) and the nilpotent $\tilde\nu$ (§<em>The Nilpotent Convention</em>): the <strong>xi</strong>, in the two cases.</p>
 <p>A <strong>root of $1$</strong> of the algebra is an element $\tilde\Xi$ with $\tilde\Xi^2 = 1$. More generally a <strong>root of a central value</strong> $\lambda$ is an element with $\tilde\Xi^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in <em>Square Roots of Minus One, Zero and Plus One in the General Plain Algebra</em>, and the general problem is <em>Square Roots of a General Element in the Biquaternion Algebra</em>.</p>
 <p><strong>The square is read in a named product</strong>, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in <em>Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
-<p><strong>The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.</strong> The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; and those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor.</p>
+<p><strong>The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.</strong> The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Xi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\xi$; those of the complex, split-complex and dual layers carry the plain capital, $\Xi$; and those of the reduced biquaternion layer carry the same plain capital, $\Xi$, whose four roots are $\pm1$ and $\pm j$, no tilde being written where there is no quaternionic factor.</p>
 <p><strong>The coordinates carry the letter of the root</strong>: in $\mathbb{B}$ the root is $\tilde\Xi = \Xi_te_t + \Xi_x\vec e_x + \Xi_y\vec e_y + \Xi_z\vec e_z$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_t$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_te_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ with real $\xi_\mu$.</p>
 <p><strong>It is allowed to add subscripts when several roots are used.</strong> <strong>The subscript of a root is numeric when it counts and a role label when it names.</strong> Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §<em>The Idempotent Convention</em>; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.</p>
 <p>The root glyph is therefore <strong>split by the case rule</strong>, and the split is the reason the convention is stated:</p>
@@ -537,16 +327,20 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Xi$</td>
-<td>A root of $1$ of the biquaternion or split-biquaternion layer</td>
+<td>$\Xi$</td>
+<td>A root of $1$ of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Xi_\pm$</td>
+<td>A root of $1$ of the reduced biquaternion layer, where no tilde is written</td>
 </tr>
 <tr>
 <td>$\tilde\xi$</td>
 <td>A root of $1$ of the quaternion or split-quaternion layer</td>
 </tr>
 <tr>
-<td>$\Xi$</td>
-<td>A root of $1$ of the complex, split-complex, dual or reduced biquaternion layer, where no tilde is written</td>
+<td>$\tilde\Xi$</td>
+<td>A root of $1$ of the biquaternion or split-biquaternion layer</td>
 </tr>
 </tbody>
 </table></div>
@@ -554,10 +348,10 @@ $$</p>
 <h3 id="the-idempotent-convention">The Idempotent Convention</h3>
 <p>The convention of <em>The Elements and their Coefficients</em> fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the corpus uses it throughout.</p>
 <p>An <strong>idempotent</strong> of the algebra is an element $\tilde\Pi$ with $\tilde\Pi^2 = \tilde\Pi$, and a <strong>projector</strong> is an idempotent operator, $p^2 = p$, that is an idempotent of the morphism space, not an element of the algebra; the two are different objects, and an idempotent element corresponds to a projector when its multiplication operator is idempotent. An idempotent fixed by the star, $\tilde\Pi^{*} = \tilde\Pi$, is a <strong>Hermitian idempotent</strong>, and the rank-one Hermitian idempotents of $\mathbb{M}_+$, the Hermitian subspace, are the <strong>pure states</strong>.</p>
-<p><strong>The case rule splits the glyph, as it does for the elements.</strong> The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; and those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (<em>Split-Quaternion Idempotents and Projections</em>) and $\Pi_{1,2}$ in $\mathbb{D}$ (<em>Split-Complex Idempotents and Projections</em>), the same $\Pi_{1,2}=\tfrac12(1\pm j)$ in the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$, and the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of <em>Split-Biquaternion Idempotents and Projections</em>; the layer fixes the glyph.</p>
+<p><strong>The case rule splits the glyph, as it does for the elements.</strong> The idempotents of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde\Pi$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde\pi$; those of the complex, split-complex, dual and reduced biquaternion layers carry the plain capital, $\Pi$, no tilde being written where there is no quaternionic factor. The same splitting of the identity is written $\tilde\pi_{1,2}$ in $\mathbb{H}_{\mathrm{s}}$ (<em>Split-Quaternion Idempotents and Projections</em>) and $\Pi_{1,2}$ in $\mathbb{D}$ (<em>Split-Complex Idempotents and Projections</em>), while the reduced biquaternion layer $\mathbb{B}_{\mathrm{r}}$ writes the pair with the signs, $\Pi_\pm=\tfrac12(1\pm j)$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$; the idempotents of the split-biquaternion layer are the $\tilde\Pi_{1,2}$ of <em>Split-Biquaternion Idempotents and Projections</em>, and the layer fixes the glyph.</p>
 <p>The involution here is the star on the elements, as <em>The Conjugations and the Adjoint</em> fixes it, and <em>Conventions in the Biquaternion Universe</em> writes the same involution with the same star, $\tilde\Pi^{*} = \tilde\Pi$: the two corpora agree on the mark, and it is the dagger that is confined to the operators.</p>
 <p><strong>The coordinates carry the letter of the idempotent</strong>: in $\mathbb{B}$ the idempotent is $\tilde\Pi = \Pi_te_t + \Pi_x\vec e_x + \Pi_y\vec e_y + \Pi_z\vec e_z$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_t$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_te_t + \pi_x\vec e_x + \pi_y\vec e_y + \pi_z\vec e_z$ with real $\pi_\mu$.</p>
-<p><strong>It is allowed to add subscripts when several idempotents are used.</strong> <strong>The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.</strong> A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is <strong>complete</strong>, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.</p>
+<p><strong>It is allowed to add subscripts when several idempotents are used.</strong> <strong>The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.</strong> A pair is $\tilde\Pi_1, \tilde\Pi_2$; a second pair occurring in the same statement takes the next numbers, $\tilde\Pi_3, \tilde\Pi_4$; and a family indexed by a direction is written with its argument, $\tilde\Pi_\pm(\tilde\Xi)$. When a pair is <strong>complete</strong>, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, its two members may be written $\tilde\Pi_+$ and $\tilde\Pi_-$, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element. The reduced biquaternion layer writes its complete pair with the signs throughout, $\Pi_\pm$; its Peirce indices are the same signs, $\mathbb{B}_{\sigma\tau}=\{Q_\pm:\Pi_\sigma Q_\pm\Pi_\tau=Q_\pm\}$ with $\sigma,\tau\in\{+,-\}$.</p>
 <p>A non-zero idempotent $\tilde\Pi$ generates the <strong>minimal left ideal</strong> $\mathbb{B}\tilde\Pi$; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of <em>Idempotents of the General Plain Algebra</em> and its companions.</p>
 <p>The idempotent glyph is therefore <strong>split by the case rule</strong>, and the split is the reason the convention is stated:</p>
 <div class="table-scroll"><table>
@@ -569,16 +363,20 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi$</td>
-<td>An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates</td>
+<td>$\Pi$</td>
+<td>An idempotent of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Pi_\pm$</td>
+<td>An idempotent of the reduced biquaternion layer, where no tilde is written</td>
 </tr>
 <tr>
 <td>$\tilde\pi$</td>
 <td>An idempotent of the quaternion or split-quaternion layer</td>
 </tr>
 <tr>
-<td>$\Pi$</td>
-<td>An idempotent of the complex, split-complex, dual or reduced biquaternion layer, where no tilde is written</td>
+<td>$\tilde\Pi$</td>
+<td>An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Pi$ it generates</td>
 </tr>
 </tbody>
 </table></div>
@@ -603,31 +401,129 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Upsilon$</td>
-<td>A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates</td>
+<td>$\Upsilon$</td>
+<td>A nilpotent of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Upsilon_\pm$</td>
+<td>A nilpotent of the reduced biquaternion layer, where no tilde is written</td>
 </tr>
 <tr>
 <td>$\tilde\nu$</td>
 <td>A nilpotent of the quaternion or split-quaternion layer</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon$, $\vec\nu$</td>
-<td>A pure nilpotent, written with the arrow and without the tilde by the priority rule of §<em>Pure Elements and their Coefficients</em></td>
+<td>$\tilde\Upsilon$</td>
+<td>A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde\Upsilon$ it generates</td>
 </tr>
 <tr>
-<td>$\Upsilon$</td>
-<td>A nilpotent of the complex, split-complex or dual layer, where no tilde is written</td>
+<td>$\vec\Upsilon$, $\vec\nu$</td>
+<td>A pure nilpotent, written with the arrow and without the tilde by the priority rule of §<em>Pure Elements and their Coefficients</em></td>
 </tr>
 </tbody>
 </table></div>
 <p>The convention is one of <strong>notation, not of substance</strong>: an element written $\tilde\nu$ is not a different kind of object from one written $\tilde Q$, only an element known to be nilpotent.</p>
 <p><strong>The standard pair carries the arrow, not the tilde.</strong> The two off-diagonal Peirce units are pure, $\vec\Upsilon_1 = \tfrac12(i\vec e_x - \vec e_y)$ and $\vec\Upsilon_2 = \tfrac12(i\vec e_x + \vec e_y)$, with no scalar part, so by §<em>Pure Elements and their Coefficients</em> the arrow takes priority over the tilde and the tilde is dropped; the pair is written $\vec\Upsilon_1, \vec\Upsilon_2$ and never $\tilde\Upsilon_1, \tilde\Upsilon_2$. The tilde is kept for the general nilpotent $\tilde\Upsilon$, which may carry a scalar part and is not pure.</p>
-<h2 id="the-base-and-its-units">The Base and Its Units</h2>
-<p>The base is written with the letter $e$, one unit to a direction. The scalar unit is $e_t = 1$ and the three vector units are $\vec e_x, \vec e_y, \vec e_z$; the arrow is the only mark that separates the scalar unit from the vector units. <strong>The three vector units are the quaternion units, the corpus's replacement for Hamilton's $i, j, k$</strong>: the corpus writes them $\vec e_x, \vec e_y, \vec e_z$ because $i$ is kept for the central imaginary and $j$ for the hyperbolic unit. A general element is written in the base,</p>
+<h2 id="the-twelve-products-and-their-names">The Twelve Products and Their Names</h2>
+<p>The algebra carries <strong>four general products</strong> — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>, so that the complex space carries <strong>twelve products</strong> in all. The names are these, with the three-letter code the band articles write them by:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The general product</th>
+<th>Its symmetric part</th>
+<th>Its antisymmetric part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The general plain bilinear product ($\mathrm{GPA}$)</td>
+<td>The symmetric plain bilinear product ($\mathrm{SPA}$)</td>
+<td>The antisymmetric plain bilinear product ($\mathrm{APA}$)</td>
+</tr>
+<tr>
+<td>The general quaternionic bilinear product ($\mathrm{GQA}$)</td>
+<td>The symmetric quaternionic bilinear product ($\mathrm{SQA}$)</td>
+<td>The antisymmetric quaternionic bilinear product ($\mathrm{AQA}$)</td>
+</tr>
+<tr>
+<td>The general plain sesquilinear product ($\mathrm{GPS}$)</td>
+<td>The symmetric plain sesquilinear product ($\mathrm{SPS}$)</td>
+<td>The antisymmetric plain sesquilinear product ($\mathrm{APS}$)</td>
+</tr>
+<tr>
+<td>The general quaternionic sesquilinear product ($\mathrm{GQS}$)</td>
+<td>The symmetric quaternionic sesquilinear product ($\mathrm{SQS}$)</td>
+<td>The antisymmetric quaternionic sesquilinear product ($\mathrm{AQS}$)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The code is read letter by letter.</strong> The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the <strong>algebra</strong> over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the <strong>sesqualgebra</strong> over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
+<p><strong>The same code on the reduced biquaternion space.</strong> The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is <strong>commutative</strong>, four of the twelve codes name no new operation there: $\mathrm{SPA} = \mathrm{GPA}$ and $\mathrm{SQS} = \mathrm{GQS}$, while $\mathrm{APA} = 0$ and $\mathrm{AQS} = 0$. The space therefore carries <strong>eight distinct algebraic structures</strong> — $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ — and the twelve slots, the four that collapse and the eight that remain are <em>The Four Products, Their Forms and Their Algebraic Norms</em> and <em>The Specificities of the Algebra of the Reduced Biquaternions</em>. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}^{\natural}$, the tessarine conjugation $e\mapsto-e$ — as in the band above.</p>
+<p><strong>The definitions.</strong> Write the two elements $\tilde P=P_te_t+\vec P$ and $\tilde Q=Q_te_t+\vec Q$, with $\vec P=(P_x,P_y,P_z)$ and $\vec Q=(Q_x,Q_y,Q_z)$; $(\vec P,\vec Q)$ is the Euclidean inner product, $\vec P\times\vec Q$ the cross product in the units $\vec e_x,\vec e_y,\vec e_z$, and $\overline{\vec Q}$ the coefficientwise conjugation. Every product is the sum of a scalar part, a multiple of $e_t$, and a vector part.</p>
+<p><strong>The four general products</strong>, one to each choice of the two slots.</p>
+<p><strong>The general plain bilinear product</strong>, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:</p>
 <p>$$
-\tilde Q = Q_t e_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu ,
+\tilde P\tilde Q=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P+\vec P\times\vec Q .
 $$</p>
-<p>with $e_\mu$ the unit of the direction $\mu$. In the quaternion layers the three vector units square to the negative of the scalar unit, $\vec e_k^2 = -e_t$; the split-quaternion layer keeps $\vec e_x^2 = -e_t$ and takes $\vec e_y^2 = \vec e_z^2 = +e_t$ (§<em>The Conjugations and the Adjoint</em>). <strong>The notation is the unit along the axis.</strong> A coefficient carries the name of the direction it multiplies: $Q_x$ is the coefficient of $\vec e_x$, the label on the unit names the direction and the label on the coefficient names the same direction, so $q_x = x$ reads without ambiguity. <strong>The base letter is $e$ and the unit-element letter is $u$, and the two are never exchanged.</strong> The base units carry $e$, so $e$ is not available for the exponential, which is written $\exp(\cdot)$; a unit element of a layer carries the glyph of the unit element, $\tilde u$ or $\tilde U$ (§<em>The Unitary Convention</em>).</p>
+<p><strong>The general plain sesquilinear product</strong>, the second factor read through ${}^{*}$, not associative, with $e_t$ a unit on the right only:</p>
+<p>$$
+\tilde P\tilde Q^{*}=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+$$</p>
+<p><strong>The general quaternionic bilinear product</strong>, the first factor read through ${}^{\natural}$, not associative, with $e_t$ a unit on the left only:</p>
+<p>$$
+\tilde P^{\natural}\tilde Q=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr]+P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+$$</p>
+<p><strong>The general quaternionic sesquilinear product</strong>, both slots read through a conjugation, not associative, with a unit on neither side:</p>
+<p>$$
+\tilde P^{\natural}\tilde Q^{*}=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q} .
+$$</p>
+<p><strong>The four symmetric parts</strong>, written with the <strong>full dot</strong> $\bullet$, the four half-sums under the exchange that keeps the class of the product — the interchange for the two bilinear products, the conjugate transpose for the two sesquilinear ones. The subscript names the slots as it does for the forms: none for the plain bilinear product, ${}_{\natural}$ for the quaternionic bilinear, ${}_{*}$ for the plain sesquilinear and ${}_{\natural*}$ for the quaternionic sesquilinear.</p>
+<p><strong>The symmetric plain bilinear product</strong>, the half-sum of the two orders, the <strong>Jordan product</strong> $\tilde P\bullet\tilde Q$, written $\star$ in the symmetric-plain band of the physics corpus:</p>
+<p>$$
+\tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)=\bigl[P_tQ_t-(\vec P,\vec Q)\bigr]+P_t\vec Q+Q_t\vec P .
+$$</p>
+<p><strong>The symmetric plain sesquilinear product</strong>, the half-sum under the conjugate transpose, the <strong>Hermitian form</strong> $\langle\tilde P,\tilde Q\rangle_{*}$, central-valued:</p>
+<p>$$
+\tilde P\bullet_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\bigl[P_t\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr] .
+$$</p>
+<p><strong>The symmetric quaternionic bilinear product</strong>, the half-sum of the two orders, the <strong>quaternion form</strong> $\langle\tilde P,\tilde Q\rangle_{\natural}$, central-valued:</p>
+<p>$$
+\tilde P\bullet_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr] .
+$$</p>
+<p><strong>The symmetric quaternionic sesquilinear product</strong>, the half-sum under the conjugate transpose:</p>
+<p>$$
+\tilde P\bullet_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P .
+$$</p>
+<p><strong>The four antisymmetric parts</strong>, written with the <strong>wedge</strong> $\wedge$, the four half-differences under the same exchange; all four have zero scalar part and lie in the vector subspace.</p>
+<p><strong>The antisymmetric plain bilinear product</strong>, the half-difference of the two orders, the <strong>outer product</strong> $\tilde P\wedge\tilde Q$:</p>
+<p>$$
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q .
+$$</p>
+<p><strong>The antisymmetric plain sesquilinear product</strong>, the half-difference under the conjugate transpose, the vector part $\mathrm{Vect}(\tilde P\tilde Q^{*})$:</p>
+<p>$$
+\tilde P\wedge_{*}\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}-(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q} .
+$$</p>
+<p><strong>The antisymmetric quaternionic bilinear product</strong>, the half-difference of the two orders:</p>
+<p>$$
+\tilde P\wedge_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q .
+$$</p>
+<p><strong>The antisymmetric quaternionic sesquilinear product</strong>, the half-difference under the conjugate transpose, the cross product $\vec P\times\overline{\vec Q}$:</p>
+<p>$$
+\tilde P\wedge_{\natural*}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q} .
+$$</p>
+<p><strong>The reconstruction.</strong> The dot and the wedge rebuild the four general products, so the eight parts carry the whole content of the twelve, one identity to a slot:</p>
+<p>$$
+\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q,\qquad
+\tilde P\tilde Q^{*}=\tilde P\bullet_{*}\tilde Q+\tilde P\wedge_{*}\tilde Q,\qquad
+\tilde P^{\natural}\tilde Q=\tilde P\bullet_{\natural}\tilde Q+\tilde P\wedge_{\natural}\tilde Q,\qquad
+\tilde P^{\natural}\tilde Q^{*}=\tilde P\bullet_{\natural*}\tilde Q+\tilde P\wedge_{\natural*}\tilde Q .
+$$</p>
+<p><strong>The two antisymmetrisations are not one.</strong> The eight parts above come from the exchange that keeps the class of the product; the <strong>bare interchange</strong> of the two arguments gives a second antisymmetrisation and different objects — the symmetrised sesquilinear product and the <strong>sesquilinear commutator</strong>,</p>
+<p>$$
+[\tilde P,\tilde Q]_\varsigma=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*},
+$$</p>
+<p>whose values lie in the skew-Hermitian part. <strong>The full dot $\bullet$ and the wedge $\wedge$ are reserved for the exchange that keeps the class of the product, so neither names the objects of this paragraph.</strong> The two are not the same operation (<em>The 12 Products of the Biquaternioid $\mathbb{C}$ Space</em>; <em>The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid</em>), and the current of a scalar field is the commutator, $\tilde J=i[\tilde\Phi^{*}(\tilde\nabla\tilde\Phi)-(\tilde\nabla\tilde\Phi^{*})\tilde\Phi]$.</p>
+<p>The products themselves — their coordinates, their laws, their units and their images — are <em>The 12 Products of the Biquaternioid Complex Space</em>, and the grid of the four general products is <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> and <em>Comparison Between the Four General Products</em>.</p>
 <h2 id="the-form-convention-the-norm-convention-and-the-unitary-convention">The Form Convention, the Norm Convention and the Unitary Convention</h2>
 <p>The corpus writes a <strong>generic form</strong> and a <strong>generic norm</strong>, the norm being the form read at its two equal arguments:</p>
 <p>$$
@@ -718,106 +614,191 @@ $$</p>
 <p>The two bilinear norms are complex-valued, so their condition is $=e_t$; the two sesquilinear norms are real-valued, so theirs is $=1$. In the quaternion layer the level set is $Sp(1)=\{\tilde u\in\mathbb{H}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}=\mathrm{SU}(2)$, and <strong>the rotors are these elements</strong>: an orientation rotor, of norm $e_t$, is a unit real quaternion and is written $\tilde u$.</p>
 <p><strong>The group condition is narrower than the norm-one condition.</strong> Where the sesquilinear form is preserved, $\tilde U^{*}\tilde U=e_t$, the norm-one elements that do so form the <strong>unitary group</strong>, written without the tilde of an element,</p>
 <p>$$
-U(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong U(2)=S^{1}\cdot S^{3},\qquad S^{1}\cap S^{3}=\{\pm e_t\},
+\mathrm{U}(\mathbb{B})=\{\tilde U:\tilde U^{*}\tilde U=e_t\}\cong \mathrm{U}(2)=S^{1}\cdot S^{3},\qquad S^{1}\cap S^{3}=\{\pm e_t\},
 $$</p>
 <p>of real dimension $4$. The name <strong>unitary</strong> is the name of that group; the glyph $\tilde U$ is the wider norm-one element. The norm and the group condition exist only where their involution does: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.</p>
-<p><strong>The case rule splits the glyph</strong>, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, and $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.</p>
+<p><strong>The case rule splits the glyph</strong>, as for the elements: $\tilde U$ in the biquaternion and split-biquaternion layers, $\tilde u$ in the quaternion and split-quaternion ones, $U$ in the complex, split-complex, dual and reduced biquaternion ones. The pure case carries the arrow, $\vec u$ and $\vec U$.</p>
 <p><strong>The coordinates carry the letter of the unit element</strong>: in $\mathbb{B}$ it is $\tilde U = U_te_t + U_x\vec e_x + U_y\vec e_y + U_z\vec e_z$ with $U_\mu = u_\mu + iu'_\mu$ and vector part $\vec U = \vec u_\mu + i\vec u'_\mu$; in $\mathbb{H}$ it is $\tilde u = u_te_t + u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$ with real $u_\mu$. <strong>A coordinate carries the label of its direction</strong>, as the base does: the scalar coordinate is $U_t$ and the vector coordinates are $U_x, U_y, U_z$, and likewise $u_t, u_x, u_y, u_z$ for the quaternion-layer element $\tilde u$; a role label is written in the upright roman where the statement names a role. <strong>It is allowed to add subscripts when several unit elements are used</strong>, $\tilde U_1, \tilde U_2$.</p>
-<h3 id="the-letters-math544-and-math545-outside-the-layers">The Letters $U$ and $u$ Outside the Layers</h3>
-<p>The reservation above is <strong>local to the layers of the biquaternion family</strong> — the complex, split-complex, dual and reduced biquaternion layers, the quaternion, split-quaternion, biquaternion and split-biquaternion layers, and the operator articles built on them. Inside them the glyphs $u$, $\tilde u$, $\vec u$, $U$, $\tilde U$ and $\vec U$ name unit elements and nothing else, and a velocity, a scalar field or a generic vector is never written with either letter. Outside them the two letters are <strong>borrowed</strong>, and each borrowing is fixed rather than left open:</p>
+<h3 id="the-letters-math584-and-math585-outside-the-layers">The Letters $U$ and $u$ Outside the Layers</h3>
+<p>The reservation above is <strong>local to the layers of the biquaternion family</strong> — the complex, split-complex, dual and reduced biquaternion layers, the quaternion, split-quaternion, biquaternion and split-biquaternion layers, and the operator articles built on them. Inside them the glyphs $u$, $\tilde u$, $\vec u$, $U$, $\tilde U$ and $\vec U$ name unit elements and nothing else.</p>
+<p>Outside them the letter keeps a single shape for a single meaning, and the font carries the distinctions the layers do not need. The <strong>unitary group</strong> and the <strong>universal enveloping algebra</strong> are upright roman, $\mathrm{U}(n)$, $\mathrm{U}(H)$, $\mathrm{U}(\mathbb B)$, $\mathrm{U}(\mathfrak g)$; the <strong>group of units</strong> of a ring is the sans-serif $\mathsf{U}(R)$, which the corpus more usually writes $R^{\times}$; a <strong>family of sets</strong> — an open cover, a filter, a uniformity — is the script $\mathcal U$; and the <strong>up quark</strong> and the <strong>atomic mass unit</strong> are the upright roman $\mathrm u$. The italic letters $U$ and $u$ are reserved: outside the layers they never name an open set, a flow or evolution operator, a horocycle, a Jordan quadratic representation, a dual element, an internal energy or an unknown function.</p>
+<h2 id="conventions-for-derivation">Conventions for Derivation</h2>
+<p>In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial w$, so that where a PDE text writes $L_u$ and $L_p$ the calculus-of-variations and partial-differential-equation articles write $\partial L/\partial w$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial w^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The time derivative $\partial/\partial Q_t$ is the imaginary-time derivative: on the material sector, where $Q_t=ict$, it equals $-\frac{i}{c}\,\partial/\partial t$, and $t$ is not one of the coordinates, so the real-time partial derivative is written out as $\partial/\partial t$.</p>
+<p><strong>These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, partial derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.</strong></p>
+<h3 id="the-derivative-marks">The Derivative Marks</h3>
+<p><strong>No dot.</strong> No derivative is written with a dot. The total derivative with respect to a parameter is written with a fraction and the parameter named: $\frac{d}{dt}$ for time, $\frac{d}{d\tau}$ for proper time, $\frac{d}{dt_r}$ for retarded time; inline, the same derivative is written $dq/dt$. The partial derivative is written $\frac{\partial}{\partial t}$ or, inline, $\partial/\partial t$. A higher derivative is written $\frac{d^2}{dt^2}$, $\frac{\partial^2}{\partial t^2}$. The derivative binds to its whole argument, so a power is written outside a bracket, $\left(\frac{dx}{dt}\right)^2$, never as $\frac{dx^2}{dt}$.</p>
+<p><strong>The prime.</strong> The prime is reserved for the derivative with respect to the single argument of a function of one variable, and a second derivative is written with $\partial$, never with a repeated subscript.</p>
+<p><strong>Labels that are not derivatives.</strong> The second Lorentz label is written $\bar l$, and a spinor index of the conjugate representation is written $\bar\alpha$; the bar on an index marks the conjugate spinor. The conjugate matrix is $\bar\Pi$. These are labels, not derivatives.</p>
+<p><strong>The scope mark.</strong> In geometric calculus the factor differentiated is marked with an underline, $\underline{\partial}(AB)=\underline{\partial}A\,B+\underline{A}\,\underline{\partial}B$, not with a dot.</p>
+<h3 id="the-gradient">The Gradient</h3>
+<p>The two derivative operators of the corpus carry a glyph of their own and are fixed here and in no other place; every other partial derivative is written with $\partial$.</p>
+<p>The coordinate derivative is written $\partial/\partial Q_\mu$, and the <strong>biquaternionic gradient</strong> is the element-valued operator</p>
+<p>$$
+\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+$$</p>
+<p>whose tilde marks the operator and not a value (<em>Conventions in the Biquaternion Universe</em>, §<em>The Gradient</em>; <em>Biquaternion Analysis</em>), with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence $\nabla\cdot\vec F$ and curl $\nabla\times\vec F$, and $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ for the Laplacian in the three vector coordinates; on the material sector it is the physical $\Delta=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$.</p>
+<p><strong>The conjugates of the gradient.</strong> The coefficients of $\tilde\nabla$ are the coordinate derivatives $\partial/\partial Q_\mu$, and such a derivative is real, so conjugation leaves each coefficient as it stands and only the units are affected. The quaternion conjugation and the Hermitian conjugation both reverse the three spatial units, so the two act on the gradient alike,</p>
+<p>$$
+\tilde\nabla^{*}=\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+\qquad \overline{\tilde\nabla}=\tilde\nabla .
+$$</p>
+<p><strong>The forms stay four, the norms are two.</strong> The four forms keep their four conventions, named in §<em>The Twelve Products and Their Names</em>, each conjugating its own slot: the quaternionic form conjugates the first argument and the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm and the Krein norm with the plain bilinear norm. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and $\partial^2/\partial Q_t^2-\Delta_Q$.</p>
+<p><strong>On the material sector $\mathbb{M}_-$</strong>, where $Q_t=ict$ and $Q_k=q_k$, the time derivative reads $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$.</p>
+<h3 id="the-plain-bilinear-product-its-form-and-its-norm">The Plain Bilinear Product, Its Form and Its Norm</h3>
+<p><strong>The product.</strong> The general plain bilinear product is one of the four of §<em>The Twelve Products and Their Names</em>. On the gradient, with an element-valued field $\tilde F=F_te_t+\vec F$, it is read with $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\vec e_j\vec e_k=-\delta_{jk}e_t+\epsilon_{jkl}\vec e_l$, so that the three spatial units carry the field back onto the scalar unit,</p>
+<p>$$
+\tilde\nabla\tilde F=\Bigl(\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec F+\nabla F_t+\nabla\times\vec F .
+$$</p>
+<p>A <strong>product</strong> is algebra-valued, and this one holds the divergence, the gradient and the curl of the field in a single object; the equation $\tilde\nabla\tilde F=-\tilde R$ is the series' Maxwell equation. <strong>On the material sector</strong> the same product is read with $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$, the space part being unchanged.</p>
+<p><strong>The symmetric and antisymmetric parts.</strong> Read with two arguments, the product splits as in §<em>The Twelve Products and Their Names</em>. The half-sum keeps the form as its scalar part,</p>
+<p>$$
+\tilde\nabla\bullet\tilde F=\tfrac12\bigl(\tilde\nabla\tilde F+\tilde F\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}F_t-(\nabla,\vec F)\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec F+F_t\nabla=\Bigl[\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F\Bigr]e_t+\frac{\partial}{\partial Q_t}\vec F+\nabla F_t ,
+$$</p>
+<p>and the half-difference is the curl,</p>
+<p>$$
+\tilde\nabla\wedge\tilde F=\tfrac12\bigl(\tilde\nabla\tilde F-\tilde F\tilde\nabla\bigr)=\tfrac12\bigl(\nabla\times\vec F+\nabla\times\vec F\bigr)=\nabla\times\vec F ,
+$$</p>
+<p>a pure vector, so the plain form carries the whole scalar content of the product. Throughout these four subsections the pair $(\nabla,\vec X)$ is read as the divergence $\nabla\cdot\vec X$ and $X\nabla$ as the gradient $\nabla X$, the derivative acting on the coefficient it multiplies, and the coordinate formulas substituted are those of §<em>The Twelve Products and Their Names</em>.</p>
+<p><strong>The form.</strong> The <strong>plain form</strong> is the scalar part of the product read in two arguments,</p>
+<p>$$
+\langle\tilde\nabla,\tilde F\rangle=\mathrm{Sc}(\tilde\nabla\tilde F)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}F_\mu=\frac{\partial}{\partial Q_t}F_t-\nabla\cdot\vec F ,
+$$</p>
+<p>a scalar, the <strong>contraction</strong> of the derivative with the field in the sign vector $\varepsilon$. <strong>On the material sector</strong> it is $-\frac{i}{c}\frac{\partial F_t}{\partial t}-\nabla\cdot\vec F$.</p>
+<p><strong>The norm.</strong> The norm is defined with the form, as that form at its two equal arguments:</p>
+<p>$$
+\langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}(\tilde\nabla\tilde\nabla)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
+$$</p>
+<p>the cross terms cancelling. <strong>On the material sector</strong> it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$, the negative of the wave operator; it is <strong>not</strong> the series' d'Alembertian.</p>
+<h3 id="the-quaternionic-bilinear-product-its-form-and-its-norm">The Quaternionic Bilinear Product, Its Form and Its Norm</h3>
+<p><strong>The product.</strong> The general quaternionic bilinear product is the second of the four of §<em>The Twelve Products and Their Names</em>; on the gradient it is $\tilde\nabla^{\natural}\tilde F$, the conjugate derivative, read with the same rules, the three spatial units now carrying the field back onto the scalar unit with the opposite sign,</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde F=\Bigl(\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F\Bigr)e_t+\frac{\partial}{\partial Q_t}\vec F-\nabla F_t-\nabla\times\vec F .
+$$</p>
+<p><strong>On the material sector</strong> the same substitution $\partial/\partial Q_t=-\frac{i}{c}\,\partial/\partial t$ applies.</p>
+<p><strong>The symmetric and antisymmetric parts.</strong> The half-sum is central and is the quaternionic form itself,</p>
+<p>$$
+\tilde\nabla\bullet_{\natural}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F+\tilde F^{\natural}\tilde\nabla\bigr)=\Bigl[\frac{\partial}{\partial Q_t}F_t+(\nabla,\vec F)\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F\Bigr)e_t ,
+$$</p>
+<p>and the half-difference is the vector part of the product,</p>
+<p>$$
+\tilde\nabla\wedge_{\natural}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F-\tilde F^{\natural}\tilde\nabla\bigr)=\frac{\partial}{\partial Q_t}\vec F-F_t\nabla-\nabla\times\vec F=\frac{\partial}{\partial Q_t}\vec F-\nabla F_t-\nabla\times\vec F .
+$$</p>
+<p><strong>The form.</strong> The <strong>quaternionic form</strong> is the scalar part of that product read in two arguments,</p>
+<p>$$
+\langle\tilde\nabla,\tilde F\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde F)=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}F_\mu=\frac{\partial}{\partial Q_t}F_t+\nabla\cdot\vec F ,
+$$</p>
+<p>a scalar, the <strong>contraction</strong> of the derivative with the field in the $ict$ metric. It differs from the plain form by the three signs of $\varepsilon$, which are <strong>computed from the product</strong> $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed. <strong>On the material sector</strong> it is $-\frac{i}{c}\frac{\partial F_t}{\partial t}+\nabla\cdot\vec F$.</p>
+<p><strong>The norm, and the definition of the d'Alembertian.</strong> The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:</p>
+<p>$$
+\Box=\langle\tilde\nabla\rangle_{\natural}=\langle\tilde\nabla,\tilde\nabla\rangle_{\natural}
+=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})
+=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q .
+$$</p>
+<p><strong>This is the definition of the d'Alembertian</strong>: the quaternionic norm of the gradient, an operator on the whole algebra, one and the same before any sector is named (<em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>). The coordinates $Q_\mu$ are those of the algebra and are complex in general; the operator is $\partial^2/\partial Q_t^2+\Delta_Q$ whatever the sector, and it is <strong>scalar</strong>: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box\tilde{F}=\sum_\mu(\Box F_\mu)e_\mu$. It is the identity above, and not the $ict$ substitution, that fixes it, and <strong>no article of the series defines a second d'Alembertian</strong>; no mass-term sign is left to a local convention.</p>
+<p><strong>The special case of the material sector.</strong> On $\mathbb{M}_-$ the coordinates are the material ones, $Q_t=ict$ and $Q_k=q_k$, and the $ict$ substitution flips the sign of the time second derivative, $\partial^2/\partial Q_t^2=-c^{-2}\,\partial^2/\partial t^2$, so the same operator reads</p>
+<p>$$
+\Box\big|_{\mathbb{M}_-}=\frac{\partial^2}{\partial Q_t^2}+\Delta=\Delta-c^{-2}\,\frac{\partial^2}{\partial t^2},
+$$</p>
+<p>a plus on the spatial part and a minus on the time part. On $\mathbb{M}_-$, where the series does its work, this reading is the <strong>series convention</strong>, used by the Klein–Gordon article, the Dirac article, the dedicated article <em>The Biquaternion D'Alembertian and Its Green's Functions</em>, and the great majority of the series. <strong>The $ict$ substitution is a statement about the material sector, not about the operator</strong>, which in every case is $\partial^2/\partial Q_t^2+\Delta_Q$; its signature is not a property of the operator but of the <strong>slice</strong> it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. The operator is one, and every article writes it the same way.</p>
+<h3 id="the-hermitian-product-its-form-and-its-norm">The Hermitian Product, Its Form and Its Norm</h3>
+<p><strong>The product.</strong> The general plain sesquilinear product is the third of the four of §<em>The Twelve Products and Their Names</em>; it is the plain product applied to the <strong>conjugated</strong> field $\tilde F^{*}=\bar F_te_t-\overline{\vec F}$, so that on the gradient it is $\tilde\nabla\tilde F^{*}$, conjugate-linear in the field while the first slot stays $\mathbb{C}$-linear,</p>
+<p>$$
+\tilde\nabla\tilde F^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}+\nabla\bar F_t-\nabla\times\overline{\vec F} .
+$$</p>
+<p><strong>The symmetric and antisymmetric parts.</strong> Under the conjugate transpose the half-sum is central and is the Hermitian form itself,</p>
+<p>$$
+\tilde\nabla\bullet_{*}\tilde F=\mathrm{Sc}(\tilde\nabla\tilde F^{*})=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t+(\nabla,\overline{\vec F})\Bigr]e_t=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F}\Bigr)e_t ,
+$$</p>
+<p>and the half-difference is the vector part,</p>
+<p>$$
+\tilde\nabla\wedge_{*}\tilde F=\mathrm{Vect}(\tilde\nabla\tilde F^{*})=-\frac{\partial}{\partial Q_t}\overline{\vec F}+\bar F_t\nabla-\nabla\times\overline{\vec F}=-\frac{\partial}{\partial Q_t}\overline{\vec F}+\nabla\bar F_t-\nabla\times\overline{\vec F} .
+$$</p>
+<p><strong>The form.</strong> The <strong>Hermitian form</strong> is the scalar part of that product read in two arguments,</p>
+<p>$$
+\langle\tilde\nabla,\tilde F\rangle_{*}=\mathrm{Sc}(\tilde\nabla\tilde F^{*})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial Q_\mu}\bar F_\mu=\frac{\partial}{\partial Q_t}\bar F_t+\nabla\cdot\overline{\vec F} ,
+$$</p>
+<p>a scalar, the <strong>contraction</strong> of the derivative with the <strong>conjugated</strong> field in the sign vector $\varepsilon$. Taken on the scalar field it gives the <strong>kinetic density</strong>, the scalar part of the product of the two conjugated gradients,</p>
+<p>$$
+\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial\Phi^{*}}{\partial Q_\mu}\frac{\partial\Phi}{\partial Q_\mu} ,
+$$</p>
+<p>in which the conjugate stands on the first factor and no absolute value is taken; the two time derivatives are imaginary on the material sector, so that scalar part is $-c^{-2}\lvert\partial\phi/\partial t\rvert^2+\lvert\nabla\phi\rvert^2$, and the kinetic term the series writes is</p>
+<p>$$
+\mathcal L_{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\bigr]=\frac{1}{c^2}\Bigl|\frac{\partial\phi}{\partial t}\Bigr|^2-\lvert\nabla\phi\rvert^2 ,
+$$</p>
+<p>the kinetic density of the Klein–Gordon article (<em>Hamiltonian Field Theory in Biquaternionic Form</em>). <strong>On the material sector</strong> the form itself is $-\frac{i}{c}\frac{\partial\bar F_t}{\partial t}+\nabla\cdot\overline{\vec F}$.</p>
+<p><strong>The norm.</strong> The norm is defined with the form, as that form at its two equal arguments. By §<em>The Gradient</em>, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and</p>
+<p>$$
+\langle\tilde\nabla,\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{*}=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=\Box ,
+$$</p>
+<p>so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The <strong>Hermitian form is the one positive-definite form of the four</strong>, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert_E$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. <strong>On the material sector</strong> it is the same operator, $\Box|_{\mathbb{M}_-}=\Delta-c^{-2}\,\partial^2/\partial t^2$.</p>
+<h3 id="the-krein-product-its-form-and-its-norm">The Krein Product, Its Form and Its Norm</h3>
+<p><strong>The product.</strong> The general quaternionic sesquilinear product is the fourth of the four of §<em>The Twelve Products and Their Names</em>; it is the conjugate derivative applied to the conjugated field, $\tilde\nabla^{\natural}\tilde F^{*}$, the companion of the quaternionic bilinear product in the second slot,</p>
+<p>$$
+\tilde\nabla^{\natural}\tilde F^{*}=\Bigl(\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F}\Bigr)e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\nabla\bar F_t+\nabla\times\overline{\vec F} .
+$$</p>
+<p><strong>The symmetric and antisymmetric parts.</strong> Under the conjugate transpose the half-sum is</p>
+<p>$$
+\tilde\nabla\bullet_{\natural*}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F^{*}+\tilde F^{*}\tilde\nabla^{\natural}\bigr)=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t-(\nabla,\overline{\vec F})\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\bar F_t\nabla=\Bigl[\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F}\Bigr]e_t-\frac{\partial}{\partial Q_t}\overline{\vec F}-\nabla\bar F_t ,
+$$</p>
+<p>whose scalar part is the Krein form, and the half-difference is the curl of the conjugated field,</p>
+<p>$$
+\tilde\nabla\wedge_{\natural*}\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}\tilde F^{*}-\tilde F^{*}\tilde\nabla^{\natural}\bigr)=\tfrac12\bigl(\nabla\times\overline{\vec F}+\nabla\times\overline{\vec F}\bigr)=\nabla\times\overline{\vec F} ,
+$$</p>
+<p>a pure vector.</p>
+<p><strong>The form.</strong> The <strong>Krein form</strong> is the scalar part of that product read in two arguments,</p>
+<p>$$
+\langle\tilde\nabla,\tilde F\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde F^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial Q_\mu}\bar F_\mu=\frac{\partial}{\partial Q_t}\bar F_t-\nabla\cdot\overline{\vec F} ,
+$$</p>
+<p>a scalar, the <strong>contraction</strong> of the conjugate derivative with the conjugated field in the $ict$ metric. <strong>On the material sector</strong> it is $-\frac{i}{c}\frac{\partial\bar F_t}{\partial t}-\nabla\cdot\overline{\vec F}$.</p>
+<p><strong>The norm.</strong> The norm is defined with the form, as that form at its two equal arguments; on the gradient, since $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (§<em>The Gradient</em>),</p>
+<p>$$
+\langle\tilde\nabla,\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial Q_\mu^2}=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q ,
+$$</p>
+<p>so the Krein norm of the gradient <strong>coincides with the plain bilinear norm</strong>. It is the indefinite partner of the Hermitian form, and on the elements it is the form of signature $(1,3)$ whose diagonal is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, and negative on a nonzero element, so it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these subsections. <strong>On the material sector</strong> it is $-c^{-2}\frac{\partial^2}{\partial t^2}-\Delta$.</p>
+<p><strong>A contraction is a form, never an index.</strong> The metric of the series is the sign vector $\varepsilon$ inside the product, so no index is raised and none is lowered. Where a text with covariant indices contracts a derivative with a field through a raised and a lowered index, the series writes the quaternionic form $\langle\tilde\nabla,\tilde F\rangle_{\natural}$; where it contracts two derivatives, the series writes the quaternionic norm $\langle\tilde\nabla\rangle_{\natural}=\Box$; and where it moves an index through a metric, the series writes the element $\tilde F$ itself, the metric being the sign vector inside the product.</p>
+<h2 id="the-subscripts">The Subscripts</h2>
+<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.</p>
+<p><strong>A subscript is never a partial derivative.</strong> The subscript marks a component or a label, a partial derivative is written with $\partial$, and the rule is fixed in §<em>Conventions for Derivation</em>.</p>
+<p><strong>A coefficient carries a letter index and an element a number.</strong> In the quaternionic layers a coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$, and an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. In the commutative layers, which have no direction, both the element and its coefficients carry the number of the element, $Q_1 = q_1 + iq'_1$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
+<p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the units, the roots, the idempotents and the nilpotents as well as the general elements: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
+<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.</p>
+<p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$; the two complex coordinates of the reduced biquaternion take the same signs, $Q_+$ and $Q_-$, and the element they build is $Q_\pm$.</p>
+<p>The reduced biquaternion carries in addition the two <strong>idempotent coordinates</strong>, written with the doubled sign, $Q_{++}$ and $Q_{--}$: they are $Q_{++}=Q_+ + Q_-$ and $Q_{--}=Q_+ - Q_-$, and the element is $Q_\pm = Q_{++}\Pi_+ + Q_{--}\Pi_-$. The doubling keeps the idempotent coordinates distinct from the basis coordinates $Q_+$ and $Q_-$, which remain the coefficients of $1$ and of $j$. A labelled element inserts its label before the doubled sign, $Q_{k++}$ and $Q_{k--}$, so that $Q_{\pm,k}=Q_{k++}\Pi_+ + Q_{k--}\Pi_-$, while its basis coordinates keep their index order, $Q_{k+},Q_{k-}$ or $Q_{+,k},Q_{-,k}$; the single element is the unlabelled case. A generic member of the pair is $\Pi_i$ with $i\in\{+,-\}$.</p>
+<p>The forms a subscript takes are these.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Borrowed meaning</th>
-<th>Glyph</th>
-<th>What keeps it apart</th>
+<th>The subscript is</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the unitary group of a form</td>
-<td>$U(n)$, $U(H)$, $U(A)$, $U(\mathbb B)$</td>
-<td>the argument is a number, a Hilbert space or an algebra, never a unit element</td>
+<td>a digit</td>
+<td>$\tilde Q_1$, $\tilde Q_2$</td>
 </tr>
 <tr>
-<td>the universal enveloping algebra</td>
-<td>$U(\mathrm G)$</td>
-<td>the argument is a Lie algebra — the upright roman $\mathrm G$ in the enveloping articles, the fraktur $\mathfrak g$ where the article's Lie algebra is fraktur — and the unitary group never takes a Lie algebra</td>
+<td>a letter</td>
+<td>$Q_k$, $Q_\mu$</td>
 </tr>
 <tr>
-<td>the group of units of a ring</td>
-<td>$R^{\times}$</td>
-<td>the corpus writes the group of units with the cross, never as $U(R)$</td>
+<td>two indices</td>
+<td>$Q_{ab}$</td>
 </tr>
 <tr>
-<td>an open set or a neighbourhood; a space and its quotient</td>
-<td>$U$; $V$, $V/U$</td>
-<td>local to the topological and functional-analysis articles, which carry no unit element</td>
+<td>a sign</td>
+<td>$\tilde\Pi_\pm$</td>
 </tr>
 <tr>
-<td>a one-parameter group of operators — the flow, Koopman or geodesic-flow operator</td>
-<td>$U_t$, $U_tf=f\circ\varphi_t$</td>
-<td>local to the flow-operator articles, which carry no unit element; the same glyph as the coordinate $U_t$ of a unit element, told apart by the article</td>
+<td>an upright word</td>
+<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$</td>
 </tr>
 <tr>
-<td>a horocycle, the unipotent one-parameter subgroup of the ergodic articles; the inner unitaries of a modular flow</td>
-<td>$u_t$, $u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix}$; $\sigma_t=\mathrm{Ad}(u_t)$</td>
-<td>local to the ergodic-theory, homogeneous-dynamics, equidistribution and Ratner articles and to the modular-flow article, none of which carries a unit element of the layers</td>
-</tr>
-<tr>
-<td>the quadratic representation of a Jordan algebra</td>
-<td>$U_x$, $U_x(y)=xyx$</td>
-<td>local to the Jordan articles, which carry no unit element of the layers</td>
-</tr>
-<tr>
-<td>the dual element of a pairing, or its coefficients</td>
-<td>$u$, $\langle f,u\rangle=\sum_x f(x)u_x$</td>
-<td>local to the operators-on-a-topological-group and operators-on-a-topological-ring articles</td>
-</tr>
-<tr>
-<td>a family of sets, or a named quantity kept off the element $U$: an open cover, a filter or ultrafilter, a uniformity; the set of unit elements of a layer</td>
-<td>$\mathcal U$</td>
-<td>the calligraphic script separates it from the upright $U$, and the meaning is the article's own</td>
-</tr>
-<tr>
-<td>an internal energy</td>
-<td>$U$</td>
-<td>local to the thermodynamics articles, where it is a functional of the state</td>
-</tr>
-<tr>
-<td>a velocity, a speed, a four-velocity</td>
-<td>$v$ for a velocity and $V$ for a four-velocity: $\vec v$, $v_i$, $v=\lvert\vec v\rvert$, the four-velocity $\tilde V$, the unit four-velocity $\tilde v=\tilde V/c$</td>
-<td><strong>neither $u$ nor $U$ is ever a velocity</strong>, in any article</td>
-</tr>
-<tr>
-<td>an up quark, an atomic mass unit</td>
-<td>the upright roman $\mathrm u$</td>
-<td>the upright roman is a particle or a unit, the italic is an element</td>
-</tr>
-<tr>
-<td>an unknown function or a wave field</td>
-<td>$u(x,t)$</td>
-<td>local to the analysis and partial-differential-equation articles</td>
-</tr>
-<tr>
-<td>a uniform law</td>
-<td>$\mathrm{Unif}(a,b)$</td>
-<td>the corpus names the law and never writes a bare $U$ for it</td>
+<td>a grouped expression</td>
+<td>$Q_{n+1}$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Two of the rows are rules of the corpus itself and not borrowings.</strong> A <strong>velocity</strong> is written $v$ and distinguished by a subscript — $v_i$ for a component, $v_x$ for the component along an axis, $v=\lvert\vec v\rvert$ for a speed, $v^{\mu}$ for the components of a four-velocity, the four-velocity itself being the element $\tilde V$ and a four-velocity reduced to unit norm being $\tilde v=\tilde V/c$ — and neither letter of the unit element, $u$ or $U$, is allowed against any velocity. <strong>It is allowed to add subscripts when several velocities are used</strong>, as for the other kinds of element: $\tilde V_1,\tilde V_2$ for two four-velocities, $\tilde v_\mu$ for a unit four-velocity, $\vec v_b$ for a boost velocity. An <strong>up quark</strong> and an <strong>atomic mass unit</strong> are written in the upright roman, $\mathrm u$, against the italic $u$ of an element. The other rows are borrowings the corpus accepts and keeps out of the algebra layer by an argument or by the article; a borrowing never displaces the reservation inside the layers.</p>
-<h2 id="conventions-of-the-corpus-itself">Conventions of the Corpus Itself</h2>
-<p>The corpus has a small number of working conventions that are not mathematical.</p>
-<p><strong>The menus.</strong> Every article is registered in exactly one menu: <code>maths.md</code> for the mathematical corpus and <code>physics.md</code> for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the two articles that describe the corpus rather than belonging to one of them — <em>Introduction to Mathematics</em> and this one — placed outside the parts. An entry that begins with <code>+</code> is a <strong>planned</strong> article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.</p>
-<p><strong>The groups inside a category.</strong> A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it. The group <code>- Theory</code> holds the structure itself, read with the product of its elements. The group <code>- Operator Theory</code> holds the operators on that structure — the left and right multiplications, the derivations, the automorphisms, the actions and the sandwich — and adds an operator layer and nothing else. The group <code>- * Theory</code> holds the same structure read with an involution on its <strong>elements</strong>. The group <code>- * Operator Theory</code> holds the operators built from the <strong>involution</strong>, of which the adjoint is the archetype.</p>
-<p><strong>The two involutions.</strong> The star names the involutive layer in both groups, and the layer of the elements and the layer of the operators are two structures and not one: the involution of <code>- * Theory</code> sits on the elements and the adjoint of <code>- * Operator Theory</code> sits on the operators. They need not coincide: an involution on the elements does not by itself produce an adjoint on the operators, and two adjoints of the same structure may differ — the transpose and the Hermitian adjoint of a matrix are both adjoints, taken with respect to different pairings. When the two do agree the representation is a <code>*</code>-representation, and the agreement is proved in the article, never assumed by the menu.</p>
-<p><strong>The order and the fill rule.</strong> The four groups are placed in the order above, and the group <code>- Applications</code>, which holds the concrete instances of the structure, closes the category. The groups <code>- Operator Theory</code> and <code>- * Operator Theory</code> are present in a category whenever it has an operator layer, and the group <code>- * Theory</code> is present in every category of Parts I to IV, whether or not it yet holds an article.</p>
-<p><strong>The category names and numbers.</strong> The menu numbers its categories, and an article elsewhere in the corpus may address one by number rather than by name: <em>category n</em> means the n-th category of the mathematical menu, read in order. This article refers to categories by <strong>name</strong> throughout, because the names are the stable thing and the numbers shift whenever a category is inserted or split. A reader who meets a bare number in another article can resolve it in the menu.</p>
-<p><strong>The article files.</strong> The corpus is split into two collections, each with its own folder: a mathematical article is a file <code>articles_maths/&lt;slug&gt;.md</code> and a physical article is a file <code>articles_physics/&lt;slug&gt;.md</code>, where the slug is the title in lower case with hyphens in place of spaces and punctuation. The folder and the menu agree — an article lies in the folder whose menu lists it, and no article lies in both.</p>
-<p><strong>The article skeleton.</strong> Every article opens with its title as the first heading, followed by an <em>Introduction</em> that states what the article does and what it assumes, then the thematic sections, and closes with three sections in this order: <em>Summary</em>, <em>Summary of Notation</em>, and <em>Further Reading</em>. The introduction states the article's boundaries — what it deliberately does not cover, and where the reader will find it.</p>
-<p><strong>Cross-references and boundaries.</strong> A concept is introduced once, in the category that owns it, and referred to afterwards rather than restated. Articles do not duplicate the content of other articles; they cite them. Every article that touches a structure belonging to a later part states the deferral explicitly, which is the mechanism by which Rule 1 is enforced.</p>
-<p><strong>The word "interval".</strong> Two different objects share the word, and the corpus keeps them apart. In the mathematical corpus an <strong>interval</strong> is an order-theoretic or lattice object: a convex subset of a linearly ordered set, the interval $[a,b]=\{x:a\le x\le b\}$ of a lattice or of a poset of effects, defined by the order and not by a form. In the physical corpus the <strong>interval</strong> is the value of the quadratic form, $\langle\tilde Q\rangle_{\natural}=(ic\,t)^2+\vec x^2=\vec x^2-c^2t^2$ on the material sector, defined by the form and not by an order. A statement about the sign of the interval is therefore never a statement about a lattice interval, and a lattice interval is never the line element; where the two senses could meet, the corpus writes <em>the form value</em> or <em>the quadratic form</em> for the physical one.</p>
 <h2 id="the-superscripts">The Superscripts</h2>
 <p>Two superscript tokens run beside the marks of the elements and the marks of the conjugations, and neither is to be read for the other:</p>
 <div class="table-scroll"><table>
@@ -849,71 +830,53 @@ $$</p>
 <p>The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $p$, the position $x$, the spin $S$ and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no superscript, because each is an element acting by multiplication or a map with a glyph of its own.</p>
 <p><strong>It combines with the dagger, the mark first.</strong> The dagger is the general adjoint (§<em>The Conjugations and the Adjoint</em>). Where both marks fall on one glyph the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$; the dagger alone never marks a glyph as an operator, and the superscript alone never asserts self-adjointness.</p>
 <p><strong>The opposite algebra carries a different token.</strong> The <strong>opposite algebra</strong>, whose multiplication is reversed, $a\cdot b=ba$, carries the superscript $\mathrm{opp}$ — $A^{\mathrm{opp}}$, $\mathbb{B}^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$ — and it is the <strong>algebra name</strong> that takes the mark; the Fock token $\mathrm{fop}$ marks a Fock-operator glyph. The two meanings are separated by the token itself and not by context.</p>
-<h2 id="conventions-for-derivation">Conventions for Derivation</h2>
-<p>In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; all partial derivatives are written explicitly with $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative of a function with respect to a coordinate is written $\partial_xv$, $\partial_tv$ or $\partial_\mu v$, and the calculus of variations and the partial-differential-equation articles are written with $\partial_uL$ and $\partial_pL$ where a PDE text writes $L_u$ and $L_p$.</p>
-<p><strong>These studies do not use the covariant index conventions: subscripts are not coordinate indices or derivatives, derivatives are written with explicit operators, and structural information is carried by the algebra of the objects themselves.</strong></p>
-<p><strong>The prime.</strong> No derivative is contracted to a mark on the letter: every derivative is written with an explicit operator and its variable is named where it is used, so that one glyph never has to stand for different variables in different places. The prime is reserved for the derivative with respect to the single argument of a function of one variable, and a second derivative is written with $\partial$, never with a repeated subscript.</p>
-<h3 id="the-gradient-and-the-dalembertian">The Gradient and the d'Alembertian</h3>
-<p>The two derivative operators of the corpus carry a glyph of their own and are fixed here and in no other place; every other derivative is written with $\partial$.</p>
-<p>The <strong>gradient</strong> of a scalar is $\nabla$. On an algebra-valued field the coordinate derivative is written $\partial_\mu$, short for $\partial/\partial Q_\mu$, and the biquaternionic gradient is the element-valued operator</p>
-<p>$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
-$$</p>
-<p>whose tilde marks the operator and not a value (<em>Conventions in the Biquaternion Universe</em>, §<em>The Gradient and the d'Alembertian</em>; <em>Biquaternion Analysis</em>). The <strong>Laplacian</strong> in the coefficient coordinates is $\Delta_Q=\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$, and on the material sector it is the physical $\Delta=\partial_x^2+\partial_y^2+\partial_z^2$. The <strong>d'Alembertian</strong> is the single second-order wave operator of the corpus,</p>
-<p>$$
-\Box=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}
-$$</p>
-<p>on the biquaternion algebra, read on the material sector as $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. No article defines a second one.</p>
-<h2 id="the-subscripts">The Subscripts</h2>
-<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_t$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.</p>
-<p><strong>A subscript is never a partial derivative.</strong> The subscript marks a component or a label, a derivative is written with $\partial$, and the rule is fixed in §<em>Conventions for Derivation</em>.</p>
-<p><strong>A coefficient carries a letter index and an element a number.</strong> A coefficient is indexed by the direction it multiplies, $Q_x$ and $q_x$; an element that is counted carries a number on its tilde, $\tilde Q_1, \tilde Q_2$. The two indices are of different kinds, a letter against a number, so a coefficient index is never read as the number of an element, nor the reverse.</p>
-<p><strong>It is allowed to add subscripts when several elements of the same kind are used.</strong> The permission covers the general elements, the units, the roots, the idempotents and the nilpotents alike: wherever a statement carries more than one element of one kind, the occurrences are told apart by a subscript.</p>
-<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $\tilde Q_1, \tilde Q_2, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.</p>
-<p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$.</p>
-<p>The forms a subscript takes are these.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>The subscript is</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>a digit</td>
-<td>$\tilde Q_1$, $\tilde Q_2$</td>
-</tr>
-<tr>
-<td>a letter</td>
-<td>$Q_k$, $Q_\mu$</td>
-</tr>
-<tr>
-<td>two indices</td>
-<td>$Q_{ab}$</td>
-</tr>
-<tr>
-<td>a sign</td>
-<td>$Q_\pm$</td>
-</tr>
-<tr>
-<td>an upright word</td>
-<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$</td>
-</tr>
-<tr>
-<td>a grouped expression</td>
-<td>$Q_{n+1}$</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="conventions-of-the-corpus-itself">Conventions of the Corpus Itself</h2>
+<p>The corpus has a small number of working conventions that are not mathematical.</p>
+<p><strong>The menus.</strong> Every article is registered in exactly one menu: <code>maths.md</code> for the mathematical corpus and <code>physics.md</code> for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with the two articles that describe the corpus rather than belonging to one of them — <em>Introduction to Mathematics</em> and this one — placed outside the parts. An entry that begins with <code>+</code> is a <strong>planned</strong> article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.</p>
+<p><strong>The groups inside a category.</strong> A category of Parts I to IV lists its articles in four groups, each of which adds one thing to the group before it. The group <code>- Theory</code> holds the structure itself, read with the product of its elements. The group <code>- Operator Theory</code> holds the operators on that structure — the left and right multiplications, the derivations, the automorphisms, the actions and the sandwich — and adds an operator layer and nothing else. The group <code>- * Theory</code> holds the same structure read with an involution on its <strong>elements</strong>. The group <code>- * Operator Theory</code> holds the operators built from the <strong>involution</strong>, of which the adjoint is the archetype.</p>
+<p><strong>The two involutions.</strong> The star names the involutive layer in both groups, and the layer of the elements and the layer of the operators are two structures and not one: the involution of <code>- * Theory</code> sits on the elements and the adjoint of <code>- * Operator Theory</code> sits on the operators. They need not coincide: an involution on the elements does not by itself produce an adjoint on the operators, and two adjoints of the same structure may differ — the transpose and the Hermitian adjoint of a matrix are both adjoints, taken with respect to different pairings. When the two do agree the representation is a <code>*</code>-representation, and the agreement is proved in the article, never assumed by the menu.</p>
+<p><strong>The order and the fill rule.</strong> The four groups are placed in the order above, and the group <code>- Applications</code>, which holds the concrete instances of the structure, closes the category. The groups <code>- Operator Theory</code> and <code>- * Operator Theory</code> are present in a category whenever it has an operator layer, and the group <code>- * Theory</code> is present in every category of Parts I to IV, whether or not it yet holds an article.</p>
+<p><strong>The category names and numbers.</strong> The menu numbers its categories, and an article elsewhere in the corpus may address one by number rather than by name: <em>category n</em> means the n-th category of the mathematical menu, read in order. This article refers to categories by <strong>name</strong> throughout, because the names are the stable thing and the numbers shift whenever a category is inserted or split. A reader who meets a bare number in another article can resolve it in the menu.</p>
+<p><strong>The article files.</strong> The corpus is split into two collections, each with its own folder: a mathematical article is a file <code>articles_maths/&lt;slug&gt;.md</code> and a physical article is a file <code>articles_physics/&lt;slug&gt;.md</code>, where the slug is the title in lower case with hyphens in place of spaces and punctuation. The folder and the menu agree — an article lies in the folder whose menu lists it, and no article lies in both.</p>
+<p><strong>The article skeleton.</strong> Every article opens with its title as the first heading, followed by an <em>Introduction</em> that states what the article does and what it assumes, then the thematic sections, and closes with three sections in this order: <em>Summary</em>, <em>Summary of Notation</em>, and <em>Further Reading</em>. The introduction states the article's boundaries — what it deliberately does not cover, and where the reader will find it. This article is the one exception: its notation is merged into the Summary and its table closes the article.</p>
+<p><strong>Cross-references and boundaries.</strong> A concept is introduced once, in the category that owns it, and referred to afterwards rather than restated. Articles do not duplicate the content of other articles; they cite them. Every article that touches a structure belonging to a later part states the deferral explicitly, which is the mechanism by which Rule 1 is enforced.</p>
+<p><strong>The word "interval".</strong> Two different objects share the word, and the corpus keeps them apart. In the mathematical corpus an <strong>interval</strong> is an order-theoretic or lattice object: a convex subset of a linearly ordered set, the interval $[a,b]=\{x:a\le x\le b\}$ of a lattice or of a poset of effects, defined by the order and not by a form. In the physical corpus the <strong>interval</strong> is the value of the quadratic form, $\langle\tilde Q\rangle_{\natural}=(ic\,t)^2+x^2+y^2+z^2=x^2+y^2+z^2-c^2t^2$ on the material sector, defined by the form and not by an order. A statement about the sign of the interval is therefore never a statement about a lattice interval, and a lattice interval is never the line element; where the two senses could meet, the corpus writes <em>the form value</em> or <em>the quadratic form</em> for the physical one.</p>
+<h2 id="latex-and-typesetting">LaTeX and Typesetting</h2>
+<p>The articles are rendered with KaTeX on the page, and the following rules are observed in the source.</p>
+<ul>
+<li>Inline mathematics is written between single dollars, and display mathematics between double dollars on lines of their own.</li>
+<li>Inline mathematics never spans a line break. If a formula is too long, it is displayed.</li>
+<li>Display mathematics inside a list is indented four spaces.</li>
+<li>A prime may follow a subscript as well as precede it: the forms <code>q'_t</code> and <code>q_t'</code> are both admitted, and an article keeps one order throughout.</li>
+<li>Tables are Markdown tables. A LaTeX array is never used for a table.</li>
+<li>Every heading that introduces a comparison or a classification is a real <code>###</code> heading, and the objects are defined before they are tabulated.</li>
+<li><strong>Bold marks the result.</strong> In a Remark that states a verdict, the clause carrying the outcome is
+  set in bold, <code>**...**</code>, the object of the sentence staying in plain roman: <em>the subspace </em><em>is a
+  commutative Jordan algebra over $\mathbb{R}$ of degree two</em>**. A statement already displayed as a
+  Theorem, a Proposition or a Proof is not bolded; the convention applies to the prose of a Remark and
+  to the lead sentence of a section that states an outcome.</li>
+<li>The macros <code>d^3</code>/dt^3  and <code>\slashed</code> are available. The characters <code>|</code>, <code>{</code>, <code>}</code>, <code>&lt;</code> and <code>&gt;</code> inside mathematics need no escaping.</li>
+<li>A malformed formula is rendered in red on the page rather than reported as an error, so mathematics is checked by eye and not by the absence of a warning.</li>
+</ul>
 <h2 id="summary">Summary</h2>
-<p>The conventions are of two kinds: the mathematical notation, and the working conventions of the corpus.</p>
+<p>The conventions are of two kinds: the mathematical notation, and the working conventions of the corpus. The notation is collected in a single table, at §<em>Notational Conventions</em> at the end of the article, which lists the glyphs of this article and of the articles that cite it.</p>
 <p>A generic element of a number system is written as a linear combination of the basis with its coefficients in
 the scalar sector of the system, the biquaternion element being $\tilde Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$
-with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $a, b, c$ for the rationals and the reals, $A = a + ia'$, $B = b + ib'$ for the commutative two-parameter systems, and $T = A + Bj$ for the reduced biquaternions, whose two coordinates are complex and whose second unit is the hyperbolic $j$. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a <strong>natural sign</strong>. The involution of the base extends to the coefficients and is written with a <strong>bar</strong>. Their composite is the Hermitian anti-automorphism, written with a <strong>star</strong>; its negative is the <strong>anti-Hermitian</strong> conjugation, written <strong>flat</strong>; and the <strong>dagger</strong> is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. The corpus writes a <strong>form</strong> with two arguments and its <strong>algebraic norm</strong> with one, the generic pair $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.</p>
-<p>On the number systems the <strong>case</strong> records whether the commuting scalar sector is larger than the reals and the <strong>tilde</strong> records the presence of the quaternionic factor, and the two are read independently: $a$ is real, $A$ complex or split-complex or dual, $T$ reduced biquaternion — upper case and no tilde, with two complex coordinates — $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion. A <strong>pure element</strong> — one with no scalar part — drops the tilde and carries the arrow, $\vec q$ in the quaternion and split-quaternion layers and $\vec Q$ in the biquaternion and split-biquaternion ones. The <strong>idempotents</strong>, the <strong>nilpotents</strong> and the <strong>roots</strong> carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, and $\Pi$ in the complex, split-complex and dual layers where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer and $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer; $\tilde\Xi$ is a root of $1$ of the biquaternion and split-biquaternion layers and $\tilde\xi$ the same in the quaternion and split-quaternion layers; while $\tilde Q$ is the generic element of a statement that holds for every element. The upper-case tilde carries four roles — the idempotent, the nilpotent, the root and the generic element — and the split is deliberate.</p>
-<p>The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading <code>+</code> marks a planned article. The four groups of a category — Theory, Operator Theory, <code>*</code> Theory and <code>*</code> Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group <code>Applications</code> closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of <em>Introduction to Mathematics</em> is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading.</p>
-<h2 id="summary-of-notation">Summary of Notation</h2>
+with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter of its own: $\alpha, \beta$ for the Booleans, $n, m$ for the naturals and the integers, $q, q_1, q_2$ for the rationals and the reals, with a rational in lowest terms written $r/s$ so that $q$ is never a numerator or a denominator, $Q = q + iq'$ for the commutative two-parameter systems, and $Q_\pm = Q_+ + jQ_-$ for the reduced biquaternions, whose two coordinates are complex and whose second unit is the hyperbolic $j$, with idempotent coordinates $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$ and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The notation is fixed here above all for the conjugations, which is where the corpus has the most marks to keep apart, and for the number systems, whose glyphs carry two bits each. An algebra with a degree-2 form carries an intrinsic conjugate, the map that negates its vectors and fixes its scalars; it is written with a <strong>natural sign</strong>. The involution of the base extends to the coefficients and is written with a <strong>bar</strong>. Their composite is the Hermitian anti-automorphism, written with a <strong>star</strong>; its negative is the <strong>anti-Hermitian</strong> conjugation, written <strong>flat</strong>; and the <strong>dagger</strong> is the adjoint of an operator, written on operators and never on the elements. The star and the bar commute, $^{*} = \bar{\cdot}\circ{}^{\natural} = {}^{\natural}\circ\bar{\cdot}$, the flat is $\flat = -{}^{*}$, and $\{\mathrm{id}, \bar{\cdot}, {}^{\natural}, {}^{*}\}$ is a Klein four-group while the flat stands outside it. The corpus writes a <strong>form</strong> with two arguments and its <strong>algebraic norm</strong> with one, the generic pair $\mathrm{Form}(\tilde Q_1,\tilde Q_2)$ and $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$. On a base whose involution is the identity the bar is the identity map and the star coincides with the natural sign.</p>
+<p>On the number systems the <strong>case</strong> records whether the commuting scalar sector is larger than the reals and the <strong>tilde</strong> records the presence of the quaternionic factor, and the two are read independently: $q$ is real, $Q$ complex or split-complex or dual, $Q_\pm$ reduced biquaternion — upper case and no tilde, with two complex coordinates — $\tilde q$ quaternion or split-quaternion, $\tilde Q$ biquaternion or split-biquaternion. A <strong>pure element</strong> — one with no scalar part — drops the tilde and carries the arrow, $\vec q$ in the quaternion and split-quaternion layers and $\vec Q$ in the biquaternion and split-biquaternion ones. The <strong>idempotents</strong>, the <strong>nilpotents</strong> and the <strong>roots</strong> carry symbols of their own, split by the same case rule: $\tilde\Pi$ is an idempotent or a pure state of the biquaternion and split-biquaternion layers, and the minimal left ideal it generates, $\tilde\pi$ the same in the quaternion and split-quaternion layers, $\Pi$ in the complex, split-complex, dual and reduced biquaternion layers, where no tilde is written; $\tilde\nu$ is a nilpotent of the quaternion or split-quaternion layer, $\tilde\Upsilon$ a nilpotent of the biquaternion or split-biquaternion layer, and $\Upsilon$ the same in the complex, split-complex, dual and reduced biquaternion layers; $\tilde\Xi$ is a root of $1$ of the biquaternion and split-biquaternion layers, $\tilde\xi$ the same in the quaternion and split-quaternion layers, and $\Xi$ the same in the complex, split-complex, dual and reduced biquaternion layers, the reduced layer having the four roots $\pm1$ and $\pm j$; while $\tilde Q$ is the generic element of a statement that holds for every element. The upper-case tilde carries four roles — the idempotent, the nilpotent, the root and the generic element — and the split is deliberate.</p>
+<p>The working conventions are the corpus's own. Every article is registered in exactly one menu, with a comment that outlines it, and a leading <code>+</code> marks a planned article. The four groups of a category — Theory, Operator Theory, <code>*</code> Theory and <code>*</code> Operator Theory — each add one thing to the group before, the star naming the involutive layer on the elements and then on the operators, so that the last group holds the operators built from the involution, and the group <code>Applications</code> closes the category. A concept is introduced once, in the category that owns it, and is cited afterwards rather than restated; every deferral to a later part is stated explicitly, which is how the ordering rule of <em>Introduction to Mathematics</em> is enforced. Each article opens with its title and an Introduction and closes with Summary, Summary of Notation and Further Reading; in this article the notation is merged into the Summary and its table is placed at the end.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853). The original formulation, and the source of the quaternion conjugation and its notation.</li>
+<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
+<li>James Cockle, "On a new imaginary in algebra", <em>Philosophical Magazine</em> <strong>34</strong> (1849) 37–47. The tessarines, the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ that the corpus records as the reduced biquaternions, and the earliest occurrence of the hyperbolic versor.</li>
+<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
+<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
+<li>Nicolas Bourbaki, <em>Éléments de mathématique</em> (Hermann, then Springer). The model for a notation fixed once and used without variation.</li>
+<li>Donald E. Knuth, <em>The TeXbook</em> (Addison-Wesley, 1984). The typographic conventions the source of the corpus follows.</li>
+</ul>
+<h2 id="notational-conventions">Notational Conventions</h2>
+<p>The conventions below are those used throughout the corpus.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -923,28 +886,36 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 </thead>
 <tbody>
 <tr>
-<td>$\bar{\cdot}$</td>
-<td>Complex conjugation: the involution of the base, extended to the element</td>
+<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}$</td>
+<td>The naturals, integers, rationals, reals and complex numbers</td>
 </tr>
 <tr>
-<td>${}^{\natural}$</td>
-<td>Quaternion conjugation: the intrinsic conjugate of the algebra</td>
+<td>$\mathbb{D}$</td>
+<td>The split-complex numbers, $\mathbb{R}[x]/(x^2-1)$</td>
 </tr>
 <tr>
-<td>${}^{*}$</td>
-<td>Hermitian conjugation, the composite of the bar and the natural sign</td>
+<td>$\mathbb{D}'$</td>
+<td>The dual numbers, $\mathbb{R}[x]/(x^2)$</td>
 </tr>
 <tr>
-<td>${}^{\flat} = -{}^{*}$</td>
-<td>Anti-Hermitian conjugation</td>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>The reduced biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, equivalently the tessarines or the double-complex numbers</td>
 </tr>
 <tr>
-<td>${}^{\dagger}$</td>
-<td>The general adjoint of an operator, of which the star is the instance in the positive definite form; written on operators and never on elements</td>
+<td>$\mathbb{H}$</td>
+<td>The real quaternions</td>
 </tr>
 <tr>
-<td>$\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{C}, \mathbb{D}, \mathbb{D}', \mathbb{H}, \mathbb{H}_{\mathrm{s}}, \mathbb{B}_{\mathrm{r}}, \mathbb{B}, \mathbb{H}_{\mathbb{D}}$</td>
-<td>The number systems of the corpus, in the order the corpus reaches them</td>
+<td>$\mathbb{H}_{\mathrm{s}}$</td>
+<td>The split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>The biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>The split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$</td>
 </tr>
 <tr>
 <td>Lower case, upper case</td>
@@ -959,68 +930,32 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 <td>The vector part of a named element and a pure element standing by itself — $\vec q$ or $\vec Q$ (§<em>Pure Elements and their Coefficients</em>)</td>
 </tr>
 <tr>
-<td>$\alpha, \beta$; $n, m$; $a, b, c$</td>
-<td>The generic elements of the Booleans, the naturals and the integers, and the rationals and the reals</td>
+<td>$\alpha, \beta$; $q, q_1, q_2$</td>
+<td>The generic elements of the Booleans, and of the rationals and the reals</td>
 </tr>
 <tr>
-<td>$A = a + ia'$, $B = b + ib'$</td>
-<td>The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime</td>
+<td>$r/s$</td>
+<td>A rational written as a fraction, with numerator $r \in \mathbb{Z}$ and denominator $s \in \mathbb{N}_{\geq 1}$; in lowest terms $\gcd(r,s) = 1$; the letter $q$ is never a numerator or a denominator</td>
 </tr>
 <tr>
-<td>$T = A + Bj$</td>
-<td>The generic element of the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, upper case with no tilde, its two coordinates $A = a + ia'$ and $B = b + ib'$ complex and its second unit the hyperbolic $j$, $j^{2} = +1$ and $ji = ij$, on the basis $1, i, j, ij$</td>
+<td>$n$, $m$</td>
+<td>The generic elements of the naturals and the integers, and the signature indices, the counts of positive and negative directions of a real form, as in $\mathrm{Cl}_{n,m}$ and $O(n,m)$; the $q$ of a signature $\mathrm{Cl}_{p,q}$ is an index too, not the element $q$</td>
 </tr>
 <tr>
-<td>$\tilde\Xi$</td>
-<td>A root of $1$ of the biquaternion or split-biquaternion layer</td>
+<td>$Q = q + iq'$</td>
+<td>The generic element of a commutative two-parameter system, with $j$ or $\varepsilon$ in place of $i$, and the imaginary coefficient carrying a prime; a second and a third are $Q_1$ and $Q_2$</td>
 </tr>
 <tr>
-<td>$\tilde\xi$</td>
-<td>A root of $1$ of the quaternion or split-quaternion layer</td>
+<td>$Q_\pm = Q_+ + jQ_-$</td>
+<td>The generic element of the reduced biquaternion algebra $\mathbb{B}_{\mathrm{r}}$, upper case with no tilde, its two coordinates $Q_+ = q_+ + iq'_+$ and $Q_- = q_- + iq'_-$ complex and its second unit the hyperbolic $j$, $j^{2} = +1$ and $ji = ij$, on the basis $1, i, j, ij$; its idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, with $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$</td>
 </tr>
 <tr>
-<td>$\Xi$</td>
-<td>A root of $1$ of the complex, split-complex or dual layer</td>
+<td>$\tilde q$</td>
+<td>The generic element of the quaternion or split-quaternion layer</td>
 </tr>
 <tr>
-<td>$\tilde\Pi$</td>
-<td>An idempotent or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal it generates</td>
-</tr>
-<tr>
-<td>$\tilde\pi$</td>
-<td>An idempotent of the quaternion or split-quaternion layer</td>
-</tr>
-<tr>
-<td>$\Pi$</td>
-<td>An idempotent of the complex, split-complex, dual or reduced biquaternion layer</td>
-</tr>
-<tr>
-<td>$\tilde\nu$</td>
-<td>A nilpotent of the quaternion or split-quaternion layer</td>
-</tr>
-<tr>
-<td>$\tilde\Upsilon$</td>
-<td>A nilpotent of the biquaternion or split-biquaternion layer</td>
-</tr>
-<tr>
-<td>$\tilde U$</td>
-<td>A unit element of the biquaternion or split-biquaternion layer, $\mathrm{Norm}(\tilde U)=e_t$; the norm is the one in view (§<em>The Unitary Convention</em>)</td>
-</tr>
-<tr>
-<td>$\vec U$</td>
-<td>A unit pure biquaternion, the pure case of $\tilde U$, of norm one</td>
-</tr>
-<tr>
-<td>$\tilde u$</td>
-<td>A unit element of the quaternion or split-quaternion layer, a unit quaternion, $Sp(1)$</td>
-</tr>
-<tr>
-<td>$\vec u$</td>
-<td>A unit pure quaternion, the pure case of $\tilde u$; the axis of a rotation</td>
-</tr>
-<tr>
-<td>$U$</td>
-<td>A unit element of the complex, split-complex, dual or reduced biquaternion layer</td>
+<td>$\tilde Q$</td>
+<td>The generic element of the biquaternion or split-biquaternion layer, and the generic element of a statement that holds for every element; a second and a third are $\tilde Q_1$ and $\tilde Q_2$</td>
 </tr>
 <tr>
 <td>$\vec q$</td>
@@ -1031,12 +966,116 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 <td>A pure element of the biquaternion or split-biquaternion layer</td>
 </tr>
 <tr>
-<td>$^{\mathrm{fop}}$</td>
-<td>A <strong>Fock operator</strong>, an operator on the Fock space and not an element of the algebra — $a^{\mathrm{fop}}$, $N^{\mathrm{fop}}$, $H^{\mathrm{fop}}$, $U^{\mathrm{fop}}$ (§<em>The Superscripts</em>). No other operator carries the mark. The opposite algebra uses the separate token $A^{\mathrm{opp}}$</td>
+<td>$G$; $R$; $k$, $F$; $V$; $M$; $A$</td>
+<td>A group; a ring; a field; a vector space; a module; an algebra</td>
 </tr>
 <tr>
-<td>$\tilde Q$</td>
-<td>The generic element of the algebra, in a statement that holds for every element; a second and a third are $\tilde Q_1$ and $\tilde Q_2$</td>
+<td>$\mathrm{G}, \mathrm{H}, \mathrm{SL}_n$</td>
+<td>Lie algebras</td>
+</tr>
+<tr>
+<td>$\mathrm{M}, \mathrm{P}$</td>
+<td>Ideals and prime ideals</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}(X), \operatorname{Aut}(X)$</td>
+<td>The symmetric group of a set; the automorphism group of a structure</td>
+</tr>
+<tr>
+<td>$\operatorname{End}(V), \operatorname{Der}(A), \operatorname{Inn}(A), \operatorname{Out}(A)$</td>
+<td>Endomorphisms, derivations, inner and outer automorphisms</td>
+</tr>
+<tr>
+<td>$GL, SL, PGL, O, SO, U, SU, Sp$</td>
+<td>The classical groups</td>
+</tr>
+<tr>
+<td>$T(V), S(V), \Lambda(V), Cl(V,\mathfrak{Q})$</td>
+<td>Tensor, symmetric, exterior and Clifford algebras</td>
+</tr>
+<tr>
+<td>$V^{\otimes n}, S^n V, \Lambda^n V$</td>
+<td>Tensor, symmetric and exterior powers</td>
+</tr>
+<tr>
+<td>$\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$</td>
+<td>Bilinear form, quadratic form, norm</td>
+</tr>
+<tr>
+<td>$\mathfrak{Q}$</td>
+<td>The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements</td>
+</tr>
+<tr>
+<td>$\mathcal{Q}$</td>
+<td>The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$</td>
+</tr>
+<tr>
+<td>$\bullet$</td>
+<td>The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four <strong>symmetric products</strong> of §<em>The Twelve Products and Their Names</em>; the circle $\circ$ is reserved for the composition of maps</td>
+</tr>
+<tr>
+<td>$\wedge$</td>
+<td>The antisymmetrised product, $x \wedge y = \tfrac{1}{2}(xy - yx)$, and, with the same subscripts, the four <strong>antisymmetric products</strong> of §<em>The Twelve Products and Their Names</em>. On differential forms the same glyph is the exterior product, $\alpha\wedge\beta$, a different use</td>
+</tr>
+<tr>
+<td>$\bar{\cdot}, {}^{\natural}, {}^{*}, {}^{\flat}, {}^{\dagger}$</td>
+<td>The conjugations of an algebra with an involution, and the adjoint of an operator; §<em>The Conjugations and the Adjoint</em> fixes their meanings</td>
+</tr>
+<tr>
+<td>$\tilde\Pi$, $\tilde\pi$, $\Pi$, $\Pi_\pm$</td>
+<td>An idempotent or a pure state, and the minimal left ideal it generates; the biquaternion layer writes $\tilde\Pi$, the quaternion layer $\tilde\pi$, and the tilde-free layers $\Pi$, the reduced biquaternion one writing its two nontrivial idempotents $\Pi_\pm=\tfrac12(1\pm j)$ (§<em>The Idempotent Convention</em>)</td>
+</tr>
+<tr>
+<td>$\tilde\Xi$, $\tilde\xi$, $\Xi$</td>
+<td>A root of $1$: the biquaternion layer writes $\tilde\Xi$, the quaternion layer $\tilde\xi$, and the tilde-free layers $\Xi$, the reduced biquaternion layer having the four roots $\pm1$ and $\pm j$ (§<em>The Root Convention</em>)</td>
+</tr>
+<tr>
+<td>$\tilde\nu$</td>
+<td>A nilpotent of the quaternion or split-quaternion layer</td>
+</tr>
+<tr>
+<td>$\tilde\Upsilon$</td>
+<td>A nilpotent of the biquaternion or split-biquaternion layer</td>
+</tr>
+<tr>
+<td>$\Upsilon$</td>
+<td>A nilpotent of the complex, split-complex or dual layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\Upsilon_\pm$</td>
+<td>A nilpotent of the reduced biquaternion layer, where no tilde is written</td>
+</tr>
+<tr>
+<td>$\vec\Xi$, $\vec\Upsilon$</td>
+<td>A pure root of $1$ and a pure nilpotent of the biquaternion or split-biquaternion layer; $\vec\xi$ and $\vec\nu$ in the quaternion and split-quaternion layers</td>
+</tr>
+<tr>
+<td>$\tilde u$, $\vec u$</td>
+<td>A unit element of the quaternion or split-quaternion layer, and its pure case, the axis of a rotation</td>
+</tr>
+<tr>
+<td>$\tilde U$, $\vec U$</td>
+<td>A unit element of the biquaternion or split-biquaternion layer, $\mathrm{Norm}(\tilde U)=e_t$, and its pure case, of norm one</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>A unit element of the complex, split-complex, dual or reduced biquaternion layer</td>
+</tr>
+<tr>
+<td>$F^{\mathrm{fn}}, G^{\mathrm{fn}}, H^{\mathrm{fn}}$</td>
+<td>A function from a domain into the algebra, $F^{\mathrm{fn}} : \Omega \to \mathbb{B}$; the tilde marks a value and is never put on a map, since a function is not an element</td>
+</tr>
+<tr>
+<td>$\tilde\nabla$</td>
+<td>The biquaternionic gradient, $\tilde\nabla = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu$; the one operator that keeps the tilde, because its symbol is an algebra unit and not a letter</td>
+</tr>
+<tr>
+<td>$g^{\mathrm{spin}}$</td>
+<td>An element of the group $\mathrm{Spin}(n)$ or $\mathrm{Pin}(n)$ on a principal bundle; not an element of the algebra</td>
+</tr>
+<tr>
+<td>$^{\mathrm{fop}}$</td>
+<td>A <strong>Fock operator</strong>, an operator on the Fock space and not an element of the algebra — $a^{\mathrm{fop}}$, $N^{\mathrm{fop}}$, $H^{\mathrm{fop}}$, $U^{\mathrm{fop}}$. No other operator carries the mark. The opposite algebra uses the separate token $A^{\mathrm{opp}}$</td>
 </tr>
 <tr>
 <td>$\mathrm{Form}(\tilde Q_1,\tilde Q_2)$, $\mathrm{Norm}(\tilde Q)=\mathrm{Form}(\tilde Q,\tilde Q)$</td>
@@ -1044,7 +1083,7 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 </tr>
 <tr>
 <td>$\langle\tilde Q_1,\tilde Q_2\rangle$, $\langle\tilde Q\rangle$</td>
-<td>The generic bracket, the form in two arguments and the norm in one; the subscript records the pair of slots — plain, $*$ Hermitian, $\natural$ quaternionic, $\natural*$ Krein (§<em>The Form Convention, the Norm Convention and the Unitary Convention</em>)</td>
+<td>The generic bracket, the form in two arguments and the norm in one; the subscript records the pair of slots — plain, $*$ Hermitian, $\natural$ quaternionic, $\natural*$ Krein</td>
 </tr>
 <tr>
 <td><code>- Theory</code>, <code>- Operator Theory</code>, <code>- * Theory</code>, <code>- * Operator Theory</code></td>
@@ -1068,16 +1107,6 @@ with $Q_\mu = q_\mu + iq'_\mu$. The generic element of a system carries a letter
 </tr>
 </tbody>
 </table></div>
-<h2 id="further-reading">Further Reading</h2>
-<ul>
-<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853). The original formulation, and the source of the quaternion conjugation and its notation.</li>
-<li>S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636. The biquaternion conjugations and the conventions of the complexified algebra in the applied literature.</li>
-<li>James Cockle, "On a new imaginary in algebra", <em>Philosophical Magazine</em> <strong>34</strong> (1849) 37–47. The tessarines, the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ that the corpus records as the reduced biquaternions, and the earliest occurrence of the hyperbolic versor.</li>
-<li>Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", <em>IEEE Transactions on Signal Processing</em> <strong>52</strong> (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.</li>
-<li>Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, <em>The Book of Involutions</em>, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.</li>
-<li>Nicolas Bourbaki, <em>Éléments de mathématique</em> (Hermann, then Springer). The model for a notation fixed once and used without variation.</li>
-<li>Donald E. Knuth, <em>The TeXbook</em> (Addison-Wesley, 1984). The typographic conventions the source of the corpus follows.</li>
-</ul>
       </div>
     </main>
   </div>

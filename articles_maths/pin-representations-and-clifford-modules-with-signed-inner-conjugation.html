@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -121,13 +120,13 @@ $\rho(x)$ and its relation to $\rho(x)^{-1}$ belong to the involutive layer and 
 here.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-three-dimensional-definite-algebra">The Three-Dimensional Definite Algebra</h3>
-<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ with $e_j^{2}=-1$, the irreducible module is $S=\mathbb{H}$ with the action of the first factor, and $\mathrm{Pin}(3)$ acts on it by left multiplication. The even part is $\mathrm{Spin}(3)\cong Sp(1)$, the unit quaternions, and $\rho$ is faithful on the first factor; the odd elements are the products of an odd number of vectors, among them $e_1$, with $\rho(e_1)^{2}=\mathfrak{Q}(e_1)\mathrm{id}=-\mathrm{id}$, so an odd element of $\mathrm{Pin}$ is a complex structure on the module. The kernel of $\rho$ is $\mathrm{Pin}(3)\cap(\{1\}\times\mathbb{H})$, the odd elements of the second factor included; the spin representation does not see those.</p>
+<p>In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ with $\vec e_\nu^{2}=-1$, the irreducible module is $S=\mathbb{H}$ with the action of the first factor, and $\mathrm{Pin}(3)$ acts on it by left multiplication. The even part is $\mathrm{Spin}(3)\cong Sp(1)$, the unit quaternions, and $\rho$ is faithful on the first factor; the odd elements are the products of an odd number of vectors, among them $\vec e_x$, with $\rho(\vec e_x)^{2}=\mathfrak{Q}(\vec e_x)\mathrm{id}=-\mathrm{id}$, so an odd element of $\mathrm{Pin}$ is a complex structure on the module. The kernel of $\rho$ is $\mathrm{Pin}(3)\cap(\{1\}\times\mathbb{H})$, the odd elements of the second factor included; the spin representation does not see those.</p>
 <h3 id="the-sign-on-a-reflection">The Sign on a Reflection</h3>
-<p>In the same algebra take $a=e_1$ and $v=e_2$. Then $\rho_{e_1}$ fixes $e_2$, so $\rho_{e_1}(e_2)=e_2$, and the corollary above predicts</p>
+<p>In the same algebra take $a=\vec e_x$ and $v=\vec e_y$. Then $\rho_{\vec e_x}$ fixes $\vec e_y$, so $\rho_{\vec e_x}(\vec e_y)=\vec e_y$, and the corollary above predicts</p>
 <p>$$
-\rho(e_1)\,\rho(e_2)\,\rho(e_1)^{-1}=-\rho(e_2).
+\rho(\vec e_x)\,\rho(\vec e_y)\,\rho(\vec e_x)^{-1}=-\rho(\vec e_y).
 $$</p>
-<p>This is verified with $e_1^{-1}=-e_1$: $\rho(e_1)\rho(e_2)\rho(e_1)^{-1}=e_1e_2(-e_1)=-e_1e_2e_1$, and $e_2e_1=-e_1e_2$ gives $e_1e_2e_1=e_2$, whence the value $-e_2=-\rho(e_2)$. The module computation therefore returns the negative of the vector on which the reflection acts trivially, and it is the signed inner conjugation, and not the inner conjugation, that returns $e_2$ itself.</p>
+<p>This is verified with $\vec e_x^{-1}=-\vec e_x$: $\rho(\vec e_x)\rho(\vec e_y)\rho(\vec e_x)^{-1}=\vec e_x \vec e_y(-\vec e_x)=-\vec e_x \vec e_y \vec e_x$, and $\vec e_y \vec e_x=-\vec e_x \vec e_y$ gives $\vec e_x \vec e_y \vec e_x=\vec e_y$, whence the value $-\vec e_y=-\rho(\vec e_y)$. The module computation therefore returns the negative of the vector on which the reflection acts trivially, and it is the signed inner conjugation, and not the inner conjugation, that returns $\vec e_y$ itself.</p>
 <h3 id="the-biquaternion-module">The Biquaternion Module</h3>
 <p>For $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ the irreducible module is the space of biquaternions with the action recorded in the biquaternion spinor module section of <em>Spin Representations and Clifford Modules with Inner Conjugation</em>, and the odd elements of $\mathrm{Pin}(1,3)$ act by the same one-sided left multiplication, interchanging the two chiral halves and conjugating the Clifford action by the negative of the reflection, exactly as above. The compatibility of that module with the Lorentz action is the subject of the applications layer, and nothing of it is used here.</p>
 <h2 id="summary">Summary</h2>

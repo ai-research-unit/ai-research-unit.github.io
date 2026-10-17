@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,7 +56,7 @@
 <p>A second trap is a factor of two. The bookkeeping of polarisations in the covariant quantisation of the Maxwell field is notoriously easy to get wrong, and the framework has something precise to say about it: the indefinite metric of the covariant treatment is the biquaternion norm of the material sector $\mathbb{M}_-$, and the sum of its signs fixes the effective number of polarisations. The article is explicit about which modes are counted.</p>
 <p>The division between what is established and what is interpretation is stated here and kept throughout.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{M}_+$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ gives vacuum expectation values for one fermionic mode. The zero-point energy of the free Maxwell field is a <strong>central scalar</strong> — a multiple of $e_0$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
+<li><strong>Established, and recomputed below.</strong> The one-mode vacuum state of the framework is an idempotent of the informational sector $\mathbb{M}_+$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ gives vacuum expectation values for one fermionic mode. The zero-point energy of the free Maxwell field is a <strong>central scalar</strong> — a multiple of $e_t$ — so it commutes with everything and is unobservable as a constant, exactly as the harmonic-oscillator article records for the trace part of a Hamiltonian. Its dependence on the plate separation, however, is not constant. The bare mode sum diverges; the spectral-zeta route and the heat-kernel route give, independently,
 $$
 \frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720\,a^{3}},\qquad
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
@@ -67,12 +66,12 @@ with the force <strong>attractive</strong>. The factor of two between the electr
 <li><strong>Gaps, left visible.</strong> There is no bosonic ladder in $\mathbb{B}$, so the photon's Fock vacuum is a standard construction on an imported module rather than an object of the algebra. The perfectly conducting plates and their boundary conditions have no native description in the framework. The algebra does not select a regularisation. And the framework reproduces the standard Casimir result rather than modifying it, so it supplies no empirical discriminator here.</li>
 </ul>
 <p>The article is organised as follows. The next section fixes the vacuum state in the framework. The section after that treats the zero-point energy and its central-scalar character. The following section sets up the parallel-plate configuration and exhibits the divergent mode sum. Two sections then regularise it by two independent routes. A section accounts for the polarisations and the factor of two. A section states the force, its sign, and its verification. A section separates what the framework supplies from what it imports, a short section treats boundaries and the local complex structure as an open direction, and the article closes with open questions.</p>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^{2}=-e_0$, and $i$ is the scalar imaginary with $i^{2}=-1$. The material (anti-Hermitian) and informational (Hermitian) sectors are
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^{2}=-e_t$, and $i$ is the scalar imaginary with $i^{2}=-1$. The material (anti-Hermitian) and informational (Hermitian) sectors are
 $$
-\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\},\qquad
-\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},\qquad
+\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_0)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, the potential and field strength are $\tilde A=i\phi/c\,e_0+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalised so that $\mathrm{Tr}(e_t)=2$ in the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, the potential and field strength are $\tilde A=i\phi/c\,e_t+\vec A$ and $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde\nabla\tilde F=-\tilde R$. For the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$ where only the algebra is at issue; the dimensionful factors are restored in every displayed physical result. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the biquaternion norm of $\mathbb{M}_-$; the indefinite metric of the covariant quantisation is $\zeta=(-1,+1,+1,+1)$, which is the same object.</p>
 <h2 id="the-vacuum-state-in-the-framework">The Vacuum State in the Framework</h2>
 <p>The Fock space of a field is the direct sum of the symmetric or antisymmetric tensor powers of the one-particle space, and the <strong>vacuum</strong> $|0\rangle$ spans its degree-zero term:
 $$
@@ -82,24 +81,24 @@ annihilated by every annihilation operator, $a^{\mathrm{fop}}_r|0\rangle=0$. In 
 <p>The question that is specific to the framework is: <strong>is the vacuum state an object of $\mathbb{B}$?</strong> The answer has a positive part and a negative part, and they apply to different things.</p>
 <p><strong>The one-mode vacuum is native.</strong> For a single fermionic mode the algebra contains the whole ladder, as <em>Fock Space and Creation/Annihilation Operators in Biquaternionic Form</em> establishes. With
 $$
-\vec\Upsilon_1=\tfrac12\big(ie_1-e_2\big),\qquad
-\vec\Upsilon_2=\tfrac12\big(ie_1+e_2\big),\qquad
-\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0,
+\vec\Upsilon_x=\tfrac12\big(i\vec e_x-\vec e_y\big),\qquad
+\vec\Upsilon_y=\tfrac12\big(i\vec e_x+\vec e_y\big),\qquad
+\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
 $$
 the number operator is the idempotent
 $$
-\tilde N_{\mathrm{tr}}=\vec\Upsilon_2\vec\Upsilon_1=\tfrac12\big(e_0-ie_3\big)=\tilde\Pi_-\in\mathbb{M}_+,
+\tilde N_{\mathrm{tr}}=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12\big(e_t-i\vec e_z\big)=\tilde\Pi_-\in\mathbb{M}_+,
 $$
 so the <strong>vacuum projector</strong> is the complementary idempotent
 $$
-\vert 0\rangle\langle 0\vert=e_0-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_0+ie_3\big)=\tilde\Pi_+\in\mathbb{M}_+.
+\vert 0\rangle\langle 0\vert=e_t-\tilde N_{\mathrm{tr}}=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{M}_+.
 $$
-Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_0-2\tilde N_{\mathrm{tr}}=ie_3$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state projector of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde N_{\mathrm{tr}}=i\vec e_z$. A vacuum expectation value of an observable $\tilde H\in\mathbb{M}_+$ is then the trace formula
 $$
 \langle\tilde H\rangle_{0}=\mathrm{Tr}\big(|0\rangle\langle 0|\,\tilde H\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde H\big),
 $$
 which is the Born rule of the informational sector specialized to the vacuum. This is the one place where the framework's vacuum is genuinely algebraic rather than transcribed.</p>
-<p><strong>The field vacuum is not.</strong> For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the <strong>photon vacuum is not an element of $\mathbb{B}$</strong>, because there is no bosonic mode in the algebra at all: no pair $\tilde a,\tilde a^{\dagger}\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of <em>Canonical Quantization of the Biquaternion Maxwell Field</em>; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.</p>
+<p><strong>The field vacuum is not.</strong> For a field, the vacuum is the $n=0$ term of a Fock space built from a module, and the companion article's finding applies unchanged: the Fock space is not a subalgebra of $\mathbb{B}$, and beyond one mode not even the operator algebra is. In particular the <strong>photon vacuum is not an element of $\mathbb{B}$</strong>, because there is no bosonic mode in the algebra at all: no pair $\tilde a,\tilde a^{\dagger}\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. The electromagnetic vacuum is therefore the standard Fock vacuum of the mode algebra of <em>Canonical Quantization of the Biquaternion Maxwell Field</em>; the framework contributes the module on which it is built (the transverse polarization plane in the vector part of $\mathbb{M}_-$) and the notation, but no native ladder.</p>
 <p>The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For one fermionic mode it is an idempotent of $\mathbb{M}_+$; for a field it is a state in a module, and the algebra supplies neither the bosonic ladder that creates the photons nor, as the next section shows, a reason to prefer one regularisation of its energy over another.</p>
 <h2 id="the-zero-point-energy-and-the-trace-part">The Zero-Point Energy and the Trace Part</h2>
 <p><strong>From the mode expansion.</strong> The free Maxwell potential expands in four covariant polarisations,
@@ -131,10 +130,10 @@ $$
 E_0^{\mathrm{D}}=-\,2V\!\int\!\frac{d^{3}p}{(2\pi)^{3}}\,E_{\vec p},
 $$
 also quartically divergent, as that article records. The sign difference (positive for bosons, negative for the two fermion branches) is the standard one and is not removed by the framework.</p>
-<p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_0$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht/\hbar)$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.</p>
+<p><strong>The zero-point energy is a central scalar.</strong> In the framework the zero-point coefficient multiplies the identity $e_t$: it is a real number, hence an element of the <strong>centre</strong> $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ of $\mathbb{B}$. A central scalar commutes with every biquaternion and, in the evolution $\tilde\rho\mapsto\tilde U\tilde\rho\tilde U^{*}$ with $\tilde U=\exp(-i\tilde Ht/\hbar)$, contributes only a phase that cancels. This is exactly the statement of <em>The Harmonic Oscillator in Biquaternionic Form</em>: the trace part $h_0$ of a Hamiltonian is a central scalar, and "the zero-point energy is unobservable and the trace part of the Hamiltonian is a central scalar are the same statement". The trace formula makes "trace part" literal, $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$.</p>
 <p>This gives the framework's interpretation of the vacuum energy, and it is the reason the Casimir effect is the right place to look for it. A <strong>constant</strong> central scalar is unobservable; but if the constant depends on an external parameter — here the plate separation $a$ — its gradient is a force. The Casimir force is precisely the gradient of a central scalar, and it is observable for that reason. The algebra does not make the zero-point energy observable; it makes the <em>variation</em> of a central scalar observable, and that is all the Casimir effect requires.</p>
 <h2 id="the-parallel-plate-configuration-and-the-divergent-sum">The Parallel-Plate Configuration and the Divergent Sum</h2>
-<p><strong>The configuration.</strong> Two perfectly conducting parallel plates of area $A$, separated by a distance $a$ along $e_3$, bound a region of the vacuum. The plates are idealised: they impose $E_\parallel=0$ and $B_\perp=0$ on their surfaces, which is a boundary condition on the field, not a property of the algebra. It should be said at the outset that <strong>the framework has no native description of a boundary</strong>: the free-field algebra of the companion articles is formulated on the whole of spacetime, and the conductors are external structure. What the framework does supply is the space in which the mode structure is counted, as the next section makes precise.</p>
+<p><strong>The configuration.</strong> Two perfectly conducting parallel plates of area $A$, separated by a distance $a$ along $\vec e_z$, bound a region of the vacuum. The plates are idealised: they impose $E_\parallel=0$ and $B_\perp=0$ on their surfaces, which is a boundary condition on the field, not a property of the algebra. It should be said at the outset that <strong>the framework has no native description of a boundary</strong>: the free-field algebra of the companion articles is formulated on the whole of spacetime, and the conductors are external structure. What the framework does supply is the space in which the mode structure is counted, as the next section makes precise.</p>
 <p><strong>The modes.</strong> Between the plates the longitudinal wavevector is quantized, $k_3=n\pi/a$, and the transverse wavevector $\vec k_\perp$ is continuous. The electromagnetic modes separate into
 $$
 \text{TE}_n:\ n=1,2,\dots,\qquad
@@ -244,7 +243,7 @@ $$
 \frac{E_{\mathrm{EM}}}{A}=2\cdot\Big(-\frac{\pi^{2}\hbar c}{1440\,a^{3}}\Big)=-\frac{\pi^{2}\hbar c}{720\,a^{3}} .
 $$</p>
 <p><strong>From the indefinite metric.</strong> In the covariant mode algebra the four polarisations carry the metric $\zeta=(-1,+1,+1,+1)$, and the zero-point constant is $\sum_r\zeta_r\,\tfrac12\hbar\omega=2\cdot\tfrac12\hbar\omega$. The timelike mode's negative sign is essential: summing four polarisations with a positive sign would give $4\cdot\tfrac12\hbar\omega$, <strong>double</strong> the correct zero-point energy. The indefinite metric is not a technicality of the covariant gauge; it is what makes the mode count come out right.</p>
-<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_0,e_1,e_2,e_3\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_0^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
+<p><strong>From the algebra.</strong> Both descriptions have the same home in the framework. The four polarization directions of the covariant treatment are the four directions $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ of the material sector, and the metric $\zeta$ is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=|\vec q|^{2}-q_t^{2}$ of $\mathbb{M}_-$, as <em>The Photon in Biquaternionic Form</em> establishes. The <strong>two physical polarisations</strong> are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction $\vec u_k$, with projector $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$. The factor of two is thus native: it is the dimension of the transverse plane fixed by the algebra's own biquaternion norm. What is <strong>not</strong> native is the <strong>removal</strong> of the timelike and longitudinal directions: the algebra supplies the indefinite metric and the transverse plane, but the subsidiary condition that discards the unphysical directions is imported, exactly as the canonical-quantisation article records.</p>
 <p>The three descriptions agree, and the agreement is the check on the factor of two: the mode count gives $2$; the indefinite metric gives $\sum_r\zeta_r=2$; the algebra gives the two-dimensional transverse plane. A reader who counts four polarisations with positive weight, or who forgets that the TEM mode is $a$-independent, will be wrong by a factor of two or by an additive constant, and neither error is visible in the final number without this bookkeeping.</p>
 <h2 id="the-casimir-force-sign-convention-and-two-verifications">The Casimir Force: Sign Convention and Two Verifications</h2>
 <p><strong>Sign convention.</strong> Let $E(a)$ be the vacuum energy of the bounded region at separation $a$, per unit area. The force per unit area on a plate is
@@ -280,17 +279,17 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 <tr>
 <td>Vacuum state (one fermionic mode)</td>
 <td>Native</td>
-<td>idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$; trace formula</td>
+<td>idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$; trace formula</td>
 </tr>
 <tr>
 <td>Vacuum expectation values (one mode)</td>
 <td>Native</td>
-<td>$\langle\tilde H\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$</td>
+<td>$\langle\tilde H\rangle_t=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$</td>
 </tr>
 <tr>
 <td>Fermion parity of the vacuum</td>
 <td>Native</td>
-<td>$(-1)^F=ie_3$</td>
+<td>$(-1)^F=i\vec e_z$</td>
 </tr>
 <tr>
 <td>Zero-point energy as a central scalar</td>
@@ -374,11 +373,11 @@ The scaling argument uses only the $a^{-3}$ dependence that the modular relation
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_+=\tfrac12(e_0+ie_3)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_0$, since a commutator has vanishing trace while $\mathrm{Tr}(e_0)=2$.</p>
-<p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_0$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
+<p>The <strong>vacuum state</strong> of the biquaternion framework is not a biquaternion. For a <strong>single fermionic mode</strong> it is genuinely algebraic: the vacuum projector is the idempotent $|0\rangle\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{M}_+$, and vacuum expectation values are given by the trace formula $2\,\mathrm{Sc}(\tilde\Pi_+\tilde H)$. For a <strong>field</strong> it is the standard Fock vacuum of a module, because the algebra contains no bosonic ladder: no pair in $\mathbb{B}$ satisfies $[\tilde a,\tilde a^{\dagger}]=e_t$, since a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$.</p>
+<p>The <strong>zero-point energy</strong> of the free Maxwell field is a central scalar — the trace part of the Hamiltonian, a multiple of $e_t$ — and is therefore unobservable as a constant, in the same sense as the harmonic oscillator's trace part. Its dependence on the plate separation is what is observable. The bare Casimir mode sum diverges quartically, with cutoff powers $\Lambda^{4}$ and $\Lambda^{2}$ and surface terms; the physical mode-density subtraction cancels the volume divergence and leaves behind only $a$-independent plate self-energies and a finite, $a$-dependent remainder.</p>
 <p>That remainder was obtained by two independent regularisations. The <strong>spectral zeta function</strong> route continues $\zeta_3(s)$ from $s>\tfrac32$ through the pole of $\zeta(2s-2)$ at $s=\tfrac32$ to $s=-\tfrac12$, and gives, for one Dirichlet-type scalar degree of freedom, $-{\pi^{2}\hbar c}/({1440\,a^{3}})$. The <strong>heat-kernel</strong> route uses the Jacobi modular relation to write the exact difference between the bounded and free heat kernels, isolates the Casimir part as the exponentially small "winding" sum, and integrates it to the same value using $\zeta(4)=\pi^{4}/90$. The two routes use different special values and different manipulations; they agree.</p>
 <p>The <strong>electromagnetic</strong> result is twice the Dirichlet-scalar result, $E_{\mathrm{EM}}/A=-{\pi^{2}\hbar c}/({720\,a^{3}})$, because the $a$-dependent mode count is the TE and TM families with one polarization each. Equivalently, the indefinite metric $\zeta=(-1,+1,+1,+1)$ of the covariant quantisation sums to $2$; and the framework identifies $\zeta$ with the biquaternion norm of the material sector $\mathbb{M}_-$ and the two physical polarisations with the transverse plane in its vector part. The factor of two is native; the gauge removal of the timelike and longitudinal directions is imported.</p>
-<p>The <strong>force</strong> per unit area, with the convention $F/A=-\partial_a(E/A)$, is
+<p>The <strong>force</strong> per unit area, with the convention $F/A=-\partial/\partial a(E/A)$, is
 $$
 \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240\,a^{4}},
 $$
@@ -398,8 +397,8 @@ $$
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_\mu^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -410,27 +409,27 @@ $$
 <td>Material (anti-Hermitian) and informational (Hermitian) sectors</td>
 </tr>
 <tr>
-<td>$\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$</td>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$</td>
 <td>Centre of the algebra; home of the zero-point scalar</td>
 </tr>
 <tr>
 <td>$\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$</td>
-<td>Trace formula; $\mathrm{Tr}(e_0)=2$</td>
+<td>Trace formula; $\mathrm{Tr}(e_t)=2$</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_1,\vec\Upsilon_2$</td>
-<td>One-mode ladder, $\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0$</td>
+<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>One-mode ladder, $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$</td>
 </tr>
 <tr>
-<td>$\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$</td>
+<td>$\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$</td>
 <td>One-mode number operator (idempotent)</td>
 </tr>
 <tr>
-<td>$\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_0+ie_3)$</td>
+<td>$\vert 0\rangle\langle 0\vert=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$</td>
 <td>One-mode vacuum projector (idempotent in $\mathbb{M}_+$)</td>
 </tr>
 <tr>
-<td>$(-1)^F=ie_3$</td>
+<td>$(-1)^F=i\vec e_z$</td>
 <td>Fermion parity (single mode)</td>
 </tr>
 <tr>
@@ -443,11 +442,11 @@ $$
 </tr>
 <tr>
 <td>$\zeta=(-1,+1,+1,+1)$</td>
-<td>Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_0^2$ of $\mathbb{M}_-$</td>
+<td>Indefinite metric; biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\lvert\vec q\rvert^2-q_t^2$ of $\mathbb{M}_-$</td>
 </tr>
 <tr>
 <td>$\vec u_k$</td>
-<td>Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec u_k_i\vec u_k_j$</td>
+<td>Propagation direction; transverse plane $P_{ij}=\delta_{ij}-\vec {u_k}_i\vec {u_k}_j$</td>
 </tr>
 <tr>
 <td>$a$, $A$</td>
@@ -470,7 +469,7 @@ $$
 <td>Zero-point energy of the bounded region; Casimir energy</td>
 </tr>
 <tr>
-<td>$F/A=-\partial_a(E/A)$</td>
+<td>$F/A=-\partial/\partial a(E/A)$</td>
 <td>Force per unit area; negative $=$ attractive</td>
 </tr>
 <tr>

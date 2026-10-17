@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,9 +51,9 @@
       <div class="article-body">
         <h1 id="reduced-biquaternion-other-algebraic-element-representations"><strong>Reduced Biquaternion Other Algebraic Element Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Beside the four-vector, the matrix and the polar readings, the reduced biquaternion element is written in three algebraic presentations that name its structure rather than its numbers: the <strong>Clifford identification</strong>, which builds the algebra from the two two-dimensional real Clifford algebras; the <strong>idempotent-coordinate representation</strong>, which sends the element to the pair $(q_1,q_2)$ of complex numbers; and the <strong>quotient presentation</strong>, which reads the algebra as a quotient of a polynomial ring. To these this article adds the <strong>array representation</strong>, which sends a matrix of reduced biquaternions to a pair of complex matrices. The four are stated, their relations are recorded, and the choices they involve are named. The multiplication is <strong>commutative</strong>, so all four presentations are commutative; it <strong>has zero divisors</strong>, so none of them is a division ring; and the algebra is <strong>not a division algebra</strong>.</p>
-<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $T=A+Bj$ with $A=a+ia'$, $B=b+ib'$; the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$ and the idempotent coordinates are $q_1=A+B$, $q_2=A-B$, with $T=q_1\Pi_{1}+q_2\Pi_{2}$. The element glyph is $T$, without a tilde, the reduced algebra having no quaternionic factor.</p>
-<p><strong>Boundaries.</strong> The four-vector and matrix readings are <em>The Four-Vector Element Representation of the Reduced Biquaternions</em> and <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the umbrella is <em>Introduction to Reduced Biquaternion Element Representations</em>; the polar reading is <em>Reduced Biquaternions Polar Element Representation</em>; the operators are <em>Operators on the Reduced Biquaternions</em>; and the idempotent splitting is <em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em>. The biquaternion counterpart is <em>Biquaternion Other Algebraic Element Representations</em>.</p>
+<p>Beside the four-vector, the matrix and the polar readings, the reduced biquaternion element is written in three algebraic presentations that name its structure rather than its numbers: the <strong>Clifford identification</strong>, which builds the algebra from the two two-dimensional real Clifford algebras; the <strong>idempotent-coordinate representation</strong>, which sends the element to the pair $(Q_{++},Q_{--})$ of complex numbers; and the <strong>quotient presentation</strong>, which reads the algebra as a quotient of a polynomial ring. To these this article adds the <strong>array representation</strong>, which sends a matrix of reduced biquaternions to a pair of complex matrices. The four are stated, their relations are recorded, and the choices they involve are named. The multiplication is <strong>commutative</strong>, so all four presentations are commutative; it <strong>has zero divisors</strong>, so none of them is a division ring; and the algebra is <strong>not a division algebra</strong>.</p>
+<p><strong>Conventions.</strong> The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$; the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$; the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$ and the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, with $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The element glyph is $Q_\pm$, without a tilde, the reduced algebra having no quaternionic factor.</p>
+<p><strong>Boundaries.</strong> The four-vector and matrix readings are <em>The Four-Vector Element Representation of the Reduced Biquaternions</em> and <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>; the umbrella is <em>Introduction to Reduced Biquaternion Element Representations</em>; the polar reading is <em>Reduced Biquaternions Polar Element Representation</em>; the operators are <em>Operators on the Reduced Biquaternions</em>; and the idempotent splitting is <em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em>. The biquaternion counterpart is <em>Biquaternion Other Algebraic Element Representations</em>.</p>
 <h2 id="the-clifford-identification">The Clifford Identification</h2>
 <p><strong>The algebra is the tensor product of the two two-dimensional real Clifford algebras, one definite and one split.</strong></p>
 <h3 id="definition">Definition</h3>
@@ -115,13 +114,13 @@ This is the isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\oplus\mathbb{C}$
 <p><strong>The element is the pair of its two idempotent coordinates, and this is the algebra isomorphism $\mathbb{C}\times\mathbb{C}$.</strong></p>
 <p><strong>Definition.</strong> The <strong>idempotent-coordinate representation</strong> is
 $$
-\iota(T)=(q_1,q_2),\qquad T=q_1\Pi_{1}+q_2\Pi_{2},
+\iota(Q_\pm)=(Q_{++},Q_{--}),\qquad Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-,
 $$
 a map $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$.</p>
-<p><strong>Theorem.</strong> $\iota$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\times\mathbb{C}$: it is $\mathbb{C}$-linear, bijective, $\iota(1)=(1,1)$, and $\iota(TW)=(q_{1,T}q_{1,W},\,q_{2,T}q_{2,W})=\iota(T)\iota(W)$.</p>
-<p><em>Proof.</em> The map is linear; it is bijective because every pair $(q_1,q_2)$ is the image of $T=\tfrac12\bigl((q_1+q_2)+(q_1-q_2)j\bigr)$; and the product is componentwise because the idempotents satisfy $\Pi_{i}\Pi_{j}=\delta_{ij}\Pi_{i}$.</p>
-<p><strong>Corollary (the two characters are its coordinates).</strong> The two coordinates of $\iota$ are the two characters $\lambda_{1}(T)=q_1$ and $\lambda_{2}(T)=q_2$ of <em>Introduction to Reduced Biquaternion Element Representations</em>; the idempotent-coordinate representation is the representation in which the algebra is the visible direct product, and every other representation of the block is this one in another alphabet.</p>
-<p><em>Proof.</em> The coordinate maps are exactly the two characters, and the remaining representations read the same pair $(q_1,q_2)$ as a quadruple, a matrix, a Clifford element or a polar pair.</p>
+<p><strong>Theorem.</strong> $\iota$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\times\mathbb{C}$: it is $\mathbb{C}$-linear, bijective, $\iota(1)=(1,1)$, and $\iota(Q_{\pm,1}Q_{\pm,2})=(Q_{1++}Q_{2++},\,Q_{1--}Q_{2--})=\iota(Q_{\pm,1})\iota(Q_{\pm,2})$, where $Q_{i++}$ and $Q_{i--}$ are the two coordinates of $Q_{\pm,i}$.</p>
+<p><em>Proof.</em> The map is linear; it is bijective because every pair $(Q_{++},Q_{--})$ is the image of $Q_\pm=\tfrac12\bigl((Q_{++}+Q_{--})+(Q_{++}-Q_{--})j\bigr)$; and the product is componentwise because the idempotents satisfy $\Pi_{i}\Pi_{j}=\delta_{ij}\Pi_{i}$.</p>
+<p><strong>Corollary (the two characters are its coordinates).</strong> The two coordinates of $\iota$ are the two characters $\lambda_+(Q_\pm)=Q_{++}$ and $\lambda_-(Q_\pm)=Q_{--}$ of <em>Introduction to Reduced Biquaternion Element Representations</em>; the idempotent-coordinate representation is the representation in which the algebra is the visible direct product, and every other representation of the block is this one in another alphabet.</p>
+<p><em>Proof.</em> The coordinate maps are exactly the two characters, and the remaining representations read the same pair $(Q_{++},Q_{--})$ as a quadruple, a matrix, a Clifford element or a polar pair.</p>
 <h2 id="the-quotient-presentation">The Quotient Presentation</h2>
 <p><strong>The algebra is the quotient of the polynomial ring in two commuting variables by the two relations.</strong></p>
 <p><strong>Definition.</strong> Let $\mathbb{R}[x,y]$ be the polynomial ring in two commuting indeterminates. The <strong>quotient presentation</strong> of the reduced biquaternions is
@@ -141,7 +140,7 @@ the definite factor giving the field and the split factor giving the two idempot
 <p><strong>The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, and the two complex factors are the two complex structures of the same space.</strong></p>
 <p><strong>Theorem (the two complex structures and their product).</strong> The real algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ carries two commuting complex structures, the multiplications by $i$ and by $ij$,
 $$
-J_{1}(T)=iT,\qquad J_{2}(T)=ijT,\qquad J_{1}^{2}=J_{2}^{2}=-\mathrm{id},\qquad J_{1}J_{2}=J_{2}J_{1},
+J_{1}(Q_\pm)=iQ_\pm,\qquad J_{2}(Q_\pm)=ijQ_\pm,\qquad J_{1}^{2}=J_{2}^{2}=-\mathrm{id},\qquad J_{1}J_{2}=J_{2}J_{1},
 $$
 each a real-linear map with square $-\mathrm{id}$; their product
 $$
@@ -149,22 +148,22 @@ J_{1}J_{2}=L_{i\cdot ij}=L_{i^{2}j}=L_{-j}
 $$
 is a <strong>real structure</strong>, $(J_{1}J_{2})^{2}=+\mathrm{id}$, the multiplication by $-j$, which is the same kind of map as the multiplication by $j$.</p>
 <p><em>Proof.</em> $i^{2}=-1$ and $(ij)^{2}=i^{2}j^{2}=-1$, so the multiplications by $i$ and by $ij$ square to $-\mathrm{id}$; they commute because the algebra is commutative. The product is the multiplication by $i\cdot ij=i^{2}j=-j$, and $(-j)^{2}=j^{2}=+1$, so the product squares to $+\mathrm{id}$: it is a real structure, not a third complex structure. The complex structures among the signed units are $\pm i$ and $\pm ij$, and the real structures are $\pm j$ and $\pm1$.</p>
-<p><strong>Corollary (the tensor is not a field).</strong> $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is a product of two fields, not a field: it has zero divisors, and the two factors are the two coordinate copies $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$. This is the algebraic content of the fact that the reduced biquaternions are a split algebra, against the complex numbers, which are a field.</p>
-<p><em>Proof.</em> $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and a field, but the tensor product of two copies over $\mathbb{R}$ is $\mathbb{C}\times\mathbb{C}$, which is not a field; a product of rings has the idempotents $(1,0)$ and $(0,1)$, whose images are $\Pi_{1}$ and $\Pi_{2}$.</p>
+<p><strong>Corollary (the tensor is not a field).</strong> $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ is a product of two fields, not a field: it has zero divisors, and the two factors are the two coordinate copies $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$. This is the algebraic content of the fact that the reduced biquaternions are a split algebra, against the complex numbers, which are a field.</p>
+<p><em>Proof.</em> $\mathbb{C}$ is two-dimensional over $\mathbb{R}$ and a field, but the tensor product of two copies over $\mathbb{R}$ is $\mathbb{C}\times\mathbb{C}$, which is not a field; a product of rings has the idempotents $(1,0)$ and $(0,1)$, whose images are $\Pi_+$ and $\Pi_-$.</p>
 <h2 id="matrices-of-several-elements">Matrices of Several Elements</h2>
 <p><strong>A matrix of several reduced biquaternions is a pair of complex matrices, and the array ring is the product of two full matrix rings.</strong></p>
-<p><strong>Definition.</strong> A <strong>reduced biquaternion array</strong> is an $n\times n$ matrix $M=(T_{rs})$ with entries in $\mathbb{B}_{\mathrm{r}}$. The <strong>array representation</strong> is the map
+<p><strong>Definition.</strong> A <strong>reduced biquaternion array</strong> is an $n\times n$ matrix $M=\bigl((Q_\pm)_{rs}\bigr)$ with entries in $\mathbb{B}_{\mathrm{r}}$. The <strong>array representation</strong> is the map
 $$
-M\mapsto\bigl(\iota(M_{rs})\bigr)=\bigl(M^{+},M^{-}\bigr),\qquad (M^{\pm})_{rs}=\lambda_{\pm}(T_{rs}),
+M\mapsto\bigl(\iota(M_{rs})\bigr)=\bigl(M^{+},M^{-}\bigr),\qquad (M^{\pm})_{rs}=\lambda_{\pm}\bigl((Q_\pm)_{rs}\bigr),
 $$
-sending the array to a pair of $n\times n$ complex matrices, the $q_1$-part and the $q_2$-part.</p>
+sending the array to a pair of $n\times n$ complex matrices, the $Q_{++}$-part and the $Q_{--}$-part.</p>
 <p><strong>Theorem (the array ring).</strong> The array representation is an isomorphism of rings
 $$
 M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C}),
 $$
 it is compatible with the product, with the identity, and with the determinant in the sense $\det M=(\det M^{+},\det M^{-})\in\mathbb{C}\times\mathbb{C}$; the array is invertible exactly when both complex matrices are.</p>
 <p><em>Proof.</em> The entries of $\mathbb{B}_{\mathrm{r}}$ are pairs of complex numbers and the operations are componentwise, so $M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C}\times\mathbb{C})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$; the determinant over the commutative ring $\mathbb{C}\times\mathbb{C}$ computes componentwise, whence the pair of determinants and the invertibility criterion.</p>
-<p><strong>Corollary (the repeated-block form).</strong> Through the regular representation each entry becomes a $2\times2$ complex matrix, so the array becomes a $2n\times2n$ complex matrix with the $\begin{smallmatrix}A&B\\ B&A\end{smallmatrix}$ blocks; the array representation by the pair $(M^{+},M^{-})$ is the diagonalised form of that matrix, the passage being the simultaneous change of basis of every entry of <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>.</p>
+<p><strong>Corollary (the repeated-block form).</strong> Through the regular representation each entry becomes a $2\times2$ complex matrix, so the array becomes a $2n\times2n$ complex matrix with the $\begin{smallmatrix}Q_+&Q_-\\ Q_-&Q_+\end{smallmatrix}$ blocks; the array representation by the pair $(M^{+},M^{-})$ is the diagonalised form of that matrix, the passage being the simultaneous change of basis of every entry of <em>Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</em>.</p>
 <p><em>Proof.</em> Substituting the matrix of each entry in the array gives the $2n\times2n$ matrix; block-diagonalising each $2\times2$ block by the common change $P$ gives the pair of $n\times n$ complex matrices.</p>
 <h2 id="relations-between-the-representations">Relations Between the Representations</h2>
 <p><strong>The four presentations are the same isomorphism $\mathbb{B}_{\mathrm{r}}\cong\mathbb{C}\times\mathbb{C}$ in four alphabets, and the table places them.</strong></p>
@@ -186,7 +185,7 @@ it is compatible with the product, with the identity, and with the determinant i
 </tr>
 <tr>
 <td>idempotent coordinates</td>
-<td>the pair $(q_1,q_2)$</td>
+<td>the pair $(Q_{++},Q_{--})$</td>
 <td>$2$</td>
 <td>$\mathbb{C}\times\mathbb{C}$</td>
 </tr>
@@ -204,13 +203,13 @@ it is compatible with the product, with the identity, and with the determinant i
 </tr>
 </tbody>
 </table></div>
-<p><strong>Theorem (they agree).</strong> The four presentations agree on every element: the Clifford element, the pair $(q_1,q_2)$, the quotient class and the array all carry the same $q_1$ and the same $q_2$, and the maps between them are the identity on those two coordinates.</p>
-<p><em>Proof.</em> Each presentation assigns to $T$ the pair of evaluations of its two coordinates; the Clifford identification evaluates on the two factors $\mathbb{R}\times\mathbb{R}$ of $Cl_{1,0}$, the idempotent-coordinate representation names the pair, the quotient evaluates $x$ and $y$, and the array applies the pair entrywise.</p>
+<p><strong>Theorem (they agree).</strong> The four presentations agree on every element: the Clifford element, the pair $(Q_{++},Q_{--})$, the quotient class and the array all carry the same $Q_{++}$ and the same $Q_{--}$, and the maps between them are the identity on those two coordinates.</p>
+<p><em>Proof.</em> Each presentation assigns to $Q_\pm$ the pair of evaluations of its two coordinates; the Clifford identification evaluates on the two factors $\mathbb{R}\times\mathbb{R}$ of $Cl_{1,0}$, the idempotent-coordinate representation names the pair, the quotient evaluates $x$ and $y$, and the array applies the pair entrywise.</p>
 <h2 id="the-role-of-choices">The Role of Choices</h2>
 <p><strong>The presentations involve choices, and the choices do not change the algebra.</strong></p>
-<p>The Clifford identification chooses which generator squares to $+1$ and which to $-1$; the quotient presentation chooses the names $x$ and $y$; the tensor presentation chooses which factor is the coefficient field; the array presentation chooses the size $n$. The first three choices are the choice of naming the two generators, and it does not change the algebra, only the order of the two factors of $\mathbb{C}\times\mathbb{C}$; the two factors can also be exchanged by the natural sign, which is the automorphism of <em>The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</em>. The choice of $n$ changes the array ring but not the element representation, of which the array is the entrywise reading. No choice makes the algebra a division algebra: the zero divisors are present in every presentation, as the vanishing of one of the two coordinates.</p>
+<p>The Clifford identification chooses which generator squares to $+1$ and which to $-1$; the quotient presentation chooses the names $x$ and $y$; the tensor presentation chooses which factor is the coefficient field; the array presentation chooses the size $n$. The first three choices are the choice of naming the two generators, and it does not change the algebra, only the order of the two factors of $\mathbb{C}\times\mathbb{C}$; the two factors can also be exchanged by the natural sign, which is the automorphism of <em>The Multiplication Operators of the Algebra of the Reduced Biquaternions</em>. The choice of $n$ changes the array ring but not the element representation, of which the array is the entrywise reading. No choice makes the algebra a division algebra: the zero divisors are present in every presentation, as the vanishing of one of the two coordinates.</p>
 <h2 id="summary">Summary</h2>
-<p>The reduced biquaternions carry three algebraic presentations beside the four-vector, the matrix and the polar readings: the <strong>Clifford identification</strong> $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, with $Cl_{1,0}\cong\mathbb{R}\times\mathbb{R}$ split and $Cl_{0,1}\cong\mathbb{C}$ definite; the <strong>idempotent-coordinate representation</strong> $T\mapsto(q_1,q_2)$, the algebra isomorphism onto $\mathbb{C}\times\mathbb{C}$ whose two coordinates are the two characters; and the <strong>quotient presentation</strong> $\mathbb{R}[x,y]/(x^{2}+1,y^{2}-1)\cong\mathbb{C}\times\mathbb{C}$. To these the <strong>array representation</strong> adds $M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$, with $\det M=(\det M^{+},\det M^{-})$ and the invertibility read on the two complex matrices. The four agree on the two coordinates $q_1$ and $q_2$; they involve only the choice of naming the two generators, which does not change the algebra, and the multiplication is <strong>commutative</strong>, <strong>has zero divisors</strong> and is <strong>not a division algebra</strong> in every presentation.</p>
+<p>The reduced biquaternions carry three algebraic presentations beside the four-vector, the matrix and the polar readings: the <strong>Clifford identification</strong> $\mathbb{B}_{\mathrm{r}}\cong Cl_{1,0}\otimes_{\mathbb{R}}Cl_{0,1}$, with $Cl_{1,0}\cong\mathbb{R}\times\mathbb{R}$ split and $Cl_{0,1}\cong\mathbb{C}$ definite; the <strong>idempotent-coordinate representation</strong> $Q_\pm\mapsto(Q_{++},Q_{--})$, the algebra isomorphism onto $\mathbb{C}\times\mathbb{C}$ whose two coordinates are the two characters; and the <strong>quotient presentation</strong> $\mathbb{R}[x,y]/(x^{2}+1,y^{2}-1)\cong\mathbb{C}\times\mathbb{C}$. To these the <strong>array representation</strong> adds $M_{n}(\mathbb{B}_{\mathrm{r}})\cong M_{n}(\mathbb{C})\times M_{n}(\mathbb{C})$, with $\det M=(\det M^{+},\det M^{-})$ and the invertibility read on the two complex matrices. The four agree on the two coordinates $Q_{++}$ and $Q_{--}$; they involve only the choice of naming the two generators, which does not change the algebra, and the multiplication is <strong>commutative</strong>, <strong>has zero divisors</strong> and is <strong>not a division algebra</strong> in every presentation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -229,7 +228,7 @@ it is compatible with the product, with the identity, and with the determinant i
 <td>the Clifford generators identified with $j$ and $i$</td>
 </tr>
 <tr>
-<td>$\iota(T)=(q_1,q_2)$</td>
+<td>$\iota(Q_\pm)=(Q_{++},Q_{--})$</td>
 <td>the idempotent-coordinate representation</td>
 </tr>
 <tr>
@@ -249,9 +248,9 @@ it is compatible with the product, with the identity, and with the determinant i
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Introduction to Reduced Biquaternion Element Representations</em> (<code>articles_maths/introduction-to-reduced-biquaternion-element-representations.md</code>), for the representations and the two characters.</li>
-<li><em>Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the idempotent splitting.</li>
+<li><em>Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md</code>), for the idempotent splitting.</li>
 <li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the products and the forms.</li>
-<li><em>The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md</code>), for the diagonal model.</li>
+<li><em>The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</em> (<code>articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.md</code>), for the diagonal model.</li>
 <li><em>Biquaternion Other Algebraic Element Representations</em> (<code>articles_maths/biquaternion-other-algebraic-element-representations.md</code>), for the non-commutative companion and the Clifford identification there.</li>
 </ul>
       </div>

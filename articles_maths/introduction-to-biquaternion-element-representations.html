@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,27 +52,27 @@
         <h1 id="introduction-to-biquaternion-element-representations"><strong>Introduction to Biquaternion Element Representations</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles its representation theory. The algebra is simple and semisimple, it has a single simple module up to isomorphism, and every representation is a direct sum of copies of it. This article introduces the representations of $\mathbb{B}$: the dictionary between representations and modules, the classification by a single dimension, Schur's lemma and the intertwiners, the defining and the half-spin representations, the tensor products and their Clebsch–Gordan rule, the real representations and the descent to the real form, and the representations of the group of units. It is the entry of the biquaternion chapter that the other representation articles presuppose.</p>
-<p>The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of <em>Modules over the Biquaternion Algebra</em>, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of <em>The Biquaternioid as a Vector Space over $\mathbb{C}$</em>: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written</p>
+<p>The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of <em>Modules over the Biquaternion Algebra</em>, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of <em>The Biquaternioid as a Vector Space over $\mathbb{C}$</em>: the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$, $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written</p>
 <p>$$
-\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu,\qquad Q_\mu\in\mathbb{C}.
+\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu,\qquad Q_\mu\in\mathbb{C}.
 $$</p>
 <p>The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$ and the group of units is $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}$; both are the subject of <em>Norm and Invertibility in the General Quaternionic Algebra</em> and are cited here rather than restated. The matrix models are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>, and the group-theoretic representation theory — the defining representation of the Lorentz group, the half-spin representations and the Clebsch–Gordan rule — is <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
 <h2 id="the-algebra-and-its-ground-fields">The Algebra and Its Ground Fields</h2>
-<p>The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is complex dimension four with basis $\{e_0,e_1,e_2,e_3\}$, and it is a <strong>central simple</strong> $\mathbb{C}$-algebra:</p>
+<p>The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is complex dimension four with basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, and it is a <strong>central simple</strong> $\mathbb{C}$-algebra:</p>
 <p>$$
-\mathbb{B}\cong M_2(\mathbb{C}),\qquad Z(\mathbb{B})=\mathbb{C}e_0\cong\mathbb{C}.
+\mathbb{B}\cong M_2(\mathbb{C}),\qquad Z(\mathbb{B})=\mathbb{C}e_t\cong\mathbb{C}.
 $$</p>
 <p>The isomorphism is $\mathsf{M}_2$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, and its existence is the reason the whole representation theory is the linear algebra of a single two-dimensional space.</p>
 <p>Two ground structures are read on the same elements. Over its centre $\mathbb{C}$, over which it is an algebra and a four-dimensional vector space, the representations are complex. Over $\mathbb{R}$, over which it has dimension eight, the same elements form a real algebra $\mathbb{B}_{\mathbb{R}}$, and the real representations are a different category; the passage is restriction of scalars, treated below and in <em>Biquaternions as a Vector Space over $\mathbb{R}$</em> and <em>The Realification and the Effect of the Change of Scalars</em>.</p>
-<p><strong>Definition.</strong> The <strong>opposite algebra</strong> $\mathbb{B}^{\mathrm{opp}}$ is the same additive group with the reversed product $\tilde Q\cdot\tilde R=\tilde R\tilde Q$. Quaternion conjugation $\tilde Q\mapsto\tilde{Q}^{\natural}$ is an anti-automorphism, so $\mathbb{B}^{\mathrm{opp}}\cong\mathbb{B}$, and it is the standard way the two products are identified.</p>
+<p><strong>Definition.</strong> The <strong>opposite algebra</strong> $\mathbb{B}^{\mathrm{opp}}$ is the same additive group with the reversed product $\tilde Q_1\cdot\tilde Q_2=\tilde Q_2\tilde Q_1$. Quaternion conjugation $\tilde Q\mapsto\tilde{Q}^{\natural}$ is an anti-automorphism, so $\mathbb{B}^{\mathrm{opp}}\cong\mathbb{B}$, and it is the standard way the two products are identified.</p>
 <h2 id="representations-and-modules">Representations and Modules</h2>
 <p><strong>Definition.</strong> A <strong>representation</strong> of $\mathbb{B}$ is a complex vector space $V$ together with an algebra homomorphism</p>
 <p>$$
-\rho:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(V),\qquad \rho(\tilde P\tilde Q)=\rho(\tilde P)\rho(\tilde Q),\qquad \rho(e_0)=\mathrm{id}_V .
+\rho:\mathbb{B}\longrightarrow\operatorname{End}_{\mathbb{C}}(V),\qquad \rho(\tilde Q_1\tilde Q_2)=\rho(\tilde Q_1)\rho(\tilde Q_2),\qquad \rho(e_t)=\mathrm{id}_V .
 $$</p>
 <p>Its <strong>dimension</strong> is $\dim_{\mathbb{C}}V$. Two representations $\rho,\rho'$ on $V,V'$ are <strong>equivalent</strong> when there is a linear isomorphism $T:V\to V'$ with $T\rho(\tilde Q)=\rho'(\tilde Q)T$ for every $\tilde Q$.</p>
 <p><strong>Theorem (representations are modules).</strong> The representations of $\mathbb{B}$ are the left $\mathbb{B}$-modules: the action $\tilde Q\cdot v=\rho(\tilde Q)v$ makes $V$ a left module, and conversely a left module gives a representation. The correspondence preserves dimension, subobjects, quotients, direct sums and equivalences, so the category of representations is the category of left modules.</p>
-<p><em>Proof.</em> The module axioms are the homomorphism axioms read backwards: distributivity in the scalar is additivity of $\rho(\tilde Q)$, distributivity in the vector and the unit law are the two remaining homomorphism laws, and $(\tilde P\tilde Q)\cdot v=\tilde P\cdot(\tilde Q\cdot v)$ is multiplicativity. A module homomorphism is exactly an intertwining linear map, and direct sums are taken in the underlying complex vector spaces.</p>
+<p><em>Proof.</em> The module axioms are the homomorphism axioms read backwards: distributivity in the scalar is additivity of $\rho(\tilde Q)$, distributivity in the vector and the unit law are the two remaining homomorphism laws, and $(\tilde Q_1\tilde Q_2)\cdot v=\tilde Q_1\cdot(\tilde Q_2\cdot v)$ is multiplicativity. A module homomorphism is exactly an intertwining linear map, and direct sums are taken in the underlying complex vector spaces.</p>
 <p><strong>Definition.</strong> A representation is <strong>irreducible</strong>, or simple, when it has no proper nonzero subrepresentation, and <strong>indecomposable</strong> when it is not a direct sum of two proper subrepresentations. A representation is <strong>faithful</strong> when $\rho$ is injective.</p>
 <p>Because $\mathbb{B}$ is semisimple, every representation is completely reducible, so irreducible and indecomposable coincide, and the classification reduces to the simple modules. That classification is the content of the next section.</p>
 <h2 id="the-simple-module-and-complete-reducibility">The Simple Module and Complete Reducibility</h2>
@@ -81,7 +80,7 @@ $$</p>
 <p>$$
 S\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C},\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S .
 $$</p>
-<p>The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of <em>Modules over the Biquaternion Algebra</em>, cut by the idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$.</p>
+<p>The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of <em>Modules over the Biquaternion Algebra</em>, cut by the idempotent $\tilde\Pi_1=\tfrac12(e_t+i\vec e_z)$.</p>
 <p><em>Proof.</em> The algebra is $M_2(\mathbb{C})$, and a matrix algebra over a field has a single simple left module, its column space $\mathbb{C}^2$; the endomorphism ring is the field by Schur's lemma, and the regular module is the sum of the two column spaces. The identification with $\mathbb{B}\tilde\Pi_1$ is <em>Modules over the Biquaternion Algebra</em>.</p>
 <p><strong>Corollary (classification).</strong> Every left $\mathbb{B}$-module is a direct sum of copies of $S$,</p>
 <p>$$
@@ -147,14 +146,14 @@ $$</p>
 <p>$$
 \mathbb{B}^{\times}\cong\frac{SL_2(\mathbb{C})\times\mathbb{C}^{\times}}{\{\pm1\}},\qquad SL_2(\mathbb{C})=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\},
 $$</p>
-<p>with maximal compact subgroup $U(2)$.</p>
-<p><em>Proof.</em> An element is a unit in $M_2(\mathbb{C})$ exactly when its determinant is nonzero, and the determinant is the norm; the splitting is that of $GL_2(\mathbb{C})$ into its unimodular part and the scalar matrices, whose intersection is $\{\pm I\}$. The norm-one group is $SL_2(\mathbb{C})$ and the compact part is $U(2)$; the matrix groups are <em>The Unitary Group of the Biquaternion Algebra</em> and <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
+<p>with maximal compact subgroup $\mathrm{U}(2)$.</p>
+<p><em>Proof.</em> An element is a unit in $M_2(\mathbb{C})$ exactly when its determinant is nonzero, and the determinant is the norm; the splitting is that of $GL_2(\mathbb{C})$ into its unimodular part and the scalar matrices, whose intersection is $\{\pm I\}$. The norm-one group is $SL_2(\mathbb{C})$ and the compact part is $\mathrm{U}(2)$; the matrix groups are <em>The Unitary Group of the Biquaternion Algebra</em> and <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
 <p><strong>Theorem.</strong> The finite-dimensional continuous representations of the norm-one group are the symmetric powers,</p>
 <p>$$
 SL_2(\mathbb{C})\longrightarrow GL\bigl(\operatorname{Sym}^{n}S\bigr),\qquad \dim_{\mathbb{C}}\operatorname{Sym}^{n}S=n+1 \quad (n\geq0),
 $$</p>
 <p>and they are irreducible and pairwise inequivalent; the symmetric square $\operatorname{Sym}^{2}S$ is the adjoint representation, and the defining representation $S=\operatorname{Sym}^{1}S$ is the source of the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$. The finite-dimensional continuous representations of the compact part are $\det^{k}\otimes\operatorname{Sym}^{n}S$ with $k\in\mathbb{Z}$, $n\geq0$.</p>
-<p><em>Proof.</em> The complex Lie group $SL_2(\mathbb{C})$ is simply connected with complexified Lie algebra $\mathfrak{sl}_2(\mathbb{C})$, whose finite-dimensional representations are the symmetric powers; the statement is the usual highest-weight classification, and the double cover and the adjoint reading are <em>Biquaternion Rotations and Lorentz Transformations</em>. The compact case is the representation theory of $U(2)$, whose irreducible representations are indexed by an integer $\det$-power and a non-negative integer $n$, developed in <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<p><em>Proof.</em> The complex Lie group $SL_2(\mathbb{C})$ is simply connected with complexified Lie algebra $\mathfrak{sl}_2(\mathbb{C})$, whose finite-dimensional representations are the symmetric powers; the statement is the usual highest-weight classification, and the double cover and the adjoint reading are <em>Biquaternion Rotations and Lorentz Transformations</em>. The compact case is the representation theory of $\mathrm{U}(2)$, whose irreducible representations are indexed by an integer $\det$-power and a non-negative integer $n$, developed in <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
 <p><strong>Remark (faithfulness of the group representation).</strong> The defining representation of the unit group is faithful; unlike the split biquaternion algebra, the biquaternion algebra therefore has a faithful irreducible representation. The reason is that $\mathbb{B}$ is simple, and a simple algebra with a single simple module is represented faithfully by it.</p>
 <h2 id="the-relation-to-the-representation-theory-of-the-split-biquaternions">The Relation to the Representation Theory of the Split Biquaternions</h2>
 <p>The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, with one simple module $S\cong\mathbb{C}^2$, division ring $\mathbb{C}$ and regular module of complex dimension four. The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple but not simple, with two simple modules, division ring $\mathbb{H}$ and regular module of real dimension eight. The correspondence is</p>
@@ -165,7 +164,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ is central simple, so its representations are the left $\mathbb{B}$-modules and every one of them is a direct sum of copies of a single simple module $S\cong\mathbb{C}^2$. A representation is equivalent to a complex vector space through the Morita equivalence $W\mapsto S\otimes_{\mathbb{C}}W$, it is classified up to equivalence by its dimension, and the dimension is even; the multiplicities are the complex dimensions. Schur's lemma gives $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$, the intertwiners are the complex matrices $\operatorname{Hom}_{\mathbb{B}}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$, and the double centraliser is $\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$.</p>
 <p>The defining representation is the simple module $S$, irreducible, of complex dimension two and faithful; it is the unique irreducible representation, the smallest faithful one, and the regular representation is $S\oplus S$. The dual and conjugate-dual modules give the half-spin pair, which as left modules coincides. The tensor product of two left modules is a module over the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$, and on the defining module it follows the Clebsch–Gordan rule, with $S\otimes S\cong\operatorname{Sym}^{2}S\oplus\Lambda^{2}S$ of dimensions three and one.</p>
-<p>Over $\mathbb{R}$ every representation is a direct sum of copies of the realification $S_{\mathbb{R}}$ of dimension four, and the algebra has the real forms $\mathbb{B}$, $\mathbb{H}$, $M_2(\mathbb{R})$ and the split quaternions, of which only $\mathbb{H}$ is a division algebra. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})\cong(SL_2(\mathbb{C})\times\mathbb{C}^{\times})/\{\pm1\}$ with maximal compact subgroup $U(2)$; the finite-dimensional continuous representations of the norm-one group are the symmetric powers $\operatorname{Sym}^{n}S$, the adjoint representation is $\operatorname{Sym}^{2}S$, and the defining representation is the source of the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$. The whole theory is the module theory of a single simple algebra, in contrast with the split biquaternion algebra, whose two simple modules and product structure are the subject of <em>Split-Biquaternion Element Representation Theory</em>.</p>
+<p>Over $\mathbb{R}$ every representation is a direct sum of copies of the realification $S_{\mathbb{R}}$ of dimension four, and the algebra has the real forms $\mathbb{B}$, $\mathbb{H}$, $M_2(\mathbb{R})$ and the split quaternions, of which only $\mathbb{H}$ is a division algebra. The group of units is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})\cong(SL_2(\mathbb{C})\times\mathbb{C}^{\times})/\{\pm1\}$ with maximal compact subgroup $\mathrm{U}(2)$; the finite-dimensional continuous representations of the norm-one group are the symmetric powers $\operatorname{Sym}^{n}S$, the adjoint representation is $\operatorname{Sym}^{2}S$, and the defining representation is the source of the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$. The whole theory is the module theory of a single simple algebra, in contrast with the split biquaternion algebra, whose two simple modules and product structure are the subject of <em>Split-Biquaternion Element Representation Theory</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -180,7 +179,7 @@ $$</p>
 <td>Biquaternion algebra, central simple</td>
 </tr>
 <tr>
-<td>$Z(\mathbb{B})=\mathbb{C}e_0$</td>
+<td>$Z(\mathbb{B})=\mathbb{C}e_t$</td>
 <td>Centre, the scalar matrices</td>
 </tr>
 <tr>
@@ -236,7 +235,7 @@ $$</p>
 <td>Norm-one group, double cover of $SO^{+}(1,3)$</td>
 </tr>
 <tr>
-<td>$U(2)$</td>
+<td>$\mathrm{U}(2)$</td>
 <td>Maximal compact subgroup of the unit group</td>
 </tr>
 </tbody>
@@ -247,7 +246,7 @@ $$</p>
 <li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, 2nd ed. 2001), for semisimple rings, Schur's lemma, Morita equivalence and the representation theory of matrix algebras.</li>
 <li>Irving Kaplansky, <em>Fields and Rings</em> (Chicago, 1972), for the structure of simple algebras and their module categories.</li>
 <li>Charles W. Curtis and Irving Reiner, <em>Representation Theory of Finite Groups and Associative Algebras</em> (Wiley, 1962), for intertwiners, tensor products and the Clebsch–Gordan rule.</li>
-<li>Theodore Bröcker and Tammo tom Dieck, <em>Representations of Compact Lie Groups</em> (Springer, 1985), for the representation theory of $U(2)$ and the symmetric powers of $SU(2)$.</li>
+<li>Theodore Bröcker and Tammo tom Dieck, <em>Representations of Compact Lie Groups</em> (Springer, 1985), for the representation theory of $\mathrm{U}(2)$ and the symmetric powers of $SU(2)$.</li>
 <li>Jacques Dixmier, <em>Enveloping Algebras</em> (North-Holland, 1977), for the finite-dimensional representation theory of $\mathfrak{sl}_2(\mathbb{C})$ and the symmetric powers.</li>
 <li>John Voight, <em>Quaternion Algebras</em> (Springer, 2021), for the complexified quaternion algebra, the isomorphism $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ and the descent to the real forms.</li>
 </ul>

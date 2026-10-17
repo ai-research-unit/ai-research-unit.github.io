@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,20 +56,20 @@
 <p>The article assumes the Hilbert space, the bounded operators and the spectral theorem from <em>Hilbert Spaces</em> and <em>Bounded Operators on a Hilbert Space</em>, the strongly continuous one-parameter groups and Stone's theorem from <em>Unitary Operators and the Spectral Measure</em>, the Haar integral and the convolution from <em>Locally Compact Groups and Haar Measure</em> and <em>The Convolution Algebra $L^1(G)$</em>, and the representation theory of Lie algebras from <em>Representations of Lie Algebras</em>. The Plancherel theory for the general semisimple case uses the invariant integral and the discrete series; its detailed computation belongs to <em>Harmonic Analysis on Groups</em>, and the orbit-theoretic description to <em>Unitary Representations and the Orbit Method</em> below in the category. No physics vocabulary occurs, and no interpretation of the representations is made.</p>
 <h2 id="unitary-representations">Unitary Representations</h2>
 <h3 id="the-definition">The Definition</h3>
-<p><strong>Definition.</strong> A <strong>unitary representation</strong> of $G$ on a complex Hilbert space $\mathcal{H}$ is a homomorphism $\pi : G \to U(\mathcal{H})$ into the unitary group such that for every $v \in \mathcal{H}$ the map $g \mapsto \pi(g)v$ is continuous. Two unitary representations are <strong>unitarily equivalent</strong> when there is a unitary $U$ with $U\pi_1(g) = \pi_2(g)U$ for all $g$.</p>
+<p><strong>Definition.</strong> A <strong>unitary representation</strong> of $G$ on a complex Hilbert space $\mathcal{H}$ is a homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ into the unitary group such that for every $v \in \mathcal{H}$ the map $g \mapsto \pi(g)v$ is continuous. Two unitary representations are <strong>unitarily equivalent</strong> when there is a unitary $U$ with $U\pi_1(g) = \pi_2(g)U$ for all $g$.</p>
 <p><strong>Definition.</strong> A unitary representation is <strong>irreducible</strong> when it has no non-trivial closed invariant subspace, and <strong>topologically irreducible</strong> when the only closed invariant subspaces are $0$ and $\mathcal{H}$; for unitary representations the two notions coincide, and the representation is a <strong>direct sum</strong> of representations when $\mathcal{H}$ is the orthogonal direct sum of invariant subspaces.</p>
 <p><strong>Definition.</strong> The <strong>unitary dual</strong> $\widehat{G}$ is the set of equivalence classes of irreducible unitary representations of $G$, with the topology of the Fell topology; for a compact group it is discrete, for a vector group it is the dual vector space, and in general it is a measure-theoretic object rather than a manifold.</p>
 <p><strong>Proposition (Schur's lemma).</strong> An irreducible unitary representation has commutant the scalars: every bounded operator intertwining $\pi$ with itself is a scalar, and for a complex Hilbert space every such operator is automatically scalar, the field being algebraically closed.</p>
 <p><em>Proof.</em> The commutant of an irreducible representation is a von Neumann algebra; a self-adjoint operator in it has a spectral projection which is an invariant projection, hence $0$ or $\mathrm{id}$, so the operator is a scalar; applying this to the real and imaginary parts gives the general bounded case, and the conclusion is Schur's lemma for unitary representations.</p>
 <h3 id="the-derived-representation">The Derived Representation</h3>
-<p><strong>Theorem (Stone).</strong> Let $g : \mathbb{R} \to U(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.</p>
+<p><strong>Theorem (Stone).</strong> Let $g : \mathbb{R} \to \mathrm{U}(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.</p>
 <p><em>Proof.</em> Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is skew-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.</p>
 <p><strong>Definition.</strong> For a unitary representation $\pi$ the <strong>derived representation</strong> on the space of smooth vectors $\mathcal{H}^\infty$ is</p>
 <p>$$
 \pi_* : \mathrm{G} \to \operatorname{End}(\mathcal{H}^\infty), \qquad \pi_*(X)v = \frac{d}{dt}\Big|_{t=0}\pi(\exp tX)v .
 $$</p>
 <p><strong>Theorem.</strong> The derived representation is a representation of the Lie algebra by skew-adjoint operators, $\pi_*(X)^* = -\pi_*(X)$ on $\mathcal{H}^\infty$, so that $i\pi_*(X)$ is self-adjoint and $\pi_*$ extends to a representation of the universal enveloping algebra; the space $\mathcal{H}^\infty$ is dense, invariant and carries a Fréchet structure on which every $\pi_*(u)$ is continuous.</p>
-<p><em>Proof.</em> The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $U(\mathrm{G})$ is the universal property.</p>
+<p><em>Proof.</em> The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $\mathrm{U}(\mathrm{G})$ is the universal property.</p>
 <p><strong>Corollary.</strong> The Casimir element of <em>The Casimir Operator of a Lie Group</em> acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.</p>
 <p><em>Proof.</em> The operator is the sum of products of skew-adjoint operators, hence self-adjoint on the common analytic domain when the sum converges; the formula for the eigenvalue on a highest weight vector is that of <em>The Casimir Operator of a Lie Group</em>, and the self-adjointness is the standard ellipticity of the Casimir on the smooth vectors.</p>
 <h2 id="the-irreducible-decomposition">The Irreducible Decomposition</h2>
@@ -136,7 +135,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\pi : G \to U(\mathcal{H})$</td>
+<td>$\pi : G \to \mathrm{U}(\mathcal{H})$</td>
 <td>a unitary representation</td>
 </tr>
 <tr>

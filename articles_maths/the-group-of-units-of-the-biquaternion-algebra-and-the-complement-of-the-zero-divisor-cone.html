@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,7 +54,7 @@
 <p>Of the twelve algebraic structures that the complex space
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one is an associative unital
 algebra, the biquaternion algebra of <em>Introduction to the Biquaternion Algebra</em>;
-the specificity that its associativity and its two-sided unit $e_0$ deliver is that its invertible
+the specificity that its associativity and its two-sided unit $e_t$ deliver is that its invertible
 elements form a genuine <strong>group</strong> (<em>The Specificities of the Biquaternion Algebra</em>). This article
 studies that group and the exact meaning of its boundary. The group of units is the complement of
 the zero-divisor cone, the algebra is the disjoint union of the two, and the cone is at once the
@@ -83,17 +82,17 @@ the cone is <em>The Topology of the Zero-Divisor Cone</em>; the distribution of 
 remarkable subspaces is <em>Norm and Invertibility in the General Quaternionic Algebra</em>, §<em>The
 Algebraic Norm on the Remarkable Subspaces</em>; the invertibility of the symmetrised product is <em>Norm
 and Invertibility in the Symmetric Plain Algebra</em>; and the classification of the twelve is <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>. None of those is reproved here.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$
-with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$; a general element is $\tilde
-Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$
+with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$ and central scalar imaginary $i$; a general element is $\tilde
+Q=\sum_{\mu\in{t,x,y,z}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the
 coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The product is the general plain bilinear product $\tilde
-P\tilde Q$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
+Q_1\tilde Q_2$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $\langle\cdot\rangle_{\natural}$,
 the reduced norm, is</p>
 <p>$$
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{\natural}\bigr),
 $$</p>
-<p>the scalar of the central square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_0$. It is one of the four
+<p>the scalar of the central square $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$. It is one of the four
 algebraic norms of the space (<em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>), and
 the whole article turns on its not being the algebraic norm of the plain product: $\langle\cdot\rangle$ is the
 diagonal of the plain bilinear form, $\langle\cdot,\cdot\rangle_{\natural}$ is the general quaternionic one, and the two are different
@@ -116,20 +115,20 @@ then</p>
 <p>$$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
 $$</p>
-<p><em>Proof.</em> The natural conjugation is an anti-automorphism, $\tilde P^{\natural}\tilde
-Q^{\natural}=(\tilde Q\tilde P)^{\natural}$. Write $\tilde Q=Q_0e_0+\vec Q$, so that $\tilde
-Q^{\natural}=Q_0e_0-\vec Q$ and</p>
+<p><em>Proof.</em> The natural conjugation is an anti-automorphism, $\tilde Q_1^{\natural}\tilde
+Q_2^{\natural}=(\tilde Q_2\tilde Q_1)^{\natural}$. Write $\tilde Q=Q_te_t+\vec Q$, so that $\tilde
+Q^{\natural}=Q_te_t-\vec Q$ and</p>
 <p>$$
-\tilde Q\tilde Q^{\natural}=Q_0^{2}e_0-\vec Q^{2},
+\tilde Q\tilde Q^{\natural}=Q_t^{2}e_t-\vec Q^{2},
 $$</p>
-<p>whose vector part vanishes and whose scalar part is $Q_0^{2}+\sum_k Q_k^{2}=\langle\tilde Q\rangle_{\natural}$, because
-the vector part of the algebra squares to $\vec Q^{2}=-\sum_kQ_k^{2}e_0$. Hence $\tilde Q\tilde
-Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_0$, and the same computation in the other order gives $\tilde
-Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_0$. If $\langle\tilde Q\rangle_{\natural}\neq0$ the displayed element is a two-sided
+<p>whose vector part vanishes and whose scalar part is $Q_t^{2}+\sum_k Q_k^{2}=\langle\tilde Q\rangle_{\natural}$, because
+the vector part of the algebra squares to $\vec Q^{2}=-\sum_kQ_k^{2}e_t$. Hence $\tilde Q\tilde
+Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$, and the same computation in the other order gives $\tilde
+Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$. If $\langle\tilde Q\rangle_{\natural}\neq0$ the displayed element is a two-sided
 inverse. If $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$ then $\tilde Q^{\natural}\neq0$ and $\tilde Q\tilde
 Q^{\natural}=0$, so $\tilde Q$ is a zero divisor and cannot be invertible; and the origin is not
 invertible. Verified by recomputation on $100$ random elements, the two products $\tilde Q\tilde
-Q^{-1}$ and $\tilde Q^{-1}\tilde Q$ returning $e_0$ with error below $10^{-9}$.</p>
+Q^{-1}$ and $\tilde Q^{-1}\tilde Q$ returning $e_t$ with error below $10^{-9}$.</p>
 <p><strong>Theorem (the partition of the algebra).</strong> The algebra is the disjoint union</p>
 <p>$$
 \mathbb{B}=\mathbb{B}^\times\uplus\mathcal{C},\qquad
@@ -186,26 +185,26 @@ the apex. <strong>The complement of the cone is the group of units, and the comp
 set is the group together with the origin.</strong> The apex is therefore the one point that separates the
 two statements: it lies on the cone and in the complement of the zero-divisor set, it is the only
 element of the algebra that is neither a unit nor a zero divisor, and it is the apex of the boundary
-of the group while being no zero divisor itself. The identity $e_0$ is the mirror case: it is off
+of the group while being no zero divisor itself. The identity $e_t$ is the mirror case: it is off
 the cone, in the group, and in no zero-divisor set.</p>
 <h2 id="multiplicativity-makes-the-complement-a-group">Multiplicativity Makes the Complement a Group</h2>
-<p><strong>Theorem (the norm $\langle\cdot\rangle_{\natural}$ is multiplicative).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p><strong>Theorem (the norm $\langle\cdot\rangle_{\natural}$ is multiplicative).</strong> For all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,</p>
 <p>$$
-\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural}.
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}.
 $$</p>
 <p><em>Proof.</em> The natural conjugation reverts the order, so</p>
 <p>$$
-(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}
-=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}
-=\tilde P\,\langle\tilde Q\rangle_{\natural}e_0\,\tilde P^{\natural}
-=\langle\tilde Q\rangle_{\natural}\tilde P\tilde P^{\natural}
-=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}e_0,
+(\tilde Q_1\tilde Q_2)(\tilde Q_1\tilde Q_2)^{\natural}
+=\tilde Q_1\tilde Q_2\tilde Q_2^{\natural}\tilde Q_1^{\natural}
+=\tilde Q_1\,\langle\tilde Q_2\rangle_{\natural}e_t\,\tilde Q_1^{\natural}
+=\langle\tilde Q_2\rangle_{\natural}\tilde Q_1\tilde Q_1^{\natural}
+=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}e_t,
 $$</p>
-<p>the scalar $\langle\tilde Q\rangle_{\natural}$ being central. Verified by recomputation on $100$ random pairs, error below
+<p>the scalar $\langle\tilde Q_2\rangle_{\natural}$ being central. Verified by recomputation on $100$ random pairs, error below
 $10^{-9}$.</p>
 <p><strong>Corollary (the cone is absorbing and the units are closed).</strong> The cone is closed under the product
-in the strong sense that a cone factor forces a cone product: if $\langle\tilde P\rangle_{\natural}=0$ then $\langle\tilde
-P\tilde Q\rangle_{\natural}=\langle\tilde Q\tilde P\rangle_{\natural}=0$ for every $\tilde Q$. The group of units is closed under the
+in the strong sense that a cone factor forces a cone product: if $\langle\tilde Q_1\rangle_{\natural}=0$ then $\langle\tilde
+Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_2\tilde Q_1\rangle_{\natural}=0$ for every $\tilde Q_2$. The group of units is closed under the
 product, and with it the inverse formula is closed under inversion.</p>
 <p><em>Proof.</em> Multiply the multiplicativity by zero in the two orders; closure under multiplication
 follows from the non-vanishing of the two factors, and closure under inversion from $\tilde
@@ -217,26 +216,26 @@ N:\mathbb{B}^\times\longrightarrow\mathbb{C}^\times,\qquad \tilde Q\longmapsto \
 $$</p>
 <p>whose kernel is the <strong>norm-one group</strong> $\mathbb{B}^\times_1=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\}$.</p>
 <p><em>Proof.</em> Multiplicativity makes the restriction a homomorphism into the nonzero complex numbers; it
-is surjective because the centre gives $\langle Ae_0\rangle_{\natural}=A^{2}$ and every nonzero complex number is a square,
+is surjective because the centre gives $\langle Ae_t\rangle_{\natural}=A^{2}$ and every nonzero complex number is a square,
 the map being two-to-one on the central line; the kernel is the preimage of $1$, a normal subgroup.
 The identification of the norm-one group with $SL_2(\mathbb{C})$ and the two-to-one covering
-$\mathbb{C}^\times e_0\times\mathbb{B}^\times_1\to\mathbb{B}^\times$ of kernel $\{\pm e_0\}$ are
+$\mathbb{C}^\times e_t\times\mathbb{B}^\times_1\to\mathbb{B}^\times$ of kernel $\{\pm e_t\}$ are
 <em>The Biquaternion Unit Group as a Topological Group</em>.</p>
 <p><strong>Remark (why the complement is a group here and nowhere else).</strong> The two closure properties are
 exactly what a set of the form $\{\text{form}\neq0\}$ needs in order to be a group, and both are
 read from multiplicativity. The norm $\langle\cdot\rangle_{\natural}$ supplies them, so its non-vanishing set is the group of
 units of the plain product. The algebraic norm of the plain product, $\langle\cdot\rangle$, supplies neither, and its
-non-vanishing set is not closed under the product: the elements $\tilde P=e_0-\tfrac13e_1$ and
-$\tilde Q=e_0+2e_1$ have $\langle\tilde P\rangle=\tfrac89$ and $\langle\tilde Q\rangle=-3$, both nonzero, while $\langle\tilde
-P\tilde Q\rangle=0$. The non-vanishing set of $\langle\cdot\rangle$ therefore carries no group, although it is closed under
+non-vanishing set is not closed under the product: the elements $\tilde Q_1=e_t-\tfrac13\vec e_x$ and
+$\tilde Q_2=e_t+2\vec e_x$ have $\langle\tilde Q_1\rangle=\tfrac89$ and $\langle\tilde Q_2\rangle=-3$, both nonzero, while $\langle\tilde
+Q_1\tilde Q_2\rangle=0$. The non-vanishing set of $\langle\cdot\rangle$ therefore carries no group, although it is closed under
 the inverse formula; <strong>a group of units needs a multiplicative norm, and the multiplicative norm of
-the space is not the norm of the plain product.</strong> Verified by recomputation: $\langle\tilde P\rangle=\tfrac89$,
-$\langle\tilde Q\rangle=-3$, $\langle\tilde P\tilde Q\rangle$ below $10^{-15}$.</p>
+the space is not the norm of the plain product.</strong> Verified by recomputation: $\langle\tilde Q_1\rangle=\tfrac89$,
+$\langle\tilde Q_2\rangle=-3$, $\langle\tilde Q_1\tilde Q_2\rangle$ below $10^{-15}$.</p>
 <h2 id="the-boundary-is-the-cone-of-the-norm-and-not-the-cone-of-the-product">The Boundary Is the Cone of the Norm and Not the Cone of the Product</h2>
 <p>The algebraic norm of the plain product is the general plain bilinear form read at the two equal
 arguments,</p>
 <p>$$
-\langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{2}=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},
+\langle\tilde Q\rangle=\mathrm{Sc}\bigl(\tilde Q\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
 $$</p>
 <p>of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$; it is not multiplicative, its vanishing
 set is a complex cone of real dimension six, and it is neither the light cone nor the zero-divisor
@@ -249,10 +248,10 @@ both directions,</p>
 \qquad
 \langle\tilde Q\rangle\neq0\ \not\Longrightarrow\ \tilde Q\in\mathbb{B}^\times,
 $$</p>
-<p>with the witnesses $\tilde Q=e_0+e_1$, a unit of vanishing $\langle\cdot\rangle$, and $\tilde Q=e_0+ie_1$, a zero
+<p>with the witnesses $\tilde Q=e_t+\vec e_x$, a unit of vanishing $\langle\cdot\rangle$, and $\tilde Q=e_t+i\vec e_x$, a zero
 divisor of non-vanishing $\langle\cdot\rangle$.</p>
-<p><em>Proof.</em> $(e_0+e_1)(e_0-e_1)=2e_0$, so $e_0+e_1$ is invertible, while $\langle e_0+e_1\rangle=1-1=0$. And
-$(e_0+ie_1)(e_0-ie_1)=0$, so $e_0+ie_1$ is a zero divisor, while $\langle e_0+ie_1\rangle=1-i^{2}=2$.</p>
+<p><em>Proof.</em> $(e_t+\vec e_x)(e_t-\vec e_x)=2e_t$, so $e_t+\vec e_x$ is invertible, while $\langle e_t+\vec e_x\rangle=1-1=0$. And
+$(e_t+i\vec e_x)(e_t-i\vec e_x)=0$, so $e_t+i\vec e_x$ is a zero divisor, while $\langle e_t+i\vec e_x\rangle=1-i^{2}=2$.</p>
 <p><strong>Corollary (the boundary of the group).</strong> The boundary of the group of units is the zero-divisor
 cone $\mathcal{C}=\{N=0\}$, and not the vanishing set $\{B=0\}$ of the product's own algebraic norm.
 The two cones meet, and neither contains the other.</p>
@@ -316,7 +315,7 @@ and Not the Cone of the Product</em>.</p>
 connected, of real dimension eight, and the cone of real codimension two does not disconnect the
 algebra; the group is the connected complement of the cone.</p>
 <p><em>Proof.</em> The polar decomposition retracts the group onto its maximal compact subgroup
-$U(\mathbb{B})\cong U(2)$, a continuous image of a connected group; the retraction, the structure of
+$\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$, a continuous image of a connected group; the retraction, the structure of
 the maximal compact subgroup and the connectedness are <em>The Biquaternion Unit Group as a Topological
 Group</em>, §<em>The Topology of the Group</em>, and <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
 <p><strong>The group in the matrix model (cited).</strong> Under $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the
@@ -347,7 +346,7 @@ here in the form the boundary takes.</p>
 <td>centre $\mathbb{C}_{\mathbb{B}}$</td>
 <td>$2$</td>
 <td>the apex alone</td>
-<td>the nonzero scalars $\mathbb{C}^\times e_0$</td>
+<td>the nonzero scalars $\mathbb{C}^\times e_t$</td>
 </tr>
 <tr>
 <td>quaternion subspace $\mathbb{H}_{\mathbb{B}}$</td>
@@ -399,32 +398,32 @@ four general products and the symmetrised plain product are collected first.</p>
 <tbody>
 <tr>
 <td>the algebra</td>
-<td>$e_0$, two-sided; associative</td>
-<td>the units of the definition: $\{N\neq0\}$, with $\tilde P^{-1}=\tilde P^{\natural}/\langle\tilde P\rangle_{\natural}$</td>
+<td>$e_t$, two-sided; associative</td>
+<td>the units of the definition: $\{N\neq0\}$, with $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\langle\tilde Q_1\rangle_{\natural}$</td>
 <td><strong>yes</strong></td>
 </tr>
 <tr>
 <td>$\mathrm{SPA}$</td>
-<td>$e_0$, two-sided; not associative</td>
+<td>$e_t$, two-sided; not associative</td>
 <td>the elements of non-vanishing norm, with the Jordan inverse</td>
 <td>no</td>
 </tr>
 <tr>
 <td>$\mathrm{GQA}$</td>
-<td>$e_0$, left alone; not associative</td>
-<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde P^{-1})^{\natural}$</td>
+<td>$e_t$, left alone; not associative</td>
+<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde Q_1^{-1})^{\natural}$</td>
 <td>no</td>
 </tr>
 <tr>
 <td>$\mathrm{GPS}$</td>
-<td>$e_0$, right alone; not associative</td>
-<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde P^{-1})^{*}$</td>
+<td>$e_t$, right alone; not associative</td>
+<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde Q_1^{-1})^{*}$</td>
 <td>no</td>
 </tr>
 <tr>
 <td>$\mathrm{GQS}$</td>
 <td>no unit on either side; not associative</td>
-<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde P^{-1})^{\natural*}$</td>
+<td>not defined; the inverse equations select $\{N\neq0\}$, solved by $(\tilde Q_1^{-1})^{\natural*}$</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -432,18 +431,18 @@ four general products and the symmetrised plain product are collected first.</p>
 <p>The definition of the inverse presupposes a two-sided unit, so the invertibility of the definitions
 exists only in the two unital structures of the table, the plain and the symmetrised plain. The
 three non-unital general products are read through the inverse equations, which use the fixed
-element $e_0$ and make no appeal to a unit of the product.</p>
+element $e_t$ and make no appeal to a unit of the product.</p>
 <p><strong>Theorem (the inverse equations of the four general products).</strong> For each of the four general
-products, and for a nonzero element $\tilde P$, the two equations $\tilde P\star\tilde X=e_0$ and
-$\tilde X\star\tilde P=e_0$ have a solution exactly when $\langle\tilde P\rangle_{\natural}\neq0$, the solutions being
+products, and for a nonzero element $\tilde Q_1$, the two equations $\tilde Q_1\star\tilde Q_2=e_t$ and
+$\tilde Q_2\star\tilde Q_1=e_t$ have a solution exactly when $\langle\tilde Q_1\rangle_{\natural}\neq0$, the solutions being
 those of the table above. The cone is therefore the complement of the elements solvable on both
 sides of the inverse equations, for each of the four products at once.</p>
 <p><em>Proof.</em> The solutions are exhibited in the table and satisfy the equations because the natural
-conjugation and the coefficient conjugation revert the product, $(\tilde P\tilde
-Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, so that $\tilde P^{\natural}(\tilde
-P^{-1})^{\natural}=(\tilde P^{-1}\tilde P)^{\natural}=e_0$ and likewise with the coefficient
+conjugation and the coefficient conjugation revert the product, $(\tilde Q_1\tilde
+Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$, so that $\tilde Q_1^{\natural}(\tilde
+Q_1^{-1})^{\natural}=(\tilde Q_1^{-1}\tilde Q_1)^{\natural}=e_t$ and likewise with the coefficient
 conjugation. Conversely, the matrix model turns the equations into matrix equations with an
-invertible right factor, so the multiplication by $\tilde P$ is invertible and $\langle\tilde P\rangle_{\natural}\neq0$.
+invertible right factor, so the multiplication by $\tilde Q_1$ is invertible and $\langle\tilde Q_1\rangle_{\natural}\neq0$.
 The statement is <em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$
 Space</em>, §<em>The One-Sided Inverse Equations</em>, and the verification is by recomputation on $100$ random
 off-cone elements for each of the three non-unital products.</p>
@@ -452,44 +451,44 @@ general products that solve the inverse equations on both sides are one and the 
 complement of the cone; the table says where that set becomes a group. <strong>The invertible elements of
 the four general products are the same set, and the set is a group in the biquaternion algebra
 alone.</strong> the algebra has both the two-sided unit and the associative product; $\mathrm{GQA}$ and
-$\mathrm{GPS}$ have a one-sided unit and a non-associative product, so the element $e_0$ is not even
+$\mathrm{GPS}$ have a one-sided unit and a non-associative product, so the element $e_t$ is not even
 a two-sided identity and no group can be read; $\mathrm{GQS}$ has no unit at all.</p>
 <p><strong>The symmetrised plain algebra: the same set and no group.</strong> The symmetrised product
-$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ has $e_0$ as a two-sided unit, and its invertible
-elements are again the elements of non-vanishing norm: for $\langle\tilde P\rangle_{\natural}\neq0$ the two-sided solution
+$\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ has $e_t$ as a two-sided unit, and its invertible
+elements are again the elements of non-vanishing norm: for $\langle\tilde Q_1\rangle_{\natural}\neq0$ the two-sided solution
 is the <strong>Jordan inverse</strong></p>
 <p>$$
-\tilde P^{\bullet}=\frac{2P_0e_0-\tilde P}{\langle\tilde P\rangle_{\natural}},
+\tilde Q_1^{\bullet}=\frac{2Q_{1t}e_t-\tilde Q_1}{\langle\tilde Q_1\rangle_{\natural}},
 \qquad
-\tilde P\bullet\tilde P^{\bullet}=\tilde P^{\bullet}\bullet\tilde P=e_0,
+\tilde Q_1\bullet\tilde Q_1^{\bullet}=\tilde Q_1^{\bullet}\bullet\tilde Q_1=e_t,
 $$</p>
-<p>which is the Cayley–Hamilton inverse of the matrix model, $\mathsf{M}_2(2P_0e_0-\tilde
-P)=2P_0\mathrm{I}_2-\mathsf{M}_2(\tilde P)=\operatorname{tr}\mathsf{M}_2(\tilde
-P)\mathrm{I}_2-\mathsf{M}_2(\tilde P)$; and a nonzero element of the cone is a zero divisor of the
+<p>which is the Cayley–Hamilton inverse of the matrix model, $\mathsf{M}<em 1t="1t">2(2Q</em>e_t-\tilde
+Q_1)=2Q_{1t}\mathrm{I}_2-\mathsf{M}_2(\tilde Q_1)=\operatorname{tr}\mathsf{M}_2(\tilde
+Q_1)\mathrm{I}_2-\mathsf{M}_2(\tilde Q_1)$; and a nonzero element of the cone is a zero divisor of the
 symmetrised product, hence not invertible. But the product is not associative, and the invertible
-elements form <strong>no group</strong>: the elements $e_1$ and $e_2$ are invertible, with $e_1\bullet(-e_1)=e_0$
-and $e_2\bullet(-e_2)=e_0$, while $e_1\bullet e_2=\tfrac12(e_3-e_3)=0$ is not. The complement of the
-zero-divisor set of the symmetrised product, which is $\{P_0\neq0,N\neq0\}\cup\{0\}$, is not the
-invertible set either: the pure element $e_1$ is a zero divisor and invertible at once, and the
+elements form <strong>no group</strong>: the elements $\vec e_x$ and $\vec e_y$ are invertible, with $\vec e_x\bullet(-\vec e_x)=e_t$
+and $\vec e_y\bullet(-\vec e_y)=e_t$, while $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_z-\vec e_z)=0$ is not. The complement of the
+zero-divisor set of the symmetrised product, which is $\{Q_{1t}\neq0,N\neq0\}\cup\{0\}$, is not the
+invertible set either: the pure element $\vec e_x$ is a zero divisor and invertible at once, and the
 origin is a non-zero-divisor that is not invertible. The invertibility of the symmetrised product is
 <em>Norm and Invertibility in the Symmetric Plain Algebra</em>, and it is quoted here for the comparison
 only. Verified by recomputation: the Cayley–Hamilton solution returns the unit on $100$ random
-elements of non-vanishing norm, and $e_1\bullet e_2=0$.</p>
+elements of non-vanishing norm, and $\vec e_x\bullet \vec e_y=0$.</p>
 <p><strong>The seven with no unit on either side.</strong> The six structures $\mathrm{APA}$, $\mathrm{SQA}$,
 $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ and $\mathrm{AQS}$ have a unit on neither side, and
 the seventh, the symmetric quaternionic sesqualgebra $\mathrm{SQS}$, has none either. The definition
 of the inverse presupposes a two-sided unit, so no invertible element and no group of units is
-defined for any of them; the fixed element $e_0$ is a value of some of them, $e_0\star e_0=e_0$ in
+defined for any of them; the fixed element $e_t$ is a value of some of them, $e_t\star e_t=e_t$ in
 each symmetrised structure, but it is the identity of none, which is exactly what the absence of a
 two-sided unit says. Six of the seven have the whole punctured space for zero-divisor set, so the
 complement of the zero-divisor set degenerates to the origin alone; $\mathrm{SQS}$ has the enlarged
-set, and its complement is the reduced set $\{Q_0\neq0,N\neq0\}\cup\{0\}$.</p>
+set, and its complement is the reduced set $\{Q_t\neq0,N\neq0\}\cup\{0\}$.</p>
 <p><strong>Theorem (the isolation).</strong> Of the twelve structures of the complex space, the general plain
 algebra is the only one whose invertible elements form a group; equivalently, the only one in which
 the complement of the zero-divisor cone is a group under the product of the structure.</p>
 <p><em>Proof.</em> By the table only the algebra and $\mathrm{SPA}$ have a two-sided unit and therefore
 invertible elements at all, and $\mathrm{SPA}$ fails the closure of them under its own product,
-$e_1\bullet e_2=0$ against $e_1,e_2$ invertible, so they form no group. The ten others have no
+$\vec e_x\bullet \vec e_y=0$ against $\vec e_x,\vec e_y$ invertible, so they form no group. The ten others have no
 two-sided unit: for $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$ the inverse equations detect
 the off-cone elements without supplying an identity, and for the seven structures without a unit the
 invertibility is not defined at all. The complement of the cone is the set of non-vanishing norm for
@@ -508,18 +507,18 @@ $\mathcal{C}=\{N=0\}$ is exactly its complement, so that the algebra is the disj
 $\mathbb{B}=\mathbb{B}^\times\uplus\mathcal{C}$, the zero-divisor set is the punctured cone, and the
 complement of the zero-divisor set is the group together with the origin. The boundary of the group
 is the cone of the norm $\langle\cdot\rangle_{\natural}$ of the general quaternionic bilinear form and not the cone of the
-<strong>plain product's own</strong> algebraic norm $\langle\cdot\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$: the element $e_0+e_1$
-is a unit with $\langle\cdot\rangle=0$ and the element $e_0+ie_1$ is a zero divisor with $\langle\cdot\rangle=2$, so $\langle\cdot\rangle$ decides
-nothing, while $\langle\cdot\rangle_{\natural}$ is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, which makes the
+<strong>plain product's own</strong> algebraic norm $\langle\cdot\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$: the element $e_t+\vec e_x$
+is a unit with $\langle\cdot\rangle=0$ and the element $e_t+i\vec e_x$ is a zero divisor with $\langle\cdot\rangle=2$, so $\langle\cdot\rangle$ decides
+nothing, while $\langle\cdot\rangle_{\natural}$ is multiplicative, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, which makes the
 cone absorbing, the units closed under the product and the inverse, and $\langle\cdot\rangle_{\natural}$ a surjective
 homomorphism $\mathbb{B}^\times\to\mathbb{C}^\times$ with kernel the norm-one group. The group is
 open, dense and connected, of real dimension eight, of the homotopy type $S^{1}\times S^{3}$ with
-$\pi_1\cong\mathbb{Z}$, with the cone of real codimension two as its boundary; on the centre and the
+$\pi_x\cong\mathbb{Z}$, with the cone of real codimension two as its boundary; on the centre and the
 two quaternionic subspaces the cone is empty and the group is everything but the origin, while on
 the vector subspace and the two sectors the boundary is the complex cone and the light cone. Across
 the twelve structures the complement of the cone is one set and one group: the set is shared by the
-four general products, whose inverse equations are solved by $(\tilde P^{-1})^{\natural}$, $(\tilde
-P^{-1})^{<em>}$ and $(\tilde P^{-1})^{\natural</em>}$ for the off-cone elements, and the group structure
+four general products, whose inverse equations are solved by $(\tilde Q_1^{-1})^{\natural}$, $(\tilde
+Q_1^{-1})^{<em>}$ and $(\tilde Q_1^{-1})^{\natural</em>}$ for the off-cone elements, and the group structure
 exists in the biquaternion algebra alone: the symmetrised plain algebra has the same invertible set
 and no group, the three other general products select the same off-cone set through the inverse
 equations without a two-sided identity, and the seven structures without a unit have no invertible
@@ -558,7 +557,7 @@ element at all.</p>
 <td>the inverse of an element of the group</td>
 </tr>
 <tr>
-<td>$e_0+e_1$; $e_0+ie_1$</td>
+<td>$e_t+\vec e_x$; $e_t+i\vec e_x$</td>
 <td>the unit with $\langle\cdot\rangle=0$; the zero divisor with $\langle\cdot\rangle=2$</td>
 </tr>
 <tr>
@@ -570,11 +569,11 @@ element at all.</p>
 <td>the norm as a homomorphism; kernel the norm-one group $\mathbb{B}^\times_1$</td>
 </tr>
 <tr>
-<td>$(2P_0e_0-\tilde P)/\langle\tilde P\rangle_{\natural}$</td>
+<td>$(2Q_{1t}e_t-\tilde Q_1)/\langle\tilde Q_1\rangle_{\natural}$</td>
 <td>the Jordan inverse of the symmetrised plain product</td>
 </tr>
 <tr>
-<td>$e_1\bullet e_2=0$</td>
+<td>$\vec e_x\bullet \vec e_y=0$</td>
 <td>the witness that the invertible elements of the symmetrised product form no group</td>
 </tr>
 </tbody>

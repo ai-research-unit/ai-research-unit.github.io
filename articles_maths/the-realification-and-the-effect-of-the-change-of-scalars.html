@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -216,8 +215,8 @@ for the two sesquilinear forms.</p>
 </tr>
 <tr>
 <td>a left multiplication and its trace</td>
-<td>$\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P})=4\,\mathrm{Sc}(\tilde P)$</td>
-<td>$\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde P)$, twice the real part</td>
+<td>$\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q_1})=4\,\mathrm{Sc}(\tilde Q_1)$</td>
+<td>$\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1})=8\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q_1)$, twice the real part</td>
 </tr>
 <tr>
 <td>the endomorphism ring</td>
@@ -271,12 +270,12 @@ for the two sesquilinear forms.</p>
 <p><em>Proof.</em> The broad count is the theorem above and the definition of a sesqualgebra over $(\mathbb{C},\varsigma)$, whose two scalar rules are the two slots of the $S$ family. The associative unital count is that only the general plain product of the twelve is associative, by <em>Introduction to the Biquaternion Algebra</em>, §<em>Associativity</em>, and by the collapse theorem of <em>Sesqualgebras</em> for the sesquilinear family — the statement is about the ring and so is the same in the two readings.</p>
 <p><strong>Theorem (the centre carries the distinction, and the products do not merge).</strong> After the realification the six products of the $S$ family are no longer distinguished from the six of the $A$ family by the field $\mathbb{R}$; they are distinguished by the centre $\mathbb{C}_{\mathbb{B}}$, over which the first six are linear and the second six conjugate-linear. The distinction is an object of the reading and not of the product: the product, its table and every ring property are the same before and after.</p>
 <p><em>Proof.</em> The criteria of §<em>The Realification of a Linear Map</em> apply to the second slot, with $V=W=\mathbb{B}$ and with $\mathbb{C}_{\mathbb{B}}$ in place of $\mathbb{C}$. The last clause is the dictionary.</p>
-<p><strong>Remark (the trap of the real part).</strong> A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_0e_0+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of <em>The 12 Products of the Biquaternioid Complex Space</em>, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.</p>
+<p><strong>Remark (the trap of the real part).</strong> A computation of the twelve restricted to the real part of the space — the quaternionic elements $Q_te_t+\vec Q$, a real space of dimension four — sees ten operations and not twelve, because two pairs coincide there: the antisymmetric plain product with the antisymmetric quaternionic sesquilinear product, and the symmetric quaternionic product with the symmetric plain sesquilinear product. The corpus records the count of ten in the comment of <em>The 12 Products of the Biquaternioid Complex Space</em>, with the caution that such a computation "can hide an obstruction or a structure that distinguishes the two members of a coincident pair". Twelve distinct operations require the full eight-dimensional real space, and the distinction of the twelve is a statement about the ring read on the whole space.</p>
 <h2 id="what-is-specific-to-the-biquaternion-instance">What Is Specific to the Biquaternion Instance</h2>
 <p>Four things are specific to the real reading of $\mathbb{B}$.</p>
 <p><strong>The odd real subalgebras.</strong> Over $\mathbb{C}$ a subalgebra of $\mathbb{B}$ is a complex subspace, of even real dimension; over $\mathbb{R}$ there are subalgebras of every dimension up to eight. Among the coordinate subspaces of the real basis the closed spans have real dimensions $1,2,4,8$ with counts $1,7,7,1$, so no closed coordinate span has odd dimension above one — and a subalgebra of odd dimension nevertheless exists:</p>
 <p>$$
-\mathbb{R}\{e_0,\ e_1+ie_2,\ ie_1-e_2\},
+\mathbb{R}\{e_t,\ \vec e_x+i\vec e_y,\ i\vec e_x-\vec e_y\},
 $$</p>
 <p>of real dimension three, whose two non-unit generators are orthogonal, of square zero and of vanishing product. Closure is a condition on a subspace, not on a coordinate span.</p>
 <p><strong>The Galois-twisted automorphisms.</strong> Every $\mathbb{R}$-linear automorphism of $\mathbb{B}$ restricts on the centre to an automorphism of $\mathbb{C}$ read over $\mathbb{R}$, and there is an exact sequence</p>
@@ -286,14 +285,14 @@ $$</p>
 <p>$\kappa(\lambda)=\bar\lambda$ being the Galois conjugation. The real automorphism group is therefore twice the complex one, the extra coset being conjugate-linear: it is the structure that fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, represented by the coefficient conjugation $\bar{\cdot}$. The derivations do not grow, $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ agreeing with $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})$, and the reason is the centrality of $i$. The coset is the descent of <em>Real Forms and the Descent of an Algebra</em>.</p>
 <p><strong>The trace form.</strong> The <strong>trace form</strong> of the left regular representation,</p>
 <p>$$
-\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde P}L_{\tilde Q}\bigr)=8\,\operatorname{Re}\langle\tilde P,\tilde Q\rangle,
+\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde Q_1}L_{\tilde Q_2}\bigr)=8\,\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle,
 $$</p>
 <p>is a symmetric bilinear form of signature $(4,4)$ with zero radical, invariant under every automorphism of the algebra. Its normalisation carries the dimension ratio of the dictionary: the complex trace counts $\mathrm{Sc}$ with the factor $4$ and the real trace with the factor $8$, and $\tau$ is the real invariant form of the algebra, the reading of the general plain bilinear form in which the invariance is a one-line statement.</p>
 <p><strong>The real models.</strong> Over $\mathbb{C}$ the algebra is $M_2(\mathbb{C})$ acting on $\mathbb{C}^2$, the complex spinor module. Over $\mathbb{R}$ the same elements act on the realification $\mathbb{R}^4=\mathbb{C}^2_{\mathbb{R}}$ and on the left regular module $\mathbb{R}^8$, the two readings $M_2(\mathbb{C})$ and $\mathsf{M}_4^{L}$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> and <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions</em>. The Clifford reading of the same ring, the even Clifford algebra of the Minkowski form of signature $(1,3)$, is a third real model; it is the subject of <em>Biquaternion Other Algebraic Element Representations</em> and is not developed here.</p>
 <h2 id="summary">Summary</h2>
 <p>The realification keeps the elements, the addition and the product, restricts the scalars to $\mathbb{R}$, and forgets the complex structure $J$; the pair $(V_{\mathbb{R}},J)$ is the complex space again, and nothing else is lost. A $\mathbb{C}$-linear map becomes an $\mathbb{R}$-linear map commuting with $J$, and the passage brings in the conjugate-linear maps, which are the $\mathbb{R}$-linear maps anticommuting with $J$ and have no $\mathbb{C}$-linear reading. A symmetric complex bilinear form realifies to the split signature $(n,n)$ and to a second real form, its imaginary part; a Hermitian form realifies to one real form of doubled inertia. The dimension doubles, the subobjects change shape, the automorphism group grows by the conjugate-linear coset, and the ideals, the idempotents, the zero divisors and every other object read from the ring alone do not move at all.</p>
 <p>Read on the twelve algebraic structures, the passage turns the six $\mathbb{C}$-bilinear products and the six $\mathbb{C}$-sesquilinear ones into twelve $\mathbb{R}$-bilinear products; the sesqualgebra structure disappears with the nontrivial involution of the base field, and the distinction survives as linearity against conjugate-linearity over the centre $\mathbb{C}_{\mathbb{B}}$.</p>
-<p>Four things are specific to the biquaternion instance and are collected at the end. A three-dimensional real subalgebra exists, $\mathbb{R}\{e_0,e_1+ie_2,ie_1-e_2\}$, although no closed coordinate span has odd dimension above one. The real automorphism group is the complex one doubled by the conjugate-linear Galois coset, and the coset is represented by the coefficient conjugation, which fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on $i\mathbb{H}_{\mathbb{B}}$; the derivations do not grow. The trace form $\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$ is a symmetric bilinear form of signature $(4,4)$, of zero radical, invariant under every automorphism. The real models are the complex spinor one, the regular one $\mathsf{M}_4^{L}$ on $\mathbb{R}^8$, and the even Clifford algebra of the Minkowski form of signature $(1,3)$.</p>
+<p>Four things are specific to the biquaternion instance and are collected at the end. A three-dimensional real subalgebra exists, $\mathbb{R}\{e_t,\vec e_x+i\vec e_y,i\vec e_x-\vec e_y\}$, although no closed coordinate span has odd dimension above one. The real automorphism group is the complex one doubled by the conjugate-linear Galois coset, and the coset is represented by the coefficient conjugation, which fixes $\mathbb{H}_{\mathbb{B}}$ pointwise and negates it on $i\mathbb{H}_{\mathbb{B}}$; the derivations do not grow. The trace form $\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$ is a symmetric bilinear form of signature $(4,4)$, of zero radical, invariant under every automorphism. The real models are the complex spinor one, the regular one $\mathsf{M}_4^{L}$ on $\mathbb{R}^8$, and the even Clifford algebra of the Minkowski form of signature $(1,3)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -344,7 +343,7 @@ $$</p>
 <td>the six products linear, and the six conjugate-linear, over the centre $\mathbb{C}_{\mathbb{B}}$</td>
 </tr>
 <tr>
-<td>$\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$</td>
+<td>$\tau(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_1}L_{\tilde Q_2})=8\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle$</td>
 <td>the trace form of the left regular representation, symmetric bilinear of signature $(4,4)$, zero radical, invariant under every automorphism</td>
 </tr>
 <tr>
@@ -352,7 +351,7 @@ $$</p>
 <td>the Galois twist of the automorphism group; the real group is twice the complex one, the extra coset conjugate-linear, represented by the coefficient conjugation</td>
 </tr>
 <tr>
-<td>$\mathbb{R}\{e_0,e_1+ie_2,ie_1-e_2\}$</td>
+<td>$\mathbb{R}\{e_t,\vec e_x+i\vec e_y,i\vec e_x-\vec e_y\}$</td>
 <td>the three-dimensional real subalgebra, its two non-unit generators orthogonal, of square zero and of vanishing product</td>
 </tr>
 </tbody>

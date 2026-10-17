@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -121,7 +120,7 @@ $$</p>
 G_m = \{g \in G : g\cdot m = m\}, \qquad m \in M,
 $$</p>
 <p>is open in $G$; equivalently the action factors through a discrete quotient of $G$. When it is continuous, the orbits are discrete and the orbit map $g \mapsto g\cdot m$ is locally constant for each $m$.</p>
-<p><strong>Proof.</strong> The space $M$ is discrete, so a map $G \to M$ is continuous exactly when it is locally constant, that is when every point has a neighbourhood on which it is constant; the orbit map $g\mapsto g\cdot m$ being locally constant is exactly the openness of its stabiliser $G_m$. The action is continuous at $(g_0, m_0)$ exactly when there is a neighbourhood $U$ of $g_0$ with $g\cdot m_0 = g_0\cdot m_0$ for $g \in U$, which is the openness of $G_{m_0}$ after translating by $g_0^{-1}$. The factorisation statement is the definition of the quotient by the open normal subgroup $\bigcap_m G_m$.</p>
+<p><strong>Proof.</strong> The space $M$ is discrete, so a map $G \to M$ is continuous exactly when it is locally constant, that is when every point has a neighbourhood on which it is constant; the orbit map $g\mapsto g\cdot m$ being locally constant is exactly the openness of its stabiliser $G_m$. The action is continuous at $(g_0, m_0)$ exactly when there is a neighbourhood $\Omega$ of $g_0$ with $g\cdot m_0 = g_0\cdot m_0$ for $g \in \Omega$, which is the openness of $G_{m_0}$ after translating by $g_0^{-1}$. The factorisation statement is the definition of the quotient by the open normal subgroup $\bigcap_m G_m$.</p>
 <p><strong>Theorem (the grading involution is continuous).</strong> The grading involution $\varepsilon$ of a graded module with the discrete topology is a homeomorphism of order two, its two eigenspaces $M_{\bar0}$, $M_{\bar1}$ are closed and open, and the homogeneous components are preserved by every continuous linear operator commuting with $\varepsilon$.</p>
 <p><strong>Proof.</strong> On a discrete space every map is continuous, so $\varepsilon$ is a homeomorphism and its eigenspaces, being the images of the two projection maps $\tfrac12(\mathrm{id}\pm\varepsilon)$, are open and closed. A continuous operator $T$ with $T\varepsilon = \varepsilon T$ satisfies $T M_j \subseteq M_j$, because the eigenspaces are the kernels of $\mathrm{id}\mp\varepsilon$.</p>
 <p><strong>Corollary (the topological form of the sign rule).</strong> For a continuous graded action the element map $g \mapsto g\cdot m$ has image in the orbit and the sign rule $g\cdot_\alpha m = \alpha(g)\cdot m$ holds for every $m$; since $\alpha$ is a homeomorphism of $G$, the twisted action is continuous whenever the original one is, and the twisted module is graded with the same grading involution.</p>

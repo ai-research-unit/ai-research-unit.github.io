@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Bloch's theorem is the foundational statement of geometric function theory that goes beyond the Schwarz lemma: a holomorphic function of one variable with unit derivative at the origin cannot collapse, and its image must contain a disk of a size fixed in advance. The size, the <strong>Bloch constant</strong>, is an absolute number, and its exact value is one of the celebrated open problems of the subject. This article states and proves the analogue of the theorem for <strong>monogenic functions</strong> of the reduced quaternions, where the derivative is the hypercomplex derivative of the Cauchy–Riemann operator in $\mathbb{R}^3$ and the image contains balls in the three-dimensional reduced-quaternion space $\mathcal{A}\cong\mathbb{R}^3$. The analogy is not a metaphor: the classical proof of Bloch's theorem is reproduced through the two auxiliary estimates of the source, and it yields an explicit absolute radius.</p>
 <p>The article is the Bloch-type companion of <em>Quaternion Regular Functions</em>, which owns the reduced-quaternion operator, the Riesz system, the hypercomplex derivative, the hyperholomorphic constants and the spherical monogenics used here without proof. The classical theory is <em>Complex Harmonic Analysis</em> for the Bloch space and the one-variable background, and the comparison with the conformal case is made throughout. The Bloch theorem and the Bloch constant are the only objects claimed here: the estimates of the hypercomplex derivative and of its primitive are the ones proved by the source, restated in this corpus's notation and conventions.</p>
-<p>Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_0+q_1e_1+q_2e_2$ ranges over $\mathbb{R}^3$; $D = \partial_0+e_1\partial_1+e_2\partial_2$ and $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is <strong>monogenic</strong> when $Df = 0$, and its <strong>hypercomplex derivative</strong> is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the <strong>maximum modulus function</strong> is</p>
+<p>Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_t+q_x\vec e_x+q_y\vec e_y$ ranges over $\mathbb{R}^3$; $D = \partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y$ and $\bar D = \partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is <strong>monogenic</strong> when $Df = 0$, and its <strong>hypercomplex derivative</strong> is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the <strong>maximum modulus function</strong> is</p>
 <p>$$
 \mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)|.
 $$</p>
@@ -130,7 +129,7 @@ $$</p>
 <p>$$
 \left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{12}{\sqrt3}\,\frac{|\tilde q|^3\,r\left(4|\tilde q|^2+9r^2-11|\tilde q|r\right)}{(r-|\tilde q|)^5}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
 $$</p>
-<p>The linear term $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.</p>
+<p>The linear term $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_t+\tfrac12q_x\vec e_x+\tfrac12q_y\vec e_y$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.</p>
 <h3 id="the-orthogonality-and-why-it-is-the-crux">The orthogonality, and why it is the crux</h3>
 <p>The estimate above is the reason the monogenic theory admits a Bloch theorem at all, and the reason is the Fourier decomposition $f = g+h$ of <em>Quaternion Regular Functions</em>: $g$, the main part, is orthogonal to the hyperholomorphic constants, and $h$ is a constant for the hypercomplex derivative.</p>
 <p><strong>Proposition (the linear term is the derivative's representative).</strong> For monogenic $f$, the main part of $f$ of degree one is $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, and $\mathbf{X}^{0,\dagger}_1$ is the monogenic polynomial of degree one with $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$.</p>
@@ -220,15 +219,15 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$</td>
+<td>$\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y\}$</td>
 <td>Reduced quaternions; a real subspace, not a subalgebra</td>
 </tr>
 <tr>
-<td>$D = \partial_0+e_1\partial_1+e_2\partial_2$</td>
+<td>$D = \partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y$</td>
 <td>Reduced Cauchy–Riemann operator on $\mathbb{R}^3$</td>
 </tr>
 <tr>
-<td>$\bar D = \partial_0-e_1\partial_1-e_2\partial_2$</td>
+<td>$\bar D = \partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y$</td>
 <td>Its conjugate; $D\bar D = \bar DD = \Delta_3$</td>
 </tr>
 <tr>
@@ -244,7 +243,7 @@ $$</p>
 <td>Monogenic primitive, and its normalisation to $B_r$ orthogonal to the constants</td>
 </tr>
 <tr>
-<td>$\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$</td>
+<td>$\mathbf{X}^{0,\dagger}_1(\tilde q) = q_t+\tfrac12q_x\vec e_x+\tfrac12q_y\vec e_y$</td>
 <td>Degree-one monogenic polynomial; $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$</td>
 </tr>
 <tr>

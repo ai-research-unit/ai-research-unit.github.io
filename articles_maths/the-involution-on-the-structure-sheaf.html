@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -56,11 +55,11 @@
 <p>This article develops the involution of the structure sheaf, the fixed structure sheaf and the self-adjoint sections, the twist of a module by the involution, the induced involution on the cohomology, and the descent from the equivariant modules to the modules over the fixed structure sheaf. It is the third article of the involutive layer of the category: the general group action and the descent are <em>Equivariant Sheaves and Descent</em>, the conjugate-linear case and the real forms are <em>Sheaves with a Real Structure</em>, the general involution on cohomology is <em>Cohomology with an Involution</em>, the involution on the differential is <em>The Involution on the Coboundary</em>, and the descent of the linear structures along an involution of a ring is <em>Commutative Algebras with an Involution</em> and <em>Descent Theory</em> of Part I.</p>
 <p>The article uses no analysis and no geometry: the structure sheaf is a sheaf of commutative rings with an involution, the modules are sheaves of modules in the sense of <em>Presheaves and Sheaves</em>, and no form, no norm and no derivative occurs. Throughout, $(X,\mathcal{O}_X)$ is a ringed space with a commutative structure sheaf, $\sigma$ is an involution of $\mathcal{O}_X$, $\mathcal{O}_X^{\sigma}$ is the fixed structure sheaf, $\mathcal{M}$ denotes a sheaf of $\mathcal{O}_X$-modules, and $2$ is invertible in the global sections $\mathcal{O}_X(X)$ whenever a decomposition into fixed and anti-invariant parts is used.</p>
 <h2 id="involutions-of-the-structure-sheaf">Involutions of the Structure Sheaf</h2>
-<p><strong>Definition.</strong> An <strong>involution</strong> of the structure sheaf is a morphism of sheaves of rings $\sigma:\mathcal{O}_X\to\mathcal{O}_X$ with $\sigma^2=\mathrm{id}$; equivalently, a ring involution $\sigma_U$ of each ring of sections $\mathcal{O}_X(U)$, natural in $U$. The <strong>fixed structure sheaf</strong> is</p>
+<p><strong>Definition.</strong> An <strong>involution</strong> of the structure sheaf is a morphism of sheaves of rings $\sigma:\mathcal{O}_X\to\mathcal{O}_X$ with $\sigma^2=\mathrm{id}$; equivalently, a ring involution $\sigma_\Omega$ of each ring of sections $\mathcal{O}_X(\Omega)$, natural in $\Omega$. The <strong>fixed structure sheaf</strong> is</p>
 <p>$$
-\mathcal{O}_X^{\sigma}:\ U\longmapsto \mathcal{O}_X(U)^{\sigma}=\{\,a: \sigma_U(a)=a\,\},
+\mathcal{O}_X^{\sigma}:\ \Omega\longmapsto \mathcal{O}_X(\Omega)^{\sigma}=\{\,a: \sigma_\Omega(a)=a\,\},
 $$</p>
-<p>the sheaf of <strong>self-adjoint</strong> or <strong>invariant</strong> functions, and when $2$ is invertible the <strong>anti-invariant sheaf</strong> is $\mathcal{O}_X^-$, with $\mathcal{O}_X(U)^-=\{a:\sigma_U(a)=-a\}$.</p>
+<p>the sheaf of <strong>self-adjoint</strong> or <strong>invariant</strong> functions, and when $2$ is invertible the <strong>anti-invariant sheaf</strong> is $\mathcal{O}_X^-$, with $\mathcal{O}_X(\Omega)^-=\{a:\sigma_\Omega(a)=-a\}$.</p>
 <p><strong>Proposition.</strong> $\mathcal{O}_X^{\sigma}$ is a subsheaf of $\mathcal{O}_X$ and a sheaf of commutative rings; $\mathcal{O}_X$ is a sheaf of $\mathcal{O}_X^{\sigma}$-algebras; and when $2$ is invertible in $\mathcal{O}_X(X)$ there is a direct sum decomposition</p>
 <p>$$
 \mathcal{O}_X=\mathcal{O}_X^{\sigma}\oplus\mathcal{O}_X^-,\qquad \sigma(a^{\sigma}+a^-)=a^{\sigma}-a^-,
@@ -76,7 +75,7 @@ $$</p>
 <p><em>Proof.</em> The twist by $\sigma$ followed by the twist by $\sigma$ is the identity, because $(\mathcal{M}^{\sigma})^{\sigma}=\mathcal{M}$ after $\sigma^2=\mathrm{id}$; the semilinearity of the equivariant structure is the statement that the action on $\mathcal{M}$ covers the action on $\mathcal{O}_X$, which is the definition of an equivariant module.</p>
 <p><strong>Proposition (the fixed module).</strong> The <strong>fixed part</strong> of a $\sigma$-equivariant module is the subsheaf</p>
 <p>$$
-\mathcal{M}^{\sigma}:\ U\longmapsto \{\,m\in\mathcal{M}(U): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $U$},
+\mathcal{M}^{\sigma}:\ \Omega\longmapsto \{\,m\in\mathcal{M}(\Omega): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $\Omega$},
 $$</p>
 <p>a sheaf of $\mathcal{O}_X^{\sigma}$-modules; the same discussion of the invariant opens as in <em>Equivariant Sheaves and Descent</em> applies, and over an invariant open set the fixed part is the fixed subspace of the $\sigma$-semilinear involution.</p>
 <p><em>Proof.</em> If $m$ is fixed and $a$ is self-adjoint then $am$ is fixed, since $u(am)=\sigma(a)u(m)=am$; the module axioms are inherited from $\mathcal{M}$. The locality is that of the fixed elements of a sheaf with an involution.</p>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -62,7 +61,7 @@ $$</p>
 <h2 id="the-self-adjoint-realisation">The Self-Adjoint Realisation</h2>
 <p><strong>Definition.</strong> Let $L$ be the elliptic operator of <em>Sesquilinear Forms and the Weak Formulation of an Elliptic Problem</em>, formally self-adjoint ($A=A^{\mathsf T}$, $b=0$, $c$ real) and uniformly elliptic, and let $B$ be a self-adjoint boundary condition, so that the boundary form of <em>Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory</em> vanishes on the admissible subspace. The <strong>realisation</strong> of $L$ under $B$ is the operator</p>
 <p>$$
-\mathrm{dom}\,L = \{u\in H^2(\Omega) : Bu=0\},\qquad Lu = -\sum_{i,j}\partial_i(a_{ij}\partial_ju)+cu ,
+\mathrm{dom}\,L = \{u\in H^2(\Omega) : Bu=0\},\qquad Lu = -\sum_{i,j}\partial/\partial x_i\,(a_{ij}\partial/\partial x_j\,u)+cu ,
 $$</p>
 <p>acting in $L^2(\Omega)$; it is the <strong>self-adjoint realisation</strong> of the boundary-value problem.</p>
 <p><strong>Theorem (the realisation is self-adjoint with compact inverse).</strong> Let the form be bounded and coercive on the admissible subspace and let the boundary condition be self-adjoint. Then the realisation is self-adjoint, $\langle Lu,v\rangle=\langle u,Lv\rangle$ for $u,v$ in the domain, and its inverse, the solution operator $S$ of the weak problem, is compact and self-adjoint on $L^2(\Omega)$.</p>

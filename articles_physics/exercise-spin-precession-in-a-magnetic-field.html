@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,7 +54,7 @@
 <p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats <strong>dynamics</strong>: the time evolution of a spin state under a time-independent Hamiltonian.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
 <p>$$
@@ -82,11 +81,11 @@ $$</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
-U(t) = \exp(-iHt/\hbar) = \exp(\,i\omega_L t\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L t/2) & 0 \\ 0 & \exp(-i\omega_L t/2) \end{pmatrix}.
+T(t) = \exp(-iHt/\hbar) = \exp(\,i\omega_L t\,\sigma_3/2) = \begin{pmatrix} \exp(\,i\omega_L t/2) & 0 \\ 0 & \exp(-i\omega_L t/2) \end{pmatrix}.
 $$</p>
 <p>The evolved state is</p>
 <p>$$
-|\psi(t)\rangle = U(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t/2) \\ \exp(-i\omega_L t/2) \end{pmatrix}.
+|\psi(t)\rangle = T(t)\,|+x\rangle = \frac{1}{\sqrt{2}}\begin{pmatrix} \exp(\,i\omega_L t/2) \\ \exp(-i\omega_L t/2) \end{pmatrix}.
 $$</p>
 <h3 id="step-4-the-expectation-value">Step 4: The expectation value</h3>
 <p>The expectation value of $S_x = \frac{\hbar}{2}\sigma_1$ in the state $|\psi(t)\rangle$ is</p>
@@ -105,40 +104,40 @@ $$</p>
 <h3 id="step-1-the-state_1">Step 1: The state</h3>
 <p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
 <p>$$
-P(\vec u_m) = \tfrac{1}{2}\left(e_0 + i\vec u_m\right),
+P(\vec u_m) = \tfrac{1}{2}\left(e_t + i\vec u_m\right),
 $$</p>
-<p>where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = e_1$, giving</p>
+<p>where $\vec u_m$ is a unit pure real quaternion. The spin-up state along $x$ corresponds to $\vec u_m = \vec e_x$, giving</p>
 <p>$$
-P_x = \tfrac{1}{2}\left(e_0 + i e_1\right).
+P_x = \tfrac{1}{2}\left(e_t + i \vec e_x\right).
 $$</p>
 <h3 id="step-2-the-hamiltonian_1">Step 2: The Hamiltonian</h3>
-<p>The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i e_3$. The Hamiltonian is therefore the Hermitian element of $\mathbb{M}_+$</p>
+<p>The spin observable along $z$ is $\tilde{S}_z = \frac{\hbar}{2}\,i \vec e_z$. The Hamiltonian is therefore the Hermitian element of $\mathbb{M}_+$</p>
 <p>$$
-\tilde{H} = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i e_3,
+\tilde{H} = -\gamma B_0 \tilde{S}_z = -\frac{\hbar\omega_L}{2}\,i \vec e_z,
 $$</p>
 <p>with $\omega_L = \gamma B_0$.</p>
 <h3 id="step-3-the-evolution_1">Step 3: The evolution</h3>
 <p>The evolution operator is the unit-norm biquaternion</p>
 <p>$$
-\tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right) = \exp\!\left(-\frac{\omega_L t}{2}\,e_3\right) = \cos\!\left(\frac{\omega_L t}{2}\right)e_0 - \sin\!\left(\frac{\omega_L t}{2}\right)e_3,
+\tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right) = \exp\!\left(-\frac{\omega_L t}{2}\,\vec e_z\right) = \cos\!\left(\frac{\omega_L t}{2}\right)e_t - \sin\!\left(\frac{\omega_L t}{2}\right)\vec e_z,
 $$</p>
-<p>where we have used the identity $\exp(\theta\,e_3) = \cos\theta\,e_0 + \sin\theta\,e_3$, which follows from $e_3^2 = -e_0$, and set $\theta = -\omega_L t/2$.</p>
+<p>where we have used the identity $\exp(\theta\,\vec e_z) = \cos\theta\,e_t + \sin\theta\,\vec e_z$, which follows from $\vec e_z^2 = -e_t$, and set $\theta = -\omega_L t/2$.</p>
 <p>The evolved state is</p>
 <p>$$
 \tilde{\rho}(t) = \tilde{U}(t)\,P_x\,\tilde{U}(t)^{*}.
 $$</p>
-<p>Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_0 + \sin(\omega_L t/2)\,e_3$ (since $\tilde{U}$ is a real quaternion), gives</p>
+<p>Computing the product, using $\tilde{U}(t)^{*} = \tilde{U}^{\natural}(t) = \cos(\omega_L t/2)\,e_t + \sin(\omega_L t/2)\,\vec e_z$ (since $\tilde{U}$ is a real quaternion), gives</p>
 <p>$$
-\tilde{\rho}(t) = \tfrac{1}{2}\left(e_0 + i\cos(\omega_L t)\,e_1 - i\sin(\omega_L t)\,e_2\right).
+\tilde{\rho}(t) = \tfrac{1}{2}\left(e_t + i\cos(\omega_L t)\,\vec e_x - i\sin(\omega_L t)\,\vec e_y\right).
 $$</p>
 <h3 id="step-4-the-expectation-value_1">Step 4: The expectation value</h3>
 <p>The expectation value of the spin along $x$ is given by the trace formula</p>
 <p>$$
 \langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
 $$</p>
-<p>with $\tilde{S}_x = \frac{\hbar}{2}\,i e_1$. Computing the product</p>
+<p>with $\tilde{S}_x = \frac{\hbar}{2}\,i \vec e_x$. Computing the product</p>
 <p>$$
-\tilde{\rho}(t)\,\tilde{S}_x = \frac{\hbar}{4}\left(i e_1 + \cos(\omega_L t)\,e_0 - \sin(\omega_L t)\,e_3\right),
+\tilde{\rho}(t)\,\tilde{S}_x = \frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L t)\,e_t - \sin(\omega_L t)\,\vec e_z\right),
 $$</p>
 <p>the scalar part is $\frac{\hbar}{4}\cos(\omega_L t)$. Applying the trace formula,</p>
 <p>$$
@@ -154,12 +153,12 @@ $$</p>
 </ul>
 <p>The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expected for Larmor precession.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.</strong> The observable $\tilde{S}_z = \frac{\hbar}{2}i e_3$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde{H} = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
-<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i e_3$, and the exponential of $e_3$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
-<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_0$ is preserved by the exponential form.</p>
-<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\vec r(t))$ with</p>
+<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{M}_+$.</strong> The observable $\tilde{S}_z = \frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{M}_+$, and the Hamiltonian $\tilde{H} = -\gamma B_0 \tilde{S}_z$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
+<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde{H}$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_t$ is preserved by the exponential form.</p>
+<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_t + i\vec r(t))$ with</p>
 <p>$$
-\vec r(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
+\vec r(t) = \cos(\omega_L t)\,\vec e_x - \sin(\omega_L t)\,\vec e_y.
 $$</p>
 <p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
 <p><strong>5. The expectation value is a trace formula.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>
@@ -167,7 +166,7 @@ $$</p>
 \langle\tilde{S}_x\rangle(t) = \mathrm{Tr}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right) = 2\,\mathrm{Sc}\!\left(\tilde{\rho}(t)\,\tilde{S}_x\right),
 $$</p>
 <p>the same trace formula that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same trace pairing on $\mathbb{M}_+$.</p>
-<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $U(t) = \exp(-iHt/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
+<p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ corresponds exactly to the standard matrix evolution $T(t) = \exp(-iHt/\hbar)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{M}_+$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -228,8 +227,8 @@ $$</p>
 <td>Quaternion subspace (home of the real rotation rotors)</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -248,15 +247,15 @@ $$</p>
 <td>Larmor frequency</td>
 </tr>
 <tr>
-<td>$P_x = \tfrac{1}{2}(e_0 + ie_1)$</td>
+<td>$P_x = \tfrac{1}{2}(e_t + i\vec e_x)$</td>
 <td>Spin-up state along $x$</td>
 </tr>
 <tr>
-<td>$\tilde{S}_x = \tfrac{\hbar}{2} ie_1$</td>
+<td>$\tilde{S}_x = \tfrac{\hbar}{2} i\vec e_x$</td>
 <td>Spin observable along $x$</td>
 </tr>
 <tr>
-<td>$\tilde{H} = -\tfrac{\hbar\omega_L}{2} ie_3$</td>
+<td>$\tilde{H} = -\tfrac{\hbar\omega_L}{2} i\vec e_z$</td>
 <td>Hamiltonian</td>
 </tr>
 <tr>

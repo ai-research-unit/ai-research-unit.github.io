@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,30 +53,30 @@
 <h2 id="introduction">Introduction</h2>
 <p>The rational numbers are the field of fractions of the integers: the smallest field containing $\mathbb{Z}$, equivalently the smallest field of characteristic $0$, equivalently the prime field of every field of characteristic $0$. Everything about $\mathbb{Q}$ that is algebraic follows from this one construction: the field axioms, the absence of proper subfields, the uniqueness of the ordering, the triviality of the automorphism group, and the fact that every element is a ratio of two integers in essentially one way. What $\mathbb{Q}$ lacks is completeness, and the two ways of repairing that defect, by order and by absolute value, produce $\mathbb{R}$ and the fields $\mathbb{Q}_p$.</p>
 <p>This article carries out the construction of $\mathbb{Q}$ from $\mathbb{Z}$, establishes its universal property, records its order and divisibility structure, and describes its subrings, its unit group, its orderings and its completions. The analysis of $\mathbb{Q}$ as a metric space belongs to the companion treatments of the real numbers and of valuations; the completions are named here and constructed in <em>Absolute Values, Valuations and Completions</em> and <em>The Real Numbers</em>.</p>
-<p>Throughout, $\mathbb{Z}$ is the ring of integers and $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$. Divisibility, prime factorization and localization are from <em>Integral Domains</em>, <em>Unique Factorisation Domains</em> and <em>Localization and the Fraction Field</em>.</p>
+<p>Throughout, $\mathbb{Z}$ is the ring of integers and $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$. A generic rational is written $q$, and several are $q_1, q_2, \dots$; a rational written as a fraction is $r/s$, with numerator $r \in \mathbb{Z}$ and denominator $s \in \mathbb{N}_{\geq 1}$. Divisibility, prime factorization and localization are from <em>Integral Domains</em>, <em>Unique Factorisation Domains</em> and <em>Localization and the Fraction Field</em>.</p>
 <hr />
-<h2 id="the-field-of-fractions-of-math13">The Field of Fractions of $\mathbb{Z}$</h2>
+<h2 id="the-field-of-fractions-of-math18">The Field of Fractions of $\mathbb{Z}$</h2>
 <h3 id="construction">Construction</h3>
 <p><strong>Theorem.</strong> $\mathbb{Z}$ is an integral domain, and its field of fractions</p>
 <p>$$
-\mathbb{Q} = \operatorname{Frac}(\mathbb{Z}) = (\mathbb{Z} \times (\mathbb{Z} \setminus \{0\}))/\sim, \qquad (n,m) \sim (k,\ell) \iff n\ell = mk,
+\mathbb{Q} = \operatorname{Frac}(\mathbb{Z}) = (\mathbb{Z} \times (\mathbb{Z} \setminus \{0\}))/\sim, \qquad (r,s) \sim (r',s') \iff rs' = r's,
 $$</p>
 <p>with addition and multiplication defined by</p>
 <p>$$
-\frac{n}{m} + \frac{k}{\ell} = \frac{n\ell + mk}{m\ell}, \qquad \frac{n}{m} \cdot \frac{k}{\ell} = \frac{nk}{m\ell},
+\frac{r}{s} + \frac{r'}{s'} = \frac{rs' + r's}{ss'}, \qquad \frac{r}{s} \cdot \frac{r'}{s'} = \frac{rr'}{ss'},
 $$</p>
 <p>is a field of characteristic $0$.</p>
-<p><strong>Proof.</strong> $\mathbb{Z}$ is an integral domain, so the relation $\sim$ is an equivalence relation and the displayed operations are well defined; the general construction of the fraction field is given in <em>Localization and the Fraction Field</em>. In $\mathbb{Q}$ the class of $\tfrac{n}{1}$ is nonzero whenever $n \neq 0$, and $n \cdot 1 = \tfrac{n}{1} \neq 0$ for every $n \geq 1$, so the characteristic is $0$.</p>
-<p><strong>Theorem (universal property).</strong> Let $K$ be a field and let $\varphi : \mathbb{Z} \to K$ be an injective ring homomorphism. Then there is a unique ring homomorphism $\Phi : \mathbb{Q} \to K$ with $\Phi(\tfrac{n}{1}) = \varphi(n)$; it is injective, and its image is the prime field of $K$.</p>
-<p><strong>Proof.</strong> The map $\Phi(\tfrac{n}{m}) = \varphi(n)\varphi(m)^{-1}$ is well defined because $\varphi(m) \neq 0$ for $m \neq 0$, and it is a ring homomorphism; uniqueness is forced because every rational is a quotient of images of integers. Injectivity: a field homomorphism is injective.</p>
+<p><strong>Proof.</strong> $\mathbb{Z}$ is an integral domain, so the relation $\sim$ is an equivalence relation and the displayed operations are well defined; the general construction of the fraction field is given in <em>Localization and the Fraction Field</em>. In $\mathbb{Q}$ the class of $\tfrac{r}{1}$ is nonzero whenever $r \neq 0$, and $r \cdot 1 = \tfrac{r}{1} \neq 0$ for every $r \geq 1$, so the characteristic is $0$.</p>
+<p><strong>Theorem (universal property).</strong> Let $K$ be a field and let $\varphi : \mathbb{Z} \to K$ be an injective ring homomorphism. Then there is a unique ring homomorphism $\Phi : \mathbb{Q} \to K$ with $\Phi(\tfrac{r}{1}) = \varphi(r)$; it is injective, and its image is the prime field of $K$.</p>
+<p><strong>Proof.</strong> The map $\Phi(\tfrac{r}{s}) = \varphi(r)\varphi(s)^{-1}$ is well defined because $\varphi(s) \neq 0$ for $s \neq 0$, and it is a ring homomorphism; uniqueness is forced because every rational is a quotient of images of integers. Injectivity: a field homomorphism is injective.</p>
 <p><strong>Corollary.</strong> $\mathbb{Q}$ is the prime field of characteristic $0$: it is the smallest subfield of any field of characteristic $0$, and every field of characteristic $0$ contains a copy of $\mathbb{Q}$ as its prime field. Up to isomorphism, $\mathbb{Q}$ is the only field of characteristic $0$ whose only subfield is itself, and it is the initial object in the category of fields of characteristic $0$.</p>
 <h3 id="basic-arithmetic">Basic Arithmetic</h3>
-<p><strong>Theorem (fundamental theorem of arithmetic).</strong> Every nonzero integer has a factorization into primes, unique up to order and signs, and consequently every $a \in \mathbb{Q}^\times$ has a unique expression</p>
+<p><strong>Theorem (fundamental theorem of arithmetic).</strong> Every nonzero integer has a factorization into primes, unique up to order and signs, and consequently every $q \in \mathbb{Q}^\times$ has a unique expression</p>
 <p>$$
-a = \operatorname{sgn}(a) \prod_p p^{v_p(a)}, \qquad v_p(a) \in \mathbb{Z},\ \text{finitely many nonzero},
+q = \operatorname{sgn}(q) \prod_p p^{v_p(q)}, \qquad v_p(q) \in \mathbb{Z},\ \text{finitely many nonzero},
 $$</p>
-<p>where $\operatorname{sgn}(a) = \pm 1$ and $v_p$ is the $p$-adic valuation of <em>Absolute Values, Valuations and Completions</em>.</p>
-<p><strong>Proof.</strong> The factorization of integers is the unique factorization property of $\mathbb{Z}$ as a Euclidean domain, from <em>Euclidean Domains</em>; the rational statement follows by writing $a = n/m$ and subtracting the exponent vectors of $m$ from those of $n$, the uniqueness following from uniqueness for $n$ and $m$.</p>
+<p>where $\operatorname{sgn}(q) = \pm 1$ and $v_p$ is the $p$-adic valuation of <em>Absolute Values, Valuations and Completions</em>.</p>
+<p><strong>Proof.</strong> The factorization of integers is the unique factorization property of $\mathbb{Z}$ as a Euclidean domain, from <em>Euclidean Domains</em>; the rational statement follows by writing $q = r/s$ and subtracting the exponent vectors of $s$ from those of $r$, the uniqueness following from uniqueness for $n$ and $m$.</p>
 <p><strong>Corollary (the unit group).</strong> There is a group isomorphism</p>
 <p>$$
 \mathbb{Q}^\times \cong \mathbb{Z}/2\mathbb{Z} \oplus \bigoplus_p \mathbb{Z},
@@ -85,31 +84,31 @@ $$</p>
 <p>the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy of $\mathbb{Z}$.</p>
 <p><strong>Corollary.</strong> $\mathbb{Q}$ is a field; hence its only ideals are $0$ and $\mathbb{Q}$, it is a principal ideal domain and a unique factorization domain in the trivial sense, and so is $\mathbb{Q}[x]$, which is moreover a Euclidean domain for the degree function.</p>
 <hr />
-<h2 id="the-order-of-math60">The Order of $\mathbb{Q}$</h2>
+<h2 id="the-order-of-math65">The Order of $\mathbb{Q}$</h2>
 <h3 id="the-ordering">The Ordering</h3>
-<p><strong>Definition.</strong> A rational $a = \tfrac{n}{m}$ is <strong>positive</strong> if $nm > 0$ in $\mathbb{Z}$; the order is $a < b$ iff $b - a$ is positive.</p>
+<p><strong>Definition.</strong> A rational $q = \tfrac{r}{s}$ is <strong>positive</strong> if $rs > 0$ in $\mathbb{Z}$; the order is $q_1 < q_2$ iff $q_2 - q_1$ is positive.</p>
 <p><strong>Theorem.</strong> The relation so defined is a total order on $\mathbb{Q}$ making it an ordered field, and it is the only ordering of $\mathbb{Q}$.</p>
-<p><strong>Proof.</strong> Well-definedness: if $\tfrac{n}{m} = \tfrac{k}{\ell}$ then $n\ell = mk$ and $nm$ has the same sign as $k\ell$, since $nm\ell^2 = m^2k\ell$ and $\ell^2, m^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of <em>Ordered Fields</em>, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.</p>
+<p><strong>Proof.</strong> Well-definedness: if $\tfrac{r}{s} = \tfrac{r'}{s'}$ then $rs' = r's$ and $rs$ has the same sign as $r's'$, since $rs\,s'^2 = s^2r's'$ and $s'^2, s^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of <em>Ordered Fields</em>, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.</p>
 <p><strong>Corollary.</strong> $\mathbb{Q}$ is an Archimedean ordered field and the smallest one: it embeds as an ordered subfield in every ordered field. Its automorphism group is trivial, $\operatorname{Aut}(\mathbb{Q}) = 1$, and the only order-preserving automorphism of $\mathbb{Q}$ is the identity.</p>
-<p><strong>Theorem (the embedding of $\mathbb{Z}$ and density).</strong> The map $\mathbb{Z} \to \mathbb{Q}$, $n \mapsto \tfrac{n}{1}$ is an injective order-preserving ring homomorphism, and $\mathbb{Z}$ is unbounded above in $\mathbb{Q}$. The order on $\mathbb{Q}$ is dense: for $a < b$ there is $c$ with $a < c < b$, for instance $c = \tfrac{a+b}{2}$.</p>
-<p><strong>Proof.</strong> Injectivity and order-preservation are immediate from the construction. Unboundedness: for any $\tfrac{n}{m}$ with $m > 0$ the integer $\lvert n \rvert + 1$ exceeds it, since $\tfrac{n}{m} \leq n < n+1$ for $n \geq 0$ and $\tfrac{n}{m} < 0 < \lvert n \rvert + 1$ for $n < 0$. Density: $2 = 1 + 1 > 0$, so $2^{-1} > 0$ and $a = \tfrac{a+a}{2} < \tfrac{a+b}{2} < \tfrac{b+b}{2} = b$.</p>
-<p><strong>Remark.</strong> Density is a property of the order alone and does not make $\mathbb{Q}$ complete: the set $\{a \in \mathbb{Q} : a > 0,\ a^2 < 2\}$ is nonempty and bounded above and has no least upper bound in $\mathbb{Q}$, by the classical irrationality of $\sqrt2$. Completeness is treated in <em>Real-Closed and Complete Ordered Fields</em> and <em>The Real Numbers</em>.</p>
+<p><strong>Theorem (the embedding of $\mathbb{Z}$ and density).</strong> The map $\mathbb{Z} \to \mathbb{Q}$, $r \mapsto \tfrac{r}{1}$ is an injective order-preserving ring homomorphism, and $\mathbb{Z}$ is unbounded above in $\mathbb{Q}$. The order on $\mathbb{Q}$ is dense: for $q_1 < q_2$ the mean $\tfrac{q_1+q_2}{2}$ lies strictly between them.</p>
+<p><strong>Proof.</strong> Injectivity and order-preservation are immediate from the construction. Unboundedness: for any $\tfrac{r}{s}$ with $s > 0$ the integer $\lvert r \rvert + 1$ exceeds it, since $\tfrac{r}{s} \leq r < r+1$ for $r \geq 0$ and $\tfrac{r}{s} < 0 < \lvert r \rvert + 1$ for $r < 0$. Density: $2 = 1 + 1 > 0$, so $2^{-1} > 0$ and $q_1 = \tfrac{q_1+q_1}{2} < \tfrac{q_1+q_2}{2} < \tfrac{q_2+q_2}{2} = q_2$.</p>
+<p><strong>Remark.</strong> Density is a property of the order alone and does not make $\mathbb{Q}$ complete: the set $\{q \in \mathbb{Q} : q > 0,\ q^2 < 2\}$ is nonempty and bounded above and has no least upper bound in $\mathbb{Q}$, by the classical irrationality of $\sqrt2$. Completeness is treated in <em>Real-Closed and Complete Ordered Fields</em> and <em>The Real Numbers</em>.</p>
 <hr />
 <h2 id="subrings-ideals-and-localizations">Subrings, Ideals and Localizations</h2>
-<h3 id="the-subrings-of-math107">The Subrings of $\mathbb{Q}$</h3>
+<h3 id="the-subrings-of-math110">The Subrings of $\mathbb{Q}$</h3>
 <p><strong>Theorem.</strong> Every subring $R \subseteq \mathbb{Q}$ is a localization of $\mathbb{Z}$: there is a set of primes $S$ such that</p>
 <p>$$
-R = \mathbb{Z}_S = \left\{\frac{n}{m} \in \mathbb{Q} : n \in \mathbb{Z},\ m \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } m \text{ lies in } S\right\}.
+R = \mathbb{Z}_S = \left\{\frac{r}{s} \in \mathbb{Q} : r \in \mathbb{Z},\ s \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } s \text{ lies in } S\right\}.
 $$</p>
 <p>Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\mathbb{Z}$, and the correspondence $S \mapsto \mathbb{Z}_S$ is bijective between sets of primes and subrings of $\mathbb{Q}$ containing $\mathbb{Z}$.</p>
-<p><strong>Proof sketch.</strong> Given $R$, let $S = \{p \text{ prime} : \tfrac1p \in R\}$. If $a = \tfrac{n}{m} \in R$ in lowest terms, then $\gcd(n,m) = 1$, so there are integers $s, t$ with $sn + tm = 1$, whence $\tfrac{1}{m} = s\tfrac{n}{m} + t \in R$ by the Bézout relation; multiplying $\tfrac1m$ by $m/p$ for a prime $p \mid m$ gives $\tfrac1p \in R$, so every prime divisor of $m$ lies in $S$ and $R \subseteq \mathbb{Z}_S$. Conversely, if $a = \tfrac{n}{m}$ with every prime divisor of $m$ in $S$, then $\tfrac1m$ is a product of the elements $\tfrac1p \in R$ and their powers, so $\tfrac1m \in R$ and $a = n \cdot \tfrac1m \in R$; hence $\mathbb{Z}_S \subseteq R$. Bijectivity: $S$ is recovered from $\mathbb{Z}_S$ as the primes with $\tfrac1p \in \mathbb{Z}_S$.</p>
+<p><strong>Proof sketch.</strong> Given $R$, let $S = \{p \text{ prime} : \tfrac1p \in R\}$. If $q = \tfrac{r}{s} \in R$ in lowest terms, then $\gcd(r,s) = 1$, so there are integers $u, v$ with $ur + vs = 1$, whence $\tfrac{1}{s} = u\tfrac{r}{s} + v \in R$ by the Bézout relation; multiplying $\tfrac1s$ by $s/p$ for a prime $p \mid s$ gives $\tfrac1p \in R$, so every prime divisor of $s$ lies in $S$ and $R \subseteq \mathbb{Z}_S$. Conversely, if $q = \tfrac{r}{s}$ with every prime divisor of $s$ in $S$, then $\tfrac1s$ is a product of the elements $\tfrac1p \in R$ and their powers, so $\tfrac1s \in R$ and $q = r \cdot \tfrac1s \in R$; hence $\mathbb{Z}_S \subseteq R$. Bijectivity: $S$ is recovered from $\mathbb{Z}_S$ as the primes with $\tfrac1p \in \mathbb{Z}_S$.</p>
 <p><strong>Corollary.</strong> $\mathbb{Z}$ and $\mathbb{Q}$ are the extreme cases $S = \emptyset$ and $S = $ all primes; the intermediate rings $\mathbb{Z}_S$ are precisely the rings between $\mathbb{Z}$ and $\mathbb{Q}$, and each is a principal ideal domain obtained from $\mathbb{Z}$ by inverting the primes in $S$. The rings $\mathbb{Z}_{(p)}$ for a single prime $p$, the localizations of <em>Localization and the Fraction Field</em>, are the valuation rings of the $p$-adic valuations.</p>
-<h3 id="ideals-and-modules-over-math155">Ideals and Modules over $\mathbb{Q}$</h3>
+<h3 id="ideals-and-modules-over-math158">Ideals and Modules over $\mathbb{Q}$</h3>
 <p><strong>Proposition.</strong> The only ideals of $\mathbb{Q}$ are $0$ and $\mathbb{Q}$; consequently $\mathbb{Q}$ is a field, every nonzero element is a unit, and $\mathbb{Q}$ has no proper nonzero quotients.</p>
-<p><strong>Proof.</strong> If $I \neq 0$ contains $a \neq 0$ then $1 = a \cdot a^{-1} \in I$, so $I = \mathbb{Q}$.</p>
-<p><strong>Proposition.</strong> $\mathbb{Z}$-submodules of $\mathbb{Q}$ need not be ideals, and are not classified by a single invariant: the additive subgroups of $\mathbb{Q}$ include $\mathbb{Z}$, $\mathbb{Z}[\tfrac12]$, $\mathbb{Z}_{(p)}$ and the $p$-primary subgroups, and the classification of the subgroups of $\mathbb{Q}$ belongs to the theory of abelian groups. The finitely generated $\mathbb{Z}$-submodules of $\mathbb{Q}$ are exactly the cyclic ones, $\mathbb{Z}\tfrac{n}{m}$, and the structure theory of modules over $\mathbb{Z}$ belongs to <em>Modules</em>.</p>
+<p><strong>Proof.</strong> If $I \neq 0$ contains $q \neq 0$ then $1 = q \cdot q^{-1} \in I$, so $I = \mathbb{Q}$.</p>
+<p><strong>Proposition.</strong> $\mathbb{Z}$-submodules of $\mathbb{Q}$ need not be ideals, and are not classified by a single invariant: the additive subgroups of $\mathbb{Q}$ include $\mathbb{Z}$, $\mathbb{Z}[\tfrac12]$, $\mathbb{Z}_{(p)}$ and the $p$-primary subgroups, and the classification of the subgroups of $\mathbb{Q}$ belongs to the theory of abelian groups. The finitely generated $\mathbb{Z}$-submodules of $\mathbb{Q}$ are exactly the cyclic ones, $\mathbb{Z}\tfrac{r}{s}$, and the structure theory of modules over $\mathbb{Z}$ belongs to <em>Modules</em>.</p>
 <hr />
-<h2 id="math177-as-a-field-algebraic-properties">$\mathbb{Q}$ as a Field: Algebraic Properties</h2>
+<h2 id="math180-as-a-field-algebraic-properties">$\mathbb{Q}$ as a Field: Algebraic Properties</h2>
 <p><strong>Theorem.</strong> The following hold for $\mathbb{Q}$.</p>
 <p><strong>(a)</strong> $\mathbb{Q}$ has characteristic $0$, and every field of characteristic $0$ contains a copy of $\mathbb{Q}$.</p>
 <p><strong>(b)</strong> $\mathbb{Q}$ is countable.</p>
@@ -121,7 +120,7 @@ $$</p>
 <p><strong>Proof.</strong> (a) is the universal property. (b) $\mathbb{Q}$ is the image of the countable set $\mathbb{Z}\times(\mathbb{Z}\setminus\{0\})$. (c) $\sqrt2 \notin \mathbb{Q}$ by the classical parity argument. (d) The algebraic closure is constructed in <em>Algebraically Closed Fields</em>; $x^n - 2$ is irreducible over $\mathbb{Q}$ for every $n$ by Eisenstein, giving extensions of every degree. (e) A field of characteristic $0$ is perfect. (f) The ordering is unique by the theorem above; $\mathbb{Q}$ is Archimedean by <em>Ordered Fields</em>; incompleteness is the remark above. (g) An algebraic extension has transcendence degree $0$ over its base field, and $\mathbb{Q}$ is algebraic over itself.</p>
 <p><strong>Remark (the place of $\mathbb{Q}$ among fields).</strong> $\mathbb{Q}$ is the prime field of characteristic $0$ and the initial object among such fields; it is not algebraically closed, not real closed, and not order-complete. Its completions are $\mathbb{R}$ and the fields $\mathbb{Q}_p$, which are locally compact, while $\mathbb{Q}$ itself is not locally compact in the usual topology. The rationals are the field in which the arithmetic of $\mathbb{Z}$ becomes invertibility of the primes, and the two families of completions, together with the product formula, are the starting point of algebraic number theory.</p>
 <hr />
-<h2 id="extensions-of-math215">Extensions of $\mathbb{Q}$</h2>
+<h2 id="extensions-of-math218">Extensions of $\mathbb{Q}$</h2>
 <h3 id="finite-extensions">Finite Extensions</h3>
 <p><strong>Theorem.</strong> Every finite extension of $\mathbb{Q}$ is separable and simple: it is of the form $\mathbb{Q}(\alpha)$ for some algebraic $\alpha$, and its degree is the degree of the minimal polynomial of $\alpha$.</p>
 <p><strong>Proof.</strong> Every field of characteristic $0$ is perfect, so every algebraic extension is separable, by <em>Splitting Fields and Algebraic Closure</em>; in characteristic $0$ every finite extension is simple by the theorem of the primitive element, since a finite separable extension is simple (<em>Field Extensions</em>). The degree statement is the definition of the minimal polynomial, from <em>Field Extensions</em>.</p>
@@ -143,28 +142,28 @@ $$</p>
 <p><strong>Proof.</strong> The roots of $x^n - 1$ are the powers of $\zeta_n$, so the field generated by $\zeta_n$ is the splitting field; an automorphism over $\mathbb{Q}$ is determined by $\zeta_n \mapsto \zeta_n^m$ with $\gcd(m,n) = 1$, giving the isomorphism onto $(\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; that the degree is exactly $\varphi(n)$ is the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in <em>Unique Factorisation Domains</em>, and standard in general. Kronecker–Weber is a standard theorem of algebraic number theory, stated here for the structure of $\overline{\mathbb{Q}}$.</p>
 <p><strong>Example (the splitting field of $x^3 - 2$).</strong> The polynomial $x^3 - 2$ is irreducible over $\mathbb{Q}$, so $\mathbb{Q}(\sqrt[3]{2})$ has degree $3$; it is not a normal extension, because the other two roots are $\omega \sqrt[3]{2}$ and $\omega^2 \sqrt[3]{2}$ with $\omega = \zeta_3$ a primitive cube root of unity. The normal closure is $\mathbb{Q}(\sqrt[3]{2}, \omega)$, of degree $6$ over $\mathbb{Q}$, with Galois group $S_3$ acting on the three roots, as computed in <em>Galois Theory</em>.</p>
 <hr />
-<h2 id="endomorphisms-and-derivations-of-math286">Endomorphisms and Derivations of $\mathbb{Q}$</h2>
+<h2 id="endomorphisms-and-derivations-of-math289">Endomorphisms and Derivations of $\mathbb{Q}$</h2>
 <p><strong>Theorem.</strong> $\operatorname{End}(\mathbb{Q}) = \{\mathrm{id}\}$ and $\operatorname{Der}(\mathbb{Q}) = 0$: every unital ring endomorphism of $\mathbb{Q}$ is the identity, every derivation of $\mathbb{Q}$ into itself is zero, and the only non-unital ring homomorphisms $\mathbb{Q} \to \mathbb{Q}$ are the identity and the zero map.</p>
-<p><strong>Proof.</strong> A unital ring homomorphism $\varphi : \mathbb{Q} \to \mathbb{Q}$ has kernel an ideal, so either $0$ or $\mathbb{Q}$; the kernel is not $\mathbb{Q}$ because $\varphi(1) = 1 \neq 0$, so $\varphi$ is injective, whence $\varphi(n) = n$ for integers and $\varphi(n/m) = \varphi(n)\varphi(m)^{-1} = n/m$. Dropping the unital condition adds the zero map and nothing else, since every other homomorphism carries $1$ to an idempotent of $\mathbb{Q}$ and the only nonzero idempotent is $1$. For derivations, $D(1) = D(1 \cdot 1) = D(1) + D(1)$ gives $D(1) = 0$, so $D(n) = 0$ for all integers and $0 = D(1) = D(m \cdot \tfrac1m) = m D(\tfrac1m)$, whence $D(\tfrac1m) = 0$ and $D(\tfrac{n}{m}) = 0$.</p>
+<p><strong>Proof.</strong> A unital ring homomorphism $\varphi : \mathbb{Q} \to \mathbb{Q}$ has kernel an ideal, so either $0$ or $\mathbb{Q}$; the kernel is not $\mathbb{Q}$ because $\varphi(1) = 1 \neq 0$, so $\varphi$ is injective, whence $\varphi(n) = n$ for integers and $\varphi(r/s) = \varphi(r)\varphi(s)^{-1} = r/s$. Dropping the unital condition adds the zero map and nothing else, since every other homomorphism carries $1$ to an idempotent of $\mathbb{Q}$ and the only nonzero idempotent is $1$. For derivations, $D(1) = D(1 \cdot 1) = D(1) + D(1)$ gives $D(1) = 0$, so $D(n) = 0$ for all integers and $0 = D(1) = D(s \cdot \tfrac1s) = s D(\tfrac1s)$, whence $D(\tfrac1s) = 0$ and $D(\tfrac{r}{s}) = 0$.</p>
 <p><strong>Corollary.</strong> $\operatorname{Aut}(\mathbb{Q}) = 1$, in agreement with the rigidity of the prime field observed in <em>Ring and Field Automorphisms</em>; and $\mathbb{Q}$ carries no nonzero derivation, so the tangent-space intuitions of differential algebra are vacuous over the rationals.</p>
 <hr />
-<h2 id="completions-and-the-places-of-math311">Completions and the Places of $\mathbb{Q}$</h2>
+<h2 id="completions-and-the-places-of-math314">Completions and the Places of $\mathbb{Q}$</h2>
 <h3 id="ostrowski-and-the-places">Ostrowski and the Places</h3>
 <p><strong>Theorem (Ostrowski, restated from <em>Absolute Values, Valuations and Completions</em>).</strong> Every nontrivial absolute value on $\mathbb{Q}$ is equivalent to the usual absolute value $\lvert \cdot \rvert_\infty$ or to one of the $p$-adic absolute values $\lvert \cdot \rvert_p$. Hence the places of $\mathbb{Q}$ are $\infty$ and the primes $p$.</p>
 <p><strong>Corollary (the completions of $\mathbb{Q}$).</strong> The nontrivial completions of $\mathbb{Q}$ are</p>
 <p>$$
 \widehat{\mathbb{Q}}_\infty = \mathbb{R}, \qquad \widehat{\mathbb{Q}}_p = \mathbb{Q}_p \ (p \text{ prime}),
 $$</p>
-<p>and no two of these are isomorphic: $\mathbb{R}$ is Archimedean and orderable, while each $\mathbb{Q}_p$ is not orderable, and $\mathbb{Q}_p \not\cong \mathbb{Q}_q$ for $p \neq q$ because the torsion subgroup of $\mathbb{Q}_p^\times$ is $\mu_{p-1}$, so two of these fields isomorphic as fields would force $p - 1 = q - 1$.</p>
-<p><strong>Theorem (product formula).</strong> For every $a \in \mathbb{Q}^\times$,</p>
+<p>and no two of these are isomorphic: $\mathbb{R}$ is Archimedean and orderable, while each $\mathbb{Q}_p$ is not orderable, and $\mathbb{Q}_p \not\cong \mathbb{Q}_\ell$ for $p \neq \ell$ because the torsion subgroup of $\mathbb{Q}_p^\times$ is $\mu_{p-1}$, so two of these fields isomorphic as fields would force $p - 1 = \ell - 1$.</p>
+<p><strong>Theorem (product formula).</strong> For every $q \in \mathbb{Q}^\times$,</p>
 <p>$$
-\lvert a \rvert_\infty \prod_p \lvert a \rvert_p = 1 .
+\lvert q \rvert_\infty \prod_p \lvert q \rvert_p = 1 .
 $$</p>
-<p><strong>Proof.</strong> Immediate from the prime factorization $a = \operatorname{sgn}(a)\prod_p p^{v_p(a)}$, as in <em>Absolute Values, Valuations and Completions</em>.</p>
+<p><strong>Proof.</strong> Immediate from the prime factorization $q = \operatorname{sgn}(q)\prod_p p^{v_p(q)}$, as in <em>Absolute Values, Valuations and Completions</em>.</p>
 <h3 id="the-local-structure">The Local Structure</h3>
 <p><strong>Proposition.</strong> For each prime $p$, the valuation ring of $\lvert \cdot \rvert_p$ on $\mathbb{Q}$ is the localization</p>
 <p>$$
-\mathbb{Z}_{(p)} = \left\{\frac{n}{m} : p \nmid m\right\} = \mathbb{Z}_S \ \text{with} \ S = \{\text{primes} \neq p\},
+\mathbb{Z}_{(p)} = \left\{\frac{r}{s} : p \nmid s\right\} = \mathbb{Z}_S \ \text{with} \ S = \{\text{primes} \neq p\},
 $$</p>
 <p>with maximal ideal $p\mathbb{Z}_{(p)}$ and residue field $\mathbb{F}_p$; its completion is $\mathbb{Z}_p$. The field $\mathbb{Q}$ is recovered from each localization by inverting the remaining primes, and $\mathbb{Q}$ is the localization of $\mathbb{Z}$ at the multiplicative set of all nonzero integers.</p>
 <p><strong>Proof.</strong> The identification of the valuation ring is the previous section; the residue field and maximal ideal are computed from the valuation, and the completion statement is from <em>Absolute Values, Valuations and Completions</em>.</p>
@@ -253,7 +252,15 @@ $$</p>
 <td>$p$-adic and usual absolute values</td>
 </tr>
 <tr>
-<td>$\operatorname{sgn}(a)$</td>
+<td>$q$, $q_1$, $q_2$</td>
+<td>Generic rational elements</td>
+</tr>
+<tr>
+<td>$r/s$</td>
+<td>A rational written as a fraction, $r \in \mathbb{Z}$, $s \geq 1$</td>
+</tr>
+<tr>
+<td>$\operatorname{sgn}(q)$</td>
 <td>Sign of a nonzero rational</td>
 </tr>
 <tr>
@@ -285,7 +292,7 @@ $$</p>
 <td>Unital endomorphisms $\{\mathrm{id}\}$, all homomorphisms $\{0,\mathrm{id}\}$, derivations $0$</td>
 </tr>
 <tr>
-<td>$(n,m) \sim (k,\ell)$</td>
+<td>$(r,s) \sim (r',s')$</td>
 <td>Equivalence relation defining $\mathbb{Q}$</td>
 </tr>
 <tr>

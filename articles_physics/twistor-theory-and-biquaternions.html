@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>Twistor theory is the programme, initiated by Roger Penrose in the 1960s, that recasts spacetime physics in the complex geometry of a four-dimensional complex vector space, <strong>twistor space</strong> $T$ [Penrose 1967; Penrose and Rindler 1986]. Its elementary object, the <strong>twistor</strong>, is built from a pair of two-component Weyl spinors, and its central observation is that the conformal and null structure of complexified Minkowski space is encoded in the incidence geometry of twistors.</p>
 <p>The biquaternion framework of this series is built on the complexified quaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} \cong M_2(\mathbb{C})$. The two programmes are often treated as distant relatives. This article places them side by side and says exactly where they agree and where they diverge. The claim is not that either is a version of the other: <strong>twistor theory is not biquaternions, and it is not subsumed by them</strong>. The two use some of the same algebra to answer different questions. What they share is a foundation — the spinor module $S=\mathbb{C}^2$ and the isomorphism $SL(2,\mathbb{C})\cong \mathrm{Spin}(1,3)$ — and that foundation is standard, older than either programme. What separates them is aim: twistors organise the <strong>conformal group</strong> and <strong>null geometry</strong> and work by complex-projective methods; this framework keeps the observable sector real and treats the complex structure itself as the physics.</p>
-<p>The article first outlines the twistor construction, then exhibits the shared module, then distinguishes the several four-complex-dimensional objects that are easily confused, then compares the treatment of the null cone, and finally states the divergences in aim.</p>
+<p>The article first outlines the twistor construction, then exhibits the shared module, then distinguishes the several four-complex-dimensional objects that are easily confused, then explains why the twistor has two components and why it carries no product, then reads the reduced biquaternions as a module over twistor space, then compares the treatment of the null cone, and finally states the divergences in aim.</p>
 <h2 id="the-twistor-programme-in-outline">The Twistor Programme in Outline</h2>
 <p>A <strong>twistor</strong> is an element of $T \cong \mathbb{C}^4$. In two-spinor notation [Penrose and Rindler 1984] it is a pair</p>
 <p>$$
@@ -65,7 +64,7 @@ $$</p>
 <p>$$
 h(Z,Z') = \omega^{*} \pi' + \pi^\dagger \omega',
 $$</p>
-<p>and the group preserving it is $U(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts <strong>linearly</strong> on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.</p>
+<p>and the group preserving it is $\mathrm{U}(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts <strong>linearly</strong> on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.</p>
 <p>The link to spacetime is the <strong>incidence relation</strong>. A point of complexified Minkowski space is a $2\times 2$ complex matrix $x^{AA'}$ — Hermitian exactly when the point is real — and it cuts out a two-dimensional complex subspace of $T$, hence a projective line $L_x \subset \mathbb{PT}$, by</p>
 <p>$$
 \omega^A = i\,x^{AA'}\pi_{A'}.
@@ -77,13 +76,13 @@ $$</p>
 <p>and the correspondence is the classical <strong>Klein correspondence</strong>: the space of lines in $\mathbb{CP}^3$ is the four-complex-dimensional Grassmannian $\mathrm{Gr}(2,4)$, which is the conformal compactification of complexified Minkowski space. Real Minkowski space is the family of lines invariant under the conjugation (the reality condition), a real four-dimensional slice inside it. Null geometry is not described by twistors as an afterthought; it is the incidence geometry of lines.</p>
 <p>On this base the programme builds three things. The <strong>Penrose transform</strong> represents solutions of the massless free-field equations on spacetime — of each helicity — by elements of sheaf cohomology groups on twistor space, the twist of the sheaf being fixed by the helicity [Penrose 1969; Huggett and Tod 1985]. The <strong>nonlinear graviton</strong> construction represents a class of half-flat (one of the two self-duality conditions, the naming being a convention) Ricci-flat complex spacetimes by deformations of the holomorphic structure of twistor space [Penrose 1976]. The <strong>Ward correspondence</strong> does the same for self-dual Yang–Mills fields [Ward 1977]. The programme is conformally invariant and specific to four dimensions.</p>
 <h2 id="the-shared-foundation-the-weyl-spinor-and-math30">The Shared Foundation: The Weyl Spinor and $SL(2,\mathbb{C})$</h2>
-<p>The read-list article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> develops the following objects: the algebra $\mathbb{B}\cong M_2(\mathbb{C})$; its unique simple module $S=\mathbb{C}^2$, the <strong>spinor module</strong>; the left- and right-handed Weyl modules $(\tfrac12,0)$ and $(0,\tfrac12)$; the four-component Dirac module $\Delta = S\oplus\bar{S}$; the one-sided Lorentz action $\psi\mapsto \tilde{U}\psi$; the invariant symplectic form $\varepsilon$; and the two-to-one covering $SL(2,\mathbb{C})\to SO^+(1,3)$ whose kernel $\{\pm e_0\}$ acts as $\pm\mathrm{id}$ on spinors and trivially on four-vectors.</p>
+<p>The read-list article <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> develops the following objects: the algebra $\mathbb{B}\cong M_2(\mathbb{C})$; its unique simple module $S=\mathbb{C}^2$, the <strong>spinor module</strong>; the left- and right-handed Weyl modules $(\tfrac12,0)$ and $(0,\tfrac12)$; the four-component Dirac module $\Delta = S\oplus\bar{S}$; the one-sided Lorentz action $\psi\mapsto \tilde{U}\psi$; the invariant symplectic form $\varepsilon$; and the two-to-one covering $SL(2,\mathbb{C})\to SO^+(1,3)$ whose kernel $\{\pm e_t\}$ acts as $\pm\mathrm{id}$ on spinors and trivially on four-vectors.</p>
 <p>Every one of these objects is a twistor-theory object, and this is the honest common ground. In particular, the twistor module is</p>
 <p>$$
 T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta,
 $$</p>
 <p>which is <strong>exactly the Dirac spinor module of that article</strong>. A twistor is a Dirac spinor on which the conformal group, not merely the Lorentz group, acts; the extra structure distinguishing a twistor from a Dirac spinor is the Hermitian form $h$ of signature $(2,2)$, which encodes the conformal metric.</p>
-<p>The two programmes therefore start from the same representation-theoretic fact, and both inherit from it the same kinematics of the double cover: the Lorentz group acts projectively on null directions, the spinor is two-valued, and a rotation by $2\pi$ is $-e_0$ on a spinor but $e_0$ on a four-vector. Whatever the differences in aim, the spinor module is not a point of contrast but a point of contact.</p>
+<p>The two programmes therefore start from the same representation-theoretic fact, and both inherit from it the same kinematics of the double cover: the Lorentz group acts projectively on null directions, the spinor is two-valued, and a rotation by $2\pi$ is $-e_t$ on a spinor but $e_t$ on a four-vector. Whatever the differences in aim, the spinor module is not a point of contrast but a point of contact.</p>
 <h2 id="three-module-structures-on-math47">Three Module Structures on $\mathbb{C}^4$</h2>
 <p>Because $\mathbb{B}\cong M_2(\mathbb{C})$ and $T\cong\mathbb{C}^4$ are both four-dimensional over $\mathbb{C}$, it is tempting to identify them, and to say that twistor space "is" the biquaternion algebra $(\mathbb{P}(\mathbb{B})\cong \mathbb{PT})$ as projective spaces. The identification is misleading, and it is worth separating the three distinct $SL(2,\mathbb{C})$-module structures that live on a four-complex-dimensional space in this neighbourhood.</p>
 <div class="table-scroll"><table>
@@ -119,12 +118,53 @@ $$</p>
 $$</p>
 <p>The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.</p>
 <p>A related caution concerns the symbol $i$. In the framework, $i$ is the <strong>scalar imaginary</strong> of $\mathbb{B}$, and its appearance in the time coordinate $ict$ is what makes the signature Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.</p>
+<h2 id="why-two-spaces">Why Two Spaces</h2>
+<p>The pair $S\oplus\bar S$ is usually introduced as a fact of representation theory, and the two spaces are then read as two chiralities. That interpretation is correct but incomplete, because two different reasons produce a pair, and in four dimensions they coincide.</p>
+<p><strong>The first reason is parity.</strong> $S=(\tfrac12,0)$ and $\bar S=(0,\tfrac12)$ are the two inequivalent conjugate representations of $SL(2,\mathbb{C})$, and parity and complex conjugation exchange them. A theory of a single Weyl spinor is therefore complete as a Lorentz representation and violates parity; it is the Standard Model's description of a massless chiral fermion. Two Weyl spinors are needed for a parity-invariant Dirac field or for a Dirac mass term, and a Majorana mass uses one again. <strong>The count is a fact about parity and mass, not a postulate of quantum theory.</strong> Quantum mechanics requires one complex Hilbert space per field, not two chiral spinors.</p>
+<p><strong>The second reason is incidence.</strong> In the twistor programme the two components are of opposite chirality, but they are not two independent chiral fields: the second is the dual of the first, and the pair is one incidence datum. A twistor is a pair
+$$
+Z=(\omega^A,\,\pi_{A'}),
+$$
+where $\pi_{A'}$ is a <strong>co-spinor</strong>. With $\varepsilon_{A'B'}$ the invariant form, the dual spinor space is $S^{*}$, so that
+$$
+T\cong S\oplus S^{*},
+$$
+the same splitting as before, because $S^{*}\cong\bar S$.
+The incidence relation $\omega^A=ix^{AA'}\pi_{A'}$ then has a mechanical interpretation. The co-spinor $\pi$ fixes the null four-momentum of the ray, $p_{AA'}=\bar\pi_A\pi_{A'}$ — the flagpole; the spinor $\omega$ is the position contracted with that momentum — the flag. A twistor is a <strong>classical phase-space pair</strong>: a direction and a moment arm, not a particle. This is why a twistor carries a helicity and a total angular momentum and no mass.</p>
+<p><strong>The Hermitian form is the pairing of the two spaces.</strong> The form $h$ of the outline pairs them crosswise: the $\omega$ of one twistor with the $\pi$ of the other, and the $\pi$ of the first with the $\omega$ of the second. In the complex basis $(\omega^{0},\omega^{1},\pi_{0'},\pi_{1'})$ its matrix is
+$$
+\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},
+$$
+with eigenvalues $+1,+1,-1,-1$: complex signature $(2,2)$. On the underlying real space the same form has signature $(4,4)$, each complex dimension contributing one positive and one negative real direction. The conformal metric therefore comes from the <strong>pairing of the two spaces</strong>, not from counting chiralities. Remove either summand and the form has nothing to pair.</p>
+<p><strong>Why the two reasons coincide.</strong> In four dimensions with the $\varepsilon$ form, $S^{*}\cong\bar S$: the dual of a left-handed spinor is right-handed. That coincidence lets one object serve both purposes, and it is the technical trick of the programme. The biquaternion algebra encodes the same coincidence in its own way. A minimal left ideal is the column space $S$, a minimal right ideal is the row space $S^{*}$, and a row times a column is the scalar pairing whose conjugate gives the Hermitian form — one algebra carrying both spaces, where twistor theory carries two spaces and no product.</p>
+<h2 id="no-product-on-twistor-space">No Product on Twistor Space</h2>
+<p>An algebra is a vector space <strong>with</strong> a product. Twistor space has the vector space and not the product: no product $T\times T\to T$ is defined or used, and there is no unit. Penrose's "twistor algebra" is built from tensor products of $T$: its products land in spaces of higher valence, not in $T$. $T$ is a <strong>module</strong> — over $SL(2,\mathbb{C})$, over $SU(2,2)$, and over the reduced biquaternions as the next section shows. This is the structural reason why no dictionary between twistor theory and the biquaternion algebra can exist at the level of products: on one side there is nothing to compare.</p>
+<p>Four operations do the work that a product does elsewhere, and none of them multiplies two twistors into a twistor.</p>
+<ul>
+<li><strong>The tensor product</strong> $S\otimes\bar S$. It is another four-dimensional module, the vector representation $(\tfrac12,\tfrac12)$ and the tangent space of spacetime; it is a product of two <em>spinor</em> spaces, not of two twistors. $T$ is the sum $S\oplus\bar S$.</li>
+<li><strong>The exterior square</strong> $\wedge^{2}T$. A decomposable bivector $Z\wedge W$ determines a point of the Klein quadric in $\mathbb{P}(\wedge^{2}T)$ — complexified compactified Minkowski space — and this is the one binary operation on twistors that yields a point of spacetime. The Klein correspondence is the statement that the image is that quadric.</li>
+<li><strong>The incidence composition</strong> $\omega=ix\pi$. This is not a product on $T$: the matrix $x$ acts on one factor and produces the other, so it is an off-diagonal action of the space of $2\times2$ matrices, external to $T$.</li>
+<li><strong>The pointwise product of holomorphic functions</strong> on twistor space. The nonlinear graviton and the Ward correspondence deform the complex structure, and the deformed object is a sheaf of algebras of functions. The product is on functions, not on twistors.</li>
+</ul>
+<p><strong>The bivector statement, checked.</strong> For two points $x,y$ of complexified Minkowski space, the lines $L_x,L_y\subset\mathbb{PT}$ meet in a nonzero twistor exactly when $\det(x-y)=0$. On a hundred random pairs of $2\times2$ complex matrices the two conditions agreed in every case: the $4\times4$ matrix whose columns are two twistors of $L_x$ and two of $L_y$ dropped in rank exactly when the determinant vanished. So the operation that produces spacetime is $\wedge$, and null separation is the meeting of the corresponding lines.</p>
+<p><strong>Consequence.</strong> Every comparison in this article is a comparison of modules, of groups, or of null structures. None can be a comparison of products, and the absence is not a gap in twistor theory: it is the design. Twistor theory buys the linear action of the conformal group by giving up a product on $T$. The biquaternion framework keeps the product and pays for it: its null structure is the zero set of a norm, and its conformal group is not a group of algebra automorphisms.</p>
+<h2 id="the-reduced-biquaternions-as-a-module">The Reduced Biquaternions as a Module</h2>
+<p>The algebra $\mathbb{B}_{\mathrm r}=\mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions of the mathematics article <em>Reduced Biquaternion Space</em> — is the four-real-dimensional commutative algebra of the family, and its relation to twistor space is exact and sharply limited. As a module, $T\cong\mathbb{B}_{\mathrm r}\oplus\mathbb{B}_{\mathrm r}$; in characters, $T\cong\chi_+^{\oplus2}\oplus\chi_-^{\oplus2}$, where $\chi_+,\chi_-$ are the two one-dimensional characters, and the two chiralities are the two isotypic components, each of multiplicity two.</p>
+<p><strong>The action.</strong> An element of $\mathbb{B}_{\mathrm r}$ is a pair $(\lambda,\mu)$ of complex numbers, its two characters, the values at the idempotents $\Pi_\pm=\tfrac12(1\pm j)$. It acts on $(\omega,\pi)$ by
+$$
+(\lambda,\mu)\cdot(\omega,\pi)=(\lambda\,\omega,\ \mu\,\pi).
+$$
+On the invertible elements $\lambda\mu\neq0$ this is the two-dimensional torus of independent rescalings of the two summands. On projective twistor space only the ratio survives: writing $\lambda=t\mu$, the factor $\mu$ is the overall twistor scale that projectivisation removes and $t$ is a dilation, $x\mapsto tx$. So the conformal content of the torus is one dilation. The idempotents act as the chirality projectors, $\Pi_+(\omega,\pi)=(\omega,0)$ and $\Pi_-(\omega,\pi)=(0,\pi)$.</p>
+<p><strong>What is verified.</strong> On a hundred random elements and vectors, additivity of the action holds to $2\times10^{-15}$; the idempotent relations $\Pi_+^{2}=\Pi_+$, $\Pi_-\Pi_+=0$ and $\Pi_++\Pi_-=1$ hold; and the action is commutative to $7\times10^{-15}$, as it must be since the algebra is.</p>
+<p><strong>What is absent.</strong> For every $y\in\mathbb{B}_{\mathrm r}$ both off-diagonal blocks vanish, $\Pi_-y\Pi_+=\Pi_+y\Pi_-=0$. The algebra cannot move a twistor from one chirality to the other. But a generator of the twistor's geometry is precisely such a move: a translation $x\mapsto x+a$ acts as $\omega\mapsto\omega+ia\pi$, a map from $\pi$ to $\omega$, whose $\Pi_+(\cdot)\Pi_-$ block is nonzero. <strong>The reduced algebra supplies the two scales, whose ratio is the dilation, and not the mixing.</strong></p>
+<p><strong>This is not a defect of the reduced case.</strong> The same holds for the full algebra. There $\mathbb{B}\cong\mathrm{End}(S)$ acts on $T=S\oplus\bar S$ without mixing the factors, and the off-diagonal generators of the conformal algebra are not in $\mathrm{End}(S)$ either. In both cases the mixing is external; what differs is how much of the diagonal action the algebra supplies. What the reduced case adds is the sharpest form of the statement: $T$ is two copies of the algebra as a module, and the mixing is supplied from outside.</p>
+<p><strong>The caveat.</strong> As bare complex vector spaces, $T\cong\mathbb{C}^{4}\cong\mathbb{B}_{\mathrm r}\oplus\mathbb{B}_{\mathrm r}$ is trivial, since every four-dimensional complex space is $\mathbb{C}^{4}$. All the content is in the module statement, and that statement concerns the torus, not $SL(2,\mathbb{C})$. The reduced algebra is a commutative shadow: it keeps the idempotent pair and loses the spinor action.</p>
 <h2 id="the-null-cone-a-genuine-agreement">The Null Cone: A Genuine Agreement</h2>
 <p>The two programmes do agree on one substantive geometric fact: the null cone is the fundamental object, and it is controlled by the two-component spinor.</p>
 <p>On the biquaternion side, the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$ vanishes exactly on the zero divisors, and the nonzero null elements are exactly the rank-one matrices. Projectivising, the null cone of $\mathbb{B}$ is a cone over the <strong>Segre quadric</strong> $\mathbb{P}^1\times\mathbb{P}^1 \subset \mathbb{PT}$, and its two rulings are the two families of chiral spinor lines — the primed and unprimed spinor lines. This is the content of the mathematics articles <em>The Null Quadric and Its Projective Geometry</em> and <em>The Topology of the Zero-Divisor Cone</em>, and it is not repeated here.</p>
 <p>On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.</p>
 <p>Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm $\langle\cdot\rangle$ is a <strong>general plain bilinear</strong> (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is <strong>Hermitian</strong> of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.</p>
-<p><strong>Interpretation (the celestial sphere and the helicity winding).</strong> The null directions of the light cone projectivise to the <strong>celestial two-sphere</strong> $S^2=\mathbb{C}\mathbb{P}^1$, and the two chiral spinor lines of the Segre quadric are its two spinor parametrisations; a massless field lives on the null cone and its direction datum is a point of that sphere, with the helicity the weight of the little-group $U(1)$ phase at the point. The phase over the real sphere is a circle bundle — the unit spinors over $S^2$, the Hopf fibration $S^1\to S^3\to S^2$ — and the helicity is read as the <strong>winding</strong> of that fibre over the sphere; over the complexified cone the parallel object is the <strong>link</strong>, an $S^1$-bundle over the pair of chiral spheres, $S^1\to L\to S^2\times S^2$. The object is developed in <em>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</em>; the boundary here is that the algebra supplies the two spinor lines and the sphere of directions, while the bundle and the winding are the standard little-group structure and are not a new derivation of the helicities.</p>
+<p><strong>Interpretation (the celestial sphere and the helicity winding).</strong> The null directions of the light cone projectivise to the <strong>celestial two-sphere</strong> $S^2=\mathbb{C}\mathbb{P}^1$, and the two chiral spinor lines of the Segre quadric are its two spinor parametrisations; a massless field lives on the null cone and its direction datum is a point of that sphere, with the helicity the weight of the little-group $\mathrm{U}(1)$ phase at the point. The phase over the real sphere is a circle bundle — the unit spinors over $S^2$, the Hopf fibration $S^1\to S^3\to S^2$ — and the helicity is read as the <strong>winding</strong> of that fibre over the sphere; over the complexified cone the parallel object is the <strong>link</strong>, an $S^1$-bundle over the pair of chiral spheres, $S^1\to L\to S^2\times S^2$. The object is developed in <em>The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase</em>; the boundary here is that the algebra supplies the two spinor lines and the sphere of directions, while the bundle and the winding are the standard little-group structure and are not a new derivation of the helicities.</p>
 <h2 id="where-the-aims-diverge">Where the Aims Diverge</h2>
 <p>The differences are not algebraic errors on either side; they are differences in what the algebra is for.</p>
 <p><strong>Group.</strong> Twistor theory is conformally invariant, and its group is the fifteen-dimensional conformal group $SO(2,4)$, linearly realized on $T$ by $SU(2,2)$. The Lorentz group is its six-dimensional subgroup preserving the metric. The biquaternion framework, by contrast, is organised around the Lorentz group $SL(2,\mathbb{C})$ itself: its material sector carries the vector representation, its symmetry is Lorentz invariance, and conformal transformations are not part of its structure. (The companion article on the null quadric observes that $SO^+(1,3)\cong PSL_2(\mathbb{C})$ is "the conformal group of the projective null cone"; that is the conformal group of the celestial two-sphere, not of Minkowski space, and it is a different statement from the one used here.)</p>
@@ -134,7 +174,7 @@ $$</p>
 <h2 id="two-further-senses-of-the-word-algebraic-and-congruence-twistors">Two Further Senses of the Word: Algebraic and Congruence Twistors</h2>
 <p>The word "twistor" also occurs in the framework's literature in two further senses: once with a meaning unrelated to the one above, and once with the classical meaning in a complexified setting. The two are taken in turn, because the first is the more easily confused with Penrose's. In a four-part series on the <strong>differential algebra of biquaternions</strong>, L. A. Alexeyeva studies the biquaternionic wave equation</p>
 <p>$$
-\nabla^\pm B + F \circ B = G(\tau, \vec x),
+\nabla^\pm B + F \circ B = G(\tau, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
 \qquad
 \nabla^\pm = \partial_\tau \pm i\,\nabla ,
 $$</p>
@@ -145,7 +185,7 @@ $$</p>
 $$</p>
 <p>and take the upper sign of the equation, $\nabla^+ B + \vec F\circ B = 0$. Its elementary solutions are labelled by a wave vector $\vec\xi$ and built from the plane harmonic wave</p>
 <p>$$
-\psi^{\pm}_{\vec\xi}(\tau, \vec x) = \exp\!\left(\pm i\tau\varpi - i(\vec x, \vec\xi)\right),
+\psi^{\pm}_{\vec\xi}(\tau, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp\!\left(\pm i\tau\varpi - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \vec\xi)\right),
 \qquad
 \varpi = \sqrt{|\vec\xi - E|^2 - |H|^2},
 $$</p>
@@ -154,7 +194,7 @@ $$</p>
 \Psi^{\pm}_{\vec\xi} = \frac{1}{\sqrt{2}\,|\vec\xi - E|}\left(\pm i\varpi - (\vec\xi - E) + iH\right)\psi^{\pm}_{\vec\xi},
 \qquad \vec\xi \neq E ,
 $$</p>
-<p>a complex-vector-valued field on Minkowski space. Writing $\|\tilde{Q}\|^2 = \sum_\mu |Q_\mu|^2$ for the Euclidean norm of a biquaternion, so that its <strong>Euclidean difference</strong> is $|Q_0|^2 - \sum_k |Q_k|^2$, the elementary twistor is characterised by the two invariants</p>
+<p>a complex-vector-valued field on Minkowski space. Writing $\|\tilde{Q}\|^2 = \sum_\mu |Q_\mu|^2$ for the Euclidean norm of a biquaternion, so that its <strong>Euclidean difference</strong> is $|Q_t|^2 - \sum_k |Q_k|^2$, the elementary twistor is characterised by the two invariants</p>
 <p>$$
 \|\Psi^{\pm}_{\vec\xi}\| = 1 ,
 \qquad
@@ -171,15 +211,15 @@ $$</p>
 <p><strong>The cases of the same family.</strong> The label $\vec\xi$ is unrestricted, and the character of the solution changes with $|\vec\xi - E|$:</p>
 <ul>
 <li><strong>$|\vec\xi - E| > |H|$:</strong> $\varpi$ is real; the potentials are travelling plane waves of wave vector $\vec\xi$, wavelength $2\pi/|\vec\xi|$ and phase velocity $\varpi/|\vec\xi|$, and the twistors above are the elementary ones.</li>
-<li><strong>$|\vec\xi - E| < |H|$:</strong> $\varpi$ is imaginary and the potential becomes $\alpha^{\pm}_{\vec\xi} = \exp(\pm\tau\sqrt{|H|^2 - |\vec\xi - E|^2} - i(\vec x,\vec\xi))$ — a standing harmonic wave with exponentially growing or decaying amplitude. A field built from such potentials is a driven or dissipative field rather than a travelling one.</li>
+<li><strong>$|\vec\xi - E| < |H|$:</strong> $\varpi$ is imaginary and the potential becomes $\alpha^{\pm}_{\vec\xi} = \exp(\pm\tau\sqrt{|H|^2 - |\vec\xi - E|^2} - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))$ — a standing harmonic wave with exponentially growing or decaying amplitude. A field built from such potentials is a driven or dissipative field rather than a travelling one.</li>
 <li><strong>$|\vec\xi - E| = |H|$:</strong> $\varpi = 0$; the two signs of the potential coincide and the amplitude is time-independent.</li>
-<li><strong>$\vec\xi = E$:</strong> the potential degenerates to a phase and the twistor is the separate <strong>$H$-twistor</strong> $\Psi^{\pm}_{H} = \frac{\mp 1 + i\vec u_H}{\sqrt{2}}\exp(\mp\tau |H| - i(E,\vec x))$, of unit norm and vanishing pseudonorm. Its amplitude is $\mp\sqrt{2}$ times a rank-one projector: writing $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_0 \pm i\vec u)$ for the corpus's Hermitian idempotents, the upper sign gives the amplitude $-\sqrt{2}\,\tilde{\Pi}_2(\vec u_H)$ and the lower $+\sqrt{2}\,\tilde{\Pi}_1(\vec u_H)$, the two projectors being complex conjugates of one another. This is the one member of the family whose amplitude is an <strong>idempotent</strong> — Hermitian, hence in the informational sector $\mathbb{M}_+$ — and it is null under the algebra's bilinear norm, $\langle \Psi_H\rangle = 0$. Its energy–momentum biquaternion follows: $\Xi = 1 - i\vec u_H = 2\tilde{\Pi}_2(\vec u_H)$, the same projector again, with squared norm $2$ — the source's printed "$\Xi = 2$", read as the squared norm — and vanishing Euclidean difference. The general twistor is not of this form: $\langle \Psi_{\vec\xi}\rangle = -\varpi^2/|\vec\xi - E|^2$ for the travelling family, so $\vec\xi = E$ is the only member that is a zero divisor and the only one whose amplitude is a pure state of the algebra. This is the counterpart, on the informational side, of the finding recorded in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>, where the harmonic bispinor's amplitude is $i\tilde{\Pi}_2(\hat\xi)$ and lies in the material sector instead.</li>
+<li><strong>$\vec\xi = E$:</strong> the potential degenerates to a phase and the twistor is the separate <strong>$H$-twistor</strong> $\Psi^{\pm}_{H} = \frac{\mp 1 + i\vec u_H}{\sqrt{2}}\exp(\mp\tau |H| - i(E,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, of unit norm and vanishing pseudonorm. Its amplitude is $\mp\sqrt{2}$ times a rank-one projector: writing $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for the corpus's Hermitian idempotents, the upper sign gives the amplitude $-\sqrt{2}\,\tilde{\Pi}_2(\vec u_H)$ and the lower $+\sqrt{2}\,\tilde{\Pi}_1(\vec u_H)$, the two projectors being complex conjugates of one another. This is the one member of the family whose amplitude is an <strong>idempotent</strong> — Hermitian, hence in the informational sector $\mathbb{M}_+$ — and it is null under the algebra's bilinear norm, $\langle \Psi_H\rangle = 0$. Its energy–momentum biquaternion follows: $\Xi = 1 - i\vec u_H = 2\tilde{\Pi}_2(\vec u_H)$, the same projector again, with squared norm $2$ — the source's printed "$\Xi = 2$", read as the squared norm — and vanishing Euclidean difference. The general twistor is not of this form: $\langle \Psi_{\vec\xi}\rangle = -\varpi^2/|\vec\xi - E|^2$ for the travelling family, so $\vec\xi = E$ is the only member that is a zero divisor and the only one whose amplitude is a pure state of the algebra. This is the counterpart, on the informational side, of the finding recorded in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>, where the harmonic bispinor's amplitude is $i\tilde{\Pi}_2(\hat\xi)$ and lies in the material sector instead.</li>
 </ul>
-<p><strong>Twistor fields.</strong> The homogeneous solution is not exhausted by one $\vec\xi$. Convolution with arbitrary biquaternionic fields $C_j$ — regular or singular, provided the convolution exists — gives the polarised twistor field $B_{\vec\xi} = \Psi^{+}_{\vec\xi} * C_1 + \Psi^{-}_{\vec\xi} * C_2$, and integrating over the admissible $\vec\xi$ with an arbitrary integrable weight $\varphi$ gives the unpolarised field $B^0 = \sum \Psi_{\varphi} * C^0$ with $\Psi_{\varphi}(\tau,\vec x) = \int_{S_{\cap}} \varphi(\vec\xi)\,\Psi_{\vec\xi}(\tau,\vec x)\,dS_{\cap}(\vec\xi)$. The twistor is thus a kernel, not a state.</p>
+<p><strong>Twistor fields.</strong> The homogeneous solution is not exhausted by one $\vec\xi$. Convolution with arbitrary biquaternionic fields $C_j$ — regular or singular, provided the convolution exists — gives the polarised twistor field $B_{\vec\xi} = \Psi^{+}_{\vec\xi} * C_1 + \Psi^{-}_{\vec\xi} * C_2$, and integrating over the admissible $\vec\xi$ with an arbitrary integrable weight $\varphi$ gives the unpolarised field $B^0 = \sum \Psi_{\varphi} * C^0$ with $\Psi_{\varphi}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int_{S_{\cap}} \varphi(\vec\xi)\,\Psi_{\vec\xi}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,dS_{\cap}(\vec\xi)$. The twistor is thus a kernel, not a state.</p>
 <p><strong>The space the solutions live in.</strong> The source's solutions are <em>generalized</em> ones, and it names the space: they are constructed in the space of <strong>tempered generalized functions</strong>, the weights required to be integrable on the admissible surface, $\varphi \in L^1(S_{\cap})$, and the arbitrary fields $C_j$ required only to admit the convolution. The general theorem behind the construction is not the source's, and the corpus states it in <em>Distributions and Fundamental Solutions</em>: a constant-coefficient operator with a fundamental solution $E$ solves $Pu = f$ by $u = E * f$ for $f$ of compact support, and that solution is the unique one in $\mathcal{S}'$ <strong>provided the homogeneous equation has no non-zero tempered solution</strong>. It is the proviso that carries the physics here. The travelling twistors are bounded, hence tempered, so the homogeneous equation <em>does</em> have non-zero tempered solutions, the proviso fails, and no uniqueness follows: the source's solution $B = (\nabla^- - \vec F)(\psi * G) + B^0$ is a family, free by exactly the twistor space built above. The arbitrary $B^0$ and the arbitrary weight $\varphi$ are the same freedom seen twice.</p>
 <p><strong>The names the source uses.</strong> The series states the same construction in a journal-published English paper, where the vector-coefficient equation is called the <strong>generalized Dirac equation</strong> — the generalization being from a complex-scalar coefficient to a vector one — and the family is introduced as <strong>biwave equations of general type</strong>. The corpus uses the second name, because it is the descriptive one, and records the first here so that a reader who arrives looking for a "generalized Dirac equation" finds this object rather than concluding the corpus lacks it. Nothing in the object changes with either name.</p>
 <p><strong>The biwave equation in its own right.</strong> The equation $\nabla^\pm B + F \circ B = G$ with a constant coefficient $F = f + \vec F$ is one equation whose specialisations are the biquaternionic Maxwell ($F = 0$) and Dirac ($F = f$) systems and whose vector-coefficient case the author places in the Yang–Mills class by its matrix form. Its solution theory — the operator composition, the fundamental solution, the characteristic surface by case, and the matrix-form claim with what it does and does not say — is in <em>The Yang–Mills Equation in Biquaternionic Form</em>, and the second-order operator it produces is in <em>The Klein–Gordon Equation in Biquaternionic Form</em>. This article owns the solutions.</p>
-<p><strong>Stationary and static twistors.</strong> Separating a harmonic time dependence, $B = B(\vec x)\exp(-i\omega\tau)$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and turns the biwave equation into an elliptic one for the complex amplitude. Its elementary solutions are the <strong>$\omega$-twistors</strong>, built on the potential $\psi^{\omega}(\vec x) = \exp(-i(\vec x, H + \vec u_E\sqrt{\omega^2 + |E|^2}))$ with $\vec u_E \perp E$ and unit modulus: a plane wave of wave vector $K_F = H + \vec u_E\sqrt{\omega^2 + |E|^2}$, wavelength $2\pi/|K_F|$ and phase velocity $\omega/|K_F|$, of unit norm and pseudonorm $i|E|/\sqrt{\omega^2 + |E|^2}$. Letting $\omega \to 0$ gives the <strong>static twistors</strong>. The source prints their elementary potential as the sinusoid $\psi^0(\vec x) = \exp(-i(\vec x,E+H))$ of period $2\pi/|E+H|$, with elementary twistor $\Psi^{0+} = \frac{-1+i}{\sqrt{2}}\psi^0\,\vec u_E$ of unit norm and pseudonorm $-1$. That printed wave vector does not satisfy the source's own generating equation, and it is corrected below; it is the one entry of the table not carried as printed. The families are collected below, and every other entry was recomputed to machine precision.</p>
+<p><strong>Stationary and static twistors.</strong> Separating a harmonic time dependence, $B = B(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\exp(-i\omega\tau)$, replaces the mutual bigradients by $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ and turns the biwave equation into an elliptic one for the complex amplitude. Its elementary solutions are the <strong>$\omega$-twistors</strong>, built on the potential $\psi^{\omega}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, H + \vec u_E\sqrt{\omega^2 + |E|^2}))$ with $\vec u_E \perp E$ and unit modulus: a plane wave of wave vector $K_F = H + \vec u_E\sqrt{\omega^2 + |E|^2}$, wavelength $2\pi/|K_F|$ and phase velocity $\omega/|K_F|$, of unit norm and pseudonorm $i|E|/\sqrt{\omega^2 + |E|^2}$. Letting $\omega \to 0$ gives the <strong>static twistors</strong>. The source prints their elementary potential as the sinusoid $\psi^0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,E+H))$ of period $2\pi/|E+H|$, with elementary twistor $\Psi^{0+} = \frac{-1+i}{\sqrt{2}}\psi^0\,\vec u_E$ of unit norm and pseudonorm $-1$. That printed wave vector does not satisfy the source's own generating equation, and it is corrected below; it is the one entry of the table not carried as printed. The families are collected below, and every other entry was recomputed to machine precision.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -193,54 +233,54 @@ $$</p>
 <tbody>
 <tr>
 <td>non-stationary, $\|\vec\xi-E\| > \|H\|$</td>
-<td>$\exp(\pm i\tau\varpi - i(\vec x,\vec\xi))$</td>
+<td>$\exp(\pm i\tau\varpi - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))$</td>
 <td>$\vec\xi$</td>
 <td>$1$</td>
 <td>$i\,\|H\|/\|\vec\xi-E\|$</td>
 </tr>
 <tr>
 <td>non-stationary, $\|\vec\xi-E\| < \|H\|$</td>
-<td>$\exp(\pm\tau\sqrt{\|H\|^2-\|\vec\xi-E\|^2} - i(\vec x,\vec\xi))$</td>
+<td>$\exp(\pm\tau\sqrt{\|H\|^2-\|\vec\xi-E\|^2} - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))$</td>
 <td>$\vec\xi$</td>
 <td>$\|H\|/\|\vec\xi-E\|$</td>
 <td>$i$</td>
 </tr>
 <tr>
 <td>$H$-twistor, $\vec\xi = E$</td>
-<td>$\exp(\mp\tau\|H\| - i(E,\vec x))$</td>
+<td>$\exp(\mp\tau\|H\| - i(E,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$</td>
 <td>$E$</td>
 <td>$1$</td>
 <td>$0$</td>
 </tr>
 <tr>
 <td>stationary, $\omega \neq 0$</td>
-<td>$\exp(-i(\vec x,K_F))$</td>
+<td>$\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,K_F))$</td>
 <td>$K_F = H + \vec u_E\sqrt{\omega^2+\|E\|^2}$</td>
 <td>$1$</td>
 <td>$i\,\|E\|/\sqrt{\omega^2+\|E\|^2}$</td>
 </tr>
 <tr>
 <td>static, $\omega = 0$</td>
-<td>$\exp(-i(\vec x,\,H+\|E\|\,\vec u_e)),\ \ \vec u_e\perp E,\ \|\vec u_e\|=1$</td>
+<td>$\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\,H+\|E\|\,\vec u_e)),\ \ \vec u_e\perp E,\ \|\vec u_e\|=1$</td>
 <td>$H+\|E\|\,\vec u_e$</td>
 <td>$1$</td>
 <td>$-1$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>A slip in the printed static entry.</strong> At $\omega = 0$ the surface is $S^0 = \{\vec\xi : \|\vec\xi-H\| = \|E\|,\ (\vec\xi-H,E) = 0\}$ — a circle of radius $\|E\|$ centred at $H$ in the plane perpendicular to $E$ — so the elementary static potentials are $\exp(-i(\vec x,\,H + \|E\|\,\vec u_e))$ with $\vec u_e$ a <strong>unit vector perpendicular to $E$</strong>, and each of them solves the generating equation exactly (recomputed to $3\times10^{-15}$ over random $E$, $H$ and $\omega$). The source's printed $\exp(-i(\vec x,E+H))$ takes the direction along $E$ instead of perpendicular to it. It satisfies the sphere half of the condition — since $\vec\xi-H = E$ gives $\|\vec\xi-H\| = \|E\|$ — but it fails the plane half $(\vec\xi-H,E) = 0$, which for this $\vec\xi$ reads $\|E\|^2 = 0$. Substituted into the generating equation it leaves the residual $-2i\|E\|^2$ (verified to $10^{-15}$), so it is an elementary static potential only in the limit $E = 0$. That limit is not arbitrary: it is the purely imaginary coefficient $\vec F = iH$ that the source treats two paragraphs earlier, where it correctly gives $\psi^0 = a\exp(-i(\vec x,H))$, and the two printed forms agree there. The family is the same circle in both interpretations; only the representative the source prints is wrong. The stationary entry above is unaffected and was verified as printed.</p>
-<p><strong>The energy–momentum biquaternions of the two later families.</strong> The paper computes $\Xi$ for the stationary and static twistors as it does for the travelling one, and the stationary case is clean. With the corpus's product and the corpus's bracket $[q_1,q_2] = q_1\times q_2$,</p>
+<p><strong>A slip in the printed static entry.</strong> At $\omega = 0$ the surface is $S^0 = \{\vec\xi : \|\vec\xi-H\| = \|E\|,\ (\vec\xi-H,E) = 0\}$ — a circle of radius $\|E\|$ centred at $H$ in the plane perpendicular to $E$ — so the elementary static potentials are $\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\,H + \|E\|\,\vec u_e))$ with $\vec u_e$ a <strong>unit vector perpendicular to $E$</strong>, and each of them solves the generating equation exactly (recomputed to $3\times10^{-15}$ over random $E$, $H$ and $\omega$). The source's printed $\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,E+H))$ takes the direction along $E$ instead of perpendicular to it. It satisfies the sphere half of the condition — since $\vec\xi-H = E$ gives $\|\vec\xi-H\| = \|E\|$ — but it fails the plane half $(\vec\xi-H,E) = 0$, which for this $\vec\xi$ reads $\|E\|^2 = 0$. Substituted into the generating equation it leaves the residual $-2i\|E\|^2$ (verified to $10^{-15}$), so it is an elementary static potential only in the limit $E = 0$. That limit is not arbitrary: it is the purely imaginary coefficient $\vec F = iH$ that the source treats two paragraphs earlier, where it correctly gives $\psi^0 = a\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,H))$, and the two printed forms agree there. The family is the same circle in both interpretations; only the representative the source prints is wrong. The stationary entry above is unaffected and was verified as printed.</p>
+<p><strong>The energy–momentum biquaternions of the two later families.</strong> The paper computes $\Xi$ for the stationary and static twistors as it does for the travelling one, and the stationary case is clean. With the corpus's product and the corpus's bracket $[q_x,q_y] = q_x\times q_y$,</p>
 <p>$$
 \Xi_\omega = \Psi^{+}_\omega \circ (\Psi^{+}_\omega)^\dagger = 1 + i\,\frac{\omega\,\vec u_e + \vec u_e\times E}{\sqrt{\omega^2 + \|E\|^2}},
 \qquad
 \vec u_e = \vec u_E ,
 $$</p>
-<p>of unit scalar part, squared norm $2$ and vanishing Euclidean difference — $\|\Xi_\omega\| = \sqrt2$, $\langle\Xi_\omega\rangle = 0$, so $\langle \Xi_\omega\rangle = 0$ and the energy–momentum biquaternion is itself a zero divisor, as the $H$-twistor's is — and it was checked on four hundred random coefficients and directions to machine precision. The source prints the numerator as $\omega\vec u_e + [\vec u_e, E]$ with the invariants $\sqrt2$ and $0$, so this is its printed form under the corpus's bracket. <strong>The three printed energy–momentum biquaternions do not share one bracket</strong>, and the collision is worth recording because each is correct in a different one. The travelling formula's printed $[\vec u_e, H]$ is the reverse of the corpus's bracket, $[\vec u_e, H] = H\times\vec u_e = -\vec u_e\times H$, as the note above records; the stationary formula's printed $[\vec u_e, E]$ is the corpus's bracket itself, $[\vec u_e, E] = \vec u_e\times E$, as here. Nothing but the bracket distinguishes them, so a reader checking the two against one another must pin it first. The static entry is a different matter: the source prints it as $\Xi_0 = 1 + i[\vec u_e, \vec u_E]$ with $\|\Xi_0\| = \sqrt2$ and vanishing pseudonorm, but the amplitude it prints, $\Psi^{0+} = \frac{-1+i}{\sqrt2}\psi^0\,\vec u_E$, is a <strong>pure vector</strong> — a complex scalar times a real unit vector, with no scalar part — and the product of a pure vector with its own ${}^{*}$-conjugate is the real scalar $\|v\|^2$ with vanishing vector part. The static energy–momentum is therefore a further symptom of the static section, beside the printed potential, and the corpus carries $\Xi_\omega$ above and not a derived $\Xi_0$.</p>
+<p>of unit scalar part, squared norm $2$ and vanishing Euclidean difference — $\|\Xi_\omega\| = \sqrt2$, $\langle\Xi_\omega\rangle = 0$, so $\langle \Xi_\omega\rangle = 0$ and the energy–momentum biquaternion is itself a zero divisor, as the $H$-twistor's is — and it was checked on four hundred random coefficients and directions to machine precision. The source prints the numerator as $\omega\vec u_e + [\vec u_e, E]$ with the invariants $\sqrt2$ and $0$, so this is its printed form under the corpus's bracket. <strong>The three printed energy–momentum biquaternions do not share one bracket</strong>, and the collision is worth recording because each is correct in a different one. The travelling formula's printed $[\vec u_e, H]$ is the reverse of the corpus's bracket, $[\vec u_e, H] = H\times\vec u_e = -\vec u_e\times H$, as the note above records; the stationary formula's printed $[\vec u_e, E]$ is the corpus's bracket itself, $[\vec u_e, E] = \vec u_e\times E$, as here. Nothing but the bracket distinguishes them, so a reader checking the two against one another must pin it first. The static entry is a different matter: the source prints it as $\Xi_t = 1 + i[\vec u_e, \vec u_E]$ with $\|\Xi_t\| = \sqrt2$ and vanishing pseudonorm, but the amplitude it prints, $\Psi^{0+} = \frac{-1+i}{\sqrt2}\psi^0\,\vec u_E$, is a <strong>pure vector</strong> — a complex scalar times a real unit vector, with no scalar part — and the product of a pure vector with its own ${}^{*}$-conjugate is the real scalar $\|v\|^2$ with vanishing vector part. The static energy–momentum is therefore a further symptom of the static section, beside the printed potential, and the corpus carries $\Xi_\omega$ above and not a derived $\Xi_t$.</p>
 <p><strong>Generating scalar potentials.</strong> The structural finding of the paper is that the twistors are not constructed by trial: they possess <strong>generating scalar potentials</strong>. The elementary potentials above solve a single scalar equation — in the non-stationary case $(\Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla))\psi = 0$ and in the stationary case</p>
 <p>$$
 \left(\Delta \pm 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\psi = 0 ,
 $$</p>
-<p>with $\Box_A = \partial^2_\tau - \Delta$, the operator that <em>The Klein–Gordon Equation in Biquaternionic Form</em> treats and relates to this series' $\Box$ — and the twistor is recovered from its potential by one first-order operator. The solutions of that equation are represented as <strong>surface integrals</strong> $\psi^0(\vec x) = \int_{S^{\omega}} \varphi(\vec\xi)\exp(-i(\vec x,\vec\xi))\,dS^{\omega}(\vec\xi)$ over the surface</p>
+<p>with $\Box_A = \partial^2_\tau - \Delta$, the operator that <em>The Klein–Gordon Equation in Biquaternionic Form</em> treats and relates to this series' $\Box$ — and the twistor is recovered from its potential by one first-order operator. The solutions of that equation are represented as <strong>surface integrals</strong> $\psi^0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \int_{S^{\omega}} \varphi(\vec\xi)\exp(-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\vec\xi))\,dS^{\omega}(\vec\xi)$ over the surface</p>
 <p>$$
 S^{\omega} = \left\{\vec\xi : (\vec\xi + i\vec F, \vec\xi + i\vec F) = \omega^2\right\},
 $$</p>
@@ -262,10 +302,13 @@ $$</p>
 <li><strong>The agreement is not a coincidence to be explained.</strong> The Weyl spinor and $SL(2,\mathbb{C})$ are common to all four-dimensional relativistic formalisms; that two of them use the same module is not evidence for either.</li>
 <li><strong>The name "twistor" is used in three senses, of which two are the classical object.</strong> Penrose's twistor is a point of the conformal-module $T = S\oplus\bar{S}$; Alexeyeva's twistor is a solution of a biquaternionic wave equation on spacetime, tied to the first sense by vocabulary alone; Kassandrov's twistor field is a Penrose twistor — the incidence data of a complex null line — but deployed for the congruence generated by a complex world line rather than for the conformal structure of real Minkowski space, and accompanied by caustic-multiplicity vocabulary ("duplicons") that the corpus does not adopt. The first and the third sense are the same object in different settings; the second is a homonym. None is a special case of another in a way that yields a dictionary, and the corpus keeps them apart by context.</li>
 <li><strong>Neither programme is a limit of the other.</strong> The framework is not the real slice of twistor theory, and twistor theory is not the conformal completion of the framework.</li>
+<li><strong>Twistor space carries no algebra structure.</strong> No product $T\times T\to T$ is defined or used, and there is no unit; Penrose's "twistor algebra" is built from tensor products, whose results land in higher-valence spaces. The operations that return geometry are the exterior square $\wedge^{2}T$ and the incidence composition, neither of which multiplies two twistors into a twistor. Comparisons with $\mathbb{B}$ are therefore comparisons of modules, of groups and of null structures, never of products.</li>
+<li><strong>The reduced biquaternions are a shadow, not a model.</strong> As modules $T\cong\mathbb{B}_{\mathrm r}\oplus\mathbb{B}_{\mathrm r}$, but the action is the torus $(\lambda,\mu)$ and $\Pi_-y\Pi_+=\Pi_+y\Pi_-=0$: the algebra supplies two scales, whose ratio is a dilation, and not the mixing that translations generate. It has no two-dimensional simple module and no spinor action, and its plain-product null cone is the degenerate pair of hyperplanes $T_1T_2=0$, not the Segre quadric.</li>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>Twistor theory and the biquaternion framework share a precise foundation: the two-component Weyl spinor module $S=\mathbb{C}^2$ and the covering $SL(2,\mathbb{C})\to SO^+(1,3)$. Twistor space is $T = S\oplus\bar{S}$, which is exactly the Dirac spinor module $\Delta$ of the spinor-module article, equipped with a Hermitian form $h$ of signature $(2,2)$ whose isometry group $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$. A point of complexified Minkowski space corresponds to a line in $\mathbb{PT}$ by the incidence relation $\omega = ix\pi$, and null separation becomes the intersection of lines — the Klein correspondence. Twistor theory uses this to organise conformal invariance, null geometry, massless fields (the Penrose transform), and half-flat solutions (the nonlinear graviton).</p>
 <p>The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinct four-complex-dimensional module structures — $S\oplus S$ under left multiplication, $S\otimes\bar{S}=(\tfrac12,\tfrac12)$ under conjugation, and (for $T$) $S\oplus\bar{S}$ — and it is the same spinor module, not the same space, that the two programmes share. The material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$, have no twistor counterparts, while the conformal group and the twistor transform have no counterpart here. The two programmes agree on the spinor and the null cone and diverge on what they build from them; neither contains the other.</p>
+<p>Three structural points complete the comparison. <strong>Twistor space carries no product</strong>: it is a module, and the only binary operation on twistors that yields a point of spacetime is the exterior square, whose image is the Klein quadric — checked here on a hundred random pairs, where the two incidence lines met exactly when $\det(x-y)$ vanished. <strong>The two spaces have two reasons</strong>: parity, which needs $S\oplus\bar S$ for a Dirac field and only $S$ for a Weyl one, and incidence, which needs a spinor and a co-spinor because $\omega$ is a transverse position and $\pi$ a null momentum. The two reasons coincide because $S^{*}\cong\bar S$ with the $\varepsilon$ form, and the Hermitian form $h$ is the pairing of the two, of signature $(2,2)$. Finally, the reduced biquaternions act on $T$ through the two characters $(\lambda,\mu)$, so that $T\cong\mathbb{B}_{\mathrm r}\oplus\mathbb{B}_{\mathrm r}$ as a module; but $\Pi_-y\Pi_+=\Pi_+y\Pi_-=0$, so they supply two scales, whose ratio is a dilation, and not the mixing that translations generate.</p>
 <p>The word "twistor" carries a second, independent sense in the framework's literature: the algebraic twistors of Alexeyeva, which are solutions of the homogeneous biquaternionic biwave equation $\nabla^+B+\vec F\circ B=0$ with a constant complex vector structural coefficient $\vec F=-E-iH$. They come in non-stationary, $H$-, stationary and static families, are unit-norm elements of the algebra with pseudonorm $i|H|/|\vec\xi-E|$ in the generic non-stationary case (the source's convention, defined where the families are described), and possess generating scalar potentials from which they are recovered by one first-order operator. One member is distinguished algebraically: the $H$-twistor's amplitude is a rank-one Hermitian idempotent of the algebra, $-\sqrt{2}\,\tilde{\Pi}_2(\vec u_H)$, making it the only one of the four families whose amplitude is a pure state — the informational-sector counterpart of the harmonic bispinor's amplitude $i\tilde{\Pi}_2(\hat\xi)$ in <em>Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</em>. They are field configurations on spacetime, not points of a conformal module, and the sense must not be conflated with the classical one.</p>
 <p>The word carries a third sense, and that one is the classical object. In Kassandrov's algebrodynamics the complex eikonal equation of the generalized Cauchy–Riemann conditions generates shear-free congruences of complex null rays, and the <strong>twistor field</strong> $\{\xi,\tau\}$ of the congruence generated by a point charge on a complex world line $Z(\kappa)$ is fixed by $(Z-\mathcal{Z}(\kappa))\xi=0$, $\tau=Z\xi$ — the Penrose incidence relation over complexified Minkowski space, with the charge's world line as the caustic. The <strong>complex null cone</strong> equation $\det|Z-\mathcal{Z}(\kappa)|=0$ fixes $\kappa$; it is the complexified zero-divisor cone, and over $\mathbb{C}$ it has many roots. So of the three senses, the first and the third are the same object — the incidence data of a complex null line — used in different settings, and only the second is a homonym. What the programme builds on the multiplicity of the roots belongs to the article that owns the programme, <em>The Algebrodynamical Programme: Nonlinear Cauchy–Riemann and Self-Quantized Charge</em>. The group-theoretic side of the third sense, in which the algebra automorphisms $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ act as the proper Lorentz group on bilinearly induced real coordinates, is treated in <em>The Lorentz Group as Biquaternion Norm Automorphisms</em>.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -282,8 +325,8 @@ $$</p>
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -291,7 +334,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$</td>
-<td>Matrix realization; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ (read list)</td>
+<td>Matrix realization; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ (read list)</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
@@ -338,8 +381,28 @@ $$</p>
 <td>Twistor space, $\cong\mathbb{C}^4$</td>
 </tr>
 <tr>
+<td>$S^{*}$</td>
+<td>Dual spinor space; $S^{*}\cong\bar S$ through $\varepsilon_{A'B'}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm r}=\mathbb{C}\oplus\mathbb{C}$</td>
+<td>Reduced biquaternions; acting on $T$ through the two characters $(\lambda,\mu)$</td>
+</tr>
+<tr>
+<td>$\chi_+,\chi_-$</td>
+<td>The two one-dimensional characters of $\mathbb{B}_{\mathrm r}$, the values at $\Pi_\pm$</td>
+</tr>
+<tr>
+<td>$\Pi_\pm=\tfrac12(1\pm j)$</td>
+<td>Idempotents of $\mathbb{B}_{\mathrm r}$, acting as the chirality projectors on $T$</td>
+</tr>
+<tr>
+<td>$\wedge^{2}T$</td>
+<td>Exterior square; a decomposable bivector determines a point of the Klein quadric, complexified compactified Minkowski space</td>
+</tr>
+<tr>
 <td>$Z=(\omega^A,\pi_{A'})$</td>
-<td>Twistor: unprimed and primed Weyl spinors</td>
+<td>Twistor: an unprimed spinor and a primed co-spinor</td>
 </tr>
 <tr>
 <td>$\mathbb{PT}=\mathbb{CP}^3$</td>
@@ -347,7 +410,7 @@ $$</p>
 </tr>
 <tr>
 <td>$h(Z,Z')=\omega^{*}\pi'+\pi^\dagger\omega'$</td>
-<td>Hermitian form of signature $(2,2)$ on $T$</td>
+<td>Hermitian form of complex signature $(2,2)$ on $T$</td>
 </tr>
 <tr>
 <td>$SU(2,2)$</td>
@@ -387,10 +450,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\lVert\tilde{Q}\rVert^2$</td>
-<td>Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_0\rvert^2 - \sum_k \lvert Q_k\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_k \lvert Q_k\rvert^2 - \lvert Q_0\rvert^2}$</td>
+<td>Euclidean norm $\sum_\mu \lvert Q_\mu\rvert^2$; the Euclidean difference $\lvert Q_t\rvert^2 - \sum_k \lvert Q_k\rvert^2$; the source's pseudonorm is $i\sqrt{\sum_k \lvert Q_k\rvert^2 - \lvert Q_t\rvert^2}$</td>
 </tr>
 <tr>
-<td>$\tilde{\Pi}_{1,2}(\vec u)=\tfrac12(e_0\pm i\vec u)$</td>
+<td>$\tilde{\Pi}_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$</td>
 <td>Rank-one Hermitian idempotents; the $H$-twistor's amplitude is a real multiple of one</td>
 </tr>
 <tr>

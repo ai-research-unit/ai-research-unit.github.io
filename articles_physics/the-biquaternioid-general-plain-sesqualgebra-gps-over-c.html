@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,16 +53,16 @@
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the first of them, the <strong>general plain sesqualgebra</strong>, written $\mathrm{GPS}$, whose product is the plain product with the star inserted into its second slot, $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. It is one of the two <strong>general</strong> sesqualgebras of the space, and its job in the framework is <strong>probability</strong>: its scalar form is the positive definite Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}$, whose squared modulus is the Born weight.</p>
 <p>The mathematics of the structure is owned by the group <em>The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$</em> of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
 <h2 id="the-results">The Results</h2>
 <h3 id="basic-properties">Basic Properties</h3>
 <ul>
 <li><strong>The operation.</strong> The product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-sesquilinear — linear in the first slot, conjugate-linear in the second — and it is not associative. Its class among the twelve structures is that of a general sesqualgebra. Owner: <em>Introduction to the General Plain Sesqualgebra</em>.</li>
-<li><strong>The unit.</strong> $e_0$ is a <strong>right</strong> identity, $\tilde X\star e_0=\tilde X$, and not a left one, $e_0\star\tilde X=\tilde X^{*}$. The structure therefore has no two-sided unit, and this is the algebraic mark that separates it from the ordinary product. Owner: <em>Introduction to the General Plain Sesqualgebra</em>.</li>
-<li><strong>The algebraic norm and invertibility.</strong> The norm of the structure is $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$, whose diagonal value $\langle\tilde Q,\tilde Q\rangle_{*}=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$ is positive definite of signature $(8,0)$ over $\mathbb{R}$. The invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$, with the <strong>one-sided</strong> inverse $\bar{\tilde X}/\overline{\langle\tilde X\rangle_{\natural}}$. Owner: <em>Norm and Invertibility in the General Plain Sesqualgebra</em>.</li>
+<li><strong>The unit.</strong> $e_t$ is a <strong>right</strong> identity, $\tilde X\star e_t=\tilde X$, and not a left one, $e_t\star\tilde X=\tilde X^{*}$. The structure therefore has no two-sided unit, and this is the algebraic mark that separates it from the ordinary product. Owner: <em>Introduction to the General Plain Sesqualgebra</em>.</li>
+<li><strong>The algebraic norm and invertibility.</strong> The norm of the structure is $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$, whose diagonal value $\langle\tilde Q,\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2}$ is positive definite of signature $(8,0)$ over $\mathbb{R}$. The invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$, with the <strong>one-sided</strong> inverse $\bar{\tilde X}/\overline{\langle\tilde X\rangle_{\natural}}$. Owner: <em>Norm and Invertibility in the General Plain Sesqualgebra</em>.</li>
 <li><strong>Zero divisors.</strong> The zero-divisor set is the cone $\{\langle\tilde Q\rangle_{\natural}=0\}$, the same set as the ordinary product's, so the two structures share their wall of non-invertibility. Owner: <em>Zero Divisors of the General Plain Sesqualgebra</em>.</li>
 <li><strong>Annihilators.</strong> The left, the right and the two-sided annihilator of an element, and the radical of the product; the two sides are distinguished exactly at an element of vanishing norm. Owner: <em>Annihilators of the General Plain Sesqualgebra</em>.</li>
-<li><strong>Square roots of one and the idempotents.</strong> The roots of $+1$ form the family $U(1)\cdot S^{3}$, which is the unitary group $U(2)$ of the state space; the Hermitian roots of $+1$ are the involutions, and every idempotent of the structure is Hermitian, so the idempotent set is the pure-state set. Owner: <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>.</li>
+<li><strong>Square roots of one and the idempotents.</strong> The roots of $+1$ form the family $\mathrm{U}(1)\cdot S^{3}$, which is the unitary group $\mathrm{U}(2)$ of the state space; the Hermitian roots of $+1$ are the involutions, and every idempotent of the structure is Hermitian, so the idempotent set is the pure-state set. Owner: <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em>.</li>
 <li><strong>Square roots of zero and the nilpotents.</strong> The root set of $0$ is <strong>empty</strong>: the definite weight refuses a nonzero square-zero element. The nilpotents exist nevertheless, they are the pure isotropic cone of the algebra, of index <strong>exactly three</strong>, and the square of a nilpotent is a pure state. Owner: <em>Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra</em>.</li>
 <li><strong>Square roots of a general element.</strong> The structure admits a root of every non-negative value and of no non-real or negative one, one of the four existence classes of the twelve structures. Owner: <em>Square Roots of a General Element in the General Plain Sesqualgebra</em>.</li>
 <li><strong>The squares and the positive cone.</strong> The square of an element lands in the Hermitian cone, the image of the structure being the cone of positive elements together with the origin. Owner: <em>The Squares and the Positive Cone of the Biquaternioid Sesqualgebra</em>.</li>
@@ -124,7 +123,7 @@
 <td>the general plain sesquilinear product, $\mathrm{GPS}$</td>
 </tr>
 <tr>
-<td>$e_0\star\tilde X=\tilde X^{*}$; $\tilde X\star e_0=\tilde X$</td>
+<td>$e_t\star\tilde X=\tilde X^{*}$; $\tilde X\star e_t=\tilde X$</td>
 <td>no left unit; a right unit</td>
 </tr>
 <tr>
@@ -132,7 +131,7 @@
 <td>the algebraic norm; the positive definite Hermitian form</td>
 </tr>
 <tr>
-<td>$\langle\tilde Q,\tilde Q\rangle_{*}=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$</td>
+<td>$\langle\tilde Q,\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2}$</td>
 <td>the diagonal value; signature $(8,0)$ over $\mathbb{R}$</td>
 </tr>
 <tr>
@@ -144,7 +143,7 @@
 <td>the biquaternion norm; the interval on $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$U(1)\cdot S^{3}=U(2)$</td>
+<td>$\mathrm{U}(1)\cdot S^{3}=\mathrm{U}(2)$</td>
 <td>the roots of $+1$; the unitary group of the state space</td>
 </tr>
 <tr>

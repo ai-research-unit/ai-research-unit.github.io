@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -56,7 +55,7 @@
 <p>$$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$</p>
-<p>is the subject of this group. The rule and the scalar–vector form are <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> §<em>The General Quaternionic Sesquilinear Product</em>; the sesqualgebra it defines, its multiplication table and its axioms are <em>Introduction to the General Quaternionic Sesqualgebra</em>. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.</p>
+<p>is the subject of this group. The rule and the scalar–vector form are <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> §<em>The General Quaternionic Sesquilinear Product</em>; the sesqualgebra it defines, its multiplication table and its axioms are <em>Introduction to the General Quaternionic Sesqualgebra</em>. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_t - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_t} - \overline{\vec P}$, the bar is the coefficientwise complex conjugation, and $\langle\tilde P\rangle_{\natural} = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.</p>
 <p>The subject of this article is the <strong>associator</strong> of the multiplication,</p>
 <p>$$
 [\tilde P,\tilde Q,\tilde R] = (\tilde P \star \tilde Q) \star \tilde R - \tilde P \star (\tilde Q \star \tilde R) ,
@@ -118,7 +117,7 @@ $$</p>
 $$</p>
 <p>for a generic triple.</p>
 <p><strong>Proof.</strong> The two groupings have opposite parities in the third variable: the left grouping is conjugate-linear, $(\lambda\tilde R)^{*} = \bar\lambda\tilde R^{*}$, and the right grouping is linear, since its third factor is $\tilde R$ itself, $\tilde P^{\natural}(\lambda\tilde R)\overline{\tilde Q} = \lambda\,\tilde P^{\natural}\tilde R\overline{\tilde Q}$. The associator is the difference of a conjugate-linear function and a linear one, which is homothetic to neither, and the generic failure is read on a worked example.</p>
-<p><strong>Example.</strong> For $\tilde P = \tilde Q = e_0$ the associator is the difference of the two groupings $\tilde R^{*}$ and $\tilde R$, that is $[\tilde P,\tilde Q,\tilde R] = \tilde R^{*} - \tilde R$. At $\tilde R = e_1 + ie_2$, whose star is $-e_1 + ie_2$, the value is $-2e_1$. At $\tilde R$ replaced by $i\tilde R = ie_1 - e_2$, whose star is $ie_1 + e_2$, the value is $2e_2$. The number $2e_2$ is neither $i(-2e_1) = -2ie_1$ nor $-i(-2e_1) = 2ie_1$, so the associator at this triple is homothetic to the first value by neither $\lambda$ nor $\bar\lambda$ for $\lambda = i$, which is the generic inhomogeneity in the third variable.</p>
+<p><strong>Example.</strong> For $\tilde P = \tilde Q = e_t$ the associator is the difference of the two groupings $\tilde R^{*}$ and $\tilde R$, that is $[\tilde P,\tilde Q,\tilde R] = \tilde R^{*} - \tilde R$. At $\tilde R = \vec e_x + i\vec e_y$, whose star is $-\vec e_x + i\vec e_y$, the value is $-2\vec e_x$. At $\tilde R$ replaced by $i\tilde R = i\vec e_x - \vec e_y$, whose star is $i\vec e_x + \vec e_y$, the value is $2\vec e_y$. The number $2\vec e_y$ is neither $i(-2\vec e_x) = -2i\vec e_x$ nor $-i(-2\vec e_x) = 2i\vec e_x$, so the associator at this triple is homothetic to the first value by neither $\lambda$ nor $\bar\lambda$ for $\lambda = i$, which is the generic inhomogeneity in the third variable.</p>
 <h3 id="additivity">Additivity</h3>
 <p><strong>Proposition.</strong> The associator is additive in each variable.</p>
 <p><strong>Proof.</strong> Both groupings are additive in each variable, being compositions of the additive multiplications and conjugations, and the difference of two additive maps is additive.</p>
@@ -126,35 +125,35 @@ $$</p>
 <h2 id="the-failure-of-the-weaker-laws">The Failure of the Weaker Laws</h2>
 <h3 id="the-product-is-not-associative">The Product Is Not Associative</h3>
 <p><strong>Theorem.</strong> The multiplication is not associative.</p>
-<p><strong>Proof.</strong> The associator is nonzero at some triple. At $(\tilde P,\tilde Q,\tilde R) = (e_0,e_0,e_1)$ the two groupings are</p>
+<p><strong>Proof.</strong> The associator is nonzero at some triple. At $(\tilde P,\tilde Q,\tilde R) = (e_t,e_t,\vec e_x)$ the two groupings are</p>
 <p>$$
-(e_0 \star e_0) \star e_1 = e_0 \star e_1 = -e_1 , \qquad e_0 \star (e_0 \star e_1) = e_0 \star (-e_1) = e_1 ,
+(e_t \star e_t) \star \vec e_x = e_t \star \vec e_x = -\vec e_x , \qquad e_t \star (e_t \star \vec e_x) = e_t \star (-\vec e_x) = \vec e_x ,
 $$</p>
-<p>so $[e_0,e_0,e_1] = -e_1 - e_1 = -2e_1 \neq 0$.</p>
-<p><strong>Remark.</strong> The witness uses only basis elements, and it is the smallest possible in the basis: the associator is nonzero as soon as the two groupings are told apart, and here the second argument is $e_0$, so that $\overline{\tilde Q} = e_0$ and the plain products are $e_1$ and $-e_1$.</p>
+<p>so $[e_t,e_t,\vec e_x] = -\vec e_x - \vec e_x = -2\vec e_x \neq 0$.</p>
+<p><strong>Remark.</strong> The witness uses only basis elements, and it is the smallest possible in the basis: the associator is nonzero as soon as the two groupings are told apart, and here the second argument is $e_t$, so that $\overline{\tilde Q} = e_t$ and the plain products are $\vec e_x$ and $-\vec e_x$.</p>
 <h3 id="the-product-is-not-flexible">The Product Is Not Flexible</h3>
 <p><strong>Definition.</strong> The product is <strong>flexible</strong> when $(\tilde P \star \tilde Q) \star \tilde P = \tilde P \star (\tilde Q \star \tilde P)$ for all $\tilde P, \tilde Q$. From the associator this is the identity $[\tilde P,\tilde Q,\tilde P] = 0$.</p>
 <p><strong>Theorem.</strong> The multiplication is not flexible.</p>
-<p><strong>Proof.</strong> At $\tilde P = ie_0$ and $\tilde Q = e_0$ the two sides are</p>
+<p><strong>Proof.</strong> At $\tilde P = ie_t$ and $\tilde Q = e_t$ the two sides are</p>
 <p>$$
-(ie_0 \star e_0) \star ie_0 = ie_0 \star ie_0 = (ie_0)^{\natural}(ie_0)^{*} = (ie_0)(-ie_0) = e_0 ,
+(ie_t \star e_t) \star ie_t = ie_t \star ie_t = (ie_t)^{\natural}(ie_t)^{*} = (ie_t)(-ie_t) = e_t ,
 $$</p>
 <p>$$
-ie_0 \star (e_0 \star ie_0) = ie_0 \star (-ie_0) = (ie_0)^{\natural}(-ie_0)^{*} = (ie_0)(ie_0)^{\natural} = (ie_0)(ie_0) = -e_0 ,
+ie_t \star (e_t \star ie_t) = ie_t \star (-ie_t) = (ie_t)^{\natural}(-ie_t)^{*} = (ie_t)(ie_t)^{\natural} = (ie_t)(ie_t) = -e_t ,
 $$</p>
-<p>so $[ie_0,e_0,ie_0] = 2e_0 \neq 0$.</p>
+<p>so $[ie_t,e_t,ie_t] = 2e_t \neq 0$.</p>
 <p><strong>Remark.</strong> The flexibility law is the weakest of the classical laws of a non-associative algebra and the one that would be needed to make the powers of an element well defined; it fails here, and it fails on a central element, which is the smallest possible failure. The witness is the one the group article records.</p>
 <h3 id="the-product-is-not-power-associative">The Product Is Not Power-Associative</h3>
 <p><strong>Definition.</strong> The product is <strong>power-associative</strong> when every element generates an associative subalgebra, equivalently when $x^{p}x^{q} = x^{p+q}$ for all $p, q$; the weakest identity of the family is <strong>third-power associativity</strong>, $(\tilde P \star \tilde P) \star \tilde P = \tilde P \star (\tilde P \star \tilde P)$, which says that the third power is well defined.</p>
 <p><strong>Theorem.</strong> The multiplication is not power-associative, and the third-power identity fails.</p>
-<p><strong>Proof.</strong> At $\tilde P = ie_3$ the square is $\tilde P \star \tilde P = (ie_3)^{\natural}(ie_3)^{*} = (-ie_3)(ie_3) = -e_0$, so the two groupings of the third power are</p>
+<p><strong>Proof.</strong> At $\tilde P = i\vec e_z$ the square is $\tilde P \star \tilde P = (i\vec e_z)^{\natural}(i\vec e_z)^{*} = (-i\vec e_z)(i\vec e_z) = -e_t$, so the two groupings of the third power are</p>
 <p>$$
-(\tilde P \star \tilde P) \star \tilde P = (-e_0) \star ie_3 = (-e_0)^{\natural}(ie_3)^{*} = (-e_0)(ie_3) = -ie_3 ,
+(\tilde P \star \tilde P) \star \tilde P = (-e_t) \star i\vec e_z = (-e_t)^{\natural}(i\vec e_z)^{*} = (-e_t)(i\vec e_z) = -i\vec e_z ,
 $$</p>
 <p>$$
-\tilde P \star (\tilde P \star \tilde P) = ie_3 \star (-e_0) = (ie_3)^{\natural}(-e_0)^{*} = (-ie_3)(-e_0) = ie_3 .
+\tilde P \star (\tilde P \star \tilde P) = i\vec e_z \star (-e_t) = (i\vec e_z)^{\natural}(-e_t)^{*} = (-i\vec e_z)(-e_t) = i\vec e_z .
 $$</p>
-<p>The two sides are $-ie_3$ and $ie_3$, so the third-power identity fails; equivalently the associator at the triple $(ie_3,ie_3,ie_3)$ is $-ie_3 - ie_3 = -2ie_3 \neq 0$. Since a power-associative algebra satisfies third-power associativity, the product is not power-associative.</p>
+<p>The two sides are $-i\vec e_z$ and $i\vec e_z$, so the third-power identity fails; equivalently the associator at the triple $(i\vec e_z,i\vec e_z,i\vec e_z)$ is $-i\vec e_z - i\vec e_z = -2i\vec e_z \neq 0$. Since a power-associative algebra satisfies third-power associativity, the product is not power-associative.</p>
 <p><strong>Remark.</strong> The failure of third-power associativity is the strongest of the failures in the sense that it is the weakest law, so a failure there is not implied by the failures above it; the product fails at the bottom rung directly. The group article records the two failures as <em>The Flexibility and the Degree-Three Identity</em>.</p>
 <h3 id="the-ladder">The Ladder</h3>
 <p><strong>Theorem (the rungs the product misses).</strong> The property ladder of <em>Non-Associative Algebras and the Property Ladder</em> has the implications</p>
@@ -163,7 +162,7 @@ $$</p>
 $$</p>
 <p>and the general quaternionic sesquilinear product satisfies none of the four properties.</p>
 <p><strong>Proof.</strong> The product is not flexible by the second theorem above; since alternative implies flexible, and associative implies alternative, the product is not alternative and not associative. The product fails third-power associativity by the third theorem, and since power-associative implies third-power associativity, the product is not power-associative. The four failures all follow from the failure at the last of the three computations, together with the separate witness of non-flexibility.</p>
-<p><strong>Remark.</strong> An algebra that fails flexibility can still be non-power-associative for a different reason; here the failure of the degree-three identity at a single central element settles power-associativity, and the failure of flexibility at another settles alternativity and associativity. The two witnesses are $ie_3$ and $(ie_0,e_0)$, both as small as possible, and the ladder's strictness is not used: the product lies below every rung.</p>
+<p><strong>Remark.</strong> An algebra that fails flexibility can still be non-power-associative for a different reason; here the failure of the degree-three identity at a single central element settles power-associativity, and the failure of flexibility at another settles alternativity and associativity. The two witnesses are $i\vec e_z$ and $(ie_t,e_t)$, both as small as possible, and the ladder's strictness is not used: the product lies below every rung.</p>
 <h2 id="the-associator-read-on-the-plain-product">The Associator Read on the Plain Product</h2>
 <h3 id="the-difference-of-the-two-plain-products">The Difference of the Two Plain Products</h3>
 <p>The formula $[\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q}$ exhibits the associator as the difference of two plain products of three factors, and it is worth reading the two terms separately.</p>
@@ -177,10 +176,10 @@ $$</p>
 <h3 id="examples-and-the-vanishing-set">Examples and the Vanishing Set</h3>
 <p><strong>Examples.</strong> The associator vanishes at some triples and not at others.</p>
 <ul>
-<li>$[e_0,e_0,e_1] = -2e_1$, nonzero: the two groupings are $(e_0 \star e_0) \star e_1 = -e_1$ and $e_0 \star (e_0 \star e_1) = e_1$.</li>
-<li>$[e_0,e_1,e_1] = 2e_0$, nonzero: the two groupings are $(e_0 \star e_1) \star e_1 = e_0$ and $e_0 \star (e_1 \star e_1) = -e_0$.</li>
-<li>$[e_1,e_1,e_1] = 0$, zero: the two groupings are $(e_1 \star e_1) \star e_1 = (-e_0) \star e_1 = e_1$ and $e_1 \star (e_1 \star e_1) = e_1 \star (-e_0) = e_1$.</li>
-<li>$[e_1,e_2,e_0] = 0$, zero: the two groupings are $(e_1 \star e_2) \star e_0 = e_3 \star e_0 = -e_3$ and $e_1 \star (e_2 \star e_0) = e_1 \star (-e_2) = -e_3$.</li>
+<li>$[e_t,e_t,\vec e_x] = -2\vec e_x$, nonzero: the two groupings are $(e_t \star e_t) \star \vec e_x = -\vec e_x$ and $e_t \star (e_t \star \vec e_x) = \vec e_x$.</li>
+<li>$[e_t,\vec e_x,\vec e_x] = 2e_t$, nonzero: the two groupings are $(e_t \star \vec e_x) \star \vec e_x = e_t$ and $e_t \star (\vec e_x \star \vec e_x) = -e_t$.</li>
+<li>$[\vec e_x,\vec e_x,\vec e_x] = 0$, zero: the two groupings are $(\vec e_x \star \vec e_x) \star \vec e_x = (-e_t) \star \vec e_x = \vec e_x$ and $\vec e_x \star (\vec e_x \star \vec e_x) = \vec e_x \star (-e_t) = \vec e_x$.</li>
+<li>$[\vec e_x,\vec e_y,e_t] = 0$, zero: the two groupings are $(\vec e_x \star \vec e_y) \star e_t = \vec e_z \star e_t = -\vec e_z$ and $\vec e_x \star (\vec e_y \star e_t) = \vec e_x \star (-\vec e_y) = -\vec e_z$.</li>
 </ul>
 <p><strong>Remark.</strong> The vanishing set is the set of triples for which the two terms agree, $\overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q}$; it is a proper algebraic subset of $\mathbb{B}^{3}$ and it contains all triples with a vanishing factor and every triple of real scalar elements, but it is not the whole space. Of the $64$ triples of basis elements, $40$ make the associator vanish and $24$ do not, so the vanishing is the common case on the basis and the non-vanishing is the one that decides the laws. The group article states the same examples.</p>
 <h2 id="the-comparison-with-the-sibling-associators">The Comparison with the Sibling Associators</h2>
@@ -218,7 +217,7 @@ $$</p>
 <p>$$
 [\tilde P,\tilde Q,\tilde R] = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} - \tilde P^{\natural}\,\tilde R\,\overline{\tilde Q} ,
 $$</p>
-<p>the difference of the two groupings of the product, each grouping being a plain product of three factors. The associator is $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, and neither linear nor conjugate-linear in the third, so it is a trilinear form on two different mixed modules rather than on $\mathbb{B}^{3}$; it is additive in all three variables. The product is not associative, with witness $[e_0,e_0,e_1] = -2e_1$; it is not flexible, with witness $[ie_0,e_0,ie_0] = 2e_0$; and it is not power-associative, third-power associativity failing at $\tilde P = ie_3$ with the two sides $-ie_3$ and $ie_3$. The product therefore satisfies none of the four rungs of the property ladder, and each failure is read on a single basis element. The associator vanishes at some triples, the vanishing set being the proper algebraic subset $\overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q}$ of $\mathbb{B}^{3}$. The sibling sesquilinear associator is $\tilde P((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*})$, and the associator of the fourth product is its isotope by ${}^{\natural}$, carrying the extra factor $\overline{\tilde Q}$ and the extra conjugation on the first factor.</p>
+<p>the difference of the two groupings of the product, each grouping being a plain product of three factors. The associator is $\mathbb{C}$-linear in the first variable, conjugate-linear in the second, and neither linear nor conjugate-linear in the third, so it is a trilinear form on two different mixed modules rather than on $\mathbb{B}^{3}$; it is additive in all three variables. The product is not associative, with witness $[e_t,e_t,\vec e_x] = -2\vec e_x$; it is not flexible, with witness $[ie_t,e_t,ie_t] = 2e_t$; and it is not power-associative, third-power associativity failing at $\tilde P = i\vec e_z$ with the two sides $-i\vec e_z$ and $i\vec e_z$. The product therefore satisfies none of the four rungs of the property ladder, and each failure is read on a single basis element. The associator vanishes at some triples, the vanishing set being the proper algebraic subset $\overline{\tilde Q}\tilde P\tilde R^{*} = \tilde P^{\natural}\tilde R\overline{\tilde Q}$ of $\mathbb{B}^{3}$. The sibling sesquilinear associator is $\tilde P((\tilde R\tilde Q)^{*} - \tilde R\tilde Q^{*})$, and the associator of the fourth product is its isotope by ${}^{\natural}$, carrying the extra factor $\overline{\tilde Q}$ and the extra conjugation on the first factor.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -253,15 +252,15 @@ $$</p>
 <td>the module of the right grouping</td>
 </tr>
 <tr>
-<td>$[e_0,e_0,e_1] = -2e_1$</td>
+<td>$[e_t,e_t,\vec e_x] = -2\vec e_x$</td>
 <td>a witness of non-associativity</td>
 </tr>
 <tr>
-<td>$[ie_0,e_0,ie_0] = 2e_0$</td>
+<td>$[ie_t,e_t,ie_t] = 2e_t$</td>
 <td>a witness of non-flexibility</td>
 </tr>
 <tr>
-<td>$[ie_3,ie_3,ie_3] = -2ie_3$</td>
+<td>$[i\vec e_z,i\vec e_z,i\vec e_z] = -2i\vec e_z$</td>
 <td>a witness of the failure of third-power associativity</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -99,14 +98,14 @@ $$</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <p><strong>Theorem.</strong> The group of units of $\mathbb{H}_{\mathbb{D}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:</p>
 <p>$$
-\mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \tilde{Q}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
+\mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \mathbb{H}_{\mathbb{D}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
 $$</p>
 <p><strong>Proof.</strong> An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements.</p>
 <p>The unit group is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that</p>
 <p>$$
 \mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
 $$</p>
-<p>a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in <em>Split-Biquaternion Rotations and the Lorentz Group</em>, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $U(2)$.</p>
+<p>a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in <em>Split-Biquaternion Rotations and the Lorentz Group</em>, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $\mathrm{U}(2)$.</p>
 <p>The <strong>norm-one group</strong> — the elements whose split-biquaternion norm is the identity of $\mathbb{D}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is</p>
 <p>$$
 \left\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
@@ -133,7 +132,7 @@ $$</p>
 <p>$$
 \tilde{Q} \longmapsto \tilde{Q}_+ \otimes \tilde{Q}_-
 $$</p>
-<p>is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}' + \tilde{Q}''$ the two sides $(\tilde{Q}'+\tilde{Q}'')_+ \otimes (\tilde{Q}'+\tilde{Q}'')_-$ and $\tilde{Q}'_+ \otimes \tilde{Q}'_- + \tilde{Q}''_+ \otimes \tilde{Q}''_-$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.</p>
+<p>is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}_1 + \tilde{Q}_2$ the two sides $(\tilde{Q}_1+\tilde{Q}_2)_+ \otimes (\tilde{Q}_1+\tilde{Q}_2)_-$ and $\tilde{Q}_{1+} \otimes \tilde{Q}_{1-} + \tilde{Q}_{2+} \otimes \tilde{Q}_{2-}$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.</p>
 <p>The tensor products that are defined are those of the unit-group representations: the irreducible finite-dimensional representations $\rho_{(n_1,n_2)}$ form the tensor products of representations of the two $SU(2)$ factors, and their tensor product is computed factor by factor by the Clebsch–Gordan rule of $SU(2)$. The product of $\rho_{(n_1,n_2)}$ and $\rho_{(m_1,m_2)}$ is the direct sum of the $\rho_{(k_1,k_2)}$ with $|n_1-m_1| \leq k_1 \leq n_1+m_1$ and $|n_2-m_2| \leq k_2 \leq n_2+m_2$, the steps being two and each pair appearing once. This is the Clebsch–Gordan rule applied independently to two factors, in place of the single $SU(2)$ rule of the biquaternion case.</p>
 <h2 id="the-relation-to-the-representation-theory-of-the-biquaternions">The Relation to the Representation Theory of the Biquaternions</h2>
 <p>The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its unit group is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{Sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and unit group $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage</p>

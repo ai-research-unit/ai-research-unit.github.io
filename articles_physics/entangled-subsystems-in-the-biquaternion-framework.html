@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,18 +54,18 @@
 <p>Entanglement is the part of quantum physics where the conceptual debates are sharpest. The EPR argument, Bell's theorem, the measurement problem, the tension between instantaneous correlations and relativistic causality, and the dispute over whether "classical entanglement" deserves the name — all of these have been argued for decades, and none of them is settled. When a new formulation of quantum physics appears, it is natural to ask whether it brings new light to these debates.</p>
 <p>This article asks that question for the biquaternion framework developed in the companion articles. The honest answer, stated up front, is: <strong>the framework reframes the debates; it does not resolve them.</strong> It is a reformulation of standard quantum physics, not a new theory, and it reproduces all of the standard predictions. It cannot settle an empirical dispute that standard quantum physics does not already settle, and it cannot supply a mechanism where standard quantum physics has none. What it does do is change the language in which the debates are stated, and in a few places the change of language makes the structure of the problem more visible.</p>
 <p>The article is organized as follows. First, the biquaternion description of an entangled subsystem is recalled: the singlet as a single algebraic object, the reduced state as a partial trace, the correlation function as a bilinear pairing, and no-signaling as an identity satisfied by the partial trace. Then the five debates are revisited one by one, with a clear statement of what the framework does and does not contribute to each. Then the structural features of the framework that are genuinely new — as structure, not as physics — are collected. The article closes with the open questions that would have to be answered before the framework could be said to bring more than a change of notation.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
 <h2 id="the-entangled-subsystem-in-the-biquaternion-language">The Entangled Subsystem in the Biquaternion Language</h2>
 <h3 id="the-singlet-as-one-algebraic-object">The singlet as one algebraic object</h3>
 <p>In the standard formulation, the singlet state is a single vector $|\Psi^-\rangle$ in $\mathbb{C}^2\otimes\mathbb{C}^2$. In the biquaternion formulation, it is a single idempotent of the tensor product:</p>
 <p>$$
-P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
+P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$</p>
-<p>This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $e_j\otimes e_j$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.</p>
+<p>This is the same object viewed in a different language, but the language matters for how the correlations are read. The singlet is not a pair of systems that then has to be correlated; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product terms $\vec e_\mu\otimes \vec e_\mu$. There is no pair of "two separate things" whose correlation has to be explained; the algebraic object itself is not separable.</p>
 <p>The same is true in Hilbert-space language, since $|\Psi^-\rangle$ is also a single vector. But the biquaternion formulation makes the point more vivid, because the idempotents are the canonical objects of the algebra and the tensor product is the natural algebraic operation, not an additional postulate. In the biquaternion interpretation, the entanglement is a fact about the <em>pairing structure</em> of the algebra, not about a dynamical influence passing between two systems.</p>
 <h3 id="the-singlet-as-one-whole">The singlet as one whole</h3>
 <p>The language of the preceding paragraph is not only a figure of speech, and it has a precise counterpart in a collective set theory. In classical mereology the whole is primitive and the parts are what a division of the whole produces; a whole has many divisions, and two different divisions do not give two different objects. The singlet is exactly of this kind. It is one algebraic object, the idempotent $P_{\mathrm{singlet}}$, and the two subsystems appear only when the object is divided, whether by the partial trace, by a local projector, or by a change of tensor basis. The divisions differ in their factors and agree in their whole, which is what the mereological language asserts of the parts of an object.</p>
-<p>Two features of the framework acquire, in this language, the status of definitions rather than of facts. The first is that the entanglement belongs to the whole and not to either division: the reduced state $\tfrac12 e_0$ is the same for the two subsystems, and the correlations are carried by the tensor-product terms of the whole. The second is that the singlet is not a pair of systems that happen to be correlated. The pairing is the tensor product, and the tensor product is the division; the state and its divisibility are the same datum. The mathematics of this interpretation is <em>Mereology and Collective Set Theory</em>, where the whole-first construction, the division relation and the passage between a division and its factors are developed for their own sake; the interpretation itself is a <strong>physical interpretation</strong> and is not developed further here.</p>
+<p>Two features of the framework acquire, in this language, the status of definitions rather than of facts. The first is that the entanglement belongs to the whole and not to either division: the reduced state $\tfrac12 e_t$ is the same for the two subsystems, and the correlations are carried by the tensor-product terms of the whole. The second is that the singlet is not a pair of systems that happen to be correlated. The pairing is the tensor product, and the tensor product is the division; the state and its divisibility are the same datum. The mathematics of this interpretation is <em>Mereology and Collective Set Theory</em>, where the whole-first construction, the division relation and the passage between a division and its factors are developed for their own sake; the interpretation itself is a <strong>physical interpretation</strong> and is not developed further here.</p>
 <p><strong>Remark.</strong> The mereological interpretation is a description of the tensor-product structure, in which the whole is the tensor product and the parts are its factors, and it changes nothing in the predictions. It is recorded because it makes the first entry of the list in <em>What the Reformulation Makes Visible</em> precise, and because it is the language in which a nontrivial question becomes stateable: which divisions of a given element are admissible, and what the algebra of its divisions is.</p>
 <h3 id="the-division-rule-and-the-admissible-divisions">The division rule and the admissible divisions</h3>
 <p>The question left open by the remark above is which divisions of a whole are admissible, and one interpretation of the bipartite state answers it by turning the mereology from a description of entanglement into a <strong>generator</strong> of it. In this interpretation the state is created by the splitting of one particle, the split is a division in the sense of <em>Mereology and Collective Set Theory</em>, and the division is further required to have integer quotients — "in nature there are no fractions during decays of particles". The quotient of the two amplitudes of the split is then restricted to the units and square roots of minus one, $\{-i,i,-1\}$, and this restriction is what selects a discrete catalogue of maximally entangled states out of the continuum. The twelve patterns of <em>Patterns of maximally entangled states within the algebra of biquaternions</em> (Obojska, <em>Journal of Physics Communications</em> <strong>4</strong> (2020) 055018) are obtained in exactly this way, with the Bell states among them.</p>
@@ -80,9 +79,9 @@ $$</p>
 <h3 id="the-reduced-state-as-a-partial-trace">The reduced state as a partial trace</h3>
 <p>The state of one subsystem is obtained by tracing out the other:</p>
 <p>$$
-\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0.
+\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_t.
 $$</p>
-<p>This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $e_j\otimes e_0$ with $j \neq 0$, and the entangled terms $e_j\otimes e_j$ with $j \neq 0$ are traceless in the second factor: $\mathrm{Tr}_2(e_j\otimes e_j) = e_j\,\mathrm{Tr}_\mathbb{B}(e_j) = 0$. So the partial trace keeps only the $e_0\otimes e_0$ term and produces the scalar-only element $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.</p>
+<p>This is the maximally mixed state of a qubit, at the centre of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $\vec e_\mu\otimes e_t$ with $\mu \neq 0$, and the entangled terms $\vec e_\mu\otimes \vec e_\mu$ with $\mu \neq 0$ are traceless in the second factor: $\mathrm{Tr}_2(\vec e_\mu\otimes \vec e_\mu) = \vec e_\mu\,\mathrm{Tr}_\mathbb{B}(\vec e_\mu) = 0$. So the partial trace keeps only the $e_t\otimes e_t$ term and produces the scalar-only element $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.</p>
 <h3 id="the-correlation-function-as-a-bilinear-pairing">The correlation function as a bilinear pairing</h3>
 <p>The spin correlation function, computed in full in <em>Exercise: The Correlation Function of the Bell States</em>, is</p>
 <p>$$
@@ -92,26 +91,26 @@ $$</p>
 <h3 id="steering-as-a-conditional-idempotent">Steering as a conditional idempotent</h3>
 <p>The phenomenon of EPR steering — that measuring one particle's spin determines the conditional state of the other — has a particularly clean form in the biquaternion language. Suppose Alice measures particle 1 along $\vec u_a$ and obtains the outcome $+$. The unnormalized post-measurement joint state is</p>
 <p>$$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr),
 $$</p>
-<p>where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,e_k\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_k(\vec u_a - ie_0)$ and $\vec u_a - ie_0 = -2i\tilde\Pi(\vec u_a)$, gives</p>
+<p>where $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. Computing directly, using $\tilde\Pi(\vec u_a)\,\vec e_\mu\,\tilde\Pi(\vec u_a) = \tfrac{1}{2}a_k(\vec u_a - ie_t)$ and $\vec u_a - ie_t = -2i\tilde\Pi(\vec u_a)$, gives</p>
 <p>$$
-\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_0\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
+\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr)\circ P_{\mathrm{singlet}}\circ\bigl(\tilde\Pi(\vec u_a)\otimes e_t\bigr) = \tfrac{1}{2}\,\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a),
 $$</p>
-<p>where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_0 - i\vec u_a)$. The normalized post-measurement state is therefore the product state</p>
+<p>where $\tilde\Pi(-\vec u_a) = \tfrac{1}{2}(e_t - i\vec u_a)$. The normalized post-measurement state is therefore the product state</p>
 <p>$$
 \tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a).
 $$</p>
 <p>The joint state is now a product: particle 1 is in the pure idempotent $\tilde\Pi(\vec u_a)$, and particle 2 is in the pure idempotent $\tilde\Pi(-\vec u_a)$ — spin-down along the direction Alice chose to measure, irrespective of any distance between the particles.</p>
 <p>This is the biquaternion expression of EPR steering. The collapse of the joint state under a local projector factorizes the joint idempotent into a product of idempotents, one on each factor. The "spooky" character is that the direction $\vec u_a$ chosen by Alice appears in the conditional state of particle 2; the "non-spooky" character is that this is a <em>conditional</em> statement, not a signal, because the unconditional reduced state of particle 2 is unchanged.</p>
 <h3 id="no-signaling-as-a-partial-trace-identity">No-signaling as a partial-trace identity</h3>
-<p>The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_0$ to the joint state, the reduced state of particle 2 is unchanged:</p>
+<p>The last observation is the algebraic content of the no-communication theorem. If Alice applies a local unitary operation $\tilde{U}\otimes e_t$ to the joint state, the reduced state of particle 2 is unchanged:</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \mathrm{Tr}_1(\tilde{\rho}),
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_t)\right) = \mathrm{Tr}_1(\tilde{\rho}),
 $$</p>
 <p>where $\mathrm{Tr}_1$ denotes the partial trace over particle 1. This is a direct consequence of the cyclicity of the trace: for any element $\tilde{\rho} = \sum_i a_i\otimes b_i$ of the tensor product,</p>
 <p>$$
-\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_0)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_0)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
+\mathrm{Tr}_1\!\left((\tilde{U}\otimes e_t)\,\tilde{\rho}\,(\tilde{U}^{*}\otimes e_t)\right) = \sum_i \mathrm{Tr}_\mathbb{B}(\tilde{U}a_i\tilde{U}^{*})\,b_i = \sum_i \mathrm{Tr}_\mathbb{B}(a_i)\,b_i = \mathrm{Tr}_1(\tilde{\rho}).
 $$</p>
 <p>No-signaling is not a dynamical theorem in this interpretation; it is the cyclicity of the trace, applied to the partial trace. It says that correlations are real, that they are a property of the joint state, and that no local operation on one factor can be detected by measurements on the other.</p>
 <h2 id="the-five-debates-revisited">The Five Debates, Revisited</h2>
@@ -128,7 +127,7 @@ $$</p>
 <p>The measurement problem is the fact that standard quantum physics has two kinds of time evolution — unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.</p>
 <p>The biquaternion framework has something structural to offer here. In standard quantum physics, unitary evolution and projective collapse are different postulates, governing different types of process. In the biquaternion framework, both are properties of <em>acting elements</em> of the algebra:</p>
 <ul>
-<li><strong>Unitary elements</strong> $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and generate reversible evolution by rotor conjugation.</li>
+<li><strong>Unitary elements</strong> $\tilde{U}$ satisfy $\tilde{U}\tilde{U}^{*} = e_t$ and generate reversible evolution by rotor conjugation.</li>
 <li><strong>Idempotent elements</strong> $\tilde\Pi$ satisfy $\tilde\Pi^2 = \tilde\Pi$ and generate irreversible projection by the sandwich operation.</li>
 </ul>
 <p>The reversible/irreversible dichotomy is not an additional postulate; it is the algebraic dichotomy between two classes of elements of one algebra. This is a genuine reframing: the measurement problem is no longer "two incompatible dynamics glued together" but "one algebra with two classes of elements."</p>
@@ -156,7 +155,7 @@ $$</p>
 <p>Collecting the observations above, the biquaternion framework makes the following structural features of entanglement more visible than they are in the Hilbert-space formalism.</p>
 <p><strong>1. The singlet is one algebraic object.</strong> The entangled state is not a pair of systems whose correlation must be explained; it is one element of the tensor-product algebra, and its correlations are built into the tensor-product structure from the start.</p>
 <p><strong>2. The correlation function is a bilinear pairing.</strong> The correlation $E(\vec u_a, \vec u_b)$ is the tensor-product trace pairing between the state idempotent and the correlation observable. It is the same algebraic operation that gives the Born rule for a single qubit. There is no additional probabilistic postulate.</p>
-<p><strong>3. The reduced state's mixedness is the algebraic trace of entanglement.</strong> The partial trace of the singlet produces $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.</p>
+<p><strong>3. The reduced state's mixedness is the algebraic trace of entanglement.</strong> The partial trace of the singlet produces $\tfrac{1}{2}e_t$, which is not idempotent. The mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.</p>
 <p><strong>4. Steering is a factorization of the joint idempotent.</strong> A local projector applied to the singlet produces a product state $\tilde\Pi(\vec u_a)\otimes \tilde\Pi(-\vec u_a)$, with the second factor determined by Alice's choice of direction. This is the biquaternion form of EPR steering.</p>
 <p><strong>5. No-signaling is cyclicity of the trace.</strong> The invariance of the reduced state under local unitaries is the cyclicity of the trace applied to the partial trace.</p>
 <p><strong>6. The reversible/irreversible dichotomy is algebraic.</strong> Unitary and idempotent elements are two classes of elements of one algebra, not two separate postulates.</p>
@@ -241,19 +240,19 @@ $$</p>
 <td>Two-qubit tensor product, $\cong M_4(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_\mu^2 = -e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
 <td>Scalar imaginary, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$</td>
+<td>$P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\mu \vec e_\mu\otimes \vec e_\mu)$</td>
 <td>Singlet idempotent</td>
 </tr>
 <tr>
-<td>$\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_0 \pm i\vec u_a)$</td>
+<td>$\tilde\Pi(\pm\vec u_a) = \tfrac{1}{2}(e_t \pm i\vec u_a)$</td>
 <td>Single-qubit idempotents along $\vec u_a$</td>
 </tr>
 <tr>
@@ -261,7 +260,7 @@ $$</p>
 <td>Partial trace over the second factor</td>
 </tr>
 <tr>
-<td>$\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0$</td>
+<td>$\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_t$</td>
 <td>Reduced state of particle 1</td>
 </tr>
 <tr>
@@ -269,7 +268,7 @@ $$</p>
 <td>Correlation function</td>
 </tr>
 <tr>
-<td>$\tilde{U}\tilde{U}^{*} = e_0$</td>
+<td>$\tilde{U}\tilde{U}^{*} = e_t$</td>
 <td>Unitary element (reversible evolution)</td>
 </tr>
 <tr>

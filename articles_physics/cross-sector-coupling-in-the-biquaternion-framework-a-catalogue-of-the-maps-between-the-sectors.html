@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -100,11 +99,11 @@ the operations it does not cover.</p>
 <p>The square of a material element is its interval, and the interval is a real scalar.</p>
 <p><strong>Identity (the square is the interval).</strong> For every $\tilde{Q}$,</p>
 <p>$$
-\tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_0,
+\tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_t,
 $$</p>
-<p>with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\vec x$
-with real $t$ and $\vec x$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+\vec x^{2}$ is <strong>real</strong>, and the
-scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.</p>
+<p>with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
+with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+x^2+y^2+z^2$ is <strong>real</strong>, and the
+scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.</p>
 <p><strong>Interpretation.</strong> Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
 deliberately weak: it is a map and not an evolution, and the product of <em>two</em> material elements is not
@@ -113,13 +112,13 @@ lies in neither sector. The square is the coupling; the product is not. The iden
 $100$; on $100$ random pairs of material elements the product lies in neither sector on $100$ of $100$.</p>
 <h3 id="the-preparation-map">The Preparation Map</h3>
 <p>The second map is a rotation of the four-vector into an element of the informational sector.</p>
-<p><strong>Map.</strong> On a material element $\tilde{Q} = ict\,e_0+\vec x$, the central element
+<p><strong>Map.</strong> On a material element $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the central element
 $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ is</p>
 <p>$$
-\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\vec x\bigr) = \tfrac12\bigl(ct\,e_0-i\vec x\bigr) \in \mathbb{M}_+,
+\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_t+(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = \tfrac12\bigl(ct\,e_t-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \in \mathbb{M}_+,
 $$</p>
 <p>with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{Q}\rangle_{\natural}$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\vec r)$ with $\vec r = -\vec x$,
+$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.</p>
 <p><strong>Interpretation.</strong> The map is a dictionary and not a dynamics: it names a <strong>state preparation</strong>, the
 correspondence between a future-directed four-vector and a mixed state, and it is the mirror dictionary
@@ -159,12 +158,12 @@ framework is the one <em>Biquaternion Rotations and Lorentz Transformations</em>
 <p><strong>Proposition (the off-sector scalar part).</strong> For $\tilde{P}\in\mathbb{M}_-$ and $\tilde{H}\in\mathbb{M}_+$,
 the scalar part of the plain product is purely imaginary,</p>
 <p>$$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-\vec x\cdot\vec h\bigr) \quad \text{for }
-\tilde{P} = ict\,e_0+\vec x, \quad \tilde{H} = h_0e_0+i\vec h,
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
+\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_0e_t+i\vec h,
 $$</p>
 <p>with both factors real.</p>
 <p><strong>Why.</strong> The scalar part of the product is $P_0H_0-(\vec P,\vec H)$, and the two terms are
-$ict\cdot h_0$ and $\vec x\cdot i\vec h$, each carrying one factor of $i$.</p>
+$ict\cdot h_0$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.</p>
 <p><strong>Interpretation.</strong> The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of <em>The Bilinear Product on the Material Sector</em>. It is a pairing and
 not a map, and it produces no element of either sector. The <strong>imaginary part of the norm</strong> is the same
@@ -219,7 +218,7 @@ Biquaternionic Form</em>.</p>
 <tr>
 <td>square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$</td>
 <td>map</td>
-<td>$\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$</td>
+<td>$\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$</td>
 <td><em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em></td>
 <td>a map, not an evolution; the product of two is not informational</td>
 </tr>
@@ -335,18 +334,18 @@ each of its instances owned by an article that proves it.</p>
 </tr>
 <tr>
 <td>${}^{*}$</td>
-<td>Hermitian conjugation, $e_k^{*} = -e_k$, $i^{*} = -i$</td>
+<td>Hermitian conjugation, $\vec e_k^{*} = -\vec e_k$, $i^{*} = -i$</td>
 </tr>
 <tr>
 <td>${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$</td>
 <td>Quaternion conjugation, coefficient conjugation, the real structure</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = ict\,e_0+\vec x$</td>
-<td>Material element, $t$ and $\vec x$ real</td>
+<td>$\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real</td>
 </tr>
 <tr>
-<td>$\tilde{H} = h_0e_0+i\vec h$</td>
+<td>$\tilde{H} = h_0e_t+i\vec h$</td>
 <td>Informational element, $h_0$ and $\vec h$ real</td>
 </tr>
 <tr>

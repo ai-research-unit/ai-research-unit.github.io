@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,16 +51,16 @@
       <div class="article-body">
         <h1 id="the-idempotent-decomposition-and-the-split-fractal"><strong>The Idempotent Decomposition and the Split Fractal</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra is simple, so its only central idempotents are $0$ and $e_0$; its non-central idempotents are nevertheless the algebraic form of the splitting of an element into two halves, and the halving is what turns a part of the biquaternion dynamics into a product of two complex dynamics. The decomposition is the Peirce decomposition of the algebra with respect to a primitive idempotent: the space splits into four Peirce components, the two diagonal components are the two halves, and the two off-diagonal components couple them. On the two-dimensional complex subalgebra spanned by the idempotent and its complement the two halves are independent, the map splits into two ordinary complex quadratic maps, and the fractal is the product of two complex Julia sets; off that subalgebra the halves interact and the fractal is not a product.</p>
+<p>The biquaternion algebra is simple, so its only central idempotents are $0$ and $e_t$; its non-central idempotents are nevertheless the algebraic form of the splitting of an element into two halves, and the halving is what turns a part of the biquaternion dynamics into a product of two complex dynamics. The decomposition is the Peirce decomposition of the algebra with respect to a primitive idempotent: the space splits into four Peirce components, the two diagonal components are the two halves, and the two off-diagonal components couple them. On the two-dimensional complex subalgebra spanned by the idempotent and its complement the two halves are independent, the map splits into two ordinary complex quadratic maps, and the fractal is the product of two complex Julia sets; off that subalgebra the halves interact and the fractal is not a product.</p>
 <p>The idempotents, their classification and the bijection with the roots of $-1$ are <em>Idempotents of the Biquaternion Algebra</em>; the ideals, the Peirce decomposition and the minimal left ideals are <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>; the matrix model and the rank-one elements are <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>; the commutative-plane theorem is <em>The Biquaternion Mandelbrot Set and the Connectedness Locus</em>; the exact slices are <em>The Slices of the Biquaternion Julia Sets</em>; the simplification by central idempotents is <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em> on the split side.</p>
 <p>The article owns the Peirce decomposition of an element, the identification of the two halves, the diagonal model in which the halves are the two entries of a diagonal matrix, the split fractal and its product structure, and the statement that the full biquaternion fractal is not the product.</p>
-<p><strong>Standing convention.</strong> $\tilde\Pi$ is a primitive idempotent, $\tilde\Pi'=e_0-\tilde\Pi$ its complement, and the four Peirce components of an element $\tilde Q$ are</p>
+<p><strong>Standing convention.</strong> $\tilde\Pi$ is a primitive idempotent, $\tilde\Pi'=e_t-\tilde\Pi$ its complement, and the four Peirce components of an element $\tilde Q$ are</p>
 <p>$$
 \tilde Q_{11}=\tilde\Pi\tilde Q\tilde\Pi,\quad \tilde Q_{12}=\tilde\Pi\tilde Q\tilde\Pi',\quad \tilde Q_{21}=\tilde\Pi'\tilde Q\tilde\Pi,\quad \tilde Q_{22}=\tilde\Pi'\tilde Q\tilde\Pi',
 $$</p>
 <p>so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The family is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$.</p>
 <h2 id="the-peirce-components-and-the-halves">The Peirce Components and the Halves</h2>
-<p><strong>Proposition (the components are the matrix entries).</strong> Under the matrix realization with the standard idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, the two associated idempotents of the root $ie_3$ of $+1$, $(ie_3)^2=e_0$,</p>
+<p><strong>Proposition (the components are the matrix entries).</strong> Under the matrix realization with the standard idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated idempotents of the root $i\vec e_z$ of $+1$, $(i\vec e_z)^2=e_t$,</p>
 <p>$$
 \mathsf{M}_2(\tilde\Pi_+)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_-)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$</p>
@@ -69,7 +68,7 @@ $$</p>
 <p>$$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}\mathsf{M}_2(\tilde Q_{11})&\mathsf{M}_2(\tilde Q_{12})\\ \mathsf{M}_2(\tilde Q_{21})&\mathsf{M}_2(\tilde Q_{22})\end{pmatrix} .
 $$</p>
-<p><strong>Proof.</strong> The images of the standard idempotents are computed from $\mathsf{M}_2(e_3)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\mathsf{M}_2(\tfrac12(e_0+ie_3))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\mathsf{M}_2(\tilde\Pi\tilde Q\tilde\Pi')$ is the product of the corresponding matrix units, which is the off-diagonal entry.</p>
+<p><strong>Proof.</strong> The images of the standard idempotents are computed from $\mathsf{M}_2(\vec e_z)=\left(\begin{smallmatrix}-i&0\\0&i\end{smallmatrix}\right)$: the matrix $\mathsf{M}_2(\tfrac12(e_t+i\vec e_z))=\tfrac12\left(\begin{smallmatrix}1+1&0\\0&1-1\end{smallmatrix}\right)$ is the first matrix unit, and the second is its complement. Then $\mathsf{M}_2(\tilde\Pi\tilde Q\tilde\Pi')$ is the product of the corresponding matrix units, which is the off-diagonal entry.</p>
 <p><strong>Corollary (the two halves and the two couplings).</strong> The elements of the form $A\tilde\Pi+B\tilde\Pi'$ have diagonal matrices $\operatorname{diag}(A,B)$; the elements of the form $A\tilde\Pi+B\tilde\Pi'$ together with the two off-diagonal components describe the generic element. <strong>The two halves are the two diagonal entries; the coupling is the pair of off-diagonal entries.</strong></p>
 <h2 id="the-split-subalgebra-and-its-fractal">The Split Subalgebra and Its Fractal</h2>
 <p><strong>Theorem (the split fractal).</strong> Let $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ be a parameter in the idempotent plane $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$. Then $W_{\tilde\Pi}$ is a commutative subalgebra isomorphic to $\mathbb{C}\oplus\mathbb{C}$, the restriction of $F_{\tilde C}$ to it is</p>
@@ -96,14 +95,14 @@ $$</p>
 <h2 id="the-split-biquaternion-contrast">The Split-Biquaternion Contrast</h2>
 <p><strong>Proposition (the centrality of the split idempotents).</strong> In the split-biquaternion algebra the idempotents</p>
 <p>$$
-\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)
+\tilde\Pi_{3,4}=\tfrac12(e_t\pm j)
 $$</p>
 <p>are <strong>central</strong>, $j$ being the central element with $j^2=1$, and the algebra factors as the direct sum of two ideals,</p>
 <p>$$
 \mathbb{H}_{\mathbb{D}}=\mathbb{H}\tilde\Pi_3\oplus\mathbb{H}\tilde\Pi_4 , \qquad \mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H},
 $$</p>
 <p>through central idempotents, so that the decomposition is one of the algebra and of every element and splits the dynamics globally, not on a slice. Then every quadratic map is the pair of two quaternion quadratic maps, the fractal is the product of two quaternion Julia sets, and there is no coupling term. <strong>The biquaternion case is the case of non-central idempotents: the splitting is real but local; the split-biquaternion case is the case of central idempotents: the splitting is global.</strong> The contrast is developed in <em>The Clifford Decomposition of the Split-Biquaternion Fractals</em>.</p>
-<p><strong>Proof.</strong> $j$ is central with $j^2=1$, so $\tilde\Pi_{3,4}$ are central idempotents with $\tilde\Pi_3+\tilde\Pi_4=e_0$ and $\tilde\Pi_3\tilde\Pi_4=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>).</p>
+<p><strong>Proof.</strong> $j$ is central with $j^2=1$, so $\tilde\Pi_{3,4}$ are central idempotents with $\tilde\Pi_3+\tilde\Pi_4=e_t$ and $\tilde\Pi_3\tilde\Pi_4=0$; the Chinese-remainder decomposition of the algebra follows. In $\mathbb{B}$, by contrast, no non-trivial central idempotent exists because the algebra is simple (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>).</p>
 <h2 id="summary">Summary</h2>
 <p>The Peirce decomposition of a biquaternion with respect to a primitive idempotent has four components, which in the matrix model are exactly the four entries of the matrix; the two diagonal components are the halves of the element and the two off-diagonal ones are the coupling. On the idempotent plane the map splits into two independent complex quadratic maps, the filled Julia set is the product of two complex filled Julia sets and the split fractal is that product; the plane is the largest subalgebra on which the dynamics is a product. Off the plane the entries of the square show the coupling: the diagonal entries evolve with the off-diagonal product as a parameter, the off-diagonal entries are multiplied by the trace, and the full fractal is strictly larger than its diagonal slices and not a product. The contrast with the split-biquaternion algebra is sharp: there the idempotents are central, the algebra factors globally, and the fractal is a product of two quaternion Julia sets with no coupling at all.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -116,12 +115,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Pi$, $\tilde\Pi'=e_0-\tilde\Pi$</td>
+<td>$\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$</td>
 <td>a primitive idempotent and its complement</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_+,\tilde\Pi_-$</td>
-<td>the standard idempotents $\tfrac12(e_0\pm ie_3)$</td>
+<td>the standard idempotents $\tfrac12(e_t\pm i\vec e_z)$</td>
 </tr>
 <tr>
 <td>$\tilde Q_{11},\tilde Q_{12},\tilde Q_{21},\tilde Q_{22}$</td>
@@ -144,7 +143,7 @@ $$</p>
 <td>the trace, the coupling multiplier</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{3,4}=\tfrac12(e_0\pm j)$</td>
+<td>$\tilde\Pi_{3,4}=\tfrac12(e_t\pm j)$</td>
 <td>the central idempotents of the split-biquaternion algebra</td>
 </tr>
 </tbody>

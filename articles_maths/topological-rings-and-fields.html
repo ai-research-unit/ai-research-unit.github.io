@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -65,14 +64,14 @@ $$</p>
 <p>are continuous, where $R \times R$ carries the product topology.</p>
 <p><strong>Proposition.</strong> Let $R$ be a topological ring.</p>
 <p><strong>(a)</strong> For each $x \in R$ the translations $y \mapsto y + x$ and $y \mapsto -y + x$ are homeomorphisms; hence the topology is determined by the filter of neighbourhoods of $0$.</p>
-<p><strong>(b)</strong> If $U$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V + V \subseteq U$ and $V \subseteq -U$.</p>
-<p><strong>(c)</strong> For every neighbourhood $U$ of $0$ there is a neighbourhood $V$ of $0$ with $V \cdot V \subseteq U$.</p>
+<p><strong>(b)</strong> If $\Omega$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V + V \subseteq \Omega$ and $V \subseteq -\Omega$.</p>
+<p><strong>(c)</strong> For every neighbourhood $\Omega$ of $0$ there is a neighbourhood $V$ of $0$ with $V \cdot V \subseteq \Omega$.</p>
 <p><strong>(d)</strong> The closure $\overline{\{0\}}$ is the intersection of all neighbourhoods of $0$ and is a closed ideal of $R$; the quotient $R/\overline{\{0\}}$ is Hausdorff. In particular</p>
 <p>$$
-R \text{ is Hausdorff} \iff \overline{\{0\}} = \{0\} \iff \bigcap_{U \ni 0} U = \{0\}.
+R \text{ is Hausdorff} \iff \overline{\{0\}} = \{0\} \iff \bigcap_{\Omega \ni 0} \Omega = \{0\}.
 $$</p>
 <p><strong>(e)</strong> $R$ is Hausdorff if and only if it is $T_1$, and if and only if it is $T_0$.</p>
-<p><strong>Proof.</strong> (a) is the continuity of addition in one variable and the existence of inverses. (b) is the continuity of addition at $(0,0)$ and of negation. (c) is the continuity of multiplication at $(0,0)$. (d) The complement of a neighbourhood of $0$ is closed, so $\overline{\{0\}} \subseteq U$ for every neighbourhood $U$; conversely any point in all neighborhoods of $0$ cannot be separated from $0$. Adding and multiplying elements of $\overline{\{0\}}$ by elements of $R$ keeps them in every neighbourhood of $0$ by continuity, so $\overline{\{0\}}$ is an ideal; the quotient is Hausdorff because its zero element has closure $\{0\}$. (e) In the additive topological group $R$, the $T_0$, $T_1$ and $T_2$ conditions are equivalent, since translating a pair of distinct points to $(x-y, 0)$ and applying the group operations separates them.</p>
+<p><strong>Proof.</strong> (a) is the continuity of addition in one variable and the existence of inverses. (b) is the continuity of addition at $(0,0)$ and of negation. (c) is the continuity of multiplication at $(0,0)$. (d) The complement of a neighbourhood of $0$ is closed, so $\overline{\{0\}} \subseteq \Omega$ for every neighbourhood $\Omega$; conversely any point in all neighborhoods of $0$ cannot be separated from $0$. Adding and multiplying elements of $\overline{\{0\}}$ by elements of $R$ keeps them in every neighbourhood of $0$ by continuity, so $\overline{\{0\}}$ is an ideal; the quotient is Hausdorff because its zero element has closure $\{0\}$. (e) In the additive topological group $R$, the $T_0$, $T_1$ and $T_2$ conditions are equivalent, since translating a pair of distinct points to $(x-y, 0)$ and applying the group operations separates them.</p>
 <p><strong>Corollary.</strong> Every topological ring has a Hausdorff quotient, namely $R/\overline{\{0\}}$, and the ideal $\overline{\{0\}}$ is contained in every neighbourhood of $0$; it is the obstruction to Hausdorffness.</p>
 <h3 id="examples">Examples</h3>
 <p><strong>Example (discrete).</strong> Every ring with the discrete topology is a topological ring; the only neighbourhood of $0$ is $\{0\}$.</p>

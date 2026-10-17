@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -111,9 +110,9 @@ J = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} ;
 $$</p>
 <p>the <strong>unitary group</strong> of the form is</p>
 <p>$$
-U(1,1) = \{A \in GL_2(\mathbb{C}) : A^{*} J A = J\} ,
+\mathrm{U}(1,1) = \{A \in GL_2(\mathbb{C}) : A^{*} J A = J\} ,
 $$</p>
-<p>with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitary group $SU(1,1)$ is the subgroup of determinant one; the projective group is $PU(1,1) = U(1,1)/\{\pm 1\}$.</p>
+<p>with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitary group $SU(1,1)$ is the subgroup of determinant one; the projective group is $PU(1,1) = \mathrm{U}(1,1)/\{\pm 1\}$.</p>
 <p><strong>Theorem.</strong> The adjoint of a matrix $A$ with respect to $J$ is $A^{\dagger} = J^{-1}A^{*}J$, the unitary elements are those with $A^{\dagger} = A^{-1}$, and the projective unitary group of the form of signature $(1,1)$ is the real Möbius group,</p>
 <p>$$
 PU(1,1) = PSU(1,1) \cong PSL_2(\mathbb{R}) ,
@@ -132,7 +131,7 @@ $$</p>
 <p><strong>Proof.</strong> The real forms of $PSL_2(\mathbb{C})$ are classified by the antilinear involutions, and the two classes are distinguished by the real points of the corresponding structure on the projective line; the split form is the fixed group of the conjugation and the compact form is the fixed group of the quaternionic structure, and the cohomological classification is the standard one. The statement is in <em>Real Structures on a Projective Space</em> and <em>Real Forms of a Complex Lie Group and the Cartan Involution</em>.</p>
 <p><strong>Remark (the trace classification and the involution).</strong> The real Möbius group classifies its elements by the trace into the elliptic, parabolic and hyperbolic types, and the involution $\sigma$ acts on the classes by the conjugation of the trace, which is the real number unchanged; the classification of <em>The Möbius Transformation as an Operator</em> is thus compatible with the involution, and the real types are the ones whose square length in the hyperbolic metric is measured by the trace.</p>
 <h2 id="summary">Summary</h2>
-<p>The Möbius operators are the fractional linear transformations of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and the <strong>complex conjugation</strong> $\iota(z) = \bar z$ is an anti-Möbius involution of the sphere fixing the real projective line pointwise. The conjugation acts on the group by $\sigma(M_A) = M_{\bar A}$, an involutive automorphism of the group of the operators, and its fixed subgroup is the <strong>real Möbius group</strong> $PSL_2(\mathbb{R})$, the group of the real fractional linear maps, which acts on the upper half-plane as the isometry group of the hyperbolic plane and whose involution action on the plane is the reflection in the imaginary axis. The adjoint with respect to the Hermitian form of signature $(1,1)$ gives the unitary group $U(1,1)$, and the projective unitary group of the form is the real Möbius group, $PU(1,1) \cong PSU(1,1) \cong PSL_2(\mathbb{R})$, so the fixed subgroup of the involution and the projective unitary group coincide and the representation is a projective $*$-representation; the agreement is proved and not assumed. The complex group has exactly two real forms up to conjugacy, the split $PSL_2(\mathbb{R})$ of the conjugation and the compact $PSU(2) \cong SO(3)$ of the quaternionic involution, corresponding to the two classes of the Galois cohomology.</p>
+<p>The Möbius operators are the fractional linear transformations of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and the <strong>complex conjugation</strong> $\iota(z) = \bar z$ is an anti-Möbius involution of the sphere fixing the real projective line pointwise. The conjugation acts on the group by $\sigma(M_A) = M_{\bar A}$, an involutive automorphism of the group of the operators, and its fixed subgroup is the <strong>real Möbius group</strong> $PSL_2(\mathbb{R})$, the group of the real fractional linear maps, which acts on the upper half-plane as the isometry group of the hyperbolic plane and whose involution action on the plane is the reflection in the imaginary axis. The adjoint with respect to the Hermitian form of signature $(1,1)$ gives the unitary group $\mathrm{U}(1,1)$, and the projective unitary group of the form is the real Möbius group, $PU(1,1) \cong PSU(1,1) \cong PSL_2(\mathbb{R})$, so the fixed subgroup of the involution and the projective unitary group coincide and the representation is a projective $*$-representation; the agreement is proved and not assumed. The complex group has exactly two real forms up to conjugacy, the split $PSL_2(\mathbb{R})$ of the conjugation and the compact $PSU(2) \cong SO(3)$ of the quaternionic involution, corresponding to the two classes of the Galois cohomology.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -175,7 +174,7 @@ $$</p>
 <td>Adjoint with respect to $J$</td>
 </tr>
 <tr>
-<td>$U(1,1)$, $SU(1,1)$, $PU(1,1)$</td>
+<td>$\mathrm{U}(1,1)$, $SU(1,1)$, $PU(1,1)$</td>
 <td>Unitary groups of the form of signature $(1,1)$</td>
 </tr>
 <tr>

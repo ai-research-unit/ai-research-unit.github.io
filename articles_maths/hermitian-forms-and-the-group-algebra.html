@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -84,11 +83,11 @@ $$</p>
 <h2 id="the-associated-unitary-representations">The Associated Unitary Representations</h2>
 <p><strong>Definition.</strong> Let $B$ be a positive semidefinite Hermitian form on $\mathcal{A}$ compatible with the involution. The <strong>null space</strong> is $N_B = \{f : B(f,f) = 0\}$; the <strong>associated Hilbert space</strong> is the completion $\mathcal{H}_B$ of $\mathcal{A}/N_B$ for the induced inner product; and the <strong>unitary group</strong> of $B$ is</p>
 <p>$$
-U(B) = \{h\in\mathcal{A} : B(h*f,h*g) = B(f,g)\ \text{for all }f,g\} .
+\mathrm{U}(B) = \{h\in\mathcal{A} : B(h*f,h*g) = B(f,g)\ \text{for all }f,g\} .
 $$</p>
 <p><strong>Theorem (compatibility gives the representation).</strong> If $B = B_\omega$ for a positive functional $\omega$, then the quotient $\mathcal{A}/N_B$ carries a unique unitary representation $\pi_B$ with $\pi_B(x)(f + N_B) = L_xf + N_B$, and the vector $\xi_B = u + N_B$ of a normalised approximate identity is cyclic with $B_\omega(f,\xi_B) = \omega(f)$; the representation is the GNS representation of $\phi_\omega = \omega$ read on the group.</p>
 <p><strong>Proof.</strong> Compatibility makes $N_B$ a left ideal, so the quotient is a pre-Hilbert space; left translation preserves the form by the invariance in the theorem above, so it descends to a unitary, and multiplicativity of $L$ gives the representation. Cyclicity and the vector statement are the GNS construction of <em>Positive Definite Functions and the Gelfand–Raikov Theorem</em>.</p>
-<p><strong>Theorem (the unitary group of the form).</strong> For a positive semidefinite compatible $B$, the unitary group $U(B)$ is a group, the <strong>form-preserving elements</strong>, and the assignment $h\mapsto\pi_B(h)$ embeds $U(B)$ into the unitary group $\mathcal{U}(\mathcal{H}_B)$; the set $U(B)$ is closed in $\mathcal{A}$ in the strong topology of the representation, and it contains the unitary elements of any unital subalgebra on which $B$ is defined.</p>
+<p><strong>Theorem (the unitary group of the form).</strong> For a positive semidefinite compatible $B$, the unitary group $\mathrm{U}(B)$ is a group, the <strong>form-preserving elements</strong>, and the assignment $h\mapsto\pi_B(h)$ embeds $\mathrm{U}(B)$ into the unitary group $\mathcal{U}(\mathcal{H}_B)$; the set $\mathrm{U}(B)$ is closed in $\mathcal{A}$ in the strong topology of the representation, and it contains the unitary elements of any unital subalgebra on which $B$ is defined.</p>
 <p><strong>Proof.</strong> The composition of two form-preserving elements is form-preserving, and the identity is; the map $h\mapsto\pi_B(h)$ is multiplicative and preserves the form by definition, so its image is unitary. Closedness is the closedness of the isometry group of a Hilbert space under strong convergence, pulled back along the continuous representation.</p>
 <h2 id="hermitian-and-bilinear-forms">Hermitian and Bilinear Forms</h2>
 <p><strong>Theorem (the involution converts the two kinds of form).</strong> Let $C$ be a bilinear form on $\mathcal{A}$, linear in both variables. Then</p>
@@ -148,7 +147,7 @@ $$</p>
 <td>The completion of $\mathcal{A}/N_B$</td>
 </tr>
 <tr>
-<td>$U(B)$</td>
+<td>$\mathrm{U}(B)$</td>
 <td>The unitary group of the form</td>
 </tr>
 <tr>

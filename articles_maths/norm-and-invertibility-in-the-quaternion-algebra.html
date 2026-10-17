@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,40 +51,40 @@
       <div class="article-body">
         <h1 id="norm-and-invertibility-in-the-quaternion-algebra"><strong>Norm and Invertibility in the Quaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_0 = 1, e_1, e_2, e_3$ and the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$, so that $e_1e_2 = e_3$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the <strong>quaternion norm</strong> $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of units.</p>
+<p>The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and the multiplication rules $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = \vec e_x\vec e_y\vec e_z = -e_t$, so that $\vec e_x\vec e_y = \vec e_z$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the <strong>quaternion norm</strong> $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of units.</p>
 <p>The companion article <em>Quaternion Algebra</em> fixes the basis, the conjugation, the multiplication table and the scalar–vector decomposition, and they are used here without restatement. The companion article <em>Ideals and Simplicity of the Quaternion Algebra</em>, below this article in this category treats the absence of proper one- and two-sided ideals and the central-simplicity statement; this article owns the quaternion norm, the multiplicativity, the invertibility criterion and the unit group, and it refers to that article for the ideal-theoretic consequences. A reader who wants the full structure of the algebra should read the three together: the algebra supplies the multiplication, this article supplies the quaternion norm and the division property, and the ideals article supplies the consequences of division for the ideal structure.</p>
 <p>The corpus's default base is a commutative ring with identity, and the algebra $\mathbb{H}$ is defined over such a base by the same presentation. The results of this article that need more than that base are obtained over a field $F$ of characteristic not $2$; the positivity statements are obtained over $F = \mathbb{R}$, and they are flagged where they occur. In particular, the multiplicativity of the quaternion norm, the inverse formula and the group-of-units statements hold over any field of characteristic not $2$, whereas the statement that the quaternion norm is positive definite, the polar split of the unit group, and the identification of the unit sphere are statements over $\mathbb{R}$.</p>
 <p>Throughout, a quaternion is written</p>
 <p>$$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_0, q_1, q_2, q_3 \in F,
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu, \qquad q_t, q_x, q_y, q_z \in F,
 $$</p>
-<p>with <strong>scalar part</strong> $\mathrm{Sc}(\tilde q) = q_0$ and <strong>vector part</strong> $\vec q = q_1e_1 + q_2e_2 + q_3e_3$; the <strong>conjugate</strong> is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.</p>
+<p>with <strong>scalar part</strong> $\mathrm{Sc}(\tilde q) = q_t$ and <strong>vector part</strong> $\vec q = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$; the <strong>conjugate</strong> is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.</p>
 <h2 id="the-quaternion-norm">The Quaternion Norm</h2>
 <h3 id="definition">Definition</h3>
 <p><strong>Definition.</strong> The <strong>quaternion norm</strong> of $\tilde q$ is</p>
 <p>$$
-\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2.
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_t^2 + q_x^2 + q_y^2 + q_z^2.
 $$</p>
-<p>The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\vec q - \vec qq_0 + \vec q\times(-\vec q) = 0$, and the scalar calculation is the sum of squares.</p>
-<p><strong>Proposition.</strong> $\langle\tilde q\rangle_{\natural}$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $\mathfrak{b}(p,\tilde q) = \mathrm{Sc}(p\tilde{q}^{\natural})$.</p>
-<p><em>Proof.</em> The scalar part of $\tilde q\tilde{q}^{\natural}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\mathrm{Sc}(p\tilde{q}^{\natural})$, as the polar form of a sum of squares.</p>
+<p>The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_t\vec q - \vec q q_t + \vec q\times(-\vec q) = 0$, and the scalar calculation is the sum of squares.</p>
+<p><strong>Proposition.</strong> $\langle\tilde q\rangle_{\natural}$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $\mathfrak{b}(\tilde q_1,\tilde q_2) = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$.</p>
+<p><em>Proof.</em> The scalar part of $\tilde q\tilde{q}^{\natural}$ is $\sum_\mu q_\mu^2$, a scalar, and a scalar commutes with every quaternion; this is the centrality. The coordinate expression is homogeneous of degree two and its polarisation is $\mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$, as the polar form of a sum of squares.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The quaternion norm is multiplicative:</p>
 <p>$$
-\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\,\langle\tilde q\rangle_{\natural}, \qquad p, \tilde q \in \mathbb{H}.
+\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\,\langle\tilde q_2\rangle_{\natural}, \qquad \tilde q_1, \tilde q_2 \in \mathbb{H}.
 $$</p>
-<p><em>Proof.</em> Using $(p\tilde q)^{\natural} = \tilde{q}^{\natural}p^{\natural}$ and the fact that $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is central,</p>
+<p><em>Proof.</em> Using $(\tilde q_1\tilde q_2)^{\natural} = \tilde q_2^{\natural}\tilde q_1^{\natural}$ and the fact that $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is central,</p>
 <p>$$
-\langle p\tilde q\rangle_{\natural} = (p\tilde q)(p\tilde q)^{\natural} = p\tilde q\,\tilde q^{\natural}\,p^{\natural} = p\,\langle\tilde q\rangle_{\natural}\,p^{\natural} = \langle\tilde q\rangle_{\natural}\,p p^{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}.
+\langle\tilde q_1\tilde q_2\rangle_{\natural} = (\tilde q_1\tilde q_2)(\tilde q_1\tilde q_2)^{\natural} = \tilde q_1\tilde q_2\,\tilde q_2^{\natural}\,\tilde q_1^{\natural} = \tilde q_1\,\langle\tilde q_2\rangle_{\natural}\,\tilde q_1^{\natural} = \langle\tilde q_2\rangle_{\natural}\,\tilde q_1 \tilde q_1^{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}.
 $$</p>
 <p>Multiplicativity is the single feature that makes the quaternion norm the algebraic centre of gravity of the subject. It holds over any commutative base in which the computation makes sense, and in particular over any field.</p>
-<p><strong>Corollary.</strong> If $\langle p\rangle_{\natural} = 0$ then $\langle p\tilde q\rangle_{\natural} = \langle\tilde q p\rangle_{\natural} = 0$ for every $\tilde q$, so a vanishing norm propagates and neither $p$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $\langle u\rangle_{\natural} = 0$ only for $u = 0$, this middle case is empty and every non-zero element is a unit.</p>
+<p><strong>Corollary.</strong> If $\langle\tilde q_1\rangle_{\natural} = 0$ then $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_2\tilde q_1\rangle_{\natural} = 0$ for every $\tilde q_2$, so a vanishing norm propagates and neither $\tilde q_1$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $\langle\tilde q_3\rangle_{\natural} = 0$ only for $\tilde q_3 = 0$, this middle case is empty and every non-zero element is a unit.</p>
 <h3 id="positive-definiteness-and-the-real-case">Positive Definiteness and the Real Case</h3>
 <p><strong>Theorem.</strong> Over $F = \mathbb{R}$ the quaternion norm is positive definite: $\langle\tilde q\rangle_{\natural} \geq 0$ for every $\tilde q$, and $\langle\tilde q\rangle_{\natural} = 0$ if and only if $\tilde q = 0$.</p>
 <p><em>Proof.</em> $\langle\tilde q\rangle_{\natural} = \sum_\mu q_\mu^2$ is a sum of squares of real numbers, hence non-negative, and it vanishes only when every $q_\mu$ vanishes.</p>
 <p><strong>Definition.</strong> Over $\mathbb{R}$ the <strong>modulus</strong> of $\tilde q$ is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$, a non-negative real number, zero only at $\tilde q = 0$, and the modulus is multiplicative,</p>
 <p>$$
-|p\tilde q| = |p|\,|\tilde q|,
+|\tilde q_1\tilde q_2| = |\tilde q_1|\,|\tilde q_2|,
 $$</p>
 <p>because $\langle\cdot\rangle_{\natural}$ is multiplicative by the theorem above and $\langle\cdot\rangle_{\natural}$ is non-negative on $\mathbb{R}$. The modulus is the value of the quaternion norm under the real square root; its metric properties on $\mathbb{H}\cong\mathbb{R}^4$ are owned by <em>Quaternion Topology</em>, below this article in this category, and the algebra uses it only through the multiplicativity just displayed and the polar split of the units below.</p>
 <h3 id="the-quaternion-norm-and-the-conjugate">The Quaternion Norm and the Conjugate</h3>
@@ -95,27 +94,27 @@ $$</p>
 <h3 id="definition_1">Definition</h3>
 <p><strong>Definition.</strong> The <strong>inner product</strong> of two quaternions is</p>
 <p>$$
-\langle p, \tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} p_\mu q_\mu,
+\langle\tilde q_1, \tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_{\mu\in\{t,x,y,z\}} q_{1\mu} q_{2\mu},
 $$</p>
 <p>a symmetric bilinear form on the real vector space $\mathbb{H}$. The one-variable expression $\tilde q\tilde{q}^{\natural}$ is the <strong>Hermitian form</strong>; in the quaternion case, the coefficients being real, it coincides with the quaternion norm, as in <em>Quaternion Algebra</em>.</p>
-<p><strong>Proposition.</strong> The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle p, \tilde q\rangle = \mathrm{Sc}(p^{\natural} \tilde q)$, and it is invariant under left and under right multiplication by a unit quaternion.</p>
-<p><em>Proof.</em> Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = \langle\tilde q\rangle_{\natural}$. For a unit $u$, $\langle up, u\tilde q\rangle = \mathrm{Sc}(up(u\tilde q)^{\natural}) = \mathrm{Sc}(u\,p\tilde{q}^{\natural}\,u^{\natural}) = \mathrm{Sc}(p\tilde{q}^{\natural})$ because conjugation by a unit preserves the scalar part, as in <em>Quaternion Rotations and Reflections</em>, below this article in this category; the right case is the same computation.</p>
+<p><strong>Proposition.</strong> The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle\tilde q_1, \tilde q_2\rangle = \mathrm{Sc}(\tilde q_1^{\natural} \tilde q_2)$, and it is invariant under left and under right multiplication by a unit quaternion.</p>
+<p><em>Proof.</em> Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = \langle\tilde q\rangle_{\natural}$. For a unit $u$, $\langle u\tilde q_1, u\tilde q_2\rangle = \mathrm{Sc}(u\tilde q_1(u\tilde q_2)^{\natural}) = \mathrm{Sc}(u\,\tilde q_1\tilde q_2^{\natural}\,u^{\natural}) = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ because conjugation by a unit preserves the scalar part, as in <em>Quaternion Rotations and Reflections</em>, below this article in this category; the right case is the same computation.</p>
 <h3 id="the-group-of-linear-maps-preserving-the-form">The Group of Linear Maps Preserving the Form</h3>
-<p>In the basis $e_0,e_1,e_2,e_3$ the Gram matrix of the inner product is the identity, $\langle\cdot,\cdot\rangle=\sum_\mu p_\mu q_\mu$, so a linear map $T$ preserves the form exactly when its matrix satisfies the algebraic condition $T^{\mathsf T}T=\mathrm I_4$; the group of linear maps preserving the form is therefore the group defined by that matrix condition, $T^{\mathsf T}T=\mathrm I_4$, named here algebraically. The inner automorphisms $\tilde q\mapsto u\tilde q u^{-1}$ of the units are elements of that group, since conjugation by a unit preserves the scalar part; their further reading is in <em>Quaternion Rotations and Reflections</em>, below this article in this category and <em>Quaternion Automorphisms and Derivations</em>, below this article in this category.</p>
+<p>In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of the inner product is the identity, $\langle\cdot,\cdot\rangle=\sum_\mu q_{1\mu} q_{2\mu}$, so a linear map $T$ preserves the form exactly when its matrix satisfies the algebraic condition $T^{\mathsf T}T=\mathrm I_4$; the group of linear maps preserving the form is therefore the group defined by that matrix condition, $T^{\mathsf T}T=\mathrm I_4$, named here algebraically. The inner automorphisms $\tilde q\mapsto u\tilde q u^{-1}$ of the units are elements of that group, since conjugation by a unit preserves the scalar part; their further reading is in <em>Quaternion Rotations and Reflections</em>, below this article in this category and <em>Quaternion Automorphisms and Derivations</em>, below this article in this category.</p>
 <h3 id="relation-between-the-quaternion-norm-and-the-inner-product">Relation Between the Quaternion Norm and the Inner Product</h3>
 <p><strong>Proposition.</strong> The quaternion norm is the diagonal of the inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q, \tilde q\rangle$, and the inner product is recovered from the quaternion norm by polarisation,</p>
 <p>$$
-\langle p, \tilde q\rangle = \tfrac{1}{2}\bigl(\langle p+\tilde q\rangle_{\natural} - \langle p\rangle_{\natural} - \langle\tilde q\rangle_{\natural}\bigr).
+\langle\tilde q_1, \tilde q_2\rangle = \tfrac{1}{2}\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr).
 $$</p>
 <p>The two forms are therefore the same datum: a positive definite quadratic form on a four-dimensional real space, whose associated bilinear form is the inner product. The multiplicativity of $\langle\cdot,\cdot\rangle_{\natural}$ is an extra property, not shared by a general positive definite form.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
-<p><strong>Definition.</strong> An element $\tilde q\in\mathbb{H}$ is <strong>invertible</strong> if there is $p\in\mathbb{H}$ with $p\tilde q = \tilde q p = 1$; the element $p$ is then the <strong>inverse</strong> and is written $\tilde q^{-1}$.</p>
+<p><strong>Definition.</strong> An element $\tilde q_1\in\mathbb{H}$ is <strong>invertible</strong> if there is $\tilde q_2\in\mathbb{H}$ with $\tilde q_2\tilde q_1 = \tilde q_1\tilde q_2 = 1$; the element $\tilde q_2$ is then the <strong>inverse</strong> and is written $\tilde q_1^{-1}$.</p>
 <p><strong>Proposition.</strong> The inverse, when it exists, is unique, and the invertible elements of $\mathbb{H}$ form a group under multiplication.</p>
-<p><em>Proof.</em> If $p$ and $p'$ are inverses then $p = p1 = p(\tilde q p') = (p\tilde q)p' = p'$. Closure, associativity, the identity and the existence of inverses are then immediate, so the invertible elements form a group.</p>
+<p><em>Proof.</em> If $\tilde q_1$ and $\tilde q_2$ are inverses then $\tilde q_1 = \tilde q_1 1 = \tilde q_1(\tilde q_3 \tilde q_2) = (\tilde q_1\tilde q_3)\tilde q_2 = \tilde q_2$. Closure, associativity, the identity and the existence of inverses are then immediate, so the invertible elements form a group.</p>
 <h3 id="left-and-right-inverses">Left and Right Inverses</h3>
 <p><strong>Theorem.</strong> For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q$ has a left inverse; $\tilde q$ has a right inverse; $\tilde q$ has a two-sided inverse; $\langle\tilde q\rangle_{\natural}\neq 0$.</p>
-<p><em>Proof.</em> If $p\tilde q = 1$ for some $p$, then $\langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural} = \langle p\tilde q\rangle_{\natural} = 1$, so $\langle\tilde q\rangle_{\natural}\neq 0$ in the base field; conversely if $\langle\tilde q\rangle_{\natural}\neq 0$ then $\tilde q\cdot(\tilde q^{-1}) $ with $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ is a two-sided inverse by the inverse formula below. The right case is symmetric.</p>
+<p><em>Proof.</em> If $\tilde q_1\tilde q_2 = 1$ for some $\tilde q_1$, then $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = \langle\tilde q_1\tilde q_2\rangle_{\natural} = 1$, so $\langle\tilde q_2\rangle_{\natural}\neq 0$ in the base field; conversely if $\langle\tilde q_2\rangle_{\natural}\neq 0$ then $\tilde q_2\cdot(\tilde q_2^{-1}) $ with $\tilde q_2^{-1} = \tilde q_2^{\natural}/\langle\tilde q_2\rangle_{\natural}$ is a two-sided inverse by the inverse formula below. The right case is symmetric.</p>
 <p>Thus, over a field of characteristic not $2$, the three notions coincide, and an element is a unit exactly when its quaternion norm does not vanish.</p>
 <h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
 <p><strong>Theorem.</strong> A quaternion $\tilde q$ is invertible if and only if $\tilde q\neq 0$ over $F = \mathbb{R}$; more generally, $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural}\neq 0$, and over a field of characteristic not $2$ the vanishing of $\langle\cdot\rangle_{\natural}$ away from $0$ is exactly what it means for the algebra to fail to be a division algebra.</p>
@@ -139,8 +138,8 @@ $$</p>
 <p><strong>Theorem.</strong> The centre of $\mathbb{H}^{\times}$ is $F^{\times} = F\setminus\{0\}$, realised as the non-zero scalars; over $\mathbb{R}$ every central quaternion is real, and the centre is $\mathbb{R}^{\times}$.</p>
 <p><em>Proof.</em> An element commuting with every quaternion is central in $\mathbb{H}$; the centre of the quaternion algebra over a field of characteristic not $2$ is the scalar field, as in <em>Quaternion Algebra</em>. Conversely a non-zero scalar commutes with everything and is invertible.</p>
 <h3 id="the-inverse-map">The Inverse Map</h3>
-<p><strong>Proposition.</strong> The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(p\tilde q)^{-1} = \tilde q^{-1}p^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/\langle\tilde q\rangle_{\natural}$, and it coincides with conjugation on the unit sphere $\langle\tilde q\rangle_{\natural} = 1$.</p>
-<p><em>Proof.</em> $(p\tilde q)(\tilde q^{-1}p^{-1}) = p(\tilde q\tilde q^{-1})p^{-1} = pp^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ then exhibits the composite.</p>
+<p><strong>Proposition.</strong> The inverse map $\tilde q\mapsto \tilde q^{-1}$ is an anti-automorphism of the group: $(\tilde q_1\tilde q_2)^{-1} = \tilde q_2^{-1}\tilde q_1^{-1}$. It is the composite of the conjugation anti-automorphism $\tilde q\mapsto\tilde{q}^{\natural}$ with the central scalar division $\tilde q\mapsto \tilde q/\langle\tilde q\rangle_{\natural}$, and it coincides with conjugation on the unit sphere $\langle\tilde q\rangle_{\natural} = 1$.</p>
+<p><em>Proof.</em> $(\tilde q_1\tilde q_2)(\tilde q_2^{-1}\tilde q_1^{-1}) = \tilde q_1(\tilde q_2\tilde q_2^{-1})\tilde q_1^{-1} = \tilde q_1\tilde q_1^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ then exhibits the composite.</p>
 <h3 id="the-polar-split-of-the-units">The Polar Split of the Units</h3>
 <p><strong>Theorem.</strong> Over $\mathbb{R}$ the group of units factors as a direct product</p>
 <p>$$
@@ -150,9 +149,9 @@ $$</p>
 <p><em>Proof.</em> The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, and it is a homomorphism because the modulus is multiplicative and positive. Every positive real is central, so the two factors commute and the product is direct. The identification $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the definition.</p>
 <p>Thus every unit is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the units into the multiplicative group $\mathbb{R}_{>0}$ and the norm-one shell $\mathbb{H}^1$.</p>
 <h2 id="the-absence-of-zero-divisors">The Absence of Zero Divisors</h2>
-<p><strong>Definition.</strong> An element $\tilde q\neq 0$ is a <strong>zero divisor</strong> if there is $p\neq 0$ with $p\tilde q = 0$ or $\tilde q p = 0$.</p>
-<p><strong>Theorem.</strong> Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $p\tilde q = 0$ implies $p = 0$ or $\tilde q = 0$.</p>
-<p><em>Proof.</em> Take norms: $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$ and $\langle p\tilde q\rangle_{\natural} = 0$, so $\langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural} = 0$ in the field $\mathbb{R}$, hence $\langle p\rangle_{\natural} = 0$ or $\langle\tilde q\rangle_{\natural} = 0$, and by positive definiteness $p = 0$ or $\tilde q = 0$.</p>
+<p><strong>Definition.</strong> An element $\tilde q_1\neq 0$ is a <strong>zero divisor</strong> if there is $\tilde q_2\neq 0$ with $\tilde q_2\tilde q_1 = 0$ or $\tilde q_1\tilde q_2 = 0$.</p>
+<p><strong>Theorem.</strong> Over $F = \mathbb{R}$ the algebra $\mathbb{H}$ has no zero divisors: $\tilde q_1\tilde q_2 = 0$ implies $\tilde q_1 = 0$ or $\tilde q_2 = 0$.</p>
+<p><em>Proof.</em> Take norms: $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ and $\langle\tilde q_1\tilde q_2\rangle_{\natural} = 0$, so $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = 0$ in the field $\mathbb{R}$, hence $\langle\tilde q_1\rangle_{\natural} = 0$ or $\langle\tilde q_2\rangle_{\natural} = 0$, and by positive definiteness $\tilde q_1 = 0$ or $\tilde q_2 = 0$.</p>
 <p>The same argument shows that over any field in which the quaternion norm is anisotropic — that is, vanishes only at the origin — there are no zero divisors. The failure of anisotropy is exactly the failure of the algebra to be a division algebra: if $\langle\tilde q\rangle_{\natural} = 0$ for some $\tilde q\neq 0$, then $\tilde{q}^{\natural}$ is a non-zero element annihilating $\tilde q$.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
 <p>The three are mutually exclusive and, over the complex field, exhaust the algebra. Here the classification has the same three slots but one of them is empty.</p>
@@ -184,11 +183,11 @@ $$</p>
 </tbody>
 </table></div>
 <p><em>Proof.</em> The classes are defined by the mutually exclusive conditions $N\neq 0$, $N = 0$ with $\tilde q\neq 0$, and $\tilde q = 0$. The middle class is empty by positive definiteness, and the first class is the whole punctured algebra.</p>
-<p><strong>Corollary.</strong> Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $a\neq 0$ the equations $a\tilde q = b$ and $\tilde q a = b$ have the unique solutions $\tilde q = a^{-1}b$ and $\tilde q = ba^{-1}$ respectively.</p>
-<p><em>Proof.</em> The classification makes every non-zero element invertible; multiplying the equation $a\tilde q = b$ on the left by $a^{-1}$ gives $\tilde q = a^{-1}b$, and uniqueness is the same computation, the right case being symmetric.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ the algebra $\mathbb{H}$ is a division algebra: for $\tilde q_1\neq 0$ the equations $\tilde q_1\tilde q_2 = \tilde q_3$ and $\tilde q_2\tilde q_1 = \tilde q_3$ have the unique solutions $\tilde q_2 = \tilde q_1^{-1}\tilde q_3$ and $\tilde q_2 = \tilde q_3\tilde q_1^{-1}$ respectively.</p>
+<p><em>Proof.</em> The classification makes every non-zero element invertible; multiplying the equation $\tilde q_1\tilde q_2 = \tilde q_3$ on the left by $\tilde q_1^{-1}$ gives $\tilde q_2 = \tilde q_1^{-1}\tilde q_3$, and uniqueness is the same computation, the right case being symmetric.</p>
 <p>The division property is the reason the quaternion algebra stands at the head of its family: it is a four-dimensional real division algebra, and it is the largest-dimensional associative one.</p>
 <h2 id="summary">Summary</h2>
-<p>The quaternion algebra carries the multiplicative quadratic form $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$, a real symmetric bilinear form whose diagonal is $\langle\tilde q\rangle_{\natural}$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $\langle\tilde q\rangle_{\natural}$.</p>
+<p>The quaternion algebra carries the multiplicative quadratic form $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$, a real symmetric bilinear form whose diagonal is $\langle\tilde q\rangle_{\natural}$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $\langle\tilde q\rangle_{\natural}$.</p>
 <p>Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -208,15 +207,15 @@ $$</p>
 <td>Base field of characteristic not $2$; $\mathbb{R}$ for the definite statements</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$</td>
 </tr>
 <tr>
-<td>$\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$</td>
-<td>General quaternion, scalar part $q_0$, vector part $\vec q$</td>
+<td>$\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu$</td>
+<td>General quaternion, scalar part $q_t$, vector part $\vec q$</td>
 </tr>
 <tr>
-<td>$\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$</td>
+<td>$\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$</td>
 <td>Quaternion conjugate</td>
 </tr>
 <tr>
@@ -228,7 +227,7 @@ $$</p>
 <td>Modulus over $\mathbb{R}$</td>
 </tr>
 <tr>
-<td>$\langle p,\tilde q\rangle = \mathrm{Sc}(p\tilde{q}^{\natural})$</td>
+<td>$\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$</td>
 <td>Inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q,\tilde q\rangle$</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -79,7 +78,7 @@ $$</p>
 \vec\zeta\;\longmapsto\;\exp(i\alpha)\,\exp(-i\beta\,\vec u\cdot\vec F)\,\vec\zeta ,
 \qquad \alpha\in\mathbb{R},\quad \beta\in\mathbb{R},\quad \vec u\in S^2 ,
 $$</p>
-<p>that is, under $G=U(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; the two factors commute, because the first is a phase on all three components and the second rotates them among themselves. This symmetry, and its breaking in the ground state, organises everything that follows.</p>
+<p>that is, under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; the two factors commute, because the first is a phase on all three components and the second rotates them among themselves. This symmetry, and its breaking in the ground state, organises everything that follows.</p>
 <h3 id="the-interaction-energy-and-the-phase-diagram">The interaction energy and the phase diagram</h3>
 <p>For a dilute gas in a uniform field the mean-field energy density of the condensate is, in the standard treatment,</p>
 <p>$$
@@ -120,7 +119,7 @@ $$</p>
 <p>and the normalisation $\vec\zeta^\dagger\vec\zeta=1$ is the normalisation of the two-fundamental amplitude. The identification is the standard one, and it is exact: the spin-one internal space of the condensate <em>is</em> the triplet sector of two fundamental degrees of freedom.</p>
 <p>In the framework the triplet sector is the image of the symmetriser</p>
 <p>$$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_0\otimes e_0-\sum_{k=1}^{3}e_k\otimes e_k\right),
+P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),
 $$</p>
 <p>acting on the four-dimensional module $V\otimes V$ of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. The spin-one operators are the symmetric combinations</p>
 <p>$$
@@ -171,15 +170,15 @@ $$</p>
 <p>with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is a projector, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are <em>antiparallel</em>: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.</p>
 <p>The two families exhaust the two extreme values of the magnetic invariant, and they are distinguished by a single algebraic choice — whether the two fundamental idempotents that are symmetrised are the same or orthogonal. The broken-axisymmetric family, which interpolates between them when $\zeta<0$, corresponds to symmetrising two fundamental idempotents that are neither identical nor orthogonal; the angle between the two fundamental spin directions parameterises the departure from the two extremes.</p>
 <h3 id="the-order-parameter-manifolds">The order-parameter manifolds</h3>
-<p>The symmetry group of the problem acts on the symmetric sector as $G=U(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\alpha)$ is multiplication by the central element $\exp(i\alpha)e_0$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.</p>
-<p>For the ferromagnetic state $\vec\zeta=(1,0,0)^T$ the stabiliser in $G$ is the diagonal $U(1)$: the rotation about the ferromagnetic axis multiplies the state by a phase, since $\exp(-i\beta F_z)(1,0,0)^T=\exp(-i\beta)(1,0,0)^T$, which the phase factor can absorb. Hence</p>
+<p>The symmetry group of the problem acts on the symmetric sector as $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$, and the order-parameter manifolds are the orbits. In the framework both factors have an algebraic description: the phase $\exp(i\alpha)$ is multiplication by the central element $\exp(i\alpha)e_t$ of $\mathbb{B}$, and the spin rotation $\exp(-i\beta\vec u\cdot\vec F)$ is the adjoint action on the triplet.</p>
+<p>For the ferromagnetic state $\vec\zeta=(1,0,0)^T$ the stabiliser in $G$ is the diagonal $\mathrm{U}(1)$: the rotation about the ferromagnetic axis multiplies the state by a phase, since $\exp(-i\beta F_z)(1,0,0)^T=\exp(-i\beta)(1,0,0)^T$, which the phase factor can absorb. Hence</p>
 <p>$$
-M_{\mathrm{FM}}=G/U(1)_{\mathrm{diag}}\;\cong\;S^2\times S^1 ,
+M_{\mathrm{FM}}=G/\mathrm{U}(1)_{\mathrm{diag}}\;\cong\;S^2\times S^1 ,
 $$</p>
 <p>three real dimensions: a direction on the sphere and a phase on the circle.</p>
 <p>For the polar state $\vec\zeta=(0,1,0)^T$ the stabiliser is larger. The rotations about the director fix the state exactly, $\exp(-i\beta F_z)(0,1,0)^T=(0,1,0)^T$, since $F_z$ annihilates it; and the $\pi$-rotations about the perpendicular axes change it by the sign $-1$, since $\exp(-i\pi F_x)(0,1,0)^T=-(0,1,0)^T$, which the phase absorbs. The stabiliser is therefore the group generated by the rotations about the director and those $\pi$-rotations, and the orbit is</p>
 <p>$$
-M_{\mathrm{polar}}=G/\left(U(1)\rtimes\mathbb{Z}_2\right)\;\cong\;\left(S^2/\mathbb{Z}_2\right)\times S^1 ,
+M_{\mathrm{polar}}=G/\left(\mathrm{U}(1)\rtimes\mathbb{Z}_2\right)\;\cong\;\left(S^2/\mathbb{Z}_2\right)\times S^1 ,
 $$</p>
 <p>again three real dimensions, but with the director unoriented: $\vec u$ and $-\vec u$ give the same state. This is the geometric content of the nematic order parameter, and it is why the polar manifold is not a sphere times a circle but the <em>quotient</em> of one.</p>
 <p>These manifolds are the standard order-parameter manifolds of the spin-one condensate, and their topology governs the defects: the phase circle contributes mass vortices in both phases, the sphere contributes spin vortices in the ferromagnetic phase, and the $\mathbb{Z}_2$ identification in the polar phase permits half-quantum vortices, in which a winding of the phase by $\pi$ is compensated by a rotation of the director. The framework supplies the algebra of the order parameter and therefore its symmetry breaking pattern; the topological classification then follows by the standard rules.</p>
@@ -262,8 +261,8 @@ $$</p>
 <td>restrictions of $\tilde S_k^{(1)}+\tilde S_k^{(2)}$</td>
 </tr>
 <tr>
-<td>Phase symmetry $U(1)$</td>
-<td>multiplication by the centre $\exp(i\alpha)e_0$ of $\mathbb{B}$</td>
+<td>Phase symmetry $\mathrm{U}(1)$</td>
+<td>multiplication by the centre $\exp(i\alpha)e_t$ of $\mathbb{B}$</td>
 </tr>
 <tr>
 <td>Spin symmetry $SU(2)$</td>
@@ -306,12 +305,12 @@ $$</p>
 <p>The pattern is the one the subcategory has established throughout: the algebra supplies the state space, the operators and the invariants, and therefore the symmetry-breaking pattern and the shape of the energy as a function of the state; the dynamics — which coefficients multiply which invariant, and hence which phase is selected for which atom — is physics imported from outside the algebra. The value of the framework's description is that the spin-one order parameter is not posited but <em>built</em>: it is what two fundamental systems look like when they are symmetrised, and the two phases are what the two ways of symmetrising a pair — in parallel and in antiparallel alignment — produce.</p>
 <h2 id="summary">Summary</h2>
 <ul>
-<li>The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=U(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{Sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $P_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.</li>
-<li>The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_0$, and the spin rotation is the adjoint action on the triplet.</li>
+<li>The order parameter of a spin-one condensate is a unit spinor $\vec\zeta\in\mathbb{C}^3$ carrying the three spin projections, invariant under $G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$; in the framework it is a vector in the symmetric square $\mathrm{Sym}^2V$ of the defining module, realised as the triplet sector of $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ selected by $P_{\mathrm{sym}}$, with components $(c_{\uparrow\uparrow},\sqrt2c_{\uparrow\downarrow},c_{\downarrow\downarrow})$.</li>
+<li>The two factors of the symmetry group have algebraic interpretations: the phase is multiplication by the central element $\exp(i\alpha)e_t$, and the spin rotation is the adjoint action on the triplet.</li>
 <li>The standard mean-field energy is a function of the spinor only through the three invariants $\lvert\langle\vec F\rangle\rvert^2$, $\langle F_z\rangle$ and $\langle F_z^2\rangle$. In the framework these are the rank-one tensor expectation, the quadratic $F_z^2$ expectation, and the $z$-component of the magnetic order; the alignment was verified to be $\langle F_z^2\rangle=\tfrac23+n_3/\sqrt3-n_8/3$ on random pure states, and the magnetic order components are $s_1=\sqrt{2/3}(n_1+n_6)$, $s_2=\sqrt{2/3}(n_2+n_7)$, $s_3=n_3/\sqrt3+n_8$.</li>
 <li>The nematic (quadrupolar) order parameter is the traceless symmetric tensor $\mathcal{Q}_{ij}=\langle F_iF_j\rangle-\tfrac23\delta_{ij}$; for the polar state along $\vec u$ it is $\tfrac13\delta_{ij}-\vec u_i\vec u_j$, invariant under $\vec u\to-\vec u$. The polar state $\vec\zeta=(0,1,0)^T$ has $\langle\vec F\rangle=0$ and $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$, both verified.</li>
 <li>Ferromagnetic and polar ground states have a common algebraic origin: the ferromagnetic states are $P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}}$, symmetrised products of <em>identical</em> fundamental idempotents, with $\lvert\langle\vec F\rangle\rvert=1$; the polar states are $P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)P_{\mathrm{sym}}=\tfrac12\lvert\vec\zeta^{\mathrm{pol}}_{\vec u}\rangle\langle\vec\zeta^{\mathrm{pol}}_{\vec u}\rvert$, symmetrised products of <em>antipodal</em> idempotents, with $\langle\vec F\rangle=0$. Parallel constituents give magnetic order, antiparallel constituents give nematic order.</li>
-<li>The order-parameter manifolds follow from the orbit-stabiliser computation with the stabilisers $U(1)_{\mathrm{diag}}$ and $U(1)\rtimes\mathbb{Z}_2$: $M_{\mathrm{FM}}\cong S^2\times S^1$ and $M_{\mathrm{polar}}\cong(S^2/\mathbb{Z}_2)\times S^1$, both of three real dimensions, the second encoding the unoriented director.</li>
+<li>The order-parameter manifolds follow from the orbit-stabiliser computation with the stabilisers $\mathrm{U}(1)_{\mathrm{diag}}$ and $\mathrm{U}(1)\rtimes\mathbb{Z}_2$: $M_{\mathrm{FM}}\cong S^2\times S^1$ and $M_{\mathrm{polar}}\cong(S^2/\mathbb{Z}_2)\times S^1$, both of three real dimensions, the second encoding the unoriented director.</li>
 <li>The uniform energy is a quadratic function of the Bloch vector of the symmetric sector; the phase diagram is the competition of two quadratic forms, and the couplings that decide the winner are imported from the two-body theory, not derived from the algebra. A numerical minimisation over superpositions reproduces the standard corners: ferromagnetic ($\lvert\langle\vec F\rangle\rvert=1$, $\langle F_z^2\rangle=1$ for the field-aligned member of the degenerate direction family) for $c_2<0$ at $\zeta=0$, polar ($0$, $0$) for $c_2>0$ at $\zeta>0$, and broken axisymmetric ($0$, $1$) for $c_2>0$ at $\zeta<0$; the minimiser is always a pure state, as convexity requires.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -344,7 +343,7 @@ $$</p>
 <td>Nematic (quadrupolar) order parameter, traceless</td>
 </tr>
 <tr>
-<td>$G=U(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$</td>
+<td>$G=\mathrm{U}(1)_{\mathrm{phase}}\times SU(2)_{\mathrm{spin}}$</td>
 <td>Symmetry group of the order parameter</td>
 </tr>
 <tr>

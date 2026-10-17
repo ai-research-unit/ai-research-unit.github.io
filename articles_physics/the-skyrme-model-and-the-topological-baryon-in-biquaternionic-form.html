@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,18 +54,18 @@
 <p>The <strong>Skyrme model</strong> is the proposal that the baryon is a soliton of the pion field. Its field is the group-valued chiral field of the pion, its Lagrangian is the chiral Lagrangian augmented by a fourth-order term, and its solutions are localized, finite-energy configurations whose <strong>winding number</strong> — the degree of the map from space to the group — is identified with baryon number. The identification is topological rather than dynamical: the conservation of baryon number becomes the conservation of a topological charge, and the proton and neutron appear as the quantised rotational states of a single soliton. The idea is old (Skyrme 1961, 1962) and the modern justification is that the skyrmion is the soliton of the large-$N_c$ limit of QCD, in which the pion effective theory is exact at low energy.</p>
 <p>This article constructs the Skyrme model in the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$. The skyrmion field is the framework's <strong>unit real quaternion</strong>,</p>
 <p>$$
-\tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\tilde U^{\natural} = e_0 ,
+\tilde U(\tilde{Q}) \in \mathbb{H}^1_{\mathbb{B}} , \qquad \tilde U\tilde U^{\natural} = e_t ,
 $$</p>
-<p>which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.</p>
+<p>which is the chiral field of the companion pion article; its target is the group manifold $\mathbb{S}^3$, whose third homotopy group is $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, so the winding number is an integer. The Skyrme term is the fourth-order invariant built from the flat current $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ of the nonlinear-sigma-model article, and the topological baryon number is its winding.</p>
 <p>The findings are the following.</p>
 <ul>
 <li><strong>Established, and recomputed below.</strong> The topological current
 $$
 B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
-j_\mu = \tilde U^{-1}\partial_\mu\tilde U ,
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U ,
 $$
-is conserved identically, and its charge is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$. For the hedgehog configuration $\tilde U = \cos F(r)\,e_0 + \sin F(r)\,\vec u_r$ the charge is
+is conserved identically, and its charge is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$. For the hedgehog configuration $\tilde U = \cos F(r)\,e_t + \sin F(r)\,\vec u_r$ the charge is
 $$
 B = -\frac{2}{\pi}\int_0^\infty \sin^2\!F\,\frac{dF}{dr}\,dr = \frac{1}{\pi}\left[F - \tfrac12\sin 2F\right]_{F(\infty)}^{F(0)},
 $$
@@ -85,7 +84,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 <li>Companion article <em>Chiral Fermions in the Biquaternion Framework</em>, for the anomaly context of the Wess–Zumino–Witten term.</li>
 <li>Companion article <em>The Standard Model under the Biquaternion Framework — A Research Agenda</em>, for the flavour and matter content.</li>
 </ul>
-<p><strong>Conventions.</strong> We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $\vec x\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.</p>
+<p><strong>Conventions.</strong> We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_a e_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_a e_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.</p>
 <h2 id="the-skyrme-field-and-the-skyrme-term">The Skyrme Field and the Skyrme Term</h2>
 <p>The Skyrme model is the pion effective theory with one extra term, and both terms are built from the same flat current.</p>
 <p><strong>The field.</strong> The skyrmion field is the chiral field of the pion, a map from spacetime to the group,</p>
@@ -96,14 +95,14 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 \qquad
 \tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$</p>
-<p>where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(\vec x)$ that are pure gauge at spatial infinity, $\tilde U(\vec x)\to e_0$ as $|\vec x|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.</p>
+<p>where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ that are pure gauge at spatial infinity, $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to e_t$ as $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.</p>
 <p><strong>The current.</strong> The Maurer–Cartan form of the companion article is</p>
 <p>$$
-j_\mu = \tilde U^{-1}\partial_\mu\tilde U \in \mathrm{SU}(2)\subset\mathbb{M}_- ,
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U \in \mathrm{SU}(2)\subset\mathbb{M}_- ,
 $$</p>
 <p>and it is <strong>flat</strong>,</p>
 <p>$$
-\partial_\mu j_\nu - \partial_\nu j_\mu + \left[j_\mu, j_\nu\right] = 0 .
+\partial/\partial Q_\mu j_\nu - \partial/\partial Q_\nu j_\mu + \left[j_\mu, j_\nu\right] = 0 .
 $$</p>
 <p>Flatness is what makes $j_\mu$ a pure gauge connection and what makes the topological density below a total derivative: it is the property that no other algebra-valued one-form has.</p>
 <p><strong>The two terms.</strong> The two-derivative term is the chiral Lagrangian of the pion article,</p>
@@ -123,14 +122,14 @@ $$</p>
 <p><strong>Why the fourth-order term is needed.</strong> A term with four derivatives has dimension of length to the minus four in four spacetime dimensions and is therefore non-renormalizable; it is admitted in the effective theory because it is the leading term that can stabilise a soliton. The next section shows that the two-derivative term alone cannot.</p>
 <h2 id="derricks-theorem-and-the-need-for-a-fourth-order-term">Derrick's Theorem and the Need for a Fourth-Order Term</h2>
 <p>A static soliton in more than two spatial dimensions needs a term of higher order than the kinetic energy, and the reason is a scaling argument.</p>
-<p><strong>Derrick's scaling.</strong> Let $\tilde U(\vec x)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,</p>
+<p><strong>Derrick's scaling.</strong> Let $\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,</p>
 <p>$$
-\tilde U_\lambda(\vec x) = \tilde U(\lambda\vec x) .
+\tilde U_\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde U(\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)) .
 $$</p>
 <p>The two-derivative energy scales as</p>
 <p>$$
-E_2[\tilde U_\lambda] = \int d^3x\left|\partial_i\tilde U_\lambda\right|^2
-= \lambda^{-1}\int d^3y\left|\partial_i\tilde U\right|^2 = \lambda^{-1}E_2 ,
+E_2[\tilde U_\lambda] = \int d^3x\left|\partial/\partial Q_i\,\tilde U_\lambda\right|^2
+= \lambda^{-1}\int d^3y\left|\partial/\partial Q_i\,\tilde U\right|^2 = \lambda^{-1}E_2 ,
 $$</p>
 <p>and the four-derivative energy as</p>
 <p>$$
@@ -160,25 +159,25 @@ $$</p>
 <p>$$
 B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
-j_\mu = \tilde U^{-1}\partial_\mu\tilde U .
+j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U .
 $$</p>
 <p>The normalisation $\frac{1}{24\pi^2}$ is chosen so that the charge is an integer, and the trace is the matrix trace on $\mathrm{SU}(2)$. The current is <strong>conserved identically</strong>,</p>
 <p>$$
-\partial_\mu B^\mu = 0 ,
+\langle\tilde\nabla,\tilde B\rangle_{\natural} = 0 ,
 $$</p>
 <p>without using any equation of motion: the divergence is a sum of terms that cancel by antisymmetry and by the Maurer–Cartan flatness. This is what makes $B$ a <strong>topological</strong> charge rather than a Noether charge — it is a property of the map, not of the dynamics.</p>
 <p><strong>The charge.</strong> The charge</p>
 <p>$$
 B = \int d^3x\, B^0
 $$</p>
-<p>is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_0$ at spatial infinity. Because $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).</p>
+<p>is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the configuration together with its boundary condition $\tilde U\to e_t$ at spatial infinity. Because $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, the degree is an integer and is invariant under any continuous deformation that keeps the boundary condition; a configuration with $B\neq0$ cannot relax to the vacuum, which has $B = 0$. This is the topological obstruction that makes the skyrmion stable, and it is standard (Skyrme 1961; Witten 1983).</p>
 <p><strong>The hedgehog reduction.</strong> For a configuration of the <strong>hedgehog</strong> form</p>
 <p>$$
-\tilde U(\vec x) = \cos F(r)\,e_0 + \sin F(r)\,\vec u_r ,
+\tilde U(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \cos F(r)\,e_t + \sin F(r)\,\vec u_r ,
 \qquad
 \vec u_r = \frac{x^a}{r}e_a ,
 \qquad
-r = |\vec x| ,
+r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$</p>
 <p>which is the most general spherically symmetric map with the identity embedded at the origin, the winding-number density is</p>
 <p>$$
@@ -207,7 +206,7 @@ $$</p>
 <p><strong>The framework's location.</strong> The Skyrme model of this article lives in the pion effective theory of the companion sigma-model and pion articles, not in the framework's fundamental field content. The framework's fundamental scalar is free and has no potential, so it has no degenerate vacua and no soliton of its own, as <em>Instantons and Solitons in Biquaternionic Form</em> records. The Skyrme term is a four-derivative effective operator, and the soliton is a solution of the effective theory; whether the framework's scalar sector can be extended to produce the broken chiral symmetry whose effective theory this is, is the same open question as in the Higgs, Goldstone and pion articles.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <p><strong>The target is the framework's group manifold.</strong> The skyrmion is a map into $\mathbb{S}^3 = \mathbb{H}^1_{\mathbb{B}}$, the unit sphere in the framework's real-quaternion subspace. No target manifold is imported: the compact group of the algebra is exactly the skyrmion's target, and its third homotopy group supplies the integer winding. This is the framework's contribution to the topological baryon, and it is exact.</p>
-<p><strong>The topological density is the flat current's cube.</strong> The current $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$ is the framework's Maurer–Cartan form, and the topological density is its totally antisymmetric cube. The density is therefore built from the algebra's commutators and the flatness of its current, and the normalisation $\frac{1}{24\pi^2}$ is the one that makes the charge the degree of the map. The framework supplies the object; the normalisation is standard topology.</p>
+<p><strong>The topological density is the flat current's cube.</strong> The current $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$ is the framework's Maurer–Cartan form, and the topological density is its totally antisymmetric cube. The density is therefore built from the algebra's commutators and the flatness of its current, and the normalisation $\frac{1}{24\pi^2}$ is the one that makes the charge the degree of the map. The framework supplies the object; the normalisation is standard topology.</p>
 <p><strong>The Skyrme term is a biquaternion norm.</strong> Both terms of the Lagrangian are biquaternion norms of the same flat current: $\mathcal{L}_2$ is the quadratic biquaternion norm and $\mathcal{L}_4$ is the biquaternion norm of the commutator. The algebra therefore organises the derivative expansion into invariants of the current, with $\mathrm{Sc}$ supplying the scalar extraction. This is the same role the trace plays elsewhere in the series, and it is the sense in which the Skyrme Lagrangian is a framework object.</p>
 <p><strong>What is imported.</strong> The identification of the winding with baryon number, the large-$N_c$ justification, the existence of the minimiser, the profile equation and its solution, the Wess–Zumino–Witten term with its colour-counting coefficient, and the quantisation that turns the soliton into the nucleon are all standard and imported. The framework supplies the target, the current and the biquaternion norm, and it supplies neither the fermionic baryon nor the anomaly that selects its statistics.</p>
 <h2 id="open-questions">Open Questions</h2>
@@ -232,7 +231,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The Skyrme model is the pion effective theory with the fourth-order Skyrme term, whose solitons are identified with baryons through a topological winding number. In the biquaternion framework the field is the unit real quaternion $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, the target is the group manifold $\mathbb{S}^3$ with $\pi_3(\mathbb{S}^3) = \mathbb{Z}$, the flat current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U$, the Lagrangian is</p>
+<p>The Skyrme model is the pion effective theory with the fourth-order Skyrme term, whose solitons are identified with baryons through a topological winding number. In the biquaternion framework the field is the unit real quaternion $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, the target is the group manifold $\mathbb{S}^3$ with $\pi_z(\mathbb{S}^3) = \mathbb{Z}$, the flat current is $j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$, the Lagrangian is</p>
 <p>$$
 \mathcal{L} = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_\mu j_\mu\right) + \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_\mu,j_\nu][j_\mu,j_\nu]\right),
 $$</p>
@@ -240,9 +239,9 @@ $$</p>
 <p>$$
 B^\mu = \frac{1}{24\pi^2}\,\varepsilon^{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),
 \qquad
-\partial_\mu B^\mu = 0 \text{ identically.}
+\langle\tilde\nabla,\tilde B\rangle_{\natural} = 0 \text{ identically.}
 $$</p>
-<p>For the hedgehog $\tilde U = \cos F\,e_0 + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.</p>
+<p>For the hedgehog $\tilde U = \cos F\,e_t + \sin F\,\vec u_r$ the density is $B^0 = -\frac{1}{2\pi^2}\sin^2F\,F'/r^2$ and the charge is $B = -\frac{2}{\pi}\int_0^\infty\sin^2F\,F'\,dr = \frac{1}{\pi}[F-\tfrac12\sin 2F]_{F(\infty)}^{F(0)}$, giving $B = k$ for $F(0) = k\pi$; the direct evaluation of the density agreed with the closed form, and the charges $B = 1, 2, 3$ were recomputed to nine figures. The purely two-derivative model has no stable three-dimensional soliton, since Derrick's scaling gives $E(\lambda) = E_2/\lambda$ with no minimum; the Skyrme term adds $\lambda E_4$ and the minimum sits at $\lambda_* = \sqrt{E_2/E_4}$ with $E = 2\sqrt{E_2E_4}$, recomputed.</p>
 <p>The framework supplies the target manifold, the flat current, the commutator structure and the biquaternion-norm organisation of the derivative expansion; it supplies neither the fermionic baryon, whose statistics come from the Wess–Zumino–Witten term, nor the anomaly that fixes the level, nor the large-$N_c$ justification of the identification. The topological baryon is thus a framework-compatible construction on the framework's own group manifold, with its dynamics and its quantisation imported.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -258,8 +257,8 @@ $$</p>
 <td>Biquaternion algebra, $\cong M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0 = 1, e_1, e_2, e_3$</td>
-<td>Quaternion basis, $e_k^2 = -e_0$, $e_ae_b = -\delta_{ab}e_0+\varepsilon_{abc}e_c$</td>
+<td>$e_t = 1, \vec e_x, \vec e_y, \vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2 = -e_t$, $e_a e_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -275,14 +274,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde U\in\mathbb{H}^1_{\mathbb{B}}$</td>
-<td>Skyrmion field; $\tilde U = \exp(\tilde\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_0$</td>
+<td>Skyrmion field; $\tilde U = \exp(\tilde\pi/f_\pi)$, $\tilde U\tilde U^{\natural} = e_t$</td>
 </tr>
 <tr>
-<td>$j_\mu = \tilde U^{-1}\partial_\mu\tilde U$</td>
+<td>$j_\mu = \tilde U^{-1}\partial/\partial Q_\mu\,\tilde U$</td>
 <td>Flat Maurer–Cartan current</td>
 </tr>
 <tr>
-<td>$\partial_\mu j_\nu - \partial_\nu j_\mu + [j_\mu,j_\nu] = 0$</td>
+<td>$\partial/\partial Q_\mu j_\nu - \partial/\partial Q_\nu j_\mu + [j_\mu,j_\nu] = 0$</td>
 <td>Flatness (zero curvature)</td>
 </tr>
 <tr>
@@ -306,11 +305,11 @@ $$</p>
 <td>Winding number; baryon number</td>
 </tr>
 <tr>
-<td>$\pi_3(\mathbb{S}^3) = \mathbb{Z}$</td>
+<td>$\pi_z(\mathbb{S}^3) = \mathbb{Z}$</td>
 <td>Homotopy group making the charge an integer</td>
 </tr>
 <tr>
-<td>$\tilde U = \cos F\,e_0 + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$</td>
+<td>$\tilde U = \cos F\,e_t + \sin F\,\vec u_r$, $\vec u_r = x^ae_a/r$</td>
 <td>Hedgehog ansatz</td>
 </tr>
 <tr>

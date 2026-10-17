@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -57,7 +56,7 @@ harmonic, or of monogenic, pieces multiplied by powers of a radial or a Clifford
 article treats the operator that performs the decomposition. The setting is the one of <em>The Dirac
 Operator</em>: a Clifford algebra $A=\mathrm{Cl}_{0,m}$ with frame $1,e_1,\dots,e_m$, a left Clifford
 module $\mathcal{S}$ of values, the vector variable $x$ ranging over $\mathbb{R}^{m+1}$, the
-Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\partial_\mu$ and the Laplacian
+Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\,\partial/\partial x_\mu$ and the Laplacian
 $\Delta=D\bar D=\bar DD$.</p>
 <p>On the space $\mathcal{P}_k$ of $\mathcal{S}$-valued homogeneous polynomials of degree $k$ there are
 two decompositions. The harmonic one, classical and due to Stokes and Fischer, writes
@@ -81,7 +80,7 @@ model.</p>
 <h2 id="the-euler-operator-and-the-grading">The Euler Operator and the Grading</h2>
 <p><strong>Definition.</strong> The <strong>Euler operator</strong> is</p>
 <p>$$
-E = \sum_{\mu=0}^{m}x_\mu\,\partial_\mu ,
+E = \sum_{\mu=0}^{m}x_\mu\,\partial/\partial x_\mu ,
 $$</p>
 <p>the infinitesimal generator of the dilations $x\mapsto\lambda x$; a polynomial $P$ is homogeneous of
 degree $k$ exactly when $EP=kP$, and $\mathcal{P}_k$ is the eigenspace of $E\subset\mathcal{P}$ with
@@ -92,8 +91,8 @@ $[E,L_{|x|^2}]=2L_{|x|^2}$ and $[E,L_{x^{\natural}}]=L_{x^{\natural}}$, where $L
 multiplication by $f$ on the left; consequently the lowering operators preserve the degree by $-2$
 and $-1$ respectively and the raising operators increase it by $2$ and $1$.</p>
 <p><em>Proof.</em> The Laplacian and $D$ have constant coefficients, so $E$ commutes with them term by term
-because $x_\mu\partial_\mu$ and $\partial_\nu$ satisfy
-$[\partial_\nu,x_\mu\partial_\mu]=\partial_\nu$ and the second derivatives cancel. For the
+because $x_\mu\,\partial/\partial x_\mu$ and $\partial/\partial x_\nu$ satisfy
+$[\partial/\partial x_\nu,x_\mu\,\partial/\partial x_\mu]=\partial/\partial x_\nu$ and the second derivatives cancel. For the
 multipliers, $E(fP)=(Ef)P+f(EP)$ for a homogeneous $f$, giving $[E,L_f]=(\deg f)L_f$, and
 $\deg|x|^2=2$, $\deg x^{\natural}=1$.</p>
 <p><strong>Corollary (the grading of the two decompositions).</strong> The harmonic decomposition has layers of
@@ -112,8 +111,8 @@ stated and proved.</p>
 <p>$$
 [\Delta, L_{|x|^2}] = \Delta L_{|x|^2}-L_{|x|^2}\Delta = 4E+2n .
 $$</p>
-<p><em>Proof.</em> Direct computation: $\partial_\mu(|x|^2Q)=2x_\mu Q+|x|^2\partial_\mu Q$, so
-$\partial_\mu^2(|x|^2Q)=2Q+4x_\mu\partial_\mu Q+|x|^2\partial_\mu^2Q$; summing over the $n$
+<p><em>Proof.</em> Direct computation: $\partial/\partial x_\mu\,(|x|^2Q)=2x_\mu Q+|x|^2\partial/\partial x_\mu Q$, so
+$\partial^2/\partial x_\mu^2(|x|^2Q)=2Q+4x_\mu\,\partial/\partial x_\mu Q+|x|^2\partial^2/\partial x_\mu^2Q$; summing over the $n$
 coordinates gives $\Delta(|x|^2Q)=2nQ+4EQ+|x|^2\Delta Q$, which is the identity.</p>
 <p><strong>Corollary (the triangularity and the isomorphism).</strong> On $\mathcal{P}_{k-2}$ the composition
 $\Delta L_{|x|^2}$ is triangular with respect to degree, of the form
@@ -214,7 +213,7 @@ exists whenever the Fischer lemma for $D$ does, which is the case under the stan
 particular dimensions of the pieces are properties of the system, computed by the dimension
 recursion; the operator is the same.</p>
 <p><strong>Remark (why the multiplier is the conjugate variable).</strong> In the corpus's sign convention the
-operator $D$ carries $+e_i\partial_i$ and satisfies $D\bar D=\Delta$, so the <em>dual</em> multiplier — the
+operator $D$ carries $+e_\mu\,\partial/\partial x_\mu$ and satisfies $D\bar D=\Delta$, so the <em>dual</em> multiplier — the
 one for which $D$ acts triangularly with positive diagonal — is
 $x^{\natural}=x_0-\sum_{i\ge1}x_ie_i$, whose Clifford norm is $|x|^2$; the conjugate operator
 $\bar D$ plays the mirror role and pairs with the plain variable $x$. The point is that the
@@ -227,7 +226,7 @@ reader comparing the two must therefore read the multiplier together with the op
 statements agree once the pairing is fixed.</p>
 <h2 id="summary">Summary</h2>
 <p>On the space $\mathcal{P}_k$ of $\mathcal{S}$-valued homogeneous polynomials of degree $k$, the
-<strong>Euler operator</strong> $E=\sum_\mu x_\mu\partial_\mu$ is the grading, and the Laplacian and the
+<strong>Euler operator</strong> $E=\sum_\mu x_\mu\,\partial/\partial x_\mu$ is the grading, and the Laplacian and the
 Cauchy–Riemann operator commute with it. The harmonic <strong>Fischer lemma</strong> —
 $\Delta:\mathcal{P}_k\to\mathcal{P}_{k-2}$ is surjective and
 $|x|^2\mathcal{P}_{k-2}\cap\mathcal{H}_k=0$ — together with the commutator identity
@@ -259,7 +258,7 @@ system, and the function-theoretic content of the decompositions is <em>Clifford
 <td>$\mathcal{S}$-valued homogeneous polynomials of degree $k$</td>
 </tr>
 <tr>
-<td>$E=\sum_\mu x_\mu\partial_\mu$</td>
+<td>$E=\sum_\mu x_\mu\,\partial/\partial x_\mu$</td>
 <td>Euler operator; $EP=kP$ on $\mathcal{P}_k$</td>
 </tr>
 <tr>

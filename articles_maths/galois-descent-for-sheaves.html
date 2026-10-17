@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -83,7 +82,7 @@ $$</p>
 <p>$$
 \mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X).
 $$</p>
-<p><em>Proof.</em> The pair is adjoint, as in <em>Equivariant Sheaves and Descent</em>; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $U\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(U)^{\Gamma}\otimes_kK\to\mathcal{M}(U)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of <em>Descent Theory</em>.</p>
+<p><em>Proof.</em> The pair is adjoint, as in <em>Equivariant Sheaves and Descent</em>; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $\Omega\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(\Omega)^{\Gamma}\otimes_kK\to\mathcal{M}(\Omega)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of <em>Descent Theory</em>.</p>
 <p><strong>Corollary (the structure sheaf and the vector bundles).</strong> The structure sheaf descends, $\mathcal{O}_X=\mathcal{O}_{X_K}^{\Gamma}$; the base change identifies the locally free sheaves of finite rank on $X$ with the $\Gamma$-equivariant locally free sheaves on $X_K$, and the descent is effective for all quasicoherent sheaves when $X$ is a scheme over $k$.</p>
 <p><em>Proof.</em> The structure-sheaf statement is the proposition on the fixed part; the vector-bundle statement is the theorem applied to the locally free sheaves, whose rank is preserved by the base change and the descent; the effectiveness for quasicoherent sheaves is the faithfully flat descent of <em>Descent Theory</em>.</p>
 <h2 id="the-cohomological-obstruction">The Cohomological Obstruction</h2>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -63,7 +62,7 @@
 </blockquote>
 <p>In the form in which it was posed, the group operation is assumed only continuous, and the question is whether a smooth structure compatible with the group operations exists and is unique. The affirmative answer rests on three separate facts: that a locally Euclidean topological group has no small subgroups, that a locally compact group with no small subgroups is a Lie group, and that a locally compact group is topologically a projective limit of Lie groups.</p>
 <p><strong>Definition.</strong> A <strong>topological group</strong> is a group $G$ with a topology for which the multiplication $G \times G \to G$ and the inversion $G \to G$ are continuous. A <strong>Lie group</strong> is a group that is a smooth manifold for which the same two maps are smooth.</p>
-<p><strong>Definition.</strong> A topological group $G$ has <strong>no small subgroups</strong>, abbreviated <strong>NSS</strong>, if there is a neighbourhood $U$ of the identity containing no subgroup of $G$ other than $\{e\}$; equivalently, every neighbourhood of the identity contains a neighbourhood with the same property. The condition is a local one, and it is inherited by open subgroups.</p>
+<p><strong>Definition.</strong> A topological group $G$ has <strong>no small subgroups</strong>, abbreviated <strong>NSS</strong>, if there is a neighbourhood $\Omega$ of the identity containing no subgroup of $G$ other than $\{e\}$; equivalently, every neighbourhood of the identity contains a neighbourhood with the same property. The condition is a local one, and it is inherited by open subgroups.</p>
 <p><strong>Example.</strong> A Lie group has NSS. In a neighbourhood of the identity small enough that the exponential is a local diffeomorphism, a subgroup is a union of curves through the identity tangent to its Lie algebra, and a nontrivial such subgroup has a nonzero tangent vector whose powers leave every sufficiently small neighbourhood. The precise statement is the one recorded below as a lemma.</p>
 <h3 id="the-role-of-differentiability">The Role of Differentiability</h3>
 <p>The problem separates into a topological part and a smooth part.</p>
@@ -72,7 +71,7 @@
 <p>The lemma is the reduction of Hilbert's problem to a purely infinite-group-theoretic statement: it suffices to know that a locally compact NSS group is a Lie group. This is the form in which the problem was solved.</p>
 <h3 id="the-no-small-subgroups-condition">The No-Small-Subgroups Condition</h3>
 <p><strong>Proposition.</strong> The class of NSS groups is closed under taking open subgroups, taking closed subgroups, taking quotients by closed normal subgroups, and taking finite direct products.</p>
-<p><strong>Proof.</strong> An open subgroup inherits the neighbourhood. A closed subgroup $H$ does too, since a subgroup of $H$ lying in the subgroup-free neighbourhood $U \cap H$ is a subgroup of $G$ lying in $U$, hence trivial. A quotient map carries a subgroup-free neighbourhood to a subgroup-free neighbourhood, because the preimage of a subgroup is a subgroup. A product is handled by a product of subgroup-free neighbourhoods of the identities: the projection of a subgroup of the product into each factor is a subgroup of that factor, hence trivial.</p>
+<p><strong>Proof.</strong> An open subgroup inherits the neighbourhood. A closed subgroup $H$ does too, since a subgroup of $H$ lying in the subgroup-free neighbourhood $\Omega \cap H$ is a subgroup of $G$ lying in $\Omega$, hence trivial. A quotient map carries a subgroup-free neighbourhood to a subgroup-free neighbourhood, because the preimage of a subgroup is a subgroup. A product is handled by a product of subgroup-free neighbourhoods of the identities: the projection of a subgroup of the product into each factor is a subgroup of that factor, hence trivial.</p>
 <h2 id="the-solution-of-the-problem">The Solution of the Problem</h2>
 <h3 id="the-theorems-of-gleason-and-montgomeryzippin">The Theorems of Gleason and Montgomery–Zippin</h3>
 <p><strong>Theorem (Gleason; Montgomery–Zippin).</strong> Let $G$ be a locally compact topological group with no small subgroups. Then $G$ is a Lie group: its topology is that of a smooth manifold, and the manifold structure is unique, so that $G$ is a Lie group in the sense of <em>Lie Groups</em>.</p>

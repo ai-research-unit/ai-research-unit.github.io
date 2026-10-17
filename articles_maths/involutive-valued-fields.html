@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -76,7 +75,7 @@ $$</p>
 <p><strong>Corollary (the residue involution and the valuation filtration).</strong> The isometric involution acts on each quotient $\mathrm{M}^n/\mathrm{M}^{n+1}$ as the identity when it acts as the identity on $k$; in general it acts by $\bar\sigma$ on $\mathrm{M}^n/\mathrm{M}^{n+1}\cong k$, so the whole associated graded ring $\bigoplus_n \mathrm{M}^n/\mathrm{M}^{n+1}$ carries the induced involution.</p>
 <p><strong>Proof.</strong> The quotients $\mathrm{M}^n/\mathrm{M}^{n+1}$ are $k$-modules isomorphic to $k$; an isometric involution preserves each $\mathrm{M}^n$ and induces $\bar\sigma$ on each quotient, because the action on classes is $\bar\sigma$ by multiplicativity.</p>
 <h2 id="the-norm-form-and-ramification">The Norm Form and Ramification</h2>
-<p><strong>Proposition (the norm form and the value).</strong> For $x \in F$ the norm form satisfies $v(N(x)) = 2\,v(x)$; hence $N(x)$ is a unit of $\mathcal{O}$ exactly when $x$ is, and $N(x)\in \mathrm{M}^n$ exactly when $v(x)\geq n/2$. The norm form is isotropic on the skew part and anisotropic on the fixed field; the <strong>unitary group</strong> $U(F,\sigma) = \{x : N(x) = 1\}$ is the group of norm-one elements.</p>
+<p><strong>Proposition (the norm form and the value).</strong> For $x \in F$ the norm form satisfies $v(N(x)) = 2\,v(x)$; hence $N(x)$ is a unit of $\mathcal{O}$ exactly when $x$ is, and $N(x)\in \mathrm{M}^n$ exactly when $v(x)\geq n/2$. The norm form is isotropic on the skew part and anisotropic on the fixed field; the <strong>unitary group</strong> $\mathrm{U}(F,\sigma) = \{x : N(x) = 1\}$ is the group of norm-one elements.</p>
 <p><strong>Proof.</strong> $v(N(x)) = v(x\sigma(x)) = v(x)+v(\sigma(x)) = 2v(x)$ by the isometry; the level statements follow. The norm form vanishes at skew elements because $N(x) = x\sigma(x) = -x^2$ when $\sigma(x) = -x$; on the fixed field it is $x^2$, which vanishes only at $0$. The unitary group is the kernel of the norm on the units.</p>
 <p><strong>Theorem (ramification of the quadratic extension).</strong> Let $\sigma$ be a nontrivial isometric involution of the discretely valued field $F$ with $F^\sigma$ its fixed field and $[F : F^\sigma] = 2$. Then the extension $F/F^\sigma$ has ramification index $e$ and residue degree $f$ with $ef = 2$, so exactly one of the following holds: the extension is <strong>unramified</strong>, $e = 1$, $f = 2$, and the residue involution $\bar\sigma$ is nontrivial; or the extension is <strong>ramified</strong>, $e = 2$, $f = 1$, and the residue involution $\bar\sigma$ is trivial. In the unramified case the residue involution is the nontrivial automorphism of the quadratic residue extension, and in the ramified case it is the identity.</p>
 <p><strong>Proof.</strong> For a quadratic extension $ef = [F : F^\sigma] = 2$, so $(e, f)$ is $(1, 2)$ or $(2, 1)$. The residue field of $F^\sigma$ is a subfield of $k$ of degree $f$ over it, being the residue field of the base; $\bar\sigma$ acts on $k$ and its fixed field is the residue field of the fixed field by the theorem above, so $\bar\sigma$ is nontrivial exactly when $f = 2$, that is in the unramified case, and trivial when $f = 1$, that is in the ramified case. The statements about the residue involution follow.</p>
@@ -136,7 +135,7 @@ $$</p>
 <td>The residue involution of $k$</td>
 </tr>
 <tr>
-<td>$U(F,\sigma)$</td>
+<td>$\mathrm{U}(F,\sigma)$</td>
 <td>The unitary group, $N(x) = 1$</td>
 </tr>
 <tr>

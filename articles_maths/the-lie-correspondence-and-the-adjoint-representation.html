@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -62,7 +61,7 @@
 \operatorname{Lie} : \mathbf{LieGrp}_{\mathbb{K}} \longrightarrow \mathbf{LieAlg}_{\mathbb{K}},
 $$</p>
 <p>from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomorphisms. It is neither full nor faithful, and the failure is exactly the content of the correspondence: distinct group homomorphisms can induce the same linear map, and not every linear map descends.</p>
-<p><strong>Example.</strong> The groups $\mathbb{R}$ and $U(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $U(1)$ is compact. The covering homomorphism $\mathbb{R} \to U(1)$, $t \mapsto \exp(2\pi i t)$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.</p>
+<p><strong>Example.</strong> The groups $\mathbb{R}$ and $\mathrm{U}(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $\mathrm{U}(1)$ is compact. The covering homomorphism $\mathbb{R} \to \mathrm{U}(1)$, $t \mapsto \exp(2\pi i t)$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.</p>
 <p><strong>Example.</strong> The covering $SU(2) \to SO(3)$ of degree $2$ induces an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$ between the Lie algebras, and the two groups are not isomorphic; $SO(3)$ has fundamental group $\mathbb{Z}/2$, while $SU(2)$ is simply connected.</p>
 <h3 id="local-isomorphisms">Local Isomorphisms</h3>
 <p><strong>Definition.</strong> A homomorphism $\varphi : G \to H$ of Lie groups is a <strong>local isomorphism</strong> if $d\varphi_e : \mathrm{G} \to \mathrm{H}$ is a linear isomorphism.</p>
@@ -147,7 +146,7 @@ $$</p>
 \operatorname{Lie}(Z(G)) = \mathrm{Z}(\mathrm{G}) = \{x \in \mathrm{G} : [x, y] = 0 \text{ for all } y\},
 $$</p>
 <p>the centre of the Lie algebra.</p>
-<p><strong>Example.</strong> For $G = SU(2)$ the centre is $\{\pm I\}$ and $\operatorname{Ad}$ maps $SU(2)$ onto $SO(3)$, the double cover $SU(2) \to SO(3) = SU(2)/\{\pm I\}$; the kernel of $\operatorname{Ad}$ is exactly $\{\pm I\}$. For $G = U(1)$ the adjoint representation is trivial, the Lie algebra being abelian, and $\ker\operatorname{Ad} = U(1) = Z(G)$.</p>
+<p><strong>Example.</strong> For $G = SU(2)$ the centre is $\{\pm I\}$ and $\operatorname{Ad}$ maps $SU(2)$ onto $SO(3)$, the double cover $SU(2) \to SO(3) = SU(2)/\{\pm I\}$; the kernel of $\operatorname{Ad}$ is exactly $\{\pm I\}$. For $G = \mathrm{U}(1)$ the adjoint representation is trivial, the Lie algebra being abelian, and $\ker\operatorname{Ad} = \mathrm{U}(1) = Z(G)$.</p>
 <h3 id="the-semisimple-case">The Semisimple Case</h3>
 <p><strong>Theorem.</strong> Let $\mathrm{G}$ be a finite-dimensional semisimple Lie algebra over $\mathbb{K}$ and let $G^{\mathrm{cov}}$ be its simply connected group. Then:</p>
 <p><strong>(a)</strong> $\mathrm{Z}(\mathrm{G}) = 0$ and $\ker(\operatorname{Ad}) = Z(G)$ is discrete for every connected $G$ with Lie algebra $\mathrm{G}$;</p>

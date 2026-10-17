@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -140,11 +139,11 @@ $$</p>
 <p>$$
 \delta(x^n) = n x^{n-1}\delta(x) = n x^{n-1} f(x).
 $$</p>
-<p>Hence $\delta = f \partial_x$ and</p>
+<p>Hence $\delta = f \partial/\partial x$ and</p>
 <p>$$
-\operatorname{Der}_R(R[x]) = R[x]\,\partial_x,
+\operatorname{Der}_R(R[x]) = R[x]\,\partial/\partial x,
 $$</p>
-<p>a free $R[x]$-module of rank one, with $\partial_x = d/dx$ the usual formal derivative.</p>
+<p>a free $R[x]$-module of rank one, with $\partial/\partial x = d/dx$ the usual formal derivative.</p>
 <p><strong>Example.</strong> For the quaternion algebra, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is the space of inner derivations below; it is three-dimensional and its bracket is twice the commutator product on the space of pure imaginary quaternions.</p>
 <p><strong>Example.</strong> For the dual numbers, $\delta(1) = 0$ and Leibniz applied to $\varepsilon^2 = 0$ gives $0 = \delta(\varepsilon^2) = 2\varepsilon\,\delta(\varepsilon)$, so $\delta(\varepsilon)$ lies in the annihilator of $\varepsilon$, which is $\mathbb{R}\varepsilon$. Thus $\delta(\varepsilon) = c\varepsilon$ and $\delta(x + y\varepsilon) = cy\varepsilon$; consequently</p>
 <p>$$
@@ -198,7 +197,7 @@ $$</p>
 <p>$$
 [p, q] = pq - qp = 2\,\mathrm{Vec}(pq),
 $$</p>
-<p>so the bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is twice the commutator product of the pure imaginary parts. Rescaling the basis to $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ gives the structure constants</p>
+<p>so the bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is twice the commutator product of the pure imaginary parts. Rescaling the basis to $D_\mu = \tfrac{1}{2}\mathrm{ad}_{\vec e_\mu}$ gives the structure constants</p>
 <p>$$
 [D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2 .
 $$</p>
@@ -299,11 +298,11 @@ $$</p>
 <td>Commutator bracket on derivations</td>
 </tr>
 <tr>
-<td>$\delta = f\partial_x$</td>
+<td>$\delta = f\partial/\partial x$</td>
 <td>The derivations of $R[x]$</td>
 </tr>
 <tr>
-<td>$D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$</td>
+<td>$D_\mu = \tfrac{1}{2}\mathrm{ad}_{\vec e_\mu}$</td>
 <td>Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$</td>
 </tr>
 <tr>

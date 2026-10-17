@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -100,9 +99,9 @@ $$</p>
 <p><strong>Proof.</strong> The first parity is the $R$-linearity of the composition in its first slot; the second is the scalar law of the adjoint, $S\star(\lambda T)=S\,\varsigma(\lambda)T^{\dagger}=\varsigma(\lambda)(S\star T)$. The unit laws are $\mathrm{id}^{\dagger}=\mathrm{id}$ and the definition of $\star$: $S\star\mathrm{id}=S\,\mathrm{id}^{\dagger}=S$ for every $S$, so $\mathrm{id}$ is a right unit, and $\mathrm{id}\star S=\mathrm{id}\,S^{\dagger}=S^{\dagger}$.</p>
 <p><strong>Remark (the derived product is not the composition).</strong> The product $\star$ is a new product on $E$, and it is not associative in general: $(S\star T)\star U=ST^{\dagger}U^{\dagger}$ while $S\star(T\star U)=S\,U\,T^{\dagger}$, and the two agree exactly when $T^{\dagger}U^{\dagger}=UT^{\dagger}$. This is the endomorphism form of the fact that the derived product of a sesqualgebra is the product of the algebra with the involution and not the product of the algebra; the associativity of the composition is the datum, and $\star$ need not inherit it. The associativity of $E$ and the two-sidedness of its unit are those of <em>The Endomorphism Algebra of a Module</em>, and they are read from the composition and not from $\star$.</p>
 <h3 id="the-unitary-endomorphisms">The Unitary Endomorphisms</h3>
-<p><strong>Definition.</strong> An endomorphism $T$ is <strong>unitary</strong> when $T^{\dagger}=T^{-1}$, equivalently $T^{\dagger}T=TT^{\dagger}=\mathrm{id}$. The unitary endomorphisms form a group $U(E)$ under the composition, and the map $T\mapsto T^{\dagger}$ is its inversion.</p>
-<p><strong>Theorem (the inner $*$-automorphisms).</strong> Let $U$ be a unitary endomorphism. Then $\alpha_{U}(T)=U\,T\,U^{\dagger}$ is an $R$-linear automorphism of $E$ with $\alpha_{U}^{-1}=\alpha_{U^{\dagger}}$, the assignment $U\mapsto\alpha_{U}$ is a homomorphism $U(E)\to\operatorname{Aut}(E)$ whose kernel is the central unitary endomorphisms, and $\alpha_{U}$ is an $*$-automorphism, $\alpha_{U}(T^{\dagger})=\alpha_{U}(T)^{\dagger}$.</p>
-<p><strong>Proof.</strong> The multiplicativity of $\alpha_{U}$ is the associativity of the composition, and it is additive and $R$-linear; its inverse is $\alpha_{U^{\dagger}}$ because $\alpha_{U}\alpha_{U^{\dagger}}(T)=UU^{\dagger}TU^{\dagger}U=T$. The kernel is the set of unitary $U$ with $UTU^{\dagger}=T$ for all $T$, that is $UT=TU$ for all $T$, which is $Z(E)\cap U(E)$. For the $*$-law, $\alpha_{U}(T^{\dagger})=(UT^{\dagger}U^{\dagger})=(UTU^{\dagger})^{\dagger}=\alpha_{U}(T)^{\dagger}$.</p>
+<p><strong>Definition.</strong> An endomorphism $T$ is <strong>unitary</strong> when $T^{\dagger}=T^{-1}$, equivalently $T^{\dagger}T=TT^{\dagger}=\mathrm{id}$. The unitary endomorphisms form a group $\mathrm{U}(E)$ under the composition, and the map $T\mapsto T^{\dagger}$ is its inversion.</p>
+<p><strong>Theorem (the inner $*$-automorphisms).</strong> Let $U$ be a unitary endomorphism. Then $\alpha_{U}(T)=U\,T\,U^{\dagger}$ is an $R$-linear automorphism of $E$ with $\alpha_{U}^{-1}=\alpha_{U^{\dagger}}$, the assignment $U\mapsto\alpha_{U}$ is a homomorphism $\mathrm{U}(E)\to\operatorname{Aut}(E)$ whose kernel is the central unitary endomorphisms, and $\alpha_{U}$ is an $*$-automorphism, $\alpha_{U}(T^{\dagger})=\alpha_{U}(T)^{\dagger}$.</p>
+<p><strong>Proof.</strong> The multiplicativity of $\alpha_{U}$ is the associativity of the composition, and it is additive and $R$-linear; its inverse is $\alpha_{U^{\dagger}}$ because $\alpha_{U}\alpha_{U^{\dagger}}(T)=UU^{\dagger}TU^{\dagger}U=T$. The kernel is the set of unitary $U$ with $UTU^{\dagger}=T$ for all $T$, that is $UT=TU$ for all $T$, which is $Z(E)\cap \mathrm{U}(E)$. For the $*$-law, $\alpha_{U}(T^{\dagger})=(UT^{\dagger}U^{\dagger})=(UTU^{\dagger})^{\dagger}=\alpha_{U}(T)^{\dagger}$.</p>
 <p><strong>Remark.</strong> The inner $*$-automorphism $\alpha_{U}$ is the endomorphism form of the inner $*$-automorphism $\alpha_{u}(x)=uxu^{*}$ of a unitary element, and in the matrix case it is the conjugation $T\mapsto UTU^{*}$ by a unitary matrix; the family is <em>Units and the Unitary Elements</em> read on the operators, and its kernel is the centre, exactly as there.</p>
 <h2 id="the-involutions-of-the-endomorphism-algebra">The Involutions of the Endomorphism Algebra</h2>
 <p><strong>Theorem (the adjoint-type involutions).</strong> Let $U$ be a unitary endomorphism and let</p>
@@ -115,7 +114,7 @@ $$</p>
 $$</p>
 <p>where $\alpha_{U^{2}}(T)=U^{2}\,T\,(U^{2})^{\dagger}$. Consequently $\sigma_{U}$ is an involution of $E$ exactly when $U^{2}$ is central, $\sigma_{U}\in\operatorname{Inv}(E)\iff U^{2}\in Z(E)$; and for every unitary $U$ one has $\sigma_{U}=\alpha_{U}\circ{}^{\dagger}$, so the family is the coset of the adjoint under the inner $*$-automorphisms.</p>
 <p><strong>Proof.</strong> The semilinearity is that of the adjoint and the $R$-linearity of $\alpha_{U}$. For the square, $\sigma_{U}^{2}(T)=U\bigl(UT^{\dagger}U^{\dagger}\bigr)^{\dagger}U^{\dagger}=U\,U\,T\,U^{\dagger}\,U^{\dagger}=U^{2}\,T\,(U^{2})^{\dagger}=\alpha_{U^{2}}(T)$. Hence $\sigma_{U}^{2}=\mathrm{id}$ exactly when $U^{2}T=T(U^{2})^{\dagger}$ for all $T$; with $U$ unitary, $(U^{2})^{\dagger}=(U^{2})^{-1}$, and $U^{2}T\,(U^{2})^{-1}=T$ for all $T$ is $U^{2}\in Z(E)$. The last statement is $\alpha_{U}(T^{\dagger})=UT^{\dagger}U^{\dagger}$.</p>
-<p><strong>Corollary (the adjacent involution).</strong> The adjoint itself is the member $U=\mathrm{id}$ of the family, $\sigma_{\mathrm{id}}={}^{\dagger}$; the inner $*$-automorphisms $\alpha_{U}$ are the automorphisms of the family and not involutions, save for the classes of order at most two in $U(E)/Z(E)$; and the family is closed under conjugation, $\alpha_{V}\sigma_{U}\alpha_{V}^{-1}=\sigma_{VUV^{\dagger}}$.</p>
+<p><strong>Corollary (the adjacent involution).</strong> The adjoint itself is the member $U=\mathrm{id}$ of the family, $\sigma_{\mathrm{id}}={}^{\dagger}$; the inner $*$-automorphisms $\alpha_{U}$ are the automorphisms of the family and not involutions, save for the classes of order at most two in $\mathrm{U}(E)/Z(E)$; and the family is closed under conjugation, $\alpha_{V}\sigma_{U}\alpha_{V}^{-1}=\sigma_{VUV^{\dagger}}$.</p>
 <p><strong>Proof.</strong> $\sigma_{\mathrm{id}}(T)=T^{\dagger}$; an inner $*$-automorphism is an involution exactly when $U^{2}$ is central, by the same computation read without the adjoint; and $\alpha_{V}\sigma_{U}\alpha_{V}^{-1}(T)=VU V^{\dagger}\,T\,(VU V^{\dagger})^{\dagger}$, since $\alpha_{V}^{-1}=\alpha_{V^{\dagger}}$, which is $\sigma_{VUV^{\dagger}}$.</p>
 <p><strong>Remark (the family compares with the elements).</strong> The involutions are the operator form of the involutions $\sigma_{u}(x)=ux^{*}u^{*}$ of a unitary element of a sesqualgebra, and the criterion is the same, $u^{2}\in Z(A)$ there and $U^{2}\in Z(E)$ here. Both families are the orbit of the adjoint under the group of inner $*$-automorphisms, read on $E$ in the first case and on the algebra $A$ in the second.</p>
 <h2 id="worked-cases">Worked Cases</h2>
@@ -179,7 +178,7 @@ $$</p>
 <td>the derived product</td>
 </tr>
 <tr>
-<td>$U(E)$</td>
+<td>$\mathrm{U}(E)$</td>
 <td>the unitary endomorphisms, $T^{\dagger}=T^{-1}$</td>
 </tr>
 <tr>

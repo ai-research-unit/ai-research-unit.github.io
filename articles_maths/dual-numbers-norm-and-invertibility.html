@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,94 +54,94 @@
 <p>This article studies the norm of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{D}'_R = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathrm{M} = (\varepsilon)$. The goal here is to define the norm and the Euclidean form, to establish the criterion for invertibility, to describe the group of units and its structure, and to record the three-way classification of the elements.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, the algebra is $\mathbb{D}'_R$, and $\mathbb{D}$ denotes the split complex algebra $\mathbb{R}[j]$, $j^2 = +1$. A general dual number is written</p>
 <p>$$
-A = a + \varepsilon a', \qquad a, a' \in R,
+Q = q + \varepsilon q', \qquad q, q' \in R,
 $$</p>
-<p>with real part $a = \operatorname{Re} A$ and infinitesimal part $a' = \operatorname{Inf} A$. Dual conjugation is written $\bar A = a - \varepsilon a'$ and the identity conjugation $\operatorname{id}(A) = A$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$, and $\mathrm{M} = \varepsilon\mathbb{R}$ is the maximal ideal. Every numerical value displayed below was recomputed in exact rational arithmetic.</p>
+<p>with real part $q = \operatorname{Re} Q$ and infinitesimal part $q' = \operatorname{Inf} Q$. Dual conjugation is written $\bar Q = q - \varepsilon q'$ and the identity conjugation $\operatorname{id}(Q) = Q$. When $R = \mathbb{R}$ we write $\mathbb{D}'$ for $\mathbb{D}'_{\mathbb{R}}$, and $\mathrm{M} = \varepsilon\mathbb{R}$ is the maximal ideal. Every numerical value displayed below was recomputed in exact rational arithmetic.</p>
 <p>The base is the commutative ring, not the field: the criterion for invertibility is stated for an arbitrary commutative $R$, and the places where a field, or invertibility of $2$, is needed are flagged. The default specialisation for the geometric statements is $R = \mathbb{R}$.</p>
 <h2 id="the-norm">The Norm</h2>
 <h3 id="definition">Definition</h3>
-<p><strong>Definition.</strong> The <strong>norm</strong> of a dual number $A = a + \varepsilon a'$ is</p>
+<p><strong>Definition.</strong> The <strong>norm</strong> of a dual number $Q = q + \varepsilon q'$ is</p>
 <p>$$
-\langle A\rangle = A\bar A = (a + \varepsilon a')(a - \varepsilon a') = a^2.
+\langle Q\rangle = Q\bar Q = (q + \varepsilon q')(q - \varepsilon q') = q^2.
 $$</p>
 <p>It is an element of $R$, and it takes its value in the real submodule $R_{\mathbb{D}'}$.</p>
 <h3 id="basic-properties">Basic Properties</h3>
-<p><strong>Proposition.</strong> Let $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$.</p>
+<p><strong>Proposition.</strong> Let $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$.</p>
 <ul>
-<li><strong>Dependence on the real part alone.</strong> $\langle A\rangle = a^2$ does not involve the infinitesimal part $a'$; equivalently, $\langle A + \eta\rangle = \langle A\rangle$ for every $\eta \in \mathrm{M}$.</li>
-<li><strong>Invariance under dual conjugation.</strong> $\langle \bar A\rangle = \langle A\rangle$, since $(-a')^2 = a'^2$ plays no role and the real part is unchanged.</li>
-<li><strong>Sign.</strong> Over an ordered ring $R$ the value $a^2$ is non-negative, and $\langle A\rangle = 0$ if and only if $a = 0$.</li>
-<li><strong>Vanishing locus.</strong> Over a field, $\langle A\rangle = 0$ if and only if $A \in \mathrm{M} = (\varepsilon)$.</li>
+<li><strong>Dependence on the real part alone.</strong> $\langle Q_1\rangle = q_1^2$ does not involve the infinitesimal part $q'_1$; equivalently, $\langle Q_1 + \eta\rangle = \langle Q_1\rangle$ for every $\eta \in \mathrm{M}$.</li>
+<li><strong>Invariance under dual conjugation.</strong> $\langle \bar Q_1\rangle = \langle Q_1\rangle$, since $(-q'_1)^2 = q_1'^2$ plays no role and the real part is unchanged.</li>
+<li><strong>Sign.</strong> Over an ordered ring $R$ the value $q_1^2$ is non-negative, and $\langle Q_1\rangle = 0$ if and only if $q_1 = 0$.</li>
+<li><strong>Vanishing locus.</strong> Over a field, $\langle Q_1\rangle = 0$ if and only if $Q_1 \in \mathrm{M} = (\varepsilon)$.</li>
 </ul>
-<p><strong>Proof.</strong> The first two are immediate from $\langle A\rangle = a^2$. For the third, $a^2 \ge 0$ in an ordered ring and $a^2 = 0$ forces $a = 0$ in a domain. For the fourth, $a^2 = 0$ with $a$ in a field gives $a = 0$, that is $A = \varepsilon a' \in \mathrm{M}$.</p>
+<p><strong>Proof.</strong> The first two are immediate from $\langle Q_1\rangle = q_1^2$. For the third, $q_1^2 \ge 0$ in an ordered ring and $q_1^2 = 0$ forces $q_1 = 0$ in a domain. For the fourth, $q_1^2 = 0$ with $q_1$ in a field gives $q_1 = 0$, that is $Q_1 = \varepsilon q'_1 \in \mathrm{M}$.</p>
 <p>The norm is <strong>degenerate</strong>: it is a quadratic form of rank one on the two-dimensional free module $\mathbb{D}'_R$, and its radical is the line $\mathrm{M} = \varepsilon R_{\mathbb{D}'}$. Degeneracy in this article always means that the associated bilinear form has nonzero radical, and the radical is the maximal ideal.</p>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm is multiplicative:</p>
 <p>$$
-\langle AB\rangle = \langle A\rangle\,\langle B\rangle.
+\langle Q_1 Q_2\rangle = \langle Q_1\rangle\,\langle Q_2\rangle.
 $$</p>
-<p><strong>Proof.</strong> With $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$ one has $AB = a b + (a b' + a' b)\varepsilon$, so</p>
+<p><strong>Proof.</strong> With $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$ one has $Q_1 Q_2 = q_1 q_2 + (q_1 q'_2 + q'_1 q_2)\varepsilon$, so</p>
 <p>$$
-\langle AB\rangle = (a b)^2 = a^2b^2 = \langle A\rangle\langle B\rangle.
+\langle Q_1 Q_2\rangle = (q_1 q_2)^2 = q_1^2q_2^2 = \langle Q_1\rangle\langle Q_2\rangle.
 $$</p>
-<p>The identity $(a b)^2 = a^2b^2$ holds in every commutative ring.</p>
-<p><strong>Corollary.</strong> If $\langle A\rangle \neq 0$ and $\langle B\rangle \neq 0$, then $\langle AB\rangle \neq 0$.</p>
-<p><strong>Corollary.</strong> If $\langle A\rangle = 0$ or $\langle B\rangle = 0$, then $\langle AB\rangle = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathrm{M}$ is a two-sided ideal.</p>
+<p>The identity $(q_1 q_2)^2 = q_1^2q_2^2$ holds in every commutative ring.</p>
+<p><strong>Corollary.</strong> If $\langle Q_1\rangle \neq 0$ and $\langle Q_2\rangle \neq 0$, then $\langle Q_1 Q_2\rangle \neq 0$.</p>
+<p><strong>Corollary.</strong> If $\langle Q_1\rangle = 0$ or $\langle Q_2\rangle = 0$, then $\langle Q_1 Q_2\rangle = 0$. In particular the product of an element of the maximal ideal with any dual number lies in the maximal ideal, since $\mathrm{M}$ is a two-sided ideal.</p>
 <p><strong>Remark.</strong> Multiplicativity is the reason for the name, and it survives the degeneracy: the norm is a <em>ring homomorphism</em> from $\mathbb{D}'_R$ to the multiplicative monoid of $R$, whose kernel is the maximal ideal. It is the degenerate analogue of the modulus of a complex number.</p>
 <h3 id="the-norm-as-a-degenerate-form">The Norm as a Degenerate Form</h3>
 <p>The word <em>norm</em> is used here only in a qualified sense, and it is worth recording which of the usual axioms survive.</p>
 <ul>
-<li>The <strong>sign axiom</strong> holds: $\langle -A\rangle = \langle A\rangle$ over any commutative ring.</li>
-<li>The <strong>triangle inequality</strong> has no content: $\langle A\rangle$ takes values in $R$, which carries no order in general, and even over $\mathbb{R}$ the value $\langle A\rangle$ is a square, not a length.</li>
-<li>The <strong>scaling axiom</strong> holds in its quadratic form, $\langle \lambda A\rangle = \lambda^2 \langle A\rangle$ for $\lambda \in R$, and this is the only homogeneity the form has.</li>
-<li>The <strong>non-degeneracy axiom fails</strong>: $\langle A\rangle = 0$ for every nonzero $A \in \mathrm{M}$.</li>
+<li>The <strong>sign axiom</strong> holds: $\langle -Q\rangle = \langle Q\rangle$ over any commutative ring.</li>
+<li>The <strong>triangle inequality</strong> has no content: $\langle Q\rangle$ takes values in $R$, which carries no order in general, and even over $\mathbb{R}$ the value $\langle Q\rangle$ is a square, not a length.</li>
+<li>The <strong>scaling axiom</strong> holds in its quadratic form, $\langle \lambda Q\rangle = \lambda^2 \langle Q\rangle$ for $\lambda \in R$, and this is the only homogeneity the form has.</li>
+<li>The <strong>non-degeneracy axiom fails</strong>: $\langle Q\rangle = 0$ for every nonzero $Q \in \mathrm{M}$.</li>
 </ul>
 <p>So the norm is a degenerate multiplicative quadratic form, homogeneous of degree two, whose vanishing locus is the maximal ideal. It fails to be a norm in the analytic sense, and the Euclidean form of the next section supplies that analytic quantity.</p>
-<h3 id="the-reduction-of-the-scale-to-math72">The Reduction of the Scale to $|a|$</h3>
+<h3 id="the-reduction-of-the-scale-to-math72">The Reduction of the Scale to $|q|$</h3>
 <p>There is nevertheless a genuine real size function on the units, singled out by the norm. Let $\rho : (\mathbb{D}'_{\mathbb{R}})^\times \to \mathbb{R}_{>0}$ be a continuous multiplicative function, normalised on the real scalars by</p>
 <p>$$
 \rho(\lambda) = |\lambda| \qquad \text{for } \lambda \in \mathbb{R}^\times.
 $$</p>
 <p><strong>Theorem.</strong> The function</p>
 <p>$$
-r(A) = |a| = \sqrt{|\langle A\rangle|}
+r(Q) = |q| = \sqrt{|\langle Q\rangle|}
 $$</p>
-<p>is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(A(1 + t\varepsilon)) = r(A)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.</p>
-<p><strong>Proof.</strong> Multiplicativity is $\langle AB\rangle = \langle A\rangle\langle B\rangle$ together with $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and continuity is the continuity of $a \mapsto |a|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $A(1 + t\varepsilon) = a + (a' + ta)\varepsilon$ has the same real part $a$, so $r(A(1 + t\varepsilon)) = |a| = r(A)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $a(1 + s\varepsilon)$ with $a \in \mathbb{R}^\times$ and $s = a^{-1}a'$; the shear invariance gives $r(a + \varepsilon a') = r(a)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
+<p>is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(Q(1 + t\varepsilon)) = r(Q)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.</p>
+<p><strong>Proof.</strong> Multiplicativity is $\langle Q_1 Q_2\rangle = \langle Q_1\rangle\langle Q_2\rangle$ together with $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and continuity is the continuity of $q \mapsto |q|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Q(1 + t\varepsilon) = q + (q' + tq)\varepsilon$ has the same real part $q$, so $r(Q(1 + t\varepsilon)) = |q| = r(Q)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q^{-1}q'$; the shear invariance gives $r(q + \varepsilon q') = r(q)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
 <p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{\lvert\langle\cdot\rangle\rvert}$, and it is the only scale fixed by the shear, the square root being the square root of a square.</p>
 <p><strong>Remark (the shear condition is needed).</strong> Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function</p>
 <p>$$
-\rho_c(a + \varepsilon a') = |a|\,\exp\!\Bigl(c\,\frac{a'}{a}\Bigr)
+\rho_c(q + \varepsilon q') = |q|\,\exp\!\Bigl(c\,\frac{q'}{q}\Bigr)
 $$</p>
-<p>is continuous on the units, multiplicative because the shear parameter is additive, $\rho_c(AB) = \rho_c(A)\rho_c(B)$, and normalised on the real scalars, where $a' = 0$. These functions form a one-parameter family with $r = \rho_0$, and $r(A) = |a|$ is exactly the member that is constant along the orbits of the parallel one-parameter subgroup $1 + \mathrm{M}$. So the reduction of the scale to $|a|$ is the statement that the norm fixes the scale to be blind to the nilpotent direction, which is the analytic face of the degeneracy of the form.</p>
+<p>is continuous on the units, multiplicative because the shear parameter is additive, $\rho_c(Q_1 Q_2) = \rho_c(Q_1)\rho_c(Q_2)$, and normalised on the real scalars, where $q' = 0$. These functions form a one-parameter family with $r = \rho_0$, and $r(Q) = |q|$ is exactly the member that is constant along the orbits of the parallel one-parameter subgroup $1 + \mathrm{M}$. So the reduction of the scale to $|q|$ is the statement that the norm fixes the scale to be blind to the nilpotent direction, which is the analytic face of the degeneracy of the form.</p>
 <h3 id="the-norm-from-the-two-components">The Norm from the Two Components</h3>
-<p>Writing $A = A_r + A_i\varepsilon$ with $A_r = a$ and $A_i = a'$ in $R$, the norm depends on the two components only through the first:</p>
+<p>Writing $Q = q + \varepsilon q'$ with $q, q' \in R$, the norm depends on the two components only through the first:</p>
 <p>$$
-\langle A\rangle = A_r^2.
+\langle Q\rangle = q^2.
 $$</p>
 <p>The Euclidean form of the next section is the sum of squares of the two components, and the contrast between the two is the whole content of the degeneracy.</p>
 <h2 id="the-euclidean-form">The Euclidean Form</h2>
 <h3 id="definition_1">Definition</h3>
 <p><strong>Definition.</strong> The <strong>Euclidean form</strong> of a dual number is the real quadratic form</p>
 <p>$$
-\mathfrak{Q}(A) = a^2 + a'^2,
+\mathfrak{Q}(Q) = q^2 + q'^2,
 $$</p>
-<p>the <strong>Euclidean inner product</strong> of two dual numbers $A = a + \varepsilon a'$ and $B = b + \varepsilon b'$ is</p>
+<p>the <strong>Euclidean inner product</strong> of two dual numbers $Q_1 = q_1 + \varepsilon q'_1$ and $Q_2 = q_2 + \varepsilon q'_2$ is</p>
 <p>$$
-\langle A, B \rangle = a b + a' b',
+\langle Q_1, Q_2 \rangle = q_1 q_2 + q'_1 q'_2,
 $$</p>
 <p>and the <strong>Euclidean norm</strong> is</p>
 <p>$$
-\|A\|_E = \sqrt{a^2 + a'^2}.
+\|Q\|_E = \sqrt{q^2 + q'^2}.
 $$</p>
 <p>Over $R = \mathbb{R}$ this is the ordinary Euclidean structure of the plane $\mathbb{D}' \cong \mathbb{R}^2$ in dual coordinates.</p>
 <h3 id="properties">Properties</h3>
-<p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle A, A \rangle = \mathfrak{Q}(A)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
+<p><strong>Proposition.</strong> The Euclidean form is positive-definite over an ordered ring and satisfies $\langle Q_1, Q_1 \rangle = \mathfrak{Q}(Q_1)$. It is <strong>not</strong> multiplicative with respect to the dual product:</p>
 <p>$$
-\mathfrak{Q}(AB) = (a b)^2 + (a b' + a' b)^2, \qquad \mathfrak{Q}(A)\mathfrak{Q}(B) = (a^2 + a'^2)(b^2 + b'^2),
+\mathfrak{Q}(Q_1 Q_2) = (q_1 q_2)^2 + (q_1 q'_2 + q'_1 q_2)^2, \qquad \mathfrak{Q}(Q_1)\mathfrak{Q}(Q_2) = (q_1^2 + q_1'^2)(q_2^2 + q_2'^2),
 $$</p>
-<p>and the two agree only when $a b' + a' b = \pm(a b - a' b')$, which is not an identity.</p>
-<p><strong>Proof.</strong> Substituting the components of $AB$ gives the first expression; it is not the product of the two squares, as the example $A = B = 1 + \varepsilon$ shows: $\mathfrak{Q}(AB) = \mathfrak{Q}(1 + 2\varepsilon) = 5$ while $\mathfrak{Q}(A)\mathfrak{Q}(B) = 2 \cdot 2 = 4$.</p>
+<p>and the two agree only when $q_1 q'_2 + q'_1 q_2 = \pm(q_1 q_2 - q'_1 q'_2)$, which is not an identity.</p>
+<p><strong>Proof.</strong> Substituting the components of $Q_1 Q_2$ gives the first expression; it is not the product of the two squares, as the example $Q_1 = Q_2 = 1 + \varepsilon$ shows: $\mathfrak{Q}(Q_1 Q_2) = \mathfrak{Q}(1 + 2\varepsilon) = 5$ while $\mathfrak{Q}(Q_1)\mathfrak{Q}(Q_2) = 2 \cdot 2 = 4$.</p>
 <h3 id="relation-between-the-norm-and-the-euclidean-form">Relation Between the Norm and the Euclidean Form</h3>
 <p>The two forms are distinct and play different roles.</p>
 <div class="table-scroll"><table>
@@ -156,8 +155,8 @@ $$</p>
 <tbody>
 <tr>
 <td>Value</td>
-<td>$a^2$</td>
-<td>$a^2 + a'^2$</td>
+<td>$q^2$</td>
+<td>$q^2 + q'^2$</td>
 </tr>
 <tr>
 <td>Multiplicative</td>
@@ -181,56 +180,56 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The inner product is <strong>not</strong> the real part of $A\bar B$; indeed</p>
+<p>The inner product is <strong>not</strong> the real part of $Q_1\bar Q_2$; indeed</p>
 <p>$$
-A\bar B = (a + \varepsilon a')(b - \varepsilon b') = a b + (a' b - a b')\varepsilon, \qquad \operatorname{Re}(A\bar B) = a b,
+Q_1\bar Q_2 = (q_1 + \varepsilon q'_1)(q_2 - \varepsilon q'_2) = q_1 q_2 + (q'_1 q_2 - q_1 q'_2)\varepsilon, \qquad \operatorname{Re}(Q_1\bar Q_2) = q_1 q_2,
 $$</p>
-<p>which is the polarisation of the degenerate norm $\langle\cdot\rangle$ and not of the Euclidean form. The distinction between $a b$ and $a b + a' b'$ is the distinction between the multiplicative and the topological structures on the plane.</p>
+<p>which is the polarisation of the degenerate norm $\langle\cdot\rangle$ and not of the Euclidean form. The distinction between $q_1 q_2$ and $q_1 q_2 + q'_1 q'_2$ is the distinction between the multiplicative and the topological structures on the plane.</p>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
-<p><strong>Definition.</strong> A dual number $A$ is <strong>invertible</strong> if there exists $B$ with $AB = BA = 1$. The element $B$, if it exists, is the <strong>inverse</strong> of $A$ and is denoted $A^{-1}$.</p>
+<p><strong>Definition.</strong> A dual number $Q_1$ is <strong>invertible</strong> if there exists $Q_2$ with $Q_1 Q_2 = Q_2 Q_1 = 1$. The element $Q_2$, if it exists, is the <strong>inverse</strong> of $Q_1$ and is denoted $Q_1^{-1}$.</p>
 <p>Since $\mathbb{D}'_R$ is commutative there is no distinction between left, right and two-sided inverses.</p>
 <h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
-<p><strong>Theorem.</strong> Let $A = a + \varepsilon a' \in \mathbb{D}'_R$. The following are equivalent.</p>
+<p><strong>Theorem.</strong> Let $Q = q + \varepsilon q' \in \mathbb{D}'_R$. The following are equivalent.</p>
 <ol>
-<li>$A$ is invertible.</li>
-<li>$a$ is a unit of $R$.</li>
-<li>$\langle A\rangle = a^2$ is a unit of $R$.</li>
-<li>The residue class of $A$ in the quotient ring $\mathbb{D}'_R/\mathrm{M} \cong R$ is a unit of $R$.</li>
+<li>$Q$ is invertible.</li>
+<li>$q$ is a unit of $R$.</li>
+<li>$\langle Q\rangle = q^2$ is a unit of $R$.</li>
+<li>The residue class of $Q$ in the quotient ring $\mathbb{D}'_R/\mathrm{M} \cong R$ is a unit of $R$.</li>
 </ol>
-<p>Over a field, the criterion reads: $A$ is invertible if and only if $a \neq 0$, that is, if and only if $\langle A\rangle \neq 0$.</p>
-<p><strong>Proof.</strong> If $a \in R^\times$, set $B = a^{-1} - a^{-2}\varepsilon a'$. Then</p>
+<p>Over a field, the criterion reads: $Q$ is invertible if and only if $q \neq 0$, that is, if and only if $\langle Q\rangle \neq 0$.</p>
+<p><strong>Proof.</strong> If $q \in R^\times$, set $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Then</p>
 <p>$$
-AB = (a + \varepsilon a')(a^{-1} - a^{-2}\varepsilon a') = a a^{-1} + \bigl(-a^{-1}a' + a' a^{-1}\bigr)\varepsilon = 1,
+Q Q^{-1} = (q + \varepsilon q')(q^{-1} - q^{-2}\varepsilon q') = q q^{-1} + \bigl(-q^{-1}q' + q' q^{-1}\bigr)\varepsilon = 1,
 $$</p>
-<p>so $A$ is invertible, and (1) follows from (2). Since $a^2 \in R^\times$ exactly when $a \in R^\times$, (2) and (3) are equivalent. Conversely, if $AB = 1$ for some $B = b + \varepsilon b'$, then comparing real parts gives $a b = 1$, so $a \in R^\times$, giving (2) from (1). The equivalence with the residue condition is the definition of $\mathrm{M} = (\varepsilon)$ together with the computation just made. Over a field, $a \in R^\times$ means $a \neq 0$.</p>
+<p>so $Q$ is invertible, and (1) follows from (2). Since $q^2 \in R^\times$ exactly when $q \in R^\times$, (2) and (3) are equivalent. Conversely, if $Q Q_2 = 1$ for some $Q_2 = q_2 + \varepsilon q'_2$, then comparing real parts gives $q q_2 = 1$, so $q \in R^\times$, giving (2) from (1). The equivalence with the residue condition is the definition of $\mathrm{M} = (\varepsilon)$ together with the computation just made. Over a field, $q \in R^\times$ means $q \neq 0$.</p>
 <h3 id="the-inverse-formula">The Inverse Formula</h3>
-<p><strong>Corollary.</strong> When $A$ is invertible,</p>
+<p><strong>Corollary.</strong> When $Q$ is invertible,</p>
 <p>$$
-A^{-1} = \frac{1}{a} - \frac{a'}{a^2}\,\varepsilon.
+Q^{-1} = \frac{1}{q} - \frac{q'}{q^2}\,\varepsilon.
 $$</p>
-<p>This is the degeneration of the complex formula $A^{-1} = \bar A/|A|^2$: the conjugate is $\bar A = a - \varepsilon a'$ and the "modulus squared" is $\langle A\rangle = a^2$, so $\bar A/\langle A\rangle = (a - \varepsilon a')/a^2$, which is the inverse above.</p>
-<p><strong>Corollary.</strong> If $A$ is invertible then so is $\bar A$, and $\overline{A^{-1}} = (\bar A)^{-1}$.</p>
+<p>This is the degeneration of the complex formula $Q^{-1} = \bar Q/|Q|^2$: the conjugate is $\bar Q = q - \varepsilon q'$ and the "modulus squared" is $\langle Q\rangle = q^2$, so $\bar Q/\langle Q\rangle = (q - \varepsilon q')/q^2$, which is the inverse above.</p>
+<p><strong>Corollary.</strong> If $Q$ is invertible then so is $\bar Q$, and $\overline{Q^{-1}} = (\bar Q)^{-1}$.</p>
 <p><strong>Proof.</strong> Direct from the formula.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="definition_3">Definition</h3>
 <p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{D}'_R$ is</p>
 <p>$$
-(\mathbb{D}'_R)^\times = \{a + \varepsilon a' : a \in R^\times\}.
+(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}.
 $$</p>
 <p>It is a group under multiplication with identity $1$.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
 <p><strong>Proposition.</strong> Over a field, the group of units is the complement of the maximal ideal, $(\mathbb{D}'_k)^\times = \mathbb{D}'_k \setminus \mathrm{M}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{D}'$ with exactly two connected components, distinguished by the sign of the real part.</p>
-<p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $a \neq 0$. Over a general commutative ring the unit group is the smaller set $\{a + \varepsilon a' : a \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{a \neq 0\}$ being the complement of a line. The map $A \mapsto \operatorname{sgn}(a)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{a > 0\}$ and $\{a < 0\}$ are each homeomorphic to a half-plane and hence connected.</p>
+<p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $q \neq 0$. Over a general commutative ring the unit group is the smaller set $\{q + \varepsilon q' : q \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{q \neq 0\}$ being the complement of a line. The map $Q \mapsto \operatorname{sgn}(q)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{q > 0\}$ and $\{q < 0\}$ are each homeomorphic to a half-plane and hence connected.</p>
 <h3 id="the-structure-as-a-semidirect-product">The Structure as a Semidirect Product</h3>
 <p><strong>Theorem.</strong> Let $R$ be a commutative ring with $2$ invertible. The map</p>
 <p>$$
-\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(a, s) = a(1 + s\varepsilon),
+\Theta : R^\times \times (R, +) \longrightarrow (\mathbb{D}'_R)^\times, \qquad \Theta(q, s) = q(1 + s\varepsilon),
 $$</p>
 <p>is an isomorphism of groups.</p>
-<p><strong>Proof.</strong> Every unit is $a(1 + s\varepsilon)$ with $a \in R^\times$ and $s = a^{-1}a'$, uniquely, so $\Theta$ is a bijection. It is a homomorphism because</p>
+<p><strong>Proof.</strong> Every unit is $q(1 + s\varepsilon)$ with $q \in R^\times$ and $s = q^{-1}q'$, uniquely, so $\Theta$ is a bijection. It is a homomorphism because</p>
 <p>$$
-\Theta(a,s)\Theta(c,t) = a(1 + s\varepsilon)\,c(1 + t\varepsilon) = a c\bigl(1 + (s + t)\varepsilon\bigr) = \Theta\bigl(a c,\, s + t\bigr),
+\Theta(q_1,s)\Theta(q_2,t) = q_1(1 + s\varepsilon)\,q_2(1 + t\varepsilon) = q_1 q_2\bigl(1 + (s + t)\varepsilon\bigr) = \Theta\bigl(q_1 q_2,\, s + t\bigr),
 $$</p>
 <p>using $\varepsilon^2 = 0$ and the commutativity of $R$.</p>
 <p>So the group of units is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{D}'_R$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
@@ -241,37 +240,37 @@ $$</p>
 <p>$$
 1 \longrightarrow (1 + \mathrm{M}) \longrightarrow (\mathbb{D}'_R)^\times \longrightarrow R^\times \longrightarrow 1
 $$</p>
-<p>is split by $a \mapsto a$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
+<p>is split by $q \mapsto q$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
 <h3 id="the-norm-one-group">The Norm-One Group</h3>
-<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{A \in \mathbb{D}'_{\mathbb{R}} : \langle A\rangle = 1\}$.</p>
-<p><strong>Proposition.</strong> $H = \{a + \varepsilon a' : a = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
-<p><strong>Proof.</strong> $\langle a + \varepsilon a'\rangle = a^2 = 1$ gives $a = \pm 1$ and leaves $a'$ free; the line $a = 1$ is $1 + \mathrm{M}$, the component through the identity.</p>
+<p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{Q \in \mathbb{D}'_{\mathbb{R}} : \langle Q\rangle = 1\}$.</p>
+<p><strong>Proposition.</strong> $H = \{q + \varepsilon q' : q = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
+<p><strong>Proof.</strong> $\langle q + \varepsilon q'\rangle = q^2 = 1$ gives $q = \pm 1$ and leaves $q'$ free; the line $q = 1$ is $1 + \mathrm{M}$, the component through the identity.</p>
 <h2 id="the-three-way-classification">The Three-Way Classification</h2>
 <h3 id="the-table">The Table</h3>
 <p>Over a field $k$, combining the criterion for invertibility with the vanishing of the norm, the elements of $\mathbb{D}'_k$ fall into exactly three classes.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Condition on $\langle A\rangle$</th>
-<th>Condition on $A$</th>
+<th>Condition on $\langle Q\rangle$</th>
+<th>Condition on $Q$</th>
 <th>Conclusion</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$\langle A\rangle \neq 0$</td>
-<td>(automatically $A \neq 0$)</td>
-<td>$A$ is invertible</td>
+<td>$\langle Q\rangle \neq 0$</td>
+<td>(automatically $Q \neq 0$)</td>
+<td>$Q$ is invertible</td>
 </tr>
 <tr>
-<td>$\langle A\rangle = 0$</td>
-<td>$A = 0$</td>
-<td>$A$ is the zero element</td>
+<td>$\langle Q\rangle = 0$</td>
+<td>$Q = 0$</td>
+<td>$Q$ is the zero element</td>
 </tr>
 <tr>
-<td>$\langle A\rangle = 0$</td>
-<td>$A \neq 0$</td>
-<td>$A$ is a zero divisor</td>
+<td>$\langle Q\rangle = 0$</td>
+<td>$Q \neq 0$</td>
+<td>$Q$ is a zero divisor</td>
 </tr>
 </tbody>
 </table></div>
@@ -282,9 +281,9 @@ $$</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>The two distinguished submodules of $\mathbb{D}'_R$ behave oppositely with respect to invertibility.</p>
 <h3 id="the-real-submodule">The Real Submodule</h3>
-<p>An element of $R_{\mathbb{D}'}$ is $A = a$ with $a' = 0$, and $\langle A\rangle = a^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
+<p>An element of $R_{\mathbb{D}'}$ is $Q = q$ with $q' = 0$, and $\langle Q\rangle = q^2$. Over a field, every nonzero element of $R_{\mathbb{D}'}$ is invertible, and $R_{\mathbb{D}'}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{D}'_R$ that is a division algebra.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
-<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $A = \varepsilon a'$ with $a = 0$, and $\langle A\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
+<p>An element of $\varepsilon R_{\mathbb{D}'} = \mathrm{M}$ is $Q = \varepsilon q'$ with $q = 0$, and $\langle Q\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Over a field $k$ the distribution is as follows, the units being read off from $R^\times = k^\times$ and the zero-divisor column from the criterion of <em>Dual-Numbers Zero Divisors</em>.</p>
 <div class="table-scroll"><table>
@@ -300,17 +299,17 @@ $$</p>
 <tbody>
 <tr>
 <td>$R_{\mathbb{D}'}$</td>
-<td>$a$, $a \in R$</td>
-<td>$a^2$</td>
-<td>all $a \in R^\times$</td>
+<td>$q$, $q \in R$</td>
+<td>$q^2$</td>
+<td>all $q \in R^\times$</td>
 <td>none</td>
 </tr>
 <tr>
 <td>$\varepsilon R_{\mathbb{D}'} = \mathrm{M}$</td>
-<td>$\varepsilon a'$, $a' \in R$</td>
+<td>$\varepsilon q'$, $q' \in R$</td>
 <td>$0$</td>
 <td>none</td>
-<td>all $a' \neq 0$</td>
+<td>all $q' \neq 0$</td>
 </tr>
 </tbody>
 </table></div>
@@ -318,13 +317,13 @@ $$</p>
 <h2 id="relation-to-the-conjugate-decomposition">Relation to the Conjugate Decomposition</h2>
 <p>The criterion is stated in terms of the norm and the real part. In the conjugate decomposition</p>
 <p>$$
-\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad A = a + \varepsilon a',
+\mathbb{D}'_R = R_{\mathbb{D}'} \oplus \varepsilon R_{\mathbb{D}'}, \qquad Q = q + \varepsilon q',
 $$</p>
-<p>the norm reads $\langle A\rangle = (\operatorname{Re} A)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
+<p>the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{D}'_R$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <p>The three norms of the family are</p>
 <p>$$
-N_{\mathbb{C}}(A) = a^2 + a'^2, \qquad N_{\mathbb{D}}(A) = a^2 - a'^2, \qquad N_{\mathbb{D}'}(A) = a^2,
+N_{\mathbb{C}}(A) = a^2 + a'^2, \qquad N_{\mathbb{D}}(A) = a^2 - a'^2, \qquad N_{\mathbb{D}'}(Q) = q^2,
 $$</p>
 <p>for $\mathbb{C}$, the split complex numbers $\mathbb{D} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.</p>
 <ul>
@@ -334,8 +333,8 @@ $$</p>
 </ul>
 <p>The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm $\langle A\rangle = A\bar A = a^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $a^2 + a'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(A) = |a| = \sqrt{|\langle A\rangle|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |a|\exp(c\,a'/a)$.</p>
-<p>A dual number $A = a + \varepsilon a'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $a \neq 0$, equivalently if and only if $\langle A\rangle \neq 0$. The inverse is $A^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
+<p>The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = |q| = \sqrt{|\langle Q\rangle|}$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.</p>
+<p>A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of units is $\mathbb{D}'_k \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{D}'_k)^\times \to k^\times \to 1$, and since $\mathbb{D}'_k$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{D}'_k$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -358,43 +357,43 @@ $$</p>
 <td>Split-complex algebra, unit $j$, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$A = a + \varepsilon a'$</td>
+<td>$Q = q + \varepsilon q'$</td>
 <td>General dual number</td>
 </tr>
 <tr>
-<td>$a = \operatorname{Re} A$</td>
+<td>$q = \operatorname{Re} Q$</td>
 <td>Real part</td>
 </tr>
 <tr>
-<td>$a' = \operatorname{Inf} A$</td>
+<td>$q' = \operatorname{Inf} Q$</td>
 <td>Infinitesimal part</td>
 </tr>
 <tr>
-<td>$\bar{A} = a - \varepsilon a'$</td>
+<td>$\bar{Q} = q - \varepsilon q'$</td>
 <td>Dual conjugation</td>
 </tr>
 <tr>
-<td>$\langle A\rangle = A\bar A = a^2$</td>
+<td>$\langle Q\rangle = Q\bar Q = q^2$</td>
 <td>Norm, degenerate, radical $\mathrm{M}$</td>
 </tr>
 <tr>
-<td>$\mathfrak{Q}(A) = a^2 + a'^2$</td>
+<td>$\mathfrak{Q}(Q) = q^2 + q'^2$</td>
 <td>Euclidean form</td>
 </tr>
 <tr>
-<td>$\langle A, B \rangle = a b + a' b'$</td>
+<td>$\langle Q_1, Q_2 \rangle = q_1 q_2 + q'_1 q'_2$</td>
 <td>Euclidean inner product</td>
 </tr>
 <tr>
-<td>$\|A\|_E = \sqrt{a^2 + a'^2}$</td>
+<td>$\|Q\|_E = \sqrt{q^2 + q'^2}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>
-<td>$r(A) = |a| = \sqrt{|\langle A\rangle|}$</td>
+<td>$r(Q) = |q| = \sqrt{|\langle Q\rangle|}$</td>
 <td>Continuous multiplicative real size on the units, normalised on the scalars and shear-invariant</td>
 </tr>
 <tr>
-<td>$\rho_c(A) = |a|\exp(c\,a'/a)$</td>
+<td>$\rho_c(Q) = |q|\exp(c\,q'/q)$</td>
 <td>The normalised multiplicative size functions; $r = \rho_0$</td>
 </tr>
 <tr>
@@ -415,11 +414,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\Theta : R^\times \times (R,+) \to (\mathbb{D}'_R)^\times$</td>
-<td>Unit-group isomorphism, $\Theta(a,s) = a(1 + s\varepsilon)$</td>
+<td>Unit-group isomorphism, $\Theta(q,s) = q(1 + s\varepsilon)$</td>
 </tr>
 <tr>
-<td>$H = \{A : \langle A\rangle = 1\}$</td>
-<td>Norm-one group, lines $a = \pm 1$</td>
+<td>$H = \{Q : \langle Q\rangle = 1\}$</td>
+<td>Norm-one group, lines $q = \pm 1$</td>
 </tr>
 </tbody>
 </table></div>

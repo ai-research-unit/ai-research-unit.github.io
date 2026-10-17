@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,61 +53,61 @@
 <h2 id="introduction">Introduction</h2>
 <p>The two general products of the quaternion space are defined independently in <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, each on the coordinates of the two elements of a pair:</p>
 <p>$$
-\tilde p\tilde q , \qquad \tilde p^{\natural}\tilde q .
+\tilde q_1\tilde q_2 , \qquad \tilde q_1^{\natural}\tilde q_2 .
 $$</p>
 <p>This article collects the identities that link the two. The two rules are not unrelated: they are read on one and the same pair, the second differing from the first only by the conjugation of the first factor, and every link below is a consequence of that single distinction. The <strong>exchange relation</strong> moves the conjugation from one factor to the other and reads the quaternionic product of one order as the conjugate of the plain product of the other; the plain product is recovered from the quaternionic one and conversely by the separation of the scalar part of the first factor; the <strong>agreement</strong> of the two products is the annihilation of the second factor by the vector part of the first, so that they agree on the real axis and disagree everywhere else; and the scalar parts of the two are symmetric and differ by twice the dot product of the vector parts.</p>
 <p>The article assumes the two products and their coordinate rules from <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one, and the conjugation from <em>The Group of Involutions of the Quaternioid</em>. It uses the separation identities of that article for the reading of one product through the other. The property table is <em>Comparison Between the Two General Products</em>, below this article in this category; the symmetric and antisymmetric halves are <em>The 6 Products of the Quaternioid Real Space</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product of the vector parts and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>.</p>
+<p><strong>Conventions.</strong> Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ name elements, $(\vec q_1,\vec q_2)=\sum_{\mu\in\{x,y,z\}}q_{1\mu} q_{2\mu}$ is the dot product of the vector parts and $\tilde q^{\natural}=q_te_t-\vec q$ is the quaternion conjugation. The scalar part is $\mathrm{Sc}$. The two products are read as in <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>.</p>
 <h2 id="the-exchange-relation">The Exchange Relation</h2>
 <p>The two products are read on the same pair with the conjugation in the first slot for the second product and in no slot for the first, and the conjugation is an anti-automorphism: it reverses the order of a product and conjugates the two factors.</p>
-<p><strong>Proposition (the conjugate of a product).</strong> For all $\tilde p,\tilde q$,</p>
+<p><strong>Proposition (the conjugate of a product).</strong> For all $\tilde q_1,\tilde q_2$,</p>
 <p>$$
-(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural} , \qquad (\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p .
+(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural} , \qquad (\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1 .
 $$</p>
 <p>The first identity conjugates both the factors of the plain product and transposes them; the second conjugates the first factor alone, and transposes the two factors.</p>
-<p><em>Proof.</em> The quaternion conjugation is an anti-automorphism, $(\tilde x\tilde y)^{\natural}=\tilde y^{\natural}\tilde x^{\natural}$, and an involution, $(\tilde x^{\natural})^{\natural}=\tilde x$. Applying it to $\tilde p\tilde q$ gives the first identity, and applying it to $\tilde p^{\natural}\tilde q$ gives $(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}(\tilde p^{\natural})^{\natural}=\tilde q^{\natural}\tilde p$.</p>
-<p><strong>Theorem (the exchange relation).</strong> For all $\tilde p,\tilde q$,</p>
+<p><em>Proof.</em> The quaternion conjugation is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural}$, and an involution, $(\tilde q^{\natural})^{\natural}=\tilde q$. Applying it to $\tilde q_1\tilde q_2$ gives the first identity, and applying it to $\tilde q_1^{\natural}\tilde q_2$ gives $(\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}(\tilde q_1^{\natural})^{\natural}=\tilde q_2^{\natural}\tilde q_1$.</p>
+<p><strong>Theorem (the exchange relation).</strong> For all $\tilde q_1,\tilde q_2$,</p>
 <p>$$
-\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural} , \qquad \tilde p^{\natural}\tilde q=(\tilde q^{\natural}\tilde p)^{\natural} .
+\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural} , \qquad \tilde q_1^{\natural}\tilde q_2=(\tilde q_2^{\natural}\tilde q_1)^{\natural} .
 $$</p>
-<p>The two are the same identity read from its two sides, and they read the quaternionic product of the pair $(\tilde q,\tilde p)$ as the conjugate of the plain product of the pair $(\tilde p,\tilde q)$, with the two orders exchanged.</p>
-<p><em>Proof.</em> The second identity of the proposition applied to the pair $(\tilde q,\tilde p)$ gives $(\tilde q^{\natural}\tilde p)^{\natural}=\tilde p^{\natural}(\tilde q^{\natural})^{\natural}=\tilde p^{\natural}\tilde q$; conjugating both sides gives $\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$.</p>
-<p>It also shows that the two products carry the same information: one of them at the pair $(\tilde p,\tilde q)$ determines the other at the reversed pair, and conversely.</p>
+<p>The two are the same identity read from its two sides, and they read the quaternionic product of the pair $(\tilde q_2,\tilde q_1)$ as the conjugate of the plain product of the pair $(\tilde q_1,\tilde q_2)$, with the two orders exchanged.</p>
+<p><em>Proof.</em> The second identity of the proposition applied to the pair $(\tilde q_2,\tilde q_1)$ gives $(\tilde q_2^{\natural}\tilde q_1)^{\natural}=\tilde q_1^{\natural}(\tilde q_2^{\natural})^{\natural}=\tilde q_1^{\natural}\tilde q_2$; conjugating both sides gives $\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural}$.</p>
+<p>It also shows that the two products carry the same information: one of them at the pair $(\tilde q_1,\tilde q_2)$ determines the other at the reversed pair, and conversely.</p>
 <h2 id="reading-one-product-through-the-other">Reading One Product Through the Other</h2>
 <p>The conjugation of the first factor changes only its vector part, so each product is recovered from the other by the separation of the scalar and the vector part of the first factor.</p>
-<p><strong>Proposition (the two readings).</strong> For all $\tilde p,\tilde q$,</p>
+<p><strong>Proposition (the two readings).</strong> For all $\tilde q_1,\tilde q_2$,</p>
 <p>$$
-\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\,\tilde q , \qquad \tilde p\tilde q-\tilde p^{\natural}\tilde q=2\,\vec p\,\tilde q ,
+\tilde q_1\tilde q_2+\tilde q_1^{\natural}\tilde q_2=2q_{1t}\,\tilde q_2 , \qquad \tilde q_1\tilde q_2-\tilde q_1^{\natural}\tilde q_2=2\,\vec q_1\,\tilde q_2 ,
 $$</p>
 <p>and therefore</p>
 <p>$$
-\tilde p\tilde q=2p_0\,\tilde q-\tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural}\tilde q=2p_0\,\tilde q-\tilde p\tilde q .
+\tilde q_1\tilde q_2=2q_{1t}\,\tilde q_2-\tilde q_1^{\natural}\tilde q_2 , \qquad \tilde q_1^{\natural}\tilde q_2=2q_{1t}\,\tilde q_2-\tilde q_1\tilde q_2 .
 $$</p>
-<p><em>Proof.</em> The separation identities are those of <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one; solving the two linear relations for $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ gives the two readings.</p>
-<p>The reading is the algebraic form of the relation $\tilde p^{\natural}=2p_0e_0-\tilde p$: the conjugate of the first factor is the reflection of the first factor in the scalar axis, and the two products differ by twice the reflection of $\tilde p$ across that axis, applied to $\tilde q$. A computation in the quaternionic product is turned into a computation in the plain one by replacing $\tilde p$ with $\tilde p^{\natural}$ and keeping the second factor, and conversely.</p>
+<p><em>Proof.</em> The separation identities are those of <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, the article preceding this one; solving the two linear relations for $\tilde q_1\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2$ gives the two readings.</p>
+<p>The reading is the algebraic form of the relation $\tilde q_1^{\natural}=2q_{1t}e_t-\tilde q_1$: the conjugate of the first factor is the reflection of the first factor in the scalar axis, and the two products differ by twice the reflection of $\tilde q_1$ across that axis, applied to $\tilde q_2$. A computation in the quaternionic product is turned into a computation in the plain one by replacing $\tilde q_1$ with $\tilde q_1^{\natural}$ and keeping the second factor, and conversely.</p>
 <p><strong>Corollary (the scalar parts).</strong> The scalar parts of the two products on the same pair are</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde p\tilde q\bigr)=p_0q_0-(\vec p,\vec q) , \qquad \mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=p_0q_0+(\vec p,\vec q) ,
+\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)=q_{1t}q_{2t}-(\vec q_1,\vec q_2) , \qquad \mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=q_{1t}q_{2t}+(\vec q_1,\vec q_2) ,
 $$</p>
 <p>whence</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde p\tilde q\bigr)+\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=2p_0q_0 , \qquad \mathrm{Sc}\bigl(\tilde p\tilde q\bigr)-\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr)=-2(\vec p,\vec q) .
+\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)+\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=2q_{1t}q_{2t} , \qquad \mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)-\mathrm{Sc}\bigl(\tilde q_1^{\natural}\tilde q_2\bigr)=-2(\vec q_1,\vec q_2) .
 $$</p>
 <p>Both scalar parts are symmetric in the two slots, and the difference of the two is twice the dot product of the vector parts; the two are the two bilinear forms $B$ and $N$ of <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>, below this article in this category, read on the pair.</p>
 <h2 id="the-annihilation-identity">The Annihilation Identity</h2>
-<p>The difference of the two products is the term $2\vec p\tilde q$, and its vanishing is the agreement of the two products.</p>
-<p><strong>Theorem (the annihilation identity).</strong> For all $\tilde p,\tilde q$,</p>
+<p>The difference of the two products is the term $2\vec q_1\tilde q_2$, and its vanishing is the agreement of the two products.</p>
+<p><strong>Theorem (the annihilation identity).</strong> For all $\tilde q_1,\tilde q_2$,</p>
 <p>$$
-\tilde p^{\natural}\tilde q=\tilde p\tilde q \quad\Longleftrightarrow\quad \vec p\tilde q=0 ,
+\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2 \quad\Longleftrightarrow\quad \vec q_1\tilde q_2=0 ,
 $$</p>
-<p>and for a fixed $\tilde q\neq0$ this holds exactly when $\tilde p$ is real, $\tilde p=p_0e_0$. If $\tilde p$ is real then the two products agree on every second factor, $\tilde p\tilde q=\tilde p^{\natural}\tilde q=p_0\tilde q$.</p>
-<p><em>Proof.</em> The difference is $2\vec p\tilde q$ by the reading proposition, so the two agree exactly when $\vec p\tilde q=0$. For $\tilde q\neq0$ the element $\tilde q$ is invertible in $\mathbb{H}$, and multiplying $\vec p\tilde q=0$ on the right by $\tilde q^{-1}$ gives $\vec p=0$, that is $\tilde p=p_0e_0$; conversely $\vec p=0$ makes $\tilde p^{\natural}=\tilde p$ and the two products equal. For a real $\tilde p$, $\tilde p^{\natural}=\tilde p$ and the two products are the same rule.</p>
-<p>So the two products <strong>agree on the real axis</strong> — on every pair whose first factor is scalar — and <strong>disagree everywhere else</strong>: on a pair with $\tilde q\neq0$ and $\tilde p$ not real the difference $2\vec p\tilde q$ is nonzero. The disagreement is witnessed on the pair $(e_1,e_2)$, where $\tilde p\tilde q=e_3$ and $\tilde p^{\natural}\tilde q=-e_3$, and on the pair $(e_1,e_0)$, where $\tilde p\tilde q=e_1$ and $\tilde p^{\natural}\tilde q=-e_1$; the second pair shows that the two products already differ on the units when the second factor is the unit itself.</p>
-<p><strong>Corollary (the products on the units).</strong> On the pairs of units the two products agree exactly when the first factor is $e_0$: for every unit $\tilde q$ one has $e_0\tilde q=e_0^{\natural}\tilde q=\tilde q$, while for a first factor $e_k$ with $k\neq0$ the two values are $e_k\tilde q$ and $e_k^{\natural}\tilde q=-e_k\tilde q$, which are opposite and therefore distinct, the second factor being a unit and $e_k$ nonzero.</p>
-<p><em>Proof.</em> The annihilation identity requires $\vec p\tilde q=0$; on the pairs of units both factors are nonzero and invertible, so it is equivalent to $\vec p=0$, that is to $\tilde p$ real, which among the units leaves only $\tilde p=e_0$. The two values on a pair with first factor $e_k$, $k\neq0$, are read from the two multiplication tables of <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, that of the plain product and that of the quaternionic product.</p>
+<p>and for a fixed $\tilde q_2\neq0$ this holds exactly when $\tilde q_1$ is real, $\tilde q_1=q_{1t}e_t$. If $\tilde q_1$ is real then the two products agree on every second factor, $\tilde q_1\tilde q_2=\tilde q_1^{\natural}\tilde q_2=q_{1t}\tilde q_2$.</p>
+<p><em>Proof.</em> The difference is $2\vec q_1\tilde q_2$ by the reading proposition, so the two agree exactly when $\vec q_1\tilde q_2=0$. For $\tilde q_2\neq0$ the element $\tilde q_2$ is invertible in $\mathbb{H}$, and multiplying $\vec q_1\tilde q_2=0$ on the right by $\tilde q_2^{-1}$ gives $\vec q_1=0$, that is $\tilde q_1=q_{1t}e_t$; conversely $\vec q_1=0$ makes $\tilde q_1^{\natural}=\tilde q_1$ and the two products equal. For a real $\tilde q_1$, $\tilde q_1^{\natural}=\tilde q_1$ and the two products are the same rule.</p>
+<p>So the two products <strong>agree on the real axis</strong> — on every pair whose first factor is scalar — and <strong>disagree everywhere else</strong>: on a pair with $\tilde q_2\neq0$ and $\tilde q_1$ not real the difference $2\vec q_1\tilde q_2$ is nonzero. The disagreement is witnessed on the pair $(\vec e_x,\vec e_y)$, where $\tilde q_1\tilde q_2=\vec e_z$ and $\tilde q_1^{\natural}\tilde q_2=-\vec e_z$, and on the pair $(\vec e_x,e_t)$, where $\tilde q_1\tilde q_2=\vec e_x$ and $\tilde q_1^{\natural}\tilde q_2=-\vec e_x$; the second pair shows that the two products already differ on the units when the second factor is the unit itself.</p>
+<p><strong>Corollary (the products on the units).</strong> On the pairs of units the two products agree exactly when the first factor is $e_t$: for every unit $\tilde q$ one has $e_t\tilde q=e_t^{\natural}\tilde q=\tilde q$, while for a first factor $\vec e_\mu$ with $\mu\neq t$ the two values are $\vec e_\mu\tilde q$ and $\vec e_\mu^{\natural}\tilde q=-\vec e_\mu\tilde q$, which are opposite and therefore distinct, the second factor being a unit and $\vec e_\mu$ nonzero.</p>
+<p><em>Proof.</em> The annihilation identity requires $\vec q_1\tilde q_2=0$; on the pairs of units both factors are nonzero and invertible, so it is equivalent to $\vec q_1=0$, that is to $\tilde q_1$ real, which among the units leaves only $\tilde q_1=e_t$. The two values on a pair with first factor $\vec e_\mu$, $\mu\neq t$, are read from the two multiplication tables of <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em>, that of the plain product and that of the quaternionic product.</p>
 <h2 id="summary">Summary</h2>
-<p>The two products of the quaternion space are linked by the exchange relation $\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$, the conjugate of a product being $(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural}$ for the plain product and $(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p$ for the quaternionic one. Each product is read from the other by the separation of the scalar part of the first factor, $\tilde p\tilde q=2p_0\tilde q-\tilde p^{\natural}\tilde q$ and $\tilde p^{\natural}\tilde q=2p_0\tilde q-\tilde p\tilde q$, and their scalar parts are $\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ and $\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$, symmetric in the two slots and differing by twice the dot product of the vector parts.</p>
-<p>The annihilation identity $\tilde p^{\natural}\tilde q=\tilde p\tilde q\iff\vec p\tilde q=0$ states the agreement of the two products: they agree on the real axis and disagree everywhere else, and for a nonzero second factor their agreement forces the first factor to be real. On the units they agree exactly on the pairs whose first factor is $e_0$.</p>
+<p>The two products of the quaternion space are linked by the exchange relation $\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural}$, the conjugate of a product being $(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural}$ for the plain product and $(\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1$ for the quaternionic one. Each product is read from the other by the separation of the scalar part of the first factor, $\tilde q_1\tilde q_2=2q_{1t}\tilde q_2-\tilde q_1^{\natural}\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2=2q_{1t}\tilde q_2-\tilde q_1\tilde q_2$, and their scalar parts are $\mathrm{Sc}(\tilde q_1\tilde q_2)=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ and $\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$, symmetric in the two slots and differing by twice the dot product of the vector parts.</p>
+<p>The annihilation identity $\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2\iff\vec q_1\tilde q_2=0$ states the agreement of the two products: they agree on the real axis and disagree everywhere else, and for a nonzero second factor their agreement forces the first factor to be real. On the units they agree exactly on the pairs whose first factor is $e_t$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -119,39 +118,39 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$(\tilde p\tilde q)^{\natural}=\tilde q^{\natural}\tilde p^{\natural}$</td>
+<td>$(\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1^{\natural}$</td>
 <td>the conjugate of the plain product</td>
 </tr>
 <tr>
-<td>$(\tilde p^{\natural}\tilde q)^{\natural}=\tilde q^{\natural}\tilde p$</td>
+<td>$(\tilde q_1^{\natural}\tilde q_2)^{\natural}=\tilde q_2^{\natural}\tilde q_1$</td>
 <td>the conjugate of the quaternionic product</td>
 </tr>
 <tr>
-<td>$\tilde q^{\natural}\tilde p=(\tilde p^{\natural}\tilde q)^{\natural}$</td>
+<td>$\tilde q_2^{\natural}\tilde q_1=(\tilde q_1^{\natural}\tilde q_2)^{\natural}$</td>
 <td>the exchange relation</td>
 </tr>
 <tr>
-<td>$\tilde p\tilde q=2p_0\tilde q-\tilde p^{\natural}\tilde q$</td>
+<td>$\tilde q_1\tilde q_2=2q_{1t}\tilde q_2-\tilde q_1^{\natural}\tilde q_2$</td>
 <td>the plain product read from the quaternionic one</td>
 </tr>
 <tr>
-<td>$\tilde p^{\natural}\tilde q=2p_0\tilde q-\tilde p\tilde q$</td>
+<td>$\tilde q_1^{\natural}\tilde q_2=2q_{1t}\tilde q_2-\tilde q_1\tilde q_2$</td>
 <td>the quaternionic product read from the plain one</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$</td>
+<td>$\mathrm{Sc}(\tilde q_1\tilde q_2)=q_{1t}q_{2t}-(\vec q_1,\vec q_2)$</td>
 <td>the scalar part of the plain product</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$</td>
+<td>$\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)=q_{1t}q_{2t}+(\vec q_1,\vec q_2)$</td>
 <td>the scalar part of the quaternionic product</td>
 </tr>
 <tr>
-<td>$\tilde p^{\natural}\tilde q=\tilde p\tilde q\iff\vec p\tilde q=0$</td>
+<td>$\tilde q_1^{\natural}\tilde q_2=\tilde q_1\tilde q_2\iff\vec q_1\tilde q_2=0$</td>
 <td>the annihilation identity, the agreement condition</td>
 </tr>
 <tr>
-<td>$\tilde p$ real $\iff$ the two products agree for every $\tilde q$</td>
+<td>$\tilde q_1$ real $\iff$ the two products agree for every $\tilde q_2$</td>
 <td>agreement on the real axis</td>
 </tr>
 </tbody>

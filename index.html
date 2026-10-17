@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -291,9 +290,9 @@ $$</p>
 i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}}(t) = [\tilde{H}_{\mathrm{H}}(t), \tilde{H}_0],
 $$</p>
 <p>where $\tilde{H}_0$ is the Hamiltonian.</p>
-<p><strong>Derivation.</strong> We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,\dot{\tilde{U}} = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\dot{\tilde{U}}^{*} = \tilde{U}^{*}\tilde{H}_0$:</p>
+<p><strong>Derivation.</strong> We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,d\tilde U/dt = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,d\tilde U^{*}/dt = \tilde{U}^{*}\tilde{H}_0$:</p>
 <p>$$
-i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\dot{\tilde{U}}^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\dot{\tilde{U}}\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
+i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(d\tilde U^{*}/dt\,\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\,d\tilde U/dt\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
 $$</p>
 <p>Since $\tilde{U}(t) = \exp(-i\tilde{H}_0 t/\hbar)$ is a function of $\tilde{H}_0$, it <strong>commutes with $\tilde{H}_0$</strong>. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^{*}\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So</p>
 <p>$$

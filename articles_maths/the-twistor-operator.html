@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -132,7 +131,7 @@ $$</p>
 <p><strong>Remark (the four-dimensional special position).</strong> The twistor space is defined for a four-dimensional conformal manifold because the Hodge star acts on the two-forms and the Weyl curvature splits into self-dual and anti-self-dual parts; the choice of $\mathcal{S}^-$ rather than $\mathcal{S}$ is the choice of one of the two, and the integrability of the complex structure is exactly the vanishing of the anti-self-dual Weyl tensor. In the higher-dimensional case the analogue is the twistor space of the quaternionic Kähler geometry, which is <em>Quaternionic Geometry</em>; in dimension four the two constructions agree because $Sp(1)\cdot Sp(1)=SO(4)$.</p>
 <h2 id="worked-cases">Worked Cases</h2>
 <h3 id="the-flat-conformal-model">The Flat Conformal Model</h3>
-<p>On $\mathbb{R}^n$ with the Euclidean metric the twistor equation reads $\partial_X\sigma+\frac1nX\cdot\sum_ie_i\partial_i\sigma=0$. Taking $\sigma$ constant gives a twistor spinor with $D\sigma=0$; taking $\sigma(x)=x\cdot\eta$ for a constant spinor $\eta$ gives a twistor spinor with $D\sigma=-n\eta$, since $D(x\cdot\eta)=\sum_ie_i\partial_i(x\cdot\eta)=\sum_ie_ie_i\eta=-n\eta$. The space spanned by the constants and these linear fields is of dimension $2\dim\Delta_n$, attained in the flat model, and it is the representation of the conformal group by the twistor distribution.</p>
+<p>On $\mathbb{R}^n$ with the Euclidean metric the twistor equation reads $\partial_X\sigma+\frac1nX\cdot\sum_ie_i\partial/\partial x_i\,\sigma=0$. Taking $\sigma$ constant gives a twistor spinor with $D\sigma=0$; taking $\sigma(x)=x\cdot\eta$ for a constant spinor $\eta$ gives a twistor spinor with $D\sigma=-n\eta$, since $D(x\cdot\eta)=\sum_ie_i\partial/\partial x_i(x\cdot\eta)=\sum_ie_ie_i\eta=-n\eta$. The space spanned by the constants and these linear fields is of dimension $2\dim\Delta_n$, attained in the flat model, and it is the representation of the conformal group by the twistor distribution.</p>
 <h3 id="the-round-sphere">The Round Sphere</h3>
 <p>On the round sphere $S^n$ with its standard spin structure the metric is conformally flat and Einstein of positive scalar curvature; the twistor spinors are the pairs of Killing spinors with the two constants $\pm\frac12\sqrt{\frac{\operatorname{scal}}{n(n-1)}}$. The twistor equation restricts the differences of the two chiral twistors, of dimension $2\dim\Delta_n$, and the twistor space of $S^4$ with the round conformal structure is the complex projective space $\mathbb{CP}^3$ with its Fubini–Study structure: a Kodaira-type example of the correspondence where the twistor space is a projective space.</p>
 <h3 id="the-einstein-manifolds">The Einstein Manifolds</h3>

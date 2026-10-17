@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,44 +53,44 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article studies <strong>regular</strong> (equivalently <strong>monogenic</strong>) split-quaternion-valued functions, that is, functions annihilated by the split-quaternion <strong>Cauchy–Riemann operator</strong>. The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries an <strong>indefinite</strong> norm of signature $(2,2)$, and this is decisive: the first-order operator has an indefinite principal symbol, the associated second-order operator is an ultrahyperbolic (wave-type) operator rather than a Laplacian, and the algebra has zero divisors whose null cone is the characteristic set on which the Cauchy kernel is singular.</p>
 <p>The article owns the regularity theory of the category: the operator and its conjugate, the system of regularity equations, the failure of ellipticity, the examples, the harmonicity that survives as a wave equation, and the failure of the complex analogy where the zero divisors intervene. It relies on <em>Split-Quaternion Analysis</em> for the differential operators and the Peirce coordinates, on <em>Split-Quaternion Analysis</em> for the subalgebra operators, and on the biquaternion counterpart <em>Biquaternion Regular Functions</em> for the structural comparison. No physics is invoked; the object called a "Dirac operator" in older literature is here the <strong>Cauchy–Riemann operator</strong>, and that name is used throughout.</p>
-<p><strong>Conventions.</strong> Coordinates are $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial_{q_0}, \partial_{q_1}, \partial_{q_2}, \partial_{q_3}$.</p>
+<p><strong>Conventions.</strong> Coordinates are $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$. For a function $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ on an open set $\Omega$ in a four-dimensional subspace, the partial derivatives are written $\partial/\partial q_t, \partial/\partial q_x, \partial/\partial q_y, \partial/\partial q_z$.</p>
 <h2 id="the-cauchyriemann-operator-and-its-conjugate">The Cauchy–Riemann Operator and Its Conjugate</h2>
 <p><strong>Definition.</strong> The <strong>Cauchy–Riemann operator</strong> (the split-quaternion gradient) and its <strong>conjugate</strong> are</p>
 <p>$$
-\nabla = e_0 \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}, \qquad
-\bar{\nabla} = e_0 \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3} .
+\nabla = e_t \partial/\partial q_t + \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z, \qquad
+\bar{\nabla} = e_t \partial/\partial q_t - \vec e_x \partial/\partial q_x - \vec e_y \partial/\partial q_y - \vec e_z \partial/\partial q_z .
 $$</p>
-<p>The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial_{\bar A}, \partial_A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_0$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and</p>
+<p>The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_t$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and</p>
 <p>$$
-\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial_{q_0}^2 + \partial_{q_1}^2 - \partial_{q_2}^2 - \partial_{q_3}^2\bigr) e_0 .
+\nabla \bar{\nabla} = \bar{\nabla} \nabla = \Box := \bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) e_t .
 $$</p>
 <p>The second-order operator $\Box$ is the <strong>ultrahyperbolic operator</strong> of signature $(2,2)$: a wave operator, not a Laplacian. This single sign difference from the quaternion and biquaternion cases governs the whole of the regularity theory below.</p>
-<p><strong>Proof.</strong> Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial_\mu\partial_\nu$. The diagonal coefficients are $e_0e_0^{\natural} = e_0$, $e_1e_1^{\natural} = -e_1^2 = e_0$, $e_2e_2^{\natural} = -e_2^2 = -e_0$, $e_3e_3^{\natural} = -e_3^2 = -e_0$, giving the displayed signs; the off-diagonal coefficients come in symmetric pairs $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, which vanish by the Clifford relations. The same computation with the factors reversed gives $\bar{\nabla}\nabla = \Box$.</p>
+<p><strong>Proof.</strong> Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial^2/\partial Q_\mu\partial Q_\nu$. The diagonal coefficients are $e_te_t^{\natural} = e_t$, $\vec e_x\vec e_x^{\natural} = -\vec e_x^2 = e_t$, $\vec e_y\vec e_y^{\natural} = -\vec e_y^2 = -e_t$, $\vec e_z\vec e_z^{\natural} = -\vec e_z^2 = -e_t$, giving the displayed signs; the off-diagonal coefficients come in symmetric pairs $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, which vanish by the Clifford relations. The same computation with the factors reversed gives $\bar{\nabla}\nabla = \Box$.</p>
 <h2 id="regularity-and-the-system-of-equations">Regularity and the System of Equations</h2>
-<p><strong>Definition.</strong> Let $\Omega$ be open in a four-dimensional real subspace, and let $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ be continuously differentiable. Then $F$ is <strong>left-regular</strong>, or <strong>left-monogenic</strong>, if $\nabla F = 0$ on $\Omega$; it is <strong>right-regular</strong> if $F\nabla := \sum_\mu \partial_\mu F\, e_\mu = 0$; and <strong>anti-regular</strong> if $\bar{\nabla}F = 0$. In this category <strong>regular</strong> without qualification means left-regular, and the operator inverted is the first-order operator $\nabla$, not $\Box$.</p>
-<p><strong>Theorem (the regularity system).</strong> Write $F = F_0 + \vec F$, $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$. Then</p>
+<p><strong>Definition.</strong> Let $\Omega$ be open in a four-dimensional real subspace, and let $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ be continuously differentiable. Then $F$ is <strong>left-regular</strong>, or <strong>left-monogenic</strong>, if $\nabla F = 0$ on $\Omega$; it is <strong>right-regular</strong> if $F\nabla := \sum_\mu \partial/\partial Q_\mu F\, e_\mu = 0$; and <strong>anti-regular</strong> if $\bar{\nabla}F = 0$. In this category <strong>regular</strong> without qualification means left-regular, and the operator inverted is the first-order operator $\nabla$, not $\Box$.</p>
+<p><strong>Theorem (the regularity system).</strong> Write $F = F_0 + \vec F$, $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$. Then</p>
 <p>$$
-\nabla F = \bigl(\partial_{q_0} F_0 - \mathrm{div}_{\mathrm{s}}\,\vec F\bigr) + \bigl(\partial_{q_0} \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F\bigr),
+\nabla F = \bigl(\partial/\partial q_t F_0 - \mathrm{div}_{\mathrm{s}}\,\vec F\bigr) + \bigl(\partial/\partial q_t \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F\bigr),
 $$</p>
-<p>where the <strong>split</strong> divergence, gradient and curl are taken with respect to the indefinite form $N|_V = q_1^2-q_2^2-q_3^2$, using the sign matrix $\operatorname{diag}(1,-1,-1)$; hence $F$ is regular if and only if the four equations</p>
+<p>where the <strong>split</strong> divergence, gradient and curl are taken with respect to the indefinite form $N|_V = q_x^2-q_y^2-q_z^2$, using the sign matrix $\operatorname{diag}(1,-1,-1)$; hence $F$ is regular if and only if the four equations</p>
 <p>$$
-\partial_{q_0} F_0 = \mathrm{div}_{\mathrm{s}}\,\vec F, \qquad \partial_{q_0} \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F = 0
+\partial/\partial q_t F_0 = \mathrm{div}_{\mathrm{s}}\,\vec F, \qquad \partial/\partial q_t \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F = 0
 $$</p>
 <p>hold. This is the <strong>split-quaternion Cauchy–Riemann system</strong>, four scalar equations for the four coefficients, inheriting the signs of the indefinite form.</p>
-<p><strong>Proof.</strong> Multiply out $\nabla F = \sum_\mu e_\mu \partial_\mu F$ using the multiplication table; the scalar part collects $\partial_{q_0} F_0$ against the signed sum $\partial_{q_1} F_1 - \partial_{q_2} F_2 - \partial_{q_3} F_3$, and the vector part collects the signed gradient and curl.</p>
+<p><strong>Proof.</strong> Multiply out $\nabla F = \sum_\mu e_\mu \partial/\partial Q_\mu F$ using the multiplication table; the scalar part collects $\partial/\partial q_t F_0$ against the signed sum $\partial/\partial q_x F_1 - \partial/\partial q_y F_2 - \partial/\partial q_z F_3$, and the vector part collects the signed gradient and curl.</p>
 <h2 id="the-regularity-system-is-not-elliptic">The Regularity System Is Not Elliptic</h2>
-<p><strong>Theorem.</strong> The principal symbol of $\nabla$ is $s(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3$, and</p>
+<p><strong>Theorem.</strong> The principal symbol of $\nabla$ is $s(\xi) = \xi_t + \xi_x \vec e_x + \xi_y \vec e_y + \xi_z \vec e_z$, and</p>
 <p>$$
-s(\xi)\,s^{\natural}(\xi) = \xi_0^2 + \xi_1^2 - \xi_2^2 - \xi_3^2 = \langle \xi\rangle_{\natural} e_0,
+s(\xi)\,s^{\natural}(\xi) = \xi_t^2 + \xi_x^2 - \xi_y^2 - \xi_z^2 = \langle \xi\rangle_{\natural} e_t,
 $$</p>
 <p>which vanishes on the null cone $\mathcal{N}$ and only there. Hence the Cauchy–Riemann system is <strong>not elliptic</strong>: it is of ultrahyperbolic (wave) type, and its characteristic variety is exactly the null cone $\mathcal{N}$, the same set that carries the zero divisors.</p>
-<p><strong>Proof.</strong> The identity $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_0$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $\langle \xi\rangle_{\natural}$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.</p>
+<p><strong>Proof.</strong> The identity $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$ is the Fourier symbol of $\nabla\bar\nabla = \Box$. The symbol vanishes precisely when the quadratic form $\langle \xi\rangle_{\natural}$ vanishes, i.e. on the null cone. A first-order system is elliptic exactly when its symbol is invertible off the zero section, which fails here on a three-dimensional cone.</p>
 <p><strong>Corollary.</strong> The elliptic tools of the complex theory are unavailable. There is no maximum principle, no mean value property, and no Liouville theorem for regular functions of the full algebra: the equation $\Box F = 0$ admits the plane-wave solutions $F(\tilde q) = f(\tilde q\cdot \xi)$ for every null vector $\xi$, which are bounded and nonconstant on strips and grow without bound in other directions but obey no elliptic constraint.</p>
 <h2 id="examples-of-regular-functions">Examples of Regular Functions</h2>
 <p><strong>Constants.</strong> Every constant is regular, since $\nabla C = 0$; the constants form a four-real-dimensional space.</p>
-<p><strong>The elliptic subalgebra.</strong> On the plane $\mathbb{C} = \mathbb{R}[e_1]$ with $A = q_0 + q_1 e_1$ ($e_1^2 = -1$), a function independent of $q_2,q_3$ satisfies $\nabla F = 2\partial_{\bar A}F$, so $F$ is regular exactly when it is holomorphic in $A$ in the classical sense. Thus every classical holomorphic function of $A = q_0+q_1 e_1$, extended by constancy in $e_2,e_3$, is regular, and $\mathbb{R}[e_1]$ is the elliptic island of the theory.</p>
-<p><strong>The split-complex planes.</strong> On $\mathbb{D}_2 = \mathbb{R}[e_2]$ with $w = q_0 + q_2 e_2$ ($e_2^2 = +1$), a function independent of $q_1,q_3$ satisfies $\nabla F = (\partial_{q_0} + e_2\partial_{q_2})F$, the <strong>hyperbolic Cauchy–Riemann operator</strong>. Its solutions include the split-complex <em>conjugates</em>: the linear function $q_0 - q_2 e_2$ is regular, because $\nabla(q_0 - q_2 e_2) = 1 - e_2^2 = 0$, whereas the linear function $q_0 + q_2 e_2 = w$ is not, since $\nabla w = 1 + e_2^2 = 2$. On the split-complex planes the roles of the variable and its conjugate are exchanged relative to the complex case. The same holds on $\mathbb{D}_3 = \mathbb{R}[e_3]$.</p>
-<p><strong>The identity function is not regular.</strong> On the full algebra, $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_0^2 + e_1^2 + e_2^2 + e_3^2 = 1 - 1 + 1 + 1 = 2 e_0 \neq 0$. So the identity is not regular, as in the quaternion case.</p>
+<p><strong>The elliptic subalgebra.</strong> On the plane $\mathbb{C} = \mathbb{R}[\vec e_x]$ with $A = q_t + q_x \vec e_x$ ($\vec e_x^2 = -1$), a function independent of $q_y,q_z$ satisfies $\nabla F = 2\partial/\partial\bar A\,F$, so $F$ is regular exactly when it is holomorphic in $A$ in the classical sense. Thus every classical holomorphic function of $A = q_t+q_x \vec e_x$, extended by constancy in $\vec e_y,\vec e_z$, is regular, and $\mathbb{R}[\vec e_x]$ is the elliptic island of the theory.</p>
+<p><strong>The split-complex planes.</strong> On $\mathbb{D}_2 = \mathbb{R}[\vec e_y]$ with $w = q_t + q_y \vec e_y$ ($\vec e_y^2 = +1$), a function independent of $q_x,q_z$ satisfies $\nabla F = (\partial/\partial q_t + \vec e_y\partial/\partial q_y)F$, the <strong>hyperbolic Cauchy–Riemann operator</strong>. Its solutions include the split-complex <em>conjugates</em>: the linear function $q_t - q_y \vec e_y$ is regular, because $\nabla(q_t - q_y \vec e_y) = 1 - \vec e_y^2 = 0$, whereas the linear function $q_t + q_y \vec e_y = w$ is not, since $\nabla w = 1 + \vec e_y^2 = 2$. On the split-complex planes the roles of the variable and its conjugate are exchanged relative to the complex case. The same holds on $\mathbb{D}_3 = \mathbb{R}[\vec e_z]$.</p>
+<p><strong>The identity function is not regular.</strong> On the full algebra, $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_t^2 + \vec e_x^2 + \vec e_y^2 + \vec e_z^2 = 1 - 1 + 1 + 1 = 2 e_t \neq 0$. So the identity is not regular, as in the quaternion case.</p>
 <p><strong>The Cauchy kernel and its singularity.</strong> The candidate fundamental solution is</p>
 <p>$$
 G(\tilde q) = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}^2},
@@ -100,22 +99,22 @@ $$</p>
 <h2 id="harmonicity-and-the-factorization-of-the-ultrahyperbolic-operator">Harmonicity and the Factorization of the Ultrahyperbolic Operator</h2>
 <p><strong>Theorem.</strong> Every regular function is <strong>harmonic</strong> for the ultrahyperbolic operator: if $\nabla F = 0$ then $\Box F = \bar{\nabla}(\nabla F) = 0$, i.e.</p>
 <p>$$
-\bigl(\partial_{q_0}^2 + \partial_{q_1}^2 - \partial_{q_2}^2 - \partial_{q_3}^2\bigr) F = 0 .
+\bigl(\partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2\bigr) F = 0 .
 $$</p>
-<p>Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial_A\partial_{\bar A} = \tfrac14 \Delta$ in one complex variable.</p>
+<p>Right-regular functions are likewise harmonic, and the factorization $\Box = \nabla\bar{\nabla} = \bar{\nabla}\nabla$ is the analogue of $\partial^2/\partial A\partial\bar A = \tfrac14 \Delta$ in one complex variable.</p>
 <p><strong>Proof.</strong> The vanishing $\Box F = 0$ is immediate from $\Box = \bar{\nabla}\nabla$ applied to $\nabla F = 0$; the right-regular case is the same identity with the factors on the other side.</p>
-<p><strong>Corollary.</strong> The converse fails: $F(\tilde q) = q_0$ is harmonic, since $\Box q_0 = 0$, but $\nabla q_0 = e_0 \neq 0$, so $q_0$ is not regular. Thus the regular functions form a proper subclass of the $\Box$-harmonic functions, exactly as holomorphic functions are a proper subclass of harmonic functions in one complex variable.</p>
+<p><strong>Corollary.</strong> The converse fails: $F(\tilde q) = q_t$ is harmonic, since $\Box q_t = 0$, but $\nabla q_t = e_t \neq 0$, so $q_t$ is not regular. Thus the regular functions form a proper subclass of the $\Box$-harmonic functions, exactly as holomorphic functions are a proper subclass of harmonic functions in one complex variable.</p>
 <h2 id="the-role-of-the-zero-divisors-and-the-failure-of-the-analogy">The Role of the Zero Divisors and the Failure of the Analogy</h2>
 <p>The complex analogy fails precisely where the zero divisors intervene, and this is the content of the present article.</p>
 <p><strong>Theorem.</strong> On a domain meeting the null cone, no regular function that is a genuine inverse of the coordinate behaves as the complex $1/A$ does. The Cauchy kernel $G(\tilde q) = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$ is singular on all of $\mathcal{N}$, and the singularity is a three-dimensional cone; there is no way to isolate a punctured neighbourhood by a sphere, because the null cone passes through every neighbourhood.</p>
 <p><strong>Proof.</strong> The singular set of $G$ is $\{\langle\tilde q\rangle_{\natural} = 0\}$, which is $\mathcal{N}$, of dimension $3$; a frame around a point of $\mathcal{N}$ is not a compact separating surface but is pierced by the cone.</p>
 <p><strong>The Cauchy integral formula fails.</strong> Even when a boundary integral can be written down, the kernel is singular on the part of the null cone inside the domain, so the classical Cauchy integral formula has no direct analogue: there is no simply connected domain whose boundary avoids the characteristic set while containing the singularities of the kernel.</p>
-<p><strong>What survives.</strong> On the elliptic subalgebra $\mathbb{C} = \mathbb{R}[e_1]$ the theory is the classical theory of one complex variable and the Cauchy formula holds verbatim; on each split-complex plane and on each definite bidimensional subspace the theory is a two-dimensional hyperbolic (or elliptic) Cauchy–Riemann theory with its own integral formula along characteristics. Thus regularity is a <em>local-in-direction</em> phenomenon whose global integral theory exists only on the subspaces that avoid the indefinite directions. This is developed in <em>Split-Quaternion Analysis</em>.</p>
+<p><strong>What survives.</strong> On the elliptic subalgebra $\mathbb{C} = \mathbb{R}[\vec e_x]$ the theory is the classical theory of one complex variable and the Cauchy formula holds verbatim; on each split-complex plane and on each definite bidimensional subspace the theory is a two-dimensional hyperbolic (or elliptic) Cauchy–Riemann theory with its own integral formula along characteristics. Thus regularity is a <em>local-in-direction</em> phenomenon whose global integral theory exists only on the subspaces that avoid the indefinite directions. This is developed in <em>Split-Quaternion Analysis</em>.</p>
 <h2 id="relation-to-the-biquaternion-regular-functions-and-clifford-analysis">Relation to the Biquaternion Regular Functions and Clifford Analysis</h2>
-<p>The biquaternion article <em>Biquaternion Regular Functions</em> develops regularity on $\mathbb{B}$ with the <strong>elliptic</strong> operator whose symbol satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_0$, giving the Clifford analysis of $\mathbb{R}^4$: a maximum principle, a mean value property, a Cauchy integral formula and a fundamental solution $G = \bar{Q}/\|Q\|_E^4$ singular only at the origin. On the biquaternion indefinite subspaces $\mathbb{M}_\pm$ the operator becomes a wave operator and the elliptic tools disappear there.</p>
+<p>The biquaternion article <em>Biquaternion Regular Functions</em> develops regularity on $\mathbb{B}$ with the <strong>elliptic</strong> operator whose symbol satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_t$, giving the Clifford analysis of $\mathbb{R}^4$: a maximum principle, a mean value property, a Cauchy integral formula and a fundamental solution $G = \bar{Q}/\|Q\|_E^4$ singular only at the origin. On the biquaternion indefinite subspaces $\mathbb{M}_\pm$ the operator becomes a wave operator and the elliptic tools disappear there.</p>
 <p>The split-quaternion case is the <strong>fully indefinite</strong> one: the form is indefinite, so no subspace through the origin of dimension greater than two is definite and the elliptic theory lives only on definite planes; the symbol vanishes on the whole null cone, the second-order operator is ultrahyperbolic, and the Cauchy kernel is singular on a cone of dimension three. The definiteness that the biquaternion theory retains on its quaternion half is precisely what the split-quaternion algebra lacks. In the language of Clifford analysis, the pair $(\nabla, \bar{\nabla})$ here are the Cauchy–Riemann operators of $\mathrm{Cl}_{2,2}$, and the regularity theory is an indefinite-signature-$(2,2)$ Clifford analysis with a null characteristic variety. Nothing biquaternion-specific — the central imaginary unit $i$, the definite quaternion half, the Euclidean kernel — is imported; the two theories are placed side by side only for comparison.</p>
 <h2 id="summary">Summary</h2>
-<p>The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial_{q_0}^2+\partial_{q_1}^2-\partial_{q_2}^2-\partial_{q_3}^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is <strong>not elliptic</strong>: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_0$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_0+q_1 e_1$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.</p>
+<p>The split-quaternion Cauchy–Riemann operator $\nabla = \sum_\mu e_\mu\partial/\partial Q_\mu$ and its conjugate $\bar{\nabla}$ satisfy $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box$, the ultrahyperbolic operator $\partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of signature $(2,2)$. A function is regular when $\nabla F = 0$, equivalently when it satisfies the split-quaternion Cauchy–Riemann system of four scalar equations with the signs of the indefinite form. The system is <strong>not elliptic</strong>: its symbol $s(\xi)$ obeys $s(\xi)s^{\natural}(\xi) = \langle \xi\rangle_{\natural}e_t$ and vanishes exactly on the null cone, which is the characteristic variety and the zero-divisor set. Every regular function is $\Box$-harmonic, but not conversely. The examples are the constants; the classical holomorphic functions of the elliptic variable $A = q_t+q_x \vec e_x$; the split-complex conjugates on the hyperbolic planes $\mathbb{D}_2, \mathbb{D}_3$; and the Cauchy kernel $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}^2$, singular on the whole null cone. The complex analogy holds on the elliptic subalgebra and fails wherever the null cone intervenes: no maximum principle, no mean value property, no Liouville theorem, and no global Cauchy integral formula on the full algebra. The biquaternion theory, by contrast, retains an elliptic half, and the failure here is exactly the absence of an elliptic subspace of dimension greater than two: the form is indefinite, and the only definite subspaces are the planes.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -132,12 +131,12 @@ $$</p>
 <td><em>Split-Quaternion Algebra</em></td>
 </tr>
 <tr>
-<td>$\nabla = \sum_\mu e_\mu\partial_\mu$</td>
+<td>$\nabla = \sum_\mu e_\mu\partial/\partial Q_\mu$</td>
 <td>the Cauchy–Riemann operator</td>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\bar{\nabla} = e_0\partial_{q_0} - e_1\partial_{q_1} - e_2\partial_{q_2} - e_3\partial_{q_3}$</td>
+<td>$\bar{\nabla} = e_t\partial/\partial q_t - \vec e_x\partial/\partial q_x - \vec e_y\partial/\partial q_y - \vec e_z\partial/\partial q_z$</td>
 <td>its conjugate</td>
 <td>this article</td>
 </tr>
@@ -157,8 +156,8 @@ $$</p>
 <td>this article</td>
 </tr>
 <tr>
-<td>$\mathbb{C} = \mathbb{R}[e_1]$</td>
-<td>the elliptic subalgebra, $A = q_0+q_1 e_1$</td>
+<td>$\mathbb{C} = \mathbb{R}[\vec e_x]$</td>
+<td>the elliptic subalgebra, $A = q_t+q_x \vec e_x$</td>
 <td><em>Split-Quaternion Elementary Functions</em></td>
 </tr>
 <tr>
@@ -177,7 +176,7 @@ $$</p>
 <td><em>Split-Quaternion Zero Divisors</em></td>
 </tr>
 <tr>
-<td>$\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$</td>
+<td>$\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$</td>
 <td>the split-quaternion norm, signature $(2,2)$</td>
 <td><em>Split-Quaternion Norm and Invertibility</em></td>
 </tr>

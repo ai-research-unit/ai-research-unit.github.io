@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -66,11 +65,11 @@ star coincides with the natural sign and gives nothing new.</p>
 contrast between invertibility and division is stated; the multiplication operators, of which the
 zero divisors are exactly the singular ones with nonzero parameter, are <em>The Multiplication
 Operators of the Symmetric Plain Algebra</em>, below this article in this category.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with
-$\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. A generic element is $\tilde q=q_te_t+\vec q$ with
+$\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
 Euclidean dot product and $\vec p\times\vec q$ the vector product of the vector parts; the
-norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$ and the scalar line and the
+norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$ and the scalar line and the
 vector subspace $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}$ are those of <em>Introduction
 to the Remarkable Subspaces of the Quaternions</em>.</p>
 <h2 id="the-zero-divisors-of-the-block">The Zero Divisors of the Block</h2>
@@ -87,17 +86,17 @@ element $\tilde q$ is a <strong>partner</strong> of $\tilde p$.</p>
 <p>$$
 \tilde p\ \text{is a zero divisor}\iff p_0=0\iff \tilde p\in\mathrm{Vect}(\mathbb{H})\setminus\{0\} .
 $$</p>
-<p><em>Proof.</em> Write $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$, so that</p>
+<p><em>Proof.</em> Write $\tilde p=p_0e_t+\vec p$ and $\tilde q=q_te_t+\vec q$, so that</p>
 <p>$$
-\tilde p\bullet\tilde q=\bigl(p_0q_0-\vec p\cdot\vec q\bigr)e_0+p_0\vec q+q_0\vec p .
+\tilde p\bullet\tilde q=\bigl(p_0q_t-\vec p\cdot\vec q\bigr)e_t+p_0\vec q+q_t\vec p .
 $$</p>
 <p>If $p_0=0$ and $\tilde p\neq0$, choose a nonzero pure $\vec v$ with $\vec v\perp\vec p$
-and $\tilde q=\vec v$; then $\tilde p\bullet\tilde q=-\vec p\cdot\vec v\,e_0=\mathbf 0$.
+and $\tilde q=\vec v$; then $\tilde p\bullet\tilde q=-\vec p\cdot\vec v\,e_t=\mathbf 0$.
 If $p_0\neq0$, suppose $\tilde p\bullet\tilde q=0$; the vector part gives
-$p_0\vec q=-q_0\vec p$, so $\vec q$ is a multiple of $\vec p$, say
-$\vec q=\lambda\vec p$; the scalar part then gives $p_0q_0=\lambda|\vec p|^2$, and
-combining the two, $p_0q_0=\lambda|\vec p|^2$ with $\lambda=-q_0/p_0$ yields
-$p_0^2q_0=-q_0|\vec p|^2$, that is $q_0(p_0^2+|\vec p|^2)=0$, so $q_0=0$; then
+$p_0\vec q=-q_t\vec p$, so $\vec q$ is a multiple of $\vec p$, say
+$\vec q=\lambda\vec p$; the scalar part then gives $p_0q_t=\lambda|\vec p|^2$, and
+combining the two, $p_0q_t=\lambda|\vec p|^2$ with $\lambda=-q_t/p_0$ yields
+$p_0^2q_t=-q_t|\vec p|^2$, that is $q_t(p_0^2+|\vec p|^2)=0$, so $q_t=0$; then
 $\vec q=\lambda\vec p$ and the scalar part is $-\lambda|\vec p|^2=0$, so $\lambda=0$ and
 $\tilde q=0$, a contradiction. Hence a nonzero element with $p_0\neq0$ has no nonzero partner.</p>
 <p><strong>Corollary (the operator form of the criterion).</strong> With the left multiplication operator
@@ -118,7 +117,7 @@ article in this category).</p>
 \tilde p\bullet\tilde q=0\iff \tilde p=\vec q_a,\ \tilde q=\vec v\ \text{with}\ \vec q_a,\vec v\ \text{pure},\ \text{nonzero and orthogonal},\ \vec q_a\cdot\vec v=0 .
 $$</p>
 <p><em>Proof.</em> By the criterion both factors are pure, and the product of two pure elements is
-$\vec q_a\bullet\vec v=-\vec q_a\cdot\vec v\,e_0$, which vanishes exactly when
+$\vec q_a\bullet\vec v=-\vec q_a\cdot\vec v\,e_t$, which vanishes exactly when
 $\vec q_a\cdot\vec v=0$.</p>
 <p>So the zero-divisor pairs are exactly the pairs of orthogonal nonzero vectors of the
 three-dimensional vector subspace.</p>
@@ -140,37 +139,37 @@ Grassmannian $\mathrm{Gr}(2,3)$ of dimension two.</p>
 <h3 id="the-square-of-a-pure-element">The Square of a Pure Element</h3>
 <p><strong>Proposition.</strong> The square of a pure element is a non-positive scalar:</p>
 <p>$$
-\vec q_a\bullet\vec q_a=\vec q_a^2=-|\vec q_a|^2e_0 .
+\vec q_a\bullet\vec q_a=\vec q_a^2=-|\vec q_a|^2e_t .
 $$</p>
 <p>In particular a pure element is a zero divisor <strong>and</strong> has a central square, and
 $\vec q_a\bullet\vec q_a=0$ only for $\vec q_a=0$.</p>
-<p><em>Proof.</em> The square is the plain square, and $\vec q_a^2=-\vec q_a\cdot\vec q_a\,e_0$ because
+<p><em>Proof.</em> The square is the plain square, and $\vec q_a^2=-\vec q_a\cdot\vec q_a\,e_t$ because
 the cross term of a vector with itself vanishes. The scalar $-|\vec q_a|^2$ is zero only for
 $\vec q_a=0$.</p>
 <h3 id="the-square-of-a-non-pure-element">The Square of a Non-Pure Element</h3>
 <p><strong>Proposition.</strong> The square of a general element is</p>
 <p>$$
-\tilde q\bullet\tilde q=\bigl(q_0^2-|\vec q|^2\bigr)e_0+2q_0\vec q,
+\tilde q\bullet\tilde q=\bigl(q_t^2-|\vec q|^2\bigr)e_t+2q_t\vec q,
 $$</p>
-<p>with scalar part $q_0^2-|\vec q|^2$ and vector part $2q_0\vec q$. It has a nonzero vector
+<p>with scalar part $q_t^2-|\vec q|^2$ and vector part $2q_t\vec q$. It has a nonzero vector
 part exactly when $\tilde q$ is non-pure and nonzero.</p>
 <p><em>Proof.</em> The square is the plain square, displayed by the scalar–vector rule with
-$\tilde p=\tilde q$. The vector part $2q_0\vec q$ vanishes when $q_0=0$ or $\vec q=0$, that
+$\tilde p=\tilde q$. The vector part $2q_t\vec q$ vanishes when $q_t=0$ or $\vec q=0$, that
 is, for a pure element or a scalar.</p>
 <h3 id="the-associated-idempotents">The Associated Idempotents</h3>
-<p><strong>Proposition.</strong> The idempotents of the block are exactly $0$ and $e_0$, and no nontrivial
+<p><strong>Proposition.</strong> The idempotents of the block are exactly $0$ and $e_t$, and no nontrivial
 idempotent is attached to a zero divisor:</p>
 <p>$$
-\tilde\pi\bullet\tilde\pi=\tilde\pi\iff \tilde\pi\in\{0,e_0\}.
+\tilde\pi\bullet\tilde\pi=\tilde\pi\iff \tilde\pi\in\{0,e_t\}.
 $$</p>
 <p><em>Proof.</em> The equation is the plain equation $\tilde\pi^2=\tilde\pi$, since the square of the block
-is the plain square. From the vector part, $(2\pi_0-1)\vec\pi=0$: either
-$\vec\pi=0$, giving $\pi_0^2=\pi_0$ and $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$, and
+is the plain square. From the vector part, $(2\pi_t-1)\vec\pi=0$: either
+$\vec\pi=0$, giving $\pi_t^2=\pi_t$ and $\tilde\pi\in\{0,e_t\}$, or $\pi_t=\tfrac12$, and
 then the scalar part reads $\tfrac14-|\vec\pi|^2=\tfrac12$, that is
 $|\vec\pi|^2=-\tfrac14$, which has no real solution.</p>
 <p><strong>Remark (why no idempotent is built from a zero divisor).</strong> In an algebra with a pure root of
-$+e_0$ the element $\tfrac12(e_0+\vec q_a)$ is a nontrivial idempotent; here the square of a pure
-element is $-|\vec q_a|^2e_0$, the negative of what is needed, so the construction never closes
+$+e_t$ the element $\tfrac12(e_t+\vec q_a)$ is a nontrivial idempotent; here the square of a pure
+element is $-|\vec q_a|^2e_t$, the negative of what is needed, so the construction never closes
 and <strong>the zero divisors of the block carry no idempotent with them</strong>.</p>
 <h2 id="summary">Summary</h2>
 <p>A nonzero element of the block is a zero divisor, that is, has a nonzero partner $\tilde q$ with
@@ -180,10 +179,10 @@ partners of a nonzero pure $\vec q_a$ are the elements of the two-dimensional pl
 $\vec q_a^{\perp}$ inside the vector subspace, and the zero-divisor pairs are exactly the pairs of
 orthogonal nonzero pure elements, an ordered family of real dimension five whose unordered version
 is the Grassmannian $\mathrm{Gr}(2,3)\cong\mathbb{RP}^2$. A pure element has the negative scalar
-square $-|\vec q_a|^2e_0$; a non-pure element has the square
-$(q_0^2-|\vec q|^2)e_0+2q_0\vec q$ with nonzero vector part; and the idempotents are only $0$
-and $e_0$, so no nontrivial idempotent is attached to a zero divisor. The definiteness of the norm
-collapses the criterion to $q_0=0$ and the idempotents to $\{0,e_0\}$.</p>
+square $-|\vec q_a|^2e_t$; a non-pure element has the square
+$(q_t^2-|\vec q|^2)e_t+2q_t\vec q$ with nonzero vector part; and the idempotents are only $0$
+and $e_t$, so no nontrivial idempotent is attached to a zero divisor. The definiteness of the norm
+collapses the criterion to $q_t=0$ and the idempotents to $\{0,e_t\}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -210,15 +209,15 @@ collapses the criterion to $q_0=0$ and the idempotents to $\{0,e_0\}$.</p>
 <td>the operator form of the criterion</td>
 </tr>
 <tr>
-<td>$\vec q_a\bullet\vec q_a=-|\vec q_a|^2e_0$</td>
+<td>$\vec q_a\bullet\vec q_a=-|\vec q_a|^2e_t$</td>
 <td>the square of a pure element</td>
 </tr>
 <tr>
-<td>$(q_0^2-\lvert\vec q\rvert^2)e_0+2q_0\vec q$</td>
+<td>$(q_t^2-\lvert\vec q\rvert^2)e_t+2q_t\vec q$</td>
 <td>the square of a general element</td>
 </tr>
 <tr>
-<td>$\{0,e_0\}$</td>
+<td>$\{0,e_t\}$</td>
 <td>the idempotents of the block</td>
 </tr>
 </tbody>

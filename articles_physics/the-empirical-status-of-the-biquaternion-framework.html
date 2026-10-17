@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,7 +60,7 @@
 <li>What existing experimental bound already constrains it?</li>
 </ol>
 <p>A candidate that traces to an undetermined parameter or an unverified claim is <strong>not a signature</strong>, and is labelled as such below; so is a candidate whose "prediction" is the standard result rewritten. The next section fixes what a signature would have to be and identifies the structural reason none is yet available; the sections after record the standing agreement, explain why it is not evidence for the framework's distinctive content, and examine the candidates individually.</p>
-<p>Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
+<p>Throughout, the notation is inherited from the read-list articles: the biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and scalar imaginary $i$; the material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian subspace $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</p>
 <h2 id="what-would-count-as-a-signature">What Would Count as a Signature</h2>
 <p>A measurement $M$ is a <strong>signature</strong> of the framework relative to a standard theory $S$ if the framework predicts for $M$ a value that differs from the value $S$ predicts, by an amount the framework itself fixes, and if the measurement can resolve the difference. Four conditions must hold simultaneously:</p>
 <p><strong>(S1) A framework-specific quantity.</strong> There is a quantity $Q$ that the framework determines and $S$ does not. The two-sector interpretation, the local complex structure, and the imaginary directions are candidates for such quantities; whether any of them <em>determines</em> a number is a separate matter.</p>
@@ -89,12 +88,12 @@
 </tr>
 <tr>
 <td>Relativistic point mechanics</td>
-<td>$\langle d\tilde{Q}\rangle_{\natural}=-c^2dt^2+d\vec x^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$</td>
+<td>$\langle d\tilde{Q}\rangle_{\natural}=-c^2dt^2+dx^2+dy^2+dz^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$</td>
 <td>Interval, mass shell, four-force orthogonality</td>
 </tr>
 <tr>
 <td>Maxwell field</td>
-<td>$\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants</td>
+<td>$\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; Riemann–Silberstein field; invariants</td>
 <td>Maxwell's equations in a medium</td>
 </tr>
 <tr>
@@ -154,13 +153,13 @@
 <p><strong>Verdict.</strong> Not a signature. A dispersion claim here would be the invention the Introduction warns against. A Clifford-algebra programme that <em>does</em> supply the missing scale, and is therefore addressable by the bounds just quoted, is recorded under <em>An External Programme That Supplies a Scale</em> below; it is a different framework from this one.</p>
 <h3 id="the-local-complex-structure">The Local Complex Structure</h3>
 <p><strong>The candidate.</strong> The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is <strong>local</strong>, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.</p>
-<p><strong>The framework-specific quantity.</strong> The local speed $c(\vec x)=1/\sqrt{\epsilon(\vec x)\mu(\vec x)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial_{ict}=-(i/c)\,\partial_t$.</p>
+<p><strong>The framework-specific quantity.</strong> The local speed $c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=1/\sqrt{\epsilon(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mu(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial/\partial Q_t=-(i/c)\,\partial/\partial t$.</p>
 <p><strong>Derived or posited.</strong> The relation $c=1/\sqrt{\epsilon\mu}$ is <strong>standard</strong>, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the <em>identification</em> of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.</p>
 <p><strong>The existing bound.</strong> None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure interpretation, because that interpretation makes no claim about their values.</p>
-<p><strong>Verdict.</strong> Not a signature. The <em>locality</em> of the complex structure is inherited entirely from the standard locality of $c(\vec x)$, so any observable sensitive to it is already an observable of standard medium electromagnetism.</p>
+<p><strong>Verdict.</strong> Not a signature. The <em>locality</em> of the complex structure is inherited entirely from the standard locality of $c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so any observable sensitive to it is already an observable of standard medium electromagnetism.</p>
 <h3 id="a-second-light-cone-or-vacuum-birefringence">A Second Light Cone, or Vacuum Birefringence</h3>
 <p><strong>The candidate.</strong> The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.</p>
-<p><strong>The framework-specific quantity.</strong> The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a <strong>single</strong> quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\vec q^2$ and $q_0^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.</p>
+<p><strong>The framework-specific quantity.</strong> The biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$. It is a <strong>single</strong> quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_t^2+\vec q^2$ and $q_t^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.</p>
 <p><strong>Derived or posited.</strong> The single cone is <strong>derived</strong>: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.</p>
 <p><strong>The existing bound.</strong> Had the framework predicted birefringence, astrophysical polarimetry and gravitational-wave timing would constrain it. Since it predicts none, there is nothing to bound — and, once again, its consistency with the null-cone tests is not evidence for the framework, because the null cone it uses is the standard one.</p>
 <p><strong>Verdict.</strong> Not a signature. The algebra here forecloses the candidate rather than realizing it.</p>
@@ -208,7 +207,7 @@
 <p><strong>The existing bound.</strong> The bounds recorded under <em>A Fundamental Scale, and Modified Dispersion</em> act here, because this programme does supply the scale they need. A linear energy dependence of the speed of light is already required to set in above the Planck energy by the Fermi-LAT analysis of GRB 090510, and GW170817 bounds $v_\mathrm{GW}-v_\mathrm{EM}$ to a few parts in $10^{15}$ of $c$. A maximal acceleration is a separate, long-standing conjecture (Caianiello and others); no confirmed signature of it exists.</p>
 <p><strong>Verdict.</strong> Not a signature of the biquaternion framework, and not a claim of this series. It is recorded as the <strong>contrast case</strong>, because it answers the objection a reader will raise — <em>why not simply add a scale?</em> — by showing what adding one costs. Castro and Pavšič do not keep the manifold: their coordinates are non-commuting polyvectors, so the arena is not a space of points, and dimension including the signature has to be rebuilt slice by slice (the remark in <em>Biquaternion Other Algebraic Element Representations</em> reproduces the Euclidean–Minkowski-generators example behind that idea). A scale in the biquaternion framework would have to come the same way, as an addition to the algebra rather than a consequence of it. The construction of the arena is recorded in <em>Curved Spacetime and the Biquaternion Framework</em>, section <em>The Arena Alternative: Algebra Valued Coordinates</em>.</p>
 <h3 id="an-external-programme-that-varies-the-speed-of-light">An External Programme That Varies the Speed of Light</h3>
-<p><strong>The candidate.</strong> A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(\vec x)$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.</p>
+<p><strong>The candidate.</strong> A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.</p>
 <p><strong>The framework-specific quantity.</strong> None of the framework's. The programme uses the four-velocity biquaternion, the semi-biquaternion product, and the complexified four-position, which the corpus's companion articles read as a rewriting of standard four-vector kinematics. Its distinctive content is the added hypothesis that $c$ varies with position and that the line element is $ds^2=-f^2c_0^2\,dt^2+(dr^2+r^2d\Omega^2)/f^2$. The algebra does not force either.</p>
 <p><strong>Derived or posited.</strong> Mixed, and the split is the point. The profile is <strong>fitted</strong>, not derived: it comes from setting the model's force law equal to Newton's, so Newton's law is the input. The inverse squaring of the spatial part of the line element is a <strong>second posit</strong>, independent of the profile, and it is what carries the construction to the Schwarzschild form. The consequence is checkable and worth stating: at the profile the paper derives, $f=\exp(-r_s/(2r))$, the metric is <strong>not</strong> Ricci-flat ($R_{11}=-r_s^2/(2r^4)$ in the corpus's curvature convention, recomputed here), so it is not a vacuum solution of Einstein's equations. The Schwarzschild metric is the first-order truncation of that profile, which is why the classical tests come out right at leading order and differ only at order $(r_s/r)^2$.</p>
 <p><strong>The existing bound.</strong> Two, and both are empty by a wide margin. The model's deviation from general relativity is of order $(r_s/r)^2$, which at the solar surface is $1.8\times10^{-11}$ — far below the precision of the classical tests the programme reproduces. The programme's own distinctive prediction is a screening factor $\exp(-Gm/(c_0^2r))$ in the static field of a mass: this is $1-2.1\times10^{-6}$ at the solar surface, $1-7.0\times10^{-10}$ at the Earth's surface, and below $1-10^{-25}$ for any laboratory mass at laboratory separations. No experiment reaches either.</p>
@@ -257,8 +256,8 @@
 <td>Biquaternion algebra</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -289,11 +288,11 @@
 <td>Biquaternionic gradient, d'Alembertian</td>
 </tr>
 <tr>
-<td>$\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\vec{u})$</td>
+<td>$\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec{u})$</td>
 <td>Idempotent (pure state)</td>
 </tr>
 <tr>
-<td>$\tilde{H}=h_0e_0+i\vec h$</td>
+<td>$\tilde{H}=h_0e_t+i\vec h$</td>
 <td>Hermitian element (observable)</td>
 </tr>
 <tr>

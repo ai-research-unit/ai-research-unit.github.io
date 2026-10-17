@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,23 +53,23 @@
 <h2 id="introduction">Introduction</h2>
 <p>The complex space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries twelve products, the operations of <em>The 12 Products of the Biquaternioid Complex Space</em>, and each of the twelve carries a name, a three-letter code and an algebraic structure of its own in <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>. This article reads the twelve as <strong>tables</strong>.</p>
 <p>The reason a table is enough is that each of the twelve products is additive in each variable and obeys one of two scalar rules. It is therefore fixed by the sixteen products $e_\mu\star e_\nu$ of the pairs of basis elements, and those sixteen values are the <strong>multiplication table</strong>. The table is the structure-constant data of the product; the scalar rule is the second half of the data, and it is read off the last letter of the code: a code ending in $\mathrm{A}$ names a $\mathbb{C}$-bilinear product and a code ending in $\mathrm{S}$ a sesquilinear product over $(\mathbb{C},\bar{\cdot}\,)$. The pair (table, class) is the product, and each half of the pair is necessary: the class alone fixes no value and the table alone is ambiguous, since two of the twelve products have the same table and differ only in class.</p>
-<p>The article does three things. It defines the table of a product and the two extension rules, and proves that the table together with the class determines the product and is determined by it. It writes the twelve tables out, one to a product, in three groups — the four general products, their four symmetric parts and their four antisymmetric parts. And it reads the correspondence between the tables and the products: the extension of each table recovers its product, the table of a part is the entrywise symmetrisation or antisymmetrisation of the table of its parent, and the table is the structure-constant datum of the product. On the four-element basis $e_0,e_1,e_2,e_3$ the twelve tables take ten distinct values, the two collisions being the two coincidences that the corpus records on the real forms; on the eight-element real basis the twelve are distinct. The count of <strong>structures</strong> is twelve in both readings, because a structure is a product on the complex space and its datum is the table <strong>together with the class</strong>, so the two colliding tables are two structures and not one.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_0,e_1,e_2,e_3$ and the central scalar imaginary $i$, with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ and $e_1^2=e_2^2=e_3^2=-e_0$, the basis, the conjugations and the remarkable subspaces of <em>The Biquaternioid as a Vector Space over $\mathbb{C}$</em>. An element is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_0e_0+\vec Q$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_0}e_0+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\varepsilon_0\overline{Q_0}e_0+\varepsilon_1\overline{Q_1}e_1+\varepsilon_2\overline{Q_2}e_2+\varepsilon_3\overline{Q_3}e_3$ with $\varepsilon=(1,-1,-1,-1)$; on the basis they act by $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$ and $\overline{e_\mu}=e_\mu$. A generic product is written $\star$, and the twelve particular products carry the codes $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ of <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>: the first letter is the part ($\mathrm G$ general, $\mathrm S$ symmetric, $\mathrm A$ antisymmetric), the second the first slot ($\mathrm P$ plain, $\mathrm Q$ quaternionic) and the third the class ($\mathrm A$ algebra, that is $\mathbb{C}$-bilinear, and $\mathrm S$ sesqualgebra, that is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). The twelve products themselves, with their formulas, laws and units, are <em>The 12 Products of the Biquaternioid Complex Space</em>, and each of the twelve structure articles owns its own sixteen basis products; the present article sets the twelve side by side and reads what the tables do and do not decide.</p>
+<p>The article does three things. It defines the table of a product and the two extension rules, and proves that the table together with the class determines the product and is determined by it. It writes the twelve tables out, one to a product, in three groups — the four general products, their four symmetric parts and their four antisymmetric parts. And it reads the correspondence between the tables and the products: the extension of each table recovers its product, the table of a part is the entrywise symmetrisation or antisymmetrisation of the table of its parent, and the table is the structure-constant datum of the product. On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables take ten distinct values, the two collisions being the two coincidences that the corpus records on the real forms; on the eight-element real basis the twelve are distinct. The count of <strong>structures</strong> is twelve in both readings, because a structure is a product on the complex space and its datum is the table <strong>together with the class</strong>, so the two colliding tables are two structures and not one.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the central scalar imaginary $i$, with $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, the basis, the conjugations and the remarkable subspaces of <em>The Biquaternioid as a Vector Space over $\mathbb{C}$</em>. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_te_t+\vec Q$. The natural conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\varepsilon_0\overline{Q_t}e_t+\varepsilon_1\overline{Q_x}\vec e_x+\varepsilon_2\overline{Q_y}\vec e_y+\varepsilon_3\overline{Q_z}\vec e_z$ with $\varepsilon=(1,-1,-1,-1)$; on the basis they act by $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$ and $\overline{e_\mu}=e_\mu$. A generic product is written $\star$, and the twelve particular products carry the codes $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$, $\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$, $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ of <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>: the first letter is the part ($\mathrm G$ general, $\mathrm S$ symmetric, $\mathrm A$ antisymmetric), the second the first slot ($\mathrm P$ plain, $\mathrm Q$ quaternionic) and the third the class ($\mathrm A$ algebra, that is $\mathbb{C}$-bilinear, and $\mathrm S$ sesqualgebra, that is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). The twelve products themselves, with their formulas, laws and units, are <em>The 12 Products of the Biquaternioid Complex Space</em>, and each of the twelve structure articles owns its own sixteen basis products; the present article sets the twelve side by side and reads what the tables do and do not decide.</p>
 <hr />
 <h2 id="the-table-of-a-product">The Table of a Product</h2>
 <h3 id="the-table">The Table</h3>
 <p><strong>Definition.</strong> Let $\star$ be one of the twelve products. Its <strong>multiplication table</strong> is the $4\times4$ array $T(\star)$ with entries</p>
 <p>$$
-T(\star)_{\mu\nu}=e_\mu\star e_\nu,\qquad \mu,\nu\in\{0,1,2,3\}.
+T(\star)_{\mu\nu}=e_\mu\star e_\nu,\qquad \mu,\nu\in\{t,x,y,z\}.
 $$</p>
 <p>The row index is the left factor and the column index the right one, so the table has one entry to each ordered pair of basis elements and sixteen entries in all.</p>
 <p><strong>Definition.</strong> Let $T=(T_{\mu\nu})$ be a $4\times4$ array of elements of $\mathbb{B}$. The <strong>bilinear reading</strong> of $T$ is the product $\star_T$ defined on general elements by</p>
 <p>$$
-\tilde P\star_T\tilde Q=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}P_\mu Q_\nu\,T_{\mu\nu},
+\tilde P\star_T\tilde Q=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}P_\mu Q_\nu\,T_{\mu\nu},
 $$</p>
 <p>and the <strong>sesquilinear reading</strong> of $T$ is the product defined by</p>
 <p>$$
-\tilde P\star_T\tilde Q=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}P_\mu\overline{Q_\nu}\,T_{\mu\nu}.
+\tilde P\star_T\tilde Q=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}P_\mu\overline{Q_\nu}\,T_{\mu\nu}.
 $$</p>
 <p>The two readings differ in one point alone: whether the second coordinate is used as it stands or through the coefficientwise conjugation.</p>
 <p><strong>Proposition (the class of a reading).</strong> The bilinear reading of a table is additive in each variable and $\mathbb{C}$-bilinear in both; the sesquilinear reading is additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second.</p>
@@ -79,7 +78,7 @@ $$</p>
 <p><em>Proof.</em> The reading $r(T)$ is a product of the class, by the proposition above, and on the basis pair $(e_\mu,e_\nu)$ every coordinate but one vanishes and the surviving term is $T_{\mu\nu}$; so the table of $r(T)$ is $T$, and existence is proved. For uniqueness, let $\star$ be any product of the same class with table $T$. Both $\star$ and $r(T)$ are additive in each variable and obey the same two scalar rules, so they agree on every pair of basis elements — both give $T_{\mu\nu}$ — and therefore, by the two scalar rules again, on every pair of elements; hence $\star=r(T)$. The same argument read backwards shows that the table of a product determines the product once the class is fixed, and so the two assignments are inverse to one another on the products of a fixed class.</p>
 <p><strong>Remark (the class is not decoration).</strong> The table alone does not determine the product. The two readings of one and the same table are in general different products, and on the twelve the difference occurs: the two products $\mathrm{SQA}$ and $\mathrm{SPS}$ have the same table and are separated by the class alone, and so do $\mathrm{APA}$ and $\mathrm{AQS}$ in another pair, as §<em>The Ten Distinct Tables</em> proves. A table is a datum about a <em>typed</em> product, and the type — the class — is carried by the last letter of the code.</p>
 <h3 id="the-entries-are-real-quaternions">The Entries Are Real Quaternions</h3>
-<p><strong>Proposition.</strong> Every entry of every one of the twelve tables is $0$ or a basis element up to sign, $\pm e_0,\pm e_1,\pm e_2,\pm e_3$. The central imaginary $i$ occurs in no entry.</p>
+<p><strong>Proposition.</strong> Every entry of every one of the twelve tables is $0$ or a basis element up to sign, $\pm e_t,\pm \vec e_x,\pm \vec e_y,\pm \vec e_z$. The central imaginary $i$ occurs in no entry.</p>
 <p><em>Proof.</em> The entries are computed pair by pair from the twelve products, and the results are the twelve tables of §<em>The Twelve Tables</em>; inspection shows every entry to be $0$ or $\pm e_\mu$. The reason is structural: the basis is a real basis of real quaternions, closed under both conjugations up to sign, $\overline{e_\mu}=e_\mu$ and $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$, and the plain product of two real quaternions is a real quaternion; since the central imaginary $i$ is a coefficient and never a factor, no entry can carry it.</p>
 <p><strong>Remark.</strong> The tables are therefore integral: each is a table of integers times basis elements, and a table over $\mathbb{Z}$ rather than over $\mathbb{C}$. This is the table form of the statement that the complex structure of $\mathbb{B}$ lives in the coefficients and not in the multiplication, which is the reading of the multiplication tables in <em>Introduction to the Biquaternion Algebra</em>, §<em>The Multiplication Table</em>, and of the change of scalars in <em>The Realification and the Effect of the Change of Scalars</em>.</p>
 <hr />
@@ -91,213 +90,213 @@ $$</p>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$e_1$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$e_1$</td>
-<td>$-e_0$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$e_2$</td>
-<td>$-e_3$</td>
-<td>$-e_0$</td>
-<td>$e_1$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$e_3$</td>
-<td>$e_2$</td>
-<td>$-e_1$</td>
-<td>$-e_0$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The diagonal is $e_0,-e_0,-e_0,-e_0$; the imaginary block is the quaternion block. The table carries the antisymmetry of the three imaginary units, $e_je_k=-e_ke_j$ for $j\neq k$ in $\{1,2,3\}$.</p>
+<p>The diagonal is $e_t,-e_t,-e_t,-e_t$; the imaginary block is the quaternion block. The table carries the antisymmetry of the three imaginary units, $\vec e_\nu \vec e_\lambda = -\vec e_\lambda \vec e_\nu$ for $\nu \neq \lambda$ in $\{x,y,z\}$.</p>
 <p><strong>$\mathrm{GQA}$, the general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$e_1$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$-e_1$</td>
-<td>$e_0$</td>
-<td>$-e_3$</td>
-<td>$e_2$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
+<td>$e_t$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$-e_2$</td>
-<td>$e_3$</td>
-<td>$e_0$</td>
-<td>$-e_1$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_z$</td>
+<td>$e_t$</td>
+<td>$-\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$-e_3$</td>
-<td>$-e_2$</td>
-<td>$e_1$</td>
-<td>$e_0$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_x$</td>
+<td>$e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the quaternion table with the first imaginary factor negated, that is with the row sign changed on the three vector rows; the diagonal is $e_0$ throughout.</p>
+<p>The table is the quaternion table with the first imaginary factor negated, that is with the row sign changed on the three vector rows; the diagonal is $e_t$ throughout.</p>
 <p><strong>$\mathrm{GPS}$, the general plain sesquilinear product $\tilde P\tilde Q^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). It is the table read in <em>Introduction to the General Plain Sesqualgebra</em>, §<em>The Multiplication Table</em>, where it is computed as $e_\mu\star e_\nu=\varepsilon_\nu e_\mu e_\nu$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$-e_1$</td>
-<td>$-e_2$</td>
-<td>$-e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$-\vec e_x$</td>
+<td>$-\vec e_y$</td>
+<td>$-\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$e_1$</td>
-<td>$e_0$</td>
-<td>$-e_3$</td>
-<td>$e_2$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$e_t$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
-<td>$e_0$</td>
-<td>$-e_1$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
+<td>$e_t$</td>
+<td>$-\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
-<td>$e_1$</td>
-<td>$e_0$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_x$</td>
+<td>$e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The diagonal is $e_0$ throughout, the imaginary block anticommutes with the signs of the quaternion block, and the first row is the negation of the identity row, $e_0\star e_\nu=e^{*}_\nu$; the first row is the visible form of the one-sided unit.</p>
+<p>The diagonal is $e_t$ throughout, the imaginary block anticommutes with the signs of the quaternion block, and the first row is the negation of the identity row, $e_t\star e_\nu=e^{*}_\nu$; the first row is the visible form of the one-sided unit.</p>
 <p><strong>$\mathrm{GQS}$, the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$-e_1$</td>
-<td>$-e_2$</td>
-<td>$-e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$-\vec e_x$</td>
+<td>$-\vec e_y$</td>
+<td>$-\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$-e_1$</td>
-<td>$-e_0$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$-e_2$</td>
-<td>$-e_3$</td>
-<td>$-e_0$</td>
-<td>$e_1$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$-e_3$</td>
-<td>$e_2$</td>
-<td>$-e_1$</td>
-<td>$-e_0$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the table of $\mathrm{GPS}$ with the first slot read through the natural conjugation, that is with the row sign changed on the three vector rows; the diagonal is $e_0,-e_0,-e_0,-e_0$.</p>
+<p>The table is the table of $\mathrm{GPS}$ with the first slot read through the natural conjugation, that is with the row sign changed on the three vector rows; the diagonal is $e_t,-e_t,-e_t,-e_t$.</p>
 <h3 id="the-four-symmetric-tables">The Four Symmetric Tables</h3>
 <p><strong>$\mathrm{SPA}$, the symmetric plain bilinear product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Jordan product $\tilde P\bullet\tilde Q$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$e_1$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$e_1$</td>
-<td>$-e_0$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
 <td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$e_2$</td>
-<td>$e_2$</td>
-<td>$0$</td>
-<td>$-e_0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$e_3$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$0$</td>
+<td>$-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$-e_0$</td>
+<td>$-e_t$</td>
 </tr>
 </tbody>
 </table></div>
@@ -307,169 +306,169 @@ $$</p>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
+<td>$\vec e_y$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the identity table, $\delta_{\mu\nu}e_0$: the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$ read as a product, with the whole vector structure of the product gone.</p>
-<p><strong>$\mathrm{SPS}$, the symmetric plain sesquilinear product $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_0$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a product).</p>
+<p>The table is the identity table, $\delta_{\mu\nu}e_t$: the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$ read as a product, with the whole vector structure of the product gone.</p>
+<p><strong>$\mathrm{SPS}$, the symmetric plain sesquilinear product $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_t$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a product).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
+<td>$\vec e_y$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_0$</td>
+<td>$e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is the identity table again, $e_\mu\star e_\nu=\delta_{\mu\nu}e_0$, read on the basis in <em>Introduction to the Symmetric Plain Sesqualgebra</em>, §<em>The Multiplication Table of the Basis</em>.</p>
+<p>The table is the identity table again, $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, read on the basis in <em>Introduction to the Symmetric Plain Sesqualgebra</em>, §<em>The Multiplication Table of the Basis</em>.</p>
 <p><strong>$\mathrm{SQS}$, the symmetric quaternionic sesquilinear product $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
-<td>$e_0$</td>
-<td>$-e_1$</td>
-<td>$-e_2$</td>
-<td>$-e_3$</td>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$-\vec e_x$</td>
+<td>$-\vec e_y$</td>
+<td>$-\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$-e_1$</td>
-<td>$-e_0$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
 <td>$0$</td>
-<td>$0$</td>
-</tr>
-<tr>
-<td>$e_2$</td>
-<td>$-e_2$</td>
-<td>$0$</td>
-<td>$-e_0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$-e_3$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+<td>$0$</td>
+<td>$-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$-e_0$</td>
+<td>$-e_t$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is conjugate-symmetric, and its off-diagonal imaginary block vanishes; the first row and the first column are the two halves of the Hermitian conjugation, $e_0\star e_\nu=e^{*}_\nu$ and $e_\nu\star e_0=(e^{*}_\nu)^{\natural}$.</p>
+<p>The table is conjugate-symmetric, and its off-diagonal imaginary block vanishes; the first row and the first column are the two halves of the Hermitian conjugation, $e_t\star e_\nu=e^{*}_\nu$ and $e_\nu\star e_t=(e^{*}_\nu)^{\natural}$.</p>
 <h3 id="the-four-antisymmetric-tables">The Four Antisymmetric Tables</h3>
 <p><strong>$\mathrm{APA}$, the antisymmetric plain bilinear product $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Lie product $\tilde P\wedge\tilde Q$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
+<td>$\vec e_y$</td>
 <td>$0$</td>
-<td>$-e_3$</td>
+<td>$-\vec e_z$</td>
 <td>$0$</td>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
-<td>$e_2$</td>
-<td>$-e_1$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
 <td>$0$</td>
 </tr>
 </tbody>
@@ -480,82 +479,82 @@ $$</p>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
-<td>$e_1$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$-e_1$</td>
+<td>$\vec e_x$</td>
+<td>$-\vec e_x$</td>
 <td>$0$</td>
-<td>$-e_3$</td>
-<td>$e_2$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$-e_2$</td>
-<td>$e_3$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
-<td>$-e_1$</td>
+<td>$-\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$-e_3$</td>
-<td>$-e_2$</td>
-<td>$e_1$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The table is alternating, but its identity row and column do <strong>not</strong> vanish: the block is the mixed term $P_0\vec Q-Q_0\vec P$ with the cross term removed, and the mixed term survives on the identity.</p>
+<p>The table is alternating, but its identity row and column do <strong>not</strong> vanish: the block is the mixed term $P_t\vec Q-Q_t\vec P$ with the cross term removed, and the mixed term survives on the identity.</p>
 <p><strong>$\mathrm{APS}$, the antisymmetric plain sesquilinear product $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*})$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
-<td>$-e_1$</td>
-<td>$-e_2$</td>
-<td>$-e_3$</td>
+<td>$-\vec e_x$</td>
+<td>$-\vec e_y$</td>
+<td>$-\vec e_z$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
-<td>$-e_3$</td>
-<td>$e_2$</td>
+<td>$-\vec e_z$</td>
+<td>$\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
-<td>$e_2$</td>
-<td>$e_3$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
-<td>$-e_1$</td>
+<td>$-\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
-<td>$e_1$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
 </tr>
 </tbody>
@@ -566,39 +565,39 @@ $$</p>
 <thead>
 <tr>
 <th>$\star$</th>
-<th>$e_0$</th>
-<th>$e_1$</th>
-<th>$e_2$</th>
-<th>$e_3$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$e_0$</td>
+<td>$e_t$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 <td>$0$</td>
 <td>$0$</td>
-<td>$e_3$</td>
-<td>$-e_2$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
 </tr>
 <tr>
-<td>$e_2$</td>
+<td>$\vec e_y$</td>
 <td>$0$</td>
-<td>$-e_3$</td>
+<td>$-\vec e_z$</td>
 <td>$0$</td>
-<td>$e_1$</td>
+<td>$\vec e_x$</td>
 </tr>
 <tr>
-<td>$e_3$</td>
+<td>$\vec e_z$</td>
 <td>$0$</td>
-<td>$e_2$</td>
-<td>$-e_1$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
 <td>$0$</td>
 </tr>
 </tbody>
@@ -634,46 +633,46 @@ $$</p>
 <p>entry by entry. The four general tables are therefore the sums of the eight part tables, and the twelve tables carry the reconstruction of <em>The 12 Products of the Biquaternioid Complex Space</em>, §<em>The Reconstruction, Product by Product</em>, read on the basis.</p>
 <p><strong>Remark (the four general tables are the independent data).</strong> The eight part tables are read from the four general tables by the eight entrywise formulas above, so the table data of the twelve is the table data of the four. This is the table form of the statement that the twelve products are generated by the four general products and their exchange; it is a relation among the twelve and not a construction of any one of them from another.</p>
 <h3 id="the-ten-distinct-tables">The Ten Distinct Tables</h3>
-<p>The basis $e_0,e_1,e_2,e_3$ is a real basis, and the coefficientwise conjugation fixes it, $\overline{e_\mu}=e_\mu$. Two of the coincidences that the corpus records on the real forms therefore show up on the basis, at the level of the tables.</p>
-<p><strong>Theorem (the ten distinct tables).</strong> On the four-element basis $e_0,e_1,e_2,e_3$ the twelve tables take exactly ten distinct values. The table of $\mathrm{SQA}$ equals the table of $\mathrm{SPS}$, both the identity table $\delta_{\mu\nu}e_0$, and the table of $\mathrm{AQS}$ equals the table of $\mathrm{APA}$, both the cross-product table. Every other pair of the twelve has distinct tables.</p>
-<p><em>Proof.</em> The twelve tables are the twelve arrays of §<em>The Twelve Tables</em>; comparing them entry by entry, the only coincidences are the two stated. The first is the equality of the two diagonals $\delta_{\mu\nu}e_0$ computed from $\mathrm{SQA}$ and from $\mathrm{SPS}$; the second is the equality of the two cross-product tables computed from $\mathrm{APA}$ and from $\mathrm{AQS}$, whose $\overline{\vec Q}$ reduces to $\vec Q$ on the real basis elements.</p>
+<p>The basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is a real basis, and the coefficientwise conjugation fixes it, $\overline{e_\mu}=e_\mu$. Two of the coincidences that the corpus records on the real forms therefore show up on the basis, at the level of the tables.</p>
+<p><strong>Theorem (the ten distinct tables).</strong> On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables take exactly ten distinct values. The table of $\mathrm{SQA}$ equals the table of $\mathrm{SPS}$, both the identity table $\delta_{\mu\nu}e_t$, and the table of $\mathrm{AQS}$ equals the table of $\mathrm{APA}$, both the cross-product table. Every other pair of the twelve has distinct tables.</p>
+<p><em>Proof.</em> The twelve tables are the twelve arrays of §<em>The Twelve Tables</em>; comparing them entry by entry, the only coincidences are the two stated. The first is the equality of the two diagonals $\delta_{\mu\nu}e_t$ computed from $\mathrm{SQA}$ and from $\mathrm{SPS}$; the second is the equality of the two cross-product tables computed from $\mathrm{APA}$ and from $\mathrm{AQS}$, whose $\overline{\vec Q}$ reduces to $\vec Q$ on the real basis elements.</p>
 <p><strong>Corollary (the class separates each coincident pair).</strong> The pair $\mathrm{SQA},\mathrm{SPS}$ has one table and two products, and the pair $\mathrm{APA},\mathrm{AQS}$ likewise. In each pair the two members have the same table and differ in the class: $\mathrm{SQA}$ is $\mathbb{C}$-bilinear and $\mathrm{SPS}$ sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, and $\mathrm{APA}$ is $\mathbb{C}$-bilinear and $\mathrm{AQS}$ sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$. The table and the class together separate the pair, and the table alone does not; this is the caution of §<em>The Table of a Product</em>.</p>
 <p><strong>Remark (the separation, on the smallest element off the basis).</strong> The two members of each coincident pair differ as soon as a complex element enters. For the first pair,</p>
 <p>$$
-e_1\star e_1=e_0 \quad\text{for both, while}\quad e_1\star(ie_1)=+ie_0 \text{ for } \mathrm{SQA} \text{ and } -ie_0 \text{ for } \mathrm{SPS},
+\vec e_x\star \vec e_x=e_t \quad\text{for both, while}\quad \vec e_x\star(i\vec e_x)=+ie_t \text{ for } \mathrm{SQA} \text{ and } -ie_t \text{ for } \mathrm{SPS},
 $$</p>
 <p>and for the second pair,</p>
 <p>$$
-e_1\star e_2=e_3 \quad\text{for both, while}\quad e_1\star(ie_2)=+ie_3 \text{ for } \mathrm{APA} \text{ and } -ie_3 \text{ for } \mathrm{AQS}.
+\vec e_x\star \vec e_y=\vec e_z \quad\text{for both, while}\quad \vec e_x\star(i\vec e_y)=+i\vec e_z \text{ for } \mathrm{APA} \text{ and } -i\vec e_z \text{ for } \mathrm{AQS}.
 $$</p>
 <p>In each case the bilinear member reads the coefficient $i$ as it stands and the sesquilinear member reads its conjugate $-i$, so the two members differ by the sign of the central imaginary alone. The differences were recomputed at the two elements.</p>
 <p><strong>Remark (the table reading of the ten on the real part).</strong> The fall from twelve tables to ten is the table form of the corpus's statement that the twelve products fall to ten operations on the real part of the space, where the antisymmetric plain bilinear product equals the antisymmetric quaternionic sesquilinear product and the symmetric plain sesquilinear product equals the symmetric quaternionic bilinear product (<em>The 12 Products of the Biquaternioid Complex Space</em>, §<em>The Twelve Are Distinct, and Ten on the Real Part</em>). The basis is the smallest real form, and it already sees the two coincidences; a computation on the basis alone therefore cannot separate the members of either pair, and the class is the datum that restores the distinction. The four general tables, and with them the eight part tables by the entrywise identities, are pairwise distinct and are unaffected by the collapse.</p>
 <h3 id="the-ten-tables-and-the-twelve-structures">The Ten Tables and the Twelve Structures</h3>
-<p>The count of ten is the count of $4\times4$ tables on the four-element basis $e_0,e_1,e_2,e_3$. That basis is a <strong>real</strong> basis of $\mathbb{B}$, and the two colliding pairs are separated as soon as the basis is enlarged to a real basis of the real vector space $\mathbb{B}$, which is eight-dimensional.</p>
-<p><strong>Theorem (the twelve tables of the real basis).</strong> Let $g_0,\dots,g_7$ be the eight-element real basis $g_0=e_0$, $g_1=e_1$, $g_2=e_2$, $g_3=e_3$, $g_{4+\mu}=ie_\mu$. Each of the twelve products is $\mathbb{R}$-bilinear, so each is determined by its $8\times8$ table of values $g_m\star g_n$ in $\mathbb{B}$. The twelve $8\times8$ tables are pairwise distinct.</p>
+<p>The count of ten is the count of $4\times4$ tables on the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$. That basis is a <strong>real</strong> basis of $\mathbb{B}$, and the two colliding pairs are separated as soon as the basis is enlarged to a real basis of the real vector space $\mathbb{B}$, which is eight-dimensional.</p>
+<p><strong>Theorem (the twelve tables of the real basis).</strong> Let $g_0,\dots,g_7$ be the eight-element real basis $g_0=e_t$, $g_1=\vec e_x$, $g_2=\vec e_y$, $g_3=\vec e_z$, $g_{4+\mu}=ie_\mu$. Each of the twelve products is $\mathbb{R}$-bilinear, so each is determined by its $8\times8$ table of values $g_m\star g_n$ in $\mathbb{B}$. The twelve $8\times8$ tables are pairwise distinct.</p>
 <p><em>Proof.</em> Each product is additive in each variable, and each of the two scalar rules reads the coefficients $\mathbb{R}$-linearly — the bilinear rule plainly, the sesquilinear rule through the conjugation, which is $\mathbb{R}$-linear; so each product is $\mathbb{R}$-bilinear and is determined by its values on the $8\times8$ pairs of the real basis. For distinctness, every pair of the twelve other than the two collisions already has distinct $4\times4$ tables by §<em>The Ten Distinct Tables</em>, so only the two collisions have to be separated; and with the two displayed pairs,</p>
 <p>$$
-e_1\star e_1=e_0 \ \text{for both}\ \mathrm{SQA}\ \text{and}\ \mathrm{SPS},
+\vec e_x\star \vec e_x=e_t \ \text{for both}\ \mathrm{SQA}\ \text{and}\ \mathrm{SPS},
 \qquad
-e_1\star(ie_1)=+ie_0\ \text{for}\ \mathrm{SQA}\ \text{and}\ -ie_0\ \text{for}\ \mathrm{SPS},
+\vec e_x\star(i\vec e_x)=+ie_t\ \text{for}\ \mathrm{SQA}\ \text{and}\ -ie_t\ \text{for}\ \mathrm{SPS},
 $$</p>
 <p>$$
-e_1\star e_2=e_3 \ \text{for both}\ \mathrm{APA}\ \text{and}\ \mathrm{AQS},
+\vec e_x\star \vec e_y=\vec e_z \ \text{for both}\ \mathrm{APA}\ \text{and}\ \mathrm{AQS},
 \qquad
-e_1\star(ie_2)=+ie_3\ \text{for}\ \mathrm{APA}\ \text{and}\ -ie_3\ \text{for}\ \mathrm{AQS},
+\vec e_x\star(i\vec e_y)=+i\vec e_z\ \text{for}\ \mathrm{APA}\ \text{and}\ -i\vec e_z\ \text{for}\ \mathrm{AQS},
 $$</p>
-<p>the bilinear member carrying the coefficient $i$ as it stands and the sesquilinear member carrying its conjugate $-i$. Hence the two members of each colliding pair have distinct $8\times8$ tables, and the twelve are pairwise distinct. The two displayed entries were recomputed at the pairs $(e_1,ie_1)$ and $(e_1,ie_2)$.</p>
+<p>the bilinear member carrying the coefficient $i$ as it stands and the sesquilinear member carrying its conjugate $-i$. Hence the two members of each colliding pair have distinct $8\times8$ tables, and the twelve are pairwise distinct. The two displayed entries were recomputed at the pairs $(\vec e_x,i\vec e_x)$ and $(\vec e_x,i\vec e_y)$.</p>
 <p><strong>Corollary (ten tables, twelve structures).</strong> The count of distinct tables is ten on the four-element basis and twelve on the eight-element real basis, while the count of structures is <strong>twelve</strong> in both readings. A structure is a product on the complex space, and its datum is the table <strong>together with the class</strong>: the two members of each colliding pair of $4\times4$ tables have different classes, one $\mathbb{C}$-bilinear and one sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, so the twelve pairs (table, class) are distinct. The ten is the count that forgets the class; it is equivalently the count of distinct products restricted to the real part of the space, which is the count of <em>The 12 Products of the Biquaternioid Complex Space</em>, §<em>The Twelve Are Distinct, and Ten on the Real Part</em>. Read on the eight-element real basis the class is no longer needed to separate the twelve, and the $8\times8$ tables are the ordinary multiplication tables of the twelve as real multiplications on the eight-dimensional real space $\mathbb{B}$.</p>
 <h3 id="what-the-tables-decide">What the Tables Decide</h3>
 <p><strong>The class.</strong> The last letter of the code is the class, and the tables exhibit it: the six tables of the codes ending in $\mathrm{A}$ are read by the bilinear rule and the six ending in $\mathrm{S}$ by the sesquilinear rule, and the two readings of one table differ whenever the second factor has a non-real coefficient.</p>
-<p><strong>The unit.</strong> A right unit of $\star$ is an element $e$ with $T(\star)_{\mu e}=e_\mu$ for every $\mu$, and a left unit one with $T(\star)_{e\nu}=e_\nu$ for every $\nu$; the tables therefore exhibit the units. The identity column of $T(\mathrm{GPA})$ reproduces the basis, so $e_0$ is a two-sided unit; the identity column of $T(\mathrm{GPS})$ reproduces the basis and the identity row is its negation, so $e_0$ is a right unit and not a left one; the identity row of $T(\mathrm{GQA})$ reproduces the basis and the identity column is its negation, so $e_0$ is a left unit and not a right one; and $T(\mathrm{GQS})$ has neither, its identity row and column both negating the basis. The one-sided units of the four general products are read in <em>Comparison Between the Four General Products</em> and <em>Introduction to the General Plain Sesqualgebra</em>, §<em>The Right Unit</em>.</p>
+<p><strong>The unit.</strong> A right unit of $\star$ is an element $e$ with $T(\star)_{\mu e}=e_\mu$ for every $\mu$, and a left unit one with $T(\star)_{e\nu}=e_\nu$ for every $\nu$; the tables therefore exhibit the units. The identity column of $T(\mathrm{GPA})$ reproduces the basis, so $e_t$ is a two-sided unit; the identity column of $T(\mathrm{GPS})$ reproduces the basis and the identity row is its negation, so $e_t$ is a right unit and not a left one; the identity row of $T(\mathrm{GQA})$ reproduces the basis and the identity column is its negation, so $e_t$ is a left unit and not a right one; and $T(\mathrm{GQS})$ has neither, its identity row and column both negating the basis. The one-sided units of the four general products are read in <em>Comparison Between the Four General Products</em> and <em>Introduction to the General Plain Sesqualgebra</em>, §<em>The Right Unit</em>.</p>
 <p><strong>The commutativity and the alternation.</strong> A table for a $\mathbb{C}$-bilinear product is commutative exactly when it is symmetric, $T_{\mu\nu}=T_{\nu\mu}$, and alternating exactly when it is antisymmetric with zero diagonal; the tables of $\mathrm{SPA}$ and $\mathrm{SQA}$ are symmetric and those of $\mathrm{APA}$ and $\mathrm{AQA}$ are antisymmetric with zero diagonal, as the symmetries of the parts require. For a sesquilinear product the corresponding symmetries are read up to the coefficientwise conjugation, $T_{\mu\nu}=\overline{T_{\nu\mu}}$ for the conjugate-commutative blocks $\mathrm{SPS}$ and $\mathrm{SQS}$, and $T_{\mu\nu}=-\overline{T_{\nu\mu}}$ for the conjugate-alternating blocks $\mathrm{APS}$ and $\mathrm{AQS}$, the latter two with vanishing diagonal.</p>
 <p><strong>What the tables do not decide.</strong> The table of a product places the sixteen basis products and nothing else; the associativity, the Jacobi and the Jordan identities, the zero divisors, the ideals and the representations of the product are not read off the table without the extension, and even with the extension they are the matter of the structure articles. <em>The 12 Products of the Biquaternioid Complex Space</em> owns the laws and the failures, and the twelve structure articles own the objects.</p>
 <hr />
 <h2 id="summary">Summary</h2>
-<p>Each of the twelve products carried by the complex space of the biquaternion algebra is additive in each argument and obeys one of two scalar rules, so it is fixed by its sixteen values on the pairs of basis elements. Those values are the multiplication table of the product, and the table together with the class — $\mathbb{C}$-bilinear for a code ending in $\mathrm{A}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ for a code ending in $\mathrm{S}$ — determines the product and is determined by it. The table alone does not determine the product, and the class is not decoration: two of the twelve pairs of products share a $4\times4$ table on the real basis $e_0,e_1,e_2,e_3$ and are separated by the class alone.</p>
+<p>Each of the twelve products carried by the complex space of the biquaternion algebra is additive in each argument and obeys one of two scalar rules, so it is fixed by its sixteen values on the pairs of basis elements. Those values are the multiplication table of the product, and the table together with the class — $\mathbb{C}$-bilinear for a code ending in $\mathrm{A}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ for a code ending in $\mathrm{S}$ — determines the product and is determined by it. The table alone does not determine the product, and the class is not decoration: two of the twelve pairs of products share a $4\times4$ table on the real basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and are separated by the class alone.</p>
 <p>The twelve tables are written out, one to a product, in the three groups general, symmetric, antisymmetric. Their entries are $0$ or a basis element up to sign; the central imaginary $i$ occurs in none, because the four-element basis is real and closed under the conjugations up to sign. The table of a symmetric or an antisymmetric part is the entrywise symmetrisation or antisymmetrisation of the table of its parent, under the interchange in the two $\mathbb{C}$-bilinear families and under the interchange followed by the coefficientwise conjugation in the two sesquilinear families, so the four general tables are the independent table data and the reconstruction of each general product from its two parts holds entry by entry.</p>
-<p>On the four-element basis $e_0,e_1,e_2,e_3$ the twelve tables take ten distinct values. The table of $\mathrm{SQA}$ equals the table of $\mathrm{SPS}$, both the identity table, and the table of $\mathrm{AQS}$ equals the table of $\mathrm{APA}$, both the cross-product table; every other pair is distinct. The two collisions are the table form of the fall of the twelve products to ten operations on the real part, and each pair is separated by the class, or by the sign of the central imaginary at the smallest complex element off the basis. On the eight-element real basis $g_0,\dots,g_7=\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$ the twelve tables are pairwise distinct, the two collisions above being separated there by the entries carrying $i$. The count of <strong>structures</strong> is twelve in both readings: a structure is a product on the complex space, its datum is the table together with the class, and the two members of each colliding pair have different classes.</p>
+<p>On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables take ten distinct values. The table of $\mathrm{SQA}$ equals the table of $\mathrm{SPS}$, both the identity table, and the table of $\mathrm{AQS}$ equals the table of $\mathrm{APA}$, both the cross-product table; every other pair is distinct. The two collisions are the table form of the fall of the twelve products to ten operations on the real part, and each pair is separated by the class, or by the sign of the central imaginary at the smallest complex element off the basis. On the eight-element real basis $g_0,\dots,g_7=\{e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the twelve tables are pairwise distinct, the two collisions above being separated there by the entries carrying $i$. The count of <strong>structures</strong> is twelve in both readings: a structure is a product on the complex space, its datum is the table together with the class, and the two members of each colliding pair have different classes.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -685,10 +684,10 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
-<td>the biquaternion algebra, basis $e_0,e_1,e_2,e_3$, central imaginary $i$</td>
+<td>the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, central imaginary $i$</td>
 </tr>
 <tr>
-<td>$\tilde Q=Q_0e_0+\vec Q$</td>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
 <td>a biquaternion, its scalar and vector parts</td>
 </tr>
 <tr>

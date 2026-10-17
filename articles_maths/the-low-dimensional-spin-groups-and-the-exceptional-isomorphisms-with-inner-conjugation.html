@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -110,9 +109,9 @@ $$</p>
 <p>The spin group is the group of even versors of norm one inside this algebra, so the table is the list of the algebras in which the low-dimensional spin groups live.</p>
 <h2 id="two-three-and-four-dimensions">Two, Three and Four Dimensions</h2>
 <h3 id="the-spin-group-in-two-dimensions">The Spin Group in Two Dimensions</h3>
-<p><strong>Theorem.</strong> $\mathrm{Spin}(2)\cong U(1)$, and the double cover $\mathrm{Spin}(2)\to SO(2)$ is the squaring map of $\operatorname{SO}(2)$, of kernel $\{\pm1\}$, so that the two groups are isomorphic as abstract groups while the covering is still two-to-one.</p>
-<p><strong>Proof.</strong> By the table $\mathrm{Cl}^0_{2,0}\cong\mathbb{C}$, with the generator $e_1e_2$ of square $-1$; an element $x=a+be_1e_2$ has norm $N(x)=a^2+b^2$, so the even versors of norm one are the norm-one elements $U(1)$, and the map of the covering is written as $z\mapsto z^2$: the rotor of parameter $\theta/2$ produces the rotation with parameter $\theta$, as in <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>, so the covering is two-to-one.</p>
-<p><strong>Remark.</strong> The case of the plane is the one in which the two groups are abstractly isomorphic, $\mathrm{Spin}(2)\cong SO(2)\cong U(1)$, even though the covering map is not an isomorphism but the squaring map; it is also the case in which the spinor module is one-dimensional: the weights are $\pm\tfrac12$, which for $n=2$ is the pair of weights of the one-dimensional complex module of $U(1)$ with the half-integral charge. The covering is two-to-one for every $n\ge2$; what is special about the plane is only that the two groups are abstractly the same group, so that the kernel $\{\pm1\}$ is realised inside the group and the covering is the self-map $z\mapsto z^2$ rather than a map between different groups.</p>
+<p><strong>Theorem.</strong> $\mathrm{Spin}(2)\cong \mathrm{U}(1)$, and the double cover $\mathrm{Spin}(2)\to SO(2)$ is the squaring map of $\operatorname{SO}(2)$, of kernel $\{\pm1\}$, so that the two groups are isomorphic as abstract groups while the covering is still two-to-one.</p>
+<p><strong>Proof.</strong> By the table $\mathrm{Cl}^0_{2,0}\cong\mathbb{C}$, with the generator $e_1e_2$ of square $-1$; an element $x=a+be_1e_2$ has norm $N(x)=a^2+b^2$, so the even versors of norm one are the norm-one elements $\mathrm{U}(1)$, and the map of the covering is written as $z\mapsto z^2$: the rotor of parameter $\theta/2$ produces the rotation with parameter $\theta$, as in <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>, so the covering is two-to-one.</p>
+<p><strong>Remark.</strong> The case of the plane is the one in which the two groups are abstractly isomorphic, $\mathrm{Spin}(2)\cong SO(2)\cong \mathrm{U}(1)$, even though the covering map is not an isomorphism but the squaring map; it is also the case in which the spinor module is one-dimensional: the weights are $\pm\tfrac12$, which for $n=2$ is the pair of weights of the one-dimensional complex module of $\mathrm{U}(1)$ with the half-integral charge. The covering is two-to-one for every $n\ge2$; what is special about the plane is only that the two groups are abstractly the same group, so that the kernel $\{\pm1\}$ is realised inside the group and the covering is the self-map $z\mapsto z^2$ rather than a map between different groups.</p>
 <h3 id="the-spin-group-in-three-dimensions">The Spin Group in Three Dimensions</h3>
 <p><strong>Theorem.</strong> $\mathrm{Spin}(3)\cong Sp(1)\cong SU(2)$, the group of unit quaternions.</p>
 <p><strong>Proof.</strong> By the table $\mathrm{Cl}^0_{3,0}\cong\mathbb{H}$. Write $i=e_2e_3$, $j=e_3e_1$, $k=e_1e_2$, so that $i^2=j^2=k^2=-1$ and $ij=-ji=-k$, this labelling being the orientation-reversing one of <em>Versors, Rotors and the Sandwich Action with Signed Inner Conjugation</em>; the even part is thus a copy of $\mathbb{H}$, and an even element $x=a+bi+cj+dk$ has norm $N(x)=x\bar x=a^2+b^2+c^2+d^2$, the square of the Euclidean norm of the coefficient vector. The even versors of norm one are therefore the elements of $\mathbb{H}$ of unit norm, which is $Sp(1)$; the identification with $SU(2)$ is the standard one, in which $i,j,k$ are sent to the Pauli matrices multiplied by $-i$.</p>
@@ -131,7 +130,7 @@ $$</p>
 <p><strong>Remark.</strong> The isomorphism reflects the coincidence of Dynkin diagrams $B_2\cong C_2$, that is $\mathrm{SO}(5,\mathbb{C})\cong\mathrm{Sp}(2,\mathbb{C})$, recorded in <em>Root Systems and Classification</em>. The representation theory is the same on both sides: the spinor module of $\mathrm{SO}(5)$ is the defining module of $\mathrm{Sp}(2)$, which is self-dual.</p>
 <h3 id="the-spin-group-in-six-dimensions">The Spin Group in Six Dimensions</h3>
 <p><strong>Theorem.</strong> $\mathrm{Spin}(6)\cong SU(4)$, and the two half-spinor modules are the defining representation of $SU(4)$ and its dual.</p>
-<p><strong>Proof.</strong> By the table $\mathrm{Cl}^0_{6,0}\cong M_4(\mathbb{C})$; the spin group acts on the spinor module $\mathbb{C}^4$ through this algebra, preserving the Hermitian form that the Clifford norm defines on the module, and the volume element provides the complex structure, so the image lies in $U(4)$; the determinant of the image is one, because the spin group is perfect and has no nontrivial homomorphism to an abelian group, so the image lies in $SU(4)$, of dimension $15$, equal to the dimension of $SO(6)$. The two half-spinor modules are the eigenspaces of the volume element, of dimension four each, and they are the defining representation $4$ and its dual $\bar4$ of $SU(4)$.</p>
+<p><strong>Proof.</strong> By the table $\mathrm{Cl}^0_{6,0}\cong M_4(\mathbb{C})$; the spin group acts on the spinor module $\mathbb{C}^4$ through this algebra, preserving the Hermitian form that the Clifford norm defines on the module, and the volume element provides the complex structure, so the image lies in $\mathrm{U}(4)$; the determinant of the image is one, because the spin group is perfect and has no nontrivial homomorphism to an abelian group, so the image lies in $SU(4)$, of dimension $15$, equal to the dimension of $SO(6)$. The two half-spinor modules are the eigenspaces of the volume element, of dimension four each, and they are the defining representation $4$ and its dual $\bar4$ of $SU(4)$.</p>
 <p><strong>Remark.</strong> The isomorphism reflects the coincidence $D_3\cong A_3$, that is $\mathrm{SO}(6,\mathbb{C})\cong\mathrm{SL}(4,\mathbb{C})$, and the two half-spinors correspond to the two ends of the Dynkin diagram of $A_3$, which is the reason they are dual to one another: the diagram has an outer automorphism, and it interchanges the two modules. In the language of the next section, the diagram of $D_3$ is the diagram of $A_3$ relabelled, and the chiral splitting of the spinor module is the splitting of the defining representation of the linear algebra from its dual.</p>
 <h2 id="the-real-forms">The Real Forms</h2>
 <p>The same coincidences hold for the real forms, where they are the classical isomorphisms between the groups of the Lorentzian and split signatures.</p>
@@ -155,7 +154,7 @@ $$</p>
 $$</p>
 <p>The spin group is the group of even versors of norm one inside that algebra, and in the first four cases the algebra is one whose norm-one part is a classical group. The resulting isomorphisms are</p>
 <p>$$
-\mathrm{Spin}(2)\cong U(1),\quad \mathrm{Spin}(3)\cong Sp(1)\cong SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1),
+\mathrm{Spin}(2)\cong \mathrm{U}(1),\quad \mathrm{Spin}(3)\cong Sp(1)\cong SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1),
 $$</p>
 <p>$$
 \mathrm{Spin}(5)\cong Sp(2),\qquad \mathrm{Spin}(6)\cong SU(4),
@@ -184,7 +183,7 @@ $$</p>
 <td>Symplectic group of rank two</td>
 </tr>
 <tr>
-<td>$U(1)$, $SU(2)$, $SU(4)$</td>
+<td>$\mathrm{U}(1)$, $SU(2)$, $SU(4)$</td>
 <td>The unitary groups of the low-dimensional cases</td>
 </tr>
 <tr>

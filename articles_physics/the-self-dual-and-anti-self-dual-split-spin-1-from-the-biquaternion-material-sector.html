@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,9 +58,9 @@
 $$</p>
 <p>The two halves are then the two eigenspaces of that single complex structure, and each is, on restriction to the rotation group, a spin-one object. This is what the phrase "spin one from the material sector" means precisely: spin one is not an irreducible module of the algebra, it is a three-dimensional complex representation carried by the vector part of the algebra, equivalently by the antisymmetric tensors built from the four-vectors of $\mathbb{M}_-$.</p>
 <p>The article is organised as follows. The first section recalls why integer spin requires a representation that the spinor module does not provide: the four-vector representation of the Lorentz group is $(\tfrac12,\tfrac12)$, which on restriction to rotations contains spin one and spin zero, while the antisymmetric tensor representation is $(1,0)\oplus(0,1)$, which is pure spin one. The second identifies the carrier inside the algebra: the six-dimensional real vector part $\mathrm{Vect}(\mathbb{B})$, which is at once the real field-strength space and the Lorentz Lie algebra. The third defines the Hodge dual on it and proves the identity above, which is linear in the field and therefore holds for a superposition of fields and not only for a single Fourier mode. The fourth constructs the projectors and the split, the fifth reads off the spin content of each half, and the sixth connects the split to duality rotations and to the two helicities of the massless field. A closing section states where the split sits in the algebra's module category and where it does not, which is the boundary that the final article of this subcategory draws in general.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with conjugate $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial_{ict}^2 + \Delta$. The potential and field strength are</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, with conjugate $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial^2/\partial Q_t^2 + \Delta$. The potential and field strength are</p>
 <p>$$
-\tilde{A} = \frac{i\phi}{c}\,e_0 + \vec A, \qquad
+\tilde{A} = \frac{i\phi}{c}\,e_t + \vec A, \qquad
 \tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$</p>
 <p>with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.</p>
@@ -80,16 +79,16 @@ $$</p>
 <p>The dimension count is worth recording because it is the whole content of the split. A real two-form has six real components, which is the same as a complex three-vector; the complexification of the two-form space doubles it to six complex components, and the Hodge dual, whose square is $-1$, separates those six complex components into two three-dimensional complex eigenspaces. The two eigenspaces are the two summands $(1,0)$ and $(0,1)$, and the real two-form is the real form on which the two halves are conjugate.</p>
 <h2 id="the-carrier-inside-the-algebra">The Carrier Inside the Algebra</h2>
 <h3 id="the-vector-part-is-the-bivector-space">The vector part is the bivector space</h3>
-<p>An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ with $Q_\mu \in \mathbb{C}$. The <strong>vector part</strong> is the space of elements with vanishing scalar part,</p>
+<p>An element of $\mathbb{B}$ is written in components as $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ with $Q_\mu \in \mathbb{C}$. The <strong>vector part</strong> is the space of elements with vanishing scalar part,</p>
 <p>$$
-\mathrm{Vect}(\mathbb{B}) = \{\,Q_1e_1 + Q_2e_2 + Q_3e_3\,\},
+\mathrm{Vect}(\mathbb{B}) = \{\,Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z\,\},
 $$</p>
-<p>a complex vector space of dimension three, equivalently a real vector space of dimension six with basis $\{e_1,e_2,e_3,ie_1,ie_2,ie_3\}$. The same six real basis elements are the six bivectors of the Clifford algebra $\mathrm{Cl}_{1,3}$: the three spatial rotation generators are the images of $e_k$, and the three boost generators are the images of $ie_k$. The real vector part is therefore at once</p>
+<p>a complex vector space of dimension three, equivalently a real vector space of dimension six with basis $\{\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z\}$. The same six real basis elements are the six bivectors of the Clifford algebra $\mathrm{Cl}_{1,3}$: the three spatial rotation generators are the images of $\vec e_k$, and the three boost generators are the images of $i\vec e_k$. The real vector part is therefore at once</p>
 <ul>
 <li>the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\vec E,\vec B)$; and</li>
 <li>the Lorentz Lie algebra $\mathrm{SO}(1,3)$ of rotations and boosts, with the commutator bracket.</li>
 </ul>
-<p>That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_0, e_1, e_2, e_3$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.</p>
+<p>That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_t, \vec e_x, \vec e_y, \vec e_z$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.</p>
 <h3 id="the-field-strength-as-a-vector-of-the-algebra">The field strength as a vector of the algebra</h3>
 <p>The field-strength biquaternion of the companion article is a pure vector,</p>
 <p>$$
@@ -217,7 +216,7 @@ $$</p>
 <p>The split has been constructed on the vector part of the algebra, and the closing observation is that this is the correct location and not an accident. Three statements hold.</p>
 <p>First, the carrier of the split is <strong>not a module</strong> over $\mathbb{B}$. The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple, its only simple module is the two-dimensional spinor module $S$, and every finite-dimensional module over it is a direct sum of copies of $S$. The vector part is not such a sum: it is not closed under left multiplication by a general element of $\mathbb{B}$, only under multiplication by central scalars and by the adjoint action. The self-dual half is the symmetric square of the defining module, of complex dimension three, and no module over a full matrix algebra has odd complex dimension. The split therefore lives in the <strong>tensor</strong> category generated by the defining module and its conjugate, not in the module category of the algebra.</p>
 <p>Second, the four-vector representation from which the two-form was built is itself carried by the algebra by <strong>conjugation</strong>, not by multiplication, and the same remark applies to it: $\mathbb{M}_-$ is a real form of the $(\tfrac12,\tfrac12)$ representation, and it is not a module over $\mathbb{B}$ either. The integer-spin representations of the framework are all of this kind.</p>
-<p>Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_k = \tfrac12\mathrm{ad}_{e_k}$, with $\mathrm{ad}_{e_k}(\tilde{Q}) = [e_k,\tilde{Q}]$, are a basis of the rotation algebra inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ and $\mathrm{span}_\mathbb{R}\{ie_1,ie_2,ie_3\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(e_2)=e_3$ and $D_1(e_3)=-e_2$, and the same relations hold with $e_k$ replaced by $ie_k$ throughout. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into two spin-one triples, one per chirality. That is the Lie-algebra form of the same statement that the Hodge dual makes about the field strength, and the structural reason the two descriptions agree is that both are the antisymmetric square of the material sector.</p>
+<p>Third, the adjoint action of the algebra on itself exhibits the spin-one algebra directly. The inner derivations $D_k = \tfrac12\mathrm{ad}_{\vec e_k}$, with $\mathrm{ad}_{\vec e_k}(\tilde{Q}) = [\vec e_k,\tilde{Q}]$, are a basis of the rotation algebra inside the traceless part, and they preserve the two real triples $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\mathrm{span}_\mathbb{R}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, acting on each as an irreducible three-dimensional angular momentum: for instance $D_1(\vec e_y)=\vec e_z$ and $D_1(\vec e_z)=-\vec e_y$, and the same relations hold with $\vec e_k$ replaced by $i\vec e_k$ throughout. The six-dimensional real vector part, read as a Lie algebra rather than as a field-strength space, therefore splits under its own rotation subalgebra into two spin-one triples, one per chirality. That is the Lie-algebra form of the same statement that the Hodge dual makes about the field strength, and the structural reason the two descriptions agree is that both are the antisymmetric square of the material sector.</p>
 <p>The general statement that these observations point to — that the algebra's own module category contains only spin zero and spin one-half, and that integer and higher spin arrive through tensor products of the defining module — is the subject of the final article of this subcategory, which uses the explicit spin-one and spin-$\tfrac32$ cases constructed here and in its two companions.</p>
 <p>The conventions of the construction are those of three companion articles:</p>
 <ul>
@@ -247,8 +246,8 @@ $$</p>
 <td>Biquaternion algebra, isomorphic to $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -264,10 +263,10 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{\nabla}, \tilde{\nabla}^{\natural}$</td>
-<td>Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$</td>
+<td>Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$</td>
 </tr>
 <tr>
-<td>$\tilde{A} = i\phi/c\,e_0 + \vec A$</td>
+<td>$\tilde{A} = i\phi/c\,e_t + \vec A$</td>
 <td>Four-potential biquaternion</td>
 </tr>
 <tr>
@@ -308,7 +307,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{U}\in SL(2,\mathbb{C})$</td>
-<td>Lorentz rotor, $\tilde{U}\tilde{U}^{\natural}=e_0$</td>
+<td>Lorentz rotor, $\tilde{U}\tilde{U}^{\natural}=e_t$</td>
 </tr>
 </tbody>
 </table></div>

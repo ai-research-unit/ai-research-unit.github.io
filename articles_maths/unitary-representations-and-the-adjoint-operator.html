@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -62,7 +61,7 @@
 \langle Av, w\rangle = \langle b, A^{*}w\rangle \qquad (b,w\in\mathcal{H}) ,
 $$</p>
 <p>and $A$ is <strong>unitary</strong> when $A^{*} = A^{-1}$, equivalently when $A$ is surjective and preserves the inner product; $A$ is <strong>self-adjoint</strong> when $A^{*} = A$ and <strong>skew-adjoint</strong> when $A^{*} = -A$.</p>
-<p><strong>Proposition.</strong> A unitary representation is a homomorphism $\pi : G\to U(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)b,\pi(g)w\rangle = \langle b,w\rangle$ for all $g$ and all $b,w$.</p>
+<p><strong>Proposition.</strong> A unitary representation is a homomorphism $\pi : G\to \mathrm{U}(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)b,\pi(g)w\rangle = \langle b,w\rangle$ for all $g$ and all $b,w$.</p>
 <p><em>Proof.</em> The equivalences are immediate from the definition of the adjoint and the invertibility of the operators; the preservation of the inner product is the defining property of the unitary group.</p>
 <h3 id="the-adjoint-of-the-whole-representation">The Adjoint of the Whole Representation</h3>
 <p><strong>Theorem.</strong> Let $\pi$ be a strongly continuous unitary representation. Then</p>
@@ -90,7 +89,7 @@ $$</p>
 <p>the domain of $A_X$ is the set of $b\in\mathcal{H}$ for which the derivative of the group at $t = 0$ exists, and the spectral theorem for $A_X$ decomposes the representation of the one-parameter subgroup. The common domain of the operators $A_X$ is the intersection of their domains, on which the commutation relations above hold in the sense of the commutator of unbounded operators.</p>
 <p><em>Proof.</em> The group $t\mapsto\pi(\exp tX)$ is strongly continuous and unitary, so Stone's theorem of <em>Unitary Operators and the Spectral Measure</em> gives a self-adjoint generator $B_X$ with $\pi(\exp tX) = \exp(itB_X)$; the derivative at the origin is $\pi_*(X)$, so $B_X = -i\pi_*(X) = A_X$. The domain and the commutation statements are the standard ones for the generators of a representation.</p>
 <h3 id="the-analytic-vectors">The Analytic Vectors</h3>
-<p><strong>Theorem (Nelson).</strong> The set of analytic vectors of $\pi$ — the vectors $b$ for which the map $g\mapsto\pi(g)b$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)b$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in U(\mathrm{G})$.</p>
+<p><strong>Theorem (Nelson).</strong> The set of analytic vectors of $\pi$ — the vectors $b$ for which the map $g\mapsto\pi(g)b$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)b$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in \mathrm{U}(\mathrm{G})$.</p>
 <p><em>Proof.</em> The analytic vectors are dense by the analytic-vector theorem of Nelson, which uses the elliptic regularity of the Casimir operator; the essential self-adjointness on them is the commutation theorem for the analytic vectors, and the Gårding domain is dense by the approximate identity of the convolution algebra of <em>Operators on a Lie Group</em>. The proofs are in the references.</p>
 <h2 id="the-unitarity-condition">The Unitarity Condition</h2>
 <h3 id="the-infinitesimal-form">The Infinitesimal Form</h3>
@@ -118,7 +117,7 @@ $$</p>
 <p><em>Proof.</em> The elliptic regularity of the Laplacian and the spectral theorem give the essential self-adjointness and the lower bound; the identification of the analytic vectors with the domain of the powers is the definition of the analytic vectors for the elliptic operator.</p>
 <h2 id="examples">Examples</h2>
 <h3 id="the-vector-group">The Vector Group</h3>
-<p>For $G = \mathbb{R}$ with the representation $\pi(x) = \exp(ixt)$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial_t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t b,w\rangle + \langle b, itw\rangle = 0$.</p>
+<p>For $G = \mathbb{R}$ with the representation $\pi(x) = \exp(ixt)$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial/\partial t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t b,w\rangle + \langle b, itw\rangle = 0$.</p>
 <h3 id="the-rotation-group">The Rotation Group</h3>
 <p>For $G = SU(2)$ with the spin $j$ representation, the derived operators of the basis $E,F,H$ are skew-adjoint, the self-adjoint generators satisfy $[A_E,A_F] = -iA_H$, and the Casimir $-\pi_*(\Omega)$ has the single eigenvalue $j(j+1)$ on the irreducible representation; the spectral decomposition is the standard one, and the analytic vectors are the whole space because the representation is finite dimensional.</p>
 <h3 id="the-real-rank-one-case">The Real Rank-One Case</h3>

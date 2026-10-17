@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -88,9 +87,9 @@ $$
 \bigl(\Theta^{\alpha}_{a,b}\bigr)^{*}\Theta^{\alpha}_{a,b} = \Theta^{\alpha}_{\alpha(a^{\dagger}a),\,\alpha(bb^{\dagger})}, \qquad
 \Theta^{\alpha}_{a,b}\bigl(\Theta^{\alpha}_{a,b}\bigr)^{*} = \Theta^{\alpha}_{\alpha(aa^{\dagger}),\,\alpha(b^{\dagger}b)},
 $$
-and it is a <strong>unitary</strong> operator on the Hermitian space $E$ exactly when $a$ and $b$ are unitary; the signed sandwiches with $a,b \in U(h)$ form the group $U(h)\times U(h)$ acting on $E$, each factor acting by a one-sided operator.</p>
+and it is a <strong>unitary</strong> operator on the Hermitian space $E$ exactly when $a$ and $b$ are unitary; the signed sandwiches with $a,b \in \mathrm{U}(h)$ form the group $\mathrm{U}(h)\times \mathrm{U}(h)$ acting on $E$, each factor acting by a one-sided operator.</p>
 <p><strong>Proof.</strong> The products are computed with the composition law $\Theta_{c,d}\Theta_{a,b} = \Theta_{c\alpha(a),\alpha(b)d}$ of <em>The Signed Sandwich on a Complex Vector Space</em>, together with the adjoint formula: $\Theta^{\alpha}_{\alpha(a^{\dagger}),\alpha(b^{\dagger})}\Theta^{\alpha}_{a,b}$ has $c=\alpha(a^{\dagger})$, $d=\alpha(b^{\dagger})$, so $c\alpha(a) = \alpha(a^{\dagger})\alpha(a) = \alpha(a^{\dagger}a)$ and $\alpha(b)d = \alpha(b)\alpha(b^{\dagger}) = \alpha(bb^{\dagger})$. The composite is the identity exactly when $a^{\dagger}a = \mathrm{id}$ and $bb^{\dagger} = \mathrm{id}$, that is when $a$ and $b$ are unitary; the map $(a,b)\mapsto\Theta^{\alpha}_{a,b}$ is then multiplicative and injective. This is <em>The Adjoint of the Left Multiplication on a Complex Vector Space</em> and <em>The Unitary and Symplectic Groups</em>.</p>
-<p><strong>Corollary (the isometries of the trace form).</strong> The unitary group of the trace form on $E$ contains the image of $U(h)\times U(h)$ under $(a,b)\mapsto\Theta^{\alpha}_{a,b}$; the inner signed sandwich $\Theta^{\alpha}_{u,u^{-1}} = \mathrm{Ad}_u\circ\alpha$ of a unitary $u$ is the diagonal of this action and is an isometry; the signed sandwiches with $a$ or $b$ non-unitary are not isometries.</p>
+<p><strong>Corollary (the isometries of the trace form).</strong> The unitary group of the trace form on $E$ contains the image of $\mathrm{U}(h)\times \mathrm{U}(h)$ under $(a,b)\mapsto\Theta^{\alpha}_{a,b}$; the inner signed sandwich $\Theta^{\alpha}_{u,u^{-1}} = \mathrm{Ad}_u\circ\alpha$ of a unitary $u$ is the diagonal of this action and is an isometry; the signed sandwiches with $a$ or $b$ non-unitary are not isometries.</p>
 <p><strong>Proof.</strong> The unitarity of $\Theta^{\alpha}_{a,b}$ is the previous proposition; the inner signed sandwich has $a=u$ and $b=u^{-1}$ unitary when $u$ is, so it is an isometry; and if $a^{\dagger}a \neq \mathrm{id}$ or $bb^{\dagger}\neq\mathrm{id}$ the composite differs from the identity. This is <em>The Left and Right Multiplication Operators on a Complex Vector Space</em>.</p>
 <h2 id="the-signed-inner-sandwich-and-the-reflections">The Signed Inner Sandwich and the Reflections</h2>
 <p><strong>Proposition (the adjoint of the inner signed sandwich).</strong> For invertible $a$,

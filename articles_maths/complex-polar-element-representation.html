@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -59,44 +58,44 @@
 <p>Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-modulus-and-the-unit-factor">The Modulus and the Unit Factor</h2>
 <h3 id="the-two-factors">The Two Factors</h3>
-<p><strong>Definition.</strong> Let $A \in \mathbb{C}$, $A \neq 0$. The <strong>polar representation</strong> of $A$ is the writing</p>
+<p><strong>Definition.</strong> Let $Q \in \mathbb{C}$, $Q \neq 0$. The <strong>polar representation</strong> of $Q$ is the writing</p>
 <p>$$
-A = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad N(u) = 1,
+Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad N(u) = 1,
 $$</p>
-<p>in which $r$ is the <strong>modulus</strong> of $A$ and $u$ is its <strong>unit factor</strong>.</p>
-<p>The second factor is a <strong>unit element</strong>, an element of norm one for the norm in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the norm in view is the complex norm $N$, so the unit factor is the level set $N(u)=1$, the unit circle. The phrase names the norm-one elements and not every invertible element: the <strong>group of units</strong> $\mathbb{C}^\times$ of the algebra is the wider set $\mathbb{R}_{>0}\times U(1)$ treated in its own section, and the two senses of the word are kept apart throughout.</p>
+<p>in which $r$ is the <strong>modulus</strong> of $Q$ and $u$ is its <strong>unit factor</strong>.</p>
+<p>The second factor is a <strong>unit element</strong>, an element of norm one for the norm in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the norm in view is the complex norm $N$, so the unit factor is the level set $N(u)=1$, the unit circle. The phrase names the norm-one elements and not every invertible element: the <strong>group of units</strong> $\mathbb{C}^\times$ of the algebra is the wider set $\mathbb{R}_{>0}\times \mathrm{U}(1)$ treated in its own section, and the two senses of the word are kept apart throughout.</p>
 <p>The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The unit factor is constrained by one real equation, $N(u) = 1$, which is the circle, so it carries one parameter out of the two of a general complex number. The counts add to the real dimension of the algebra, and this additivity is the pattern the whole family follows.</p>
 <h3 id="the-modulus-from-the-norm">The Modulus from the Norm</h3>
 <p>The norm of a complex number is</p>
 <p>$$
-N(A) = A\bar{A} = a^2 + a'^2.
+N(Q) = Q\bar{Q} = q^2 + q'^2.
 $$</p>
-<p>It is a sum of two squares, so $N(A) > 0$ for every $A \neq 0$ and $N(A) = 0$ only at $A = 0$; the modulus is</p>
+<p>It is a sum of two squares, so $N(Q) > 0$ for every $Q \neq 0$ and $N(Q) = 0$ only at $Q = 0$; the modulus is</p>
 <p>$$
-r = \sqrt{N(A)} = |A|.
+r = \sqrt{N(Q)} = |Q|.
 $$</p>
 <p>Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{C}$ neither does.</p>
-<p>The modulus is multiplicative, because the norm is: $r(AB) = r(A)r(B)$, and also $r(\lambda A) = |\lambda| r(A)$ for real $\lambda$.</p>
+<p>The modulus is multiplicative, because the norm is: $r(QQ_1) = r(Q)r(Q_1)$, and also $r(\lambda Q) = |\lambda| r(Q)$ for real $\lambda$.</p>
 <h3 id="the-unit-factor-and-the-circle">The Unit Factor and the Circle</h3>
 <p>The unit factor is</p>
 <p>$$
-u = \frac{A}{r} = \frac{A}{|A|}.
+u = \frac{Q}{r} = \frac{Q}{|Q|}.
 $$</p>
 <p>It lies on the <strong>unit circle</strong></p>
 <p>$$
-U(1) = \{u \in \mathbb{C} : N(u) = 1\},
+\mathrm{U}(1) = \{u \in \mathbb{C} : N(u) = 1\},
 $$</p>
 <p>which is a group under multiplication, since $N(uv) = N(u)N(v) = 1$ and $N(u^{-1}) = 1$ when $N(u) = 1$, and which is compact, being a closed bounded subset of $\mathbb{C} \cong \mathbb{R}^2$. The unit factor is the element that acts: multiplication by $u$ is a rotation of the plane through the angle of $u$, which is the content of the companion article <em>Rotations and Reflections in the Complex Plane</em>.</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
-<p><strong>Theorem.</strong> Every nonzero complex number $A$ has exactly one polar representation.</p>
-<p><strong>Existence.</strong> Put $r = \sqrt{N(A)}$ and $u = A/r$. Since $N(A) > 0$, the number $r$ is a positive real, and $N(u) = N(A)/r^2 = 1$ because $N(\lambda A) = \lambda^2N(A)$ for real $\lambda$. Hence $A = ru$ with $r > 0$ and $N(u) = 1$.</p>
-<p><strong>Uniqueness.</strong> Suppose $A = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(A) = r'^2$, so $r = r'$ because both are positive, and then $u = A/r = u'$.</p>
-<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r \exp(i\theta)$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
+<p><strong>Theorem.</strong> Every nonzero complex number $Q$ has exactly one polar representation.</p>
+<p><strong>Existence.</strong> Put $r = \sqrt{N(Q)}$ and $u = Q/r$. Since $N(Q) > 0$, the number $r$ is a positive real, and $N(u) = N(Q)/r^2 = 1$ because $N(\lambda Q) = \lambda^2N(Q)$ for real $\lambda$. Hence $Q = ru$ with $r > 0$ and $N(u) = 1$.</p>
+<p><strong>Uniqueness.</strong> Suppose $Q = ru = r'u'$ with $r, r' > 0$ and $N(u) = N(u') = 1$. Taking norms gives $r^2 = N(Q) = r'^2$, so $r = r'$ because both are positive, and then $u = Q/r = u'$.</p>
+<p>The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is <em>not</em> unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $Q = r \exp(i\theta)$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <h3 id="the-word-as-exponentials">The Word as Exponentials</h3>
-<p>The word $A = r\,u$ is the product of two exponentials, the scale and the unit factor:</p>
+<p>The word $Q = r\,u$ is the product of two exponentials, the scale and the unit factor:</p>
 <p>$$
-A = \exp(\ln r)\,\exp(i\theta) , \qquad r = \lvert A\rvert > 0 .
+Q = \exp(\ln r)\,\exp(i\theta) , \qquad r = \lvert Q\rvert > 0 .
 $$</p>
 <div class="table-scroll"><table>
 <thead>
@@ -121,7 +120,7 @@ $$</p>
 <td>$\exp(\ln r)$</td>
 <td>hyperbolic</td>
 <td>$r$</td>
-<td>$r = \lvert A\rvert > 0$</td>
+<td>$r = \lvert Q\rvert > 0$</td>
 <td>—</td>
 </tr>
 <tr>
@@ -137,7 +136,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-1$, the hyperbolic for a root of $+1$, and the parabolic for a nilpotent root, where the series truncates. The two exponents commute, because $\ln r$ is a real scalar of the centre, so the order is free and the two exponentials <strong>amalgamate into one</strong>, $A = \exp(\ln r + i\theta)$. The word is one exponential here because there is no second non-central direction to obstruct the sum; the freedom that remains is the period $2\pi$ of the angle.</p>
+<p>The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-1$, the hyperbolic for a root of $+1$, and the parabolic for a nilpotent root, where the series truncates. The two exponents commute, because $\ln r$ is a real scalar of the centre, so the order is free and the two exponentials <strong>amalgamate into one</strong>, $Q = \exp(\ln r + i\theta)$. The word is one exponential here because there is no second non-central direction to obstruct the sum; the freedom that remains is the period $2\pi$ of the angle.</p>
 <h3 id="the-roots-of-math80-in-math81">The Roots of $\pm 1$ in $\mathbb{C}$</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -177,13 +176,13 @@ u = \exp(i\theta) = \cos\theta\,1 + i\sin\theta, \qquad \theta \in \mathbb{R},
 $$</p>
 <p>the trigonometric row, and the polar representation reads</p>
 <p>$$
-A = r\,\exp(i\theta), \qquad r = \sqrt{N(A)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
+Q = r\,\exp(i\theta), \qquad r = \sqrt{N(Q)} > 0, \qquad \theta \in (-\pi,\pi] \ \text{mod}\ 2\pi,
 $$</p>
 <p>which is the classical form. The reconstruction is exact:</p>
 <p>$$
-A = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r \exp(i\theta) - A = O(10^{-16}).
+Q = 3 + 4i: \qquad r = 5, \qquad \theta = \arctan\tfrac{4}{3} = 0.9272952180016122, \qquad r \exp(i\theta) - Q = O(10^{-16}).
 $$</p>
-<p>The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto \exp(i\theta)$ is a group homomorphism $\mathbb{R} \to U(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.</p>
+<p>The angle $\theta$ is the coordinate of the unit factor, and the map $\theta \mapsto \exp(i\theta)$ is a group homomorphism $\mathbb{R} \to \mathrm{U}(1)$ whose kernel is $2\pi\mathbb{Z}$. The kernel is nontrivial, which is exactly the non-uniqueness of the coordinate, and the image is the whole circle, which is the surjectivity of the exponential onto the unit factor.</p>
 <h2 id="what-the-two-factors-are">What the Two Factors Are</h2>
 <h3 id="position-and-signature">Position and Signature</h3>
 <p>Two independent dichotomies classify the directions of an algebra of the family. The first is <strong>position</strong>: with respect to the conjugation, a direction is <em>Hermitian</em> if $\bar{\nu} = \nu$ and <em>anti-Hermitian</em> if $\bar{\nu} = -\nu$. The second is <strong>signature</strong>: the sign of $\nu^2$. The two dichotomies are independent, and the unit factor of an algebra is the exponential of a direction that is Hermitian or anti-Hermitian and has signature $-1$, $0$ or $+1$. In $\mathbb{C}$ the two factors are the following.</p>
@@ -209,7 +208,7 @@ $$</p>
 </tr>
 <tr>
 <td>$u$</td>
-<td>$U(1)$</td>
+<td>$\mathrm{U}(1)$</td>
 <td>anti-Hermitian</td>
 <td>$\nu^2 = -1$</td>
 <td>$1$</td>
@@ -223,36 +222,36 @@ $$</p>
 <p><strong>No boost.</strong> A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +1$ off the centre, and in $\mathbb{C}$ the only elements with $\nu^2 = +1$ are $\nu = \pm 1$, which are central: their exponentials are the real numbers $\exp(\pm\phi)$, already counted as the scale. There is no non-central hyperbolic direction, so no boost, and the group of units contains no non-compact one-parameter subgroup other than the scale.</p>
 <p><strong>The central phase is the rotation.</strong> In $\mathbb{C}$ the algebra is commutative, so <em>every</em> element is central, and the two slots collapse into one: the circle is at the same time the rotation factor and the central phase. This is why the two-dimensional definite case cannot display the phase and the rotor separately, and it is a consequence of commutativity alone.</p>
 <h3 id="no-boundary">No Boundary</h3>
-<p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $A \neq 0$ then $N(A) > 0$, so $r > 0$ and $u = A/r$ is defined; there is no element with $N(A) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
+<p>The polar representation of $\mathbb{C}$ has no boundary: it holds on $\mathbb{C}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $Q \neq 0$ then $N(Q) > 0$, so $r > 0$ and $u = Q/r$ is defined; there is no element with $N(Q) = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The companion article on the split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar representation must be restricted to a cone complement.</p>
 <h2 id="the-group-of-units-and-the-circle">The Group of Units and the Circle</h2>
 <p>The group of units of $\mathbb{C}$ is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, and it is the direct product of the two factors,</p>
 <p>$$
-\mathbb{C}^\times \cong \mathbb{R}_{>0} \times U(1), \qquad A \longmapsto \big(|A|,\ A/|A|\big),
+\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad Q \longmapsto \big(|Q|,\ Q/|Q|\big),
 $$</p>
 <p>which is the polar representation read as a group isomorphism. Both factors are one-dimensional, the first non-compact and the second compact, and the isomorphism is the reason the parameter counts of the polar representation are one and one.</p>
 <p>The exponential restricted to the imaginary axis is a surjective homomorphism with kernel $2\pi\mathbb{Z}$, so</p>
 <p>$$
-U(1) \cong \mathbb{R}/2\pi\mathbb{Z},
+\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z},
 $$</p>
-<p>as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $A \mapsto uA$ preserving the Euclidean norm, so $U(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:</p>
+<p>as a group, and also as a one-dimensional compact Lie group, of real dimension one. Multiplication by a unit is a rotation of the plane, $Q \mapsto uQ$ preserving the Euclidean norm, so $\mathrm{U}(1)$ is identified with $SO(2)$; the identification is an isomorphism of groups and a covering map of degree one. The exponential of the real axis is the positive scale, $\exp(\mathbb{R}) = \mathbb{R}_{>0}$, which is a one-dimensional non-compact group, and the two exponentials together exhaust the group of units:</p>
 <p>$$
 \mathbb{C}^\times = \exp(\mathbb{R})\cdot\exp(i\mathbb{R}).
 $$</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="multiplication-by-math151-as-a-complex-structure">Multiplication by $i$ as a Complex Structure</h3>
-<p>In the real basis $\{1,i\}$ a complex number is the pair $(a, a')$, and multiplication by $A = a+i a'$ is the linear map</p>
+<p>In the real basis $\{1,i\}$ a complex number is the pair $(q, q')$, and multiplication by $Q = q+i q'$ is the linear map</p>
 <p>$$
-M_A = \begin{pmatrix} a & -a' \\ a' & a \end{pmatrix} = a\,I + a'\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
+M_Q = \begin{pmatrix} q & -q' \\ q' & q \end{pmatrix} = q\,I + q'\,J, \qquad J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad J^2 = -I .
 $$</p>
 <p>The matrix $J$ is the <strong>complex structure</strong>: multiplication by $i$ is $J$, and $J^2 = -I$ is the matrix form of $i^2 = -1$, so the trigonometric row of the rule is the row $J^2 = -I$ of the matrix picture. The determinant and the trace are</p>
 <p>$$
-\det M_A = a^2 + a'^2 = N(A), \qquad \operatorname{tr}M_A = 2a,
+\det M_Q = q^2 + q'^2 = N(Q), \qquad \operatorname{tr}M_Q = 2q,
 $$</p>
-<p>so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_A}$. The polar representation $A = ru$ becomes in the matrix picture the factorisation</p>
+<p>so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Q}$. The polar representation $Q = ru$ becomes in the matrix picture the factorisation</p>
 <p>$$
-M_A = r\,M_u, \qquad M_u = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
+M_Q = r\,M_u, \qquad M_u = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
 $$</p>
-<p>with $r = \sqrt{\det M_A}$: the polar decomposition of a matrix of the shape $M_A$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $a I + a'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$.</p>
+<p>with $r = \sqrt{\det M_Q}$: the polar decomposition of a matrix of the shape $M_Q$, in the special case where the positive Hermitian factor is a scalar multiple of the identity. In the matrix polar decomposition of a general invertible matrix the positive factor is an arbitrary positive definite symmetric matrix; here the element has only the two-dimensional family $q I + q'J$ available, and inside that family the positive definite part is necessarily the scalar $rI$.</p>
 <h3 id="the-interpretation-of-each-factor">The Interpretation of Each Factor</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -277,7 +276,7 @@ $$</p>
 <td>orientation-preserving isometry</td>
 </tr>
 <tr>
-<td>$A = r\exp(i\theta)$</td>
+<td>$Q = r\exp(i\theta)$</td>
 <td>conformal matrix</td>
 <td>$r^2$</td>
 <td>similarity: rotation and scaling</td>
@@ -287,7 +286,7 @@ $$</p>
 <p>Every nonzero complex number is a similarity of the plane, oriented and with ratio $r$, and the polar representation is the unique splitting of that similarity into its scaling and its rotation parts. This is the precise sense in which the complex polar representation is the two-dimensional case of the matrix polar decomposition, and it is the matrix reading of the table of positions and signatures of the previous section.</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <h3 id="a-generic-complex-number">A Generic Complex Number</h3>
-<p>Take $A = 3 + 4i$. Then $N(A) = 9 + 16 = 25$, so</p>
+<p>Take $Q = 3 + 4i$. Then $N(Q) = 9 + 16 = 25$, so</p>
 <p>$$
 r = \sqrt{25} = 5, \qquad u = \frac{3+4i}{5} = 0.6 + 0.8i, \qquad \theta = \arctan\frac{4}{3} = 0.9272952180016122 .
 $$</p>
@@ -296,8 +295,8 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>$A$</th>
-<th>$N(A)$</th>
+<th>$Q$</th>
+<th>$N(Q)$</th>
 <th>$r$</th>
 <th>$u$</th>
 <th>$\theta$</th>
@@ -340,7 +339,7 @@ $$</p>
 <p>$$
 \exp(i\cdot 0) = 1, \qquad \exp(i\cdot 2\pi) = 1 - 2.4\times10^{-16}i,
 $$</p>
-<p>so the reconstruction from an angle is stable to machine precision and the angle of a given unit factor is a class modulo $2\pi$. The polar representation of a fixed $A$ is unique; a <em>coordinate system</em> for the unit factor is not, and every table of angles of the corpus must be read with that quantifier understood.</p>
+<p>so the reconstruction from an angle is stable to machine precision and the angle of a given unit factor is a class modulo $2\pi$. The polar representation of a fixed $Q$ is unique; a <em>coordinate system</em> for the unit factor is not, and every table of angles of the corpus must be read with that quantifier understood.</p>
 <h2 id="comparison-with-the-other-members-of-the-series">Comparison with the Other Members of the Series</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -356,7 +355,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{C}$</td>
-<td>$a^2+a'^2$, definite</td>
+<td>$q^2+q'^2$, definite</td>
 <td>$\sqrt{N}$, positive real</td>
 <td>$\exp(i\theta)$, $\theta$ mod $2\pi$</td>
 <td>scale, circle (rotation and central phase together)</td>
@@ -390,7 +389,7 @@ $$</p>
 </table></div>
 <p>The progression is the progression of the rule. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.</p>
 <h2 id="summary">Summary</h2>
-<p>Every nonzero complex number has exactly one polar representation $A = ru$, with modulus $r = \sqrt{N(A)} > 0$ and unit factor $u = A/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the rule $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the rule contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.</p>
+<p>Every nonzero complex number has exactly one polar representation $Q = ru$, with modulus $r = \sqrt{N(Q)} > 0$ and unit factor $u = Q/r$ on the circle. The modulus is central and Hermitian of signature $+1$ and carries one parameter; the unit factor is central and anti-Hermitian of signature $-1$ and carries one parameter; the counts add to the real dimension two. The unit factor is the exponential $u = \exp(i\theta)$ of an anti-Hermitian element of signature $-1$, which is the trigonometric row of the rule $\nu^2 = -1, 0, +1$, and its coordinate $\theta$ is a class modulo $2\pi$, the kernel of the exponential. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, and because $\mathbb{C}$ is commutative the circle serves as both the rotation factor and the central phase. The hyperbolic row of the rule contains only the central elements $\pm1$ and so produces the scale rather than a boost, and the parabolic row contains only $\nu = 0$ and so produces nothing. The norm is definite, so there are no zero divisors and the polar representation has no boundary: the origin is the only excluded element. In the matrix picture the statement is the polar decomposition of a conformal matrix into a scalar and a rotation.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -405,27 +404,27 @@ $$</p>
 <td>the complex algebra, basis $1$, $i$, $i^2 = -1$</td>
 </tr>
 <tr>
-<td>$A = a + i a'$</td>
-<td>a complex number, $a$ its real part, $a'$ its imaginary part</td>
+<td>$Q = q + i q'$</td>
+<td>a complex number, $q$ its real part, $q'$ its imaginary part</td>
 </tr>
 <tr>
-<td>$\bar{A} = a - i a'$</td>
+<td>$\bar{Q} = q - i q'$</td>
 <td>the complex conjugate</td>
 </tr>
 <tr>
-<td>$N(A) = A\bar{A} = a^2+a'^2$</td>
+<td>$N(Q) = Q\bar{Q} = q^2+q'^2$</td>
 <td>the norm, positive definite</td>
 </tr>
 <tr>
-<td>$r = \sqrt{N(A)} = |A|$</td>
+<td>$r = \sqrt{N(Q)} = |Q|$</td>
 <td>the modulus, a positive real</td>
 </tr>
 <tr>
-<td>$u = A/r$</td>
+<td>$u = Q/r$</td>
 <td>the unit factor, $N(u) = 1$</td>
 </tr>
 <tr>
-<td>$U(1)$</td>
+<td>$\mathrm{U}(1)$</td>
 <td>the unit circle, a compact group, identified with $SO(2)$</td>
 </tr>
 <tr>
@@ -441,8 +440,8 @@ $$</p>
 <td>the complex structure, multiplication by $i$, $J^2 = -I$</td>
 </tr>
 <tr>
-<td>$M_A$</td>
-<td>the $2\times2$ real matrix $aI + a'J$ of multiplication by $A$</td>
+<td>$M_Q$</td>
+<td>the $2\times2$ real matrix $qI + q'J$ of multiplication by $Q$</td>
 </tr>
 </tbody>
 </table></div>
@@ -450,8 +449,8 @@ $$</p>
 <ul>
 <li>Leonhard Euler, <em>Introductio in analysin infinitorum</em> (Bousquet, Lausanne, 1748), for the origin of the exponential form of a complex number and of the trigonometric functions.</li>
 <li>Reinhold Remmert, <em>Theory of Complex Functions</em> (Springer, 1991), for the argument, the logarithm and the polar form on the cut plane.</li>
-<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential homomorphism $\mathbb{R} \to U(1)$, its kernel and the polar decomposition.</li>
-<li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for multiplication by a unit as a plane rotation and the identification $U(1) = SO(2)$.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em>, 3rd edition (McGraw-Hill, 1987), for the exponential homomorphism $\mathbb{R} \to \mathrm{U}(1)$, its kernel and the polar decomposition.</li>
+<li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for multiplication by a unit as a plane rotation and the identification $\mathrm{U}(1) = SO(2)$.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix, of which the matrix statement here is the case whose positive factor is a scalar.</li>
 </ul>
       </div>

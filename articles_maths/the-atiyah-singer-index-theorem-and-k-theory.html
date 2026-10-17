@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -61,7 +60,7 @@ K^0(X)=\Bigl\{\,[E]-[F]\ :\ E,F\in\mathrm{Vect}(X)\,\Bigr\}\big/\sim, \qquad [E]
 $$</p>
 <p><strong>Theorem.</strong> $K^0(X)$ is an abelian group, every element is a difference of classes of honest bundles, and the <strong>rank</strong> map $r\colon K^0(X)\to\mathbb{Z}$, $[E]-[F]\mapsto\operatorname{rank}E-\operatorname{rank}F$, is a surjective homomorphism. Its kernel is the <strong>reduced group</strong> $K^0_{\mathrm{red}}(X)$, so that</p>
 <p>$$
-K^0(X)\congK^0_{\mathrm{red}}(X)\oplus\mathbb{Z}.
+K^0(X)\cong K^0_{\mathrm{red}}(X)\oplus\mathbb{Z}.
 $$</p>
 <p><strong>Proof.</strong> The Grothendieck construction on a commutative monoid always gives a group; the relation exhibited is the standard one for the free abelian group on $\mathrm{Vect}(X)$ modulo the submonoid of relations $[E\oplus F]-[E]-[F]$. The rank is well defined on the relations and surjective because $\mathbb{C}^n$ has rank $n$.</p>
 <p><strong>Definition.</strong> The <strong>tensor product</strong> of bundles, $(E\otimes F)_x=E_x\otimes F_x$, makes $K^0(X)$ a commutative ring with unit the trivial line bundle; the operations are</p>

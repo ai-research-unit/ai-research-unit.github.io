@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,16 +51,16 @@
       <div class="article-body">
         <h1 id="norm-and-invertibility-in-the-symmetric-plain-sesqualgebra"><strong>Norm and Invertibility in the Symmetric Plain Sesqualgebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$ on the biquaternion space, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a multiplication (<em>Introduction to the Symmetric Plain Sesqualgebra</em>). This article studies the algebraic norm that the block carries and the invertibility that it does not.</p>
+<p>The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$ on the biquaternion space, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a multiplication (<em>Introduction to the Symmetric Plain Sesqualgebra</em>). This article studies the algebraic norm that the block carries and the invertibility that it does not.</p>
 <p>A norm and an inverse name a product, and the algebraic norm of a product is the diagonal of its scalar-part form, the definition of <em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>. For the block the form is $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)$ and its diagonal is</p>
 <p>$$
-\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2},
+\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$</p>
 <p>the symmetric plain sesquilinear algebraic norm, <strong>real and positive definite</strong>, one of the four algebraic norms of the space and not one of the other three. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.</p>
 <p>The invertibility is where the article records an <strong>absence</strong>. The block is <strong>not unital</strong>: every value of the product is central, so it has no two-sided unit, and consequently no inverse, no group of units and no division structure. Its algebraic norm does <strong>not</strong> repair the absence: $\langle\cdot\rangle_{*}$ is positive definite, so $\langle\tilde Q\rangle_{*}=0$ exactly at $\tilde Q=0$, the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way, the origin and everything else. The article states the absence, then the algebraic norm, then the failure of multiplicativity and the polarisation.</p>
 <p><strong>Boundaries.</strong> The product, its class and its table are <em>Introduction to the Symmetric Plain Sesqualgebra</em>; the relative definitions of the unit, the inverse and the group of units are <em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>, §<em>The Unit and the Inverse</em>, and the four general products with their units are <em>Comparison Between the Four General Products</em>. The definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are <em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>; the algebraic norm of the plain product is $\langle\cdot\rangle$, a different form, and its theory is <em>Norm and Invertibility in the Biquaternion Algebra</em>. The form $\langle\cdot,\cdot\rangle_{*}$, its Gram matrix, its positivity and its cone are <em>The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra</em> and <em>Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint</em>; the zero divisors are <em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>; the operators of the block are <em>The Multiplication Operators of the Symmetric Plain Sesqualgebra</em>. Nothing topological and nothing metric appears.</p>
-<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$ with $\langle\tilde P,\tilde Q\rangle_{*} = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; the <strong>algebraic norm of the block</strong> is its diagonal $\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$.</p>
-<p><strong>The results.</strong> Every value of the product $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$ is central, so the block has no unit, no inverse and no group of units, and no element is invertible. The block carries one algebraic norm, $\langle\tilde{Q}\rangle_{*} = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite of signature $(8,0)$ on the real space underlying $\mathbb{B}$, vanishing only at $\tilde{Q} = 0$, with image of its square map the real ray $\mathbb{R}_{\geq0}e_0$. The algebraic norm is not multiplicative: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, with defect the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs, and it polarises to the Hermitian form. The definiteness is why it cannot decide invertibility: $\langle\tilde{Q}\rangle_{*} = 0$ exactly at the origin, so the block has no nonzero isotropic vector and its element classification is two-way.</p>
+<p><strong>Conventions.</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu \varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$ with $\langle\tilde P,\tilde Q\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu}$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$; the <strong>algebraic norm of the block</strong> is its diagonal $\langle\tilde{Q}\rangle_{*} = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_\mu\lvert Q_\mu\rvert^{2}$.</p>
+<p><strong>The results.</strong> Every value of the product $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$ is central, so the block has no unit, no inverse and no group of units, and no element is invertible. The block carries one algebraic norm, $\langle\tilde{Q}\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite of signature $(8,0)$ on the real space underlying $\mathbb{B}$, vanishing only at $\tilde{Q} = 0$, with image of its square map the real ray $\mathbb{R}_{\geq0}e_t$. The algebraic norm is not multiplicative: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, with defect the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0$ vanishing exactly on linearly dependent pairs, and it polarises to the Hermitian form. The definiteness is why it cannot decide invertibility: $\langle\tilde{Q}\rangle_{*} = 0$ exactly at the origin, so the block has no nonzero isotropic vector and its element classification is two-way.</p>
 <h2 id="the-relative-notions">The Relative Notions</h2>
 <p>The word <em>unit</em>, the word <em>inverse</em> and the word <em>group of units</em> name a product, so the definitions are stated once for a general product and then read on the products of this space; they are in <em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
 <p><strong>Definition (recalled).</strong> Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a <strong>left unit of $\star$</strong> when $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, a <strong>right unit</strong> when $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and a <strong>two-sided unit</strong>, or an <strong>identity</strong>, when it is both. When a two-sided unit $e$ exists, an element $\tilde{Q}$ is <strong>invertible of $\star$</strong> when there is a $\tilde{R}$ with $\tilde{Q}\star\tilde{R} = \tilde{R}\star\tilde{Q} = e$, the element $\tilde{R}$ being the <strong>inverse of $\tilde{Q}$ of $\star$</strong>; the <strong>group of units of $\star$</strong> is the set of the invertible elements, a group under $\star$. When no two-sided unit exists, the three notions are empty and the group of units is not defined.</p>
@@ -69,22 +68,22 @@ $$</p>
 <h2 id="the-absence-of-a-unit">The Absence of a Unit</h2>
 <p><strong>The block has no unit of any kind: there is no left, no right and no two-sided unit $e$, because every value of the product is central and the block has non-central elements.</strong></p>
 <p><strong>Theorem (the block has no unit).</strong> The block has no left unit and no right unit: there is no element $e$ with $e\star\tilde{Q} = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$, and none with $\tilde{Q}\star e = \tilde{Q}$ for every $\tilde{Q}\in\mathbb{B}$. Hence there is no two-sided unit either.</p>
-<p><em>Proof.</em> Every value of the product is central, $e\star\tilde{Q} = \langle e,\tilde{Q}\rangle_{*}e_0 \in \mathbb{C}e_0$. The element $e_1$ is not central, so $e\star e_1 \neq e_1$ for every $e$, and $e_1\star e \neq e_1$ for every $e$; there is therefore no left unit, no right unit and no two-sided unit. In particular the idempotent $e_0$ is not a unit: $e_0\star e_1 = \langle e_0,e_1\rangle_{*}e_0 = 0$, since the basis is orthonormal for $\langle\cdot,\cdot\rangle_{*}$.</p>
-<p><strong>Remark (the reason is the image).</strong> The failure is structural: a product whose image is the central line cannot reproduce an element with a vector part, and the block has non-central elements. The same reason deprives the symmetric quaternionic product of a unit, while the symmetric plain product, whose image is the whole space, has the unit $e_0$.</p>
+<p><em>Proof.</em> Every value of the product is central, $e\star\tilde{Q} = \langle e,\tilde{Q}\rangle_{*}e_t \in \mathbb{C}e_t$. The element $\vec e_x$ is not central, so $e\star \vec e_x \neq \vec e_x$ for every $e$, and $\vec e_x\star e \neq \vec e_x$ for every $e$; there is therefore no left unit, no right unit and no two-sided unit. In particular the idempotent $e_t$ is not a unit: $e_t\star \vec e_x = \langle e_t,\vec e_x\rangle_{*}e_t = 0$, since the basis is orthonormal for $\langle\cdot,\cdot\rangle_{*}$.</p>
+<p><strong>Remark (the reason is the image).</strong> The failure is structural: a product whose image is the central line cannot reproduce an element with a vector part, and the block has non-central elements. The same reason deprives the symmetric quaternionic product of a unit, while the symmetric plain product, whose image is the whole space, has the unit $e_t$.</p>
 <h2 id="the-absence-of-an-inverse-and-of-the-group-of-units">The Absence of an Inverse and of the Group of Units</h2>
 <p><strong>No element of the block is invertible of $\star$, and the group of units of $\star$ is not defined, both notions being empty for want of a two-sided unit.</strong></p>
 <p><strong>Theorem (no element is invertible, and there is no group of units).</strong> No element of $\mathbb{B}$ is invertible of $\star$, and the group of units of $\star$ is not defined.</p>
 <p><em>Proof.</em> The notions of §<em>The Relative Notions</em> presuppose a two-sided unit, and §<em>The Absence of a Unit</em> shows that the block has none; the definition is therefore empty. There is no invertible element and no inverse formula.</p>
 <p><strong>Remark (what the block does not have).</strong> The block has no unit, no inverse, no group of units, no division structure and no three-way classification of the elements into the zero, the invertible and the zero divisors; its element classification is two-way and is read in §<em>The Absence of a Criterion from the Algebraic Norm</em>. The block neither inherits the invertible elements of another product nor carries a substitute group of its own elements.</p>
 <h2 id="the-algebraic-norm-of-the-block">The Algebraic Norm of the Block</h2>
-<p><strong>The block carries one algebraic norm, $\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde Q\star\tilde Q) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite; its Gram matrix is the identity on the basis $e_0,e_1,e_2,e_3$ and its square map has image the real ray $\mathbb{R}_{\geq0}e_0$.</strong></p>
+<p><strong>The block carries one algebraic norm, $\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde Q\star\tilde Q) = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}$, real, non-negative and positive definite; its Gram matrix is the identity on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and its square map has image the real ray $\mathbb{R}_{\geq0}e_t$.</strong></p>
 <p><strong>Definition.</strong> The <strong>algebraic norm of the block</strong> is the diagonal of the scalar-part form of the product,</p>
 <p>$$
-\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} \in \mathbb{R}_{\geq 0},
+\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \langle\tilde{Q},\tilde{Q}\rangle_{*} = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} \in \mathbb{R}_{\geq 0},
 $$</p>
 <p>a real non-negative number, and it is the coefficient of the square of the element,</p>
 <p>$$
-\tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_0 .
+\tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_t .
 $$</p>
 <p>The equation names the product $\star$: the algebraic norm is relative to the product, and the algebraic norms of the other three rows are different quadratic maps on the same space (<em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em>).</p>
 <p><strong>Basic properties.</strong> Each is a direct reading of the definition.</p>
@@ -95,8 +94,8 @@ $$</p>
 <li>$\langle\cdot,\cdot\rangle_{*}$ is <strong>homogeneous of degree two</strong> over the reals but not over $\mathbb{C}$: $\langle\lambda\tilde{Q}\rangle_{*} = \lvert\lambda\rvert^{2}\langle\tilde{Q}\rangle_{*}$ for $\lambda\in\mathbb{C}$.</li>
 <li>$\langle\cdot,\cdot\rangle_{*}$ is the <strong>polarisation source</strong> of the form $\langle\tilde P,\tilde Q\rangle_{*}$, recovered from the diagonal in §<em>The Polarisation of the Algebraic Norm</em>.</li>
 </ul>
-<p><strong>Proposition (the Gram matrix and the square map).</strong> On the basis $e_0,e_1,e_2,e_3$ the form has Gram matrix the identity, $\langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu}$, so $\langle e_\mu\rangle_{*} = 1$; the square map $\tilde{Q}\mapsto\tilde{Q}\star\tilde{Q}$ has image the real ray $\mathbb{R}_{\geq 0}e_0$ and is surjective onto it.</p>
-<p><em>Proof.</em> The Gram statement is $\langle e_\mu,e_\nu\rangle_{*} = \sum_\sigma (e_\mu)_\sigma\overline{(e_\nu)_\sigma} = \delta_{\mu\nu}$, and the square display gives the image. The ray is attained since $\tilde{Q} = \sqrt{\lambda}e_0$ gives $\langle\tilde{Q}\rangle_{*} = \lambda$ for $\lambda\geq 0$.</p>
+<p><strong>Proposition (the Gram matrix and the square map).</strong> On the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the form has Gram matrix the identity, $\langle e_\mu,e_\nu\rangle_{*} = \delta_{\mu\nu}$, so $\langle e_\mu\rangle_{*} = 1$; the square map $\tilde{Q}\mapsto\tilde{Q}\star\tilde{Q}$ has image the real ray $\mathbb{R}_{\geq 0}e_t$ and is surjective onto it.</p>
+<p><em>Proof.</em> The Gram statement is $\langle e_\mu,e_\nu\rangle_{*} = \sum_\sigma (e_\mu)_\sigma\overline{(e_\nu)_\sigma} = \delta_{\mu\nu}$, and the square display gives the image. The ray is attained since $\tilde{Q} = \sqrt{\lambda}e_t$ gives $\langle\tilde{Q}\rangle_{*} = \lambda$ for $\lambda\geq 0$.</p>
 <h2 id="the-failure-of-multiplicativity">The Failure of Multiplicativity</h2>
 <p><strong>The algebraic norm of the block is not multiplicative: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, the defect $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq0$ vanishes exactly on linearly dependent pairs, and multiplicativity holds on the centre alone.</strong></p>
 <p><strong>Theorem (the algebraic norm of a product).</strong> For all $\tilde P,\tilde Q$,</p>
@@ -104,7 +103,7 @@ $$</p>
 \langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2},
 $$</p>
 <p>the square of the modulus of the form on the two arguments; consequently $\langle\tilde P\star\tilde Q\rangle_{*} = \langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*}$ exactly when the two arguments are linearly dependent over $\mathbb{C}$.</p>
-<p><em>Proof.</em> The product is central, $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$, and $\langle \lambda e_0\rangle_{*} = \lvert\lambda\rvert^{2}$. So the algebraic norm of the product is $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$. For the equality case, the quadratic form $t\mapsto \langle\tilde P - t\tilde Q\rangle_{*}\geq 0$ in the complex variable $t$ has discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, so this quantity is non-negative, and the vanishing of the discriminant is the vanishing of the form at its minimising argument, that is the proportionality of $\tilde P$ and $\tilde Q$.</p>
+<p><em>Proof.</em> The product is central, $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$, and $\langle \lambda e_t\rangle_{*} = \lvert\lambda\rvert^{2}$. So the algebraic norm of the product is $\lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$. For the equality case, the quadratic form $t\mapsto \langle\tilde P - t\tilde Q\rangle_{*}\geq 0$ in the complex variable $t$ has discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, so this quantity is non-negative, and the vanishing of the discriminant is the vanishing of the form at its minimising argument, that is the proportionality of $\tilde P$ and $\tilde Q$.</p>
 <p><strong>Corollary (the defect is the discriminant).</strong> For all $\tilde P,\tilde Q$,</p>
 <p>$$
 \langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \langle\tilde P\star\tilde Q\rangle_{*} = \langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2} \geq 0,
@@ -112,10 +111,10 @@ $$</p>
 <p>with equality exactly when $\tilde P$ and $\tilde Q$ are linearly dependent. The algebraic norm is therefore <strong>submultiplicative</strong> and multiplicative exactly on linearly dependent pairs.</p>
 <p><strong>Remark (the identity that replaces multiplicativity).</strong> The block has one exact multiplicativity, read on the form rather than on the algebraic norm: for all $\tilde P,\tilde Q,\tilde R$,</p>
 <p>$$
-\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\,\langle e_0,\tilde R\rangle_{*},
+\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\,\langle e_t,\tilde R\rangle_{*},
 $$</p>
-<p>and dually $\langle\tilde R,\tilde P\star\tilde Q\rangle_{*} = \langle\tilde R,e_0\rangle_{*}\overline{\langle\tilde P,\tilde Q\rangle_{*}}$. The first factor $\langle\tilde P,\tilde Q\rangle_{*}$ is the coefficient of the product, the second is the evaluation of the form on the idempotent $e_0$; the product is central, so the form evaluates it only through that one coefficient.</p>
-<p><strong>Remark (the algebraic norm is multiplicative on the centre).</strong> On the central line the block is the field rule $(\lambda e_0)\star(\mu e_0) = \lambda\overline{\mu}e_0$ and the algebraic norm is the squared modulus, $\langle \lambda e_0\rangle_{*} = \lvert\lambda\rvert^{2}$; on central elements it is multiplicative, $H\bigl((\lambda e_0)\star(\mu e_0)\bigr) = \langle \lambda e_0\rangle_{*}\langle \mu e_0\rangle_{*}$, because $\mathbb{C}e_0$ is a field. Multiplicativity holds on the centre and fails off it, and the failure is measured by the corollary.</p>
+<p>and dually $\langle\tilde R,\tilde P\star\tilde Q\rangle_{*} = \langle\tilde R,e_t\rangle_{*}\overline{\langle\tilde P,\tilde Q\rangle_{*}}$. The first factor $\langle\tilde P,\tilde Q\rangle_{*}$ is the coefficient of the product, the second is the evaluation of the form on the idempotent $e_t$; the product is central, so the form evaluates it only through that one coefficient.</p>
+<p><strong>Remark (the algebraic norm is multiplicative on the centre).</strong> On the central line the block is the field rule $(\lambda e_t)\star(\mu e_t) = \lambda\overline{\mu}e_t$ and the algebraic norm is the squared modulus, $\langle \lambda e_t\rangle_{*} = \lvert\lambda\rvert^{2}$; on central elements it is multiplicative, $H\bigl((\lambda e_t)\star(\mu e_t)\bigr) = \langle \lambda e_t\rangle_{*}\langle \mu e_t\rangle_{*}$, because $\mathbb{C}e_t$ is a field. Multiplicativity holds on the centre and fails off it, and the failure is measured by the corollary.</p>
 <h2 id="the-polarisation-of-the-algebraic-norm">The Polarisation of the Algebraic Norm</h2>
 <p><strong>The polar form of $\langle\cdot,\cdot\rangle_{*}$ is twice the real part of the sesquilinear form, $\langle\tilde P + \tilde Q\rangle_{*} - \langle\tilde P\rangle_{*} - \langle\tilde Q\rangle_{*} = 2\Re \langle\tilde P,\tilde Q\rangle_{*}$, and the full Hermitian form is recovered from the algebraic norm by the four-term polarisation $\langle\tilde P,\tilde Q\rangle_{*} = \tfrac{1}{4}\sum_{k=0}^{3}i^{k}\langle\tilde P + i^{k}\tilde Q\rangle_{*}$.</strong></p>
 <p><strong>Theorem (the polarisation).</strong> The polar form of the quadratic map $\langle\cdot,\cdot\rangle_{*}$ is twice the real part of the sesquilinear form,</p>
@@ -150,7 +149,7 @@ $$</p>
 <tbody>
 <tr>
 <td>algebraic norm</td>
-<td>$\langle\tilde{Q}\rangle = \mathrm{Sc}(\tilde Q\tilde Q) = Q_0^2-(\vec Q,\vec Q)$, complex, indefinite</td>
+<td>$\langle\tilde{Q}\rangle = \mathrm{Sc}(\tilde Q\tilde Q) = Q_t^2-(\vec Q,\vec Q)$, complex, indefinite</td>
 <td>$\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde Q\star\tilde Q) = \sum_\mu\lvert Q_\mu\rvert^{2}$, real, definite</td>
 </tr>
 <tr>
@@ -165,7 +164,7 @@ $$</p>
 </tr>
 <tr>
 <td>unit</td>
-<td>$e_0$, two-sided</td>
+<td>$e_t$, two-sided</td>
 <td>none</td>
 </tr>
 <tr>
@@ -182,11 +181,11 @@ $$</p>
 </table></div>
 <p>The parent is unital and the block is not; the two products carry <strong>different</strong> algebraic norms, $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$, and neither algebraic norm decides invertibility: the parent has invertible elements that its algebraic norm $\langle\cdot\rangle$ does not see, and the block has no invertible element at all. The last three rows are the absence and the shape of a rank-one product.</p>
 <h2 id="summary">Summary</h2>
-<p>The symmetric plain sesqualgebra $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$ has <strong>no unit</strong>, because every value of the product is central and $\mathbb{B}$ has non-central elements; consequently it has <strong>no inverse</strong>, <strong>no group of units</strong> and no division structure, and the relative definitions are empty. It carries one algebraic norm, the diagonal of its scalar-part form,</p>
+<p>The symmetric plain sesqualgebra $\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$ has <strong>no unit</strong>, because every value of the product is central and $\mathbb{B}$ has non-central elements; consequently it has <strong>no inverse</strong>, <strong>no group of units</strong> and no division structure, and the relative definitions are empty. It carries one algebraic norm, the diagonal of its scalar-part form,</p>
 <p>$$
-\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2},
+\langle\tilde{Q}\rangle_{*} = \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr) = \sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2},
 $$</p>
-<p>a real non-negative definite quadratic map of signature $(8,0)$, invariant under the three conjugations. The algebraic norm is <strong>not multiplicative</strong>: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, the defect is the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and multiplicativity holds on the centre alone. What replaces it is the exact identity $\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_0,\tilde R\rangle_{*}$, and the algebraic norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The <strong>absence of a criterion</strong> is the definiteness, $\langle\tilde{Q}\rangle_{*} = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way.</p>
+<p>a real non-negative definite quadratic map of signature $(8,0)$, invariant under the three conjugations. The algebraic norm is <strong>not multiplicative</strong>: $\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$, the defect is the discriminant $\langle\tilde P\rangle_{*}\langle\tilde Q\rangle_{*} - \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}\geq 0$, vanishing exactly on linearly dependent pairs, and multiplicativity holds on the centre alone. What replaces it is the exact identity $\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde R\rangle_{*}$, and the algebraic norm polarises to the Hermitian form, $\Re H$ at the symmetric step and $\langle\cdot,\cdot\rangle_{*}$ at the four-term display. The <strong>absence of a criterion</strong> is the definiteness, $\langle\tilde{Q}\rangle_{*} = 0\Leftrightarrow\tilde{Q} = 0$: the block has no nonzero isotropic vector and no invertible element, and its element classification is two-way.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -197,7 +196,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_0$</td>
+<td>$\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{*}e_t$</td>
 <td>the product of the block</td>
 </tr>
 <tr>
@@ -209,15 +208,15 @@ $$</p>
 <td>the algebraic norm of the block, one of the four algebraic norms of the space</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_0$</td>
-<td>the square map, image $\mathbb{R}_{\geq0}e_0$</td>
+<td>$\tilde{Q}\star\tilde{Q} = \langle\tilde{Q}\rangle_{*}e_t$</td>
+<td>the square map, image $\mathbb{R}_{\geq0}e_t$</td>
 </tr>
 <tr>
 <td>$\langle\tilde P\star\tilde Q\rangle_{*} = \lvert \langle\tilde P,\tilde Q\rangle_{*}\rvert^{2}$</td>
 <td>the algebraic norm of a product</td>
 </tr>
 <tr>
-<td>$\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_0,\tilde R\rangle_{*}$</td>
+<td>$\langle\tilde P\star\tilde Q,\tilde R\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\langle e_t,\tilde R\rangle_{*}$</td>
 <td>the identity that replaces multiplicativity</td>
 </tr>
 <tr>

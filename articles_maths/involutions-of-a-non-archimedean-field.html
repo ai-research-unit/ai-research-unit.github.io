@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -63,7 +62,7 @@
 <h2 id="the-fixed-field">The Fixed Field</h2>
 <p><strong>Theorem (the fixed field and the isometric hypothesis).</strong> Let $\sigma$ be a nontrivial involution of $F$. Then $F^\sigma$ is a subfield with $[F : F^\sigma] = 2$, and $F^\sigma$ is a valued subfield of $F$ whose valuation ring is $\mathcal{O}\cap F^\sigma$ exactly when $\sigma$ is isometric; the norm form satisfies $\sigma(N(x)) = N(x)$, and $[F : F^\sigma] = 2$ holds whether or not $\sigma$ is isometric.</p>
 <p><strong>Proof.</strong> The degree statement is the algebraic fact that the fixed field of an order-two automorphism has index at most two, and exactly two when the involution is nontrivial, by <em>Involutive Valued Fields</em>; it does not use the valuation. When $\sigma$ is isometric, $\mathcal{O}$ is stable and $\mathcal{O}\cap F^\sigma$ is the valuation ring of the restricted valuation on $F^\sigma$; when it is not isometric, every valuation ring is moved and there is no compatible restriction on the whole of $F^\sigma$ from the given one. The norm statement is $\sigma(N(x)) = \sigma(x)\sigma^2(x) = N(x)$.</p>
-<p><strong>Corollary (the trace and the norm).</strong> For $x\in F$ the elements $x + \sigma(x)$ and $N(x) = x\sigma(x)$ lie in $F^\sigma$; the norm is multiplicative, $N(xy) = N(x)N(y)$, the norm-one set $U(F,\sigma) = \{x\in F^\times : N(x) = 1\}$ is a subgroup, and the norm form is anisotropic in the sense that $N(x) = 0$ only for $x = 0$.</p>
+<p><strong>Corollary (the trace and the norm).</strong> For $x\in F$ the elements $x + \sigma(x)$ and $N(x) = x\sigma(x)$ lie in $F^\sigma$; the norm is multiplicative, $N(xy) = N(x)N(y)$, the norm-one set $\mathrm{U}(F,\sigma) = \{x\in F^\times : N(x) = 1\}$ is a subgroup, and the norm form is anisotropic in the sense that $N(x) = 0$ only for $x = 0$.</p>
 <p><strong>Proof.</strong> The trace and norm lie in the fixed field as in the quadratic extension; multiplicativity is $\sigma(xy) = \sigma(x)\sigma(y)$ for a commutative field; anisotropy is that a field has no zero divisors.</p>
 <h2 id="the-residue-involution">The Residue Involution</h2>
 <p><strong>Theorem (the residue involution over an arbitrary residue field).</strong> Let $\sigma$ be isometric. Then $\bar\sigma$ is a well-defined order-two operator on the residue field $k = \mathcal{O}/\mathrm{M}$, additive and reversing the product,</p>
@@ -128,7 +127,7 @@ $$</p>
 <td>The norm form in the isometric case</td>
 </tr>
 <tr>
-<td>$U(F,\sigma)$</td>
+<td>$\mathrm{U}(F,\sigma)$</td>
 <td>The norm-one subgroup</td>
 </tr>
 <tr>

@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -54,12 +53,12 @@
 <h2 id="introduction">Introduction</h2>
 <p>This article states what is peculiar to the complex field among the twelve algebraic structures of the corpus. The four general products, with their symmetrisations and antisymmetrisations, make the twelve; on a commutative base ten of the twelve coincide two-and-two with the two that survive, and the four antisymmetric ones vanish. The specificities of $\mathbb{C}$ are the reasons: the field laws, the absence of zero divisors, the absence of nilpotents and of nontrivial idempotents, the irreducibility of the polynomial that defines it, the algebraic closure, and its place among the finite-dimensional real division algebras.</p>
 <p>The article closes the specific theory of the complex algebra: it is the verdict, not a catalogue. It does not prove the classes of element — they are <em>The Classes of Element of the Complex Algebra</em>, above this article — and it does not restate the products or the forms, which are <em>The Two Products of the Complexoid Space</em> and <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>. The multiplication of the field, the definition of $\mathbb{C}$ as $\mathbb{R}[x]/(x^{2}+1)$, the fundamental theorem of algebra, the algebraic closure of $\mathbb{R}$ and the non-orderability of $\mathbb{C}$ are <em>Complex Algebra</em>. The norm, the invertibility criterion and the group of units are <em>Complex Norm and Invertibility</em>; completeness is a topological property and belongs to the same place, and the article only points to it.</p>
-<p><strong>Interpretation.</strong> The element is $A=a+ia'$; the base involution is the bar $\bar A=a-ia'$; ${}^{*}=\bar{\cdot}$. The unit of the field is written $1$. The four forms are the plain bilinear $\langle A,C\rangle=AC$ and the Hermitian $\langle A,C\rangle_{*}=A\bar C$, the quaternionic and Krein companions coinciding with them, and the two algebraic norms are $\langle A\rangle=A^{2}$ and $\langle A\rangle_{*}=A\bar A$; a bracket is reserved for a form and is never an element.</p>
+<p><strong>Interpretation.</strong> The element is $Q_1=q_1+iq'_1$; the base involution is the bar $\bar Q_1=q_1-iq'_1$; ${}^{*}=\bar{\cdot}$. The unit of the field is written $1$. The four forms are the plain bilinear $\langle Q_1,Q_2\rangle=Q_1Q_2$ and the Hermitian $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$, the quaternionic and Krein companions coinciding with them, and the two algebraic norms are $\langle Q_1\rangle=Q_1^{2}$ and $\langle Q_1\rangle_{*}=Q_1\bar Q_1$; a bracket is reserved for a form and is never an element.</p>
 <h2 id="what-the-twelve-structures-collapse-to">What the Twelve Structures Collapse To</h2>
-<p>The two slots of the general product are its two arguments, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian conjugation. On $\mathbb{C}$ the first slot carries the identity, so the four settings of the general theory collapse two-and-two onto two objects: the field product $AC$, with the identity in the second slot, and the sesquilinear product $A\bar C$, with the bar. The bilinear settings name the multiplication of the field and the sesquilinear settings name the derived product with the bar, and the four antisymmetrised products vanish, each being the antisymmetric part of a product whose two slots commute in the class-preserving exchange. The two surviving structures are the field under $AC$ and the sesquilinear structure under $A\bar C$, and they are not the same structure: the first is associative with a two-sided unit, the second is non-associative with a right unit alone. The statements are <em>The Two Products of the Complexoid Space</em>; the two surviving products are the subject of <em>The Sesquilinear Product of the Complexoid Space</em>, below this article in this category.</p>
+<p>The two slots of the general product are its two arguments, the first carrying the conjugation of the coefficient ring and the second the identity or the Hermitian conjugation. On $\mathbb{C}$ the first slot carries the identity, so the four settings of the general theory collapse two-and-two onto two objects: the field product $Q_1Q_2$, with the identity in the second slot, and the sesquilinear product $Q_1\bar Q_2$, with the bar. The bilinear settings name the multiplication of the field and the sesquilinear settings name the derived product with the bar, and the four antisymmetrised products vanish, each being the antisymmetric part of a product whose two slots commute in the class-preserving exchange. The two surviving structures are the field under $Q_1Q_2$ and the sesquilinear structure under $Q_1\bar Q_2$, and they are not the same structure: the first is associative with a two-sided unit, the second is non-associative with a right unit alone. The statements are <em>The Two Products of the Complexoid Space</em>; the two surviving products are the subject of <em>The Sesquilinear Product of the Complexoid Space</em>, below this article in this category.</p>
 <h2 id="the-field-laws">The Field Laws</h2>
 <p><strong>Proposition.</strong> The complex algebra is associative, commutative, unital, and has no zero divisor; every nonzero element is invertible.</p>
-<p><strong>Proof.</strong> Associativity and commutativity are read on the product $AC=(ac-a'c')+i(ac'+a'c)$, which is the product of the field; the unit is $1$; the absence of zero divisors and the invertibility of every nonzero element are <em>The Classes of Element of the Complex Algebra</em>, §<em>The Zero Divisors and the Annihilators</em>.</p>
+<p><strong>Proof.</strong> Associativity and commutativity are read on the product $Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2)$, which is the product of the field; the unit is $1$; the absence of zero divisors and the invertibility of every nonzero element are <em>The Classes of Element of the Complex Algebra</em>, §<em>The Zero Divisors and the Annihilators</em>.</p>
 <p>These are the laws that the general non-commutative algebra fails one by one. The consequence for the classes is that the zero divisors, the annihilators, the nilpotents, the non-trivial idempotents and the proper ideals all vanish at once, and the article names that consequence once and does not repeat it.</p>
 <h2 id="the-nilpotents-and-the-idempotents">The Nilpotents and the Idempotents</h2>
 <p><strong>Proposition.</strong> In either product, $0$ and $1$ are the only idempotents of $\mathbb{C}$, and $0$ is the only nilpotent.</p>
@@ -76,10 +75,10 @@
 <h2 id="the-consequences">The Consequences</h2>
 <p>Three consequences close the article.</p>
 <p><strong>On the classes.</strong> Every class of element that depends on a zero divisor, a nilpotent or a nontrivial idempotent is empty or two-point, and the classes are <em>The Classes of Element of the Complex Algebra</em>, above this article.</p>
-<p><strong>On the two products.</strong> The field product is associative and has a two-sided unit; the sesquilinear product keeps a right unit and no left unit, since $A\bar 1=A$ but $1\bar A=\bar A$, which equals $A$ only for real $A$. The two products therefore differ on exactly the laws the slot analysis predicts, and the comparison of the two, with the slot reading and the two adjoints, is <em>Relations and Comparison Between the Two Products</em>, above this article in this category.</p>
-<p><strong>On the two forms.</strong> The two bilinear forms coincide with the two sesquilinear ones two-and-two, $B=N=AC$ and $H=K=A\bar C$, and the two algebraic norms are $A^{2}$ and $A\bar A$. The forms are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>; the definiteness of $H$, its cone and its modules are <em>The Hermitian Form and the Positivity of the Complexoid Algebra</em>, below this article in this category.</p>
+<p><strong>On the two products.</strong> The field product is associative and has a two-sided unit; the sesquilinear product keeps a right unit and no left unit, since $Q_1\bar 1=Q_1$ but $1\bar Q_1=\bar Q_1$, which equals $Q_1$ only for real $Q_1$. The two products therefore differ on exactly the laws the slot analysis predicts, and the comparison of the two, with the slot reading and the two adjoints, is <em>Relations and Comparison Between the Two Products</em>, above this article in this category.</p>
+<p><strong>On the two forms.</strong> The two bilinear forms coincide with the two sesquilinear ones two-and-two, $\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$, and the two algebraic norms are $Q_1^{2}$ and $Q_1\bar Q_1$. The forms are <em>The Two Forms and the Two Algebraic Norms of the Complexoid Space</em>; the definiteness of $\langle\cdot,\cdot\rangle_{*}$, its cone and its modules are <em>The Hermitian Form and the Positivity of the Complexoid Algebra</em>, below this article in this category.</p>
 <h2 id="summary">Summary</h2>
-<p>The complex algebra is the field: associative, commutative, unital, without zero divisors, with $0$ and $1$ as the only idempotents and $0$ as the only nilpotent. Of the twelve structures, ten collapse two-and-two onto the field product $AC$ and the sesquilinear product $A\bar C$ — the four bilinear ones coincide with the multiplication of the field, the four sesquilinear ones with the derived product — and the four antisymmetric ones vanish. The base is the quadratic extension $\mathbb{R}[x]/(x^{2}+1)$ by a root of $-1$, algebraically closed, and it is the only finite-dimensional real division algebra that is both commutative and non-orderable. Every emptiness of the class catalogue and every coincidence of the structures follows from the field laws, which is why the chapter is selective and not mechanical.</p>
+<p>The complex algebra is the field: associative, commutative, unital, without zero divisors, with $0$ and $1$ as the only idempotents and $0$ as the only nilpotent. Of the twelve structures, ten collapse two-and-two onto the field product $Q_1Q_2$ and the sesquilinear product $Q_1\bar Q_2$ — the four bilinear ones coincide with the multiplication of the field, the four sesquilinear ones with the derived product — and the four antisymmetric ones vanish. The base is the quadratic extension $\mathbb{R}[x]/(x^{2}+1)$ by a root of $-1$, algebraically closed, and it is the only finite-dimensional real division algebra that is both commutative and non-orderable. Every emptiness of the class catalogue and every coincidence of the structures follows from the field laws, which is why the chapter is selective and not mechanical.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -94,24 +93,24 @@
 <td>the complex field, the one-dimensional complex algebra</td>
 </tr>
 <tr>
-<td>$A=a+ia'$</td>
-<td>a complex element, with the real coordinates $a,a'$</td>
+<td>$Q_1=q_1+iq'_1$</td>
+<td>a complex element, with the real coordinates $q_1,q'_1$</td>
 </tr>
 <tr>
-<td>$\bar A=a-ia'$</td>
+<td>$\bar Q_1=q_1-iq'_1$</td>
 <td>the complex conjugation, the base involution; ${}^{*}=\bar{\cdot}$</td>
 </tr>
 <tr>
-<td>$AC$, $A\bar C$</td>
+<td>$Q_1Q_2$, $Q_1\bar Q_2$</td>
 <td>the field product and the sesquilinear product</td>
 </tr>
 <tr>
-<td>$B=N$, $H=K$</td>
-<td>the coincidences of the four forms, $B=N=AC$ and $H=K=A\bar C$</td>
+<td>$\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$, $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$</td>
+<td>the coincidences of the four forms</td>
 </tr>
 <tr>
 <td>the two settings $(\mathrm{id}\text{ or }{}^{*})$</td>
-<td>the two product blocks, $AC$ and $A\bar C$</td>
+<td>the two product blocks, $Q_1Q_2$ and $Q_1\bar Q_2$</td>
 </tr>
 </tbody>
 </table></div>

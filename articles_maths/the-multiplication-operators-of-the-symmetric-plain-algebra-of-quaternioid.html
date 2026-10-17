@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,9 +51,9 @@
       <div class="article-body">
         <h1 id="the-multiplication-operators-of-the-symmetric-plain-algebra"><strong>The Multiplication Operators of the Symmetric Plain Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of <em>Introduction to the Symmetric Plain Algebra</em>.</p>
+<p>The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ of <em>Introduction to the Symmetric Plain Algebra</em>.</p>
 <p><strong>This is not the algebra $\mathbb{H}$.</strong> The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde x=\tilde p\tilde x\tilde q$, the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, and the derivations of the plain algebra are those of <em>The Multiplication Operators of the General Plain Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde x=\tilde p\tilde x\tilde q$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the derivations of the plain algebra are those of <em>The Multiplication Operators of the General Plain Algebra</em>.</p>
 <h2 id="the-multiplication-operators">The Multiplication Operators</h2>
 <h3 id="the-definition-and-the-two-sided-coincidence">The Definition and the Two-Sided Coincidence</h3>
 <p><strong>Definition.</strong> The <strong>left multiplication operator</strong> of the block is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$; the <strong>right</strong> one is $R^{\bullet}_{\tilde p}\tilde q=\tilde q\bullet\tilde p$.</p>
@@ -97,7 +96,7 @@ $$</p>
 <h3 id="the-inner-derivations">The Inner Derivations</h3>
 <p><strong>Definition.</strong> The <strong>inner derivations</strong> of the block are the operators $D_{\tilde p,\tilde q}=[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$.</p>
 <p><strong>Theorem.</strong> The inner derivations span a three-dimensional real Lie algebra, isomorphic to $\mathfrak{so}(3)$; it acts on the vector subspace by its usual rotations and annihilates the scalar line.</p>
-<p><em>Proof.</em> The derivation algebra of a degree-two algebra is the skew part of the structure Lie algebra, and for the block it is the Lie algebra acting on the three-dimensional vector subspace by the rotations that preserve the Euclidean form, $\mathfrak{so}(3)$; the scalar line is central and every derivation annihilates $e_0$. A direct count from the four generators gives three independent brackets, $[L^{\bullet}_{e_1},L^{\bullet}_{e_2}]$, $[L^{\bullet}_{e_2},L^{\bullet}_{e_3}]$, $[L^{\bullet}_{e_3},L^{\bullet}_{e_1}]$.</p>
+<p><em>Proof.</em> The derivation algebra of a degree-two algebra is the skew part of the structure Lie algebra, and for the block it is the Lie algebra acting on the three-dimensional vector subspace by the rotations that preserve the Euclidean form, $\mathfrak{so}(3)$; the scalar line is central and every derivation annihilates $e_t$. A direct count from the four generators gives three independent brackets, $[L^{\bullet}_{\vec e_x},L^{\bullet}_{\vec e_y}]$, $[L^{\bullet}_{\vec e_y},L^{\bullet}_{\vec e_z}]$, $[L^{\bullet}_{\vec e_z},L^{\bullet}_{\vec e_x}]$.</p>
 <h2 id="the-enveloping-structure">The Enveloping Structure</h2>
 <h3 id="the-enveloping-algebra-is-full">The Enveloping Algebra Is Full</h3>
 <p><strong>Theorem.</strong> The multiplication operators generate the <strong>full</strong> endomorphism algebra:</p>
@@ -105,7 +104,7 @@ $$</p>
 \mathrm{alg}\bigl\{\,L^{\bullet}_{\tilde p}\,\bigr\}=\mathrm{End}_{\mathbb{R}}(\mathbb{H})\cong M_4(\mathbb{R}),
 $$</p>
 <p>of real dimension $16$; the span of the products of length at most two is already all of it.</p>
-<p><em>Proof.</em> The identity is $L^{\bullet}_{e_0}$; the four generators together with their products of length one span a $13$-dimensional space, and adjoining the products of length two completes it to $16$, by the computation of the block's operator span. Since $\mathrm{alg}$ contains the identity and is the whole of $M_4(\mathbb{R})$, it is irreducible.</p>
+<p><em>Proof.</em> The identity is $L^{\bullet}_{e_t}$; the four generators together with their products of length one span a $13$-dimensional space, and adjoining the products of length two completes it to $16$, by the computation of the block's operator span. Since $\mathrm{alg}$ contains the identity and is the whole of $M_4(\mathbb{R})$, it is irreducible.</p>
 <p><strong>Corollary (the commutant).</strong> The commutant of the family is the scalar operators, $\{L^{\bullet}_{\tilde p}\}'=\mathbb{R}\cdot\mathrm{id}$; the block is a <strong>multiplication algebra</strong> whose multiplications generate every linear map of the space, as the plain left and right multiplications do in <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>.</p>
 <p><strong>Remark (the contrast with the plain algebra).</strong> In the plain algebra the left and the right multiplications generate the two-sided multiplications but not all of $\mathrm{End}(\mathbb{H})$; the block, being commutative, has a single family and its products fill the whole matrix algebra. This is the specific-theory form of the coincidence $L^{\bullet}=R^{\bullet}$.</p>
 <h2 id="the-derivations">The Derivations</h2>
@@ -116,13 +115,13 @@ $$</p>
 \qquad \dim\operatorname{Der}=3,
 $$</p>
 <p>and no derivation is a multiplication by an element.</p>
-<p><em>Proof.</em> The derivation algebra is three-dimensional and coincides with the inner derivations by the general theory of degree-two Jordan algebras; an element-multiplication $L^{\bullet}_{\tilde a}$ is a derivation only if $\tilde a\bullet(\tilde p\bullet\tilde q)=( \tilde a\bullet\tilde p)\bullet\tilde q+\tilde p\bullet(\tilde a\bullet\tilde q)$ for all $\tilde p,\tilde q$, which forces $\tilde a=0$ by the non-associativity at $e_1,e_2$.</p>
+<p><em>Proof.</em> The derivation algebra is three-dimensional and coincides with the inner derivations by the general theory of degree-two Jordan algebras; an element-multiplication $L^{\bullet}_{\tilde a}$ is a derivation only if $\tilde a\bullet(\tilde q_1\bullet\tilde q_2)=( \tilde a\bullet\tilde q_1)\bullet\tilde q_2+\tilde q_1\bullet(\tilde a\bullet\tilde q_2)$ for all $\tilde q_1,\tilde q_2$, which forces $\tilde a=0$ by the non-associativity at $\vec e_x,\vec e_y$.</p>
 <h3 id="skewness-for-the-trace-form">Skewness for the Trace Form</h3>
 <p><strong>Theorem.</strong> Every derivation is skew for the trace form:</p>
 <p>$$
-\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0 .
+\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0 .
 $$</p>
-<p><em>Proof.</em> The trace form is associative, $\tau(\tilde p\bullet\tilde q,\tilde r)=\tau(\tilde p,\tilde q\bullet\tilde r)$, and differentiating this identity along a derivation gives the skewness; the full argument is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, where the invariance is owned.</p>
+<p><em>Proof.</em> The trace form is associative, $\tau(\tilde q_1\bullet\tilde q_2,\tilde q_3)=\tau(\tilde q_1,\tilde q_2\bullet\tilde q_3)$, and differentiating this identity along a derivation gives the skewness; the full argument is <em>The Trace Form and the Invariance of the Symmetric Plain Algebra</em>, where the invariance is owned.</p>
 <h2 id="summary">Summary</h2>
 <p>The multiplication operators of the block are $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$, the half-sum $L^{\bullet}_{\tilde p}=\tfrac12(L_{\tilde p}+R_{\tilde p})$ of the plain left and right multiplications, and because the product is commutative the left and the right operators coincide, $L^{\bullet}_{\tilde p}=R^{\bullet}_{\tilde p}$; the map $\tilde p\mapsto L^{\bullet}_{\tilde p}$ is injective, with kernel $\{0\}$ at a non-pure element and a two-dimensional plane at a pure one. The composition is $L^{\bullet}_{\tilde p}L^{\bullet}_{\tilde q}=\tfrac14(L_{\tilde p\tilde q}+R_{\tilde q\tilde p}+M_{\tilde p,\tilde q}+M_{\tilde q,\tilde p})$, the operator form of the Jordan identity is $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde p^{\,\bullet2}}]=0$, and every bracket $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$ is a derivation. The operators generate the full endomorphism algebra $M_4(\mathbb{R})$, of dimension $16$, with commutant the scalars; the derivations are all inner and form the three-dimensional Lie algebra $\mathfrak{so}(3)$, and every derivation is skew for the trace form.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -159,7 +158,7 @@ $$</p>
 <td>the enveloping algebra</td>
 </tr>
 <tr>
-<td>$\tau(D\tilde p,\tilde q)+\tau(\tilde p,D\tilde q)=0$</td>
+<td>$\tau(D\tilde q_1,\tilde q_2)+\tau(\tilde q_1,D\tilde q_2)=0$</td>
 <td>skewness of the derivations</td>
 </tr>
 </tbody>

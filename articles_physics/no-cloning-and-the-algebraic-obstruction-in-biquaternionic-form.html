@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -86,7 +85,7 @@ $$</p>
 \tilde{U}\bigl(|\psi\rangle\otimes|0\rangle\bigr) = |\psi\rangle\otimes|\psi\rangle
 \qquad \text{for every normalized } |\psi\rangle\in S ,
 $$</p>
-<p>with $\tilde{U}\tilde{U}^{*} = \tilde{U}^{*}\tilde{U} = e_0\otimes e_0$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde{U}$ clones every input. This is the form in which the obstruction is transparent.</p>
+<p>with $\tilde{U}\tilde{U}^{*} = \tilde{U}^{*}\tilde{U} = e_t\otimes e_t$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde{U}$ clones every input. This is the form in which the obstruction is transparent.</p>
 <h2 id="the-algebraic-obstruction">The Algebraic Obstruction</h2>
 <h3 id="overlaps-are-preserved">Overlaps are preserved</h3>
 <p>Unitary evolution preserves inner products. For two inputs $|\psi\rangle,|\phi\rangle\in S$ and the blank $|0\rangle$,</p>
@@ -232,7 +231,7 @@ $$</p>
 <td>Hermitian subspace (states)</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$; $i$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$</td>
 <td>Quaternion units; central imaginary</td>
 </tr>
 <tr>
@@ -245,7 +244,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{U}$</td>
-<td>Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_0\otimes e_0$</td>
+<td>Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_t\otimes e_t$</td>
 </tr>
 <tr>
 <td>$\Phi$</td>

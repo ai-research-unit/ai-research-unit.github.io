@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -69,10 +68,10 @@ The indices with $\rho(i)=i$ are <strong>fixed branches</strong>; the pairs $\{i
 <p><em>Proof.</em> The set $R(\Lambda)=\bigcup_i R S_i(\Lambda)=\bigcup_i S_{\rho(i)}R(\Lambda)$ is a compact set satisfying the same invariance equation as $\Lambda$, so $R(\Lambda)=\Lambda$ by the uniqueness of the attractor of <em>Fractal Geometry</em>. Conversely, if $R(\Lambda)=\Lambda$ then $S_i R(\Lambda)$ and $R S_i(\Lambda)$ are two pieces of $\Lambda$ of the same scale and position, so they coincide by the disjointness, and $R S_i=S_{\rho(i)}R$ on the pieces and hence on the attractor.</p>
 <p><strong>Theorem (the coding intertwines the involution).</strong> Let $\pi:\partial\mathcal{T}\to\Lambda$ be the coding map of the iterated function system, and let $R^{\mathrm{flip}}(x_1x_2\cdots)=\rho(x_1)\rho(x_2)\cdots$ be the <strong>letterwise flip</strong> of the boundary. Then
 $$
-R\circ\pi=\pi\circR^{\mathrm{flip}} ,
+R\circ\pi=\pi\circ R^{\mathrm{flip}} ,
 $$
 so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.</p>
-<p><em>Proof.</em> $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tauR^{\mathrm{flip}}$.</p>
+<p><em>Proof.</em> $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tau R^{\mathrm{flip}}$.</p>
 <h2 id="the-limit-dynamical-system-and-its-reversal">The Limit Dynamical System and Its Reversal</h2>
 <h3 id="the-limit-map-and-reversibility">The Limit Map and Reversibility</h3>
 <p><strong>Definition.</strong> Let $G\le\operatorname{Aut}(\mathcal{T})$ be a contracting self-similar group with limit space $\mathcal{J}_G$, tiles $T_v$ and limit map $\varphi$ of <em>The Transfer Operator of the Limit Dynamical System</em>. The group is <strong>reversible</strong> if there is an involutive automorphism of the self-similar structure exchanging the letters by a permutation $\rho$ with $\rho^2=\mathrm{id}$, that is, an involution $R$ of $\mathcal{J}_G$ with $R(T_v)=T_{\rho(v)}$ and $R\circ\sigma_x=\sigma_{\rho(x)}\circ R$ for every letter.</p>
@@ -129,7 +128,7 @@ $$</p>
 <td>The letterwise flip of the boundary</td>
 </tr>
 <tr>
-<td>$R\circ\pi=\pi\circR^{\mathrm{flip}}$</td>
+<td>$R\circ\pi=\pi\circ R^{\mathrm{flip}}$</td>
 <td>The intertwining of the coding</td>
 </tr>
 <tr>

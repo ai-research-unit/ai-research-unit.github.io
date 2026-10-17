@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -60,7 +59,7 @@
 <p>$$
 J_c = \mathbb{D} \setminus F_c .
 $$</p>
-<p>That is, $z \in F_c$ when there is a neighbourhood $U$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in U$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.</p>
+<p>That is, $z \in F_c$ when there is a neighbourhood $\Omega$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in \Omega$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.</p>
 <p><strong>Remark (why the definition is the metric one).</strong> A split-complex polynomial is not holomorphic in the sense of <em>Complex Analysis</em>, and the theory of normal families of holomorphic maps does not apply. The definition above is the real two-dimensional analogue: a family is normal exactly when it is equicontinuous in the spherical metric, and the Fatou set is the locus of normality. This is the definition used for the real dynamics of Part III, and it reduces to the holomorphic definition when the map is complex.</p>
 <p><strong>Theorem (the two sets are completely invariant).</strong> $f_c(F_c) \subseteq F_c$, $f_c^{-1}(F_c) = F_c$, and $f_c(J_c) = J_c = f_c^{-1}(J_c)$; also $J(f_c) = J(f_c^n)$ for every $n \geq 1$.</p>
 <p><strong>Proof.</strong> A polynomial is proper of degree two, hence open and finite-to-one; composing an equicontinuous family with the continuous map $f_c$ and pulling it back preserve equicontinuity locally, which gives the invariance. The invariance under the iterate follows because the subfamily $\{f_c^{kn}\}$ controls the family $\{f_c^n\}$ in the same way as in the complex case.</p>

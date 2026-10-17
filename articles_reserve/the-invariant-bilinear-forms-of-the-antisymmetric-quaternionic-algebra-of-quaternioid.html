@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -53,14 +52,14 @@
         <h1 id="the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra"><strong>The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The antisymmetric quaternionic multiplication
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ is alternating and vector valued, and it fails the
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$ is alternating and vector valued, and it fails the
 Jacobi identity (<em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra</em>, below this article in this category). A Lie algebra carries its invariant bilinear forms, the
 symmetric $\beta$ with $\beta([x,y],z)+\beta(y,[x,z])=0$, whose prototype is the Killing form; the block
 of this article is an antisymmetrisation for which the Jacobi identity fails, so the classical theory
 does not apply, and the question of its own invariant forms is well posed and is answered here.</p>
 <p>The answer has three parts. The space of forms invariant under the block is <strong>one-dimensional</strong>,
-spanned by the form $\varphi(\tilde p,\tilde q)=p_0q_0$ that reads the two scalar parts; the invariant
+spanned by the form $\varphi(\tilde p,\tilde q)=p_0q_t$ that reads the two scalar parts; the invariant
 form is symmetric, its radical is the whole vector subspace, and there is no nonzero alternating
 invariant form. The <strong>trace form vanishes</strong>, the values of the block having zero scalar part, so the
 coefficient form of the block is zero. And the substitution that suggests itself in the absence of a
@@ -75,12 +74,12 @@ natural sign and gives nothing new. The symbol $\diamond$ is reserved for this b
 Quaternions</em> and <em>The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra</em>, below this article in this category; the operators are <em>The Adjoint Operators of the
 Antisymmetric Quaternionic Algebra</em>, below this article in this category. The comparator is *The Killing</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the <strong>centre</strong> is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the <strong>vector subspace</strong> is
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the <strong>centre</strong> is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the <strong>vector subspace</strong> is
 $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$; $\vec p\cdot\vec q$ is the Euclidean dot product and
 $L^{\diamond}_{\tilde p}$ is the left multiplication operator. The <strong>quaternion form</strong> is
-$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$.</p>
+$N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$.</p>
 <h2 id="the-invariance-condition">The Invariance Condition</h2>
 <p><strong>Definition.</strong> An $\mathbb{R}$-bilinear form $\beta:\mathbb{H}\times\mathbb{H}\to\mathbb{R}$ is
 <strong>invariant under the block</strong> if</p>
@@ -104,7 +103,7 @@ over the four basis operators gives the same solution, $G_{00}$ free and the oth
 <p><strong>Theorem (the invariant forms).</strong> The space of bilinear forms invariant under the block is
 one-dimensional, spanned by</p>
 <p>$$
-\varphi(\tilde p,\tilde q)=p_0q_0 ,
+\varphi(\tilde p,\tilde q)=p_0q_t ,
 $$</p>
 <p>the product of the two scalar parts. Every invariant form is a multiple of $\varphi$.</p>
 <p><em>Proof.</em> Let $G_{\mu\nu}=\beta(e_\mu,e_\nu)$ be the Gram matrix in the coefficient basis, and let
@@ -134,7 +133,7 @@ coefficient of the block, and the bilinear form that reads it is the zero form, 
 <p><strong>Theorem.</strong> The single invariant form $\varphi$ is <strong>symmetric</strong>, and there is <strong>no nonzero
 alternating invariant form</strong>; the space of invariant forms is one dimension symmetric and zero
 alternating.</p>
-<p><em>Proof.</em> $\varphi(\tilde p,\tilde q)=p_0q_0=\varphi(\tilde q,\tilde p)$ is symmetric. The solution of
+<p><em>Proof.</em> $\varphi(\tilde p,\tilde q)=p_0q_t=\varphi(\tilde q,\tilde p)$ is symmetric. The solution of
 the same system with the added antisymmetry $G^{\mathsf T}=-G$ is $G=0$, the solution space without the
 added symmetry being one-dimensional and spanned by a symmetric element; so the only antisymmetric
 invariant form is zero. The condition is preserved by the transposition of $\beta$, so the two searches
@@ -159,7 +158,7 @@ $K(\tilde p,\tilde q)=\operatorname{Tr}(L^{\diamond}_{\tilde p}L^{\diamond}_{\ti
 the composition of the two left multiplication operators.</p>
 <p><strong>Proposition (the operator trace form is non-degenerate).</strong> For all $\tilde p,\tilde q$,</p>
 <p>$$
-K(\tilde p,\tilde q)=3p_0q_0-2\,\vec p\cdot\vec q ,
+K(\tilde p,\tilde q)=3p_0q_t-2\,\vec p\cdot\vec q ,
 $$</p>
 <p>with Gram matrix $\operatorname{diag}(3,-2,-2,-2)$, of rank four, hence non-degenerate.</p>
 <p><em>Proof.</em> The matrix of $L^{\diamond}_{\tilde p}$ is read off the table of the block; its diagonal entries
@@ -169,10 +168,10 @@ entries.</p>
 <p><strong>Proposition (it is not invariant).</strong> The operator trace form is not invariant; the failure</p>
 <p>$$
 F(\tilde p,\tilde q,\tilde r)=K(\tilde p\diamond\tilde q,\tilde r)+K(\tilde q,\tilde p\diamond\tilde r)
-=-4p_0\,(\vec q\cdot\vec r)+2q_0\,(\vec p\cdot\vec r)+2r_0\,(\vec p\cdot\vec q)
+=-4p_0\,(\vec q\cdot\vec r)+2q_t\,(\vec p\cdot\vec r)+2r_0\,(\vec p\cdot\vec q)
 $$</p>
-<p>does not vanish identically, and at $(\tilde p,\tilde q,\tilde r)=(e_0,e_1,e_1)$ it equals
-$K(e_1,e_1)+K(e_1,e_1)=-2-2=-4$.</p>
+<p>does not vanish identically, and at $(\tilde p,\tilde q,\tilde r)=(e_t,\vec e_x,\vec e_x)$ it equals
+$K(\vec e_x,\vec e_x)+K(\vec e_x,\vec e_x)=-2-2=-4$.</p>
 <p><em>Proof.</em> Insert the explicit form into the two terms and collect; the general expression is the one
 displayed, and it is nonzero for a general triple.</p>
 <p><strong>Remark (why no substitute for the Killing form).</strong> The operator trace form is the natural substitute
@@ -198,13 +197,13 @@ of the block.</p>
 <h2 id="summary">Summary</h2>
 <p>The antisymmetric quaternionic block has a degenerate invariant-form theory. The invariance condition
 $\beta(\tilde p\diamond\tilde q,\tilde r)+\beta(\tilde q,\tilde p\diamond\tilde r)=0$ has a
-one-dimensional solution space, spanned by the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_0$,
+one-dimensional solution space, spanned by the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_t$,
 symmetric of Gram matrix $\operatorname{diag}(1,0,0,0)$ and rank one, with the vector subspace as
 radical; there is no nonzero alternating invariant form. The coefficient form of the block vanishes,
 the values having zero scalar part. The operator trace form
-$K(\tilde p,\tilde q)=\operatorname{Tr}(L^{\diamond}_{\tilde p}L^{\diamond}_{\tilde q})=3p_0q_0-2\,\vec p\cdot\vec q$
+$K(\tilde p,\tilde q)=\operatorname{Tr}(L^{\diamond}_{\tilde p}L^{\diamond}_{\tilde q})=3p_0q_t-2\,\vec p\cdot\vec q$
 is non-degenerate, of Gram matrix $\operatorname{diag}(3,-2,-2,-2)$, but is not invariant, with the
-failure $-4p_0(\vec q\cdot\vec r)+2q_0(\vec p\cdot\vec r)+2r_0(\vec p\cdot\vec q)$;
+failure $-4p_0(\vec q\cdot\vec r)+2q_t(\vec p\cdot\vec r)+2r_0(\vec p\cdot\vec q)$;
 the absence is the same obstruction as the Jacobi failure. The comparator, the cross product, carries
 the Killing form $-2\,\vec p\cdot\vec q$, available because its Jacobi identity holds.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -221,7 +220,7 @@ the Killing form $-2\,\vec p\cdot\vec q$, available because its Jacobi identity 
 <td>the invariance condition</td>
 </tr>
 <tr>
-<td>$\varphi(\tilde p,\tilde q)=p_0q_0$, Gram $\operatorname{diag}(1,0,0,0)$</td>
+<td>$\varphi(\tilde p,\tilde q)=p_0q_t$, Gram $\operatorname{diag}(1,0,0,0)$</td>
 <td>the unique invariant form, symmetric, rank one</td>
 </tr>
 <tr>
@@ -237,7 +236,7 @@ the Killing form $-2\,\vec p\cdot\vec q$, available because its Jacobi identity 
 <td>the vanishing of the coefficient form</td>
 </tr>
 <tr>
-<td>$K(\tilde p,\tilde q)=3p_0q_0-2\,\vec p\cdot\vec q$, Gram $\operatorname{diag}(3,-2,-2,-2)$</td>
+<td>$K(\tilde p,\tilde q)=3p_0q_t-2\,\vec p\cdot\vec q$, Gram $\operatorname{diag}(3,-2,-2,-2)$</td>
 <td>the operator trace form, non-degenerate, not invariant</td>
 </tr>
 <tr>

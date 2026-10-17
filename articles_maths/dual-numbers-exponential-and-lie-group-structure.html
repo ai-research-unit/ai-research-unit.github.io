@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -55,45 +54,45 @@
 <p>This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{D}'$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows <em>Dual-Numbers Algebra</em> for the algebra and its abelian Lie bracket, <em>Dual-Numbers Norm and Invertibility</em> for the unit group, <em>Dual-Numbers Automorphisms and Derivations</em> for the derivation algebra, and <em>Shears and Parabolic Rotations</em> for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{D}'$. A general dual number is</p>
 <p>$$
-A = a + \varepsilon a', \qquad a, a' \in R,
+Q = q + \varepsilon q', \qquad q, q' \in R,
 $$</p>
-<p>with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\rangle = a^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$.</p>
+<p>with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = q^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{D}'}$, and unit group $(\mathbb{D}')^\times = \{q \neq 0\}$.</p>
 <h2 id="the-lie-algebra-structure">The Lie Algebra Structure</h2>
 <h3 id="the-lie-bracket">The Lie Bracket</h3>
 <p><strong>Definition.</strong> The <strong>Lie bracket</strong> on $\mathbb{D}'_R$ is the commutator</p>
 <p>$$
-[A, B] = AB - BA.
+[Q_1, Q_2] = Q_1Q_2 - Q_2Q_1.
 $$</p>
 <p><strong>Theorem.</strong> $\mathbb{D}'_R$ is a <strong>commutative</strong> algebra, so its Lie bracket vanishes identically:</p>
 <p>$$
-[A, B] = 0 \qquad \text{for all } A, B \in \mathbb{D}'_R.
+[Q_1, Q_2] = 0 \qquad \text{for all } Q_1, Q_2 \in \mathbb{D}'_R.
 $$</p>
 <p>Hence the Lie algebra $\mathrm{G} = \mathbb{D}'_R$ is <strong>abelian</strong>.</p>
-<p><strong>Proof.</strong> $AB = BA$ for all $A, B$ because multiplication of dual numbers is commutative.</p>
+<p><strong>Proof.</strong> $Q_1Q_2 = Q_2Q_1$ for all $Q_1, Q_2$ because multiplication of dual numbers is commutative.</p>
 <h3 id="nilpotence">Nilpotence</h3>
 <p><strong>Definition.</strong> A Lie algebra $\mathrm{G}$ is <strong>nilpotent of class $c$</strong> if the descending central series $\mathrm{G}^1 = \mathrm{G}$, $\mathrm{G}^{k+1} = [\mathrm{G}, \mathrm{G}^k]$ reaches $0$ at step $c + 1$, and $\mathrm{G}$ is <strong>abelian</strong> when $[\mathrm{G}, \mathrm{G}] = 0$.</p>
 <p><strong>Proposition.</strong> $\mathrm{G} = \mathbb{D}'_R$ is a nilpotent Lie algebra of class $1$; equivalently, its derived subalgebra is zero, $[\mathrm{G}, \mathrm{G}] = 0$.</p>
-<p><strong>Proof.</strong> The derived subalgebra is spanned by brackets $[A,B]$, all of which vanish; the series is $\mathrm{G} \supset 0$.</p>
+<p><strong>Proof.</strong> The derived subalgebra is spanned by brackets $[Q_1,Q_2]$, all of which vanish; the series is $\mathrm{G} \supset 0$.</p>
 <p>So the dual-number Lie algebra is the abelian two-dimensional real Lie algebra, the simplest nilpotent example. Its enveloping algebra is the polynomial algebra on two commuting generators, and its only Lie structure is the underlying vector space.</p>
 <h3 id="the-lie-algebra-of-a-commutative-associative-algebra">The Lie Algebra of a Commutative Associative Algebra</h3>
 <p><strong>Remark.</strong> For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{D}'$ therefore lives not in $\mathbb{D}'$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{D}') = \mathbb{R}\partial_\varepsilon$ and in the Lie group structure of the unit group, which are treated below.</p>
 <h2 id="the-exponential">The Exponential</h2>
 <h3 id="definition-and-convergence">Definition and Convergence</h3>
-<p><strong>Definition.</strong> Let $R$ be a commutative $\mathbb{Q}$-algebra, so that $k!$ is invertible for every $k$. The <strong>exponential</strong> of $A \in \mathbb{D}'_R$ is the formal series</p>
+<p><strong>Definition.</strong> Let $R$ be a commutative $\mathbb{Q}$-algebra, so that $k!$ is invertible for every $k$. The <strong>exponential</strong> of $Q \in \mathbb{D}'_R$ is the formal series</p>
 <p>$$
-\exp(A) = \sum_{k \geq 0} \frac{A^k}{k!}.
+\exp(Q) = \sum_{k \geq 0} \frac{Q^k}{k!}.
 $$</p>
-<p>Over $R = \mathbb{R}$ the series converges for every $A$, in the topology of $\mathbb{D}' \cong \mathbb{R}^2$.</p>
+<p>Over $R = \mathbb{R}$ the series converges for every $Q$, in the topology of $\mathbb{D}' \cong \mathbb{R}^2$.</p>
 <h3 id="closed-form">Closed Form</h3>
-<p><strong>Theorem.</strong> For every $A = a + \varepsilon a'$,</p>
+<p><strong>Theorem.</strong> For every $Q = q + \varepsilon q'$,</p>
 <p>$$
-\exp(a + \varepsilon a') = \exp(a)\bigl(1 + \varepsilon a'\bigr) = \exp(a) + \exp(a)\varepsilon a'.
+\exp(q + \varepsilon q') = \exp(q)\bigl(1 + \varepsilon q'\bigr) = \exp(q) + \exp(q)\varepsilon q'.
 $$</p>
-<p><strong>Proof.</strong> By the binomial expansion and $\varepsilon^2 = 0$, $(a + \varepsilon a')^k = a^k + k a^{k-1}\varepsilon a'$ for $k \geq 1$. Summing,</p>
+<p><strong>Proof.</strong> By the binomial expansion and $\varepsilon^2 = 0$, $(q + \varepsilon q')^k = q^k + k q^{k-1}\varepsilon q'$ for $k \geq 1$. Summing,</p>
 <p>$$
-\exp(a + \varepsilon a') = \sum_{k \geq 0}\frac{a^k}{k!} + \varepsilon \sum_{k \geq 1}\frac{k a^{k-1}a'}{k!} = \exp(a) + \varepsilon\, a' \sum_{k \geq 1}\frac{a^{k-1}}{(k-1)!} = \exp(a) + \exp(a)\varepsilon a',
+\exp(q + \varepsilon q') = \sum_{k \geq 0}\frac{q^k}{k!} + \varepsilon \sum_{k \geq 1}\frac{k q^{k-1}q'}{k!} = \exp(q) + \varepsilon\, q' \sum_{k \geq 1}\frac{q^{k-1}}{(k-1)!} = \exp(q) + \exp(q)\varepsilon q',
 $$</p>
-<p>the two series being the exponential of $a$.</p>
+<p>the two series being the exponential of $q$.</p>
 <p><strong>Corollary.</strong> $\exp(\varepsilon) = 1 + \varepsilon$ and $\exp(s\varepsilon) = 1 + s\varepsilon$ for every $s$; the exponential of a purely infinitesimal element is a shear.</p>
 <h3 id="worked-values">Worked Values</h3>
 <p><strong>Example.</strong> $\exp(2 + 3\varepsilon) = e^{2}(1 + 3\varepsilon)$; numerically $e^{2} = 7.389056\ldots$, so the real part is $7.389056\ldots$ and the infinitesimal part is $3e^{2} = 22.167168\ldots$.</p>
@@ -101,35 +100,35 @@ $$</p>
 <h3 id="the-group-homomorphism-property">The Group Homomorphism Property</h3>
 <p><strong>Theorem.</strong> The exponential is a homomorphism from the additive group $(\mathbb{D}'_R, +)$ to the multiplicative group $(\mathbb{D}'_R)^\times$:</p>
 <p>$$
-\exp(A + B) = \exp(A)\exp(B).
+\exp(Q_1 + Q_2) = \exp(Q_1)\exp(Q_2).
 $$</p>
-<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $A, B$ the identity $\exp(A+B) = \exp(A)\exp(B)$ follows by the binomial theorem. Alternatively, $\exp(a + \varepsilon a')\exp(b + \varepsilon b') = \exp(a)(1 + \varepsilon a')\exp(b)(1 + \varepsilon b') = \exp(a+b)(1 + (a'+b')\varepsilon) = \exp((a+b) + \varepsilon(a'+b'))$, matching $A + B$.</p>
+<p><strong>Proof.</strong> The exponential is the usual exponential of the commutative associative algebra $\mathbb{D}'_R$, and for commuting $Q_1, Q_2$ the identity $\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2)$ follows by the binomial theorem. Alternatively, $\exp(q_1 + \varepsilon q'_1)\exp(q_2 + \varepsilon q'_2) = \exp(q_1)(1 + \varepsilon q'_1)\exp(q_2)(1 + \varepsilon q'_2) = \exp(q_1+q_2)(1 + (q'_1+q'_2)\varepsilon) = \exp((q_1+q_2) + \varepsilon(q'_1+q'_2))$, matching $Q_1 + Q_2$.</p>
 <p>So $\exp$ is a homomorphism of groups, and the image is a subgroup of the unit group.</p>
 <h2 id="the-group-of-units">The Group of Units</h2>
 <h3 id="the-lie-group">The Lie Group</h3>
 <p><strong>Theorem.</strong> The group of units</p>
 <p>$$
-(\mathbb{D}'_R)^\times = \{a + \varepsilon a' : a \in R^\times\}
+(\mathbb{D}'_R)^\times = \{q + \varepsilon q' : q \in R^\times\}
 $$</p>
-<p>is a group under multiplication, with $(a + \varepsilon a')^{-1} = a^{-1} - a^{-2}\varepsilon a'$. Over $R = \mathbb{R}$ it is a two-dimensional abelian Lie group with the following structure:</p>
+<p>is a group under multiplication, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over $R = \mathbb{R}$ it is a two-dimensional abelian Lie group with the following structure:</p>
 <p>$$
 (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
 $$</p>
-<p>the isomorphism being $a + \varepsilon a' \leftrightarrow (a,\, a'/a)$.</p>
+<p>the isomorphism being $q + \varepsilon q' \leftrightarrow (q,\, q'/q)$.</p>
 <p><strong>Proof.</strong> The group axioms and the inverse formula are from <em>Dual-Numbers Norm and Invertibility</em>; the isomorphism is the direct-product decomposition of <em>Shears and Parabolic Rotations</em>, where the second factor is the shear group $1 + \mathrm{M}$.</p>
 <h3 id="connected-components">Connected Components</h3>
-<p><strong>Proposition.</strong> Over $R = \mathbb{R}$ the unit group has exactly two connected components, $\{a > 0\}$ and $\{a < 0\}$, each contractible; the identity component is</p>
+<p><strong>Proposition.</strong> Over $R = \mathbb{R}$ the unit group has exactly two connected components, $\{q > 0\}$ and $\{q < 0\}$, each contractible; the identity component is</p>
 <p>$$
-(\mathbb{D}')^\times_0 = \{a > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
+(\mathbb{D}')^\times_0 = \{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
 $$</p>
-<p><strong>Proof.</strong> The sign of $a$ is a continuous surjective homomorphism $(\mathbb{D}')^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible.</p>
+<p><strong>Proof.</strong> The sign of $q$ is a continuous surjective homomorphism $(\mathbb{D}')^\times \to \{\pm 1\}$; the two fibres are half-planes, hence connected and contractible.</p>
 <h3 id="surjectivity-of-the-exponential-onto-the-identity-component">Surjectivity of the Exponential onto the Identity Component</h3>
 <p><strong>Theorem.</strong> Over $R = \mathbb{R}$ the exponential</p>
 <p>$$
 \exp : \mathrm{G} = \mathbb{D}' \longrightarrow (\mathbb{D}')^\times
 $$</p>
-<p>is injective, with image exactly the identity component $(\mathbb{D}')^\times_0 = \{a > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.</p>
-<p><strong>Proof.</strong> $\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$ has real part $\exp(a) > 0$, so the image is contained in $\{a > 0\}$. Conversely, for $b + \varepsilon b'$ with $b > 0$ set $a = \log b$ and $a' = b'/b$; then $\exp(a + \varepsilon a') = b(1 + \varepsilon b'/b) = b + \varepsilon b'$, so the image is $\{a > 0\}$. For injectivity, $\exp(a + \varepsilon a') = 1$ forces $\exp(a) = 1$, hence $a = 0$, and then $\exp(a)a' = a' = 0$. The map is smooth with the explicit smooth inverse $b + \varepsilon b' \mapsto \log b + (b'/b)\varepsilon$ on $\{b > 0\}$, so it is a diffeomorphism.</p>
+<p>is injective, with image exactly the identity component $(\mathbb{D}')^\times_0 = \{q > 0\}$. It is therefore a bijection, and in fact a diffeomorphism, onto the identity component.</p>
+<p><strong>Proof.</strong> $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ has real part $\exp(q) > 0$, so the image is contained in $\{q > 0\}$. Conversely, for $Q_1 = q_1 + \varepsilon q'_1$ with $q_1 > 0$ set $q = \log q_1$ and $q' = q'_1/q_1$; then $\exp(q + \varepsilon q') = q_1(1 + \varepsilon q'_1/q_1) = q_1 + \varepsilon q'_1$, so the image is $\{q > 0\}$. For injectivity, $\exp(q + \varepsilon q') = 1$ forces $\exp(q) = 1$, hence $q = 0$, and then $\exp(q)q' = q' = 0$. The map is smooth with the explicit smooth inverse $q_1 + \varepsilon q'_1 \mapsto \log q_1 + (q'_1/q_1)\varepsilon$ on $\{q_1 > 0\}$, so it is a diffeomorphism.</p>
 <p><strong>Remark.</strong> The kernel of the exponential is trivial. This is the sharpest contrast with the complex and matrix cases, where the exponential has a nontrivial kernel: on $\mathbb{C}$ the kernel is $2\pi i\mathbb{Z}$, and on $GL_2(\mathbb{C})$ the exponential is surjective but not injective, with kernel the matrices having eigenvalues in $2\pi i\mathbb{Z}$. Here the exponential is a global diffeomorphism from the abelian Lie algebra onto the identity component, the maximal simply connected abelian case.</p>
 <h2 id="the-parabolic-one-parameter-subgroup">The Parabolic One-Parameter Subgroup</h2>
 <h3 id="definition">Definition</h3>
@@ -149,12 +148,12 @@ $$</p>
 <p><strong>Proof.</strong> $(1 + s\varepsilon) - 1 = s\varepsilon$ and $(s\varepsilon)^2 = s^2\varepsilon^2 = 0$, so the displacement from the identity is nilpotent of index two, which is the algebraic form of unipotence; in particular $1 + s\varepsilon$ has no eigenvalue different from $1$ as a linear map of the algebra. The generator is the nilpotent $\varepsilon$, whose exponential is polynomial.</p>
 <h2 id="the-group-of-units-modulo-scaling">The Group of Units Modulo Scaling</h2>
 <h3 id="the-quotient">The Quotient</h3>
-<p><strong>Theorem.</strong> The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{D}')^\times$, $a \mapsto a$, and</p>
+<p><strong>Theorem.</strong> The central scalars embed as $\mathbb{R}^\times \hookrightarrow (\mathbb{D}')^\times$, $q \mapsto q$, and</p>
 <p>$$
 (\mathbb{D}')^\times / \mathbb{R}^\times \;\cong\; 1 + \mathrm{M} \;\cong\; (\mathbb{R}, +),
 $$</p>
-<p>the isomorphism being the class of $a + \varepsilon a'$ mapped to $1 + (a'/a)\varepsilon$, equivalently to the parabolic angle $s = a'/a$.</p>
-<p><strong>Proof.</strong> Every unit is $a(1 + \varepsilon a'/a)$, and multiplying by the scalar $a$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree.</p>
+<p>the isomorphism being the class of $q + \varepsilon q'$ mapped to $1 + (q'/q)\varepsilon$, equivalently to the parabolic angle $s = q'/q$.</p>
+<p><strong>Proof.</strong> Every unit is $q(1 + \varepsilon q'/q)$, and multiplying by the scalar $q$ is exactly the quotient by the subgroup $\mathbb{R}^\times$; two units have the same class exactly when their shear parameters agree.</p>
 <p><strong>Corollary.</strong> The quotient is connected, contractible and one-dimensional; it is the space of shears, and it is the same object as the parabolic one-parameter subgroup $G$.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <h3 id="the-split-complex-case">The Split Complex Case</h3>
@@ -202,7 +201,7 @@ $$</p>
 </table></div>
 <p>The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.</p>
 <h2 id="summary">Summary</h2>
-<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{a > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.</p>
+<p>The dual-number algebra $\mathbb{D}'$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ and is a group homomorphism from $(\mathbb{D}',+)$ to the unit group. The unit group is $(\mathbb{D}')^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{q > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{D}')^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -225,15 +224,15 @@ $$</p>
 <td>Split-complex algebra, unit $j$, $j^2 = +1$</td>
 </tr>
 <tr>
-<td>$A = a + \varepsilon a'$</td>
+<td>$Q = q + \varepsilon q'$</td>
 <td>General dual number</td>
 </tr>
 <tr>
-<td>$a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$</td>
+<td>$q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$</td>
 <td>Real and infinitesimal parts</td>
 </tr>
 <tr>
-<td>$[A,B] = AB - BA$</td>
+<td>$[Q_1,Q_2] = Q_1Q_2 - Q_2Q_1$</td>
 <td>Lie bracket, identically zero</td>
 </tr>
 <tr>
@@ -245,11 +244,11 @@ $$</p>
 <td>Maximal ideal, the nilpotent direction</td>
 </tr>
 <tr>
-<td>$\exp(a + \varepsilon a') = \exp(a)(1 + \varepsilon a')$</td>
+<td>$\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$</td>
 <td>Exponential</td>
 </tr>
 <tr>
-<td>$(\mathbb{D}')^\times = \{a \neq 0\}$</td>
+<td>$(\mathbb{D}')^\times = \{q \neq 0\}$</td>
 <td>Group of units</td>
 </tr>
 <tr>

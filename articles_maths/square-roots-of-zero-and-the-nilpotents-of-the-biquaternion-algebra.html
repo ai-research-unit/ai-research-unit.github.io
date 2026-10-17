@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -52,23 +51,23 @@
       <div class="article-body">
         <h1 id="square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra"><strong>Square Roots of Zero and the Nilpotents of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Of the four general products of <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em>, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is <em>Introduction to the Biquaternion Algebra</em>, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde P\tilde Q$, the product being the one of the algebra. That product is the one read throughout this article.</p>
+<p>Of the four general products of <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em>, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is <em>Introduction to the Biquaternion Algebra</em>, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.</p>
 <p>The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with</p>
 <p>$$
 \tilde\Xi^2=0 .
 $$</p>
 <p>The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ and the idempotents are the companion article <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the roots of the general quadratic $\tilde\Xi^2=\tilde Q$ are <em>Square Roots of a General Element in the Biquaternion Algebra</em>.</p>
-<p><strong>The results.</strong> The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $P_0=0$ and $P_1^2+P_2^2+P_3^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde P^3=0$ exactly when $\tilde P^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; no nilpotent is an idempotent, the two classes meeting only at $0$; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.</p>
+<p><strong>The results.</strong> The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; no nilpotent is an idempotent, the two classes meeting only at $0$; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.</p>
 <p>The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are <em>Zero Divisors of the Biquaternion Algebra</em>; the roots of $+1$ and the idempotents are <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>; the minimal ideals the nilpotents generate are <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>; and the same class read against the four general products is <em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is</p>
 <p>$$
-(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k,
+(\vec Q_1,\vec Q_2)=\sum_{k=1}^{3}Q_{1k}Q_{2k},
 $$</p>
-<p>and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The <strong>central square</strong> is</p>
+<p>and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_t$. The <strong>central square</strong> is</p>
 <p>$$
-\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0,\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
+\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t,\qquad C(\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2 .
 $$</p>
-<p>The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are <em>Introduction to the Remarkable Subspaces</em>. A root of a central value is written $\tilde\Xi$ (§<em>The Root Convention</em> of <em>Conventions in Mathematics</em>), a nilpotent $\tilde\Upsilon$ (§<em>The Nilpotent Convention</em>), and a generic element $\tilde P$ or $\tilde Q$.</p>
+<p>The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are <em>Introduction to the Remarkable Subspaces</em>. A root of a central value is written $\tilde\Xi$ (§<em>The Root Convention</em> of <em>Conventions in Mathematics</em>), a nilpotent $\tilde\Upsilon$ (§<em>The Nilpotent Convention</em>), and a generic element $\tilde Q$.</p>
 <p>The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is <em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>, §<em>Powers, the Square and the Roots</em>. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are <em>Comparison Between the Four General Products</em>.</p>
 <h2 id="the-roots-of-zero">The Roots of Zero</h2>
 <p><strong>The roots of $0$ are exactly the origin and the nilpotent cone, the pure biquaternions with $(\vec\Xi,\vec\Xi)=0$, a four-real-parameter family; the nonzero roots are the nilpotents.</strong></p>
@@ -76,22 +75,22 @@ $$</p>
 <h3 id="the-reduction">The Reduction</h3>
 <p>Write the root in scalar and vector parts,</p>
 <p>$$
-\tilde\Xi=\Xi_0e_0+\vec\Xi,\qquad \vec\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3,\qquad \Xi_k\in\mathbb{C}.
+\tilde\Xi=\Xi_te_t+\vec\Xi,\qquad \vec\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_k\in\mathbb{C}.
 $$</p>
 <p>The square of a biquaternion is given by the product formula,</p>
 <p>$$
-\tilde\Xi^2=\bigl(\Xi_0^2-(\vec\Xi,\vec\Xi)\bigr)e_0+2\Xi_0\vec\Xi,\qquad (\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2,
+\tilde\Xi^2=\bigl(\Xi_t^2-(\vec\Xi,\vec\Xi)\bigr)e_t+2\Xi_t\vec\Xi,\qquad (\vec\Xi,\vec\Xi)=\Xi_x^2+\Xi_y^2+\Xi_z^2,
 $$</p>
 <p>so equating $\tilde\Xi^2$ to $0$ splits the equation into a vector part and a scalar part,</p>
 <p>$$
-2\Xi_0\vec\Xi=0,
+2\Xi_t\vec\Xi=0,
 $$</p>
 <p>$$
-\Xi_0^2-(\vec\Xi,\vec\Xi)=0 .
+\Xi_t^2-(\vec\Xi,\vec\Xi)=0 .
 $$</p>
-<p>Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_0=0$ or $\vec\Xi=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_0=0$.</p>
+<p>Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_t=0$ or $\vec\Xi=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_t=0$.</p>
 <h3 id="the-zero-element">The Zero Element</h3>
-<p>In the scalar case $\tilde\Xi=\Xi_0e_0$ and the scalar equation reads $\Xi_0^2=0$; since $\mathbb{C}$ is a field, $\Xi_0=0$. The root in this case is the single element</p>
+<p>In the scalar case $\tilde\Xi=\Xi_te_t$ and the scalar equation reads $\Xi_t^2=0$; since $\mathbb{C}$ is a field, $\Xi_t=0$. The root in this case is the single element</p>
 <p>$$
 \tilde\Xi=0,
 $$</p>
@@ -99,19 +98,19 @@ $$</p>
 <h3 id="the-null-cone">The Null Cone</h3>
 <p>In the pure case $\tilde\Xi=\vec\Xi$ and the scalar equation reads</p>
 <p>$$
-(\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2=0 .
+(\vec\Xi,\vec\Xi)=\Xi_x^2+\Xi_y^2+\Xi_z^2=0 .
 $$</p>
 <p>Write the complex coefficients as $\Xi_k=\xi_k+i\xi'_k$ with real $\xi_k,\xi'_k$, so that</p>
 <p>$$
-\vec\Xi=\vec\xi+i\vec\xi',\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \vec\xi'=\xi'_1e_1+\xi'_2e_2+\xi'_3e_3 .
+\vec\Xi=\vec\xi+i\vec\xi',\qquad \vec\xi=\xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z,\qquad \vec\xi'=\xi'_x\vec e_x+\xi'_y\vec e_y+\xi'_z\vec e_z .
 $$</p>
 <p>Then</p>
 <p>$$
-(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2\bigr)+2i\bigl(\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3\bigr),
+(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2\bigr)+2i\bigl(\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z\bigr),
 $$</p>
 <p>so the single complex equation $(\vec\Xi,\vec\Xi)=0$ is the two real equations</p>
 <p>$$
-\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=0,\qquad \xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0 .
+\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0,\qquad \xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0 .
 $$</p>
 <p>Six real coefficients carry two constraints, so the roots in this case form a <strong>four-real-parameter family</strong>, the <strong>null cone</strong> of the pure subspace; equivalently its two real vector parts $\vec\xi$ and $\vec\xi'$ are orthogonal and satisfy $\vec\xi\cdot\vec\xi=\vec\xi'\cdot\vec\xi'$. Its nonzero elements are the nilpotents of the algebra.</p>
 <h3 id="statement-of-the-theorem">Statement of the Theorem</h3>
@@ -122,20 +121,20 @@ $$</p>
 $$</p>
 <p><strong>The null cone.</strong> The pure biquaternions of vanishing complex square, a four-real-parameter family,</p>
 <p>$$
-\tilde\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3,\qquad \Xi_1^2+\Xi_2^2+\Xi_3^2=0,
+\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z,\qquad \Xi_x^2+\Xi_y^2+\Xi_z^2=0,
 $$</p>
-<p>that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=0$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$. Its nonzero elements are the nilpotents of the algebra.</p>
+<p>that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$. Its nonzero elements are the nilpotents of the algebra.</p>
 <h3 id="verification">Verification</h3>
-<p>For a pure $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=0$ the scalar part of $\tilde\Xi^2$ is $-(\vec\Xi,\vec\Xi)=0$ and the vector part is $2\Xi_0\vec\Xi=0$, since $\Xi_0=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $\Xi_0=0$ or $\vec\Xi=0$.</p>
+<p>For a pure $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=0$ the scalar part of $\tilde\Xi^2$ is $-(\vec\Xi,\vec\Xi)=0$ and the vector part is $2\Xi_t\vec\Xi=0$, since $\Xi_t=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $\Xi_t=0$ or $\vec\Xi=0$.</p>
 <p>A worked instance is</p>
 <p>$$
-\tilde\Xi=e_1+ie_2,\qquad (e_1+ie_2)^2=e_1^2+i^2e_2^2+i(e_1e_2+e_2e_1)=-1+1+0=0 .
+\tilde\Xi=\vec e_x+i\vec e_y,\qquad (\vec e_x+i\vec e_y)^2=\vec e_x^2+i^2\vec e_y^2+i(\vec e_x\vec e_y+\vec e_y\vec e_x)=-1+1+0=0 .
 $$</p>
 <h3 id="the-roots-of-zero-and-the-nilpotents">The Roots of Zero and the Nilpotents</h3>
-<p>The nonzero roots of $0$ are exactly the <strong>nilpotents</strong> of the algebra. This is the criterion of §<em>The Criterion</em>: an element has vanishing square exactly when it is pure with isotropic vector part, $P_0=0$ and $(\vec P,\vec P)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.</p>
+<p>The nonzero roots of $0$ are exactly the <strong>nilpotents</strong> of the algebra. This is the criterion of §<em>The Criterion</em>: an element has vanishing square exactly when it is pure with isotropic vector part, $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.</p>
 <p>The nonzero roots of $0$ are <strong>not units</strong>. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and a unit is never a zero divisor. This is the behaviour opposite to the roots of $+1$, which are units of the algebra; the roots of the three central values and their invertibility are read value by value in <em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Square Roots of a General Element in the Biquaternion Algebra</em>.</p>
 <h2 id="the-nilpotents">The Nilpotents</h2>
-<p><strong>The nilpotents of the plain algebra are exactly the nonzero pure elements with isotropic vector part, $P_0=0$ and $P_1^2+P_2^2+P_3^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace; every nilpotent has index two; and no nilpotent is an idempotent.</strong></p>
+<p><strong>The nilpotents of the plain algebra are exactly the nonzero pure elements with isotropic vector part, $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace; every nilpotent has index two; and no nilpotent is an idempotent.</strong></p>
 <p>The <strong>nilpotents</strong> of the biquaternion algebra are the nonzero elements whose square vanishes. The class is small and rigid. A nilpotent has vanishing scalar part, so it is a pure biquaternion; its vector part is isotropic for the general plain bilinear form; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind, its own two-sided annihilating partner. The nilpotents are exactly the pure family of the zero divisors of <em>Zero Divisors of the Biquaternion Algebra</em>, the other family being the complex multiples of the non-trivial idempotents.</p>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> A <strong>nilpotent</strong> of the biquaternion algebra is an element $\tilde\Upsilon\in\mathbb{B}$ with vanishing square,</p>
@@ -150,29 +149,29 @@ $$</p>
 $$</p>
 <p>The nilpotents are thus a conjugation-stable class, and a statement about one nilpotent is a statement about its two conjugates.</p>
 <h3 id="the-criterion">The Criterion</h3>
-<p><strong>An element is a nilpotent exactly when it is pure and its vector part is isotropic, $P_0=0$ and $(\vec P,\vec P)=0$; every nilpotent is then a zero divisor and its powers stop at the second.</strong></p>
+<p><strong>An element is a nilpotent exactly when it is pure and its vector part is isotropic, $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$; every nilpotent is then a zero divisor and its powers stop at the second.</strong></p>
 <p>The square of a general element closes in two terms, one central and one along the vector part, because the vector part is a pure quaternion combination and its own square is central:</p>
 <p>$$
-\tilde Q^2=\bigl[Q_0^2-(\vec Q,\vec Q)\bigr]e_0+2Q_0\vec Q .
+\tilde Q^2=\bigl[Q_t^2-(\vec Q,\vec Q)\bigr]e_t+2Q_t\vec Q .
 $$</p>
-<p><strong>Theorem (the criterion for a nilpotent).</strong> For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P^2=0$; $\tilde P$ is pure, $P_0=0$, and its vector part is isotropic, $(\vec P,\vec P)=0$; and $P_0=0$ and $C(\tilde P)=0$.</p>
-<p><strong>Proof.</strong> The displayed formula expands the square. If $P_0\neq0$ then the vector part $2P_0\vec P$ vanishes only for $\vec P=0$, and then the scalar part is $P_0^2\neq0$; so a nilpotent is pure. For a pure $\tilde P$ the formula reads $\tilde P^2=-(\vec P,\vec P)e_0$, a central element, which vanishes exactly when $(\vec P,\vec P)=0$. Finally, for pure $\tilde P$ the central square is $C(\tilde P)=P_0^2+(\vec P,\vec P)=(\vec P,\vec P)$, so the two conditions agree.</p>
+<p><strong>Theorem (the criterion for a nilpotent).</strong> For $\tilde Q_1\in\mathbb{B}$ the following are equivalent: $\tilde Q_1^2=0$; $\tilde Q_1$ is pure, $Q_{1t}=0$, and its vector part is isotropic, $(\vec Q_1,\vec Q_1)=0$; and $Q_{1t}=0$ and $C(\tilde Q_1)=0$.</p>
+<p><strong>Proof.</strong> The displayed formula expands the square. If $Q_{1t}\neq0$ then the vector part $2Q_{1t}\vec Q_1$ vanishes only for $\vec Q_1=0$, and then the scalar part is $Q_{1t}^2\neq0$; so a nilpotent is pure. For a pure $\tilde Q_1$ the formula reads $\tilde Q_1^2=-(\vec Q_1,\vec Q_1)e_t$, a central element, which vanishes exactly when $(\vec Q_1,\vec Q_1)=0$. Finally, for pure $\tilde Q_1$ the central square is $C(\tilde Q_1)=Q_{1t}^2+(\vec Q_1,\vec Q_1)=(\vec Q_1,\vec Q_1)$, so the two conditions agree.</p>
 <p><strong>Corollary.</strong> Every nilpotent is pure, and every nonzero nilpotent is a zero divisor. Its only nonzero power relation is $\tilde\Upsilon^2=0$, the central zero, so its powers stop at the second.</p>
 <p>The criterion separates the class sharply: the nilpotents are the elements of the vector subspace, the kernel of the scalar part, whose vector part is isotropic for the general plain bilinear form. An element with a nonzero scalar part is never nilpotent.</p>
 <h3 id="the-nilpotent-cone">The Nilpotent Cone</h3>
-<p><strong>The nilpotents form the cone $\{P_1^2+P_2^2+P_3^2=0\}$ in the vector subspace, of complex dimension two and real dimension four; its nonzero elements are $r(\vec u_p+i\vec u_{p'})$ with $r>0$ and $\vec u_p,\vec u_{p'}$ orthogonal real unit vectors.</strong></p>
-<p>The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\vec P=(P_1,P_2,P_3)$, and its coefficients split into a real and an imaginary part, $P_k=p_k+ip'_k$ with real $p_k,p'_k$, so that the vector part splits into two real vector parts carrying the central imaginary on the second,</p>
+<p><strong>The nilpotents form the cone $\{Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0\}$ in the vector subspace, of complex dimension two and real dimension four; its nonzero elements are $r(\vec u_p+i\vec u_{p'})$ with $r>0$ and $\vec u_p,\vec u_{p'}$ orthogonal real unit vectors.</strong></p>
+<p>The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\vec Q_1=(Q_{1x},Q_{1y},Q_{1z})$, and its coefficients split into a real and an imaginary part, $Q_{1k}=p_k+ip'_k$ with real $p_k,p'_k$, so that the vector part splits into two real vector parts carrying the central imaginary on the second,</p>
 <p>$$
-\vec P=\vec p+i\vec p',\qquad \vec p=\sum_{k=1}^{3}p_ke_k,\qquad \vec p'=\sum_{k=1}^{3}p'_ke_k .
+\vec Q_1=\vec p+i\vec p',\qquad \vec p=\sum_{k=1}^{3}p_k\vec e_k,\qquad \vec p'=\sum_{k=1}^{3}p'_k\vec e_k .
 $$</p>
-<p>The single complex equation $(\vec P,\vec P)=P_1^2+P_2^2+P_3^2=0$ is then the two real equations</p>
+<p>The single complex equation $(\vec Q_1,\vec Q_1)=Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$ is then the two real equations</p>
 <p>$$
 \vec p\cdot\vec p=\vec p'\cdot\vec p',\qquad \vec p\cdot\vec p'=0,
 $$</p>
 <p>that is $\sum_kp_k^2=\sum_k(p'_k)^2$ and $\sum_kp_kp'_k=0$: the two real parts of a nilpotent are orthogonal and have equal sum of squares.</p>
 <p><strong>Proposition (the cone).</strong> The nilpotents form the <strong>nilpotent cone</strong></p>
 <p>$$
-\{\tilde\Upsilon=P_1e_1+P_2e_2+P_3e_3 : P_1^2+P_2^2+P_3^2=0\},
+\{\tilde\Upsilon=Q_{1x}\vec e_x+Q_{1y}\vec e_y+Q_{1z}\vec e_z : Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0\},
 $$</p>
 <p>a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written</p>
 <p>$$
@@ -185,27 +184,27 @@ $$</p>
 <p><strong>Proof.</strong> The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^3$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\vec p$ and the imaginary part $\vec p'$ are orthogonal and have equal sum of squares, which is the stated form; conversely such a pair satisfies both.</p>
 <p>The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$. The parameter $r$ is fixed by $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$, and the pair $(\vec u_p,\vec u_{p'})$ is determined up to the simultaneous sign change $(\vec u_p,\vec u_{p'})\mapsto(-\vec u_p,-\vec u_{p'})$.</p>
 <h3 id="index-two">Index Two</h3>
-<p><strong>Every nilpotent has index two: $\tilde P^3=0$ exactly when $\tilde P^2=0$, and the algebra carries no nilpotent of index three or more.</strong></p>
-<p><strong>Theorem (no higher index).</strong> For the biquaternion algebra, $\tilde P^3=0$ exactly when $\tilde P^2=0$. Every nilpotent is of index two, and the algebra carries none of index three or more.</p>
+<p><strong>Every nilpotent has index two: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, and the algebra carries no nilpotent of index three or more.</strong></p>
+<p><strong>Theorem (no higher index).</strong> For the biquaternion algebra, $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Every nilpotent is of index two, and the algebra carries none of index three or more.</p>
 <p><strong>Proof.</strong> The cube follows from the displayed square,</p>
 <p>$$
-\tilde P^3=\tilde P\,\tilde P^2=P_0\bigl[P_0^2-3(\vec P,\vec P)\bigr]e_0+\bigl[3P_0^2-(\vec P,\vec P)\bigr]\vec P .
+\tilde Q_1^3=\tilde Q_1\,\tilde Q_1^2=Q_{1t}\bigl[Q_{1t}^2-3(\vec Q_1,\vec Q_1)\bigr]e_t+\bigl[3Q_{1t}^2-(\vec Q_1,\vec Q_1)\bigr]\vec Q_1 .
 $$</p>
-<p>If $\vec P=0$ then $\tilde P=P_0e_0$ and $\tilde P^3=P_0^3e_0$, which vanishes only for $P_0=0$, that is for $\tilde P=0$, and then $\tilde P^2=0$ as well. If $\vec P\neq0$ then the vanishing of the vector part of $\tilde P^3$ forces $(\vec P,\vec P)=3P_0^2$, and the scalar part is then $P_0[P_0^2-3\cdot3P_0^2]=-8P_0^3$, which vanishes only for $P_0=0$, whereupon $(\vec P,\vec P)=0$. In both cases $\tilde P^3=0$ gives $P_0=0$ and $(\vec P,\vec P)=0$, which is $\tilde P^2=0$. The converse is immediate.</p>
-<p>The theorem is the reason the word "nilpotent" needs no index qualifier here. It also fixes the shape of the powers of an element: a nilpotent has the two-term power string $\tilde\Upsilon,\tilde\Upsilon^2=0$ and no longer one, whereas a non-pure zero divisor has the infinite string $\tilde P^k=2^{k-1}P_0^{k-1}\tilde P$ of <em>Zero Divisors of the Biquaternion Algebra</em>.</p>
+<p>If $\vec Q_1=0$ then $\tilde Q_1=Q_{1t}e_t$ and $\tilde Q_1^3=Q_{1t}^3e_t$, which vanishes only for $Q_{1t}=0$, that is for $\tilde Q_1=0$, and then $\tilde Q_1^2=0$ as well. If $\vec Q_1\neq0$ then the vanishing of the vector part of $\tilde Q_1^3$ forces $(\vec Q_1,\vec Q_1)=3Q_{1t}^2$, and the scalar part is then $Q_{1t}[Q_{1t}^2-3\cdot3Q_{1t}^2]=-8Q_{1t}^3$, which vanishes only for $Q_{1t}=0$, whereupon $(\vec Q_1,\vec Q_1)=0$. In both cases $\tilde Q_1^3=0$ gives $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, which is $\tilde Q_1^2=0$. The converse is immediate.</p>
+<p>The theorem is the reason the word "nilpotent" needs no index qualifier here. It also fixes the shape of the powers of an element: a nilpotent has the two-term power string $\tilde\Upsilon,\tilde\Upsilon^2=0$ and no longer one, whereas a non-pure zero divisor has the infinite string $\tilde Q^k=2^{k-1}Q_t^{k-1}\tilde Q$ of <em>Zero Divisors of the Biquaternion Algebra</em>.</p>
 <h3 id="the-nilpotents-and-the-zero-divisors">The Nilpotents and the Zero Divisors</h3>
 <p><strong>Every nonzero nilpotent is a two-sided zero divisor that annihilates itself: the pair $(\tilde\Upsilon,\tilde\Upsilon)$ is a pair of nonzero elements with vanishing product, and the nilpotents are the pure family of the zero-divisor set.</strong></p>
 <p>A nonzero nilpotent is a zero divisor, and in the strongest possible way: it annihilates itself.</p>
 <p><strong>Proposition.</strong> A nonzero nilpotent $\tilde\Upsilon$ satisfies $\tilde\Upsilon\tilde\Upsilon=0$ on both sides, so it lies in its own left annihilator and in its own right annihilator; the pair $(\tilde\Upsilon,\tilde\Upsilon)$ is a pair of nonzero elements with vanishing product, and $\tilde\Upsilon$ is a two-sided zero divisor.</p>
 <p><strong>Proof.</strong> The relation $\tilde\Upsilon^2=0$ is the product of $\tilde\Upsilon$ with itself, on either side, which is exactly the statement.</p>
-<p>This is the property that singles the nilpotents out among the zero divisors. A non-pure zero divisor $\tilde P$ with $P_0\neq0$ has $\tilde P^2=2P_0\tilde P\neq0$, so it never annihilates itself; it annihilates only the complementary idempotent direction, and its annihilator is a plane transverse to it. A nilpotent, by contrast, is its own annihilating partner: the minimal left ideal it generates is its own annihilator, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$, whereas for a non-pure zero divisor the ideal generated and the annihilator are distinct and complementary (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>).</p>
-<p>The nilpotents are one of the two families of the zero-divisor set, and the family split is the vanishing of the scalar part: <em>Zero Divisors of the Biquaternion Algebra</em> calls the elements with $P_0=0$ the <strong>pure</strong> family and those with $P_0\neq0$ the <strong>non-pure</strong> family, and the pure family is exactly the nonzero nilpotents. The zero-divisor set of the algebra is the union of the two, a complex cone of complex dimension three and real dimension six, of which the nilpotent cone is the two-dimensional complex part carried by the vector subspace and the non-pure family is the rest.</p>
+<p>This is the property that singles the nilpotents out among the zero divisors. A non-pure zero divisor $\tilde Q$ with $Q_t\neq0$ has $\tilde Q^2=2Q_t\tilde Q\neq0$, so it never annihilates itself; it annihilates only the complementary idempotent direction, and its annihilator is a plane transverse to it. A nilpotent, by contrast, is its own annihilating partner: the minimal left ideal it generates is its own annihilator, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$, whereas for a non-pure zero divisor the ideal generated and the annihilator are distinct and complementary (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>).</p>
+<p>The nilpotents are one of the two families of the zero-divisor set, and the family split is the vanishing of the scalar part: <em>Zero Divisors of the Biquaternion Algebra</em> calls the elements with $Q_t=0$ the <strong>pure</strong> family and those with $Q_t\neq0$ the <strong>non-pure</strong> family, and the pure family is exactly the nonzero nilpotents. The zero-divisor set of the algebra is the union of the two, a complex cone of complex dimension three and real dimension six, of which the nilpotent cone is the two-dimensional complex part carried by the vector subspace and the non-pure family is the rest.</p>
 <h3 id="the-nilpotents-and-the-idempotents">The Nilpotents and the Idempotents</h3>
 <p><strong>No element is both an idempotent and a nonzero nilpotent; the two classes meet only at $0$.</strong></p>
 <p>The two named element classes of the algebra, nilpotents and idempotents, do not mix.</p>
 <p><strong>Theorem.</strong> No element of $\mathbb{B}$ is both an idempotent and a nonzero nilpotent. The two classes meet only at $0$.</p>
-<p><strong>Proof.</strong> If $\tilde X^2=\tilde X$ and $\tilde X^2=0$ then $\tilde X=0$.</p>
-<p>The disjointness is the two-family statement in another dress. The zero-divisor set splits into the nilpotents, whose square vanishes, and the complex multiples of the non-trivial idempotents, whose square is $2P_0\tilde P$ and does not vanish; the non-trivial idempotents themselves are the second family with the scalar part fixed to $\tfrac12$, and they are the elements of the algebra that are simultaneously idempotent and a zero divisor (<em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>). A nilpotent is a zero divisor that is never an idempotent; a non-trivial idempotent is a zero divisor that is never nilpotent; and the trivial idempotents $0$ and $e_0$ are the only idempotents of the algebra that are not zero divisors, $e_0$ being a unit.</p>
+<p><strong>Proof.</strong> If $\tilde Q^2=\tilde Q$ and $\tilde Q^2=0$ then $\tilde Q=0$.</p>
+<p>The disjointness is the two-family statement in another dress. The zero-divisor set splits into the nilpotents, whose square vanishes, and the complex multiples of the non-trivial idempotents, whose square is $2Q_t\tilde Q$ and does not vanish; the non-trivial idempotents themselves are the second family with the scalar part fixed to $\tfrac12$, and they are the elements of the algebra that are simultaneously idempotent and a zero divisor (<em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em>). A nilpotent is a zero divisor that is never an idempotent; a non-trivial idempotent is a zero divisor that is never nilpotent; and the trivial idempotents $0$ and $e_t$ are the only idempotents of the algebra that are not zero divisors, $e_t$ being a unit.</p>
 <h3 id="the-conjugations">The Conjugations</h3>
 <p><strong>The conjugations act on the nilpotent cone as real-linear bijections of the cone onto itself: the natural, the star and the Hermitian conjugation each send a nilpotent to a nilpotent, and the star fixes no nonzero nilpotent, so it pairs the nilpotents two by two.</strong></p>
 <p>The conjugations act on the nilpotent cone in a simple way, and the action is worth recording because the two families of the zero divisors are separated by it.</p>
@@ -240,19 +239,19 @@ $$</p>
 <h3 id="the-matrix-model">The Matrix Model</h3>
 <p><strong>Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the nilpotents are exactly the nonzero matrices that are trace-free and singular, equivalently the nonzero rank-one matrices conjugate to the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.</strong></p>
 <p>In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>, the criterion becomes the linear algebra of a trace-free singular matrix.</p>
-<p><strong>Theorem.</strong> Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde P)=P_0\mathrm I_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$, the following coincide: $\tilde P$ is a nilpotent; $\mathsf M_2(\tilde P)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde P)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde P)=2P_0=0$, and singular, $\det\mathsf M_2(\tilde P)=C(\tilde P)=0$.</p>
-<p><strong>Proof.</strong> The trace is $2P_0$ and the determinant is $C(\tilde P)$; the criterion is $P_0=0$ and $C(\tilde P)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free has only the eigenvalue $0$ and is nilpotent, and conversely a nilpotent matrix is singular and trace-free.</p>
+<p><strong>Theorem.</strong> Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde Q_1)=Q_{1t}\mathrm I_2-iQ_{1x}\sigma_1-iQ_{1y}\sigma_2-iQ_{1z}\sigma_3$, the following coincide: $\tilde Q_1$ is a nilpotent; $\mathsf M_2(\tilde Q_1)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde Q_1)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde Q_1)=2Q_{1t}=0$, and singular, $\det\mathsf M_2(\tilde Q_1)=C(\tilde Q_1)=0$.</p>
+<p><strong>Proof.</strong> The trace is $2Q_{1t}$ and the determinant is $C(\tilde Q_1)$; the criterion is $Q_{1t}=0$ and $C(\tilde Q_1)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free has only the eigenvalue $0$ and is nilpotent, and conversely a nilpotent matrix is singular and trace-free.</p>
 <p>So the nilpotents are the nonzero rank-one trace-free complex matrices, that is the matrices conjugate to the single Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$, the strictly triangular form. The two standard nilpotents are the off-diagonal Peirce units</p>
 <p>$$
-\vec\Upsilon_1=\frac{ie_1-e_2}{2},\qquad \vec\Upsilon_2=\frac{ie_1+e_2}{2},
+\vec\Upsilon_x=\frac{i\vec e_x-\vec e_y}{2},\qquad \vec\Upsilon_y=\frac{i\vec e_x+\vec e_y}{2},
 $$</p>
-<p>with $\vec\Upsilon_1^2=\vec\Upsilon_2^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+$ and $\vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-$ (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\vec\Upsilon_1$ under the group of invertible elements.</p>
+<p>with $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$ (<em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em>). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\vec\Upsilon_x$ under the group of invertible elements.</p>
 <h3 id="the-nilpotents-and-the-ideals">The Nilpotents and the Ideals</h3>
 <p><strong>For a nonzero nilpotent the one-sided ideal it generates equals its one-sided annihilator on each side, $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ and $\tilde\Upsilon\mathbb{B}=J_{\tilde\Upsilon}$; each is a minimal one-sided ideal of real dimension four, and the ideal and the annihilator coincide exactly for the nilpotents.</strong></p>
 <p>The nilpotents are the elements on which the ideal theory of the algebra is simplest, because the ideal they generate and the annihilator they determine coincide.</p>
-<p><strong>Theorem.</strong> Let $\tilde\Upsilon\neq0$ be a nilpotent and let $I_{\tilde\Upsilon}=\{\tilde X:\tilde X\tilde\Upsilon=0\}$ and $J_{\tilde\Upsilon}=\{\tilde X:\tilde\Upsilon\tilde X=0\}$ be its left and right annihilators. Then $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ and $\tilde\Upsilon\mathbb{B}=J_{\tilde\Upsilon}$; each is a minimal one-sided ideal of real dimension four, and the two coincide exactly for the nilpotents.</p>
-<p><strong>Proof.</strong> If $\tilde\Upsilon^2=0$ then $(\tilde X\tilde\Upsilon)\tilde\Upsilon=\tilde X\tilde\Upsilon^2=0$ for every $\tilde X$, so $\mathbb{B}\tilde\Upsilon\subseteq I_{\tilde\Upsilon}$; both are nonzero proper left ideals and both are minimal of real dimension four, hence equal. The right statement is the mirror image. The converse, that coincidence forces nilpotency, is the statement for the other class in <em>Introduction to the Remarkable Subspaces</em>.</p>
-<p>The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> and <em>Modules over the Biquaternion Algebra</em>; the nilpotents enter it as the off-diagonal units $\vec\Upsilon_1,\vec\Upsilon_2$.</p>
+<p><strong>Theorem.</strong> Let $\tilde\Upsilon\neq0$ be a nilpotent and let $I_{\tilde\Upsilon}=\{\tilde Q_2:\tilde Q_2\tilde\Upsilon=0\}$ and $J_{\tilde\Upsilon}=\{\tilde Q_2:\tilde\Upsilon\tilde Q_2=0\}$ be its left and right annihilators. Then $\mathbb{B}\tilde\Upsilon=I_{\tilde\Upsilon}$ and $\tilde\Upsilon\mathbb{B}=J_{\tilde\Upsilon}$; each is a minimal one-sided ideal of real dimension four, and the two coincide exactly for the nilpotents.</p>
+<p><strong>Proof.</strong> If $\tilde\Upsilon^2=0$ then $(\tilde Q_2\tilde\Upsilon)\tilde\Upsilon=\tilde Q_2\tilde\Upsilon^2=0$ for every $\tilde Q_2$, so $\mathbb{B}\tilde\Upsilon\subseteq I_{\tilde\Upsilon}$; both are nonzero proper left ideals and both are minimal of real dimension four, hence equal. The right statement is the mirror image. The converse, that coincidence forces nilpotency, is the statement for the other class in <em>Introduction to the Remarkable Subspaces</em>.</p>
+<p>The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is <em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> and <em>Modules over the Biquaternion Algebra</em>; the nilpotents enter it as the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$.</p>
 <h3 id="the-nilpotents-and-the-remarkable-subspaces">The Nilpotents and the Remarkable Subspaces</h3>
 <p><strong>The nilpotent cone lies in the vector subspace and in no other remarkable subspace: the centre, the quaternion subspace, the anti-quaternion subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$ contain no nilpotent.</strong></p>
 <p>Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the scalar part is the defining condition of the vector subspace $\mathrm{Vect}(\mathbb{B})$, the kernel of the scalar part (<em>Introduction to the Remarkable Subspaces</em>). The nilpotents therefore lie in $\mathrm{Vect}(\mathbb{B})$ and nowhere else.</p>
@@ -292,8 +291,8 @@ $$</p>
 </table></div>
 <p>The entries are forced: the centre, the quaternion subspace and the anti-quaternion subspace consist of units and $0$ and carry no zero divisor; in the two Hermitian subspaces the square of an element is $2a_0\tilde Q$ and the Hermitian part of a nilpotent is $0$, so a Hermitian nilpotent vanishes. The vector subspace is thus the only remarkable subspace with a nonzero nilpotent, and every nonzero nilpotent lies in it. The vector subspace is not a subalgebra, but it is exactly the union of the scalar multiples of the nilpotents together with the origin, as the criterion shows.</p>
 <h2 id="summary">Summary</h2>
-<p>The general plain bilinear product of <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> is the multiplication of the algebra $\mathbb{B}$ of <em>Introduction to the Biquaternion Algebra</em>. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3$ with $\Xi_1^2+\Xi_2^2+\Xi_3^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=0$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, and a worked instance is $e_1+ie_2$.</p>
-<p>The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\vec P,\vec P)=0$, so every nilpotent is pure and its vector part is isotropic for the general plain bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^3=0$ exactly when $\tilde P^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.</p>
+<p>The general plain bilinear product of <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> is the multiplication of the algebra $\mathbb{B}$ of <em>Introduction to the Biquaternion Algebra</em>. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ with $\Xi_x^2+\Xi_y^2+\Xi_z^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_x^2+\xi_y^2+\xi_z^2-(\xi'_x)^2-(\xi'_y)^2-(\xi'_z)^2=0$ and $\xi_x\xi'_x+\xi_y\xi'_y+\xi_z\xi'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.</p>
+<p>The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, so every nilpotent is pure and its vector part is isotropic for the general plain bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.</p>
 <p>Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor and the ideal it generates is its own annihilator; the nilpotents are the pure family of the zero-divisor set, the non-pure family being the complex multiples of the non-trivial idempotents, and the two classes meet only at $0$. The star preserves the nilpotent set and fixes none of it, the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular Jordan block, with the two off-diagonal Peirce units as the standard pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -309,8 +308,8 @@ $$</p>
 <td>Biquaternion algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
 </tr>
 <tr>
-<td>$e_0=1,e_1,e_2,e_3$</td>
-<td>Quaternion basis, $e_1e_2=e_3$</td>
+<td>$e_t=1,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>Quaternion basis, $\vec e_x\vec e_y=\vec e_z$</td>
 </tr>
 <tr>
 <td>$i$</td>
@@ -321,28 +320,28 @@ $$</p>
 <td>A root of $0$, $\tilde\Xi^2=0$</td>
 </tr>
 <tr>
-<td>$\tilde\Xi=\Xi_0e_0+\vec\Xi$, $\vec\Xi=\vec\xi+i\vec\xi'$</td>
+<td>$\tilde\Xi=\Xi_te_t+\vec\Xi$, $\vec\Xi=\vec\xi+i\vec\xi'$</td>
 <td>Scalar and vector parts of a root; $\vec\xi,\vec\xi'$ real pure</td>
 </tr>
 <tr>
-<td>$(\vec P,\vec Q)=\sum_kP_kQ_k$</td>
+<td>$(\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k}$</td>
 <td>General plain bilinear form of two vector parts</td>
 </tr>
 <tr>
-<td>$C(\tilde P)=\sum_\mu P_\mu^2$</td>
-<td>The central square, $\tilde P\tilde P^{\natural}=C(\tilde P)e_0$</td>
+<td>$C(\tilde Q_1)=\sum_\mu Q_{1\mu}^2$</td>
+<td>The central square, $\tilde Q_1\tilde Q_1^{\natural}=C(\tilde Q_1)e_t$</td>
 </tr>
 <tr>
 <td>$\tilde\Upsilon$</td>
 <td>A nilpotent, $\tilde\Upsilon^2=0$</td>
 </tr>
 <tr>
-<td>$\vec\Upsilon_1,\vec\Upsilon_2$</td>
-<td>The two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$</td>
+<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>The two off-diagonal Peirce units $\tfrac{i\vec e_x-\vec e_y}{2}$, $\tfrac{i\vec e_x+\vec e_y}{2}$</td>
 </tr>
 <tr>
 <td>$\{\tilde\Upsilon\}$</td>
-<td>The nilpotent cone, $\{P_0=0,\ (\vec P,\vec P)=0\}$</td>
+<td>The nilpotent cone, $\{Q_{1t}=0,\ (\vec Q_1,\vec Q_1)=0\}$</td>
 </tr>
 <tr>
 <td>$\vec p,\vec p'$</td>
@@ -353,8 +352,16 @@ $$</p>
 <td>The parametrisation of the cone over orthonormal real unit pairs</td>
 </tr>
 <tr>
-<td>$\tilde P$, $\tilde Q$</td>
+<td>$\tilde Q$</td>
 <td>The generic element of a statement that holds for every element</td>
+</tr>
+<tr>
+<td>$\tilde Q_1$</td>
+<td>The element of the nilpotent criterion</td>
+</tr>
+<tr>
+<td>$\tilde Q_2$</td>
+<td>The free element of the annihilator sets</td>
 </tr>
 </tbody>
 </table></div>
@@ -364,7 +371,7 @@ $$</p>
 <li><em>Square Roots of One and the Idempotents of the Biquaternion Algebra</em> (<code>articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md</code>), for the roots of $+1$ and the idempotents, the other two central element classes.</li>
 <li><em>Square Roots of a General Element in the Biquaternion Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.md</code>), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.</li>
 <li><em>Zero Divisors of the Biquaternion Algebra</em> (<code>articles_maths/zero-divisors-of-the-biquaternion-algebra.md</code>), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.</li>
-<li><em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md</code>), for the off-diagonal units $\vec\Upsilon_1,\vec\Upsilon_2$, the minimal ideals they generate and the Peirce basis.</li>
+<li><em>Ideals and Peirce Decomposition of the Biquaternion Algebra</em> (<code>articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.md</code>), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$, the minimal ideals they generate and the Peirce basis.</li>
 <li><em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em> (<code>articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md</code>), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.</li>
 <li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces.md</code>), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.</li>
 <li><em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the same class read against the four general products, where only the plain product has this square-zero set.</li>

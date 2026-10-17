@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -112,18 +111,18 @@ $$</p>
 <p><em>Proof.</em> By linearity it suffices to verify each term. The first is the homogeneous solution; the integral term is the ordinary variation-of-constants formula between impulses, its value jumping correctly because $W$ does; and each $c_k$ contributes the response of an impulse to the state at $\tau_k$, propagated forward by $W(t,\tau_k^+)$, which is the definition of $c_k$. Uniqueness of the solution of the impulsive initial-value problem completes the proof.</p>
 <h2 id="stability">Stability</h2>
 <h3 id="lyapunov-functions-with-jumps">Lyapunov Functions with Jumps</h3>
-<p><strong>Definition.</strong> For the impulsive system with impulse times $(\tau_k)$ the <strong>jump operator</strong> at time $t$ associated with the impulsive equation $y' = f(t,y)$ is the map sending the pre-jump value to the post-jump value; a <strong>Lyapunov function</strong> is a continuous positive definite $V : \mathbb{R}\times X \to \mathbb{R}$ that is continuously differentiable off the impulse times, whose derivative $\dot V(t,y) = \partial_tV + \partial_yV\cdot f(t,y)$ along the continuous flow is nonpositive, and whose jumps satisfy</p>
+<p><strong>Definition.</strong> For the impulsive system with impulse times $(\tau_k)$ the <strong>jump operator</strong> at time $t$ associated with the impulsive equation $y' = f(t,y)$ is the map sending the pre-jump value to the post-jump value; a <strong>Lyapunov function</strong> is a continuous positive definite $V : \mathbb{R}\times X \to \mathbb{R}$ that is continuously differentiable off the impulse times, whose derivative $\left(dV/dt\right)(t,y) = \partial/\partial t\,V + \partial/\partial y\,V\cdot f(t,y)$ along the continuous flow is nonpositive, and whose jumps satisfy</p>
 <p>$$
 V\bigl(\tau_k^+, y(\tau_k^+)\bigr) \le V\bigl(\tau_k^-, y(\tau_k^-)\bigr)
 $$</p>
 <p>along solutions.</p>
-<p><strong>Theorem (stability).</strong> If such a Lyapunov function exists with $\dot V \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $\dot V \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.</p>
-<p><em>Proof.</em> Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $\dot V \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$.</p>
+<p><strong>Theorem (stability).</strong> If such a Lyapunov function exists with $dV/dt \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $dV/dt \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.</p>
+<p><em>Proof.</em> Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $dV/dt \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$.</p>
 <p><strong>Corollary (linear systems).</strong> For the linear impulsive system with constant $A$ and jumps $B_k$, the quadratic $V(y) = y^*y$ gives</p>
 <p>$$
 V(y(\tau_k^+)) = \|(I+B_k)y(\tau_k^-)\|^2 \le \|I+B_k\|^2\,V(y(\tau_k^-)),
 $$</p>
-<p>and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le \exp(-2\beta_k)$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.</p>
+<p>and the derivative along the flow is $dV/dt = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le \exp(-2\beta_k)$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.</p>
 <p><em>Proof.</em> Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost.</p>
 <p><strong>Example (a stable discrete map).</strong> For the pure impulse problem with $A=0$, $B_k = B$ constant and impulses at every integer, the theorem gives the sufficient discrete-time condition $\|(I+B)\|<1$; the sharp condition for the stability of the iteration $x \mapsto (I+B)x$ is the spectral one $\rho(I+B)<1$, which is strictly weaker — the norm of a matrix can exceed its spectral radius, as it does for a nilpotent $I+B$ of large norm — and which is equivalent to $\|(I+B)^n\|<1$ for some $n$ by the spectral radius formula $\rho(M)=\lim_n\|M^n\|^{1/n}$. The two conditions agree when $I+B$ is normal, since then $\|I+B\|=\rho(I+B)$ in the operator norm induced by the Euclidean norm. The example shows that the impulsive theory contains the theory of the iterated linear map $x \mapsto (I+B)x$ as the special case $A=0$.</p>
 <h3 id="comparison-and-an-explicit-estimate">Comparison and an Explicit Estimate</h3>
@@ -210,7 +209,7 @@ $$</p>
 </tr>
 <tr>
 <td>$V(t,y)$</td>
-<td>Lyapunov function; $\dot V$ its derivative along the flow</td>
+<td>Lyapunov function; $dV/dt$ its derivative along the flow</td>
 </tr>
 <tr>
 <td>$d_k$</td>

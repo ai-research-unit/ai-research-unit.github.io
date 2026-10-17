@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -90,7 +89,7 @@ $\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$.</p>
 <p>On the Schwartz class $\mathcal S(\mathbb R^n)$ the transform is a linear homeomorphism onto itself, of
 order four; this is the content of the invariance of $\mathcal S$ and of the inversion theorem of the
 Fourier article. The two identities this article uses throughout are those of that article as well:
-$\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial_j\mathcal Ff$,
+$\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial/\partial x_j\,\mathcal Ff$,
 the second from differentiating under the integral.</p>
 <h3 id="extension-to-math20-and-unitarity">Extension to $L^2$ and Unitarity</h3>
 <p><strong>Theorem (Plancherel).</strong> The transform extends from $\mathcal S(\mathbb R^n)\cap L^2$ to a unique
@@ -161,8 +160,8 @@ $$
 \qquad\text{so}\qquad
 \mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha .
 $$</p>
-<p><strong>Proof.</strong> On $\mathbb R$ the two identities $\mathcal F(\partial_xf)=2\pi i\xi\mathcal Ff$ and
-$\mathcal F(xf)=-\frac1{2\pi i}\partial_x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
+<p><strong>Proof.</strong> On $\mathbb R$ the two identities $\mathcal F(\partial/\partial x\,f)=2\pi i\xi\mathcal Ff$ and
+$\mathcal F(xf)=-\frac1{2\pi i}\partial/\partial x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
 annihilation operators $x\pm\frac1{2\pi}\frac{d}{dx}$ which raise and lower $k$, hence that $\mathcal F$
 carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by the Gaussian computation
 $\mathcal F(\exp(-\pi x^2))=\exp(-\pi x^2)$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
@@ -176,14 +175,14 @@ $n\geq1$. This is the diagonalisation of a unitary operator of order four, and t
 unitary operator is the general statement behind it.</p>
 <h2 id="the-fourier-operator-as-a-unitary-equivalence">The Fourier Operator as a Unitary Equivalence</h2>
 <h3 id="differentiation-becomes-multiplication">Differentiation Becomes Multiplication</h3>
-<p><strong>Theorem.</strong> With $D_j=\frac1{2\pi i}\partial_j$ acting on the Schwartz class, one has
+<p><strong>Theorem.</strong> With $D_j=\frac1{2\pi i}\partial/\partial x_j$ acting on the Schwartz class, one has
 $$
 \mathcal FD_j\mathcal F^{-1}=M_{x_j},\qquad \mathcal FM_{x_j}\mathcal F^{-1}=-D_j ,
 $$
 where $M_{x_j}$ is multiplication by the coordinate $x_j$; equivalently $\mathcal F$ is a unitary
-equivalence carrying the differentiation $\frac1{2\pi i}\partial_j$ into multiplication by the coordinate.</p>
-<p><strong>Proof.</strong> The first identity is the rearrangement of $\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$, the
-second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial_j\mathcal Ff$; both are the differentiation identities
+equivalence carrying the differentiation $\frac1{2\pi i}\partial/\partial x_j$ into multiplication by the coordinate.</p>
+<p><strong>Proof.</strong> The first identity is the rearrangement of $\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$, the
+second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial/\partial x_j\,\mathcal Ff$; both are the differentiation identities
 of <em>Fourier Analysis on Euclidean Spaces</em>. On $\mathcal S$ they are identities of operators, and they
 extend to the closures.</p>
 <p>The theorem is the reason the transform solves constant-coefficient equations: a polynomial in the
@@ -272,7 +271,7 @@ $\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place o
 </tr>
 <tr>
 <td>$D_j$</td>
-<td>$\frac1{2\pi i}\partial_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$</td>
+<td>$\frac1{2\pi i}\partial/\partial x_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$</td>
 </tr>
 <tr>
 <td>$M_{x_j}$, $M_m$</td>

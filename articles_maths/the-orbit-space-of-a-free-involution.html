@@ -27,7 +27,6 @@
               {left: '$',  right: '$',  display: false}
             ],
             macros: {
-              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
               '\\slashed': '\\not{#1}'
             },
             throwOnError: false,
@@ -58,19 +57,19 @@
 <h2 id="free-involutions">Free Involutions</h2>
 <h3 id="free-involution-and-the-trivializing-neighbourhood">Free Involution and the Trivializing Neighbourhood</h3>
 <p><strong>Definition.</strong> The continuous involution $\sigma$ of $X$ is <strong>free</strong> when $X^{\sigma} = \emptyset$, that is, when $\sigma(x) \neq x$ for every $x$. Then every orbit $\{x, \sigma(x)\}$ has exactly two points.</p>
-<p><strong>Theorem (trivializing neighbourhood).</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $x \in X$. Then there is an open neighbourhood $U$ of $x$ with</p>
+<p><strong>Theorem (trivializing neighbourhood).</strong> Let $\sigma$ be a free continuous involution of a Hausdorff space $X$, and let $x \in X$. Then there is an open neighbourhood $\Omega$ of $x$ with</p>
 <p>$$
-U \cap \sigma(U) = \emptyset .
+\Omega \cap \sigma(\Omega) = \emptyset .
 $$</p>
-<p>Moreover $U$ can be chosen so that the image $\pi(U)$ is open in $X/\sigma$ and $\pi^{-1}(\pi(U)) = U \cup \sigma(U)$ is the disjoint union of two homeomorphic copies of $U$.</p>
-<p><strong>Proof.</strong> For the single element $g = \sigma \neq \mathrm{id}$ the points $x$ and $\sigma(x)$ are distinct, so by the Hausdorff property there are open sets $O \ni x$ and $P \ni \sigma(x)$ with $O \cap P = \emptyset$. Put $U = O \cap \sigma^{-1}(P)$; then $U$ is open and contains $x$, because $\sigma^{-1}(P)$ contains $\sigma^{-1}(\sigma(x)) = x$, and</p>
+<p>Moreover $\Omega$ can be chosen so that the image $\pi(\Omega)$ is open in $X/\sigma$ and $\pi^{-1}(\pi(\Omega)) = \Omega \cup \sigma(\Omega)$ is the disjoint union of two homeomorphic copies of $\Omega$.</p>
+<p><strong>Proof.</strong> For the single element $g = \sigma \neq \mathrm{id}$ the points $x$ and $\sigma(x)$ are distinct, so by the Hausdorff property there are open sets $O \ni x$ and $P \ni \sigma(x)$ with $O \cap P = \emptyset$. Put $\Omega = O \cap \sigma^{-1}(P)$; then $\Omega$ is open and contains $x$, because $\sigma^{-1}(P)$ contains $\sigma^{-1}(\sigma(x)) = x$, and</p>
 <p>$$
-U \cap \sigma(U) = (O \cap \sigma^{-1}P) \cap \sigma(O \cap \sigma^{-1}P) \subseteq O \cap P = \emptyset ,
+\Omega \cap \sigma(\Omega) = (O \cap \sigma^{-1}P) \cap \sigma(O \cap \sigma^{-1}P) \subseteq O \cap P = \emptyset ,
 $$</p>
-<p>since $\sigma(U) \subseteq P$. The image $\pi(U)$ is open because $\pi$ is open, and its preimage is $U \cup \sigma(U)$ because the orbits are the two-point sets, and the two members are disjoint by the first part. The involution restricts to a homeomorphism $U \to \sigma(U)$.</p>
+<p>since $\sigma(\Omega) \subseteq P$. The image $\pi(\Omega)$ is open because $\pi$ is open, and its preimage is $\Omega \cup \sigma(\Omega)$ because the orbits are the two-point sets, and the two members are disjoint by the first part. The involution restricts to a homeomorphism $\Omega \to \sigma(\Omega)$.</p>
 <p>The neighbourhood is the two-fold analogue of the disjoint neighbourhoods of the two points of an orbit; it exists because a finite group action on a Hausdorff space has only finitely many translates to separate. For a general group the corresponding statement can fail, and the orbit space can fail to be a covering even when the action is free.</p>
 <h3 id="local-injectivity-of-the-orbit-map">Local Injectivity of the Orbit Map</h3>
-<p><strong>Corollary.</strong> Under the hypotheses of the theorem the orbit map is a local homeomorphism: on the trivializing neighbourhood $U$ it restricts to a homeomorphism $U \to \pi(U)$.</p>
+<p><strong>Corollary.</strong> Under the hypotheses of the theorem the orbit map is a local homeomorphism: on the trivializing neighbourhood $\Omega$ it restricts to a homeomorphism $\Omega \to \pi(\Omega)$.</p>
 <p><strong>Proof.</strong> The restriction is continuous, injective because $\pi$ is injective on a set disjoint from its translate, and open because $\pi$ is open; hence it is a homeomorphism onto its image.</p>
 <h2 id="the-orbit-map-as-a-two-fold-covering">The Orbit Map as a Two-Fold Covering</h2>
 <h3 id="covering-maps">Covering Maps</h3>
@@ -86,9 +85,9 @@ $$</p>
 \pi : X \longrightarrow X/\sigma
 $$</p>
 <p>is a two-fold covering. The fibre over the orbit of $x$ is the two-point set $\{x, \sigma(x)\}$, and the trivializing neighbourhood of the previous section provides the evenly covered neighbourhood of its image.</p>
-<p><strong>Proof.</strong> Let $y \in X/\sigma$ and let $x$ be a point of the orbit $y$, so that $y = \{x, \sigma(x)\}$. By the trivializing theorem there is an open $U \ni x$ with $U \cap \sigma(U) = \emptyset$ and $\pi^{-1}(\pi(U)) = U \cup \sigma(U)$. The set $V = \pi(U)$ is open in $X/\sigma$ and</p>
+<p><strong>Proof.</strong> Let $y \in X/\sigma$ and let $x$ be a point of the orbit $y$, so that $y = \{x, \sigma(x)\}$. By the trivializing theorem there is an open $\Omega \ni x$ with $\Omega \cap \sigma(\Omega) = \emptyset$ and $\pi^{-1}(\pi(\Omega)) = \Omega \cup \sigma(\Omega)$. The set $V = \pi(\Omega)$ is open in $X/\sigma$ and</p>
 <p>$$
-\pi^{-1}(V) = U \sqcup \sigma(U) ,
+\pi^{-1}(V) = \Omega \sqcup \sigma(\Omega) ,
 $$</p>
 <p>a disjoint union of two open sets, and $\pi$ restricts to a homeomorphism on each of them by the local injectivity. Hence $V$ is evenly covered with fibre $\{0,1\}$, and $y$ was arbitrary, so $\pi$ is a covering. The fibre over $y$ is $\{x,\sigma(x)\}$, two points.</p>
 <p><strong>Corollary.</strong> The orbit space of a free involution of a Hausdorff space is the base of a two-fold covering with total space $X$; the covering is surjective, open and closed when $X$ is compact, and the orbit space is Hausdorff when $X$ is.</p>
@@ -114,7 +113,7 @@ $$</p>
 <p><strong>Example (the split covering).</strong> On $X \times \{0,1\}$ the exchange of the two copies is a free involution, the orbit map is the projection $X \times \{0,1\} \to X$, which is a two-fold covering with two disjoint sheets; the covering is <strong>trivial</strong>, and its deck group is $\mathbb{Z}/2$.</p>
 <p><strong>Example (a nonfree involution fails to cover).</strong> On $[0,1]$ the involution $x \mapsto 1-x$ has the fixed point $\tfrac12$, so it is not free and its orbit map is not a covering: the preimage of a connected neighbourhood of the class of $\tfrac12$ is connected. The failure is local at the fixed set, and it is the reason the covering theory of a nonfree involution must be replaced by the Borel construction of the next article.</p>
 <h2 id="summary">Summary</h2>
-<p>A free continuous involution of a Hausdorff space has, at each point, an open neighbourhood $U$ with $U \cap \sigma(U) = \emptyset$, obtained by separating $x$ from $\sigma(x)$ and intersecting with a translate; the image $\pi(U)$ is then evenly covered, and the orbit map is a <strong>two-fold covering</strong>. Its fibres are the two-point orbits, its deck group is $\mathbb{Z}/2$ generated by the involution, and it acts transitively on each fibre, so the covering is regular. Conversely every two-fold covering of a connected base has deck group $\mathbb{Z}/2$, and the nontrivial deck transformation is a free involution whose orbit map is the covering; hence for a connected base the two-fold coverings are exactly the orbit maps of free involutions, up to homeomorphism over the base. The examples are the antipodal covering of projective space, the squaring cover of the circle, and the covering of the half-line by the punctured line; a nonfree involution has no such covering, and its fixed set is the obstruction.</p>
+<p>A free continuous involution of a Hausdorff space has, at each point, an open neighbourhood $\Omega$ with $\Omega \cap \sigma(\Omega) = \emptyset$, obtained by separating $x$ from $\sigma(x)$ and intersecting with a translate; the image $\pi(\Omega)$ is then evenly covered, and the orbit map is a <strong>two-fold covering</strong>. Its fibres are the two-point orbits, its deck group is $\mathbb{Z}/2$ generated by the involution, and it acts transitively on each fibre, so the covering is regular. Conversely every two-fold covering of a connected base has deck group $\mathbb{Z}/2$, and the nontrivial deck transformation is a free involution whose orbit map is the covering; hence for a connected base the two-fold coverings are exactly the orbit maps of free involutions, up to homeomorphism over the base. The examples are the antipodal covering of projective space, the squaring cover of the circle, and the covering of the half-line by the punctured line; a nonfree involution has no such covering, and its fixed set is the obstruction.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -130,7 +129,7 @@ $$</p>
 </tr>
 <tr>
 <td>trivializing neighbourhood</td>
-<td>Open $U$ with $U \cap \sigma(U) = \emptyset$</td>
+<td>Open $\Omega$ with $\Omega \cap \sigma(\Omega) = \emptyset$</td>
 </tr>
 <tr>
 <td>covering map $p : E \to B$</td>

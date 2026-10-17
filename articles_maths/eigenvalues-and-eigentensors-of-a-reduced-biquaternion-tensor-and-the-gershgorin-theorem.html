@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eigenvalues and Eigentensors of a Reduced Biquaternion Tensor and the Gershgorin Theorem — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="eigenvalues-and-eigentensors-of-a-reduced-biquaternion-tensor-and-the-gershgorin-theorem"><strong>Eigenvalues and Eigentensors of a Reduced Biquaternion Tensor and the Gershgorin Theorem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A square tensor of even order acts on the tensors of half its order by the Einstein product of <em>The Einstein Product of Reduced Biquaternion Tensors</em>, and an <strong>eigentensor</strong> $X$ with <strong>eigenvalue</strong> $\lambda$ satisfies $AX=\lambda X$. The eigenvalue is written on the right as well as on the left, because the algebra is commutative; there is no separate left spectrum as in the quaternion case. But the algebra has zero divisors, and an eigentensor may lie in a single idempotent coordinate of the algebra; the other coordinate of the eigenvalue is then free. The spectrum is therefore not a finite set: it is the union of two families of complex lines. This is the structural difference from the complex and the quaternion cases, and it governs everything the article proves.</p>
+<p>The article defines the problem, proves the reduction to the two complex coordinate tensors, states the pairing theorem of the source for the eigentensors with both coordinates nonzero, proves the <strong>Gershgorin theorem</strong> in the coordinate form, and closes with the eigenvalues of a power and the roots.</p>
+<p><strong>The results.</strong> The spectrum of a square tensor is the union of the two coordinate spectra of its two complex coordinate tensors; it is nonempty and unbounded. The eigenvalues with an eigentensor whose two coordinates are both nonzero are exactly the pairs of an eigenvalue of each coordinate tensor, which is the pairing theorem of the source. The Gershgorin theorem locates at least one coordinate of an eigenvalue in the Gershgorin set of the corresponding complex tensor, so the spectrum lies in the union of the two sets over the complex Gershgorin sets. If $A^{n}=a\mathrm I$, every coordinate of an eigenvalue whose eigentensor coordinate does not vanish is an $n$-th root of the corresponding coordinate of $a$; the $n^{2}$ roots of the source, displayed for a unit $a$, are computed coordinatewise but are neither the spectrum, nor a subset of it, nor a superset of it.</p>
+<p><strong>Boundaries.</strong> The Einstein product, the matricisation and the units are <em>The Einstein Product of Reduced Biquaternion Tensors</em>, above this article. The spectrum of an <strong>element</strong>, the pair of its idempotent coordinates, is <em>Reduced Biquaternion Spectral Theory</em>; this article treats the spectrum of a <strong>tensor</strong>. The bar, the natural sign and the star are <em>The Two Involutions and the Group of Involutions</em>, and the algebraic norm $\langle\cdot\rangle_{\natural}$ is <em>The Four Products, Their Forms and Their Algebraic Norms</em>. The t-product is a different product, and its spectral reading is not the subject here. The complex eigenvalue problem, the discs and the maximal-entry argument are the classical ones of Horn and Johnson, <em>Matrix Analysis</em>.</p>
+<p><strong>Conventions.</strong> The tensor is a plain capital typed by its exponent, $A\in\mathbb{B}_{\mathrm{r}}^{n_{1}\times\cdots\times n_{m}\times n_{1}\times\cdots\times n_{m}}$ in the square case, and its entries are $a_{PL}$ at the row multi-index $P$ and the column multi-index $L$. The two complex coordinate tensors are $A_{(1)}$ and $A_{(2)}$, with $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$, and the element $\lambda$ is written $\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-$; the coordinates $\lambda_{(1)},\lambda_{(2)}$ are the idempotent coordinates written $q_{1},q_{2}$ in <em>Reduced Biquaternion Spectral Theory</em>. The <strong>spectrum</strong> of $A$ is $\sigma(A)$; the <strong>spectrum</strong> of a complex tensor $M$ is the set of complex $z$ with $MX=zX$ for some nonzero $X$, and its Gershgorin set is $\Gamma(M)$. The idempotents are $\Pi_+=\tfrac12(1+j)$ and $\Pi_-=\tfrac12(1-j)$.</p>
+<h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
+<p><strong>Definition.</strong> Let $A$ be square of order $2m$, with the modes $n_{1},\dots,n_{m}$ on both sides, and let $X$ be a tensor of order $m$ with the modes $n_{1},\dots,n_{m}$. A reduced biquaternion $\lambda$ is an <strong>eigenvalue</strong> of $A$ when $AX=\lambda X$ for some nonzero $X$, and $X$ is an <strong>eigentensor</strong> of $\lambda$. The <strong>spectrum</strong> $\sigma(A)$ is the set of eigenvalues.</p>
+<p><strong>Proposition (the orders two and four).</strong> For $m=1$ the definition is the eigenvalue problem of a square matrix over $\mathbb{B}_{\mathrm{r}}$, with the matrix product; for $m=2$ it is the problem of a tensor of order four acting on a tensor of order two.</p>
+<p><em>Proof.</em> The Einstein product of an order-$2m$ tensor and an order-$m$ tensor is the contraction of the $m$ trailing indices of the first against the $m$ indices of the second, which is the matrix-vector product when $m=1$ and its multi-index form otherwise.</p>
+<p><strong>Remark (the two sides).</strong> The algebra is commutative, so the eigenvalue may be written on either side of $X$, $AX=\lambda X=X\lambda$; there is no asymmetric spectrum as in the quaternion case.</p>
+<p><strong>Theorem (the coordinate reduction).</strong> Write $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$, $X=X_{(1)}\Pi_++X_{(2)}\Pi_-$ and $\lambda=\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-$. Then $AX=\lambda X$ if and only if
+$$
+A_{(1)}X_{(1)}=\lambda_{(1)}X_{(1)},\qquad A_{(2)}X_{(2)}=\lambda_{(2)}X_{(2)}.
+$$</p>
+<p><em>Proof.</em> The idempotents are orthogonal and $\Pi_{i}\Pi_{j}=\delta_{ij}\Pi_{i}$, and the algebra is commutative, so $AX=A_{(1)}X_{(1)}\Pi_++A_{(2)}X_{(2)}\Pi_-$ and $\lambda X=\lambda_{(1)}X_{(1)}\Pi_++\lambda_{(2)}X_{(2)}\Pi_-$; the two sides are equal exactly when the two coordinates are equal.</p>
+<h2 id="the-spectrum-as-the-union-of-the-two-coordinate-spectra">The Spectrum as the Union of the Two Coordinate Spectra</h2>
+<p><strong>Theorem (the spectrum is the union of the two coordinate spectra).</strong>
+$$
+\sigma(A)=\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\sigma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\sigma(A_{(2)})\bigr\}.
+$$</p>
+<p><em>Proof.</em> If $\lambda$ is an eigenvalue with eigentensor $X$, then $X\neq0$, so at least one coordinate $X_{(i)}$ is nonzero, and the coordinate equation of the reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$. Conversely, if $\lambda_{(1)}\in\sigma(A_{(1)})$ with eigentensor $Y\neq0$, the tensor $X=Y\Pi_+$ is nonzero and $AX=\lambda X$ for every $\lambda_{(2)}$, because the second coordinate of $X$ vanishes; symmetrically for the second coordinate.</p>
+<p><strong>Corollary (the source's pairing theorem).</strong> An eigenvalue $\lambda$ has an eigentensor with both coordinates nonzero if and only if $\lambda_{(1)}\in\sigma(A_{(1)})$ and $\lambda_{(2)}\in\sigma(A_{(2)})$. The source writes the two complex tensors $B_{1}$ and $B_{2}$; they are $A_{(1)}$ and $A_{(2)}$ here.</p>
+<p><em>Proof.</em> If $X$ has both coordinates nonzero, the two coordinate equations hold with $X_{(i)}\neq0$, so each $\lambda_{(i)}$ is an eigenvalue of $A_{(i)}$. Conversely, given nonzero eigentensors $Y_{1}$ of $A_{(1)}$ and $Y_{2}$ of $A_{(2)}$, the tensor $X=Y_{1}\Pi_++Y_{2}\Pi_-$ has $X_{(1)}=Y_{1}$ and $X_{(2)}=Y_{2}$, both nonzero, and $AX=A_{(1)}Y_{1}\Pi_++A_{(2)}Y_{2}\Pi_-=\lambda_{(1)}Y_{1}\Pi_++\lambda_{(2)}Y_{2}\Pi_-=\lambda X$.</p>
+<p><strong>Remark (the labels of the source).</strong> The source labels its idempotents $e_{1}=\tfrac12(1-j)$ and $e_{2}=\tfrac12(1+j)$, the reverse of $\Pi_+$ and $\Pi_-$. Its display $q=(a+b)e_{1}+(a-b)e_{2}$ gives $a-bj$, so the labels are interchanged in that display; with the labels read the other way, its $B_{1}$, the sum of its two complex tensors, is the $\Pi_+$ coordinate $A_{(1)}$ and its $B_{2}$, their difference, is $A_{(2)}$.</p>
+<p><strong>Remark (the hypothesis of the source).</strong> The source states the equivalence for an arbitrary eigentensor, and the "only if" direction then fails when one idempotent coordinate of the eigentensor vanishes: for $A=\mathrm I$ of order two and $\lambda=\Pi_++100\Pi_-$, the tensor $X$ with the entry $\Pi_+$ at the first row and first column and zeros elsewhere has $X_{(2)}=0$ and $AX=\lambda X$; the source writes $X=X_{1}+X_{2}j$, so its second condition would require $X_{1}-X_{2}=X_{(2)}$ to be a nonzero eigentensor of $B_{2}$, and it is the zero tensor; the zero tensor is not an eigentensor, so the condition fails and $\lambda_{(2)}$ is not made an eigenvalue, while the left-hand side holds. The restriction to the eigentensors with both coordinates nonzero is what the equivalence needs.</p>
+<p><strong>Corollary (the spectrum is nonempty and unbounded).</strong> For positive sizes each coordinate tensor has an eigenvalue, and through each one passes a complex line of eigenvalues of $A$; consequently $\sigma(A)$ is nonempty and unbounded.</p>
+<p><em>Proof.</em> A square complex tensor of order $2m$ has an eigenvalue, being the eigenvalue problem of its matricisation over $\mathbb{C}$; if $\lambda_{(1)}\in\sigma(A_{(1)})$, the proof of the theorem gives the eigenvalue $\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-$ for every $\lambda_{(2)}\in\mathbb{C}$, a complex line.</p>
+<h2 id="the-gershgorin-theorem">The Gershgorin Theorem</h2>
+<p><strong>Definition (the Gershgorin set of a complex tensor).</strong> For a square complex tensor $M$ of order $2m$,
+$$
+\Gamma(M)=\bigcup_{P}\Bigl\{z\in\mathbb{C}:\lvert z-m_{PP}\rvert\le\sum_{L\neq P}\lvert m_{PL}\rvert\Bigr\}.
+$$</p>
+<p><strong>Lemma (the complex theorem).</strong> $\sigma(M)\subseteq\Gamma(M)$.</p>
+<p><em>Proof.</em> Let $MX=zX$ with $X\neq0$ and choose $Q$ with $\lvert x_{Q}\rvert\ge\lvert x_{L}\rvert$ for every $L$. The $Q$-th entry of $MX=zX$ reads $(z-m_{QQ})x_{Q}=\sum_{L\neq Q}m_{QL}x_{L}$; taking moduli, dividing by $\lvert x_{Q}\rvert>0$ and bounding $\lvert x_{L}\rvert\le\lvert x_{Q}\rvert$ gives $\lvert z-m_{QQ}\rvert\le\sum_{L\neq Q}\lvert m_{QL}\rvert$.</p>
+<p><strong>Theorem (the Gershgorin theorem for reduced biquaternion tensors).</strong>
+$$
+\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}\in\Gamma(A_{(1)})\ \text{or}\ \lambda_{(2)}\in\Gamma(A_{(2)})\bigr\}.
+$$</p>
+<p><em>Proof.</em> Let $\lambda$ be an eigenvalue with eigentensor $X$. Some coordinate $X_{(i)}$ is nonzero, and the coordinate reduction makes $\lambda_{(i)}$ an eigenvalue of $A_{(i)}$; the complex lemma gives $\lambda_{(i)}\in\Gamma(A_{(i)})$, and the conclusion follows.</p>
+<p><strong>Remark (the modulus of the source).</strong> The source equips an element $\lambda$ with the modulus
+$$
+\lVert\lambda\rVert=\bigl\lvert\lambda\bar\lambda\lambda^{\natural}\lambda^{*}\bigr\rvert^{1/4}=\lvert\lambda_{(1)}\lambda_{(2)}\rvert^{1/2}=\lvert\langle\lambda\rangle_{\natural}\rvert^{1/2},
+$$
+where $\lambda\bar\lambda\lambda^{\natural}\lambda^{*}=\langle\lambda\rangle_{\natural}\overline{\langle\lambda\rangle_{\natural}}$ and $\langle\lambda\rangle_{\natural}=\lambda_{(1)}\lambda_{(2)}$; it states the inclusion with this modulus. That expression is not a norm on the algebra. It vanishes on the nonzero zero divisors, $\lVert\Pi_+\rVert=\lVert\Pi_-\rVert=0$, so the division by the modulus of the maximal entry of $X$, which is the last step of the source's proof, is a division by zero when that entry is a zero divisor; and it fails the triangle inequality, $\lVert\Pi_++\Pi_-\rVert=1$ while $\lVert\Pi_+\rVert+\lVert\Pi_-\rVert=0$, so the bound of the modulus of a sum by the sum of the moduli, which is the step before, does not follow. <strong>The inclusion of the source itself fails</strong>: for $A=\begin{smallmatrix}0&1\\1&0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$, the tensor whose first column is $(\Pi_+,\Pi_+)^{\mathsf T}$ and whose second column is zero is an eigentensor of $\lambda$, while $\lVert\lambda\rVert=\sqrt{\lvert1\cdot100\rvert}=10$ and the radius is $1$ at each of the two diagonal indices. The coordinate form above is the correct statement, and the maximal-entry argument over $\mathbb{C}$ proves it.</p>
+<p><strong>Remark (the shape of the bound).</strong> The containing set of the theorem is $\Gamma(A_{(1)})\times\mathbb{C}\cup\mathbb{C}\times\Gamma(A_{(2)})$ in the two coordinates: a union of two cylinders over the complex plane, each with the other coordinate as its axis. It constrains one coordinate only and is unbounded, unlike a classical Gershgorin disc, and it can be strictly larger than the spectrum.</p>
+<h2 id="powers-and-roots">Powers and Roots</h2>
+<p><strong>Theorem (the eigenvalues of a power).</strong> Let $A^{n}=a\mathrm I$ for a positive integer $n$ and an element $a$, and let $\lambda$ be an eigenvalue of $A$ with eigentensor $X$. Then $\lambda_{(i)}^{n}=a_{(i)}$ for each coordinate $i$ with $X_{(i)}\neq0$. In particular
+$$
+\sigma(A)\subseteq\bigl\{\lambda_{(1)}\Pi_++\lambda_{(2)}\Pi_-:\lambda_{(1)}^{n}=a_{(1)}\ \text{or}\ \lambda_{(2)}^{n}=a_{(2)}\bigr\}.
+$$</p>
+<p><em>Proof.</em> By induction $A^{n}X=\lambda^{n}X$, and $A^{n}=a\mathrm I$ gives $\lambda^{n}X=aX$. In the coordinate $i$ with $X_{(i)}\neq0$ this is $(\lambda_{(i)}^{n}-a_{(i)})X_{(i)}=0$, and $X_{(i)}$ has a nonzero entry, so $\lambda_{(i)}^{n}=a_{(i)}$. The inclusion follows because some coordinate of $X$ is nonzero.</p>
+<p><strong>Corollary (the roots).</strong> With $a$ a unit, so that $a_{(1)},a_{(2)}\neq0$, and $a_{(k)}=r_{k}e^{i\theta_{k}}$, $0\le\theta_{k}<2\pi$, the roots of $\lambda^{n}=a$ are
+$$
+\lambda_{s,t}=(\sqrt[n]{a_{(1)}})_{s}\Pi_++(\sqrt[n]{a_{(2)}})_{t}\Pi_-,\qquad (\sqrt[n]{z})_{s}=r^{1/n}e^{i(\theta+2\pi s)/n},
+$$
+with $s,t=0,\dots,n-1$.</p>
+<p><em>Proof.</em> The equation $\lambda^{n}=a$ is the pair of the two coordinate equations $\lambda_{(i)}^{n}=a_{(i)}$, and the $n$-th roots of a nonzero complex number are the displayed $n$ values.</p>
+<p><strong>Remark (the list of the source).</strong> The source writes the $n^{2}$ values $\lambda_{s,t}$ as the set of eigenvalues, and deduces $\lambda^{n}=a$ from $\lambda^{n}X=aX$ by cancelling $X$; the cancellation is invalid when $\lambda^{n}-a$ is a nonzero zero divisor, and then one coordinate of $X$ is zero. The values are neither the spectrum, nor a subset of it, nor a superset of it: for $A=\mathrm I$ and $n=2$, the value $\lambda=(-1)\Pi_++(-1)\Pi_-$ is one of the four and is not an eigenvalue of $\mathrm I$, since $\lambda-1=-2$ and $-2X\neq0$ for $X\neq0$; and $\lambda=(1)\Pi_++(5)\Pi_-$ is an eigenvalue of $\mathrm I$, with the eigentensor whose first entry is $\Pi_+$ and whose other entries are zero, and is not one of the four. The $n^{2}$ values are the points whose two coordinates are both roots of the corresponding coordinates of $a$, and the exact statement is the union of the two coordinate spectra, each coordinate spectrum a subset of the $n$-th roots of the corresponding coordinate of $a$.</p>
+<h2 id="verification">Verification</h2>
+<p>The statements were checked by recomputation on random order-four tensors with modes of size two, and on constructed eigenpairs of matrices and of order-four tensors, the deviations found at the level of the floating-point noise.</p>
+<ul>
+<li>The union theorem: an eigentensor of one coordinate tensor, its other coordinate zero, is an eigentensor of $A$ at every value of the free coordinate of $\lambda$.</li>
+<li>The maximal-entry step of the Gershgorin lemma, on a constructed eigenpair.</li>
+<li>The restriction in the pairing theorem: for $A=\mathrm I$ and $\lambda=\Pi_++100\Pi_-$, the eigentensor with $X_{(2)}=0$ satisfies $AX=\lambda X$, while $100$ is not an eigenvalue of the second coordinate tensor.</li>
+<li>The counterexample to the source's inclusion: for $A=\begin{smallmatrix}0&1\\1&0\end{smallmatrix}$ and $\lambda=\Pi_++100\Pi_-$ the modulus is $10$ and the radius is $1$.</li>
+<li>The two counterexamples of the roots: for $A=\mathrm I$ and $n=2$, the value $(-1)\Pi_++(-1)\Pi_-$ is not an eigenvalue, and $(1)\Pi_++(5)\Pi_-$ is.</li>
+<li>The clause of the power theorem: for $A=2\mathrm I$ and $n=2$, the eigenvalue $2\Pi_++3\Pi_-$ has $\lambda_{(2)}^{2}=9\neq4=a_{(2)}$, and its eigentensor has zero second coordinate.</li>
+<li>The relaxed hypothesis of the power theorem: for $A=\mathrm I\Pi_++A_{(2)}\Pi_-$ with $A_{(2)}^{2}=0$ and $a=\Pi_+$, the eigenvalue $\Pi_++5\Pi_-$ has $\lambda_{(2)}^{2}=25\neq0=a_{(2)}$, and its eigentensor has zero second coordinate.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>A square tensor of order $2m$ acts on the tensors of order $m$ by the Einstein product, and its <strong>eigenvalues</strong> are the reduced biquaternions $\lambda$ with $AX=\lambda X$ for a nonzero <strong>eigentensor</strong> $X$. The algebra is commutative, so the eigenvalue is written on either side and there is no left-right asymmetry. The algebra has zero divisors, so the spectrum is not a finite set: the <strong>coordinate reduction</strong> gives the pair of the two complex eigenvalue problems, and the <strong>spectrum is the union of the two coordinate spectra</strong> of the two complex coordinate tensors, nonempty and unbounded. An eigenvalue has an eigentensor with both coordinates nonzero exactly when its two coordinates are eigenvalues of the two coordinate tensors, which is the pairing theorem of the source restricted to those eigentensors, the two complex tensors $B_{1}$ and $B_{2}$ of the source being $A_{(1)}$ and $A_{(2)}$. The <strong>Gershgorin theorem</strong> holds in the coordinate form: at least one coordinate of an eigenvalue lies in the Gershgorin set of the corresponding complex tensor, with the maximal-entry proof over $\mathbb{C}$; the source's single inclusion with the modulus $\lvert\langle\cdot\rangle_{\natural}\rvert^{1/2}$ fails: that modulus vanishes on the zero divisors, fails the triangle inequality, and the counterexample of the remark violates the inclusion. If $A^{n}=a\mathrm I$, each coordinate of an eigenvalue is an $n$-th root of the corresponding coordinate of $a$ whenever the eigentensor coordinate is nonzero; for a unit $a$ the roots are displayed coordinatewise, and the $n^{2}$ roots of the source are not the spectrum.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A$</td>
+<td>a square tensor of order $2m$, with the modes $n_{1},\dots,n_{m}$ on both sides</td>
+</tr>
+<tr>
+<td>$X$</td>
+<td>an eigentensor, a tensor of order $m$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>an eigenvalue, an element of the algebra</td>
+</tr>
+<tr>
+<td>$\sigma(A)$</td>
+<td>the spectrum, the set of eigenvalues</td>
+</tr>
+<tr>
+<td>$A_{(1)},A_{(2)}$</td>
+<td>the two complex coordinate tensors, $A=A_{(1)}\Pi_++A_{(2)}\Pi_-$</td>
+</tr>
+<tr>
+<td>$\lambda_{(1)},\lambda_{(2)}$</td>
+<td>the idempotent coordinates of $\lambda$</td>
+</tr>
+<tr>
+<td>$\Pi_+,\Pi_-$</td>
+<td>the idempotents $\tfrac12(1\pm j)$</td>
+</tr>
+<tr>
+<td>$\mathrm I$</td>
+<td>the unit tensor of the square case, $\mathrm I_{PL}=\delta_{PL}$</td>
+</tr>
+<tr>
+<td>$\langle\lambda\rangle_{\natural}$</td>
+<td>the algebraic norm of an element, $\lambda_{(1)}\lambda_{(2)}$</td>
+</tr>
+<tr>
+<td>$\Gamma(M)$</td>
+<td>the Gershgorin set of a square complex tensor $M$</td>
+</tr>
+<tr>
+<td>$(\sqrt[n]{z})_{s}$</td>
+<td>the $n$-th root $r^{1/n}e^{i(\theta+2\pi s)/n}$ of $z=re^{i\theta}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Einstein Product of Reduced Biquaternion Tensors</em> (<code>articles_maths/the-einstein-product-of-reduced-biquaternion-tensors.md</code>), above this article, for the product, the matricisation and the units.</li>
+<li><em>Reduced Biquaternion Spectral Theory</em> (<code>articles_maths/reduced-biquaternion-spectral-theory.md</code>), for the spectrum of an element and the idempotent coordinates.</li>
+<li><em>The Two Involutions and the Group of Involutions</em> (<code>articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md</code>), for the bar, the natural sign and the star.</li>
+<li><em>The Four Products, Their Forms and Their Algebraic Norms</em> (<code>articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md</code>), for the algebraic norm $\langle\cdot\rangle_{\natural}$.</li>
+<li>Ting-Ting Liu and Shao-Wen Yu, "Some Properties of Reduced Biquaternion Tensors", <em>Symmetry</em> 16 (2024), 1260, for the eigenvalue problem, the Gershgorin theorem and the roots of the source.</li>
+<li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em>, 2nd edition (Cambridge University Press, 2013), for the Gershgorin disc theorem and its maximal-entry proof.</li>
+<li>Y. C. Wang and Y. M. Wei, "Generalized eigenvalue for even order tensors via Einstein product and its applications in multilinear control systems", <em>Computational and Applied Mathematics</em> 41 (2022), 419, for the eigenvalue problem of the Einstein product in the real case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
