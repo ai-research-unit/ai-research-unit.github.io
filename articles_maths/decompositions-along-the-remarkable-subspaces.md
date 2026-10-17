@@ -13,7 +13,7 @@ The remarkable subspaces, one to a section, are *Introduction to the Remarkable 
 The quaternion conjugation ${}^{\natural}$ is one of the three commuting involutions. Its eigenspaces are the centre $\mathbb{C}_{\mathbb{B}}$ (eigenvalue $+1$) and the vector subspace $\mathrm{Vect}(\mathbb{B})$ (eigenvalue $-1$), of real dimensions 2 and 6. Every biquaternion therefore decomposes uniquely as a scalar plus a pure vector part:
 
 $$
-\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_0 e_0 \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3 \in \mathrm{Vect}(\mathbb{B}),
+\tilde{Q} = \tilde{Q}_{\mathrm{c}} + \tilde{Q}_{\mathrm{v}}, \qquad \tilde{Q}_{\mathrm{c}} = Q_t e_t \in \mathbb{C}_{\mathbb{B}}, \quad \tilde{Q}_{\mathrm{v}} = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z \in \mathrm{Vect}(\mathbb{B}),
 $$
 
 with
@@ -107,24 +107,24 @@ The three are the three ways of splitting the four coordinate blocks into two co
 Take the element
 
 $$
-\tilde{Q} = (2+i)e_0 + 3e_1 + ie_2 - 4e_3 .
+\tilde{Q} = (2+i)e_t + 3\vec e_x + i\vec e_y - 4\vec e_z .
 $$
 
 Its three readings, one per decomposition, follow from the projection formulas above:
 
 $$
-\tilde{Q} = \underbrace{(2+i)e_0}_{\mathbb{C}_{\mathbb{B}}} + \underbrace{3e_1 + ie_2 - 4e_3}_{\mathrm{Vect}(\mathbb{B})},
+\tilde{Q} = \underbrace{(2+i)e_t}_{\mathbb{C}_{\mathbb{B}}} + \underbrace{3\vec e_x + i\vec e_y - 4\vec e_z}_{\mathrm{Vect}(\mathbb{B})},
 $$
 
 $$
-\tilde{Q} = \underbrace{2e_0 + 3e_1 - 4e_3}_{\mathbb{H}_{\mathbb{B}}} + \underbrace{ie_0 + ie_2}_{i\mathbb{H}_{\mathbb{B}}},
+\tilde{Q} = \underbrace{2e_t + 3\vec e_x - 4\vec e_z}_{\mathbb{H}_{\mathbb{B}}} + \underbrace{ie_t + i\vec e_y}_{i\mathbb{H}_{\mathbb{B}}},
 $$
 
 $$
-\tilde{Q} = \underbrace{2e_0 + ie_2}_{\mathbb{M}_+} + \underbrace{ie_0 + 3e_1 - 4e_3}_{\mathbb{M}_-}.
+\tilde{Q} = \underbrace{2e_t + i\vec e_y}_{\mathbb{M}_+} + \underbrace{ie_t + 3\vec e_x - 4\vec e_z}_{\mathbb{M}_-}.
 $$
 
-The three lines add up to the same element, as they must, since each is a direct sum decomposition of the same eight real coordinates $(2, 3, 0, -4, 1, 0, 1, 0)$. The scalar–vector reading takes the whole scalar coefficient $2+i$ against the whole vector part $3e_1 + ie_2 - 4e_3$. The quaternion reading splits each coefficient into its real and imaginary parts and puts the real parts $2e_0 + 3e_1 - 4e_3$ in $\mathbb{H}_{\mathbb{B}}$ and the imaginary parts $ie_0 + ie_2$ in $i\mathbb{H}_{\mathbb{B}}$. The Hermitian reading pairs the real scalar part and the imaginary vector part, $2e_0 + ie_2$, against the imaginary scalar part and the real vector part, $ie_0 + 3e_1 - 4e_3$. No one of the three readings can be recovered from another: the same eight coordinates are cut along three different planes.
+The three lines add up to the same element, as they must, since each is a direct sum decomposition of the same eight real coordinates $(2, 3, 0, -4, 1, 0, 1, 0)$. The scalar–vector reading takes the whole scalar coefficient $2+i$ against the whole vector part $3\vec e_x + i\vec e_y - 4\vec e_z$. The quaternion reading splits each coefficient into its real and imaginary parts and puts the real parts $2e_t + 3\vec e_x - 4\vec e_z$ in $\mathbb{H}_{\mathbb{B}}$ and the imaginary parts $ie_t + i\vec e_y$ in $i\mathbb{H}_{\mathbb{B}}$. The Hermitian reading pairs the real scalar part and the imaginary vector part, $2e_t + i\vec e_y$, against the imaginary scalar part and the real vector part, $ie_t + 3\vec e_x - 4\vec e_z$. No one of the three readings can be recovered from another: the same eight coordinates are cut along three different planes.
 
 ## Summary
 
@@ -145,16 +145,16 @@ There are exactly three. The reversal $\flat = -{}^{*}$ reproduces the fixed and
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Q}$ | General biquaternion, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\bar{\cdot}$ | Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$ |
-| ${}^{*}$ | Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$ |
-| ${}^{\natural}$ | Quaternion conjugation; $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$ |
+| $\bar{\cdot}$ | Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_t} e_t + \vec Q^*$ |
+| ${}^{*}$ | Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_t} e_t - \vec Q^*$ |
+| ${}^{\natural}$ | Quaternion conjugation; $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$ |
 | $\flat$ | Reversal, $\flat = -{}^{*}$, the conjugation that gives no new decomposition |
-| $\mathbb{C}_{\mathbb{B}}$ | Centre, fixed space of ${}^{\natural}$; basis $e_0, ie_0$, dimension $2$ |
-| $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed space of ${}^{\natural}$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, dimension $6$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed space of $\bar{\cdot}$; basis $e_0, e_1, e_2, e_3$, dimension $4$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, anti-fixed space of $\bar{\cdot}$; basis $ie_0, ie_1, ie_2, ie_3$, dimension $4$ |
-| $\mathbb{M}_+$ | Hermitian subspace, fixed space of ${}^{*}$; basis $e_0, ie_1, ie_2, ie_3$, dimension $4$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace, anti-fixed space of ${}^{*}$; basis $ie_0, e_1, e_2, e_3$, dimension $4$ |
+| $\mathbb{C}_{\mathbb{B}}$ | Centre, fixed space of ${}^{\natural}$; basis $e_t, ie_t$, dimension $2$ |
+| $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed space of ${}^{\natural}$; basis $\vec e_x, \vec e_y, \vec e_z, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $6$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace, fixed space of $\bar{\cdot}$; basis $e_t, \vec e_x, \vec e_y, \vec e_z$, dimension $4$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | Anti-quaternion subspace, anti-fixed space of $\bar{\cdot}$; basis $ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $4$ |
+| $\mathbb{M}_+$ | Hermitian subspace, fixed space of ${}^{*}$; basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$, dimension $4$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace, anti-fixed space of ${}^{*}$; basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, dimension $4$ |
 | $\tilde{Q}_{\mathrm{c}}, \tilde{Q}_{\mathrm{v}}$ | Scalar and vector components, in $\mathbb{C}_{\mathbb{B}}$ and $\mathrm{Vect}(\mathbb{B})$ |
 | $\tilde{Q}_r, \tilde{Q}_i$ | Quaternion and imaginary-quaternion components, both in $\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{Q}_+, \tilde{Q}_-$ | Hermitian and anti-Hermitian components, in $\mathbb{M}_+$ and $\mathbb{M}_-$ |

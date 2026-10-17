@@ -3,8 +3,8 @@
 ## Introduction
 
 The root problem of a general central value asks which elements square to a given value in each of the
-twelve products: for a value $\lambda e_0$ with a general complex $\lambda$, the solutions of
-$\tilde\Xi\star\tilde\Xi=\lambda e_0$. The three named values $-1$, $0$ and $+1$ are read in the preceding
+twelve products: for a value $\lambda e_t$ with a general complex $\lambda$, the solutions of
+$\tilde\Xi\star\tilde\Xi=\lambda e_t$. The three named values $-1$, $0$ and $+1$ are read in the preceding
 companions, *Square Roots of One and the Idempotents in the Biquaternioid Structures over $\mathbb{C}$* and *Square Roots of Zero and the Nilpotents in the Biquaternioid Structures over $\mathbb{C}$*; here the value
 stays general, and the question is the one a general value asks: for which $\lambda$ does a root exist,
 and what is the root set. This article is the fourth physics companion of the mathematics comparison
@@ -33,13 +33,13 @@ antisymmetric class is the bracket, whose square is an infinitesimal object and 
 alone.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_k^{2}=-e_0$;
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_\mu^{2}=-e_t$;
 $i$ is central with $i^{2}=-1$. The conjugations are ${}^{\natural}$, $\bar{\cdot}$ and
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
-$C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square**
+$C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square**
 is $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$; the **Krein value** is
-$\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. The material coordinate is
-$\tilde\Xi=i c t\,e_0+\vec x$. The twelve structures are cited by their three-letter names.
+$\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$. The material coordinate is
+$\tilde\Xi=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The twelve structures are cited by their three-letter names.
 
 ## The Root Problem at a General Value
 
@@ -48,13 +48,13 @@ equation on the scalar part and the vector part.
 
 | the product | its square | the equation of the root of $\lambda$ |
 |---|---|---|
-| GPA, $\tilde\Xi\tilde Q$ | $\bigl(\Xi_0^{2}-(\vec\Xi,\vec\Xi)\bigr)e_0+2\Xi_0\vec\Xi$ | $\Xi_0^{2}-(\vec\Xi,\vec\Xi)=\lambda$ and $2\Xi_0\vec\Xi=0$ |
+| GPA, $\tilde\Xi\tilde Q$ | $\bigl(\Xi_t^{2}-(\vec\Xi,\vec\Xi)\bigr)e_t+2\Xi_t\vec\Xi$ | $\Xi_t^{2}-(\vec\Xi,\vec\Xi)=\lambda$ and $2\Xi_t\vec\Xi=0$ |
 | GPS, $\tilde\Xi\tilde Q^{*}$ | $\tilde\Xi\tilde\Xi^{*}$ | $\mathrm{Sc}=\lambda$ with $\mathrm{Sc}=\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ |
-| GQA, $\tilde\Xi^{\natural}\tilde Q$ | $C(\tilde\Xi)e_0$ | $C(\tilde\Xi)=\lambda$ |
-| GQS, $\tilde\Xi^{\natural}\tilde Q^{*}$ | the Krein square | $\mathrm{Sc}=\lambda$ with $\mathrm{Sc}=\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$ |
+| GQA, $\tilde\Xi^{\natural}\tilde Q$ | $C(\tilde\Xi)e_t$ | $C(\tilde\Xi)=\lambda$ |
+| GQS, $\tilde\Xi^{\natural}\tilde Q^{*}$ | the Krein square | $\mathrm{Sc}=\lambda$ with $\mathrm{Sc}=\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$ |
 
 The plain square is an element with both a scalar and a vector part, and the root equation forces one of
-the two parts to vanish: either the element is central, giving the two central roots $\pm\sqrt\lambda\,e_0$,
+the two parts to vanish: either the element is central, giving the two central roots $\pm\sqrt\lambda\,e_t$,
 or it is pure, giving the quadric $-(\vec\Xi,\vec\Xi)=\lambda$ in the vector subspace. The plain
 sesquilinear square is Hermitian with the non-negative scalar part $H$. The natural square is already
 central, so its root equation is one complex equation and the root set is a level set of the interval. The
@@ -65,8 +65,8 @@ the difference is the physics of the bands.
 ## The Plain Product: Every Value Is Realised
 
 The plain product answers the root problem for **every** complex value. The two central roots
-$\pm\sqrt\lambda\,e_0$ are the scalar processes, and the pure quadric $-(\vec\Xi,\vec\Xi)=\lambda$ is
-the vector family, of four real parameters, the element $\sqrt{-\lambda}\,e_1$ being one of its members.
+$\pm\sqrt\lambda\,e_t$ are the scalar processes, and the pure quadric $-(\vec\Xi,\vec\Xi)=\lambda$ is
+the vector family, of four real parameters, the element $\sqrt{-\lambda}\,\vec e_x$ being one of its members.
 
 The physical interpretation is that the composition band realises any central value. The value $\lambda$ is an
 arbitrary complex number, carrying both an amplitude and a phase, and the composition produces it either
@@ -85,7 +85,7 @@ Derives and What It Does Not*.
 scalar part $H=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, so a root of $\lambda$ exists exactly for a real
 $\lambda\geq0$. At $\lambda=0$ the root set is the origin alone, and at $\lambda>0$ it is the family
 $\exp(i\theta)w$ over the real quaternions of modulus $\sqrt\lambda$, of real dimension four; at
-$\lambda=1$ it is the unitary group $U(2)$. The physical interpretation is the positivity of probability. The
+$\lambda=1$ it is the unitary group $\mathrm{U}(2)$. The physical interpretation is the positivity of probability. The
 scalar part of the plain sesquilinear square is the modulus squared of the amplitude, so the band that measures a
 probability can only produce a non-negative value; a negative value has no root there, and the value $0$
 is reached by the origin alone. The physical statement is that the pairing has **no nonzero square-zero
@@ -95,7 +95,7 @@ $\lambda=1$ the family is the unitary group, that is the reversible transformati
 read in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 
 **The quaternionic sesquilinear product: the interval is real.** The quaternionic sesquilinear square has the indefinite
-scalar part $\Delta=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$, real for every element, so a root
+scalar part $\Delta=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$, real for every element, so a root
 of $\lambda$ exists exactly for a real $\lambda$ and every real value has roots. The root set of a real
 $\lambda$ is the family $\tilde\Xi=c(\tilde\xi+it)$ over the real unit vectors $\tilde\xi$, of real dimension
 four, with $(t^{2}-1)\lvert c\rvert^{2}=\lambda$, together with the central circle $\lvert a\rvert^{2}=\lambda$
@@ -108,7 +108,7 @@ Normalise*.
 
 ## The Natural Product: the Root Is the Shell of the Interval
 
-The natural square of an element is its central square, $\tilde\Xi^{\natural}\tilde\Xi=C(\tilde\Xi)e_0$,
+The natural square of an element is its central square, $\tilde\Xi^{\natural}\tilde\Xi=C(\tilde\Xi)e_t$,
 so the root equation is the single complex equation $C(\tilde\Xi)=\lambda$. The mathematics companion
 proves that the root set is the cone $C=0$ at $\lambda=0$ and the nondegenerate quadric $C=\lambda$ at
 $\lambda\neq0$, each of real dimension six, and that the set is non-empty for every $\lambda$.
@@ -168,8 +168,8 @@ because the square of a product is not the norm of a product.
 The physical interpretation is the separation of two questions that are often confused. The question "which
 elements are non-invertible" has one answer across the four bands: the lightlike elements, the cone. The
 question "which elements square to a given value, and how many of them are there" has four answers, one
-per band. Degeneracy is universal; factorisation is band-specific. The element $\sqrt{-\lambda}\,e_1$
-squares to $\lambda e_0$ in the plain product and answers for every complex value; the origin alone or the family $\exp(i\theta)w$ answers in the plain
+per band. Degeneracy is universal; factorisation is band-specific. The element $\sqrt{-\lambda}\,\vec e_x$
+squares to $\lambda e_t$ in the plain product and answers for every complex value; the origin alone or the family $\exp(i\theta)w$ answers in the plain
 sesquilinear product; the level set
 $C=\lambda$ answers in the natural product; and the family of the slope answers in the quaternionic sesquilinear product. At the value $0$ the four root sets are the
 nilpotent cone of real dimension four, the origin alone, the cone $C=0$ of real dimension six and the
@@ -180,15 +180,15 @@ the shared cone is *Zero Divisors in the Biquaternioid Structures over $\mathbb{
 ## The Twelve Structures at a General Value
 
 The square of a structure is its operation read at the two equal arguments, and the equation
-$\tilde\Xi\star\tilde\Xi=\lambda e_0$ is written in that operation, so each of the twelve carries a root
+$\tilde\Xi\star\tilde\Xi=\lambda e_t$ is written in that operation, so each of the twelve carries a root
 problem of its own. The twelve are read one by one below, each naming its product, its square and its root
 set, before the table collects the twelve against the sign of the value.
 
 ### $\mathrm{GPA}$, the general plain algebra — composition
 
 The product is the plain product and its square is the plain square, of scalar part
-$\Xi_0^{2}-(\vec\Xi,\vec\Xi)$ and vector part $2\Xi_0\vec\Xi$. A root of $\lambda$ exists for
-every complex value: the two central roots $\pm\sqrt\lambda\,e_0$ together with the pure quadric
+$\Xi_t^{2}-(\vec\Xi,\vec\Xi)$ and vector part $2\Xi_t\vec\Xi$. A root of $\lambda$ exists for
+every complex value: the two central roots $\pm\sqrt\lambda\,e_t$ together with the pure quadric
 $(\vec\Xi,\vec\Xi)=-\lambda$, a four-real-parameter family; at $\lambda=0$ the two central roots
 meet at the origin and the quadric is the pure null cone. The composition band realises every value, and
 the value is read as a scale together with a phase. The reading is *Square Roots of a General Element in the Biquaternion Algebra: the Realisation*.
@@ -197,13 +197,13 @@ the value is read as a scale together with a phase. The reading is *Square Roots
 
 The product is the pairing and its square is Hermitian with scalar part the non-negative $H$, so a root
 exists exactly for a real $\lambda\geq0$. The root set is the origin alone at $\lambda=0$ and the family
-$\exp(i\theta)w$ of real dimension four at $\lambda>0$, the group $U(2)$ at $\lambda=1$. The band refuses a
+$\exp(i\theta)w$ of real dimension four at $\lambda>0$, the group $\mathrm{U}(2)$ at $\lambda=1$. The band refuses a
 negative or non-real value because its form is positive definite. The reading is *Mass, Rank and the
 Positivity of the Dagger*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is $\tilde\Xi^{\natural}\tilde Q$ and its square is the central element $C(\tilde\Xi)e_0$, so
+The product is $\tilde\Xi^{\natural}\tilde Q$ and its square is the central element $C(\tilde\Xi)e_t$, so
 the equation is the single complex equation $C(\tilde\Xi)=\lambda$. A root exists for every $\lambda$, and
 the root set is the level set $C=\lambda$: the cone of real dimension six at $\lambda=0$ and the
 nondegenerate quadric of the same real dimension at a nonzero value. Physically the level set is the mass
@@ -250,7 +250,7 @@ Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*.
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
 The product is the antisymmetrisation, which is alternating, so its square vanishes identically and the
-equation reads $0=\lambda e_0$. The root of $0$ is every element of the space, and no other value has a
+equation reads $0=\lambda e_t$. The root of $0$ is every element of the space, and no other value has a
 root. A bracket has only the trivial value. The reading is *The Cross Product as a Lie Bracket: Rotations
 and the Jacobi Identity*.
 
@@ -265,7 +265,7 @@ Product*.
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
 
 The product is the antisymmetrisation and its square vanishes identically, so the equation reads
-$0=\lambda e_0$. The root of $0$ is every element of the space, and no other value has a root: every
+$0=\lambda e_t$. The root of $0$ is every element of the space, and no other value has a root: every
 element is square-zero, a zero divisor of the block and its own annihilating partner. The reading is
 *The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$*.
 
@@ -284,13 +284,13 @@ $\lambda$.
 
 | structure | square | $\lambda$ non-real | $\lambda<0$ | $\lambda=0$ | $\lambda>0$ |
 |---|---|---|---|---|---|
-| GPA | $\tilde\Xi^{2}$ | $\pm\sqrt\lambda\,e_0$ and the quadric $-(\vec\Xi,\vec\Xi)=\lambda$ | the same | the origin and the pure null cone | the same |
-| GPS | $\tilde\Xi\tilde\Xi^{*}$ | none | none | the origin alone | the family $\exp(i\theta)w$; $U(2)$ at $\lambda=1$ |
-| GQA | $C(\tilde\Xi)e_0$ | the quadric $C=\lambda$ | the same | the cone $C=0$ | the same |
+| GPA | $\tilde\Xi^{2}$ | $\pm\sqrt\lambda\,e_t$ and the quadric $-(\vec\Xi,\vec\Xi)=\lambda$ | the same | the origin and the pure null cone | the same |
+| GPS | $\tilde\Xi\tilde\Xi^{*}$ | none | none | the origin alone | the family $\exp(i\theta)w$; $\mathrm{U}(2)$ at $\lambda=1$ |
+| GQA | $C(\tilde\Xi)e_t$ | the quadric $C=\lambda$ | the same | the cone $C=0$ | the same |
 | GQS | the Krein value | none | the slopes $\lvert t\rvert<1$ | the slopes $\lvert t\rvert=1$ | the slopes $\lvert t\rvert>1$ and the central circle |
 | SPA | $\tilde\Xi^{2}$ | the sets of GPA | the same | the same | the same |
-| SPS | $\langle\tilde\Xi\rangle_{*}e_0$ | none | none | the origin alone | the quadric $H=\lambda$ |
-| SQA | $C(\tilde\Xi)e_0$ | the sets of GQA | the same | the same | the same |
+| SPS | $\langle\tilde\Xi\rangle_{*}e_t$ | none | none | the origin alone | the quadric $H=\lambda$ |
+| SQA | $C(\tilde\Xi)e_t$ | the sets of GQA | the same | the same | the same |
 | SQS | the Hermitian part | none | the family $\mathcal R_\lambda$ | the nilpotent cone | $\mathcal R_\lambda$ with $\lvert\alpha\rvert^{2}\geq\lambda$ |
 | APA | $0$ | none | none | the whole space | none |
 | APS | the pure part | none | none | the square-zero cone | none |
@@ -309,7 +309,7 @@ $C=\lambda$ of the natural product, is *Square Roots of a General Element in the
 | claim | source | status |
 |---|---|---|
 | the four general products have four different root sets at every value | mathematics companion, theorem; compared cell by cell | cited |
-| the plain product has a root of every complex value | mathematics companion; recomputed $\sqrt{-\lambda}\,e_1$ a root of the non-real $\lambda=i$ | verified |
+| the plain product has a root of every complex value | mathematics companion; recomputed $\sqrt{-\lambda}\,\vec e_x$ a root of the non-real $\lambda=i$ | verified |
 | the plain sesquilinear product has a root exactly for $\lambda\geq0$, and the origin alone at $0$ | mathematics companion; recomputed absence of a root of $-1$ and of $-3$ on samples | verified |
 | the natural product's root set of $\lambda$ is the level set $C=\lambda$ | mathematics companion | cited |
 | the quaternionic sesquilinear product has a root for every real $\lambda$ | mathematics companion; recomputed the family $c(\tilde\xi+it)$ at a positive and a negative value | verified |
@@ -348,7 +348,7 @@ $0$, so no nonzero amplitude squares to nothing. The class is thus fixed by two 
 measures probability has no clock of its own and no lightlike displacement.
 
 **The value is an interval of the gauge band.** In the gauge band the root equation is
-$\Delta(\tilde\Xi)=\lambda$ with $\Delta=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$, the indefinite
+$\Delta(\tilde\Xi)=\lambda$ with $\Delta=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$, the indefinite
 Krein form, so the band reads exactly the real values and the sign of $\lambda$ is the causal class. *The
 Fourth Product and Its Indefinite Metric* and *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* read the
 form as the gauge metric, and the reason the band reads only the reals is that an interval is real. The
@@ -408,7 +408,7 @@ sector* the phase of the polar modulus **is** the causal class — imaginary for
 for a general element $\alpha$ is the continuous angle that carries the complex-conjugation imbalance, so the
 two-valued statement is a statement about four-vectors and not about all elements. Where this article's
 natural band is used the connection is exact, because there an element's square is its interval,
-$\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_0$: the value a root realises is then the square of its own polar
+$\tilde\Xi\star\tilde\Xi=\langle\tilde\Xi\rangle_{\natural}e_t$: the value a root realises is then the square of its own polar
 modulus, $\lambda=\rho(\tilde\Xi)^{2}$, whose sign is the sign of the interval and whose phase is twice the
 phase of $\rho$.
 
@@ -421,7 +421,7 @@ $\mathbb{C}_{\mathbb{B}}$ — *whatever* non-central coupling is present, so the
 the frame. Read through this article's root problem, a complex value has **no causal class**: the shell is
 an object a real value defines, and the decaying state has no sharp mass shell. Two details keep the
 reading honest. First, only the **plain** band realises such a value: it contains the scalar process
-$\sqrt\lambda\,e_0$ for any central $\lambda$, whereas the natural band's square is the interval and the
+$\sqrt\lambda\,e_t$ for any central $\lambda$, whereas the natural band's square is the interval and the
 sesquilinear bands produce an interval, so those bands are real by construction and a complex pole is never
 one of their shells. Second, what the value supplies is two numbers of one complex number, a real part that
 names the shell the state is near and an imaginary part that names how long it stays there. This is the
@@ -479,7 +479,7 @@ Biquaternionic Form* is the physical instance of the existence question this art
 second-order operator $\Box-m^2c^2/\hbar^2$ has **no first-order scalar square root** in $\mathbb{B}$: the
 simplest attempt $(\tilde\nabla^{\natural}+\mu)(\tilde\nabla-\mu)$ leaves the first-order residual
 $2\mu\vec\nabla$, and no choice of constant biquaternion coefficients cancels it, because
-cancellation would need an element anticommuting with all three $e_j$, and none exists. Yet the physical
+cancellation would need an element anticommuting with all three $\vec e_\mu$, and none exists. Yet the physical
 theory does have a first-order equation whose square is Klein–Gordon, and the article locates the resolution:
 the square root is **not scalar**, it is the gradient acting on the **spinor module**, and the mass term is
 the off-diagonal pair $\tilde\nabla\tilde\Psi_R=m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L=m\tilde\Psi_R$
@@ -488,7 +488,7 @@ element need not be an element of the same algebra; it may be a **module-valued 
 the two summands the element acts on, and the obstruction to a scalar root — the residual that cannot be
 cancelled — is exactly the evidence that the root must be off-diagonal. The mass is then the root's
 off-diagonal entry, and $\Box\tilde\Psi=m^2\tilde\Psi$ is recovered by squaring the pair rather than by solving
-$\tilde\Xi^2=\lambda e_0$ inside the algebra. This is the concrete face of the existence classes: the
+$\tilde\Xi^2=\lambda e_t$ inside the algebra. This is the concrete face of the existence classes: the
 classes that fail to admit a scalar root are not idle, they are the ones whose root lives on a module.
 
 **The massless limit is the branch point.** *Conformal Invariance and the Massless Limit in Biquaternionic
@@ -496,7 +496,7 @@ Form* locates the boundary case $\lambda=0$ of the root problem, and its stateme
 enters the wave equation as the single scale in $\Box-\mu^2$, and the article finds that, algebraically, at
 $\mu=0$ "the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell
 momentum dropping from rank four to rank two". Read here, that is the
-**branch point of the square root**. For $\lambda\neq0$ the root problem $\tilde\Xi^2=\lambda e_0$ has two
+**branch point of the square root**. For $\lambda\neq0$ the root problem $\tilde\Xi^2=\lambda e_t$ has two
 roots $\pm\sqrt\lambda$ and the element is **invertible**, splitting the two mass shells; at $\lambda=0$ the
 two roots merge at $0$ — a nilpotent — and the on-shell element is a **zero divisor**. The three named
 radicands are thus not three unrelated cases but one picture read along a line: $-1$ the phase, $+1$ the
@@ -509,7 +509,7 @@ root's splitting and the restoration of the conformal symmetry are one event.
 
 - The root problem of a general value asks which elements square to a given central value. Each of the
   twelve structures answers it in its own way, and the answers fall into four existence classes.
-- The plain product realises every complex value, by a scalar process $\pm\sqrt\lambda\,e_0$ or by a pure
+- The plain product realises every complex value, by a scalar process $\pm\sqrt\lambda\,e_t$ or by a pure
   process on the quadric. The composition band can produce any value, phase and amplitude together.
 - The probability band has roots only for non-negative values, and the origin alone for the value $0$.
   A nonzero amplitude never squares to nothing, so masslessness does not live in the band that measures
@@ -544,7 +544,7 @@ root's splitting and the restoration of the conformal symmetry are one event.
   interval.
 - A complex value has no causal class. The unstable state is a complex central pole whose real part is the
   energy and whose imaginary part is half the width, so a decaying state has a lifetime instead of a shell.
-  Only the plain band realises such a value — by the scalar process $\sqrt\lambda\,e_0$; the natural and
+  Only the plain band realises such a value — by the scalar process $\sqrt\lambda\,e_t$; the natural and
   sesquilinear bands produce an interval and are real by construction, so a complex pole is never one of
   their shells.
 - The shell of a value is a pole of the propagator. The two-point function's poles sit on the mass shell
@@ -568,7 +568,7 @@ root's splitting and the restoration of the conformal symmetry are one event.
   and the coupling, the cutoff, the scale and the numerical value are empirical input it cannot derive.
 - A root may live on a module rather than in the algebra. *Klein–Gordon from the Dirac Square in
   Biquaternionic Form* proves that the second-order operator has no first-order **scalar** root — the residual
-  $2\mu\vec\nabla$ cannot be cancelled, since no element anticommutes with all three $e_j$ — yet the
+  $2\mu\vec\nabla$ cannot be cancelled, since no element anticommutes with all three $\vec e_\mu$ — yet the
   physical theory has one, spinor-valued, with the mass as the off-diagonal entry that mixes the two chiral
   halves and $\Box\tilde\Psi=m^2\tilde\Psi$ recovered by squaring the pair. The classes that fail to admit a
   scalar root are the ones whose root is off-diagonal on the module.
@@ -603,7 +603,7 @@ root's splitting and the restoration of the conformal symmetry are one event.
 
 ## Summary
 
-The root problem of a general central value is the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$ read in
+The root problem of a general central value is the equation $\tilde\Xi\star\tilde\Xi=\lambda e_t$ read in
 the twelve structures, and the mathematics companion answers it by reducing the four general squares to
 a vector-scalar pair, a non-negative scalar, a single complex equation and an indefinite scalar. Read
 physically, the four answers are the four bands. The plain product realises every complex value: a root
@@ -621,9 +621,9 @@ different root sets, so degeneracy is universal while factorisation is band-spec
 
 ## Summary of Notation
 
-- $\lambda e_0$ a central value with a general complex $\lambda$; the root set $\mathcal R_\lambda=\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=\lambda e_0\}$.
-- $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$ the central square; $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$ the Krein value.
-- The material coordinate $\tilde\Xi=i c t\,e_0+\vec x$; the slope $t$ of the family $c(\tilde\xi+it)$; the real unit vectors $\tilde\xi$.
+- $\lambda e_t$ a central value with a general complex $\lambda$; the root set $\mathcal R_\lambda=\{\tilde\Xi:\tilde\Xi\star\tilde\Xi=\lambda e_t\}$.
+- $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$ the central square; $\langle\tilde\Xi\rangle_{*}=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)=\lvert\Xi_t\rvert^{2}-\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Krein value.
+- The material coordinate $\tilde\Xi=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the slope $t$ of the family $c(\tilde\xi+it)$; the real unit vectors $\tilde\xi$.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\mathrm{Tr}=2\,\mathrm{Sc}$; $c=1/\sqrt{\epsilon\mu}$.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 - The four existence classes: bilateral, indefinite sesquilinear, definite sesquilinear, antisymmetric.

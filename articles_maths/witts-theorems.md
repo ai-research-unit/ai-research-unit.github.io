@@ -187,21 +187,21 @@ with the explicit basis $u, f, g$. The Witt index is $1$ and the anisotropic par
 
 ### Statement
 
-**Theorem (Witt cancellation).** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_1, q_2$ be quadratic forms with
+**Theorem (Witt cancellation).** Let $(V, \mathfrak{Q})$ be a non-degenerate quadratic space over a field $F$ of characteristic not $2$, and let $q_x, q_y$ be quadratic forms with
 
 $$
-q \perp q_1 \cong q \perp q_2.
+q \perp q_x \cong q \perp q_y.
 $$
 
-Then $q_1 \cong q_2$.
+Then $q_x \cong q_y$.
 
 ### Proof
 
-**Proof.** Let $Q = q \perp q_1 \cong q \perp q_2$ be the common space, and let $W_1, W_2$ be the two copies of the space of $q$ in $Q$ given by the two decompositions, both isometric to the space of $q$. The isometry $W_1 \to W_2$ obtained by composing the two identifications is an isometry between subspaces of $Q$, so by the extension theorem it extends to an isometry $T$ of $Q$. Then $T$ carries the orthogonal complement of $W_1$ to the orthogonal complement of $W_2$, that is $q_1 \cong W_1^\perp \cong W_2^\perp \cong q_2$, where the first and last isomorphisms are the decompositions of $Q$ given by the hypothesis.
+**Proof.** Let $Q = q \perp q_x \cong q \perp q_y$ be the common space, and let $W_1, W_2$ be the two copies of the space of $q$ in $Q$ given by the two decompositions, both isometric to the space of $q$. The isometry $W_1 \to W_2$ obtained by composing the two identifications is an isometry between subspaces of $Q$, so by the extension theorem it extends to an isometry $T$ of $Q$. Then $T$ carries the orthogonal complement of $W_1$ to the orthogonal complement of $W_2$, that is $q_x \cong W_1^\perp \cong W_2^\perp \cong q_y$, where the first and last isomorphisms are the decompositions of $Q$ given by the hypothesis.
 
-**Corollary.** If $q_1 \perp r \cong q_2 \perp r$ with $r$ non-degenerate, then $q_1 \cong q_2$; cancellation is valid for any non-degenerate summand, not only for a form appearing first.
+**Corollary.** If $q_x \perp r \cong q_y \perp r$ with $r$ non-degenerate, then $q_x \cong q_y$; cancellation is valid for any non-degenerate summand, not only for a form appearing first.
 
-**Proof.** Apply the theorem with $q = r$, $q_1$ and $q_2$.
+**Proof.** Apply the theorem with $q = r$, $q_x$ and $q_y$.
 
 **Remark.** Cancellation makes the Witt monoid into a group: it is precisely the statement that the orthogonal sum is cancellative on isometry classes of non-degenerate forms. The passage from the monoid to the group is the construction of the Witt group.
 
@@ -241,20 +241,20 @@ Everything above uses $2 \neq 0$: the polar form is defined with a factor $\tfra
 **Proof.** In characteristic $2$, $\mathfrak{b}(v, v) = \mathfrak{Q}(2v) - 2q(v) = \mathfrak{Q}(0) - 0 = 0$. For the second assertion take $F = \mathbb{F}_2$ and the two forms on $\mathbb{F}_2^2$
 
 $$
-q_1(x, y) = xy, \qquad q_2(x, y) = x^2 + xy + y^2.
+q_x(x, y) = xy, \qquad q_y(x, y) = x^2 + xy + y^2.
 $$
 
-Both have the associated form $b((x_1, y_1), (x_2, y_2)) = x_1y_2 + x_2y_1$: for $q_1$ this is immediate, and for $q_2$ the quadratic terms cancel because $(x_1 + x_2)^2 = x_1^2 + x_2^2$ in characteristic $2$. But $q_1$ is isotropic, vanishing at $(1, 0)$, while $q_2$ takes the value $1$ at each of the three nonzero vectors; so the two forms are not isometric.
+Both have the associated form $b((x_1, y_1), (x_2, y_2)) = x_1y_2 + x_2y_1$: for $q_x$ this is immediate, and for $q_y$ the quadratic terms cancel because $(x_1 + x_2)^2 = x_1^2 + x_2^2$ in characteristic $2$. But $q_x$ is isotropic, vanishing at $(1, 0)$, while $q_y$ takes the value $1$ at each of the three nonzero vectors; so the two forms are not isometric.
 
 ### Failure of Cancellation
 
-**Proposition.** Over $\mathbb{F}_2$ the cancellation theorem fails as stated. Let $q_1 = 0$ and $q_2(x) = x^2$ be the two quadratic forms on $\mathbb{F}_2$, and let $r(x) = x^2$ on $\mathbb{F}_2$. Then
+**Proposition.** Over $\mathbb{F}_2$ the cancellation theorem fails as stated. Let $q_x = 0$ and $q_y(x) = x^2$ be the two quadratic forms on $\mathbb{F}_2$, and let $r(x) = x^2$ on $\mathbb{F}_2$. Then
 
 $$
-q_1 \perp r \cong q_2 \perp r, \qquad \text{but} \qquad q_1 \not\cong q_2.
+q_x \perp r \cong q_y \perp r, \qquad \text{but} \qquad q_x \not\cong q_y.
 $$
 
-**Proof.** The form $q_1 \perp r$ is $(x, y) \mapsto y^2$ and the form $q_2 \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_2 \perp r)(T(x, y)) = y^2 = (q_1 \perp r)(x, y)$; thus $T$ is an isometry $q_1 \perp r \to q_2 \perp r$. On the other hand $q_1(1) = 0 \neq 1 = q_2(1)$, so $q_1$ and $q_2$ are not isometric.
+**Proof.** The form $q_x \perp r$ is $(x, y) \mapsto y^2$ and the form $q_y \perp r$ is $(x, y) \mapsto x^2 + y^2 = (x + y)^2$. The invertible linear map $T(x, y) = (x, x + y)$ of $\mathbb{F}_2^2$ has $T(x, y)_1 + T(x, y)_2 = x + (x + y) = y$, so $(q_y \perp r)(T(x, y)) = y^2 = (q_x \perp r)(x, y)$; thus $T$ is an isometry $q_x \perp r \to q_y \perp r$. On the other hand $q_x(1) = 0 \neq 1 = q_y(1)$, so $q_x$ and $q_y$ are not isometric.
 
 The forms in this example are degenerate: the associated form of $x \mapsto x^2$ over $\mathbb{F}_2$ vanishes identically, because $\mathfrak{Q}(1) - \mathfrak{Q}(1) - \mathfrak{Q}(0) = 0$, so the example does not test the theorem on the forms the theory is built on. Two independent changes repair the theory: the invariant that replaces the discriminant takes its values in a different group, and the chain equivalence survives although the extension theorem and cancellation do not.
 
@@ -297,7 +297,7 @@ Over a field every submodule is a direct summand, and the proofs above use this 
 
 **Proof.** The proof is the same induction as over a field. The Witt condition supplies the decomposition $V = W \perp W^\perp$ that the field proof obtains from finite-dimensional linear algebra, and the equal-norm lemma is proved by the same reflection formula, which needs only that $q$ of the relevant vector be invertible.
 
-**Theorem (cancellation over a ring, standard).** With the same hypotheses, if $q \perp q_1 \cong q \perp q_2$ and $q$ is Witt and non-degenerate, then $q_1 \cong q_2$.
+**Theorem (cancellation over a ring, standard).** With the same hypotheses, if $q \perp q_x \cong q \perp q_y$ and $q$ is Witt and non-degenerate, then $q_x \cong q_y$.
 
 These statements are the content of the theory of quadratic forms over rings; the point of recording them here is that the field case proved in this article is the special case in which the Witt condition is automatic. Over a ring the condition is a genuine restriction: a submodule on which the form is non-degenerate need not be a direct summand, and the argument by orthogonal complement then fails. The precise formulation, and the examples that show the necessity of the condition, are in the standard references on quadratic forms over rings.
 
@@ -309,7 +309,7 @@ A **hyperbolic plane** is a two-dimensional space with a basis $e, f$ satisfying
 
 The **Witt index** is the maximum dimension of a totally isotropic subspace; all maximal totally isotropic subspaces have the same dimension, so the index is an invariant, and over a finite field the hyperbolic space $mH$ has exactly $\prod_{i=0}^{m-1}(q^i+1)$ of them, the orthogonal group acting transitively on the set. The **decomposition theorem** states $V \cong V_0 \perp m\,H$ with $V_0$ anisotropic and $m$ the index; $V_0$ is unique up to isometry and $\dim V = \dim V_0 + 2m$. Over $\mathbb{R}$ with signature $(p, r)$, the index is $\min(p, r)$ and $V_0$ is definite of dimension $|p - r|$.
 
-**Witt cancellation** states that $q \perp q_1 \cong q \perp q_2$ implies $q_1 \cong q_2$ for non-degenerate forms over a field of characteristic not $2$; it is proved by extending the identity between the two copies of $q$ and comparing orthogonal complements. It is the statement that orthogonal sum is cancellative, and it is what makes the Witt monoid embeddable in a group. Over a field of characteristic not $2$ cancellation and the extension theorem for isometries of non-degenerate subspaces are equivalent: cancellation is proved from extension, and conversely the isometry of the complements of two isometric summands of a common space, supplied by cancellation, extends the given isometry.
+**Witt cancellation** states that $q \perp q_x \cong q \perp q_y$ implies $q_x \cong q_y$ for non-degenerate forms over a field of characteristic not $2$; it is proved by extending the identity between the two copies of $q$ and comparing orthogonal complements. It is the statement that orthogonal sum is cancellative, and it is what makes the Witt monoid embeddable in a group. Over a field of characteristic not $2$ cancellation and the extension theorem for isometries of non-degenerate subspaces are equivalent: cancellation is proved from extension, and conversely the isometry of the complements of two isometric summands of a common space, supplied by cancellation, extends the given isometry.
 
 The **chain equivalence**, Witt's *Kettensatz*, is the statement that two isometric non-degenerate diagonal presentations of a form are connected by a finite chain of elementary moves: a scaling of one entry by a square, and a move replacing two consecutive entries $a_k, a_{k+1}$ by $(1 + a_ka_{k+1})a_k$ and $(1 + a_ka_{k+1})a_{k+1}$. Each move is an isometry, and the theorem reduces the proof that an invariant given by a formula in the coefficients is well defined to the check that the formula is unchanged by the two moves; the Hasse invariant is the standard example.
 

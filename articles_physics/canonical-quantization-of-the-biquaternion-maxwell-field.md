@@ -16,14 +16,14 @@ The article has the same standard/open division as its parent, and it is worth s
 
 The article is organized as follows. The next section fixes the natural variable and explains why it is natural and why that is a problem. The following section develops the gauge freedom and the two equivalent formulations of the classical theory. The next section carries out the constraint analysis. The section after that writes the constraints in the biquaternion notation and isolates what the algebra does and does not determine. The next section performs the Gupta–Bleuler quantization and exhibits the two transverse physical polarizations with positive norm. A section compares the result with the scalar field, a section compares it with the Dirac case, and the article closes with an explicit accounting of what is standard and what is open.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A}=i\phi/c\,e_0+\vec A$ and $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$. For the quantization of a free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $\tilde{F}=i\vec E-\vec H$; dimensionful factors are restored only where they carry meaning. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the signature of the biquaternion norm on $\mathbb{M}_-$; the Clifford metric of the parent Dirac article is $g=-\eta$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A}=i\phi/c\,e_t+\vec A$ and $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and the single Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$. For the quantization of a free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and use natural units $\hbar=c=1$, in which $\tilde{F}=i\vec E-\vec H$; dimensionful factors are restored only where they carry meaning. The spacetime metric of the $ict$ sector is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the signature of the biquaternion norm on $\mathbb{M}_-$; the Clifford metric of the parent Dirac article is $g=-\eta$.
 
 ## The Natural Variable and Why It Is Not Canonical
 
 The classical theory of the companion article is one equation for one object:
 
 $$
-\tilde{\nabla}\tilde{F}=-\tilde{R},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}\,e_0+\sqrt{\mu}\,\vec J.
+\tilde{\nabla}\tilde{F}=-\tilde{R},\qquad \tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad \tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}\,e_t+\sqrt{\mu}\,\vec J.
 $$
 
 The field strength $\tilde{F}$ is a biquaternion with vanishing scalar part. It is **gauge invariant**, and it is the object that the equation is written for. This is what it means to say that the field strength is the natural variable of the biquaternionic formulation. Two properties make it natural, and both are worth recording before the difficulty is described.
@@ -33,7 +33,7 @@ First, the equation is **first order**: $\tilde{\nabla}$ appears once. This is t
 Second, the **real and imaginary parts of the single complex equation separate the homogeneous and inhomogeneous Maxwell equations**. Writing $\vec F=\tilde{F}$ and decomposing $\tilde{\nabla}\tilde{F}=-\tilde{R}$ into its scalar and vector parts gives the two equations
 
 $$
-\mathrm{div}\,\vec F=R_0,\qquad \partial_{ict}\vec F+\mathrm{rot}\,\vec F=-\vec R.
+\mathrm{div}\,\vec F=R_0,\qquad \partial/\partial Q_t\,\vec F+\mathrm{rot}\,\vec F=-\vec R.
 $$
 
 Because $\sqrt{\epsilon}\,\vec E$ is the imaginary part of $\vec F$ and $-\sqrt{\mu}\,\vec H$ is its real part, the real part of $\mathrm{div}\,\vec F=R_0$ is $\mathrm{div}\,\vec H=0$, the imaginary part is Gauss's law $\mathrm{div}(\epsilon\vec E)=\rho$, and the vector equation reproduces Faraday's law from its imaginary part and the Ampère–Maxwell law from its real part. A single complex equation thus contains all four Maxwell equations, with the field's own complex structure doing the bookkeeping. This is the cleanest expression of why the biquaternion formulation prefers $\tilde{F}$.
@@ -78,7 +78,7 @@ $$
 S=\int d^4x\left[-F_{\mu\nu}\,\partial^\mu A^\nu+\tfrac14 F_{\mu\nu}F^{\mu\nu}\right].
 $$
 
-Varying with respect to $A_\nu$ gives $\partial_\mu F^{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14F_{\mu\nu}F^{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.
+Varying with respect to $A_\nu$ gives $\partial/\partial Q_\mu F^{\mu\nu}=0$, the inhomogeneous Maxwell equations, and varying with respect to $F_{\mu\nu}$ gives $F_{\mu\nu}=\partial/\partial Q_\mu A_\nu-\partial/\partial Q_\nu A_\mu$, the definition that makes the homogeneous equations automatic; on shell the integrand is $-\tfrac14F_{\mu\nu}F^{\mu\nu}$. The field strength is present as an independent variable, but the potential reappears as its Lagrange multiplier, carrying no kinetic term of its own. The gauge freedom is not removed by this route; it is relocated. There is no local action in four dimensions in which the gauge-invariant field strength alone is varied and Maxwell's equations, rather than $\tilde{F}=0$, follow.
 
 This is the first finding of the article. The biquaternion formulation writes the theory in its most compact and most covariant form, first order in a gauge-invariant object; canonical quantization cannot start from that object. It must either return to the potential and accept the gauge redundancy, or use the first-order formulation and accept the potential as a multiplier. In neither case does the algebra supply the missing structure.
 
@@ -87,7 +87,7 @@ This is the first finding of the article. The biquaternion formulation writes th
 The Legendre transform of the potential formulation is singular, and the singularities are of a different kind from the Dirac case. In natural units and with the metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the conjugate momenta are
 
 $$
-\pi^\mu=\frac{\partial\mathcal{L}}{\partial(\partial_0 A_\mu)}=-F^{0\mu},
+\pi^\mu=\frac{\partial\mathcal{L}}{\partial(\partial/\partial Q_t A_\mu)}=-F^{t\mu},
 $$
 
 so that
@@ -119,7 +119,7 @@ The contrast with the Dirac field is exact and should be set beside it. There th
 The two constraints have a compact form in the notation of the companion articles. Let $\tilde{\pi}$ be the biquaternion whose components are the canonical momenta conjugate to $\tilde{A}$:
 
 $$
-\tilde{\pi}=\pi^0e_0+\vec\pi,\qquad \pi^0=0,\qquad \vec\pi=-i\vec E.
+\tilde{\pi}=\pi^0e_t+\vec\pi,\qquad \pi^0=0,\qquad \vec\pi=-i\vec E.
 $$
 
 Then $\pi^0=0$ is the statement that the **scalar part** of $\tilde{\pi}$ vanishes,
@@ -131,7 +131,7 @@ $$
 and Gauss's law is a scalar-part condition as well. A direct computation of the quaternion product gives
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial_{ict}\pi^0+\mathrm{div}\,\vec\pi,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{\pi}\right)=\partial/\partial Q_t\,\pi^0+\mathrm{div}\,\vec\pi,
 $$
 
 so that on the constraint surface, where $\pi^0\approx0$,
@@ -146,7 +146,7 @@ The gauge freedom, correspondingly, is the freedom to add $\tilde{\nabla}\Gamma$
 
 Two points about this interpretation must be kept separate.
 
-The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}=i\phi/c\,e_0+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{M}_-$. The conjugate momentum $\tilde{\pi}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $ict$ convention it is an element of the complementary sector $\mathbb{M}_+$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{M}_+$ describes for its action on $\mathbb{M}_-$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $ict$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
+The first is a **structural observation**, and it is suggestive but convention-dependent. The potential $\tilde{A}=i\phi/c\,e_t+\vec A$ has an imaginary scalar part and a real vector part: it is an element of the material sector $\mathbb{M}_-$. The conjugate momentum $\tilde{\pi}$ has a vanishing (real) scalar part and a purely imaginary vector part: in the $ict$ convention it is an element of the complementary sector $\mathbb{M}_+$. The canonical pair thus straddles the two sectors that the framework distinguishes as material and informational — the same pairing of "configuration" and "operator" that the article on $\mathbb{M}_+$ describes for its action on $\mathbb{M}_-$. Whether this is a meaningful statement about the algebra or a consequence of writing the momentum with the $ict$ derivative is not decided here, and it is recorded as an open question. In a real-time formulation the momentum of the same theory is real, and the placement reverses; the physical content is unchanged.
 
 The second is the **finding**. Nothing in the algebra selects a gauge. The gauge-invariant content of the theory is a functional of $\tilde{F}$ alone, and $\tilde{F}$ is invariant under every gauge transformation; so no gauge-invariant functional of $\tilde{A}$ — no biquaternion norm, no trace, no conjugation built from the basis and $i$ — can break the degeneracy, because any such functional is a function of $\tilde{F}$. The Lorenz condition $S=0$ is available and is the framework's covariant choice, but the companion article itself declines to make it physical, and the algebra offers no principle that prefers it to $A_0=0$ (the temporal gauge) or to any other. The gauge must be fixed from outside the algebra. This is the sense in which the biquaternion framework cannot quantize Maxwell "automatically".
 
@@ -175,7 +175,7 @@ $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}A\right)^{(+)}|\psi\rangle=0,
 $$
 
-which for a mode with momentum along $e_3$ reduces to
+which for a mode with momentum along $\vec e_z$ reduces to
 
 $$
 \big(a^{\mathrm{fop}}_0(\vec k)-a^{\mathrm{fop}}_3(\vec k)\big)|\psi\rangle=0 .
@@ -210,7 +210,7 @@ The alternatives should be named. The **Coulomb gauge** $\mathrm{div}\,\vec A=0$
 
 ## Comparison with the Scalar Field
 
-The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\phi$ of mass $m$ has conjugate momentum $\pi=\dot\phi$, the canonical commutator $[\phi^{\mathrm{fop}}(\vec x),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(\vec x-\vec y)$, and a mode expansion with **one** polarization,
+The counting is worth setting beside the scalar field, because the difference is where the gauge structure lives. A real scalar field $\phi$ of mass $m$ has conjugate momentum $\pi=\partial\phi/\partial t$, the canonical commutator $[\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\pi^{\mathrm{fop}}(\vec y)]=i\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$, and a mode expansion with **one** polarization,
 
 $$
 \big[a^{\mathrm{fop}}(\vec k),a^{\mathrm{fop}\dagger}(\vec k')\big]=(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
@@ -231,7 +231,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 ## What Is Standard and What Is Open
 
-**Standard, and transcribed here.** The single biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ and the real/imaginary separation of the homogeneous and inhomogeneous equations; the gauge transformation and the transformation of $S$; the second-order potential equation in the Lorenz gauge; the first-order Palatini action and the two variations; the conjugate momenta $\pi^\mu=-F^{0\mu}$, the primary constraint $\pi^0\approx0$, the Gauss-law secondary constraint, and the first-class character of both; the degree-of-freedom count giving two field degrees of freedom; the Gupta–Bleuler mode expansion, commutators, subsidiary condition, zero-norm unphysical combination, transverse polarization sum, and positive-definite physical norm. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions of the companion articles.
+**Standard, and transcribed here.** The single biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ and the real/imaginary separation of the homogeneous and inhomogeneous equations; the gauge transformation and the transformation of $S$; the second-order potential equation in the Lorenz gauge; the first-order Palatini action and the two variations; the conjugate momenta $\pi^\mu=-F^{t\mu}$, the primary constraint $\pi^0\approx0$, the Gauss-law secondary constraint, and the first-class character of both; the degree-of-freedom count giving two field degrees of freedom; the Gupta–Bleuler mode expansion, commutators, subsidiary condition, zero-norm unphysical combination, transverse polarization sum, and positive-definite physical norm. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions of the companion articles.
 
 **Open, and not settled here.**
 
@@ -247,7 +247,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}$, and with it the gauge freedom $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$, whose field is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ with $S'=S-\Box\Gamma$.
 
-The Legendre transform is singular. The conjugate momenta are $\pi^\mu=-F^{0\mu}$, so $\pi^0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$.
+The Legendre transform is singular. The conjugate momenta are $\pi^\mu=-F^{t\mu}$, so $\pi^0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$.
 
 Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_s]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\zeta=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ leaves the zero-norm combination $a^{\mathrm{fop}\dagger}_0-a^{\mathrm{fop}\dagger}_3$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^\lambda\epsilon_j^\lambda=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
@@ -258,27 +258,27 @@ The extension is a transcription of standard canonical quantization into the fra
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ | Biquaternionic gradient |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural}$ | Quaternion-conjugate gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $\tilde{A}=i\phi/c\,e_0+\vec A$ | Potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A}=i\phi/c\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (vanishing scalar part) |
-| $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\vec J$ | Source biquaternion |
+| $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\vec J$ | Source biquaternion |
 | $\tilde{\nabla}\tilde{F}=-\tilde{R}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Gauge function, $\tilde{A}'=\tilde{A}-\tilde{\nabla}\Gamma$ |
 | $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S'=S-\Box\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ spacetime metric; biquaternion norm on $\mathbb{M}_-$ |
 | $\mathcal{L}=-\tfrac14 F_{\mu\nu}F^{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
-| $\pi^\mu=\partial\mathcal{L}/\partial(\partial_0 A_\mu)=-F^{0\mu}$ | Conjugate momenta: $\pi^0\approx0$, $\vec\pi=-i\vec E$ |
-| $\tilde{\pi}=\pi^0e_0+\vec\pi$ | Momentum biquaternion |
+| $\pi^\mu=\partial\mathcal{L}/\partial(\partial/\partial Q_t A_\mu)=-F^{t\mu}$ | Conjugate momenta: $\pi^0\approx0$, $\vec\pi=-i\vec E$ |
+| $\tilde{\pi}=\pi^0e_t+\vec\pi$ | Momentum biquaternion |
 | $\mathrm{Sc}(\tilde{\pi})\approx0$, $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\pi})\approx0$ | Primary and Gauss-law constraints, both first class |
 | $A_\mu$, $\epsilon^{(r)}_\mu$, $a^{\mathrm{fop}}_r,a^{\mathrm{fop}\dagger}_r$ | Quantized potential, polarization vectors, mode operators |
 | $[a^{\mathrm{fop}}_r(\vec k),a^{\mathrm{fop}\dagger}_s(\vec k')]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$ | Mode commutator, $\zeta=(-1,+1,+1,+1)$ |
-| $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $e_3$) |
+| $(a^{\mathrm{fop}}_0-a^{\mathrm{fop}}_3)|\psi\rangle=0$ | Gupta–Bleuler subsidiary condition (momentum along $\vec e_z$) |
 | $\sum_{\lambda=1}^2\epsilon_i^\lambda\epsilon_j^\lambda=\delta_{ij}-\vec{u_k}_i\vec{u_k}_j$ | Transverse polarization sum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
 

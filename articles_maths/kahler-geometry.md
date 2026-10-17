@@ -5,7 +5,7 @@
 
 A **Kähler manifold** is a complex manifold with a Hermitian metric whose fundamental form $\Omega$ is closed. The condition is a single equation, but it reconciles three structures at once: the complex structure $J$, the Riemannian metric $g$, and the symplectic form $\Omega$. On a Kähler manifold the Levi-Civita connection preserves the complex structure, the Chern connection coincides with it, the complex structure is parallel, and the curvature tensor has the symmetries of a unitary holonomy group. The result is the most rigid and the most computable setting in differential geometry, and it is the ambient category for the algebraic geometry of projective varieties.
 
-This article develops the Kähler condition and its consequences. It states the equivalent formulations of the Kähler condition — the closedness of $\Omega$, the parallelism of $J$ for the Levi-Civita connection, the local existence of a Kähler potential, and the reduction of the holonomy group to $U(n)$ — and treats the standard examples, the complex projective space with its Fubini–Study metric above all. It then develops the two central machines that the condition makes available: the Hodge theory of a compact Kähler manifold, whose analytic proofs are deferred to Part III, and the Lefschetz operators, whose $sl_2$ structure packages the cohomology. It closes with the Ricci form and the Kähler–Einstein condition, which is the doorway.
+This article develops the Kähler condition and its consequences. It states the equivalent formulations of the Kähler condition — the closedness of $\Omega$, the parallelism of $J$ for the Levi-Civita connection, the local existence of a Kähler potential, and the reduction of the holonomy group to $\mathrm{U}(n)$ — and treats the standard examples, the complex projective space with its Fubini–Study metric above all. It then develops the two central machines that the condition makes available: the Hodge theory of a compact Kähler manifold, whose analytic proofs are deferred to Part III, and the Lefschetz operators, whose $sl_2$ structure packages the cohomology. It closes with the Ricci form and the Kähler–Einstein condition, which is the doorway.
 
 **The boundaries of the article.** The Riemannian metric, the Levi-Civita connection, the curvature tensor, the Ricci tensor and the holonomy group are those of the companion article *Riemannian Geometry*, and are used without derivation. The almost complex structures, the Nijenhuis tensor, the Hermitian metrics, the fundamental form $\Omega(X,Y) = g(JX,Y)$ and the Chern connection are those, which is the immediately preceding article of this half; they are assumed. The symplectic structure on a Kähler manifold, the Darboux theorem and the compatible almost complex structures are those of *Symplectic Geometry*. The Laplace operator on forms, harmonic forms, Hodge theory and the finiteness of the cohomology of the $\bar\partial$-complex require the measure, the limit and the theory of elliptic operators, which belong to Part III, where the measure and the limit are available; the results are stated here and their proofs deferred there in that explicit form. The Chern classes of a complex manifold and their expression through the curvature of a connection are those of *Characteristic Classes*, earlier in this Part; the article states the identity $[\rho] = 2\pi c_1(M)$ and cites it. The projective and algebraic-geometric consequences — the Kodaira embedding theorem, the structure of algebraic varieties, the Hodge conjecture — belong to algebraic geometry and are only pointed at. The base field is $\mathbb{R}$ and no physics is invoked.
 
@@ -39,13 +39,13 @@ and in that case $\Omega$ is locally of the form $i\partial\bar\partial\varphi$ 
 
 **(c)** the Chern connection of the Hermitian structure coincides with the Levi-Civita connection of $g$;
 
-**(d)** about every point there are holomorphic coordinates and a real function $\varphi$ with $\Omega = i\,\partial\bar\partial\varphi$, equivalently $g_{i\bar j} = \partial_i\partial_{\bar j}\varphi$;
+**(d)** about every point there are holomorphic coordinates and a real function $\varphi$ with $\Omega = i\,\partial\bar\partial\varphi$, equivalently $g_{i\bar j} = \partial^2/\partial z^i\partial\bar z^j\,\varphi$;
 
-**(e)** the holonomy group of $g$ is contained in $U(n)$;
+**(e)** the holonomy group of $g$ is contained in $\mathrm{U}(n)$;
 
 **(f)** about every point there are holomorphic coordinates in which the Kähler metric has the form $g_{i\bar j} = \delta_{ij} + O(|z|^2)$.
 
-**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $U(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial_i\partial_{\bar j}\varphi\,dz^i\wedge d\bar z^j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial_k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
+**Proof sketch.** (a) $\Leftrightarrow$ (b): for a Hermitian manifold, the $(0,3)$-tensor field $\nabla J$ and the $3$-form $d\Omega$ are related by the identity of Goldberg, which expresses each component of $\nabla J$ at a point as a linear combination of the components of $d\Omega$ at that point with universal coefficients; since $g$ is positive definite the vanishing of one is therefore equivalent to the vanishing of the other. (b) $\Leftrightarrow$ (c): a connection which preserves $g$ and $J$ and whose torsion has vanishing $(0,2)$-part is by definition the Chern connection, and that connection is unique; the Levi-Civita connection of $g$ is torsion-free, so if it preserves $J$ it satisfies the defining properties of the Chern connection and coincides with it, and conversely the Chern connection preserves $J$. (b) $\Leftrightarrow$ (e): $J$ is a parallel tensor field, so it is preserved by the holonomy representation, and a parallel complex structure on the tangent space is exactly a reduction of the holonomy group to $\mathrm{U}(n)$. (a) $\Leftrightarrow$ (d): the closedness gives the local potential as in the previous proposition, and the converse is immediate from $d^2 = 0$; the coordinate statement is $\Omega = i\sum_{i,j}\partial^2/\partial z^i\partial\bar z^j\,\varphi\,dz^i\wedge d\bar z^j$. (f): the Taylor expansion of a potential normalised at a point; the first-order terms vanish after a holomorphic change of coordinates, and conversely the vanishing of all the first derivatives $\partial/\partial z^k g_{i\bar j}$ at a point implies $\partial\Omega = 0$ there.
 
 **Corollary.** A Kähler manifold is symplectic: the Kähler form $\Omega$ is closed and nondegenerate, being the fundamental form of a Riemannian metric, and the almost complex structure $J$ is compatible with it in the sense of *Symplectic Geometry*. In particular every Kähler manifold is orientable, and the volume form $\Omega^{\wedge n}/n!$ is the Riemannian volume.
 
@@ -95,7 +95,7 @@ $$
 \Omega_{FS} = i\,\partial\bar\partial\log(1 + |z|^2), \qquad |z|^2 = \sum_{i=1}^n |z_i|^2 .
 $$
 
-It is closed because it is $\partial\bar\partial$ of a function, and the associated Hermitian matrix $g_{i\bar j} = \partial_i\partial_{\bar j}\log(1+|z|^2)$ is
+It is closed because it is $\partial\bar\partial$ of a function, and the associated Hermitian matrix $g_{i\bar j} = \partial^2/\partial z^i\partial\bar z^j\,\log(1+|z|^2)$ is
 
 $$
 g_{i\bar j} = \frac{\delta_{ij}(1+|z|^2) - \bar z_i z_j}{(1+|z|^2)^2},
@@ -107,7 +107,7 @@ $$
 \int_{\mathbb{CP}^1}\Omega_{FS} = 2\pi,
 $$
 
-so that $[\Omega_{FS}/(2\pi)]$ is a positive generator of $H^2(\mathbb{CP}^n;\mathbb{Z})$; the powers $[\Omega_{FS}]^k/(2\pi)^k$ are the integral generators of $H^{2k}$, and the Hodge numbers are $h^{n,m} = 1$ for $0 \leq n = m \leq n$ and $h^{n,m} = 0$ otherwise. The Fubini–Study metric is the model compact Kähler metric and the quotient of the sphere $S^{2n+1}$ by the Hopf $U(1)$-action of *Contact Geometry*.
+so that $[\Omega_{FS}/(2\pi)]$ is a positive generator of $H^2(\mathbb{CP}^n;\mathbb{Z})$; the powers $[\Omega_{FS}]^k/(2\pi)^k$ are the integral generators of $H^{2k}$, and the Hodge numbers are $h^{n,m} = 1$ for $0 \leq n = m \leq n$ and $h^{n,m} = 0$ otherwise. The Fubini–Study metric is the model compact Kähler metric and the quotient of the sphere $S^{2n+1}$ by the Hopf $\mathrm{U}(1)$-action of *Contact Geometry*.
 
 **Example (Hermitian symmetric spaces).** A compact Hermitian symmetric space $G/H$ of a semisimple Lie group carries an invariant Kähler structure, and its Kähler form is integral. The Grassmannians, the quadrics and the complex projective spaces are the classical cases, and the classification of the irreducible ones is that of the Cartan domains. The Lie-theoretic input is that of *Lie Groups* and its companions.
 
@@ -205,7 +205,7 @@ $$
 
 so it is closed and of type $(1,1)$.
 
-**Proof.** The Ricci tensor of a Kähler metric has the local expression $R_{i\bar j} = -\partial_i\partial_{\bar j}\log\det(g_{k\bar l})$, which is the statement that the Ricci form is minus the $\partial\bar\partial$-logarithm of the volume density of the metric; $\rho$ of type $(1,1)$, and $\partial\bar\partial$ of a function is closed.
+**Proof.** The Ricci tensor of a Kähler metric has the local expression $R_{i\bar j} = -\partial^2/\partial z^i\partial\bar z^j\,\log\det(g_{k\bar l})$, which is the statement that the Ricci form is minus the $\partial\bar\partial$-logarithm of the volume density of the metric; $\rho$ of type $(1,1)$, and $\partial\bar\partial$ of a function is closed.
 
 **Definition.** A Kähler metric is **Kähler–Einstein** if
 
@@ -220,7 +220,7 @@ for a constant $\lambda$, in which case the scalar curvature is constant. A Käh
 **Proof sketch.** In a fixed Kähler class, the Kähler metrics are parametrised by their potentials: $g' = g + i\partial\bar\partial\varphi$. The Ricci forms change by $-i\,\partial\bar\partial\log(\det(g'_{i\bar j})/\det(g_{i\bar j}))$, so the condition $\rho'=0$ becomes the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial_i\partial_{\bar j}\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
+\det\Bigl(g_{i\bar j} + \partial^2/\partial z^i\partial\bar z^j\,\varphi\Bigr) = \exp(F)\,\det(g_{i\bar j}),
 $$
 
 for a function $F$ determined by the difference of the Ricci forms. Yau's theorem is the solution of this equation by the continuity method: the a priori estimates $C^0$, $C^1$, $C^2$ and $C^{2,\alpha}$ for the solution give openness and closedness of the set of solvable classes.
@@ -239,7 +239,7 @@ for a function $F$ determined by the difference of the Ricci forms. Yau's theore
 
 ## Summary
 
-A Kähler manifold is a Hermitian manifold whose fundamental form $\Omega(X,Y)=g(JX,Y)$ is closed. The condition is equivalent to the parallelism of $J$ for the Levi-Civita connection, to the coincidence of the Chern connection with the Levi-Civita connection, to the local existence of a Kähler potential with $\Omega = i\partial\bar\partial\varphi$, and to the reduction of the holonomy group to $U(n)$; a Kähler manifold is in particular symplectic, and the inclusion of the Kähler manifolds in the symplectic ones is strict, the Kodaira–Thurston manifold being symplectic and not Kähler.
+A Kähler manifold is a Hermitian manifold whose fundamental form $\Omega(X,Y)=g(JX,Y)$ is closed. The condition is equivalent to the parallelism of $J$ for the Levi-Civita connection, to the coincidence of the Chern connection with the Levi-Civita connection, to the local existence of a Kähler potential with $\Omega = i\partial\bar\partial\varphi$, and to the reduction of the holonomy group to $\mathrm{U}(n)$; a Kähler manifold is in particular symplectic, and the inclusion of the Kähler manifolds in the symplectic ones is strict, the Kodaira–Thurston manifold being symplectic and not Kähler.
 
 The examples are $\mathbb{C}^n$ and its quotients by lattices, the complex projective space with the Fubini–Study form $\Omega_{FS} = i\partial\bar\partial\log(1+|z|^2)$ and $\int_{\mathbb{CP}^1}\Omega_{FS} = 2\pi$, the Hermitian symmetric spaces, the complex submanifolds and products, and the Riemann surfaces, where the condition is vacuous. Kähler normal coordinates make the metric flat to first order, so the curvature is the only local invariant.
 

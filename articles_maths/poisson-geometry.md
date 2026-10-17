@@ -30,10 +30,10 @@ A **Poisson manifold** is a pair $(M, \{\cdot, \cdot\})$ of a manifold and a Poi
 The Leibniz rule in each argument says that the bracket is a **biderivation** of the commutative algebra $C^\infty(M)$: it is a derivation in each slot separately, and it is not assumed to be a derivation of the bracket itself. By the universal property of the exterior algebra, a skew-symmetric biderivation is the same thing as a section of the bundle $\Lambda^2 TM$: there is a unique bivector field $\pi \in \Gamma(\Lambda^2TM)$ with
 
 $$
-\{f, g\} = \pi(df, dg) = \sum_{i, j} \pi^{ij}\, \partial_i f\, \partial_j g
+\{f, g\} = \pi(df, dg) = \sum_{i, j} \pi^{ij}\, \partial/\partial x^i f\, \partial/\partial x^j g
 $$
 
-in local coordinates, where $\pi = \frac{1}{2}\sum_{i,j}\pi^{ij}\partial_i\wedge\partial_j$ with $\pi^{ij} = -\pi^{ji}$. The passage from the bracket to the tensor uses only the Leibniz rule; the Jacobi identity imposes a differential condition on $\pi$, which is the subject of the next section.
+in local coordinates, where $\pi = \frac{1}{2}\sum_{i,j}\pi^{ij}\partial/\partial x^i\wedge\partial/\partial x^j$ with $\pi^{ij} = -\pi^{ji}$. The passage from the bracket to the tensor uses only the Leibniz rule; the Jacobi identity imposes a differential condition on $\pi$, which is the subject of the next section.
 
 **Definition.** The **anchor** of a Poisson structure is the bundle map
 
@@ -49,7 +49,7 @@ The **Hamiltonian vector field** of $f \in C^\infty(M)$ is $X_f = -\pi^{\sharp}(
 
 **Proof.** The Leibniz rule (b) says that $f \mapsto X_f(g) = -\{f, g\}$ is a derivation in $g$; the Jacobi identity (c) gives $[X_f, X_g] = -X_{\{f,g\}} = X_{-\{f,g\}}$, which is the statement that the assignment preserves the bracket once the bracket $-\{\cdot,\cdot\}$ is placed on the functions. A function $f$ with $X_f = 0$ satisfies $\{f, g\} = 0$ for every $g$, which is exactly the condition that $f$ be a **Casimir function**, that is, locally constant on the symplectic leaves below. On a connected **nondegenerate** Poisson manifold the anchor is an isomorphism, so $X_f=0$ forces $df=0$ and the kernel is exactly the constants; the converse can fail, since a structure may degenerate on a set of empty interior and still have no nonconstant global Casimir, as the affine example below shows.
 
-**Remark.** The comparison with *Symplectic Geometry* is exact and worth recording. If $\omega$ is a symplectic form, the bundle isomorphism $\omega^{\flat} : TM \to T^*M$ has an inverse, and the bivector $\pi$ defined by $\pi^{\sharp} = -\omega^{\sharp}$, read as a section of $\Lambda^2TM$, satisfies the Poisson condition; the bracket it defines is the bracket of *Symplectic Geometry*, and the Poisson structure is nondegenerate everywhere. In Darboux coordinates $\omega = \sum_i dx^i\wedge dy^i$ and the corresponding bivector is $\pi = \sum_i \partial_{x^i}\wedge\partial_{y^i}$, whose coefficients are constant. Conversely, a Poisson structure that is nondegenerate at every point is the inverse of a symplectic form, with the sign above, and the closedness of that form is exactly the Jacobi identity. A Poisson manifold is thus a symplectic manifold with the nondegeneracy allowed to fail along a singular locus, and the geometry of the failure is what makes the subject. The identity $[X_f,X_g] = -X_{\{f,g\}}$ is the one of *Symplectic Geometry* and is kept here deliberately.
+**Remark.** The comparison with *Symplectic Geometry* is exact and worth recording. If $\omega$ is a symplectic form, the bundle isomorphism $\omega^{\flat} : TM \to T^*M$ has an inverse, and the bivector $\pi$ defined by $\pi^{\sharp} = -\omega^{\sharp}$, read as a section of $\Lambda^2TM$, satisfies the Poisson condition; the bracket it defines is the bracket of *Symplectic Geometry*, and the Poisson structure is nondegenerate everywhere. In Darboux coordinates $\omega = \sum_i dx^i\wedge dy^i$ and the corresponding bivector is $\pi = \sum_i \partial/\partial x^i\wedge\partial/\partial y^i$, whose coefficients are constant. Conversely, a Poisson structure that is nondegenerate at every point is the inverse of a symplectic form, with the sign above, and the closedness of that form is exactly the Jacobi identity. A Poisson manifold is thus a symplectic manifold with the nondegeneracy allowed to fail along a singular locus, and the geometry of the failure is what makes the subject. The identity $[X_f,X_g] = -X_{\{f,g\}}$ is the one of *Symplectic Geometry* and is kept here deliberately.
 
 ## The Schouten Bracket and the Jacobi Identity
 
@@ -73,13 +73,13 @@ $$
 
 for $X$ of degree $p$, $Y$ of degree $q$ and $Z$ arbitrary. It makes $\mathrm{X}^\bullet(M)$ a graded Lie algebra of degree $-1$: it is graded-antisymmetric, $[Q,P] = -(-1)^{(p-1)(q-1)}[P,Q]$ for $P$ of degree $p$ and $Q$ of degree $q$ — which for two vector fields is the ordinary antisymmetry $[Y,X]=-[X,Y]$ — and it satisfies the graded Jacobi identity.
 
-**Proposition (coordinate formula).** Let $\pi = \frac{1}{2}\sum_{i,j}\pi^{ij}\partial_i\wedge\partial_j$ be a bivector field. Then $[\pi,\pi]$ is the trivector field
+**Proposition (coordinate formula).** Let $\pi = \frac{1}{2}\sum_{i,j}\pi^{ij}\partial/\partial x^i\wedge\partial/\partial x^j$ be a bivector field. Then $[\pi,\pi]$ is the trivector field
 
 $$
-[\pi,\pi]^{ijk} = \sum_{l=1}^{n}\Bigl(\pi^{il}\,\partial_l\pi^{jk} + \pi^{jl}\,\partial_l\pi^{ki} + \pi^{kl}\,\partial_l\pi^{ij}\Bigr).
+[\pi,\pi]^{ijk} = \sum_{l=1}^{n}\Bigl(\pi^{il}\,\partial/\partial x^l\,\pi^{jk} + \pi^{jl}\,\partial/\partial x^l\,\pi^{ki} + \pi^{kl}\,\partial/\partial x^l\,\pi^{ij}\Bigr).
 $$
 
-**Proof.** This is the coordinate expansion of the graded Leibniz rule applied to the decomposition of $\pi$ into the basis vectors $\partial_i$; the terms in which the coefficient function is differentiated come from $[\partial_i, \pi^{jk}\partial_j\wedge\partial_k]$ and the terms of the form $\pi^{il}\partial_l\pi^{jk}$ from the Leibniz rule, while the bracket of two coordinate vector fields vanishes.
+**Proof.** This is the coordinate expansion of the graded Leibniz rule applied to the decomposition of $\pi$ into the basis vectors $\partial/\partial x^i$; the terms in which the coefficient function is differentiated come from $[\partial/\partial x^i, \pi^{jk}\partial/\partial x^j\wedge\partial/\partial x^k]$ and the terms of the form $\pi^{il}\partial/\partial x^l\,\pi^{jk}$ from the Leibniz rule, while the bracket of two coordinate vector fields vanishes.
 
 **Theorem.** Let $\pi$ be a bivector field and let $\{f,g\} = \pi(df,dg)$. Then the bracket satisfies the Jacobi identity if and only if $[\pi,\pi] = 0$. More precisely,
 
@@ -89,10 +89,10 @@ $$
 
 for all $f, g, h \in C^\infty(M)$.
 
-**Proof.** Both sides are alternating trilinear over $\mathbb{R}$ and are derivations in each argument, and both annihilate any argument that is a constant; a trilinear derivation with these properties is determined by its values on the coordinate functions $x^1,\ldots,x^n$. Evaluating the two sides at $(x^i, x^j, x^k)$ gives, on the right, the coordinate formula for $[\pi,\pi]^{ijk}$ because $dx^i\wedge dx^j\wedge dx^k$ pairs with $\partial_l$ as displayed, and on the left
+**Proof.** Both sides are alternating trilinear over $\mathbb{R}$ and are derivations in each argument, and both annihilate any argument that is a constant; a trilinear derivation with these properties is determined by its values on the coordinate functions $x^1,\ldots,x^n$. Evaluating the two sides at $(x^i, x^j, x^k)$ gives, on the right, the coordinate formula for $[\pi,\pi]^{ijk}$ because $dx^i\wedge dx^j\wedge dx^k$ pairs with $\partial/\partial x^l$ as displayed, and on the left
 
 $$
-\{x^i, \{x^j, x^k\}\} + \{x^j, \{x^k, x^i\}\} + \{x^k, \{x^i, x^j\}\} = \sum_l\bigl(\pi^{il}\partial_l\pi^{jk} + \pi^{jl}\partial_l\pi^{ki} + \pi^{kl}\partial_l\pi^{ij}\bigr),
+\{x^i, \{x^j, x^k\}\} + \{x^j, \{x^k, x^i\}\} + \{x^k, \{x^i, x^j\}\} = \sum_l\bigl(\pi^{il}\partial/\partial x^l\,\pi^{jk} + \pi^{jl}\partial/\partial x^l\,\pi^{ki} + \pi^{kl}\partial/\partial x^l\,\pi^{ij}\bigr),
 $$
 
 obtained by substituting $\{x^a, x^b\} = \pi^{ab}$ and using the Leibniz rule in the outer bracket. The two expressions agree, so the identity holds.
@@ -103,14 +103,14 @@ obtained by substituting $\{x^a, x^b\} = \pi^{ab}$ and using the Leibniz rule in
 
 ## Examples
 
-**Example (symplectic manifolds).** If $(M, \omega)$ is symplectic then the bivector $\pi$ defined by $\pi^{\sharp} = -\omega^{\sharp}$ is nondegenerate and satisfies $[\pi,\pi]=0$, because in Darboux coordinates $\omega = \sum_i dx^i\wedge dy^i$ and $\pi = \sum_i \partial_{x^i}\wedge\partial_{y^i}$ has constant coefficients, so $[\pi,\pi]=0$ by the coordinate formula. The associated bracket is the one of *Symplectic Geometry*, and this is the fundamental class of examples.
+**Example (symplectic manifolds).** If $(M, \omega)$ is symplectic then the bivector $\pi$ defined by $\pi^{\sharp} = -\omega^{\sharp}$ is nondegenerate and satisfies $[\pi,\pi]=0$, because in Darboux coordinates $\omega = \sum_i dx^i\wedge dy^i$ and $\pi = \sum_i \partial/\partial x^i\wedge\partial/\partial y^i$ has constant coefficients, so $[\pi,\pi]=0$ by the coordinate formula. The associated bracket is the one of *Symplectic Geometry*, and this is the fundamental class of examples.
 
-**Example (constant Poisson structures).** On $\mathbb{R}^n$ fix a constant alternating matrix $(\pi^{ij})$ and define $\{f,g\} = \sum_{ij}\pi^{ij}\partial_i f\,\partial_j g$. The coordinate formula gives $[\pi,\pi]=0$ because every coefficient has zero derivative. The rank of the structure is the rank of the matrix, which is even, say $2r$; after a linear change of coordinates the matrix takes the normal form of *Symplectic Forms and Poisson Brackets*, and the structure is the product of a symplectic structure on $2r$ coordinates with the zero structure on the remaining $n-2r$. The Casimirs are the coordinates on the kernel.
+**Example (constant Poisson structures).** On $\mathbb{R}^n$ fix a constant alternating matrix $(\pi^{ij})$ and define $\{f,g\} = \sum_{ij}\pi^{ij}\partial/\partial x^i f\,\partial/\partial x^j g$. The coordinate formula gives $[\pi,\pi]=0$ because every coefficient has zero derivative. The rank of the structure is the rank of the matrix, which is even, say $2r$; after a linear change of coordinates the matrix takes the normal form of *Symplectic Forms and Poisson Brackets*, and the structure is the product of a symplectic structure on $2r$ coordinates with the zero structure on the remaining $n-2r$. The Casimirs are the coordinates on the kernel.
 
 **Example (the affine structure on the plane).** On $\mathbb{R}^2$ with coordinates $x, y$ put
 
 $$
-\{f, g\} = x\,(\partial_x f\,\partial_y g - \partial_y f\,\partial_x g), \qquad \pi = x\,\partial_x\wedge\partial_y .
+\{f, g\} = x\,(\partial/\partial x f\,\partial/\partial y g - \partial/\partial y f\,\partial/\partial x g), \qquad \pi = x\,\partial/\partial x\wedge\partial/\partial y .
 $$
 
 The Jacobi identity holds, and for a structural reason: on a surface every trivector field vanishes, since $\Lambda^3TM = 0$ in dimension two, so $[\pi,\pi]=0$ for every bivector and every bivector on a surface is Poisson. Here the bracket is also the Lie–Poisson structure of the two-dimensional nonabelian Lie algebra, whose Jacobi identity is the Jacobi identity of that Lie algebra: on the linear coordinates $\{x,y\} = x$. The rank is two away from the line $x = 0$ and zero on it, the symplectic leaves are the two open half-planes $x>0$, $x<0$ and the individual points of the line $x=0$, and there is no nonconstant Casimir: a Casimir would be constant on each leaf, hence locally constant on the dense open set $x\neq0$, hence locally constant on $M$. This is the simplest example of a Poisson structure that is symplectic off a singular locus.
@@ -125,7 +125,7 @@ The Jacobi identity for this bracket is exactly the Jacobi identity of $\mathrm{
 
 **Example.** The dual of the rotation Lie algebra $\mathrm{SO}(3)$ carries $\{x,y\} = z$, $\{y,z\} = x$, $\{z,x\} = y$, which is a Poisson structure: the coordinate formula gives $[\pi,\pi] = 0$ because the structure constants are those of a Lie algebra, and, directly, $\{x,\{y,z\}\} + \{y,\{z,x\}\} + \{z,\{x,y\}\} = \{x,x\} + \{y,y\} + \{z,z\} = 0$. The Casimir is $x^2+y^2+z^2$, and the symplectic leaves are the concentric spheres and the origin.
 
-**Example (a bivector that is not Poisson).** The bivector $\pi = x\,\partial_x\wedge\partial_y + y\,\partial_y\wedge\partial_z$ on $\mathbb{R}^3$, that is $\{x,y\} = x$, $\{y,z\} = y$, $\{z,x\} = 0$, does **not** satisfy the Jacobi identity: the triple $(x,y,z)$ gives
+**Example (a bivector that is not Poisson).** The bivector $\pi = x\,\partial/\partial x\wedge\partial/\partial y + y\,\partial/\partial y\wedge\partial/\partial z$ on $\mathbb{R}^3$, that is $\{x,y\} = x$, $\{y,z\} = y$, $\{z,x\} = 0$, does **not** satisfy the Jacobi identity: the triple $(x,y,z)$ gives
 
 $$
 \{x,\{y,z\}\} + \{y,\{z,x\}\} + \{z,\{x,y\}\} = \{x,y\} + 0 + 0 = x \neq 0 .
@@ -152,7 +152,7 @@ $$
 in which
 
 $$
-\pi = \sum_{i=1}^{r} \partial_{q_i}\wedge\partial_{p_i} + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial_{y_j}\wedge\partial_{y_k}, \qquad \phi_{jk}(0) = 0 .
+\pi = \sum_{i=1}^{r} \partial/\partial q_i\wedge\partial/\partial p_i + \frac{1}{2}\sum_{j,k} \phi_{jk}(y)\, \partial/\partial y_j\wedge\partial/\partial y_k, \qquad \phi_{jk}(0) = 0 .
 $$
 
 Consequently the Poisson structure is locally the product of a symplectic structure of dimension $2r$ and a Poisson structure whose rank vanishes at the origin, and the symplectic leaf through $x$ is locally the slice $y = 0$.
@@ -211,7 +211,7 @@ where the $C_r$ are bidifferential operators and $\hbar$ is a formal parameter, 
 
 A Poisson manifold is a manifold whose algebra of smooth functions carries a bracket that is skew-symmetric, a derivation in each argument, and satisfies the Jacobi identity. The Leibniz rule makes the bracket the contraction of a bivector field $\pi$ with the differentials, the Hamiltonian vector field of a function is $X_f = -\pi^{\sharp}(df)$, and the Jacobi identity is equivalent to the Poisson condition $[\pi,\pi]=0$ for the Schouten–Nijenhuis bracket. Every symplectic manifold is Poisson with $\pi$ the inverse of the symplectic form, so a Poisson manifold is a symplectic manifold with controlled degeneracy.
 
-The examples are the symplectic manifolds, the constant structures on $\mathbb{R}^n$, the affine structure $\{x,y\}=x$ on the plane, and the Lie–Poisson structures on the dual of a Lie algebra, whose leaves are the coadjoint orbits; the bivector $x\,\partial_x\wedge\partial_y + y\,\partial_y\wedge\partial_z$ shows that the Jacobi identity is a genuine restriction. A Poisson manifold is a disjoint union of symplectic leaves, of dimension the rank at a point, and the Weinstein splitting theorem puts the structure locally into the product of a symplectic factor and a transverse singular factor.
+The examples are the symplectic manifolds, the constant structures on $\mathbb{R}^n$, the affine structure $\{x,y\}=x$ on the plane, and the Lie–Poisson structures on the dual of a Lie algebra, whose leaves are the coadjoint orbits; the bivector $x\,\partial/\partial x\wedge\partial/\partial y + y\,\partial/\partial y\wedge\partial/\partial z$ shows that the Jacobi identity is a genuine restriction. A Poisson manifold is a disjoint union of symplectic leaves, of dimension the rank at a point, and the Weinstein splitting theorem puts the structure locally into the product of a symplectic factor and a transverse singular factor.
 
 A Poisson map preserves the bracket, a coisotropic submanifold is one whose vanishing ideal is a subalgebra, and the Poisson cohomology $H^\bullet_\pi(M)$ is the cohomology of the complex with differential $d_\pi = [\pi,\cdot]$; its degree zero is the Casimirs, its degree one the Poisson vector fields modulo Hamiltonian ones, and its degree two the infinitesimal deformations. For a nondegenerate structure it coincides with the de Rham cohomology, and in general it controls the deformation quantisation whose existence is Kontsevich's theorem.
 
@@ -223,7 +223,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 | $\mathrm{X}(M)$, $\Omega^k(M)$ | Smooth vector fields and $k$-forms |
 | $\{\cdot,\cdot\}$ | The Poisson bracket on $C^\infty(M)$; skew, Leibniz, Jacobi |
 | $\pi \in \Gamma(\Lambda^2TM)$ | Poisson bivector; $\{f,g\} = \pi(df,dg)$ |
-| $\pi^{ij}$ | Coefficients in $\pi = \frac12\sum_{ij}\pi^{ij}\partial_i\wedge\partial_j$, $\pi^{ij}=-\pi^{ji}$ |
+| $\pi^{ij}$ | Coefficients in $\pi = \frac12\sum_{ij}\pi^{ij}\partial/\partial x^i\wedge\partial/\partial x^j$, $\pi^{ij}=-\pi^{ji}$ |
 | $\pi^{\sharp} : T^*M\to TM$ | Anchor, $\beta(\pi^{\sharp}\alpha)=\pi(\alpha,\beta)$ |
 | $X_f = -\pi^{\sharp}(df)$ | Hamiltonian vector field of $f$ |
 | $\operatorname{rank}_x\pi$ | Rank of $\pi^{\sharp}_x$; even, constant on leaves |
@@ -231,7 +231,7 @@ A Poisson map preserves the bracket, a coisotropic submanifold is one whose vani
 | $[\pi,\pi]=0$ | The Poisson condition; equivalent to the Jacobi identity |
 | Casimir | $f$ with $\{f,g\}=0$ for all $g$; centre of $C^\infty(M)$ |
 | Symplectic leaf | Orbit under the Hamiltonian flows; carries a symplectic form |
-| $(q_i, p_i, y_j)$ | Weinstein splitting coordinates; $\pi = \sum\partial_{q_i}\wedge\partial_{p_i} + \frac12\sum\phi_{jk}(y)\partial_{y_j}\wedge\partial_{y_k}$ |
+| $(q_i, p_i, y_j)$ | Weinstein splitting coordinates; $\pi = \sum\partial/\partial q_i\wedge\partial/\partial p_i + \frac12\sum\phi_{jk}(y)\partial/\partial y_j\wedge\partial/\partial y_k$ |
 | $\mathrm{G}^*$, $\{f,g\}(\xi)=\langle\xi,[df,dg]\rangle$ | Lie–Poisson structure on the dual of a Lie algebra |
 | Poisson map $F$ | $\{f\circ F, g\circ F\} = \{f,g\}\circ F$ |
 | Coisotropic submanifold | Vanishing ideal closed under the bracket; $\pi^{\sharp}(TC^{\circ})\subseteq TC$ |

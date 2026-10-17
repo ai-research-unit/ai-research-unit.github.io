@@ -36,7 +36,7 @@ Thus $\mathbb{Z}[x]$ is simultaneously the exact object at the boundary of the B
 
 ## The Boundary at Commutativity
 
-The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is a unit, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $e_1e_2 = -e_2e_1$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in *List of Structures from Rings to Division Rings*, and the division-ring property itself in *Division Rings*.
+The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is a unit, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $\vec e_x \vec e_y = -\vec e_y \vec e_x$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in *List of Structures from Rings to Division Rings*, and the division-ring property itself in *Division Rings*.
 
 ## The Boundary at Reducedness
 
@@ -92,7 +92,6 @@ The free algebra is the strongest domain at which the passage to a division ring
 |---|---|---|
 | $M_2(\mathbb{R})$ | it fails commutativity, but it also has zero divisors, so it is not maximal before a single failure | *Matrix Algebras* |
 | $\mathbb{B}$ | it has zero divisors and is not commutative; it is not maximal before any one property of the ladder | *Zero Divisors of the Biquaternion Algebra* |
-| $\mathbb{O}$ | not a ring, so no rung of the ladder applies | *Octonion Algebra* |
 | the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 
 ## Summary

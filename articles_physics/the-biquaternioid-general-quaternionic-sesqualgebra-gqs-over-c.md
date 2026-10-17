@@ -2,18 +2,18 @@
 
 ## Introduction
 
-The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **general quaternionic sesqualgebra**, written $\mathrm{GQS}$, whose product is the plain product with the natural conjugation inserted into its first slot and the star into its second, $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$. It is the fourth of the four general products, and its job in the framework is **gauge**: its algebraic norm is the indefinite Krein form, its isometry group is $U(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$, and its pairing is the one a gauge calibration is compared with.
+The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the **general quaternionic sesqualgebra**, written $\mathrm{GQS}$, whose product is the plain product with the natural conjugation inserted into its first slot and the star into its second, $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$. It is the fourth of the four general products, and its job in the framework is **gauge**: its algebraic norm is the indefinite Krein form, its isometry group is $\mathrm{U}(1,3)$ over $\mathbb{C}$ and $O(2,6)$ over $\mathbb{R}$, and its pairing is the one a gauge calibration is compared with.
 
 The mathematics of the structure is owned by the group *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$; the fundamental symmetry is $J={}^{\natural}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$; the fundamental symmetry is $J={}^{\natural}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-sesquilinear, and it is not associative. It is the fourth product of the four general products, the one that conjugates both slots. Owner: *Introduction to the General Quaternionic Sesqualgebra*.
-- **The absence of a unit.** Neither slot has a unit: $e_0\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_0=\tilde X^{\natural}$, so the structure is unital on no side. Owner: *The Two One-Sided Actions and the Absence of a Unit*.
+- **The absence of a unit.** Neither slot has a unit: $e_t\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_t=\tilde X^{\natural}$, so the structure is unital on no side. Owner: *The Two One-Sided Actions and the Absence of a Unit*.
 - **The algebraic norm and invertibility.** The norm is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, indefinite, of inertia $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; the invertibility criterion of the structure and its one-sided inverses. Owner: *Norm and Invertibility in the General Quaternionic Sesqualgebra*.
 - **The square and its two halves.** The square of the product splits into a Hermitian and an anti-Hermitian half, the two products $\mathrm{SQS}$ and $\mathrm{AQS}$. Owner: *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
 - **Zero divisors.** The zero-divisor set of the structure, and the null set of $\langle\tilde P,\tilde Q\rangle_{\natural*}$ that it contains. Owner: *Zero Divisors of the General Quaternionic Sesqualgebra*.
@@ -41,7 +41,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ## Physical Interpretation
 
-- **The band is the operator layer of an indefinite-metric theory.** The form is the Krein form, its isometry group is $U(1,3)$, and the adjoint it defines is the indefinite adjoint; the definite Hermitian adjoint with which the observables of the framework are read is a different operation on the same algebra, and an indefinite metric forces the two apart.
+- **The band is the operator layer of an indefinite-metric theory.** The form is the Krein form, its isometry group is $\mathrm{U}(1,3)$, and the adjoint it defines is the indefinite adjoint; the definite Hermitian adjoint with which the observables of the framework are read is a different operation on the same algebra, and an indefinite metric forces the two apart.
 - **The gauge calibration is the pairing of transformations and not of states.** The signature is indefinite, so it selects no direction of positivity, which is why a gauge calibration can compare two internal frames and cannot rank them. The transformations of the band are the metric-preserving ones: the central phases are the transformations of the first kind, the norm-one sandwiches are the transformations of the internal frame, and the full isometry group is larger than either.
 - **The band is a structure of admissible transformations and not of admissible states.** The null and negative directions of the metric are exactly the directions a gauge metric cannot normalise; below in the corpus the zero-divisor cone is at once the locus of light and the boundary of the state space, and the gauge side and the state side are two structures rather than one because positivity is what makes the difference.
 - **The structure is a group-like object among a structure of states.** Positivity makes a state space and the absence of a cone makes the internal action a group without states; read on the monoid, the same distinction separates the invertible maps from the non-invertible ones — a gauge structure is made of units and a process is made of arbitrary maps, which is where the direction of a process lives.
@@ -51,19 +51,19 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ## Summary
 
-The biquaternioid general quaternionic sesqualgebra is the structure $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ over $\mathbb{C}$, the gauge band of the framework: sesquilinear, non-associative, unital on no side, with the indefinite Krein norm $\langle\tilde P,\tilde Q\rangle_{\natural*}$ of inertia $(1,3)$ over $\mathbb{C}$, the fundamental symmetry $J={}^{\natural}$, the isometry group $U(1,3)$ and no state cone. Its ternary product fails the Jordan triple identity, its adjoint is the indefinite one, and its canonical reading is that the framework's transformations are compared by an indefinite metric while its states are normalised by a definite one. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
+The biquaternioid general quaternionic sesqualgebra is the structure $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ over $\mathbb{C}$, the gauge band of the framework: sesquilinear, non-associative, unital on no side, with the indefinite Krein norm $\langle\tilde P,\tilde Q\rangle_{\natural*}$ of inertia $(1,3)$ over $\mathbb{C}$, the fundamental symmetry $J={}^{\natural}$, the isometry group $\mathrm{U}(1,3)$ and no state cone. Its ternary product fails the Jordan triple identity, its adjoint is the indefinite one, and its canonical reading is that the framework's transformations are compared by an indefinite metric while its states are normalised by a definite one. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the fourth product; the general quaternionic sesquilinear product, $\mathrm{GQS}$ |
-| $e_0\star\tilde X=\tilde X^{*}$; $\tilde X\star e_0=\tilde X^{\natural}$ | no unit on either side |
+| $e_t\star\tilde X=\tilde X^{*}$; $\tilde X\star e_t=\tilde X^{\natural}$ | no unit on either side |
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the indefinite (Krein) form |
-| $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert Q_0\rvert^{2}-\lvert\vec Q\rvert^{2}$ | the diagonal value; the Krein invariant |
+| $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}$ | the diagonal value; the Krein invariant |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector |
 | $(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | the inertia and the real signature |
-| $U(1,3)$, $O(2,6)$ | the isometry group and the larger real isometry group |
+| $\mathrm{U}(1,3)$, $O(2,6)$ | the isometry group and the larger real isometry group |
 | $J={}^{\natural}$ | the fundamental symmetry |
 | $\mathrm{SQS}$, $\mathrm{AQS}$ | the Hermitian and the anti-Hermitian halves of the square |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |

@@ -4,87 +4,87 @@
 
 This article is a **worked exercise** on the geometry of the qubit state space. It is a set of six problems on one theme, and it applies the state-space results established in the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*. The reader is assumed to have read that article; the exercise exists precisely to test it, so nothing is carried over except what that article establishes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$, and $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$ and the centre is $\mathbb{C}_{\mathbb{B}}$. The trace of an element of $\mathbb{M}_+$ is twice its scalar part, $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
 
 **Assumed results.** From the parent article we take, without rederivation, the following. A state is an element
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\vec r\bigr), \qquad \vec r = r_1 e_1 + r_2 e_2 + r_3 e_3 \in \mathbb{R}^3,
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z \in \mathbb{R}^3,
 $$
 
-with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_0$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
+with $\vec r$ the **Bloch vector**; it is a state exactly when $|\vec r| \leq 1$, i.e. when it lies in the closed unit ball $B^3$. The biquaternion norm on the trace-one slice is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac{1}{4}(1 - |\vec r|^2)e_t$. The eigenvalues are $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|)$. The purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the linear entropy is $S_{\mathrm{lin}}(\tilde{\rho}) = 1 - \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 - |\vec r|^2)$. The von Neumann entropy is $S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$. The trace pairing on the slice is
 
 $$
-\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_0 + i\vec s\bigr),
+\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr), \qquad \tilde{\sigma} = \tfrac{1}{2}\bigl(e_t + i\vec s\bigr),
 $$
 
-the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
+the squared Hilbert–Schmidt distance is $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = \tfrac{1}{2}|\vec r-\vec s|^2$, the Uhlmann transition probability is $\tfrac{1}{2}(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)})$, and convex combinations act on Bloch vectors by the same weights. The pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $|\vec u| = 1$, forming the boundary sphere, and the maximally mixed state is the centre $\vec r = 0$.
 
 **What is to be shown.** Six problems: (1) the parametrisation of a mixed state by its Bloch vector; (2) purity, linear entropy, and von Neumann entropy for explicit states; (3) the geometry of convex combinations; (4) the metric and distinguishability structure; (5) the centre and the boundary; (6) when two Bloch vectors give identical or orthogonal states. Each is solved in full, and numerical values are given where they aid the check.
 
 ## Problem 1: Parametrising a Mixed State by Its Bloch Vector
 
-**Problem.** (a) A qubit is prepared by mixing the spin-up and spin-down states along the $z$-axis with probabilities $\tfrac34$ and $\tfrac14$. Write the state in the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ and read off $\vec r$. (b) Conversely, for $\vec r = \tfrac12(e_1 + e_2)$, write $\tilde{\rho}$ and its spectral decomposition. (c) Verify that under the isomorphism $e_j \mapsto -i\sigma_j$ the state maps to $\tfrac12(I + \vec r\cdot\boldsymbol{\sigma})$, and identify the components $r_k$.
+**Problem.** (a) A qubit is prepared by mixing the spin-up and spin-down states along the $z$-axis with probabilities $\tfrac34$ and $\tfrac14$. Write the state in the form $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ and read off $\vec r$. (b) Conversely, for $\vec r = \tfrac12(\vec e_x + \vec e_y)$, write $\tilde{\rho}$ and its spectral decomposition. (c) Verify that under the isomorphism $\vec e_\mu \mapsto -i\sigma_\mu$ the state maps to $\tfrac12(I + \vec r\cdot\boldsymbol{\sigma})$, and identify the components $r_\mu$.
 
 **Solution.** (a) The two pure states along $\pm z$ are the idempotents
 
 $$
-\tilde\Pi_1(e_3) = \tfrac{1}{2}\bigl(e_0 + i e_3\bigr), \qquad \tilde\Pi_2(e_3) = \tilde\Pi_1(-e_3) = \tfrac{1}{2}\bigl(e_0 - i e_3\bigr).
+\tilde\Pi_1(\vec e_z) = \tfrac{1}{2}\bigl(e_t + i \vec e_z\bigr), \qquad \tilde\Pi_2(\vec e_z) = \tilde\Pi_1(-\vec e_z) = \tfrac{1}{2}\bigl(e_t - i \vec e_z\bigr).
 $$
 
-The mixture is a convex combination, so its Bloch vector is the same weighted combination of $e_3$ and $-e_3$:
+The mixture is a convex combination, so its Bloch vector is the same weighted combination of $\vec e_z$ and $-\vec e_z$:
 
 $$
-\tilde{\rho} = \tfrac34 \tilde\Pi_1(e_3) + \tfrac14 \tilde\Pi_2(e_3)
-= \tfrac{3}{8}\bigl(e_0 + ie_3\bigr) + \tfrac{1}{8}\bigl(e_0 - ie_3\bigr)
-= \tfrac12 e_0 + \tfrac14 i e_3
-= \tfrac12\Bigl(e_0 + i\,\tfrac12 e_3\Bigr).
+\tilde{\rho} = \tfrac34 \tilde\Pi_1(\vec e_z) + \tfrac14 \tilde\Pi_2(\vec e_z)
+= \tfrac{3}{8}\bigl(e_t + i\vec e_z\bigr) + \tfrac{1}{8}\bigl(e_t - i\vec e_z\bigr)
+= \tfrac12 e_t + \tfrac14 i \vec e_z
+= \tfrac12\Bigl(e_t + i\,\tfrac12 \vec e_z\Bigr).
 $$
 
-Hence $\vec r = \tfrac12 e_3$, with $|\vec r| = \tfrac12 \leq 1$. The state is mixed, as expected from a nontrivial mixture, and its eigenvalues are $\lambda_\pm = \tfrac12(1 \pm \tfrac12) = \tfrac34, \tfrac14$: the two preparation probabilities, recovered from the Bloch vector.
+Hence $\vec r = \tfrac12 \vec e_z$, with $|\vec r| = \tfrac12 \leq 1$. The state is mixed, as expected from a nontrivial mixture, and its eigenvalues are $\lambda_\pm = \tfrac12(1 \pm \tfrac12) = \tfrac34, \tfrac14$: the two preparation probabilities, recovered from the Bloch vector.
 
-(b) For $\vec r = \tfrac12(e_1 + e_2)$ we have $|\vec r|^2 = \tfrac14 + \tfrac14 = \tfrac12$, so $|\vec r| = 1/\sqrt2$. The state is
+(b) For $\vec r = \tfrac12(\vec e_x + \vec e_y)$ we have $|\vec r|^2 = \tfrac14 + \tfrac14 = \tfrac12$, so $|\vec r| = 1/\sqrt2$. The state is
 
 $$
-\tilde{\rho} = \tfrac12\Bigl(e_0 + i\,\tfrac12(e_1 + e_2)\Bigr) = \tfrac12 e_0 + \tfrac14 i(e_1 + e_2).
+\tilde{\rho} = \tfrac12\Bigl(e_t + i\,\tfrac12(\vec e_x + \vec e_y)\Bigr) = \tfrac12 e_t + \tfrac14 i(\vec e_x + \vec e_y).
 $$
 
-With $\vec u_r = \vec r/|\vec r| = (e_1 + e_2)/\sqrt2$ and $\lambda_\pm = \tfrac12(1 \pm 1/\sqrt2)$, the spectral decomposition is
+With $\vec u_r = \vec r/|\vec r| = (\vec e_x + \vec e_y)/\sqrt2$ and $\lambda_\pm = \tfrac12(1 \pm 1/\sqrt2)$, the spectral decomposition is
 
 $$
 \tilde{\rho} = \lambda_+ \tilde\Pi_1(\vec u_r) + \lambda_- \tilde\Pi_2(\vec u_r),
 \qquad
-\tilde\Pi_{1,2}(\vec u_r) = \tfrac12\bigl(e_0 \pm i\vec u_r\bigr).
+\tilde\Pi_{1,2}(\vec u_r) = \tfrac12\bigl(e_t \pm i\vec u_r\bigr).
 $$
 
 This is correct because the two idempotents reconstruct the state,
 
 $$
 \lambda_+ \tilde\Pi_1(\vec u_r) + \lambda_- \tilde\Pi_2(\vec u_r)
-= \tfrac12(\lambda_+ + \lambda_-)e_0 + \tfrac12(\lambda_+ - \lambda_-) i\vec u_r
-= \tfrac12 e_0 + \tfrac{1}{2\sqrt2}\, i\,\frac{e_1 + e_2}{\sqrt2}
-= \tfrac12 e_0 + \tfrac14 i(e_1 + e_2),
+= \tfrac12(\lambda_+ + \lambda_-)e_t + \tfrac12(\lambda_+ - \lambda_-) i\vec u_r
+= \tfrac12 e_t + \tfrac{1}{2\sqrt2}\, i\,\frac{\vec e_x + \vec e_y}{\sqrt2}
+= \tfrac12 e_t + \tfrac14 i(\vec e_x + \vec e_y),
 $$
 
 where we used $\lambda_+ + \lambda_- = 1$ and $\lambda_+ - \lambda_- = 1/\sqrt2$. Every mixed state is thus a mixture of two orthogonal pure states along its own Bloch direction, with weights fixed by the radius.
 
-(c) Since $e_0 \mapsto I$ and $e_j \mapsto -i\sigma_j$, we have $i e_j \mapsto i(-i\sigma_j) = \sigma_j$, so
+(c) Since $e_t \mapsto I$ and $\vec e_\mu \mapsto -i\sigma_\mu$, we have $i \vec e_\mu \mapsto i(-i\sigma_\mu) = \sigma_\mu$, so
 
 $$
-\tilde{\rho} = \tfrac12\bigl(e_0 + i\textstyle\sum_j r_j e_j\bigr) \;\longmapsto\; \tfrac12\Bigl(I + \sum_j r_j \sigma_j\Bigr) = \tfrac12\bigl(I + \vec r\cdot\boldsymbol{\sigma}\bigr),
+\tilde{\rho} = \tfrac12\bigl(e_t + i\textstyle\sum_\mu r_\mu \vec e_\mu\bigr) \;\longmapsto\; \tfrac12\Bigl(I + \sum_\mu r_\mu \sigma_\mu\Bigr) = \tfrac12\bigl(I + \vec r\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the trace pairing with the observable $i e_k \mapsto \sigma_k$,
+the standard Bloch parametrisation of a qubit density matrix. The components are the Pauli expectations: using the trace pairing with the observable $i \vec e_\mu \mapsto \sigma_\mu$,
 
 $$
-r_k = \mathrm{Tr}\bigl(\tilde{\rho}\,(i e_k)\bigr) = \langle \sigma_k\rangle_{\tilde{\rho}},
+r_\mu = \mathrm{Tr}\bigl(\tilde{\rho}\,(i \vec e_\mu)\bigr) = \langle \sigma_\mu\rangle_{\tilde{\rho}},
 $$
 
 so the Bloch vector *is* the vector of single-qubit expectation values, $\vec r = (\langle\sigma_1\rangle, \langle\sigma_2\rangle, \langle\sigma_3\rangle)$. In particular, measuring the spin along a unit direction $\vec u$ gives outcomes with probabilities $p_\pm = \tfrac12(1 \pm \vec u\cdot\vec r)$, so the projection of $\vec r$ along $\vec u$ is the bias of the measurement.
 
 ## Problem 2: Purity, Linear Entropy, and von Neumann Entropy
 
-**Problem.** For each of the following states compute the purity $\mathrm{Tr}(\tilde{\rho}^2)$, the linear entropy $S_{\mathrm{lin}}$, and the von Neumann entropy $S(\tilde{\rho})$: (a) the pure state with $\vec u = (1,1,1)/\sqrt3$; (b) the maximally mixed state; (c) the state with $\vec r = \tfrac12 e_3$; (d) the state with $\vec r = \tfrac12(e_1 + e_2)$. Confirm that all three quantities depend on the state only through $|\vec r|$.
+**Problem.** For each of the following states compute the purity $\mathrm{Tr}(\tilde{\rho}^2)$, the linear entropy $S_{\mathrm{lin}}$, and the von Neumann entropy $S(\tilde{\rho})$: (a) the pure state with $\vec u = (1,1,1)/\sqrt3$; (b) the maximally mixed state; (c) the state with $\vec r = \tfrac12 \vec e_z$; (d) the state with $\vec r = \tfrac12(\vec e_x + \vec e_y)$. Confirm that all three quantities depend on the state only through $|\vec r|$.
 
 **Solution.** All three quantities are functions of the radius alone:
 
@@ -109,7 +109,7 @@ $$
 
 This is the maximum on the ball.
 
-**(c) $\vec r = \tfrac12 e_3$, $|\vec r| = \tfrac12$.** The purity is $\tfrac12(1 + \tfrac14) = \tfrac58$, the linear entropy is $1 - \tfrac58 = \tfrac38$, and the eigenvalues are $\lambda_\pm = \tfrac34, \tfrac14$, so
+**(c) $\vec r = \tfrac12 \vec e_z$, $|\vec r| = \tfrac12$.** The purity is $\tfrac12(1 + \tfrac14) = \tfrac58$, the linear entropy is $1 - \tfrac58 = \tfrac38$, and the eigenvalues are $\lambda_\pm = \tfrac34, \tfrac14$, so
 
 $$
 S = -\tfrac34\log\tfrac34 - \tfrac14\log\tfrac14
@@ -117,7 +117,7 @@ S = -\tfrac34\log\tfrac34 - \tfrac14\log\tfrac14
 \approx 0.562335 \ \text{nats} \approx 0.811278 \ \text{bits}.
 $$
 
-**(d) $\vec r = \tfrac12(e_1+e_2)$, $|\vec r| = 1/\sqrt2$.** The purity is $\tfrac12(1 + \tfrac12) = \tfrac34$, the linear entropy is $\tfrac14$, and with $\lambda_\pm = \tfrac12(1 \pm 1/\sqrt2) \approx 0.853553, 0.146447$,
+**(d) $\vec r = \tfrac12(\vec e_x+\vec e_y)$, $|\vec r| = 1/\sqrt2$.** The purity is $\tfrac12(1 + \tfrac12) = \tfrac34$, the linear entropy is $\tfrac14$, and with $\lambda_\pm = \tfrac12(1 \pm 1/\sqrt2) \approx 0.853553, 0.146447$,
 
 $$
 S \approx 0.416496 \ \text{nats} \approx 0.600876 \ \text{bits}.
@@ -129,10 +129,10 @@ Comparing (c) and (d) illustrates the monotonicity: as the radius grows from $\t
 
 **Problem.** (a) Show that a convex combination of states is a state whose Bloch vector is the same convex combination of the Bloch vectors. (b) For a mixture of two pure states with Bloch directions $\vec u, \vec u_\nu$ at angle $\theta$, with weights $p$ and $1-p$, compute the radius and the purity of the mixture. (c) Determine exactly when such a mixture is again pure. (d) Evaluate the mixture of the pure states along $z$ and along $x$ with equal weights, and the mixture with weights $\tfrac34, \tfrac14$.
 
-**Solution.** (a) Write $\tilde{\rho}_i = \tfrac12(e_0 + i\vec r_i)$ and let $p_i \geq 0$ with $\sum_i p_i = 1$. Then
+**Solution.** (a) Write $\tilde{\rho}_i = \tfrac12(e_t + i\vec r_i)$ and let $p_i \geq 0$ with $\sum_i p_i = 1$. Then
 
 $$
-\sum_i p_i \tilde{\rho}_i = \tfrac12\sum_i p_i e_0 + \tfrac12 i \sum_i p_i \vec r_i = \tfrac12\Bigl(e_0 + i \sum_i p_i \vec r_i\Bigr).
+\sum_i p_i \tilde{\rho}_i = \tfrac12\sum_i p_i e_t + \tfrac12 i \sum_i p_i \vec r_i = \tfrac12\Bigl(e_t + i \sum_i p_i \vec r_i\Bigr).
 $$
 
 Since each $\tilde{\rho}_i$ is Hermitian of trace one, so is the combination, and its Bloch vector is $\vec r = \sum_i p_i \vec r_i$. By convexity of the ball, $|\vec r| \leq \sum_i p_i |\vec r_i| \leq 1$, so the combination is again a state. The map $\vec r \leftrightarrow \tilde{\rho}$ is affine, so the ball is a faithful affine model of the state space.
@@ -154,23 +154,23 @@ $$
 
 (c) From the second form, $|\vec r| = 1$ requires $p(1-p)(1-\cos\theta) = 0$, i.e. $p = 0$, or $p = 1$, or $\cos\theta = 1$ (the two pure states coincide). Apart from these degenerate cases the mixture is **strictly interior**: $|\vec r| < 1$, and the ball is strictly convex. In particular, a nontrivial mixture of two distinct pure states is never pure.
 
-(d) Take $\vec u = e_3$ and $\vec u_\nu = e_1$, so $\theta = \pi/2$ and $\cos\theta = 0$. With $p = \tfrac12$,
+(d) Take $\vec u = \vec e_z$ and $\vec u_\nu = \vec e_x$, so $\theta = \pi/2$ and $\cos\theta = 0$. With $p = \tfrac12$,
 
 $$
-\vec r = \tfrac12(e_1 + e_3), \qquad |\vec r|^2 = 1 - 2\cdot\tfrac14\cdot 1 = \tfrac12, \qquad |\vec r| = 1/\sqrt2,
+\vec r = \tfrac12(\vec e_x + \vec e_z), \qquad |\vec r|^2 = 1 - 2\cdot\tfrac14\cdot 1 = \tfrac12, \qquad |\vec r| = 1/\sqrt2,
 $$
 
 so the purity is $\tfrac34$, the linear entropy is $\tfrac14$, and the entropy is about $0.416496$ nats — the value found in Problem 2(d), as it must be. With $p = \tfrac34$,
 
 $$
-\vec r = \tfrac34 e_3 + \tfrac14 e_1, \qquad |\vec r|^2 = 1 - 2\cdot\tfrac34\cdot\tfrac14 = \tfrac58,
+\vec r = \tfrac34 \vec e_z + \tfrac14 \vec e_x, \qquad |\vec r|^2 = 1 - 2\cdot\tfrac34\cdot\tfrac14 = \tfrac58,
 $$
 
 so the purity is $\tfrac12(1 + \tfrac58) = \tfrac{13}{16}$ and the linear entropy is $\tfrac{3}{16}$. A useful special case is $\theta = \pi$ (complementary pure states $\vec u_\nu = -\vec u$): then $\vec r = (2p-1)\vec u$, $|\vec r| = |2p-1|$, and the equal mixture $p = \tfrac12$ gives $\vec r = 0$, the maximally mixed state, independently of the axis $\vec u$.
 
 ## Problem 4: The Metric and Distinguishability Structure
 
-**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{\rho},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{\rho}-\tilde{\sigma}|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\vec r = \tfrac12 e_3$ and $\vec s = \tfrac12 e_1$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
+**Problem.** (a) Compute the squared Hilbert–Schmidt distance $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2)$ in terms of the Bloch vectors. (b) Compute the trace distance $D(\tilde{\rho},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{\rho}-\tilde{\sigma}|$, verify the parent's formula for the distance to the centre, and relate the two distances. (c) Evaluate both for $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$, and compute the trace distance between two pure states as a function of the angle. (d) State the range of $D$ on the ball.
 
 **Solution.** (a) The difference of two states is
 
@@ -178,29 +178,29 @@ $$
 \tilde{\rho} - \tilde{\sigma} = \tfrac12 i(\vec r - \vec s), \qquad \vec r - \vec s \in \mathbb{H}_{\mathbb{B}} \text{ a pure real quaternion.}
 $$
 
-For a pure real quaternion $\vec q = \vec r - \vec s$ one has $\vec q^2 = -|\vec q|^2 e_0$, hence
+For a pure real quaternion $\vec q = \vec r - \vec s$ one has $\vec q^2 = -|\vec q|^2 e_t$, hence
 
 $$
-(\tilde{\rho} - \tilde{\sigma})^2 = \tfrac14 (i\vec q)^2 = -\tfrac14 \vec q^2 = \tfrac14 |\vec r-\vec s|^2\, e_0 .
+(\tilde{\rho} - \tilde{\sigma})^2 = \tfrac14 (i\vec q)^2 = -\tfrac14 \vec q^2 = \tfrac14 |\vec r-\vec s|^2\, e_t .
 $$
 
-Taking the trace, $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = 2\cdot\tfrac14|\vec r-\vec s|^2 = \tfrac12|\vec r-\vec s|^2$, which is the parent's Hilbert–Schmidt formula. Since $(\tilde{\rho}-\tilde{\sigma})^2$ is a scalar multiple of $e_0$, the traceless difference $\tilde{\rho}-\tilde{\sigma}$ has eigenvalues $\pm\tfrac12|\vec r-\vec s|$.
+Taking the trace, $\mathrm{Tr}((\tilde{\rho}-\tilde{\sigma})^2) = 2\cdot\tfrac14|\vec r-\vec s|^2 = \tfrac12|\vec r-\vec s|^2$, which is the parent's Hilbert–Schmidt formula. Since $(\tilde{\rho}-\tilde{\sigma})^2$ is a scalar multiple of $e_t$, the traceless difference $\tilde{\rho}-\tilde{\sigma}$ has eigenvalues $\pm\tfrac12|\vec r-\vec s|$.
 
 (b) The absolute value is
 
 $$
-|\tilde{\rho}-\tilde{\sigma}| = \sqrt{(\tilde{\rho}-\tilde{\sigma})^2} = \tfrac12|\vec r-\vec s|\,e_0,
+|\tilde{\rho}-\tilde{\sigma}| = \sqrt{(\tilde{\rho}-\tilde{\sigma})^2} = \tfrac12|\vec r-\vec s|\,e_t,
 $$
 
 the positive square root in $\mathbb{M}_+$. Hence
 
 $$
 D(\tilde{\rho},\tilde{\sigma}) = \tfrac12\mathrm{Tr}|\tilde{\rho}-\tilde{\sigma}|
-= \tfrac12\cdot\tfrac12|\vec r-\vec s|\cdot\mathrm{Tr}(e_0)
+= \tfrac12\cdot\tfrac12|\vec r-\vec s|\cdot\mathrm{Tr}(e_t)
 = \tfrac12|\vec r-\vec s| .
 $$
 
-Setting $\vec s = 0$ recovers the parent's statement $D(\tilde{\rho},\tfrac12 e_0) = \tfrac12|\vec r|$. Comparing with (a), the trace distance and the Hilbert–Schmidt distance carry the same information on a qubit,
+Setting $\vec s = 0$ recovers the parent's statement $D(\tilde{\rho},\tfrac12 e_t) = \tfrac12|\vec r|$. Comparing with (a), the trace distance and the Hilbert–Schmidt distance carry the same information on a qubit,
 
 $$
 \mathrm{Tr}\bigl((\tilde{\rho}-\tilde{\sigma})^2\bigr) = 2\,D(\tilde{\rho},\tilde{\sigma})^2,
@@ -210,7 +210,7 @@ $$
 
 Both are monotone functions of the Euclidean separation $|\vec r-\vec s|$; the trace distance is the one with the operational meaning, being half the trace-norm difference of the two states.
 
-(c) For $\vec r = \tfrac12 e_3$ and $\vec s = \tfrac12 e_1$, $|\vec r-\vec s| = \tfrac12\sqrt2 = 1/\sqrt2$, so the Hilbert–Schmidt distance squared is $\tfrac12\cdot\tfrac12 = \tfrac14$, and
+(c) For $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$, $|\vec r-\vec s| = \tfrac12\sqrt2 = 1/\sqrt2$, so the Hilbert–Schmidt distance squared is $\tfrac12\cdot\tfrac12 = \tfrac14$, and
 
 $$
 D = \tfrac12\cdot\tfrac1{\sqrt2} = \frac{1}{2\sqrt2} \approx 0.353553 .
@@ -239,15 +239,15 @@ so the two notions of separation are complementary on the boundary: coincident d
 **Solution.** (a) The centre is $\vec r = 0$, i.e.
 
 $$
-\tilde{\rho} = \tfrac12 e_0,
+\tilde{\rho} = \tfrac12 e_t,
 $$
 
-the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_0$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_1(\vec u) + \tfrac12\tilde\Pi_2(\vec u)$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $U(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is
+the maximally mixed state. Its purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+0) = \tfrac12$, the minimum on the ball; its linear entropy is $\tfrac12$, the maximum; its biquaternion norm is $\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14 e_t$, whose scalar coefficient $\tfrac14$ is the largest attainable on the slice; and its von Neumann entropy is $\log 2$, the maximum. In the spectral form it is the equal mixture $\tfrac12\tilde\Pi_1(\vec u) + \tfrac12\tilde\Pi_2(\vec u)$ of the complementary idempotents along **any** axis, and it is the unique state invariant under the full unitary group $\mathrm{U}(2)$, which acts on the ball by rotations. It is also the barycentre: the uniform average of the pure states over the boundary sphere is
 
 $$
 \frac{1}{4\pi}\int_{S^2}\tilde\Pi(\vec u)\,d\Omega
-= \tfrac12\Bigl(e_0 + i\,\frac{1}{4\pi}\int_{S^2}\vec u\,d\Omega\Bigr)
-= \tfrac12 e_0,
+= \tfrac12\Bigl(e_t + i\,\frac{1}{4\pi}\int_{S^2}\vec u\,d\Omega\Bigr)
+= \tfrac12 e_t,
 $$
 
 because the mean of the unit vector over the sphere vanishes.
@@ -255,26 +255,26 @@ because the mean of the unit vector over the sphere vanishes.
 (b) The boundary is $|\vec r| = 1$. For these states the biquaternion norm vanishes,
 
 $$
-\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14(1 - |\vec r|^2)e_0 = 0 \quad\Longleftrightarrow\quad |\vec r| = 1,
+\tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14(1 - |\vec r|^2)e_t = 0 \quad\Longleftrightarrow\quad |\vec r| = 1,
 $$
 
 so a boundary state is a zero divisor of $\mathbb{B}$; the deviation from idempotency,
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac14\bigl(|\vec r|^2 - 1\bigr)e_0,
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac14\bigl(|\vec r|^2 - 1\bigr)e_t,
 $$
 
-vanishes exactly there, so a boundary state is an idempotent, hence a rank-one projection; and its eigenvalues are $\lambda_\pm = 1, 0$, so its purity is $1$ and its entropy $0$. The boundary is parametrized by the unit sphere $S^2$: $\vec r = \vec u$ gives the idempotent $\tilde\Pi_1(\vec u)$, and $-\vec u$ gives its orthogonal complement $\tilde\Pi_2(\vec u)$, with $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ and $\tilde\Pi_1\tilde\Pi_2 = 0$.
+vanishes exactly there, so a boundary state is an idempotent, hence a rank-one projection; and its eigenvalues are $\lambda_\pm = 1, 0$, so its purity is $1$ and its entropy $0$. The boundary is parametrized by the unit sphere $S^2$: $\vec r = \vec u$ gives the idempotent $\tilde\Pi_1(\vec u)$, and $-\vec u$ gives its orthogonal complement $\tilde\Pi_2(\vec u)$, with $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$.
 
 A boundary state is an **extreme point** of the ball. Suppose $\tilde{P} = \lambda\tilde{\rho}_1 + (1-\lambda)\tilde{\rho}_2$ with $0 < \lambda < 1$. Then $\vec r = \lambda\vec r_1 + (1-\lambda)\vec r_2$ with $|\vec r_1|, |\vec r_2| \leq 1$ and $|\vec r| = 1$. By the strict convexity of the Euclidean norm, equality $|\vec r| = 1$ forces $\vec r_1 = \vec r_2 = \vec r$, so $\tilde{\rho}_1 = \tilde{\rho}_2 = \tilde{P}$: no boundary state is a nontrivial mixture. Conversely, every interior state is a nontrivial mixture (Problem 3), so the extreme points of the ball are exactly the pure states.
 
-(c) On the trace-one hyperplane an element $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ has eigenvalues $\lambda_\pm = \tfrac12(1 \pm |\vec r|)$. If $|\vec r| > 1$ then $\lambda_- = \tfrac12(1 - |\vec r|) < 0$, so $\tilde{\rho}$ is Hermitian of trace one but not positive semidefinite, and is not a state. Its biquaternion norm is $\tfrac14(1 - |\vec r|^2)e_0$ with negative scalar coefficient, so it lies in the spacelike region outside the future cone. For instance $\vec r = 2e_3$ gives $\lambda_\pm = \tfrac32, -\tfrac12$. The ball $|\vec r| \leq 1$ is thus exactly the positivity domain on the slice.
+(c) On the trace-one hyperplane an element $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ has eigenvalues $\lambda_\pm = \tfrac12(1 \pm |\vec r|)$. If $|\vec r| > 1$ then $\lambda_- = \tfrac12(1 - |\vec r|) < 0$, so $\tilde{\rho}$ is Hermitian of trace one but not positive semidefinite, and is not a state. Its biquaternion norm is $\tfrac14(1 - |\vec r|^2)e_t$ with negative scalar coefficient, so it lies in the spacelike region outside the future cone. For instance $\vec r = 2\vec e_z$ gives $\lambda_\pm = \tfrac32, -\tfrac12$. The ball $|\vec r| \leq 1$ is thus exactly the positivity domain on the slice.
 
 ## Problem 6: Identical and Orthogonal States
 
 **Problem.** (a) Determine when two states are identical. (b) Determine when two states have orthogonal support, i.e. when $\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = 0$. (c) Specialize to pure states and express the result in terms of the angle. (d) Show that the Uhlmann transition probability vanishes under the same condition.
 
-**Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{\rho} - \tilde{\sigma} = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{\rho} = \tilde{\sigma}$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $U(2)$.
+**Solution.** (a) Two states are identical exactly when their Bloch vectors are equal: from $\tilde{\rho} - \tilde{\sigma} = \tfrac12 i(\vec r-\vec s)$ we have $\tilde{\rho} = \tilde{\sigma}$ iff $\vec r = \vec s$. In that case the Hilbert–Schmidt and trace distances vanish, the transition probability is $1$, and all radius-dependent quantities (purity, entropies) coincide. Conversely, equal purity does **not** imply identical states: by Problem 2 all states of a given radius share the same purity and entropy, and they are rotated into one another by $\mathrm{U}(2)$.
 
 (b) The trace pairing on the slice is $\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac12(1 + \vec r\cdot\vec s)$. Because $\tilde{\rho},\tilde{\sigma}$ are positive and of trace one, orthogonality of their supports is equivalent to the vanishing of this pairing. Thus
 
@@ -298,7 +298,7 @@ $$
 = \tfrac12\bigl(1 + \vec u\cdot\vec u_\nu\bigr) = \cos^2\frac{\theta}{2},
 $$
 
-where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\vec u_\nu = -\vec u$). Equivalently, $\vec u\cdot\vec u_\nu = -1$, the same condition as in (b). As a concrete check, take $\vec u = e_3$, $\vec u_\nu = -e_3$: then $\tilde\Pi_1(e_3)\tilde\Pi_2(e_3) = 0$ and $\mathrm{Tr}(\tilde\Pi_1(e_3)\tilde\Pi_2(e_3)) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_1 + \tilde\Pi_2 = e_0$.
+where $\theta$ is the angle between the Bloch directions. It equals $1$ for $\theta = 0$ (identical states) and $0$ for $\theta = \pi$ (orthogonal states, $\vec u_\nu = -\vec u$). Equivalently, $\vec u\cdot\vec u_\nu = -1$, the same condition as in (b). As a concrete check, take $\vec u = \vec e_z$, $\vec u_\nu = -\vec e_z$: then $\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z) = 0$ and $\mathrm{Tr}(\tilde\Pi_1(\vec e_z)\tilde\Pi_2(\vec e_z)) = \tfrac12(1 - 1) = 0$, while $\tilde\Pi_1 + \tilde\Pi_2 = e_t$.
 
 (d) For general states the relevant overlap is the Uhlmann transition probability,
 
@@ -313,13 +313,13 @@ $$
 \vec r\cdot\vec s = -1 - \sqrt{\bigl(1-|\vec r|^2\bigr)\bigl(1-|\vec s|^2\bigr)} \leq -1 .
 $$
 
-Combined with $\vec r\cdot\vec s \geq -|\vec r|\,|\vec s| \geq -1$, every inequality is an equality, so $|\vec r| = |\vec s| = 1$, $\vec r\cdot\vec s = -1$, and $\vec s = -\vec r$ — the same pure antipodal pair. Hence the transition probability vanishes under exactly the same condition as orthogonal support, and for mixed states it is strictly positive: a mixed state is never perfectly distinguishable from another. For example, with $\vec r = \tfrac12 e_3$ and $\vec s = \tfrac12 e_1$ one has $\vec r\cdot\vec s = 0$ and $\sqrt{(1-\tfrac14)(1-\tfrac14)} = \tfrac34$, so $T = \tfrac12(1 + \tfrac34) = \tfrac78$, consistent with the nonzero trace distance $D = 1/(2\sqrt2)$ found in Problem 4.
+Combined with $\vec r\cdot\vec s \geq -|\vec r|\,|\vec s| \geq -1$, every inequality is an equality, so $|\vec r| = |\vec s| = 1$, $\vec r\cdot\vec s = -1$, and $\vec s = -\vec r$ — the same pure antipodal pair. Hence the transition probability vanishes under exactly the same condition as orthogonal support, and for mixed states it is strictly positive: a mixed state is never perfectly distinguishable from another. For example, with $\vec r = \tfrac12 \vec e_z$ and $\vec s = \tfrac12 \vec e_x$ one has $\vec r\cdot\vec s = 0$ and $\sqrt{(1-\tfrac14)(1-\tfrac14)} = \tfrac34$, so $T = \tfrac12(1 + \tfrac34) = \tfrac78$, consistent with the nonzero trace distance $D = 1/(2\sqrt2)$ found in Problem 4.
 
 ## Summary
 
 We have worked six problems on the geometry of the qubit state space, using only the state-space results of the parent article.
 
-**Parametrisation.** A state is $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_k = \langle\sigma_k\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.
+**Parametrisation.** A state is $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ with $|\vec r| \leq 1$; the components of $\vec r$ are the single-qubit expectation values $r_k = \langle\sigma_k\rangle$, and a measurement along $\vec u$ has outcomes $\tfrac12(1 \pm \vec u\cdot\vec r)$.
 
 **Purity and entropy.** Purity, linear entropy, and von Neumann entropy are functions of the radius alone: $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+|\vec r|^2)$, $S_{\mathrm{lin}} = \tfrac12(1-|\vec r|^2)$, and $S = -\sum_\pm\lambda_\pm\log\lambda_\pm$ with $\lambda_\pm = \tfrac12(1\pm|\vec r|)$.
 
@@ -327,7 +327,7 @@ We have worked six problems on the geometry of the qubit state space, using only
 
 **Metric.** The trace distance is $D = \tfrac12|\vec r-\vec s|$ and the squared Hilbert–Schmidt distance is $2D^2$. For pure states $D = \sin(\theta/2)$ and the transition probability is $\cos^2(\theta/2)$, so $D^2 + \mathrm{Tr}(\tilde{P}\tilde{Q}) = 1$.
 
-**Centre and boundary.** The centre is the maximally mixed state $\tfrac12 e_0$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\vec r| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\vec r| > 1$ are not states.
+**Centre and boundary.** The centre is the maximally mixed state $\tfrac12 e_t$, with minimal purity $\tfrac12$ and maximal entropy $\log 2$; the boundary $|\vec r| = 1$ consists of the pure states, equivalently the idempotents, the zero divisors, and the extreme points. Elements with $|\vec r| > 1$ are not states.
 
 **Identical and orthogonal.** Two states are identical iff $\vec r = \vec s$; they have orthogonal supports — and the Uhlmann transition probability vanishes — iff $\vec r\cdot\vec s = -1$, which forces $|\vec r| = |\vec s| = 1$ and $\vec s = -\vec r$. Only the two ends of a diameter are perfectly distinguishable.
 
@@ -336,14 +336,14 @@ We have worked six problems on the geometry of the qubit state space, using only
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre of $\mathbb{B}$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ |
-| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State with Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0 \pm i\vec u)$ | Pure-state idempotent, $|\vec u| = 1$ |
+| $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$ |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent, $|\vec u| = 1$ |
 | $\vec r\in B^3$, $|\vec r|\leq 1$ | Bloch ball |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1+|\vec r|^2)$ | Purity |
 | $S_{\mathrm{lin}} = 1-\mathrm{Tr}(\tilde{\rho}^2) = \tfrac12(1-|\vec r|^2)$ | Linear entropy |

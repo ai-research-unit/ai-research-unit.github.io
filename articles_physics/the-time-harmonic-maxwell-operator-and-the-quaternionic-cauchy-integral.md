@@ -14,7 +14,7 @@ The plan is the diagonalisation and then its consequences. The next section fixe
 
 ## The Time-Harmonic System in a Homogeneous Medium
 
-The convention is $\exp(-i\omega t)$, so that $\partial_t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
+The convention is $\exp(-i\omega t)$, so that $\partial/\partial t\to-i\omega$ and a monochromatic field is its complex amplitude. The medium is homogeneous and isotropic, and its response is carried by two possibly complex constants: the permittivity $\epsilon$ and the permeability $\mu$, so that the loss tangent of the dielectric and the inertia of the polarisation processes are both representable by making $\epsilon$ complex. The ohmic conduction of the medium enters separately, through the real conductivity $\sigma_*$, and the two are combined into a single **complex conductivity**
 
 $$
 \sigma:=\sigma_*-i\omega\epsilon ,
@@ -85,7 +85,7 @@ so that the curl in the first two equations of $(1)$ can be replaced by the full
 The spatial operator is the Moisil–Theodoresco operator of the series,
 
 $$
-D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3,
+D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z,
 \qquad
 D_3^2=-\Delta ,
 $$
@@ -224,15 +224,15 @@ $$
 be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\lambda$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta+\lambda)f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\lambda$ is the **direct sum of two rotated copies of $\ker N$**. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections
 
 $$
-Q_1+Q_2=I,
+Q_x+Q_y=I,
 \qquad
 Q_i^2=Q_i,
 \qquad
-Q_1Q_2=Q_2Q_1=0 ,
+Q_xQ_y=Q_yQ_x=0 ,
 \tag{15}
 $$
 
-built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,\lambda}:=Q_1(\mathcal{R}_\lambda)$ and $\mathcal{X}_{2,\lambda}:=Q_2(\mathcal{R}_\lambda)$ the theorem reads
+built from the matrices $A_i,B_i$ that realise the similarity $(11)$ in each of its two orientations; the projections are the two halves into which the diagonalisation splits the metaharmonic pairs. With $\mathcal{X}_{1,\lambda}:=Q_x(\mathcal{R}_\lambda)$ and $\mathcal{X}_{2,\lambda}:=Q_y(\mathcal{R}_\lambda)$ the theorem reads
 
 $$
 \mathcal{R}_\lambda
@@ -246,12 +246,12 @@ so that the general solution of the Helmholtz system is the sum of two **rotated
 The time-dependent version of the same decomposition is stated in the book and makes the shape of $(16)$ clear:
 
 $$
-\ker\Bigl(\frac{1}{c^2}\partial_t^2-\Delta\Bigr)
-=\ker\Bigl(\frac{1}{c}\partial_t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial_t-iD_3\Bigr),
+\ker\Bigl(\frac{1}{c^2}\partial^2/\partial t^2-\Delta\Bigr)
+=\ker\Bigl(\frac{1}{c}\partial/\partial t+iD_3\Bigr)\oplus\ker\Bigl(\frac{1}{c}\partial/\partial t-iD_3\Bigr),
 \tag{17}
 $$
 
-with the biquaternionic Maxwell operator $(1/c)\partial_t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
+with the biquaternionic Maxwell operator $(1/c)\partial/\partial t+iD_3$ of the time-dependent reduction. Every solution of the wave equation is the sum of a solution of the first-order operator and a solution of its conjugate, and the two summands are the two halves of the same diagonalisation. Equation $(16)$ is the time-harmonic analogue with $\alpha$ in place of the frequency and the rotated null-set of the generalised operator $N$ in place of the two first-order factors; in the lossless case, where the two chiral wavenumbers coincide, it is the statement that the Helmholtz field splits into the two circular polarisations.
 
 ## The Maxwell–Cauchy Kernel and the Integral Operators
 
@@ -275,7 +275,7 @@ $$
 \tag{19}
 $$
 
-the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\Theta_\alpha=(\Delta+\alpha^2)\Theta_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-\vec x/(4\pi\lvert\vec x\rvert^3)$ of the unshifted $D_3$.
+the identity following from $(13)$, since $(D_3\pm\alpha)\mathcal{K}_{\pm\alpha}=-(D_3\pm\alpha)(D_3\mp\alpha)\Theta_\alpha=(\Delta+\alpha^2)\Theta_\alpha=\delta$. The sign is the one verified in the sibling articles; the choice $\operatorname{Im}\alpha\ge0$ makes the kernel outgoing, and at $\alpha=0$ it degenerates to the classical spatial Cauchy kernel $-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/(4\pi\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^3)$ of the unshifted $D_3$.
 
 The kernel of the Maxwell operator is the same object carried through the rotation $(11)$. Conjugating the diagonal kernel by $C$,
 
@@ -331,12 +331,12 @@ $$
 
 and the corresponding formula for $\vec H$, which is the **Stratton–Chu formula** of classical electromagnetic theory. The interpretation is the point of the reformulation: the Stratton–Chu formula is the Cauchy integral formula for the electromagnetic field, its kernel is the fundamental solution of the first-order quaternionic operator, and the "source terms" are the Teodorescu transform of the current. The survey of the programme states the interpretation in exactly these words — the Stratton–Chu integrals "in their biquaternionic representation" are "a convolution of a biquaternionic fundamental solution of the Maxwell operator with the electromagnetic field", and their meaning "as a Cauchy integral formula for the electromagnetic field becomes transparent". What the vector form does not show, and what the quaternionic form makes explicit, is that the kernel is a single function rather than a matrix and that the boundary combination is the boundary value of a holomorphic object in a four-component algebra.
 
-The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\vec E,\vec H)$ satisfying $(1)$ in the sourceless case inside $\Omega$ and $\vec E|_\Gamma=\tilde e$, $\vec H|_\Gamma=\tilde h$ with Hölder data — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $\Phi|_\Gamma=\tilde e+b\,\tilde h$ and $\Psi|_\Gamma=\tilde e-b\,\tilde h$, the two conditions are
+The same theory solves the boundary-value problem, and it is worth recording because it is where both components of the quaternionic function are used. For the Dirichlet problem — find the pair $(\vec E,\vec H)$ satisfying $(1)$ in the sourceless case inside $\Omega$ and Hölder boundary values $\vec E_\Gamma=\vec E|_\Gamma$, $\vec H_\Gamma=\vec H|_\Gamma$ — the diagonalised problem is the pair of Dirichlet problems for the two shifted operators $D_3\mp\alpha$, one for each of the combinations $(10)$. Each is solvable exactly when its Plemelj condition holds, with the projectors $P_{\pm\alpha}=\frac12(I+S_{\pm\alpha})$ of the twin articles, and when both hold the solution is the integral representation $(24)$ with the fields replaced by their boundary values. For the sourceless problem, with the diagonalised boundary data $\Phi|_\Gamma=\vec E_\Gamma+b\,\vec H_\Gamma$ and $\Psi|_\Gamma=\vec E_\Gamma-b\,\vec H_\Gamma$, the two conditions are
 
 $$
-Q_{-\alpha}\bigl(\tilde e+b\,\tilde h\bigr)=0,
+Q_{-\alpha}\bigl(\vec E_\Gamma+b\,\vec H_\Gamma\bigr)=0,
 \qquad
-Q_{\alpha}\bigl(\tilde e-b\,\tilde h\bigr)=0
+Q_{\alpha}\bigl(\vec E_\Gamma-b\,\vec H_\Gamma\bigr)=0
 \qquad\text{on }\Gamma ,
 \qquad
 Q_{\pm\alpha}=I-P_{\pm\alpha},
@@ -350,9 +350,9 @@ The note states the same criterion in its announced form — the boundary data a
 For the exterior problem the same representation is closed by the **Silver–Müller radiation condition**,
 
 $$
-\vec E\wedge\frac{\vec x}{\lvert\vec x\rvert}+W\,\vec H=o\!\left(\frac{1}{\lvert\vec x\rvert}\right),
+\vec E\wedge\frac{x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert}+W\,\vec H=o\!\left(\frac{1}{\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert}\right),
 \qquad
-\lvert\vec x\rvert\to\infty ,
+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert\to\infty ,
 \qquad
 W=\sqrt{\frac{\mu}{\epsilon}} ,
 \tag{26}
@@ -384,9 +384,9 @@ The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(1
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, basis $e_0=1,e_1,e_2,e_3$, scalar imaginary $i$ |
-| $D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
-| $\Delta$ | Spatial Laplacian $\partial_1^2+\partial_2^2+\partial_3^2$ |
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$ |
+| $D_3=\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ | Spatial Moisil–Theodoresco operator; $D_3^2=-\Delta$ |
+| $\Delta$ | Spatial Laplacian $\partial^2/\partial Q_x^2+\partial^2/\partial Q_y^2+\partial^2/\partial Q_z^2$ |
 | $\epsilon,\mu$ | Permittivity and permeability; possibly complex |
 | $\sigma_*$ | Real ohmic conductivity of the medium |
 | $\sigma=\sigma_*-i\omega\epsilon$ | Complex conductivity carried by the first Maxwell equation |
@@ -399,14 +399,14 @@ The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(1
 | $C$ | Diagonalising matrix $(11)$; $CNC^{-1}=\mathrm{diag}(D_3-\alpha,D_3+\alpha)$ |
 | $\Phi,\Psi$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
 | $\mathcal{R}_\lambda$ | Metaharmonic pairs $\ker((\Delta+\lambda)I_2)$ |
-| $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_1+Q_2=I$ |
+| $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
 | $\Theta_\alpha=-\exp(\,i\alpha\lvert x\rvert)/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
 | $\mathcal{K}_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |
 | $K_N$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{K}_\alpha,\mathcal{K}_{-\alpha})$ |
 | $\mathcal{K}_N,\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |
 | $P_\alpha=\tfrac12(I+S_\alpha)$, $Q_\alpha=I-P_\alpha$ | Plemelj projectors of the shifted theory |
 | $\Omega,\Gamma=\partial\Omega$ | Bounded domain and its Liapunov boundary; $\vec u$ the outward normal |
-| $\tilde e,\tilde h$ | Dirichlet boundary data of the field |
+| $\vec E_\Gamma,\vec H_\Gamma$ | Dirichlet boundary data of the field |
 | $W=\sqrt{\mu/\epsilon}$ | Intrinsic impedance of the medium |
 
 ## Further Reading

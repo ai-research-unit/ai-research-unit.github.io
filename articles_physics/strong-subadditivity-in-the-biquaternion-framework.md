@@ -18,7 +18,7 @@ This article asks what strong subadditivity is in the biquaternion framework. Th
 
 The article proceeds as follows. The inequality and its equivalent forms are recalled. The tensor-product setting in the biquaternion algebra is fixed, with the partial trace written explicitly. The inequality is derived from monotonicity of relative entropy. The three examples are computed. The equality condition is stated as the quantum Markov property. The field-theoretic setting is recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$. The relative entropy and its monotonicity are those of *Relative Entropy and the Biquaternion Framework*. The single-mode states and the vacuum idempotent are those of *The GNS Construction in the Biquaternion Framework* and *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The Inequality
 
@@ -89,10 +89,10 @@ $$
 $$
 of complex dimension $4^n$. The trace on the tensor power is the product of the single-algebra traces,
 $$
-\mathrm{Tr}\big(A_1^{(1)}\otimes\cdots\otimesA_n^{(1)}\big)
+\mathrm{Tr}\big(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)}\big)
 =\mathrm{Tr}(A_1^{(1)})\cdots\mathrm{Tr}(A_n^{(1)}),
 \qquad
-\mathrm{Tr}\big(e_0^{\otimes n}\big)=2^n,
+\mathrm{Tr}\big(e_t^{\otimes n}\big)=2^n,
 $$
 and a state is an element
 $$
@@ -116,7 +116,7 @@ $$
 $$
 and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with trace one. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the trace that enters it: on a factor, $\mathrm{Tr}_B(\tilde A\otimes\tilde B)=\tilde A\,\mathrm{Tr}(\tilde B)=\tilde A\cdot2\,\mathrm{Sc}(\tilde B)$, so the biquaternion trace $2\,\mathrm{Sc}$ is exactly the normalization that makes the discarded factor contribute its expectation.
 
-Two structural facts are worth recording at this point, both consequences of the GNS companion article's trace. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde A\otimes\tilde B)=\tilde A\,\mathrm{Tr}(\tilde B)=\tilde A$ for every normalized $\tilde B$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde A\otimes\tilde B)=S(\tilde A)+S(\tilde B)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_0$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
+Two structural facts are worth recording at this point, both consequences of the GNS companion article's trace. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde A\otimes\tilde B)=\tilde A\,\mathrm{Tr}(\tilde B)=\tilde A$ for every normalized $\tilde B$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde A\otimes\tilde B)=S(\tilde A)+S(\tilde B)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
 
 ## Strong Subadditivity from Monotonicity of Relative Entropy
 
@@ -297,12 +297,12 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
-| $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimesA_n^{(1)})=\prod_i\mathrm{Tr}(\tilde A_i)$ | Product trace; $\mathrm{Tr}(e_0^{\otimes n})=2^n$ |
+| $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde A_i)$ | Product trace; $\mathrm{Tr}(e_t^{\otimes n})=2^n$ |
 | $\rho_{AB},\rho_{BC},\rho_B$ | Reduced states (partial traces) |
 | $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$ | von Neumann entropy |
 | $S(\rho_{ABC})+S(\rho_B)\le S(\rho_{AB})+S(\rho_{BC})$ | Strong subadditivity |

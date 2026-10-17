@@ -18,7 +18,7 @@ The second part is the only place where the sector split changes the answer. If 
 
 The article proceeds as follows: the standard partition function and thermal state are recalled; the trace is identified with the scalar part; the thermal operator and the partition function are computed explicitly; the part the trace discards is examined; the place where the material sector genuinely enters — imaginary time — is made precise against the companion article on the KMS condition; and the non-Hermitian extension is computed.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, and scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation ${}^{*}$; its elements have real scalar part and imaginary vector part. The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat=-{}^{*}$; its elements have imaginary scalar part and real vector part. The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation. We work in units with $\hbar=1$, so that $\beta=1/(k_BT)$ coincides with the KMS article's $\beta=\hbar/(k_BT)$; restoring $\hbar$ multiplies $\tilde H$ in the exponent by $1/\hbar$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, and scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation ${}^{*}$; its elements have real scalar part and imaginary vector part. The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat=-{}^{*}$; its elements have imaginary scalar part and real vector part. The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation. We work in units with $\hbar=1$, so that $\beta=1/(k_BT)$ coincides with the KMS article's $\beta=\hbar/(k_BT)$; restoring $\hbar$ multiplies $\tilde H$ in the exponent by $1/\hbar$.
 
 ## The Partition Function and the Thermal State
 
@@ -33,7 +33,7 @@ The standard derived quantities are the free energy, the internal energy, and th
 
 $$
 F=-\frac{1}{\beta}\log Z,\qquad
-U=-\frac{\partial \log Z}{\partial \beta}=\mathrm{Tr}(\tilde\rho\,\tilde H),\qquad
+E=-\frac{\partial \log Z}{\partial \beta}=\mathrm{Tr}(\tilde\rho\,\tilde H),\qquad
 S=-\mathrm{Tr}(\tilde\rho\log\tilde\rho),
 $$
 
@@ -48,21 +48,21 @@ The framework adds two things to this standard picture. It gives the Hamiltonian
 The biquaternion algebra is isomorphic to the algebra of $2\times2$ complex matrices, $\mathbb{B}\cong M_2(\mathbb{C})$. In the isomorphism of the companion articles,
 
 $$
-e_0\mapsto I_2,\qquad e_1\mapsto -i\sigma_1,\qquad e_2\mapsto -i\sigma_2,\qquad e_3\mapsto -i\sigma_3,
+e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
 $$
 
-and the scalar imaginary $i$ maps to $iI_2$. The **trace** of a general biquaternion $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$, with $Q_\mu\in\mathbb{C}$, is therefore
+and the scalar imaginary $i$ maps to $iI_2$. The **trace** of a general biquaternion $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $Q_\mu\in\mathbb{C}$, is therefore
 
 $$
-\mathrm{Tr}(\tilde Q)=2Q_0=2\,\mathrm{Sc}(\tilde Q).
+\mathrm{Tr}(\tilde Q)=2Q_t=2\,\mathrm{Sc}(\tilde Q).
 $$
 
-Here $\mathrm{Sc}(\tilde Q)=Q_0$ is the coefficient of $e_0$, which is a complex number for a general biquaternion and a **real** number when $\tilde Q\in\mathbb{M}_+$. The trace is thus a **scalar extraction**: it retains the $e_0$ coefficient and annihilates the three vector directions $e_1,e_2,e_3$.
+Here $\mathrm{Sc}(\tilde Q)=Q_t$ is the coefficient of $e_t$, which is a complex number for a general biquaternion and a **real** number when $\tilde Q\in\mathbb{M}_+$. The trace is thus a **scalar extraction**: it retains the $e_t$ coefficient and annihilates the three vector directions $\vec e_x,\vec e_y,\vec e_z$.
 
 On $\mathbb{M}_+$ this extraction is the trace pairing used throughout the corpus. Writing
 
 $$
-\tilde P=p_0e_0+i\vec p,\qquad \tilde H=h_0e_0+i\vec h,\qquad p_0,h_0\in\mathbb{R},\ \ \vec p,\vec h\in\mathbb{R}^3,
+\tilde P=p_0e_t+i\vec p,\qquad \tilde H=h_0e_t+i\vec h,\qquad p_0,h_0\in\mathbb{R},\ \ \vec p,\vec h\in\mathbb{R}^3,
 $$
 
 for two elements of $\mathbb{M}_+$, the product has scalar part
@@ -79,33 +79,33 @@ $$
 
 The derivation of this formula and its role in the Born rule are the subject of the companion article *The Born Rule as a Trace Formula — Derivation and Comparison*; here we only use it. Two features matter for the partition function. The formula is **bilinear and symmetric**, and it is **real** when both factors lie in $\mathbb{M}_+$. Note also that the product $\tilde P\tilde H$ need not itself lie in $\mathbb{M}_+$ — it acquires a real vector part $-\vec p\times\vec h$ in the quaternion product — and yet its scalar part, and therefore the trace, is still given by the formula above. The trace does not require the product to remain in $\mathbb{M}_+$; it requires only the factors to.
 
-A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **biquaternion norm** $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_0+i\vec h$ it gives $\langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* makes the general case for why.
+A remark on the alternative. The trace is not the only natural scalar that can be extracted from an element of $\mathbb{M}_+$; the **biquaternion norm** $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H=h_0e_t+i\vec h$ it gives $\langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2$, of signature $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The trace, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule as a Trace Formula — Derivation and Comparison* makes the general case for why.
 
 ## The Thermal Operator and the Partition Function
 
 Let the Hamiltonian be a Hermitian element of the informational sector,
 
 $$
-\tilde H=h_0e_0+i\vec h,\qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
+\tilde H=h_0e_t+i\vec h,\qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-with $|\vec h|$ the modulus. The first computation is the square of the imaginary vector part. For a pure real quaternion, $\vec h^2=-|\vec h|^2e_0$, so
+with $|\vec h|$ the modulus. The first computation is the square of the imaginary vector part. For a pure real quaternion, $\vec h^2=-|\vec h|^2e_t$, so
 
 $$
-(i\vec h)^2=i^2\vec h^2=(-1)\big(-|\vec h|^2e_0\big)=|\vec h|^2e_0.
+(i\vec h)^2=i^2\vec h^2=(-1)\big(-|\vec h|^2e_t\big)=|\vec h|^2e_t.
 $$
 
-The imaginary vector part therefore behaves like a **real** number of square $+|\vec h|^2$ — it is a boost-type generator, not a phase — and the scalar part $h_0e_0$ commutes with it. Hence
+The imaginary vector part therefore behaves like a **real** number of square $+|\vec h|^2$ — it is a boost-type generator, not a phase — and the scalar part $h_0e_t$ commutes with it. Hence
 
 $$
 \exp(-\beta\tilde H)=\exp(-\beta h_0)\exp(-\beta i\vec h)
-=\exp(-\beta h_0)\Big(\cosh(\beta|\vec h|)\,e_0-i\sinh(\beta|\vec h|)\,\vec u_h\Big),
+=\exp(-\beta h_0)\Big(\cosh(\beta|\vec h|)\,e_t-i\sinh(\beta|\vec h|)\,\vec u_h\Big),
 \qquad \vec u_h=\frac{\vec h}{|\vec h|}.
 $$
 
-This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$ implies $(\exp(-\beta\tilde H))^\dagger=\exp(-\beta\tilde H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta h_0)$ times the unit-norm element $\tilde\Lambda=\cosh(\beta|\vec h|)e_0-i\sinh(\beta|\vec h|)\vec u_h$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec h|$ in the parametrization $\tilde\Lambda=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$, with $\vec u=-\vec u_h$.
+This is the **thermal operator**. It is Hermitian, since $\tilde H^{*}=\tilde H$ implies $(\exp(-\beta\tilde H))^\dagger=\exp(-\beta\tilde H)$, so it is an element of $\mathbb{M}_+$: its scalar part is real and its vector part is imaginary. Equivalently, it is $\exp(-\beta h_0)$ times the unit-norm element $\tilde\Lambda=\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h$, which is a **boost biquaternion** in $\mathbb{M}_+$ — the natural home of boosts, as the companion article on $\mathbb{M}_+$ records. The boost rapidity is $2\beta|\vec h|$ in the parametrization $\tilde\Lambda=\cosh(\psi/2)+i\sinh(\psi/2)\vec u$, with $\vec u=-\vec u_h$.
 
-Applying the trace formula with $\tilde P=e_0$ (the identity, which lies in $\mathbb{M}_+$) and using $\exp(-\beta\tilde H)\in\mathbb{M}_+$,
+Applying the trace formula with $\tilde P=e_t$ (the identity, which lies in $\mathbb{M}_+$) and using $\exp(-\beta\tilde H)\in\mathbb{M}_+$,
 
 $$
 Z=\mathrm{Tr}\big(\exp(-\beta\tilde H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_0)\cosh(\beta|\vec h|).
@@ -117,28 +117,28 @@ $$
 \exp(-\beta h_0)\big(\exp(-\beta|\vec h|)+\exp(+\beta|\vec h|)\big)=2\exp(-\beta h_0)\cosh(\beta|\vec h|).
 $$
 
-The two expressions agree because the eigenvalues of $\tilde H=h_0e_0+i\vec h$ are $h_0\pm|\vec h|$, in accordance with the matrix identification $\tilde H\mapsto h_0I+\vec h\cdot\boldsymbol\sigma$. The state is $\tilde\rho=\exp(-\beta\tilde H)/Z$, whose scalar part is $\mathrm{Sc}(\tilde\rho)=\tfrac12$, so it has the Bloch form
+The two expressions agree because the eigenvalues of $\tilde H=h_0e_t+i\vec h$ are $h_0\pm|\vec h|$, in accordance with the matrix identification $\tilde H\mapsto h_0I+\vec h\cdot\boldsymbol\sigma$. The state is $\tilde\rho=\exp(-\beta\tilde H)/Z$, whose scalar part is $\mathrm{Sc}(\tilde\rho)=\tfrac12$, so it has the Bloch form
 
 $$
-\tilde\rho=\tfrac12\big(e_0+i\vec r\big),\qquad \vec r=-\tanh(\beta|\vec h|)\,\vec u_h,\qquad |\vec r|=\tanh(\beta|\vec h|)\le 1.
+\tilde\rho=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r=-\tanh(\beta|\vec h|)\,\vec u_h,\qquad |\vec r|=\tanh(\beta|\vec h|)\le 1.
 $$
 
-The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi(-\vec u_h)=\tfrac12(e_0-i\vec u_h)$ only as $\beta\to\infty$. Its internal energy is
+The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi(-\vec u_h)=\tfrac12(e_t-i\vec u_h)$ only as $\beta\to\infty$. Its internal energy is
 
 $$
-U=\mathrm{Tr}(\tilde\rho\tilde H)=h_0+\vec r\cdot\vec h=h_0-|\vec h|\tanh(\beta|\vec h|),
+E=\mathrm{Tr}(\tilde\rho\tilde H)=h_0+\vec r\cdot\vec h=h_0-|\vec h|\tanh(\beta|\vec h|),
 $$
 
 in agreement with $-\partial_\beta\log Z=h_0-|\vec h|\tanh(\beta|\vec h|)$, and its purity and entropy are the standard functions of $|\vec r|$.
 
-As a check on a case chosen independently of the derivation, take $h_0=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, so that $|\vec h|^2=0.98$ and $|\vec h|=0.98995$. The formula gives $Z=2\exp(-0.84)\cosh(1.18794)=1.547753$, while summing the exponential of the eigenvalues $h_0\pm|\vec h|$ gives $\exp(-2.02794)+\exp(0.34794)=1.547753$; the matrix exponential of the corresponding $2\times2$ matrix agrees with the biquaternion form to machine precision. The Bloch modulus is $\tanh(1.18794)=0.829939$, and $U=h_0-|\vec h|\tanh(\beta|\vec h|)=-0.121597$ equals $\mathrm{Tr}(\tilde\rho\tilde H)$.
+As a check on a case chosen independently of the derivation, take $h_0=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, so that $|\vec h|^2=0.98$ and $|\vec h|=0.98995$. The formula gives $Z=2\exp(-0.84)\cosh(1.18794)=1.547753$, while summing the exponential of the eigenvalues $h_0\pm|\vec h|$ gives $\exp(-2.02794)+\exp(0.34794)=1.547753$; the matrix exponential of the corresponding $2\times2$ matrix agrees with the biquaternion form to machine precision. The Bloch modulus is $\tanh(1.18794)=0.829939$, and $E=h_0-|\vec h|\tanh(\beta|\vec h|)=-0.121597$ equals $\mathrm{Tr}(\tilde\rho\tilde H)$.
 
 ## What the Trace Discards
 
 The thermal operator has a scalar part and an imaginary vector part,
 
 $$
-\exp(-\beta\tilde H)=\underbrace{\exp(-\beta h_0)\cosh(\beta|\vec h|)}_{\text{scalar}}\;e_0\;-\;i\underbrace{\exp(-\beta h_0)\sinh(\beta|\vec h|)}_{\text{coefficient}}\;\vec u_h,
+\exp(-\beta\tilde H)=\underbrace{\exp(-\beta h_0)\cosh(\beta|\vec h|)}_{\text{scalar}}\;e_t\;-\;i\underbrace{\exp(-\beta h_0)\sinh(\beta|\vec h|)}_{\text{coefficient}}\;\vec u_h,
 $$
 
 and the trace keeps the first and annihilates the second. Three consequences are worth stating explicitly.
@@ -166,7 +166,7 @@ Two further facts tie the partition function to that structure, and both are con
 First, the **normalization of the thermal state** is what makes the modular Hamiltonian a Hermitian element. From $\tilde\rho=\exp(-\beta\tilde H)/Z$,
 
 $$
-K=-\log\tilde\rho=\beta\tilde H+\big(\log Z\big)e_0,
+K=-\log\tilde\rho=\beta\tilde H+\big(\log Z\big)e_t,
 $$
 
 which is Hermitian, hence an element of $\mathbb{M}_+$; the log-partition function $\log Z$ appears as the real scalar part of the modular Hamiltonian. The companion article records the general fact that $K=-\log\tilde\rho$ lies in $\mathbb{M}_+$; the partition function is precisely the additive scalar that makes this true for the Gibbs state.
@@ -184,7 +184,7 @@ We can now separate the two cases cleanly.
 It is worth confirming that the obvious rival scalar does not work. The biquaternion norm of the thermal operator is
 
 $$
-N\big(\exp(-\beta\tilde H)\big)=\exp(-2\beta h_0)\Big(\cosh^2(\beta|\vec h|)-\sinh^2(\beta|\vec h|)\Big)e_0=\exp(-2\beta h_0)e_0,
+N\big(\exp(-\beta\tilde H)\big)=\exp(-2\beta h_0)\Big(\cosh^2(\beta|\vec h|)-\sinh^2(\beta|\vec h|)\Big)e_t=\exp(-2\beta h_0)e_t,
 $$
 
 which is **independent of $|\vec h|$**. The biquaternion norm sees only the trace part $h_0$ of the Hamiltonian and is blind to the level splitting $|\vec h|$; its logarithm is linear in $\beta$ and would give a free energy independent of $\beta$, with no thermal population of the excited level. The trace is the scalar that thermodynamics requires, and the biquaternion norm is not a candidate partition function.
@@ -192,18 +192,18 @@ which is **independent of $|\vec h|$**. The biquaternion norm sees only the trac
 **Non-Hermitian generator: a complex partition function.** The one place where the sector split changes the answer is if the generator is allowed to leave $\mathbb{M}_+$. Let
 
 $$
-\tilde H=i a_0e_0-\vec a,\qquad a_0\in\mathbb{R},\quad \vec a\in\mathbb{R}^3,
+\tilde H=i a_0e_t-\vec a,\qquad a_0\in\mathbb{R},\quad \vec a\in\mathbb{R}^3,
 $$
 
-which is an element of $\mathbb{M}_-$ (imaginary scalar part $ia_0$, real vector part $-\vec a$). Because $\vec a$ is a pure real quaternion, $\exp(\beta\vec a)=\cos(\beta|\vec a|)e_0+\sin(\beta|\vec a|)a^{\mathrm{fop}}$, and the scalar part of the thermal operator is no longer real:
+which is an element of $\mathbb{M}_-$ (imaginary scalar part $ia_0$, real vector part $-\vec a$). Because $\vec a$ is a pure real quaternion, $\exp(\beta\vec a)=\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a^{\mathrm{fop}}$, and the scalar part of the thermal operator is no longer real:
 
 $$
-\exp(-\beta\tilde H)=\exp(-i\beta a_0)\Big(\cos(\beta|\vec a|)e_0+\sin(\beta|\vec a|)a^{\mathrm{fop}}\Big),
+\exp(-\beta\tilde H)=\exp(-i\beta a_0)\Big(\cos(\beta|\vec a|)e_t+\sin(\beta|\vec a|)a^{\mathrm{fop}}\Big),
 \qquad
 Z=2\exp(-i\beta a_0)\cos(\beta|\vec a|).
 $$
 
-The partition function is complex. Its modulus is $2|\cos(\beta|\vec a|)|$ and its phase is $-\beta a_0$: the **imaginary scalar part** of the $\mathbb{M}_-$ generator (the imaginary-time direction, $ia_0e_0$) produces the phase, while the **real vector part** $-\vec a$ produces a real oscillatory factor. With $a_0=0.9$, $\vec a=(0.4,0.2,-0.3)$, $\beta=1.2$, one finds $Z=0.752585-1.408250\,i$, of modulus $1.596732$ and phase $-1.08=-\beta a_0$. Even with $a_0=0$ the result $2\cos(\beta|\vec a|)$ becomes negative for some $\beta$, so the "state" is not positive; the non-Hermitian generator does not define a thermal state at all in the ordinary sense.
+The partition function is complex. Its modulus is $2|\cos(\beta|\vec a|)|$ and its phase is $-\beta a_0$: the **imaginary scalar part** of the $\mathbb{M}_-$ generator (the imaginary-time direction, $ia_0e_t$) produces the phase, while the **real vector part** $-\vec a$ produces a real oscillatory factor. With $a_0=0.9$, $\vec a=(0.4,0.2,-0.3)$, $\beta=1.2$, one finds $Z=0.752585-1.408250\,i$, of modulus $1.596732$ and phase $-1.08=-\beta a_0$. Even with $a_0=0$ the result $2\cos(\beta|\vec a|)$ becomes negative for some $\beta$, so the "state" is not positive; the non-Hermitian generator does not define a thermal state at all in the ordinary sense.
 
 This is a genuine modification, but it is **not forced** by the framework: observables are defined to be Hermitian elements of $\mathbb{M}_+$, and a Hermitian $\tilde H$ is the case treated in the body of the article. The non-Hermitian case is what one gets if one allows the generator to have an $\mathbb{M}_-$ component, and it connects to two standard ideas without deriving either: **complex temperature** (continuing $\beta\to\beta+i\theta$, which turns the trace into $\mathrm{Tr}(\exp(-\beta\tilde H)\exp(-i\theta\tilde H))$ and exposes real-time evolution), and the **imaginary chemical potential** used in finite-density lattice studies, where an imaginary parameter again converts a sign problem into a phase. Whether an $\mathbb{M}_-$-valued generator is physically meaningful in this framework, and whether the resulting complex free energy has an interpretation beyond these known techniques, is open.
 
@@ -223,10 +223,10 @@ The interpretation is labelled. The article's own content is the trace and the t
 
 The partition function $Z=\mathrm{Tr}(\exp(-\beta\tilde H))$ has a biquaternion form, and its content is an interpretation of the trace rather than a new object.
 
-For a Hermitian Hamiltonian $\tilde H=h_0e_0+i\vec h$ in the informational sector, the thermal operator is
+For a Hermitian Hamiltonian $\tilde H=h_0e_t+i\vec h$ in the informational sector, the thermal operator is
 
 $$
-\exp(-\beta\tilde H)=\exp(-\beta h_0)\Big(\cosh(\beta|\vec h|)e_0-i\sinh(\beta|\vec h|)\vec u_h\Big),
+\exp(-\beta\tilde H)=\exp(-\beta h_0)\Big(\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h\Big),
 $$
 
 which is itself an element of $\mathbb{M}_+$: a scalar Boltzmann weight times a boost biquaternion. The trace formula identifies the trace with twice the scalar part, so
@@ -235,9 +235,9 @@ $$
 Z=2\,\mathrm{Sc}\big(\exp(-\beta\tilde H)\big)=2\exp(-\beta h_0)\cosh(\beta|\vec h|),
 $$
 
-the ordinary two-level partition function with energies $h_0\pm|\vec h|$. The thermal state is $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $\vec r=-\tanh(\beta|\vec h|)\vec u_h$, and the internal energy $U=h_0-|\vec h|\tanh(\beta|\vec h|)$ agrees with $-\partial_\beta\log Z$.
+the ordinary two-level partition function with energies $h_0\pm|\vec h|$. The thermal state is $\tilde\rho=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec h|)\vec u_h$, and the internal energy $E=h_0-|\vec h|\tanh(\beta|\vec h|)$ agrees with $-\partial_\beta\log Z$.
 
-The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde H$ the thermal operator has no $\mathbb{M}_-$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde U(-i\beta)$ is the trace of the evolution operator continued along the $ict$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{M}_-$ time. The modular Hamiltonian $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_0$ lies in $\mathbb{M}_+$, with the log-partition function as its real scalar part, in agreement with the KMS article.
+The trace keeps the scalar part of the thermal operator and discards its imaginary vector part. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde H$ the thermal operator has no $\mathbb{M}_-$ component. The material sector enters through imaginary time, since $Z=\mathrm{Tr}\,\tilde U(-i\beta)$ is the trace of the evolution operator continued along the $ict$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{M}_-$ time. The modular Hamiltonian $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_t$ lies in $\mathbb{M}_+$, with the log-partition function as its real scalar part, in agreement with the KMS article.
 
 The algebra does not force a modification. A genuine modification appears only if the generator is permitted an $\mathbb{M}_-$ component, in which case $Z$ can become complex, with the imaginary scalar part of the generator producing a phase and its real vector part an oscillatory modulus. That extension is possible, connects to complex temperature and imaginary chemical potential, and is not forced by the framework; it is left open.
 
@@ -246,20 +246,20 @@ The algebra does not force a modification. A genuine modification appears only i
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (fixed points of complex conjugation) |
-| $\tilde H=h_0e_0+i\vec h$ | Hermitian Hamiltonian (observable) |
+| $\tilde H=h_0e_t+i\vec h$ | Hermitian Hamiltonian (observable) |
 | $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace as scalar extraction |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2(p_0h_0+\vec p\cdot\vec h)$ | Trace formula on $\mathbb{M}_+$ |
 | $Z=\mathrm{Tr}(\exp(-\beta\tilde H))$ | Partition function |
 | $\tilde\rho=\exp(-\beta\tilde H)/Z$ | Thermal state |
-| $\exp(-\beta\tilde H)=\exp(-\beta h_0)\big(\cosh(\beta|\vec h|)e_0-i\sinh(\beta|\vec h|)\vec u_h\big)$ | Thermal operator |
+| $\exp(-\beta\tilde H)=\exp(-\beta h_0)\big(\cosh(\beta|\vec h|)e_t-i\sinh(\beta|\vec h|)\vec u_h\big)$ | Thermal operator |
 | $\vec r=-\tanh(\beta|\vec h|)\vec u_h$ | Bloch vector of the thermal state |
-| $F=-\beta^{-1}\log Z$, $U=-\partial_\beta\log Z$ | Free energy, internal energy |
-| $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_0$ | Modular Hamiltonian (in $\mathbb{M}_+$) |
+| $F=-\beta^{-1}\log Z$, $E=-\partial_\beta\log Z$ | Free energy, internal energy |
+| $K=-\log\tilde\rho=\beta\tilde H+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{M}_+$) |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |
 | $\beta=1/(k_BT)$ ($\hbar=1$) | Inverse temperature |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

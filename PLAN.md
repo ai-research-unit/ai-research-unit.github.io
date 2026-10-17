@@ -20,6 +20,7 @@ Do not create AGENTS.md, the articles should be sable to defend themselves witho
 
 The author can instruct you to bypass some plan rules occasionally. His instructions are a priority compared to the plan rules.
 
+READ THE CONVENTIONS
 
 Verify by recomputation ON A MAXIMUM ON 100 elements. Every claim is recomputed on a maximum of 100 elements before it is edited or asserted.
 

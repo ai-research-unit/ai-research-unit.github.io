@@ -182,12 +182,12 @@ is a surjective two-to-one Lie group homomorphism with kernel $\{\pm 1\}$. It id
 **Definition.** The **Hopf map** is
 
 $$
-h : S^3 \longrightarrow S^2, \qquad h(q) = q\,e_1\,q^{-1} \in \operatorname{Im}\mathbb{H},
+h : S^3 \longrightarrow S^2, \qquad h(q) = q\,\vec e_x\,q^{-1} \in \operatorname{Im}\mathbb{H},
 $$
 
 using the identification of the imaginary subspace with $\mathbb{R}^3$ and restricting to unit vectors; equivalently, viewing $S^3 \subset \mathbb{C}^2$ as pairs $(z_1, z_2)$ with $|z_1|^2 + |z_2|^2 = 1$, the map is $h(z_1, z_2) = (2z_1\bar z_2, |z_1|^2 - |z_2|^2)$.
 
-**Theorem.** The Hopf map is a smooth submersion, its fibre over every point is a great circle of $S^3$, and it is a fibre bundle with structure group $U(1) = S^1$; the sphere $S^3$ is the total space of a principal $S^1$-bundle over $S^2$.
+**Theorem.** The Hopf map is a smooth submersion, its fibre over every point is a great circle of $S^3$, and it is a fibre bundle with structure group $\mathrm{U}(1) = S^1$; the sphere $S^3$ is the total space of a principal $S^1$-bundle over $S^2$.
 
 **Proof sketch.** The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{\exp(i\theta)\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is *Fibre Bundles, Connections and Curvature*.
 

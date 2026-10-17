@@ -65,7 +65,7 @@ which satisfies $\rho = i\,\partial\bar\partial\log\det(g_{j\bar k})$ and $[\rho
 
 **Definition.** Let $g$ be Kähler. The **Kähler curvature** is the Riemannian curvature tensor read in holomorphic coordinates,
 $$
-R_{i\bar j k\bar l} = \bigl\langle R(\partial_i,\partial_{\bar j})\partial_k, \partial_{\bar l}\bigr\rangle ,
+R_{i\bar j k\bar l} = \bigl\langle R(\partial/\partial z_i,\partial/\partial\bar z_j)\partial/\partial z_k, \partial/\partial\bar z_l\,\bigr\rangle ,
 $$
 and it satisfies the three symmetry relations
 $$
@@ -92,15 +92,15 @@ $$
 
 ## The Decomposition by the Unitary Group
 
-**Definition.** The space of algebraic curvature tensors at a point is a representation of the orthogonal group $O(2n)$ and, for a Kähler metric, of the unitary group $U(n)$ acting on the complexified tangent space; an **invariant decomposition** is a decomposition into subrepresentations, and the **irreducible parts** of the curvature operator are the isotypic components.
+**Definition.** The space of algebraic curvature tensors at a point is a representation of the orthogonal group $O(2n)$ and, for a Kähler metric, of the unitary group $\mathrm{U}(n)$ acting on the complexified tangent space; an **invariant decomposition** is a decomposition into subrepresentations, and the **irreducible parts** of the curvature operator are the isotypic components.
 
-**Proposition (the unitary decomposition).** For a Kähler metric the space of algebraic curvature tensors decomposes under $U(n)$ into the scalar part, the traceless-Ricci part, the Bochner part and the Weyl part,
+**Proposition (the unitary decomposition).** For a Kähler metric the space of algebraic curvature tensors decomposes under $\mathrm{U}(n)$ into the scalar part, the traceless-Ricci part, the Bochner part and the Weyl part,
 $$
 \mathcal R = \mathcal R_{\text{scalar}} + \mathcal R_{\text{Ric}} + \mathcal R_{\text{Bochner}} + \mathcal R_{\text{Weyl}} ,
 $$
 and the first three are determined by the scalar curvature, the traceless Ricci form and the $(2,0)$-part of the curvature, while the Weyl part is the conformally invariant remainder; in complex dimension two the Weyl part splits further by the Hodge star into the self-dual and anti-self-dual halves.
 
-**Proof.** The decomposition is the restriction to $U(n)$ of the $O(2n)$-decomposition of *The Curvature Operator*; the subrepresentations are the scalar, the traceless-Ricci, the Bochner (the $(2,0)$-type part) and the Weyl tensors, and the traceless-Ricci part is the traceless part of the Ricci tensor, the scalar part its trace. The four-dimensional splitting of the Weyl part is *The Involution on the Curvature Operator*. Constant holomorphic sectional curvature is exactly the vanishing of the last three parts, which is the operator form of the classification of the Kähler space forms.
+**Proof.** The decomposition is the restriction to $\mathrm{U}(n)$ of the $O(2n)$-decomposition of *The Curvature Operator*; the subrepresentations are the scalar, the traceless-Ricci, the Bochner (the $(2,0)$-type part) and the Weyl tensors, and the traceless-Ricci part is the traceless part of the Ricci tensor, the scalar part its trace. The four-dimensional splitting of the Weyl part is *The Involution on the Curvature Operator*. Constant holomorphic sectional curvature is exactly the vanishing of the last three parts, which is the operator form of the classification of the Kähler space forms.
 
 ## Summary
 

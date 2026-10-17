@@ -206,7 +206,7 @@ $$
 m_0 = \tfrac14\bigl(m_N+m_\Lambda+m_\Sigma+m_\Xi\bigr).
 $$
 
-The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$, with $l,\dot l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the **centre** of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the **splitting** about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.
+The programme closes the system by identifying $m_0$ with the mass of the spin representation that carries the supermultiplet. That is the companion mass formula's $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, with $l,\bar l$ the representation of the octet's spin line. The two chapters therefore connect: the representation degree fixes the **centre** of the supermultiplet's mass multiplet, and the Gell-Mann–Okubo formula fixes the **splitting** about that centre. The companion article's numbers — $1770\,m_e$, $2278\,m_e$, $264.5\,m_e$ for the nucleon, $\Sigma$ and $\pi$ — are these centres, and the splittings about them are the $\pm\beta\mp\tfrac12\gamma$ and $2\gamma$ of the table above.
 
 ## The Biquaternion Reading
 

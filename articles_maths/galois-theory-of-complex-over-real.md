@@ -14,7 +14,7 @@ Notation is that of *Fields* and *Complex Algebra*: $i^2 = -1$, $\operatorname{G
 The imaginary unit satisfies $i^2 = -1$, so it is a root of $x^2+1 \in \mathbb{R}[x]$. That polynomial has no real root, since in the ordered field $\mathbb{R}$ squares are non-negative while $-1 < 0$, and a quadratic with no root is irreducible. Hence $x^2+1$ is the minimal polynomial of $i$ over $\mathbb{R}$, and
 
 $$
-\mathbb{C} = \mathbb{R}(i) = \mathbb{R}[i] = \{a+i a' : a,a' \in \mathbb{R}\}, \qquad [\mathbb{C}:\mathbb{R}] = 2, \qquad \mathbb{C} \cong \mathbb{R}[x]/(x^2+1),
+\mathbb{C} = \mathbb{R}(i) = \mathbb{R}[i] = \{q+i q' : q,q' \in \mathbb{R}\}, \qquad [\mathbb{C}:\mathbb{R}] = 2, \qquad \mathbb{C} \cong \mathbb{R}[x]/(x^2+1),
 $$
 
 with $\{1,i\}$ a basis over $\mathbb{R}$. The two roots of $x^2+1$ are $i$ and $-i$, the conjugates of $i$ over $\mathbb{R}$ in the sense of *Fields*, §8.
@@ -40,7 +40,7 @@ $$
 There are at most two such automorphisms, and both occur: the identity, and complex conjugation
 
 $$
-\sigma(A) = \bar{A}, \qquad \sigma(a+i a') = a - i a', \qquad \sigma(i) = -i.
+\sigma(Q) = \bar{Q}, \qquad \sigma(q+i q') = q - i q', \qquad \sigma(i) = -i.
 $$
 
 Conjugation is a field automorphism and an involution, with $\sigma^2 = \operatorname{id}$ and $\sigma \neq \operatorname{id}$. Hence
@@ -60,7 +60,7 @@ For $K/F$ finite Galois with group $G$, the fundamental theorem (*Fields*, §16)
 | $\{e\}$ | $\mathbb{C}$ | $2$ |
 | $G$ | $\mathbb{R}$ | $1$ |
 
-The fixed field of the full group is the fixed field of conjugation, $\mathbb{C}^G = \{A \in \mathbb{C} : \bar{A} = A\} = \mathbb{R}$, as in *Complex Algebra*: $a+i a'$ is fixed precisely when $a' = 0$. Hence **the only intermediate fields of $\mathbb{C}/\mathbb{R}$ are $\mathbb{R}$ and $\mathbb{C}$**. Both intermediate extensions are Galois, consistent with $G$ being abelian so that every subgroup is normal. Since every degree-$2$ extension of a field of characteristic not $2$ is normal and separable, this is the simplest nontrivial Galois extension.
+The fixed field of the full group is the fixed field of conjugation, $\mathbb{C}^G = \{Q \in \mathbb{C} : \bar{Q} = Q\} = \mathbb{R}$, as in *Complex Algebra*: $q+i q'$ is fixed precisely when $q' = 0$. Hence **the only intermediate fields of $\mathbb{C}/\mathbb{R}$ are $\mathbb{R}$ and $\mathbb{C}$**. Both intermediate extensions are Galois, consistent with $G$ being abelian so that every subgroup is normal. Since every degree-$2$ extension of a field of characteristic not $2$ is normal and separable, this is the simplest nontrivial Galois extension.
 
 ## 5. Real Closed Fields and the Artin–Schreier Characterization
 
@@ -90,7 +90,7 @@ The degree $2$ is the minimum for the algebraic closure of a field that is not i
 
 For a field $K$ the following are equivalent, and any may serve as the definition (*Fields*, §11): **(a)** every nonconstant polynomial over $K$ has a root in $K$; **(b)** every nonconstant polynomial factors into linear factors; **(c)** every irreducible polynomial over $K$ is linear; **(d)** $K$ has no nontrivial finite (equivalently algebraic) extension; **(e)** $K = \overline{K}$. For $K = \mathbb{C}$, a nontrivial finite extension would contain a simple extension $\mathbb{C}(\alpha)$ whose minimal polynomial has no root, so (a) and (d) agree; and because $[\mathbb{C}:\mathbb{R}] = 2$, (a) is equivalent to **(f)** $\mathbb{R}$ is real closed, by Artin–Schreier (b). Thus the fundamental theorem of algebra and the real-closedness of $\mathbb{R}$ are one statement seen from the two ends of the extension.
 
-**Proof sketch.** Two real-analytic inputs are used: **(i)** every odd-degree real polynomial has a real root (intermediate value theorem); **(ii)** every non-negative real has a square root, so every $A = a+i a'$ has a square root, namely $\pm\bigl(\sqrt{(|A|+a)/2} + i\,\operatorname{sgn}(a')\sqrt{(|A|-a)/2}\bigr)$ with $|A|^2 = a^2+a'^2$.
+**Proof sketch.** Two real-analytic inputs are used: **(i)** every odd-degree real polynomial has a real root (intermediate value theorem); **(ii)** every non-negative real has a square root, so every $Q = q+i q'$ has a square root, namely $\pm\bigl(\sqrt{(|Q|+q)/2} + i\,\operatorname{sgn}(q')\sqrt{(|Q|-q)/2}\bigr)$ with $|Q|^2 = q^2+q'^2$.
 
 Suppose $\mathbb{C}$ is not algebraically closed. The normal closure over $\mathbb{R}$ of a proper finite extension is a finite Galois extension $L/\mathbb{R}$ with $L \supseteq \mathbb{C}$ and $L \neq \mathbb{C}$, of group $G$ with $|G| = [L:\mathbb{R}] = 2[L:\mathbb{C}]$. Write $|G| = 2^s m$ with $m$ odd. The fixed field of a Sylow $2$-subgroup has degree $m$ over $\mathbb{R}$, and $\mathbb{R}$ has no odd-degree extension by (i); so $m = 1$ and $G$ is a $2$-group. Since $L \neq \mathbb{C}$ we have $|G| \geq 4$, so $G$ has a subgroup $H$ of index $2$, whose fixed field $M$ satisfies $[M:\mathbb{R}] = 2$. A degree-$2$ extension of $\mathbb{R}$ is $\mathbb{R}(\sqrt{d})$ with $d$ a non-square; since $M \neq \mathbb{R}$, $d < 0$, so $M$ contains a square root of $-1$, necessarily $\pm i$, and hence $M = \mathbb{C}$. Then $M = \mathbb{C}$, so $H = \operatorname{Gal}(L/\mathbb{C})$ is a $2$-group of order $|G|/2$. If $|H| > 1$ it has a subgroup $N$ of index $2$, whose fixed field $M'$ satisfies $[M':\mathbb{C}] = [H:N] = 2$, and by (ii) every quadratic over $\mathbb{C}$ splits, so $M' = \mathbb{C}$, a contradiction; hence $|H| = 1$, $|G| = 2$, and $[L:\mathbb{C}] = 1$, contradicting $L \neq \mathbb{C}$. Hence $\mathbb{C}$ is algebraically closed.
 
@@ -205,7 +205,7 @@ The article places the extension in its wider setting. Real closed fields are ch
 |---|---|
 | $F$, $K$, $E$ | Base field, extension field, intermediate field |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex fields |
-| $i$, $\bar{A}$ | Imaginary unit $i^2 = -1$; complex conjugation |
+| $i$, $\bar{Q}$ | Imaginary unit $i^2 = -1$; complex conjugation |
 | $[K:F]$, $\operatorname{Gal}(K/F)$ | Degree; group of $F$-automorphisms |
 | $G$, $H$, $K^H$ | Galois group, a subgroup, its fixed field |
 | $\overline{F}$ | Algebraic closure of $F$ |

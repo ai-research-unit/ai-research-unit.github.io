@@ -108,7 +108,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Definition.** Let $F : \mathcal{C} \to \mathcal{D}$ be a functor and $D$ an object of $\mathcal{D}$. A **universal arrow** from $D$ to $F$ is a pair $(C, u)$ with $C$ an object of $\mathcal{C}$ and $u : D \to F(C)$ a morphism such that for every $C'$ and every $v : D \to F(C')$ there is a unique $f : C \to C'$ with $F(f) \circ u = v$.
 
-**Example (free monoid).** Let $U : \mathbf{Mon} \to \mathbf{Set}$ be the forgetful functor from monoids to sets. For a set $X$, let $X^*$ be the set of finite words in the alphabet $X$, with concatenation and the empty word as multiplication and identity; this is the **free monoid** on $X$. The insertion $u : X \to U(X^*)$ sending a letter to the one-letter word, with $X^*$, is a universal arrow from $X$ to $U$. Indeed, a monoid homomorphism $X^* \to M$ is determined by its values on the one-letter words, and any function $X \to U(M)$ extends uniquely to a homomorphism.
+**Example (free monoid).** Let $U : \mathbf{Mon} \to \mathbf{Set}$ be the forgetful functor from monoids to sets. For a set $X$, let $X^*$ be the set of finite words in the alphabet $X$, with concatenation and the empty word as multiplication and identity; this is the **free monoid** on $X$. The insertion $u : X \to U(X^*)$ sending a letter to the one-letter word, with $X^*$, is a universal arrow from $X$ to $U$. Indeed, a monoid homomorphism $X^* \to M$ is determined by its values on the one-letter words, and any function $X \to \mathrm{U}(M)$ extends uniquely to a homomorphism.
 
 **Remark.** The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong to all. The present article supplies the schema; those articles supply the objects.
 
@@ -142,7 +142,7 @@ $$
 
 for all objects $C$ of $\mathcal{C}$ and $D$ of $\mathcal{D}$, natural in $C$ and in $D$. The functor $G$ is the **right adjoint** of $F$.
 
-**Example.** The free-monoid functor $(-)^* : \mathbf{Set} \to \mathbf{Mon}$ is left adjoint to the forgetful functor $U : \mathbf{Mon} \to \mathbf{Set}$: the universal property of the free monoid is exactly the natural bijection $\mathbf{Mon}(X^*, M) \cong \mathbf{Set}(X, U(M))$. In the same way, a forgetful functor from any category of algebras to sets has a left adjoint, the free algebra on the set.
+**Example.** The free-monoid functor $(-)^* : \mathbf{Set} \to \mathbf{Mon}$ is left adjoint to the forgetful functor $U : \mathbf{Mon} \to \mathbf{Set}$: the universal property of the free monoid is exactly the natural bijection $\mathbf{Mon}(X^*, M) \cong \mathbf{Set}(X, \mathrm{U}(M))$. In the same way, a forgetful functor from any category of algebras to sets has a left adjoint, the free algebra on the set.
 
 **Example.** In $\mathbf{Set}$, the product functor $(-) \times A$ is left adjoint to the exponential functor $(-)^A$: the bijection $\mathbf{Set}(X \times A, B) \cong \mathbf{Set}(X, B^A)$ is currying, and it is the equational form of the cartesian closed condition. This is the categorical form of the rule that a function of two variables is the same thing as a function of one variable with values in functions, which is the rule for the function type in *Proof Theory and Type Theory*.
 
@@ -168,7 +168,7 @@ are the identities of $F$ and of $G$. Conversely, a pair of natural transformati
 
 **Proof sketch.** The first identity is checked on components using the naturality of $\varphi$: $(\varepsilon F)_C \circ (F\eta)_C = \varepsilon_{F(C)} \circ F(\eta_C)$, and under the adjunction bijection this is the identity of $F(C)$. The converse defines $\varphi$ by $\varphi(f) = G(f) \circ \eta_C$ and $\varphi^{-1}(g) = \varepsilon_D \circ F(g)$, and the triangular identities are what make the two inverse.
 
-The unit and counit are the useful form of an adjunction: the unit is the insertion of an object into its free algebra, and the counit is the evaluation of a free algebra on its generators. In the free-monoid example, $\eta_X : X \to U(X^*)$ is the insertion of letters and $\varepsilon_M : U(M)^* \to M$ is the multiplication of a word in $M$.
+The unit and counit are the useful form of an adjunction: the unit is the insertion of an object into its free algebra, and the counit is the evaluation of a free algebra on its generators. In the free-monoid example, $\eta_X : X \to U(X^*)$ is the insertion of letters and $\varepsilon_M : \mathrm{U}(M)^* \to M$ is the multiplication of a word in $M$.
 
 **Theorem (general adjoint functor theorem, statement).** Let $G : \mathcal{D} \to \mathcal{C}$ be a functor with $\mathcal{D}$ complete and locally small. Then $G$ has a left adjoint if and only if $G$ preserves all small limits and satisfies the **solution set condition**: for every object $C$ of $\mathcal{C}$ there is a set of objects $D_i$ of $\mathcal{D}$ such that every morphism $C \to G(D)$ factors through some $C \to G(D_i)$. Freyd's special form replaces the solution set condition by the hypotheses that $\mathcal{C}$ be well powered and that the hom-sets of $\mathcal{D}$ be small. The theorem is what turns the existence of free objects, of products and of quotients in a concrete algebraic category into a set-theoretic verification.
 

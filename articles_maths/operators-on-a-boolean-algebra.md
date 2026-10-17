@@ -31,7 +31,7 @@ The clopen subsets of $X$ form a subalgebra under the same operations, written $
 The complement is a bijection and reverses the order, so it is an **anti-isomorphism** of the two lattices,
 
 $$
-\complement : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad U \mapsto U^{c},
+\complement : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad \Omega \mapsto \Omega^{c},
 $$
 
 and its inverse is its own composite with itself. The two lattices are the same poset read in opposite directions, and the open sets determine the closed sets and conversely.
@@ -39,7 +39,7 @@ and its inverse is its own composite with itself. The two lattices are the same 
 **Definition.** The **closure operator** is the map
 
 $$
-C : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad C(U) = \overline{U},
+C : \mathcal{O}(X) \longrightarrow \mathcal{F}(X), \qquad C(\Omega) = \overline{U},
 $$
 
 sending an open set to its closure; the **interior operator** is the map
@@ -65,19 +65,19 @@ The relation is a **Galois connection**: $g$ is the lower and $h$ the upper adjo
 **Theorem.** The closure is left adjoint to the interior between the lattice of open sets and the lattice of closed sets:
 
 $$
-C \dashv I, \qquad \overline{U} \subseteq F \iff U \subseteq \operatorname{int} F \qquad (U \in \mathcal{O}(X),\ F \in \mathcal{F}(X)).
+C \dashv I, \qquad \overline{U} \subseteq F \iff \Omega \subseteq \operatorname{int} F \qquad (\Omega \in \mathcal{O}(X),\ F \in \mathcal{F}(X)).
 $$
 
-**Proof.** Suppose $\overline{U} \subseteq F$. Then $U \subseteq \overline{U} \subseteq F$, and since $U$ is open and $F$ is closed with $U \subseteq F$, the open set $U$ is contained in the largest open set inside $F$, which is $\operatorname{int} F$. Conversely suppose $U \subseteq \operatorname{int} F$. Then $\overline{U} \subseteq \overline{\operatorname{int} F}$, and since $\operatorname{int} F \subseteq F$ with $F$ closed, the closure of $\operatorname{int} F$ is contained in $F$. Hence $\overline{U} \subseteq F$.
+**Proof.** Suppose $\overline{U} \subseteq F$. Then $\Omega \subseteq \overline{U} \subseteq F$, and since $\Omega$ is open and $F$ is closed with $\Omega \subseteq F$, the open set $\Omega$ is contained in the largest open set inside $F$, which is $\operatorname{int} F$. Conversely suppose $\Omega \subseteq \operatorname{int} F$. Then $\overline{U} \subseteq \overline{\operatorname{int} F}$, and since $\operatorname{int} F \subseteq F$ with $F$ closed, the closure of $\operatorname{int} F$ is contained in $F$. Hence $\overline{U} \subseteq F$.
 
-The adjunction is the exact sense in which the interior is the best open approximation from below and the closure the best closed approximation from above: the theorem says that the closure of $U$ is the smallest closed set containing $U$ and the interior of $F$ the largest open set contained in $F$, which is the content of *Operators on a Fixed Set*, read as a Galois connection between the two lattices.
+The adjunction is the exact sense in which the interior is the best open approximation from below and the closure the best closed approximation from above: the theorem says that the closure of $\Omega$ is the smallest closed set containing $\Omega$ and the interior of $F$ the largest open set contained in $F$, which is the content of *Operators on a Fixed Set*, read as a Galois connection between the two lattices.
 
 ### The Two Interpretations of the Adjunction
 
 **Corollary.** The adjunction has the two equivalent forms
 
 $$
-C(U) = \bigcap \{\, F \in \mathcal{F}(X) : U \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, U \in \mathcal{O}(X) : C(U) \subseteq F \,\},
+C(\Omega) = \bigcap \{\, F \in \mathcal{F}(X) : \Omega \subseteq I(F) \,\} \quad \text{and} \quad I(F) = \bigcup \{\, \Omega \in \mathcal{O}(X) : C(\Omega) \subseteq F \,\},
 $$
 
 which express each operator through the other.
@@ -90,7 +90,7 @@ which express each operator through the other.
 
 ### The Condition
 
-The adjunction of the theorem is stated for $U$ open and $F$ closed. The natural question is when it holds for all pairs of subsets, that is, when
+The adjunction of the theorem is stated for $\Omega$ open and $F$ closed. The natural question is when it holds for all pairs of subsets, that is, when
 
 $$
 \overline{A} \subseteq B \iff A \subseteq \operatorname{int} B \qquad (A, B \subseteq X)
@@ -100,11 +100,11 @@ for arbitrary $A$ and $B$. The answer is that this is a strong condition on the 
 
 **Theorem.** The global adjunction holds for every pair of subsets of $X$ if and only if every open subset of $X$ is closed.
 
-**Proof.** Suppose every open set is closed. Then every closed set is open as well, since the complement of a closed set is open and hence closed. If $\overline{A} \subseteq B$ then $A \subseteq \overline{A} \subseteq B$, and $\overline{A}$ is closed, hence open and contained in $B$, so $\overline{A} \subseteq \operatorname{int} B$ and $A \subseteq \operatorname{int} B$. Conversely if $A \subseteq \operatorname{int} B$ then $\overline{A} \subseteq \overline{\operatorname{int} B} = \operatorname{int} B \subseteq B$, since $\operatorname{int} B$ is open and hence closed. For the converse direction, suppose the global adjunction holds and let $U$ be open. Take $A = B = U$: the right side $U \subseteq \operatorname{int} U = U$ is true, so the left side $\overline{U} \subseteq U$ is true, whence $\overline{U} = U$ and $U$ is closed.
+**Proof.** Suppose every open set is closed. Then every closed set is open as well, since the complement of a closed set is open and hence closed. If $\overline{A} \subseteq B$ then $A \subseteq \overline{A} \subseteq B$, and $\overline{A}$ is closed, hence open and contained in $B$, so $\overline{A} \subseteq \operatorname{int} B$ and $A \subseteq \operatorname{int} B$. Conversely if $A \subseteq \operatorname{int} B$ then $\overline{A} \subseteq \overline{\operatorname{int} B} = \operatorname{int} B \subseteq B$, since $\operatorname{int} B$ is open and hence closed. For the converse direction, suppose the global adjunction holds and let $\Omega$ be open. Take $A = B = \Omega$: the right side $\Omega \subseteq \operatorname{int} \Omega = \Omega$ is true, so the left side $\overline{U} \subseteq \Omega$ is true, whence $\overline{U} = \Omega$ and $\Omega$ is closed.
 
 **Corollary.** The global adjunction holds in the discrete spaces, in the indiscrete spaces, in every disjoint union of indiscrete spaces, and more generally whenever every open set is closed; and it fails in every space in which some open set is not closed, in particular in $\mathbb{R}$ and in every Hausdorff space that is not discrete.
 
-**Proof.** In a discrete space every set is clopen, and in an indiscrete space the only open sets are $\emptyset$ and $X$, both closed; a disjoint union of spaces with the property has the property, since its open sets are unions of open sets of the summands. In a space with an open set $U$ that is not closed the pair $A = B = U$ refutes the global adjunction by the last part of the proof. A Hausdorff space that is not discrete has a point $x$ that is not isolated; then $X \setminus \{x\}$ is open, and it is not closed, because its complement $\{x\}$ is not open.
+**Proof.** In a discrete space every set is clopen, and in an indiscrete space the only open sets are $\emptyset$ and $X$, both closed; a disjoint union of spaces with the property has the property, since its open sets are unions of open sets of the summands. In a space with an open set $\Omega$ that is not closed the pair $A = B = \Omega$ refutes the global adjunction by the last part of the proof. A Hausdorff space that is not discrete has a point $x$ that is not isolated; then $X \setminus \{x\}$ is open, and it is not closed, because its complement $\{x\}$ is not open.
 
 ### The Failing Example, and the Exact Boundary
 
@@ -126,7 +126,7 @@ for arbitrary $A$ and $B$. The answer is that this is a strong condition on the 
 
 ## Summary
 
-The power set of a space is a complete Boolean algebra, and the open sets and the closed sets are two complete lattices inside it, exchanged by the complement anti-isomorphism. The closure is a map from the open lattice to the closed lattice and the interior a map back, and they are adjoint: $\overline{U} \subseteq F$ if and only if $U \subseteq \operatorname{int} F$ for open $U$ and closed $F$, so the closure is the left adjoint of the interior. Each adjoint is recovered from the other by the Galois formulas for the smallest closed set containing $U$ and the largest open set contained in $F$. The adjunction extends to all pairs of subsets exactly when every open set is closed, a condition that holds in the discrete spaces, the indiscrete spaces and their disjoint unions, and fails in every space with an open set that is not closed, such as $\mathbb{R}$; the obstruction is that the closure preserves finite unions but not arbitrary ones, so it is a left adjoint on the open lattice and not on the whole power set. Among the operators of the algebra, the Boolean homomorphisms preserving arbitrary unions are exactly the preimage operators of maps, and they include the operators of continuous maps; the closure and the interior are not of this kind.
+The power set of a space is a complete Boolean algebra, and the open sets and the closed sets are two complete lattices inside it, exchanged by the complement anti-isomorphism. The closure is a map from the open lattice to the closed lattice and the interior a map back, and they are adjoint: $\overline{U} \subseteq F$ if and only if $\Omega \subseteq \operatorname{int} F$ for open $\Omega$ and closed $F$, so the closure is the left adjoint of the interior. Each adjoint is recovered from the other by the Galois formulas for the smallest closed set containing $\Omega$ and the largest open set contained in $F$. The adjunction extends to all pairs of subsets exactly when every open set is closed, a condition that holds in the discrete spaces, the indiscrete spaces and their disjoint unions, and fails in every space with an open set that is not closed, such as $\mathbb{R}$; the obstruction is that the closure preserves finite unions but not arbitrary ones, so it is a left adjoint on the open lattice and not on the whole power set. Among the operators of the algebra, the Boolean homomorphisms preserving arbitrary unions are exactly the preimage operators of maps, and they include the operators of continuous maps; the closure and the interior are not of this kind.
 
 ## Summary of Notation
 
@@ -136,7 +136,7 @@ The power set of a space is a complete Boolean algebra, and the open sets and th
 | $\mathcal{O}(X)$, $\mathcal{F}(X)$ | Complete lattices of open sets and of closed sets |
 | $\mathcal{C}(X)$ | The clopen subsets, a Boolean subalgebra |
 | $\complement$ | Complement, an anti-isomorphism $\mathcal{O}(X) \to \mathcal{F}(X)$ |
-| $C(U) = \overline{U}$ | Closure, a map $\mathcal{O}(X) \to \mathcal{F}(X)$ |
+| $C(\Omega) = \overline{U}$ | Closure, a map $\mathcal{O}(X) \to \mathcal{F}(X)$ |
 | $I(F) = \operatorname{int} F$ | Interior, a map $\mathcal{F}(X) \to \mathcal{O}(X)$ |
 | $C \dashv I$, $g \dashv h$ | Adjunction (Galois connection); $g(p) \leq q \iff p \leq h(q)$ |
 | global adjunction | $\overline{A} \subseteq B \iff A \subseteq \operatorname{int} B$ for all $A, B$; holds iff every open set is closed |

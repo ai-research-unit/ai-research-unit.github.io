@@ -6,11 +6,11 @@ The block $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ of *Introduct
 
 The remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; the same six are read by the other pairings in *Remarkable Subspaces under the General Quaternionic Sesqualgebra* and its companions; the form that the block pairs with is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; and the product the block splits is *Introduction to the General Quaternionic Sesqualgebra*. This article owns the reading of the block on the remarkable subspaces themselves.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, and a generic element $\tilde Q=Q_0e_0+\vec Q$, with $Q_k=q_k+iq'_k$ real and imaginary parts. The remarkable subspaces are real subspaces of the complex space; the word *stable* means that the value of two elements of the subspace lies in it, in the real sense, and not that the subspace is a complex subspace. The centre and the vector subspace are the only two of the remarkable subspaces that are complex subspaces.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$, and a generic element $\tilde Q=Q_te_t+\vec Q$, with $Q_\mu=q_\mu+iq'_\mu$ real and imaginary parts. The remarkable subspaces are real subspaces of the complex space; the word *stable* means that the value of two elements of the subspace lies in it, in the real sense, and not that the subspace is a complex subspace. The centre and the vector subspace are the only two of the remarkable subspaces that are complex subspaces.
 
 ## The Vanishing on the Centre and the Image
 
-**Proposition.** The block annihilates the centre in both slots: for every central element $\tilde A=Ae_0$,
+**Proposition.** The block annihilates the centre in both slots: for every central element $\tilde A=Ae_t$,
 
 $$
 \tilde A\diamond\tilde Q=0,\qquad \tilde Q\diamond\tilde A=0 .
@@ -20,21 +20,21 @@ $$
 
 **Proposition.** The image of the block on every subspace is contained in the vector subspace, and on the vector subspace the block is stable with image the whole vector subspace.
 
-*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathrm{Vect}(\mathbb{B})$. On $\mathrm{Vect}(\mathbb{B})$ the vector parts are the elements themselves, so the value $\vec Q\times\overline{\vec Q'}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions.
+*Proof.* Every value of the block is pure vector, so the image of any subspace lies in $\mathrm{Vect}(\mathbb{B})$. On $\mathrm{Vect}(\mathbb{B})$ the vector parts are the elements themselves, so the value $\vec Q_1\times\overline{\vec Q_2}$ of two complex vectors is again a complex vector, and the values fill the three complex dimensions.
 
 ## Remarkable Subspaces
 
 ### The Centre $\mathbb{C}_{\mathbb{B}}$
 
-The centre is the complex line of the multiples of $e_0$. The block vanishes on it identically, so the centre is **stable** and is in fact contained in the annihilator of the block; its diagonal is zero, and every element of the centre gives the value zero with every element of the space on either side. The centre is the only subspace of the remarkable subspaces on which the block vanishes identically in both arguments.
+The centre is the complex line of the multiples of $e_t$. The block vanishes on it identically, so the centre is **stable** and is in fact contained in the annihilator of the block; its diagonal is zero, and every element of the centre gives the value zero with every element of the space on either side. The centre is the only subspace of the remarkable subspaces on which the block vanishes identically in both arguments.
 
 ### The Vector Subspace $\mathrm{Vect}(\mathbb{B})$
 
-The vector subspace is the complex span of $e_1,e_2,e_3$, with real basis $e_k,ie_k$. The block is **stable** on it and its image is the whole subspace: for two complex vectors $\vec Q,\vec Q'$ the value $\vec Q\times\overline{\vec Q'}$ is a complex vector, and the cross product with a fixed real direction already fills a complex plane. The diagonal is the conjugate cross product $\vec Q\times\overline{\vec Q}$, which is **not identically zero** on the subspace: it vanishes exactly when $\vec Q$ is a complex multiple of a real vector, that is on the union of the complex lines through the real directions, a quadric cone of real dimension $4$ and a proper subset; the witness $e_1+ie_2$ lies in the vector subspace and has diagonal $-2ie_3$. The vector subspace is the one stable subspace on which the diagonal does not vanish identically.
+The vector subspace is the complex span of $\vec e_x,\vec e_y,\vec e_z$, with real basis $\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z$. The block is **stable** on it and its image is the whole subspace: for two complex vectors $\vec Q_1,\vec Q_2$ the value $\vec Q_1\times\overline{\vec Q_2}$ is a complex vector, and the cross product with a fixed real direction already fills a complex plane. The diagonal is the conjugate cross product $\vec Q\times\overline{\vec Q}$, which is **not identically zero** on the subspace: it vanishes exactly when $\vec Q$ is a complex multiple of a real vector, that is on the union of the complex lines through the real directions, a quadric cone of real dimension $4$ and a proper subset; the witness $\vec e_x+i\vec e_y$ lies in the vector subspace and has diagonal $-2i\vec e_z$. The vector subspace is the one stable subspace on which the diagonal does not vanish identically.
 
 ### The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
 
-The quaternion subspace is the real span of $e_0,e_1,e_2,e_3$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
+The quaternion subspace is the real span of $e_t,\vec e_x,\vec e_y,\vec e_z$, of real coefficients. The block is **stable** on it: two real vector parts have a real cross product, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\mathbb{B})$, the real vector directions. On this subspace the block is the ordinary cross product of the real vector parts,
 
 $$
 \tilde P\diamond\tilde Q=\vec P\times\vec Q=\mathrm{APA}(\tilde P,\tilde Q)\qquad(\tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}}),
@@ -44,7 +44,7 @@ the real coincidence of the block, and its image is the three real dimensions of
 
 ### The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
-The anti-quaternion subspace is the real span of $ie_0,ie_1,ie_2,ie_3$, of imaginary coefficients. The block is **not stable** on it: for two imaginary elements $\tilde P=i\vec a$, $\tilde Q=i\vec b$ with $\vec a,\vec b$ real, the value is
+The anti-quaternion subspace is the real span of $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, of imaginary coefficients. The block is **not stable** on it: for two imaginary elements $\tilde P=i\vec a$, $\tilde Q=i\vec b$ with $\vec a,\vec b$ real, the value is
 
 $$
 (i\vec a)\diamond(i\vec b)=i\vec a\times\overline{i\vec b}=i\vec a\times(-i\vec b)=\vec a\times\vec b,
@@ -54,11 +54,11 @@ a **real** vector, which lies in $\mathbb{H}_{\mathbb{B}}\cap\mathrm{Vect}(\math
 
 ### The Hermitian Subspace $\mathbb{M}_+$
 
-The Hermitian subspace is the real span of $e_0,ie_1,ie_2,ie_3$, with real scalar coordinate and imaginary vector coordinates. The block is **not stable** on it: for two elements $i\vec a,i\vec b$ with real vector parts, the same computation as for the anti-quaternion subspace gives the real vector $\vec a\times\vec b$, which is not Hermitian, the vector part of a Hermitian element being imaginary. Its intersection with the vector subspace is the imaginary vector directions, which the block does not reach. The diagonal is **identically zero**, an imaginary vector being a complex multiple of a real vector.
+The Hermitian subspace is the real span of $e_t,i\vec e_x,i\vec e_y,i\vec e_z$, with real scalar coordinate and imaginary vector coordinates. The block is **not stable** on it: for two elements $i\vec a,i\vec b$ with real vector parts, the same computation as for the anti-quaternion subspace gives the real vector $\vec a\times\vec b$, which is not Hermitian, the vector part of a Hermitian element being imaginary. Its intersection with the vector subspace is the imaginary vector directions, which the block does not reach. The diagonal is **identically zero**, an imaginary vector being a complex multiple of a real vector.
 
 ### The Anti-Hermitian Subspace $\mathbb{M}_-$
 
-The anti-Hermitian subspace is the real span of $ie_0,e_1,e_2,e_3$, with imaginary scalar coordinate and real vector coordinates. The block is **stable** on it: for two elements with real vector parts the value is the real vector $\vec a\times\vec b$, which is anti-Hermitian. On this subspace the block is again the ordinary cross product of the real vector parts, with the scalar coordinates ignored, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
+The anti-Hermitian subspace is the real span of $ie_t,\vec e_x,\vec e_y,\vec e_z$, with imaginary scalar coordinate and real vector coordinates. The block is **stable** on it: for two elements with real vector parts the value is the real vector $\vec a\times\vec b$, which is anti-Hermitian. On this subspace the block is again the ordinary cross product of the real vector parts, with the scalar coordinates ignored, and its image is the three real dimensions of the real vector directions. The diagonal is **identically zero**, a real vector being its own conjugate.
 
 **Remark (the four stable subspaces and the two failing ones).** Closure holds on the centre, on the vector subspace, on the quaternion subspace and on the anti-Hermitian subspace, and it fails on the anti-quaternion subspace and on the Hermitian subspace. The reason is uniform: the block always lands in the vector subspace, so a subspace is stable exactly when the values that reach it lie in its intersection with the vector subspace. The quaternion and the anti-Hermitian subspaces contain the real vector directions and stay stable; the anti-quaternion and the Hermitian subspaces contain only the imaginary vector directions, and the value of two of their elements is a real vector, so they fail. The centre is stable because its value is zero. The menu entry of the block records the vanishing on the centre and the pure-vector image; the failure of closure is not shared by the quaternion and the anti-Hermitian subspaces, and the reading here corrects the impression that the block fails closure on every subspace other than the centre and the vector subspace.
 
@@ -66,12 +66,12 @@ The anti-Hermitian subspace is the real span of $ie_0,e_1,e_2,e_3$, with imagina
 
 | Subspace | Natural real basis | Value of the block on two of its elements | Stable | Diagonal |
 |---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_0,\,ie_0$ | $0$ | yes | $0$ |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $e_1,e_2,e_3,\,ie_1,ie_2,ie_3$ | a complex vector | yes | not identically zero |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_0,e_1,e_2,e_3$ | a real vector | yes | $0$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_0,ie_1,ie_2,ie_3$ | a real vector | no | $0$ |
-| Hermitian $\mathbb{M}_+$ | $e_0,ie_1,ie_2,ie_3$ | a real vector | no | $0$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_0,e_1,e_2,e_3$ | a real vector | yes | $0$ |
+| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $0$ | yes | $0$ |
+| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | a complex vector | yes | not identically zero |
+| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
+| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
+| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | a real vector | no | $0$ |
+| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | a real vector | yes | $0$ |
 
 **Remark (the four subspaces with a vanishing diagonal).** The diagonal of the block is identically zero on the centre and on the four four-dimensional subspaces, and it is not identically zero on the vector subspace alone. The four four-dimensional subspaces have their vector part real or purely imaginary, and a real or purely imaginary vector is a complex multiple of a real vector, so the diagonal vanishes; on the vector subspace the vector part ranges over all complex vectors and the diagonal does not vanish identically.
 

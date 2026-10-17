@@ -4,28 +4,28 @@
 
 This article studies the orthogonal and the Lorentz-type transformations carried by the reduced biquaternion algebra. The algebra is four-dimensional over the reals, it carries the definite Euclidean form $\langle\cdot,\cdot\rangle_{\natural*}$ of signature $(4,0)$ and the indefinite form $\langle\cdot,\cdot\rangle_{*}$ of signature $(2,2)$, and the elements of the algebra act on it by multiplication, which the commutativity makes the same on the left and on the right. The article records the forms and their signatures, the isometry groups, the versors and their action, the elliptic rotations in the two definite planes, the hyperbolic rotations of the split plane, the group of units preserving the indefinite form, the reading of the polar form as a rotation together with a hyperbolic transformation, and the fact that the conjugation action is trivial. The treatment is purely mathematical; the word rotation is used for the elliptic action on a definite plane and the hyperbolic rotation for the dilation of the two factors reciprocally, with no physical interpretation.
 
-Throughout the element is $T=A+Bj$ with $A=a+ia'$, $B=b+ib'$, the idempotent coordinates are $q_1=A+B$, $q_2=A-B$, and $T=q_1\Pi_{1}+q_2\Pi_{2}$ with $\Pi_{1,2}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. The squared Euclidean norm is $\langle T\rangle_{\natural*}=\lvert A\rvert^{2}+\lvert B\rvert^{2}$, the indefinite form is $\langle T\rangle_{*}=\lvert A\rvert^{2}-\lvert B\rvert^{2}$, and the algebra norm is $\langle T\rangle_{\natural}=TT^{\natural}=A^{2}-B^{2}=q_1q_2$.
+Throughout the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$. The squared Euclidean norm is $\langle Q_\pm\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}$, the indefinite form is $\langle Q_\pm\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$, and the algebra norm is $\langle Q_\pm\rangle_{\natural}=Q_\pm Q_\pm^{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$.
 
 ## The Quadratic Forms and Their Signatures
 
 **Theorem (the forms).** The two real quadratic forms
 $$
-\langle T\rangle_{\natural*}=a^{2}+a'^{2}+b^{2}+b'^{2},\qquad \langle T\rangle_{*}=a^{2}+a'^{2}-b^{2}-b'^{2}
+\langle Q_\pm\rangle_{\natural*}=q_+^{2}+q'^{2}_{+}+q_-^{2}+q'^{2}_{-},\qquad \langle Q_\pm\rangle_{*}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}
 $$
 have signatures $(4,0)$ and $(2,2)$ respectively. They are the scalar parts of the two products with the coefficient conjugation and with the star,
 $$
-\langle T\rangle_{\natural*}=\operatorname{Sc}\bigl(T\bar T\bigr),\qquad \langle T\rangle_{*}=\operatorname{Sc}\bigl(TT^{*}\bigr),
+\langle Q_\pm\rangle_{\natural*}=\operatorname{Sc}\bigl(Q_\pm\bar Q_\pm\bigr),\qquad \langle Q_\pm\rangle_{*}=\operatorname{Sc}\bigl(Q_\pm Q_\pm^{*}\bigr),
 $$
 where $\operatorname{Sc}(X+Yj)=X$ is the scalar part, and the algebra norm is complex-valued,
 $$
-\langle T\rangle_{\natural}=TT^{\natural}=A^{2}-B^{2}=\bigl(a^{2}-a'^{2}-b^{2}+b'^{2}\bigr)+2i\bigl(aa'-bb'\bigr)=q_1q_2,
+\langle Q_\pm\rangle_{\natural}=Q_\pm Q_\pm^{\natural}=Q_+^{2}-Q_-^{2}=\bigl(q_+^{2}-q'^{2}_{+}-q_-^{2}+q'^{2}_{-}\bigr)+2i\bigl(q_+q'_+-q_-q'_-\bigr)=Q_{++}Q_{--},
 $$
-whose real part and imaginary part are each a form of signature $(2,2)$. The forms $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$ are related to the two complex coefficients by $\langle\cdot,\cdot\rangle_{\natural*}=\lvert A\rvert^{2}+\lvert B\rvert^{2}$ and $\langle\cdot,\cdot\rangle_{*}=\lvert A\rvert^{2}-\lvert B\rvert^{2}$, and in the idempotent coordinates
+whose real part and imaginary part are each a form of signature $(2,2)$. The forms $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$ are related to the two complex coefficients by $\langle\cdot,\cdot\rangle_{\natural*}=\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}$ and $\langle\cdot,\cdot\rangle_{*}=\lvert Q_+\rvert^{2}-\lvert Q_-\rvert^{2}$, and in the idempotent coordinates
 $$
-K=\tfrac12\bigl(\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2}\bigr),\qquad H=\operatorname{Re}(q_1\bar q_2).
+K=\tfrac12\bigl(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2}\bigr),\qquad H=\operatorname{Re}(Q_{++}\bar Q_{--}).
 $$
 
-*Proof.* The coordinate expressions are the definitions; the signature of $\langle\cdot\rangle_{\natural*}$ is $(4,0)$ because it is a sum of four squares; the form $\langle\cdot,\cdot\rangle_{*}$ is a sum of two squares minus two squares, hence of signature $(2,2)$; multiplying out $T\bar T$ and $TT^{*}$ in the basis $1,j$ and taking the scalar part gives the two displays; the real and the imaginary parts of $\langle\cdot\rangle_{\natural}=A^{2}-B^{2}$ are computed directly and are indefinite of type $(2,2)$; and $\lvert A\rvert^{2}\pm\lvert B\rvert^{2}=\tfrac12(\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2})\pm\operatorname{Re}(q_1\bar q_2)$ from $A=\tfrac12(q_1+q_2)$, $\langle\cdot,\cdot\rangle=\tfrac12(q_1-q_2)$.
+*Proof.* The coordinate expressions are the definitions; the signature of $\langle\cdot\rangle_{\natural*}$ is $(4,0)$ because it is a sum of four squares; the form $\langle\cdot,\cdot\rangle_{*}$ is a sum of two squares minus two squares, hence of signature $(2,2)$; multiplying out $Q_\pm\bar Q_\pm$ and $Q_\pm Q_\pm^{*}$ in the basis $1,j$ and taking the scalar part gives the two displays; the real and the imaginary parts of $\langle\cdot\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ are computed directly and are indefinite of type $(2,2)$; and $\lvert Q_+\rvert^{2}\pm\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})\pm\operatorname{Re}(Q_{++}\bar Q_{--})$ from $Q_+=\tfrac12(Q_{++}+Q_{--})$, $Q_-=\tfrac12(Q_{++}-Q_{--})$.
 
 **Corollary (the two forms are the natural ones).** The form $\langle\cdot,\cdot\rangle_{\natural*}$ is the Euclidean norm used throughout the corpus, and the form $\langle\cdot,\cdot\rangle_{*}$ is the indefinite form whose definite and split parts correspond to the definite generator $i$ and the split generator $j$; the algebra is thus simultaneously a Euclidean and a Lorentz-type object, and both structures are read in the four real coordinates.
 
@@ -37,35 +37,35 @@ $$
 
 **Theorem (the orthogonal groups and the realised subgroups).** The isometry group of $\langle\cdot\rangle_{\natural*}$ is $O(4)$, of dimension six, with maximal compact subgroup $O(4)$ itself; the isometry group of $\langle\cdot\rangle_{*}$ is $O(2,2)$, of dimension six, with maximal compact subgroup $O(2)\times O(2)$ and identity component $\mathrm{SO}(2,2)_{0}\cong(SL_{2}(\mathbb{R})\times SL_{2}(\mathbb{R}))/\{\pm1\}$. By multiplication the algebra realises inside $O(K)$ the **torus**
 $$
-T^{2}=\{T\in\mathbb{B}_{\mathrm{r}}^{\times}:\lvert q_1\rvert=\lvert q_2\rvert=1\},
+T^{2}=\{Q_\pm\in\mathbb{B}_{\mathrm{r}}^{\times}:\lvert Q_{++}\rvert=\lvert Q_{--}\rvert=1\},
 $$
 which is a maximal torus of $O(4)$, and inside $O(H)$ the two-real-dimensional group
 $$
-\{p\,\Pi_{1}+\bar p^{-1}\,\Pi_{2}:p\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
+\{p\,\Pi_++\bar p^{-1}\,\Pi_-:p\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
 $$
 whose compact part is the diagonal circle $\{e^{i\theta}\}$.
 
-*Proof.* The orthogonal groups of the two forms are the classical ones, of dimension $n(n-1)/2=6$ for a four-dimensional form, and the maximal compact subgroup of $O(2,2)$ is the product of the two $O(2)$ factors of the diagonalisation. An element $P=p\Pi_{1}+q\Pi_{2}$ acts on $\langle\cdot\rangle_{\natural*}$ by $\langle PX\rangle_{\natural*}=\tfrac12(\lvert p\rvert^{2}\lvert x_{1}\rvert^{2}+\lvert q\rvert^{2}\lvert x_{2}\rvert^{2})$, which equals $\langle X\rangle_{\natural*}$ for all $X$ exactly when $\lvert p\rvert=\lvert q\rvert=1$; it acts on the indefinite form by $\langle PX\rangle_{*}=\operatorname{Re}\bigl(p\bar q\,q_1\bar q_2\bigr)$, which equals $\langle X\rangle_{*}=\operatorname{Re}(q_1\bar q_2)$ for all $X$ exactly when $p\bar q=1$, that is $q=\bar p^{-1}$; the two conditions give the two displayed groups, and the compact part of the second is the set of its elements with both moduli equal to one, that is the elements $p=q$ on the unit circle.
+*Proof.* The orthogonal groups of the two forms are the classical ones, of dimension $n(n-1)/2=6$ for a four-dimensional form, and the maximal compact subgroup of $O(2,2)$ is the product of the two $O(2)$ factors of the diagonalisation. An element $P=p\Pi_++q\Pi_-$ acts on $\langle\cdot\rangle_{\natural*}$ by $\langle P Q_\pm\rangle_{\natural*}=\tfrac12(\lvert p\rvert^{2}\lvert Q_{++}\rvert^{2}+\lvert q\rvert^{2}\lvert Q_{--}\rvert^{2})$, which equals $\langle Q_\pm\rangle_{\natural*}$ for all $Q_\pm$ exactly when $\lvert p\rvert=\lvert q\rvert=1$; it acts on the indefinite form by $\langle P Q_\pm\rangle_{*}=\operatorname{Re}\bigl(p\bar q\,Q_{++}\bar Q_{--}\bigr)$, which equals $\langle Q_\pm\rangle_{*}=\operatorname{Re}(Q_{++}\bar Q_{--})$ for all $Q_\pm$ exactly when $p\bar q=1$, that is $q=\bar p^{-1}$; the two conditions give the two displayed groups, and the compact part of the second is the set of its elements with both moduli equal to one, that is the elements $p=q$ on the unit circle.
 
-**Corollary (only the diagonal subgroups are realised).** Because the algebra is commutative, the multiplication acts diagonally on the two idempotent factors and never permutes them, so a realised subgroup never exchanges the two factors and is a proper subgroup of the full orthogonal group. The realised subgroups are the torus $T^{2}$ inside $O(K)$ and the group $\mathbb{C}^{\times}$ inside $O(H)$, and their intersection is the diagonal circle. The torus preserves also the companion form $S=\tfrac12(\lvert q_1\rvert^{2}-\lvert q_2\rvert^{2})$ of signature $(2,2)$, since a versor preserves each modulus separately.
+**Corollary (only the diagonal subgroups are realised).** Because the algebra is commutative, the multiplication acts diagonally on the two idempotent factors and never permutes them, so a realised subgroup never exchanges the two factors and is a proper subgroup of the full orthogonal group. The realised subgroups are the torus $T^{2}$ inside $O(K)$ and the group $\mathbb{C}^{\times}$ inside $O(H)$, and their intersection is the diagonal circle. The torus preserves also the companion form $S=\tfrac12(\lvert Q_{++}\rvert^{2}-\lvert Q_{--}\rvert^{2})$ of signature $(2,2)$, since a versor preserves each modulus separately.
 
-*Proof.* Left multiplication acts on the idempotent coordinates by the diagonal matrix with entries $p,q$, so the image of the unit group in $\mathrm{GL}_{4}(\mathbb{R})$ is diagonal; the conditions of the theorem select the two displayed subgroups, which are diagonal and therefore contain no permutation of the factors; the diagonal circle is the set of the elements with $\lvert p\rvert=\lvert q\rvert=1$ and $q=\bar p^{-1}$, that is $p=q$ on the unit circle; and $S$ is preserved because $\lvert px_{1}\rvert^{2}=\lvert x_{1}\rvert^{2}$ and $\lvert qx_{2}\rvert^{2}=\lvert x_{2}\rvert^{2}$ for a versor.
+*Proof.* Left multiplication acts on the idempotent coordinates by the diagonal matrix with entries $p,q$, so the image of the unit group in $\mathrm{GL}_{4}(\mathbb{R})$ is diagonal; the conditions of the theorem select the two displayed subgroups, which are diagonal and therefore contain no permutation of the factors; the diagonal circle is the set of the elements with $\lvert p\rvert=\lvert q\rvert=1$ and $q=\bar p^{-1}$, that is $p=q$ on the unit circle; and $S$ is preserved because $\lvert pQ_{++}\rvert^{2}=\lvert Q_{++}\rvert^{2}$ and $\lvert qQ_{--}\rvert^{2}=\lvert Q_{--}\rvert^{2}$ for a versor.
 
 ## The Versors and Their Action
 
-**Definition.** A **versor** is a unit $P$ with $\lvert q_{1,P}\rvert=\lvert q_{2,P}\rvert=1$; the versors form the group $T^{2}$.
+**Definition.** A **versor** is a unit $P=p\Pi_++q\Pi_-$ with $\lvert p\rvert=\lvert q\rvert=1$; the versors form the group $T^{2}$.
 
 **Theorem (the action of a versor).** Every versor has the form
 $$
-P=e^{i\theta}\Pi_{1}+e^{i\psi}\Pi_{2},\qquad \theta,\psi\in\mathbb{R},
+P=e^{i\theta}\Pi_++e^{i\psi}\Pi_-,\qquad \theta,\psi\in\mathbb{R},
 $$
 it preserves the Euclidean form $\langle\cdot,\cdot\rangle_{\natural*}$, it acts by left multiplication as the diagonal map
 $$
-X=x_{1}\Pi_{1}+x_{2}\Pi_{2}\;\longmapsto\;e^{i\theta}x_{1}\Pi_{1}+e^{i\psi}x_{2}\Pi_{2},
+Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-\;\longmapsto\;e^{i\theta}Q_{++}\Pi_++e^{i\psi}Q_{--}\Pi_-,
 $$
 and it scales the algebra norm by $\langle P\rangle_{\natural}=e^{i(\theta+\psi)}$. Among the versors, exactly those with $\theta=\psi$, that is the diagonal circle, preserve the indefinite form $\langle\cdot,\cdot\rangle_{*}$ as well.
 
-*Proof.* A unit with both coordinate moduli equal to one has each coordinate on the unit circle, giving the displayed form; the action is the diagonal multiplication by the two coordinates, which preserves the two moduli, hence $\langle\cdot,\cdot\rangle_{\natural*}=\tfrac12(\lvert x_{1}\rvert^{2}+\lvert x_{2}\rvert^{2})$ and the companion form $S$, and multiplies the product $x_{1}x_{2}$, hence $\langle\cdot,\cdot\rangle_{\natural}$ by $pq=e^{i(\theta+\psi)}$; the indefinite form transforms by $\langle PX\rangle_{*}=\operatorname{Re}(e^{i(\theta-\psi)}q_1\bar q_2)$, which equals $\langle X\rangle_{*}$ for all $X$ exactly when $\theta=\psi$.
+*Proof.* A unit with both coordinate moduli equal to one has each coordinate on the unit circle, giving the displayed form; the action is the diagonal multiplication by the two coordinates, which preserves the two moduli, hence $\langle\cdot,\cdot\rangle_{\natural*}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ and the companion form $S$, and multiplies the product $Q_{++}Q_{--}$, hence $\langle\cdot,\cdot\rangle_{\natural}$ by $pq=e^{i(\theta+\psi)}$; the indefinite form transforms by $\langle P Q_\pm\rangle_{*}=\operatorname{Re}(e^{i(\theta-\psi)}Q_{++}\bar Q_{--})$, which equals $\langle Q_\pm\rangle_{*}$ for all $Q_\pm$ exactly when $\theta=\psi$.
 
 **Corollary (the kernel and the stabiliser of the forms).** The action of $T^{2}$ is faithful, and the pair $(\theta,\psi)$ is determined modulo $2\pi$ in each entry; the versors act on the algebra as the diagonal unitary transformations of the two complex factors, and the subgroup fixing $\langle\cdot\rangle_{*}$ is the diagonal circle, which is also the compact part of the realised group $\mathbb{C}^{\times}$ of $O(H)$.
 
@@ -79,13 +79,13 @@ e^{i\theta}=\cos\theta+i\sin\theta,\qquad e^{ij\psi}=\cos\psi+ij\sin\psi
 $$
 generate the two elliptic subgroups in the planes $\mathbb{R}\{1,i\}$ and $\mathbb{R}\{1,ij\}$. Their product is the whole torus $T^{2}$:
 $$
-e^{i\theta}e^{ij\psi}=e^{i(\theta+\psi)}\Pi_{1}+e^{i(\theta-\psi)}\Pi_{2},
+e^{i\theta}e^{ij\psi}=e^{i(\theta+\psi)}\Pi_++e^{i(\theta-\psi)}\Pi_-,
 $$
 so the two elliptic rotations produce the diagonal phases $(\theta+\psi,\theta-\psi)$ of the two idempotent factors.
 
 *Proof.* The closed forms are the Euler formulas in the two definite planes; the coordinates of $ij$ are $(i,-i)$, so $e^{ij\psi}$ has coordinates $(e^{i\psi},e^{-i\psi})$, and multiplying by the coordinates $(e^{i\theta},e^{i\theta})$ of $e^{i\theta}$ gives the displayed pair; as $\theta,\psi$ vary the pair sweeps the whole torus.
 
-**Corollary (the two rotations of the two factors).** Each idempotent factor $\mathbb{C}\Pi_{j}$ carries its own complex plane, and the torus acts on it by the rotation of that plane; the two rotations are independent, and their product is the general versor action. This is the precise sense in which the reduced biquaternion algebra carries **two** rotations, one per factor. The two circles act differently on the forms: the diagonal circle $e^{i\theta}$ preserves both $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$, while the second circle $e^{ij\psi}$ preserves $\langle\cdot,\cdot\rangle_{\natural*}$ but not $\langle\cdot,\cdot\rangle_{*}$.
+**Corollary (the two rotations of the two factors).** Each idempotent factor $\mathbb{C}\Pi_i$ carries its own complex plane, and the torus acts on it by the rotation of that plane; the two rotations are independent, and their product is the general versor action. This is the precise sense in which the reduced biquaternion algebra carries **two** rotations, one per factor. The two circles act differently on the forms: the diagonal circle $e^{i\theta}$ preserves both $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$, while the second circle $e^{ij\psi}$ preserves $\langle\cdot,\cdot\rangle_{\natural*}$ but not $\langle\cdot,\cdot\rangle_{*}$.
 
 *Proof.* The first coordinate of the algebra is a complex number on which the action is the rotation by the phase $\theta+\psi$, and the second coordinate is a complex number on which the action is the rotation by $\theta-\psi$; the map from the pair of phases to the pair of rotations is invertible; and the two form statements are those of the versor theorem.
 
@@ -101,42 +101,42 @@ a+bj\;\longmapsto\;(a\cosh\phi+b\sinh\phi)+(a\sinh\phi+b\cosh\phi)\,j ,
 $$
 which preserves the form $\langle a+bj\rangle_{*}=a^{2}-b^{2}$ and the form $\langle a+bj\rangle_{\natural}=a^{2}-b^{2}$. In the idempotent coordinates the same action dilates the two factors reciprocally,
 $$
-(q_1,q_2)\;\longmapsto\;(e^{\phi}q_1,\;e^{-\phi}q_2).
+(Q_{++},Q_{--})\;\longmapsto\;(e^{\phi}Q_{++},\;e^{-\phi}Q_{--}).
 $$
 
 *Proof.* The closed form of the exponential is the hyperbolic one; multiplying out $(\cosh\phi+j\sinh\phi)(a+bj)$ and using $j^{2}=1$ gives the displayed transformation; the two invariants are computed from the result; and the coordinates of $e^{j\phi}$ are $(e^{\phi},e^{-\phi})$, which give the reciprocal dilation.
 
 **Corollary (the hyperbolic rotation is not compact, and its two forms).** The hyperbolic rotation preserves the indefinite form $\langle\cdot,\cdot\rangle_{*}$ and the algebra norm $\langle\cdot\rangle_{\natural}$ but not the Euclidean form $\langle\cdot,\cdot\rangle_{\natural*}$, which it scales; it is the Lorentz-type transformation carried by the split generator $j$. The elliptic rotation $e^{i\theta}$ preserves both $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}$ and scales $\langle\cdot\rangle_{\natural}$ by $e^{2i\theta}$, while the elliptic rotation $e^{ij\psi}$ preserves $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}$ but not $\langle\cdot\rangle_{*}$.
 
-*Proof.* For $X=a+bj$ one has $\langle e^{j\phi}X\rangle_{\natural*}=a^{2}\cosh2\phi+2ab\sinh2\phi+b^{2}\cosh2\phi$, which differs from $\langle X\rangle_{\natural*}$ for $b\neq0$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}$ are preserved because the coordinates of $e^{j\phi}$ are $(e^{\phi},e^{-\phi})$ and their product is $1$; the diagonal circle has coordinates $(e^{i\theta},e^{i\theta})$, whose product is $e^{2i\theta}$ and which preserves $\langle\cdot\rangle_{*}$; and $e^{ij\psi}$ has coordinates $(e^{i\psi},e^{-i\psi})$, whose product is $1$, and it changes $\langle\cdot\rangle_{*}$ by the phase $e^{2i\psi}$.
+*Proof.* For $Q_\pm=a+bj$ one has $\langle e^{j\phi}Q_\pm\rangle_{\natural*}=a^{2}\cosh2\phi+2ab\sinh2\phi+b^{2}\cosh2\phi$, which differs from $\langle Q_\pm\rangle_{\natural*}$ for $b\neq0$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}$ are preserved because the coordinates of $e^{j\phi}$ are $(e^{\phi},e^{-\phi})$ and their product is $1$; the diagonal circle has coordinates $(e^{i\theta},e^{i\theta})$, whose product is $e^{2i\theta}$ and which preserves $\langle\cdot\rangle_{*}$; and $e^{ij\psi}$ has coordinates $(e^{i\psi},e^{-i\psi})$, whose product is $1$, and it changes $\langle\cdot\rangle_{*}$ by the phase $e^{2i\psi}$.
 
-**The split plane in hyperbolic coordinates.** The plane $S_{j}$ is the split complex plane, whose group of units of norm one is the hyperbola $\langle T\rangle_{*}=1$; the hyperbolic rotation acts on this hyperbola by translation of the hyperbolic parameter, so it is the one-parameter group of the hyperbola, and the Lorentz-type structure of the plane is carried by $j$.
+**The split plane in hyperbolic coordinates.** The plane $S_{j}$ is the split complex plane, whose group of units of norm one is the hyperbola $\langle Q_\pm\rangle_{*}=1$; the hyperbolic rotation acts on this hyperbola by translation of the hyperbolic parameter, so it is the one-parameter group of the hyperbola, and the Lorentz-type structure of the plane is carried by $j$.
 
 ## The Group of Units Preserving the Indefinite Form
 
-**Theorem (the group preserving the indefinite form).** In the idempotent coordinates the indefinite form is $\langle\cdot,\cdot\rangle_{*}=\operatorname{Re}(q_1\bar q_2)$, and a unit $P=p\Pi_{1}+q\Pi_{2}$ acts on it by $\langle PX\rangle_{*}=\operatorname{Re}\bigl(p\bar q\,q_1\bar q_2\bigr)$. Consequently $P$ preserves $\langle\cdot\rangle_{*}$ exactly when $p\bar q=1$, that is $q=\bar p^{-1}$, and the units preserving $\langle\cdot,\cdot\rangle_{*}$ form the group
+**Theorem (the group preserving the indefinite form).** In the idempotent coordinates the indefinite form is $\langle\cdot,\cdot\rangle_{*}=\operatorname{Re}(Q_{++}\bar Q_{--})$, and a unit $P=p\Pi_++q\Pi_-$ acts on it by $\langle P Q_\pm\rangle_{*}=\operatorname{Re}\bigl(p\bar q\,Q_{++}\bar Q_{--}\bigr)$. Consequently $P$ preserves $\langle\cdot\rangle_{*}$ exactly when $p\bar q=1$, that is $q=\bar p^{-1}$, and the units preserving $\langle\cdot,\cdot\rangle_{*}$ form the group
 $$
-\{p\,\Pi_{1}+\bar p^{-1}\,\Pi_{2}:p\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
+\{p\,\Pi_++\bar p^{-1}\,\Pi_-:p\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
 $$
-of real dimension two, acting on the pair of coordinates by $(q_1,q_2)\mapsto(pu,\bar p^{-1}q_2)$. This group contains the hyperbolic one-parameter subgroup $\{e^{j\phi}\}$, corresponding to the real positive values $p=e^{\phi}$, and the diagonal circle $\{e^{i\theta}\}$, corresponding to $\lvert p\rvert=1$.
+of real dimension two, acting on the pair of coordinates by $(Q_{++},Q_{--})\mapsto(pQ_{++},\bar p^{-1}Q_{--})$. This group contains the hyperbolic one-parameter subgroup $\{e^{j\phi}\}$, corresponding to the real positive values $p=e^{\phi}$, and the diagonal circle $\{e^{i\theta}\}$, corresponding to $\lvert p\rvert=1$.
 
-*Proof.* The transformation of $\langle\cdot\rangle_{*}$ is the multiplication of $q_1\bar q_2$ by $p\bar q$; for the value of $\langle\cdot\rangle_{*}$ to be unchanged for every $X$ the factor must be $1$, which is the condition $q=\bar p^{-1}$; the parametrisation by $p$ is one-to-one, and the coordinates of $e^{j\phi}$ are $(e^{\phi},e^{-\phi})$ with $e^{-\phi}=\overline{e^{\phi}}^{-1}$, and those of $e^{i\theta}$ are $(e^{i\theta},e^{i\theta})$ with $e^{i\theta}=\overline{e^{i\theta}}^{-1}$.
+*Proof.* The transformation of $\langle\cdot\rangle_{*}$ is the multiplication of $Q_{++}\bar Q_{--}$ by $p\bar q$; for the value of $\langle\cdot\rangle_{*}$ to be unchanged for every $Q_\pm$ the factor must be $1$, which is the condition $q=\bar p^{-1}$; the parametrisation by $p$ is one-to-one, and the coordinates of $e^{j\phi}$ are $(e^{\phi},e^{-\phi})$ with $e^{-\phi}=\overline{e^{\phi}}^{-1}$, and those of $e^{i\theta}$ are $(e^{i\theta},e^{i\theta})$ with $e^{i\theta}=\overline{e^{i\theta}}^{-1}$.
 
-**Corollary (the Lorentz group of the indefinite form and its realised subgroup).** The full isometry group of $\langle\cdot,\cdot\rangle_{*}$ is the six-dimensional $O(2,2)$, and the algebra realises inside it the two-dimensional group $\mathbb{C}^{\times}$, whose compact part is the circle and whose non-compact part is the hyperbolic line; it is neither the whole of $O(2,2)$ nor a maximal compact subgroup of it. The non-realised part contains, for instance, the exchange $(q_1,q_2)\mapsto(q_2,q_1)$ and the simultaneous conjugation $(q_1,q_2)\mapsto(\bar q_1,\bar q_2)$, both of which preserve $\langle\cdot\rangle_{*}$ and neither of which is a multiplication by an algebra element.
+**Corollary (the Lorentz group of the indefinite form and its realised subgroup).** The full isometry group of $\langle\cdot,\cdot\rangle_{*}$ is the six-dimensional $O(2,2)$, and the algebra realises inside it the two-dimensional group $\mathbb{C}^{\times}$, whose compact part is the circle and whose non-compact part is the hyperbolic line; it is neither the whole of $O(2,2)$ nor a maximal compact subgroup of it. The non-realised part contains, for instance, the exchange $(Q_{++},Q_{--})\mapsto(Q_{--},Q_{++})$ and the simultaneous conjugation $(Q_{++},Q_{--})\mapsto(\bar Q_{++},\bar Q_{--})$, both of which preserve $\langle\cdot\rangle_{*}$ and neither of which is a multiplication by an algebra element.
 
-*Proof.* The realised group is the one computed in the theorem, of dimension two; the exchange and the conjugation preserve $\operatorname{Re}(q_1\bar q_2)$ and are not of the form $(q_1,q_2)\mapsto(pu,\bar p^{-1}q_2)$, which keeps the two coordinates separate and multiplies them by factors of mutually reciprocal modulus.
+*Proof.* The realised group is the one computed in the theorem, of dimension two; the exchange and the conjugation preserve $\operatorname{Re}(Q_{++}\bar Q_{--})$ and are not of the form $(Q_{++},Q_{--})\mapsto(pQ_{++},\bar p^{-1}Q_{--})$, which keeps the two coordinates separate and multiplies them by factors of mutually reciprocal modulus.
 
 ## The Triviality of Conjugation
 
-**Theorem (conjugation is the identity).** For any unit $P$ and any $T$,
+**Theorem (conjugation is the identity).** For any unit $P$ and any $Q_\pm$,
 $$
-PTP^{-1}=T ,
+P Q_\pm P^{-1}=Q_\pm ,
 $$
-since the algebra is commutative. Consequently the conjugation action, the orbit of an element under the unit group, is a single point, and the sandwich actions $T\mapsto PTP^{\natural}$ and $T\mapsto PTP^{*}$ reduce to multiplications: $PTP^{\natural}=\langle P\rangle_{\natural}\,T$ and $PTP^{*}=\bigl(p\bar q\,\Pi_{1}+q\bar p\,\Pi_{2}\bigr)T$ for $P=p\Pi_{1}+q\Pi_{2}$.
+since the algebra is commutative. Consequently the conjugation action, the orbit of an element under the unit group, is a single point, and the sandwich actions $Q_\pm\mapsto P Q_\pm P^{\natural}$ and $Q_\pm\mapsto P Q_\pm P^{*}$ reduce to multiplications: $P Q_\pm P^{\natural}=\langle P\rangle_{\natural}\,Q_\pm$ and $P Q_\pm P^{*}=\bigl(p\bar q\,\Pi_++q\bar p\,\Pi_-\bigr)Q_\pm$ for $P=p\Pi_++q\Pi_-$.
 
-*Proof.* Commutativity gives $PTP^{-1}=PP^{-1}T=T$; multiplying out the two sandwich expressions in the idempotent coordinates gives $\langle P\rangle_{\natural}T=(pq)T$ and $(p\bar q,q\bar p)T$ respectively.
+*Proof.* Commutativity gives $P Q_\pm P^{-1}=PP^{-1}Q_\pm=Q_\pm$; multiplying out the two sandwich expressions in the idempotent coordinates gives $\langle P\rangle_{\natural}Q_\pm=(pq)Q_\pm$ and $(p\bar q,q\bar p)Q_\pm$ respectively.
 
-**Corollary (the contrast with the biquaternion case).** In the quaternion and biquaternion cases the conjugation $PTP^{-1}$ is the rotation action and the sandwich is the proper rotation of the Euclidean three-space; here conjugation is trivial and the only non-trivial action is multiplication. This is the geometric face of the commutativity of the algebra: the rotation group must be realised by the multiplicative action and not by conjugation, and therefore only the diagonal subgroups appear.
+**Corollary (the contrast with the biquaternion case).** In the quaternion and biquaternion cases the conjugation $P Q_\pm P^{-1}$ is the rotation action and the sandwich is the proper rotation of the Euclidean three-space; here conjugation is trivial and the only non-trivial action is multiplication. This is the geometric face of the commutativity of the algebra: the rotation group must be realised by the multiplicative action and not by conjugation, and therefore only the diagonal subgroups appear.
 
 *Proof.* The quaternion conjugation action is the double cover of the rotation group, and its non-triviality rests on the anticommutation of the imaginary units; the reduced biquaternion algebra has no anticommutation, so the conjugation collapses and the multiplicative action is the only one.
 
@@ -144,7 +144,7 @@ since the algebra is commutative. Consequently the conjugation action, the orbit
 
 **Theorem (the factorisation of the polar form).** The polar form of an element, established in *Reduced Biquaternions Polar Element Representation*, is
 $$
-T=\rho_{1}e^{i\theta_{1}}\Pi_{1}+\rho_{2}e^{i\theta_{2}}\Pi_{2},\qquad \rho_{1},\rho_{2}\ge0,\quad \theta_{1},\theta_{2}\in(-\pi,\pi].
+Q_\pm=\rho_{1}e^{i\theta_{1}}\Pi_++\rho_{2}e^{i\theta_{2}}\Pi_-,\qquad \rho_{1},\rho_{2}\ge0,\quad \theta_{1},\theta_{2}\in(-\pi,\pi].
 $$
 Setting
 $$
@@ -153,13 +153,13 @@ $$
 $$
 it becomes
 $$
-T=\rho\;e^{j\phi}\;e^{i\theta}\;e^{ij\psi},
+Q_\pm=\rho\;e^{j\phi}\;e^{i\theta}\;e^{ij\psi},
 $$
 the four factors commuting. For an element of modulus one ($\rho_{1}\rho_{2}=1$) one has $\rho=1$, and it is the product of a hyperbolic rotation and two elliptic rotations,
 $$
-T=e^{j\phi}\,e^{i\theta}\,e^{ij\psi};
+Q_\pm=e^{j\phi}\,e^{i\theta}\,e^{ij\psi};
 $$
-a general unit is $T=\rho\,e^{j\phi}e^{i\theta}e^{ij\psi}$ with the scale $\rho=\sqrt{\rho_{1}\rho_{2}}>0$.
+a general unit is $Q_\pm=\rho\,e^{j\phi}e^{i\theta}e^{ij\psi}$ with the scale $\rho=\sqrt{\rho_{1}\rho_{2}}>0$.
 
 *Proof.* The coordinates of the four factors are $(\rho,\rho)$ for the scale, $(e^{\phi},e^{-\phi})$ for $e^{j\phi}$, $(e^{i\theta},e^{i\theta})$ for $e^{i\theta}$ and $(e^{i\psi},e^{-i\psi})$ for $e^{ij\psi}$, since $j$ has coordinates $(1,-1)$ and $ij$ has coordinates $(i,-i)$; multiplying the four coordinate pairs gives $\bigl(\rho e^{\phi}e^{i(\theta+\psi)},\rho e^{-\phi}e^{i(\theta-\psi)}\bigr)$, which is the polar form with $\rho_{1}=\rho e^{\phi}$ and $\theta_{1}=\theta+\psi$, $\rho_{2}=\rho e^{-\phi}$ and $\theta_{2}=\theta-\psi$, and the two pairs are equivalent by the displayed definitions.
 
@@ -173,22 +173,22 @@ The biquaternion algebra carries the sandwich action $Q\mapsto PQP^{-1}$ with $P
 
 ## Summary
 
-The reduced biquaternion algebra carries the definite Euclidean form $\langle\cdot,\cdot\rangle_{\natural*}$ of signature $(4,0)$, the scalar part of $T\bar T$, and the indefinite form $\langle\cdot,\cdot\rangle_{*}$ of signature $(2,2)$, the scalar part of $TT^{*}$; the algebra norm $\langle\cdot\rangle_{\natural}=A^{2}-B^{2}=q_1q_2$ is complex-valued, with its real and imaginary parts also forms of signature $(2,2)$. The isometry groups of $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$ are the six-dimensional $O(4)$ and $O(2,2)$; by multiplication the algebra realises inside $O(K)$ the two-dimensional torus $T^{2}=\{|q_1|=|q_2|=1\}$, a maximal torus, and inside $O(H)$ the two-dimensional group $\{p\Pi_{1}+\bar p^{-1}\Pi_{2}\}\cong\mathbb{C}^{\times}$, whose compact part is the diagonal circle. The versors are the elements of the torus; they preserve $\langle\cdot\rangle_{\natural*}$ and act diagonally on the two idempotent factors, they scale the algebra norm, and among them exactly the diagonal circle preserves $\langle\cdot\rangle_{*}$. The elliptic rotations are the exponentials of the two definite directions $i$ and $ij$, whose product generates the whole torus and acts by the pair of phases $(\theta+\psi,\theta-\psi)$ on the two factors, so that the algebra carries exactly two independent rotations, one per factor. The hyperbolic rotation is the exponential of the split direction $j$, $e^{j\phi}=\cosh\phi+j\sinh\phi$, which preserves $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}$ but not $\langle\cdot\rangle_{\natural*}$, and which acts on the split complex plane as the ordinary hyperbolic rotation and on the two factors as the reciprocal dilation $(e^{\phi}q_1,e^{-\phi}q_2)$. The units preserving $\langle\cdot\rangle_{*}$ are exactly the elements $\{p\Pi_{1}+\bar p^{-1}\Pi_{2}\}$, a two-dimensional subgroup of the six-dimensional $O(2,2)$ containing the hyperbolic line and the diagonal circle, the remaining isometries, such as the exchange and the conjugation of the two coordinates, being unavailable because the multiplication is diagonal. Conjugation is the identity, since the algebra is commutative, and the sandwich actions reduce to multiplications by the algebra norm and by a diagonal element. The polar form reads as the product of a scale, a hyperbolic rotation and two elliptic rotations, $T=\rho\,e^{j\phi}\,e^{i\theta}\,e^{ij\psi}$, with the hyperbolic parameter the logarithm of the ratio of the two scales and the rotation parameters the sum and the difference of the two phases, which is the precise sense in which the polar form is a rotation together with a hyperbolic Lorentz-type transformation. Against the biquaternion and split biquaternion cases, whose conjugation and sandwich give the three-dimensional rotation group and its Lorentz counterpart, the reduced biquaternion algebra realises only the diagonal subgroups, the torus of the Euclidean form and the group $\mathbb{C}^{\times}$ of the indefinite one.
+The reduced biquaternion algebra carries the definite Euclidean form $\langle\cdot,\cdot\rangle_{\natural*}$ of signature $(4,0)$, the scalar part of $Q_\pm\bar Q_\pm$, and the indefinite form $\langle\cdot,\cdot\rangle_{*}$ of signature $(2,2)$, the scalar part of $Q_\pm Q_\pm^{*}$; the algebra norm $\langle\cdot\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ is complex-valued, with its real and imaginary parts also forms of signature $(2,2)$. The isometry groups of $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}$ are the six-dimensional $O(4)$ and $O(2,2)$; by multiplication the algebra realises inside $O(K)$ the two-dimensional torus $T^{2}=\{\lvert Q_{++}\rvert=\lvert Q_{--}\rvert=1\}$, a maximal torus, and inside $O(H)$ the two-dimensional group $\{p\Pi_++\bar p^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$, whose compact part is the diagonal circle. The versors are the elements of the torus; they preserve $\langle\cdot\rangle_{\natural*}$ and act diagonally on the two idempotent factors, they scale the algebra norm, and among them exactly the diagonal circle preserves $\langle\cdot\rangle_{*}$. The elliptic rotations are the exponentials of the two definite directions $i$ and $ij$, whose product generates the whole torus and acts by the pair of phases $(\theta+\psi,\theta-\psi)$ on the two factors, so that the algebra carries exactly two independent rotations, one per factor. The hyperbolic rotation is the exponential of the split direction $j$, $e^{j\phi}=\cosh\phi+j\sinh\phi$, which preserves $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}$ but not $\langle\cdot\rangle_{\natural*}$, and which acts on the split complex plane as the ordinary hyperbolic rotation and on the two factors as the reciprocal dilation $(e^{\phi}Q_{++},e^{-\phi}Q_{--})$. The units preserving $\langle\cdot\rangle_{*}$ are exactly the elements $\{p\Pi_++\bar p^{-1}\Pi_-\}$, a two-dimensional subgroup of the six-dimensional $O(2,2)$ containing the hyperbolic line and the diagonal circle, the remaining isometries, such as the exchange and the conjugation of the two coordinates, being unavailable because the multiplication is diagonal. Conjugation is the identity, since the algebra is commutative, and the sandwich actions reduce to multiplications by the algebra norm and by a diagonal element. The polar form reads as the product of a scale, a hyperbolic rotation and two elliptic rotations, $Q_\pm=\rho\,e^{j\phi}\,e^{i\theta}\,e^{ij\psi}$, with the hyperbolic parameter the logarithm of the ratio of the two scales and the rotation parameters the sum and the difference of the two phases, which is the precise sense in which the polar form is a rotation together with a hyperbolic Lorentz-type transformation. Against the biquaternion and split biquaternion cases, whose conjugation and sandwich give the three-dimensional rotation group and its Lorentz counterpart, the reduced biquaternion algebra realises only the diagonal subgroups, the torus of the Euclidean form and the group $\mathbb{C}^{\times}$ of the indefinite one.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\cdot,\cdot\rangle_{\natural*}=a^{2}+a'^{2}+b^{2}+b'^{2}$ | Euclidean form, signature $(4,0)$ |
-| $\langle\cdot,\cdot\rangle_{*}=a^{2}+a'^{2}-b^{2}-b'^{2}$ | Indefinite form, signature $(2,2)$ |
-| $\langle\cdot,\cdot\rangle_{\natural}=A^{2}-B^{2}=q_1q_2$ | Algebra norm, complex-valued |
+| $\langle\cdot,\cdot\rangle_{\natural*}=q_+^{2}+q'^{2}_{+}+q_-^{2}+q'^{2}_{-}$ | Euclidean form, signature $(4,0)$ |
+| $\langle\cdot,\cdot\rangle_{*}=q_+^{2}+q'^{2}_{+}-q_-^{2}-q'^{2}_{-}$ | Indefinite form, signature $(2,2)$ |
+| $\langle\cdot,\cdot\rangle_{\natural}=Q_+^{2}-Q_-^{2}=Q_{++}Q_{--}$ | Algebra norm, complex-valued |
 | $O(K)=O(4)$, $O(H)=O(2,2)$ | Isometry groups, dimension six |
-| $T^{2}=\{|q_1|=|q_2|=1\}$ | Realised torus of versors, a maximal torus of $O(4)$ |
-| $\{p\Pi_{1}+\bar p^{-1}\Pi_{2}\}\cong\mathbb{C}^{\times}$ | Realised group of the indefinite form |
+| $T^{2}=\{\lvert Q_{++}\rvert=\lvert Q_{--}\rvert=1\}$ | Realised torus of versors, a maximal torus of $O(4)$ |
+| $\{p\Pi_++\bar p^{-1}\Pi_-\}\cong\mathbb{C}^{\times}$ | Realised group of the indefinite form |
 | $e^{i\theta}$, $e^{ij\psi}$ | Elliptic rotations of the two definite planes |
 | $e^{j\phi}=\cosh\phi+j\sinh\phi$ | Hyperbolic rotation |
-| $T=\rho\,e^{j\phi}\,e^{i\theta}\,e^{ij\psi}$ | Polar form as scale, hyperbolic rotation and elliptic rotations |
-| $PTP^{-1}=T$ | Triviality of conjugation |
+| $Q_\pm=\rho\,e^{j\phi}\,e^{i\theta}\,e^{ij\psi}$ | Polar form as scale, hyperbolic rotation and elliptic rotations |
+| $P Q_\pm P^{-1}=Q_\pm$ | Triviality of conjugation |
 
 ## Further Reading
 

@@ -20,22 +20,22 @@ $$
 \mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H},
 $$
 
-the complexification of the real quaternion algebra $\mathbb{H}$. Its quaternion units are $e_0 = 1, e_1, e_2, e_3$ with
+the complexification of the real quaternion algebra $\mathbb{H}$. Its quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with
 
 $$
-e_0^2 = e_0, \qquad e_k^2 = -e_0 \quad (k=1,2,3), \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
+e_t^2 = e_t, \qquad \vec e_k^2 = -e_t \quad (k=1,2,3), \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
 $$
 
 and the scalar imaginary is central and is written $i$, with $i^2 = -1$. A general element is
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
-and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_0$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Conventions in the Biquaternion Universe*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_0e_0 - Q_1e_1-Q_2e_2-Q_3e_3$, and the Hermitian conjugate
+and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Conventions in the Biquaternion Universe*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_te_t - Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the Hermitian conjugate
 
 $$
-\tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_0^{*}e_0 - Q_1^{*}e_1 - Q_2^{*}e_2 - Q_3^{*}e_3 ,
+\tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_t^{*}e_t - Q_x^{*}\vec e_x - Q_y^{*}\vec e_y - Q_z^{*}\vec e_z ,
 $$
 
 which is an anti-linear involution of the algebra.
@@ -46,38 +46,38 @@ The algebra is isomorphic, as a complex algebra, to the full matrix algebra $M_2
 
 $$
 \mathbb{B} \;\cong\; M_2(\mathbb{C}), \qquad
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
+e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3,
 $$
 
 with $i \mapsto iI_2$ on the central scalar and $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices. The assignment is fixed by *Quantum Physics in Biquaternionic Form* and is the one used throughout this subcategory. Two consequences are worth recording:
 
-- the Hermitian basis of $\mathbb{M}_+$, namely $\{e_0, ie_1, ie_2, ie_3\}$, maps to $\{I_2,\sigma_1,\sigma_2,\sigma_3\}$, so the isomorphism sends traceless Hermitian biquaternions to traceless Hermitian matrices;
+- the Hermitian basis of $\mathbb{M}_+$, namely $\{e_t, i\vec e_x, i\vec e_y, i\vec e_z\}$, maps to $\{I_2,\sigma_1,\sigma_2,\sigma_3\}$, so the isomorphism sends traceless Hermitian biquaternions to traceless Hermitian matrices;
 - the involution ${}^{*}$ maps to the matrix Hermitian conjugate.
 
 That a complex associative algebra with these generators is isomorphic to $M_2(\mathbb{C})$ is Wedderburn's theorem for $\mathbb{C}$: $\mathbb{B}$ is a finite-dimensional simple complex algebra, hence a full matrix algebra over its unique simple module's endomorphism ring, which here is $\mathbb{C}$.
 
 ### The module in components
 
-It is useful to write the correspondence out in components, because every later statement is a component statement in disguise. A biquaternion $\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ maps to
+It is useful to write the correspondence out in components, because every later statement is a component statement in disguise. A biquaternion $\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z$ maps to
 
 $$
-M(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix},
+M(\tilde{Q}) = \begin{pmatrix} Q_t - iQ_3 & -iQ_1 - Q_y \\ -iQ_1 + Q_y & Q_t + iQ_3 \end{pmatrix},
 $$
 
-so that the Hermitian element $\tilde{H} = h_0e_0 + i(h_1e_1 + h_2e_2 + h_3e_3)$ with real $h_\mu$ maps to
+so that the Hermitian element $\tilde{H} = h_0e_t + i(h_1\vec e_x + h_2\vec e_y + h_3\vec e_z)$ with real $h_\mu$ maps to
 
 $$
 M(\tilde{H}) = \begin{pmatrix} h_0 + h_3 & h_1 - ih_2 \\ h_1 + ih_2 & h_0 - h_3 \end{pmatrix}
 = h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3 .
 $$
 
-Acting on $|u\rangle = (u_1, u_2)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to
+Acting on $|u\rangle = (u_x, u_y)^{\mathsf T}\in S$, this is the ordinary Hermitian operator of the two-level system. The rank-one idempotent along the unit direction $\vec u$ maps to
 
 $$
 M\bigl(\tilde\Pi_1(\vec u)\bigr) = \tfrac12\begin{pmatrix} 1+\mu_3 & \mu_1 - i\mu_2 \\ \mu_1 + i\mu_2 & 1-\mu_3 \end{pmatrix},
 $$
 
-whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\varphi)\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_0 + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
+whose image is the ray of the spinor $(\cos\!\frac{\theta}{2}, \exp(i\varphi)\sin\!\frac{\theta}{2})^{\mathsf T}$ with $\vec u = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$. Conversely, given a unit spinor of that form, the algebra element $\tfrac12(e_t + i\vec u)$ is recovered. The two descriptions carry exactly the same data.
 
 ### The Hermitian subspace
 
@@ -89,7 +89,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$
 
-Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_0 + i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
+Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_t + i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
 
 ## The Defining Module
 
@@ -144,7 +144,7 @@ is a bijection. This is the biquaternion form of the standard correspondence bet
 In the basis of the algebra the pure states are the elements
 
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\bigl(e_0 \pm i\vec u\bigr), \qquad \vec u\in\mathbb{R}^3,\ |\vec u|=1 ,
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\bigl(e_t \pm i\vec u\bigr), \qquad \vec u\in\mathbb{R}^3,\ |\vec u|=1 ,
 $$
 
 the two antipodal idempotents of the direction $\vec u$. Each satisfies $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2})=1$, and the matrix image is $\tfrac12(I_2 \pm \vec u\cdot\boldsymbol{\sigma})$. The family of rays is therefore parametrized by the unit sphere $S^2$, and the two idempotents of a direction are the antipodal points of the Bloch sphere.
@@ -154,7 +154,7 @@ the two antipodal idempotents of the direction $\vec u$. Each satisfies $\tilde\
 A general state is a positive trace-one element of $\mathbb{M}_+$,
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
 $$
 
 positive exactly when $|\vec r|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \vec r\cdot\boldsymbol{\sigma})$. The **trace pairing** between a state and an observable $\tilde{H}\in\mathbb{M}_+$ is
@@ -180,7 +180,7 @@ $$
 \qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\vec r|\bigr),
 $$
 
-when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\vec r=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\vec u_r$ and $-\vec u_r$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
+when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_t$ when $\vec r=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\vec u_r$ and $-\vec u_r$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
 
 ## The Geometry of the Module
 
@@ -189,29 +189,29 @@ when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\vec r
 The biquaternion norm of the algebra is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 .
 $$
 
-On $\mathbb{M}_+$, writing $\tilde{Q} = q_0e_0 + i\vec q$ with real $q_0,\vec q$, it evaluates to
+On $\mathbb{M}_+$, writing $\tilde{Q} = q_te_t + i\vec q$ with real $q_t,\vec q$, it evaluates to
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \bigl(q_0^2 - |\vec q|^2\bigr)e_0 ,
+\langle\tilde{Q}\rangle_{\natural} = \bigl(q_t^2 - |\vec q|^2\bigr)e_t ,
 $$
 
-which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $q_0\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{Q}\rangle_{\natural} = \det M(\tilde{Q})\,e_0$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_0$ selects the future cone. For a state
+which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $q_t\geq0$: the biquaternion norm is the determinant of the matrix image, $\langle\tilde{Q}\rangle_{\natural} = \det M(\tilde{Q})\,e_t$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_t$ selects the future cone. For a state
 
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_0 .
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t .
 $$
 
 The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{M}_+$.
 
 ### Tomography on the module
 
-The module's state is fixed by the three expectations of the coordinate observables $ie_k$, $k=1,2,3$:
+The module's state is fixed by the three expectations of the coordinate observables $i\vec e_k$, $k=1,2,3$:
 
 $$
-r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k) = \langle \sigma_k\rangle ,
+r_k = \mathrm{Tr}(\tilde{\rho}\,i\vec e_k) = \langle \sigma_k\rangle ,
 $$
 
 so the state is reconstructed from three real numbers obtained by measuring the three Pauli observables. Equivalently, since
@@ -255,7 +255,7 @@ the three pairs of outcome probabilities determine $\vec r$ and hence the state.
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_t+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
 
@@ -264,7 +264,7 @@ What the module does not supply is the composition rule for several qubits: the 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators of reversible evolution) |
@@ -273,11 +273,11 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$ | Rank-one idempotents (pure states) |
-| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
+| $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = \langle u|H|u\rangle$ | Trace pairing (Born rule) |
-| $r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k)$ | Bloch components (tomography) |
-| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_0$ | Biquaternion norm of a state |
+| $r_k = \mathrm{Tr}(\tilde{\rho}\,i\vec e_k)$ | Bloch components (tomography) |
+| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 
 ## Further Reading
 

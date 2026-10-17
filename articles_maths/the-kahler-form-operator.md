@@ -27,7 +27,7 @@ for the $L^2$ inner product of the Kähler metric, lowering the total degree by 
 
 **Proposition (the two operators are real and of bidegree $\pm(1,1)$).** $L$ is complex-linear in the complexified forms and maps $\Lambda^{n,m}$ to $\Lambda^{n+1,m+1}$; $\Lambda$ maps $\Lambda^{n,m}$ to $\Lambda^{n-1,m-1}$ and is the transpose of $L$; both commute with complex conjugation, $\overline{L\alpha} = L\bar\alpha$ and $\overline{\Lambda\alpha} = \Lambda\bar\alpha$, because $\Omega$ is real. In local coordinates, with $\Omega = i\sum_{j,k}g_{j\bar k}\,dz^j\wedge d\bar z^k$,
 $$
-\Lambda\alpha = \sum_{j,k} g^{j\bar k}\,\iota_{\partial_{\bar z^k}}\iota_{\partial_{z^j}}\,\alpha ,
+\Lambda\alpha = \sum_{j,k} g^{j\bar k}\,\iota_{\partial/\partial\bar z^k}\iota_{\partial/\partial z^j}\,\alpha ,
 $$
 where $g^{j\bar k}$ is the inverse Hermitian matrix of the metric and $\iota$ is interior multiplication.
 

@@ -6,7 +6,7 @@ The quaternion algebra has no faithful representation by real $2\times2$ matrice
 
 The article depends on *Quaternion Algebra* for the basis and relations, on *Quaternion Norm and Invertibility* for the quaternion norm and the invertibility criterion, and on *The Scalar and Vector Subspaces of $\mathbb{H}$* for the two subspaces. The larger matrix representation is in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, and the coordinate description of the product in *Quaternion Four-Vector Element Representation*. The Clifford identification of the complex matrix algebra is sketched in *Quaternion Other Algebraic Element Representations*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with real $q_\mu$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The Pauli matrices are
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with real $q_\mu$; the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$. The Pauli matrices are
 
 $$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
@@ -21,20 +21,20 @@ with $i$ the imaginary unit of $\mathbb{C}$.
 **Definition.** The **matrix representation** of the quaternion algebra is the real-linear map
 
 $$
-\iota : \mathbb{H}\longrightarrow M_2(\mathbb{C}), \qquad \iota(\tilde q) = q_0 I - i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3).
+\iota : \mathbb{H}\longrightarrow M_2(\mathbb{C}), \qquad \iota(\tilde q) = q_t I - i(q_x\sigma_1+q_y\sigma_2+q_z\sigma_3).
 $$
 
 **Theorem.** The map $\iota$ is an injective algebra homomorphism, and $\iota(\mathbb{H})$ is a four-dimensional real subspace of $M_2(\mathbb{C})$.
 
-*Proof.* The Pauli matrices satisfy $\sigma_j\sigma_k = \delta_{jk}I + i\sum_l\epsilon_{jkl}\sigma_l$, which is the quaternion multiplication rule under the correspondence $e_k\leftrightarrow -i\sigma_k$, so $\iota$ is multiplicative; the four images are real-linearly independent, so $\iota$ is injective, and the image has real dimension four.
+*Proof.* The Pauli matrices satisfy $\sigma_j\sigma_k = \delta_{jk}I + i\sum_l\epsilon_{jkl}\sigma_l$, which is the quaternion multiplication rule under the correspondence $\vec e_k\leftrightarrow -i\sigma_k$, so $\iota$ is multiplicative; the four images are real-linearly independent, so $\iota$ is injective, and the image has real dimension four.
 
 **Corollary.** On a quaternion,
 
 $$
-\iota(\tilde q) = \begin{pmatrix} q_0-iq_3 & -iq_1-q_2 \\ -iq_1+q_2 & q_0+iq_3 \end{pmatrix}.
+\iota(\tilde q) = \begin{pmatrix} q_t-iq_3 & -iq_1-q_y \\ -iq_1+q_y & q_t+iq_3 \end{pmatrix}.
 $$
 
-**Remark (the choice).** The correspondence $e_k\mapsto-i\sigma_k$ is the corpus's choice, held fixed once and for all. It is not canonical: another representation differs from this one by conjugation by an invertible matrix, and all the invariants below are unchanged. The Pauli matrices appear only as a shorthand for the images of $e_1,e_2,e_3$.
+**Remark (the choice).** The correspondence $\vec e_k\mapsto-i\sigma_k$ is the corpus's choice, held fixed once and for all. It is not canonical: another representation differs from this one by conjugation by an invertible matrix, and all the invariants below are unchanged. The Pauli matrices appear only as a shorthand for the images of $\vec e_x,\vec e_y,\vec e_z$.
 
 **Corollary.** The images of the basis are, up to the factor $-i$, the Pauli matrices, and the image of the quaternion algebra is the set
 
@@ -44,20 +44,20 @@ $$
 
 a four-dimensional real subspace of $M_2(\mathbb{C})$.
 
-*Proof.* Write $A = q_0-iq_3$, $B = -iq_1-q_2$ for real $q_\mu$; then the lower-left entry is $-i q_1+q_2 = -\bar B$ and the lower-right is $q_0+iq_3 = \bar A$. Conversely every such matrix arises from the real quadruple $(q_0,q_1,q_2,q_3) = (\operatorname{Re}A, -\operatorname{Re}B, -\operatorname{Im}B, -\operatorname{Im}A)$.
+*Proof.* Write $A = q_t-iq_3$, $B = -iq_1-q_y$ for real $q_\mu$; then the lower-left entry is $-i q_x+q_y = -\bar B$ and the lower-right is $q_t+iq_3 = \bar A$. Conversely every such matrix arises from the real quadruple $(q_t,q_x,q_y,q_z) = (\operatorname{Re}A, -\operatorname{Re}B, -\operatorname{Im}B, -\operatorname{Im}A)$.
 
 ## Trace and Determinant
 
 **Theorem.** For every quaternion,
 
 $$
-\operatorname{tr}\iota(\tilde q) = 2q_0, \qquad \det \iota(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = \langle\tilde q\rangle_{\natural}.
+\operatorname{tr}\iota(\tilde q) = 2q_t, \qquad \det \iota(\tilde q) = q_t^2+q_x^2+q_y^2+q_z^2 = \langle\tilde q\rangle_{\natural}.
 $$
 
-*Proof.* The trace is the sum of the diagonal entries $q_0-iq_3$ and $q_0+iq_3$, namely $2q_0$. The determinant is
+*Proof.* The trace is the sum of the diagonal entries $q_t-iq_3$ and $q_t+iq_3$, namely $2q_t$. The determinant is
 
 $$
-(q_0-iq_3)(q_0+iq_3) - (-iq_1-q_2)(-iq_1+q_2) = (q_0^2+q_3^2) - (-q_1^2-q_2^2) = \sum_\mu q_\mu^2 .
+(q_t-iq_3)(q_t+iq_3) - (-iq_1-q_y)(-iq_1+q_y) = (q_t^2+q_z^2) - (-q_x^2-q_y^2) = \sum_\mu q_\mu^2 .
 $$
 
 **Corollary.** An element $\tilde q$ is a unit exactly when $\det\iota(\tilde q)\neq0$, and then $\iota(\tilde q^{-1}) = \iota(\tilde q)^{-1}$; the matrix image of the unit group $\mathbb{H}^{\times}$ is the set of matrices in $\iota(\mathbb{H})$ of non-zero determinant, and the image of the norm-one subgroup $Sp(1)$ is the group of matrices in $\iota(\mathbb{H})$ of determinant $1$.
@@ -96,7 +96,7 @@ $$
 
 Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}I$, whose trace is $2\langle\tilde q\rangle_{\natural} = 2|\tilde q|^2$; and $\iota(p)\iota(\tilde q)^{\dagger} = \iota(p\tilde{q}^{\natural})$, whose trace is $2\mathrm{Sc}(p\tilde{q}^{\natural}) = 2\langle p,\tilde q\rangle$.
 
-**Corollary.** The image $\iota(\mathbb{H})$ consists of those matrices $\iota(\tilde q)$ for which $\iota(\tilde q)^\dagger\iota(\tilde q)$ is a scalar matrix, namely $|\tilde q|^2 I$; the map $\tilde q\mapsto |\tilde q|^{-1}\iota(\tilde q)$ for $\tilde q\neq0$ is an isometric embedding of the unit sphere $Sp(1)$ into the unitary group $U(2)$.
+**Corollary.** The image $\iota(\mathbb{H})$ consists of those matrices $\iota(\tilde q)$ for which $\iota(\tilde q)^\dagger\iota(\tilde q)$ is a scalar matrix, namely $|\tilde q|^2 I$; the map $\tilde q\mapsto |\tilde q|^{-1}\iota(\tilde q)$ for $\tilde q\neq0$ is an isometric embedding of the unit sphere $Sp(1)$ into the unitary group $\mathrm{U}(2)$.
 
 *Proof.* $\iota(\tilde q)^\dagger\iota(\tilde q) = \iota(\tilde{q}^{\natural})\iota(\tilde q) = \iota(\tilde{q}^{\natural} \tilde q) = \iota(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}I$, so the columns of $\iota(\tilde q)$ are orthogonal and of equal length $|\tilde q|$; after normalising, $\iota(\tilde q)$ is unitary.
 
@@ -105,15 +105,15 @@ Hence $\iota(\tilde q)^{\dagger}\iota(\tilde q) = \iota(\tilde{q}^{\natural} \ti
 **Theorem.** Quaternion conjugation is the adjugate:
 
 $$
-\iota(\tilde{q}^{\natural}) = \operatorname{adj}\iota(\tilde q) = \begin{pmatrix} q_0+iq_3 & iq_1+q_2 \\ iq_1-q_2 & q_0-iq_3 \end{pmatrix}.
+\iota(\tilde{q}^{\natural}) = \operatorname{adj}\iota(\tilde q) = \begin{pmatrix} q_t+iq_3 & iq_1+q_y \\ iq_1-q_y & q_t-iq_3 \end{pmatrix}.
 $$
 
-*Proof.* For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_0-q_1e_1-q_2e_2-q_3e_3) = \iota(\tilde{q}^{\natural})$.
+*Proof.* For a $2\times2$ matrix $M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ the adjugate is $\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Applying this to $\iota(\tilde q)$ gives the displayed matrix, which is $\iota(q_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z) = \iota(\tilde{q}^{\natural})$.
 
 **Definition.** The **antisymmetric form** is
 
 $$
-\epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = -\iota(e_2), \qquad \epsilon^{T} = -\epsilon, \quad \epsilon^2 = -I .
+\epsilon = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = i\sigma_2 = -\iota(\vec e_y), \qquad \epsilon^{T} = -\epsilon, \quad \epsilon^2 = -I .
 $$
 
 **Theorem.** Quaternion conjugation is transposition dressed with the antisymmetric form:
@@ -135,7 +135,7 @@ $$
 \iota(\operatorname{Im}\mathbb{H}) = \left\{ M\in\iota(\mathbb{H}) : \operatorname{tr}M = 0 \right\}.
 $$
 
-*Proof.* A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\vec q$ maps to $-i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$, a traceless matrix. The trace vanishes exactly when $q_0 = 0$, the vector condition.
+*Proof.* A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\vec q$ maps to $-i(q_x\sigma_1+q_y\sigma_2+q_z\sigma_3)$, a traceless matrix. The trace vanishes exactly when $q_t = 0$, the vector condition.
 
 **Corollary.** In matrix terms the decomposition is the splitting of $\iota(\mathbb{H})$ into its scalar part and its traceless part; the scalar subspace is the one-dimensional centre and the vector subspace the three-dimensional traceless summand.
 
@@ -157,7 +157,7 @@ the second of trace $0$, the two adding to the image.
 **Example.** For the element
 
 $$
-\tilde q = 1 + 2e_1 - e_2 + 3e_3
+\tilde q = 1 + 2\vec e_x - \vec e_y + 3\vec e_z
 $$
 
 the matrix image is
@@ -169,7 +169,7 @@ $$
 with
 
 $$
-\operatorname{tr}\iota(\tilde q) = 2 = 2q_0, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = \langle\tilde q\rangle_{\natural}.
+\operatorname{tr}\iota(\tilde q) = 2 = 2q_t, \qquad \det\iota(\tilde q) = (1-3i)(1+3i) - (1-2i)(-1-2i) = 10 - (-5) = 15 = \langle\tilde q\rangle_{\natural}.
 $$
 
 The determinant is the quaternion norm and the trace is twice the scalar part, as the general theorem requires.
@@ -197,14 +197,14 @@ There is no injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, because its 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
 | $\iota : \mathbb{H}\to M_2(\mathbb{C})$ | Injective matrix representation of the algebra |
-| $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices; $\iota(e_k) = -i\sigma_k$ |
-| $\operatorname{tr}\iota(\tilde q) = 2q_0$ | Trace image of the scalar coordinate |
+| $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices; $\iota(\vec e_k) = -i\sigma_k$ |
+| $\operatorname{tr}\iota(\tilde q) = 2q_t$ | Trace image of the scalar coordinate |
 | $\det \iota(\tilde q) = \langle\tilde q\rangle_{\natural}$ | Determinant image of the quaternion norm |
 | $\dagger$ | Conjugate transpose; $\operatorname{tr}(\iota(\tilde q)\iota(\tilde q)^\dagger) = 2\lvert \tilde q\rvert^2$ |
-| $\epsilon = i\sigma_2 = -\iota(e_2)$ | Antisymmetric form; $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ |
+| $\epsilon = i\sigma_2 = -\iota(\vec e_y)$ | Antisymmetric form; $\iota(\tilde{q}^{\natural}) = \epsilon\iota(\tilde q)^{T}\epsilon^{-1}$ |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar matrices and traceless matrices |
 
 ## Further Reading

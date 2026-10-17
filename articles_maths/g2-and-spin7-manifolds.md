@@ -158,7 +158,7 @@ $$
 **Theorem (Berger; the classification of holonomy groups).** A connected, simply connected, irreducible Riemannian manifold that is not locally symmetric has holonomy group one of
 
 $$
-SO(n), \qquad U(n), \qquad SU(n), \qquad Sp(n), \qquad Sp(n)\cdot Sp(1), \qquad G_2, \qquad \mathrm{Spin}(7),
+SO(n), \qquad \mathrm{U}(n), \qquad SU(n), \qquad Sp(n), \qquad Sp(n)\cdot Sp(1), \qquad G_2, \qquad \mathrm{Spin}(7),
 $$
 
 acting on $\mathbb{R}^n$ in the standard way.

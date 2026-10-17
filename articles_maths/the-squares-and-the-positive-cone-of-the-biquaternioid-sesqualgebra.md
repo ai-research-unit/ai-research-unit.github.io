@@ -6,12 +6,12 @@
 The square of an element for the sesquilinear multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$, and it is a Hermitian element whose scalar part is the sum of the modulus squares of the four coordinates,
 
 $$
-\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu=0}^{3}Q_\mu\overline{Q_\mu}=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} .
+\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\overline{Q_\mu}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .
 $$
 
 That scalar part is a nonnegative real number, and it vanishes only at $\tilde Q=0$, so the square of a nonzero element is a nonzero Hermitian element and the square map has no kernel beyond zero. The sums of the squares form the **cone of squares** of the multiplication, and it is the subject of this article: the cone is closed under addition, it is carried into itself by the scalars of the square semiring of the base, it is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and it is **proper**, so the preorder it defines is a partial order.
 
-The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ also carries the name, and the caution is the one *Introduction to the General Plain Sesqualgebra* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
+The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ also carries the name, and the caution is the one *Introduction to the General Plain Sesqualgebra* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
 
 The setting is that of *Introduction to the General Plain Sesqualgebra*, whose §*The Squares and the Positive Cone* states the form of the square and its scalar part, and of *Sesqualgebras*. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, the zero divisors of the algebra are *Zero Divisors of the Biquaternion Algebra*, and the remarkable subspaces against which the cone is placed are *Remarkable Subspaces and the Four General Products*. The general theory that the article reads is *Hermitian Squares and the Algebraic Positive Cone*, and the order it defines is the preorder of that article on the biquaternion algebra.
 
@@ -25,7 +25,7 @@ $$
 \tilde Q\star\tilde Q=\tilde Q\tilde Q^{*} ,
 $$
 
-and it is written once and for all $\tilde Q\star\tilde Q$; the other square of the corpus, $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$, is called the **natural square** and is not the square of the multiplication.
+and it is written once and for all $\tilde Q\star\tilde Q$; the other square of the corpus, $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, is called the **natural square** and is not the square of the multiplication.
 
 **Remark.** The two squares are the two central readings of the product with one factor conjugated, and *Introduction to the General Plain Sesqualgebra* keeps them apart by the caution that both are called the square in different places of the corpus. The present article uses only the first, and the second appears once, in §*The Two Squares*, where the contrast is computed.
 
@@ -48,32 +48,32 @@ and it is the product of $\tilde Q$ with its own conjugate.
 **Theorem (the scalar part of the square).** For every $\tilde P,\tilde Q$ the scalar part of the product is sesquilinear in the two arguments,
 
 $$
-\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu} ,
+\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu} ,
 $$
 
 and the square of $\tilde Q$ has the scalar part
 
 $$
-\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu=0}^{3}Q_\mu\overline{Q_\mu}=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} ,
+\mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\overline{Q_\mu}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} ,
 $$
 
 a nonnegative real number that vanishes if and only if $\tilde Q=0$.
 
-**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_0\overline{Q_0}-(\vec P,-\overline{\vec Q})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
+**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_t\overline{Q_t}-(\vec P,-\overline{\vec Q})=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
 
 **Remark.** The display is the reason the square is non-vanishing: a nonzero square has a strictly positive scalar part, so it is not zero and its scalar part fixes a genuine sign. It is also the reason the general plain bilinear sum $\sum_\mu Q_\mu^{2}$ and the scalar part of the square are not the same function: the first is a general plain bilinear sum, the second a sum of modulus squares, and they agree exactly on the real subspace.
 
 ### The Coordinates of the Square
 
-**Proposition.** In the scalar–vector form, with $\tilde Q=Q_0e_0+\vec Q$,
+**Proposition.** In the scalar–vector form, with $\tilde Q=Q_te_t+\vec Q$,
 
 $$
-\tilde Q\star\tilde Q=\Bigl(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\Bigr)e_0+\bar Q_0\vec Q-Q_0\overline{\vec Q}-\vec Q\times\overline{\vec Q} ,
+\tilde Q\star\tilde Q=\Bigl(\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2}\Bigr)e_t+\bar Q_t\vec Q-Q_t\overline{\vec Q}-\vec Q\times\overline{\vec Q} ,
 $$
 
 and the vector part is the sum of the three terms displayed.
 
-**Proof.** Multiply $\tilde Q=Q_0+\vec Q$ by $\tilde Q^{*}=\bar Q_0-\overline{\vec Q}$ with the multiplication of the basis; the scalar part is the sum of the modulus squares by the theorem above, and the vector part collects the terms $\bar Q_0\vec Q$ and $-Q_0\overline{\vec Q}$ from the two scalars and the cross term $-\vec Q\times\overline{\vec Q}$.
+**Proof.** Multiply $\tilde Q=Q_t+\vec Q$ by $\tilde Q^{*}=\bar Q_t-\overline{\vec Q}$ with the multiplication of the basis; the scalar part is the sum of the modulus squares by the theorem above, and the vector part collects the terms $\bar Q_t\vec Q$ and $-Q_t\overline{\vec Q}$ from the two scalars and the cross term $-\vec Q\times\overline{\vec Q}$.
 
 **Remark.** The vector part need not vanish, so the square of an element is a genuinely biquaternionic Hermitian element and not a real scalar. The real scalar part is the only part whose sign is fixed, and it is the part the properness of the cone is read from.
 
@@ -82,26 +82,26 @@ and the vector part is the sum of the three terms displayed.
 **Example.** Every basis element squares to the unit,
 
 $$
-e_\mu\star e_\mu=e_0 , \qquad \mu=0,1,2,3 ,
+e_\mu\star e_\mu=e_t , \qquad \mu\in\{t,x,y,z\} ,
 $$
 
-and likewise $ie_\mu\star ie_\mu=e_0$ for the three vector directions. Indeed $e_k\star e_k=e_ke_k^{*}=e_k(-e_k)=-e_k^{2}=e_0$, and $e_0\star e_0=e_0e_0^{*}=e_0$; for $ie_k$ one has $(ie_k)^{*}=ie_k$ and $(ie_k)^{2}=i^{2}e_k^{2}=(-1)(-e_0)=e_0$, so $ie_k\star ie_k=(ie_k)^{2}=e_0$.
+and likewise $i\vec e_\mu\star i\vec e_\mu=e_t$ for the three vector directions. Indeed $\vec e_\mu\star \vec e_\mu=\vec e_\mu \vec e_\mu^{*}=\vec e_\mu(-\vec e_\mu)=-\vec e_\mu^{2}=e_t$, and $e_t\star e_t=e_te_t^{*}=e_t$; for $i\vec e_\mu$ one has $(i\vec e_\mu)^{*}=i\vec e_\mu$ and $(i\vec e_\mu)^{2}=i^{2}\vec e_\mu^{2}=(-1)(-e_t)=e_t$, so $i\vec e_\mu\star i\vec e_\mu=(i\vec e_\mu)^{2}=e_t$.
 
-**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_0$ is $e_0$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_0$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ of square $-e_0$.
+**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_t$ is $e_t$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_t$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_t+\tilde\Xi)$ with $\tilde\Xi$ of square $-e_t$.
 
 ### The Two Squares
 
 **Proposition.** The square of the multiplication and the natural square agree exactly on the elements whose four coordinates are real,
 
 $$
-\tilde Q\star\tilde Q=\tilde Q\tilde Q^{\natural} \quad\Longleftrightarrow\quad Q_\mu\in\mathbb{R}\ \text{ for }\ \mu=0,1,2,3 ,
+\tilde Q\star\tilde Q=\tilde Q\tilde Q^{\natural} \quad\Longleftrightarrow\quad Q_\mu\in\mathbb{R}\ \text{ for }\ \mu\in\{t,x,y,z\} ,
 $$
 
-so they agree on the real subspace $\mathbb{R}^{4}$ and differ off it. The simplest witness is $\tilde Q=ie_0$, where the square of the multiplication is $e_0$ and the natural square is $-e_0$, a difference of $2e_0$.
+so they agree on the real subspace $\mathbb{R}^{4}$ and differ off it. The simplest witness is $\tilde Q=ie_t$, where the square of the multiplication is $e_t$ and the natural square is $-e_t$, a difference of $2e_t$.
 
-**Proof.** Write the coordinates in the real form $\tilde Q=\tilde A+i\tilde B$ with $\tilde A,\tilde B$ real. The star and the natural conjugation act on that form by $\tilde Q^{*}=\tilde A^{\natural}-i\tilde B^{\natural}$ and $\tilde Q^{\natural}=\tilde A^{\natural}+i\tilde B^{\natural}$, because both maps are $\mathbb{R}$-linear and the star conjugates the coefficient $i$; hence the difference of the two squares is $\tilde Q\tilde Q^{*}-\tilde Q\tilde Q^{\natural}=-2i\,\tilde Q\tilde B^{\natural}$. If the two squares are equal then $\tilde Q\tilde B^{\natural}=0$, that is $\tilde A\tilde B^{\natural}+i\tilde B\tilde B^{\natural}=0$; the first term is real and the second is the purely imaginary scalar $i\bigl(B_0^{2}+\lVert\vec B\rVert^{2}\bigr)$, so the equation forces $\tilde B\tilde B^{\natural}=0$, whence $\tilde B=0$ and the four coordinates of $\tilde Q$ are real. Conversely, for real coordinates one has $\tilde Q^{*}=\tilde Q^{\natural}$ and the two squares coincide. At $\tilde Q=ie_0$ one has $\tilde A=0$ and $\tilde B=e_0$, so the difference is $-2i\,(ie_0)e_0=2e_0$, while $\tilde Q\star\tilde Q=i\bar i\,e_0=e_0$ and $\tilde Q\tilde Q^{\natural}=i^{2}e_0=-e_0$.
+**Proof.** Write the coordinates in the real form $\tilde Q=\tilde A+i\tilde B$ with $\tilde A,\tilde B$ real. The star and the natural conjugation act on that form by $\tilde Q^{*}=\tilde A^{\natural}-i\tilde B^{\natural}$ and $\tilde Q^{\natural}=\tilde A^{\natural}+i\tilde B^{\natural}$, because both maps are $\mathbb{R}$-linear and the star conjugates the coefficient $i$; hence the difference of the two squares is $\tilde Q\tilde Q^{*}-\tilde Q\tilde Q^{\natural}=-2i\,\tilde Q\tilde B^{\natural}$. If the two squares are equal then $\tilde Q\tilde B^{\natural}=0$, that is $\tilde A\tilde B^{\natural}+i\tilde B\tilde B^{\natural}=0$; the first term is real and the second is the purely imaginary scalar $i\bigl(B_t^{2}+\lVert\vec B\rVert^{2}\bigr)$, so the equation forces $\tilde B\tilde B^{\natural}=0$, whence $\tilde B=0$ and the four coordinates of $\tilde Q$ are real. Conversely, for real coordinates one has $\tilde Q^{*}=\tilde Q^{\natural}$ and the two squares coincide. At $\tilde Q=ie_t$ one has $\tilde A=0$ and $\tilde B=e_t$, so the difference is $-2i\,(ie_t)e_t=2e_t$, while $\tilde Q\star\tilde Q=i\bar i\,e_t=e_t$ and $\tilde Q\tilde Q^{\natural}=i^{2}e_t=-e_t$.
 
-**Remark.** The distinction matters for the vanishing of the square. The natural square $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ vanishes exactly on the zero divisors of the algebra, a six-real-dimensional set, by *Zero Divisors of the Biquaternion Algebra*; the square of the multiplication vanishes exactly at $\tilde Q=0$. The two statements are the two halves of the corpus's treatment of squares, and the cone of the multiplication is built from the first and not the second.
+**Remark.** The distinction matters for the vanishing of the square. The natural square $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes exactly on the zero divisors of the algebra, a six-real-dimensional set, by *Zero Divisors of the Biquaternion Algebra*; the square of the multiplication vanishes exactly at $\tilde Q=0$. The two statements are the two halves of the corpus's treatment of squares, and the cone of the multiplication is built from the first and not the second.
 
 ## The Cone of Squares
 
@@ -214,11 +214,11 @@ The remarkable subspaces of *Remarkable Subspaces and the Four General Products*
 | set | description | the cone inside it |
 |---|---|---|
 | Hermitian subspace $\mathbb{M}_+$ | the fixed set of ${}^{*}$, real four-dimensional | yes, and it is the additive hull of the cone |
-| centre $\mathbb{C}e_0$ | the central elements | the nonnegative real multiples of $e_0$ |
-| real subspace $\mathbb{R}^{4}$ | the elements with real coordinates | the squares of the real subspace, which are the nonnegative multiples of $e_0$ |
-| anti-Hermitian subspace $\mathbb{M}_-$ | the anti-fixed set, $ie_0$ included | the origin alone |
+| centre $\mathbb{C}e_t$ | the central elements | the nonnegative real multiples of $e_t$ |
+| real subspace $\mathbb{R}^{4}$ | the elements with real coordinates | the squares of the real subspace, which are the nonnegative multiples of $e_t$ |
+| anti-Hermitian subspace $\mathbb{M}_-$ | the anti-fixed set, $ie_t$ included | the origin alone |
 
-**Remark.** The table is the placement and not a new computation: it reads the inclusion $C(\mathbb{B})\subseteq\mathbb{M}_+$ against the other five subspaces. The entry for the real subspace is that $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ for a real $\tilde Q$, a nonnegative multiple of the unit, so the real half meets the cone in the ray of the unit and in nothing else.
+**Remark.** The table is the placement and not a new computation: it reads the inclusion $C(\mathbb{B})\subseteq\mathbb{M}_+$ against the other five subspaces. The entry for the real subspace is that $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ for a real $\tilde Q$, a nonnegative multiple of the unit, so the real half meets the cone in the ray of the unit and in nothing else.
 
 ## The Vanishing Square and the Zero Divisors
 
@@ -231,12 +231,12 @@ $$
 whereas the natural square vanishes exactly on the zero divisors of the algebra,
 
 $$
-\tilde Q\tilde Q^{\natural}=0 \quad\Longleftrightarrow\quad \sum_{\mu=0}^{3}Q_\mu^{2}=0 ,
+\tilde Q\tilde Q^{\natural}=0 \quad\Longleftrightarrow\quad \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}=0 ,
 $$
 
 a six-real-dimensional set.
 
-**Proof.** The first is the theorem on the scalar part: $\lvert\mathrm{Sc}(\tilde Q\star\tilde Q)\rvert=\sum_\mu\lvert Q_\mu\rvert^{2}$ vanishes only at $\tilde Q=0$. The second is $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ by the definition of the natural square, and the classification of the zero divisors of $\mathbb{B}$ is *Zero Divisors of the Biquaternion Algebra*.
+**Proof.** The first is the theorem on the scalar part: $\lvert\mathrm{Sc}(\tilde Q\star\tilde Q)\rvert=\sum_\mu\lvert Q_\mu\rvert^{2}$ vanishes only at $\tilde Q=0$. The second is $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ by the definition of the natural square, and the classification of the zero divisors of $\mathbb{B}$ is *Zero Divisors of the Biquaternion Algebra*.
 
 **Remark.** The two vanishing sets are the two faces of the square: the square of the multiplication has the smallest possible vanishing set, the origin, and the natural square has the largest possible nontrivial one, the zero divisor set. The idempotents of the multiplication are the nonzero Hermitian elements with $\tilde Q\star\tilde Q=\tilde Q$, and they are the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, not the zero divisors.
 
@@ -251,16 +251,16 @@ $$
 the cone of squares becomes the set of the Hermitian elements of $M_2(\mathbb{C})$ that are sums of the products $XX^{\dagger}$, and the additive map of the properness theorem becomes the trace,
 
 $$
-\mathrm{tr}\bigl(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\sum_{i,j=1}^{2}\lvert X_{ij}\rvert^{2}=2\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2} .
+\mathrm{tr}\bigl(\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}\bigr)=\sum_{i,j=1}^{2}\lvert X_{ij}\rvert^{2}=2\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .
 $$
 
-**Proof.** The first identity is the multiplicativity of $\mathsf{M}_2$ on the sesquilinear product, $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, together with $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. The trace identity is $\sum_{i,j}\lvert X_{ij}\rvert^{2}$ for the matrix $\mathsf{M}_2(\tilde Q)$, and the comparison with the scalar part is the factor two from $\mathrm{tr}(I)=2$ and the identity $\mathrm{tr}(\mathsf{M}_2(\tilde Q))=2Q_0$ of *Biquaternion $2\times2$ Matrix Element Representation* together with the fact that the modulus is computed on the four coordinates.
+**Proof.** The first identity is the multiplicativity of $\mathsf{M}_2$ on the sesquilinear product, $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$, together with $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. The trace identity is $\sum_{i,j}\lvert X_{ij}\rvert^{2}$ for the matrix $\mathsf{M}_2(\tilde Q)$, and the comparison with the scalar part is the factor two from $\mathrm{tr}(I)=2$ and the identity $\mathrm{tr}(\mathsf{M}_2(\tilde Q))=2Q_t$ of *Biquaternion $2\times2$ Matrix Element Representation* together with the fact that the modulus is computed on the four coordinates.
 
 **Remark.** The trace is the matrix reading of the map $\mathrm{Sc}$, and the factor $2$ is the only difference between the two. The properness of the cone is therefore the properness of the cone of the Hermitian squares of $M_2(\mathbb{C})$, which is the standard proper cone of the matrix algebra.
 
 ## Summary
 
-The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{M}_+$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The natural square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
+The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{M}_+$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The natural square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
 
 ## Summary of Notation
 
@@ -268,7 +268,7 @@ The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the sesquilinear multiplication |
 | $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ | the square of the multiplication |
-| $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ | the natural square |
+| $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ | the natural square |
 | $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$ | the scalar part of the product |
 | $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the scalar part of the square, nonnegative real |
 | $C(\mathbb{B})=\{\sum_i\tilde Q_i\star\tilde Q_i\}$ | the cone of squares |

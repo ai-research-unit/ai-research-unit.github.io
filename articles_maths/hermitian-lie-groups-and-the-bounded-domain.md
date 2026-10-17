@@ -121,7 +121,7 @@ For $G = SU(1,1)\cong SL_2(\mathbb{R})$ the symmetric space is the hyperbolic pl
 
 ### The Siegel Upper Half-Plane
 
-For $G = Sp(n,\mathbb{R})$ the symmetric space is the Siegel upper half-plane of symmetric complex matrices with positive definite imaginary part, a Hermitian symmetric space of rank $n$; the group acts by the fractional linear transformations $Z\mapsto (AZ+B)(CZ+D)^{-1}$, the maximal compact subgroup is the unitary group $U(n)$, and the bounded realisation is the corresponding bounded symmetric domain.
+For $G = Sp(n,\mathbb{R})$ the symmetric space is the Siegel upper half-plane of symmetric complex matrices with positive definite imaginary part, a Hermitian symmetric space of rank $n$; the group acts by the fractional linear transformations $Z\mapsto (AZ+B)(CZ+D)^{-1}$, the maximal compact subgroup is the unitary group $\mathrm{U}(n)$, and the bounded realisation is the corresponding bounded symmetric domain.
 
 ### The Orthogonal Case
 

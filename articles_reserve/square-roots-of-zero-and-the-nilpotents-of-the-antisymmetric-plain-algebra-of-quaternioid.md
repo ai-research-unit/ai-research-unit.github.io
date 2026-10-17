@@ -54,7 +54,7 @@ the origin alone, the parent being a division product.
 $\lambda\in\mathbb{R}$. A **root of $\lambda$ in $\star$** is a nonzero element $\tilde\xi$ with
 
 $$
-\tilde\xi\star\tilde\xi=\lambda e_0 .
+\tilde\xi\star\tilde\xi=\lambda e_t .
 $$
 
 The three central values the quaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $+1$
@@ -112,13 +112,13 @@ nonzero, with itself as partner (*Zero Divisors of the Antisymmetric Plain Algeb
 
 **Remark (the whole space, and not only the vector subspace).** The root set of $0$ is the whole
 space, and **not** the vector subspace: the scalar coordinate does not enter the square, since
-$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_0+\vec q$
+$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_t+\vec q$
 lies in the set as soon as it is nonzero. The set has real dimension four, and its elements are
 pairwise partners of themselves.
 
 **Remark (the maximum class).** The root set of $0$ is the **maximum possible**, the whole punctured
 space, and it is the only nondegenerate one: for $\lambda\neq0$ the root equation
-$\tilde\xi\times\tilde\xi=\lambda e_0$ reduces to $0=\lambda e_0$ and is empty, and for $\lambda=0$ it
+$\tilde\xi\times\tilde\xi=\lambda e_t$ reduces to $0=\lambda e_t$ and is empty, and for $\lambda=0$ it
 is universal. The specification of the root is by the target value alone, the value $0$ accepting
 every nonzero element and every other value accepting none; this is the opposite of the parent plain
 product, where the roots of a central value form a sphere or a pair and degenerate only on a
@@ -229,7 +229,7 @@ the Antisymmetric Plain Algebra*). Hence every element is its own annihilating p
 and on the right.
 
 The self-annihilation is the element-level form of the totality of the class. For a noncentral element
-the annihilator is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec\nu$ of real dimension two, which
+the annihilator is the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec\nu$ of real dimension two, which
 contains the element; for a central element it is the whole space. The element lies in its annihilator
 in every case, which is the statement that the square vanishes.
 
@@ -266,8 +266,8 @@ the empty set off the origin. Over $\mathbb{R}$ the plain square has no isotropi
 isotropic cone being real only after complexification, so the pure elements that would be square zero
 over $\mathbb{C}$ are not available. The block is the antisymmetric half of the parent, and the
 comparison is the comparison of the whole space with the origin alone: the block's class strictly
-contains the parent's, the element $e_0$ lying in the class of the block ($e_0\times e_0=0$) and not of
-the parent ($e_0^2=e_0$). The enlargement is the removal of the scalar part: the parent's criterion is
+contains the parent's, the element $e_t$ lying in the class of the block ($e_t\times e_t=0$) and not of
+the parent ($e_t^2=e_t$). The enlargement is the removal of the scalar part: the parent's criterion is
 a condition on the square, and the block's square is identically zero, so the condition is satisfied by
 every element.
 
@@ -293,7 +293,7 @@ The roots of $0$ of the six products, and the nilpotent class beside them, are t
 | SPA, $\tilde p\bullet\tilde q$ | none | $\{0\}$ |
 | APA, $\tilde p\times\tilde q$ | the punctured space | $\mathbb{H}$ |
 | GQA, $\tilde p^{\natural}\tilde q$ | none | $\{0\}$ |
-| SQA, $N(\tilde p,\tilde q)e_0$ | none | $\{0\}$ |
+| SQA, $N(\tilde p,\tilde q)e_t$ | none | $\{0\}$ |
 | AQA, $\tilde p\wedge^{\natural}\tilde q$ | the punctured space | $\mathbb{H}$ |
 
 **Remark (the pairing of the blocks).** The two **general** products and their symmetric halves share
@@ -332,7 +332,7 @@ enlargement being the removal of the scalar part from the square.
 | index two | every nilpotent; the origin is the trivial member, of index one |
 | $A_\times(\tilde\nu)$, $B_\times(\tilde\nu)$ | the two one-sided annihilators of an element, both containing it |
 | $\{0\}$ | the nilpotent class of the parent plain product, the empty set off the origin |
-| $\tfrac12(e_0+\tilde\xi)\mapsto$ idempotents | the halving map, not used here; the idempotents are the companion article |
+| $\tfrac12(e_t+\tilde\xi)\mapsto$ idempotents | the halving map, not used here; the idempotents are the companion article |
 
 ## Further Reading
 

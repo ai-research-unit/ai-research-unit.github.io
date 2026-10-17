@@ -2,8 +2,8 @@
 
 ## Introduction
 
-In the symmetric quaternionic block the square of an element is a scalar multiple of $e_0$, and the
-multiple is the quaternion form, $\tilde x\star\tilde x=N(\tilde x)e_0$. The equation
+In the symmetric quaternionic block the square of an element is a scalar multiple of $e_t$, and the
+multiple is the quaternion form, $\tilde x\star\tilde x=N(\tilde x)e_t$. The equation
 $\tilde x\star\tilde x=0$ is therefore the vanishing of the sum of four squares, and the elements it
 selects are the subject of this article. The block is one of the products on which the square and the
 cube vanish at different elements: the origin is the only element whose square vanishes, while every
@@ -24,13 +24,13 @@ The nilpotents of the block are exactly the nonzero pure elements, the punctured
 $\operatorname{Im}\mathbb{H}\setminus\{0\}$, and each of them has index exactly three; there is no
 nilpotent of index two and none of index greater than three. The nilpotent set is strictly contained in
 the zero-divisor set, which is the whole punctured space $\mathbb{H}\setminus\{0\}$, the strictness
-being witnessed by $e_0$; the nilpotent set and the idempotent set are disjoint. In
+being witnessed by $e_t$; the nilpotent set and the idempotent set are disjoint. In
 the $2\times2$ model the nilpotents are the trace-free matrices, and the singular branch of the complex
 chapter collapses because the determinant is definite.
 
 **Boundaries.** The product, the square and the form are *Introduction to the Symmetric Quaternionic
 Algebra of Quaternions* and *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*;
-the roots of $+e_0$ and the idempotents of the block are *Square Roots of One and the Idempotents of the
+the roots of $+e_t$ and the idempotents of the block are *Square Roots of One and the Idempotents of the
 Symmetric Quaternionic Algebra*, the companion of this article; the roots of a general central value,
 with the classification by the sign, are *Square Roots of a General Element in the Symmetric Quaternionic
 Algebra*; the diagonal and the non-isotropic class are *Norm and Invertibility in the Symmetric
@@ -40,16 +40,16 @@ Quaternionic Algebra*; the powers and the nilpotent class are also collected in 
 the Symmetric Quaternionic Algebra*; the realization $\mathsf{M}_2$, its trace and its determinant are
 *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\vec x$, with
-$\vec x=x_1e_1+x_2e_2+x_3e_3$. The **quaternion conjugation** is
-$\tilde x^{\natural}=x_0e_0-\vec x$; on $\mathbb{R}$ the bar is the identity and the star coincides
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with
+$x=x_1$, $y=x_2$, $z=x_3$. The **quaternion conjugation** is
+$\tilde x^{\natural}=x_0e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; on $\mathbb{R}$ the bar is the identity and the star coincides
 with the natural sign ${}^{\natural}$. The **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$, with diagonal
-$N(\tilde x)=x_0^{2}+|\vec x|^{2}$, and the **symmetric quaternionic product** is
-$\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is the scalar line $\mathbb{R}e_0$ and the
+$N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$, with diagonal
+$N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$, and the **symmetric quaternionic product** is
+$\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$. The centre is the scalar line $\mathbb{R}e_t$ and the
 vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$. The
+$\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. The
 **powers** are left-nested, $\tilde x^{\star1}=\tilde x$ and
 $\tilde x^{\star(k+1)}=\tilde x^{\star k}\star\tilde x$; the block is commutative, so the nesting is
 immaterial. A root of a central value carries the lower-case xi $\tilde\xi$ of the quaternion layer, a
@@ -62,8 +62,8 @@ nilpotent the lower-case nu $\tilde\nu$, and a generic element the letter $\tild
 **Theorem (the reduction of the root equation of $0$).** The equation $\tilde\xi\star\tilde\xi=0$ has the
 same solutions as the single scalar equation $N(\tilde\xi)=0$.
 
-*Proof.* The square of the block is $\tilde\xi\star\tilde\xi=N(\tilde\xi)e_0$ by the governing formula,
-and a multiple of $e_0$ vanishes exactly when its scalar coefficient does.
+*Proof.* The square of the block is $\tilde\xi\star\tilde\xi=N(\tilde\xi)e_t$ by the governing formula,
+and a multiple of $e_t$ vanishes exactly when its scalar coefficient does.
 
 **Corollary (the vanishing square is the origin).** The elements whose square vanishes are the origin
 alone, and there is no nonzero square-zero element of the block:
@@ -94,12 +94,12 @@ Other Real Blocks*.
 
 **Remark (the collapse of the isotropic cone).** In the biquaternion block the roots of $0$ form the
 punctured isotropic cone $\{N=0\}\setminus\{0\}$, of complex dimension three, with two families of
-generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|\vec x|^{2}$ is definite, the
+generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ is definite, the
 isotropic locus $\{N=0\}$ collapses to the origin, and the punctured cone is empty. The block's
 isotropic elements are none but the origin and its radical is $\{0\}$ (*The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*), so the root set of $0$ is a single point and not a
 family. The roots of the value $0$ are the extreme case of the reduction of the companion article, whose
-general central value $\lambda e_0$ has the root set $\{0\}$ at $\lambda=0$, the empty set for
+general central value $\lambda e_t$ has the root set $\{0\}$ at $\lambda=0$, the empty set for
 $\lambda<0$ and the level set $\sqrt{\lambda}\,\mathrm{Sp}(1)$ for $\lambda>0$ (*Square Roots of a
 General Element in the Symmetric Quaternionic Algebra*).
 
@@ -110,24 +110,24 @@ General Element in the Symmetric Quaternionic Algebra*).
 **Theorem (the powers).** For every $\tilde x$ and every $k\geq2$,
 
 $$
-\tilde x^{\star k}=N(\tilde x)\,x_0^{\,k-2}\,e_0 .
+\tilde x^{\star k}=N(\tilde x)\,x_0^{\,k-2}\,e_t .
 $$
 
-*Proof.* For $k=2$ this is the square, $\tilde x\star\tilde x=N(\tilde x)e_0$. The induction step uses
-$\tilde x^{\star k}\star\tilde x=N(\tilde x)x_0^{k-2}e_0\star\tilde x=N(\tilde x)x_0^{k-2}(x_0e_0)=N(\tilde x)x_0^{k-1}e_0$,
-where the middle equality is $e_0\star\tilde x=x_0e_0$; the formula at $k+1$ follows.
+*Proof.* For $k=2$ this is the square, $\tilde x\star\tilde x=N(\tilde x)e_t$. The induction step uses
+$\tilde x^{\star k}\star\tilde x=N(\tilde x)x_0^{k-2}e_t\star\tilde x=N(\tilde x)x_0^{k-2}(x_0e_t)=N(\tilde x)x_0^{k-1}e_t$,
+where the middle equality is $e_t\star\tilde x=x_0e_t$; the formula at $k+1$ follows.
 
 **Corollary (all powers from the square on are central).** From the second power on, every power of an
-element is a real multiple of $e_0$: the square is $N(\tilde x)e_0$, the cube is $N(\tilde x)x_0e_0$, and
-every higher power is $N(\tilde x)x_0^{k-2}e_0$. The vector part of the element disappears at the first
+element is a real multiple of $e_t$: the square is $N(\tilde x)e_t$, the cube is $N(\tilde x)x_0e_t$, and
+every higher power is $N(\tilde x)x_0^{k-2}e_t$. The vector part of the element disappears at the first
 power and never returns.
 
 **Corollary (the vanishing powers).** For an element with $x_0\neq0$ no power vanishes. For a nonzero
-pure element the powers are $\tilde x,\ N(\tilde x)e_0,\ 0,\ 0,\dots$, so the cube is the only vanishing
+pure element the powers are $\tilde x,\ N(\tilde x)e_t,\ 0,\ 0,\dots$, so the cube is the only vanishing
 power. The only vanishing power of any element other than the origin is the cube of a nonzero pure
 element.
 
-*Proof.* The power formula gives $N(\tilde x)x_0^{k-2}e_0$; the coefficient vanishes exactly when
+*Proof.* The power formula gives $N(\tilde x)x_0^{k-2}e_t$; the coefficient vanishes exactly when
 $N(\tilde x)=0$, that is at $\tilde x=0$, or when $k\geq3$ and $x_0=0$.
 
 ### The Square-Zero Elements
@@ -136,7 +136,7 @@ $N(\tilde x)=0$, that is at $\tilde x=0$, or when $k\geq3$ and $x_0=0$.
 block has no nonzero square-zero element; equivalently, the elements whose square vanishes form the
 origin alone, as §*The Roots of Zero* states, and the root set of $0$ is that same singleton.
 
-*Proof.* The square is $N(\tilde x)e_0$, and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ vanishes only at the
+*Proof.* The square is $N(\tilde x)e_t$, and $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ vanishes only at the
 origin; the origin has the vanishing square and is the only element that does.
 
 ## The Nilpotents
@@ -162,12 +162,12 @@ $$
 that is, if and only if $\tilde x\in\operatorname{Im}\mathbb{H}\setminus\{0\}$. Every nonzero pure
 element is a nilpotent of index exactly three.
 
-*Proof.* By the power formula the cube is $\tilde x^{\star3}=N(\tilde x)x_0e_0$. If $x_0=0$ the cube
+*Proof.* By the power formula the cube is $\tilde x^{\star3}=N(\tilde x)x_0e_t$. If $x_0=0$ the cube
 vanishes, so the index is at most three. If $x_0\neq0$, then
-$N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
+$N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
 by the formula $N(\tilde x)x_0^{k-2}\neq0$ for every $k\geq2$, so no power vanishes and $\tilde x$ is
 not a nilpotent. Hence a nilpotent has $x_0=0$. Conversely a nonzero pure element has
-$N(\tilde x)=|\vec x|^{2}>0$, so its square is $N(\tilde x)e_0\neq0$ and its cube is $0$: its index
+$N(\tilde x)=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}>0$, so its square is $N(\tilde x)e_t\neq0$ and its cube is $0$: its index
 is exactly three, and not two.
 
 ### The Index
@@ -191,7 +191,7 @@ $$
 $$
 
 the vector subspace
-$\operatorname{Im}\mathbb{H}=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ with its origin removed, of real dimension three. Every
+$\operatorname{Im}\mathbb{H}=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ with its origin removed, of real dimension three. Every
 nonzero pure element, and only those, is a nilpotent, and each of them has index three.
 
 *Proof.* The criterion gives the set and the index; the vector subspace has real dimension three.
@@ -202,24 +202,24 @@ nonzero pure element, and only those, is a nilpotent, and each of them has index
 
 **Proposition (against the zero divisors).** Every nilpotent is a zero divisor, since every nonzero
 element of the block is a zero divisor (*Zero Divisors of the Symmetric Quaternionic Algebra*); but the
-nilpotent set is strictly smaller than the zero-divisor set. The element $e_0$ is a zero divisor,
-$e_0\star e_1=0$ with $e_1\neq0$, and it is not a nilpotent, its powers being $e_0$ at every index. So
+nilpotent set is strictly smaller than the zero-divisor set. The element $e_t$ is a zero divisor,
+$e_t\star \vec e_x=0$ with $\vec e_x\neq0$, and it is not a nilpotent, its powers being $e_t$ at every index. So
 
 $$
 \operatorname{Im}\mathbb{H}\setminus\{0\}\subsetneq\mathbb{H}\setminus\{0\},
 $$
 
-the inclusion being strict at $e_0$.
+the inclusion being strict at $e_t$.
 
 *Proof.* The nilpotents are the nonzero pure elements, the vector subspace minus its origin; the zero
-divisors are all the nonzero elements; $e_0$ is nonzero, central, hence not pure, and it is a zero
+divisors are all the nonzero elements; $e_t$ is nonzero, central, hence not pure, and it is a zero
 divisor by the displayed annihilation.
 
 ### The Idempotents
 
-**Proposition (against the idempotents).** The idempotents of the block are $0$ and $e_0$, the
-nilpotents are the nonzero pure elements, and the two sets are disjoint. The idempotent $e_0$ is not a
-nilpotent, and a nonzero pure element $\tilde\nu$ is not an idempotent, its square $N(\tilde\nu)e_0$
+**Proposition (against the idempotents).** The idempotents of the block are $0$ and $e_t$, the
+nilpotents are the nonzero pure elements, and the two sets are disjoint. The idempotent $e_t$ is not a
+nilpotent, and a nonzero pure element $\tilde\nu$ is not an idempotent, its square $N(\tilde\nu)e_t$
 being central while the element is not. The origin is the only element at which the two defining
 equations $\tilde x\star\tilde x=\tilde x$ and $\tilde x\star\tilde x=0$ hold together, and it is
 excluded from the nilpotent class by the definition.
@@ -231,7 +231,7 @@ two equations together give $\tilde x=0$.
 
 ### The Meeting of the Three Classes
 
-**Remark (the meeting of the three classes).** The idempotent set $\{0,e_0\}$, the nilpotent set
+**Remark (the meeting of the three classes).** The idempotent set $\{0,e_t\}$, the nilpotent set
 $\operatorname{Im}\mathbb{H}\setminus\{0\}$ and the square-zero set $\{0\}$ are pairwise almost disjoint:
 the idempotents and the nilpotents meet nowhere, the square-zero set is the origin alone, and the origin
 lies in the idempotent set and in the square-zero set but not in the nilpotent set. This is the element-theoretic content of the absence
@@ -263,7 +263,7 @@ reduces to the zero matrix, because a nonzero pure element has $N(\tilde x)>0$ w
 of the model has $N(\tilde x)=0$ and is the image of the origin.
 
 *Proof.* The trace and the determinant are the invariants of the model; a pure element has $x_0=0$,
-hence a trace-free matrix, and $\det=N(\tilde x)=|\vec x|^{2}>0$ for a nonzero pure element, so the
+hence a trace-free matrix, and $\det=N(\tilde x)=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}>0$ for a nonzero pure element, so the
 matrix is not singular; a singular matrix of the model has $\det=N(\tilde x)=0$, hence $\tilde x=0$ by
 definiteness. The criteria of the preceding sections give the index.
 
@@ -288,15 +288,15 @@ this block and invisible in the other three: here the cube, and not the square, 
 
 ## Summary
 
-The powers of the symmetric quaternionic block obey $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_0$ from
+The powers of the symmetric quaternionic block obey $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_t$ from
 the square on, so the cube vanishes exactly on the pure elements and no higher power vanishes off the
 origin. The roots of $0$ are the origin alone, since the square is the definite form
-$N(\tilde x)e_0=(x_0^{2}+|\vec x|^{2})e_0$ and a sum of squares vanishes only at the origin; the
+$N(\tilde x)e_t=(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2})e_t$ and a sum of squares vanishes only at the origin; the
 square-zero set is the single point $\{0\}$, there is no nonzero square-zero element, and the block has
 no nilpotent of index two. The nilpotents are the nonzero pure quaternions,
 $\operatorname{Im}\mathbb{H}\setminus\{0\}$, each of index exactly three; there is no nilpotent of index
 two and none of index greater than three. The nilpotent set is strictly contained in the zero-divisor
-set, the strictness witnessed by $e_0$, which annihilates $e_1$ and has no vanishing power; the
+set, the strictness witnessed by $e_t$, which annihilates $\vec e_x$ and has no vanishing power; the
 nilpotents and the idempotents are disjoint, and the origin is the only element at which the defining
 equations of the three classes of element come together. In the $2\times2$ model the nilpotents are the
 trace-free matrices, and the singular matrices of the model reduce to zero; over $\mathbb{R}$ the
@@ -306,10 +306,10 @@ singular branch of the complex chapter collapses, and the trace-free branch alon
 
 | symbol | meaning |
 |---|---|
-| $\tilde x\star\tilde x=N(\tilde x)e_0$ | the square of the block, always central |
-| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite quaternion form, the coefficient of the square |
+| $\tilde x\star\tilde x=N(\tilde x)e_t$ | the square of the block, always central |
+| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the definite quaternion form, the coefficient of the square |
 | $\{\tilde\xi:\tilde\xi\star\tilde\xi=0\}=\{0\}$ | the root set of $0$, the square-zero set |
-| $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_0$, $k\geq2$ | the powers of the block |
+| $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_t$, $k\geq2$ | the powers of the block |
 | nilpotent $\tilde\nu$ | nonzero $\tilde x$ with $\tilde x^{\star k}=0$; here the nonzero pure elements |
 | $\operatorname{Im}\mathbb{H}\setminus\{0\}$ | the nilpotent set, the punctured vector subspace |
 | index three | the index of every nonzero pure element |
@@ -323,7 +323,7 @@ singular branch of the complex chapter collapses, and the trace-free branch alon
 - *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md`), for the nilpotent, the square-zero element and the index of nilpotency
 - *Norm and Invertibility in the Symmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra-of-quaternioid.md`), for the definite form whose vanishing decides the square-zero set
 - *Square Roots of a General Element in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra-of-quaternioid.md`), for the level sets of the diagonal and the radicand zero
-- *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra-of-quaternioid.md`), the companion, for the roots of $+e_0$, the roots of $-e_0$ and the idempotents
+- *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra-of-quaternioid.md`), the companion, for the roots of $+e_t$, the roots of $-e_t$ and the idempotents
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternioid.md`), for the maximal zero-divisor set that contains the nilpotent set strictly
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra-of-quaternioid.md`), for the vanishing radical and the isotropic locus, the origin alone
 - *The Specificities of the Symmetric Quaternionic Algebra* (`articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra-of-quaternioid.md`), where the powers and the nilpotent class are collected

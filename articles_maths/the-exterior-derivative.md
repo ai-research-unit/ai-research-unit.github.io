@@ -20,7 +20,7 @@ $$
 
 the exterior multiplication by the covector $\xi$; and its order is exactly one, because $\sigma_1(d)$ does not vanish identically.
 
-*Proof.* In a chart the operator reads $d(\sum_I f_I\,dx^I) = \sum_{I,i}\partial_i f_I\,dx^i\wedge dx^I$, whose top-order part has the coefficient matrices $\xi_i$ contracted with the basis, which is the exterior multiplication by $\sum_i\xi_i dx^i$. The lower-order terms of an operator do not affect the symbol, so the class of $d$ modulo the zeroth-order operators is the multiplication by $\xi$, and the order is one.
+*Proof.* In a chart the operator reads $d(\sum_I f_I\,dx^I) = \sum_{I,i}\partial/\partial x_i f_I\,dx^i\wedge dx^I$, whose top-order part has the coefficient matrices $\xi_i$ contracted with the basis, which is the exterior multiplication by $\sum_i\xi_i dx^i$. The lower-order terms of an operator do not affect the symbol, so the class of $d$ modulo the zeroth-order operators is the multiplication by $\xi$, and the order is one.
 
 **Corollary.** The symbol of $d$ depends on the point through the covector, not through any choice of coordinates: it is the universal algebraic operation, the multiplication by the coordinate functional, and it satisfies $\sigma_1(d)(x,\xi)\circ\sigma_1(d)(x,\eta)+\sigma_1(d)(x,\eta)\circ\sigma_1(d)(x,\xi)=0$ because the wedge product is graded-commutative; in particular $\sigma_1(d)(x,\xi)^2 = 0$, which is the symbol form of $d^2 = 0$.
 
@@ -34,11 +34,11 @@ $$
 
 the pullback is a cochain map of the de Rham complexes, and it is the unique extension of the pullback of functions to the forms that is compatible with the wedge product and commutes with $d$ in this way.
 
-*Proof.* Both sides are first-order operators on the components and are reduced to the coordinate expression; the chain rule gives $\sum_j\partial_j(f\circ F)\,dy^j = d(f\circ F)$ for a function, which is the case $k=0$, and the derivation property of the exterior derivative in the target, together with the compatibility of the pullback with the wedge product, gives the general case. Uniqueness: a map on forms compatible with the wedge product is determined by its values on the functions and the exact $1$-forms, and the requirement to commute with $d$ fixes the values on the exact forms.
+*Proof.* Both sides are first-order operators on the components and are reduced to the coordinate expression; the chain rule gives $\sum_j\partial/\partial y_j(f\circ F)\,dy^j = d(f\circ F)$ for a function, which is the case $k=0$, and the derivation property of the exterior derivative in the target, together with the compatibility of the pullback with the wedge product, gives the general case. Uniqueness: a map on forms compatible with the wedge product is determined by its values on the functions and the exact $1$-forms, and the requirement to commute with $d$ fixes the values on the exact forms.
 
 **Corollary (homotopy invariance).** If $F_0, F_1 : N \to M$ are smoothly homotopic, then $F_0^* = F_1^*$ on the de Rham cohomology: the difference is $dH + Hd$ for an operator $H$ of degree $-1$ lowering the degree, the homotopy operator of the pullback along the homotopy. Consequently the exterior derivative's cohomology depends only on the homotopy type of the manifold, and the two maps induce the same map on $H^\bullet_{dR}$.
 
-*Proof.* The homotopy is a smooth map $H : N\times[0,1]\to M$; the classical chain homotopy is constructed by integrating the pullback of the contraction with $\partial_t$ over the parameter, and the identity $F_1^* - F_0^* = dK + Kd$ follows from Stokes' theorem on the strip, as in *Differential Forms and Stokes' Theorem*. The operator $K$ lowers the degree by one, so it is a cochain homotopy and the induced maps on cohomology agree.
+*Proof.* The homotopy is a smooth map $H : N\times[0,1]\to M$; the classical chain homotopy is constructed by integrating the pullback of the contraction with $\partial/\partial t$ over the parameter, and the identity $F_1^* - F_0^* = dK + Kd$ follows from Stokes' theorem on the strip, as in *Differential Forms and Stokes' Theorem*. The operator $K$ lowers the degree by one, so it is a cochain homotopy and the induced maps on cohomology agree.
 
 ## Characterisations of the Exterior Derivative
 
@@ -52,7 +52,7 @@ the pullback is a cochain map of the de Rham complexes, and it is the unique ext
 
 Moreover this operator satisfies $d^2 = 0$.
 
-*Proof.* Uniqueness: a form is locally a sum of terms $f_0\,df_1\wedge\cdots\wedge df_k$, since the coordinate forms $dx^i = d(x^i)$ are exact; the antiderivation property applied $k$ times expresses $d$ of such a term through $d$ of its factors, and property (ii) gives the values on both factors; hence $d$ is determined on a set of local generators and therefore everywhere, the local expressions agreeing on overlaps by the commutativity of the mixed partial derivatives. Existence is the coordinate formula of *Differential Forms and Stokes' Theorem*, which is checked to have the two properties. The property $d^2 = 0$ follows from the two: on a function, $d(df) = d(\sum_i\partial_if\,dx^i) = \sum_{i,j}\partial_j\partial_if\,dx^j\wedge dx^i = 0$ by the symmetry of the second derivatives against the antisymmetry of the wedge; on a general form, the antiderivation property reduces the verification to the generators.
+*Proof.* Uniqueness: a form is locally a sum of terms $f_0\,df_1\wedge\cdots\wedge df_k$, since the coordinate forms $dx^i = d(x^i)$ are exact; the antiderivation property applied $k$ times expresses $d$ of such a term through $d$ of its factors, and property (ii) gives the values on both factors; hence $d$ is determined on a set of local generators and therefore everywhere, the local expressions agreeing on overlaps by the commutativity of the mixed partial derivatives. Existence is the coordinate formula of *Differential Forms and Stokes' Theorem*, which is checked to have the two properties. The property $d^2 = 0$ follows from the two: on a function, $d(df) = d(\sum_i\partial/\partial x_i\,f\,dx^i) = \sum_{i,j}\partial^2/\partial x_j\partial x_i\,f\,dx^j\wedge dx^i = 0$ by the symmetry of the second derivatives against the antisymmetry of the wedge; on a general form, the antiderivation property reduces the verification to the generators.
 
 **Corollary.** The exterior derivative is the unique operator on the forms that is natural under the pullback, in the sense of the previous section, and satisfies (i) and (ii); the two characterisations are the same characterisation read with $F$ and without.
 
@@ -84,13 +84,13 @@ The complex and its cohomology are those of *Differential Forms and Stokes' Theo
 
 ### Local Exactness and the Poincaré Lemma
 
-**Theorem (Poincaré lemma).** Let $U \subseteq \mathbb{R}^n$ be star-shaped with respect to the origin. Then every closed form on $U$ of positive degree is exact: for each $k \geq 1$ there is an operator $K : \Omega^k(U) \to \Omega^{k-1}(U)$ with
+**Theorem (Poincaré lemma).** Let $\Xi \subseteq \mathbb{R}^n$ be star-shaped with respect to the origin. Then every closed form on $\Xi$ of positive degree is exact: for each $k \geq 1$ there is an operator $K : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ with
 
 $$
-dK + Kd = \mathrm{id} \quad \text{on } \Omega^k(U), \ k \geq 1,
+dK + Kd = \mathrm{id} \quad \text{on } \Omega^k(\Xi), \ k \geq 1,
 $$
 
-the **homotopy operator** obtained by integrating the contraction with the radial field along the segment from the origin; consequently $H^k_{dR}(U) = 0$ for $k \geq 1$ and $H^0_{dR}(U) = \mathbb{R}$.
+the **homotopy operator** obtained by integrating the contraction with the radial field along the segment from the origin; consequently $H^k_{dR}(\Xi) = 0$ for $k \geq 1$ and $H^0_{dR}(\Xi) = \mathbb{R}$.
 
 *Proof.* The operator is $K\alpha = \int_0^1 \iota_{R}\bigl(\alpha(tx)\bigr)\,\frac{dt}{t}$-type, the classical construction of *Differential Forms and Stokes' Theorem*; the identity $dK + Kd = \mathrm{id}$ is the fundamental theorem of calculus applied along the radial direction, and it is the operator statement that closed forms of positive degree on a star-shaped set are exact. The identity is the exact analogue, on the complex, of the statement that the complex is contractible.
 

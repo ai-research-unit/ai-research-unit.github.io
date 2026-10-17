@@ -7,7 +7,7 @@ A local field is a field that is locally compact and non-discrete for a topology
 
 The article assumes the local field, its valuation ring, maximal ideal, uniformiser, residue field, ramification index and residue degree, and the standard classification of local fields from *Local Fields*; the valuation, its uniqueness and the topology from *Absolute Values, Valuations and Completions*; the residue operator from *The Residue Operator of a Valued Field*; the isometric involution, its residue involution, the fixed field of index two, the norm form and the ramification dichotomy $ef = 2$ from *Involutive Valued Fields*; the involution and its fixed subring from *Involutive Rings*; and the reflexivity and completeness of the local fields from *Absolute Values, Valuations and Completions* and *The Completion Operator*. The central simple algebras over a local field with an involution, their classification by the Brauer group and the involutions, and the Hermitian and skew-Hermitian forms are the subject of *The Book of Involutions* and of *Local Class Field Theory*, and are named at the boundary and not developed.
 
-Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}$, maximal ideal $\mathrm{M}$, uniformiser $\pi$, residue field $k = \mathbb{F}_q$, value group $\Gamma\cong\mathbb{Z}$ (in the non-archimedean case) and finite residue cardinality $q = p^f$; $\sigma$ is an involution of $F$; the fixed field is $F^\sigma$, the norm form is $N(x) = x\sigma(x)$, the norm-one group is $U(F,\sigma) = \{x\in F^\times : N(x) = 1\}$, and $\bar\sigma$ is the residue involution.
+Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}$, maximal ideal $\mathrm{M}$, uniformiser $\pi$, residue field $k = \mathbb{F}_q$, value group $\Gamma\cong\mathbb{Z}$ (in the non-archimedean case) and finite residue cardinality $q = p^f$; $\sigma$ is an involution of $F$; the fixed field is $F^\sigma$, the norm form is $N(x) = x\sigma(x)$, the norm-one group is $\mathrm{U}(F,\sigma) = \{x\in F^\times : N(x) = 1\}$, and $\bar\sigma$ is the residue involution.
 
 ## Local Fields and Their Involutions
 
@@ -49,7 +49,7 @@ Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}
 
 ## The Fixed Field and the Norm Group
 
-**Theorem (the norm group and the norm-one group).** Let $\sigma \neq \mathrm{id}$ with fixed field $F^\sigma$. Then the norm form is a continuous multiplicative map $N : F^\times\to (F^\sigma)^\times$ with image of index at most two, the norm-one group $U(F,\sigma) = \ker N$ is a compact group, and it is the set of elements of the form $x/\sigma(x)$ by Hilbert's theorem 90; the norm group is all of $(F^\sigma)^\times$ when the extension is ramified and has index two in the unramified case.
+**Theorem (the norm group and the norm-one group).** Let $\sigma \neq \mathrm{id}$ with fixed field $F^\sigma$. Then the norm form is a continuous multiplicative map $N : F^\times\to (F^\sigma)^\times$ with image of index at most two, the norm-one group $\mathrm{U}(F,\sigma) = \ker N$ is a compact group, and it is the set of elements of the form $x/\sigma(x)$ by Hilbert's theorem 90; the norm group is all of $(F^\sigma)^\times$ when the extension is ramified and has index two in the unramified case.
 
 **Proof.** The norm is continuous and multiplicative; its image has index at most two because the norm of the quadratic extension has cokernel of order at most two by Hilbert's theorem 90 and the structure of the local norm group. The norm-one group is closed and bounded, hence compact because $F$ is locally compact; the parametrisation $x/\sigma(x)$ is Hilbert's theorem 90 for the cyclic extension of degree two.
 
@@ -77,7 +77,7 @@ together with the identity involution on every local field. The quadratic unrami
 
 ## Examples
 
-**Example ($(\mathbb{C}, \text{conjugation})$).** The archimedean involutive local field; fixed field $\mathbb{R}$, norm form $z\bar z$, norm-one group the circle $U(1)$, which is compact; the model of case (2) with an infinite residue field.
+**Example ($(\mathbb{C}, \text{conjugation})$).** The archimedean involutive local field; fixed field $\mathbb{R}$, norm form $z\bar z$, norm-one group the circle $\mathrm{U}(1)$, which is compact; the model of case (2) with an infinite residue field.
 
 **Example ($\mathbb{Q}_p(\sqrt{u})$ unramified).** For $p$ odd and $u$ a nonsquare unit, $F = \mathbb{Q}_p(\sqrt u)$ is unramified of degree two, the involution is $\sqrt u\mapsto -\sqrt u$, the fixed field is $\mathbb{Q}_p$, and the residue involution is the Frobenius $x\mapsto x^p$ on $\mathbb{F}_{p^2}$; the norm group is the subgroup of $p$-adic squares times the norm-one group, and the norm-one group is compact.
 
@@ -101,7 +101,7 @@ An involutive local field is complete, hence reflexive, and the involution trans
 | $\sigma$ | An involution, automatically isometric |
 | $F^\sigma$ | Fixed field, a local field, $[F:F^\sigma]\leq 2$ |
 | $N(x) = x\sigma(x)$, $v(N(x)) = 2v(x)$ | The norm form |
-| $U(F,\sigma) = \ker N$ | Compact norm-one group |
+| $\mathrm{U}(F,\sigma) = \ker N$ | Compact norm-one group |
 | $\bar\sigma$ | Residue involution of $\mathbb{F}_q$ |
 | $x\mapsto x^{p^{f/2}}$ | The nontrivial residue involution, unramified case |
 | $ef = 2$ | Unramified $(1,2)$ or ramified $(2,1)$ |

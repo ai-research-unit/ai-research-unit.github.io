@@ -19,7 +19,7 @@ Rotation: Phase, Duality and the Wick Rotation as One Generator*; the clock stru
 Other's Clock: the Sector Exchange as Relational Time*; and the discrete charge is *Particle Types, Discrete
 Charge and Three-Particle Couplings*.
 
-**Conventions.** $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is the unitary slice,
+**Conventions.** $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is the unitary slice,
 $Sp(1)\cong SU(2)$ its real-quaternion part; the thermal circle is the compact imaginary-time direction of
 circumference $\beta$ in the coordinate $t$, with $\beta=\hbar/(k_BT)$ the inverse temperature as throughout
 the corpus (its length in the material sector's units is $c\beta$), and the Matsubara frequencies are
@@ -38,8 +38,8 @@ that bridge them:
 
 | compact object | its discreteness | the corpus's interpretation |
 |---|---|---|
-| the central phase $U(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
-| the internal group $U(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
+| the central phase $\mathrm{U}(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
+| the internal group $\mathrm{U}(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
 | the thermal circle, circumference $\beta$ | the Matsubara frequencies $\omega_n=2\pi n/\beta$ | the thermal spectrum (*The Matsubara Formalism*) |
 | the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Biquaternion Orders and Finite Groups of Units*) |
 
@@ -116,8 +116,8 @@ named as a gap and not proposed as a formula.
 
 | Symbol | Meaning |
 |---|---|
-| $U(1)=\exp(i\theta)e_0$ | the compact central phase, dual to the integer charge lattice |
-| $U\cong U(2)$ | the compact unitary slice, whose irreducible labels are the internal quantum numbers |
+| $\mathrm{U}(1)=\exp(i\theta)e_t$ | the compact central phase, dual to the integer charge lattice |
+| $U\cong \mathrm{U}(2)$ | the compact unitary slice, whose irreducible labels are the internal quantum numbers |
 | $\omega_n=2\pi n/\beta$ | the Matsubara frequencies, the dual lattice of the thermal circle |
 | $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite unit groups sit |
 | $\beta=\hbar/(k_BT)$ | the circumference of the thermal circle, in the coordinate $t$ |

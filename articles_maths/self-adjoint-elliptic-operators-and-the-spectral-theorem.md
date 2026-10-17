@@ -19,7 +19,7 @@ The self-adjointness of the boundary-value problem and the vanishing of the boun
 **Definition.** Let $L$ be the elliptic operator of *Sesquilinear Forms and the Weak Formulation of an Elliptic Problem*, formally self-adjoint ($A=A^{\mathsf T}$, $b=0$, $c$ real) and uniformly elliptic, and let $B$ be a self-adjoint boundary condition, so that the boundary form of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory* vanishes on the admissible subspace. The **realisation** of $L$ under $B$ is the operator
 
 $$
-\mathrm{dom}\,L = \{u\in H^2(\Omega) : Bu=0\},\qquad Lu = -\sum_{i,j}\partial_i(a_{ij}\partial_ju)+cu ,
+\mathrm{dom}\,L = \{u\in H^2(\Omega) : Bu=0\},\qquad Lu = -\sum_{i,j}\partial/\partial x_i\,(a_{ij}\partial/\partial x_j\,u)+cu ,
 $$
 
 acting in $L^2(\Omega)$; it is the **self-adjoint realisation** of the boundary-value problem.

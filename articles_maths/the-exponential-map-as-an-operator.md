@@ -61,7 +61,7 @@ the series being finite because $\operatorname{ad}_X$ is nilpotent on a finite-d
 
 ### The Local Diffeomorphism
 
-**Theorem (the logarithm).** There is an open neighbourhood $U$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp$ restricts to a diffeomorphism $U \to V$ whose inverse is a smooth map $\log : V \to U$.
+**Theorem (the logarithm).** There is an open neighbourhood $\Omega$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp$ restricts to a diffeomorphism $\Omega \to V$ whose inverse is a smooth map $\log : V \to \Omega$.
 
 *Proof.* The differential at the origin is the identity, so the inverse function theorem of *Smooth Manifolds and Differential Geometry* applies at $0$ and gives open neighbourhoods and a smooth inverse; the inverse is the logarithm, which is therefore defined and smooth near the identity.
 
@@ -81,7 +81,7 @@ $$
 
 a series in the free Lie algebra on two generators whose terms of degree $n$ are polynomials of degree $n$ in $X$ and $Y$; the series is the exponential of the Lie series $\log(\exp(X)\exp(Y))$, and its coefficients are the Bernoulli numbers.
 
-*Proof.* The series is obtained by taking the logarithm of the product of the two exponentials in the free associative algebra on two generators and collecting the result in the free Lie algebra; the bracket operation enters through the associative product, and the integration of the differential equation $\frac{\partial}{\partial t}Z(t) = \frac{\operatorname{ad}_{Z(t)}}{1-\exp(-\operatorname{ad}_{Z(t)})}\dot Z(t)$ with $Z(t) = \log(\exp(tX)\exp(Y))$ produces the displayed low order terms. The convergence and the closed form are those of the free Lie algebra, developed in *Universal Enveloping Algebras*.
+*Proof.* The series is obtained by taking the logarithm of the product of the two exponentials in the free associative algebra on two generators and collecting the result in the free Lie algebra; the bracket operation enters through the associative product, and the integration of the differential equation $\frac{\partial}{\partial t}Z(t) = \frac{\operatorname{ad}_{Z(t)}}{1-\exp(-\operatorname{ad}_{Z(t)})}\left(dZ/dt\right)(t)$ with $Z(t) = \log(\exp(tX)\exp(Y))$ produces the displayed low order terms. The convergence and the closed form are those of the free Lie algebra, developed in *Universal Enveloping Algebras*.
 
 **Corollary.** The group law is recovered from the bracket by the series, so the Lie algebra determines the local Lie group; the map $\exp$ is a homomorphism exactly when the bracket vanishes, that is on an abelian algebra, and the first obstruction is the bilinear term $\tfrac12[X,Y]$.
 
@@ -126,7 +126,7 @@ The exponential map $\exp : \mathrm{G} \to G$ sends $X$ to the value at $1$ of t
 | Symbol | Meaning |
 |---|---|
 | $\exp : \mathrm{G} \to G$ | the exponential map |
-| $\log : V \to U$ | the local inverse, the logarithm |
+| $\log : V \to \Omega$ | the local inverse, the logarithm |
 | $d_0\exp = \mathrm{id}$ | the differential at the origin |
 | $d\exp_X = \frac{1-\exp(-\operatorname{ad}_X)}{\operatorname{ad}_X}$ | the differential in the left trivialisation |
 | $d\exp_X$ invertible $\iff \operatorname{ad}_X$ has no eigenvalue in $2\pi i\mathbb{Z}\setminus\{0\}$ | the local diffeomorphism criterion |

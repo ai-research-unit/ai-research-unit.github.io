@@ -16,67 +16,67 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The **quaternion algebra** $\mathbb{H}$ is the four-dimensional real algebra with basis
 
 $$
-e_0 = 1, \qquad e_1, \qquad e_2, \qquad e_3,
+e_t = 1, \qquad \vec e_x, \qquad \vec e_y, \qquad \vec e_z,
 $$
 
 and multiplication rules
 
 $$
-e_0 e_k = e_k e_0 = e_k, \qquad e_0^2 = e_0,
+e_t \vec e_\mu = \vec e_\mu e_t = \vec e_\mu, \qquad e_t^2 = e_t,
 $$
 
 $$
-e_1^2 = e_2^2 = e_3^2 = -e_0,
+\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t,
 $$
 
 $$
-e_1 e_2 = e_3, \qquad e_2 e_3 = e_1, \qquad e_3 e_1 = e_2,
+\vec e_x \vec e_y = \vec e_z, \qquad \vec e_y \vec e_z = \vec e_x, \qquad \vec e_z \vec e_x = \vec e_y,
 $$
 
 $$
-e_2 e_1 = -e_3, \qquad e_3 e_2 = -e_1, \qquad e_1 e_3 = -e_2.
+\vec e_y \vec e_x = -\vec e_z, \qquad \vec e_z \vec e_y = -\vec e_x, \qquad \vec e_x \vec e_z = -\vec e_y.
 $$
 
 A general quaternion is written in developed form as
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R},
 $$
 
 or, more compactly, as
 
 $$
-\tilde q = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_\mu \in \mathbb{R}.
+\tilde q = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu, \qquad q_\mu \in \mathbb{R}.
 $$
 
-The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We also write
+The real number $q_t$ is the **scalar part**, and the triple $(q_x, q_y, q_z)$ is the **vector part**. We also write
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad \vec q = \sum_{k=1}^{3} q_k e_k.
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad \vec q = \sum_{\mu=1}^{3} q_\mu \vec e_\mu.
 $$
 
 ### A Note on the Notation
 
-The notation $e_1, e_2, e_3$ is chosen deliberately, and it replaces the classical notation $i, j, k$ used in the older literature. The reason is that the symbols $i, j, k$ collide with other standard notations:
+The notation $\vec e_x, \vec e_y, \vec e_z$ is chosen deliberately, and it replaces the classical notation $i, j, k$ used in the older literature. The reason is that the symbols $i, j, k$ collide with other standard notations:
 
 - The symbol $j$ is universally used as an index, as in $a_j$, $e_j$, $q_j$, and so on. Writing the quaternion unit as $j$ makes every expression with an index ambiguous.
 - The symbol $k$ is also used as an index, particularly in sums over three variables.
 
-The notation $e_0, e_1, e_2, e_3$ avoids all three collisions. It also has the advantage of being uniform: the scalar unit $e_0$ is treated on the same footing as the vector units $e_1, e_2, e_3$, which makes the algebra look like a graded algebra with a single family of generators. This is the notation used throughout the corpus.
+The notation $e_t, \vec e_x, \vec e_y, \vec e_z$ avoids all three collisions. It also has the advantage of being uniform: the scalar unit $e_t$ is treated on the same footing as the vector units $\vec e_x, \vec e_y, \vec e_z$, which makes the algebra look like a graded algebra with a single family of generators. This is the notation used throughout the corpus.
 
 ### Basic Properties
 
-**Non-commutative.** Quaternion multiplication is not commutative: $e_1 e_2 = e_3$ but $e_2 e_1 = -e_3$.
+**Non-commutative.** Quaternion multiplication is not commutative: $\vec e_x \vec e_y = \vec e_z$ but $\vec e_y \vec e_x = -\vec e_z$.
 
-**Associative.** Quaternion multiplication is associative: $(p\tilde q)r = p(\tilde q r)$.
+**Associative.** Quaternion multiplication is associative: $(\tilde q_1\tilde q_2)\tilde q_3 = \tilde q_1(\tilde q_2\tilde q_3)$.
 
 **Conjugation.** The **quaternion conjugate** of $\tilde q$ is
 
 $$
-\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z,
 $$
 
-an involution of the algebra that reverses the order of a product, $(p\tilde q)^{\natural} = \tilde{q}^{\natural}\,\bar p$.
+an involution of the algebra that reverses the order of a product, $(\tilde q_1\tilde q_2)^{\natural} = \tilde q_2^{\natural}\,\bar{\tilde q}_1$.
 
 **Division algebra.** Every non-zero quaternion has a two-sided multiplicative inverse, so $\mathbb{H}$ is a division algebra; it is the largest-dimensional associative real division algebra. The inverse is expressed through the quaternion norm, and the quaternion norm, its multiplicativity and the invertibility criterion it supplies are a form and a distance, developed in *Quaternion Norm and Invertibility* and not here.
 
@@ -87,10 +87,10 @@ an involution of the algebra that reverses the order of a product, $(p\tilde q)^
 The vector part $\vec q$ of a quaternion is identified with a vector in $\mathbb{R}^3$. Under this identification, the product of two quaternions is
 
 $$
-p\tilde q = (p_0 q_0 - \vec p \cdot \vec q) + (p_0 \vec q + q_0 \vec p + \vec p \times \vec q),
+\tilde q_1\tilde q_2 = (q_{1t} q_{2t} - \vec q_1 \cdot \vec q_2) + (q_{1t} \vec q_2 + q_{2t} \vec q_1 + \vec q_1 \times \vec q_2),
 $$
 
-where $\vec p \cdot \vec q$ is the ordinary dot product and $\vec p \times \vec q$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.
+where $\vec q_1 \cdot \vec q_2$ is the ordinary dot product and $\vec q_1 \times \vec q_2$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.
 
 ## The Algebra Structure
 
@@ -99,35 +99,35 @@ where $\vec p \cdot \vec q$ is the ordinary dot product and $\vec p \times \vec 
 The **quaternion algebra** is the algebra $\mathbb{H}$ considered as a four-dimensional real vector space equipped with its multiplication. As a real vector space, $\mathbb{H}$ has dimension $4$. As a ring, it is a division algebra. A general element is written in developed form as
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R},
 $$
 
 or, more compactly, as
 
 $$
-\tilde q = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_\mu \in \mathbb{R}.
+\tilde q = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu, \qquad q_\mu \in \mathbb{R}.
 $$
 
 We write
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3,
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z,
 $$
 
-where $q_0$ is the **scalar part** and $\vec q$ is the **vector part**.
+where $q_t$ is the **scalar part** and $\vec q$ is the **vector part**.
 
 ### Multiplication
 
 The product of two quaternions is defined by extending the real multiplication bilinearly:
 
 $$
-p\tilde q = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} p_\mu q_\nu \, e_\mu e_\nu,
+\tilde q_1\tilde q_2 = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} q_{1\mu} q_{2\nu} \, e_\mu e_\nu,
 $$
 
 where the products $e_\mu e_\nu$ are those of the quaternion algebra. In scalar-vector notation, this becomes
 
 $$
-p\tilde q = p_0 q_0 - \vec p \cdot \vec q + p_0 \vec q + q_0 \vec p + \vec p \times \vec q.
+\tilde q_1\tilde q_2 = q_{1t} q_{2t} - \vec q_1 \cdot \vec q_2 + q_{1t} \vec q_2 + q_{2t} \vec q_1 + \vec q_1 \times \vec q_2.
 $$
 
 ### Conjugations
@@ -137,19 +137,19 @@ There are **three** natural conjugations on $\mathbb{H}$, obtained from the quat
 **Quaternion conjugation** $\tilde{q}^{\natural}$:
 
 $$
-\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
+\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z.
 $$
 
 **Vector conjugation** $-\tilde{q}^{\natural}$:
 
 $$
--\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+-\tilde{q}^{\natural} = -q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z.
 $$
 
 **Total conjugation** $-\tilde q$:
 
 $$
--\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3.
+-\tilde q = -q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z.
 $$
 
 Each conjugation is an involution: applying it twice returns the original quaternion. Each has a fixed-point set, which is a real vector subspace of $\mathbb{H}$. The three subspaces are described in the following sections.
@@ -163,18 +163,18 @@ Each of the three conjugations has a fixed-point set, i.e., a set of quaternions
 The fixed points of **quaternion conjugation** are the quaternions satisfying $\tilde{q}^{\natural} = \tilde q$. In developed form,
 
 $$
-q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z.
 $$
 
 Comparing the scalar and vector parts:
 
-- Scalar part: $q_0 = q_0$, always satisfied.
+- Scalar part: $q_t = q_t$, always satisfied.
 - Vector part: $-\vec q = \vec q$, so $\vec q = 0$.
 
 The fixed points are quaternions with vanishing vector part:
 
 $$
-\tilde q = q_0, \qquad q_0 \in \mathbb{R}.
+\tilde q = q_t, \qquad q_t \in \mathbb{R}.
 $$
 
 This is the **real subspace** $\mathbb{R}_{\mathbb{H}}$, a copy of the real number line embedded in $\mathbb{H}$ as the scalar axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{H}$ (isomorphic to $\mathbb{R}$), and it is the only one of the three fixed-point sets that is an ordered field.
@@ -184,12 +184,12 @@ This is the **real subspace** $\mathbb{R}_{\mathbb{H}}$, a copy of the real numb
 The fixed points of **vector conjugation** are the quaternions satisfying $-\tilde{q}^{\natural} = \tilde q$. In developed form,
 
 $$
--q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+-q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z.
 $$
 
 Comparing the scalar and vector parts:
 
-- Scalar part: $-q_0 = q_0$, so $q_0 = 0$.
+- Scalar part: $-q_t = q_t$, so $q_t = 0$.
 - Vector part: $\vec q = \vec q$, always satisfied.
 
 The fixed points are quaternions with vanishing scalar part:
@@ -198,19 +198,19 @@ $$
 \tilde q = \vec q, \qquad \vec q \in \mathbb{R}^3.
 $$
 
-This is the **vector subspace** $\operatorname{Im}\mathbb{H}$, a copy of three-dimensional space embedded in $\mathbb{H}$ as the pure imaginary quaternions. It is a real vector space of dimension $3$. It is not a subalgebra of $\mathbb{H}$: the product of two pure quaternions is not pure, because it has a scalar part $-\vec p \cdot \vec q$.
+This is the **vector subspace** $\operatorname{Im}\mathbb{H}$, a copy of three-dimensional space embedded in $\mathbb{H}$ as the pure imaginary quaternions. It is a real vector space of dimension $3$. It is not a subalgebra of $\mathbb{H}$: the product of two pure quaternions is not pure, because it has a scalar part $-\vec q_1 \cdot \vec q_2$.
 
 ### The Total Subspace
 
 The fixed points of **total conjugation** are the quaternions satisfying $-\tilde q = \tilde q$. In developed form,
 
 $$
--q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3 = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
+-q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z.
 $$
 
 Comparing the scalar and vector parts:
 
-- Scalar part: $-q_0 = q_0$, so $q_0 = 0$.
+- Scalar part: $-q_t = q_t$, so $q_t = 0$.
 - Vector part: $-\vec q = \vec q$, so $\vec q = 0$.
 
 The fixed points are
@@ -264,13 +264,13 @@ Here the centre of $\mathbb{H}$ is the real line and the only involution is quat
 The quaternion algebra carries a Lie bracket, defined by the commutator
 
 $$
-[p, \tilde q] = p\tilde q - \tilde q p.
+[\tilde q_1, \tilde q_2] = \tilde q_1\tilde q_2 - \tilde q_2\tilde q_1.
 $$
 
-For pure quaternions $\vec p, \vec q \in \operatorname{Im}\mathbb{H}$, the commutator is
+For pure quaternions $\vec q_1, \vec q_2 \in \operatorname{Im}\mathbb{H}$, the commutator is
 
 $$
-[\vec p, \vec q] = 2 \vec p \times \vec q.
+[\vec q_1, \vec q_2] = 2 \vec q_1 \times \vec q_2.
 $$
 
 So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of skew-symmetric $3\times 3$ real matrices:
@@ -295,25 +295,25 @@ The tensor product decomposition is the algebraic content of the classification 
 
 ## Summary
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, in which $e_0$ is the unit, the three imaginary units square to $-e_0$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every non-zero element is invertible, the inverse being expressed through the quaternion norm of *Quaternion Norm and Invertibility*. A general element is written in developed form as $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$.
+The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, in which $e_t$ is the unit, the three imaginary units square to $-e_t$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every non-zero element is invertible, the inverse being expressed through the quaternion norm of *Quaternion Norm and Invertibility*. A general element is written in developed form as $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$.
 
 The algebra carries three conjugations, and each has its fixed-point subspace; the fundamental one is quaternion conjugation, whose fixed points form the real subspace $\mathbb{R}_{\mathbb{H}}$ and whose anti-fixed points form the vector subspace $\operatorname{Im}\mathbb{H}$. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every quaternion decomposes uniquely both as a scalar part plus a vector part and as the sum of the two eigencomponents.
 
-The commutator $[p,\tilde q] = p\tilde q - \tilde q p$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$; the vector subspace is thereby the orthogonal Lie algebra $\mathrm{SO}(3)$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance and belong to the topology group, in *Quaternion Norm and Invertibility*.
+The commutator $[\tilde q_1,\tilde q_2] = \tilde q_1\tilde q_2 - \tilde q_2\tilde q_1$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$; the vector subspace is thereby the orthogonal Lie algebra $\mathrm{SO}(3)$. The article closes with the tensor product decomposition, in which the Clifford algebra of a direct sum is the graded tensor product of the Clifford algebras of the summands, giving $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. The quaternion norm, its polarisation, the Hermitian form and the inner product are a form and a distance and belong to the topology group, in *Quaternion Norm and Invertibility*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1$ | Identity |
-| $e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
-| $q_0$ | Scalar part |
+| $e_t = 1$ | Identity |
+| $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | General quaternion |
+| $q_t$ | Scalar part |
 | $\vec q$ | Vector part |
-| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
-| $-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector conjugate |
-| $-\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Total conjugate |
+| $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Quaternion conjugate |
+| $-\tilde{q}^{\natural} = -q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Vector conjugate |
+| $-\tilde q = -q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Total conjugate |
 | $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
 | $\mathrm{SO}(3)$ | Lie algebra of rotations |

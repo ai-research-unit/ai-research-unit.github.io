@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ of this article is a general plain sesquilinear form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the remarkable subspaces of *Introduction to the Remarkable Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*, and it fixes the conventions for all three.
+The general quaternionic sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{2\mu}Q_{1\mu}$ of this article is a general plain sesquilinear form of signature $(1,3)$ over $\mathbb{C}$ (respectively $(2,6)$ over $\mathbb{R}$), and its coefficients are the four signs $\varepsilon=(1,-1,-1,-1)$. This article collects the matrix side of that form: its **Gram matrix** in the coefficient basis, which is the sign matrix $E$ itself; the changes of basis that make the form canonical; the **Gram matrices and signatures of its restrictions** to the remarkable subspaces of *Introduction to the Remarkable Subspaces*; the orthogonality pattern of those restrictions; and the discriminant. The article is the matrix companion of the two articles of the same layer, *Krein Orthogonality and the Fundamental Decomposition* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*, and it fixes the conventions for all three.
 
-**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\mathsf{M}_2$ the $2\times2$ matrix representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$.
+**Conventions.** $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part, $E=\mathrm{diag}(1,-1,-1,-1)$, and $\mathsf{M}_2$ the $2\times2$ matrix representation of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, so that $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$.
 
 ## The Gram Matrix in the Coefficient Basis
 
-**Definition.** The **Gram matrix** of the general quaternionic sesquilinear form in the basis $e_0,e_1,e_2,e_3$ is $G_{\mu\nu}=\langle e_{\nu},e_{\mu}\rangle_{\natural*}$.
+**Definition.** The **Gram matrix** of the general quaternionic sesquilinear form in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is $G_{\mu\nu}=\langle e_{\nu},e_{\mu}\rangle_{\natural*}$.
 
 **Theorem (the Gram matrix is the sign matrix).** In the coefficient basis
 
@@ -22,7 +22,7 @@ $$
 G=\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&-1&0\\0&0&0&-1\end{pmatrix}.
 $$
 
-In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of $\mathbb{B}_{\mathbb{R}}$ the Gram matrix is
+In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ of $\mathbb{B}_{\mathbb{R}}$ the Gram matrix is
 
 $$
 G_{\mathbb{R}}=\mathrm{diag}(1,-1,-1,-1,\,1,-1,-1,-1)
@@ -42,18 +42,18 @@ of signature $(2,6)$.
 
 **Proof.** $\langle e_{\nu},e_{\mu}\rangle_{\natural*}=\sum_{\lambda}\varepsilon_{\lambda}\overline{(e_{\mu})_{\lambda}}(e_{\nu})_{\lambda}=\varepsilon_{\mu}\delta_{\mu\nu}$: the units are orthogonal and each has its own sign. The determinant is $\varepsilon_0\varepsilon_1\varepsilon_2\varepsilon_3=-1$. In the real basis the coefficient $i$ contributes $|i|^{2}=1$ to every entry, so the Gram matrix repeats the block $E$ on the two coefficient blocks, whence the signature $(2+0,\,6)$ by counting the signs.
 
-**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde{P}\tilde{Q})$, and it is the fundamental symmetry of the next article written in the coefficient basis.
+**Remark (the three Gram matrices).** The three pairings of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* have Gram matrices $\mathrm{I}_4$ (bilinear), $\mathrm{I}_4$ (Hermitian) and $E$ (Krein): the general quaternionic sesquilinear form is the only one of the three whose coefficient basis is already orthogonal with signs. The matrix $E$ is also the Gram matrix of the product form $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and it is the fundamental symmetry of the next article written in the coefficient basis.
 
 ## The Krein Form in the Matrix Representation
 
 **Proposition (the form as a matrix trace).** For all biquaternions,
 
 $$
-\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\,\mathsf{M}_2(\tilde{Q}')\bigr)
-=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}')\bigr),
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\,\mathsf{M}_2(\tilde{Q}_1)\bigr)
+=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde{Q}_2^{\natural})^{\dagger}\mathsf{M}_2(\tilde{Q}_1)\bigr),
 $$
 
-where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_0+ie_1$ the model is
+where $\dagger$ is the conjugate transpose in the matrix algebra. For $\tilde{Q}=e_t+i\vec e_x$ the model is
 
 $$
 \mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix},\qquad
@@ -63,42 +63,42 @@ $$
 
 of trace $0$, matching $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}-|i|^{2}=0$: the element is isotropic and its matrix is singular, of rank one.
 
-**Proof.** $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}\tilde{Q}')=\mathrm{Sc}\bigl((\tilde{Q}^{\natural})^{*}\tilde{Q}'\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2$ a $*$-homomorphism gives the second form.
+**Proof.** $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\mathrm{Sc}(\bar{\tilde{Q}}_2\tilde{Q}_1)=\mathrm{Sc}\bigl((\tilde{Q}_2^{\natural})^{*}\tilde{Q}_1\bigr)$, because $(\tilde{Q}^{\natural})^{*}=\overline{\tilde{Q}}$; the trace identity $\mathrm{Sc}(\tilde R\tilde S)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde R)\mathsf{M}_2(\tilde S))$ of *The Matrix Element Representation and the Biquaternion Dynamics* then gives the result, and $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ with $\mathsf{M}_2$ a $*$-homomorphism gives the second form.
 
 **Corollary (the three trace expressions).** The bilinear form, the general plain sesquilinear form and the general quaternionic sesquilinear form are the three pairings
 
 $$
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\operatorname{adj}\mathsf{M}_2(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)\operatorname{adj}\mathsf{M}_2(\tilde Q_2)\bigr),
 \qquad
-\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q_1)^{\dagger}\mathsf{M}_2(\tilde Q_2)\bigr),
 \qquad
-\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde P)^{\dagger}\mathsf{M}_2(\tilde Q)\bigr),
+\tfrac12\operatorname{Tr}\bigl(\operatorname{adj}\mathsf{M}_2(\tilde Q_1)^{\dagger}\mathsf{M}_2(\tilde Q_2)\bigr),
 $$
 
-so that each pairing is a Hilbert–Schmidt pairing of $\mathsf{M}_2(\tilde P)$ with $\mathsf{M}_2(\tilde Q)$, preceded by adjugation for the first and by adjugation of the conjugate transpose for the third.
+so that each pairing is a Hilbert–Schmidt pairing of $\mathsf{M}_2(\tilde Q_1)$ with $\mathsf{M}_2(\tilde Q_2)$, preceded by adjugation for the first and by adjugation of the conjugate transpose for the third.
 
 ## The Canonical Basis and Sylvester's Law
 
 **Definition.** A basis is **orthogonal** for the general quaternionic sesquilinear form when $\langle u_k,u_j\rangle_{\natural*}=0$ for $j\neq k$, and **orthonormal** when in addition each $\langle u_j,u_j\rangle_{\natural*}=\pm1$. A subspace $\mathbb{W}$ is **positive definite** when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}>0$ for its nonzero elements, **negative definite** when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}<0$, and **definite** when it is one of the two.
 
-**Theorem (Sylvester).** Every basis can be replaced by an orthonormal one, and the numbers $n$ of $+1$ and $m$ of $-1$ are invariants of the form: over $\mathbb{C}$, $(n,m)=(1,3)$; over $\mathbb{R}$, $(n,m)=(2,6)$. The coefficient basis is already orthonormal with $n$ entries $+1$ and $m$ entries $-1$, and the maximal positive definite subspaces are the lines $\mathbb{C}(e_0+\tilde W)$ with $\|\tilde W\|_E<1$ over $\mathbb{C}$ and the real planes $\mathrm{span}_{\mathbb{R}}\{e_0+\tilde W,i(e_0+\tilde W)\}$ of the same form over $\mathbb{R}$, of dimensions $n$.
+**Theorem (Sylvester).** Every basis can be replaced by an orthonormal one, and the numbers $n$ of $+1$ and $m$ of $-1$ are invariants of the form: over $\mathbb{C}$, $(n,m)=(1,3)$; over $\mathbb{R}$, $(n,m)=(2,6)$. The coefficient basis is already orthonormal with $n$ entries $+1$ and $m$ entries $-1$, and the maximal positive definite subspaces are the lines $\mathbb{C}(e_t+\tilde W)$ with $\|\tilde W\|_E<1$ over $\mathbb{C}$ and the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde W,i(e_t+\tilde W)\}$ of the same form over $\mathbb{R}$, of dimensions $n$.
 
-**Proof.** Diagonalising by congruence and then scaling each basis vector to have square $\pm1$ gives an orthonormal basis, and inertia is invariant by Sylvester's law (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*). For the maximality, a positive definite subspace meets the maximal negative definite subspace $\mathbb{V}_{\mathbb{B}}$ only at $0$, so its complex dimension is at most the codimension $1$ of $\mathbb{V}_{\mathbb{B}}$; the centre $\mathbb{C}e_0$ achieves the bound, and every line $\mathbb{C}(e_0+\tilde W)$ with $\|\tilde W\|_E<1$ is another maximal positive definite subspace (*The Fundamental Symmetry of the Biquaternioid Algebra*). Over $\mathbb{R}$ the maximal positive definite subspaces are the real planes $\mathrm{span}_{\mathbb{R}}\{e_0+\tilde W,i(e_0+\tilde W)\}$ with $\|\tilde W\|_E<1$, of which $\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ is the member $\tilde W=0$.
+**Proof.** Diagonalising by congruence and then scaling each basis vector to have square $\pm1$ gives an orthonormal basis, and inertia is invariant by Sylvester's law (*Quadratic Forms and Polarisation*, §*Sylvester's Law of Inertia*). For the maximality, a positive definite subspace meets the maximal negative definite subspace $\mathbb{V}_{\mathbb{B}}$ only at $0$, so its complex dimension is at most the codimension $1$ of $\mathbb{V}_{\mathbb{B}}$; the centre $\mathbb{C}e_t$ achieves the bound, and every line $\mathbb{C}(e_t+\tilde W)$ with $\|\tilde W\|_E<1$ is another maximal positive definite subspace (*The Fundamental Symmetry of the Biquaternioid Algebra*). Over $\mathbb{R}$ the maximal positive definite subspaces are the real planes $\mathrm{span}_{\mathbb{R}}\{e_t+\tilde W,i(e_t+\tilde W)\}$ with $\|\tilde W\|_E<1$, of which $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the member $\tilde W=0$.
 
 ## The Restrictions to the Remarkable Subspaces
 
-The remarkable subspaces are defined in *Introduction to the Remarkable Subspaces*: the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the **vector subspace** $\mathbb{V}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, the **Hermitian subspace** $\mathbb{M}_{+}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}$, and the **anti-Hermitian subspace** $\mathbb{M}_{-}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}$.
+The remarkable subspaces are defined in *Introduction to the Remarkable Subspaces*: the **centre** $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the **vector subspace** $\mathbb{V}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$, the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}$, the **Hermitian subspace** $\mathbb{M}_{+}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}$, and the **anti-Hermitian subspace** $\mathbb{M}_{-}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}$.
 
 **Theorem (the restrictions).** With $Q_{\mu}=q_{\mu}+iq'_{\mu}$ the general quaternionic sesquilinear form restricts as follows.
 
 | subspace | real dimension | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ | signature |
 |---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $q_0^2+(q'_0)^2$ | $(2,0)$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $q_t^2+(q'_t)^2$ | $(2,0)$ |
 | $\mathbb{V}_{\mathbb{B}}$ | $6$ | $-\sum_{k}\bigl(q_k^2+(q'_k)^2\bigr)$ | $(0,6)$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $4$ | $q_0^2-q_1^2-q_2^2-q_3^2$ | $(1,3)$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(q'_0)^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
-| $\mathbb{M}_{+}$ | $4$ | $q_0^2-(q'_1)^2-(q'_2)^2-(q'_3)^2$ | $(1,3)$ |
-| $\mathbb{M}_{-}$ | $4$ | $(q'_0)^2-q_1^2-q_2^2-q_3^2$ | $(1,3)$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $4$ | $q_t^2-q_x^2-q_y^2-q_z^2$ | $(1,3)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(q'_t)^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$ | $(1,3)$ |
+| $\mathbb{M}_{+}$ | $4$ | $q_t^2-(q'_x)^2-(q'_y)^2-(q'_z)^2$ | $(1,3)$ |
+| $\mathbb{M}_{-}$ | $4$ | $(q'_t)^2-q_x^2-q_y^2-q_z^2$ | $(1,3)$ |
 
 In the coordinates of each row the four indefinite restrictions carry the same matrix and the two definite ones the identity and minus the identity,
 
@@ -120,7 +120,7 @@ G_{\mathbb{V}_{\mathbb{B}}}=
 \end{pmatrix}.
 $$
 
-**Proof.** The centre and the vector subspace are spanned by $e_0,ie_0$ and by $e_k,ie_k$; there $\langle e_{\mu},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$ and $\langle ie_{\mu},ie_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$, which gives $\pm1$ on each basis vector and the first two rows. A real quaternion has $Q_{\mu}=q_{\mu}$, a purely imaginary one has $Q_{\mu}=iq'_{\mu}$; on the Hermitian subspace $Q_0=q_0$ and $Q_k=iq'_k$, on the anti-Hermitian subspace $Q_0=iq'_0$ and $Q_k=q_k$; substituting $\varepsilon$ in $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$ gives the last four rows.
+**Proof.** The centre and the vector subspace are spanned by $e_t,ie_t$ and by $\vec e_k,i\vec e_k$; there $\langle e_{\mu},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$ and $\langle ie_{\mu},ie_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}$, which gives $\pm1$ on each basis vector and the first two rows. A real quaternion has $Q_{\mu}=q_{\mu}$, a purely imaginary one has $Q_{\mu}=iq'_{\mu}$; on the Hermitian subspace $Q_t=q_t$ and $Q_k=iq'_k$, on the anti-Hermitian subspace $Q_t=iq'_t$ and $Q_k=q_k$; substituting $\varepsilon$ in $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}|Q_{\mu}|^{2}$ gives the last four rows.
 
 **Corollary (the common signature of the four (1,3) subspaces).** The quaternion subspace, the anti-quaternion subspace and the two sectors carry the same signature $(1,3)$: each is a copy of Minkowski space, with the general quaternionic sesquilinear form as its Krein form. The two remaining subspaces are definite, the centre positive and the vector subspace negative.
 
@@ -132,9 +132,9 @@ $$
 
 **Theorem (the four real forms).** On each of the four subspaces the form restricts to a real symmetric bilinear form of signature $(1,3)$, the Krein form of the subspace; the four are exactly the four $(1,3)$ rows of the restriction table, and multiplication by $i$ exchanges them in the two pairs $\mathbb{H}_{\mathbb{B}}\leftrightarrow i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_{+}\leftrightarrow\mathbb{M}_{-}$. Each carries isotropic elements, and inside a form of signature $(1,3)$ the maximal totally isotropic real dimension is $\min(1,3)=1$, so none of them contains a totally isotropic subspace of real dimension greater than one.
 
-**Proof.** The four rows of the table are the four $(1,3)$ rows, and on each of them every coefficient pair $Q_\mu^{*}P_\mu$ is real, because the coefficients are either both real or both purely imaginary, so the form is real and symmetric; multiplication by $i$ multiplies the scalar coefficient of an element of $\mathbb{M}_{+}$ by $i$ and leaves the vector coefficients, exchanging the two sectors, and carries the quaternion subspace onto the anti-quaternion subspace; the index bound is $\min(n,m)$ for the signature $(1,3)$.
+**Proof.** The four rows of the table are the four $(1,3)$ rows, and on each of them every coefficient pair $Q_{2\mu}^{*}Q_{1\mu}$ is real, because the coefficients are either both real or both purely imaginary, so the form is real and symmetric; multiplication by $i$ multiplies the scalar coefficient of an element of $\mathbb{M}_{+}$ by $i$ and leaves the vector coefficients, exchanging the two sectors, and carries the quaternion subspace onto the anti-quaternion subspace; the index bound is $\min(n,m)$ for the signature $(1,3)$.
 
-**Theorem (the real basis and the sign matrix).** In the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ of the realification $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ the entries of the form are
+**Theorem (the real basis and the sign matrix).** In the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ of the realification $\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ the entries of the form are
 
 $$
 \langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu},\qquad
@@ -149,7 +149,7 @@ the mixed entries are purely imaginary, and the realified Gram matrix is $\mathr
 **Corollary (the complex and the real signature, and the relation to $J$).** The algebra is the complexification of either of the two slices $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the complex form is the complexification of the real Krein form on a slice: complexifying a real form of signature $(1,3)$ gives the complex form of signature $(1,3)$, the coefficient signature of §*The Gram Matrix in the Coefficient Basis*, while realifying the same complex form of complex dimension four gives the real form of signature $(2,6)$. In the real basis the fundamental symmetry $J={}^{\natural}$ is diagonal, fixing the centre and reversing the vector subspace, and the form is the definite form twisted by $J$,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle\tilde P,J\tilde Q\rangle_{*},
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,J\tilde Q_2\rangle_{*},
 $$
 
 the bridge identity of *The Fundamental Symmetry of the Biquaternioid Algebra*.
@@ -173,7 +173,7 @@ $$
 
 and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}\cap\mathbb{W}^{\perp_{K}}=\{0\}$, and are pairwise **not** Krein-orthogonal.
 
-**Proof.** $\langle e_k,e_0\rangle_{\natural*}=0$ and $\langle e_k,ie_0\rangle_{\natural*}=0$ give the splitting and the two complements. In coefficients $\langle\tilde{T},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}T_{\mu}$ and $\langle\tilde{T},ie_{\mu}\rangle_{\natural*}=-i\varepsilon_{\mu}T_{\mu}$, so an element of one of the four subspaces that is Krein-orthogonal to that subspace has all its coefficients zero, hence vanishes: those four subspaces are non-degenerate. For the failure of mutual orthogonality, $\langle ie_0,e_0\rangle_{\natural*}=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $\langle e_0,ie_0\rangle_{\natural*}=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
+**Proof.** $\langle \vec e_k,e_t\rangle_{\natural*}=0$ and $\langle \vec e_k,ie_t\rangle_{\natural*}=0$ give the splitting and the two complements. In coefficients $\langle\tilde{T},e_{\mu}\rangle_{\natural*}=\varepsilon_{\mu}T_{\mu}$ and $\langle\tilde{T},ie_{\mu}\rangle_{\natural*}=-i\varepsilon_{\mu}T_{\mu}$, so an element of one of the four subspaces that is Krein-orthogonal to that subspace has all its coefficients zero, hence vanishes: those four subspaces are non-degenerate. For the failure of mutual orthogonality, $\langle ie_t,e_t\rangle_{\natural*}=i\neq0$ shows that $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are not orthogonal, and $\langle e_t,ie_t\rangle_{\natural*}=-i\neq0$ does the same for $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$.
 
 ## The Discriminant
 
@@ -187,27 +187,27 @@ and the four subspaces of signature $(1,3)$ are **non-degenerate**, $\mathbb{W}\
 
 ## Worked Examples
 
-**A positive vector.** $\tilde{Q}=e_0+2ie_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}+|2|^{2}=5>0$, in the centre, one of the maximal positive definite subspaces over $\mathbb{C}$.
+**A positive vector.** $\tilde{Q}=e_t+2ie_t$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=|1|^{2}+|2|^{2}=5>0$, in the centre, one of the maximal positive definite subspaces over $\mathbb{C}$.
 
-**A negative vector.** $\tilde{Q}=e_1+e_2$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1-1=-2<0$, in the vector subspace.
+**A negative vector.** $\tilde{Q}=\vec e_x+\vec e_y$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1-1=-2<0$, in the vector subspace.
 
-**A Minkowski causal vector.** $\tilde{Q}=e_0+\tfrac12e_1$, a real quaternion: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-\tfrac14=\tfrac34>0$, timelike in the $(1,3)$ slice.
+**A Minkowski causal vector.** $\tilde{Q}=e_t+\tfrac12\vec e_x$, a real quaternion: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-\tfrac14=\tfrac34>0$, timelike in the $(1,3)$ slice.
 
-**A null element of the norm only.** $\tilde{Q}=e_1+ie_2$: $\langle\tilde{Q},\,\tilde{Q}\rangle_{\natural*}=-2$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$; the element is a zero divisor and definite for the general quaternionic sesquilinear form.
+**A null element of the norm only.** $\tilde{Q}=\vec e_x+i\vec e_y$: $\langle\tilde{Q},\,\tilde{Q}\rangle_{\natural*}=-2$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$; the element is a zero divisor and definite for the general quaternionic sesquilinear form.
 
-**A null element of the general quaternionic sesquilinear form only.** $\tilde{Q}=e_0+e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=2$.
+**A null element of the general quaternionic sesquilinear form only.** $\tilde{Q}=e_t+\vec e_x$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=2$.
 
-**A real quaternion of each sign.** $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ on $\mathbb{H}_{\mathbb{B}}$ is the Krein form: positive on $e_0$, negative on $e_1$, null on $e_0+e_1$ — the three causal types of the Minkowski slice in one basis.
+**A real quaternion of each sign.** $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}$ on $\mathbb{H}_{\mathbb{B}}$ is the Krein form: positive on $e_t$, negative on $\vec e_x$, null on $e_t+\vec e_x$ — the three causal types of the Minkowski slice in one basis.
 
-**The two readings of one vector.** $\tilde{Q}=e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{*}=1>0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1$; the vector is positive in the algebra reading and negative in the form reading, the explicit divergence of the two forms on the same subspace.
+**The two readings of one vector.** $\tilde{Q}=\vec e_x$: $\langle\tilde{Q},\tilde{Q}\rangle_{*}=1>0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1$; the vector is positive in the algebra reading and negative in the form reading, the explicit divergence of the two forms on the same subspace.
 
-**A real form.** $\tilde{Q}=e_0+\tfrac12e_1$ in the slice $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-\tfrac14=\tfrac34$, real as the theorem on the real forms requires, and positive.
+**A real form.** $\tilde{Q}=e_t+\tfrac12\vec e_x$ in the slice $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-\tfrac14=\tfrac34$, real as the theorem on the real forms requires, and positive.
 
-**A purely imaginary slice.** $\tilde{Q}=i(e_0+e_1)$ in $i\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-1=0$, a null vector of the second real form as $e_0+e_1$ is one of the first.
+**A purely imaginary slice.** $\tilde{Q}=i(e_t+\vec e_x)$ in $i\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1-1=0$, a null vector of the second real form as $e_t+\vec e_x$ is one of the first.
 
 ## Summary
 
-In the coefficient basis the general quaternionic sesquilinear form has the Gram matrix $G=\mathrm{diag}(1,-1,-1,-1)=E$, of determinant $-1$; in the real basis it is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$. In the $2\times2$ matrix representation the form is the Hilbert–Schmidt pairing $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}'))$, the adjugate and the conjugate transpose marking the Krein case among the three pairings. Sylvester's law gives $(n,m)=(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, the coefficient basis already being orthonormal. The restrictions to the remarkable subspaces are the positive definite centre $(2,0)$, the negative definite vector subspace $(0,6)$, and four copies of Minkowski space $(1,3)$ on the quaternion subspace, the anti-quaternion subspace and the two sectors; the centre and the vector subspace are mutual Krein-orthogonal complements, while the four $(1,3)$ subspaces are non-degenerate and not mutually orthogonal. The discriminant is the class of $-1$ over $\mathbb{R}$ for the form and for each restriction, and is trivial over $\mathbb{C}$. The same remarkable subspaces carry a second form reading, the positive definite general plain sesquilinear form, positive definite on every one of them, so that four of the remarkable subspaces are indefinite for the quaternion form and definite for the complex one; the comparison of the two readings is *Remarkable Subspaces and the Four General Products*, §*The Two Splits and the Two Interpretations*. The four real forms — the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces — are the slices on which the form is real, each of signature $(1,3)$; in the real basis the mixed entries are purely imaginary, the realified Gram matrix is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, and $(1,3)$ and $(2,6)$ are the complex and the real signature of one form.
+In the coefficient basis the general quaternionic sesquilinear form has the Gram matrix $G=\mathrm{diag}(1,-1,-1,-1)=E$, of determinant $-1$; in the real basis it is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ of signature $(2,6)$. In the $2\times2$ matrix representation the form is the Hilbert–Schmidt pairing $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\mathsf{M}_2(\tilde{Q}_1))$, the adjugate and the conjugate transpose marking the Krein case among the three pairings. Sylvester's law gives $(n,m)=(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$, the coefficient basis already being orthonormal. The restrictions to the remarkable subspaces are the positive definite centre $(2,0)$, the negative definite vector subspace $(0,6)$, and four copies of Minkowski space $(1,3)$ on the quaternion subspace, the anti-quaternion subspace and the two sectors; the centre and the vector subspace are mutual Krein-orthogonal complements, while the four $(1,3)$ subspaces are non-degenerate and not mutually orthogonal. The discriminant is the class of $-1$ over $\mathbb{R}$ for the form and for each restriction, and is trivial over $\mathbb{C}$. The same remarkable subspaces carry a second form reading, the positive definite general plain sesquilinear form, positive definite on every one of them, so that four of the remarkable subspaces are indefinite for the quaternion form and definite for the complex one; the comparison of the two readings is *Remarkable Subspaces and the Four General Products*, §*The Two Splits and the Two Interpretations*. The four real forms — the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces — are the slices on which the form is real, each of signature $(1,3)$; in the real basis the mixed entries are purely imaginary, the realified Gram matrix is $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$, and $(1,3)$ and $(2,6)$ are the complex and the real signature of one form.
 
 ## Summary of Notation
 
@@ -215,12 +215,12 @@ In the coefficient basis the general quaternionic sesquilinear form has the Gram
 |---|---|
 | $G=E=\mathrm{diag}(1,-1,-1,-1)$ | The Gram matrix of the general quaternionic sesquilinear form in the coefficient basis |
 | $G_{\mathbb{R}}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ | The Gram matrix over $\mathbb{R}$; signature $(2,6)$ |
-| $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q})^{\dagger}\mathsf{M}_2(\tilde{Q}'))$ | The general quaternionic sesquilinear form in the $2\times2$ matrix representation |
+| $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde{Q}_2)^{\dagger}\mathsf{M}_2(\tilde{Q}_1))$ | The general quaternionic sesquilinear form in the $2\times2$ matrix representation |
 | $(n,m)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The inertia (Sylvester) |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{V}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | The remarkable subspaces and their restrictions |
 | $\mathbb{W}^{\perp_{K}}$ | The Krein-orthogonal complement |
 | $(-1)^{n(n-1)/2}\det G$ | The discriminant; the class of $-1$ over $\mathbb{R}$ |
-| $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu Q_\mu^{*}P_\mu$ | The general plain sesquilinear form, the definite companion of the Krein form |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_\mu Q_{2\mu}^{*}Q_{1\mu}$ | The general plain sesquilinear form, the definite companion of the Krein form |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | The four real forms, each of signature $(1,3)$ |
 
 ## Further Reading

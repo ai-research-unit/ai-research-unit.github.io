@@ -169,9 +169,9 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 **Definition.** Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from *Smooth Manifolds and Differential Geometry*. The **normal bundle** of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $n$ is the orthogonal complement of $T_pS$ with respect to $g_n$. The **exponential map of the metric**, defined, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.
 
-**Theorem (tubular neighbourhood).** Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $U$, the **tubular neighbourhood**, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow U$ is a homotopy equivalence.
+**Theorem (tubular neighbourhood).** Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $\Xi$, the **tubular neighbourhood**, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow \Xi$ is a homotopy equivalence.
 
-**Proof sketch.** Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $U$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section.
+**Proof sketch.** Choose a Riemannian metric, form the normal bundle, and apply the inverse function theorem to the restriction of the metric exponential map to a small disc bundle; the resulting diffeomorphism exhibits $\Xi$ as a disc bundle over $S$, and a disc bundle deformation retracts onto its zero section.
 
 ## Morse Theory
 

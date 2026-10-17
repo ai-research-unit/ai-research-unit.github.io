@@ -67,7 +67,7 @@ $$
 1. if $\tilde A$ is even ($\tilde A^1=0$), left multiplication by $\tilde A$ preserves the even part and the odd part;
 2. if $\tilde A$ is odd ($\tilde A^0=0$), left multiplication by $\tilde A$ exchanges the even part and the odd part.
 
-**Proof.** $\tilde A(\tilde C+j\tilde D)=\tilde A\tilde C+j\tilde A\tilde D$ in the even case, so the parity of the two terms is preserved; in the odd case $\tilde A=j\tilde A^1$ gives $j\tilde A^1\tilde C+\tilde A^1\tilde D$, whose first term is odd and second even, so the parities are exchanged.
+**Proof.** $\tilde A(\tilde q+j\tilde q')=\tilde A\tilde q+j\tilde A\tilde q'$ in the even case, so the parity of the two terms is preserved; in the odd case $\tilde A=j\tilde A^1$ gives $j\tilde A^1\tilde q+\tilde A^1\tilde q'$, whose first term is odd and second even, so the parities are exchanged.
 
 **Corollary (parity-preserving systems).** A system whose generators all have even multipliers preserves the parity decomposition, and its attractor is the union of an even attractor and an odd attractor exchanged by the volume-element symmetry; a system with an odd multiplier moves mass between the two chiral sides and has an attractor that is not parity-split.
 

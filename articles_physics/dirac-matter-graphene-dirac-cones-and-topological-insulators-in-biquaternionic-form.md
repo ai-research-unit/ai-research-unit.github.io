@@ -8,7 +8,7 @@ This article asks what the framework contributes to Dirac matter and, just as im
 
 The article is organised as follows. The next section explains why lattice electrons look relativistic and derives the Dirac cone. The third separates graphene's two isospins from the framework's two ideals and states the counting comparison. The fourth identifies the gap with the framework's mass. The fifth treats topological insulators, their edge states, the $\mathbb Z_2$ invariant and the surface Dirac cone, and cross-links the framework's Kramers article for the time-reversal structure. The sixth recalls Klein tunnelling in graphene $p$–$n$ junctions. The seventh separates transcription from framework-level content. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, central $i$, $\mathbb{M}_\pm$ the Hermitian and anti-Hermitian sectors, the biquaternion Dirac equation the linear chiral pair, and the mass shell $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$.
+The conventions are those of the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central $i$, $\mathbb{M}_\pm$ the Hermitian and anti-Hermitian sectors, the biquaternion Dirac equation the linear chiral pair, and the mass shell $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$.
 
 ## Why Lattice Electrons Look Relativistic
 
@@ -95,7 +95,7 @@ $$
 \mathcal T^2 = -1 ,
 $$
 
-which forces every $\mathcal T$-invariant Hamiltonian to have its spectrum even-degenerate — **Kramers degeneracy**. The two partners of a Kramers pair cannot be split by any time-reversal-symmetric perturbation. The biquaternion framework treats this structure in the companion article *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*, which constructs the module-level time-reversal operator as a rotation composed with the conjugation, shows that the relevant rotation element is the one squaring to $-e_0$ (the rotor of the $2\pi$ rotation), obtains $\mathcal T^2=-e_0$ on the spinor module, and identifies the resulting two-complex-dimensional commutant with a **quaternionic** line. The $\mathbb Z_2$ nature of the topological classification and the quaternionic nature of the Kramers structure are two faces of one sign, and the framework supplies the sign as an element of $\mathbb B$. The material still supplies the bands.
+which forces every $\mathcal T$-invariant Hamiltonian to have its spectrum even-degenerate — **Kramers degeneracy**. The two partners of a Kramers pair cannot be split by any time-reversal-symmetric perturbation. The biquaternion framework treats this structure in the companion article *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*, which constructs the module-level time-reversal operator as a rotation composed with the conjugation, shows that the relevant rotation element is the one squaring to $-e_t$ (the rotor of the $2\pi$ rotation), obtains $\mathcal T^2=-e_t$ on the spinor module, and identifies the resulting two-complex-dimensional commutant with a **quaternionic** line. The $\mathbb Z_2$ nature of the topological classification and the quaternionic nature of the Kramers structure are two faces of one sign, and the framework supplies the sign as an element of $\mathbb B$. The material still supplies the bands.
 
 ### The helical edge and spin–momentum locking
 
@@ -103,7 +103,7 @@ In the two-dimensional case the boundary states are **helical**: a one-dimension
 
 ### Three-dimensional topological insulators
 
-In three dimensions the surface carries a two-dimensional gapless **Dirac cone** traversing the bulk gap, with the spin locked to the momentum in the surface plane. The band structure is the same object as in graphene, but the cone lives on the boundary rather than throughout the sample, and the material's bulk is a genuine insulator. The canonical materials are the bismuth and antimony chalcogenides $\mathrm{Bi_2Se_3}$, $\mathrm{Bi_2Te_3}$ and $\mathrm{Sb_2Te_3}$. Both cases are, algebraically, the massless Dirac equation of the framework localised to a boundary.
+In three dimensions the surface carries a two-dimensional gapless **Dirac cone** traversing the bulk gap, with the spin locked to the momentum in the surface plane. The band structure is the same object as in graphene, but the cone lives on the boundary rather than throughout the sample, and the material's bulk is a genuine insulator. The canonical materials are the bismuth and antimony chalcogenides $\mathrm{Bi_2S\vec e_z}$, $\mathrm{Bi_2T\vec e_z}$ and $\mathrm{Sb_2T\vec e_z}$. Both cases are, algebraically, the massless Dirac equation of the framework localised to a boundary.
 
 ## Klein Tunnelling in Graphene
 
@@ -127,7 +127,7 @@ The low-energy equations of Dirac matter are the framework's Dirac equation with
 Three things, none of them a derivation from first principles.
 
 - **The location of the mass.** The framework says exactly which term opens the gap: the term coupling the two minimal left ideals. Sublattice-symmetry breaking in graphene is that term, and saying so is a genuine identification rather than a relabelling, because both are the unique chirality-mixing bilinear.
-- **The sign structure of protection.** The framework's Kramers article places $\mathcal T^2=-e_0$ in the algebra and identifies the commutant as a quaternionic line, which is the algebraic content of $\mathbb Z_2$ protection.
+- **The sign structure of protection.** The framework's Kramers article places $\mathcal T^2=-e_t$ in the algebra and identifies the commutant as a quaternionic line, which is the algebraic content of $\mathbb Z_2$ protection.
 - **A counting caution.** The eight real components of the biquaternion field do not decompose into sublattice and valley the way graphene's spinor does; the framework's second ideal is chirality, not valley. This negative statement disciplines any attempt to derive valleytronics from the algebra.
 
 ### What the framework does not supply
@@ -152,7 +152,7 @@ It does not supply the honeycomb lattice, the hopping $\gamma_0$, the Fermi velo
 
 Dirac matter is the family of solids whose low-energy electrons obey a Dirac equation: graphene with its massless Dirac cones, and the surface and edge states of topological insulators. The honeycomb lattice's two-site cell gives a two-component sublattice pseudospin and the effective equation $H=v_F\boldsymbol{\sigma}\cdot\vec p$, linear and gapless at the Dirac point; the two inequivalent cones add a valley isospin; a sublattice-symmetry-breaking term inserts a Dirac mass and opens a gap.
 
-The biquaternion framework transcribes these equations exactly and locates two structures: the gap is the parent's chirality-mixing mass term, the unique bilinear coupling the two minimal left ideals; and the $\mathbb Z_2$ protection of the topological phase is the Kramers sign $\mathcal T^2=-e_0$ of the companion article, whose commutant is a quaternionic line. The framework does not supply the lattice, the Fermi velocity, the Dirac-point positions, the valley degeneracy or the invariant of any material, and — the article's sharpest caution — its two minimal ideals are chirality, not valley, so identifying them with graphene's valleys is an extra input rather than a consequence. What the framework offers is a precise language for the effective equation and the exact location of the mass and protection terms; the material supplies the rest.
+The biquaternion framework transcribes these equations exactly and locates two structures: the gap is the parent's chirality-mixing mass term, the unique bilinear coupling the two minimal left ideals; and the $\mathbb Z_2$ protection of the topological phase is the Kramers sign $\mathcal T^2=-e_t$ of the companion article, whose commutant is a quaternionic line. The framework does not supply the lattice, the Fermi velocity, the Dirac-point positions, the valley degeneracy or the invariant of any material, and — the article's sharpest caution — its two minimal ideals are chirality, not valley, so identifying them with graphene's valleys is an extra input rather than a consequence. What the framework offers is a precise language for the effective equation and the exact location of the mass and protection terms; the material supplies the rest.
 
 ## Summary of Notation
 

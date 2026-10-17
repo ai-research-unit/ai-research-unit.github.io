@@ -8,7 +8,7 @@ The two remarkable subspaces of $\mathbb{H}$, the scalar line and the vector sub
 
 The scalar and vector subspaces of *Introduction to the Remarkable Subspaces of the Quaternions* are
 $$
-\mathbb{R}_{\mathbb{H}}=\{s e_0:s\in\mathbb{R}\} , \qquad \operatorname{Vect}(\mathbb{H})=\{\vec q=q_1e_1+q_2e_2+q_3e_3\} ,
+\mathbb{R}_{\mathbb{H}}=\{s e_t:s\in\mathbb{R}\} , \qquad \operatorname{Vect}(\mathbb{H})=\{\vec q=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\} ,
 $$
 of dimensions $1$ and $3$, with $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Vect}(\mathbb{H})$ and $\mathbb{R}_{\mathbb{H}}\cap\operatorname{Vect}(\mathbb{H})=\{0\}$. Their sign pattern under the conjugation is the one of *Introduction to the Remarkable Subspaces of the Quaternions*: the scalar line is the fixed space and the vector subspace the anti-fixed space, and the two subspaces are the whole list.
 
@@ -19,16 +19,16 @@ The six products carry five named forms, of which four are distinct, because the
 | form | definition | owner |
 |---|---|---|
 | plain form $B$ | $B(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\tilde q)$ | *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* |
-| quaternion form $N$ | $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+\vec p\cdot\vec q$ | *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* |
+| quaternion form $N$ | $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)=p_0q_t+\vec p\cdot\vec q$ | *The 2 Forms over the Quaternioid $\mathbb{R}$ Space* |
 | Jordan trace form $\tau$ | $\tau(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\bullet\tilde q)$ | *The Trace Form and the Invariance of the Symmetric Plain Algebra* |
 | Killing form of the cross product $K$ | $K(\tilde p,\tilde q)=\operatorname{tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})$ | *The Killing Form of the Antisymmetric Plain Algebra* |
-| invariant form of the antisymmetrised quaternionic product $\varphi$ | $\varphi(\tilde p,\tilde q)=p_0q_0$, the unique invariant form of AQA | *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* |
+| invariant form of the antisymmetrised quaternionic product $\varphi$ | $\varphi(\tilde p,\tilde q)=p_0q_t$, the unique invariant form of AQA | *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* |
 
 The Jordan trace form equals the plain form, because $\operatorname{Sc}(\tilde p\bullet\tilde q)=\tfrac12(\operatorname{Sc}(\tilde p\tilde q)+\operatorname{Sc}(\tilde q\tilde p))=\operatorname{Sc}(\tilde p\tilde q)$ by the invariance of the scalar part under the cyclic permutation of a product. The antisymmetrisation kills the scalar part, so the two antisymmetric structures contribute no form by the scalar-part route: the values of the cross product and of the antisymmetrised quaternionic product are pure vectors, and the forms those structures carry instead are the Killing form of the cross product and the unique invariant form of the antisymmetrised quaternionic product, which is symmetric of rank one and not alternating.
 
 ## The Restriction Matrices
 
-In the natural bases $(e_0)$ of the scalar line and $(e_1,e_2,e_3)$ of the vector subspace the restrictions of the four distinct forms are:
+In the natural bases $(e_t)$ of the scalar line and $(\vec e_x,\vec e_y,\vec e_z)$ of the vector subspace the restrictions of the four distinct forms are:
 
 $$
 B|_{\mathbb{R}_{\mathbb{H}}}=(1) ,\quad B|_{\operatorname{Vect}}=\operatorname{diag}(-1,-1,-1) ;\qquad
@@ -38,7 +38,7 @@ $$
 \tau|_{\mathbb{R}_{\mathbb{H}}}=\tau|_{\operatorname{Vect}}\ \text{as for } B ;\qquad
 K|_{\mathbb{R}_{\mathbb{H}}}=(0) ,\quad K|_{\operatorname{Vect}}=\operatorname{diag}(-2,-2,-2) ;
 $$
-and $\varphi$, which reads the two scalar parts, has the rank-one matrix $\operatorname{diag}(1,0,0,0)$, that is $\varphi|_{\mathbb{R}_{\mathbb{H}}}=(1)$ and $\varphi|_{\operatorname{Vect}}=(0)$, by *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Both $B$ and $N$ are **orthogonal** for the decomposition, $B(e_0,e_k)=N(e_0,e_k)=0$, so their restriction matrices are block diagonal and there is no cross block; the Killing form and $\varphi$ are likewise block diagonal, the Killing form killing the scalar line, which is its radical, and $\varphi$ killing the vector subspace, which is its radical.
+and $\varphi$, which reads the two scalar parts, has the rank-one matrix $\operatorname{diag}(1,0,0,0)$, that is $\varphi|_{\mathbb{R}_{\mathbb{H}}}=(1)$ and $\varphi|_{\operatorname{Vect}}=(0)$, by *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Both $B$ and $N$ are **orthogonal** for the decomposition, $B(e_t,\vec e_k)=N(e_t,\vec e_k)=0$, so their restriction matrices are block diagonal and there is no cross block; the Killing form and $\varphi$ are likewise block diagonal, the Killing form killing the scalar line, which is its radical, and $\varphi$ killing the vector subspace, which is its radical.
 
 The **inertia** of each restriction is therefore read off the signs:
 
@@ -54,7 +54,7 @@ The plain family is indefinite, with the scalar line positive and the vector sub
 
 ## Isotropic Elements
 
-An element is **isotropic** for a form when the form vanishes at that element with itself. For the plain form the scalar line and the vector subspace are each anisotropic, but the sum is not: $e_0+e_1$ gives $B(e_0+e_1,e_0+e_1)=1-1=0$, so the plain form has a null cone, of real dimension three, cut out by the single real equation $p_0^2=p_1^2+p_2^2+p_3^2$. For the quaternion form no nonzero element is isotropic, its positivity being total, $N(\tilde p,\tilde p)=\sum_\mu p_\mu^2$; the Jordan trace form is the plain form, so it has the same null cone, of dimension three; and for the Killing form the only isotropic elements are those of its radical, the scalar line. For $\varphi$ the isotropic elements are those with $x_0=0$, the vector subspace, which is at the same time its radical; a form of rank one carries no definite or indefinite sign pattern.
+An element is **isotropic** for a form when the form vanishes at that element with itself. For the plain form the scalar line and the vector subspace are each anisotropic, but the sum is not: $e_t+\vec e_x$ gives $B(e_t+\vec e_x,e_t+\vec e_x)=1-1=0$, so the plain form has a null cone, of real dimension three, cut out by the single real equation $p_0^2=p_1^2+p_2^2+p_3^2$. For the quaternion form no nonzero element is isotropic, its positivity being total, $N(\tilde p,\tilde p)=\sum_\mu p_\mu^2$; the Jordan trace form is the plain form, so it has the same null cone, of dimension three; and for the Killing form the only isotropic elements are those of its radical, the scalar line. For $\varphi$ the isotropic elements are those with $x_0=0$, the vector subspace, which is at the same time its radical; a form of rank one carries no definite or indefinite sign pattern.
 
 The **radical** is the anisotropic case's companion: $0$ for $B$, for $N$ and for $\tau$; the scalar line for $K$; and the vector subspace for $\varphi$. The radicals of the two forms of the two general products are computed in *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*, above this article in this category.
 
@@ -64,7 +64,7 @@ Over $\mathbb{R}$ the cone of the plain form is not enough to split the space, b
 
 ## Summary
 
-The six products carry five named forms, of which four are distinct: the plain form $B$ of inertia $(1,3)$, coinciding with the Jordan trace form $\tau$; the quaternion form $N$ of inertia $(4,0)$; the Killing form $K$ of the cross product, of inertia $(0,3)$ with the scalar line as radical; and the invariant form $\varphi(\tilde p,\tilde q)=p_0q_0$ of the antisymmetrised quaternionic product, of rank one, reading the scalar line and vanishing on the vector subspace. Both $B$ and $N$ are orthogonal for the decomposition $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Vect}(\mathbb{H})$, with the two blocks $(1,0)\perp(0,3)$ for the plain family and $(1,0)\perp(3,0)$ for the quaternion family.
+The six products carry five named forms, of which four are distinct: the plain form $B$ of inertia $(1,3)$, coinciding with the Jordan trace form $\tau$; the quaternion form $N$ of inertia $(4,0)$; the Killing form $K$ of the cross product, of inertia $(0,3)$ with the scalar line as radical; and the invariant form $\varphi(\tilde p,\tilde q)=p_0q_t$ of the antisymmetrised quaternionic product, of rank one, reading the scalar line and vanishing on the vector subspace. Both $B$ and $N$ are orthogonal for the decomposition $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Vect}(\mathbb{H})$, with the two blocks $(1,0)\perp(0,3)$ for the plain family and $(1,0)\perp(3,0)$ for the quaternion family.
 
 ## Summary of Notation
 

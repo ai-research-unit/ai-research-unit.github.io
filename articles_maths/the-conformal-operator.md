@@ -83,7 +83,7 @@ The theorem and its proof are in *Conformal Geometry*; the present article recor
 
 ### Liouville's Theorem as the Rigidity of the Operator Group
 
-**Theorem (Liouville).** Let $n \geq 3$ and let $U \subseteq \mathbb{R}^n$ be a connected open set; every conformal map $f : U \to \mathbb{R}^n$ of class $C^3$ is the restriction of a Möbius transformation, so the conformal group of a domain is the restriction of the finite-dimensional Möbius group.
+**Theorem (Liouville).** Let $n \geq 3$ and let $\Omega \subseteq \mathbb{R}^n$ be a connected open set; every conformal map $f : \Omega \to \mathbb{R}^n$ of class $C^3$ is the restriction of a Möbius transformation, so the conformal group of a domain is the restriction of the finite-dimensional Möbius group.
 
 **Proof sketch.** The conformal condition expresses the first derivatives of $f$ through a scalar factor; differentiating twice more and using the symmetry of the mixed partial derivatives forces the third derivatives to be determined by the first and second, and the resulting system has only the Möbius solutions. The statement and the proof are in *Conformal Geometry*.
 

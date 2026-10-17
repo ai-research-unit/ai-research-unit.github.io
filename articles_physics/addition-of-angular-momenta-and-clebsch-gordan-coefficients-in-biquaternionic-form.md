@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$, the Casimir $\tilde J^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}ie_k$ in $\mathbb{M}_+$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
+The companion article *Angular Momentum and Spin in Biquaternionic Form* established the angular-momentum algebra inside the biquaternion framework: the commutation relations $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$, the Casimir $\tilde J^2$, the ladder operators, the spin-$\tfrac12$ realisation $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ in $\mathbb{M}_+$, and the observation that two spin-$\tfrac12$ degrees of freedom combine in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. That article treated the addition of angular momenta in the case it needed for the hydrogen atom — one spin-$\tfrac12$ coupled to an orbital angular momentum — and recorded the coupling of two algebraic spin factors as a remark.
 
 This article develops that remark into the general machinery. Its subject is the **addition of angular momenta and the Clebsch–Gordan coefficients** as they appear inside the biquaternion framework: the coupled operators, the coupled basis, the decomposition of a tensor product of rotation multiplets, and the explicit coefficients for the two cases the framework itself supports, $\tfrac12\otimes\tfrac12$ and $1\otimes1$.
 
@@ -12,7 +12,7 @@ The article is organised as follows. The next section recalls the angular-moment
 
 ## The Angular-Momentum Algebra in Biquaternion Form
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, the cyclic relations $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and $e_je_k=-e_ke_j$ for distinct $j,k\in\{1,2,3\}$. The scalar imaginary $i$ is central, $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ consists of elements with real scalar part and imaginary vector part.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, the cyclic relations $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for distinct $\mu,\nu\in\{x,y,z\}$. The scalar imaginary $i$ is central, $i^2=-1$. The Hermitian subspace $\mathbb{M}_+$ consists of elements with real scalar part and imaginary vector part.
 
 An angular momentum is a triple of Hermitian elements $\tilde J_1,\tilde J_2,\tilde J_3\in\mathbb{M}_+$ satisfying
 
@@ -57,13 +57,13 @@ $$
 For the fundamental case $j=\tfrac12$ the algebra supplies the operators as algebra elements,
 
 $$
-\tilde S_k=\tfrac{\hbar}{2}\,ie_k\in\mathbb{M}_+,
+\tilde S_k=\tfrac{\hbar}{2}\,i\vec e_k\in\mathbb{M}_+,
 $$
 
-with $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ following from the quaternion product rule $e_je_k=-\delta_{jk}e_0+\sum_l\epsilon_{jkl}e_l$ together with $i^2=-1$. The ladder combinations are
+with $[\tilde S_i,\tilde S_j]=i\hbar\epsilon_{ijk}\tilde S_k$ following from the quaternion product rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\epsilon_{\mu\nu\lambda}\vec e_\lambda$ together with $i^2=-1$. The ladder combinations are
 
 $$
-\tilde S_\pm=\tilde S_1\pm i\tilde S_2=\tfrac{\hbar}{2}\left(ie_1\mp e_2\right),
+\tilde S_\pm=\tilde S_1\pm i\tilde S_2=\tfrac{\hbar}{2}\left(i\vec e_x\mp \vec e_y\right),
 $$
 
 and they are **nilpotent and null in the biquaternion norm**,
@@ -75,10 +75,10 @@ $$
 so the raising and lowering operators of the fundamental module are zero divisors of $\mathbb{B}$. The Casimir is the central element
 
 $$
-\tilde S^2=\tfrac{3\hbar^2}{4}e_0 ,
+\tilde S^2=\tfrac{3\hbar^2}{4}e_t ,
 $$
 
-the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$, on which $\vec u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
+the value $s(s+1)\hbar^2$ with $s=\tfrac12$. The spin eigenstates are the idempotents $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, on which $\vec u_k\tilde S_k$ has the eigenvalues $\pm\tfrac{\hbar}{2}$. Under the isomorphism $\mathsf{M}_2$ of the companion articles, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, and $\tilde S_k$ maps to $\tfrac{\hbar}{2}\sigma_k$.
 
 The material point for what follows is that the fundamental module of $\mathbb{B}$ is two-dimensional, so the operators above are the only spin operators the algebra carries internally. Composite angular momenta require more than one factor of the algebra.
 
@@ -93,8 +93,8 @@ $$
 with the two factors acting on the separate slots,
 
 $$
-\tilde J_k^{(1)}=\tilde J_k\otimes e_0,\qquad
-\tilde J_k^{(2)}=e_0\otimes \tilde J_k .
+\tilde J_k^{(1)}=\tilde J_k\otimes e_t,\qquad
+\tilde J_k^{(2)}=e_t\otimes \tilde J_k .
 $$
 
 Because the products act on different slots, the cross-commutators vanish,
@@ -122,14 +122,14 @@ The coupled states $|j,m\rangle$ are by definition the simultaneous eigenvectors
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
 $$
-\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad \mathrm{Tr}_\mathbb{B}(e_0)=2,\quad \mathrm{Tr}_\mathbb{B}(e_k)=0 ,
+\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad \mathrm{Tr}_\mathbb{B}(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}(\vec e_k)=0 ,
 $$
 
-so that $\mathrm{Tr}(e_0\otimes e_0)=4$. A product state is represented by the idempotent
+so that $\mathrm{Tr}(e_t\otimes e_t)=4$. A product state is represented by the idempotent
 
 $$
 P_{\vec u_m}\otimes P_{\vec u}
-=\tfrac14\left(e_0\otimes e_0+i\vec u_{m,k}e_k\otimes e_0+i e_0\otimes\vec u_le_l-\vec u_{m,k}\vec u_l\,e_k\otimes e_l\right),
+=\tfrac14\left(e_t\otimes e_t+i\vec u_{m,\mu}\vec e_\mu\otimes e_t+i e_t\otimes\vec u_\nu\vec e_\nu-\vec u_{m,\mu}\vec u_\nu\,\vec e_\mu\otimes\vec e_\nu\right),
 $$
 
 which is Hermitian of trace one; the four product idempotents of the spin-$\tfrac12$ basis are $\tilde\Pi(\pm\vec u_z)\otimes \tilde\Pi(\pm\vec u_z)$.
@@ -218,7 +218,7 @@ $$
 
 The coefficients $\pm\tfrac{1}{\sqrt2}$ are the whole of the $\tfrac12\otimes\tfrac12$ table.
 
-The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_-^{(1)}+\tilde S_-^{(2)}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(ie_1+e_2)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
+The lowest triplet state is obtained from the highest by the ladder operator $\tilde S_-=\tilde S_-^{(1)}+\tilde S_-^{(2)}$. In the biquaternion realisation $\tilde S_-=\tfrac{\hbar}{2}(i\vec e_x+\vec e_y)$, and with $\mathsf{M}_2(\tilde S_-)=\hbar\sigma_-$ one has $\sigma_-|\!\uparrow\rangle=|\!\downarrow\rangle$ and $\sigma_-|\!\downarrow\rangle=0$. Hence
 
 $$
 \tilde S_-|1,1\rangle=\hbar\left(|\!\downarrow\uparrow\rangle+|\!\uparrow\downarrow\rangle\right)=\sqrt{2}\,\hbar\,|1,0\rangle,
@@ -231,14 +231,14 @@ which is the relation $\tilde S_-|1,1\rangle=\hbar\sqrt{(1+1)(1-1+1)}|1,0\rangle
 The two coupled subspaces are the symmetric and antisymmetric parts of the tensor square. In the algebra $\mathbb{B}\otimes\mathbb{B}$ they are the ranges of the two idempotents
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_0\otimes e_0-\sum_{k=1}^{3}e_k\otimes e_k\right),\qquad
-P_{\mathrm{asym}}=\tfrac{1}{4}\left(e_0\otimes e_0+\sum_{k=1}^{3}e_k\otimes e_k\right).
+P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),\qquad
+P_{\mathrm{asym}}=\tfrac{1}{4}\left(e_t\otimes e_t+\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right).
 $$
 
 Both are Hermitian; both are idempotent; they are orthogonal and sum to the identity,
 
 $$
-P_{\mathrm{sym}}^2=P_{\mathrm{sym}},\qquad P_{\mathrm{asym}}^2=P_{\mathrm{asym}},\qquad P_{\mathrm{sym}}P_{\mathrm{asym}}=0,\qquad P_{\mathrm{sym}}+P_{\mathrm{asym}}=e_0\otimes e_0 ,
+P_{\mathrm{sym}}^2=P_{\mathrm{sym}},\qquad P_{\mathrm{asym}}^2=P_{\mathrm{asym}},\qquad P_{\mathrm{sym}}P_{\mathrm{asym}}=0,\qquad P_{\mathrm{sym}}+P_{\mathrm{asym}}=e_t\otimes e_t ,
 $$
 
 and their traces are $3$ and $1$, the dimensions of the triplet and the singlet:
@@ -247,31 +247,31 @@ $$
 \mathrm{Tr}(P_{\mathrm{sym}})=3,\qquad \mathrm{Tr}(P_{\mathrm{asym}})=1 .
 $$
 
-The antisymmetric projector is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $P_{\mathrm{singlet}}=\tfrac14(e_0\otimes e_0+\sum_k e_k\otimes e_k)$; the symmetric projector is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
+The antisymmetric projector is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $P_{\mathrm{singlet}}=\tfrac14(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k)$; the symmetric projector is its complement, of rank three. The two are the spectral projectors of the **exchange operator**
 
 $$
-F=\tfrac{1}{2}\left(e_0\otimes e_0-\sum_{k=1}^{3}e_k\otimes e_k\right),
+F=\tfrac{1}{2}\left(e_t\otimes e_t-\sum_{k=1}^{3}\vec e_k\otimes \vec e_k\right),
 $$
 
-which satisfies $F^2=e_0\otimes e_0$ and $F^{*}=F$, and which exchanges the two factors on the product idempotents. Indeed
+which satisfies $F^2=e_t\otimes e_t$ and $F^{*}=F$, and which exchanges the two factors on the product idempotents. Indeed
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{2}\left(e_0\otimes e_0+F\right),\qquad
-P_{\mathrm{asym}}=\tfrac{1}{2}\left(e_0\otimes e_0-F\right),
+P_{\mathrm{sym}}=\tfrac{1}{2}\left(e_t\otimes e_t+F\right),\qquad
+P_{\mathrm{asym}}=\tfrac{1}{2}\left(e_t\otimes e_t-F\right),
 $$
 
 so the coupled projectors of the fundamental coupling are the $\pm1$ spectral projectors of the exchange operator. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator maps to the standard swap, $F\mapsto\tfrac12(I\otimes I+\sum_k\sigma_k\otimes\sigma_k)$, whose action on a product basis vector is $|a\rangle|b\rangle\mapsto|b\rangle|a\rangle$.
 
 ### The Casimir and the coupling term
 
-The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{4}(ie_k)\otimes(ie_k)=-\tfrac{\hbar^2}{4}\,e_k\otimes e_k$ and no sum over $k$ on the right,
+The coupling term of the total Casimir can be evaluated in closed form. With $\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{4}(i\vec e_k)\otimes(i\vec e_k)=-\tfrac{\hbar^2}{4}\,\vec e_k\otimes \vec e_k$ and no sum over $k$ on the right,
 
 $$
-\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{\hbar^2}{4}\sum_{k=1}^{3}e_k\otimes e_k
-=\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}\,e_0\otimes e_0 ,
+\sum_{k=1}^{3}\tilde S_k^{(1)}\tilde S_k^{(2)}=-\frac{\hbar^2}{4}\sum_{k=1}^{3}\vec e_k\otimes \vec e_k
+=\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}\,e_t\otimes e_t ,
 $$
 
-using $\sum_k e_k\otimes e_k=e_0\otimes e_0-2F$. The coupling term is therefore a **linear combination of the identity and the exchange operator**, which is the algebraic reason that the exchange operator commutes with the total angular momentum:
+using $\sum_k \vec e_k\otimes \vec e_k=e_t\otimes e_t-2F$. The coupling term is therefore a **linear combination of the identity and the exchange operator**, which is the algebraic reason that the exchange operator commutes with the total angular momentum:
 
 $$
 [\tilde S_k,F]=0,\qquad k=1,2,3 .
@@ -280,11 +280,11 @@ $$
 The total Casimir is
 
 $$
-\tilde S^2=\tfrac{3\hbar^2}{2}e_0\otimes e_0+2\left(\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}e_0\otimes e_0\right)
-=\hbar^2\left(e_0\otimes e_0+F\right),
+\tilde S^2=\tfrac{3\hbar^2}{2}e_t\otimes e_t+2\left(\frac{\hbar^2}{2}F-\frac{\hbar^2}{4}e_t\otimes e_t\right)
+=\hbar^2\left(e_t\otimes e_t+F\right),
 $$
 
-where the central term is the sum of the two one-factor Casimirs, $\tfrac{3\hbar^2}{4}e_0\otimes e_0$ from each factor. Its eigenvalues on the two coupled subspaces follow from the eigenvalues of $F$:
+where the central term is the sum of the two one-factor Casimirs, $\tfrac{3\hbar^2}{4}e_t\otimes e_t$ from each factor. Its eigenvalues on the two coupled subspaces follow from the eigenvalues of $F$:
 
 $$
 \tilde S^2\big|_{j=1}=2\hbar^2,\qquad \tilde S^2\big|_{j=0}=0 ,
@@ -313,7 +313,7 @@ U=\begin{pmatrix}
 U^\dagger U=UU^\dagger=I_4 ,
 $$
 
-whose rows are the coupled states and whose columns are the product states. As an element of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ it is unitary in the matrix sense, $U U^\dagger=e_0\otimes e_0$, and it is a legitimate element of the two-qubit algebra: every $4\times 4$ matrix is.
+whose rows are the coupled states and whose columns are the product states. As an element of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ it is unitary in the matrix sense, $U U^\dagger=e_t\otimes e_t$, and it is a legitimate element of the two-qubit algebra: every $4\times 4$ matrix is.
 
 Two properties of $U$ are worth recording, because they are the algebraic face of the entanglement of the coupled basis.
 
@@ -325,9 +325,9 @@ $$
 
 which is maximally entangled in the product basis and is therefore not a product vector, while the rows of a product unitary $\tilde U_1\otimes\tilde U_2$ are the tensor products of the rows of $\tilde U_1$ and of $\tilde U_2$, hence product vectors in every row. No product unitary can have the singlet among its rows, so $U\neq\tilde U_1\otimes\tilde U_2$. Equivalently, the projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ are not of product form. The Clebsch–Gordan transformation of two fundamental systems is therefore not a rotation of one factor; it is a genuinely two-factor transformation.
 
-Second, the local transformations form a proper subgroup. The elements $\tilde U_1\otimes\tilde U_2$ with $\tilde U_a\in\mathbb{B}$ unitary constitute $U(2)\times U(2)$, of real dimension $8$, inside the $U(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
+Second, the local transformations form a proper subgroup. The elements $\tilde U_1\otimes\tilde U_2$ with $\tilde U_a\in\mathbb{B}$ unitary constitute $\mathrm{U}(2)\times \mathrm{U}(2)$, of real dimension $8$, inside the $\mathrm{U}(4)$ of the two-qubit algebra, of real dimension $16$. The Clebsch–Gordan transformation lies in the complement of the local subgroup, in the sense that it changes the entanglement of the basis while preserving the total angular momentum.
 
-The transformation is not unique as a matrix. Only the coupled *projectors* are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_0$, and the relative phases of a multiplet are a convention.
+The transformation is not unique as a matrix. Only the coupled *projectors* are canonical: the decomposition $\mathbb{C}^4=\mathrm{Sym}^2\oplus\Lambda^2$ is canonical, and within each summand the diagonalisation of $\tilde S_3$ is canonical once the axis is fixed. What remains free is the phase of each coupled state, and it is fixed below by the Condon–Shortley convention. This is the same freedom that appears for any multiplet in the framework: a state is defined up to a central phase $\exp(i\alpha)e_t$, and the relative phases of a multiplet are a convention.
 
 ## The Coupling of Two Triplets
 
@@ -393,7 +393,7 @@ $$
 \langle 1,1;1,-1|0,0\rangle=+\tfrac{1}{\sqrt3},
 $$
 
-and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\alpha)e_0$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.
+and the signs of the remaining entries follow. The convention has a biquaternion interpretation: the states of a multiplet are defined up to a central phase $\exp(i\alpha)e_t$, and the Condon–Shortley choice is one representative of that phase freedom. The relative signs within a multiplet are then fixed by the requirement that the ladder operators, which are the elements $\tilde S_\pm$ of the algebra, act with the positive square-root coefficients above.
 
 Two consistency checks are worth recording. First, the recursion relations reproduce the closed form of Wigner's formula for $j_1=j_2=1$ in all nine product entries. Second, the recursion is compatible with the orthogonality and completeness relations, as it must be: the recursion is the ladder action in the coupled basis, and the ladder operators are Hermitian conjugates of one another.
 
@@ -401,7 +401,7 @@ Two consistency checks are worth recording. First, the recursion relations repro
 
 It is worth stating the accounting explicitly, because the two-spin case is where the framework's reach and its limit are both visible.
 
-**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde J_k^{(1)}+\tilde J_k^{(2)}$ and the total Casimir; the coupled projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled projectors with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $e_k^2=-e_0$ and $i^2=-1$.
+**Algebraic.** The two-factor arena $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and its trace; the total operators $\tilde J_k^{(1)}+\tilde J_k^{(2)}$ and the total Casimir; the coupled projectors $P_{\mathrm{sym}}$ and $P_{\mathrm{asym}}$ as elements of the algebra; the exchange operator $F$ and its relation to the coupling term; the identity of the coupled projectors with the spectral projectors of $\tilde S^2$; the spin-$\tfrac12$ factor with its operators $\tilde S_k\in\mathbb{M}_+$ and the nilpotency $\tilde S_\pm^2=0$. All of these are statements about elements of $\mathbb{B}$ and $\mathbb{B}\otimes\mathbb{B}$ and are consequences of the quaternion product rule, $\vec e_k^2=-e_t$ and $i^2=-1$.
 
 **Imported.** The Clebsch–Gordan coefficients themselves, including their numerical values, their orthogonality and completeness, the recursion relations, the closed Wigner formula, and the Condon–Shortley phase convention. These belong to the representation theory of the rotation group. The framework changes nothing about them; it supplies the objects on which they act.
 
@@ -423,12 +423,12 @@ The addition of angular momenta in the biquaternion framework is the standard co
 
 The article established the following.
 
-- **Coupling of two systems.** With $\tilde J_k^{(1)}=\tilde J_k\otimes e_0$ and $\tilde J_k^{(2)}=e_0\otimes\tilde J_k$, the cross-commutators vanish, the total operator $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde J^2=\tilde J_{(1)}^2+\tilde J_{(2)}^2+2\sum_k\tilde J_k^{(1)}\tilde J_k^{(2)}$.
+- **Coupling of two systems.** With $\tilde J_k^{(1)}=\tilde J_k\otimes e_t$ and $\tilde J_k^{(2)}=e_t\otimes\tilde J_k$, the cross-commutators vanish, the total operator $\tilde J_k=\tilde J_k^{(1)}+\tilde J_k^{(2)}$ satisfies the angular-momentum algebra, and the total Casimir is $\tilde J^2=\tilde J_{(1)}^2+\tilde J_{(2)}^2+2\sum_k\tilde J_k^{(1)}\tilde J_k^{(2)}$.
 - **Clebsch–Gordan series.** $V_{j_1}\otimes V_{j_2}\cong\bigoplus_{j=|j_1-j_2|}^{j_1+j_2}V_j$, with $(2j_1+1)(2j_2+1)=\sum_j(2j+1)$; in particular $\tfrac12\otimes\tfrac12=1\oplus0$ and $1\otimes1=2\oplus1\oplus0$.
 - **The fundamental coupling.** The coupled projectors are the symmetric and antisymmetric projectors of the tensor square,
-  $$P_{\mathrm{sym}}=\tfrac14\left(3e_0\otimes e_0-\sum_k e_k\otimes e_k\right),\qquad P_{\mathrm{asym}}=\tfrac14\left(e_0\otimes e_0+\sum_k e_k\otimes e_k\right),$$
-  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_0\otimes e_0-\sum_k e_k\otimes e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_0\otimes e_0+F)=2\hbar^2P_{\mathrm{sym}}$.
-- **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_0\otimes e_0$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
+  $$P_{\mathrm{sym}}=\tfrac14\left(3e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k\right),\qquad P_{\mathrm{asym}}=\tfrac14\left(e_t\otimes e_t+\sum_k \vec e_k\otimes \vec e_k\right),$$
+  of traces $3$ and $1$; they are the $\pm1$ spectral projectors of the exchange operator $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$, and the total Casimir is $\tilde S^2=\hbar^2(e_t\otimes e_t+F)=2\hbar^2P_{\mathrm{sym}}$.
+- **The coupling term.** $\sum_k\tilde S_k^{(1)}\tilde S_k^{(2)}=\tfrac{\hbar^2}{2}F-\tfrac{\hbar^2}{4}e_t\otimes e_t$, whence $[F,\tilde S_k]=0$: the exchange operator is central in the coupled rotation algebra, which is why it is simultaneously diagonal with the coupled Casimir.
 - **The transformation.** The Clebsch–Gordan transformation is the unitary element $U$ of $\mathbb{B}\otimes\mathbb{B}$ that diagonalises $\tilde S^2$ and $\tilde S_3$; it is not a product of one-factor unitaries, since it maps product states to entangled states.
 - **The triplet coupling.** For $1\otimes1$ the coupled states carry $j(j+1)=6,2,0$; the quintet is totally symmetric, the singlet totally antisymmetric, and the triplet antisymmetric in the two vector factors.
 - **Recursions and phase.** The coefficients satisfy the standard raising and lowering recursions, and the phase is fixed by the Condon–Shortley convention, in which the coefficient of the largest $m_1$ is positive.
@@ -439,21 +439,21 @@ The article established the following.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, cyclic products |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$ | Hermitian subspace (observables, states) |
 | $\tilde J_k$ | Angular-momentum operators, $[\tilde J_i,\tilde J_j]=i\hbar\epsilon_{ijk}\tilde J_k$ |
 | $\tilde J_\pm=\tilde J_1\pm i\tilde J_2$ | Ladder operators |
 | $\tilde J^2=\sum_k\tilde J_k^2$ | Casimir |
-| $\tilde S_k=\tfrac{\hbar}{2}ie_k$ | Spin-$\tfrac12$ operators in $\mathbb{M}_+$ |
-| $\tilde S_\pm=\tfrac{\hbar}{2}(ie_1\mp e_2)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
+| $\tilde S_k=\tfrac{\hbar}{2}i\vec e_k$ | Spin-$\tfrac12$ operators in $\mathbb{M}_+$ |
+| $\tilde S_\pm=\tfrac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_\pm^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
-| $\tilde J_k^{(1)}=\tilde J_k\otimes e_0,\ \tilde J_k^{(2)}=e_0\otimes\tilde J_k$ | Factor operators |
+| $\tilde J_k^{(1)}=\tilde J_k\otimes e_t,\ \tilde J_k^{(2)}=e_t\otimes\tilde J_k$ | Factor operators |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 | $V_j$ | Rotation multiplet of spin $j$, highest weight $2j$, $\dim_{\mathbb{C}}V_j=2j+1$ |
 | $\langle j_1,m_1;j_2,m_2|j,m\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Coupled projectors for $\tfrac12\otimes\tfrac12$ |
-| $F=\tfrac12(e_0\otimes e_0-\sum_k e_k\otimes e_k)$ | Exchange operator, $F^2=e_0\otimes e_0$ |
+| $F=\tfrac12(e_t\otimes e_t-\sum_k \vec e_k\otimes \vec e_k)$ | Exchange operator, $F^2=e_t\otimes e_t$ |
 | $U$ | Clebsch–Gordan transformation matrix |
 
 ## Further Reading

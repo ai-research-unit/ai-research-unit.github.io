@@ -85,19 +85,19 @@ so the adjoint operators of the algebra are skew-Hermitian.
 
 ### The Form Defines the Star
 
-**Theorem.** Let $\mathrm{G}$ be a real Lie algebra with an invariant Hermitian form $H$, and let $\sigma$ be the principal anti-automorphism of $U(\mathrm{G})$. Then the adjoint operation for $H$ on the operators coincides with the star,
+**Theorem.** Let $\mathrm{G}$ be a real Lie algebra with an invariant Hermitian form $H$, and let $\sigma$ be the principal anti-automorphism of $\mathrm{U}(\mathrm{G})$. Then the adjoint operation for $H$ on the operators coincides with the star,
 
 $$
 \operatorname{ad}_X^{\dagger} = -\operatorname{ad}_X = \operatorname{ad}_{\sigma(X)} \qquad (X\in\mathrm{G}),
 $$
 
-and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to $H$ is a star-representation of $U(\mathrm{G})$; conversely a star-representation of $U(\mathrm{G})$ whose operators are skew-Hermitian for $H$ is unitarisable.
+and a representation of $\mathrm{G}$ by skew-Hermitian operators with respect to $H$ is a star-representation of $\mathrm{U}(\mathrm{G})$; conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators are skew-Hermitian for $H$ is unitarisable.
 
-*Proof.* The identity is the invariance of $H$; the equivalence of the two formulations on the enveloping algebra is that both are generated on the first order, by the universality of $U(\mathrm{G})$. This is the content of *The Involution on the Enveloping Algebra of a Lie Group*, read with the form as the geometric datum.
+*Proof.* The identity is the invariance of $H$; the equivalence of the two formulations on the enveloping algebra is that both are generated on the first order, by the universality of $\mathrm{U}(\mathrm{G})$. This is the content of *The Involution on the Enveloping Algebra of a Lie Group*, read with the form as the geometric datum.
 
 ### The Casimir and Positivity
 
-**Theorem.** Let $H$ be a positive definite invariant Hermitian form on a real semisimple Lie algebra $\mathrm{G}$, let $(X_i)$ be an orthonormal basis, and let $\Omega = -\sum_i X_i^2$. Then $\Omega$ is a positive Hermitian element of $U(\mathrm{G})$, it is central, and its image in every star-representation is a positive self-adjoint operator; the scalars by which it acts are the quadratic invariants of the irreducible summands.
+**Theorem.** Let $H$ be a positive definite invariant Hermitian form on a real semisimple Lie algebra $\mathrm{G}$, let $(X_i)$ be an orthonormal basis, and let $\Omega = -\sum_i X_i^2$. Then $\Omega$ is a positive Hermitian element of $\mathrm{U}(\mathrm{G})$, it is central, and its image in every star-representation is a positive self-adjoint operator; the scalars by which it acts are the quadratic invariants of the irreducible summands.
 
 *Proof.* The element is Hermitian because the $X_i$ are skew under the star, and it is positive because $-\sum X_i^2 = \sum X_i^{\star}X_i$; the centrality is the invariance of the form; the positivity of the image is the positivity of the sum of the squares of skew-adjoint operators, and the eigenvalue statement is *The Casimir Operator of a Lie Group*.
 

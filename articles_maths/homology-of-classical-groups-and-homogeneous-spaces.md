@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The classical groups are the groups of automorphisms of the standard bilinear and sesquilinear forms, and their homology is computable because each of them is built up by fibrations whose fibres are spheres. There is an induction: $U(n-1) \to U(n) \to S^{2n-1}$, $SO(n-1) \to SO(n) \to S^{n-1}$, $Sp(n-1) \to Sp(n) \to S^{4n-1}$; the Serre spectral sequence of these fibrations has two rows, so it collapses, and the homology is an exterior or polynomial algebra on the classes carried by the successive spheres. The result is a complete computation of $H_*(G;\mathbb{Z})$ for the classical compact groups, with only $2$-torsion in the orthogonal case and no torsion in the unitary and symplectic cases. The homogeneous spaces of the classical groups are equally computable: the Grassmannians have a cell decomposition by Schubert cells and their cohomology rings have presentations by Chern and Stiefel–Whitney classes, and the general $G/H$ yields to the Serre spectral sequence together with the transgression theorem of Borel.
+The classical groups are the groups of automorphisms of the standard bilinear and sesquilinear forms, and their homology is computable because each of them is built up by fibrations whose fibres are spheres. There is an induction: $\mathrm{U}(n-1) \to \mathrm{U}(n) \to S^{2n-1}$, $SO(n-1) \to SO(n) \to S^{n-1}$, $Sp(n-1) \to Sp(n) \to S^{4n-1}$; the Serre spectral sequence of these fibrations has two rows, so it collapses, and the homology is an exterior or polynomial algebra on the classes carried by the successive spheres. The result is a complete computation of $H_*(G;\mathbb{Z})$ for the classical compact groups, with only $2$-torsion in the orthogonal case and no torsion in the unitary and symplectic cases. The homogeneous spaces of the classical groups are equally computable: the Grassmannians have a cell decomposition by Schubert cells and their cohomology rings have presentations by Chern and Stiefel–Whitney classes, and the general $G/H$ yields to the Serre spectral sequence together with the transgression theorem of Borel.
 
 The article carries out these computations. It begins with the Hopf-algebra structure of the homology of a group — the Pontryagin product and the coproduct induced by the diagonal — because the computations are algebraic once the Hopf-algebra structure is recognised, and because Hopf's and Borel's structure theorems explain in advance why the answer is exterior or polynomial. It then computes the homology of the classical groups, of spheres and Stiefel manifolds, and of Grassmannians; it develops the Schubert calculus of the flag manifolds, with the Schubert basis, the Pieri and Giambelli formulas and Borel's presentation of the cohomology as a quotient of the polynomial ring by the positive-degree Weyl invariants; and it closes with the universal bundles and the classifying spaces, where the same computations appear as the cohomology of $BU(n)$ and $BO(n)$ and so as the rings of Chern and Stiefel–Whitney classes.
 
 The characteristic classes themselves are not developed here. The topological theory of the Chern, Stiefel–Whitney, Pontryagin and Euler classes is the subject of *Characteristic Classes* of this corpus, earlier in this Part, which develops the classes themselves and their relation to the form theory of *Algebras with a degree-2 form*; the differential-geometric construction of characteristic classes from connections and curvature is carried out in the written *Fibre Bundles, Connections and Curvature*, whose *Characteristic Classes* section is the model for the language used here. What this article supplies is the cohomological home of those classes: the cohomology rings of the Grassmannians and of the classifying spaces, which is where the classes live and where their relations hold.
 
-Throughout, homology and cohomology are singular with the coefficients named, $k$ is a field, $\mathbb{F}_p$ the field with $p$ elements, $U(n)$, $SU(n)$, $O(n)$, $SO(n)$, $\mathrm{Spin}(n)$, $Sp(n)$ the classical compact groups, $G$ a compact connected Lie group, $T$ a maximal torus, $W = N(T)/T$ the Weyl group, and $G_k(\mathbb{C}^n)$ the Grassmannian of $k$-planes in $\mathbb{C}^n$.
+Throughout, homology and cohomology are singular with the coefficients named, $k$ is a field, $\mathbb{F}_p$ the field with $p$ elements, $\mathrm{U}(n)$, $SU(n)$, $O(n)$, $SO(n)$, $\mathrm{Spin}(n)$, $Sp(n)$ the classical compact groups, $G$ a compact connected Lie group, $T$ a maximal torus, $W = N(T)/T$ the Weyl group, and $G_k(\mathbb{C}^n)$ the Grassmannian of $k$-planes in $\mathbb{C}^n$.
 
 ## The Hopf Algebra of a Group
 
@@ -31,7 +31,7 @@ induced by the diagonal $\delta : G \to G\times G$, where the isomorphism is the
 
 **Theorem (Hopf algebra).** With the Pontryagin product and the coproduct, $H_*(G;k)$ is a graded-commutative, cocommutative Hopf algebra with unit the class of the basepoint and counit the augmentation; the antipode is induced by the inversion of $G$. The coproduct is a map of algebras, and the product is a map of coalgebras.
 
-**Example.** For $G = S^1 = U(1)$, $H_*(S^1;\mathbb{Z})$ has $\mathbb{Z}$ in degrees $0$ and $1$, the Pontryagin product is the exterior algebra $\Lambda(x_1)$ on the class of the fundamental cycle, and $\Delta(x_1) = x_1\otimes 1 + 1\otimes x_1$: the class is **primitive**. For $G$ abelian and connected, $H_*(G;\mathbb{Z})$ is the exterior algebra on the primitive classes of a basis of $\pi_1(G)$ tensored with the homology of the higher parts.
+**Example.** For $G = S^1 = \mathrm{U}(1)$, $H_*(S^1;\mathbb{Z})$ has $\mathbb{Z}$ in degrees $0$ and $1$, the Pontryagin product is the exterior algebra $\Lambda(x_1)$ on the class of the fundamental cycle, and $\Delta(x_1) = x_1\otimes 1 + 1\otimes x_1$: the class is **primitive**. For $G$ abelian and connected, $H_*(G;\mathbb{Z})$ is the exterior algebra on the primitive classes of a basis of $\pi_1(G)$ tensored with the homology of the higher parts.
 
 **Definition.** An element $x$ of a Hopf algebra is **primitive** if $\Delta(x) = x\otimes 1 + 1\otimes x$, and the **primitive subspace** $P(A)$ is the graded vector space of primitive elements.
 
@@ -69,22 +69,22 @@ and the order of the Weyl group is $|W| = \prod_i d_i$ (Chevalley).
 **Theorem.** For $n \geq 1$,
 
 $$
-H_*(U(n);\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(x_1,x_3,\ldots,x_{2n-1}), \qquad H_*(SU(n);\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(x_3,x_5,\ldots,x_{2n-1}),
+H_*(\mathrm{U}(n);\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(x_1,x_3,\ldots,x_{2n-1}), \qquad H_*(SU(n);\mathbb{Z}) \cong \Lambda_{\mathbb{Z}}(x_3,x_5,\ldots,x_{2n-1}),
 $$
 
-exterior algebras on generators of odd degree; in particular the homology is torsion-free and of total rank $2^n$ for $U(n)$ and $2^{n-1}$ for $SU(n)$.
+exterior algebras on generators of odd degree; in particular the homology is torsion-free and of total rank $2^n$ for $\mathrm{U}(n)$ and $2^{n-1}$ for $SU(n)$.
 
-*Proof.* The determinant exhibits $U(n)$ as an extension of $S^1$ by $SU(n)$, and there are fibrations
+*Proof.* The determinant exhibits $\mathrm{U}(n)$ as an extension of $S^1$ by $SU(n)$, and there are fibrations
 
 $$
-U(n-1) \to U(n) \to S^{2n-1}, \qquad SU(n-1) \to SU(n) \to S^{2n-1},
+\mathrm{U}(n-1) \to \mathrm{U}(n) \to S^{2n-1}, \qquad SU(n-1) \to SU(n) \to S^{2n-1},
 $$
 
-where the second is the action of $U(n)$ on the unit sphere of $\mathbb{C}^n$ with stabiliser $U(n-1)$. In the Serre spectral sequence of *The Leray–Serre Spectral Sequence* the base $S^{2n-1}$ has cohomology in two degrees, so the spectral sequence has two columns and the only possible differential is the transgression $d_{2n} : E_{2n}^{0,2n-1}\to E_{2n}^{2n,0}$; it carries the fundamental class of the fibre to the fundamental class of the base, and by induction with the Künneth theorem the answer is the exterior algebra on the classes of the successive spheres.
+where the second is the action of $\mathrm{U}(n)$ on the unit sphere of $\mathbb{C}^n$ with stabiliser $\mathrm{U}(n-1)$. In the Serre spectral sequence of *The Leray–Serre Spectral Sequence* the base $S^{2n-1}$ has cohomology in two degrees, so the spectral sequence has two columns and the only possible differential is the transgression $d_{2n} : E_{2n}^{0,2n-1}\to E_{2n}^{2n,0}$; it carries the fundamental class of the fibre to the fundamental class of the base, and by induction with the Künneth theorem the answer is the exterior algebra on the classes of the successive spheres.
 
-**Example.** $H_*(U(1);\mathbb{Z}) = \Lambda(x_1)$; $H_*(U(2);\mathbb{Z}) = \Lambda(x_1,x_3)$, with total rank $4$ and Poincaré polynomial $(1+t)(1+t^3)$; $H_*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[u]$ with $|u| = 2$, the polynomial algebra that appears as $H^*(BU(1);\mathbb{Z})$ below.
+**Example.** $H_*(\mathrm{U}(1);\mathbb{Z}) = \Lambda(x_1)$; $H_*(\mathrm{U}(2);\mathbb{Z}) = \Lambda(x_1,x_3)$, with total rank $4$ and Poincaré polynomial $(1+t)(1+t^3)$; $H_*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[u]$ with $|u| = 2$, the polynomial algebra that appears as $H^*(BU(1);\mathbb{Z})$ below.
 
-**Remark.** The generators $x_{2i-1}$ are primitive and their transgressions in the path–loop fibration $U(n) \to PU(n) \to BU(n)$ are the universal Chern classes $c_i$ of degree $2i$, so that $H^*(BU(n);\mathbb{Z}) \cong \mathbb{Z}[c_1,\ldots,c_n]$ with $|c_i| = 2i$; the identification of the transgression with the Chern class is the content of the splitting principle, and it is the reason the exterior algebra $H^*(U(n))$ and the polynomial algebra $H^*(BU(n))$ carry the same information.
+**Remark.** The generators $x_{2i-1}$ are primitive and their transgressions in the path–loop fibration $\mathrm{U}(n) \to PU(n) \to BU(n)$ are the universal Chern classes $c_i$ of degree $2i$, so that $H^*(BU(n);\mathbb{Z}) \cong \mathbb{Z}[c_1,\ldots,c_n]$ with $|c_i| = 2i$; the identification of the transgression with the Chern class is the content of the splitting principle, and it is the reason the exterior algebra $H^*(\mathrm{U}(n))$ and the polynomial algebra $H^*(BU(n))$ carry the same information.
 
 ### The Orthogonal and Symplectic Groups
 
@@ -98,7 +98,7 @@ with $|w_i| = i$; here $H^*(O(n);\mathbb{F}_2)$ is a polynomial algebra, in acco
 
 *Proof.* For $Sp(n)$ the same induction applies with the fibration $Sp(n-1)\to Sp(n)\to S^{4n-1}$, and the transgression has the indicated degree. For $O(n)$ the fibration $O(n-1)\to O(n)\to S^{n-1}$ gives an induction with $\mathbb{F}_2$ coefficients; the classes $w_i$ are the **Stiefel–Whitney classes**, and their polynomial generation is the standard computation of the cohomology of the orthogonal group, which we quote.
 
-**Theorem (Borel; torsion).** For $n \geq 1$ the integral homology $H_*(SO(n);\mathbb{Z})$ and $H_*(O(n);\mathbb{Z})$ contain only $2$-torsion, while $H_*(U(n);\mathbb{Z})$, $H_*(SU(n);\mathbb{Z})$ and $H_*(Sp(n);\mathbb{Z})$ are torsion-free. In the stable range
+**Theorem (Borel; torsion).** For $n \geq 1$ the integral homology $H_*(SO(n);\mathbb{Z})$ and $H_*(O(n);\mathbb{Z})$ contain only $2$-torsion, while $H_*(\mathrm{U}(n);\mathbb{Z})$, $H_*(SU(n);\mathbb{Z})$ and $H_*(Sp(n);\mathbb{Z})$ are torsion-free. In the stable range
 
 $$
 H_*(SO;\mathbb{F}_2) \cong \mathbb{F}_2[x_1,x_2,\ldots], \qquad |x_i| = i,
@@ -200,9 +200,9 @@ $$
 \dim V_k(\mathbb{R}^n) = nk - \tfrac{k(k+1)}{2}, \qquad \dim_{\mathbb{R}}V_k(\mathbb{C}^n) = 2nk - k^2,
 $$
 
-with $V_k(\mathbb{C}^n) = U(n)/U(n-k)$; the dimensions are those of the corresponding homogeneous spaces, $\dim O(n) = n(n-1)/2$ and $\dim U(n) = n^2$.
+with $V_k(\mathbb{C}^n) = \mathrm{U}(n)/U(n-k)$; the dimensions are those of the corresponding homogeneous spaces, $\dim O(n) = n(n-1)/2$ and $\dim \mathrm{U}(n) = n^2$.
 
-**Theorem.** The projections $O(n)\to V_k(\mathbb{R}^n)$ and $U(n)\to V_k(\mathbb{C}^n)$ are fibre bundles with fibres $O(n-k)$ and $U(n-k)$, and the Serre spectral sequence computes the homology inductively:
+**Theorem.** The projections $O(n)\to V_k(\mathbb{R}^n)$ and $\mathrm{U}(n)\to V_k(\mathbb{C}^n)$ are fibre bundles with fibres $O(n-k)$ and $U(n-k)$, and the Serre spectral sequence computes the homology inductively:
 
 1. $V_1(\mathbb{R}^n) = S^{n-1}$ and $V_1(\mathbb{C}^n) = S^{2n-1}$, so the first case is the sphere.
 2. $V_n(\mathbb{R}^n) = O(n)$ and $V_{n-1}(\mathbb{R}^n) = SO(n)$, so the last cases are the groups themselves.
@@ -279,7 +279,7 @@ a polynomial algebra on generators of even degree; the classes $c_i$ are the uni
 
 **Theorem (Stiefel–Whitney classes).** $H^*(BO(n);\mathbb{F}_2) \cong \mathbb{F}_2[w_1,\ldots,w_n]$ with $|w_i| = i$, and stably $H^*(BO;\mathbb{F}_2) \cong \mathbb{F}_2[w_1,w_2,\ldots]$; integrally $H^*(BSO(2m+1);\mathbb{Z}[1/2]) \cong \mathbb{Z}[1/2][p_1,\ldots,p_m]$ on the Pontryagin classes, and $H^*(BSp(n);\mathbb{Z}) \cong \mathbb{Z}[q_1,\ldots,q_n]$ with $|q_i| = 4i$.
 
-*Proof sketch.* The path–loop fibration $G\to EG\to BG$ and the transgression theorem give $H^*(BG)$ from the primitive generators of $H^*(G)$: the primitive exterior generators $x_i$ of $H^*(G)$ transgress to polynomial generators of $H^*(BG)$, so $H^*(BG;k)$ is polynomial on the transgressions. Applying this to $G = U(n)$ with the generators in degrees $2i-1$ gives generators in degrees $2i$, the Chern classes; for $SO(n)$ and $\mathbb{F}_2$ coefficients the same argument gives the Stiefel–Whitney classes, and for $Sp(n)$ the symplectic classes.
+*Proof sketch.* The path–loop fibration $G\to EG\to BG$ and the transgression theorem give $H^*(BG)$ from the primitive generators of $H^*(G)$: the primitive exterior generators $x_i$ of $H^*(G)$ transgress to polynomial generators of $H^*(BG)$, so $H^*(BG;k)$ is polynomial on the transgressions. Applying this to $G = \mathrm{U}(n)$ with the generators in degrees $2i-1$ gives generators in degrees $2i$, the Chern classes; for $SO(n)$ and $\mathbb{F}_2$ coefficients the same argument gives the Stiefel–Whitney classes, and for $Sp(n)$ the symplectic classes.
 
 **Example.** $BU(1) = \mathbb{C}P^\infty$ and $H^*(\mathbb{C}P^\infty;\mathbb{Z}) = \mathbb{Z}[c_1]$, matching the earlier example; $BO(1) = \mathbb{R}P^\infty$ and $H^*(\mathbb{R}P^\infty;\mathbb{F}_2) = \mathbb{F}_2[w_1]$; $BSO(2) = BU(1) = \mathbb{C}P^\infty$, with Euler class $c_1$; and the classifying space of the circle is $\mathbb{C}P^\infty = K(\mathbb{Z},2)$.
 
@@ -289,7 +289,7 @@ a polynomial algebra on generators of even degree; the classes $c_i$ are the uni
 
 The homology of a topological group is a graded-commutative cocommutative Hopf algebra with the Pontryagin product and the coproduct induced by the diagonal; Hopf's structure theorem makes it a tensor product of exterior and polynomial algebras, and Borel's corollary specialises this to a compact connected Lie group of rank $r$: the cohomology is an exterior algebra on $r$ odd-degree generators whose degrees are $2d_i-1$ for the invariant degrees $d_i$ of the Weyl group, the Poincaré polynomial is the product of the $(1+t^{2d_i-1})$, and $|W| = \prod d_i$.
 
-The classical groups are computed by induction on the fibrations with sphere fibres whose Serre spectral sequences have two rows: $H_*(U(n);\mathbb{Z})$ and $H_*(SU(n);\mathbb{Z})$ are exterior algebras on generators of degrees $1,3,\ldots,2n-1$ and $3,5,\ldots,2n-1$; $H_*(Sp(n);\mathbb{Z})$ on degrees $3,7,\ldots,4n-1$; the orthogonal groups have only $2$-torsion, and $H^*(O(n);\mathbb{F}_2)$ is polynomial on the Stiefel–Whitney classes while $H_*(SO;\mathbb{F}_2)$ is polynomial on one generator in each positive degree. Bott periodicity gives the homotopy of the stable classical groups and provides the source of the $J$-homomorphism.
+The classical groups are computed by induction on the fibrations with sphere fibres whose Serre spectral sequences have two rows: $H_*(\mathrm{U}(n);\mathbb{Z})$ and $H_*(SU(n);\mathbb{Z})$ are exterior algebras on generators of degrees $1,3,\ldots,2n-1$ and $3,5,\ldots,2n-1$; $H_*(Sp(n);\mathbb{Z})$ on degrees $3,7,\ldots,4n-1$; the orthogonal groups have only $2$-torsion, and $H^*(O(n);\mathbb{F}_2)$ is polynomial on the Stiefel–Whitney classes while $H_*(SO;\mathbb{F}_2)$ is polynomial on one generator in each positive degree. Bott periodicity gives the homotopy of the stable classical groups and provides the source of the $J$-homomorphism.
 
 The Grassmannians have a cell decomposition by Schubert cells of even real dimension, so their cohomology is free with the Schubert classes as a basis and their structure constants are the Littlewood–Richardson coefficients; the presentation by the Chern classes of the tautological bundle and the complete homogeneous relations, together with the splitting principle, turns the computation into symmetric function theory, and the flag manifolds satisfy Borel's presentation $H^*(G/T) \cong S/(S^W_+)$ as the coinvariant algebra. Finally the classifying spaces realise these rings as $H^*(BU(n)) = \mathbb{Z}[c_1,\ldots,c_n]$, $H^*(BO(n);\mathbb{F}_2) = \mathbb{F}_2[w_1,\ldots,w_n]$ and $H^*(BSp(n)) = \mathbb{Z}[q_1,\ldots,q_n]$, the homes of the characteristic classes whose differential-geometric construction is treated in the companion articles on bundles and characteristic classes.
 
@@ -297,9 +297,9 @@ The Grassmannians have a cell decomposition by Schubert cells of even real dimen
 
 | Symbol | Meaning |
 |---|---|
-| $U(n)$, $SU(n)$, $O(n)$, $SO(n)$, $\mathrm{Spin}(n)$, $Sp(n)$ | Classical compact groups |
+| $\mathrm{U}(n)$, $SU(n)$, $O(n)$, $SO(n)$, $\mathrm{Spin}(n)$, $Sp(n)$ | Classical compact groups |
 | $G_k(\mathbb{C}^n)$ | Grassmannian of $k$-planes in $\mathbb{C}^n$ |
-| $V_k(\mathbb{R}^n)$, $V_k(\mathbb{C}^n)$ | Stiefel manifolds $O(n)/O(n-k)$, $U(n)/U(n-k)$ |
+| $V_k(\mathbb{R}^n)$, $V_k(\mathbb{C}^n)$ | Stiefel manifolds $O(n)/O(n-k)$, $\mathrm{U}(n)/U(n-k)$ |
 | $\mu$, $\delta$, $\Delta$ | Multiplication, diagonal, coproduct on $H_*(G;k)$ |
 | Pontryagin product | $H_p\otimes H_q \to H_{p+q}(G)$, induced by $\mu$ |
 | $P(A)$ | Primitive subspace of a Hopf algebra |

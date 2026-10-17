@@ -12,20 +12,20 @@ The key structural fact is the same as in the discrete case: the **idempotent de
 Throughout, a split biquaternion is written
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
 $$
-\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+\tilde{Q}_+ = \sum_{\mu\in\{t,x,y,z\}} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu\in\{t,x,y,z\}} (q_\mu - q'_\mu) e_\mu.
 $$
 
 The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.
 
-**Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
+**Notation.** To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
 
 ## The Fourier Kernel
 
@@ -50,7 +50,7 @@ where the exponential is the split biquaternion exponential and $\rho$ is viewed
 Because $\rho^2 = -1$, the kernel takes the closed form
 
 $$
-W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
+W(t, \omega) = \cos(2\pi \omega t) \, e_t - \sin(2\pi \omega t) \, \rho,
 $$
 
 where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$. The kernel is therefore a unit quaternion:
@@ -62,7 +62,7 @@ $$
 In particular, the kernel is always invertible, and its inverse is its quaternion conjugate:
 
 $$
-W(t, \omega)^{-1} = \overline{W(t, \omega)} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho.
+W(t, \omega)^{-1} = \overline{W(t, \omega)} = \cos(2\pi \omega t) \, e_t + \sin(2\pi \omega t) \, \rho.
 $$
 
 The kernel is the same in both idempotent components, so the split biquaternion kernel is the diagonal embedding of the quaternion kernel. This is the same as in the discrete case.
@@ -193,10 +193,10 @@ $$
 
 where $W(t, \omega) = \exp(-2\pi \rho \omega t)$ and $\rho$ is a unit pure real quaternion.
 
-The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g(t)$ in the basis $\{e_0, \rho, \nu, \xi\}$:
+The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g(t)$ in the basis $\{e_t, \rho, \nu, \xi\}$:
 
 $$
-g(t) = g_0(t) e_0 + g_\rho(t) \rho + g_\nu(t) \nu + g_\xi(t) \xi, \qquad g_\bullet(t) \in \mathbb{C}.
+g(t) = g_0(t) e_t + g_\rho(t) \rho + g_\nu(t) \nu + g_\xi(t) \xi, \qquad g_\bullet(t) \in \mathbb{C}.
 $$
 
 The quaternion Fourier transform then decomposes into **four complex Fourier transforms**, one for each complex coefficient, as discussed in the biquaternion continuous harmonic analysis article.
@@ -291,10 +291,10 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
+Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
 
 $$
-\mathcal{F}[\partial_0 F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
+\mathcal{F}[\partial/\partial Q_t F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
 $$
 
 where the sign depends on the convention for the kernel.
@@ -302,20 +302,20 @@ where the sign depends on the convention for the kernel.
 If the transform is taken in all four variables, the gradient becomes multiplication by the split biquaternion
 
 $$
-2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
-where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_0, Q_1, Q_2, Q_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a split-biquaternion-valued multiplier.
+where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_t, Q_x, Q_y, Q_z$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a split-biquaternion-valued multiplier.
 
 ### The d'Alembertian
 
-The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
+The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
 \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$
 
-The multiplier is a scalar (times $e_0$), and it vanishes on the **null cone**
+The multiplier is a scalar (times $e_t$), and it vanishes on the **null cone**
 
 $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
@@ -325,10 +325,10 @@ So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supporte
 
 ### The Square of the Gradient
 
-The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by
+The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by
 
 $$
--4\pi^2 \Big[\Big(\omega_0^2 - \sum_k \omega_k^2\Big) e_0 + 2\omega_0 \sum_k e_k \omega_k\Big],
+-4\pi^2 \Big[\Big(\omega_0^2 - \sum_k \omega_k^2\Big) e_t + 2\omega_0 \sum_k \vec e_k \omega_k\Big],
 $$
 
 which is a split-biquaternion-valued multiplier.
@@ -338,7 +338,7 @@ which is a split-biquaternion-valued multiplier.
 The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
 
 $$
-\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
 which depends on the velocity split biquaternion $\tilde{R}$ and on the frequency variables.
@@ -438,10 +438,10 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
-| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |

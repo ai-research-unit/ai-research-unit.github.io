@@ -15,7 +15,7 @@ A fibre bundle is a map that is locally a product, and the structure of the bund
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| a fibre bundle $\pi : E \to B$ | locally a product $U\times F$, with fibre $F$ | *Fibre Bundles, Connections and Curvature* |
+| a fibre bundle $\pi : E \to B$ | locally a product $\Xi\times F$, with fibre $F$ | *Fibre Bundles, Connections and Curvature* |
 | the transition functions $g_{\alpha\beta}$ | the clutching data, with $g_{\alpha\beta}g_{\beta\gamma} = g_{\alpha\gamma}$ | *Fibre Bundles, Connections and Curvature* |
 | a principal $G$-bundle $P \to M$ | a bundle with a free transitive right action of the structure group $G$ | *Fibre Bundles, Connections and Curvature* |
 | the associated bundle $P\times_G F$ | the bundle with fibre $F$ built from a $G$-space and a principal bundle | *Fibre Bundles, Connections and Curvature* |
@@ -27,7 +27,7 @@ A fibre bundle is a map that is locally a product, and the structure of the bund
 | a line bundle and its class in $H^2(B;\mathbb{Z})$ | the isomorphism classes of complex line bundles | *Characteristic Classes* |
 | the canonical bundle $K_M$ | the top exterior power of the holomorphic cotangent bundle | *Kähler Geometry* |
 | the normal bundle and the tubular neighbourhood | the bundle of the normal directions of a submanifold, and its disc bundle | *Differential Topology* |
-| the Hopf fibration $S^3 \to S^2$ | the principal $U(1)$-bundle of the three-sphere over the sphere | *Spherical Geometry*, §The Three-Sphere and the Hopf Fibration; *Homotopy Groups and Fibrations* |
+| the Hopf fibration $S^3 \to S^2$ | the principal $\mathrm{U}(1)$-bundle of the three-sphere over the sphere | *Spherical Geometry*, §The Three-Sphere and the Hopf Fibration; *Homotopy Groups and Fibrations* |
 
 The transition functions are the complete cocycle data of the bundle, and the principal bundle is the frame bundle of a vector bundle, so that the geometry of a vector bundle and the geometry of its frame bundle carry the same information. The associated-bundle construction produces from a representation of the structure group the tensor, spinor and density bundles that the corpus uses on manifolds.
 

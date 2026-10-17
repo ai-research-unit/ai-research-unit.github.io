@@ -7,13 +7,13 @@ This article develops the integration theory of quaternion-valued functions of a
 
 The treatment is mathematical throughout. The independent variable is a quaternion, the values are quaternions, and no physical object is introduced. The quaternion algebra, its basis, its conjugation and its quaternion norm are taken from *Quaternion Algebra*; the topology of $\mathbb{H}$, the modulus, the Cauchy–Riemann operator and the class of regular functions are taken from *Quaternion Analysis*. Where a statement is the quaternionic instance of a general theorem of Clifford analysis, the general result is cited and the quaternionic constants are computed; the general shape of the integral theorems is that of *Hypercomplex Integration* and *Regularity and the Cauchy–Riemann Operator*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A general quaternion is written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with quaternion conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. Its coordinates are $q_0, q_1, q_2, q_3$, and $\partial_\mu = \partial/\partial q_\mu$. The **Cauchy–Riemann operator** is
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$. A general quaternion is written $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with quaternion conjugate $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2 = \sum_\mu q_\mu^2$. Its coordinates are $q_t, q_x, q_y, q_z$. The **Cauchy–Riemann operator** is
 
 $$
-D = \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
+D = \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z,
 $$
 
-and its **conjugate** is $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 - e_3\partial_3$. A function is **left regular** if $Df = 0$ and **right regular** if $fD = 0$, where $fD = \partial_0 f + (\partial_1 f)e_1 + (\partial_2 f)e_2 + (\partial_3 f)e_3$.
+and its **conjugate** is $\bar{D} = \partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$. A function is **left regular** if $Df = 0$ and **right regular** if $fD = 0$, where $fD = \partial/\partial Q_t f + (\partial/\partial Q_x f)\vec e_x + (\partial/\partial Q_y f)\vec e_y + (\partial/\partial Q_z f)\vec e_z$.
 
 ## The Integral of a Quaternion-Valued Function
 
@@ -22,13 +22,13 @@ and its **conjugate** is $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 -
 **Definition.** Let $\Omega \subseteq \mathbb{H}$ be a domain and let $f : \Omega \to \mathbb{H}$ be written in components as
 
 $$
-f(\tilde q) = \sum_{\mu=0}^{3} f_\mu(q_0, q_1, q_2, q_3)\, e_\mu, \qquad f_\mu \in \mathbb{R}.
+f(\tilde q) = \sum_{\mu\in\{t,x,y,z\}} f_\mu(q_t, q_x, q_y, q_z)\, e_\mu, \qquad f_\mu \in \mathbb{R}.
 $$
 
 The **domain integral** of $f$ over $\Omega$ is
 
 $$
-\int_\Omega f \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega f_\mu \, dV\right) e_\mu,
+\int_\Omega f \, dV = \sum_{\mu\in\{t,x,y,z\}} \left(\int_\Omega f_\mu \, dV\right) e_\mu,
 $$
 
 where $dV$ is the Lebesgue measure on the four real coordinates and each scalar integral is an ordinary Lebesgue integral. The integral exists when each of the four real-valued functions $f_\mu$ is integrable over $\Omega$, and it is then a quaternion.
@@ -90,10 +90,10 @@ For a commutative algebra the two orders coincide; here they do not, and the ord
 **Definition.** Let $\Omega$ be a domain with smooth boundary, with outward unit normal $n(w) = (n_0, n_1, n_2, n_3)$ at $w \in \partial\Omega$. The **conormal element** is the quaternion
 
 $$
-\nu(w) = n_0(w) + n_1(w) e_1 + n_2(w) e_2 + n_3(w) e_3 = \sum_{\mu=0}^{3} n_\mu(w) e_\mu.
+\nu(w) = n_0(w) + n_1(w) \vec e_x + n_2(w) \vec e_y + n_3(w) \vec e_z = \sum_{\mu\in\{t,x,y,z\}} n_\mu(w) e_\mu.
 $$
 
-It is a unit vector of $\mathbb{H}$, since $|\nu|^2 = \sum_\mu n_\mu^2 = 1$, and its conjugate is $\bar{\nu} = n_0 - n_1 e_1 - n_2 e_2 - n_3 e_3$.
+It is a unit vector of $\mathbb{H}$, since $|\nu|^2 = \sum_\mu n_\mu^2 = 1$, and its conjugate is $\bar{\nu} = n_0 - n_1 \vec e_x - n_2 \vec e_y - n_3 \vec e_z$.
 
 **Definition.** For a continuous quaternion-valued function $f$ on $\partial\Omega$, the **surface integrals** are
 
@@ -112,7 +112,7 @@ The conormal element is the quaternionic form of the unit normal used by the div
 The Cauchy–Riemann operator $D$ and its conjugate $\bar{D}$ are first-order operators with constant coefficients; they act on a $C^1$ function by taking its partial derivatives and left-multiplying by the basis elements. Their elementary action on the coordinate functions is
 
 $$
-D\tilde q = \sum_{\mu=0}^{3} e_\mu e_\mu = e_0 - 3e_0 = -2, \qquad D\tilde{q}^{\natural} = \sum_{\mu=0}^{3} e_\mu e_\mu^{\natural} = e_0 + 3e_0 = 4,
+D\tilde q = \sum_{\mu\in\{t,x,y,z\}} e_\mu e_\mu = e_t - 3e_t = -2, \qquad D\tilde{q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} e_\mu e_\mu^{\natural} = e_t + 3e_t = 4,
 $$
 
 and conjugating the first identity gives $\bar{D}\tilde{q}^{\natural} = -2$ and $\bar{D}\tilde q = 4$. The two constant values $2$ and $4$ recur in the analysis of the operator.
@@ -120,12 +120,12 @@ and conjugating the first identity gives $\bar{D}\tilde{q}^{\natural} = -2$ and 
 **Theorem.** The operators satisfy
 
 $$
-D\bar{D} = \bar{D}D = \partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2 = \Delta,
+D\bar{D} = \bar{D}D = \partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2 = \Delta,
 $$
 
 the Laplacian of $\mathbb{R}^4$.
 
-**Proof.** Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial_\mu\partial_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu e_\nu^{\natural}$ contributes. Since $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial_\mu^2$. The same computation applies to $\bar{D}D$.
+**Proof.** Expand $D\bar{D} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial^2/\partial q_\mu\partial q_\nu$. The mixed second derivatives commute, so only the symmetric part of $e_\mu e_\nu^{\natural}$ contributes. Since $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}$ (checking the four cases $\mu = \nu$, and $\mu = 0$ with $\nu = k$, and $\mu = k$, $\nu = l$ distinct imaginary), the sum reduces to $\sum_\mu \partial^2/\partial q_\mu^2$. The same computation applies to $\bar{D}D$.
 
 **Corollary.** If $f$ is left regular or right regular then $\Delta f = 0$: a regular function is harmonic, and each of its four components is a harmonic function of four real variables.
 
@@ -133,64 +133,64 @@ the Laplacian of $\mathbb{R}^4$.
 
 ### Ellipticity
 
-**Definition.** The **symbol** of $D$ at a covector $\xi = (\xi_0, \xi_1, \xi_2, \xi_3)$ is left multiplication by
+**Definition.** The **symbol** of $D$ at a covector $\xi = (\xi_t, \xi_x, \xi_y, \xi_z)$ is left multiplication by
 
 $$
-\sigma_D(\xi) = \xi_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3.
+\sigma_D(\xi) = \xi_t + \xi_x \vec e_x + \xi_y \vec e_y + \xi_z \vec e_z.
 $$
 
 The operator is **elliptic** if $\sigma_D(\xi)$ is invertible for every $\xi \neq 0$.
 
 **Theorem.** $D$ is elliptic, with $\sigma_D(\xi)^{-1} = \overline{\sigma_D(\xi)}/|\xi|^2$ for $\xi \neq 0$.
 
-**Proof.** The element $\xi_0 + \sum_k \xi_k e_k$ has norm $\sum_\mu \xi_\mu^2 = |\xi|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\xi)}/|\xi|^2$.
+**Proof.** The element $\xi_t + \sum_\mu \xi_\mu \vec e_\mu$ has norm $\sum_\mu \xi_\mu^2 = |\xi|^2 \neq 0$; since $\mathbb{H}$ is a division algebra it has the inverse $\overline{\sigma_D(\xi)}/|\xi|^2$.
 
 Ellipticity is the analytic reason the regular functions are smooth and the Cauchy theory has the shape it has; the elliptic regularity and its consequences are developed in *Regularity and the Cauchy–Riemann Operator*.
 
 ### Left and Right Regular Functions
 
-**Definition.** A $C^1$ function $f$ is **left regular** if $Df = 0$ and **right regular** if $fD = 0$, where the right action of the operator is $fD = \partial_0 f + (\partial_1 f)e_1 + (\partial_2 f)e_2 + (\partial_3 f)e_3$.
+**Definition.** A $C^1$ function $f$ is **left regular** if $Df = 0$ and **right regular** if $fD = 0$, where the right action of the operator is $fD = \partial/\partial Q_t f + (\partial/\partial Q_x f)\vec e_x + (\partial/\partial Q_y f)\vec e_y + (\partial/\partial Q_z f)\vec e_z$.
 
 The two classes are exchanged by quaternion conjugation. Write $\tilde{f} = \bar{f}$; multiplication by a constant is conjugated into multiplication by the conjugate constant, and conjugation reverses the order of factors, so
 
 $$
-(Df)^{\natural} = \sum_\mu (\partial_\mu \bar{f}) e_\mu^{\natural} = \bar{f}\,\bar{D}, \qquad (fD)^{\natural} = \sum_\mu e_\mu^{\natural} (\partial_\mu \bar{f}) = \bar{D}\,\bar{f},
+(Df)^{\natural} = \sum_\mu (\partial/\partial q_\mu \bar{f}) e_\mu^{\natural} = \bar{f}\,\bar{D}, \qquad (fD)^{\natural} = \sum_\mu e_\mu^{\natural} (\partial/\partial q_\mu \bar{f}) = \bar{D}\,\bar{f},
 $$
 
 so $f$ is left $D$-regular if and only if $\bar{f}$ is right $\bar{D}$-regular, and $f$ is right $D$-regular if and only if $\bar{f}$ is left $\bar{D}$-regular. For a non-commutative algebra the two classes are genuinely different: a constant function is both, but a regular function need not be regular on the other side.
 
-**Example.** The function $f(\tilde q) = e_1\tilde{q}^{\natural}$ is left regular but not right regular. On the one hand
+**Example.** The function $f(\tilde q) = \vec e_x\tilde{q}^{\natural}$ is left regular but not right regular. On the one hand
 
 $$
-Df = \sum_{\mu=0}^{3} e_\mu\, \partial_\mu(e_1\tilde{q}^{\natural}) = \sum_{\mu=0}^{3} e_\mu e_1e_\mu^{\natural} = e_1 + e_1 - e_1 - e_1 = 0,
+Df = \sum_{\mu\in\{t,x,y,z\}} e_\mu\, \partial/\partial q_\mu\,(\vec e_x\tilde{q}^{\natural}) = \sum_{\mu\in\{t,x,y,z\}} e_\mu \vec e_x e_\mu^{\natural} = \vec e_x + \vec e_x - \vec e_x - \vec e_x = 0,
 $$
 
-since $\partial_\mu\tilde{q}^{\natural} = e_\mu^{\natural}$; on the other hand
+since $\partial/\partial q_\mu\,\tilde{q}^{\natural} = e_\mu^{\natural}$; on the other hand
 
 $$
-fD = \sum_{\mu=0}^{3} \partial_\mu(e_1\tilde{q}^{\natural})\, e_\mu = \sum_{\mu=0}^{3} e_1e_\mu^{\natural} e_\mu = e_1\sum_{\mu=0}^{3}|e_\mu^{\natural}|^2 = 4e_1 \neq 0.
+fD = \sum_{\mu\in\{t,x,y,z\}} \partial/\partial q_\mu\,(\vec e_x\tilde{q}^{\natural})\, e_\mu = \sum_{\mu\in\{t,x,y,z\}} \vec e_x e_\mu^{\natural} e_\mu = \vec e_x\sum_{\mu\in\{t,x,y,z\}}|e_\mu^{\natural}|^2 = 4\vec e_x \neq 0.
 $$
 
-So $e_1\tilde{q}^{\natural}$ lies in the left-regular class and not in the right-regular class, and the two-sided functions are the intersection of the two.
+So $\vec e_x\tilde{q}^{\natural}$ lies in the left-regular class and not in the right-regular class, and the two-sided functions are the intersection of the two.
 
 **Theorem (closure under constant multiplication).** If $f$ is left regular and $b\in\mathbb{H}$ is constant, then $fb$ is left regular. If $f$ is right regular and $a\in\mathbb{H}$ is constant, then $af$ is right regular. In particular a real scalar multiple of a regular function is regular, in the same sense.
 
-**Proof.** Since $b$ is constant, the Leibniz rule gives $D(fb) = \sum_\mu e_\mu(\partial_\mu f)b = (Df)b$, so $Df = 0$ implies $D(fb) = 0$. Similarly $(af)D = \sum_\mu a(\partial_\mu f)e_\mu = a(fD)$.
+**Proof.** Since $b$ is constant, the Leibniz rule gives $D(fb) = \sum_\mu e_\mu(\partial/\partial q_\mu f)b = (Df)b$, so $Df = 0$ implies $D(fb) = 0$. Similarly $(af)D = \sum_\mu a(\partial/\partial q_\mu f)e_\mu = a(fD)$.
 
-**Remark.** The two closures are on opposite sides, and neither extends to a general constant on the other side: $D(af) = \sum_\mu e_\mu a\partial_\mu f$ equals $a(Df)$ only when $a$ commutes with each $e_\mu$, that is, only for a real scalar $a$. So the left-regular functions form a right module over $\mathbb{H}$ and a left module over the centre $\mathbb{R}$, and the right-regular functions the mirror image.
+**Remark.** The two closures are on opposite sides, and neither extends to a general constant on the other side: $D(af) = \sum_\mu e_\mu a\partial/\partial q_\mu f$ equals $a(Df)$ only when $a$ commutes with each $e_\mu$, that is, only for a real scalar $a$. So the left-regular functions form a right module over $\mathbb{H}$ and a left module over the centre $\mathbb{R}$, and the right-regular functions the mirror image.
 
 A product of two regular functions need not be regular, because the Leibniz rule for $D$ introduces the derivative of the first factor together with a reordering of the quaternion factors.
 
-**Example.** The left-regular function $e_1\tilde{q}^{\natural}$ has a square that is not left regular. Writing $e_1\tilde{q}^{\natural} = q_1 + q_0e_1 + q_3e_2 - q_2e_3$ and squaring,
+**Example.** The left-regular function $\vec e_x\tilde{q}^{\natural}$ has a square that is not left regular. Writing $\vec e_x\tilde{q}^{\natural} = q_x + q_t\vec e_x + q_z\vec e_y - q_y\vec e_z$ and squaring,
 
 $$
-(e_1\tilde{q}^{\natural})^2 = \bigl(q_1^2 - q_0^2 - q_2^2 - q_3^2\bigr) + 2q_1q_0e_1 + 2q_1q_3e_2 - 2q_1q_2e_3,
+(\vec e_x\tilde{q}^{\natural})^2 = \bigl(q_x^2 - q_t^2 - q_y^2 - q_z^2\bigr) + 2q_xq_t\vec e_x + 2q_xq_z\vec e_y - 2q_xq_y\vec e_z,
 $$
 
 and hence
 
 $$
-D\bigl((e_1\tilde{q}^{\natural})^2\bigr) = -4q_0,
+D\bigl((\vec e_x\tilde{q}^{\natural})^2\bigr) = -4q_t,
 $$
 
 which is not identically zero. So the left-regular functions are not closed under multiplication, and the closure theorem above is genuinely only about constant multiplication.
@@ -199,13 +199,13 @@ which is not identically zero. So the left-regular functions are not closed unde
 
 ### The Divergence Form of the Operators
 
-**Theorem.** With $\partial_\mu$ acting on the coordinate $q_\mu$,
+**Theorem.** With $\partial/\partial q_\mu$ acting on the coordinate $q_\mu$,
 
 $$
-Df = \sum_{\mu=0}^{3} \partial_\mu (e_\mu f), \qquad fD = \sum_{\mu=0}^{3} \partial_\mu (f e_\mu).
+Df = \sum_{\mu\in\{t,x,y,z\}} \partial/\partial q_\mu (e_\mu f), \qquad fD = \sum_{\mu\in\{t,x,y,z\}} \partial/\partial q_\mu (f e_\mu).
 $$
 
-**Proof.** For the left form, the Leibniz rule gives $\partial_\mu(e_\mu f) = e_\mu \partial_\mu f$ because $e_\mu$ is constant; summing over $\mu$ gives $Df$. The right form is identical with the constant factor placed after $f$.
+**Proof.** For the left form, the Leibniz rule gives $\partial/\partial q_\mu\,(e_\mu f) = e_\mu \partial/\partial q_\mu f$ because $e_\mu$ is constant; summing over $\mu$ gives $Df$. The right form is identical with the constant factor placed after $f$.
 
 Thus $D$ is the divergence of the quaternion-valued field with components $e_\mu f$, and the divergence theorem of $\mathbb{R}^4$ applies to it directly.
 
@@ -217,7 +217,7 @@ $$
 \int_\Omega Df \, dV = \int_{\partial\Omega} \nu f \, dS, \qquad \int_\Omega fD \, dV = \int_{\partial\Omega} f \nu \, dS.
 $$
 
-**Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial_\mu(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.
+**Proof.** For each real component, the ordinary divergence theorem in $\mathbb{R}^4$ applied to the field with components $e_\mu f$ gives $\int_\Omega \sum_\mu \partial/\partial q_\mu\,(e_\mu f)\,dV = \int_{\partial\Omega}\sum_\mu n_\mu e_\mu f\,dS$. The left side is $\int_\Omega Df\,dV$ by the divergence form, and the right side is $\int_{\partial\Omega}\nu f\,dS$ by the definition of the conormal element. The right-handed identity is the same computation for the field with components $f e_\mu$.
 
 **Corollary (conjugate divergence theorem).** Under the same hypotheses,
 
@@ -237,7 +237,7 @@ $$
 
 Equivalently, $\int_\Omega (D\phi) f \, dV = \int_{\partial\Omega}\nu\phi f\,dS - \int_\Omega \phi\,(Df)\,dV$.
 
-**Proof.** A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial_\mu(\phi f) = \sum_\mu e_\mu(\partial_\mu\phi) f + \sum_\mu e_\mu\phi\partial_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity.
+**Proof.** A real scalar $\phi$ commutes with every $e_\mu$, so the Leibniz rule for $D$ gives $D(\phi f) = \sum_\mu e_\mu\partial/\partial q_\mu\,(\phi f) = \sum_\mu e_\mu(\partial/\partial q_\mu\,\phi) f + \sum_\mu e_\mu\phi\partial/\partial q_\mu f = (D\phi)f + \phi\,Df$. The divergence theorem applied to $\phi f$ gives the displayed identity.
 
 **Corollary (scalar Green identity).** Let $u, v$ be real-valued $C^2$ functions on $\bar{\Omega}$. Then
 
@@ -277,10 +277,10 @@ It is homogeneous of degree $-3$, since $E(\lambda \tilde q) = \lambda^{-3}E(\ti
 
 **Theorem.** $E$ is both left regular and right regular on $\mathbb{H} \setminus \{0\}$.
 
-**Proof.** The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial_\mu(|\tilde q|^{-4})$, and $\partial_\mu(|\tilde q|^{-4}) = -4 q_\mu |\tilde q|^{-6}$ because $\partial_\mu|\tilde q|^2 = 2q_\mu$. Hence
+**Proof.** The partial derivatives of $E = \tilde{q}^{\natural}|\tilde q|^{-4}$ are $\partial/\partial q_\mu E = e_\mu^{\natural} |\tilde q|^{-4} + \tilde{q}^{\natural}\,\partial/\partial q_\mu\,(|\tilde q|^{-4})$, and $\partial/\partial q_\mu\,(|\tilde q|^{-4}) = -4 q_\mu |\tilde q|^{-6}$ because $\partial/\partial q_\mu\,|\tilde q|^2 = 2q_\mu$. Hence
 
 $$
-DE = \sum_{\mu=0}^{3} e_\mu \partial_\mu E = \Bigl(\sum_\mu e_\mu e_\mu^{\natural}\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu q_\mu e_\mu\Bigr)\tilde{q}^{\natural} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\tilde{q}^{\natural},
+DE = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial q_\mu E = \Bigl(\sum_\mu e_\mu e_\mu^{\natural}\Bigr)|\tilde q|^{-4} - 4|\tilde q|^{-6}\Bigl(\sum_\mu q_\mu e_\mu\Bigr)\tilde{q}^{\natural} = 4|\tilde q|^{-4} - 4|\tilde q|^{-6}\tilde q\tilde{q}^{\natural},
 $$
 
 using $\sum_\mu e_\mu e_\mu^{\natural} = 4$; since $\tilde q\tilde{q}^{\natural} = |\tilde q|^2$ the two terms cancel and $DE = 0$. The computation of $ED$ is identical with $e_\mu^{\natural} e_\mu$ in place of $e_\mu e_\mu^{\natural}$ and $\tilde{q}^{\natural}\tilde q$ in place of $\tilde q\tilde{q}^{\natural}$, and also gives $0$.
@@ -335,7 +335,7 @@ $$
 
 and the opposite order gives the same scalar because $(w - \tilde p)(w-\tilde p)^{\natural} = (w-\tilde p)^{\natural}(w - \tilde p) = |w - \tilde p|^2$.
 
-The collapse of the product to a scalar is special to the quaternion case, where $A\bar A = \bar A A$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.
+The collapse of the product to a scalar is special to the quaternion case, where $\tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q$ is central, and it is the reason the boundary integrals below can be read as weighted averages of $f$ over the boundary.
 
 ### The Cauchy–Pompeiu Representation
 
@@ -348,7 +348,7 @@ $$
 **Proof (sketch).** Fix $\tilde p$ and remove from $\Omega$ a closed ball $\overline{B(\tilde p,\varepsilon)}$ to obtain $\Omega_\varepsilon$. Apply the divergence theorem to the field with components $F_\mu(w) = E(w - \tilde p)\,e_\mu\,f(w)$, where $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4$ is the fundamental solution. Its divergence is
 
 $$
-\sum_{\mu=0}^{3} \partial_\mu F_\mu = \sum_\mu (\partial_\mu E)\, e_\mu f + E \sum_\mu e_\mu \partial_\mu f = (ED)f + E(Df) = E(Df),
+\sum_{\mu\in\{t,x,y,z\}} \partial/\partial q_\mu F_\mu = \sum_\mu (\partial/\partial q_\mu E)\, e_\mu f + E \sum_\mu e_\mu \partial/\partial q_\mu f = (ED)f + E(Df) = E(Df),
 $$
 
 since $E$ is right regular, and its boundary term is $\sum_\mu n_\mu F_\mu = E\nu f$. Hence
@@ -419,13 +419,13 @@ $$
 
 **Theorem (maximum modulus principle).** If $f$ is left regular on a domain $\Omega$ and $|f|$ attains a maximum at an interior point of $\Omega$, then $f$ is constant on $\Omega$.
 
-**Proof.** Suppose $|f|$ attains its maximum $M$ at $\tilde p \in \Omega$. The mean value property bounds $|f(\tilde p)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial_\mu f|^2$.
+**Proof.** Suppose $|f|$ attains its maximum $M$ at $\tilde p \in \Omega$. The mean value property bounds $|f(\tilde p)|$ by the average of $|f|$ over a small sphere, which is at most $M$; equality forces $|f| = M$ on that sphere. Extending along a connected chain of spheres, $|f| = M$ on $\Omega$, and a regular function of constant modulus is constant because $0 = \Delta|f|^2 = 2\sum_\mu|\partial/\partial q_\mu f|^2$.
 
 ### Liouville's Theorem
 
 **Theorem (Liouville).** Every bounded left regular function on all of $\mathbb{H}$ is constant.
 
-**Proof.** Let $|f| \leq M$ and fix $\tilde p$. The Cauchy integral formula on the sphere $\partial B(\tilde p, r)$ expresses $f(\tilde p)$ as $\frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\langle\tilde p,w\rangle_{\natural*}\,dS(w)$ with kernel $\langle\tilde q,w\rangle_{\natural*} = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial_k f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\partial_k \langle\tilde p,w\rangle_{\natural*}\,dS(w)$, and $\partial_k K = -\partial_{w_k}E(w-\tilde q)\big|_{\tilde q=\tilde p}\nu f$. On the sphere $|w - \tilde p| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial_k K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial_k f(\tilde p)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial_k f(\tilde p) = 0$ for every $k$; since $\tilde p$ was arbitrary, $f$ is constant.
+**Proof.** Let $|f| \leq M$ and fix $\tilde p$. The Cauchy integral formula on the sphere $\partial B(\tilde p, r)$ expresses $f(\tilde p)$ as $\frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\langle\tilde p,w\rangle_{\natural*}\,dS(w)$ with kernel $\langle\tilde q,w\rangle_{\natural*} = E(w-\tilde q)\nu(w)f(w)$. Differentiating under the integral sign, $\partial/\partial q_\mu f(\tilde p) = \frac{1}{2\pi^2}\int_{\partial B(\tilde p,r)}\partial/\partial q_\mu \langle\tilde p,w\rangle_{\natural*}\,dS(w)$, and $\partial/\partial q_\mu K = -\partial/\partial w_\mu\,E(w-\tilde q)\big|_{\tilde q=\tilde p}\nu f$. On the sphere $|w - \tilde p| = r$, the derivative of $E$ is bounded by a constant times $r^{-4}$, so $|\partial/\partial q_\mu K| \leq C M r^{-4}$; the surface area is $2\pi^2 r^3$, and therefore $|\partial/\partial q_\mu f(\tilde p)| \leq C M r^{-1}$. Letting $r \to \infty$ gives $\partial/\partial q_\mu f(\tilde p) = 0$ for every $\mu$; since $\tilde p$ was arbitrary, $f$ is constant.
 
 ### The Cauchy Estimates
 
@@ -443,31 +443,31 @@ $$
 
 **Theorem (identity theorem).** If two left regular functions on a connected domain $\Omega$ agree on a set with an accumulation point in $\Omega$, then they agree on all of $\Omega$.
 
-**Proof.** The difference $h = f - g$ is left regular and vanishes on a set $S$ with an accumulation point $p \in \Omega$. A left regular function is real-analytic: its four real components are harmonic, and the Cauchy integral formula represents $h$ near $p$ by a power series that converges to $h$ on a ball about $p$ contained in $\Omega$. A real-analytic function on a connected open set that vanishes on a set having an accumulation point in that set is identically zero. Hence $h = 0$ on a neighbourhood of $p$, and by connectedness on all of $\Omega$.
+**Proof.** The difference $h = f - g$ is left regular and vanishes on a set $S$ with an accumulation point $\tilde p \in \Omega$. A left regular function is real-analytic: its four real components are harmonic, and the Cauchy integral formula represents $h$ near $\tilde p$ by a power series that converges to $h$ on a ball about $\tilde p$ contained in $\Omega$. A real-analytic function on a connected open set that vanishes on a set having an accumulation point in that set is identically zero. Hence $h = 0$ on a neighbourhood of $\tilde p$, and by connectedness on all of $\Omega$.
 
 ## Relation to the General Hypercomplex Integration
 
-The theory above is the quaternionic instance of the general integration theory of an elliptic hypercomplex system $(A, D)$ treated in *Hypercomplex Integration*. In that general setting $A$ is a finite-dimensional unital associative real algebra with basis $e_0 = 1, \dots, e_{m-1}$, the operator is $D = \partial_0 + \sum_{k\geq1} B_k\partial_k$ with $B_jB_k + B_kB_j = -2\delta_{jk}$, and $E$ denotes a fundamental solution of $D$, so that $E(\tilde q-\tilde p)$ is a Cauchy kernel. The conormal element $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ of *Regularity and the Cauchy–Riemann Operator* is the general form of the quaternion $\nu$.
+The theory above is the quaternionic instance of the general integration theory of an elliptic hypercomplex system $(A, D)$ treated in *Hypercomplex Integration*. In that general setting $A$ is a finite-dimensional unital associative real algebra with basis $e_t = 1, \dots, e_{m-1}$, the operator is $D = \partial/\partial Q_t + \sum_{k\geq1} B_k\partial/\partial Q_k$ with $B_jB_k + B_kB_j = -2\delta_{jk}$, and $E$ denotes a fundamental solution of $D$, so that $E(\tilde q-\tilde p)$ is a Cauchy kernel. The conormal element $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ of *Regularity and the Cauchy–Riemann Operator* is the general form of the quaternion $\nu$.
 
 The dictionary for the quaternion case is:
 
 | general system | quaternion case |
 |---|---|
 | algebra $A$, dimension $m$ | $\mathbb{H}$, dimension $m = 4$ |
-| coefficients $B_k$ | $e_k$, $k = 1, 2, 3$ |
+| coefficients $B_k$ | $\vec e_\mu$, $\mu = 1, 2, 3$ |
 | conormal element $\nu_B$ | $\nu = \sum_\mu n_\mu e_\mu$ |
 | fundamental solution $E$ | $\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, with $DE = ED = 2\pi^2\delta_0$ |
 | surface area $\omega_m$ | $\omega_4 = 2\pi^2$ |
 | Cauchy–Goursat | $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$ |
 | Cauchy integral formula | $f(\tilde q) = \frac{1}{2\pi^2}\int_{\partial B}\frac{(w-\tilde q)^{\natural}}{\lvert w-\tilde q\rvert^4}\nu(w)f(w)\,dS$ |
 
-In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $A\bar A$, which makes the kernel–normal product scalar.
+In the general theory the boundary of a domain is a hypersurface and the Cauchy–Goursat theorem is a hypersurface statement; the quaternion case is the case of dimension four. The two properties that the general theory isolates and that are special to the quaternion algebra are the multiplicativity of the quaternion norm, which makes $\mathbb{H}$ a division algebra and makes the symbol invertible, and the centrality of $\tilde q\tilde q^{\natural}$, which makes the kernel–normal product scalar.
 
 ## Summary
 
 The integral of a quaternion-valued function is defined componentwise: the domain integral over a domain in $\mathbb{H}$ is the Lebesgue integral of the four components, the path integral along a curve has a left and a right form because of non-commutativity, and the surface integral over a hypersurface is taken against the conormal element $\nu = \sum_\mu n_\mu e_\mu$. The integral is linear, additive, and obeys the fundamental estimate.
 
-Because the coefficients of the Cauchy–Riemann operator $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ are constant, $Df = \sum_\mu \partial_\mu(e_\mu f)$ is a divergence, and the divergence theorem reads $\int_\Omega Df\,dV = \int_{\partial\Omega}\nu f\,dS$, with the conjugate identity for $\bar{D}$. The Cauchy–Goursat theorem, that $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$, is an immediate consequence, and it is a statement about a three-dimensional boundary, not about a curve. Left regularity and right regularity are distinct and are exchanged by quaternion conjugation; the operators satisfy $D\bar{D} = \bar{D}D = \Delta$ and $D$ is elliptic.
+Because the coefficients of the Cauchy–Riemann operator $D = \partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ are constant, $Df = \sum_\mu \partial/\partial q_\mu\,(e_\mu f)$ is a divergence, and the divergence theorem reads $\int_\Omega Df\,dV = \int_{\partial\Omega}\nu f\,dS$, with the conjugate identity for $\bar{D}$. The Cauchy–Goursat theorem, that $\int_{\partial\Omega}\nu f\,dS = 0$ for left regular $f$, is an immediate consequence, and it is a statement about a three-dimensional boundary, not about a curve. Left regularity and right regularity are distinct and are exchanged by quaternion conjugation; the operators satisfy $D\bar{D} = \bar{D}D = \Delta$ and $D$ is elliptic.
 
 The fundamental solution is $E(\tilde q) = \tilde{q}^{\natural}/|\tilde q|^4 = \tilde q^{-1}/|\tilde q|^2$, which is both left and right regular away from the origin and satisfies $DE = ED = 2\pi^2\delta_0$, with $2\pi^2$ the surface area of $S^3$. The kernel–normal product $E(w-\tilde p)\nu(w)$ is the scalar $1/|w-\tilde p|^3$, so that the Cauchy integral formula
 
@@ -482,21 +482,21 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
-| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_t$, vector part $\vec q$ |
+| $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
-| $\partial_\mu = \partial/\partial q_\mu$ | Coordinate derivatives, $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ |
-| $D = \partial_0 + e_1\partial_1 + e_2\partial_2 + e_3\partial_3$ | Cauchy–Riemann operator |
-| $\bar{D} = \partial_0 - e_1\partial_1 - e_2\partial_2 - e_3\partial_3$ | Conjugate operator |
+| $\partial/\partial q_\mu$ | Coordinate derivatives, $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ |
+| $D = \partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ | Cauchy–Riemann operator |
+| $\bar{D} = \partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$ | Conjugate operator |
 | $D\bar{D} = \bar{D}D = \Delta$ | Factorisation of the Laplacian |
-| $\sigma_D(\xi) = \xi_0 + \xi_1e_1 + \xi_2e_2 + \xi_3e_3$ | Symbol of $D$ at the covector $\xi$; $D$ is elliptic |
+| $\sigma_D(\xi) = \xi_t + \xi_x\vec e_x + \xi_y\vec e_y + \xi_z\vec e_z$ | Symbol of $D$ at the covector $\xi$; $D$ is elliptic |
 | $Df = 0$ | Left regularity |
-| $fD = \partial_0 f + (\partial_1 f)e_1 + (\partial_2 f)e_2 + (\partial_3 f)e_3 = 0$ | Right regularity |
+| $fD = \partial/\partial Q_t f + (\partial/\partial Q_x f)\vec e_x + (\partial/\partial Q_y f)\vec e_y + (\partial/\partial Q_z f)\vec e_z = 0$ | Right regularity |
 | $\int_\Omega f\,dV$ | Domain integral, componentwise Lebesgue |
 | $\operatorname{vol}(\Omega)$ | Volume of the domain $\Omega$ |
 | $\int_\gamma f\,dq$, $\int_\gamma dq\,f$ | Left and right path integrals |
-| $\nu = \sum_{\mu=0}^{3} n_\mu e_\mu$ | Conormal element, $\lvert \nu \rvert = 1$ |
+| $\nu = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ | Conormal element, $\lvert \nu \rvert = 1$ |
 | $\int_{\partial\Omega} \nu f\,dS$ | Conormal surface integral |
 | $E(\tilde q) = \tilde{q}^{\natural}/\lvert \tilde q\rvert^4 = \tilde q^{-1}/\lvert \tilde q\rvert^2$ | Fundamental solution and Cauchy kernel |
 | $\bar{E}(\tilde q) = \tilde q/\lvert \tilde q\rvert^4$ | Fundamental solution of $\bar{D}$ |

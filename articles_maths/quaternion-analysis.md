@@ -7,7 +7,7 @@ This article introduces quaternion analysis as the study of differentiable funct
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers.
 
-Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
+Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
 ## The Quaternion Space
 
@@ -16,44 +16,44 @@ Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its
 A quaternion is written
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R}.
 $$
 
-The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q \in \mathbb{R}^3$.
+The real number $q_t$ is the **scalar part**, and the triple $(q_x, q_y, q_z)$ is the **vector part**. We write $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \in \mathbb{R}^3$.
 
 The **modulus** of $\tilde q$ is
 
 $$
-|\tilde q| = \sqrt{\tilde q \tilde{q}^{\natural}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
+|\tilde q| = \sqrt{\tilde q \tilde{q}^{\natural}} = \sqrt{q_t^2 + q_x^2 + q_y^2 + q_z^2},
 $$
 
-where $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
+where $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:
 
 $$
-|p\tilde q| = |p| |\tilde q|.
+|\tilde q_1\tilde q_2| = |\tilde q_1| |\tilde q_2|.
 $$
 
-The **distance** between two quaternions $p$ and $\tilde q$ is
+The **distance** between two quaternions $\tilde q_1$ and $\tilde q_2$ is
 
 $$
-d(p, \tilde q) = |p - \tilde q|.
+d(\tilde q_1, \tilde q_2) = |\tilde q_1 - \tilde q_2|.
 $$
 
 This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology of $\mathbb{H}$ is the ordinary Euclidean topology of four-dimensional space.
 
 ### Balls and Neighborhoods
 
-The **open ball** of radius $r > 0$ centred at $q_0$ is
+The **open ball** of radius $r > 0$ centred at $\tilde q_1$ is
 
 $$
-B(q_0, r) = \{\tilde q \in \mathbb{H} : |\tilde q - q_0| < r\}.
+B(\tilde q_1, r) = \{\tilde q \in \mathbb{H} : |\tilde q - \tilde q_1| < r\}.
 $$
 
 It is an open ball in the quaternion space, exactly as in the real case. The topology is the ordinary Euclidean topology.
 
 ### Open and Closed Sets
 
-A set $U \subseteq \mathbb{H}$ is **open** if for every $q_0 \in U$ there exists $r > 0$ with $B(q_0, r) \subseteq U$.
+A set $\Omega \subseteq \mathbb{H}$ is **open** if for every $\tilde q_1 \in \Omega$ there exists $r > 0$ with $B(\tilde q_1, r) \subseteq \Omega$.
 
 A set $F \subseteq \mathbb{H}$ is **closed** if its complement $\mathbb{H} \setminus F$ is open.
 
@@ -61,7 +61,7 @@ Arbitrary unions of open sets are open. Finite intersections of open sets are op
 
 ### Connectedness and Domains
 
-A set $U \subseteq \mathbb{H}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{H}$, connectedness and path-connectedness are equivalent.
+A set $\Omega \subseteq \mathbb{H}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{H}$, connectedness and path-connectedness are equivalent.
 
 A **domain** is a non-empty open connected subset of $\mathbb{H}$. Domains are the natural setting for quaternion analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
@@ -87,7 +87,7 @@ We write $\tilde q_n \to L$ or $\lim_{n \to \infty} \tilde q_n = L$.
 
 **Uniqueness.** If $\tilde q_n \to L$ and $\tilde q_n \to L'$, then $L = L'$.
 
-**Componentwise convergence.** Write $\tilde q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then
+**Componentwise convergence.** Write $\tilde q_n = q_{n,0} + q_{n,1} \vec e_x + q_{n,2} \vec e_y + q_{n,3} \vec e_z$ and $L = L_0 + L_1 \vec e_x + L_2 \vec e_y + L_3 \vec e_z$. Then
 
 $$
 \tilde q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
@@ -117,36 +117,36 @@ $$
 
 ### Limits of Functions
 
-Let $f : D \to \mathbb{H}$ with $D \subseteq \mathbb{H}$, and let $q_0$ be a limit point of $D$. We say
+Let $f : D \to \mathbb{H}$ with $D \subseteq \mathbb{H}$, and let $\tilde q_1$ be a limit point of $D$. We say
 
 $$
-\lim_{\tilde q \to q_0} f(\tilde q) = L
+\lim_{\tilde q \to \tilde q_1} f(\tilde q) = L
 $$
 
 if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-\tilde q \in D, \; 0 < |\tilde q - q_0| < \delta \implies |f(\tilde q) - L| < \epsilon.
+\tilde q \in D, \; 0 < |\tilde q - \tilde q_1| < \delta \implies |f(\tilde q) - L| < \epsilon.
 $$
 
 **Uniqueness.** If the limit exists, it is unique.
 
-**Sequential criterion.** $\lim_{\tilde q \to q_0} f(\tilde q) = L$ iff for every sequence $(\tilde q_n)$ in $D \setminus \{q_0\}$ with $\tilde q_n \to q_0$, we have $f(\tilde q_n) \to L$.
+**Sequential criterion.** $\lim_{\tilde q \to \tilde q_1} f(\tilde q) = L$ iff for every sequence $(\tilde q_n)$ in $D \setminus \{\tilde q_1\}$ with $\tilde q_n \to \tilde q_1$, we have $f(\tilde q_n) \to L$.
 
 **Algebra of limits.** Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.
 
 ### Continuity
 
-A function $f : D \to \mathbb{H}$ is **continuous at** $q_0 \in D$ if
+A function $f : D \to \mathbb{H}$ is **continuous at** $\tilde q_1 \in D$ if
 
 $$
-\lim_{\tilde q \to q_0} f(\tilde q) = f(q_0).
+\lim_{\tilde q \to \tilde q_1} f(\tilde q) = f(\tilde q_1).
 $$
 
 Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-\tilde q \in D, \; |\tilde q - q_0| < \delta \implies |f(\tilde q) - f(q_0)| < \epsilon.
+\tilde q \in D, \; |\tilde q - \tilde q_1| < \delta \implies |f(\tilde q) - f(\tilde q_1)| < \epsilon.
 $$
 
 $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
@@ -155,14 +155,14 @@ $f$ is **continuous on** $D$ if it is continuous at every point of $D$.
 
 **Theorem.** $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.
 
-**Componentwise continuity.** Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) e_1 + f_2(\tilde q) e_2 + f_3(\tilde q) e_3$. Then $f$ is continuous at $q_0$ iff each $f_\mu$ is continuous at $q_0$. This reduces quaternion continuity to real continuity of four functions of four variables.
+**Componentwise continuity.** Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) \vec e_x + f_2(\tilde q) \vec e_y + f_3(\tilde q) \vec e_z$. Then $f$ is continuous at $\tilde q_1$ iff each $f_\mu$ is continuous at $\tilde q_1$. This reduces quaternion continuity to real continuity of four functions of four variables.
 
 ### Uniform Continuity
 
 A function $f : D \to \mathbb{H}$ is **uniformly continuous** if for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
-p, \tilde q \in D, \; |p - \tilde q| < \delta \implies |f(p) - f(\tilde q)| < \epsilon.
+\tilde q_1, \tilde q_2 \in D, \; |\tilde q_1 - \tilde q_2| < \delta \implies |f(\tilde q_1) - f(\tilde q_2)| < \epsilon.
 $$
 
 **Theorem.** A continuous function on a compact set is uniformly continuous.
@@ -171,13 +171,13 @@ $$
 
 ### The Derivative
 
-Let $f : U \to \mathbb{H}$ with $U$ open, and let $q_0 \in U$. The **derivative** of $f$ at $q_0$ is
+Let $f : \Omega \to \mathbb{H}$ with $\Omega$ open, and let $\tilde q_1 \in \Omega$. The **derivative** of $f$ at $\tilde q_1$ is
 
 $$
-f'(q_0) = \lim_{h \to 0} \frac{f(q_0 + h) - f(q_0)}{h},
+f'(\tilde q_1) = \lim_{h \to 0} \frac{f(\tilde q_1 + h) - f(\tilde q_1)}{h},
 $$
 
-provided the limit exists. If it does, $f$ is **quaternion differentiable** at $q_0$, or **holomorphic** at $q_0$ in the quaternion sense.
+provided the limit exists. If it does, $f$ is **quaternion differentiable** at $\tilde q_1$, or **holomorphic** at $\tilde q_1$ in the quaternion sense.
 
 The limit is taken in the quaternion space, so $h$ can approach $0$ from any direction. This is a much stronger condition than real differentiability: the difference quotient must tend to the same limit along every path. The condition is so strong that it forces the function to be affine.
 
@@ -185,24 +185,24 @@ The limit is taken in the quaternion space, so $h$ can approach $0$ from any dir
 
 ### The Cauchy–Riemann Equations
 
-Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) e_1 + v_2(\tilde q) e_2 + v_3(\tilde q) e_3$, where $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $u, v_k : U \to \mathbb{R}$.
+Write $f(\tilde q) = u(\tilde q) + v_1(\tilde q) \vec e_x + v_2(\tilde q) \vec e_y + v_3(\tilde q) \vec e_z$, where $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ and $u, v_k : \Omega \to \mathbb{R}$.
 
-**Theorem.** $f$ is quaternion differentiable at $q_0$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $q_0$ and satisfy the **quaternion Cauchy–Riemann equations**
-
-$$
-\frac{\partial u}{\partial q_0} = \frac{\partial v_1}{\partial q_1} = \frac{\partial v_2}{\partial q_2} = \frac{\partial v_3}{\partial q_3},
-$$
+**Theorem.** $f$ is quaternion differentiable at $\tilde q_1$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $\tilde q_1$ and satisfy the **quaternion Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_0}, \qquad k = 1, 2, 3,
+\frac{\partial u}{\partial q_t} = \frac{\partial v_1}{\partial q_x} = \frac{\partial v_2}{\partial q_y} = \frac{\partial v_3}{\partial q_z},
+$$
+
+$$
+\frac{\partial u}{\partial q_k} = -\frac{\partial v_k}{\partial q_t}, \qquad k = 1, 2, 3,
 $$
 
 and the remaining equations obtained by cyclically permuting the indices $1, 2, 3$.
 
-**Proof.** Write $h = h_0 + h_1 e_1 + h_2 e_2 + h_3 e_3$. The difference quotient is
+**Proof.** Write $h = h_0 + h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z$. The difference quotient is
 
 $$
-\frac{f(q_0 + h) - f(q_0)}{h} = \frac{\sum_\mu h_\mu \partial_\mu f}{h} + o(1).
+\frac{f(q_t + h) - f(q_t)}{h} = \frac{\sum_\mu h_\mu \partial/\partial q_\mu f}{h} + o(1).
 $$
 
 For the limit to exist independently of the direction of $h$, the numerator must be a left multiple of $h$, and the multiplication must be consistent with the quaternion relations. This forces the equations.
@@ -233,18 +233,18 @@ So the naive notion of quaternion differentiability is too restrictive to be use
 
 ### Definition
 
-A function $f : U \to \mathbb{H}$ is **monogenic** (or **regular**) if it satisfies the **Cauchy–Riemann–Fueter equation**
+A function $f : \Omega \to \mathbb{H}$ is **monogenic** (or **regular**) if it satisfies the **Cauchy–Riemann–Fueter equation**
 
 $$
-\frac{\partial f}{\partial q_0} + e_1 \frac{\partial f}{\partial q_1} + e_2 \frac{\partial f}{\partial q_2} + e_3 \frac{\partial f}{\partial q_3} = 0.
+\frac{\partial f}{\partial q_t} + \vec e_x \frac{\partial f}{\partial q_x} + \vec e_y \frac{\partial f}{\partial q_y} + \vec e_z \frac{\partial f}{\partial q_z} = 0.
 $$
 
-Equivalently, if $D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$ is the **Cauchy–Riemann operator**, then $f$ is monogenic iff $D f = 0$.
+Equivalently, if $D = \partial/\partial q_t + \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z$ is the **Cauchy–Riemann operator**, then $f$ is monogenic iff $D f = 0$.
 
-The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial_{q_0} - e_1 \partial_{q_1} - e_2 \partial_{q_2} - e_3 \partial_{q_3}$ satisfy
+The Cauchy–Riemann operator and its conjugate $\bar{D} = \partial/\partial q_t - \vec e_x \partial/\partial q_x - \vec e_y \partial/\partial q_y - \vec e_z \partial/\partial q_z$ satisfy
 
 $$
-D \bar{D} = \bar{D} D = \partial_{q_0}^2 + \partial_{q_1}^2 + \partial_{q_2}^2 + \partial_{q_3}^2 = \Delta,
+D \bar{D} = \bar{D} D = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2 = \Delta,
 $$
 
 where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:
@@ -259,10 +259,10 @@ Monogenic functions satisfy:
 
 **Closure under left and right multiplication by constants.** If $f$ is monogenic and $a, b \in \mathbb{H}$, then $a f$ and $f b$ are monogenic.
 
-**The Cauchy integral formula.** If $f$ is monogenic on a domain containing a ball $B(q_0, r)$, then
+**The Cauchy integral formula.** If $f$ is monogenic on a domain containing a ball $B(\tilde q_1, r)$, then
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde q_1, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
 $$
 
 where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere. This is the quaternion analogue of the Cauchy integral formula.
@@ -313,7 +313,7 @@ $$
 
 ### The Cauchy–Goursat Theorem
 
-**Theorem (Cauchy–Goursat, quaternion version).** If $f$ is monogenic on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
+**Theorem (Cauchy–Goursat, quaternion version).** If $f$ is monogenic on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then
 
 $$
 \oint_\gamma f(\tilde q) \, dq = 0.
@@ -324,17 +324,17 @@ $$
 **Corollary.** On a simply connected domain, the integral of a monogenic function is path-independent. The function
 
 $$
-F(\tilde q) = \int_{q_0}^q f(w) \, dw
+F(\tilde q) = \int_{\tilde q_1}^{\tilde q} f(w) \, dw
 $$
 
 is well-defined, monogenic, and satisfies $D F = f$ in the appropriate sense.
 
 ### The Cauchy Integral Formula
 
-**Theorem (Cauchy Integral Formula, quaternion version).** Let $f$ be monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$. Then for every $\tilde q$ in the open ball,
+**Theorem (Cauchy Integral Formula, quaternion version).** Let $f$ be monogenic on a domain containing the closed ball $\overline{B}(\tilde q_1, r)$. Then for every $\tilde q$ in the open ball,
 
 $$
-f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
+f(\tilde q) = \frac{1}{2\pi^2} \int_{\partial B(\tilde q_1, r)} \frac{(w - \tilde q)^{-1}}{|w - \tilde q|^2} n(w) f(w) \, dS(w),
 $$
 
 where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere.
@@ -345,22 +345,22 @@ where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the s
 
 **Theorem (Liouville).** Every bounded monogenic function on all of $\mathbb{H}$ is constant.
 
-**Proof.** Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant.
+**Proof.** Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $\tilde q_1$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant.
 
 ### Morera's Theorem
 
-**Theorem (Morera).** If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is monogenic on $U$.
+**Theorem (Morera).** If $f$ is continuous on a domain $\Omega$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $\Omega$, then $f$ is monogenic on $\Omega$.
 
-**Proof.** Define $F(\tilde q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic.
+**Proof.** Define $F(\tilde q) = \int_{\tilde q_1}^{\tilde q} f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic.
 
 ## Power Series
 
 ### Definition
 
-A **power series** centred at $q_0$ is
+A **power series** centred at $\tilde q_1$ is
 
 $$
-\sum_{n=0}^\infty c_n (\tilde q - q_0)^n, \qquad c_n \in \mathbb{H}.
+\sum_{n=0}^\infty c_n (\tilde q - \tilde q_1)^n, \qquad c_n \in \mathbb{H}.
 $$
 
 The **radius of convergence** is
@@ -371,72 +371,72 @@ $$
 
 with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
 
-**Theorem.** The series converges absolutely for $|\tilde q - q_0| < R$ and diverges for $|\tilde q - q_0| > R$. On $|\tilde q - q_0| < R$ it converges uniformly on compact subsets.
+**Theorem.** The series converges absolutely for $|\tilde q - \tilde q_1| < R$ and diverges for $|\tilde q - \tilde q_1| > R$. On $|\tilde q - \tilde q_1| < R$ it converges uniformly on compact subsets.
 
-**Theorem.** A power series is monogenic on $|\tilde q - q_0| < R$, and its derivative is obtained by term-by-term differentiation:
+**Theorem.** A power series is monogenic on $|\tilde q - \tilde q_1| < R$, and its derivative is obtained by term-by-term differentiation:
 
 $$
-D \sum_{n=0}^\infty c_n (\tilde q - q_0)^n = \sum_{n=1}^\infty n c_n (\tilde q - q_0)^{n-1}.
+D \sum_{n=0}^\infty c_n (\tilde q - \tilde q_1)^n = \sum_{n=1}^\infty n c_n (\tilde q - \tilde q_1)^{n-1}.
 $$
 
 The differentiated series has the same radius of convergence.
 
 ### Taylor Series
 
-**Theorem (Taylor, quaternion version).** If $f$ is monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$, then $f$ has a power series expansion
+**Theorem (Taylor, quaternion version).** If $f$ is monogenic on a domain containing the closed ball $\overline{B}(\tilde q_1, r)$, then $f$ has a power series expansion
 
 $$
-f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(q_0)}{n!} (\tilde q - q_0)^n
+f(\tilde q) = \sum_{n=0}^\infty \frac{f^{(n)}(\tilde q_1)}{n!} (\tilde q - \tilde q_1)^n
 $$
 
-valid for $|\tilde q - q_0| < r$.
+valid for $|\tilde q - \tilde q_1| < r$.
 
 **Corollary.** A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.
 
-**Corollary (identity theorem).** If two monogenic functions on a domain $U$ agree on a set with an accumulation point in $U$, they agree on all of $U$.
+**Corollary (identity theorem).** If two monogenic functions on a domain $\Omega$ agree on a set with an accumulation point in $\Omega$, they agree on all of $\Omega$.
 
 ### Laurent Series
 
-**Theorem (Laurent).** If $f$ is monogenic on an annulus $r < |\tilde q - q_0| < R$, then $f$ has a unique expansion
+**Theorem (Laurent).** If $f$ is monogenic on an annulus $r < |\tilde q - \tilde q_1| < R$, then $f$ has a unique expansion
 
 $$
-f(\tilde q) = \sum_{n=-\infty}^\infty c_n (\tilde q - q_0)^n
+f(\tilde q) = \sum_{n=-\infty}^\infty c_n (\tilde q - \tilde q_1)^n
 $$
 
 valid on the annulus, with
 
 $$
-c_n = \frac{1}{2\pi^2} \int_{\partial B(q_0, \rho)} \frac{(w - q_0)^{-n-1}}{|w - q_0|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
+c_n = \frac{1}{2\pi^2} \int_{\partial B(\tilde q_1, \rho)} \frac{(w - \tilde q_1)^{-n-1}}{|w - \tilde q_1|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
 $$
 
 ## Singularities
 
 ### Classification
 
-Let $f$ be monogenic on a punctured ball $0 < |\tilde q - q_0| < R$.
+Let $f$ be monogenic on a punctured ball $0 < |\tilde q - \tilde q_1| < R$.
 
-**Removable singularity.** $q_0$ is removable if $f$ extends to a monogenic function on $|\tilde q - q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
+**Removable singularity.** $\tilde q_1$ is removable if $f$ extends to a monogenic function on $|\tilde q - \tilde q_1| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.
 
-**Pole.** $q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.
+**Pole.** $\tilde q_1$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.
 
-**Essential singularity.** $q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.
+**Essential singularity.** $\tilde q_1$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.
 
-**Theorem (Riemann).** $q_0$ is removable iff $f$ is bounded near $q_0$.
+**Theorem (Riemann).** $\tilde q_1$ is removable iff $f$ is bounded near $\tilde q_1$.
 
-**Theorem (Casorati–Weierstrass).** If $q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $q_0$.
+**Theorem (Casorati–Weierstrass).** If $\tilde q_1$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $\tilde q_1$.
 
 ### Residues
 
-The **residue** of $f$ at an isolated singularity $q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:
+The **residue** of $f$ at an isolated singularity $\tilde q_1$ is the coefficient $c_{-1}$ in the Laurent expansion:
 
 $$
-\operatorname{Res}(f, q_0) = c_{-1}.
+\operatorname{Res}(f, \tilde q_1) = c_{-1}.
 $$
 
-**Theorem (Residue Theorem).** Let $f$ be monogenic on a simply connected domain except for isolated singularities $q_1, \dots, q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $q_k$ and winds once around each. Then
+**Theorem (Residue Theorem).** Let $f$ be monogenic on a simply connected domain except for isolated singularities $\tilde q_1, \dots, \tilde q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $\tilde q_k$ and winds once around each. Then
 
 $$
-\oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, q_k).
+\oint_\gamma f(\tilde q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, \tilde q_k).
 $$
 
 The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.
@@ -448,20 +448,20 @@ The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, an
 The **Cauchy–Riemann operator** is
 
 $$
-D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}.
+D = \partial/\partial q_t + \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z.
 $$
 
 It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by
 
 $$
-D f = \partial_{q_0} f + e_1 \partial_{q_1} f + e_2 \partial_{q_2} f + e_3 \partial_{q_3} f.
+D f = \partial/\partial q_t f + \vec e_x \partial/\partial q_x f + \vec e_y \partial/\partial q_y f + \vec e_z \partial/\partial q_z f.
 $$
 
 ### Properties
 
 **Factorization of the Laplacian.** $\bar{D} D = \Delta$.
 
-**Ellipticity.** The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.
+**Ellipticity.** The symbol of $D$ is $\sigma_D(\xi) = \xi_t + \vec e_x \xi_x + \vec e_y \xi_y + \vec e_z \xi_z$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.
 
 **Fundamental solution.** The fundamental solution of $D$ is
 
@@ -476,7 +476,7 @@ which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.
 In complex analysis, the Cauchy–Riemann operator is
 
 $$
-\bar{\partial} = \frac{1}{2}(\partial_a + i \partial_{a'}),
+\bar{\partial} = \frac{1}{2}(\partial/\partial a + i \partial/\partial a'),
 $$
 
 and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Cauchy–Riemann operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Cauchy–Riemann operator is the correct generalization of the Cauchy–Riemann operator of one complex variable to higher dimensions.
@@ -527,9 +527,9 @@ The complex case is the case $n = 2$ of the general theory, and the quaternion c
 
 ## Summary
 
-Quaternion analysis is the study of differentiable functions of a quaternion variable $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The space carries its quaternion norm, and with it the convergent sequences and the continuous functions on which the subject is built.
+Quaternion analysis is the study of differentiable functions of a quaternion variable $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The space carries its quaternion norm, and with it the convergent sequences and the continuous functions on which the subject is built.
 
-The naive derivative $f'(q_0) = \lim_{h \to 0} (f(q_0 + h) - f(q_0))/h$ exists only for very special functions, because $\mathbb{H}$ is non-commutative and the limit must be independent of the direction of $h$. The correct notion replaces it: a function is monogenic, or regular, when it satisfies the Cauchy–Riemann–Fueter equation, and monogenic functions are the analogues of the holomorphic functions of one complex variable.
+The naive derivative $f'(\tilde q_1) = \lim_{h \to 0} (f(\tilde q_1 + h) - f(\tilde q_1))/h$ exists only for very special functions, because $\mathbb{H}$ is non-commutative and the limit must be independent of the direction of $h$. The correct notion replaces it: a function is monogenic, or regular, when it satisfies the Cauchy–Riemann–Fueter equation, and monogenic functions are the analogues of the holomorphic functions of one complex variable.
 
 The article develops what that notion supports: contour integrals along paths, power series and their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The Cauchy–Riemann operator is studied in its own right, and the applications record the harmonicity of monogenic functions and the representation given by the Cauchy integral formula. The final section compares the subject with complex analysis and traces each difference to the non-commutativity of $\mathbb{H}$ and to the higher dimension of the space.
 
@@ -538,18 +538,18 @@ The article develops what that notion supports: contour integrals along paths, p
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
-| $q_0$ | Scalar part |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | General quaternion |
+| $q_t$ | Scalar part |
 | $\vec q$ | Vector part |
-| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Quaternion conjugate |
 | $\lvert \tilde q\rvert = \sqrt{\tilde q \tilde{q}^{\natural}}$ | Modulus |
-| $B(q_0, r)$ | Open ball of radius $r$ |
-| $D = \partial_{q_0} + e_1 \partial_{q_1} + e_2 \partial_{q_2} + e_3 \partial_{q_3}$ | Cauchy–Riemann operator |
+| $B(\tilde q_1, r)$ | Open ball of radius $r$ |
+| $D = \partial/\partial q_t + \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z$ | Cauchy–Riemann operator |
 | $D f = 0$ | Monogenic equation |
 | $\Delta = \bar{D} D$ | Laplacian |
 | $\int_\gamma f(\tilde q) \, dq$ | Contour integral |
-| $\operatorname{Res}(f, q_0)$ | Residue |
+| $\operatorname{Res}(f, \tilde q_1)$ | Residue |
 | $2\pi^2$ | Surface area of the unit sphere in $\mathbb{R}^4$ |
 
 ## Further Reading

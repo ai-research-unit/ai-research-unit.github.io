@@ -125,7 +125,7 @@ In particular an orthogonal family is topologically free.
 
 ### Compactoidness
 
-**Definition.** A subset $X$ of a normed space $E$ is **compactoid** if for every neighbourhood $U$ of $0$ in $E$ there is a finite set $F \subseteq E$ with $X \subseteq U + \mathrm{ac}(F)$, where $\mathrm{ac}(F)$ is the set of finite linear combinations $\sum \lambda_i x_i$ with $\lvert \lambda_i \rvert \leq 1$. Equivalently, $X$ is compactoid when it can be approximated in every neighbourhood of $0$ by sets lying in a finite-dimensional subspace of controlled norm.
+**Definition.** A subset $X$ of a normed space $E$ is **compactoid** if for every neighbourhood $\Omega$ of $0$ in $E$ there is a finite set $F \subseteq E$ with $X \subseteq \Omega + \mathrm{ac}(F)$, where $\mathrm{ac}(F)$ is the set of finite linear combinations $\sum \lambda_i x_i$ with $\lvert \lambda_i \rvert \leq 1$. Equivalently, $X$ is compactoid when it can be approximated in every neighbourhood of $0$ by sets lying in a finite-dimensional subspace of controlled norm.
 
 **Proposition.** Every compactoid set is bounded; every subset of a compactoid set is compactoid; the closure and the absolutely convex hull of a compactoid set are compactoid; a compact set is compactoid; and the union of two compactoid sets is compactoid.
 

@@ -20,7 +20,7 @@ The discipline this forces on the article is the one the genre requires: **an ag
 
 The four obstacles the agenda treats are the **colour group** (§"The Colour Group"), **confinement** (§"Confinement"), the **chiral-fermion issue** as it bears on the quark couplings (§"The Chiral-Fermion Issue"), and the **running coupling and asymptotic freedom** (§"The Running Coupling"). They are not independent: the last needs the first and the third, and confinement needs apparatus all of them need. A closing ledger collects them, and a short synthesis names the two upstream items.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. For the non-abelian sector we use the $\mathrm{SU}(2)$ connection and field strength of the read list, $\mathcal{A}_\mu \in \mathrm{SU}(2)$, $F_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa = ϙ/\hbar$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, $T^a$, $N_f$, and $\alpha_s$ are **standard QCD notation, not framework objects**; they are used only where standard results are being quoted or where an object is being named as missing.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. For the non-abelian sector we use the $\mathrm{SU}(2)$ connection and field strength of the read list, $\mathcal{A}_\mu \in \mathrm{SU}(2)$, $F_{\mu\nu} = \partial/\partial Q_\mu\,\mathcal{A}_\nu - \partial/\partial Q_\nu\,\mathcal{A}_\mu + i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, $\kappa = ϙ/\hbar$, with $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. The symbols $SU(3)$, $N_c$, $T^a$, $N_f$, and $\alpha_s$ are **standard QCD notation, not framework objects**; they are used only where standard results are being quoted or where an object is being named as missing.
 
 ## What the Framework Already Reaches
 
@@ -28,23 +28,23 @@ The four obstacles the agenda treats are the **colour group** (§"The Colour Gro
 
 The read-list article *Non-Abelian Gauge Fields in Biquaternionic Form* builds the general non-abelian gauge structure inside $\mathbb{B}$. Its results are established and are used here unchanged.
 
-The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$, closes under the commutator and is $\mathrm{SU}(2)$ in a non-standard normalization,
+The vector part of the material sector, $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, closes under the commutator and is $\mathrm{SU}(2)$ in a non-standard normalization,
 
 $$
 [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c, \qquad a,b,c = 1,2,3,
 \qquad T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad \mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}.
 $$
 
-The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_0\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
+The gauge group is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{H}_{\mathbb{B}} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field by left multiplication. A local transformation $\tilde U(\tilde{Q})$ forces the connection
 
 $$
-\mathcal{A}'_\mu = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial_\mu \tilde U)\,\tilde U^{-1},
+\mathcal{A}'_\mu = \tilde U\,\mathcal{A}_\mu\,\tilde U^{-1} + \frac{i}{\kappa}\,(\partial/\partial Q_\mu \tilde U)\,\tilde U^{-1},
 $$
 
 which reduces to the abelian law $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ when $\tilde U$ is central. The field strength
 
 $$
-F_{\mu\nu} = \partial_\mu \mathcal{A}_\nu - \partial_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
+F_{\mu\nu} = \partial/\partial Q_\mu \mathcal{A}_\nu - \partial/\partial Q_\nu \mathcal{A}_\mu + i\kappa\,[\mathcal{A}_\mu, \mathcal{A}_\nu],
 \qquad
 F = d\mathcal{A} + i\kappa\,\mathcal{A}\wedge\mathcal{A},
 \qquad
@@ -60,7 +60,7 @@ What this construction is, for the purposes of this agenda, is the **general mac
 The available gauge algebra is determined by the algebra, not chosen. The material sector decomposes as a Lie algebra under the commutator,
 
 $$
-\mathbb{M}_- \;=\; \mathbb{R}(ie_0) \;\oplus\; \mathrm{SU}(2),
+\mathbb{M}_- \;=\; \mathbb{R}(ie_t) \;\oplus\; \mathrm{SU}(2),
 $$
 
 so the compact algebra present is $\mathrm{U}(1)\oplus\mathrm{SU}(2) = \mathrm{U}(2)$, of real dimension $4$. This is exactly the anti-Hermitian subspace of $\mathbb{B}\cong M_2(\mathbb{C})$: anti-Hermitian $2\times2$ complex matrices *are* $\mathrm{U}(2)$, and the Cartan decomposition of the real Lie algebra $\mathrm{GL}(2,\mathbb{C})$ is
@@ -85,12 +85,12 @@ This is the precise ceiling of the present construction, and it is what makes th
 
 The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this agenda inherits it without change.
 
-The Dirac module is $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$; the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2,I_2)$ with $\gamma_5^2 = I_4$, and the projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant. These were rechecked on the read-list's representation: $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, $\gamma_5$ anticommutes with each generator and commutes with every even product, hence with the Lorentz action. The Dirac mass bilinear $\bar\Psi\Psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L$ is chirality-odd and vanishes on a state of definite chirality. On the module a chiral abelian symmetry with independent charges is consistent, with $D_\mu = \partial_\mu + \tfrac{i}{\hbar}A_\mu Ϙ$, $Ϙ = ϙ_LP_L+ϙ_RP_R$; the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**.
+The Dirac module is $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$; the chirality operator is $\gamma_5 = \mathrm{diag}(-I_2,I_2)$ with $\gamma_5^2 = I_4$, and the projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$ are idempotent, orthogonal, complete, of rank two, and Lorentz invariant. These were rechecked on the read-list's representation: $P_L^2=P_L$, $P_R^2=P_R$, $P_LP_R=0$, $P_L+P_R=I_4$, $\gamma_5$ anticommutes with each generator and commutes with every even product, hence with the Lorentz action. The Dirac mass bilinear $\bar\Psi\Psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L$ is chirality-odd and vanishes on a state of definite chirality. On the module a chiral abelian symmetry with independent charges is consistent, with $D_\mu = \partial/\partial Q_\mu + \tfrac{i}{\hbar}A_\mu Ϙ$, $Ϙ = ϙ_LP_L+ϙ_RP_R$; the mass bilinear is gauge invariant **if and only if $ϙ_L = ϙ_R$**.
 
 Two further results of that article are the ones that bear on QCD.
 
 - **The canonically available gauge group is vector-like.** The framework's own abelian gauge group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, which acts as a *scalar* on $M_2(\mathbb{C})$; every component of the module receives the same charge. Chirality requires a non-central action, hence a non-abelian gauge structure — the structure the non-abelian article supplies for $\mathrm{SU}(2)$ but does not dress with matter.
-- **The framework's mass term is chirality-exchanging.** The massive Dirac equation is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose mass term couples the two chiral halves off-diagonally; it is the real-form expression of an ordinary Dirac mass. Because it couples the two chiralities it breaks the **axial** (chiral) symmetry, $\partial_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$, while the vector phase $U(1)$ — fermion number — passes through the linear mass and is exact for the massive field. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\flat = -\tilde{\Psi}^{*}$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
+- **The framework's mass term is chirality-exchanging.** The massive Dirac equation is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose mass term couples the two chiral halves off-diagonally; it is the real-form expression of an ordinary Dirac mass. Because it couples the two chiralities it breaks the **axial** (chiral) symmetry, $\partial/\partial Q_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$, while the vector phase $\mathrm{U}(1)$ — fermion number — passes through the linear mass and is exact for the massive field. A genuinely antilinear Majorana-type pairing lives instead on the algebra's real structure $\flat = -\tilde{\Psi}^{*}$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus.
 
 Finally, the article states that no biquaternion formulation of the anomaly is attempted anywhere in the series. The anomaly is the place where QCD's chirality is physically indispensable.
 
@@ -112,7 +112,7 @@ QCD begins with a group. The colour group is $SU(3)$, its rank-two simple compac
 
 **What is available.** From the preceding section: the compact algebra available in $\mathbb{B}$ is $\mathrm{U}(2)$ at most, of dimension $4$; the unique simple module is $\mathbb{C}^2$; and every $\mathbb{B}$-module has even complex dimension. The tempting identifications of "three" in the framework are all false leads, and it is worth naming them so that they are not mistaken for a route:
 
-- **The three quaternion units $e_1,e_2,e_3$.** There are three of them, but they span the **adjoint** of $\mathrm{SU}(2)$ — the spin-one representation — not a complex triplet. $SU(2)$ has no complex three-dimensional representation, and its fundamental is two-dimensional. Counting three basis vectors is not constructing colour.
+- **The three quaternion units $\vec e_x,\vec e_y,\vec e_z$.** There are three of them, but they span the **adjoint** of $\mathrm{SU}(2)$ — the spin-one representation — not a complex triplet. $SU(2)$ has no complex three-dimensional representation, and its fundamental is two-dimensional. Counting three basis vectors is not constructing colour.
 - **The two chiralities, the two Peirce ideals, the two sectors.** These give a $\mathbb{Z}_2$, not a $\mathbb{Z}_3$. The complexification $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ has two simple summands; the Peirce decomposition $\mathbb{B} = \mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ has two summands; the sectors are two. Nothing in the corpus produces a triple.
 - **The three components of the complement of the light cone.** The zero-divisor cone gives a three-part classification of intervals (timelike, spacelike, null) and the complement of the cone has three connected components. A partition of a cone is not a group, and interval type is not an internal quantum number.
 - **The dimension count $8 = 8$.** Both $\mathbb{B}$ and $\mathrm{SU}(3)$ are eight-real-dimensional, but $\mathbb{B}$'s compact part is $\mathrm{U}(2)$ and its module is two-dimensional. Equality of dimensions is a coincidence of counting, not an embedding.
@@ -145,7 +145,7 @@ The framework's closest structures are the zero divisor cone and the null four-v
 
 ## The Chiral-Fermion Issue and the Quark Couplings
 
-The chiral-fermion issue is inherited from the read-list article and carried unchanged. It has three parts: the module's chirality structure is exact, the framework's canonically available gauge group is vector-like and cannot be chiral, and the framework's own mass term is a linear off-diagonal chirality coupling that breaks the axial symmetry while leaving the vector $U(1)$ exact.
+The chiral-fermion issue is inherited from the read-list article and carried unchanged. It has three parts: the module's chirality structure is exact, the framework's canonically available gauge group is vector-like and cannot be chiral, and the framework's own mass term is a linear off-diagonal chirality coupling that breaks the axial symmetry while leaving the vector $\mathrm{U}(1)$ exact.
 
 The question for this agenda is how much of that is a *QCD* obstacle. The answer requires care, because one natural interpretation of the issue does not apply to colour and another does.
 
@@ -155,7 +155,7 @@ The question for this agenda is how much of that is a *QCD* obstacle. The answer
 
 **The global chiral sector of QCD is a further, distinct obstacle.** Beyond the gauge representation, the quarks carry an approximate global chiral symmetry $SU(N_f)_L\times SU(N_f)_R$ (for the light flavours), which is spontaneously broken and whose consequences — light Goldstone pions, the $\eta'$ mass, the axial anomaly, the $\theta$-vacuum — are central to QCD. The framework supplies the chirality operator and the projectors on the module, and it records that the chirality label is invisible to $\mathbb{B}$ alone and appears only through the real structure or the complexification. What it does not supply is any computation of the **anomaly**: the chiral-fermion article states explicitly that no biquaternion formulation of the anomaly is attempted, and names the instanton/soliton article as its natural home. The anomaly is not decoration; it is what makes the flavour-singlet axial current non-conserved and gives the $\eta'$ its mass, and anomaly cancellation is a consistency condition on a chiral spectrum. Whether the framework reproduces the anomaly coefficient, and whether it has anything to say about the $\theta$-angle and strong $CP$, is unaddressed.
 
-**The framework's mass term interacts with both.** The massive biquaternion Dirac equation is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose mass term couples the two chiral halves off-diagonally; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $U(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, $\partial_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$, vanishing only at $m = 0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum, though the framework derives no condensate, no Goldstone pions, and no anomaly coefficient. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the parent's, and it is not the framework's mass term.
+**The framework's mass term interacts with both.** The massive biquaternion Dirac equation is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose mass term couples the two chiral halves off-diagonally; it is the real-form expression of an ordinary Dirac mass, so the interpretation is settled. The framework therefore carries a conserved fermion number — the central phase passes through the linear mass and the vector $\mathrm{U}(1)$ is exact for the massive field — and what the mass breaks is the **axial** charge, $\partial/\partial Q_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}$, vanishing only at $m = 0$. That is the framework's transcription of exactly the chiral-symmetry breaking that organises the light-hadron spectrum, though the framework derives no condensate, no Goldstone pions, and no anomaly coefficient. The genuinely antilinear pairing lives on the algebra's real structure $\flat$ and on the separate single-field equation built on it, whose plane waves lie on the spacelike locus; that is a different equation from the parent's, and it is not the framework's mass term.
 
 **What would settle it.** Three computations, in order of dependence:
 
@@ -169,7 +169,7 @@ This is the one obstacle for which the series has already built the machinery an
 
 What the article also records, in its own words, is that this is a **transcription**: the effective action, the measure, the regulator, the gauge group, the matter content, and the value of the coupling are all inputs; the beta functions are standard field theory written in biquaternion notation and would not change if $\mathbb{B}$ were replaced by any other notation. Two framework-specific limitations follow directly.
 
-- **The flow acts on central scalars.** The scale $\mu$, the couplings, and the beta functions are real multiples of $e_0$, i.e. central, hence in $\mathbb{M}_+$. The flow rescales central coefficients and does not rotate one sector into the other. It cannot, for example, generate a sector-sensitive scale, and it gives no handle on the medium-dependent local complex structure $c=1/\sqrt{\epsilon\mu}$, which the article records as an open question.
+- **The flow acts on central scalars.** The scale $\mu$, the couplings, and the beta functions are real multiples of $e_t$, i.e. central, hence in $\mathbb{M}_+$. The flow rescales central coefficients and does not rotate one sector into the other. It cannot, for example, generate a sector-sensitive scale, and it gives no handle on the medium-dependent local complex structure $c=1/\sqrt{\epsilon\mu}$, which the article records as an open question.
 - **The regulator is external, and the natural one breaks gauge invariance.** The algebra hosts the central invariant $\tilde{k}\tilde{k}^{\natural}$ on which a cutoff is imposed, but not the cutoff; the sharp cutoff is not gauge invariant, and dimensional regularisation leaves the four-dimensional algebra. A biquaternionic gauge-invariant regulator is an open problem. For a *perturbative* one- and two-loop running this is manageable in transcription; for anything non-perturbative it is disabling.
 
 So the running coupling and asymptotic freedom are an obstacle with a **known route** — the route is the standard one-loop computation, and it has been carried out in the framework's notation — but the route's *inputs* are exactly the missing objects: the colour group (obstacle 1) and the quark content (obstacle 3). In addition, the route reaches only the perturbative ultraviolet; it says nothing about confinement, which is the infrared companion of asymptotic freedom and is the obstacle with no route.
@@ -191,8 +191,8 @@ The table collects the items of the agenda and sorts each into the three-way cla
 | Confinement: area law, string tension, mass gap | **No route yet** | A biquaternionic Wilson loop with an area law, or a mass gap, or a no-go; prerequisite: action, measure, gauge-invariant regulator |
 | Non-perturbative apparatus: $\mathbb{B}$-valued action, measure, gauge-invariant regulator | **No route yet** | An action and a regulator that live in the algebra and preserve gauge invariance |
 | Running coupling and asymptotic freedom beyond transcription | Known route, blocked on inputs | Fix $C_2(G)$ and $T(r)$ from the framework's own group and matter; supply the action, measure, and regulator |
-| Axial anomaly, $U(1)_A$ problem, $\theta$-vacuum, strong $CP$ | Known route in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
-| The framework's mass term: linear off-diagonal chirality coupling (vector $U(1)$ exact, axial broken) | Established | The linear chiral pair; the separate $\flat$-pairing on the single-field equation is a distinct, still-open interpretation |
+| Axial anomaly, $\mathrm{U}(1)_A$ problem, $\theta$-vacuum, strong $CP$ | Known route in standard field theory; no framework realisation | A biquaternion computation of the axial-current divergence or the triangle diagram |
+| The framework's mass term: linear off-diagonal chirality coupling (vector $\mathrm{U}(1)$ exact, axial broken) | Established | The linear chiral pair; the separate $\flat$-pairing on the single-field equation is a distinct, still-open interpretation |
 
 | Empirical contact | Open | A prediction distinguishing the framework from standard QCD |
 
@@ -211,7 +211,7 @@ Finally, the genre's standing caution applies here in its strongest form. *The E
 
 This article is a research agenda for quantum chromodynamics inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory and stops before colour.
 
-What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the chiral structure on the Dirac module, with exact projectors, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
+What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the chiral structure on the Dirac module, with exact projectors, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
 
 What is not established is everything QCD-specific.
 
@@ -228,18 +228,18 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Centre of the algebra; the vector-like abelian factor |
-| $\tilde{\nabla} = e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; the vector-like abelian factor |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12 e_a$ | Commutator and normalized generators of $\mathrm{SU}(2)\subset\mathbb{M}_-$ |
 | $\mathcal{A}_\mu\in\mathrm{SU}(2)$, $\kappa=ϙ/\hbar$ | Non-abelian connection and coupling (read list) |
-| $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
+| $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian field strength |
 | $F'_{\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$, $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ | Adjoint transformation law and curvature identity |
-| $\mathbb{M}_- = \mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact gauge algebra (dimension 4) |
+| $\mathbb{M}_- = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Available compact gauge algebra (dimension 4) |
 | $\mathrm{GL}(2,\mathbb{C}) = \mathrm{U}(2)\oplus i\,\mathrm{U}(2)$ | Cartan decomposition fixing the ceiling: maximal compact subalgebra $\mathrm{U}(2)$ |
 | $\Delta = S\oplus\bar{S}$, $S=\mathbb{C}^2$ | Dirac module and its unique simple summand; every $\mathbb{B}$-module has dimension $2k$ |
 | $\gamma_5$, $P_L=\tfrac12(I_4-\gamma_5)$, $P_R=\tfrac12(I_4+\gamma_5)$ | Chirality operator and projectors (read list) |

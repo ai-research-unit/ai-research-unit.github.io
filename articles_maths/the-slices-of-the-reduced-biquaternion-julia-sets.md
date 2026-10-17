@@ -2,19 +2,19 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $T=q_1\Pi_{1}+q_2\Pi_{2}$ in the two central idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(T)=T^{2}+C$ whose filled Julia set is the product
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$, and with the quadratic family $F_{C}(Q_\pm)=Q_\pm^{2}+C$ whose filled Julia set is the product
 
 $$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr),
 $$
 
-read in the idempotent coordinates, with $C=c_{1}\Pi_{1}+c_{2}\Pi_{2}$ and with the complex filled Julia sets of the two parameters. The article computes the slices of the reduced biquaternion fractal.
+read in the idempotent coordinates, with $C=c_{1}\Pi_++c_{2}\Pi_-$ and with the complex filled Julia sets of the two parameters. The article computes the slices of the reduced biquaternion fractal.
 
 The result is that every slice is exact, because the fractal is a product and the slices of a product are the products of the slices of the factors with the constraint read on each coordinate separately. There is no new phenomenon: a complex line slice of the fractal is either the whole of a complex filled Julia set or empty, the diagonal slice is the intersection of the two complex filled Julia sets, the real slice is the intersection of the first complex filled Julia set with the conjugate of the second, a one-real-dimensional affine slice is the intersection of two affine line slices of the two complex sets, and everything is computed from the two complex pictures without any twistor-like ambiguity. This is the sharp gain over the non-commutative companion, where only the idempotent plane gives an exact slice and the general slice is not computable from complex data.
 
 The article owns the notion of a slice for the algebra, the product rule, the complex slices and their degeneracy, the diagonal and the real slices, the affine one-real-dimensional slices, the slices at the parameter zero and the slices of the connectedness locus. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*; the real subspace and the involution that defines it are *Reduced Biquaternion Space* and *The Two Involutions and the Group of Involutions*. The companion, where only the idempotent slice is exact, is *The Slices of the Biquaternion Julia Sets*.
 
-**Conventions.** The coordinates are $(q_1,q_2)\in\mathbb{C}^{2}$, identified with the algebra by $T=q_1\Pi_{1}+q_2\Pi_{2}$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **slice** is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.
+**Conventions.** The coordinates are $(Q_{++},Q_{--})\in\mathbb{C}^{2}$, identified with the algebra by $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **slice** is the intersection of a set of the algebra with a subset defined by affine or linear conditions on the two coordinates; the conjugate of a set is the set of conjugates of its points.
 
 ## The Notion of a Slice and the Product Rule
 
@@ -22,10 +22,10 @@ The article owns the notion of a slice for the algebra, the product rule, the co
 
 | slice | condition |
 |---|---|
-| complex line | $q_2=q_2_{0}$ or $q_1=q_1_{0}$ with the other coordinate free |
-| affine real line | $(q_1,q_2)=(q_1_{0},q_2_{0})+t(a,b)$ with $t\in\mathbb{R}$ and $a,b\in\mathbb{C}$ |
-| diagonal | $q_1=q_2$ |
-| real | $q_2=\bar q_1$ |
+| complex line | $Q_{--}={Q_{--}}_{0}$ or $Q_{++}={Q_{++}}_{0}$ with the other coordinate free |
+| affine real line | $(Q_{++},Q_{--})=({Q_{++}}_{0},{Q_{--}}_{0})+t(a,b)$ with $t\in\mathbb{R}$ and $a,b\in\mathbb{C}$ |
+| diagonal | $Q_{++}=Q_{--}$ |
+| real | $Q_{--}=\bar Q_{++}$ |
 | central-parameter line | $c_{1}=c_{2}$ in the parameter algebra |
 
 **Theorem (the product rule).** If a set of the algebra is the product $S=K_{1}\times K_{2}$ of a subset of the first coordinate and a subset of the second, and if $\Sigma$ is a slice, then
@@ -36,7 +36,7 @@ $$
 
 so that the slice is obtained by intersecting the slice with the two coordinate conditions separately.
 
-**Proof.** The membership $T\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.
+**Proof.** The membership $Q_\pm\in K_{1}\times K_{2}$ is the conjunction of the two coordinate memberships, and the slice is a set of constraints on the same two coordinates; intersecting with a product is intersecting with each factor.
 
 **Corollary (slices of the filled Julia set).** For the quadratic family every slice of $\mathcal{K}_{C}$ is computed from the two complex filled Julia sets $K_{c_{1}}$ and $K_{c_{2}}$ by the rule above; for the Julia set one uses the two descriptions $\mathcal{J}_{C}=(J_{c_{1}}\times K_{c_{2}})\cup(K_{c_{1}}\times J_{c_{2}})$ and takes the union of the two slice computations.
 
@@ -47,16 +47,16 @@ so that the slice is obtained by intersecting the slice with the two coordinate 
 **Proposition (complex line slices are all or nothing).** For a complex line slice at a fixed coordinate,
 
 $$
-\{q_2=q_2_{0}\}\cap\mathcal{K}_{C}=
+\{Q_{--}={Q_{--}}_{0}\}\cap\mathcal{K}_{C}=
 \begin{cases}
-K_{c_{1}}, & q_2_{0}\in K_{c_{2}},\\[2pt]
-\varnothing, & q_2_{0}\notin K_{c_{2}},
+K_{c_{1}}, & {Q_{--}}_{0}\in K_{c_{2}},\\[2pt]
+\varnothing, & {Q_{--}}_{0}\notin K_{c_{2}},
 \end{cases}
 \qquad
-\{q_1=q_1_{0}\}\cap\mathcal{K}_{C}=
+\{Q_{++}={Q_{++}}_{0}\}\cap\mathcal{K}_{C}=
 \begin{cases}
-K_{c_{2}}, & q_1_{0}\in K_{c_{1}},\\[2pt]
-\varnothing, & q_1_{0}\notin K_{c_{1}}.
+K_{c_{2}}, & {Q_{++}}_{0}\in K_{c_{1}},\\[2pt]
+\varnothing, & {Q_{++}}_{0}\notin K_{c_{1}}.
 \end{cases}
 $$
 
@@ -69,26 +69,26 @@ $$
 **Theorem (the diagonal slice).** The diagonal slice of the filled Julia set is the intersection of the two complex filled Julia sets,
 
 $$
-\{q_1=q_2\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}},
+\{Q_{++}=Q_{--}\}\cap\mathcal{K}_{C}=\{(\zeta,\zeta):\zeta\in K_{c_{1}}\cap K_{c_{2}}\}\cong K_{c_{1}}\cap K_{c_{2}},
 $$
 
 and the diagonal slice of the Julia set is the corresponding part of the boundary. In particular, for a central parameter $C=c\cdot1$ the diagonal slice of $\mathcal{K}_{C}$ is the complex filled Julia set $K_{c}$.
 
-**Proof.** Along the diagonal $q_1=q_2=\zeta$ and the membership in the product is the conjunction of $\zeta\in K_{c_{1}}$ and $\zeta\in K_{c_{2}}$; for a central parameter the two sets coincide.
+**Proof.** Along the diagonal $Q_{++}=Q_{--}=\zeta$ and the membership in the product is the conjunction of $\zeta\in K_{c_{1}}$ and $\zeta\in K_{c_{2}}$; for a central parameter the two sets coincide.
 
 **Remark (the diagonal and the exchange symmetry).** The diagonal slice is the fixed set of the exchange of the two idempotent coordinates, which is the natural sign restricted to the coordinate level; it is the slice the algebra reads most directly, and for a central parameter it reproduces the complex fractal itself, so the central reduced biquaternion fractal contains the complex fractal as its diagonal slice.
 
 ## The Real Slice
 
-**Theorem (the real slice).** The slice on the plane $\mathbb{R}\{1,ij\}$ of the elements fixed by the star, which in the idempotent coordinates is $q_2=\bar q_1$, is
+**Theorem (the real slice).** The slice on the plane $\mathbb{R}\{1,ij\}$ of the elements fixed by the star, which in the idempotent coordinates is $Q_{--}=\bar Q_{++}$, is
 
 $$
-\{q_2=\bar q_1\}\cap\mathcal{K}_{C}=\{(\zeta,\bar\zeta):\zeta\in K_{c_{1}}\cap\overline{K_{c_{2}}}\}\cong K_{c_{1}}\cap\overline{K_{c_{2}}}.
+\{Q_{--}=\bar Q_{++}\}\cap\mathcal{K}_{C}=\{(\zeta,\bar\zeta):\zeta\in K_{c_{1}}\cap\overline{K_{c_{2}}}\}\cong K_{c_{1}}\cap\overline{K_{c_{2}}}.
 $$
 
 In particular, if the two parameters are conjugate, $c_{2}=\bar c_{1}$, then $K_{c_{2}}=\overline{K_{c_{1}}}$ and the real slice is the complex filled Julia set $K_{c_{1}}$ itself.
 
-**Proof.** The plane $\mathbb{R}\{1,ij\}$ consists of the elements with $A$ real and $B$ purely imaginary, and $q_1=A+B$, $q_2=A-B$ give $q_2=\bar q_1$ there (while the coefficient-real plane $\{A,B\in\mathbb{R}\}$ is $\mathbb{R}\{1,j\}$, where $q_1$ and $q_2$ are real and equal only when $B=0$); the product rule then requires $\zeta\in K_{c_{1}}$ and $\bar\zeta\in K_{c_{2}}$, which is the displayed set; the conjugate of $K_{c}$ is $K_{\bar c}$ because the complex quadratic map commutes with the conjugation.
+**Proof.** The plane $\mathbb{R}\{1,ij\}$ consists of the elements with $Q_+$ real and $Q_-$ purely imaginary, and $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ give $Q_{--}=\bar Q_{++}$ there (while the coefficient-real plane $\{Q_+,Q_-\in\mathbb{R}\}$ is $\mathbb{R}\{1,j\}$, where $Q_{++}$ and $Q_{--}$ are real and equal only when $Q_-=0$); the product rule then requires $\zeta\in K_{c_{1}}$ and $\bar\zeta\in K_{c_{2}}$, which is the displayed set; the conjugate of $K_{c}$ is $K_{\bar c}$ because the complex quadratic map commutes with the conjugation.
 
 **Corollary (the real slice of the Julia set).** On the real subspace the Julia set slice is the boundary of $K_{c_{1}}\cap\overline{K_{c_{2}}}$, of real dimension at most one, and for the conjugate parameters it is the complex Julia set $J_{c_{1}}$, of real dimension one.
 
@@ -99,13 +99,13 @@ In particular, if the two parameters are conjugate, $c_{2}=\bar c_{1}$, then $K_
 **Theorem (the affine slice is the intersection of two complex line slices).** Let the slice be the affine real line
 
 $$
-\Sigma=\{(q_1,q_2)=(q_1_{0},q_2_{0})+t(a,b):t\in\mathbb{R}\},\qquad a,b\in\mathbb{C}.
+\Sigma=\{(Q_{++},Q_{--})=({Q_{++}}_{0},{Q_{--}}_{0})+t(a,b):t\in\mathbb{R}\},\qquad a,b\in\mathbb{C}.
 $$
 
 Then its intersection with the filled Julia set is
 
 $$
-\Sigma\cap\mathcal{K}_{C}=\bigl\{t\in\mathbb{R}:q_1_{0}+ta\in K_{c_{1}}\ \text{and}\ q_2_{0}+tb\in K_{c_{2}}\bigr\},
+\Sigma\cap\mathcal{K}_{C}=\bigl\{t\in\mathbb{R}:{Q_{++}}_{0}+ta\in K_{c_{1}}\ \text{and}\ {Q_{--}}_{0}+tb\in K_{c_{2}}\bigr\},
 $$
 
 the intersection of the affine line slice of $K_{c_{1}}$ with the affine line slice of $K_{c_{2}}$, the second reparametrised by the same real parameter.
@@ -121,15 +121,15 @@ the intersection of the affine line slice of $K_{c_{1}}$ with the affine line sl
 **Proposition (the parameter zero).** At $C=0$ the two complex filled Julia sets are the closed unit discs, $\mathcal{K}_{0}$ is the closed unit bidisc, and
 
 $$
-\{q_1=q_2\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},\qquad
-\{q_2=\bar q_1\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},
+\{Q_{++}=Q_{--}\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},\qquad
+\{Q_{--}=\bar Q_{++}\}\cap\mathcal{K}_{0}=\{|\zeta|\leq1\},
 $$
 
 both slices being unit discs; every affine real line slice is an interval, the intersection of the two intervals cut out by the two discs; and the Julia set slices are the corresponding circles.
 
 **Proof.** The complex filled Julia set of the parameter zero is the closed unit disc, so the products give the bidisc and the slices give the discs and the intersections of discs with lines, which are intervals.
 
-**Remark (the singular slices).** The slice of the Julia set with the zero-divisor cone $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$ is the singular slice, of dimension one at the parameter zero and at most two in general; at the parameter zero it is the union of the two circles $\{0\}\times S^{1}$ and $S^{1}\times\{0\}$ cut out by the two coordinate discs, in agreement with *The Reduced Biquaternion Quadratic Map and Its Julia Sets*. The zero divisors therefore enter the slice theory only through this thin singular slice, the algebra being commutative and having no division but being the product of two fields.
+**Remark (the singular slices).** The slice of the Julia set with the zero-divisor cone $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$ is the singular slice, of dimension one at the parameter zero and at most two in general; at the parameter zero it is the union of the two circles $\{0\}\times S^{1}$ and $S^{1}\times\{0\}$ cut out by the two coordinate discs, in agreement with *The Reduced Biquaternion Quadratic Map and Its Julia Sets*. The zero divisors therefore enter the slice theory only through this thin singular slice, the algebra being commutative and having no division but being the product of two fields.
 
 ## The Slices of the Connectedness Locus
 
@@ -157,13 +157,13 @@ The filled Julia set of the reduced biquaternion quadratic map is the product $K
 
 | Symbol | Meaning |
 |---|---|
-| $(q_1,q_2)$ | the idempotent coordinates, $T=q_1\Pi_{1}+q_2\Pi_{2}$ |
+| $(Q_{++},Q_{--})$ | the idempotent coordinates, $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ |
 | $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ | the filled Julia set as a product |
 | product rule | $\Sigma\cap(K_{1}\times K_{2})$ read coordinatewise |
-| $\{q_2=q_2_{0}\}$ | a complex line slice, empty or a full complex filled set |
-| $\{q_1=q_2\}$ | the diagonal slice, $\cong K_{c_{1}}\cap K_{c_{2}}$ |
-| $\{q_2=\bar q_1\}$ | the real slice, $\cong K_{c_{1}}\cap\overline{K_{c_{2}}}$ |
-| $(q_1_{0},q_2_{0})+t(a,b)$ | an affine real line slice, two complex line slices for the same $t$ |
+| $\{Q_{--}={Q_{--}}_{0}\}$ | a complex line slice, empty or a full complex filled set |
+| $\{Q_{++}=Q_{--}\}$ | the diagonal slice, $\cong K_{c_{1}}\cap K_{c_{2}}$ |
+| $\{Q_{--}=\bar Q_{++}\}$ | the real slice, $\cong K_{c_{1}}\cap\overline{K_{c_{2}}}$ |
+| $({Q_{++}}_{0},{Q_{--}}_{0})+t(a,b)$ | an affine real line slice, two complex line slices for the same $t$ |
 | $\mathcal{M}\times\mathcal{M}$ | the connectedness locus, the product of two Mandelbrot sets |
 | $\{c_{2}=c_{1}+\mu\}$ | a translated parameter line, $\mathcal{M}\cap(\mathcal{M}-\mu)$ |
 

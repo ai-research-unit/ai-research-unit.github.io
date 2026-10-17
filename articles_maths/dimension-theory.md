@@ -29,7 +29,7 @@ The offset by one between the dimension and the order is the reason the dimensio
 
 **Lemma (Lebesgue number).** Let $(X,d)$ be a compact metric space and let $\mathcal{U}$ be an open cover of $X$. Then there is a number $\delta > 0$, a **Lebesgue number** of the cover, such that every subset of $X$ of diameter less than $\delta$ is contained in some member of $\mathcal{U}$.
 
-**Proof.** If no such $\delta$ existed, then for each $n$ there would be a set $A_n$ of diameter less than $1/n$ meeting the complement of every member of $\mathcal{U}$; choose $x_n \in A_n$ and pass to a convergent subsequence with limit $x$, using compactness. The point $x$ lies in some $U \in \mathcal{U}$, and a ball $B(x, \varepsilon) \subseteq U$ captures all but finitely many of the $x_n$; for $n$ large, $A_n \subseteq B(x,\varepsilon)$ because its diameter is small and it contains a point close to $x$, contradicting that $A_n$ meets the complement of $U$.
+**Proof.** If no such $\delta$ existed, then for each $n$ there would be a set $A_n$ of diameter less than $1/n$ meeting the complement of every member of $\mathcal{U}$; choose $x_n \in A_n$ and pass to a convergent subsequence with limit $x$, using compactness. The point $x$ lies in some $\Omega \in \mathcal{U}$, and a ball $B(x, \varepsilon) \subseteq \Omega$ captures all but finitely many of the $x_n$; for $n$ large, $A_n \subseteq B(x,\varepsilon)$ because its diameter is small and it contains a point close to $x$, contradicting that $A_n$ meets the complement of $\Omega$.
 
 **Theorem (Lebesgue covering theorem).** Let $n \geq 1$ and let the cube $I^n$ be covered by finitely many closed sets each of diameter less than $1$. Then some point of $I^n$ lies in at least $n+1$ of the sets.
 
@@ -43,7 +43,7 @@ The proof is by induction on $n$, the case $n=1$ being the statement that a clos
 
 ### The Nerve and the Combinatorial Form
 
-**Definition.** Let $\mathcal{U} = (U_s)_{s \in S}$ be a finite cover. The **nerve** $N(\mathcal{U})$ is the abstract simplicial complex with vertex set $S$ whose simplices are the finite subsets $\sigma \subseteq S$ with $\bigcap_{s \in \sigma} U_s \neq \emptyset$. The **dimension** of an abstract simplicial complex is one less than the maximum number of vertices of its simplices.
+**Definition.** Let $\mathcal{U} = (\Omega_s)_{s \in S}$ be a finite cover. The **nerve** $N(\mathcal{U})$ is the abstract simplicial complex with vertex set $S$ whose simplices are the finite subsets $\sigma \subseteq S$ with $\bigcap_{s \in \sigma} \Omega_s \neq \emptyset$. The **dimension** of an abstract simplicial complex is one less than the maximum number of vertices of its simplices.
 
 **Proposition.** The order of a finite cover $\mathcal{U}$ equals $\dim N(\mathcal{U}) + 1$. Hence $\dim X \leq n$ if and only if every finite open cover of $X$ has a finite open refinement whose nerve has dimension at most $n$.
 
@@ -55,11 +55,11 @@ The proof is by induction on $n$, the case $n=1$ being the statement that a clos
 
 ### The Definitions
 
-**Definition.** The **small inductive dimension** $\operatorname{ind} X$ is defined by the following recursion. First $\operatorname{ind} \emptyset = -1$; then $\operatorname{ind} X \leq n$ if every point $x \in X$ has a neighbourhood base of open sets $U$ with $\operatorname{ind} \partial U \leq n-1$, where $\partial U = \overline{U} \setminus U$ is the boundary; and $\operatorname{ind} X = \min\{n : \operatorname{ind} X \leq n\}$.
+**Definition.** The **small inductive dimension** $\operatorname{ind} X$ is defined by the following recursion. First $\operatorname{ind} \emptyset = -1$; then $\operatorname{ind} X \leq n$ if every point $x \in X$ has a neighbourhood base of open sets $\Omega$ with $\operatorname{ind} \partial \Omega \leq n-1$, where $\partial \Omega = \overline{U} \setminus \Omega$ is the boundary; and $\operatorname{ind} X = \min\{n : \operatorname{ind} X \leq n\}$.
 
-**Definition.** The **large inductive dimension** $\operatorname{Ind} X$ is defined by the following recursion. First $\operatorname{Ind} \emptyset = -1$; then $\operatorname{Ind} X \leq n$ if for every closed set $A \subseteq X$ and every open set $V \supseteq A$ there is an open set $U$ with
+**Definition.** The **large inductive dimension** $\operatorname{Ind} X$ is defined by the following recursion. First $\operatorname{Ind} \emptyset = -1$; then $\operatorname{Ind} X \leq n$ if for every closed set $A \subseteq X$ and every open set $V \supseteq A$ there is an open set $\Omega$ with
 $$
-A \subseteq U \subseteq \overline{U} \subseteq V, \qquad \operatorname{Ind} \partial U \leq n-1 ,
+A \subseteq \Omega \subseteq \overline{U} \subseteq V, \qquad \operatorname{Ind} \partial \Omega \leq n-1 ,
 $$
 and $\operatorname{Ind} X = \min\{n : \operatorname{Ind} X \leq n\}$.
 
@@ -101,7 +101,7 @@ Moreover, for every space $X$ the equality $\dim X = 0$ is equivalent to $\opera
 
 **Theorem (subspace theorem).** If $A \subseteq X$ then $\dim A \leq \dim X$.
 
-**Proof.** Let $\mathcal{U}$ be a finite open cover of $A$ and write each member as $U_i \cap A$ with $U_i$ open in $X$. Since $\dim X \leq n$, the open cover $\{U_i\} \cup \{X \setminus A\}$ of $X$ has a finite open refinement of order at most $n+1$; intersecting with $A$ gives a finite open refinement of $\mathcal{U}$ of order at most $n+1$.
+**Proof.** Let $\mathcal{U}$ be a finite open cover of $A$ and write each member as $\Omega_i \cap A$ with $\Omega_i$ open in $X$. Since $\dim X \leq n$, the open cover $\{\Omega_i\} \cup \{X \setminus A\}$ of $X$ has a finite open refinement of order at most $n+1$; intersecting with $A$ gives a finite open refinement of $\mathcal{U}$ of order at most $n+1$.
 
 **Theorem (countable sum theorem).** Let $X$ be a separable metrisable space that is the countable union of closed subspaces $X_k$ with $\dim X_k \leq n$ for all $k$. Then $\dim X \leq n$.
 
@@ -116,7 +116,7 @@ $$
 \dim (X \times Y) \leq m + n .
 $$
 
-**Proof sketch.** Let $\mathcal{U}$ be a finite open cover of $X \times Y$; refine it by a finite cover of the form $(U_i \times V_{i,j})_{i,j}$ with $U_i$ open in $X$ and $V_{i,j}$ open in $Y$. The family $(U_i)$ is a finite open cover of $X$; refine it to a finite open cover of order at most $m+1$, and for each $i$ apply the hypothesis $\dim Y \leq n$ to the finite cover of $Y$ by the sets $V_{i,j}$ to obtain a finite open cover of $Y$ of order at most $n+1$. The family of products of the refined members is then a finite open cover of $X \times Y$ refining $\mathcal{U}$, and its order is at most $m+n+1$. The naive order of the product of a cover of order $m+1$ with one of order $n+1$ is $(m+1)(n+1)$, and the reduction to $m+n+1$ is the substance of the theorem: it is obtained by the sum theorem applied to the fibres of the projection onto $X$, which lets the refinement in the $Y$-direction be chosen independently over the members of the refinement in the $X$-direction. Hence $\dim (X \times Y) \leq m+n$.
+**Proof sketch.** Let $\mathcal{U}$ be a finite open cover of $X \times Y$; refine it by a finite cover of the form $(\Omega_i \times V_{i,j})_{i,j}$ with $\Omega_i$ open in $X$ and $V_{i,j}$ open in $Y$. The family $(\Omega_i)$ is a finite open cover of $X$; refine it to a finite open cover of order at most $m+1$, and for each $i$ apply the hypothesis $\dim Y \leq n$ to the finite cover of $Y$ by the sets $V_{i,j}$ to obtain a finite open cover of $Y$ of order at most $n+1$. The family of products of the refined members is then a finite open cover of $X \times Y$ refining $\mathcal{U}$, and its order is at most $m+n+1$. The naive order of the product of a cover of order $m+1$ with one of order $n+1$ is $(m+1)(n+1)$, and the reduction to $m+n+1$ is the substance of the theorem: it is obtained by the sum theorem applied to the fibres of the projection onto $X$, which lets the refinement in the $Y$-direction be chosen independently over the members of the refinement in the $X$-direction. Hence $\dim (X \times Y) \leq m+n$.
 
 **Corollary.** $\dim (I^m \times I^n) = m+n$, so $\dim I^{m+n} = m+n$; the dimension of the product of the cubes is additive.
 
@@ -136,7 +136,7 @@ $$
 
 **Proof.** Both spaces are separable metrisable, so by the Menger–Urysohn theorem their dimensions are intrinsic. The dimension of the Euclidean space is local and finite: $\dim \mathbb{R}^n = n$, because $\mathbb{R}^n$ is the countable union of the closed cubes $[-k,k]^n$ of dimension $n$ and the countable sum theorem gives $\dim \mathbb{R}^n \leq n$, while the subspace theorem applied to the embedded cube gives $\dim \mathbb{R}^n \geq n$. A homeomorphism preserves the dimension, so $m = n$. For the local statement, restrict the homeomorphism to a small ball and use the subspace and local character of the covering dimension.
 
-**Theorem (invariance of domain).** Let $U \subseteq \mathbb{R}^n$ be open and let $f : U \to \mathbb{R}^n$ be injective and continuous. Then $f(U)$ is open in $\mathbb{R}^n$ and $f$ is an embedding.
+**Theorem (invariance of domain).** Let $\Omega \subseteq \mathbb{R}^n$ be open and let $f : \Omega \to \mathbb{R}^n$ be injective and continuous. Then $f(\Omega)$ is open in $\mathbb{R}^n$ and $f$ is an embedding.
 
 The theorem is due to Brouwer and is the local form of the invariance of dimension; the standard proofs use the Brouwer fixed point theorem or the degree of a map of spheres, both of which belong to the algebraic topology of this Part. The present article records the statement and the fact that it is equivalent to the invariance of dimension for open subsets.
 
@@ -170,7 +170,7 @@ The **Lebesgue covering lemma** gives a Lebesgue number to every open cover of a
 | $\operatorname{Ind} X$ | Large inductive dimension |
 | $\dim X = \infty$ | $\dim X \leq n$ fails for every $n$ |
 | zero-dimensional | $\dim X \leq 0$; every finite open cover refines to pairwise disjoint open sets, equivalently a base of clopen sets for $T_1$ spaces |
-| $\partial U$ | Boundary $\overline{U} \setminus U$ of $U$ |
+| $\partial \Omega$ | Boundary $\overline{U} \setminus \Omega$ of $\Omega$ |
 | $N(\mathcal{U})$ | Nerve of the cover $\mathcal{U}$; $\operatorname{order}\mathcal{U} = \dim N(\mathcal{U}) + 1$ |
 | $X_k$, $I^\infty$, $\mathbb{R}^\infty$ | Summands of the countable sum theorem; Hilbert cube; direct limit of the Euclidean spaces |
 | $M$ | Topological $n$-manifold, with $\dim M = n$ |

@@ -22,14 +22,14 @@ $$
 and $B(\mathcal{H})$ denotes the algebra of all bounded operators. The **adjoint** $T^*$ of $T \in B(\mathcal{H})$ is the unique bounded operator with $\langle Tv, w\rangle = \langle v, T^*w\rangle$ for all $v, w$; $T$ is **self-adjoint** if $T = T^*$, **unitary** if $T^*T = TT^* = 1$, and **positive** if $\langle Tv, v\rangle \geq 0$ for all $v$. The **unitary group**
 
 $$
-U(\mathcal{H}) = \{T \in B(\mathcal{H}) : T \text{ unitary}\}
+\mathrm{U}(\mathcal{H}) = \{T \in B(\mathcal{H}) : T \text{ unitary}\}
 $$
 
 is a group under composition. The systematic theory of Hilbert spaces, their completions, their orthonormal bases and the spectral theorem for self-adjoint operators is that ; the elementary facts quoted here — the Cauchy–Schwarz inequality, the parallelogram law, the existence of orthogonal projections onto closed subspaces, and the orthogonal decomposition $\mathcal{H} = M \oplus M^\perp$ for a closed subspace $M$ — are standard and are used with that attribution.
 
-**Definition.** The **strong operator topology** on $B(\mathcal{H})$ is the initial topology for the family of maps $\{T \mapsto Tv\}_{v \in \mathcal{H}}$, where $\mathcal{H}$ carries its norm topology; a net $T_\alpha \to T$ strongly if and only if $T_\alpha v \to Tv$ for every $v$. The **weak operator topology** is the initial topology for the family $\{T \mapsto \langle Tv, w\rangle\}_{v,w \in \mathcal{H}}$. The unitary group $U(\mathcal{H})$ carries the subspace topology from the strong operator topology; with it, $U(\mathcal{H})$ is a topological group.
+**Definition.** The **strong operator topology** on $B(\mathcal{H})$ is the initial topology for the family of maps $\{T \mapsto Tv\}_{v \in \mathcal{H}}$, where $\mathcal{H}$ carries its norm topology; a net $T_\alpha \to T$ strongly if and only if $T_\alpha v \to Tv$ for every $v$. The **weak operator topology** is the initial topology for the family $\{T \mapsto \langle Tv, w\rangle\}_{v,w \in \mathcal{H}}$. The unitary group $\mathrm{U}(\mathcal{H})$ carries the subspace topology from the strong operator topology; with it, $\mathrm{U}(\mathcal{H})$ is a topological group.
 
-**Proposition.** On $U(\mathcal{H})$ the strong and weak operator topologies coincide. Multiplication is strongly continuous, and inversion is strongly continuous on $U(\mathcal{H})$; hence $U(\mathcal{H})$ is a topological group for the strong operator topology. Equivalently, $U(\mathcal{H})$ is a closed subgroup of the product $\mathcal{H}^{\mathcal{H}}$ with the product topology.
+**Proposition.** On $\mathrm{U}(\mathcal{H})$ the strong and weak operator topologies coincide. Multiplication is strongly continuous, and inversion is strongly continuous on $\mathrm{U}(\mathcal{H})$; hence $\mathrm{U}(\mathcal{H})$ is a topological group for the strong operator topology. Equivalently, $\mathrm{U}(\mathcal{H})$ is a closed subgroup of the product $\mathcal{H}^{\mathcal{H}}$ with the product topology.
 
 **Proof.** For unitary $T$ and any $v$, $\|Tv - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle Tv, v\rangle$, so convergence of the matrix coefficients $\langle T_\alpha v, v\rangle$ at every $v$ implies strong convergence; replacing $\langle T_\alpha v, v\rangle$ by $\langle T_\alpha v, Tv\rangle$ in the same identity, and using unitarity of $T$, shows that weak convergence of $T_\alpha$ to $T$ implies strong convergence. Multiplication: $\|T_\alpha S_\alpha v - TSv\| \leq \|T_\alpha(S_\alpha v - Sv)\| + \|(T_\alpha - T)Sv\| = \|S_\alpha v - Sv\| + \|(T_\alpha - T)Sv\|$ by unitarity. Inversion: $\|T_\alpha^{-1}v - T^{-1}v\| = \|T_\alpha^{-1}(v - T_\alpha T^{-1}v)\| = \|v - T_\alpha T^{-1}v\| \to 0$. The last statement follows from the description of the initial topology as a subspace of the product.
 
@@ -38,12 +38,12 @@ is a group under composition. The systematic theory of Hilbert spaces, their com
 **Definition.** A **unitary representation** of a locally compact group $G$ on a Hilbert space $\mathcal{H}$ is a group homomorphism
 
 $$
-\pi : G \longrightarrow U(\mathcal{H})
+\pi : G \longrightarrow \mathrm{U}(\mathcal{H})
 $$
 
-that is continuous for the strong operator topology on $U(\mathcal{H})$; equivalently, the map $G \times \mathcal{H} \to \mathcal{H}$, $(g, v) \mapsto \pi(g)v$, is continuous. The space $\mathcal{H}$ is the **representation space** of $\pi$, written $\mathcal{H}_\pi$ when several representations occur; the **degree** of $\pi$ is $\dim \mathcal{H}_\pi$.
+that is continuous for the strong operator topology on $\mathrm{U}(\mathcal{H})$; equivalently, the map $G \times \mathcal{H} \to \mathcal{H}$, $(g, v) \mapsto \pi(g)v$, is continuous. The space $\mathcal{H}$ is the **representation space** of $\pi$, written $\mathcal{H}_\pi$ when several representations occur; the **degree** of $\pi$ is $\dim \mathcal{H}_\pi$.
 
-**Theorem (continuity criteria).** For a homomorphism $\pi : G \to U(\mathcal{H})$ the following are equivalent:
+**Theorem (continuity criteria).** For a homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ the following are equivalent:
 
 **(a)** $\pi$ is strongly continuous;
 
@@ -63,7 +63,7 @@ that is continuous for the strong operator topology on $U(\mathcal{H})$; equival
 
 ### Equivalence, Intertwiners and Direct Sums
 
-**Definition.** Let $\pi : G \to U(\mathcal{H})$ and $\pi' : G \to U(\mathcal{H}')$ be unitary representations.
+**Definition.** Let $\pi : G \to \mathrm{U}(\mathcal{H})$ and $\pi' : G \to \mathrm{U}(\mathcal{H}')$ be unitary representations.
 
 **(a)** An **intertwining operator** or **intertwiner** is a bounded linear map $T : \mathcal{H} \to \mathcal{H}'$ with $T\pi(g) = \pi'(g)T$ for all $g \in G$. The set of intertwiners is a vector space $\operatorname{Hom}_G(\pi, \pi')$, and $\operatorname{End}_G(\pi)$ is the **commutant** of $\pi$.
 
@@ -180,7 +180,7 @@ The representation-theoretic objects above are the input to the analytic theory,
 
 ## Summary
 
-A unitary representation of a locally compact group $G$ is a strongly continuous homomorphism $\pi : G \to U(\mathcal{H})$ into the unitary group of a Hilbert space; strong, weak and matrix-coefficient continuity coincide, and the identity $\|\pi(g)v - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle\pi(g)v, v\rangle$ is the basic tool. Intertwiners, unitary equivalence, subrepresentations, direct sums, tensor products and contragredients form the algebraic frame; every closed invariant subspace has a closed invariant orthogonal complement, so unitary representations are reduced by their invariant subspaces, and finite-dimensional ones are completely reducible.
+A unitary representation of a locally compact group $G$ is a strongly continuous homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ into the unitary group of a Hilbert space; strong, weak and matrix-coefficient continuity coincide, and the identity $\|\pi(g)v - v\|^2 = 2\|v\|^2 - 2\operatorname{Re}\langle\pi(g)v, v\rangle$ is the basic tool. Intertwiners, unitary equivalence, subrepresentations, direct sums, tensor products and contragredients form the algebraic frame; every closed invariant subspace has a closed invariant orthogonal complement, so unitary representations are reduced by their invariant subspaces, and finite-dimensional ones are completely reducible.
 
 Schur's lemma states that the commutant of an irreducible unitary representation is $\mathbb{C}\cdot 1$ (the finite-dimensional case proved by eigenvalues, the general case by the spectral theorem of Part III), that intertwiners between inequivalent irreducibles vanish, and that the irreducible unitary representations of an abelian group are exactly its characters, so that the unitary dual of an abelian group is its Pontryagin dual. For a compact group the irreducibles are finite-dimensional, every unitary representation is a direct sum of them with finite multiplicities, the matrix coefficients satisfy the orthogonality relations and are dense in $L^2(K)$ (Peter–Weyl), and the irreducibles are classified by dominant weights; the proofs of these facts use the invariant integral and the spectral theory of compact operators and belong to Part III.
 
@@ -192,10 +192,10 @@ The unitary dual $\operatorname{Irr}(G)$ is the set of equivalence classes of ir
 |---|---|
 | $\mathcal{H}$, $\mathcal{H}_\pi$ | Hilbert space; representation space of $\pi$ |
 | $\langle \cdot, \cdot\rangle$, $\|\cdot\|$ | Inner product and norm |
-| $B(\mathcal{H})$, $U(\mathcal{H})$ | Bounded operators; unitary group, a topological group |
+| $B(\mathcal{H})$, $\mathrm{U}(\mathcal{H})$ | Bounded operators; unitary group, a topological group |
 | $T^*$, $T = T^*$, $T \geq 0$ | Adjoint; self-adjoint; positive operator |
 | strong, weak operator topology | Topologies of pointwise convergence of $Tv$ and of $\langle Tv, w\rangle$ |
-| $\pi : G \to U(\mathcal{H})$ | A unitary representation; $\deg \pi = \dim \mathcal{H}_\pi$ |
+| $\pi : G \to \mathrm{U}(\mathcal{H})$ | A unitary representation; $\deg \pi = \dim \mathcal{H}_\pi$ |
 | $c_{v,w}(g) = \langle\pi(g)v, w\rangle$ | Matrix coefficient of $\pi$ |
 | $\operatorname{Hom}_G(\pi, \pi')$ | Space of intertwiners |
 | $\operatorname{End}_G(\pi) = \pi(G)'$ | Commutant of $\pi$; a von Neumann algebra |

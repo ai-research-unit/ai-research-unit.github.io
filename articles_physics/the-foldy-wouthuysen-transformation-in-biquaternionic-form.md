@@ -6,7 +6,7 @@ The Dirac equation describes particles and antiparticles on the same footing, an
 
 The transformation is worth a biquaternion article for a structural reason. The biquaternionic Dirac equation is written as a **chiral pair**: the mass couples $\tilde{\Psi}_L$ to $\tilde{\Psi}_R$, and the two chiral halves carry the two minimal left ideals of $\mathbb{B}$. The FW transformation, by contrast, separates **positive from negative frequency**, and the two pieces into which it splits the field are not the two chiralities. The article therefore has to keep two gradings apart: the chirality grading, in which the mass is off-diagonal and the biquaternion pair is written, and the frame grading by $\gamma^0$, in which the FW transformation works and the mass is diagonal. Conflating the two is the standard way to misread either. Making the distinction explicit is the biquaternion content of the transformation.
 
-The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial_{ict}^2 + \Delta$, the Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$, and the chiral mass pair is
+The scope is the transformation itself, its generator, its free-particle closed form, the mean position operator it defines, and the interpretation of all this in the algebra. The quantised field, the Fock space and the fermionic path integral belong to the companion category *Biquaternion Quantum Fields*; the relativistic qubit and the informational interpretation belong to the subcategory *focus on informational aspects*. The Pauli equation itself, and the detailed non-relativistic expansion including the Darwin and spin–orbit terms, are worked through in the companion exercise and are only summarised here. The conventions are the series conventions: $\Box = \partial^2/\partial Q_t^2 + \Delta$, the Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, so that $(\gamma^0)^2 = +I_4$, and the chiral mass pair is
 
 $$
 \tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R .
@@ -14,10 +14,10 @@ $$
 
 ## The Dirac Hamiltonian and the Odd/Even Split
 
-The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial_\mu - iqA_\mu/\hbar$ of the parent article — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
+The FW transformation is best stated for the Hamiltonian form of the Dirac equation. Write the covariant equation $(i\gamma^\mu D_\mu - mc)\psi = 0$ with the minimal coupling $D_\mu = \partial/\partial Q_\mu - iqA_\mu/\hbar$ of the parent article — the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* fixes the opposite sign of the connection and records that the two are the same coupling with the opposite sign of $ϙ$ — multiply by $\gamma^0$, and set $\alpha^k = \gamma^0\gamma^k$, $\beta = \gamma^0$. The result is
 
 $$
-i\hbar\partial_t\psi = H\psi, \qquad
+i\hbar\partial/\partial t\psi = H\psi, \qquad
 H = \beta mc^2 + c\,\boldsymbol\alpha\cdot\vec\pi + ϙA^0,
 \qquad \vec\pi = \vec p - ϙ\vec A,
 $$
@@ -53,7 +53,7 @@ It is important to say at once which grading this is. The split into even and od
 Let $U = \exp(iS)$ with $S$ Hermitian so that $U$ is unitary. The transformed Hamiltonian is
 
 $$
-H' = UHU^\dagger - i\hbar U\partial_t U^\dagger ,
+H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger ,
 $$
 
 where the second term vanishes for a time-independent $S$. Since $H = \beta mc^2 + O + \mathcal{E}$, the idea is to choose $S$ so that the large term $i[S,\beta mc^2] = -O$ cancels the odd part at leading order, leaving an even remainder of order $1/c^2$.
@@ -108,7 +108,7 @@ Two features of the iteration are worth keeping in view. First, the transformati
 
 ### The Generator in the Biquaternion Basis
 
-The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\mathsf{M}_4$ of the dictionary article, $\mathsf{M}_4(e_0) = I_4$, $\mathsf{M}_4(e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma^0$, which is not in $\mathsf{M}_4(\mathbb{B})$. The kinetic operator is
+The identification of $O$ as the frame-odd part can be written directly in the algebra. With the isomorphism $\mathsf{M}_4$ of the dictionary article, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(e_k) = -i\sigma^k$ in the relevant $2\times2$ blocks, the even generators are $\alpha^k$, and the frame is $\beta = \gamma^0$, which is not in $\mathsf{M}_4(\mathbb{B})$. The kinetic operator is
 
 $$
 O = c\,\boldsymbol\alpha\cdot\vec\pi = c\,\alpha^k\pi_k,
@@ -168,23 +168,23 @@ the $\vec p^4$ term being the first relativistic correction to the kinetic energ
 
 ## The Mean Position Operator
 
-The transformation does more than block-diagonalise the Hamiltonian: it also changes the position operator, and the change is the resolution of the Zitterbewegung paradox. Conjugating $\vec x$ by $U = \exp(iS)$ gives
+The transformation does more than block-diagonalise the Hamiltonian: it also changes the position operator, and the change is the resolution of the Zitterbewegung paradox. Conjugating $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ by $U = \exp(iS)$ gives
 
 $$
-\vec Q = U\,\vec x\,U^\dagger
-= \vec x + i[S,\vec x] + \frac{i^2}{2!}[S,[S,\vec x]]+\cdots
-= \vec x - \frac{i\hbar\,\beta\boldsymbol\alpha}{2mc} + \cdots,
+\vec Q = U\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,U^\dagger
+= x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i[S,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z] + \frac{i^2}{2!}[S,[S,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]]+\cdots
+= x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{i\hbar\,\beta\boldsymbol\alpha}{2mc} + \cdots,
 $$
 
 where the leading term uses $[S_1,x_k] = -\frac{i}{2mc}\beta[\alpha_j\pi_j,x_k] = -\frac{\hbar}{2mc}\beta\alpha_k$ for the free case, so the correction is of the order of the reduced Compton wavelength $\hbar/(mc)$, and the next correction is of order $1/m^2$. The operator $\vec Q$ is the **mean position** (Foldy–Wouthuysen position). Its defining property is that its Heisenberg velocity,
 
 $$
-\dot{\vec Q} = \frac{i}{\hbar}[H',\vec Q],
+d\vec Q/dt = \frac{i}{\hbar}[H',\vec Q],
 $$
 
-contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $\vec x$ is entirely contained in the difference $\vec x - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
+contains no oscillatory term: to leading order it is the classical drift $\vec pc^2/E$, so the rapid trembling of the ordinary position operator $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is entirely contained in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \vec Q$. In the biquaternion language, the trembling is a rotation of the field between the two frames of the algebra, and the FW position is the coordinate that is blind to it. The companion article *Zitterbewegung in Biquaternionic Form* records the same conclusion from the side of the oscillation; here it appears as a property of the transformed position operator.
 
-The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is suppressed by one power of $1/c$ relative to the ordinary position. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec Q$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $\vec x$ and a configuration-space position on the module.
+The correction $-\frac{i\hbar\beta\boldsymbol\alpha}{2mc}$ is itself worth reading in the algebra. It is an odd, spinorial displacement: it is proportional to the same matrix $\beta\boldsymbol\alpha$ that generates the transformation, it anticommutes with $\beta$, and it is suppressed by one power of $1/c$ relative to the ordinary position. It is not a measurement of the particle's size; it is the statement that the coordinate conjugate to the block-diagonal Hamiltonian is not the coordinate conjugate to the original field. The operator $\vec Q$ does not have commuting components, and it is not Lorentz covariant in the naive sense — the Newton–Wigner operator is the covariant completion of it — a fact already visible in the biquaternion framework as the difference between a material position $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and a configuration-space position on the module.
 
 ## The Biquaternion Reading
 
@@ -241,7 +241,7 @@ U = \cos\frac{\theta}{2} + \beta\,\boldsymbol\alpha\cdot\vec u_p\,\sin\frac{\the
 UHU^\dagger = \beta\sqrt{\vec p^2c^2 + m^2c^4},
 $$
 
-checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\vec Q = \vec x - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $\vec x-\vec Q$.
+checked to $9\times10^{-16}$ by direct matrix computation. The transformed position operator is the mean position, $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - i\hbar\beta\boldsymbol\alpha/(2mc) + \cdots$, whose Heisenberg velocity has no trembling term; the Zitterbewegung resides in the difference $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec Q$.
 
 The biquaternion interpretation turns on two gradings that must not be conflated. The frame grading, conjugation by $\gamma^0$, is what the FW transformation diagonalises and in which the mass is diagonal; the chirality grading, $\gamma_5$, is what the biquaternion mass pair is written in and in which the mass is off-diagonal. The two gradings anticommute, so no single unitary diagonalises both, and the mass term is the measure of their incompatibility. The FW generator contains $\gamma^0$ and therefore lies outside the even subalgebra $\mathsf{M}_4(\mathbb{B})$: the transformation is not one of the algebra's Lorentz rotors but a transformation in the enlarged Clifford algebra that adjoins the frame.
 
@@ -259,11 +259,11 @@ The biquaternion interpretation turns on two gradings that must not be conflated
 | $\mathcal{E}$ | Even (frame-commuting) part |
 | $U = \exp(iS)$ | Foldy–Wouthuysen unitary |
 | $S_1 = -\frac{i}{2mc^2}\beta O$ | Leading FW generator |
-| $H' = UHU^\dagger - i\hbar U\partial_t U^\dagger$ | Transformed Hamiltonian |
+| $H' = UHU^\dagger - i\hbar U\partial/\partial t U^\dagger$ | Transformed Hamiltonian |
 | $\theta = \arctan(|\vec p|/(mc))$ | Free-particle FW angle |
-| $\vec Q = \vec x - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
+| $\vec Q = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - \frac{i\hbar\beta\boldsymbol\alpha}{2mc}+\cdots$ | Mean (Foldy–Wouthuysen) position |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair (chirality grading) |
-| $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading
 

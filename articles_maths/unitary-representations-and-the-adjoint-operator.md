@@ -21,7 +21,7 @@ $$
 
 and $A$ is **unitary** when $A^{*} = A^{-1}$, equivalently when $A$ is surjective and preserves the inner product; $A$ is **self-adjoint** when $A^{*} = A$ and **skew-adjoint** when $A^{*} = -A$.
 
-**Proposition.** A unitary representation is a homomorphism $\pi : G\to U(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)b,\pi(g)w\rangle = \langle b,w\rangle$ for all $g$ and all $b,w$.
+**Proposition.** A unitary representation is a homomorphism $\pi : G\to \mathrm{U}(\mathcal{H})$; equivalently a representation of $G$ by invertible operators with $\pi(g)^{*} = \pi(g)^{-1}$ for every $g$, and equivalently a representation preserving the inner product, $\langle \pi(g)b,\pi(g)w\rangle = \langle b,w\rangle$ for all $g$ and all $b,w$.
 
 *Proof.* The equivalences are immediate from the definition of the adjoint and the invertibility of the operators; the preservation of the inner product is the defining property of the unitary group.
 
@@ -69,7 +69,7 @@ the domain of $A_X$ is the set of $b\in\mathcal{H}$ for which the derivative of 
 
 ### The Analytic Vectors
 
-**Theorem (Nelson).** The set of analytic vectors of $\pi$ — the vectors $b$ for which the map $g\mapsto\pi(g)b$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)b$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in U(\mathrm{G})$.
+**Theorem (Nelson).** The set of analytic vectors of $\pi$ — the vectors $b$ for which the map $g\mapsto\pi(g)b$ is real analytic — is dense in $\mathcal{H}$, each $A_X$ is essentially self-adjoint on the analytic vectors of the enveloping algebra, and the representation is determined on them by the algebraic relations. The Gårding domain, the span of the vectors $\pi(f)b$ with $f\in C_c^\infty(G)$, is dense, contained in $\mathcal{H}^\infty$, and stable under every $\pi_*(u)$, $u\in \mathrm{U}(\mathrm{G})$.
 
 *Proof.* The analytic vectors are dense by the analytic-vector theorem of Nelson, which uses the elliptic regularity of the Casimir operator; the essential self-adjointness on them is the commutation theorem for the analytic vectors, and the Gårding domain is dense by the approximate identity of the convolution algebra of *Operators on a Lie Group*. The proofs are in the references.
 
@@ -119,7 +119,7 @@ is self-adjoint on the smooth vectors and commutes with the representation; for 
 
 ### The Vector Group
 
-For $G = \mathbb{R}$ with the representation $\pi(x) = \exp(ixt)$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial_t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t b,w\rangle + \langle b, itw\rangle = 0$.
+For $G = \mathbb{R}$ with the representation $\pi(x) = \exp(ixt)$ on $L^2(\mathbb{R})$ in the spectral variable, the generator is the self-adjoint multiplication by $t$, the derived representation is $\pi_*(\partial/\partial t) = it$ which is skew-adjoint, and the exponential of the self-adjoint part is the translation; the unitarity condition is the identity $\langle i t b,w\rangle + \langle b, itw\rangle = 0$.
 
 ### The Rotation Group
 

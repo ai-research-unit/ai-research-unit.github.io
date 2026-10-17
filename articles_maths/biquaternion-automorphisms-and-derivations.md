@@ -10,7 +10,7 @@ $$
 
 It carries two structures, distinguished by the ground field. Over $\mathbb{C}$ it is a four-dimensional central simple algebra; over $\mathbb{R}$ the same set is an eight-dimensional algebra, simple but not central. This article describes two standard invariants of $\mathbb{B}$: the group of algebra **automorphisms** and the Lie algebra of **derivations**. Both depend on the ground field, so the two views are kept separate and the field is named at each step.
 
-We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_0, e_1, e_2, e_3\}$ with $e_k^2 = -e_0$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural} \circ \bar{\cdot}$, ${}^{\flat} = -{}^{*}$; and the remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{C}$.
+We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ with $\vec e_k^2 = -e_t$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural} \circ \bar{\cdot}$, ${}^{\flat} = -{}^{*}$; and the remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$. A general element is $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}$.
 
 **The inverse action and the dagger action.** The automorphisms of this article are the maps $\tilde R\mapsto\tilde{Q}\tilde R\tilde{Q}^{-1}$ built from the inverse. They use the product and the biquaternion norm alone, and for a unit $\tilde{Q}$ they are the inner automorphisms below. A second two-sided action of a unit replaces the inverse by the Hermitian conjugate,
 $$
@@ -25,13 +25,13 @@ The automorphism group and the derivation algebra of $\mathbb{B}$ are governed b
 
 **Simplicity.** Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$: the algebra is **simple**. The proof is in *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Two-Sided Ideals: Simplicity of $\mathbb{B}$*, where the ideal structure of the algebra is developed; the lattice is the same over $\mathbb{R}$ and over $\mathbb{C}$, because the condition $\tilde R\tilde T,\tilde T\tilde R\in I$ is field-independent.
 
-**The centre.** The centre of $\mathbb{B}$ is $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, a complex vector space of dimension $1$, the subspace $\mathbb{C}_{\mathbb{B}}$ of *The Biquaternioid as a Vector Space over $\mathbb{C}$*. Hence $\mathbb{B}$ is **central simple over $\mathbb{C}$** — simple, of dimension $4$, with centre exactly $\mathbb{C}$ — while over $\mathbb{R}$ the same algebra is simple but **not central**, its centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$ being strictly larger than $\mathbb{R}e_0$. Stating that "$\mathbb{B}$ is central simple" without naming the field is false over $\mathbb{R}$, and the sections below respect the distinction.
+**The centre.** The centre of $\mathbb{B}$ is $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, a complex vector space of dimension $1$, the subspace $\mathbb{C}_{\mathbb{B}}$ of *The Biquaternioid as a Vector Space over $\mathbb{C}$*. Hence $\mathbb{B}$ is **central simple over $\mathbb{C}$** — simple, of dimension $4$, with centre exactly $\mathbb{C}$ — while over $\mathbb{R}$ the same algebra is simple but **not central**, its centre $\mathbb{C}_{\mathbb{B}}\cong\mathbb{C}$ being strictly larger than $\mathbb{R}e_t$. Stating that "$\mathbb{B}$ is central simple" without naming the field is false over $\mathbb{R}$, and the sections below respect the distinction.
 
 ## Automorphisms over $\mathbb{C}$
 
 Throughout this section the ground field is $\mathbb{C}$.
 
-**Definition.** A **$\mathbb{C}$-algebra automorphism** of $\mathbb{B}$ is a bijective $\mathbb{C}$-linear map $\sigma : \mathbb{B} \to \mathbb{B}$ with $\sigma(\tilde R\tilde T) = \sigma(\tilde R)\sigma(\tilde T)$ and $\sigma(e_0) = e_0$. These maps form a group under composition, written $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$.
+**Definition.** A **$\mathbb{C}$-algebra automorphism** of $\mathbb{B}$ is a bijective $\mathbb{C}$-linear map $\sigma : \mathbb{B} \to \mathbb{B}$ with $\sigma(\tilde R\tilde T) = \sigma(\tilde R)\sigma(\tilde T)$ and $\sigma(e_t) = e_t$. These maps form a group under composition, written $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$.
 
 **Inner automorphisms.** For any invertible $g \in \mathbb{B}$ the map $\iota_g(\tilde R) = g \tilde R g^{-1}$ is a $\mathbb{C}$-algebra automorphism, the **inner automorphism** determined by $g$. Since $\mathbb{C}$ is central, $\iota_g = \iota_{\lambda g}$ for every nonzero $\lambda \in \mathbb{C}$, so $\iota_g$ depends only on the class of $g$ modulo the scalars.
 
@@ -43,7 +43,7 @@ $$
 \mathbb{B}^{\times} \longrightarrow \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}), \qquad g \longmapsto \iota_g,
 $$
 
-whose kernel is the group of nonzero central scalars $\mathbb{C}^{\times} e_0$. Hence
+whose kernel is the group of nonzero central scalars $\mathbb{C}^{\times} e_t$. Hence
 
 $$
 \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times} / \mathbb{C}^{\times} .$$
@@ -56,17 +56,17 @@ $$
 $$
 the projective general linear group, of complex dimension three. This is the biquaternion form of the classical isomorphism $\operatorname{Aut}(M_n(k))\cong PGL(n,k)$.
 
-**Corollary (the orthogonal form of the group).** The centre of $SL(2,\mathbb{C})$ is $\{\pm e_0\}$, and the low-dimensional classical isomorphisms give
+**Corollary (the orthogonal form of the group).** The centre of $SL(2,\mathbb{C})$ is $\{\pm e_t\}$, and the low-dimensional classical isomorphisms give
 $$
 \operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \cong PSL(2,\mathbb{C}) \cong SO(3,\mathbb{C}),
 $$
-the complex orthogonal group in three variables. The reason is visible in the action. Conjugation fixes the trace, so the scalar coordinate is preserved and the action falls on the three-dimensional traceless part $\tilde{S}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_0$ as $\tilde{S}\mapsto g\tilde{S}g^{-1}$, which fixes the quadratic form $\det\tilde{S}$; that is the defining representation of $SO(3,\mathbb{C})$. The group is **complex** of complex dimension three, hence of real dimension six, and as a **real** group it is also $SO^+(1,3)$: the two are both $PSL(2,\mathbb{C})$, connected and six-real-dimensional, and are therefore the same real group. So the group that appears here as the abstract automorphism group of the algebra is the restricted Lorentz group. It sits inside the automorphism group of the biquaternion norm, $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_0,e_0)\}$ with $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$, as the **diagonal** $\tilde{A}=\tilde{B}=g$; that placement, and the physical construction built on it in the complexified-coordinates setting, are the subject of the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* of the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*.
+the complex orthogonal group in three variables. The reason is visible in the action. Conjugation fixes the trace, so the scalar coordinate is preserved and the action falls on the three-dimensional traceless part $\tilde{S}=\tilde{Q}-\tfrac12(\mathrm{tr}\tilde{Q})e_t$ as $\tilde{S}\mapsto g\tilde{S}g^{-1}$, which fixes the quadratic form $\det\tilde{S}$; that is the defining representation of $SO(3,\mathbb{C})$. The group is **complex** of complex dimension three, hence of real dimension six, and as a **real** group it is also $SO^+(1,3)$: the two are both $PSL(2,\mathbb{C})$, connected and six-real-dimensional, and are therefore the same real group. So the group that appears here as the abstract automorphism group of the algebra is the restricted Lorentz group. It sits inside the automorphism group of the biquaternion norm, $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$ with $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{B}^{-1}$, as the **diagonal** $\tilde{A}=\tilde{B}=g$; that placement, and the physical construction built on it in the complexified-coordinates setting, are the subject of the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* of the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*.
 
 **Corollary (the norm).** Every $\mathbb{C}$-linear automorphism preserves the biquaternion norm, and every $\mathbb{R}$-linear automorphism preserves the real norm $r=\sqrt{|N|}$. For an inner automorphism the complex statement is multiplicativity, $\langle g\tilde{Q}g^{-1}\rangle_{\natural}=\langle g\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle g\rangle_{\natural}^{-1}=\langle\tilde{Q}\rangle_{\natural}$; complex conjugation reverses the sign of the imaginary part, $\langle\bar{\tilde{Q}}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}^{*}$, and so preserves $|N|$ without preserving $\langle\cdot\rangle_{\natural}$ itself.
 
 **Remark (automorphisms against isometries).** The automorphism group is a proper subgroup of the full isometry group $O(N)$ of the real norm on $\mathbb{B}\cong\mathbb{R}^8$: $PGL(2,\mathbb{C})$ has real dimension $6$, whereas the isometry group of a non-degenerate form of signature $(4,4)$ on $\mathbb{R}^8$ has real dimension $\tfrac{8\cdot7}{2}=28$. The automorphisms are the isometries that also preserve the algebra; the further isometries are not algebra maps.
 
-**Example.** For $g = e_1$, with $e_1^{-1} = -e_1$, conjugation fixes $e_1$, $e_0$, $i$ and reverses the signs of $e_2$ and $e_3$: $\iota_{e_1}(e_1) = e_1$, $\iota_{e_1}(e_2) = -e_2$, $\iota_{e_1}(e_3) = -e_3$. Indeed $e_1 e_2 e_1^{-1} = -(e_1 e_2)e_1 = -e_3 e_1 = -e_2$, using $e_1 e_2 = e_3$ and $e_3 e_1 = e_2$.
+**Example.** For $g = \vec e_x$, with $\vec e_x^{-1} = -\vec e_x$, conjugation fixes $\vec e_x$, $e_t$, $i$ and reverses the signs of $\vec e_y$ and $\vec e_z$: $\iota_{\vec e_x}(\vec e_x) = \vec e_x$, $\iota_{\vec e_x}(\vec e_y) = -\vec e_y$, $\iota_{\vec e_x}(\vec e_z) = -\vec e_z$. Indeed $\vec e_x \vec e_y \vec e_x^{-1} = -(\vec e_x \vec e_y)\vec e_x = -\vec e_z \vec e_x = -\vec e_y$, using $\vec e_x \vec e_y = \vec e_z$ and $\vec e_z \vec e_x = \vec e_y$.
 
 **Remark.** Quaternion conjugation satisfies $(\tilde R\tilde T)^{\natural} = \tilde{T}^{\natural}\,\tilde{R}^{\natural}$ and is an **anti-automorphism**, not an automorphism, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$; complex conjugation is an automorphism but is not $\mathbb{C}$-linear, so it is not in $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ either. It reappears over $\mathbb{R}$ below.
 
@@ -96,7 +96,7 @@ Throughout this section the ground field is $\mathbb{C}$.
 
 **Definition.** A **$\mathbb{C}$-linear derivation** of $\mathbb{B}$ is a $\mathbb{C}$-linear map $D : \mathbb{B} \to \mathbb{B}$ with $D(\tilde R\tilde T) = D(\tilde R)\,\tilde T + \tilde R\,D(\tilde T)$ for all $\tilde R, \tilde T \in \mathbb{B}$. The set of all such maps is a complex vector space, written $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, and it is a Lie algebra under the commutator bracket $[D_1, D_2] = D_1 \circ D_2 - D_2 \circ D_1$.
 
-Every derivation satisfies $D(e_0) = 0$, since $D(e_0) = D(e_0 e_0) = 2D(e_0)$.
+Every derivation satisfies $D(e_t) = 0$, since $D(e_t) = D(e_t e_t) = 2D(e_t)$.
 
 **Inner derivations.** For each $\tilde A \in \mathbb{B}$ the map $\mathrm{ad}_{\tilde A}(\tilde R) = \tilde A \tilde R - \tilde R \tilde A = [\tilde A, \tilde R]$ is a $\mathbb{C}$-linear derivation, the **inner derivation** determined by $\tilde A$; the Jacobi identity in the form $[[\tilde A,\tilde R],\tilde T] + [\tilde R,[\tilde A,\tilde T]] = [\tilde A,[\tilde R,\tilde T]]$ is exactly the Leibniz rule for $\mathrm{ad}_{\tilde A}$. The map $\mathrm{ad} : \mathbb{B} \to \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $\tilde A \mapsto \mathrm{ad}_{\tilde A}$, is $\mathbb{C}$-linear with kernel the centre, since $\mathrm{ad}_{\tilde A} = 0$ says exactly that $\tilde A$ commutes with everything: $\ker(\mathrm{ad}) = Z(\mathbb{B}) = \mathbb{C}_{\mathbb{B}}$.
 
@@ -106,25 +106,25 @@ $$
 \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B} / \mathbb{C}_{\mathbb{B}}.
 $$
 
-**Identification with the traceless part.** The quotient $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the **traceless part** of $\mathbb{B}$, the subspace of vanishing scalar part $\{\tilde{Q} : Q_0 = 0\} = \mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$, the **complex pure-vector part** of $\mathbb{B}$, a complex vector space of dimension $3$. The isomorphism is one of Lie algebras, because $[\mathrm{ad}_{\tilde A}, \mathrm{ad}_{\tilde B}] = \mathrm{ad}_{[\tilde A,\tilde B]}$.
+**Identification with the traceless part.** The quotient $\mathbb{B}/\mathbb{C}_{\mathbb{B}}$ is the **traceless part** of $\mathbb{B}$, the subspace of vanishing scalar part $\{\tilde{Q} : Q_t = 0\} = \mathrm{span}_{\mathbb{C}}\{\vec e_x, \vec e_y, \vec e_z\}$, the **complex pure-vector part** of $\mathbb{B}$, a complex vector space of dimension $3$. The isomorphism is one of Lie algebras, because $[\mathrm{ad}_{\tilde A}, \mathrm{ad}_{\tilde B}] = \mathrm{ad}_{[\tilde A,\tilde B]}$.
 
 **Dimension.** The derivation space has $\dim_{\mathbb{C}} \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) = 3$, hence real dimension $6$. This matches the automorphism group, which also has complex dimension $3$; its Lie algebra is $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.
 
-**The bivector reading.** Under the identification $\mathbb{B} \cong \mathrm{Cl}^{+}_{1,3}$, the real span $\mathrm{span}_{\mathbb{R}}\{e_1, e_2, e_3, i e_1, i e_2, i e_3\}$ is the six-dimensional **bivector subspace**, the real form of the complex pure-vector part, and its elements bracket into themselves. Thus the derivation algebra, viewed as a real Lie algebra, is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, equivalently, as a real Lie algebra, the realification of the complex pure-vector part, of real dimension $6$, which is the Lie algebra of the Lorentz group. The traceless part, the complex pure-vector part, and the bivector part are three descriptions of one object, with $\dim_{\mathbb{R}} = 2 \dim_{\mathbb{C}}$.
+**The bivector reading.** Under the identification $\mathbb{B} \cong \mathrm{Cl}^{+}_{1,3}$, the real span $\mathrm{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z, i \vec e_x, i \vec e_y, i \vec e_z\}$ is the six-dimensional **bivector subspace**, the real form of the complex pure-vector part, and its elements bracket into themselves. Thus the derivation algebra, viewed as a real Lie algebra, is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, equivalently, as a real Lie algebra, the realification of the complex pure-vector part, of real dimension $6$, which is the Lie algebra of the Lorentz group. The traceless part, the complex pure-vector part, and the bivector part are three descriptions of one object, with $\dim_{\mathbb{R}} = 2 \dim_{\mathbb{C}}$.
 
-**An explicit basis.** The three derivations $D_1 = \tfrac{1}{2}\mathrm{ad}_{e_1}$, $D_2 = \tfrac{1}{2}\mathrm{ad}_{e_2}$, $D_3 = \tfrac{1}{2}\mathrm{ad}_{e_3}$ are $\mathbb{C}$-linear, so each vanishes on $e_0$ and on $i$, and they act on $e_1, e_2, e_3$ by
+**An explicit basis.** The three derivations $D_1 = \tfrac{1}{2}\mathrm{ad}_{\vec e_x}$, $D_2 = \tfrac{1}{2}\mathrm{ad}_{\vec e_y}$, $D_3 = \tfrac{1}{2}\mathrm{ad}_{\vec e_z}$ are $\mathbb{C}$-linear, so each vanishes on $e_t$ and on $i$, and they act on $\vec e_x, \vec e_y, \vec e_z$ by
 
 $$
-D_1(e_2) = e_3, \quad D_1(e_3) = -e_2; \qquad D_2(e_3) = e_1, \quad D_2(e_1) = -e_3; \qquad D_3(e_1) = e_2, \quad D_3(e_2) = -e_1,
+D_1(\vec e_y) = \vec e_z, \quad D_1(\vec e_z) = -\vec e_y; \qquad D_2(\vec e_z) = \vec e_x, \quad D_2(\vec e_x) = -\vec e_z; \qquad D_3(\vec e_x) = \vec e_y, \quad D_3(\vec e_y) = -\vec e_x,
 $$
 
-with $D_1(e_1) = D_2(e_2) = D_3(e_3) = 0$. They satisfy the standard commutation relations,
+with $D_1(\vec e_x) = D_2(\vec e_y) = D_3(\vec e_z) = 0$. They satisfy the standard commutation relations,
 
 $$
 [D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2,
 $$
 
-so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$. For instance $D_1(e_2) = \tfrac{1}{2}(e_1 e_2 - e_2 e_1) = \tfrac{1}{2}(e_3 + e_3) = e_3$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[e_1,e_2]} = \tfrac{1}{4}\mathrm{ad}_{2e_3} = D_3$.
+so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$. For instance $D_1(\vec e_y) = \tfrac{1}{2}(\vec e_x \vec e_y - \vec e_y \vec e_x) = \tfrac{1}{2}(\vec e_z + \vec e_z) = \vec e_z$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[\vec e_x,\vec e_y]} = \tfrac{1}{4}\mathrm{ad}_{2\vec e_z} = D_3$.
 
 **Derivations and automorphisms.** The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_{\tilde A})(\tilde R) = \exp(t\tilde A)\, \tilde R\, \exp(-t\tilde A)$ for $\tilde A \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $\exp(t\tilde A)$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.
 
@@ -148,17 +148,17 @@ There is no semilinear analogue for derivations: a derivation cannot conjugate a
 
 ## Worked Examples
 
-**The conjugation involution.** Complex conjugation $c(\tilde{Q}) = \bar{\tilde{Q}}$ is an $\mathbb{R}$-algebra automorphism with $c(e_k) = e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the centre pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.
+**The conjugation involution.** Complex conjugation $c(\tilde{Q}) = \bar{\tilde{Q}}$ is an $\mathbb{R}$-algebra automorphism with $c(\vec e_k) = \vec e_k$ ($k = 0,1,2,3$) and $c(i) = -i$; it fixes the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ pointwise, negates the scalar imaginary, satisfies $c^{2} = \mathrm{id}$, preserves the product, and is conjugate-linear over $\mathbb{C}$. It is not inner, because inner automorphisms fix the centre pointwise whereas $c(i) = -i$, so it represents the nontrivial coset of $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})$ in $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})$.
 
-**A rotation derivation.** Take $D = D_3 = \tfrac{1}{2}\mathrm{ad}_{e_3}$, so that $D(e_1) = e_2$ and $D(e_2) = -e_1$. Its exponential acts by
+**A rotation derivation.** Take $D = D_3 = \tfrac{1}{2}\mathrm{ad}_{\vec e_z}$, so that $D(\vec e_x) = \vec e_y$ and $D(\vec e_y) = -\vec e_x$. Its exponential acts by
 
 $$
-\exp(tD)(e_1) = \cos t\, e_1 + \sin t\, e_2,
+\exp(tD)(\vec e_x) = \cos t\, \vec e_x + \sin t\, \vec e_y,
 $$
 
-as one checks by summing the series. Equivalently, $\exp(t e_3/2) = \cos(t/2) + \sin(t/2) e_3$, and conjugation by this unit quaternion rotates the $e_1$-$e_2$ plane, matching $\exp(t D) = \mathrm{Ad}_{\exp(t e_3/2)}$.
+as one checks by summing the series. Equivalently, $\exp(t \vec e_z/2) = \cos(t/2) + \sin(t/2) \vec e_z$, and conjugation by this unit quaternion rotates the $\vec e_x$-$\vec e_y$ plane, matching $\exp(t D) = \mathrm{Ad}_{\exp(t \vec e_z/2)}$.
 
-Every element of $\mathrm{span}_{\mathbb{C}}\{e_1, e_2, e_3\}$ gives an inner derivation, and $\mathrm{ad}_{\tilde A}$ depends only on $\tilde A$ modulo the centre $\mathbb{C}_{\mathbb{B}}$; for instance $\tilde A = e_1 + i e_2$ gives a derivation that is not a scalar multiple of any $D_k$.
+Every element of $\mathrm{span}_{\mathbb{C}}\{\vec e_x, \vec e_y, \vec e_z\}$ gives an inner derivation, and $\mathrm{ad}_{\tilde A}$ depends only on $\tilde A$ modulo the centre $\mathbb{C}_{\mathbb{B}}$; for instance $\tilde A = \vec e_x + i \vec e_y$ gives a derivation that is not a scalar multiple of any $D_k$.
 
 ## Summary
 
@@ -168,7 +168,7 @@ The two ground fields give the following table; the field is stated explicitly i
 |---|---|---|
 | Algebra | simple $\mathbb{C}$-algebra, complex dimension $4$ | simple $\mathbb{R}$-algebra, real dimension $8$ |
 | Ideals | $\{0\}$ and $\mathbb{B}$ only | $\{0\}$ and $\mathbb{B}$ only |
-| Centre | $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_0$, dimension $1$ over $\mathbb{C}$ | $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, dimension $2$ over $\mathbb{R}$ |
+| Centre | $\mathbb{C}_{\mathbb{B}} = \mathbb{C} e_t$, dimension $1$ over $\mathbb{C}$ | $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, dimension $2$ over $\mathbb{R}$ |
 | Central simple? | yes, central simple over $\mathbb{C}$ | no: simple, but centre $\mathbb{C} \neq \mathbb{R}$ |
 | Automorphism group | $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, complex dimension $3$ ($6$ over $\mathbb{R}$), connected | $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$, real dimension $6$, two components |
 | Derivation space (the Lie algebra of the automorphism group) | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$, complex dimension $3$ ($6$ over $\mathbb{R}$); traceless part, complex pure-vector part, bivectors | $\mathrm{Der}_{\mathbb{R}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, real dimension $6$, isomorphic to the Lorentz algebra $\mathrm{SO}(1,3)$ |
@@ -180,9 +180,9 @@ In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra; complex dimension $4$, real dimension $8$ |
-| $e_0, e_1, e_2, e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | Algebra basis, $e_t = 1$, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Centre of $\mathbb{B}$; the scalar subspace |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of $\mathbb{B}$; the scalar subspace |
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, vanishing scalar part |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$ | Real-quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
@@ -192,7 +192,7 @@ In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism 
 | $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$ | Derivations over $\mathbb{C}$, $\cong \mathbb{B}/\mathbb{C}_{\mathbb{B}}$ |
 | $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$ | Derivations over $\mathbb{R}$, $\cong \mathrm{SO}(1,3)$ as a real Lie algebra |
 | $\mathrm{ad}_{\tilde A}(\tilde R) = [\tilde A,\tilde R]$ | Inner derivation by $\tilde A$ |
-| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc. |
+| $D_k = \tfrac{1}{2}\mathrm{ad}_{\vec e_k}$ | Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc. |
 | $\mathrm{Cl}_{1,3}^{+}$ | Even Clifford algebra; isomorphic to $\mathbb{B}$ |
 
 ## Further Reading

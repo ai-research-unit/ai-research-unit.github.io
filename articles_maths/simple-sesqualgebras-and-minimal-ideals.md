@@ -120,11 +120,11 @@ The two-sided case runs along the centre.
 
 ### The Biquaternions
 
-**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra*, which conjugates the coefficient and negates $e_1, e_2, e_3$ while fixing $e_0$. The algebra is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and like the matrices it is not a division algebra. The idempotents
+**Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra*, which conjugates the coefficient and negates $\vec e_x, \vec e_y, \vec e_z$ while fixing $e_t$. The algebra is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and like the matrices it is not a division algebra. The idempotents
 $$
-\tilde\Pi_+ = \tfrac12(e_0 + i e_3), \qquad \tilde\Pi_- = \tfrac12(e_0 - i e_3)
+\tilde\Pi_+ = \tfrac12(e_t + i \vec e_z), \qquad \tilde\Pi_- = \tfrac12(e_t - i \vec e_z)
 $$
-of that article are primitive and noncentral, and both are Hermitian for this involution, since $(i e_3)^{*} = e_3^{*} i^{*} = (-e_3)(-i) = i e_3$. Here $i e_3$ is a root of $+1$, $(i e_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are its associated idempotents. They generate the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, whose two-sided ideal is all of $\mathbb{B}$ because the algebra is simple. The involution sends $\mathbb{B}\tilde\Pi_\pm$ to the conjugate image $\tilde\Pi_\pm\mathbb{B}$, which is a minimal right ideal and a different set: a minimal left ideal $Ae$ is stable only when the idempotent is both Hermitian and central, and $\tilde\Pi_\pm$ is not central. The centre is $\mathbb{C}$, so the algebra is central over $\mathbb{C}$ but not over $\mathbb{R}$.
+of that article are primitive and noncentral, and both are Hermitian for this involution, since $(i \vec e_z)^{*} = \vec e_z^{*} i^{*} = (-\vec e_z)(-i) = i \vec e_z$. Here $i \vec e_z$ is a root of $+1$, $(i \vec e_z)^2 = e_t$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are its associated idempotents. They generate the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, whose two-sided ideal is all of $\mathbb{B}$ because the algebra is simple. The involution sends $\mathbb{B}\tilde\Pi_\pm$ to the conjugate image $\tilde\Pi_\pm\mathbb{B}$, which is a minimal right ideal and a different set: a minimal left ideal $Ae$ is stable only when the idempotent is both Hermitian and central, and $\tilde\Pi_\pm$ is not central. The centre is $\mathbb{C}$, so the algebra is central over $\mathbb{C}$ but not over $\mathbb{R}$.
 
 ## Summary
 

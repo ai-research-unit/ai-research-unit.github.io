@@ -4,7 +4,7 @@
 
 This is one of the worked exercises on the biquaternion Dirac equation. It exists to test its parent article, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, which supplies the field, the two natural spinor bases, the plane-wave solution structure, the covariant normalisations, the spin sums, and the biquaternionic mass-shell condition.
 
-We assume the parent article throughout and do not re-derive the equation. We take over from it: the spinor-module form of the equation, $(i\gamma^\mu\partial_\mu-m)\psi=0$; the two bases, **chiral** and **Dirac**; the plane-wave branches $\psi=w(\vec p)\exp(-i(Et-\vec p\cdot\vec x))$ and $\psi=v(\vec p)\exp(+i(Et-\vec p\cdot\vec x))$ with $E=+\sqrt{\vec p^2+m^2}$; the momentum-space equations $(\not p-m)w=0$ and $(\not p+m)v=0$; the wave biquaternion and the mass-shell condition. The value of an exercise of this kind lies in the worked solutions, so each problem is carried to a definite answer.
+We assume the parent article throughout and do not re-derive the equation. We take over from it: the spinor-module form of the equation, $(i\gamma^\mu\partial_\mu-m)\psi=0$; the two bases, **chiral** and **Dirac**; the plane-wave branches $\psi=w(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\psi=v(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ with $E=+\sqrt{\vec p^2+m^2}$; the momentum-space equations $(\not p-m)w=0$ and $(\not p+m)v=0$; the wave biquaternion and the mass-shell condition. The value of an exercise of this kind lies in the worked solutions, so each problem is carried to a definite answer.
 
 The six problems are: **(1)** write out $w^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ explicitly at rest and at general momentum; **(2)** verify the covariant normalisations $\bar w w=2m$, $\bar v v=-2m$ and the orthogonality $\bar w v=0$; **(3)** verify the spin sums; **(4)** take the massless limit and exhibit the helicity–chirality locking; **(5)** verify the gamma-matrix algebra in the two representations and determine how the Lorentz generators change basis; **(6)** verify the biquaternionic mass-shell condition.
 
@@ -224,7 +224,7 @@ $$
 \boldsymbol\sigma\cdot\vec u_p\,\psi_R=+\psi_R,\qquad \boldsymbol\sigma\cdot\vec u_p\,\psi_L=-\psi_L,
 $$
 
-which is the helicity–chirality locking again. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial_t\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial_t\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, where $p$ is the momentum operator (the parent writes the unit direction $\vec u_p$ in the plane-wave formulas; in the operator equations the momentum is $p=-i\hbar\nabla$). Each Weyl equation has a two-dimensional solution space, and the Dirac equation is recovered as the pair.
+which is the helicity–chirality locking again. Restoring $c$ and $\hbar$ and passing to the time-dependent form gives the parent's Weyl equations $i\hbar\,\partial/\partial t\psi_R=c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_R$ and $i\hbar\,\partial/\partial t\psi_L=-c\,\boldsymbol\sigma\cdot\vec u_p\,\psi_L$, where $p$ is the momentum operator (the parent writes the unit direction $\vec u_p$ in the plane-wave formulas; in the operator equations the momentum is $p=-i\hbar\nabla$). Each Weyl equation has a two-dimensional solution space, and the Dirac equation is recovered as the pair.
 
 ## Problem 5: The gamma-matrix algebra and the change of basis
 
@@ -271,7 +271,7 @@ $$
 S^{jk}_c=\tfrac12\epsilon^{jkl}\begin{pmatrix}\sigma_l&0\\0&\sigma_l\end{pmatrix}
 =\tfrac12\epsilon^{jkl}\,\sigma_l\otimes I_2,
 \qquad
-S^{0k}_c=\tfrac i2\begin{pmatrix}-\sigma_k&0\\0&\sigma_k\end{pmatrix}
+S^{tk}_c=\tfrac i2\begin{pmatrix}-\sigma_k&0\\0&\sigma_k\end{pmatrix}
 =\tfrac i2\,\gamma_5^c\,(\sigma_k\otimes I_2).
 $$
 
@@ -279,7 +279,7 @@ Both are block diagonal, so both preserve chirality, $[S^{\mu\nu},\gamma_5]=0$; 
 
 $$
 S^{jk}_d=S^{jk}_c,\qquad
-S^{0k}_d=\tfrac i2\,\gamma_5^d\,(\sigma_k\otimes I_2)
+S^{tk}_d=\tfrac i2\,\gamma_5^d\,(\sigma_k\otimes I_2)
 =\tfrac i2\begin{pmatrix}0&\sigma_k\\\sigma_k&0\end{pmatrix}.
 $$
 
@@ -292,7 +292,7 @@ In the Dirac basis the rotation generators are again block diagonal, while the b
 **Solution.** The parent's plane-wave ansatz carries the wave biquaternion $\tilde k$, which the parent identifies with the four-wavevector
 
 $$
-\tilde K=\frac{i\omega}{c}\,e_0+\vec k,\qquad \vec k=k_1e_1+k_2e_2+k_3e_3 .
+\tilde K=\frac{i\omega}{c}\,e_t+\vec k,\qquad \vec k=k_1\vec e_x+k_2\vec e_y+k_3\vec e_z .
 $$
 
 This is an element of the material sector $\mathbb M_-$: imaginary scalar part, real vector part. Since the biquaternion norm of $\mathbb B$ is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$,
@@ -335,7 +335,7 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators; $g=-\eta$ |
@@ -347,7 +347,7 @@ Two items needed in this exercise are not displayed in the parent article: the c
 | $\xi^{(r)},\eta^{(r)}$; $\chi_\pm$ | Two-spinors; helicity eigenspinors, $\boldsymbol\sigma\cdot\vec u_p\chi_\pm=\pm\chi_\pm$ |
 | $U=\tfrac{1}{\sqrt2}\left(\begin{smallmatrix}I_2&I_2\\-I_2&I_2\end{smallmatrix}\right)$ | Unitary change of basis, $\gamma^\mu_d=U\gamma^\mu_cU^\dagger$ |
 | $S^{\mu\nu}=\tfrac i4[\gamma^\mu,\gamma^\nu]$ | Lorentz generators of the spinor representation |
-| $\tilde K=i\omega/c\,e_0+\vec k$ | Wave biquaternion (four-wavevector) |
+| $\tilde K=i\omega/c\,e_t+\vec k$ | Wave biquaternion (four-wavevector) |
 | $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 
 ## Further Reading

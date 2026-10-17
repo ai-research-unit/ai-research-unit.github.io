@@ -8,7 +8,7 @@ The quadratic family, its filled Julia set, its Julia set and its critical set a
 
 The article owns the definition of the connectedness locus and of the critical-orbit locus, the escape-time algorithm and the obstruction to a single escape radius, the exact reduction on the central and commutative slices, and the placement of the real, the complex and the quaternion parameter sweeps. It does not prove any connectedness criterion in the full algebra; that is stated as the open problem it is.
 
-**Standing convention.** The parameter is $\tilde C\in\mathbb{B}$, the map is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, the filled Julia set is $\mathcal K_{\tilde C}$ and the Julia set is $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A central parameter is written $\tilde C=Ce_0$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
+**Standing convention.** The parameter is $\tilde C\in\mathbb{B}$, the map is $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ in the general plain bilinear product, the filled Julia set is $\mathcal K_{\tilde C}$ and the Julia set is $J_{\tilde C}=\partial\mathcal K_{\tilde C}$. A central parameter is written $\tilde C=Ce_t$ with $C\in\mathbb{C}$; the connectedness locus is written $\mathcal B$ and the critical-orbit locus $\mathcal C$.
 
 ## The Two Loci
 
@@ -42,7 +42,7 @@ In $\mathbb{B}$ no such bound exists in the Euclidean norm, because the biquater
 
 **Proposition (the collapse).** There are non-zero $\tilde Q\in\mathbb{B}$ with $\tilde Q^2=0$ and $\|\tilde Q\|_E$ arbitrarily large, so $\|\tilde Q^2\|_E$ admits no lower bound in terms of $\|\tilde Q\|_E$ and the classical escape-time test cannot be applied to the Euclidean norm.
 
-**Proof.** A pure vector $\vec Q=\sum_{k=1}^3Q_ke_k$ has $\vec Q^2=-(\sum_kQ_k^2)e_0$, so $\vec Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=e_1+ie_2$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.
+**Proof.** A pure vector $\vec Q=\sum_{k=1}^3Q_k\vec e_k$ has $\vec Q^2=-(\sum_kQ_k^2)e_t$, so $\vec Q^2=0$ exactly when $\sum_kQ_k^2=0$; the element $\tilde Q=\vec e_x+i\vec e_y$ satisfies this, and $\lambda\tilde Q$ does too for every $\lambda\in\mathbb{C}$. The norm of $\lambda\tilde Q$ is $|\lambda|\sqrt2$, unbounded, while its square is zero.
 
 The failure is not a defect of the Euclidean norm alone. The biquaternion norm $\langle\cdot\rangle_{\natural}$ is multiplicative but complex-valued and vanishes on the zero divisors, and its modulus $r=\sqrt{|N|}$ vanishes on the same set; neither can serve as a size. The unique real multiplicative semi-norm of the algebra is $r$ itself, and a semi-norm that vanishes off the origin cannot decide escape (*Norm and Invertibility in the General Quaternionic Algebra*). **The escape-time algorithm exists in $\mathbb{B}$ only off the zero-divisor cone.**
 
@@ -78,25 +78,25 @@ and dividing by $\sqrt2$ gives $\|\tilde Q^2\|_E=\|M^2\|_F/\sqrt2\ge\delta^2\|\t
 
 ## The Central Slice
 
-**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde C=Ce_0$. Then $F_{\tilde C}^n(0)=q_n(0)e_0$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
+**Proposition (the critical orbit of a central parameter is classical).** Let $\tilde C=Ce_t$. Then $F_{\tilde C}^n(0)=q_n(0)e_t$, where $q_n(0)$ is the $n$-th iterate of $0$ under $\zeta\mapsto\zeta^2+C$. In particular
 
 $$
-0\in\mathcal C_{\text{central}}:=\{\tilde C=Ce_0 : F_{\tilde C}^n(0) \text{ bounded}\} \iff C\in\mathcal M ,
+0\in\mathcal C_{\text{central}}:=\{\tilde C=Ce_t : F_{\tilde C}^n(0) \text{ bounded}\} \iff C\in\mathcal M ,
 $$
 
 the complex Mandelbrot set.
 
-**Proof.** $F_{\tilde C}(0)=\tilde C=Ce_0$, and $F_{\tilde C}(Ae_0)=A^2e_0+Ce_0=(A^2+C)e_0$ because $e_0$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.
+**Proof.** $F_{\tilde C}(0)=\tilde C=Ce_t$, and $F_{\tilde C}(Ae_t)=A^2e_t+Ce_t=(A^2+C)e_t$ because $e_t$ is the identity and the parameter is central; induction gives the claim. Boundedness in $\mathbb{B}$ is the boundedness of the complex sequence, which is the definition of the Mandelbrot set.
 
-**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde C=Ce_0$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
+**Remark (the whole central slice is classical).** The proposition is the orbit of the single point $0$; more is true for the filled Julia set, by the eigenvalue reduction of *The Biquaternion Quadratic Map and Its Julia Sets*: for a central parameter $\tilde C=Ce_t$ and a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$, the point $\tilde Q$ lies in $\mathcal K_{\tilde C}$ exactly when both $\lambda_j$ lie in the complex filled Julia set $K_C$. **The central slice of the biquaternion theory is the complex theory, read on the two eigenvalues.**
 
-**Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_0$.
+**Corollary (the centre is a slice of $\mathcal C$).** The intersection of $\mathcal C$ with the centre $\mathbb{C}_{\mathbb{B}}$ is the embedded copy of the Mandelbrot set $\mathcal M\subset\mathbb{C}$, under $C\mapsto Ce_t$.
 
 ## The Commutative Plane and the Product Locus
 
 The reduction is not special to the centre: every two-dimensional commutative subalgebra cut out by an idempotent gives the same phenomenon, with two independent complex parameters.
 
-**Theorem (the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi'=e_0-\tilde\Pi$ be its complement, so that $\tilde\Pi\tilde\Pi'=\tilde\Pi'\tilde\Pi=0$ and $\tilde\Pi+\tilde\Pi'=e_0$. The plane
+**Theorem (the idempotent plane).** Let $\tilde\Pi$ be a primitive idempotent of $\mathbb{B}$ and let $\tilde\Pi'=e_t-\tilde\Pi$ be its complement, so that $\tilde\Pi\tilde\Pi'=\tilde\Pi'\tilde\Pi=0$ and $\tilde\Pi+\tilde\Pi'=e_t$. The plane
 
 $$
 W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'
@@ -126,11 +126,11 @@ The parameter space is eight-real-dimensional, and the article records the three
 
 ### The Real Slice
 
-For $\tilde C=ce_0$ with $c\in\mathbb{R}$ the central parameter is real, the complex map has real coefficients, and the critical orbit is the real critical orbit of *The Real Quadratic Family and Its Bifurcations*. The slice is therefore the real interval $[-2,\tfrac14]$ of the classical theory, at the real axis of the embedded copy of $\mathcal M$, and on it the bifurcation structure is the one of the real quadratic family. The whole-picture symmetry is the full group of involutions $G$, since a real central parameter is fixed by every element of $G$ (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Conjugations and the Equivariance*).
+For $\tilde C=ce_t$ with $c\in\mathbb{R}$ the central parameter is real, the complex map has real coefficients, and the critical orbit is the real critical orbit of *The Real Quadratic Family and Its Bifurcations*. The slice is therefore the real interval $[-2,\tfrac14]$ of the classical theory, at the real axis of the embedded copy of $\mathcal M$, and on it the bifurcation structure is the one of the real quadratic family. The whole-picture symmetry is the full group of involutions $G$, since a real central parameter is fixed by every element of $G$ (*The Biquaternion Quadratic Map and Its Julia Sets*, §*The Conjugations and the Equivariance*).
 
 ### The Complex Slice
 
-For $\tilde C=Ce_0$ with $C\in\mathbb{C}$ the slice is the whole classical Mandelbrot set, by the corollary of §*The Central Slice*, and its symmetry is the subgroup $\{\mathrm{id},{}^{\natural}\}$ together with the single reflection $C\mapsto\bar C$ of the complex plane, which is not one of the four biquaternion conjugations but the bar restricted to the centre. It is the slice on which the biquaternion escape-time picture coincides with the classical one, and is the picture usually shown as "the biquaternion Mandelbrot set".
+For $\tilde C=Ce_t$ with $C\in\mathbb{C}$ the slice is the whole classical Mandelbrot set, by the corollary of §*The Central Slice*, and its symmetry is the subgroup $\{\mathrm{id},{}^{\natural}\}$ together with the single reflection $C\mapsto\bar C$ of the complex plane, which is not one of the four biquaternion conjugations but the bar restricted to the centre. It is the slice on which the biquaternion escape-time picture coincides with the classical one, and is the picture usually shown as "the biquaternion Mandelbrot set".
 
 ### The Quaternion Slice
 
@@ -156,7 +156,7 @@ The connectedness locus $\mathcal B$ and the critical-orbit locus $\mathcal C$ a
 | $\sigma_1\ge\sigma_2$ | the singular values of $\mathsf{M}_2(\tilde Q)$; $\delta=\sigma_2/\sigma_1$ |
 | $R_\delta$ | the conditional escape radius at condition $\delta$ |
 | $\|\cdot\|_E$, $\|\cdot\|_F$ | the Euclidean norm on $\mathbb{B}$ and the Frobenius norm on $M_2(\mathbb{C})$ |
-| $\tilde\Pi$, $\tilde\Pi'=e_0-\tilde\Pi$ | a primitive idempotent and its complement |
+| $\tilde\Pi$, $\tilde\Pi'=e_t-\tilde\Pi$ | a primitive idempotent and its complement |
 | $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the commutative idempotent plane |
 | $G$ | the group of involutions |
 

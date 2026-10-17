@@ -33,30 +33,30 @@ for all $u \in \Gamma_c(E)$ and $v \in \Gamma_c(F)$ of compact support. This is 
 **Theorem (existence and uniqueness).** For every differential operator $P$ of order at most $k$ there is exactly one formal adjoint $P^*$, and it is a differential operator of order at most $k$. In a chart with coordinates and frames, if
 
 $$
-Pu = \sum_{|\alpha|\le k} A_\alpha(x)\,\partial_\alpha u, \qquad d\mu = \rho(x)\,dx,
+Pu = \sum_{|\alpha|\le k} A_\alpha(x)\,\partial^\alpha u, \qquad d\mu = \rho(x)\,dx,
 $$
 
 then
 
 $$
-P^*v = \sum_{|\alpha|\le k} (-1)^{|\alpha|}\,\partial_\alpha^{\dagger}\bigl(A_\alpha(x)^* v\bigr),
+P^*v = \sum_{|\alpha|\le k} (-1)^{|\alpha|}\,\partial^\alpha\bigl(A_\alpha(x)^* v\bigr),
 $$
 
-where $A_\alpha^*$ is the pointwise adjoint of the coefficient matrix with respect to the two fibrewise metrics, and $\partial_\alpha^{\dagger}$ is the formal adjoint of the monomial $\partial_\alpha$ with respect to the density $\rho\,dx$;
+where $A_\alpha^*$ is the pointwise adjoint of the coefficient matrix with respect to the two fibrewise metrics, and $\partial^\alpha$ is the formal adjoint of the monomial $\partial^\alpha$ with respect to the density $\rho\,dx$;
 
 $$
-\partial_i^{\dagger} = -\partial_i - \partial_i\log\rho,
+(\partial/\partial x_i)^{\dagger} = -\partial/\partial x_i - \partial/\partial x_i\,\log\rho,
 $$
 
-so that each $\partial_\alpha^{\dagger}$ is a differential operator of order $|\alpha|$, and $P^*$ is of order at most $k$.
+so that each $\partial^\alpha$ is a differential operator of order $|\alpha|$, and $P^*$ is of order at most $k$.
 
-*Proof.* It is enough to treat the operator $u\mapsto A(x)\,u$ of order zero and the operator $\partial_i$, because integration by parts composes. For the order-zero operator, $\int\langle Au,v\rangle\rho\,dx = \int\langle u, A^*v\rangle\rho\,dx$ with $A^*$ the pointwise adjoint, so $(A)^* = A^*$. For the derivative,
+*Proof.* It is enough to treat the operator $u\mapsto A(x)\,u$ of order zero and the operator $\partial/\partial x_i$, because integration by parts composes. For the order-zero operator, $\int\langle Au,v\rangle\rho\,dx = \int\langle u, A^*v\rangle\rho\,dx$ with $A^*$ the pointwise adjoint, so $(A)^* = A^*$. For the derivative,
 
 $$
-\int\langle\partial_iu,v\rangle\rho\,dx = -\int\langle u,\partial_iv\rangle\rho\,dx - \int\langle u,v\rangle\,\partial_i\rho\,dx = \int\langle u,(-\partial_i-\partial_i\log\rho)v\rangle\rho\,dx,
+\int\langle\partial/\partial x_i\,u,v\rangle\rho\,dx = -\int\langle u,\partial/\partial x_i\,v\rangle\rho\,dx - \int\langle u,v\rangle\,\partial/\partial x_i\,\rho\,dx = \int\langle u,(-\partial/\partial x_i-\partial/\partial x_i\,\log\rho)v\rangle\rho\,dx,
 $$
 
-by the Leibniz rule $\partial_i(\rho\langle u,v\rangle) = \rho\langle\partial_iu,v\rangle + \rho\langle u,\partial_iv\rangle + \partial_i\rho\,\langle u,v\rangle$ and the fundamental theorem of calculus, the boundary term vanishing for compact support. Hence $\partial_i^{\dagger} = -\partial_i-\partial_i\log\rho$. Composing the transposes in reverse order gives the displayed formula, and each term is a differential operator of the stated order. Uniqueness: if $Q$ and $Q'$ are two formal adjoints, then $\langle u,(Q-Q')v\rangle_{L^2}=0$ for all compactly supported $u$ and $v$, which forces $Q=Q'$ by the fundamental lemma of the calculus of variations, the localisation of the pairing.
+by the Leibniz rule $\partial/\partial x_i(\rho\langle u,v\rangle) = \rho\langle\partial/\partial x_i\,u,v\rangle + \rho\langle u,\partial/\partial x_i\,v\rangle + \partial/\partial x_i\,\rho\,\langle u,v\rangle$ and the fundamental theorem of calculus, the boundary term vanishing for compact support. Hence $(\partial/\partial x_i)^{\dagger} = -\partial/\partial x_i-\partial/\partial x_i\,\log\rho$. Composing the transposes in reverse order gives the displayed formula, and each term is a differential operator of the stated order. Uniqueness: if $Q$ and $Q'$ are two formal adjoints, then $\langle u,(Q-Q')v\rangle_{L^2}=0$ for all compactly supported $u$ and $v$, which forces $Q=Q'$ by the fundamental lemma of the calculus of variations, the localisation of the pairing.
 
 ### The Boundary Term
 
@@ -74,7 +74,7 @@ $$
 
 the **Green formula**, whose right-hand side is the boundary term. The formal adjoint is therefore the adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.
 
-*Proof.* The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is, by the computation of the previous theorem, a sum of terms each of which is a total divergence: the integration by parts was performed by writing each term $\langle A_\alpha\partial_\alpha u,v\rangle\rho$ as $\partial(\cdots) + \langle u,(\cdots)\rangle\rho$, and the total derivatives collect into the divergence of a single vector field $W$. The Green formula is the divergence theorem of *Differential Forms and Stokes' Theorem*, with the boundary measure $dS$ and the outer normal $\nu$.
+*Proof.* The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is, by the computation of the previous theorem, a sum of terms each of which is a total divergence: the integration by parts was performed by writing each term $\langle A_\alpha\partial^\alpha u,v\rangle\rho$ as $\partial(\cdots) + \langle u,(\cdots)\rangle\rho$, and the total derivatives collect into the divergence of a single vector field $W$. The Green formula is the divergence theorem of *Differential Forms and Stokes' Theorem*, with the boundary measure $dS$ and the outer normal $\nu$.
 
 ## The Symbol of the Adjoint
 
@@ -86,7 +86,7 @@ $$
 
 the adjoint being taken with respect to the fibrewise metrics; consequently $P$ and $P^*$ have the same characteristic variety and $P$ is elliptic exactly when $P^*$ is.
 
-*Proof.* The transposition of the local expression $\sum_{|\alpha|\le k}A_\alpha\partial_\alpha$ reverses the order of the factors and sends each top-order derivative $\partial_\alpha$ to $(-1)^{|\alpha|}\partial_\alpha$ up to lower-order terms, which are produced by the derivatives of the density and of the coefficients; the contributions to order $k$ come only from $|\alpha|=k$, and the density contributes a zeroth-order term. Hence the symbol of the adjoint is the adjoint matrix with the sign $(-1)^k$; the lower-order terms do not affect it. The characteristic variety is the zero set of the determinant of the symbol, which is transported to its adjoint with the same dimension and the same invertibility.
+*Proof.* The transposition of the local expression $\sum_{|\alpha|\le k}A_\alpha\partial^\alpha$ reverses the order of the factors and sends each top-order derivative $\partial^\alpha$ to $(-1)^{|\alpha|}\partial^\alpha$ up to lower-order terms, which are produced by the derivatives of the density and of the coefficients; the contributions to order $k$ come only from $|\alpha|=k$, and the density contributes a zeroth-order term. Hence the symbol of the adjoint is the adjoint matrix with the sign $(-1)^k$; the lower-order terms do not affect it. The characteristic variety is the zero set of the determinant of the symbol, which is transported to its adjoint with the same dimension and the same invertibility.
 
 ## Formally Self-Adjoint Operators
 
@@ -142,7 +142,7 @@ which is the energy form of the operator; the operator is nonnegative, $P \geq 0
 
 ## Summary
 
-The formal adjoint of a differential operator is defined by the integration-by-parts identity $\int\langle Pu,v\rangle d\mu=\int\langle u,P^*v\rangle d\mu$ for compactly supported sections; it exists, is unique, has the same order as the operator, and its local form is the transposed expression $\sum(-1)^{|\alpha|}\partial_\alpha^{\dagger}(A_\alpha^*v)$ with the density correction $\partial_i^{\dagger}=-\partial_i-\partial_i\log\rho$ in each derivative. The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is the divergence of a vector field, the Lagrange identity, which integrates to the boundary term of Green's formula; the formal adjoint is the true adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.
+The formal adjoint of a differential operator is defined by the integration-by-parts identity $\int\langle Pu,v\rangle d\mu=\int\langle u,P^*v\rangle d\mu$ for compactly supported sections; it exists, is unique, has the same order as the operator, and its local form is the transposed expression $\sum(-1)^{|\alpha|}\partial^\alpha(A_\alpha^*v)$ with the density correction $(\partial/\partial x_i)^{\dagger}=-\partial/\partial x_i-\partial/\partial x_i\,\log\rho$ in each derivative. The difference $\langle v,Pu\rangle-\langle u,P^*v\rangle$ is the divergence of a vector field, the Lagrange identity, which integrates to the boundary term of Green's formula; the formal adjoint is the true adjoint on the compactly supported sections exactly when the boundary term vanishes, which is the origin of the boundary conditions of the global theory.
 
 The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so the characteristic variety and the ellipticity are preserved; a formally self-adjoint operator has a Hermitian symbol for even order and a skew-Hermitian one for odd order. The Sturm–Liouville operator, the Laplace–Beltrami operator, the divergence/gradient pair and the exterior derivative/codifferential pair are the examples; the quadratic form $\langle Pu,u\rangle$ is the Dirichlet form and the energy of the operator. The global $L^2$ adjoint, with its domain and boundary conditions, is the subject of the next entry.
 
@@ -155,8 +155,8 @@ The symbol of the adjoint is $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$, so t
 | $\langle u,v\rangle_{L^2} = \int_M\langle u,v\rangle\,d\mu$ | Pairing of compactly supported sections |
 | $P^*$ | Formal adjoint; $\langle Pu,v\rangle_{L^2}=\langle u,P^*v\rangle_{L^2}$ |
 | $A_\alpha^*$, pointwise adjoint | Adjoint of the coefficient matrix for the fibrewise metrics |
-| $\partial_i^{\dagger}=-\partial_i-\partial_i\log\rho$ | Formal adjoint of a derivative with respect to the density |
-| $P^*v=\sum(-1)^{\lvert\alpha\rvert}\partial_\alpha^{\dagger}(A_\alpha^*v)$ | Local formula for the formal adjoint |
+| $(\partial/\partial x_i)^{\dagger}=-\partial/\partial x_i-\partial/\partial x_i\,\log\rho$ | Formal adjoint of a derivative with respect to the density |
+| $P^*v=\sum(-1)^{\lvert\alpha\rvert}\partial^\alpha(A_\alpha^*v)$ | Local formula for the formal adjoint |
 | $\langle v,Pu\rangle-\langle u,P^*v\rangle=\operatorname{div}W$ | Lagrange identity |
 | $\int_\Omega(\langle v,Pu\rangle-\langle u,P^*v\rangle)=\int_{\partial\Omega}\langle W,\nu\rangle\,dS$ | Green formula; the boundary term |
 | $\sigma_k(P^*)(\xi)=(-1)^k\sigma_k(P)(\xi)^*$ | Symbol of the adjoint; ellipticity preserved |

@@ -51,7 +51,7 @@ and similarly for the right multiplication; the grade involution carries the adj
 
 **Proof.** $L_A^{*} = L_{A^{\dagger}}$, so $L_A^{*} = L_A$ exactly when $A^{\dagger} = A$; normality is $L_A^{*}L_A = L_{A^{\dagger}A} = L_{AA^{\dagger}} = L_AL_A^{*}$, which is $A^{\dagger}A = AA^{\dagger}$; unitarity is $L_A^{*}L_A = L_{A^{\dagger}A} = \mathrm{id}_E$, which is $A^{\dagger}A = \mathrm{id}$. The eigenvalue equation $L_AX = \lambda X$ is $AX = \lambda X$, and the spectrum of the left multiplication is that of $A$. The spectral statements are *Self-Adjoint Operators and the Spectral Theorem*, and the trace form is *The Left and Right Multiplication Operators on a Complex Vector Space*.
 
-**Proposition (the isometries of the trace form).** $L_A$ is an isometry of $\langle\cdot,\cdot\rangle$ exactly when $A$ is unitary; the unitary group of $V$ acts on $E$ by the left multiplications, and the map $A\mapsto L_A$ is a faithful unitary representation of $U(h)$ on $E$, whose adjoint is $A\mapsto A^{\dagger}$.
+**Proposition (the isometries of the trace form).** $L_A$ is an isometry of $\langle\cdot,\cdot\rangle$ exactly when $A$ is unitary; the unitary group of $V$ acts on $E$ by the left multiplications, and the map $A\mapsto L_A$ is a faithful unitary representation of $\mathrm{U}(h)$ on $E$, whose adjoint is $A\mapsto A^{\dagger}$.
 
 **Proof.** $\langle L_AX, L_AY\rangle = \operatorname{tr}((AX)^{\dagger}AY) = \operatorname{tr}(X^{\dagger}A^{\dagger}AY)$, which equals $\langle X,Y\rangle$ for all $X,Y$ exactly when $A^{\dagger}A = \mathrm{id}$, that is when $A$ is unitary; the map is multiplicative, injective (it recovers $A = L_A(\mathrm{id})$) and its adjoint is the involution. The unitary representations are *Unitary Representations of a Lie Group*.
 
@@ -59,7 +59,7 @@ and similarly for the right multiplication; the grade involution carries the adj
 
 ## Summary
 
-On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ with the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$, the adjoint of the left multiplication is $L_A^{*} = L_{A^{\dagger}}$, of the right multiplication $R_B^{*} = R_{B^{\dagger}}$, and of the two-sided multiplication $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the inner automorphism has adjoint $\mathrm{Ad}_A^{*} = \mathrm{Ad}_{A^{\dagger}}$. The grade involution of a unitary self-adjoint involution preserves the adjoint, $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$, and carries $L_A^{*}$ to $L_{\alpha(A)}^{*}$; these formulas are the unsigned case of the adjoint theory of the signed operators. The left multiplication is self-adjoint, normal or unitary exactly when $A$ is, its spectrum is that of $A$, and $A\mapsto L_A$ is a faithful unitary representation of $U(h)$ on $E$. The one-sided operators and the trace form are *The Left and Right Multiplication Operators on a Complex Vector Space* and *Algebras of Endomorphisms*; the adjoint of a Hermitian operator is *The Adjoint of a Hermitian Operator*; the signed adjoints are *The Signed Adjoint Sandwich on a Complex Vector Space* and *The Signed Adjoint of the Left Multiplication on a Complex Vector Space*.
+On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ with the Hermitian trace form $\langle X,Y\rangle = \operatorname{tr}(X^{\dagger}Y)$, the adjoint of the left multiplication is $L_A^{*} = L_{A^{\dagger}}$, of the right multiplication $R_B^{*} = R_{B^{\dagger}}$, and of the two-sided multiplication $\Phi_{a,b}^{*} = \Phi_{a^{\dagger},b^{\dagger}}$; the inner automorphism has adjoint $\mathrm{Ad}_A^{*} = \mathrm{Ad}_{A^{\dagger}}$. The grade involution of a unitary self-adjoint involution preserves the adjoint, $\alpha(X^{\dagger}) = \alpha(X)^{\dagger}$, and carries $L_A^{*}$ to $L_{\alpha(A)}^{*}$; these formulas are the unsigned case of the adjoint theory of the signed operators. The left multiplication is self-adjoint, normal or unitary exactly when $A$ is, its spectrum is that of $A$, and $A\mapsto L_A$ is a faithful unitary representation of $\mathrm{U}(h)$ on $E$. The one-sided operators and the trace form are *The Left and Right Multiplication Operators on a Complex Vector Space* and *Algebras of Endomorphisms*; the adjoint of a Hermitian operator is *The Adjoint of a Hermitian Operator*; the signed adjoints are *The Signed Adjoint Sandwich on a Complex Vector Space* and *The Signed Adjoint of the Left Multiplication on a Complex Vector Space*.
 
 ## Summary of Notation
 
@@ -71,7 +71,7 @@ On the endomorphism algebra $E = \operatorname{End}_{\mathbb C}(V)$ with the Her
 | $L_A^{*}=L_{A^{\dagger}}$ | the adjoint of the left multiplication |
 | $\Phi_{a,b}^{*}=\Phi_{a^{\dagger},b^{\dagger}}$ | the adjoint of the two-sided multiplication |
 | $\alpha L_A^{*}\alpha=L_{\alpha(A)}^{*}$ | compatibility with the grade involution |
-| $A\mapsto L_A$ | the faithful unitary representation of $U(h)$ |
+| $A\mapsto L_A$ | the faithful unitary representation of $\mathrm{U}(h)$ |
 
 ## Further Reading
 

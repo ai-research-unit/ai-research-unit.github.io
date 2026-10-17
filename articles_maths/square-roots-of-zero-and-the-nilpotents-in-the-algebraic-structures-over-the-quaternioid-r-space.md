@@ -10,7 +10,7 @@ $$
 
 and the **root set of $0$** is the set of its solutions. The root set of $0$ is at once the **square-zero set** of the structure, and its nonzero members are the **square-zero elements**, or **nilpotents of index two**. The two names are one computation: this article reads the root set of $0$ of the three companion structures, and then reads the nilpotents, which are its nonzero members, together with the two other classes a nonzero square-zero element belongs to, the zero divisors and its own annihilations. The algebra product is named once for the contrast and cited, not restated.
 
-The value $0$ is central, the centre of the quaternion space over $\mathbb{R}$ being the real line, so it is the value $\lambda e_0$ at $\lambda=0$. The two signed values are the subject of *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the value $+1$ and the idempotents are read and the value $-1$ is a closing remark; the general value $\lambda$ is *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
+The value $0$ is central, the centre of the quaternion space over $\mathbb{R}$ being the real line, so it is the value $\lambda e_t$ at $\lambda=0$. The two signed values are the subject of *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the value $+1$ and the idempotents are read and the value $-1$ is a closing remark; the general value $\lambda$ is *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 **The three companion structures.** The companion products of *The 6 Products of the Quaternioid Real Space* carry three structures, named in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*:
 
@@ -18,11 +18,11 @@ $$
 \mathrm{SPA} , \qquad \mathrm{APA} , \qquad \mathrm{GQA} ,
 $$
 
-the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde\eta$. Every table of the article follows this order.
+the **symmetric plain algebra** of the Jordan product, the **antisymmetric plain algebra** of the cross product and the **general quaternionic algebra** of the product $\tilde\xi^{\natural}\tilde q$. Every table of the article follows this order.
 
 **Scope and owners.** This article owns the comparison of the three root sets of $0$ and of the three square-zero sets, the cone reading of the root set of $0$, the comparison of the three classes of the square-zero elements, the zero divisors and the roots of $0$, and the nilpotent as the nonzero member of the set. The per-structure results stay owned by their articles, cited one by one below: for the general quaternionic algebra *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, for the symmetric plain algebra *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, and for the antisymmetric plain algebra *Introduction to the Antisymmetric Plain Algebra*; the algebra-product result is owned by *Square Roots of Zero and the Nilpotents of the Quaternion Algebra* in the *Quaternions* category. The products are *The 6 Products of the Quaternioid Real Space*; the vocabulary stated once for a general product, the root of a central value and the nilpotent, is *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the two forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*; the zero divisors and the one-sided inverse equations are *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the annihilating partners are *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; and the biquaternion case is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 
-**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde\xi=\xi_0e_0+\vec\xi$ with $\xi_0\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_ke_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\vec\xi$; the **plain form** is $\langle\tilde\xi\rangle=\xi_0^{2}-\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $\langle\tilde\xi\rangle_{\natural}=\xi_0^{2}+\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The algebra product is $\tilde\xi\tilde\eta$, the general quaternionic product is $\tilde\xi^{\natural}\tilde\eta$, the Jordan product is $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, and the plain cross product is $\tilde\xi\wedge\tilde\eta=\tfrac12(\tilde\xi\tilde\eta-\tilde\eta\tilde\xi)=\vec\xi\times\vec\eta$. The **root of a central value** is defined in *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* §*The Element Vocabulary* as an element $\tilde\xi$ with $\tilde\xi^{2}=c$ for a central $c$, the class of them being the set of its solutions, with no nonzero requirement; the **nilpotent** is defined in the same section as a nonzero square-zero element.
+**Conventions.** $\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$; a general element is $\tilde\xi=\xi_te_t+\vec\xi$ with $\xi_t\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_k\vec e_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_t-\vec\xi$; the **plain form** is $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The algebra product is $\tilde\xi\tilde q$, the general quaternionic product is $\tilde\xi^{\natural}\tilde q$, the Jordan product is $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and the plain cross product is $\tilde\xi\wedge\tilde q=\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)=\vec\xi\times\vec q$. The **root of a central value** is defined in *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* §*The Element Vocabulary* as an element $\tilde\xi$ with $\tilde\xi^{2}=c$ for a central $c$, the class of them being the set of its solutions, with no nonzero requirement; the **nilpotent** is defined in the same section as a nonzero square-zero element.
 
 ## The Roots of Zero in the Three Companion Structures
 
@@ -30,8 +30,8 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structure | at the two equal arguments |
 |---|---|---|
-| the plain square | $\mathrm{SPA}$ | $(\xi_0^{2}-\lvert\vec\xi\rvert^{2})e_0+2\xi_0\vec\xi$ |
-| the central square | $\mathrm{GQA}$ | $\langle\tilde\xi\rangle_{\natural}e_0$ |
+| the plain square | $\mathrm{SPA}$ | $(\xi_t^{2}-\lvert\vec\xi\rvert^{2})e_t+2\xi_t\vec\xi$ |
+| the central square | $\mathrm{GQA}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ |
 | the vanishing square | $\mathrm{APA}$ | $0$ |
 
 The algebra product of the space carries the plain square as well, and that reading is owned by the *Quaternions* category.
@@ -52,23 +52,23 @@ and it is the square-zero set of the structure.
 
 **Theorem (the three root sets of $0$).** Among the three companion structures the root set of $0$ is the origin alone $\{0\}$ for the symmetric plain algebra and the general quaternionic algebra, and it is the whole space $\mathbb{H}$ for the antisymmetric plain algebra. Only two root sets occur, and no companion structure has a root set of $0$ that is neither a point nor the whole space. The algebra product of the same space has the origin alone, as owned by the *Quaternions* category.
 
-*Proof.* For the symmetric plain structure the pair $\langle\tilde\xi\rangle=0$, $2\xi_0\vec\xi=0$ forces the origin: the second equation gives $\xi_0=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch $\xi_0^{2}=0$, and the isotropic cone of the plain form, real though it is, does not lie in the root of $0$, since at an isotropic element the vector part $2\xi_0\vec\xi$ does not vanish. For the general quaternionic structure the equation is $\langle\tilde\xi\rangle_{\natural}=0$ with $\langle\cdot\rangle_{\natural}$ a sum of four real squares, so the origin alone vanishes. The antisymmetric plain product is alternating, so $\tilde\xi\wedge\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a companion structure is the plain square, the norm times $e_0$, or zero, and the first two have the origin as their only real zero.
+*Proof.* For the symmetric plain structure the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ forces the origin: the second equation gives $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch $\xi_t^{2}=0$, and the isotropic cone of the plain form, real though it is, does not lie in the root of $0$, since at an isotropic element the vector part $2\xi_t\vec\xi$ does not vanish. For the general quaternionic structure the equation is $\langle\tilde\xi\rangle_{\natural}=0$ with $\langle\cdot\rangle_{\natural}$ a sum of four real squares, so the origin alone vanishes. The antisymmetric plain product is alternating, so $\tilde\xi\wedge\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a companion structure is the plain square, the norm times $e_t$, or zero, and the first two have the origin as their only real zero.
 
 The three are read one by one below; each names the product, its square and its root set of $0$, and cites the article that owns it.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
-The product is $\tilde\xi^{\natural}\tilde\eta$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_0$, so the root equation is the single real equation $\langle\tilde\xi\rangle_{\natural}=0$. The norm is a sum of four real squares, so it vanishes at the origin alone. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
+The product is $\tilde\xi^{\natural}\tilde q$, and its square is the central element $\langle\tilde\xi\rangle_{\natural}e_t$, so the root equation is the single real equation $\langle\tilde\xi\rangle_{\natural}=0$. The norm is a sum of four real squares, so it vanishes at the origin alone. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, of scalar part $\langle\tilde\xi\rangle=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_0\vec\xi$. The root equation is the pair $\langle\tilde\xi\rangle=0$, $2\xi_0\vec\xi=0$: the second equation forces $\xi_0=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch gives $\xi_0^{2}=0$, so the origin alone solves. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
+The product is the Jordan product $\tilde\xi\bullet\tilde q=\tfrac12(\tilde\xi\tilde q+\tilde q\tilde\xi)$, and its square is the plain square, $\tilde\xi\bullet\tilde\xi=\tilde\xi^{2}$, of scalar part $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_t\vec\xi$. The root equation is the pair $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$: the second equation forces $\xi_t=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch gives $\xi_t^{2}=0$, so the origin alone solves. The root set of $0$, and the square-zero set, is $\{0\}$, and there is no nilpotent. The article is *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\xi\wedge\tilde\eta=\vec\xi\times\vec\eta$, alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, for every element. The root equation is satisfied identically, and the root set of $0$, the square-zero set, is the whole space $\mathbb{H}$. The nilpotents are all the nonzero elements. The article is *Introduction to the Antisymmetric Plain Algebra*.
+The product is the commutator $\tilde\xi\wedge\tilde q=\vec\xi\times\vec q$, alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, for every element. The root equation is satisfied identically, and the root set of $0$, the square-zero set, is the whole space $\mathbb{H}$. The nilpotents are all the nonzero elements. The article is *Introduction to the Antisymmetric Plain Algebra*.
 
-**The algebra product and the general quaternionic product at $0$.** At the value $0$ the two structures agree: both root sets are the origin alone, and neither has a nilpotent. This is the value at which the two products agree, while at $+1$ they differ, the algebra product reading the pair $\pm e_0$ and the general quaternionic product the sphere $S^{3}$.
+**The algebra product and the general quaternionic product at $0$.** At the value $0$ the two structures agree: both root sets are the origin alone, and neither has a nilpotent. This is the value at which the two products agree, while at $+1$ they differ, the algebra product reading the pair $\pm e_t$ and the general quaternionic product the sphere $S^{3}$.
 
 ## The Nilpotents
 
@@ -90,11 +90,11 @@ The set is collected once below, with the two readings of the roots of $0$ and t
 
 | the structure | the square | the square-zero equation | the root set of $0$, the square-zero set | the nilpotents |
 |---|---|---|---|---|
-| $\mathrm{GQA}$ | $\langle\tilde\xi\rangle_{\natural}e_0$ | $\langle\tilde\xi\rangle_{\natural}=0$ | $\{0\}$ | none |
-| $\mathrm{SPA}$ | $\tilde\xi^{2}$ | $\langle\tilde\xi\rangle=0$, $2\xi_0\vec\xi=0$ | $\{0\}$ | none |
+| $\mathrm{GQA}$ | $\langle\tilde\xi\rangle_{\natural}e_t$ | $\langle\tilde\xi\rangle_{\natural}=0$ | $\{0\}$ | none |
+| $\mathrm{SPA}$ | $\tilde\xi^{2}$ | $\langle\tilde\xi\rangle=0$, $2\xi_t\vec\xi=0$ | $\{0\}$ | none |
 | $\mathrm{APA}$ | $0$ | satisfied identically | $\mathbb{H}$ | every nonzero element |
 
-Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for the two structures whose square is the plain square or the definite scalar $\langle\tilde\xi\rangle_{\natural}e_0$, and the whole space $\mathbb{H}$ for the one whose square vanishes identically. The origin is the common member, and it is square zero without being a nilpotent, the nilpotents being the nonzero members. The root set of $0$ is a cone in all three structures: the origin, a degenerate cone with the origin as apex, in the two, and the whole space, a cone with the origin as apex, in the third.
+Read down the fourth column, only two sets occur: the origin alone $\{0\}$ for the two structures whose square is the plain square or the definite scalar $\langle\tilde\xi\rangle_{\natural}e_t$, and the whole space $\mathbb{H}$ for the one whose square vanishes identically. The origin is the common member, and it is square zero without being a nilpotent, the nilpotents being the nonzero members. The root set of $0$ is a cone in all three structures: the origin, a degenerate cone with the origin as apex, in the two, and the whole space, a cone with the origin as apex, in the third.
 
 ### The Three Classes
 
@@ -124,8 +124,8 @@ The nilpotents are the nonzero members of the square-zero sets: none in the two 
 | $\{0\}$ | the square-zero set of $\mathrm{GQA}$ and $\mathrm{SPA}$, and their nilpotent set |
 | $\mathbb{H}$ | the square-zero set of $\mathrm{APA}$ |
 | $\mathbb{H}\setminus\{0\}$ | the nilpotent set, and the zero-divisor set, of $\mathrm{APA}$ |
-| $\langle\tilde\xi\rangle=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $\langle\tilde\xi\rangle_{\natural}=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\mathrm{GQA}$, and the norm |
+| $\langle\tilde\xi\rangle=\xi_t^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $\langle\tilde\xi\rangle_{\natural}=\xi_t^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of $\mathrm{GQA}$, and the norm |
 | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\mathrm{SPA}$, for the comparison |
 | cone, apex | a set that contains every real multiple of each of its elements, and its origin |
 | $\mathrm{SPA},\mathrm{APA},\mathrm{GQA}$ | the three companion structures of the space |

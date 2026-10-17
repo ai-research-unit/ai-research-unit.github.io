@@ -98,28 +98,28 @@ Stone's theorem and not by the norm-convergent exponential of a bounded generato
 ### Differentiation as the Generator
 
 **Theorem (generator of the translation group).** On $L^2(\mathbb R^n)$ let $A_j$ be the operator defined on
-the Schwartz class by $A_jf=-\partial_jf$. Then $A_j$ is the infinitesimal generator of the one-parameter
+the Schwartz class by $A_jf=-\partial/\partial x_j\,f$. Then $A_j$ is the infinitesimal generator of the one-parameter
 unitary group $t\mapsto\tau_{te_j}$:
 $$
 \tau_{te_j}=\exp(tA_j),\qquad
-A_jf=\lim_{t\to0}\frac{\tau_{te_j}f-f}{t}=-\partial_jf ,
+A_jf=\lim_{t\to0}\frac{\tau_{te_j}f-f}{t}=-\partial/\partial x_j\,f ,
 $$
 the limit being in $L^2$. The operator $A_j$ is closed, densely defined, and skew-adjoint,
 $A_j^\dagger=-A_j$; under the Fourier operator it becomes multiplication by the purely imaginary function
 $2\pi i\xi_j$.
 
-**Proof.** On the Schwartz class the difference quotient converges to $-\partial_jf$ in $L^2$ by Taylor's
-formula and the integrability of the second derivative. The operator $-\partial_j$ is skew-adjoint because
-integration by parts gives $\langle-\partial_jf,g\rangle=\langle f,\partial_jg\rangle=\langle f,-(-\partial_j)g\rangle$
+**Proof.** On the Schwartz class the difference quotient converges to $-\partial/\partial x_j\,f$ in $L^2$ by Taylor's
+formula and the integrability of the second derivative. The operator $-\partial/\partial x_j$ is skew-adjoint because
+integration by parts gives $\langle-\partial/\partial x_j\,f,g\rangle=\langle f,\partial/\partial x_j\,g\rangle=\langle f,-(-\partial/\partial x_j)g\rangle$
 on $\mathcal S$, and $\mathcal S$ is a core. The identification with the Fourier side is
-$\mathcal F(-\partial_j)\mathcal F^{-1}=M_{-2\pi i\xi_j}$, the differentiation identity of the Fourier
+$\mathcal F(-\partial/\partial x_j)\mathcal F^{-1}=M_{-2\pi i\xi_j}$, the differentiation identity of the Fourier
 article with a sign. The exponential identity and the closedness are the content of Stone's theorem for a
 strongly continuous one-parameter unitary group, in *Semigroups and Evolution Equations*, later in this
 Part.
 
 **Corollary.** The finite differences $\tau_{te_j}-\mathrm{id}$ approximate the generator, and
 $\tau_{te_j}=\mathrm{id}+tA_j+o(t)$; the forward difference $\Delta_h=\tau_{-h}-\mathrm{id}$ is the discrete
-analogue of $A_j$, and the two are related by $\Delta_{te_j}=t\partial_j+o(t)=-tA_j+o(t)$ on the domain
+analogue of $A_j$, and the two are related by $\Delta_{te_j}=t\partial/\partial x_j+o(t)=-tA_j+o(t)$ on the domain
 of $A_j$.
 
 ## The Spectrum and the Characters
@@ -210,7 +210,7 @@ isometry, and on $L^2$ a unitary; on $L^{n}(\mathbb R^n)$, $1\leq p<\infty$, it 
 group variable but not continuous in the operator norm, $\lVert\tau_y-\mathrm{id}\rVert=\sqrt2$ for
 $y\neq0$. Its
 infinitesimal generator on the one-parameter subgroup $t\mapsto\tau_{te_j}$ is the skew-adjoint operator
-$-\partial_j$, which the Fourier operator turns into multiplication by $2\pi i\xi_j$; the characters are
+$-\partial/\partial x_j$, which the Fourier operator turns into multiplication by $2\pi i\xi_j$; the characters are
 eigenfunctions of every translation, $\tau_ge_\xi=\overline{e_\xi(g)}e_\xi$, and they diagonalise the
 representation, discretely on a finite group and in the spectral sense on $\mathbb R^n$ and $\mathbb Z$. The
 translation $\tau_y$ for $y\neq0$ is unitary with spectrum the unit circle and no eigenvalues on
@@ -226,7 +226,7 @@ instance belongs to the group-theoretic category of this Part.
 | $\tau_y^\dagger=\tau_{-y}$ | Adjoint of a translation, a unitary on $L^2$ |
 | $e_\xi$, $e_m$ | Characters $\exp(2\pi ix\cdot\xi)$, $\exp(2\pi imx)$ |
 | $S$ | Shift on $\ell^2(\mathbb Z)$, $S=\tau_1$ |
-| $A_j=-\partial_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, skew-adjoint |
+| $A_j=-\partial/\partial x_j$ | Infinitesimal generator of $t\mapsto\tau_{te_j}$, skew-adjoint |
 | $\Delta_h=\tau_{-h}-\mathrm{id}$ | Forward difference, the discrete generator |
 | $T_k$, $T_m$ | Convolution and multiplier operators, the commutant of the translations |
 

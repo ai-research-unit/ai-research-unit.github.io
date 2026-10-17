@@ -358,10 +358,10 @@ $$
 
 where $\tilde{H}_0$ is the Hamiltonian.
 
-**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,\dot{\tilde{U}} = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\dot{\tilde{U}}^{*} = \tilde{U}^{*}\tilde{H}_0$:
+**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,d\tilde U/dt = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,d\tilde U^{*}/dt = \tilde{U}^{*}\tilde{H}_0$:
 
 $$
-i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\dot{\tilde{U}}^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\dot{\tilde{U}}\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
+i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(d\tilde U^{*}/dt\,\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\,d\tilde U/dt\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
 $$
 
 Since $\tilde{U}(t) = \exp(-i\tilde{H}_0 t/\hbar)$ is a function of $\tilde{H}_0$, it **commutes with $\tilde{H}_0$**. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^{*}\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So

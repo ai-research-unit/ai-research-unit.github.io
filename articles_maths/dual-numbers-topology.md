@@ -8,10 +8,10 @@ This article collects the topology of the dual-number algebra $\mathbb{D}' = \ma
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout the algebra is $\mathbb{D}'$ over $\mathbb{R}$, a general dual number is
 
 $$
-A = a + \varepsilon a', \qquad a, a' \in \mathbb{R},
+Q = q + \varepsilon q', \qquad q, q' \in \mathbb{R},
 $$
 
-with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\rangle = A\bar A = a^2$, Euclidean norm $\|A\|_E = \sqrt{a^2 + a'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{a \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = Q\bar Q = q^2$, Euclidean norm $\|Q\|_E = \sqrt{q^2 + q'^2}$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon\mathbb{R}$, and unit group $(\mathbb{D}')^\times = \{q \neq 0\}$. To keep the two notions apart, the norm is written $\langle\cdot\rangle$ and the Euclidean form $\|\cdot\|_E$; they are distinct, and the whole topology is carried by the second.
 
 ## The Dual Plane as a Topological Space
 
@@ -20,32 +20,32 @@ with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, norm $\langle A\ran
 The map
 
 $$
-A = a + \varepsilon a' \longmapsto (a, a')
+Q = q + \varepsilon q' \longmapsto (q, q')
 $$
 
 is a linear isometry of $(\mathbb{D}', \|\cdot\|_E)$ onto $\mathbb{R}^2$ with the Euclidean metric. So the topology of $\mathbb{D}'$ is the ordinary Euclidean topology of the plane, and the basis $(1, \varepsilon)$ is an orthonormal basis for $\|\cdot\|_E$.
 
 **Proposition.** The product is bilinear, hence continuous, so $\mathbb{D}'$ is a topological algebra over $\mathbb{R}$. Inversion is continuous on the units, so $(\mathbb{D}')^\times$ is a topological group and the shear subgroup $1 + \mathrm{M}$ is a closed subgroup.
 
-**Proof.** Bilinearity gives continuity of the product from the continuity of the algebra operations on $\mathbb{R}^2$. The inverse $a + \varepsilon a' \mapsto a^{-1} - a^{-2}\varepsilon a'$ is continuous where $a \neq 0$; $1 + \mathrm{M} = \{a = 1\}$ is closed.
+**Proof.** Bilinearity gives continuity of the product from the continuity of the algebra operations on $\mathbb{R}^2$. The inverse $q + \varepsilon q' \mapsto q^{-1} - q^{-2}\varepsilon q'$ is continuous where $q \neq 0$; $1 + \mathrm{M} = \{q = 1\}$ is closed.
 
 ### The Distinction Between the Two Forms
 
-The norm $\langle A\rangle = a^2$ and the Euclidean form $a^2 + a'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle A_n\rangle \to 0$ need not have $A_n \to 0$, because $A_n$ may move along the null line $\mathrm{M}$.
+The norm $\langle Q\rangle = q^2$ and the Euclidean form $q^2 + q'^2$ induce different geometries on the same space. The Euclidean form gives the distance and hence the topology; the norm is the multiplicative form and has no metric content. Although $\langle\cdot\rangle$ is continuous, its vanishing does not control the Euclidean size: a sequence with $\langle Q_n\rangle \to 0$ need not have $Q_n \to 0$, because $Q_n$ may move along the null line $\mathrm{M}$.
 
 ### The Euclidean Unit Sphere
 
 **Definition.** The **Euclidean unit sphere** is
 
 $$
-S^1_E = \{A \in \mathbb{D}' : \|A\|_E = 1\} = \{(a,a') : a^2 + a'^2 = 1\} \cong S^1.
+S^1_E = \{Q \in \mathbb{D}' : \|Q\|_E = 1\} = \{(q,q') : q^2 + q'^2 = 1\} \cong S^1.
 $$
 
 It is a closed, compact, connected one-manifold.
 
 **Proposition.** The Euclidean norm is not multiplicative, and the Euclidean unit sphere is not closed under multiplication.
 
-**Proof.** For $A = 1 + \varepsilon$ one has $\|A\|_E = \sqrt{2}$ and $A^2 = 1 + 2\varepsilon$ with $\|A^2\|_E = \sqrt{5} \neq 2 = \|A\|_E^2$. For closure, $\varepsilon$ lies on $S^1_E$ because $\|\varepsilon\|_E = 1$, but $\varepsilon^2 = 0 \notin S^1_E$.
+**Proof.** For $Q = 1 + \varepsilon$ one has $\|Q\|_E = \sqrt{2}$ and $Q^2 = 1 + 2\varepsilon$ with $\|Q^2\|_E = \sqrt{5} \neq 2 = \|Q\|_E^2$. For closure, $\varepsilon$ lies on $S^1_E$ because $\|\varepsilon\|_E = 1$, but $\varepsilon^2 = 0 \notin S^1_E$.
 
 So $S^1_E$ is not a subgroup of $(\mathbb{D}')^\times$; indeed $\varepsilon \in S^1_E$ is a zero divisor, so $S^1_E \not\subseteq (\mathbb{D}')^\times$. The sphere that *is* a union of group components is the norm-one set of the next section, not the Euclidean sphere.
 
@@ -58,10 +58,10 @@ So $S^1_E$ is not a subgroup of $(\mathbb{D}')^\times$; indeed $\varepsilon \in 
 **Proof.** The straight-line homotopy
 
 $$
-H(t, A) = (1 - t)A, \qquad t \in [0, 1],
+H(t, Q) = (1 - t)Q, \qquad t \in [0, 1],
 $$
 
-is continuous, with $H(0, A) = A$ and $H(1, A) = 0$; so the identity is homotopic to the constant map at $0$.
+is continuous, with $H(0, Q) = Q$ and $H(1, Q) = 0$; so the identity is homotopic to the constant map at $0$.
 
 So every map into $\mathbb{D}'$ is null-homotopic, and every subset of $\mathbb{D}'$ that is star-shaped with respect to the origin is contractible by the same homotopy.
 
@@ -70,7 +70,7 @@ So every map into $\mathbb{D}'$ is null-homotopic, and every subset of $\mathbb{
 The two submodules are star-shaped, hence contractible, and homeomorphic to $\mathbb{R}$:
 
 $$
-R_{\mathbb{D}'} = \{a' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{D}'} = \{a = 0\} \cong \mathbb{R}.
+R_{\mathbb{D}'} = \{q' = 0\} \cong \mathbb{R}, \qquad \mathrm{M} = \varepsilon R_{\mathbb{D}'} = \{q = 0\} \cong \mathbb{R}.
 $$
 
 So the two eigenspaces of dual conjugation carry no topology beyond that of the line. The entire topological content of the algebra lies in the complement of the maximal ideal and in the interaction of the two lines, not in the lines themselves.
@@ -82,26 +82,26 @@ So the two eigenspaces of dual conjugation carry no topology beyond that of the 
 **Definition.** The **norm-one set** is
 
 $$
-H = \{A \in \mathbb{D}' : \langle A\rangle = 1\} = \{a + \varepsilon a' : a = \pm 1\},
+H = \{Q \in \mathbb{D}' : \langle Q\rangle = 1\} = \{q + \varepsilon q' : q = \pm 1\},
 $$
 
-the union of the two parallel lines $a = 1$ and $a = -1$.
+the union of the two parallel lines $q = 1$ and $q = -1$.
 
-**Proposition.** $H$ is a closed subset with two contractible components, each homeomorphic to a line; its identity part is $H_0 = 1 + \mathrm{M} = \{a = 1\}$. Hence $H$ has the homotopy type of $S^0$.
+**Proposition.** $H$ is a closed subset with two contractible components, each homeomorphic to a line; its identity part is $H_0 = 1 + \mathrm{M} = \{q = 1\}$. Hence $H$ has the homotopy type of $S^0$.
 
-**Proof.** $\langle A\rangle = a^2 = 1$ gives $a = \pm 1$ with $a'$ free; the two lines are closed and contractible, and the line $a = 1$ is $1 + \mathrm{M}$.
+**Proof.** $\langle Q\rangle = q^2 = 1$ gives $q = \pm 1$ with $q'$ free; the two lines are closed and contractible, and the line $q = 1$ is $1 + \mathrm{M}$.
 
 So the norm-one set of the dual numbers is not a circle, as in the complex case, nor a hyperbola with two branches, as in the split-complex case, but a pair of parallel lines; its homotopy type is that of the two-point space.
 
 ### The Group of Units
 
-**Theorem.** The group of units is $(\mathbb{D}')^\times = \{a \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{a > 0\}$ and $\{a < 0\}$, each contractible. The homotopy type of $(\mathbb{D}')^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $A \mapsto \operatorname{sgn}(a)$; hence
+**Theorem.** The group of units is $(\mathbb{D}')^\times = \{q \neq 0\}$, the complement of the maximal ideal; as a space it is the disjoint union of the two open half-planes $\{q > 0\}$ and $\{q < 0\}$, each contractible. The homotopy type of $(\mathbb{D}')^\times$ is that of $S^0 = \{\pm 1\}$, onto which it deformation retracts by $Q \mapsto \operatorname{sgn}(q)$; hence
 
 $$
 \pi_0\bigl((\mathbb{D}')^\times\bigr) = \mathbb{Z}/2, \qquad \pi_n\bigl((\mathbb{D}')^\times\bigr) = 0 \quad (n \geq 1).
 $$
 
-**Proof.** $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$ is the complement of the closed line $\mathrm{M}$, hence two open half-planes, each star-shaped with respect to $\pm 1$ and contractible. The map $H(t, A) = (1-t)A + t\operatorname{sgn}(a)$ is a continuous deformation retraction onto $\{\pm 1\}$.
+**Proof.** $(\mathbb{D}')^\times = \mathbb{D}' \setminus \mathrm{M}$ is the complement of the closed line $\mathrm{M}$, hence two open half-planes, each star-shaped with respect to $\pm 1$ and contractible. The map $H(t, Q) = (1-t)Q + t\operatorname{sgn}(q)$ is a continuous deformation retraction onto $\{\pm 1\}$.
 
 **Corollary.** The maximal compact subgroup of $(\mathbb{D}')^\times$ is $\{\pm 1\} \cong S^0$, and the unit group has trivial fundamental group despite being disconnected: on each contractible component every loop is null-homotopic.
 
@@ -115,7 +115,7 @@ $$
 
 **Proposition.** The boundary $\mathrm{M}$ is a closed subset of the plane of empty interior, homeomorphic to $\mathbb{R}$, and it is the closure of the zero-divisor set $\mathcal{Z} = \mathrm{M} \setminus \{0\}$. Each of the two components of the unit group is homeomorphic to an open half-plane, and the boundary separates them.
 
-**Proof.** The maximal ideal is the line $\{a = 0\}$, closed with empty interior in the plane and homeomorphic to $\mathbb{R}$ through $a' \mapsto \varepsilon a'$; its points with $a' \neq 0$ are exactly the zero divisors. The components $\{a > 0\}$ and $\{a < 0\}$ are open half-planes, and every path between them meets the line $\{a = 0\}$.
+**Proof.** The maximal ideal is the line $\{q = 0\}$, closed with empty interior in the plane and homeomorphic to $\mathbb{R}$ through $q' \mapsto \varepsilon q'$; its points with $q' \neq 0$ are exactly the zero divisors. The components $\{q > 0\}$ and $\{q < 0\}$ are open half-planes, and every path between them meets the line $\{q = 0\}$.
 
 **Remark (the boundary).** The boundary of the unit group is a line, of real codimension one, so it is a topological wall that separates the two components of the unit group.
 
@@ -125,7 +125,7 @@ $$
 
 **Theorem.** The maximal ideal $\mathrm{M} = \varepsilon\mathbb{R}$ is a closed, connected, contractible subset of $\mathbb{D}'$, homeomorphic to the real line. It has empty interior and its complement $(\mathbb{D}')^\times$ is open and dense.
 
-**Proof.** $\mathrm{M} = \{a = 0\}$ is closed, since $\operatorname{Re}$ is continuous; it is homeomorphic to $\mathbb{R}$ via $\varepsilon a' \leftrightarrow a'$, hence contractible. A line has empty interior in the plane, and the complement of a line is open and dense.
+**Proof.** $\mathrm{M} = \{q = 0\}$ is closed, since $\operatorname{Re}$ is continuous; it is homeomorphic to $\mathbb{R}$ via $\varepsilon q' \leftrightarrow q'$, hence contractible. A line has empty interior in the plane, and the complement of a line is open and dense.
 
 ### The Null Line
 
@@ -133,7 +133,7 @@ $$
 
 **Proposition.** The null line is a closed algebraic cone with apex $0$, and it is the radical of the norm. The zero-divisor set $\mathcal{Z}$ is neither open nor closed; its closure is $\mathrm{M}$ and its complement is dense.
 
-**Proof.** $\langle tA\rangle = t^2 \langle A\rangle$ makes $N^{-1}(0)$ a cone; $\langle A+B\rangle = \langle A\rangle + 2B(A,B) + \langle B\rangle$ with $B(A,B) = a b$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.
+**Proof.** $\langle tQ\rangle = t^2 \langle Q\rangle$ makes $N^{-1}(0)$ a cone; $\langle Q_1+Q_2\rangle = \langle Q_1\rangle + 2B(Q_1,Q_2) + \langle Q_2\rangle$ with $B(Q_1,Q_2) = q_1 q_2$ shows that the radical, the set $B$-orthogonal to the whole plane, is exactly $\mathrm{M}$. The punctured line is not open (a line has empty interior) nor closed (its limit points include the origin); its closure is the line and the complement of a punctured line is dense.
 
 ### The Link of the Null Line
 
@@ -143,11 +143,11 @@ $$
 L = \mathrm{M} \cap S^1_E = \{+\varepsilon,\, -\varepsilon\} \cong S^0.
 $$
 
-**Proposition.** Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|A\|_E > 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the *double* line $a^2 = 0$: its intersection with the unit circle is double-counted.
+**Proposition.** Every nonzero element of $\mathrm{M}$ is uniquely $t\,u$ with $t = \|Q\|_E > 0$ and $u \in L$, so the null line is the cone on its link. The link has two points, reflecting that the isotropic line is the *double* line $q^2 = 0$: its intersection with the unit circle is double-counted.
 
-**Proof.** $\varepsilon a' = |a'|\operatorname{sgn}(a')\varepsilon$ with $\|\varepsilon a'\|_E = |a'|$; the two unit points are $\pm\varepsilon$. The equation $a^2 = 0$ is the square of the linear equation $a = 0$, so its projective solution is a single point of multiplicity two, met twice by the circle.
+**Proof.** $\varepsilon q' = |q'|\operatorname{sgn}(q')\varepsilon$ with $\|\varepsilon q'\|_E = |q'|$; the two unit points are $\pm\varepsilon$. The equation $q^2 = 0$ is the square of the linear equation $q = 0$, so its projective solution is a single point of multiplicity two, met twice by the circle.
 
-This is the topological face of the degeneracy. For a non-degenerate indefinite form in two variables the isotropic cone is a pair of lines, of real dimension one, and its link is the four-point set of normalized null directions, as in the split complex case. For the degenerate dual form the cone is a single line, but the form is the square $a^2$ of the linear form $a$, so the line is met with multiplicity two: the link is the two-point space $\{\pm\varepsilon\}$, which counts the one projective null direction twice.
+This is the topological face of the degeneracy. For a non-degenerate indefinite form in two variables the isotropic cone is a pair of lines, of real dimension one, and its link is the four-point set of normalized null directions, as in the split complex case. For the degenerate dual form the cone is a single line, but the form is the square $q^2$ of the linear form $q$, so the line is met with multiplicity two: the link is the two-point space $\{\pm\varepsilon\}$, which counts the one projective null direction twice.
 
 ## Comparison with the Topology of the Other Systems
 
@@ -163,23 +163,23 @@ Three features distinguish the dual row. First, the unit group has exactly two c
 
 ## Summary
 
-The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $a = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link.
+The dual-number algebra $\mathbb{D}'$, with its Euclidean topology, is a contractible topological algebra homeomorphic to $\mathbb{R}^2$, with all homotopy groups trivial. The Euclidean unit sphere is the circle $S^1 \cong S^1_E$, on which the zero divisor $\varepsilon$ lies, so the sphere is not contained in the group of units, and the Euclidean form is not multiplicative. The norm-one set is the pair of parallel lines $q = \pm 1$, with identity component the shear line $1 + \mathrm{M}$; it has the homotopy type of $S^0$. The group of units is the complement of the maximal ideal, two contractible open half-planes, with homotopy type $S^0$, fundamental group trivial, and maximal compact subgroup $\{\pm 1\}$. The maximal ideal is a closed nilpotent direction, homeomorphic to $\mathbb{R}$, contractible, of empty interior, and it is the null line of the norm; its link in the Euclidean sphere is the two-point space $\{\pm\varepsilon\}$, the double count of the degenerate isotropic line. The maximal ideal is exactly the boundary of the group of units. In the family of the corpus's number systems the dual row is the degenerate member: two contractible unit-group components against the split complex's four, and a doubled point link.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}' = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ | Dual-number algebra; $\varepsilon^2 = 0$ |
-| $A = a + \varepsilon a'$ | General dual number |
-| $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$ | Real and infinitesimal parts |
-| $\langle A\rangle = a^2$ | Norm |
-| $\|A\|_E = \sqrt{a^2 + a'^2}$ | Euclidean norm, giving the topology |
-| $S^1_E = \{\|A\|_E = 1\}$ | Euclidean unit sphere $\cong S^1$ |
-| $H = \{\langle A\rangle = 1\}$ | Norm-one set, lines $a = \pm 1$, $\simeq S^0$ |
-| $\mathrm{M} = (\varepsilon) = \{a = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |
+| $Q = q + \varepsilon q'$ | General dual number |
+| $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
+| $\langle Q\rangle = q^2$ | Norm |
+| $\|Q\|_E = \sqrt{q^2 + q'^2}$ | Euclidean norm, giving the topology |
+| $S^1_E = \{\|Q\|_E = 1\}$ | Euclidean unit sphere $\cong S^1$ |
+| $H = \{\langle Q\rangle = 1\}$ | Norm-one set, lines $q = \pm 1$, $\simeq S^0$ |
+| $\mathrm{M} = (\varepsilon) = \{q = 0\}$ | Maximal ideal, null line, $\cong \mathbb{R}$ |
 | $\mathcal{Z} = \mathrm{M}\setminus\{0\}$ | Zero-divisor set |
-| $(\mathbb{D}')^\times = \{a \neq 0\}$ | Group of units, two contractible components |
-| $1 + \mathrm{M} = \{a = 1\}$ | Shear line, identity component of $H$ |
+| $(\mathbb{D}')^\times = \{q \neq 0\}$ | Group of units, two contractible components |
+| $1 + \mathrm{M} = \{q = 1\}$ | Shear line, identity component of $H$ |
 | $L = \mathrm{M} \cap S^1_E = \{\pm\varepsilon\}$ | Link of the null line, $\cong S^0$ |
 | $\pi_0((\mathbb{D}')^\times) = \mathbb{Z}/2$ | Component count of the unit group |
 | $\mathbb{D}$ | The split complex system, the closest comparison |

@@ -36,7 +36,7 @@ The definition names the two factors before anything is proved about them, so th
 The quaternion norm is
 
 $$
-\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_{\mu=0}^{3} q_\mu^2.
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} q_\mu^2.
 $$
 
 It is the sum of four squares, so $\langle\tilde q\rangle_{\natural} > 0$ for every $\tilde q \neq 0$, and it vanishes only at $\tilde q = 0$. The modulus is its square root:
@@ -50,7 +50,7 @@ Because $\langle\tilde q\rangle_{\natural}$ is strictly positive on the nonzero 
 The modulus is multiplicative, because the quaternion norm is: for any two quaternions,
 
 $$
-r(p\tilde q) = r(p)\,r(\tilde q).
+r(\tilde q_2\tilde q_1) = r(\tilde q_2)\,r(\tilde q_1).
 $$
 
 ### The Unit Factor
@@ -113,32 +113,32 @@ with $\mu$ a unit pure quaternion, a point of the axis sphere $\mathcal{A}$ of u
 | 1 | $r$ | modulus | $1$ | $\exp(\ln\sqrt{N})$ | hyperbolic | $\sqrt{N}$ | $r = \sqrt{\langle\tilde q\rangle_{\natural}} > 0$ | — |
 | 2 | $\tilde u_{\mathrm r}$ | unit factor | $3$ | $\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | trigonometric | $\cos\tfrac{\theta}{2} + \mu\sin\tfrac{\theta}{2}$ | $\theta \in [0,2\pi]$, $\mu \in \mathcal{A}$ | $\mu$ |
 
-The modulus exponent $\ln\sqrt N$ is a real scalar of the centre, and the unit-factor exponent $\mu\tfrac{\theta}{2}$ has the unit pure quaternion $\mu$ as its root, of square $-e_0$; the first is hyperbolic and the second trigonometric. Only the trigonometric row is occupied by a non-scalar element: the roots of $+e_0$ are $\pm e_0$ alone, and there is no nilpotent, since $\mathbb{H}$ is a division algebra. A unit quaternion other than $\pm e_0$ is therefore always $\exp(\mu t)$ with $\mu$ a unit pure quaternion, never hyperbolic and never parabolic. The unit factor is the exponential of the angle only as a class, since $\exp(\mu\tfrac{\theta}{2})$ has period $4\pi$ in $\theta$, and its axis is unique only away from the two central points $\pm e_0$. The two exponents commute, so the word is order-free, and because there is no second non-central direction in the algebra, the two exponentials **amalgamate into one**, $\tilde q = \exp(\ln\sqrt N\,e_0 + \mu\tfrac{\theta}{2})$.
+The modulus exponent $\ln\sqrt N$ is a real scalar of the centre, and the unit-factor exponent $\mu\tfrac{\theta}{2}$ has the unit pure quaternion $\mu$ as its root, of square $-e_t$; the first is hyperbolic and the second trigonometric. Only the trigonometric row is occupied by a non-scalar element: the roots of $+e_t$ are $\pm e_t$ alone, and there is no nilpotent, since $\mathbb{H}$ is a division algebra. A unit quaternion other than $\pm e_t$ is therefore always $\exp(\mu t)$ with $\mu$ a unit pure quaternion, never hyperbolic and never parabolic. The unit factor is the exponential of the angle only as a class, since $\exp(\mu\tfrac{\theta}{2})$ has period $4\pi$ in $\theta$, and its axis is unique only away from the two central points $\pm e_t$. The two exponents commute, so the word is order-free, and because there is no second non-central direction in the algebra, the two exponentials **amalgamate into one**, $\tilde q = \exp(\ln\sqrt N\,e_t + \mu\tfrac{\theta}{2})$.
 
 ### The Unit Pure Quaternions
 
-Write a quaternion as $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q = q_1e_1+q_2e_2+q_3e_3$ its vector part. A quaternion is **pure** if its scalar part vanishes, and the pure quaternions are the three-dimensional subspace $\operatorname{Im}\mathbb{H} = \operatorname{span}\{e_1,e_2,e_3\}$.
+Write a quaternion as $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ its vector part. A quaternion is **pure** if its scalar part vanishes, and the pure quaternions are the three-dimensional subspace $\operatorname{Im}\mathbb{H} = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$.
 
 For $\vec q$ pure, the square is a scalar:
 
 $$
-\vec q^2 = -\left(q_1^2+q_2^2+q_3^2\right)e_0 = -\langle \vec q\rangle_{\natural}\,e_0,
+\vec q^2 = -\left(q_x^2+q_y^2+q_z^2\right)e_t = -\langle \vec q\rangle_{\natural}\,e_t,
 $$
 
-because the products of distinct units cancel in pairs, $e_2e_3 = -e_3e_2$ and so on. In particular a pure quaternion $\mu$ with $\langle \mu\rangle_{\natural} = 1$ satisfies $\mu^2 = -e_0$: the unit pure quaternions are exactly the roots of $-e_0$, and they form the two-sphere $\mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$) inside $\operatorname{Im}\mathbb{H}$. This is the quaternion analogue of the single pair $\pm i$ of the complex numbers, and it is the object that the complex case replaces by a sign choice.
+because the products of distinct units cancel in pairs, $\vec e_y\vec e_z = -\vec e_z\vec e_y$ and so on. In particular a pure quaternion $\mu$ with $\langle \mu\rangle_{\natural} = 1$ satisfies $\mu^2 = -e_t$: the unit pure quaternions are exactly the roots of $-e_t$, and they form the two-sphere $\mathcal{A}$ (the axis sphere, the unit vectors of $\mathbb{R}^3$) inside $\operatorname{Im}\mathbb{H}$. This is the quaternion analogue of the single pair $\pm i$ of the complex numbers, and it is the object that the complex case replaces by a sign choice.
 
 ### The Exponential of a Pure Quaternion
 
 **Proposition.** Let $\mu$ be a unit pure quaternion and let $t \in \mathbb{R}$. Then
 
 $$
-\exp(\mu t) = e_0\cos t + \mu\sin t.
+\exp(\mu t) = e_t\cos t + \mu\sin t.
 $$
 
-*Proof.* Compute the powers: $\mu^2 = -e_0$ gives $\mu^{2k} = (-1)^k e_0$ and $\mu^{2k+1} = (-1)^k\mu$. The exponential is defined by the convergent series $\exp(\tilde q) = \sum_{n\ge0}\tilde q^n/n!$, so
+*Proof.* Compute the powers: $\mu^2 = -e_t$ gives $\mu^{2k} = (-1)^k e_t$ and $\mu^{2k+1} = (-1)^k\mu$. The exponential is defined by the convergent series $\exp(\tilde q) = \sum_{n\ge0}\tilde q^n/n!$, so
 
 $$
-\exp(\mu t) = \sum_{k\ge0}\frac{\mu^{2k}t^{2k}}{(2k)!} + \sum_{k\ge0}\frac{\mu^{2k+1}t^{2k+1}}{(2k+1)!} = e_0\sum_{k\ge0}\frac{(-1)^kt^{2k}}{(2k)!} + \mu\sum_{k\ge0}\frac{(-1)^kt^{2k+1}}{(2k+1)!},
+\exp(\mu t) = \sum_{k\ge0}\frac{\mu^{2k}t^{2k}}{(2k)!} + \sum_{k\ge0}\frac{\mu^{2k+1}t^{2k+1}}{(2k+1)!} = e_t\sum_{k\ge0}\frac{(-1)^kt^{2k}}{(2k)!} + \mu\sum_{k\ge0}\frac{(-1)^kt^{2k+1}}{(2k+1)!},
 $$
 
 and the two series are the cosine and the sine.
@@ -147,11 +147,11 @@ The result is the Euler formula of the quaternions, with the same proof and one 
 
 ### The Quotient of Two Orthogonal Unit Quaternions
 
-**Lemma.** Let $p, \tilde q \in \mathbb{H}$ be orthogonal as vectors of $\mathbb{R}^4$, that is $\sum_\mu p_\mu q_\mu = 0$. Then $p\tilde{q}^{\natural}$ is pure, so the quotient $p/\tilde q$ is pure. If in addition $\langle p\rangle_{\natural} = \langle\tilde q\rangle_{\natural} = 1$ then $p/\tilde q$ is a unit pure quaternion, hence a root of $-e_0$.
+**Lemma.** Let $\tilde q_2, \tilde q_1 \in \mathbb{H}$ be orthogonal as vectors of $\mathbb{R}^4$, that is $\sum_\mu q_{2\mu} q_{1\mu} = 0$. Then $\tilde q_2\tilde q_1^{\natural}$ is pure, so the quotient $\tilde q_2/\tilde q_1$ is pure. If in addition $\langle\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural} = 1$ then $\tilde q_2/\tilde q_1$ is a unit pure quaternion, hence a root of $-e_t$.
 
-*Proof.* The scalar part of $p\tilde{q}^{\natural}$ is $\sum_\mu p_\mu q_\mu$, which is the Euclidean inner product, so it vanishes exactly when $p$ and $\tilde q$ are orthogonal; the quotient is $p/\tilde q = p\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$, a real multiple of $p\tilde{q}^{\natural}$ when $\tilde q$ is a unit, and a real multiple of a pure quaternion is pure. Finally $\langle p/\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}/\langle\tilde q\rangle_{\natural} = 1$, and a unit pure quaternion satisfies $\mu^2 = -e_0$ by the first proposition of this section.
+*Proof.* The scalar part of $\tilde q_2\tilde q_1^{\natural}$ is $\sum_\mu q_{2\mu} q_{1\mu}$, which is the Euclidean inner product, so it vanishes exactly when $\tilde q_2$ and $\tilde q_1$ are orthogonal; the quotient is $\tilde q_2/\tilde q_1 = \tilde q_2\tilde q_1^{\natural}/\langle\tilde q_1\rangle_{\natural}$, a real multiple of $\tilde q_2\tilde q_1^{\natural}$ when $\tilde q_1$ is a unit, and a real multiple of a pure quaternion is pure. Finally $\langle\tilde q_2/\tilde q_1\rangle_{\natural} = \langle\tilde q_2\rangle_{\natural}/\langle\tilde q_1\rangle_{\natural} = 1$, and a unit pure quaternion satisfies $\mu^2 = -e_t$ by the first proposition of this section.
 
-For example $p = e_1$ and $\tilde q = e_2$ are orthogonal and of norm one, and $p/\tilde q = e_1e_2^{\natural} = -e_3$, a unit pure quaternion.
+For example $\tilde q_2 = \vec e_x$ and $\tilde q_1 = \vec e_y$ are orthogonal and of norm one, and $\tilde q_2/\tilde q_1 = \vec e_x\vec e_y^{\natural} = -\vec e_z$, a unit pure quaternion.
 
 ### The Axis and the Angle of the Unit Factor
 
@@ -160,7 +160,7 @@ Every unit quaternion is an exponential of this kind, and the exponent is read o
 **Proposition.** Let $\tilde u_{\mathrm r}$ be a unit quaternion with $\vec q_a \neq 0$, and put
 
 $$
-\mu = \frac{\vec q_a}{|\vec q_a|}, \qquad \theta = 2\arccos(u_0) \in (0,2\pi),
+\mu = \frac{\vec q_a}{|\vec q_a|}, \qquad \theta = 2\arccos(u_t) \in (0,2\pi),
 $$
 
 where $|\vec q_a| = \sqrt{\langle \vec q_a\rangle_{\natural}}$. Then $\mu$ is a unit pure quaternion, and
@@ -169,11 +169,11 @@ $$
 \tilde u_{\mathrm r} = \exp\Bigl(\mu\tfrac{\theta}{2}\Bigr).
 $$
 
-*Proof.* Since $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$, one has $u_0^2 + |\vec q_a|^2 = 1$, so $u_0 \in (-1,1)$ when $\vec q_a\neq0$ and $\theta$ is well defined with $\cos\tfrac{\theta}{2} = u_0 > -1$ and $\sin\tfrac{\theta}{2} = |\vec q_a| > 0$. Then $e_0\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} = u_0e_0 + \vec q_a = \tilde u_{\mathrm r}$, and the previous proposition applies.
+*Proof.* Since $\langle\tilde u_{\mathrm r}\rangle_{\natural} = 1$, one has $u_t^2 + |\vec q_a|^2 = 1$, so $u_t \in (-1,1)$ when $\vec q_a\neq0$ and $\theta$ is well defined with $\cos\tfrac{\theta}{2} = u_t > -1$ and $\sin\tfrac{\theta}{2} = |\vec q_a| > 0$. Then $e_t\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} = u_te_t + \vec q_a = \tilde u_{\mathrm r}$, and the previous proposition applies.
 
 The unit vector $\mu$ is the **axis** of the unit factor and $\theta$ is its **rotation angle**, twice the angle of the unit factor. The angle of the unit factor is taken in $[0,\pi]$, the full range of the arccosine, and the rotation angle in $[0,2\pi]$; no quotient is involved: the pair $(\mu,\theta)$ with $\mu\in \mathcal{A}$ and $\theta\in(0,2\pi)$ is in bijection with the unit quaternions of non-zero vector part.
 
-The restriction on the angle is a property of the algebra and not a convention. Sangwine, Ell and Le Bihan state it in the quaternion polar form: the argument is confined to $[0,\pi)$ because the modulus of the vector part is always taken to be positive, there being no convenient way to define an orientation in three-dimensional space that would fix the sign of the vector part; consequently a negated angle is expressed by negating the axis, not the angle, and any numerical evaluation of the angle returns a value in $[0,\pi)$. In the notation used here the sign needs no such rescue, since the rotation angle $\theta = 2\arccos(u_0)$ carries it and ranges over $(0,2\pi)$ for $\vec q_a\neq0$, the angle of the unit factor being $\theta/2$; the two endpoints $\theta = 0$ and $\theta = 2\pi$ are the real quaternions, where it is the axis and not the angle that degenerates.
+The restriction on the angle is a property of the algebra and not a convention. Sangwine, Ell and Le Bihan state it in the quaternion polar form: the argument is confined to $[0,\pi)$ because the modulus of the vector part is always taken to be positive, there being no convenient way to define an orientation in three-dimensional space that would fix the sign of the vector part; consequently a negated angle is expressed by negating the axis, not the angle, and any numerical evaluation of the angle returns a value in $[0,\pi)$. In the notation used here the sign needs no such rescue, since the rotation angle $\theta = 2\arccos(u_t)$ carries it and ranges over $(0,2\pi)$ for $\vec q_a\neq0$, the angle of the unit factor being $\theta/2$; the two endpoints $\theta = 0$ and $\theta = 2\pi$ are the real quaternions, where it is the axis and not the angle that degenerates.
 
 ### The Half-Angle and the Rotation
 
@@ -192,22 +192,22 @@ using the additivity of the exponential for commuting arguments, which $\mu\tfra
 The algebra $\mathbb{H}$ embeds in the algebra of two-by-two complex matrices. Fix the isomorphism by
 
 $$
-\iota(e_0) = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}, \qquad
-\iota(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0\end{pmatrix}, \qquad
-\iota(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix}, \qquad
-\iota(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i\end{pmatrix},
+\iota(e_t) = \begin{pmatrix} 1 & 0 \\ 0 & 1\end{pmatrix}, \qquad
+\iota(\vec e_x) = \begin{pmatrix} 0 & -i \\ -i & 0\end{pmatrix}, \qquad
+\iota(\vec e_y) = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix}, \qquad
+\iota(\vec e_z) = \begin{pmatrix} -i & 0 \\ 0 & i\end{pmatrix},
 $$
 
 which is the matrix representation of *Quaternion 2x2 Matrix Element Representation*, read on the real coefficients. On a general quaternion the map is
 
 $$
-\iota(\tilde q) = \begin{pmatrix} q_0 - iq_3 & -iq_1-q_2 \\ -iq_1+q_2 & q_0+iq_3\end{pmatrix},
+\iota(\tilde q) = \begin{pmatrix} q_t - iq_z & -iq_x-q_y \\ -iq_x+q_y & q_t+iq_z\end{pmatrix},
 $$
 
 and two identities hold. The determinant is the quaternion norm,
 
 $$
-\det\iota(\tilde q) = q_0^2+q_1^2+q_2^2+q_3^2 = \langle\tilde q\rangle_{\natural},
+\det\iota(\tilde q) = q_t^2+q_x^2+q_y^2+q_z^2 = \langle\tilde q\rangle_{\natural},
 $$
 
 and the image of the unit sphere is the special unitary group,
@@ -229,7 +229,7 @@ For reference, in the four-dimensional real regular representation the determina
 Take
 
 $$
-\tilde q = e_0 + 2e_1 + 3e_2 + 4e_3.
+\tilde q = e_t + 2\vec e_x + 3\vec e_y + 4\vec e_z.
 $$
 
 The quaternion norm is $\langle\tilde q\rangle_{\natural} = 1+4+9+16 = 30$, so the modulus is
@@ -241,35 +241,35 @@ $$
 and the unit factor and its parts are
 
 $$
-\tilde u_{\mathrm r} = \frac{\tilde q}{\sqrt{30}} = 0.182574186\,e_0 + 0.365148372\,e_1 + 0.547722558\,e_2 + 0.730296743\,e_3,
+\tilde u_{\mathrm r} = \frac{\tilde q}{\sqrt{30}} = 0.182574186\,e_t + 0.365148372\,\vec e_x + 0.547722558\,\vec e_y + 0.730296743\,\vec e_z,
 $$
 
 $$
 \theta = 2\arccos\!\left(\frac{1}{\sqrt{30}}\right) = 2.774384634\ \text{rad} \approx 158.96^\circ,
 \qquad
-\mu = \frac{2e_1+3e_2+4e_3}{\sqrt{29}} = 0.371390676\,e_1+0.557086015\,e_2+0.742781353\,e_3.
+\mu = \frac{2\vec e_x+3\vec e_y+4\vec e_z}{\sqrt{29}} = 0.371390676\,\vec e_x+0.557086015\,\vec e_y+0.742781353\,\vec e_z.
 $$
 
-The reconstruction $\tilde u_{\mathrm r} = e_0\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2}$ was checked in double precision and agrees with $\tilde u_{\mathrm r}$ to $6.4\times10^{-16}$ in each of the four coefficients.
+The reconstruction $\tilde u_{\mathrm r} = e_t\cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2}$ was checked in double precision and agrees with $\tilde u_{\mathrm r}$ to $6.4\times10^{-16}$ in each of the four coefficients.
 
 ### A Second Worked Element
 
 **Example.** For
 
 $$
-\tilde q = 1+2e_1-e_2+3e_3
+\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z
 $$
 
 the quaternion norm is $\langle\tilde q\rangle_{\natural} = 1+4+1+9 = 15$, so the modulus is $r = \sqrt{15}$ and the unit factor is
 
 $$
-\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{1+2e_1-e_2+3e_3}{\sqrt{15}}.
+\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{1+2\vec e_x-\vec e_y+3\vec e_z}{\sqrt{15}}.
 $$
 
 Its exponential form uses
 
 $$
-\cos\tfrac{\theta}{2} = \frac{q_0}{r} = \frac{1}{\sqrt{15}}, \qquad \sin\tfrac{\theta}{2} = \frac{|\vec q|}{r} = \frac{\sqrt{14}}{\sqrt{15}}, \qquad \mu = \frac{\vec q}{|\vec q|} = \frac{2e_1-e_2+3e_3}{\sqrt{14}},
+\cos\tfrac{\theta}{2} = \frac{q_t}{r} = \frac{1}{\sqrt{15}}, \qquad \sin\tfrac{\theta}{2} = \frac{|\vec q|}{r} = \frac{\sqrt{14}}{\sqrt{15}}, \qquad \mu = \frac{\vec q}{|\vec q|} = \frac{2\vec e_x-\vec e_y+3\vec e_z}{\sqrt{14}},
 $$
 
 so that $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} = \exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ with $\theta = 2\arccos(1/\sqrt{15})$ and $\mu$ a unit pure quaternion.
@@ -278,12 +278,12 @@ so that $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\mu\sin\tfrac{\theta}{2} =
 
 | $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $\tilde u_{\mathrm r}$ | $(\mu,\theta)$ |
 |---|---|---|---|---|
-| $2e_0$ | $4$ | $2$ | $e_0$ | axis undefined, $\theta = 0$ |
-| $-3e_0$ | $9$ | $3$ | $-e_0$ | axis undefined, $\theta = 2\pi$ |
-| $e_1$ | $1$ | $1$ | $e_1$ | $\mu = e_1$, $\theta = \pi$ |
-| $e_0+e_1$ | $2$ | $\sqrt{2}$ | $(e_0+e_1)/\sqrt{2}$ | $\mu = e_1$, $\theta = \pi/2$ |
+| $2e_t$ | $4$ | $2$ | $e_t$ | axis undefined, $\theta = 0$ |
+| $-3e_t$ | $9$ | $3$ | $-e_t$ | axis undefined, $\theta = 2\pi$ |
+| $\vec e_x$ | $1$ | $1$ | $\vec e_x$ | $\mu = \vec e_x$, $\theta = \pi$ |
+| $e_t+\vec e_x$ | $2$ | $\sqrt{2}$ | $(e_t+\vec e_x)/\sqrt{2}$ | $\mu = \vec e_x$, $\theta = \pi/2$ |
 
-The third line is a pure quaternion of unit length: its scalar part vanishes, so $\theta = \pi$ exactly and the modulus is one. The fourth is the rotor of a quarter turn about $e_1$, and its square is $e_1$, which is the check $\tilde u_{\mathrm r}^2 = \exp(\mu\theta) = e_1$ of the doubling rule.
+The third line is a pure quaternion of unit length: its scalar part vanishes, so $\theta = \pi$ exactly and the modulus is one. The fourth is the rotor of a quarter turn about $\vec e_x$, and its square is $\vec e_x$, which is the check $\tilde u_{\mathrm r}^2 = \exp(\mu\theta) = \vec e_x$ of the doubling rule.
 
 ### Two Quaternions with the Same Rotor
 
@@ -299,41 +299,41 @@ with the same unit factor. Conversely $\tilde q$ and $-\tilde q$ have the same m
 
 ### The Real Quaternions
 
-A quaternion is real if its vector part vanishes, $\tilde q = q_0e_0$. Then $\langle\tilde q\rangle_{\natural} = q_0^2$, the modulus is $r = |q_0|$, and the unit factor is $\tilde u_{\mathrm r} = \pm e_0$ with the sign of $q_0$.
+A quaternion is real if its vector part vanishes, $\tilde q = q_te_t$. Then $\langle\tilde q\rangle_{\natural} = q_t^2$, the modulus is $r = |q_t|$, and the unit factor is $\tilde u_{\mathrm r} = \pm e_t$ with the sign of $q_t$.
 
-The polar representation is unaffected: it still exists and is still unique, because the theorem above never used the vector part. What degenerates is the exponential form. For $\tilde u_{\mathrm r} = e_0$ the rotation angle is $\theta = 0$ and for $\tilde u_{\mathrm r} = -e_0$ it is $\theta = 2\pi$, and in both cases the axis is not determined by $\tilde u_{\mathrm r}$: every unit pure quaternion $\mu$ gives $\exp(\mu\cdot0) = e_0$ and $\exp(\mu\pi) = -e_0$. The set of pairs $(\mu,\theta)$ with $\theta$ fixed at $0$ or $2\pi$ and $\mu$ arbitrary therefore collapses to a single quaternion, and the exponential parametrisation is many-to-one exactly on the two real points of $\mathrm{Sp}(1)$.
+The polar representation is unaffected: it still exists and is still unique, because the theorem above never used the vector part. What degenerates is the exponential form. For $\tilde u_{\mathrm r} = e_t$ the rotation angle is $\theta = 0$ and for $\tilde u_{\mathrm r} = -e_t$ it is $\theta = 2\pi$, and in both cases the axis is not determined by $\tilde u_{\mathrm r}$: every unit pure quaternion $\mu$ gives $\exp(\mu\cdot0) = e_t$ and $\exp(\mu\pi) = -e_t$. The set of pairs $(\mu,\theta)$ with $\theta$ fixed at $0$ or $2\pi$ and $\mu$ arbitrary therefore collapses to a single quaternion, and the exponential parametrisation is many-to-one exactly on the two real points of $\mathrm{Sp}(1)$.
 
 ### The Absence of a Boost and of a Central Phase
 
 Two of the four factors that the companion articles carry are absent from the quaternion algebra, and the reasons are algebraic rather than conventional.
 
-The centre of $\mathbb{H}$ is $\mathbb{R}$, whose unit circle is $\{\pm e_0\}$, and both points are already accounted for by the unit factor. There is no room for a central phase distinct from a sign.
+The centre of $\mathbb{H}$ is $\mathbb{R}$, whose unit circle is $\{\pm e_t\}$, and both points are already accounted for by the unit factor. There is no room for a central phase distinct from a sign.
 
-In $\mathbb{H}$ no such element is available: if $\tilde q^2 = e_0$ then $(\tilde q-e_0)(\tilde q+e_0) = 0$, and since $\mathbb{H}$ is a division algebra one factor vanishes, so $\tilde q = \pm e_0$. The hyperbolic line of a hyperbolic rotation does not exist, and the only elements of norm one whose square is a positive real are $\pm e_0$.
+In $\mathbb{H}$ no such element is available: if $\tilde q^2 = e_t$ then $(\tilde q-e_t)(\tilde q+e_t) = 0$, and since $\mathbb{H}$ is a division algebra one factor vanishes, so $\tilde q = \pm e_t$. The hyperbolic line of a hyperbolic rotation does not exist, and the only elements of norm one whose square is a positive real are $\pm e_t$.
 
 ### A Third Polar Form: the Cayley–Dickson Form
 
 The table of quaternion representations in Sangwine, Ell and Le Bihan carries, besides the Cartesian form, the complex form $a+\mu b$, and the two forms used here, a **Cayley–Dickson polar form**,
 
-This is a third polar form for a quaternion, and it is not the decomposition proved in this article. There the modulus is a non-negative real and the argument a real angle; here both are elements of a plane spanned by $e_0$ and one chosen pure unit, a subalgebra isomorphic to $\mathbb{C}$ that is nevertheless not the centre of $\mathbb{H}$ and depends on the choice of that unit. The three forms answer different questions. The decomposition into a real scale and a unit quaternion is unique and is the subject of this article; the axis-angle form is the exponential of a pure quaternion; and the Cayley–Dickson form writes the same element with a modulus and an argument drawn from a complex-like subalgebra. The form is recorded here so that the two forms developed in this article are not taken for an exhaustive list.
+This is a third polar form for a quaternion, and it is not the decomposition proved in this article. There the modulus is a non-negative real and the argument a real angle; here both are elements of a plane spanned by $e_t$ and one chosen pure unit, a subalgebra isomorphic to $\mathbb{C}$ that is nevertheless not the centre of $\mathbb{H}$ and depends on the choice of that unit. The three forms answer different questions. The decomposition into a real scale and a unit quaternion is unique and is the subject of this article; the axis-angle form is the exponential of a pure quaternion; and the Cayley–Dickson form writes the same element with a modulus and an argument drawn from a complex-like subalgebra. The form is recorded here so that the two forms developed in this article are not taken for an exhaustive list.
 
 ## Summary
 
-Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde q = r \tilde u_{\mathrm r}$, with modulus $r = \sqrt{\langle\tilde q\rangle_{\natural}} > 0$ and unit factor $\tilde u_{\mathrm r} = \tilde q/r$ of norm one. The modulus is a positive central scale and the unit factor is an element of the compact group $\mathrm{Sp}(1)$; their parameter counts, one and three, add to the real dimension four of the algebra. The unit factor is an exponential $\tilde u_{\mathrm r} = \exp(\mu\tfrac{\theta}{2})$ of a unit pure quaternion, the axis, times a real rotation angle in $[0,2\pi]$, and the parametrisation is unique except at $\tilde u_{\mathrm r} = \pm e_0$, where the axis is undetermined. In the matrix model the statement is the polar decomposition of a matrix into a positive scalar and a special unitary factor. The central phase is absent because the centre of $\mathbb{H}$ is $\mathbb{R}$, and the hyperbolic factor is absent because $\mathbb{H}$ is a division algebra and the equation $\tilde q^2 = e_0$ has only the solutions $\pm e_0$. The modulus-and-rotor and axis-angle forms are not the only polar forms a quaternion admits: the Cayley–Dickson form carries a modulus and an argument drawn from the degenerate quaternion subalgebra $a+ia'$, and its existence is recorded in the last subsection of the degenerate cases.
+Every nonzero quaternion $\tilde q$ has exactly one polar representation $\tilde q = r \tilde u_{\mathrm r}$, with modulus $r = \sqrt{\langle\tilde q\rangle_{\natural}} > 0$ and unit factor $\tilde u_{\mathrm r} = \tilde q/r$ of norm one. The modulus is a positive central scale and the unit factor is an element of the compact group $\mathrm{Sp}(1)$; their parameter counts, one and three, add to the real dimension four of the algebra. The unit factor is an exponential $\tilde u_{\mathrm r} = \exp(\mu\tfrac{\theta}{2})$ of a unit pure quaternion, the axis, times a real rotation angle in $[0,2\pi]$, and the parametrisation is unique except at $\tilde u_{\mathrm r} = \pm e_t$, where the axis is undetermined. In the matrix model the statement is the polar decomposition of a matrix into a positive scalar and a special unitary factor. The central phase is absent because the centre of $\mathbb{H}$ is $\mathbb{R}$, and the hyperbolic factor is absent because $\mathbb{H}$ is a division algebra and the equation $\tilde q^2 = e_t$ has only the solutions $\pm e_t$. The modulus-and-rotor and axis-angle forms are not the only polar forms a quaternion admits: the Cayley–Dickson form carries a modulus and an argument drawn from the degenerate quaternion subalgebra $a+ia'$, and its existence is recorded in the last subsection of the degenerate cases.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{H}$ | the quaternion algebra, basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a quaternion, $q_0$ its scalar part, $\vec q$ its vector part |
-| $\tilde{q}^{\natural}$ | the quaternion conjugate, $q_0 - \vec q$ |
+| $\mathbb{H}$ | the quaternion algebra, basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a quaternion, $q_t$ its scalar part, $\vec q$ its vector part |
+| $\tilde{q}^{\natural}$ | the quaternion conjugate, $q_t - \vec q$ |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_\mu q_\mu^2$ | the quaternion norm, strictly positive on nonzero elements |
 | $r = \sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
 | $\tilde u_{\mathrm r} = \tilde q/r$ | the unit factor, of norm one |
 | $\mathrm{Sp}(1)$ | the group of unit quaternions |
-| $\operatorname{Im}\mathbb{H}$ | the pure quaternions, $\operatorname{span}\{e_1,e_2,e_3\}$ |
-| $\mu$ | a unit pure quaternion, a root of $-e_0$, the axis |
+| $\operatorname{Im}\mathbb{H}$ | the pure quaternions, $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mu$ | a unit pure quaternion, a root of $-e_t$, the axis |
 | $\theta$ | the rotation angle, in $[0,2\pi]$ |
 | $\iota$ | the isomorphism $\mathbb{H}\to M_2(\mathbb{C})$ on the real coefficients |
 

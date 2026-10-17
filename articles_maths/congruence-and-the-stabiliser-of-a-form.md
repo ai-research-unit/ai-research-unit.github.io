@@ -8,7 +8,7 @@ $$
 h \longmapsto h_{C}, \qquad h_{C}(x,y) = h(Cx, Cy) \qquad (C \text{ invertible}),
 $$
 
-of the group of units of the algebra on the set of the forms of the layer. The action is the congruence action, its orbits are the **congruence classes**, and its **stabiliser** of $h$ is exactly the unitary group $U(A,h)$ of *Isometries and the Unitary Group of a Form*. This article proves the last statement and organises the classification that the action produces.
+of the group of units of the algebra on the set of the forms of the layer. The action is the congruence action, its orbits are the **congruence classes**, and its **stabiliser** of $h$ is exactly the unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form*. This article proves the last statement and organises the classification that the action produces.
 
 The substance is threefold. The Gram matrix of $h_{C}$ in a basis is $C^{\dagger}GC$, the transform of the Gram matrix of $h$; the determinant is multiplied by a norm, so the non-degeneracy and the rank are invariants of the class. The stabiliser of $h$ is the unitary group, because the equation $h(Cx,Cy) = h(x,y)$ is the isometry equation and nothing else. And the classification of the classes is the classical classification of the forms: over $\mathbb{R}$ the complete invariant is the signature (Sylvester's law of inertia), over $\mathbb{C}$ it is the signature for a Hermitian form and the rank for a complex bilinear form, and over a general field with an involution it is the Witt class, whose group is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* and *Witt's Theorems*.
 
@@ -37,15 +37,15 @@ $$
 **Proposition.** The stabiliser of $h$ is the unitary group of the form:
 
 $$
-\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = U(A,h) .
+\operatorname{Stab}(h) = \{C \text{ invertible} : h(Cx,Cy) = h(x,y) \ \text{for all } x,y\} = \mathrm{U}(A,h) .
 $$
 
 **Proof.** The two defining conditions are the same equation; the elements of the left-hand set are the invertible isometries of $h$, which is the unitary group by *Isometries and the Unitary Group of a Form*. In the multiplication reading the condition is $C^{\dagger}GC = G$ of *Isometries and Unitary Operators of a Form*, which is the same equation in coordinates.
 
-**Corollary.** The congruence action is transitive on the forms of a fixed signature and free on the classes up to the stabiliser; the class of $h$ is the quotient of the group of units by $U(A,h)$, and the conjugates of the unitary group along the class are the unitary groups of the congruent forms:
+**Corollary.** The congruence action is transitive on the forms of a fixed signature and free on the classes up to the stabiliser; the class of $h$ is the quotient of the group of units by $\mathrm{U}(A,h)$, and the conjugates of the unitary group along the class are the unitary groups of the congruent forms:
 
 $$
-U(A,h_{C}) = C^{-1}\,U(A,h)\,C .
+\mathrm{U}(A,h_{C}) = C^{-1}\,\mathrm{U}(A,h)\,C .
 $$
 
 **Proof.** The last identity is the transport of the isometry condition: $D$ is an isometry of $h_{C}$ iff $h(CDx,CDy) = h(Cx,Cy)$ iff $C^{-1}DC$ is an isometry of $h$.
@@ -84,7 +84,7 @@ for the adjoint with respect to $h$ on the left and with respect to $h_{C}$ on t
 
 ### The Matrices
 
-On $M_n(\mathbb{C})$ with the trace form the congruence is $G \mapsto C^{\dagger}GC$, and the signature classifies over $\mathbb{R}$; over $\mathbb{C}$ the Hermitian forms are still classified by the signature, while a complex bilinear form of the same Gram matrix is classified only by its rank. The stabiliser of the identity Gram matrix is $U(n)$. The smallest cases are
+On $M_n(\mathbb{C})$ with the trace form the congruence is $G \mapsto C^{\dagger}GC$, and the signature classifies over $\mathbb{R}$; over $\mathbb{C}$ the Hermitian forms are still classified by the signature, while a complex bilinear form of the same Gram matrix is classified only by its rank. The stabiliser of the identity Gram matrix is $\mathrm{U}(n)$. The smallest cases are
 
 $$
 C=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad C^{\dagger}I_2C=\begin{pmatrix}1&1\\1&2\end{pmatrix},\qquad C^{\dagger}\begin{pmatrix}1&0\\0&-1\end{pmatrix}C=\begin{pmatrix}1&1\\1&0\end{pmatrix},
@@ -104,7 +104,7 @@ On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their si
 
 - **Congruence** is the action $h \mapsto h_{C}$, $h_{C}(x,y) = h(Cx,Cy)$, of the invertible operators on the forms; it preserves the sesquilinearity, the Hermitian property and the non-degeneracy.
 - The Gram matrix transforms as $G \mapsto C^{\dagger}GC$, and the determinant by the norm $\varsigma(\det C)\det C$; the rank and the non-degeneracy are invariants of the class.
-- The **stabiliser** of $h$ is exactly the unitary group $U(A,h)$, and the unitary groups of the congruent forms are conjugate: $U(A,h_{C}) = C^{-1}U(A,h)C$.
+- The **stabiliser** of $h$ is exactly the unitary group $\mathrm{U}(A,h)$, and the unitary groups of the congruent forms are conjugate: $\mathrm{U}(A,h_{C}) = C^{-1}\mathrm{U}(A,h)C$.
 - Over $\mathbb{R}$ the class is the **signature** (Sylvester); over $\mathbb{C}$ a Hermitian form is classified by the signature as well, while a complex bilinear form is classified by the rank; over a general field with an involution the class is the **Witt class**.
 - The congruence transports the operators by $T \mapsto C^{-1}TC$ and the adjoint by $T^{*} \mapsto C^{-1}T^{*}C$, so the self-adjoint, the skew-adjoint and the unitary operators are carried to the corresponding operators of the congruent form.
 - The spectra, the positivity and the polar decomposition of the transported operators are Part II.
@@ -114,7 +114,7 @@ On $\mathbb{B}$ the congruence of the plain and the quaternionic forms, their si
 | symbol | meaning |
 |---|---|
 | $h_{C}$ | the congruent form $h(Cx,Cy)$ |
-| $\operatorname{Stab}(h)$ | the stabiliser of $h$, equal to $U(A,h)$ |
+| $\operatorname{Stab}(h)$ | the stabiliser of $h$, equal to $\mathrm{U}(A,h)$ |
 | $G$, $G_{C}$ | the Gram matrices of $h$ and of $h_{C}$ |
 | $(n,m)$ | the signature of a form over an ordered field |
 | $C^{-1}TC$ | the transported operator |

@@ -8,13 +8,13 @@ The answer has three layers, and the article is organised around them. The first
 
 The article is organised as follows. A first section transcribes the standard electroweak vector-boson physics — the gauge group, the fields, the mixing, the masses, the currents, the self-couplings and the measured values — with citations to the standard literature. A second section locates the charged and neutral fields in the algebra and identifies the eigenvalue problem that supplies their charges. A third section treats the mass generation and fixes precisely what the framework supplies and what it does not. A fourth treats the currents and the vector-like obstruction. A fifth treats the trilinear and quartic gauge self-couplings, which the non-abelian structure of the material sector does supply. A closing section separates the three layers.
 
-We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The compact factor is
+We use the conventions of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The sectors are $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (material) and $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (informational), and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The compact factor is
 $$
-\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2),
+\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2),
 \qquad
-\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}\subset\mathbb{M}_- ,
+\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_- ,
 $$
-of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12e_3$, whose Hermitian partner is $iT_3=\tfrac12ie_3$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T_a=\tfrac12 e_a$. The connection components are taken in the unnormalized basis $e_a$, in which the structure constants are $f^{abc}=2\varepsilon^{abc}$; in the normalized basis $T_a=\tfrac12e_a$ the same algebra reads $[T_a,T_b]=\varepsilon_{abc}T_c$, with $f^{abc}=\varepsilon^{abc}$; and in the Hermitian-generator realization $T^a=ie_a\in\mathbb{M}_+$ of the BRST companion it reads $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$, the central $i$ relating the two realizations. The Cartan generator of the compact factor is $T_3=\tfrac12\vec e_z$, whose Hermitian partner is $iT_3=\tfrac12i\vec e_z$; the charge operator is the adjoint action $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, whose eigenvalues and eigenvectors on the material basis are derived below. The gradient and d'Alembertian are $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. Natural units $\hbar=c=1$ are used for the electroweak formulae, where the standard symbols $g,g',v,\theta_W$ refer to the standard normalization; the framework's coupling is $\kappa=ϙ/\hbar$ where it appears in the algebra's expressions. The matrix trace on the compact factor is $\mathrm{Tr}$, distinct from the informational trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the boundary statement and the list of open problems.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the placement of the electroweak sector in the larger structure.
@@ -34,14 +34,14 @@ of real dimension four, with $[e_a,e_b]=2\varepsilon_{abc}e_c$ and generators $T
 
 ### The Gauge Fields and the Mixing
 
-The electroweak gauge sector is the product group $SU(2)_L\times U(1)_Y$, with three gauge fields $W^a_\mu$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g'$. The kinetic terms are
+The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W^a_\mu$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g'$. The kinetic terms are
 $$
-\mathcal{L}_{\mathrm{kin}}=-\tfrac14 W^a_{\mu\nu}W^{a\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu},
+\mathcal{L}_{\mathrm{kin}}=-\mathrm{Tr}\langle\tilde{\mathcal{W}}\rangle_{\natural}-\tfrac12\langle\tilde{\mathcal{B}}\rangle_{\natural},
 $$
 $$
-W^a_{\mu\nu}=\partial_\mu W^a_\nu-\partial_\nu W^a_\mu+g\,\epsilon^{abc}W^b_\mu W^c_\nu,
+\tilde{\mathcal{W}}=\tilde\nabla\tilde W+\tfrac{g}{2}\,[\tilde W,\tilde W],\qquad \tilde W=\sum_a\tilde W^aT^a ,
 \qquad
-B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu .
+\tilde{\mathcal{B}}=\tilde\nabla\tilde B .
 $$
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$
@@ -74,7 +74,7 @@ $$
 \qquad
 v=246.22\ \mathrm{GeV},
 $$
-gives, through the covariant kinetic term $|D_\mu\phi|^2$ with $D_\mu=\partial_\mu+ig\tfrac{\sigma^a}{2}W^a_\mu+ig'\tfrac12 B_\mu$, the mass terms
+gives, through the covariant kinetic term $|D_\mu\phi|^2$ with $D_\mu=\partial/\partial Q_\mu+ig\tfrac{\sigma^a}{2}W^a_\mu+ig'\tfrac12 B_\mu$, the mass terms
 $$
 M_W=\frac{gv}{2},
 \qquad
@@ -102,7 +102,7 @@ $$
 $$
 which holds for a scalar multiplet of weak isospin $1/2$ and hypercharge $1/2$; the measured value, $\rho=1.00038\pm0.00020$, defined with the on-shell mixing angle, is consistent with it. The measured masses are $M_W=80.377\pm0.012$ GeV and $M_Z=91.1876\pm0.0021$ GeV, and the measured weak mixing angle is $\sin^2\theta_W=0.23122\pm0.00004$ in the $\overline{\mathrm{MS}}$ scheme. These values are the empirical input of the sector; the tree-level relations above are identities, and the difference between the tree-level expressions and the measured masses is the radiative correction $\Delta r$, which is standard.
 
-The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ with $D_\mu=\partial_\mu+i\kappa A_\mu$ and $\langle|\varphi|\rangle=v/\sqrt2$, is
+The framework's mass formula for an abelian charged scalar, $\mathcal{L}\supset-g^{\mu\nu}(D_\mu\varphi)^*(D_\nu\varphi)$ with $D_\mu=\partial/\partial Q_\mu+i\kappa A_\mu$ and $\langle|\varphi|\rangle=v/\sqrt2$, is
 $$
 M_A=\frac{ϙ v}{\hbar}=\kappa v ,
 $$
@@ -135,7 +135,7 @@ $$
 where $T_3^f$ is the weak isospin of the fermion and $Q_f$ its electric charge. The coupling of the photon is $eQ_f$, with $Q_f=T_3^f+Y_f$. The non-abelian structure produces the gauge self-couplings, whose Lorentz structure is standard:
 $$
 \mathcal{L}_{3}=ig\cos\theta_W\Big[\big(W^+_{\mu\nu}W^{-\mu}-W^-_{\mu\nu}W^{+\mu}\big)Z^\nu
-+\big(\partial_\mu Z_\nu\big)W^{+\mu}W^{-\nu}\Big]+\text{cyclic},
++\big(\partial/\partial Q_\mu Z_\nu\big)W^{+\mu}W^{-\nu}\Big]+\text{cyclic},
 $$
 $$
 \mathcal{L}_{4}=-\frac{g^2}{4}\Big[\big(W^+_\mu W^{-\mu}\big)^2-\big(W^+_\mu W^{+\mu}\big)\big(W^-_\nu W^{-\nu}\big)\Big]+\cdots ,
@@ -146,15 +146,15 @@ with the analogous $W W\gamma$ and $W W Z\gamma$ terms obtained by replacing one
 
 ### The Cartan Decomposition of $\mathrm{U}(2)$
 
-The compact factor of the algebra is $\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$, of real dimension four, matching the four electroweak gauge fields. Its Cartan subalgebra is two-dimensional, spanned by the central $ie_0$ and the material $e_3$ (or $ie_3$); the two commuting generators correspond to the two neutral fields, $B_\mu$ and $W^3_\mu$, before mixing. The off-diagonal generators are the charged combinations
+The compact factor of the algebra is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, of real dimension four, matching the four electroweak gauge fields. Its Cartan subalgebra is two-dimensional, spanned by the central $ie_t$ and the material $\vec e_z$ (or $i\vec e_z$); the two commuting generators correspond to the two neutral fields, $B_\mu$ and $W^3_\mu$, before mixing. The off-diagonal generators are the charged combinations
 $$
-W^\pm\;\longleftrightarrow\; e_1\pm i e_2\in\mathbb{B},
+W^\pm\;\longleftrightarrow\; \vec e_x\pm i \vec e_y\in\mathbb{B},
 $$
-which are complex combinations of the two real material generators. The adjoint action of the Cartan generator $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, with $iT_3=\tfrac12ie_3$ the Hermitian partner of the material Cartan generator $T_3=\tfrac12e_3$, is diagonal on them:
+which are complex combinations of the two real material generators. The adjoint action of the Cartan generator $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, with $iT_3=\tfrac12i\vec e_z$ the Hermitian partner of the material Cartan generator $T_3=\tfrac12\vec e_z$, is diagonal on them:
 $$
-[ie_3,e_1\pm ie_2]=\pm 2\,(e_1\pm ie_2),
+[i\vec e_z,\vec e_x\pm i\vec e_y]=\pm 2\,(\vec e_x\pm i\vec e_y),
 \qquad
-J_3(e_1\pm ie_2)=\pm (e_1\pm ie_2),
+J_3(\vec e_x\pm i\vec e_y)=\pm (\vec e_x\pm i\vec e_y),
 $$
 so that the charged generators carry the eigenvalues $\pm1$ of the adjoint $J_3$. This is the same computation the companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form* performs for the spin-one representation, and it identifies the W as the spin-one excitation of the material sector: the connection $\mathcal{A}_\mu\in\mathrm{SU}(2)$ is adjoint-valued, its two off-diagonal components are the charged W's, and its diagonal component is the neutral $W^3$.
 
@@ -164,9 +164,9 @@ A free W or Z of mass $M$ is described by the Proca field of the companion artic
 $$
 \mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12 M^2 A_\mu A^\mu,
 \qquad
-\partial_\mu F^{\mu\nu}-M^2A^\nu=0,
+\tilde\nabla\tilde F-M^2\tilde A=0,
 \qquad
-\partial_\mu A^\mu=0 ,
+\langle\tilde\nabla,\tilde A\rangle_{\natural}=0 ,
 $$
 the last being the Lorenz condition that follows from the equation, and by its canonical quantization, which yields three polarizations,
 $$
@@ -178,7 +178,7 @@ with the transverse and longitudinal modes. In the framework the massive vector 
 
 ### The Mixing as a Rotation of the Neutral Plane
 
-The two commuting directions of $\mathrm{U}(2)$ are the central $ie_0$ and the Cartan material direction $e_3$. Any two independent neutral combinations are a rotation of this plane,
+The two commuting directions of $\mathrm{U}(2)$ are the central $ie_t$ and the Cartan material direction $\vec e_z$. Any two independent neutral combinations are a rotation of this plane,
 $$
 Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu,
 \qquad
@@ -217,9 +217,9 @@ The electromagnetic current is a different case, and it is reached. The unbroken
 
 ## The Gauge Self-Couplings
 
-The trilinear and quartic vertices of the electroweak vector bosons come from the non-abelian curvature, and here the framework's structure is sufficient in form. Writing the curvature as $F_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, the cubic term in the action is linear in the commutator and the quartic term quadratic, so that
+The trilinear and quartic vertices of the electroweak vector bosons come from the non-abelian curvature, and here the framework's structure is sufficient in form. Writing the curvature as $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal{A}_\nu-\partial/\partial Q_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, the cubic term in the action is linear in the commutator and the quartic term quadratic, so that
 $$
-\mathcal{L}_{3}\sim\kappa\,f^{abc}\left(\partial_\mu\mathcal{A}^a_\nu\right)\mathcal{A}^{b\mu}\mathcal{A}^{c\nu},
+\mathcal{L}_{3}\sim\kappa\,f^{abc}\left(\partial/\partial Q_\mu\,\mathcal{A}^a_\nu\right)\mathcal{A}^{b\mu}\mathcal{A}^{c\nu},
 \qquad
 \mathcal{L}_{4}\sim\kappa^2 f^{abe}f^{cde}\mathcal{A}^a_\mu\mathcal{A}^b_\nu\mathcal{A}^{c\mu}\mathcal{A}^{d\nu},
 $$
@@ -230,15 +230,15 @@ which are the three- and four-gauge-boson vertices with the structure constants 
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The carrier of the massive vector field, as an element of the material sector $\mathbb{M}_-$; the three polarizations and the Proca equation, from the Proca companions; the charge eigenvalues of the charged W, as the eigenvalues $\pm1$ of the adjoint action of the Cartan generator $J_3=\tfrac12\mathrm{ad}_{ie_3}$ on $e_1\pm ie_2$, verified in the defining representation; the neutral plane of $\mathrm{U}(2)$ and the mixing rotation within it; the non-abelian self-couplings, as the expansion of the quaternion commutator with $f^{abc}=2\varepsilon^{abc}$; and the absence of self-coupling for the central factor.
+**Supplied by the algebra, and recomputed here.** The carrier of the massive vector field, as an element of the material sector $\mathbb{M}_-$; the three polarizations and the Proca equation, from the Proca companions; the charge eigenvalues of the charged W, as the eigenvalues $\pm1$ of the adjoint action of the Cartan generator $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}$ on $\vec e_x\pm i\vec e_y$, verified in the defining representation; the neutral plane of $\mathrm{U}(2)$ and the mixing rotation within it; the non-abelian self-couplings, as the expansion of the quaternion commutator with $f^{abc}=2\varepsilon^{abc}$; and the absence of self-coupling for the central factor.
 
-**Imported, and left visible.** The group $SU(2)_L\times U(1)_Y$ and its hypercharge assignments; the Weinberg angle and the mixing; the Higgs doublet, its potential and its vacuum value; the mass relations $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$ and $\rho=1$; the chiral charged and neutral currents and the fermion content; the electromagnetic coupling $e=g\sin\theta_W=g'\cos\theta_W$; the measured masses and mixing angle; and the radiative corrections. All of these are transcribed from the standard electroweak theory and cited as standard.
+**Imported, and left visible.** The group $SU(2)_L\times \mathrm{U}(1)_Y$ and its hypercharge assignments; the Weinberg angle and the mixing; the Higgs doublet, its potential and its vacuum value; the mass relations $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$ and $\rho=1$; the chiral charged and neutral currents and the fermion content; the electromagnetic coupling $e=g\sin\theta_W=g'\cos\theta_W$; the measured masses and mixing angle; and the radiative corrections. All of these are transcribed from the standard electroweak theory and cited as standard.
 
 **Not supplied.** The mass of the W and the Z is not generated by the algebra's central scalar; the doublet that the standard mechanism requires would have to be a Lorentz scalar carrying the fundamental of the compact factor, and the algebra's Lorentz-scalar carriers hold only the singlet and the adjoint; the chiral coupling of the W to left-handed currents is not produced by any of the framework's gauge actions; the number of generations and the quark mixing matrix belong to the spin-$\tfrac12$ subcategory. As everywhere in the series, no empirical content is added.
 
 ## Summary
 
-The W and Z are the massive spin-one fields of the weak interaction, with $W^\pm$ of charge $\pm1$ and the neutral Z mixing with the photon through the Weinberg angle. The framework reaches their kinematics: a massive vector is a material-sector element subject to the Proca equation $(\Box-\mu^2)\tilde{A}=0$ with three polarizations; the charged W's are the off-diagonal components $e_1\pm ie_2$ of the compact factor, on which the adjoint action of $J_3=\tfrac12\mathrm{ad}_{ie_3}$ has eigenvalues $\pm1$; the neutral plane is the two-dimensional Cartan subalgebra of $\mathrm{U}(2)$, spanned by the central $ie_0$ and the material $e_3$, and the Z–photon mixing is a rotation within it; and the trilinear and quartic self-couplings are the expansion of the quaternion commutator with $f^{abc}=2\varepsilon^{abc}$, which also shows that the central factor does not self-couple.
+The W and Z are the massive spin-one fields of the weak interaction, with $W^\pm$ of charge $\pm1$ and the neutral Z mixing with the photon through the Weinberg angle. The framework reaches their kinematics: a massive vector is a material-sector element subject to the Proca equation $(\Box-\mu^2)\tilde{A}=0$ with three polarizations; the charged W's are the off-diagonal components $\vec e_x\pm i\vec e_y$ of the compact factor, on which the adjoint action of $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}$ has eigenvalues $\pm1$; the neutral plane is the two-dimensional Cartan subalgebra of $\mathrm{U}(2)$, spanned by the central $ie_t$ and the material $\vec e_z$, and the Z–photon mixing is a rotation within it; and the trilinear and quartic self-couplings are the expansion of the quaternion commutator with $f^{abc}=2\varepsilon^{abc}$, which also shows that the central factor does not self-couple.
 
 The framework reaches the masses only through the abelian sector. The mass relations
 $$
@@ -259,17 +259,17 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre; abelian factor |
-| $\mathrm{U}(2)=\mathbb{R}(ie_0)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
-| $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{e_1,e_2,e_3\}$ | Compact gauge algebra |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; abelian factor |
+| $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Compact factor, real dimension four |
+| $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra |
 | $[e_a,e_b]=2\varepsilon_{abc}e_c$, $T_a=\tfrac12e_a$ | Commutator and generators |
 | $f^{abc}=2\varepsilon^{abc}$ | Structure constants of the compact factor, in the unnormalized basis $e_a$ ($f^{abc}=\varepsilon^{abc}$ in the normalized basis $T_a=\tfrac12e_a$) |
 | $\kappa=ϙ/\hbar$ | Framework gauge coupling |
-| $J_3=\tfrac12\mathrm{ad}_{ie_3}=\mathrm{ad}_{\,iT_3}$, $iT_3=\tfrac12ie_3$ | Cartan generator of the adjoint action |
-| $W^\pm\leftrightarrow e_1\pm ie_2$, $J_3 W^\pm=\pm W^\pm$ | Charged directions and their eigenvalues |
+| $J_3=\tfrac12\mathrm{ad}_{i\vec e_z}=\mathrm{ad}_{\,iT_3}$, $iT_3=\tfrac12i\vec e_z$ | Cartan generator of the adjoint action |
+| $W^\pm\leftrightarrow \vec e_x\pm i\vec e_y$, $J_3 W^\pm=\pm W^\pm$ | Charged directions and their eigenvalues |
 | $Z_\mu=\cos\theta_W W^3_\mu-\sin\theta_W B_\mu$, $A_\mu=\sin\theta_W W^3_\mu+\cos\theta_W B_\mu$ | Neutral mixing |
 | $\tan\theta_W=g'/g$ | Weinberg angle |
 | $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$, $M_\gamma=0$ | Tree-level masses |
@@ -280,14 +280,14 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_
 | $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_d$ | Charged current (chiral) |
 | $J_Z^\mu=\sum_f\bar f\gamma^\mu(T_3^fP_L-Q_f\sin^2\theta_W)f$ | Neutral current |
 | $\mathcal{L}_3\sim\kappa f^{abc}(\partial\mathcal{A})\mathcal{A}\mathcal{A}$, $\mathcal{L}_4\sim\kappa^2 f^{abe}f^{cde}\mathcal{A}^4$ | Trilinear and quartic self-couplings |
-| $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12M^2A_\mu A^\mu$ | Proca Lagrangian; $\partial_\mu A^\mu=0$ |
+| $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12M^2A_\mu A^\mu$ | Proca Lagrangian; $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ |
 | $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/M^2$ | Polarization completeness |
 | $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Informational trace formula, distinct from the matrix trace |
 
 ## Further Reading
 
-- S. L. Glashow, "Partial-symmetries of weak interactions," *Nuclear Physics* **22** (1961) 579–588, for the $SU(2)\times U(1)$ gauge structure and the neutral current.
+- S. L. Glashow, "Partial-symmetries of weak interactions," *Nuclear Physics* **22** (1961) 579–588, for the $SU(2)\times \mathrm{U}(1)$ gauge structure and the neutral current.
 - S. Weinberg, "A model of leptons," *Physical Review Letters* **19** (1967) 1264–1266, for the electroweak Lagrangian, the mixing and the mass relations.
 - A. Salam, "Weak and electromagnetic interactions," in *Elementary Particle Theory*, ed. N. Svartholm (Almϙvist and Wiksell, 1968), for the unified electroweak construction.
 - S. Weinberg, *The Quantum Theory of Fields, Vol. II: Modern Applications* (Cambridge, 1996), for the electroweak currents, the gauge self-couplings and the radiative corrections.
@@ -296,4 +296,4 @@ The charged current is chiral, $J^{+\mu}=\bar\psi_{\mathrm u}\gamma^\mu P_L\psi_
 - P. W. Higgs, "Broken symmetries and the masses of gauge bosons," *Physical Review Letters* **13** (1964) 508–509, for the mass generation mechanism.
 - G. 't Hooft, "Renormalizable Lagrangians for massive Yang–Mills fields," *Nuclear Physics B* **35** (1971) 167–188, for the renormalizability of the massive non-abelian theory.
 - Particle Data Group, R. L. Workman *et al.*, "Review of Particle Physics," *Progress of Theoretical and Experimental Physics* **2022** (2022) 083C01, for the measured masses, the mixing angle and the electroweak precision parameters.
-- W. J. Marciano and A. Sirlin, "Precise $SU(2)\times U(1)$ parameters and the $Z$ mass," *Physical Review D* **22** (1980) 2695–2700, for the relation between $G_F$, $v$ and the W mass and for the radiative correction $\Delta r$.
+- W. J. Marciano and A. Sirlin, "Precise $SU(2)\times \mathrm{U}(1)$ parameters and the $Z$ mass," *Physical Review D* **22** (1980) 2695–2700, for the relation between $G_F$, $v$ and the W mass and for the radiative correction $\Delta r$.

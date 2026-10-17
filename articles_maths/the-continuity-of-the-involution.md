@@ -16,7 +16,7 @@ The article proves that the twisted action is continuous exactly when $\varsigma
 
 **Proposition (continuity at the origin).** Let $\varphi : M \to N$ be an additive map of topological groups. Then $\varphi$ is continuous if and only if it is continuous at $0$; applied to the layer, $\varsigma$ is continuous if and only if it is continuous at $0$, and the same holds for $*$.
 
-*Proof.* If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + U) \subseteq \varphi(a) + \varphi(U)$ for every neighbourhood $U$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.
+*Proof.* If $\varphi$ is continuous at $0$ and $a \in M$, then $\varphi(a + \Omega) \subseteq \varphi(a) + \varphi(\Omega)$ for every neighbourhood $\Omega$ of $0$, because $\varphi$ is additive, so continuity at $a$ follows from continuity at $0$; the converse is immediate.
 
 **Theorem (the twisted action).** Let $A$ be a topological $R$-module and suppose $\varsigma$ continuous. Then the twisted action
 

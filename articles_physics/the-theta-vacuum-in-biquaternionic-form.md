@@ -14,7 +14,7 @@ whose integrand is a total derivative, whose integral is an integer $Ϙ$, and wh
 
 This article asks what the biquaternion framework contributes to that statement, and the answer is narrower than the subject might suggest. The findings are the following.
 
-1. **The $\theta$ parameter's value space is the algebra's centre.** The weighting is a phase, and the biquaternion algebra has a canonical central circle: the complex scalars $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$, the centre of $\mathbb{B}$, with the central scalar imaginary $i$ generating the continuous symmetry. The $\theta$ phase $\exp(i\theta Ϙ)e_0$ is a **central unitary element**, and the framework therefore supplies the value space in which $\theta$ lives rather than importing it. This is the article's one genuinely algebraic point, and it is exact: centrality means the weighting commutes with every element of $\mathbb{B}$, hence with every module structure, every sector, and every Lorentz rotor, so the $\theta$ vacuum is a scalar phase attached to each topological sector and modifies no biquaternion object.
+1. **The $\theta$ parameter's value space is the algebra's centre.** The weighting is a phase, and the biquaternion algebra has a canonical central circle: the complex scalars $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$, the centre of $\mathbb{B}$, with the central scalar imaginary $i$ generating the continuous symmetry. The $\theta$ phase $\exp(i\theta Ϙ)e_t$ is a **central unitary element**, and the framework therefore supplies the value space in which $\theta$ lives rather than importing it. This is the article's one genuinely algebraic point, and it is exact: centrality means the weighting commutes with every element of $\mathbb{B}$, hence with every module structure, every sector, and every Lorentz rotor, so the $\theta$ vacuum is a scalar phase attached to each topological sector and modifies no biquaternion object.
 
 2. **The $\theta$ vacuum does not change the sector structure.** Because the weighting is central, it multiplies the two sectors identically. The sectors are graded parts of one field related by the central $i$, and a central phase does not disturb that relation: the $\theta$ weighting is blind to the split. The framework's statement is therefore that a $\theta$ vacuum is *compatible* with the sector structure rather than testing it. Nothing in this article requires a non-central operator; that is the trace anomaly's business, and the two are distinguished below.
 
@@ -26,7 +26,7 @@ This article asks what the biquaternion framework contributes to that statement,
 
 The article proceeds as follows. The next section fixes the topological charge and the $\theta$ term in the framework's notation. A section constructs the $\theta$ vacuum and identifies the weighting as a central phase. A section relates the angle to the phase of the determinant and works the toy model that exhibits a determinant phase. A section treats periodicity and the parity interpretation of the topological density. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$; the sectors are $\mathbb{M}_-$ (anti-Hermitian, material, basis $ie_0,e_1,e_2,e_3$) and $\mathbb{M}_+$ (Hermitian, informational, basis $e_0,ie_1,ie_2,ie_3$), with $\mathbb{M}_-=i\mathbb{M}_+$. The trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_0)=2$. The material coordinate is $\tilde{Q}=ict\,e_0+\vec x$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. The abelian field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the non-abelian curvature is $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$, both as in *Instantons and Solitons in Biquaternionic Form*. The real structure is $\flat=-{}^{*}$. These are the conventions of *Conventions in the Biquaternion Universe*, *Instantons and Solitons in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
+**Conventions.** We use those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$; the sectors are $\mathbb{M}_-$ (anti-Hermitian, material, basis $ie_t,\vec e_x,\vec e_y,\vec e_z$) and $\mathbb{M}_+$ (Hermitian, informational, basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$), with $\mathbb{M}_-=i\mathbb{M}_+$. The trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, so that $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the d'Alembertian is the series $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. The abelian field strength is $\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ with invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the non-abelian curvature is $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$, both as in *Instantons and Solitons in Biquaternionic Form*. The real structure is $\flat=-{}^{*}$. These are the conventions of *Conventions in the Biquaternion Universe*, *Instantons and Solitons in Biquaternionic Form*, *The Functional Determinant in Biquaternionic Form*, and *The Trace Anomaly in Biquaternionic Form*.
 
 ## The Topological Charge and the $\theta$ Term
 
@@ -66,9 +66,9 @@ and its defining property is that the topological charge operator acts on it by 
 
 **The weighting is central.** The phase $\exp(i\theta Ϙ)$ is built from the central $i$, and the central scalars are exactly the centre of the algebra:
 $$
-\exp(\,i\theta Ϙ)\,e_0 \in \mathbb{C}_{\mathbb{B}} ,
+\exp(\,i\theta Ϙ)\,e_t \in \mathbb{C}_{\mathbb{B}} ,
 \qquad
-\big[\exp(\,i\theta Ϙ)e_0,\;\tilde Q\big] = 0 \quad\text{for every } \tilde Q\in\mathbb{B}.
+\big[\exp(\,i\theta Ϙ)e_t,\;\tilde Q\big] = 0 \quad\text{for every } \tilde Q\in\mathbb{B}.
 $$
 Three consequences follow and are structural.
 
@@ -86,7 +86,7 @@ The structural link between the $\theta$ vacuum and the anomaly is that the angl
 
 **The determinant's phase.** From *The Functional Determinant in Biquaternionic Form*:
 
-- a **central** fluctuation operator $S''=\kappa e_0$ has a determinant that factors; on the two-complex-dimensional module it is $\kappa^2$, real and positive for a positive operator, and its logarithm is the central scalar that enters the effective action;
+- a **central** fluctuation operator $S''=\kappa e_t$ has a determinant that factors; on the two-complex-dimensional module it is $\kappa^2$, real and positive for a positive operator, and its logarithm is the central scalar that enters the effective action;
 - a **non-central** operator has a determinant that does not factor, and the determinant acquires a **phase**. The chirality-off-diagonal Dirac mass is the instance: the mass term is a right multiplication, it mixes the two minimal left ideals, and the determinant of the family $\mathcal{D}$ over the family's parameter has a phase given by the eta invariant, the spectral asymmetry of the family.
 
 **The link.** For an operator family whose parameter is a background configuration, the phase of the determinant is the weighted count of spectral crossings, and the topological charge is what the phase counts. The $\theta$ angle enters as the coefficient of that phase. The trace anomaly of the previous article is the *modulus* statement about the same determinant (the conformal variation of $\log|\det|$), and the $\theta$ angle is the *phase* statement about it. This is the article's organising interpretation: one determinant, two anomalous interpretations, one central in character and one a phase.
@@ -125,11 +125,11 @@ The topological charge and the determinant's phase meet in the index theory of t
 $$
 Ϙ = \mathrm{ind}\,\mathcal{D}_+ = \dim\ker\mathcal{D}_+-\dim\ker\mathcal{D}_- ,
 $$
-computed by the Atiyah–Singer theorem as $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, the second Chern number, on a four-dimensional manifold without boundary; since $\mathrm{tr}(F\wedge F)=\tfrac12\,\mathrm{tr}(F_{\mu\nu}\tilde F^{\mu\nu})\,d^4x$, this is the same number as the previous section's $\frac{1}{16\pi^2}\int d^4x\,\mathrm{tr}(F\tilde F)$. Read in the framework, this says that the *sector label* $Ϙ$ is a **central integer** — an element of $\mathbb{Z}e_0$ — and together with the previous section's result that the weighting $\exp(i\theta Ϙ)$ is a **central phase**, the two ingredients of the $\theta$ vacuum both lie in the centre:
+computed by the Atiyah–Singer theorem as $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$, the second Chern number, on a four-dimensional manifold without boundary; since $\mathrm{tr}(F\wedge F)=\tfrac12\,\mathrm{tr}(F_{\mu\nu}\tilde F^{\mu\nu})\,d^4x$, this is the same number as the previous section's $\frac{1}{16\pi^2}\int d^4x\,\mathrm{tr}(F\tilde F)$. Read in the framework, this says that the *sector label* $Ϙ$ is a **central integer** — an element of $\mathbb{Z}e_t$ — and together with the previous section's result that the weighting $\exp(i\theta Ϙ)$ is a **central phase**, the two ingredients of the $\theta$ vacuum both lie in the centre:
 $$
-Ϙ\in\mathbb{Z}\,e_0\subset\mathbb{C}_{\mathbb{B}} ,
+Ϙ\in\mathbb{Z}\,e_t\subset\mathbb{C}_{\mathbb{B}} ,
 \qquad
-\exp(\,i\theta Ϙ)\in U(1)\subset\mathbb{C}_{\mathbb{B}} .
+\exp(\,i\theta Ϙ)\in \mathrm{U}(1)\subset\mathbb{C}_{\mathbb{B}} .
 $$
 The topological sector label and its weight are central; only the states $|Ϙ\rangle$ are not. This is a clean and exact framework statement, and it is the sharpest form of the article's general point that the $\theta$ vacuum's data live in the centre.
 
@@ -171,11 +171,11 @@ at small $\theta$, so that a nonzero $\chi$ is what makes $\theta$ a physical pa
 
 **Established (framework and algebra).**
 
-- The $\theta$ weighting is a **central unitary** element, $\exp(i\theta Ϙ)e_0\in\mathbb{C}_{\mathbb{B}}$, commuting with every element of $\mathbb{B}$, with every Lorentz rotor, with the module structure, and with the sector split; verified on explicit matrices ($\mathbb{Z}_4$ basis, $2\times2$ images).
+- The $\theta$ weighting is a **central unitary** element, $\exp(i\theta Ϙ)e_t\in\mathbb{C}_{\mathbb{B}}$, commuting with every element of $\mathbb{B}$, with every Lorentz rotor, with the module structure, and with the sector split; verified on explicit matrices ($\mathbb{Z}_4$ basis, $2\times2$ images).
 - The central scalars are the centre of $\mathbb{B}$ and are the framework's canonical circle; the $\theta$ parameter's value space is that circle, and the periodicity $\theta\sim\theta+2\pi$ is the circle's period.
 - The $\theta$ vacuum does not require a non-central operator; its weighting is central and is therefore invisible to the sector structure.
 - A determinant has a phase only for a **non-central** operator.
-- The topological charge is a **central integer**, $Ϙ\in\mathbb{Z}e_0\subset\mathbb{C}_{\mathbb{B}}$, and the weighting is a **central phase**; both ingredients of the $\theta$ vacuum therefore lie in the centre, and only the states $|Ϙ\rangle$ do not.
+- The topological charge is a **central integer**, $Ϙ\in\mathbb{Z}e_t\subset\mathbb{C}_{\mathbb{B}}$, and the weighting is a **central phase**; both ingredients of the $\theta$ vacuum therefore lie in the centre, and only the states $|Ϙ\rangle$ do not.
 - The determinant's sign flips once per crossing of the family; the toy family's $\det\mathcal{D}(\mu)=-\lambda^2+\mu^2$ changes sign exactly once between $\mu=0$ and $\mu=2$ (from $-1$ to $+3$ at $\lambda=1$), one unit of spectral flow consistent with $Ϙ=1$.
 - The $\theta$ term's integral is an integer (the topological charge), the abelian density is the invariant $I_2=\vec E\cdot\vec B=\mathrm{Sc}(\tilde F\star\tilde F)$, and $\star^2=-1$; all inherited from the instanton article.
 
@@ -206,16 +206,16 @@ $$
 S_\theta = \frac{\theta}{16\pi^2}\int d^4x\;\mathrm{tr}\big(F_{\mu\nu}\tilde F^{\mu\nu}\big) = \theta\,Ϙ ,
 \qquad Ϙ\in\mathbb{Z},
 $$
-its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B$, and the dual obeys $\star^2=-1$; the instanton article supplies the configurations and the integrality, inherited here. The vacuum is $|\theta\rangle=\sum_Ϙ \exp(i\theta Ϙ)|Ϙ\rangle$, and the weighting $\exp(i\theta Ϙ)e_0$ is a **central unitary** of $\mathbb{C}_{\mathbb{B}}$, commuting with every quaternion unit, every Lorentz rotor, every module component, and both sectors. The framework therefore supplies the angle's value space — its centre — and shows that the $\theta$ vacuum does not disturb the sector structure. The angle is the **phase** of a determinant, and a determinant has a phase only for a **non-central** operator, as the toy families $\mathcal{D}(\lambda)$ (phase $\pi$) and $\mathcal{C}(\lambda)$ (phase $0$) exhibit; the trace anomaly of the previous article is the modulus interpretation of the same object. The topology, the integrality, the periodicity, the strong-CP problem, and the eta invariant are standard and transcribed.
+its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B$, and the dual obeys $\star^2=-1$; the instanton article supplies the configurations and the integrality, inherited here. The vacuum is $|\theta\rangle=\sum_Ϙ \exp(i\theta Ϙ)|Ϙ\rangle$, and the weighting $\exp(i\theta Ϙ)e_t$ is a **central unitary** of $\mathbb{C}_{\mathbb{B}}$, commuting with every quaternion unit, every Lorentz rotor, every module component, and both sectors. The framework therefore supplies the angle's value space — its centre — and shows that the $\theta$ vacuum does not disturb the sector structure. The angle is the **phase** of a determinant, and a determinant has a phase only for a **non-central** operator, as the toy families $\mathcal{D}(\lambda)$ (phase $\pi$) and $\mathcal{C}(\lambda)$ (phase $0$) exhibit; the trace anomaly of the previous article is the modulus interpretation of the same object. The topology, the integrality, the periodicity, the strong-CP problem, and the eta invariant are standard and transcribed.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre; the complex scalars; home of the central phase |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; the complex scalars; home of the central phase |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $Ϙ$ | Topological charge, $\frac{1}{16\pi^2}\int d^4x\,\mathrm{tr}(F_{\mu\nu}\tilde F^{\mu\nu})\in\mathbb{Z}$; equals the second Chern number $\frac{1}{8\pi^2}\int\mathrm{tr}(F\wedge F)$ |
 | $\mathrm{tr}$ | Gauge Lie-algebra trace in the fundamental representation, distinct from the framework's $\mathrm{Tr}$ |
 | $\theta$ | Topological angle; $\theta\sim\theta+2\pi$; lives in the central circle |

@@ -21,71 +21,71 @@ The choice is the insertion of the conjugation in one slot, in the other, in bot
 **Proof.** The conjugation in the second slot and the conjugation in the first slot are the same map ${}^{\natural}$, because the base field $\mathbb{R}$ has a single involution, the identity, so the coefficientwise bar is the identity and the only conjugation available is ${}^{\natural}$. Hence
 
 $$
-(\mathrm{id},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) , \qquad
-({}^{\natural},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) ,
+(\mathrm{id},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde q_1^{\natural},\tilde q_2^{\natural}) ,
 $$
 
 that is, the quaternionic product and the plain product with both arguments conjugated. The four pairings therefore carry the two products
 
 $$
-\tilde p\tilde q\quad(\text{general plain}) , \qquad \tilde p^{\natural}\tilde q\quad(\text{general quaternionic}) .
+\tilde q_1\tilde q_2\quad(\text{general plain}) , \qquad \tilde q_1^{\natural}\tilde q_2\quad(\text{general quaternionic}) .
 $$
 
 **Table (the four pairings, the two products).**
 
 | pairing | product |
 |---|---|
-| $(\mathrm{id},\mathrm{id})$ | $\tilde p\tilde q$ |
-| $({}^{\natural},\mathrm{id})$ | $\tilde p^{\natural}\tilde q$ |
-| $(\mathrm{id},{}^{\natural})$ | $\tilde p\tilde q^{\natural}$, the quaternionic product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
-| $({}^{\natural},{}^{\natural})$ | $\tilde p^{\natural}\tilde q^{\natural}$, the plain product read at $(\tilde p^{\natural},\tilde q^{\natural})$ |
+| $(\mathrm{id},\mathrm{id})$ | $\tilde q_1\tilde q_2$ |
+| $({}^{\natural},\mathrm{id})$ | $\tilde q_1^{\natural}\tilde q_2$ |
+| $(\mathrm{id},{}^{\natural})$ | $\tilde q_1\tilde q_2^{\natural}$, the quaternionic product read at $(\tilde q_1^{\natural},\tilde q_2^{\natural})$ |
+| $({}^{\natural},{}^{\natural})$ | $\tilde q_1^{\natural}\tilde q_2^{\natural}$, the plain product read at $(\tilde q_1^{\natural},\tilde q_2^{\natural})$ |
 
 ## The Reason There Are Only Two
 
-The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products read at conjugated arguments, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
+The count is two because the algebra has a single non-trivial conjugation and the base field none. A general product inserts a conjugation into a slot; the conjugations available are the identity and ${}^{\natural}$; inserting ${}^{\natural}$ in the second slot gives the first-slot products read at conjugated arguments, not a new product. A third product would require a second independent conjugation on the elements, which the quaternion algebra over $\mathbb{R}$ does not have. The two products $\tilde q_1\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2$ are thus the whole list of general products, and the whole operational vocabulary of the chapter is built from them.
 
 ## The Companion Structures the Two Products Generate
 
 Each general product splits into a **symmetric part** and an **antisymmetric part** under the exchange of its two slots. Over $\mathbb{R}$ the base ring has no nontrivial involution, the two slots are both linear, and the exchange is the bare interchange of the two arguments, so the split is
 
 $$
-\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q ,\qquad
-\tilde p^{\natural}\tilde q=\langle\tilde p,\tilde q\rangle_{\natural}e_0+\tilde p\wedge^{\natural}\tilde q ,
+\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2 ,\qquad
+\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2 ,
 $$
 
 with the four halves
 
 $$
-\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p) ,\qquad
-\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q ,
+\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1) ,\qquad
+\tilde q_1\wedge\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2 ,
 $$
 
 $$
-\langle\tilde p,\tilde q\rangle_{\natural}e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p) ,\qquad
-\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p) .
+\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t=\tfrac12(\tilde q_1^{\natural}\tilde q_2+\tilde q_2^{\natural}\tilde q_1) ,\qquad
+\tilde q_1\wedge^{\natural}\tilde q_2=\tfrac12(\tilde q_1^{\natural}\tilde q_2-\tilde q_2^{\natural}\tilde q_1) .
 $$
 
 The two general products and their four halves are the six products of the chapter, and three of them — the symmetric plain, the antisymmetric plain and the general quaternionic — carry the companion structures. The two indices that name them are the **family**, plain or quaternionic, and the **half**, general, symmetric or antisymmetric:
 
 | half | plain | quaternionic |
 |---|---|---|
-| general | $\tilde p\tilde q$, the *Quaternions* algebra product | $\mathrm{GQA}$, $\tilde p^{\natural}\tilde q$ |
-| symmetric | $\mathrm{SPA}$, $\tilde p\bullet\tilde q$ | $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, the scalar-valued symmetrisation |
-| antisymmetric | $\mathrm{APA}$, $\tilde p\wedge\tilde q$ | $\tilde p\wedge^{\natural}\tilde q$, the quaternionic cross product |
+| general | $\tilde q_1\tilde q_2$, the *Quaternions* algebra product | $\mathrm{GQA}$, $\tilde q_1^{\natural}\tilde q_2$ |
+| symmetric | $\mathrm{SPA}$, $\tilde q_1\bullet\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$, the scalar-valued symmetrisation |
+| antisymmetric | $\mathrm{APA}$, $\tilde q_1\wedge\tilde q_2$ | $\tilde q_1\wedge^{\natural}\tilde q_2$, the quaternionic cross product |
 
 **Theorem (the two general products generate the companion products, and no more).** The split of the two general products under the interchange of their slots produces exactly four halves, the two general products together with the four halves are six distinct products, and the three companion structures of the category are the symmetric plain, the antisymmetric plain and the general quaternionic one.
 
-*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and conversely each general product is recovered as the sum of its two halves. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde p\bullet\tilde q=\tilde p\tilde q-\vec p\times\vec q$, which is nonzero on $(e_1,e_2)$; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_0$, while the general quaternionic product is not, its value on $(e_0,e_1)$ being $e_1$; the cross product is pure vector while the plain product is not; and the quaternionic cross product is pure vector, its value on $(e_0,e_1)$ being $e_1$ while its scalar part vanishes. Together these witnesses separate the four halves from the two general products and from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and no companion product is missed.
+*Proof.* The reconstruction above writes each general product as the sum of its symmetric and antisymmetric part, so the four halves are determined by the two general products, and conversely each general product is recovered as the sum of its two halves. The four halves are distinct from the two general products and from one another. The Jordan product differs from the plain product by the cross term, $\tilde q_1\bullet\tilde q_2=\tilde q_1\tilde q_2-\vec q_1\times\vec q_2$, which is nonzero on $(\vec e_x,\vec e_y)$; the symmetric quaternionic product is scalar, valued in $\mathbb{R}e_t$, while the general quaternionic product is not, its value on $(e_t,\vec e_x)$ being $\vec e_x$; the cross product is pure vector while the plain product is not; and the quaternionic cross product is pure vector, its value on $(e_t,\vec e_x)$ being $\vec e_x$ while its scalar part vanishes. Together these witnesses separate the four halves from the two general products and from one another, and no bilinear rule has more than its symmetric and its antisymmetric part. Hence the split produces no seventh product, and no companion product is missed.
 
-**Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $\langle\tilde p,\tilde q\rangle_{\natural}e_0$ and not the Jordan product. In the two triples the antisymmetric half is alternating in each, and the two triples separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the scalar-valued symmetrisation of the quaternionic product $\langle\tilde p,\tilde q\rangle_{\natural}e_0$ is not.
+**Remark (the plain triple and the quaternionic triple).** The plain triple is the multiplication of $\mathbb{H}$, its Jordan symmetrisation and its commutator; the quaternionic triple is the same three-fold split of the product whose first factor carries the conjugation, and the conjugation changes the sign of the antisymmetric term and turns the dot product of the symmetric term into its negative, which is why the symmetric half of the quaternionic product is the scalar $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$ and not the Jordan product. In the two triples the antisymmetric half is alternating in each, and the two triples separate on the symmetric side: the plain symmetric half $\mathrm{SPA}$ is a Jordan algebra, the scalar-valued symmetrisation of the quaternionic product $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$ is not.
 
 **Remark (the count of the chapter).** The reason there are two general products is the reason the category keeps three companion structures. The algebra has one nontrivial conjugation and the base field none, so the slot construction yields two general products; each general product yields exactly two halves; two general products therefore yield four halves, of which three carry the companion structures. A third general product would need a second independent conjugation on the elements, and a seventh structure would need a bilinear rule with more than a symmetric and an antisymmetric part; neither exists over $\mathbb{R}$.
 
 ## Summary
 
-A general product on $\mathbb{H}$ is a slot pairing of the identity and the natural conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde p\tilde q$ and the general quaternionic product $\tilde p^{\natural}\tilde q$.
+A general product on $\mathbb{H}$ is a slot pairing of the identity and the natural conjugation. Since the two slots read the same conjugation, the pairings with the conjugation in the second slot repeat those with it in the first, read with both arguments conjugated, and exactly two general products arise: the general plain product $\tilde q_1\tilde q_2$ and the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$.
 
-Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde p\bullet\tilde q$, the quaternion form read as a product $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$, and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The two general products and the four halves are six distinct products; three of them carry the companion structures, $\mathrm{SPA}$, $\mathrm{APA}$ and $\mathrm{GQA}$, indexed by the family and the half; the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=\langle\tilde p,\tilde q\rangle_{\natural}e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
+Each general product splits under the interchange of its slots into a symmetric and an antisymmetric part, and the split produces the four halves: the Jordan product $\tilde q_1\bullet\tilde q_2$, the quaternion form read as a product $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$, the cross product $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$, and the quaternionic cross product $\tilde q_1\wedge^{\natural}\tilde q_2$. The two general products and the four halves are six distinct products; three of them carry the companion structures, $\mathrm{SPA}$, $\mathrm{APA}$ and $\mathrm{GQA}$, indexed by the family and the half; the reconstruction $\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2$ and $\tilde q_1^{\natural}\tilde q_2=\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t+\tilde q_1\wedge^{\natural}\tilde q_2$ recovers the two general products, and no seventh product exists. The count is two because the algebra carries one nontrivial conjugation and the base field none.
 
 ## Summary of Notation
 
@@ -93,9 +93,9 @@ Each general product splits under the interchange of its slots into a symmetric 
 |---|---|
 | ${}^{\natural}$ | the natural conjugation, the anti-involution of the algebra |
 | $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{\natural})$, $({}^{\natural},{}^{\natural})$ | the four slot pairings |
-| $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | the two general products |
-| $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q$ | the symmetric and the antisymmetric half of the plain product |
-| $\langle\tilde p,\tilde q\rangle_{\natural}e_0$, $\tilde p\wedge^{\natural}\tilde q$ | the symmetric and the antisymmetric half of the quaternionic product |
+| $\tilde q_1\tilde q_2$, $\tilde q_1^{\natural}\tilde q_2$ | the two general products |
+| $\tilde q_1\bullet\tilde q_2$, $\tilde q_1\wedge\tilde q_2$ | the symmetric and the antisymmetric half of the plain product |
+| $\langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$, $\tilde q_1\wedge^{\natural}\tilde q_2$ | the symmetric and the antisymmetric half of the quaternionic product |
 | $\mathrm{SPA},\mathrm{APA},\mathrm{GQA}$ | the three companion structures of the category |
 
 ## Further Reading

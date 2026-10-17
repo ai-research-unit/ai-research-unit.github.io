@@ -148,33 +148,33 @@ $$
 
 a contraction semigroup, analytic of angle $\pi/2$, with the $L^1\to L^\infty$ smoothing bound $\|T(t)f\|_\infty\le(4\pi t)^{-n/2}\|f\|_1$ for $f\in L^1\cap L^2$, which is the regularising property of the heat equation. The explicit kernel $G_t$ is the fundamental solution, and the spectral representation of $A$ by the Fourier transform gives $T(t) = \mathcal{F}^{-1}\exp(-t|\xi|^2)\mathcal{F}$.
 
-**Example (the wave group).** The wave equation $\partial_t^2 u=\Delta u$ on $\mathbb{R}^n$ can be written as a first-order system for $U=(u,\partial_t u)$:
+**Example (the wave group).** The wave equation $\partial^2/\partial t^2 u=\Delta u$ on $\mathbb{R}^n$ can be written as a first-order system for $U=(u,\partial/\partial t u)$:
 
 $$
-\frac{d}{dt}\begin{pmatrix}u\\ \partial_t u\end{pmatrix} = \mathcal{A}\begin{pmatrix}u\\ \partial_t u\end{pmatrix}, \qquad \mathcal{A} = \begin{pmatrix}0 & I\\ \Delta & 0\end{pmatrix},
+\frac{d}{dt}\begin{pmatrix}u\\ \partial/\partial t u\end{pmatrix} = \mathcal{A}\begin{pmatrix}u\\ \partial/\partial t u\end{pmatrix}, \qquad \mathcal{A} = \begin{pmatrix}0 & I\\ \Delta & 0\end{pmatrix},
 $$
 
 on the energy space $H^1\times L^2$ with the inner product $\langle(u,v),(u',v')\rangle = \langle\nabla u,\nabla u'\rangle+\langle v,v'\rangle$. With respect to this inner product $\mathcal{A}$ is skew-adjoint, so it generates a unitary group by Stone's theorem below and the energy is constant along the flow. The group is not analytic: the solutions propagate with finite speed and do not smooth, in contrast with the heat semigroup; the contrast is the semigroup-theoretic form of the distinction between the parabolic and hyperbolic types of the earlier article.
 
 ## Stone's Theorem and the Spectral Theory of Groups
 
-**Theorem (Stone).** Let $H$ be a complex Hilbert space. A family $\{U(t)\}_{t\in\mathbb{R}}\subset B(H)$ is a strongly continuous one-parameter group of unitary operators,
+**Theorem (Stone).** Let $H$ be a complex Hilbert space. A family $\{T(t)\}_{t\in\mathbb{R}}\subset B(H)$ is a strongly continuous one-parameter group of unitary operators,
 
 $$
-U(0)=I, \quad U(s+t)=U(s)U(t), \quad U(t)^*=U(t)^{-1}=\overline{U(-t)} ,
+T(0)=I, \quad T(s+t)=T(s)T(t), \quad T(t)^*=T(t)^{-1}=\overline{T(-t)} ,
 $$
 
-if and only if there is a densely defined self-adjoint operator $A$ with $U(t)=\exp(itA)$; the operator $A$ is the generator, $A=-i\,U'(0)$, and it is unique.
+if and only if there is a densely defined self-adjoint operator $A$ with $T(t)=\exp(itA)$; the operator $A$ is the generator, $A=-i\,U'(0)$, and it is unique.
 
 *Proof.* Quoted as standard. For the necessity, the generator $A=-iU'(0)$ is defined on the elements where the derivative exists; unitarity gives $\langle Ax,y\rangle=\langle x,Ay\rangle$ on $D(A)$, so $A$ is symmetric, and the range condition of the Lumer–Phillips theorem for the operator $iA$ (which is dissipative when $A$ is self-adjoint with the appropriate sign) makes it self-adjoint; the group is then recovered from $A$ by the spectral theorem. Conversely, for a self-adjoint $A$ with spectral measure $E$, the operator $\exp(itA)=\int \exp(it\lambda)dE(\lambda)$ is unitary, the map $t\mapsto \exp(itA)$ is strongly continuous, and the group law holds.
 
 **Corollary (spectral form of a unitary group).** With $A=\int\lambda\,dE(\lambda)$ the spectral theorem for a self-adjoint operator, the group is
 
 $$
-U(t) = \int_{\mathbb{R}}\exp(it\lambda)\,dE(\lambda),
+T(t) = \int_{\mathbb{R}}\exp(it\lambda)\,dE(\lambda),
 $$
 
-and $U(t)$ preserves each spectral subspace $E(B)H$; equivalently, $\sigma(U(t)) = \overline{\exp(it\sigma(A))}$ and the spectral measure of $U(t)$ is the push-forward of $E$ under $\lambda\mapsto \exp(it\lambda)$.
+and $T(t)$ preserves each spectral subspace $E(B)H$; equivalently, $\sigma(T(t)) = \overline{\exp(it\sigma(A))}$ and the spectral measure of $T(t)$ is the push-forward of $E$ under $\lambda\mapsto \exp(it\lambda)$.
 
 *Proof.* The functional calculus for a self-adjoint operator, as in *Unbounded Operators and Spectral Measures*; the formula is the definition of the calculus applied to the bounded function $\exp(it\lambda)$, and the statement about the spectra follows from the mapping properties of the calculus.
 
@@ -259,7 +259,7 @@ for some $\varepsilon>0$ and all $t\ge0$; conversely, if the semigroup decays ex
 
 ## Summary
 
-A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, with the semigroup law and continuity at $0$; it is bounded by $M\exp(\omega t)$ and its infinitesimal generator $A$, defined as the derivative at $0$, is closed and densely defined, commutes with the semigroup, and has resolvent given by the Laplace transform $R(\lambda,A)=\int_0^\infty \exp(-\lambda t)T(t)dt$. The Hille–Yosida theorem states that $A$ generates a contraction semigroup exactly when $A$ is closed and densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$; the Feller–Miyadera–Phillips theorem replaces the bound by $\|R(\lambda,A)^n\|\le M/(\lambda-\omega)^n$, and the Lumer–Phillips theorem replaces the resolvent condition by the dissipativity of $A$ together with a single range condition. The abstract Cauchy problem $u'=Au$, $u(0)=x$ has the unique mild solution $u=T(\cdot)x$ for every $x$, and it has a classical solution exactly when $x$ lies in the domain; sectorial operators generate analytic semigroups that smooth the solution for positive time. The example of the smoothing is the heat semigroup generated by the Laplacian with Gaussian kernel, and the contrasting example is the wave group, generated by a skew-adjoint operator on the energy space and preserving the energy without smoothing. Stone's theorem identifies the strongly continuous unitary groups with the operators $\exp(itA)$ for self-adjoint $A$, with the spectral representation $U(t)=\int \exp(it\lambda)dE(\lambda)$, and relates the symmetry group to its generator; the Lie–Trotter product formula constructs the semigroup of a sum from the semigroups of the summands, $\exp(t\,\overline{A+B})=\operatorname*{s-lim}_{n}(\exp(tA/n)\exp(tB/n))^n$, with error $O(1/n)$ and $O(1/n^{2})$ for the symmetric Strang splitting, and the exponential formula $\exp(tA)=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ recovers the semigroup from the resolvent iteration; the spectral mapping theorem gives $\exp(t\sigma(A))\subseteq\sigma(T(t))$, with equality for eventually norm-continuous semigroups, under which hypothesis a spectral condition in the left half-plane is equivalent to uniform exponential decay.
+A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, with the semigroup law and continuity at $0$; it is bounded by $M\exp(\omega t)$ and its infinitesimal generator $A$, defined as the derivative at $0$, is closed and densely defined, commutes with the semigroup, and has resolvent given by the Laplace transform $R(\lambda,A)=\int_0^\infty \exp(-\lambda t)T(t)dt$. The Hille–Yosida theorem states that $A$ generates a contraction semigroup exactly when $A$ is closed and densely defined and $\|R(\lambda,A)\|\le1/\lambda$ for $\lambda>0$; the Feller–Miyadera–Phillips theorem replaces the bound by $\|R(\lambda,A)^n\|\le M/(\lambda-\omega)^n$, and the Lumer–Phillips theorem replaces the resolvent condition by the dissipativity of $A$ together with a single range condition. The abstract Cauchy problem $u'=Au$, $u(0)=x$ has the unique mild solution $u=T(\cdot)x$ for every $x$, and it has a classical solution exactly when $x$ lies in the domain; sectorial operators generate analytic semigroups that smooth the solution for positive time. The example of the smoothing is the heat semigroup generated by the Laplacian with Gaussian kernel, and the contrasting example is the wave group, generated by a skew-adjoint operator on the energy space and preserving the energy without smoothing. Stone's theorem identifies the strongly continuous unitary groups with the operators $\exp(itA)$ for self-adjoint $A$, with the spectral representation $T(t)=\int \exp(it\lambda)dE(\lambda)$, and relates the symmetry group to its generator; the Lie–Trotter product formula constructs the semigroup of a sum from the semigroups of the summands, $\exp(t\,\overline{A+B})=\operatorname*{s-lim}_{n}(\exp(tA/n)\exp(tB/n))^n$, with error $O(1/n)$ and $O(1/n^{2})$ for the symmetric Strang splitting, and the exponential formula $\exp(tA)=\operatorname*{s-lim}_{n}(I-tA/n)^{-n}$ recovers the semigroup from the resolvent iteration; the spectral mapping theorem gives $\exp(t\sigma(A))\subseteq\sigma(T(t))$, with equality for eventually norm-continuous semigroups, under which hypothesis a spectral condition in the left half-plane is equivalent to uniform exponential decay.
 
 ## Summary of Notation
 
@@ -275,7 +275,7 @@ A strongly continuous semigroup on a Banach space is a family $T(t)$, $t\ge0$, w
 | abstract Cauchy problem | $u'=Au$, $u(0)=x$; classical and mild solutions |
 | $\Delta$, $G_t$ | Laplacian and the Gaussian heat kernel |
 | $\mathcal{A}$ | First-order matrix operator of the wave equation |
-| $U(t)$, $A$ | Unitary group and its self-adjoint generator, $U(t)=\exp(itA)$ |
+| $T(t)$, $A$ | Unitary group and its self-adjoint generator, $T(t)=\exp(itA)$ |
 | $E(\lambda)$ | Spectral measure of a self-adjoint operator |
 | $\sigma(A)$, $\sigma(T(t))$ | Spectra of the generator and of the semigroup |
 | $\exp(t\,\overline{A+B})=\operatorname*{s-lim}_{n}(\exp(tA/n)\exp(tB/n))^{n}$ | Lie–Trotter product formula |

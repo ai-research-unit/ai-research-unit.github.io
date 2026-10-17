@@ -111,13 +111,13 @@ The proof is a covering-space argument and is given after the covering theory be
 
 ### Definitions and Basic Properties
 
-**Definition.** A **covering space** of a topological space $B$ is a space $E$ together with a continuous surjection $p : E \to B$ such that every $b \in B$ has an open neighbourhood $U$ for which
+**Definition.** A **covering space** of a topological space $B$ is a space $E$ together with a continuous surjection $p : E \to B$ such that every $b \in B$ has an open neighbourhood $\Omega$ for which
 
 $$
-p^{-1}(U) = \bigsqcup_{\lambda \in \Lambda} V_\lambda
+p^{-1}(\Omega) = \bigsqcup_{\lambda \in \Lambda} V_\lambda
 $$
 
-is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphically onto $U$ by $p$. Such a $U$ is **evenly covered**; the sets $V_\lambda$ are its **sheets**, and $B$ is the **base**. The number of sheets over a point is the **degree** of the covering when it is finite and constant.
+is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphically onto $\Omega$ by $p$. Such a $\Omega$ is **evenly covered**; the sets $V_\lambda$ are its **sheets**, and $B$ is the **base**. The number of sheets over a point is the **degree** of the covering when it is finite and constant.
 
 **Proposition.** A covering map is a local homeomorphism and an open map, and every point of $E$ has a neighbourhood mapped homeomorphically onto an open set of $B$.
 
@@ -131,7 +131,7 @@ is a disjoint union of open sets $V_\lambda \subseteq E$ each mapped homeomorphi
 
 **Theorem (path lifting).** Let $p : E \to B$ be a covering, let $\gamma : I \to B$ be a path, and let $e_0 \in E$ with $p(e_0) = \gamma(0)$. Then there is exactly one path $\gamma^{\mathrm{lift}} : I \to E$ with $\gamma^{\mathrm{lift}}(0) = e_0$ and $p \circ \gamma^{\mathrm{lift}} = \gamma$.
 
-*Proof.* Cover $B$ by evenly covered open sets and pull the cover back to a cover of the compact interval $I$; by the Lebesgue number lemma for the metric space $I$ there is $n$ such that each subinterval $[k/n, (k+1)/n]$ lies in an evenly covered set $U_k$. Construct $\gamma^{\mathrm{lift}}$ inductively on the subintervals: on $[0, 1/n]$ take the sheet over $U_0$ through $e_0$ and set $\gamma^{\mathrm{lift}} = (p|_{V_0})^{-1} \circ \gamma$; the endpoint $\gamma^{\mathrm{lift}}(1/n)$ lies over $\gamma(1/n)$, so it lies in some sheet over $U_1$, and the construction continues. Uniqueness: two lifts agreeing at a point agree on a neighbourhood of it by uniqueness of the local inverse, so the set where they agree is open; it is also closed, because by continuity both maps land in one sheet near a limit point, and $I$ is connected.
+*Proof.* Cover $B$ by evenly covered open sets and pull the cover back to a cover of the compact interval $I$; by the Lebesgue number lemma for the metric space $I$ there is $n$ such that each subinterval $[k/n, (k+1)/n]$ lies in an evenly covered set $\Omega_k$. Construct $\gamma^{\mathrm{lift}}$ inductively on the subintervals: on $[0, 1/n]$ take the sheet over $\Omega_0$ through $e_0$ and set $\gamma^{\mathrm{lift}} = (p|_{V_0})^{-1} \circ \gamma$; the endpoint $\gamma^{\mathrm{lift}}(1/n)$ lies over $\gamma(1/n)$, so it lies in some sheet over $\Omega_1$, and the construction continues. Uniqueness: two lifts agreeing at a point agree on a neighbourhood of it by uniqueness of the local inverse, so the set where they agree is open; it is also closed, because by continuity both maps land in one sheet near a limit point, and $I$ is connected.
 
 **Theorem (homotopy lifting).** Let $p : E \to B$ be a covering and let $H : I \times I \to B$ be a homotopy with $H(0,0) = b_0$. Given $e_0 \in E$ over $b_0$ there is exactly one $H^{\mathrm{lift}} : I \times I \to E$ with $p \circ H^{\mathrm{lift}} = H$ and $H^{\mathrm{lift}}(0,0) = e_0$.
 
@@ -149,7 +149,7 @@ $$
 f_*\bigl(\pi_1(Y,y_0)\bigr) \subseteq p_*\bigl(\pi_1(X^{\mathrm{cov}}, x^{\mathrm{lift}}_0)\bigr).
 $$
 
-*Proof.* Necessity: if $f^{\mathrm{lift}}$ exists then $f_* = p_* f^{\mathrm{lift}}_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f^{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x^{\mathrm{lift}}_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$, hence lifts to a loop at $x^{\mathrm{lift}}_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $U$ about $f(y)$, the lift over the sheet through $f^{\mathrm{lift}}(y)$ composed with $f$ agrees with $f^{\mathrm{lift}}$ on $V$, and hence $f^{\mathrm{lift}}$ is continuous there.
+*Proof.* Necessity: if $f^{\mathrm{lift}}$ exists then $f_* = p_* f^{\mathrm{lift}}_*$, so the image of $f_*$ lies in the image of $p_*$. Sufficiency: for $y \in Y$ choose a path $\alpha$ from $y_0$ to $y$ and define $f^{\mathrm{lift}}(y)$ as the endpoint of the lift of $f \circ \alpha$ starting at $x^{\mathrm{lift}}_0$. The condition ensures that a second choice $\alpha'$ gives the same endpoint: $\alpha \ast \bar\alpha'$ is a loop at $y_0$, its image under $f$ is a loop whose class lies in $p_*\pi_1(X^{\mathrm{cov}},x^{\mathrm{lift}}_0)$, hence lifts to a loop at $x^{\mathrm{lift}}_0$, and the two lifts end at the same point. Continuity is checked locally: $y$ has a path-connected neighbourhood $V$ contained in an evenly covered set $\Omega$ about $f(y)$, the lift over the sheet through $f^{\mathrm{lift}}(y)$ composed with $f$ agrees with $f^{\mathrm{lift}}$ on $V$, and hence $f^{\mathrm{lift}}$ is continuous there.
 
 **Corollary.** With the same hypotheses, two lifts of $f$ that agree at one point of a connected $Y$ agree everywhere.
 
@@ -229,7 +229,7 @@ $$
 
 the free group on two generators. More generally the wedge of $n$ circles has fundamental group the free group $F_n$, and the fundamental group of the surface of genus $g$ is $\langle a_1, b_1, \ldots, a_g, b_g \mid [a_1,b_1]\cdots[a_g,b_g]\rangle$.
 
-**Example.** For $S^2$ write $S^2 = U_1 \cup U_2$ with $U_1$ and $U_2$ open discs, path-connected, and $U_1 \cap U_2$ an annulus, hence path-connected with $\pi_1 \cong \mathbb{Z}$. Both $\pi_1(U_i)$ are trivial, so van Kampen gives $\pi_1(S^2) = 1$. More generally $S^n$ is simply connected for $n \geq 2$. By contrast $\mathbb{RP}^n$ has fundamental group $\mathbb{Z}/2$ for $n \geq 2$, computed from the double cover $S^n \to \mathbb{RP}^n$.
+**Example.** For $S^2$ write $S^2 = \Omega_1 \cup \Omega_2$ with $\Omega_1$ and $\Omega_2$ open discs, path-connected, and $\Omega_1 \cap \Omega_2$ an annulus, hence path-connected with $\pi_1 \cong \mathbb{Z}$. Both $\pi_1(\Omega_i)$ are trivial, so van Kampen gives $\pi_1(S^2) = 1$. More generally $S^n$ is simply connected for $n \geq 2$. By contrast $\mathbb{RP}^n$ has fundamental group $\mathbb{Z}/2$ for $n \geq 2$, computed from the double cover $S^n \to \mathbb{RP}^n$.
 
 ### Products, Retracts and the Boundary
 

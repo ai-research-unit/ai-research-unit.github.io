@@ -143,18 +143,18 @@ $$
 **Definition.** For $x \in H(A)$ the **quadratic representation** is the operator
 
 $$
-U_x : J(A) \longrightarrow J(A), \qquad U_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y .
+\mathrm{Jor}_x : J(A) \longrightarrow J(A), \qquad \mathrm{Jor}_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y .
 $$
 
-**Proposition.** $U_x$ takes its values in $J(A)$, is $R^{\varsigma}$-linear, and read through the associative product of $A$ it is
+**Proposition.** $\mathrm{Jor}_x$ takes its values in $J(A)$, is $R^{\varsigma}$-linear, and read through the associative product of $A$ it is
 
 $$
-U_x(y) = xyx .
+\mathrm{Jor}_x(y) = xyx .
 $$
 
 **Proof.** For $y \in H(A)$ the element $xyx$ is Hermitian, $(xyx)^{*} = x^{*}y^{*}x^{*} = xyx$, so the operator preserves $J(A)$, and it is $R^{\varsigma}$-linear because the product is $R^{\varsigma}$-bilinear on the Hermitian part. Expanding, $x \circ (x \circ y) = \tfrac14(x^{2}y + 2xyx + yx^{2})$ and $(x \circ x)\circ y = \tfrac12(x^{2}y + yx^{2})$, so the combination displayed is $xyx$.
 
-**Corollary.** $U_x(x) = x^{3}$ and $U_1 = \mathrm{id}$; the map $x \mapsto U_x$ is quadratic in $x$, and it replaces the associativity that the Jordan product does not have, in the sense that the products of three elements of $J(A)$ are governed by it.
+**Corollary.** $\mathrm{Jor}_x(x) = x^{3}$ and $\mathrm{Jor}_1 = \mathrm{id}$; the map $x \mapsto \mathrm{Jor}_x$ is quadratic in $x$, and it replaces the associativity that the Jordan product does not have, in the sense that the products of three elements of $J(A)$ are governed by it.
 
 **Proof.** $x x x = x^{3}$ and $1y1 = y$; the quadratic dependence is read from the definition, which is homogeneous of degree two in $x$ and linear in $y$.
 
@@ -178,7 +178,7 @@ For $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the star-invo
 
 ## Summary
 
-The Hermitian elements of a sesqualgebra with a $\varsigma$-semilinear involution form, under the symmetrised product $x \circ y = \tfrac12(xy + yx)$, a commutative Jordan algebra over the fixed ring $R^{\varsigma}$. It is special with envelope $A$, it is power-associative with $x^{\circ n} = x^{n}$ on the Hermitian elements, and it carries a symmetric trace form $\tau(x \circ y) = \tau(xy)$ whenever the algebra carries a trace. Its idempotents are the Hermitian idempotents of $A$, its Jordan orthogonality is the vanishing of the product for them, its degree is the length of a complete orthogonal decomposition, and its Peirce decomposition at a Hermitian idempotent $e$ is the Hermitian part of the associative Peirce decomposition of $A$ at $e$, with the eigenvalues $1, \tfrac12, 0$ on the Hermitian parts of the corner $eAe$, of the mixed spaces and of the corner $fAf$. Its quadratic representation is $U_x(y) = xyx$.
+The Hermitian elements of a sesqualgebra with a $\varsigma$-semilinear involution form, under the symmetrised product $x \circ y = \tfrac12(xy + yx)$, a commutative Jordan algebra over the fixed ring $R^{\varsigma}$. It is special with envelope $A$, it is power-associative with $x^{\circ n} = x^{n}$ on the Hermitian elements, and it carries a symmetric trace form $\tau(x \circ y) = \tau(xy)$ whenever the algebra carries a trace. Its idempotents are the Hermitian idempotents of $A$, its Jordan orthogonality is the vanishing of the product for them, its degree is the length of a complete orthogonal decomposition, and its Peirce decomposition at a Hermitian idempotent $e$ is the Hermitian part of the associative Peirce decomposition of $A$ at $e$, with the eigenvalues $1, \tfrac12, 0$ on the Hermitian parts of the corner $eAe$, of the mixed spaces and of the corner $fAf$. Its quadratic representation is $\mathrm{Jor}_x(y) = xyx$.
 
 The one structural difference from the bilinear theory of *The Self-Adjoint Part of an Algebra* is the scalars: the base involution is not the identity, the two halves are modules over the fixed ring and not over $R$, and the Jordan algebra is an algebra over $R^{\varsigma}$. Everything else is inherited, and inherited from the envelope: the Jordan identity is the associativity of $A$ read through the symmetrisation, which is the reason the identity holds here and fails for the symmetrised sesquilinear product off the Hermitian part, as *The Sesquilinear Symmetrised Product* records.
 
@@ -194,7 +194,7 @@ The one structural difference from the bilinear theory of *The Self-Adjoint Part
 | $e \circ e = e \iff e^2 = e = e^{*}$ | the idempotents of $J(A)$ |
 | $e \circ f = 0 \iff ef = fe = 0$ | Jordan orthogonality of Hermitian idempotents |
 | $\mathrm{J}_1 \oplus \mathrm{J}_{1/2} \oplus \mathrm{J}_0$ | the Peirce decomposition, the Hermitian parts of $eAe$, $eAf \oplus fAe$ and $fAf$ |
-| $U_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y = xyx$ | the quadratic representation |
+| $\mathrm{Jor}_x(y) = 2\,x \circ (x \circ y) - (x \circ x) \circ y = xyx$ | the quadratic representation |
 | $x^{\circ n} = x^{n}$ | the powers of a Hermitian element |
 | the degree | the number of members of a complete Jordan-orthogonal family of idempotents |
 

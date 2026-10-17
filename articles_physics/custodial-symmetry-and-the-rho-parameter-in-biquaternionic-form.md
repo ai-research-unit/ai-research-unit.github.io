@@ -17,11 +17,11 @@ $$
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
-and a central vacuum expectation value $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_0$ is invariant under the diagonal $g_L = g_R$. That is the custodial mechanism in the framework's own multiplication. The framework's actual scalar, however, is the central field $\tilde\Phi = \varphi\,e_0$, which is a singlet of every non-abelian group and cannot be the doublet that the construction requires. The algebra therefore supplies the custodial action, and the framework's scalar sector does not supply the field on which it would act.
+and a central vacuum expectation value $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $g_L = g_R$. That is the custodial mechanism in the framework's own multiplication. The framework's actual scalar, however, is the central field $\tilde\Phi = \varphi\,e_t$, which is a singlet of every non-abelian group and cannot be the doublet that the construction requires. The algebra therefore supplies the custodial action, and the framework's scalar sector does not supply the field on which it would act.
 
 The findings are the following.
 
-- **Established, and recomputed below.** The quaternion-valued scalar $\tilde H\in\mathbb{H}_{\mathbb{B}}$ carries the left–right action $\tilde H\mapsto g_L\tilde H g_R^{-1}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_0$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
+- **Established, and recomputed below.** The quaternion-valued scalar $\tilde H\in\mathbb{H}_{\mathbb{B}}$ carries the left–right action $\tilde H\mapsto g_L\tilde H g_R^{-1}$ of $SU(2)_L\times SU(2)_R$, and a central $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_t$ is invariant under the diagonal $SU(2)_V = \{g_L = g_R\}$. With the hypercharge coupling set to zero the two gauge-boson mass matrices are proportional to the identity in the custodial basis, so $M_W = M_Z\cos\theta_W$ and $\rho = 1$ at tree level. The general multiplet formula
 $$
 \rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2v_i^2\,T_{3i}^2}
 $$
@@ -38,7 +38,7 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the vector-like obstruction and the electroweak quantum numbers.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ its centre. The compact group is the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)$, with Lie algebra $\mathrm{span}_\mathbb{R}\{e_a\}\subset\mathbb{M}_-$; the standard Hermitian generators are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The symbols $SU(2)_L$, $U(1)_Y$, $T$, $T_3$, $Y$, $\theta_W$, $W^\pm$, $Z$, $H$ and $v$ are **standard electroweak notation, not framework objects**; they are used where standard structures are quoted or named as missing, following the agenda articles. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the mass formulas.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_ae_b = -\delta_{ab}e_t + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}$ its centre. The compact group is the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}\cong SU(2)$, with Lie algebra $\mathrm{span}_\mathbb{R}\{e_a\}\subset\mathbb{M}_-$; the standard Hermitian generators are $T_a = \tfrac{i}{2}e_a$, with $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ and $[T_a,T_b] = i\varepsilon_{abc}T_c$. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The symbols $SU(2)_L$, $\mathrm{U}(1)_Y$, $T$, $T_3$, $Y$, $\theta_W$, $W^\pm$, $Z$, $H$ and $v$ are **standard electroweak notation, not framework objects**; they are used where standard structures are quoted or named as missing, following the agenda articles. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value, and natural units $\hbar = c = 1$ are used in the mass formulas.
 
 ## The Custodial Symmetry of a Scalar Sector
 
@@ -66,7 +66,7 @@ $$
 = -\,\partial_\mu\phi^{0*}\partial_\mu\phi^0 - \partial_\mu\phi^{+*}\partial_\mu\phi^{+} ,
 $$
 
-canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{-1}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $U(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g'$.
+canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{-1}$. This is the **custodial group**. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g'$.
 
 **The vacuum and the unbroken diagonal.** The electroweak vacuum has $\langle\phi^+\rangle = 0$ and $\langle\phi^0\rangle = v/\sqrt2$, so the matrix expectation is proportional to the identity,
 
@@ -82,7 +82,7 @@ $$
 SU(2)_V = \left\{\,g_L = g_R = g\,\right\}
 $$
 
-is unbroken, while the axial directions are broken and supply the three Goldstone bosons that become the longitudinal $W^\pm$ and $Z$. The unbroken $U(1)_{em}$ is the $T_3$ subgroup of the diagonal, and the diagonal's being unbroken is what makes the three would-be Goldstone directions transform as a triplet.
+is unbroken, while the axial directions are broken and supply the three Goldstone bosons that become the longitudinal $W^\pm$ and $Z$. The unbroken $\mathrm{U}(1)_{em}$ is the $T_3$ subgroup of the diagonal, and the diagonal's being unbroken is what makes the three would-be Goldstone directions transform as a triplet.
 
 **The consequence for the masses.** The gauge-boson mass matrix is generated by the scalar kinetic term evaluated at the vacuum. Under the unbroken diagonal, the triplet of gauge fields $(W^1,W^2,W^3)$ transforms in the adjoint, and the hypercharge field $B$ is a singlet of $SU(2)_L$ but not of $SU(2)_R$; with $g' = 0$ the mass matrix is $SO(3)$-invariant, hence proportional to the identity, and
 
@@ -101,7 +101,7 @@ The structure above is a left and a right multiplication of a two-by-two matrix,
 **The scalar as a quaternion.** A complex doublet has four real components, and the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ has four real dimensions. The natural carrier is therefore the real quaternion
 
 $$
-\tilde H = h_0\,e_0 + h_1\,e_1 + h_2\,e_2 + h_3\,e_3 \in \mathbb{H}_{\mathbb{B}} ,
+\tilde H = h_0\,e_t + h_1\,\vec e_x + h_2\,\vec e_y + h_3\,\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
 \qquad h_k\in\mathbb{R},
 $$
 
@@ -115,7 +115,7 @@ $$
 This is an action of $SU(2)_L\times SU(2)_R$ on a real four-dimensional space — the vector representation, or the $(\tfrac12,\tfrac12)$ of the two factors — and it is the framework's own multiplication rather than an import. The invariant bilinear is the norm,
 
 $$
-\tilde H\tilde H^{\natural} = \left(h_0^2+h_1^2+h_2^2+h_3^2\right)e_0 ,
+\tilde H\tilde H^{\natural} = \left(h_0^2+h_1^2+h_2^2+h_3^2\right)e_t ,
 $$
 
 or equivalently $\mathrm{Sc}(\tilde H^{*}\tilde H)$, which the two-sided action preserves because $\mathrm{Sc}(g_L\tilde H g_R^{-1}\overline{g_L\tilde H g_R^{-1}}) = \mathrm{Sc}(\tilde H\tilde H^{\natural}) = \langle\tilde H,\tilde H\rangle_{\natural}$: the scalar part of a product is invariant under a similarity, and the two outer factors cancel.
@@ -131,16 +131,16 @@ which is the framework's similarity transformation, and it is the algebraic imag
 **The central vacuum.** A vacuum expectation value that is central,
 
 $$
-\langle\tilde H\rangle = \frac{v}{\sqrt2}\,e_0 \in \mathbb{C}_{\mathbb{B}} ,
+\langle\tilde H\rangle = \frac{v}{\sqrt2}\,e_t \in \mathbb{C}_{\mathbb{B}} ,
 $$
 
 is invariant under the diagonal because it commutes with every $g$, so
 
 $$
-g\,\frac{v}{\sqrt2}e_0\,g^{-1} = \frac{v}{\sqrt2}\,e_0 ,
+g\,\frac{v}{\sqrt2}e_t\,g^{-1} = \frac{v}{\sqrt2}\,e_t ,
 $$
 
-and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_0g_R^{-1} = \frac{v}{\sqrt2}g_Lg_R^{-1}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
+and the diagonal is unbroken. It is not invariant under a general left or right action, since $g_L\frac{v}{\sqrt2}e_tg_R^{-1} = \frac{v}{\sqrt2}g_Lg_R^{-1}$ equals the vacuum only when $g_L = g_R$; the axial directions are therefore broken, and their Goldstone bosons are the three would-be longitudinal gauge modes. The pivotal object is thus a central element, exactly as the Higgs mechanism's vacuum is central in the framework, and the difference is that the field carrying it is a general quaternion rather than a central scalar.
 
 
 ## The Mass Matrices and the Value of $\rho$
@@ -183,7 +183,7 @@ $$
 \rho = \frac{\sum_i v_i^2\left[T_i\left(T_i+1\right)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2},
 $$
 
-where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $U(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g'\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
+where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $\mathrm{U}(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g'\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
 
 
 **The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group, and the triplet $\tilde\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
@@ -200,7 +200,7 @@ The custodial group and the chiral group of the pion sector are the same group, 
 
 The construction above is the standard custodial mechanism written in the framework's multiplication. The framework's own scalar sector is smaller, and the difference should be stated without softening.
 
-**The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde\Phi = \varphi\,e_0\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde\Phi\,g^{-1} = \tilde\Phi$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde H$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
+**The framework's scalar is central.** The scalar of *The Higgs Mechanism in Biquaternionic Form* is $\tilde\Phi = \varphi\,e_t\in\mathbb{C}_{\mathbb{B}}$, a central field carrying only the abelian central phase. It commutes with every element of $\mathbb{B}$ and is therefore a **singlet** of the compact $SU(2)\subset\mathbb{M}_-$: the left and right actions both act trivially on it, $g\,\tilde\Phi\,g^{-1} = \tilde\Phi$. A singlet cannot break a non-abelian symmetry, so the framework's scalar cannot be the doublet whose vacuum expectation value gives the $W$ and $Z$ their masses. The quaternion-valued field $\tilde H$ of the previous sections is a **different object** from the framework's scalar: it is the natural carrier of the custodial action, and it is not the field that the framework's scalar sector builds.
 
 **The non-abelian action is vector-like.** Even granting a quaternion-valued scalar, the framework's non-abelian gauge action on matter is left multiplication, and on the framework's spinor module left multiplication acts on both chiral halves with the same representation. The companion agendas show that this action is vector-like and that the $SU(2)$ doublet is pseudoreal, so the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$: it cannot give the left-handed and right-handed fermions inequivalent representations. The custodial symmetry of the electroweak sector is a symmetry of a chiral gauge theory, and the framework's non-abelian structure does not reach the chiral gauge theory in the first place.
 
@@ -228,7 +228,7 @@ The $\rho$ parameter is measured to be one within about a part in a thousand by 
 
 ## Summary
 
-The $\rho$ parameter is the measure of custodial symmetry, the approximate global $SU(2)_V$ that survives the breaking of $SU(2)_L\times U(1)_Y$ when the scalar vacuum is a custodial singlet. In the Standard Model the vacuum is $\langle H\rangle = \frac{v}{\sqrt2}I_2$, a matrix proportional to the identity, which is invariant under the diagonal of the $SU(2)_L\times SU(2)_R$ acting on the scalar, and the gauge-boson mass matrices in the custodial limit are proportional to the identity, giving $M_W = M_Z\cos\theta_W$ and $\rho = 1$. The general multiplet formula is
+The $\rho$ parameter is the measure of custodial symmetry, the approximate global $SU(2)_V$ that survives the breaking of $SU(2)_L\times \mathrm{U}(1)_Y$ when the scalar vacuum is a custodial singlet. In the Standard Model the vacuum is $\langle H\rangle = \frac{v}{\sqrt2}I_2$, a matrix proportional to the identity, which is invariant under the diagonal of the $SU(2)_L\times SU(2)_R$ acting on the scalar, and the gauge-boson mass matrices in the custodial limit are proportional to the identity, giving $M_W = M_Z\cos\theta_W$ and $\rho = 1$. The general multiplet formula is
 
 $$
 \rho = \frac{\sum_i v_i^2\left[T_i(T_i+1)-T_{3i}^2\right]}{\sum_i 2\,v_i^2\,T_{3i}^2},
@@ -243,24 +243,24 @@ $$
 \qquad g_{L,R}\in\mathbb{H}^1_{\mathbb{B}} ,
 $$
 
-with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_0$ invariant under it; both invariances were verified numerically to better than $10^{-12}$. The framework therefore supplies the **action** and its invariant vacuum. It does not supply the **field**: its scalar is the central $\tilde\Phi = \varphi\,e_0$, a singlet of the compact $SU(2)$ that cannot break a non-abelian symmetry; its non-abelian gauge action on matter is vector-like and is not the chiral $SU(2)_L$; and it derives no hypercharge and no mixing angle. The custodial symmetry is thus present in the algebra and absent from the framework's scalar sector, and the framework makes no prediction for $\rho$ to compare with the measured value of one.
+with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_t$ invariant under it; both invariances were verified numerically to better than $10^{-12}$. The framework therefore supplies the **action** and its invariant vacuum. It does not supply the **field**: its scalar is the central $\tilde\Phi = \varphi\,e_t$, a singlet of the compact $SU(2)$ that cannot break a non-abelian symmetry; its non-abelian gauge action on matter is vector-like and is not the chiral $SU(2)_L$; and it derives no hypercharge and no mixing angle. The custodial symmetry is thus present in the algebra and absent from the framework's scalar sector, and the framework makes no prediction for $\rho$ to compare with the measured value of one.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_ae_b = -\delta_{ab}e_0+\varepsilon_{abc}e_c$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $e_ae_b = -\delta_{ab}e_t+\varepsilon_{abc}e_c$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{H}^1_{\mathbb{B}}$ | Real quaternions; unit real quaternions $\cong SU(2)$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre; home of the central vacuum |
 | $T_a = \tfrac{i}{2}e_a$, $\mathrm{Tr}(T_aT_b) = \tfrac12\delta_{ab}$ | Standard Hermitian generators of the compact group |
-| $\tilde H = h_0e_0 + h_ke_k\in\mathbb{H}_{\mathbb{B}}$ | Quaternion-valued scalar (carrier of the custodial action) |
+| $\tilde H = h_0e_t + h_k\vec e_k\in\mathbb{H}_{\mathbb{B}}$ | Quaternion-valued scalar (carrier of the custodial action) |
 | $\tilde H\mapsto g_L\tilde H g_R^{-1}$ | Left–right $SU(2)_L\times SU(2)_R$ action |
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
-| $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_0$ | Central vacuum; custodial invariant |
-| $\tilde\Phi = \varphi\,e_0\in\mathbb{C}_{\mathbb{B}}$ | Framework's actual scalar; a singlet |
+| $\langle\tilde H\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |
+| $\tilde\Phi = \varphi\,e_t\in\mathbb{C}_{\mathbb{B}}$ | Framework's actual scalar; a singlet |
 | $-\frac12\mathrm{Tr}(\partial_\mu H^\dagger\partial_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
 | $M_W^2 = g^2v^2/4$ | Charged weak-boson mass (standard) |
 | $M_Z^2 = (g^2+g'^2)v^2/4$ | Neutral weak-boson mass (standard) |

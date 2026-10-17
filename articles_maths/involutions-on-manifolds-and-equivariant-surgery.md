@@ -13,7 +13,7 @@ The two objects of the theory are the **fixed set** $F = M^{T}$ and the **quotie
 
 ## Locally Linear Involutions and the Fixed Set
 
-**Definition.** An involution of a manifold $M$ is **locally linear** if every point has a neighbourhood $U$ and a homeomorphism $U\cong\mathbb{R}^n$ under which the action of $T$ becomes a linear involution of $\mathbb{R}^n$; a **linear involution** is a linear map $\tau$ with $\tau^2 = \mathrm{id}$. Every continuous involution of a topological manifold is locally linear (a theorem of finite group actions), and the hypothesis is kept explicit only to make the normal form below precise.
+**Definition.** An involution of a manifold $M$ is **locally linear** if every point has a neighbourhood $\Omega$ and a homeomorphism $\Omega\cong\mathbb{R}^n$ under which the action of $T$ becomes a linear involution of $\mathbb{R}^n$; a **linear involution** is a linear map $\tau$ with $\tau^2 = \mathrm{id}$. Every continuous involution of a topological manifold is locally linear (a theorem of finite group actions), and the hypothesis is kept explicit only to make the normal form below precise.
 
 **Proposition (normal form of a linear involution).** Let $\tau$ be a linear involution of $\mathbb{R}^n$. Then there is a basis in which
 $$

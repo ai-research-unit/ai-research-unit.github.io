@@ -3,15 +3,15 @@
 
 ## Introduction
 
-An integrable system is a differential equation that can be solved by linear means despite being nonlinear, and the instrument of the solution is a pair of linear operators whose commutator reproduces the equation. The discovery of Lax was that the Korteweg–de Vries equation, written $\partial_t u - 6u\partial_x u + \partial_x^3 u = 0$, is equivalent to the operator equation
+An integrable system is a differential equation that can be solved by linear means despite being nonlinear, and the instrument of the solution is a pair of linear operators whose commutator reproduces the equation. The discovery of Lax was that the Korteweg–de Vries equation, written $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0$, is equivalent to the operator equation
 
 $$
-\partial_t L = [A, L], \qquad L = -\partial_x^2 + u ,
+\partial L/\partial t = [A, L], \qquad L = -\partial^2/\partial x^2 + w ,
 $$
 
-for a suitable third-order operator $A$. The operator $L$ is the Schrödinger operator with potential $u$, and the Lax equation says that $u$ evolves in such a way that the spectrum of $L$ is constant: the evolution is an **isospectral deformation**. The eigenvalues of $L$ are therefore integrals of the motion, and there are infinitely many of them, so the equation possesses infinitely many conserved quantities and is, in the appropriate infinite-dimensional sense, completely integrable.
+for a suitable third-order operator $A$. The operator $L$ is the Schrödinger operator with potential $w$, and the Lax equation says that $w$ evolves in such a way that the spectrum of $L$ is constant: the evolution is an **isospectral deformation**. The eigenvalues of $L$ are therefore integrals of the motion, and there are infinitely many of them, so the equation possesses infinitely many conserved quantities and is, in the appropriate infinite-dimensional sense, completely integrable.
 
-The consequence is a solution method. Because the spectrum of $L$ is constant, the **scattering data** of $L$ evolve in time by a simple linear law — in the reflectionless case by a pure exponential — and the solution $u$ is recovered from the evolved data by solving a linear integral equation, the Gelfand–Levitan–Marchenko equation. This is the **inverse scattering transform**, and it is for these equations what the Fourier transform is for a linear constant-coefficient equation: a change of variables that linearises the flow. Its most conspicuous output is the soliton, a localised travelling wave that survives collision with other solitons unchanged in shape and speed, not covered here.
+The consequence is a solution method. Because the spectrum of $L$ is constant, the **scattering data** of $L$ evolve in time by a simple linear law — in the reflectionless case by a pure exponential — and the solution $w$ is recovered from the evolved data by solving a linear integral equation, the Gelfand–Levitan–Marchenko equation. This is the **inverse scattering transform**, and it is for these equations what the Fourier transform is for a linear constant-coefficient equation: a change of variables that linearises the flow. Its most conspicuous output is the soliton, a localised travelling wave that survives collision with other solitons unchanged in shape and speed, not covered here.
 
 The article treats the theory in the following order: Lax pairs and isospectral deformation, with the KdV computation carried out and the zero-curvature form stated; the Riccati equation and the logarithmic derivative, which are the classical prototype of the linearisation, together with the lift of the Riccati equation to three dimensions and the generalisation of Euler's theorems; the conservation laws of KdV and the recursion that generates them, together with the bi-Hamiltonian structure that organises them; the inverse scattering transform, in its direct and inverse halves and with the evolution of the scattering data; the soliton solutions obtained from reflectionless data; the finite-gap or algebro-geometric solutions, which are the periodic analogue and are built from Riemann surfaces and theta functions; and the integrability tests, the Painlevé test and the Hirota bilinear method. The boundary with the theory of dynamical systems is fixed as follows: the finite-dimensional reading of integrability — the Liouville–Arnold theorem, invariant tori, action-angle variables and the stability of the flow — belongs to the articles of this Part on smooth dynamical systems and on the geodesic flow, which are written in parallel, and the Hamiltonian and symplectic formulation in finite dimensions belongs to the article of this Part on Lagrangian and Hamiltonian systems. What is treated here is the partial-differential side: the operator pairs, the conservation laws and the transform.
 
@@ -19,55 +19,55 @@ The article treats the theory in the following order: Lax pairs and isospectral 
 
 ### The Lax Equation
 
-**Definition.** Let $L$ and $A$ be linear operators on a function space, with $L$ formally self-adjoint and $A$ formally skew-adjoint. The **Lax pair** $(L,A)$ **represents** the evolution equation $\partial_t u = F(u)$ if
+**Definition.** Let $L$ and $A$ be linear operators on a function space, with $L$ formally self-adjoint and $A$ formally skew-adjoint. The **Lax pair** $(L,A)$ **represents** the evolution equation $\partial/\partial t w = F(w)$ if
 
 $$
-\partial_t L = [A,L] := AL - LA ,
+\partial L/\partial t = [A,L] := AL - LA ,
 $$
 
-where $\partial_t L$ is the operator obtained by differentiating the coefficients of $L$ in time.
+where $\partial L/\partial t$ is the operator obtained by differentiating the coefficients of $L$ in time.
 
-**Theorem (isospectrality).** Suppose $L(t) = -\partial_x^2 + u(\cdot,t)$ on $\mathbb{R}$ with $u$ decaying at infinity, suppose $A$ is skew-adjoint, and suppose $\partial_t L = [A,L]$. Then the spectrum of $L(t)$ is independent of $t$. Moreover, if $\psi$ solves the eigenvalue equation $L\psi = \lambda\psi$ and evolves by $\partial_t\psi = A\psi$, then $L\psi = \lambda\psi$ holds for all $t$ with $\lambda$ constant.
+**Theorem (isospectrality).** Suppose $L(t) = -\partial^2/\partial x^2 + w(\cdot,t)$ on $\mathbb{R}$ with $w$ decaying at infinity, suppose $A$ is skew-adjoint, and suppose $\partial L/\partial t = [A,L]$. Then the spectrum of $L(t)$ is independent of $t$. Moreover, if $\psi$ solves the eigenvalue equation $L\psi = \lambda\psi$ and evolves by $\partial/\partial t\,\psi = A\psi$, then $L\psi = \lambda\psi$ holds for all $t$ with $\lambda$ constant.
 
-*Proof.* Differentiate the eigenvalue equation: $\partial_t L\,\psi + L\,\partial_t\psi = \partial_t\lambda\psi + \lambda\partial_t\psi$. Substituting $\partial_t\psi=A\psi$ and $\partial_t L = AL-LA$ gives $(AL-LA)\psi + LA\psi = \partial_t\lambda\psi + \lambda A\psi$, and the left-hand side is $A(L\psi) = \lambda A\psi$ by the eigenvalue equation, so $\partial_t\lambda\psi = 0$ and $\lambda$ is constant whenever $\psi\neq0$. The spectrum, being the set of such $\lambda$, is time-independent.
+*Proof.* Differentiate the eigenvalue equation: $\partial L/\partial t\,\psi + L\,\partial/\partial t\,\psi = \partial/\partial t\,\lambda\psi + \lambda\partial/\partial t\,\psi$. Substituting $\partial/\partial t\,\psi=A\psi$ and $\partial L/\partial t = AL-LA$ gives $(AL-LA)\psi + LA\psi = \partial/\partial t\,\lambda\psi + \lambda A\psi$, and the left-hand side is $A(L\psi) = \lambda A\psi$ by the eigenvalue equation, so $\partial/\partial t\,\lambda\psi = 0$ and $\lambda$ is constant whenever $\psi\neq0$. The spectrum, being the set of such $\lambda$, is time-independent.
 
-The theorem explains the name: the evolution moves $u$ along a trajectory in the space of potentials on which the spectrum is constant, and the eigenvalues are the integrals of motion. That the eigenvalues are infinitely many is what makes the equation solvable.
+The theorem explains the name: the evolution moves $w$ along a trajectory in the space of potentials on which the spectrum is constant, and the eigenvalues are the integrals of motion. That the eigenvalues are infinitely many is what makes the equation solvable.
 
-**Theorem (the KdV Lax pair).** For $L = -\partial_x^2+u$ and
-
-$$
-A = -4\partial_x^3 + 6u\,\partial_x + 3\partial_x u ,
-$$
-
-the Lax equation $\partial_t L = [A,L]$ is equivalent to the Korteweg–de Vries equation
+**Theorem (the KdV Lax pair).** For $L = -\partial^2/\partial x^2+w$ and
 
 $$
-\partial_t u - 6u\partial_x u + \partial_x^3 u = 0 .
+A = -4\partial^3/\partial x^3 + 6w\,\partial/\partial x + 3\partial/\partial x w ,
+$$
+
+the Lax equation $\partial L/\partial t = [A,L]$ is equivalent to the Korteweg–de Vries equation
+
+$$
+\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0 .
 $$
 
 *Proof.* By the direct computation of the commutator, treated as an operator on a test function $\psi$:
 
 $$
-[A,L]\psi = \bigl(6u\partial_x u - \partial_x^3 u\bigr)\psi .
+[A,L]\psi = \bigl(6w\partial/\partial x w - \partial^3/\partial x^3 w\bigr)\psi .
 $$
 
-Indeed, the third-order part contributes $-4[D^3,L]\psi = -4\partial_x^3 u\psi + \dots$ and the remaining terms contribute $6u\partial_x u\psi$; all terms involving derivatives of $\psi$ cancel identically, so the commutator is multiplication by $6u\partial_x u-\partial_x^3 u$. Since $\partial_t L$ is multiplication by $\partial_t u$, the Lax equation is exactly KdV in the stated convention.
+Indeed, the third-order part contributes $-4[D^3,L]\psi = -4\partial^3/\partial x^3 w\psi + \dots$ and the remaining terms contribute $6w\partial/\partial x w\psi$; all terms involving derivatives of $\psi$ cancel identically, so the commutator is multiplication by $6w\partial/\partial x w-\partial^3/\partial x^3 w$. Since $\partial L/\partial t$ is multiplication by $\partial/\partial t w$, the Lax equation is exactly KdV in the stated convention.
 
-The computation is the model of every Lax-pair verification, and the operator $A$ is skew-adjoint, as required by the general theorem. The notation $\partial_t u - 6u\partial_x u + \partial_x^3 u=0$ is fixed once and for all in this article; the equation written with the other sign of the nonlinearity is the same equation after the substitution $u\mapsto-u$.
+The computation is the model of every Lax-pair verification, and the operator $A$ is skew-adjoint, as required by the general theorem. The notation $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$ is fixed once and for all in this article; the equation written with the other sign of the nonlinearity is the same equation after the substitution $w\mapsto-w$.
 
 ### Zero Curvature and the AKNS Scheme
 
 **Definition.** A **zero-curvature representation** of an evolution equation for a field $q(x,t)$ is a pair of matrix-valued functions $U(x,t;\lambda)$ and $V(x,t;\lambda)$, depending on a spectral parameter $\lambda$, such that
 
 $$
-\partial_t U - \partial_x V + [U,V] = 0
+\partial/\partial t U - \partial/\partial x V + [U,V] = 0
 $$
 
-is equivalent to the equation; the equation is the compatibility condition for the linear system $\partial_x\psi = U\psi$, $\partial_t\psi = V\psi$.
+is equivalent to the equation; the equation is the compatibility condition for the linear system $\partial/\partial x\,\psi = U\psi$, $\partial/\partial t\,\psi = V\psi$.
 
-**Theorem (equivalence with a Lax pair).** A zero-curvature representation with $U$ depending on the field and $\lambda$ is equivalent, on the level of the linear problem, to a Lax pair; the operator $L$ is the spatial part of the system and $A$ is the time part, and the isospectrality of the Lax pair becomes the statement that the monodromy of $\partial_x\psi = U\psi$ is conserved.
+**Theorem (equivalence with a Lax pair).** A zero-curvature representation with $U$ depending on the field and $\lambda$ is equivalent, on the level of the linear problem, to a Lax pair; the operator $L$ is the spatial part of the system and $A$ is the time part, and the isospectrality of the Lax pair becomes the statement that the monodromy of $\partial/\partial x\,\psi = U\psi$ is conserved.
 
-*Proof.* If the linear system is compatible, its solutions satisfy $\partial_t\partial_x\psi=\partial_x\partial_t\psi$, which is the zero-curvature equation, and the spectral parameter is a constant of the motion for the same reason that the eigenvalue is in the Lax formulation; conversely, a Lax pair can be rewritten as a zero-curvature pair by choosing a matrix realisation of the operator $L$ and taking $U$ and $V$ to be the matrices of the spatial and temporal parts.
+*Proof.* If the linear system is compatible, its solutions satisfy $\partial/\partial t\,\partial/\partial x\,\psi=\partial/\partial x\,\partial/\partial t\,\psi$, which is the zero-curvature equation, and the spectral parameter is a constant of the motion for the same reason that the eigenvalue is in the Lax formulation; conversely, a Lax pair can be rewritten as a zero-curvature pair by choosing a matrix realisation of the operator $L$ and taking $U$ and $V$ to be the matrices of the spatial and temporal parts.
 
 **Example (the AKNS system).** With the matrices
 
@@ -76,7 +76,7 @@ U = \begin{pmatrix}-ik & q\\ r & ik\end{pmatrix}, \qquad
 V = \begin{pmatrix} C & D\\ E & -C\end{pmatrix},
 $$
 
-the entries of $V$ being polynomials in $k$ determined by the requirement that the zero-curvature equation hold identically in $k$, one obtains, for different choices of the polynomial degree and the reduction of $(q,r)$, the nonlinear Schrödinger equation $i\partial_t q+\partial_x^2 q\pm2\lvert q\rvert^2q=0$, the modified KdV equation, the sine-Gordon equation $\partial_x\partial_t u=\sin u$ and KdV itself. This is the **AKNS scheme**, and it exhibits the integrable equations as the reductions of a single linear problem rather than as a list.
+the entries of $V$ being polynomials in $k$ determined by the requirement that the zero-curvature equation hold identically in $k$, one obtains, for different choices of the polynomial degree and the reduction of $(q,r)$, the nonlinear Schrödinger equation $i\partial/\partial t q+\partial^2/\partial x^2 q\pm2\lvert q\rvert^2q=0$, the modified KdV equation, the sine-Gordon equation $\partial/\partial x\,\partial/\partial t w=\sin w$ and KdV itself. This is the **AKNS scheme**, and it exhibits the integrable equations as the reductions of a single linear problem rather than as a list.
 
 ## The Riccati Equation and the Quaternionic Lift
 
@@ -89,7 +89,7 @@ $$
 the equation whose special case Count Riccati studied in 1724, and it is tied to the Schrödinger operator of the Lax pair by a single substitution. With $y = \phi'/\phi$ the first-order nonlinear equation becomes the second-order linear equation $-\phi'' - v\phi = 0$, and conversely; the operator factorises as
 
 $$
--\partial_x^2 - v = -(\partial_x + y)(\partial_x - y)
+-\partial^2/\partial x^2 - v = -(\partial/\partial x + y)(\partial/\partial x - y)
 $$
 
 exactly when $y$ solves the Riccati equation. The substitution is the **logarithmic derivative**, and it is the ancestor of the transformations — Miura's, Bäcklund's, the reductions of the AKNS scheme — by which a nonlinear equation of this subject is brought to a linear one. Its most conspicuous application outside the subject is the reduction of Burgers' equation to the heat equation.
@@ -98,7 +98,7 @@ exactly when $y$ solves the Riccati equation. The substitution is the **logarith
 
 Two theorems of Euler, dating from 1760, give the conditions under which the Riccati equation can be integrated in closed form.
 
-**Theorem (Euler's first theorem).** Given one particular solution $y_0$, the substitution $y = y_0 + z$ reduces the equation to a Bernoulli equation, and the further substitution $z = 1/u$ reduces that to a first-order linear equation; the general solution therefore follows in two quadratures.
+**Theorem (Euler's first theorem).** Given one particular solution $y_0$, the substitution $y = y_0 + z$ reduces the equation to a Bernoulli equation, and the further substitution $z = 1/w$ reduces that to a first-order linear equation; the general solution therefore follows in two quadratures.
 
 **Theorem (Euler's second theorem).** Given two particular solutions $y_0, y_1$, the general solution is
 
@@ -117,10 +117,10 @@ with $k$ a constant, so that the general solution follows in one quadrature.
 The Riccati equation lifts from the line to three dimensions, and the lift is a partial differential equation rather than a formal substitution with quaternionic coefficients. The construction is that of V. Kravchenko, V. V. Kravchenko and B. Williams (2001). Let $\Omega\subseteq\mathbb{R}^3$ and let
 
 $$
-D_3 = e_1\partial_1 + e_2\partial_2 + e_3\partial_3
+D_3 = e_1\partial/\partial 1 + e_2\partial/\partial 2 + e_3\partial/\partial 3
 $$
 
-be the three-dimensional Cauchy–Riemann operator, or **Moisil–Theodoresco operator**, of *Quaternion Regular Functions*, where its relation to the four-dimensional operator of that article is stated. On a quaternion-valued $g$ it acts as $D_3g = -\operatorname{div}\vec g+\operatorname{grad}g_0+\operatorname{rot}\vec g$; on a scalar it is the gradient, $D_3\phi = \operatorname{grad}\phi$; and its square is the negative Laplacian, $D_3^2 = -\Delta$, the cross terms cancelling because $\partial_j\partial_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$. The **logarithmic derivative** of Marchenko is the vector-valued function
+be the three-dimensional Cauchy–Riemann operator, or **Moisil–Theodoresco operator**, of *Quaternion Regular Functions*, where its relation to the four-dimensional operator of that article is stated. On a quaternion-valued $g$ it acts as $D_3g = -\operatorname{div}\vec g+\operatorname{grad}g_0+\operatorname{rot}\vec g$; on a scalar it is the gradient, $D_3\phi = \operatorname{grad}\phi$; and its square is the negative Laplacian, $D_3^2 = -\Delta$, the cross terms cancelling because $\partial/\partial x_j\,\partial/\partial x_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$. The **logarithmic derivative** of Marchenko is the vector-valued function
 
 $$
 \check\partial\phi = \phi^{-1}D_3\phi,
@@ -142,9 +142,9 @@ $$
 \Delta\phi + \langle\nabla\phi,\nabla\phi\rangle = -v .
 $$
 
-For $\vec f = f_k(x_k)e_k$ the equation reduces to $\partial_kf_k+f_k^2 = -v$, which is the classical Riccati equation: the equation of the line is a solution class of the equation of $\mathbb{R}^3$, not merely a limiting case of it.
+For $\vec f = f_k(x_k)e_k$ the equation reduces to $\partial/\partial x_k\,f_k+f_k^2 = -v$, which is the classical Riccati equation: the equation of the line is a solution class of the equation of $\mathbb{R}^3$, not merely a limiting case of it.
 
-**Remark (the factorisation, and its hypothesis).** The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\vec f}$ the operator of right multiplication by $\vec f$, one has $-\Delta-vI = (D_3+M_{\vec f})(D_3-M_{\vec f})$ if and only if $\vec f$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial_k\vec f]$, which vanishes for scalar $\psi$ and for constant $\vec f$ and not otherwise.
+**Remark (the factorisation, and its hypothesis).** The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\vec f}$ the operator of right multiplication by $\vec f$, one has $-\Delta-vI = (D_3+M_{\vec f})(D_3-M_{\vec f})$ if and only if $\vec f$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial/\partial x_k\,\vec f]$, which vanishes for scalar $\psi$ and for constant $\vec f$ and not otherwise.
 
 ### Euler's Theorems in Three Dimensions
 
@@ -176,49 +176,49 @@ with $A$ a complex constant, solves the Riccati PDE.
 
 ### The Conserved Densities of KdV
 
-**Definition.** A **conservation law** for an evolution equation $\partial_t u=F(u)$ is an identity $\partial_t\rho = \partial_x J$ valid on all solutions, with $\rho$ the **conserved density** and $J$ the **flux**; if $\rho$ and $J$ decay at infinity, then $\int\rho\,dx$ is a constant of the motion, and it is **nontrivial** if it is not a constant and not implied by a lower-order law.
+**Definition.** A **conservation law** for an evolution equation $\partial/\partial t w=F(w)$ is an identity $\partial/\partial t\,\rho = \partial/\partial x J$ valid on all solutions, with $\rho$ the **conserved density** and $J$ the **flux**; if $\rho$ and $J$ decay at infinity, then $\int\rho\,dx$ is a constant of the motion, and it is **nontrivial** if it is not a constant and not implied by a lower-order law.
 
-**Theorem (the first conserved densities of KdV).** For $\partial_t u - 6u\partial_x u + \partial_x^3 u=0$, the following are conservation laws:
+**Theorem (the first conserved densities of KdV).** For $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w=0$, the following are conservation laws:
 
 $$
-\rho_1 = u, \qquad \rho_2 = u^2, \qquad \rho_3 = u^3 + \tfrac12\partial_x u^2 ,
+\rho_1 = w, \qquad \rho_2 = w^2, \qquad \rho_3 = w^3 + \tfrac12\partial/\partial x w^2 ,
 $$
 
 with fluxes
 
 $$
-J_1 = 3u^2-\partial_x^2 u, \qquad J_2 = 4u^3-2u\partial_x^2 u+\partial_x u^2 ,
+J_1 = 3w^2-\partial^2/\partial x^2 w, \qquad J_2 = 4w^3-2w\partial^2/\partial x^2 w+\partial/\partial x w^2 ,
 $$
 
 and correspondingly for the third; the constants $I_k = \int\rho_k\,dx$ are independent.
 
-*Proof.* For the first, $\rho_{1,t} = \partial_t u = 6u\partial_x u-\partial_x^3 u = (3u^2-\partial_x^2 u)_x$, so $J_1 = 3u^2-\partial_x^2 u$. For the second, $\rho_{2,t} = 2u\partial_t u = 12u^2\partial_x u-2u\partial_x^3 u$, while $J_{2,x} = 12u^2\partial_x u-2\partial_x u\partial_x^2 u-2u\partial_x^3 u+2\partial_x u\partial_x^2 u = 12u^2\partial_x u-2u\partial_x^3 u$ for the displayed $J_2$, so $\rho_{2,t}=J_{2,x}$. For the third, the functional $H = \int(u^3+\tfrac12\partial_x u^2)dx$ is the Hamiltonian of the equation: its variational derivative is $\frac{\delta H}{\delta u} = 3u^2 - \partial_x^2 u$, and KdV reads $\partial_t u = \partial_x\frac{\delta H}{\delta u}$. Hence $\frac{dH}{dt} = \int\frac{\delta H}{\delta u}\partial_t u\,dx = \int\frac{\delta H}{\delta u}\,\partial_x\frac{\delta H}{\delta u}\,dx = \frac12\int\partial_x\Bigl(\frac{\delta H}{\delta u}\Bigr)^2dx = 0$ on a solution decaying at infinity, and the identity $\rho_{3,t}=J_{3,x}$ holds with $J_3$ computed from the variational derivative.
+*Proof.* For the first, $\rho_{1,t} = \partial/\partial t w = 6w\partial/\partial x w-\partial^3/\partial x^3 w = (3w^2-\partial^2/\partial x^2 w)_x$, so $J_1 = 3w^2-\partial^2/\partial x^2 w$. For the second, $\rho_{2,t} = 2w\partial/\partial t w = 12w^2\partial/\partial x w-2w\partial^3/\partial x^3 w$, while $J_{2,x} = 12w^2\partial/\partial x w-2\partial/\partial x w\partial^2/\partial x^2 w-2w\partial^3/\partial x^3 w+2\partial/\partial x w\partial^2/\partial x^2 w = 12w^2\partial/\partial x w-2w\partial^3/\partial x^3 w$ for the displayed $J_2$, so $\rho_{2,t}=J_{2,x}$. For the third, the functional $H = \int(w^3+\tfrac12\partial/\partial x w^2)dx$ is the Hamiltonian of the equation: its variational derivative is $\frac{\delta H}{\delta w} = 3w^2 - \partial^2/\partial x^2 w$, and KdV reads $\partial/\partial t w = \partial/\partial x\,\frac{\delta H}{\delta w}$. Hence $\frac{dH}{dt} = \int\frac{\delta H}{\delta w}\partial/\partial t w\,dx = \int\frac{\delta H}{\delta w}\,\partial/\partial x\,\frac{\delta H}{\delta w}\,dx = \frac12\int\partial/\partial x\,\Bigl(\frac{\delta H}{\delta w}\Bigr)^2dx = 0$ on a solution decaying at infinity, and the identity $\rho_{3,t}=J_{3,x}$ holds with $J_3$ computed from the variational derivative.
 
-**Theorem (the Lenard recursion and the infinite hierarchy).** Normalise the conserved functionals so that $I_1 = \tfrac12\int u^2$ and $I_2 = \int(u^3+\tfrac12\partial_x u^2)$; then the sequence $I_1,I_2,\dots$ is generated by the **recursion operator**
+**Theorem (the Lenard recursion and the infinite hierarchy).** Normalise the conserved functionals so that $I_1 = \tfrac12\int w^2$ and $I_2 = \int(w^3+\tfrac12\partial/\partial x w^2)$; then the sequence $I_1,I_2,\dots$ is generated by the **recursion operator**
 
 $$
-R = -\partial_x^2 + 4u + 2\partial_x u\partial_x^{-1} ,
+R = -\partial^2/\partial x^2 + 4w + 2\partial/\partial x w(\partial/\partial x)^{-1} ,
 $$
 
 in the sense that
 
 $$
-\partial_x\frac{\delta I_{k+1}}{\delta u} = R\,\partial_x\frac{\delta I_k}{\delta u} ;
+\partial/\partial x\,\frac{\delta I_{k+1}}{\delta w} = R\,\partial/\partial x\,\frac{\delta I_k}{\delta w} ;
 $$
 
-the densities $\rho_1,\rho_2,\rho_3$ of the preceding theorem are those of the sequence up to the constant normalisation, the invariant $\int u$ being the additional member outside the recursion; consequently KdV has infinitely many independent conserved quantities in involution.
+the densities $\rho_1,\rho_2,\rho_3$ of the preceding theorem are those of the sequence up to the constant normalisation, the invariant $\int w$ being the additional member outside the recursion; consequently KdV has infinitely many independent conserved quantities in involution.
 
-*Proof.* Quoted as standard (the Lenard–Kruskal recursion). Each density is obtained from the previous one by solving the condition that a certain combination be a total derivative, and the recursion operator performs that solution at the level of the differential algebra generated by $u$ and its derivatives; in the normalisation fixed in the statement the recursion starts from the density $\frac12u^2$ and reproduces $u^3+\frac12\partial_x u^2$ and its successors as the next members.
+*Proof.* Quoted as standard (the Lenard–Kruskal recursion). Each density is obtained from the previous one by solving the condition that a certain combination be a total derivative, and the recursion operator performs that solution at the level of the differential algebra generated by $w$ and its derivatives; in the normalisation fixed in the statement the recursion starts from the density $\frac12w^2$ and reproduces $w^3+\frac12\partial/\partial x w^2$ and its successors as the next members.
 
 **Theorem (bi-Hamiltonian structure).** KdV is Hamiltonian with respect to two compatible Poisson structures,
 
 $$
-\mathcal{P}_1 = \partial_x, \qquad \mathcal{P}_2 = -\partial_x^3 + 4u\partial_x + 2\partial_x u ,
+\mathcal{P}_1 = \partial/\partial x, \qquad \mathcal{P}_2 = -\partial^3/\partial x^3 + 4w\partial/\partial x + 2\partial/\partial x w ,
 $$
 
-in the sense that $\partial_t u = \mathcal{P}_1\frac{\delta H_2}{\delta u} = \mathcal{P}_2\frac{\delta H_1}{\delta u}$ for suitable functionals $H_1,H_2$, and the recursion operator is $R = \mathcal{P}_2\mathcal{P}_1^{-1}$. A vector field that is Hamiltonian for two compatible structures is **bi-Hamiltonian**, and the Magri theorem then produces an infinite sequence of conserved quantities in involution.
+in the sense that $\partial/\partial t w = \mathcal{P}_1\frac{\delta H_2}{\delta w} = \mathcal{P}_2\frac{\delta H_1}{\delta w}$ for suitable functionals $H_1,H_2$, and the recursion operator is $R = \mathcal{P}_2\mathcal{P}_1^{-1}$. A vector field that is Hamiltonian for two compatible structures is **bi-Hamiltonian**, and the Magri theorem then produces an infinite sequence of conserved quantities in involution.
 
-*Proof.* Quoted as standard (the Magri–Gel'fand–Dorfman theory). For KdV one checks that $\mathcal{P}_1\delta H_2/\delta u$ and $\mathcal{P}_2\delta H_1/\delta u$ both equal $6u\partial_x u-\partial_x^3 u$, with $H_2 = \int(\frac12\partial_x u^2+u^3)$ and $H_1 = \frac12\int u^2$; the compatibility of the two structures gives the recursion and the involution.
+*Proof.* Quoted as standard (the Magri–Gel'fand–Dorfman theory). For KdV one checks that $\mathcal{P}_1\delta H_2/\delta w$ and $\mathcal{P}_2\delta H_1/\delta w$ both equal $6w\partial/\partial x w-\partial^3/\partial x^3 w$, with $H_2 = \int(\frac12\partial/\partial x w^2+w^3)$ and $H_1 = \frac12\int w^2$; the compatibility of the two structures gives the recursion and the involution.
 
 The bi-Hamiltonian structure is the reason the recursion works, and it is the infinite-dimensional counterpart of the finite-dimensional integrability that is treated with the dynamical systems of this Part: there the integrals in involution are produced by a symplectic structure plus a flow, here by a pair of compatible Poisson structures. The finite-dimensional theory — the Liouville–Arnold theorem, action-angle variables and the invariant tori — is the subject of the articles of this Part on smooth dynamical systems and on the geodesic flow, written in parallel, and is not repeated here.
 
@@ -226,7 +226,7 @@ The bi-Hamiltonian structure is the reason the recursion works, and it is the in
 
 ### The Direct Problem
 
-**Definition.** For the Schrödinger operator $L = -\partial_x^2+u$ with $u$ real and decaying at infinity, the **scattering problem** is the eigenvalue problem $L\psi = k^2\psi$. Its spectrum consists of the continuous part $[0,\infty)$ together with finitely many negative eigenvalues $-a_1^2 > -\kappa_1^2 > \dots > -\kappa_N^2$. The **Jost solutions** $\psi_\pm(x,k) = \exp(\mp ikx) + o(1)$ as $x\to\pm\infty$ satisfy
+**Definition.** For the Schrödinger operator $L = -\partial^2/\partial x^2+w$ with $w$ real and decaying at infinity, the **scattering problem** is the eigenvalue problem $L\psi = k^2\psi$. Its spectrum consists of the continuous part $[0,\infty)$ together with finitely many negative eigenvalues $-a_1^2 > -\kappa_1^2 > \dots > -\kappa_N^2$. The **Jost solutions** $\psi_\pm(x,k) = \exp(\mp ikx) + o(1)$ as $x\to\pm\infty$ satisfy
 
 $$
 \psi_+(x,k) = a(k)\,\psi_-(x,k)^* + b(k)\,\psi_-(x,-k) ,
@@ -234,13 +234,13 @@ $$
 
 and the **scattering data** are the reflection coefficient $r(k) = b(k)/a(k)$, the transmission coefficient $1/a(k)$, the bound-state eigenvalues $\lambda_n = -\kappa_n^2$ and the norming constants $c_n$.
 
-**Theorem (properties of the scattering data).** For real $u \in L^1(\mathbb{R},(1+|x|)dx)$, the scattering data have the following properties: $a$ extends analytically to the upper half-plane with simple zeros at the bound states $i\kappa_n$; $|a(k)|^2 - |b(k)|^2 = 1$ for real $k$, so $|r|\le1$; $r(k) = \overline{r(-k)}$; and the bound-state data are real and positive.
+**Theorem (properties of the scattering data).** For real $w \in L^1(\mathbb{R},(1+|x|)dx)$, the scattering data have the following properties: $a$ extends analytically to the upper half-plane with simple zeros at the bound states $i\kappa_n$; $|a(k)|^2 - |b(k)|^2 = 1$ for real $k$, so $|r|\le1$; $r(k) = \overline{r(-k)}$; and the bound-state data are real and positive.
 
-*Proof.* Quoted as standard (the direct scattering theory). The analyticity comes from the Volterra integral equations for the Jost solutions and the exponential decay of the kernel; the identity $|a|^2-|b|^2=1$ is the Wronskian relation of the two Jost solutions, computed at $x=\pm\infty$; the symmetry is the reality of $u$.
+*Proof.* Quoted as standard (the direct scattering theory). The analyticity comes from the Volterra integral equations for the Jost solutions and the exponential decay of the kernel; the identity $|a|^2-|b|^2=1$ is the Wronskian relation of the two Jost solutions, computed at $x=\pm\infty$; the symmetry is the reality of $w$.
 
 ### The Evolution of the Data and the Inverse Problem
 
-**Theorem (the evolution of the scattering data).** If $u(\cdot,t)$ solves KdV in the convention fixed above, then the transmission coefficient $1/a$ is time-independent, the bound-state eigenvalues are constant, and
+**Theorem (the evolution of the scattering data).** If $w(\cdot,t)$ solves KdV in the convention fixed above, then the transmission coefficient $1/a$ is time-independent, the bound-state eigenvalues are constant, and
 
 $$
 b(k,t) = b(k,0)\,\exp(8ik^3t), \qquad c_n(t) = c_n(0)\,\exp(4\kappa_n^3t);
@@ -248,9 +248,9 @@ $$
 
 the evolution of the scattering data is linear and decoupled, which is the sense in which the transform linearises the equation.
 
-*Proof.* Quoted as standard. The time evolution of the Jost solution is governed by the operator $A$ of the Lax pair, $\partial_t\psi = A\psi$, and evaluating the asymptotics of $A\psi = -4\partial_x^3\psi+6u\partial_x\psi+3\partial_x u\,\psi$ as $x\to\pm\infty$, where $u\to0$, gives $\partial_t\psi \sim -4\partial_x^3\psi$, that is, in terms of the asymptotic exponentials $\psi_\pm\sim \exp(\mp ikx)$, the factor $\mp4(-ik)^3 = \pm4ik^3$; comparing the two asymptotic representations of the solution then gives the stated factors, since $a$ multiplies the outgoing term and $b$ the incoming one.
+*Proof.* Quoted as standard. The time evolution of the Jost solution is governed by the operator $A$ of the Lax pair, $\partial/\partial t\,\psi = A\psi$, and evaluating the asymptotics of $A\psi = -4\partial^3/\partial x^3\,\psi+6w\partial/\partial x\,\psi+3\partial/\partial x w\,\psi$ as $x\to\pm\infty$, where $w\to0$, gives $\partial/\partial t\,\psi \sim -4\partial^3/\partial x^3\,\psi$, that is, in terms of the asymptotic exponentials $\psi_\pm\sim \exp(\mp ikx)$, the factor $\mp4(-ik)^3 = \pm4ik^3$; comparing the two asymptotic representations of the solution then gives the stated factors, since $a$ multiplies the outgoing term and $b$ the incoming one.
 
-**Theorem (the inverse problem).** The potential $u$ is recovered from the scattering data by the **Gelfand–Levitan–Marchenko** integral equation
+**Theorem (the inverse problem).** The potential $w$ is recovered from the scattering data by the **Gelfand–Levitan–Marchenko** integral equation
 
 $$
 K(x,y) + B(x+y) + \int_x^\infty K(x,z)\,B(z+y)\,dz = 0 \qquad (y > x),
@@ -259,35 +259,35 @@ $$
 where the kernel is $B(\xi) = \sum_{n=1}^N c_n^2\exp(-\kappa_n\xi) + \frac{1}{2\pi}\int_{\mathbb{R}}r(k)\exp(ik\xi)dk$, and then
 
 $$
-u(x) = -2\,\frac{d}{dx}K(x,x).
+w(x) = -2\,\frac{d}{dx}K(x,x).
 $$
 
-The map $u \mapsto (\text{scattering data}) \mapsto u$ is a bijection between the class of decaying real potentials and the class of admissible data, and it intertwines the KdV flow with the linear evolution of the theorem above.
+The map $w \mapsto (\text{scattering data}) \mapsto w$ is a bijection between the class of decaying real potentials and the class of admissible data, and it intertwines the KdV flow with the linear evolution of the theorem above.
 
-*Proof.* Quoted as standard (the inverse scattering transform). The kernel $K$ is the transformation kernel relating the Jost solutions of $L=-\partial_x^2+u$ to those of the free operator $-\partial_x^2$; the equation for $K$ is obtained by requiring the transformed solutions to have the correct asymptotics, and the formula for $u$ is the statement that the transformation of $-\partial_x^2$ differs from $-\partial_x^2$ by multiplication by $-2K(x,x)'$.
+*Proof.* Quoted as standard (the inverse scattering transform). The kernel $K$ is the transformation kernel relating the Jost solutions of $L=-\partial^2/\partial x^2+w$ to those of the free operator $-\partial^2/\partial x^2$; the equation for $K$ is obtained by requiring the transformed solutions to have the correct asymptotics, and the formula for $w$ is the statement that the transformation of $-\partial^2/\partial x^2$ differs from $-\partial^2/\partial x^2$ by multiplication by $-2K(x,x)'$.
 
-**Corollary (solution of the Cauchy problem).** For $u_0$ real and rapidly decaying, the solution of KdV with $u(\cdot,0)=u_0$ is obtained by computing the scattering data of $u_0$, evolving them by the exponential factors above, solving the Gelfand–Levitan–Marchenko equation for the evolved data, and reading off $u(x,t) = -2\partial_xK(x,x;t)$.
+**Corollary (solution of the Cauchy problem).** For $w_0$ real and rapidly decaying, the solution of KdV with $w(\cdot,0)=w_0$ is obtained by computing the scattering data of $w_0$, evolving them by the exponential factors above, solving the Gelfand–Levitan–Marchenko equation for the evolved data, and reading off $w(x,t) = -2\partial/\partial x\,K(x,x;t)$.
 
 The scheme is the exact analogue for KdV of the Fourier solution of a constant-coefficient linear equation: the direct transform computes the data, the data evolve linearly, the inverse transform returns the solution. The difference is that the transform is nonlinear, and the superposition of two solutions is not a solution; the solitons instead pass through one another with a phase shift, which the nonlinearity of the inverse problem records.
 
 ## Solitons and Reflectionless Potentials
 
-**Definition.** A potential $u$ is **reflectionless** if $r(k)\equiv0$; its scattering data consist only of the bound states and the norming constants, and the Gelfand–Levitan–Marchenko kernel is then a finite exponential sum, so the equation is solved by linear algebra.
+**Definition.** A potential $w$ is **reflectionless** if $r(k)\equiv0$; its scattering data consist only of the bound states and the norming constants, and the Gelfand–Levitan–Marchenko kernel is then a finite exponential sum, so the equation is solved by linear algebra.
 
 **Theorem (the one-soliton solution).** For the reflectionless potential with a single bound state $\lambda = -\kappa^2$, the evolution of the data gives
 
 $$
-u(x,t) = -2\kappa^2\operatorname{sech}^2\bigl(\kappa(x-4\kappa^2t-x_0)\bigr),
+w(x,t) = -2\kappa^2\operatorname{sech}^2\bigl(\kappa(x-4\kappa^2t-x_0)\bigr),
 $$
 
 a negative localised travelling wave moving to the right with speed $4\kappa^2$; it is the unique reflectionless solution with one bound state.
 
-*Proof.* With $N=1$, the kernel is $B(\xi) = c_1^2\exp(-\kappa\xi)$ with $c_1^2 = 2\kappa \exp(2\kappa x_0)$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $u$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2\exp(-\kappa\xi)$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz.
+*Proof.* With $N=1$, the kernel is $B(\xi) = c_1^2\exp(-\kappa\xi)$ with $c_1^2 = 2\kappa \exp(2\kappa x_0)$ at $t=0$, and the Marchenko equation is solved by an exponential; the formula for $w$ is then a direct differentiation. The time dependence comes from the factor $c_1(t)^2\exp(-\kappa\xi)$, and the resulting wave depends on $x,t$ only through the combination $x-4\kappa^2t$, which is the travelling-wave ansatz.
 
 **Theorem (N-soliton solutions and elastic collision).** For reflectionless data with $N$ bound states the solution is an $N$-soliton
 
 $$
-u(x,t) = -2\partial_x^2\log\det\bigl(I + C(x,t)\bigr),
+w(x,t) = -2\partial^2/\partial x^2\,\log\det\bigl(I + C(x,t)\bigr),
 $$
 
 where $C$ is the $N\times N$ matrix with entries $C_{mn} = \frac{c_m(t)^2}{\kappa_m+\kappa_n}\exp(-(\kappa_m+\kappa_n)x)$; as $t\to\pm\infty$ it is asymptotic to $N$ well-separated one-solitons with the same speeds and amplitudes, the only effect of the collision being a phase shift in each. The collision is therefore **elastic**, and this is what distinguishes the solitons of an integrable equation from the dissipative pulses of a general one.
@@ -300,53 +300,53 @@ where $C$ is the $N\times N$ matrix with entries $C_{mn} = \frac{c_m(t)^2}{\kapp
 
 **Definition.** A **finite-gap** or **algebro-geometric** solution of KdV is a solution whose associated Schrödinger operator has spectrum equal to a finite union of intervals, $[0,\infty)$ together with finitely many bands; the solution is then periodic or quasi-periodic and is expressed by theta functions on a hyperelliptic Riemann surface.
 
-**Theorem (Its–Matveev, Dubrovin–Novikov).** The finite-gap solutions of KdV are exactly the solutions for which the spectrum of $L=-\partial_x^2+u$ is a finite union of bands; they are given by the **Its–Matveev formula**
+**Theorem (Its–Matveev, Dubrovin–Novikov).** The finite-gap solutions of KdV are exactly the solutions for which the spectrum of $L=-\partial^2/\partial x^2+w$ is a finite union of bands; they are given by the **Its–Matveev formula**
 
 $$
-u(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial_x^2\log\Theta\bigl(\vec Ux + \vec Vt + \vec d\bigr) ,
+w(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial^2/\partial x^2\,\log\Theta\bigl(\vec Ux + \vec Vt + \vec d\bigr) ,
 $$
 
 where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\vec U,\vec V$ are the periods of two Abelian differentials and $\vec d$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
 
-*Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $u$ follows from the pole behaviour of the Baker–Akhiezer function at infinity.
+*Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $w$ follows from the pole behaviour of the Baker–Akhiezer function at infinity.
 
 **Remark (the role of the Riemann surface).** The finite-gap construction turns the integrable equation into a problem in the geometry of a compact Riemann surface: the flow of KdV is the straight-line motion of the divisor of the Baker–Akhiezer function on the Jacobian of the curve, and the quasi-periodicity is the projection of a linear flow on a torus. The soliton is the degenerate case $g=1$ in which the curve is singular and the theta function degenerates to a hyperbolic function; the reflectionless $N$-soliton is the limit in which all the bands but finitely many collapse to points.
 
 **Definition.** The **Painlevé test** for an evolution equation requires that every solution of the equation, continued around a movable singularity in the complex time plane, be single-valued: the solution must have the form $(t-t_0)^{\alpha}$ times an analytic function of $(t-t_0)$, with $\alpha$ rational and the expansion free of movable branch points. An equation passing the test is **of Painlevé type**, and for integrable equations the test is expected to succeed.
 
-**Theorem (Weiss–Tabor–Carnevale).** The KdV equation passes the Painlevé test; the expansion of a solution about a movable singular manifold $\phi(x,t)=x-x_0(t)$ takes the form $u = -2\partial_x^2\log\phi + u_0 + u_1\phi + \dots$, with the recursion for the coefficients obstructed only at the resonances, and the obstruction conditions are satisfied identically.
+**Theorem (Weiss–Tabor–Carnevale).** The KdV equation passes the Painlevé test; the expansion of a solution about a movable singular manifold $\phi(x,t)=x-x_0(t)$ takes the form $w = -2\partial^2/\partial x^2\,\log\phi + w_0 + w_1\phi + \dots$, with the recursion for the coefficients obstructed only at the resonances, and the obstruction conditions are satisfied identically.
 
-*Proof.* Quoted as standard. The leading behaviour is computed from the dominant balance $\partial_t u\sim u\partial_x u\sim \partial_x^3 u$, which gives $u\sim -2/(\partial_x\phi)^2\,\partial_x^2\phi$ up to the transformation to a singular manifold; the resonances of the recursion are at $-1, 4, 6$ for KdV, and the two nontrivial resonance conditions are verified by using the KdV equation itself.
+*Proof.* Quoted as standard. The leading behaviour is computed from the dominant balance $\partial/\partial t w\sim w\partial/\partial x w\sim \partial^3/\partial x^3 w$, which gives $w\sim -2/(\partial/\partial x\,\phi)^2\,\partial^2/\partial x^2\,\phi$ up to the transformation to a singular manifold; the resonances of the recursion are at $-1, 4, 6$ for KdV, and the two nontrivial resonance conditions are verified by using the KdV equation itself.
 
-**Remark (the Hirota form).** The substitution $u = -2\partial_x^2\log\tau$ with $\tau$ a **tau function** converts KdV into the bilinear equation $D_x(D_t + D_x^3)\tau\cdot\tau = 0$, where $D$ denotes the Hirota bilinear derivative
+**Remark (the Hirota form).** The substitution $w = -2\partial^2/\partial x^2\,\log\tau$ with $\tau$ a **tau function** converts KdV into the bilinear equation $D_x(D_t + D_x^3)\tau\cdot\tau = 0$, where $D$ denotes the Hirota bilinear derivative
 
 $$
-D_x^mD_t^n\,f\cdot g = \partial_{x'}^m\partial_{t'}^nf(x+x',t+t')g(x-x',t-t')\bigr|_{x'=t'=0} .
+D_x^mD_t^n\,f\cdot g = \partial^m/\partial x'^m\,\partial^n/\partial t'^n\,f(x+x',t+t')g(x-x',t-t')\bigr|_{x'=t'=0} .
 $$
 
 The $N$-soliton and the finite-gap solutions are then obtained from a tau function that is a finite determinant or a theta function, and the bilinear method gives the cleanest route to the explicit formulas and to the Lax pair itself.
 
 ## Summary
 
-An integrable system is a nonlinear evolution equation that is equivalent to the compatibility condition of a pair of linear operators. For KdV, $\partial_t L=[A,L]$ with $L=-\partial_x^2+u$ and $A=-4\partial_x^3+6u\partial_x+3\partial_x u$ is equivalent to $\partial_t u-6u\partial_x u+\partial_x^3 u=0$, and the Lax equation expresses the isospectrality of the Schrödinger operator: the eigenvalues of $L$ are constants of the motion, and the eigenfunctions evolve by $\partial_t\psi=A\psi$. The zero-curvature formulation $\partial_t U-\partial_x V+[U,V]=0$ is the matrix form of the same idea, and the AKNS scheme obtains KdV, the nonlinear Schrödinger equation, modified KdV and the sine-Gordon equation as reductions of one linear problem.
+An integrable system is a nonlinear evolution equation that is equivalent to the compatibility condition of a pair of linear operators. For KdV, $\partial L/\partial t=[A,L]$ with $L=-\partial^2/\partial x^2+w$ and $A=-4\partial^3/\partial x^3+6w\partial/\partial x+3\partial/\partial x w$ is equivalent to $\partial/\partial t w-6w\partial/\partial x w+\partial^3/\partial x^3 w=0$, and the Lax equation expresses the isospectrality of the Schrödinger operator: the eigenvalues of $L$ are constants of the motion, and the eigenfunctions evolve by $\partial/\partial t\,\psi=A\psi$. The zero-curvature formulation $\partial/\partial t U-\partial/\partial x V+[U,V]=0$ is the matrix form of the same idea, and the AKNS scheme obtains KdV, the nonlinear Schrödinger equation, modified KdV and the sine-Gordon equation as reductions of one linear problem.
 
-KdV has infinitely many conservation laws, generated by the Lenard recursion with recursion operator $R=-\partial_x^2+4u+2\partial_x u\partial_x^{-1}$, whose first members are $u$, $u^2$ and $u^3+\frac12\partial_x u^2$; the density $u^3+\frac12\partial_x u^2$ is the energy, and the equation is bi-Hamiltonian with respect to the compatible structures $\partial_x$ and $-\partial_x^3+4u\partial_x+2\partial_x u$, which is what produces the infinite family by the Magri theorem. The inverse scattering transform computes the scattering data of $L$ — reflection and transmission coefficients, bound states and norming constants — of which the transmission coefficient and the eigenvalues are time-independent while the reflection data evolve by $\exp(8ik^3t)$; the potential is recovered by the Gelfand–Levitan–Marchenko equation and the formula $u=-2\partial_xK(x,x)$. Reflectionless data give the reflectionless potentials, among them the one-soliton $u=-2\kappa^2\operatorname{sech}^2(\kappa(x-4\kappa^2t-x_0))$ and the $N$-soliton determinant formula; the collision of solitons is elastic with a phase shift. The periodic analogue is the finite-gap solution, built from a hyperelliptic Riemann surface and a Riemann theta function by the Its–Matveev formula, and the integrability tests are the Painlevé test and the Hirota bilinear form, in which KdV becomes $D_x(D_t+D_x^3)\tau\cdot\tau=0$.
+KdV has infinitely many conservation laws, generated by the Lenard recursion with recursion operator $R=-\partial^2/\partial x^2+4w+2\partial/\partial x w(\partial/\partial x)^{-1}$, whose first members are $w$, $w^2$ and $w^3+\frac12\partial/\partial x w^2$; the density $w^3+\frac12\partial/\partial x w^2$ is the energy, and the equation is bi-Hamiltonian with respect to the compatible structures $\partial/\partial x$ and $-\partial^3/\partial x^3+4w\partial/\partial x+2\partial/\partial x w$, which is what produces the infinite family by the Magri theorem. The inverse scattering transform computes the scattering data of $L$ — reflection and transmission coefficients, bound states and norming constants — of which the transmission coefficient and the eigenvalues are time-independent while the reflection data evolve by $\exp(8ik^3t)$; the potential is recovered by the Gelfand–Levitan–Marchenko equation and the formula $w=-2\partial/\partial x\,K(x,x)$. Reflectionless data give the reflectionless potentials, among them the one-soliton $w=-2\kappa^2\operatorname{sech}^2(\kappa(x-4\kappa^2t-x_0))$ and the $N$-soliton determinant formula; the collision of solitons is elastic with a phase shift. The periodic analogue is the finite-gap solution, built from a hyperelliptic Riemann surface and a Riemann theta function by the Its–Matveev formula, and the integrability tests are the Painlevé test and the Hirota bilinear form, in which KdV becomes $D_x(D_t+D_x^3)\tau\cdot\tau=0$.
 
-The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial_x^2-v=-(\partial_x+y)(\partial_x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\vec f+\vec f^2=v$, with $D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3$ and $\vec f=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\vec f=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(\exp(2\xi)\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.
+The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial^2/\partial x^2-v=-(\partial/\partial x+y)(\partial/\partial x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\vec f+\vec f^2=v$, with $D_3=e_1\partial/\partial 1+e_2\partial/\partial 2+e_3\partial/\partial 3$ and $\vec f=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\vec f=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(\exp(2\xi)\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $u(x,t)$ | Field of the integrable equation |
+| $w(x,t)$ | Field of the integrable equation |
 | $L$, $A$ | Lax pair; $L$ self-adjoint, $A$ skew-adjoint |
-| $\partial_t L = [A,L]$ | Lax equation, the isospectral deformation |
+| $\partial L/\partial t = [A,L]$ | Lax equation, the isospectral deformation |
 | $U$, $V$, $\lambda$ | Zero-curvature pair and spectral parameter |
-| KdV | $\partial_t u - 6u\partial_x u + \partial_x^3 u = 0$ |
+| KdV | $\partial/\partial t w - 6w\partial/\partial x w + \partial^3/\partial x^3 w = 0$ |
 | $\rho$, $J$ | Conserved density and flux; $I_k = \int\rho_k$ |
-| $R$ | Recursion (Lenard) operator $-\partial_x^2+4u+2\partial_x u\partial_x^{-1}$ |
+| $R$ | Recursion (Lenard) operator $-\partial^2/\partial x^2+4w+2\partial/\partial x w(\partial/\partial x)^{-1}$ |
 | $\mathcal{P}_1$, $\mathcal{P}_2$ | Compatible Hamiltonian (Poisson) structures |
-| $H$, $H_1$, $H_2$ | Hamiltonian functionals, $\delta H/\delta u$ the variational derivative |
+| $H$, $H_1$, $H_2$ | Hamiltonian functionals, $\delta H/\delta w$ the variational derivative |
 | $\psi_\pm$, $a$, $b$, $r$ | Jost solutions, transmission and reflection data |
 | $\kappa_n$, $c_n$ | Bound-state wavenumbers and norming constants |
 | $K(x,y)$, $B$ | Gelfand–Levitan–Marchenko kernel and its data |

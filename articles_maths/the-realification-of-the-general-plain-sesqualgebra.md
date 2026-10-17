@@ -6,7 +6,7 @@ The general plain sesqualgebra is the structure the biquaternion ring $\mathbb{B
 $$
 \tilde P\star\tilde Q=\tilde P\tilde Q^{*},
 $$
-the general plain sesquilinear structure of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. Its product is additive in each variable, $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second with $\varsigma(z)=\bar z$, so the structure is a **sesqualgebra over $(\mathbb{C},\varsigma)$**; the involution is the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, the product is the derived operation of the algebra $\mathbb{B}$ with that involution, and $e_0$ is a right unit and not a left one (*Introduction to the General Plain Sesqualgebra*). Read over $\mathbb{R}$ the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
+the general plain sesquilinear structure of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. Its product is additive in each variable, $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second with $\varsigma(z)=\bar z$, so the structure is a **sesqualgebra over $(\mathbb{C},\varsigma)$**; the involution is the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, the product is the derived operation of the algebra $\mathbb{B}$ with that involution, and $e_t$ is a right unit and not a left one (*Introduction to the General Plain Sesqualgebra*). Read over $\mathbb{R}$ the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
 The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the two criteria of $\mathbb{C}$-linearity and of conjugate-linearity, the two rules of the realification of a form and the table of the four effects are **The Realification and the Effect of the Change of Scalars**. This article gives what is specific to this product: the product as an $\mathbb{R}$-algebra and its real table, the law of its two slots over the centre with the two parities of its two families of multiplications, the realification of the form it carries with the signature that follows, the classes the reading leaves untouched with their real dimensions, and its real operators.
 
@@ -24,7 +24,7 @@ $$
 $$
 The first slot is $\mathbb{C}$-linear and the second is $\varsigma$-semilinear, so the two slots carry opposite signs at the central imaginary unit, and the real table is the complex table read with the conjugated scalar in the second factor. No new multiplication appears: restriction of scalars keeps the elements and the products, and it is the field that has moved.
 
-Every property of the product written with the addition, the product, $e_0$ and quantification over the elements is a statement about the ring, and by the dictionary of *The Realification and the Effect of the Change of Scalars* it has the same truth value in the two readings. The unit is the first example and the sharpest: $e_0$ is a right unit in the two readings, $e_0\star\tilde X=\tilde X^{*}$ on the left side and $\tilde X\star e_0=\tilde X$ on the right side, and there is no left unit in either: the left-unit equations admit at most one solution, $\tilde U=e_0$ forced by $\tilde U\star e_0=e_0$, and the candidate fails at $e_1$, where $e_0\star e_1=-e_1\neq e_1$. Associativity fails, at the triple $(e_0,e_1,e_1)$, and so does the Jordan identity, at $x=y=e_1$, the two sides $-e_0$ and $+e_0$ in the two cases; the only product of the twelve that is a Jordan product is that of the symmetrisation $\mathrm{SPA}$, and the block is neither commutative, which $\mathrm{SPA}$ is, nor conjugate-commutative, which $\mathrm{SPS}$ is (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). Every one of these negatives holds in the two readings at the same witnesses.
+Every property of the product written with the addition, the product, $e_t$ and quantification over the elements is a statement about the ring, and by the dictionary of *The Realification and the Effect of the Change of Scalars* it has the same truth value in the two readings. The unit is the first example and the sharpest: $e_t$ is a right unit in the two readings, $e_t\star\tilde X=\tilde X^{*}$ on the left side and $\tilde X\star e_t=\tilde X$ on the right side, and there is no left unit in either: the left-unit equations admit at most one solution, $\tilde U=e_t$ forced by $\tilde U\star e_t=e_t$, and the candidate fails at $\vec e_x$, where $e_t\star \vec e_x=-\vec e_x\neq \vec e_x$. Associativity fails, at the triple $(e_t,\vec e_x,\vec e_x)$, and so does the Jordan identity, at $x=y=\vec e_x$, the two sides $-e_t$ and $+e_t$ in the two cases; the only product of the twelve that is a Jordan product is that of the symmetrisation $\mathrm{SPA}$, and the block is neither commutative, which $\mathrm{SPA}$ is, nor conjugate-commutative, which $\mathrm{SPS}$ is (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). Every one of these negatives holds in the two readings at the same witnesses.
 
 | | the complex reading | the real reading |
 |---|---|---|
@@ -32,7 +32,7 @@ Every property of the product written with the addition, the product, $e_0$ and 
 | the product | $\mathbb{C}$-sesquilinear | $\mathbb{R}$-bilinear |
 | the kind | a sesqualgebra over $(\mathbb{C},\varsigma)$ | an $\mathbb{R}$-algebra |
 | the second slot | $\varsigma$-semilinear, $\varsigma={}^{*}$ on the centre | $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, hence $\mathbb{R}$-linear |
-| the unit | $e_0$, a right unit only | $e_0$, a right unit only |
+| the unit | $e_t$, a right unit only | $e_t$, a right unit only |
 | the form carried | the Hermitian $\langle\cdot,\cdot\rangle_{*}$, complex inertia $(4,0)$ | the realified $\langle\cdot,\cdot\rangle_{*}$, signature $(8,0)$ |
 
 ## The Two Slots and the Centre
@@ -70,11 +70,11 @@ and $\tilde A\mapsto R_{\tilde A}$ is an injective $\mathbb{R}$-algebra homomorp
 
 The product carries the general plain sesquilinear form, the Hermitian $\langle\cdot,\cdot\rangle_{*}$, which is its scalar part:
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
+\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})=\sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu},
 $$
-with Gram matrix $\mathrm{I}_4$ on the basis $e_0,e_1,e_2,e_3$ and complex inertia $(4,0)$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). A Hermitian form realifies by the **second rule** of §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the realification is the real part of the form, which is already real on the diagonal, its imaginary part is alternating and is no part of the realification, and its complex inertia is doubled rather than split. The realified form is therefore
+with Gram matrix $\mathrm{I}_4$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and complex inertia $(4,0)$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). A Hermitian form realifies by the **second rule** of §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the realification is the real part of the form, which is already real on the diagonal, its imaginary part is alternating and is no part of the realification, and its complex inertia is doubled rather than split. The realified form is therefore
 $$
-H_{\mathbb{R}}(\tilde P,\tilde Q)=\operatorname{Re}\langle\tilde P,\tilde Q\rangle_{*}=\sum_{\mu=0}^{3}\bigl(\operatorname{Re}P_\mu\operatorname{Re}Q_\mu+\operatorname{Im}P_\mu\operatorname{Im}Q_\mu\bigr),
+H_{\mathbb{R}}(\tilde P,\tilde Q)=\operatorname{Re}\langle\tilde P,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\operatorname{Re}P_\mu\operatorname{Re}Q_\mu+\operatorname{Im}P_\mu\operatorname{Im}Q_\mu\bigr),
 $$
 the **ordinary Euclidean form** of the eight real coordinates, of Gram matrix $\mathrm{I}_8$ and signature
 $$
@@ -86,7 +86,7 @@ The imaginary part of $H$ is not lost in the passage, it is the second face of t
 $$
 \sigma(\tilde P,\tilde Q)=\operatorname{Im}\langle\tilde P,\tilde Q\rangle_{*},\qquad \sigma(\tilde P,\tilde Q)=-\sigma(\tilde Q,\tilde P),
 $$
-a symplectic form of rank $8$, the sum of the canonical pairs of the four coordinate planes $(e_k,ie_k)$, of rank $2$ on the centre and rank $6$ on the vector subspace, tied to the Euclidean $g=H_{\mathbb{R}}$ by the Kähler identity
+a symplectic form of rank $8$, the sum of the canonical pairs of the four coordinate planes $(\vec e_k,i\vec e_k)$, of rank $2$ on the centre and rank $6$ on the vector subspace, tied to the Euclidean $g=H_{\mathbb{R}}$ by the Kähler identity
 $$
 \sigma(\tilde P,\tilde Q)=g(\tilde P,J\tilde Q),
 $$
@@ -96,11 +96,11 @@ The complex structure **preserves** the form,
 $$
 H_{\mathbb{R}}(J\tilde P,J\tilde Q)=+H_{\mathbb{R}}(\tilde P,\tilde Q),
 $$
-the opposite of the case of a bilinear form. The map $J$ is therefore an isometry of the Euclidean form, an element of the orthogonal group $O(8)$ in the real basis, and the $\mathbb{C}$-linear endomorphisms that preserve $\langle\cdot,\cdot\rangle_{*}$ form the unitary group $U(4)$.
+the opposite of the case of a bilinear form. The map $J$ is therefore an isometry of the Euclidean form, an element of the orthogonal group $O(8)$ in the real basis, and the $\mathbb{C}$-linear endomorphisms that preserve $\langle\cdot,\cdot\rangle_{*}$ form the unitary group $\mathrm{U}(4)$.
 
 The square of the block is positive for this form. The element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian, and its scalar part is the squared Euclidean norm,
 $$
-\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^2 ,
+\mathrm{Sc}(\tilde Q\star\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^2 ,
 $$
 so the diagonal of the realified Hermitian form is the square of the real norm of the element, and the form the block carries is the positive definite one of the four forms of the corpus.
 
@@ -113,11 +113,11 @@ What the real reading adds is the **count**: each of those classes becomes an ei
 | class | the condition | over $\mathbb{C}$ | over $\mathbb{R}$ |
 |---|---|---|---|
 | the zero divisors of the block | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | complex dimension $3$ | real dimension $6$ |
-| the nilpotents of the block | $Q_0=0$, $(\vec Q,\vec Q)=0$, $\tilde Q\neq0$, of index three | complex dimension $2$ | real dimension $4$ |
+| the nilpotents of the block | $Q_t=0$, $(\vec Q,\vec Q)=0$, $\tilde Q\neq0$, of index three | complex dimension $2$ | real dimension $4$ |
 | the idempotents of the block | $\tilde Q\star\tilde Q=\tilde Q$, hence Hermitian | — | real dimension $2$ |
 | the projectors of the right family | $\tilde Q\tilde Q=\tilde Q$ | complex dimension $2$ | real dimension $4$ |
 
-The two last rows are read off in one line each, and the two lines use the involution. If $\tilde Q\star\tilde Q=\tilde Q$, that is $\tilde Q\tilde Q^{*}=\tilde Q$, then applying the star to the equation gives $\tilde Q\tilde Q^{*}=\tilde Q^{*}$, since $(XY)^{*}=Y^{*}X^{*}$; comparing the two displays gives $\tilde Q=\tilde Q^{*}$, so the idempotents of the block are the **Hermitian** idempotents of the plain product: the trivial pair $0,e_0$ and the two-sphere of the directions $\tfrac12(e_0+\vec u i)$ over the real unit vectors $\vec u$, a set of real dimension two (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*). The elements whose right multiplication is a projector are the plain idempotents, a complex two-dimensional family, of real dimension four; so the parameters of the projectors form a family of real dimension four where the idempotents of the block form one of real dimension two, and the factor of two is the one the change of scalars introduces in this article everywhere else. The zero divisor is read the same way: for $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$ the partner $\tilde X=(\tilde Q^{\natural})^{*}$ is nonzero and satisfies $\tilde Q\star\tilde X=\tilde Q\tilde Q^{\natural}=0$, so the cone of the norm is a cone of zero divisors in the two readings. The nilpotent row is the sharpest of the four: the square of the block is positive, $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, so the block has no nonzero square-zero element, and its nilpotents are reached at the third power, where they coincide with the pure zero divisors of the ring (*Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*).
+The two last rows are read off in one line each, and the two lines use the involution. If $\tilde Q\star\tilde Q=\tilde Q$, that is $\tilde Q\tilde Q^{*}=\tilde Q$, then applying the star to the equation gives $\tilde Q\tilde Q^{*}=\tilde Q^{*}$, since $(XY)^{*}=Y^{*}X^{*}$; comparing the two displays gives $\tilde Q=\tilde Q^{*}$, so the idempotents of the block are the **Hermitian** idempotents of the plain product: the trivial pair $0,e_t$ and the two-sphere of the directions $\tfrac12(e_t+\vec u i)$ over the real unit vectors $\vec u$, a set of real dimension two (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*). The elements whose right multiplication is a projector are the plain idempotents, a complex two-dimensional family, of real dimension four; so the parameters of the projectors form a family of real dimension four where the idempotents of the block form one of real dimension two, and the factor of two is the one the change of scalars introduces in this article everywhere else. The zero divisor is read the same way: for $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$ the partner $\tilde X=(\tilde Q^{\natural})^{*}$ is nonzero and satisfies $\tilde Q\star\tilde X=\tilde Q\tilde Q^{\natural}=0$, so the cone of the norm is a cone of zero divisors in the two readings. The nilpotent row is the sharpest of the four: the square of the block is positive, $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, so the block has no nonzero square-zero element, and its nilpotents are reached at the third power, where they coincide with the pure zero divisors of the ring (*Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra*).
 
 ## The Real Operators
 
@@ -133,15 +133,15 @@ The right family is a monoid under composition, generated by the right multiplic
 
 ## Summary
 
-The general plain sesqualgebra read over $\mathbb{R}$ is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense whose second slot stays $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, with $e_0$ a right unit and no left unit. The two sides of the product have opposite parities, and over $\mathbb{R}$ they fall into the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$, the left multiplications into the conjugate-linear summand and the right multiplications into the $\mathbb{C}$-linear one, where they form a monoid in the forward order and give an honest representation of the algebra. The product carries the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose realification is the Euclidean form of the eight real coordinates, of signature $(8,0)$ and empty null set, with the alternating companion $\sigma=\operatorname{Im}H$ of rank $8$, preserved by the complex structure; the square of the block is Hermitian and $H$-positive. The ideals, the idempotents, the zero divisors, the nilpotents and the units are the same as over $\mathbb{C}$, and the real reading adds their real dimensions — six for the zero-divisor cone, four for the nilpotents and for the parameters of the projectors, two for the idempotents the block recognises as its own. Nothing new is multiplied; the field, the dimension and the linear structure have changed, and with them the form the product carries and the shape of its operators.
+The general plain sesqualgebra read over $\mathbb{R}$ is the same product on the same elements, an $\mathbb{R}$-algebra on $\mathbb{R}^8$ in the broad sense whose second slot stays $\mathbb{C}_{\mathbb{B}}$-conjugate-linear, with $e_t$ a right unit and no left unit. The two sides of the product have opposite parities, and over $\mathbb{R}$ they fall into the two summands of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$, the left multiplications into the conjugate-linear summand and the right multiplications into the $\mathbb{C}$-linear one, where they form a monoid in the forward order and give an honest representation of the algebra. The product carries the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose realification is the Euclidean form of the eight real coordinates, of signature $(8,0)$ and empty null set, with the alternating companion $\sigma=\operatorname{Im}H$ of rank $8$, preserved by the complex structure; the square of the block is Hermitian and $H$-positive. The ideals, the idempotents, the zero divisors, the nilpotents and the units are the same as over $\mathbb{C}$, and the real reading adds their real dimensions — six for the zero-divisor cone, four for the nilpotents and for the parameters of the projectors, two for the idempotents the block recognises as its own. Nothing new is multiplied; the field, the dimension and the linear structure have changed, and with them the form the product carries and the shape of its operators.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the general plain sesqualgebra |
-| $\mathbb{R}^8$ | the realification of $\mathbb{B}$, the eight real basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre of the ring, read as the field of scalars |
+| $\mathbb{R}^8$ | the realification of $\mathbb{B}$, the eight real basis elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the ring, read as the field of scalars |
 | $J$ | the complex structure, multiplication by $i$, of square $-1$ |
 | $L_{\tilde A}J=-JL_{\tilde A}$ | the left multiplications, conjugate-linear, the anticommuting summand |
 | $R_{\tilde A}J=+JR_{\tilde A}$, $R_{\tilde A}(\tilde X)=\tilde X\tilde A^{*}$ | the right multiplications, $\mathbb{C}$-linear, the commuting summand; the plain right multiplication at the conjugated index |

@@ -33,7 +33,7 @@ Minimal coupling replaces $\vec p$ by $\vec p - ϙ\vec A$; the added term is a v
 The covariant form of the equation, obtained by multiplying the Hamiltonian equation by $\beta$ and using $\beta\boldsymbol\alpha = \boldsymbol\gamma$, is
 
 $$
-\left(i\gamma^\mu\partial_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
+\left(i\gamma^\mu\partial/\partial Q_\mu - \frac{mc}{\hbar}\right)\psi = i\,\frac{m\omega}{\hbar}\,\beta\,\gamma^k x_k\,\psi ,
 $$
 
 The right-hand side is a spacelike Clifford vector times the frame, linear in $x$: the non-minimal term is a position-dependent generator of the odd part. This is the form in which the biquaternion interpretation is made below.
@@ -222,7 +222,7 @@ The comparison isolates where the relativistic content lives. In the free theory
 
 Three structural statements can now be made in the algebra.
 
-**The substitution is a shift of the odd part.** In the biquaternion decomposition, the gradient $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ has an even frame part ($e_0\partial_{ict}$, the timelike direction) and a frame-odd part ($e_k\partial_k$, the spacelike directions). The oscillator substitution $\vec p \to \vec p - im\omega\beta\vec r$ adds to the odd part a term linear in the position with the same frame parity. Squaring the coupled first-order operators therefore returns a **central** second-order operator — because the cross terms of the two conjugate gradients cancel as in the free case — plus a remainder in the Hermitian sector $\mathbb{M}_+$, namely the spin–orbit element $-2m\omega\,\boldsymbol\sigma\cdot\vec L$. That the remainder is in $\mathbb{M}_+$ (it is Hermitian and spinorial) rather than in the centre is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue; it adds a Hermitian operator to the square.
+**The substitution is a shift of the odd part.** In the biquaternion decomposition, the gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\partial/\partial Q_\mu$ has an even frame part ($e_t\partial/\partial Q_t$, the timelike direction) and a frame-odd part ($\vec e_\mu\partial/\partial Q_\mu$, the spacelike directions). The oscillator substitution $\vec p \to \vec p - im\omega\beta\vec r$ adds to the odd part a term linear in the position with the same frame parity. Squaring the coupled first-order operators therefore returns a **central** second-order operator — because the cross terms of the two conjugate gradients cancel as in the free case — plus a remainder in the Hermitian sector $\mathbb{M}_+$, namely the spin–orbit element $-2m\omega\,\boldsymbol\sigma\cdot\vec L$. That the remainder is in $\mathbb{M}_+$ (it is Hermitian and spinorial) rather than in the centre is the algebraic statement that the oscillator's square is not the Klein–Gordon operator: the non-minimal term, unlike the mass, does not merely shift the eigenvalue; it adds a Hermitian operator to the square.
 
 **The zero point is a commutator.** The constant $-3m\hbar\omega$ arises from the commutator of the two biquaternionic components of the shifted gradient. In the algebra, the two conjugate operators do not commute, and their commutator is the central scalar that shifts the zero point. This is why the oscillator's ground state sits at the mass gap for the aligned states: the commutator has removed the zero-point energy exactly, and the cancellation is a property of the three-dimensional quaternion algebra (three directions, three units), not of a particular representation.
 
@@ -285,7 +285,7 @@ with the aligned branch independent of $l$ and hence an infinitely degenerate le
 | $E^2 = m^2c^4+2m\hbar\omega c^2(2n_r+2l+1)$ ($j=l-\tfrac12$) | Anti-aligned branch |
 | $E^2 = m^2c^4+2m\hbar\omega c^2 n$ | One-dimensional spectrum |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
-| $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading
 

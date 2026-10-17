@@ -92,7 +92,7 @@ turn a rotation by $i\chi$ into a boost of rapidity $\chi$. The hyperbolic form 
 
 The objections are the ones this article already treats as real. The first is that the device is tied to a global inertial frame and does not generalise to a curved metric — the objection that decided the question in gravitational physics. The second is subtler: if a rotation by an imaginary angle is taken at face value, it invites reading Minkowski space as a complexified $\mathbb{C}^4$, and the extra real directions that appear carry nothing observable. That objection is not about the algebra of the substitution, which is exact, but about what one is tempted to make of it.
 
-The position of this blog is that the first objection is answered by making the complex structure local, which is the whole content of *The Complex Structure Should Be Local* above: the coefficient becomes $q'_0 = ct$ with $c$ the local speed of light, and the Euclidean form of the wave operator is preserved in any medium. The second objection is the more useful one, and it is the reason this article insists on the sector structure. A complexified coordinate carries eight real parameters, and if all eight were directions of space the theory would have unobservable dimensions. In the biquaternion framework they are not: the material sector keeps the real spatial parts and the imaginary time part, the informational sector keeps the complementary ones, and the signature of each is a projection of the complex structure rather than an extra dimension. The disciplines that make this precise are the ones stated in *Conventions in the Biquaternion Universe*.
+The position of this blog is that the first objection is answered by making the complex structure local, which is the whole content of *The Complex Structure Should Be Local* above: the coefficient becomes $q'_t = ct$ with $c$ the local speed of light, and the Euclidean form of the wave operator is preserved in any medium. The second objection is the more useful one, and it is the reason this article insists on the sector structure. A complexified coordinate carries eight real parameters, and if all eight were directions of space the theory would have unobservable dimensions. In the biquaternion framework they are not: the material sector keeps the real spatial parts and the imaginary time part, the informational sector keeps the complementary ones, and the signature of each is a projection of the complex structure rather than an extra dimension. The disciplines that make this precise are the ones stated in *Conventions in the Biquaternion Universe*.
 
 What the exchange does not settle is whether the $ict$ convention should be used *in practice*, and this article does not claim that it should. It claims only that the substitution is not an inelegance to be discarded, and that the structure it exposes — a complex coordinate whose imaginary unit supplies the sign — is a fact about the geometry rather than a trick of notation. The source of the recorded exchange is the 2013 discussion by I. Guzmán de Rojas, "By dismissing Minkowski's notation $x_4 = ict$ are we not losing an essential aspect of space-time structure?"; it is an informal thread, cited as an instance of the debate and not as authority.
 
@@ -103,7 +103,7 @@ The $ict$ convention points toward something the metric convention hides: that *
 This is the intuition that motivates the broader hypothesis this blog explores: that the fundamental arena of physics is a complexified space whose coordinates are biquaternions. A point in this space is written
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z,
 $$
 
 with complex coefficients
@@ -112,7 +112,7 @@ $$
 Q_\mu = q_\mu + i\,q'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The material sector is described by the real parts $q_\mu$ for $\mu = 1, 2, 3$ — the spatial parameters $x, y, z$ — together with the imaginary time part $q'_0$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary parts $q'_j$ for $j = 1, 2, 3$ — the spatial parameters $x', y', z'$ — together with the real time part $q_0$. The time coefficient carries the $ict$ structure explicitly: $q'_0 = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
+The material sector is described by the real parts $q_\mu$ for $\mu = 1, 2, 3$ — the spatial parameters $x, y, z$ — together with the imaginary time part $q'_t$. The informational sector — the sector whose elements carry the operator algebra of quantum physics — is described by the imaginary parts $q'_j$ for $j = 1, 2, 3$ — the spatial parameters $x', y', z'$ — together with the real time part $q_t$. The time coefficient carries the $ict$ structure explicitly: $q'_t = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
 
 In this framework, the Lorentzian signature of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 
@@ -126,7 +126,7 @@ $$
 c = \frac{1}{\sqrt{\epsilon\mu}},
 $$
 
-which differs from $c_0$. If the complex structure is determined by the local electromagnetic properties, then the correct time coefficient is $q'_0 = ct$, not $c_0 t$. In vacuum, $c = c_0$ and the two coincide. In a medium, they differ.
+which differs from $c_0$. If the complex structure is determined by the local electromagnetic properties, then the correct time coefficient is $q'_t = ct$, not $c_0 t$. In vacuum, $c = c_0$ and the two coincide. In a medium, they differ.
 
 This is the local version of the $ict$ convention. It makes the complex structure a **field**, varying from point to point, in the same way that the metric $g_{\mu\nu}(x)$ varies in general relativity. The $ict$ convention becomes the vacuum limit of a more general local structure, just as special relativity is the local limit of general relativity.
 

@@ -132,7 +132,7 @@ using $\sigma^{*}=\sigma^{-1}$ and the self-adjointness; hence the adjoint of th
 
 **Example (the antipodal quotient).** On the sphere $S^n$ with the antipodal map the Laplacian is fixed and descends to the Laplacian of $\mathbb{RP}^n$; the eigenfunctions of the Laplacian split into the even ones, which are the functions of the quotient, and the odd ones, which are the sections of the twisted bundle; the trace of the involution on an eigenspace is the difference of the even and the odd dimensions, and it appears in the spectrum of the projective space through the selection rule. The geodesic operator is fixed by the reversal, and the curvature operator is fixed.
 
-**Example (the geodesic operator and its adjoint).** The geodesic operator $L_\gamma = \frac{D^2}{dt^2}+\mathcal R_{\dot\gamma}$ is fixed by the reversal of the geodesic and is self-adjoint; the covariant derivative $\frac{D}{dt}$ is skew-adjoint and skew with respect to the reversal in the appropriate sense; the index form is the fixed part of the quadratic form. This is the example from which the whole operator-layer picture is abstracted, and it is the content of *The Adjoint of the Geodesic Operator*.
+**Example (the geodesic operator and its adjoint).** The geodesic operator $L_\gamma = \frac{D^2}{dt^2}+\mathcal R_{d\gamma/dt}$ is fixed by the reversal of the geodesic and is self-adjoint; the covariant derivative $\frac{D}{dt}$ is skew-adjoint and skew with respect to the reversal in the appropriate sense; the index form is the fixed part of the quadratic form. This is the example from which the whole operator-layer picture is abstracted, and it is the content of *The Adjoint of the Geodesic Operator*.
 
 ## Summary
 

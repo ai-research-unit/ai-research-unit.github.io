@@ -272,9 +272,9 @@ $$
 
 where the last vanishing uses $n-i-1 \neq n-1$, i.e. $i \neq 0$. A space with $H_{0,\mathrm{red}}$ free of rank one and all reduced homology in positive degrees zero has exactly two path components, and the complement of each component is exactly $\Sigma$, so each component has $\Sigma$ as boundary.
 
-**Theorem (invariance of domain; Brouwer).** If $U \subseteq \mathbb{R}^n$ is open and $f : U \to \mathbb{R}^n$ is injective and continuous, then $f(U)$ is open and $f$ is a homeomorphism onto its image.
+**Theorem (invariance of domain; Brouwer).** If $\Omega \subseteq \mathbb{R}^n$ is open and $f : \Omega \to \mathbb{R}^n$ is injective and continuous, then $f(\Omega)$ is open and $f$ is a homeomorphism onto its image.
 
-*Proof sketch.* It suffices to show that $f(U)$ contains a neighbourhood of $f(x)$ for every $x \in U$; choose a closed disc $D \subseteq U$ around $x$ and apply the Jordan–Brouwer theorem to the image of $\partial D$, which is a sphere in $\mathbb{R}^n$ contained in $f(U)$; the complement of that sphere has two components, and $f(x)$ lies in the bounded one, which is contained in $f(D) \subseteq f(U)$. The argument uses only the separation theorem, hence no analysis beyond the topology of $\mathbb{R}^n$ as a normed space.
+*Proof sketch.* It suffices to show that $f(\Omega)$ contains a neighbourhood of $f(x)$ for every $x \in \Omega$; choose a closed disc $D \subseteq \Omega$ around $x$ and apply the Jordan–Brouwer theorem to the image of $\partial D$, which is a sphere in $\mathbb{R}^n$ contained in $f(\Omega)$; the complement of that sphere has two components, and $f(x)$ lies in the bounded one, which is contained in $f(D) \subseteq f(\Omega)$. The argument uses only the separation theorem, hence no analysis beyond the topology of $\mathbb{R}^n$ as a normed space.
 
 **Corollary (dimension is a topological invariant).** If $\mathbb{R}^n$ and $\mathbb{R}^m$ are homeomorphic, then $n = m$.
 

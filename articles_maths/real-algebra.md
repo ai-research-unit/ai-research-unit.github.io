@@ -16,35 +16,35 @@ The **real number field** $\mathbb{R}$ is a set equipped with two binary operati
 **Field axioms.** The structure $(\mathbb{R}, +, \cdot)$ is a field:
 
 $$
-a + b = b + a, \qquad a \cdot b = b \cdot a,
+q_1 + q_2 = q_2 + q_1, \qquad q_1 \cdot q_2 = q_2 \cdot q_1,
 $$
 
 $$
-(a + b) + c = a + (b + c), \qquad (a \cdot b) \cdot c = a \cdot (b \cdot c),
+(q_1 + q_2) + q_3 = q_1 + (q_2 + q_3), \qquad (q_1 \cdot q_2) \cdot q_3 = q_1 \cdot (q_2 \cdot q_3),
 $$
 
 $$
-a \cdot (b + c) = a \cdot b + a \cdot c,
+q_1 \cdot (q_2 + q_3) = q_1 \cdot q_2 + q_1 \cdot q_3,
 $$
 
 $$
-a + 0 = a, \qquad a \cdot 1 = a,
+q + 0 = q, \qquad q \cdot 1 = q,
 $$
 
-and for every $a \in \mathbb{R}$ there exists $-a$ with $a + (-a) = 0$, and for every $a \neq 0$ there exists $a^{-1}$ with $a \cdot a^{-1} = 1$.
+and for every $q \in \mathbb{R}$ there exists $-q$ with $q + (-q) = 0$, and for every $q \neq 0$ there exists $q^{-1}$ with $q \cdot q^{-1} = 1$.
 
 **Order axioms.** The order $<$ is total and compatible with the field operations:
 
 $$
-\text{for any } a, b \in \mathbb{R}, \text{ exactly one of } a < b, \; a = b, \; a > b \text{ holds},
+\text{for any } q_1, q_2 \in \mathbb{R}, \text{ exactly one of } q_1 < q_2, \; q_1 = q_2, \; q_1 > q_2 \text{ holds},
 $$
 
 $$
-a < b \implies a + c < b + c,
+q_1 < q_2 \implies q_1 + q_3 < q_2 + q_3,
 $$
 
 $$
-a < b \text{ and } c > 0 \implies a \cdot c < b \cdot c.
+q_1 < q_2 \text{ and } q_3 > 0 \implies q_1 \cdot q_3 < q_2 \cdot q_3.
 $$
 
 **Completeness axiom.** Every non-empty subset of $\mathbb{R}$ that is bounded above has a least upper bound in $\mathbb{R}$:
@@ -56,34 +56,34 @@ $$
 A general real number is written in developed form as
 
 $$
-a = a \cdot 1, \qquad a \in \mathbb{R},
+q = q \cdot 1, \qquad q \in \mathbb{R},
 $$
 
 or, more compactly, as
 
 $$
-a \in \mathbb{R}.
+q \in \mathbb{R}.
 $$
 
 We write
 
 $$
-a = a,
+q = q \cdot 1,
 $$
 
-where $a$ is the **scalar part** and there is no vector part. The absence of a tilde signals that $a$ is an element of the algebra $\mathbb{R}$, not a vector in some larger space.
+where $q$ is the **scalar part** and there is no vector part. The absence of a tilde signals that $q$ is an element of the algebra $\mathbb{R}$, not a vector in some larger space.
 
 There is no complexification and no distinguished imaginary unit. The only imaginary unit in the algebra is the one we do not introduce. The real numbers are real.
 
 ### Basic Properties
 
-**Commutative.** Real addition and multiplication are commutative: $a + b = b + a$ and $a \cdot b = b \cdot a$.
+**Commutative.** Real addition and multiplication are commutative: $q_1 + q_2 = q_2 + q_1$ and $q_1 \cdot q_2 = q_2 \cdot q_1$.
 
-**Associative.** Real addition and multiplication are associative: $(a + b) + c = a + (b + c)$ and $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.
+**Associative.** Real addition and multiplication are associative: $(q_1 + q_2) + q_3 = q_1 + (q_2 + q_3)$ and $(q_1 \cdot q_2) \cdot q_3 = q_1 \cdot (q_2 \cdot q_3)$.
 
-**Distributive.** $a \cdot (b + c) = a \cdot b + a \cdot c$.
+**Distributive.** $q_1 \cdot (q_2 + q_3) = q_1 \cdot q_2 + q_1 \cdot q_3$.
 
-**Ordered field.** The real numbers form a totally ordered field. The order is Archimedean: for any $a, b \in \mathbb{R}$ with $a > 0$, there exists a natural number $n$ with $n a > b$. This excludes ordered fields containing infinitesimals.
+**Ordered field.** The real numbers form a totally ordered field. The order is Archimedean: for any $q, b \in \mathbb{R}$ with $q > 0$, there exists a natural number $n$ with $n q > b$. This excludes ordered fields containing infinitesimals.
 
 **Complete ordered field.** The real numbers are the unique complete ordered field up to isomorphism. Every other complete ordered field is order-isomorphic to $\mathbb{R}$.
 
@@ -91,13 +91,13 @@ There is no complexification and no distinguished imaginary unit. The only imagi
 
 ### The Absolute Value and the Positive Cone
 
-The **absolute value** of a real number $a$ is
+The **absolute value** of a real number $q$ is
 
 $$
-|a| = \begin{cases} a & a \geq 0, \\ -a & a < 0. \end{cases}
+|q| = \begin{cases} q & q \geq 0, \\ -q & q < 0. \end{cases}
 $$
 
-It satisfies $|a| \geq 0$, $|a| = 0 \iff a = 0$, $|ab| = |a||b|$, and $|a + b| \leq |a| + |b|$. The last is the triangle inequality, and it is the only one that uses the order in an essential way.
+It satisfies $|q| \geq 0$, $|q| = 0 \iff q = 0$, $|q_1 q_2| = |q_1||q_2|$, and $|q_1 + q_2| \leq |q_1| + |q_2|$. The last is the triangle inequality, and it is the only one that uses the order in an essential way.
 
 The set of non-negative reals
 
@@ -108,7 +108,7 @@ $$
 is a multiplicative submonoid of $\mathbb{R}$ and is closed under addition. It is the **positive cone** of the ordered field, and it determines the order by
 
 $$
-a < b \iff b - a \in \mathbb{R}_{>0}.
+q_1 < q_2 \iff q_2 - q_1 \in \mathbb{R}_{>0}.
 $$
 
 The absolute value is not a separate operation from the field structure; it is defined in terms of the order, and the order is defined in terms of the field structure together with the completeness axiom.
@@ -118,7 +118,7 @@ The absolute value is not a separate operation from the field structure; it is d
 There is no vector part. The real numbers are one-dimensional over themselves, and the scalar part exhausts the element. The product of two real numbers is
 
 $$
-a \cdot b = ab,
+q_1 \cdot q_2 = q_1 q_2,
 $$
 
 which has no dot product and no cross product, because there is no vector part. The field multiplication is the only operation, and it is commutative.
@@ -130,38 +130,38 @@ which has no dot product and no cross product, because there is no vector part. 
 The **real algebra** is the field $\mathbb{R}$ considered as a one-dimensional real vector space equipped with its field multiplication. As a real vector space, $\mathbb{R}$ has dimension $1$. As a ring, it is a field. A general element is written in developed form as
 
 $$
-a = a \cdot 1, \qquad a \in \mathbb{R},
+q = q \cdot 1, \qquad q \in \mathbb{R},
 $$
 
 or, more compactly, as
 
 $$
-a \in \mathbb{R}.
+q \in \mathbb{R}.
 $$
 
 We write
 
 $$
-a = a,
+q = q \cdot 1,
 $$
 
-where $a$ is the **scalar part** and there is no vector part.
+where $q$ is the **scalar part** and there is no vector part.
 
 ### Multiplication
 
 The product of two real numbers is defined by the field multiplication:
 
 $$
-a \cdot b = ab, \qquad a, b \in \mathbb{R}.
+q_1 \cdot q_2 = q_1 q_2, \qquad q_1, q_2 \in \mathbb{R}.
 $$
 
 In developed form,
 
 $$
-a \cdot b = (a)(b),
+q_1 \cdot q_2 = (q_1)(q_2),
 $$
 
-where the product $ab$ is that of the real field.
+where the product $q_1 q_2$ is that of the real field.
 
 ### Conjugations
 
@@ -170,7 +170,7 @@ There is **one** natural conjugation on $\mathbb{R}$, and it is trivial: the ide
 **Identity conjugation** $\operatorname{id}$:
 
 $$
-\operatorname{id}(a) = a.
+\operatorname{id}(q) = q.
 $$
 
 There is no complex conjugation, no Hermitian conjugation, and no anti-Hermitian conjugation. The real numbers are totally ordered and totally real; there is no room for a nontrivial involution that preserves the field structure.
@@ -183,20 +183,20 @@ The identity conjugation has a fixed-point set, namely all of $\mathbb{R}$. This
 
 ### The Real Subspace
 
-The fixed points of the **identity conjugation** are the real numbers satisfying $\operatorname{id}(a) = a$. In developed form,
+The fixed points of the **identity conjugation** are the real numbers satisfying $\operatorname{id}(q) = q$. In developed form,
 
 $$
-a = a.
+q = q.
 $$
 
 Comparing the coefficients of $1$:
 
-- Coefficient of $1$: $a = a$, always satisfied.
+- Coefficient of $1$: $q = q$, always satisfied.
 
 The fixed points are all real numbers:
 
 $$
-a = a \cdot 1, \qquad a \in \mathbb{R}.
+q = q \cdot 1, \qquad q \in \mathbb{R}.
 $$
 
 This is the **real subspace** $\mathbb{R}_{\mathbb{R}}$, a copy of the real number line embedded in $\mathbb{R}$ as the whole thing. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{R}$ (isomorphic to $\mathbb{R}$), and it is commutative.
@@ -208,16 +208,16 @@ It is the only one of the fixed-point sets that is a division algebra, because i
 There is no nontrivial decomposition of $\mathbb{R}$ associated with a conjugation, because the only conjugation is the identity. Every real number can be written uniquely as
 
 $$
-a = a_r,
+q = q_r,
 $$
 
-where $a_r$ is an **ordinary real number**, with real coefficient. The component is
+where $q_r$ is an **ordinary real number**, with real coefficient. The component is
 
 $$
-a_r = \frac{1}{2}(a + a) = a.
+q_r = \frac{1}{2}(q + q) = q.
 $$
 
-Indeed, $a_r$ is fixed by the identity conjugation, so it lies in the real subspace $\mathbb{R}_{\mathbb{R}}$. The sum is $a_r = a$.
+Indeed, $q_r$ is fixed by the identity conjugation, so it lies in the real subspace $\mathbb{R}_{\mathbb{R}}$. The sum is $q_r = q$.
 
 This gives the direct sum decomposition
 
@@ -227,7 +227,7 @@ $$
 
 where $\mathbb{R}_{\mathbb{R}}$ is the real subspace. It is a real vector space of dimension $1$, and its direct sum is the full algebra $\mathbb{R}$ of real dimension $1$.
 
-This is the **real decomposition** of a real number. It expresses $a$ as a real number. It is the natural decomposition when we think of $\mathbb{R}$ as the realification of $\mathbb{R}$.
+This is the **real decomposition** of a real number. It expresses $q$ as a real number. It is the natural decomposition when we think of $\mathbb{R}$ as the realification of $\mathbb{R}$.
 
 ## Hermitian Decomposition
 
@@ -259,9 +259,9 @@ Intervals are the convex subsets of $\mathbb{R}$: a set $S \subseteq \mathbb{R}$
 
 ### Bounds
 
-A set $S \subseteq \mathbb{R}$ is **bounded above** if there exists $M \in \mathbb{R}$ with $a \leq M$ for all $a \in S$. Such an $M$ is an **upper bound**. The **supremum** $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.
+A set $S \subseteq \mathbb{R}$ is **bounded above** if there exists $M \in \mathbb{R}$ with $q \leq M$ for all $q \in S$. Such an $M$ is an **upper bound**. The **supremum** $\sup S$ is the least upper bound, and it exists by completeness whenever $S$ is non-empty and bounded above.
 
-Dually, $S$ is **bounded below** if there exists $m \in \mathbb{R}$ with $m \leq a$ for all $a \in S$, and the **infimum** $\inf S$ is the greatest lower bound.
+Dually, $S$ is **bounded below** if there exists $m \in \mathbb{R}$ with $m \leq q$ for all $q \in S$, and the **infimum** $\inf S$ is the greatest lower bound.
 
 ### The Completeness Consequences
 
@@ -269,9 +269,9 @@ Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its
 
 **Archimedean property.** For any $a \in \mathbb{R}$, there exists $n \in \mathbb{N}$ with $n > a$. Proof: if not, $\mathbb{N}$ is bounded above, so $\sup \mathbb{N}$ exists; then $\sup \mathbb{N} - 1$ is not an upper bound, so some $n > \sup \mathbb{N} - 1$, hence $n + 1 > \sup \mathbb{N}$, contradiction.
 
-**Density of $\mathbb{Q}$.** For any $a, b \in \mathbb{R}$ with $a < b$, there exists $q \in \mathbb{Q}$ with $a < q < b$. Proof: by Archimedes, choose $n$ with $n(b - a) > 1$; then choose $m$ with $m > na$ minimal; then $m/n \in (a, b)$.
+**Density of $\mathbb{Q}$.** For any $q_1, q_2 \in \mathbb{R}$ with $q_1 < q_2$, there exists $q \in \mathbb{Q}$ with $q_1 < q < q_2$. Proof: by Archimedes, choose $n$ with $n(q_2 - q_1) > 1$; then choose $m$ with $m > n q_1$ minimal; then $m/n \in (q_1, q_2)$.
 
-**Existence of $n$-th roots.** For any $a \geq 0$ and any $n \geq 1$, there exists a unique $b \geq 0$ with $b^n = a$. Proof: let $S = \{c \geq 0 : c^n \leq a\}$; $S$ is non-empty and bounded above, so $b = \sup S$ exists; one shows $b^n = a$ by excluding $b^n < a$ and $b^n > a$.
+**Existence of $n$-th roots.** For any $q_1 \geq 0$ and any $n \geq 1$, there exists a unique $q_2 \geq 0$ with $q_2^n = q_1$. Proof: let $S = \{c \geq 0 : c^n \leq q_1\}$; $S$ is non-empty and bounded above, so $q_2 = \sup S$ exists; one shows $q_2^n = q_1$ by excluding $q_2^n < q_1$ and $q_2^n > q_1$.
 
 **Nested interval property.** If $(I_n)$ is a decreasing sequence of non-empty closed intervals, then $\bigcap_n I_n \neq \emptyset$. Proof: the left endpoints form a set bounded above, whose supremum lies in every $I_n$.
 
@@ -305,10 +305,10 @@ The order is total, Archimedean and complete, and it interacts with the field op
 |---|---|
 | $\mathbb{R}$ | Real number field |
 | $1$ | Identity |
-| $a$ | General real number |
-| $a$ | Real coefficient |
-| $a$ | Scalar part |
-| $\operatorname{id}(a) = a$ | Identity conjugation |
+| $q$ | General real number |
+| $q$ | Real coefficient |
+| $q$ | Scalar part |
+| $\operatorname{id}(q) = q$ | Identity conjugation |
 | $\mathbb{R}_{\mathbb{R}}$ | Real subspace, fixed-point set of $\operatorname{id}$ |
 | $\mathbb{R}_{\geq 0}$ | Positive cone (the non-negative reals) |
 | $[a, b], (a, b)$ | Closed and open intervals |

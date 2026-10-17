@@ -16,7 +16,7 @@ The left and right multiplications of $\mathbb{H}$ generate together an algebra 
 
 **Theorem.** The sandwich representation is an isomorphism $\mathbb{H}^{\mathrm{e}}\overset{\sim}{\to}\operatorname{End}_\mathbb{R}(\mathbb{H})$; both sides have real dimension $16$.
 
-*Proof.* The map is a non-zero algebra homomorphism, since $e_0\otimes e_0^{\mathrm{opp}}$ acts as the identity operator, and both algebras have real dimension $16$. The algebra $\mathbb{H}$ is central simple, and the tensor product of central simple algebras is central simple, so $\mathbb{H}^{\mathrm{e}}$ is simple; a non-zero homomorphism from a simple algebra into a ring is injective. Hence the map is injective, and by the equality of dimensions it is bijective.
+*Proof.* The map is a non-zero algebra homomorphism, since $e_t\otimes e_t^{\mathrm{opp}}$ acts as the identity operator, and both algebras have real dimension $16$. The algebra $\mathbb{H}$ is central simple, and the tensor product of central simple algebras is central simple, so $\mathbb{H}^{\mathrm{e}}$ is simple; a non-zero homomorphism from a simple algebra into a ring is injective. Hence the map is injective, and by the equality of dimensions it is bijective.
 
 **Corollary.** $\mathbb{H}^{\mathrm{e}}\cong\operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R})$, and $\mathbb{H}$ is a simple module over $\mathbb{H}^{\mathrm{e}}$.
 
@@ -24,9 +24,9 @@ The left and right multiplications of $\mathbb{H}$ generate together an algebra 
 
 ## The Conway Operator Basis
 
-**Definition.** Following Conway, write $\tilde a[\,]\tilde b$ for the operator $\tilde q\mapsto\tilde a\tilde q\tilde b$. The sixteen operators $e_n[\,]e_m$, $n,m\in\{0,1,2,3\}$, are the **Conway operator basis** of $\mathbb{H}^{\mathrm{e}}$.
+**Definition.** Following Conway, write $\tilde a[\,]\tilde b$ for the operator $\tilde q\mapsto\tilde a\tilde q\tilde b$. The sixteen operators $e_n[\,]e_m$, $n,m\in\{t,x,y,z\}$, are the **Conway operator basis** of $\mathbb{H}^{\mathrm{e}}$.
 
-**Equivalent forms.** $e_n[\,]e_m=L_{e_n}R_{e_m}$, and $e_0[\,]e_m=R_{e_m}$ while $e_n[\,]e_0=L_{e_n}$.
+**Equivalent forms.** $e_n[\,]e_m=L_{e_n}R_{e_m}$, and $e_t[\,]e_m=R_{e_m}$ while $e_n[\,]e_t=L_{e_n}$.
 
 ## The Composition Rule
 
@@ -51,12 +51,12 @@ $$
 **Theorem.** The one-sided operators are the edge rows of the Conway basis:
 
 $$
-L_{e_n}=e_n[\,]e_0,\qquad R_{e_m}=e_0[\,]e_m.
+L_{e_n}=e_n[\,]e_t,\qquad R_{e_m}=e_t[\,]e_m.
 $$
 
-*Proof.* The definitions: $e_n[\,]e_0(\tilde q)=e_n\tilde q\,e_0=e_n\tilde q$ and $e_0[\,]e_m(\tilde q)=e_0\tilde qe_m=\tilde qe_m$.
+*Proof.* The definitions: $e_n[\,]e_t(\tilde q)=e_n\tilde q\,e_t=e_n\tilde q$ and $e_t[\,]e_m(\tilde q)=e_t\tilde qe_m=\tilde qe_m$.
 
-**Corollary.** The left multiplications span the $4$-dimensional subspace $\mathbb{H}\otimes\mathbb{R}e_0^{\mathrm{opp}}$ and the right multiplications the subspace $\mathbb{R}e_0\otimes\mathbb{H}^{\mathrm{opp}}$; the two subspaces intersect in the scalars $\mathbb{R}(e_0[\,]e_0)$, the identity operator.
+**Corollary.** The left multiplications span the $4$-dimensional subspace $\mathbb{H}\otimes\mathbb{R}e_t^{\mathrm{opp}}$ and the right multiplications the subspace $\mathbb{R}e_t\otimes\mathbb{H}^{\mathrm{opp}}$; the two subspaces intersect in the scalars $\mathbb{R}(e_t[\,]e_t)$, the identity operator.
 
 *Proof.* $L$ is injective, so the $L_{e_n}$ span a $4$-dimensional space, the first tensor factor; similarly the second. An operator that is both a left and a right multiplication is multiplication by a central element, that is a scalar, by the centre theorem.
 
@@ -84,7 +84,7 @@ Thus $\mathbb{H}^{\mathrm{e}}$ contains the two commuting copies $L(\mathbb{H})$
 
 *Proof.* The compatibility of the two actions is associativity, as in the sandwich theorem; faithfulness is injectivity of the representation, that is the identification. Simplicity and the module theory are *Modules over the Quaternion Algebra*, above this article in this category.
 
-**Corollary.** The enveloping algebra is the endomorphism algebra of its own standard module: $\mathbb{H}^{\mathrm{e}}=\operatorname{End}_\mathbb{R}({}_\mathbb{H}\mathbb{H}_\mathbb{H})$, and the centre of $\mathbb{H}^{\mathrm{e}}$ is the scalars acting by $T_{\lambda e_0,\lambda e_0}$, a one-dimensional space.
+**Corollary.** The enveloping algebra is the endomorphism algebra of its own standard module: $\mathbb{H}^{\mathrm{e}}=\operatorname{End}_\mathbb{R}({}_\mathbb{H}\mathbb{H}_\mathbb{H})$, and the centre of $\mathbb{H}^{\mathrm{e}}$ is the scalars acting by $T_{\lambda e_t,\lambda e_t}$, a one-dimensional space.
 
 *Proof.* The identification with the endomorphisms; an operator commuting with all sandwiches is a scalar, since it must equal both a left and a right multiplication, and only the scalars are central.
 
@@ -94,7 +94,7 @@ The two constructions differ only in the coefficient field: over $\mathbb{R}$ th
 
 ## Summary
 
-The enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ has dimension $16$ and is isomorphic to the real-linear endomorphisms of $\mathbb{H}$ by the sandwich action $\tilde a\otimes\tilde b^{\mathrm{opp}}\mapsto(\tilde q\mapsto\tilde a\tilde q\tilde b)$. Its Conway basis $e_n[\,]e_m$ obeys $(e_a[\,]e_b)(e_c[\,]e_d)=(e_ae_c)[\,](e_de_b)$, with structure constants read from the basis products; the one-sided operators are the edge rows $L_{e_n}=e_n[\,]e_0$ and $R_{e_m}=e_0[\,]e_m$; the left and right multiplications are two commuting copies whose product spans the algebra; and the two-sided operators are the elementary tensors, so that every real-linear operator is a sandwich. The regular bimodule is the standard simple module over $\mathbb{H}^{\mathrm{e}}$, faithful and of dimension four; over the complex case the same construction gives $M_4(\mathbb{C})$ and a standard module that is the algebra itself, of complex dimension four.
+The enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ has dimension $16$ and is isomorphic to the real-linear endomorphisms of $\mathbb{H}$ by the sandwich action $\tilde a\otimes\tilde b^{\mathrm{opp}}\mapsto(\tilde q\mapsto\tilde a\tilde q\tilde b)$. Its Conway basis $e_n[\,]e_m$ obeys $(e_a[\,]e_b)(e_c[\,]e_d)=(e_ae_c)[\,](e_de_b)$, with structure constants read from the basis products; the one-sided operators are the edge rows $L_{e_n}=e_n[\,]e_t$ and $R_{e_m}=e_t[\,]e_m$; the left and right multiplications are two commuting copies whose product spans the algebra; and the two-sided operators are the elementary tensors, so that every real-linear operator is a sandwich. The regular bimodule is the standard simple module over $\mathbb{H}^{\mathrm{e}}$, faithful and of dimension four; over the complex case the same construction gives $M_4(\mathbb{C})$ and a standard module that is the algebra itself, of complex dimension four.
 
 ## Summary of Notation
 

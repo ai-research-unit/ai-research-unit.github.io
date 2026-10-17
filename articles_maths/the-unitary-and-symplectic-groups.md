@@ -5,7 +5,7 @@
 
 The isometry group of a form depends on the type of the form. A symmetric bilinear form gives the orthogonal group, a Hermitian form gives the unitary group, and an alternating form gives the symplectic group. These three constructions, together with the general linear group and its determinant-one subgroup, produce the **classical groups**, and over the complex numbers their Lie algebras exhaust the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.
 
-This article develops the three constructions side by side, the standard matrix realisations $U(n)$, $SU(n)$ and $Sp(2n)$, the quaternionic analogue of the unitary group, and the four families with their dimensions and ranks. The base is a field $F$ or the field $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ when the analysis requires it. Symmetric and alternating forms, their radicals and non-degeneracy are from *Bilinear Forms*; the orthogonal group and its determinant are from *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation*. Hermitian forms are used here and developed; the trace and the reduced norm are cited from the same place. The exterior algebra and the Pfaffian are from *The Determinant and Alternating Forms*. The Lie algebras of these groups are related to *The Orthogonal Lie Algebra*.
+This article develops the three constructions side by side, the standard matrix realisations $\mathrm{U}(n)$, $SU(n)$ and $Sp(2n)$, the quaternionic analogue of the unitary group, and the four families with their dimensions and ranks. The base is a field $F$ or the field $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ when the analysis requires it. Symmetric and alternating forms, their radicals and non-degeneracy are from *Bilinear Forms*; the orthogonal group and its determinant are from *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation*. Hermitian forms are used here and developed; the trace and the reduced norm are cited from the same place. The exterior algebra and the Pfaffian are from *The Determinant and Alternating Forms*. The Lie algebras of these groups are related to *The Orthogonal Lie Algebra*.
 
 ## The Classical Groups from a Form
 
@@ -79,17 +79,17 @@ $$
 U^{\dagger} U = I, \qquad \text{equivalently} \qquad U^{-1} = U^{\dagger}.
 $$
 
-The group of such matrices is the **unitary group** $U(n)$, and its determinant-one subgroup is $SU(n)$. The columns of a unitary matrix form an orthonormal basis of $\mathbb{C}^n$, and the rows do too.
+The group of such matrices is the **unitary group** $\mathrm{U}(n)$, and its determinant-one subgroup is $SU(n)$. The columns of a unitary matrix form an orthonormal basis of $\mathbb{C}^n$, and the rows do too.
 
-**Proposition.** $U(n)$ is a compact group of real dimension $n^2$, and $SU(n)$ is a compact connected group of real dimension $n^2 - 1$. The determinant map is surjective onto the circle, so
+**Proposition.** $\mathrm{U}(n)$ is a compact group of real dimension $n^2$, and $SU(n)$ is a compact connected group of real dimension $n^2 - 1$. The determinant map is surjective onto the circle, so
 
 $$
-U(n)/SU(n) \cong U(1) \cong S^1.
+\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1) \cong S^1.
 $$
 
-**Proof.** The defining equation $U^{\dagger}U = I$ is a closed condition in $M_n(\mathbb{C})$, so $U(n)$ is closed; its columns are unit vectors, so it is bounded, hence compact. Near the identity it is a submanifold of the real vector space of $n \times n$ complex matrices, whose real dimension is $2n^2$. The condition $U^{\dagger}U = I$ is Hermitian, hence imposes $n^2$ real equations, and the derivative at $I$ is $A + A^{\dagger} = 0$, the anti-Hermitian condition, a real vector space of dimension $n^2$; the dimension of $U(n)$ near $I$ is therefore $2n^2 - n^2 = n^2$. The determinant has derivative the trace, which is nonzero on the anti-Hermitian matrices, so $SU(n)$ has dimension $n^2 - 1$. The determinant of a diagonal matrix $\operatorname{diag}(z, 1, \ldots, 1)$ with $|z| = 1$ realises every unit complex number, so the determinant is surjective onto $U(1)$.
+**Proof.** The defining equation $U^{\dagger}U = I$ is a closed condition in $M_n(\mathbb{C})$, so $\mathrm{U}(n)$ is closed; its columns are unit vectors, so it is bounded, hence compact. Near the identity it is a submanifold of the real vector space of $n \times n$ complex matrices, whose real dimension is $2n^2$. The condition $U^{\dagger}U = I$ is Hermitian, hence imposes $n^2$ real equations, and the derivative at $I$ is $A + A^{\dagger} = 0$, the anti-Hermitian condition, a real vector space of dimension $n^2$; the dimension of $\mathrm{U}(n)$ near $I$ is therefore $2n^2 - n^2 = n^2$. The determinant has derivative the trace, which is nonzero on the anti-Hermitian matrices, so $SU(n)$ has dimension $n^2 - 1$. The determinant of a diagonal matrix $\operatorname{diag}(z, 1, \ldots, 1)$ with $|z| = 1$ realises every unit complex number, so the determinant is surjective onto $\mathrm{U}(1)$.
 
-**Example.** $U(1)$ is the circle group and $SU(1)$ is trivial. $SU(2)$ consists of the matrices $\begin{pmatrix} a & b \\ -\bar b & \bar a \end{pmatrix}$ with $|a|^2 + |b|^2 = 1$, a three-dimensional sphere; it is the unit quaternions, and it double covers $\operatorname{SO}(3)$, as described in the applications of the Clifford layer of this category, written in parallel.
+**Example.** $\mathrm{U}(1)$ is the circle group and $SU(1)$ is trivial. $SU(2)$ consists of the matrices $\begin{pmatrix} a & b \\ -\bar b & \bar a \end{pmatrix}$ with $|a|^2 + |b|^2 = 1$, a three-dimensional sphere; it is the unit quaternions, and it double covers $\operatorname{SO}(3)$, as described in the applications of the Clifford layer of this category, written in parallel.
 
 ### Relation to the Orthogonal Group
 
@@ -124,12 +124,12 @@ For $u = v$ the number $u^{\dagger}Hu$ is real, because its conjugate is $u^{\da
 The triple $(n, r, z)$ is the **signature** of $h$, and $h$ is non-degenerate exactly when $z = 0$. The isometry group of the form $\operatorname{diag}(I_n, -I_r)$ is written
 
 $$
-U(n, r) = \{M \in GL(n, \mathbb{C}) : M^{\dagger} \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix} M = \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix}\},
+\mathrm{U}(n, r) = \{M \in GL(n, \mathbb{C}) : M^{\dagger} \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix} M = \begin{pmatrix} I_n & 0 \\ 0 & -I_r\end{pmatrix}\},
 $$
 
-with special subgroup $SU(n, r)$ the kernel of the determinant; both have real dimension $n^2$ and $n^2 - 1$ respectively, since the counting of the compact case uses only the Hermitian condition on $M^{\dagger}HM = H$ and the dimension of $H$ as a real vector space. For $n = n$ the group is the compact $U(n)$ of the previous section, and for $n, r > 0$ it is non-compact.
+with special subgroup $SU(n, r)$ the kernel of the determinant; both have real dimension $n^2$ and $n^2 - 1$ respectively, since the counting of the compact case uses only the Hermitian condition on $M^{\dagger}HM = H$ and the dimension of $H$ as a real vector space. For $n = n$ the group is the compact $\mathrm{U}(n)$ of the previous section, and for $n, r > 0$ it is non-compact.
 
-### The Group $U(1, 1)$
+### The Group $\mathrm{U}(1, 1)$
 
 The smallest non-compact case is $h(z, w) = \bar z_1 w_1 - \bar z_2 w_2$ on $\mathbb{C}^2$. Writing a matrix as $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$, the condition $T^{\dagger}\operatorname{diag}(1,-1)T = \operatorname{diag}(1,-1)$ is the three equations
 
@@ -143,14 +143,14 @@ $$
 
 ### The Unitary Dual of $SU(1,1)$
 
-The group is non-compact, so, exactly as for $SL(2,\mathbb{C})$, its nontrivial unitary representations are infinite-dimensional. Being of rank one, its dual is completely explicit: with $K=U(1)\subset SU(1,1)$ the maximal compact subgroup — the stabiliser of a vector of positive norm in the defining representation — the unitary irreducibles are
+The group is non-compact, so, exactly as for $SL(2,\mathbb{C})$, its nontrivial unitary representations are infinite-dimensional. Being of rank one, its dual is completely explicit: with $K=\mathrm{U}(1)\subset SU(1,1)$ the maximal compact subgroup — the stabiliser of a vector of positive norm in the defining representation — the unitary irreducibles are
 
 - the **trivial representation**;
 - the **discrete series** $D_n$, $n\geq1$, square-integrable with respect to Haar measure, the parameter $j=-\tfrac{n}{2}$ in the notation of the source cited below;
 - the **continuous series** $j=-\tfrac12+is$, $s\in\mathbb{R}$, the tempered part, the same family the companion article *Noncommutative Harmonic Analysis* calls the **principal series**;
 - the **complementary series**, a bounded interval of parameters on which the representation is unitary but not tempered.
 
-The two series have geometric carriers, and it is the kind of vector stabiliser that decides which appears. The group acts transitively on the two hyperboloids of three-dimensional Minkowski space, and its compact counterpart $SU(2)$ on the sphere, so the sphere and the two hyperboloids of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* are one family of homogeneous spaces under two groups. The **two-sheeted time-like hyperboloid** $H^\pm=SU(1,1)/U(1)$ has the compact $U(1)$ as its vector stabiliser and carries the discrete series, while the **one-sheeted space-like hyperboloid** $H^{sl}$ has the non-compact one-parameter subgroup of boosts as its stabiliser and carries the continuous series. The compact member is the sphere $S^2=SU(2)/U(1)$, whose multiplets are finite-dimensional because $SU(2)$ is compact, and the passage from the compact to the non-compact case is exactly the passage from a finite multiplet to a series. The spinor models of the three spaces, and the realisation of the Lie algebra $\mathrm{SU}(1,1)$ on the spinor bilinears, are external material recorded in that article.
+The two series have geometric carriers, and it is the kind of vector stabiliser that decides which appears. The group acts transitively on the two hyperboloids of three-dimensional Minkowski space, and its compact counterpart $SU(2)$ on the sphere, so the sphere and the two hyperboloids of *The Spinor Module in Biquaternionic Form and Its Lorentz Action* are one family of homogeneous spaces under two groups. The **two-sheeted time-like hyperboloid** $H^\pm=SU(1,1)/\mathrm{U}(1)$ has the compact $\mathrm{U}(1)$ as its vector stabiliser and carries the discrete series, while the **one-sheeted space-like hyperboloid** $H^{sl}$ has the non-compact one-parameter subgroup of boosts as its stabiliser and carries the continuous series. The compact member is the sphere $S^2=SU(2)/\mathrm{U}(1)$, whose multiplets are finite-dimensional because $SU(2)$ is compact, and the passage from the compact to the non-compact case is exactly the passage from a finite multiplet to a series. The spinor models of the three spaces, and the realisation of the Lie algebra $\mathrm{SU}(1,1)$ on the spinor bilinears, are external material recorded in that article.
 
 ## The Symplectic Group
 
@@ -218,12 +218,12 @@ The intersection of the symplectic and orthogonal groups on a real space of even
 **Theorem.** With the standard alternating form and the standard positive definite form on $\mathbb{R}^{2m}$,
 
 $$
-Sp(2m, \mathbb{R}) \cap O(2m) = U(m).
+Sp(2m, \mathbb{R}) \cap O(2m) = \mathrm{U}(m).
 $$
 
-**Proof.** Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in U(m)$. Conversely, let $U \in U(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$.
+**Proof.** Let $A \in GL(2m, \mathbb{R})$ satisfy $A^{T}\Omega A = \Omega$ and $A^{T}A = I$. From the first relation, $\Omega A = (A^{T})^{-1}\Omega = A\Omega$, because $A^{T} = A^{-1}$ by the second; so $A$ commutes with $\Omega$. Identifying $\mathbb{R}^{2m}$ with $\mathbb{C}^m$ by taking $\Omega$ as the matrix of multiplication by $i$, commutativity with $\Omega$ says exactly that $A$ is complex-linear, and the orthogonal condition $A^{T}A = I$ says that $A$ preserves the Euclidean form, which is the real part of the standard Hermitian form. Hence $A$ is complex-linear and unitary, that is $A \in \mathrm{U}(m)$. Conversely, let $U \in \mathrm{U}(m)$ and write it as the real matrix $A = \begin{pmatrix} X & -Y \\ Y & X\end{pmatrix}$; the conditions $X^{T}X + Y^{T}Y = I$ and $X^{T}Y - Y^{T}X = 0$, which are $U^{\dagger}U = I$, give $A^{T}A = I$ directly, and $A$ commutes with $\Omega$ because it is complex-linear, so $A^{T}\Omega A = A^{-1}\Omega A = \Omega$.
 
-Both groups in the statement are compact, and the theorem exhibits $U(m)$ as a maximal compact subgroup of the non-compact group $Sp(2m, \mathbb{R})$. The dimension count reflects the splitting: $\dim Sp(2m, \mathbb{R}) = 2m^2 + m$ and $\dim U(m) = m^2$, the difference $m^2 + m$ being the dimension of the symmetric space $Sp(2m, \mathbb{R})/U(m)$.
+Both groups in the statement are compact, and the theorem exhibits $\mathrm{U}(m)$ as a maximal compact subgroup of the non-compact group $Sp(2m, \mathbb{R})$. The dimension count reflects the splitting: $\dim Sp(2m, \mathbb{R}) = 2m^2 + m$ and $\dim \mathrm{U}(m) = m^2$, the difference $m^2 + m$ being the dimension of the symmetric space $Sp(2m, \mathbb{R})/\mathrm{U}(m)$.
 
 ## The Quaternionic Case
 
@@ -239,16 +239,16 @@ $$
 
 **Warning on notation.** The symbol $Sp$ carries two meanings: $Sp(2m, F)$ is the isometry group of an alternating form over a field, a non-compact group, while $Sp(n)$ is the isometry group of a quaternionic Hermitian form, a compact group. The two agree only through the identification of $Sp(n)$ with the compact real form of $Sp(2n, \mathbb{C})$: the complexification of the quaternionic unitary group is the symplectic group $Sp(2n, \mathbb{C})$.
 
-**Proposition.** $Sp(n)$ is a compact connected group of real dimension $n(2n + 1)$. It is the intersection $Sp(2n, \mathbb{C}) \cap U(2n)$ inside $GL(2n, \mathbb{C})$.
+**Proposition.** $Sp(n)$ is a compact connected group of real dimension $n(2n + 1)$. It is the intersection $Sp(2n, \mathbb{C}) \cap \mathrm{U}(2n)$ inside $GL(2n, \mathbb{C})$.
 
-**Proof.** A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap U(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices.
+**Proof.** A quaternionic $n \times n$ matrix has $4n^2$ real parameters; the condition $A^{\dagger}A = I$ imposes $n(2n-1)$ independent real equations, leaving dimension $4n^2 - n(2n-1) = n(2n+1)$. Compactness is the closedness and boundedness of the defining condition, as in the complex case. The identification of $Sp(n)$ with $Sp(2n, \mathbb{C}) \cap \mathrm{U}(2n)$ is the standard realisation of the quaternions as $2 \times 2$ complex matrices.
 
 ### Relation to $GL$ and $SL$
 
 The classical groups fit into the chain
 
 $$
-SU(n) \subset U(n) \subset GL(n, \mathbb{C}), \qquad Sp(2m, F) \subset SL(2m, F) \subset GL(2m, F),
+SU(n) \subset \mathrm{U}(n) \subset GL(n, \mathbb{C}), \qquad Sp(2m, F) \subset SL(2m, F) \subset GL(2m, F),
 $$
 
 and $SO(n) \subset O(n) \subset GL(n, \mathbb{R})$. The special linear group is the kernel of the determinant in each ambient general linear group, and the special orthogonal and special unitary groups are the intersections of their groups with $SL$, while the symplectic group is contained in $SL$ by the Pfaffian theorem above.
@@ -272,7 +272,7 @@ The families $B_n$ and $C_n$ have the same dimension and rank and are dual to on
 
 ### Real Forms and Compact Groups
 
-Each complex family has several real forms. The **compact** real forms are $SU(n)$ for $A_n$, $SO(2n+1)$ for $B_n$, $Sp(n)$ for $C_n$, and $SO(2n)$ for $D_n$. The **split** real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, and $SO(n, n)$. The isometry groups of the real forms of a quadratic form are the groups $\operatorname{O}(n, r)$ of *The Rotation Group and Orientation*, and the isometry groups of the real forms of a Hermitian form are the groups $U(n, r)$; the corresponding Lie algebras are the real forms of *The Orthogonal Lie Algebra*.
+Each complex family has several real forms. The **compact** real forms are $SU(n)$ for $A_n$, $SO(2n+1)$ for $B_n$, $Sp(n)$ for $C_n$, and $SO(2n)$ for $D_n$. The **split** real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, and $SO(n, n)$. The isometry groups of the real forms of a quadratic form are the groups $\operatorname{O}(n, r)$ of *The Rotation Group and Orientation*, and the isometry groups of the real forms of a Hermitian form are the groups $\mathrm{U}(n, r)$; the corresponding Lie algebras are the real forms of *The Orthogonal Lie Algebra*.
 
 **Remark.** The unitary and symplectic matrix groups belong to the classical groups as studied in category 04; the role of this article is to exhibit them as the isometry groups of the three types of form, so that the form, not the matrix, is the primary datum.
 
@@ -280,15 +280,15 @@ Each complex family has several real forms. The **compact** real forms are $SU(n
 
 The **classical groups** are the isometry groups of the three types of form. A non-degenerate **symmetric bilinear** form gives the **orthogonal group** $\operatorname{O}(V, h)$ with special subgroup $\operatorname{SO}(V, h) = \operatorname{O}(V, h) \cap SL(V)$; a non-degenerate **alternating** form gives the **symplectic group** $\operatorname{Sp}(V, \omega)$; and a non-degenerate **Hermitian** form gives the **unitary group** $\operatorname{U}(V, h)$ with special subgroup $\operatorname{SU}(V, h) = \operatorname{U}(V, h) \cap SL(V)$.
 
-Over $\mathbb{C}$ the standard unitary groups are $U(n) = \{U : U^{\dagger}U = I\}$ and $SU(n)$, of real dimensions $n^2$ and $n^2 - 1$; $U(n)$ is compact and $U(n)/SU(n) \cong S^1$. A Hermitian form $h = s + ia$ has unitary group $\operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a)$, the intersection of an orthogonal and a symplectic group on the realification.
+Over $\mathbb{C}$ the standard unitary groups are $\mathrm{U}(n) = \{U : U^{\dagger}U = I\}$ and $SU(n)$, of real dimensions $n^2$ and $n^2 - 1$; $\mathrm{U}(n)$ is compact and $\mathrm{U}(n)/SU(n) \cong S^1$. A Hermitian form $h = s + ia$ has unitary group $\operatorname{O}(V_{\mathbb{R}}, s) \cap \operatorname{Sp}(V_{\mathbb{R}}, a)$, the intersection of an orthogonal and a symplectic group on the realification.
 
 The standard symplectic group $Sp(2m, F) = \{M : M^T\Omega M = \Omega\}$ has dimension $2m^2 + m$, is contained in $SL(2m, F)$ (every symplectic matrix has determinant $1$, by the Pfaffian), is connected and non-compact, and in dimension two coincides with $SL(2, F)$. The **quaternionic unitary group** $Sp(n)$, of dimension $n(2n+1)$, is compact and is the compact real form of $Sp(2n, \mathbb{C})$; the notation $Sp$ therefore carries two distinct meanings, which the context separates. The symplectic group is generated by elementary matrices acting on a symplectic basis, in every characteristic: the two-pair move $e_k \mapsto e_k + f_{k+1}$, $e_{k+1} \mapsto e_{k+1} + f_k$, the diagonal scaling $e_k \mapsto \beta e_k$, $f_k \mapsto \beta^{-1}f_k$, and the two unipotent moves $e_k \mapsto e_k + \beta f_k$ and $f_k \mapsto f_k + \beta e_k$; the transvections $v \mapsto v + \omega(v, u)u$ are another generating set. This is the set that, read on the standard presentation of a quadratic form, becomes the chain equivalence for quadratic forms in characteristic $2$.
 
 Over an algebraically closed field the simple Lie algebras coming from these groups are the four families $A_n = \mathrm{SL}(n+1)$, $B_n = \mathrm{SO}(2n+1)$, $C_n = \mathrm{Sp}(2n)$ and $D_n = \mathrm{SO}(2n)$, of ranks $n$ and dimensions $n(n+2)$, $n(2n+1)$, $n(2n+1)$ and $n(2n-1)$. $B$ and $C$ are dual families of equal dimension; $D_2$ is not simple, splitting as $A_1 \times A_1$. The compact real forms are $SU(n)$, $SO(2n+1)$, $Sp(n)$, $SO(2n)$, and the split real forms are $SL(n+1, \mathbb{R})$, $SO(n, n+1)$, $Sp(2n, \mathbb{R})$, $SO(n, n)$.
 
-A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(n, r, z)$ with normal form $\operatorname{diag}(I_n, -I_r, 0_z)$, and its isometry group is $U(n, r)$, of real dimension $n^2$, with special subgroup $SU(n, r)$ of dimension $n^2 - 1$. The case $U(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; the three symbols $SU(1, 1)$, $SL(2, \mathbb{R})$ and $Sp(2, \mathbb{R})$ name one group, the split real form of $SL(2, \mathbb{C})$, whose unitary dual is the trivial representation together with the discrete, continuous and complementary series. The series are carried by the homogeneous spaces according to the vector stabiliser: the compact $U(1)$ for the discrete series on the time-like hyperboloid $SU(1,1)/U(1)$, the non-compact boost subgroup for the continuous series on the space-like one, and the compact group $SU(2)$ for the finite multiplets of the sphere $SU(2)/U(1)$.
+A **Hermitian form** has a Hermitian Gram matrix $H = H^{\dagger}$ and a real-valued diagonal $v \mapsto h(v, v)$. By the **inertia theorem for Hermitian forms** it has a unique signature $(n, r, z)$ with normal form $\operatorname{diag}(I_n, -I_r, 0_z)$, and its isometry group is $\mathrm{U}(n, r)$, of real dimension $n^2$, with special subgroup $SU(n, r)$ of dimension $n^2 - 1$. The case $\mathrm{U}(1, 1)$ is non-compact and contains both a hyperbolic and a compact one-parameter subgroup; the three symbols $SU(1, 1)$, $SL(2, \mathbb{R})$ and $Sp(2, \mathbb{R})$ name one group, the split real form of $SL(2, \mathbb{C})$, whose unitary dual is the trivial representation together with the discrete, continuous and complementary series. The series are carried by the homogeneous spaces according to the vector stabiliser: the compact $\mathrm{U}(1)$ for the discrete series on the time-like hyperboloid $SU(1,1)/\mathrm{U}(1)$, the non-compact boost subgroup for the continuous series on the space-like one, and the compact group $SU(2)$ for the finite multiplets of the sphere $SU(2)/\mathrm{U}(1)$.
 
-The compact and split forms of the symplectic family meet in the unitary group: on $\mathbb{R}^{2m}$ with the standard alternating and Euclidean forms, $Sp(2m, \mathbb{R}) \cap O(2m) = U(m)$, because a real matrix that is both symplectic and orthogonal commutes with $\Omega$ and is therefore complex-linear. Hence $U(m)$ is a maximal compact subgroup of $Sp(2m, \mathbb{R})$, of dimension $m^2$ inside the ambient dimension $2m^2 + m$.
+The compact and split forms of the symplectic family meet in the unitary group: on $\mathbb{R}^{2m}$ with the standard alternating and Euclidean forms, $Sp(2m, \mathbb{R}) \cap O(2m) = \mathrm{U}(m)$, because a real matrix that is both symplectic and orthogonal commutes with $\Omega$ and is therefore complex-linear. Hence $\mathrm{U}(m)$ is a maximal compact subgroup of $Sp(2m, \mathbb{R})$, of dimension $m^2$ inside the ambient dimension $2m^2 + m$.
 
 ## Summary of Notation
 
@@ -302,12 +302,12 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $\overline{\cdot}$, ${}^{\dagger}$ | Complex conjugation of coefficients; conjugate transpose (Hermitian conjugation) |
 | $\operatorname{U}(V, h)$ | Unitary group of a Hermitian form |
 | $\operatorname{SU}(V, h)$, $SU(n)$ | Special unitary group, determinant one |
-| $U(n)$ | Standard unitary group, $U^{\dagger}U = I$ |
+| $\mathrm{U}(n)$ | Standard unitary group, $U^{\dagger}U = I$ |
 | $H$ | Hermitian Gram matrix, $H^{\dagger} = H$, $h(u,v) = u^{\dagger}Hv$ |
-| $U(n, r)$, $SU(n, r)$ | Unitary group of a Hermitian form of signature $(n, r)$, and its determinant-one subgroup |
+| $\mathrm{U}(n, r)$, $SU(n, r)$ | Unitary group of a Hermitian form of signature $(n, r)$, and its determinant-one subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Split (normal) real form of $\mathrm{SL}(2,\mathbb{C})$, of rank one, under three names |
 | $D_n$, $j=-\tfrac12+is$ | Discrete and continuous series of $SU(1,1)$ |
-| $S^2=SU(2)/U(1)$, $H^\pm=SU(1,1)/U(1)$ | Sphere and time-like hyperboloid as homogeneous spaces |
+| $S^2=SU(2)/\mathrm{U}(1)$, $H^\pm=SU(1,1)/\mathrm{U}(1)$ | Sphere and time-like hyperboloid as homogeneous spaces |
 | $H^{sl}$ | One-sheeted space-like hyperboloid; non-compact vector stabiliser |
 | $n, r, z$ | Signature of a Hermitian form, $n + r + z = n$ |
 | $I_n$ | Identity matrix of size $n$ |

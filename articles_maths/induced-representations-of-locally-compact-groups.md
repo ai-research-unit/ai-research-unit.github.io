@@ -49,7 +49,7 @@ $$
 \langle f_1, f_2\rangle = \int_{G/H} \langle f_1(g), f_2(g)\rangle_V\; d\nu(gH)
 $$
 
-is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the **normalised** representation $\sigma^{\mathrm{norm}}(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces, normalised once and for all; with the type $\sigma^{\mathrm{norm}}^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$
+is a $G$-invariant inner product on the continuous $H$-equivariant functions of type $\sigma^{-1}$ with compact support modulo $H$. In general one replaces $\sigma$ by the **normalised** representation $\sigma^{\mathrm{norm}}(h) = \bigl(\Delta_G(h)/\Delta_H(h)\bigr)^{1/2}\sigma(h)$ and takes for $\nu$ the quasi-invariant measure on $G/H$ of *Locally Compact Groups and Haar Measure*, §Quotients and Homogeneous Spaces, normalised once and for all; with the type ${\sigma^{\mathrm{norm}}}^{-1}$ the same formula is again a $G$-invariant inner product. In either case the integrand is well defined, because for $h \in H$
 
 $$
 \langle f_1(gh), f_2(gh)\rangle_V = \langle \sigma(h)^{-1}f_1(g), \sigma(h)^{-1}f_2(g)\rangle_V = \langle f_1(g), f_2(g)\rangle_V ,

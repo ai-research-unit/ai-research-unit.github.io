@@ -13,14 +13,14 @@ Throughout, $R$ is a topological ring, commutative with $1 \neq 0$ unless stated
 
 **Definition.** A **topological $R$-module** is an $R$-module $M$ equipped with a topology such that the addition $M \times M \to M$ and the scalar multiplication $R \times M \to M$ are continuous. Here $R$ is a topological ring and $R \times M$ and $M \times M$ carry the product topologies.
 
-**Proposition.** (i) The topology of a topological module is translation-invariant: the maps $x \mapsto x+a$ are homeomorphisms, so the topology is determined by the neighbourhoods of $0$. (ii) The negation $x \mapsto -x$ is a homeomorphism. (iii) If $U$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V+V \subseteq U$, and there is a neighbourhood of $0$ contained in $U$ that is closed.
+**Proposition.** (i) The topology of a topological module is translation-invariant: the maps $x \mapsto x+a$ are homeomorphisms, so the topology is determined by the neighbourhoods of $0$. (ii) The negation $x \mapsto -x$ is a homeomorphism. (iii) If $\Omega$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V+V \subseteq \Omega$, and there is a neighbourhood of $0$ contained in $\Omega$ that is closed.
 
-*Proof.* (i) and (ii) hold because the group operations are continuous bijections with continuous inverses. (iii) Continuity of addition at $(0,0)$ gives $V+V\subseteq U$; the existence of a closed neighbourhood inside a given one uses the regularity of the additive topological group, obtained by iterating the neighbourhood condition.
+*Proof.* (i) and (ii) hold because the group operations are continuous bijections with continuous inverses. (iii) Continuity of addition at $(0,0)$ gives $V+V\subseteq \Omega$; the existence of a closed neighbourhood inside a given one uses the regularity of the additive topological group, obtained by iterating the neighbourhood condition.
 
 **Definition.** A **fundamental system of neighbourhoods of $0$** is a family $\mathcal{B}$ of neighbourhoods of $0$ such that every neighbourhood of $0$ contains a member of $\mathcal{B}$. A topological module is **Hausdorff** (or **separated**) if and only if
 
 $$
-\bigcap_{U \in \mathcal{B}} U=\{0\} ,
+\bigcap_{\Omega \in \mathcal{B}} \Omega=\{0\} ,
 $$
 
 and it is **discrete** if $\{0\}$ is a neighbourhood of $0$.
@@ -32,14 +32,14 @@ and it is **discrete** if $\{0\}$ is a neighbourhood of $0$.
 **Definition.** A topology on $M$ is **linear** if $M$ has a fundamental system of neighbourhoods of $0$ consisting of submodules. A topology on $R$ or on $M$ given by a descending chain of submodules
 
 $$
-M=U_0 \supseteq U_1 \supseteq U_2 \supseteq \cdots
+M=\Omega_0 \supseteq \Omega_1 \supseteq \Omega_2 \supseteq \cdots
 $$
 
-is the topology in which a set is open if it is a union of cosets of the $U_n$; equivalently, the $U_n$ form a fundamental system of neighbourhoods of $0$.
+is the topology in which a set is open if it is a union of cosets of the $\Omega_n$; equivalently, the $\Omega_n$ form a fundamental system of neighbourhoods of $0$.
 
-**Proposition.** A descending chain of submodules $M=U_0 \supseteq U_1 \supseteq \cdots$ defines a topology in which a set is open exactly when it is a union of cosets of the $U_n$, and the $U_n$ are then a fundamental system of neighbourhoods of $0$. Addition and negation are continuous, so the topology is translation-invariant, and it is Hausdorff if and only if $\bigcap_nU_n=0$. The closure of a submodule $N$ is $\overline N=\bigcap_n(N+U_n)$, and the quotient topology on $M/N$ is linear, with neighbourhoods of zero the images of the $U_n$. Scalar multiplication is continuous when the topology on $R$ is discrete, and more generally when $U_n=I^nM$ for an ideal $I$ and $R$ carries the $I$-adic topology; for an arbitrary topological ring it can fail, as the discrete topology on $M=\mathbb{R}$ over $R=\mathbb{R}$ shows: at the point $(0,1)$ the product is $0$, while the elements $\lambda \cdot 1$ for arbitrarily small nonzero $\lambda$ are nonzero, so no neighbourhood of $(0,1)$ maps into the open set $\{0\}$.
+**Proposition.** A descending chain of submodules $M=\Omega_0 \supseteq \Omega_1 \supseteq \cdots$ defines a topology in which a set is open exactly when it is a union of cosets of the $\Omega_n$, and the $\Omega_n$ are then a fundamental system of neighbourhoods of $0$. Addition and negation are continuous, so the topology is translation-invariant, and it is Hausdorff if and only if $\bigcap_nU_n=0$. The closure of a submodule $N$ is $\overline N=\bigcap_n(N+\Omega_n)$, and the quotient topology on $M/N$ is linear, with neighbourhoods of zero the images of the $\Omega_n$. Scalar multiplication is continuous when the topology on $R$ is discrete, and more generally when $\Omega_n=I^nM$ for an ideal $I$ and $R$ carries the $I$-adic topology; for an arbitrary topological ring it can fail, as the discrete topology on $M=\mathbb{R}$ over $R=\mathbb{R}$ shows: at the point $(0,1)$ the product is $0$, while the elements $\lambda \cdot 1$ for arbitrarily small nonzero $\lambda$ are nonzero, so no neighbourhood of $(0,1)$ maps into the open set $\{0\}$.
 
-*Proof.* The cosets of the $U_n$ form a basis for a topology, and $U_{n+1}+U_{n+1}\subseteq U_n$ makes addition continuous at $0$, hence everywhere by translation-invariance. Since each $U_n$ is a submodule, $rU_n \subseteq U_n$ for every $r \in R$; taking the first factor of $R \times M$ to be the open singleton $\{r_0\}$ when $R$ is discrete, or the coset $r_0+I^m$ when $R$ is $I$-adic, and the second to be $x_0+U_m$, the terms $r_0u$, $wx_0$ and $wu$ of the product all land in $U_m$, which is the stated continuity. Hausdorffness is the intersection condition, and for the closure, $x \in \overline N$ iff every neighbourhood $x+U_n$ meets $N$, that is, $x \in N+U_n$ for every $n$.
+*Proof.* The cosets of the $\Omega_n$ form a basis for a topology, and $\Omega_{n+1}+\Omega_{n+1}\subseteq \Omega_n$ makes addition continuous at $0$, hence everywhere by translation-invariance. Since each $\Omega_n$ is a submodule, $rU_n \subseteq \Omega_n$ for every $r \in R$; taking the first factor of $R \times M$ to be the open singleton $\{r_0\}$ when $R$ is discrete, or the coset $r_0+I^m$ when $R$ is $I$-adic, and the second to be $x_0+\Omega_m$, the terms $r_0u$, $wx_0$ and $wu$ of the product all land in $\Omega_m$, which is the stated continuity. Hausdorffness is the intersection condition, and for the closure, $x \in \overline N$ iff every neighbourhood $x+\Omega_n$ meets $N$, that is, $x \in N+\Omega_n$ for every $n$.
 
 **Example (the $I$-adic topology).** For an ideal $I \subseteq R$ the chain $M \supseteq IM \supseteq I^2M \supseteq \cdots$ defines the **$I$-adic topology** on $M$; it is linear, and it is Hausdorff exactly when $\bigcap_n I^nM=0$. The completion of this topology is the algebraic $I$-adic completion treated in the companion article of this category on localisation and completion of modules; here it is the topology that is the object of study.
 
@@ -53,21 +53,21 @@ is the topology in which a set is open if it is a union of cosets of the $U_n$; 
 
 ### Completion
 
-**Definition.** A **Cauchy net** in $M$ is a net $(x_\lambda)$ such that for every neighbourhood $U$ of $0$ there is $\lambda_0$ with $x_\lambda-x_\mu \in U$ for $\lambda,\mu \ge \lambda_0$. $M$ is **complete** if every Cauchy net converges, and **separated** if Hausdorff.
+**Definition.** A **Cauchy net** in $M$ is a net $(x_\lambda)$ such that for every neighbourhood $\Omega$ of $0$ there is $\lambda_0$ with $x_\lambda-x_\mu \in \Omega$ for $\lambda,\mu \ge \lambda_0$. $M$ is **complete** if every Cauchy net converges, and **separated** if Hausdorff.
 
-**Theorem (completion).** Let $\mathcal{B}=\{U\}$ be a fundamental system of neighbourhoods of $0$ of a Hausdorff topological module $M$, consisting of submodules and directed downwards. Then the **completion** of $M$ is
+**Theorem (completion).** Let $\mathcal{B}=\{\Omega\}$ be a fundamental system of neighbourhoods of $0$ of a Hausdorff topological module $M$, consisting of submodules and directed downwards. Then the **completion** of $M$ is
 
 $$
-\widehat M=\varprojlim_{U \in \mathcal{B}} M/U ,
+\widehat M=\varprojlim_{\Omega \in \mathcal{B}} M/\Omega ,
 $$
 
 the inverse limit of the discrete quotients; there is a continuous homomorphism $\iota:M \to \widehat M$ with dense image, $\widehat M$ is Hausdorff and complete, and for every complete Hausdorff topological module $N$ and every uniformly continuous homomorphism $f:M \to N$ there is a unique continuous $\widehat f:\widehat M \to N$ with $f=\widehat f \circ \iota$.
 
-*Proof.* The quotients $M/U$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{U \in \mathcal{B}}M/U$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/U$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness.
+*Proof.* The quotients $M/\Omega$ are discrete and the transition maps are the natural projections; the inverse limit is a closed subspace of the product $\prod_{\Omega \in \mathcal{B}}M/\Omega$ of the discrete, hence Hausdorff, quotients, so it is Hausdorff. A Cauchy net in $M$ has a compatible system of images in the $M/\Omega$, and every compatible system lifts: this is the standard construction of the completion of a uniform space, adapted to the additive uniformity. The universal property is verified on the dense image and extended by continuity and uniqueness.
 
 **Proposition.** The completion functor commutes with finite products, and the natural map $\iota$ is an isomorphism exactly when $M$ is complete and Hausdorff. If $i:M' \to M$ is a uniformly continuous injection which is a uniform embedding, then $\widehat{M'} \to \widehat M$ is injective, so completion is left exact on such sequences. For a uniformly continuous injection that is not a uniform embedding, $\widehat{M'} \to \widehat M$ need not be injective, and completion is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma, as the companion article on localisation and completion of modules records.
 
-*Proof.* Finite products of inverse limits are inverse limits of products, and a complete Hausdorff module is its own completion. If $i$ is a uniform embedding, the pullbacks $i^{-1}U$ are a cofinal system of neighbourhoods of $0$ in $M'$, so $\widehat{M'}=\varprojlim_U M'/i^{-1}U$ and, the inverse limit being left exact, the kernel of $\widehat{M'} \to \widehat M$ is $\varprojlim_U\ker(M'/i^{-1}U \to M/U)$; these kernels vanish because $i$ is injective, so the map on completions is injective. The exactness theorem of the companion article on localisation and completion of modules supplies the Noetherian statement.
+*Proof.* Finite products of inverse limits are inverse limits of products, and a complete Hausdorff module is its own completion. If $i$ is a uniform embedding, the pullbacks $i^{-1}\Omega$ are a cofinal system of neighbourhoods of $0$ in $M'$, so $\widehat{M'}=\varprojlim_\Omega M'/i^{-1}\Omega$ and, the inverse limit being left exact, the kernel of $\widehat{M'} \to \widehat M$ is $\varprojlim_\Omega\ker(M'/i^{-1}\Omega \to M/\Omega)$; these kernels vanish because $i$ is injective, so the map on completions is injective. The exactness theorem of the companion article on localisation and completion of modules supplies the Noetherian statement.
 
 ## The $p$-adic Integers
 
@@ -119,7 +119,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 ### Definition
 
-**Definition.** Let $K$ be a topological field. A **topological vector space** over $K$ is a $K$-vector space $V$ with a topology such that addition $V \times V \to V$ and scalar multiplication $K \times V \to V$ are continuous. A subset $B \subseteq V$ is **bounded** if for every neighbourhood $U$ of $0$ there is $\lambda \in K^{\times}$ with $B \subseteq \lambda U$.
+**Definition.** Let $K$ be a topological field. A **topological vector space** over $K$ is a $K$-vector space $V$ with a topology such that addition $V \times V \to V$ and scalar multiplication $K \times V \to V$ are continuous. A subset $B \subseteq V$ is **bounded** if for every neighbourhood $\Omega$ of $0$ there is $\lambda \in K^{\times}$ with $B \subseteq \lambda \Omega$.
 
 **Example.** $\mathbb{R}^n$ and $\mathbb{C}^n$ with the Euclidean topology are topological vector spaces; every normed space is a topological vector space, with neighbourhoods of $0$ the balls $\{x:\|x\|<\varepsilon\}$; the field $K$ with the discrete topology gives the discrete vector spaces, and for $K$ infinite the product $K^{\mathbb{N}}$ with the product topology is a non-discrete topological $K$-vector space, so a discrete field does not force its spaces to be discrete.
 
@@ -135,7 +135,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 **Definition.** A **Fréchet space** is a complete Hausdorff locally convex topological vector space whose topology is metrizable, equivalently whose topology is given by a countable family of seminorms. A Banach space is a Fréchet space whose topology comes from a single norm.
 
-**Example.** (i) $C(X)$ for a locally compact $\sigma$-compact space $X$, with the seminorms $p_K(f)=\sup_{x \in K}|f(x)|$ over compact $K$, is a Fréchet space: the topology of compact convergence, the analogue of the compact-open topology of the first category. (ii) The analytic function spaces — the smooth functions $C^\infty(U)$, the holomorphic functions $\mathcal{O}(\Omega)$ and the Schwartz space $\mathcal{S}(\mathbb{R}^n)$ of rapidly decreasing functions — are Fréchet spaces, and they are Part III's, being defined by the derivative, so they are named here and developed there.
+**Example.** (i) $C(X)$ for a locally compact $\sigma$-compact space $X$, with the seminorms $p_K(f)=\sup_{x \in K}|f(x)|$ over compact $K$, is a Fréchet space: the topology of compact convergence, the analogue of the compact-open topology of the first category. (ii) The analytic function spaces — the smooth functions $C^\infty(\Omega)$, the holomorphic functions $\mathcal{O}(\Omega)$ and the Schwartz space $\mathcal{S}(\mathbb{R}^n)$ of rapidly decreasing functions — are Fréchet spaces, and they are Part III's, being defined by the derivative, so they are named here and developed there.
 
 **Proposition.** A finite-dimensional Hausdorff topological vector space over a complete valued field is isomorphic as a topological vector space to $K^n$ with the product topology, and every linear map between finite-dimensional Hausdorff topological vector spaces is continuous. In particular every norm on a finite-dimensional space induces the same topology.
 
@@ -145,7 +145,7 @@ is profinite, with $\mathbb{Z}$ dense in it.
 
 A topological $R$-module is an $R$-module with a topology making addition and scalar multiplication continuous; the topology is translation-invariant and determined by the neighbourhoods of zero, and it is linear when a fundamental system of these consists of submodules. The linear topology associated to a descending chain of submodules, and in particular the $I$-adic topology with neighbourhoods $I^nM$, is the general framework; a linear topology is Hausdorff exactly when the intersection of the neighbourhoods is zero.
 
-Quotients of topological modules carry the quotient topology and remain topological modules; the completion is the inverse limit $\widehat M=\varprojlim M/U$ over a fundamental system of neighbourhoods, and it is characterised by the universal property for uniformly continuous maps into complete Hausdorff modules, being complete and containing $M$ densely. The completion functor preserves finite products and is left exact on uniform embeddings of topological modules, and it is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma.
+Quotients of topological modules carry the quotient topology and remain topological modules; the completion is the inverse limit $\widehat M=\varprojlim M/\Omega$ over a fundamental system of neighbourhoods, and it is characterised by the universal property for uniformly continuous maps into complete Hausdorff modules, being complete and containing $M$ densely. The completion functor preserves finite products and is left exact on uniform embeddings of topological modules, and it is not exact in general; on finitely generated modules over a Noetherian ring with the $I$-adic topology it is exact, by the Artin–Rees lemma.
 
 The $p$-adic integers $\mathbb{Z}_p=\varprojlim_n\mathbb{Z}/p^n\mathbb{Z}$ are the completion of $\mathbb{Z}$ in the $(p)$-adic topology and also in the metric of $|\cdot|_p$, with the strong triangle inequality; $\mathbb{Z}_p$ is a compact Hausdorff totally disconnected complete local domain with maximal ideal $p\mathbb{Z}_p$ and residue field $\mathbb{F}_p$, its field of fractions is $\mathbb{Q}_p$, and $\widehat{\mathbb{Z}}=\prod_p\mathbb{Z}_p$. Profinite modules are inverse limits of finite discrete modules and are exactly the compact Hausdorff totally disconnected complete modules, and over a Noetherian ring the $I$-adic completion of a finitely generated module is complete, Hausdorff and separated.
 
@@ -157,15 +157,15 @@ A topological vector space over a topological field is the vector-space case of 
 |---|---|
 | $R$ | a topological ring |
 | $M$ | a topological $R$-module |
-| $\mathcal{B}$, $U$ | fundamental system of neighbourhoods of $0$ |
+| $\mathcal{B}$, $\Omega$ | fundamental system of neighbourhoods of $0$ |
 | $I^nM$ | $I$-adic neighbourhoods of zero |
-| $\widehat M = \varprojlim M/U$ | completion |
+| $\widehat M = \varprojlim M/\Omega$ | completion |
 | $\mathbb{Z}_p$, $\mathbb{Q}_p$ | $p$-adic integers and numbers |
 | $\widehat{\mathbb{Z}} = \prod_p\mathbb{Z}_p$ | profinite completion of $\mathbb{Z}$ |
 | $|\cdot|_p$, $v_p$ | $p$-adic absolute value and valuation |
 | $K$ | a topological field |
 | $p$, $\mathcal{P}$ | seminorm and family of seminorms |
-| $C^\infty(U)$, $\mathcal{S}(\mathbb{R}^n)$ | Fréchet spaces of functions |
+| $C^\infty(\Omega)$, $\mathcal{S}(\mathbb{R}^n)$ | Fréchet spaces of functions |
 
 ## Further Reading
 

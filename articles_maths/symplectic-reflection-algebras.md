@@ -77,7 +77,7 @@ is an isomorphism of vector spaces; the algebra has the **triangular decompositi
 
 **Proof sketch.** Etingof and Ginzburg embed $H_{1,c}(V)$ into the algebra of differential-reflection operators on $V$: on the polynomial ring $K[V] = S(V^*)$ the elements of $V$ act as the first-order operators
 $$
-D_x = \partial_x - \sum_{s \in S} c(s)\,\frac{\omega_s(x,\alpha_s)}{\alpha_s}\, s ,
+D_x = \partial/\partial x - \sum_{s \in S} c(s)\,\frac{\omega_s(x,\alpha_s)}{\alpha_s}\, s ,
 $$
 where $\alpha_s$ is a linear form whose zero set is the fixed hyperplane of $s$ and the fraction is the algebraic division by a linear form in the localised ring; the identities $D_x D_y - D_y D_x = \omega(x,y) - \sum_s c(s)\omega_s(x,y)s$ are verified from the transformation law of the $D_x$ under the reflections, and the embedding of $S(V^*)$ by multiplication closes the algebra. Since the operators $D_x$ reduce modulo the reflection terms to the partial derivatives, the associated graded of the image is $S(V) \rtimes G$, which gives the PBW property for $t = 1$; the substitution $x \mapsto t^{1/2}x$ for the elements of $V$ rescales the relation to give every $t \neq 0$, and the case $t = 0$ is the associated graded case. The details are in the cited paper.
 

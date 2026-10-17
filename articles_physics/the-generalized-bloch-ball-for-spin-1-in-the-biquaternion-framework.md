@@ -5,7 +5,7 @@
 For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive, trace-one elements of the Hermitian subspace $\mathbb{M}_+$, and that set is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
-\tilde\rho=\tfrac{1}{2}\left(e_0+i\vec r\right),\qquad |\vec r|\le 1,
+\tilde\rho=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
 $$
 
 the state space is the closed unit ball, purity is its boundary, and the pure states are at once the idempotents, the extreme rays of the positive cone, and the zero divisors at trace one. The Bloch ball is a canonical object of the algebra because the algebra supplies the cone.
@@ -20,7 +20,7 @@ Throughout, $\hbar=1$ in the geometric formulae, so that the spin-$1$ matrices h
 
 ## The Qubit Bloch Ball as the Reference Point
 
-It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_0+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$; its biquaternion norm is
+It is worth stating the reference result in the form that will be generalised. In $\mathbb{M}_+$, an element is written $\tilde H=h_0e_t+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$; its biquaternion norm is
 
 $$
 \langle\tilde H\rangle_{\natural}=h_0^2-|\vec h|^2 ,
@@ -29,7 +29,7 @@ $$
 of signature $(1,3)$, and the positive elements of $\mathbb{M}_+$ are exactly the elements of the closed future cone, $\langle\tilde H\rangle_{\natural}\ge0$ with $h_0\ge0$. The trace-one hyperplane is $\mathrm{Sc}(\tilde H)=\tfrac12$, and the states are the intersection of that hyperplane with the cone,
 
 $$
-\tilde\rho=\tfrac{1}{2}\left(e_0+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
+\tilde\rho=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h,\qquad |\vec r|^2\le1 ,
 $$
 
 with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde\rho\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde\rho$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
@@ -46,13 +46,13 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 
 ### The operators
 
-The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{ie_1,ie_2,ie_3\}$ of $\mathbb{B}$,
+The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
 \mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m),
 $$
 
-so that $\tilde J^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
+so that $\tilde J^{(\mathrm{adj})}_k=\mathrm{ad}_{\tilde S_k}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
 
 $$
 [F_i,F_j]=i\hbar\,\epsilon_{ijk}F_k,\qquad F_1^2+F_2^2+F_3^2=2\hbar^2 I_3 ,
@@ -63,10 +63,10 @@ with eigenvalues of each $F_k$ equal to $\hbar$ times $\{+1,0,-1\}$.
 A second and equivalent construction uses two fundamental factors,
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(ie_k\otimes e_0+e_0\otimes ie_k\right),
+\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
-which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $P_{\mathrm{sym}}=\tfrac14(3e_0\otimes e_0-\sum_ke_k\otimes e_k)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
+which is the total spin operator of the two-spin problem. On the three-dimensional symmetric subspace — the range of $P_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k)$ — it acts irreducibly as the spin-$1$ operators above, and on the one-dimensional antisymmetric subspace it acts as zero. The two constructions agree; the first exhibits the spin-$1$ operators as the algebra's own inner derivations, the second as a composite of two fundamental systems.
 
 ### The sector where the states live
 
@@ -76,7 +76,7 @@ $$
 \tilde\rho\ge0,\qquad \mathrm{Tr}_{2Q}(\tilde\rho)=1,\qquad P_{\mathrm{asym}}\,\tilde\rho\,P_{\mathrm{asym}}=0 ,
 $$
 
-where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $P_{\mathrm{asym}}=\tfrac14(e_0\otimes e_0+\sum_ke_k\otimes e_k)$ is the singlet projector. The last condition says that the support of $\tilde\rho$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric projector**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
+where $\mathrm{Tr}_{2Q}$ is the trace on $\mathbb{B}\otimes\mathbb{B}$ and $P_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_k\vec e_k\otimes \vec e_k)$ is the singlet projector. The last condition says that the support of $\tilde\rho$ lies in the symmetric subspace; the spin-$1$ state space is therefore **the face of the two-qubit state space orthogonal to the antisymmetric projector**. This is the precise sense in which spin-$1$ states are two-qubit states with no singlet component.
 
 For the geometry it is convenient to work in the three-dimensional matrix realisation that $\mathsf{M}_2\otimes\mathsf{M}_2$ provides on the symmetric sector. There the states are the $3\times3$ Hermitian, positive, unit-trace matrices. The framework's Born rule reduces on the sector to $\mathrm{tr}(\rho P)$ for the projector $P$ of a pure state, and observables are the Hermitian $3\times3$ matrices obtained from the symmetric elements of $\mathbb{B}\otimes\mathbb{B}$.
 
@@ -221,7 +221,7 @@ $$
 \langle\vec F\rangle=\vec u,\qquad |\vec u|=1 ,
 $$
 
-and they are obtained from the highest-weight state by the rotation that carries $\vec u_3$ to $\vec u$. In the three-level system they have a closed form in the algebra. With $M=\vec u\cdot\vec F$ and $P_0=|1,1\rangle\langle1,1|$,
+and they are obtained from the highest-weight state by the rotation that carries $\vec u_z$ to $\vec u$. In the three-level system they have a closed form in the algebra. With $M=\vec u\cdot\vec F$ and $P_0=|1,1\rangle\langle1,1|$,
 
 $$
 \rho_{\mathrm{coh}}(\vec u)=\tfrac{1}{2}\left(M^2+M\right),
@@ -236,7 +236,7 @@ The coherent states have three equivalent descriptions, and the equivalence is t
 $$
   \rho_{\mathrm{coh}}(\vec u)=P_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(\vec u)\right)P_{\mathrm{sym}},
 $$
-  with $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
+  with $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ the qubit idempotent of the companion article; the projection has unit trace and was verified to agree with the closed form for arbitrary directions;
 - they are the image of the degree-two Veronese embedding of the Bloch sphere in $\mathbb{CP}^2$.
 
 The last description fixes the topology: the coherent states form a two-sphere $S^2$ inside the four-dimensional pure-state manifold; the map $\vec u\mapsto\rho_{\mathrm{coh}}(\vec u)$ is one-to-one on the Bloch sphere (the phase of the state vector drops out in the projector), and its image is the degree-two Veronese surface in $\mathbb{CP}^2$. The Bloch vector of a coherent state has $|\vec b|=1$, so the coherent states lie on the pure-state sphere; but not every pure state is coherent, the obstruction being the dimension count $4>2$.
@@ -291,7 +291,7 @@ The article established the following.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace; positive cone $=$ future cone of $N$ |
 | $\langle\tilde H\rangle_{\natural}=h_0^2-\lvert\vec h\rvert^2$ | Biquaternion norm, signature $(1,3)$ |
-| $\tilde\rho=\tfrac12(e_0+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
+| $\tilde\rho=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
 | $P_{\mathrm{sym}},P_{\mathrm{asym}}$ | Triplet and singlet projectors of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_k$ | Spin-$1$ operators, $[F_i,F_j]=i\hbar\epsilon_{ijk}F_k$ |
 | $\mathrm{ad}_{\tilde S_k}$ | Adjoint action on the traceless part $W$ |

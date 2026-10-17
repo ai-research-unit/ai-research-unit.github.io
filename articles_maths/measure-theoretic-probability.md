@@ -239,7 +239,7 @@ Convergence of random variables has four modes — almost surely, in probability
 | $\operatorname{Var}$, $\operatorname{Cov}$, $\rho$ | Variance, covariance, correlation |
 | $\|X\|_p$ | $L^{n}$ norm $(\mathbb{E}\|X\|^p)^{1/p}$ |
 | $\mathbf{1}_A$, $\delta_x$ | Indicator of $A$, point mass at $x$ |
-| $X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^{n}$, $\xrightarrow{d}$ | The four modes of convergence |
+| $X_n \to X$ a.s., $\xrightarrow{\mathbb{P}}$, $\xrightarrow{L^{}}$, $\xrightarrow{d}$ | The four modes of convergence |
 | $\mu_n \to \mu$ weakly | $\int f\,d\mu_n \to \int f\,d\mu$ for bounded continuous $f$ |
 | $\varphi_X(t) = \mathbb{E}[\exp(i\langle t,X\rangle)]$ | Characteristic function |
 | $M_X$, $\kappa_n$ | Moment generating function, cumulants |

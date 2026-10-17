@@ -11,7 +11,7 @@ of Minkowski space. The question this article answers is how much of that group 
 The homogeneous factor is contained exactly. The unit-norm biquaternions are $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^+(1,3)$, and rotor conjugation
 $$
 \tilde{Q}\;\longmapsto\;\tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
-\qquad \tilde{Q}\in\mathbb{M}_-,\quad \tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0,
+\qquad \tilde{Q}\in\mathbb{M}_-,\quad \tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t,
 $$
 is that group's action on the material sector $\mathbb{M}_-$. This is the content of the companion article *The Biquaternion Lorentz Group — Structure and Representations*, and it is recalled below rather than rederived.
 
@@ -24,7 +24,7 @@ with the homogeneous factor acting on the translations by rotor conjugation. The
 
 Whether the translation can nonetheless be represented *inside* an algebra of the same kind — as an additive shift in a suitable module, or as a rotor after adjoining new generators, as the dual quaternions do for Euclidean rigid motions — is the open question. The article states it as open and does not resolve it.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_1e_2=e_3$, and the scalar imaginary is $i$, which commutes with the quaternion units. The anti-Hermitian and Hermitian subspaces are
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the scalar imaginary is $i$, which commutes with the quaternion units. The anti-Hermitian and Hermitian subspaces are
 $$
 \mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\},\qquad
 \mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\},
@@ -38,7 +38,7 @@ $$
 \mathrm{Ad}:\ SL(2,\mathbb{C})\longrightarrow SO^+(1,3),\qquad
 \mathrm{Ad}(\tilde{\Lambda}):\ \tilde{Q}\longmapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}
 $$
-is a surjective two-to-one homomorphism with kernel $\{\pm e_0\}$; the two-to-one cover is the reason the biquaternion description of the Lorentz group is a description of $SL(2,\mathbb{C})$ and not of $SO^+(1,3)$ directly. The homomorphism property
+is a surjective two-to-one homomorphism with kernel $\{\pm e_t\}$; the two-to-one cover is the reason the biquaternion description of the Lorentz group is a description of $SL(2,\mathbb{C})$ and not of $SO^+(1,3)$ directly. The homomorphism property
 $$
 \mathrm{Ad}(\tilde{\Lambda}_2\tilde{\Lambda}_1)=\mathrm{Ad}(\tilde{\Lambda}_2)\circ\mathrm{Ad}(\tilde{\Lambda}_1)
 $$
@@ -78,7 +78,7 @@ with the right factor applied first. Several features of this law are worth isol
 
 - **The rotors multiply.** The homogeneous slot composes by biquaternion multiplication, as in the parent article.
 - **The translations are not simply added.** The first displacement is carried through the second rotor before the second displacement is added, so the translation slot of the product is $\mathrm{Ad}(\tilde{\Lambda}_2)\tilde{a}_1+\tilde{a}_2$, not $\tilde{a}_1+\tilde{a}_2$.
-- **The identity** is $(e_0,0)$, and the **inverse** is
+- **The identity** is $(e_t,0)$, and the **inverse** is
 $$
 (\tilde{\Lambda},\tilde{a})^{-1}=\bigl(\tilde{\Lambda}^{\natural},\ -\tilde{\Lambda}^{\natural}\,\tilde{a}\,\overline{\tilde{\Lambda}}\bigr),
 $$
@@ -112,14 +112,14 @@ with the Lorentz generators acting on $P_\mu$ through the vector representation 
 
 Write $N$ for the set of pure translations,
 $$
-N=\{(e_0,\tilde{a}):\tilde{a}\in\mathbb{M}_-\}\cong(\mathbb{M}_-,+)\cong\mathbb{R}^4 .
+N=\{(e_t,\tilde{a}):\tilde{a}\in\mathbb{M}_-\}\cong(\mathbb{M}_-,+)\cong\mathbb{R}^4 .
 $$
 $N$ is an abelian subgroup, and it is **normal**. To see the conjugation action, let $\tilde{b}\in\mathbb{M}_-$ and consider $g=(\tilde{\Lambda},\tilde{b})$. Using the law and the inverse,
 $$
-(\tilde{\Lambda},\tilde{b})\,(e_0,\tilde{a})\,(\tilde{\Lambda},\tilde{b})^{-1}
-=\bigl(e_0,\ \tilde{\Lambda}\tilde{a}\tilde{\Lambda}^{*}\bigr).
+(\tilde{\Lambda},\tilde{b})\,(e_t,\tilde{a})\,(\tilde{\Lambda},\tilde{b})^{-1}
+=\bigl(e_t,\ \tilde{\Lambda}\tilde{a}\tilde{\Lambda}^{*}\bigr).
 $$
-The displacement slot returns to $e_0$: the residual translations $\tilde{b}$ cancel, and what survives is exactly the rotor conjugation of $\tilde{a}$. In other words, the homogeneous factor acts on the translation subgroup by the **vector representation** $\mathrm{Ad}$ on $\mathbb{M}_-$ — the same action that defines four-vectors. The semidirect product is therefore
+The displacement slot returns to $e_t$: the residual translations $\tilde{b}$ cancel, and what survives is exactly the rotor conjugation of $\tilde{a}$. In other words, the homogeneous factor acts on the translation subgroup by the **vector representation** $\mathrm{Ad}$ on $\mathbb{M}_-$ — the same action that defines four-vectors. The semidirect product is therefore
 $$
 P_+^{\uparrow}\cong SL(2,\mathbb{C})\ltimes_{\mathrm{Ad}}\mathbb{R}^4,
 $$
@@ -127,11 +127,11 @@ which is the double cover of the restricted Poincaré group $SO^+(1,3)\ltimes\ma
 
 The product is **not** direct. A translation and a homogeneous transformation fail to commute:
 $$
-(\tilde{\Lambda},0)\circ(e_0,\tilde{a})=(\tilde{\Lambda},\tilde{\Lambda}\tilde{a}\tilde{\Lambda}^{*}),
+(\tilde{\Lambda},0)\circ(e_t,\tilde{a})=(\tilde{\Lambda},\tilde{\Lambda}\tilde{a}\tilde{\Lambda}^{*}),
 \qquad
-(e_0,\tilde{a})\circ(\tilde{\Lambda},0)=(\tilde{\Lambda},\tilde{a}),
+(e_t,\tilde{a})\circ(\tilde{\Lambda},0)=(\tilde{\Lambda},\tilde{a}),
 $$
-and these agree only when $\tilde{a}$ is fixed by $\mathrm{Ad}(\tilde{\Lambda})$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde{\Lambda})\tilde{a}-\tilde{a}$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde{B}$ along $e_1$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{a}=0.4\,ie_0+0.25e_1-0.35e_2+0.15e_3$ gives $\mathrm{Ad}(\tilde{B})\tilde{a}-\tilde{a}=-0.0834\,ie_0-0.3023\,e_1$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
+and these agree only when $\tilde{a}$ is fixed by $\mathrm{Ad}(\tilde{\Lambda})$. Equivalently, the commutator of a pure Lorentz transformation with a pure translation is the pure translation by $\mathrm{Ad}(\tilde{\Lambda})\tilde{a}-\tilde{a}$. For a boost and a displacement transverse to it this is nonzero whenever the displacement has a time component; for the boost $\tilde{B}$ along $\vec e_x$ with rapidity $\psi=0.9$ used below, a displacement $\tilde{a}=0.4\,ie_t+0.25\vec e_x-0.35\vec e_y+0.15\vec e_z$ gives $\mathrm{Ad}(\tilde{B})\tilde{a}-\tilde{a}=-0.0834\,ie_t-0.3023\,\vec e_x$. The nonvanishing of this commutator is the group-theoretic content of the statement that translations are not merely added: a change of frame drags the origin with it.
 
 ## A Composition Checked Directly
 
@@ -141,35 +141,35 @@ g_1=(\tilde{R},\tilde{a}_1),\qquad g_2=(\tilde{B},\tilde{a}_2),
 $$
 with
 $$
-\tilde{R}=\cos(0.4)+\sin(0.4)\,e_3,
+\tilde{R}=\cos(0.4)+\sin(0.4)\,\vec e_z,
 \qquad
-\tilde{B}=\cosh(0.45)+i\sinh(0.45)\,e_1,
+\tilde{B}=\cosh(0.45)+i\sinh(0.45)\,\vec e_x,
 $$
-a rotation about $e_3$ by $\theta=0.8$ and a boost along $e_1$ by rapidity $\psi=0.9$, and with displacements
+a rotation about $\vec e_z$ by $\theta=0.8$ and a boost along $\vec e_x$ by rapidity $\psi=0.9$, and with displacements
 $$
-\tilde{a}_1=0.5\,i\,e_0+0.7\,e_1,\qquad
-\tilde{a}_2=-0.3\,i\,e_0+0.6\,e_2 .
+\tilde{a}_1=0.5\,i\,e_t+0.7\,\vec e_x,\qquad
+\tilde{a}_2=-0.3\,i\,e_t+0.6\,\vec e_y .
 $$
 Thus $g_1$ is a rotation combined with a translation and $g_2$ is a boost combined with a translation in an independent spatial direction.
 
 The composed law predicts the pair $g_2\circ g_1=(\tilde{B}\tilde{R},\ \tilde{B}\tilde{a}_1\tilde{B}^{*}+\tilde{a}_2)$ with
 $$
-\tilde{B}\tilde{R}=1.0159+0.4286\,ie_1-0.1812\,ie_2+0.4295\,e_3,
+\tilde{B}\tilde{R}=1.0159+0.4286\,i\vec e_x-0.1812\,i\vec e_y+0.4295\,\vec e_z,
 $$
 $$
-\tilde{B}\tilde{a}_1\tilde{B}^{*}+\tilde{a}_2=-0.3020\,ie_0+0.4899\,e_1+0.6000\,e_2 .
+\tilde{B}\tilde{a}_1\tilde{B}^{*}+\tilde{a}_2=-0.3020\,ie_t+0.4899\,\vec e_x+0.6000\,\vec e_y .
 $$
-Applying the two maps in turn to $\tilde{Q}=0.2\,ie_0+0.3\,e_1+0.4\,e_2+0.5\,e_3$, and the composed map to the same point, gives identical results. Two features make the structure visible.
+Applying the two maps in turn to $\tilde{Q}=0.2\,ie_t+0.3\,\vec e_x+0.4\,\vec e_y+0.5\,\vec e_z$, and the composed map to the same point, gives identical results. Two features make the structure visible.
 
 First, the boost acting on the displacement has changed both its time component and its spatial component: the pair $(0.5i,\,0.7,\,0,\,0)$ has become $(-0.0020i,\,0.4899,\,0,\,0)$. A shift of origin is itself a four-vector, and its components mix under a boost; this is the relativity of simultaneity appearing as a statement about the composition of frame transformations. The second displacement $\tilde{a}_2$ is simply added afterwards, as the law requires.
 
-Second, the rotor of the composite is not symmetric in the two factors. Reversing the order gives $\tilde{R}\tilde{B}=1.0159+0.4286\,ie_1+0.1812\,ie_2+0.4295\,e_3$: the same angle, but the opposite sign on the $ie_2$ term. This is the Thomas–Wigner rotation of the parent article, entering here through the sign of one component of the composite rotor. The group law reproduces it without being told to.
+Second, the rotor of the composite is not symmetric in the two factors. Reversing the order gives $\tilde{R}\tilde{B}=1.0159+0.4286\,i\vec e_x+0.1812\,i\vec e_y+0.4295\,\vec e_z$: the same angle, but the opposite sign on the $i\vec e_y$ term. This is the Thomas–Wigner rotation of the parent article, entering here through the sign of one component of the composite rotor. The group law reproduces it without being told to.
 
 ## The Frame Reading
 
 A biquaternion **frame** is the data of an orientation and a state of motion together with an origin: a rotor $\tilde{\Lambda}$ that carries the reference frame to the frame in question, and a displacement $\tilde{a}$ that carries the reference origin to its origin. A Poincaré transformation is a change of frame, and the pair $(\tilde{\Lambda},\tilde{a})$ is exactly that change. In this interpretation the two slots have distinct jobs: the rotor is a multiplicative object, an element of the group of unit-norm biquaternions, while the displacement is an additive object, an element of the vector space $\mathbb{M}_-$. The group law says that frame changes compose in the familiar way — orientations compose multiplicatively, origins transform as four-vectors and then add.
 
-The rotor attached to a frame is not independent of its state of motion. For a frame whose four-velocity is $\tilde{V}=\gamma(ic\,e_0+\vec v)$, the boost rotor that carries the rest frame to it is
+The rotor attached to a frame is not independent of its state of motion. For a frame whose four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, the boost rotor that carries the rest frame to it is
 $$
 \tilde{\Lambda}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}},
 $$
@@ -177,9 +177,9 @@ the square root being multivalued by sign, with the branch selected by $\mathrm{
 
 ## What the Frame Captures, and What It Does Not
 
-**Captured exactly.** The biquaternion algebra contains the connected, restricted Lorentz group: its unit-norm elements are $SL(2,\mathbb{C})$, its conjugation action on $\mathbb{M}_-$ is the vector representation, and the covering homomorphism onto $SO^+(1,3)$ is two-to-one with kernel $\{\pm e_0\}$. The material sector $\mathbb{M}_-$ carries the four-vectors, their interval, and the light cone as the zero-divisor set. Because the semidirect product is determined by $SL(2,\mathbb{C})$ together with the representation $\mathrm{Ad}$ on $\mathbb{M}_-$, the biquaternion frame determines the full restricted Poincaré group once the translation factor is supplied; in that precise sense the group is a property of the algebra even though its elements are pairs rather than rotors.
+**Captured exactly.** The biquaternion algebra contains the connected, restricted Lorentz group: its unit-norm elements are $SL(2,\mathbb{C})$, its conjugation action on $\mathbb{M}_-$ is the vector representation, and the covering homomorphism onto $SO^+(1,3)$ is two-to-one with kernel $\{\pm e_t\}$. The material sector $\mathbb{M}_-$ carries the four-vectors, their interval, and the light cone as the zero-divisor set. Because the semidirect product is determined by $SL(2,\mathbb{C})$ together with the representation $\mathrm{Ad}$ on $\mathbb{M}_-$, the biquaternion frame determines the full restricted Poincaré group once the translation factor is supplied; in that precise sense the group is a property of the algebra even though its elements are pairs rather than rotors.
 
-**Not captured as rotors.** The translation is additive. It is not a conjugation and not a product of rotors, and no faithful homomorphism of the Poincaré group into $\mathbb{B}^\times$ exists at all; the dimension count settles this. The discrete inversions are also outside the connected rotor group: the spatial inversion $t\mapsto t$, $\vec x\mapsto-\vec x$ is implemented on $\mathbb{M}_-$ by quaternion conjugation $\tilde{Q}\mapsto\tilde{Q}^{\natural}$, which is an algebra **anti**-automorphism, not an inner automorphism, and it is this that places spatial inversion outside $SL(2,\mathbb{C})$. The cover of the Lorentz group is therefore a cover of its connected part, and an extension of the group by spatial inversion requires that anti-automorphism as well.
+**Not captured as rotors.** The translation is additive. It is not a conjugation and not a product of rotors, and no faithful homomorphism of the Poincaré group into $\mathbb{B}^\times$ exists at all; the dimension count settles this. The discrete inversions are also outside the connected rotor group: the spatial inversion $t\mapsto t$, $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is implemented on $\mathbb{M}_-$ by quaternion conjugation $\tilde{Q}\mapsto\tilde{Q}^{\natural}$, which is an algebra **anti**-automorphism, not an inner automorphism, and it is this that places spatial inversion outside $SL(2,\mathbb{C})$. The cover of the Lorentz group is therefore a cover of its connected part, and an extension of the group by spatial inversion requires that anti-automorphism as well.
 
 **Beyond the finite-dimensional frame.** The biquaternion algebra is finite-dimensional, and its representations are the finite-dimensional ones; the biquaternion algebra itself carries the four-vector representation $(\tfrac12,\tfrac12)$. The physically realized unitary representations of the Poincaré group — Wigner's classification by mass and spin — are infinite-dimensional, and the finite-dimensional frame does not contain them. The informational sector uses the same algebra, with states in $\mathbb{M}_+$ and expectation values $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$, but that operator algebra is finite-dimensional too: it is the algebra of a single qubit, not of a field. The Poincaré action on the material sector and the Born rule of the informational sector are two uses of one algebra, and both stop at the finite-dimensional objects it contains.
 
@@ -233,7 +233,7 @@ What the frame captures is the connected homogeneous group and its action; what 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), home of four-vectors and displacements |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), home of boost rotors |
@@ -241,10 +241,10 @@ What the frame captures is the connected homogeneous group and its action; what 
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation (four-vector action) |
-| $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_0\}$ |
+| $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
 | $\tilde{B}=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian, in $\mathbb{M}_+$) |
 | $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion) |
-| $\tilde{V}=\gamma(ic\,e_0+\vec v)$, $\tilde{\Lambda}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
+| $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\tilde{\Lambda}=\sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Four-velocity and its frame rotor |
 | $\tilde{a}\in\mathbb{M}_-$ | Translation (displacement) |
 | $(\tilde{\Lambda},\tilde{a})$ | Poincaré transformation, acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$ |
 | $(\tilde{\Lambda}_2,\tilde{a}_2)\circ(\tilde{\Lambda}_1,\tilde{a}_1)=(\tilde{\Lambda}_2\tilde{\Lambda}_1,\tilde{\Lambda}_2\tilde{a}_1\tilde{\Lambda}_2^{*}+\tilde{a}_2)$ | Poincaré group law |

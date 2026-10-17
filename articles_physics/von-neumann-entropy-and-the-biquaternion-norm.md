@@ -4,10 +4,10 @@
 
 The von Neumann entropy of a state is the fundamental quantitative measure of the information a quantum state fails to hold: it vanishes on the pure states, is maximal on the maximally mixed state, and quantifies the compression achievable in the quantum source coding theorem. In the biquaternion framework the state space of a qubit is the trace-one slice of the positive cone of $\mathbb{M}_+$, and the cone is defined by the algebra's biquaternion norm. The question this article answers is what the entropy is, in that geometry.
 
-The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the biquaternion norm alone. For a state $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ one has
+The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the biquaternion norm alone. For a state $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ one has
 
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_0 ,
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
 $$
 
 so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$. The entropy is therefore
@@ -21,7 +21,7 @@ $$
 a function of $\langle\cdot\rangle_{\natural}$ and nothing else. Equivalently, since the deviation of a state from idempotency is
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}\,e_0 ,
+\tilde{\rho}^2 - \tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}\,e_t ,
 $$
 
 the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the biquaternion norm, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.
@@ -37,7 +37,7 @@ The article proceeds as follows. The state, its purity, and the biquaternion nor
 A state of the informational sector is an element of the Hermitian subspace
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\,\vec r\bigr), \qquad \vec r = r_1e_1 + r_2e_2 + r_3e_3, \quad r_k\in\mathbb{R},
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_k\in\mathbb{R},
 $$
 
 with trace $\mathrm{Tr}(\tilde{\rho}) = 2\,\mathrm{Sc}(\tilde{\rho}) = 1$. Its matrix image is
@@ -46,15 +46,15 @@ $$
 M(\tilde{\rho}) = \tfrac{1}{2}\bigl(I_2 + \vec r\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-whose eigenvalues are $\tfrac12(1\pm|\vec r|)$. Positivity, $M(\tilde{\rho})\geq0$, is therefore equivalent to $|\vec r|\leq1$, and the states form the Bloch ball. The boundary $|\vec r|=1$ is the set of pure states; the centre $\vec r=0$ is the maximally mixed state $\tilde{\rho} = \tfrac12 e_0$.
+whose eigenvalues are $\tfrac12(1\pm|\vec r|)$. Positivity, $M(\tilde{\rho})\geq0$, is therefore equivalent to $|\vec r|\leq1$, and the states form the Bloch ball. The boundary $|\vec r|=1$ is the set of pure states; the centre $\vec r=0$ is the maximally mixed state $\tilde{\rho} = \tfrac12 e_t$.
 
 ### Purity and the deviation from idempotency
 
-Squaring the state gives, using $e_ke_l = -\delta_{kl}e_0 + \epsilon_{klm}e_m$ and the vanishing of the cross terms for the pure scalar part,
+Squaring the state gives, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ and the vanishing of the cross terms for the pure scalar part,
 
 $$
-\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_0 + i\vec r\bigr)^2
-= \tfrac{1}{4}\bigl((1+|\vec r|^2)e_0 + 2i\vec r\bigr).
+\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_t + i\vec r\bigr)^2
+= \tfrac{1}{4}\bigl((1+|\vec r|^2)e_t + 2i\vec r\bigr).
 $$
 
 Hence the **purity** is
@@ -66,14 +66,14 @@ $$
 and the **deviation from idempotency** is a pure scalar multiple of the identity,
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_0 .
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_t .
 $$
 
 The state is pure, $\tilde{\rho}^2 = \tilde{\rho}$, exactly when $|\vec r|=1$; it is idempotent exactly when its purity is one. Everything that follows is a statement about the single real number $\mathrm{Sc}(\tilde{\rho}^2-\tilde{\rho}) = \tfrac14(|\vec r|^2-1)\leq0$.
 
 ### The biquaternion norm on $\mathbb{M}_+$
 
-The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_0 + i\vec h$ with real coefficients it is the real scalar
+The biquaternion norm of the algebra is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. On a Hermitian element $\tilde{H} = h_0e_t + i\vec h$ with real coefficients it is the real scalar
 
 $$
 \langle\tilde{H}\rangle_{\natural} = h_0^2 - |\vec h|^2 ,
@@ -90,13 +90,13 @@ which is why it is the natural scalar for the cone: a Hermitian matrix is positi
 For a state the biquaternion norm is
 
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_0 ,
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
 $$
 
 a scalar element of the centre. Three interpretations of this single identity organize the rest of the article:
 
 - $\langle\tilde{\rho}\rangle_{\natural}\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{M}_+$.
-- Comparing with the deviation from idempotency, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_0$: **the mixedness of a state is minus its biquaternion norm**. There is no other mixedness parameter.
+- Comparing with the deviation from idempotency, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_t$: **the mixedness of a state is minus its biquaternion norm**. There is no other mixedness parameter.
 - The purity is an affine function of the biquaternion norm, $\mathrm{Tr}(\tilde{\rho}^2) = 1 - 2\langle\tilde{\rho}\rangle_{\natural}$.
 
 The biquaternion norm therefore measures the failure of a state to be a zero divisor of the algebra, and it does so with one number. On the trace-one slice it takes its minimum $0$ on the pure states and its maximum $\tfrac14$ at the maximally mixed state.
@@ -110,12 +110,12 @@ The state has a spectral decomposition into the two complementary idempotents al
 $$
 \tilde{\rho} = \lambda_+\,\tilde\Pi_1(\vec u_r) + \lambda_-\,\tilde\Pi_2(\vec u_r),
 \qquad
-\tilde\Pi_{1,2}(\vec u_r) = \tfrac{1}{2}\bigl(e_0 \pm i\vec u_r\bigr),
+\tilde\Pi_{1,2}(\vec u_r) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_r\bigr),
 \qquad
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr).
 $$
 
-The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
+The two projectors are idempotent, Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their traces are one, and the trace pairing gives $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -203,11 +203,11 @@ $$
 S\bigl(t\tilde{\rho}_1 + (1-t)\tilde{\rho}_2\bigr) \;\geq\; t\,S(\tilde{\rho}_1) + (1-t)\,S(\tilde{\rho}_2).
 $$
 
-In the biquaternion-norm description this is the statement that the composition $H\circ N$ is concave along convex combinations of states. Since $\langle\cdot\rangle_{\natural}$ is a quadratic (and hence not affine) function of the state, the concavity of $H\circ N$ is not a trivial consequence of the concavity of $H$; it is the statement that mixing cannot decrease information, verified spectrum by spectrum. The maximally mixed state is the unique fixed point of the mixing map $\tilde{\rho}\mapsto\tfrac12\tilde{\rho}+\tfrac14 e_0$ and is the state of largest entropy.
+In the biquaternion-norm description this is the statement that the composition $H\circ N$ is concave along convex combinations of states. Since $\langle\cdot\rangle_{\natural}$ is a quadratic (and hence not affine) function of the state, the concavity of $H\circ N$ is not a trivial consequence of the concavity of $H$; it is the statement that mixing cannot decrease information, verified spectrum by spectrum. The maximally mixed state is the unique fixed point of the mixing map $\tilde{\rho}\mapsto\tfrac12\tilde{\rho}+\tfrac14 e_t$ and is the state of largest entropy.
 
 ### Unitary invariance
 
-Rotor conjugation by a matrix-unitary biquaternion, $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$, rotates the Bloch vector without changing its length. It therefore preserves $\langle\tilde{\rho}\rangle_{\natural}$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
+Rotor conjugation by a matrix-unitary biquaternion, $\tilde{\rho}\mapsto\tilde{U}\tilde{\rho}\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_t$, rotates the Bloch vector without changing its length. It therefore preserves $\langle\tilde{\rho}\rangle_{\natural}$, the purity, the spectrum, and the entropy. This is the statement that the entropy is a unitary invariant, as it must be; in the framework it is the statement that $S$ is a function of the biquaternion norm, which the inner automorphisms of the algebra preserve.
 
 ## Relation to the Standard Formula
 
@@ -216,7 +216,7 @@ The standard von Neumann entropy of a density operator is $S = -\mathrm{Tr}(\rho
 What the biquaternion-norm interpretation adds is the *location* of the entropy's argument. In the matrix formulation the entropy is a function of the spectrum, and the spectrum is obtained by diagonalizing a matrix. In the biquaternion formulation the state carries a biquaternion norm, and on the trace-one slice the biquaternion norm is the deviation from idempotency; the entropy is a function of that scalar. The operative content is that:
 
 - purity is an affine function of the biquaternion norm, $\mathrm{Tr}(\tilde{\rho}^2) = 1-2\langle\tilde{\rho}\rangle_{\natural}$;
-- the mixedness scalar is exactly the biquaternion norm up to sign, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_0$;
+- the mixedness scalar is exactly the biquaternion norm up to sign, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_t$;
 - the entropy is a monotone function of the position of the state in the cone of the biquaternion norm.
 
 None of this is available in the same form for a general $d$-level system, where the biquaternion norm is not a single number; the qubit is special because its state space is the cone slice of a single quadratic form.
@@ -227,7 +227,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 - It exhibits the entropy as a function of the biquaternion norm, $S = H(N)$, on the whole state space, with $H$ explicit.
 - It identifies the pure states as the zero divisors of the biquaternion norm and the maximally mixed state as its maximum on the trace-one slice.
-- It gives the algebraic identity $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_0$ relating mixedness to the biquaternion norm.
+- It gives the algebraic identity $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_t$ relating mixedness to the biquaternion norm.
 - It reproduces the standard qubit entropy and its bounds $0\leq S\leq\log2$.
 
 **What it does not.**
@@ -255,10 +255,10 @@ The state space of the qubit is the trace-one slice of the positive cone of the 
 
 $$
 \langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = h_0^2 - |\vec h|^2 = \det M(\tilde{H}), \qquad
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec r|^2\bigr)e_0 .
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec r|^2\bigr)e_t .
 $$
 
-The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_0$, and the purity is affine in it, $\mathrm{Tr}(\tilde{\rho}^2) = 1-2\langle\tilde{\rho}\rangle_{\natural}$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
+The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{\rho}^2-\tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_t$, and the purity is affine in it, $\mathrm{Tr}(\tilde{\rho}^2) = 1-2\langle\tilde{\rho}\rangle_{\natural}$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
 
 $$
 S(\tilde{\rho}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right) = -\mathrm{Tr}\bigl(\tilde{\rho}\log\tilde{\rho}\bigr),
@@ -274,16 +274,16 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\tilde\Pi_{1,2}(\vec u_r) = \tfrac12(e_0\pm i\vec u_r)$ | Spectral idempotents of the state |
+| $\tilde{\rho} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
+| $\tilde\Pi_{1,2}(\vec u_r) = \tfrac12(e_t\pm i\vec u_r)$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = h_0^2 - |\vec h|^2 = \det M(\tilde{H})$ | Biquaternion norm of a Hermitian element |
-| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_0$ | Biquaternion norm of a state |
-| $\tilde{\rho}^2 - \tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_0$ | Deviation from idempotency |
+| $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
+| $\tilde{\rho}^2 - \tilde{\rho} = -\langle\tilde{\rho}\rangle_{\natural}e_t$ | Deviation from idempotency |
 | $\mathrm{Tr}(\tilde{\rho}^2) = 1-2\langle\tilde{\rho}\rangle_{\natural}$ | Purity |
 | $h(p) = -p\log p-(1-p)\log(1-p)$ | Binary entropy |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | Von Neumann entropy |

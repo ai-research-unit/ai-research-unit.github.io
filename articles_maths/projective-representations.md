@@ -97,14 +97,14 @@ with the sum over the group and the twist factor $\alpha(g,g^{-1})$; consequentl
 **Theorem (Schur, standard).** Let $G$ be a finite group. Then there is a central extension
 
 $$
-1\longrightarrow M(G)\longrightarrowG^{\mathrm{cov}}\longrightarrow G\longrightarrow1
+1\longrightarrow M(G)\longrightarrow G^{\mathrm{cov}}\longrightarrow G\longrightarrow1
 $$
 
 by the Schur multiplier — a **representation group** or **Schur cover** of $G$ — with the property that every projective representation of $G$ with any factor set is equivalent to the composite of a lift $G^{\mathrm{cov}}\to E$ with an ordinary representation of the covering group: every projective representation of $G$ is the restriction, through the covering map, of an ordinary representation of $G^{\mathrm{cov}}$, and the irreducible projective representations of $G$ are obtained equivalently as the ordinary irreducible representations of $G^{\mathrm{cov}}$ on which the centre $M(G)$ acts by a fixed character. The extension is universal for the property of lifting the projective representations, and it is determined up to an isomorphism inducing the identity on $G$ and on $M(G)$.
 
 *Proof (outline).* One takes the fibre product of the central extensions classified by the cocycles representing the elements of $M(G)$ and uses the universal coefficients; the lifting of the projective representations is then the statement that a cocycle on $G$ becomes a coboundary after a central extension by the group in which the class lives, which is the standard argument of the theory of the Schur covers. The proof is recorded in the references.
 
-**Corollary.** A projective representation of $G$ with factor set $\alpha$ is the same data as an ordinary representation of the group $G^{\mathrm{cov}}_\alpha$ of the central extension $1\to\langle\alpha\rangle\toG^{\mathrm{cov}}_\alpha\to G\to1$ classified by $\alpha$, on which the central subgroup acts by the character corresponding to $\alpha$; consequently the projective representations of $G$ are ordinary representations of central extensions of $G$, and the classification of the projective representations is the classification of the ordinary representations of the finitely many covering groups together with the central characters.
+**Corollary.** A projective representation of $G$ with factor set $\alpha$ is the same data as an ordinary representation of the group $G^{\mathrm{cov}}_\alpha$ of the central extension $1\to\langle\alpha\rangle\to G^{\mathrm{cov}}_\alpha\to G\to1$ classified by $\alpha$, on which the central subgroup acts by the character corresponding to $\alpha$; consequently the projective representations of $G$ are ordinary representations of central extensions of $G$, and the classification of the projective representations is the classification of the ordinary representations of the finitely many covering groups together with the central characters.
 
 **Example.** For $G = V_4$ the Schur multiplier is $\mathbb{Z}/2$, and the two central extensions of $V_4$ by $\mathbb{Z}/2$ are the dihedral group $D_8$ and the quaternion group $Q_8$; the extension corresponding to the nontrivial cocycle of the previous section is $Q_8$, and its two-dimensional irreducible representation, the one on which the centre acts by $-1$, is the projective representation of $V_4$ with the quaternion factor set. The classification of the projective representations of $V_4$ in the nontrivial class is thereby the classification of the representations of $Q_8$ with the given central character, and it contains exactly one irreducible class, of dimension two.
 
@@ -148,7 +148,7 @@ A **projective representation** of a finite group $G$ is a homomorphism $G\to\op
 | $k^\alpha[G]$, $\bar g\bar h = \alpha(g,h)\overline{gh}$ | twisted group algebra |
 | $\mathbb{H} = k^\alpha[V_4]$ | quaternion algebra from the nontrivial quaternion cocycle |
 | $\chi$, $\alpha$-classes | projective character and twisted conjugacy classes |
-| $1\to M(G)\toG^{\mathrm{cov}}\to G\to1$ | representation group (Schur cover) |
+| $1\to M(G)\to G^{\mathrm{cov}}\to G\to1$ | representation group (Schur cover) |
 | $D_8$, $Q_8$ | central extensions of $V_4$, $Q_8$ carrying the nontrivial class |
 | $H_\chi$, Mackey obstruction | little group and extension obstruction |
 | strict partition, $2^{\lfloor(n-1)/2\rfloor}$ | labelling of the spin representations and the basic spin dimension |

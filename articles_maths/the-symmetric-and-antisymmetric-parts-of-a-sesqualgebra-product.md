@@ -265,16 +265,16 @@ The complex space of the biquaternion algebra carries two sesqualgebra products 
 
 - For the **sesquilinear product** the exchange is the natural conjugation of the value, $\overline{\tilde{Q}\tilde{P}^{*}} = \bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}$, so the two parts are the scalar and the vector part of the one value:
 $$
-\mathrm{SPS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = P_0\overline{Q_0} + (\vec P,\overline{\vec Q}), \qquad
-\mathrm{APS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Vect}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = -P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
+\mathrm{SPS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = P_t\overline{Q_t} + (\vec P,\overline{\vec Q}), \qquad
+\mathrm{APS} = \tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}\tilde{P}^{*}}\bigr) = \mathrm{Vect}\bigl(\tilde{P}\tilde{Q}^{*}\bigr) = -P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q},
 $$
-respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* read as a product, and the antisymmetric part is the whole vector part $-P_0\overline{\vec Q} + \overline{Q_0}\vec P - \vec P\times\overline{\vec Q}$.
+respectively **central** and **pure vector**. The symmetric part is the Hermitian form $H = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* read as a product, and the antisymmetric part is the whole vector part $-P_t\overline{\vec Q} + \overline{Q_t}\vec P - \vec P\times\overline{\vec Q}$.
 - For the **general quaternionic sesquilinear product** the exchange is not a conjugation of the value, and the two parts are the symmetrisation and half the commutator of two elements in the plain product,
 $$
 \mathrm{SQS} = \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*} + \tilde{Q}^{*}\tilde{P}^{\natural}\bigr), \qquad
 \mathrm{AQS} = \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*} - \tilde{Q}^{*}\tilde{P}^{\natural}\bigr),
 $$
-since $\overline{\tilde{Q}^{\natural}\tilde{P}^{*}} = \tilde{Q}^{*}\tilde{P}^{\natural}$. The antisymmetric part is the cross product $\vec P\times\overline{\vec Q}$, **pure vector**; the symmetric part carries the general quaternionic sesquilinear form $K = P_0\overline{Q_0} - (\vec P,\overline{\vec Q})$ in its scalar part and $-\bigl(P_0\overline{\vec Q} + \overline{Q_0}\vec P\bigr)$ in its vector part, and it lies in **no** subspace of the remarkable subspaces.
+since $\overline{\tilde{Q}^{\natural}\tilde{P}^{*}} = \tilde{Q}^{*}\tilde{P}^{\natural}$. The antisymmetric part is the cross product $\vec P\times\overline{\vec Q}$, **pure vector**; the symmetric part carries the general quaternionic sesquilinear form $K = P_t\overline{Q_t} - (\vec P,\overline{\vec Q})$ in its scalar part and $-\bigl(P_t\overline{\vec Q} + \overline{Q_t}\vec P\bigr)$ in its vector part, and it lies in **no** subspace of the remarkable subspaces.
 
 The two parts of each of the four general products are written in scalar–vector form, and the four operations are read, with their laws, in *The 12 Products of the Biquaternioid Complex Space*, and named in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The two $\mathbb{C}$-bilinear products of the space have the trivial base involution, so their exchange is the bare transposition and their parts are the same under either reading: the plain and the quaternionic algebra rows $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ are unchanged by the adaptation, and the adaptation touches only the four sesqualgebra parts.
 

@@ -58,7 +58,7 @@ On a surface with an orthonormal frame, $c(e_1)$ and $c(e_2)$ are two anticommut
 
 ### The Flat Space
 
-On $\mathbb{R}^n$ with the standard spinor module, $c(v)^*=-c(v)$ in the standard Hermitian form, $c^*\sigma=-\sum_i\theta^i\otimes e_i\sigma$, $cc^*=n$, and $D=\sum_ic(e_i)\partial_i$ is self-adjoint on the flat spinor bundle by integration by parts.
+On $\mathbb{R}^n$ with the standard spinor module, $c(v)^*=-c(v)$ in the standard Hermitian form, $c^*\sigma=-\sum_i\theta^i\otimes e_i\sigma$, $cc^*=n$, and $D=\sum_ic(e_i)\partial/\partial x_i$ is self-adjoint on the flat spinor bundle by integration by parts.
 
 ### The Exterior Bundle
 

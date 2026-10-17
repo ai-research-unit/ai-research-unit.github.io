@@ -93,7 +93,6 @@ A product of two nonzero rings is never an integral domain, never local and neve
 | $M_n(D)$ over a division ring $D$ | not commutative in general | *Matrix Algebras* |
 | $R\langle x_1, \dots, x_n\rangle$ | the free algebra, not commutative for $n \geq 2$ | *Tensor Powers and the Free Algebra* |
 | $A_1(k)$ | the Weyl algebra, not commutative | *Quotients of the Tensor Algebra* |
-| $\mathbb{O}$ | the octonions, not a ring | *Octonion Algebra* |
 
 ## Summary
 

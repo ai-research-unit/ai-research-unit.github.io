@@ -11,18 +11,18 @@ The key structural fact is the same as in the discrete case: the Fourier kernel 
 Throughout, a biquaternion is written
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
 or, more compactly, as
 
 $$
-\tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+\tilde{Q} = Q_t e_t + \vec Q, \qquad \vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z.
 $$
 
-The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
+The scalar imaginary is $i$, which commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$, and the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
-**Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
+**Notation.** To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the scalar imaginary $i$, the root of $-1$ used in the Fourier kernel is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the division theory article.
 
 ## The Fourier Kernel
 
@@ -31,7 +31,7 @@ The scalar imaginary is $i$, which commutes with the quaternion units. The quate
 Fix a root $\rho$ of $-1$, i.e., an element $\rho \in \mathbb{B}$ with
 
 $$
-\rho^2 = -e_0.
+\rho^2 = -e_t.
 $$
 
 The **biquaternion Fourier kernel** is the function
@@ -40,10 +40,10 @@ $$
 W(t, \omega) = \exp(-2\pi \rho \omega t), \qquad t, \omega \in \mathbb{R}.
 $$
 
-Because $\rho^2 = -e_0$, the kernel takes the closed form
+Because $\rho^2 = -e_t$, the kernel takes the closed form
 
 $$
-W(t, \omega) = \cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho,
+W(t, \omega) = \cos(2\pi \omega t) \, e_t - \sin(2\pi \omega t) \, \rho,
 $$
 
 where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi \omega t$.
@@ -51,22 +51,22 @@ where the cosine and sine are the ordinary real trigonometric functions applied 
 **The inverse.** The kernel is invertible at every point, with
 
 $$
-W(t, \omega)^{-1} = \cos(2\pi \omega t) \, e_0 + \sin(2\pi \omega t) \, \rho ,
+W(t, \omega)^{-1} = \cos(2\pi \omega t) \, e_t + \sin(2\pi \omega t) \, \rho ,
 $$
 
-which follows from $\rho^2 = -e_0$ alone: the two factors multiply to $\cos^2 + \sin^2 = e_0$. This is a closed form that holds for **every** root, and it is the form the inverse transform uses.
+which follows from $\rho^2 = -e_t$ alone: the two factors multiply to $\cos^2 + \sin^2 = e_t$. This is a closed form that holds for **every** root, and it is the form the inverse transform uses.
 
 **The conjugate and the norm, for a pure root.** When the root is pure, that is, when its scalar part vanishes, the quaternion conjugate of the kernel is this inverse and the norm is the identity:
 
 $$
-\overline{W(t, \omega)} = W(t, \omega)^{-1}, \qquad \langle W(t, \omega)\rangle_{\natural} = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = e_0 ,
+\overline{W(t, \omega)} = W(t, \omega)^{-1}, \qquad \langle W(t, \omega)\rangle_{\natural} = \cos^2(2\pi \omega t) + \sin^2(2\pi \omega t) = e_t ,
 $$
 
 because $\bar\rho = -\rho$ for a pure element. The first family $\rho = \pm i$ is the exception: it is not pure, the quaternion conjugate leaves the kernel unchanged, and the inverse is the complex conjugate $\exp(2\pi\omega t\, i)$. In that family the kernel is a complex scalar and the transform is the ordinary complex Fourier transform of each component simultaneously. The distinction affects only that family, and the statements below that use the conjugate of the kernel are stated for a pure root.
 
 ### The Condition on the Root
 
-A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if either $\rho = \pm i$, or $\rho$ is a pure biquaternion (i.e., its scalar part $\rho_0$ vanishes) and
+A biquaternion $\rho$ satisfies $\rho^2 = -e_t$ if and only if either $\rho = \pm i$, or $\rho$ is a pure biquaternion (i.e., its scalar part $\rho_0$ vanishes) and
 
 $$
 \Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
@@ -142,7 +142,7 @@ $$
 f(t) = \int_{-\infty}^{\infty} \overline{W(t, \omega)} F(\omega) \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_0, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
+**Proof.** The proof follows the standard proof of the inversion theorem for the complex Fourier transform, applied component-wise in the basis $\{e_t, \rho, \nu, \xi\}$ introduced below. The key step is the approximation of the identity by a sequence of Gaussian kernels, and the result follows from the corresponding statement for the complex transform.
 
 ### The Plancherel Theorem
 
@@ -152,7 +152,7 @@ $$
 \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_0, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into complex transforms established below and read in the root-adapted basis $\{e_t, \rho, \nu, \xi\}$. The factorization is the ordinary complex Fourier transform on each complex coefficient, hence an isometry of $L^2(\mathbb{R}, \mathbb{C})$ on each coefficient. For $\rho^{*} = -\rho$ the root-adapted basis is orthonormal for the Euclidean form $\|\cdot\|_E$ — trivially for the scalar imaginary, whose kernel is central, and by an orthonormal real-quaternion frame for the real roots — so the coefficient norm the factorization preserves is the Euclidean norm, and the total norm is preserved.
 
 **Remark (the genuinely complex roots).** Off the degenerate families the factorization still holds and the transform is still invertible on $L^2(\mathbb{R}, \mathbb{B})$, but it is **not** an isometry for the Euclidean norm. What it preserves is the coefficient norm of the root-adapted basis, and the two norms differ because a genuinely complex root is not a Euclidean unit vector, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$ for $\rho = b\mu + d\nu i$. The unitary statement is therefore exactly the statement $\rho^{*} = -\rho$, the same dichotomy that governs the positivity of the transform of a measure (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*), and the transform remains a faithful change of description for every root.
 
@@ -172,32 +172,32 @@ $$
 \rho \perp \nu, \qquad \nu \perp \xi, \qquad \xi \perp \rho, \qquad \rho \nu = \xi.
 $$
 
-The four elements $\{e_0, \rho, \nu, \xi\}$ form a **complex orthonormal basis** of $\mathbb{B}$ for the biquaternion form $\mathrm{Sc}(x^{\natural}y)$, and for the Euclidean form $\mathrm{Sc}(xy^{*})$ exactly when $\rho^{*} = -\rho$; off the degenerate families it is a basis and not a Euclidean-orthonormal one, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$. Any biquaternion can be written in this basis as
+The four elements $\{e_t, \rho, \nu, \xi\}$ form a **complex orthonormal basis** of $\mathbb{B}$ for the biquaternion form $\mathrm{Sc}(x^{\natural}y)$, and for the Euclidean form $\mathrm{Sc}(xy^{*})$ exactly when $\rho^{*} = -\rho$; off the degenerate families it is a basis and not a Euclidean-orthonormal one, $\lvert\rho\rvert_E^{2} = b^{2} + d^{2} \neq 1$. Any biquaternion can be written in this basis as
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
+\tilde{Q} = Q_t e_t + Q_\rho \rho + Q_\nu \nu + Q_\xi \xi,
 $$
 
-with $Q_0, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.
+with $Q_t, Q_\rho, Q_\nu, Q_\xi \in \mathbb{C}$.
 
 ### The Factorization
 
 Writing the function $f$ in the new basis,
 
 $$
-f(t) = w(t) e_0 + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi,
+f(t) = w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi,
 $$
 
 and substituting into the transform with the closed form of the kernel, we obtain
 
 $$
-F(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, e_0 - \sin(2\pi \omega t) \, \rho\right) \left(w(t) e_0 + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi\right) dt.
+F(\omega) = \int_{-\infty}^{\infty} \left(\cos(2\pi \omega t) \, e_t - \sin(2\pi \omega t) \, \rho\right) \left(w(t) e_t + Q_\rho(t) \rho + Q_\nu(t) \nu + Q_\xi(t) \xi\right) dt.
 $$
 
 Expanding the product and collecting terms by basis element gives four sums:
 
 $$
-F(\omega) = F_0(\omega) e_0 + F_\rho(\omega) \rho + F_\nu(\omega) \nu + F_\xi(\omega) \xi,
+F(\omega) = F_0(\omega) e_t + F_\rho(\omega) \rho + F_\nu(\omega) \nu + F_\xi(\omega) \xi,
 $$
 
 where
@@ -236,7 +236,7 @@ and $G_\bullet(t)$ are the complex coefficients of $f(t)$ in the new basis.
 
 Concretely, the factorization is the following procedure:
 
-1. **Change of basis.** For each $t$, write the function value $f(t)$ in the basis $\{e_0, \rho, \nu, \xi\}$, obtaining four complex functions $w(t), Q_\rho(t), Q_\nu(t), Q_\xi(t)$.
+1. **Change of basis.** For each $t$, write the function value $f(t)$ in the basis $\{e_t, \rho, \nu, \xi\}$, obtaining four complex functions $w(t), Q_\rho(t), Q_\nu(t), Q_\xi(t)$.
 2. **Complex Fourier transforms.** Apply the ordinary complex Fourier transform to the four complex functions obtained by combining the coefficients as above. The result is four complex spectra.
 3. **Reassemble.** Combine the four complex spectra into the biquaternion spectrum $F(\omega)$.
 
@@ -318,10 +318,10 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_0$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial_0$:
+Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F^{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
 
 $$
-\mathcal{F}[\partial_0 F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
+\mathcal{F}[\partial/\partial Q_t F^{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F^{\mathrm{fn}}](\omega),
 $$
 
 where the sign depends on the convention for the kernel (the sign is positive for the kernel $\exp(+2\pi \rho \omega t)$ and negative for $\exp(-2\pi \rho \omega t)$).
@@ -329,20 +329,20 @@ where the sign depends on the convention for the kernel (the sign is positive fo
 If the transform is taken in all four variables, the gradient becomes multiplication by the biquaternion
 
 $$
-2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
-where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_0, Q_1, Q_2, Q_3$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a biquaternion-valued multiplier.
+where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_t, Q_x, Q_y, Q_z$. The precise form depends on the placement of the root $\rho$ and on the choice of basis, but the structural fact is that the gradient becomes a biquaternion-valued multiplier.
 
 ### The d'Alembertian
 
-The d'Alembertian $\Box = \partial_0^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
+The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
 \mathcal{F}[\Box F^{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F^{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F^{\mathrm{fn}}](\omega).
 $$
 
-The multiplier is a scalar (times $e_0$), and it vanishes on the **light cone**
+The multiplier is a scalar (times $e_t$), and it vanishes on the **light cone**
 
 $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
@@ -352,10 +352,10 @@ So the Fourier transform of a solution of $\Box F^{\mathrm{fn}} = 0$ is supporte
 
 ### The Square of the Gradient
 
-The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by
+The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by
 
 $$
-\left((2\pi \omega_0)^2 + (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) e_0 + 2 \sum_k e_k (2\pi \omega_0)(2\pi \omega_k),
+\left((2\pi \omega_0)^2 + (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) e_t + 2 \sum_k \vec e_k (2\pi \omega_0)(2\pi \omega_k),
 $$
 
 which is a biquaternion-valued multiplier. The precise form depends on the sign convention and on the placement of the root.
@@ -365,7 +365,7 @@ which is a biquaternion-valued multiplier. The precise form depends on the sign 
 The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion
 
 $$
-\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$
 
 which depends on the velocity biquaternion $\tilde{R}$ and on the frequency variables. The multiplier is a biquaternion, and its vanishing determines the dispersion relation of the operator.
@@ -382,7 +382,7 @@ This is the same principle as in the complex and quaternion cases, and it is the
 
 A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm on a set of positive measure. On such a set, the values are zero divisors, and the transform may not be invertible.
 
-More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a nonzero biquaternion $\tilde{P}(t)$ with $f(t) \circ \tilde{P}(t) = 0$ or $\tilde{P}(t) \circ f(t) = 0$. The kernel is invertible, so the product $W(t, \omega) f(t)$ is also a zero divisor, and the integral over $t$ may or may not preserve the information of $f(t)$.
+More precisely, if $f(t)$ is a zero divisor for some $t$, then there exists a nonzero biquaternion $\tilde{Q}(t)$ with $f(t) \circ \tilde{Q}(t) = 0$ or $\tilde{Q}(t) \circ f(t) = 0$. The kernel is invertible, so the product $W(t, \omega) f(t)$ is also a zero divisor, and the integral over $t$ may or may not preserve the information of $f(t)$.
 
 ### Consequences for the Transform
 
@@ -406,7 +406,7 @@ The transform above carries one real variable and one root. The transform of the
 **Definition.** Let $\rho_1$ and $\rho_2$ be roots of $-1$ in $\mathbb{B}$, not necessarily distinct and not necessarily commuting. For a function $f : \mathbb{R}^2 \to \mathbb{B}$, the **two-unit transform** is
 
 $$
-F(\omega_1, \omega_2) = \int_{\mathbb{R}^2} W_1(Q_1, \omega_1) \, W_2(Q_2, \omega_2) \, f(Q_1, Q_2) \, dQ_1 dQ_2,
+F(\omega_1, \omega_2) = \int_{\mathbb{R}^2} W_1(Q_x, \omega_1) \, W_2(Q_y, \omega_2) \, f(Q_x, Q_y) \, dQ_1 dQ_2,
 \qquad
 W_k(Q_k, \omega_k) = \exp(-2\pi \rho_k \omega_k Q_k),
 $$
@@ -416,29 +416,29 @@ the order of the two kernel factors being part of the definition, because they n
 **Closed form.** With $\theta_k = 2\pi \omega_k Q_k$,
 
 $$
-K = \cos\theta_1 \cos\theta_2 \, e_0 - \cos\theta_1 \sin\theta_2 \, \rho_2 - \sin\theta_1 \cos\theta_2 \, \rho_1 + \sin\theta_1 \sin\theta_2 \, \rho_1 \rho_2 .
+K = \cos\theta_1 \cos\theta_2 \, e_t - \cos\theta_1 \sin\theta_2 \, \rho_2 - \sin\theta_1 \cos\theta_2 \, \rho_1 + \sin\theta_1 \sin\theta_2 \, \rho_1 \rho_2 .
 $$
 
-The four coefficients are real. The first three terms are the one-unit kernel read on the two variables, and the fourth carries the product $\rho_1 \rho_2$, which is $\pm e_3$ when the two units are two of $e_1, e_2, e_3$ and is a general biquaternion for other pairs.
+The four coefficients are real. The first three terms are the one-unit kernel read on the two variables, and the fourth carries the product $\rho_1 \rho_2$, which is $\pm \vec e_z$ when the two units are two of $\vec e_x, \vec e_y, \vec e_z$ and is a general biquaternion for other pairs.
 
 **Reduction to the one-unit kernel.** If the two units coincide, $\rho_1 = \rho_2 = \rho$, the exponents add and
 
 $$
-K = \cos(\theta_1 + \theta_2) \, e_0 - \sin(\theta_1 + \theta_2) \, \rho ,
+K = \cos(\theta_1 + \theta_2) \, e_t - \sin(\theta_1 + \theta_2) \, \rho ,
 $$
 
-which is the kernel $W$ of this article read on the linear form $\omega_1 Q_1 + \omega_2 Q_2$, and it is the kernel of the two-dimensional transform of the discrete case. The one-unit theory is therefore the case in which the two units are equal, and the two-unit transform is its refinement.
+which is the kernel $W$ of this article read on the linear form $\omega_1 Q_x + \omega_2 Q_y$, and it is the kernel of the two-dimensional transform of the discrete case. The one-unit theory is therefore the case in which the two units are equal, and the two-unit transform is its refinement.
 
 **The kernel is invertible for every pair of roots.** The norm is multiplicative, $\langle K\rangle_{\natural} = \langle W_1\rangle_{\natural} \langle W_2\rangle_{\natural}$, and the inverse is the kernel with both frequencies negated and the two factors exchanged:
 
 $$
-\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_2, -\omega_2) \, W_1(Q_1, -\omega_1).
+\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_y, -\omega_2) \, W_1(Q_x, -\omega_1).
 $$
 
 For two pure roots the kernel is unitary in the sense of the previous section,
 
 $$
-\langle K\rangle_{\natural} = e_0, \qquad \overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},\omega\rangle_{\natural*}^{-1},
+\langle K\rangle_{\natural} = e_t, \qquad \overline{\langle\tilde{Q},\omega\rangle_{\natural*}} = \langle\tilde{Q},\omega\rangle_{\natural*}^{-1},
 $$
 
 and this holds for every pair of pure roots, commuting or not. The unit-norm property is thus a property of each factor and is inherited by the product.
@@ -461,9 +461,9 @@ $$
 G(\omega) = \int_{\mathbb{R}^n} \chi_\omega(\tilde{Q}) \, d\mu(\tilde{Q}), \qquad \chi_\omega(\tilde{Q}) = \exp\big(-2\pi \rho \langle \omega, \tilde{Q} \rangle\big).
 $$
 
-Because $\chi_0 = e_0$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_0$: the value at zero frequency is the total mass, a positive real multiple of the identity.
+Because $\chi_0 = e_t$ at every point, $G(0) = \mu(\mathbb{R}^n) \, e_t$: the value at zero frequency is the total mass, a positive real multiple of the identity.
 
-**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \zeta_k e_0$, $\zeta_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
+**The quadratic form.** For coefficients $A_1, \dots, A_N$ in the centre $\mathbb{C}_{\mathbb{B}}$ (the complex scalars $A_k = \zeta_k e_t$, $\zeta_k \in \mathbb{C}$) and frequencies $\omega_1, \dots, \omega_N$,
 
 $$
 \sum_{k,l=1}^{N} \bar A_k A_l \, G(\omega_k - \omega_l) \;=\; \int_{\mathbb{R}^n} N\big(Z(\tilde{Q})\big) \, d\mu(\tilde{Q}),
@@ -478,13 +478,13 @@ the right-hand side being the integral of the **biquaternion norm** of the trigo
 **The biquaternion case: the form is the norm, and the norm is indefinite.** For $\mathbb{B}$ the integrand is the norm itself, and the norm is complex-valued:
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \Re \langle\tilde{Q}\rangle_{\natural} = \sum_{\mu=0}^{3} (\Re Q_\mu)^2 - \sum_{\mu=0}^{3} (\Im Q_\mu)^2
+\langle\tilde{Q}\rangle_{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2, \qquad \Re \langle\tilde{Q}\rangle_{\natural} = \sum_{\mu\in\{t,x,y,z\}} (\Re Q_\mu)^2 - \sum_{\mu\in\{t,x,y,z\}} (\Im Q_\mu)^2
 $$
 
 in the eight real components of $\tilde{Q}$. The failure needs no zero divisor and no exceptional value. At $N = 1$, with the central imaginary unit for coefficient,
 
 $$
-A_1 = i: \qquad \bar A_1 A_1 \, G(0) = i^2 \, \mu(\mathbb{R}^n) = -\mu(\mathbb{R}^n) \, e_0 ,
+A_1 = i: \qquad \bar A_1 A_1 \, G(0) = i^2 \, \mu(\mathbb{R}^n) = -\mu(\mathbb{R}^n) \, e_t ,
 $$
 
 which is negative for every non-zero measure, because $\langle i\rangle_{\natural} = -1$. The scalar imaginary is a unit of the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence **the transform of a measure is not a positive-definite function for $\mathbb{B}$**, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.
@@ -492,10 +492,10 @@ which is negative for every non-zero measure, because $\langle i\rangle_{\natura
 **The repair, and what it costs.** Positivity returns when the norm is replaced by a definite pairing. The integrand of the Euclidean form is a sum of squares of moduli,
 
 $$
-\|Z(\tilde{Q})\|_E^2 = \sum_{\mu=0}^{3} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
+\|Z(\tilde{Q})\|_E^2 = \sum_{\mu\in\{t,x,y,z\}} \lvert Z_\mu(\tilde{Q}) \rvert^2 \ge 0 ,
 $$
 
-so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert_E\neq\lVert Z\rVert_E\lVert W\rVert_E$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_0+ie_1)$ giving $\lVert\tilde\Pi^{2}\rVert_E=\tfrac12$ against $\lVert\tilde\Pi\rVert_E^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert_E^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the roots with $\rho^{*}=-\rho$; the criterion and its proof are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
+so the Euclidean quadratic form is non-negative, and $\|\cdot\|_E$ is the pairing this article already uses for convergence. What the exchange costs is the norm and not the algebra: the Euclidean form is not the biquaternion norm of the transform, and it is not multiplicative on the product, $\lVert ZW\rVert_E\neq\lVert Z\rVert_E\lVert W\rVert_E$ in general, the Hermitian idempotent $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$ giving $\lVert\tilde\Pi^{2}\rVert_E=\tfrac12$ against $\lVert\tilde\Pi\rVert_E^{2}=\tfrac14$. It is nonetheless the scalar part of the sesquilinear product, $\lVert Z\rVert_E^{2}=\mathrm{Sc}(ZZ^{*})=\langle Z,Z\rangle_{*}$, and with the Hermitian conjugation in the second slot it is the pairing that makes the transform of a positive measure positive definite exactly for the roots with $\rho^{*}=-\rho$; the criterion and its proof are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 
 **Two hypotheses, and the same obstruction as before.** The identity requires central coefficients. For quaternion-valued coefficients the products $A_k \chi_{\omega_k}$ do not reassemble, and the two sides differ by terms of order one on random data: the coefficient has to commute with the kernel, which is a genuine restriction and not a technicality of the proof. It also requires a single root for the transform: with two units, one per variable, the collapse $\bar\chi_\omega \chi_\eta = \chi_{\eta - \omega}$ fails as soon as the two units differ, and the identity is false there. The Bochner-type positivity is therefore a one-root, central-coefficient statement even for $\mathbb{H}$, and for $\mathbb{B}$ it fails under those hypotheses as well.
 
@@ -541,7 +541,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 7. **The factorisation of the two-unit transform.** The factorisation of the one-unit transform diagonalises one root. Two roots that do not commute admit no common eigenbasis, so a two-unit kernel with such a pair has no basis in which both units act diagonally, and it is not known whether its transform still reduces to a fixed finite family of complex transforms.
 
-8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. **Answered** in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: the pairing is the general plain sesquilinear form $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$, whose diagonal is the Euclidean form of the section above, and with the Hermitian conjugation in the second slot the transform of a positive measure is positive definite exactly for the roots with $\rho^{*}=-\rho$, the scalar imaginary and the real roots, and not for the genuinely complex ones. What is restored is the positivity, not the norm identity: the norm failure at $A=i$ is root-independent and survives the exchange.
+8. **Positivity for the transform of a measure.** The quadratic form of the transform of a measure is the integral of the norm, and the norm is indefinite, so the biquaternionic form of the Bochner-type hypothesis has no apparent source. **Answered** in *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*: the pairing is the general plain sesquilinear form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$, whose diagonal is the Euclidean form of the section above, and with the Hermitian conjugation in the second slot the transform of a positive measure is positive definite exactly for the roots with $\rho^{*}=-\rho$, the scalar imaginary and the real roots, and not for the genuinely complex ones. What is restored is the positivity, not the norm identity: the norm failure at $A=i$ is root-independent and survives the exchange.
 
 ## Summary
 
@@ -568,12 +568,12 @@ The continuous transform is the limit of the discrete transform as the sampling 
 | $\rho$ | Root of $-1$ in $\mathbb{B}$ fixing the transform; a local notation, not the scalar imaginary $i$ |
 | $\omega$ | Frequency variable, $\omega \in \mathbb{R}$ |
 | $\rho_1, \rho_2$ | Roots of $-1$ attached to the two variables of the two-unit kernel; they need not be equal, and need not commute |
-| $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_2,-\omega_2)W_1(Q_1,-\omega_1)$ |
-| $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_0$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int \langle Z\rangle_{\natural} \, d\mu$ for central coefficients |
-| $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Vector part of a biquaternion |
+| $K = W_1W_2$ | Two-unit kernel, one unit per variable; the order of the factors is part of the definition, and $\langle\tilde{Q},\omega\rangle_{\natural*}^{-1} = W_2(Q_y,-\omega_2)W_1(Q_x,-\omega_1)$ |
+| $\mu$, $G(\omega) = \int \chi_\omega \, d\mu$ | Finite positive measure and its transform; $G(0) = \mu(\mathbb{R}^n)e_t$, and $\sum_{k,l}\bar A_k A_l G(\omega_k-\omega_l) = \int \langle Z\rangle_{\natural} \, d\mu$ for central coefficients |
+| $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | Vector part of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; it vanishes on the zero divisors |
 | $\tilde{\nabla}$ | Biquaternionic gradient on a four-dimensional subspace |
-| $\Box = \partial_0^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian, the scalar part of $\tilde{\nabla}\tilde{\nabla}^{\natural}$ |
 | $\tilde{D} = \tilde{R}^{\natural}\tilde{\nabla}$ | Convective derivative with velocity $\tilde{R}$ |
 
 ## Further Reading

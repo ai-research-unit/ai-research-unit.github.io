@@ -62,8 +62,6 @@ The eight-dimensional real algebras of the corpus are the octonions $\mathbb{O}$
 
 | Algebra | The property it has, and the classification | Introduced in |
 |---|---|---|
-| Octonions $\mathbb{O}$ | dimension $8$; the unique normed eight-dimensional real division algebra; non-associative | *Octonion Algebra* |
-| Octonion units $e_0,\dots,e_7$ | the multiplication table of the Fano plane; $e_0 = 1$ and $e_i^2 = -1$ | *Octonion Algebra* |
 | Split-octonions | dimension $8$; a non-associative algebra with zero divisors and a split form | *Normed Division Algebras and the Hurwitz Theorem* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{D}$; associative with zero divisors, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents | *Split-Biquaternion Algebra* |
 | $\mathbb{O}$ and the split octonions as the two real forms | the definite and the split form; only the definite one is a division algebra | *Normed Division Algebras and the Hurwitz Theorem* |
@@ -72,7 +70,6 @@ The eight-dimensional real algebras of the corpus are the octonions $\mathbb{O}$
 | $\mathbb{B}$ as a complexification | the complexification $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; real dimension $8$ | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | Hurwitz' theorem | the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$, and no others | *Normed Division Algebras and the Hurwitz Theorem* |
 | Cayley–Dickson doubling | the construction producing each dimension from the last and the property lost at each step | *Normed Division Algebras and the Hurwitz Theorem* |
-| Non-example: the octonions as associative | fails associativity: $(e_1 e_2)e_4 \neq e_1(e_2 e_4)$ | *Octonion Algebra* |
 | Non-example: an eight-dimensional associative real division algebra | does not exist: Hurwitz' theorem and Frobenius' theorem leave only $\mathbb{O}$ at dimension $8$ | *Division Algebras* |
 | Non-example: $\mathbb{O}$ as a Clifford algebra | not a Clifford algebra: every Clifford algebra is associative, and $\mathbb{O}$ is not | *The Number Systems as Clifford Algebras* |
 
@@ -84,7 +81,6 @@ The four dimensions are linked by the **Cayley–Dickson doubling**: each algebr
 |---|---|---|---|
 | $\mathbb{R} \to \mathbb{C}$ | dimension $2$ | order: $\mathbb{C}$ is not orderable | *The Complex Numbers* |
 | $\mathbb{C} \to \mathbb{H}$ | dimension $4$ | commutativity: $ij \neq ji$ | *Quaternion Algebra* |
-| $\mathbb{H} \to \mathbb{O}$ | dimension $8$ | associativity: the associator is nonzero | *Octonion Algebra* |
 | $\mathbb{O} \to \mathbb{S}$ | dimension $16$ | the multiplicative norm, and with it the division property | *Normed Division Algebras and the Hurwitz Theorem* |
 | The split variants | dimensions $2$, $4$, $8$ | anisotropy of the norm, producing zero divisors | *Normed Division Algebras and the Hurwitz Theorem* |
 

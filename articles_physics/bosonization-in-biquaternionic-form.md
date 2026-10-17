@@ -18,7 +18,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 The article proceeds as follows. The next section reduces the framework to the two-dimensional arena and fixes the two-dimensional Clifford data. A section states the abelian bosonization dictionary in the framework's notation. A section identifies the module–centre correspondence and states the counting it implies. A section shows how the framework's mass term and its central phase bosonize, and a section treats the anomaly and the central-charge matching. A section states the non-abelian result and its status. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles unless a reduction is stated. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{M}_-=i\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$. The trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$. The series d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. In the two-dimensional reduction the Clifford generators are $\gamma^0,\gamma^1$ with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_2$ and the level-3 tool metric $g=\mathrm{diag}(+1,-1)$, so that $(\gamma^0)^2=+I_2$ and $(\gamma^1)^2=-I_2$; the chirality operator is $\gamma^5=\gamma^0\gamma^1$ and $(\gamma^5)^2=+I_2$; the antisymmetric symbol is $\epsilon^{01}=+1$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Trace Anomaly in Biquaternionic Form*, and *The Theta Vacuum in Biquaternionic Form*.
+**Conventions.** We use those of the companion articles unless a reduction is stated. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{M}_-=i\mathbb{M}_+$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$. The trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_t)=2$. The series d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2_{ict}+\Delta$. In the two-dimensional reduction the Clifford generators are $\gamma^0,\gamma^1$ with $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_2$ and the level-3 tool metric $g=\mathrm{diag}(+1,-1)$, so that $(\gamma^0)^2=+I_2$ and $(\gamma^1)^2=-I_2$; the chirality operator is $\gamma^5=\gamma^0\gamma^1$ and $(\gamma^5)^2=+I_2$; the antisymmetric symbol is $\epsilon^{01}=+1$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, *The Trace Anomaly in Biquaternionic Form*, and *The Theta Vacuum in Biquaternionic Form*.
 
 ## The Two-Dimensional Arena
 
@@ -44,7 +44,7 @@ and the chiral projectors $\tilde\Pi_{L,R}=\tfrac12(1\pm\gamma^5)$ project onto 
 
 **The boson.** The boson is a single real scalar field $\phi(x)$, whose exponentiated field $\exp(2i\sqrt{\pi}\phi)$ is, in the framework's terms, a **central** object: the exponent carries the central $i$, and a central scalar commutes with every element of $\mathbb{B}$. The boson's stress tensor is a central scalar, and its free action
 $$
-S_{\mathrm{b}} = \frac{1}{2}\int d^2x\;\partial_\mu\phi\,\partial^\mu\phi
+S_{\mathrm{b}} = \frac{1}{2}\int d^2x\;\sum_\mu\partial/\partial Q_\mu\phi\,\partial/\partial Q_\mu\phi
 $$
 is the two-dimensional restriction of the framework's scalar action with the series $\Box$ and the $ict$ metric. The bosonic side is therefore the central sector's dynamics, and this is the identification the next sections use.
 
@@ -60,9 +60,9 @@ $$
 $$
 and the fermion number current's divergence vanishes while the axial current's does not:
 $$
-\partial_\mu j^\mu = 0 ,
+\langle\tilde\nabla,\tilde j\rangle_{\natural} = 0 ,
 \qquad
-\partial_\mu j^\mu_5 = -\frac{1}{\pi}\,\Box\phi .
+\langle\tilde\nabla,\tilde j_5\rangle_{\natural} = -\frac{1}{\pi}\,\Box\phi .
 $$
 The first relation is the current correspondence; the second is the mass correspondence, which is the sine-Gordon interaction; and the third is the anomaly, which is the statement that the axial current is not conserved. These are standard (Coleman 1975; Mandelstam 1975; von Delft and Schoeller 1998), and the framework does not alter them.
 
@@ -90,9 +90,9 @@ $$
 $$
 two complex dimensions, carrying the Dirac field, its Clifford action, and the current algebra built from its bilinears. On the bosonic side stands the centre,
 $$
-\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0,ie_0\} \cong \mathbb{C} ,
+\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t,ie_t\} \cong \mathbb{C} ,
 $$
-one complex dimension, and the real boson is its real part $\mathbb{R}e_0$ — the fixed space of coefficient conjugation — a single real dimension carrying the exponentiated field. Bosonization identifies an operator algebra built on the first with an operator algebra built on the second.
+one complex dimension, and the real boson is its real part $\mathbb{R}e_t$ — the fixed space of coefficient conjugation — a single real dimension carrying the exponentiated field. Bosonization identifies an operator algebra built on the first with an operator algebra built on the second.
 
 **The counting.** The equivalence's counting is the standard match between a complex fermion and a real boson. A complex (Dirac) fermion in two dimensions has four real components, which assemble into two Majorana fields of central charge $c=\tfrac12$ each; a real boson has $c=1$. The two sides therefore agree, and the agreement is the arithmetic
 $$
@@ -132,7 +132,7 @@ the second form exhibiting the sine-Gordon parameters $\beta=2\sqrt\pi$ and $\mu
 $$
 \bar\psi\psi \;\longleftrightarrow\; \cos\big(2\sqrt{\pi}\,\phi+\alpha\big),
 $$
-i.e. the fermion mass's phase is a **shift of the boson field**. In the framework the mass's phase is a central phase $\exp(i\alpha)e_0$, the same object as the $\theta$ vacuum's weighting of *The Theta Vacuum in Biquaternionic Form*, and the shift it induces is the two-dimensional instance of the statement that a $\theta$ angle is a bosonic vacuum angle. The framework's statement is therefore exact and structural: the central phase of the mass is the central phase of the vacuum, and bosonization realises it as a field shift.
+i.e. the fermion mass's phase is a **shift of the boson field**. In the framework the mass's phase is a central phase $\exp(i\alpha)e_t$, the same object as the $\theta$ vacuum's weighting of *The Theta Vacuum in Biquaternionic Form*, and the shift it induces is the two-dimensional instance of the statement that a $\theta$ angle is a bosonic vacuum angle. The framework's statement is therefore exact and structural: the central phase of the mass is the central phase of the vacuum, and bosonization realises it as a field shift.
 
 **The $\gamma^5$ structure.** The two-dimensional $\gamma^5$ squares to $+I_2$, so the chiral projectors are real and the two chiralities are Majorana–Weyl spinors. This is why the bosonized mass is a **cosine** rather than a phase: the mass term pairs the two real chiralities, and its bosonized image is a real, doubly-periodic function of the field. In four dimensions the corresponding object squares to $-I_4$ and the chiralities are complex; the change of the sign of $(\gamma^5)^2$ between two and four dimensions is thus the algebraic reason the bosonized mass is a cosine in two dimensions. This is a genuine, checkable statement, and it was verified.
 
@@ -164,7 +164,7 @@ The fermionic side of the dictionary is built from vertex operators, and their d
 $$
 \big[j^0(x),j^1(y)\big] = \frac{i}{\pi}\,\delta'(x-y),
 $$
-the **Schwinger term**. The term is the two-dimensional anomaly's coordinate-space form, and its coefficient is the same $1/\pi$ that appears in $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$. In the framework the normalisation of the current algebra is a statement about the $U(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
+the **Schwinger term**. The term is the two-dimensional anomaly's coordinate-space form, and its coefficient is the same $1/\pi$ that appears in $\partial_\mu j^\mu_5=-\tfrac1\pi\Box\phi$. In the framework the normalisation of the current algebra is a statement about the $\mathrm{U}(1)$ current built from the module's bilinear; the Schwinger term lives in the coefficient and not in the algebra, exactly as before.
 
 **Vertex operators.** The bosonized fermion is an exponential of the boson field, the **vertex operator**
 $$
@@ -180,7 +180,7 @@ with $\phi_{L,R}$ the chiral halves of $\phi$ and $\Delta$ the scaling dimension
 $$
 T = \tfrac12\,:\!\partial\phi\,\partial\phi\!:,
 $$
-whose central charge is $c=1$ in the standard normalisation, matching the fermionic $c=1$ of the central-charge section. The framework adds nothing beyond naming the current's $U(1)$ as the abelian part of the module's symmetry; the non-abelian Sugawara construction belongs to the group theory of the next section.
+whose central charge is $c=1$ in the standard normalisation, matching the fermionic $c=1$ of the central-charge section. The framework adds nothing beyond naming the current's $\mathrm{U}(1)$ as the abelian part of the module's symmetry; the non-abelian Sugawara construction belongs to the group theory of the next section.
 
 ## The Non-Abelian Case and the Wess–Zumino Term
 
@@ -230,7 +230,7 @@ $$
 \qquad
 \bar\psi\psi\longleftrightarrow-\frac{1}{\pi\alpha}\cos\big(2\sqrt\pi\,\phi\big),
 \qquad
-\partial_\mu j^\mu_5=-\frac{1}{\pi}\Box\phi ,
+\langle\tilde\nabla,\tilde j_5\rangle_{\natural}=-\frac{1}{\pi}\Box\phi ,
 $$
 and the framework's contribution is to name the two sides: the fermion is the spinor module $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ and the boson is a central scalar, so that the equivalence is a correspondence between a module-valued operator algebra and the centre's exponentiated algebra. The counting $c_{\text{Dirac}}=2\times\tfrac12=1=c_{\text{boson}}$ matches the central charges, the framework's linear chirality-off-diagonal mass bosonizes to the cosine, and the mass's central phase bosonizes to a shift of the boson field, the same central phase that weights the $\theta$ vacuum. The dictionary, the sine-Gordon equivalence, the Schwinger model, and the non-abelian case with its Wess–Zumino term are standard and transcribed.
 
@@ -239,7 +239,7 @@ and the framework's contribution is to name the two sides: the fermion is the sp
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ | Centre; home of the boson field |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the boson field |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Spinor module; home of the Dirac field |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; extracts central scalars from bilinears |
 | $g=\mathrm{diag}(+1,-1)$ | Two-dimensional level-3 Clifford metric |

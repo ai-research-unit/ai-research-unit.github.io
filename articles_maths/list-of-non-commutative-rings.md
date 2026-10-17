@@ -27,7 +27,6 @@ The matrix ring is the standard non-commutative ring: it is simple when the coef
 | $\mathbb{H}$ | $\mathbb{R}$ | none | a division ring, and a domain | *Quaternion Algebra* |
 | $\mathbb{B}$, the biquaternions | $\mathbb{C}$ | yes | isomorphic to $M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | $\mathbb{D}$ | yes | isomorphic to $\mathbb{H} \oplus \mathbb{H}$ via the idempotents $\tilde\Pi_{1,2}$ | *Split-Biquaternion Algebra* |
-| $\mathbb{O}$, the octonions | $\mathbb{R}$ | none | not a ring: the multiplication is not associative | *Octonion Algebra* |
 
 The three eight-dimensional relatives of $\mathbb{H}$ differ exactly in the sign of the norm, and the sign decides whether a zero divisor exists. The biquaternions have the algebraically closed centre $\mathbb{C}$ and split as $M_2(\mathbb{C})$; the split-biquaternions have the split centre $\mathbb{D} = \mathbb{R}[j]/(j^2-1)$ and split as $\mathbb{H} \oplus \mathbb{H}$ through the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$, which satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$. The octonions are excluded from the list of rings by non-associativity and not by a zero divisor.
 
@@ -86,7 +85,6 @@ The losses accumulate from the first row to the last: the commutative theory of 
 
 | Object | Why it is not a non-commutative ring of this list | Introduced in |
 |---|---|---|
-| $\mathbb{O}$, the octonions | not associative, so not a ring | *Octonion Algebra* |
 | $\mathbb{S}$, the sedenions | not associative, and with zero divisors | *Division Algebras* |
 | $\mathbb{D}$, the split-complex numbers | commutative, with zero divisors | *Split-Complex Algebra* |
 | $\mathbb{D}'$, the dual numbers | commutative, with a nilpotent | *Dual-Numbers Algebra* |

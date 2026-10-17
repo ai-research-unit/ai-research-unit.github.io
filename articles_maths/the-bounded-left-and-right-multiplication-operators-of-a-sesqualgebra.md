@@ -118,7 +118,7 @@ is bounded with $\lVert \operatorname{ad}_a\rVert \leq 2\lVert a\rVert$, and it 
 
 ### The Bounded Part
 
-**Definition.** Let $A$ be a topological sesqualgebra. An element $a$ has **bounded multiplication** if there is a neighbourhood $U$ of $0$ in $A$ such that $L_a(U)$ and $R_a(U)$ are bounded, and the **bounded part** is
+**Definition.** Let $A$ be a topological sesqualgebra. An element $a$ has **bounded multiplication** if there is a neighbourhood $\Omega$ of $0$ in $A$ such that $L_a(\Omega)$ and $R_a(\Omega)$ are bounded, and the **bounded part** is
 
 $$
 A_b = \{a \in A : L_a \text{ and } R_a \text{ are bounded on a neighbourhood of } 0\} .
@@ -130,7 +130,7 @@ $$
 
 **Theorem (the bounded part is a two-sided ideal in the associative case).** If the product of $A$ is associative then $A_b$ is a two-sided ideal of $A$.
 
-*Proof.* Already a submodule by the proposition. Let $a \in A_b$, witnessed by $U$, and let $b \in A$. The operators $L_b$ and $R_b$ are continuous, hence carry bounded sets to bounded sets by *Bounded Operators on a Topological Vector Space*, §*Boundedness on a General Topological Vector Space*. For $a \star b$ take $V = U \cap L_b^{-1}(U)$: then $L_{a \star b}(V) = L_a(L_b(V)) \subseteq L_a(U)$ is bounded, and $R_{a \star b}(V) = R_b(R_a(V)) \subseteq R_b(R_a(U))$ is bounded because $R_a(U)$ is bounded and $R_b$ carries bounded sets to bounded sets. For $b \star a$ take $W = U \cap R_b^{-1}(U)$: then $R_{b \star a}(W) = R_a(R_b(W)) \subseteq R_a(U)$ is bounded, and $L_{b \star a}(W) = L_b(L_a(W)) \subseteq L_b(L_a(U))$ is bounded because $L_a(U)$ is bounded. So $a \star b$ and $b \star a$ lie in $A_b$, and $A_b$ is a two-sided ideal.
+*Proof.* Already a submodule by the proposition. Let $a \in A_b$, witnessed by $\Omega$, and let $b \in A$. The operators $L_b$ and $R_b$ are continuous, hence carry bounded sets to bounded sets by *Bounded Operators on a Topological Vector Space*, §*Boundedness on a General Topological Vector Space*. For $a \star b$ take $V = \Omega \cap L_b^{-1}(\Omega)$: then $L_{a \star b}(V) = L_a(L_b(V)) \subseteq L_a(\Omega)$ is bounded, and $R_{a \star b}(V) = R_b(R_a(V)) \subseteq R_b(R_a(\Omega))$ is bounded because $R_a(\Omega)$ is bounded and $R_b$ carries bounded sets to bounded sets. For $b \star a$ take $W = \Omega \cap R_b^{-1}(\Omega)$: then $R_{b \star a}(W) = R_a(R_b(W)) \subseteq R_a(\Omega)$ is bounded, and $L_{b \star a}(W) = L_b(L_a(W)) \subseteq L_b(L_a(\Omega))$ is bounded because $L_a(\Omega)$ is bounded. So $a \star b$ and $b \star a$ lie in $A_b$, and $A_b$ is a two-sided ideal.
 
 **Remark (the gap the bounded part measures).** Separate continuity of the product gives the continuity of $L_a$ and $R_a$ for every element, and every continuous operator carries bounded sets to bounded sets by *Bounded Operators on a Topological Vector Space*, §*Boundedness on a General Topological Vector Space*: the bornological reading of "bounded multiplication" would therefore give $A_b = A$ and no information. The definition above asks for the stronger property that a single neighbourhood be mapped into a bounded set, which is what makes an element behave as an element of a normed sesqualgebra and which can fail on a general topological sesqualgebra. On a normed object the unit ball is such a neighbourhood and there is no gap and $A_b = A$, so the bounded part is the part of the object on which the topological layer and the normed layer agree.
 

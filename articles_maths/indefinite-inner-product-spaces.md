@@ -52,7 +52,7 @@ $$
 
 **Proof.** Sylvester's law gives the normal form $\mathrm{diag}(1,\ldots,1,-1,\ldots,-1)$, and two normal forms with the same signature are congruent by a permutation of the basis.
 
-**Theorem (classification over $\mathbb{C}$).** A non-degenerate Hermitian form on a finite-dimensional complex space is determined up to congruence by its **signature** $(n,m)$, and the isometry group is the unitary group $U(n,m)$.
+**Theorem (classification over $\mathbb{C}$).** A non-degenerate Hermitian form on a finite-dimensional complex space is determined up to congruence by its **signature** $(n,m)$, and the isometry group is the unitary group $\mathrm{U}(n,m)$.
 
 **Proof.** For a Hermitian form over $\mathbb{C}$ the scalar square $[\lambda x,\lambda x] = |\lambda|^{2}[x,x]$ is real and its sign is unchanged by the scaling, so the sign of a diagonal entry is an invariant and the normal form $\mathrm{diag}(1,\ldots,1,-1,\ldots,-1)$ cannot be altered beyond a permutation; the argument is the one over $\mathbb{R}$ with $|\lambda|^{2}$ in place of $\lambda^{2}$.
 

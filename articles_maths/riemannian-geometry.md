@@ -13,7 +13,7 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 
 ### Metrics and Isometries
 
-**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A **Riemannian manifold** is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x^i$ the **first fundamental form** is $ds^2 = \sum_{ij} g_{ij}\,dx^i dx^j$ with $g_{ij} = g(\partial_{x^i}, \partial_{x^j})$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law
+**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth section $g$ of the bundle $S^2T^*M$ of symmetric bilinear forms such that $g_n$ is positive definite on $T_pM$ for every $n$. A **Riemannian manifold** is a pair $(M, g)$, and $n = \dim M$. In a chart with coordinates $x^i$ the **first fundamental form** is $ds^2 = \sum_{ij} g_{ij}\,dx^i dx^j$ with $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$, a symmetric positive definite matrix of smooth functions, and the metric determines and is determined by these coefficients with the transformation law
 
 $$
 g'_{kl} = \sum_{ij} g_{ij}\,\frac{\partial x^i}{\partial y^k}\frac{\partial x^j}{\partial y^l}
@@ -76,7 +76,7 @@ $$
 **Definition.** In a coordinate frame the connection is described by the **Christoffel symbols**
 
 $$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr),
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr),
 $$
 
 which are symmetric in $i, j$, and the connection form is $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$.
@@ -135,7 +135,7 @@ If the curvature is isotropic with value $K$ at each point then $\operatorname{R
 
 ### Geodesics and the Exponential Map
 
-**Definition.** A **geodesic** is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$. A geodesic is **complete** if it is defined for all real $t$. The **exponential map** at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is **geodesically complete** if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.
+**Definition.** A **geodesic** is a curve with $\nabla_{\gamma'}\gamma' = 0$; in a chart it satisfies $d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$. A geodesic is **complete** if it is defined for all real $t$. The **exponential map** at $n$ is $\exp_n(v) = \gamma_v(1)$ for the maximal geodesic with $\gamma_v(0) = n$, $\gamma_v'(0) = v$, and the manifold is **geodesically complete** if $\exp_n$ is defined on all of $T_pM$ for one, hence every, $n$.
 
 **Theorem.** Every geodesic has constant speed: $g(\gamma', \gamma')$ is constant along $\gamma$, and a geodesic parametrised by arclength is locally minimising.
 
@@ -147,7 +147,7 @@ $$
 
 The local minimising property is the Gauss lemma and the first-variation computation of *Curvature and Geodesics*.
 
-**Definition.** The **normal coordinates** at $n$ are the coordinates $x^i$ defined by $x = \exp_n(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial_k g_{ij}(n) = 0$, and
+**Definition.** The **normal coordinates** at $n$ are the coordinates $x^i$ defined by $x = \exp_n(v)$, $x^i = v^i$ for an orthonormal basis $e_i$ of $T_pM$. In them $g_{ij}(n) = \delta_{ij}$, $\partial/\partial x^k\,g_{ij}(n) = 0$, and
 
 $$
 g_{ij}(x) = \delta_{ij} - \frac{1}{3}\sum_{k,l} R_{ikjl}(n)\,x^kx^l + O(|x|^3),
@@ -187,7 +187,7 @@ $$
 \frac{D^2J}{dt^2} + R(J, \gamma')\gamma' = 0 ,
 $$
 
-where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is the linearisation of the geodesic equation: $J$ is the variation field of a family of geodesics, $\partial_s\gamma_s$ at $s = 0$.
+where $D/dt$ is the covariant derivative along $\gamma$. The Jacobi equation is the linearisation of the geodesic equation: $J$ is the variation field of a family of geodesics, $\partial\gamma_s/\partial s$ at $s = 0$.
 
 **Proposition.** The Jacobi fields along a geodesic form a real vector space of dimension $2n$, and the map from a Jacobi field to its initial data $(J(0), \tfrac{DJ}{dt}(0))$ is a linear isomorphism onto $T_{\gamma(0)}M \oplus T_{\gamma(0)}M$.
 

@@ -129,7 +129,7 @@ $$
 \|y_t\|_\infty \le \|\phi\|_\infty\, \exp(Mt) \qquad (t \ge 0).
 $$
 
-*Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $u(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $u(t) \le \|\phi\|_\infty + M\int_\sigma^t u(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
+*Proof.* The integral equation $y(t) = \phi(0) + \int_\sigma^t(Ay(s)+By(s-r))\,ds$ gives, for the supremum $q(t) = \sup_{\sigma-r\le s\le t}\|y(s)\|$, the inequality $q(t) \le \|\phi\|_\infty + M\int_\sigma^t q(s)\,ds$; Gronwall's inequality of the preceding article gives the bound.
 
 ## Stability and Lyapunov Functionals
 
@@ -162,12 +162,12 @@ The spectral criterion is available only for linear equations with constant coef
 **Definition.** A **Lyapunov functional** for the equation $y'(t) = f(t,y_t)$ is a continuous functional $V : \mathbb{R}\times C \to \mathbb{R}$ that is positive definite, $V(t,0)=0$ and $V(t,\phi) \ge w(\|\phi(0)\|)$ for a continuous increasing $w$ with $w(0)=0$, and whose **right derivative** along solutions,
 
 $$
-\dot V(t,\phi) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\phi)\bigr) - V(t,\phi)}{h},
+\left(dV/dt\right)(t,\phi) = \limsup_{h\to0^+}\frac{V\bigl(t+h, y_{t+h}(t,\phi)\bigr) - V(t,\phi)}{h},
 $$
 
 is nonpositive, where $y_{t+h}(t,\phi)$ is the history of the solution starting from $\phi$ at time $t$.
 
-**Theorem (Lyapunov stability).** If a Lyapunov functional exists with $\dot V \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $\dot V \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.
+**Theorem (Lyapunov stability).** If a Lyapunov functional exists with $dV/dt \le 0$ for all $(t,\phi)$, the zero solution is stable; if in addition $dV/dt \le -w_1(\|\phi(0)\|)$ for a positive definite $w_1$ and $V$ is bounded above on bounded sets by $w_2(\|\phi\|_\infty)$, the zero solution is asymptotically stable.
 
 *Proof.* This is the direct method of Lyapunov, transplanted from finite dimensions: the monotonicity of $t \mapsto V(t,y_t)$ confines the solution to sublevel sets of $V$, which are neighbourhoods of the origin by positive definiteness, and the stronger decay condition forces the solution to the origin, the boundedness of $V$ on bounded sets providing the uniformity in the initial history.
 
@@ -179,9 +179,9 @@ $$
 
 has derivative along a solution equal to $-2a\phi(0)^2 + 2b\phi(0)\phi(-r) + \mu\bigl(\phi(0)^2 - \phi(-r)^2\bigr)$ up to the boundary term of the integral, and choosing $\mu$ large enough makes the expression negative definite; hence the zero solution is asymptotically stable. The condition $|b|<a$ is sufficient but not necessary, the sharp condition being the spectral one.
 
-**Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\dot V(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\theta, y(t+\theta)) \le V(t,y(t))$ for all $\theta \in [-r,0]$, where $\dot V$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
+**Theorem (Razumikhin).** Suppose there is a continuous $V : \mathbb{R}\times X \to \mathbb{R}$ with $V(t,0)=0$, $V$ positive definite, and $\left(dV/dt\right)(t,y(t)) \le -w(\|y(t)\|)$ whenever $V(t+\theta, y(t+\theta)) \le V(t,y(t))$ for all $\theta \in [-r,0]$, where $dV/dt$ is the derivative along the solution of the associated ordinary equation. Then the zero solution is asymptotically stable.
 
-*Proof.* If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $\dot V < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.
+*Proof.* If $V(t,y(t))$ were to increase at some time, there would be, by continuity and by the condition of the history at that time, a first time at which $V(t,y(t))$ equals its previous maximum over $[t-r,t]$; at that time the hypothesis applies and gives $dV/dt < 0$, a contradiction. Hence $V(t,y(t))$ is nonincreasing, and the argument proceeds as in the direct method.
 
 Razumikhin's method avoids the integral over the history, at the cost of a hypothesis on the whole history only at the instants at which the maximum is attained; it is the more flexible tool for a nonlinearity that depends on the past through a bounded function.
 
@@ -268,7 +268,7 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 | $\Delta(\lambda)$ | Characteristic matrix of a general linear functional equation |
 | $T(t)$ | Solution operator on $C$, $T(t)\phi = y_t$ |
 | $K(t)$ | Fundamental solution of the inhomogeneous linear equation |
-| $V(t,\phi)$ | Lyapunov functional; $\dot V$ its right derivative along solutions |
+| $V(t,\phi)$ | Lyapunov functional; $dV/dt$ its right derivative along solutions |
 | $L$ | Bounded linear map $C \to X$ of a linear functional equation |
 | $\eta$ | Matrix-valued measure representing $L$ |
 | Razumikhin condition | A decrease condition imposed when $V$ is at its historical maximum |

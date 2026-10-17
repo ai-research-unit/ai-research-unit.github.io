@@ -5,12 +5,12 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles both its action on itself and its module theory. A module over a general ring is an intractable object; a module over $\mathbb{B}$ is a direct sum of copies of a single two-dimensional module $S=\mathbb{C}^2$, and the category of modules is the linear algebra of $\mathbb{C}$ with every dimension doubled. The algebra acting on its own additive group by its multiplication gives the **regular module**, the object cut from the same multiplication as the algebra: its submodules are the ideals, it is cyclic on the unit, faithful, free of rank one, a generator and the identity of the tensor product, and its endomorphism ring recovers the algebra, its opposite or its centre according to which of the two actions is kept. This article develops both in the concrete case of $\mathbb{B}$: the three regular objects and their four properties, the defining module, the classification of modules, the parity that decides freeness, the endomorphism algebras, the Morita equivalence with $\mathbb{C}$, the degeneration of torsion, and the descent to the real form. The regular object is at once the smallest module the algebra has and the universal one.
 
-The general theory is used, not repeated. The definitions and the isomorphism theorems are those of *Modules over an Algebra*, the simple and semisimple theory is *Simple and Semisimple Modules*, the Morita theorem is *Morita Equivalence*, the balanced product is *The Balanced Product over an Algebra*, and base change is *Change of Rings*. The general theory of the regular object is *The Regular Module and the Regular Bimodule* for the three regular objects, the correspondence with the ideals, the four properties and the endomorphism ring, with *The Balanced Product* for the tensor product and its universal property, and *Modules* and *Direct Sums, Free Modules and Rank* for submodules, free modules and rank. The quaternionic side of the comparison is *Quaternion Ideals and Simplicity*, which owns the module theory over the division ring, and the companion ring-based reading of the same additive group is *The Realification and the Effect of the Change of Scalars*. What is added here is the module theory of the system $\mathbb{B}$ itself. The algebra conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$; the central imaginary $i$ with $i^2=-1$; the idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, the two associated idempotents of the root $ie_3$ of $+1$, $(ie_3)^2=e_0$, and the off-diagonal elements $\vec\Upsilon_1=\tfrac12(ie_1-e_2)$, $\vec\Upsilon_2=\tfrac12(ie_1+e_2)$ generating the Peirce decomposition, as in *Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
+The general theory is used, not repeated. The definitions and the isomorphism theorems are those of *Modules over an Algebra*, the simple and semisimple theory is *Simple and Semisimple Modules*, the Morita theorem is *Morita Equivalence*, the balanced product is *The Balanced Product over an Algebra*, and base change is *Change of Rings*. The general theory of the regular object is *The Regular Module and the Regular Bimodule* for the three regular objects, the correspondence with the ideals, the four properties and the endomorphism ring, with *The Balanced Product* for the tensor product and its universal property, and *Modules* and *Direct Sums, Free Modules and Rank* for submodules, free modules and rank. The quaternionic side of the comparison is *Quaternion Ideals and Simplicity*, which owns the module theory over the division ring, and the companion ring-based reading of the same additive group is *The Realification and the Effect of the Change of Scalars*. What is added here is the module theory of the system $\mathbb{B}$ itself. The algebra conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$*: the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$, $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the central imaginary $i$ with $i^2=-1$; the idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the two associated idempotents of the root $i\vec e_z$ of $+1$, $(i\vec e_z)^2=e_t$, and the off-diagonal elements $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ generating the Peirce decomposition, as in *Idempotents of the Biquaternion Algebra* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
-A generic element is $\tilde Q$, an idempotent is $\tilde\Pi$, and the two one-sided multiplications are
+Generic elements are $\tilde Q_1$ and $\tilde Q_2$, an idempotent is $\tilde\Pi$, and the two one-sided multiplications are
 
 $$
-L_{\tilde Q}(\tilde R)=\tilde Q\tilde R,\qquad R_{\tilde Q}(\tilde R)=\tilde R\tilde Q .
+L_{\tilde Q_1}(\tilde Q_2)=\tilde Q_1\tilde Q_2,\qquad R_{\tilde Q_1}(\tilde Q_2)=\tilde Q_2\tilde Q_1 .
 $$
 
 Two ownership notes fix the boundaries of the article. The norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$, its vanishing, the invertibility criterion $\langle\tilde Q\rangle_{\natural}\neq0$, the group of units $\mathbb{B}^\times$ and the zero divisors are the content of *Norm and Invertibility in the General Quaternionic Algebra* and are cited here rather than restated; they are used only in the one place where they bear on the module category, the degeneration of torsion. The group-theoretic side — Schur's lemma for group representations, the defining representation and the half-spin representations, the Clebsch–Gordan rule — is *Biquaternion Rotations and Lorentz Transformations*; this article is about the modules, and it does not carry the group theory.
@@ -22,25 +22,25 @@ Two ownership notes fix the boundaries of the article. The norm $\langle\tilde Q
 **Definition.** The **left regular module** ${}_{\mathbb{B}}\mathbb{B}$ is the additive group $(\mathbb{B},+)$ with the scalar multiplication
 
 $$
-\mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B},\qquad (\tilde Q,\tilde R)\mapsto \tilde Q\tilde R ,
+\mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B},\qquad (\tilde Q_1,\tilde Q_2)\mapsto \tilde Q_1\tilde Q_2 ,
 $$
 
 the multiplication of the algebra itself.
 
-**Proposition (the module axioms are the ring axioms).** ${}_{\mathbb{B}}\mathbb{B}$ is a left $\mathbb{B}$-module. The four module axioms are the two distributive laws, the associativity and the unit law of $\mathbb{B}$, each read as a module axiom, and the derived identities $0\tilde R=0$ and $(-\tilde Q)\tilde R=-(\tilde Q\tilde R)$ hold because they already hold in $\mathbb{B}$. In particular $\mathbb{B}$ is a left $\mathbb{B}$-module of complex dimension four, and the same carrier with the same multiplication is a left module over $\mathbb{B}$, not a new object built from it.
+**Proposition (the module axioms are the ring axioms).** ${}_{\mathbb{B}}\mathbb{B}$ is a left $\mathbb{B}$-module. The four module axioms are the two distributive laws, the associativity and the unit law of $\mathbb{B}$, each read as a module axiom, and the derived identities $0\tilde Q_2=0$ and $(-\tilde Q_1)\tilde Q_2=-(\tilde Q_1\tilde Q_2)$ hold because they already hold in $\mathbb{B}$. In particular $\mathbb{B}$ is a left $\mathbb{B}$-module of complex dimension four, and the same carrier with the same multiplication is a left module over $\mathbb{B}$, not a new object built from it.
 
-**Proof.** The distributivity of the action in the scalar and in the vector is the two distributive laws of $\mathbb{B}$, the compatibility $(\tilde P\tilde Q)\tilde R=\tilde P(\tilde Q\tilde R)$ is the associativity, and $e_0\tilde R=\tilde R$ is the unit law. The derived identities are the elementary properties of *Modules*.
+**Proof.** The distributivity of the action in the scalar and in the vector is the two distributive laws of $\mathbb{B}$, the compatibility $(\tilde Q_1\tilde Q_2)\tilde Q_3=\tilde Q_1(\tilde Q_2\tilde Q_3)$ is the associativity, and $e_t\tilde Q_3=\tilde Q_3$ is the unit law. The derived identities are the elementary properties of *Modules*.
 
 ### The right regular module
 
-**Definition.** The **right regular module** $\mathbb{B}_{\mathbb{B}}$ is $(\mathbb{B},+)$ with the right scalar multiplication $(\tilde R,\tilde Q)\mapsto \tilde R\tilde Q$, which is the same multiplication read on the right.
+**Definition.** The **right regular module** $\mathbb{B}_{\mathbb{B}}$ is $(\mathbb{B},+)$ with the right scalar multiplication $(\tilde Q_2,\tilde Q_1)\mapsto \tilde Q_2\tilde Q_1$, which is the same multiplication read on the right.
 
 ### The regular bimodule
 
 **Definition.** The left action and the right action of $\mathbb{B}$ on $(\mathbb{B},+)$, taken together, make it a **bimodule** ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. The two actions commute,
 
 $$
-\tilde A(\tilde R\tilde B)=(\tilde A\tilde R)\tilde B \qquad (\tilde A,\tilde B,\tilde R\in\mathbb{B}),
+\tilde A(\tilde Q\tilde B)=(\tilde A\tilde Q)\tilde B \qquad (\tilde A,\tilde B,\tilde Q\in\mathbb{B}),
 $$
 
 which is the associativity of $\mathbb{B}$ once more: the two scalar multiplications of the bimodule are the two readings of one product.
@@ -51,7 +51,7 @@ which is the associativity of $\mathbb{B}$ once more: the two scalar multiplicat
 
 **Theorem.** Let $L\subseteq\mathbb{B}$ be an additive subgroup. Then $L$ is a submodule of ${}_{\mathbb{B}}\mathbb{B}$ if and only if $L$ is a left ideal of $\mathbb{B}$; $L$ is a submodule of $\mathbb{B}_{\mathbb{B}}$ if and only if $L$ is a right ideal; and $L$ is a sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ if and only if $L$ is a two-sided ideal.
 
-**Proof.** A submodule of ${}_{\mathbb{B}}\mathbb{B}$ is an additive subgroup closed under $\tilde Q\tilde R$ for all $\tilde Q\in\mathbb{B}$ and $\tilde R\in L$, and that is the definition of a left ideal. The scalar action of ${}_{\mathbb{B}}\mathbb{B}$ is by construction the multiplication of $\mathbb{B}$, so the two conditions are the same formula and not two equivalent ones. The right-handed statement is the same argument with the multiplication read on the right, and the two-sided statement applies both readings at once.
+**Proof.** A submodule of ${}_{\mathbb{B}}\mathbb{B}$ is an additive subgroup closed under $\tilde Q_1\tilde Q_2$ for all $\tilde Q_1\in\mathbb{B}$ and $\tilde Q_2\in L$, and that is the definition of a left ideal. The scalar action of ${}_{\mathbb{B}}\mathbb{B}$ is by construction the multiplication of $\mathbb{B}$, so the two conditions are the same formula and not two equivalent ones. The right-handed statement is the same argument with the multiplication read on the right, and the two-sided statement applies both readings at once.
 
 **Corollary (the lattice of ideals is the lattice of submodules).** The identity map on subsets of $\mathbb{B}$ is an isomorphism of the lattice of submodules of ${}_{\mathbb{B}}\mathbb{B}$ onto the lattice of left ideals of $\mathbb{B}$, preserving inclusion, intersection and sum; likewise for the right ideals and for the two-sided ideals of the bimodule.
 
@@ -61,21 +61,21 @@ which is the associativity of $\mathbb{B}$ once more: the two scalar multiplicat
 
 ### Cyclic and faithful
 
-**Proposition.** ${}_{\mathbb{B}}\mathbb{B}$ is **cyclic**, generated by the unit: ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}e_0$, since $\tilde R=\tilde R e_0$. It is **faithful**: its annihilator
+**Proposition.** ${}_{\mathbb{B}}\mathbb{B}$ is **cyclic**, generated by the unit: ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}e_t$, since $\tilde Q=\tilde Q e_t$. It is **faithful**: its annihilator
 
 $$
-\operatorname{Ann}({}_{\mathbb{B}}\mathbb{B})=\{\tilde Q:\tilde Q\tilde R=0 \text{ for all } \tilde R\in\mathbb{B}\}
+\operatorname{Ann}({}_{\mathbb{B}}\mathbb{B})=\{\tilde Q_1:\tilde Q_1\tilde Q_2=0 \text{ for all } \tilde Q_2\in\mathbb{B}\}
 $$
 
-is zero, since $\tilde Q e_0=\tilde Q$.
+is zero, since $\tilde Q_1 e_t=\tilde Q_1$.
 
-**Proof.** The two statements are the computations $\tilde R=\tilde R e_0$ and $\tilde Q e_0=0\Rightarrow \tilde Q=0$. The same two computations with the multiplication read on the right give the cyclicity and the faithfulness of $\mathbb{B}_{\mathbb{B}}$ and of the bimodule.
+**Proof.** The two statements are the computations $\tilde Q_2=\tilde Q_2 e_t$ and $\tilde Q_1 e_t=0\Rightarrow \tilde Q_1=0$. The same two computations with the multiplication read on the right give the cyclicity and the faithfulness of $\mathbb{B}_{\mathbb{B}}$ and of the bimodule.
 
 ### Free of rank one
 
-**Proposition.** ${}_{\mathbb{B}}\mathbb{B}$ is **free of rank one**, with basis $\{e_0\}$: the expansion $\tilde R=\tilde R e_0$ is unique, because a linear combination of the single basis element $e_0$ with coefficient $\tilde R$ is $\tilde R e_0$ and determines $\tilde R$. Hence ${}_{\mathbb{B}}\mathbb{B}$ is finitely generated, projective and free of rank one, and the same holds for $\mathbb{B}_{\mathbb{B}}$ and for ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$.
+**Proposition.** ${}_{\mathbb{B}}\mathbb{B}$ is **free of rank one**, with basis $\{e_t\}$: the expansion $\tilde Q=\tilde Q e_t$ is unique, because a linear combination of the single basis element $e_t$ with coefficient $\tilde Q$ is $\tilde Q e_t$ and determines $\tilde Q$. Hence ${}_{\mathbb{B}}\mathbb{B}$ is finitely generated, projective and free of rank one, and the same holds for $\mathbb{B}_{\mathbb{B}}$ and for ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$.
 
-**Proof.** Generation is $\tilde R=\tilde R e_0$; linear independence of $\{e_0\}$ is $\tilde R e_0=0\Rightarrow\tilde R=0$. A module with a basis is free and therefore projective, by *Projective and Injective Modules*.
+**Proof.** Generation is $\tilde Q=\tilde Q e_t$; linear independence of $\{e_t\}$ is $\tilde Q e_t=0\Rightarrow\tilde Q=0$. A module with a basis is free and therefore projective, by *Projective and Injective Modules*.
 
 ### A generator
 
@@ -95,7 +95,7 @@ $$
 
 given by $\tilde m\otimes\tilde Q\mapsto \tilde m\tilde Q$ and $\tilde Q\otimes\tilde n\mapsto \tilde Q\tilde n$. For bimodules the same elements are the two-sided identity, ${}_{S}M_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\cong{}_{S}M_{\mathbb{B}}$ and ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}N_{T}\cong{}_{\mathbb{B}}N_{T}$, naturally in the outer module.
 
-**Proof.** The map $\tilde m\otimes\tilde Q\mapsto\tilde m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(\tilde m\tilde A)\otimes\tilde B$ and $\tilde m\otimes(\tilde A\tilde B)$ both go to $\tilde m(\tilde A\tilde B)=(\tilde m\tilde A)\tilde B$. Its inverse is $\tilde m\mapsto\tilde m\otimes e_0$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
+**Proof.** The map $\tilde m\otimes\tilde Q\mapsto\tilde m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(\tilde m\tilde A)\otimes\tilde B$ and $\tilde m\otimes(\tilde A\tilde B)$ both go to $\tilde m(\tilde A\tilde B)=(\tilde m\tilde A)\tilde B$. Its inverse is $\tilde m\mapsto\tilde m\otimes e_t$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
 
 **Remark (the categorical reading).** The isomorphisms above say that ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is the unit of the tensor product of bimodules: tensoring a bimodule with the regular bimodule on either side returns it. This is the module-level form of the fact that the tensor product is a monoidal structure whose unit is the base object, and its categorical statement belongs to the general theory of module categories.
 
@@ -111,7 +111,7 @@ $$
 
 the first given by the left multiplications $\tilde Q\mapsto L_{\tilde Q}$ and the second by the right multiplications $\tilde Q\mapsto R_{\tilde Q}$.
 
-**Proof.** Let $T:\mathbb{B}_{\mathbb{B}}\to\mathbb{B}_{\mathbb{B}}$ be right $\mathbb{B}$-linear, $T(\tilde R\tilde Q)=T(\tilde R)\tilde Q$. With $\tilde R=e_0$ one has $T(\tilde Q)=T(e_0)\tilde Q=L_{T(e_0)}(\tilde Q)$, so $T=L_{\tilde B}$ with $\tilde B=T(e_0)$; conversely $L_{\tilde B}(\tilde R\tilde Q)=\tilde B(\tilde R\tilde Q)=(\tilde B\tilde R)\tilde Q=L_{\tilde B}(\tilde R)\tilde Q$, so $L_{\tilde B}$ is right $\mathbb{B}$-linear. The assignment $\tilde B\mapsto L_{\tilde B}$ is additive and satisfies $L_{\tilde B\tilde C}=L_{\tilde B}L_{\tilde C}$, hence is a ring isomorphism onto $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$, injective because $L_{\tilde B}(e_0)=\tilde B$. The left-module case is the mirror: a left $\mathbb{B}$-linear $T$ has $T(\tilde R)=T(\tilde R e_0)=\tilde R T(e_0)=R_{T(e_0)}(\tilde R)$, and $\tilde B\mapsto R_{\tilde B}$ is additive with $R_{\tilde B\tilde C}=R_{\tilde C}R_{\tilde B}$, hence a ring isomorphism $\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$.
+**Proof.** Let $T:\mathbb{B}_{\mathbb{B}}\to\mathbb{B}_{\mathbb{B}}$ be right $\mathbb{B}$-linear, $T(\tilde Q_2\tilde Q_1)=T(\tilde Q_2)\tilde Q_1$. With $\tilde Q_2=e_t$ one has $T(\tilde Q_1)=T(e_t)\tilde Q_1=L_{T(e_t)}(\tilde Q_1)$, so $T=L_{\tilde B}$ with $\tilde B=T(e_t)$; conversely $L_{\tilde B}(\tilde Q_2\tilde Q_1)=\tilde B(\tilde Q_2\tilde Q_1)=(\tilde B\tilde Q_2)\tilde Q_1=L_{\tilde B}(\tilde Q_2)\tilde Q_1$, so $L_{\tilde B}$ is right $\mathbb{B}$-linear. The assignment $\tilde B\mapsto L_{\tilde B}$ is additive and satisfies $L_{\tilde B\tilde C}=L_{\tilde B}L_{\tilde C}$, hence is a ring isomorphism onto $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$, injective because $L_{\tilde B}(e_t)=\tilde B$. The left-module case is the mirror: a left $\mathbb{B}$-linear $T$ has $T(\tilde Q_2)=T(\tilde Q_2 e_t)=\tilde Q_2 T(e_t)=R_{T(e_t)}(\tilde Q_2)$, and $\tilde B\mapsto R_{\tilde B}$ is additive with $R_{\tilde B\tilde C}=R_{\tilde C}R_{\tilde B}$, hence a ring isomorphism $\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$.
 
 **Corollary (the operator reading).** The endomorphism ring of the regular module is the algebra itself, read on the same side for the representation and on the opposite side for the anti-representation: the left multiplications reproduce $\mathbb{B}$ as the endomorphisms of the right regular module, the right multiplications reproduce $\mathbb{B}^{\mathrm{opp}}$ as the endomorphisms of the left regular module. In the matrix model this is the double centraliser of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where the reproducing copy is written $\mathsf{M}_4^{R}(\mathbb{B})=\operatorname{End}_{\mathbb{B}}(\mathbb{B})$ and the two copies are shown to generate $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
 
@@ -120,44 +120,44 @@ the first given by the left multiplications $\tilde Q\mapsto L_{\tilde Q}$ and t
 **Proposition.** $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})$, the centre of $\mathbb{B}$, the isomorphism sending a central $\tilde S$ to $L_{\tilde S}=R_{\tilde S}$. In particular
 
 $$
-\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong\mathbb{C}e_0\cong\mathbb{C},
+\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong\mathbb{C}e_t\cong\mathbb{C},
 $$
 
 of complex dimension one.
 
-**Proof.** A $\mathbb{B}$-$\mathbb{B}$-linear $T$ is in particular right $\mathbb{B}$-linear, so $T=L_{\tilde B}$, and in particular left $\mathbb{B}$-linear, so $T=R_{\tilde C}$; then $L_{\tilde B}=R_{\tilde C}$ gives $\tilde B\tilde R=\tilde R\tilde C$ for all $\tilde R$, and with $\tilde R=e_0$ one gets $\tilde B=\tilde C$ and then $\tilde B\tilde R=\tilde R\tilde B$ for all $\tilde R$, so $\tilde B$ is central. Conversely a central $\tilde B$ has $L_{\tilde B}=R_{\tilde B}$ and this map is a bimodule endomorphism. The centre is $\mathbb{C}e_0$ by *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
+**Proof.** A $\mathbb{B}$-$\mathbb{B}$-linear $T$ is in particular right $\mathbb{B}$-linear, so $T=L_{\tilde B}$, and in particular left $\mathbb{B}$-linear, so $T=R_{\tilde C}$; then $L_{\tilde B}=R_{\tilde C}$ gives $\tilde B\tilde Q=\tilde Q\tilde C$ for all $\tilde Q$, and with $\tilde Q=e_t$ one gets $\tilde B=\tilde C$ and then $\tilde B\tilde Q=\tilde Q\tilde B$ for all $\tilde Q$, so $\tilde B$ is central. Conversely a central $\tilde B$ has $L_{\tilde B}=R_{\tilde B}$ and this map is a bimodule endomorphism. The centre is $\mathbb{C}e_t$ by *The Biquaternioid as a Vector Space over $\mathbb{C}$*.
 
-**Corollary (no nontrivial bimodule endomorphisms).** The regular bimodule has no nontrivial endomorphism exactly when the centre reduces to the scalars, which is the case here: a sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is a two-sided ideal, the only ones are $0$ and $\mathbb{B}$, and the endomorphism ring that acts on it is the line of central scalars $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. This is the precise sense in which the biquaternion algebra is a central simple algebra over $\mathbb{C}$.
+**Corollary (no nontrivial bimodule endomorphisms).** The regular bimodule has no nontrivial endomorphism exactly when the centre reduces to the scalars, which is the case here: a sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is a two-sided ideal, the only ones are $0$ and $\mathbb{B}$, and the endomorphism ring that acts on it is the line of central scalars $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. This is the precise sense in which the biquaternion algebra is a central simple algebra over $\mathbb{C}$.
 
 ## The Defining Module
 
-Two orthogonal idempotents generate the two columns of the algebra. With $\tilde\Pi_-=e_0-\tilde\Pi_+$ one has
+Two orthogonal idempotents generate the two columns of the algebra. With $\tilde\Pi_-=e_t-\tilde\Pi_+$ one has
 
 $$
-\tilde\Pi_+^2=\tilde\Pi_+,\qquad \tilde\Pi_-^2=\tilde\Pi_-,\qquad \tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_0,
+\tilde\Pi_+^2=\tilde\Pi_+,\qquad \tilde\Pi_-^2=\tilde\Pi_-,\qquad \tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-\tilde\Pi_+=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t,
 $$
 
 and the four Peirce corners of $\mathbb{B}$ with respect to the pair are
 
 $$
-\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_+\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_1,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon_2,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-,
+\tilde\Pi_+\mathbb{B}\tilde\Pi_+=\mathbb{C}\tilde\Pi_+,\qquad \tilde\Pi_+\mathbb{B}\tilde\Pi_-=\mathbb{C}\vec\Upsilon_x,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_+=\mathbb{C}\vec\Upsilon_y,\qquad \tilde\Pi_-\mathbb{B}\tilde\Pi_-=\mathbb{C}\tilde\Pi_-,
 $$
 
 each of complex dimension one. The minimal left ideal generated by $\tilde\Pi_+$ is therefore
 
 $$
-S:=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\,\vec\Upsilon_2\},
+S:=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\,\vec\Upsilon_y\},
 $$
 
-of complex dimension two, the **defining module** of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\,\vec\Upsilon_1\}$ is a second minimal left ideal, isomorphic to the first.
+of complex dimension two, the **defining module** of $\mathbb{B}$. The second column $\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\,\vec\Upsilon_x\}$ is a second minimal left ideal, isomorphic to the first.
 
-The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_+,\vec\Upsilon_2)$. Multiplication by the idempotent fixes $\tilde\Pi_+$ and kills $\vec\Upsilon_2$, while multiplication by the off-diagonal elements interchanges the two: $\vec\Upsilon_1\tilde\Pi_+=0$, $\vec\Upsilon_2\tilde\Pi_+=\vec\Upsilon_2$, $\vec\Upsilon_1 \vec\Upsilon_2=\tilde\Pi_+$ and $\vec\Upsilon_2^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. The splitting
+The left action of $\mathbb{B}$ on $S$ is computed on the basis $(\tilde\Pi_+,\vec\Upsilon_y)$. Multiplication by the idempotent fixes $\tilde\Pi_+$ and kills $\vec\Upsilon_y$, while multiplication by the off-diagonal elements interchanges the two: $\vec\Upsilon_x\tilde\Pi_+=0$, $\vec\Upsilon_y\tilde\Pi_+=\vec\Upsilon_y$, $\vec\Upsilon_x \vec\Upsilon_y=\tilde\Pi_+$ and $\vec\Upsilon_y^2=0$. The action makes $S$ the defining two-dimensional module of $\mathbb{B}$. The splitting
 
 $$
-S = \tilde\Pi_+\mathbb{B}\tilde\Pi_+ \oplus \tilde\Pi_-\mathbb{B}\tilde\Pi_+ = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_2
+S = \tilde\Pi_+\mathbb{B}\tilde\Pi_+ \oplus \tilde\Pi_-\mathbb{B}\tilde\Pi_+ = \mathbb{C}\tilde\Pi_+ \oplus \mathbb{C}\vec\Upsilon_y
 $$
 
-is the first **column** of the Peirce decomposition of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Table*; its two summands are the two corners of the column, complementary complex lines spanning $S$. Neither line is stable under the left action — $\vec\Upsilon_2\tilde\Pi_+ = \vec\Upsilon_2$ carries the first into the second and $\vec\Upsilon_1\vec\Upsilon_2 = \tilde\Pi_+$ carries the second into the first — and that is the irreducibility of $S$ read on the corners. In the matrix model of the same article, §*The Peirce Coordinates and the Matrix Model*, the column is the set of matrices whose second column vanishes, as in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Ideals as Columns and the Spinor Module*. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
+is the first **column** of the Peirce decomposition of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Peirce Table*; its two summands are the two corners of the column, complementary complex lines spanning $S$. Neither line is stable under the left action — $\vec\Upsilon_y\tilde\Pi_+ = \vec\Upsilon_y$ carries the first into the second and $\vec\Upsilon_x\vec\Upsilon_y = \tilde\Pi_+$ carries the second into the first — and that is the irreducibility of $S$ read on the corners. In the matrix model of the same article, §*The Peirce Coordinates and the Matrix Model*, the column is the set of matrices whose second column vanishes, as in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, §*The Ideals as Columns and the Spinor Module*. Nothing in this paragraph depends on the choice of idempotent: all minimal left ideals of $\mathbb{B}$ are isomorphic, and they are indexed by the projective line $\mathbb{P}^1(\mathbb{C})$, as in *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
 **The endomorphism ring of $S$ is the diagonal corner.** By Schur's lemma (*Simple and Semisimple Modules*, §*Schur's lemma*) $\operatorname{End}_{\mathbb{B}}(S)$ is a division ring, and the Peirce decomposition identifies it. A left $\mathbb{B}$-linear map $f:S\to S$ is determined by $f(\tilde\Pi_+)$, which lies in $\tilde\Pi_+\mathbb{B}\tilde\Pi_+ = \mathbb{C}\tilde\Pi_+$; conversely every element of that corner defines an endomorphism, and composition of endomorphisms corresponds to multiplication in the corner. Hence
 
@@ -189,7 +189,7 @@ $$
 
 the two summands being the two columns $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$.
 
-*Proof.* The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and there is a single simple module up to isomorphism. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_0$.
+*Proof.* The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is simple and artinian, hence semisimple; over a semisimple ring every module is a direct sum of simple modules, every module is projective, and there is a single simple module up to isomorphism. The decomposition of the regular module is the Peirce decomposition read column by column, and freeness of rank one is the basis $e_t$.
 
 For a finite-dimensional $\mathbb{B}$-module the invariant $k$ is recovered from the dimension: since $\dim_\mathbb{C}S=2$,
 
@@ -237,7 +237,7 @@ $$
 
 The module $S$ is consequently a bimodule over the pair $(\mathbb{B},\mathbb{C})$. The left action is the algebra action, the right action is multiplication by the central scalars, and the two commute because $\mathbb{C}$ is the centre of $\mathbb{B}$; this is the structure denoted ${}_\mathbb{B}S_\mathbb{C}$. The left and right actions are genuinely different data — the left action is the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, while the right action is scalar multiplication and has kernel only at $0$ — and it is their compatibility, not either alone, that makes $S$ the standard bimodule of the Morita theory.
 
-**The opposite algebra.** The **opposite algebra** $A^{\mathrm{opp}}$ of an algebra $A$ has the same additive group and the reversed product, $a^{\mathrm{opp}}\cdot b^{\mathrm{opp}}=(ba)^{\mathrm{opp}}$; the construction in general is *Opposite Algebras and Anti-Isomorphisms*. For $\mathbb{B}$ the quaternion conjugation is an anti-automorphism, $(\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, hence an isomorphism $\mathbb{B}^{\mathrm{opp}}\to\mathbb{B}$: the opposite of the biquaternion algebra is the algebra itself.
+**The opposite algebra.** The **opposite algebra** $A^{\mathrm{opp}}$ of an algebra $A$ has the same additive group and the reversed product, $a^{\mathrm{opp}}\cdot b^{\mathrm{opp}}=(ba)^{\mathrm{opp}}$; the construction in general is *Opposite Algebras and Anti-Isomorphisms*. For $\mathbb{B}$ the quaternion conjugation is an anti-automorphism, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$, hence an isomorphism $\mathbb{B}^{\mathrm{opp}}\to\mathbb{B}$: the opposite of the biquaternion algebra is the algebra itself.
 
 The dual is not a new module. Let $S^*=\operatorname{Hom}_\mathbb{C}(S,\mathbb{C})$ carry the contragredient action, a right $\mathbb{B}$-module and hence a left $\mathbb{B}^{\mathrm{opp}}$-module; under that identification $S^*$ is simple of complex dimension two and therefore isomorphic to $S$.
 
@@ -315,7 +315,7 @@ $$
 {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S,\qquad \operatorname{End}_{\mathbb{B}}(S)=\mathbb{C},\qquad S\cong\mathbb{C}^2 .
 $$
 
-The decomposition is produced by the orthogonal idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, which satisfy $\tilde\Pi_++\tilde\Pi_-=e_0$ and $\tilde\Pi_+\tilde\Pi_-=0$, by ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with $\mathbb{B}\tilde\Pi_\pm\cong S$.
+The decomposition is produced by the orthogonal idempotents $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, which satisfy $\tilde\Pi_++\tilde\Pi_-=e_t$ and $\tilde\Pi_+\tilde\Pi_-=0$, by ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ with $\mathbb{B}\tilde\Pi_\pm\cong S$.
 
 **Proof.** The idempotents, the Peirce decomposition and the minimality of the ideals $\mathbb{B}\tilde\Pi_\pm$ are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the two minimal left ideals are isomorphic because the algebra is simple, and $S$ is their isomorphism class, the unique simple left module of §*The Defining Module*, of complex dimension two. That $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ is Schur's lemma, recorded there; in the matrix model $S$ is the column space $\mathbb{C}^2$ of $M_2(\mathbb{C})$.
 
@@ -324,7 +324,7 @@ The decomposition is produced by the orthogonal idempotents $\tilde\Pi_+=\tfrac1
 **Remark (the minimal left ideals and the lines of $S$).** The minimal left ideals of $\mathbb{B}$ are the two-dimensional subspaces
 
 $$
-L_\ell=\{\tilde R:\tilde R S\subseteq\ell\},\qquad \ell \text{ a line in } S,
+L_\ell=\{\tilde Q:\tilde Q S\subseteq\ell\},\qquad \ell \text{ a line in } S,
 $$
 
 one for each line $\ell$, so the family of minimal left ideals is a projective line; the two summands of the decomposition above correspond to the two coordinate lines, and the general element of the family is $\mathbb{B}\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ with image $\ell$. The classification is that of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the theorem above adds only the reading that these are the simple submodules of the regular module.
@@ -339,16 +339,16 @@ one for each line $\ell$, so the family of minimal left ideals is a projective l
 
 ## Worked Verification
 
-The regular module of the biquaternion algebra is small enough that the general statements can be checked by hand. In the complex basis $e_0,e_1,e_2,e_3$ the following hold.
+The regular module of the biquaternion algebra is small enough that the general statements can be checked by hand. In the complex basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the following hold.
 
 | Item | Value | Where |
 |---|---|---|
-| ${}_{\mathbb{B}}\mathbb{B}$ | free of rank one, basis $\{e_0\}$ | §*Free of rank one* |
+| ${}_{\mathbb{B}}\mathbb{B}$ | free of rank one, basis $\{e_t\}$ | §*Free of rank one* |
 | $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | minimal left ideals, complex dimension $2$, $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}\tilde\Pi_-=0$ | §*The left regular module is $S\oplus S$* |
 | ${}_{\mathbb{B}}\mathbb{B}$ | $\cong S\oplus S$, $\dim_\mathbb{C}S=2$ | §*The left regular module is $S\oplus S$* |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})$ | $\cong\mathbb{B}$, complex dimension $4$ | §*The one-sided endomorphisms* |
 | $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})$ | $\cong\mathbb{B}^{\mathrm{opp}}$, complex dimension $4$ | §*The one-sided endomorphisms* |
-| $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})$ | $\cong\mathbb{C}e_0$, complex dimension $1$ | §*The bimodule endomorphisms are the centre* |
+| $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})$ | $\cong\mathbb{C}e_t$, complex dimension $1$ | §*The bimodule endomorphisms are the centre* |
 | two-sided ideals | $0$ and $\mathbb{B}$ only | §*Simple and semisimple* |
 
 The two idempotents $\tilde\Pi_+,\tilde\Pi_-$ are orthogonal and sum to the unit; the left ideals they generate are each of complex dimension two and meet only in $0$, so that ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is a direct sum of two simple modules. The right multiplications give a copy of $\mathbb{B}^{\mathrm{opp}}$ in $\operatorname{End}_\mathbb{C}(\mathbb{B})$ whose commutant is the image of the left multiplications, the double centraliser statement of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; the only operators that are simultaneously a left and a right multiplication are the multiplications by the central scalars, and they are the bimodule endomorphisms of complex dimension one.
@@ -356,9 +356,9 @@ The two idempotents $\tilde\Pi_+,\tilde\Pi_-$ are orthogonal and sum to the unit
 
 ## Summary
 
-The biquaternion algebra acts on its own additive group by its multiplication, giving the left regular module ${}_{\mathbb{B}}\mathbb{B}$, the right regular module $\mathbb{B}_{\mathbb{B}}$, and the regular bimodule ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ whose two actions commute. The submodules of the three objects are exactly the left, the right and the two-sided ideals, so the lattice of ideals of *Ideals and Peirce Decomposition of the Biquaternion Algebra* is the lattice of submodules of the regular object. The regular module is cyclic on the unit, faithful, free of rank one, a generator, and the identity of the tensor product, $M\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}\cong M$ and ${}_{\mathbb{B}}\mathbb{B}\otimes_{\mathbb{B}}N\cong N$; every module is a quotient of a direct sum of copies of it. Its endomorphism rings are $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_0\cong\mathbb{C}$.
+The biquaternion algebra acts on its own additive group by its multiplication, giving the left regular module ${}_{\mathbb{B}}\mathbb{B}$, the right regular module $\mathbb{B}_{\mathbb{B}}$, and the regular bimodule ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ whose two actions commute. The submodules of the three objects are exactly the left, the right and the two-sided ideals, so the lattice of ideals of *Ideals and Peirce Decomposition of the Biquaternion Algebra* is the lattice of submodules of the regular object. The regular module is cyclic on the unit, faithful, free of rank one, a generator, and the identity of the tensor product, $M\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}\cong M$ and ${}_{\mathbb{B}}\mathbb{B}\otimes_{\mathbb{B}}N\cong N$; every module is a quotient of a direct sum of copies of it. Its endomorphism rings are $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$, $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_t\cong\mathbb{C}$.
 
-The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has a single simple left module up to isomorphism, the defining module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ of complex dimension two, and every left module is a direct sum $S^{\oplus k}$; the left regular module is free of rank one and decomposes as $\mathbb{B}\cong S\oplus S$. Every module is projective because $\mathbb{B}$ is semisimple, but $S^{\oplus k}$ is free if and only if $k$ is even, equivalently if and only if its complex dimension $2k$ is divisible by $4$; the module $S$ is projective and not free, and this parity is the entire distinction between the module theory of $\mathbb{B}$ and that of a field. Because $\mathbb{B}$ is simple, semisimple and Artinian, the bimodule is simple, every module is semisimple, and the algebra is von Neumann regular and self-injective; the regular module is therefore a projective generator and an injective cogenerator, the module from which the whole module theory is read.
+The algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has a single simple left module up to isomorphism, the defining module $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ of complex dimension two, and every left module is a direct sum $S^{\oplus k}$; the left regular module is free of rank one and decomposes as $\mathbb{B}\cong S\oplus S$. Every module is projective because $\mathbb{B}$ is semisimple, but $S^{\oplus k}$ is free if and only if $k$ is even, equivalently if and only if its complex dimension $2k$ is divisible by $4$; the module $S$ is projective and not free, and this parity is the entire distinction between the module theory of $\mathbb{B}$ and that of a field. Because $\mathbb{B}$ is simple, semisimple and Artinian, the bimodule is simple, every module is semisimple, and the algebra is von Neumann regular and self-injective; the regular module is therefore a projective generator and an injective cogenerator, the module from which the whole module theory is read.
 
 The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$, $\operatorname{Hom}_\mathbb{B}(S^{\oplus m},S^{\oplus n})\cong M_{n\times m}(\mathbb{C})$ and $\operatorname{End}_\mathbb{B}(S^{\oplus k})\cong M_k(\mathbb{C})$, with automorphism group $\mathrm{GL}_k(\mathbb{C})$, while the double centralizer gives $\operatorname{End}_\mathbb{C}(S)=\mathbb{B}$. The module $S$ is the standard $(\mathbb{B},\mathbb{C})$-bimodule, the two actions commuting because $\mathbb{C}$ is the centre, and it implements the Morita equivalence of $\operatorname{Mod}(\mathbb{B})$ with $\operatorname{Mod}(\mathbb{C})$: $\operatorname{Hom}_\mathbb{B}(S,-)$ has inverse $S\otimes_\mathbb{C}-$, and every complex dimension is doubled. Torsion in the naive sense degenerates over $\mathbb{B}$ because the algebra has zero divisors and the annihilator of a nonzero element of $S$ is a maximal left ideal; tested against regular elements it vanishes, since in a semisimple ring every regular element is a unit, and the module category is torsion-free. Finally, the $\mathbb{B}$-modules that come from $\mathbb{H}$ by extension of scalars are exactly the free ones, so the parity obstruction to freeness is also the obstruction to a real structure, with $S$ the minimal example.
 
@@ -369,23 +369,23 @@ The morphisms are the complex matrices: $\operatorname{End}_\mathbb{B}(S)=\mathb
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{B}^{\mathrm{opp}}$ | the opposite algebra, $\cong\mathbb{B}$ through the anti-automorphism ${}^{\natural}$ |
-| $e_0,e_1,e_2,e_3$ | quaternion basis, $e_0=1$, $e_k^2=-e_0$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | quaternion basis, $e_t=1$, $\vec e_k^2=-e_t$ |
 | $i$ | central scalar imaginary, $i^2=-1$ |
-| ${}_{\mathbb{B}}\mathbb{B}$ | the left regular module, $(\mathbb{B},+)$ with $\tilde Q\cdot\tilde R=\tilde Q\tilde R$, free of rank one |
-| $\mathbb{B}_{\mathbb{B}}$ | the right regular module, $(\mathbb{B},+)$ with $\tilde R\cdot\tilde Q=\tilde R\tilde Q$ |
+| ${}_{\mathbb{B}}\mathbb{B}$ | the left regular module, $(\mathbb{B},+)$ with $\tilde Q_1\cdot\tilde Q_2=\tilde Q_1\tilde Q_2$, free of rank one |
+| $\mathbb{B}_{\mathbb{B}}$ | the right regular module, $(\mathbb{B},+)$ with $\tilde Q_2\cdot\tilde Q_1=\tilde Q_2\tilde Q_1$ |
 | ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ | the regular bimodule, the two commuting actions |
 | $L\subseteq\mathbb{B}$ submodule of ${}_{\mathbb{B}}\mathbb{B}$ | left ideal of $\mathbb{B}$ |
 | $L\subseteq\mathbb{B}$ submodule of $\mathbb{B}_{\mathbb{B}}$ | right ideal of $\mathbb{B}$ |
 | $L\subseteq\mathbb{B}$ sub-bimodule of ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ | two-sided ideal of $\mathbb{B}$ |
-| ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}e_0$, $\operatorname{Ann}({}_{\mathbb{B}}\mathbb{B})=0$ | cyclic on the unit, faithful |
-| $\{e_0\}$ | the basis, of rank one |
+| ${}_{\mathbb{B}}\mathbb{B}=\mathbb{B}e_t$, $\operatorname{Ann}({}_{\mathbb{B}}\mathbb{B})=0$ | cyclic on the unit, faithful |
+| $\{e_t\}$ | the basis, of rank one |
 | $M\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}\cong M$, ${}_{\mathbb{B}}\mathbb{B}\otimes_{\mathbb{B}}N\cong N$ | the regular bimodule is the tensor unit |
 | $\operatorname{End}_{\mathbb{B}}(\mathbb{B}_{\mathbb{B}})\cong\mathbb{B}$ | the left multiplications |
 | $\operatorname{End}_{\mathbb{B}}({}_{\mathbb{B}}\mathbb{B})\cong\mathbb{B}^{\mathrm{opp}}$ | the right multiplications |
-| $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_0$ | the bimodule endomorphisms |
-| $\tilde\Pi_+,\tilde\Pi_-$ | orthogonal minimal idempotents $\tfrac12(e_0\pm ie_3)$, $\tilde\Pi_++\tilde\Pi_-=e_0$ |
-| $\vec\Upsilon_1,\vec\Upsilon_2$ | the two off-diagonal elements $\tfrac12(ie_1-e_2)$, $\tfrac12(ie_1+e_2)$ |
-| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ | defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$ |
+| $\operatorname{End}_{\mathbb{B}\text{-}\mathbb{B}}(\mathbb{B})\cong Z(\mathbb{B})=\mathbb{C}e_t$ | the bimodule endomorphisms |
+| $\tilde\Pi_+,\tilde\Pi_-$ | orthogonal minimal idempotents $\tfrac12(e_t\pm i\vec e_z)$, $\tilde\Pi_++\tilde\Pi_-=e_t$ |
+| $\vec\Upsilon_x,\vec\Upsilon_y$ | the two off-diagonal elements $\tfrac12(i\vec e_x-\vec e_y)$, $\tfrac12(i\vec e_x+\vec e_y)$ |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ | defining module, the unique simple left $\mathbb{B}$-module, $\dim_\mathbb{C}=2$ |
 | $S^{\oplus k}$ | general finitely generated left module, $\dim_\mathbb{C}=2k$ |
 | ${}_{\mathbb{B}}\mathbb{B}\cong S\oplus S$ | left regular module, free of rank one over $\mathbb{B}$, completely reducible |
 | $\operatorname{End}_\mathbb{B}(S)=\mathbb{C}$ | commutant of the simple module |

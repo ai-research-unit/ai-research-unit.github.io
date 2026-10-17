@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and with complex conjugation $\bar{\cdot}$. The two are the $\mathbb{C}$-independent order-two conjugations of the algebra: $\bar{\cdot}$ is the $\mathbb{C}$-antilinear automorphism $i\mapsto-i$, $e_k\mapsto e_k$ which is the **grade involution** of the Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the $\mathbb{C}$-antilinear anti-automorphism negating both signs, the map whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose form is the positive definite one of the theory (*Norm and Invertibility in the Biquaternion Algebra*, *Introduction to the Remarkable Subspaces*).
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and with complex conjugation $\bar{\cdot}$. The two are the $\mathbb{C}$-independent order-two conjugations of the algebra: $\bar{\cdot}$ is the $\mathbb{C}$-antilinear automorphism $i\mapsto-i$, $\vec e_k\mapsto \vec e_k$ which is the **grade involution** of the Clifford structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ is the $\mathbb{C}$-antilinear anti-automorphism negating both signs, the map whose fixed space is the Hermitian subspace $\mathbb{M}_+$ and whose form is the positive definite one of the theory (*Norm and Invertibility in the Biquaternion Algebra*, *Introduction to the Remarkable Subspaces*).
 
 An element $\tilde{Q}$ of the algebra acts on the algebra in four ways, according to whether the **left** factor is twisted by $\bar{\cdot}$ and whether the **right** factor is inverted or dagged:
 
@@ -14,7 +14,7 @@ namely the **inner conjugation** $\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}(\t
 
 The unsigned members are owned elsewhere and are cited only. The inner conjugation $\tilde{Q}\tilde T\tilde{Q}^{-1}$ is the algebra form of the orthogonal action of *Biquaternion Versors and the Orthogonal Group*; the Hermitian sandwich is the operator $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*, whose composition law, adjoint, kernel, image and cone are recorded there and are not repeated here.
 
-The instance is not a restatement of the general case, and the reason is a **fork in the twist**. The general theory's twist $\alpha$ is the grading involution of the Clifford algebra, and it acts as the scalar $\pm1$ on the homogeneous elements; that is why its collapse theorem can absorb the twist into a sign. In the biquaternion algebra the twist $\theta=\bar{\cdot}$ is nontrivial for a reason that has no counterpart in the general statement: the basis elements $e_0,e_1,e_2,e_3$ have the $\mathrm{Cl}_{3,0}$-degrees $0,2,2,2$, so $\bar{\cdot}$ fixes $e_0$ and each $e_k$ and negates the generators $ie_k$ and the volume element $i$. The two readings of the algebra then give two different collapse theorems. In the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is the identity on the even part — reversion and Clifford conjugation coincide there for exactly this reason (*The Number Systems as Clifford Algebras*) — the signed members coincide with the unsigned ones, and everything collapses on the slice $U(2)$; the twist then lives on the odd slot that the algebra does not contain, and the signed theory of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* degenerates to the unsigned one on $\mathbb{B}$. In the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the twist is $\bar{\cdot}$ and the collapse splits: **on the unitary slice the family collapses in two steps, the unsigned pair on $U(2)$ and the signed pair one step lower, on the rotation group $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$.** The quotient $U(2)/SU(2)=U(1)$ — the central phase — is thereby identified as exactly the quantity that the twist detects, and that is the sharpening this article records.
+The instance is not a restatement of the general case, and the reason is a **fork in the twist**. The general theory's twist $\alpha$ is the grading involution of the Clifford algebra, and it acts as the scalar $\pm1$ on the homogeneous elements; that is why its collapse theorem can absorb the twist into a sign. In the biquaternion algebra the twist $\theta=\bar{\cdot}$ is nontrivial for a reason that has no counterpart in the general statement: the basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$ have the $\mathrm{Cl}_{3,0}$-degrees $0,2,2,2$, so $\bar{\cdot}$ fixes $e_t$ and each $\vec e_k$ and negates the generators $i\vec e_k$ and the volume element $i$. The two readings of the algebra then give two different collapse theorems. In the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is the identity on the even part — reversion and Clifford conjugation coincide there for exactly this reason (*The Number Systems as Clifford Algebras*) — the signed members coincide with the unsigned ones, and everything collapses on the slice $\mathrm{U}(2)$; the twist then lives on the odd slot that the algebra does not contain, and the signed theory of *Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* degenerates to the unsigned one on $\mathbb{B}$. In the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the twist is $\bar{\cdot}$ and the collapse splits: **on the unitary slice the family collapses in two steps, the unsigned pair on $\mathrm{U}(2)$ and the signed pair one step lower, on the rotation group $SU(2)=\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$.** The quotient $\mathrm{U}(2)/SU(2)=\mathrm{U}(1)$ — the central phase — is thereby identified as exactly the quantity that the twist detects, and that is the sharpening this article records.
 
 ## The Four Operators
 
@@ -57,9 +57,9 @@ $$
 \Phi^{\theta,{}^{*}}_{\tilde{Q}}\circ\bigl(\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}\bigr)^{-1}=R_{\tilde{Q}\tilde{Q}^{*}},
 $$
 
-the right multiplication by $\tilde{Q}\tilde{Q}^{*}$. The two right factors of the family differ by the right multiplication by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, and that element is the image of the identity under the sandwich, $\Theta_{\tilde{Q}}(e_0)$.
+the right multiplication by $\tilde{Q}\tilde{Q}^{*}$. The two right factors of the family differ by the right multiplication by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, and that element is the image of the identity under the sandwich, $\Theta_{\tilde{Q}}(e_t)$.
 
-*Proof.* Let $\tilde A=\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\tilde{Q}^{-1}$, so that $\tilde T$ is recovered by acting with the inverse. Then $\Phi^{\theta,{}^{*}}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\tilde{Q}^{*}=\tilde A\,\tilde{Q}\tilde{Q}^{*}=R_{\tilde{Q}\tilde{Q}^{*}}(\tilde A)$, using $\tilde{Q}^{-1}\tilde{Q}=e_0$. On the slice the defect is trivial because $\tilde{Q}\tilde{Q}^{*}=e_0$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*.
+*Proof.* Let $\tilde A=\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\tilde{Q}^{-1}$, so that $\tilde T$ is recovered by acting with the inverse. Then $\Phi^{\theta,{}^{*}}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\tilde{Q}^{*}=\tilde A\,\tilde{Q}\tilde{Q}^{*}=R_{\tilde{Q}\tilde{Q}^{*}}(\tilde A)$, using $\tilde{Q}^{-1}\tilde{Q}=e_t$. On the slice the defect is trivial because $\tilde{Q}\tilde{Q}^{*}=e_t$; off it, it is the positive semidefinite element of the cone of *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint*.
 
 **Theorem (the vertical defect).** For every $\rho$ and every invertible $\tilde{Q}$,
 
@@ -71,21 +71,21 @@ the left multiplication by the **twist element** $\bar{\cdot}(\tilde{Q})\tilde{Q
 
 *Proof.* $\bar{\cdot}(\tilde{Q})\tilde T\rho(\tilde{Q})=(\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1})\,\tilde{Q}\tilde T\rho(\tilde{Q})$.
 
-**Corollary (homogeneous elements and the sign of the twist).** Let $\tilde{Q}$ have the $\mathrm{Cl}_{3,0}$-degree $g\in\{0,1,2,3\}$, so that $\bar{\cdot}(\tilde{Q})=(-1)^{g}\tilde{Q}$. Then $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}=(-1)^{g}e_0$ is central, and
+**Corollary (homogeneous elements and the sign of the twist).** Let $\tilde{Q}$ have the $\mathrm{Cl}_{3,0}$-degree $g\in\{0,1,2,3\}$, so that $\bar{\cdot}(\tilde{Q})=(-1)^{g}\tilde{Q}$. Then $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}=(-1)^{g}e_t$ is central, and
 
 $$
 \Phi^{\bar{\cdot},\rho}_{\tilde{Q}}=(-1)^{g}\,\Phi^{\mathrm{id},\rho}_{\tilde{Q}} .
 $$
 
-In particular the signed inner conjugation is the ordinary one for even $\tilde{Q}$ and its negative for odd $\tilde{Q}$, and $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}}$ is an algebra automorphism of $\mathbb{B}$ (multiplicative in its argument) exactly for even $\tilde{Q}$. This is the graded multiplicativity that the name *signed* records, and it is the sense in which the general theory's twist is absorbed into a sign: on the homogeneous elements the defect is a scalar. Explicitly the twist element $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is $+e_0$ on the grade $0$ element $e_0$ and on the grade $2$ elements $e_1,e_2,e_3$, and $-e_0$ on the grade $1$ elements $ie_1,ie_2,ie_3$ and on the grade $3$ element $i$, in agreement with the sign table of *The Number Systems as Clifford Algebras*.
+In particular the signed inner conjugation is the ordinary one for even $\tilde{Q}$ and its negative for odd $\tilde{Q}$, and $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}}$ is an algebra automorphism of $\mathbb{B}$ (multiplicative in its argument) exactly for even $\tilde{Q}$. This is the graded multiplicativity that the name *signed* records, and it is the sense in which the general theory's twist is absorbed into a sign: on the homogeneous elements the defect is a scalar. Explicitly the twist element $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is $+e_t$ on the grade $0$ element $e_t$ and on the grade $2$ elements $\vec e_x,\vec e_y,\vec e_z$, and $-e_t$ on the grade $1$ elements $i\vec e_x,i\vec e_y,i\vec e_z$ and on the grade $3$ element $i$, in agreement with the sign table of *The Number Systems as Clifford Algebras*.
 
-**Remark (the defect is not central in general).** For a non-homogeneous unit $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is a genuine unit and the signed family is not proportional to the unsigned one. The twist element is $e_0$ exactly on the real-quaternion subspace,
+**Remark (the defect is not central in general).** For a non-homogeneous unit $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is a genuine unit and the signed family is not proportional to the unsigned one. The twist element is $e_t$ exactly on the real-quaternion subspace,
 
 $$
-\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}=e_0 \iff \bar{\cdot}(\tilde{Q})=\tilde{Q} \iff \tilde{Q}\in\mathbb{H}_{\mathbb{B}},
+\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}=e_t \iff \bar{\cdot}(\tilde{Q})=\tilde{Q} \iff \tilde{Q}\in\mathbb{H}_{\mathbb{B}},
 $$
 
-and it detects the central phase: it is the inverse-square phase for a central unit, $\bar{\cdot}(A e_0)(Ae_0)^{-1}=(\overline{A}/A)e_0$, so that the twist vanishes on the central phase only at $A=\pm1$.
+and it detects the central phase: it is the inverse-square phase for a central unit, $\bar{\cdot}(A e_t)(Ae_t)^{-1}=(\overline{A}/A)e_t$, so that the twist vanishes on the central phase only at $A=\pm1$.
 
 ## The Adjoint and the Types
 
@@ -97,13 +97,13 @@ $$
 
 *Proof.* The scalar form satisfies $\mathrm{Sc}(\tilde T\tilde S)=\mathrm{Sc}(\tilde S\tilde T)$. For the left-hand side, $\bigl(\Phi^{\theta,{}^{*}}_{\tilde{Q}}(\tilde T)\bigr)^{\dagger}=\bigl(\theta(\tilde{Q})\tilde T\tilde{Q}^{*}\bigr)^{\dagger}=\tilde{Q}\,\tilde{T}^{*}\,\theta(\tilde{Q})^{\dagger}$, so $(\Phi^{\theta,{}^{*}}_{\tilde{Q}}(\tilde T),\tilde S)=\mathrm{Sc}\bigl(\tilde{Q} \tilde{T}^{*}\theta(\tilde{Q})^{\dagger}\tilde S\bigr)=\mathrm{Sc}\bigl(\tilde{T}^{*}\theta(\tilde{Q})^{\dagger}\tilde S\tilde{Q}\bigr)$ by the cyclic invariance. The right-hand side is $(\tilde T,\Phi^{\theta,{}^{*}}_{\tilde{Q}^{*}}(\tilde S))=\mathrm{Sc}\bigl(\tilde{T}^{*}\theta(\tilde{Q}^{*})\tilde S\tilde{Q}\bigr)$ because $(\tilde{Q}^{*})^{\dagger}=\tilde{Q}$. The two agree for all $\tilde T,\tilde S$ exactly when $\theta(\tilde{Q})^{\dagger}=\theta(\tilde{Q}^{*})$, which holds for both values of the twist: for $\theta=\mathrm{id}$ it is the tautology $\tilde{Q}^{*}=\tilde{Q}^{*}$, and for $\theta=\bar{\cdot}$ both sides equal the quaternion conjugation $\tilde{Q}^{\natural}$ of $\tilde{Q}$, since $\bar{\cdot}$ and ${}^{*}$ commute.
 
-**Corollary (the unitary slice).** Both dagger sandwiches are automorphisms of the scalar form on the slice $U=\{\tilde{Q}:\tilde{Q}^{*}\tilde{Q}=e_0\}$, and on the slice the two members of each pair coincide; the unsigned sandwich is there the inner automorphism $\mathrm{Ad}_{\tilde{Q}}$, and the signed one is its left translate by the twist element. Off the slice the unsigned sandwich is neither a form-preserving map nor a homomorphism. The slice is the unitary group $U(2)$ in the matrix model, of real dimension four, whose determinant-one part is $SU(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
+**Corollary (the unitary slice).** Both dagger sandwiches are automorphisms of the scalar form on the slice $U=\{\tilde{Q}:\tilde{Q}^{*}\tilde{Q}=e_t\}$, and on the slice the two members of each pair coincide; the unsigned sandwich is there the inner automorphism $\mathrm{Ad}_{\tilde{Q}}$, and the signed one is its left translate by the twist element. Off the slice the unsigned sandwich is neither a form-preserving map nor a homomorphism. The slice is the unitary group $\mathrm{U}(2)$ in the matrix model, of real dimension four, whose determinant-one part is $SU(2)$ (*The Unitary Slice and the Compact Real Form with Hermitian Adjoint*, *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint*).
 
 *Proof.* On the slice $\tilde{Q}^{*}=\tilde{Q}^{-1}$, so $\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}}=\Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}=\mathrm{Ad}_{\tilde{Q}}$ is an inner automorphism and a form-preserving map, and $\Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}}=\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}}$ is its translate by the vertical defect. Failure of multiplicativity and of automorphism off the slice is the criterion for the unsigned sandwich recorded in *Two-Sided Operators on the General Plain Sesqualgebra*; both dagger sandwiches were checked to preserve the form on the slice over random unitary parameters.
 
 ## The Collapse and Its Two Loci
 
-**Theorem (the collapse).** Let $\tilde{Q}\in U(2)$. Then the four operators fall into two pairs,
+**Theorem (the collapse).** Let $\tilde{Q}\in \mathrm{U}(2)$. Then the four operators fall into two pairs,
 
 $$
 \Phi^{\mathrm{id},\mathrm{inv}}_{\tilde{Q}}=\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}}=\mathrm{Ad}_{\tilde{Q}},
@@ -114,48 +114,48 @@ $$
 and the two pairs agree exactly on the rotation group,
 
 $$
-\Phi^{\bar{\cdot},\rho}_{\tilde{Q}}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}} \iff \bar{\cdot}(\tilde{Q})=\tilde{Q} \iff \tilde{Q}\in U(2)\cap\mathbb{H}_{\mathbb{B}}=SU(2) .
+\Phi^{\bar{\cdot},\rho}_{\tilde{Q}}=\Phi^{\mathrm{id},\rho}_{\tilde{Q}} \iff \bar{\cdot}(\tilde{Q})=\tilde{Q} \iff \tilde{Q}\in \mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}=SU(2) .
 $$
 
-*Proof.* On the slice $\tilde{Q}^{*}=\tilde{Q}^{-1}$, so the horizontal defect trivialises and the two members of each pair coincide. The vertical defect then separates the pairs by the left multiplication by $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$, which is $e_0$ exactly on $\mathbb{H}_{\mathbb{B}}$. The intersection $U(2)\cap\mathbb{H}_{\mathbb{B}}$ is the group of unit real quaternions, $\mathrm{Sp}(1)\cong SU(2)$.
+*Proof.* On the slice $\tilde{Q}^{*}=\tilde{Q}^{-1}$, so the horizontal defect trivialises and the two members of each pair coincide. The vertical defect then separates the pairs by the left multiplication by $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$, which is $e_t$ exactly on $\mathbb{H}_{\mathbb{B}}$. The intersection $\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$ is the group of unit real quaternions, $\mathrm{Sp}(1)\cong SU(2)$.
 
-**Corollary (the phase is what the twist detects).** The two collapse loci are the two distinguished subgroups of the theory, the unitary slice $U(2)$ and the rotation group $SU(2)$, and their quotient is the central circle,
+**Corollary (the phase is what the twist detects).** The two collapse loci are the two distinguished subgroups of the theory, the unitary slice $\mathrm{U}(2)$ and the rotation group $SU(2)$, and their quotient is the central circle,
 
 $$
-U(2)/\bigl(U(2)\cap\mathbb{H}_{\mathbb{B}}\bigr)=U(2)/SU(2)\cong U(1),
+\mathrm{U}(2)/\bigl(\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}\bigr)=\mathrm{U}(2)/SU(2)\cong \mathrm{U}(1),
 $$
 
 the group of central phases. The family therefore collapses in two steps: the untwisted pair on the whole slice, and the twisted pair only on the subgroup on which the phase has been divided out. Equivalently, **the twist is invisible on the rotations and visible on the phase**, and the phase is precisely the ambiguity that the inner conjugation cannot see.
 
-**Remark (the fork and the general theorem).** The general source states that all four operators collapse on the unitary slice for homogeneous parameters. Read on $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with the twist $\bar{\cdot}$, that statement is exact on the even degrees and must be corrected by the sign $(-1)^{g}$ on the odd ones: the signed pair is then $(-1)^{g}\mathrm{Ad}_{\tilde{Q}}$, and for a non-homogeneous parameter of the slice the twist element is a genuine unit and the signed pair is not proportional to the unsigned one at all — unless the parameter is a real quaternion, where the collapse is exact. Read on $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$, where the grading is the identity, the twist element is always $e_0$ and the general theorem is exact but vacuous: the signed members are the unsigned ones. The two readings are the two sides of the fork, and they agree exactly where the theory is stated on the even slot.
+**Remark (the fork and the general theorem).** The general source states that all four operators collapse on the unitary slice for homogeneous parameters. Read on $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ with the twist $\bar{\cdot}$, that statement is exact on the even degrees and must be corrected by the sign $(-1)^{g}$ on the odd ones: the signed pair is then $(-1)^{g}\mathrm{Ad}_{\tilde{Q}}$, and for a non-homogeneous parameter of the slice the twist element is a genuine unit and the signed pair is not proportional to the unsigned one at all — unless the parameter is a real quaternion, where the collapse is exact. Read on $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$, where the grading is the identity, the twist element is always $e_t$ and the general theorem is exact but vacuous: the signed members are the unsigned ones. The two readings are the two sides of the fork, and they agree exactly where the theory is stated on the even slot.
 
 ## Worked Examples
 
-**A central phase.** For $\tilde{Q}=\omega e_0$ with $\lvert\omega\rvert=1$, the inner conjugation is the identity and the signed inner conjugation is the scalar $\overline{\omega}/\omega=\overline{\omega}^{2}$:
+**A central phase.** For $\tilde{Q}=\omega e_t$ with $\lvert\omega\rvert=1$, the inner conjugation is the identity and the signed inner conjugation is the scalar $\overline{\omega}/\omega=\overline{\omega}^{2}$:
 
 $$
-\Phi^{\mathrm{id},\rho}_{\omega e_0}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_0}=\overline{\omega}^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
+\Phi^{\mathrm{id},\rho}_{\omega e_t}=\mathrm{id},\qquad \Phi^{\bar{\cdot},\rho}_{\omega e_t}=\overline{\omega}^{2}\,\mathrm{id},\qquad \rho\in\{\mathrm{inv},{}^{*}\}.
 $$
 
-The whole of $U(2)$ modulo $SU(2)$ is of this form, and the example shows the collapse failing at the first non-trivial phase: the two families differ by the unit scalar $\overline{\omega}^{2}$, which is $1$ only at $\pm e_0$.
+The whole of $\mathrm{U}(2)$ modulo $SU(2)$ is of this form, and the example shows the collapse failing at the first non-trivial phase: the two families differ by the unit scalar $\overline{\omega}^{2}$, which is $1$ only at $\pm e_t$.
 
-**An even element.** For $\tilde{Q}=e_1$, of $\mathrm{Cl}_{3,0}$-degree two, the twist is inert, $\bar{\cdot}(e_1)=e_1$, and the four operators coincide:
-
-$$
-\Phi^{\theta,\rho}_{e_1}(\tilde T)=e_1\,\tilde T\,e_1^{-1}=-e_1\tilde Te_1=\mathrm{Ad}_{e_1}(\tilde T),
-$$
-
-the rotation through $\pi$ about the $e_1$ axis of *Biquaternion Versors and the Orthogonal Group*; the horizontal defect also trivialises because $e_1\in U(2)$. This is the exact case of the collapse.
-
-**An odd element.** For $\tilde{Q}=ie_1$, of degree one, $\bar{\cdot}(ie_1)=-ie_1$, and the twist element is $-e_0$. The four operators are two pairs, and each pair is minus the value of the even example:
+**An even element.** For $\tilde{Q}=\vec e_x$, of $\mathrm{Cl}_{3,0}$-degree two, the twist is inert, $\bar{\cdot}(\vec e_x)=\vec e_x$, and the four operators coincide:
 
 $$
-\Phi^{\theta,\rho}_{ie_1}(\tilde T)=(-1)^{1}\,\mathrm{Ad}_{e_1}(\tilde T)=-\mathrm{Ad}_{e_1}(\tilde T).
+\Phi^{\theta,\rho}_{\vec e_x}(\tilde T)=\vec e_x\,\tilde T\,\vec e_x^{-1}=-\vec e_x\tilde T\vec e_x=\mathrm{Ad}_{\vec e_x}(\tilde T),
 $$
 
-Now $e_1$ and $ie_1$ give the **same** inner conjugation, because the inner conjugation cannot see the central phase, and the **opposite** signed inner conjugation. This is the mechanism of the collapse corollary in one line: the twist distinguishes what the inner conjugation identifies.
+the rotation through $\pi$ about the $\vec e_x$ axis of *Biquaternion Versors and the Orthogonal Group*; the horizontal defect also trivialises because $\vec e_x\in \mathrm{U}(2)$. This is the exact case of the collapse.
 
-**A non-homogeneous slice element.** For a random $\tilde{Q}\in U(2)$ the twist element $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is a genuine unitary element of $\mathbb{B}$ and the signed pair is its left translate of the unsigned pair; it is $e_0$ exactly for the real-quaternion parameters, which are the rotations. The horizontal defect is trivial throughout, so the two elements of each pair always agree; it is the vertical defect alone that separates the pairs.
+**An odd element.** For $\tilde{Q}=i\vec e_x$, of degree one, $\bar{\cdot}(i\vec e_x)=-i\vec e_x$, and the twist element is $-e_t$. The four operators are two pairs, and each pair is minus the value of the even example:
+
+$$
+\Phi^{\theta,\rho}_{i\vec e_x}(\tilde T)=(-1)^{1}\,\mathrm{Ad}_{\vec e_x}(\tilde T)=-\mathrm{Ad}_{\vec e_x}(\tilde T).
+$$
+
+Now $\vec e_x$ and $i\vec e_x$ give the **same** inner conjugation, because the inner conjugation cannot see the central phase, and the **opposite** signed inner conjugation. This is the mechanism of the collapse corollary in one line: the twist distinguishes what the inner conjugation identifies.
+
+**A non-homogeneous slice element.** For a random $\tilde{Q}\in \mathrm{U}(2)$ the twist element $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ is a genuine unitary element of $\mathbb{B}$ and the signed pair is its left translate of the unsigned pair; it is $e_t$ exactly for the real-quaternion parameters, which are the rotations. The horizontal defect is trivial throughout, so the two elements of each pair always agree; it is the vertical defect alone that separates the pairs.
 
 ## Honest Limits
 
@@ -163,7 +163,7 @@ Two limits are worth stating plainly. First, the collapse theorem is a statement
 
 ## Summary
 
-The biquaternion algebra carries four mixed operators $\Phi^{\theta,\rho}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\rho(\tilde{Q})$, with the twist $\theta$ equal to the identity or to the complex conjugation $\bar{\cdot}$, which is the grade involution of the structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; $\rho$ equal to the inverse or to the dagger gives the two-family split inside each twist. The assignment is multiplicative in the parameter for each of the four pairs, and $\mathbb{C}$-linear in the argument with the twist acting on the parameter. The family is governed by **two exact defects**: the horizontal defect $\Phi^{\theta,{}^{*}}_{\tilde{Q}}=R_{\tilde{Q}\tilde{Q}^{*}}\circ\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}$, the right multiplication by the cone element $\tilde{Q}\tilde{Q}^{*}$, trivial exactly on the slice; and the vertical defect $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}}=L_{\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}}\circ\Phi^{\mathrm{id},\rho}_{\tilde{Q}}$, the left multiplication by the twist element, which is the scalar $(-1)^{g}$ on a homogeneous parameter and $e_0$ exactly on the real-quaternion subspace. The dagger sandwiches have adjoint $({\Phi^{\theta,{}^{*}}_{\tilde{Q}}})^{*}=\Phi^{\theta,{}^{*}}_{\tilde{Q}^{*}}$ and preserve the form and are automorphisms on the slice. On the slice the family **collapses in two steps**: the untwisted pair becomes the inner conjugation $\mathrm{Ad}_{\tilde{Q}}$ on the whole of $U(2)$, and the twisted pair joins it exactly on $SU(2)=U(2)\cap\mathbb{H}_{\mathbb{B}}$, so that the two collapse loci are the two distinguished subgroups of the theory and their quotient $U(1)$ is the central phase that the twist detects. This is the sharpening of the general case: in the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is trivial and the general collapse theorem holds vacuously, while in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the general theorem splits into the two-locus statement above, and the fork is exactly where the two gradings of the algebra differ.
+The biquaternion algebra carries four mixed operators $\Phi^{\theta,\rho}_{\tilde{Q}}(\tilde T)=\theta(\tilde{Q})\tilde T\rho(\tilde{Q})$, with the twist $\theta$ equal to the identity or to the complex conjugation $\bar{\cdot}$, which is the grade involution of the structure $\mathbb{B}\cong\mathrm{Cl}_{3,0}$; $\rho$ equal to the inverse or to the dagger gives the two-family split inside each twist. The assignment is multiplicative in the parameter for each of the four pairs, and $\mathbb{C}$-linear in the argument with the twist acting on the parameter. The family is governed by **two exact defects**: the horizontal defect $\Phi^{\theta,{}^{*}}_{\tilde{Q}}=R_{\tilde{Q}\tilde{Q}^{*}}\circ\Phi^{\theta,\mathrm{inv}}_{\tilde{Q}}$, the right multiplication by the cone element $\tilde{Q}\tilde{Q}^{*}$, trivial exactly on the slice; and the vertical defect $\Phi^{\bar{\cdot},\rho}_{\tilde{Q}}=L_{\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}}\circ\Phi^{\mathrm{id},\rho}_{\tilde{Q}}$, the left multiplication by the twist element, which is the scalar $(-1)^{g}$ on a homogeneous parameter and $e_t$ exactly on the real-quaternion subspace. The dagger sandwiches have adjoint $({\Phi^{\theta,{}^{*}}_{\tilde{Q}}})^{*}=\Phi^{\theta,{}^{*}}_{\tilde{Q}^{*}}$ and preserve the form and are automorphisms on the slice. On the slice the family **collapses in two steps**: the untwisted pair becomes the inner conjugation $\mathrm{Ad}_{\tilde{Q}}$ on the whole of $\mathrm{U}(2)$, and the twisted pair joins it exactly on $SU(2)=\mathrm{U}(2)\cap\mathbb{H}_{\mathbb{B}}$, so that the two collapse loci are the two distinguished subgroups of the theory and their quotient $\mathrm{U}(1)$ is the central phase that the twist detects. This is the sharpening of the general case: in the reading $\mathbb{B}=\mathrm{Cl}^{+}_{1,3}$ the grading is trivial and the general collapse theorem holds vacuously, while in the reading $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ the general theorem splits into the two-locus statement above, and the fork is exactly where the two gradings of the algebra differ.
 
 ## Summary of Notation
 
@@ -174,9 +174,9 @@ The biquaternion algebra carries four mixed operators $\Phi^{\theta,\rho}_{\tild
 | $\Phi^{\mathrm{id},{}^{*}}_{\tilde{Q}}=\Theta_{\tilde{Q}}$ | Hermitian sandwich; the operator of the combined article |
 | $\Phi^{\bar{\cdot},\mathrm{inv}}_{\tilde{Q}},\ \Phi^{\bar{\cdot},{}^{*}}_{\tilde{Q}}$ | Signed inner conjugation and signed Hermitian sandwich |
 | $R_{\tilde{Q}\tilde{Q}^{*}}$ | Horizontal defect; the right multiplication by the cone element |
-| $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ | Vertical defect, or twist element; $e_0$ exactly on $\mathbb{H}_{\mathbb{B}}$ |
+| $\bar{\cdot}(\tilde{Q})\tilde{Q}^{-1}$ | Vertical defect, or twist element; $e_t$ exactly on $\mathbb{H}_{\mathbb{B}}$ |
 | $({-1})^{g}$ | The twist element on a parameter of $\mathrm{Cl}_{3,0}$-degree $g$ |
-| $U(2)$, $SU(2)=\mathrm{Sp}(1)$ | The two collapse loci; $U(2)/SU(2)\cong U(1)$ |
+| $\mathrm{U}(2)$, $SU(2)=\mathrm{Sp}(1)$ | The two collapse loci; $\mathrm{U}(2)/SU(2)\cong \mathrm{U}(1)$ |
 
 ## Further Reading
 

@@ -15,37 +15,37 @@ The article owns the two kinds of zero divisor and the closed form of their squa
 **Proposition (the square of a zero divisor).** Every $\tilde Q\in\mathscr{Z}$ satisfies
 
 $$
-\tilde Q^2=2Q_0\,\tilde Q ,
+\tilde Q^2=2Q_t\,\tilde Q ,
 $$
 
 and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line $\mathbb{C}\tilde Q$. In particular the cone is closed under squaring.
 
-**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_0\tilde Q+\langle\tilde Q\rangle_{\natural}e_0=0$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $\langle\tilde Q^2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_0\in\mathbb{C}$.
+**Proof.** The Cayley–Hamilton identity of the matrix model reads $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rangle_{\natural}e_t=0$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*). On $\mathscr{Z}$ the last term vanishes and the identity is the displayed formula. Then $\langle\tilde Q^2\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}^2=0$ by multiplicativity of the norm, so $\tilde Q^2$ is a zero divisor; and $\tilde Q^2\in\mathbb{C}\tilde Q$ because $2Q_t\in\mathbb{C}$.
 
 **Theorem (the two kinds).** Every $\tilde Q\in\mathscr{Z}$ is exactly one of the following.
 
-1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_0=0$. These are the pure vectors with $(\vec Q,\vec Q)=0$.
-2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_0=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
+1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_t=0$. These are the pure vectors with $(\vec Q,\vec Q)=0$.
+2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_t=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
 
-**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi\rangle_{\natural}=0$ and is non-zero.
+**Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_t\tilde Q=0$, so $Q_t=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2\langle\tilde\Pi\rangle_{\natural}=0$ and is non-zero.
 
-**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
+**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=\vec e_x+i\vec e_y$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
 ## The Dynamics on the Cone
 
-**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde C}$ with central parameter $\tilde C=Ce_0$,
+**Theorem (the affine dynamics of the cone and its lines).** Let $\tilde\Pi$ be a primitive idempotent and let $\tilde Q=\lambda\tilde\Pi$, $\lambda\in\mathbb{C}$. Then under $F_{\tilde C}$ with central parameter $\tilde C=Ce_t$,
 
 $$
-F_{\tilde C}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_0 ,
+F_{\tilde C}(\lambda\tilde\Pi)=\lambda^2\tilde\Pi+C e_t ,
 $$
 
 so the orbit leaves the line unless $C=0$; for $C=0$ the line $\mathbb{C}\tilde\Pi$ is invariant and the restriction is the complex map $\lambda\mapsto\lambda^2$ on the coordinate. For the pure square-zero elements and $C=0$, the orbit reaches $0$ in one step.
 
-**Proof.** $\tilde\Pi^2=\tilde\Pi$ gives $(\lambda\tilde\Pi)^2=\lambda^2\tilde\Pi$; adding $Ce_0$ leaves the line $\mathbb{C}\tilde\Pi$ exactly when $C=0$. For a square-zero $\tilde Q$, $\tilde Q^2=0$ and $F_0(\tilde Q)=0$.
+**Proof.** $\tilde\Pi^2=\tilde\Pi$ gives $(\lambda\tilde\Pi)^2=\lambda^2\tilde\Pi$; adding $Ce_t$ leaves the line $\mathbb{C}\tilde\Pi$ exactly when $C=0$. For a square-zero $\tilde Q$, $\tilde Q^2=0$ and $F_0(\tilde Q)=0$.
 
 **Remark ($\tilde C=0$, the cone as a union of invariant lines).** For the parameter zero the cone is a union of complex lines through the origin, each mapped into itself with the square on the coordinate, and the induced map on the projective surface of lines is the identity. **The cone carries a foliation by invariant lines on which the dynamics is the scalar square**, and this is the only part of the biquaternion dynamics that is completely understood.
 
-**Remark (the cone is not invariant for $\tilde C\neq0$).** Adding a non-zero central parameter moves the point off the line and off the cone, because $Ce_0$ has norm $C^2$ and the sum of a norm-zero element with a norm-nonzero central element has norm $C^2\neq0$. **The cone is invariant for exactly one parameter, and the interaction of the cone with the rest of the space is a genuinely two-way coupling** for every other parameter.
+**Remark (the cone is not invariant for $\tilde C\neq0$).** Adding a non-zero central parameter moves the point off the line and off the cone, because $Ce_t$ has norm $C^2$ and the sum of a norm-zero element with a norm-nonzero central element has norm $C^2\neq0$. **The cone is invariant for exactly one parameter, and the interaction of the cone with the rest of the space is a genuinely two-way coupling** for every other parameter.
 
 ## The Singular Julia Set
 
@@ -86,7 +86,7 @@ The cone is the common obstruction of the four quantitative questions of the cat
 
 ## Summary
 
-Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde Q$ and so squares to a zero divisor on the same complex line; the cone is closed under squaring and carries, for the parameter zero, a foliation by invariant complex lines on which the dynamics is the scalar square. The zero divisors are of exactly two kinds: the square-zero pure vectors, the isotropic cone of the general plain bilinear form on the vector part, and the non-zero complex multiples of primitive idempotents. The idempotents form a smooth complex surface inside the cone, and for the parameter zero that surface lies on the Julia set, so the singular Julia set contains a real four-dimensional set and is not negligible. The cone is the common obstruction of the escape radius, the Green's function, the invertibility of the derivative and the dimension theory; the pure vectors form the second component of the critical set; and the only escape from the obstruction is to restrict to a division subalgebra.
+Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_t\tilde Q$ and so squares to a zero divisor on the same complex line; the cone is closed under squaring and carries, for the parameter zero, a foliation by invariant complex lines on which the dynamics is the scalar square. The zero divisors are of exactly two kinds: the square-zero pure vectors, the isotropic cone of the general plain bilinear form on the vector part, and the non-zero complex multiples of primitive idempotents. The idempotents form a smooth complex surface inside the cone, and for the parameter zero that surface lies on the Julia set, so the singular Julia set contains a real four-dimensional set and is not negligible. The cone is the common obstruction of the escape radius, the Green's function, the invertibility of the derivative and the dimension theory; the pure vectors form the second component of the critical set; and the only escape from the obstruction is to restrict to a division subalgebra.
 
 ## Summary of Notation
 
@@ -94,11 +94,11 @@ Every zero divisor of the biquaternion algebra satisfies $\tilde Q^2=2Q_0\tilde 
 |---|---|
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the biquaternion norm |
 | $\mathscr{Z}=\{\langle\tilde Q\rangle_{\natural}=0,\ \tilde Q\neq0\}$ | the zero-divisor cone |
-| $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$ | the vector part, the pure subspace |
+| $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector part, the pure subspace |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set of $F_{\tilde C}$ |
 | $\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B})$ | the singular Julia set |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2=\tilde\Pi$ |
-| $\tau=2Q_0$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
+| $\tau=2Q_t$ | the non-zero eigenvalue of $\mathsf{M}_2(\tilde Q)$ on the cone |
 | $\rho(\mathsf{M}_2(\tilde Q))$ | the spectral radius |
 
 ## Further Reading

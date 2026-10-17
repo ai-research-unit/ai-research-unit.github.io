@@ -5,7 +5,7 @@
 Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its natural conjugation ${}^{\natural}$ and the general plain bilinear form
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),
 $$
 
 whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is $\mathrm{diag}(1,-1,-1,-1)$. The adjoint of a $\mathbb{C}$-linear map of $\mathbb{B}$ for this form is its **associate** $F^{\approx}$, the involution of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
@@ -13,7 +13,7 @@ whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is $\mathrm{diag}(1,-1,
 For $\tilde A,\tilde B\in\mathbb{B}$ define the **left** and the **right multiplication**
 
 $$
-L_{\tilde A}(\tilde Y)=\tilde A\,\tilde Y,\qquad R_{\tilde B}(\tilde Y)=\tilde Y\,\tilde B .
+L_{\tilde A}(\tilde Q)=\tilde A\,\tilde Q,\qquad R_{\tilde B}(\tilde Q)=\tilde Q\,\tilde B .
 $$
 
 These are the two one-sided operators of the algebra, and the products $L_{\tilde A}R_{\tilde B}$ of the companion article are the two-sided operators of the same form (*Two-Sided Operators on the Biquaternion Algebra*).
@@ -34,7 +34,7 @@ The algebra, the four conjugations and the remarkable subspaces are *The Biquate
 
 $$
 L_{\tilde A},R_{\tilde B}:\mathbb{B}\longrightarrow\mathbb{B},\qquad
-L_{\tilde A}(\tilde Y)=\tilde A\,\tilde Y,\qquad R_{\tilde B}(\tilde Y)=\tilde Y\,\tilde B .
+L_{\tilde A}(\tilde Q)=\tilde A\,\tilde Q,\qquad R_{\tilde B}(\tilde Q)=\tilde Q\,\tilde B .
 $$
 
 **Proposition (linearity and injectivity in the parameter).** The assignments $\tilde A\mapsto L_{\tilde A}$ and $\tilde B\mapsto R_{\tilde B}$ are $\mathbb{C}$-linear and injective:
@@ -52,7 +52,7 @@ and $L_{\tilde A}=0$ or $R_{\tilde B}=0$ forces $\tilde A=0$ or $\tilde B=0$.
 
 **Proposition (the two assignments recover the algebra).** The left multiplications form a subalgebra of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}$, the right multiplications form a subalgebra anti-isomorphic to $\mathbb{B}$, and every element of the first family commutes with every element of the second.
 
-*Proof.* The first two statements are the two composition laws below, read as the multiplicativity of $\tilde A\mapsto L_{\tilde A}$ and the anti-multiplicativity of $\tilde B\mapsto R_{\tilde B}$; injectivity makes them isomorphisms onto their images. The commutation is the associativity identity $\tilde A(\tilde Y\tilde B)=(\tilde A\tilde Y)\tilde B$.
+*Proof.* The first two statements are the two composition laws below, read as the multiplicativity of $\tilde A\mapsto L_{\tilde A}$ and the anti-multiplicativity of $\tilde B\mapsto R_{\tilde B}$; injectivity makes them isomorphisms onto their images. The commutation is the associativity identity $\tilde A(\tilde Q\tilde B)=(\tilde A\tilde Q)\tilde B$.
 
 ## The Composition Laws
 
@@ -65,15 +65,15 @@ L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A},\qquad
 \bigl(L_{\tilde A}R_{\tilde B}\bigr)\circ\bigl(L_{\tilde C}R_{\tilde D}\bigr)=L_{\tilde A\tilde C}R_{\tilde D\tilde B},
 $$
 
-and the diagonal product $L_{\tilde A}R_{\tilde A^{-1}}$ for a unit $\tilde A$ is the **inner automorphism** $\mathrm{Ad}_{\tilde A}(\tilde Y)=\tilde A\tilde Y\tilde A^{-1}$.
+and the diagonal product $L_{\tilde A}R_{\tilde A^{-1}}$ for a unit $\tilde A$ is the **inner automorphism** $\mathrm{Ad}_{\tilde A}(\tilde Q)=\tilde A\tilde Q\tilde A^{-1}$.
 
-*Proof.* The first identity is $\tilde A(\tilde B\tilde Y)=(\tilde A\tilde B)\tilde Y$, the second is $(\tilde Y\tilde A)\tilde B=\tilde Y(\tilde A\tilde B)$ with the parameters read in the reverse order, the third is the associativity of the product, and the fourth composes the third with the first two. The last statement is the definition of the inner automorphism.
+*Proof.* The first identity is $\tilde A(\tilde B\tilde Q)=(\tilde A\tilde B)\tilde Q$, the second is $(\tilde Q\tilde A)\tilde B=\tilde Q(\tilde A\tilde B)$ with the parameters read in the reverse order, the third is the associativity of the product, and the fourth composes the third with the first two. The last statement is the definition of the inner automorphism.
 
 **Corollary (the regular representations).** The left multiplications are the **left regular representation** of $\mathbb{B}$, the right multiplications are the **right regular representation** of the opposite algebra, and the two families commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$. Their products $L_{\tilde A}R_{\tilde B}$ span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension $16$, because the sixteen operators $e_n[\,]e_m$ are independent: the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ is the full algebra of endomorphisms (*The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*).
 
 **Corollary (invertibility).** The left multiplication $L_{\tilde A}$ is invertible if and only if $\tilde A$ is a unit, with inverse $L_{\tilde A^{-1}}$; the same holds on the right, with inverse $R_{\tilde B^{-1}}$.
 
-*Proof.* If $\tilde A$ is a unit then $L_{\tilde A}L_{\tilde A^{-1}}=L_{e_{0}}=\mathrm{id}$ by the composition law. Conversely, if $L_{\tilde A}$ is invertible let $\tilde Y$ be the preimage of $e_{0}$; then $\tilde A\tilde Y=e_{0}$, and applying the inverse to $\tilde A$ shows that $\tilde Y$ is also a left inverse, so $\tilde A$ is a unit.
+*Proof.* If $\tilde A$ is a unit then $L_{\tilde A}L_{\tilde A^{-1}}=L_{e_{0}}=\mathrm{id}$ by the composition law. Conversely, if $L_{\tilde A}$ is invertible let $\tilde Q$ be the preimage of $e_{0}$; then $\tilde A\tilde Q=e_{0}$, and applying the inverse to $\tilde A$ shows that $\tilde Q$ is also a left inverse, so $\tilde A$ is a unit.
 
 ## Association on the One-Sided Operators
 
@@ -84,13 +84,13 @@ $$
 \bigl(R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}.
 $$
 
-*Proof.* By the invariance of the scalar part under cyclic permutation of the factors, for all $\tilde X,\tilde Y\in\mathbb{B}$,
+*Proof.* By the invariance of the scalar part under cyclic permutation of the factors, for all $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
 $$
-\bigl\langle L_{\tilde A}\tilde X,\tilde Y\bigr\rangle
-=\mathrm{Sc}\bigl(\tilde A\tilde X\tilde Y\bigr)
-=\mathrm{Sc}\bigl(\tilde X\tilde Y\tilde A\bigr)
-=\bigl\langle\tilde X,R_{\tilde A}\tilde Y\bigr\rangle,
+\bigl\langle L_{\tilde A}\tilde Q_1,\tilde Q_2\bigr\rangle
+=\mathrm{Sc}\bigl(\tilde A\tilde Q_1\tilde Q_2\bigr)
+=\mathrm{Sc}\bigl(\tilde Q_1\tilde Q_2\tilde A\bigr)
+=\bigl\langle\tilde Q_1,R_{\tilde A}\tilde Q_2\bigr\rangle,
 $$
 
 and the right case is the same computation with the two parameters in the other order. The form is non-degenerate, so the associate is unique.
@@ -100,10 +100,10 @@ and the right case is the same computation with the two parameters in the other 
 **Remark (the cross identity holds here and fails for the dagger).** For the plain form the adjoint of a left multiplication may be written with the parameter on the right,
 
 $$
-\bigl\langle L_{\tilde A}\tilde X,\tilde Y\bigr\rangle=\bigl\langle\tilde X,R_{\tilde A}\tilde Y\bigr\rangle,
+\bigl\langle L_{\tilde A}\tilde Q_1,\tilde Q_2\bigr\rangle=\bigl\langle\tilde Q_1,R_{\tilde A}\tilde Q_2\bigr\rangle,
 $$
 
-and this cross identity is **true**, because the form is the scalar part of the product and the scalar part is cyclic. It is false for the Hermitian form of the other pair: there $(L_{\tilde A}\tilde X,\tilde Y)=(\tilde X,L_{\tilde A^{*}}\tilde Y)$ and the analogous statement with $R_{\tilde A^{*}}$ fails. The reason is the same in both cases: the adjoint of a multiplication carries the parameter of the multiplication, and the plain form reads the parameter on the other side while the Hermitian one does not.
+and this cross identity is **true**, because the form is the scalar part of the product and the scalar part is cyclic. It is false for the Hermitian form of the other pair: there $(L_{\tilde A}\tilde Q_1,\tilde Q_2)=(\tilde Q_1,L_{\tilde A^{*}}\tilde Q_2)$ and the analogous statement with $R_{\tilde A^{*}}$ fails. The reason is the same in both cases: the adjoint of a multiplication carries the parameter of the multiplication, and the plain form reads the parameter on the other side while the Hermitian one does not.
 
 **Corollary (association on the mixed operators).** With the identity $(FG)^{\approx}=G^{\approx}\circ F^{\approx}$ for the transpose of a composite,
 
@@ -124,18 +124,18 @@ $$
 
 and the same two criteria hold for the right multiplication with $\tilde B$ in place of $\tilde A$.
 
-*Proof.* By the swap theorem, $L_{\tilde A}$ is self-adjoint exactly when $R_{\tilde A}=L_{\tilde A}$, that is $\tilde A\tilde Y=\tilde Y\tilde A$ for all $\tilde Y$, which is centrality of $\tilde A$; and it is skew-adjoint exactly when $R_{\tilde A}=-L_{\tilde A}$, that is $\tilde A\tilde Y=-\tilde Y\tilde A$ for all $\tilde Y$. Evaluating the last identity at $\tilde Y=e_{0}$ gives $\tilde A=-\tilde A$, hence $\tilde A=0$, and $\tilde A=0$ indeed gives the zero operator.
+*Proof.* By the swap theorem, $L_{\tilde A}$ is self-adjoint exactly when $R_{\tilde A}=L_{\tilde A}$, that is $\tilde A\tilde Q=\tilde Q\tilde A$ for all $\tilde Q$, which is centrality of $\tilde A$; and it is skew-adjoint exactly when $R_{\tilde A}=-L_{\tilde A}$, that is $\tilde A\tilde Q=-\tilde Q\tilde A$ for all $\tilde Q$. Evaluating the last identity at $\tilde Q=e_{0}$ gives $\tilde A=-\tilde A$, hence $\tilde A=0$, and $\tilde A=0$ indeed gives the zero operator.
 
 **Corollary (the two sectors).** The self-adjoint left multiplications are the multiplications by the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_{0}$; the skew-adjoint sector contains the zero operator alone. The two statements are the sharpest contrast with the Hermitian pair, where the Hermitian and the anti-Hermitian parameters give the self-adjoint and the skew-adjoint operators respectively and both sectors are four-dimensional, and with the quaternionic pair, where the pure parameters give nonzero skew-adjoint one-sided operators.
 
-**Remark (why the skew sector collapses).** Association reverses the order of the factors, and the scalar part is cyclic, so the transpose of a left multiplication is a right multiplication with the same parameter. A skew-adjoint left multiplication would therefore have to satisfy $\tilde A\tilde Y=-\tilde Y\tilde A$ for every $\tilde Y$, and the unit of the algebra permits only $\tilde A=0$. The collapse is a property of the plain form and of the unit together; it disappears as soon as the adjoint carries a conjugation of the parameter, as in the quaternionic case.
+**Remark (why the skew sector collapses).** Association reverses the order of the factors, and the scalar part is cyclic, so the transpose of a left multiplication is a right multiplication with the same parameter. A skew-adjoint left multiplication would therefore have to satisfy $\tilde A\tilde Q=-\tilde Q\tilde A$ for every $\tilde Q$, and the unit of the algebra permits only $\tilde A=0$. The collapse is a property of the plain form and of the unit together; it disappears as soon as the adjoint carries a conjugation of the parameter, as in the quaternionic case.
 
 ## Which Multiplications Preserve the Form
 
 **Theorem (the one-sided automorphisms of the form).** The left multiplication $L_{\tilde A}$ preserves the general plain bilinear form,
 
 $$
-\bigl\langle L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr\rangle=\langle\tilde X,\tilde Y\rangle\qquad\text{for all }\tilde X,\tilde Y,
+\bigl\langle L_{\tilde A}\tilde Q_1,L_{\tilde A}\tilde Q_2\bigr\rangle=\langle\tilde Q_1,\tilde Q_2\rangle\qquad\text{for all }\tilde Q_1,\tilde Q_2,
 $$
 
 if and only if $\tilde A=\pm e_{0}$, that is if and only if $L_{\tilde A}=\pm\mathrm{id}$. The same criterion holds for $R_{\tilde B}$.
@@ -143,20 +143,20 @@ if and only if $\tilde A=\pm e_{0}$, that is if and only if $L_{\tilde A}=\pm\ma
 *Proof.* By the swap theorem and the symmetry of the form,
 
 $$
-\bigl\langle L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr\rangle
-=\mathrm{Sc}\bigl(\tilde A\tilde X\tilde A\tilde Y\bigr)
-=\bigl\langle\tilde X,\tilde A\tilde Y\tilde A\bigr\rangle,
+\bigl\langle L_{\tilde A}\tilde Q_1,L_{\tilde A}\tilde Q_2\bigr\rangle
+=\mathrm{Sc}\bigl(\tilde A\tilde Q_1\tilde A\tilde Q_2\bigr)
+=\bigl\langle\tilde Q_1,\tilde A\tilde Q_2\tilde A\bigr\rangle,
 $$
 
-so preservation is equivalent to $\tilde A\tilde Y\tilde A=\tilde Y$ for all $\tilde Y$. At $\tilde Y=e_{0}$ this gives $\tilde A^{2}=e_{0}$, so $\tilde A$ is a unit with $\tilde A^{-1}=\tilde A$; the identity then reads $\tilde A\tilde Y=\tilde Y\tilde A$ for all $\tilde Y$, so $\tilde A$ is central, and a central element of square $e_{0}$ is $\pm e_{0}$ (it is $\lambda e_{0}$ with $\lambda^{2}=1$). Conversely $\pm e_{0}$ preserves the form because the two signs cancel.
+so preservation is equivalent to $\tilde A\tilde Q\tilde A=\tilde Q$ for all $\tilde Q$. At $\tilde Q=e_{0}$ this gives $\tilde A^{2}=e_{0}$, so $\tilde A$ is a unit with $\tilde A^{-1}=\tilde A$; the identity then reads $\tilde A\tilde Q=\tilde Q\tilde A$ for all $\tilde Q$, so $\tilde A$ is central, and a central element of square $e_{0}$ is $\pm e_{0}$ (it is $\lambda e_{0}$ with $\lambda^{2}=1$). Conversely $\pm e_{0}$ preserves the form because the two signs cancel.
 
 **Theorem (the inner automorphisms preserve the form).** For every unit $\tilde A$ the inner automorphism $\mathrm{Ad}_{\tilde A}=L_{\tilde A}R_{\tilde A^{-1}}$ preserves the form:
 
 $$
-\bigl\langle \tilde A\tilde X\tilde A^{-1},\tilde A\tilde Y\tilde A^{-1}\bigr\rangle=\langle\tilde X,\tilde Y\rangle .
+\bigl\langle \tilde A\tilde Q_1\tilde A^{-1},\tilde A\tilde Q_2\tilde A^{-1}\bigr\rangle=\langle\tilde Q_1,\tilde Q_2\rangle .
 $$
 
-*Proof.* $\mathrm{Sc}(\tilde A\tilde X\tilde A^{-1}\tilde A\tilde Y\tilde A^{-1})=\mathrm{Sc}(\tilde A\tilde X\tilde Y\tilde A^{-1})=\mathrm{Sc}(\tilde X\tilde Y)$ by the cyclicity of the scalar part.
+*Proof.* $\mathrm{Sc}(\tilde A\tilde Q_1\tilde A^{-1}\tilde A\tilde Q_2\tilde A^{-1})=\mathrm{Sc}(\tilde A\tilde Q_1\tilde Q_2\tilde A^{-1})=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ by the cyclicity of the scalar part.
 
 **Corollary (preservation is a two-sided property).** The one-sided operators that are automorphisms of the form are the two trivial ones, while the inner automorphisms, which are two-sided, are automorphisms of the form for every unit of the algebra. The isometries of the plain form that the algebra supplies are therefore not one-sided, and the companion article reads them inside the two-sided family.
 
@@ -195,21 +195,21 @@ $$
 
 **A null parameter.** For the zero divisor $\tilde A=e_{1}+ie_{2}$, whose square is $0$, the operator $L_{\tilde A}$ is neither self-adjoint nor skew-adjoint, and $L_{\tilde A}^{2}=L_{\tilde A^{2}}=0$: the powers of a null-parameter multiplication vanish. The example records that the type criteria read the parameter and not the invertibility of the parameter. The companion case $\tilde B=e_{0}$ of the two-sided article shows the same for a parameter that is not a unit, and the two-sided article records it (*Two-Sided Operators on the Biquaternion Algebra*, §*Worked Examples*).
 
-**A numerical check of the swap.** For random $\tilde A,\tilde B,\tilde X,\tilde Y$, the identities $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$, $\langle L_{\tilde A}\tilde X,\tilde Y\rangle=\langle\tilde X,R_{\tilde A}\tilde Y\rangle$ and $\langle L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\rangle=\langle\tilde X,\tilde A\tilde Y\tilde A\rangle$ hold to machine precision, and the last one is the identity on which the automorphism criterion rests.
+**A numerical check of the swap.** For random $\tilde A,\tilde B,\tilde Q_1,\tilde Q_2$, the identities $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$, $\langle L_{\tilde A}\tilde Q_1,\tilde Q_2\rangle=\langle\tilde Q_1,R_{\tilde A}\tilde Q_2\rangle$ and $\langle L_{\tilde A}\tilde Q_1,L_{\tilde A}\tilde Q_2\rangle=\langle\tilde Q_1,\tilde A\tilde Q_2\tilde A\rangle$ hold to machine precision, and the last one is the identity on which the automorphism criterion rests.
 
 ## Summary
 
-The left and the right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$ are the one-sided operators of the biquaternion algebra, and the products $L_{\tilde A}R_{\tilde B}$ of the companion article are the two-sided ones. The parameter enters once, so the assignment is linear, multiplicative in the first slot and anti-multiplicative in the second, and the two families commute. Association, the adjoint for the general plain bilinear form, **swaps the two families**, $(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(R_{\tilde B})^{\approx}=L_{\tilde B}$: the transpose of the left regular representation is the right one. The type criteria are read off the parameter: self-adjoint exactly for a central parameter, skew-adjoint for the zero parameter alone. The one-sided operators that preserve the form are the two trivial ones, $\pm\mathrm{id}$, while the inner automorphisms, which are two-sided, preserve it for every unit. The commutant of the left family is the right family, and the bicommutant is the scalars.
+The left and the right multiplications $L_{\tilde A}(\tilde Q)=\tilde A\tilde Q$ and $R_{\tilde B}(\tilde Q)=\tilde Q\tilde B$ are the one-sided operators of the biquaternion algebra, and the products $L_{\tilde A}R_{\tilde B}$ of the companion article are the two-sided ones. The parameter enters once, so the assignment is linear, multiplicative in the first slot and anti-multiplicative in the second, and the two families commute. Association, the adjoint for the general plain bilinear form, **swaps the two families**, $(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(R_{\tilde B})^{\approx}=L_{\tilde B}$: the transpose of the left regular representation is the right one. The type criteria are read off the parameter: self-adjoint exactly for a central parameter, skew-adjoint for the zero parameter alone. The one-sided operators that preserve the form are the two trivial ones, $\pm\mathrm{id}$, while the inner automorphisms, which are two-sided, preserve it for every unit. The commutant of the left family is the right family, and the bicommutant is the scalars.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$ |
-| $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | The general plain bilinear form; Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | The general plain bilinear form; Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, of $F$ for this form |
-| $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ | Left multiplication; linear and injective in $\tilde A$ |
-| $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$ | Right multiplication; the anti-multiplicative family |
+| $L_{\tilde A}(\tilde Q)=\tilde A\tilde Q$ | Left multiplication; linear and injective in $\tilde A$ |
+| $R_{\tilde B}(\tilde Q)=\tilde Q\tilde B$ | Right multiplication; the anti-multiplicative family |
 | $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ | Composition laws |
 | $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$ | The two families commute |
 | $(L_{\tilde A})^{\approx}=R_{\tilde A}$, $(R_{\tilde B})^{\approx}=L_{\tilde B}$ | Association swaps the two families |
@@ -222,7 +222,7 @@ The left and the right multiplications $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$
 
 - *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples* (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$, the basis rule $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, and the identity $(FG)^{\approx}=G^{\approx}F^{\approx}$ used throughout.
 - *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion article, for the products $L_{\tilde A}R_{\tilde B}$, their swap adjoint, and the type, automorphism and isometry criteria of the family.
-- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the two bilinear and the two sesquilinear pairings of the algebra and the place of $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ among them, and the polarisation of the form and its quadratic companion.
+- *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the two bilinear and the two sesquilinear pairings of the algebra and the place of $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ among them, and the polarisation of the form and its quadratic companion.
 - *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the enveloping algebra $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ and the two-sided operators as its elements.
 - *Modules over the Biquaternion Algebra* (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the left regular representation as two copies of the standard module $\mathbb{C}^{2}$.
 - *Zero Divisors of the Biquaternion Algebra* (`articles_maths/zero-divisors-of-the-biquaternion-algebra.md`), for the null elements and the pairs of complementary zero divisors used in the examples.

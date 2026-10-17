@@ -14,7 +14,7 @@ and a state vector of this space is a list of the representation labelling the p
 
 The article is organised as follows. A first section recalls the abstract Hilbert space and its convergence condition. A second builds the spin multiplets and a third the charge multiplets. A fourth assembles the spin–charge space and reads a state vector. A fifth records the superselection rules, and a sixth the ray representation and the central extension that carries the internal symmetry. A closing section separates what the framework hosts from what it transcribes.
 
-**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\dot l}$ with $l,\dot l\in\frac12\mathbb{Z}_{\ge0}$ and spin $s=|l-\dot l|$. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$, its Clifford form the corpus's *Clifford Algebra Representation*. The construction and the particle assignments are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§2.3, 3); the mass formula used to place the charge multiplets is the subject of the companion *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*.
+**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$ and spin $s=|l-\bar l|$. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong\mathbb{C}\mathrm{l}_2$, its Clifford form the corpus's *Clifford Algebra Representation*. The construction and the particle assignments are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §§2.3, 3); the mass formula used to place the charge multiplets is the subject of the companion *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*.
 
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass formula that fixes the spin-space degrees on the spin lines.
 - Companion article *SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form*, for the $\mathrm{SU}(3)$ representation theory and the mass splitting within a supermultiplet.
@@ -49,7 +49,7 @@ $$
 \mathcal{H}_S^2\otimes\mathcal{H}_\infty,
 $$
 
-with basis vectors $|e_1\rangle,|e_2\rangle$ of $\mathcal{H}_S^2$ and general vector $\psi_S=\sum_j|x_j\rangle\otimes|\psi_j\rangle$. The correspondence with the formal sum shows the tensor product is the adequate description of the space of wave functions with spin.
+with basis vectors $|\vec e_x\rangle,|\vec e_y\rangle$ of $\mathcal{H}_S^2$ and general vector $\psi_S=\sum_j|x_j\rangle\otimes|\psi_j\rangle$. The correspondence with the formal sum shows the tensor product is the adequate description of the space of wave functions with spin.
 
 ### Spin Doublets and Triplets
 
@@ -103,10 +103,10 @@ $$
 and a state vector of it is written
 
 $$
-|A\rangle = \bigl(\tau^{l\dot l},\ \mathrm{Sym}^{(k,r)},\ \mathrm{Cl}_{n,m},\ S_{(n+m)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
+|A\rangle = \bigl(\tau^{l\bar l},\ \mathrm{Sym}^{(k,r)},\ \mathrm{Cl}_{n,m},\ S_{(n+m)/2},\ C^{a,b,c,d,e,f,g},\ \dots\bigr),
 $$
 
-the entries being the Lorentz representation $\tau^{l\dot l}$ that fixes the spin $s=|l-\dot l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\dot l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\dot l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
+the entries being the Lorentz representation $\tau^{l\bar l}$ that fixes the spin $s=|l-\bar l|$, the symmetric representation space $\mathrm{Sym}^{(k,r)}$ of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, the Clifford algebra $\mathrm{Cl}_{n,m}$ associated with the representation, its spin space $S_{(n+m)/2}$, and the $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group of the discrete operations of the companion CPT article. The **main object** defining a vector is the representation $\tau^{l\bar l}$; the Clifford algebra, the spin space and the discrete group belong to the spinor structure and are attached to it.
 
 The charge takes the three values $\{-1,0,\bar0\}$: the values $\pm1$ are the charged particles, carried by the complex representations; the value $0$ is the neutral particle with a distinct antiparticle, carried by the real representations of quaternionic division ring; and the value $\bar0$ is the **truly neutral** particle, carried by the real representations of real division ring. This trichotomy is the subject of the companion *Charge Conjugation and the Division Ring*, and the present section takes it as the labelling of the charge factor. A supermultiplet is then a set of vectors of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ sharing a Lorentz representation and a Clifford algebra and differing in the charge projection.
 
@@ -125,14 +125,14 @@ A second structural point concerns the representation of the symmetry group. A p
 Because only rays are physical, the multiplication law of symmetry operators is a **ray (projective) representation**,
 
 $$
-T_{gg'} = \omega(g,g')\,T_g\,T_{g'}, \qquad \omega(g,g')\in U(1),
+T_{gg'} = \omega(g,g')\,T_g\,T_{g'}, \qquad \omega(g,g')\in \mathrm{U}(1),
 $$
 
 and when $\omega\ne1$ the ordinary theory of group representations does not apply. The remedy is the **central extension**: the group $G$ is enlarged to $E$ whose ordinary representations reproduce all the ray representations of $G$, and a symmetry group of the physical system is represented by the unitary or antiunitary maps of $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ that lift the ray representation. The internal symmetry groups $\mathrm{SU}(2),\mathrm{SU}(3),\dots$ act in this way, and the supermultiplet structure of the eightfold way is the orbit structure of their action.
 
 ## The Biquaternion Reading
 
-The framework's relation to all this is precise, and it is a relation of **one** of the three factors. The spin factor $\mathcal{H}_S$ is exactly the framework's own spinor structure: the Lorentz representations $\tau^{l\dot l}$, the spin lines, and the spin spaces $S_{(n+m)/2}$ are the corpus's objects, and the finite-dimensional spin space of a state is the module of the biquaternion algebra or of its tensor powers. The mass formula that fixes the degree on each spin line is the companion article's.
+The framework's relation to all this is precise, and it is a relation of **one** of the three factors. The spin factor $\mathcal{H}_S$ is exactly the framework's own spinor structure: the Lorentz representations $\tau^{l\bar l}$, the spin lines, and the spin spaces $S_{(n+m)/2}$ are the corpus's objects, and the finite-dimensional spin space of a state is the module of the biquaternion algebra or of its tensor powers. The mass formula that fixes the degree on each spin line is the companion article's.
 
 The charge factor $\mathcal{H}_Q$ is a different matter. The internal symmetry groups act there by central extension, and the companion *The Gauge Group Ceiling* establishes that the biquaternion algebra's own compact structure reaches $\mathrm{SU}(2)$ and stops: the $\mathrm{SU}(3)$ of the charge triplet's further generalisation is not an algebra of $\mathbb{B}$. The spin–charge space is therefore something the framework can **state** and lay out, but not something it **contains**; the charge factor is added from outside, and its $\mathrm{SU}(3)$ structure is transcribed.
 
@@ -143,7 +143,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 **Established, and recomputed.**
 
 - The spin multiplet is $\mathcal{H}_S^{2s+1}\otimes\mathcal{H}_\infty$ and the charge multiplet is $\mathcal{H}_Q^m\otimes\mathcal{H}_\infty$; the spin triplet's fundamental member is $\tau^{1,0}\oplus\tau^{1/2,1/2}\oplus\tau^{0,1}$, with spins $+1,0,-1$, and the spin doublet's is $\tau^{1/2,0}\oplus\tau^{0,1/2}$, with spins $\pm\frac12$. These are the tensor-product decompositions and are checkable in the corpus's representation ring.
-- The degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\dot l+1)$ for $\tau^{l\dot l}$ with $k=2l$, $r=2\dot l$, so the vector label's two entries carry the same number.
+- The degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals $(2l+1)(2\bar l+1)$ for $\tau^{l\bar l}$ with $k=2l$, $r=2\bar l$, so the vector label's two entries carry the same number.
 - A symmetry of rays is unitary or antiunitary, and the two possibilities exist exactly over $\mathbb{C}$; this is Wigner's theorem and the field-automorphism argument, both standard.
 
 **Transcribed, not derived.**
@@ -170,7 +170,7 @@ The infinite-dimensional factor $\mathcal{H}_\infty$ is the third point. It is w
 
 ## Summary
 
-The spinor-structure programme assembles the particle content of the Standard Model into a single Hilbert space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$: the spin factor from Pauli's doubling of the wave function, the charge factor from Heisenberg's and Kemmer's doublings for the nucleon and the three-charge particle, and the infinite-dimensional factor from Wigner's definition of an elementary particle. A state vector is a list of a Lorentz representation $\tau^{l\dot l}$ (fixing the spin), its symmetric representation space, its Clifford algebra and spin space, and the discrete-operation group; the charge takes the three values $\pm1,0,\bar0$ that the companion division-ring article separates. Superpositions are restricted by superselection rules into coherent subspaces labelled by spin and charge, and the internal symmetry groups act through a central extension of their ray representations, over $\mathbb{C}$ admitting both unitary and antiunitary maps.
+The spinor-structure programme assembles the particle content of the Standard Model into a single Hilbert space $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$: the spin factor from Pauli's doubling of the wave function, the charge factor from Heisenberg's and Kemmer's doublings for the nucleon and the three-charge particle, and the infinite-dimensional factor from Wigner's definition of an elementary particle. A state vector is a list of a Lorentz representation $\tau^{l\bar l}$ (fixing the spin), its symmetric representation space, its Clifford algebra and spin space, and the discrete-operation group; the charge takes the three values $\pm1,0,\bar0$ that the companion division-ring article separates. Superpositions are restricted by superselection rules into coherent subspaces labelled by spin and charge, and the internal symmetry groups act through a central extension of their ray representations, over $\mathbb{C}$ admitting both unitary and antiunitary maps.
 
 The framework's relation to this is a relation of one factor. The spin factor is its own spinor structure, with the companion mass formula fixing degrees on the spin lines. The charge factor lies beyond the gauge-group ceiling, so the $\mathrm{SU}(3)$ structure is transcribed, not contained. The infinite-dimensional factor has no constructed counterpart in the corpus's field description. Recorded as a scheme, the spin–charge space is a clean bridge between the spinor structure and the particle classification, and a clear statement of exactly where the framework stops.
 
@@ -181,8 +181,8 @@ The framework's relation to this is a relation of one factor. The spin factor is
 | $\mathcal{H}_\infty$ | Abstract Hilbert space of the Lorentz group representation, von Neumann condition |
 | $\mathcal{H}_S^{\,2s+1}$, $\mathcal{H}_Q^{m}$ | Finite-dimensional spin and charge spaces |
 | $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$ | Spin–charge Hilbert space |
-| $s=\lvert l-\dot l\rvert$ | Spin of the Lorentz representation |
-| $\mathrm{Sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\dot l}$, $k=2l$, $r=2\dot l$ |
+| $s=\lvert l-\bar l\rvert$ | Spin of the Lorentz representation |
+| $\mathrm{Sym}^{(k,r)}$, degree $(k+1)(r+1)$ | Symmetric representation space of $\tau^{l\bar l}$, $k=2l$, $r=2\bar l$ |
 | $\mathrm{Cl}_{n,m}$, $S_{(n+m)/2}$ | Associated Clifford algebra and spin space |
 | $Ϙ=+1,0,\bar0$ | Charged, neutral, truly neutral charge states |
 | $T_{gg'}=\omega(g,g')T_gT_{g'}$ | Ray (projective) representation of the symmetry group |

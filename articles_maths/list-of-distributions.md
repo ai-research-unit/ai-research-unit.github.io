@@ -37,11 +37,11 @@ This article lists the distributions and the generalised functions the corpus in
 |---|---|---|
 | the surface delta $\delta_S$ (the single layer of unit density) | $\langle\delta_S,\psi\rangle = \int_S\psi\,dS$; equals $\lvert\nabla\varphi\rvert\,\delta\circ\varphi$ for a defining function $\varphi$ of $S$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the normal layer $n\,\delta_S$ | the gradient of the Heaviside function of a defining function, $\nabla H(\varphi)$ | *Distributions on Surfaces, Layers, and Jump Conditions* |
-| the double layer $\partial_n\delta_S$ | the normal derivative of the surface delta; a layer of order $1$, the density of a normal dipole sheet | *Distributions on Surfaces, Layers, and Jump Conditions* |
-| the layer of order $k$, $\partial_n^{\,k}(g\delta_S)$ | a distribution supported on $S$; every distribution supported on a hypersurface is locally a finite sum of layers | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the double layer $\partial/\partial n\,\delta_S$ | the normal derivative of the surface delta; a layer of order $1$, the density of a normal dipole sheet | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the layer of order $k$, $\partial^k/\partial n^k(g\delta_S)$ | a distribution supported on $S$; every distribution supported on a hypersurface is locally a finite sum of layers | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the singular part of the divergence, $(n\cdot[A])\,\delta_S$ | the single layer produced by a discontinuous vector field; the surface charge density | *Distributions on Surfaces, Layers, and Jump Conditions* |
 | the singular part of the rotor, $n\times[A]\,\delta_S$ | the tangential single layer produced by a discontinuous vector field; the surface current | *Distributions on Surfaces, Layers, and Jump Conditions* |
-| the jump formula, $\partial_j u = \{\partial_j u\} + [u]n_j\delta_S$ | separates the classical derivative of a piecewise smooth function from the layer its jump creates | *Distributions on Surfaces, Layers, and Jump Conditions* |
+| the jump formula, $\partial/\partial x_j u = \{\partial/\partial x_j u\} + [u]n_j\delta_S$ | separates the classical derivative of a piecewise smooth function from the layer its jump creates | *Distributions on Surfaces, Layers, and Jump Conditions* |
 
 ## Operations and Their Limits
 

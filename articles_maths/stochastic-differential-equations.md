@@ -17,7 +17,7 @@ $$
 f(B_t) = f(B_0)+\int_0^tf'(B_s)\,dB_s+\frac12\int_0^tf''(B_s)\,ds ,
 $$
 
-the last term arising because the Brownian path accumulates quadratic variation $\langle B\rangle_t=t$ at a rate that makes the second-order Taylor term contribute at first order. Itô's formula is the fundamental theorem of the subject, and the generator $L$ of the process, defined by the equation $df(X_t)=Lf(X_t)dt+\text{martingale}$, is the object that connects the stochastic equation to the partial differential equations of this Part: the expectation $u(t,x)=\mathbb{E}_x[f(X_t)]$ solves the backward Kolmogorov equation $\partial_t u=Lu$, and with a killing or a discounting factor it solves the Feynman–Kac equation.
+the last term arising because the Brownian path accumulates quadratic variation $\langle B\rangle_t=t$ at a rate that makes the second-order Taylor term contribute at first order. Itô's formula is the fundamental theorem of the subject, and the generator $L$ of the process, defined by the equation $df(X_t)=Lf(X_t)dt+\text{martingale}$, is the object that connects the stochastic equation to the partial differential equations of this Part: the expectation $w(t,x)=\mathbb{E}_x[f(X_t)]$ solves the backward Kolmogorov equation $\partial/\partial t w=Lw$, and with a killing or a discounting factor it solves the Feynman–Kac equation.
 
 The article develops the Brownian motion and its quadratic variation; the Itô integral and its isometry; Itô's formula and the generator; the Stratonovich integral, the correction formula and the conversion between the two forms of an equation; existence and uniqueness of strong solutions by Picard iteration, weak solutions and the Yamada–Watanabe principle; Girsanov's theorem and the change of measure; the Markov property, the Kolmogorov equations and Feynman–Kac; and the standard examples, the geometric Brownian motion, the Ornstein–Uhlenbeck process and the Bessel process. The measure theory is that of *Measure Theory and Integration*, and the probability spaces, martingales and Brownian motion are the notions of the probability articles of this Part, written in parallel; the partial differential equations that appear are those of the earlier article of this Part, and the semigroup theory connecting them is that of the preceding article.
 
@@ -65,7 +65,7 @@ and the integral extends uniquely to an isometry $\mathcal{H}^2\to L^2(\Omega)$;
 **Theorem (Itô's formula, one-dimensional).** Let $f\in C^{1,2}([0,\infty)\times\mathbb{R})$ and let $X_t = X_0+\int_0^tb_s\,ds+\int_0^t\sigma_s\,dB_s$ with $b,\sigma$ in the appropriate integrability classes. Then almost surely, for all $t$,
 
 $$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf(s,X_s)+b_s\partial_xf(s,X_s)+\tfrac12\sigma_s^2\partial_{xx}f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial_xf(s,X_s)\,dB_s .
+f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f(s,X_s)+b_s\partial/\partial x\,f(s,X_s)+\tfrac12\sigma_s^2\partial/\partial xx\,f(s,X_s)\Bigr)ds+\int_0^t\sigma_s\partial/\partial x\,f(s,X_s)\,dB_s .
 $$
 
 *Proof.* Quoted as standard. The proof is a Taylor expansion along a partition: the first-order terms converge to the drift and the stochastic integral, and the second-order term in $x$ leaves the sum $\sum(\Delta X_i)^2$, which converges to the quadratic variation $\int\sigma_s^2ds$ rather than to zero. The third- and higher-order terms are of higher order by the finite quadratic variation and the continuity of the paths.
@@ -76,7 +76,7 @@ $$
 Lf(t,x) = b(t,x)\cdot\nabla_xf(t,x)+\frac12\operatorname{tr}\bigl(\sigma\sigma^{\mathrm{T}}(t,x)\nabla_x^2f(t,x)\bigr),
 $$
 
-so that $df(t,X_t) = \bigl(\partial_t+L\bigr)f(t,X_t)dt+\nabla_xf(t,X_t)^{T}\sigma(t,X_t)dB_t$; the last differential is a martingale differential, and the finite-variation part of $f(t,X_t)$ is $\bigl(\partial_t+L\bigr)f\,dt$.
+so that $df(t,X_t) = \bigl(\partial/\partial t+L\bigr)f(t,X_t)dt+\nabla_xf(t,X_t)^{T}\sigma(t,X_t)dB_t$; the last differential is a martingale differential, and the finite-variation part of $f(t,X_t)$ is $\bigl(\partial/\partial t+L\bigr)f\,dt$.
 
 **Corollary (Dynkin's formula).** If $\tau$ is a stopping time with $\mathbb{E}_x[\tau]<\infty$ and $f$ is $C^2$ with compact support, then
 
@@ -86,7 +86,7 @@ $$
 
 *Proof.* Apply Itô's formula to $f(X_t)$, note that the stochastic integral is a martingale, and take expectations at the stopping time $\tau$; the optional stopping theorem for a bounded martingale and a truncation argument for the integrability of $\tau$ justify the passage.
 
-**Remark (the generator and the operators of the previous articles).** The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial_t u+Lu=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.
+**Remark (the generator and the operators of the previous articles).** The generator $L$ is an elliptic second-order operator with the ellipsoid of the diffusion matrix as its symbol, so the backward equation $\partial/\partial t w+Lw=0$ is a parabolic equation of the type studied in the earlier article of this Part: elliptic when the diffusion matrix is positive definite, degenerate when it is not, and with the boundary conditions supplied by the problem. The transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ is a strongly continuous semigroup on a suitable Banach space whose generator is $L$, and the well-posedness theory of the semigroup article applies to it; this is the precise point of contact between the stochastic and the deterministic theories.
 
 ## The Stratonovich Integral
 
@@ -126,7 +126,7 @@ $$
 dX_t = \Bigl(b(X_t)-\tfrac12\sigma'(X_t)\sigma(X_t)\Bigr)dt+\sigma(X_t)\circ dB_t ,
 $$
 
-and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma^j_k\partial_{x_j}\sigma^i_k$ in the $i$-th component.
+and conversely; in several dimensions the correction term is $\frac12\sum_{j,k}\sigma^j_k\partial/\partial x_j\,\sigma^i_k$ in the $i$-th component.
 
 *Proof.* Apply the Stratonovich chain rule to $\sigma(X_t)$ and substitute the Itô equation: the cross variation $\langle\sigma(X),B\rangle_t=\int\sigma'\sigma\,ds$ produces the drift correction, and the equivalence follows.
 
@@ -192,33 +192,33 @@ and for time-homogeneous coefficients the kernels $P_t$ form a semigroup, $P_{s,
 
 *Proof.* The solution restarted at time $s$ from $X_s$ solves the same equation driven by the shifted Brownian motion by the strong uniqueness; the conditional expectation depends on $\mathcal{F}_s$ only through $X_s$, which is the Markov property, and the semigroup law is the composition of the transitions.
 
-**Theorem (backward and forward Kolmogorov equations).** Let $u(t,x)=\mathbb{E}_x[f(X_t)]$ for $f$ smooth. Then $u$ solves the **backward Kolmogorov equation**
+**Theorem (backward and forward Kolmogorov equations).** Let $w(t,x)=\mathbb{E}_x[f(X_t)]$ for $f$ smooth. Then $w$ solves the **backward Kolmogorov equation**
 
 $$
-\partial_t u = Lu, \qquad u(0,x)=f(x),
+\partial/\partial t w = Lw, \qquad w(0,x)=f(x),
 $$
 
 in the classical sense when the coefficients and $f$ are smooth, and more generally in the weak sense. If $X$ has a transition density $p(t,x,y)$ with respect to Lebesgue measure, then $p$ solves the **forward Kolmogorov** or **Fokker–Planck equation**
 
 $$
-\partial_tp = L^*p, \qquad L^*p = -\sum_i\partial_{x_i}(b_ip)+\frac12\sum_{i,j}\partial_{x_ix_j}\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr),
+\partial/\partial t\,p = L^*p, \qquad L^*p = -\sum_i\partial/\partial x_i(b_ip)+\frac12\sum_{i,j}\partial/\partial x_ix_j\,\bigl((\sigma\sigma^{\mathrm{T}})_{ij}p\bigr),
 $$
 
 with the initial condition $p(0,\cdot,y)\to\delta_y$.
 
-*Proof.* Apply Itô's formula to $u(T-t,X_t)$: the drift is $(-\partial_t u+Lu)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $u(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.
+*Proof.* Apply Itô's formula to $w(T-t,X_t)$: the drift is $(-\partial/\partial t w+Lw)(T-t,X_t)$ and the stochastic integral is a martingale; taking expectations over $[0,T]$ and using $w(0,X_T)=f(X_T)$ gives the backward equation when the drift vanishes for every $f$, and the Fokker–Planck equation is the formal adjoint obtained by integrating the backward equation against a test function.
 
 **Theorem (Feynman–Kac).** Let $V$ be bounded and continuous and let $f$ be bounded. Then
 
 $$
-u(t,x) = \mathbb{E}_x\left[\exp\left(-\int_0^tV(X_s)ds\right)f(X_t)\right]
+w(t,x) = \mathbb{E}_x\left[\exp\left(-\int_0^tV(X_s)ds\right)f(X_t)\right]
 $$
 
-is the unique bounded solution of $\partial_t u = Lu - Vu$ with $u(0,x)=f(x)$.
+is the unique bounded solution of $\partial/\partial t w = Lw - Vw$ with $w(0,x)=f(x)$.
 
-*Proof.* Quoted as standard (the Feynman–Kac formula). Let $Z_t = \exp(-\int_0^tV(X_s)ds)\,u(t,X_t)$. Itô's formula applied to the product gives
-$dZ_t = \exp(-\int_0^tV)\bigl(\partial_t u+Lu-Vu\bigr)(t,X_t)\,dt+d(\text{martingale})$;
-when $\partial_t u=Lu-Vu$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=u(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$.
+*Proof.* Quoted as standard (the Feynman–Kac formula). Let $Z_t = \exp(-\int_0^tV(X_s)ds)\,w(t,X_t)$. Itô's formula applied to the product gives
+$dZ_t = \exp(-\int_0^tV)\bigl(\partial/\partial t w+Lw-Vw\bigr)(t,X_t)\,dt+d(\text{martingale})$;
+when $\partial/\partial t w=Lw-Vw$ the finite-variation part vanishes, so $Z$ is a martingale, and taking expectations between $0$ and $t$ gives $\mathbb{E}_x[Z_t]=Z_0=w(0,x)=f(x)$, which is the formula. Uniqueness follows from the maximum principle and the boundedness of $V$.
 
 **Example (geometric Brownian motion).** For $dX_t=\mu X_tdt+\sigma X_tdB_t$ with constants $\mu,\sigma$, the solution is
 
@@ -230,7 +230,7 @@ obtained by applying Itô's formula to $\log X_t$: the Itô correction $-\frac12
 
 ## Summary
 
-A stochastic differential equation $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ is an integral equation driven by Brownian motion, whose paths are continuous, nowhere differentiable and of quadratic variation $\langle B\rangle_t=t$. The Itô integral evaluates the integrand at the left endpoint, is a martingale with the isometry $\mathbb{E}|\int\phi\,dB|^2=\mathbb{E}\int\phi^2ds$, and satisfies Itô's formula $df(t,X_t)=(\partial_t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB_t$ with the second-order correction; the Stratonovich integral evaluates the midpoint, differs from the Itô integral by $\frac12\langle\phi,B\rangle_t$, obeys the classical chain rule, and is converted to the Itô form by the drift correction $-\frac12\sigma'\sigma$. The generator $L=b\cdot\nabla+\frac12\operatorname{tr}(\sigma\sigma^{\mathrm{T}}\nabla^2)$ governs the process: Dynkin's formula holds, the transition kernels form a semigroup with generator $L$, and the expectations solve the backward Kolmogorov and Feynman–Kac equations, with the Fokker–Planck equation as the adjoint. Existence and pathwise uniqueness hold for locally Lipschitz coefficients by Picard iteration together with the Burkholder–Davis–Gundy inequality; Yamada–Watanabe passes from pathwise uniqueness to uniqueness in law and from a weak solution to a strong one, and the Stroock–Varadhan martingale problem characterises the weak solutions. Girsanov's theorem changes the measure by an exponential martingale and converts a drift into a Brownian motion, and the standard explicit examples are the Ornstein–Uhlenbeck process and the geometric Brownian motion.
+A stochastic differential equation $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ is an integral equation driven by Brownian motion, whose paths are continuous, nowhere differentiable and of quadratic variation $\langle B\rangle_t=t$. The Itô integral evaluates the integrand at the left endpoint, is a martingale with the isometry $\mathbb{E}|\int\phi\,dB|^2=\mathbb{E}\int\phi^2ds$, and satisfies Itô's formula $df(t,X_t)=(\partial/\partial t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB_t$ with the second-order correction; the Stratonovich integral evaluates the midpoint, differs from the Itô integral by $\frac12\langle\phi,B\rangle_t$, obeys the classical chain rule, and is converted to the Itô form by the drift correction $-\frac12\sigma'\sigma$. The generator $L=b\cdot\nabla+\frac12\operatorname{tr}(\sigma\sigma^{\mathrm{T}}\nabla^2)$ governs the process: Dynkin's formula holds, the transition kernels form a semigroup with generator $L$, and the expectations solve the backward Kolmogorov and Feynman–Kac equations, with the Fokker–Planck equation as the adjoint. Existence and pathwise uniqueness hold for locally Lipschitz coefficients by Picard iteration together with the Burkholder–Davis–Gundy inequality; Yamada–Watanabe passes from pathwise uniqueness to uniqueness in law and from a weak solution to a strong one, and the Stroock–Varadhan martingale problem characterises the weak solutions. Girsanov's theorem changes the measure by an exponential martingale and converts a drift into a Brownian motion, and the standard explicit examples are the Ornstein–Uhlenbeck process and the geometric Brownian motion.
 
 ## Summary of Notation
 
@@ -242,11 +242,11 @@ A stochastic differential equation $dX_t=b(t,X_t)dt+\sigma(t,X_t)dB_t$ is an int
 | $X_t$ | Solution process of the stochastic equation |
 | $b$, $\sigma$, $\sigma\sigma^{\mathrm{T}}$ | Drift, diffusion coefficient, diffusion matrix |
 | $\int\phi\,dB$, $\int\phi\circ dB$ | Itô and Stratonovich integrals |
-| Itô formula | $df=(\partial_t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB$ |
+| Itô formula | $df=(\partial/\partial t+L)f\,dt+\nabla f^{\mathrm{T}}\sigma\,dB$ |
 | $L$, $L^*$ | Generator and its formal adjoint |
 | $\mathbb{E}_x$ | Expectation for the process started at $x$ |
 | $P_t$, $P_{s,t}$ | Transition semigroup and kernels |
-| $p(t,x,y)$ | Transition density; Feynman–Kac solution $u$ |
+| $p(t,x,y)$ | Transition density; Feynman–Kac solution $w$ |
 | $\theta$, $\mathbb{Q}$ | Girsanov integrand and the equivalent measure |
 | $\tau$ | Stopping time; Dynkin's formula |
 

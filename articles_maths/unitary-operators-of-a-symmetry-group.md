@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The operators that preserve the invariant form are the **unitary operators**, and they form a group: the **unitary group** $U(V,h)$ of the form. A symmetry group is by definition a subgroup of it, so every symmetry group sits inside a maximal symmetry group of the chosen form, and the difference between the two is the geometry the form carries that the group does not use. The same construction on the space of functions of the group gives the operators of the regular representation, and the homomorphisms of a group into a unitary group are the **unitary representations**, the objects the analysis of Part III is built on.
+The operators that preserve the invariant form are the **unitary operators**, and they form a group: the **unitary group** $\mathrm{U}(V,h)$ of the form. A symmetry group is by definition a subgroup of it, so every symmetry group sits inside a maximal symmetry group of the chosen form, and the difference between the two is the geometry the form carries that the group does not use. The same construction on the space of functions of the group gives the operators of the regular representation, and the homomorphisms of a group into a unitary group are the **unitary representations**, the objects the analysis of Part III is built on.
 
 The article treats the unitary group of the invariant form, the unitary operators of a symmetry group and the group they form, the unitary representations and the unitarisation, and the unitary operators on the function space of the group. The adjoint and the unitarity of a single operator are *The Adjoint of a Symmetry Operator*, the previous article; the operators of the symmetry group are *Operators on a Symmetry Group* and *The Symmetry Operators of a Space*; the classical groups as the unitary groups of the forms are *Isometries and Orthogonal Transformations*, *The Unitary and Symplectic Groups* and *The Adjoint of a Symmetry Operator*; the representations, the complete reducibility, the unitarisation of a representation of a compact group and the regular representation are *Representations of Groups*, *The Left and Right Regular Representation*, *The Peter–Weyl Theorem* and *Noncommutative Harmonic Analysis*, in Part III, and are cited, not restated. The unitary operators in the complex-vector-space setting are *Unitary Operators of an Involutive Algebra*, Part I, and are treated further in *Geometry on Linear Spaces*, written in parallel. The **adjoint** is the subject of this group; the involution on the **elements** was the previous group.
 
-The article has four sections: the unitary group of the form; the unitary operators of a symmetry group; the unitary representations; and the worked cases. Throughout, $h$ is a non-degenerate form on $V$ — quadratic, bilinear or Hermitian — invariant under a symmetry group $G$, and $U(V,h)$ is the group of operators preserving it.
+The article has four sections: the unitary group of the form; the unitary operators of a symmetry group; the unitary representations; and the worked cases. Throughout, $h$ is a non-degenerate form on $V$ — quadratic, bilinear or Hermitian — invariant under a symmetry group $G$, and $\mathrm{U}(V,h)$ is the group of operators preserving it.
 
 ## The Unitary Group of the Form
 
@@ -16,20 +16,20 @@ The article has four sections: the unitary group of the form; the unitary operat
 **Definition.** The **unitary group** of the form is
 
 $$
-U(V,h) = \{T \in GL(V) : h(Tu,Tv) = h(u,v)\} = \{T : T^{*} = T^{-1}\} = \{T : T^{*}T = \operatorname{id}\},
+\mathrm{U}(V,h) = \{T \in GL(V) : h(Tu,Tv) = h(u,v)\} = \{T : T^{*} = T^{-1}\} = \{T : T^{*}T = \operatorname{id}\},
 $$
 
 the group of all operators of a space with the form that preserve it; the three descriptions agree by the unitarity theorem of *The Adjoint of a Symmetry Operator*.
 
-**Proposition.** The unitary group is a subgroup of $GL(V)$, closed under the adjoint and in the Zariski topology, and equal to the isometry group of $h$; it is the **maximal** symmetry group of the form, in the sense that every symmetry group of the form is a subgroup of it. In the definite case it is compact; the classical instances are the orthogonal group $O(V,\mathfrak{Q})$ of a symmetric form, the unitary group $U(V,h)$ of a Hermitian form and the symplectic group $Sp(V,\omega)$ of an alternating form, each the unitary group of its form, *The Unitary and Symplectic Groups*.
+**Proposition.** The unitary group is a subgroup of $GL(V)$, closed under the adjoint and in the Zariski topology, and equal to the isometry group of $h$; it is the **maximal** symmetry group of the form, in the sense that every symmetry group of the form is a subgroup of it. In the definite case it is compact; the classical instances are the orthogonal group $O(V,\mathfrak{Q})$ of a symmetric form, the unitary group $\mathrm{U}(V,h)$ of a Hermitian form and the symplectic group $Sp(V,\omega)$ of an alternating form, each the unitary group of its form, *The Unitary and Symplectic Groups*.
 
-**Proof.** The group properties are the multiplicativity of the form and the closure of the conditions; maximality is the definition, an isometry of $h$ being exactly an element of $U(V,h)$; compactness in the definite case is that the group is closed and bounded in $GL(V)$, and the identifications of the classical cases are the definitions.
+**Proof.** The group properties are the multiplicativity of the form and the closure of the conditions; maximality is the definition, an isometry of $h$ being exactly an element of $\mathrm{U}(V,h)$; compactness in the definite case is that the group is closed and bounded in $GL(V)$, and the identifications of the classical cases are the definitions.
 
 **Remark.** The unitary group depends on the form, not on the vector space alone: $O(n,m)$ and $O(n)$ are the unitary groups of different forms on the same space, and they are not isomorphic. The maximal symmetry group is the geometric datum.
 
 ### The Lie Algebra
 
-**Proposition.** The Lie algebra of the unitary group is the space of skew-adjoint operators, $\mathfrak{u}(V,h) = \{X : X^{*} = -X\}$, and the exponential map carries it onto the identity component of $U(V,h)$ when the form is definite; the dimension of the group is the dimension of this space, $\frac{n(n-1)}{2}$ for a symmetric form, $n^2$ for a Hermitian form and $n(2n+1)$ for an alternating form.
+**Proposition.** The Lie algebra of the unitary group is the space of skew-adjoint operators, $\mathfrak{u}(V,h) = \{X : X^{*} = -X\}$, and the exponential map carries it onto the identity component of $\mathrm{U}(V,h)$ when the form is definite; the dimension of the group is the dimension of this space, $\frac{n(n-1)}{2}$ for a symmetric form, $n^2$ for a Hermitian form and $n(2n+1)$ for an alternating form.
 
 **Proof.** The Lie algebra is computed in *The Adjoint of a Symmetry Operator*; the dimensions are the counts of the symmetric, Hermitian and alternating matrices, *The Unitary and Symplectic Groups*.
 
@@ -37,15 +37,15 @@ the group of all operators of a space with the form that preserve it; the three 
 
 ### The Group Generated
 
-**Definition.** The **unitary operators of the symmetry group** $G$ are the elements of $U(V,h)$; the group they form is $U(V,h)$ itself, and the **unitary operators commuting with the action** of $G$ are the elements of the centraliser
+**Definition.** The **unitary operators of the symmetry group** $G$ are the elements of $\mathrm{U}(V,h)$; the group they form is $\mathrm{U}(V,h)$ itself, and the **unitary operators commuting with the action** of $G$ are the elements of the centraliser
 
 $$
-U(V,h)^{G} = \{T \in U(V,h) : T\rho(g) = \rho(g)T\ \text{for all } g \in G\},
+\mathrm{U}(V,h)^{G} = \{T \in \mathrm{U}(V,h) : T\rho(g) = \rho(g)T\ \text{for all } g \in G\},
 $$
 
 the unitary part of the commutant of the representation on $V$.
 
-**Proposition.** The group $G$ generated by the symmetry operators is a subgroup of $U(V,h)$, it is contained in its own normaliser, and the unitary operators commuting with the action are the unitary operators of the **commutant algebra** $\operatorname{End}_G(V)$; when $V$ is irreducible the commutant is a division algebra and its unitary group is the group of its units, by Schur's lemma.
+**Proposition.** The group $G$ generated by the symmetry operators is a subgroup of $\mathrm{U}(V,h)$, it is contained in its own normaliser, and the unitary operators commuting with the action are the unitary operators of the **commutant algebra** $\operatorname{End}_G(V)$; when $V$ is irreducible the commutant is a division algebra and its unitary group is the group of its units, by Schur's lemma.
 
 **Proof.** The containment is the definition of a symmetry group; the commutation with the action is the commutation with each $\rho(g)$; the commutant statement is the definition, and Schur's lemma gives the division algebra in the irreducible case, *Representations of Groups*.
 
@@ -61,7 +61,7 @@ the unitary part of the commutant of the representation on $V$.
 
 ### The Definition and the Invariant Form
 
-**Definition.** A **unitary representation** of $G$ on a space $V$ with a form $h$ is a homomorphism $\rho : G \to U(V,h)$; equivalently a representation for which the form is invariant, $\rho(g) \in U(V,h)$ for every $g$. A representation of an abstract group is **unitarisable** when there is an invariant form of the appropriate symmetry type.
+**Definition.** A **unitary representation** of $G$ on a space $V$ with a form $h$ is a homomorphism $\rho : G \to \mathrm{U}(V,h)$; equivalently a representation for which the form is invariant, $\rho(g) \in \mathrm{U}(V,h)$ for every $g$. A representation of an abstract group is **unitarisable** when there is an invariant form of the appropriate symmetry type.
 
 **Proposition.** A finite-dimensional representation of a finite group is unitarisable: averaging any positive definite form over the group gives an invariant one. A continuous representation of a compact group is unitarisable, by averaging with the Haar measure, and a representation of a semisimple group with a maximal compact subgroup is unitarisable in the appropriate sense; a unitary representation decomposes into irreducibles when the group is compact, by the complete reducibility of *Representations of Groups*, and the irreducible unitary representations form the **unitary dual** $\widehat{G}$.
 
@@ -99,22 +99,22 @@ by the invariance of the Haar measure; the operators of the symmetry group on th
 
 **Example (the regular representation of a compact group).** Let $G$ be compact and $V = L^2(G)$; the regular representation is unitary, and its decomposition into irreducibles is the Peter–Weyl theorem. The unitary operators of the group are the translations and their limits, and the unitary operators commuting with the whole regular representation are the operators of convolution by the central functions, *Analysis on Compact Groups*.
 
-**Example (the indefinite case).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = U(n,m)$; the unitary group is $U(n,m)$ itself, the maximal symmetry group of the indefinite form, and it is noncompact, so the averaging that unitarises a compact representation is unavailable; the unitary representations of $U(n,m)$ are the object of the harmonic analysis of *Noncommutative Harmonic Analysis* and are not the defining representation alone.
+**Example (the indefinite case).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = \mathrm{U}(n,m)$; the unitary group is $\mathrm{U}(n,m)$ itself, the maximal symmetry group of the indefinite form, and it is noncompact, so the averaging that unitarises a compact representation is unavailable; the unitary representations of $\mathrm{U}(n,m)$ are the object of the harmonic analysis of *Noncommutative Harmonic Analysis* and are not the defining representation alone.
 
 ## Summary
 
-The unitary group $U(V,h) = \{T : T^{*} = T^{-1}\}$ of a form is the maximal symmetry group of the form, equal to the isometry group, with Lie algebra the skew-adjoint operators, and its classical instances are the orthogonal, the unitary and the symplectic groups; a symmetry group $G$ is a subgroup of it, and the unitary operators commuting with the action form the unitary group of the commutant algebra $\operatorname{End}_G(V)$, a division algebra in the irreducible case by Schur's lemma. A unitary representation is a homomorphism into $U(V,h)$; a representation of a compact group is unitarisable by averaging the form over the Haar measure, and its irreducible unitary representations are finite-dimensional with the orthogonality relations of the Peter–Weyl theorem. On the function space $L^2(G)$ the left and right regular representations are unitary and commutative, with adjoints $\lambda(g)^{*} = \lambda(g^{-1})$ and $\rho(g)^{*} = \rho(g^{-1})$, the invariance of the Haar measure being the reason: the adjoint of a translation is the translation by the inverse, so the operator involution implements the inversion of a group element, an automorphism exactly for an abelian group. The adjoint of the translation operators is the next article.
+The unitary group $\mathrm{U}(V,h) = \{T : T^{*} = T^{-1}\}$ of a form is the maximal symmetry group of the form, equal to the isometry group, with Lie algebra the skew-adjoint operators, and its classical instances are the orthogonal, the unitary and the symplectic groups; a symmetry group $G$ is a subgroup of it, and the unitary operators commuting with the action form the unitary group of the commutant algebra $\operatorname{End}_G(V)$, a division algebra in the irreducible case by Schur's lemma. A unitary representation is a homomorphism into $\mathrm{U}(V,h)$; a representation of a compact group is unitarisable by averaging the form over the Haar measure, and its irreducible unitary representations are finite-dimensional with the orthogonality relations of the Peter–Weyl theorem. On the function space $L^2(G)$ the left and right regular representations are unitary and commutative, with adjoints $\lambda(g)^{*} = \lambda(g^{-1})$ and $\rho(g)^{*} = \rho(g^{-1})$, the invariance of the Haar measure being the reason: the adjoint of a translation is the translation by the inverse, so the operator involution implements the inversion of a group element, an automorphism exactly for an abelian group. The adjoint of the translation operators is the next article.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $U(V,h)$ | the unitary group of the form; the maximal symmetry group |
-| $U(V,h)^{G}$ | the unitary operators commuting with the action of $G$ |
+| $\mathrm{U}(V,h)$ | the unitary group of the form; the maximal symmetry group |
+| $\mathrm{U}(V,h)^{G}$ | the unitary operators commuting with the action of $G$ |
 | $\operatorname{End}_G(V)$ | the commutant algebra of the representation |
 | $T^{*}T = \operatorname{id}$ | the unitarity condition; $T^{*} = T^{-1}$ |
 | $\mathfrak{u}(V,h) = \{X : X^{*} = -X\}$ | the Lie algebra of the unitary group |
-| $\rho : G \to U(V,h)$ | a unitary representation |
+| $\rho : G \to \mathrm{U}(V,h)$ | a unitary representation |
 | $\widehat{G}$ | the unitary dual; the irreducible unitary representations |
 | $\lambda$, $\rho$ | the left and right regular representations on $L^2(G)$ |
 | $\lambda(g)^{*} = \lambda(g^{-1})$ | the adjoint of a translation is the inverse translation |

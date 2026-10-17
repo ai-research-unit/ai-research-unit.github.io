@@ -20,10 +20,10 @@ The property is recovered in exactly two degenerate ways: in the definite readin
 
 The general theory is *Krein–von Neumann Algebras* and *Krein Algebras*; the form and its symmetry are *The Krein Gram Matrix and the Restrictions of the Form* and *The Fundamental Symmetry of the Biquaternioid Algebra*; the adjoint of a left multiplication is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the operator families and their commutants are *One-Sided Operators on the General Plain Sesqualgebra*, *Two-Sided Operators on the General Plain Sesqualgebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the modular theory that the negative answer silences is *The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, and central $i$; $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The involution of the algebra is the Hermitian conjugation ${}^{*}$, $\tilde Q^{*}=\bar Q_0e_0-\bar Q_1e_1-\bar Q_2e_2-\bar Q_3e_3$, written $\dagger$ in *Krein–von Neumann Algebras*; the natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$; the bar is the coefficient conjugation, $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$. The general quaternionic sesquilinear form is
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and central $i$; $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The involution of the algebra is the Hermitian conjugation ${}^{*}$, $\tilde Q^{*}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$, written $\dagger$ in *Krein–von Neumann Algebras*; the natural conjugation is ${}^{\natural}$, $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$; the bar is the coefficient conjugation, $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$. The general quaternionic sesquilinear form is
 
 $$
-\langle\tilde Q',\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q^{\natural*}\tilde Q'\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu^{*}Q'_\mu ,\qquad \varepsilon=(1,-1,-1,-1),
+\langle\tilde Q',\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl(\tilde Q^{\natural*}\tilde Q'\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu^{*}Q'_\mu ,\qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 with fundamental symmetry $J={}^{\natural}$; the definite form it induces is $\langle\tilde Q,\tilde P\rangle_{*}=\langle\tilde Q,J\tilde P\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{*}\tilde Q)=\sum_\mu P_\mu^{*}Q_\mu$. The **operator adjoint of the general quaternionic sesquilinear form** is written ${}^{\dagger}$, $T^{\dagger}=JT^{*}J$, and ${}^{*}$ on operators is the adjoint for the definite form, so that $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$ and $R_{\tilde Q}^{*}=R_{\tilde Q^{*}}$. The maps $L_{\tilde Q}(\tilde S)=\tilde Q\tilde S$ and $R_{\tilde Q}(\tilde S)=\tilde S\tilde Q$ are the left and the right multiplications.
@@ -38,9 +38,9 @@ $$
 
 $\mathcal{M}$ is the **left regular image** of the biquaternion algebra, the algebra of the left multiplications acting on $\mathbb{B}$.
 
-**Proposition (the image is the algebra).** $L:\mathbb{B}\to\mathcal{L}(\mathbb{B})$ is an injective algebra homomorphism, $L_{\tilde Q}L_{\tilde R}=L_{\tilde Q\tilde R}$ and $L_{e_0}=\mathrm{id}$, so $\mathcal{M}\cong\mathbb{B}\cong M_2(\mathbb{C})$; $\mathcal{M}$ is unital, of complex dimension $4$, and finite-dimensional, hence closed in the weak operator topology.
+**Proposition (the image is the algebra).** $L:\mathbb{B}\to\mathcal{L}(\mathbb{B})$ is an injective algebra homomorphism, $L_{\tilde Q}L_{\tilde R}=L_{\tilde Q\tilde R}$ and $L_{e_t}=\mathrm{id}$, so $\mathcal{M}\cong\mathbb{B}\cong M_2(\mathbb{C})$; $\mathcal{M}$ is unital, of complex dimension $4$, and finite-dimensional, hence closed in the weak operator topology.
 
-**Proof.** Multiplicativity and unitality are associativity and the unit. Injectivity is $L_{\tilde Q}e_0=\tilde Q$, so $L_{\tilde Q}=0$ forces $\tilde Q=0$. Boundedness is automatic in finite dimension, and a finite-dimensional subspace of the operators is weakly closed.
+**Proof.** Multiplicativity and unitality are associativity and the unit. Injectivity is $L_{\tilde Q}e_t=\tilde Q$, so $L_{\tilde Q}=0$ forces $\tilde Q=0$. Boundedness is automatic in finite dimension, and a finite-dimensional subspace of the operators is weakly closed.
 
 **Proposition (the commutant).** The commutant of the left regular image is the right regular image,
 
@@ -48,9 +48,9 @@ $$
 \mathcal{M}'=\{\,R_{\tilde Q}:\tilde Q\in\mathbb{B}\,\}\cong\mathbb{B}^{\mathrm{opp}} ,
 $$
 
-the double commutant is the image itself, $\mathcal{M}''=\mathcal{M}$, and the centre of $\mathcal{M}$ is $\mathbb{C}e_0$.
+the double commutant is the image itself, $\mathcal{M}''=\mathcal{M}$, and the centre of $\mathcal{M}$ is $\mathbb{C}e_t$.
 
-**Proof.** If $T$ commutes with every left multiplication then $T(\tilde S)=T(L_{\tilde S}e_0)=L_{\tilde S}(Te_0)=\tilde S\,Te_0$, so $T=R_{Te_0}$; conversely the left and the right multiplications commute, and the centralizer of the right multiplications is again the left multiplications. The centre is the intersection $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$, because a left multiplication that is also a right one is a central multiplication, and the centre of $\mathbb{B}$ is $\mathbb{C}e_0$.
+**Proof.** If $T$ commutes with every left multiplication then $T(\tilde S)=T(L_{\tilde S}e_t)=L_{\tilde S}(Te_t)=\tilde S\,Te_t$, so $T=R_{Te_t}$; conversely the left and the right multiplications commute, and the centralizer of the right multiplications is again the left multiplications. The centre is the intersection $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_t$, because a left multiplication that is also a right one is a central multiplication, and the centre of $\mathbb{B}$ is $\mathbb{C}e_t$.
 
 ## The Indefinite Adjoint of a Left Multiplication
 
@@ -62,11 +62,11 @@ $$
 (L_{\tilde Q})^{\dagger}(\tilde S)=\tilde S\,\bar{\tilde Q} .
 $$
 
-**Proof.** The indefinite adjoint is $T^{\dagger}=JT^{*}J$. For a left multiplication, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$ and $J$ is an anti-automorphism, so $JL_{\tilde Q^{*}}J=R_{J(\tilde Q^{*})}$. Now $J(\tilde Q^{*})=\bar{\tilde Q}$, because $\tilde Q^{*}$ carries the coefficients $\bar Q_0,-\bar Q_1,-\bar Q_2,-\bar Q_3$ and $J$ fixes the centre and negates the vector units, restoring the coefficients $\bar Q_0,\bar Q_1,\bar Q_2,\bar Q_3$. Hence $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$. The same identity is computed for the three operator families in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+**Proof.** The indefinite adjoint is $T^{\dagger}=JT^{*}J$. For a left multiplication, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$ and $J$ is an anti-automorphism, so $JL_{\tilde Q^{*}}J=R_{J(\tilde Q^{*})}$. Now $J(\tilde Q^{*})=\bar{\tilde Q}$, because $\tilde Q^{*}$ carries the coefficients $\bar Q_t,-\bar Q_x,-\bar Q_y,-\bar Q_z$ and $J$ fixes the centre and negates the vector units, restoring the coefficients $\bar Q_t,\bar Q_x,\bar Q_y,\bar Q_z$. Hence $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$. The same identity is computed for the three operator families in *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
-**Corollary (the image is adjoint-closed only on the centre).** $(L_{\tilde Q})^{\dagger}\in\mathcal{M}$ if and only if $\tilde Q$ is central, that is if and only if $\tilde Q\in\mathbb{C}e_0$; then $(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$.
+**Corollary (the image is adjoint-closed only on the centre).** $(L_{\tilde Q})^{\dagger}\in\mathcal{M}$ if and only if $\tilde Q$ is central, that is if and only if $\tilde Q\in\mathbb{C}e_t$; then $(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde Q}}$.
 
-**Proof.** $R_{\bar{\tilde Q}}=L_{\tilde R}$ for some $\tilde R$ forces $R_{\bar{\tilde Q}}\in\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$, hence $\bar{\tilde Q}$ central, hence $\tilde Q$ central; conversely a central parameter makes the two multiplications coincide.
+**Proof.** $R_{\bar{\tilde Q}}=L_{\tilde R}$ for some $\tilde R$ forces $R_{\bar{\tilde Q}}\in\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_t$, hence $\bar{\tilde Q}$ central, hence $\tilde Q$ central; conversely a central parameter makes the two multiplications coincide.
 
 **Corollary (not a Krein–von Neumann algebra, and not a Krein algebra).** $\mathcal{M}$ is not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra on $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*})$. Equivalently, the adjoint axiom of a Krein algebra, $\langle\tilde S',\tilde Q\tilde S\rangle_{\natural*}=\langle\sigma(\tilde Q)\tilde S',\tilde S\rangle_{\natural*}$, holds for **no** involution $\sigma$ of the algebra: it would give $L_{\sigma(\tilde Q)}=(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, which forces $\tilde Q$ central for every $\tilde Q$. So the biquaternion algebra carries no Krein-algebra structure for its general quaternionic sesquilinear form, the involution of the algebra being the definite one.
 
@@ -82,7 +82,7 @@ of complex dimension $16$.
 
 **Proof.** A $\dagger$-closed unital subalgebra containing every $L_{\tilde Q}$ contains $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ for every $\tilde Q$, hence contains $R_{\tilde P}$ for every $\tilde P$, since the bar is a bijection; it therefore contains every product $L_{\tilde Q}R_{\tilde P}$. The products act by $\tilde S\mapsto\tilde Q\tilde S\tilde P$, whose linear span is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, of complex dimension $4\cdot4=16$, which is all of $\mathcal{L}(\mathbb{B})$ by the enveloping-algebra isomorphism. Conversely, the algebra generated by the left and the right multiplications is $\dagger$-closed, because $(L_{\tilde Q}R_{\tilde P})^{\dagger}=(R_{\tilde P})^{\dagger}(L_{\tilde Q})^{\dagger}=L_{\bar{\tilde P}}R_{\bar{\tilde Q}}$ is again a product of a left and a right multiplication.
 
-**Remark (the linear span is smaller than the envelope).** The linear span of $\{L_{\tilde Q}\}\cup\{R_{\tilde P}\}$ has complex dimension $4+4-1=7$, the intersection being the centre $\mathbb{C}e_0$; the products are what fill the whole matrix algebra. The numbers $4,4,1,7,16$ record the algebra, its opposite, the centre, the span and the envelope.
+**Remark (the linear span is smaller than the envelope).** The linear span of $\{L_{\tilde Q}\}\cup\{R_{\tilde P}\}$ has complex dimension $4+4-1=7$, the intersection being the centre $\mathbb{C}e_t$; the products are what fill the whole matrix algebra. The numbers $4,4,1,7,16$ record the algebra, its opposite, the centre, the span and the envelope.
 
 **Corollary (the bicommutant theorem is not contradicted, but is not available).** The envelope contains $J$ and therefore satisfies the $J$-bicommutant theorem of *Krein–von Neumann Algebras*. The biquaternion algebra $\mathcal{M}$ itself does not contain $J$, and its bicommutant is $\mathcal{M}$, which is not $\dagger$-closed. So $\mathcal{M}^{cc}=\mathcal{M}$ holds while $\mathcal{M}$ is not a Krein–von Neumann algebra: the hypothesis $J\in\mathcal{M}$ of the bicommutant theorem cannot be dropped, and the left regular image of the biquaternion algebra is a distinguished witness of the failure.
 
@@ -96,7 +96,7 @@ of complex dimension $16$.
 
 ## Twisted Fundamental Symmetries
 
-**Theorem (the twisted symmetries).** Let $c\in\mathbb{B}$ satisfy $c^{*}=c$ and $c^{2}=e_0$; equivalently, let $c$ lie on the unit sphere of the Hermitian subspace $\mathbb{M}_+$. Then
+**Theorem (the twisted symmetries).** Let $c\in\mathbb{B}$ satisfy $c^{*}=c$ and $c^{2}=e_t$; equivalently, let $c$ lie on the unit sphere of the Hermitian subspace $\mathbb{M}_+$. Then
 
 $$
 J'=R_c
@@ -118,17 +118,17 @@ Hence $(\mathcal{M},J')$ is a Krein–von Neumann algebra on the twisted Krein s
 
 **Proof.** $J'^{2}=R_{c^{2}}=\mathrm{id}$; $J'$ is self-adjoint for the form it defines, $\langle\tilde Q',J'\tilde Q\rangle_{\natural*}'=\langle\tilde Q',R_{c}R_{c}\tilde Q\rangle_{*}=\langle\tilde Q',\tilde Q\rangle_{*}=\langle J'\tilde Q',\tilde Q\rangle_{\natural*}'$, and positive, $\langle\tilde Q,J'\tilde Q\rangle_{\natural*}'=\langle\tilde Q,\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$. For the adjoint, the left and the right multiplications commute, so $R_cL_{\tilde Q^{*}}R_c=L_{\tilde Q^{*}}R_{c^{2}}=L_{\tilde Q^{*}}$, which lies in $\mathcal{M}$.
 
-**Remark (why the twisted readings do not rescue the algebra).** Three costs are paid. The form of the twisted space is the general quaternionic sesquilinear form only for central $c$; the symmetry $J'=R_c$ is a right multiplication and therefore is not an element of $\mathcal{M}$, so the hypothesis $J'\in\mathcal{M}$ of the bicommutant theorem fails; and $J'$ is compatible with the involution, $J'(\tilde Q^{*})=(J'\tilde Q)^{*}$, only for $c$ central, hence $c=\pm e_0$ and $J'=\pm\mathrm{id}$. So the twisted symmetries make the biquaternion algebra a Krein–von Neumann algebra for an exotic form, not for the general quaternionic sesquilinear form of the algebra, and they are not fundamental symmetries *of the algebra* in the sense of *Krein Algebras*; the modular conjugation attached to them does not commute with $J'$ (*The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*).
+**Remark (why the twisted readings do not rescue the algebra).** Three costs are paid. The form of the twisted space is the general quaternionic sesquilinear form only for central $c$; the symmetry $J'=R_c$ is a right multiplication and therefore is not an element of $\mathcal{M}$, so the hypothesis $J'\in\mathcal{M}$ of the bicommutant theorem fails; and $J'$ is compatible with the involution, $J'(\tilde Q^{*})=(J'\tilde Q)^{*}$, only for $c$ central, hence $c=\pm e_t$ and $J'=\pm\mathrm{id}$. So the twisted symmetries make the biquaternion algebra a Krein–von Neumann algebra for an exotic form, not for the general quaternionic sesquilinear form of the algebra, and they are not fundamental symmetries *of the algebra* in the sense of *Krein Algebras*; the modular conjugation attached to them does not commute with $J'$ (*The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*).
 
 ## Worked Examples
 
 ### A Non-Central Parameter
 
-For $\tilde Q=e_1$ one has $(L_{e_1})^{\dagger}=R_{\bar e_1}=R_{-e_1}=-R_{e_1}$, a right multiplication that is not a left one. The image $\mathcal{M}$ is not adjoint-closed, and the smallest adjoint-closed algebra containing $L_{e_1}$ is all of $M_4(\mathbb{C})$. The same holds for every non-central unit $e_k$ and for every non-central $\tilde Q$.
+For $\tilde Q=\vec e_x$ one has $(L_{\vec e_x})^{\dagger}=R_{\vec e_x}$, a right multiplication that is not a left one. The image $\mathcal{M}$ is not adjoint-closed, and the smallest adjoint-closed algebra containing $L_{\vec e_x}$ is all of $M_4(\mathbb{C})$. The same holds for every non-central unit $\vec e_k$ and for every non-central $\tilde Q$.
 
 ### The Centre Recovers the Property in One Dimension
 
-For $\tilde Q=\zeta e_0$ one has $L_{\zeta e_0}=\zeta\,\mathrm{id}$, so $\mathcal{M}$ contains its adjoint only on the scalars, $(L_{\zeta e_0})^{\dagger}=\bar\zeta\,\mathrm{id}$; the one-dimensional algebra $\mathbb{C}\,\mathrm{id}$ is a Krein–von Neumann algebra, and it is the largest adjoint-closed subalgebra of $\mathcal{M}$.
+For $\tilde Q=\zeta e_t$ one has $L_{\zeta e_t}=\zeta\,\mathrm{id}$, so $\mathcal{M}$ contains its adjoint only on the scalars, $(L_{\zeta e_t})^{\dagger}=\bar\zeta\,\mathrm{id}$; the one-dimensional algebra $\mathbb{C}\,\mathrm{id}$ is a Krein–von Neumann algebra, and it is the largest adjoint-closed subalgebra of $\mathcal{M}$.
 
 ### The Two Envelopes
 
@@ -136,7 +136,7 @@ On the coefficient basis the linear span of the left and right multiplications h
 
 ## Summary
 
-The **left regular image** $\mathcal{M}=\{L_{\tilde Q}\}$ of the biquaternion algebra on its Krein space $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*})$ has commutant the right regular image $\{R_{\tilde Q}\}\cong\mathbb{B}^{\mathrm{opp}}$ and double commutant itself. Its indefinite adjoint is $R_{\bar{\tilde Q}}$, a right multiplication: the image is adjoint-closed only on the centre $\mathbb{C}e_0$, and the biquaternion algebra is **not** a Krein–von Neumann algebra for its general quaternionic sesquilinear form. It is not a Krein algebra either, since the adjoint axiom holds for no involution of the algebra. The smallest $\dagger$-closed unital algebra containing the image is the envelope $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})=\mathcal{L}(\mathbb{B})$ of complex dimension $16$, generated by the left and right multiplications, containing $J$ and therefore satisfying the $J$-bicommutant theorem; the linear span of the two families alone has complex dimension $7$. The property survives in two degenerate readings: the definite one, $J=\mathrm{id}$, where $\mathcal{M}$ is the ordinary finite-dimensional von Neumann algebra $M_2(\mathbb{C})$, and the twisted ones, $J'=R_c$ with $c$ on the unit sphere of $\mathbb{M}_+$, which are Krein–von Neumann algebras for exotic forms and incompatible symmetries. The verification of the failure is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the envelope is *One-Sided Operators on the General Plain Sesqualgebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the modular consequence is *The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*.
+The **left regular image** $\mathcal{M}=\{L_{\tilde Q}\}$ of the biquaternion algebra on its Krein space $(\mathbb{B},\langle\cdot,\cdot\rangle_{\natural*})$ has commutant the right regular image $\{R_{\tilde Q}\}\cong\mathbb{B}^{\mathrm{opp}}$ and double commutant itself. Its indefinite adjoint is $R_{\bar{\tilde Q}}$, a right multiplication: the image is adjoint-closed only on the centre $\mathbb{C}e_t$, and the biquaternion algebra is **not** a Krein–von Neumann algebra for its general quaternionic sesquilinear form. It is not a Krein algebra either, since the adjoint axiom holds for no involution of the algebra. The smallest $\dagger$-closed unital algebra containing the image is the envelope $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})=\mathcal{L}(\mathbb{B})$ of complex dimension $16$, generated by the left and right multiplications, containing $J$ and therefore satisfying the $J$-bicommutant theorem; the linear span of the two families alone has complex dimension $7$. The property survives in two degenerate readings: the definite one, $J=\mathrm{id}$, where $\mathcal{M}$ is the ordinary finite-dimensional von Neumann algebra $M_2(\mathbb{C})$, and the twisted ones, $J'=R_c$ with $c$ on the unit sphere of $\mathbb{M}_+$, which are Krein–von Neumann algebras for exotic forms and incompatible symmetries. The verification of the failure is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the envelope is *One-Sided Operators on the General Plain Sesqualgebra* and *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the modular consequence is *The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*.
 
 ## Summary of Notation
 
@@ -148,11 +148,11 @@ The **left regular image** $\mathcal{M}=\{L_{\tilde Q}\}$ of the biquaternion al
 | $\mathcal{M}'=\{R_{\tilde Q}\}=\mathbb{B}^{\mathrm{opp}}$, $\mathcal{M}''=\mathcal{M}$ | Commutant and double commutant |
 | $T^{\dagger}=JT^{*}J$ | Operator adjoint of the general quaternionic sesquilinear form |
 | $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$ | The adjoint changes sides |
-| $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_0$ | Adjoint-closed only on the centre |
+| $\mathcal{M}\cap\mathcal{M}'=\mathbb{C}e_t$ | Adjoint-closed only on the centre |
 | $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})$ | The Krein–von Neumann envelope |
 | $7$ and $16$ | Complex dimensions of the span and of the envelope |
 | $J=\mathrm{id}$ | The definite reading |
-| $J'=R_c$, $c^{*}=c$, $c^{2}=e_0$ | Twisted fundamental symmetries |
+| $J'=R_c$, $c^{*}=c$, $c^{2}=e_t$ | Twisted fundamental symmetries |
 
 ## Further Reading
 

@@ -6,7 +6,7 @@ The quaternion algebra carries a norm with integer values on certain lattices, a
 
 **Boundaries.** The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the group of units of the whole algebra and its topology are *The Quaternion Unit Group as a Topological Group*, above this article in this category; the unit sphere as a topological group is the same article.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$; an element is $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$. The **quaternion form** is $\langle\tilde q\rangle_{\natural}=q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:\langle\tilde q\rangle_{\natural}=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
 
 ## The Quaternion Orders
 
@@ -60,9 +60,9 @@ the binary tetrahedral group of order twenty-four.
 - the binary octahedral group $2O$ of order $48$;
 - the binary icosahedral group $2I$ of order $120$.
 
-Each is the preimage of a finite rotation group of three-dimensional space; the covering is two-to-one exactly when the group contains the centre $\{\pm e_0\}$, which holds in every family except the cyclic groups of odd order.
+Each is the preimage of a finite rotation group of three-dimensional space; the covering is two-to-one exactly when the group contains the centre $\{\pm e_t\}$, which holds in every family except the cyclic groups of odd order.
 
-The centre of $S^3$ is $\{\pm e_0\}$ by *The Quaternion Unit Group as a Topological Group*, and the cover of the rotation group is two-to-one exactly when $\pm e_0$ lies in the group.
+The centre of $S^3$ is $\{\pm e_t\}$ by *The Quaternion Unit Group as a Topological Group*, and the cover of the rotation group is two-to-one exactly when $\pm e_t$ lies in the group.
 
 | family | order | generators | rotation group |
 |---|---|---|---|

@@ -48,10 +48,10 @@ A lift of $\sigma$ exists because $\Delta_n$ is contractible and, more precisely
 
 **Lemma.** $\tau_n$ is well defined: it does not depend on the choice of the lift $\sigma^{\mathrm{lift}}$.
 
-*Proof.* Let $\sigma^{\mathrm{lift}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with $\sigma^{\mathrm{lift}}' = h \circ \sigma^{\mathrm{lift}}$. Then
+*Proof.* Let ${\sigma^{\mathrm{lift}}}'$ be a second lift. Both are lifts of $\sigma$ and have the same domain, so by uniqueness of lifts applied to the connected space $\Delta_n$ there is $h \in G$ with ${\sigma^{\mathrm{lift}}}' = h \circ \sigma^{\mathrm{lift}}$. Then
 
 $$
-\sum_{g \in G} g \circ \sigma^{\mathrm{lift}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
+\sum_{g \in G} g \circ {\sigma^{\mathrm{lift}}}' = \sum_{g \in G} g \circ h \circ \sigma^{\mathrm{lift}} = \sum_{g \in G} g \circ \sigma^{\mathrm{lift}},
 $$
 
 the last equality because $g \mapsto gh$ is a bijection of $G$.

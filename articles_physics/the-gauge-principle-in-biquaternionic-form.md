@@ -8,20 +8,20 @@ Two results of the read list are the point of departure. *Maxwell's Equations in
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit throughout.
 
-- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex line $\mathbb{C} e_0$; its unitary part is $U(1)$. The global phase is a symmetry of the massless biquaternion field equation. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, and a covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ under which the field equation is gauge covariant. The object $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of covariant derivatives, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
+- **Established, and recomputed below.** The centre of $\mathbb{B}$ is the complex line $\mathbb{C} e_t$; its unitary part is $\mathrm{U}(1)$. The global phase is a symmetry of the massless biquaternion field equation. Localizing it forces a connection $\tilde{A}$ with the transformation law $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, and a covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ under which the field equation is gauge covariant. The object $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ is gauge invariant; it satisfies the exact identity $\tilde{F} = \tfrac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\,\bar{e}_\mu e_\nu$ with $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$; and in the abelian case $\tilde{F}$ is the commutator of covariant derivatives, $[D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}$.
 - **Interpretation.** Reading $\tilde{A}$ as a *connection* and $\tilde{F}$ as its *curvature* is a geometric interpretation of an algebraic construction. The algebra is consistent with the interpretation, and the commutator identity makes it precise, but the algebra does not by itself force the bundle-theoretic picture. This is labelled as interpretation, not derivation.
 - **Gap, left visible.** The extension to non-abelian gauge fields, and the question of whether the framework supplies a gauge-fixing principle, are not settled here. They are stated as gaps in the sections where they arise and collected in the open questions.
 
 The article is organized as follows. The next section identifies the global symmetry. The section after that localizes it and derives the connection. The following section names the connection and the covariant derivative and records their properties. The next section proves that the field strength is the curvature. A section connects the result to the Maxwell and quantization articles. A section separates what the algebra supplies from what it only transcribes. Two short sections treat the non-abelian extension and the obstruction posed by the mass term. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Global Phase Symmetry
 
 The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and as a real algebra it is isomorphic to the matrix algebra $M_2(\mathbb{C})$. Its **centre** — the set of elements that commute with every biquaternion — is the complex scalar subspace
 
 $$
-\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,\, ie_0\} = \{a\,e_0 + b\,i\,e_0 : a, b \in \mathbb{R}\},
+\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\, ie_t\} = \{a\,e_t + b\,i\,e_t : a, b \in \mathbb{R}\},
 $$
 
 the two-real-dimensional line spanned by the identity. The centre is the largest set of elements that can multiply a biquaternion-valued field from either side without any ambiguity of order. Its **unitary** elements are
@@ -30,7 +30,7 @@ $$
 \lambda = \exp(i\theta), \qquad \theta \in \mathbb{R},
 $$
 
-since $|\exp(i\theta)| = 1$. They form the group $U(1)$, the unitary part of the centre.
+since $|\exp(i\theta)| = 1$. They form the group $\mathrm{U}(1)$, the unitary part of the centre.
 
 Let $\tilde{\Psi}(\tilde{Q})$ be a biquaternion-valued field. Define the **global phase transformation**
 
@@ -54,10 +54,10 @@ is invariant: if $\tilde{\nabla}\tilde{\Psi} = 0$ then $\tilde{\nabla}(\exp(i\th
 
 **Two realizations, which agree on the mass.** The symmetry is a property of the algebra, not of a particular field, but two fields of the corpus carry it, and they are worth displaying side by side because the mass term acts the same way in both.
 
-- **The complex scalar biquaternion field.** Take $\tilde{\Phi} = \phi\,e_0$ with $\phi$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$. The mass term is *linear* in the field, so under $\tilde{\Phi} \mapsto \exp(i\theta)\tilde{\Phi}$ both sides acquire the same factor $\exp(i\theta)$ and the equation is invariant. Here the global $U(1)$ survives the mass.
-- **The biquaternion Dirac field.** Take the massless equation $\tilde{\nabla}\tilde{\Psi} = 0$ of *The Dirac Equation in Biquaternionic Form*, whose plane-wave solutions are the two spin states of a massless fermion. The massive form of that equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $U(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it is the chirality-off-diagonal coupling between the two central ideals of $\mathbb{B}$, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in the section that replaces the former obstruction discussion below.
+- **The complex scalar biquaternion field.** Take $\tilde{\Phi} = \phi\,e_t$ with $\phi$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$. The mass term is *linear* in the field, so under $\tilde{\Phi} \mapsto \exp(i\theta)\tilde{\Phi}$ both sides acquire the same factor $\exp(i\theta)$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
+- **The biquaternion Dirac field.** Take the massless equation $\tilde{\nabla}\tilde{\Psi} = 0$ of *The Dirac Equation in Biquaternionic Form*, whose plane-wave solutions are the two spin states of a massless fermion. The massive form of that equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it is the chirality-off-diagonal coupling between the two central ideals of $\mathbb{B}$, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in the section that replaces the former obstruction discussion below.
 
-**Why the group is $U(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
+**Why the group is $\mathrm{U}(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the centre, and the centre is one complex dimension; its unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
 
 ## Making the Symmetry Local
 
@@ -117,10 +117,10 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 **The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\phi/c$ purely imaginary and $\vec A$ real — then $\tilde{A}'$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
-\tilde{\nabla}\Gamma = e_0\,\partial_{ict}\Gamma + e_k\,\partial_k\Gamma,
+\tilde{\nabla}\Gamma = e_t\,\partial/\partial Q_t\,\Gamma + \vec e_\mu\,\partial/\partial Q_\mu\,\Gamma,
 $$
 
-and for real $\Gamma$ the scalar coefficient $\partial_{ict}\Gamma = -\frac{i}{c}\partial_t\Gamma$ is purely imaginary while the vector coefficients $\partial_k\Gamma$ are real, which is exactly the membership condition of $\mathbb{M}_-$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
+and for real $\Gamma$ the scalar coefficient $\partial/\partial Q_t\,\Gamma = -\frac{i}{c}\partial/\partial t\Gamma$ is purely imaginary while the vector coefficients $\partial/\partial Q_k\,\Gamma$ are real, which is exactly the membership condition of $\mathbb{M}_-$. A $\Gamma$ whose imaginary part is not constant would move the potential out of the material sector. The gauge function of a real connection is real.
 
 **The coupling constant.** The number $ϙ$ is the charge of the field. It is introduced by the principle as a parameter; the algebra does not supply its value. Setting $ϙ = 0$ restores the global theory. The minimal-coupling form of the standard Dirac equation is recovered in this sense, as a biquaternionic statement whose representation conventions the Dirac article left open.
 
@@ -129,10 +129,10 @@ and for real $\Gamma$ the scalar coefficient $\partial_{ict}\Gamma = -\frac{i}{c
 The field $\tilde{A}$ is the **connection**, and $D$ is the **covariant derivative**. Writing $\tilde{A} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$, the covariant derivative separates into components,
 
 $$
-D = \sum_{\mu=0}^{3} e_\mu\,D_\mu, \qquad D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu,
+D = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,D_\mu, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-where $\partial_0 = \partial_{ict}$ and $\partial_k = \partial_{x_k}$. Its action on a field is $D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$, since $\sum_\mu e_\mu A_\mu = \tilde{A}$.
+where $\partial/\partial Q_t = \partial/\partial Q_t$ and $\partial/\partial Q_k = \partial/\partial x_k$. Its action on a field is $D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$, since $\sum_\mu e_\mu A_\mu = \tilde{A}$.
 
 The following properties are immediate from the definitions and are worth recording, because they are the properties that make $D$ a covariant derivative rather than an arbitrary operator.
 
@@ -142,7 +142,7 @@ $$
 D(f\tilde{\Psi}) = f\,D\tilde{\Psi} + \left(\tilde{\nabla} f\right)\tilde{\Psi},
 $$
 
-which is the Leibniz rule of the gradient corrected by the connection. This is the biquaternion form of $D_\mu(f\psi) = f D_\mu\psi + (\partial_\mu f)\psi$.
+which is the Leibniz rule of the gradient corrected by the connection. This is the biquaternion form of $D_\mu(f\psi) = f D_\mu\psi + (\partial/\partial Q_\mu f)\psi$.
 
 **2. It is not a biquaternion.** $D$ is a first-order differential operator, not an element of $\mathbb{B}$. Only its components $D_\mu$ are scalar operators, and $D$ acts on fields, not on the algebra.
 
@@ -157,7 +157,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is $\tilde{\nabla}^{\natural}\tilde{A}$, and its scalar and vector parts separate cleanly. A direct computation gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{A} = \underbrace{\left(\partial_{ict}A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_0 + \sum_{k=1}^{3}\left(\partial_{ict}A_k - \partial_k A_0\right)e_k - \mathrm{rot}\,\vec A.
+\tilde{\nabla}^{\natural}\tilde{A} = \underbrace{\left(\partial/\partial Q_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{k=1}^{3}\left(\partial/\partial Q_t\,A_k - \partial/\partial Q_k A_0\right)\vec e_k - \mathrm{rot}\,\vec A.
 $$
 
 The scalar part is the **gauge scalar** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the Maxwell article, which transforms as $S' = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
@@ -170,19 +170,19 @@ With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\ep
 
 ### The curvature identity
 
-Write $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_0 = e_0$, $\bar{e}_k = -e_k$ be the conjugate basis. Then
+Write $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ for the components of the field strength, and let $\bar{e}_t = e_t$, $\bar{e}_\mu = -\vec e_\mu$ be the conjugate basis. Then
 
 $$
-\boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \frac{1}{2}\sum_{\mu,\nu=0}^{3} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
+\boxed{\ \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \frac{1}{2}\sum_{\mu,\nu\in\{t,x,y,z\}} F_{\mu\nu}\,\bar{e}_\mu e_\nu\ }
 $$
 
-exactly. The proof is the multiplication table. Since $\tilde{\nabla}^{\natural}\tilde{A} = \sum_{\mu\nu}(\partial_\mu A_\nu)\,\bar{e}_\mu e_\nu$, and since
+exactly. The proof is the multiplication table. Since $\tilde{\nabla}^{\natural}\tilde{A} = \sum_{\mu\nu}(\partial/\partial Q_\mu A_\nu)\,\bar{e}_\mu e_\nu$, and since
 
 $$
 \mathrm{Sc}\!\left(\bar{e}_\mu e_\nu\right) = \delta_{\mu\nu}, \qquad \mathrm{Vect}\!\left(\bar{e}_\mu e_\nu\right) = -\,\mathrm{Vect}\!\left(\bar{e}_\nu e_\mu\right),
 $$
 
-the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial_\mu A_\mu$ and sees only the symmetric part of $\partial_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial_\mu A_\nu$ by $\tfrac{1}{2}(\partial_\mu A_\nu - \partial_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}F_{\mu\nu}\,dx^\mu\wedge dx^\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
+the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the divergence $\sum_\mu \partial/\partial Q_\mu A_\mu$ and sees only the symmetric part of $\partial/\partial Q_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial/\partial Q_\mu A_\nu$ by $\tfrac{1}{2}(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu)$ in the vector part gives the boxed identity. The interpretation is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}F_{\mu\nu}\,dx^\mu\wedge dx^\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
 
 This also explains, structurally, why the field strength is not a four-vector. The biquaternion algebra is the even part of the Clifford algebra $\mathrm{Cl}_{1,3}$, whose even elements are the scalars, the six bivectors, and the pseudoscalar. The six real components of a 2-form sit in the vector part of the biquaternion; the field strength, with vanishing scalar part and a six-real-component vector part, is a bivector, exactly as *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* states when it notes that the field strength is not in $\mathbb{M}_-$.
 
@@ -191,20 +191,20 @@ This also explains, structurally, why the field strength is not a four-vector. T
 In the abelian case the connection coefficients are complex scalars, so they commute and the commutator of the covariant derivatives reduces to the curl of the connection:
 
 $$
-[D_\mu, D_\nu] = \frac{iϙ}{\hbar}\left(\partial_\mu A_\nu - \partial_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu}.
+[D_\mu, D_\nu] = \frac{iϙ}{\hbar}\left(\partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu\right) = \frac{iϙ}{\hbar}F_{\mu\nu}.
 $$
 
 Combining this with the boxed identity,
 
 $$
-\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu,\nu=0}^{3}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
+\tilde{F} = \frac{\hbar}{2iϙ}\sum_{\mu,\nu\in\{t,x,y,z\}}[D_\mu, D_\nu]\,\bar{e}_\mu e_\nu .
 $$
 
 The field strength is the **commutator of two covariant derivatives**, contracted with the biquaternion basis. This is the precise sense in which "the field strength is the curvature": the curvature measures the failure of covariant derivatives to commute, and in the algebra that failure is packaged into the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$. The overall constant in the two boxed formulas depends on the convention for $ϙ$ and on the normalization of $\tilde{A}$; the structural content is the identity of the objects, not the numerical factor.
 
 ### The homogeneous equations are an identity, not an equation of motion
 
-Because $\tilde{F}$ is *constructed* from $\tilde{A}$ — its electric components are $F_{0k} = \partial_{ict}A_k - \partial_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial_t\vec A - \nabla\phi$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$, the homogeneous equations are not independent.
+Because $\tilde{F}$ is *constructed* from $\tilde{A}$ — its electric components are $F_{0k} = \partial/\partial Q_t\,A_k - \partial/\partial Q_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial t\vec A - \nabla\phi$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$, the homogeneous equations are not independent.
 
 ## The Gauge Principle and the Maxwell Field
 
@@ -222,10 +222,10 @@ It is worth separating the two, because they are easily conflated.
 
 **What the algebra supplies.**
 
-- *A canonical abelian gauge group.* The gauge group is the unitary part of the centre, and the centre is the only place a *central* phase can live. The $U(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
+- *A canonical abelian gauge group.* The gauge group is the unitary part of the centre, and the centre is the only place a *central* phase can live. The $\mathrm{U}(1)$ of the abelian gauge principle is therefore attached to the algebra without a choice of representation. This is a genuine structural feature, not a relabelling: it is the reason the abelian case is the natural first case in this framework.
 - *A bivector home for the curvature.* The field strength is a 2-form, and the biquaternion algebra is exactly the even Clifford algebra in which 2-forms are the vector part. The identification "field strength $=$ curvature" is thus structural rather than accidental.
 - *Preservation of the material sector.* Real gauge functions keep the connection in $\mathbb{M}_-$, so the gauge structure respects the sector decomposition that the framework is built on.
-- *The same scalar imaginary.* The phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $ict$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $U(1)$ of electromagnetism and the $i$ of the $ict$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
+- *The same scalar imaginary.* The phase $\exp(iϙ\Gamma/\hbar)$ and the complex time coordinate $ict$ both use the single element $i$ of $\mathbb{B}$. In the standard formulation the $\mathrm{U}(1)$ of electromagnetism and the $i$ of the $ict$ device are unrelated; here they are the same element. This is stated as an *observation*. Because the phase is central it commutes with everything, and it is not yet established that the shared generator carries content rather than being an artifact of writing both structures in one algebra. It is flagged as a gap, not claimed as a result.
 
 **What it only transcribes.**
 
@@ -243,7 +243,7 @@ If the connection is allowed to be $\mathbb{B}$-valued — $A_\mu$ an element of
 
 $$
 [D_\mu, D_\nu] = \frac{iϙ}{\hbar}F_{\mu\nu}, \qquad
-F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu + \frac{iϙ}{\hbar}[A_\mu, A_\nu].
+F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu + \frac{iϙ}{\hbar}[A_\mu, A_\nu].
 $$
 
 The biquaternion algebra already contains the non-commutativity this needs: no enlargement of the algebra is required to write a non-abelian curvature. But the commutator algebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is $\mathrm{GL}(2,\mathbb{C})$, not a compact simple algebra; to land on a gauge algebra such as $\mathrm{SU}(2)$ one must impose a reality condition (anti-Hermiticity, and tracelessness) on the connection. **The algebra supplies the non-commutativity but not the compactness.** Whether the reality conditions required are natural in the biquaternion framework, and which gauge algebras they admit, is the open question that the planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle. This article does not.
@@ -261,35 +261,35 @@ Its mass term is **linear** in the field, so a central phase passes through it: 
 What the mass term breaks is the **axial** symmetry, not the phase. The chirality rotation $\tilde{\Psi}_R \mapsto \exp(i\alpha)\tilde{\Psi}_R$, $\tilde{\Psi}_L \mapsto \exp(-i\alpha)\tilde{\Psi}_L$ leaves the mass bilinear $\tilde{\Psi}^{\natural}\tilde{\Psi}$ invariant but is not a symmetry of the linear mass pair, and the corresponding axial current obeys
 
 $$
-\partial_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
+\partial/\partial Q_\mu j_5^\mu = 2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi},
 $$
 
-which vanishes only when $m = 0$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two central ideals** of $\mathbb{B}$ — the two chiralities, which are the algebra's central splitting — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $U(1)$ that the algebra canonically carries is untouched.
+which vanishes only when $m = 0$. In the biquaternion interpretation this is the statement that the mass is the **off-diagonal coupling between the two central ideals** of $\mathbb{B}$ — the two chiralities, which are the algebra's central splitting — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $\mathrm{U}(1)$ that the algebra canonically carries is untouched.
 
 Two things should be said about this, one established and one open.
 
-- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\partial_\mu j_5^\mu / (2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $U(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
+- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\partial/\partial Q_\mu j_5^\mu / (2im\,\tilde{\Psi}^{\natural}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $\mathrm{U}(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^{*}$, which is retained for that purpose and is no longer the mass.
 - **Open, and left open.** Whether the chirality-rotating symmetry can be *gauged*, and whether the framework's central-element structure supplies anything analogous to the would-be Goldstone statement for the axial breaking, is not decided here. A gauged axial symmetry, if it exists, is a question for the non-abelian extension, where the phase no longer commutes with the algebra.
 
 ## An External Construction That Gets a Local U(1) Without Frames
 
-An independent construction reaches the abelian principle of this article from the opposite direction, and it is worth recording because it confirms the corpus's intuition that the algebra carries a natural $U(1)$.
+An independent construction reaches the abelian principle of this article from the opposite direction, and it is worth recording because it confirms the corpus's intuition that the algebra carries a natural $\mathrm{U}(1)$.
 
-J. Fredsted (*Spinor fields without Lorentz frames in curved spacetime using complexified quaternions*, arXiv:0811.1357v4 [math-ph], 2009) builds a coordinate-covariant and locally Lorentz-invariant formalism for tensor and spinor fields in curved spacetime that uses no local Lorentz frame and no vierbein, carrying instead a basis $s_\mu \in \mathbb{M}_-$ and a single connection $\omega_\mu \in \mathbb{B}$ subject to the reality condition $\mathrm{Sc}(\omega_\mu + \bar\omega_\mu^\ast) = 0$. The connection's imaginary-scalar part is a local $U(1)$ freedom, and in the source's words a local $U(1)$ gauge symmetry "emerges naturally", which the source speculates "might be related to electromagnetism". The transformation is the corpus's own, in the source's notation:
+J. Fredsted (*Spinor fields without Lorentz frames in curved spacetime using complexified quaternions*, arXiv:0811.1357v4 [math-ph], 2009) builds a coordinate-covariant and locally Lorentz-invariant formalism for tensor and spinor fields in curved spacetime that uses no local Lorentz frame and no vierbein, carrying instead a basis $s_\mu \in \mathbb{M}_-$ and a single connection $\omega_\mu \in \mathbb{B}$ subject to the reality condition $\mathrm{Sc}(\omega_\mu + \bar\omega_\mu^\ast) = 0$. The connection's imaginary-scalar part is a local $\mathrm{U}(1)$ freedom, and in the source's words a local $\mathrm{U}(1)$ gauge symmetry "emerges naturally", which the source speculates "might be related to electromagnetism". The transformation is the corpus's own, in the source's notation:
 
 $$
-\omega_\mu' = \omega_\mu - i\partial_\mu\phi, \qquad
+\omega_\mu' = \omega_\mu - i\partial/\partial Q_\mu\,\phi, \qquad
 \psi_L' = \exp(+i\phi)\psi_L, \qquad
 \psi_R' = \exp(-i\phi)\psi_R, \qquad \phi = \phi(x^\mu) \in \mathbb{R},
 $$
 
-and it leaves the covariant derivatives covariant, $(D_\mu\psi_L)' = \exp(+i\phi)D_\mu\psi_L$ and $(D_\mu\psi_R)' = \exp(-i\phi)D_\mu\psi_R$, exactly as the local phase $\lambda = \exp(iϙ\Gamma/\hbar)$ of this article leaves $D_\mu\tilde\Psi$ covariant. With the central phase identified as $\phi = ϙ\Gamma/\hbar$ and the connection's scalar part written $-i\omega_\mu = (iϙ/\hbar)A_\mu$, the source's transformation is this article's $\tilde A' = \tilde A - \tilde\nabla\Gamma$ restricted to the central direction; the source's $U(1)$ is the imaginary-scalar direction of $\mathbb{B}$, that is, the corpus's centre $\mathbb{C}_{\mathbb{B}}$, and the left-action sign for $\psi_L$ matches the left action this article's parent uses for the charged massive field.
+and it leaves the covariant derivatives covariant, $(D_\mu\psi_L)' = \exp(+i\phi)D_\mu\psi_L$ and $(D_\mu\psi_R)' = \exp(-i\phi)D_\mu\psi_R$, exactly as the local phase $\lambda = \exp(iϙ\Gamma/\hbar)$ of this article leaves $D_\mu\tilde\Psi$ covariant. With the central phase identified as $\phi = ϙ\Gamma/\hbar$ and the connection's scalar part written $-i\omega_\mu = (iϙ/\hbar)A_\mu$, the source's transformation is this article's $\tilde A' = \tilde A - \tilde\nabla\Gamma$ restricted to the central direction; the source's $\mathrm{U}(1)$ is the imaginary-scalar direction of $\mathbb{B}$, that is, the corpus's centre $\mathbb{C}_{\mathbb{B}}$, and the left-action sign for $\psi_L$ matches the left action this article's parent uses for the charged massive field.
 
-The construction bears on Open Question 3. In the source, the shared generator $i$ is **content-bearing rather than vacuous**: the imaginary-scalar direction of $\omega_\mu$ *is* the $U(1)$ direction, and the same $i$ is what lets the two-sided vector derivative $\partial_\mu V + \omega_\mu V + V\bar\omega_\mu^\ast$ reduce to a one-sided one on the central piece. The source makes the point explicitly in a note added to the paper: the local Lorentz transformations, which obey $\bar\Lambda = \Lambda^{-1}$, and the local $U(1)$ transformations, $\Lambda = \exp(i\phi)$, are two cases of the single law $\omega_\mu' = \Lambda\omega_\mu\Lambda^{-1} - (\partial_\mu\Lambda)\Lambda^{-1}$. So there the internal phase and the local frame are not merely neighbours in one algebra; they are two subgroups of one local symmetry, and the connection is one object.
+The construction bears on Open Question 3. In the source, the shared generator $i$ is **content-bearing rather than vacuous**: the imaginary-scalar direction of $\omega_\mu$ *is* the $\mathrm{U}(1)$ direction, and the same $i$ is what lets the two-sided vector derivative $\partial/\partial Q_\mu V + \omega_\mu V + V\bar\omega_\mu^\ast$ reduce to a one-sided one on the central piece. The source makes the point explicitly in a note added to the paper: the local Lorentz transformations, which obey $\bar\Lambda = \Lambda^{-1}$, and the local $\mathrm{U}(1)$ transformations, $\Lambda = \exp(i\phi)$, are two cases of the single law $\omega_\mu' = \Lambda\omega_\mu\Lambda^{-1} - (\partial/\partial Q_\mu\,\Lambda)\Lambda^{-1}$. So there the internal phase and the local frame are not merely neighbours in one algebra; they are two subgroups of one local symmetry, and the connection is one object.
 
-The construction also has a catch, and the source states it. Under a local $U(1)$ transformation the covariant derivative of any (tensor-valued) quaternionic **vector** field is unchanged, because $\Lambda V \bar\Lambda^\ast = V$ for $\Lambda = \exp(i\phi)$; so at the level of $\mathbb{B}$-valued fields **only spinor fields can be electrically charged**. The source notes that this "flat out contradicts Nature", which contains the charged vector bosons $W^\pm$, and speculates that generalizing from complexified quaternions to complexified octonions might make room for them. The speculation is recorded and not upgraded: the corpus takes no position on it, and the corpus's own empirical contact remains the open question it is everywhere.
+The construction also has a catch, and the source states it. Under a local $\mathrm{U}(1)$ transformation the covariant derivative of any (tensor-valued) quaternionic **vector** field is unchanged, because $\Lambda V \bar\Lambda^\ast = V$ for $\Lambda = \exp(i\phi)$; so at the level of $\mathbb{B}$-valued fields **only spinor fields can be electrically charged**. The source notes that this "flat out contradicts Nature", which contains the charged vector bosons $W^\pm$, and speculates that generalizing from complexified quaternions to complexified octonions might make room for them. The speculation is recorded and not upgraded: the corpus takes no position on it, and the corpus's own empirical contact remains the open question it is everywhere.
 
-What the external construction gives this article is therefore not a new result but an independent route to the same one: a local $U(1)$ out of the biquaternion structure, obtained without frames and on a curved background, whose phase is the corpus's central phase and whose generator is the same scalar imaginary. It does not supply a principle of gauge fixing, and it does not produce a prediction distinguishing it from ordinary abelian gauge theory — the two standing gaps of this article are untouched by it.
+What the external construction gives this article is therefore not a new result but an independent route to the same one: a local $\mathrm{U}(1)$ out of the biquaternion structure, obtained without frames and on a curved background, whose phase is the corpus's central phase and whose generator is the same scalar imaginary. It does not supply a principle of gauge fixing, and it does not produce a prediction distinguishing it from ordinary abelian gauge theory — the two standing gaps of this article are untouched by it.
 
 ## Open Questions
 
@@ -301,7 +301,7 @@ What the external construction gives this article is therefore not a new result 
 
 4. **The matter representation.** The covariant derivative derived here acts by left multiplication and the abelian phase is central. For a non-abelian phase, left and right actions differ, and the choice of representation on the matter field must be specified. What fixes it?
 
-5. **The mass term, the axial symmetry, and the real structure.** The parent's mass term is now the linear chiral pair, so the continuously charged massive field is no longer obstructed: the abelian minimal coupling derived here applies to the massive Dirac field as well, and the $U(1)$ is realized on the module. The live question in that slot is the axial one — the mass breaks the symmetry that rotates the two central ideals, and whether that symmetry can be gauged, and with what consequences, is not settled here. A second question, which this article recorded before the mass term was made linear, is **re-attributed rather than dropped**: whether the pairing built on the algebra's real structure $\flat = -{}^{*}$, which is $\mathbb{C}$-antilinear and order-reversing, is a physical Majorana-type coupling or the real-form expression of an ordinary Dirac mass. The linear mass term answers the *mass-term* part of it — the parent's mass is a Dirac mass, and the framework's fermion number is conserved by it. The $\flat$-pairing itself remains genuinely open, and it is carried by *The Dirac Equation in Biquaternionic Form*, whose open question 1 asks what the real structure means for the electroweak interaction and for the distinction between the neutrino and the charged fermions, and by *The Neutrino and Majorana Fermions in Biquaternionic Form*, where the Majorana-versus-Dirac reading belongs and where its consequences for fermion-number violation are examined.
+5. **The mass term, the axial symmetry, and the real structure.** The parent's mass term is now the linear chiral pair, so the continuously charged massive field is no longer obstructed: the abelian minimal coupling derived here applies to the massive Dirac field as well, and the $\mathrm{U}(1)$ is realized on the module. The live question in that slot is the axial one — the mass breaks the symmetry that rotates the two central ideals, and whether that symmetry can be gauged, and with what consequences, is not settled here. A second question, which this article recorded before the mass term was made linear, is **re-attributed rather than dropped**: whether the pairing built on the algebra's real structure $\flat = -{}^{*}$, which is $\mathbb{C}$-antilinear and order-reversing, is a physical Majorana-type coupling or the real-form expression of an ordinary Dirac mass. The linear mass term answers the *mass-term* part of it — the parent's mass is a Dirac mass, and the framework's fermion number is conserved by it. The $\flat$-pairing itself remains genuinely open, and it is carried by *The Dirac Equation in Biquaternionic Form*, whose open question 1 asks what the real structure means for the electroweak interaction and for the distinction between the neutrino and the charged fermions, and by *The Neutrino and Majorana Fermions in Biquaternionic Form*, where the Majorana-versus-Dirac reading belongs and where its consequences for fermion-number violation are examined.
 
 6. **The local complex structure and the connection.** The framework already makes the complex structure local — the speed of light $c = 1/\sqrt{\epsilon\mu}$ varies with the medium, and so does the $ict$ structure. Is that local *frame* related to the local *phase* of the gauge principle? Both are "local structures" in the same algebra, but no relation between them is established here, and the suggestion is recorded only as a question.
 
@@ -309,7 +309,7 @@ What the external construction gives this article is therefore not a new result 
 
 ## Summary
 
-The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $U(1)$. A constant central phase $\tilde{\Psi} \mapsto \exp(i\theta)\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
+The gauge principle in biquaternionic form begins with the **centre** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its centre is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $\mathrm{U}(1)$. A constant central phase $\tilde{\Psi} \mapsto \exp(i\theta)\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
 
 Making the phase local, $\lambda = \exp(iϙ\Gamma(\tilde{Q})/\hbar)$, introduces the term $\frac{iϙ}{\hbar}(\tilde{\nabla}\Gamma)\tilde{\Psi}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
 
@@ -320,7 +320,7 @@ $$
 which is exactly the gauge transformation of the biquaternionic Maxwell article, and a covariant derivative
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu,
+D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
 under which $D\tilde{\Psi}$ transforms by the phase factor. The connection is a material-sector object: a real gauge function keeps $\tilde{A} \in \mathbb{M}_-$.
@@ -348,26 +348,26 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Complex scalar subspace; the centre of the algebra, source of the abelian gauge group |
-| $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient |
-| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Complex scalar subspace; the centre of the algebra, source of the abelian gauge group |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{\Psi}, \tilde{\Phi}$ | Charged biquaternion fields (spinor and complex scalar) |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate, ${}^{*} = ({}^{\natural})^{\,*}$ |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $ϙ$ | Coupling constant (charge), not fixed by the algebra |
-| $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative |
-| $D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components of the covariant derivative |
+| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components of the covariant derivative |
 | $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, $S' = S - \Box\Gamma$ | Gauge scalar; Lorenz gauge $S = 0$ |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field strength = curvature |
-| $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Abelian curvature components |
-| $\bar{e}_0 = e_0, \bar{e}_k = -e_k$ | Conjugate basis used in the curvature identity |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ | Source biquaternion |
+| $F_{\mu\nu} = \partial/\partial Q_\mu A_\nu - \partial/\partial Q_\nu A_\mu$ | Abelian curvature components |
+| $\bar{e}_t = e_t, \bar{e}_\mu = -\vec e_\mu$ | Conjugate basis used in the curvature identity |
+| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ | Source biquaternion |
 | $\tilde{\nabla}\tilde{F} = -\tilde{R}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |
@@ -383,5 +383,5 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the gauge-theoretic interpretation of the connection and curvature in geometric algebra.
 - F. Strocchi, *An Introduction to the Non-Perturbative Foundations of Quantum Field Theory* (Oxford, 2013), for the constraint and gauge-structure analysis behind the first-class count.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic Maxwell equation and the operator factorization used here.
-- J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction recorded in *An External Construction That Gets a Local U(1) Without Frames*: a coordinate-covariant, vierbein-free formalism in which the imaginary-scalar part of a single algebra-valued connection is a local $U(1)$, and the local Lorentz and local $U(1)$ symmetries are two cases of one transformation law. Cited as an external claim; the corpus does not adopt it.
+- J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the external construction recorded in *An External Construction That Gets a Local U(1) Without Frames*: a coordinate-covariant, vierbein-free formalism in which the imaginary-scalar part of a single algebra-valued connection is a local $\mathrm{U}(1)$, and the local Lorentz and local $\mathrm{U}(1)$ symmetries are two cases of one transformation law. Cited as an external claim; the corpus does not adopt it.
 - Companion articles: *Maxwell's Equations in the Biquaternionic Formulation*; *Canonical Quantization of the Biquaternion Maxwell Field*; *The Dirac Equation in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

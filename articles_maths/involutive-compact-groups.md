@@ -49,7 +49,7 @@ is a homeomorphism by the general quotient theorem; when $H$ is normal it is a c
 
 ## The Dual and the Twisted Representation
 
-**Definition.** Let $\pi : G \to U(V)$ be a continuous unitary representation on a Hilbert space $V$, with contragredient $\check\pi$ on the dual space $V^*$ given by $\check\pi(g) = \pi(g^{-1})^t$. The **involution twist** of $\pi$ is the representation
+**Definition.** Let $\pi : G \to \mathrm{U}(V)$ be a continuous unitary representation on a Hilbert space $V$, with contragredient $\check\pi$ on the dual space $V^*$ given by $\check\pi(g) = \pi(g^{-1})^t$. The **involution twist** of $\pi$ is the representation
 
 $$
 \pi^\sigma : G \longrightarrow U(V^*) , \qquad \pi^\sigma(g) = \pi(\sigma(g))^t ,

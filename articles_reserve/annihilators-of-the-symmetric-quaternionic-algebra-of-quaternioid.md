@@ -17,7 +17,7 @@ of linear algebra.
 The block of this article is the **symmetric quaternionic multiplication**
 $$
 \tilde p\star\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p\bigr)
-=N(\tilde p,\tilde q)\,e_0,\qquad N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q),
+=N(\tilde p,\tilde q)\,e_t,\qquad N(\tilde p,\tilde q)=p_0q_t+(\vec p,\vec q),
 $$
 the quaternion form read as a product (*Introduction to the Symmetric Quaternionic Algebra of
 Quaternions*). It is commutative and central valued, so the two annihilators of an element are one
@@ -46,7 +46,7 @@ Throughout this article the product is the **symmetric quaternionic multiplicati
 unqualified, *annihilator* means the annihilator of $\star$. The left and the right multiplication
 are one operator,
 $$
-L_{\tilde p}\tilde x=\tilde p\star\tilde x=N(\tilde p,\tilde x)e_0,\qquad
+L_{\tilde p}\tilde x=\tilde p\star\tilde x=N(\tilde p,\tilde x)e_t,\qquad
 R_{\tilde p}=L_{\tilde p},
 $$
 because the block is commutative.
@@ -87,8 +87,8 @@ and there the annihilator is the whole space.
 
 ## The Multiplication Operator and the Rank
 
-**Proposition (the operator).** In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde p}$ of an
-element $\tilde p=p_0e_0+\vec p$ has matrix
+**Proposition (the operator).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the operator $L_{\tilde p}$ of an
+element $\tilde p=p_0e_t+\vec p$ has matrix
 $$
 \begin{pmatrix}
 p_0 & p_1 & p_2 & p_3 \\
@@ -97,15 +97,15 @@ p_0 & p_1 & p_2 & p_3 \\
 0 & 0 & 0 & 0
 \end{pmatrix},
 $$
-its trace is $p_0$, its determinant is $0$, and its image is the central line $\mathbb{R}e_0$ for
+its trace is $p_0$, its determinant is $0$, and its image is the central line $\mathbb{R}e_t$ for
 every $\tilde p\neq0$.
 
-*Proof.* The value $\tilde p\star\tilde x$ is the scalar $N(\tilde p,\tilde x)$ times $e_0$, so the
+*Proof.* The value $\tilde p\star\tilde x$ is the scalar $N(\tilde p,\tilde x)$ times $e_t$, so the
 matrix has the single nonzero row $(p_0,p_1,p_2,p_3)$; the trace is $p_0$ and the determinant is
 $0$ because the last three rows vanish. The row is nonzero exactly when $\tilde p\neq0$.
 
 **Corollary (the rank and the annihilator).** For $\tilde p\neq0$ the operator has rank one, image
-the central line $\mathbb{R}e_0$ and kernel the hyperplane $\tilde p^{\perp}$; at $\tilde p=0$ the
+the central line $\mathbb{R}e_t$ and kernel the hyperplane $\tilde p^{\perp}$; at $\tilde p=0$ the
 operator is zero, of rank zero, and its kernel is the whole space.
 
 ## The Dichotomy
@@ -134,13 +134,13 @@ The quaternion algebra has two remarkable real subspaces, the scalar line and th
 (*Introduction to the Remarkable Subspaces of the Quaternions*), and the annihilator is read on
 each.
 
-**The centre.** A nonzero central element $\tilde p=\lambda e_0$ has
-$N(\lambda e_0,\tilde x)=\lambda x_0$, so its annihilator is $\{x_0=0\}$, the vector subspace. The
+**The centre.** A nonzero central element $\tilde p=\lambda e_t$ has
+$N(\lambda e_t,\tilde x)=\lambda x_0$, so its annihilator is $\{x_0=0\}$, the vector subspace. The
 centre is therefore the subspace whose nonzero elements annihilate exactly the vector subspace.
 
 **The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has
-$N(\vec p,\tilde x)=(\vec p,\vec x)$, so its annihilator is the hyperplane
-$\{\tilde x:(\vec p,\vec x)=0\}$. It contains the centre and, inside the vector subspace, the
+$N(\vec p,\tilde x)=(\vec p,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so its annihilator is the hyperplane
+$\{\tilde x:(\vec p,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0\}$. It contains the centre and, inside the vector subspace, the
 real plane orthogonal to $\vec p$; the element $\vec p$ never lies in the annihilator,
 because $(\vec p,\vec p)>0$ for $\vec p\neq0$. On the vector subspace the annihilator
 meets the subspace in a plane, of dimension two, and the missing dimension is the scalar one.
@@ -150,11 +150,11 @@ meets the subspace in a plane, of dimension two, and the missing dimension is th
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 quaternionic multiplication is commutative and central valued,
-$\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ with
-$N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$, so the two annihilators of an element
+$\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$ with
+$N(\tilde p,\tilde q)=p_0q_t+(\vec p,\vec q)$, so the two annihilators of an element
 coincide. Every nonzero element is a zero divisor and every nonzero element has the **hyperplane**
 $\tilde p^{\perp}$ as annihilator, of real dimension three; the operator $L_{\tilde p}$ has rank
-one, image the centre $\mathbb{R}e_0$, trace $p_0$ and determinant $0$; and the annihilator of the
+one, image the centre $\mathbb{R}e_t$, trace $p_0$ and determinant $0$; and the annihilator of the
 product is $\{0\}$ because the form is non-degenerate. No nonzero element lies in its own
 annihilator, because the form is positive definite: this is where the block differs from its
 complex twin, whose isotropic cone is nontrivial and whose isotropic elements annihilate
@@ -164,10 +164,10 @@ themselves.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ | the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$ |
-| $N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$ | the quaternion form, the scalar part of the block, positive definite |
+| $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$ | the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$ |
+| $N(\tilde p,\tilde q)=p_0q_t+(\vec p,\vec q)$ | the quaternion form, the scalar part of the block, positive definite |
 | $A_\star(\tilde p),B_\star(\tilde p)$ | the left and the right annihilator of $\tilde p$ in the block, equal because the block is commutative |
-| $L_{\tilde p}$ | the left multiplication operator, $L_{\tilde p}\tilde x=N(\tilde p,\tilde x)e_0$, of rank one for $\tilde p\neq0$ |
+| $L_{\tilde p}$ | the left multiplication operator, $L_{\tilde p}\tilde x=N(\tilde p,\tilde x)e_t$, of rank one for $\tilde p\neq0$ |
 | $\tilde p^{\perp}=\{\tilde x:N(\tilde p,\tilde x)=0\}$ | the annihilator of a nonzero element, a real hyperplane of dimension three |
 | $N(\tilde p)=p_0^{2}+|\vec p|^{2}=N(\tilde p,\tilde p)>0$ | the definite norm, never zero at a nonzero element |
 

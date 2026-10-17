@@ -21,13 +21,13 @@ This article states the foundational global theorems — Moser's stability theor
 
 **Theorem (Moser, contact case; Gray's theorem).** Let $\alpha_t$, $t\in[0,1]$, be a smooth path of contact forms on a closed manifold. Then there is a diffeomorphism $\phi$ and a positive function $f$ with $\phi^*\alpha_1 = f\alpha_0$; that is, the contact structures $\ker\alpha_t$ are all isotopic.
 
-**Proof sketch.** The argument is the Moser argument as above with the contact forms in place of the symplectic ones: with $\sigma_t = \dot\alpha_t$ one solves $L_{X_t}\alpha_t = \rho_t\alpha_t - \sigma_t$ for a time-dependent vector field $X_t$ and a function $\rho_t$. The equation splits: the equation $\iota_{X_t}\alpha_t = -f_t$ determines the component of $X_t$ along the Reeb field, and the equation $\iota_{X_t}d\alpha_t = -\sigma_t + \rho_t\alpha_t - df_t$, restricted to the contact planes, determines the component in $\xi$, because $d\alpha_t$ is nondegenerate there; the free function $\rho_t$ is then fixed by the component along the Reeb field. The point is that the contact condition is open and the linear equation is solvable at each stage.
+**Proof sketch.** The argument is the Moser argument as above with the contact forms in place of the symplectic ones: with $\sigma_t = d\alpha_{t}/dt$ one solves $L_{X_t}\alpha_t = \rho_t\alpha_t - \sigma_t$ for a time-dependent vector field $X_t$ and a function $\rho_t$. The equation splits: the equation $\iota_{X_t}\alpha_t = -f_t$ determines the component of $X_t$ along the Reeb field, and the equation $\iota_{X_t}d\alpha_t = -\sigma_t + \rho_t\alpha_t - df_t$, restricted to the contact planes, determines the component in $\xi$, because $d\alpha_t$ is nondegenerate there; the free function $\rho_t$ is then fixed by the component along the Reeb field. The point is that the contact condition is open and the linear equation is solvable at each stage.
 
 **Remark.** Gray's theorem is the statement that a contact structure on a closed odd-dimensional manifold has no continuous invariants of a one-parameter family: the homotopy classes of contact structures are discrete. The theorem is the reason contact topology is a discrete subject and the reason the tight–overtwisted dichotomy is the central invariant, whereas the symplectic case, by contrast, has the continuous invariants of the cohomology class. In this sense the contact theory is the more rigid of the two.
 
 ## The $h$-Principle and Its Failure
 
-**Definition.** A **symplectic form** on a manifold $M$ of dimension $2n$ is a closed nondegenerate $2$-form $\omega$. An **almost symplectic form** is a nondegenerate $2$-form, with no closedness condition; a manifold carrying one is **almost symplectic**. Thus an almost symplectic structure is a reduction of the structure group of $TM$ from $GL(2n,\mathbb{R})$ to $Sp(2n,\mathbb{R})$, equivalently, since $Sp(2n,\mathbb{R})$ deformation retracts to $U(n)$, an almost complex structure together with a Hermitian metric.
+**Definition.** A **symplectic form** on a manifold $M$ of dimension $2n$ is a closed nondegenerate $2$-form $\omega$. An **almost symplectic form** is a nondegenerate $2$-form, with no closedness condition; a manifold carrying one is **almost symplectic**. Thus an almost symplectic structure is a reduction of the structure group of $TM$ from $GL(2n,\mathbb{R})$ to $Sp(2n,\mathbb{R})$, equivalently, since $Sp(2n,\mathbb{R})$ deformation retracts to $\mathrm{U}(n)$, an almost complex structure together with a Hermitian metric.
 
 **Theorem (Gromov's $h$-principle for open manifolds).** Let $M$ be an open manifold of dimension $2n$ with an almost symplectic form $\omega_0$. Then there is a path of nondegenerate $2$-forms from $\omega_0$ to a symplectic form, and more precisely the space of symplectic forms on $M$ is homotopy equivalent to the space of almost symplectic forms. In particular an open almost symplectic manifold is symplectic.
 
@@ -151,7 +151,7 @@ In the presence of a torus action the symplectic structure reduces to a Delzant 
 | $\alpha$ | Contact form: $\alpha\wedge(d\alpha)^{\wedge n}\neq0$; $\xi=\ker\alpha$ |
 | $\xi$ | Contact structure, a maximally nonintegrable hyperplane field |
 | $[\omega]$ | Cohomology class; symplectic requires $[\omega]^{\wedge n}\neq0$ |
-| Almost symplectic | Nondegenerate $2$-form without closedness; reduction to $Sp(2n,\mathbb{R})\sim U(n)$ |
+| Almost symplectic | Nondegenerate $2$-form without closedness; reduction to $Sp(2n,\mathbb{R})\sim \mathrm{U}(n)$ |
 | Formal contact structure | Homotopy-theoretic hyperplane field with a nondegenerate skew form; no integrability |
 | Moser equation | $\iota_{X_t}\omega_t = -\alpha_t$ along a path with constant cohomology class |
 | $h$-principle | Existence/classification of structures by their formal homotopy data |

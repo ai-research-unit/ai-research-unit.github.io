@@ -14,10 +14,10 @@ The article is organised as follows. The next section fixes what is being counte
 
 ## What Is Being Counted
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = -e_2e_1 = e_3$, and central scalar imaginary $i$. A general element is
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z$, and central scalar imaginary $i$. A general element is
 
 $$
-\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3, \qquad Q_\mu = q_\mu + iq'_\mu \in \mathbb{C},
+\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z, \qquad Q_\mu = q_\mu + iq'_\mu \in \mathbb{C},
 $$
 
 with the eight real parameters $q_\mu, q'_\mu$ of *Conventions in the Biquaternion Universe*. To multiply two elements a machine must combine their sixteen real parameters; the question is how many **real multiplications** the combination needs, additions being counted as free.
@@ -39,7 +39,7 @@ $$
 \tilde{P}\tilde{Q} = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
 $$
 
-The sign of the cross term is the corpus's: with $e_1e_2 = e_3$ the outer product is $+\vec V_1\times\vec V_2$, so that $e_1e_2$ returns $e_3$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.
+The sign of the cross term is the corpus's: with $\vec e_x\vec e_y = \vec e_z$ the outer product is $+\vec V_1\times\vec V_2$, so that $\vec e_x\vec e_y$ returns $\vec e_z$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.
 
 Counting the coefficient products that appear above, one by one:
 
@@ -58,7 +58,7 @@ The naive scheme therefore costs sixteen complex multiplications, or **sixty-fou
 
 The reduction rests on writing the four coefficients of the product as fixed linear combinations of **eight** products of linear combinations of the input coefficients. Four of the eight are the "corner" products of individual components; the other four are Hadamard products, that is products of the two vectors $(M_0,M_1,\mathsf{M}_2,M_3)$ and $(N_0,N_1,N_2,N_3)$ with the four rows of the Sylvester sign matrix of order four.
 
-In the corpus's basis the scheme reads as follows. Let $\tilde{M} = M_0e_0 + \dots + M_3e_3$ and $\tilde{N} = N_0e_0 + \dots + N_3e_3$ with complex coefficients, and let the four Hadamard products be
+In the corpus's basis the scheme reads as follows. Let $\tilde{M} = M_0e_t + \dots + M_3\vec e_z$ and $\tilde{N} = N_0e_t + \dots + N_3\vec e_z$ with complex coefficients, and let the four Hadamard products be
 
 $$
 H_1 = (M_0+M_1+\mathsf{M}_2+M_3)(N_0+N_1+N_2+N_3),
@@ -76,21 +76,21 @@ $$
 and let the four corner products be $P_{00} = M_0N_0$, $P_{32} = M_3N_2$, $P_{13} = M_1N_3$, $P_{21} = \mathsf{M}_2N_1$. Then the coefficients $Q_\mu$ of the product satisfy
 
 $$
-4Q_0 = 8P_{00} - (H_1+H_2+H_3+H_4),
+4Q_t = 8P_{00} - (H_1+H_2+H_3+H_4),
 $$
 $$
-4Q_1 = (H_1+H_2-H_3-H_4) - 8P_{32},
+4Q_x = (H_1+H_2-H_3-H_4) - 8P_{32},
 $$
 $$
-4Q_2 = (H_1-H_2+H_3-H_4) - 8P_{13},
+4Q_y = (H_1-H_2+H_3-H_4) - 8P_{13},
 $$
 $$
-4Q_3 = (H_1-H_2-H_3+H_4) - 8P_{21}.
+4Q_z = (H_1-H_2-H_3+H_4) - 8P_{21}.
 $$
 
 The scheme uses eight coefficient products and nothing else: the Hadamard combinations supply each coefficient with the sign pattern of one Sylvester row, and the four corner products cancel the diagonal contributions that the Hadamard products carry along with them. The factors of two and four are the price of that cancellation; they are additions and scalings, which the count treats as free.
 
-This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = \mathsf{M}_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_1 = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
+This is the corpus transcription of the source's scheme, which is stated there in the reversed vector-unit order. The source writes it as eight intermediate products $P_1,\dots,P_8$, with the four coefficient products $P_1 = M_1N_1$, $P_2 = M_4N_3$, $P_3 = \mathsf{M}_2N_4$, $P_4 = M_3N_2$ in its own numbering and the four Hadamard products $P_5,\dots,P_8$ of the same shape as $H_1,\dots,H_4$, and it gives the four coefficients as $Q_x = 2P_1 - \tfrac14(P_5+P_6+P_7+P_8)$ and its three companions with the sign patterns $+\,+\,--\,$, $\,+\,-+\,-$ and $\,+\,\,--\,+$. The two forms differ only by the relabelling of the vector units; both were recomputed here and both reproduce the direct product exactly.
 
 Each of the eight intermediate products is a complex multiplication, so the bilinear scheme alone costs $8\times4 = 32$ real multiplications, against the naive sixty-four. **Gauss's three-multiplication rule** for complex numbers,
 
@@ -108,7 +108,7 @@ For the slices the scheme already terminates at the coefficient level: a real-qu
 The scheme above has coefficients that are complex *scalars*, and it is bilinear over the real numbers: every output is a scalar linear combination of the eight intermediate products. **Nothing in it uses the commutativity of the coefficients**, so it applies unchanged when the coefficients are replaced by matrices. That is the step from a biquaternion to a *matrix-valued* biquaternion, an element of $\mathbb{B}^{n\times m}$: each of the four coefficients becomes an $n\times m$ complex matrix, and the product rule keeps exactly its scalar-vector shape,
 
 $$
-Q_1Q_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
+Q_xQ_y = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
 $$
 
 with the dot and cross products understood entrywise, in the order of matrix multiplication, and with the coefficients no longer commuting. The eight intermediate products are then products of matrices, evaluated with a single real matrix-multiplication kernel; the dot and cross products are absorbed into them and are never formed separately.
@@ -127,30 +127,30 @@ The memory side is worth recording next to the count. A matrix-valued biquaterni
 
 ## The Complex Image and Its Blocks
 
-The object a machine actually consumes is not the algebra but its matrix image. For a matrix-valued biquaternion $\tilde{Q}$ with complex component matrices $Q_0,Q_1,Q_2,Q_3$ of size $n\times m$, the image is the $2n\times2m$ complex matrix
+The object a machine actually consumes is not the algebra but its matrix image. For a matrix-valued biquaternion $\tilde{Q}$ with complex component matrices $Q_t,Q_x,Q_y,Q_z$ of size $n\times m$, the image is the $2n\times2m$ complex matrix
 
 $$
-M = \sum_{\mu=0}^{3} \mathsf{M}_2(e_\mu)\otimes Q_\mu, \qquad \mathsf{M}_2(e_0) = I_2,
+M = \sum_{\mu\in\{t,x,y,z\}} \mathsf{M}_2(e_\mu)\otimes Q_\mu, \qquad \mathsf{M}_2(e_t) = I_2,
 $$
 
-where $\mathsf{M}_2$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_0$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification and the Effect of the Change of Scalars*.
+where $\mathsf{M}_2$ is the isomorphism of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and $\otimes$ is the Kronecker product, taken with $\mathsf{M}_2$ first: the indices of $\mathsf{M}_2$ are the block indices of the image and the array indices run inside the blocks. With $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ in the corpus convention the image is $I_2\otimes Q_t$ plus the three Pauli–Kronecker terms multiplied by $-i$, and the four quadrants of a square image, of size $n\times n$, are the blocks $A, B, C, D$ below. The order of the two factors is a convention, the two orders being exchanged by a permutation of indices; the source assembles it in the same order, and the corpus's array-level statement of the correspondence is in *The Realification and the Effect of the Change of Scalars*.
 
 Three properties of this image are used constantly, and each is exact:
 
 1. **It is a homomorphism for the entrywise product.** If the array product is taken entrywise, with each entry multiplied in $\mathbb{B}$, then the image of the product is the product of the images.
-2. **Its trace is the biquaternion trace.** The ordinary trace of the $2n\times2n$ image equals $2\,\mathrm{tr}(Q_0)$, twice the trace of the scalar component matrix, which is exactly the corpus's trace $2\,\mathrm{Sc}$ summed over the diagonal.
+2. **Its trace is the biquaternion trace.** The ordinary trace of the $2n\times2n$ image equals $2\,\mathrm{tr}(Q_t)$, twice the trace of the scalar component matrix, which is exactly the corpus's trace $2\,\mathrm{Sc}$ summed over the diagonal.
 3. **Its dagger is the array dagger.** Transposing the array and applying the Hermitian conjugation in the algebra to every entry carries the image to the conjugate transpose.
 
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
 
 $$
-M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_0 - iQ_3,\quad B = -iQ_1 - Q_2 ,
+M^+ = \begin{pmatrix} A & B \\ -B^{*} & A^{*} \end{pmatrix}, \qquad A = Q_t - iQ_3,\quad B = -iQ_1 - Q_y ,
 $$
 
 and for an antiquaternion array, whose coefficients are purely imaginary, the **time-reversal antisymmetric** form
 
 $$
-M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_0 - iQ_3,\quad H = -iQ_1 - Q_2 .
+M^- = \begin{pmatrix} G & H \\ H^{*} & -G^{*} \end{pmatrix}, \qquad G = Q_t - iQ_3,\quad H = -iQ_1 - Q_y .
 $$
 
 In the source's language the two forms are the objects of the two halves $\mathbb{H}_R$ and $i\mathbb{H}_R$ of the algebra, which are the corpus's $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the correspondence is with the two halves of the complex-conjugation split, and it is not the $\mathbb{M}_\pm$ split, a point returned to below.
@@ -177,7 +177,7 @@ $$
 U_\alpha = \frac{1}{\sqrt2}\begin{pmatrix} I & I \\ \alpha I & -\alpha I \end{pmatrix}, \qquad |\alpha| = 1 ,
 $$
 
-one has $M' = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $e_2$ alone gives $B = -A$ and $e_1$ alone gives $B = A$, while $e_3$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
+one has $M' = U_\alpha^{\dagger}MU_\alpha$ block diagonal exactly when $\alpha^{*}B = \alpha A$, and then the blocks are $\alpha A$ and $-\alpha A$. The relevant root is fixed by the relation between the two non-zero blocks: when they are opposite, $B = -A$, the condition holds for $\alpha = \pm i$, and when they are equal, $B = A$, for $\alpha = \pm 1$. Both occur in the source's symmetry classes, for a single active vector component: $\vec e_y$ alone gives $B = -A$ and $\vec e_x$ alone gives $B = A$, while $\vec e_z$ alone is already block diagonal and needs no rotation. When the two blocks are not simply related, the unitary matrix is completed by a complex matrix $G$ built from the singular value decomposition $A = U\Sigma V^{\dagger}$ of the upper block as $G = VU^{\dagger}$, which restores the condition $AG = (AG)^{*}$.
 
 It is a statement of linear algebra — a rotation of a two-block matrix into its eigenbasis — and the biquaternion content is only the guarantee that the blocks carry the stated structure, so that the reduction applies.
 
@@ -245,7 +245,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $Q_\mu=q_\mu+iq'_\mu$ | Complex coefficients; the eight real parameters are $q_\mu,q'_\mu$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | Real-quaternion and antiquaternion halves, the complex-conjugation split |
@@ -258,10 +258,10 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 | $24$ | the multiplication count of one general biquaternion product, corner–Hadamard with Gauss |
 | $8$ | the count on either half, $\mathbb{H}_{\mathbb{B}}$ or $i\mathbb{H}_{\mathbb{B}}$ |
 | $\tilde{Q}\in\mathbb{B}^{n\times m}$ | A matrix-valued biquaternion; four coefficient matrices of size $n\times m$ |
-| $M=I_n\otimes\mathsf{M}_2(Q_0)+\sum_k\mathsf{M}_2(e_k)\otimes Q_k$ | The complex image, size $2n\times2m$ |
+| $M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_k\mathsf{M}_2(\vec e_k)\otimes Q_k$ | The complex image, size $2n\times2m$ |
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
-| $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_0)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
+| $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_t)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
 | $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\\\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type unitary, $|\alpha|=1$, $M$ block anti-diagonal |
 | $\alpha^{*}B=\alpha A$ | The condition for $U_\alpha^{\dagger}MU_\alpha$ to be block diagonal |
 | $G=VU^{\dagger}$ | The completing matrix from the SVD $A=U\Sigma V^{\dagger}$ |

@@ -16,7 +16,6 @@ A **division algebra** over a field $k$ is a $k$-algebra with identity in which 
 | Unit group $D^\times = D\setminus\{0\}$ | the nonzero elements, a group under multiplication | *Division Algebras* |
 | Centre $Z(D)$ | a field; $D$ is an algebra over it | *Division Algebras* |
 | Matrix algebra $M_n(D)$ over a division algebra | simple; the building block of the Wedderburn–Artin decomposition | *Simple and Semisimple Modules* |
-| Warning: the octonions $\mathbb{O}$ | a division algebra but not a ring: the multiplication is not associative | *Octonion Algebra* |
 | Warning: the algebra of a division ring | the centre is a field, so a division ring is a division algebra over its centre, possibly of infinite dimension there | *Division Algebras* |
 
 ## The Real Division Algebras: Frobenius' Theorem
@@ -51,12 +50,9 @@ A **normed division algebra** is an algebra with a multiplicative anisotropic no
 | Algebra | The property it has | Introduced in |
 |---|---|---|
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ | the associative normed division algebras, of dimensions $1$, $2$ and $4$ | *Normed Division Algebras and the Hurwitz Theorem* |
-| $\mathbb{O}$ | dimension $8$; the only non-associative normed division algebra | *Octonion Algebra* |
 | Hurwitz' theorem | the four normed division algebras and the exclusion of dimension $16$ | *Normed Division Algebras and the Hurwitz Theorem* |
 | Cayley–Dickson double $\mathrm{CD}(A)$ | the doubling construction producing the chain and losing one property per step | *Normed Division Algebras and the Hurwitz Theorem* |
 | Sums-of-squares identities | the existence of the identity exactly for $n = 1, 2, 4, 8$ | *Normed Division Algebras and the Hurwitz Theorem* |
-| Non-example: the sedenions $\mathbb{S}$ | fail the multiplicative norm and have zero divisors; dimension $16$ | *Octonion Algebra* |
-| Non-example: $\mathbb{O}$ as a division ring | fails to be a ring: the multiplication is not associative | *Octonion Algebra* |
 
 ## The Central Division Algebras over a General Field
 

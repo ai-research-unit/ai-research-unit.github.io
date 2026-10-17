@@ -87,7 +87,6 @@ The case of $\mathbb{R}$ is the Galois theory of $\mathbb{C}$ over $\mathbb{R}$:
 | $\mathbb{H}$ | a division ring, but not commutative; a skew field | *Quaternion Algebra* |
 | the division ring of fractions of $A_1(k)$ | not commutative | *Ore Domains and Division Rings of Fractions* |
 | $\mathbb{Z}$, $\mathbb{Z}[x]$, $\mathbb{Z}[i]$ | commutative domains that are not fields: not every nonzero element is a unit | *The Integers*, *Examples of Rings and Fields* |
-| $\mathbb{O}$ | a division algebra whose multiplication is not associative; not a ring | *Octonion Algebra* |
 | the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$; a field has $1 \neq 0$ | *Rings*, §2 |
 
 A commutative division ring is a field, so $\mathbb{H}$ is excluded by commutativity alone and not by the absence of inverses. By Wedderburn's little theorem a finite division ring is a field, so there is no finite skew field and *List of Division Rings and Skew Fields* is left with the infinite ones.

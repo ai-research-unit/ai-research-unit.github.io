@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ is the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric Quaternionic
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric Quaternionic
 Algebra of Quaternions*. This article reads it on the **left regular representation**
 $M_4(\mathbb{R})_L$ of *Introduction to the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$
 of Quaternions*, where the parent product becomes the product with the transposed first factor and the
@@ -31,15 +31,15 @@ companions are *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element
 $M_4(\mathbb{R})_L$*, above this article in this category, and *The Antisymmetric Quaternionic Algebra in
 the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
-the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_0,e_1,e_2,e_3)$, and
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
+the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and
 $\mathsf{R}_4$ is the right regular representation. The model is multiplicative,
 $\mathsf{M}_4(\tilde p\tilde q)=\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)$, the conjugation is the
 transpose, $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$, and
-$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$, $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$. The
-**quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
+$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t$, $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$. The
+**quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ and the **plain form**
+$B(\tilde p,\tilde q)=p_0q_t-\vec p\cdot\vec q$.
 
 ## The Operation in the Model
 
@@ -67,7 +67,7 @@ $$
 a three-dimensional real subspace, and the model is injective, so the kernel of the model map is $\{0\}$.
 
 *Proof.* The values of the block are pure, so their matrices are traceless by
-$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$; conversely a traceless matrix of the image has $q_0=0$
+$\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t$; conversely a traceless matrix of the image has $q_t=0$
 by the same formula, so it is the image of a pure element, and the pure elements are values of the
 block.
 
@@ -135,16 +135,16 @@ $$
 $$
 
 the unique invariant form of the block reads the scalar parts,
-$\varphi(\tilde p,\tilde q)=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
+$\varphi(\tilde p,\tilde q)=p_0q_t=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
 and the operator trace form is
-$K(\tilde p,\tilde q)=3p_0q_0-2\,\vec p\cdot\vec q=\tfrac18\bigl(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})\bigr)$.
+$K(\tilde p,\tilde q)=3p_0q_t-2\,\vec p\cdot\vec q=\tfrac18\bigl(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})\bigr)$.
 
 *Proof.* The model is multiplicative, so
 $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q)=4\mathrm{Sc}(\tilde p\tilde q)=4B(\tilde p,\tilde q)$
 and $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q^{\natural})=4N(\tilde p,\tilde q)$;
-the trace of the model is $4q_0$, whence $\varphi$; the combination is the operator trace form of *The
+the trace of the model is $4q_t$, whence $\varphi$; the combination is the operator trace form of *The
 Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, below this article in this
-category, and equals $3p_0q_0-2\,\vec p\cdot\vec q$ because
+category, and equals $3p_0q_t-2\,\vec p\cdot\vec q$ because
 $\tfrac18(5\cdot4B+4N)=\tfrac12(N+5B)$.
 
 **Remark (the coefficient form vanishes).** The values of the block are traceless, so
@@ -184,9 +184,9 @@ off the origin and kernel the line of the element. The left and the right regula
 the block uses the left one alone. The trace of the model reads the plain form,
 $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4B(\tilde p,\tilde q)$, the trace with
 the transpose reads the quaternion form, the unique invariant form is
-$\varphi=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
+$\varphi=p_0q_t=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$,
 and the operator trace form is
-$\tfrac18(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T}))=3p_0q_0-2\,\vec p\cdot\vec q$.
+$\tfrac18(5\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))+\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T}))=3p_0q_t-2\,\vec p\cdot\vec q$.
 The quaternionic product on the same model is the matrix product with the transposed first factor.
 
 ## Summary of Notation
@@ -200,7 +200,7 @@ The quaternionic product on the same model is the matrix product with the transp
 | $\operatorname{Tr}L^{\diamond}_{\tilde p}=3p_0$, rank $3$ | the invariants of the operator |
 | $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=4B$ | the plain form |
 | $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)^{\mathsf T})=4N$ | the quaternion form |
-| $\varphi=p_0q_0=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$ | the unique invariant form |
+| $\varphi=p_0q_t=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde p)\operatorname{Tr}\mathsf{M}_4(\tilde q)$ | the unique invariant form |
 
 ## Further Reading
 

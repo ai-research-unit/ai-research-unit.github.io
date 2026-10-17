@@ -67,7 +67,7 @@ Two rungs replace associativity by an identity of their own: the **Lie algebra**
 | Lie algebra | an antisymmetric product satisfying the Jacobi identity | *Lie Algebras* |
 | Jordan algebra | a commutative product satisfying the Jordan identity | *Jordan Algebras* |
 | Non-associative algebra | an algebra carrying no associativity axiom | *Non-Associative Algebras and the Property Ladder* |
-| Non-example: the octonions $\mathbb{O}$ | a division algebra that fails associativity, hence is not a ring | *Division Algebras*; *Octonion Algebra* (Part V) |
+| Non-example: the octonions $\mathbb{O}$ | a division algebra that fails associativity, hence is not a ring | *Division Algebras* |
 | Non-example: the cross product on $\mathbb{R}^3$ | an algebra that fails associativity and has no identity | *Algebras* |
 
 ## Structures Defined by an Order

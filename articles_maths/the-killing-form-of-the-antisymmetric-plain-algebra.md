@@ -10,7 +10,7 @@ $$
 
 where $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$ is the adjoint operator of the bracket. The form is computed on general elements of the algebra and on the units; its invariance and its symmetry are established; its radical, which is the centre $\mathbb{C}_{\mathbb{B}}$, is identified; its relation to the general plain bilinear form on the vector subspace is shown to be a single constant; the Killing data — rank, radical, definite or indefinite character — are read on the basis and on the remarkable subspaces with their isotropic elements; and the Cartan criteria are read on it, together with the Casimir element the form defines.
 
-The bracket and its structure are used from *The Lie Algebra of the Antisymmetric Plain Algebra*, where the centre, the derived algebra and the identifications $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$ are established. The plain bilinear form $\langle\tilde P,\tilde Q\rangle=\operatorname{Sc}(\tilde P\tilde Q)$ and its pairings are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; their reading under the general plain form is *Remarkable Subspaces and the Four Forms*; the general theory of the Killing form, of the Cartan criteria and of the Casimir element is *The Killing Form Operator*, *Structure of Lie Algebras* and *The Casimir Operator*; and the operators of the block, which are the adjoints here, are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*. The form is a two-variable operation on a module; the squared vector form $\vec Q\cdot\vec Q$ that appears below is a quadratic form on the vector part and not a norm of the algebra.
+The bracket and its structure are used from *The Lie Algebra of the Antisymmetric Plain Algebra*, where the centre, the derived algebra and the identifications $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$ are established. The plain bilinear form $\langle\tilde P,\tilde Q\rangle=\operatorname{Sc}(\tilde P\tilde Q)$ and its pairings are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; their reading under the general plain form is *Remarkable Subspaces and the Four Forms*; the general theory of the Killing form, of the Cartan criteria and of the Casimir element is *The Killing Form Operator*, *Structure of Lie Algebras* and *The Casimir Operator*; and the operators of the block, which are the adjoints here, are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*. The form is a two-variable operation on a module; the squared vector form $\vec Q\cdot\vec Q$ that appears below is a quadratic form on the vector part and not a norm of the algebra.
 
 ## The Adjoint and the Trace Form
 
@@ -28,7 +28,7 @@ $$
 \operatorname{ad}_{\tilde P}(\tilde X)=\vec P\times\vec X,
 $$
 
-so its kernel is the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\vec P$ when $\vec P\neq0$ and the whole space when $\vec P=0$, and its rank is $0$ on the centre and $2$ elsewhere. In the basis $(e_0,e_1,e_2,e_3)$ its matrix is block diagonal, with a first column and a first row of zeros and the $3\times3$ matrix of the cross product by $\vec P$ on the vector part.
+so its kernel is the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\vec P$ when $\vec P\neq0$ and the whole space when $\vec P=0$, and its rank is $0$ on the centre and $2$ elsewhere. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ its matrix is block diagonal, with a first column and a first row of zeros and the $3\times3$ matrix of the cross product by $\vec P$ on the vector part.
 
 *Proof.* The bracket depends only on the vector parts, so $\operatorname{ad}_{\tilde P}(\tilde X)=\vec P\times\vec X$. The kernel of the cross product by $\vec P$ is the line $\mathbb{C}\vec P$ together with the central direction, a complex plane when $\vec P\neq0$; the matrix statement follows because the first coordinate is annihilated. The ranks were verified exactly on general elements and on the basis.
 
@@ -45,18 +45,18 @@ It is the Killing form of the bracket, computed from the block's own adjoint; th
 **Theorem.** For all $\tilde P,\tilde Q\in\mathbb{B}$,
 
 $$
-\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q=-2\,(P_1Q_1+P_2Q_2+P_3Q_3),
+\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q=-2\,(P_xQ_x+P_yQ_y+P_zQ_z),
 $$
 
-and in the basis $(e_0,e_1,e_2,e_3)$
+and in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$
 
 $$
-\kappa(e_0,e_0)=0,\qquad \kappa(e_0,e_j)=0,\qquad \kappa(e_i,e_j)=-2\,\delta_{ij}\quad(i,j=1,2,3),
+\kappa(e_t,e_t)=0,\qquad \kappa(e_t,\vec e_\nu)=0,\qquad \kappa(\vec e_\mu,\vec e_\nu)=-2\,\delta_{\mu\nu}\quad(\mu,\nu\in\{x,y,z\}),
 $$
 
 so the Gram matrix of $\kappa$ is $\operatorname{diag}(0,-2,-2,-2)$.
 
-*Proof.* Let $\vec P$ have coordinates $(P_1,P_2,P_3)$ and let $C_{\vec P}$ be the $3\times3$ matrix of the cross product $\vec X\mapsto\vec P\times\vec X$ on the vector part. The adjoint has block form $\operatorname{diag}(0,C_{\vec P})$ on $\mathbb{C}e_0\oplus\mathrm{Vect}(\mathbb{B})$, so
+*Proof.* Let $\vec P$ have coordinates $(P_x,P_y,P_z)$ and let $C_{\vec P}$ be the $3\times3$ matrix of the cross product $\vec X\mapsto\vec P\times\vec X$ on the vector part. The adjoint has block form $\operatorname{diag}(0,C_{\vec P})$ on $\mathbb{C}e_t\oplus\mathrm{Vect}(\mathbb{B})$, so
 
 $$
 \operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)=\operatorname{Tr}\bigl(C_{\vec P}C_{\vec Q}\bigr).
@@ -84,7 +84,7 @@ $$
 \kappa(\tilde P,\tilde Q)=2\,\langle\tilde P,\tilde Q\rangle\qquad(\tilde P,\tilde Q\in\mathrm{Vect}(\mathbb{B})),
 $$
 
-and the ratio of the two forms is the constant $2$. For the commutator reading of the previous section the constant is $4\cdot2=8$; the constant is thus a convention of the halving, and the combinatorial content — that two forms on the three-dimensional vector part are proportional — is the same. **The Killing form sees the vector part through the general plain bilinear form, and the centre is invisible to it.** The squared vector form gives the ratio $\kappa(\tilde Q,\tilde Q)/(\vec Q\cdot\vec Q)=-2$ wherever the vector part is nonzero, on the vector subspace and on the whole algebra alike, since both the form and the squared vector form depend only on the vector part; the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\operatorname{Sc}(\tilde P\tilde Q)$ is not proportional to $\kappa$ on the whole algebra, because its scalar part $\langle e_0,e_0\rangle=1$ is nondegenerate while $\kappa$ kills the scalar direction.
+and the ratio of the two forms is the constant $2$. For the commutator reading of the previous section the constant is $4\cdot2=8$; the constant is thus a convention of the halving, and the combinatorial content — that two forms on the three-dimensional vector part are proportional — is the same. **The Killing form sees the vector part through the general plain bilinear form, and the centre is invisible to it.** The squared vector form gives the ratio $\kappa(\tilde Q,\tilde Q)/(\vec Q\cdot\vec Q)=-2$ wherever the vector part is nonzero, on the vector subspace and on the whole algebra alike, since both the form and the squared vector form depend only on the vector part; the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\operatorname{Sc}(\tilde P\tilde Q)$ is not proportional to $\kappa$ on the whole algebra, because its scalar part $\langle e_t,e_t\rangle=1$ is nondegenerate while $\kappa$ kills the scalar direction.
 
 ## Invariance and Symmetry
 
@@ -120,9 +120,9 @@ $$
 
 is the centre $\mathbb{C}_{\mathbb{B}}$, of complex dimension one and real dimension two. Hence $\kappa$ is degenerate, of complex rank $3$ and real rank $6$, and its restriction to the vector subspace is nondegenerate.
 
-*Proof.* By the formula $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$, the condition $\kappa(\tilde P,\tilde X)=0$ for all $\tilde X$ is $\vec P\cdot\vec X=0$ for all vectors $\vec X$, which forces $\vec P=0$, that is $\tilde P\in\mathbb{C}e_0=\mathbb{C}_{\mathbb{B}}$. On the vector subspace the form is a nonzero multiple of the scalar product, whose radical is zero, so the restriction is nondegenerate and the rank is the complex dimension three. Computed exactly on the basis and on general elements.
+*Proof.* By the formula $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$, the condition $\kappa(\tilde P,\tilde X)=0$ for all $\tilde X$ is $\vec P\cdot\vec X=0$ for all vectors $\vec X$, which forces $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$. On the vector subspace the form is a nonzero multiple of the scalar product, whose radical is zero, so the restriction is nondegenerate and the rank is the complex dimension three. Computed exactly on the basis and on general elements.
 
-**Corollary (the Killing data).** On the vector subspace the Gram matrix in the real basis $(e_1,e_2,e_3,ie_1,ie_2,ie_3)$ is $\operatorname{diag}(-2,-2,-2,2,2,2)$, of real signature $(3,3)$ and determinant $(-2)^3\cdot2^3=-64$; on the complex basis $(e_1,e_2,e_3)$ the Gram matrix is $-2\,\mathrm{I}_3$, of complex determinant $-8$. The form is negative on the real vector directions and positive on the imaginary ones, and it is degenerate.
+**Corollary (the Killing data).** On the vector subspace the Gram matrix in the real basis $(\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z)$ is $\operatorname{diag}(-2,-2,-2,2,2,2)$, of real signature $(3,3)$ and determinant $(-2)^3\cdot2^3=-64$; on the complex basis $(\vec e_x,\vec e_y,\vec e_z)$ the Gram matrix is $-2\,\mathrm{I}_3$, of complex determinant $-8$. The form is negative on the real vector directions and positive on the imaginary ones, and it is degenerate.
 
 **Remark.** **The degeneracy of the Killing form is the exact measure of the failure of semisimplicity of the block**: the radical is the centre, and the quotient by the radical is the derived algebra, which is simple. The form restricted to the remarkable subspaces is read next, and the two statements are consistent with the reading of the same decomposition through the ideals in *The Lie Algebra of the Antisymmetric Plain Algebra*.
 
@@ -144,56 +144,56 @@ The formula $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$ restricts to each 
 |---|---|---|---|---|
 | Centre $\mathbb{C}_{\mathbb{B}}$ | $2$ | $0$ | the whole subspace | $(0,0)$ |
 | Vector $\mathrm{Vect}(\mathbb{B})$ | $6$ | $-2\,\vec Q\cdot\vec Q$, $\vec Q$ complex | $0$ | $(3,3)$ |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $4$ | $-2\,(\vec Q\cdot\vec Q)$, $\vec Q$ real | $\mathbb{R}e_0$ | $(0,3)$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $2\,(\vec U\cdot\vec U)$, $\vec Q=i\vec U$ | $\mathbb{R}(ie_0)$ | $(3,0)$ |
-| Hermitian $\mathbb{M}_+$ | $4$ | $2\,(\vec U\cdot\vec U)$, $\vec Q=i\vec U$ | $\mathbb{R}e_0$ | $(3,0)$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $4$ | $-2\,(\vec Q\cdot\vec Q)$, $\vec Q$ real | $\mathbb{R}(ie_0)$ | $(0,3)$ |
+| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $4$ | $-2\,(\vec Q\cdot\vec Q)$, $\vec Q$ real | $\mathbb{R}e_t$ | $(0,3)$ |
+| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $2\,(\vec U\cdot\vec U)$, $\vec Q=i\vec U$ | $\mathbb{R}(ie_t)$ | $(3,0)$ |
+| Hermitian $\mathbb{M}_+$ | $4$ | $2\,(\vec U\cdot\vec U)$, $\vec Q=i\vec U$ | $\mathbb{R}e_t$ | $(3,0)$ |
+| Anti-Hermitian $\mathbb{M}_-$ | $4$ | $-2\,(\vec Q\cdot\vec Q)$, $\vec Q$ real | $\mathbb{R}(ie_t)$ | $(0,3)$ |
 
-*Proof.* Each row is the formula of the previous paragraph read on the real basis of the subspace, in which the scalar direction contributes zero and the three vector directions contribute the displayed signs. The radical of each restriction is the scalar direction of that subspace, since the form is zero there and of one sign on the vector triple; on the whole vector subspace no direction is radical because the complex scalar product is nondegenerate. The signatures are the counts of the signs; on the vector subspace the real basis $(e_1,e_2,e_3,ie_1,ie_2,ie_3)$ gives three negative and three positive entries. Computed exactly on each of the bases.
+*Proof.* Each row is the formula of the previous paragraph read on the real basis of the subspace, in which the scalar direction contributes zero and the three vector directions contribute the displayed signs. The radical of each restriction is the scalar direction of that subspace, since the form is zero there and of one sign on the vector triple; on the whole vector subspace no direction is radical because the complex scalar product is nondegenerate. The signatures are the counts of the signs; on the vector subspace the real basis $(\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z)$ gives three negative and three positive entries. Computed exactly on each of the bases.
 
 **Theorem (the isotropic elements).** An element $\tilde Q$ is isotropic, $\kappa(\tilde Q,\tilde Q)=0$, exactly when its vector part is isotropic for the complexified scalar product, $\vec Q\cdot\vec Q=0$, and the isotropic elements of the remarkable subspaces are the following. The centre is entirely isotropic. On the quaternion subspace and the anti-Hermitian subspace the isotropic elements are exactly the scalar direction, of real dimension one, because the vector part is real and a sum of three squares vanishes only at zero. On the anti-quaternion subspace and the Hermitian subspace the isotropic elements are again exactly the scalar direction, for the same reason applied to $\vec U$. On the vector subspace the isotropic elements form the complex null cone $\{\vec P\cdot\vec P=0\}$, of complex dimension two and real dimension four.
 
-*Proof.* The condition is $\vec Q\cdot\vec Q=0$ by the formula. On the four real subspaces the vector part is either real or purely imaginary, and in both cases $\vec Q\cdot\vec Q$ is a sum of three squares of real numbers for the real vectors $r_k$, whose vanishing forces $r_1=r_2=r_3=0$; only the scalar direction remains. On the vector subspace with $\vec P$ complex, the equation $P_1^2+P_2^2+P_3^2=0$ is one complex equation, a complex cone of complex dimension two, equivalently two real equations defining a real cone of dimension four. Computed on the basis and on general elements.
+*Proof.* The condition is $\vec Q\cdot\vec Q=0$ by the formula. On the four real subspaces the vector part is either real or purely imaginary, and in both cases $\vec Q\cdot\vec Q$ is a sum of three squares of real numbers for the real vectors $r_x,r_y,r_z$, whose vanishing forces $r_x=r_y=r_z=0$; only the scalar direction remains. On the vector subspace with $\vec P$ complex, the equation $P_x^2+P_y^2+P_z^2=0$ is one complex equation, a complex cone of complex dimension two, equivalently two real equations defining a real cone of dimension four. Computed on the basis and on general elements.
 
-**Remark.** **The isotropic elements of the block are the null cone of the vector subspace together with the scalar directions of the four real subspaces, and the centre, which is entirely isotropic.** The isotropic cone is not the zero-divisor cone of the algebra: on the quaternion subspace the zero-divisor condition is $\sum_\mu Q_\mu^2=0$ with all four squares, while the Killing isotropy is $\sum_{k=1}^3\vec Q_k^2=0$, and on the real quaternion subspace the second vanishes only at the origin while the first is the null cone of the quaternion form; the two cones are compared in *Remarkable Subspaces and the Four Forms* for the plain form, and the difference is the same here. The zero-divisors themselves are *Zero Divisors of the Biquaternion Algebra*, and the norms are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
+**Remark.** **The isotropic elements of the block are the null cone of the vector subspace together with the scalar directions of the four real subspaces, and the centre, which is entirely isotropic.** The isotropic cone is not the zero-divisor cone of the algebra: on the quaternion subspace the zero-divisor condition is $\sum_\mu Q_\mu^2=0$ with all four squares, while the Killing isotropy is $\sum_{k\in\{x,y,z\}}Q_k^2=0$, and on the real quaternion subspace the second vanishes only at the origin while the first is the null cone of the quaternion form; the two cones are compared in *Remarkable Subspaces and the Four Forms* for the plain form, and the difference is the same here. The zero-divisors themselves are *Zero Divisors of the Biquaternion Algebra*, and the norms are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
 ## The Casimir Element
 
-**Definition.** Let $(E_1,E_2,E_3)=(e_1,e_2,e_3)$ be the basis of the vector subspace and let $h^{ij}$ be the inverse of the Gram matrix $\kappa(E_i,E_j)=-2\delta_{ij}$, that is $h^{ij}=-\tfrac12\delta^{ij}$. The **Casimir element** of the block is
+**Definition.** Let $(E_1,E_2,E_3)=(\vec e_x,\vec e_y,\vec e_z)$ be the basis of the vector subspace and let $h^{ij}$ be the inverse of the Gram matrix $\kappa(E_i,E_j)=-2\delta_{ij}$, that is $h^{ij}=-\tfrac12\delta^{ij}$. The **Casimir element** of the block is
 
 $$
-\Omega=\sum_{i,j=1}^{3}h^{ij}E_iE_j=-\tfrac12\bigl(e_1^2+e_2^2+e_3^2\bigr)
+\Omega=\sum_{i,j=1}^{3}h^{ij}E_iE_j=-\tfrac12\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2\bigr)
 $$
 
 in the enveloping algebra of the derived algebra.
 
 **Theorem (the Casimir on the two-dimensional module and on the adjoint).** On the two-dimensional module of the model of *Introduction to the Symmetric Plain Algebra*, where the derived algebra acts by the halved matrices, the Casimir acts as the scalar $\tfrac38$; in the adjoint representation on the vector subspace it acts as the identity.
 
-*Proof.* The block's halved bracket corresponds in the model to the half-commutator, so the derived algebra acts on the two-dimensional space through $\tfrac12\mathsf{M}_2(e_k)=-\tfrac{i}{2}\sigma_k$: then $\bigl(\tfrac12\mathsf{M}_2(e_k)\bigr)^2=\tfrac14(-i\sigma_k)^2=-\tfrac14\mathrm{I}_2$, the sum of the three squares is $-\tfrac34\mathrm{I}_2$, and $\Omega=-\tfrac12\bigl(-\tfrac34\mathrm{I}_2\bigr)=\tfrac38\mathrm{I}_2$, the eigenvalue $\tfrac38$ of the two-dimensional module of $\mathfrak{sl}(2,\mathbb{C})$ fixed by the normalisation of the Killing form, as in *The Casimir Operator*; the reading with $\mathsf{M}_2$ itself, which does not carry the block's bracket, would give the fourfold value. In the adjoint representation the operator $\operatorname{ad}_{e_k}$ satisfies $\operatorname{ad}_{e_1}^2=\operatorname{diag}(-1,-1)$ on the plane orthogonal to $e_1$ and vanishes on $e_1$, and cyclically, so $\sum_k\operatorname{ad}_{e_k}^2=-2\,\mathrm{I}_3$ on the vector subspace; hence $\Omega=-\tfrac12(-2\,\mathrm{I}_3)=\mathrm{I}_3$. Computed exactly over $\mathbb{Q}(i)$.
+*Proof.* The block's halved bracket corresponds in the model to the half-commutator, so the derived algebra acts on the two-dimensional space through $\tfrac12\mathsf{M}_2(\vec e_\mu)=-\tfrac{i}{2}\sigma_\mu$: then $\bigl(\tfrac12\mathsf{M}_2(\vec e_\mu)\bigr)^2=\tfrac14(-i\sigma_\mu)^2=-\tfrac14\mathrm{I}_2$, the sum of the three squares is $-\tfrac34\mathrm{I}_2$, and $\Omega=-\tfrac12\bigl(-\tfrac34\mathrm{I}_2\bigr)=\tfrac38\mathrm{I}_2$, the eigenvalue $\tfrac38$ of the two-dimensional module of $\mathfrak{sl}(2,\mathbb{C})$ fixed by the normalisation of the Killing form, as in *The Casimir Operator*; the reading with $\mathsf{M}_2$ itself, which does not carry the block's bracket, would give the fourfold value. In the adjoint representation the operator $\operatorname{ad}_{\vec e_\mu}$ satisfies $\operatorname{ad}_{\vec e_x}^2=\operatorname{diag}(-1,-1)$ on the plane orthogonal to $\vec e_x$ and vanishes on $\vec e_x$, and cyclically, so $\sum_{\mu\in\{x,y,z\}}\operatorname{ad}_{\vec e_\mu}^2=-2\,\mathrm{I}_3$ on the vector subspace; hence $\Omega=-\tfrac12(-2\,\mathrm{I}_3)=\mathrm{I}_3$. Computed exactly over $\mathbb{Q}(i)$.
 
-**Remark (the central generator).** The Casimir is the quadratic central element of $U(\mathfrak{sl}(2,\mathbb{C}))$, and with the central generator $z$ of the enveloping algebra of *The Lie Algebra of the Antisymmetric Plain Algebra* it generates the centre of $U(\mathfrak{g})$. **The element is one and the same in the two representations in which it was read, the two-dimensional module and the adjoint, where it acts as the scalars $\tfrac38$ and $1$ fixed by the normalisation of the Killing form.** The general theory of the element, of its centrality and of its role in the representation theory is *The Casimir Operator*.
+**Remark (the central generator).** The Casimir is the quadratic central element of $\mathrm{U}(\mathfrak{sl}(2,\mathbb{C}))$, and with the central generator $z$ of the enveloping algebra of *The Lie Algebra of the Antisymmetric Plain Algebra* it generates the centre of $\mathrm{U}(\mathfrak{g})$. **The element is one and the same in the two representations in which it was read, the two-dimensional module and the adjoint, where it acts as the scalars $\tfrac38$ and $1$ fixed by the normalisation of the Killing form.** The general theory of the element, of its centrality and of its role in the representation theory is *The Casimir Operator*.
 
 ## Worked Examples
 
-**The central element.** For $\tilde P=e_0$ the adjoint is zero, so $\kappa(e_0,\tilde Q)=0$ for every $\tilde Q$: the unit is in the radical.
+**The central element.** For $\tilde P=e_t$ the adjoint is zero, so $\kappa(e_t,\tilde Q)=0$ for every $\tilde Q$: the unit is in the radical.
 
-**A vector against a vector.** $\kappa(e_1,e_2)=0$ and $\kappa(e_1,e_1)=-2$: the form is diagonal on the vector basis, as the Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ records.
+**A vector against a vector.** $\kappa(\vec e_x,\vec e_y)=0$ and $\kappa(\vec e_x,\vec e_x)=-2$: the form is diagonal on the vector basis, as the Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ records.
 
-**A complex direction.** $\kappa(ie_1,ie_1)=-2\,(i)(i)=-2\cdot(-1)=2$: the imaginary vector directions are positive for the form, which is the signature $(3,3)$ of the vector subspace.
+**A complex direction.** $\kappa(i\vec e_x,i\vec e_x)=-2\,(i)(i)=-2\cdot(-1)=2$: the imaginary vector directions are positive for the form, which is the signature $(3,3)$ of the vector subspace.
 
-**A scalar part that does not enter.** $\tilde P=e_0+ie_0$, $\tilde Q=e_0+ie_0$ give $\kappa(\tilde P,\tilde Q)=0$; the two central coordinates are invisible to the form, and the whole centre is the radical.
+**A scalar part that does not enter.** $\tilde P=e_t+ie_t$, $\tilde Q=e_t+ie_t$ give $\kappa(\tilde P,\tilde Q)=0$; the two central coordinates are invisible to the form, and the whole centre is the radical.
 
-**The quaternion real form.** On $\mathbb{H}_{\mathbb{B}}$ the form is $\kappa(\tilde Q,\tilde Q)=-2(q_1^2+q_2^2+q_3^2)$, of signature $(0,3)$, with radical $\mathbb{R}e_0$: the negative semidefinite row of the table, and the zero direction is the scalar one.
+**The quaternion real form.** On $\mathbb{H}_{\mathbb{B}}$ the form is $\kappa(\tilde Q,\tilde Q)=-2(q_x^2+q_y^2+q_z^2)$, of signature $(0,3)$, with radical $\mathbb{R}e_t$: the negative semidefinite row of the table, and the zero direction is the scalar one.
 
-**The Hermitian real form.** On $\mathbb{M}_+$ with $\tilde Q=q_0e_0+q'_1ie_1+q'_2ie_2+q'_3ie_3$ the form is $\kappa(\tilde Q,\tilde Q)=2((q'_1)^2+(q'_2)^2+(q'_3)^2)$: positive semidefinite, with radical $\mathbb{R}e_0$ and no other isotropic element.
+**The Hermitian real form.** On $\mathbb{M}_+$ with $\tilde Q=q_te_t+q'_xi\vec e_x+q'_yi\vec e_y+q'_zi\vec e_z$ the form is $\kappa(\tilde Q,\tilde Q)=2((q'_x)^2+(q'_y)^2+(q'_z)^2)$: positive semidefinite, with radical $\mathbb{R}e_t$ and no other isotropic element.
 
-**The vector null cone.** On the vector subspace the element $\tilde Q=e_1+ie_1$ satisfies $\kappa(\tilde Q,\tilde Q)=-2(1+i^2)=0$: it is a nonzero isotropic element, and the complex cone it generates has real dimension four.
+**The vector null cone.** On the vector subspace the element $\tilde Q=\vec e_x+i\vec e_x$ satisfies $\kappa(\tilde Q,\tilde Q)=-2(1+i^2)=0$: it is a nonzero isotropic element, and the complex cone it generates has real dimension four.
 
 **The Casimir on the adjoint.** The eigenvalues of $\Omega$ on the three vector directions are all $1$, and on the two-dimensional module the scalar is $\tfrac38$: the two readings of the theorem, and the two constants by which the invariant form controls the representation theory of the block.
 
 ## Summary
 
-The Killing form of the antisymmetric plain algebra is $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})$, equal on general elements to $-2\,\vec P\cdot\vec Q$, with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ in the basis of the units; it is symmetric and invariant, and it kills the scalar part. Its radical is the centre $\mathbb{C}_{\mathbb{B}}$, so the form is degenerate of complex rank three and real rank six; restricted to the vector subspace it is nondegenerate, of real signature $(3,3)$, and proportional to the general plain bilinear form there with the single constant $2$. The Cartan criteria read on it give: the algebra is not semisimple, its radical is the centre, and its quotient and its derived algebra are the simple $\mathfrak{sl}(2,\mathbb{C})$. On the remarkable subspaces the restrictions are the zero form on the centre, the signature $(3,3)$ form on the vector subspace, and the semidefinite forms of signatures $(0,3)$, $(3,0)$, $(3,0)$ and $(0,3)$ on the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces, of radicals the respective scalar directions; the isotropic elements are the complex null cone on the vector subspace and the scalar directions elsewhere. The Casimir element $\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ acts as $\tfrac38$ on the two-dimensional module and as the identity on the adjoint, and it is the quadratic central generator of the enveloping algebra.
+The Killing form of the antisymmetric plain algebra is $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})$, equal on general elements to $-2\,\vec P\cdot\vec Q$, with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ in the basis of the units; it is symmetric and invariant, and it kills the scalar part. Its radical is the centre $\mathbb{C}_{\mathbb{B}}$, so the form is degenerate of complex rank three and real rank six; restricted to the vector subspace it is nondegenerate, of real signature $(3,3)$, and proportional to the general plain bilinear form there with the single constant $2$. The Cartan criteria read on it give: the algebra is not semisimple, its radical is the centre, and its quotient and its derived algebra are the simple $\mathfrak{sl}(2,\mathbb{C})$. On the remarkable subspaces the restrictions are the zero form on the centre, the signature $(3,3)$ form on the vector subspace, and the semidefinite forms of signatures $(0,3)$, $(3,0)$, $(3,0)$ and $(0,3)$ on the quaternion, anti-quaternion, Hermitian and anti-Hermitian subspaces, of radicals the respective scalar directions; the isotropic elements are the complex null cone on the vector subspace and the scalar directions elsewhere. The Casimir element $\Omega=-\tfrac12(\vec e_x^2+\vec e_y^2+\vec e_z^2)$ acts as $\tfrac38$ on the two-dimensional module and as the identity on the adjoint, and it is the quadratic central generator of the enveloping algebra.
 
 ## Summary of Notation
 
@@ -202,11 +202,11 @@ The Killing form of the antisymmetric plain algebra is $\kappa(\tilde P,\tilde Q
 | $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X=\vec P\times\vec X$ | the adjoint of the bracket, the cross product of the vector part (written $\operatorname{ad}^{\wedge}_{\tilde P}$ in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, where the block's adjoint $[\tilde P,\cdot\,]$ is twice it) |
 | $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})$ | the Killing form of the block |
 | $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$ | the form on general elements |
-| $\operatorname{diag}(0,-2,-2,-2)$ | its Gram matrix in the basis $(e_0,e_1,e_2,e_3)$ |
+| $\operatorname{diag}(0,-2,-2,-2)$ | its Gram matrix in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |
 | $\kappa=2\,\langle\cdot,\cdot\rangle$ on $\mathrm{Vect}(\mathbb{B})$ | the single constant relating it to the general plain bilinear form |
-| $\operatorname{rad}\kappa=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the radical, the centre; the form is degenerate |
+| $\operatorname{rad}\kappa=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the radical, the centre; the form is degenerate |
 | rank $3$ complex, $6$ real; signature $(3,3)$ on $\mathrm{Vect}(\mathbb{B})$ | the Killing data |
-| $\Omega=-\tfrac12(e_1^2+e_2^2+e_3^2)$ | the Casimir element of the derived algebra |
+| $\Omega=-\tfrac12(\vec e_x^2+\vec e_y^2+\vec e_z^2)$ | the Casimir element of the derived algebra |
 | $\Omega=\tfrac38$ on the two-dimensional module, $\Omega=\mathrm{I}_3$ on the adjoint | the two readings of the Casimir |
 
 ## Further Reading

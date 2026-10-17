@@ -55,7 +55,7 @@ the **sign rule** of the graded adjoint; the parity of the adjoint is the parity
 
 ### Invariance and the Unitary Operators
 
-**Proposition.** If the graded form is invariant under the graded action, then every $\rho(g)$ is a graded isometry and its graded adjoint is its inverse, $\rho(g)^{*} = \rho(g)^{-1}$, with the parity of the inverse equal to the parity of $g$; the graded adjoint of an even element is even, and of an odd element is odd. The graded isometries form the **graded unitary group** of the module, $U(M,B) = \{T : T^{*}T = \operatorname{id}\}$ in the graded sense.
+**Proposition.** If the graded form is invariant under the graded action, then every $\rho(g)$ is a graded isometry and its graded adjoint is its inverse, $\rho(g)^{*} = \rho(g)^{-1}$, with the parity of the inverse equal to the parity of $g$; the graded adjoint of an even element is even, and of an odd element is odd. The graded isometries form the **graded unitary group** of the module, $\mathrm{U}(M,B) = \{T : T^{*}T = \operatorname{id}\}$ in the graded sense.
 
 **Proof.** The invariance $B(\rho(g)x,\rho(g)y) = B(x,y)$ gives $\rho(g)^{*}\rho(g) = \operatorname{id}$ with the sign convention of the graded adjoint, hence $\rho(g)^{*} = \rho(g)^{-1}$; the parity statement is that the inverse of a homogeneous element has the same parity, and the defining relation of the graded form forces the adjoint to have the parity of the operator.
 
@@ -119,7 +119,7 @@ A graded module $M = M_0\oplus M_1$ over a graded group carries a graded action,
 | $[T,S\} = TS - (-1)^{\lvert T\rvert\lvert S\rvert}ST$ | the graded commutator; the Koszul sign |
 | $B(x,y) = (-1)^{\lvert x\rvert\lvert y\rvert}B(y,x)$ | the graded symmetry of the form |
 | $T^{*}$ with $(ST)^{*} = (-1)^{\lvert S\rvert\lvert T\rvert}T^{*}S^{*}$ | the graded adjoint; the sign rule |
-| $U(M,B)$ | the graded unitary group of the module |
+| $\mathrm{U}(M,B)$ | the graded unitary group of the module |
 | $\operatorname{Ad}_g(T) = \rho(g)T\rho(g)^{-1}$ | the adjoint action on the endomorphisms |
 | $(\operatorname{Ad}_g)^{*} = \operatorname{Ad}_{g^{-1}}$ | the adjoint of the adjoint action (for $g$ even) |
 | $\operatorname{str}(T) = \operatorname{tr}(T|_{M_0}) - \operatorname{tr}(T|_{M_1})$ | the supertrace; the graded trace form |

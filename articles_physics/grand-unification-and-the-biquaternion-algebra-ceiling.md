@@ -5,13 +5,13 @@
 Grand unification is the programme of embedding the Standard-Model gauge group
 
 $$
-G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times U(1)_Y
+G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y
 $$
 
 into a single simple group $G_{\mathrm{GUT}}$, so that the three independent couplings become one at a high scale and the electric charge is quantised by the group's structure. The standard candidates are Georgi–Glashow $SU(5)$, Pati–Salam $SU(4)\times SU(2)_L\times SU(2)_R$, $SO(10)$ and $E_6$, with characteristic ranks and dimensions:
 
 
-|  | $SU(3)\times SU(2)\times U(1)$ | $SU(5)$ | $SO(10)$ | $E_6$ |
+|  | $SU(3)\times SU(2)\times \mathrm{U}(1)$ | $SU(5)$ | $SO(10)$ | $E_6$ |
 |---|---|---|---|---|
 | $\text{rank}$ | $2+1+1=4$ | $4$ | $5$ | $6$ |
 | $\text{dimension}$ | $8+3+1=12$ | $24$ | $45$ | $78$ |
@@ -20,18 +20,18 @@ into a single simple group $G_{\mathrm{GUT}}$, so that the three independent cou
 The preceding article of this group, *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, proved that the biquaternion algebra's intrinsic compact gauge structure is
 
 $$
-\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_0,e_1,e_2,e_3\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
+\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),
 \qquad
 \text{rank}=2,
 \qquad
 \dim_{\mathbb R}=4 .
 $$
 
-This article draws the consequence for unification. The conclusion is a sharp structural statement: **the framework unifies the electroweak and abelian factors, because those are exactly the $U(2)$ that the algebra carries, and it cannot unify them with colour, because $SU(3)_c$ is not inside the algebra and no grand-unified group containing it has rank at most two.** Grand unification in the strict sense is outside the algebra's reach. It is reachable only by enlarging the carrier, and every enlargement pays in canonicity and in unwanted structure. As in the companion ceiling article, this is a result about the framework and not a failure of effort.
+This article draws the consequence for unification. The conclusion is a sharp structural statement: **the framework unifies the electroweak and abelian factors, because those are exactly the $\mathrm{U}(2)$ that the algebra carries, and it cannot unify them with colour, because $SU(3)_c$ is not inside the algebra and no grand-unified group containing it has rank at most two.** Grand unification in the strict sense is outside the algebra's reach. It is reachable only by enlarging the carrier, and every enlargement pays in canonicity and in unwanted structure. As in the companion ceiling article, this is a result about the framework and not a failure of effort.
 
 The article first sets the threshold that any unified group must clear, then locates the framework's reach below it, then shows what the enlargement to $M_n(\mathbb B)$ would cost, and finally states what the framework's unification actually is: electroweak, with the strong sector present only through its gauge-invariant composites.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$, the compact sector is $\mathbb M_-=\mathrm{U}(2)$ with generators $T_a=\tfrac12e_a$ and $T_0=\tfrac12ie_0$, and the defining module is $S\cong\mathbb C^2$. The Standard-Model group is written $SU(3)_c\times SU(2)_L\times U(1)_Y$ with $Y$ the weak hypercharge, and the electric charge is $Ϙ=T_3+Y$ in the normalisation of the electroweak article. The enlargement carries $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ with compact part $\mathrm{U}(2n)$. The trace is the matrix trace on the defining module, distinguished from the informational trace $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$.
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$, the compact sector is $\mathbb M_-=\mathrm{U}(2)$ with generators $T_a=\tfrac12e_a$ and $T_0=\tfrac12ie_t$, and the defining module is $S\cong\mathbb C^2$. The Standard-Model group is written $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ with $Y$ the weak hypercharge, and the electric charge is $Ϙ=T_3+Y$ in the normalisation of the electroweak article. The enlargement carries $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$ with compact part $\mathrm{U}(2n)$. The trace is the matrix trace on the defining module, distinguished from the informational trace $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$.
 
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the programme this article constrains.
 - Companion article *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, for the unification of the electroweak and abelian factors.
@@ -57,15 +57,15 @@ so a unified group has at least twelve generators. The standard candidates clear
 
 Two further requirements are structural rather than numerical. First, the unified group must contain $SU(3)_c$ as a subgroup, because colour is a subgroup of $G_{\mathrm{SM}}$ and containment is transitive. Second, the fermions of a generation must fit into representations of $G_{\mathrm{GUT}}$ that reduce correctly under $G_{\mathrm{SM}}$ — the $\bar{\mathbf 5}\oplus\mathbf{10}$ of $SU(5)$, the $\mathbf{16}$ of $SO(10)$, the $\mathbf{27}$ of $E_6$ — so the unified group must have the right representation content, not merely the right size. These two requirements are the substantive ones: a group of rank $4$ and dimension $12$ that failed to contain $SU(3)$ would still not unify the Standard Model.
 
-**The framework against the threshold.** The algebra's intrinsic group is $U(2)$, with
+**The framework against the threshold.** The algebra's intrinsic group is $\mathrm{U}(2)$, with
 
 $$
-\mathrm{rank}\,U(2)=2<4,
+\mathrm{rank}\,\mathrm{U}(2)=2<4,
 \qquad
-\dim_{\mathbb R}U(2)=4<12 .
+\dim_{\mathbb R}\mathrm{U}(2)=4<12 .
 $$
 
-It fails both numerical conditions, and it fails the structural one: $U(2)$ does not contain $SU(3)_c$, by the dimension argument of *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, since $\dim\mathrm{SU}(3)=8>4=\dim\mathrm{U}(2)$. The framework is therefore below the grand-unification threshold on every count. No group of rank two and dimension four can contain the Standard-Model group, and the algebra supplies no larger intrinsic group.
+It fails both numerical conditions, and it fails the structural one: $\mathrm{U}(2)$ does not contain $SU(3)_c$, by the dimension argument of *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, since $\dim\mathrm{SU}(3)=8>4=\dim\mathrm{U}(2)$. The framework is therefore below the grand-unification threshold on every count. No group of rank two and dimension four can contain the Standard-Model group, and the algebra supplies no larger intrinsic group.
 
 ## The Framework's Own Unification: Electroweak and Abelian
 
@@ -82,10 +82,10 @@ and the two summands are the algebra's non-abelian and abelian gauge algebras. A
 $$
 \mathcal A_\mu=\mathcal A_\mu^aT_a+\mathcal A_\mu^0T_0 ,
 \qquad
-T_a=\tfrac12e_a,\quad T_0=\tfrac12ie_0 ,
+T_a=\tfrac12e_a,\quad T_0=\tfrac12ie_t ,
 $$
 
-so the field content is automatically that of an $SU(2)\times U(1)$ gauge theory: a triplet and a singlet, the $W$ fields and the $B$ field of the electroweak sector. This is the content of the companion research agenda *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, and it is the framework's unification: the two factors that the Standard Model keeps separate are the two summands of the single compact algebra $\mathrm{U}(2)$, both generated by the algebra's own elements.
+so the field content is automatically that of an $SU(2)\times \mathrm{U}(1)$ gauge theory: a triplet and a singlet, the $W$ fields and the $B$ field of the electroweak sector. This is the content of the companion research agenda *Electroweak Theory under the Biquaternion Framework — A Research Agenda*, and it is the framework's unification: the two factors that the Standard Model keeps separate are the two summands of the single compact algebra $\mathrm{U}(2)$, both generated by the algebra's own elements.
 
 The sense in which this is a unification is precise and limited. It is a unification in the sense that the two gauge potentials are coefficients of one algebra-valued field, and that the generators close in one Lie algebra,
 
@@ -97,7 +97,7 @@ $$
 
 with $T_0$ central. It is **not** a unification in the sense that the two couplings become one: a central generator can carry its own independent coupling, and the algebra does not identify the $\mathrm{SU}(2)$ and $\mathrm{U}(1)$ couplings. The two couplings remain separate parameters of the framework, exactly as the algebra's centre is a separate summand. Unification in the strong sense — one coupling, one simple group — is what grand unification adds, and it is what the ceiling forbids.
 
-**Hypercharge and electric charge.** A consequence that the ceiling fixes is the status of charge quantisation. In a grand-unified theory the hypercharge is a generator of the simple group, and its eigenvalues are therefore quantised by the group's representation theory; the electric charge of every particle is an integer multiple of a basic unit because $Ϙ$ lies in a simple group. In the framework the abelian factor is the centre $\mathbb C_{\mathbb B}$, whose unitary part $U(1)$ has a **continuous** charge; the framework does not, by itself, quantise the hypercharge. Quantisation must be imposed from outside: either by the Dirac condition in the presence of a magnetic charge, as *The Magnetic Monopole in Biquaternionic Form* and *The 't Hooft–Polyakov Monopole in Biquaternionic Form* show, or by embedding the abelian factor into the non-abelian one, which the algebra permits but does not require. The framework therefore *accommodates* charge quantisation but does not *explain* it in the way a simple unified group does. This is a genuine structural difference, and it is the same fact as the non-simplicity of $\mathrm{U}(2)$ read as a statement about charges.
+**Hypercharge and electric charge.** A consequence that the ceiling fixes is the status of charge quantisation. In a grand-unified theory the hypercharge is a generator of the simple group, and its eigenvalues are therefore quantised by the group's representation theory; the electric charge of every particle is an integer multiple of a basic unit because $Ϙ$ lies in a simple group. In the framework the abelian factor is the centre $\mathbb C_{\mathbb B}$, whose unitary part $\mathrm{U}(1)$ has a **continuous** charge; the framework does not, by itself, quantise the hypercharge. Quantisation must be imposed from outside: either by the Dirac condition in the presence of a magnetic charge, as *The Magnetic Monopole in Biquaternionic Form* and *The 't Hooft–Polyakov Monopole in Biquaternionic Form* show, or by embedding the abelian factor into the non-abelian one, which the algebra permits but does not require. The framework therefore *accommodates* charge quantisation but does not *explain* it in the way a simple unified group does. This is a genuine structural difference, and it is the same fact as the non-simplicity of $\mathrm{U}(2)$ read as a statement about charges.
 
 ## What a Biquaternionic Grand Unification Would Require
 
@@ -113,25 +113,25 @@ M_n(\mathbb B)\cong M_{2n}(\mathbb C),
 \mathrm{rank}=2n .
 $$
 
-The numerical threshold requires rank at least four and dimension at least twelve, and both are met for $n\ge2$: $\mathrm{U}(4)$ has rank $4$ and dimension $16$. The numerical threshold is necessary but not sufficient, because the unified group must also contain the Standard-Model group as a subgroup, and containment is a statement about representations as well as dimensions. The carrier $\mathbb C^{2n}$ must contain a faithful representation of the group being embedded, so $2n$ must be at least the dimension of the smallest faithful representation. This gives a higher floor than the numerical one: $SU(3)$ alone fits in $U(4)$, since $\mathbf 3\oplus\mathbf 1=\mathbf 4$; the Standard-Model group fits in $U(6)$, since $\mathbf 3\otimes\mathbf 2=\mathbf 6$; and the standard unified groups fit for larger $n$,
+The numerical threshold requires rank at least four and dimension at least twelve, and both are met for $n\ge2$: $\mathrm{U}(4)$ has rank $4$ and dimension $16$. The numerical threshold is necessary but not sufficient, because the unified group must also contain the Standard-Model group as a subgroup, and containment is a statement about representations as well as dimensions. The carrier $\mathbb C^{2n}$ must contain a faithful representation of the group being embedded, so $2n$ must be at least the dimension of the smallest faithful representation. This gives a higher floor than the numerical one: $SU(3)$ alone fits in $\mathrm{U}(4)$, since $\mathbf 3\oplus\mathbf 1=\mathbf 4$; the Standard-Model group fits in $\mathrm{U}(6)$, since $\mathbf 3\otimes\mathbf 2=\mathbf 6$; and the standard unified groups fit for larger $n$,
 
 $$
-SU(5)\subset U(6)\ (n=3),
+SU(5)\subset \mathrm{U}(6)\ (n=3),
 \qquad
-SO(10)\subset U(10)\ (n=5),
+SO(10)\subset \mathrm{U}(10)\ (n=5),
 \qquad
-E_6\subset U(28)\ (n=14),
+E_6\subset \mathrm{U}(28)\ (n=14),
 \qquad
-E_7\subset U(56)\ (n=28),
+E_7\subset \mathrm{U}(56)\ (n=28),
 \qquad
-E_8\subset U(248)\ (n=124),
+E_8\subset \mathrm{U}(248)\ (n=124),
 $$
 
 where the embedding is the obvious one through the defining representation of the unified group and the identification $\mathbb C^{2n}$ as the carrier. The defining representation here is the spinor $\mathbf{16}$ for $SO(10)$ and the fundamental $\mathbf{27}$ for $E_6$; for $E_7$ it is the fundamental $\mathbf{56}$, and for $E_8$, which has no nontrivial representation smaller than its adjoint, it is the adjoint $\mathbf{248}$ itself. Three costs are attached to every one of these.
 
-- **The group is no longer the algebra's own.** The intrinsic group of $M_n(\mathbb B)$ is $U(2n)$, not $SU(5)$; the unified group appears only as a subgroup of the unitaries, so its selection is an extra input and not a consequence of the algebra. The framework supplies $\mathrm{U}(2)$ canonically and $\mathrm{U}(2n)$ after enlargement, but never a simple GUT group as its own.
-- **Unwanted commuting factors.** $U(2n)$ is locally $SU(2n)\times U(1)$, the two meeting in a $\mathbb Z_{2n}$, and $SU(5)$ sits inside $SU(6)\subset U(6)$ with the commutant $U(1)\times U(1)$ of the split $\mathbb C^6=\mathbf 5\oplus\mathbf 1$, together with further broken generators; the determinant $U(1)$ of the enlarged unitaries is present as well. These must be removed by a mechanism outside the algebra, or they appear as extra gauge bosons. The enlargement therefore brings baggage that the algebra cannot discard.
-- **The carrier doubles the module dimension.** The defining module of $M_n(\mathbb B)$ has complex dimension $2n$, which is even; a unified group with an odd-dimensional defining representation, such as $SU(5)$ with its $\mathbf 5$, cannot act irreducibly on it, so the fermions must be placed in reducible combinations. The cost is milder than the colour obstruction was: it is an extra singlet rather than an impossibility, since $\mathbf 5\oplus\mathbf 1=\mathbb C^6$ has even dimension and $SU(5)\subset U(6)$ with $n=3$, while the full generation $\bar{\mathbf 5}\oplus\mathbf{10}$ needs $\mathbb C^{15}$ and so fits only in $\mathbb C^{16}=2n$ with $n=8$, i.e. in $M_8(\mathbb B)$, and then with a further singlet. The module structure of the algebra therefore rules out the economical unified embeddings rather than the existence of an embedding at all.
+- **The group is no longer the algebra's own.** The intrinsic group of $M_n(\mathbb B)$ is $\mathrm{U}(2n)$, not $SU(5)$; the unified group appears only as a subgroup of the unitaries, so its selection is an extra input and not a consequence of the algebra. The framework supplies $\mathrm{U}(2)$ canonically and $\mathrm{U}(2n)$ after enlargement, but never a simple GUT group as its own.
+- **Unwanted commuting factors.** $\mathrm{U}(2n)$ is locally $SU(2n)\times \mathrm{U}(1)$, the two meeting in a $\mathbb Z_{2n}$, and $SU(5)$ sits inside $SU(6)\subset \mathrm{U}(6)$ with the commutant $\mathrm{U}(1)\times \mathrm{U}(1)$ of the split $\mathbb C^6=\mathbf 5\oplus\mathbf 1$, together with further broken generators; the determinant $\mathrm{U}(1)$ of the enlarged unitaries is present as well. These must be removed by a mechanism outside the algebra, or they appear as extra gauge bosons. The enlargement therefore brings baggage that the algebra cannot discard.
+- **The carrier doubles the module dimension.** The defining module of $M_n(\mathbb B)$ has complex dimension $2n$, which is even; a unified group with an odd-dimensional defining representation, such as $SU(5)$ with its $\mathbf 5$, cannot act irreducibly on it, so the fermions must be placed in reducible combinations. The cost is milder than the colour obstruction was: it is an extra singlet rather than an impossibility, since $\mathbf 5\oplus\mathbf 1=\mathbb C^6$ has even dimension and $SU(5)\subset \mathrm{U}(6)$ with $n=3$, while the full generation $\bar{\mathbf 5}\oplus\mathbf{10}$ needs $\mathbb C^{15}$ and so fits only in $\mathbb C^{16}=2n$ with $n=8$, i.e. in $M_8(\mathbb B)$, and then with a further singlet. The module structure of the algebra therefore rules out the economical unified embeddings rather than the existence of an embedding at all.
 
 **Proton decay and the scale.** A unified theory predicts baryon-number violation and proton decay, at a rate set by the unification scale $M_X$ and the unified coupling. The framework, having no simple group and no unified coupling of its own, cannot predict $M_X$; the running of the three couplings and their meeting point are standard quantum field theory, governed by the renormalisation group of the companion article *The Renormalization Group in Biquaternionic Form*, and the framework's role is limited to supplying the gauge fields between which the couplings run. The grand-unification scale is therefore an import, and the framework cannot use proton decay to constrain itself.
 
@@ -147,7 +147,7 @@ $$
 \dim_{\mathbb C}=5+10=15 ,
 $$
 
-which branches under $SU(3)_c\times SU(2)_L\times U(1)_Y$ as
+which branches under $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ as
 
 $$
 \bar{\mathbf 5}=(\bar{\mathbf 3},\mathbf 1)_{+1/3}\oplus(\mathbf 1,\mathbf 2)_{-1/2},
@@ -165,7 +165,7 @@ $$
 
 The hypercharge of the $SU(5)$ embedding is one of the generators of the group, its eigenvalues fixed by the tracelessness of the generator within the five-dimensional representation; the electric charges come out in the observed integer ratios because $Ϙ$ lies in the simple group. This is the sense in which $SU(5)$ *explains* charge quantisation, and it is exactly what the framework cannot reproduce, because its abelian generator is central and its eigenvalue is a continuous label.
 
-Now place a generation in the enlarged carrier $\mathbb C^{2n}$ of $M_n(\mathbb B)$. The representation must be a direct sum of modules of $SU(5)$ plus singlets, and its total complex dimension must be even because $2n$ is even. The generation has dimension $15$, which is odd, so at least one singlet must be added, giving the $\bar{\mathbf 5}\oplus\mathbf{10}\oplus\mathbf 1$ of dimension $16$; the smallest even carrier into which a generation fits is therefore $\mathbb C^{16}$, which is $2n=16$, i.e. $n=8$ and the carrier $M_8(\mathbb B)\cong M_{16}(\mathbb C)$ with intrinsic group $U(16)$. The $\mathbf{16}$ of $SO(10)$ fits the same way, and the $E_6$ $\mathbf{27}$ needs $\mathbb C^{28}$ and $n=14$. The even-dimension property of $\mathbb B$-modules therefore doubles the minimal carrier for the odd-dimensional unified representations and adds a spurious singlet: the framework cannot house a generation economically even after enlargement.
+Now place a generation in the enlarged carrier $\mathbb C^{2n}$ of $M_n(\mathbb B)$. The representation must be a direct sum of modules of $SU(5)$ plus singlets, and its total complex dimension must be even because $2n$ is even. The generation has dimension $15$, which is odd, so at least one singlet must be added, giving the $\bar{\mathbf 5}\oplus\mathbf{10}\oplus\mathbf 1$ of dimension $16$; the smallest even carrier into which a generation fits is therefore $\mathbb C^{16}$, which is $2n=16$, i.e. $n=8$ and the carrier $M_8(\mathbb B)\cong M_{16}(\mathbb C)$ with intrinsic group $\mathrm{U}(16)$. The $\mathbf{16}$ of $SO(10)$ fits the same way, and the $E_6$ $\mathbf{27}$ needs $\mathbb C^{28}$ and $n=14$. The even-dimension property of $\mathbb B$-modules therefore doubles the minimal carrier for the odd-dimensional unified representations and adds a spurious singlet: the framework cannot house a generation economically even after enlargement.
 
 **Alternative unifications and the rank ladder.** The non-simple alternatives do no better. The Pati–Salam group
 
@@ -176,13 +176,13 @@ $$
 has rank $3+1+1=5$ and dimension $15+3+3=21$, and it contains the Standard-Model group with $B-L$ as the diagonal of $SU(4)$; the left–right group
 
 $$
-SU(3)_c\times SU(2)_L\times SU(2)_R\times U(1)_{B-L}
+SU(3)_c\times SU(2)_L\times SU(2)_R\times \mathrm{U}(1)_{B-L}
 $$
 
 has rank $2+1+1+1=5$ and dimension $8+3+3+1=15$. Both are above the framework's rank $2$. The rank ladder is
 
 $$
-\underbrace{2}_{U(2),\ \text{framework}}<
+\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}<
 \underbrace{4}_{G_{\mathrm{SM}},\ SU(5)}<
 \underbrace{5}_{SO(10),\ \text{Pati–Salam},\ \text{left–right}}<
 \underbrace{6}_{E_6}<\underbrace{7}_{E_7}<\underbrace{8}_{E_8}<\underbrace{16}_{E_8\times E_8} ,
@@ -196,7 +196,7 @@ The ladder continues past $E_6$ through the exceptional groups, and the two top 
 
 Three consequences for the framework.
 
-- **The carrier cost grows without bound.** The economical generation already needs $\mathbb C^{16}$ at minimum because of the even-dimension property, and the exceptional rungs raise the requirement to $\mathbb C^{56}$, $\mathbb C^{248}$ and $\mathbb C^{496}$: the enlargement of the carrier that these groups would require is of a different order from the enlargement that the $SU(5)$ and $SO(10)$ rungs require, and it is still an enlargement by hand, since $M_n(\mathbb B)$ supplies $U(2n)$ and not $E_7$ or $E_8$.
+- **The carrier cost grows without bound.** The economical generation already needs $\mathbb C^{16}$ at minimum because of the even-dimension property, and the exceptional rungs raise the requirement to $\mathbb C^{56}$, $\mathbb C^{248}$ and $\mathbb C^{496}$: the enlargement of the carrier that these groups would require is of a different order from the enlargement that the $SU(5)$ and $SO(10)$ rungs require, and it is still an enlargement by hand, since $M_n(\mathbb B)$ supplies $\mathrm{U}(2n)$ and not $E_7$ or $E_8$.
 - **The three-$SU(3)$ pattern of trinification is inside the smallest exceptional rung.** The group $E_6$ contains $SU(3)\times SU(3)\times SU(3)$ with the branching $\mathbf{27}=(\mathbf 3,\bar{\mathbf 3},\mathbf 1)\oplus(\mathbf 1,\mathbf 3,\bar{\mathbf 3})\oplus(\bar{\mathbf 3},\mathbf 1,\mathbf 3)$; this is the one standard unified scheme in which all three factors have the dimension and rank of a colour group, and it is the reason the rank of $E_6$ is twice the rank of $SU(3)$. The chain continues into $E_8$, whose adjoint decomposes under $SU(3)\times E_6$ as $\mathbf{248}=(\mathbf 8,\mathbf 1)\oplus(\mathbf 1,\mathbf{78})\oplus(\mathbf 3,\mathbf{27})\oplus(\bar{\mathbf 3},\overline{\mathbf{27}})$. So the three-colour pattern that the framework cannot derive sits inside the smallest exceptional rung of the ladder, and it reappears as one block of the $E_8$ decomposition — a structural coincidence of the exceptional groups, and not a derivation of the number of colours.
 - **The $E_8$ rung is closed independently of any framework.** Whether the observed chiral fermions can be placed inside $E_8$ at all, with the Standard-Model gauge group as the commutant, was examined exhaustively by Distler and Garibaldi. Their conclusion is that the only embeddings compatible with the Standard-Model gauge group require the fermions to fill a complete $\mathbf{248}$, that is three generations together with a conjugate set, and that the resulting spectrum is not chiral in the required sense without additional matter or a second $E_8$. The theorem is about $E_8$ and not about the biquaternion algebra; its relevance is that it removes the exceptional rung from the list of targets a biquaternionic construction could be measured against, and it is the sharpest available illustration of the ceiling's own lesson, that a large group is not by itself an explanation.
 
@@ -213,25 +213,25 @@ The general structural statement is the following. **The biquaternion algebra un
 Grand unification requires a group of rank at least four and dimension at least twelve containing $SU(3)_c$, with the correct representation content. The biquaternion algebra's intrinsic compact gauge structure is $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$, of rank two and dimension four, which fails both numerical thresholds and does not contain $SU(3)_c$:
 
 $$
-\mathrm{rank}\,U(2)=2<4=\mathrm{rank}\,G_{\mathrm{SM}},
+\mathrm{rank}\,\mathrm{U}(2)=2<4=\mathrm{rank}\,G_{\mathrm{SM}},
 \qquad
-\dim_{\mathbb R}U(2)=4<12=\dim G_{\mathrm{SM}} .
+\dim_{\mathbb R}\mathrm{U}(2)=4<12=\dim G_{\mathrm{SM}} .
 $$
 
-The framework does unify its two gauge factors, and the unification is electroweak: the $W$ triplet and the $B$ singlet are the coefficients of a single $\mathbb M_-$-valued field, and their generators close in one Lie algebra with $[T_a,T_b]=\varepsilon_{abc}T_c$ and $[T_a,T_0]=0$. But the two couplings remain separate, because the abelian factor is central and the algebra is not simple; and the framework does not quantise the hypercharge by itself, since the central $U(1)$ has continuous charge, so quantisation must be imposed through the Dirac condition or through embedding into the non-abelian factor.
+The framework does unify its two gauge factors, and the unification is electroweak: the $W$ triplet and the $B$ singlet are the coefficients of a single $\mathbb M_-$-valued field, and their generators close in one Lie algebra with $[T_a,T_b]=\varepsilon_{abc}T_c$ and $[T_a,T_0]=0$. But the two couplings remain separate, because the abelian factor is central and the algebra is not simple; and the framework does not quantise the hypercharge by itself, since the central $\mathrm{U}(1)$ has continuous charge, so quantisation must be imposed through the Dirac condition or through embedding into the non-abelian factor.
 
-A biquaternionic grand unification would require enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$, whose intrinsic group $\mathrm{U}(2n)$ has rank $2n$ and dimension $4n^2$ and contains $SU(3)\times SU(2)\times U(1)$ for $n\ge3$ and $SU(5),SO(10),E_6,E_7,E_8$ from the defining representations of dimensions $5,10,27,56,248$, that is for $n=3,5,14,28,124$. The costs are that the gauge group ceases to be the algebra's own, that unwanted commuting factors appear, and that the even-dimensional modules obstruct the odd-dimensional unified representations. The rank ladder runs $2<4<5<6<7<8<16$, the last rung being $E_8\times E_8$; the exceptional rungs require carriers of $\mathbb C^{56}$, $\mathbb C^{248}$ and $\mathbb C^{496}$, the $E_8$ adjoint being its own smallest faithful representation, and the $E_8$ rung is closed independently of the framework by the no-go of Distler and Garibaldi, who showed that the chiral fermions of the Standard Model do not fit in $E_8$ in the required way. The proton-decay scale is therefore an import, and the framework's particle programme is a programme about colour singlets. The framework's unification is electroweak and not grand, and this is a structural result about the algebra.
+A biquaternionic grand unification would require enlarging the carrier to $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$, whose intrinsic group $\mathrm{U}(2n)$ has rank $2n$ and dimension $4n^2$ and contains $SU(3)\times SU(2)\times \mathrm{U}(1)$ for $n\ge3$ and $SU(5),SO(10),E_6,E_7,E_8$ from the defining representations of dimensions $5,10,27,56,248$, that is for $n=3,5,14,28,124$. The costs are that the gauge group ceases to be the algebra's own, that unwanted commuting factors appear, and that the even-dimensional modules obstruct the odd-dimensional unified representations. The rank ladder runs $2<4<5<6<7<8<16$, the last rung being $E_8\times E_8$; the exceptional rungs require carriers of $\mathbb C^{56}$, $\mathbb C^{248}$ and $\mathbb C^{496}$, the $E_8$ adjoint being its own smallest faithful representation, and the $E_8$ rung is closed independently of the framework by the no-go of Distler and Garibaldi, who showed that the chiral fermions of the Standard Model do not fit in $E_8$ in the required way. The proton-decay scale is therefore an import, and the framework's particle programme is a programme about colour singlets. The framework's unification is electroweak and not grand, and this is a structural result about the algebra.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\cong M_2(\mathbb C)$ | Biquaternion algebra |
-| $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_0,e_1,e_2,e_3\}=\mathrm{U}(2)$ | Compact sector; intrinsic gauge algebra |
+| $\mathbb M_-=\mathrm{span}_{\mathbb R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathrm{U}(2)$ | Compact sector; intrinsic gauge algebra |
 | $\mathrm{SU}(2)\oplus\mathrm{U}(1)$ | Decomposition; electroweak and abelian factors |
-| $T_a=\tfrac12e_a$, $T_0=\tfrac12ie_0$ | Generators; $[T_a,T_b]=\varepsilon_{abc}T_c$, $[T_a,T_0]=0$ |
+| $T_a=\tfrac12e_a$, $T_0=\tfrac12ie_t$ | Generators; $[T_a,T_b]=\varepsilon_{abc}T_c$, $[T_a,T_0]=0$ |
 | $S\cong\mathbb C^2$ | Defining module; $\dim_{\mathbb C}=2r$ for any module |
-| $G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times U(1)_Y$ | Standard-Model gauge group |
+| $G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$ | Standard-Model gauge group |
 | $Y$, $T_3$, $Ϙ=T_3+Y$ | Hypercharge, weak isospin, electric charge |
 | $SU(5)$, $SO(10)$, $E_6$ | Grand-unified candidates; ranks $4,5,6$; dimensions $24,45,78$ |
 | $E_7$, $E_8$, $E_8\times E_8$ | Exceptional rungs; ranks $7,8,16$; dimensions $133,248,496$; carriers $\mathbb C^{56},\mathbb C^{248},\mathbb C^{496}$ |

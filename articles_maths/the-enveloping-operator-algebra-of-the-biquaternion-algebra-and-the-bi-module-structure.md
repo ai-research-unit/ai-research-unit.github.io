@@ -120,7 +120,7 @@ $$
 E_{ik}E_{jl} = \delta_{ij}\delta_{kl}E_{ik},
 $$
 
-by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_0$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Biquaternion Case*.
+by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_t$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Biquaternion Case*.
 
 The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:
 
@@ -128,7 +128,7 @@ $$
 E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
 $$
 
-where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \vec\Upsilon_1, \vec\Upsilon_2, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
+where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \vec\Upsilon_x, \vec\Upsilon_y, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
 
 $$
 \bigl(E_{ik}\mathbb{B}^{\mathrm e}E_{jl}\bigr)\bigl(E_{i'k'}\mathbb{B}^{\mathrm e}E_{j'l'}\bigr) \subseteq \delta_{ji'}\delta_{lk'}\, E_{ik}\mathbb{B}^{\mathrm e}E_{j'l'} ,
@@ -154,10 +154,10 @@ $$
 
 the empty brackets marking the slot; Conway and Synge named the calculus that uses it. In the sandwich picture $e_n[\,]e_m$ is the image of the elementary tensor $e_n\otimes e_m^{\mathrm{opp}}$, so the sixteen operators are the images of a tensor basis and the main theorem gives at once:
 
-**Proposition (the Conway operators are a basis).** The sixteen operators $e_n[\,]e_m$, $n,m\in\{0,1,2,3\}$, are a $\mathbb C$-basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$: every $\mathbb C$-linear function is uniquely
+**Proposition (the Conway operators are a basis).** The sixteen operators $e_n[\,]e_m$, $n,m\in\{t,x,y,z\}$, are a $\mathbb C$-basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$: every $\mathbb C$-linear function is uniquely
 
 $$
-F( )=\sum_{n,m=0}^{3}A_{nm}\,e_n[\,]e_m ,
+F( )=\sum_{n,m\in\{t,x,y,z\}}A_{nm}\,e_n[\,]e_m ,
 \qquad A_{nm}\in\mathbb C .
 $$
 
@@ -166,7 +166,7 @@ $$
 In this notation the two regular representations are the two **edge rows** of the basis, the ones that carry the unit in the unused slot,
 
 $$
-L_a=\sum_{n=0}^{3}a_n\,e_n[\,]e_0,\qquad R_b=\sum_{m=0}^{3}b_m\,e_0[\,]e_m ,
+L_a=\sum_{n\in\{t,x,y,z\}}a_n\,e_n[\,]e_t,\qquad R_b=\sum_{m\in\{t,x,y,z\}}b_m\,e_t[\,]e_m ,
 $$
 
 which is the coordinate form of $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and $R_b=\mathbb 1\otimes b^{\mathrm{opp}}$.
@@ -190,7 +190,7 @@ A\{a\}=\tfrac12\bigl(a[\,]-[\,]a\bigr),
 $$
 
 $$
-D\{d\}=\tfrac12\bigl(d_1e_1[\,]e_1+d_2e_2[\,]e_2+d_3e_3[\,]e_3\bigr),
+D\{d\}=\tfrac12\bigl(d_1\vec e_x[\,]\vec e_x+d_2\vec e_y[\,]\vec e_y+d_3\vec e_z[\,]\vec e_z\bigr),
 $$
 
 $$
@@ -307,7 +307,7 @@ The biquaternion algebra acts on itself from the left and from the right, and th
 | ${}_{\mathbb B}\mathbb B_{\mathbb B}$ | The regular bi-module; a left $\mathbb B^{\mathrm e}$-module |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{opp}}$ |
 | $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | The four idempotents of $\mathbb B^{\mathrm e}$, cutting it into sixteen corners |
-| $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\vec\Upsilon_1,\vec\Upsilon_2,\tilde\Pi_2$ |
+| $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi_2$ |
 
 ## Further Reading
 

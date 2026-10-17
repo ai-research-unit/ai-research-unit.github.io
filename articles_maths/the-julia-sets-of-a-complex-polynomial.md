@@ -38,7 +38,7 @@ extended to $\hat{\mathbb{C}}$ by $f(\infty) = \infty$. The **iterates** are $f^
 
 ### Normal Families
 
-**Definition.** Let $U \subseteq \hat{\mathbb{C}}$ be open and let $\mathcal{F}$ be a family of holomorphic maps $U \to \hat{\mathbb{C}}$. The family is **normal** if every sequence in it has a subsequence converging locally uniformly on $U$, in the spherical metric, to a holomorphic map $U \to \hat{\mathbb{C}}$. Equivalently, by *Complex Analysis*, the family is **equicontinuous** on compact subsets of $U$ with respect to the spherical metric.
+**Definition.** Let $\Omega \subseteq \hat{\mathbb{C}}$ be open and let $\mathcal{F}$ be a family of holomorphic maps $\Omega \to \hat{\mathbb{C}}$. The family is **normal** if every sequence in it has a subsequence converging locally uniformly on $\Omega$, in the spherical metric, to a holomorphic map $\Omega \to \hat{\mathbb{C}}$. Equivalently, by *Complex Analysis*, the family is **equicontinuous** on compact subsets of $\Omega$ with respect to the spherical metric.
 
 **Theorem (Montel).** A family of holomorphic maps on a domain that omits three fixed values of $\hat{\mathbb{C}}$ is normal.
 
@@ -106,7 +106,7 @@ a compact subset of $\mathbb{C}$; the **basin of infinity** is $A(\infty) = \hat
 
 **(c)** $A(\infty)$ is connected and simply connected, and $K(f)$ is connected if and only if $A(\infty)$ is simply connected;
 
-**(d)** $J(f)$ is the boundary of **every** Fatou component: if $U$ is a component of $F(f)$, then $\partial U = J(f)$;
+**(d)** $J(f)$ is the boundary of **every** Fatou component: if $\Omega$ is a component of $F(f)$, then $\partial \Omega = J(f)$;
 
 **(e)** $K(f)$ is connected if and only if every critical point of $f$ lies in $K(f)$; for the quadratic family this reads $K(f_c)$ connected $\iff 0 \in K(f_c) \iff c \in M$, where $M$ is the Mandelbrot set of *The Mandelbrot Set and the Quadratic Family*.
 

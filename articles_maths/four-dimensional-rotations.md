@@ -8,11 +8,11 @@ Everything in the article is a consequence of one formula. A rotation is $\tilde
 
 The isoclinic rotations form two three-dimensional spheres inside $SO(4)$. The two spheres commute elementwise, each is a normal subgroup, and no rotation conjugates one of them into the other; the reflection $\tilde r\mapsto\tilde{r}^{\natural}$ does exchange them. This is the exceptional position of dimension four among the rotation groups, and it is the reason $SO(4)$ is not simple. The last section reads the two angles in the Hopf coordinates of the unit sphere, where the rotation becomes a translation on a family of tori with the Clifford torus in the middle.
 
-The parametrisation is not derived here. The two-sided action $\Phi_{(q_1,q_2)}(\tilde r) = q_1\tilde rq_2^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here.
+The parametrisation is not derived here. The two-sided action $\Phi_{(\tilde q,\tilde p)}(\tilde r) = \tilde q\tilde r\tilde p^{-1}$, its kernel $\{\pm(1,1)\}$ and the covering $Sp(1)\times Sp(1)\to SO(4)$ are *Quaternion Rotations and Reflections*, §*The Two-Sided Action and SO(4)*, and the group-theoretic statement $SO(4)\cong(SU(2)\times SU(2))/\{\pm1\}$ is *Matrix Groups and Classical Groups*. The normal form of an orthogonal map of a definite space is *The Rotation Group and Orientation*, §*The Normal Form of a Rotation*; only its reading in four dimensions is used here.
 
 The treatment is mathematical throughout: a rotation is an element of $SO(4)$ and no physical object is introduced. The three names are the classical ones of the geometry of four dimensions; what is added here is their quaternion content.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with scalar part $q_0$ and vector part $\vec q = q_1e_1+q_2e_2+q_3e_3$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the unit quaternions form $Sp(1) = S^3$. For a unit imaginary quaternion $\nu$ write $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$ for the plane of the subalgebra it generates, and $\mathbb{C}_\nu^\perp = \operatorname{span}(w,\nu w)$ for its orthogonal complement, where $w$ is a unit vector orthogonal to $1$ and to $\nu$; then $w\exp(\nu\psi) = \exp(-\nu\psi)w$ for every real $\psi$. The operators of left and right multiplication are $L_{\tilde q}(\tilde r) = \tilde q\tilde r$ and $\rho_{\tilde q}(\tilde r) = \tilde r\tilde q$, and they commute, $L_p\rho_{\tilde q} = \rho_{\tilde q}L_p$; the symbol $\rho_{\tilde q}$ is used here for right multiplication, written $R_{\tilde q}$ in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*. The planar rotation through $\alpha$ is the matrix $R(\alpha)$. Two square matrices are **orthogonally similar** when they differ by the change of an orthonormal basis, that is by conjugation by an element of $O(4)$, and they are **conjugate in $SO(4)$** when the change may be taken to be a rotation. Two planes are **completely orthogonal** when every line of the first is orthogonal to every line of the second.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$; a quaternion is $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with scalar part $q_t$ and vector part $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, the conjugate is $\tilde{q}^{\natural} = q_te_t-\vec q$, the norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the unit quaternions form $Sp(1) = S^3$. For a unit imaginary quaternion $\nu$ write $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$ for the plane of the subalgebra it generates, and $\mathbb{C}_\nu^\perp = \operatorname{span}(w,\nu w)$ for its orthogonal complement, where $w$ is a unit vector orthogonal to $1$ and to $\nu$; then $w\exp(\nu\psi) = \exp(-\nu\psi)w$ for every real $\psi$. The operators of left and right multiplication are $L_{\tilde q}(\tilde r) = \tilde q\tilde r$ and $\rho_{\tilde q}(\tilde r) = \tilde r\tilde q$, and they commute, $L_{\tilde p}\rho_{\tilde q} = \rho_{\tilde q}L_{\tilde p}$; the symbol $\rho_{\tilde q}$ is used here for right multiplication, written $R_{\tilde q}$ in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*. The planar rotation through $\alpha$ is the matrix $R(\alpha)$. Two square matrices are **orthogonally similar** when they differ by the change of an orthonormal basis, that is by conjugation by an element of $O(4)$, and they are **conjugate in $SO(4)$** when the change may be taken to be a rotation. Two planes are **completely orthogonal** when every line of the first is orthogonal to every line of the second.
 
 ## The Two Angles of a Rotation
 
@@ -65,7 +65,7 @@ The three types are tabulated with their fixed spaces and their planes.
 **Definition.** For unit quaternions $\tilde q,\tilde p$ the **two-sided action** is the map
 
 $$
-\Phi_{(\tilde q,\tilde p)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(\tilde q,\tilde p)}(\tilde r) = \tilde q\,\tilde r\,\tilde p^{-1} = L_{\tilde q}\rho_{p^{-1}}(\tilde r).
+\Phi_{(\tilde q,\tilde p)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(\tilde q,\tilde p)}(\tilde r) = \tilde q\,\tilde r\,\tilde p^{-1} = L_{\tilde q}\rho_{\tilde p^{-1}}(\tilde r).
 $$
 
 **Theorem.** Every element of $SO(4)$ is $\Phi_{(\tilde q,\tilde p)}$ for some pair of unit quaternions, and the pair is determined up to the simultaneous change of sign $(\tilde q,\tilde p)\mapsto(-\tilde q,-\tilde p)$.
@@ -80,9 +80,9 @@ Thus a rotation is exactly a pair $(\tilde q,\tilde p)$ of unit quaternions modu
 
 *Proof.* On $\mathbb{C}_\nu = \operatorname{span}(1,\nu)$ the operator $L_{\tilde q}$ is multiplication by $\tilde q$ in the subalgebra $\mathbb{C}_\nu$, hence the rotation through $\theta$ in the basis $1,\nu$. On $\mathbb{C}_\nu^\perp = \operatorname{span}(w,\nu w)$ every element is $\tilde sw$ with $\tilde s\in\mathbb{C}_\nu$, and $L_{\tilde q}(\tilde sw) = \tilde q\tilde sw = (\tilde q\tilde s)w$, because $\tilde q$ and $\tilde s$ commute; the map $\tilde s\mapsto\tilde q\tilde s$ is the rotation through $\theta$ on $\mathbb{C}_\nu$, so $L_{\tilde q}$ rotates $\mathbb{C}_\nu^\perp$ through $\theta$ as well.
 
-**Proposition.** Let $\tilde p = \exp(\mu\phi)$ with $\mu$ a unit imaginary quaternion and $\phi = \arccos(\operatorname{Re}\tilde p)\in[0,\pi]$. Then $\rho_p$ rotates $\mathbb{C}_\mu$ through $\phi$ and $\mathbb{C}_\mu^\perp$ through $-\phi$.
+**Proposition.** Let $\tilde p = \exp(\mu\phi)$ with $\mu$ a unit imaginary quaternion and $\phi = \arccos(\operatorname{Re}\tilde p)\in[0,\pi]$. Then $\rho_{\tilde p}$ rotates $\mathbb{C}_\mu$ through $\phi$ and $\mathbb{C}_\mu^\perp$ through $-\phi$.
 
-*Proof.* On $\mathbb{C}_\mu$ the right multiplication by $\tilde p$ is multiplication by $\tilde p$, which is the rotation through $\phi$. On $\mathbb{C}_\mu^\perp = \operatorname{span}(w,\mu w)$ with $w$ orthogonal to $1$ and $\mu$, one has $\rho_p(\tilde sw) = \tilde sw\tilde p = \tilde s(w\tilde p) = \tilde s\,\tilde{p}^{\natural}\,w$ for $\tilde s\in\mathbb{C}_\mu$, because conjugation by the unit vector $w$ reverses the sign of $\mu$ and fixes $1$; the map $\tilde s\mapsto \tilde s\tilde{p}^{\natural}$ is the rotation through $-\phi$.
+*Proof.* On $\mathbb{C}_\mu$ the right multiplication by $\tilde p$ is multiplication by $\tilde p$, which is the rotation through $\phi$. On $\mathbb{C}_\mu^\perp = \operatorname{span}(w,\mu w)$ with $w$ orthogonal to $1$ and $\mu$, one has $\rho_{\tilde p}(\tilde sw) = \tilde sw\tilde p = \tilde s(w\tilde p) = \tilde s\,\tilde{p}^{\natural}\,w$ for $\tilde s\in\mathbb{C}_\mu$, because conjugation by the unit vector $w$ reverses the sign of $\mu$ and fixes $1$; the map $\tilde s\mapsto \tilde s\tilde{p}^{\natural}$ is the rotation through $-\phi$.
 
 So a left multiplication and a right multiplication are the rotations that act with equal angles on a plane and its orthogonal complement, with the two signs in the second case. This is the geometric content of the two factors of the parametrisation.
 
@@ -96,7 +96,7 @@ $$
 
 and the angle pair of $T$ is obtained from the two numbers $\theta+\phi$ and $\theta-\phi$ by reduction modulo $2\pi$ into $[0,\pi]$.
 
-*Proof.* The eigenvalues and the angle pair are invariant under conjugation in $SO(4)$, and the reduction by conjugation is to suppose first that the two axes coincide, $\nu = \mu$. In that case the two planes $\mathbb{C}_\nu$ and $\mathbb{C}_\nu^\perp$ are invariant under both factors. On $\mathbb{C}_\nu$ one has $T(\tilde r) = \tilde q\tilde r\tilde p^{-1} = \tilde r\,\tilde q\tilde p^{-1}$ because $\tilde r$ commutes with both factors, so that $T$ is right multiplication by $\tilde q\tilde p^{-1} = \exp(\nu(\theta-\phi))$ there: the rotation through $\theta-\phi$. On $\mathbb{C}_\nu^\perp$ an element is $\tilde sw$ with $\tilde s\in\mathbb{C}_\nu$, and $T(\tilde sw) = \tilde q\tilde s\,w\tilde p^{-1}$; since $w\tilde p^{-1} = w \exp(-\nu\phi) = \exp(\nu\phi)w = \tilde pw$, this is $\tilde q\tilde s\tilde p\,w = \tilde s\,\tilde q\tilde p\,w$, the rotation through $\theta+\phi$ in the coordinate $\tilde s$. The eigenvalues of a planar rotation through $\gamma$ are $\exp(\pm i\gamma)$, so when $\nu = \mu$ the four eigenvalues are those displayed. For the general case choose a unit quaternion $\tilde a$ with $\tilde a\nu\tilde a^{-1} = \mu$, which exists because the adjoint action of $Sp(1)$ on the unit imaginary quaternions is transitive, as in *Quaternion Rotations and Reflections*; conjugation by $L_a$ carries $T$ to $L_{aqa^{-1}}\rho_{p^{-1}} = L_{\exp(\mu\theta)}\rho_{p^{-1}}$, a rotation with coinciding axes and hence the same eigenvalue list. Eigenvalues are invariant under conjugation, so the list is that of $T$.
+*Proof.* The eigenvalues and the angle pair are invariant under conjugation in $SO(4)$, and the reduction by conjugation is to suppose first that the two axes coincide, $\nu = \mu$. In that case the two planes $\mathbb{C}_\nu$ and $\mathbb{C}_\nu^\perp$ are invariant under both factors. On $\mathbb{C}_\nu$ one has $T(\tilde r) = \tilde q\tilde r\tilde p^{-1} = \tilde r\,\tilde q\tilde p^{-1}$ because $\tilde r$ commutes with both factors, so that $T$ is right multiplication by $\tilde q\tilde p^{-1} = \exp(\nu(\theta-\phi))$ there: the rotation through $\theta-\phi$. On $\mathbb{C}_\nu^\perp$ an element is $\tilde sw$ with $\tilde s\in\mathbb{C}_\nu$, and $T(\tilde sw) = \tilde q\tilde s\,w\tilde p^{-1}$; since $w\tilde p^{-1} = w \exp(-\nu\phi) = \exp(\nu\phi)w = \tilde pw$, this is $\tilde q\tilde s\tilde p\,w = \tilde s\,\tilde q\tilde p\,w$, the rotation through $\theta+\phi$ in the coordinate $\tilde s$. The eigenvalues of a planar rotation through $\gamma$ are $\exp(\pm i\gamma)$, so when $\nu = \mu$ the four eigenvalues are those displayed. For the general case choose a unit quaternion $\tilde a$ with $\tilde a\nu\tilde a^{-1} = \mu$, which exists because the adjoint action of $Sp(1)$ on the unit imaginary quaternions is transitive, as in *Quaternion Rotations and Reflections*; conjugation by $L_{\tilde a}$ carries $T$ to $L_{\tilde a\tilde q\tilde a^{-1}}\rho_{\tilde p^{-1}} = L_{\exp(\mu\theta)}\rho_{\tilde p^{-1}}$, a rotation with coinciding axes and hence the same eigenvalue list. Eigenvalues are invariant under conjugation, so the list is that of $T$.
 
 **Corollary (the characteristic polynomial).** For unit quaternions $\tilde q,\tilde p$ the characteristic polynomial of $\Phi_{(\tilde q,\tilde p)}$ depends only on the two real parts,
 
@@ -130,11 +130,11 @@ In particular the angles depend only on the real parts of the two factors and no
 
 **Theorem.** Let $T = \Phi_{(\tilde q,\tilde p)}$. Then $T$ is isoclinic if and only if $\operatorname{Re}\tilde q = \pm1$ or $\operatorname{Re}\tilde p = \pm1$, that is if and only if $\tilde q = \pm1$ or $\tilde p = \pm1$. The isoclinic rotations are therefore exactly the left and the right multiplications.
 
-*Proof.* The angle pair is obtained from $\theta+\phi$ and $\theta-\phi$, and a rotation is isoclinic when the two angles are equal and nonzero, which happens exactly when $\cos(\theta+\phi) = \cos(\theta-\phi)$, since the cosine is injective on $[0,\pi]$. The identity $\cos(\theta+\phi)-\cos(\theta-\phi) = -2\sin\theta\sin\phi$ vanishes with $\theta,\phi\in[0,\pi]$ exactly when $\theta\in\{0,\pi\}$ or $\phi\in\{0,\pi\}$, that is when $\tilde q = \pm1$ or $\tilde p = \pm1$. If $\tilde q = \pm1$ then $T = \rho_{p^{-1}}$ is a right multiplication and if $\tilde p = \pm1$ then $T = L_{\tilde q}$ is a left multiplication, and each of these is isoclinic by the two propositions on the factors.
+*Proof.* The angle pair is obtained from $\theta+\phi$ and $\theta-\phi$, and a rotation is isoclinic when the two angles are equal and nonzero, which happens exactly when $\cos(\theta+\phi) = \cos(\theta-\phi)$, since the cosine is injective on $[0,\pi]$. The identity $\cos(\theta+\phi)-\cos(\theta-\phi) = -2\sin\theta\sin\phi$ vanishes with $\theta,\phi\in[0,\pi]$ exactly when $\theta\in\{0,\pi\}$ or $\phi\in\{0,\pi\}$, that is when $\tilde q = \pm1$ or $\tilde p = \pm1$. If $\tilde q = \pm1$ then $T = \rho_{\tilde p^{-1}}$ is a right multiplication and if $\tilde p = \pm1$ then $T = L_{\tilde q}$ is a left multiplication, and each of these is isoclinic by the two propositions on the factors.
 
 **Definition.** An isoclinic rotation is **left-isoclinic** when it is a left multiplication and **right-isoclinic** when it is a right multiplication.
 
-A left-isoclinic rotation $L_{\tilde q}$ rotates every plane of a certain family through $\theta$ with the same sense; a right-isoclinic rotation $\rho_p$ rotates its two planes through $\phi$ and $-\phi$. Both have the angle pair $\{\theta,\theta\}$ and $\{\phi,\phi\}$ respectively, which is the reason the normal form alone cannot separate them.
+A left-isoclinic rotation $L_{\tilde q}$ rotates every plane of a certain family through $\theta$ with the same sense; a right-isoclinic rotation $\rho_{\tilde p}$ rotates its two planes through $\phi$ and $-\phi$. Both have the angle pair $\{\theta,\theta\}$ and $\{\phi,\phi\}$ respectively, which is the reason the normal form alone cannot separate them.
 
 **Proposition (the four isoclinic rotations).** Let $\nu$ be a unit imaginary quaternion and $0<\theta<\pi$. Then the four rotations
 
@@ -174,9 +174,9 @@ $$
 S^3_L = \{L_{\tilde q} : \tilde q\in Sp(1)\}, \qquad S^3_R = \{\rho_{\tilde q} : \tilde q\in Sp(1)\}.
 $$
 
-**Theorem.** $S^3_L$ and $S^3_R$ are subgroups of $SO(4)$ isomorphic to $Sp(1)\cong S^3$; they commute elementwise, $L_{\tilde q}\rho_p = \rho_pL_{\tilde q}$; they meet in the centre of $SO(4)$, $S^3_L\cap S^3_R = \{\pm\mathrm{id}\}$; each is a normal subgroup of $SO(4)$, and $SO(4) = S^3_L\,S^3_R$ in the sense that every rotation is a product of one element of each.
+**Theorem.** $S^3_L$ and $S^3_R$ are subgroups of $SO(4)$ isomorphic to $Sp(1)\cong S^3$; they commute elementwise, $L_{\tilde q}\rho_{\tilde p} = \rho_{\tilde p}L_{\tilde q}$; they meet in the centre of $SO(4)$, $S^3_L\cap S^3_R = \{\pm\mathrm{id}\}$; each is a normal subgroup of $SO(4)$, and $SO(4) = S^3_L\,S^3_R$ in the sense that every rotation is a product of one element of each.
 
-*Proof.* The assignments $\tilde q\mapsto L_{\tilde q}$ and $\tilde p\mapsto\rho_p$ are injective homomorphisms with image a three-dimensional sphere because $\langle L_{\tilde q}\tilde r\rangle_{\natural} = \langle\tilde r\rangle_{\natural}$ on the unit sphere; the commutation is the identity $L_p\rho_{\tilde q} = \rho_{\tilde q}L_p$ of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the intersection statement is the criterion $L_{\tilde q} = \rho_p$ if and only if $\tilde q = \tilde p = \pm1$; normality and the product statement are the covering $SO(4)\cong(Sp(1)\times Sp(1))/\{\pm(1,1)\}$, in which the two factors are the images of the two spheres.
+*Proof.* The assignments $\tilde q\mapsto L_{\tilde q}$ and $\tilde p\mapsto\rho_{\tilde p}$ are injective homomorphisms with image a three-dimensional sphere because $\langle L_{\tilde q}\tilde r\rangle_{\natural} = \langle\tilde r\rangle_{\natural}$ on the unit sphere; the commutation is the identity $L_{\tilde p}\rho_{\tilde q} = \rho_{\tilde q}L_{\tilde p}$ of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the intersection statement is the criterion $L_{\tilde q} = \rho_{\tilde p}$ if and only if $\tilde q = \tilde p = \pm1$; normality and the product statement are the covering $SO(4)\cong(Sp(1)\times Sp(1))/\{\pm(1,1)\}$, in which the two factors are the images of the two spheres.
 
 **Theorem (no conjugation between the two spheres).** Let $X = \Phi_{(\tilde a,\tilde b)}\in SO(4)$ be a rotation. Then
 
@@ -186,7 +186,7 @@ $$
 
 so conjugation by a rotation preserves each of the two spheres. The conjugacy class of a left-isoclinic rotation $L_{\tilde q}$ in $SO(4)$ is the two-sphere $\{L_{\tilde w} : \operatorname{Re}\tilde w = \operatorname{Re}\tilde q\}$, and no rotation conjugates a left-isoclinic rotation to a right-isoclinic one except the identity and the central inversion.
 
-*Proof.* The conjugation identity follows from the commutation of left and right multiplication: $L_a\rho_bL_{\tilde q}L_{a^{-1}}\rho_{b^{-1}} = L_{a\tilde q a^{-1}}$ because the right factors cancel. Every element of $SO(4)$ is $\Phi_{(\tilde a,\tilde b)}$ by the parametrisation theorem of the previous section, so the whole conjugacy class is the displayed family, and it lies in $S^3_L$. The last statement is then the criterion $\rho_p = L_{\tilde q}$ if and only if $\tilde q = \tilde p = \pm1$: a right multiplication lies in $S^3_L$ only for $\pm\mathrm{id}$.
+*Proof.* The conjugation identity follows from the commutation of left and right multiplication: $L_{\tilde a}\rho_{\tilde b}L_{\tilde q}L_{\tilde a^{-1}}\rho_{\tilde b^{-1}} = L_{\tilde a\tilde q\tilde a^{-1}}$ because the right factors cancel. Every element of $SO(4)$ is $\Phi_{(\tilde a,\tilde b)}$ by the parametrisation theorem of the previous section, so the whole conjugacy class is the displayed family, and it lies in $S^3_L$. The last statement is then the criterion $\rho_{\tilde p} = L_{\tilde q}$ if and only if $\tilde q = \tilde p = \pm1$: a right multiplication lies in $S^3_L$ only for $\pm\mathrm{id}$.
 
 **Proposition (the exchanging reflection).** The map $\tilde r\mapsto\tilde{r}^{\natural}$ is an element of $O(4)$ with determinant $-1$ and it conjugates $L_{\tilde q}$ to $\rho_{\tilde{q}^{\natural}}$; hence it exchanges the two isoclinic spheres and reverses the isoclinic angle.
 
@@ -198,33 +198,33 @@ so conjugation by a rotation preserves each of the two spheres. The conjugacy cl
 
 ### Hopf Coordinates of the Unit Sphere
 
-**Definition.** Write a unit quaternion as $\tilde q = \tilde q_1+\tilde q_2e_2$ with $\tilde q_1,\tilde q_2\in\mathbb{C}_{e_1}$; the **Hopf coordinates** $(\xi_1,\eta,\xi_2)$ are the angles
+**Definition.** Write a unit quaternion as $\tilde q = \tilde q_1+\tilde q_2\vec e_y$ with $\tilde q_1,\tilde q_2\in\mathbb{C}_{\vec e_x}$; the **Hopf coordinates** $(\xi_x,\eta,\xi_y)$ are the angles
 
 $$
-\tilde q = \sin\eta\;\exp(e_1\xi_1) + \cos\eta\;\exp(e_1\xi_2)e_2, \qquad \eta\in\Bigl[0,\frac{\pi}{2}\Bigr], \quad \xi_1,\xi_2\in[0,2\pi),
+\tilde q = \sin\eta\;\exp(\vec e_x\xi_x) + \cos\eta\;\exp(\vec e_x\xi_y)\vec e_y, \qquad \eta\in\Bigl[0,\frac{\pi}{2}\Bigr], \quad \xi_x,\xi_y\in[0,2\pi),
 $$
 
-so that in the coordinates $(q_0,q_1,q_2,q_3)$ of $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ one has $q_0 = \sin\eta\cos\xi_1$, $q_1 = \sin\eta\sin\xi_1$, $q_2 = \cos\eta\cos\xi_2$ and $q_3 = \cos\eta\sin\xi_2$.
+so that in the coordinates $(q_t,q_x,q_y,q_z)$ of $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ one has $q_t = \sin\eta\cos\xi_x$, $q_x = \sin\eta\sin\xi_x$, $q_y = \cos\eta\cos\xi_y$ and $q_z = \cos\eta\sin\xi_y$.
 
 **Proposition.** The Hopf coordinates are coordinates on the unit sphere, and $|\tilde q_1| = \sin\eta$ while $|\tilde q_2| = \cos\eta$; consequently the level set $\eta = \mathrm{const}$ with $0<\eta<\frac{\pi}{2}$ is a torus, the sets $\eta = 0$ and $\eta = \frac{\pi}{2}$ are circles, and the level set $\eta = \frac{\pi}{4}$ is the **Clifford torus** $|\tilde q_1| = |\tilde q_2| = \frac{1}{\sqrt2}$.
 
-*Proof.* The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(e_1\xi_1)$ and $\tilde q_2 = \cos\eta\,\exp(e_1\xi_2)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.
+*Proof.* The sum of the squares of the four coordinates is $\sin^2\eta+\cos^2\eta = 1$, so every triple of angles gives a unit quaternion, and the four coordinates recover the angles in the stated ranges. The two blocks are $\tilde q_1 = \sin\eta\,\exp(\vec e_x\xi_x)$ and $\tilde q_2 = \cos\eta\,\exp(\vec e_x\xi_y)$, of the stated moduli, and each is an independent circle when $\eta$ is fixed and intermediate.
 
 ### The Rotation as a Translation
 
-**Theorem.** Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,e_1)$ and $\operatorname{span}(e_2,e_3)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as
+**Theorem.** Let $T$ be a rotation whose two invariant planes of the normal form are $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$, with the angles $a$ and $b$ respectively. Then in Hopf coordinates $T$ acts as
 
 $$
-(\xi_1,\eta,\xi_2)\longmapsto(\xi_1+a,\ \eta,\ \xi_2+b).
+(\xi_x,\eta,\xi_y)\longmapsto(\xi_x+a,\ \eta,\ \xi_y+b).
 $$
 
 In particular the tori $\eta = \mathrm{const}$ and the Clifford torus are invariant, and the two angles of the rotation are the two angular velocities of the translation.
 
-*Proof.* A rotation with these two invariant planes is $\Phi_{(\tilde q,\tilde p)}$ with $\tilde q = \exp(e_1\theta)$ and $\tilde p = \exp(e_1\phi)$, both factors in $\mathbb{C}_{e_1}$, and by the computation of the angle theorem the angle on $\operatorname{span}(1,e_1)$ is $\theta-\phi = a$ while the angle on $\operatorname{span}(e_2,e_3)$ is $\theta+\phi = b$, so that $\theta = \frac12(a+b)$ and $\phi = \frac12(b-a)$. On the first block the map is right multiplication by $\tilde q\tilde p^{-1} = \exp(e_1a)$, so that $\sin\eta\,\exp(e_1\xi_1)$ becomes $\sin\eta\,\exp(e_1(\xi_1+a))$; on the second block the coordinate is multiplied by $\tilde q\tilde p = \exp(e_1b)$, so that $\cos\eta\,\exp(e_1\xi_2)e_2$ becomes $\cos\eta\,\exp(e_1(\xi_2+b))e_2$. That is the display.
+*Proof.* A rotation with these two invariant planes is $\Phi_{(\tilde q,\tilde p)}$ with $\tilde q = \exp(\vec e_x\theta)$ and $\tilde p = \exp(\vec e_x\phi)$, both factors in $\mathbb{C}_{\vec e_x}$, and by the computation of the angle theorem the angle on $\operatorname{span}(1,\vec e_x)$ is $\theta-\phi = a$ while the angle on $\operatorname{span}(\vec e_y,\vec e_z)$ is $\theta+\phi = b$, so that $\theta = \frac12(a+b)$ and $\phi = \frac12(b-a)$. On the first block the map is right multiplication by $\tilde q\tilde p^{-1} = \exp(\vec e_xa)$, so that $\sin\eta\,\exp(\vec e_x\xi_x)$ becomes $\sin\eta\,\exp(\vec e_x(\xi_x+a))$; on the second block the coordinate is multiplied by $\tilde q\tilde p = \exp(\vec e_xb)$, so that $\cos\eta\,\exp(\vec e_x\xi_y)\vec e_y$ becomes $\cos\eta\,\exp(\vec e_x(\xi_y+b))\vec e_y$. That is the display.
 
 ### The Trajectories
 
-The orbit of a point of the unit sphere under the one-parameter group of the rotations with the angles $at$ and $bt$ is the curve $t\mapsto(\xi_1+at,\ \eta,\ \xi_2+bt)$ on the torus $\eta = \mathrm{const}$; the rotation is the linear flow of the two angles. The classical description of a linear flow on a torus applies.
+The orbit of a point of the unit sphere under the one-parameter group of the rotations with the angles $at$ and $bt$ is the curve $t\mapsto(\xi_x+at,\ \eta,\ \xi_y+bt)$ on the torus $\eta = \mathrm{const}$; the rotation is the linear flow of the two angles. The classical description of a linear flow on a torus applies.
 
 **Proposition (periodicity).** The orbit of a point is periodic if and only if the ratio $a/b$ of the two angular velocities is rational, and if $a/b = p/q$ in lowest terms the flow returns to the identity after the time $2\pi|q|/|b| = 2\pi|p|/|a|$. If the ratio is irrational the orbit is dense in the torus.
 
@@ -232,7 +232,7 @@ The orbit of a point of the unit sphere under the one-parameter group of the rot
 
 **Proposition (the isoclinic orbits).** If the rotation is isoclinic, $a = \pm b$, the orbit of a point is a great circle of the unit sphere; if the point lies on the Clifford torus the circle lies on that torus and is a Villarceau circle of it.
 
-*Proof.* For $a = b$ the curve is $t\mapsto(\xi_1+at,\eta,\xi_2+at)$, which is $\tilde q(t) = \exp(e_1at)\tilde q(0)$, the left translate of the starting point by a one-parameter subgroup, hence a great circle; for $a = -b$ it is the right translate, and the same argument applies. On the Clifford torus the left and right translates stay on the torus by the invariance of $\eta$.
+*Proof.* For $a = b$ the curve is $t\mapsto(\xi_x+at,\eta,\xi_y+at)$, which is $\tilde q(t) = \exp(\vec e_xat)\tilde q(0)$, the left translate of the starting point by a one-parameter subgroup, hence a great circle; for $a = -b$ it is the right translate, and the same argument applies. On the Clifford torus the left and right translates stay on the torus by the invariance of $\eta$.
 
 ### The Maximal Tori
 
@@ -262,15 +262,15 @@ The classification follows from the two angles. A rotation is simple, that is it
 
 The isoclinic rotations form the two spheres $S^3_L$ and $S^3_R$ of the left and the right multiplications. The two spheres commute elementwise, meet in $\{\pm\mathrm{id}\}$, are normal subgroups of $SO(4)$, and generate it. Conjugation by a rotation carries $L_{\tilde q}$ to $L_{\tilde a\tilde q\tilde a^{-1}}$ and hence never leaves a sphere: no rotation conjugates a left-isoclinic rotation to a right-isoclinic one, and the conjugacy class of $L_{\tilde q}$ inside $SO(4)$ is the two-sphere of the left multiplications with the same real part. The reflection $\tilde r\mapsto\tilde{r}^{\natural}$ exchanges the two spheres, and it has determinant $-1$, so the exchange is not available inside the rotation group. This splitting of the isoclinic rotations into two classes with the same normal form is the exceptional position of dimension four among the rotation groups, and the reason $SO(4)$ is not simple.
 
-In the Hopf coordinates $\tilde q = \sin\eta\,\exp(e_1\xi_1)+\cos\eta\,\exp(e_1\xi_2)e_2$ of the unit sphere a rotation with the planes $\operatorname{span}(1,e_1)$ and $\operatorname{span}(e_2,e_3)$ invariant is the translation $(\xi_1,\xi_2)\mapsto(\xi_1+a,\xi_2+b)$ with $\eta$ unchanged. The level sets of $\eta$ are the invariant tori, the Clifford torus is $\eta = \frac{\pi}{4}$, the orbit of a point is periodic exactly when the ratio of the two angles is rational, and the isoclinic orbits are the great circles of the sphere, which on the Clifford torus are its Villarceau circles.
+In the Hopf coordinates $\tilde q = \sin\eta\,\exp(\vec e_x\xi_x)+\cos\eta\,\exp(\vec e_x\xi_y)\vec e_y$ of the unit sphere a rotation with the planes $\operatorname{span}(1,\vec e_x)$ and $\operatorname{span}(\vec e_y,\vec e_z)$ invariant is the translation $(\xi_x,\xi_y)\mapsto(\xi_x+a,\xi_y+b)$ with $\eta$ unchanged. The level sets of $\eta$ are the invariant tori, the Clifford torus is $\eta = \frac{\pi}{4}$, the orbit of a point is periodic exactly when the ratio of the two angles is rational, and the isoclinic orbits are the great circles of the sphere, which on the Clifford torus are its Villarceau circles.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}\cong\mathbb{R}^4$ | Quaternion algebra, the rotating space |
-| $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$, $e_1e_2 = e_3$ |
-| $\tilde q = q_0e_0+\vec q$ | Quaternion, scalar part $q_0$, vector part $\vec q$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
+| $\tilde q = q_te_t+\vec q$ | Quaternion, scalar part $q_t$, vector part $\vec q$ |
 | $Sp(1) = S^3$ | Unit quaternions |
 | $L_{\tilde q}(\tilde r) = \tilde q\tilde r$, $\rho_{\tilde q}(\tilde r) = \tilde r\tilde q$ | Left and right multiplication (right multiplication is $R_{\tilde q}$ elsewhere) |
 | $\Phi_{(\tilde q,\tilde p)}(\tilde r) = \tilde q\tilde r\tilde p^{-1}$ | Two-sided action, a general rotation of $\mathbb{H}$ |
@@ -280,7 +280,7 @@ In the Hopf coordinates $\tilde q = \sin\eta\,\exp(e_1\xi_1)+\cos\eta\,\exp(e_1\
 | simple / double / isoclinic | $\beta = 0$ / $0<\beta<\alpha$ / $0<\beta = \alpha$ |
 | $\theta = \arccos(\operatorname{Re}\tilde q)$, $\phi = \arccos(\operatorname{Re}\tilde p)$ | The two half-angles of the parametrising pair |
 | $S^3_L = \{L_{\tilde q}\}$, $S^3_R = \{\rho_{\tilde q}\}$ | The left- and right-isoclinic spheres |
-| $(\xi_1,\eta,\xi_2)$ | Hopf coordinates of the unit sphere |
+| $(\xi_x,\eta,\xi_y)$ | Hopf coordinates of the unit sphere |
 | $\eta = \frac{\pi}{4}$ | The Clifford torus |
 
 ## Further Reading

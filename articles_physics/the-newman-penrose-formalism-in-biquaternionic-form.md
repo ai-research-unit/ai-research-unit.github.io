@@ -16,20 +16,20 @@ Three claims organise the discussion.
 
 The article closes by separating what the framework contains from what remains an agenda. The separation is sharp: the null structure of the tetrad is native, and the curvature that the tetrad is used to describe is not.
 
-The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_0,q_1,q_2,q_3)$, and the bilinear (polar) form on it is
+The conventions are inherited from the read-list articles and none is redefined. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural}$. The material sector is $\mathbb{M}_- = \{iq_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z : q_\mu \in \mathbb{R}\}$, with four-vector coordinates $(q_t,q_x,q_y,q_z)$, and the bilinear (polar) form on it is
 
 $$
-\langle \tilde Q, \tilde P\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_0p_0 + q_1p_1 + q_2p_2 + q_3p_3 ,
+\langle \tilde Q, \tilde P\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q\tilde P^{\natural}\big) \;=\; -q_tp_t + q_xp_x + q_yp_y + q_zp_z ,
 $$
 
 of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
 
 $$
 \mathsf{M}_2 : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
-\mathsf{M}_2(e_0) = I_2, \quad \mathsf{M}_2(e_k) = -i\sigma_k, \quad \mathsf{M}_2(i) = iI_2,
+\mathsf{M}_2(e_t) = I_2, \quad \mathsf{M}_2(\vec e_\mu) = -i\sigma_\mu, \quad \mathsf{M}_2(i) = iI_2,
 $$
 
-so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_0\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_0\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
+so that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde Q)$, Hermitian conjugation corresponds to the conjugate transpose, and $\mathbb{M}_-$ corresponds to the anti-Hermitian matrices. The spinor module is $S = \mathbb{C}^2$, the unique simple module of $\mathbb{B}$, on which the algebra acts by left multiplication; the Weyl spinor modules are $S = (\tfrac12,0)$ and its conjugate $\bar S = (0,\tfrac12)$. The rotor group is $\{\tilde U : \tilde U\tilde U^{\natural} = e_t\} \cong SL(2,\mathbb{C})$, acting on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde U\tilde{Q}\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ and kernel $\{\pm e_t\}$. The trace formula of the informational sector is $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum speed.
 
 ## Conventions: Signature and the Tetrad Normalization
 
@@ -50,19 +50,19 @@ The tetrad legs are labelled in the order $(e_1, e_2, e_3, e_4) = (l, n, m, \bar
 
 ## The Null Tetrad as a Frame of Zero Divisors
 
-The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the Biquaternion Algebra*). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -q_0^2+q_1^2+q_2^2+q_3^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
+The framework's criterion for a zero divisor is a statement about the biquaternion norm. A nonzero biquaternion $\tilde Q$ is a zero divisor if and only if $\langle\tilde Q\rangle_{\natural}=0$, and under the isomorphism $\mathsf{M}_2$ the nonzero zero divisors are exactly the rank-one matrices (*Zero Divisors of the Biquaternion Algebra*). Restricted to the material sector, $\langle\tilde Q\rangle_{\natural} = -q_t^2+q_x^2+q_y^2+q_z^2$, so a nonzero element of $\mathbb{M}_-$ is a zero divisor exactly when its four-vector is null. The Newman–Penrose construction asks for four null vectors; the framework has a name for them already.
 
 Take the tetrad
 
 $$
-l = \frac{i}{\sqrt2}e_0 - \frac{1}{\sqrt2}e_3, \qquad
-n = \frac{i}{\sqrt2}e_0 + \frac{1}{\sqrt2}e_3, \qquad
-m = -\frac{1}{\sqrt2}e_1 - \frac{i}{\sqrt2}e_2, \qquad
-\bar m = -\frac{1}{\sqrt2}e_1 + \frac{i}{\sqrt2}e_2 .
+l = \frac{i}{\sqrt2}e_t - \frac{1}{\sqrt2}\vec e_z, \qquad
+n = \frac{i}{\sqrt2}e_t + \frac{1}{\sqrt2}\vec e_z, \qquad
+m = -\frac{1}{\sqrt2}\vec e_x - \frac{i}{\sqrt2}\vec e_y, \qquad
+\bar m = -\frac{1}{\sqrt2}\vec e_x + \frac{i}{\sqrt2}\vec e_y .
 \tag{2}
 $$
 
-In four-vector coordinates $(q_0,q_1,q_2,q_3)$ the four legs read
+In four-vector coordinates $(q_t,q_x,q_y,q_z)$ the four legs read
 
 $$
 l = \big(\tfrac{1}{\sqrt2},0,0,-\tfrac{1}{\sqrt2}\big), \quad
@@ -89,7 +89,7 @@ where $E_{ij}$ has $1$ in position $(i,j)$ and $0$ elsewhere. Each image has ran
 Equation (3) is the precise sense in which the null tetrad is native to the algebra. Up to the common factor $\sqrt2\,i$, the Newman–Penrose tetrad **is** the matrix-unit basis of $\mathbb{B}\cong M_2(\mathbb{C})$. The spinor-module article already names that basis:
 
 $$
-\tilde\Pi_1 = \tfrac12(e_0+ie_3), \quad \tilde\Pi_2 = \tfrac12(e_0-ie_3), \quad \vec\Upsilon_1 = \tfrac12(ie_1-e_2), \quad \vec\Upsilon_2 = \tfrac12(ie_1+e_2),
+\tilde\Pi_1 = \tfrac12(e_t+i\vec e_z), \quad \tilde\Pi_2 = \tfrac12(e_t-i\vec e_z), \quad \vec\Upsilon_1 = \tfrac12(i\vec e_x-\vec e_y), \quad \vec\Upsilon_2 = \tfrac12(i\vec e_x+\vec e_y),
 $$
 
 with $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$, $\mathsf{M}_2(x)=E_{12}$, $\mathsf{M}_2(y)=E_{21}$, and with $\tilde\Pi_1,\tilde\Pi_2$ the primitive orthogonal idempotents: $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$, $\tilde\Pi_1\tilde\Pi_2=\tilde\Pi_2\tilde\Pi_1=0$. Therefore
@@ -190,7 +190,7 @@ $$
 
 where $D=l^a\nabla_a$, $\Delta=n^a\nabla_a$, $\delta=m^a\nabla_a$ and $\bar\delta=\bar m^a\nabla_a$ are the directional derivatives along the tetrad. The second four are the analogous contractions of $\nabla n$, and the last four complete the components of $\nabla l$ and $\nabla n$ along $l$ and $n$ themselves. The overall signs are convention-dependent — the literature does not agree on them, and the definitions are stated here only to fix the pattern — but the count and the identification of the twelve as components of one connection are not.
 
-In the framework the connection is valued in the bivector subspace. The parent article identifies the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ with the six-dimensional subspace $\{\tilde G : \mathrm{Sc}(\tilde G)=0\}$ — equivalently, under $\Phi$, the traceless $2\times2$ matrices — spanned by $e_1,e_2,e_3$ and $ie_1,ie_2,ie_3$, which is the complex-pure-vector subspace of $\mathbb{B}$. A connection 1-form takes values in that subspace and has one component per tetrad direction, giving
+In the framework the connection is valued in the bivector subspace. The parent article identifies the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ with the six-dimensional subspace $\{\tilde G : \mathrm{Sc}(\tilde G)=0\}$ — equivalently, under $\Phi$, the traceless $2\times2$ matrices — spanned by $\vec e_x,\vec e_y,\vec e_z$ and $i\vec e_x,i\vec e_y,i\vec e_z$, which is the complex-pure-vector subspace of $\mathbb{B}$. A connection 1-form takes values in that subspace and has one component per tetrad direction, giving
 
 $$
 \underbrace{6}_{\text{real dim } \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}} \ \times\ \underbrace{4}_{\text{tetrad directions}} \ =\ 24 \ \text{real}\ =\ 12 \ \text{complex},
@@ -326,13 +326,13 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 
 | Symbol | Meaning |
 |--------|---------|
-| $\mathbb{B}$ | biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, scalar imaginary $i$ |
+| $\mathbb{B}$ | biquaternion algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, scalar imaginary $i$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | anti-Hermitian and Hermitian subspaces of $\mathbb{B}$; material and informational sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | real-quaternion subspace |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
 | $\langle\tilde Q,\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde Q\tilde P^{\natural})$ | the general quaternionic bilinear form on $\mathbb{M}_-$, the interval, of signature $(3,1)$ |
-| $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
+| $\Phi$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{Sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |
 | $o,\iota$ | normalized spinor dyad, $\varepsilon(o,\iota)=1$ |

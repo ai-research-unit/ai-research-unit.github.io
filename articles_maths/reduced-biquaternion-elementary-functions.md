@@ -2,29 +2,29 @@
 
 ## Introduction
 
-This article records the elementary functions of a reduced biquaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions. The key structural fact is the **idempotent decomposition**: the algebra is the direct product of two copies of $\mathbb{C}$, the idempotents $\Pi_{1,2}$ commute with everything, and the multiplication is componentwise, so every elementary function of a reduced biquaternion reduces to the corresponding elementary function of two ordinary complex numbers, one for each idempotent coordinate. Because the algebra is **commutative**, the functional equations that hold for commuting arguments in the quaternion and split biquaternion cases hold here for all arguments. The treatment is purely mathematical.
+This article records the elementary functions of a reduced biquaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm and the power functions. The key structural fact is the **idempotent decomposition**: the algebra is the direct product of two copies of $\mathbb{C}$, the idempotents $\Pi_{\pm}$ commute with everything, and the multiplication is componentwise, so every elementary function of a reduced biquaternion reduces to the corresponding elementary function of two ordinary complex numbers, one for each idempotent coordinate. Because the algebra is **commutative**, the functional equations that hold for commuting arguments in the quaternion and split biquaternion cases hold here for all arguments. The treatment is purely mathematical.
 
-Throughout the element is $T=A+Bj$ with $A=a+ia'$, $B=b+ib'$, the idempotent coordinates are $q_1=A+B$, $q_2=A-B$, and $T=q_1\Pi_{1}+q_2\Pi_{2}$ with $\Pi_{1,2}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$.
+Throughout the element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$, the idempotent coordinates are $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$, and $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $\Pi_{\pm}=\tfrac12(1\pm j)$. The basis is $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$.
 
 ## The Exponential
 
-**Definition.** For $T\in\mathbb{B}_{\mathrm{r}}$ the **exponential** is the series
+**Definition.** For $Q_\pm\in\mathbb{B}_{\mathrm{r}}$ the **exponential** is the series
 $$
-\exp T=\sum_{n\ge0}\frac{T^{n}}{n!},
+\exp Q_\pm=\sum_{n\ge0}\frac{Q_\pm^{n}}{n!},
 $$
-which converges for every $T$ because the algebra is finite-dimensional and the series converges in each coordinate.
+which converges for every $Q_\pm$ because the algebra is finite-dimensional and the series converges in each coordinate.
 
 **Theorem (the reduction and the closed form).** The exponential acts coefficientwise,
 $$
-\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}\bigl(\cosh B+j\sinh B\bigr),
+\exp Q_\pm=e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-=e^{Q_+}\bigl(\cosh Q_-+j\sinh Q_-\bigr),
 $$
 and it satisfies the functional equation for **all** arguments,
 $$
-\exp(T+W)=\exp T\;\exp W ,
+\exp(Q_\pm+Q_{\pm,2})=\exp Q_\pm\;\exp Q_{\pm,2} ,
 $$
 with $\exp 0=1$.
 
-*Proof.* Using $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$, the series splits into $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$; the second form follows from $q_1=A+B$, $q_2=A-B$ and $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=\tfrac12(e^{q_1}+e^{q_2})+\tfrac12(e^{q_1}-e^{q_2})j=e^{A}\cosh B+e^{A}\sinh B\,j$, because $e^{q_1}+e^{q_2}=e^{A}(e^{B}+e^{-B})$ and $e^{q_1}-e^{q_2}=e^{A}(e^{B}-e^{-B})$. The functional equation holds because the algebra is commutative, so the binomial series reassembles as the Cauchy product of the two exponentials; in the split biquaternion and quaternion cases the same computation fails for non-commuting arguments, the defect being measured by the commutator.
+*Proof.* Using $Q_\pm^{n}=Q_{++}^{n}\Pi_++Q_{--}^{n}\Pi_-$, the series splits into $e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-$; the second form follows from $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ and $e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-=\tfrac12(e^{Q_{++}}+e^{Q_{--}})+\tfrac12(e^{Q_{++}}-e^{Q_{--}})j=e^{Q_+}\cosh Q_-+e^{Q_+}\sinh Q_-\,j$, because $e^{Q_{++}}+e^{Q_{--}}=e^{Q_+}(e^{Q_-}+e^{-Q_-})$ and $e^{Q_{++}}-e^{Q_{--}}=e^{Q_+}(e^{Q_-}-e^{-Q_-})$. The functional equation holds because the algebra is commutative, so the binomial series reassembles as the Cauchy product of the two exponentials; in the split biquaternion and quaternion cases the same computation fails for non-commuting arguments, the defect being measured by the commutator.
 
 **Corollary (the hyperbolic unit).** The element $j$ has $j^{2}=+1$, so
 $$
@@ -32,89 +32,89 @@ $$
 $$
 the **hyperbolic exponential**, whose image is the hyperbola $H(\exp(j\phi))=\cosh^{2}\phi-\sinh^{2}\phi=1$ in the plane $\mathbb{R}\{1,j\}$, where $H(a+bj)=a^{2}-b^{2}$. The element $i$ has $i^{2}=-1$, so $\exp(i\theta)=\cos\theta+i\sin\theta$, whose image is the circle $K=1$ in the plane $\mathbb{R}\{1,i\}$, where $K(a+bi)=a^{2}+b^{2}$.
 
-*Proof.* The first identity is the closed form with $A=0$ and $B=\phi$ real, or the Maclaurin series of $\cosh$ and $\sinh$ in the split complex plane; the second is Euler's formula in the complex plane, where $q_1=q_2=i\theta$.
+*Proof.* The first identity is the closed form with $Q_+=0$ and $Q_-=\phi$ real, or the Maclaurin series of $\cosh$ and $\sinh$ in the split complex plane; the second is Euler's formula in the complex plane, where $Q_{++}=Q_{--}=i\theta$.
 
 ## The Trigonometric and Hyperbolic Functions
 
-**Definition.** For $T\in\mathbb{B}_{\mathrm{r}}$,
+**Definition.** For $Q_\pm\in\mathbb{B}_{\mathrm{r}}$,
 $$
-\cos T=\sum_{n\ge0}\frac{(-1)^{n}T^{2n}}{(2n)!},\qquad
-\sin T=\sum_{n\ge0}\frac{(-1)^{n}T^{2n+1}}{(2n+1)!},
+\cos Q_\pm=\sum_{n\ge0}\frac{(-1)^{n}Q_\pm^{2n}}{(2n)!},\qquad
+\sin Q_\pm=\sum_{n\ge0}\frac{(-1)^{n}Q_\pm^{2n+1}}{(2n+1)!},
 $$
-and likewise $\cosh T$ and $\sinh T$ without the alternating signs. Equivalently, from the exponential,
+and likewise $\cosh Q_\pm$ and $\sinh Q_\pm$ without the alternating signs. Equivalently, from the exponential,
 $$
-\cos T=\frac{e^{iT}+e^{-iT}}{2},\quad \sin T=\frac{e^{iT}-e^{-iT}}{2i},\quad
-\cosh T=\frac{e^{T}+e^{-T}}{2},\quad \sinh T=\frac{e^{T}-e^{-T}}{2}.
+\cos Q_\pm=\frac{e^{iQ_\pm}+e^{-iQ_\pm}}{2},\quad \sin Q_\pm=\frac{e^{iQ_\pm}-e^{-iQ_\pm}}{2i},\quad
+\cosh Q_\pm=\frac{e^{Q_\pm}+e^{-Q_\pm}}{2},\quad \sinh Q_\pm=\frac{e^{Q_\pm}-e^{-Q_\pm}}{2}.
 $$
 
 **Theorem (the reduction and the identities).** Each function acts coefficientwise,
 $$
-\cos T=\cos q_1\,\Pi_{1}+\cos q_2\,\Pi_{2},\qquad \mathrm{etc.},
+\cos Q_\pm=\cos Q_{++}\,\Pi_++\cos Q_{--}\,\Pi_-,\qquad \mathrm{etc.},
 $$
 and the Pythagorean and addition identities hold for all arguments,
 $$
-\cos^{2}T+\sin^{2}T=1,\qquad \cosh^{2}T-\sinh^{2}T=1,\qquad \cos(T+W)=\cos T\cos W-\sin T\sin W .
+\cos^{2}Q_\pm+\sin^{2}Q_\pm=1,\qquad \cosh^{2}Q_\pm-\sinh^{2}Q_\pm=1,\qquad \cos(Q_{\pm,1}+Q_{\pm,2})=\cos Q_{\pm,1}\cos Q_{\pm,2}-\sin Q_{\pm,1}\sin Q_{\pm,2} .
 $$
 
-*Proof.* The series split in the idempotent coordinates into the corresponding series of $q_1$ and of $q_2$; the identities hold in each coordinate by the classical complex identities, and since the algebra is commutative the addition formula needs no ordering correction.
+*Proof.* The series split in the idempotent coordinates into the corresponding series of $Q_{++}$ and of $Q_{--}$; the identities hold in each coordinate by the classical complex identities, and since the algebra is commutative the addition formula needs no ordering correction.
 
-**Corollary (the two kinds of rotation).** In the plane $\mathbb{R}\{1,i\}$ the map $T\mapsto e^{i\theta}T$ is the ordinary elliptic rotation by $\theta$; in the plane $\mathbb{R}\{1,j\}$ the map $T\mapsto e^{j\phi}T$ is the hyperbolic rotation by $\phi$, dilating the two halves $q_1,q_2$ reciprocally. This is the elliptic-versus-hyperbolic dichotomy carried by the two directions $i$ and $j$.
+**Corollary (the two kinds of rotation).** In the plane $\mathbb{R}\{1,i\}$ the map $Q_\pm\mapsto e^{i\theta}Q_\pm$ is the ordinary elliptic rotation by $\theta$; in the plane $\mathbb{R}\{1,j\}$ the map $Q_\pm\mapsto e^{j\phi}Q_\pm$ is the hyperbolic rotation by $\phi$, dilating the two halves $Q_{++},Q_{--}$ reciprocally. This is the elliptic-versus-hyperbolic dichotomy carried by the two directions $i$ and $j$.
 
-*Proof.* Multiplication by $e^{i\theta}=\cos\theta+i\sin\theta$ is the complex rotation in the first plane; multiplication by $e^{j\phi}=\cosh\phi+j\sinh\phi$ sends $q_1\mapsto e^{\phi}q_1$ and $q_2\mapsto e^{-\phi}q_2$, a reciprocal dilation, which is the hyperbolic rotation of the split complex plane.
+*Proof.* Multiplication by $e^{i\theta}=\cos\theta+i\sin\theta$ is the complex rotation in the first plane; multiplication by $e^{j\phi}=\cosh\phi+j\sinh\phi$ sends $Q_{++}\mapsto e^{\phi}Q_{++}$ and $Q_{--}\mapsto e^{-\phi}Q_{--}$, a reciprocal dilation, which is the hyperbolic rotation of the split complex plane.
 
 ## The Logarithm
 
-**Definition.** A **logarithm** of $T$ is a solution $S$ of $\exp S=T$.
+**Definition.** A **logarithm** of $Q_\pm$ is a solution $Q_{\pm,2}$ of $\exp Q_{\pm,2}=Q_\pm$.
 
-**Theorem (existence and the reduction).** An element has a logarithm if and only if it is a **unit**, that is $q_1\neq0$ and $q_2\neq0$, and then
+**Theorem (existence and the reduction).** An element has a logarithm if and only if it is a **unit**, that is $Q_{++}\neq0$ and $Q_{--}\neq0$, and then
 $$
-\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}
+\log Q_\pm=\log Q_{++}\,\Pi_++\log Q_{--}\,\Pi_-
 $$
-for a choice of the two complex branches. The principal value is obtained from the principal branch of the complex logarithm in each coordinate; the solution is determined modulo the kernel, which is the lattice $2\pi i\bigl(\mathbb{Z}\Pi_{1}+\mathbb{Z}\Pi_{2}\bigr)$.
+for a choice of the two complex branches. The principal value is obtained from the principal branch of the complex logarithm in each coordinate; the solution is determined modulo the kernel, which is the lattice $2\pi i\bigl(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-\bigr)$.
 
-*Proof.* The equation $e^{S}=T$ splits into $e^{s_{1}}=q_1$ and $e^{s_{2}}=q_2$, each solvable exactly for non-zero right-hand side, with solutions differing by $2\pi i$; the two coordinates are independent, and the non-units, having a vanishing coordinate, have no logarithm.
+*Proof.* The equation $e^{Q_{\pm,2}}=Q_\pm$ splits into $e^{s_{1}}=Q_{++}$ and $e^{s_{2}}=Q_{--}$, each solvable exactly for non-zero right-hand side, with solutions differing by $2\pi i$; the two coordinates are independent, and the non-units, having a vanishing coordinate, have no logarithm.
 
-**Corollary (the branch structure).** The logarithm exists on the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ but is not single-valued: it is a covering map onto the algebra, and a single-valued branch exists exactly on a simply connected domain of the unit group avoiding the two coordinate lines.
+**Corollary (the branch structure).** The logarithm exists on the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ but is not single-valued: it is a covering map onto the unit group, and a single-valued branch exists exactly on a simply connected domain of the unit group.
 
 *Proof.* The exponential is a local biholomorphism with discrete kernel, so its inverse is multivalued with the stated kernel, and a single-valued branch on a domain exists precisely when the domain is simply connected and avoids the two coordinate axes.
 
 ## The Power Functions
 
-**Definition.** For a unit $T$ and a complex exponent $s$, the **power** is
+**Definition.** For a unit $Q_\pm$ and a complex exponent $s$, the **power** is
 $$
-T^{s}=\exp(s\log T)=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2},
+Q_\pm^{s}=\exp(s\log Q_\pm)=Q_{++}^{s}\Pi_++Q_{--}^{s}\Pi_-,
 $$
-for a choice of the logarithms, and for an integer $s=n$ it agrees with the ordinary power $T^{n}$.
+for a choice of the logarithms, and for an integer $s=n$ it agrees with the ordinary power $Q_\pm^{n}$.
 
-**Theorem (the roots).** For a non-zero integer $n$ the equation $S^{n}=T$ has, for each unit $T$, exactly $n^{2}$ solutions, namely
+**Theorem (the roots).** For a non-zero integer $n$ the equation $Q_{\pm,2}^{n}=Q_\pm$ has, for each unit $Q_\pm$, exactly $n^{2}$ solutions, namely
 $$
-S=\Bigl(\eta_{1}\,q_1^{1/n}\Bigr)\Pi_{1}+\Bigl(\eta_{2}\,q_2^{1/n}\Bigr)\Pi_{2},
+Q_{\pm,2}=\Bigl(\eta_{1}\,Q_{++}^{1/n}\Bigr)\Pi_++\Bigl(\eta_{2}\,Q_{--}^{1/n}\Bigr)\Pi_-,
 $$
-where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity. In particular a unit has four square roots, $\pm q_1^{1/2}\Pi_{1}\pm q_2^{1/2}\Pi_{2}$; a zero divisor has the roots with the corresponding factor absent.
+where $\eta_{1},\eta_{2}$ range over the $n$-th roots of unity. In particular a unit has four square roots, $\pm Q_{++}^{1/2}\Pi_+\pm Q_{--}^{1/2}\Pi_-$; a zero divisor has the roots with the corresponding factor absent.
 
-*Proof.* In each coordinate the equation $s^{n}=q_1$ has the $n$ roots $\eta q_1^{1/n}$, and the two coordinates are independent, giving the product of the two counts; for the square root $n=2$ the roots of unity are $\pm1$ in each coordinate, whence the four sign combinations.
+*Proof.* In each coordinate the equation $s^{n}=Q_{++}$ has the $n$ roots $\eta Q_{++}^{1/n}$, and the two coordinates are independent, giving the product of the two counts; for the square root $n=2$ the roots of unity are $\pm1$ in each coordinate, whence the four sign combinations.
 
-**Corollary (the integer powers are polynomial).** For an integer $n\ge0$, $T^{n}=q_1^{n}\Pi_{1}+q_2^{n}\Pi_{2}$ is a polynomial in $T$, and for $n<0$ it is the inverse power on the units; the map $T\mapsto T^{n}$ is a homomorphism of the multiplicative monoid whose kernel on the unit group is the group of the $n$-th roots of unity in the two coordinates.
+**Corollary (the integer powers are polynomial).** For an integer $n\ge0$, $Q_\pm^{n}=Q_{++}^{n}\Pi_++Q_{--}^{n}\Pi_-$ is a polynomial in $Q_\pm$, and for $n<0$ it is the inverse power on the units; the map $Q_\pm\mapsto Q_\pm^{n}$ is a homomorphism of the multiplicative monoid whose kernel on the unit group is the group of the $n$-th roots of unity in the two coordinates.
 
-*Proof.* The integer powers are the iterated products, read in the coordinates; the kernel is the set of the $T$ with $q_1^{n}=q_2^{n}=1$.
+*Proof.* The integer powers are the iterated products, read in the coordinates; the kernel is the set of the $Q_\pm$ with $Q_{++}^{n}=Q_{--}^{n}=1$.
 
 ## Relations to the Complex and Split-Complex Cases
 
-**The complex case.** If the second coefficient vanishes, $T=A$, then $q_1=q_2=A$ and every elementary function reduces to the ordinary complex function, $f(T)=f(A)$: the reduced biquaternion function restricts to the complex function on the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$.
+**The complex case.** If the second coefficient vanishes, $Q_\pm=Q_+$, then $Q_{++}=Q_{--}=Q_+$ and every elementary function reduces to the ordinary complex function, $f(Q_\pm)=f(Q_+)$: the reduced biquaternion function restricts to the complex function on the complex line $\mathbb{C}=\mathbb{R}\{1,i\}$.
 
-**The split-complex case.** If both coefficients are real, $T=a+bj$ in the split complex algebra $\mathbb{D}=\mathbb{R}\{1,j\}$, then $q_1=a+b$ and $q_2=a-b$ are real and
+**The split-complex case.** If both coefficients are real, $Q_\pm=q_++jq_-$ in the split complex algebra $\mathbb{D}=\mathbb{R}\{1,j\}$, then $Q_{++}=q_++q_-$ and $Q_{--}=q_+-q_-$ are real and
 $$
-\exp(a+bj)=e^{a}\bigl(\cosh b+j\sinh b\bigr),\qquad \log(a+bj)=\tfrac12\log(a^{2}-b^{2})+\tfrac12 j\log\frac{a+b}{a-b},
+\exp(q_++jq_-)=e^{q_+}\bigl(\cosh q_-+j\sinh q_-\bigr),\qquad \log(q_++jq_-)=\tfrac12\log(q_+^{2}-q_-^{2})+\tfrac12 j\log\frac{q_++q_-}{q_+-q_-},
 $$
-on the units with $a>|b|$, so that $a\pm b>0$ and the principal logarithms are real; the reduced biquaternion functions restrict to these on the split complex plane.
+on the units with $q_+>|q_-|$, so that $q_+\pm q_->0$ and the principal logarithms are real; the reduced biquaternion functions restrict to these on the split complex plane.
 
-*Proof.* On the complex line $B=0$ and $q_1=q_2=A$, so both coordinates carry the same function; on the split complex plane the coefficients are real, $q_1=a+b$ and $q_2=a-b$, and substitution in the two-factor formulas gives the displayed expressions, the sums and differences of the two logarithms reproducing the hyperbolic and the logarithmic forms.
+*Proof.* On the complex line $Q_-=0$ and $Q_{++}=Q_{--}=Q_+$, so both coordinates carry the same function; on the split complex plane the coefficients are real, $Q_{++}=q_++q_-$ and $Q_{--}=q_+-q_-$, and substitution in the two-factor formulas gives the displayed expressions, the sums and differences of the two logarithms reproducing the hyperbolic and the logarithmic forms.
 
 ## The Reduction to Two Complex Factors
 
 **Theorem (the general reduction principle).** Let $F$ be a function defined on a set of complex numbers by a power series with a non-zero radius of convergence, or by an integral of a holomorphic kernel. Then $F$ extends to the reduced biquaternion algebra by
 $$
-F(T)=F(q_1)\,\Pi_{1}+F(q_2)\,\Pi_{2},
+F(Q_\pm)=F(Q_{++})\,\Pi_++F(Q_{--})\,\Pi_-,
 $$
 and the extension is a homomorphism property for the pointwise operations: it commutes with sums, with products, with the conjugations that preserve the factors, and with the differentiation $\bar\partial$. Every elementary function above is the special case of the principle applied to the corresponding complex function.
 
@@ -124,36 +124,36 @@ and the extension is a homomorphism property for the pointwise operations: it co
 
 | Function | Value | Domain |
 |---|---|---|
-| $\exp T$ | $e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}(\cosh B+j\sinh B)$ | all $T$ |
-| $\exp(T+W)$ | $\exp T\exp W$ | all $T,W$, the algebra being commutative |
+| $\exp Q_\pm$ | $e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-=e^{Q_+}(\cosh Q_-+j\sinh Q_-)$ | all $Q_\pm$ |
+| $\exp(Q_{\pm,1}+Q_{\pm,2})$ | $\exp Q_{\pm,1}\exp Q_{\pm,2}$ | all $Q_{\pm,1},Q_{\pm,2}$, the algebra being commutative |
 | $\exp(j\phi)$ | $\cosh\phi+j\sinh\phi$ | $\phi\in\mathbb{R}$ |
 | $\exp(i\theta)$ | $\cos\theta+i\sin\theta$ | $\theta\in\mathbb{R}$ |
-| $\cos T,\ \sin T$ | $\cos q_1\,\Pi_{1}+\cos q_2\,\Pi_{2}$, $\sin q_1\,\Pi_{1}+\sin q_2\,\Pi_{2}$ | all $T$ |
-| $\cosh T,\ \sinh T$ | $\cosh q_1\,\Pi_{1}+\cosh q_2\,\Pi_{2}$, $\sinh q_1\,\Pi_{1}+\sinh q_2\,\Pi_{2}$ | all $T$ |
-| $\log T$ | $\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}$ | the units, branch choice |
-| $T^{s}$ | $q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$ | the units, branch choice |
-| $S^{n}=T$ | $n^{2}$ solutions $\eta_{1}q_1^{1/n}\Pi_{1}+\eta_{2}q_2^{1/n}\Pi_{2}$ | $T$ a unit |
+| $\cos Q_\pm,\ \sin Q_\pm$ | $\cos Q_{++}\,\Pi_++\cos Q_{--}\,\Pi_-$, $\sin Q_{++}\,\Pi_++\sin Q_{--}\,\Pi_-$ | all $Q_\pm$ |
+| $\cosh Q_\pm,\ \sinh Q_\pm$ | $\cosh Q_{++}\,\Pi_++\cosh Q_{--}\,\Pi_-$, $\sinh Q_{++}\,\Pi_++\sinh Q_{--}\,\Pi_-$ | all $Q_\pm$ |
+| $\log Q_\pm$ | $\log Q_{++}\,\Pi_++\log Q_{--}\,\Pi_-$ | the units, branch choice |
+| $Q_\pm^{s}$ | $Q_{++}^{s}\Pi_++Q_{--}^{s}\Pi_-$ | the units, branch choice |
+| $Q_{\pm,2}^{n}=Q_\pm$ | $n^{2}$ solutions $\eta_{1}Q_{++}^{1/n}\Pi_++\eta_{2}Q_{--}^{1/n}\Pi_-$ | $Q_\pm$ a unit |
 
 ## Comparison with the Biquaternion Case
 
-The biquaternion algebra $M_{2}(\mathbb{C})$ is simple and non-commutative; its exponential is a matrix exponential, its trigonometric functions are entire but the functional equations fail for non-commuting arguments, and the logarithm requires the matrix logarithm with its own branch structure. The reduced biquaternion algebra replaces the single matrix exponential by the **pair** of complex exponentials of the two idempotent coordinates: the functional equation $\exp(T+W)=\exp T\exp W$ holds for all arguments because the algebra is commutative, the trigonometric functions are the two complex trigonometric functions, the logarithm exists exactly on the units and is the pair of complex logarithms, and the power functions have the $n^{2}$ roots of the two coordinates. The split biquaternion case is the same pair structure with the quaternion exponential in each half; the reduced case is the commutative member in which every elementary function is a pair of complex elementary functions.
+The biquaternion algebra $M_{2}(\mathbb{C})$ is simple and non-commutative; its exponential is a matrix exponential, its trigonometric functions are entire but the functional equations fail for non-commuting arguments, and the logarithm requires the matrix logarithm with its own branch structure. The reduced biquaternion algebra replaces the single matrix exponential by the **pair** of complex exponentials of the two idempotent coordinates: the functional equation $\exp(Q_\pm+Q_{\pm,2})=\exp Q_\pm\exp Q_{\pm,2}$ holds for all arguments because the algebra is commutative, the trigonometric functions are the two complex trigonometric functions, the logarithm exists exactly on the units and is the pair of complex logarithms, and the power functions have the $n^{2}$ roots of the two coordinates. The split biquaternion case is the same pair structure with the quaternion exponential in each half; the reduced case is the commutative member in which every elementary function is a pair of complex elementary functions.
 
 ## Summary
 
-Every elementary function of a reduced biquaternion variable is the pair of the corresponding complex elementary functions of the two idempotent coordinates: the exponential is $\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}=e^{A}(\cosh B+j\sinh B)$, with the functional equation holding for all arguments because the algebra is commutative; the element $i$ generates the elliptic rotation, $\exp(i\theta)=\cos\theta+i\sin\theta$, and the element $j$ the hyperbolic one, $\exp(j\phi)=\cosh\phi+j\sinh\phi$, dilating the two halves reciprocally. The trigonometric and hyperbolic functions are the pairs $\cos q_1\Pi_{1}+\cos q_2\Pi_{2}$ and the like, and the Pythagorean and addition identities hold for all arguments. The logarithm exists exactly on the units, $q_1,q_2\neq0$, and is $\log q_1\Pi_{1}+\log q_2\Pi_{2}$ for a branch choice in each coordinate, the kernel being the lattice $2\pi i(\mathbb{Z}\Pi_{1}+\mathbb{Z}\Pi_{2})$. The power $T^{s}=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$, and the equation $S^{n}=T$ has $n^{2}$ solutions for a unit, in particular four square roots. On the complex line the functions restrict to the complex ones, on the split complex plane to the split complex ones, and the general principle is that every function defined by a power series or a holomorphic integral extends coefficientwise. Against the biquaternion case, where the matrix exponential and the matrix logarithm carry the non-commutative branch structure, the reduced biquaternion elementary functions are the two commutative complex ones.
+Every elementary function of a reduced biquaternion variable is the pair of the corresponding complex elementary functions of the two idempotent coordinates: the exponential is $\exp Q_\pm=e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-=e^{Q_+}(\cosh Q_-+j\sinh Q_-)$, with the functional equation holding for all arguments because the algebra is commutative; the element $i$ generates the elliptic rotation, $\exp(i\theta)=\cos\theta+i\sin\theta$, and the element $j$ the hyperbolic one, $\exp(j\phi)=\cosh\phi+j\sinh\phi$, dilating the two halves reciprocally. The trigonometric and hyperbolic functions are the pairs $\cos Q_{++}\Pi_++\cos Q_{--}\Pi_-$ and the like, and the Pythagorean and addition identities hold for all arguments. The logarithm exists exactly on the units, $Q_{++},Q_{--}\neq0$, and is $\log Q_{++}\Pi_++\log Q_{--}\Pi_-$ for a branch choice in each coordinate, the kernel being the lattice $2\pi i(\mathbb{Z}\Pi_++\mathbb{Z}\Pi_-)$. The power $Q_\pm^{s}=Q_{++}^{s}\Pi_++Q_{--}^{s}\Pi_-$, and the equation $Q_{\pm,2}^{n}=Q_\pm$ has $n^{2}$ solutions for a unit, in particular four square roots. On the complex line the functions restrict to the complex ones, on the split complex plane to the split complex ones, and the general principle is that every function defined by a power series or a holomorphic integral extends coefficientwise. Against the biquaternion case, where the matrix exponential and the matrix logarithm carry the non-commutative branch structure, the reduced biquaternion elementary functions are the two commutative complex ones.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $T=A+Bj$ | Element, $A=a+ia'$, $B=b+ib'$ |
-| $q_1=A+B$, $q_2=A-B$ | Idempotent coordinates |
-| $\Pi_{1,2}=\tfrac12(1\pm j)$ | Idempotents |
-| $\exp T=e^{q_1}\Pi_{1}+e^{q_2}\Pi_{2}$ | Exponential |
+| $Q_\pm=Q_++jQ_-$ | Element, $Q_+=q_++iq'_+$, $Q_-=q_-+iq'_-$ |
+| $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ | Idempotent coordinates |
+| $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
+| $\exp Q_\pm=e^{Q_{++}}\Pi_++e^{Q_{--}}\Pi_-$ | Exponential |
 | $e^{j\phi}=\cosh\phi+j\sinh\phi$ | Hyperbolic exponential |
 | $e^{i\theta}=\cos\theta+i\sin\theta$ | Elliptic exponential |
-| $\log T=\log q_1\,\Pi_{1}+\log q_2\,\Pi_{2}$ | Logarithm on the units |
-| $T^{s}=q_1^{s}\Pi_{1}+q_2^{s}\Pi_{2}$ | Power function |
+| $\log Q_\pm=\log Q_{++}\,\Pi_++\log Q_{--}\,\Pi_-$ | Logarithm on the units |
+| $Q_\pm^{s}=Q_{++}^{s}\Pi_++Q_{--}^{s}\Pi_-$ | Power function |
 | $\eta_{1},\eta_{2}$ | $n$-th roots of unity of the two coordinates |
 
 ## Further Reading

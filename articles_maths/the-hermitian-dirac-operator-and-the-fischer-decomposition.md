@@ -14,7 +14,7 @@ bivariate representation of those polynomials in the variables $z_j,\bar z_j$ to
 basis.
 
 The setting, the Witt basis $f_j,f_j^{*}$ and the two operators
-$\partial_{\underline z}, \partial_{\bar z}$ are as in the preceding article, and its notation is
+$\partial/\partial\underline z, \partial/\partial\bar z$ are as in the preceding article, and its notation is
 used without repetition. The quaternionic case, with four operators and the Hadamard sign patterns,
 is *Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator*; the integral theory
 is *The Hermitian Cauchy Integral and the Boundary Values*; the adjoint and the operator-theoretic
@@ -27,8 +27,8 @@ which the one here is the refinement, is *The Fischer Operator*; and the general
 ### The Pair and its Symbols
 
 **Definition.** The **Hermitian Dirac operators** are the pair
-$\partial_{\underline z}=\sum_jf_j\partial_{z_j}$ and
-$\partial_{\bar z}=\sum_jf_j^{*}\partial_{\bar z_j}$ of the preceding article. Their principal
+$\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$ and
+$\partial/\partial\bar z=\sum_jf_j^{*}\partial/\partial\bar z_j$ of the preceding article. Their principal
 symbols are left multiplication by the algebra elements $\sum_jf_j\xi_{z_j}$ and
 $\sum_jf_j^{*}\xi_{\bar z_j}$.
 
@@ -49,11 +49,11 @@ while their anticommutator is the Laplacian and therefore elliptic.
 between $j\neq k$ by the anticommutation of the Witt basis against the commutativity of the
 coefficients; the pairing is the diagonal anticommutator $\{f_j,f_j^{*}\}=1$. The failure of
 ellipticity is the vanishing of the symbol on the covectors with $\xi_{z_j}\neq0$ for some $j$ (for
-$\partial_{\bar z}$) respectively $\xi_{\bar z_j}\neq0$ (for $\partial_{\underline z}$), which is
+$\partial/\partial\bar z$) respectively $\xi_{\bar z_j}\neq0$ (for $\partial/\partial\underline z$), which is
 the isotropy of the Witt basis.
 
 **Remark (ellipticity recovered by the pair).** Neither operator is elliptic, but the operator
-$\partial_{\underline z}-\partial_{\bar z}=\tfrac12D$ is, and the pair has the elliptic Laplacian as
+$\partial/\partial\underline z-\partial/\partial\bar z=\tfrac12D$ is, and the pair has the elliptic Laplacian as
 its anticommutator. The refinement substitutes a non-elliptic pair with an elliptic second-order
 invariant for a single elliptic first-order operator; this is the operator content of the strictness
 recorded in the preceding article.
@@ -61,9 +61,9 @@ recorded in the preceding article.
 ### The Differential Complex and the Split
 
 **Theorem (the split of the operator and of the Laplacian).**
-$D=2(\partial_{\underline z}-\partial_{\bar z})$,
-$\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$, and
-$\partial_{\underline z}^2=\partial_{\bar z}^2=0$.
+$D=2(\partial/\partial\underline z-\partial/\partial\bar z)$,
+$\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$, and
+$(\partial/\partial\underline z)^2=(\partial/\partial\bar z)^2=0$.
 
 *Proof.* The identities are the theorem of the preceding article; they are restated here because
 they are the two structural facts on which the Fischer decomposition rests.
@@ -89,14 +89,14 @@ Z^2 = 0 , \qquad (Z^{*})^2 = 0 , \qquad Z Z^{*}+Z^{*}Z = \sum_{j=1}^{n}|z_j|^2 =
 $$
 
 Moreover $Z$ and $Z^{*}$ are **Hermitian monogenic**,
-$\partial_{\underline z}Z=\partial_{\bar z}Z=\partial_{\underline z}Z^{*} =\partial_{\bar z}Z^{*}=0$.
+$\partial/\partial\underline z\,Z=\partial/\partial\bar z\,Z=\partial/\partial\underline z\,Z^{*} =\partial/\partial\bar z\,Z^{*}=0$.
 
 *Proof.* The first display is the computation of the Witt relations against the scalar coefficients:
 the cross terms cancel by $f_jf_k=-f_kf_j$ with $z_jz_k=z_kz_j$, and the pairing is diagonal. For
 the second, each operator acts termwise; the diagonal terms are killed by $f_j^2=0$ respectively
-$(f_j^{*})^2=0$, and the cross terms vanish because $\partial_{z_j}z_k=0$ and
-$\partial_{\bar z_j}\bar z_k=0$ for $j\neq k$ while
-$\partial_{\bar z_j}z_k=\partial_{z_j}\bar z_k=0$ for all $j,k$. Hence all four derivatives vanish
+$(f_j^{*})^2=0$, and the cross terms vanish because $\partial/\partial z_j\,z_k=0$ and
+$\partial/\partial\bar z_j\,\bar z_k=0$ for $j\neq k$ while
+$\partial/\partial\bar z_j\,z_k=\partial/\partial z_j\,\bar z_k=0$ for all $j,k$. Hence all four derivatives vanish
 on $Z$ and on $Z^{*}$.
 
 **Remark (the Fischer duality).** The relations $Z^2=0$, $\{Z,Z^{*}\}=|z|^2$ are the Hermitian form
@@ -112,7 +112,7 @@ the Hadamard matrix; *Clifford Analysis* records the construction there.
 degree $k$ on $\mathbb{C}^n$, and let
 
 $$
-\mathcal{M}_k^{\mathrm{H}} = \{P\in\mathcal{P}_k : \partial_{\underline z}P=\partial_{\bar z}P=0\}
+\mathcal{M}_k^{\mathrm{H}} = \{P\in\mathcal{P}_k : \partial/\partial\underline z\,P=\partial/\partial\bar z\,P=0\}
 $$
 
 be the space of **Hermitian monogenic homogeneous polynomials** of degree $k$.
@@ -134,7 +134,7 @@ $$
 computed from the bivariate structure of the following section.
 
 *Proof.* Quoted as standard from the Hermitian Fischer theory. The proof is the triangular induction
-of *The Fischer Operator* with the pair $(\partial_{\underline z},\partial_{\bar z})$ in place of
+of *The Fischer Operator* with the pair $(\partial/\partial\underline z,\partial/\partial\bar z)$ in place of
 $D$ and the Hermitian variables in place of $x^{\natural}$: the operators lower the degree, the
 multipliers raise it, the Fischer lemma holds for the pair, and the layers are the simultaneous
 kernels. The decomposition is finer than the monogenic one because the kernel of a pair is smaller
@@ -180,12 +180,12 @@ the model is the repère for the general case.
 
 ## Summary
 
-The Hermitian Dirac operators $\partial_{\underline z}=\sum_jf_j\partial_{z_j}$ and
-$\partial_{\bar z}=\sum_jf_j^{*}\partial_{\bar z_j}$ have isotropic symbols,
+The Hermitian Dirac operators $\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$ and
+$\partial/\partial\bar z=\sum_jf_j^{*}\partial/\partial\bar z_j$ have isotropic symbols,
 $(\sum_jf_j\xi_{z_j})^2=(\sum_jf_j^{*}\xi_{\bar z_j})^2=0$, pairing to the scalar
 $\sum_j\xi_{z_j}\eta_{\bar z_j}$; neither is elliptic, but
-$D=2(\partial_{\underline z}-\partial_{\bar z})$ is, and
-$\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$. The algebra they generate is
+$D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ is, and
+$\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$. The algebra they generate is
 the exterior algebra on the Witt basis. The **Hermitian variables** $Z=\sum_jz_jf_j$ and
 $Z^{*}=\sum_j\bar z_jf_j^{*}$ are isotropic, $Z^2=(Z^{*})^2=0$, pair to the norm,
 $\{Z,Z^{*}\}=|z|^2$, and are themselves Hermitian monogenic; they are the Fischer duals of the two
@@ -205,7 +205,7 @@ Values*.
 
 | Symbol | Meaning |
 |---|---|
-| $\partial_{\underline z},\partial_{\bar z}$ | Hermitian Dirac operators; isotropic, pair to $\tfrac14\Delta_{2n}$ |
+| $\partial/\partial\underline z,\partial/\partial\bar z$ | Hermitian Dirac operators; isotropic, pair to $\tfrac14\Delta_{2n}$ |
 | $Z=\sum_jz_jf_j$, $Z^{*}=\sum_j\bar z_jf_j^{*}$ | Hermitian variables; Fischer duals |
 | $Z^2=(Z^{*})^2=0$, $\{Z,Z^{*}\}=|z|^2$ | Relations of the Hermitian variables |
 | $\mathcal{M}^{\mathrm H}_k$ | Hermitian monogenic homogeneous polynomials of degree $k$ |

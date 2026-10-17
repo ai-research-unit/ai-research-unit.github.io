@@ -23,7 +23,7 @@ The equivalence is immediate: the map $g h^{-1}$ is continuous when multiplicati
 
 **Example (the additive groups).** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$ and $\mathbb{K}^n$ with addition and the usual topology are topological groups, abelian and written additively. The circle group $S^1 = \{z \in \mathbb{C} : |z| = 1\}$ with complex multiplication and the subspace topology is a compact topological group, isomorphic to $\mathbb{R}/\mathbb{Z}$.
 
-**Example (matrix groups).** The general linear group $GL_n(\mathbb{K})$ with the topology induced from $\mathbb{K}^{n^2}$ is a topological group, locally compact, and non-compact for $n \geq 1$; the orthogonal group $O(n)$, the special orthogonal group $SO(n)$ and the unitary group $U(n)$ are compact topological groups. These are treated.
+**Example (matrix groups).** The general linear group $GL_n(\mathbb{K})$ with the topology induced from $\mathbb{K}^{n^2}$ is a topological group, locally compact, and non-compact for $n \geq 1$; the orthogonal group $O(n)$, the special orthogonal group $SO(n)$ and the unitary group $\mathrm{U}(n)$ are compact topological groups. These are treated.
 
 **Example (discrete and trivial).** Every group with the discrete topology is a topological group, and every group with the trivial topology is one. A discrete group is compact exactly when it is finite, and locally compact always.
 
@@ -47,13 +47,13 @@ Homogeneity is the reason a topological group is described by data at $e$ alone.
 
 **Theorem (the local-base axioms).** Let $\mathcal{N}$ be the family of neighbourhoods of $e$ in a topological group $G$. Then
 
-**(a)** for every $U \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $V V \subseteq U$;
+**(a)** for every $\Omega \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $V V \subseteq \Omega$;
 
-**(b)** for every $U \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $V^{-1} \subseteq U$;
+**(b)** for every $\Omega \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $V^{-1} \subseteq \Omega$;
 
-**(c)** for every $U \in \mathcal{N}$ and $g \in G$ there is $V \in \mathcal{N}$ with $g V g^{-1} \subseteq U$, and $\mathcal{N}$ is invariant under inversion as a family: $U \in \mathcal{N} \iff U^{-1} \in \mathcal{N}$;
+**(c)** for every $\Omega \in \mathcal{N}$ and $g \in G$ there is $V \in \mathcal{N}$ with $g V g^{-1} \subseteq \Omega$, and $\mathcal{N}$ is invariant under inversion as a family: $\Omega \in \mathcal{N} \iff \Omega^{-1} \in \mathcal{N}$;
 
-**(d)** if $x \in U \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $x V \subseteq U$.
+**(d)** if $x \in \Omega \in \mathcal{N}$ there is $V \in \mathcal{N}$ with $x V \subseteq \Omega$.
 
 Conversely, given a group $G$ and a filter base $\mathcal{N}$ of subsets containing $e$ satisfying (a), (b) and (c), the sets $g V$ with $g \in G$, $V \in \mathcal{N}$ form a base for a topology making $G$ a topological group with $\mathcal{N}$ as a neighbourhood base at $e$.
 
@@ -69,7 +69,7 @@ The corollary is used constantly: in a topological group, a subgroup that is ope
 
 **Theorem.** For a topological group $G$ the following are equivalent: $G$ is $T_0$; $G$ is $T_1$; $\{e\}$ is closed; $G$ is Hausdorff; $G$ is Tychonoff. In particular the weakest separation hypothesis implies all the others.
 
-**Proof.** The set $N = \overline{\{e\}} = \bigcap \{U : U \text{ a neighbourhood of } e\}$ is a subgroup: it is contained in every neighbourhood of $e$, and if $x, y \in N$ and $U$ is a neighbourhood of $e$, choose $V$ with $V V \subseteq U$; then $x \in V$, $y \in V$ give $xy \in U$, and $x^{-1} \in U$ by the corresponding property of a neighbourhood base. Hence if $G$ is $T_0$ then $N = \{e\}$: for $x \neq e$ in $N$, $T_0$ provides an open set containing exactly one of $e, x$; if it contains $e$ it is a neighbourhood of $e$ and so contains $x$, a contradiction, and if it contains $x$ but not $e$, then translating it to $x^{-1}U$, a neighbourhood of $e$, gives $x \in x^{-1}U$ and $x^{-1} \in x^{-1}U$, whence $x = x^{-1}u$ and $x^{-1} = x^{-1}u'$ with $u, u' \in U$, so $u' = e$, contradicting $e \notin U$. Thus $\{e\}$ is closed and $G$ is $T_1$. Now let $g \neq h$ in $G$; then $gh^{-1} \neq e$, so there is a neighbourhood $U$ of $e$ with $gh^{-1} \notin U$; choose a symmetric $V$ with $V V \subseteq U$, and then $Vg$ and $Vh$ are disjoint neighbourhoods of $g$ and $h$, since a common point $vg = v'h$ would give $v^{-1}v' = gh^{-1} \in V^{-1}V = VV \subseteq U$. So $G$ is Hausdorff, and Tychonoff follows because a Hausdorff topological group is uniformisable, as the next section shows.
+**Proof.** The set $N = \overline{\{e\}} = \bigcap \{\Omega : \Omega \text{ a neighbourhood of } e\}$ is a subgroup: it is contained in every neighbourhood of $e$, and if $x, y \in N$ and $\Omega$ is a neighbourhood of $e$, choose $V$ with $V V \subseteq \Omega$; then $x \in V$, $y \in V$ give $xy \in \Omega$, and $x^{-1} \in \Omega$ by the corresponding property of a neighbourhood base. Hence if $G$ is $T_0$ then $N = \{e\}$: for $x \neq e$ in $N$, $T_0$ provides an open set containing exactly one of $e, x$; if it contains $e$ it is a neighbourhood of $e$ and so contains $x$, a contradiction, and if it contains $x$ but not $e$, then translating it to $x^{-1}\Omega$, a neighbourhood of $e$, gives $x \in x^{-1}\Omega$ and $x^{-1} \in x^{-1}\Omega$, whence $x = x^{-1}u$ and $x^{-1} = x^{-1}u'$ with $u, u' \in \Omega$, so $u' = e$, contradicting $e \notin \Omega$. Thus $\{e\}$ is closed and $G$ is $T_1$. Now let $g \neq h$ in $G$; then $gh^{-1} \neq e$, so there is a neighbourhood $\Omega$ of $e$ with $gh^{-1} \notin \Omega$; choose a symmetric $V$ with $V V \subseteq \Omega$, and then $Vg$ and $Vh$ are disjoint neighbourhoods of $g$ and $h$, since a common point $vg = v'h$ would give $v^{-1}v' = gh^{-1} \in V^{-1}V = VV \subseteq \Omega$. So $G$ is Hausdorff, and Tychonoff follows because a Hausdorff topological group is uniformisable, as the next section shows.
 
 **Remark.** Thus in a topological group the weakest of the separation hypotheses implies all the rest up to Tychonoff, because homogeneity propagates the separation of $e$ from any other point everywhere. This is a general phenomenon: a Hausdorff topological group is Tychonoff and uniformisable, so its topology is described by a family of continuous left-invariant pseudometrics, and it is normal as soon as it is locally compact or metrisable.
 
@@ -82,16 +82,16 @@ Since the topology is homogeneous, the neighbourhoods of $e$ give uniform closen
 **Definition.** The **left uniformity** $\mathcal{U}_L$ on $G$ has as a base the sets
 
 $$
-E_U = \{(g, h) : g^{-1} h \in U\}, \qquad U \text{ a neighbourhood of } e,
+E_\Omega = \{(g, h) : g^{-1} h \in \Omega\}, \qquad \Omega \text{ a neighbourhood of } e,
 $$
 
-and the **right uniformity** $\mathcal{U}_R$ has as a base the sets $F_U = \{(g, h) : g h^{-1} \in U\}$. The **two-sided uniformity** is the supremum of the two.
+and the **right uniformity** $\mathcal{U}_R$ has as a base the sets $F_\Omega = \{(g, h) : g h^{-1} \in \Omega\}$. The **two-sided uniformity** is the supremum of the two.
 
-**Theorem.** $\mathcal{U}_L$ and $\mathcal{U}_R$ are uniform structures on $G$, both inducing the given topology; left translations are uniformly continuous for $\mathcal{U}_L$, right translations for $\mathcal{U}_R$, and inversion is a uniform isomorphism from $(G, \mathcal{U}_L)$ to $(G, \mathcal{U}_R)$. The sets $E_U$ with $U$ ranging over a neighbourhood base at $e$ form a base; symmetry uses $U \cap U^{-1}$ and the composition axiom uses the local-base axiom (a).
+**Theorem.** $\mathcal{U}_L$ and $\mathcal{U}_R$ are uniform structures on $G$, both inducing the given topology; left translations are uniformly continuous for $\mathcal{U}_L$, right translations for $\mathcal{U}_R$, and inversion is a uniform isomorphism from $(G, \mathcal{U}_L)$ to $(G, \mathcal{U}_R)$. The sets $E_\Omega$ with $\Omega$ ranging over a neighbourhood base at $e$ form a base; symmetry uses $\Omega \cap \Omega^{-1}$ and the composition axiom uses the local-base axiom (a).
 
-**Proof.** Each of the axioms (U1)–(U3) of a uniform structure is one of the local-base axioms at $e$: the diagonal is contained in $E_U$ because $g^{-1}g = e \in U$; the symmetry of the neighbourhood base under inversion gives $E_U^{-1} = E_{U^{-1}}$; and $E_V \circ E_V \subseteq E_U$ whenever $V V \subseteq U$. The uniform topology is the given topology because $E_U[g] = gU$ is a basic neighbourhood of $g$, and the sets $gU$ with $U$ a neighbourhood of $e$ form a base for the topology by the results of the previous section. For the statements about translations, $L_{g_0}$ is uniformly continuous because $(L_{g_0}(g), L_{g_0}(h)) \in E_U$ as soon as $(g, h) \in E_U$, the relation $g^{-1}h = (g_0 g)^{-1}(g_0 h)$ being translation-invariant on the left; right translations are uniformly continuous for the right uniformity for the same reason. Inversion carries $E_U$ to $F_U$, since $(g, h) \in E_U$ means $g^{-1}h \in U$ and then $(g^{-1}, h^{-1})$ satisfies $g^{-1}(h^{-1})^{-1} = g^{-1}h \in U$, that is $(g^{-1}, h^{-1}) \in F_U$; so inversion is a uniform isomorphism between the two uniformities.
+**Proof.** Each of the axioms (U1)–(U3) of a uniform structure is one of the local-base axioms at $e$: the diagonal is contained in $E_\Omega$ because $g^{-1}g = e \in \Omega$; the symmetry of the neighbourhood base under inversion gives $E_\Omega^{-1} = E_{\Omega^{-1}}$; and $E_V \circ E_V \subseteq E_\Omega$ whenever $V V \subseteq \Omega$. The uniform topology is the given topology because $E_\Omega[g] = gU$ is a basic neighbourhood of $g$, and the sets $gU$ with $\Omega$ a neighbourhood of $e$ form a base for the topology by the results of the previous section. For the statements about translations, $L_{g_0}$ is uniformly continuous because $(L_{g_0}(g), L_{g_0}(h)) \in E_\Omega$ as soon as $(g, h) \in E_\Omega$, the relation $g^{-1}h = (g_0 g)^{-1}(g_0 h)$ being translation-invariant on the left; right translations are uniformly continuous for the right uniformity for the same reason. Inversion carries $E_\Omega$ to $F_\Omega$, since $(g, h) \in E_\Omega$ means $g^{-1}h \in \Omega$ and then $(g^{-1}, h^{-1})$ satisfies $g^{-1}(h^{-1})^{-1} = g^{-1}h \in \Omega$, that is $(g^{-1}, h^{-1}) \in F_\Omega$; so inversion is a uniform isomorphism between the two uniformities.
 
-**Remark.** The two uniformities coincide exactly when the identity has a neighbourhood base of **conjugation-invariant** sets: when every neighbourhood $U$ of $e$ contains a neighbourhood $V$ of $e$ with $g V g^{-1} \subseteq V$ for all $g \in G$, equivalently when the group carries a bi-invariant uniformity. This condition is strictly stronger than unimodularity. A locally compact group with an invariant neighbourhood base is unimodular, since its Haar measure is then invariant under every inner automorphism; the converse fails, the standard witness being the **Heisenberg group** of upper unitriangular $3 \times 3$ real matrices, in the coordinates
+**Remark.** The two uniformities coincide exactly when the identity has a neighbourhood base of **conjugation-invariant** sets: when every neighbourhood $\Omega$ of $e$ contains a neighbourhood $V$ of $e$ with $g V g^{-1} \subseteq V$ for all $g \in G$, equivalently when the group carries a bi-invariant uniformity. This condition is strictly stronger than unimodularity. A locally compact group with an invariant neighbourhood base is unimodular, since its Haar measure is then invariant under every inner automorphism; the converse fails, the standard witness being the **Heisenberg group** of upper unitriangular $3 \times 3$ real matrices, in the coordinates
 
 $$
 \begin{pmatrix} 1 & x & z \\ 0 & 1 & y \\ 0 & 0 & 1 \end{pmatrix},
@@ -117,9 +117,9 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 ### Subgroups
 
-**Definition.** A **topological subgroup** of $G$ is a subgroup $H$ with the subspace topology, making $H$ a topological group in its own right. The **closure** $\overline H$ of a subgroup is a subgroup. The set $\bigcap\{U : U \text{ a neighbourhood of } e\} = \overline{\{e\}}$ is a closed normal subgroup, and it is $\{e\}$ exactly when $G$ is $T_1$, hence in particular whenever $G$ is Hausdorff.
+**Definition.** A **topological subgroup** of $G$ is a subgroup $H$ with the subspace topology, making $H$ a topological group in its own right. The **closure** $\overline H$ of a subgroup is a subgroup. The set $\bigcap\{\Omega : \Omega \text{ a neighbourhood of } e\} = \overline{\{e\}}$ is a closed normal subgroup, and it is $\{e\}$ exactly when $G$ is $T_1$, hence in particular whenever $G$ is Hausdorff.
 
-**Theorem.** If $H \leq G$ then $\overline H \leq G$; if $H$ is normal then $\overline H$ is normal. If $H$ is a subgroup and $U$ is open in $G$ with $H \cap U \neq \emptyset$, then $H \cap U$ is open in $H$.
+**Theorem.** If $H \leq G$ then $\overline H \leq G$; if $H$ is normal then $\overline H$ is normal. If $H$ is a subgroup and $\Omega$ is open in $G$ with $H \cap \Omega \neq \emptyset$, then $H \cap \Omega$ is open in $H$.
 
 **Proof.** For the closure of a subgroup, let $a, b \in \overline H$; the map $(x, y) \mapsto x y^{-1}$ is continuous and carries $H \times H$ into $H$, so it carries the closure of $H \times H$ into $\overline H$; since $\overline H \times \overline H \subseteq \overline{H \times H}$ in the product topology of a uniformisable space, $ab^{-1} \in \overline H$. Normality: conjugation by $g$ is a homeomorphism, so $\overline{gHg^{-1}} = g \overline H g^{-1}$. The last claim is the definition of the subspace topology.
 
@@ -131,9 +131,9 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Definition.** A subgroup $H$ is **discrete** if the subspace topology on $H$ is discrete, and **dense** if $\overline H = G$.
 
-**Theorem.** A subgroup $H$ of a Hausdorff group $G$ is discrete if and only if there is a neighbourhood $U$ of $e$ with $H \cap U = \{e\}$, and then $H$ is closed in $G$.
+**Theorem.** A subgroup $H$ of a Hausdorff group $G$ is discrete if and only if there is a neighbourhood $\Omega$ of $e$ with $H \cap \Omega = \{e\}$, and then $H$ is closed in $G$.
 
-**Proof.** If $H$ is discrete then $\{e\}$ is open in $H$, so $H \cap U = \{e\}$ for some open $U$ in $G$; conversely that condition makes every singleton $H \cap hU$ open in $H$. For closedness, choose a symmetric neighbourhood $V$ of $e$ with $V V \subseteq U$, and suppose $x \in \overline H$; then there is a net $h_\alpha \in H$ with $h_\alpha \to x$. By continuity of multiplication at $(x, x^{-1})$ the products $h_\alpha h_\beta^{-1}$ lie in $U$ for all $\alpha, \beta$ large enough, and they lie in $H$; hence $h_\alpha h_\beta^{-1} = e$ for such $\alpha, \beta$, so the net is eventually constant and its limit $x$ lies in $H$.
+**Proof.** If $H$ is discrete then $\{e\}$ is open in $H$, so $H \cap \Omega = \{e\}$ for some open $\Omega$ in $G$; conversely that condition makes every singleton $H \cap hU$ open in $H$. For closedness, choose a symmetric neighbourhood $V$ of $e$ with $V V \subseteq \Omega$, and suppose $x \in \overline H$; then there is a net $h_\alpha \in H$ with $h_\alpha \to x$. By continuity of multiplication at $(x, x^{-1})$ the products $h_\alpha h_\beta^{-1}$ lie in $\Omega$ for all $\alpha, \beta$ large enough, and they lie in $H$; hence $h_\alpha h_\beta^{-1} = e$ for such $\alpha, \beta$, so the net is eventually constant and its limit $x$ lies in $H$.
 
 ### Quotients
 
@@ -141,7 +141,7 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Theorem.** The quotient map $\pi : G \to G/H$ is continuous and open. If $H \trianglelefteq G$ then $G/H$ is a topological group, and the quotient topology is the unique topology making it one with $\pi$ continuous. If $H$ is closed and $G$ is Hausdorff, then $G/H$ is Hausdorff.
 
-**Proof.** $\pi$ is continuous by definition of the quotient topology, and open because for an open $W \subseteq G$ the set $\pi^{-1}(\pi(W)) = WH = \bigcup_{h \in H} Wh$ is open, so $\pi(W)$ is open; here $WH$ is open as a union of translates of $W$. If $H$ is normal, the group operations on $G/H$ are continuous because they are induced by the continuous operations on $G$ through the quotient map, using the characteristic property of the quotient topology twice. For Hausdorffness, $\pi(g) \neq \pi(h)$ means $h^{-1}g \notin H$; since $H$ is closed, $W = \{v : v h^{-1} g \notin H\}$ is an open neighbourhood of $e$, and choosing a symmetric $U$ with $U U \subseteq W$ the images of $gU$ and $hU$ are disjoint: a common point $gu = hu'$ would give $g^{-1}h = u u'^{-1} \in U U^{-1} = U U \subseteq W$, so that $e = (g^{-1}h)h^{-1}g \notin H$ by the defining property of $W$, a contradiction.
+**Proof.** $\pi$ is continuous by definition of the quotient topology, and open because for an open $W \subseteq G$ the set $\pi^{-1}(\pi(W)) = WH = \bigcup_{h \in H} Wh$ is open, so $\pi(W)$ is open; here $WH$ is open as a union of translates of $W$. If $H$ is normal, the group operations on $G/H$ are continuous because they are induced by the continuous operations on $G$ through the quotient map, using the characteristic property of the quotient topology twice. For Hausdorffness, $\pi(g) \neq \pi(h)$ means $h^{-1}g \notin H$; since $H$ is closed, $W = \{v : v h^{-1} g \notin H\}$ is an open neighbourhood of $e$, and choosing a symmetric $\Omega$ with $\Omega \Omega \subseteq W$ the images of $gU$ and $hU$ are disjoint: a common point $gu = hu'$ would give $g^{-1}h = u u'^{-1} \in \Omega \Omega^{-1} = \Omega \Omega \subseteq W$, so that $e = (g^{-1}h)h^{-1}g \notin H$ by the defining property of $W$, a contradiction.
 
 **Corollary.** The quotient $G/H$ is Hausdorff exactly when $H$ is closed in $G$; if $H$ is not closed then $G/H$ is not even $T_1$, since $\overline{\{e_H\}} = \overline H/H$.
 
@@ -159,7 +159,7 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Theorem.** If $G$ is connected then every neighbourhood of $e$ generates $G$. Conversely, if $G$ is locally compact and every neighbourhood of $e$ generates $G$, then $G$ is connected. If $G$ is locally compact, then the identity component $G_e$ is the intersection of the open subgroups of $G$. A quotient of a connected group is connected, and the product of connected groups is connected.
 
-**Proof.** Let $U$ be a neighbourhood of $e$; replacing it by its interior and then by $U \cap U^{-1}$ we may suppose it open and symmetric. Then $\langle U \rangle = \bigcup_{n \geq 1} U^n$ is open, and it is closed because its complement is a union of cosets of the subgroup $\langle U \rangle$, each a translate of the open set $\langle U \rangle$; so if $G$ is connected, $\langle U \rangle = G$. Conversely, let $G$ be locally compact and suppose that every neighbourhood of $e$ generates $G$; were $G$ disconnected, the component group $G/G_e$ would be a nontrivial locally compact totally disconnected group, so by van Dantzig's theorem a neighbourhood $W \neq G/G_e$ of the identity coset would contain a compact open subgroup $K_0 \subseteq W$ proper in $G/G_e$, and the preimage $H$ of $K_0$ in $G$ would be a proper open subgroup; then $H$ is a neighbourhood of $e$ with $\langle H \rangle = H \neq G$, a contradiction, so $G$ is connected. For the statement on the identity component, each open subgroup is closed and contains $G_e$, so $G_e$ is contained in their intersection. Conversely, $G/G_e$ is totally disconnected and locally compact, so by van Dantzig's theorem its identity has a neighbourhood base of compact open subgroups; pulling these back along $G \to G/G_e$ gives open subgroups of $G$ whose intersection is $G_e$. The quotient and product statements are the general topological statements.
+**Proof.** Let $\Omega$ be a neighbourhood of $e$; replacing it by its interior and then by $\Omega \cap \Omega^{-1}$ we may suppose it open and symmetric. Then $\langle \Omega \rangle = \bigcup_{n \geq 1} \Omega^n$ is open, and it is closed because its complement is a union of cosets of the subgroup $\langle \Omega \rangle$, each a translate of the open set $\langle \Omega \rangle$; so if $G$ is connected, $\langle \Omega \rangle = G$. Conversely, let $G$ be locally compact and suppose that every neighbourhood of $e$ generates $G$; were $G$ disconnected, the component group $G/G_e$ would be a nontrivial locally compact totally disconnected group, so by van Dantzig's theorem a neighbourhood $W \neq G/G_e$ of the identity coset would contain a compact open subgroup $K_0 \subseteq W$ proper in $G/G_e$, and the preimage $H$ of $K_0$ in $G$ would be a proper open subgroup; then $H$ is a neighbourhood of $e$ with $\langle H \rangle = H \neq G$, a contradiction, so $G$ is connected. For the statement on the identity component, each open subgroup is closed and contains $G_e$, so $G_e$ is contained in their intersection. Conversely, $G/G_e$ is totally disconnected and locally compact, so by van Dantzig's theorem its identity has a neighbourhood base of compact open subgroups; pulling these back along $G \to G/G_e$ gives open subgroups of $G$ whose intersection is $G_e$. The quotient and product statements are the general topological statements.
 
 **Theorem.** A topological group is locally connected if and only if the identity has a neighbourhood base of connected sets; a connected locally compact group is $\sigma$-compact.
 
@@ -179,7 +179,7 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 **Proof.** A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.
 
-**Example.** $S^1$, $O(n)$, $U(n)$ and the $p$-adic integers $\mathbb{Z}_p$ are compact; $\mathbb{Z}_p$ is moreover totally disconnected, and its open subgroups $p^n\mathbb{Z}_p$ form a neighbourhood base.
+**Example.** $S^1$, $O(n)$, $\mathrm{U}(n)$ and the $p$-adic integers $\mathbb{Z}_p$ are compact; $\mathbb{Z}_p$ is moreover totally disconnected, and its open subgroups $p^n\mathbb{Z}_p$ form a neighbourhood base.
 
 ### Local Compactness
 
@@ -270,7 +270,7 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $L_g, R_g$, $\operatorname{Ad}_g$ | Left and right translations; inner automorphism |
 | $\mathcal{N}$ | Neighbourhood base at the identity |
 | $\mathcal{U}_L, \mathcal{U}_R$ | Left and right uniformities |
-| $E_U$ | Entourage $\{(g,h) : g^{-1}h \in U\}$ |
+| $E_\Omega$ | Entourage $\{(g,h) : g^{-1}h \in \Omega\}$ |
 | $\hat G$ | Completion of a topological group in its two-sided (Raĭkov) uniformity |
 | $G/H$, $\pi$ | Coset space or quotient group with quotient topology, and the quotient map |
 | $G/H$ Hausdorff | Exactly when $H$ is closed |

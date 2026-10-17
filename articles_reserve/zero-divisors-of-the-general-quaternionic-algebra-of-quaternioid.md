@@ -39,14 +39,14 @@ the cone and the two families, is *Zero Divisors of the General Quaternionic Alg
 
 ## Conventions
 
-$\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
-$e_k^2=-e_0$ and $e_1e_2=e_3$. Over $\mathbb{R}$ the coefficientwise conjugation is the identity and
+$\mathbb{H}$ is the real quaternion algebra with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the rules
+$\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$. Over $\mathbb{R}$ the coefficientwise conjugation is the identity and
 the Hermitian star coincides with the natural conjugation, so the block carries the single
 involution
 
 $$
-\tilde p^{\natural}=p_0-\vec p,\qquad \tilde p=p_0e_0+\vec p,\quad
-\vec p=p_1e_1+p_2e_2+p_3e_3 .
+\tilde p^{\natural}=p_0-\vec p,\qquad \tilde p=p_0e_t+\vec p,\quad
+\vec p=p_1\vec e_x+p_2\vec e_y+p_3\vec e_z .
 $$
 
 Juxtaposition is the plain product $\tilde p\tilde q$ of the general plain algebra of the same space
@@ -60,12 +60,12 @@ the plain product with the first factor read through the conjugation. The **quat
 algebraic norm** is
 
 $$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2=\sum_{\mu\in\{t,x,y,z\}}p_\mu^2 ,
 $$
 
-and $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ is its polar form, the quaternionic
+and $\beta(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ is its polar form, the quaternionic
 bilinear form of the space. An element is **pure** when $p_0=0$ and **non-pure** when $p_0\neq0$; the
-centre is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
+centre is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\{\vec p\}$.
 
 ## Definition
@@ -98,7 +98,7 @@ which are plain-product equations in the conjugated first factor.
 $\star$ if and only if
 
 $$
-N(\tilde p)=\sum_{\mu=0}^{3}p_\mu^2=0 .
+N(\tilde p)=\sum_{\mu\in\{t,x,y,z\}}p_\mu^2=0 .
 $$
 
 **Proof.** Suppose that $\tilde p$ is a zero divisor. If it is a left one, there is a nonzero
@@ -115,7 +115,7 @@ exchanged treats the right equation, $\tilde q^{\natural}\tilde p=0$. Conversely
 then
 
 $$
-\tilde p\star\tilde p=\tilde p^{\natural}\tilde p=N(\tilde p)e_0=0 ,
+\tilde p\star\tilde p=\tilde p^{\natural}\tilde p=N(\tilde p)e_t=0 ,
 $$
 
 so $\tilde q=\tilde p$ is a nonzero witness for the left equation and $\tilde p$ is a left zero
@@ -177,12 +177,12 @@ nonzero pure element.
 
 **Proposition (the non-pure family is absent).** The non-pure zero divisors of the complex block are
 the nonzero multiples of the nontrivial idempotents of the plain product. Over $\mathbb{R}$ the plain
-product has no nontrivial idempotent: its idempotents are $0$ and $e_0$ alone, so the non-pure family
+product has no nontrivial idempotent: its idempotents are $0$ and $e_t$ alone, so the non-pure family
 is empty.
 
 **Proof.** The plain algebra is a division algebra. If $\tilde p^2=\tilde p$ and $\tilde p\neq0$,
-left multiplication by the plain inverse $\tilde p^{-1}$ gives $\tilde p=e_0$. The Hermitian family
-$\tfrac12(e_0+\tilde\Xi)$ that carries the complex family does not exist over $\mathbb{R}$, there
+left multiplication by the plain inverse $\tilde p^{-1}$ gives $\tilde p=e_t$. The Hermitian family
+$\tfrac12(e_t+\tilde\Xi)$ that carries the complex family does not exist over $\mathbb{R}$, there
 being no central imaginary unit; the idempotents of the block and the contrast with the complex
 counterpart are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, below this article in this
 category.
@@ -191,23 +191,23 @@ category.
 
 **Theorem (the two one-sided equations).** Let $\tilde p\in\mathbb{H}$ with $N(\tilde p)\neq0$, and
 put $\zeta(\tilde p)=\tilde p/N(\tilde p)$. Then $\zeta(\tilde p)$ is the unique solution of each of
-the equations $\tilde p\star\tilde x=e_0$ and $\tilde y\star\tilde p=e_0$, and
+the equations $\tilde p\star\tilde x=e_t$ and $\tilde y\star\tilde p=e_t$, and
 
 $$
-\tilde p\star\zeta(\tilde p)=e_0=\zeta(\tilde p)\star\tilde p .
+\tilde p\star\zeta(\tilde p)=e_t=\zeta(\tilde p)\star\tilde p .
 $$
 
 The statement is *Norm and Invertibility in the General Quaternionic Algebra*,
 §*The One-Sided Inverse Equations*.
 
 The remark is the one the block demands, and it is stated in the block's own terms. The algebra has
-the left unit $e_0$ and no right one, so the two-sided inverse of the unital theory has no referent;
+the left unit $e_t$ and no right one, so the two-sided inverse of the unital theory has no referent;
 what the two equations compute is an element that inverts $\tilde p$ against the one-sided unit.
 Their content is that the left and the right such elements are not merely both present, they are the
 same, and that they exist exactly when the norm does not vanish.
 
 **Corollary (regularity).** Every nonzero element of $\mathbb{H}$ is regular, with the single
-two-sided inverse $\zeta(\tilde p)$ against the left unit $e_0$. The criterion of §*The Criterion* is
+two-sided inverse $\zeta(\tilde p)$ against the left unit $e_t$. The criterion of §*The Criterion* is
 the statement that an element with a one-sided inverse is not a zero divisor.
 
 **Proof.** Over $\mathbb{R}$ the criterion $N(\tilde p)\neq0$ is $\tilde p\neq0$, so the theorem
@@ -232,7 +232,7 @@ punctured space.
 
 **Remark (the unit is one-sided).** In the strict sense of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, §*The Element Vocabulary*, a **division rule** asks beside the absence of zero
 divisors for a two-sided unit, and only the general plain product of the six has one; the general
-quaternionic product has the left unit $e_0$ alone. Over the complex block the product fails the
+quaternionic product has the left unit $e_t$ alone. Over the complex block the product fails the
 division property for the stronger reason that it contains zero divisors; over the real block the
 zero divisors are absent and the only defect is the missing right unit (*The Specificities of the
 General Quaternionic Algebra*). The two defects are independent, and this article exhibits the
@@ -267,21 +267,21 @@ determinant $\det L_{\tilde p}=N(\tilde p)^2$, nonzero at every nonzero element.
 ## The Zero Divisors and the Remarkable Subspaces
 
 The element theory of the block is read on the two remarkable real subspaces of $\mathbb{H}$, the
-scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, which is the centre, and the vector subspace
+scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, which is the centre, and the vector subspace
 $\mathrm{Vect}(\mathbb{H})$ (*Introduction to the Remarkable Subspaces of the Quaternions*). Neither
 carries a zero divisor.
 
 | remarkable subspace | element | norm | zero divisors |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{H}}$, the centre | $se_0$ | $s^2$ | none |
+| $\mathbb{R}_{\mathbb{H}}$, the centre | $se_t$ | $s^2$ | none |
 | $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2$ | none |
 
 **Proposition.** On the centre and on the vector subspace the norm of a nonzero element is strictly
 positive, so neither subspace contains an isotropic direction and neither contains a zero divisor;
 in each the origin alone is of norm zero.
 
-**Proof.** $N(se_0)=s^2$ vanishes only at $s=0$ and $N(\vec p)=|\vec p|^2$ only at
-$\vec p=0$, and a nonzero central element is a unit, $\zeta(se_0)=e_0/s$; the criterion then
+**Proof.** $N(se_t)=s^2$ vanishes only at $s=0$ and $N(\vec p)=|\vec p|^2$ only at
+$\vec p=0$, and a nonzero central element is a unit, $\zeta(se_t)=e_t/s$; the criterion then
 excludes every nonzero element of either subspace. The definiteness of the form on the two subspaces
 is *The Isotropic Structure of the General Quaternionic Algebra*.
 
@@ -319,9 +319,9 @@ met: the zero-divisor set is the **empty set**, and the zero-divisor cone of the
 real dimension six, shrinks to its apex $\{0\}$. The two families of the complex block, the pure
 family of the isotropic vector subspace and the non-pure family of the multiples of the nontrivial
 plain idempotents, are both empty, for the norm is definite on the vector subspace and the plain
-algebra is a division algebra with the idempotents $0$ and $e_0$ alone. Every nonzero element is
+algebra is a division algebra with the idempotents $0$ and $e_t$ alone. Every nonzero element is
 regular, with the single two-sided inverse $\zeta(\tilde p)=\tilde p/N(\tilde p)$ against the left
-unit $e_0$; the two annihilators of an element coincide and are $\{0\}$ at every nonzero element and
+unit $e_t$; the two annihilators of an element coincide and are $\{0\}$ at every nonzero element and
 the whole space at the origin; and neither remarkable subspace, the centre nor the vector subspace,
 carries a zero divisor. The general quaternionic product is one of the two division structures of the
 space, the other being the general plain product, and it differs from it in the unit, which is
@@ -332,12 +332,12 @@ one-sided here and two-sided there.
 | symbol | meaning |
 |---|---|
 | $\mathbb{H}$ | the quaternion algebra, the real space of the block |
-| $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2=-e_0$ |
-| $\tilde p=p_0e_0+\vec p$ | an element and its scalar–vector split |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2=-e_t$ |
+| $\tilde p=p_0e_t+\vec p$ | an element and its scalar–vector split |
 | $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
 | ${}^{\natural}$ | the conjugation $\tilde p^{\natural}=p_0-\vec p$ |
 | $N(\tilde p)=\tilde p^{\natural}\tilde p=\sum_\mu p_\mu^2$ | the quaternionic bilinear algebraic norm, positive definite |
-| $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ | the quaternionic bilinear form, the polar form of $N$ |
+| $\beta(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ | the quaternionic bilinear form, the polar form of $N$ |
 | $\varnothing$ | the zero-divisor set of the block |
 | $C=\{N=0\}=\{0\}$ | the zero set of the norm, the apex of the complex cone |
 | $\zeta(\tilde p)=\tilde p/N(\tilde p)$ | the two-sided inverse against the left unit |

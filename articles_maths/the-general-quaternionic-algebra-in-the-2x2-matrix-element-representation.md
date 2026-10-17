@@ -7,7 +7,7 @@ The reading group *Topology on the Introduction to the General Quaternionic Alge
 
 The natural conjugation is the characteristic operation of the group, and in the model it is the **adjugate**: $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$. The quaternionic product is therefore the ordinary matrix product with the adjugate inserted in the first slot, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\,\mathsf{M}_2(\tilde{Q})$, and the general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$. The determinant is the norm, so the whole element theory of the group is read off the determinant of the matrix.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $\langle\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$, sign vector $\varepsilon=(1,-1,-1,-1)$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; the quaternionic product is $\tilde{P}\star\tilde{Q}=\tilde{P}^{\natural}\tilde{Q}$ and its norm is $\langle\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 ## The Representation
 
@@ -17,15 +17,15 @@ $$
 \mathsf{M}_2:\mathbb{B}\longrightarrow M_2(\mathbb{C}),
 $$
 
-and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_0)=I$ on the identity and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three vector units.
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: $\mathsf{M}_2(e_t)=I$ on the identity and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ on the three vector units.
 
-On a general element it reads $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_0-iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & Q_0+iQ_3\end{pmatrix}$. Its two invariants and its two conjugations are
+On a general element it reads $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix} Q_t-iQ_z & -iQ_x-Q_y \\ -iQ_x+Q_y & Q_t+iQ_z\end{pmatrix}$. Its two invariants and its two conjugations are
 
 $$
-\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0,\qquad \det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2,\qquad \mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}),\qquad \mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger} .
+\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_t,\qquad \det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2,\qquad \mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q}),\qquad \mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger} .
 $$
 
-The adjugate is also the conjugate of the transpose by a fixed matrix, $\operatorname{adj}\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(-e_2)\,\mathsf{M}_2(\tilde{Q})^{\mathsf{T}}\,\mathsf{M}_2(-e_2)^{-1}$, so the natural conjugation is a transposition and not a Hermitian transposition.
+The adjugate is also the conjugate of the transpose by a fixed matrix, $\operatorname{adj}\mathsf{M}_2(\tilde{Q})=\mathsf{M}_2(-\vec e_y)\,\mathsf{M}_2(\tilde{Q})^{\mathsf{T}}\,\mathsf{M}_2(-\vec e_y)^{-1}$, so the natural conjugation is a transposition and not a Hermitian transposition.
 
 ## The Quaternionic Product in the Model
 
@@ -45,7 +45,7 @@ $$
 \operatorname{adj}(AB)=\operatorname{adj}(B)\operatorname{adj}(A),\qquad \operatorname{adj}(AB)\neq\operatorname{adj}(A)\operatorname{adj}(B)\ \text{in general},
 $$
 
-since $\operatorname{adj}(X)=\varepsilon X^{\mathsf{T}}\varepsilon^{-1}$ and $(AB)^{\mathsf{T}}=B^{\mathsf{T}}A^{\mathsf{T}}$. The inequality is seen on the images of the basis: $\operatorname{adj}\mathsf{M}_2(e_1)\operatorname{adj}\mathsf{M}_2(e_2)=\mathsf{M}_2(e_1)\mathsf{M}_2(e_2)=\mathsf{M}_2(e_3)$, against $\operatorname{adj}\mathsf{M}_2(e_1e_2)=\operatorname{adj}\mathsf{M}_2(e_3)=-\mathsf{M}_2(e_3)$. Associativity of the product would require the adjugate inserted in the first slot to move across the other factors, and it does not, because a transpose does not commute with a product.
+since $\operatorname{adj}(X)=\varepsilon X^{\mathsf{T}}\varepsilon^{-1}$ and $(AB)^{\mathsf{T}}=B^{\mathsf{T}}A^{\mathsf{T}}$. The inequality is seen on the images of the basis: $\operatorname{adj}\mathsf{M}_2(\vec e_x)\operatorname{adj}\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)=\mathsf{M}_2(\vec e_z)$, against $\operatorname{adj}\mathsf{M}_2(\vec e_x\vec e_y)=\operatorname{adj}\mathsf{M}_2(\vec e_z)=-\mathsf{M}_2(\vec e_z)$. Associativity of the product would require the adjugate inserted in the first slot to move across the other factors, and it does not, because a transpose does not commute with a product.
 
 **Theorem (the trace and the determinant of a value).** For all biquaternions, with $\beta(\tilde{P},\tilde{Q})=\sum_\mu P_\mu Q_\mu$,
 
@@ -53,7 +53,7 @@ $$
 \operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\beta(\tilde{P},\tilde{Q}),\qquad \det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
 
-*Proof.* The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_0Q_0+(\vec P,\vec Q)=\beta(\tilde{P},\tilde{Q})$.
+*Proof.* The determinant is multiplicative and $\det\operatorname{adj}(A)=\det A$, so $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\det \mathsf{M}_2(\tilde{P})\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. For the trace, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})$ by the trace identity, and the scalar part of $\tilde{P}^{\natural}\tilde{Q}$ is $P_tQ_t+(\vec P,\vec Q)=\beta(\tilde{P},\tilde{Q})$.
 
 **The square and the idempotents.** The square of the product is the scalar matrix of the determinant,
 
@@ -61,7 +61,7 @@ $$
 \mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})\,I=\langle\tilde{Q}\rangle_{\natural}\,I ,
 $$
 
-so the idempotents of the quaternionic product are exactly $0$ and $e_0$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_ku_k\mathsf{M}_2(e_k)\bigr)$ over the real unit vectors $\vec u=(u_1,u_2,u_3)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
+so the idempotents of the quaternionic product are exactly $0$ and $e_t$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_ku_k\mathsf{M}_2(\vec e_k)\bigr)$ over the real unit vectors $\vec u=(u_x,u_y,u_z)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
 
 **The units and the norm.** The product has a unit exactly when the determinant does not vanish: the units of the algebra are the matrices of $GL_2(\mathbb{C})$, the elements with $\langle\tilde{Q}\rangle_{\natural}\neq0$, and the norm-one group is $SL_2(\mathbb{C})$.
 
@@ -111,52 +111,52 @@ and the two forms share the automorphism group $O_4(\mathbb{C})$; the transport 
 
 ## Worked Examples
 
-**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\langle\tilde{Q}\rangle_{\natural}=1+i^2=0$, so $\tilde{Q}$ is a zero divisor and $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular; the quaternionic square is $\tilde{Q}\star\tilde{Q}=\langle\tilde{Q}\rangle_{\natural}e_0=0$.
+**A zero divisor.** Let $\tilde{Q}=e_t+i\vec e_x$. Then $\langle\tilde{Q}\rangle_{\natural}=1+i^2=0$, so $\tilde{Q}$ is a zero divisor and $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&1\\1&1\end{pmatrix}$ is singular; the quaternionic square is $\tilde{Q}\star\tilde{Q}=\langle\tilde{Q}\rangle_{\natural}e_t=0$.
 
-**A basis element.** Let $\tilde{P}=e_1$. Then $\operatorname{adj}\mathsf{M}_2(e_1)=\mathsf{M}_2(e_1^{\natural})=-\mathsf{M}_2(e_1)$, and $\mathsf{M}_2(e_1\star\tilde{Q})=-\mathsf{M}_2(e_1)\mathsf{M}_2(\tilde{Q})$; the form at the two equal arguments is $\langle e_1,e_1\rangle_{\natural}=1$.
+**A basis element.** Let $\tilde{P}=\vec e_x$. Then $\operatorname{adj}\mathsf{M}_2(\vec e_x)=\mathsf{M}_2(\vec e_x^{\natural})=-\mathsf{M}_2(\vec e_x)$, and $\mathsf{M}_2(\vec e_x\star\tilde{Q})=-\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\tilde{Q})$; the form at the two equal arguments is $\langle \vec e_x,\vec e_x\rangle_{\natural}=1$.
 
-**A product read off the determinant.** Let $\tilde{P}=e_0+e_2$ and $\tilde{Q}=e_0-e_2$. Then $\langle\tilde{P}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}=2$ and $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=1-1=0$, so the two are isotropic to each other although both are units; the corresponding matrices have determinants $2$ and are isotropic for the adjugated trace pairing.
+**A product read off the determinant.** Let $\tilde{P}=e_t+\vec e_y$ and $\tilde{Q}=e_t-\vec e_y$. Then $\langle\tilde{P}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}=2$ and $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=1-1=0$, so the two are isotropic to each other although both are units; the corresponding matrices have determinants $2$ and are isotropic for the adjugated trace pairing.
 
 ## The Matrices
 
 **The generators.** The realization is fixed on the basis by four matrices:
 
 $$
-\mathsf{M}_2(e_0)=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
-\mathsf{M}_2(e_1)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
-\mathsf{M}_2(e_2)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
-\mathsf{M}_2(e_3)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+\mathsf{M}_2(e_t)=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
 $$
 
-The general element has trace $2Q_0$ and determinant $\sum_\mu Q_\mu^2$. The model is onto $M_2(\mathbb{C})$, so the whole element theory of the group is read on the matrices.
+The general element has trace $2Q_t$ and determinant $\sum_\mu Q_\mu^2$. The model is onto $M_2(\mathbb{C})$, so the whole element theory of the group is read on the matrices.
 
-**The involution, entry by entry.** The adjugate is the involution read on the coefficients, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$, and it is the trace-complement of the matrix, $\operatorname{adj}X=(\operatorname{Tr}X)I-X$. At the unit $e_1$,
+**The involution, entry by entry.** The adjugate is the involution read on the coefficients, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$, and it is the trace-complement of the matrix, $\operatorname{adj}X=(\operatorname{Tr}X)I-X$. At the unit $\vec e_x$,
 
 $$
-\operatorname{adj}\mathsf{M}_2(e_1)=\begin{pmatrix}0&i\\i&0\end{pmatrix}=-\mathsf{M}_2(e_1)=\mathsf{M}_2(e_1^{\natural}),
+\operatorname{adj}\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&i\\i&0\end{pmatrix}=-\mathsf{M}_2(\vec e_x)=\mathsf{M}_2(\vec e_x^{\natural}),
 $$
 
 the two entries off the diagonal being the negation of the two entries of the matrix.
 
-**The product, entry by entry.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the matrix product with the adjugate in the first slot, and at the pair $e_1,e_2$ it is
+**The product, entry by entry.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the matrix product with the adjugate in the first slot, and at the pair $\vec e_x,\vec e_y$ it is
 
 $$
-\mathsf{M}_2(e_1\star e_2)=\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_2)
+\mathsf{M}_2(\vec e_x\star \vec e_y)=\operatorname{adj}\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y)
 =\begin{pmatrix}0&i\\i&0\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}
-=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=-\mathsf{M}_2(e_3),
+=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=-\mathsf{M}_2(\vec e_z),
 $$
 
-which is $e_1\star e_2=-e_1e_2=-e_3$. The square of the product is the scalar matrix of the norm,
+which is $\vec e_x\star \vec e_y=-\vec e_x\vec e_y=-\vec e_z$. The square of the product is the scalar matrix of the norm,
 
 $$
-\operatorname{adj}\mathsf{M}_2(e_1)\,\mathsf{M}_2(e_1)
+\operatorname{adj}\mathsf{M}_2(\vec e_x)\,\mathsf{M}_2(\vec e_x)
 =\begin{pmatrix}0&i\\i&0\end{pmatrix}\begin{pmatrix}0&-i\\-i&0\end{pmatrix}
-=\begin{pmatrix}1&0\\0&1\end{pmatrix}=\langle e_1\rangle_{\natural}I,
+=\begin{pmatrix}1&0\\0&1\end{pmatrix}=\langle \vec e_x\rangle_{\natural}I,
 $$
 
-which is $\mathsf{M}_2(e_1\star e_1)$ with $\langle e_1\rangle_{\natural}=1$.
+which is $\mathsf{M}_2(\vec e_x\star \vec e_x)$ with $\langle \vec e_x\rangle_{\natural}=1$.
 
-**The form, entry by entry.** The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $e_1,e_1$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(e_1)\mathsf{M}_2(e_1))=\tfrac12\operatorname{Tr}I=1=\langle e_1,e_1\rangle_{\natural}$.
+**The form, entry by entry.** The general quaternionic bilinear form is the adjugated trace pairing $\tfrac12\operatorname{Tr}(X\operatorname{adj}Y)$, and at the pair $\vec e_x,\vec e_x$ the trace reads the unit, $\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_x))=\tfrac12\operatorname{Tr}I=1=\langle \vec e_x,\vec e_x\rangle_{\natural}$.
 
 **The four words.** The twelve operations of the two chapters are built from four products, and each product is a word in the two matrices $X=\mathsf{M}_2(\tilde P)$ and $Y=\mathsf{M}_2(\tilde Q)$ and in the two involutions of the model, the adjugate and the conjugate transpose:
 
@@ -182,13 +182,13 @@ the plain, the quaternionic, the Hermitian and the Krein form, in the two slots 
 
 ## Summary
 
-The $2\times2$ realization turns the natural conjugation into the adjugate and the quaternionic product into the adjugated matrix product, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})$, with square the scalar matrix of the determinant, $\mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}I$. The adjugate reverses the order, $\operatorname{adj}(AB)=\operatorname{adj}(B)\operatorname{adj}(A)$, which is why the product is not associative: the associator is $\bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C$. The determinant of a value is the product of the norms, $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and its trace is twice the symmetrisation coefficient, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\beta(\tilde{P},\tilde{Q})$; the symmetrised product is the scalar matrix $\beta(\tilde{P},\tilde{Q})I$, and the left multiplications are the multiplications by the adjugates, forming the opposite monoid. The general quaternionic bilinear form of the group is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$, whose diagonal is the determinant, whose coefficient Gram matrix is the identity $I_4$, of real signature $(4,4)$, whose null set is the cone of singular matrices of real dimension $6$, and whose automorphism group is $O_4(\mathbb{C})$ on the coefficients and the split group $O(4,4)$ on the realification. The units are the matrices of non-zero determinant, the group $SL_2(\mathbb{C})$ is the norm-one slice, and the idempotents are $0$ and $e_0$ alone.
+The $2\times2$ realization turns the natural conjugation into the adjugate and the quaternionic product into the adjugated matrix product, $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})$, with square the scalar matrix of the determinant, $\mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}I$. The adjugate reverses the order, $\operatorname{adj}(AB)=\operatorname{adj}(B)\operatorname{adj}(A)$, which is why the product is not associative: the associator is $\bigl(\operatorname{adj}(B)A-\operatorname{adj}(BA)\bigr)C$. The determinant of a value is the product of the norms, $\det \mathsf{M}_2(\tilde{P}\star\tilde{Q})=\langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and its trace is twice the symmetrisation coefficient, $\operatorname{Tr}\mathsf{M}_2(\tilde{P}\star\tilde{Q})=2\beta(\tilde{P},\tilde{Q})$; the symmetrised product is the scalar matrix $\beta(\tilde{P},\tilde{Q})I$, and the left multiplications are the multiplications by the adjugates, forming the opposite monoid. The general quaternionic bilinear form of the group is the adjugated trace pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde{P})\operatorname{adj}\mathsf{M}_2(\tilde{Q}))$, whose diagonal is the determinant, whose coefficient Gram matrix is the identity $I_4$, of real signature $(4,4)$, whose null set is the cone of singular matrices of real dimension $6$, and whose automorphism group is $O_4(\mathbb{C})$ on the coefficients and the split group $O(4,4)$ on the realification. The units are the matrices of non-zero determinant, the group $SL_2(\mathbb{C})$ is the norm-one slice, and the idempotents are $0$ and $e_t$ alone.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf{M}_2(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_0$, $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ |
+| $\mathsf{M}_2(\tilde{Q})$ | the $2\times2$ matrix of the realization, $\operatorname{Tr}\mathsf{M}_2(\tilde{Q})=2Q_t$, $\det \mathsf{M}_2(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\mathsf{M}_2(\tilde{Q}^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})$ | the natural conjugation is the adjugate |
 | $\operatorname{adj}(AB)=\operatorname{adj}(B)\operatorname{adj}(A)$ | the adjugate reverses the order |
 | $\mathsf{M}_2(\tilde{P}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{P})\mathsf{M}_2(\tilde{Q})$ | the quaternionic product is the adjugated matrix product |

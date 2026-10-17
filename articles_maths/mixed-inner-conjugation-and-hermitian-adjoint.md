@@ -129,7 +129,7 @@ With the dagger positive, the slice $U$ contains every unit vector and every biv
 
 ### The Biquaternion Algebra
 
-In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is $U(2)$ and the dagger is a positive involution, so the family collapses on $U(2)$ onto the inner conjugation and splits off it into the two defect factors $xx^{\dagger}$ and $\alpha(x)x^{-1}$. The signed operators act on the two Hermitian sectors by the sign of the degree, which is the operator form of the $\mathbb{Z}/2$-grading used in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the collapse on the slice is the reason the Hermitian sandwich and the inverse sandwich describe the same unitary group there.
+In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is $\mathrm{U}(2)$ and the dagger is a positive involution, so the family collapses on $\mathrm{U}(2)$ onto the inner conjugation and splits off it into the two defect factors $xx^{\dagger}$ and $\alpha(x)x^{-1}$. The signed operators act on the two Hermitian sectors by the sign of the degree, which is the operator form of the $\mathbb{Z}/2$-grading used in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation*, and the collapse on the slice is the reason the Hermitian sandwich and the inverse sandwich describe the same unitary group there.
 
 ## Summary
 

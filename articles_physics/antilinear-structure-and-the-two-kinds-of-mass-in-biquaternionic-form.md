@@ -13,14 +13,14 @@ The framework carries several conjugations, and they are easy to conflate becaus
 
 - **Gap, left visible.** The framework does not derive the values of either mass, and it does not decide which kind a given fermion carries; that is empirical input, as the neutrino companion states. What the framework supplies is the algebraic distinction and the reality structure each kind is built on.
 
-The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $U(1)$. A section exhibits the dispersion failure in full. A section records what the antilinear structure is genuinely for.
+The article is organised as follows. A section fixes what antilinear means in this algebra and tabulates the involutions. A section gives the argument that a mass is a pairing with a conjugate. A section distinguishes the two conjugates and the two masses. A section separates the two real structures, on the algebra and on the module, which is where the retired equation went wrong. A section places charge conjugation in its group-theoretic setting, the $\mathrm{Spin}^c$ structure, and reads off which spinors can carry the algebra's central $\mathrm{U}(1)$. A section exhibits the dispersion failure in full. A section records what the antilinear structure is genuinely for.
 
 ## What Antilinear Means Here
 
-The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and scalar imaginary $i$ generating the centre together with $e_0$. An element is a sum with complex coefficients,
+The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and scalar imaginary $i$ generating the centre together with $e_t$. An element is a sum with complex coefficients,
 
 $$
-\tilde{Q} = (a_0 + i b_0)e_0 + (a_1 + i b_1)e_1 + (a_2 + i b_2)e_2 + (a_3 + i b_3)e_3 , \qquad a_\mu, b_\mu \in \mathbb{R},
+\tilde{Q} = (a_0 + i b_0)e_t + (a_1 + i b_1)\vec e_x + (a_2 + i b_2)\vec e_y + (a_3 + i b_3)\vec e_z , \qquad a_\mu, b_\mu \in \mathbb{R},
 $$
 
 so $\mathbb{B}$ has real dimension $8$ and complex dimension $4$.
@@ -30,7 +30,7 @@ Two involutions generate the rest.
 **Quaternion conjugation** reverses the vector part and fixes the centre:
 
 $$
-\tilde{Q}^{\natural} = (a_0 + ib_0)e_0 - (a_1 + ib_1)e_1 - (a_2 + ib_2)e_2 - (a_3 + ib_3)e_3 .
+\tilde{Q}^{\natural} = (a_0 + ib_0)e_t - (a_1 + ib_1)\vec e_x - (a_2 + ib_2)\vec e_y - (a_3 + ib_3)\vec e_z .
 $$
 
 It is $\mathbb{C}$-**linear**, because it fixes $i$, and it is an anti-automorphism, $(\tilde{A}\tilde{B})^{\natural} = \tilde{B}^{\natural}\,\tilde{A}^{\natural}$.
@@ -38,7 +38,7 @@ It is $\mathbb{C}$-**linear**, because it fixes $i$, and it is an anti-automorph
 **Complex conjugation** negates the scalar imaginary and fixes the units:
 
 $$
-\bar{\tilde{Q}} = (a_0 - ib_0)e_0 + (a_1 - ib_1)e_1 + (a_2 - ib_2)e_2 + (a_3 - ib_3)e_3 .
+\bar{\tilde{Q}} = (a_0 - ib_0)e_t + (a_1 - ib_1)\vec e_x + (a_2 - ib_2)\vec e_y + (a_3 - ib_3)\vec e_z .
 $$
 
 It is $\mathbb{C}$-**antilinear**, $\overline{(\alpha\tilde{A})} = \bar{\alpha}\,\bar{\tilde{A}}$, and it is an automorphism, $\overline{(\tilde{A}\tilde{B})} = \bar{\tilde{A}}\,\bar{\tilde{B}}$.
@@ -54,10 +54,10 @@ Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{B})^\f
 
 | involution | action on generators | $\mathbb{C}$-linearity | character | fixed space |
 |---|---|---|---|---|
-| $\tilde{Q}^{\natural}$ | $e_k \mapsto -e_k$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ (centre), real dim $2$ |
-| $\bar{\tilde{Q}}$ | $e_k \mapsto e_k$, $i \mapsto -i$ | antilinear | automorphism | $\mathbb{H}_{\mathbb{B}}$, real dim $4$ |
-| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | $e_k \mapsto -e_k$, $i \mapsto -i$ | antilinear | anti-automorphism | $\mathbb{M}_+$, real dim $4$ |
-| $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | $e_k \mapsto -e_k$, $i \mapsto -i$, with a sign | antilinear | anti-automorphism with twist | $\mathbb{M}_-$, real dim $4$ |
+| $\tilde{Q}^{\natural}$ | $\vec e_k \mapsto -\vec e_k$, $i \mapsto i$ | linear | anti-automorphism | $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ (centre), real dim $2$ |
+| $\bar{\tilde{Q}}$ | $\vec e_k \mapsto \vec e_k$, $i \mapsto -i$ | antilinear | automorphism | $\mathbb{H}_{\mathbb{B}}$, real dim $4$ |
+| $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | $\vec e_k \mapsto -\vec e_k$, $i \mapsto -i$ | antilinear | anti-automorphism | $\mathbb{M}_+$, real dim $4$ |
+| $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$ | $\vec e_k \mapsto -\vec e_k$, $i \mapsto -i$, with a sign | antilinear | anti-automorphism with twist | $\mathbb{M}_-$, real dim $4$ |
 
 Four involutions, four distinct fixed spaces, of real dimensions $2, 4, 4, 4$. The two sectors of the framework are the last two rows, and they are the fixed spaces of *antilinear* maps. The real-quaternion sector $\mathbb{H}_{\mathbb{B}}$ is also antilinear, and the centre is the fixed space of the one linear involution. Nothing in the table is a sign variant of anything else: each row has its own fixed space, and the fixed spaces are what the framework builds on.
 
@@ -167,7 +167,7 @@ The framework calls $\flat$ the algebra's **real structure**. The neutrino compa
 | | algebra real structure $\flat$ | module charge conjugation $\mathcal{C}$ |
 |---|---|---|
 | acts on | the algebra $\mathbb{B}$, real dim $8$ | the spinor module $\Delta$, real dim $8$ |
-| defined by | the generators: $e_k\mapsto -e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}\gamma^\mu\mathcal{C} = -\gamma^{\mu T}$ |
+| defined by | the generators: $\vec e_k\mapsto -\vec e_k$, $i\mapsto -i$, with a sign | the Clifford relation $\mathcal{C}^{-1}\gamma^\mu\mathcal{C} = -\gamma^{\mu T}$ |
 | fixed space | $\mathbb{M}_-$, the anti-Hermitian sector, real dim $4$ | the Majorana spinor space, real dim $4$ |
 | commutes with the kinetic operator | **no** | **yes**, up to a sign |
 | exchanges the chiral halves | with $^{\dagger}$ the sector split is by $\flat$ | yes |
@@ -203,16 +203,16 @@ The preceding section separates the algebra's $\flat$ from the module's $\mathca
 **The group.** The $\mathrm{Spin}^c$ group is defined as
 
 $$
-\mathrm{Spin}^c(n) \;=\; \frac{\mathrm{Spin}(n)\times U(1)}{\{\pm 1\}},
+\mathrm{Spin}^c(n) \;=\; \frac{\mathrm{Spin}(n)\times \mathrm{U}(1)}{\{\pm 1\}},
 \qquad
 \mathrm{SPIN}^c(1,3) \;=\; \mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}\oplus\mathrm{U}(1),
 $$
 
-a double cover of $SO(1,3)\times U(1)$: the spin group extended by a central circle. It is **not** the complexification of $\mathrm{Spin}(1,3)$ — that is the larger $\mathrm{Spin}(1,3)_{\mathbb{C}}$, of real dimension twelve — and the looser name is sometimes used for it; the definition above is the one used here. $W_3$ is the integral class obstructing its existence, and the group is available exactly when $w_2$ is the mod $2$ reduction of an integral class. The Clifford action of $\mathrm{Cl}_{1,3}$ on the Dirac module is projective, realising a Lorentz transformation $\Lambda$ by $\pm S(\Lambda)$; that is why the acting group is the double cover $\mathrm{Spin}(1,3)$, and $\mathrm{Spin}^c$ is the central extension that adds the circle. The extra factor is **central** in $\mathrm{Spin}^c$, and it acts on the Dirac module by the same scalar on both chiral halves.
+a double cover of $SO(1,3)\times \mathrm{U}(1)$: the spin group extended by a central circle. It is **not** the complexification of $\mathrm{Spin}(1,3)$ — that is the larger $\mathrm{Spin}(1,3)_{\mathbb{C}}$, of real dimension twelve — and the looser name is sometimes used for it; the definition above is the one used here. $W_3$ is the integral class obstructing its existence, and the group is available exactly when $w_2$ is the mod $2$ reduction of an integral class. The Clifford action of $\mathrm{Cl}_{1,3}$ on the Dirac module is projective, realising a Lorentz transformation $\Lambda$ by $\pm S(\Lambda)$; that is why the acting group is the double cover $\mathrm{Spin}(1,3)$, and $\mathrm{Spin}^c$ is the central extension that adds the circle. The extra factor is **central** in $\mathrm{Spin}^c$, and it acts on the Dirac module by the same scalar on both chiral halves.
 
-**The framework's central $U(1)$ is that factor.** The gauge principle article localizes the unitary part of the centre — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = \exp(i\theta)e_0$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iϙ/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $U(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $U(1)$.
+**The framework's central $\mathrm{U}(1)$ is that factor.** The gauge principle article localizes the unitary part of the centre — the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, of real dimension $2$ — whose unitary elements are the phases $\lambda = \exp(i\theta)e_t$, and the minimal-coupling article writes the covariant derivative $D = \tilde{\nabla} + (iϙ/\hbar)\tilde{A}$ for exactly that phase. The phase is central in $\mathbb{B}$, and $\gamma_5$ — which anticommutes with every generator, and so commutes with every even element — is central in the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$; the two therefore commute, and the phase acts with the same phase on the two chiral halves. The framework's $\mathrm{U}(1)$ is **vector-like**, and this is structural rather than an artifact of the representation. It is the electromagnetic $\mathrm{U}(1)$.
 
-**Which spinors can carry it.** A spinor can be rotated by the central phase and remain a spinor of its own type only when its defining condition survives the rotation. The Dirac module imposes no condition, and $\psi\mapsto \exp(i\alpha)\psi$ is a symmetry of the free equation, so the Dirac spinor — with linearly independent left and right components — carries the $U(1)$ and is charged. The Majorana spinor is the fixed-point set of the module's antilinear real structure, $\psi = \mathcal{C}\bar{\psi}^{T}$, and $\mathcal{C}$ is conjugate-linear, so
+**Which spinors can carry it.** A spinor can be rotated by the central phase and remain a spinor of its own type only when its defining condition survives the rotation. The Dirac module imposes no condition, and $\psi\mapsto \exp(i\alpha)\psi$ is a symmetry of the free equation, so the Dirac spinor — with linearly independent left and right components — carries the $\mathrm{U}(1)$ and is charged. The Majorana spinor is the fixed-point set of the module's antilinear real structure, $\psi = \mathcal{C}\bar{\psi}^{T}$, and $\mathcal{C}$ is conjugate-linear, so
 
 $$
 \psi = \mathcal{C}\bar{\psi}^{T}
@@ -220,13 +220,13 @@ $$
 \exp(i\alpha)\psi = \exp(-i\alpha)\,\mathcal{C}\bar{\psi}^{T}.
 $$
 
-The condition is preserved only for $\exp(2i\alpha) = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana spinor is **blind to the central $U(1)$** — electrically neutral. The **ELKO** spinor, a Lounesto class-$5$ spinor, is neutral for the same reason: it too is fixed by an antilinear condition. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
+The condition is preserved only for $\exp(2i\alpha) = 1$, that is $\alpha = 0,\pi$: the continuous phase does not act, and the Majorana spinor is **blind to the central $\mathrm{U}(1)$** — electrically neutral. The **ELKO** spinor, a Lounesto class-$5$ spinor, is neutral for the same reason: it too is fixed by an antilinear condition. The three cases therefore stand as: Dirac charged, Majorana and ELKO neutral.
 
 It matters for the previous section *which* of the article's two real structures does the work. It is the **module's** $\mathcal{C}$ — the fixed-point condition that halves the field — and not the algebra's $\flat$. The distinction between them is thus not bookkeeping; it decides which spinors can carry a charge. The minimal-coupling article reaches the same obstruction from the other side, finding that a mass term pairing the field with its conjugate would retain only $\lambda = \pm 1$ of the phase.
 
-**What the identification re-reads.** Three negative results that the series records separately fall under one heading, though their causes come in two parts. The anomaly article finds the central phase vector-like, so that its cubic trace cancels identically; the custodial-symmetry and $W$-and-$Z$ articles find the framework's non-abelian actions — the adjoint on the material sector, and left multiplication on the spinor module — vector-like, so that they cannot give the left- and right-handed fermions inequivalent representations. For the **central** phase, the cause is now group-theoretic: it is the central circle of $\mathrm{Spin}^c$, central in an algebra that contains $\gamma_5$, so it commutes with $\gamma_5$ and acts equally on the two chiralities. For the non-abelian actions the cause is parallel but distinct: they multiply the two chiral halves alike. The two together are why the chiral $U(1)$ of hypercharge is not a gauge structure of $\mathbb{B}$.
+**What the identification re-reads.** Three negative results that the series records separately fall under one heading, though their causes come in two parts. The anomaly article finds the central phase vector-like, so that its cubic trace cancels identically; the custodial-symmetry and $W$-and-$Z$ articles find the framework's non-abelian actions — the adjoint on the material sector, and left multiplication on the spinor module — vector-like, so that they cannot give the left- and right-handed fermions inequivalent representations. For the **central** phase, the cause is now group-theoretic: it is the central circle of $\mathrm{Spin}^c$, central in an algebra that contains $\gamma_5$, so it commutes with $\gamma_5$ and acts equally on the two chiralities. For the non-abelian actions the cause is parallel but distinct: they multiply the two chiral halves alike. The two together are why the chiral $\mathrm{U}(1)$ of hypercharge is not a gauge structure of $\mathbb{B}$.
 
-**Gap, left visible.** What the identification does **not** settle is whether $C$ and $P$ become inner operations of the enlarged structure. The CPT companion records their internal matrices, $i\gamma^2$ and $\gamma^0$, to be odd Clifford elements outside $\mathbb{B}$, hence outer as operations of the algebra, and leaves their intrinsic realization open. $\mathrm{Spin}^c$ is the central extension of $\mathrm{Spin}(1,3)$ by a circle and is the natural candidate for a structure in which the relevant direction is inner — but charge conjugation in four dimensions is **antilinear**, while the extra $U(1)$ of $\mathrm{Spin}^c$ is a linear phase. Whether the antilinear $C$ can be realised through a linear group, or is irreducibly external to every such group, is **not decided here** and is stated as a question rather than a result.
+**Gap, left visible.** What the identification does **not** settle is whether $C$ and $P$ become inner operations of the enlarged structure. The CPT companion records their internal matrices, $i\gamma^2$ and $\gamma^0$, to be odd Clifford elements outside $\mathbb{B}$, hence outer as operations of the algebra, and leaves their intrinsic realization open. $\mathrm{Spin}^c$ is the central extension of $\mathrm{Spin}(1,3)$ by a circle and is the natural candidate for a structure in which the relevant direction is inner — but charge conjugation in four dimensions is **antilinear**, while the extra $\mathrm{U}(1)$ of $\mathrm{Spin}^c$ is a linear phase. Whether the antilinear $C$ can be realised through a linear group, or is irreducibly external to every such group, is **not decided here** and is stated as a question rather than a result.
 
 ## The Retired Equation: The Diagnosis Is the Dispersion
 
@@ -238,7 +238,7 @@ $$
 
 using the algebra's real structure. The equation is well formed; what disqualifies it is not its shape but its solutions.
 
-Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0\exp(i\theta)$ and $\tilde{k} = ik_0e_0 + e_1k_1 + e_2k_2 + e_3k_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
+Take the central-phase plane-wave ansatz of the parent article, in the block gamma representation of the canonical-quantization and spin–statistics articles, with $\tilde{\Psi} = \tilde{\Psi}_0\exp(i\,\mathrm{Sc}(\tilde{k}\tilde{Q}^{\natural})) = \tilde{\Psi}_0\exp(i\theta)$ and $\tilde{k} = ik_0e_t + \vec e_xk_1 + \vec e_yk_2 + \vec e_zk_3$, $k_0 = \omega/c$. A single phase cannot satisfy the equation: $\tilde{\nabla}$ multiplies the phase by $+ik$, while $\flat$ conjugates the phase, so the two sides carry $\exp(+i\theta)$ and $\exp(-i\theta)$ and cannot match. The equation's solutions are therefore necessarily **two-frequency** superpositions,
 
 $$
 \tilde{\Psi} = \tilde{\Psi}_0\,\exp(i\theta) + \tilde{\Psi}_1\,\exp(-i\theta),
@@ -328,7 +328,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 4. **The algebra's $\flat$ and the module's $\mathcal{C}$ are different real structures.** Both antilinear, both with a four-real-dimensional fixed space, but on different spaces. The Dirac operator preserves the module's real form and does not preserve $\mathbb{M}_-$; the matching dimension count does not identify them.
 
-5. **The $\mathrm{Spin}^c$ structure organises charge conjugation, and it decides who is charged.** $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times U(1)\bigr)/\{\pm 1\}$ is the spin group extended by a central circle, and the framework's central $U(1)$ — the phase that minimal coupling localizes — is that circle. Being central it commutes with $\gamma_5$ and is therefore **vector-like**: the electromagnetic $U(1)$, not a chiral one. A Dirac spinor carries it; a Majorana or ELKO spinor is fixed by an antilinear condition and is blind to it, hence neutral. It is the module's $\mathcal{C}$, not the algebra's $\flat$, that enforces the neutrality.
+5. **The $\mathrm{Spin}^c$ structure organises charge conjugation, and it decides who is charged.** $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ is the spin group extended by a central circle, and the framework's central $\mathrm{U}(1)$ — the phase that minimal coupling localizes — is that circle. Being central it commutes with $\gamma_5$ and is therefore **vector-like**: the electromagnetic $\mathrm{U}(1)$, not a chiral one. A Dirac spinor carries it; a Majorana or ELKO spinor is fixed by an antilinear condition and is blind to it, hence neutral. It is the module's $\mathcal{C}$, not the algebra's $\flat$, that enforces the neutrality.
 
 6. **The retired equation failed on its dispersion.** Its central-phase plane waves have nullity $0$ on the timelike shell and $4$ on the spacelike one, so its modes are spacelike. It is one of four: every antilinear self-pairing of the algebra shares the spacelike locus — nullity $4$ on the two sector fixed spaces and $8$ on the real-quaternion one — while the single linear involution has a timelike solution space and none spacelike.
 
@@ -351,7 +351,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | The Dirac mass: linear, chirality-off-diagonal |
 | $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | The retired equation; spacelike dispersion, not a mass term |
 | $\mathcal{C}$, $\psi^{c} = \mathcal{C}\bar{\psi}^{T}$ | Charge conjugation on the module; the Majorana reality condition |
-| $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times U(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged spinor is one on which that factor acts non-trivially |
+| $\mathrm{Spin}^c(1,3) = \bigl(\mathrm{Spin}(1,3)\times \mathrm{U}(1)\bigr)/\{\pm 1\}$ | Central extension of the spin group by a circle; its central factor is the framework's central phase, and a charged spinor is one on which that factor acts non-trivially |
 | $\Delta = S\oplus\bar{S}$ | Dirac module, real dim $8$; $\mathcal{C}$ exchanges the halves |
 | $m_D$, $m_M$ | Dirac and Majorana masses |
 | $\flat$ acts $+$ on $\mathbb{M}_-$, $-$ on $\mathbb{M}_+$ | The sector sign; the same convention as the material identification |

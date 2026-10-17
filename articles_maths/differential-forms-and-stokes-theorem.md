@@ -31,13 +31,13 @@ $$
 
 is the **algebra of differential forms**, a graded-commutative algebra under the wedge product.
 
-**Proposition.** In a chart $(U, x^1, \ldots, x^n)$, every $k$-form on $U$ has a unique expression
+**Proposition.** In a chart $(\Xi, x^1, \ldots, x^n)$, every $k$-form on $\Xi$ has a unique expression
 
 $$
 \omega = \sum_{i_1 < i_2 < \cdots < i_k} \omega_{i_1\cdots i_k}\, dx^{i_1} \wedge \cdots \wedge dx^{i_k}
 $$
 
-with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(U)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $U$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of **top forms**.
+with coefficients $\omega_{i_1\cdots i_k} \in C^\infty(\Xi)$, and the $dx^{i_1}\wedge\cdots\wedge dx^{i_k}$ give a basis of $\Lambda^k(T^*_xM)$ at each point of $\Xi$. Consequently $\Omega^k(M) = 0$ for $k > n$ and $\Omega^n(M)$ is the module of **top forms**.
 
 **Proof.** The cotangent bundle is locally trivial with fibre $\mathbb{R}^n$, and the exterior power of a free module of rank $n$ has the stated basis; the sections are smooth precisely when the coefficients are.
 
@@ -63,7 +63,7 @@ $$
 
 ### Definition in Coordinates
 
-**Definition.** The **exterior derivative** is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(U, x^1, \ldots, x^n)$ by
+**Definition.** The **exterior derivative** is the $\mathbb{R}$-linear map $d : \Omega^k(M) \to \Omega^{k+1}(M)$ defined in a chart $(\Xi, x^1, \ldots, x^n)$ by
 
 $$
 d\Bigl(\sum_{I} \omega_I\, dx^I\Bigr) = \sum_{I}\sum_{j=1}^{n} \frac{\partial \omega_I}{\partial x^j}\, dx^j \wedge dx^I,
@@ -127,33 +127,33 @@ the space of closed $k$-forms modulo exact ones. It is a real vector space, and 
 
 **Proof.** The commutation $F^* d = d F^*$ shows that $F^*$ preserves closed and exact forms, so it descends. Functoriality is the functoriality of the pullback. The homotopy invariance follows from the construction of a chain homotopy between the pullbacks of homotopic maps, the **prism operator**, which is built from the integral of the pullback along the homotopy.
 
-**Theorem (Mayer–Vietoris).** Let $M = U \cup V$ be an open cover. Then there is a long exact sequence
+**Theorem (Mayer–Vietoris).** Let $M = \Xi \cup V$ be an open cover. Then there is a long exact sequence
 
 $$
-\cdots \longrightarrow H^k_{dR}(M) \longrightarrow H^k_{dR}(U) \oplus H^k_{dR}(V) \longrightarrow H^k_{dR}(U \cap V) \xrightarrow{\ \delta\ } H^{k+1}_{dR}(M) \longrightarrow \cdots,
+\cdots \longrightarrow H^k_{dR}(M) \longrightarrow H^k_{dR}(\Xi) \oplus H^k_{dR}(V) \longrightarrow H^k_{dR}(\Xi \cap V) \xrightarrow{\ \delta\ } H^{k+1}_{dR}(M) \longrightarrow \cdots,
 $$
 
-where the connecting map $\delta$ is the boundary operator of the short exact sequence of complexes $0 \to \Omega^\bullet(M) \to \Omega^\bullet(U)\oplus\Omega^\bullet(V) \to \Omega^\bullet(U\cap V) \to 0$ built from a partition of unity.
+where the connecting map $\delta$ is the boundary operator of the short exact sequence of complexes $0 \to \Omega^\bullet(M) \to \Omega^\bullet(\Xi)\oplus\Omega^\bullet(V) \to \Omega^\bullet(\Xi\cap V) \to 0$ built from a partition of unity.
 
 **Proof sketch.** The restriction maps fit into a short exact sequence of complexes; the existence of a partition of unity subordinate to the cover shows that the third map is surjective, and the snake lemma produces the long exact sequence.
 
 ### The Poincaré Lemma
 
-**Definition.** An open set $U \subseteq \mathbb{R}^n$ is **star-shaped** with respect to a point $p$ if for every $x \in U$ the segment from $p$ to $x$ lies in $U$; a manifold is **contractible** if it is homotopy equivalent to a point.
+**Definition.** An open set $\Xi \subseteq \mathbb{R}^n$ is **star-shaped** with respect to a point $p$ if for every $x \in \Xi$ the segment from $p$ to $x$ lies in $\Xi$; a manifold is **contractible** if it is homotopy equivalent to a point.
 
-**Theorem (Poincaré lemma).** If $U \subseteq \mathbb{R}^n$ is star-shaped (in particular if $U$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:
+**Theorem (Poincaré lemma).** If $\Xi \subseteq \mathbb{R}^n$ is star-shaped (in particular if $\Xi$ is an open ball or all of $\mathbb{R}^n$), then every closed form of positive degree is exact:
 
 $$
-H^k_{dR}(U) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(U) = \mathbb{R}.
+H^k_{dR}(\Xi) = 0 \quad \text{for } k \geq 1, \qquad H^0_{dR}(\Xi) = \mathbb{R}.
 $$
 
-**Proof.** Let $U$ be star-shaped with respect to $0$. Define a **homotopy operator** $h : \Omega^k(U) \to \Omega^{k-1}(U)$ by
+**Proof.** Let $\Xi$ be star-shaped with respect to $0$. Define a **homotopy operator** $h : \Omega^k(\Xi) \to \Omega^{k-1}(\Xi)$ by
 
 $$
 h(\omega) = \int_0^1 t^{k-1}\, \iota_{x}\, \omega(tx)\, dt,
 $$
 
-where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial_{x^j}$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(U)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.
+where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j \partial/\partial x^j$. One checks the homotopy identity $d\,h + h\,d = \mathrm{id}$ on $\Omega^k(\Xi)$ for $k \geq 1$; a closed form of positive degree therefore satisfies $\omega = d(h\omega)$ and is exact.
 
 **Corollary.** The de Rham cohomology of a contractible manifold is $\mathbb{R}$ in degree $0$ and zero in positive degrees. In particular the de Rham complex computes a homotopy invariant of the manifold, not merely a differential-geometric one.
 
@@ -163,7 +163,7 @@ where $\iota_x$ is the contraction with the radial vector field $x = \sum_j x^j 
 
 **Definition.** An **orientation** of an $n$-manifold $M$ is a nowhere vanishing top form $\mathrm{vol} \in \Omega^n(M)$, or an equivalence class of atlases whose transition functions have positive Jacobian determinant; an oriented manifold is a manifold with a chosen orientation. The orientation induces an orientation on each tangent space by declaring a basis $(v_1, \ldots, v_n)$ to be positively oriented when $\mathrm{vol}(v_1, \ldots, v_n) > 0$.
 
-**Definition.** Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(U, x)$, and define the **integral** of $\omega$ over $U$ to be the ordinary integral $\int_{x(U)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.
+**Definition.** Let $M$ be an oriented $n$-manifold and $\omega \in \Omega^n(M)$ a top form with compact support. Write $\omega = f\, dx^1\wedge\cdots\wedge dx^n$ in a positively oriented chart $(\Xi, x)$, and define the **integral** of $\omega$ over $\Xi$ to be the ordinary integral $\int_{x(\Xi)} f\, dx^1\cdots dx^n$ of the coefficient function. For a general compactly supported $\omega$ choose a finite cover by positively oriented charts subordinate to a partition of unity and sum the local integrals.
 
 **Theorem (change of variables).** The integral is well defined, and if $F : N \to M$ is an orientation-preserving diffeomorphism between oriented $n$-manifolds, then
 
@@ -324,7 +324,7 @@ The integral of a top form on an oriented manifold is defined locally by the ord
 | $d$, $d^2 = 0$ | Exterior derivative; $d(\alpha\wedge\beta) = d\alpha\wedge\beta + (-1)^k\alpha\wedge d\beta$ |
 | Closed, exact | $d\omega = 0$; $\omega = d\eta$; exact implies closed |
 | $H^k_{dR}(M) = \ker d/\operatorname{im} d$ | de Rham cohomology |
-| Poincaré lemma | $H^k_{dR}(U) = 0$ for $k \geq 1$ on a star-shaped open set |
+| Poincaré lemma | $H^k_{dR}(\Xi) = 0$ for $k \geq 1$ on a star-shaped open set |
 | $\mathrm{vol}$, orientation | Nowhere vanishing top form defining an orientation |
 | $\mathbb{R}^n_+ = \{x^n \geq 0\}$ | Closed upper half-space; the local model for a manifold with boundary |
 | $\int_M\omega$ | Integral of a compactly supported top form on an oriented manifold |

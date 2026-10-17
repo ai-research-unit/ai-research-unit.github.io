@@ -6,10 +6,10 @@ The quaternion algebra embeds into the complex $2\times2$ matrices, and the symm
 
 **Boundaries.** The realization is *Quaternion 2x2 Matrix Element Representation $M_2(\mathbb{C})$*; the product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The realization $\mathsf{M}_2$ is fixed on the basis by $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$, so that
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde q=q_te_t+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$. The realization $\mathsf{M}_2$ is fixed on the basis by $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, so that
 
 $$
-\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_2\\ -iq_1+q_2 & q_0+iq_3\end{pmatrix}.
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_y\\ -iq_1+q_y & q_t+iq_3\end{pmatrix}.
 $$
 
 ## The Realization and Its Invariants
@@ -17,14 +17,14 @@ $$
 **Proposition (the invariants of the model).** The realization $\mathsf{M}_2$ is an injective algebra homomorphism $\mathbb{H}\to M_2(\mathbb{C})$ with real $4$-dimensional image; for every $\tilde q$,
 
 $$
-\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0,\qquad
+\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t,\qquad
 \det\mathsf{M}_2(\tilde q)=N(\tilde q),\qquad
 \mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}=\operatorname{adj}\mathsf{M}_2(\tilde q),
 $$
 
 where ${}^{\dagger}$ is the conjugate transpose and $\operatorname{adj}$ the adjugate.
 
-*Proof.* The realization is the standard one, its multiplicativity, trace and determinant are *Quaternion 2x2 Matrix Element Representation $M_2(\mathbb{C})$*; the identity $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$ is checked on the basis, where $\mathsf{M}_2(e_k)=-i\sigma_k$ is Hermitian, and the adjugate identity follows from $\operatorname{adj}X=(\operatorname{Tr}X)I-X$ in dimension two, which gives $2q_0I-\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q^{\natural})$.
+*Proof.* The realization is the standard one, its multiplicativity, trace and determinant are *Quaternion 2x2 Matrix Element Representation $M_2(\mathbb{C})$*; the identity $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$ is checked on the basis, where $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ is Hermitian, and the adjugate identity follows from $\operatorname{adj}X=(\operatorname{Tr}X)I-X$ in dimension two, which gives $2q_tI-\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q^{\natural})$.
 
 The block's operator theory is therefore read on the quaternion matrices, and the extension to the whole matrix space is an extension and not part of the model.
 
@@ -37,7 +37,7 @@ $$
 =\mathsf{M}_2(\tilde p\star\tilde q)=N(\tilde p,\tilde q)\,I_2 .
 $$
 
-*Proof.* The realization is multiplicative and carries the quaternion conjugation to the conjugate transpose, so $\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde p^{\natural}\tilde q)$; the half-sum is $\mathsf{M}_2\bigl(\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)\bigr)=\mathsf{M}_2(N(\tilde p,\tilde q)e_0)=N(\tilde p,\tilde q)I_2$.
+*Proof.* The realization is multiplicative and carries the quaternion conjugation to the conjugate transpose, so $\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde p^{\natural}\tilde q)$; the half-sum is $\mathsf{M}_2\bigl(\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)\bigr)=\mathsf{M}_2(N(\tilde p,\tilde q)e_t)=N(\tilde p,\tilde q)I_2$.
 
 **Corollary (the value is a scalar matrix).** The product value in the model is a real multiple of the identity; the model reads the centrality of the block as the scalarity of the matrix, and the vector part of the value is absent by construction.
 
@@ -58,7 +58,7 @@ $$
 $$
 N(\tilde p,\tilde q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)\bigr),\qquad
 N(\tilde q)=\det\mathsf{M}_2(\tilde q),\qquad
-\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0\longleftrightarrow N(\tilde p,\tilde q)I_2 .
+\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t\longleftrightarrow N(\tilde p,\tilde q)I_2 .
 $$
 
 *Proof.* The first two are the theorem and the determinant identity of the proposition; the third is the reading of the product on the model.
@@ -75,7 +75,7 @@ $$
 
 on the quaternion matrices has image the real scalar matrices $\mathbb{R}I_2$, rank $1$, trace $p_0$ and kernel the quaternion matrices $\mathsf{M}_2(\tilde p^{\perp})$.
 
-*Proof.* On $X=\mathsf{M}_2(\tilde q)$ the map is $N(\tilde p,\tilde q)I_2$ by the theorem, so its image is contained in $\mathbb{R}I_2$ and it is surjective onto that line because $N(\tilde p,e_0)=p_0$ can be chosen nonzero; the rank is $1$ for $\tilde p\neq0$. The trace of the operator in the basis $\mathsf{M}_2(e_\mu)$ is the coefficient of the image of $\mathsf{M}_2(e_0)$, namely $p_0$. The kernel is the set of quaternion matrices with $N(\tilde p,\tilde q)=0$, that is $\mathsf{M}_2(\tilde p^{\perp})$.
+*Proof.* On $X=\mathsf{M}_2(\tilde q)$ the map is $N(\tilde p,\tilde q)I_2$ by the theorem, so its image is contained in $\mathbb{R}I_2$ and it is surjective onto that line because $N(\tilde p,e_t)=p_0$ can be chosen nonzero; the rank is $1$ for $\tilde p\neq0$. The trace of the operator in the basis $\mathsf{M}_2(e_\mu)$ is the coefficient of the image of $\mathsf{M}_2(e_t)$, namely $p_0$. The kernel is the set of quaternion matrices with $N(\tilde p,\tilde q)=0$, that is $\mathsf{M}_2(\tilde p^{\perp})$.
 
 **Remark (the same shape as the abstract operator).** The transported operator is the matrix picture of $L_{\tilde p}$ of *The Multiplication Operators of the Symmetric Quaternionic Algebra*: rank one, scalar image, kernel the form-perpendicular hyperplane, trace the scalar coordinate. The model adds nothing to the abstract operator and exhibits its rank as the scalarity of the matrix.
 
@@ -96,19 +96,19 @@ and the block is the only row whose value is always a scalar matrix.
 
 *Proof.* Each row is the realization of the corresponding product, by multiplicativity of $\mathsf{M}$ in the plain cases and by the conjugation identity $\mathsf{M}(\tilde p^{\natural})=\mathsf{M}(\tilde p)^{\dagger}$ in the quaternionic cases; the block's row is the theorem of §*The Product Read on the Model*. The last clause is the isolation theorem of *The Specificities of the Symmetric Quaternionic Algebra*.
 
-The invariants $\operatorname{Tr}=2Q_0$ and $\det=N$, and the adjugate identity, have the same form in the two blocks; the trace pairing is the same formula over the two fields.
+The invariants $\operatorname{Tr}=2Q_t$ and $\det=N$, and the adjugate identity, have the same form in the two blocks; the trace pairing is the same formula over the two fields.
 
 ## Summary
 
-In the $2\times2$ complex model the quaternion algebra is the space of quaternion matrices, with $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$, $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$ and $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}=\operatorname{adj}\mathsf{M}_2(\tilde q)$. The symmetric quaternionic product is the symmetrisation of the two conjugate-transposed products, $\tfrac12(\mathsf{M}(\tilde p)^{\dagger}\mathsf{M}(\tilde q)+\mathsf{M}(\tilde q)^{\dagger}\mathsf{M}(\tilde p))=N(\tilde p,\tilde q)I_2$, a scalar matrix; the coefficient form is the half trace pairing, $N(\tilde p,\tilde q)=\tfrac12\operatorname{Tr}(\mathsf{M}(\tilde p)^{\dagger}\mathsf{M}(\tilde q))$, and the quadratic form is the determinant. The transported operator $X\mapsto\tfrac12(\mathsf{M}(\tilde p)^{\dagger}X+X^{\dagger}\mathsf{M}(\tilde p))$ has rank one, image the real scalar matrices, trace $p_0$ and kernel $\mathsf{M}_2(\tilde p^{\perp})$. Among the six operations read in the same model the block is the only one whose value is always scalar.
+In the $2\times2$ complex model the quaternion algebra is the space of quaternion matrices, with $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_t$, $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$ and $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}=\operatorname{adj}\mathsf{M}_2(\tilde q)$. The symmetric quaternionic product is the symmetrisation of the two conjugate-transposed products, $\tfrac12(\mathsf{M}(\tilde p)^{\dagger}\mathsf{M}(\tilde q)+\mathsf{M}(\tilde q)^{\dagger}\mathsf{M}(\tilde p))=N(\tilde p,\tilde q)I_2$, a scalar matrix; the coefficient form is the half trace pairing, $N(\tilde p,\tilde q)=\tfrac12\operatorname{Tr}(\mathsf{M}(\tilde p)^{\dagger}\mathsf{M}(\tilde q))$, and the quadratic form is the determinant. The transported operator $X\mapsto\tfrac12(\mathsf{M}(\tilde p)^{\dagger}X+X^{\dagger}\mathsf{M}(\tilde p))$ has rank one, image the real scalar matrices, trace $p_0$ and kernel $\mathsf{M}_2(\tilde p^{\perp})$. Among the six operations read in the same model the block is the only one whose value is always scalar.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathsf{M}_2$ | the realization, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
-| $\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_2\\ -iq_1+q_2 & q_0+iq_3\end{pmatrix}$ | the matrix of a quaternion |
-| $\operatorname{Tr}=2q_0$, $\det=N(\tilde q)$ | the two invariants |
+| $\mathsf{M}_2$ | the realization, $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
+| $\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_y\\ -iq_1+q_y & q_t+iq_3\end{pmatrix}$ | the matrix of a quaternion |
+| $\operatorname{Tr}=2q_t$, $\det=N(\tilde q)$ | the two invariants |
 | $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}=\operatorname{adj}\mathsf{M}_2(\tilde q)$ | the three roles of the involution |
 | $N(\tilde p,\tilde q)=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q))$ | the trace pairing |
 | $\tfrac12(\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)+\mathsf{M}_2(\tilde q)^{\dagger}\mathsf{M}_2(\tilde p))=N(\tilde p,\tilde q)I_2$ | the block in the model |

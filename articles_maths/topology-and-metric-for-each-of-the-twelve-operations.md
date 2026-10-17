@@ -11,61 +11,61 @@ The distribution is the result the article establishes, and it is worth stating 
 
 The article is organised as follows. The next section fixes what the scalar part of an operation is and states the two facts that decide the distribution. A table of the eight non-vanishing forms follows. Then the twelve operations are read one by one, in the order of *The 12 Products of the Biquaternioid Complex Space*, each with its form, its inertia, its level set and its group, and its metric verdict. A summary table, a section on the one topology, and a section on the indefinite forms and their groups of motions close the article.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, central scalar imaginary, and a general element $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The real and the imaginary part of the coefficient $Q_\mu$ are written $q_\mu$ and $q'_\mu$, and those of $P_\mu$ are written $p_\mu$ and $p'_\mu$; every form below is written in these eight real coordinates. The four forms of the region are written with one bracket, whose subscript records the conjugation entering the argument (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*):
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, central scalar imaginary, and a general element $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. For the two arguments $\tilde{Q}_2$ and $\tilde{Q}_1$ of a form, the coefficients of $\tilde{Q}_2$ are written $P_\mu$ and those of $\tilde{Q}_1$ are written $Q_\mu$. The real and the imaginary part of the coefficient $Q_\mu$ are written $q_\mu$ and $q'_\mu$, and those of $P_\mu$ are written $p_\mu$ and $p'_\mu$; every form below is written in these eight real coordinates. The four forms of the region are written with one bracket, whose subscript records the conjugation entering the argument (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*):
 
 $$
-\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad
-\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\sum_\mu P_\mu Q_\mu,\qquad
-\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu},\qquad
-\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}=\sum_\mu P_\mu Q_\mu,\qquad
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu},\qquad
+\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
 with $\varepsilon=(1,-1,-1,-1)$. They are the **general plain bilinear form**, the **general quaternionic bilinear form**, the **Hermitian form** and the **Krein form**; each is the scalar part of the product the corpus names with the same letters, and each is non-degenerate. The last two are the Hermitian forms of the region, the Hermitian form being positive definite and the Krein form indefinite.
 
 **Conventions.** Two words are fixed here, because both are used in two senses in the literature and both are needed below.
 
-- **Inertia is quoted over $\mathbb{R}$.** For a real symmetric or a real alternating form the inertia (the pair of the numbers of positive and of negative eigenvalues) is an invariant, by Sylvester's law. For a **complex symmetric bilinear** form it is not: over $\mathbb{C}$ the form $\operatorname{diag}(1,-1,-1,-1)$ is congruent to the identity, since the change of basis $e_k\mapsto (\text{the central imaginary})e_k$ flips the three negative signs, so the only invariant is the rank. For a **complex Hermitian** form the signature is an invariant again. So in the tables below the inertias are always the realified ones, and a complex signature is given only for the two Hermitian forms, where it is an invariant.
+- **Inertia is quoted over $\mathbb{R}$.** For a real symmetric or a real alternating form the inertia (the pair of the numbers of positive and of negative eigenvalues) is an invariant, by Sylvester's law. For a **complex symmetric bilinear** form it is not: over $\mathbb{C}$ the form $\operatorname{diag}(1,-1,-1,-1)$ is congruent to the identity, since the change of basis $\vec e_k\mapsto i\vec e_k$ flips the three negative signs, so the only invariant is the rank. For a **complex Hermitian** form the signature is an invariant again. So in the tables below the inertias are always the realified ones, and a complex signature is given only for the two Hermitian forms, where it is an invariant.
 - **Two objects carry the name *norm*, and they are complementary.** The **biquaternion norm** is
   $$\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2},$$
-  a complex-valued quadratic form on $\mathbb{B}\cong\mathbb{C}^{4}$; it is **multiplicative**, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, it is the reduced norm $\det\mathsf{M}_2(\tilde Q)$, and its zeros are exactly the zero divisors. It is the norm of the algebra in the algebraic sense (a norm on an algebra need only be multiplicative), and it is what the corpus calls the semi-norm of the literature: of the analytic axioms it keeps only the sign, since it is complex-valued and not positive definite and the scaling axiom fails for complex $\lambda$. The **Euclidean norm** $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}=\bigl(\mathrm{Sc}(\tilde Q\tilde Q^{*})\bigr)^{1/2}$ is a genuine norm, positive definite and homogeneous, and it is **not** multiplicative. So the two are complementary: the multiplicative one is indefinite, the definite one is not multiplicative. When this article says "a norm" of the analytic kind it means $\lVert\cdot\rVert_E$; the biquaternion norm is always named in full.
+  a complex-valued quadratic form on $\mathbb{B}\cong\mathbb{C}^{4}$; it is **multiplicative**, $\langle\tilde Q_2\tilde Q_1\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$, it is the reduced norm $\det\mathsf{M}_2(\tilde Q)$, and its zeros are exactly the zero divisors. It is the norm of the algebra in the algebraic sense (a norm on an algebra need only be multiplicative), and it is what the corpus calls the semi-norm of the literature: of the analytic axioms it keeps only the sign, since it is complex-valued and not positive definite and the scaling axiom fails for complex $\lambda$. The **Euclidean norm** $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}=\bigl(\mathrm{Sc}(\tilde Q\tilde Q^{*})\bigr)^{1/2}$ is a genuine norm, positive definite and homogeneous, and it is **not** multiplicative. So the two are complementary: the multiplicative one is indefinite, the definite one is not multiplicative. When this article says "a norm" of the analytic kind it means $\lVert\cdot\rVert_E$; the biquaternion norm is always named in full.
 - **Realification, not *real form*.** Reading a complex form on the $8$ real coordinates is called here the **realification** of the form, and the resulting real form is its real part. The phrase "real form" is avoided for this, because in Lie theory a *real form* of a complex Lie algebra is a real Lie algebra whose complexification returns it, a different notion.
 
-The **Euclidean norm** is $\lVert\tilde{Q}\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$. The two parts of a product $f$ are $f_{+}=\tfrac12(f+E(f))$ and $f_{-}=\tfrac12(f-E(f))$, with $E(f)(\tilde{P},\tilde{Q})=f(\tilde{Q},\tilde{P})$, and the twelve operations, the algebra together with the codes $\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$, are those of *The 12 Products of the Biquaternioid Complex Space*. The vector subspace, the centre and the two sectors $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are those of *Introduction to the Remarkable Subspaces*.
+The **Euclidean norm** is $\lVert\tilde{Q}\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$. The two parts of a product $f$ are $f_{+}=\tfrac12(f+E(f))$ and $f_{-}=\tfrac12(f-E(f))$, with $E(f)(\tilde Q_2,\tilde Q_1)=f(\tilde Q_1,\tilde Q_2)$, and the twelve operations, the algebra together with the codes $\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA},\mathrm{GPS},\mathrm{SPS},\mathrm{APS},\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$, are those of *The 12 Products of the Biquaternioid Complex Space*. The vector subspace, the centre and the two sectors $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$ are those of *Introduction to the Remarkable Subspaces*.
 
 ## The Scalar Part, and the Two Facts That Distribute the Twelve
 
 **Definition (the scalar part of an operation).** Let $f$ be one of the four general products or one of its two halves. Its **scalar part** is the map
 
 $$
-(\tilde{P},\tilde{Q})\mapsto\text{the scalar coordinate of }f(\tilde{P},\tilde{Q}),
+(\tilde Q_2,\tilde Q_1)\mapsto\text{the scalar coordinate of }f(\tilde Q_2,\tilde Q_1),
 $$
 
 a form on $\mathbb{B}\times\mathbb{B}$ with values in $\mathbb{C}$ for the four general products, in $\mathbb{C}$ for the two halves of a bilinear product and in the real or the purely imaginary numbers for the two halves of a sesquilinear product. The scalar part is the object from which the metric is read, and it is the object the corpus takes when it quotes the four pairings above: each of the four brackets **is** the scalar part of the product of the same name (*The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, §*The scalar–vector form*).
 
 Two facts decide how the twelve distribute over the forms, and both are immediate from the definitions.
 
-**Fact 1 (the scalar part of the two bilinear products is symmetric).** For the plain product $\tilde{P}\tilde{Q}$ and the quaternionic product $\tilde{P}^{\natural}\tilde{Q}$ the scalar part is unchanged when the two arguments are exchanged:
+**Fact 1 (the scalar part of the two bilinear products is symmetric).** For the plain product $\tilde{Q}_2\tilde{Q}_1$ and the quaternionic product $\tilde{Q}_2^{\natural}\tilde{Q}_1$ the scalar part is unchanged when the two arguments are exchanged:
 
 $$
-\langle\tilde{Q},\tilde{P}\rangle=\langle\tilde{P},\tilde{Q}\rangle,\qquad
-\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\langle\tilde{P},\tilde{Q}\rangle_{\natural}.
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\langle\tilde{Q}_2,\tilde{Q}_1\rangle,\qquad
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}.
 $$
 
 Consequently the symmetric half of a bilinear product has the **same** scalar part as the product, and the antisymmetric half has the **zero** scalar part. This is why $\mathrm{APA}$ and $\mathrm{AQA}$ carry no form, and why the two bilinear forms of the table below are each carried by two operations.
 
-**Fact 2 (the scalar part of the two sesquilinear products is Hermitian, not symmetric).** For the plain sesquilinear product $\tilde{P}\tilde{Q}^{*}$ and the general quaternionic sesquilinear product $\tilde{P}^{\natural}\tilde{Q}^{*}$ the exchanged scalar part is the conjugate:
+**Fact 2 (the scalar part of the two sesquilinear products is Hermitian, not symmetric).** For the plain sesquilinear product $\tilde{Q}_2\tilde{Q}_1^{*}$ and the general quaternionic sesquilinear product $\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}$ the exchanged scalar part is the conjugate:
 
 $$
-\langle\tilde{Q},\tilde{P}\rangle_{*}=\overline{\langle\tilde{P},\tilde{Q}\rangle_{*}},\qquad
-\langle\tilde{Q},\tilde{P}\rangle_{\natural*}=\overline{\langle\tilde{P},\tilde{Q}\rangle_{\natural*}}.
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}},\qquad
+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}=\overline{\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}}.
 $$
 
 Consequently the scalar part of the symmetric half is the **half-sum of the form with its conjugate**, a real form, and the scalar part of the antisymmetric half is the **half-difference**, a purely imaginary alternating form:
 
 $$
-\text{scalar part of }\mathrm{SPS}:(\tilde{P},\tilde{Q})\mapsto\tfrac12\bigl(\langle\tilde{P},\tilde{Q}\rangle_{*}+\langle\tilde{Q},\tilde{P}\rangle_{*}\bigr),
+\text{scalar part of }\mathrm{SPS}:(\tilde{Q}_2,\tilde{Q}_1)\mapsto\tfrac12\bigl(\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}+\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}\bigr),
 \qquad
-\text{scalar part of }\mathrm{APS}:(\tilde{P},\tilde{Q})\mapsto\tfrac12\bigl(\langle\tilde{P},\tilde{Q}\rangle_{*}-\langle\tilde{Q},\tilde{P}\rangle_{*}\bigr),
+\text{scalar part of }\mathrm{APS}:(\tilde{Q}_2,\tilde{Q}_1)\mapsto\tfrac12\bigl(\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}-\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}\bigr),
 $$
 
 and the same with the Krein form for $\mathrm{SQS}$ and $\mathrm{AQS}$. The half-sum is the real part of the Hermitian form; the half-difference, divided by the central imaginary, is the alternating form of the Hermitian form. This is why the four sesquilinear-row operations contribute four forms and not two.
@@ -78,12 +78,12 @@ The twelve operations carry the eight forms collected here. Each row names the f
 
 | # | form | carried by | kind | inertia | definite? |
 |---|---|---|---|---|---|
-| 1 | general plain bilinear $\langle\tilde{P},\tilde{Q}\rangle$ | the algebra, $\mathrm{SPA}$ | complex-valued, symmetric | $(4,4)$ (rank $4$ over $\mathbb{C}$) | no |
-| 2 | general quaternionic bilinear $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | $\mathrm{GQA}$, $\mathrm{SQA}$ | complex-valued, symmetric | $(4,4)$ (rank $4$ over $\mathbb{C}$) | no |
-| 3 | Hermitian $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | $\mathrm{GPS}$ | complex Hermitian | $(8,0)$, complex signature $(4,0)$ | **yes** |
+| 1 | general plain bilinear $\langle\tilde{Q}_2,\tilde{Q}_1\rangle$ | the algebra, $\mathrm{SPA}$ | complex-valued, symmetric | $(4,4)$ (rank $4$ over $\mathbb{C}$) | no |
+| 2 | general quaternionic bilinear $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}$ | $\mathrm{GQA}$, $\mathrm{SQA}$ | complex-valued, symmetric | $(4,4)$ (rank $4$ over $\mathbb{C}$) | no |
+| 3 | Hermitian $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}$ | $\mathrm{GPS}$ | complex Hermitian | $(8,0)$, complex signature $(4,0)$ | **yes** |
 | 4 | real part of the Hermitian form | $\mathrm{SPS}$ | real-valued, symmetric | $(8,0)$ | **yes** |
 | 5 | alternating form of the Hermitian form | $\mathrm{APS}$ | purely imaginary, alternating | rank $8$ | not a quadratic form |
-| 6 | Krein $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}$ | $\mathrm{GQS}$ | complex Hermitian | $(2,6)$, complex signature $(1,3)$ | no |
+| 6 | Krein $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}$ | $\mathrm{GQS}$ | complex Hermitian | $(2,6)$, complex signature $(1,3)$ | no |
 | 7 | real part of the Krein form | $\mathrm{SQS}$ | real-valued, symmetric | $(2,6)$ | no |
 | 8 | alternating form of the Krein form | $\mathrm{AQS}$ | purely imaginary, alternating | rank $8$ | not a quadratic form |
 
@@ -95,7 +95,7 @@ Each operation is read in the fixed order: the operation and its scalar part; th
 
 ### The algebra — biquaternion algebra
 
-The operation is the multiplication $\tilde{P}\tilde{Q}$ itself. Its scalar part is the general plain bilinear form $\langle\tilde{P},\tilde{Q}\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, whose coefficient Gram matrix is $\operatorname{diag}(1,-1,-1,-1)$: realification $(4,4)$ and no complex inertia (over $\mathbb{C}$ this form is the standard one, of rank $4$ alone, and it is congruent to the general quaternionic bilinear form), **indefinite**, with non-zero null elements, the first witness being $\langle e_0+e_1,e_0+e_1\rangle=1-1=0$.
+The operation is the multiplication $\tilde{Q}_2\tilde{Q}_1$ itself. Its scalar part is the general plain bilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$, whose coefficient Gram matrix is $\operatorname{diag}(1,-1,-1,-1)$: realification $(4,4)$ and no complex inertia (over $\mathbb{C}$ this form is the standard one, of rank $4$ alone, and it is congruent to the general quaternionic bilinear form), **indefinite**, with non-zero null elements, the first witness being $\langle e_t+\vec e_x,e_t+\vec e_x\rangle=1-1=0$.
 
 **Topology.** The operation introduces no topology; its scalar part owns the level set $\{\langle\tilde{Q},\tilde{Q}\rangle=1\}$, a non-compact complex quadric of real dimension $6$ that is not a group, and the isometry group $O_4(\mathbb{C})$ of real dimension $12$ (*The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*). The values of the operation fill the whole space.
 
@@ -103,7 +103,7 @@ The operation is the multiplication $\tilde{P}\tilde{Q}$ itself. Its scalar part
 
 ### SPA — symmetric plain algebra
 
-The operation is the half-sum $\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$, the commutative product of the plain row, the Jordan product of *The 12 Products of the Biquaternioid Complex Space*. By Fact 1 its scalar part is **the same general plain bilinear form** as that of the algebra, with the same realification $(4,4)$ and the same null elements; the symmetrisation adds the cross term away but leaves the scalar part untouched, the cross term being of trace zero.
+The operation is the half-sum $\tfrac12(\tilde{Q}_2\tilde{Q}_1+\tilde{Q}_1\tilde{Q}_2)$, the commutative product of the plain row, the Jordan product of *The 12 Products of the Biquaternioid Complex Space*. By Fact 1 its scalar part is **the same general plain bilinear form** as that of the algebra, with the same realification $(4,4)$ and the same null elements; the symmetrisation adds the cross term away but leaves the scalar part untouched, the cross term being of trace zero.
 
 **Topology.** The same level set and the same isometry group as the algebra. The operation's own topological interest is elsewhere: being commutative and satisfying the Jordan identity, it makes of the form a Jordan product, and its Hermitian subspace is the Hermitian Jordan algebra $J(\mathbb{B})$.
 
@@ -111,7 +111,7 @@ The operation is the half-sum $\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$,
 
 ### APA — antisymmetric plain algebra
 
-The operation is the half-difference $\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=\vec P\times\vec Q$, the cross product of the two vector parts. By Fact 1 its scalar part **vanishes identically**: the operation carries no form at all, and neither the diagonal route nor the symmetry route applies to it.
+The operation is the half-difference $\tfrac12(\tilde{Q}_2\tilde{Q}_1-\tilde{Q}_1\tilde{Q}_2)=\vec Q_2\times\vec Q_1$, the cross product of the two vector parts. By Fact 1 its scalar part **vanishes identically**: the operation carries no form at all, and neither the diagonal route nor the symmetry route applies to it.
 
 **Topology.** The operation owns no level set and no isometry group, its values lying in the vector subspace. What it does own is the whole Lie structure of the algebra: it is the one operation of the twelve that is alternating and satisfies the Jacobi identity, and its bracket is the Lie bracket of *The Unitary Lie Algebra*.
 
@@ -119,15 +119,15 @@ The operation is the half-difference $\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tild
 
 ### GQA — general quaternionic algebra
 
-The operation is $\tilde{P}^{\natural}\tilde{Q}$, the plain product with the first factor read through the natural conjugation. Its scalar part is the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, of Gram matrix the identity: realification $(4,4)$, and no complex inertia, since over $\mathbb{C}$ it is congruent to the general plain bilinear form above, **indefinite**, with null cone the zero-divisor cone of the algebra, the witness being $\langle e_1+ie_2,e_1+ie_2\rangle_{\natural}=1+(\text{the central imaginary})^{2}=0$. Its diagonal is the **biquaternion norm** $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, which is multiplicative, $\langle\tilde P\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and which decides invertibility: $\tilde Q$ is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The multiplicativity belongs to the norm and to its polar form taken on the diagonal; the polar bilinear form itself is not multiplicative in either argument.
+The operation is $\tilde{Q}_2^{\natural}\tilde{Q}_1$, the plain product with the first factor read through the natural conjugation. Its scalar part is the general quaternionic bilinear form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$, of Gram matrix the identity: realification $(4,4)$, and no complex inertia, since over $\mathbb{C}$ it is congruent to the general plain bilinear form above, **indefinite**, with null cone the zero-divisor cone of the algebra, the witness being $\langle \vec e_x+i\vec e_y,\vec e_x+i\vec e_y\rangle_{\natural}=1+(\text{the central imaginary})^{2}=0$. Its diagonal is the **biquaternion norm** $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, which is multiplicative, $\langle\tilde Q_2\tilde Q_1\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$, and which decides invertibility: $\tilde Q$ is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The multiplicativity belongs to the norm and to its polar form taken on the diagonal; the polar bilinear form itself is not multiplicative in either argument.
 
 **Topology.** Its level set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=1\}$ is a non-compact real $6$-manifold homotopy equivalent to $S^{3}$, and it is the only level set of the twelve that is a group, the norm-one group $\mathbb{B}^{\times}_{1}$. Its isometry group is $O_4(\mathbb{C})$, the same group as that of the general plain bilinear form, the two forms being equivalent over $\mathbb{C}$.
 
-**Metric.** No norm by the diagonal, at the null cone and at the negative value $\langle e_1,e_1\rangle_{\natural*}$ of the companion form; the metric is indefinite, and its distance is the Euclidean one through its symmetry, the complex conjugation.
+**Metric.** No norm by the diagonal, at the null cone and at the negative value $\langle \vec e_x,\vec e_x\rangle_{\natural*}$ of the companion form; the metric is indefinite, and its distance is the Euclidean one through its symmetry, the complex conjugation.
 
 ### SQA — symmetric quaternionic algebra
 
-The operation is $\tfrac12(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P})$, which by Fact 1 has scalar part **$P_0Q_0+(\vec P,\vec Q)$**, the same general quaternionic bilinear form as that of $\mathrm{GQA}$. Its values lie in the centre, so it is the operation that *is* the bilinear form read as a product: a commutative product with values in the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$ and with no unit.
+The operation is $\tfrac12(\tilde{Q}_2^{\natural}\tilde{Q}_1+\tilde{Q}_1^{\natural}\tilde{Q}_2)$, which by Fact 1 has scalar part **$P_0Q_t+(\vec Q_2,\vec Q_1)$**, the same general quaternionic bilinear form as that of $\mathrm{GQA}$. Its values lie in the centre, so it is the operation that *is* the bilinear form read as a product: a commutative product with values in the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$ and with no unit.
 
 **Topology.** The same level set, the norm-one group, and the same isometry group $O_4(\mathbb{C})$ as $\mathrm{GQA}$; the two operations are two readings of one object, the form as a pairing and the form as a product.
 
@@ -135,73 +135,73 @@ The operation is $\tfrac12(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\ti
 
 ### AQA — antisymmetric quaternionic algebra
 
-The operation is $\tfrac12(\tilde{P}^{\natural}\tilde{Q}-\tilde{Q}^{\natural}\tilde{P})$, the quaternionic product with its scalar part removed; its values are in the vector subspace. By Fact 1 its scalar part **vanishes identically**, so it carries no form, no level set and no metric. It is alternating but **fails** the Jacobi identity, with witness $(e_0,e_1,e_2)$, and therefore owns no Killing form either: of the two operations with no scalar part, $\mathrm{APA}$ owns a canonical metric and $\mathrm{AQA}$ does not.
+The operation is $\tfrac12(\tilde{Q}_2^{\natural}\tilde{Q}_1-\tilde{Q}_1^{\natural}\tilde{Q}_2)$, the quaternionic product with its scalar part removed; its values are in the vector subspace. By Fact 1 its scalar part **vanishes identically**, so it carries no form, no level set and no metric. It is alternating but **fails** the Jacobi identity, with witness $(e_t,\vec e_x,\vec e_y)$, and therefore owns no Killing form either: of the two operations with no scalar part, $\mathrm{APA}$ owns a canonical metric and $\mathrm{AQA}$ does not.
 
 **Topology and metric.** No topological object of its own beyond its image, the vector subspace; and no metric from its scalar part and no Killing form. It is the operation of the twelve with the least geometric content, and that is a fact about it, not a defect of the reading.
 
 ### GPS — general plain sesqualgebra
 
-The operation is the sesquilinear product $\tilde{P}\tilde{Q}^{*}$, the multiplication of *Introduction to the General Plain Sesqualgebra*. Its scalar part is the Hermitian form $\langle\tilde{P},\tilde{Q}\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$, of Gram matrix the identity and signature $(8,0)$: **positive definite**, and it is the only one of the four general products whose scalar part is.
+The operation is the sesquilinear product $\tilde{Q}_2\tilde{Q}_1^{*}$, the multiplication of *Introduction to the General Plain Sesqualgebra*. Its scalar part is the Hermitian form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$, of Gram matrix the identity and signature $(8,0)$: **positive definite**, and it is the only one of the four general products whose scalar part is.
 
-**Topology.** Its level set is the sphere $S^{7}$, compact, not a group, and meeting the null cone of the general quaternionic bilinear form in a compact $5$-manifold; its isometry group is $U(4)$, of real dimension $16$ and compact (*The Euclidean Topology of the Biquaternion Algebra*, *The Unitary Group of the Biquaternion Algebra*).
+**Topology.** Its level set is the sphere $S^{7}$, compact, not a group, and meeting the null cone of the general quaternionic bilinear form in a compact $5$-manifold; its isometry group is $\mathrm{U}(4)$, of real dimension $16$ and compact (*The Euclidean Topology of the Biquaternion Algebra*, *The Unitary Group of the Biquaternion Algebra*).
 
 **Metric.** The diagonal route **succeeds**: $\bigl(\langle\tilde{Q},\tilde{Q}\rangle_{*}\bigr)^{1/2}=\lVert\tilde{Q}\rVert_E$ is a norm, the Euclidean norm of the region. So $\mathrm{GPS}$ carries the positive definite metric, and every other metric of the twelve is compared with this one.
 
 ### SPS — symmetric plain sesqualgebra
 
-The operation is the half-sum $\tfrac12(\tilde{P}\tilde{Q}^{*}+\tilde{Q}\tilde{P}^{*})$, the Hermitian part of the value of the sesquilinear product; its values lie in the Hermitian subspace $\mathbb{M}_{+}$. By Fact 2 its scalar part is the half-sum of the Hermitian form with its conjugate, a **real** form, and that form is the Euclidean form: at $\tilde{P}=\tilde{Q}$ it reads $p_0^{2}+p_0^{\prime2}+p_1^{2}+p_1^{\prime2}+p_2^{2}+p_2^{\prime2}+p_3^{2}+p_3^{\prime2}=\lVert\tilde{P}\rVert_E^{2}$, of signature $(8,0)$.
+The operation is the half-sum $\tfrac12(\tilde{Q}_2\tilde{Q}_1^{*}+\tilde{Q}_1\tilde{Q}_2^{*})$, the Hermitian part of the value of the sesquilinear product; its values lie in the Hermitian subspace $\mathbb{M}_{+}$. By Fact 2 its scalar part is the half-sum of the Hermitian form with its conjugate, a **real** form, and that form is the Euclidean form: at $\tilde{Q}_2=\tilde{Q}_1$ it reads $p_t^{2}+p_t^{\prime2}+p_x^{2}+p_x^{\prime2}+p_y^{2}+p_y^{\prime2}+p_z^{2}+p_z^{\prime2}=\lVert\tilde{Q}_2\rVert_E^{2}$, of signature $(8,0)$.
 
-**Topology.** The same level set $S^{7}$ and the same group $U(4)$ as $\mathrm{GPS}$, since the real part of the Hermitian form has the same isometries as the Hermitian form.
+**Topology.** The same level set $S^{7}$ and the same group $\mathrm{U}(4)$ as $\mathrm{GPS}$, since the real part of the Hermitian form has the same isometries as the Hermitian form.
 
 **Metric.** This is the one operation of the twelve whose scalar part is **both symmetric, hence a quadratic form on the whole real space, and positive definite**. It is the operation that carries the positive definite metric as an operation of the twelve, in the same sense in which $\mathrm{SQA}$ carries the bilinear form as a product: $\mathrm{GPS}$ carries the form as a pairing, $\mathrm{SPS}$ carries it as a symmetric operation. The two carry the same metric data, and the same norm.
 
 ### APS — antisymmetric plain sesqualgebra
 
-The operation is the half-difference $\tfrac12(\tilde{P}\tilde{Q}^{*}-\tilde{Q}\tilde{P}^{*})$, the skew-Hermitian part of the value of the sesquilinear product; its values lie in the anti-Hermitian subspace $\mathbb{M}_{-}$. By Fact 2 its scalar part is the half-difference of the Hermitian form with its conjugate, which is purely imaginary and, divided by the central imaginary, is the **alternating form**
+The operation is the half-difference $\tfrac12(\tilde{Q}_2\tilde{Q}_1^{*}-\tilde{Q}_1\tilde{Q}_2^{*})$, the skew-Hermitian part of the value of the sesquilinear product; its values lie in the anti-Hermitian subspace $\mathbb{M}_{-}$. By Fact 2 its scalar part is the half-difference of the Hermitian form with its conjugate, which is purely imaginary and, divided by the central imaginary, is the **alternating form**
 
 $$
-\omega(\tilde{P},\tilde{Q})=p'_0q_0-p_0q'_0+p'_1q_1-p_1q'_1+p'_2q_2-p_2q'_2+p'_3q_3-p_3q'_3 .
+\omega(\tilde{Q}_2,\tilde{Q}_1)=p'_tq_t-p_tq'_t+p'_xq_x-p_xq'_x+p'_yq_y-p_yq'_y+p'_zq_z-p_zq'_z .
 $$
 
 It is alternating, non-degenerate, of rank $8$ over the real space, and it satisfies no definiteness condition of any kind: an alternating form has no diagonal.
 
-**Topology.** An alternating form owns no quadratic level set and no sphere. Its isometry group is the real symplectic group $Sp(8,\mathbb{R})$ of real dimension $36$, and the part of it that is complex-linear is exactly the unitary group $U(4)$: if a complex-linear $A$ preserves the form, then $\operatorname{Im}(\tilde{P}^{\dagger}A^{\dagger}A\tilde{Q})=\operatorname{Im}(\tilde{P}^{\dagger}\tilde{Q})$ for all $\tilde{P},\tilde{Q}$, and the map $M\mapsto\bigl[(\tilde{P},\tilde{Q})\mapsto\operatorname{Im}(\tilde{P}^{\dagger}M\tilde{Q})\bigr]$ is injective on Hermitian matrices, since $\operatorname{Im}(\tilde{P}^{\dagger}M\tilde{Q})=0$ for all $\tilde{P},\tilde{Q}$ forces the Hermitian form $\tilde{P}^{\dagger}M\tilde{Q}$ to be real-valued, hence $M=0$; so $A^{\dagger}A=\mathrm{I}$ and $A\in U(4)$. Its isotropic subspaces are the Lagrangian planes, of real dimension $4$.
+**Topology.** An alternating form owns no quadratic level set and no sphere. Its isometry group is the real symplectic group $Sp(8,\mathbb{R})$ of real dimension $36$, and the part of it that is complex-linear is exactly the unitary group $\mathrm{U}(4)$: if a complex-linear $A$ preserves the form, then $\operatorname{Im}(\tilde{Q}_2^{\dagger}A^{\dagger}A\tilde{Q}_1)=\operatorname{Im}(\tilde{Q}_2^{\dagger}\tilde{Q}_1)$ for all $\tilde{Q}_2,\tilde{Q}_1$, and the map $M\mapsto\bigl[(\tilde{Q}_2,\tilde{Q}_1)\mapsto\operatorname{Im}(\tilde{Q}_2^{\dagger}M\tilde{Q}_1)\bigr]$ is injective on Hermitian matrices, since $\operatorname{Im}(\tilde{Q}_2^{\dagger}M\tilde{Q}_1)=0$ for all $\tilde{Q}_2,\tilde{Q}_1$ forces the Hermitian form $\tilde{Q}_2^{\dagger}M\tilde{Q}_1$ to be real-valued, hence $M=0$; so $A^{\dagger}A=\mathrm{I}$ and $A\in \mathrm{U}(4)$. Its isotropic subspaces are the Lagrangian planes, of real dimension $4$.
 
-**Metric.** No norm **on the diagonal**, because the diagonal of an alternating form vanishes identically; and no symmetric metric tensor, because the form is skew. The operation carries a **symplectic form**, the imaginary part of the Hermitian form, which measures oriented area rather than length, and its compatible structure is the complex structure of multiplication by the central imaginary: $\omega(\tilde P,\tilde Q)=\operatorname{Re}\langle\tilde P\ (\text{the central imaginary})\tilde Q\rangle_{*}$, and the inner product on the right is the Euclidean one, so the symmetry route returns the same norm $\lVert\cdot\rVert_E$ and the same distance as the other eleven operations. This is the operation that shows that the scalar part of an operation of the twelve need not be a symmetric metric at all, and that even so it carries the one norm of the algebra.
+**Metric.** No norm **on the diagonal**, because the diagonal of an alternating form vanishes identically; and no symmetric metric tensor, because the form is skew. The operation carries a **symplectic form**, the imaginary part of the Hermitian form, which measures oriented area rather than length, and its compatible structure is the complex structure of multiplication by the central imaginary: $\omega(\tilde{Q}_2,\tilde{Q}_1)=\operatorname{Re}\langle\tilde{Q}_2,\, i\tilde{Q}_1\rangle_{*}$, and the inner product on the right is the Euclidean one, so the symmetry route returns the same norm $\lVert\cdot\rVert_E$ and the same distance as the other eleven operations. This is the operation that shows that the scalar part of an operation of the twelve need not be a symmetric metric at all, and that even so it carries the one norm of the algebra.
 
 ### GQS — general quaternionic sesqualgebra
 
-The operation is $\tilde{P}^{\natural}\tilde{Q}^{*}$, both slots read through a conjugation. Its scalar part is the Krein form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis: realification $(2,6)$ and complex signature $(1,3)$, both invariants, **indefinite**, with the centre as its positive part of complex dimension one and the vector subspace as its negative part of complex dimension three.
+The operation is $\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}$, both slots read through a conjugation. Its scalar part is the Krein form $\langle\tilde{Q}_2,\tilde{Q}_1\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ in the coefficient basis: realification $(2,6)$ and complex signature $(1,3)$, both invariants, **indefinite**, with the centre as its positive part of complex dimension one and the vector subspace as its negative part of complex dimension three.
 
-**Topology.** Its level sets are the hyperboloids $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$, with the null set between them, of real dimension $7$, and its isometry group is $U(1,3)$, of real dimension $16$ and non-compact (*The Krein Gram Matrix and the Restrictions of the Form*, *The Krein Level Sets and the Hyperbolic Structure*). Its signature is the one the algebra carries as a Pontryagin space, of negative index $3$ over $\mathbb{C}$.
+**Topology.** Its level sets are the hyperboloids $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$, with the null set between them, of real dimension $7$, and its isometry group is $\mathrm{U}(1,3)$, of real dimension $16$ and non-compact (*The Krein Gram Matrix and the Restrictions of the Form*, *The Krein Level Sets and the Hyperbolic Structure*). Its signature is the one the algebra carries as a Pontryagin space, of negative index $3$ over $\mathbb{C}$.
 
-**Metric.** No norm by the diagonal — the diagonal vanishes on $e_0+e_1$ and is negative on $e_1$ — and an indefinite metric by the form itself; the distance is the Euclidean one through its symmetry, the natural conjugation (*The Fundamental Symmetry of the Biquaternioid Algebra*).
+**Metric.** No norm by the diagonal — the diagonal vanishes on $e_t+\vec e_x$ and is negative on $\vec e_x$ — and an indefinite metric by the form itself; the distance is the Euclidean one through its symmetry, the natural conjugation (*The Fundamental Symmetry of the Biquaternioid Algebra*).
 
 ### SQS — symmetric quaternionic sesqualgebra
 
-The operation is the half-sum $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-sum of the Krein form with its conjugate, a **real** form of signature $(2,6)$: at $\tilde{P}=\tilde{Q}$ it reads
+The operation is the half-sum $\tfrac12(\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}+\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-sum of the Krein form with its conjugate, a **real** form of signature $(2,6)$: at $\tilde{Q}_2=\tilde{Q}_1$ it reads
 
 $$
-p_0^{2}+p_0^{\prime2}-p_1^{2}-p_1^{\prime2}-p_2^{2}-p_2^{\prime2}-p_3^{2}-p_3^{\prime2},
+p_t^{2}+p_t^{\prime2}-p_x^{2}-p_x^{\prime2}-p_y^{2}-p_y^{\prime2}-p_z^{2}-p_z^{\prime2},
 $$
 
 the real part of the Krein form, indefinite with one positive and three negative complex dimensions.
 
-**Topology.** The same level sets — $S^{1}\times\mathbb{R}^{6}$ for the value $1$, $S^{5}\times\mathbb{R}^{2}$ for the value $-1$, the null cone between them — and the same group $U(1,3)$ as $\mathrm{GQS}$.
+**Topology.** The same level sets — $S^{1}\times\mathbb{R}^{6}$ for the value $1$, $S^{5}\times\mathbb{R}^{2}$ for the value $-1$, the null cone between them — and the same group $\mathrm{U}(1,3)$ as $\mathrm{GQS}$.
 
 **Metric.** No norm by the diagonal; an indefinite metric whose distance is the Euclidean one through the symmetry. So $\mathrm{SQS}$ is the operator that carries the indefinite Krein metric as a symmetric operation, the exact counterpart of $\mathrm{SPS}$ in the other sesquilinear row. Together, $\mathrm{SPS}$ and $\mathrm{SQS}$ are the two of the twelve whose scalar parts are symmetric **and** non-complex-valued on the whole space, and they are the definite and the indefinite cases of one construction.
 
 ### AQS — antisymmetric quaternionic sesqualgebra
 
-The operation is the half-difference $\tfrac12(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{\natural}\tilde{P}^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-difference of the Krein form with its conjugate, purely imaginary, and divided by the central imaginary it is the **alternating form of the Krein form**,
+The operation is the half-difference $\tfrac12(\tilde{Q}_2^{\natural}\tilde{Q}_1^{*}-\tilde{Q}_1^{\natural}\tilde{Q}_2^{*})$, whose values lie in no subspace of the remarkable subspaces. By Fact 2 its scalar part is the half-difference of the Krein form with its conjugate, purely imaginary, and divided by the central imaginary it is the **alternating form of the Krein form**,
 
 $$
-\omega_{\natural}(\tilde{P},\tilde{Q})=p'_0q_0-p_0q'_0-p'_1q_1+p_1q'_1-p'_2q_2+p_2q'_2-p'_3q_3+p_3q'_3 ,
+\omega_{\natural}(\tilde{Q}_2,\tilde{Q}_1)=p'_tq_t-p_tq'_t-p'_xq_x+p_xq'_x-p'_yq_y+p_yq'_y-p'_zq_z+p_zq'_z ,
 $$
 
 alternating, of rank $8$, with the signs of the vector part reversed against the alternating form of the Hermitian form; the two alternating forms of the twelve are the two sign patterns of one expression.
 
-**Topology.** As for $\mathrm{APS}$, no quadratic level set; the isometry group is $Sp(8,\mathbb{R})$, complex-linear part $U(4)$; the isotropic subspaces are Lagrangian.
+**Topology.** As for $\mathrm{APS}$, no quadratic level set; the isometry group is $Sp(8,\mathbb{R})$, complex-linear part $\mathrm{U}(4)$; the isotropic subspaces are Lagrangian.
 
 **Metric.** A symplectic form and no metric. With $\mathrm{AQS}$ the list of the twelve is closed, and the count of the metrics among them is complete: **one definite metric, three indefinite real symmetric forms, two symplectic forms, and two operations with no form at all**.
 
@@ -217,11 +217,11 @@ The situation of each operation, in one table. The fourth column is the form of 
 | $\mathrm{GQA}$ | complex | general quaternionic bilinear | $(4,4)$ | no | norm-one group $\simeq S^{3}$ | $O_4(\mathbb{C})$ |
 | $\mathrm{SQA}$ | complex | general quaternionic bilinear | $(4,4)$ | no | norm-one group $\simeq S^{3}$ | $O_4(\mathbb{C})$ |
 | $\mathrm{AQA}$ | zero | — | — | — | — | — |
-| $\mathrm{GPS}$ | complex Hermitian | Hermitian | $(8,0)$ | **yes** | sphere $S^{7}$ | $U(4)$ |
-| $\mathrm{SPS}$ | real | real part of the Hermitian form | $(8,0)$ | **yes** | sphere $S^{7}$ | $U(4)$ |
+| $\mathrm{GPS}$ | complex Hermitian | Hermitian | $(8,0)$ | **yes** | sphere $S^{7}$ | $\mathrm{U}(4)$ |
+| $\mathrm{SPS}$ | real | real part of the Hermitian form | $(8,0)$ | **yes** | sphere $S^{7}$ | $\mathrm{U}(4)$ |
 | $\mathrm{APS}$ | purely imaginary | alternating form of the Hermitian form | rank $8$ | — | — | $Sp(8,\mathbb{R})$ |
-| $\mathrm{GQS}$ | complex Hermitian | Krein | $(2,6)$ | no | $S^{1}\times\mathbb{R}^{6}$, $S^{5}\times\mathbb{R}^{2}$ | $U(1,3)$ |
-| $\mathrm{SQS}$ | real | real part of the Krein form | $(2,6)$ | no | $S^{1}\times\mathbb{R}^{6}$, $S^{5}\times\mathbb{R}^{2}$ | $U(1,3)$ |
+| $\mathrm{GQS}$ | complex Hermitian | Krein | $(2,6)$ | no | $S^{1}\times\mathbb{R}^{6}$, $S^{5}\times\mathbb{R}^{2}$ | $\mathrm{U}(1,3)$ |
+| $\mathrm{SQS}$ | real | real part of the Krein form | $(2,6)$ | no | $S^{1}\times\mathbb{R}^{6}$, $S^{5}\times\mathbb{R}^{2}$ | $\mathrm{U}(1,3)$ |
 | $\mathrm{AQS}$ | purely imaginary | alternating form of the Krein form | rank $8$ | — | — | $Sp(8,\mathbb{R})$ |
 
 **Remark (two isometry groups of one form).** The group quoted in the tables is the group of isometries that are **complex-linear**, the group with which the level sets are read and the group the corpus names in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*. The realification of the same form is a real form on $\mathbb{R}^{8}$, and its isometry group is the larger real group: $O(4,4)$ of real dimension $28$ for the two bilinear forms, $O(8)$ of real dimension $28$ for the Hermitian form, $O(2,6)$ of real dimension $28$ for the Krein form, against $Sp(8,\mathbb{R})$ of real dimension $36$ for the alternating forms. One form therefore carries two isometry groups, one complex-linear and one real, and the two are quoted apart in the literature: a reader who meets $O_4(\mathbb{C})$ and $O(4,4)$ for the same form has met the two, not a contradiction.
@@ -232,7 +232,7 @@ Two readings of the table are worth naming. The **rows pair up**: the two operat
 
 The twelve operations give one topology, and the reasons are two: every form of the list is non-degenerate and of finite dimension, so every one of them supplies a distance through a symmetry; and all norms on a finite-dimensional real space are equivalent, so any two of those distances induce the same topology. The algebra is $\mathbb{R}^{8}$ as a topological space, the twelve operations are read in its one topology, and the eight forms of the table do not add a second one.
 
-**Remark (the indefinite form gives a norm through its symmetry, not a second topology).** For the indefinite forms the symmetry does two things and only the first is a topological statement. It turns the form into a definite inner product, $\mathrm{Re}\,\mathsf{M}_2(\tilde P,J\tilde Q)$, and hence into a **norm**, $\lVert\tilde P\rVert_J^{2}=\mathrm{Re}\,\mathsf{M}_2(\tilde P,J\tilde P)$; and that norm is a norm **on the same real space**, so it induces the same topology as $\lVert\cdot\rVert_E$, by the equivalence of norms in finite dimension. The construction is therefore how an indefinite form still carries a norm, and it is never how it carries a second topology. In the Krein-space vocabulary the same fact reads: the **Krein norm** of an indefinite inner product is a definite norm, and a Krein space is a space **complete** in it. Completeness is a property that can differ between two norms only in infinite dimension; the algebra is $8$-dimensional, so the distinction cannot arise here and the Krein form gives no exception to the uniqueness of the topology.
+**Remark (the indefinite form gives a norm through its symmetry, not a second topology).** For the indefinite forms the symmetry does two things and only the first is a topological statement. It turns the form into a definite inner product, $\mathrm{Re}\,\mathsf{M}_2(\tilde Q_2,J\tilde Q_1)$, and hence into a **norm**, $\lVert\tilde Q_2\rVert_J^{2}=\mathrm{Re}\,\mathsf{M}_2(\tilde Q_2,J\tilde Q_2)$; and that norm is a norm **on the same real space**, so it induces the same topology as $\lVert\cdot\rVert_E$, by the equivalence of norms in finite dimension. The construction is therefore how an indefinite form still carries a norm, and it is never how it carries a second topology. In the Krein-space vocabulary the same fact reads: the **Krein norm** of an indefinite inner product is a definite norm, and a Krein space is a space **complete** in it. Completeness is a property that can differ between two norms only in infinite dimension; the algebra is $8$-dimensional, so the distinction cannot arise here and the Krein form gives no exception to the uniqueness of the topology.
 
 **Remark (the two senses of *metric*).** The word is used here in two senses and they are not the same sense. A **metric tensor** is a non-degenerate form, definite or indefinite, symmetric or Hermitian; that is what the table lists, and of those there are several, the four forms of the region, of inertia $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$, plus the two alternating forms. A **metric**, in the sense of a distance function, is what a symmetry of the form returns; and of those there is exactly one, the Euclidean distance, because the symmetry of each of the four forms returns the general plain sesquilinear form, so the four distances coincide. So "several metrics" is true of the tensors and false of the distances, and the sentence "the algebra carries an indefinite metric and no norm" means exactly this: it carries a metric tensor of inertia $(4,4)$, from which the diagonal route reads no norm, while the distance it induces through its symmetry is the Euclidean one, shared with the other eleven.
 

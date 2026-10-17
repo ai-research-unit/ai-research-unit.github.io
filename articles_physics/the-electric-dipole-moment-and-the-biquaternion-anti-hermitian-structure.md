@@ -20,7 +20,7 @@ The biquaternion framework makes a structural statement about the EDM operator t
 
 The article is organised as follows. A section defines the EDM operator and its discrete symmetries. A section establishes the anti-Hermitian structure and the Hodge duality. A section gives the form-factor decomposition and contrasts the EDM with the magnetic moment. A section treats the origin of the CP-odd phase. A section collects the bounds and the scales they probe. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, and
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The Dirac module is $\Delta=S\oplus\bar{S}$ with $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, and
 
 $$
 \gamma^0=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\quad
@@ -83,7 +83,7 @@ The pattern is the standard one: $\gamma^0$ is Hermitian and $\gamma^k$ anti-Her
 $$
 \sigma^{\mu\nu}\gamma_5 = \frac{i}{2}\,\epsilon^{\mu\nu\rho\sigma}\,\sigma_{\rho\sigma},
 \qquad\text{i.e.}\qquad
-\tilde{\sigma}^{\mu\nu}:=\tfrac12\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5 ,
+\sigma^{\mu\nu}_{\mathrm D}:=\tfrac12\epsilon^{\mu\nu\rho\sigma}\sigma_{\rho\sigma} = -\,i\,\sigma^{\mu\nu}\gamma_5 ,
 $$
 
 an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly zero. The duality exchanges the electric and magnetic components: $\sigma^{0k}\gamma_5$ is dual to a combination of the $\sigma^{ij}$, and vice versa. Since the duality factor is $i$, it exchanges Hermitian with anti-Hermitian, which is exactly the flip recorded above.
@@ -99,13 +99,13 @@ an identity that was recomputed for all pairs $(\mu,\nu)$ with residual exactly 
 
 The EDM insertion is therefore the anti-Hermitian, material-sector insertion, and the magnetic-moment insertion is its Hermitian, informational-sector dual. This is the article's central structural statement; it was verified entry by entry in the block basis.
 
-**The dictionary form of the EDM insertion.** The placement can be made exact rather than a Hermiticity match. Under the dictionary that carries the biquaternion basis to the Clifford generators, $e_1\mapsto\gamma^2\gamma^3$, $e_2\mapsto\gamma^3\gamma^1$, $e_3\mapsto\gamma^1\gamma^2$, the EDM insertion *is* the image of a basis element of the material sector:
+**The dictionary form of the EDM insertion.** The placement can be made exact rather than a Hermiticity match. Under the dictionary that carries the biquaternion basis to the Clifford generators, $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$, the EDM insertion *is* the image of a basis element of the material sector:
 
 $$
-\sigma^{0k}\gamma_5 = -\mathsf{M}_2(e_k) = \mathsf{M}_2(-e_k), \qquad -e_k \in \mathbb{M}_- ,
+\sigma^{0k}\gamma_5 = -\mathsf{M}_2(\vec e_k) = \mathsf{M}_2(-\vec e_k), \qquad -\vec e_k \in \mathbb{M}_- ,
 $$
 
-verified for $k=1,2,3$ with residual exactly zero. The EDM insertion is thus not merely anti-Hermitian and therefore material; up to a sign it is the Clifford image of one of the three vector basis elements $e_k$ of $\mathbb{M}_-$ — the same elements that carry the spatial directions of the material sector. The magnetic insertion corresponds to the informational element $ie_k$, and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{M}_-=\mathbb{M}_+$, the same $e_k$ appears on both sides of the table. The correspondence is a statement about the objects the insertion represents, in the sense of the convention that reads the sectors on the fields; the sectors are real vector spaces on which the algebra acts rather than subalgebras, and a general element of the even Clifford algebra need not fall in one of them.
+verified for $k=1,2,3$ with residual exactly zero. The EDM insertion is thus not merely anti-Hermitian and therefore material; up to a sign it is the Clifford image of one of the three vector basis elements $\vec e_k$ of $\mathbb{M}_-$ — the same elements that carry the spatial directions of the material sector. The magnetic insertion corresponds to the informational element $i\vec e_k$, and since multiplication by the central $i$ exchanges the sectors, $i\mathbb{M}_-=\mathbb{M}_+$, the same $\vec e_k$ appears on both sides of the table. The correspondence is a statement about the objects the insertion represents, in the sense of the convention that reads the sectors on the fields; the sectors are real vector spaces on which the algebra acts rather than subalgebras, and a general element of the even Clifford algebra need not fall in one of them.
 
 **The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\bar{\psi}\sigma^{0k}\gamma_5\psi$ is anti-Hermitian as a classical bilinear, and the Lagrangian density $-\tfrac{i}{2}d\,\bar{\psi}\sigma^{\mu\nu}\gamma_5\psi F_{\mu\nu}$ is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
 
@@ -250,7 +250,7 @@ for an order-one phase and no loop suppression. This is the standard statement t
 
 ## Open Questions
 
-1. **The dictionary's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ is used here as the framework's stated dictionary. For the EDM insertion the placement is exact: $\sigma^{0k}\gamma_5=-\mathsf{M}_2(e_k)$ is the image of a basis element of $\mathbb{M}_-$, and the rotation insertions are the central imaginary times such an image, corresponding to the informational elements $ie_k$. Whether the *full* even Clifford algebra, including the unit and $\gamma_5$, decomposes into the two sectors, or only up to the central factor that changes Hermiticity, is a separate question of the algebra's presentation: the unit $e_0$ is Hermitian while $\gamma_5$ is central, so neither is selected by the split, and a general Hermitian element of the even Clifford algebra need not be the image of an element of $\mathbb{M}_+$.
+1. **The dictionary's sharpness.** The identification of the Hermitian and anti-Hermitian insertions with the sectors $\mathbb{M}_+$ and $\mathbb{M}_-$ is used here as the framework's stated dictionary. For the EDM insertion the placement is exact: $\sigma^{0k}\gamma_5=-\mathsf{M}_2(\vec e_k)$ is the image of a basis element of $\mathbb{M}_-$, and the rotation insertions are the central imaginary times such an image, corresponding to the informational elements $i\vec e_k$. Whether the *full* even Clifford algebra, including the unit and $\gamma_5$, decomposes into the two sectors, or only up to the central factor that changes Hermiticity, is a separate question of the algebra's presentation: the unit $e_t$ is Hermitian while $\gamma_5$ is central, so neither is selected by the split, and a general Hermitian element of the even Clifford algebra need not be the image of an element of $\mathbb{M}_+$.
 
 2. **The phase's sector.** A CP-odd phase multiplying the material-sector insertion is an imaginary coefficient. Whether the framework can distinguish phases that sit in the mass matrix from phases that sit in the dipole coefficients, and whether the abelian gauge-sector field strength of the framework supplies a $\theta$-like invariant, is not settled here and belongs partly to the general gauge apparatus.
 

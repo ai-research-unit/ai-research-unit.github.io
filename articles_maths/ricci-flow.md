@@ -43,7 +43,7 @@ $$
 
 so the volume decreases when the scalar curvature is positive and increases when it is negative.
 
-*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12g^{ij}\frac{\partial g_{ij}}{\partial t}dV = -g^{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = g^{ij}\partial_tg_{ij}$; integrating gives the formula.
+*Proof.* The derivative of the volume form is $\frac{\partial}{\partial t}dV = \frac12g^{ij}\frac{\partial g_{ij}}{\partial t}dV = -g^{ij}R_{ij}dV = -R\,dV$, the middle identity being the identity $\frac{\partial}{\partial t}\log\det g = g^{ij}\partial/\partial t\,g_{ij}$; integrating gives the formula.
 
 ## The Evolution of Curvature
 
@@ -85,7 +85,7 @@ $$
 
 and if $R(\cdot,0)\ge0$ then $R(\cdot,t)\ge0$ for all $t$; more generally a lower bound $R\ge-c$ is preserved.
 
-*Proof.* The evolution equation gives $\partial_tR\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial_tR_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial_tR_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial_tR_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$.
+*Proof.* The evolution equation gives $\partial/\partial t\,R\ge\Delta R$, a differential inequality of parabolic type. Given $\varepsilon>0$, the function $R_\varepsilon = R+\varepsilon t$ satisfies $\partial/\partial t\,R_\varepsilon\ge\Delta R_\varepsilon+\varepsilon$, so its minimum over $M\times[0,T']$ cannot be attained in the interior: at an interior minimum, $\partial/\partial t\,R_\varepsilon\le0$ and $\Delta R_\varepsilon\ge0$, whereas the inequality gives $\partial/\partial t\,R_\varepsilon\ge\varepsilon>0$. Hence the minimum is attained on the parabolic boundary, and letting $\varepsilon\to0$ gives the claim; the preservation of a lower bound $-c$ follows by applying the same argument to $R+c$.
 
 **Remark (the maximum principle for systems).** The maximum principle for a scalar quantity is immediate; for the full curvature tensor it requires a **pinching** condition, because the reaction term $\mathrm{Rm}*\mathrm{Rm}$ does not preserve an arbitrary positivity cone. The Hamilton–Ivey estimate, which bounds the curvature of a three-dimensional Ricci flow below by $-C/(t_0-t)$ for a curvature singularity at $t_0$, is the sharp example: the reaction term is controlled by a positivity cone chosen so that the quadratic terms act in the favourable direction.
 
@@ -128,7 +128,7 @@ $$
 \mathcal{W}(g,f,\tau) = \int_M\Bigl[\tau\bigl(R+|\nabla f|^2\bigr)+f-n\Bigr](4\pi\tau)^{-n/2}\exp(-f)dV
 $$
 
-are monotone along the coupled flow $\partial_tg=-2R_{ij}$, $\partial_tf=-\Delta f+|\nabla f|^2-R$ (and $\partial_t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.
+are monotone along the coupled flow $\partial/\partial t\,g=-2R_{ij}$, $\partial/\partial t\,f=-\Delta f+|\nabla f|^2-R$ (and $\partial/\partial t\tau=-1$ for $\mathcal{W}$): $\frac{d}{dt}\mathcal{F}\ge0$ and $\frac{d}{dt}\mathcal{W}\ge0$, with equality only for the corresponding solitons.
 
 *Proof.* Quoted as standard (Perelman). The computation is a long integration by parts in which the evolution equations for $g$ and $f$ are substituted into the derivative of the functional, and the result is a sum of squares: $\frac{d}{dt}\mathcal{W} = 2\tau\int\bigl|R_{ij}+\nabla_i\nabla_jf-\frac{1}{2\tau}g_{ij}\bigr|^2(4\pi\tau)^{-n/2}\exp(-f)dV$, which is nonnegative and vanishes exactly on a shrinking soliton.
 
@@ -152,7 +152,7 @@ are monotone along the coupled flow $\partial_tg=-2R_{ij}$, $\partial_tf=-\Delta
 
 ## Summary
 
-Ricci flow is the evolution $\partial_tg_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial_t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial_tR=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial_tR_{ij}=\Delta R_{ij}+2R_{ikjl}R^{kl}-2R_{ik}R^k{}_j$, and the Riemann tensor by $\partial_t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
+Ricci flow is the evolution $\partial/\partial t\,g_{ij}=-2R_{ij}$ of a Riemannian metric, a weakly parabolic quasilinear equation whose degeneracy is the diffeomorphism invariance and whose short-time existence is obtained by the DeTurck gauge trick; the solution is unique and maximal until the curvature blows up. The volume evolves by $\partial/\partial t\mathrm{Vol}=-\int R\,dV$, the scalar curvature by $\partial/\partial t\,R=\Delta R+2|R_{ij}|^2$, the Ricci tensor by the Lichnerowicz Laplacian $\partial/\partial t\,R_{ij}=\Delta R_{ij}+2R_{ikjl}R^{kl}-2R_{ik}R^k{}_j$, and the Riemann tensor by $\partial/\partial t\mathrm{Rm}=\Delta\mathrm{Rm}+\mathrm{Rm}*\mathrm{Rm}$; the scalar equation is a reaction-diffusion equation, and the maximum principle preserves lower bounds on $R$ and, under pinching hypotheses, on the full curvature. Einstein metrics solve the flow homothetically, with the round sphere shrinking to extinction, the flat torus stationary and the hyperbolic metric expanding; the cigar, Bryant and Gaussian solitons are the complete self-similar solutions and the shrinking solitons are the equality cases of the monotone entropy functionals $\mathcal{F}$ and $\mathcal{W}$, whose monotonicity, together with the no-local-collapsing theorem, controls the blow-up of singularities. Positively Ricci curved compact three-manifolds converge under the normalised flow to constant curvature, and the compactness of noncollapsed flows makes the singular limits ancient solutions classified by solitons.
 
 ## Summary of Notation
 
@@ -160,9 +160,9 @@ Ricci flow is the evolution $\partial_tg_{ij}=-2R_{ij}$ of a Riemannian metric, 
 |---|---|
 | $g(t)$, $g_{ij}$ | Evolving Riemannian metric |
 | $R_{ij}$, $R$, $\mathrm{Rm}$ | Ricci, scalar and Riemann curvature tensors |
-| $\partial_tg=-2R_{ij}$ | Ricci flow equation |
+| $\partial/\partial t\,g=-2R_{ij}$ | Ricci flow equation |
 | $\bar R$ | Average scalar curvature of the normalised flow |
-| $\mathrm{Vol}(M,g)$ | Volume, with $\partial_t\mathrm{Vol}=-\int R\,dV$ |
+| $\mathrm{Vol}(M,g)$ | Volume, with $\partial/\partial t\mathrm{Vol}=-\int R\,dV$ |
 | $\Delta$, $\Delta_L$ | Laplace–Beltrami operator; Lichnerowicz Laplacian |
 | $\mathrm{Rm}*\mathrm{Rm}$ | Quadratic curvature combination in the curvature evolution |
 | $X$, $\lambda$ | Soliton vector field and constant; steady, shrinking, expanding |

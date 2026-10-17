@@ -95,7 +95,7 @@ $$
 
 *Proof.* For the plain pairing $L_a^{*}L_a=R_aL_a$ is the operator $x\mapsto axa$, which is the identity exactly when $axa=x$ for all $x$; the case $x=1$ gives $a^{2}=1$, and then $axa=x$ is $ax=xa^{-1}=xa$, the centrality of $a$. For the twisted pairing $L_a^{*_\sigma}L_a=L_{\sigma(a)}L_a=L_{\sigma(a)a}$, which is the identity exactly when $\sigma(a)a=1$ and $\sigma(a)a$ is central, the second condition being automatic for the unit $1$; the other order is the same equation.
 
-**Corollary.** The unitary left multiplications with respect to the twisted pairing are the images of the unitary elements of the algebra, so the map $a\mapsto L_a$ carries $U(A,\sigma)$ isomorphically onto a subgroup of $U(E,*_\sigma)$; for the plain pairing the unitary left multiplications form the smaller group of the central involutions, and the two groups coincide exactly when every unitary element is central.
+**Corollary.** The unitary left multiplications with respect to the twisted pairing are the images of the unitary elements of the algebra, so the map $a\mapsto L_a$ carries $\mathrm{U}(A,\sigma)$ isomorphically onto a subgroup of $\mathrm{U}(E,*_\sigma)$; for the plain pairing the unitary left multiplications form the smaller group of the central involutions, and the two groups coincide exactly when every unitary element is central.
 
 *Proof.* The criterion $\sigma(a)a=1$ is the unitarity of $a$ in $A$; the injectivity of $L$ and the group structure are *Unitary Operators of an Involutive Algebra*. A central involution is unitary, so the plain group is contained in the twisted one under the identification, and equality is the centrality of the unitary elements.
 

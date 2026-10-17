@@ -10,7 +10,7 @@ The one-sided operators are the left and the right multiplications, $L_{\tilde a
 
 **Theorem.** The maps $\tilde a\mapsto L_{\tilde a}$ and $\tilde a\mapsto R_{\tilde a}$ are linear injections, so $\mathcal L$ and $\mathcal R$ are four-dimensional subspaces of $\operatorname{End}_\mathbb{R}(\mathbb{H})$; the first is an algebra isomorphism $\mathbb{H}\to\mathcal L$ and the second an anti-isomorphism $\mathbb{H}\to\mathcal R$, $\mathbb{H}^{\mathrm{opp}}\cong\mathcal R$.
 
-*Proof.* Linearity of the product in each slot; injectivity because $L_{\tilde a}(e_0)=\tilde a=R_{\tilde a}(e_0)$, so a vanishing operator has a vanishing parameter; multiplicativity because $L_{\tilde a}L_{\tilde c}(\tilde q)=\tilde a\tilde c\tilde q=L_{\tilde a\tilde c}(\tilde q)$ and $R_{\tilde a}R_{\tilde c}(\tilde q)=\tilde q\tilde c\tilde a=R_{\tilde c\tilde a}(\tilde q)$.
+*Proof.* Linearity of the product in each slot; injectivity because $L_{\tilde a}(e_t)=\tilde a=R_{\tilde a}(e_t)$, so a vanishing operator has a vanishing parameter; multiplicativity because $L_{\tilde a}L_{\tilde c}(\tilde q)=\tilde a\tilde c\tilde q=L_{\tilde a\tilde c}(\tilde q)$ and $R_{\tilde a}R_{\tilde c}(\tilde q)=\tilde q\tilde c\tilde a=R_{\tilde c\tilde a}(\tilde q)$.
 
 ## Composition Laws
 
@@ -24,17 +24,17 @@ The one-sided operators are the left and the right multiplications, $L_{\tilde a
 
 ## The Adjoints and the Association that Swaps the Families
 
-**Theorem.** With respect to the plain form $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$,
+**Theorem.** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$,
 
 $$
 L_{\tilde a}^{\sim}=R_{\tilde a},\qquad R_{\tilde b}^{\sim}=L_{\tilde b}.
 $$
 
-*Proof.* $\langle\tilde a\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde a\tilde p\tilde q)=\mathrm{Sc}(\tilde p\tilde q\tilde a)=\langle\tilde p,\tilde q\tilde a\rangle$ by the cyclic invariance of the association functional, which is *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the second identity is the mirror.
+*Proof.* $\langle\tilde a\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde a\tilde q_1\tilde q_2)=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde a)=\langle\tilde q_1,\tilde q_2\tilde a\rangle$ by the cyclic invariance of the association functional, which is *Association and the Transpose on the Quaternion Algebra*, above this article in this category; the second identity is the mirror.
 
 **Corollary (the association).** The transpose is an anti-isomorphism $\mathcal L\to\mathcal R$, $L_{\tilde a}\mapsto R_{\tilde a}$, and it is the identity on the scalars; it is the operator-level form of the association that exchanges the two factors of a product.
 
-**Corollary.** $L_{\tilde a}$ is self-transpose exactly when $\tilde a$ is central, and so is $R_{\tilde a}$; the self-adjoint one-sided operators of the left family are the scalar multiplications, indexed by the centre $\mathbb{R}e_0$.
+**Corollary.** $L_{\tilde a}$ is self-transpose exactly when $\tilde a$ is central, and so is $R_{\tilde a}$; the self-adjoint one-sided operators of the left family are the scalar multiplications, indexed by the centre $\mathbb{R}e_t$.
 
 *Proof.* $L_{\tilde a}^{\sim}=R_{\tilde a}$, so self-transposeness is $L_{\tilde a}=R_{\tilde a}$, that is $\tilde a\tilde q=\tilde q\tilde a$ for all $\tilde q$, that is centrality.
 
@@ -48,7 +48,7 @@ $$
 
 a four-dimensional space; its one-dimensional part in the scalar line is $\{\lambda\,\mathrm{id}\}$, the self-adjoint left multiplications of the corollary above.
 
-*Proof.* An operator of the span is $T=L_{\tilde a}+R_{\tilde b}$; its transpose is $R_{\tilde a}+L_{\tilde b}$, so $T$ is self-adjoint exactly when $L_{\tilde a-\tilde b}=R_{\tilde a-\tilde b}$, that is when $\tilde a-\tilde b$ is central, by the corollary above. Write $\tilde b=\tilde a-\lambda$ with $\lambda$ real; then $T=L_{\tilde a}+R_{\tilde a}-R_\lambda$ and $R_\lambda=\lambda\,\mathrm{id}$ is central, so $T=(L_{\tilde a}+R_{\tilde a})-\lambda\,\mathrm{id}$, and the family $\{L_{\tilde a}+R_{\tilde a}\}$ already contains the identity, at $\tilde a=\tfrac12e_0$; the space is therefore the four-dimensional family displayed, and its scalar part is the scalar line.
+*Proof.* An operator of the span is $T=L_{\tilde a}+R_{\tilde b}$; its transpose is $R_{\tilde a}+L_{\tilde b}$, so $T$ is self-adjoint exactly when $L_{\tilde a-\tilde b}=R_{\tilde a-\tilde b}$, that is when $\tilde a-\tilde b$ is central, by the corollary above. Write $\tilde b=\tilde a-\lambda$ with $\lambda$ real; then $T=L_{\tilde a}+R_{\tilde a}-R_\lambda$ and $R_\lambda=\lambda\,\mathrm{id}$ is central, so $T=(L_{\tilde a}+R_{\tilde a})-\lambda\,\mathrm{id}$, and the family $\{L_{\tilde a}+R_{\tilde a}\}$ already contains the identity, at $\tilde a=\tfrac12e_t$; the space is therefore the four-dimensional family displayed, and its scalar part is the scalar line.
 
 **Corollary.** The self-adjoint sector is the linear span of the identity and the operators $\tilde q\mapsto\tilde a\tilde q+\tilde q\tilde a$ for pure $\tilde a$; these last are the symmetrised multiplications, and they are the operators whose matrices are symmetric with respect to the Gram matrix $D$.
 
@@ -64,7 +64,7 @@ $$
 
 a three-dimensional space, vanishing exactly for central $\tilde a$.
 
-*Proof.* $T=L_{\tilde a}+R_{\tilde b}$ is skew-adjoint exactly when $R_{\tilde a}+L_{\tilde b}=-L_{\tilde a}-R_{\tilde b}$, that is $L_{\tilde a+\tilde b}=-R_{\tilde a+\tilde b}$; evaluating at $\tilde q=e_0$ gives $(\tilde a+\tilde b)=-(\tilde a+\tilde b)$, so $\tilde a+\tilde b=0$; then $T=L_{\tilde a}-R_{\tilde a}$. The map $\tilde a\mapsto\operatorname{ad}_{\tilde a}$ is linear with kernel the centre, of dimension one, so the image has dimension $3$.
+*Proof.* $T=L_{\tilde a}+R_{\tilde b}$ is skew-adjoint exactly when $R_{\tilde a}+L_{\tilde b}=-L_{\tilde a}-R_{\tilde b}$, that is $L_{\tilde a+\tilde b}=-R_{\tilde a+\tilde b}$; evaluating at $\tilde q=e_t$ gives $(\tilde a+\tilde b)=-(\tilde a+\tilde b)$, so $\tilde a+\tilde b=0$; then $T=L_{\tilde a}-R_{\tilde a}$. The map $\tilde a\mapsto\operatorname{ad}_{\tilde a}$ is linear with kernel the centre, of dimension one, so the image has dimension $3$.
 
 **Corollary.** $[\operatorname{ad}_{\tilde a},\operatorname{ad}_{\tilde b}]=\operatorname{ad}_{[\tilde a,\tilde b]}$, so the skew sector is a Lie algebra isomorphic to the pure quaternions with the cross product, and $\operatorname{ad}_{\tilde a}$ is the derivation of $\mathbb{H}$ by $\tilde a$.
 
@@ -80,7 +80,7 @@ a three-dimensional space, vanishing exactly for central $\tilde a$.
 
 **Theorem.** The only one-sided automorphisms of the plain form are $\pm\mathrm{id}$.
 
-*Proof.* Let $L_{\tilde a}$ preserve $\mathrm B$; then $L_{\tilde a}^{\sim}L_{\tilde a}=\mathrm{id}$, that is $R_{\tilde a}L_{\tilde a}=\mathrm{id}$, that is $\tilde a\tilde q\tilde a=\tilde q$ for all $\tilde q$. At $\tilde q=e_0$ this gives $\tilde a^2=e_0$; substituting back gives $\tilde a\tilde q=\tilde q\tilde a^{-1}=\tilde q\tilde a$ for all $\tilde q$, so $\tilde a$ is central, and a central element with $\tilde a^2=e_0$ is $\pm e_0$. The same argument applies to $R_{\tilde b}$.
+*Proof.* Let $L_{\tilde a}$ preserve $\mathrm B$; then $L_{\tilde a}^{\sim}L_{\tilde a}=\mathrm{id}$, that is $R_{\tilde a}L_{\tilde a}=\mathrm{id}$, that is $\tilde a\tilde q\tilde a=\tilde q$ for all $\tilde q$. At $\tilde q=e_t$ this gives $\tilde a^2=e_t$; substituting back gives $\tilde a\tilde q=\tilde q\tilde a^{-1}=\tilde q\tilde a$ for all $\tilde q$, so $\tilde a$ is central, and a central element with $\tilde a^2=e_t$ is $\pm e_t$. The same argument applies to $R_{\tilde b}$.
 
 **Corollary.** The one-sided operators preserve the form only in the trivial way, and the reason is the commutativity gap: $L_{\tilde a}$ scales $\mathrm B$ by a factor only when $\tilde a$ is a unit and the form is read on the appropriate side, which is the situation of the definite norm and not of the plain form. The maps preserving the definite form are the adjoint actions by the unit shell, and they are *The Pin and Spin Groups of the Quaternion Algebra*, below this article in this category.
 
@@ -96,7 +96,7 @@ The left and right multiplications of $\mathbb{H}$ are two four-dimensional fami
 | $\mathcal L,\mathcal R$ | The two four-dimensional families |
 | $T^{\sim}$ | Transpose with respect to $\mathrm B$ |
 | $\operatorname{ad}_{\tilde a}=L_{\tilde a}-R_{\tilde a}$ | Inner derivation |
-| $\langle\tilde p,\tilde q\rangle=\mathrm{Sc}(\tilde p\tilde q)$ | The plain form |
+| $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | The plain form |
 
 ## Further Reading
 

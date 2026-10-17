@@ -15,7 +15,7 @@ The position is stated at the outset, and the article defends it section by sect
 
 The article is organised as follows. The next section sets up the mass as a field, from the Lanczos feedback through the Einstein–Mayer mass biquaternion to the eigenvalues that read as two masses. A section states Petiau's closure of the system and checks its reduction to Lanczos. Two sections give the double-periodic waves and the quartic Hamiltonian. A section gives Barut's empirical formula and the moduli ratio, with its status. A closing section separates what is supplied, transcribed, and missing.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_1e_2=e_3$ and cyclic, central scalar imaginary $i$, $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde{\nabla}=e_0\,\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_0\,\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$ is the series' d'Alembertian. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, whose vanishing defines the **singular** (null) biquaternions; the conjugations are ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}={}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian $\flat=-{}^{*}$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Standard-model quantities — Yukawa couplings, the charged-lepton and quark masses in $\mathrm{MeV}/c^2$, the fine-structure constant $\alpha$ — are used where standard physics is named and are not framework structure.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ and cyclic, central scalar imaginary $i$, $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The biquaternionic gradient is $\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural}=e_t\,\partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y-\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial^2/\partial Q_t^2+\Delta$ is the series' d'Alembertian. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, whose vanishing defines the **singular** (null) biquaternions; the conjugations are ${}^{\natural}$, the coefficient conjugation $\bar{\cdot}$, the Hermitian ${}^{*}={}^{\natural}\circ\bar{\cdot}$ and the anti-Hermitian $\flat=-{}^{*}$. The trace is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Standard-model quantities — Yukawa couplings, the charged-lepton and quark masses in $\mathrm{MeV}/c^2$, the fine-structure constant $\alpha$ — are used where standard physics is named and are not framework structure.
 
 The framework results used here are those of the companion articles:
 
@@ -61,7 +61,7 @@ $$
 \tilde{\nabla}\tilde{B} = \tilde{A}\tilde{E}.
 $$
 
-For a constant central $\tilde{E}=m e_0$ the equations reduce to the Lanczos system above, since a central element commutes with everything: $\tilde{B}\tilde{E}^{*}=\tilde{B}m=m\tilde{B}$ and $\tilde{A}\tilde{E}=m\tilde{A}$. This reduction is exact and is checked here. So the Einstein–Mayer system is the Lanczos system with a **field-valued** mass, and the mass parameter has become a dynamical object.
+For a constant central $\tilde{E}=m e_t$ the equations reduce to the Lanczos system above, since a central element commutes with everything: $\tilde{B}\tilde{E}^{*}=\tilde{B}m=m\tilde{B}$ and $\tilde{A}\tilde{E}=m\tilde{A}$. This reduction is exact and is checked here. So the Einstein–Mayer system is the Lanczos system with a **field-valued** mass, and the mass parameter has become a dynamical object.
 
 The reduction is not the point; the eigenvalue is. Applying the conjugate gradient to the first-order pair, and taking $\tilde{E}$ constant so that the derivatives do not act on it, gives
 
@@ -77,17 +77,17 @@ The mass is no longer a number multiplying the field; it is an **operator** acti
 
 The two eigenvalues of $\tilde{E}\tilde{E}^{*}$ are the two mass-squareds, and everything depends on which kind of biquaternion $\tilde{E}$ is. Three cases exhaust the structure the corpus uses, and each is checked here on random elements.
 
-**A real scalar, $\tilde{E}=s e_0$.** Then $\tilde{E}\tilde{E}^{*}=s^2 e_0$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde{E}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
+**A real scalar, $\tilde{E}=s e_t$.** Then $\tilde{E}\tilde{E}^{*}=s^2 e_t$, a central element, and both eigenvalues equal $s^2$: the doublet is **degenerate**, the two particles have equal mass $|s|$, and the operator $\tilde{E}$ is a scalar in disguise. This is the case the source reads as the **proton–neutron** doublet, with the equal-mass pair of the isospin multiplet.
 
 **A Hermitian idempotent, $\tilde{E}=\tilde{\Pi}$.** Then $\tilde{E}^{*}=\tilde{E}$ and $\tilde{E}^2=\tilde{E}$, so $\tilde{E}\tilde{E}^{*}=\tilde{E}$, which is a rank-one projection: its eigenvalues are $1$ and $0$. The doublet is **split**, one mode massive and one massless. This is the case the source reads as the **electron–neutrino** doublet — the charged fermion and its massless partner.
 
-**A singular biquaternion, $\langle\tilde{E}\rangle_{\natural} = \langle\tilde{E},\tilde{E}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=e_1+ie_2$ is singular, $\langle e_1+ie_2\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
+**A singular biquaternion, $\langle\tilde{E}\rangle_{\natural} = \langle\tilde{E},\tilde{E}\rangle_{\natural}=0$.** Then $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2=0$, so at least one eigenvalue vanishes: **a singular mass field always leaves a massless mode**, whatever else it does. The identity $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ is the determinant of the matrix of the mass operator, and it is verified here; the vanishing of the norm is exactly the condition the idempotent case realises. The corpus's example $\tilde{E}=\vec e_x+i\vec e_y$ is singular, $\langle \vec e_x+i\vec e_y\rangle_{\natural}=1+i^2=0$, and its two mass-squareds are $4$ and $0$ — one massive mode and the electron–neutrino skeleton, checked directly.
 
 The three cases are collected in one table.
 
 | mass field $\tilde{E}$ | $\tilde{E}\tilde{E}^{*}$ | mass-squareds | reading |
 |---|---|---|---|
-| real scalar $s e_0$ | $s^2 e_0$ | $s^2,\ s^2$ | degenerate doublet (proton–neutron) |
+| real scalar $s e_t$ | $s^2 e_t$ | $s^2,\ s^2$ | degenerate doublet (proton–neutron) |
 | Hermitian idempotent $\tilde{\Pi}$ | $\tilde{\Pi}$ | $1,\ 0$ | split doublet (electron–neutrino) |
 | singular, $\langle\tilde{E}\rangle_{\natural}=0$ | rank-deficient | $\lambda,\ 0$ | one massless mode |
 | general | Hermitian, positive | $m_1^2,\ m_2^2$ | a massive doublet |
@@ -112,7 +112,7 @@ Here $\tilde{A}$ and $\tilde{B}$ are the Lanczos spin-$\frac{1}{2}$ fields and $
 
 ### The Reduction to Lanczos
 
-The closed system reduces to the Lanczos system when the spin-0 field is a **constant**, $\tilde{C}=m e_0$. Then the first two equations read $\tilde{\nabla}\tilde{A}=\tilde{B}(m e_0)=m\tilde{B}$ and $\tilde{\nabla}\tilde{B}=\tilde{A}(m e_0)=m\tilde{A}$, which is Lanczos's pair, and the third reads $\tilde{\nabla}(m e_0)=0$, which is satisfied because $m$ is constant. Conversely the third equation forbids $\tilde{C}$ being constant in the presence of nontrivial $\tilde{A}\tilde{B}$, so a solution of the closed system is **not** an arbitrary solution of the Lanczos system: the closure is a genuine constraint.
+The closed system reduces to the Lanczos system when the spin-0 field is a **constant**, $\tilde{C}=m e_t$. Then the first two equations read $\tilde{\nabla}\tilde{A}=\tilde{B}(m e_t)=m\tilde{B}$ and $\tilde{\nabla}\tilde{B}=\tilde{A}(m e_t)=m\tilde{A}$, which is Lanczos's pair, and the third reads $\tilde{\nabla}(m e_t)=0$, which is satisfied because $m$ is constant. Conversely the third equation forbids $\tilde{C}$ being constant in the presence of nontrivial $\tilde{A}\tilde{B}$, so a solution of the closed system is **not** an arbitrary solution of the Lanczos system: the closure is a genuine constraint.
 
 The reduction is exact, element by element — a central scalar commutes with a biquaternion, so $\tilde{B}\tilde{C}=\tilde{C}\tilde{B}=m\tilde{B}$ — and it is checked here on random $\tilde{A}$, $\tilde{B}$. It is the sense in which the Petiau system is "the Lanczos system with the mass promoted to a field and then closed": Lanczos has one scalar mass, Einstein–Mayer has a mass biquaternion, and Petiau lets the mass field be determined by the fields it masses.
 
@@ -124,7 +124,7 @@ The nonlinearity is not a technicality. In a linear theory the solutions form a 
 
 ### From Trigonometric to Elliptic
 
-The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Et-\vec p\cdot\vec x),\,k\bigr)$.
+The free solutions of the linear wave equation are single-periodic: $\sin(kz)$ and $\cos(kz)$, with one period. Petiau's closed system has solutions that are **double-periodic** — the **Petiau waves** — built from the elliptic functions. Instead of linear combinations of $\sin z$ and $\cos z$ the solutions are superpositions of the Jacobi elliptic functions $\mathrm{sn}(z,k)$, $\mathrm{cn}(z,k)$, $\mathrm{dn}(z,k)$, whose periods are governed by the **modulus** $k\in[0,1]$. The proper mass $\mu$ enters the argument, so that a typical wave reads $\mathrm{sn}\bigl(\mu(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\,k\bigr)$.
 
 A linear wave has one scale, its frequency, and the amplitude is free. A Petiau wave has two independent periods and a fixed amplitude, and this is the structural difference that the elliptic functions encode.
 
@@ -231,10 +231,10 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$, $\dim_{\mathbb{R}}=8$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ cyclic |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde{\nabla},\ \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial_{ict}^2+\Delta$ (series convention) |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian, $\partial^2/\partial Q_t^2+\Delta$ (series convention) |
 | $\tilde{A},\ \tilde{B}$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=mc/\hbar$ | Scalar mass parameter, inverse-length units |
 | $\tilde{E}$ | Einstein–Mayer mass biquaternion |
@@ -243,9 +243,9 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Hermitian conjugation (the source's biconjugation) |
 | $\tilde{E}\tilde{E}^{*},\ \tilde{E}^{*}\tilde{E}$ | Mass-squared operators of $\tilde{A}$ and $\tilde{B}$ |
 | $\det\mathsf{M}_2(\tilde{E}\tilde{E}^{*})=|\langle\tilde{E}\rangle_{\natural}|^2$ | Determinant identity; vanishing forces a massless mode |
-| $\sigma=\tfrac12(e_0+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
-| $\Pi_{1,2}(\vec u)=\tfrac12(e_0\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
-| $e_1+ie_2$ | Singular mass field; mass-squareds $4,0$ |
+| $\sigma=\tfrac12(e_t+i\vec u_\nu)$ | Idempotent (nullquat), $\sigma^2=\sigma$, $\langle \sigma\rangle_{\natural}=0$ |
+| $\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$ | Hermitian idempotents; mass eigenvalues $1,0$ |
+| $\vec e_x+i\vec e_y$ | Singular mass field; mass-squareds $4,0$ |
 | $\mathrm{sn}(z,k),\ \mathrm{cn}(z,k)$ | Jacobi elliptic functions of modulus $k$ |
 | $k\in[0,1]$ | Modulus; $k=0$ de Broglie, $k=1$ soliton |
 | $\mu$ | Proper mass of the Petiau field |

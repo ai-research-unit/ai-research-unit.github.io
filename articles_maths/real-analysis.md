@@ -51,7 +51,7 @@ A **neighborhood** of $a$ is any set containing some $B(a, r)$.
 
 ### Open and Closed Sets
 
-A set $U \subseteq \mathbb{R}$ is **open** if for every $a \in U$ there exists $r > 0$ with $B(a, r) \subseteq U$.
+A set $\Omega \subseteq \mathbb{R}$ is **open** if for every $a \in \Omega$ there exists $r > 0$ with $B(a, r) \subseteq \Omega$.
 
 A set $F \subseteq \mathbb{R}$ is **closed** if its complement $\mathbb{R} \setminus F$ is open.
 
@@ -308,7 +308,7 @@ $$
 The **upper sum** and **lower sum** are
 
 $$
-U(f, P) = \sum_{i=1}^n M_i (c_i - c_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (c_i - c_{i-1}),
+\Omega(f, P) = \sum_{i=1}^n M_i (c_i - c_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (c_i - c_{i-1}),
 $$
 
 where $M_i = \sup_{[c_{i-1}, c_i]} f$ and $m_i = \inf_{[c_{i-1}, c_i]} f$.
@@ -316,7 +316,7 @@ where $M_i = \sup_{[c_{i-1}, c_i]} f$ and $m_i = \inf_{[c_{i-1}, c_i]} f$.
 The **upper integral** and **lower integral** are
 
 $$
-\overline{\int_a^b} f = \inf_P U(f, P), \qquad \underline{\int_a^b} f = \sup_P L(f, P).
+\overline{\int_a^b} f = \inf_P \Omega(f, P), \qquad \underline{\int_a^b} f = \sup_P L(f, P).
 $$
 
 $f$ is **Riemann integrable** if the two agree. The common value is
@@ -325,7 +325,7 @@ $$
 \int_a^b f.
 $$
 
-**Theorem (Cauchy criterion).** $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $U(f, P) - L(f, P) < \epsilon$.
+**Theorem (Cauchy criterion).** $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $\Omega(f, P) - L(f, P) < \epsilon$.
 
 **Theorem.** Continuous functions on $[a, b]$ are Riemann integrable. Monotone functions on $[a, b]$ are Riemann integrable. Functions with finitely many discontinuities on $[a, b]$ are Riemann integrable.
 
@@ -519,7 +519,7 @@ The article also passes from sequences of numbers to sequences of functions, whe
 |---|---|
 | $d(a, b) = \lvert a - b \rvert$ | Distance on $\mathbb{R}$ |
 | $B(a, r)$ | Open ball of radius $r$ |
-| $U, F$ | Open, closed sets |
+| $\Omega, F$ | Open, closed sets |
 | $K$ | Compact set |
 | $a_n \to L$ | Convergence of a sequence |
 | $\limsup a_n, \liminf a_n$ | Limit superior, limit inferior |

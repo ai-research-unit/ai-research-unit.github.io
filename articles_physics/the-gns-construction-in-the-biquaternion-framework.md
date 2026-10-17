@@ -18,7 +18,7 @@ $$
 \qquad
 \langle \tilde A,\tilde B\rangle_{\tilde\rho} = \mathrm{Tr}\big(\tilde\rho\,\tilde A^{*}\tilde B\big),
 $$
-with $\pi_{\tilde\rho}(\tilde A)[\tilde B] = [\tilde A\tilde B]$ and cyclic vector $\Omega_{\tilde\rho}=[e_0]$. Its dimension depends on the state:
+with $\pi_{\tilde\rho}(\tilde A)[\tilde B] = [\tilde A\tilde B]$ and cyclic vector $\Omega_{\tilde\rho}=[e_t]$. Its dimension depends on the state:
 $$
 \dim_{\mathbb{C}}\mathcal{H}_{\tilde\rho} = 2\,\mathrm{rank}\,\tilde\rho
 = \begin{cases} 2 & \tilde\rho \text{ a minimal idempotent (pure)}, \\[2pt] 4 & \tilde\rho \text{ of full rank (all mixed states, including the trace state)}.\end{cases}
@@ -30,7 +30,7 @@ For the **vacuum** state $\tilde\rho = \tilde\Pi_+$ the GNS space is the minimal
 
 The article proceeds as follows. The next section recalls the GNS theorem. The section after that fixes the states of $\mathbb{B}$ as density matrices. Two sections then construct the GNS data explicitly and compute the dimension in the pure, mixed, and trace cases. A section states the modular structure. A section examines the trace state and the algebra's canonical state. A section records the second description of a state, as the Fourier transform of a measure, and locates the point at which the biquaternion algebra's norm fails to supply it. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_0)=2$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\vec u)=\tfrac12(e_0\pm i\vec u)$, the vacuum projector being $\tilde\Pi_+$, and the single-mode ladder is $\vec\Upsilon_1=\tfrac12(ie_1-e_2)$, $\vec\Upsilon_2=\tfrac12(ie_1+e_2)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
+**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central scalar imaginary $i$, $i^2=-1$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, imaginary scalar and real vector) and $\mathbb{M}_+$ (Hermitian, real scalar and imaginary vector), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ is the centre. The isomorphism is $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$, and the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Tr}(e_t)=2$. The biquaternion norm is $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The minimal idempotents are $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, the vacuum projector being $\tilde\Pi_+$, and the single-mode ladder is $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$, as in *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ## The GNS Theorem
 
@@ -70,7 +70,7 @@ The positivity of $\tilde\rho$ as an element of the $C^*$-algebra means positivi
 
 The state space of $\mathbb{B}$ is parametrized by the Bloch ball. Writing
 $$
-\tilde\rho = \tfrac12\big(e_0 + i\vec r\big),
+\tilde\rho = \tfrac12\big(e_t + i\vec r\big),
 \qquad \vec r\in\mathbb{R}^3,
 $$
 the positivity conditions are $\mathrm{Tr}(\tilde\rho)=1$ and the eigenvalues $\tfrac12(1\pm|\vec r|)\ge 0$, so
@@ -80,7 +80,7 @@ $$
 Three cases are the ones that matter below.
 
 1. **Pure states: $|\vec r|=1$.** Then $\tilde\rho = \tilde\Pi(\vec u_r)$ is a minimal idempotent, and $\tilde\rho^2=\tilde\rho$. These are the vacua of the previous article, and there are as many as there are unit vectors: the Bloch sphere.
-2. **The trace state: $\vec r=0$.** Then $\tilde\rho = \tfrac12 e_0$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde A) = \tfrac12\mathrm{Tr}(\tilde A)$ is the normalized algebra trace. It is the unique tracial state of $\mathbb{B}$.
+2. **The trace state: $\vec r=0$.** Then $\tilde\rho = \tfrac12 e_t$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde A) = \tfrac12\mathrm{Tr}(\tilde A)$ is the normalized algebra trace. It is the unique tracial state of $\mathbb{B}$.
 3. **Mixed states: $0<|\vec r|<1$.** Then $\tilde\rho^2\ne\tilde\rho$, the state is a nontrivial convex combination of two pure states, and its spectral projectors are distinct.
 
 ## The GNS Data of a State of $\mathbb{B}$
@@ -97,15 +97,15 @@ $$
 \qquad
 \pi_{\tilde\rho}(\tilde A)[\tilde B]=[\tilde A\tilde B],
 \qquad
-\Omega_{\tilde\rho} = [e_0].
+\Omega_{\tilde\rho} = [e_t].
 $$
-It is convenient to compute the Gram matrix of the basis $\{e_0,e_1,e_2,e_3\}$,
+It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
-G_{jk} = \mathrm{Tr}\big(\tilde\rho\, e_j^\dagger e_k\big),
+G_{jk} = \mathrm{Tr}\big(\tilde\rho\, e_j^\dagger \vec e_k\big),
 $$
 whose rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde\rho}$.
 
-**The vacuum state.** Take $\tilde\rho = \tilde\Pi_+=\tfrac12(e_0+ie_3)$, the state of the previous article. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Then for any $\tilde A$, using $\tilde\rho = \tilde\rho^2$,
+**The vacuum state.** Take $\tilde\rho = \tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, the state of the previous article. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Then for any $\tilde A$, using $\tilde\rho = \tilde\rho^2$,
 $$
 \langle \tilde A,\tilde A\rangle_{\tilde\rho} = \mathrm{Tr}\big(\tilde\Pi_+\tilde A^{*}\tilde A\big) = \mathrm{Tr}\big(\tilde A \tilde\Pi_+\tilde A^{*}\big) = 2\,\mathrm{Sc}\big(\tilde A \tilde\Pi_+\tilde A^{*}\big) \ge 0,
 $$
@@ -115,7 +115,7 @@ $$
 $$
 Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of article 1. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_+\tilde A^{*}\tilde B)$ sees only the first column of the matrices.
 
-**The trace state.** Take $\tilde\rho = \tfrac12 e_0$. Then
+**The trace state.** Take $\tilde\rho = \tfrac12 e_t$. Then
 $$
 \langle \tilde A,\tilde B\rangle_{\mathrm{tr}} = \tfrac12\mathrm{Tr}\big(\tilde A^{*}\tilde B\big),
 $$
@@ -127,7 +127,7 @@ $$
 $$
 the **regular representation**, of complex dimension four. The Gram matrix of the four basis elements has rank four.
 
-**The general state.** For $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $r=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde\rho}\cong\mathbb{B}/\mathcal{N}_{\tilde\rho}$ and using the eigenvectors of $\tilde\rho$,
+**The general state.** For $\tilde\rho=\tfrac12(e_t+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $r=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde\rho}\cong\mathbb{B}/\mathcal{N}_{\tilde\rho}$ and using the eigenvectors of $\tilde\rho$,
 $$
 \mathrm{Tr}\big(\tilde\rho\,\tilde A^{*}\tilde A\big) = \sum_i \lambda_i\,\big\|\tilde A e_i\big\|^2 ,
 $$
@@ -137,7 +137,7 @@ $$
 $$
 so the dimension is $2$ for the pure boundary ($r=1$) and $4$ throughout the interior of the Bloch ball ($r=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
-**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{jk}=\mathrm{Tr}(\tilde\rho\,e_j^\dagger e_k)$ by row reduction: the vacuum state $\tilde\rho=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde\rho=\tfrac12 e_0$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde\rho$ and not by how mixed the state is.
+**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{jk}=\mathrm{Tr}(\tilde\rho\,e_j^\dagger \vec e_k)$ by row reduction: the vacuum state $\tilde\rho=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde\rho=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde\rho$ and not by how mixed the state is.
 
 Three structural consequences follow, and they are the content of the construction for this framework.
 
@@ -147,13 +147,13 @@ Three structural consequences follow, and they are the content of the constructi
 
 **The annihilation operator is in the radical.** For the vacuum state,
 $$
-\omega_0\big(\vec\Upsilon_2 \vec\Upsilon_1\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0
+\omega_0\big(\vec\Upsilon_y \vec\Upsilon_x\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde N_{\mathrm{tr}}\big) = 0
 \quad\Longrightarrow\quad
-\pi_0(\vec\Upsilon_1)\,\Omega_0 = [\vec\Upsilon_1] = 0 ,
+\pi_t(\vec\Upsilon_x)\,\Omega_0 = [\vec\Upsilon_x] = 0 ,
 $$
-so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Upsilon_1$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde\rho}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
+so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Upsilon_x$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde\rho}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde A)=\langle\Omega|\pi(\tilde A)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde\rho\tilde A)=\mathrm{Tr}(\tilde\rho\, e_0^\dagger \tilde A e_0)$; it holds identically because $e_0$ is the unit and the inner product places $\tilde\rho$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ and $\vec\Upsilon_1$ of the chosen basis. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_0(e_0)=1$ and $\omega_0(ie_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $e_1$ and $e_2$ directions and fully polarized along $e_3$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_0(e_3)=-i$ and $\omega_0(ie_0)=i$, together with $\omega_0(e_1)=\omega_0(e_2)=\omega_0(\vec\Upsilon_1)=0$. The polarization $\omega_0(ie_k)=r_k$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde\rho\tilde\rho=\tilde\rho$ carries.
+The check that $\omega(\tilde A)=\langle\Omega|\pi(\tilde A)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde\rho\tilde A)=\mathrm{Tr}(\tilde\rho\, e_t^\dagger \tilde A e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde\rho$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen basis. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_0(e_t)=1$ and $\omega_0(i\vec e_k)=r_k$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_0(\vec e_z)=-i$ and $\omega_0(ie_t)=i$, together with $\omega_0(\vec e_x)=\omega_0(\vec e_y)=\omega_0(\vec\Upsilon_x)=0$. The polarization $\omega_0(i\vec e_k)=r_k$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde\rho\tilde\rho=\tilde\rho$ carries.
 
 ## Modular Structure
 
@@ -165,7 +165,7 @@ S(\tilde A) \;=\; \tilde A^{*},
 $$
 where $S$ is the Tomita operator and $\Delta_{\tilde\rho}=S^*S$. Two facts are standard and were verified explicitly:
 
-1. **Positivity and spectrum.** $\Delta_{\tilde\rho}>0$, and its spectrum in the operator basis $\{e_0,e_1,e_2,e_3\}$ is the set of ratios $\lambda_i/\lambda_j$ of the eigenvalues of $\tilde\rho$, so $\det\Delta_{\tilde\rho}=1$.
+1. **Positivity and spectrum.** $\Delta_{\tilde\rho}>0$, and its spectrum in the operator basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ is the set of ratios $\lambda_i/\lambda_j$ of the eigenvalues of $\tilde\rho$, so $\det\Delta_{\tilde\rho}=1$.
 2. **The modular conjugation.** With $J(\tilde A)=\tilde A^{*}$ one has $J^2=\mathrm{id}$, $J\Delta_{\tilde\rho} J^{-1}=\Delta_{\tilde\rho}^{-1}$, and $J$ is antiunitary for the GNS inner product.
 
 Numerically, for a full-rank Hermitian $\tilde\rho$ with eigenvalues $(0.17984,0.82016)$ the operator $\Delta_{\tilde\rho}$ defined by $\Delta_{\tilde\rho}(\tilde A)=\tilde\rho \tilde A\tilde\rho^{-1}$ was verified positive on the four basis elements, and $J\Delta_{\tilde\rho}J^{-1}-\Delta_{\tilde\rho}^{-1}=0$ on each basis element to machine precision.
@@ -180,7 +180,7 @@ K_{\tilde\rho}\in\mathbb{M}_+ .
 $$
 This is the algebraic fact recorded by the companion articles on the KMS condition and on modular theory: the generator of the modular flow is an element of the informational sector, while it acts on fields whose coordinates are read in the material sector. For the Gibbs state of a Hamiltonian $\tilde H\in\mathbb{M}_+$ one has $\tilde\rho = \exp(-\beta\tilde H)/Z$ and therefore
 $$
-K_{\tilde\rho} = \beta\tilde H + (\log Z)\,e_0,
+K_{\tilde\rho} = \beta\tilde H + (\log Z)\,e_t,
 $$
 a Hermitian element whose scalar part carries the free energy, exactly as *The Partition Function in Biquaternionic Form* records. The GNS construction is silent about $\beta$ and $\tilde H$; it supplies the modular operator and the modular Hamiltonian for whatever state it is handed, and the thermal articles supply the state.
 
@@ -202,7 +202,7 @@ The trace state plays for $\mathbb{B}$ the role that the vacuum plays for a fiel
 $$
 \tilde\rho_{\text{vac}} = \tilde\Pi(\vec u) \ \ (\text{pure, null, irreducible GNS}),
 \qquad
-\tilde\rho_{\text{tr}} = \tfrac12 e_0 \ \ (\text{mixed, invertible, regular GNS}).
+\tilde\rho_{\text{tr}} = \tfrac12 e_t \ \ (\text{mixed, invertible, regular GNS}).
 $$
 Every other state lies between them in the Bloch ball, and the GNS dimension grows monotonically from the pure value to the trace value.
 
@@ -259,7 +259,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 
 ## Summary
 
-For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the GNS construction is fully explicit. A state is a density matrix $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $|\vec r|\le1$; its GNS Hilbert space is
+For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the GNS construction is fully explicit. A state is a density matrix $\tilde\rho=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$; its GNS Hilbert space is
 $$
 \mathcal{H}_{\tilde\rho} = \mathbb{B}\big/\mathcal{N}_{\tilde\rho},
 \qquad
@@ -267,12 +267,12 @@ $$
 \qquad
 \pi_{\tilde\rho}(\tilde A)[\tilde B]=[\tilde A\tilde B],
 \qquad
-\Omega_{\tilde\rho}=[e_0],
+\Omega_{\tilde\rho}=[e_t],
 $$
 of complex dimension $2\,\mathrm{rank}\,\tilde\rho$.
-For the **vacuum** $\tilde\rho=\tilde\Pi_+$ the dimension is two, the space is the minimal left ideal — the one-particle spinor module — and the representation is irreducible; the annihilation operator lies in the radical, so the reconstructed vacuum vector is annihilated by the ladder, which is the GNS form of the mode condition. For the **trace state** $\tilde\rho=\tfrac12e_0$ the dimension is four, the space is the whole algebra with the Hilbert–Schmidt inner product, and the representation is the regular one. Pure states are the Bloch sphere, mixed states the interior, and the trace state the unique tracial state at the centre.
+For the **vacuum** $\tilde\rho=\tilde\Pi_+$ the dimension is two, the space is the minimal left ideal — the one-particle spinor module — and the representation is irreducible; the annihilation operator lies in the radical, so the reconstructed vacuum vector is annihilated by the ladder, which is the GNS form of the mode condition. For the **trace state** $\tilde\rho=\tfrac12e_t$ the dimension is four, the space is the whole algebra with the Hilbert–Schmidt inner product, and the representation is the regular one. Pure states are the Bloch sphere, mixed states the interior, and the trace state the unique tracial state at the centre.
 
-The construction carries the finite-dimensional Tomita–Takesaki structure: the modular operator is $\Delta_{\tilde\rho}(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$, the modular conjugation is $J(\tilde A)=\tilde A^{*}$ with $J\Delta_{\tilde\rho}J^{-1}=\Delta_{\tilde\rho}^{-1}$, and the modular Hamiltonian $K=-\log\tilde\rho$ is Hermitian, hence an element of $\mathbb{M}_+$. For a Gibbs state it reads $K=\beta\tilde H+(\log Z)e_0$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
+The construction carries the finite-dimensional Tomita–Takesaki structure: the modular operator is $\Delta_{\tilde\rho}(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$, the modular conjugation is $J(\tilde A)=\tilde A^{*}$ with $J\Delta_{\tilde\rho}J^{-1}=\Delta_{\tilde\rho}^{-1}$, and the modular Hamiltonian $K=-\log\tilde\rho$ is Hermitian, hence an element of $\mathbb{M}_+$. For a Gibbs state it reads $K=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
 
 A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2$ of the measure, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde\rho\tilde A^{*}\tilde B)$, which is the inner product this article uses.
 
@@ -283,24 +283,24 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material and informational sectors |
 | $\omega(\tilde A)$ | State: positive normalized linear functional |
 | $\varphi$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\varphi=\int\chi\,d\mu$; the state $\omega_\varphi(f)=\int f\varphi$ on the convolution algebra has GNS space $L^2(\mu)$ |
-| $\tilde\rho=\tfrac12(e_0+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
-| $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
+| $\tilde\rho=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
+| $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde A)=\tfrac12\mathrm{Tr}(\tilde A)$ | Trace state; unique tracial state; Bloch centre |
 | $\langle\tilde A,\tilde B\rangle_\omega=\omega(\tilde A^{*}\tilde B)$ | GNS inner product |
 | $\mathcal{N}_\omega=\{\tilde A:\omega(\tilde A^{*}\tilde A)=0\}$ | Radical of the state |
 | $\mathcal{H}_\omega=\mathbb{B}/\mathcal{N}_\omega$ | GNS Hilbert space |
 | $\pi_\omega(\tilde A)[\tilde B]=[\tilde A\tilde B]$ | GNS (left-regular) representation |
-| $\Omega_\omega=[e_0]$ | Cyclic (vacuum) vector |
+| $\Omega_\omega=[e_t]$ | Cyclic (vacuum) vector |
 | $\dim_\mathbb{C}\mathcal{H}_{\tilde\rho}=2\,\mathrm{rank}\,\tilde\rho$ | GNS dimension ($2$ pure, $4$ full-rank/mixed) |
 | $\Delta_{\tilde\rho}(\tilde A)=\tilde\rho\tilde A\tilde\rho^{-1}$ | Modular operator |
 | $J(\tilde A)=\tilde A^{*}$ | Modular conjugation, $J\Delta J^{-1}=\Delta^{-1}$ |
 | $K=-\log\tilde\rho\in\mathbb{M}_+$ | Modular Hamiltonian |
-| $\vec\Upsilon_1=\tfrac12(ie_1-e_2)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
+| $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$ | Single-mode annihilation operator (in the radical of the vacuum state) |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

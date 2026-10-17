@@ -8,7 +8,7 @@ harmonic, or of monogenic, pieces multiplied by powers of a radial or a Clifford
 article treats the operator that performs the decomposition. The setting is the one of *The Dirac
 Operator*: a Clifford algebra $A=\mathrm{Cl}_{0,m}$ with frame $1,e_1,\dots,e_m$, a left Clifford
 module $\mathcal{S}$ of values, the vector variable $x$ ranging over $\mathbb{R}^{m+1}$, the
-Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\partial_\mu$ and the Laplacian
+Cauchy–Riemann operator $D=\sum_{\mu=0}^{m}e_\mu\,\partial/\partial x_\mu$ and the Laplacian
 $\Delta=D\bar D=\bar DD$.
 
 On the space $\mathcal{P}_k$ of $\mathcal{S}$-valued homogeneous polynomials of degree $k$ there are
@@ -37,7 +37,7 @@ model.
 **Definition.** The **Euler operator** is
 
 $$
-E = \sum_{\mu=0}^{m}x_\mu\,\partial_\mu ,
+E = \sum_{\mu=0}^{m}x_\mu\,\partial/\partial x_\mu ,
 $$
 
 the infinitesimal generator of the dilations $x\mapsto\lambda x$; a polynomial $P$ is homogeneous of
@@ -51,8 +51,8 @@ multiplication by $f$ on the left; consequently the lowering operators preserve 
 and $-1$ respectively and the raising operators increase it by $2$ and $1$.
 
 *Proof.* The Laplacian and $D$ have constant coefficients, so $E$ commutes with them term by term
-because $x_\mu\partial_\mu$ and $\partial_\nu$ satisfy
-$[\partial_\nu,x_\mu\partial_\mu]=\partial_\nu$ and the second derivatives cancel. For the
+because $x_\mu\,\partial/\partial x_\mu$ and $\partial/\partial x_\nu$ satisfy
+$[\partial/\partial x_\nu,x_\mu\,\partial/\partial x_\mu]=\partial/\partial x_\nu$ and the second derivatives cancel. For the
 multipliers, $E(fP)=(Ef)P+f(EP)$ for a homogeneous $f$, giving $[E,L_f]=(\deg f)L_f$, and
 $\deg|x|^2=2$, $\deg x^{\natural}=1$.
 
@@ -78,8 +78,8 @@ $$
 [\Delta, L_{|x|^2}] = \Delta L_{|x|^2}-L_{|x|^2}\Delta = 4E+2n .
 $$
 
-*Proof.* Direct computation: $\partial_\mu(|x|^2Q)=2x_\mu Q+|x|^2\partial_\mu Q$, so
-$\partial_\mu^2(|x|^2Q)=2Q+4x_\mu\partial_\mu Q+|x|^2\partial_\mu^2Q$; summing over the $n$
+*Proof.* Direct computation: $\partial/\partial x_\mu\,(|x|^2Q)=2x_\mu Q+|x|^2\partial/\partial x_\mu Q$, so
+$\partial^2/\partial x_\mu^2(|x|^2Q)=2Q+4x_\mu\,\partial/\partial x_\mu Q+|x|^2\partial^2/\partial x_\mu^2Q$; summing over the $n$
 coordinates gives $\Delta(|x|^2Q)=2nQ+4EQ+|x|^2\Delta Q$, which is the identity.
 
 **Corollary (the triangularity and the isomorphism).** On $\mathcal{P}_{k-2}$ the composition
@@ -206,7 +206,7 @@ particular dimensions of the pieces are properties of the system, computed by th
 recursion; the operator is the same.
 
 **Remark (why the multiplier is the conjugate variable).** In the corpus's sign convention the
-operator $D$ carries $+e_i\partial_i$ and satisfies $D\bar D=\Delta$, so the *dual* multiplier — the
+operator $D$ carries $+e_\mu\,\partial/\partial x_\mu$ and satisfies $D\bar D=\Delta$, so the *dual* multiplier — the
 one for which $D$ acts triangularly with positive diagonal — is
 $x^{\natural}=x_0-\sum_{i\ge1}x_ie_i$, whose Clifford norm is $|x|^2$; the conjugate operator
 $\bar D$ plays the mirror role and pairs with the plain variable $x$. The point is that the
@@ -221,7 +221,7 @@ statements agree once the pairing is fixed.
 ## Summary
 
 On the space $\mathcal{P}_k$ of $\mathcal{S}$-valued homogeneous polynomials of degree $k$, the
-**Euler operator** $E=\sum_\mu x_\mu\partial_\mu$ is the grading, and the Laplacian and the
+**Euler operator** $E=\sum_\mu x_\mu\,\partial/\partial x_\mu$ is the grading, and the Laplacian and the
 Cauchy–Riemann operator commute with it. The harmonic **Fischer lemma** —
 $\Delta:\mathcal{P}_k\to\mathcal{P}_{k-2}$ is surjective and
 $|x|^2\mathcal{P}_{k-2}\cap\mathcal{H}_k=0$ — together with the commutator identity
@@ -245,7 +245,7 @@ system, and the function-theoretic content of the decompositions is *Clifford An
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{P}_k$ | $\mathcal{S}$-valued homogeneous polynomials of degree $k$ |
-| $E=\sum_\mu x_\mu\partial_\mu$ | Euler operator; $EP=kP$ on $\mathcal{P}_k$ |
+| $E=\sum_\mu x_\mu\,\partial/\partial x_\mu$ | Euler operator; $EP=kP$ on $\mathcal{P}_k$ |
 | $\mathcal{H}_k=\ker\Delta\cap\mathcal{P}_k$ | Harmonic homogeneous polynomials |
 | $\mathcal{M}_k=\ker D\cap\mathcal{P}_k$ | Solid spherical monogenics |
 | $L_f$ | Left multiplication by $f$ |

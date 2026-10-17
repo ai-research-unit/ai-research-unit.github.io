@@ -114,7 +114,7 @@ The bracket is the **Poisson bracket**, and the axiom relating it to the product
 **Example.** For $A = k[x_1,\dots,x_n]$ and a skew-symmetric matrix $\omega = (\omega_{ij})$ of constants, the bracket
 
 $$
-\{f,g\} = \sum_{i,j}\omega_{ij}\,\partial_if\,\partial_jg
+\{f,g\} = \sum_{i,j}\omega_{ij}\,\partial/\partial x_i\,f\,\partial/\partial x_j\,g
 $$
 
 is a Poisson bracket: antisymmetry and the Jacobi identity follow because $\omega$ is constant and skew, and the Leibniz rule is the product rule for the formal derivatives. This is the **constant** or **linear** case, and it is the Poisson structure whose quantisation is the Moyal product. When $\omega$ is invertible the bracket is called **symplectic**, and the geometric content of that case belongs to Part II.
@@ -122,7 +122,7 @@ is a Poisson bracket: antisymmetry and the Jacobi identity follow because $\omeg
 **Example.** On $A = k[x,y]$ the bracket defined by $\{y,x\} = xy$ and extended by the Leibniz rule,
 
 $$
-\{f,g\} = xy\,(\partial_xf\,\partial_yg - \partial_yf\,\partial_xg),
+\{f,g\} = xy\,(\partial/\partial x\,f\,\partial/\partial y\,g - \partial/\partial y\,f\,\partial/\partial x\,g),
 $$
 
 is a Poisson bracket; it is not constant, and it is the Poisson structure quantised by the quantum plane.
@@ -135,7 +135,7 @@ $$
 f * g = fg + \sum_{n\geq1}h^nC_n(f,g),
 $$
 
-such that $C_1(f,g) - C_1(g,f) = \{f,g\}$, and every $C_n$ is a bidifferential operator, meaning a $k$-linear combination of compositions of the formal derivations $\partial_i$. The condition on $C_1$ says that the antisymmetrisation of the leading term is the given Poisson bracket, and it is what makes the deformation a *quantisation* of the bracket rather than an arbitrary deformation.
+such that $C_1(f,g) - C_1(g,f) = \{f,g\}$, and every $C_n$ is a bidifferential operator, meaning a $k$-linear combination of compositions of the formal derivations $\partial/\partial x_i$. The condition on $C_1$ says that the antisymmetrisation of the leading term is the given Poisson bracket, and it is what makes the deformation a *quantisation* of the bracket rather than an arbitrary deformation.
 
 **Proposition.** The antisymmetrised part of $C_1$ is forced to be a Poisson bracket by the associativity of $*$: the identity $(f*g)*h = f*(g*h)$ modulo $h^2$ gives
 
@@ -152,10 +152,10 @@ which says that the bilinear map $\{f,g\} = C_1(f,g) - C_1(g,f)$ satisfies the L
 **Example (Moyal).** Let $A = k[x_1,\dots,x_n]$ with the constant Poisson bracket $\omega$. The **Moyal star product**
 
 $$
-f * g = \sum_{r\geq0}\frac{1}{r!}\Bigl(\frac{h}{2}\Bigr)^r\sum_{i_1,\dots,i_r,j_1,\dots,j_r}\omega_{i_1j_1}\cdots\omega_{i_rj_r}\,\partial_{i_1}\cdots\partial_{i_r}f\ \partial_{j_1}\cdots\partial_{j_r}g
+f * g = \sum_{r\geq0}\frac{1}{r!}\Bigl(\frac{h}{2}\Bigr)^r\sum_{i_1,\dots,i_r,j_1,\dots,j_r}\omega_{i_1j_1}\cdots\omega_{i_rj_r}\,\partial/\partial x_{i_1}\cdots\partial/\partial x_{i_r}\,f\ \partial/\partial x_{j_1}\cdots\partial/\partial x_{j_r}\,g
 $$
 
-is associative and has $C_1(f,g) = \tfrac12\sum_{i,j}\omega_{ij}\partial_if\partial_jg$, so its antisymmetrisation is the Poisson bracket $\{f,g\} = \sum_{i,j}\omega_{ij}\partial_if\partial_jg$ of the constant case and it is a star product quantising $\omega$. For $n = 2$ and $\omega_{12} = 1$ the deformed generators satisfy
+is associative and has $C_1(f,g) = \tfrac12\sum_{i,j}\omega_{ij}\partial/\partial x_i\,f\partial/\partial x_j\,g$, so its antisymmetrisation is the Poisson bracket $\{f,g\} = \sum_{i,j}\omega_{ij}\partial/\partial x_i\,f\partial/\partial x_j\,g$ of the constant case and it is a star product quantising $\omega$. For $n = 2$ and $\omega_{12} = 1$ the deformed generators satisfy
 
 $$
 x_1*x_2 - x_2*x_1 = h,
@@ -206,11 +206,11 @@ The theorem is the structure theorem of the subject, and its proof is operadic a
 
 The same formality machinery applies to the deformations of the enveloping algebra and to the Hopf-algebraic deformations of *Quantum Groups*. The relevant statements are:
 
-- the enveloping algebra $U(\mathrm{G})$ of a Lie algebra is the quotient of a deformation of $\operatorname{Sym}(\mathrm{G})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
+- the enveloping algebra $\mathrm{U}(\mathrm{G})$ of a Lie algebra is the quotient of a deformation of $\operatorname{Sym}(\mathrm{G})$ by the linear Poisson bracket determined by the Lie bracket, by the symmetrisation map;
 - the deformation of $\operatorname{Sym}(\mathrm{G})$ by that bracket, with the **campbell–Hausdorff**-type star product, gives a deformation whose associated graded is the symmetric algebra;
-- a deformation of a Hopf algebra is a deformation of the underlying algebra together with deformed coproduct and antipode, and the first-order term of the coproduct deformation is a **coboundary Poisson structure** on the Hopf algebra; Drinfeld's classification of deformations of $U(\mathrm{G})$ and the theory of quantum groups at generic $q$ are the resulting statements, and they are treated in *Quantum Groups*.
+- a deformation of a Hopf algebra is a deformation of the underlying algebra together with deformed coproduct and antipode, and the first-order term of the coproduct deformation is a **coboundary Poisson structure** on the Hopf algebra; Drinfeld's classification of deformations of $\mathrm{U}(\mathrm{G})$ and the theory of quantum groups at generic $q$ are the resulting statements, and they are treated in *Quantum Groups*.
 
-**Theorem (Drinfeld, standard).** The formal deformations of $U(\mathrm{G})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathrm{G}$ with coefficients in $\wedge^2\mathrm{G}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathrm{G}$; for $\mathrm{G}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathrm{G})$.
+**Theorem (Drinfeld, standard).** The formal deformations of $\mathrm{U}(\mathrm{G})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathrm{G}$ with coefficients in $\wedge^2\mathrm{G}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathrm{G}$; for $\mathrm{G}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathrm{G})$.
 
 The cohomology that appears here is that of the **Chevalley--Eilenberg complex** of $\mathrm{G}$. For a $\mathrm{G}$-module $M$ the degree-$n$ cochains are the alternating multilinear maps $f:\mathrm{G}^n\to M$, with differential
 
@@ -224,7 +224,7 @@ the hats marking omitted arguments, and the coefficient module of the theorem is
 
 A **formal deformation** of a $k$-algebra $A$ is a $k[[h]]$-algebra $A_h$ with $A_h \cong A[[h]]$ as a module and $A_h/hA_h \cong A$; two deformations are **equivalent** when they differ by an algebra isomorphism of the form $\mathrm{id} + h\varphi_1 + \cdots$. The first-order term of an associative deformation is a $2$-cocycle for the **Hochschild complex**, so infinitesimal deformations of $A$ are parametrised by $HH^2(A,A)$, with obstructions in $HH^3(A,A)$ and beyond computed by the **Gerstenhaber bracket** $[\mu_1,\mu_1]$; the Gerstenhaber bracket and the cup product make $HH^{\bullet+1}(A,A)$ a graded Lie algebra and $HH^\bullet(A,A)$ a **Gerstenhaber algebra**, which is an algebra over the homology of the little disks operad $\mathcal{E}_2$, and the operad of Hochschild cochains is formal.
 
-A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable, and a **star product** on a Poisson algebra is an associative deformation $f*g = fg + \sum_{n\geq1}h^nC_n(f,g)$ whose first-order antisymmetrisation is the Poisson bracket; the associativity forces that antisymmetrisation to be a Poisson bracket. The **Moyal product** on $k[x_1,\dots,x_n]$ with a constant bracket $\omega$ is the closed-form example, with $x_1*x_2 - x_2*x_1 = h$ in the two-variable case, and the quantum plane $k_q[x,y]$ with $q = 1+h$ is the quantisation of the bracket $\{y,x\} = xy$; the two deformations are inequivalent because their first-order terms are. The **Kontsevich formality theorem** asserts an $L_\infty$-quasi-isomorphism from the multivector fields with the Schouten–Nijenhuis bracket to the Hochschild complex with the Gerstenhaber bracket, and it implies that every Poisson structure on a polynomial algebra admits a star product and that the correspondence between Poisson brackets and equivalence classes of star products is a bijection. Drinfeld's classification of the Hopf-algebraic deformations of $U(\mathrm{G})$ is the same circle of ideas in the quantum-group setting. The geometric Poisson and symplectic structures, the manifold theory and the convergence of star products belong to Part II.
+A **Poisson algebra** is a commutative associative algebra with a Lie bracket that is a derivation in each variable, and a **star product** on a Poisson algebra is an associative deformation $f*g = fg + \sum_{n\geq1}h^nC_n(f,g)$ whose first-order antisymmetrisation is the Poisson bracket; the associativity forces that antisymmetrisation to be a Poisson bracket. The **Moyal product** on $k[x_1,\dots,x_n]$ with a constant bracket $\omega$ is the closed-form example, with $x_1*x_2 - x_2*x_1 = h$ in the two-variable case, and the quantum plane $k_q[x,y]$ with $q = 1+h$ is the quantisation of the bracket $\{y,x\} = xy$; the two deformations are inequivalent because their first-order terms are. The **Kontsevich formality theorem** asserts an $L_\infty$-quasi-isomorphism from the multivector fields with the Schouten–Nijenhuis bracket to the Hochschild complex with the Gerstenhaber bracket, and it implies that every Poisson structure on a polynomial algebra admits a star product and that the correspondence between Poisson brackets and equivalence classes of star products is a bijection. Drinfeld's classification of the Hopf-algebraic deformations of $\mathrm{U}(\mathrm{G})$ is the same circle of ideas in the quantum-group setting. The geometric Poisson and symplectic structures, the manifold theory and the convergence of star products belong to Part II.
 
 ## Summary of Notation
 
@@ -242,13 +242,13 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $[f,g]$ | Gerstenhaber bracket (degree $-1$ in shifted grading) |
 | $f\smile g$ | cup product of cochains |
 | $\{f,g\}$ | Poisson bracket, first-order term of $*$ |
-| $\omega_{ij}$ | constant Poisson tensor; $\{f,g\} = \sum\omega_{ij}\partial_if\partial_jg$ |
+| $\omega_{ij}$ | constant Poisson tensor; $\{f,g\} = \sum\omega_{ij}\partial/\partial x_i\,f\partial/\partial x_j\,g$ |
 | $C_n(f,g)$ | coefficients of the star product |
 | $\mathcal{O}$, $\mathcal{E}_2$, $D_2$ | operad, little disks homology operad, little disks operad |
 | $\ell_n$ | higher brackets of an $L_\infty$-algebra |
 | $T_{\mathrm{poly}}(A)$ | polynomial multivectors, Schouten–Nijenhuis bracket |
 | $\mathcal{U}$ | Kontsevich $L_\infty$-quasi-isomorphism |
-| $U_h(\mathrm{G})$ | Hopf-algebraic deformation of $U(\mathrm{G})$ |
+| $U_h(\mathrm{G})$ | Hopf-algebraic deformation of $\mathrm{U}(\mathrm{G})$ |
 
 
 

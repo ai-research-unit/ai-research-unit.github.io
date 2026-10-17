@@ -106,7 +106,7 @@ $$
 
 ### Cayley–Dickson Doubling
 
-The octonions are obtained from the quaternions by one doubling. Write $\mathbb{H}$ for the quaternions with basis $1, e_1, e_2, e_3$ and conjugation $\bar{}$, and put
+The octonions are obtained from the quaternions by one doubling. Write $\mathbb{H}$ for the quaternions with basis $1, \vec e_x, \vec e_y, \vec e_z$ and conjugation $\bar{}$, and put
 
 $$
 \mathbb{O} = \mathbb{H} \oplus \mathbb{H}\ell, \qquad \ell^2 = -1, \qquad \ell x = x^{\natural}\,\ell \quad (x \in \mathbb{H}),
@@ -118,9 +118,9 @@ $$
 (a + b\ell)(c + d\ell) = (ac - d^{\natural}\, b) + (da + b c^{\natural})\,\ell .
 $$
 
-The relation $\ell x = x^{\natural}\ell$, which follows from the product, says that $\ell$ anticommutes with the imaginary quaternions $e_1, e_2, e_3$; because $\mathbb{O}$ is not associative, the product is not an associative expansion of the notation $a + b\ell$.
+The relation $\ell x = x^{\natural}\ell$, which follows from the product, says that $\ell$ anticommutes with the imaginary quaternions $\vec e_x, \vec e_y, \vec e_z$; because $\mathbb{O}$ is not associative, the product is not an associative expansion of the notation $a + b\ell$.
 
-The conjugation is $\overline{a + b\ell} = a^{\natural} - b\ell$, so $uu^{\natural} = a a^{\natural} + b b^{\natural} \in \mathbb{R}$. The eight elements $1, e_1, e_2, e_3, \ell, e_1\ell, e_2\ell, e_3\ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.
+The conjugation is $\overline{a + b\ell} = a^{\natural} - b\ell$, so $uu^{\natural} = a a^{\natural} + b b^{\natural} \in \mathbb{R}$. The eight elements $1, \vec e_x, \vec e_y, \vec e_z, \ell, \vec e_x \ell, \vec e_y \ell, \vec e_z \ell$ form a basis, so $\dim_{\mathbb{R}} \mathbb{O} = 8$.
 
 **Theorem.** $\mathbb{O}$ is a composition algebra: $(uv)(uv)^{\natural} = (u u^{\natural})(vv^{\natural})$ and $(uv) v^{\natural} = u(vv^{\natural})$ for all $u, v$. It is **alternative**, satisfying $u(uv) = (uu)v$ and $(vu)u = v(uu)$, and it is not associative.
 
@@ -128,7 +128,7 @@ The verification is a direct computation in the eight basis elements; the model 
 
 ### Coordinates
 
-An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = e_1$, $\iota_2 = e_2$, $\iota_3 = e_3$, $\iota_4 = \ell$, $\iota_5 = e_1\ell$, $\iota_6 = e_2\ell$, $\iota_7 = e_3\ell$. Conjugation negates the imaginary part, $u^{\natural} = u_0 - \sum_i u_i\iota_i$, and $u u^{\natural} = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u +  u^{\natural}) = u_0$, and the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - u^{\natural})$.
+An octonion is written $u = u_0 + \sum_{i=1}^{7} u_i \iota_i$ with $u_i \in \mathbb{R}$ and $\iota_i$ the seven imaginary basis elements $\iota_1 = \vec e_x$, $\iota_2 = \vec e_y$, $\iota_3 = \vec e_z$, $\iota_4 = \ell$, $\iota_5 = \vec e_x \ell$, $\iota_6 = \vec e_y \ell$, $\iota_7 = \vec e_z \ell$. Conjugation negates the imaginary part, $u^{\natural} = u_0 - \sum_i u_i\iota_i$, and $u u^{\natural} = \sum_{i=0}^{7} u_i^2$. The real part is $\operatorname{Re}(u) = \tfrac{1}{2}(u +  u^{\natural}) = u_0$, and the imaginary part is $\operatorname{Im}(u) = \tfrac{1}{2}(u - u^{\natural})$.
 
 ## The Albert Algebra
 

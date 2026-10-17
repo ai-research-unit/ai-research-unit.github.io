@@ -15,7 +15,7 @@ projections of the Hermitian theory.
 The setting is that of *Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator*:
 the algebra $\mathbb{H}_N=\mathbb{H}\otimes_{\mathbb{R}}\mathrm{Cl}_{0,N}$, $N=4n$, the twisted
 vectors $X_0,\dots,X_3$, the Hermitian variables $Z_0,\dots,Z_3$, the Hermitian Dirac operators
-$\partial_{Z_0},\dots,\partial_{Z_3}$ and the Hermitian conjugation $*$. The complex case, with two
+$\partial/\partial Z_0,\dots,\partial/\partial Z_3$ and the Hermitian conjugation $*$. The complex case, with two
 operators and a circulant $(2\times2)$ matrix, is the instance $n=1$ read in $\mathbb{C}^n$; the
 operator and the Fischer decomposition are *The Hermitian Dirac Operator and the Fischer
 Decomposition*; the adjoint reading of the kernel is *The Hermitian Cauchy Kernel as an Adjoint*;
@@ -40,13 +40,13 @@ $\bar X_r=-X_r$ and the sphere is $S^{4n-1}$, and the homogeneity is $1-4n$.
 **Proposition (the Euclidean identities).** The Euclidean kernels satisfy
 
 $$
-\partial_{X_r}F_r = \delta , \qquad
-\partial_{X_r}F_s+\partial_{X_s}F_r = 0 \quad (r\neq s),
+\partial/\partial X_r\,F_r = \delta , \qquad
+\partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r = 0 \quad (r\neq s),
 $$
 
 the second identity being the operator form of $\{X_r,X_s\}=0$.
 
-*Proof.* $F_r$ is the fundamental solution of $\partial_{X_r}$, which is elliptic with symbol the
+*Proof.* $F_r$ is the fundamental solution of $\partial/\partial X_r$, which is elliptic with symbol the
 pure vector $\sum e_a\xi_a$; the pairing with the second operator vanishes by the anticommutation
 relation for the twisted vectors, as computed in *Clifford Analysis*.
 
@@ -59,7 +59,7 @@ E_r(Z) = \frac{Z_r^{*}}{a_{4n}\,|Z|^{4n}} .
 $$
 
 **Remark (the kernel is not a fundamental solution).** The kernel $E_r$ is **not** a fundamental
-solution of $\partial_{Z_r}$; the four kernels are needed together, and the object that carries the
+solution of $\partial/\partial Z_r$; the four kernels are needed together, and the object that carries the
 fundamental solution is a matrix. This is the structural difference from the one-operator theory,
 where the kernel and the fundamental solution coincide.
 
@@ -67,10 +67,10 @@ where the kernel and the fundamental solution coincide.
 put
 
 $$
-D=\begin{pmatrix}\partial_{Z_0}&\partial_{Z_3}&\partial_{Z_2}&\partial_{Z_1}\\
-\partial_{Z_1}&\partial_{Z_0}&\partial_{Z_3}&\partial_{Z_2}\\
-\partial_{Z_2}&\partial_{Z_1}&\partial_{Z_0}&\partial_{Z_3}\\
-\partial_{Z_3}&\partial_{Z_2}&\partial_{Z_1}&\partial_{Z_0}\end{pmatrix},
+D=\begin{pmatrix}\partial/\partial Z_0&\partial/\partial Z_3&\partial/\partial Z_2&\partial/\partial Z_1\\
+\partial/\partial Z_1&\partial/\partial Z_0&\partial/\partial Z_3&\partial/\partial Z_2\\
+\partial/\partial Z_2&\partial/\partial Z_1&\partial/\partial Z_0&\partial/\partial Z_3\\
+\partial/\partial Z_3&\partial/\partial Z_2&\partial/\partial Z_1&\partial/\partial Z_0\end{pmatrix},
 \qquad
 E=\begin{pmatrix}E_0&E_3&E_2&E_1\\ E_1&E_0&E_3&E_2\\ E_2&E_1&E_0&E_3\\ E_3&E_2&E_1&E_0\end{pmatrix},
 $$
@@ -85,18 +85,18 @@ D^{\mathsf T}E = \delta\,I .
 $$
 
 *Proof.* The $(0,0)$ entry of $D^{\mathsf T}E$ is the combination
-$\partial_{Z_0}E_0+\partial_{Z_1}E_1+\partial_{Z_2}E_2+\partial_{Z_3}E_3$; evaluating it with the
+$\partial/\partial Z_0\,E_0+\partial/\partial Z_1\,E_1+\partial/\partial Z_2\,E_2+\partial/\partial Z_3\,E_3$; evaluating it with the
 Hadamard patterns and the Euclidean identities above gives
 
 $$
-\partial_{Z_0}E_0+\partial_{Z_1}E_1+\partial_{Z_2}E_2+\partial_{Z_3}E_3
+\partial/\partial Z_0\,E_0+\partial/\partial Z_1\,E_1+\partial/\partial Z_2\,E_2+\partial/\partial Z_3\,E_3
 =\tfrac{1}{16}\bigl(4\,\delta(X_0)+4\,\delta(X_1)+4\,\delta(X_2)+4\,\delta(X_3)\bigr)=\delta(Z),
 $$
 
 a single delta: the four Euclidean deltas coincide, because the vectors $X_r$ are related to $X$ by
 an orthogonal change of variables, and the factor of four in front of each is the contribution of
 the four rows of the Hadamard matrix. The sixteen cross terms cancel in antisymmetric pairs, the
-cancellation resting on $\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$, and the diagonal
+cancellation resting on $\partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r=0$ for $r\neq s$, and the diagonal
 terms contribute $\delta$ with coefficient one. The same calculus gives the matrix form of the
 Laplacian split, $16\,D^{\mathsf T}D^{\dagger}=\Delta_N\,I_4$. The full computation is in *Clifford
 Analysis*.
@@ -160,7 +160,7 @@ kernel $E$ is the quaternionic **Hermitian Cauchy kernel**.
 
 $$
 \sum_{s=0}^{3}\Bigl[\int_{\partial\Gamma}E_s(Z-V)N_s(Z)g(X)\,dS(X)
--\int_{\Gamma}E_s(Z-V)\bigl(\partial_{Z_s}g(X)\bigr)dV(X)\Bigr]=g(Y),
+-\int_{\Gamma}E_s(Z-V)\bigl(\partial/\partial Z_s\,g(X)\bigr)dV(X)\Bigr]=g(Y),
 $$
 
 the integral representation of several complex variables, which is the classical Cauchy formula when
@@ -205,8 +205,8 @@ and the complex one is its two-index shadow.
 ## Summary
 
 The Hermitian integral theory begins with the Euclidean kernels $F_r(X)=-X_r/(a_{4n}|X|^{4n})$ of
-the four twisted operators, satisfying $\partial_{X_r}F_r=\delta$ and
-$\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$, and the Hermitian kernels
+the four twisted operators, satisfying $\partial/\partial X_r\,F_r=\delta$ and
+$\partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r=0$ for $r\neq s$, and the Hermitian kernels
 $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$. No single Hermitian kernel is a fundamental solution; the four
 combine into the circulant matrix $E$, and with the circulant matrix $D$ of the operators one has
 $D^{\mathsf T}E=\delta I$, so the matrix is the fundamental solution of the matrix Dirac operator,
@@ -226,7 +226,7 @@ Operator*; the general construction is *Clifford Analysis*, and the adjoint read
 
 | Symbol | Meaning |
 |---|---|
-| $F_r(X)=-X_r/(a_{4n}|X|^{4n})$ | Euclidean kernels; $\partial_{X_r}F_r=\delta$ |
+| $F_r(X)=-X_r/(a_{4n}|X|^{4n})$ | Euclidean kernels; $\partial/\partial X_r\,F_r=\delta$ |
 | $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ | Hermitian kernels |
 | $D$, $E$ | Circulant matrices of operators and kernels; $D^{\mathsf T}E=\delta I$ |
 | $N$, $N_r$ | Circulant matrix of Hermitian conormals |

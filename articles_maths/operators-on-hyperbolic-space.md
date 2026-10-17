@@ -84,7 +84,7 @@ $$
 a manifold of dimension $2n - 1$. The **geodesic flow** is the one-parameter group of diffeomorphisms
 
 $$
-\phi_t : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \phi_t(x,v) = (\gamma_{x,v}(t), \dot\gamma_{x,v}(t)) ,
+\phi_t : S\mathbb{H}^n \longrightarrow S\mathbb{H}^n, \qquad \phi_t(x,v) = (\gamma_{x,v}(t), \left(d\gamma_{x,v}/dt\right)(t)) ,
 $$
 
 where $\gamma_{x,v}$ is the geodesic with the initial point $x$ and the initial velocity $v$; the flow translates the base point along the geodesic and carries the velocity by the parallel transport.

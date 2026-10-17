@@ -13,13 +13,13 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_0 + i\vec h$ with real $h_0$ and $\vec h \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_1$ is
+The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{M}_+$ consists of the elements $\tilde{H} = h_0 e_t + i\vec h$ with real $h_0$ and $\vec h \in \mathbb{R}^3$. A state is $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ and normalization $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$, and the Choi matrix is $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
 $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho})
 := (1-p)\,\tilde{\rho}
 + p\left(\tilde\Pi_1\,\tilde{\rho}\,\tilde\Pi_1 + \tilde\Pi_2\,\tilde{\rho}\,\tilde\Pi_2\right),
 \qquad
-\tilde\Pi_{1,2}(\vec u_1) = \tfrac{1}{2}\left(e_0 \pm i\vec u_1\right).
+\tilde\Pi_{1,2}(\vec u_x) = \tfrac{1}{2}\left(e_t \pm i\vec u_x\right).
 $$
 Throughout, $\log$ denotes the natural logarithm.
 
@@ -27,20 +27,20 @@ Throughout, $\log$ denotes the natural logarithm.
 
 **Problem.** Verify that the dephasing channel $\Phi^{\mathrm{deph}}_p$ is trace preserving with the three Kraus operators
 $$
-\tilde{K}_0 = \sqrt{1-p}\,e_0, \qquad \tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u_1), \qquad \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u_1),
+\tilde{K}_0 = \sqrt{1-p}\,e_t, \qquad \tilde{K}_1 = \sqrt{p}\,\tilde\Pi_1(\vec u_x), \qquad \tilde{K}_2 = \sqrt{p}\,\tilde\Pi_2(\vec u_x),
 $$
-and compute $\Phi^{\mathrm{deph}}_p(\tilde{\rho})$ for the general state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$.
+and compute $\Phi^{\mathrm{deph}}_p(\tilde{\rho})$ for the general state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$.
 
-**Solution.** Put $\alpha = i\vec u_1$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \alpha)$. Since $\vec u_1^2 = -e_0$,
+**Solution.** Put $\alpha = i\vec u_x$, so that $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \alpha)$. Since $\vec u_x^2 = -e_t$,
 $$
-\alpha^2 = (i\vec u_1)^2 = i^2\vec u_1^2 = (-1)(-e_0) = e_0,
+\alpha^2 = (i\vec u_x)^2 = i^2\vec u_x^2 = (-1)(-e_t) = e_t,
 \qquad
-\alpha^\dagger = (i\vec u_1)^{*} = -i\,\vec u_1^\dagger = -i(-\vec u_1) = \alpha,
+\alpha^\dagger = (i\vec u_x)^{*} = -i\,\vec u_x^\dagger = -i(-\vec u_x) = \alpha,
 $$
-so $\alpha^2 = e_0$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_{1,2}$ are Hermitian idempotents, $\tilde{K}_1^{*}\tilde{K}_1 = p\,\tilde\Pi_1$ and $\tilde{K}_2^{*}\tilde{K}_2 = p\,\tilde\Pi_2$, whence
+so $\alpha^2 = e_t$ and $\alpha$ is Hermitian, as the idempotent structure requires. Trace preservation is immediate: because $\tilde\Pi_{1,2}$ are Hermitian idempotents, $\tilde{K}_1^{*}\tilde{K}_1 = p\,\tilde\Pi_1$ and $\tilde{K}_2^{*}\tilde{K}_2 = p\,\tilde\Pi_2$, whence
 $$
 \tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 + \tilde{K}_2^{*}\tilde{K}_2
-= (1-p)\,e_0 + p\,(\tilde\Pi_1 + \tilde\Pi_2) = e_0 .
+= (1-p)\,e_t + p\,(\tilde\Pi_1 + \tilde\Pi_2) = e_t .
 $$
 
 For the action on the state, use the elementary identity
@@ -50,52 +50,52 @@ $$
 $$
 valid for every $\tilde{Q} \in \mathbb{B}$: the cross terms come with opposite signs,
 $$
-\tfrac{1}{4}\left(e_0 \pm \alpha\right)\tilde{Q}\left(e_0 \pm \alpha\right)
+\tfrac{1}{4}\left(e_t \pm \alpha\right)\tilde{Q}\left(e_t \pm \alpha\right)
 = \tfrac{1}{4}\left(\tilde{Q} \pm \alpha\tilde{Q} \pm \tilde{Q}\alpha + \alpha\tilde{Q}\alpha\right),
 $$
 and cancel in the sum. The two products needed are
 $$
-\alpha\,e_0\,\alpha = \alpha^2 = e_0, \qquad
-\alpha\,(i\vec r)\,\alpha = i^3\,\vec u_1\,\vec r\,\vec u_1 = -i\,\vec u_1\,\vec r\,\vec u_1 .
+\alpha\,e_t\,\alpha = \alpha^2 = e_t, \qquad
+\alpha\,(i\vec r)\,\alpha = i^3\,\vec u_x\,\vec r\,\vec u_x = -i\,\vec u_x\,\vec r\,\vec u_x .
 $$
 For the second we use the quaternion identity
 $$
-\vec u_1\,\vec r\,\vec u_1 = \vec r - 2(\vec u_1\cdot\vec r)\,\vec u_1 .
+\vec u_x\,\vec r\,\vec u_x = \vec r - 2(\vec u_x\cdot\vec r)\,\vec u_x .
 $$
-*Proof:* decompose $\vec r = \vec r_\parallel + \vec r_\perp$ with $\vec r_\parallel = (\vec u_1\cdot\vec r)\vec u_1$ and $\vec r_\perp \perp \vec u_1$. Then $\vec u_1\,\vec r_\parallel\,\vec u_1 = (\vec u_1\cdot\vec r)\,\vec u_1^3 = -(\vec u_1\cdot\vec r)\vec u_1 = -\vec r_\parallel$, because $\vec u_1^3 = \vec u_1\vec u_1^2 = -\vec u_1$; and for the orthogonal part $\vec u_1\,\vec r_\perp = \vec u_1\times\vec r_\perp$, so $\vec u_1\,\vec r_\perp\,\vec u_1 = (\vec u_1\times\vec r_\perp)\times\vec u_1 = \vec r_\perp$. Summing gives the identity. Therefore
+*Proof:* decompose $\vec r = \vec r_\parallel + \vec r_\perp$ with $\vec r_\parallel = (\vec u_x\cdot\vec r)\vec u_x$ and $\vec r_\perp \perp \vec u_x$. Then $\vec u_x\,\vec r_\parallel\,\vec u_x = (\vec u_x\cdot\vec r)\,\vec u_x^3 = -(\vec u_x\cdot\vec r)\vec u_x = -\vec r_\parallel$, because $\vec u_x^3 = \vec u_x\vec u_x^2 = -\vec u_x$; and for the orthogonal part $\vec u_x\,\vec r_\perp = \vec u_x\times\vec r_\perp$, so $\vec u_x\,\vec r_\perp\,\vec u_x = (\vec u_x\times\vec r_\perp)\times\vec u_x = \vec r_\perp$. Summing gives the identity. Therefore
 $$
 \alpha\,\tilde{\rho}\,\alpha
-= \tfrac{1}{2}\left(e_0 - i\,\vec u_1\,\vec r\,\vec u_1\right)
-= \tfrac{1}{2}\left(e_0 - i\vec r + 2i(\vec u_1\cdot\vec r)\,\vec u_1\right),
+= \tfrac{1}{2}\left(e_t - i\,\vec u_x\,\vec r\,\vec u_x\right)
+= \tfrac{1}{2}\left(e_t - i\vec r + 2i(\vec u_x\cdot\vec r)\,\vec u_x\right),
 $$
 and hence
 $$
 \tilde\Pi_1\tilde{\rho}\tilde\Pi_1 + \tilde\Pi_2\tilde{\rho}\tilde\Pi_2
 = \tfrac{1}{2}\left(\tilde{\rho} + \alpha\tilde{\rho}\alpha\right)
-= \tfrac{1}{2}\left(e_0 + i(\vec u_1\cdot\vec r)\,\vec u_1\right).
+= \tfrac{1}{2}\left(e_t + i(\vec u_x\cdot\vec r)\,\vec u_x\right).
 $$
 Combining with the mixture,
 $$
-\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = \tfrac{1}{2}\left(e_0 + i\,\vec r'\right),
+\boxed{\;\Phi^{\mathrm{deph}}_p(\tilde{\rho}) = \tfrac{1}{2}\left(e_t + i\,\vec r'\right),
 \qquad
-\vec r' = (1-p)\,\vec r + p\,(\vec u_1\cdot\vec r)\,\vec u_1.\;}
+\vec r' = (1-p)\,\vec r + p\,(\vec u_x\cdot\vec r)\,\vec u_x.\;}
 $$
-The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. At $p=0$ the channel is the identity; at $p=1$ it is the projection $\vec r \mapsto (\vec u_1\cdot\vec r)\vec u_1$, the "measure-and-forget" channel of the parent.
+The transverse components of the Bloch vector are multiplied by $1-p$, while the longitudinal component is untouched. At $p=0$ the channel is the identity; at $p=1$ it is the projection $\vec r \mapsto (\vec u_x\cdot\vec r)\vec u_x$, the "measure-and-forget" channel of the parent.
 
-**Special case $\vec u_1 = e_3$.** The Kraus operators are $\tilde{K}_0 = \sqrt{1-p}\,e_0$, $\tilde{K}_1 = \tfrac{1}{2}\sqrt{p}\,(e_0 + ie_3)$, $\tilde{K}_2 = \tfrac{1}{2}\sqrt{p}\,(e_0 - ie_3)$, and the Bloch map is $\vec r' = (1-p)(r_1 e_1 + r_2 e_2) + r_3 e_3$.
+**Special case $\vec u_x = \vec e_z$.** The Kraus operators are $\tilde{K}_0 = \sqrt{1-p}\,e_t$, $\tilde{K}_1 = \tfrac{1}{2}\sqrt{p}\,(e_t + i\vec e_z)$, $\tilde{K}_2 = \tfrac{1}{2}\sqrt{p}\,(e_t - i\vec e_z)$, and the Bloch map is $\vec r' = (1-p)(r_1 \vec e_x + r_2 \vec e_y) + r_3 \vec e_z$.
 
 ## Problem 2: The Kraus Rank of Dephasing
 
 **Problem.** Compute the Choi matrix of $\Phi^{\mathrm{deph}}_p$ in the computational basis and determine its rank. Deduce the minimal Kraus rank, exhibit a minimal Kraus representation, and decide whether the three-operator representation of Problem 1 is minimal.
 
-**Solution.** The rank of the Choi matrix is invariant under unitary conjugation, and dephasing along any unit axis is unitarily equivalent to dephasing along $e_3$; we therefore fix $\vec u_1 = e_3$. Let $E_{jk} = |j\rangle\langle k|$ be the matrix units of the computational basis, expressed in the algebra as
+**Solution.** The rank of the Choi matrix is invariant under unitary conjugation, and dephasing along any unit axis is unitarily equivalent to dephasing along $\vec e_z$; we therefore fix $\vec u_x = \vec e_z$. Let $E_{jk} = |j\rangle\langle k|$ be the matrix units of the computational basis, expressed in the algebra as
 $$
-E_{00} = \tfrac{1}{2}(e_0 + ie_3), \quad
-E_{11} = \tfrac{1}{2}(e_0 - ie_3), \quad
-E_{01} = \tfrac{1}{2}(ie_1 - e_2), \quad
-E_{10} = \tfrac{1}{2}(ie_1 + e_2).
+E_{00} = \tfrac{1}{2}(e_t + i\vec e_z), \quad
+E_{11} = \tfrac{1}{2}(e_t - i\vec e_z), \quad
+E_{01} = \tfrac{1}{2}(i\vec e_x - \vec e_y), \quad
+E_{10} = \tfrac{1}{2}(i\vec e_x + \vec e_y).
 $$
-These are the elements the parent denotes $\tilde{E}_{jk}$; they satisfy $\mathrm{Tr}(E_{jk}E_{lm}) = \delta_{kl}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_0 - ie_3)$ are exactly $E_{00}$ and $E_{11}$; the element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
+These are the elements the parent denotes $\tilde{E}_{jk}$; they satisfy $\mathrm{Tr}(E_{jk}E_{lm}) = \delta_{kl}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
 $$
 \Phi(E_{00}) = E_{00}, \qquad \Phi(E_{11}) = E_{11}, \qquad \Phi(E_{01}) = (1-p)\,E_{01}, \qquad \Phi(E_{10}) = (1-p)\,E_{10},
 $$
@@ -122,17 +122,17 @@ $$
 $$
 By the parent's rank theorem, the **minimal Kraus rank is two** for $0<p<2$, and a minimal representation is
 $$
-\tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_0, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\vec u_1 .
+\tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_t, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\vec u_x .
 $$
-At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\vec u_1$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
+At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\vec u_x$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
 
-Trace preservation holds because $(i\vec u_1)^{*}(i\vec u_1) = (i\vec u_1)^2 = i^2\vec u_1^2 = e_0$, so $\tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 = (1-\tfrac{p}{2})e_0 + \tfrac{p}{2}e_0 = e_0$. The action is
+Trace preservation holds because $(i\vec u_x)^{*}(i\vec u_x) = (i\vec u_x)^2 = i^2\vec u_x^2 = e_t$, so $\tilde{K}_0^{*}\tilde{K}_0 + \tilde{K}_1^{*}\tilde{K}_1 = (1-\tfrac{p}{2})e_t + \tfrac{p}{2}e_t = e_t$. The action is
 $$
-\Phi(\tilde{\rho}) = \left(1-\tfrac{p}{2}\right)\tilde{\rho} + \tfrac{p}{2}\,(i\vec u_1)\,\tilde{\rho}\,(i\vec u_1).
+\Phi(\tilde{\rho}) = \left(1-\tfrac{p}{2}\right)\tilde{\rho} + \tfrac{p}{2}\,(i\vec u_x)\,\tilde{\rho}\,(i\vec u_x).
 $$
-Since $(i\vec u_1)\tilde{\rho}(i\vec u_1) = -\vec u_1\tilde{\rho}\vec u_1 = \tfrac{1}{2}\left(e_0 - i\vec r + 2i(\vec u_1\cdot\vec r)\vec u_1\right)$, this reproduces $\vec r' = (1-p)\vec r + p(\vec u_1\cdot\vec r)\vec u_1$, as required.
+Since $(i\vec u_x)\tilde{\rho}(i\vec u_x) = -\vec u_x\tilde{\rho}\vec u_x = \tfrac{1}{2}\left(e_t - i\vec r + 2i(\vec u_x\cdot\vec r)\vec u_x\right)$, this reproduces $\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, as required.
 
-**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_1 + \tilde\Pi_2)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\vec u_1)\tilde{\rho}(i\vec u_1)^{*}$, of Kraus rank one and reversible.
+**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde\Pi_1 + \tilde\Pi_2)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\vec u_x)\tilde{\rho}(i\vec u_x)^{*}$, of Kraus rank one and reversible.
 
 ## Problem 3: A Positive Map That Is Not Completely Positive
 
@@ -140,13 +140,13 @@ Since $(i\vec u_1)\tilde{\rho}(i\vec u_1) = -\vec u_1\tilde{\rho}\vec u_1 = \tfr
 
 **Solution.** On the matrix units $\Phi_T$ acts by $E_{jk} \mapsto E_{kj}$; equivalently, on a state,
 $$
-\Phi_T\!\left(\tfrac{1}{2}(e_0 + i\vec r)\right) = \tfrac{1}{2}\left(e_0 + i(r_1 e_1 - r_2 e_2 + r_3 e_3)\right),
+\Phi_T\!\left(\tfrac{1}{2}(e_t + i\vec r)\right) = \tfrac{1}{2}\left(e_t + i(r_1 \vec e_x - r_2 \vec e_y + r_3 \vec e_z)\right),
 $$
 because $\sigma_1$ and $\sigma_3$ are real while $\sigma_2$ is imaginary. So $\Phi_T$ acts on the Bloch ball by the reflection
 $$
 (r_1, r_2, r_3) \longmapsto (r_1, -r_2, r_3).
 $$
-This map is **trace preserving** (the transpose fixes $e_0$ and preserves the trace) and **positive**: the reflection is an isometry of $\mathbb{R}^3$ that maps the ball $|\vec r|\leq 1$ onto itself, so it maps states to states.
+This map is **trace preserving** (the transpose fixes $e_t$ and preserves the trace) and **positive**: the reflection is an isometry of $\mathbb{R}^3$ that maps the ball $|\vec r|\leq 1$ onto itself, so it maps states to states.
 
 To test complete positivity, compute the Choi matrix. Transposition swaps the off-diagonal units, $\Phi_T(E_{01}) = E_{10}$ and $\Phi_T(E_{10}) = E_{01}$, while fixing $E_{00}$ and $E_{11}$. Hence, using $E_{01}\otimes E_{10} = |01\rangle\langle 10|$ and $E_{10}\otimes E_{01} = |10\rangle\langle 01|$,
 $$
@@ -180,29 +180,29 @@ K_0 = \begin{pmatrix}1 & 0\\ 0 & \sqrt{1-\gamma}\end{pmatrix},
 \qquad
 K_1 = \begin{pmatrix}0 & \sqrt{\gamma}\\ 0 & 0\end{pmatrix} = \sqrt{\gamma}\,|0\rangle\langle 1| .
 $$
-Writing $s = \sqrt{1-\gamma} \in [0,1]$ and using $\sigma_3 = ie_3$ and $|0\rangle\langle 1| = \tfrac{1}{2}(ie_1 - e_2)$, these translate to
+Writing $s = \sqrt{1-\gamma} \in [0,1]$ and using $\sigma_3 = i\vec e_z$ and $|0\rangle\langle 1| = \tfrac{1}{2}(i\vec e_x - \vec e_y)$, these translate to
 $$
-\tilde{K}_0 = \frac{1+s}{2}\,e_0 + i\,\frac{1-s}{2}\,e_3 \;\in \mathbb{M}_+,
+\tilde{K}_0 = \frac{1+s}{2}\,e_t + i\,\frac{1-s}{2}\,\vec e_z \;\in \mathbb{M}_+,
 \qquad
-\tilde{K}_1 = \frac{\sqrt{\gamma}}{2}\left(i e_1 - e_2\right) \in \mathbb{B}.
+\tilde{K}_1 = \frac{\sqrt{\gamma}}{2}\left(i \vec e_x - \vec e_y\right) \in \mathbb{B}.
 $$
 Here $\tilde{K}_0$ is Hermitian (it is an element of $\mathbb{M}_+$), while $\tilde{K}_1$ is not. Trace preservation follows from
 $$
-\tilde{K}_0^{*}\tilde{K}_0 = \frac{1+s^2}{2}\,e_0 + i\,\frac{1-s^2}{2}\,e_3,
+\tilde{K}_0^{*}\tilde{K}_0 = \frac{1+s^2}{2}\,e_t + i\,\frac{1-s^2}{2}\,\vec e_z,
 \qquad
-\tilde{K}_1^{*}\tilde{K}_1 = \frac{\gamma}{2}\left(e_0 - ie_3\right),
+\tilde{K}_1^{*}\tilde{K}_1 = \frac{\gamma}{2}\left(e_t - i\vec e_z\right),
 $$
-whose sum is $e_0$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{\rho}\tilde{K}_0^{*} + \tilde{K}_1\tilde{\rho}\tilde{K}_1^{*}$ for $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ gives $\tfrac{1}{2}(e_0 + i\vec r')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_0 + ie_3)$ that is transferred to the ground state.
+whose sum is $e_t$, since $1 + s^2 + \gamma = 2$ and $1 - s^2 - \gamma = 0$. A direct quaternion expansion of $\tilde{K}_0\tilde{\rho}\tilde{K}_0^{*} + \tilde{K}_1\tilde{\rho}\tilde{K}_1^{*}$ for $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ gives $\tfrac{1}{2}(e_t + i\vec r')$ with exactly the Bloch map stated above; the $\tilde{K}_1$ term contributes the population $\tfrac{\gamma}{4}(1-r_3)(e_t + i\vec e_z)$ that is transferred to the ground state.
 
 **Fixed states.** Set $r_1 = r_2 = 0$ and $z = \gamma + (1-\gamma)z$, giving $z = 1$. For every $\gamma>0$ the channel has the **unique** fixed state
 $$
-\tilde{\rho}_* = \tfrac{1}{2}\left(e_0 + ie_3\right) = \tilde\Pi_1(\vec u_z),
+\tilde{\rho}_* = \tfrac{1}{2}\left(e_t + i\vec e_z\right) = \tilde\Pi_1(\vec u_z),
 $$
 the pure ground state. For $\gamma = 0$ the channel is the identity and every state is fixed.
 
 **Non-unitality.** The channel does not fix the maximally mixed state:
 $$
-\Phi\left(\tfrac{1}{2}e_0\right) = \tfrac{1}{2}\left(e_0 + i\gamma e_3\right) \neq \tfrac{1}{2}e_0 .
+\Phi\left(\tfrac{1}{2}e_t\right) = \tfrac{1}{2}\left(e_t + i\gamma \vec e_z\right) \neq \tfrac{1}{2}e_t .
 $$
 The centre of the Bloch ball is moved to the Bloch vector $(0,0,\gamma)$. This is the structural difference from dephasing, which is unital.
 
@@ -230,27 +230,27 @@ $$
 $$
 so $\{B_l A_m\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(\Phi_2\circ\Phi_1) \leq \mathrm{rank}(\Phi_1)\,\mathrm{rank}(\Phi_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
 
-**Composition of dephasings.** The Bloch map of $\Phi^{\mathrm{deph}}_p$ along $\vec u_1$ is the linear map $D(\vec u_1,p) = (1-p)I + p\,\vec u_1\vec u_1^{\mathsf{T}}$ acting on $\mathbb{R}^3$. Composing two of them,
+**Composition of dephasings.** The Bloch map of $\Phi^{\mathrm{deph}}_p$ along $\vec u_x$ is the linear map $D(\vec u_x,p) = (1-p)I + p\,\vec u_x\vec u_x^{\mathsf{T}}$ acting on $\mathbb{R}^3$. Composing two of them,
 $$
-D(\vec u_2,q)\,D(\vec u_1,p)
+D(\vec u_y,q)\,D(\vec u_x,p)
 = (1-p)(1-q)\,I
-+ p(1-q)\,\vec u_1\vec u_1^{\mathsf{T}}
-+ q(1-p)\,\vec u_2\vec u_2^{\mathsf{T}}
-+ pq\,(\vec u_2\cdot\vec u_1)\,\vec u_2\vec u_1^{\mathsf{T}} .
++ p(1-q)\,\vec u_x\vec u_x^{\mathsf{T}}
++ q(1-p)\,\vec u_y\vec u_y^{\mathsf{T}}
++ pq\,(\vec u_y\cdot\vec u_x)\,\vec u_y\vec u_x^{\mathsf{T}} .
 $$
-For **parallel axes**, $\vec u_2 = \vec u_1$, the projector identity $\vec u_1\vec u_1^{\mathsf{T}}\vec u_1\vec u_1^{\mathsf{T}} = \vec u_1\vec u_1^{\mathsf{T}}$ collapses the sum to
+For **parallel axes**, $\vec u_y = \vec u_x$, the projector identity $\vec u_x\vec u_x^{\mathsf{T}}\vec u_x\vec u_x^{\mathsf{T}} = \vec u_x\vec u_x^{\mathsf{T}}$ collapses the sum to
 $$
-D(\vec u_1,q)\,D(\vec u_1,p) = D(\vec u_1,\,p+q-pq),
+D(\vec u_x,q)\,D(\vec u_x,p) = D(\vec u_x,\,p+q-pq),
 $$
 so the composite is again a dephasing channel, with effective parameter $p' = p+q-pq$; its Kraus rank is at most two.
 
-For **orthogonal axes and full dephasing**, take $\vec u_1 = e_3$, $\vec u_2 = e_1$ and $p = q = 1$. Then $D(e_3,1) = e_3e_3^{\mathsf{T}}$, $D(e_1,1) = e_1e_1^{\mathsf{T}}$, and
+For **orthogonal axes and full dephasing**, take $\vec u_x = \vec e_z$, $\vec u_y = \vec e_x$ and $p = q = 1$. Then $D(\vec e_z,1) = \vec e_z\vec e_z^{\mathsf{T}}$, $D(\vec e_x,1) = \vec e_x\vec e_x^{\mathsf{T}}$, and
 $$
-D(e_1,1)\,D(e_3,1) = e_1\left(e_1^{\mathsf{T}}e_3\right)e_3^{\mathsf{T}} = 0 .
+D(\vec e_x,1)\,D(\vec e_z,1) = \vec e_x\left(\vec e_x^{\mathsf{T}}\vec e_z\right)\vec e_z^{\mathsf{T}} = 0 .
 $$
-The composite is the **completely depolarizing channel**, $\tilde{\rho} \mapsto \tfrac{1}{2}e_0$ for every state: every Bloch vector is sent to the origin. Its Choi matrix is
+The composite is the **completely depolarizing channel**, $\tilde{\rho} \mapsto \tfrac{1}{2}e_t$ for every state: every Bloch vector is sent to the origin. Its Choi matrix is
 $$
-J = \sum_{jk} E_{jk}\otimes\Phi(E_{jk}) = \sum_{k} E_{kk}\otimes \tfrac{1}{2}e_0 = \tfrac{1}{2}I_4,
+J = \sum_{jk} E_{jk}\otimes\Phi(E_{jk}) = \sum_{k} E_{kk}\otimes \tfrac{1}{2}e_t = \tfrac{1}{2}I_4,
 $$
 of rank four. Thus composing two rank-two channels produces a rank-four channel, saturating the qubit bound $4 = 2\times 2$. More generally, for two distinct axes and $0<p,q<1$ the composite also saturates the bound and has Kraus rank four (checked numerically over the parameter range); the rank drops to two only when the axes are parallel or one of the channels is trivial.
 
@@ -258,9 +258,9 @@ of rank four. Thus composing two rank-two channels produces a rank-four channel,
 
 **Problem.** Show that dephasing contracts the Bloch ball, $|\vec r'| \leq |\vec r|$, that it does not increase the purity, and that it does not decrease the von Neumann entropy. Evaluate a concrete case.
 
-**Solution.** Decompose $\vec r = \vec r_\parallel + \vec r_\perp$ with $\vec r_\parallel = (\vec u_1\cdot\vec r)\vec u_1$ and $\vec r_\perp \perp \vec u_1$. From the Bloch map,
+**Solution.** Decompose $\vec r = \vec r_\parallel + \vec r_\perp$ with $\vec r_\parallel = (\vec u_x\cdot\vec r)\vec u_x$ and $\vec r_\perp \perp \vec u_x$. From the Bloch map,
 $$
-\vec r' = (1-p)\vec r + p(\vec u_1\cdot\vec r)\vec u_1 = (1-p)\,\vec r_\perp + \vec r_\parallel,
+\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x = (1-p)\,\vec r_\perp + \vec r_\parallel,
 $$
 so
 $$
@@ -287,9 +287,9 @@ so $S$ is a decreasing function of $x$. Since $|\vec r'| \leq |\vec r|$,
 $$
 S(\tilde{\rho}') \geq S(\tilde{\rho}),
 $$
-with equality if and only if $p=0$ or the state is on the dephasing axis. Dephasing strictly increases the entropy of every off-axis state, for every $0 < p \leq 1$. This is consistent with the channel being unital: $\Phi(\tfrac{1}{2}e_0) = \tfrac{1}{2}e_0$, and unital channels are mixedness-increasing.
+with equality if and only if $p=0$ or the state is on the dephasing axis. Dephasing strictly increases the entropy of every off-axis state, for every $0 < p \leq 1$. This is consistent with the channel being unital: $\Phi(\tfrac{1}{2}e_t) = \tfrac{1}{2}e_t$, and unital channels are mixedness-increasing.
 
-**Concrete case.** Take the pure state $\tilde{\rho} = \tilde\Pi_1(e_1) = \tfrac{1}{2}(e_0 + ie_1)$, with $\vec r = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $e_3$ with $p = \tfrac{1}{2}$. Then $\vec r' = (\tfrac{1}{2},0,0)$, so $|\vec r'| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
+**Concrete case.** Take the pure state $\tilde{\rho} = \tilde\Pi_1(\vec e_x) = \tfrac{1}{2}(e_t + i\vec e_x)$, with $\vec r = (1,0,0)$, purity $1$, and entropy $0$. Dephase along $\vec e_z$ with $p = \tfrac{1}{2}$. Then $\vec r' = (\tfrac{1}{2},0,0)$, so $|\vec r'| = \tfrac{1}{2}$, the eigenvalues are $\lambda_\pm = \tfrac{3}{4}, \tfrac{1}{4}$, and
 $$
 S = -\tfrac{3}{4}\log\tfrac{3}{4} - \tfrac{1}{4}\log\tfrac{1}{4}
 = \tfrac{3}{4}\log\tfrac{4}{3} + \tfrac{1}{4}\log 4 \approx 0.562335 \ \text{nats},
@@ -300,12 +300,12 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 
 We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.
 
-1. **Dephasing as a Kraus sum.** The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_0$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r' = (1-p)\vec r + p(\vec u_1\cdot\vec r)\vec u_1$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
-2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_0$, $\sqrt{\tfrac{p}{2}}\,i\vec u_1$ is a minimal set.
+1. **Dephasing as a Kraus sum.** The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_t$, $\sqrt{p}\,\tilde\Pi_1$, $\sqrt{p}\,\tilde\Pi_2$ and acts on the Bloch vector as $\vec r' = (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
+2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_t$, $\sqrt{\tfrac{p}{2}}\,i\vec u_x$ is a minimal set.
 3. **Positive but not completely positive.** The transpose map acts on the Bloch ball as $(r_1,r_2,r_3)\mapsto(r_1,-r_2,r_3)$, is positive and trace preserving, and has Choi matrix equal to the swap operator, with spectrum $\{1,1,1,-1\}$. It is not a channel.
-4. **Amplitude damping.** With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_0 + i\tfrac{1-s}{2}e_3$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(ie_1 - e_2)$; the channel is non-unital, has the unique fixed state $\tilde\Pi_1(\vec u_z)$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.
+4. **Amplitude damping.** With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_t + i\tfrac{1-s}{2}\vec e_z$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(i\vec e_x - \vec e_y)$; the channel is non-unital, has the unique fixed state $\tilde\Pi_1(\vec u_z)$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.
 5. **Composition and rank.** Composing channels multiplies Kraus operators, $B_lA_m$, and the Kraus rank of a composition is at most the product of the ranks. Two dephasings compose to a dephasing along the common axis with $p' = p+q-pq$ when the axes are parallel, but to the rank-four completely depolarizing channel when they are orthogonal and full.
-6. **Contraction and entropy.** Dephasing contracts the Bloch ball, $|\vec r'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\vec r|^2$, lowers the purity, and raises the entropy, since $dS/d|\vec r| = \tfrac{1}{2}\log\frac{1-|\vec r|}{1+|\vec r|} \leq 0$. For $\tilde\Pi_1(e_1)$ dephased along $e_3$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.
+6. **Contraction and entropy.** Dephasing contracts the Bloch ball, $|\vec r'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\vec r|^2$, lowers the purity, and raises the entropy, since $dS/d|\vec r| = \tfrac{1}{2}\log\frac{1-|\vec r|}{1+|\vec r|} \leq 0$. For $\tilde\Pi_1(\vec e_x)$ dephased along $\vec e_z$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.
 
 The two canonical channels illustrate the two faces of irreversibility. Dephasing is unital and destroys coherence without changing populations; amplitude damping is non-unital and drives the state toward a pure ground state. Both have Kraus rank two on their physical ranges ($0<p\le1$ for dephasing, $0<\gamma\le1$ for damping), both are irreversible there, and both are instances of the parent's dichotomy: reversible if and only if Kraus rank one.
 
@@ -315,17 +315,17 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State; $\vec r$ the Bloch vector |
+| $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ | State; $\vec r$ the Bloch vector |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
-| $\tilde\Pi_{1,2}(\vec u_1) = \tfrac{1}{2}(e_0 \pm i\vec u_1)$ | Idempotents along $\vec u_1$ |
+| $\tilde\Pi_{1,2}(\vec u_x) = \tfrac{1}{2}(e_t \pm i\vec u_x)$ | Idempotents along $\vec u_x$ |
 | $\Phi(\tilde{Q}) = \sum_l \tilde{K}_l\tilde{Q}\tilde{K}_l^{*}$ | Kraus representation |
-| $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_0$ | Trace-preservation condition |
+| $\sum_l \tilde{K}_l^{*}\tilde{K}_l = e_t$ | Trace-preservation condition |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $J(\Phi) = \sum_{jk}\tilde{E}_{jk}\otimes\Phi(\tilde{E}_{jk})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
-| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u_1$ |
-| $\vec r \mapsto (1-p)\vec r + p(\vec u_1\cdot\vec r)\vec u_1$ | Dephasing Bloch map |
+| $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u_x$ |
+| $\vec r \mapsto (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$ | Dephasing Bloch map |
 | $E_{jk} = \lvert j\rangle\langle k\rvert$ | Matrix units of the computational basis |
 | $\gamma$ | Amplitude-damping parameter |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+\lvert\vec r\rvert^2)$ | Purity |

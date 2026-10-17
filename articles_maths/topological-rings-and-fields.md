@@ -26,19 +26,19 @@ are continuous, where $R \times R$ carries the product topology.
 
 **(a)** For each $x \in R$ the translations $y \mapsto y + x$ and $y \mapsto -y + x$ are homeomorphisms; hence the topology is determined by the filter of neighbourhoods of $0$.
 
-**(b)** If $U$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V + V \subseteq U$ and $V \subseteq -U$.
+**(b)** If $\Omega$ is a neighbourhood of $0$ then there is a neighbourhood $V$ of $0$ with $V + V \subseteq \Omega$ and $V \subseteq -\Omega$.
 
-**(c)** For every neighbourhood $U$ of $0$ there is a neighbourhood $V$ of $0$ with $V \cdot V \subseteq U$.
+**(c)** For every neighbourhood $\Omega$ of $0$ there is a neighbourhood $V$ of $0$ with $V \cdot V \subseteq \Omega$.
 
 **(d)** The closure $\overline{\{0\}}$ is the intersection of all neighbourhoods of $0$ and is a closed ideal of $R$; the quotient $R/\overline{\{0\}}$ is Hausdorff. In particular
 
 $$
-R \text{ is Hausdorff} \iff \overline{\{0\}} = \{0\} \iff \bigcap_{U \ni 0} U = \{0\}.
+R \text{ is Hausdorff} \iff \overline{\{0\}} = \{0\} \iff \bigcap_{\Omega \ni 0} \Omega = \{0\}.
 $$
 
 **(e)** $R$ is Hausdorff if and only if it is $T_1$, and if and only if it is $T_0$.
 
-**Proof.** (a) is the continuity of addition in one variable and the existence of inverses. (b) is the continuity of addition at $(0,0)$ and of negation. (c) is the continuity of multiplication at $(0,0)$. (d) The complement of a neighbourhood of $0$ is closed, so $\overline{\{0\}} \subseteq U$ for every neighbourhood $U$; conversely any point in all neighborhoods of $0$ cannot be separated from $0$. Adding and multiplying elements of $\overline{\{0\}}$ by elements of $R$ keeps them in every neighbourhood of $0$ by continuity, so $\overline{\{0\}}$ is an ideal; the quotient is Hausdorff because its zero element has closure $\{0\}$. (e) In the additive topological group $R$, the $T_0$, $T_1$ and $T_2$ conditions are equivalent, since translating a pair of distinct points to $(x-y, 0)$ and applying the group operations separates them.
+**Proof.** (a) is the continuity of addition in one variable and the existence of inverses. (b) is the continuity of addition at $(0,0)$ and of negation. (c) is the continuity of multiplication at $(0,0)$. (d) The complement of a neighbourhood of $0$ is closed, so $\overline{\{0\}} \subseteq \Omega$ for every neighbourhood $\Omega$; conversely any point in all neighborhoods of $0$ cannot be separated from $0$. Adding and multiplying elements of $\overline{\{0\}}$ by elements of $R$ keeps them in every neighbourhood of $0$ by continuity, so $\overline{\{0\}}$ is an ideal; the quotient is Hausdorff because its zero element has closure $\{0\}$. (e) In the additive topological group $R$, the $T_0$, $T_1$ and $T_2$ conditions are equivalent, since translating a pair of distinct points to $(x-y, 0)$ and applying the group operations separates them.
 
 **Corollary.** Every topological ring has a Hausdorff quotient, namely $R/\overline{\{0\}}$, and the ideal $\overline{\{0\}}$ is contained in every neighbourhood of $0$; it is the obstruction to Hausdorffness.
 

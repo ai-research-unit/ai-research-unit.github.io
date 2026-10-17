@@ -7,7 +7,7 @@ A topological ring $R$ carries two structures at once, and an operator on it mus
 
 The article assumes the ring $R$, its ideals, the unit group, the annihilators and the inner conjugation from *Rings* and *Ring and Field Automorphisms*, and the topological ring, its neighbourhoods of zero, its linear topologies, the closure of zero and the $I$-adic completion from *Topological Rings and Fields*. It uses the abstract one-sided multiplications, their composition and the description of the operators they generate from *Left and Right Multiplication in a Ring* only to name them; their topological treatment is *The Left and Right Multiplication Operators on a Topological Ring*. No involution of the ring, no signed operator and no adjoint is used here: they belong to the later groups of the category, and the present article supplies them with the continuous translations and the natural pairing. No measure, no norm and no form occurs; the Haar integral and the operator norm are named once, at the boundary, and never used.
 
-Throughout, $R$ is a topological ring, Hausdorff when a closedness statement is made, with group of units $R^\times$ and centre $Z(R)$; $\operatorname{Map}_c(R)$ is the monoid of continuous self-maps, $\operatorname{Homeo}(R)$ the group of homeomorphisms, $\operatorname{End}_c(R)$ the continuous additive endomorphisms, $\operatorname{Aut}(R)$ and $\operatorname{Aut}_c(R)$ the automorphisms and the continuous automorphisms, and $\operatorname{Inn}(R)$ the inner automorphisms $c_u(x) = uxu^{-1}$.
+Throughout, $R$ is a topological ring, Hausdorff when a closedness statement is made, with group of units $R^\times$ and centre $Z(R)$; $\operatorname{Map}_c(R)$ is the monoid of continuous self-maps, $\operatorname{Homeo}(R)$ the group of homeomorphisms, $\operatorname{End}_c(R)$ the continuous additive endomorphisms, $\operatorname{Aut}(R)$ and $\operatorname{Aut}_c(R)$ the automorphisms and the continuous automorphisms, and $\operatorname{Inn}(R)$ the inner automorphisms $c_\lambda(x) = uxu^{-1}$.
 
 ## The Continuous Operators
 
@@ -25,11 +25,11 @@ Every operator of the later groups of this category is additive, hence lies in $
 
 ### The Continuous Automorphisms
 
-**Definition.** A **continuous automorphism** of $R$ is a ring automorphism that is continuous; the continuous automorphisms form a subgroup $\operatorname{Aut}_c(R)$ of $\operatorname{Aut}(R)$ and a subgroup of $\operatorname{Homeo}(R)$. The **inner automorphisms** $c_u(x) = uxu^{-1}$, for $u \in R^\times$, form a normal subgroup $\operatorname{Inn}(R) \subseteq \operatorname{Aut}_c(R)$.
+**Definition.** A **continuous automorphism** of $R$ is a ring automorphism that is continuous; the continuous automorphisms form a subgroup $\operatorname{Aut}_c(R)$ of $\operatorname{Aut}(R)$ and a subgroup of $\operatorname{Homeo}(R)$. The **inner automorphisms** $c_\lambda(x) = uxu^{-1}$, for $\lambda \in R^\times$, form a normal subgroup $\operatorname{Inn}(R) \subseteq \operatorname{Aut}_c(R)$.
 
-**Proposition.** $\operatorname{Aut}_c(R) = \operatorname{Aut}(R) \cap \operatorname{Homeo}(R)$, and $\operatorname{Inn}(R) \subseteq \operatorname{Aut}_c(R)$, the assignment $u \mapsto c_u$ being a homomorphism $R^\times \to \operatorname{Aut}_c(R)$ with kernel the central units $Z(R) \cap R^\times$, so that $\operatorname{Inn}(R) \cong R^\times/(Z(R)\cap R^\times)$.
+**Proposition.** $\operatorname{Aut}_c(R) = \operatorname{Aut}(R) \cap \operatorname{Homeo}(R)$, and $\operatorname{Inn}(R) \subseteq \operatorname{Aut}_c(R)$, the assignment $\lambda \mapsto c_\lambda$ being a homomorphism $R^\times \to \operatorname{Aut}_c(R)$ with kernel the central units $Z(R) \cap R^\times$, so that $\operatorname{Inn}(R) \cong R^\times/(Z(R)\cap R^\times)$.
 
-**Proof.** An automorphism that is a homeomorphism has a continuous inverse, so it is a continuous automorphism; conversely a continuous automorphism is a continuous bijection and its inverse is continuous, because a continuous bijective map whose inverse is a ring homomorphism is a homeomorphism as soon as the ring structure is taken into account: the inverse is additive and multiplicative and the map is continuous, so it is continuous as the inverse of a homeomorphism of the underlying topological space. The inner automorphism $c_u$ is a composite of two continuous maps — left multiplication by $u$ and right multiplication by $u^{-1}$ — and it is an automorphism, so it is a continuous automorphism. The assignment is a homomorphism because $c_u \circ c_v = c_{uv}$, and its kernel is the set of units acting trivially, which is $Z(R) \cap R^\times$.
+**Proof.** An automorphism that is a homeomorphism has a continuous inverse, so it is a continuous automorphism; conversely a continuous automorphism is a continuous bijection and its inverse is continuous, because a continuous bijective map whose inverse is a ring homomorphism is a homeomorphism as soon as the ring structure is taken into account: the inverse is additive and multiplicative and the map is continuous, so it is continuous as the inverse of a homeomorphism of the underlying topological space. The inner automorphism $c_\lambda$ is a composite of two continuous maps — left multiplication by $\lambda$ and right multiplication by $\lambda^{-1}$ — and it is an automorphism, so it is a continuous automorphism. The assignment is a homomorphism because $c_\lambda \circ c_v = c_{uv}$, and its kernel is the set of units acting trivially, which is $Z(R) \cap R^\times$.
 
 ## The Units and their Operators
 
@@ -39,9 +39,9 @@ Every operator of the later groups of this category is additive, hence lies in $
 
 So the units of $R$ are exactly the elements whose one-sided multiplications are invertible in the operator layer; the non-units give operators that are continuous but not homeomorphisms, and they are the operators that must be handled by closure rather than by inversion.
 
-**Proposition (the units are a topological group when they are open).** If $R^\times$ is open in $R$, then $R^\times$ is a topological group for the subspace topology, the multiplication being the restriction of the multiplication of $R$ and the inversion $u \mapsto u^{-1}$ being continuous on $R^\times$. The group $R^\times$ is open when $R$ is a division ring, when $R$ is a local ring whose maximal ideal is open, and in particular when $R$ is the valuation ring of a valued field.
+**Proposition (the units are a topological group when they are open).** If $R^\times$ is open in $R$, then $R^\times$ is a topological group for the subspace topology, the multiplication being the restriction of the multiplication of $R$ and the inversion $\lambda \mapsto \lambda^{-1}$ being continuous on $R^\times$. The group $R^\times$ is open when $R$ is a division ring, when $R$ is a local ring whose maximal ideal is open, and in particular when $R$ is the valuation ring of a valued field.
 
-**Proof.** When $R^\times$ is open, the restrictions of the ring operations are continuous on $R^\times \times R^\times$ and the identity lies in $R^\times$. For the inversion, $u^{-1} - v^{-1} = u^{-1}(v - u)v^{-1}$ shows that $u \mapsto u^{-1}$ is continuous wherever it is defined and the inverses are bounded in a neighbourhood of a given unit; a division ring has $R^\times = R \setminus \{0\}$, open because $\{0\}$ is closed in a Hausdorff ring; a local ring has $R^\times = R \setminus \mathrm{M}$ with $\mathrm{M}$ the unique maximal ideal, open when $\mathrm{M}$ is open; a valuation ring is local with maximal ideal $\mathrm{M} = \{x : \lvert x \rvert < 1\}$, open in the metric topology.
+**Proof.** When $R^\times$ is open, the restrictions of the ring operations are continuous on $R^\times \times R^\times$ and the identity lies in $R^\times$. For the inversion, $\lambda^{-1} - v^{-1} = \lambda^{-1}(v - \lambda)v^{-1}$ shows that $\lambda \mapsto \lambda^{-1}$ is continuous wherever it is defined and the inverses are bounded in a neighbourhood of a given unit; a division ring has $R^\times = R \setminus \{0\}$, open because $\{0\}$ is closed in a Hausdorff ring; a local ring has $R^\times = R \setminus \mathrm{M}$ with $\mathrm{M}$ the unique maximal ideal, open when $\mathrm{M}$ is open; a valuation ring is local with maximal ideal $\mathrm{M} = \{x : \lvert x \rvert < 1\}$, open in the metric topology.
 
 **Remark (the failure in general).** In an arbitrary topological ring the unit group need not be open: on the ring $C(X)$ of continuous functions on a compact space with the topology of uniform convergence the units are the nowhere-vanishing functions, which form a set that can fail to be open, and the group of units is then not a topological group for the subspace topology. The category therefore states the openness as a hypothesis where it is used, and records that on the rings of this part — valued fields, valuation rings, their quotients and completions — it holds.
 
@@ -51,15 +51,15 @@ So the units of $R$ are exactly the elements whose one-sided multiplications are
 
 The operator layer acts on the lattice of ideals, and the action is the reason the layer is interesting for the ring.
 
-**Definition.** For a left ideal $I$, the **left translate** by $a \in R$ is $L_a(I) = aI$, a left ideal; for a right ideal $J$, the **right translate** is $R_a(J) = Ja$, a right ideal; for a two-sided ideal $I$, the **conjugate** by a unit $u$ is $c_u(I) = uIu^{-1}$, and $c_u$ preserves each of the three kinds of ideal.
+**Definition.** For a left ideal $I$, the **left translate** by $a \in R$ is $L_a(I) = aI$, a left ideal; for a right ideal $J$, the **right translate** is $R_a(J) = Ja$, a right ideal; for a two-sided ideal $I$, the **conjugate** by a unit $\lambda$ is $c_\lambda(I) = uIu^{-1}$, and $c_\lambda$ preserves each of the three kinds of ideal.
 
 **Proposition.** A continuous additive endomorphism carries a left ideal into a left ideal, a right ideal into a right ideal and a two-sided ideal into a two-sided ideal exactly when it is multiplicative on the corresponding side; a ring automorphism permutes the ideals of each kind and preserves inclusion, so it is an automorphism of the lattice of left ideals, of right ideals and of two-sided ideals.
 
 **Proof.** A left ideal $I$ is characterised by $RI \subseteq I$; an additive map $T$ with $T(aI) = T(a)T(I) \subseteq T(I)$ for all $a$ preserves left ideals, and this is multiplicativity. An automorphism is invertible and has an inverse of the same kind, so its action on the ideals is a permutation preserving inclusion. The two-sided case is the conjunction of the left and the right.
 
-**Corollary (the action of the units).** The map $u \mapsto c_u$ realises $R^\times/(Z(R)\cap R^\times)$ as a group of automorphisms of the lattice of ideals; on the two-sided ideals it is the trivial action, because $c_u(I) = uIu^{-1} = I$ for a unit $u$ and a two-sided ideal $I$.
+**Corollary (the action of the units).** The map $\lambda \mapsto c_\lambda$ realises $R^\times/(Z(R)\cap R^\times)$ as a group of automorphisms of the lattice of ideals; on the two-sided ideals it is the trivial action, because $c_\lambda(I) = uIu^{-1} = I$ for a unit $\lambda$ and a two-sided ideal $I$.
 
-**Proof.** For a two-sided ideal $I$ and a unit $u$, $uI \subseteq I$ and $Iu^{-1} \subseteq I$, hence $uIu^{-1} \subseteq I$; applying the same to $u^{-1}$ gives $u^{-1}Iu \subseteq I$, that is $I \subseteq uIu^{-1}$, so $c_u(I) = I$. The inner automorphism therefore acts trivially on the two-sided ideals and moves only the one-sided ones.
+**Proof.** For a two-sided ideal $I$ and a unit $\lambda$, $uI \subseteq I$ and $Iu^{-1} \subseteq I$, hence $uIu^{-1} \subseteq I$; applying the same to $\lambda^{-1}$ gives $\lambda^{-1}Iu \subseteq I$, that is $I \subseteq uIu^{-1}$, so $c_\lambda(I) = I$. The inner automorphism therefore acts trivially on the two-sided ideals and moves only the one-sided ones.
 
 **Proposition (the action on the maximal ideals).** A continuous automorphism carries a maximal ideal onto a maximal ideal, a prime ideal onto a prime ideal and a closed ideal onto a closed ideal; the action on the set of maximal ideals is a permutation, and the stabiliser of every maximal ideal contains the inner automorphisms.
 
@@ -84,28 +84,28 @@ The later groups of the category build adjoints, and an adjoint is taken with re
 **Definition.** Let $k$ be a field and $k\{R\}$ the free $k$-module on the set $R$, that is the $k$-vector space of finitely supported functions $R \to k$; write $C(R)$ for the $k$-algebra of continuous functions $R \to k$, carrying the topology of uniform convergence on compacta when $R$ is locally compact. The **natural pairing** of the category is
 
 $$
-\langle\cdot,\cdot\rangle : C(R)\times k\{R\} \longrightarrow k, \qquad \langle f, u\rangle = \sum_{x \in R} f(x)\,u_x ,
+\langle\cdot,\cdot\rangle : C(R)\times k\{R\} \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{x \in R} f(x)\,\lambda_x ,
 $$
 
-the sum being finite because $u$ has finite support.
+the sum being finite because $\lambda$ has finite support.
 
 **Proposition.** The natural pairing is bilinear, it separates points of each side, and it is separately continuous for the topology of $C(R)$ and the discrete topology of $k\{R\}$.
 
-**Proof.** Bilinearity is the bilinearity of the sum. For separation: if $\langle f, u\rangle = 0$ for all $f \in C(R)$ then evaluating at the functions of finite support gives $u = 0$; if $\langle f, u\rangle = 0$ for all $u$ then taking $u = \delta_a$, the basis element at $a$, gives $f(a) = 0$ for every $a$. Separate continuity: for fixed $f$ the functional $u \mapsto \langle f, u\rangle$ depends on finitely many coordinates, hence is continuous for the discrete topology; for fixed $u$ the functional $f \mapsto \langle f, u\rangle$ is a finite linear combination of evaluations, each continuous in the topology of uniform convergence on compacta.
+**Proof.** Bilinearity is the bilinearity of the sum. For separation: if $\langle f, \lambda\rangle = 0$ for all $f \in C(R)$ then evaluating at the functions of finite support gives $\lambda = 0$; if $\langle f, \lambda\rangle = 0$ for all $\lambda$ then taking $\lambda = \delta_a$, the basis element at $a$, gives $f(a) = 0$ for every $a$. Separate continuity: for fixed $f$ the functional $\lambda \mapsto \langle f, \lambda\rangle$ depends on finitely many coordinates, hence is continuous for the discrete topology; for fixed $\lambda$ the functional $f \mapsto \langle f, \lambda\rangle$ is a finite linear combination of evaluations, each continuous in the topology of uniform convergence on compacta.
 
 **Proposition (the one-sided multiplications are adjoint to their inverses).** Let $L_a$ act on $C(R)$ by $(L_a f)(x) = f(a^{-1}x)$ when $a$ is a unit, and on $k\{R\}$ by the linear extension of $x \mapsto ax$; let $R_a$ act by $(R_a f)(x) = f(xa)$ and on $k\{R\}$ by the linear extension of $x \mapsto xa$. Then
 
 $$
-\langle L_a f, u\rangle = \langle f, L_{a^{-1}}u\rangle , \qquad \langle R_a f, u\rangle = \langle f, R_{a^{-1}}u\rangle .
+\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_a f, \lambda\rangle = \langle f, R_{a^{-1}}\lambda\rangle .
 $$
 
-**Proof.** $\langle L_a f, u\rangle = \sum_x f(a^{-1}x)u_x = \sum_y f(y)u_{ay}$ on reindexing $y = a^{-1}x$, and $(L_{a^{-1}}u)_y = u_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_a f, u\rangle = \sum_x f(xa)u_x = \sum_y f(y)u_{ya^{-1}}$, and $(R_{a^{-1}}u)_y = u_{ya}$, which gives the second.
+**Proof.** $\langle L_a f, \lambda\rangle = \sum_x f(a^{-1}x)\lambda_x = \sum_y f(y)\lambda_{ay}$ on reindexing $y = a^{-1}x$, and $(L_{a^{-1}}\lambda)_y = \lambda_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_a f, \lambda\rangle = \sum_x f(xa)\lambda_x = \sum_y f(y)\lambda_{ya^{-1}}$, and $(R_{a^{-1}}\lambda)_y = \lambda_{ya}$, which gives the second.
 
 The two identities are the algebraic content of the statement that the inversion of a unit carries the left regular operators to their adjoints, and they are the ring form of the corresponding statement for a topological group. The **form of the category**, the bilinear form on $R$ with respect to which the operator adjoints of the involutive part are taken, is a different structure: it is introduced in *The Adjoint of the Left Multiplication on a Topological Ring*, later in this category, and its concrete instances are *Adjoints under the Residue Pairing* and *The Adjoint under a Hermitian Valuation*.
 
 ## Summary
 
-A continuous operator on a topological ring is a continuous self-map, the invertible ones are exactly the homeomorphisms, and the additive ones form the monoid $\operatorname{End}_c(R)$; the continuous automorphisms are the automorphisms that are homeomorphisms, the inner automorphisms $c_u$ for $u \in R^\times$ form the normal subgroup $\operatorname{Inn}(R) \cong R^\times/(Z(R)\cap R^\times)$, and $u \mapsto c_u$ is a homomorphism whose kernel is the central units. The one-sided multiplications $L_a$ and $R_a$ are continuous for free, they are homeomorphisms exactly when $a$ is a unit and then $L_a^{-1} = L_{a^{-1}}$, and the units form a topological group for the subspace topology whenever they are open, which they are for a division ring, for a local ring with open maximal ideal and hence for a valuation ring.
+A continuous operator on a topological ring is a continuous self-map, the invertible ones are exactly the homeomorphisms, and the additive ones form the monoid $\operatorname{End}_c(R)$; the continuous automorphisms are the automorphisms that are homeomorphisms, the inner automorphisms $c_\lambda$ for $\lambda \in R^\times$ form the normal subgroup $\operatorname{Inn}(R) \cong R^\times/(Z(R)\cap R^\times)$, and $\lambda \mapsto c_\lambda$ is a homomorphism whose kernel is the central units. The one-sided multiplications $L_a$ and $R_a$ are continuous for free, they are homeomorphisms exactly when $a$ is a unit and then $L_a^{-1} = L_{a^{-1}}$, and the units form a topological group for the subspace topology whenever they are open, which they are for a division ring, for a local ring with open maximal ideal and hence for a valuation ring.
 
 An automorphism permutes the ideals of each kind and preserves inclusion, so it acts on the lattice of left, right and two-sided ideals; the units act through the inner automorphisms, trivially on the two-sided ideals and nontrivially on the one-sided ones; the continuous automorphisms act on the sets of maximal, prime and closed ideals. The kernel of a continuous additive operator is closed, the image of $L_a$ is the left ideal $Ra$ and need not be closed, and its closure is the smallest closed left ideal containing it. Finally the category carries a natural pairing between the continuous functions and the finitely supported elements, and with respect to it the one-sided multiplications are adjoint to their inverses, which is the form the unit group takes on the operator layer.
 
@@ -118,12 +118,12 @@ An automorphism permutes the ideals of each kind and preserves inclusion, so it 
 | $\operatorname{Homeo}(R)$ | The group of homeomorphisms of $R$, the units of $\operatorname{Map}_c(R)$ |
 | $\operatorname{End}_c(R)$ | The continuous additive endomorphisms, a submonoid |
 | $\operatorname{Aut}(R)$, $\operatorname{Aut}_c(R)$ | All automorphisms, and the continuous ones |
-| $\operatorname{Inn}(R)$, $c_u$ | The inner automorphisms, $c_u(x) = uxu^{-1}$ |
+| $\operatorname{Inn}(R)$, $c_\lambda$ | The inner automorphisms, $c_\lambda(x) = uxu^{-1}$ |
 | $L_a$, $R_a$ | One-sided multiplications, continuous; homeomorphisms iff $a \in R^\times$ |
 | $Ra$, $\ell(a)$ | Image and kernel of $L_a$: a left ideal, and the left annihilator |
 | $C(R)$, $k\{R\}$ | Continuous functions to $k$, and finitely supported functions on $R$ |
-| $\langle f, u\rangle = \sum_x f(x)u_x$ | The natural pairing of the category |
-| $\langle L_a f, u\rangle = \langle f, L_{a^{-1}}u\rangle$ | The one-sided multiplications are adjoint to their inverses |
+| $\langle f, \lambda\rangle = \sum_x f(x)\lambda_x$ | The natural pairing of the category |
+| $\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle$ | The one-sided multiplications are adjoint to their inverses |
 | $\overline{Ra}$ | The closure of the image, the smallest closed left ideal containing it |
 
 ## Further Reading

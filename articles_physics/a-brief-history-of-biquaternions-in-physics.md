@@ -18,13 +18,13 @@ $$
 i^2 = j^2 = k^2 = ijk = -1 .
 $$
 
-These are Hamilton's own letters: here $i, j, k$ are the three quaternion units. The article's notation, in which those units are written $e_1, e_2, e_3$ and $i$ denotes the scalar imaginary, is set out below.
+These are Hamilton's own letters: here $i, j, k$ are the three quaternion units. The article's notation, in which those units are written $\vec e_x, \vec e_y, \vec e_z$ and $i$ denotes the scalar imaginary, is set out below.
 
 Hamilton had spent years trying to multiply triples of numbers to represent points in space; the breakthrough was to give up triples for quadruples. He named the quadruple a **quaternion** and spent the rest of his life on it. The *Lectures on Quaternions* (1853) is the comprehensive treatise; the *Elements of Quaternions* appeared posthumously in 1866, edited by his son William Edwin Hamilton, with a later edition by Charles Jasper Joly (1899–1901). Olinde Rodrigues had published formulas equivalent in substance to quaternion multiplication in the composition of rotations in 1840, without the algebra; the composition law is accordingly shared, while the algebra is Hamilton's.
 
 **Why the coefficients had to become complex.** Hamilton was studying the quaternion algebra and wanted to **solve equations** with it, and when he worked through the cases by degree he found that the algebra stops short.
 
-- **Linear equations**: solved, and within $\mathbb{H}$ itself. If $ax = b$ with $a \neq 0$, then $x = a^{-1}b$, and if $xa = b$ then $x = ba^{-1}$, each unique. The side on which $a$ stands matters — $e_1^{-1}e_2 = -e_3$ while $e_2e_1^{-1} = +e_3$ — but every nonzero quaternion is invertible, so a linear equation asked on a definite side always has its answer in $\mathbb{H}$.
+- **Linear equations**: solved, and within $\mathbb{H}$ itself. If $ax = b$ with $a \neq 0$, then $x = a^{-1}b$, and if $xa = b$ then $x = ba^{-1}$, each unique. The side on which $a$ stands matters — $\vec e_x^{-1}\vec e_y = -\vec e_z$ while $\vec e_y\vec e_x^{-1} = +\vec e_z$ — but every nonzero quaternion is invertible, so a linear equation asked on a definite side always has its answer in $\mathbb{H}$.
 - **Quadratic equations**: no longer routine. There is no quadratic formula, and the solutions, when they are found, **sometimes require complex coefficients** — that is, complex quaternions rather than quaternions.
 - **Higher degree**: worse. The root sets cease to be finite. The cubic $x^{3} = 1$ has the root $1$ and a whole sphere of further roots $x = -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\vec u$, one for each unit pure quaternion $\vec u$, so a degree-$n$ equation over $\mathbb{H}$ cannot be reduced to $n$ linear factors.
 
@@ -39,15 +39,15 @@ and the linear term disappears only if $x$ commutes with $b$, which is not the g
 **A basic example.** The shortest way to see the obstruction is a quadratic with ordinary real quaternion coefficients:
 
 $$
-x^{2} + 2e_2\,x - 3 = 0 .
+x^{2} + 2\vec e_y\,x - 3 = 0 .
 $$
 
-Write $x = x_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and separate the four components of the equation. The $e_1$- and $e_3$-components give $x_3 = -x_0 x_1$ and $x_1 = x_0 x_3$, hence $x_1 = x_3 = 0$; the $e_2$-component gives $x_0\,(x_2 + 1) = 0$, which leaves two branches.
+Write $x = x_0 + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ and separate the four components of the equation. The $\vec e_x$- and $\vec e_z$-components give $x_3 = -x_0 x_1$ and $x_1 = x_0 x_3$, hence $x_1 = x_3 = 0$; the $\vec e_y$-component gives $x_0\,(x_2 + 1) = 0$, which leaves two branches.
 
 **First branch, $x_2 = -1$.** The scalar component becomes $x_0^{2} = 2$, so $x_0 = \pm\sqrt{2}$ and
 
 $$
-x = \pm\sqrt{2} - e_2 ,
+x = \pm\sqrt{2} - \vec e_y ,
 $$
 
 two solutions in $\mathbb{H}$.
@@ -61,7 +61,7 @@ $$
 which no real $x_2$ satisfies. The resolution is $x_2 = -1 \pm \sqrt{2}\,i$, so
 
 $$
-x = \left(-1 \pm \sqrt{2}\,i\right) e_2 ,
+x = \left(-1 \pm \sqrt{2}\,i\right) \vec e_y ,
 $$
 
 two complex quaternions, not quaternions.
@@ -75,13 +75,13 @@ This is the precise content of the remark that the quaternions were "not enough"
 The quaternions form a four-dimensional real division algebra. Making them complex produces the biquaternions: the four coefficients are allowed to be complex,
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
-with the quaternion units $e_0 = 1, e_1, e_2, e_3$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the **biquaternion** is the complex quaternion, and its fullest treatment in his own work is in the *Lectures on Quaternions* (1853). His motive was the algebraic one set out above: in the treatment of general quadratic equations with quaternion coefficients, the resolution called for complex coefficients. The word is his, and so is the surrounding vocabulary — he introduced *bivector*, *biconjugate*, *bitensor*, and *biversor* alongside it. His notation for the unit part of a quaternion was $Uq$ — the **versor**, from the Latin *versari*, to turn — and his word for the norm $|q|$ was the tensor, so that every quaternion is the product of its tensor and its versor, $q = Tq\,Uq$. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $e_1, e_2, e_3$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is
+with the quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the **biquaternion** is the complex quaternion, and its fullest treatment in his own work is in the *Lectures on Quaternions* (1853). His motive was the algebraic one set out above: in the treatment of general quadratic equations with quaternion coefficients, the resolution called for complex coefficients. The word is his, and so is the surrounding vocabulary — he introduced *bivector*, *biconjugate*, *bitensor*, and *biversor* alongside it. His notation for the unit part of a quaternion was $Uq$ — the **versor**, from the Latin *versari*, to turn — and his word for the norm $|q|$ was the tensor, so that every quaternion is the product of its tensor and its versor, $q = Tq\,Uq$. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $\vec e_x, \vec e_y, \vec e_z$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is
 
 $$
-e_0 \leftrightarrow 1, \qquad e_1 \leftrightarrow i, \qquad e_2 \leftrightarrow j, \qquad e_3 \leftrightarrow k, \qquad i \leftrightarrow h .
+e_t \leftrightarrow 1, \qquad \vec e_x \leftrightarrow i, \qquad \vec e_y \leftrightarrow j, \qquad \vec e_z \leftrightarrow k, \qquad i \leftrightarrow h .
 $$
 
 The biquaternion algebra thus arrived with the quaternions themselves, within the first decade of their discovery. Nothing in its later physics was new algebra; what was new, repeatedly, was the recognition of where the algebra applied.
@@ -115,7 +115,7 @@ The algebra and its subspaces are established in the companion articles and are 
 $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its four natural conjugations have as fixed-point sets the remarkable real subspaces used throughout the corpus: the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the complex scalars, the centre of $\mathbb{B}$), the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the real quaternions), the Hermitian subspace $\mathbb{M}_{+}$ (real scalar part, imaginary vector part, the informational sector), and the anti-Hermitian subspace $\mathbb{M}_{-}$ (imaginary scalar part, real vector part, the material sector). The natural quadratic form is the biquaternion norm
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 ,
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 ,
 $$
 
 whose indefinite signature on $\mathbb{M}_{-}$ arises algebraically from $i^2 = -1$ in the imaginary time coefficient $ict$. The null elements $\langle\tilde{Q}\rangle_{\natural} = 0$, $\tilde{Q} \neq 0$, are the zero divisors; on $\mathbb{M}_{-}$ they are the light cone.
@@ -126,10 +126,10 @@ $$
 \mathbb{B} \;\cong\; M_2(\mathbb{C}) ,
 $$
 
-realized by sending the quaternion units to $-i$ times the Pauli matrices, $e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
+realized by sending the quaternion units to $-i$ times the Pauli matrices, $\vec e_k \mapsto -i\sigma_k$. Equivalently, $\mathbb{B}$ is the real Clifford algebra $Cl_{3,0}(\mathbb{R})$ — the **Pauli algebra** — and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Under this isomorphism the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, and the unit-norm elements
 
 $$
-SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}
+SL(2,\mathbb{C}) = \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t\}
 $$
 
 are the double cover of the proper orthochronous Lorentz group $SO^{+}(1,3)$, acting on $\mathbb{M}_{-}$ by the rotor conjugation
@@ -138,7 +138,7 @@ $$
 \tilde{Q} \;\longmapsto\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} .
 $$
 
-These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
+These are the facts that make the history intelligible. The algebra of Hamilton's complex quaternions *is* the algebra of the Pauli matrices; the group of unit biquaternions *is* the Lorentz double cover; the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ in $\mathbb{M}_{+}$ are the pure states of a two-state system, with $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ as the Born rule written in the algebra (see the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*). None of these identifications was known to Hamilton.
 
 ## Clifford's Rotors: Position, Lines, and Screws
 
@@ -160,7 +160,7 @@ The last column is the point of the table. On a line the ratio of two quantities
 
 **The setting: elliptic geometry.** The paper works not in Euclidean space, which Clifford with Klein calls the *parabolic* geometry, but in **elliptic** geometry, and the choice is load-bearing. The metric geometry is Cayley's: a quadric surface, the absolute, is fixed, and distance is read from it as an angle, points conjugate in regard to it being a quadrant apart. Every line has a polar line and every point a polar plane; two lines equidistant along their whole length are right parallel or left parallel according to the handedness of the twist that carries one to the other; and a twist-velocity of a rigid body has two polar axes. In elliptic space a translation along an axis is the same thing as a rotation about the polar axis, so position and the infinitesimal motion are both carried by rotations and no separate translation parameter is needed. Clifford notes that the formulation in free vectors and unsituated rotors is the limit of this one, in which the difficulty he has just met — that the ratio of two motors is a symbol whose two parts are separately meaningful but not jointly so — does not arise. Euclidean space, with its free vectors and its degenerate absolute, is that parabolic limit.
 
-**The algebra.** Three mutually perpendicular unit rotors through the origin — the corpus's $e_1$, $e_2$, $e_3$ — satisfy $e_1^{2} = e_2^{2} = e_3^{2} = e_1e_2e_3 = -e_0$ by the ordinary rules of quaternions, and the same equations hold when the rotors do not pass through the origin; each symbol carries a second meaning, as the operation of turning a rotor that meets its axis at right angles through a right angle about that axis. A rotor through the origin is $e_1x + e_2y + e_3z$, and the ratio of two such rotors is a quaternion. The general motor is the sum of a rotor through the origin and one polar to a rotor through the origin, and the paper writes it $\alpha + \omega\beta$, where $\omega$ denotes the rectangular twist of pitch 1 and $\omega\alpha$ is the rotor polar to $\alpha$, of the same magnitude, obtained from it by a left-handed twist. The new symbol is not a second copy of the scalar imaginary. Continuing the twist through two right angles restores the rotor to its original position and not to its reverse, so
+**The algebra.** Three mutually perpendicular unit rotors through the origin — the corpus's $\vec e_x$, $\vec e_y$, $\vec e_z$ — satisfy $\vec e_x^{2} = \vec e_y^{2} = \vec e_z^{2} = \vec e_x\vec e_y\vec e_z = -e_t$ by the ordinary rules of quaternions, and the same equations hold when the rotors do not pass through the origin; each symbol carries a second meaning, as the operation of turning a rotor that meets its axis at right angles through a right angle about that axis. A rotor through the origin is $\vec e_xx + \vec e_yy + \vec e_zz$, and the ratio of two such rotors is a quaternion. The general motor is the sum of a rotor through the origin and one polar to a rotor through the origin, and the paper writes it $\alpha + \omega\beta$, where $\omega$ denotes the rectangular twist of pitch 1 and $\omega\alpha$ is the rotor polar to $\alpha$, of the same magnitude, obtained from it by a left-handed twist. The new symbol is not a second copy of the scalar imaginary. Continuing the twist through two right angles restores the rotor to its original position and not to its reverse, so
 
 $$
 \omega^{2} = +1 ,
@@ -169,17 +169,17 @@ $$
 and $\omega$ commutes with the quaternion units. It is the split-complex unit, written $j$ in the corpus's notation, and with $j^{2} = +1$ the two combinations
 
 $$
-\Pi_1 = \tfrac{1}{2}(1 + j), \qquad \Pi_2 = \tfrac{1}{2}(1 - j)
+\Pi_x = \tfrac{1}{2}(1 + j), \qquad \Pi_y = \tfrac{1}{2}(1 - j)
 $$
 
-are idempotent, with $\Pi_1\Pi_2 = 0$; multiplication by $\Pi_1$ picks out the right vector part of a motor and multiplication by $\Pi_2$ the left vector part, so that every motor is the sum of a right and a left vector. The paper calls $\Pi_1$ and $\Pi_2$ selective symbols and compares them to the $\mathrm{S}$ and $\mathrm{V}$ of quaternions.
+are idempotent, with $\Pi_x\Pi_y = 0$; multiplication by $\Pi_x$ picks out the right vector part of a motor and multiplication by $\Pi_y$ the left vector part, so that every motor is the sum of a right and a left vector. The paper calls $\Pi_x$ and $\Pi_y$ selective symbols and compares them to the $\mathrm{S}$ and $\mathrm{V}$ of quaternions.
 
-**The algebra is the split-biquaternions.** The paper's "biquaternion" is therefore the quaternions extended by one central element of square $+1$: the **split-biquaternion** algebra $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, isomorphic to $\mathbb{H}\oplus\mathbb{H}$, with the idempotents $\Pi_1$ and $\Pi_2$ exhibiting the splitting. It is not Hamilton's biquaternion, the quaternions with complex coefficients, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — the algebra this article and the corpus call the biquaternions — and Clifford's own note on the point records the collision: Hamilton's biquaternion is a quaternion with complex coefficients, and since the word was "no longer wanted in its old meaning" he had "made bold to use it in a new one". The naming collision this article warns about is thus the paper's own and deliberate, and a reader meeting a nineteenth-century "biquaternion" has three algebras to choose from. The algebra of the paper has been known since as the **elliptic biquaternions**, a name that records the geometry; the later literature calls it the Clifford biquaternion or the dyquaternion, or writes it $\mathbb{H}\oplus\mathbb{H}$. The quaternions with **dual**-number coefficients, $\mathbb{N}\otimes_\mathbb{R}\mathbb{H}$ with $\varepsilon^{2} = 0$, are the parabolic case and belong to a later line, McAulay's and Study's; they are the algebra of the rigid motions of Euclidean space, and the screw motions, the double cover of $SE(3)$ and the motor calculus built on them are the subject of the companion article *Projective Geometric Algebra and Dual Quaternions*.
+**The algebra is the split-biquaternions.** The paper's "biquaternion" is therefore the quaternions extended by one central element of square $+1$: the **split-biquaternion** algebra $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, isomorphic to $\mathbb{H}\oplus\mathbb{H}$, with the idempotents $\Pi_x$ and $\Pi_y$ exhibiting the splitting. It is not Hamilton's biquaternion, the quaternions with complex coefficients, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ — the algebra this article and the corpus call the biquaternions — and Clifford's own note on the point records the collision: Hamilton's biquaternion is a quaternion with complex coefficients, and since the word was "no longer wanted in its old meaning" he had "made bold to use it in a new one". The naming collision this article warns about is thus the paper's own and deliberate, and a reader meeting a nineteenth-century "biquaternion" has three algebras to choose from. The algebra of the paper has been known since as the **elliptic biquaternions**, a name that records the geometry; the later literature calls it the Clifford biquaternion or the dyquaternion, or writes it $\mathbb{H}\oplus\mathbb{H}$. The quaternions with **dual**-number coefficients, $\mathbb{N}\otimes_\mathbb{R}\mathbb{H}$ with $\varepsilon^{2} = 0$, are the parabolic case and belong to a later line, McAulay's and Study's; they are the algebra of the rigid motions of Euclidean space, and the screw motions, the double cover of $SE(3)$ and the motor calculus built on them are the subject of the companion article *Projective Geometric Algebra and Dual Quaternions*.
 
 **The geometric constructions.** The last section of the paper turns the algebra back on the geometry, in five constructions, all in the elliptic case and all expressed with the **position-rotor**, the rotor drawn from the origin to a point. Relative to a quadrantal tetrahedron $1234$ with the origin at the vertex $4$, the equation of the absolute being $\sum_k x_k^{2} = 0$, the position-rotor of the point $x$ is
 
 $$
-\rho = e_1\frac{x_1}{x_4} + e_2\frac{x_2}{x_4} + e_3\frac{x_3}{x_4} ,
+\rho = \vec e_x\frac{x_1}{x_4} + \vec e_y\frac{x_2}{x_4} + \vec e_z\frac{x_3}{x_4} ,
 $$
 
 and its tensor, the length of the rotor, is the tangent of the angular distance from the origin to the point. The five constructions are the position-rotor just given; the **equation of a straight line**, built on the perpendicular drawn from the origin to the line; the **rotor along a straight line whose equation is given**; the **rotor joining two points** whose position-rotors are $\alpha$ and $\beta$, namely $mR = \beta - \alpha + \omega\,V\alpha\beta$, with $V$ the vector product; and the **rotor parallel to a given line through a given point** whose position-rotor is $\sigma$. The list is the paper's demonstration that the algebra computes with lines and with screws, and not only with directions.
@@ -236,7 +236,7 @@ The historical chronology, however, runs the other way, and by a wide margin. É
 
 Even the later quaternion work is a separate line: Conway returned to quaternions for quantum physics only at the end of his life, in work published in 1948 and cited in a 1950 thesis by Joachim Lambek, and the recognition that the biquaternion algebra and the Pauli algebra are the same became standard in the geometric-algebra literature of the 1960s. The honest statement is two-part: the algebra contains the quantum structures, and no one in the biquaternion tradition is documented as having used it to anticipate them. Only the second kind of connection would justify the word "anticipation."
 
-**Separating $i$ from $\hbar$.** One interpretation of the algebra's quantum content is a claim about what the algebra *clarifies* rather than about priority. In the Schrödinger equation the imaginary unit and the quantum of action appear as one combined factor, $i\hbar\,\partial_t$; in the Lanczos biquaternion equation $i$ sits in the scalar part of the four-gradient and $\hbar$ multiplies the mass, so the two are separated. Gsponer and Hurni read the separation as an identification: $i$ belongs to time — Hamilton's own intuition about imaginary numbers — and $\hbar$ belongs to mass, that is, to the particle aspect of a wave, a lump of energy localized in space. On the same interpretation Maxwell's theory needs no $\hbar$ at all and can be read as a quantum theory without it. The corpus records both as the commentators' interpretation; what the algebra demonstrably does is exhibit the two ingredients of the quantum formalism as independent places in one equation, rather than as one product.
+**Separating $i$ from $\hbar$.** One interpretation of the algebra's quantum content is a claim about what the algebra *clarifies* rather than about priority. In the Schrödinger equation the imaginary unit and the quantum of action appear as one combined factor, $i\hbar\,\partial/\partial t$; in the Lanczos biquaternion equation $i$ sits in the scalar part of the four-gradient and $\hbar$ multiplies the mass, so the two are separated. Gsponer and Hurni read the separation as an identification: $i$ belongs to time — Hamilton's own intuition about imaginary numbers — and $\hbar$ belongs to mass, that is, to the particle aspect of a wave, a lump of energy localized in space. On the same interpretation Maxwell's theory needs no $\hbar$ at all and can be read as a quantum theory without it. The corpus records both as the commentators' interpretation; what the algebra demonstrably does is exhibit the two ingredients of the quantum formalism as independent places in one equation, rather than as one product.
 
 ## Why the Biquaternions Were Displaced
 
@@ -305,7 +305,7 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra (complex quaternions) |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ (Hamilton's $h$) |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (complex scalars; centre of $\mathbb{B}$) |
@@ -313,19 +313,19 @@ The word "rotor" is Clifford's, coined in 1873 for a quantity having position �
 | $\mathbb{M}_{+}$ | Hermitian subspace (informational sector; norm $(1,3)$) |
 | $\mathbb{M}_{-}$ | Anti-Hermitian subspace (material sector; norm $(3,1)$) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm (zero divisors where $N=0$) |
-| $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(e_k) = -i\sigma_k$ |
-| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0\}$ | Unit-norm biquaternions; Lorentz double cover |
+| $\mathbb{B} \cong M_2(\mathbb{C}) \cong Cl_{3,0}(\mathbb{R})$ | Pauli algebra; $\mathsf{M}_2(\vec e_k) = -i\sigma_k$ |
+| $SL(2,\mathbb{C}) = \{\tilde{\Lambda} : \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t\}$ | Unit-norm biquaternions; Lorentz double cover |
 | $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation on $\mathbb{M}_{-}$ |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\vec E + ic\vec B$ | Riemann–Silberstein vector (Silberstein, 1907) |
 | $j$ | Split-complex unit, $j^{2} = +1$ (Clifford's twist $\omega$) |
-| $\Pi_1 = \tfrac{1}{2}(1 + j), \ \Pi_2 = \tfrac{1}{2}(1 - j)$ | Idempotents; right and left vector parts of a motor |
+| $\Pi_x = \tfrac{1}{2}(1 + j), \ \Pi_y = \tfrac{1}{2}(1 - j)$ | Idempotents; right and left vector parts of a motor |
 | $\mathbb{H}$ | Real quaternion algebra (Hamilton 1843) |
 | $Uq = q/\lvert q\rvert$, $Tq = \lvert q\rvert$ | Versor and tensor of a quaternion (Hamilton) |
 | $ax = b$, $x = a^{-1}b$ | Linear equation in $\mathbb{H}$; the side on which $a$ stands matters |
 | $x^{2} + bx + c = 0$ | Quaternion quadratic: no completing the square, no discriminant |
-| $x^{2} + 2e_2x - 3 = 0$ | Worked quadratic: roots $\pm\sqrt{2} - e_2$ in $\mathbb{H}$, and $(-1 \pm \sqrt{2}\,i)e_2$ in $\mathbb{B}$ |
+| $x^{2} + 2\vec e_yx - 3 = 0$ | Worked quadratic: roots $\pm\sqrt{2} - \vec e_y$ in $\mathbb{H}$, and $(-1 \pm \sqrt{2}\,i)\vec e_y$ in $\mathbb{B}$ |
 
 ## Further Reading
 

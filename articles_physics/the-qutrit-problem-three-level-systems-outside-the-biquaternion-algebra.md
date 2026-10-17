@@ -80,7 +80,7 @@ $$
 n^2-\mathrm{Tr}(n)\,n+\det(n)\,I=0\quad\Longrightarrow\quad n^2=0 ,
 $$
 
-so every nilpotent element of $\mathbb{B}$ has square zero. In the algebra itself the same identity reads $(ie_1-e_2)^2=0$ for the raising element of the fundamental module, and $(\tilde S_+)^2=0$ for the spin operator.
+so every nilpotent element of $\mathbb{B}$ has square zero. In the algebra itself the same identity reads $(i\vec e_x-\vec e_y)^2=0$ for the raising element of the fundamental module, and $(\tilde S_+)^2=0$ for the spin operator.
 
 A three-level ladder, by contrast, has two rungs and is nilpotent of index three: the spin-one raising operator satisfies
 
@@ -95,16 +95,16 @@ which was verified explicitly, and the shift matrix above has the same property.
 A projective measurement with three outcomes is a resolution of the identity into three mutually orthogonal idempotents,
 
 $$
-P_1+P_2+P_3=e_0,\qquad P_iP_j=\delta_{ij}P_i .
+P_1+P_2+P_3=e_t,\qquad P_iP_j=\delta_{ij}P_i .
 $$
 
-In $\mathbb{B}\cong M_2(\mathbb{C})$ this is impossible: idempotents have ranks $1$ or $2$, orthogonal idempotents have additive ranks, and $\mathrm{rank}(e_0)=2$, so at most two nonzero terms can occur. A three-outcome projective measurement is a three-level structure, and the algebra has room only for two.
+In $\mathbb{B}\cong M_2(\mathbb{C})$ this is impossible: idempotents have ranks $1$ or $2$, orthogonal idempotents have additive ranks, and $\mathrm{rank}(e_t)=2$, so at most two nonzero terms can occur. A three-outcome projective measurement is a three-level structure, and the algebra has room only for two.
 
-The statement is about *projective* measurements and should not be overstated. A three-outcome POVM — three positive elements $E_1+E_2+E_3=e_0$ without orthogonality — does exist in $\mathbb{B}$; the trine measurement of the qubit is the standard example. What does not exist is the sharp, repeatable three-outcome measurement that a qutrit's standard basis measurement represents. Three orthogonal idempotents summing to the identity exist in $M_3(\mathbb{C})$, as one checks immediately, and they are the minimal form of the obstruction.
+The statement is about *projective* measurements and should not be overstated. A three-outcome POVM — three positive elements $E_1+E_2+E_3=e_t$ without orthogonality — does exist in $\mathbb{B}$; the trine measurement of the qubit is the standard example. What does not exist is the sharp, repeatable three-outcome measurement that a qutrit's standard basis measurement represents. Three orthogonal idempotents summing to the identity exist in $M_3(\mathbb{C})$, as one checks immediately, and they are the minimal form of the obstruction.
 
 ## The Adjoint Representation Is a Lie-Algebra Module
 
-There is a three-dimensional space in the framework that carries spin one: the traceless part $W=\operatorname{span}_\mathbb{C}\{ie_1,ie_2,ie_3\}$ of $\mathbb{B}$, on which the adjoint action
+There is a three-dimensional space in the framework that carries spin one: the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$, on which the adjoint action
 
 $$
 \mathrm{ad}_{\tilde S_k}(ie_l)=[\tilde S_k,ie_l]=i\hbar\,\epsilon_{klm}\,(ie_m)
@@ -118,14 +118,14 @@ $$
 \mathrm{ad}_x(yz)=\mathrm{ad}_x(y)\,z+y\,\mathrm{ad}_x(z),
 $$
 
-and derivations are not multiplications. The failure is explicit. In the matrix realisation, with $ie_1=\sigma_1$ and $ie_2=\sigma_2$,
+and derivations are not multiplications. The failure is explicit. In the matrix realisation, with $i\vec e_x=\sigma_1$ and $i\vec e_y=\sigma_2$,
 
 $$
-\mathrm{ad}_{ie_1}\bigl(\mathrm{ad}_{ie_1}(ie_2)\bigr)=[ie_1,[ie_1,ie_2]]=+4\,ie_2\neq0,\qquad
-\mathrm{ad}_{(ie_1)^2}(ie_2)=[e_0,ie_2]=0 .
+\mathrm{ad}_{i\vec e_x}\bigl(\mathrm{ad}_{i\vec e_x}(i\vec e_y)\bigr)=[i\vec e_x,[i\vec e_x,i\vec e_y]]=+4\,i\vec e_y\neq0,\qquad
+\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)=[e_t,i\vec e_y]=0 .
 $$
 
-So $\mathrm{ad}_{ie_1}^2\neq\mathrm{ad}_{(ie_1)^2}$, and the map $x\mapsto\mathrm{ad}_x$ is not an algebra homomorphism. It is a **Lie-algebra** homomorphism: the linear span of the $ie_k$ with the commutator is $\mathrm{SU}(2)$, and the adjoint action makes $W$ a module over $\mathrm{SU}(2)$, equivalently over its universal enveloping algebra $\mathcal{U}(\mathrm{SU}(2))$ and over the group $SU(2)$.
+So $\mathrm{ad}_{i\vec e_x}^2\neq\mathrm{ad}_{(i\vec e_x)^2}$, and the map $x\mapsto\mathrm{ad}_x$ is not an algebra homomorphism. It is a **Lie-algebra** homomorphism: the linear span of the $i\vec e_k$ with the commutator is $\mathrm{SU}(2)$, and the adjoint action makes $W$ a module over $\mathrm{SU}(2)$, equivalently over its universal enveloping algebra $\mathcal{U}(\mathrm{SU}(2))$ and over the group $SU(2)$.
 
 That is the precise location of the three-level structure. The qutrit is a module of $\mathrm{SU}(2)$ — or of $SU(2)$, whose three-dimensional irreducible representation is the adjoint — and not a module of the associative algebra $\mathbb{B}$. The companion article *Biquaternion Automorphisms and Derivations* records the same fact from the other side: all derivations of $\mathbb{B}$ are inner and $\mathrm{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$, so the adjoint action sees only the six-real-dimensional Lie algebra, not the eight-real-dimensional associative algebra. For the qubit the distinction is invisible, because the defining module is a module of both.
 
@@ -135,7 +135,7 @@ The three-dimensional representation is therefore available in the framework's *
 
 A second way to see the obstruction is to count the operations available on the three levels.
 
-The observables of the algebra are the Hermitian elements of $\mathbb{M}_+$, a real vector space of dimension four; their unitary exponentials form $U(2)$, of real dimension four, which is the full group of unitary operations on two levels. A three-level system admits $U(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
+The observables of the algebra are the Hermitian elements of $\mathbb{M}_+$, a real vector space of dimension four; their unitary exponentials form $\mathrm{U}(2)$, of real dimension four, which is the full group of unitary operations on two levels. A three-level system admits $\mathrm{U}(3)$, of real dimension nine, and its traceless part $\mathrm{SU}(3)$ has dimension eight. The comparison is decisive at every level of structure:
 
 $$
 \dim_{\mathbb{R}}\mathbb{M}_+=4<9=\dim_{\mathbb{R}}\mathrm{U}(3),\qquad
@@ -145,7 +145,7 @@ $$
 
 Even the whole algebra, regarded as a real Lie algebra of dimension eight, is too small to contain $\mathrm{U}(3)$, of dimension nine, and its Lie algebra of derivations, of dimension six, is smaller than $\mathrm{SU}(3)$, of dimension eight. No copy of the qutrit's dynamical algebra fits inside $\mathbb{B}$. What $\mathbb{B}$ supplies on the qutrit sector is the spin subgroup: the rotations generated by the adjoint action form $SU(2)$, of dimension three, acting transitively on the coherent states. That is the group of classical rotations of a spin-one system, and it is exactly the group that the framework's adjoint action can reach.
 
-The remaining operations of $U(3)$ — those that change the alignment of a state without changing its spin direction, and those that mix the two transition frequencies independently — are not in $\mathbb{B}$. They are available in the tensor square, because the qutrit observables there generate $M_3(\mathbb{C})$, and exponentiating its anti-Hermitian elements gives all of $U(3)$. The pattern is by now familiar: a symmetry of the framework's own algebra on the left, a larger symmetry available only through the tensor square on the right.
+The remaining operations of $\mathrm{U}(3)$ — those that change the alignment of a state without changing its spin direction, and those that mix the two transition frequencies independently — are not in $\mathbb{B}$. They are available in the tensor square, because the qutrit observables there generate $M_3(\mathbb{C})$, and exponentiating its anti-Hermitian elements gives all of $\mathrm{U}(3)$. The pattern is by now familiar: a symmetry of the framework's own algebra on the left, a larger symmetry available only through the tensor square on the right.
 
 This also identifies what a three-level system is *for* in the framework. A spin-one system's physically classical content — its polarization, its rotation, its coherent states — is described by $\mathbb{B}$ through the adjoint action. Its genuinely three-level content — the alignment (nematic) degrees of freedom, the two independent transition frequencies, the interference between the extreme and middle levels — requires the tensor square. A spin-one condensate is a physical system in which both are present at once, and the split between them is visible in its order parameter.
 
@@ -164,13 +164,13 @@ the three-dimensional symmetric square being the adjoint representation of $\mat
 In the framework the tensor square is $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, the module is $V\otimes V$ with the four basis states of the companion problem on two spin-$\tfrac12$ particles, and the two summands are the triplet and the singlet. The projector onto the qutrit sector is
 
 $$
-P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_0\otimes e_0-\sum_ke_k\otimes e_k\right),
+P_{\mathrm{sym}}=\tfrac{1}{4}\left(3\,e_t\otimes e_t-\sum_k\vec e_k\otimes \vec e_k\right),
 $$
 
 and the spin-one operators are the symmetric combinations
 
 $$
-\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(ie_k\otimes e_0+e_0\otimes ie_k\right),
+\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}=\tfrac{\hbar}{2}\left(i\vec e_k\otimes e_t+e_t\otimes i\vec e_k\right),
 $$
 
 which act on $\mathrm{Sym}^2V$ irreducibly and annihilate $\Lambda^2V$. The ladder behaves as a three-level ladder should: the raising operator restricted to the symmetric sector is the spin-one raising operator,
@@ -205,7 +205,7 @@ The ledger between the algebra and the tensor square can be drawn item by item. 
 | The spin vector $\langle\vec F\rangle$ | the adjoint action of $\mathbb{B}$ on the traceless part |
 | Coherent states | symmetrised products $P_{\mathrm{sym}}(\tilde\Pi_+\otimes \tilde\Pi_+)P_{\mathrm{sym}}$ |
 | Gell-Mann basis, structure constants | not in $\mathbb{B}$; reachable as polynomials in $I_3,F_1,F_2,F_3$ |
-| The dynamical group $U(3)$, the two Cartan directions | not in $\mathbb{B}$; $M_3(\mathbb{C})$ generated by the $F$'s in $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
+| The dynamical group $\mathrm{U}(3)$, the two Cartan directions | not in $\mathbb{B}$; $M_3(\mathbb{C})$ generated by the $F$'s in $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ |
 | Quadratic invariant of a state | the purity $\mathrm{Tr}(\rho^2)=\tfrac13(1+2\lvert\vec b\rvert^2)$, quadratic in the Bloch vector |
 | Cubic invariant | $\det\rho$, with $\det\rho\ge0$ the boundary condition for positivity |
 | State space as a cone slice | not available; the boundary is cubic, not the null cone of a quadratic form |
@@ -258,10 +258,10 @@ None of this argues that the framework is inapplicable to spin one. The operator
 Three-level systems are outside the biquaternion algebra as modules, and inside its tensor square as a sector. The article established the following.
 
 - **Level count.** $\mathbb{B}\cong M_2(\mathbb{C})$ has $V=\mathbb{C}^2$ as its only simple module, and every unital finite-dimensional module is $V^{\oplus k}$ of even dimension $2k$. A unital three-dimensional module does not exist; the only three-dimensional action is the block embedding into $M_2(\mathbb{C})\oplus0\subset M_3(\mathbb{C})$, in which the third level is annihilated by every algebra element, and the ten operators that involve it are absent.
-- **Nilpotency ceiling.** By Cayley–Hamilton every nilpotent element of $\mathbb{B}$ has square zero, $n^2=0$, and the algebra's raising element satisfies $(\tilde S_+)^2=0$ and $(ie_1-e_2)^2=0$. A three-level ladder has nilpotency index three, $J_+^3=0$ with $J_+^2\neq0$; no such element exists in $\mathbb{B}$. The index of nilpotency equals the number of levels minus one.
+- **Nilpotency ceiling.** By Cayley–Hamilton every nilpotent element of $\mathbb{B}$ has square zero, $n^2=0$, and the algebra's raising element satisfies $(\tilde S_+)^2=0$ and $(i\vec e_x-\vec e_y)^2=0$. A three-level ladder has nilpotency index three, $J_+^3=0$ with $J_+^2\neq0$; no such element exists in $\mathbb{B}$. The index of nilpotency equals the number of levels minus one.
 - **Idempotent ceiling.** At most two orthogonal idempotents of $\mathbb{B}$ can sum to the identity, so a three-outcome projective measurement is impossible in the algebra; three-outcome POVMs exist, but they are not sharp.
-- **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{ie_1}^2(ie_2)=+4ie_2\neq0=\mathrm{ad}_{(ie_1)^2}(ie_2)$. The three-dimensional space is a module of the Lie algebra $\mathrm{SU}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$.
-- **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{M}_+=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $U(3)$ only through the tensor square.
+- **The adjoint representation.** The traceless part $W$ carries spin one under the adjoint action, but $\mathrm{ad}_{xy}\neq\mathrm{ad}_x\mathrm{ad}_y$: explicitly $\mathrm{ad}_{i\vec e_x}^2(i\vec e_y)=+4i\vec e_y\neq0=\mathrm{ad}_{(i\vec e_x)^2}(i\vec e_y)$. The three-dimensional space is a module of the Lie algebra $\mathrm{SU}(2)$ and of the group $SU(2)$, not of the algebra $\mathbb{B}$; all derivations are inner and $\mathrm{Der}(\mathbb{B})\cong\mathrm{SL}(2,\mathbb{C})$.
+- **The absent dynamical algebra.** $\dim_{\mathbb{R}}\mathbb{M}_+=4$, $\dim_{\mathbb{R}}\mathbb{B}=8$ and $\dim_{\mathbb{R}}\mathrm{Der}(\mathbb{B})=6$ are all smaller than $\dim_{\mathbb{R}}\mathrm{U}(3)=9$ and $\dim_{\mathbb{R}}\mathrm{SU}(3)=8$; the framework supplies the spin subgroup $SU(2)$ of dimension three, and the rest of $\mathrm{U}(3)$ only through the tensor square.
 - **The construction.** $V\otimes V\cong\mathrm{Sym}^2V\oplus\Lambda^2V$, $4=3+1$; the qutrit is $\mathrm{Sym}^2V$, selected by $P_{\mathrm{sym}}$, on which $\tilde F_k=\tilde S_k^{(1)}+\tilde S_k^{(2)}$ acts irreducibly with $(\tilde S_+^{(1)}+\tilde S_+^{(2)})|_{\mathrm{Sym}^2V}=\hbar J_+$; the products of $I_3,F_1,F_2,F_3$ generate $M_3(\mathbb{C})$, of real dimension $18$.
 - **The cost.** One extra level that must be projected out, an algebra that grows from $M_2(\mathbb{C})$ to $M_4(\mathbb{C})$, and a state space whose positivity is no longer a quadratic cone condition.
 - **General counting.** $\mathrm{Sym}^nV$ has dimension $n+1$; spin $s$ requires $2s$ factors, so the cost in factors is linear in the number of levels minus one.
@@ -274,7 +274,7 @@ Three-level systems are outside the biquaternion algebra as modules, and inside 
 | $V=\mathbb{C}^2$ | Defining module, the only simple module |
 | $V^{\oplus k}$ | General unital module, dimension $2k$ |
 | $S=\mathrm{Res}_{\mathbb{C}/\mathbb{R}}V$ | Simple real module, real dimension $4$ |
-| $W=\operatorname{span}_\mathbb{C}\{ie_1,ie_2,ie_3\}$ | Traceless part, carries the adjoint (spin-one) action |
+| $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | Traceless part, carries the adjoint (spin-one) action |
 | $\mathrm{ad}_x(y)=[x,y]$ | Adjoint action, a derivation |
 | $S_+$, $\tilde S_+$ | Raising operator; $S_+^2=0$ |
 | $J_+$ | Spin-one raising operator; $J_+^3=0$, $J_+^2\neq0$ |

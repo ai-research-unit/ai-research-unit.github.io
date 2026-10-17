@@ -86,7 +86,7 @@ $$
 so the signed-unitary conformal operators are exactly the isometries of the form, the intersection of the conformal group with the unitary group,
 
 $$
-\operatorname{CO}(V,\mathfrak{Q}) \cap U(V,h) = O(V,\mathfrak{Q}) ,
+\operatorname{CO}(V,\mathfrak{Q}) \cap \mathrm{U}(V,h) = O(V,\mathfrak{Q}) ,
 $$
 
 and the sign-reversing adjoint is the obstruction that removes the operators with a nontrivial factor; the unitarity condition defines the orthogonal group inside the conformal group.
@@ -107,7 +107,7 @@ and the sign-reversing adjoint is the obstruction that removes the operators wit
 
 ## Summary
 
-A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The **signed adjoint** is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\Theta^\alpha_{a,b})^{\ddagger} = \Theta^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The **signed unitarity condition** $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap U(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.
+A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adjoint with respect to a compatible Hermitian pairing is $T^{\dagger} = \lambda(T)T^{-1}$, so the factor is the obstruction to unitarity and the isometries are exactly the conformal operators with $\lambda = 1$. The **signed adjoint** is the adjoint twisted by the grade involution, $T^{\ddagger} = \alpha(T^{\dagger})$, computed for the signed sandwich by the formula $(\Theta^\alpha_{a,b})^{\ddagger} = \Theta^\alpha_{\alpha(b)^{\ddagger},\alpha(a)^{\ddagger}}$; it is sign-reversing, anti-multiplicative and an involution, and it agrees with the ordinary adjoint on the even part. The **signed unitarity condition** $T^{\ddagger}T = \mathrm{id}$ is equivalent to $T^\dagger T = \mathrm{id}$ and hence to $\lambda(T) = 1$, so the signed-unitary conformal operators are exactly the isometries, $\operatorname{CO}(V,\mathfrak{Q})\cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$; the sign-reversing adjoint defines the orthogonal group inside the conformal group. In the degenerate case the grade involution collapses in characteristic two and the sign disappears, while a degenerate form makes the reflection element isotropic and the signed adjoint undefined.
 
 ## Summary of Notation
 
@@ -121,7 +121,7 @@ A conformal operator $T$ multiplies the form by the factor $\lambda(T)$; its adj
 | $T^{\ddagger} = \alpha(T^{\dagger})$ | Signed adjoint |
 | $(\Theta^{\alpha}_{a,b})^{\ddagger} = \Theta^{\alpha}_{\alpha(b),\alpha(a)}$ | Signed adjoint of the sandwich, the sign reversal |
 | $T^{\ddagger}T = \mathrm{id}$ | Signed unitarity condition |
-| $\operatorname{CO}(V,\mathfrak{Q}) \cap U(V,h) = O(V,\mathfrak{Q})$ | Signed-unitary conformal operators, the isometries |
+| $\operatorname{CO}(V,\mathfrak{Q}) \cap \mathrm{U}(V,h) = O(V,\mathfrak{Q})$ | Signed-unitary conformal operators, the isometries |
 | $a$ with $\mathfrak{Q}(a) = 0$ | Isotropic parameter, the degenerate case |
 
 ## Further Reading

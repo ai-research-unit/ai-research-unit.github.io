@@ -16,7 +16,7 @@ $$
 L = \sum_{|\alpha|\le m} a_\alpha(x)\,\partial^\alpha ,
 $$
 
-where the sum runs over the multi-indices $\alpha = (\alpha_1,\dots,\alpha_n)$ with $|\alpha| = \sum_i\alpha_i \le m$, the **coefficients** $a_\alpha : \Omega \to \mathbb{C}$ are functions on $\Omega$, and $\partial^\alpha = \partial_1^{\alpha_1}\cdots\partial_n^{\alpha_n}$ is the partial derivative in the multi-index notation of *Distributions and Fundamental Solutions*. The operator acts on a function $u$ of class $C^m$ by
+where the sum runs over the multi-indices $\alpha = (\alpha_1,\dots,\alpha_n)$ with $|\alpha| = \sum_i\alpha_i \le m$, the **coefficients** $a_\alpha : \Omega \to \mathbb{C}$ are functions on $\Omega$, and $\partial^\alpha = (\partial/\partial x_1)^{\alpha_1}\cdots(\partial/\partial x_n)^{\alpha_n}$ is the partial derivative in the multi-index notation of *Distributions and Fundamental Solutions*. The operator acts on a function $u$ of class $C^m$ by
 
 $$
 (Lu)(x) = \sum_{|\alpha|\le m} a_\alpha(x)\,\partial^\alpha u(x) .
@@ -32,13 +32,13 @@ The operator is of **order** $m$ if some coefficient $a_\alpha$ with $|\alpha| =
 
 | Operator | Expression | Order | Real |
 |---|---|---|---|
-| derivative in a direction | $\partial_i$, or $b\cdot\nabla = \sum_i b_i\partial_i$ | $1$ | yes |
-| Laplacian | $\Delta = \sum_{i=1}^n\partial_i^2$ | $2$ | yes |
+| derivative in a direction | $\partial/\partial x_i$, or $b\cdot\nabla = \sum_i b_i\partial/\partial x_i$ | $1$ | yes |
+| Laplacian | $\Delta = \sum_{i=1}^n\partial^2/\partial x_i^2$ | $2$ | yes |
 | Helmholtz-type | $-\Delta + c(x)$ | $2$ | yes if $c$ is real |
-| Cauchy–Riemann | $\bar\partial = \tfrac12(\partial_x + i\,\partial_y)$ on $\mathbb{R}^2$ | $1$ | no |
-| heat | $\partial_t - \Delta$ | $2$ | yes |
-| wave | $\Box = \partial_t^2 - \Delta$ | $2$ | yes |
-| Euler | $E = \sum_i x_i\partial_i$ | $1$ | yes |
+| Cauchy–Riemann | $\bar\partial = \tfrac12(\partial/\partial x + i\,\partial/\partial y)$ on $\mathbb{R}^2$ | $1$ | no |
+| heat | $\partial/\partial t - \Delta$ | $2$ | yes |
+| wave | $\Box = \partial^2/\partial t^2 - \Delta$ | $2$ | yes |
+| Euler | $E = \sum_i x_i\partial/\partial x_i$ | $1$ | yes |
 
 The Cauchy–Riemann operator is complex, and it is the first-order operator whose square is the Laplacian in the plane, $\bar\partial\,\partial = \tfrac14\Delta$; the general construction of an operator from a frame of an algebra is *Regularity and the Cauchy–Riemann Operator*.
 
@@ -64,17 +64,17 @@ $$
 
 The symbol is a function of $x$ and of the frequency vector $\xi$; it is the total symbol when lower-order terms are kept. The correspondence $L \leftrightarrow \sigma_L$ is one to one, because the coefficient $a_\alpha$ is recovered as the coefficient of $\xi^\alpha$, and the order of $L$ is the degree of $\sigma_L$ in $\xi$.
 
-**Proposition (the symbol of a derivative is multiplication by $\xi$).** The symbol of the partial derivative $\partial_i$ is $\sigma_{\partial_i}(x,\xi) = \xi_i$, that of the identity is $1$, and that of the multiplication $M_a : u\mapsto a u$ is $\sigma_{M_a}(x,\xi) = a(x)$.
+**Proposition (the symbol of a derivative is multiplication by $\xi$).** The symbol of the partial derivative $\partial/\partial x_i$ is $\sigma_{\partial/\partial x_i}(x,\xi) = \xi_i$, that of the identity is $1$, and that of the multiplication $M_a : u\mapsto a u$ is $\sigma_{M_a}(x,\xi) = a(x)$.
 
 *Proof.* Each is read from the definition: the derivative brings the exponents of $\xi$ and the multiplication brings the coefficient.
 
 **Theorem (the symbol of a composition).** Let $L_1$ and $L_2$ have symbols $\sigma_1$ and $\sigma_2$ and orders $m_1$ and $m_2$. Then the symbol of the composition is
 
 $$
-\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial_\xi^\gamma\sigma_1(x,\xi)\,\partial_x^\gamma\sigma_2(x,\xi) ,
+\sigma_{L_1L_2}(x,\xi) = \sum_{|\gamma|\le m_1} \frac{1}{\gamma!}\,\partial/\partial\xi^\gamma\,\sigma_1(x,\xi)\,\partial/\partial x^\gamma\,\sigma_2(x,\xi) ,
 $$
 
-the sum being finite because $\partial_\xi^\gamma\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\xi)\sigma_{m_2}(x,\xi)$ of the principal symbols.
+the sum being finite because $\partial/\partial\xi^\gamma\,\sigma_1$ vanishes for $|\gamma|>m_1$; the principal part of the right-hand side is the product $\sigma_{m_1}(x,\xi)\sigma_{m_2}(x,\xi)$ of the principal symbols.
 
 *Proof.* It is enough to verify the identity for two monomials $a\,\partial^\alpha$ and $b\,\partial^\beta$ and to sum. By the Leibniz rule,
 
@@ -82,9 +82,9 @@ $$
 \partial^\alpha(b\,\partial^\beta u) = \sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}\partial^{\alpha-\gamma}b\,\partial^{\beta+\gamma}u ,
 $$
 
-so the symbol of the composition is $\sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}a\,\partial^{\alpha-\gamma}b\,\xi^{\beta+\gamma}$. On the other side, $\partial_\xi^\gamma (\xi^\alpha) = \frac{\alpha!}{(\alpha-\gamma)!}\xi^{\alpha-\gamma}$ when $\gamma\le\alpha$ and $0$ otherwise, and $\partial_x^\gamma(\xi^\beta) = 0$ unless $\gamma=0$; hence for a general pair the right-hand side is $\sum_\gamma\frac{1}{\gamma!}\bigl(\partial_\xi^\gamma\sum_\alpha a_\alpha\xi^\alpha\bigr)\bigl(\partial_x^\gamma\sum_\beta b_\beta\xi^\beta\bigr) = \sum_{\alpha,\beta}\sum_{\gamma\le\alpha}\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}a_\alpha\partial^{\alpha-\gamma}b_\beta\,\xi^{\beta+\gamma}$, whose binomial factor $\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}$ is exactly the coefficient found above. The principal part is the term with $\gamma=0$.
+so the symbol of the composition is $\sum_{\gamma\le\alpha}\binom{\alpha}{\gamma}a\,\partial^{\alpha-\gamma}b\,\xi^{\beta+\gamma}$. On the other side, $\partial/\partial\xi^\gamma (\xi^\alpha) = \frac{\alpha!}{(\alpha-\gamma)!}\xi^{\alpha-\gamma}$ when $\gamma\le\alpha$ and $0$ otherwise, and $\partial/\partial x^\gamma(\xi^\beta) = 0$ unless $\gamma=0$; hence for a general pair the right-hand side is $\sum_\gamma\frac{1}{\gamma!}\bigl(\partial/\partial\xi^\gamma\,\sum_\alpha a_\alpha\xi^\alpha\bigr)\bigl(\partial/\partial x^\gamma\,\sum_\beta b_\beta\xi^\beta\bigr) = \sum_{\alpha,\beta}\sum_{\gamma\le\alpha}\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}a_\alpha\partial^{\alpha-\gamma}b_\beta\,\xi^{\beta+\gamma}$, whose binomial factor $\frac{1}{\gamma!}\frac{\alpha!}{(\alpha-\gamma)!}$ is exactly the coefficient found above. The principal part is the term with $\gamma=0$.
 
-**Example.** For $L_1 = \partial_x$ and $L_2 = M_a$ on $\mathbb{R}$, the composition is $\partial_x a = a\,\partial_x + a'$, whose symbol is $a(x)\xi + a'(x)$; the formula gives $\xi\cdot a + 1\cdot a'$, the same. For $L_1=L_2=\partial_x$ only the terms $\gamma=0$ and $\gamma=1$ contribute and the symbol is $\xi^2$, as it must be.
+**Example.** For $L_1 = \partial/\partial x$ and $L_2 = M_a$ on $\mathbb{R}$, the composition is $\partial/\partial x a = a\,\partial/\partial x + a'$, whose symbol is $a(x)\xi + a'(x)$; the formula gives $\xi\cdot a + 1\cdot a'$, the same. For $L_1=L_2=\partial/\partial x$ only the terms $\gamma=0$ and $\gamma=1$ contribute and the symbol is $\xi^2$, as it must be.
 
 **Definition.** The operator $L$ is **elliptic** at $x$ if its principal symbol does not vanish away from the origin,
 
@@ -94,7 +94,7 @@ $$
 
 and **elliptic on $\Omega$** if it is elliptic at every point of $\Omega$. The **characteristic set** of $L$ at $x$ is the zero set $\{\xi : \sigma_m(x,\xi)=0\}$ of the principal symbol, and a vector in it is a **characteristic vector**. For a real principal symbol the equation $\sigma_m(x,\xi)=0$ is the characteristic equation of *Partial Differential Equations*.
 
-**Proposition (the two model cases).** The Laplacian $\Delta$ is elliptic, with $\sigma_2(x,\xi) = |\xi|^2$; the wave operator $\Box = \partial_t^2-\Delta$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\xi : \xi_t^2 = |\xi_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.
+**Proposition (the two model cases).** The Laplacian $\Delta$ is elliptic, with $\sigma_2(x,\xi) = |\xi|^2$; the wave operator $\Box = \partial^2/\partial t^2-\Delta$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\xi : \xi_t^2 = |\xi_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.
 
 *Proof.* For the Laplacian, $\sigma_2(x,\xi) = \sum_i\xi_i^2$, which vanishes only at $\xi=0$; for the wave operator, $\sigma_2(x,\xi) = \xi_t^2 - |\xi_x|^2$, whose zero set is the stated cone; the product statement is the multiplicativity of the principal symbol and the fact that a product of nonzero complex numbers is nonzero.
 
@@ -144,16 +144,16 @@ so $L_2^{\dagger}L_1^{\dagger}$ has the defining property of $(L_1L_2)^{\dagger}
 
 | Operator | Formal adjoint | Self-adjoint |
 |---|---|---|
-| $\partial_i$ | $-\partial_i$ | no |
+| $\partial/\partial x_i$ | $-\partial/\partial x_i$ | no |
 | $\Delta$ | $\Delta$ | yes |
 | $-\Delta + c$ with $c$ real | $-\Delta + c$ | yes |
-| $\bar\partial = \tfrac12(\partial_x + i\partial_y)$ | $-\tfrac12(\partial_x + i\partial_y)$ | no |
+| $\bar\partial = \tfrac12(\partial/\partial x + i\partial/\partial y)$ | $-\tfrac12(\partial/\partial x + i\partial/\partial y)$ | no |
 | $\mathrm{div}(A\nabla\cdot)$ with $A = A^{\mathsf T}$ real | itself | yes |
-| $\partial_t - \Delta$ | $-\partial_t - \Delta$ | no |
+| $\partial/\partial t - \Delta$ | $-\partial/\partial t - \Delta$ | no |
 
-The Laplacian is formally self-adjoint term by term, since each $\partial_i^2$ contributes $(-1)^2\partial_i^2$; the divergence form $\mathrm{div}(A\nabla u) = \sum_{i,j}\partial_i(a_{ij}\partial_ju)$ is formally self-adjoint exactly when the matrix $A$ is symmetric, the coefficients of the second derivatives being $a_{ij}$ and those of the first being $\sum_i\partial_ia_{ij}$. The heat operator is not formally self-adjoint, which is the operatorial form of the irreversibility recorded in *Partial Differential Equations*.
+The Laplacian is formally self-adjoint term by term, since each $\partial^2/\partial x_i^2$ contributes $(-1)^2\partial^2/\partial x_i^2$; the divergence form $\mathrm{div}(A\nabla u) = \sum_{i,j}\partial/\partial x_i\,(a_{ij}\,\partial/\partial x_j\,u)$ is formally self-adjoint exactly when the matrix $A$ is symmetric, the coefficients of the second derivatives being $a_{ij}$ and those of the first being $\sum_i\partial/\partial x_i\,a_{ij}$. The heat operator is not formally self-adjoint, which is the operatorial form of the irreversibility recorded in *Partial Differential Equations*.
 
-**Example (the Cauchy–Riemann operator).** On $\mathbb{R}^2$ the operator $\bar\partial = \tfrac12(\partial_x + i\partial_y)$ has formal adjoint $\bar\partial^{\dagger} = -\tfrac12(\partial_x + i\partial_y) = -\bar\partial$, since the coefficients are constant and each derivative changes sign. Its conjugate transpose is $-\partial$, where $\partial = \tfrac12(\partial_x - i\partial_y)$, and the pair $(\bar\partial,-\partial)$ is the flat instance of the adjoint pair of a first-order operator assembled from a frame, treated in *Regularity and the Cauchy–Riemann Operator*.
+**Example (the Cauchy–Riemann operator).** On $\mathbb{R}^2$ the operator $\bar\partial = \tfrac12(\partial/\partial x + i\partial/\partial y)$ has formal adjoint $\bar\partial^{\dagger} = -\tfrac12(\partial/\partial x + i\partial/\partial y) = -\bar\partial$, since the coefficients are constant and each derivative changes sign. Its conjugate transpose is $-\partial$, where $\partial = \tfrac12(\partial/\partial x - i\partial/\partial y)$, and the pair $(\bar\partial,-\partial)$ is the flat instance of the adjoint pair of a first-order operator assembled from a frame, treated in *Regularity and the Cauchy–Riemann Operator*.
 
 The formal adjoint is an operator on the same expression with the derivatives moved; it is not yet the adjoint of an operator on a Hilbert space, because no domain has been fixed. The step from the formal adjoint to an adjoint operator goes through the domain, which is the subject of the next section, and the identity between the two is the content of the Lagrange identity of *The Lagrange Identity and the Self-Adjoint System*.
 
@@ -167,9 +167,9 @@ $$
 
 where $Lu$ is taken in the sense of distributions; the **minimal realisation** is the operator $L$ with domain the closure in the graph norm of the graph $\{(u,Lu) : u\in C_c^\infty(\Omega)\}$. Both are linear and densely defined, and the maximal realisation extends the minimal one. A **boundary condition** is a condition imposed on $u$ at $\partial\Omega$ that cuts a subspace $\mathcal{D}(L)\subseteq\mathcal{D}_{\max}(L)$ on which $L$ is closed.
 
-**Proposition (unboundedness).** Every nonconstant-coefficient-free operator of positive order is unbounded on $L^2(\Omega)$: for $L = \partial_i$ and for every $M$ there is $u \in C_c^\infty(\Omega)$ with $\|\partial_iu\|_{L^2} > M\|u\|_{L^2}$.
+**Proposition (unboundedness).** Every nonconstant-coefficient-free operator of positive order is unbounded on $L^2(\Omega)$: for $L = \partial/\partial x_i$ and for every $M$ there is $u \in C_c^\infty(\Omega)$ with $\|\partial/\partial x_i\,u\|_{L^2} > M\|u\|_{L^2}$.
 
-*Proof.* Take a fixed bump $\varphi\in C_c^\infty$, nonnegative and not identically zero, and put $u_k(x) = \varphi(x)\,\exp(ikx_i)$ for $k \in \mathbb{N}$. Then $\partial_iu_k = ik\varphi \exp(ikx_i) + (\partial_i\varphi)\exp(ikx_i)$, so $\|\partial_iu_k\|_{L^2} \ge |k|\|\varphi\|_{L^2} - \|\partial_i\varphi\|_{L^2}$ while $\|u_k\|_{L^2} = \|\varphi\|_{L^2}$; for $k$ large enough the quotient exceeds $M$.
+*Proof.* Take a fixed bump $\varphi\in C_c^\infty$, nonnegative and not identically zero, and put $u_k(x) = \varphi(x)\,\exp(ikx_i)$ for $k \in \mathbb{N}$. Then $\partial/\partial x_i\,u_k = ik\varphi \exp(ikx_i) + (\partial/\partial x_i\,\varphi)\exp(ikx_i)$, so $\|\partial/\partial x_i\,u_k\|_{L^2} \ge |k|\|\varphi\|_{L^2} - \|\partial/\partial x_i\,\varphi\|_{L^2}$ while $\|u_k\|_{L^2} = \|\varphi\|_{L^2}$; for $k$ large enough the quotient exceeds $M$.
 
 **Theorem (the domain decides self-adjointness).** Let $L$ be a differential operator with smooth coefficients. The formal adjoint is the transpose of the maximal realisation in the sense that, for $v \in \mathcal{D}_{\max}(L)$ and $u \in C_c^\infty(\Omega)$,
 

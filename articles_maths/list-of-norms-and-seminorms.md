@@ -25,12 +25,12 @@ This article lists the norms, seminorms and families of seminorms that the corpu
 | the essential supremum norm | $L^\infty(\mu)$; complete | *Measure Theory and Integration* |
 | the $L^{n}$ norm $\lVert f\rVert_p$ | $L^{n}(\mu)$; complete for $1 \leq p \leq \infty$ | *Measure Theory and Integration* |
 | the Sobolev norm $\lVert f\rVert_{W^{k,n}}$ | $W^{k,n}(\Omega)$; complete | *Sobolev Spaces and Weak Solutions* |
-| the homogeneous Sobolev norm, and $p^* = np/(n-p)$ | the Sobolev conjugate exponent, with the embedding $W^{1,n}\hookrightarrow L^{n^*}}$ | *Sobolev Spaces and Weak Solutions* |
+| the homogeneous Sobolev norm, and $p^* = np/(n-p)$ | the Sobolev conjugate exponent, with the embedding $W^{1,n}\hookrightarrow L^{n^*}$ | *Sobolev Spaces and Weak Solutions* |
 | the Bessel-potential norm $\lVert(1-\Delta)^{s/2}f\rVert_p$ | $H^{s}_{n}$; complete | *Interpolation Theory* |
 | the Hölder norm | $C^{k,\alpha}$; complete | *Besov and Triebel–Lizorkin Spaces* |
 | the Besov norm (an $\ell^{m}(L^{n})$ norm of the Littlewood–Paley blocks) | $B^{s}_{n,m}$; a quasi-norm for $p<1$ or $q<1$, complete | *Besov and Triebel–Lizorkin Spaces* |
 | the Triebel–Lizorkin norm (an $L^{n}(\ell^{m})$ norm of the blocks) | $F^{s}_{n,m}$; complete | *Besov and Triebel–Lizorkin Spaces* |
-| the Lorentz norm | $L^{n},q}$; complete, and the interpolation norm between two $L^{n}$ norms | *Interpolation Theory* |
+| the Lorentz norm | $L^{n,q}$; complete, and the interpolation norm between two $L^{n}$ norms | *Interpolation Theory* |
 | the Hardy-space norm $\lVert f\rVert_{H^p}$ | $H^p(\mathbb D)$ for $1 \leq p \leq \infty$; complete for $1 \leq p < \infty$, and $H^\infty$ is the bounded holomorphic functions | *Complex Harmonic Analysis* |
 | the Paley–Wiener norm inherited from $L^2$ | $PW_B$; a closed subspace of $L^2$, hence complete | *Complex Harmonic Analysis* |
 | the total-variation norm $\lvert\nu\rvert(X)$ | the space of signed and complex measures; complete | *Measure Theory and Integration* |

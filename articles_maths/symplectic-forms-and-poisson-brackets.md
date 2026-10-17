@@ -247,7 +247,7 @@ where $\operatorname{Der}(A)$ is the Lie algebra of derivations of $A$ under the
 
 ### The Bracket from a Symplectic Form
 
-Let $V$ be a symplectic space of dimension $2n$ over $K$ with form $\omega$, and let $A$ be a commutative $K$-algebra of functions on $V$ on which the derivations $\partial_i$ with respect to a basis act; the standard algebraic example is the polynomial algebra $A = K[x_1, \ldots, x_n, y_1, \ldots, y_n]$, with $\omega = \omega_0$ in the coordinates of the previous sections.
+Let $V$ be a symplectic space of dimension $2n$ over $K$ with form $\omega$, and let $A$ be a commutative $K$-algebra of functions on $V$ on which the derivations $\partial/\partial x_i$ with respect to a basis act; the standard algebraic example is the polynomial algebra $A = K[x_1, \ldots, x_n, y_1, \ldots, y_n]$, with $\omega = \omega_0$ in the coordinates of the previous sections.
 
 **Definition.** For $f \in A$ the **Hamiltonian vector field** of $f$ is the derivation $X_f$ determined by
 
@@ -255,16 +255,16 @@ $$
 \omega(X_f, Y) = Y(f) \qquad \text{for all derivations } Y,
 $$
 
-equivalently $X_f = \sum_{i,j} \omega^{ij}\, \partial_i f\, \partial_j$, where $(\omega^{ij})$ is the inverse matrix of $(\omega_{ij})$ and $\partial_i$ runs over the coordinate derivations. The **Poisson bracket** of $f, g \in A$ is
+equivalently $X_f = \sum_{i,j} \omega^{ij}\, \partial/\partial x_i f\, \partial/\partial x_j$, where $(\omega^{ij})$ is the inverse matrix of $(\omega_{ij})$ and $\partial/\partial x_i$ runs over the coordinate derivations. The **Poisson bracket** of $f, g \in A$ is
 
 $$
 \{f, g\} = \omega(X_f, X_g) = X_g(f) = -X_f(g).
 $$
 
-Since $X_g = \sum_{i,j} \omega^{ij}\,\partial_j g\,\partial_i$, the bracket in coordinates is
+Since $X_g = \sum_{i,j} \omega^{ij}\,\partial/\partial x_j g\,\partial/\partial x_i$, the bracket in coordinates is
 
 $$
-\{f, g\} = \sum_{i,j} \omega^{ij}\, \partial_j f\, \partial_i g,
+\{f, g\} = \sum_{i,j} \omega^{ij}\, \partial/\partial x_j f\, \partial/\partial x_i g,
 $$
 
 the index of the inverse matrix attached to the coordinate index of $g$ in the first slot and to that of $f$ in the second, as the equality $\{f,g\} = X_g(f)$ requires. In the standard coordinates, with $\omega^{ij}$ the entries of $-J$ for the form $\omega_0$, this is
@@ -275,7 +275,7 @@ $$
 
 **Theorem.** The bracket so defined is a Poisson bracket on $A$: it is bilinear, alternating, a derivation in each argument, and satisfies the Jacobi identity. The map $f \mapsto X_f$ is a homomorphism of Lie algebras onto the Hamiltonian derivations, with kernel the constants $K \cdot 1$ when the derivations separate constants.
 
-**Proof.** Bilinearity and alternation are immediate from the definition and from $\omega$ being alternating. For the derivation property, $X_{gh} = g X_h + h X_g$ because $d(gh) = g\, dh + h\, dg$ and $\omega$ is bilinear; substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ gives (b). For the Jacobi identity, expand in coordinates: the bracket is $\sum_{ij}\omega^{ij}\partial_j f\, \partial_i g$ with $\omega^{ij}$ constant and alternating, so the bracket of two coordinate functions is the constant $\{x_i, x_j\} = -\omega^{ij}$, and the triple bracket of coordinate functions vanishes. The expression $\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}$ is a derivation in each of its three arguments, as the Leibniz rule (b) shows by expanding a product in that argument, and it vanishes on the coordinate functions; since the coordinate functions generate $A$, it vanishes identically. The remaining statements follow from the proposition above, the kernel of $f \mapsto X_f$ consisting exactly of the functions annihilated by every $\partial_i$.
+**Proof.** Bilinearity and alternation are immediate from the definition and from $\omega$ being alternating. For the derivation property, $X_{gh} = g X_h + h X_g$ because $d(gh) = g\, dh + h\, dg$ and $\omega$ is bilinear; substituting into $\{f, gh\} = \omega(X_f, X_{gh})$ gives (b). For the Jacobi identity, expand in coordinates: the bracket is $\sum_{ij}\omega^{ij}\partial/\partial x_j f\, \partial/\partial x_i g$ with $\omega^{ij}$ constant and alternating, so the bracket of two coordinate functions is the constant $\{x_i, x_j\} = -\omega^{ij}$, and the triple bracket of coordinate functions vanishes. The expression $\{f, \{g, h\}\} + \{g, \{h, f\}\} + \{h, \{f, g\}\}$ is a derivation in each of its three arguments, as the Leibniz rule (b) shows by expanding a product in that argument, and it vanishes on the coordinate functions; since the coordinate functions generate $A$, it vanishes identically. The remaining statements follow from the proposition above, the kernel of $f \mapsto X_f$ consisting exactly of the functions annihilated by every $\partial/\partial x_i$.
 
 **Remark.** In the general symplectic setting, which is Part III's, the constant-coefficient computation is replaced by the closedness of the form, and the Jacobi identity for the bracket becomes that closedness. The algebraic content is the same: the bracket is a derivation in each slot, and the Jacobi identity is the statement that the derivations it produces commute up to the bracket.
 
@@ -289,7 +289,7 @@ $$
 
 in which the constants constitute the centre of the bracket, since $\{f, g\} = 0$ for all $g$ exactly when $X_f = 0$ exactly when $f$ is constant.
 
-**Example.** For $n = 1$ and $A = K[x, y]$, the bracket is $\{f, g\} = \partial_x f\,\partial_y g - \partial_y f\,\partial_x g$, the Jacobian determinant of the pair $(f, g)$ with respect to $(x, y)$. The coordinate functions satisfy $\{x, y\} = 1$, and the monomials $x^a y^b$ span $A$; the bracket of two monomials is again a monomial times a scalar, $\{x^a y^b, x^c y^d\} = (ad - bc)\, x^{a+c-1} y^{b+d-1}$, so the bracket carries the monomial grading into a grading shifted by two: the degree of $\{f, g\}$ is two less than the sum of the degrees of $f$ and $g$ when both are homogeneous, and the bracket of two linear functions is constant. The Hamiltonian vector field of $f$ is $X_f = \partial_y f\,\partial_x - \partial_x f\,\partial_y$, the infinitesimal transformation generated by $f$.
+**Example.** For $n = 1$ and $A = K[x, y]$, the bracket is $\{f, g\} = \partial/\partial x f\,\partial/\partial y g - \partial/\partial y f\,\partial/\partial x g$, the Jacobian determinant of the pair $(f, g)$ with respect to $(x, y)$. The coordinate functions satisfy $\{x, y\} = 1$, and the monomials $x^a y^b$ span $A$; the bracket of two monomials is again a monomial times a scalar, $\{x^a y^b, x^c y^d\} = (ad - bc)\, x^{a+c-1} y^{b+d-1}$, so the bracket carries the monomial grading into a grading shifted by two: the degree of $\{f, g\}$ is two less than the sum of the degrees of $f$ and $g$ when both are homogeneous, and the bracket of two linear functions is constant. The Hamiltonian vector field of $f$ is $X_f = \partial/\partial y f\,\partial/\partial x - \partial/\partial x f\,\partial/\partial y$, the infinitesimal transformation generated by $f$.
 
 ## Formal Deformation to a Commutator Algebra
 
@@ -300,7 +300,7 @@ The Poisson bracket is the first-order term of a noncommutative associative prod
 Let $A = K[x_1, \ldots, x_n, y_1, \ldots, y_n]$ and let $\omega^{ij}$ be the constant matrix inverse to the symplectic form. On the algebra $A[[\hbar]]$ of formal power series in a central parameter $\hbar$, define the **star product**
 
 $$
-f * g = \sum_{r \geq 0} \frac{(-\hbar)^r}{r!} \sum_{i_1, j_1, \ldots, i_r, j_r} \omega^{i_1 j_1} \cdots \omega^{i_r j_r}\, \partial_{i_1} \cdots \partial_{i_r} f\; \partial_{j_1} \cdots \partial_{j_r} g.
+f * g = \sum_{r \geq 0} \frac{(-\hbar)^r}{r!} \sum_{i_1, j_1, \ldots, i_r, j_r} \omega^{i_1 j_1} \cdots \omega^{i_r j_r}\, \partial/\partial x_{i_1} \cdots \partial/\partial x_{i_r} f\; \partial/\partial x_{j_1} \cdots \partial/\partial x_{j_r} g.
 $$
 
 The sum is finite on polynomials, because the higher partial derivations vanish, so the series is well defined on $A$ and extends to $A[[\hbar]]$.
@@ -319,7 +319,7 @@ $$
 
 so the Poisson bracket is the leading term of the commutator of the deformed product, up to the normalisation factor $2\hbar$.
 
-**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}\omega^{ij}\partial_i f \partial_j g = \sum_{ij}\omega^{ij}\partial_j f \partial_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2\hbar\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[\hbar]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative.
+**Proof.** The $r = 0$ term of the definition is $fg$ and the $r = 1$ term is $-\sum_{ij}\omega^{ij}\partial/\partial x_i f \partial/\partial x_j g = \sum_{ij}\omega^{ij}\partial/\partial x_j f \partial/\partial x_i g = \{f,g\}$, which gives the first display. The $r$-th term of $g*f$ is obtained from that of $f*g$ by exchanging $f$ and $g$ and relabelling the summation indices; for even $r$ this term is symmetric in $f, g$ and for odd $r$ it is antisymmetric, so the commutator retains only the odd powers, and its $r = 1$ term is $2\hbar\{f,g\}$. Associativity is the classical theorem of Weyl and Moyal, and is most cleanly seen by transporting the product along the Weyl map: there is a linear isomorphism from $A[[\hbar]]$ onto a space of operators under which the star product becomes operator composition, and composition is associative.
 
 **Remark.** The theorem identifies the Poisson algebra $(A, \cdot, \{\cdot, \cdot\})$ as the classical shadow of a family of noncommutative associative algebras $A_\hbar = (A[[\hbar]], *)$. The bracket is exactly the commutator of the deformation, divided by $\hbar$ and taken to leading order, so the Lie algebra structure on the functions is not an isolated algebraic accident but the shadow at order $\hbar$ of an associative product. For a general Poisson space the existence of a star product with the analogous property is Kontsevich's deformation-quantisation theorem; the constant-coefficient case above is the classical Weyl–Moyal product, and it is entirely algebraic.
 
@@ -352,7 +352,7 @@ On the commutative algebra of functions on a symplectic space, the Poisson brack
 | $\operatorname{Lag}(V)$ | Lagrangian Grassmannian, dimension $\tfrac{1}{2}n(n+1)$ |
 | $\operatorname{Pf}(\Omega)$ | Pfaffian; $\operatorname{Pf}(A^{\mathsf{T}}\Omega A) = \det(A)\operatorname{Pf}(\Omega)$, $\det\Omega = \operatorname{Pf}(\Omega)^2$ |
 | $\omega^{\wedge n}/n!$ | Liouville form, the symplectic volume form |
-| $\omega^{ij} = (\Omega^{-1})^{ij}$ | Inverse matrix of the form; $\{f,g\} = \sum_{i,j}\omega^{ij}\,\partial_j f\,\partial_i g$, equal to the entries of $-J$ in standard coordinates |
+| $\omega^{ij} = (\Omega^{-1})^{ij}$ | Inverse matrix of the form; $\{f,g\} = \sum_{i,j}\omega^{ij}\,\partial/\partial x_j f\,\partial/\partial x_i g$, equal to the entries of $-J$ in standard coordinates |
 | $\{f, g\}$ | Poisson bracket; bilinear, alternating, derivational, Jacobi |
 | $X_f$ | Hamiltonian vector field, $\omega(X_f, Y) = Y(f)$ |
 | $\operatorname{Ham}(V)$ | Lie algebra of Hamiltonian vector fields |

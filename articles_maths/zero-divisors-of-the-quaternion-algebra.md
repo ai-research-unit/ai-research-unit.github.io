@@ -22,48 +22,48 @@ Plain Algebra*. The annihilator of an element, the two multiplication operators 
 
 ## Conventions
 
-Throughout this article the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, with
-$e_k^2 = -e_0$ and $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$. A general quaternion is
+Throughout this article the quaternion basis is written $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, with
+$\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, $\vec e_y\vec e_z = \vec e_x$, $\vec e_z\vec e_x = \vec e_y$. A general quaternion is
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0 e_0 + \vec q,
-\qquad \vec q = q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R},
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = q_t e_t + \vec q,
+\qquad \vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad q_\mu \in \mathbb{R},
 $$
 
-with **scalar part** $q_0 = \mathrm{Sc}(\tilde q)$ and **vector part** $\vec q$. The natural
-conjugation is $\tilde q^{\natural} = q_0 e_0 - \vec q$. Over $\mathbb{R}$ the bar is the identity
+with **scalar part** $q_t = \mathrm{Sc}(\tilde q)$ and **vector part** $\vec q$. The natural
+conjugation is $\tilde q^{\natural} = q_t e_t - \vec q$. Over $\mathbb{R}$ the bar is the identity
 and the star coincides with the natural conjugation, so the chapter has exactly two general products,
-the plain one $\tilde p\tilde q$ and the quaternionic one $\tilde p^{\natural}\tilde q$; the plain
+the plain one $\tilde q_1\tilde q_2$ and the quaternionic one $\tilde q_1^{\natural}\tilde q_2$; the plain
 product is the one of this article. A product of the space is written $\star$ when the statement is
 one about an arbitrary product and only the fact that it is a product is used, as in §*Definition*.
 
-The plain form is $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0 - (\vec p,\vec q)$,
+The plain form is $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2) = q_{1t}q_{2t} - (\vec q_1,\vec q_2)$,
 indefinite of signature $(1,3)$; the quaternion form is
-$\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0 + (\vec p,\vec q)$,
+$\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) = q_{1t}q_{2t} + (\vec q_1,\vec q_2)$,
 positive definite. The **quaternion norm** is
-$\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_0^2 + |\vec q|^2$,
+$\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_t^2 + |\vec q|^2$,
 a positive real vanishing only at $\tilde q = 0$, and it is multiplicative,
-$\langle\tilde p\tilde q\rangle_{\natural} = \langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$, by *Norm and Invertibility in the Quaternion Algebra*, above this article in this category. The centre is the scalar line $\mathbb{R}e_0$; the
+$\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, by *Norm and Invertibility in the Quaternion Algebra*, above this article in this category. The centre is the scalar line $\mathbb{R}e_t$; the
 vector subspace is $\mathrm{Vect}(\mathbb{H}) = \{\vec q\}$, of dimension three.
 
 ## Definition
 
-**Definition.** Let $\star$ be a product on $\mathbb{H}$ and let $\tilde q\in\mathbb{H}$. The element
-$\tilde q$ is a **left zero divisor of $\star$** when $\tilde q\neq0$ and there is a nonzero
-$\tilde r$ with $\tilde q\star\tilde r = 0$; it is a **right zero divisor of $\star$** when
-$\tilde q\neq0$ and there is a nonzero $\tilde r$ with $\tilde r\star\tilde q = 0$; and it is a
+**Definition.** Let $\star$ be a product on $\mathbb{H}$ and let $\tilde q_1\in\mathbb{H}$. The element
+$\tilde q_1$ is a **left zero divisor of $\star$** when $\tilde q_1\neq0$ and there is a nonzero
+$\tilde q_2$ with $\tilde q_1\star\tilde q_2 = 0$; it is a **right zero divisor of $\star$** when
+$\tilde q_1\neq0$ and there is a nonzero $\tilde q_2$ with $\tilde q_2\star\tilde q_1 = 0$; and it is a
 **zero divisor of $\star$** when it is one or the other. An element that is both a left and a right
 zero divisor of $\star$ is a **two-sided zero divisor of $\star$**.
 
-The requirement that both $\tilde q$ and $\tilde r$ be nonzero is essential. In particular, the
-element $\tilde q = 0$ is **not** a zero divisor of any product, even though
-$0\star\tilde r = 0$ for any $\tilde r$.
+The requirement that both $\tilde q_1$ and $\tilde q_2$ be nonzero is essential. In particular, the
+element $\tilde q_1 = 0$ is **not** a zero divisor of any product, even though
+$0\star\tilde q_2 = 0$ for any $\tilde q_2$.
 
 **On the products of the space.** Substituting the product for $\star$ gives one definition to a
-product. On the quaternion product the two equations are $\tilde q\tilde r = 0$ and
-$\tilde r\tilde q = 0$; on $\tilde p^{\natural}\tilde q$ they are $\tilde q^{\natural}\tilde r = 0$
-and $\tilde r^{\natural}\tilde q = 0$; and the cross product has every nonzero element as a zero
-divisor, since $\tilde q\wedge\tilde q = 0$. Throughout the rest of this article, unqualified, the
+product. On the quaternion product the two equations are $\tilde q_2\tilde q_3 = 0$ and
+$\tilde q_3\tilde q_2 = 0$; on $\tilde q_1^{\natural}\tilde q_2$ they are $\tilde q_2^{\natural}\tilde q_3 = 0$
+and $\tilde q_3^{\natural}\tilde q_2 = 0$; and the cross product has every nonzero element as a zero
+divisor, since $\tilde q_2\wedge\tilde q_2 = 0$. Throughout the rest of this article, unqualified, the
 product is the quaternion product. A product that has a two-sided unit and no zero
 divisor is a **division rule**, and an algebra whose product is a division rule is a **division
 algebra**; the theorem of §*The Criterion Is Never Satisfied Off the Origin* shows that the plain
@@ -82,16 +82,16 @@ $$
 \tilde q\tilde q^{\natural} = 0.
 $$
 
-**Proof.** Suppose $\tilde q \neq 0$ and $\tilde q\tilde q^{\natural} = 0$. Since $\tilde q \neq 0$
-we also have $\tilde q^{\natural} \neq 0$. So $\tilde r = \tilde q^{\natural}$ is a nonzero
-quaternion with $\tilde q\tilde r = 0$, and $\tilde q$ is a zero divisor.
+**Proof.** Suppose $\tilde q_1 \neq 0$ and $\tilde q_1\tilde q_1^{\natural} = 0$. Since $\tilde q_1 \neq 0$
+we also have $\tilde q_1^{\natural} \neq 0$. So $\tilde q_2 = \tilde q_1^{\natural}$ is a nonzero
+quaternion with $\tilde q_1\tilde q_2 = 0$, and $\tilde q_1$ is a zero divisor.
 
-Conversely, suppose $\tilde q$ is a zero divisor: there is a nonzero $\tilde r$ with
-$\tilde q\tilde r = 0$ or with $\tilde r\tilde q = 0$. If $\tilde q\tilde q^{\natural} \neq 0$ then
-$\tilde q$ is invertible by the invertibility criterion. In the first case multiplying
-$\tilde q\tilde r = 0$ on the left by $\tilde q^{-1}$ gives $\tilde r = 0$; in the second case
-multiplying $\tilde r\tilde q = 0$ on the right by $\tilde q^{-1}$ gives $\tilde r = 0$. Either way a
-contradiction, so $\tilde q\tilde q^{\natural} = 0$.
+Conversely, suppose $\tilde q_1$ is a zero divisor: there is a nonzero $\tilde q_2$ with
+$\tilde q_1\tilde q_2 = 0$ or with $\tilde q_2\tilde q_1 = 0$. If $\tilde q_1\tilde q_1^{\natural} \neq 0$ then
+$\tilde q_1$ is invertible by the invertibility criterion. In the first case multiplying
+$\tilde q_1\tilde q_2 = 0$ on the left by $\tilde q_1^{-1}$ gives $\tilde q_2 = 0$; in the second case
+multiplying $\tilde q_2\tilde q_1 = 0$ on the right by $\tilde q_1^{-1}$ gives $\tilde q_2 = 0$. Either way a
+contradiction, so $\tilde q_1\tilde q_1^{\natural} = 0$.
 
 The proof uses the quaternion product twice: the zero-divisor equation is the plain one, and the inverse
 is the inverse of the quaternion product, the only one of the two general products that has a two-sided
@@ -105,14 +105,14 @@ $\tilde q\tilde q^{\natural}$ is the quaternion norm.
 
 **Theorem (the zero-divisor set is empty).** For the quaternion product, the only
 quaternion with $\tilde q\tilde q^{\natural} = 0$ is $\tilde q = 0$. Consequently $\mathbb{H}$ has no
-zero divisor: $\tilde p\tilde q = 0$ forces $\tilde p = 0$ or $\tilde q = 0$.
+zero divisor: $\tilde q_1\tilde q_2 = 0$ forces $\tilde q_1 = 0$ or $\tilde q_2 = 0$.
 
-**Proof.** By the quaternion norm, $\tilde q\tilde q^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2$, a
-sum of squares of real numbers. It vanishes only when every $q_\mu$ vanishes, that is at
-$\tilde q = 0$. Since a zero divisor is required to be nonzero, and every nonzero $\tilde q$ has
-$\tilde q\tilde q^{\natural} > 0$, the criterion admits no element. For the annihilating equation, if
-$\tilde p\tilde q = 0$ with $\tilde q \neq 0$, multiplying on the right by $\tilde q^{-1}$ gives
-$\tilde p = 0$; the case $\tilde p \neq 0$ is the same with the inverse on the left.
+**Proof.** By the quaternion norm, $\tilde q_1\tilde q_1^{\natural} = q_{1t}^2 + q_{1x}^2 + q_{1y}^2 + q_{1z}^2$, a
+sum of squares of real numbers. It vanishes only when every $q_{1\mu}$ vanishes, that is at
+$\tilde q_1 = 0$. Since a zero divisor is required to be nonzero, and every nonzero $\tilde q_1$ has
+$\tilde q_1\tilde q_1^{\natural} > 0$, the criterion admits no element. For the annihilating equation, if
+$\tilde q_2\tilde q_1 = 0$ with $\tilde q_1 \neq 0$, multiplying on the right by $\tilde q_1^{-1}$ gives
+$\tilde q_2 = 0$; the case $\tilde q_2 \neq 0$ is the same with the inverse on the left.
 
 ## The Three-Way Classification
 
@@ -160,12 +160,12 @@ Quaternion Algebra*, below this article in this category.
 ## The Two Families of the Complexified Block
 
 The complexified block splits its zero divisors into two families according to the value of the
-scalar part $Q_0$. A biquaternion is **pure** when $Q_0 = 0$ and **non-pure** when $Q_0 \neq 0$, and
-the criterion reads differently in the two cases. Writing $\tilde Q = Q_0 e_0 + \vec Q$ with
+scalar part $Q_t$. A biquaternion is **pure** when $Q_t = 0$ and **non-pure** when $Q_t \neq 0$, and
+the criterion reads differently in the two cases. Writing $\tilde Q = Q_t e_t + \vec Q$ with
 $\vec Q$ a complex vector part,
 
 $$
-\tilde Q\tilde Q^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + (\vec Q,\vec Q),
+\tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = Q_t^2 + (\vec Q,\vec Q),
 $$
 
 so in the pure case the scalar contribution drops out and the condition is the isotropy of the
@@ -176,37 +176,37 @@ multiples of the idempotents.
 Over $\mathbb{R}$ the two families inherit the split but lose their elements, and for the same reason
 in both cases: the criterion becomes the vanishing of a sum of squares of real coefficients.
 
-**Proposition (the pure family is empty).** A pure quaternion $\vec p$ has
-$\vec p\vec p^{\natural} = |\vec p|^2 e_0$ and $\vec p^2 = -|\vec p|^2 e_0$, so
+**Proposition (the pure family is empty).** A pure quaternion $\vec q$ has
+$\vec q\vec q^{\natural} = |\vec q|^2 e_t$ and $\vec q^2 = -|\vec q|^2 e_t$, so
 
 $$
-\vec p^2 = 0 \quad\Longleftrightarrow\quad |\vec p|^2 = p_1^2 + p_2^2 + p_3^2 = 0
-\quad\Longleftrightarrow\quad \vec p = 0.
+\vec q^2 = 0 \quad\Longleftrightarrow\quad |\vec q|^2 = q_x^2 + q_y^2 + q_z^2 = 0
+\quad\Longleftrightarrow\quad \vec q = 0.
 $$
 
 So there is no nonzero pure zero divisor, and the pure family of the complexified block has no real
 member.
 
 **Proof.** For a pure quaternion the product with its conjugate is
-$\vec p\vec p^{\natural} = |\vec p|^2 e_0$ and the square is
-$\vec p^2 = -(\vec p,\vec p)e_0 = -|\vec p|^2 e_0$, as the coordinate rule gives directly.
-A sum of three squares of real numbers vanishes only at $\vec p = 0$.
+$\vec q\vec q^{\natural} = |\vec q|^2 e_t$ and the square is
+$\vec q^2 = -(\vec q,\vec q)e_t = -|\vec q|^2 e_t$, as the coordinate rule gives directly.
+A sum of three squares of real numbers vanishes only at $\vec q = 0$.
 
-**Proposition (the non-pure family is empty).** A quaternion with $q_0 \neq 0$ has
+**Proposition (the non-pure family is empty).** A quaternion with $q_t \neq 0$ has
 
 $$
-\tilde q\tilde q^{\natural} = q_0^2 + |\vec q|^2 \geq q_0^2 > 0,
+\tilde q\tilde q^{\natural} = q_t^2 + |\vec q|^2 \geq q_t^2 > 0,
 $$
 
 so it satisfies the criterion at no point. There is no non-pure zero divisor.
 
-**Proof.** The scalar contribution $q_0^2$ is strictly positive and the vector contribution
-$|\vec q|^2$ is nonnegative; their sum cannot vanish when $q_0 \neq 0$.
+**Proof.** The scalar contribution $q_t^2$ is strictly positive and the vector contribution
+$|\vec q|^2$ is nonnegative; their sum cannot vanish when $q_t \neq 0$.
 
 **Corollary.** Both families of the complexified block are empty over $\mathbb{R}$, and the
 zero-divisor set of the quaternion product is empty. The two families, read on the real algebra, are the
 classes of *Idempotents of the Quaternion Algebra* and *Nilpotents of the Quaternion Algebra*,
-below this article in this category: the idempotent class is the pair $\{0, e_0\}$, and the nilpotent
+below this article in this category: the idempotent class is the pair $\{0, e_t\}$, and the nilpotent
 class is empty, with square-zero set the single point $0$.
 
 ## The Zero Divisor Set
@@ -224,7 +224,7 @@ because $\mathbb{H}^\times = \mathbb{H}\setminus\{0\}$.
 The complexified block reads the same formula as a complex hypersurface: the single complex equation
 $\tilde Q\tilde Q^{\natural} = 0$ in the four complex coefficients has complex dimension $3$ and real
 dimension $6$. Over $\mathbb{R}$ the equation is the quadratic form
-$q_0^2 + q_1^2 + q_2^2 + q_3^2 = 0$, whose real vanishing locus is the single point $0$; the origin is
+$q_t^2 + q_x^2 + q_y^2 + q_z^2 = 0$, whose real vanishing locus is the single point $0$; the origin is
 excluded from the zero-divisor set by the requirement that the element be nonzero, and what is left is
 nothing. The cone of the complexified block meets the real space only at the origin.
 
@@ -238,7 +238,7 @@ definiteness: the biquaternion norm can vanish on a nonzero element, the quatern
 
 A zero divisor is an element on which $\tilde q\tilde q^{\natural}$ vanishes, so which subspaces
 contain zero divisors is the question of where the norm vanishes. Of the remarkable subspaces, the
-centre $\mathbb{R}e_0$ contains none: on the centre $\langle s e_0\rangle_{\natural} = s^2$ vanishes only at $s = 0$. The
+centre $\mathbb{R}e_t$ contains none: on the centre $\langle s e_t\rangle_{\natural} = s^2$ vanishes only at $s = 0$. The
 vector subspace $\mathrm{Vect}(\mathbb{H})$ contains none: on it $\langle \vec q\rangle_{\natural} = |\vec q|^2$
 vanishes only at $\vec q = 0$. No other subspace is any different, the norm being positive
 definite on the whole space. So every remarkable subspace is free of zero divisors, and the only
@@ -250,7 +250,7 @@ Subspaces of the Quaternions*, and the two restrictions of the norm are read in 
 
 The zero divisors of the quaternion algebra are the nonzero elements on which
 $\tilde q\tilde q^{\natural}$ vanishes. Over $\mathbb{R}$ that product is the quaternion norm
-$q_0^2 + q_1^2 + q_2^2 + q_3^2$, a sum of squares of real numbers, so it vanishes only at the origin;
+$q_t^2 + q_x^2 + q_y^2 + q_z^2$, a sum of squares of real numbers, so it vanishes only at the origin;
 the criterion admits no element, the zero divisor set is the **empty set**, and the algebra is a
 **division algebra**. The three-way classification of the elements keeps its invertible and zero
 slots and loses its zero-divisor slot, and every nonzero quaternion is a unit,
@@ -261,7 +261,7 @@ $\{N = 0\}$ of complex dimension three and real dimension six, split into the pu
 and the non-pure idempotent family. The complexified cone is empty over $\mathbb{R}$ because the
 quaternion norm is positive definite, and the two families read on the real algebra are the classes of
 *Idempotents of the Quaternion Algebra* and *Nilpotents of the Quaternion Algebra*, below this
-article in this category: the idempotents are $0$ and $e_0$, and the nilpotent class is empty, its
+article in this category: the idempotents are $0$ and $e_t$, and the nilpotent class is empty, its
 square-zero set being the single point $0$. Of the
 remarkable subspaces, the centre and the vector subspace contain none, and no nonzero element of
 either is a zero divisor.
@@ -272,13 +272,13 @@ either is a zero divisor.
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
 | $\tilde q = \sum_\mu q_\mu e_\mu$ | General quaternion |
-| $\tilde q^{\natural} = q_0 e_0 - \vec q$ | Natural conjugation |
+| $\tilde q^{\natural} = q_t e_t - \vec q$ | Natural conjugation |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \sum_\mu q_\mu^2$ | Quaternion norm, positive definite over $\mathbb{R}$ |
 | $\tilde q\tilde q^{\natural} = 0$ | Algebraic criterion for a zero divisor |
 | $\mathcal{Z} = \varnothing$ | Zero divisor set |
 | $\tilde\Pi^2 = \tilde\Pi$ | Idempotent equation |
 | $\tilde q^2 = 0$ | Square-zero equation |
-| $\mathbb{R}e_0$ | The centre, the scalar line |
+| $\mathbb{R}e_t$ | The centre, the scalar line |
 | $\mathrm{Vect}(\mathbb{H})$ | The vector subspace |
 
 ## Further Reading

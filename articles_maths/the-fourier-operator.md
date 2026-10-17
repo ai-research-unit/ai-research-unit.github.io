@@ -46,7 +46,7 @@ $\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$.
 On the Schwartz class $\mathcal S(\mathbb R^n)$ the transform is a linear homeomorphism onto itself, of
 order four; this is the content of the invariance of $\mathcal S$ and of the inversion theorem of the
 Fourier article. The two identities this article uses throughout are those of that article as well:
-$\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial_j\mathcal Ff$,
+$\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$ and $\mathcal F(x_jf)=-\frac{1}{2\pi i}\partial/\partial x_j\,\mathcal Ff$,
 the second from differentiating under the integral.
 
 ### Extension to $L^2$ and Unitarity
@@ -135,8 +135,8 @@ $$
 \mathcal F=\sum_\alpha(-i)^{\lvert\alpha\rvert}\langle\cdot,h_\alpha\rangle h_\alpha .
 $$
 
-**Proof.** On $\mathbb R$ the two identities $\mathcal F(\partial_xf)=2\pi i\xi\mathcal Ff$ and
-$\mathcal F(xf)=-\frac1{2\pi i}\partial_x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
+**Proof.** On $\mathbb R$ the two identities $\mathcal F(\partial/\partial x\,f)=2\pi i\xi\mathcal Ff$ and
+$\mathcal F(xf)=-\frac1{2\pi i}\partial/\partial x\mathcal Ff$ show that $\mathcal F$ commutes with the creation and
 annihilation operators $x\pm\frac1{2\pi}\frac{d}{dx}$ which raise and lower $k$, hence that $\mathcal F$
 carries $h_k$ to a multiple of $h_k$; the eigenvalue is then fixed on $h_0$ by the Gaussian computation
 $\mathcal F(\exp(-\pi x^2))=\exp(-\pi x^2)$ of the Fourier article, giving eigenvalue $1$ for $k=0$, and the
@@ -154,15 +154,15 @@ unitary operator is the general statement behind it.
 
 ### Differentiation Becomes Multiplication
 
-**Theorem.** With $D_j=\frac1{2\pi i}\partial_j$ acting on the Schwartz class, one has
+**Theorem.** With $D_j=\frac1{2\pi i}\partial/\partial x_j$ acting on the Schwartz class, one has
 $$
 \mathcal FD_j\mathcal F^{-1}=M_{x_j},\qquad \mathcal FM_{x_j}\mathcal F^{-1}=-D_j ,
 $$
 where $M_{x_j}$ is multiplication by the coordinate $x_j$; equivalently $\mathcal F$ is a unitary
-equivalence carrying the differentiation $\frac1{2\pi i}\partial_j$ into multiplication by the coordinate.
+equivalence carrying the differentiation $\frac1{2\pi i}\partial/\partial x_j$ into multiplication by the coordinate.
 
-**Proof.** The first identity is the rearrangement of $\mathcal F(\partial_jf)=2\pi i\xi_j\mathcal Ff$, the
-second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial_j\mathcal Ff$; both are the differentiation identities
+**Proof.** The first identity is the rearrangement of $\mathcal F(\partial/\partial x_j\,f)=2\pi i\xi_j\mathcal Ff$, the
+second of $\mathcal F(x_jf)=-\frac1{2\pi i}\partial/\partial x_j\,\mathcal Ff$; both are the differentiation identities
 of *Fourier Analysis on Euclidean Spaces*. On $\mathcal S$ they are identities of operators, and they
 extend to the closures.
 
@@ -246,7 +246,7 @@ $\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place o
 | $\check g$ | Inverse transform, $\check g(x)=\int g(\xi)\exp(2\pi ix\cdot\xi)d\xi$ |
 | $P$ | Parity, $(Pf)(x)=f(-x)$; $\mathcal F^2=P$ |
 | $h_\alpha$ | Hermite functions, orthonormal basis with $\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$ |
-| $D_j$ | $\frac1{2\pi i}\partial_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$ |
+| $D_j$ | $\frac1{2\pi i}\partial/\partial x_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$ |
 | $M_{x_j}$, $M_m$ | Multiplication operators |
 | $\tau_y$, $\chi_y$ | Translation and character, $\mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y}$ |
 | $T_k$, $T_m$ | Convolution operator and multiplier operator |

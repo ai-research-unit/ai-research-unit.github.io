@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The unitary group $U(A,h)$ of *Isometries and the Unitary Group of a Form* is an algebraic group, and every algebraic group has a Lie algebra: the tangent space at the identity, computed by the **dual numbers**. This article computes it, and the answer is the space of the skew-adjoint operators with the commutator:
+The unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form* is an algebraic group, and every algebraic group has a Lie algebra: the tangent space at the identity, computed by the **dual numbers**. This article computes it, and the answer is the space of the skew-adjoint operators with the commutator:
 
 $$
-\mathfrak{u}(A,h) = \{T : T^{*} = -T\} = \operatorname{Lie}\,U(A,h) .
+\mathfrak{u}(A,h) = \{T : T^{*} = -T\} = \operatorname{Lie}\,\mathrm{U}(A,h) .
 $$
 
 The computation is algebraic and it uses no limit and no topology. The tangent space is the kernel of the map $U(R[\varepsilon]/\varepsilon^{2}) \to U(R)$, the infinitesimal isometries are the operators whose quadratic form $h(Tx,x)$ vanishes to first order, and the first-order condition is exactly the antisymmetry $T^{*} = -T$; this is the algebraic form of the classical statement that the Lie algebra of the isometry group of a form is the space of the skew operators of that form. The bracket is the commutator, and it closes on the skew operators by the sign rule of *Self-Adjoint and Skew Operators of a Form*.

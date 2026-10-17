@@ -10,7 +10,7 @@ to first order in the perturbation, where $K_0$ is the modular Hamiltonian of th
 
 This article asks what the modular Hamiltonian and the first law of entanglement are in the biquaternion framework. The answer is exact, and the exactness is the framework's contribution.
 
-1. **The modular Hamiltonian is a closed-form element of the informational sector.** For a faithful biquaternion state, $K_0=-\log\tilde\rho_0=\tfrac12\log\frac{4}{1-r_0^2}e_0-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\vec u_r_0\cdot\mathbf e$, so $K_0\in\mathbb{M}_+$. Its expectation in any state is a closed-form real number, computed below.
+1. **The modular Hamiltonian is a closed-form element of the informational sector.** For a faithful biquaternion state, $K_0=-\log\tilde\rho_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\gamma_0$ with $b=\mathrm{artanh}(r_0)$ and $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, so $K_0\in\mathbb{M}_+$. Its expectation in any state is a closed-form real number, computed below.
 
 2. **The first law is the vanishing of a relative entropy to first order, and the framework writes it exactly.** For any two faithful biquaternion states,
 $$
@@ -22,7 +22,7 @@ where $\delta S=S(\tilde\rho)-S(\tilde\rho_0)$ and $\delta\langle K_0\rangle=\ma
 
 The article proceeds as follows. The modular Hamiltonian is defined and its biquaternion closed form is given. The first law is stated, and the exact identity from which it follows is derived. The identity is verified on the explicit perturbation. The linearity that makes the law exact to first order is explained in the framework's terms, and the entanglement Hamiltonian of a subsystem is discussed. The standard applications are recalled, and the article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$. States are $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\vec r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$. States are $\tilde\rho=\tfrac12(e_t+i\vec r\cdot\mathbf e)\in\mathbb{M}_+$ with $|\vec r|\le1$; the logarithms, entropies and relative entropies are the closed forms of *Relative Entropy and the Biquaternion Framework*, and the modular operator, flow and generator are those of *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion Framework*.
 
 ## The Modular Hamiltonian
 
@@ -44,15 +44,15 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-K_\sigma)$ and $\mathr
 
 ### The Modular Hamiltonian of a Biquaternion State
 
-Let $\tilde\rho_0=\tfrac12(e_0+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec u_r_0=\vec r_0/r_0$, $\gamma_0=\vec u_r_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
+Let $\tilde\rho_0=\tfrac12(e_t+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec {u_r}_0=\vec r_0/r_0$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
 $$
 K_0=-\log\tilde\rho_0
-=\tfrac12\log\frac{4}{1-r_0^2}\,e_0-i\,b\,\gamma_0
+=\tfrac12\log\frac{4}{1-r_0^2}\,e_t-i\,b\,\gamma_0
 \ \in\ \mathbb{M}_+ .
 $$
 Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{M}_-$.
 
-The expectation of $K_0$ in an arbitrary state $\tilde\rho=\tfrac12(e_0+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\vec u_r\cdot\vec u_r_0$,
+The expectation of $K_0$ in an arbitrary state $\tilde\rho=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\vec u_r\cdot\vec {u_r}_0$,
 $$
 \langle K_0\rangle_{\tilde\rho}
 =\mathrm{Tr}\big(\tilde\rho\,K_0\big)
@@ -65,7 +65,7 @@ S(\tilde\rho_0)=\langle K_0\rangle_{\tilde\rho_0}
 =-\tfrac12\log\frac{1-r_0^2}{4}
 -r_0\,\mathrm{artanh}(r_0),
 $$
-which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_0+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_0+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
+which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
 
 Note that $\langle K_0\rangle_{\tilde\rho}$ is **linear** in the state $\tilde\rho$: it is $\mathrm{Tr}(\tilde\rho K_0)$, the trace pairing of $\tilde\rho$ with the fixed element $K_0$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
 
@@ -154,7 +154,7 @@ The exact form of the first law therefore reads
 $$
 \delta S=\delta\langle K_{\tilde\sigma}\rangle+\big\langle K_{\tilde\rho,\tilde\sigma}\big\rangle_{\tilde\rho},
 $$
-so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec u_r_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\gamma$ of the closed form.
+so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec {u_r}_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\gamma$ of the closed form.
 
 ## The Entanglement Hamiltonian of a Qubit
 
@@ -210,7 +210,7 @@ The biquaternion framework's role is to make the finite-dimensional prototype of
 
 **Established (theorem, imported).** The first law of entanglement; its derivation from the vanishing of the linear term of relative entropy; the identification of the modular Hamiltonian as the entanglement Hamiltonian of a reduced state; the applications to linearized gravity, black-hole mechanics, and entanglement equilibrium; the Kubo–Mori–Bogoliubov form of the second-order term. All standard.
 
-**Established (recomputed here).** The closed form $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_0-i\,b\,\gamma_0\in\mathbb{M}_+$; its expectation $\langle K_0\rangle_{\tilde\rho}=-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$; the exact identity $\delta S=\delta\langle K_0\rangle-S(\tilde\rho\|\tilde\rho_0)$; and its verification to machine precision on the explicit perturbation, with the quadratic scaling of the deficit.
+**Established (recomputed here).** The closed form $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0\in\mathbb{M}_+$; its expectation $\langle K_0\rangle_{\tilde\rho}=-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$; the exact identity $\delta S=\delta\langle K_0\rangle-S(\tilde\rho\|\tilde\rho_0)$; and its verification to machine precision on the explicit perturbation, with the quadratic scaling of the deficit.
 
 **Interpretation.** That the modular Hamiltonian's being an element of $\mathbb{M}_+$ is read as the first law's being a relation between an entropy (a scalar) and the expectation of an informational-sector element, and that the exact identity is read as the framework's sharp form of the law.
 
@@ -232,7 +232,7 @@ The biquaternion framework's role is to make the finite-dimensional prototype of
 
 The modular Hamiltonian is $K=-\log\Delta$, the generator of the modular flow; in finite dimension it is $K=-\log\rho$, the logarithm of the state, and its expectation is the state's modular energy. The first law of entanglement states that a small perturbation of a state changes its entropy and its modular energy by equal amounts, $\delta S=\delta\langle K_0\rangle$, to first order.
 
-In the biquaternion framework the modular Hamiltonian of a faithful state is the closed-form informational-sector element $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_0-i\,b\,\gamma_0$, with $b=\mathrm{artanh}(r_0)$, and its expectation in any state is $-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$. The first law is the first-order shadow of the exact identity
+In the biquaternion framework the modular Hamiltonian of a faithful state is the closed-form informational-sector element $K_0=\tfrac12\log\frac{4}{1-r_0^2}e_t-i\,b\,\gamma_0$, with $b=\mathrm{artanh}(r_0)$, and its expectation in any state is $-\tfrac12\log\frac{1-r_0^2}{4}-r\,\mathrm{artanh}(r_0)\cos\gamma$. The first law is the first-order shadow of the exact identity
 $$
 \delta S=\delta\langle K_0\rangle-S(\tilde\rho\|\tilde\rho_0),
 $$
@@ -245,14 +245,14 @@ The mechanism is that the modular energy is linear in the state while the relati
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\Delta_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
 | $K_\sigma=-\log\Delta_\sigma$ | Modular Hamiltonian |
 | $K_0=-\log\tilde\rho_0$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{M}_+$ |
-| $r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec u_r_0\cdot\mathbf e$ | Reference-state data |
+| $r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$ | Reference-state data |
 | $\langle K_0\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho K_0)$ | Modular energy of $\tilde\rho$ |
 | $\delta S=S(\tilde\rho)-S(\tilde\rho_0)$ | Entropy change |
 | $\delta\langle K_0\rangle=\mathrm{Tr}((\tilde\rho-\tilde\rho_0)K_0)$ | Modular-energy change |

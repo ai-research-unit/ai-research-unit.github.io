@@ -95,7 +95,6 @@ A ring with $0$ and $1$ as its only idempotents is connected, equivalently indec
 
 | Object | Why it is not in the list of rings with idempotents to compare | Introduced in |
 |---|---|---|
-| $\mathbb{O}$, the octonions | not a ring: the multiplication is not associative, so $e^2 = e$ is not defined in the ring sense | *Octonion Algebra* |
 | the zero ring $\{0\}$ | $0 = 1$, and the single element is an idempotent, excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 | $M_2(\mathbb{R})$ as a "split" ring | it is simple, so it has no nontrivial two-sided idempotent splitting, although it has many one-sided idempotents | *Matrix Algebras* |
 | $\mathbb{B}$ as a "split" ring | simple, like $M_2(\mathbb{C})$; its idempotents give the Peirce corners and not a product decomposition | *Ideals and Peirce Decomposition of the Biquaternion Algebra* |

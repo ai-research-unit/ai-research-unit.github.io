@@ -113,7 +113,6 @@ The objects below are the ones a reader might expect among the matrix rings and 
 | $\mathbb{Z}$, the integers | Noetherian but not Artinian, since $(2) \supsetneq (4) \supsetneq (8) \supsetneq \cdots$ never stabilises; hence not simple Artinian, and so not $M_n(D)$ | *Noetherian and Artinian Rings* |
 | $k[x]$ and $k[x_1,\dots,x_n]$ | not Artinian: $k[x]$ is infinite-dimensional over $k$, and the chain $(x) \supsetneq (x^2) \supsetneq \cdots$ does not stabilise | *Noetherian and Artinian Rings* |
 | The group algebra $\mathbb{C}[G]$ for a nontrivial finite group $G$ | semisimple but a product of two or more matrix algebras, not a single matrix ring | *Group Algebras* |
-| $\mathbb{O}$, the octonions | not a ring at all: the multiplication is not associative | *Octonion Algebra* |
 
 The upper triangular matrices, the split-complex numbers and the dual numbers are the sharp cases: each is a ring of matrices or of a matrix-like shape, and each fails simplicity, so none is a matrix ring over a division ring. The distinction between "a subring of a matrix ring" and "a matrix ring" is exactly the distinction between an arbitrary subalgebra and the full endomorphism algebra of a free module.
 

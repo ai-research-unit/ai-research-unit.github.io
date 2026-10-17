@@ -20,19 +20,19 @@ The article is self-contained topologically: vector bundles over a compact Hausd
 
 ### Definitions and Operations
 
-**Definition.** Let $X$ be a topological space. A **(complex) vector bundle of rank $k$** over $X$ is a continuous surjection $p : E \to X$ together with a structure of complex vector space on each fibre $E_x = p^{-1}(x)$, such that for every $x \in X$ there are a neighbourhood $U$ of $x$ and a homeomorphism
+**Definition.** Let $X$ be a topological space. A **(complex) vector bundle of rank $k$** over $X$ is a continuous surjection $p : E \to X$ together with a structure of complex vector space on each fibre $E_x = p^{-1}(x)$, such that for every $x \in X$ there are a neighbourhood $\Omega$ of $x$ and a homeomorphism
 
 $$
-\varphi : p^{-1}(U) \longrightarrow U\times\mathbb{C}^k
+\varphi : p^{-1}(\Omega) \longrightarrow \Omega\times\mathbb{C}^k
 $$
 
-which is fibrewise a linear isomorphism. The space $E$ is the **total space**, $X$ the **base**, and the pair $(U,\varphi)$ a **local trivialisation**. A **section** of $E$ is a continuous map $\sigma : X \to E$ with $p\circ\sigma = \operatorname{id}_X$; the sections form a module $\Gamma(X,E)$ over the ring $C(X)$ of continuous complex functions. A bundle of rank $1$ is a **line bundle**, and the **trivial bundle** of rank $k$ is $X\times\mathbb{C}^k$ with the first projection.
+which is fibrewise a linear isomorphism. The space $E$ is the **total space**, $X$ the **base**, and the pair $(\Omega,\varphi)$ a **local trivialisation**. A **section** of $E$ is a continuous map $\sigma : X \to E$ with $p\circ\sigma = \operatorname{id}_X$; the sections form a module $\Gamma(X,E)$ over the ring $C(X)$ of continuous complex functions. A bundle of rank $1$ is a **line bundle**, and the **trivial bundle** of rank $k$ is $X\times\mathbb{C}^k$ with the first projection.
 
 **Definition.** A **morphism** of vector bundles over $X$ is a continuous map $\varphi : E \to F$ with $p_F\circ\varphi = p_E$ which is linear on each fibre; an **isomorphism** is a morphism with a two-sided inverse. Two bundles are **isomorphic** if there is an isomorphism between them, and the isomorphism class of $E$ is written $[E]$. The **direct sum** (or Whitney sum) $E\oplus F$ has fibres $E_x\oplus F_x$; the **tensor product** $E\otimes F$ has fibres $E_x\otimes F_x$; the **dual** $E^*$ has fibres the dual spaces; and the **exterior powers** $\Lambda^kE$ are defined fibrewise. All four are bundles over $X$, and the operations are compatible with isomorphism.
 
 **Definition.** For a continuous map $f : Y \to X$ and a bundle $p : E \to X$, the **pullback** $f^*E$ is the bundle over $Y$ with total space $\{(y,e) \in Y\times E : f(y) = p(e)\}$ and the projection to $Y$; it is a bundle of the same rank, and $(f\circ g)^*E \cong g^*f^*E$ and $\operatorname{id}^*E \cong E$.
 
-**Example (circle bundles).** Over the circle $S^1$ every complex vector bundle is trivial, because a bundle over $S^1 = S(S^0)$ is given by a clutching function on $S^0$, that is, by a pair of unitaries in $U(k)$, and $U(k)$ is connected, so all such pairs are homotopic. For **real** line bundles the situation differs: the trivial line bundle and the **Möbius band** are the two real line bundles over $S^1$, classified by the sign of the transition function, and they exhibit the dependence of the classification on the coefficient field.
+**Example (circle bundles).** Over the circle $S^1$ every complex vector bundle is trivial, because a bundle over $S^1 = S(S^0)$ is given by a clutching function on $S^0$, that is, by a pair of unitaries in $\mathrm{U}(k)$, and $\mathrm{U}(k)$ is connected, so all such pairs are homotopic. For **real** line bundles the situation differs: the trivial line bundle and the **Möbius band** are the two real line bundles over $S^1$, classified by the sign of the transition function, and they exhibit the dependence of the classification on the coefficient field.
 
 **Proposition.** A bundle of rank $k$ over $X$ is trivial if and only if it admits $k$ sections $\sigma_1,\dots,\sigma_k$ which are linearly independent at every point of $X$.
 
@@ -71,7 +71,7 @@ Its elements are written as formal differences $[E]-[F]$. Equivalently, $K^0(X) 
 **Proposition (the rank map).** The rank of a bundle is locally constant, so for a connected $X$ the rank is a well-defined homomorphism $\operatorname{rank} : K^0(X)\to\mathbb{Z}$, and the **reduced group** is
 
 $$
-K^{0}_{\mathrm{red}}(X) = \ker\bigl(\operatorname{rank} : K^0(X)\to\mathbb{Z}\bigr) , \qquad K^0(X) \cong \mathbb{Z}\oplusK^{0}_{\mathrm{red}}(X)
+K^{0}_{\mathrm{red}}(X) = \ker\bigl(\operatorname{rank} : K^0(X)\to\mathbb{Z}\bigr) , \qquad K^0(X) \cong \mathbb{Z}\oplus K^{0}_{\mathrm{red}}(X)
 $$
 
 for $X$ connected and nonempty, the splitting being given by $n\mapsto n[1]$ with $[1]$ the class of the trivial line bundle.
@@ -118,7 +118,7 @@ $$
 
 with $K^{-0}(X) = K^{0}_{\mathrm{red}}(X)$ for based $X$, and the **unreduced** groups of a compact space are $K^n(X) = K^{0}_{\mathrm{red}}(S^nX_+)$, where $X_+$ is $X$ with a disjoint base point; for connected $X$ one has $K^{0}_{\mathrm{red}}(S^nX_+)\cong K^{-n}(X)\oplus\mathbb{Z}$.
 
-**Proposition.** The reduced groups of a based compact space satisfy $K^{0}_{\mathrm{red}}(X\vee Y)\congK^{0}_{\mathrm{red}}(X)\oplusK^{0}_{\mathrm{red}}(Y)$ for a wedge of based spaces, and for the sphere $S^0$ one has $K^{0}_{\mathrm{red}}(S^0)\cong\mathbb{Z}$, generated by the class $[1]-[0]$ of the trivial rank-one bundle over the two-point space.
+**Proposition.** The reduced groups of a based compact space satisfy $K^{0}_{\mathrm{red}}(X\vee Y)\cong K^{0}_{\mathrm{red}}(X)\oplus K^{0}_{\mathrm{red}}(Y)$ for a wedge of based spaces, and for the sphere $S^0$ one has $K^{0}_{\mathrm{red}}(S^0)\cong\mathbb{Z}$, generated by the class $[1]-[0]$ of the trivial rank-one bundle over the two-point space.
 
 **Proof.** A bundle over a wedge restricts to bundles over the two summands and is recovered from them, since a bundle over the wedge is determined by its restrictions and these can be glued with any pair of ranks; the resulting monoid is $V(X)\times V(Y)$ and its Grothendieck group is the direct sum. For $S^0$ the bundles are the trivial ones of two ranks and the reduced group is $\mathbb{Z}$.
 
@@ -127,20 +127,20 @@ with $K^{-0}(X) = K^{0}_{\mathrm{red}}(X)$ for based $X$, and the **unreduced** 
 **Definition.** Let $X$ be a based compact space, and consider the space $SX$ as the union of the two cones $CX^{\pm}$ glued along $X$. A bundle $E$ over $SX$ is determined by its restrictions $E^\pm$ to the two cones, trivialisable over each cone, and the identification along $X$; after choosing trivialisations of rank $k$ over the cones, the identification is a continuous map
 
 $$
-g : X \longrightarrow U(k) ,
+g : X \longrightarrow \mathrm{U}(k) ,
 $$
 
-the **clutching function**, well defined up to homotopy and up to the changes of trivialisation, and depending only on the homotopy class of $g$. The clutching construction gives a bijection between isomorphism classes of rank-$k$ bundles over $SX$ and homotopy classes of maps $X\to U(k)$ for a suitable class of spaces.
+the **clutching function**, well defined up to homotopy and up to the changes of trivialisation, and depending only on the homotopy class of $g$. The clutching construction gives a bijection between isomorphism classes of rank-$k$ bundles over $SX$ and homotopy classes of maps $X\to \mathrm{U}(k)$ for a suitable class of spaces.
 
-**Theorem (clutching on the sphere).** Take $X = S^1$, so that $SX = S^2$. Then the clutching functions are the continuous maps $S^1 \to U(1)$ and the homotopy classes of such maps are the integers, through the **degree**
+**Theorem (clutching on the sphere).** Take $X = S^1$, so that $SX = S^2$. Then the clutching functions are the continuous maps $S^1 \to \mathrm{U}(1)$ and the homotopy classes of such maps are the integers, through the **degree**
 
 $$
 \deg(g) = \frac{1}{2\pi i}\oint_{S^1}\frac{g'(z)}{g(z)}\,dz = \frac{1}{2\pi i}\oint_{S^1} g^{-1}\,dg ,
 $$
 
-the **winding number** of $g$; so the isomorphism classes of complex line bundles over $S^2$ are in bijection with $\mathbb{Z}$, the class with clutching function of degree $n$ being written $L_n$. For rank $k \geq 1$ the same argument with $\det\circ g$ classifies the determinant, and the general classification uses the fundamental group $\pi_1(U(k))\cong\mathbb{Z}$.
+the **winding number** of $g$; so the isomorphism classes of complex line bundles over $S^2$ are in bijection with $\mathbb{Z}$, the class with clutching function of degree $n$ being written $L_n$. For rank $k \geq 1$ the same argument with $\det\circ g$ classifies the determinant, and the general classification uses the fundamental group $\pi_1(\mathrm{U}(k))\cong\mathbb{Z}$.
 
-**Proof.** A continuous map $S^1\to U(1)$ lifts along the exponential $\mathbb{R}\to U(1)$, and the lift is unique up to an integer shift, which is the degree; equivalently the degree is the winding number of the map, and that two maps are homotopic exactly when their degrees agree is the standard lifting theorem, quoted. The classical integral formula for the winding number belongs to the function theory of Part III, and only the count itself is used here. The bijection between homotopy classes of clutching functions and bundles over the suspension is the standard clutching theorem, quoted.
+**Proof.** A continuous map $S^1\to \mathrm{U}(1)$ lifts along the exponential $\mathbb{R}\to \mathrm{U}(1)$, and the lift is unique up to an integer shift, which is the degree; equivalently the degree is the winding number of the map, and that two maps are homotopic exactly when their degrees agree is the standard lifting theorem, quoted. The classical integral formula for the winding number belongs to the function theory of Part III, and only the count itself is used here. The bijection between homotopy classes of clutching functions and bundles over the suspension is the standard clutching theorem, quoted.
 
 **Example (numerical check of the degree).** The degree has been verified by counting the net winding of the image of the unit circle about the origin on a grid of $200000$ points, for the maps $z\mapsto z^n$ with $n = \pm1,\dots,\pm5$: the computed degree is $n$ in each case. The step of the argument is $2\pi\lvert n\rvert/200000 < \pi$ throughout, so the principal argument increment at each step is unambiguous and the winding is the exact integer $n$. The degree is additive, $\deg(gh) = \deg(g)+\deg(h)$, as checked on $z^3z^4$ (degree $7$) and on $z^{-2}z^5$ (degree $3$). The additivity is the algebraic statement that the winding of a product of clutching functions is the sum of the windings, which is the degree map $\mathbb{Z}\to\mathbb{Z}$ in the classification above.
 
@@ -149,7 +149,7 @@ the **winding number** of $g$; so the isomorphism classes of complex line bundle
 **Theorem (Bott periodicity; standard).** Let $X$ be a based compact space. There is a natural isomorphism
 
 $$
-\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\congK^{0}_{\mathrm{red}}(X),
+\beta : K^{0}_{\mathrm{red}}(X) \;\longrightarrow\; K^{0}_{\mathrm{red}}(S^2X) , \qquad K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X),
 $$
 
 and consequently the groups $K^{-n}$ are periodic of period two, $K^{-n-2}(X)\cong K^{-n}(X)$ for all $n \geq 0$. The **Bott class** is the generator
@@ -160,7 +160,7 @@ $$
 
 where $H$ is the bundle over $S^2$ with clutching function of degree $1$, and $\beta$ generates $K^{0}_{\mathrm{red}}(S^{2n})$ for every $n$.
 
-**Proof.** The isomorphism is given by the external product with the Bott class, $\alpha\mapsto \alpha\boxtimes\beta$, and the theorem is Bott's periodicity theorem; the standard proofs use the clutching description of the groups as homotopy classes of maps into the stable unitary group and the structure of the loop space of $U$. It is quoted as standard.
+**Proof.** The isomorphism is given by the external product with the Bott class, $\alpha\mapsto \alpha\boxtimes\beta$, and the theorem is Bott's periodicity theorem; the standard proofs use the clutching description of the groups as homotopy classes of maps into the stable unitary group and the structure of the loop space of $\Omega$. It is quoted as standard.
 
 **Corollary.** For the spheres,
 
@@ -226,7 +226,7 @@ so that the external product is an isomorphism when both $K$-groups are free; th
 
 **Theorem (the commutative model).** Let $X$ be a compact Hausdorff space and $A = C(X)$. Then $K^0(X)\cong K_0(A)$ through Swan's theorem, and $K^1(X)\cong K_1(A)$, where $K_1$ of a $\mathrm{C}^*$-algebra is the group of connected components of the unitary groups of its matrix algebras over $A$; the six-term sequence above is the specialisation of the six-term sequence of a $\mathrm{C}^*$-algebra to the case of $A\otimes C_0(\mathbb{R})$ and its ideal structure.
 
-**Pro.** The first isomorphism is Swan's theorem. For the second, the clutching description identifies $K^1(X) = K^{0}_{\mathrm{red}}(SX)$ with the homotopy classes of maps $X\to U(k)$ for large $k$, which are the components of the unitary group of $C(X)$; the identification with $K_1(C(X))$ and the general six-term sequence are developed. This is standard.
+**Pro.** The first isomorphism is Swan's theorem. For the second, the clutching description identifies $K^1(X) = K^{0}_{\mathrm{red}}(SX)$ with the homotopy classes of maps $X\to \mathrm{U}(k)$ for large $k$, which are the components of the unitary group of $C(X)$; the identification with $K_1(C(X))$ and the general six-term sequence are developed. This is standard.
 
 **Remark (the index-theoretic role).** The reason $K$-theory is the natural home of index problems is that a Fredholm operator has an index, and the index is a difference of two projections, hence an element of $K_0$; for a family of elliptic operators parametrised by a compact space the index is an element of $K^0(X)$. The elliptic operators, their symbols and the analytic index require the differential operators and the functional analysis of Part III, where the analysis is available, and the resulting theorem — the identification of the analytic index with a topological index computed in the groups of this article — is the content of *The Atiyah–Singer Index Theorem and K-Theory*. The differential-geometric theory of bundles, connections and curvature, including the Chern–Weil construction of characteristic classes, is treated in *Smooth Manifolds and Differential Geometry*. Nothing from those developments is used above.
 
@@ -234,9 +234,9 @@ so that the external product is an isomorphism when both $K$-groups are free; th
 
 ## Summary
 
-A **complex vector bundle** of rank $k$ over a space $X$ is a continuous surjection $p: E\to X$ with a complex vector space on each fibre and local trivialisations $p^{-1}(U)\cong U\times\mathbb{C}^k$; bundles have direct sums, tensor products, duals, exterior powers and pullbacks, and **homotopic maps induce isomorphic pullbacks**, so that bundles over a contractible space are trivial. The isomorphism classes of bundles over a compact Hausdorff space $X$ form the commutative monoid $V(X)$ under $\oplus$, and $K^0(X)$ is its **Grothendieck group**, with elements $[E]-[F]$ and the universal property of the free abelian group on $V(X)$ modulo $[E\oplus F] = [E]+[F]$; $X\mapsto K^0(X)$ is a contravariant functor, $\otimes$ makes $K^0(X)$ a commutative ring with unit $[1]$, the **rank** is a homomorphism $K^0(X)\to\mathbb{Z}$ for connected $X$, and the reduced group is $K^{0}_{\mathrm{red}}(X) = \ker(\operatorname{rank})$, so that $K^0(X)\cong\mathbb{Z}\oplusK^{0}_{\mathrm{red}}(X)$. **Swan's theorem** identifies $K^0(X)$ with the algebraic $K_0$ of the ring $C(X)$, which is the bridge to *K-Theory of Rings* and the commutative case.
+A **complex vector bundle** of rank $k$ over a space $X$ is a continuous surjection $p: E\to X$ with a complex vector space on each fibre and local trivialisations $p^{-1}(\Omega)\cong \Omega\times\mathbb{C}^k$; bundles have direct sums, tensor products, duals, exterior powers and pullbacks, and **homotopic maps induce isomorphic pullbacks**, so that bundles over a contractible space are trivial. The isomorphism classes of bundles over a compact Hausdorff space $X$ form the commutative monoid $V(X)$ under $\oplus$, and $K^0(X)$ is its **Grothendieck group**, with elements $[E]-[F]$ and the universal property of the free abelian group on $V(X)$ modulo $[E\oplus F] = [E]+[F]$; $X\mapsto K^0(X)$ is a contravariant functor, $\otimes$ makes $K^0(X)$ a commutative ring with unit $[1]$, the **rank** is a homomorphism $K^0(X)\to\mathbb{Z}$ for connected $X$, and the reduced group is $K^{0}_{\mathrm{red}}(X) = \ker(\operatorname{rank})$, so that $K^0(X)\cong\mathbb{Z}\oplus K^{0}_{\mathrm{red}}(X)$. **Swan's theorem** identifies $K^0(X)$ with the algebraic $K_0$ of the ring $C(X)$, which is the bridge to *K-Theory of Rings* and the commutative case.
 
-The **suspension** $SX$ and the **clutching** description of bundles over it by homotopy classes of maps $X\to U(k)$ reduce the computation of the higher groups $K^{-n}(X) = K^{0}_{\mathrm{red}}(S^nX)$ to the bundle classification on spheres: over $S^2$ the clutching functions are classified by the **degree** of a circle map, so the line bundles are the $L_n$, $n\in\mathbb{Z}$, and the resulting group is $K^{0}_{\mathrm{red}}(S^2)\cong\mathbb{Z}$ generated by the **Bott class** $\beta = [H]-[1]$. **Bott periodicity**, $K^{0}_{\mathrm{red}}(S^2X)\congK^{0}_{\mathrm{red}}(X)$, makes the theory periodic of period two, so that $K^{0}_{\mathrm{red}}(S^{2n})\cong\mathbb{Z}$ with generator $\beta^n$, $K^{0}_{\mathrm{red}}(S^{2n+1}) = 0$, and $K^0(X)\cong K^0(X\times\mathbb{R}^2)$; the real theory $KO$ is periodic of period $8$. The projective spaces satisfy $K^0(\mathbb{CP}^n)\cong\mathbb{Z}[\gamma]/((1-\gamma)^{n+1})$ with $\gamma = [H]$, of rank $n+1$, and the tori satisfy $K^0(\mathbb{T}^n)\cong\mathbb{Z}^{2^{n-1}}$; for a closed pair there is a six-term exact sequence relating $K^0$ and $K^1$ of the pair and of the subspaces, and the external product with the Künneth theorem computes the groups of a product. The analytic index, the elliptic operators and the Chern–Weil characteristic classes belong to the analysis of Part III and to the other articles of this category; the K-groups of a general $\mathrm{C}^*$-algebra, with $K^0(X)\cong K_0(C(X))$ and $K^1(X)\cong K_1(C(X))$ as the commutative case, belong.
+The **suspension** $SX$ and the **clutching** description of bundles over it by homotopy classes of maps $X\to \mathrm{U}(k)$ reduce the computation of the higher groups $K^{-n}(X) = K^{0}_{\mathrm{red}}(S^nX)$ to the bundle classification on spheres: over $S^2$ the clutching functions are classified by the **degree** of a circle map, so the line bundles are the $L_n$, $n\in\mathbb{Z}$, and the resulting group is $K^{0}_{\mathrm{red}}(S^2)\cong\mathbb{Z}$ generated by the **Bott class** $\beta = [H]-[1]$. **Bott periodicity**, $K^{0}_{\mathrm{red}}(S^2X)\cong K^{0}_{\mathrm{red}}(X)$, makes the theory periodic of period two, so that $K^{0}_{\mathrm{red}}(S^{2n})\cong\mathbb{Z}$ with generator $\beta^n$, $K^{0}_{\mathrm{red}}(S^{2n+1}) = 0$, and $K^0(X)\cong K^0(X\times\mathbb{R}^2)$; the real theory $KO$ is periodic of period $8$. The projective spaces satisfy $K^0(\mathbb{CP}^n)\cong\mathbb{Z}[\gamma]/((1-\gamma)^{n+1})$ with $\gamma = [H]$, of rank $n+1$, and the tori satisfy $K^0(\mathbb{T}^n)\cong\mathbb{Z}^{2^{n-1}}$; for a closed pair there is a six-term exact sequence relating $K^0$ and $K^1$ of the pair and of the subspaces, and the external product with the Künneth theorem computes the groups of a product. The analytic index, the elliptic operators and the Chern–Weil characteristic classes belong to the analysis of Part III and to the other articles of this category; the K-groups of a general $\mathrm{C}^*$-algebra, with $K^0(X)\cong K_0(C(X))$ and $K^1(X)\cong K_1(C(X))$ as the commutative case, belong.
 
 ## Summary of Notation
 
@@ -249,7 +249,7 @@ The **suspension** $SX$ and the **clutching** description of bundles over it by 
 | $K^0(X)$, $K^{0}_{\mathrm{red}}(X)$ | Grothendieck group of $V(X)$; reduced group $\ker(\operatorname{rank})$ |
 | $X_+$, $SX$, $S^nX$ | Adjoined base point; reduced suspension; its iterates |
 | $K^{-n}(X)$ | $K^{0}_{\mathrm{red}}(S^nX)$ |
-| $S^1\cong U(1)$, $g : X\to U(k)$ | Circle group; clutching function |
+| $S^1\cong \mathrm{U}(1)$, $g : X\to \mathrm{U}(k)$ | Circle group; clutching function |
 | $\deg(g)$ | Degree (winding number) of a circle map |
 | $H$, $\beta = [H]-[1]$ | Clutching-degree-one bundle on $S^2$; Bott class |
 | $\gamma$ | $[H]$ on $\mathbb{CP}^n$; $K^0(\mathbb{CP}^n)\cong\mathbb{Z}[\gamma]/((1-\gamma)^{n+1})$ |

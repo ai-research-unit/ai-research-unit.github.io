@@ -144,7 +144,7 @@ under $f \mapsto ((\mathcal F f)(\pi))$, the target being the algebraic direct s
 
 **Corollary (Gelfand–Raĭkov for compact groups).** The finite-dimensional representations of $K$ separate the points of $K$: for $x \neq y$ there is a finite-dimensional continuous representation $\pi$ with $\pi(x) \neq \pi(y)$. Consequently a compact group is isomorphic to a closed subgroup of a product of unitary groups, and a compact group is determined up to isomorphism by its finite-dimensional representation theory.
 
-**Proof.** The separation statement is contained in the lemma on separation of points, since a matrix coefficient distinguishes $x$ and $y$ exactly when the underlying finite-dimensional representation does. The embedding is into $\prod_\pi U(\mathcal{H}_\pi)$ with the product topology, and it is a homeomorphism onto its image by compactness.
+**Proof.** The separation statement is contained in the lemma on separation of points, since a matrix coefficient distinguishes $x$ and $y$ exactly when the underlying finite-dimensional representation does. The embedding is into $\prod_\pi \mathrm{U}(\mathcal{H}_\pi)$ with the product topology, and it is a homeomorphism onto its image by compactness.
 
 ### Multiplicities and the Class-Function Expansion
 

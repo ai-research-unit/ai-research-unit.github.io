@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An **operator on a sheaf** is an endomorphism of that sheaf: a morphism $\mathcal{F}\to\mathcal{F}$ in the category of sheaves on a topological space $X$. The operators on $\mathcal{F}$ are therefore the elements of the hom-set $\operatorname{End}(\mathcal{F})=\operatorname{Hom}(\mathcal{F},\mathcal{F})$, and composition of morphisms makes this set a unital associative ring, commutative only in the degenerate cases; its group of units is the group $\operatorname{Aut}(\mathcal{F})$ of automorphisms of the sheaf. The operators on a sheaf are the sheaf-theoretic instance of the endomorphisms of an object of a category, and this article develops the three things the operator layer of the category is built on: the ring $\operatorname{End}(\mathcal{F})$ of global operators, the action of that ring on the sections of $\mathcal{F}$, and the **sheaf of operators** $\mathcal{E}nd(\mathcal{F})$, whose sections over an open set $U$ are the operators on the restriction $\mathcal{F}|_U$.
+An **operator on a sheaf** is an endomorphism of that sheaf: a morphism $\mathcal{F}\to\mathcal{F}$ in the category of sheaves on a topological space $X$. The operators on $\mathcal{F}$ are therefore the elements of the hom-set $\operatorname{End}(\mathcal{F})=\operatorname{Hom}(\mathcal{F},\mathcal{F})$, and composition of morphisms makes this set a unital associative ring, commutative only in the degenerate cases; its group of units is the group $\operatorname{Aut}(\mathcal{F})$ of automorphisms of the sheaf. The operators on a sheaf are the sheaf-theoretic instance of the endomorphisms of an object of a category, and this article develops the three things the operator layer of the category is built on: the ring $\operatorname{End}(\mathcal{F})$ of global operators, the action of that ring on the sections of $\mathcal{F}$, and the **sheaf of operators** $\mathcal{E}nd(\mathcal{F})$, whose sections over an open set $\Omega$ are the operators on the restriction $\mathcal{F}|_\Omega$.
 
 The article fixes the notation of the operator layer and proves the elementary structure: the ring and its opposite, the left and the right multiplications and the sandwich, the sheaf of operators and the comparison of its stalks with the endomorphism rings of the stalks, and the central role of the scalars of a structure sheaf. Its companion *The Sheaf of Operators*, below this article, develops the sheaf $\mathcal{E}nd(\mathcal{F})$ as a sheaf of rings in its own right, with its sections, its sheaf of units and its local structure; *The Restriction and Extension Operators*, below this article, treats the functors by which the operators on different opens are compared.
 
@@ -45,11 +45,11 @@ $$
 Z(\operatorname{End}(\mathcal{F}))\cong\mathcal{O}_X(X).
 $$
 
-*Proof.* The map is a homomorphism because $\mathcal{O}_X$ is commutative: $m_{ab}=m_a\circ m_b$. For centrality, $m_aT=Tm_a$ holds for $\mathcal{O}_X$-linear $T$ by the definition of linearity. For local freeness, the centre of a matrix ring $M_r(R)$ over a commutative ring $R$ is the scalar matrices, $Z(M_r(R))\cong R$ for $r\geq 1$; the local identifications $Z(\mathcal{E}nd(\mathcal{F})|_{U_i})\cong\mathcal{O}_X(U_i)$ glue to $Z(\mathcal{E}nd(\mathcal{F}))\cong\mathcal{O}_X$, and taking global sections gives the statement.
+*Proof.* The map is a homomorphism because $\mathcal{O}_X$ is commutative: $m_{ab}=m_a\circ m_b$. For centrality, $m_aT=Tm_a$ holds for $\mathcal{O}_X$-linear $T$ by the definition of linearity. For local freeness, the centre of a matrix ring $M_r(R)$ over a commutative ring $R$ is the scalar matrices, $Z(M_r(R))\cong R$ for $r\geq 1$; the local identifications $Z(\mathcal{E}nd(\mathcal{F})|_{\Omega_i})\cong\mathcal{O}_X(\Omega_i)$ glue to $Z(\mathcal{E}nd(\mathcal{F}))\cong\mathcal{O}_X$, and taking global sections gives the statement.
 
 ## The Sheaf of Operators
 
-**Definition.** The **presheaf of operators** of $\mathcal{F}$ assigns to an open $U\subseteq X$ the ring $\operatorname{End}(\mathcal{F}|_U)$ and to an inclusion $V\subseteq U$ the restriction $T\mapsto T|_V$. It is a sheaf of rings, the **sheaf of operators** of $\mathcal{F}$,
+**Definition.** The **presheaf of operators** of $\mathcal{F}$ assigns to an open $\Omega\subseteq X$ the ring $\operatorname{End}(\mathcal{F}|_\Omega)$ and to an inclusion $V\subseteq \Omega$ the restriction $T\mapsto T|_V$. It is a sheaf of rings, the **sheaf of operators** of $\mathcal{F}$,
 
 $$
 \mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F}),
@@ -57,23 +57,23 @@ $$
 
 with $\mathcal{H}om$ the sheaf hom of *Presheaves and Sheaves*; for sheaves of $\mathcal{O}_X$-modules it is the sheaf of $\mathcal{O}_X$-algebras $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{F})$.
 
-**Proposition (the sheaf axiom for operators).** The presheaf of operators is a sheaf: for every open $U$, every open cover $U=\bigcup_{i\in I}U_i$ and every family $T_i\in\operatorname{End}(\mathcal{F}|_{U_i})$ with $T_i|_{U_i\cap U_j}=T_j|_{U_i\cap U_j}$ for all $i,j$, there is a unique $T\in\operatorname{End}(\mathcal{F}|_U)$ with $T|_{U_i}=T_i$.
+**Proposition (the sheaf axiom for operators).** The presheaf of operators is a sheaf: for every open $\Omega$, every open cover $\Omega=\bigcup_{i\in I}\Omega_i$ and every family $T_i\in\operatorname{End}(\mathcal{F}|_{\Omega_i})$ with $T_i|_{\Omega_i\cap \Omega_j}=T_j|_{\Omega_i\cap \Omega_j}$ for all $i,j$, there is a unique $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ with $T|_{\Omega_i}=T_i$.
 
-*Proof.* Uniqueness: two morphisms agreeing on every member of a cover agree on their union, since a morphism of sheaves is determined by its values on any cover. Existence: for a section $s\in\mathcal{F}(W)$ with $W\subseteq U$, the sections $T_i(s|_{W\cap U_i})$ are defined on $W\cap U_i$ and agree on the double overlaps, by the compatibility and the functoriality of $T_i$; they glue to a section $T(s)\in\mathcal{F}(W)$ by the sheaf condition of $\mathcal{F}$. The assignment $s\mapsto T(s)$ is a morphism, because each $T_i$ is, and it restricts to $T_i$.
+*Proof.* Uniqueness: two morphisms agreeing on every member of a cover agree on their union, since a morphism of sheaves is determined by its values on any cover. Existence: for a section $s\in\mathcal{F}(W)$ with $W\subseteq \Omega$, the sections $T_i(s|_{W\cap \Omega_i})$ are defined on $W\cap \Omega_i$ and agree on the double overlaps, by the compatibility and the functoriality of $T_i$; they glue to a section $T(s)\in\mathcal{F}(W)$ by the sheaf condition of $\mathcal{F}$. The assignment $s\mapsto T(s)$ is a morphism, because each $T_i$ is, and it restricts to $T_i$.
 
-**Proposition (sections and restrictions).** For every open $U\subseteq X$,
+**Proposition (sections and restrictions).** For every open $\Omega\subseteq X$,
 
 $$
-\Gamma(U,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_U),\qquad \operatorname{End}(\mathcal{F})=\Gamma(X,\mathcal{E}nd(\mathcal{F})),
+\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega),\qquad \operatorname{End}(\mathcal{F})=\Gamma(X,\mathcal{E}nd(\mathcal{F})),
 $$
 
-and the restriction map $\mathcal{E}nd(\mathcal{F})(U)\to\mathcal{E}nd(\mathcal{F})(V)$ for $V\subseteq U$ is $T\mapsto T|_V$. For $\mathcal{F}$ a sheaf of $\mathcal{O}_X$-modules, these are isomorphisms of $\mathcal{O}_X(U)$-algebras and of $\mathcal{O}_X(X)$-algebras respectively.
+and the restriction map $\mathcal{E}nd(\mathcal{F})(\Omega)\to\mathcal{E}nd(\mathcal{F})(V)$ for $V\subseteq \Omega$ is $T\mapsto T|_V$. For $\mathcal{F}$ a sheaf of $\mathcal{O}_X$-modules, these are isomorphisms of $\mathcal{O}_X(\Omega)$-algebras and of $\mathcal{O}_X(X)$-algebras respectively.
 
-*Proof.* The first identity is the definition of the presheaf; the sheaf property makes it the sheaf. The algebra structure is inherited sectionwise from $\mathcal{O}_X(U)$.
+*Proof.* The first identity is the definition of the presheaf; the sheaf property makes it the sheaf. The algebra structure is inherited sectionwise from $\mathcal{O}_X(\Omega)$.
 
-**Proposition (action on the sheaf).** $\mathcal{E}nd(\mathcal{F})$ acts on $\mathcal{F}$: for $U$ open, $T\in\mathcal{E}nd(\mathcal{F})(U)$ and $s\in\mathcal{F}(U)$, the evaluation $T(s)$ is a section of $\mathcal{F}(U)$, and the action is compatible with restrictions. Consequently $\mathcal{F}$ is a sheaf of left $\mathcal{E}nd(\mathcal{F})$-modules, and $\Gamma(U,\mathcal{F})$ is a left $\Gamma(U,\mathcal{E}nd(\mathcal{F}))$-module for every $U$.
+**Proposition (action on the sheaf).** $\mathcal{E}nd(\mathcal{F})$ acts on $\mathcal{F}$: for $\Omega$ open, $T\in\mathcal{E}nd(\mathcal{F})(\Omega)$ and $s\in\mathcal{F}(\Omega)$, the evaluation $T(s)$ is a section of $\mathcal{F}(\Omega)$, and the action is compatible with restrictions. Consequently $\mathcal{F}$ is a sheaf of left $\mathcal{E}nd(\mathcal{F})$-modules, and $\Gamma(\Omega,\mathcal{F})$ is a left $\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))$-module for every $\Omega$.
 
-*Proof.* The evaluation is the morphism $\mathcal{E}nd(\mathcal{F})(U)\to\operatorname{End}(\mathcal{F}|_U)$ followed by the application of an operator to a section; compatibility with restrictions is the defining property of the restriction of a morphism.
+*Proof.* The evaluation is the morphism $\mathcal{E}nd(\mathcal{F})(\Omega)\to\operatorname{End}(\mathcal{F}|_\Omega)$ followed by the application of an operator to a section; compatibility with restrictions is the defining property of the restriction of a morphism.
 
 ## The Stalks of the Sheaf of Operators
 
@@ -89,7 +89,7 @@ $$
 \mathcal{E}nd(\mathcal{F})_x\cong\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x).
 $$
 
-*Proof.* The stalk of the hom sheaf is the filtered colimit $\varinjlim_{x\in U}\operatorname{Hom}(\mathcal{F}|_U,\mathcal{G}|_U)$, and passing to the colimit of the stalk maps is the comparison map, since a morphism sends germs to germs. If the stalk map of a local morphism vanishes, the morphism is zero on a neighbourhood of $x$, so the germ is zero: the map is injective. For finite presentation, the restriction and the colimit are inverse: an element of $\operatorname{Hom}(\mathcal{F}_x,\mathcal{G}_x)$ is represented on a small open $U$ by a morphism $\mathcal{F}|_U\to\mathcal{G}|_U$ because $\mathcal{F}$ admits a local presentation by finitely many generators and relations, and two representatives agree on a smaller open set. When $\mathcal{G}=\mathcal{F}$ the source is $\mathcal{E}nd(\mathcal{F})_x$ and the target is $\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)$.
+*Proof.* The stalk of the hom sheaf is the filtered colimit $\varinjlim_{x\in \Omega}\operatorname{Hom}(\mathcal{F}|_\Omega,\mathcal{G}|_\Omega)$, and passing to the colimit of the stalk maps is the comparison map, since a morphism sends germs to germs. If the stalk map of a local morphism vanishes, the morphism is zero on a neighbourhood of $x$, so the germ is zero: the map is injective. For finite presentation, the restriction and the colimit are inverse: an element of $\operatorname{Hom}(\mathcal{F}_x,\mathcal{G}_x)$ is represented on a small open $\Omega$ by a morphism $\mathcal{F}|_\Omega\to\mathcal{G}|_\Omega$ because $\mathcal{F}$ admits a local presentation by finitely many generators and relations, and two representatives agree on a smaller open set. When $\mathcal{G}=\mathcal{F}$ the source is $\mathcal{E}nd(\mathcal{F})_x$ and the target is $\operatorname{End}_{\mathcal{O}_{X,x}}(\mathcal{F}_x)$.
 
 **Corollary (locally free sheaves).** If $\mathcal{F}$ is locally free of rank $r$ over $\mathcal{O}_X$, then
 
@@ -148,7 +148,7 @@ The sheaf of operators is a sheaf of rings, or of $\mathcal{O}_X$-algebras, whos
 | $m_a$ | multiplication by a scalar $a\in\mathcal{O}_X(X)$, in the centre |
 | $Z(\operatorname{End}(\mathcal{F}))$ | centre; $\cong\mathcal{O}_X(X)$ for $\mathcal{F}$ locally free of rank $\geq 1$ |
 | $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$ | sheaf of operators; a sheaf of rings, of $\mathcal{O}_X$-algebras in the module case |
-| $\Gamma(U,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_U)$ | sections of the sheaf of operators |
+| $\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_\Omega)$ | sections of the sheaf of operators |
 | $\mathcal{E}nd(\mathcal{F})_x\to\operatorname{End}(\mathcal{F}_x)$ | comparison map; injective, an isomorphism for finite presentation |
 | $\mathcal{F}^{\vee}$ | dual sheaf $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{F},\mathcal{O}_X)$ |
 

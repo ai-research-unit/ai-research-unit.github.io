@@ -9,7 +9,7 @@ The article depends on *Quaternion Algebra* for the multiplication table and on 
 
 The corpus's default base is a commutative ring with identity, and the regular representation is defined over such a base whenever the algebra is faithful over itself; the determinant and norm statements are stated over a field $F$, and the positivity of the quaternion norm is the statement over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, written $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with conjugate $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the matrix of left multiplication is $\mathsf{M}_4(\tilde q)$ and the matrix of right multiplication is $\mathsf{M}_4^{R}(\tilde q)$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, written $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the matrix of left multiplication is $\mathsf{M}_4(\tilde q)$ and the matrix of right multiplication is $\mathsf{M}_4^{R}(\tilde q)$.
 
 ## The Left Regular Representation
 
@@ -19,43 +19,43 @@ $$
 \mathsf{M}_4 : \mathbb{H} \longrightarrow M_4(F),
 $$
 
-and it is fixed by its values on the basis, the rest following by $F$-linearity. The **Cayley matrix** of $\tilde q$ is its image, the matrix of left multiplication in the basis $(e_0,e_1,e_2,e_3)$, whose $m$-th column is the coordinate column of the product $\tilde q e_m$. The quaternion units are assigned the matrices
+and it is fixed by its values on the basis, the rest following by $F$-linearity. The **Cayley matrix** of $\tilde q$ is its image, the matrix of left multiplication in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, whose $m$-th column is the coordinate column of the product $\tilde q e_m$. The quaternion units are assigned the matrices
 
 $$
-\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\quad
-\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
-\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
-\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+\mathsf{M}_4(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\quad
+\mathsf{M}_4(\vec e_x)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\quad
+\mathsf{M}_4(\vec e_y)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\quad
+\mathsf{M}_4(\vec e_z)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
 $$
 
-and a general quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ therefore maps to
+and a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ therefore maps to
 
 $$
 \mathsf{M}_4(\tilde q) = \begin{pmatrix}
-q_0 & -q_1 & -q_2 & -q_3 \\
-q_1 & q_0 & -q_3 & q_2 \\
-q_2 & q_3 & q_0 & -q_1 \\
-q_3 & -q_2 & q_1 & q_0
+q_t & -q_x & -q_y & -q_z \\
+q_x & q_t & -q_z & q_y \\
+q_y & q_z & q_t & -q_x \\
+q_z & -q_y & q_x & q_t
 \end{pmatrix}.
 $$
 
 Each entry is a single coefficient of $\tilde q$ carrying a sign, and no entry is a sum of two or more coefficients.
 
-*Proof (the general matrix).* The columns are $\tilde q e_k$. Direct multiplication gives
+*Proof (the general matrix).* The columns are $\tilde q \vec e_k$. Direct multiplication gives
 
 $$
-\tilde q e_0 = \tilde q, \quad \tilde q e_1 = -q_1+q_0e_1+q_3e_2-q_2e_3, \quad \tilde q e_2 = -q_2-q_3e_1+q_0e_2+q_1e_3, \quad \tilde q e_3 = -q_3+q_2e_1-q_1e_2+q_0e_3,
+\tilde q e_t = \tilde q, \quad \tilde q \vec e_x = -q_x+q_t\vec e_x+q_z\vec e_y-q_y\vec e_z, \quad \tilde q \vec e_y = -q_y-q_z\vec e_x+q_t\vec e_y+q_x\vec e_z, \quad \tilde q \vec e_z = -q_z+q_y\vec e_x-q_x\vec e_y+q_t\vec e_z,
 $$
 
 which are the four columns of the displayed matrix.
 
-**The check.** The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image, $\mathsf{M}_4(e_k)^2=-I_4$, so $e_k^2=-e_0$ is reproduced; multiplying the first two,
+**The check.** The assignment is the right one because the four matrices multiply as the four units do. Squaring a vector image, $\mathsf{M}_4(\vec e_k)^2=-I_4$, so $\vec e_k^2=-e_t$ is reproduced; multiplying the first two,
 
 $$
-\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}=\mathsf{M}_4(e_3),
+\mathsf{M}_4(\vec e_x)\mathsf{M}_4(\vec e_y)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix}\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}=\mathsf{M}_4(\vec e_z),
 $$
 
-and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1)$ and $\mathsf{M}_4(e_3)\mathsf{M}_4(e_1)=\mathsf{M}_4(e_2)$, reproducing $e_1e_2=e_3$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $e_ie_j=-e_je_i$ for $i\neq j$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
+and the other products give $\mathsf{M}_4(\vec e_y)\mathsf{M}_4(\vec e_z)=\mathsf{M}_4(\vec e_x)$ and $\mathsf{M}_4(\vec e_z)\mathsf{M}_4(\vec e_x)=\mathsf{M}_4(\vec e_y)$, reproducing $\vec e_x\vec e_y=\vec e_z$ with its cyclic companions; reversing the order of the factors reverses the sign of each product, reproducing $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq \nu$. Those relations are the whole multiplication table of the units, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
 
 **Theorem.** The map $\mathsf{M}_4$ is an injective algebra homomorphism: $\mathsf{M}_4(p+\tilde q) = \mathsf{M}_4(p)+\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(p\tilde q) = \mathsf{M}_4(p)\mathsf{M}_4(\tilde q)$, $\mathsf{M}_4(1) = \mathrm{id}$, and $\mathsf{M}_4$ is injective. Its image is a four-dimensional subalgebra of $M_4(F)$ isomorphic to $\mathbb{H}$.
 
@@ -64,10 +64,10 @@ and the other products give $\mathsf{M}_4(e_2)\mathsf{M}_4(e_3)=\mathsf{M}_4(e_1
 **Proposition.** The Cayley matrix is the sum of a scalar and a skew-symmetric part,
 
 $$
-\mathsf{M}_4(\tilde q) = q_0 I + \Omega_q, \qquad \Omega_q = \begin{pmatrix} 0 & -q_1 & -q_2 & -q_3 \\ q_1 & 0 & -q_3 & q_2 \\ q_2 & q_3 & 0 & -q_1 \\ q_3 & -q_2 & q_1 & 0 \end{pmatrix}, \qquad \Omega_q^{T} = -\Omega_q .
+\mathsf{M}_4(\tilde q) = q_t I + \Omega_q, \qquad \Omega_q = \begin{pmatrix} 0 & -q_x & -q_y & -q_z \\ q_x & 0 & -q_z & q_y \\ q_y & q_z & 0 & -q_x \\ q_z & -q_y & q_x & 0 \end{pmatrix}, \qquad \Omega_q^{T} = -\Omega_q .
 $$
 
-*Proof.* Subtract the scalar matrix $q_0I$ from $\mathsf{M}_4(\tilde q)$; the remainder is the displayed matrix, whose transpose is its negative.
+*Proof.* Subtract the scalar matrix $q_tI$ from $\mathsf{M}_4(\tilde q)$; the remainder is the displayed matrix, whose transpose is its negative.
 
 The decomposition separates the two subspaces: for a scalar $s$ the Cayley matrix is the scalar matrix $\mathsf{M}_4(s) = sI$, and for a pure quaternion $\vec q$ it is $\mathsf{M}_4(\vec q) = \Omega_{\vec q}$, traceless and skew-symmetric. The scalar subspace therefore maps to the scalar matrices and the vector subspace to the traceless skew-symmetric ones.
 
@@ -76,11 +76,11 @@ The decomposition separates the two subspaces: for a scalar $s$ the Cayley matri
 **Example.** For the element
 
 $$
-\tilde q = 1+2e_1-e_2+3e_3
+\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z
 $$
 
 $$
-\tilde q e_0 = \tilde q, \quad \tilde q e_1 = -2+e_1+3e_2+e_3, \quad \tilde q e_2 = 1-3e_1+e_2+2e_3, \quad \tilde q e_3 = -3-e_1-2e_2+e_3,
+\tilde q e_t = \tilde q, \quad \tilde q \vec e_x = -2+\vec e_x+3\vec e_y+\vec e_z, \quad \tilde q \vec e_y = 1-3\vec e_x+\vec e_y+2\vec e_z, \quad \tilde q \vec e_z = -3-\vec e_x-2\vec e_y+\vec e_z,
 $$
 
 so its Cayley matrix is
@@ -94,7 +94,7 @@ $$
 \end{pmatrix},
 $$
 
-with $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$, $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = 225$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 = 4$.
+with $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$, $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = 225$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t = 4$.
 
 ## Multiplicativity
 
@@ -115,10 +115,10 @@ $$
 **Theorem.** For every quaternion,
 
 $$
-\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = (q_0^2+q_1^2+q_2^2+q_3^2)^2, \qquad \operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0 .
+\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2 = (q_t^2+q_x^2+q_y^2+q_z^2)^2, \qquad \operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t .
 $$
 
-*Proof.* The trace is the sum of the diagonal entries $q_0+q_0+q_0+q_0 = 4q_0$. For the determinant, compute $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q)$. By the next theorem $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, so
+*Proof.* The trace is the sum of the diagonal entries $q_t+q_t+q_t+q_t = 4q_t$. For the determinant, compute $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q)$. By the next theorem $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, so
 
 $$
 \mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural})\mathsf{M}_4(\tilde q) = \mathsf{M}_4(\tilde{q}^{\natural} \tilde q) = \mathsf{M}_4(\langle\tilde q\rangle_{\natural}) = \langle\tilde q\rangle_{\natural}\,I,
@@ -140,7 +140,7 @@ $$
 \mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural}).
 $$
 
-*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $\mathsf{M}_4(\tilde{q}^{\natural})$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_1,-q_2,-q_3$ exactly as conjugation negates the vector part.
+*Proof.* The transpose of the displayed matrix is obtained by interchanging rows and columns; comparing entrywise with $\mathsf{M}_4(\tilde{q}^{\natural})$, the diagonal is unchanged and each off-diagonal entry changes sign in the pattern $-q_x,-q_y,-q_z$ exactly as conjugation negates the vector part.
 
 **Theorem.** The three involutions of the algebra act on the Cayley matrix by
 
@@ -162,23 +162,23 @@ and the identity involution gives $\mathsf{M}_4(\tilde q)$ itself.
 
 $$
 \mathsf{M}_4^{R}(\tilde q) = \begin{pmatrix}
-q_0 & -q_1 & -q_2 & -q_3 \\
-q_1 & q_0 & q_3 & -q_2 \\
-q_2 & -q_3 & q_0 & q_1 \\
-q_3 & q_2 & -q_1 & q_0
+q_t & -q_x & -q_y & -q_z \\
+q_x & q_t & q_z & -q_y \\
+q_y & -q_z & q_t & q_x \\
+q_z & q_y & -q_x & q_t
 \end{pmatrix}.
 $$
 
-*Proof.* $(\mathsf{M}_4^{R}(p)\mathsf{M}_4^{R}(\tilde q))(\tilde r) = R_{p}(\tilde r\tilde q) = \tilde r\tilde q p = R_{\tilde q p}(\tilde r)$, so $\mathsf{M}_4^{R}(p\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(p)$. The columns are $R_{\tilde q}(e_k) = e_k\tilde q$, computed directly as
+*Proof.* $(\mathsf{M}_4^{R}(p)\mathsf{M}_4^{R}(\tilde q))(\tilde r) = R_{p}(\tilde r\tilde q) = \tilde r\tilde q p = R_{\tilde q p}(\tilde r)$, so $\mathsf{M}_4^{R}(p\tilde q) = \mathsf{M}_4^{R}(\tilde q)\mathsf{M}_4^{R}(p)$. The columns are $R_{\tilde q}(\vec e_k) = \vec e_k\tilde q$, computed directly as
 
 $$
-e_0\tilde q = \tilde q, \quad e_1\tilde q = -q_1+q_0e_1-q_3e_2+q_2e_3, \quad e_2\tilde q = -q_2+q_3e_1+q_0e_2-q_1e_3, \quad e_3\tilde q = -q_3-q_2e_1+q_1e_2+q_0e_3 .
+e_t\tilde q = \tilde q, \quad \vec e_x\tilde q = -q_x+q_t\vec e_x-q_z\vec e_y+q_y\vec e_z, \quad \vec e_y\tilde q = -q_y+q_z\vec e_x+q_t\vec e_y-q_x\vec e_z, \quad \vec e_z\tilde q = -q_z-q_y\vec e_x+q_x\vec e_y+q_t\vec e_z .
 $$
 
 **Theorem.** The right representation has the same determinant and trace,
 
 $$
-\det \mathsf{M}_4^{R}(\tilde q) = \langle\tilde q\rangle_{\natural}^2, \qquad \operatorname{tr}\mathsf{M}_4^{R}(\tilde q) = 4q_0,
+\det \mathsf{M}_4^{R}(\tilde q) = \langle\tilde q\rangle_{\natural}^2, \qquad \operatorname{tr}\mathsf{M}_4^{R}(\tilde q) = 4q_t,
 $$
 
 and it satisfies $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ together with the relation
@@ -189,7 +189,7 @@ $$
 
 where $D$ is the matrix of quaternion conjugation.
 
-*Proof.* The trace is $4q_0$ from the diagonal. The relation $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ is the same entrywise comparison as for $\mathsf{M}_4$. For the last identity, $D$ is the matrix of the linear map $\tilde r\mapsto \tilde r^{\natural}$, so for every $\tilde r$,
+*Proof.* The trace is $4q_t$ from the diagonal. The relation $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ is the same entrywise comparison as for $\mathsf{M}_4$. For the last identity, $D$ is the matrix of the linear map $\tilde r\mapsto \tilde r^{\natural}$, so for every $\tilde r$,
 
 $$
 D \mathsf{M}_4(\tilde q)^{T} D \tilde r = D \mathsf{M}_4(\tilde{q}^{\natural}) D \tilde r = D\bigl(\tilde{q}^{\natural}\,\tilde r^{\natural}\bigr) = (\tilde{q}^{\natural}\,\tilde r^{\natural})^{\natural} = \tilde r\tilde q = \mathsf{M}_4^{R}(\tilde q)\,\tilde r,
@@ -210,7 +210,7 @@ $$
 \{A : A\mathsf{M}_4^{R}(\tilde q) = \mathsf{M}_4^{R}(\tilde q)A \ \forall \tilde q\} = \{\mathsf{M}_4(p) : p\in\mathbb{H}\}.
 $$
 
-*Proof.* Every $\mathsf{M}_4^{R}(p)$ commutes with every $\mathsf{M}_4(\tilde q)$, so the right image lies in the commutant of the left image, and the two have the same dimension four; for the reverse inclusion, an $A$ commuting with all $\mathsf{M}_4(\tilde q)$ is determined by its first column $v = Ae_0$ because the columns $Ae_k$ are obtained from $v$ by the action of the left multiplication, and such an $A$ is exactly some $\mathsf{M}_4^{R}(p)$ with $p = v$. The second statement is symmetric.
+*Proof.* Every $\mathsf{M}_4^{R}(p)$ commutes with every $\mathsf{M}_4(\tilde q)$, so the right image lies in the commutant of the left image, and the two have the same dimension four; for the reverse inclusion, an $A$ commuting with all $\mathsf{M}_4(\tilde q)$ is determined by its first column $v = Ae_t$ because the columns $A\vec e_k$ are obtained from $v$ by the action of the left multiplication, and such an $A$ is exactly some $\mathsf{M}_4^{R}(p)$ with $p = v$. The second statement is symmetric.
 
 **Corollary (double centraliser).** The image $L(\mathbb{H})$ of the left regular representation is its own double commutant, it is a simple algebra of dimension four, and its centraliser in $M_4(F)$ is the opposite algebra $\mathsf{M}_4^{R}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}$. Over $\mathbb{R}$, the algebra generated by the two images together is all of $M_4(\mathbb{R})$.
 
@@ -218,9 +218,9 @@ $$
 
 ## Summary
 
-The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_0,e_1,e_2,e_3)$ is the Cayley matrix displayed above; it is the sum $q_0I+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$.
+The left regular matrix is an injective algebra homomorphism $\mathbb{H}\to M_4(F)$, whose matrix in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the Cayley matrix displayed above; it is the sum $q_tI+\Omega_q$ of a scalar and a skew-symmetric part, it multiplies as the quaternions do, $\mathsf{M}_4(p)\mathsf{M}_4(\tilde q) = \mathsf{M}_4(p\tilde q)$, and it carries units to invertible matrices with $\mathsf{M}_4(\tilde q)^{-1} = \mathsf{M}_4(\tilde{q}^{\natural})/\langle\tilde q\rangle_{\natural}$.
 
-The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
+The determinant and trace of the Cayley matrix are $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$ and $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t$, computed from the identity $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ that also shows $\mathsf{M}_4(\tilde q)$ to be a positive multiple of an orthogonal matrix. Transposition is quaternion conjugation, $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, and the three involutions of the algebra act by the four sign combinations $\pm \mathsf{M}_4(\tilde q),\pm \mathsf{M}_4(\tilde q)^{T}$ of the Cayley matrix.
 
 The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is an injective anti-homomorphism with the same determinant and trace, related to the left one by the identity $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ with $D$ the conjugation matrix, and the two representations are each other's commutants; the double centraliser theorem makes the left image its own double commutant and shows the two images together to span $M_4(F)$.
 
@@ -230,15 +230,15 @@ The right regular representation $R_{\tilde q}(\tilde r) = \tilde r\tilde q$ is 
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
 | $F$ | Base field |
-| $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Quaternion, conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural}$ |
 | $\mathsf{M}_4(\tilde q)$ | Cayley matrix of left multiplication $\tilde r\mapsto \tilde q \tilde r$ |
 | $M_4(\mathbb{R})_L=\operatorname{image}\mathsf{M}_4$ | the regular matrices, the real subspace of dimension $4$ inside $M_4(\mathbb{R})$ |
-| $\Omega_q = \mathsf{M}_4(\tilde q) - q_0I$ | Skew-symmetric part of the Cayley matrix |
+| $\Omega_q = \mathsf{M}_4(\tilde q) - q_tI$ | Skew-symmetric part of the Cayley matrix |
 | $\mathsf{M}_4^{R}(\tilde q)$ | Matrix of right multiplication $\tilde r\mapsto \tilde r\tilde q$ |
 | $D = \operatorname{diag}(1,-1,-1,-1)$ | Matrix of conjugation, $\mathsf{M}_4^{R}(\tilde q) = D \mathsf{M}_4(\tilde q)^{T} D$ |
 | $\mathsf{M}_4(\tilde q)^{T} = \mathsf{M}_4(\tilde{q}^{\natural})$, $\mathsf{M}_4^{R}(\tilde q)^{T} = \mathsf{M}_4^{R}(\tilde{q}^{\natural})$ | Transposition as conjugation |
-| $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_0$ | Determinant and trace |
+| $\det \mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}^2$, $\operatorname{tr}\mathsf{M}_4(\tilde q) = 4q_t$ | Determinant and trace |
 | $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = \langle\tilde q\rangle_{\natural}I$ | Orthogonality up to the quaternion norm scale |
 | $\mathbb{H}^{\mathrm{opp}}$ | Opposite algebra, the commutant of the left image |
 

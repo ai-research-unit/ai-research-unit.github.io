@@ -138,14 +138,14 @@ The polynomial algebra is thus the algebraic counterpart of affine $n$-space: it
 **Theorem (derivations).** The $k$-derivations of $k[x_1,\dots,x_n]$ form a free $k[x_1,\dots,x_n]$-module of rank $n$,
 
 $$
-\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial_i,
+\operatorname{Der}_k\bigl(k[x_1,\dots,x_n]\bigr) = \bigoplus_{i=1}^{n} k[x_1,\dots,x_n]\,\partial/\partial x_i,
 $$
 
-where $\partial_i = \partial/\partial x_i$. In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial_x$.
+In one variable, $\operatorname{Der}_k(k[x]) = k[x]\,\partial/\partial x$.
 
-*Proof.* Every $\sum_i f_i\partial_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\partial_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\partial_i$, and the expression is unique because the $\partial_i$ are linearly independent over the algebra.
+*Proof.* Every $\sum_i f_i\,\partial/\partial x_i$ is a derivation, since the partial derivatives are. Conversely, let $\delta$ be a derivation and put $f_i = \delta(x_i)$; then $\eta = \delta - \sum_i f_i\,\partial/\partial x_i$ is a derivation with $\eta(x_i) = 0$ for all $i$. Since $\eta$ obeys the Leibniz rule and vanishes on the generators and on $k$, it vanishes on every monomial, hence on all of $k[x_1,\dots,x_n]$. So $\delta = \sum_i f_i\,\partial/\partial x_i$, and the expression is unique because the $\partial/\partial x_i$ are linearly independent over the algebra.
 
-**Example (the Euler derivation).** The derivation $\vartheta = \sum_i x_i\partial_i$ acts on monomials by $\vartheta(x^\alpha) = |\alpha| x^\alpha$, where $|\alpha| = \sum_i\alpha_i$. Over $k = \mathbb{R}$ or $\mathbb{C}$ it is the infinitesimal generator of the one-parameter group of algebra automorphisms $x_i \mapsto \lambda x_i$, $\lambda = \exp(t) \in k^\times$, whose derivative at $\lambda = 1$ is $\vartheta$; over a general field the one-parameter group need not be available, and only the derivation is available. It is not inner, because $k[x_1,\dots,x_n]$ is commutative and therefore has no nonzero inner derivations.
+**Example (the Euler derivation).** The derivation $\vartheta = \sum_i x_i\,\partial/\partial x_i$ acts on monomials by $\vartheta(x^\alpha) = |\alpha| x^\alpha$, where $|\alpha| = \sum_i\alpha_i$. Over $k = \mathbb{R}$ or $\mathbb{C}$ it is the infinitesimal generator of the one-parameter group of algebra automorphisms $x_i \mapsto \lambda x_i$, $\lambda = \exp(t) \in k^\times$, whose derivative at $\lambda = 1$ is $\vartheta$; over a general field the one-parameter group need not be available, and only the derivation is available. It is not inner, because $k[x_1,\dots,x_n]$ is commutative and therefore has no nonzero inner derivations.
 
 **Proposition (automorphisms in one variable).** Every $k$-algebra automorphism of $k[x]$ is of the form
 
@@ -171,7 +171,7 @@ This is the general quotient construction of *Quotients of the Tensor Algebra*, 
 
 ## Summary
 
-The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutative integral domain, and has units $k^\times$ and degree function satisfying $\deg(fg) = \deg f + \deg g$. Its **universal property** is that $k$-algebra homomorphisms $k[x] \to A$ correspond bijectively to elements of $A$ by evaluation, and the same statement in $n$ variables gives $\operatorname{Hom}_{k\text{-alg}}(k[x_1,\dots,x_n], A) \cong A^n$. The division algorithm and the remainder theorem give $f = (x-a)q + f(a)$, so that $a$ is a root of $f$ exactly when $(x-a)$ divides $f$, and a nonzero polynomial of degree $d$ has at most $d$ roots in a domain. Every ideal of $k[x]$ is principal, and $k[x]/(f)$ is a field exactly when $f$ is irreducible, of dimension $\deg f$; the Chinese remainder theorem decomposes $k[x]/(f)$ over the coprime factorisation of $f$. The two-dimensional real algebras are the quotients by $x^2+1$, $x^2-1$ and $x^2$. In $n$ variables the algebra is Noetherian but not principal for $n \geq 2$, its maximal ideals over an algebraically closed field are the ideals of points, and it is the quotient of the free algebra by the commutators, hence the symmetric algebra of $k^n$. Its $k$-derivations form the free module $\bigoplus_i k[x_1,\dots,x_n]\partial_i$ on the partial derivatives, and the automorphisms of $k[x]$ are the affine maps $x\mapsto ax+b$, so that $\operatorname{Aut}_k(k[x])$ is the affine group.
+The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutative integral domain, and has units $k^\times$ and degree function satisfying $\deg(fg) = \deg f + \deg g$. Its **universal property** is that $k$-algebra homomorphisms $k[x] \to A$ correspond bijectively to elements of $A$ by evaluation, and the same statement in $n$ variables gives $\operatorname{Hom}_{k\text{-alg}}(k[x_1,\dots,x_n], A) \cong A^n$. The division algorithm and the remainder theorem give $f = (x-a)q + f(a)$, so that $a$ is a root of $f$ exactly when $(x-a)$ divides $f$, and a nonzero polynomial of degree $d$ has at most $d$ roots in a domain. Every ideal of $k[x]$ is principal, and $k[x]/(f)$ is a field exactly when $f$ is irreducible, of dimension $\deg f$; the Chinese remainder theorem decomposes $k[x]/(f)$ over the coprime factorisation of $f$. The two-dimensional real algebras are the quotients by $x^2+1$, $x^2-1$ and $x^2$. In $n$ variables the algebra is Noetherian but not principal for $n \geq 2$, its maximal ideals over an algebraically closed field are the ideals of points, and it is the quotient of the free algebra by the commutators, hence the symmetric algebra of $k^n$. Its $k$-derivations form the free module $\bigoplus_i k[x_1,\dots,x_n]\,\partial/\partial x_i$ on the partial derivatives, and the automorphisms of $k[x]$ are the affine maps $x\mapsto ax+b$, so that $\operatorname{Aut}_k(k[x])$ is the affine group.
 
 ## Summary of Notation
 
@@ -186,9 +186,9 @@ The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutativ
 | $(f)$ | Principal ideal generated by $f$ |
 | $k[x]/(f)$ | Quotient algebra, dimension $\deg f$ |
 | $(x_1,\dots,x_n)$ | Maximal ideal of the origin |
-| $\partial_i = \partial/\partial x_i$ | Partial derivative |
+| $\partial/\partial x_i$ | Partial derivative |
 | $\operatorname{Der}_k(k[x_1,\dots,x_n])$ | Module of $k$-derivations |
-| $\vartheta = \sum_i x_i\partial_i$ | Euler derivation |
+| $\vartheta = \sum_i x_i\,\partial/\partial x_i$ | Euler derivation |
 | $\operatorname{Aut}_k(k[x])$ | Affine group of the line |
 
 

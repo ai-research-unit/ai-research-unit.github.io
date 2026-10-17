@@ -37,7 +37,7 @@ The definition of a Baire space is given in this form, and equivalently in the t
 
 **(v)** if $A$ is nowhere dense, then $X \setminus A$ contains a dense open set.
 
-**Proof.** (i) If $A \subseteq B$ and $B$ is nowhere dense then $\overline{A} \subseteq \overline{B}$, so $(\overline{A})^\circ \subseteq (\overline{B})^\circ = \emptyset$. The closure has the same closure as the set. (ii) From (i) it suffices to treat closed nowhere dense sets, and if $F, G$ are closed with empty interior, then $F \cup G$ has empty interior because a nonempty open set inside $F \cup G$ meets $F$ or $G$ in a nonempty open set: if $U$ is open and nonempty and $U \subseteq F \cup G$, then $U \setminus F$ is open and either empty, in which case $U \subseteq F$, or nonempty and contained in $G$. (iii) is immediate from the definition and (i). (iv) restates (iii) together with the fact that the family is nonempty (it contains $\emptyset$). (v) $X \setminus \overline{A}$ is open and dense, since its complement $\overline A$ has empty interior.
+**Proof.** (i) If $A \subseteq B$ and $B$ is nowhere dense then $\overline{A} \subseteq \overline{B}$, so $(\overline{A})^\circ \subseteq (\overline{B})^\circ = \emptyset$. The closure has the same closure as the set. (ii) From (i) it suffices to treat closed nowhere dense sets, and if $F, G$ are closed with empty interior, then $F \cup G$ has empty interior because a nonempty open set inside $F \cup G$ meets $F$ or $G$ in a nonempty open set: if $\Omega$ is open and nonempty and $\Omega \subseteq F \cup G$, then $\Omega \setminus F$ is open and either empty, in which case $\Omega \subseteq F$, or nonempty and contained in $G$. (iii) is immediate from the definition and (i). (iv) restates (iii) together with the fact that the family is nonempty (it contains $\emptyset$). (v) $X \setminus \overline{A}$ is open and dense, since its complement $\overline A$ has empty interior.
 
 **Proposition.** The following are equivalent for a space $X$:
 
@@ -51,28 +51,28 @@ The definition of a Baire space is given in this form, and equivalently in the t
 
 **(e)** the complement of every meagre set is dense.
 
-**Proof.** (a) $\Leftrightarrow$ (b): a set is dense open exactly when its complement is closed nowhere dense, and the intersection of the dense open sets $D_n$ has complement $\bigcup_n (X \setminus D_n)$, a countable union of nowhere dense closed sets; the intersection is dense iff this union has empty interior. (b) $\Leftrightarrow$ (c): an open set $U$ is meagre in $X$ iff it is a countable union of nowhere dense sets, and since $U$ is open, this union has empty interior iff its intersection with $U$ has empty interior; the equivalence is the statement that no nonempty open set is meagre. (c) $\Leftrightarrow$ (d) $\Leftrightarrow$ (e) restate that the complement of a comeagre set is meagre and that a set is dense iff it meets every nonempty open set.
+**Proof.** (a) $\Leftrightarrow$ (b): a set is dense open exactly when its complement is closed nowhere dense, and the intersection of the dense open sets $D_n$ has complement $\bigcup_n (X \setminus D_n)$, a countable union of nowhere dense closed sets; the intersection is dense iff this union has empty interior. (b) $\Leftrightarrow$ (c): an open set $\Omega$ is meagre in $X$ iff it is a countable union of nowhere dense sets, and since $\Omega$ is open, this union has empty interior iff its intersection with $\Omega$ has empty interior; the equivalence is the statement that no nonempty open set is meagre. (c) $\Leftrightarrow$ (d) $\Leftrightarrow$ (e) restate that the complement of a comeagre set is meagre and that a set is dense iff it meets every nonempty open set.
 
 ### The Baire Property
 
-**Definition.** A subset $A \subseteq X$ has the **Baire property**, and is called **almost open**, if there is an open set $U$ and a meagre set $M$ with
+**Definition.** A subset $A \subseteq X$ has the **Baire property**, and is called **almost open**, if there is an open set $\Omega$ and a meagre set $M$ with
 $$
-A = U \,\triangle\, M = (U \setminus M) \cup (M \setminus U).
+A = \Omega \,\triangle\, M = (\Omega \setminus M) \cup (M \setminus \Omega).
 $$
 
 **Theorem.** The sets with the Baire property form a σ-algebra containing every open set and every meagre set; every Borel set has the Baire property; and a set $A$ has the Baire property if and only if it is the union of an open set and a meagre set, if and only if it differs from a closed set by a meagre set.
 
-**Proof sketch.** Open sets have the property with $M = \emptyset$, and meagre sets with $U = \emptyset$. For complements, if $A = U \triangle M$ then $X \setminus A = (X \setminus \overline{U}) \triangle M'$ with $M'$ meagre, using that $\overline{U} \setminus U$ is nowhere dense when $U$ is open. For countable unions, the family of symmetric differences is closed under the operation because a countable union of meagre sets is meagre, and the resulting σ-algebra contains the open sets; the Borel σ-algebra is the smallest such, so it is contained. The last characterisation follows from $\overline{U} \setminus U$ nowhere dense.
+**Proof sketch.** Open sets have the property with $M = \emptyset$, and meagre sets with $\Omega = \emptyset$. For complements, if $A = \Omega \triangle M$ then $X \setminus A = (X \setminus \overline{U}) \triangle M'$ with $M'$ meagre, using that $\overline{U} \setminus \Omega$ is nowhere dense when $\Omega$ is open. For countable unions, the family of symmetric differences is closed under the operation because a countable union of meagre sets is meagre, and the resulting σ-algebra contains the open sets; the Borel σ-algebra is the smallest such, so it is contained. The last characterisation follows from $\overline{U} \setminus \Omega$ nowhere dense.
 
 **Remark.** The Baire property is the topological counterpart of the notion of an almost-everywhere-defined object; the sets with the property are exactly those that can be corrected to an open set by a meagre set. The existence of sets without the Baire property requires the axiom of choice, and the standard construction is a transfinite recursion over the countable well-orderable conditions, which is out of the scope of this article. The property is used in descriptive set theory, where the Borel and analytic hierarchies are studied, and in the theory of the Banach–Mazur game of the fourth section.
 
-**Theorem (Banach category theorem).** Let $\{U_s\}_{s \in S}$ be a family of pairwise disjoint open subsets of $X$, each meagre in $X$. Then $\bigcup_s U_s$ is meagre in $X$.
+**Theorem (Banach category theorem).** Let $\{\Omega_s\}_{s \in S}$ be a family of pairwise disjoint open subsets of $X$, each meagre in $X$. Then $\bigcup_s \Omega_s$ is meagre in $X$.
 
-**Proof.** Write each $U_s = \bigcup_n F_{s,n}$ with $F_{s,n}$ closed nowhere dense in $X$ and $F_{s,n} \subseteq U_s$; the second property can be arranged because $U_s$ is open and the intersection of a nowhere dense set with an open set is nowhere dense in $X$. Then
+**Proof.** Write each $\Omega_s = \bigcup_n F_{s,n}$ with $F_{s,n}$ closed nowhere dense in $X$ and $F_{s,n} \subseteq \Omega_s$; the second property can be arranged because $\Omega_s$ is open and the intersection of a nowhere dense set with an open set is nowhere dense in $X$. Then
 $$
-\bigcup_s U_s = \bigcup_n \Bigl(\bigcup_s F_{s,n}\Bigr),
+\bigcup_s \Omega_s = \bigcup_n \Bigl(\bigcup_s F_{s,n}\Bigr),
 $$
-and it suffices to show that $G_n = \bigcup_s F_{s,n}$ is nowhere dense for each $n$. Suppose not, and let $W$ be a nonempty open set with $W \subseteq \overline{G_n}$. Choose a nonempty open $W_1 \subseteq W$ meeting $G_n$, and then $s$ with $W_1 \cap U_s \neq \emptyset$ and such that $W_1 \cap U_s$ meets $F_{s,n}$; this is possible because $W_1$ meets $G_n$ and $F_{t,n} \subseteq U_t$ with the $U_t$ pairwise disjoint, so a point of $W_1 \cap G_n$ lies in exactly one $U_s$ and in $F_{s,n}$. Put $W_2 = W_1 \cap U_s$, nonempty and open. Since $W_2 \subseteq W \subseteq \overline{G_n}$ and $F_{t,n} \cap U_s = \emptyset$ for $t \neq s$, every open subset of $W_2$ meets $F_{s,n}$, so $W_2 \subseteq \overline{F_{s,n}}$. But then $W_2$ is a nonempty open subset of $\overline{F_{s,n}}$, contradicting that $F_{s,n}$ is nowhere dense. Hence $G_n$ is nowhere dense and the union over $n$ is meagre.
+and it suffices to show that $G_n = \bigcup_s F_{s,n}$ is nowhere dense for each $n$. Suppose not, and let $W$ be a nonempty open set with $W \subseteq \overline{G_n}$. Choose a nonempty open $W_1 \subseteq W$ meeting $G_n$, and then $s$ with $W_1 \cap \Omega_s \neq \emptyset$ and such that $W_1 \cap \Omega_s$ meets $F_{s,n}$; this is possible because $W_1$ meets $G_n$ and $F_{t,n} \subseteq \Omega_t$ with the $\Omega_t$ pairwise disjoint, so a point of $W_1 \cap G_n$ lies in exactly one $\Omega_s$ and in $F_{s,n}$. Put $W_2 = W_1 \cap \Omega_s$, nonempty and open. Since $W_2 \subseteq W \subseteq \overline{G_n}$ and $F_{t,n} \cap \Omega_s = \emptyset$ for $t \neq s$, every open subset of $W_2$ meets $F_{s,n}$, so $W_2 \subseteq \overline{F_{s,n}}$. But then $W_2$ is a nonempty open subset of $\overline{F_{s,n}}$, contradicting that $F_{s,n}$ is nowhere dense. Hence $G_n$ is nowhere dense and the union over $n$ is meagre.
 
 **Remark.** The disjointness of the open sets is exactly what replaces the countable index set that the definition of meagreness supplies: without it the union of uncountably many nowhere dense sets can have interior, as the singletons of $\mathbb{R}$ show. The theorem is the reason a space that is a union of disjoint open meagre sets is meagre, and its classical consequence is that a space in which every open subspace is meagre in itself is meagre.
 
@@ -108,7 +108,7 @@ The Baire property holds for a class of spaces strictly larger than the complete
 
 **Theorem.** The Baire property is local: $X$ is a Baire space if and only if every point of $X$ has an open neighbourhood that is a Baire space (with the subspace topology), and if and only if $X$ is covered by open Baire subspaces.
 
-**Proof.** If $X$ is Baire and $U \subseteq X$ is open, then $U$ is Baire: given dense open sets $D_n \subseteq U$, the sets $D_n \cup (X \setminus \overline{U})$ are dense open in $X$, their intersection is dense in $X$, and within $U$ it is contained in $\bigcap_n D_n$, which is therefore dense in $U$. Conversely, if $X = \bigcup_s U_s$ with each $U_s$ open and Baire, let $D_n$ be dense open in $X$; then $D_n \cap U_s$ is dense open in $U_s$, so $\bigcap_n D_n \cap U_s$ is dense in $U_s$ by the Baire property of $U_s$, and hence $\bigcap_n D_n$ is dense in each $U_s$ and therefore in $X$.
+**Proof.** If $X$ is Baire and $\Omega \subseteq X$ is open, then $\Omega$ is Baire: given dense open sets $D_n \subseteq \Omega$, the sets $D_n \cup (X \setminus \overline{U})$ are dense open in $X$, their intersection is dense in $X$, and within $\Omega$ it is contained in $\bigcap_n D_n$, which is therefore dense in $\Omega$. Conversely, if $X = \bigcup_s \Omega_s$ with each $\Omega_s$ open and Baire, let $D_n$ be dense open in $X$; then $D_n \cap \Omega_s$ is dense open in $\Omega_s$, so $\bigcap_n D_n \cap \Omega_s$ is dense in $\Omega_s$ by the Baire property of $\Omega_s$, and hence $\bigcap_n D_n$ is dense in each $\Omega_s$ and therefore in $X$.
 
 **Theorem.** Every open subspace of a Baire space is a Baire space; every comeagre subset of a Baire space is a Baire space; every dense $G_\delta$ subset of a Baire space is a Baire space; every topological sum of Baire spaces is a Baire space; and a space containing a dense Baire subspace is a Baire space.
 
@@ -130,17 +130,17 @@ The game-theoretic characterisation of the Baire property turns a statement abou
 
 **Definition.** Let $X$ be a nonempty topological space. The **Banach–Mazur game** $BM(X)$ is played as follows. Two players, I and II, alternately choose nonempty open subsets
 $$
-U_1 \supseteq U_2 \supseteq U_3 \supseteq \cdots,
+\Omega_1 \supseteq \Omega_2 \supseteq \Omega_3 \supseteq \cdots,
 $$
-with player I choosing $U_1, U_3, U_5, \ldots$ and player II choosing $U_2, U_4, \ldots$, each move being a nonempty open subset of the previous move. Player II wins the play if
+with player I choosing $\Omega_1, \Omega_3, \Omega_5, \ldots$ and player II choosing $\Omega_2, \Omega_4, \ldots$, each move being a nonempty open subset of the previous move. Player II wins the play if
 $$
-\bigcap_{n \geq 1} U_n \neq \emptyset,
+\bigcap_{n \geq 1} \Omega_n \neq \emptyset,
 $$
 and player I wins otherwise. A **strategy** for a player is a function that assigns a legal move to every finite sequence of previous moves; it is **winning** if it produces a win against every play of the opponent.
 
 **Theorem (Oxtoby).** A nonempty topological space $X$ is a Baire space if and only if player I has no winning strategy in the Banach–Mazur game $BM(X)$.
 
-**Proof sketch (one direction).** If $X$ is not Baire, there is a countable family of closed nowhere dense sets $F_n$ whose union has nonempty interior $W$. Player I chooses $U_1 = W$ and, at his $n$-th move, chooses $U_{2n+1}$ a nonempty open subset of $U_{2n} \setminus F_n$; this is possible because $F_n$ is nowhere dense and $U_{2n}$ is nonempty open. The intersection of the play lies in $W \setminus \bigcup_n F_n = \emptyset$, so player I wins. Hence Baireness excludes a winning strategy for I. The converse, that a Baire space admits no winning strategy for the first player, is Oxtoby's theorem; the proof analyses a putative winning strategy and extracts from it a countable family of closed nowhere dense sets covering an open set, violating the Baire property.
+**Proof sketch (one direction).** If $X$ is not Baire, there is a countable family of closed nowhere dense sets $F_n$ whose union has nonempty interior $W$. Player I chooses $\Omega_1 = W$ and, at his $n$-th move, chooses $\Omega_{2n+1}$ a nonempty open subset of $\Omega_{2n} \setminus F_n$; this is possible because $F_n$ is nowhere dense and $\Omega_{2n}$ is nonempty open. The intersection of the play lies in $W \setminus \bigcup_n F_n = \emptyset$, so player I wins. Hence Baireness excludes a winning strategy for I. The converse, that a Baire space admits no winning strategy for the first player, is Oxtoby's theorem; the proof analyses a putative winning strategy and extracts from it a countable family of closed nowhere dense sets covering an open set, violating the Baire property.
 
 **Theorem (the general Banach–Mazur game).** Let $Y$ be a topological space, $X \subseteq Y$, and $\mathcal{W}$ a family of subsets of $Y$ each with nonempty interior and meeting every nonempty open subset of $Y$. In the game $MB(X, Y, \mathcal{W})$, in which the players alternately choose members of $\mathcal{W}$ forming a descending sequence and player I wins if
 $$
@@ -201,7 +201,7 @@ Baireness is local: a space is Baire exactly when it is covered by open Baire su
 | comeagre, residual | Complement of a meagre set |
 | second category | Not meagre |
 | Baire space | Every countable intersection of dense open sets is dense |
-| Baire property, almost open | $A = U \,\triangle\, M$, $U$ open, $M$ meagre |
+| Baire property, almost open | $A = \Omega \,\triangle\, M$, $\Omega$ open, $M$ meagre |
 | Banach category theorem | Disjoint open meagre sets have meagre union |
 | $G_\delta$ | Countable intersection of open sets |
 | Čech-complete | $G_\delta$ in a compactification; complete metrisability when metrisable |

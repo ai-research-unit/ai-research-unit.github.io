@@ -31,7 +31,7 @@ in $\operatorname{End}_k(V)[[z^{\pm1},w^{\pm1}]]$, the bracket being the commuta
 
 1. **(field axioms)** for each $a\in V$, $Y(a,z)$ is a field on $V$, and $Y(|0\rangle,z) = \mathrm{id}_V$;
 2. **(vacuum and creation)** $Y(a,z)|0\rangle\in V[[z]]$ and $Y(a,z)|0\rangle$ evaluated at $z = 0$ equals $a$; equivalently $a_{(-1)}|0\rangle = a$ and $a_{(n)}|0\rangle = 0$ for $n\geq0$;
-3. **(translation)** $T|0\rangle = 0$ and $[T,Y(a,z)] = \partial_zY(a,z)$ for all $a\in V$;
+3. **(translation)** $T|0\rangle = 0$ and $[T,Y(a,z)] = \partial/\partial z\,Y(a,z)$ for all $a\in V$;
 4. **(locality)** $Y(a,z)$ and $Y(b,w)$ are local for all $a,b\in V$;
 5. **(finiteness of the commutator)** writing $[Y(a,z),Y(b,w)] = \sum_{i\geq0}(z-w)^{-i-1}Y(c_i,w)$ for vectors $c_i$, the sum is finite, so that the singular part of the product of two fields is again a sum of fields.
 
@@ -43,7 +43,7 @@ $$
 [T,a_{(n)}] = -na_{(n-1)} .
 $$
 
-*Proof.* Differentiating the creation identity: $\partial_zY(a,z)|0\rangle = \sum_n(-n-1)a_{(n)}z^{-n-2}|0\rangle$; by the translation axiom the left-hand side is $[T,Y(a,z)]|0\rangle = T Y(a,z)|0\rangle - Y(a,z)T|0\rangle = TY(a,z)|0\rangle$, since $T|0\rangle = 0$; evaluating at $z = 0$ selects the coefficient of $z^{-2}$, giving $Ta = a_{(-2)}|0\rangle$. The commutator formula follows by comparing the coefficients of $z^{-n-1}$ in $[T,Y(a,z)] = \partial_zY(a,z)$.
+*Proof.* Differentiating the creation identity: $\partial/\partial z\,Y(a,z)|0\rangle = \sum_n(-n-1)a_{(n)}z^{-n-2}|0\rangle$; by the translation axiom the left-hand side is $[T,Y(a,z)]|0\rangle = T Y(a,z)|0\rangle - Y(a,z)T|0\rangle = TY(a,z)|0\rangle$, since $T|0\rangle = 0$; evaluating at $z = 0$ selects the coefficient of $z^{-2}$, giving $Ta = a_{(-2)}|0\rangle$. The commutator formula follows by comparing the coefficients of $z^{-n-1}$ in $[T,Y(a,z)] = \partial/\partial z\,Y(a,z)$.
 
 **Proposition (skew-symmetry).** For all $a,b\in V$,
 
@@ -125,7 +125,7 @@ $$
 Let $k_c$ be the one-dimensional module on which the $b_n$ with $n\geq0$ act by zero and $c$ acts by $1$, and let
 
 $$
-V_{\mathrm{H}} = U(\mathrm{H})\otimes_{U(\mathrm{H}_{\geq0})}k_c
+V_{\mathrm{H}} = \mathrm{U}(\mathrm{H})\otimes_{\mathrm{U}(\mathrm{H}_{\geq0})}k_c
 $$
 
 be the induced module, where $\mathrm{H}_{\geq0} = \bigoplus_{n\geq0}kb_n\oplus kc$ is the subalgebra of the non-negative modes; the tensor product over the subalgebra is the balanced product. By the Poincaré–Birkhoff–Witt theorem of *Universal Enveloping Algebras* the module $V_{\mathrm{H}}$ has the basis $b_{-n_1}\cdots b_{-n_r}|0\rangle$ with $n_1\geq\cdots\geq n_r\geq1$, that is $V_{\mathrm{H}} = k[b_{-1},b_{-2},\dots]$, identified with the symmetric algebra on the span of the negative modes. Setting $\omega = b_{-1}|0\rangle$ and $Y(\omega,z) = \sum_{n\in\mathbb{Z}}b_nz^{-n-1}$ makes $V_{\mathrm{H}}$ a vertex algebra, the **Heisenberg vertex algebra** of central charge $1$; the field $Y(\omega,z)$ satisfies the operator product expansion
@@ -151,13 +151,13 @@ $$
 The two-cocycle $\omega(L_m,L_n) = \frac{1}{12}(m^3-m)\delta_{m+n,0}$ satisfies the cocycle identity and defines a class in $H^2(W;k)$, the second cohomology of the Witt algebra with trivial coefficients in the sense of *Lie Algebra Cohomology*; the cohomology group $H^2(W;k)$ is one-dimensional, with the class of this cocycle as a generator, so that the Virasoro algebra is the universal one-dimensional central extension of the Witt algebra. The cocycle identity was verified by explicit computation for all triples of indices with $\lvert m\rvert,\lvert n\rvert,\lvert k\rvert\leq4$, using the exact arithmetic of the coefficients $\frac{1}{12}(m^3-m)$: the expression $(m-n)\omega(m+n,k)+(n-k)\omega(n+k,m)+(k-m)\omega(k+m,n)$ vanishes identically. The induced module
 
 $$
-V_c = U(\mathrm{Vir})\otimes_{U(\mathrm{Vir}_{\geq0})}k_c
+V_c = \mathrm{U}(\mathrm{Vir})\otimes_{\mathrm{U}(\mathrm{Vir}_{\geq0})}k_c
 $$
 
 on which the $L_n$ with $n\geq1$ act by zero, $L_0$ acts by zero and $c$ acts by the scalar $c$, is the **Virasoro vertex algebra** of central charge $c$; the vector $\omega_{\mathrm{Vir}} = L_{-2}|0\rangle$ has the field $Y(\omega_{\mathrm{Vir}},z) = \sum_{n\in\mathbb{Z}}L_nz^{-n-2}$ and the operator product expansion
 
 $$
-Y(\omega_{\mathrm{Vir}},z)Y(\omega_{\mathrm{Vir}},w) = \frac{c/2}{(z-w)^4}+\frac{2\,Y(\omega_{\mathrm{Vir}},w)}{(z-w)^2}+\frac{\partial_wY(\omega_{\mathrm{Vir}},w)}{z-w}+\text{regular},
+Y(\omega_{\mathrm{Vir}},z)Y(\omega_{\mathrm{Vir}},w) = \frac{c/2}{(z-w)^4}+\frac{2\,Y(\omega_{\mathrm{Vir}},w)}{(z-w)^2}+\frac{\partial/\partial w\,Y(\omega_{\mathrm{Vir}},w)}{z-w}+\text{regular},
 $$
 
 which is the standard form of the Virasoro field; the vertex algebra is **conformal** of central charge $c$ with the conformal vector $\omega_{\mathrm{Vir}}$ of weight $2$.
@@ -234,7 +234,7 @@ together with the existence of the vacuum and the creation axiom. A vector space
 
 ## Summary
 
-A **vertex algebra** over a field $k$ of characteristic zero is a vector space $V$ with a vacuum $|0\rangle$, a translation $T$ and a state-field correspondence $a\mapsto Y(a,z) = \sum_n a_{(n)}z^{-n-1}$ into the fields on $V$, subject to the vacuum axioms $Y(|0\rangle,z) = \mathrm{id}$, $Y(a,z)|0\rangle\in V[[z]]$ with value $a$ at $z=0$, the translation axiom $[T,Y(a,z)] = \partial_zY(a,z)$, and **locality** $(z-w)^N[Y(a,z),Y(b,w)] = 0$ for $N\gg0$. The locality is equivalent to the **Jacobi identity** with the formal delta function, and its coefficient form is the mode commutator formula $[a_{(m)},b_{(n)}] = \sum_{j\ge0}\binom{m}{j}(a_{(j)}b)_{(m+n-j)}$, from which the Borcherds identity and the operator product expansion follow; the field of a vector is determined by $Ta = a_{(-2)}|0\rangle$ and $a = a_{(-1)}|0\rangle$, and the product obeys the skew-symmetry $Y(a,z)b = \exp(zT)Y(b,-z)a$. The examples are the **Heisenberg vertex algebra** built from the Heisenberg algebra $[b_m,b_n] = m\delta_{m+n,0}c$; the **Virasoro vertex algebra** built from the Witt algebra, whose central extension by the cocycle $\frac{1}{12}(m^3-m)\delta_{m+n,0}$ has been verified and which is the universal one-dimensional central extension by the one-dimensionality of $H^2$; and the **affine vertex algebras** $V_k(\mathrm{G})$ built from the loop algebras with the invariant form of the structure theory, with the Sugawara conformal vector and central charge $\frac{k\dim\mathrm{G}}{k+h^\vee}$ for $k\neq-h^\vee$. The modules over a vertex algebra are the spaces with fields satisfying the corpus of axioms, and the **Zhu algebra** $A(V) = V/V\circ V$ with its products $\circ$ and $*$ reduces the classification of the simple admissible modules to the simple modules of an associative algebra. Finally the **$\lambda$-bracket** $[a_\lambda b] = \sum_n\frac{\lambda^n}{n!}a_{(n)}b$ turns the axioms into the structure of a **conformal algebra** — a Lie algebra whose bracket is a formal series in a parameter, with the same Jacobi identity — which is the sense in which the vertex algebras belong to the present category. The analytic theory of the characters and the modular invariance, and the lattice and geometric constructions, are deferred to Parts III and II.
+A **vertex algebra** over a field $k$ of characteristic zero is a vector space $V$ with a vacuum $|0\rangle$, a translation $T$ and a state-field correspondence $a\mapsto Y(a,z) = \sum_n a_{(n)}z^{-n-1}$ into the fields on $V$, subject to the vacuum axioms $Y(|0\rangle,z) = \mathrm{id}$, $Y(a,z)|0\rangle\in V[[z]]$ with value $a$ at $z=0$, the translation axiom $[T,Y(a,z)] = \partial/\partial z\,Y(a,z)$, and **locality** $(z-w)^N[Y(a,z),Y(b,w)] = 0$ for $N\gg0$. The locality is equivalent to the **Jacobi identity** with the formal delta function, and its coefficient form is the mode commutator formula $[a_{(m)},b_{(n)}] = \sum_{j\ge0}\binom{m}{j}(a_{(j)}b)_{(m+n-j)}$, from which the Borcherds identity and the operator product expansion follow; the field of a vector is determined by $Ta = a_{(-2)}|0\rangle$ and $a = a_{(-1)}|0\rangle$, and the product obeys the skew-symmetry $Y(a,z)b = \exp(zT)Y(b,-z)a$. The examples are the **Heisenberg vertex algebra** built from the Heisenberg algebra $[b_m,b_n] = m\delta_{m+n,0}c$; the **Virasoro vertex algebra** built from the Witt algebra, whose central extension by the cocycle $\frac{1}{12}(m^3-m)\delta_{m+n,0}$ has been verified and which is the universal one-dimensional central extension by the one-dimensionality of $H^2$; and the **affine vertex algebras** $V_k(\mathrm{G})$ built from the loop algebras with the invariant form of the structure theory, with the Sugawara conformal vector and central charge $\frac{k\dim\mathrm{G}}{k+h^\vee}$ for $k\neq-h^\vee$. The modules over a vertex algebra are the spaces with fields satisfying the corpus of axioms, and the **Zhu algebra** $A(V) = V/V\circ V$ with its products $\circ$ and $*$ reduces the classification of the simple admissible modules to the simple modules of an associative algebra. Finally the **$\lambda$-bracket** $[a_\lambda b] = \sum_n\frac{\lambda^n}{n!}a_{(n)}b$ turns the axioms into the structure of a **conformal algebra** — a Lie algebra whose bracket is a formal series in a parameter, with the same Jacobi identity — which is the sense in which the vertex algebras belong to the present category. The analytic theory of the characters and the modular invariance, and the lattice and geometric constructions, are deferred to Parts III and II.
 
 ## Summary of Notation
 

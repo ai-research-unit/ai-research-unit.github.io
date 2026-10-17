@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ is the quaternionic product
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric
 Quaternionic Algebra of Quaternions*. This article states what singles the block out among the six
 products of the space: the identities it satisfies and those it fails, the classes its laws empty, and
 the place it takes in the law table of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
@@ -27,9 +27,9 @@ below this article in this category. The comparator is *The Specificities of the
 Algebra*, above this article in this category. The law vocabulary is *Definitions for the Study of the
 Algebraic Structures* and the law table *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the centre is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 ## The Two-Line Criterion
@@ -54,13 +54,13 @@ two-sided unit, which the block does not have.
 sum has the closed form
 
 $$
-J(\tilde p,\tilde q,\tilde r)=-p_0\,(\vec q\times\vec r)+q_0\,(\vec p\times\vec r)-r_0\,(\vec p\times\vec q),
+J(\tilde p,\tilde q,\tilde r)=-p_0\,(\vec q\times\vec r)+q_t\,(\vec p\times\vec r)-r_0\,(\vec p\times\vec q),
 $$
 
-and the witness $(e_0,e_1,e_2)$ gives
+and the witness $(e_t,\vec e_x,\vec e_y)$ gives
 
 $$
-J(e_0,e_1,e_2)=(e_0\diamond e_1)\diamond e_2+(e_1\diamond e_2)\diamond e_0+(e_2\diamond e_0)\diamond e_1=-e_3\neq0 .
+J(e_t,\vec e_x,\vec e_y)=(e_t\diamond \vec e_x)\diamond \vec e_y+(\vec e_x\diamond \vec e_y)\diamond e_t+(\vec e_y\diamond e_t)\diamond \vec e_x=-\vec e_z\neq0 .
 $$
 
 The block is therefore **not a Lie algebra**, and the failure is exactly the associator defect of the
@@ -70,8 +70,8 @@ Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, be
 category.
 
 *Proof.* Inserting the explicit form into the three terms gives the closed form, which is linear in the
-scalar triple with the three cross products as coefficients; at $(e_0,e_1,e_2)$ only the first term
-survives and equals $-(e_1\times e_2)=-e_3$. The associator identity is the criterion of *The Symmetric
+scalar triple with the three cross products as coefficients; at $(e_t,\vec e_x,\vec e_y)$ only the first term
+survives and equals $-(\vec e_x\times \vec e_y)=-\vec e_z$. The associator identity is the criterion of *The Symmetric
 and Antisymmetric Parts of an Algebra Product* read on the parent product, verified on general
 elements.
 
@@ -88,7 +88,7 @@ units is empty, and it carries no algebraic norm of the block.
 
 *Proof.* Every value is pure, whereas $\tilde p\diamond\tilde q=\tilde p$ at a non-pure $\tilde p$
 would be a non-pure value, and the scalar direction is not reached, $\tilde p\diamond\tilde q$ having
-zero scalar part; the candidate $e_0$ gives $e_0\diamond\tilde q=\vec q$, the projection, which is
+zero scalar part; the candidate $e_t$ gives $e_t\diamond\tilde q=\vec q$, the projection, which is
 $\tilde q$ only on the vector subspace. No element is a unit on either side. The algebraic norm of a
 product is a quadratic form multiplicative for the product; the diagonal form of the block is the
 vanishing function $\tilde q\diamond\tilde q=0$, so its own algebraic norm is the zero form.
@@ -124,7 +124,7 @@ $$
 
 The nonzero nilpotents are the punctured space. The class is the whole space and not the vector
 subspace: the block's square vanishes on every element, the scalar direction included, since
-$e_0\diamond e_0=0$.
+$e_t\diamond e_t=0$.
 
 *Proof.* The square vanishes identically, so every element is square-zero; the index is two for a
 nonzero element and one for the origin. The reading is the one of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, where the class of nonzero nilpotents is the whole space for the two
@@ -159,14 +159,14 @@ does not reach the element theory, which is read from the vanishing square and i
 antisymmetric blocks.
 
 *Proof.* The first failure is the law table's Jacobi row, whose vanishing for $\mathrm{AQA}$ is the
-witness $(e_0,e_1,e_2)$; the second is the alternation row. The element theory needs only
+witness $(e_t,\vec e_x,\vec e_y)$; the second is the alternation row. The element theory needs only
 $\tilde p\diamond\tilde p=0$ and is identical in the two alternating structures.
 
 ## Summary
 
 The antisymmetric quaternionic block is alternating, $\tilde p\diamond\tilde p=0$, and **fails the
-Jacobi identity**, with the closed form $J=-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$
-and the witness $J(e_0,e_1,e_2)=-e_3$; it is therefore not a Lie algebra, and this failure is exactly
+Jacobi identity**, with the closed form $J=-p_0(\vec q\times\vec r)+q_t(\vec p\times\vec r)-r_0(\vec p\times\vec q)$
+and the witness $J(e_t,\vec e_x,\vec e_y)=-\vec e_z$; it is therefore not a Lie algebra, and this failure is exactly
 the associator defect of the parent quaternionic product, $J=\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)\operatorname{assoc}$.
 The block is the only structure of the six that is alternating and not Lie, and this pair isolates it
 from its plain companion, which satisfies the identity. It has no unit on either side, hence an empty
@@ -180,8 +180,8 @@ plain block, whose Jacobi identity holds.
 | Symbol | Meaning |
 |---|---|
 | $\tilde p\diamond\tilde p=0$ | the alternation, shared with the plain block |
-| $J(\tilde p,\tilde q,\tilde r)=-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$ | the cyclic sum, the failure |
-| $J(e_0,e_1,e_2)=-e_3$ | the witness of the failure |
+| $J(\tilde p,\tilde q,\tilde r)=-p_0(\vec q\times\vec r)+q_t(\vec p\times\vec r)-r_0(\vec p\times\vec q)$ | the cyclic sum, the failure |
+| $J(e_t,\vec e_x,\vec e_y)=-\vec e_z$ | the witness of the failure |
 | $\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)\operatorname{assoc}$ | the failure as the associator defect of the parent |
 | $\{0\}$ | the idempotents, folded here |
 | $\mathbb{H}$ | the nilpotent set, the whole space, folded here |

@@ -75,7 +75,6 @@ The theorem is the reason the finite fields of *List of Finite Fields* are exhau
 | $\mathbb{R}$ | $1$ | yes | yes | yes, a field | *The Real Numbers* |
 | $\mathbb{C}$ | $2$ | yes | yes | yes, a field | *The Complex Numbers* |
 | $\mathbb{H}$ | $4$ | no | yes | yes, a division ring | *Quaternion Algebra* |
-| $\mathbb{O}$ | $8$ | no | no | no: not associative, so not a division algebra in the sense of this corpus | *Octonion Algebra* |
 | $\mathbb{S}$, the sedenions | $16$ | no | no | no: not associative, and with zero divisors | *Division Algebras* |
 
 The Cayley–Dickson doubling chain loses commutativity at the quaternions and associativity at the octonions, and it loses the division property at the sedenions; this is the reason $\mathbb{H}$ is the last division ring in the chain and the octonions are a normed division algebra that is not a division algebra in the sense of this corpus, and not a ring. The Hurwitz theorem that the normed division algebras are exactly $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ is recorded in *Division Algebras*.
@@ -88,7 +87,7 @@ The Cayley–Dickson doubling chain loses commutativity at the quaternions and a
 | $\mathbb{B}$, the biquaternions | zero divisors; not every nonzero element is invertible | *Zero Divisors of the Biquaternion Algebra* |
 | $\mathbb{H}_{\mathbb{D}}$, the split-biquaternions | the idempotents $\tilde\Pi_{1,2}$ satisfy $\tilde\Pi_1\tilde\Pi_2 = 0$ | *Split-Biquaternion Zero Divisors* |
 | $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Octonion Algebra*, *Division Algebras* |
+| $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Division Algebras* |
 | the group ring $k[G]$ | has zero divisors whenever $G$ has torsion | *Group Algebras* |
 | $k[G]$ with $G$ torsion-free and nontrivial | a domain, but not every nonzero element is a unit: $g - 1$ has augmentation $0$ | *Non-Commutative Domains* |
 

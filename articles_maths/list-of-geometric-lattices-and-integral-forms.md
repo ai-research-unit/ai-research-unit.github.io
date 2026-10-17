@@ -78,7 +78,7 @@ The Lipschitz and Hurwitz lattices are the integral forms of the quaternion alge
 | Object | The property it has | Introduced in |
 |---|---|---|
 | the Lipschitz lattice $\mathbb{H}(\mathbb{Z})$ | the integer span of the quaternion basis, rank $4$, not maximal | *Lattices and the Quaternion Lattice* |
-| the Hurwitz lattice $\mathbb{H}'(\mathbb{Z})$ | the order with the half-integral generator $\omega = \tfrac12(1+e_1+e_2+e_3)$, rank $4$, maximal | *Lattices and the Quaternion Lattice* |
+| the Hurwitz lattice $\mathbb{H}'(\mathbb{Z})$ | the order with the half-integral generator $\omega = \tfrac12(1+\vec e_x+\vec e_y+\vec e_z)$, rank $4$, maximal | *Lattices and the Quaternion Lattice* |
 | the Hurwitz unit group | the $24$ units of the Hurwitz order, the binary tetrahedral group $2T$ | *Quaternion Geometry*, §The Units and Their Geometry |
 | the norm on the lattice | the sum of four squares, the integral quadratic form of the lattice | *Quaternion Geometry*, §The Arithmetic Geometry of the Quaternion Lattice |
 | the unit sphere lattice | the unit sphere carries a discrete subgroup of finite covolume, up to scaling | *Quaternion Geometry*, §The Units and Their Geometry |
@@ -113,7 +113,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\mathcal{O}_K$, $d_K$ | Ring of integers and discriminant of a number field |
 | $q$, $g(u,v)$, $N(x) = x x^{\natural}$ | Quadratic form, polar form, quaternion norm |
 | $\mathbb{H}(\mathbb{Z})$, $\mathbb{H}'(\mathbb{Z})$ | Lipschitz lattice, Hurwitz lattice |
-| $\omega = \tfrac12(1+e_1+e_2+e_3)$ | Half-integral generator of the Hurwitz order |
+| $\omega = \tfrac12(1+\vec e_x+\vec e_y+\vec e_z)$ | Half-integral generator of the Hurwitz order |
 | $\mu(G/\Gamma)$, $\operatorname{covol}(\Gamma)$ | Haar measure and covolume of a lattice in a Lie group |
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | The standard number systems of the corpus |
 | $\operatorname{Sc}(x)$ | The scalar part of a quaternion product |

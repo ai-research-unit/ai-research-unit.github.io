@@ -223,13 +223,13 @@ and $\mathfrak{Q}(x) = a_1 x_1^2 + \cdots + a_n x_n^2$ in the coordinates of the
 
 **Theorem (diagonalisation).** Let $F$ be a field of characteristic not $2$, let $V$ be a finite-dimensional $F$-space, and let $m$ be a quadratic form on $V$. Then $m$ has an orthogonal basis, so $m \cong \langle a_1, \ldots, a_n\rangle$ for some $a_i \in F$.
 
-**Proof.** If $m = 0$ every basis is orthogonal. Otherwise choose $e_1$ with $\mathfrak{Q}(e_1) \neq 0$. Then
+**Proof.** If $m = 0$ every basis is orthogonal. Otherwise choose $\vec e_x$ with $\mathfrak{Q}(\vec e_x) \neq 0$. Then
 
 $$
-V = F e_1 \perp e_1^{\perp}, \qquad e_1^\perp = \{v : B(e_1, v) = 0\},
+V = F \vec e_x \perp \vec e_x^{\perp}, \qquad \vec e_x^\perp = \{v : B(\vec e_x, v) = 0\},
 $$
 
-because every $v$ decomposes as $v = \frac{B(v, e_1)}{\mathfrak{Q}(e_1)} e_1 + \bigl(v - \frac{B(v, e_1)}{\mathfrak{Q}(e_1)} e_1\bigr)$, and the second summand lies in $e_1^\perp$; the two subspaces meet in $0$ since $\mathfrak{Q}(e_1) \neq 0$. The restriction of $m$ to $e_1^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $e_1^\perp$; adjoining $e_1$ finishes the proof.
+because every $v$ decomposes as $v = \frac{B(v, \vec e_x)}{\mathfrak{Q}(\vec e_x)} \vec e_x + \bigl(v - \frac{B(v, \vec e_x)}{\mathfrak{Q}(\vec e_x)} \vec e_x\bigr)$, and the second summand lies in $\vec e_x^\perp$; the two subspaces meet in $0$ since $\mathfrak{Q}(\vec e_x) \neq 0$. The restriction of $m$ to $\vec e_x^\perp$ is again a quadratic form on a space of dimension $n - 1$, and induction gives an orthogonal basis of $\vec e_x^\perp$; adjoining $\vec e_x$ finishes the proof.
 
 **Corollary.** Over a field of characteristic not $2$, every quadratic form is isometric to a diagonal form. The diagonal entries are determined only up to two operations: permuting them, and replacing $a_i$ by $c^2 a_i$ with $c \in F^\times$, since $a_i x_i^2 = a_i (c x_i)^2$ after rescaling the basis vector.
 

@@ -5,7 +5,7 @@
 The **spinor-helicity formalism** is the rewriting of massless relativistic kinematics in terms of two-component Weyl spinors. A massless four-momentum is not treated as a four-vector but as a product of two spinors,
 
 $$
-p_{\alpha\dot\beta} \;=\; \lambda_\alpha\,\tilde\lambda_{\dot\beta},
+p_{\alpha\bar\beta} \;=\; \lambda_\alpha\,\bar\lambda_{\bar\beta},
 $$
 
 and every Lorentz-invariant contraction of momenta becomes a product of two brackets,
@@ -13,34 +13,34 @@ and every Lorentz-invariant contraction of momenta becomes a product of two brac
 $$
 \langle ij\rangle \;=\; \lambda_i^\alpha\lambda_{j\alpha} \;=\; -\langle ji\rangle,
 \qquad
-[ij] \;=\; \tilde\lambda_i^{\dot\alpha}\tilde\lambda_{j\dot\alpha} \;=\; -[ji].
+[ij] \;=\; \bar\lambda_i^{\bar\alpha}\bar\lambda_{j\bar\alpha} \;=\; -[ji].
 $$
 
 Scattering amplitudes of massless particles are rational functions of these brackets. The simplest is the **Parke–Taylor** formula for the maximally helicity-violating gluon amplitude, a ratio of brackets whose little-group weights encode the helicities of the external particles [Parke and Taylor 1986; Elvang and Huang 2015; Dixon 2014]. The formalism is standard.
 
-This article places it inside the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and the claim is stronger than an analogy. The framework already contains a statement that is *equivalent* to the spinor-helicity factorisation: **a nonzero biquaternion whose biquaternion norm vanishes is a zero divisor, and under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ it is exactly a rank-one matrix.** A rank-one $2\times2$ matrix is an outer product of two spinors. A massless momentum has vanishing biquaternion norm. Therefore a massless momentum *is* a rank-one biquaternion, and its rank-one factorisation *is* the spinor-helicity factorisation $p = \lambda\tilde\lambda$. The identification is not an analogy, and it needs no new postulate: both sides are the same statement about the same matrix.
+This article places it inside the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and the claim is stronger than an analogy. The framework already contains a statement that is *equivalent* to the spinor-helicity factorisation: **a nonzero biquaternion whose biquaternion norm vanishes is a zero divisor, and under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ it is exactly a rank-one matrix.** A rank-one $2\times2$ matrix is an outer product of two spinors. A massless momentum has vanishing biquaternion norm. Therefore a massless momentum *is* a rank-one biquaternion, and its rank-one factorisation *is* the spinor-helicity factorisation $p = \lambda\bar\lambda$. The identification is not an analogy, and it needs no new postulate: both sides are the same statement about the same matrix.
 
 The division between what is established, what is transcribed, and what is left open is stated at the outset and kept explicit.
 
-- **Established, and recomputed below.** A null momentum $\tilde P \in \mathbb{M}_-$ is a nonzero zero divisor, $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$ with $\tilde P \neq 0$; under $\mathsf{M}_2$ its image is a rank-one, anti-Hermitian matrix, and the rank-one factorisation $\mathsf{M}_2(\tilde P) = \lambda\tilde\lambda^{T}$ is the spinor-helicity factorisation. The angle and square brackets are the framework's invariant symplectic pairing $\varepsilon$ applied to the two factors, and they are antisymmetric by the antisymmetry of $\varepsilon$. The little-group scaling $\lambda\to t\lambda$, $\tilde\lambda\to t^{-1}\tilde\lambda$ is exactly the one-parameter freedom in the rank-one factorisation, and it leaves the momentum invariant; helicity is the weight of its compact $U(1)$ part. A massless momentum is *singular* in the factorisation sense: it is not invertible, whereas a massive one is.
+- **Established, and recomputed below.** A null momentum $\tilde P \in \mathbb{M}_-$ is a nonzero zero divisor, $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$ with $\tilde P \neq 0$; under $\mathsf{M}_2$ its image is a rank-one, anti-Hermitian matrix, and the rank-one factorisation $\mathsf{M}_2(\tilde P) = \lambda\bar\lambda^{T}$ is the spinor-helicity factorisation. The angle and square brackets are the framework's invariant symplectic pairing $\varepsilon$ applied to the two factors, and they are antisymmetric by the antisymmetry of $\varepsilon$. The little-group scaling $\lambda\to t\lambda$, $\bar\lambda\to t^{-1}\bar\lambda$ is exactly the one-parameter freedom in the rank-one factorisation, and it leaves the momentum invariant; helicity is the weight of its compact $\mathrm{U}(1)$ part. A massless momentum is *singular* in the factorisation sense: it is not invertible, whereas a massive one is.
 - **Standard, transcribed.** The Parke–Taylor formula, the little-group weights of the external states, and the identification of helicity with the little-group weight are standard amplitude results. The framework reproduces the kinematic scaffolding — the factorisation, the brackets, the little-group action, the weights — and the weight of the Parke–Taylor amplitude is checked here on concrete cases; the formula itself and the color structure of the gauge theory are not derived from $\mathbb{B}$.
-- **Gap, left visible.** The framework does not derive amplitudes, does not supply a colored gauge theory, and does not by itself distinguish the real material slice $\mathbb{M}_-$ from the complexified algebra $\mathbb{B}$. The general spinor-helicity variables with independent complex $\lambda,\tilde\lambda$ describe *complexified* momenta, which lie in the complexified four-vector representation carried by $\mathbb{B}$ rather than on the real slice $\mathbb{M}_-$; the real slice imposes the reality condition $\tilde\lambda \sim \lambda^{*}$ and reduces the little group to $U(1)$. The massless limit is singular and is treated as such, not by continuity: massive momenta are invertible and have no rank-one factorisation.
+- **Gap, left visible.** The framework does not derive amplitudes, does not supply a colored gauge theory, and does not by itself distinguish the real material slice $\mathbb{M}_-$ from the complexified algebra $\mathbb{B}$. The general spinor-helicity variables with independent complex $\lambda,\bar\lambda$ describe *complexified* momenta, which lie in the complexified four-vector representation carried by $\mathbb{B}$ rather than on the real slice $\mathbb{M}_-$; the real slice imposes the reality condition $\bar\lambda \sim \lambda^{*}$ and reduces the little group to $\mathrm{U}(1)$. The massless limit is singular and is treated as such, not by continuity: massive momenta are invertible and have no rank-one factorisation.
 
 The article is organized as follows. The next section identifies the massless momentum as a zero divisor and shows its image is rank one. The section after that turns rank one into the factorisation and identifies it with spinor helicity. A section derives the brackets as the invariant symplectic pairing and records the one identity that links them to the momenta. The following section treats the little group, the reality condition, and helicity as its weight. A section states the Parke–Taylor formula and checks its little-group weights on concrete cases. The next section shows that the massless limit is singular. A section separates what the algebra supplies from what it only transcribes, and a short section records the gaps. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, ie_0\}$ (the centre). The matrix realization is
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The conjugations are the quaternion conjugate $\tilde Q^{\natural}$, the complex conjugate $\bar{\tilde Q}$, and the Hermitian conjugate $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$. The subspaces are $\mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}$ (material, anti-Hermitian), $\mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = \tilde Q\}$ (informational, Hermitian), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_t, ie_t\}$ (the centre). The matrix realization is
 
 $$
-\Phi:\;\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu \;\longmapsto\;
+\Phi:\;\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu \;\longmapsto\;
 \begin{pmatrix}
-Q_0 - iQ_3 & -iQ_1 - Q_2\\[2pt]
--iQ_1 + Q_2 & Q_0 + iQ_3
+Q_t - iQ_3 & -iQ_1 - Q_y\\[2pt]
+-iQ_1 + Q_y & Q_t + iQ_3
 \end{pmatrix},
 \qquad
-\mathsf{M}_2(e_0)=I_2,\quad \mathsf{M}_2(e_k)=-i\sigma_k,\quad \mathsf{M}_2(i)=iI_2,
+\mathsf{M}_2(e_t)=I_2,\quad \mathsf{M}_2(\vec e_k)=-i\sigma_k,\quad \mathsf{M}_2(i)=iI_2,
 $$
 
-satisfying $\mathsf{M}_2(\tilde Q\tilde R) = \mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde R)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_0 + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
+satisfying $\mathsf{M}_2(\tilde Q\tilde R) = \mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde R)$, $\det\mathsf{M}_2(\tilde Q) = \langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$, and $\mathsf{M}_2(\tilde Q^{*}) = \mathsf{M}_2(\tilde Q)^\dagger$. The **spinor module** is $S = \mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, with its conjugate module $\bar S$; the invariant symplectic pairing is $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\,\phi$ with $\epsilon = \left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The four-momentum is $\tilde P = iE/c\,e_t + \vec p \in \mathbb{M}_-$, with biquaternion norm $\langle\tilde P\rangle_{\natural} = -E^2/c^2 + \vec p^2 = -m^2c^2$ on the mass shell, and $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged.
 
 ## The Massless Momentum as a Zero Divisor
 
@@ -49,7 +49,7 @@ The zero divisors of $\mathbb{B}$ are characterized by the biquaternion norm: a 
 The four-momentum of a particle of mass $m$ is
 
 $$
-\tilde P \;=\; \frac{iE}{c}\,e_0 + \vec p, \qquad \vec p = p_1 e_1 + p_2 e_2 + p_3 e_3,
+\tilde P \;=\; \frac{iE}{c}\,e_t + \vec p, \qquad \vec p = p_1 \vec e_x + p_2 \vec e_y + p_3 \vec e_z,
 $$
 
 an element of $\mathbb{M}_-$: its scalar part is purely imaginary and its vector part is real. Its biquaternion norm is
@@ -64,7 +64,7 @@ Two consequences follow immediately.
 
 **A massive momentum is invertible.** For $m \neq 0$ one has $\langle\tilde P\rangle_{\natural} = -m^2c^2 \neq 0$, so $\tilde P$ is invertible and is *not* a zero divisor. This is the structural asymmetry between the two cases, and it will reappear in the section on the singular massless limit: the rank of $\mathsf{M}_2(\tilde P)$ is one at $m=0$ and two at $m\neq0$.
 
-The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_0\tilde Q$ (*Zero Divisors of the Biquaternion Algebra*), so the massless momentum obeys
+The zero divisor here is of the **non-pure** kind: its scalar part $iE/c$ does not vanish (for $E\neq0$). The general non-pure zero divisor satisfies the square relation $\tilde Q^2 = 2Q_t\tilde Q$ (*Zero Divisors of the Biquaternion Algebra*), so the massless momentum obeys
 
 $$
 \tilde P^2 \;=\; 2\,\frac{iE}{c}\,\tilde P .
@@ -76,13 +76,13 @@ $$
 \det\mathsf{M}_2(\tilde P) \;=\; \langle\tilde P\rangle_{\natural} \;=\; 0 \quad\text{at } m=0,
 $$
 
-and $\mathsf{M}_2(\tilde P) \neq 0$ when $\tilde P \neq 0$; hence $\mathsf{M}_2(\tilde P)$ has rank exactly one. Explicitly, for $\tilde P = iE/c\,e_0 + \vec p$,
+and $\mathsf{M}_2(\tilde P) \neq 0$ when $\tilde P \neq 0$; hence $\mathsf{M}_2(\tilde P)$ has rank exactly one. Explicitly, for $\tilde P = iE/c\,e_t + \vec p$,
 
 $$
 \mathsf{M}_2(\tilde P) \;=\; i\left(\frac{E}{c}\,I_2 - \vec p\cdot\boldsymbol\sigma\right).
 $$
 
-The matrix in parentheses, $p_{\alpha\dot\beta} := \frac{E}{c}\delta_{\alpha\dot\beta} - (\vec p\cdot\boldsymbol\sigma)_{\alpha\dot\beta}$, is the **standard spinor-helicity bispinor**; it is Hermitian, its determinant is $E^2/c^2 - \vec p^2 = m^2c^2$, and it is rank one exactly when $m=0$. The factor $i$ in $\mathsf{M}_2(\tilde P)$ is the $ict$ convention of the framework, and it is the only difference between the framework's momentum matrix and the textbook bispinor. Equivalently, with $\tilde H = -i\tilde P \in \mathbb{M}_+$ one has $\mathsf{M}_2(\tilde H) = p_{\alpha\dot\beta}$ exactly.
+The matrix in parentheses, $p_{\alpha\bar\beta} := \frac{E}{c}\delta_{\alpha\bar\beta} - (\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$, is the **standard spinor-helicity bispinor**; it is Hermitian, its determinant is $E^2/c^2 - \vec p^2 = m^2c^2$, and it is rank one exactly when $m=0$. The factor $i$ in $\mathsf{M}_2(\tilde P)$ is the $ict$ convention of the framework, and it is the only difference between the framework's momentum matrix and the textbook bispinor. Equivalently, with $\tilde H = -i\tilde P \in \mathbb{M}_+$ one has $\mathsf{M}_2(\tilde H) = p_{\alpha\bar\beta}$ exactly.
 
 The statement that a massless momentum is a zero divisor is not an observation about the framework's arithmetic. It is the statement that the light cone is the determinant-zero locus of $\mathbb{B}\cong M_2(\mathbb{C})$, and that a point of it is a rank-one matrix. The next section shows that this is the spinor-helicity factorisation.
 
@@ -90,41 +90,41 @@ The statement that a massless momentum is a zero divisor is not an observation a
 
 The passage from "rank one" to "product of two spinors" is a lemma about $2\times2$ matrices.
 
-**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there exist nonzero columns $\lambda,\tilde\lambda \in \mathbb{C}^2$ with
+**Lemma.** A nonzero $2\times2$ matrix $M$ has rank one if and only if there exist nonzero columns $\lambda,\bar\lambda \in \mathbb{C}^2$ with
 
 $$
-M \;=\; \lambda\,\tilde\lambda^{T}.
+M \;=\; \lambda\,\bar\lambda^{T}.
 $$
 
-The pair is determined up to the scaling $(\lambda,\tilde\lambda) \mapsto (t\lambda, t^{-1}\tilde\lambda)$, $t \in \mathbb{C}^\times$.
+The pair is determined up to the scaling $(\lambda,\bar\lambda) \mapsto (t\lambda, t^{-1}\bar\lambda)$, $t \in \mathbb{C}^\times$.
 
-*Proof.* If $M = \lambda\tilde\lambda^T$ with both factors nonzero, every column of $M$ is a multiple of $\lambda$, so the column space is one-dimensional and $\operatorname{rank} M = 1$. Conversely, if $\operatorname{rank} M = 1$, choose a nonzero column $\lambda$ of $M$; every other column is a multiple of it, and every row is a multiple of the row $\tilde\lambda^T$ read off any nonzero row of $M$ divided by the corresponding entry of $\lambda$. Then $M = \lambda\tilde\lambda^T$. The scaling is the elementary ambiguity: $(t\lambda)(t^{-1}\tilde\lambda)^T = \lambda\tilde\lambda^T$.
+*Proof.* If $M = \lambda\bar\lambda^T$ with both factors nonzero, every column of $M$ is a multiple of $\lambda$, so the column space is one-dimensional and $\operatorname{rank} M = 1$. Conversely, if $\operatorname{rank} M = 1$, choose a nonzero column $\lambda$ of $M$; every other column is a multiple of it, and every row is a multiple of the row $\bar\lambda^T$ read off any nonzero row of $M$ divided by the corresponding entry of $\lambda$. Then $M = \lambda\bar\lambda^T$. The scaling is the elementary ambiguity: $(t\lambda)(t^{-1}\bar\lambda)^T = \lambda\bar\lambda^T$.
 
 Applying the lemma to the null momentum,
 
 $$
-\mathsf{M}_2(\tilde P) \;=\; \lambda\,\tilde\lambda^{T},
+\mathsf{M}_2(\tilde P) \;=\; \lambda\,\bar\lambda^{T},
 \qquad
-\tilde P \text{ null},\quad \lambda \in S,\ \tilde\lambda \in \bar S,
+\tilde P \text{ null},\quad \lambda \in S,\ \bar\lambda \in \bar S,
 $$
 
-the two factors being concretely columns in $\mathbb{C}^2$, with $\lambda$ in the defining module $S$ and $\tilde\lambda$ in the conjugate module $\bar S$. This is the **spinor-helicity factorisation** $p = \lambda\tilde\lambda$. It is not a separate formalism laid over the algebra; it is the rank-one condition of the zero-divisor cone written in coordinates. The correspondence with the standard notation is fixed by the matrix realization: the two indices of $\mathsf{M}_2(\tilde P)$ are the unprimed and primed spinor indices $\alpha$ and $\dot\beta$ (the Hermitian bispinor is $-i$ times $\mathsf{M}_2(\tilde P)$, the $ict$ factor identified above), and the factorisation is
+the two factors being concretely columns in $\mathbb{C}^2$, with $\lambda$ in the defining module $S$ and $\bar\lambda$ in the conjugate module $\bar S$. This is the **spinor-helicity factorisation** $p = \lambda\bar\lambda$. It is not a separate formalism laid over the algebra; it is the rank-one condition of the zero-divisor cone written in coordinates. The correspondence with the standard notation is fixed by the matrix realization: the two indices of $\mathsf{M}_2(\tilde P)$ are the unbarred and barred spinor indices $\alpha$ and $\bar\beta$ (the Hermitian bispinor is $-i$ times $\mathsf{M}_2(\tilde P)$, the $ict$ factor identified above), and the factorisation is
 
 $$
-p_{\alpha\dot\beta} \;=\; \lambda_\alpha\,\tilde\lambda_{\dot\beta},
+p_{\alpha\bar\beta} \;=\; \lambda_\alpha\,\bar\lambda_{\bar\beta},
 $$
 
-with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\tilde\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi^{\dot\beta}$ of the null quadric's mixed spinor $A_\alpha{}^{\dot\beta}$ (*The Null Quadric and Its Projective Geometry*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
+with $\lambda$ in the spinor module $S$ — the left-handed Weyl module $(\tfrac12,0)$ — and $\bar\lambda$ transforming in the conjugate (right-handed) Weyl module $(0,\tfrac12)$. This is exactly the factorization $\phi_\alpha\pi^{\bar\beta}$ of the null quadric's mixed spinor $A_\alpha{}^{\bar\beta}$ (*The Null Quadric and Its Projective Geometry*), and it is the statement that a null bispinor is a point of the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1$: the two factors are the two rulings.
 
-**Reality and the two Weyl spinors.** For a real momentum, $\tilde P \in \mathbb{M}_-$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P)$ is anti-Hermitian. An anti-Hermitian rank-one matrix is $i$ times a Hermitian rank-one matrix, and a positive-semidefinite Hermitian rank-one matrix is $u u^\dagger$ for a single spinor $u$; consequently the two factors in $\mathsf{M}_2(\tilde P) = \lambda\tilde\lambda^T$ are conjugate up to a phase,
+**Reality and the two Weyl spinors.** For a real momentum, $\tilde P \in \mathbb{M}_-$ is anti-Hermitian, so $\mathsf{M}_2(\tilde P)$ is anti-Hermitian. An anti-Hermitian rank-one matrix is $i$ times a Hermitian rank-one matrix, and a positive-semidefinite Hermitian rank-one matrix is $u u^\dagger$ for a single spinor $u$; consequently the two factors in $\mathsf{M}_2(\tilde P) = \lambda\bar\lambda^T$ are conjugate up to a phase,
 
 $$
-\tilde\lambda \;\sim\; \lambda^{*} \quad (\text{up to a complex phase}),
+\bar\lambda \;\sim\; \lambda^{*} \quad (\text{up to a complex phase}),
 $$
 
-which is the real-momentum reality condition of the spinor-helicity formalism. The two factors are the two Weyl spinors of opposite chirality, related here by the framework's complex conjugation, which is the real structure that exchanges the defining module $S$ and its conjugate $\bar S$. For a *complexified* momentum — the general kinematical setting of the formalism — the components $Q_\mu$ are complex, $\tilde P$ lies in the complexified four-vector representation carried by $\mathbb{B}$, and $\lambda$ and $\tilde\lambda$ become independent. That complexification is a genuine extension of the real material sector, and it is flagged as such below.
+which is the real-momentum reality condition of the spinor-helicity formalism. The two factors are the two Weyl spinors of opposite chirality, related here by the framework's complex conjugation, which is the real structure that exchanges the defining module $S$ and its conjugate $\bar S$. For a *complexified* momentum — the general kinematical setting of the formalism — the components $Q_\mu$ are complex, $\tilde P$ lies in the complexified four-vector representation carried by $\mathbb{B}$, and $\lambda$ and $\bar\lambda$ become independent. That complexification is a genuine extension of the real material sector, and it is flagged as such below.
 
-**The two representations in which the factorisation is read.** Two conventions describe the same content and it is worth naming both, because the factor of $i$ between them is a frequent source of sign errors. In the framework's own interpretation the null momentum $\tilde P\in\mathbb{M}_-$ is the zero divisor and $\mathsf{M}_2(\tilde P)$ is the anti-Hermitian rank-one matrix factorised above. In the textbook interpretation the Hermitian bispinor $p_{\alpha\dot\beta} = \frac Ec\delta_{\alpha\dot\beta} - \vec p\cdot\boldsymbol\sigma = \mathsf{M}_2(\tilde H)$ is factorised, where $\tilde H = -i\tilde P \in \mathbb{M}_+$. The two matrices differ by the factor $i$, which can be absorbed into either spinor; the rank, the factorisation, the scaling freedom, and all little-group weights are unchanged. We work with $\mathsf{M}_2(\tilde P)$ throughout and translate only where the textbook form is wanted.
+**The two representations in which the factorisation is read.** Two conventions describe the same content and it is worth naming both, because the factor of $i$ between them is a frequent source of sign errors. In the framework's own interpretation the null momentum $\tilde P\in\mathbb{M}_-$ is the zero divisor and $\mathsf{M}_2(\tilde P)$ is the anti-Hermitian rank-one matrix factorised above. In the textbook interpretation the Hermitian bispinor $p_{\alpha\bar\beta} = \frac Ec\delta_{\alpha\bar\beta} - \vec p\cdot\boldsymbol\sigma = \mathsf{M}_2(\tilde H)$ is factorised, where $\tilde H = -i\tilde P \in \mathbb{M}_+$. The two matrices differ by the factor $i$, which can be absorbed into either spinor; the rank, the factorisation, the scaling freedom, and all little-group weights are unchanged. We work with $\mathsf{M}_2(\tilde P)$ throughout and translate only where the textbook form is wanted.
 
 
 ## The Brackets as the Invariant Symplectic Pairing
@@ -134,7 +134,7 @@ The two spinors carry the framework's invariant symplectic form $\varepsilon(\ps
 $$
 \langle ij\rangle \;=\; \varepsilon(\lambda_i,\lambda_j) \;=\; \lambda_i^{T}\epsilon\,\lambda_j,
 \qquad
-[ij] \;=\; \varepsilon(\tilde\lambda_i,\tilde\lambda_j) \;=\; \tilde\lambda_i^{T}\epsilon\,\tilde\lambda_j .
+[ij] \;=\; \varepsilon(\bar\lambda_i,\bar\lambda_j) \;=\; \bar\lambda_i^{T}\epsilon\,\bar\lambda_j .
 $$
 
 Three properties are inherited rather than postulated.
@@ -147,7 +147,7 @@ $$
 
 This is the antisymmetry stressed at the start of the article; it is the antisymmetry of the invariant spinor metric, not a convention imposed on the brackets. It was checked symbolically, $\langle ij\rangle+\langle ji\rangle = 0$ for arbitrary spinors.
 
-**Lorentz invariance.** Since $g^{T}\epsilon\,g = (\det g)\epsilon = \epsilon$ for every $g \in SL(2,\mathbb{C})$, the brackets are invariant under the one-sided Lorentz action $\lambda \mapsto g\lambda$, $\tilde\lambda \mapsto g^{*}\tilde\lambda$ (the latter being the conjugate defining representation, equivalent to $\mathsf{M}_2(\tilde U^{*})$ up to the invariant-tensor convention recorded in *Exercise: Chirality and the Weyl Spinors*). The brackets are therefore the Lorentz-invariant contractions of the formalism, as in the standard calculus.
+**Lorentz invariance.** Since $g^{T}\epsilon\,g = (\det g)\epsilon = \epsilon$ for every $g \in SL(2,\mathbb{C})$, the brackets are invariant under the one-sided Lorentz action $\lambda \mapsto g\lambda$, $\bar\lambda \mapsto g^{*}\bar\lambda$ (the latter being the conjugate defining representation, equivalent to $\mathsf{M}_2(\tilde U^{*})$ up to the invariant-tensor convention recorded in *Exercise: Chirality and the Weyl Spinors*). The brackets are therefore the Lorentz-invariant contractions of the formalism, as in the standard calculus.
 
 **The bracket–momentum identity.** The polar form of the norm is $\langle\tilde P,\tilde Q\rangle = \tfrac12\big(\langle\tilde P+\tilde Q\rangle_{\natural}-\langle\tilde P\rangle_{\natural}-\langle\tilde Q\rangle_{\natural}\big) = \sum_\mu P_\mu Q_\mu$. For two null momenta factorised as above, the determinant of the sum of two rank-one matrices is a product of two brackets, and one finds
 
@@ -163,37 +163,37 @@ The determinant identity was verified symbolically for two independently factori
 
 The scaling freedom of the rank-one factorisation is the kinematic little group.
 
-**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P) = \lambda\tilde\lambda^{T}$ and one sends
+**The scaling leaves the momentum invariant.** If $\mathsf{M}_2(\tilde P) = \lambda\bar\lambda^{T}$ and one sends
 
 $$
-\lambda \;\longmapsto\; t\,\lambda, \qquad \tilde\lambda \;\longmapsto\; t^{-1}\,\tilde\lambda, \qquad t \in \mathbb{C}^\times,
+\lambda \;\longmapsto\; t\,\lambda, \qquad \bar\lambda \;\longmapsto\; t^{-1}\,\bar\lambda, \qquad t \in \mathbb{C}^\times,
 $$
 
-then $\lambda\tilde\lambda^{T} \mapsto (t\lambda)(t^{-1}\tilde\lambda)^{T} = \lambda\tilde\lambda^{T}$, so $\mathsf{M}_2(\tilde P)$ and hence $\tilde P$ are unchanged. The invariance was verified symbolically for arbitrary complex spinors and arbitrary nonzero $t$. The scaling is precisely the ambiguity of the lemma: a nonzero biquaternion determines its factorisation only up to this one-parameter freedom.
+then $\lambda\bar\lambda^{T} \mapsto (t\lambda)(t^{-1}\bar\lambda)^{T} = \lambda\bar\lambda^{T}$, so $\mathsf{M}_2(\tilde P)$ and hence $\tilde P$ are unchanged. The invariance was verified symbolically for arbitrary complex spinors and arbitrary nonzero $t$. The scaling is precisely the ambiguity of the lemma: a nonzero biquaternion determines its factorisation only up to this one-parameter freedom.
 
-**From $\mathbb{C}^\times$ to $U(1)$.** For a real momentum the reality condition $\tilde\lambda \sim \lambda^{*}$ fixes the modulus of $t$ and leaves its phase:
+**From $\mathbb{C}^\times$ to $\mathrm{U}(1)$.** For a real momentum the reality condition $\bar\lambda \sim \lambda^{*}$ fixes the modulus of $t$ and leaves its phase:
 
 $$
-\lambda \;\longmapsto\; t\,\lambda, \qquad \tilde\lambda \;\longmapsto\; t^{-1}\,\tilde\lambda, \qquad |t|=1,
+\lambda \;\longmapsto\; t\,\lambda, \qquad \bar\lambda \;\longmapsto\; t^{-1}\,\bar\lambda, \qquad |t|=1,
 $$
 
-a $U(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde R = \cos(\theta/2) + \sin(\theta/2)\,\vec u_p$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\vec u_p = \vec p/|\vec p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$. Hence $\tilde R\tilde P\tilde R^{*} = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde R\tilde R^{*} = e_0$ — and on the spinor module $\mathsf{M}_2(\tilde R)$ acts by a phase,
+a $\mathrm{U}(1)$. This is the group of the spinor-helicity little-group scaling. It is also realized geometrically inside the framework: the rotation about the momentum axis is the rotor $\tilde R = \cos(\theta/2) + \sin(\theta/2)\,\vec u_p$ in the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with $\vec u_p = \vec p/|\vec p|$; it commutes with $\tilde P$, since $iE/c$ is central and $\vec u_p$ commutes with $\vec p$. Hence $\tilde R\tilde P\tilde R^{*} = \tilde P$ — verified by the vanishing of the commutator and the unitarity relation $\tilde R\tilde R^{*} = e_t$ — and on the spinor module $\mathsf{M}_2(\tilde R)$ acts by a phase,
 
 $$
 \mathsf{M}_2(\tilde R)\,\lambda = \exp(\pm i\theta/2)\,\lambda \quad \text{on the two eigen-components},
 $$
 
-so that $\lambda \mapsto t\lambda$ and $\tilde\lambda \mapsto t^{-1}\tilde\lambda$ with $t = \exp(\mp i\theta/2)$. The little-group scaling is therefore not an abstract relabelling: it is the action of the rotation about $\vec p$ on the two factors, and it is the framework's compact $SU(2)$ rotation subgroup acting on the spinor module.
+so that $\lambda \mapsto t\lambda$ and $\bar\lambda \mapsto t^{-1}\bar\lambda$ with $t = \exp(\mp i\theta/2)$. The little-group scaling is therefore not an abstract relabelling: it is the action of the rotation about $\vec p$ on the two factors, and it is the framework's compact $SU(2)$ rotation subgroup acting on the spinor module.
 
 **Helicity is the weight.** A one-particle state or an amplitude of definite helicity $h$ carries a definite weight under the scaling: in the standard normalization,
 
 $$
-\text{a helicity-}h \text{ object scales as } t^{-2h} \text{ under } \lambda_i \to t\lambda_i,\ \tilde\lambda_i \to t^{-1}\tilde\lambda_i .
+\text{a helicity-}h \text{ object scales as } t^{-2h} \text{ under } \lambda_i \to t\lambda_i,\ \bar\lambda_i \to t^{-1}\bar\lambda_i .
 $$
 
-Equivalently, a monomial with $\lambda$-degree $d_\lambda$ and $\tilde\lambda$-degree $d_{\tilde\lambda}$ in particle $i$ has helicity $h_i = \tfrac12(d_{\tilde\lambda,i} - d_{\lambda,i})$. The spinor $\lambda$ has $\lambda$-degree $d_\lambda=+1$, hence helicity $h=-\tfrac12$, and the conjugate $\tilde\lambda$ has $d_{\tilde\lambda}=-1$, hence helicity $h=+\tfrac12$; the spin-$\tfrac12$ field is the weight-$\pm\tfrac12$ object. This is the sense in which the massless little group is $U(1)$ and the helicity is its weight. Two qualifications are kept explicit. First, the full little group of a massless particle is not $U(1)$ but the two-dimensional Euclidean group $ISO(2)$; the compact $U(1)$ of rotations about $\vec p$ is the part that acts nontrivially on finite-helicity states, and it is the part realized by the factorisation freedom above. Second, the identification of helicity with the $U(1)$ weight is standard representation theory; the framework supplies the $U(1)$ action natively through its rotation rotors, but it does not by itself select which weight is physical — that selection is the dynamics of the massless field, not the kinematics of the momentum.
+Equivalently, a monomial with $\lambda$-degree $d_\lambda$ and $\bar\lambda$-degree $d_{\bar\lambda}$ in particle $i$ has helicity $h_i = \tfrac12(d_{\bar\lambda,i} - d_{\lambda,i})$. The spinor $\lambda$ has $\lambda$-degree $d_\lambda=+1$, hence helicity $h=-\tfrac12$, and the conjugate $\bar\lambda$ has $d_{\bar\lambda}=-1$, hence helicity $h=+\tfrac12$; the spin-$\tfrac12$ field is the weight-$\pm\tfrac12$ object. This is the sense in which the massless little group is $\mathrm{U}(1)$ and the helicity is its weight. Two qualifications are kept explicit. First, the full little group of a massless particle is not $\mathrm{U}(1)$ but the two-dimensional Euclidean group $ISO(2)$; the compact $\mathrm{U}(1)$ of rotations about $\vec p$ is the part that acts nontrivially on finite-helicity states, and it is the part realized by the factorisation freedom above. Second, the identification of helicity with the $\mathrm{U}(1)$ weight is standard representation theory; the framework supplies the $\mathrm{U}(1)$ action natively through its rotation rotors, but it does not by itself select which weight is physical — that selection is the dynamics of the massless field, not the kinematics of the momentum.
 
-**Why the massless case is the rank-one case.** The structural unity of the section is this. The compact $U(1)$ part of the little group that leaves a null momentum invariant is the group of automorphisms of its rank-one factorisation. The factorisation is the zero-divisor structure. Therefore *the little group and the helicity weight are properties of the zero-divisor cone*, not of an added spinor formalism: the null momentum's rank-one matrix factorises, the factorisation is ambiguous by exactly the little-group scaling, and the helicity is the weight of that ambiguity.
+**Why the massless case is the rank-one case.** The structural unity of the section is this. The compact $\mathrm{U}(1)$ part of the little group that leaves a null momentum invariant is the group of automorphisms of its rank-one factorisation. The factorisation is the zero-divisor structure. Therefore *the little group and the helicity weight are properties of the zero-divisor cone*, not of an added spinor formalism: the null momentum's rank-one matrix factorises, the factorisation is ambiguous by exactly the little-group scaling, and the helicity is the weight of that ambiguity.
 
 ## The Parke–Taylor Formula and Its Little-Group Weights
 
@@ -214,7 +214,7 @@ d_{\lambda,k} \;=\;
 \qquad\text{that is, } d_{\lambda,k} = -2h_k .
 $$
 
-This is exactly the little-group weight required of an amplitude whose particle $k$ has helicity $h_k$. The $\tilde\lambda$-degree is zero for every particle, so the $\lambda$-degree is the whole weight and the condition $d_{\lambda,k} = -2h_k$ is satisfied.
+This is exactly the little-group weight required of an amplitude whose particle $k$ has helicity $h_k$. The $\bar\lambda$-degree is zero for every particle, so the $\lambda$-degree is the whole weight and the condition $d_{\lambda,k} = -2h_k$ is satisfied.
 
 
 **Sign check.** The numerator $\langle ij\rangle^4$ is invariant under $i\leftrightarrow j$ because the exponent is even, so the formula does not depend on the order in which the two negative-helicity labels are written. Every bracket entering linearly does depend on the order: replacing one $\langle 12\rangle$ by $\langle 21\rangle$ in a bracket ratio sends the ratio to its negative. This is the concrete sense in which the antisymmetry $\langle ij\rangle = -\langle ji\rangle$ is the classic source of sign errors in the Parke–Taylor formula, and it was checked directly.
@@ -228,16 +228,16 @@ It is tempting to say that the massive case follows from the massless one by con
 For a massive momentum $\langle\tilde P\rangle_{\natural} = -m^2c^2 \neq 0$, so $\mathsf{M}_2(\tilde P)$ is invertible and has rank two. There is no rank-one factorisation into a single pair of spinors. The massive bispinor requires two terms,
 
 $$
-p_{\alpha\dot\beta} \;=\; \lambda_\alpha\tilde\lambda_{\dot\beta} \;+\; \mu_\alpha\tilde\mu_{\dot\beta},
+p_{\alpha\bar\beta} \;=\; \lambda_\alpha\bar\lambda_{\bar\beta} \;+\; \mu_\alpha\bar\mu_{\bar\beta},
 $$
 
-the pair of spinors accounting for the two physical polarizations of a massive particle, and the little group of a massive particle is $SU(2)$, not the $U(1)$ of the massless case. The two situations are different representations of different little groups.
+the pair of spinors accounting for the two physical polarizations of a massive particle, and the little group of a massive particle is $SU(2)$, not the $\mathrm{U}(1)$ of the massless case. The two situations are different representations of different little groups.
 
-The algebraic defect measures the discontinuity. For $\tilde P = iE/c\,e_0 + \vec p$ with $E^2/c^2 = \vec p^2 + m^2c^2$ one has, using the quaternion square,
+The algebraic defect measures the discontinuity. For $\tilde P = iE/c\,e_t + \vec p$ with $E^2/c^2 = \vec p^2 + m^2c^2$ one has, using the quaternion square,
 
 $$
-\tilde P^2 \;=\; -\frac{E^2}{c^2}e_0 - \vec p^2 e_0 + 2\,\frac{iE}{c}\,\vec p
-\;=\; 2\,\frac{iE}{c}\,\tilde P \;+\; m^2c^2\,e_0 .
+\tilde P^2 \;=\; -\frac{E^2}{c^2}e_t - \vec p^2 e_t + 2\,\frac{iE}{c}\,\vec p
+\;=\; 2\,\frac{iE}{c}\,\tilde P \;+\; m^2c^2\,e_t .
 $$
 
 The zero-divisor relation $\tilde P^2 = 2P_0\tilde P$ of the massless case holds only at $m=0$; the mass term is an additive defect of order $m^2$. The relation was verified symbolically for a general massive momentum $(\sqrt{25+m^2};3,4,0)$ as well as at rest, and the massless identity $\tilde P^2 = 2P_0\tilde P$ was verified independently on four null momenta.
@@ -245,14 +245,14 @@ The zero-divisor relation $\tilde P^2 = 2P_0\tilde P$ of the massless case holds
 Three things therefore fail to be continuous in the limit.
 
 1. **Rank.** $\mathsf{M}_2(\tilde P)$ has rank two for $m\neq0$ and rank one at $m=0$; the rank drops.
-2. **Factorisation.** A rank-two matrix is not an outer product of two spinors; the one-term factorisation exists only at $m=0$, and the massive bispinor needs both $\lambda\tilde\lambda$ and $\mu\tilde\mu$.
-3. **Little group.** The massive little group is $SU(2)$ and the massless one is $ISO(2)$, whose compact part is $U(1)$. The representations are different and neither is a limit of the other in the naive sense.
+2. **Factorisation.** A rank-two matrix is not an outer product of two spinors; the one-term factorisation exists only at $m=0$, and the massive bispinor needs both $\lambda\bar\lambda$ and $\mu\bar\mu$.
+3. **Little group.** The massive little group is $SU(2)$ and the massless one is $ISO(2)$, whose compact part is $\mathrm{U}(1)$. The representations are different and neither is a limit of the other in the naive sense.
 
 The massless limit is therefore singular at the level of the spinor variables and of the little group, and the article does not claim otherwise. The framework represents a massive momentum and a massless one on the same footing — both are elements of $\mathbb{M}_-$ — but the zero-divisor structure, which is what the spinor-helicity formalism exploits, exists only at $m=0$. A massive spinor-helicity calculus would require additional structure (the two-term bispinor and its $SU(2)$ little group), and it is not developed here.
 
 ## What the Framework Supplies and What It Does Not
 
-**Supplied natively.** The equivalence *null momentum* $\Leftrightarrow$ *zero divisor* $\Leftrightarrow$ *rank-one matrix* $\Leftrightarrow$ *factorisable as $\lambda\tilde\lambda^T$* is a theorem of the algebra, already available in the companion articles on zero divisors and the null quadric; nothing is added to make it true. The angle and square brackets are the invariant symplectic pairing $\varepsilon$ of the spinor module, and their antisymmetry is the antisymmetry of $\varepsilon$. The little-group scaling is the ambiguity of the rank-one factorisation, and for real momenta the realization of its $U(1)$ part is the framework's rotation rotor about the momentum axis. Helicity is the weight of that action.
+**Supplied natively.** The equivalence *null momentum* $\Leftrightarrow$ *zero divisor* $\Leftrightarrow$ *rank-one matrix* $\Leftrightarrow$ *factorisable as $\lambda\bar\lambda^T$* is a theorem of the algebra, already available in the companion articles on zero divisors and the null quadric; nothing is added to make it true. The angle and square brackets are the invariant symplectic pairing $\varepsilon$ of the spinor module, and their antisymmetry is the antisymmetry of $\varepsilon$. The little-group scaling is the ambiguity of the rank-one factorisation, and for real momenta the realization of its $\mathrm{U}(1)$ part is the framework's rotation rotor about the momentum axis. Helicity is the weight of that action.
 
 **Transcribed.** The standard spinor-helicity calculus — the Parke–Taylor formula, the momentum-conservation constraints, the explicit spinor parametrizations of momenta — is transcribed. The brackets and the weights are checked here, but the calculus is not derived.
 
@@ -264,46 +264,46 @@ The massless limit is therefore singular at the level of the spinor variables an
 
 **Gaps.**
 
-1. **Complexified momenta versus the real slice.** The general spinor-helicity variables have independent complex $\lambda,\tilde\lambda$, and the corresponding momentum is complex: it lies in the complexified four-vector representation carried by $\mathbb{B}$, off the real material slice $\mathbb{M}_-$. The framework's physical sector is the real slice, where the reality condition $\tilde\lambda \sim \lambda^{*}$ reduces the little group to $U(1)$. The framework therefore supports the formalism most directly in the case of *real* kinematics; complex kinematics is an extension of the physical sector. This article does not resolve whether the framework's local, medium-dependent complex structure (the scale $c = 1/\sqrt{\epsilon\mu}$ making the $ict$ direction local) has anything to do with the complexification that spinor-helicity amplitudes use, and it does not claim that it does.
+1. **Complexified momenta versus the real slice.** The general spinor-helicity variables have independent complex $\lambda,\bar\lambda$, and the corresponding momentum is complex: it lies in the complexified four-vector representation carried by $\mathbb{B}$, off the real material slice $\mathbb{M}_-$. The framework's physical sector is the real slice, where the reality condition $\bar\lambda \sim \lambda^{*}$ reduces the little group to $\mathrm{U}(1)$. The framework therefore supports the formalism most directly in the case of *real* kinematics; complex kinematics is an extension of the physical sector. This article does not resolve whether the framework's local, medium-dependent complex structure (the scale $c = 1/\sqrt{\epsilon\mu}$ making the $ict$ direction local) has anything to do with the complexification that spinor-helicity amplitudes use, and it does not claim that it does.
 
 2. **No derivation of amplitudes.** The Parke–Taylor formula is checked for consistency but not derived. The framework has a scattering article (*The S-Matrix in Biquaternionic Form*) that hosts a one-mode truncation of the $S$-matrix, but that construction is not a theory of massless scattering amplitudes and does not contain spinor-helicity variables.
 
-3. **$ISO(2)$ versus $U(1)$.** The full massless little group includes null rotations (the translations of $ISO(2)$), which act trivially on finite-helicity states. The framework's factorisation is invariant under the compact $U(1)$ and under the complexified scaling; the precise status of the null-rotation generators in the factorisation picture is not worked out here.
+3. **$ISO(2)$ versus $\mathrm{U}(1)$.** The full massless little group includes null rotations (the translations of $ISO(2)$), which act trivially on finite-helicity states. The framework's factorisation is invariant under the compact $\mathrm{U}(1)$ and under the complexified scaling; the precise status of the null-rotation generators in the factorisation picture is not worked out here.
 
 4. **The two families of zero divisors.** Real null momenta are non-pure zero divisors ($P_0 = iE/c \neq 0$ for $E\neq0$). The complexified null cone also contains the pure nilpotent branch, which no real null momentum of nonzero energy reaches. What, if anything, the pure branch describes physically is left open.
 
-**Open questions.** (1) Can the framework's spinor-module Dirac and Weyl equations supply an independent *dynamics* for the factors $\lambda$ and $\tilde\lambda$, rather than only their kinematics? (2) The massless little group's null rotations act trivially on helicity states; can the framework exhibit them as an invariance of the zero-divisor cone at fixed momentum, and does that invariance have a name in the algebra? (3) Is the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ the natural pairing in which to state the amplitudes' positivity or unitarity, given that it is the framework's Born rule? (4) Does the complexification required by spinor-helicity, and the framework's local complex structure in a medium, have a common formulation? These are recorded as questions, not as results.
+**Open questions.** (1) Can the framework's spinor-module Dirac and Weyl equations supply an independent *dynamics* for the factors $\lambda$ and $\bar\lambda$, rather than only their kinematics? (2) The massless little group's null rotations act trivially on helicity states; can the framework exhibit them as an invariance of the zero-divisor cone at fixed momentum, and does that invariance have a name in the algebra? (3) Is the trace formula $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ the natural pairing in which to state the amplitudes' positivity or unitarity, given that it is the framework's Born rule? (4) Does the complexification required by spinor-helicity, and the framework's local complex structure in a medium, have a common formulation? These are recorded as questions, not as results.
 
 ## Summary
 
-The spinor-helicity formalism writes a massless momentum as a product of two Weyl spinors, $p_{\alpha\dot\beta} = \lambda_\alpha\tilde\lambda_{\dot\beta}$, and builds amplitudes from the antisymmetric brackets $\langle ij\rangle = -\langle ji\rangle$ and $[ij] = -[ji]$. This article has shown that the framework's zero-divisor structure *is* that factorisation, not an analogue of it. A massless momentum $\tilde P = iE/c\,e_0 + \vec p$ has $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$ and $\tilde P \neq 0$, so it is a zero divisor; under $\mathsf{M}_2$ it is a rank-one, anti-Hermitian matrix; a rank-one $2\times2$ matrix is an outer product $\lambda\tilde\lambda^T$; and $\mathsf{M}_2(\tilde P) = i\big(\frac Ec I_2 - \vec p\cdot\boldsymbol\sigma\big)$ is the standard bispinor up to the $ict$ factor. The factorisation was verified on four independently chosen null momenta.
+The spinor-helicity formalism writes a massless momentum as a product of two Weyl spinors, $p_{\alpha\bar\beta} = \lambda_\alpha\bar\lambda_{\bar\beta}$, and builds amplitudes from the antisymmetric brackets $\langle ij\rangle = -\langle ji\rangle$ and $[ij] = -[ji]$. This article has shown that the framework's zero-divisor structure *is* that factorisation, not an analogue of it. A massless momentum $\tilde P = iE/c\,e_t + \vec p$ has $\langle\tilde P\rangle_{\natural} = \langle\tilde P,\tilde P\rangle_{\natural} = 0$ and $\tilde P \neq 0$, so it is a zero divisor; under $\mathsf{M}_2$ it is a rank-one, anti-Hermitian matrix; a rank-one $2\times2$ matrix is an outer product $\lambda\bar\lambda^T$; and $\mathsf{M}_2(\tilde P) = i\big(\frac Ec I_2 - \vec p\cdot\boldsymbol\sigma\big)$ is the standard bispinor up to the $ict$ factor. The factorisation was verified on four independently chosen null momenta.
 
-The brackets are the invariant symplectic pairing $\varepsilon$ of the spinor module, antisymmetric by the antisymmetry of $\varepsilon$, and they satisfy $\langle ij\rangle[ij] = \det(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)) = 2\langle\tilde P_i,\tilde P_j\rangle$, checked symbolically. The little-group scaling $\lambda\to t\lambda$, $\tilde\lambda\to t^{-1}\tilde\lambda$ is exactly the ambiguity of the rank-one factorisation and leaves the momentum invariant; for real momenta it is a $U(1)$, realized by the framework's rotation rotor about the momentum axis, and helicity is its weight, $d_{\lambda,k} = -2h_k$. The Parke–Taylor kinematic factor has precisely these weights, checked symbolically for $n=4,5,6$ including non-adjacent and cyclic-boundary negative helicities.
+The brackets are the invariant symplectic pairing $\varepsilon$ of the spinor module, antisymmetric by the antisymmetry of $\varepsilon$, and they satisfy $\langle ij\rangle[ij] = \det(\mathsf{M}_2(\tilde P_i)+\mathsf{M}_2(\tilde P_j)) = 2\langle\tilde P_i,\tilde P_j\rangle$, checked symbolically. The little-group scaling $\lambda\to t\lambda$, $\bar\lambda\to t^{-1}\bar\lambda$ is exactly the ambiguity of the rank-one factorisation and leaves the momentum invariant; for real momenta it is a $\mathrm{U}(1)$, realized by the framework's rotation rotor about the momentum axis, and helicity is its weight, $d_{\lambda,k} = -2h_k$. The Parke–Taylor kinematic factor has precisely these weights, checked symbolically for $n=4,5,6$ including non-adjacent and cyclic-boundary negative helicities.
 
-Two things are deliberately not claimed. The framework does not derive the Parke–Taylor formula or the gauge theory, and it does not treat the massless limit as continuous: massive momenta are invertible, have rank-two image, carry a two-term bispinor, and have little group $SU(2)$, while the massless ones are zero divisors with rank-one image, a one-term factorisation, and little group $ISO(2)$ with compact part $U(1)$; the defect $\tilde P^2 = 2P_0\tilde P + m^2c^2e_0$ measures the discontinuity. And the general spinor-helicity variables with independent complex spinors describe complexified momenta, off the real material slice; on the real slice the reality condition $\tilde\lambda\sim\lambda^{*}$ holds. Within these limits the identification is exact.
+Two things are deliberately not claimed. The framework does not derive the Parke–Taylor formula or the gauge theory, and it does not treat the massless limit as continuous: massive momenta are invertible, have rank-two image, carry a two-term bispinor, and have little group $SU(2)$, while the massless ones are zero divisors with rank-one image, a one-term factorisation, and little group $ISO(2)$ with compact part $\mathrm{U}(1)$; the defect $\tilde P^2 = 2P_0\tilde P + m^2c^2e_t$ measures the discontinuity. And the general spinor-helicity variables with independent complex spinors describe complexified momenta, off the real material slice; on the real slice the reality condition $\bar\lambda\sim\lambda^{*}$ holds. Within these limits the identification is exact.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathsf{M}_2(\tilde Q)$ | Matrix realization, $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
 | $\mathbb{M}_-$ | Material (anti-Hermitian) subspace, four-vectors |
 | $\mathbb{M}_+$ | Informational (Hermitian) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, rotation rotors |
-| $\tilde P = iE/c\,e_0+\vec p$ | Four-momentum, null when $\langle\tilde P\rangle_{\natural}=0$ |
+| $\tilde P = iE/c\,e_t+\vec p$ | Four-momentum, null when $\langle\tilde P\rangle_{\natural}=0$ |
 | $S=\mathbb{C}^2$, $\bar S$ | Spinor module and its conjugate |
 | $\varepsilon(\psi,\phi)=\psi^{T}\epsilon\phi$ | Invariant symplectic pairing on $S$ |
-| $\lambda$ (unprimed), $\tilde\lambda$ (primed) | Spinor-helicity factors; $\mathsf{M}_2(\tilde P)=\lambda\tilde\lambda^{T}$, so $\mathsf{M}_2(\tilde H)=-i\lambda\tilde\lambda^{T}$ with $\tilde H=-i\tilde P$ |
-| $p_{\alpha\dot\beta}=\frac Ec\delta_{\alpha\dot\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\dot\beta}$ | Standard spinor-helicity bispinor |
+| $\lambda$ (unbarred), $\bar\lambda$ (barred) | Spinor-helicity factors; $\mathsf{M}_2(\tilde P)=\lambda\bar\lambda^{T}$, so $\mathsf{M}_2(\tilde H)=-i\lambda\bar\lambda^{T}$ with $\tilde H=-i\tilde P$ |
+| $p_{\alpha\bar\beta}=\frac Ec\delta_{\alpha\bar\beta}-(\vec p\cdot\boldsymbol\sigma)_{\alpha\bar\beta}$ | Standard spinor-helicity bispinor |
 | $\langle ij\rangle=\lambda_i^{T}\epsilon\lambda_j$ | Angle bracket, $=-\langle ji\rangle$ |
-| $[ij]=\tilde\lambda_i^{T}\epsilon\tilde\lambda_j$ | Square bracket, $=-[ji]$ |
-| $\lambda\to t\lambda,\ \tilde\lambda\to t^{-1}\tilde\lambda$ | Little-group scaling, $t\in\mathbb{C}^\times$; $|t|=1$ real |
+| $[ij]=\bar\lambda_i^{T}\epsilon\bar\lambda_j$ | Square bracket, $=-[ji]$ |
+| $\lambda\to t\lambda,\ \bar\lambda\to t^{-1}\bar\lambda$ | Little-group scaling, $t\in\mathbb{C}^\times$; $|t|=1$ real |
 | $h$ | Helicity, the little-group weight; $d_\lambda=-2h$ |
-| $\tilde H=-i\tilde P\in\mathbb{M}_+$ | Hermitian four-vector, $\mathsf{M}_2(\tilde H)=p_{\alpha\dot\beta}$ |
+| $\tilde H=-i\tilde P\in\mathbb{M}_+$ | Hermitian four-vector, $\mathsf{M}_2(\tilde H)=p_{\alpha\bar\beta}$ |
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ | Trace formula (Born rule), inherited |
 | $\mathcal A_n^{\mathrm{MHV}}\propto\langle ij\rangle^4/\prod_k\langle k,k+1\rangle$ | Parke–Taylor kinematic factor |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
@@ -318,7 +318,7 @@ Two things are deliberately not claimed. The framework does not derive the Parke
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1: *Two-Spinor Calculus and Relativistic Fields* (Cambridge University Press, 1984), for the two-component spinor calculus and the reality condition on the momentum bispinor.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge University Press, 1995), for the little group of a massless particle and helicity as the weight of its compact subgroup.
 - Companion article *Zero Divisors of the Biquaternion Algebra*, for the criterion $\langle\tilde Q\rangle_{\natural}=0$, the pure and non-pure families, and the rank-one statement.
-- Companion article *The Null Quadric and Its Projective Geometry*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$.
+- Companion article *The Null Quadric and Its Projective Geometry*, for the Segre quadric, the two rulings, and the mixed-spinor factorisation $A_\alpha{}^{\bar\beta}=\phi_\alpha\pi^{\bar\beta}$.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module $S$, the conjugate module, the symplectic form $\varepsilon$, and the Lorentz action.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the chirality projectors, the conjugate defining representation in the $\varepsilon$ convention.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the $(m,n)$ classification containing $(\tfrac12,0)$ and $(0,\tfrac12)$.

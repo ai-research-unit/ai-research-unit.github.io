@@ -88,7 +88,7 @@ The objects are named rather than denoted; the symbols used in the tables are co
 | $f_n \rightrightarrows f$ | uniform convergence |
 | $f_n \to f$ a.e. | convergence almost everywhere |
 | $f_n \xrightarrow{\mu} f$ | convergence in measure |
-| $f_n \xrightarrow{L^{n} f$ | convergence in the $L^{n}$ norm |
+| $f_n \xrightarrow{L^{n} }$ | convergence in the $L^{n}$ norm |
 | $x_n \rightharpoonup x$, $f_n \overset{\ast}{\rightharpoonup} f$ | weak convergence, weak-$\ast$ convergence |
 | $\mu_n \to \mu$ weakly, $\Rightarrow$ | weak convergence of measures, convergence in distribution |
 

@@ -5,9 +5,9 @@
 
 This article is the rotation slot of the split biquaternion system. It determines which Lorentzian geometry the algebra $\mathbb{H}_{\mathbb{D}}$ carries, identifies the isometry groups of the quadratic forms that the algebra presents, and describes how much of those isometry groups the algebra itself realises. The **Lorentz group** is used here in its mathematical sense throughout: it is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$ on a real vector space of dimension four. Nothing physical is attached to the word; it names a position in the classification of forms, and the companion statements about forms of signature $(2,2)$ are made in the same spirit. The two-dimensional model, where the corresponding group is the hyperbolic rotation group of the split complex numbers, is the article *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, and the general theory of forms of indefinite signature, of their isometry groups and of the geometry they define is the article *Pseudo-Riemannian and Lorentzian Geometry* in Part II, written in parallel; both are cited rather than reproduced.
 
-The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, with the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat} = -{}^{*}$, with the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ and the theory of its invertibility from *Split-Biquaternion Norm and Invertibility*, the description of the zero divisors from *Split-Biquaternion Zero Divisors*, the classification of the roots of $-e_0$ from *Split-Biquaternion Roots of Minus One*. It uses the hyperbolic rotations of the split complex plane from *Hyperbolic Rotations*, and the quaternion rotation theory — the double cover $Sp(1)\to SO(3)$ and the two-sided action giving $SO(4)$ — from *Quaternion Rotations and Reflections*. It does not restate any of them; the rotation theory of the quaternions is used only as the compact model against which the split biquaternion case is compared. The Lie algebra $\mathrm{SO}(3,1)$ and its complexification are treated in *The Orthogonal Lie Algebra* in Part I, where the isomorphism $\mathrm{SO}(1,3)\cong\mathrm{SL}_2(\mathbb{C})$ is established.
+The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, with the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat} = -{}^{*}$, with the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ and the theory of its invertibility from *Split-Biquaternion Norm and Invertibility*, the description of the zero divisors from *Split-Biquaternion Zero Divisors*, the classification of the roots of $-e_t$ from *Split-Biquaternion Roots of Minus One*. It uses the hyperbolic rotations of the split complex plane from *Hyperbolic Rotations*, and the quaternion rotation theory — the double cover $Sp(1)\to SO(3)$ and the two-sided action giving $SO(4)$ — from *Quaternion Rotations and Reflections*. It does not restate any of them; the rotation theory of the quaternions is used only as the compact model against which the split biquaternion case is compared. The Lie algebra $\mathrm{SO}(3,1)$ and its complexification are treated in *The Orthogonal Lie Algebra* in Part I, where the isomorphism $\mathrm{SO}(1,3)\cong\mathrm{SL}_2(\mathbb{C})$ is established.
 
-The article follows the shared conventions. The quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the split complex unit is $j$ with $j^2 = +e_0$, commuting with every $e_k$; a split biquaternion is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{D}$, written $\tilde Q = a + jb$ with $a, b\in\mathbb{H}$ and, equivalently, $\tilde Q = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2$ with $\tilde Q_{\pm}\in\mathbb{H}$. The Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the four invariant subspaces are as in *Split-Biquaternion Algebra*.
+The article follows the shared conventions. The quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$; the split complex unit is $j$ with $j^2 = +e_t$, commuting with every $\vec e_k$; a split biquaternion is $\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{D}$, written $\tilde Q = a + jb$ with $a, b\in\mathbb{H}$ and, equivalently, $\tilde Q = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2$ with $\tilde Q_{\pm}\in\mathbb{H}$. The Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the four invariant subspaces are as in *Split-Biquaternion Algebra*.
 
 ## The Lorentz Group as an Isometry Group
 
@@ -63,20 +63,20 @@ The algebra carries a natural real bilinear form, built from the Hermitian conju
 **Definition.** The **Hermitian scalar form** on $\mathbb{H}_{\mathbb{D}}$ is
 
 $$
-g(\tilde P, \tilde Q) = \mathrm{Sc}\!\left(\tilde P\tilde{Q}^{*}\right),
+g(\tilde Q_1, \tilde Q_2) = \mathrm{Sc}\!\left(\tilde Q_1\tilde Q_2^{*}\right),
 $$
 
-where $\mathrm{Sc}$ is the scalar part, the coefficient of $e_0$ in the developed form.
+where $\mathrm{Sc}$ is the scalar part, the coefficient of $e_t$ in the developed form.
 
-**Proposition.** The Hermitian scalar form is symmetric, real-valued and $\mathbb{R}$-bilinear, and its signature is $(4,4)$. In the real basis $(e_0, e_1, e_2, e_3, je_0, je_1, je_2, je_3)$ it is diagonal with entries $(+1,+1,+1,+1,-1,-1,-1,-1)$.
+**Proposition.** The Hermitian scalar form is symmetric, real-valued and $\mathbb{R}$-bilinear, and its signature is $(4,4)$. In the real basis $(e_t, \vec e_x, \vec e_y, \vec e_z, je_t, j\vec e_x, j\vec e_y, j\vec e_z)$ it is diagonal with entries $(+1,+1,+1,+1,-1,-1,-1,-1)$.
 
-*Proof.* Symmetry: $\mathrm{Sc}(\tilde P\tilde{Q}^{*}) = \mathrm{Sc}((\tilde Q\tilde{P}^{*})^{\natural}) = \mathrm{Sc}(\tilde Q\tilde{P}^{*})$, because the scalar part is fixed by ${}^{\natural}$ and by $\bar{\cdot}$ separately, hence by ${}^{*}$. Bilinearity is clear. For the signature, write $\tilde Q = a + jb$ with $a, b\in\mathbb{H}$; then $\tilde{Q}^{*} = a^{\natural} - jb^{\natural}$ and
+*Proof.* Symmetry: $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = \mathrm{Sc}((\tilde Q_2\tilde Q_1^{*})^{\natural}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})$, because the scalar part is fixed by ${}^{\natural}$ and by $\bar{\cdot}$ separately, hence by ${}^{*}$. Bilinearity is clear. For the signature, write $\tilde Q_2 = c + jd$ with $c, d\in\mathbb{H}$; then $\tilde Q_2^{*} = c^{\natural} - jd^{\natural}$ and
 
 $$
-\tilde P\tilde{Q}^{*} = \left(ac^{\natural} - bd^{\natural}\right) + j\left(bc^{\natural} - ad^{\natural}\right)
+\tilde Q_1\tilde Q_2^{*} = \left(ac^{\natural} - bd^{\natural}\right) + j\left(bc^{\natural} - ad^{\natural}\right)
 $$
 
-for $\tilde P = a + jb$, $\tilde Q = c + jd$, so that $g(\tilde P,\tilde Q) = \mathrm{Sc}(ac^{\natural} - bd^{\natural})$ with $\mathrm{Sc}$ now the quaternion scalar part. On the basis elements this gives $g(e_\mu,e_\nu) = \delta_{\mu\nu}$, $g(je_\mu,je_\nu) = -\delta_{\mu\nu}$ and $g(e_\mu,je_\nu) = 0$, since $\mathrm{Sc}(ac^{\natural})$ and $-\mathrm{Sc}(bd^{\natural})$ are the two contributions and the cross terms vanish.
+for $\tilde Q_1 = a + jb$, so that $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(ac^{\natural} - bd^{\natural})$ with $\mathrm{Sc}$ now the quaternion scalar part. On the basis elements this gives $g(e_\mu,e_\nu) = \delta_{\mu\nu}$, $g(je_\mu,je_\nu) = -\delta_{\mu\nu}$ and $g(e_\mu,je_\nu) = 0$, since $\mathrm{Sc}(ac^{\natural})$ and $-\mathrm{Sc}(bd^{\natural})$ are the two contributions and the cross terms vanish.
 
 The form is non-degenerate, of signature $(4,4)$, so it is neutral on the algebra as a whole, with four positive and four negative directions. This is the ambient form of the split biquaternion rotations: every rotation considered below is required to preserve it.
 
@@ -91,13 +91,13 @@ $$
 **Proposition.** Both subspaces are four-dimensional and real, they are orthogonal to one another, and $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is an orthogonal direct sum. Concretely,
 
 $$
-\mathbb{M}_+ = \{a + jb : a\in\mathbb{R}\,e_0,\ b\in\operatorname{Im}\mathbb{H}\}, \qquad
-\mathbb{M}_- = \{a + jb : a\in\operatorname{Im}\mathbb{H},\ b\in\mathbb{R}\,e_0\},
+\mathbb{M}_+ = \{a + jb : a\in\mathbb{R}\,e_t,\ b\in\operatorname{Im}\mathbb{H}\}, \qquad
+\mathbb{M}_- = \{a + jb : a\in\operatorname{Im}\mathbb{H},\ b\in\mathbb{R}\,e_t\},
 $$
 
-so that $\mathbb{M}_+$ has the orthonormal basis $(e_0, je_1, je_2, je_3)$ and $\mathbb{M}_-$ the orthogonal basis $(je_0, e_1, e_2, e_3)$.
+so that $\mathbb{M}_+$ has the orthonormal basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ and $\mathbb{M}_-$ the orthogonal basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$.
 
-*Proof.* The subspaces are the $\pm1$-eigenspaces of the involution ${}^{*}$, hence complementary. If $\tilde{P}^{*} = \tilde P$ and $\tilde{Q}^{*} = -\tilde Q$, then $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde{Q}^{*}) = -\mathrm{Sc}(\tilde P\tilde Q)$, and $g(\tilde Q,\tilde P) = \mathrm{Sc}(\tilde Q\tilde{P}^{*}) = \mathrm{Sc}(\tilde Q\tilde P) = \mathrm{Sc}(\tilde P\tilde Q)$; by symmetry the two are equal, so both vanish. For the explicit descriptions, write $\tilde Q = a + jb$; then $\tilde{Q}^{*} = a^{\natural} - jb^{\natural}$, and $\tilde{Q}^{*} = \tilde Q$ gives $a^{\natural} = a$ and $b^{\natural} = -b$, while $\tilde{Q}^{*} = -\tilde Q$ gives $a^{\natural} = -a$ and $b^{\natural} = b$.
+*Proof.* The subspaces are the $\pm1$-eigenspaces of the involution ${}^{*}$, hence complementary. If $\tilde Q_1^{*} = \tilde Q_1$ and $\tilde Q_2^{*} = -\tilde Q_2$, then $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = -\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and $g(\tilde Q_2,\tilde Q_1) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1) = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$; by symmetry the two are equal, so both vanish. For the explicit descriptions, write $\tilde Q = a + jb$; then $\tilde{Q}^{*} = a^{\natural} - jb^{\natural}$, and $\tilde{Q}^{*} = \tilde Q$ gives $a^{\natural} = a$ and $b^{\natural} = -b$, while $\tilde{Q}^{*} = -\tilde Q$ gives $a^{\natural} = -a$ and $b^{\natural} = b$.
 
 **Theorem.** The restrictions of the Hermitian scalar form have signatures
 
@@ -107,15 +107,15 @@ $$
 
 Consequently $\mathbb{M}_-$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{M}_-,g)$; $\mathbb{M}_+$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.
 
-*Proof.* On $\mathbb{M}_+$ the basis $(e_0, je_1, je_2, je_3)$ gives diagonal entries $g(e_0,e_0) = +1$ and $g(je_k,je_k) = -1$, hence signature $(1,3)$. On $\mathbb{M}_-$ the basis $(je_0, e_1, e_2, e_3)$ gives $g(je_0,je_0) = -1$ and $g(e_k,e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.
+*Proof.* On $\mathbb{M}_+$ the basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ gives diagonal entries $g(e_t,e_t) = +1$ and $g(j\vec e_k,j\vec e_k) = -1$, hence signature $(1,3)$. On $\mathbb{M}_-$ the basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$ gives $g(je_t,je_t) = -1$ and $g(\vec e_k,\vec e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.
 
-The element $je_0$ is therefore a **timelike** vector of the algebra, of $g$-norm $-1$; the elements $e_1, e_2, e_3$ are **spacelike**, of $g$-norm $+1$; and $\mathbb{M}_-$ is the Lorentzian four-space attached to the split biquaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{M}_{\pm}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.
+The element $je_t$ is therefore a **timelike** vector of the algebra, of $g$-norm $-1$; the elements $\vec e_x, \vec e_y, \vec e_z$ are **spacelike**, of $g$-norm $+1$; and $\mathbb{M}_-$ is the Lorentzian four-space attached to the split biquaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{M}_{\pm}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.
 
 ### Neutral Planes and the $(2,2)$ Form
 
 **Definition.** A real subspace $W\subset\mathbb{H}_{\mathbb{D}}$ is **neutral** if $\dim W = 4$ and $g\big|_W$ has signature $(2,2)$. Such a subspace is **totally isotropic** if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{H}_{\mathbb{D}}$ are four-dimensional.
 
-**Proposition.** Let $\mu\neq\nu$ be two distinct elements of $\{0,1,2,3\}$. The $\mathbb{D}$-span
+**Proposition.** Let $\mu\neq\nu$ be two distinct elements of $\{t,x,y,z\}$. The $\mathbb{D}$-span
 
 $$
 \mathbb{D}e_\mu\oplus\mathbb{D}e_\nu = \mathbb{R}e_\mu\oplus\mathbb{R}je_\mu\oplus\mathbb{R}e_\nu\oplus\mathbb{R}je_\nu
@@ -134,10 +134,10 @@ So the split biquaternion algebra carries Lorentzian four-planes of both relevan
 **Definition.** The **unit sphere** of the split biquaternion algebra is
 
 $$
-S(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : \langle\tilde S\rangle_{\natural} = e_0\}.
+S(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : \langle\tilde S\rangle_{\natural} = e_t\}.
 $$
 
-**Theorem.** An element $\tilde S$ has norm $e_0$ if and only if its two idempotent components are unit quaternions, so that
+**Theorem.** An element $\tilde S$ has norm $e_t$ if and only if its two idempotent components are unit quaternions, so that
 
 $$
 S(\mathbb{H}_{\mathbb{D}}) = \left\{\tilde S_+\tilde\Pi_1 + \tilde S_-\tilde\Pi_2 : \lvert\tilde S_+\rvert = \lvert\tilde S_-\rvert = 1\right\}\cong S^3\times S^3,
@@ -149,7 +149,7 @@ $$
 S(\mathbb{H}_{\mathbb{D}}) = \left\{a + jb : \lvert a + b\rvert = \lvert a - b\rvert = 1\right\}.
 $$
 
-*Proof.* By the idempotent decomposition of *Split-Biquaternion Algebra*, the split-biquaternion norm is $\langle\tilde S\rangle_{\natural} = \langle\tilde S_+\rangle_{\natural}\tilde\Pi_1 + \langle\tilde S_-\rangle_{\natural}\tilde\Pi_2$, since $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_{1,2}$ are orthogonal idempotents; this equals $e_0 = \tilde\Pi_1 + \tilde\Pi_2$ exactly when the two quaternion norms are both $1$. The relation $\tilde S_{\pm} = a\pm b$ gives the second description.
+*Proof.* By the idempotent decomposition of *Split-Biquaternion Algebra*, the split-biquaternion norm is $\langle\tilde S\rangle_{\natural} = \langle\tilde S_+\rangle_{\natural}\tilde\Pi_1 + \langle\tilde S_-\rangle_{\natural}\tilde\Pi_2$, since $\tilde\Pi_1\tilde\Pi_2 = 0$ and $\tilde\Pi_{1,2}$ are orthogonal idempotents; this equals $e_t = \tilde\Pi_1 + \tilde\Pi_2$ exactly when the two quaternion norms are both $1$. The relation $\tilde S_{\pm} = a\pm b$ gives the second description.
 
 The unit sphere is thus a product of two copies of the quaternion unit sphere, and in particular it is **compact**. This is the first substantive difference from the classical description of a rotation group attached to an indefinite form: the set of units of the split biquaternion algebra is not a hyperboloid, and it is not diffeomorphic to a non-compact symmetric space. The hyperboloids appear only when the Hermitian form $g$ is used, and they are subsets of $\mathbb{M}_-$, as described below. The split complex unit group, by contrast, is the hyperbola $\{u\in\mathbb{D} : \langle u\rangle_{\natural} = 1\}$, a two-branched curve each branch of which is an isomorphic copy of $\mathbb{R}$, as in *Hyperbolic Rotations*; the difference is that in $\mathbb{H}_{\mathbb{D}}$ the split-biquaternion norm is definite on each quaternion component.
 
@@ -163,7 +163,7 @@ $$
 
 which preserves the split-biquaternion norm; the resulting homomorphism $S^3\times S^3\times S^3\times S^3\to GL_8(\mathbb{R})$ has image of dimension eight, and the restriction to the quaternion subspace $\mathbb{H}\subset\mathbb{H}_{\mathbb{D}}$, on which the action is $\tilde{Q}\mapsto \tilde S_+\tilde{Q}\tilde S_-^{-1}$, realises $SO(4)$ on each idempotent component, as in *Quaternion Rotations and Reflections*.
 
-*Proof.* Multiplicativity of the split-biquaternion norm shows that $\tilde S\tilde{Q}\tilde T^{-1}$ has norm $\langle\tilde S\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde T\rangle_{\natural}^{-1} = \langle\tilde{Q}\rangle_{\natural}$ when $\tilde S,\tilde T$ have norm $e_0$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in *Quaternion Rotations and Reflections*.
+*Proof.* Multiplicativity of the split-biquaternion norm shows that $\tilde S\tilde{Q}\tilde T^{-1}$ has norm $\langle\tilde S\rangle_{\natural}\langle\tilde{Q}\rangle_{\natural}\langle\tilde T\rangle_{\natural}^{-1} = \langle\tilde{Q}\rangle_{\natural}$ when $\tilde S,\tilde T$ have norm $e_t$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in *Quaternion Rotations and Reflections*.
 
 The comparison with the quaternion sphere is then as follows. In the quaternion algebra the unit sphere $S^3$ is the whole group of units; in the split biquaternion algebra the unit sphere is $S^3\times S^3$, and the group of all units is four times as large in dimension, $\mathbb{H}^\times\times\mathbb{H}^\times$. The compactness of $S^3$ is not lost but doubled. What is lost is the divisibility: the split biquaternion algebra has zero divisors, so the set of elements of norm one is a proper subset of the units, and the polar decomposition of a unit is governed by the idempotent decomposition rather than by a single unit quaternion.
 
@@ -174,16 +174,16 @@ The comparison with the quaternion sphere is then as follows. In the quaternion 
 **Definition.** The **unitary group** of the Hermitian form is
 
 $$
-U(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : \tilde S\tilde{S}^{*} = e_0\}.
+\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : \tilde S\tilde{S}^{*} = e_t\}.
 $$
 
 **Theorem.** The unitary group is four-dimensional and isomorphic to the direct product $Sp(1)\times\mathbb{R}$. Concretely,
 
 $$
-U(\mathbb{H}_{\mathbb{D}}) = \left\{u\,\exp(\psi j) : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad \exp(\psi j) = \cosh\psi + j\sinh\psi,
+\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \left\{u\,\exp(\psi j) : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad \exp(\psi j) = \cosh\psi + j\sinh\psi,
 $$
 
-and its action on $\mathbb{M}_-$ given by $\tilde{Q}\mapsto \tilde S\tilde{Q}\tilde{S}^{*}$ is by isometries of $g$; it fixes the timelike vector $je_0$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$ by
+and its action on $\mathbb{M}_-$ given by $\tilde{Q}\mapsto \tilde S\tilde{Q}\tilde{S}^{*}$ is by isometries of $g$; it fixes the timelike vector $je_t$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ by
 
 $$
 v\longmapsto u\,v\,u^{\natural} ,
@@ -191,28 +191,28 @@ $$
 
 so that the image is the group $SO(3)$ of rotations of the spacelike three-plane. The factor $\exp(\psi j)$ lies in the kernel of the action.
 
-*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde{S}^{*} = (aa^{\natural} - bb^{\natural}) + j(ba^{\natural} - ab^{\natural}) = e_0$ gives the two conditions $aa^{\natural} - bb^{\natural} = 1$ and $ab^{\natural} = ba^{\natural}$; the second says $ab^{\natural}$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = \exp(\psi j)$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde{Q} = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde{Q}\in\mathbb{M}_-$. Then $\tilde{Q}^{*} = -a' - jb' = -\tilde{Q}$, and
+*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde{S}^{*} = (aa^{\natural} - bb^{\natural}) + j(ba^{\natural} - ab^{\natural}) = e_t$ gives the two conditions $aa^{\natural} - bb^{\natural} = 1$ and $ab^{\natural} = ba^{\natural}$; the second says $ab^{\natural}$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = \exp(\psi j)$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde{Q} = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde{Q}\in\mathbb{M}_-$. Then $\tilde{Q}^{*} = -a' - jb' = -\tilde{Q}$, and
 
 $$
 \tilde S\tilde{Q}\tilde{S}^{*} = u(a' + jb')\exp(\psi j)\big(u^{\natural} - ju^{\natural}\,\sinh\psi\big)
 = u a'u^{\natural} + j\,b' ,
 $$
 
-because $j$ is central, $\exp(\psi j)$ is central with $\exp(\psi j)\exp(\psi j){}^{*} = \exp(-\psi j)\exp(\psi j) = e_0$, and $b'$ is real and therefore commutes with $u$. Hence the first component is the adjoint action $a'\mapsto ua'u^{\natural}$ on the imaginary quaternions and the second is unchanged. The adjoint action of $Sp(1)$ on $\operatorname{Im}\mathbb{H}$ is the standard surjection $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, by *Quaternion Rotations and Reflections*, so the image is $SO(3)$. Preservation of $g$ follows because the displayed formula has $g$-norms $\lvert a'\rvert^2 - (b')^2$ unchanged. Finally the action of $\exp(\psi j)$ alone is trivial, so this factor lies in the kernel.
+because $j$ is central, $\exp(\psi j)$ is central with $\exp(\psi j)\exp(\psi j){}^{*} = \exp(-\psi j)\exp(\psi j) = e_t$, and $b'$ is real and therefore commutes with $u$. Hence the first component is the adjoint action $a'\mapsto ua'u^{\natural}$ on the imaginary quaternions and the second is unchanged. The adjoint action of $Sp(1)$ on $\operatorname{Im}\mathbb{H}$ is the standard surjection $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, by *Quaternion Rotations and Reflections*, so the image is $SO(3)$. Preservation of $g$ follows because the displayed formula has $g$-norms $\lvert a'\rvert^2 - (b')^2$ unchanged. Finally the action of $\exp(\psi j)$ alone is trivial, so this factor lies in the kernel.
 
-The unitary group therefore realises the **elliptic** part of the Lorentz group: the compact subgroup $SO(3)\subset SO^{+}(3,1)$ of spacelike rotations, which fixes the timelike direction $je_0$ and acts on the spacelike three-plane. The rotations obtained are exactly the conjugates of the quaternion rotations into the split biquaternion algebra.
+The unitary group therefore realises the **elliptic** part of the Lorentz group: the compact subgroup $SO(3)\subset SO^{+}(3,1)$ of spacelike rotations, which fixes the timelike direction $je_t$ and acts on the spacelike three-plane. The rotations obtained are exactly the conjugates of the quaternion rotations into the split biquaternion algebra.
 
 ### The Split-Complex Units and the Hyperbolic Rotations
 
 The hyperbolic part is realised not on $\mathbb{M}_-$ but on the neutral planes and on the split complex lines. Let
 
 $$
-C = \mathbb{R}\,e_0\oplus\mathbb{R}\,j \subset\mathbb{H}_{\mathbb{D}}
+C = \mathbb{R}\,e_t\oplus\mathbb{R}\,j \subset\mathbb{H}_{\mathbb{D}}
 $$
 
 be the copy of the split complex algebra generated by $j$; it is central in $\mathbb{H}_{\mathbb{D}}$, and the split complex conjugation $\bar{\cdot}$ of the algebra restricts to the conjugation $c + js\mapsto c - js$ of $C$.
 
-**Proposition.** The group of units $H = \{u\in C : uu^{*} = e_0\}$ is
+**Proposition.** The group of units $H = \{u\in C : uu^{*} = e_t\}$ is
 
 $$
 H = \left\{\exp(\theta j) = \cosh\theta + j\sinh\theta : \theta\in\mathbb{R}\right\}\cup\left\{-\exp(\theta j) : \theta\in\mathbb{R}\right\}\cong\mathbb{R}\times\mathbb{Z}/2\mathbb{Z},
@@ -232,7 +232,7 @@ $$
 \Delta\,SO(1,1)\subset SO(1,1)\times SO(1,1)\subset SO^{+}(2,2).
 $$
 
-*Proof.* The basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ of the neutral plane is $g$-orthonormal of signature $(+1,-1,+1,-1)$. In each coordinate plane the map is the hyperbolic rotation with matrix $\begin{pmatrix}\cosh\theta & \sinh\theta\\ \sinh\theta & \cosh\theta\end{pmatrix}$ in the basis $(e_\rho, je_\rho)$, and this matrix preserves the form $\operatorname{diag}(+1,-1)$ because $\cosh^2\theta - \sinh^2\theta = 1$ and the cross term $\cosh\theta\sinh\theta - \sinh\theta\cosh\theta$ vanishes; two blocks therefore preserve the form of signature $(2,2)$. It does not preserve $\mathbb{M}_-$: the image of $je_0$ is $\sinh\theta\,e_0 + \cosh\theta\,je_0$, whose $e_0$-component is real and non-zero for $\theta\neq0$, whereas an element of $\mathbb{M}_-$ has a purely imaginary $e_0$-component.
+*Proof.* The basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ of the neutral plane is $g$-orthonormal of signature $(+1,-1,+1,-1)$. In each coordinate plane the map is the hyperbolic rotation with matrix $\begin{pmatrix}\cosh\theta & \sinh\theta\\ \sinh\theta & \cosh\theta\end{pmatrix}$ in the basis $(e_\rho, je_\rho)$, and this matrix preserves the form $\operatorname{diag}(+1,-1)$ because $\cosh^2\theta - \sinh^2\theta = 1$ and the cross term $\cosh\theta\sinh\theta - \sinh\theta\cosh\theta$ vanishes; two blocks therefore preserve the form of signature $(2,2)$. It does not preserve $\mathbb{M}_-$: the image of $je_t$ is $\sinh\theta\,e_t + \cosh\theta\,je_t$, whose $e_t$-component is real and non-zero for $\theta\neq0$, whereas an element of $\mathbb{M}_-$ has a purely imaginary $e_t$-component.
 
 Two geometrically distinct families of isometries are thus realised inside the algebra: the elliptic group $SO(3)$ of the unitary action, on the Lorentzian four-plane $\mathbb{M}_-$, and the hyperbolic group, the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, of the split complex units, on the neutral four-planes. The two families commute: the unitary action is conjugation by quaternion units and fixes the central split complex scalars, while left multiplication by $\exp(\theta j)$ is central and commutes with conjugation by any element.
 
@@ -246,7 +246,7 @@ $$
 
 fixing a null vector and no other, with $\langle\cdot\rangle_{\natural}$ nilpotent.
 
-The elliptic type is realised in the algebra by the exponentials of the quaternion vector fields in the unitary group of the preceding subsection; the hyperbolic type is realised by the split complex units $\exp(\psi j)$ and by their conjugates; both are exponents of elements with square $-e_0$ and $+e_0$ respectively in the algebra, in the sense of the exponentials of *Split-Biquaternion Roots of Minus One*. The parabolic type is not realised in the algebra at all, and the reason is structural:
+The elliptic type is realised in the algebra by the exponentials of the quaternion vector fields in the unitary group of the preceding subsection; the hyperbolic type is realised by the split complex units $\exp(\psi j)$ and by their conjugates; both are exponents of elements with square $-e_t$ and $+e_t$ respectively in the algebra, in the sense of the exponentials of *Split-Biquaternion Roots of Minus One*. The parabolic type is not realised in the algebra at all, and the reason is structural:
 
 **Proposition.** The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ contains no non-zero nilpotent element, and consequently no element of $\mathbb{H}_{\mathbb{D}}$ exponentiates to a parabolic one-parameter subgroup; the parabolic one-parameter subgroups exist only in the isometry group of the Lorentzian form, not in the algebra acting on itself.
 
@@ -266,9 +266,9 @@ $$
 
 It is well defined for every unit and depends only on $\tilde R$; the two-sided placement of the Hermitian conjugate is what distinguishes it from left and right multiplication. It is invertible, with inverse $\operatorname{H}_{\tilde R^{-1}}$, since $(\tilde{R}^{*})^{-1} = (\tilde R^{-1})^{\dagger}$.
 
-**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde R$ be a unit. Then $\operatorname{H}_{\tilde R}(\tilde Q\tilde P) = \operatorname{H}_{\tilde R}(\tilde Q)\operatorname{H}_{\tilde R}(\tilde P)$ for all $\tilde Q,\tilde P$ if and only if $\tilde{R}^{*}\tilde R = e_0$, that is, if and only if $\tilde R$ is unitary.
+**Theorem (multiplicative exactly on the unitary subgroup).** Let $\tilde R$ be a unit. Then $\operatorname{H}_{\tilde R}(\tilde Q_1\tilde Q_2) = \operatorname{H}_{\tilde R}(\tilde Q_1)\operatorname{H}_{\tilde R}(\tilde Q_2)$ for all $\tilde Q_1,\tilde Q_2$ if and only if $\tilde{R}^{*}\tilde R = e_t$, that is, if and only if $\tilde R$ is unitary.
 
-**Proof.** The two sides are $\tilde R\tilde Q\tilde P\tilde{R}^{*}$ and $\tilde R\tilde Q\tilde{R}^{*}\tilde R\tilde P\tilde{R}^{*}$; they agree for all $\tilde Q,\tilde P$ exactly when the factor $\tilde{R}^{*}\tilde R$ inserted between $\tilde Q$ and $\tilde P$ is $e_0$, that is when $\tilde{R}^{*} = \tilde R^{-1}$ and $\tilde R$ is unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$.
+**Proof.** The two sides are $\tilde R\tilde Q_1\tilde Q_2\tilde{R}^{*}$ and $\tilde R\tilde Q_1\tilde{R}^{*}\tilde R\tilde Q_2\tilde{R}^{*}$; they agree for all $\tilde Q_1,\tilde Q_2$ exactly when the factor $\tilde{R}^{*}\tilde R$ inserted between $\tilde Q_1$ and $\tilde Q_2$ is $e_t$, that is when $\tilde{R}^{*} = \tilde R^{-1}$ and $\tilde R$ is unitary. In that case the sandwich is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$.
 
 **Theorem.** For every unit $\tilde R$ the sandwich maps $\mathbb{M}_+$ to $\mathbb{M}_+$ and $\mathbb{M}_-$ to $\mathbb{M}_-$.
 
@@ -280,23 +280,23 @@ $$
 N\!\left(\operatorname{H}_{\tilde R}(\tilde Q)\right) = N_+(\tilde R)\,N_-(\tilde R)\,\langle\tilde Q\rangle_{\natural}, \qquad g\!\left(\operatorname{H}_{\tilde R}(\tilde Q)\right) = g(\tilde Q) \ \text{ for unitary } \tilde R .
 $$
 
-**Proof.** The split-biquaternion norm is multiplicative, so $\langle\operatorname{H}_{\tilde R}(\tilde Q)\rangle_{\natural} = \langle\tilde R\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\langle\tilde{R}^{*}\rangle_{\natural}$, and the Hermitian conjugation interchanges the two idempotent components, so $\langle\tilde{R}^{*}\rangle_{\natural} = \lvert\tilde R_-\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_+\rvert^{2}\tilde\Pi_2$ while $\langle\tilde R\rangle_{\natural} = \lvert\tilde R_+\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_-\rvert^{2}\tilde\Pi_2$; their product is the central real number $\lvert\tilde R_+\rvert^{2}\lvert\tilde R_-\rvert^{2}e_0 = N_+(\tilde R)N_-(\tilde R)e_0$. For the Hermitian form, a unitary $\tilde R$ satisfies $\tilde{R}^{*} = \tilde R^{-1}$, and $\operatorname{H}_{\tilde R}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger} = \operatorname{H}_{\tilde R}(\tilde Q^{\dagger})$, one has $g(\operatorname{H}_{\tilde R}(\tilde Q)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde R}(\tilde Q)\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde R\,\tilde Q\tilde Q^{\dagger}\tilde R^{-1}\bigr) = \mathrm{Sc}(\tilde Q\tilde Q^{\dagger}) = g(\tilde Q)$.
+**Proof.** The split-biquaternion norm is multiplicative, so $\langle\operatorname{H}_{\tilde R}(\tilde Q)\rangle_{\natural} = \langle\tilde R\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\langle\tilde{R}^{*}\rangle_{\natural}$, and the Hermitian conjugation interchanges the two idempotent components, so $\langle\tilde{R}^{*}\rangle_{\natural} = \lvert\tilde R_-\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_+\rvert^{2}\tilde\Pi_2$ while $\langle\tilde R\rangle_{\natural} = \lvert\tilde R_+\rvert^{2}\tilde\Pi_1 + \lvert\tilde R_-\rvert^{2}\tilde\Pi_2$; their product is the central real number $\lvert\tilde R_+\rvert^{2}\lvert\tilde R_-\rvert^{2}e_t = N_+(\tilde R)N_-(\tilde R)e_t$. For the Hermitian form, a unitary $\tilde R$ satisfies $\tilde{R}^{*} = \tilde R^{-1}$, and $\operatorname{H}_{\tilde R}$ is then the inner automorphism; since conjugation preserves the scalar part and $\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger} = \operatorname{H}_{\tilde R}(\tilde Q^{\dagger})$, one has $g(\operatorname{H}_{\tilde R}(\tilde Q)) = \mathrm{Sc}\bigl(\operatorname{H}_{\tilde R}(\tilde Q)\operatorname{H}_{\tilde R}(\tilde Q)^{\dagger}\bigr) = \mathrm{Sc}\bigl(\tilde R\,\tilde Q\tilde Q^{\dagger}\tilde R^{-1}\bigr) = \mathrm{Sc}(\tilde Q\tilde Q^{\dagger}) = g(\tilde Q)$.
 
 The factor $N_+(\tilde R)N_-(\tilde R)$ is therefore the **defect** of the sandwich under the indefinite form. It vanishes exactly when one of the two components is zero, that is exactly on the zero divisors; on the unit group it is a nonzero real number of either sign, and the Hermitian form $g$ is preserved by every unitary element. The biquaternion sandwich has the analogous factor $\lvert \langle\tilde R\rangle_{\natural}\rvert^{2}$; the difference is that there the factor is a sum of squares and here a difference.
 
-**Theorem (kernel).** $\operatorname{H}_{\tilde R} = \mathrm{id}$ if and only if $\tilde R$ is central and unitary, that is $\tilde R = Q_0e_0$ with $Q_0 = q_0 + jq'_0$ and $q_0^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $\langle\tilde R\rangle_{\natural} = e_0$ the kernel reduces to $\{\pm e_0\}$.
+**Theorem (kernel).** $\operatorname{H}_{\tilde R} = \mathrm{id}$ if and only if $\tilde R$ is central and unitary, that is $\tilde R = Q_te_t$ with $Q_t = q_t + jq'_t$ and $q_t^{2} - q'^{2}_{0} = 1$. On the unit-norm slice $\langle\tilde R\rangle_{\natural} = e_t$ the kernel reduces to $\{\pm e_t\}$.
 
-**Proof.** If $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde Q$ for all $\tilde Q$, then $\tilde Q = e_0$ gives $\tilde R\tilde{R}^{*} = e_0$, so $\tilde R$ is unitary, and then $\tilde R\tilde Q = \tilde Q\tilde R$ for all $\tilde Q$, so $\tilde R$ is central. A central element is $Q_0e_0$ with $Q_0\in\mathbb{D}$, and it is unitary exactly when $Q_0\bar{Q_0} = q_0^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $\langle\tilde R\rangle_{\natural} = Q_0^{2} = e_0$ gives $Q_0 = \pm1$.
+**Proof.** If $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde Q$ for all $\tilde Q$, then $\tilde Q = e_t$ gives $\tilde R\tilde{R}^{*} = e_t$, so $\tilde R$ is unitary, and then $\tilde R\tilde Q = \tilde Q\tilde R$ for all $\tilde Q$, so $\tilde R$ is central. A central element is $Q_te_t$ with $Q_t\in\mathbb{D}$, and it is unitary exactly when $Q_t\bar{Q_t} = q_t^{2} - q'^{2}_{0} = 1$, the two branches of a hyperbola in the centre. Restricting to $\langle\tilde R\rangle_{\natural} = Q_t^{2} = e_t$ gives $Q_t = \pm1$.
 
-The kernel of the full sandwich is thus the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $U(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
+The kernel of the full sandwich is thus the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ inside the centre — the analogue of the circle $\mathrm{U}(1)$ of the biquaternion case. On the unit-norm slice it is the two central signs, and that kernel of order two is the double cover.
 
 ### The Comparison with Left Multiplication, and the Table of Subspaces
 
 | | left multiplication $\tilde R\tilde Q$ | the sandwich $\operatorname{H}_{\tilde R}(\tilde Q)$ |
 |---|---|---|
 | type of map | algebra endomorphism | neither multiplicative nor unital; a representation of the units |
-| image of $e_0$ | $\tilde R$ | $\tilde R\tilde{R}^{*}$, Hermitian but not central in general |
-| kernel on the unit sphere | $\{e_0\}$ | $\{\pm e_0\}$ |
+| image of $e_t$ | $\tilde R$ | $\tilde R\tilde{R}^{*}$, Hermitian but not central in general |
+| kernel on the unit sphere | $\{e_t\}$ | $\{\pm e_t\}$ |
 | effect on the norm | $\langle\tilde R\tilde Q\rangle_{\natural} = \langle\tilde R\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | $\langle\operatorname{H}_{\tilde R}\tilde Q\rangle_{\natural} = N_+(\tilde R)N_-(\tilde R)\langle\tilde Q\rangle_{\natural}$ |
 
 The sandwich acts on the four distinguished subspaces as follows.
@@ -308,7 +308,7 @@ The sandwich acts on the four distinguished subspaces as follows.
 | $\mathbb{M}_+$ | yes | $\mathbb{M}_+$ |
 | $\mathbb{M}_-$ | yes | $\mathbb{M}_-$ |
 
-The centre is not preserved: on $e_0$ the sandwich gives $\tilde R\tilde{R}^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
+The centre is not preserved: on $e_t$ the sandwich gives $\tilde R\tilde{R}^{*}$, which is Hermitian but not central for a general unit, although on the unitary subgroup, where the sandwich is an automorphism, it preserves the centre because an automorphism carries the centre to itself. The two sectors are the only subspaces of the four that survive, and they survive as a pair: the sandwich preserves each separately and cannot move one into the other, because Hermitian character is exactly what the map preserves. This is the operator-theoretic reason that the Hermitian decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is the natural one for the action.
 
 ### The Polar Dictionary
 
@@ -331,7 +331,7 @@ so that the polar data of the element appear as follows.
 
 ### The Relation to the Biquaternion Dagger Sandwich
 
-In the biquaternion case the dagger sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_0\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde{R}^{*}\neq\tilde R^{-1}$ unless $\tilde R$ is unitary; the Lorentzian form $g$ is preserved on the unitary group $\{\tilde R : \tilde R\tilde{R}^{*} = e_0\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_0$ (*The Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
+In the biquaternion case the dagger sandwich of a unit-norm element is the action of $SL(2,\mathbb{C})$ on the Hermitian matrices, with image the proper orthochronous Lorentz group $SO^{+}(1,3)$, and on the unit-norm slice its kernel is $\{\pm e_t\}$; the unit-norm slice there is $SL(2,\mathbb{C})$, three complex dimensions. Here the unit-norm slice is the six-dimensional $S^3\times S^3$ and the sandwich on it is **not** generally an automorphism, since $\tilde{R}^{*}\neq\tilde R^{-1}$ unless $\tilde R$ is unitary; the Lorentzian form $g$ is preserved on the unitary group $\{\tilde R : \tilde R\tilde{R}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$, where the sandwich is the inner automorphism and its image is the compact rotation group $SO(3)$ of the spacelike three-plane, fixing the timelike $je_t$ (*The Unitary Group and the Elliptic Rotations*). The doubling of the angle and the two-to-one cover are the same in both cases; the difference is which slice of the algebra carries the Lorentz action.
 
 ## The Hyperboloid, the Null Cone and the Rulings
 
@@ -339,7 +339,7 @@ The subsets of $\mathbb{M}_-$ on which $g$ takes constant values carry the geome
 
 **Definition.** In the Lorentzian four-space $(\mathbb{M}_-,g)$ the **null cone** is $C_0 = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = 0\}$, and the **hyperboloids** are the level sets $C_{\pm1} = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = \pm1\}$.
 
-**Theorem.** In coordinates $\tilde{Q} = a\,je_0 + v$ with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the form is $g(\tilde{Q},\tilde{Q}) = \lvert v\rvert^2 - a^2$, so that the level sets are
+**Theorem.** In coordinates $\tilde{Q} = a\,je_t + v$ with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the form is $g(\tilde{Q},\tilde{Q}) = \lvert v\rvert^2 - a^2$, so that the level sets are
 
 $$
 C_{-1} = \{a^2 = 1 + \lvert v\rvert^2\}, \qquad C_{+1} = \{\lvert v\rvert^2 = 1 + a^2\}, \qquad C_0 = \{\lvert v\rvert = \lvert a\rvert\}.
@@ -359,7 +359,7 @@ $$
 \tilde Q\tilde{Q}^{*} = \tilde Q_-\tilde{Q}^{\natural}_-\tilde\Pi_2\tilde\Pi_1 = 0,
 $$
 
-because $\tilde\Pi_2\tilde\Pi_1 = 0$; therefore $g(\tilde Q,\tilde Q) = \mathrm{Sc}(0) = 0$. The same argument applies to the other ideal. For the failure of the converse, the element $\tilde{Q} = e_1 + je_0$ satisfies $g(\tilde{Q},\tilde{Q}) = 1 - 1 = 0$, so it lies on the null cone of $g$ in $\mathbb{M}_-$, while $\tilde{Q}_+ = e_1 + e_0$ and $\tilde{Q}_- = e_1 - e_0$ are both non-zero, so $\tilde{Q}$ is not a zero divisor. Finally, if $\tilde Q = \tilde Q_+\tilde\Pi_1$ lies in $\mathbb{M}_-$, then writing $\tilde Q = a + jb$ gives $a = b = \tfrac{1}{2}\tilde Q_+$; the condition $a\in\operatorname{Im}\mathbb{H}$ forces $\tilde Q_+\in\operatorname{Im}\mathbb{H}$ and the condition $b\in\mathbb{R}$ forces $\tilde Q_+\in\mathbb{R}$, so $\tilde Q_+ = 0$ and $\tilde Q = 0$; the same holds for the other ideal.
+because $\tilde\Pi_2\tilde\Pi_1 = 0$; therefore $g(\tilde Q,\tilde Q) = \mathrm{Sc}(0) = 0$. The same argument applies to the other ideal. For the failure of the converse, the element $\tilde{Q} = \vec e_x + je_t$ satisfies $g(\tilde{Q},\tilde{Q}) = 1 - 1 = 0$, so it lies on the null cone of $g$ in $\mathbb{M}_-$, while $\tilde{Q}_+ = \vec e_x + e_t$ and $\tilde{Q}_- = \vec e_x - e_t$ are both non-zero, so $\tilde{Q}$ is not a zero divisor. Finally, if $\tilde Q = \tilde Q_+\tilde\Pi_1$ lies in $\mathbb{M}_-$, then writing $\tilde Q = a + jb$ gives $a = b = \tfrac{1}{2}\tilde Q_+$; the condition $a\in\operatorname{Im}\mathbb{H}$ forces $\tilde Q_+\in\operatorname{Im}\mathbb{H}$ and the condition $b\in\mathbb{R}$ forces $\tilde Q_+\in\mathbb{R}$, so $\tilde Q_+ = 0$ and $\tilde Q = 0$; the same holds for the other ideal.
 
 The second warning is that the non-compactness appears only on the isometry-group side. The unit sphere of the algebra is compact, being $S^3\times S^3$; the Lorentzian hyperboloids $C_{\pm1}$ are non-compact and are orbits of the non-compact group $SO^{+}(3,1)$; and the zero divisor cone, which is the union of the two isotropic ideals, lives in the ambient eight-dimensional space and meets $\mathbb{M}_-$ only at the origin, so it is not the null cone of the Lorentzian form. In the quaternion case the compact sphere $S^3$ is simultaneously the set of units and an orbit of the compact rotation group; here the set of units and the Lorentzian hyperboloid are different objects, one compact and one not, and the bridge between them is the idempotent decomposition.
 
@@ -367,31 +367,31 @@ The second warning is that the non-compactness appears only on the isometry-grou
 
 The Lorentz group is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$; it is a Lie group of dimension six with Lie algebra $\mathrm{SO}(3,1)\cong\mathrm{SL}_2(\mathbb{C})$ as complex Lie algebras, its identity component $SO^{+}(3,1)$ has maximal compact subgroup $SO(3)$, and the neutral signature $(2,2)$ gives $SO^{+}(2,2)\cong(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\}$. The two signatures are the two real forms of the same complex group.
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries the Hermitian scalar form $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde{Q}^{*})$, of signature $(4,4)$, diagonal in the basis $(e_0,e_1,e_2,e_3,je_0,je_1,je_2,je_3)$. The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are four-dimensional, orthogonal, complementary, and carry the forms of signature $(1,3)$ and $(3,1)$; the $\mathbb{D}$-span of any two quaternion coordinates is a neutral four-plane of signature $(2,2)$. Hence $O(3,1)$ and $O(2,2)$ both occur as isometry groups of forms that the algebra presents.
+The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries the Hermitian scalar form $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, of signature $(4,4)$, diagonal in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z,je_t,j\vec e_x,j\vec e_y,j\vec e_z)$. The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are four-dimensional, orthogonal, complementary, and carry the forms of signature $(1,3)$ and $(3,1)$; the $\mathbb{D}$-span of any two quaternion coordinates is a neutral four-plane of signature $(2,2)$. Hence $O(3,1)$ and $O(2,2)$ both occur as isometry groups of forms that the algebra presents.
 
-The unit sphere $\{\tilde S : \langle\tilde S\rangle_{\natural} = e_0\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The unitary group $\{\tilde S : \tilde S\tilde{S}^{*} = e_0\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{M}_-$ by isometries, fixes the timelike vector $je_0$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $\exp(\theta j)$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
+The unit sphere $\{\tilde S : \langle\tilde S\rangle_{\natural} = e_t\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The unitary group $\{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{M}_-$ by isometries, fixes the timelike vector $je_t$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $\exp(\theta j)$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
-The dagger sandwich $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\tilde Q\tilde{R}^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$. It preserves the two sectors $\mathbb{M}_{\pm}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $N_+(\tilde R)N_-(\tilde R)$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every unitary element. Its kernel is the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_0\}$. In the idempotent description the sandwich acts componentwise as $\tilde Q_+\mapsto\tilde R_+\tilde Q_+\tilde{R}^{\natural}_-$ and $\tilde Q_-\mapsto\tilde R_-\tilde Q_-\tilde{R}^{\natural}_+$, so it sees every polar factor of the element except the central unitary one.
+The dagger sandwich $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\tilde Q\tilde{R}^{*}$ of a general unit is a linear representation of the unit group, multiplicative exactly on the unitary subgroup, where it is the inner automorphism $\tilde Q\mapsto\tilde R\tilde Q\tilde R^{-1}$. It preserves the two sectors $\mathbb{M}_{\pm}$ and no other of the four distinguished subspaces, and it scales the split-biquaternion norm by the real defect factor $N_+(\tilde R)N_-(\tilde R)$, which vanishes exactly on the zero divisors and is a nonzero real number of either sign on the units; the Hermitian form $g$ is preserved by every unitary element. Its kernel is the group of central unitary elements, the split complex units of modulus one, an $\mathbb{R}\times\mathbb{Z}/2$ in the centre, which on the unit-norm slice reduces to $\{\pm e_t\}$. In the idempotent description the sandwich acts componentwise as $\tilde Q_+\mapsto\tilde R_+\tilde Q_+\tilde{R}^{\natural}_-$ and $\tilde Q_-\mapsto\tilde R_-\tilde Q_-\tilde{R}^{\natural}_+$, so it sees every polar factor of the element except the central unitary one.
 
-In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{M}_-$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $e_1 + je_0$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
+In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{M}_-$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $\vec e_x + je_t$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | The split biquaternion algebra, real dimension $8$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $j$ | Split complex unit, $j^2 = +e_0$, central |
-| $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = a + jb = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2$ | General split biquaternion |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $j$ | Split complex unit, $j^2 = +e_t$, central |
+| $\tilde Q = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = a + jb = \tilde Q_+\tilde\Pi_1 + \tilde Q_-\tilde\Pi_2$ | General split biquaternion |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*} = {}^{\natural}\,\bar{\cdot},\ {}^{\flat} = -{}^{*}$ | The four conjugations |
 | $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $g(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde{Q}^{*})$ | Hermitian scalar form, signature $(4,4)$ |
+| $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian scalar form, signature $(4,4)$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, signatures $(1,3)$, $(3,1)$ |
 | $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |
 | $\mathrm{SO}(n,m)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
-| $U(\mathbb{H}_{\mathbb{D}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_0\}\cong Sp(1)\times\mathbb{R}$ | Unitary group |
+| $\mathrm{U}(\mathbb{H}_{\mathbb{D}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ | Unitary group |
 | $\operatorname{H}_{\tilde R}(\tilde Q) = \tilde R\tilde Q\tilde{R}^{*}$ | The dagger sandwich of a general unit; the inner automorphism on the unitary subgroup |
 | $N_+(\tilde R)N_-(\tilde R)$ | The defect of the sandwich, the real scaling of the split-biquaternion norm |
 | kernel of $\operatorname{H}$ | The central unitary group, the split complex units of modulus one |

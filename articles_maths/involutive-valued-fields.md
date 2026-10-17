@@ -49,7 +49,7 @@ which is again an order-two anti-automorphism (an automorphism when $k$ is commu
 
 ## The Norm Form and Ramification
 
-**Proposition (the norm form and the value).** For $x \in F$ the norm form satisfies $v(N(x)) = 2\,v(x)$; hence $N(x)$ is a unit of $\mathcal{O}$ exactly when $x$ is, and $N(x)\in \mathrm{M}^n$ exactly when $v(x)\geq n/2$. The norm form is isotropic on the skew part and anisotropic on the fixed field; the **unitary group** $U(F,\sigma) = \{x : N(x) = 1\}$ is the group of norm-one elements.
+**Proposition (the norm form and the value).** For $x \in F$ the norm form satisfies $v(N(x)) = 2\,v(x)$; hence $N(x)$ is a unit of $\mathcal{O}$ exactly when $x$ is, and $N(x)\in \mathrm{M}^n$ exactly when $v(x)\geq n/2$. The norm form is isotropic on the skew part and anisotropic on the fixed field; the **unitary group** $\mathrm{U}(F,\sigma) = \{x : N(x) = 1\}$ is the group of norm-one elements.
 
 **Proof.** $v(N(x)) = v(x\sigma(x)) = v(x)+v(\sigma(x)) = 2v(x)$ by the isometry; the level statements follow. The norm form vanishes at skew elements because $N(x) = x\sigma(x) = -x^2$ when $\sigma(x) = -x$; on the fixed field it is $x^2$, which vanishes only at $0$. The unitary group is the kernel of the norm on the units.
 
@@ -97,7 +97,7 @@ Under completion the whole structure is preserved: the value group and the resid
 | $F^\sigma$ | The fixed field, $[F : F^\sigma]\leq 2$ |
 | $N(x) = x\sigma(x)$, $v(N(x)) = 2v(x)$ | The norm form |
 | $\bar\sigma$ | The residue involution of $k$ |
-| $U(F,\sigma)$ | The unitary group, $N(x) = 1$ |
+| $\mathrm{U}(F,\sigma)$ | The unitary group, $N(x) = 1$ |
 | $ef = 2$ | Unramified $(1,2)$ or ramified $(2,1)$ |
 | $\widehat{F}^{\widehat\sigma} = \widehat{F^\sigma}$ | The fixed field is preserved by completion |
 

@@ -7,7 +7,7 @@ A Hermitian valuation on a ring with an involution is a valuation compatible wit
 
 The article assumes the valuation, the absolute value, the valuation ring, the residue field and the completion from *Absolute Values, Valuations and Completions*; the valuation as an operator and its extension to the completion from *The Valuation Operator*; the isometric involution, the norm form and the residue involution from *Involutive Valued Fields* and *Involutions of a Non-Archimedean Field*; the involutive topological ring, the closed fixed set and the averaging map from *Involutive Topological Rings and Fields*; the self-adjoint, skew and norm form of a division ring with involution from *Involutive Topological Division Rings*; and the operator adjoint, the form of the category and the `*`-representation from *The Involution on Bounded Operators of a Ring*.
 
-Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\sigma$-invariant trace $\tau$; the valuation is **Hermitian** when $v(\sigma(x)) = v(x)$ and $v(x\sigma(x)) = 2v(x)$ for all $x$; the **Hermitian form** is $B(x,y) = \tau(x\sigma(y))$; the **norm form** is $N(x) = x\sigma(x)$; the adjoint $T^\dagger$ is defined by $B(Tx,y) = B(x,T^\dagger y)$; the **unitary group** is $U(R,\sigma) = \{u\in R^\times : u\sigma(u) = 1\}$; and $\mathcal{O}$, $\mathrm{M}$, $k$ are the valuation ring, maximal ideal and residue field.
+Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\sigma$-invariant trace $\tau$; the valuation is **Hermitian** when $v(\sigma(x)) = v(x)$ and $v(x\sigma(x)) = 2v(x)$ for all $x$; the **Hermitian form** is $B(x,y) = \tau(x\sigma(y))$; the **norm form** is $N(x) = x\sigma(x)$; the adjoint $T^\dagger$ is defined by $B(Tx,y) = B(x,T^\dagger y)$; the **unitary group** is $\mathrm{U}(R,\sigma) = \{u\in R^\times : u\sigma(u) = 1\}$; and $\mathcal{O}$, $\mathrm{M}$, $k$ are the valuation ring, maximal ideal and residue field.
 
 ## The Hermitian Valuation and the Form
 
@@ -34,7 +34,7 @@ Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\s
 **Theorem (the unitary group is bounded).** Under a Hermitian valuation a unitary element $u$, with $u\sigma(u) = 1$, generates the norm form value $N(u) = 1$ and therefore has $2v(u) = 0$; for a real-valued valuation this gives $v(u) = 0$, so
 
 $$
-U(R,\sigma)\subseteq\mathcal{O}^\times .
+\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times .
 $$
 
 The unitary group is a subgroup of the units, it is closed when $N$ is continuous, and it is bounded.
@@ -64,7 +64,7 @@ so $N$ is multiplicative when the values commute with the parameters, in particu
 **Corollary (the unitary group as the kernel of the norm).** The norm form maps the units into the units of the fixed field, $N(R^\times)\subseteq (R^\times)^\sigma$, since $\sigma(N(u)) = N(u)$, and its kernel on the units is the unitary group,
 
 $$
-U(R,\sigma) = \{u\in R^\times : N(u) = 1\} .
+\mathrm{U}(R,\sigma) = \{u\in R^\times : N(u) = 1\} .
 $$
 
 For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstruction to unitarity: the unitaries are exactly the units of norm one.
@@ -74,7 +74,7 @@ For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstructi
 **Theorem (the unitary action on the lattice).** The unitary group preserves the valuation ring and each ideal of the filtration,
 
 $$
-u\in U(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
+u\in \mathrm{U}(R,\sigma) \implies u\,\mathcal{O} = \mathcal{O} = \mathcal{O}u , \qquad u\,\mathrm{M}^n = \mathrm{M}^n = \mathrm{M}^n\,u ,
 $$
 
 and acts by isometries of the form, $v(B(ux,uy)) = v(B(x,y))$; the induced action on the residue field is by isometries of the residue form, and the residue action is the reduction of the involution.
@@ -106,8 +106,8 @@ A Hermitian valuation on a ring with an involution is an isometric valuation sat
 | $N(x) = x\sigma(x)$ | The norm form, $v(N(x)) = 2v(x)$ |
 | $T^\dagger$, $B(Tx,y) = B(x,T^\dagger y)$ | The adjoint under the form |
 | $(L_a)^\dagger = L_{\sigma(a)}$ | The adjoint of the left multiplication |
-| $U(R,\sigma) = \{u : u\sigma(u) = 1\}$ | The unitary group, bounded |
-| $U(R,\sigma)\subseteq\mathcal{O}^\times$ | Unitarity forces valuation zero |
+| $\mathrm{U}(R,\sigma) = \{u : u\sigma(u) = 1\}$ | The unitary group, bounded |
+| $\mathrm{U}(R,\sigma)\subseteq\mathcal{O}^\times$ | Unitarity forces valuation zero |
 | $v(B(x,y))\geq v(x)+v(y)$ | The form is valued |
 
 ## Further Reading

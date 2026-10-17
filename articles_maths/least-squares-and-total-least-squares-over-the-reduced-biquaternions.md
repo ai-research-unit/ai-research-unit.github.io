@@ -10,19 +10,19 @@ $$
 
 and where the residual and the perturbations are measured by the positive definite norm $\langle\cdot\rangle_{\natural*}$ of the four products. The least squares problem minimises the size of the residual $AX-B$; the total least squares problem perturbs both $A$ and $B$ by the smallest amount that makes the system consistent; the mixed problem perturbs $B$ and a prescribed block of the columns of $A$ while leaving the rest exact.
 
-The reason the commutative algebra makes these problems tractable is the idempotent decomposition. The algebra is the direct product $\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, every matrix over it is a pair of complex matrices, the multiplication is componentwise, and the norm $\langle\cdot\rangle_{\natural*}$ is the sum of the two squared complex Frobenius norms, up to the factor $\tfrac12$. The consequence is that each of the three problems splits into two problems over the complex field, solved independently and in parallel. The reduced biquaternion least squares solution is the pair of the two complex least squares solutions; the reduced biquaternion total least squares solution is the pair of the two complex total least squares solutions; and the same holds for the mixed problem. No coupling term survives.
+The reason the commutative algebra makes these problems tractable is the idempotent decomposition. The algebra is the direct product $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, every matrix over it is a pair of complex matrices, the multiplication is componentwise, and the norm $\langle\cdot\rangle_{\natural*}$ is the sum of the two squared complex Frobenius norms, up to the factor $\tfrac12$. The consequence is that each of the three problems splits into two problems over the complex field, solved independently and in parallel. The reduced biquaternion least squares solution is the pair of the two complex least squares solutions; the reduced biquaternion total least squares solution is the pair of the two complex total least squares solutions; and the same holds for the mixed problem. No coupling term survives.
 
 The coupling appears only through the unknown. If $X$ is an arbitrary reduced biquaternion matrix, the two complex problems are independent; if $X$ is a complex matrix, the same complex unknown must serve in both; if $X$ is a real matrix, the same real unknown must serve in both. The three cases are nested, and the third is the one treated in the source of this article, Ahmad and Bhadala, whose real representation is the price paid for excluding complex and reduced biquaternion unknowns. The article states the three problems, proves the reduction, identifies the metric that makes the reduction a Hilbert-space statement, records the adjoint and the Moore–Penrose inverse it produces, presents the real representation and the algorithm of the source as the real case, and collects the conditions for existence and uniqueness. A final remark observes a phenomenon absent from the division-algebra layers: the least squares solution can be a zero divisor.
 
-**Boundaries.** The algebra, its idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions*. The form $\langle\cdot\rangle_{\natural*}$ and the algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms*; the involution and the adjoint are *The Two Involutions and the Group of Involutions*. The array representation $M_{m\times n}(\mathbb{B}_{\mathrm{r}})\cong M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C})$ is *Reduced Biquaternion Other Algebraic Element Representations*; the objects and their matrices are *Reduced Biquaternion Objects and their Matrix Correspondences*. The spectrum and the singular values are *Reduced Biquaternion Spectral Theory*; the singular values as a general tool are *Compact Operators*. The least squares problem in the non-commutative quaternion statistics is *Quaternion Augmented Statistics*; the non-commutative companion of the matrix dictionary is *Biquaternion Objects and Their Matrix Correspondences*.
+**Boundaries.** The algebra, its idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*. The form $\langle\cdot\rangle_{\natural*}$ and the algebraic norms are *The Four Products, Their Forms and Their Algebraic Norms*; the involution and the adjoint are *The Two Involutions and the Group of Involutions*. The array representation $M_{m\times n}(\mathbb{B}_{\mathrm{r}})\cong M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C})$ is *Reduced Biquaternion Other Algebraic Element Representations*; the objects and their matrices are *Reduced Biquaternion Objects and their Matrix Correspondences*. The spectrum and the singular values are *Reduced Biquaternion Spectral Theory*; the singular values as a general tool are *Compact Operators*. The least squares problem in the non-commutative quaternion statistics is *Quaternion Augmented Statistics*; the non-commutative companion of the matrix dictionary is *Biquaternion Objects and Their Matrix Correspondences*.
 
-**Conventions.** The element is $T=A+Bj$ with $A=a+ia'$ and $B=b+ib'$, the idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, and the idempotent coordinates are $q_1=A+B$ and $q_2=A-B$, so that $T=q_1\Pi_{1}+q_2\Pi_{2}$. The conjugations are the bar $\bar{\cdot}$, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the form and the norm of the quaternionic sesquilinear product are
+**Conventions.** The element is $Q_\pm=Q_++jQ_-$ with $Q_+=q_++iq'_+$ and $Q_-=q_-+iq'_-$, the idempotents are $\Pi_{\pm}=\tfrac12(1\pm j)$, and the idempotent coordinates are $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, so that $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The conjugations are the bar $\bar{\cdot}$, the natural sign ${}^{\natural}$ and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the form and the norm of the quaternionic sesquilinear product are
 
 $$
-K(T,W)=\mathrm{Sc}\bigl(T^{\natural}W^{*}\bigr)=A\bar C+B\bar D,\qquad K(T)=|A|^{2}+|B|^{2}=\tfrac12\bigl(|q_1|^{2}+|q_2|^{2}\bigr).
+K(Q_{\pm,1},Q_{\pm,2})=\mathrm{Sc}\bigl(Q_{\pm,1}^{\natural}Q_{\pm,2}^{*}\bigr)=Q_{1+}\bar Q_{2+}+Q_{1-}\bar Q_{2-},\qquad K(Q_\pm)=|Q_+|^{2}+|Q_-|^{2}=\tfrac12\bigl(|Q_{++}|^{2}+|Q_{--}|^{2}\bigr).
 $$
 
-For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}K(M_{rs},N_{rs})$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\lVert M\rVert_{F}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(T)=q_1$ and $\lambda_{-}(T)=q_2$ the two characters; the component $M^{+}$ is the one attached to $\Pi_{1}$ and $M^{-}$ the one attached to $\Pi_{2}$. The $\langle\cdot\rangle_{\natural*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
+For matrices the form is read entrywise, $K_{\mathrm F}(M,N)=\sum_{r,s}K(M_{rs},N_{rs})$, and $K_{\mathrm F}(M)=K_{\mathrm F}(M,M)$; it is the square of the Frobenius norm the source writes $\lVert M\rVert_{F}$. The two **idempotent components** of a matrix are the pair $(M^{+},M^{-})$ of *Reduced Biquaternion Other Algebraic Element Representations*, read entrywise, $(M^{\pm})_{rs}=\lambda_{\pm}(M_{rs})$ with $\lambda_{+}(Q_\pm)=Q_{++}$ and $\lambda_{-}(Q_\pm)=Q_{--}$ the two characters; the component $M^{+}$ is the one attached to $\Pi_+$ and $M^{-}$ the one attached to $\Pi_-$. The $\langle\cdot\rangle_{\natural*}$-**adjoint** of a matrix is written $M^{\dagger}$, in agreement with the dagger of the operator conventions, and the **Moore–Penrose inverse** is written $M_{\mathrm{MP}}$, the dagger marking the adjoint and the sign marking a component, so neither is read for the other.
 
 ## The Three Approximation Problems
 
@@ -82,9 +82,9 @@ $$
 M_{m\times n}(\mathbb{B}_{\mathrm{r}})\longrightarrow M_{m\times n}(\mathbb{C})\times M_{m\times n}(\mathbb{C}),
 $$
 
-and $M=M^{+}\Pi_{1}+M^{-}\Pi_{2}$ with the identity and the zero of the pair the identity and the zero matrices.
+and $M=M^{+}\Pi_++M^{-}\Pi_-$ with the identity and the zero of the pair the identity and the zero matrices.
 
-*Proof.* The idempotent coordinates of an entry are the two characters, and applying them entrywise is an algebra homomorphism on the matrices because the multiplication of the algebra is componentwise and the matrices multiply entrywise in the two components; the displayed decomposition is the entrywise form of $T=q_1\Pi_{1}+q_2\Pi_{2}$. The inverse reads the four real blocks from the real and imaginary parts, $M_{0}=\tfrac12\operatorname{Re}(M^{+}+M^{-})$, $M_{1}=\tfrac12\operatorname{Im}(M^{+}+M^{-})$, $M_{2}=\tfrac12\operatorname{Re}(M^{+}-M^{-})$ and $M_{3}=\tfrac12\operatorname{Im}(M^{+}-M^{-})$.
+*Proof.* The idempotent coordinates of an entry are the two characters, and applying them entrywise is an algebra homomorphism on the matrices because the multiplication of the algebra is componentwise and the matrices multiply entrywise in the two components; the displayed decomposition is the entrywise form of $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$. The inverse reads the four real blocks from the real and imaginary parts, $M_{0}=\tfrac12\operatorname{Re}(M^{+}+M^{-})$, $M_{1}=\tfrac12\operatorname{Im}(M^{+}+M^{-})$, $M_{2}=\tfrac12\operatorname{Re}(M^{+}-M^{-})$ and $M_{3}=\tfrac12\operatorname{Im}(M^{+}-M^{-})$.
 
 This is the array representation of *Reduced Biquaternion Other Algebraic Element Representations*, applied to a rectangular matrix and read column by column.
 
@@ -96,7 +96,7 @@ $$
 (MN)^{+}=M^{+}N^{+},\qquad (MN)^{-}=M^{-}N^{-}.
 $$
 
-*Proof.* Write $M=M^{+}\Pi_{1}+M^{-}\Pi_{2}$ and $N=N^{+}\Pi_{1}+N^{-}\Pi_{2}$; multiplying with $\Pi_{1}^{2}=\Pi_{1}$, $\Pi_{2}^{2}=\Pi_{2}$ and $\Pi_{1}\Pi_{2}=\Pi_{2}\Pi_{1}=0$ gives $MN=M^{+}N^{+}\Pi_{1}+M^{-}N^{-}\Pi_{2}$, and the components are read off. Equivalently, the entrywise multiplication of the four real coefficient blocks is exactly the two complex matrix products of the components.
+*Proof.* Write $M=M^{+}\Pi_++M^{-}\Pi_-$ and $N=N^{+}\Pi_++N^{-}\Pi_-$; multiplying with $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$ and $\Pi_+\Pi_-=\Pi_-\Pi_+=0$ gives $MN=M^{+}N^{+}\Pi_++M^{-}N^{-}\Pi_-$, and the components are read off. Equivalently, the entrywise multiplication of the four real coefficient blocks is exactly the two complex matrix products of the components.
 
 The theorem is the reason every linear-algebraic problem over $\mathbb{B}_{\mathrm{r}}$ decouples: it is a statement about the algebra, not about the problem.
 
@@ -120,9 +120,9 @@ $$
 
 and likewise $K_{\mathrm F}(M,N)=\sum_{t}\langle M_{t},N_{t}\rangle_{F}=\tfrac12\bigl(\langle M^{+},N^{+}\rangle_{F}+\langle M^{-},N^{-}\rangle_{F}\bigr)$, the real inner product of the coefficients being the Euclidean one in each reading.
 
-*Proof.* The norm \langle T\rangle_{\natural*}=|A|^{2}+|B|^{2}=a^{2}+a'^{2}+b^{2}+b'^{2}$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|q_1|^{2}+|q_2|^{2}=2(|A|^{2}+|B|^{2})$ by the identity $|A+B|^{2}+|A-B|^{2}=2|A|^{2}+2|B|^{2}$, and $K=\tfrac12(|q_1|^{2}+|q_2|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.
+*Proof.* The norm $\langle Q_\pm\rangle_{\natural*}=|Q_+|^{2}+|Q_-|^{2}=q_+^{2}+q'^{2}_++q_-^{2}+q'^{2}_-$ is the sum of the four squares of the real coordinates, whence the first equality on summing over the entries. For the second, $|Q_{++}|^{2}+|Q_{--}|^{2}=2(|Q_+|^{2}+|Q_-|^{2})$ by the identity $|Q_++Q_-|^{2}+|Q_+-Q_-|^{2}=2|Q_+|^{2}+2|Q_-|^{2}$, and $K=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; summing the two coordinatewise Frobenius norms gives the result. The form case is the polarisation of the norm case.
 
-**Corollary (the square of the real Frobenius norm).** With $\lVert M\rVert_{F}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}$, where $M^{R}$ is the real representation of §*The Real Representation and the Coefficient Stack*, whose coefficient blocks each occur four times.
+**Corollary (the square of the real Frobenius norm).** With $\lVert M\rVert_{F}:=\sqrt{K_{\mathrm F}(M)}$ the Frobenius norm of the source, $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}$, where $M^{R}$ is the real representation of §*The Representations and the Coefficient Stack*, whose coefficient blocks each occur four times.
 
 *Proof.* The real representation has each $M_{t}$ in four of its block rows, so $\lVert M^{R}\rVert_{F}^{2}=4\sum_{t}\lVert M_{t}\rVert_{F}^{2}=4K_{\mathrm F}(M)$ by the theorem, and the square root gives $\lVert M^{R}\rVert_{F}=2\lVert M\rVert_{F}$.
 
@@ -166,7 +166,7 @@ $$
 
 the bar-transpose; and $(AM)^{\dagger}=M^{\dagger}A^{\dagger}$. In components $(A^{\dagger})^{+}=(A^{+})^{*}$ and $(A^{\dagger})^{-}=(A^{-})^{*}$, the complex conjugate transposes.
 
-*Proof.* The element identity is $K(AT,W)=K(T,\bar AW)$ for all elements, which is the statement that left multiplication by $\bar A$ is adjoint to left multiplication by $A$; on matrices the two identities are summed over the entries, and the transpose of the index pair converts the left multiplication into the bar-transpose. For the components, the bar conjugates the coefficients, that is conjugates each complex component, and the transpose transposes each component; so the bar-transpose acts componentwise as the complex conjugate transpose.
+*Proof.* The element identity is $K(AQ_{\pm,1},Q_{\pm,2})=K(Q_{\pm,1},\bar A Q_{\pm,2})$ for all elements, which is the statement that left multiplication by $\bar A$ is adjoint to left multiplication by $A$; on matrices the two identities are summed over the entries, and the transpose of the index pair converts the left multiplication into the bar-transpose. For the components, the bar conjugates the coefficients, that is conjugates each complex component, and the transpose transposes each component; so the bar-transpose acts componentwise as the complex conjugate transpose.
 
 **Theorem (the normal equations).** A matrix $X$ minimises $K_{\mathrm F}(AX-B)$ if and only if
 
@@ -187,7 +187,7 @@ $$
 and it is the pair of the complex Moore–Penrose inverses,
 
 $$
-A_{\mathrm{MP}}=(A^{+})_{\mathrm{MP}}\Pi_{1}+(A^{-})_{\mathrm{MP}}\Pi_{2}.
+A_{\mathrm{MP}}=(A^{+})_{\mathrm{MP}}\Pi_++(A^{-})_{\mathrm{MP}}\Pi_-.
 $$
 
 The least-norm least squares solution is $X=A_{\mathrm{MP}}B$, and the general least squares solution is $X=A_{\mathrm{MP}}B+(I-A_{\mathrm{MP}}A)Y$ for an arbitrary $Y$.
@@ -226,7 +226,7 @@ The effective problem in each case is a complex problem, and the three differ on
 
 The source works with the third row of the table, the real unknown, and its real representation is the way it inverts the equality of the two complex unknowns into a single real problem.
 
-## The Real Representation and the Coefficient Stack
+## The Representations and the Coefficient Stack
 
 ### The Coefficient Stack
 
@@ -265,6 +265,36 @@ $$
 *Proof.* Injectivity of $X\mapsto AX$ is injectivity in both components, so it holds if and only if the two complex matrices have full column rank. The real and imaginary parts of $A^{+}$ and of $A^{-}$ stack, after an invertible real row operation, into the four coefficient blocks $A_{0},A_{1},A_{2},A_{3}$; an invertible row operation preserves the column rank, so the compound of the two complex stacks has rank $n$ exactly when $C_{A}$ does.
 
 The rank proposition is the source's rank lemma, and the stack theorem is its norm identity read in the corpus's form.
+
+### The Complex Representation
+
+The real representation has a complex counterpart, and the two carry the same multiplication.
+
+**Definition.** The **homogeneous components** of $M=M_{0}+M_{1}i+M_{2}j+M_{3}ij$ are the complex matrices
+
+$$
+M^{(0)}=M_{0}+iM_{1},\qquad M^{(1)}=M_{2}+iM_{3},
+$$
+
+so that $M=M^{(0)}+jM^{(1)}$ and $M^{\pm}=M^{(0)}\pm M^{(1)}$, the superscript being the exponent of the hyperbolic unit $j$. The **complex representation** of $M$ is the $2m\times 2n$ complex matrix
+
+$$
+M^{C}=\begin{pmatrix}M^{(0)}&M^{(1)}\\ M^{(1)}&M^{(0)}\end{pmatrix}.
+$$
+
+It is the repeated-block form of *Reduced Biquaternion Other Algebraic Element Representations* read on a rectangular matrix, and its diagonalisation is the pair $(M^{+},M^{-})$ through the change of basis of *Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions*.
+
+**Theorem (the complex representation is a homomorphism).** $(MN)^{C}=M^{C}N^{C}$.
+
+*Proof.* Writing $M=M^{(0)}+jM^{(1)}$ and $N=N^{(0)}+jN^{(1)}$, the centrality of $j$ and $j^{2}=1$ give $MN=(M^{(0)}N^{(0)}+M^{(1)}N^{(1)})+j(M^{(0)}N^{(1)}+M^{(1)}N^{(0)})$, so the diagonal blocks of $M^{C}N^{C}$ are $M^{(0)}N^{(0)}+M^{(1)}N^{(1)}$ and the off-diagonal blocks are $M^{(0)}N^{(1)}+M^{(1)}N^{(0)}$, which are the blocks of $(MN)^{C}$. Equivalently these are $(MN)^{\pm}=M^{\pm}N^{\pm}$ read on the two signs.
+
+**Corollary (the complex norm).**
+
+$$
+\lVert M\rVert_{F}=\tfrac{1}{\sqrt2}\bigl\lVert M^{C}\bigr\rVert_{F},\qquad \bigl\lVert M^{C}\bigr\rVert_{F}^{2}=\bigl\lVert M^{+}\bigr\rVert_{F}^{2}+\bigl\lVert M^{-}\bigr\rVert_{F}^{2}.
+$$
+
+*Proof.* Each homogeneous component occurs in two blocks of $M^{C}$, so $\lVert M^{C}\rVert_{F}^{2}=2(\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2})$. The four real coefficient matrices split into these two complex pairs, so $\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2}=\sum_{t}\lVert M_{t}\rVert_{F}^{2}=K_{\mathrm F}(M)=\lVert M\rVert_{F}^{2}$ by §*The Metric Splits*, and $\lVert M^{+}\rVert_{F}^{2}+\lVert M^{-}\rVert_{F}^{2}=2(\lVert M^{(0)}\rVert_{F}^{2}+\lVert M^{(1)}\rVert_{F}^{2})$ by the parallelogram identity for the entrywise squared modulus. The two displays follow.
 
 ### The Equivalence
 
@@ -316,7 +346,7 @@ For the arbitrary reduced biquaternion unknown the algorithm is two complex ones
 
 ### The Reduced Biquaternion Criterion
 
-**Theorem (existence and uniqueness, algebra case).** For the arbitrary reduced biquaternion unknown the total least squares solution exists and is unique if and only if each complex component has a unique total least squares solution, that is, if and only if in each component $s_{n}>s_{n+1}$ and the block $V_{22}$ is nonsingular. The solution is then the pair $X=X^{+}\Pi_{1}+X^{-}\Pi_{2}$ of the two complex solutions.
+**Theorem (existence and uniqueness, algebra case).** For the arbitrary reduced biquaternion unknown the total least squares solution exists and is unique if and only if each complex component has a unique total least squares solution, that is, if and only if in each component $s_{n}>s_{n+1}$ and the block $V_{22}$ is nonsingular. The solution is then the pair $X=X^{+}\Pi_++X^{-}\Pi_-$ of the two complex solutions.
 
 *Proof.* The problem is the pair of the two complex problems by the factorisation theorem, and a product of two problems has a unique solution exactly when each factor does; the complex criterion is the preceding theorem.
 
@@ -350,9 +380,9 @@ For the arbitrary reduced biquaternion unknown the algorithm is two complex ones
 
 The source restricts to a real unknown, and the reduced biquaternion case adds a phenomenon the division-algebra layers cannot show.
 
-**Proposition (invertibility is componentwise).** A square matrix $X\in M_{n}(\mathbb{B}_{\mathrm{r}})$ is invertible if and only if both components $X^{+}$ and $X^{-}$ are nonsingular complex matrices, and then $X^{-1}=(X^{+})^{-1}\Pi_{1}+(X^{-})^{-1}\Pi_{2}$; otherwise $X$ is a zero divisor of the algebra of matrices. In particular the least squares or total least squares solution of a square unknown can be a zero divisor.
+**Proposition (invertibility is componentwise).** A square matrix $X\in M_{n}(\mathbb{B}_{\mathrm{r}})$ is invertible if and only if both components $X^{+}$ and $X^{-}$ are nonsingular complex matrices, and then $X^{-1}=(X^{+})^{-1}\Pi_++(X^{-})^{-1}\Pi_-$; otherwise $X$ is a zero divisor of the algebra of matrices. In particular the least squares or total least squares solution of a square unknown can be a zero divisor.
 
-*Proof.* The array isomorphism carries invertibility to invertibility in each factor, and an element of a direct product of rings is a unit exactly when both its entries are; a non-unit in the finite-dimensional algebra of matrices annihilates a nonzero matrix, so it is a zero divisor. For the example, take $B$ with vanishing $B^{-}$, so that $B=B_{0}(1+j)$ and $B^{-}=0$; then the least squares solution has $X^{-}=(A^{-})_{\mathrm{MP}}B^{-}=0$, so $X=X^{+}\Pi_{1}$ is annihilated by $\Pi_{2}$ on either side and is a zero divisor, although the problem is well posed and its residual is finite. For the single element unknown, $n=d=1$, the same example gives a nonzero $X$ with reduced norm $\langle X\rangle_{\natural}=\langle X^{+}\Pi_{1}\rangle_{\natural}=0$, a nonzero zero divisor of the algebra.
+*Proof.* The array isomorphism carries invertibility to invertibility in each factor, and an element of a direct product of rings is a unit exactly when both its entries are; a non-unit in the finite-dimensional algebra of matrices annihilates a nonzero matrix, so it is a zero divisor. For the example, take $B$ with vanishing $B^{-}$, so that $B=B_{0}(1+j)$ and $B^{-}=0$; then the least squares solution has $X^{-}=(A^{-})_{\mathrm{MP}}B^{-}=0$, so $X=X^{+}\Pi_+$ is annihilated by $\Pi_-$ on either side and is a zero divisor, although the problem is well posed and its residual is finite. For the single element unknown, $n=d=1$, the same example gives a nonzero $X$ with reduced norm $\langle X\rangle_{\natural}=\langle X^{+}\Pi_+\rangle_{\natural}=0$, a nonzero zero divisor of the algebra.
 
 **Remark (the contrast).** For a scalar unknown over the division algebras $\mathbb{C}$ and $\mathbb{H}$ the solution is either zero or a unit, the null set being a single point; the reduced biquaternion solution can be a nonzero zero divisor on the null cone $\langle X\rangle_{\natural}=0$ while the approximation is solvable. For a square matrix unknown, non-invertible solutions occur over the complex field too, a singular matrix being a zero divisor of the matrix ring; what is specific to the reduced biquaternion case is the pair of independently vanishing components, one of which may be zero while the other is not, so that the solution is a zero divisor even when the complex companion problem has a solution of full rank.
 
@@ -372,13 +402,13 @@ The numerical ordering of the three methods was recomputed on random instances; 
 
 ## Summary
 
-The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
+The three approximation problems over the reduced biquaternion algebra — least squares, total least squares and the mixed problem interpolating between them — all reduce, through the idempotent decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, to two complex problems, because the multiplication is componentwise and the norm $K$ splits as half the sum of the two squared complex Frobenius norms. For an arbitrary reduced biquaternion unknown the two complex problems are independent, for a complex unknown they share one complex unknown, and for a real unknown they share one real unknown; the minimum is nondecreasing along that chain. The form $K$ is a real inner product whose adjoint is the bar-transpose, so the normal equations decouple, and the Moore–Penrose inverse is the pair of the two complex pseudoinverses. The real unknown is the source's case: it is a classical real problem on the coefficient stack, whose algorithm is a Householder reduction of the exact block followed by a singular value decomposition of the reduced block, and whose existence and uniqueness hold exactly when the two spectral gaps separate and the block $V_{22}$ is nonsingular in each component. The coefficient stack and the real representation are the real readings of the matrix, and the complex representation $M^{C}$ is the complex one, with the two homogeneous components of $M$ in the hyperbolic unit as its blocks and the pair $(M^{+},M^{-})$ as its diagonalisation, the norm ladder being $\lVert M\rVert_{F}=\tfrac12\lVert M^{R}\rVert_{F}=\tfrac{1}{\sqrt2}\lVert M^{C}\rVert_{F}$. The complex field is the degenerate case of the construction, one right-hand side removes the matrix structure of the unknown, and the solution, unlike its counterparts in the division-algebra layers, may be a zero divisor of the algebra of matrices.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| \langle T\rangle_{\natural*}$ | The positive definite algebraic norm $\lvert A\rvert^{2}+\lvert B\rvert^{2}=\tfrac12(\lvert q_1\rvert^{2}+\lvert q_2\rvert^{2})$ |
+| $\langle Q_\pm\rangle_{\natural*}$ | The positive definite algebraic norm $\lvert Q_+\rvert^{2}+\lvert Q_-\rvert^{2}=\tfrac12(\lvert Q_{++}\rvert^{2}+\lvert Q_{--}\rvert^{2})$ |
 | $K_{\mathrm F}(M)$ | The entrywise matrix form, $\sum_{r,s}K(M_{rs})$, the square of the Frobenius norm |
 | $M^{+},M^{-}$ | The two complex idempotent components, the pair of the array representation |
 | $n_{1},n_{2}$ | The numbers of exact and of perturbed columns of $A$, $n_{1}+n_{2}=n$ |
@@ -386,6 +416,8 @@ The three approximation problems over the reduced biquaternion algebra — least
 | $A_{\mathrm{MP}}$ | The Moore–Penrose inverse for the adjoint $A^{\dagger}$ |
 | $C_{M}$ | The coefficient stack $(M_{0},M_{1},M_{2},M_{3})^{\mathsf T}$ |
 | $M^{R}$ | The $4m\times 4n$ real representation |
+| $M^{(0)},M^{(1)}$ | The two complex homogeneous components of $M$ in $j$, $M_{0}+iM_{1}$ and $M_{2}+iM_{3}$ |
+| $M^{C}$ | The $2m\times 2n$ complex representation, the blocks $M^{(0)}$ and $M^{(1)}$ |
 | $s_{k}$ | A singular value of a component of $[A,B]$ or of the reduced block |
 | $V_{12},V_{22}$ | The blocks of the right singular vectors of the augmented matrix |
 
@@ -398,10 +430,11 @@ The three approximation problems over the reduced biquaternion algebra — least
 - Carl Eckart and Gale Young, "The approximation of one matrix by another of lower rank", *Psychometrika* **1** (1936) 211–218, for the best rank-$n$ approximation and its uniqueness under the spectral gap.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd edition (Cambridge University Press, 2013), for the adjoint, the normal equations and the polar decomposition.
 - *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), for the algebra, the idempotents and the coordinates.
-- *Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the decomposition along the two idempotents.
+- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the decomposition along the two idempotents.
 - *The Four Products, Their Forms and Their Algebraic Norms* (`articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.md`), for the form $\langle\cdot\rangle_{\natural*}$ and the topological norm.
 - *The Two Involutions and the Group of Involutions* (`articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.md`), for the bar, the natural sign and the star.
 - *Reduced Biquaternion Other Algebraic Element Representations* (`articles_maths/reduced-biquaternion-other-algebraic-element-representations.md`), for the array representation and the pair $(M^{+},M^{-})$.
+- *Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions* (`articles_maths/hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.md`), for the pair equation $(AXB,CXD)=(E,F)$ in the source's Hermitian set, the real representation and the signed selection used there, the half-vectorisation, and the least squares, consistency and uniqueness criteria.
 - *Reduced Biquaternion Objects and their Matrix Correspondences* (`articles_maths/reduced-biquaternion-objects-and-their-matrix-correspondences.md`), for the objects of the algebra and their matrix invariants.
 - *Reduced Biquaternion Spectral Theory* (`articles_maths/reduced-biquaternion-spectral-theory.md`), for the spectrum and the singular values of the algebra.
 - *Compact Operators* (`articles_maths/compact-operators.md`), for the singular values and the Schatten classes.

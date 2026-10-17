@@ -114,17 +114,17 @@ here.
 
 ### The Three-Dimensional Definite Algebra
 
-In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ with $e_j^{2}=-1$, the irreducible module is $S=\mathbb{H}$ with the action of the first factor, and $\mathrm{Pin}(3)$ acts on it by left multiplication. The even part is $\mathrm{Spin}(3)\cong Sp(1)$, the unit quaternions, and $\rho$ is faithful on the first factor; the odd elements are the products of an odd number of vectors, among them $e_1$, with $\rho(e_1)^{2}=\mathfrak{Q}(e_1)\mathrm{id}=-\mathrm{id}$, so an odd element of $\mathrm{Pin}$ is a complex structure on the module. The kernel of $\rho$ is $\mathrm{Pin}(3)\cap(\{1\}\times\mathbb{H})$, the odd elements of the second factor included; the spin representation does not see those.
+In $\mathrm{Cl}_{0,3}(\mathbb{R})\cong\mathbb{H}\oplus\mathbb{H}$ with $\vec e_\nu^{2}=-1$, the irreducible module is $S=\mathbb{H}$ with the action of the first factor, and $\mathrm{Pin}(3)$ acts on it by left multiplication. The even part is $\mathrm{Spin}(3)\cong Sp(1)$, the unit quaternions, and $\rho$ is faithful on the first factor; the odd elements are the products of an odd number of vectors, among them $\vec e_x$, with $\rho(\vec e_x)^{2}=\mathfrak{Q}(\vec e_x)\mathrm{id}=-\mathrm{id}$, so an odd element of $\mathrm{Pin}$ is a complex structure on the module. The kernel of $\rho$ is $\mathrm{Pin}(3)\cap(\{1\}\times\mathbb{H})$, the odd elements of the second factor included; the spin representation does not see those.
 
 ### The Sign on a Reflection
 
-In the same algebra take $a=e_1$ and $v=e_2$. Then $\rho_{e_1}$ fixes $e_2$, so $\rho_{e_1}(e_2)=e_2$, and the corollary above predicts
+In the same algebra take $a=\vec e_x$ and $v=\vec e_y$. Then $\rho_{\vec e_x}$ fixes $\vec e_y$, so $\rho_{\vec e_x}(\vec e_y)=\vec e_y$, and the corollary above predicts
 
 $$
-\rho(e_1)\,\rho(e_2)\,\rho(e_1)^{-1}=-\rho(e_2).
+\rho(\vec e_x)\,\rho(\vec e_y)\,\rho(\vec e_x)^{-1}=-\rho(\vec e_y).
 $$
 
-This is verified with $e_1^{-1}=-e_1$: $\rho(e_1)\rho(e_2)\rho(e_1)^{-1}=e_1e_2(-e_1)=-e_1e_2e_1$, and $e_2e_1=-e_1e_2$ gives $e_1e_2e_1=e_2$, whence the value $-e_2=-\rho(e_2)$. The module computation therefore returns the negative of the vector on which the reflection acts trivially, and it is the signed inner conjugation, and not the inner conjugation, that returns $e_2$ itself.
+This is verified with $\vec e_x^{-1}=-\vec e_x$: $\rho(\vec e_x)\rho(\vec e_y)\rho(\vec e_x)^{-1}=\vec e_x \vec e_y(-\vec e_x)=-\vec e_x \vec e_y \vec e_x$, and $\vec e_y \vec e_x=-\vec e_x \vec e_y$ gives $\vec e_x \vec e_y \vec e_x=\vec e_y$, whence the value $-\vec e_y=-\rho(\vec e_y)$. The module computation therefore returns the negative of the vector on which the reflection acts trivially, and it is the signed inner conjugation, and not the inner conjugation, that returns $\vec e_y$ itself.
 
 ### The Biquaternion Module
 

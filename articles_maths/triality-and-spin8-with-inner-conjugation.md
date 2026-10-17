@@ -7,7 +7,7 @@ For every $n$ the vector representation of the orthogonal group and the two half
 
 This article describes the three eight-dimensional representations, the trilinear form that couples them, the octonionic construction in which the symmetry is visible, the fixed-point subgroup under the automorphism, and the reason the accident is confined to eight dimensions. The last point matters for the rest of the corpus: triality is the origin of many of the exceptional structures attached to the octonions, and it is the reason the octonionic plane and the exceptional groups appear where they do.
 
-The Clifford algebra, the $k$-vectors, the volume element and reversion are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the spinor module as a minimal left ideal, the chiral splitting and the reality of the spinor module are from *Spinors as Minimal Left Ideals with Inner Conjugation* and *Real Spinors and Reality Conditions with Inner Conjugation*; the spinor modules, their weights and the branching rule are from *Spin Representations and Clifford Modules with Inner Conjugation* and *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation*; the low-dimensional table and the algebra $\mathrm{Cl}_{8,0}\cong M_{16}(\mathbb{R})$ are from *Clifford Algebras in Finite Dimensions* and *The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation*; the root systems, the Dynkin diagrams and their automorphisms are from *Root Systems and Classification*; the octonions and their automorphism group are from *Octonion Algebra*, *Octonion Element Representations* and *Octonions and the Exceptional Lie Groups*. Nothing owned by those entries is re-derived.
+The Clifford algebra, the $k$-vectors, the volume element and reversion are from *Clifford Algebras* and *Clifford Algebras in Finite Dimensions*; the spinor module as a minimal left ideal, the chiral splitting and the reality of the spinor module are from *Spinors as Minimal Left Ideals with Inner Conjugation* and *Real Spinors and Reality Conditions with Inner Conjugation*; the spinor modules, their weights and the branching rule are from *Spin Representations and Clifford Modules with Inner Conjugation* and *Spin Representations of the Orthogonal Lie Algebra with Inner Conjugation*; the low-dimensional table and the algebra $\mathrm{Cl}_{8,0}\cong M_{16}(\mathbb{R})$ are from *Clifford Algebras in Finite Dimensions* and *The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation*; the root systems, the Dynkin diagrams and their automorphisms are from *Root Systems and Classification*. Nothing owned by those entries is re-derived.
 
 ## The Three Representations of Dimension Eight
 
@@ -91,7 +91,7 @@ $$
 
 of dimension $14$, and it is the automorphism group of the octonions.
 
-**Proof.** The fixed-point subgroup of a diagram automorphism is the group whose diagram is obtained by folding the diagram along the automorphism; the folding of $D_4$ along the three-cycle glues the three end nodes into one and leaves the central node, producing the diagram of $G_2$. The identification with the automorphism group of the octonions is in *Octonions and the Exceptional Lie Groups*.
+**Proof.** The fixed-point subgroup of a diagram automorphism is the group whose diagram is obtained by folding the diagram along the automorphism; the folding of $D_4$ along the three-cycle glues the three end nodes into one and leaves the central node, producing the diagram of $G_2$. The identification with the automorphism group of the octonions is the classical statement $G_2=\operatorname{Aut}(\mathbb{O})$.
 
 **Corollary.** The group $G_2$ lies in $\mathrm{Spin}(7)$, which lies in $\mathrm{Spin}(8)$, so the chain of the octonionic geometry runs
 $$
@@ -99,7 +99,7 @@ $$
 $$
 $\mathrm{Spin}(7)$ being the isotropy in $\mathrm{Spin}(8)$ of a nonzero spinor and $G_2$ the isotropy in $\mathrm{Spin}(7)$ of a unit octonion; the isotropy in $G_2$ of a unit imaginary octonion is $SU(3)$.
 
-**Proof.** The dimensions $28>21>14$ already forbid the reversed order. $G_2$ fixes the real unit $1$ of the octonions and acts faithfully on the imaginary part, so it lies in $SO(7)$ and lifts to $\mathrm{Spin}(7)\subseteq\mathrm{Spin}(8)$; the lifting theory is Part III's. The transitivity of $\mathrm{Spin}(7)$ on the norm-one set of the octonions with stabiliser $G_2$, and the stabiliser $SU(3)$ of a unit imaginary octonion in $G_2$, are the classical statements of *Octonion Geometry* and *Octonions and the Exceptional Lie Groups*; the isotropy of a nonzero spinor in $\mathrm{Spin}(8)$ is $\mathrm{Spin}(7)$, which is the spinor description of the same subgroup.
+**Proof.** The dimensions $28>21>14$ already forbid the reversed order. $G_2$ fixes the real unit $1$ of the octonions and acts faithfully on the imaginary part, so it lies in $SO(7)$ and lifts to $\mathrm{Spin}(7)\subseteq\mathrm{Spin}(8)$; the lifting theory is Part III's. The transitivity of $\mathrm{Spin}(7)$ on the norm-one set of the octonions with stabiliser $G_2$, and the stabiliser $SU(3)$ of a unit imaginary octonion in $G_2$, are classical statements; the isotropy of a nonzero spinor in $\mathrm{Spin}(8)$ is $\mathrm{Spin}(7)$, which is the spinor description of the same subgroup.
 
 ## The Octonionic Model
 
@@ -119,9 +119,9 @@ $$
 
 which are carried into one another by conjugating one of the two arguments.
 
-**Proof.** The symmetry of $\mathrm{Re}\bigl((xy)z\bigr)$ under cyclic permutation is the classical identity of a composition algebra, and it follows from the alternative laws recorded in *Octonion Algebra*; the identification of the three legs with the three products, and the realisation of $8_v$ and of the two half-spinor modules on the octonions through them, is the classical octonionic construction of triality, recorded in the literature cited below. The Clifford-algebraic part of the statement is the theorem of the previous section.
+**Proof.** The symmetry of $\mathrm{Re}\bigl((xy)z\bigr)$ under cyclic permutation is the classical identity of a composition algebra, and it follows from the alternative laws; the identification of the three legs with the three products, and the realisation of $8_v$ and of the two half-spinor modules on the octonions through them, is the classical octonionic construction of triality, recorded in the literature cited below. The Clifford-algebraic part of the statement is the theorem of the previous section.
 
-**Remark (the boundary of what this article proves).** The article proves the Clifford-algebraic content: the three modules, their equal dimension, their non-isomorphism, the invariant trilinear form and the automorphism. The realisation of the three modules on the octonions, and the identification of the isotropy of the model with $\mathrm{Spin}(8)$ acting through the three legs, is quoted from the literature and developed in *Octonion Element Representations*, *Octonion Geometry* and *Octonions and Exceptional Geometry*, where the planes, the lines and the exceptional groups of the octonionic projective plane are treated.
+**Remark (the boundary of what this article proves).** The article proves the Clifford-algebraic content: the three modules, their equal dimension, their non-isomorphism, the invariant trilinear form and the automorphism. The realisation of the three modules on the octonions, and the identification of the isotropy of the model with $\mathrm{Spin}(8)$ acting through the three legs, is quoted from the literature.
 
 ### Alternativity Without Associativity
 
@@ -133,7 +133,7 @@ $$
 
 The other two legs satisfy $m_2(x,y)=m_1(x^{\natural},y)$ and $m_3(x,y)=m_1(x,y^{\natural})$, each being obtained from the octonion product by conjugating an argument, and the alternative identities written for $m_1$ do not hold for them: for a unit imaginary $x$ one has $m_2(x,m_2(x,y))=-y$ against $m_2(m_2(x,x),y)=y$, and similarly for $m_3$.
 
-**Proof.** The alternative laws are the defining identities of the octonions and the failure of associativity is their complement, both recorded in *Octonion Algebra*; the two relations between the legs are the definition of $m_2$ and $m_3$. For the failure, take $x$ unit imaginary, so that $x^{\natural}=-x$ and $x^2=-1$: then $m_2(x,x)=x^{\natural}x=1$, so $m_2(m_2(x,x),y)=y$, while $m_2(x,m_2(x,y))=x^{\natural}(x^{\natural}y)=x(xy)=(xx)y=-y$ by the alternative law for $m_1$.
+**Proof.** The alternative laws are the defining identities of the octonions and the failure of associativity is their complement, both classical; the two relations between the legs are the definition of $m_2$ and $m_3$. For the failure, take $x$ unit imaginary, so that $x^{\natural}=-x$ and $x^2=-1$: then $m_2(x,x)=x^{\natural}x=1$, so $m_2(m_2(x,x),y)=y$, while $m_2(x,m_2(x,y))=x^{\natural}(x^{\natural}y)=x(xy)=(xx)y=-y$ by the alternative law for $m_1$.
 
 **Remark.** Triality is the statement that the three legs are interchangeable, so the failure of associativity of the octonion product is not a defect to be repaired but the freedom that the symmetry permutes. In a setting in which the vector and the two half-spinors carry the three roles, the absence of a preferred one of the three legs is the absence of a preferred one of the three representations. The alternative laws are the part of the structure that is not symmetric among the legs, and they belong to the product $m_1$ alone: the two conjugated legs are not alternative, as the theorem records.
 

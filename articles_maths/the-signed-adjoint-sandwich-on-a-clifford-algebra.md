@@ -78,7 +78,7 @@ $$
 u^{\dagger}u=uu^{\dagger}=1 ,
 $$
 
-and the condition is the **unitarity condition**; the unitary elements form a group $U(\mathrm{Cl},{}^{\dagger})$.
+and the condition is the **unitarity condition**; the unitary elements form a group $\mathrm{U}(\mathrm{Cl},{}^{\dagger})$.
 
 **Proposition.** If $u$ is unitary, the signed sandwich $\Sigma^{\alpha}_{u,u^{\dagger}}$ is an isometry of the standard form, and its adjoint is $\Sigma^{\alpha}_{\alpha(u),\alpha(u^{\dagger})}$; the assignment $u\mapsto\Sigma^{\alpha}_{u,u^{\dagger}}$ carries the unitary group into the isometries of the standard form, with kernel the central unitary elements.
 

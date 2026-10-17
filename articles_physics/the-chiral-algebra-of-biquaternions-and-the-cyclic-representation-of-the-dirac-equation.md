@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The corpus already carries several biquaternionic interpretations of the Dirac equation. *The Dirac Equation in Biquaternionic Form* writes it with the corpus's own basis $e_0, e_1, e_2, e_3$, the Hamilton product and the elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. *The Dirac Algebra and Biquaternions — A Dictionary* records the isomorphism with $\mathrm{Cl}_{1,3}$. *Exercise: Chirality and the Weyl Spinors* treats the two chiral halves with the standard projectors $\tfrac12(1 \pm \gamma_5)$. The article recorded here is a fourth interpretation, and it is built on a purpose-made algebra rather than on the corpus's basis.
+The corpus already carries several biquaternionic interpretations of the Dirac equation. *The Dirac Equation in Biquaternionic Form* writes it with the corpus's own basis $e_t, \vec e_x, \vec e_y, \vec e_z$, the Hamilton product and the elliptic factorisation $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$. *The Dirac Algebra and Biquaternions — A Dictionary* records the isomorphism with $\mathrm{Cl}_{1,3}$. *Exercise: Chirality and the Weyl Spinors* treats the two chiral halves with the standard projectors $\tfrac12(1 \pm \gamma_5)$. The article recorded here is a fourth interpretation, and it is built on a purpose-made algebra rather than on the corpus's basis.
 
 The source is Sergey Y. Kotkovskiy, *Chiral algebra of Dirac equation*, the version marked v3 (February 2026) of the file whose printed identifier is `2502.0126`; an earlier version, marked v2 (March 2025), is titled *Cyclic representation of the Dirac equation* and differs from the digested text in one mathematical place only — the map of the Appendix's second matrix isomorphism, which the author rewrote between the two versions — so the two are recorded here as one source. Twenty-eight pages in two parts. Part 1, *Chiral algebra*, constructs an **isotropic (light) basis** of the biquaternion space out of nullquaternions, defines **signed biquaternions** and **projectors**, introduces **four types of biquaternion multiplication** — outer, inner, diagonal and crossing — and three **exchange conjugations**. Part 2, *Dirac equation*, adds a fourth operation, **cyclic conjugation**, which is a four-cycle of the coordinates, and writes the Dirac equation as a single expression that contains both chiralities: the **cyclic representation**. The paper then derives an analogue of the Lorentz transformation, a **rotation transformation** that it reads as the creation of the particle's proper rotation, an expression of the cyclic transformation through a **complex Hadamard matrix**, and four equivalent representations in projectors; and it gives the concrete spin machinery — the spin-projection operators become the Pauli matrices under a further matrix correspondence, and the exchange conjugation is the longitudinal spin flip. The Appendix attaches a $2\times2$ matrix to every biquaternion and claims two isomorphisms — the outer product as the ordinary matrix product, and the inner product as a matrix product with the second term of each entry **subtracted**; the first is exact, the second is not (see *The Matrix Isomorphisms*), and the product that beside the outer one really is an ordinary matrix product is the **diagonal** one. The author identifies the isotropic-basis machinery with a model of the genetic code he has published elsewhere, and reads the Hadamard matrix as the informational aspect of the Dirac equation.
 
@@ -31,13 +31,13 @@ with $i$ the central scalar imaginary unit. Three cautions belong here, because 
 
 **The name "outer product" is a false friend.** The corpus's outer product is the antisymmetric part $p \wedge q = \tfrac12(pq - qp)$, a grade-2 object (*Conventions in the Biquaternion Universe*, *The Outer Product and the Grades*). The paper's outer product is the **full product**, grade-0 and grade-2 together. The two must not be conflated.
 
-**The product itself is not the corpus's product.** The corpus's product is the Hamilton product extended complex-linearly, $Q_0R_0 - (\vec Q,\vec R)$ in the scalar slot and $Q_0\vec R + R_0\vec Q + [\vec Q,\vec R]$ in the vector slot. The paper's (1) carries $+\vec q_{a,1} \cdot \vec q_{a,2}$ and $+i\,\vec q_{a,1} \times \vec q_{a,2}$. On pure vectors the paper's product is therefore the Pauli product,
+**The product itself is not the corpus's product.** The corpus's product is the Hamilton product extended complex-linearly, $Q_tR_t - (\vec Q,\vec R)$ in the scalar slot and $Q_t\vec R + R_t\vec Q + [\vec Q,\vec R]$ in the vector slot. The paper's (1) carries $+\vec q_{a,1} \cdot \vec q_{a,2}$ and $+i\,\vec q_{a,1} \times \vec q_{a,2}$. On pure vectors the paper's product is therefore the Pauli product,
 
 $$
 \vec q_{a,1} \odot \vec q_{a,2} = \vec q_{a,1} \cdot \vec q_{a,2} + i\,\vec q_{a,1} \times \vec q_{a,2} \quad \longleftrightarrow \quad (\boldsymbol{\sigma}\cdot\vec q_{a,1})(\boldsymbol{\sigma}\cdot\vec q_{a,2}) = (\vec q_{a,1}\cdot\vec q_{a,2})I + i\,\boldsymbol{\sigma}\cdot(\vec q_{a,1}\times\vec q_{a,2}),
 $$
 
-and it differs from the corpus's Hamilton product in the sign of **both** the dot and the cross term. This is checked in *What Is Verified and What Is Not*. It is also why the author's spin 4-gradient $D_s = (\partial_t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with half his 4-gradient $D$ (his equation (39)): a Pauli-type product is what the Pauli matrices satisfy.
+and it differs from the corpus's Hamilton product in the sign of **both** the dot and the cross term. This is checked in *What Is Verified and What Is Not*. It is also why the author's spin 4-gradient $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with half his 4-gradient $D$ (his equation (39)): a Pauli-type product is what the Pauli matrices satisfy.
 
 **The three conjugate signs.** Complex conjugation is $\mathcal{B}^* = (s^*, \vec q_a^*)$, vector conjugation is $\bar{\mathcal{B}} = (s, -\vec q_a)$ — the corpus's quaternion conjugate — and the double conjugate is $(s^*, -\vec q_a^*)$, which is the corpus's Hermitian adjoint. The **square modulus** is the corpus's norm,
 
@@ -92,11 +92,11 @@ $$
 whence the derivatives
 
 $$
-\partial_\alpha = \tfrac12(\partial_x + i\partial_y), \qquad \partial_\beta = \tfrac12(\partial_x - i\partial_y), \qquad \partial_\xi = \tfrac12(\partial_t + \partial_z), \qquad \partial_\eta = \tfrac12(\partial_t - \partial_z).
+\partial/\partial\alpha = \tfrac12(\partial/\partial Q_x + i\partial/\partial Q_y), \qquad \partial/\partial\beta = \tfrac12(\partial/\partial Q_x - i\partial/\partial Q_y), \qquad \partial/\partial\xi = \tfrac12(\partial/\partial t + \partial/\partial Q_z), \qquad \partial/\partial\eta = \tfrac12(\partial/\partial t - \partial/\partial Q_z).
 \tag{6}
 $$
 
-Two remarks fix the relation to the corpus. The coordinates (5) are the corpus's **null coordinates** on the light cone, so the isotropic basis is the light-cone basis used as a *computational basis for the Dirac problem* — a choice the corpus does not make, although it uses null bases and the null quadric elsewhere (in particular in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, where the corpus notes that "$\mathbb{B}$ is the complexified quaternion algebra and its null cone is the obstacle"). And the decomposition (4) is a **Peirce-type decomposition** into two commuting idempotents $N$ and $\bar{N}$ with $N + \bar{N} = 1$ and $N\bar{N} = 0$; the corpus's *Ideals and Peirce Decomposition of the Biquaternion Algebra* records the same split, but in the corpus's own basis $\{e_0, e_1\}$ rather than in the light-cone basis.
+Two remarks fix the relation to the corpus. The coordinates (5) are the corpus's **null coordinates** on the light cone, so the isotropic basis is the light-cone basis used as a *computational basis for the Dirac problem* — a choice the corpus does not make, although it uses null bases and the null quadric elsewhere (in particular in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, where the corpus notes that "$\mathbb{B}$ is the complexified quaternion algebra and its null cone is the obstacle"). And the decomposition (4) is a **Peirce-type decomposition** into two commuting idempotents $N$ and $\bar{N}$ with $N + \bar{N} = 1$ and $N\bar{N} = 0$; the corpus's *Ideals and Peirce Decomposition of the Biquaternion Algebra* records the same split, but in the corpus's own basis $\{e_t, \vec e_x\}$ rather than in the light-cone basis.
 
 ### Signed Biquaternions and Projectors
 
@@ -111,7 +111,7 @@ $$
 
 for every $\mathcal{B}$.
 
-The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's projectors are $\pi_{1,2} = \tfrac12(1 \pm e_1)$, with $\pi_1 \pi_2 = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\vec u$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
+The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's projectors are $\pi_{1,2} = \tfrac12(1 \pm \vec e_x)$, with $\pi_x \pi_y = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\vec u$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
 
 ### The Four Multiplication Types
 
@@ -119,10 +119,10 @@ The paper introduces four general products on the same four-dimensional space. T
 
 $$
 \begin{aligned}
-\mathcal{B}_1 \odot \mathcal{B}_2 &= (\xi_1\alpha_2 + \alpha_1\eta_2)\,\vec q + (\eta_1\beta_2 + \beta_1\xi_2)\,\vec q^* + (\alpha_1\beta_2 + \xi_1\xi_2)\,N + (\beta_1\alpha_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \otimes \mathcal{B}_2 &= (\alpha_1\alpha_2 + \xi_1\eta_2)\,\vec q + (\beta_1\beta_2 + \eta_1\xi_2)\,\vec q^* + (\beta_1\xi_2 + \xi_1\alpha_2)\,N + (\alpha_1\eta_2 + \eta_1\beta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \times \mathcal{B}_2 &= (\alpha_1\alpha_2 + \beta_1\xi_2)\,\vec q + (\alpha_1\beta_2 + \beta_1\eta_2)\,\vec q^* + (\xi_1\alpha_2 + \eta_1\xi_2)\,N + (\xi_1\beta_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
-\mathcal{B}_1 \rightsquigarrow \mathcal{B}_2 &= \eta_1\xi_2\,\vec q + \xi_1\eta_2\,\vec q^* + \alpha_1\beta_2\,N + \beta_1\alpha_2\,\bar{N}.
+\mathcal{B}_1 \odot \mathcal{B}_2 &= (\xi_x\alpha_2 + \alpha_1\eta_2)\,\vec q + (\eta_1\beta_2 + \beta_1\xi_y)\,\vec q^* + (\alpha_1\beta_2 + \xi_x\xi_y)\,N + (\beta_1\alpha_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \otimes \mathcal{B}_2 &= (\alpha_1\alpha_2 + \xi_x\eta_2)\,\vec q + (\beta_1\beta_2 + \eta_1\xi_y)\,\vec q^* + (\beta_1\xi_y + \xi_x\alpha_2)\,N + (\alpha_1\eta_2 + \eta_1\beta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \times \mathcal{B}_2 &= (\alpha_1\alpha_2 + \beta_1\xi_y)\,\vec q + (\alpha_1\beta_2 + \beta_1\eta_2)\,\vec q^* + (\xi_x\alpha_2 + \eta_1\xi_y)\,N + (\xi_x\beta_2 + \eta_1\eta_2)\,\bar{N}, \\[2pt]
+\mathcal{B}_1 \rightsquigarrow \mathcal{B}_2 &= \eta_1\xi_y\,\vec q + \xi_x\eta_2\,\vec q^* + \alpha_1\beta_2\,N + \beta_1\alpha_2\,\bar{N}.
 \end{aligned}
 \tag{8}
 $$
@@ -186,7 +186,7 @@ M = \begin{pmatrix} \alpha & -\eta \\ \xi & -\beta \end{pmatrix}
 \qquad (\text{v3}),
 $$
 
-with the same subtractive rule in both versions: if the printed matrices are read as $M = \left(\begin{smallmatrix} a_{11} & a_{21}\\ a_{12} & a_{22}\end{smallmatrix}\right)$, entry $(i,j)$ of the product is $a_{i1}b_{1j} - a_{i2}b_{2j}$, addition replaced by subtraction in the second term. **Neither form makes the inner product into a matrix product, and no correction of the map can.** The check was exhaustive: over all $4!$ orders in which the four coordinates $(\alpha,\beta,\xi,\eta)$ may be placed in the four matrix slots, all $2^4$ choices of entry signs, and the four pairing rules (add and subtract, with the two index orders) — $1536$ combinations, each required to give residual zero on twenty random pairs — **no** map realises the inner product. The reason is visible in the formulas: across the four coordinates the first terms of the inner product carry all four coordinates of the second factor, $\alpha_2, \beta_2, \xi_2, \eta_2$, whereas the first term of the rule can carry only two of them. The author's own revision is evidence that he knew the map was wrong — he changed it from v2 to v3 — but the corrected form fails the same test.
+with the same subtractive rule in both versions: if the printed matrices are read as $M = \left(\begin{smallmatrix} a_{11} & a_{21}\\ a_{12} & a_{22}\end{smallmatrix}\right)$, entry $(i,j)$ of the product is $a_{i1}b_{1j} - a_{i2}b_{2j}$, addition replaced by subtraction in the second term. **Neither form makes the inner product into a matrix product, and no correction of the map can.** The check was exhaustive: over all $4!$ orders in which the four coordinates $(\alpha,\beta,\xi,\eta)$ may be placed in the four matrix slots, all $2^4$ choices of entry signs, and the four pairing rules (add and subtract, with the two index orders) — $1536$ combinations, each required to give residual zero on twenty random pairs — **no** map realises the inner product. The reason is visible in the formulas: across the four coordinates the first terms of the inner product carry all four coordinates of the second factor, $\alpha_2, \beta_2, \xi_y, \eta_2$, whereas the first term of the rule can carry only two of them. The author's own revision is evidence that he knew the map was wrong — he changed it from v2 to v3 — but the corrected form fails the same test.
 
 What *is* true, and is verified exactly, is that the **diagonal** product is an ordinary matrix product: under
 $\mathcal{B} \leftrightarrow \left(\begin{smallmatrix} \alpha & \beta\\ \xi & \eta\end{smallmatrix}\right)$, with $M_{11}\leftrightarrow\vec q$, $M_{12}\leftrightarrow\vec q^*$, $M_{21}\leftrightarrow N$, $M_{22}\leftrightarrow\bar{N}$, the product of the images is the image of $\mathcal{B}_1 \times \mathcal{B}_2$ with residual zero; this is one of the eight realisations the same exhaustive search returns for the diagonal product, and the diagonal and the outer product are between them the only two of the four that have any. So the source's Appendix sentence — "if we replace outer multiplication by inner multiplication, then another isomorphism is established" — is true with the word **diagonal** in place of **inner**; the exchange-of-roles reading that the author draws from it (the inner product associative and basis-independent under the alternative correspondence) has no support, because the correspondence he exhibits is not an isomorphism at all.
@@ -199,12 +199,12 @@ Beyond the corpus's conjugations, the paper defines three more by **permuting th
 
 $$
 \mathcal{B}^{\bigstar} : (\alpha, \beta, \xi, \eta) \mapsto (\beta, \alpha, \eta, \xi), \qquad
-\tilde{\mathcal{B}} : (\alpha, \beta, \xi, \eta) \mapsto (\xi, \eta, \alpha, \beta), \qquad
+\mathcal{B}^{\bullet} : (\alpha, \beta, \xi, \eta) \mapsto (\xi, \eta, \alpha, \beta), \qquad
 \mathcal{B}^{\bigstar\bigstar} : (\alpha, \beta, \xi, \eta) \mapsto (\eta, \xi, \beta, \alpha).
 \tag{10}
 $$
 
-The first two are transpositions, the third is their composition. Their structural properties were verified: each is self-inverse; $\bigstar \circ \bigstar\bigstar = \bigstar\bigstar \circ \bigstar = \tilde{\phantom{x}}$, so applying two different ones gives the third; and all three commute with each other in the sense that the composed operations are independent of the order.
+The first two are transpositions, the third is their composition. Their structural properties were verified: each is self-inverse; $\bigstar \circ \bigstar\bigstar = \bigstar\bigstar \circ \bigstar = \mathcal{B}^{\bullet}$, so applying two different ones gives the third; and all three commute with each other in the sense that the composed operations are independent of the order.
 
 These are **not** algebra anti-automorphisms of the kind the corpus uses. The corpus's conjugations (complex, quaternion, Hermitian, and the Peirce projections) are $\mathbb{R}$-linear maps of $\mathbb{B}$ that interact with the product by reversing it; the paper's exchange conjugations are coordinate permutations of the isotropic basis, and they interact with the products of (8) by **changing the product type** rather than by reversing the order. This distinction is the substance of the author's equation
 
@@ -227,11 +227,11 @@ $$
 that is, $\overset{⤺}{\mathcal{B}} = \beta\vec q + \xi\vec q^* + \eta N + \alpha\bar{N}$ for $\mathcal{B} = \alpha\vec q + \beta\vec q^* + \xi N + \eta\bar{N}$. The diagram of the paper is a rotation of the four coordinates around the basis, which stays in place. The properties were verified exactly: the fourth iterate is the identity, so the operation generates a cyclic group of order four on every biquaternion; the second iterate is the exchange conjugation of the second type,
 
 $$
-\overset{⤺⤺}{\mathcal{B}} = \tilde{\mathcal{B}},
+\overset{⤺⤺}{\mathcal{B}} = \mathcal{B}^{\bullet},
 \tag{13}
 $$
 
-so the pair $\{1, \overset{⤺}{\phantom{x}}, \overset{⤺⤺}{\phantom{x}}, \overset{⤺⤺⤺}{\phantom{x}}\}$ is exactly the four-element cycle $\{1, g, \tilde{\phantom{x}}, g^{-1}\}$ with $\tilde{\phantom{x}}$ the involution of (10). The author's decomposition of the cyclic conjugation into exchange conjugations is a restatement of the same cycle and is consistent with (13).
+so the pair $\{1, \overset{⤺}{\phantom{x}}, \overset{⤺⤺}{\phantom{x}}, \overset{⤺⤺⤺}{\phantom{x}}\}$ is exactly the four-element cycle $\{1, g, \mathcal{B}^{\bullet}, g^{-1}\}$ with $\mathcal{B}^{\bullet}$ the involution of (10). The author's decomposition of the cyclic conjugation into exchange conjugations is a restatement of the same cycle and is consistent with (13).
 
 The second iterate being an involution is what makes the cyclic conjugation usable in a wave equation: it is not an involution itself, but it is a fourth root of unity on the coordinates, and the author reads it as the "cyclic development" of the wave function as against the "linear development" carried by the derivatives.
 
@@ -242,18 +242,18 @@ The second iterate being an involution is what makes the cyclic conjugation usab
 The paper starts from the Weyl form of the Dirac equation,
 
 $$
-\partial_t\psi_L = -(\boldsymbol{\sigma}\cdot\nabla)\psi_L - im\,\psi_R, \qquad
-\partial_t\psi_R = +(\boldsymbol{\sigma}\cdot\nabla)\psi_R - im\,\psi_L,
+\partial/\partial t\psi_L = -(\boldsymbol{\sigma}\cdot\nabla)\psi_L - im\,\psi_R, \qquad
+\partial/\partial t\psi_R = +(\boldsymbol{\sigma}\cdot\nabla)\psi_R - im\,\psi_L,
 \tag{14}
 $$
 
 with $\psi_L = (u, v)_L^{\mathsf T}$ and $\psi_R = (u', v')_R^{\mathsf T}$, and rewrites it in the isotropic derivatives (6) as
 
 $$
-\partial_\xi u + \partial_\beta v = -im\,u', \qquad
-\partial_\eta v + \partial_\alpha u = -im\,v', \qquad
-\partial_\eta u' - \partial_\beta v' = -im\,u, \qquad
-\partial_\xi v' - \partial_\alpha u' = -im\,v.
+\partial/\partial\xi u + \partial/\partial\beta v = -im\,u', \qquad
+\partial/\partial\eta v + \partial/\partial\alpha u = -im\,v', \qquad
+\partial/\partial\eta u' - \partial/\partial\beta v' = -im\,u, \qquad
+\partial/\partial\xi v' - \partial/\partial\alpha u' = -im\,v.
 \tag{15}
 $$
 
@@ -285,12 +285,12 @@ so that the right-chiral state is the positive projector and the left-chiral sta
 The 4-gradient and its vector conjugate, written in the isotropic basis, are
 
 $$
-D = 2(\vec q\,\partial_\beta + \vec q^*\,\partial_\alpha + N\,\partial_\xi + \bar{N}\,\partial_\eta), \qquad
-\bar{D} = 2(-\vec q\,\partial_\beta - \vec q^*\,\partial_\alpha + N\,\partial_\eta + \bar{N}\,\partial_\eta).
+D = 2(\vec q\,\partial/\partial\beta + \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\xi + \bar{N}\,\partial/\partial\eta), \qquad
+\bar{D} = 2(-\vec q\,\partial/\partial\beta - \vec q^*\,\partial/\partial\alpha + N\,\partial/\partial\eta + \bar{N}\,\partial/\partial\eta).
 \tag{19}
 $$
 
-The author notes the inversion that looks like a slip and is not: the derivative $\partial_\alpha$ stands on $\vec q^*$ and $\partial_\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial_t$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2). The author also notes that his spin 4-gradient $D_s = (\partial_t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with $\tfrac12 D$, which is the expression of the Pauli-product remark of the first section. The identity (19) was not verified beyond the consistency of the factors; it is quoted as the paper's statement.
+The author notes the inversion that looks like a slip and is not: the derivative $\partial/\partial\alpha$ stands on $\vec q^*$ and $\partial/\partial\beta$ on $\vec q$, which is the transpose of the coordinate pairing. The reason is that $D$ must reproduce $\partial/\partial t$ and $\nabla$, and the $\alpha, \beta$ slots are exchanged by the vector conjugation. The factor $2$ is the price of the $\tfrac12$ normalisations in (2). The author also notes that his spin 4-gradient $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$ coincides with $\tfrac12 D$, which is the expression of the Pauli-product remark of the first section. The identity (19) was not verified beyond the consistency of the factors; it is quoted as the paper's statement.
 
 ### The Single-String Representation
 
@@ -304,10 +304,10 @@ $$
 the Dirac equation for the biquaternion wave function $F$, written as one expression in which the two chiralities appear as the two signed parts $F^\pm$, the two gradient orderings appear as the two products $\odot$ and $\otimes$, and the mass appears on the right through the cyclic conjugate of $F$. Its component form, as printed, is
 
 $$
-\partial_\xi f_\alpha - \partial_\beta f_\xi = im\,f_\beta, \qquad
-\partial_\eta f_\xi - \partial_\alpha f_\alpha = im\,f_\eta, \qquad
-\partial_\eta f_\beta + \partial_\beta f_\eta = im\,f_\alpha, \qquad
-\partial_\xi f_\eta + \partial_\alpha f_\beta = im\,f_\xi.
+\partial/\partial\xi f_\alpha - \partial/\partial\beta f_\xi = im\,f_\beta, \qquad
+\partial/\partial\eta f_\xi - \partial/\partial\alpha f_\alpha = im\,f_\eta, \qquad
+\partial/\partial\eta f_\beta + \partial/\partial\beta f_\eta = im\,f_\alpha, \qquad
+\partial/\partial\xi f_\eta + \partial/\partial\alpha f_\beta = im\,f_\xi.
 \tag{21}
 $$
 
@@ -376,7 +376,7 @@ F = A \exp(i\Phi) + B \exp(-i\Phi),
 \tag{28}
 $$
 
-with $\Phi$ the invariant phase (27) and $A, B$ constant biquaternions, the positive-frequency and negative-frequency amplitudes. Substituting $F = A \exp(i\Phi)$ into the component system (21) makes it algebraic in the amplitudes; with the phase normalised so that $\partial_\alpha\Phi = -k_\beta$ and $\partial_\xi\Phi = k_\eta$, the four equations read
+with $\Phi$ the invariant phase (27) and $A, B$ constant biquaternions, the positive-frequency and negative-frequency amplitudes. Substituting $F = A \exp(i\Phi)$ into the component system (21) makes it algebraic in the amplitudes; with the phase normalised so that $\partial/\partial\alpha\,\Phi = -k_\beta$ and $\partial/\partial\xi\,\Phi = k_\eta$, the four equations read
 
 $$
 k_\eta a_\alpha + k_\alpha a_\xi = m a_\beta, \qquad k_\beta a_\alpha + k_\xi a_\xi = m a_\eta, \qquad
@@ -494,7 +494,7 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 **The Lorentz analogue.** The boost is the construction of *The Boost and the Energy–Momentum Operators* above: the author writes it in the same two-product form as the cyclic representation and reads the structural similarity between the boost and the equation itself.
 
-**The rotation transformation.** The author argues that because the cyclic conjugate sits on the right-hand side of (20), the left-hand side *is* the operation that creates it, and calls this the **rotation transformation**. Splitting the plane wave into its positive- and negative-frequency parts $Q_1 = A\exp(i\Phi)$ and $Q_2 = B\exp(-i\Phi)$, he forms the **subtractive components** $Q^\pm = Q_1^\pm - Q_2^\pm$ and writes the transformation as $F \mapsto Q^- \odot K + \bar{K} \otimes Q^+$ with the energy-momentum biquaternion $K$. The claim is that this transformation is the analogue of the Lorentz boost for the particle's **proper rotation**, that is for spin, and the author states explicitly that the translational partner of the transformation "remains open". In the corpus, the corresponding machinery is rotor conjugation, $A \mapsto \Lambda A \Lambda^{*}$ (*The Lorentz Transformation as a Biquaternionic Rotation*); the paper's rotation transformation is not rotor conjugation — it uses two different products and the subtractive components, not a conjugate pair — so it is a candidate for a genuinely different construction. It should be checked against the corpus's rotor action before any claim of novelty is repeated.
+**The rotation transformation.** The author argues that because the cyclic conjugate sits on the right-hand side of (20), the left-hand side *is* the operation that creates it, and calls this the **rotation transformation**. Splitting the plane wave into its positive- and negative-frequency parts $Q_x = A\exp(i\Phi)$ and $Q_y = B\exp(-i\Phi)$, he forms the **subtractive components** $Q^\pm = Q_x^\pm - Q_y^\pm$ and writes the transformation as $F \mapsto Q^- \odot K + \bar{K} \otimes Q^+$ with the energy-momentum biquaternion $K$. The claim is that this transformation is the analogue of the Lorentz boost for the particle's **proper rotation**, that is for spin, and the author states explicitly that the translational partner of the transformation "remains open". In the corpus, the corresponding machinery is rotor conjugation, $A \mapsto \Lambda A \Lambda^{*}$ (*The Lorentz Transformation as a Biquaternionic Rotation*); the paper's rotation transformation is not rotor conjugation — it uses two different products and the subtractive components, not a conjugate pair — so it is a candidate for a genuinely different construction. It should be checked against the corpus's rotor action before any claim of novelty is repeated.
 
 **The superluminal variant.** Flipping the sign of the two products, $F^- \odot \bar{D} - D \otimes F^+ = im\overset{⤺}{F}$, gives the paper's **superluminal Dirac equation**, with the dispersion relation $\epsilon^2 - |\vec k|^2 = k_\xi k_\eta - k_\alpha k_\beta = -m^2$ in place of the subluminal one. The final algebraic step of this dispersion relation was verified — in the isotropic coordinates $k_\xi k_\eta - k_\alpha k_\beta = k_t^2 - k_x^2 - k_y^2 - k_z^2$ identically — so the superluminal branch follows from the sign as claimed. The **physical interpretation** of that branch is the author's, and the corpus's *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* records a different superluminal construction.
 
@@ -518,7 +518,7 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}$ | Biquaternion algebra; the corpus's $e_0, e_1, e_2, e_3$ basis |
+| $\mathbb{B}$ | Biquaternion algebra; the corpus's $e_t, \vec e_x, \vec e_y, \vec e_z$ basis |
 | $i$ | Central scalar imaginary unit, $i^2 = -1$ |
 | $\mathcal{B} = (s, \vec q_a)$ | Scalar-vector (Silberstein) form: complex scalar $s$, complex vector $\vec q_a$ |
 | $\mathcal{B}^*, \bar{\mathcal{B}}, \bar{\mathcal{B}}^*$ | Complex, vector (quaternion), and double (Hermitian) conjugates |
@@ -531,7 +531,7 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 | $\mathcal{B}^+, \mathcal{B}^-$ | Signed (positive, negative) biquaternions; the Peirce components |
 | $\mathcal{P}^+, \mathcal{P}^-$ | Positive and negative projectors for the crossing product |
 | $\odot, \otimes, \times, \rightsquigarrow$ | Outer, inner, diagonal and crossing products |
-| $\bigstar, \tilde{\phantom{x}}, \bigstar\bigstar$ | The three exchange conjugations (coordinate permutations) |
+| $\mathcal{B}^{\bigstar}, \mathcal{B}^{\bullet}, \mathcal{B}^{\bigstar\bigstar}$ | The three exchange conjugations (coordinate permutations) |
 | $\overset{⤺}{\phantom{x}}$ | Cyclic conjugation (the four-cycle) |
 | $F = \vec qf_\alpha + \vec q^*f_\beta + Nf_\xi + \bar{N}f_\eta$ | Biquaternion wave function |
 | $F^+ , F^-$ | Positive and negative signed parts; $\psi_R$ and $\psi_L$ |
@@ -545,8 +545,8 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 | $L = N\exp(\theta) + \bar{N}\exp(-\theta),\ \breve{L}$ | Longitudinal and transverse Lorentz (boost) operators |
 | $S_x, S_y, S_z, S_t$ | Spin-projection operators; the Pauli matrices under the diagonal isomorphism |
 | $F_{j\uparrow}, F_{j\downarrow}$ | Spin eigenstates along $j = x, y, z$ |
-| $D = (\partial_t, \nabla),\ \bar{D}$ | 4-gradient and its vector conjugate, in the paper's real-time convention |
-| $D_s = \tfrac12 D$ | Spin 4-gradient, $D_s = (\partial_t, \boldsymbol{\sigma}\cdot\nabla)$ |
+| $D = (\partial/\partial t, \nabla),\ \bar{D}$ | 4-gradient and its vector conjugate, in the paper's real-time convention |
+| $D_s = \tfrac12 D$ | Spin 4-gradient, $D_s = (\partial/\partial t, \boldsymbol{\sigma}\cdot\nabla)$ |
 | $H_4$ | Complex Hadamard matrix of the cyclic conjugation in Cartesian components |
 | $K$ | Energy-momentum biquaternion of the rotation transformation |
 | $Q^\pm$ | Subtractive components in the rotation transformation |

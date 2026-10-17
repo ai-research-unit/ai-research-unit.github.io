@@ -17,11 +17,11 @@ space $\mathbb{H}$.
 The block of this article is the **general quaternionic multiplication**
 $$
 \tilde p\star\tilde q=\tilde p^{\natural}\tilde q
-=\bigl[p_0q_0+\vec p\cdot\vec q\bigr]e_0+p_0\vec q-q_0\vec p-\vec p\times\vec q,
+=\bigl[p_0q_t+\vec p\cdot\vec q\bigr]e_t+p_0\vec q-q_t\vec p-\vec p\times\vec q,
 $$
 the product of the conjugate of the first factor with the second, read over $\mathbb{R}$
 (*Introduction to the General Quaternionic Algebra of Quaternions*). It is not associative, and it
-has $e_0$ as a left unit only. But over $\mathbb{R}$ the quaternion algebra is a division algebra
+has $e_t$ as a left unit only. But over $\mathbb{R}$ the quaternion algebra is a division algebra
 and the norm $N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2$ is a sum of four
 squares, hence positive definite; since the norm is multiplicative,
 $N(\tilde p\star\tilde q)=N(\tilde p)N(\tilde q)$, the product has **no zero divisors** at all
@@ -109,7 +109,7 @@ property of the general quaternionic shape: over $\mathbb{C}$ the same shape has
 
 ## The Multiplication Operator and the Rank
 
-**Proposition (the operator and its determinant).** In the basis $e_0,e_1,e_2,e_3$ the operators
+**Proposition (the operator and its determinant).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the operators
 are the plain left and right multiplications by the conjugate $\tilde p^{\natural}$, of determinant
 $$
 \det L_{\tilde p}=N(\tilde p)^{2}=\bigl(p_0^2+|\vec p|^2\bigr)^{2},\qquad
@@ -158,8 +158,8 @@ the origin against everything else.
 
 ## The Annihilator on the Remarkable Subspaces
 
-**The centre.** A nonzero central element $\tilde p=\lambda e_0$ has
-$\tilde p^{\natural}=\lambda e_0$ and $L_{\lambda e_0}\tilde x=\lambda\tilde x$; the operator is
+**The centre.** A nonzero central element $\tilde p=\lambda e_t$ has
+$\tilde p^{\natural}=\lambda e_t$ and $L_{\lambda e_t}\tilde x=\lambda\tilde x$; the operator is
 the scalar $\lambda$ times the identity, invertible for $\lambda\neq0$, so its annihilator is
 $\{0\}$.
 
@@ -167,7 +167,7 @@ $\{0\}$.
 $N(\tilde p)=|\vec p|^2>0$ and $L_{\vec p}\tilde x=-\vec p\tilde x$, again invertible; its
 annihilator is $\{0\}$.
 
-**Proposition (the reading on the subspaces).** On the centre $\mathbb{R}e_0$ and on the vector
+**Proposition (the reading on the subspaces).** On the centre $\mathbb{R}e_t$ and on the vector
 subspace $V$ the annihilator of every nonzero element is $\{0\}$; only the origin has the whole
 space as annihilator.
 

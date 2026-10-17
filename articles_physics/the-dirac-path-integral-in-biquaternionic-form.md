@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field (Grassmann-functional) integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-The conventions are the series conventions. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the Dirac equation is $(i\not\partial - mc/\hbar)\psi = 0$ with $\not\partial = \gamma^\mu\partial_\mu$, and the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{Q}\in\mathbb{M}_-$.
+The conventions are the series conventions. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the Dirac equation is $(i\not\partial - mc/\hbar)\psi = 0$ with $\not\partial = \gamma^\mu\partial/\partial Q_\mu$, and the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{1,3}$. The worldline parameter is denoted $\tau$ and the proper time $T$; $x(\tau)$ is the material four-position $\tilde{Q}\in\mathbb{M}_-$.
 
 ## The Dirac Propagator and the Square
 
@@ -66,10 +66,10 @@ $$
 G_F(x,x') = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x'}\mathcal{D}x(\tau)\;
 \exp(\,iS_0[x]),
 \qquad
-S_0[x] = \int_0^T d\tau\left(\frac{1}{4}\dot{x}^\mu\dot{x}_\mu - m^2c^2/\hbar^2\right),
+S_0[x] = \int_0^T d\tau\left(\frac{1}{4}dx^{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right),
 $$
 
-up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict$-coordinate metric of the conventions article, read here on the real-time components $(x^0,\vec x)$ — so that for a straight worldline $\dot{x}^\mu\dot{x}_\mu = -(x-x')^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x')^2}{4T}+\mu^2T\right]\right)$, with $(x-x')^2 = (x^0-x'^0)^2-|\vec x-\vec x'|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $\dot{\tilde{Q}}$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
+up to the standard normalisation of the measure and the einbein gauge choice. The tangent is contracted with the level-2 form $\eta = \mathrm{diag}(-1,+1,+1,+1)$ — the $ict$-coordinate metric of the conventions article, read here on the real-time components $(x^0,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ — so that for a straight worldline $dx^{\mu}/d\tau \,dx_{\mu}/d\tau = -(x-x')^2/T^2$ and the phase reduces to $\exp\left(-i\left[\frac{(x-x')^2}{4T}+\mu^2T\right]\right)$, with $(x-x')^2 = (x^0-x'^0)^2-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|^2$; this is the sign that the explicit free kernel of the next section displays. The Dirac propagator is then the operator $(i\not\partial + mc/\hbar)$ applied to $G_F$, with the appropriate $i$. The worldline is a curve in the material sector $\mathbb{M}_-$: its tangent $d\tilde{Q}/d\tau$ is a material four-velocity, and the phase $S_0$ is central. This is the biquaternion content of the scalar worldline: a central phase over a material curve.
 
 The deficiency of this representation is that the spin is nowhere to be seen until the differential operator is applied at the end. The second resolution supplies the spin directly.
 
@@ -89,7 +89,7 @@ $$
 G_F(x,x') = \int_0^\infty dT\;\mathcal{N}(T)\;
 \exp\left(-i\left[\frac{(x-x')^2}{4T} + \mu^2 T\right]\right),
 \qquad
-(x-x')^2 = (x^0-x'^0)^2 - |\vec x-\vec x'|^2,
+(x-x')^2 = (x^0-x'^0)^2 - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)|^2,
 $$
 
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$ whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
@@ -106,13 +106,13 @@ The worldline that generates the Dirac propagator itself, rather than the Klein�
 
 $$
 S[x,\psi] = \int_0^T d\tau\left[
-\frac{1}{4}\dot{x}^\mu\dot{x}_\mu
-+ \frac{i}{2}\psi^\mu\dot{\psi}_\mu
+\frac{1}{4}dx^{\mu}/d\tau \,dx_{\mu}/d\tau
++ \frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau
 - m^2c^2/\hbar^2
 \right],
 $$
 
-with the flat metric, the mass term normalised to the proper-time parameter $T$ introduced above, so that the phase of the free kernel is the one displayed in the previous section; the term odd in the Grassmann variables is the kinetic term $\frac{i}{2}\psi^\mu\dot\psi_\mu$, and its presence is what makes the worldline supersymmetric. Quantization of the odd variables gives the Clifford algebra
+with the flat metric, the mass term normalised to the proper-time parameter $T$ introduced above, so that the phase of the free kernel is the one displayed in the previous section; the term odd in the Grassmann variables is the kinetic term $\frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau$, and its presence is what makes the worldline supersymmetric. Quantization of the odd variables gives the Clifford algebra
 
 $$
 \{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\} = \frac{1}{2}g^{\mu\nu}\,I ,
@@ -123,7 +123,7 @@ in the normalisation of the worldline literature — the one in which the spin f
 $$
 K(x,x') = \int_0^\infty dT\int\mathcal{D}x\,\Phi[x]\,\exp(\,iS_0[x]),
 \qquad
-\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\dot\psi_\mu\,d\tau).
+\Phi[x] = \int_{\text{b.c.}}\mathcal{D}\psi\,\exp(\,i\int_0^T \frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau\,d\tau).
 $$
 
 The spin factor is the path-ordered exponential of the odd kinetic term; expanded, it is a sum of products of pairs $\psi^\mu\psi^\nu$, i.e. of Clifford bivectors, which is why the path integral over $\psi$ produces a Clifford-algebra-valued weight. The complete worldline path integral, with the correct measure and boundary conditions, reproduces the Dirac propagator $S_F$; this is the Berezin–Marinov / Brink–Di Vecchia–Howe construction, and it is standard. The same construction in a background electromagnetic field replaces the free kinetic term by the minimally coupled one and produces the spin factor $\Phi[x]=\mathrm{Tr}\,\mathcal{P}\exp\left(-\frac{i}{2}\int \sigma_{\mu\nu}F^{\mu\nu}\,d\tau\right)$ quoted in the literature (with the sign conventions of the cited works).
@@ -140,10 +140,10 @@ The spin factor is where the algebra sits, and its structure is exactly the alge
 
 ## The Spin Factor in a Background Field
 
-The spin factor earns its name in a background electromagnetic field, and the calculation shows how the biquaternion algebra's even/odd split organises the result. Minimal coupling adds the gauge term $qA_\mu(x)\dot{x}^\mu$ to the worldline action,
+The spin factor earns its name in a background electromagnetic field, and the calculation shows how the biquaternion algebra's even/odd split organises the result. Minimal coupling adds the gauge term $qA_\mu(x)dx^{\mu}/d\tau$ to the worldline action,
 
 $$
-S[x] = \int_0^T d\tau\left[\frac{1}{4}\dot{x}^\mu\dot{x}_\mu - \mu^2 + qA_\mu(x)\dot{x}^\mu\right],
+S[x] = \int_0^T d\tau\left[\frac{1}{4}dx^{\mu}/d\tau \,dx_{\mu}/d\tau - \mu^2 + qA_\mu(x)dx^{\mu}/d\tau\right],
 $$
 
 and the odd kinetic term is unchanged. The path integral over the odd variables now produces the spin factor
@@ -186,7 +186,7 @@ $$
 
 where the first term on each right-hand side is the straight continuation and the second is the corner. Two features are visible by inspection. The **free propagation is diagonal**: the term that carries $R$ to $R$ and $L$ to $L$ involves no mixing, and each direction propagates independently. The **mass is off-diagonal**: the corner terms couple $R$ to $L$ and $L$ to $R$ with the weight $i\epsilon m/\hbar$, i.e. with an explicit factor of the mass and an explicit factor of $i$.
 
-Taylor-expanding and taking $\epsilon \to 0$ with the lattice constraint $|\dot{x}| = 1$ turns the pair into the two-component Dirac equation in 1+1 dimensions, whose two components are $R$ and $L$. The corner weight $i\epsilon m/\hbar$ becomes the mass term, and the two directions become the two chiral components. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the chirality eigenspaces. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.
+Taylor-expanding and taking $\epsilon \to 0$ with the lattice constraint $|dx/d\tau| = 1$ turns the pair into the two-component Dirac equation in 1+1 dimensions, whose two components are $R$ and $L$. The corner weight $i\epsilon m/\hbar$ becomes the mass term, and the two directions become the two chiral components. This is the discrete origin of the off-diagonal mass pair that the biquaternion algebra writes as $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$: the checkerboard is that pair before the continuum limit has identified the directions with the chirality eigenspaces. The order of the two factors in a corner is the path ordering that survives as the ordering of the operators $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$ in the continuum.
 
 ## Composition, the Propagator Equation, and the Scalar Reduction
 
@@ -210,13 +210,13 @@ It is worth stating what the square does **not** do in this setting. It does not
 The worldline integrals above are written with a proper-time parameter $T$ that has already been gauge-fixed, and the fixing is worth stating because it is the reason the four-dimensional propagator carries a proper-time integral at all. A relativistic worldline is **reparametrisation invariant**: the action
 
 $$
-S[x,e] = \int_0^1 d\tau\left[\frac{\dot{x}^\mu\dot{x}_\mu}{4e(\tau)} - e(\tau)\,\mu^2\right]
+S[x,e] = \int_0^1 d\tau\left[\frac{dx^{\mu}/d\tau \,dx_{\mu}/d\tau}{4e(\tau)} - e(\tau)\,\mu^2\right]
 $$
 
 depends on the worldline only through its image, the auxiliary field $e(\tau)$ (the **einbein**) transforming as a density; the parameter $\tau$ has no physical meaning. In the path integral one does not fix $e$ but integrates over it, and the integral over the constant modes of $e$ is precisely the proper-time integral: writing $e(\tau) = T$ for the constant mode (the other modes can be gauged to zero and divide out the volume of the reparametrisation group), the action becomes
 
 $$
-S = \frac{1}{4T}\int_0^1 \dot{x}^\mu\dot{x}_\mu\,d\tau - \mu^2 T ,
+S = \frac{1}{4T}\int_0^1 dx^{\mu}/d\tau \,dx_{\mu}/d\tau\,d\tau - \mu^2 T ,
 $$
 
 which is the proper-time exponent of the previous sections, with $T$ identified as the total proper time. The fluctuations of the material trajectory $x(\tau)$ about the straight line — equivalently, in the Fourier form used above, the four-dimensional Gaussian integral over $p$ — produce the $T^{-2}$ prefactor $\mathcal{N}(T)$ of the free kernel.
@@ -250,7 +250,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(i\not\partial - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (i\not\partial + mc/\hbar)\Delta_F$, the identity following from $(\not p - mc/\hbar)(\not p + mc/\hbar) = p^2 - m^2c^2/\hbar^2$. In the **spinning-worldline** way, an odd Grassmann variable $\psi^\mu$ is added at each point with kinetic term $\frac{i}{2}\psi^\mu\dot\psi_\mu$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 g^{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator $S_F$, the matrix-valued Green's function satisfying $(i\not\partial - mc/\hbar)S_F = i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{M}_-$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operator: $S_F \propto (i\not\partial + mc/\hbar)\Delta_F$, the identity following from $(\not p - mc/\hbar)(\not p + mc/\hbar) = p^2 - m^2c^2/\hbar^2$. In the **spinning-worldline** way, an odd Grassmann variable $\psi^\mu$ is added at each point with kinetic term $\frac{i}{2}\psi^\mu\,d\psi_{\mu}/d\tau$; quantisation gives $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\}=\frac12 g^{\mu\nu}I$, whose products generate the Clifford algebra $\mathrm{Cl}_{1,3}$; the path integral over $\psi$ is the Clifford-valued spin factor $\Phi[x]$; and the full worldline integral reproduces the Dirac propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
 In the biquaternion framework, the odd variable is the generator of the Clifford algebra and the biquaternion algebra is its even part, $\mathsf{M}_4(\mathbb{B}) = \mathrm{Cl}_{1,3}^{+}$; the spin factor is the path-ordered Clifford product, even part in $\mathsf{M}_4(\mathbb{B})$, odd part a dressing of the boundary spinors; and composing the first-order operator with its conjugate returns the scalar Klein–Gordon operator — in momentum space $(\not p - \mu)(\not p + \mu) = p^2 - \mu^2$, the identity of the notation table below; the scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two chiral components, the corners carry the weight $i\epsilon m/\hbar$ and are the off-diagonal mass insertions, and the continuum limit is the two-dimensional Dirac propagator.
 
@@ -261,21 +261,21 @@ In the biquaternion framework, the odd variable is the generator of the Clifford
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+}$ |
 | $\mathbb{M}_-$ | Anti-Hermitian (material) sector; the worldline position |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric (level-3 tool) |
-| $\not\partial = \gamma^\mu\partial_\mu$ | Slash (first-order Dirac operator) |
+| $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ | Slash (first-order Dirac operator) |
 | $S_F(x-x')$ | Dirac (Feynman) propagator |
 | $\Delta_F(x-x')$ | Scalar (Klein–Gordon) Feynman propagator |
 | $(i\not\partial - mc/\hbar)S_F = i\delta^{(4)}$ | Propagator equation |
 | $(\not p - mc/\hbar)(\not p + mc/\hbar) = p^2 - m^2c^2/\hbar^2$ | Dirac square (momentum space) |
 | $T$ | Proper time (Schwinger parameter) |
-| $x(\tau)$, $\dot x^\mu$ | Worldline and its tangent |
-| $S_0[x] = \int_0^T d\tau\left(\tfrac14\dot x^\mu\dot x_\mu - m^2c^2/\hbar^2\right)$ | Scalar worldline action |
+| $x(\tau)$, $dx^{\mu}/d\tau$ | Worldline and its tangent |
+| $S_0[x] = \int_0^T d\tau\left(\tfrac14dx^{\mu}/d\tau \,dx_{\mu}/d\tau - m^2c^2/\hbar^2\right)$ | Scalar worldline action |
 | $\psi^\mu(\tau)$ | Grassmann (spin) worldline variable |
 | $\{\psi^{\mathrm{op}\mu},\psi^{\mathrm{op}\nu}\} = \tfrac12 g^{\mu\nu}I$ | Clifford algebra from the odd variable |
 | $\Phi[x]$ | Spin factor (Clifford-valued path-ordered weight) |
 | $K_{RR}, K_{RL}, K_{LR}, K_{LL}$ | Checkerboard propagator matrix |
 | $i\epsilon m/\hbar$ per corner | Checkerboard corner weight |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternion mass pair |
-| $\Box = \partial_{ict}^2 + \Delta$ | Series d'Alembertian |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | Series d'Alembertian |
 
 ## Further Reading
 

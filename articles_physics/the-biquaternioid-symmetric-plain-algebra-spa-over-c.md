@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Plain Algebra (SPA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Plain Algebra*.
-- **The unit.** $e_0$ is a two-sided identity, so the structure is one of the two structures of the space with a two-sided unit. Owner: *Introduction to the Symmetric Plain Algebra*.
+- **The unit.** $e_t$ is a two-sided identity, so the structure is one of the two structures of the space with a two-sided unit. Owner: *Introduction to the Symmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the trace form read on the square — and the invertibility criterion of the symmetrised product. Owner: *Norm and Invertibility in the Symmetric Plain Algebra*.
 - **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -53,7 +53,7 @@ The biquaternioid symmetric plain algebra is the structure $\tilde P\star\tilde 
 |---|---|
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetric plain product, $\mathrm{SPA}$ |
 | $\tilde P\star\tilde Q=\tilde Q\star\tilde P$ | commutativity; the absence of orientation |
-| $e_0$ | the two-sided unit of the structure |
+| $e_t$ | the two-sided unit of the structure |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the trace form; invariant and indefinite |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace, twice the scalar part |
 | $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]$ | the order defects; the generators of the block, of dimension three |

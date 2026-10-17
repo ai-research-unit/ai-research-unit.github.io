@@ -13,10 +13,10 @@ The Clifford action and the adjoint are *The Adjoint of the One-Sided Action wit
 
 ### Definition
 
-**Definition.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial_1,\dots,\partial_m$ be first-order operators on $S$ with formal adjoints $\partial_j^{*} = -\partial_j$. The **Dirac operator** is
+**Definition.** Let $S$ be a Hermitian Clifford module over $\mathrm{Cl}(V,\mathfrak{Q})$ with form $(\cdot,\cdot)$, let $e_1,\dots,e_m$ be an orthonormal frame of $V$, and let $\partial/\partial x_1,\dots,\partial/\partial x_m$ be first-order operators on $S$ with formal adjoints $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$. The **Dirac operator** is
 
 $$
-D = \sum_{j=1}^{m} \rho(e_j)\,\partial_j ,
+D = \sum_{j=1}^{m} \rho(e_j)\,\partial/\partial x_j ,
 $$
 
 where $\rho$ is the one-sided Clifford action. The operator $D^2$ is the **Hermitian square**.
@@ -31,7 +31,7 @@ $$
 D^{*} = D .
 $$
 
-**Proof.** By the composite rule of *The Adjoint of the One-Sided Action with Hermitian Adjoint*, $(\rho(e_j)\partial_j)^{*} = \partial_j^{*}\rho(e_j^{\dagger}) = (-\partial_j)(-\rho(e_j)) = \rho(e_j)\partial_j$, the two sign flips cancelling; summing gives $D^{*} = D$.
+**Proof.** By the composite rule of *The Adjoint of the One-Sided Action with Hermitian Adjoint*, $(\rho(e_j)\partial/\partial x_j)^{*} = (\partial/\partial x_j)^{*}\rho(e_j^{\dagger}) = (-\partial/\partial x_j)(-\rho(e_j)) = \rho(e_j)\partial/\partial x_j$, the two sign flips cancelling; summing gives $D^{*} = D$.
 
 **Corollary (the reality and the orthogonality of the spectrum).** A formally self-adjoint operator has real spectrum; on a finite-dimensional Hermitian space, and in the spectral problem of a self-adjoint operator in general, the eigenspaces are mutually orthogonal and the eigenvectors form an orthonormal basis. These are the standard consequences of self-adjointness with respect to a Hermitian form, and the spectral theory is *Unbounded Operators and Spectral Measures*; the finite-dimensional case is *Self-Adjoint and Skew Operators with Hermitian Adjoint* and *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*.
 
@@ -92,11 +92,11 @@ so $D_{\mathrm{alg}}$ is a skew-adjoint operator with purely imaginary spectrum 
 
 **Remark (the sign bookkeeping).** The sign of $\sum_jq(e_j)$ is the whole content of the positivity: the Dirac element squares to the **negative** of the sum of the squares of the frame, which is positive exactly in the definite case, and the Hermitian square $D^{*}D$ is the positive operator $-\sum_jq(e_j)\,\mathrm{id}$. For an indefinite form the sum can vanish — the isotropic case — and the Dirac element is then nilpotent up to the metric, which is the algebraic form of the failure of ellipticity.
 
-**Example (the biquaternion algebra).** In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$ with the frame $e_1,e_2,e_3$ of square $-1$, the Dirac element $D_{\mathrm{alg}} = L_{e_1}+L_{e_2}+L_{e_3}$ is skew-adjoint with $D_{\mathrm{alg}}^{2} = -3\,\mathrm{id}$ and $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = 3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and the eigen-spinors form an orthonormal basis of $\mathbb{B}$ for the form $\mathrm{Sc}(x^{\dagger}y)$. This is the smallest definite model with a non-abelian spin group, and it realises the spectral gap explicitly.
+**Example (the biquaternion algebra).** In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}$ with the frame $\vec e_x,\vec e_y,\vec e_z$ of square $-1$, the Dirac element $D_{\mathrm{alg}} = L_{\vec e_x}+L_{\vec e_y}+L_{\vec e_z}$ is skew-adjoint with $D_{\mathrm{alg}}^{2} = -3\,\mathrm{id}$ and $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = 3\,\mathrm{id}$; the real operator $iD_{\mathrm{alg}}$ is self-adjoint with spectrum $\{\pm\sqrt3\}$ and the eigen-spinors form an orthonormal basis of $\mathbb{B}$ for the form $\mathrm{Sc}(x^{\dagger}y)$. This is the smallest definite model with a non-abelian spin group, and it realises the spectral gap explicitly.
 
 ## Summary
 
-A **Dirac operator** $D = \sum_j\rho(e_j)\partial_j$ on a Hermitian Clifford module is the product of two skew-adjoint factors, the Clifford coefficient $\rho(e_j)^{*} = -\rho(e_j)$ and the first-order operator $\partial_j^{*} = -\partial_j$; the two sign flips cancel and $D^{*} = D$, so $D$ is **formally self-adjoint** with respect to the module form, with real spectrum and orthogonal eigenspinors. Its **Hermitian square** is positive, $(D^{2}s,s) = \lVert Ds\rVert^{2}\ge0$, its kernel is the space of **harmonic spinors** with a positive definite form, and the module splits orthogonally as $S = \ker D\oplus\operatorname{im}D$; with a chirality grading the operator is odd and the index is the supertrace of the chirality on the kernel, computed geometrically by the Atiyah–Singer theorem of Part IV.
+A **Dirac operator** $D = \sum_j\rho(e_j)\partial/\partial x_j$ on a Hermitian Clifford module is the product of two skew-adjoint factors, the Clifford coefficient $\rho(e_j)^{*} = -\rho(e_j)$ and the first-order operator $(\partial/\partial x_j)^{*} = -\partial/\partial x_j$; the two sign flips cancel and $D^{*} = D$, so $D$ is **formally self-adjoint** with respect to the module form, with real spectrum and orthogonal eigenspinors. Its **Hermitian square** is positive, $(D^{2}s,s) = \lVert Ds\rVert^{2}\ge0$, its kernel is the space of **harmonic spinors** with a positive definite form, and the module splits orthogonally as $S = \ker D\oplus\operatorname{im}D$; with a chirality grading the operator is odd and the index is the supertrace of the chirality on the kernel, computed geometrically by the Atiyah–Singer theorem of Part IV.
 
 The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_jL_{e_j}$ on the regular module, which is skew-adjoint with $D_{\mathrm{alg}}^{2} = (\sum_jq(e_j))\mathrm{id}$; in the negative definite case $D_{\mathrm{alg}}^{2} = -m\,\mathrm{id}$, the Hermitian square $D_{\mathrm{alg}}^{*}D_{\mathrm{alg}} = m\,\mathrm{id}$ is positive, the spectrum of $D_{\mathrm{alg}}$ is $\{\pm i\sqrt m\}$, the operator is invertible with no harmonic spinors, and the real self-adjoint operator $iD_{\mathrm{alg}}$ has the spectral gap $m$. The biquaternion algebra with the frame of square $-1$ realises the model with gap $3$ and a non-abelian spin group. The analytic theory — domains, closures, essential self-adjointness, the spectrum of the flat model, the compact resolvent and the index — is *Dirac Differential Operators*.
 
@@ -105,7 +105,7 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 | Symbol | Meaning |
 |---|---|
 | $\rho$, $(\cdot,\cdot)$ | One-sided Clifford action and module form |
-| $D = \sum_j\rho(e_j)\partial_j$ | Dirac operator, $\partial_j^{*}=-\partial_j$ |
+| $D = \sum_j\rho(e_j)\partial/\partial x_j$ | Dirac operator, $(\partial/\partial x_j)^{*}=-\partial/\partial x_j$ |
 | $D^{*} = D$ | Formal self-adjointness |
 | $(D^{2}s,s) = \lVert Ds\rVert^{2}\ge0$ | Positivity of the Hermitian square |
 | $\ker D$ | Harmonic spinors |

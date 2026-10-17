@@ -2,10 +2,10 @@
 
 ## Introduction
 
-The general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra* carries a degree-two structure, and it is the **quaternionic bilinear form** of the space: the polar form of the norm, equivalently the central coefficient of the symmetrisation,
+The general quaternionic bilinear product $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ of *Introduction to the General Quaternionic Algebra* carries a degree-two structure, and it is the **quaternionic bilinear form** of the space: the polar form of the norm, equivalently the central coefficient of the symmetrisation,
 
 $$
-\langle\tilde p,\tilde q\rangle_{\natural} = \beta(\tilde p,\tilde q) = \tfrac12\bigl(\langle\tilde p+\tilde q\rangle_{\natural} - \langle\tilde p\rangle_{\natural} - \langle\tilde q\rangle_{\natural}\bigr) = p_0q_0 + \vec p \cdot \vec q , \qquad \tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0 .
+\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \beta(\tilde q_1,\tilde q_2) = \tfrac12\bigl(\langle\tilde q_1+\tilde q_2\rangle_{\natural} - \langle\tilde q_1\rangle_{\natural} - \langle\tilde q_2\rangle_{\natural}\bigr) = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 , \qquad \tilde q_1 \bullet \tilde q_2 = \beta(\tilde q_1,\tilde q_2)e_t .
 $$
 
 The form is one of the two degree-two forms of the quaternion real space (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*), and its diagonal is the second of the two algebraic norms (*The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*); it is quoted from those articles and not re-derived.
@@ -17,53 +17,53 @@ The structure is trivial in one sense and not in another. Over $\mathbb{R}$ the 
 **Definition.** The **quaternionic bilinear form** of the block is the symmetric $\mathbb{R}$-bilinear form
 
 $$
-\langle\tilde p,\tilde q\rangle_{\natural} = p_0q_0 + \vec p \cdot \vec q ,
+\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2 ,
 $$
 
-the polar form of the quaternionic bilinear algebraic norm $\langle\tilde p\rangle_{\natural} = \langle\tilde p,\tilde p\rangle_{\natural} = p_0^2 + \vec p \cdot \vec p$.
+the polar form of the quaternionic bilinear algebraic norm $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural} = q_t^2 + \vec q \cdot \vec q$.
 
-**Theorem (the class of the form).** The form is symmetric, $\mathbb{R}$-bilinear, positive definite and non-degenerate. It is the symmetrisation of the product in the sense that $\tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p) = \langle\tilde p,\tilde q\rangle_{\natural}e_0$; it is the quadratic form associated with the product by the standard polarisation, and its diagonal is the norm that the product carries.
+**Theorem (the class of the form).** The form is symmetric, $\mathbb{R}$-bilinear, positive definite and non-degenerate. It is the symmetrisation of the product in the sense that $\tfrac12(\tilde q_1 \star \tilde q_2 + \tilde q_2 \star \tilde q_1) = \langle\tilde q_1,\tilde q_2\rangle_{\natural}e_t$; it is the quadratic form associated with the product by the standard polarisation, and its diagonal is the norm that the product carries.
 
-*Proof.* The coordinate expression is symmetric and bilinear; positive definiteness is the sum of squares $p_0^2 + p_1^2 + p_2^2 + p_3^2$, which vanishes only at $\tilde p = 0$; non-degeneracy follows, since a definite form has trivial radical. The identification with the symmetrisation is the lemma of *The Symmetrised Quaternionic Product and the Hermitian Subspace*.
+*Proof.* The coordinate expression is symmetric and bilinear; positive definiteness is the sum of squares $q_t^2 + q_x^2 + q_y^2 + q_z^2$, which vanishes only at $\tilde q = 0$; non-degeneracy follows, since a definite form has trivial radical. The identification with the symmetrisation is the lemma of *The Symmetrised Quaternionic Product and the Hermitian Subspace*.
 
-**Remark.** The form is the Euclidean inner product of the coordinate space $\mathbb{H} \cong \mathbb{R}^4$ read in the basis of units, so its Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity and its signature is $(4,0)$.
+**Remark.** The form is the Euclidean inner product of the coordinate space $\mathbb{H} \cong \mathbb{R}^4$ read in the basis of units, so its Gram matrix in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ is the identity and its signature is $(4,0)$.
 
 ## The Isotropic Elements
 
-**Definition.** An element $\tilde p$ is **isotropic** for the form when $\langle\tilde p,\tilde p\rangle_{\natural} = 0$, that is when $\langle\tilde p\rangle_{\natural} = 0$.
+**Definition.** An element $\tilde q$ is **isotropic** for the form when $\langle\tilde q,\tilde q\rangle_{\natural} = 0$, that is when $\langle\tilde q\rangle_{\natural} = 0$.
 
-**Theorem (no isotropic element but zero).** Over $\mathbb{R}$ the only isotropic element of the quaternionic form is $\tilde p = 0$. The form is anisotropic, and the isotropic set is the origin of $\mathbb{H}$.
+**Theorem (no isotropic element but zero).** Over $\mathbb{R}$ the only isotropic element of the quaternionic form is $\tilde q = 0$. The form is anisotropic, and the isotropic set is the origin of $\mathbb{H}$.
 
-*Proof.* $\langle\tilde p\rangle_{\natural}$ is a sum of four squares of real numbers, and a sum of squares of reals vanishes only when every square vanishes.
+*Proof.* $\langle\tilde q\rangle_{\natural}$ is a sum of four squares of real numbers, and a sum of squares of reals vanishes only when every square vanishes.
 
-**Corollary (the radical).** The radical of the form, the set of elements orthogonal to the whole space, is trivial: $\{\tilde p : \langle\tilde p,\tilde q\rangle_{\natural} = 0 \ \text{for every} \ \tilde q\} = \{0\}$. The form is non-degenerate, its Gram matrix is invertible, and there is no isotropic direction and no null line in the block.
+**Corollary (the radical).** The radical of the form, the set of elements orthogonal to the whole space, is trivial: $\{\tilde q_1 : \langle\tilde q_1,\tilde q_2\rangle_{\natural} = 0 \ \text{for every} \ \tilde q_2\} = \{0\}$. The form is non-degenerate, its Gram matrix is invertible, and there is no isotropic direction and no null line in the block.
 
 *Proof.* Positive definiteness gives non-degeneracy at once; explicitly, an element orthogonal to each $e_\mu$ has all four coordinates zero.
 
-**Corollary (the reading on the product).** The form is the exact measure of the division property. An element is a zero divisor of the product exactly when it is isotropic or orthogonal to an isotropic element, and there are none: $\tilde p \star \tilde q = 0$ implies $\langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural} = 0$, hence $\tilde p = 0$ or $\tilde q = 0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The absence of isotropic elements and the absence of zero divisors are the same statement about the form.
+**Corollary (the reading on the product).** The form is the exact measure of the division property. An element is a zero divisor of the product exactly when it is isotropic or orthogonal to an isotropic element, and there are none: $\tilde q_1 \star \tilde q_2 = 0$ implies $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = 0$, hence $\tilde q_1 = 0$ or $\tilde q_2 = 0$ (*Norm and Invertibility in the General Quaternionic Algebra*). The absence of isotropic elements and the absence of zero divisors are the same statement about the form.
 
 ## The Comparison with the Plain Form
 
-The plain product of the same space carries the other degree-two form, the **plain bilinear form**, whose diagonal is the plain algebraic norm $\langle\tilde p\rangle=p_0^2 - \vec p \cdot \vec p$ and whose signature is $(1,3)$ (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*).
+The plain product of the same space carries the other degree-two form, the **plain bilinear form**, whose diagonal is the plain algebraic norm $\langle\tilde q\rangle=q_t^2 - \vec q \cdot \vec q$ and whose signature is $(1,3)$ (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*).
 
 | | quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ | plain form $\langle\cdot,\cdot\rangle$ |
 |---|---|---|
-| coordinate expression | $p_0q_0 + \vec p \cdot \vec q$ | $p_0q_0 - \vec p \cdot \vec q$ |
+| coordinate expression | $q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2$ | $q_{1t}q_{2t} - \vec q_1 \cdot \vec q_2$ |
 | signature | $(4,0)$ | $(1,3)$ |
 | definiteness | positive definite | indefinite |
-| isotropic elements | $\{0\}$ only | the cone $p_0^2 = \vec p \cdot \vec p$ |
+| isotropic elements | $\{0\}$ only | the cone $q_t^2 = \vec q \cdot \vec q$ |
 | radical | $\{0\}$ | $\{0\}$ |
 | Gram matrix | $\mathrm I_4$ | $\mathrm{diag}(1,-1,-1,-1)$ |
 
-**Theorem (the two forms disagree).** The two forms have the same radical and opposite definiteness. The isotropic set of the plain form is the **null cone** $p_0^2 = \vec p \cdot \vec p$, a set of real dimension three in $\mathbb{H} \cong \mathbb{R}^4$; the isotropic set of the quaternionic form is the origin alone. Both forms are non-degenerate and their Gram matrices are invertible.
+**Theorem (the two forms disagree).** The two forms have the same radical and opposite definiteness. The isotropic set of the plain form is the **null cone** $q_t^2 = \vec q \cdot \vec q$, a set of real dimension three in $\mathbb{H} \cong \mathbb{R}^4$; the isotropic set of the quaternionic form is the origin alone. Both forms are non-degenerate and their Gram matrices are invertible.
 
-*Proof.* The two coordinate expressions differ in the sign of the vector part, so their signatures are $(4,0)$ and $(1,3)$; the null cone of a form of signature $(1,3)$ is the level set $p_0^2 - \vec p \cdot \vec p = 0$, nonempty and three-dimensional, and the definite form has no nonzero zero.
+*Proof.* The two coordinate expressions differ in the sign of the vector part, so their signatures are $(4,0)$ and $(1,3)$; the null cone of a form of signature $(1,3)$ is the level set $q_t^2 - \vec q \cdot \vec q = 0$, nonempty and three-dimensional, and the definite form has no nonzero zero.
 
 **Remark.** The article exists for this table and for nothing else. On one and the same four-dimensional real space there are two degree-two forms, one with an isotropic cone and one without, and the two arise from the two bilinear products of the space: the quaternionic product symmetrises to the definite one, the plain product to the indefinite one. The choice of the product is therefore also the choice of the form, and the definiteness of the quaternionic form is the algebraic face of the division property of $\mathbb{H}$.
 
 ## The Relation to the Norm
 
-**Theorem (multiplicativity and the form).** The product scales the form by the product of the norms: $\langle\tilde p \star \tilde q\rangle_{\natural} = \langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$, so the product is a similarity of the form with ratio $\langle\tilde q\rangle_{\natural}$ on the left factor and $\langle\tilde p\rangle_{\natural}$ on the right one. The group of linear maps $T$ of $\mathbb{H}$ preserving the form is given algebraically by the matrix condition $T^{\mathsf T}T = \mathrm I_4$.
+**Theorem (multiplicativity and the form).** The product scales the form by the product of the norms: $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, so the product is a similarity of the form with ratio $\langle\tilde q_2\rangle_{\natural}$ on the left factor and $\langle\tilde q_1\rangle_{\natural}$ on the right one. The group of linear maps $T$ of $\mathbb{H}$ preserving the form is given algebraically by the matrix condition $T^{\mathsf T}T = \mathrm I_4$.
 
 *Proof.* Multiplicativity is the theorem of *Norm and Invertibility in the General Quaternionic Algebra*; the matrix condition is the preservation of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$, whose Gram matrix is $\mathrm I_4$; a linear map preserves $\langle\cdot,\cdot\rangle_{\natural}$ exactly when its matrix $T$ satisfies $T^{\mathsf T}T = \mathrm I_4$.
 
@@ -73,16 +73,16 @@ The plain product of the same space carries the other degree-two form, the **pla
 
 ## Summary
 
-The form of the general quaternionic algebra is the quaternionic bilinear form $\langle\tilde p,\tilde q\rangle_{\natural} = p_0q_0 + \vec p \cdot \vec q$, the polar form of the norm and the central coefficient of the symmetrisation. It is symmetric, positive definite, non-degenerate, of signature $(4,0)$ and Gram matrix $\mathrm I_4$; its only isotropic element is $0$ and its radical is trivial, so the isotropic structure of the block is empty. The plain form of the same space is the same expression with the sign of the vector part reversed, of signature $(1,3)$ and with the null cone $p_0^2 = \vec p \cdot \vec p$ as its isotropic set; the two forms have the same radical, opposite definiteness, and they are the degree-two structures of the two bilinear products of the space. The form scales under the product, $\langle\tilde p \star \tilde q\rangle_{\natural} = \langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$, its shells are the root sets of the squares, and its preservation is the matrix condition $T^{\mathsf T}T = \mathrm I_4$. Over $\mathbb{C}$ the form becomes isotropic, with a cone for its isotropic set and zero divisors for the product; the emptiness of the isotropic structure is therefore a property of the real member alone.
+The form of the general quaternionic algebra is the quaternionic bilinear form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2$, the polar form of the norm and the central coefficient of the symmetrisation. It is symmetric, positive definite, non-degenerate, of signature $(4,0)$ and Gram matrix $\mathrm I_4$; its only isotropic element is $0$ and its radical is trivial, so the isotropic structure of the block is empty. The plain form of the same space is the same expression with the sign of the vector part reversed, of signature $(1,3)$ and with the null cone $q_t^2 = \vec q \cdot \vec q$ as its isotropic set; the two forms have the same radical, opposite definiteness, and they are the degree-two structures of the two bilinear products of the space. The form scales under the product, $\langle\tilde q_1 \star \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, its shells are the root sets of the squares, and its preservation is the matrix condition $T^{\mathsf T}T = \mathrm I_4$. Over $\mathbb{C}$ the form becomes isotropic, with a cone for its isotropic set and zero divisors for the product; the emptiness of the isotropic structure is therefore a property of the real member alone.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\langle\tilde p,\tilde q\rangle_{\natural} = p_0q_0 + \vec p \cdot \vec q$ | the quaternionic bilinear form of the block |
-| $\langle\tilde p\rangle_{\natural} = \langle\tilde p,\tilde p\rangle_{\natural} = \sum_\mu p_\mu^2$ | its diagonal, the quaternionic bilinear algebraic norm |
-| $\langle\tilde p,\tilde q\rangle = p_0q_0 - \vec p \cdot \vec q$ | the plain bilinear form of the same space |
-| isotropic element | an element with $\langle\tilde p\rangle_{\natural} = 0$, here only $0$ |
+| $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t} + \vec q_1 \cdot \vec q_2$ | the quaternionic bilinear form of the block |
+| $\langle\tilde q\rangle_{\natural} = \langle\tilde q,\tilde q\rangle_{\natural} = \sum_\mu q_\mu^2$ | its diagonal, the quaternionic bilinear algebraic norm |
+| $\langle\tilde q_1,\tilde q_2\rangle = q_{1t}q_{2t} - \vec q_1 \cdot \vec q_2$ | the plain bilinear form of the same space |
+| isotropic element | an element with $\langle\tilde q\rangle_{\natural} = 0$, here only $0$ |
 | radical | the set orthogonal to the whole space, here $\{0\}$ |
 | shell | a level set $N = \lambda$ of the form |
 

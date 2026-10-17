@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **general quaternionic sesquimultiplication**
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}
-=\bigl[P_0Q_0+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q},
+=\bigl[P_tQ_t+(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q},
 $$
 the product of the natural conjugate of the first factor with the conjugate of the second
 (*Introduction to the General Quaternionic Sesqualgebra*). It is the block with
@@ -84,11 +84,11 @@ second is the same computation with $\tilde X^{\natural}\tilde Q^{*}=0$, whose l
 by $\tilde Q^{*}$ has the same rank as that by $\tilde Q^{\natural}$. They are distinct by the
 examples below, whose second generators differ.
 
-**Example.** For the non-pure zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the two
+**Example.** For the non-pure zero divisor $\tilde Q=e_t+i\vec e_x$, of central square $1-1=0$, the two
 annihilators are
 $$
-A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2-ie_3\},\qquad
-B_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\},
+A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y-i\vec e_z\},\qquad
+B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\},
 $$
 two distinct planes sharing the line $\mathbb{C}\tilde Q$.
 
@@ -127,8 +127,8 @@ two sides by its single involution. In the meeting of the two signs the coincide
 
 **On the centre the annihilator is $\{0\}$; on the vector subspace a nonzero element has a complex-plane annihilator exactly when its vector part is isotropic; and on the Hermitian and anti-Hermitian subspaces the two annihilators meet in the conjugate of the plain annihilator, the distinction of the sides being read off the anti-Hermitian directions.**
 
-**The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
-$L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
+**The centre.** A nonzero central element $\tilde P=\lambda e_t$ has
+$L_{\lambda e_t}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
 $\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
 annihilator is $\{0\}$.
 
@@ -149,8 +149,8 @@ quaternionic sesquimultiplication $\tilde P\star\tilde X=\tilde P^{\natural}\til
 both the natural conjugation and the star, and its two annihilators of an element are **distinct**.
 The left annihilator is the star of the plain annihilator of $\tilde P^{\natural}$, and the right
 annihilator is the corresponding object of the other side; both are $\{0\}$ off the cone and
-complex planes on the cone, and for $\tilde Q=e_0+ie_1$ they are the distinct planes spanned by
-$\tilde Q$ and $e_2\mp ie_3$. The block is the meeting point of the two general families, and the
+complex planes on the cone, and for $\tilde Q=e_t+i\vec e_x$ they are the distinct planes spanned by
+$\tilde Q$ and $\vec e_y\mp i\vec e_z$. The block is the meeting point of the two general families, and the
 meeting of the two involution signs is exactly what makes the two sides two again.
 
 ## Summary of Notation

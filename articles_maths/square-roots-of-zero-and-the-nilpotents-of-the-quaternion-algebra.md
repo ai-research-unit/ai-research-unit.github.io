@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde p\tilde q$ of *Introduction to the Quaternion Algebra*, the multiplication of the quaternion algebra. That product is the one read throughout this article.
+The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the quaternion product $\tilde q_1\tilde q_2$ of *Introduction to the Quaternion Algebra*, the multiplication of the quaternion algebra. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\xi\in\mathbb{H}$ with
 
@@ -10,13 +10,13 @@ $$
 \tilde\xi^2=0.
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_0$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\xi^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_t$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\xi^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
 
-**The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_0^2-|\vec q|^2]e_0+2q_0\vec q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_0[q_0^2-3|\vec q|^2]e_0+[3q_0^2-|\vec q|^2]\vec q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
+**The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_t^2-|\vec q|^2]e_t+2q_t\vec q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_t[q_t^2-3|\vec q|^2]e_t+[3q_t^2-|\vec q|^2]\vec q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
 
-The article is algebraic. The zero-divisor set, its families and the criterion on the norm are *Zero Divisors of the Quaternion Algebra*; the roots of $+e_0$ and the idempotents are *Square Roots of One and the Idempotents of the Quaternion Algebra*; the general root problem is *Square Roots of a General Element in the Quaternion Algebra*; and the folding of the empty classes is *The Specificities of the Quaternion Algebra*.
+The article is algebraic. The zero-divisor set, its families and the criterion on the norm are *Zero Divisors of the Quaternion Algebra*; the roots of $+e_t$ and the idempotents are *Square Roots of One and the Idempotents of the Quaternion Algebra*; the general root problem is *Square Roots of a General Element in the Quaternion Algebra*; and the folding of the empty classes is *The Specificities of the Quaternion Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_\nu^2=-e_t$ and $\vec e_\mu\vec e_\nu=-\vec e_\nu\vec e_\mu$ for $\mu\neq\nu$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{\nu\in\{x,y,z\}}q_\nu\vec e_\nu$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_t=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_te_t-\vec q$, and the **norm** is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the Quaternion Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, so there is no zero divisor. The scalar line $\mathbb{R}e_t$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Algebras: A General Introduction*. Throughout this article the square is the one of the quaternion product, the multiplication of the algebra.
 
@@ -31,26 +31,26 @@ A **root of $0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=0$, t
 Write the root in scalar and vector parts,
 
 $$
-\tilde\xi=\xi_0e_0+\vec\xi,\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
+\tilde\xi=\xi_te_t+\vec\xi,\qquad \vec\xi=\xi_x\vec e_x+\xi_y\vec e_y+\xi_z\vec e_z,\qquad \xi_k\in\mathbb{R}.
 $$
 
-**Proposition (the reduction at the value $0$).** For $\tilde\xi=\xi_0e_0+\vec\xi$,
+**Proposition (the reduction at the value $0$).** For $\tilde\xi=\xi_te_t+\vec\xi$,
 
 $$
 \tilde\xi^2=0\qquad\Longleftrightarrow\qquad
 \begin{cases}
-2\xi_0\vec\xi=0,\\[2pt]
-\xi_0^2-|\vec\xi|^2=0.
+2\xi_t\vec\xi=0,\\[2pt]
+\xi_t^2-|\vec\xi|^2=0.
 \end{cases}
 $$
 
-*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the Quaternion Algebra* to $\lambda=0$: the square is $\tilde\xi^2=(\xi_0^2-|\vec\xi|^2)e_0+2\xi_0\vec\xi$, and the element vanishes exactly when both its parts do.
+*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the Quaternion Algebra* to $\lambda=0$: the square is $\tilde\xi^2=(\xi_t^2-|\vec\xi|^2)e_t+2\xi_t\vec\xi$, and the element vanishes exactly when both its parts do.
 
-Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\vec\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_0=0$, or it is a real scalar, $\vec\xi=0$.
+Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_t=0$ or $\vec\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_t=0$, or it is a real scalar, $\vec\xi=0$.
 
 ### The Scalar Case
 
-In the scalar case $\tilde\xi=\xi_0e_0$ and the scalar equation reads $\xi_0^2=0$; since $\mathbb{R}$ is a field, $\xi_0=0$. The root in this case is the single element
+In the scalar case $\tilde\xi=\xi_te_t$ and the scalar equation reads $\xi_t^2=0$; since $\mathbb{R}$ is a field, $\xi_t=0$. The root in this case is the single element
 
 $$
 \tilde\xi=0,
@@ -66,7 +66,7 @@ $$
 -|\vec\xi|^2=0,
 $$
 
-that is $\vec\xi=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\vec q_a|^2e_0$, which vanishes only at the origin.
+that is $\vec\xi=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\vec q|^2e_t$, which vanishes only at the origin.
 
 ### Statement of the Theorem
 
@@ -76,15 +76,15 @@ $$
 \Sigma_0=\{0\}.
 $$
 
-*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_0=0$; the pure case gives $\vec\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
+*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_t=0$; the pure case gives $\vec\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
 
 ### Verification
 
-The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\vec\xi|^2=0$ and the scalar branch $\xi_0^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $e_1$ has square $e_1^2=-e_0\neq0$, and the element $e_0+e_1$ has square $e_0+2e_1+e_1^2=2e_1\neq0$.
+The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\vec\xi|^2=0$ and the scalar branch $\xi_t^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $\vec e_x$ has square $\vec e_x^2=-e_t\neq0$, and the element $e_t+\vec e_x$ has square $e_t+2\vec e_x+\vec e_x^2=2\vec e_x\neq0$.
 
 ### The Roots of Zero and the Nilpotents
 
-The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The roots of $0$ here are the origin alone, so the nilpotents are none. A nonzero root of $0$ would be a square-zero element, hence a zero divisor annihilating itself; the algebra has no zero divisor, so no such element exists. The behaviour is the opposite of the roots of $+e_0$, which are units of the algebra (*Square Roots of One and the Idempotents of the Quaternion Algebra*), and it is the degenerate case of the general root problem at the central value $0$ (*Square Roots of a General Element in the Quaternion Algebra*).
+The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The roots of $0$ here are the origin alone, so the nilpotents are none. A nonzero root of $0$ would be a square-zero element, hence a zero divisor annihilating itself; the algebra has no zero divisor, so no such element exists. The behaviour is the opposite of the roots of $+e_t$, which are units of the algebra (*Square Roots of One and the Idempotents of the Quaternion Algebra*), and it is the degenerate case of the general root problem at the central value $0$ (*Square Roots of a General Element in the Quaternion Algebra*).
 
 ## The Nilpotents
 
@@ -93,7 +93,7 @@ The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The root
 The **nilpotents** of the algebra are the nonzero elements whose square vanishes. The class is empty, and the reason is one line long: the square of a general element closes in two terms, one central and one along the vector part,
 
 $$
-\tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q,
+\tilde q^2=\bigl[q_t^2-|\vec q|^2\bigr]e_t+2q_t\vec q,
 $$
 
 and the two coefficients cannot vanish together off the origin — the vector term forces the scalar part to vanish, and the central term then forces the vector part to vanish. The complexified block, where the central coefficient is a difference of *complex* squares, does the opposite, and its nilpotents fill the pure isotropic cone of real dimension four, the *pure* family of its zero divisors, the other family being the multiples of the nontrivial idempotents. Over $\mathbb{R}$ both families are empty.
@@ -114,15 +114,15 @@ Were the class not empty, it would be a conjugation-stable class; as it is, the 
 
 ### The Criterion
 
-**An element is square-zero exactly when it is the origin: the criterion is $q_0=0$ and $\vec q=0$, that is $\tilde q=0$, and over $\mathbb{R}$ the pure elements with isotropic vector part reduce to the origin alone.**
+**An element is square-zero exactly when it is the origin: the criterion is $q_t=0$ and $\vec q=0$, that is $\tilde q=0$, and over $\mathbb{R}$ the pure elements with isotropic vector part reduce to the origin alone.**
 
-**Theorem (the criterion for a square-zero element).** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q^2=0$; the scalar part and the vector part both vanish, $q_0=0$ and $\vec q=0$; and $\tilde q=0$.
+**Theorem (the criterion for a square-zero element).** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q^2=0$; the scalar part and the vector part both vanish, $q_t=0$ and $\vec q=0$; and $\tilde q=0$.
 
-*Proof.* The displayed formula expands the square. The two coefficients of the sum, central and vector, must vanish separately. If $q_0\neq0$ then the vector coefficient $2q_0\vec q$ vanishes only for $\vec q=0$, and then the central coefficient is $q_0^2\neq0$, a contradiction; so $q_0=0$. With $q_0=0$ the formula reads $\tilde q^2=-|\vec q|^2e_0$, which vanishes exactly when $|\vec q|^2=q_1^2+q_2^2+q_3^2=0$, a sum of three squares of real numbers, hence exactly when $\vec q=0$. So $\tilde q=0$ is the only square-zero element.
+*Proof.* The displayed formula expands the square. The two coefficients of the sum, central and vector, must vanish separately. If $q_t\neq0$ then the vector coefficient $2q_t\vec q$ vanishes only for $\vec q=0$, and then the central coefficient is $q_t^2\neq0$, a contradiction; so $q_t=0$. With $q_t=0$ the formula reads $\tilde q^2=-|\vec q|^2e_t$, which vanishes exactly when $|\vec q|^2=q_x^2+q_y^2+q_z^2=0$, a sum of three squares of real numbers, hence exactly when $\vec q=0$. So $\tilde q=0$ is the only square-zero element.
 
 **Corollary.** The square-zero set of the algebra is the singleton $\{0\}$, and the nilpotent class — the nonzero square-zero elements — is the empty set. The algebra therefore carries no nilpotent whatever, of index two or of any higher index.
 
-Over the complexified block the same computation passes through the complex bilinear form $(\vec Q,\vec Q)=Q_1^2+Q_2^2+Q_3^2$: the criterion there is $Q_0=0$ and $(\vec Q,\vec Q)=0$, a complex vector part on the isotropic cone, and the nilpotents are the nonzero elements of that cone, of real dimension four. The difference is exactly the passage from the sum of three real squares, which is positive definite, to the sum of three complex squares, which is isotropic on a cone.
+Over the complexified block the same computation passes through the complex bilinear form $(\vec Q,\vec Q)=Q_x^2+Q_y^2+Q_z^2$: the criterion there is $Q_t=0$ and $(\vec Q,\vec Q)=0$, a complex vector part on the isotropic cone, and the nilpotents are the nonzero elements of that cone, of real dimension four. The difference is exactly the passage from the sum of three real squares, which is positive definite, to the sum of three complex squares, which is isotropic on a cone.
 
 ### Index Two
 
@@ -133,14 +133,14 @@ Over the complexified block the same computation passes through the complex bili
 The direct computation of the cube agrees, and it is worth recording because it mirrors the complexified expansion:
 
 $$
-\tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q,\qquad \tilde q^3=q_0\bigl[q_0^2-3|\vec q|^2\bigr]e_0+\bigl[3q_0^2-|\vec q|^2\bigr]\vec q.
+\tilde q^2=\bigl[q_t^2-|\vec q|^2\bigr]e_t+2q_t\vec q,\qquad \tilde q^3=q_t\bigl[q_t^2-3|\vec q|^2\bigr]e_t+\bigl[3q_t^2-|\vec q|^2\bigr]\vec q.
 $$
 
-If $\vec q=0$ then $\tilde q^3=q_0^3e_0$ vanishes only for $q_0=0$; if $\vec q\neq0$ the vanishing of the vector coefficient forces $|\vec q|^2=3q_0^2$, and the central coefficient is then $q_0[q_0^2-9q_0^2]=-8q_0^3$, which vanishes only for $q_0=0$, whereupon $|\vec q|^2=0$, a contradiction. So $\tilde q^3=0$ if and only if $\tilde q=0$, and the same conclusion holds for every higher power.
+If $\vec q=0$ then $\tilde q^3=q_t^3e_t$ vanishes only for $q_t=0$; if $\vec q\neq0$ the vanishing of the vector coefficient forces $|\vec q|^2=3q_t^2$, and the central coefficient is then $q_t[q_t^2-9q_t^2]=-8q_t^3$, which vanishes only for $q_t=0$, whereupon $|\vec q|^2=0$, a contradiction. So $\tilde q^3=0$ if and only if $\tilde q=0$, and the same conclusion holds for every higher power.
 
 ### The Nilpotent Cone Is Empty
 
-The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the quaternion algebra has none (*Algebras: A General Introduction*). Over the complexified block the pure square $\vec Q^2=-(\vec Q,\vec Q)e_0$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
+The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the quaternion algebra has none (*Algebras: A General Introduction*). Over the complexified block the pure square $\vec Q^2=-(\vec Q,\vec Q)e_t$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
 
 ### The Nilpotents and the Zero Divisors
 
@@ -160,9 +160,9 @@ Over $\mathbb{R}$ the proposition has no instance, because there is no nonzero s
 
 **Theorem (the two classes are disjoint).** No element of $\mathbb{H}$ is both an idempotent and a nonzero nilpotent.
 
-*Proof.* An idempotent is $0$ or $e_0$ (*Square Roots of One and the Idempotents of the Quaternion Algebra*). The element $e_0$ is not square-zero, $e_0^2=e_0\neq0$, and no nonzero element is square-zero by the criterion; so no idempotent is a nilpotent.
+*Proof.* An idempotent is $0$ or $e_t$ (*Square Roots of One and the Idempotents of the Quaternion Algebra*). The element $e_t$ is not square-zero, $e_t^2=e_t\neq0$, and no nonzero element is square-zero by the criterion; so no idempotent is a nilpotent.
 
-Over $\mathbb{R}$ the disjointness is total: the idempotents are $0$ and $e_0$, the nilpotent class is empty, and the square-zero set is the single point $0$, whose only member is the idempotent $0$ and not a nilpotent. The complexified block draws the same disjointness between two populated classes, the nilpotent cone and the idempotent family, which meet only at the origin; the difference is that both of its classes have points.
+Over $\mathbb{R}$ the disjointness is total: the idempotents are $0$ and $e_t$, the nilpotent class is empty, and the square-zero set is the single point $0$, whose only member is the idempotent $0$ and not a nilpotent. The complexified block draws the same disjointness between two populated classes, the nilpotent cone and the idempotent family, which meet only at the origin; the difference is that both of its classes have points.
 
 ### The Square-Zero Set and the Remarkable Subspaces
 
@@ -170,50 +170,50 @@ A square-zero element of the complexified block is pure, and its vector part is 
 
 | Remarkable subspace | Square-zero elements |
 |---|---|
-| $\mathbb{R}e_0$, the centre | $0$ alone; a nonzero scalar has $s^2>0$ |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $0$ alone; a nonzero pure element has $\vec q^2=-\lvert\vec q\rvert^2e_0\neq0$ |
+| $\mathbb{R}e_t$, the centre | $0$ alone; a nonzero scalar has $s^2>0$ |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $0$ alone; a nonzero pure element has $\vec q^2=-\lvert\vec q\rvert^2e_t\neq0$ |
 
-The entries are forced by the two restrictions of the norm: on the centre $\langle se_0\rangle_{\natural}=s^2$, positive for $s\neq0$, and on the vector subspace $\langle \vec q\rangle_{\natural}=|\vec q|^2$, positive for $\vec q\neq0$. A zero of the square is thus nowhere but the origin, and both remarkable subspaces carry the same square-zero set as the whole space; the two restrictions of the norm are read in *Norm and Invertibility in the Quaternion Algebra*.
+The entries are forced by the two restrictions of the norm: on the centre $\langle se_t\rangle_{\natural}=s^2$, positive for $s\neq0$, and on the vector subspace $\langle \vec q\rangle_{\natural}=|\vec q|^2$, positive for $\vec q\neq0$. A zero of the square is thus nowhere but the origin, and both remarkable subspaces carry the same square-zero set as the whole space; the two restrictions of the norm are read in *Norm and Invertibility in the Quaternion Algebra*.
 
 ### The Nilpotents and the Central Values
 
-The equation $\tilde q^2=0$ is the third of the three central power equations $\tilde q^2=c\,e_0$ for $c=-1,0,+1$ of *Square Roots of a General Element in the Quaternion Algebra*, and it is the one whose root set contains no nonzero element. The value $+1$ is the companion, its two central roots being the subject of *Square Roots of One and the Idempotents of the Quaternion Algebra*.
+The equation $\tilde q^2=0$ is the third of the three central power equations $\tilde q^2=c\,e_t$ for $c=-1,0,+1$ of *Square Roots of a General Element in the Quaternion Algebra*, and it is the one whose root set contains no nonzero element. The value $+1$ is the companion, its two central roots being the subject of *Square Roots of One and the Idempotents of the Quaternion Algebra*.
 
 **Proposition.** The solutions of $\tilde q^2=0$ are exactly the origin, and the origin is not a nilpotent.
 
 *Proof.* The criterion of §*The Criterion*, equivalently the theorem of §*The Roots of Zero*.
 
-**Corollary.** The root set of $0$ is $\{0\}$ and the root set of $+1$ is $\{\pm e_0\}$, both central; among the three central values it is $c=0$ whose root set is empty of nonzero elements, and the nilpotent class, the class of the nonzero roots of $0$, is empty.
+**Corollary.** The root set of $0$ is $\{0\}$ and the root set of $+1$ is $\{\pm e_t\}$, both central; among the three central values it is $c=0$ whose root set is empty of nonzero elements, and the nilpotent class, the class of the nonzero roots of $0$, is empty.
 
 ## Summary
 
-The square of the algebra is the square, and the criterion is $\tilde q^2=0$ if and only if $q_0=0$ and $\vec q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_0^2-|\vec q|^2$ and the vector coefficient $2q_0\vec q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
+The square of the algebra is the square, and the criterion is $\tilde q^2=0$ if and only if $q_t=0$ and $\vec q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_t^2-|\vec q|^2$ and the vector coefficient $2q_t\vec q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
 
-The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\xi_0=0$ and the pure branch gives $\vec\xi=0$, both returning the origin. This is the opposite of the roots of $+e_0$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
+The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\xi_t=0$ and the pure branch gives $\vec\xi=0$, both returning the origin. This is the opposite of the roots of $+e_t$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
 
-The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\vec q|^2e_0$ and a nonzero scalar the positive square $s^2e_0$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the Quaternion Algebra*.
+The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\vec q|^2e_t$ and a nonzero scalar the positive square $s^2e_t$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the Quaternion Algebra*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, real dimension four |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
-| $\tilde q=q_0e_0+\vec q$ | General element, scalar part $q_0$, vector part $\vec q$ |
-| $\langle\tilde q\rangle_{\natural}=q_0^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\nu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
+| $\tilde q=q_te_t+\vec q$ | General element, scalar part $q_t$, vector part $\vec q$ |
+| $\langle\tilde q\rangle_{\natural}=q_t^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
 | $\tilde\nu$ | A nilpotent, a nonzero element of vanishing square |
 | $\tilde q^2=0$ | The square-zero equation |
 | $\Sigma_0=\{0\}$ | The roots of $0$, the origin alone |
 | $\{0\}$ | The square-zero set of the algebra |
 | $\varnothing$ | The nilpotent class |
-| $\tilde q^2=[q_0^2-\lvert\vec q\rvert^2]e_0+2q_0\vec q$ | The square of a general element |
-| $\tilde q^3=q_0[q_0^2-3\lvert\vec q\rvert^2]e_0+[3q_0^2-\lvert\vec q\rvert^2]\vec q$ | The cube of a general element |
-| $\mathbb{R}e_0$, $\mathrm{Vect}(\mathbb{H})$ | Centre and vector subspace |
+| $\tilde q^2=[q_t^2-\lvert\vec q\rvert^2]e_t+2q_t\vec q$ | The square of a general element |
+| $\tilde q^3=q_t[q_t^2-3\lvert\vec q\rvert^2]e_t+[3q_t^2-\lvert\vec q\rvert^2]\vec q$ | The cube of a general element |
+| $\mathbb{R}e_t$, $\mathrm{Vect}(\mathbb{H})$ | Centre and vector subspace |
 
 ## Further Reading
 
 - *Introduction to the Quaternion Algebra* (`articles_maths/introduction-to-the-quaternion-algebra.md`), for the product, the unit and the square.
-- *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.md`), for the central reduction specialised here, the roots of $+e_0$, the idempotents and their disjointness from the square-zero class.
+- *Square Roots of One and the Idempotents of the Quaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-quaternion-algebra.md`), for the central reduction specialised here, the roots of $+e_t$, the idempotents and their disjointness from the square-zero class.
 - *Square Roots of a General Element in the Quaternion Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-quaternion-algebra.md`), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $0$ here are the degenerate case.
 - *Zero Divisors of the Quaternion Algebra* (`articles_maths/zero-divisors-of-the-quaternion-algebra.md`), for the empty zero-divisor set and the two families of the complexified block.
 - *The Specificities of the Quaternion Algebra* (`articles_maths/the-specificities-of-the-quaternion-algebra.md`), for the folding of the empty classes.

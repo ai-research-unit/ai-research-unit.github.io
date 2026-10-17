@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic Doppler effect, using the framework and the notation of the companion articles *Relativistic Mechanics in Biquaternionic Form* and *The Lorentz Transformation as a Biquaternionic Rotation*. Those two articles are the parents of this exercise: they set up the four-vectors of $\mathbb{M}_-$ and the boost rotor that acts on them, and what follows applies them to the light of a moving source. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \vec k$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, and the boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ and the scalar projection $\mathrm{Sc}$. The four-wavevector $\tilde{K} = i\omega/c\,e_t + \vec k$ from the table of four-vectors in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$, and the boost biquaternion
 $$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u,
 \qquad
@@ -18,7 +18,7 @@ Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $
 
 **What is to be shown.** The problems are: (1) the four-wavevector, its null biquaternion norm, its invariant phase, and an invariant expression for the frequency an observer measures; (2) the boost of the four-wavevector and the general Doppler formula; (3) the longitudinal case; (4) the transverse case — which is in fact *two* inequivalent cases; (5) aberration and the forward cone; (6) a numerical instance and the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
-**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_0 = (\omega_0/c)\vec u_k_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec u_k_0$. Primed quantities refer to the observer frame. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
+**Notation for the problem.** A **source** is at rest in the *source frame* and emits monochromatic plane light of angular frequency $\omega_0$ and wavevector $\vec k_0 = (\omega_0/c)\vec {u_k}_0$. An **observer** is at rest in the *observer frame*, which moves with constant velocity $\vec v_b$ relative to the source frame; $v_b = |\vec v_b|$, $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$. The angle $\theta$ is measured **in the source frame** between $\vec v_b$ and the propagation direction $\vec {u_k}_0$. Primed quantities refer to the observer frame. A receding observer has $\theta = 0$; an approaching one has $\theta = \pi$.
 
 ## Problem 1: The Four-Wavevector, the Phase, and the Frequency Invariant
 
@@ -30,9 +30,9 @@ and check the formula both in the observer's rest frame and in the source frame.
 
 **Solution (a).** The four-wavevector is the element of $\mathbb{M}_-$
 $$
-\tilde{K} = \frac{i\omega}{c}\,e_0 + \vec k,
+\tilde{K} = \frac{i\omega}{c}\,e_t + \vec k,
 \qquad
-\vec k = k_1e_1 + k_2e_2 + k_3e_3,
+\vec k = k_1\vec e_x + k_2\vec e_y + k_3\vec e_z,
 \qquad
 k = |\vec k| .
 $$
@@ -49,10 +49,10 @@ the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zer
 **Solution (b).** Fix the plane-wave convention $\propto \exp(i\Phi)$ with
 $$
 \Phi = \mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right)
-= \left(\frac{i\omega}{c}\right)(ic\,t) + \vec k\cdot\vec x
-= \vec k\cdot\vec x - \omega t ,
+= \left(\frac{i\omega}{c}\right)(ic\,t) + \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+= \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t ,
 \qquad
-\tilde{Q} = ic\,t\,e_0 + \vec x .
+\tilde{Q} = ic\,t\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) .
 $$
 Let $\tilde{\Lambda}$ be any unit-norm biquaternion and let $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. Then
 $$
@@ -62,9 +62,9 @@ $$
 $$
 Since $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$ and quaternion and complex conjugation commute, $\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\bigl(\tilde{\Lambda}^{\natural}\bigr)^{*}} = \bar{\tilde{\Lambda}}$; hence the inner pair collapses,
 $$
-\tilde{\Lambda}^{*}\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\tilde{\Lambda}^{\natural}}\,\bar{\tilde{\Lambda}} = \overline{\tilde{\Lambda}^{\natural}\tilde{\Lambda}} = \tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_0 ,
+\tilde{\Lambda}^{*}\bigl(\tilde{\Lambda}^{*}\bigr)^{\natural} = \overline{\tilde{\Lambda}^{\natural}}\,\bar{\tilde{\Lambda}} = \overline{\tilde{\Lambda}^{\natural}\tilde{\Lambda}} = \tilde{\Lambda}^{\natural}\tilde{\Lambda} = e_t ,
 $$
-so $\tilde{K}'{\tilde{Q}^{\natural}}' = \tilde{\Lambda}(\tilde{K}\tilde{Q}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_0$,
+so $\tilde{K}'{\tilde{Q}^{\natural}}' = \tilde{\Lambda}(\tilde{K}\tilde{Q}^{\natural})\tilde{\Lambda}^{\natural}$. The scalar projection is cyclic, $\mathrm{Sc}(PAP) = \mathrm{Sc}(AP^2)$, and with $P\bar{P} = e_t$,
 $$
 \mathrm{Sc}\!\left(\tilde{\Lambda}\,(\tilde{K}\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\right)
 = \mathrm{Sc}\!\left((\tilde{K}\tilde{Q}^{\natural})\,\tilde{\Lambda}^{\natural}\tilde{\Lambda}\right)
@@ -72,14 +72,14 @@ $$
 $$
 Hence $\Phi' = \Phi$: the phase is a scalar of the algebra and of the Lorentz group. This is the biquaternion form of the statement that the phase of a plane wave is an invariant, and it is what makes the transformation of the frequency a transformation of the four-wavevector alone.
 
-**Solution (c).** Let the observer carry the timelike four-velocity $\tilde{V} = \gamma_b(ic\,e_0 + \vec v_{b,\mathrm{obs}})$, normalized by $\langle\tilde{V}\rangle_{\natural} = -c^2$. In the observer's rest frame $\tilde{V} = ic\,e_0$ and $\tilde{V}^{\natural} = ic\,e_0$, so
+**Solution (c).** Let the observer carry the timelike four-velocity $\tilde{V} = \gamma_b(ic\,e_t + \vec v_{b,\mathrm{obs}})$, normalized by $\langle\tilde{V}\rangle_{\natural} = -c^2$. In the observer's rest frame $\tilde{V} = ic\,e_t$ and $\tilde{V}^{\natural} = ic\,e_t$, so
 $$
 -\,\mathrm{Sc}\!\left(\tilde{K}\tilde{V}^{\natural}\right)
-= -\,\mathrm{Sc}\!\left(\left(\frac{i\omega}{c}e_0 + \vec k\right)(ic\,e_0)\right)
-= -\,\mathrm{Sc}\!\left(-\,\omega\,e_0 + ic\,\vec k\right)
+= -\,\mathrm{Sc}\!\left(\left(\frac{i\omega}{c}e_t + \vec k\right)(ic\,e_t)\right)
+= -\,\mathrm{Sc}\!\left(-\,\omega\,e_t + ic\,\vec k\right)
 = \omega ,
 $$
-which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V} = \gamma(ic\,e_0 + \vec v_b)$ with $\tilde{V}^{\natural} = \gamma(ic\,e_0 - \vec v_b)$, and
+which is the frequency that frame assigns to the wave. In the source frame the same observer has four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v_b)$ with $\tilde{V}^{\natural} = \gamma(ic\,e_t - \vec v_b)$, and
 $$
 \mathrm{Sc}\!\left(\tilde{K}\tilde{V}^{\natural}\right)
 = \left(\frac{i\omega_0}{c}\right)(\gamma ic) - \vec k_0\cdot(-\gamma\vec v_b)
@@ -97,7 +97,7 @@ The frequency measured by an observer is thus an invariant contraction of the wa
 
 **Statement.** (a) State the rotor conjugation for a boost and the component action it induces on a general element of $\mathbb{M}_-$. (b) Apply it to $\tilde{K}$ and derive the frequency and wavevector in the observer frame. (c) Show that the transformed wavevector is again null. (d) Verify the result against the invariant formula of Problem 1.
 
-**Solution (a).** The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the rotor conjugation is $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}$. Write a general element of $\mathbb{M}_-$ as $\tilde{A} = ia\,e_0 + \vec A$ with $a$ real and $\vec A$ real, and split
+**Solution (a).** The boost with velocity $\vec v_b$ is generated by the Hermitian unit-norm biquaternion of the Introduction, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so the rotor conjugation is $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*} = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}$. Write a general element of $\mathbb{M}_-$ as $\tilde{A} = ia\,e_t + \vec A$ with $a$ real and $\vec A$ real, and split
 $$
 A_\parallel = \vec u\cdot\vec A,
 \qquad
@@ -134,7 +134,7 @@ $$
 $$
 since the scalar part of $\vec A\vec u$ is $-\vec A\cdot\vec u = -A_\parallel$. This is the first of the component equations; the remaining two are obtained from the same multiplication and reproduce the standard Lorentz boost.
 
-**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_0 = (\omega_0/c)\vec u_k_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
+**Solution (b).** Apply the component action with $a = \omega_0/c$ and $\vec A = \vec k_0 = (\omega_0/c)\vec {u_k}_0$. With $A_\parallel = (\omega_0/c)\cos\theta$,
 $$
 \frac{\omega'}{c} = \gamma\left(\frac{\omega_0}{c} - \beta\frac{\omega_0}{c}\cos\theta\right)
 \quad\Longrightarrow\quad
@@ -145,18 +145,18 @@ $$
 k_\parallel' = \gamma\left(\frac{\omega_0}{c}\cos\theta - \beta\frac{\omega_0}{c}\right)
 = \frac{\omega_0}{c}\,\gamma\left(\cos\theta - \beta\right),
 \qquad
-\vec k_\perp' = \frac{\omega_0}{c}\,\vec u_k_{0\perp} .
+\vec k_\perp' = \frac{\omega_0}{c}\,\vec {u_k}_{0\perp} .
 $$
 In the longitudinal case $\theta = 0$ or $\pi$ the transverse part vanishes; in general a ray that is transverse in one frame acquires a longitudinal component in the other, which is the aberration of Problem 5.
 
-**Solution (c).** The biquaternion norm is preserved because $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$:
+**Solution (c).** The biquaternion norm is preserved because $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$:
 $$
 \langle\tilde{K}'\rangle_{\natural} = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}\overline{\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}}
 = \tilde{K}\tilde{K}^{\natural} = 0 .
 $$
 One may also check it in components, using $\gamma^2(\cos\theta-\beta)^2 + \sin^2\theta = \gamma^2(1-\beta\cos\theta)^2$, which follows from $1-\beta^2 = \gamma^{-2}$. Hence $k' = \omega'/c$: the observer sees a light wave propagating with the same local speed $c$, as required.
 
-**Solution (d).** The observer's four-velocity in the source frame is $\tilde{V} = \gamma(ic\,e_0 + \vec v_b)$, and Problem 1 gives
+**Solution (d).** The observer's four-velocity in the source frame is $\tilde{V} = \gamma(ic\,e_t + \vec v_b)$, and Problem 1 gives
 $$
 -\,\mathrm{Sc}\!\left(\tilde{K}\tilde{V}^{\natural}\right)
 = \gamma\,\omega_0\left(1 - \beta\cos\theta\right) = \omega' ,
@@ -264,9 +264,9 @@ Since the emission is isotropic in the source frame, the hemisphere $\theta\ge\p
 
 **Statement.** (a) For a spectral line of rest wavelength $\lambda_0 = 656.281$ nm (H$\alpha$) and $\beta = 0.10$, tabulate the observed wavelength in the four configurations of Problems 3 and 4. (b) For $\beta = 0.05$, give the Ives–Stilwell fractional shift and compare $1-1/\gamma$ with $\beta^2/2$. (c) Expand the general formula for $\beta\ll1$ and identify the classical and the second-order terms.
 
-**Solution (a).** With $\nu_0 = c_0/\lambda_0 = 4.568050\times10^{14}$ Hz and $\beta = 0.10$ (so $\gamma = 1.0050378$), $\lambda' = \lambda_0\,\nu_0/\nu'$:
+**Solution (a).** With $\nu_t = c_0/\lambda_0 = 4.568050\times10^{14}$ Hz and $\beta = 0.10$ (so $\gamma = 1.0050378$), $\lambda' = \lambda_0\,\nu_t/\nu'$:
 
-| Configuration | $\nu'/\nu_0$ | $\lambda'$ (nm) | Shift (nm) |
+| Configuration | $\nu'/\nu_t$ | $\lambda'$ (nm) | Shift (nm) |
 |---|---|---|---|
 | Receding, $\theta = 0$ | $0.9045340337$ | $725.545945$ | $+\,69.264945$ |
 | Approaching, $\theta = \pi$ | $1.1055415968$ | $593.628500$ | $-\,62.652500$ |
@@ -314,7 +314,7 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 
 ## Summary
 
-1. **Four-wavevector.** $\tilde{K} = i\omega/c\,e_0 + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde{K}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde{K}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot\vec x-\omega t$ is invariant under rotor conjugation.
+1. **Four-wavevector.** $\tilde{K} = i\omega/c\,e_t + \vec k$ is an element of $\mathbb{M}_-$ with $\langle\tilde{K}\rangle_{\natural} = -\omega^2/c^2 + k^2$; for light $k = \omega/c$ and $\langle\tilde{K}\rangle_{\natural} = 0$, so light is a null element (zero divisor) of the algebra. The phase $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t$ is invariant under rotor conjugation.
 
 2. **Frequency invariant.** An observer of four-velocity $\tilde{V}$ measures $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde{K}\tilde{V}^{\natural})$; in the source frame this is $\gamma\omega_0(1-\beta\cos\theta)$.
 
@@ -335,20 +335,20 @@ and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathrm{Sc}$ | Scalar projection of a biquaternion |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{Q} = ict\,e_0 + \vec x$ | Four-position |
-| $\tilde{K} = i\omega/c\,e_0 + \vec k$ | Four-wavevector, $\langle\tilde{K}\rangle_{\natural} = 0$ for light |
-| $\tilde{V} = \gamma_b(ic\,e_0 + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
+| $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Four-position |
+| $\tilde{K} = i\omega/c\,e_t + \vec k$ | Four-wavevector, $\langle\tilde{K}\rangle_{\natural} = 0$ for light |
+| $\tilde{V} = \gamma_b(ic\,e_t + \vec v_b)$ | Observer four-velocity, $\langle\tilde{V}\rangle_{\natural} = -c^2$ |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ | Boost biquaternion (Hermitian, unit norm) |
 | $\psi$ | Rapidity, $\tanh\psi = v_b/c$ |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\vec v_b$ | Observer-frame velocity relative to the source frame |
-| $\vec u_k_0$ | Source-frame propagation direction |
-| $\theta$ | Source-frame angle between $\vec v_b$ and $\vec u_k_0$ |
+| $\vec {u_k}_0$ | Source-frame propagation direction |
+| $\theta$ | Source-frame angle between $\vec v_b$ and $\vec {u_k}_0$ |
 | $\theta'$ | Observer-frame angle between $\vec v_b$ and $\vec u_k'$ |
 | $\omega_0$, $\omega'$ | Source-frame and observer-frame angular frequency |
 | $z = (\lambda'-\lambda_0)/\lambda_0$ | Redshift |

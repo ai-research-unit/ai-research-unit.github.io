@@ -49,11 +49,11 @@ and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate 
 
 **Proof.** The residue of dimension at most two is the local classification; the existence of an isotropic vector is decided by the Hasse invariant because the only anisotropic forms of rank at least three fail to exist over a non-Archimedean local field, and the hyperbolic condition is the vanishing of the residue. The statement is in *Hermitian Forms over a Local Field* and *Quadratic Forms and Polarisation*.
 
-**Example (the Archimedean signatures).** Over $\mathbb{R}$ with the trivial involution and the form of signature $(n,m)$ the Witt index is $\min(n,m)$ and the residue is the definite space of dimension $|p-q|$; over $\mathbb{C}$ with the conjugation the form of signature $(n,m)$ behaves the same way, and the unitary group of the standard form is the compact group $U(n,m)$ of the next section. The Archimedean case is the one in which the residue may have any dimension and the metric is not discrete.
+**Example (the Archimedean signatures).** Over $\mathbb{R}$ with the trivial involution and the form of signature $(n,m)$ the Witt index is $\min(n,m)$ and the residue is the definite space of dimension $|p-q|$; over $\mathbb{C}$ with the conjugation the form of signature $(n,m)$ behaves the same way, and the unitary group of the standard form is the compact group $\mathrm{U}(n,m)$ of the next section. The Archimedean case is the one in which the residue may have any dimension and the metric is not discrete.
 
 ### The Isotropic Subspaces
 
-**Theorem.** Let $(V,h)$ be a Hermitian space over the local field with Witt index $r$. The isotropic Grassmannians $\mathrm{IG}_k(V)$ for $0 \leq k \leq r$ are nonempty, the unitary group acts transitively on each, and the maximal totally isotropic subspace is unique up to the action of the unitary group with the dimension $r$; the flags of the isotropic subspaces form the homogeneous spaces $U(V,h)/P_k$ of the unitary group modulo the parabolics. Over a non-Archimedean local field the flags are the chambers and the maximal isotropic subspaces are the ends of the building of the next section.
+**Theorem.** Let $(V,h)$ be a Hermitian space over the local field with Witt index $r$. The isotropic Grassmannians $\mathrm{IG}_k(V)$ for $0 \leq k \leq r$ are nonempty, the unitary group acts transitively on each, and the maximal totally isotropic subspace is unique up to the action of the unitary group with the dimension $r$; the flags of the isotropic subspaces form the homogeneous spaces $\mathrm{U}(V,h)/P_k$ of the unitary group modulo the parabolics. Over a non-Archimedean local field the flags are the chambers and the maximal isotropic subspaces are the ends of the building of the next section.
 
 **Proof.** The transitivity is the Witt extension theorem, valid over any field, applied to the local case; the stabilisers are the parabolics by the standard correspondence, and over the non-Archimedean field the parabolics are the stabilisers of the facets of the building. The statement is in *Hermitian Forms and Unitary Geometry* and *Bruhat–Tits Theory*.
 
@@ -61,9 +61,9 @@ and the **Hasse invariant** is the sign $s(H) \in \{\pm 1\}$; two nondegenerate 
 
 ### The Locally Compact Group
 
-**Definition.** The **unitary group** $U(V,h)$ of a Hermitian space over the local field $(K,c)$ is the group of the $K$-linear isometries of the form; it carries the topology of the convergence of the matrix entries, and it is a locally compact group, a real or complex Lie group in the Archimedean case, and a totally disconnected locally compact group in the non-Archimedean case.
+**Definition.** The **unitary group** $\mathrm{U}(V,h)$ of a Hermitian space over the local field $(K,c)$ is the group of the $K$-linear isometries of the form; it carries the topology of the convergence of the matrix entries, and it is a locally compact group, a real or complex Lie group in the Archimedean case, and a totally disconnected locally compact group in the non-Archimedean case.
 
-**Theorem.** The unitary group over a local field is locally compact and unimodular, it acts properly on the space, and its **maximal compact subgroups** are the stabilisers of a lattice in the non-Archimedean case: a lattice $L \subseteq V$ is an $\mathcal{O}_K$-submodule of full rank, its stabiliser in $U(V,h)$ is open and compact, and it is maximal compact exactly when the lattice is **self-dual** for the form up to the discriminant; the group is compact exactly when the space is anisotropic.
+**Theorem.** The unitary group over a local field is locally compact and unimodular, it acts properly on the space, and its **maximal compact subgroups** are the stabilisers of a lattice in the non-Archimedean case: a lattice $L \subseteq V$ is an $\mathcal{O}_K$-submodule of full rank, its stabiliser in $\mathrm{U}(V,h)$ is open and compact, and it is maximal compact exactly when the lattice is **self-dual** for the form up to the discriminant; the group is compact exactly when the space is anisotropic.
 
 **Proof.** The group is the zero set of the polynomial equations of the isometries, hence closed in $GL_n(K)$ and locally compact; the modular function is trivial because the group is unimodular as the isometry group of a form; the stabiliser of a lattice is open and compact by the discreteness of the lattice and the compactness of the associated Grassmannian, and the compactness of the whole group in the anisotropic case is the finiteness of the number of lattice classes. The statement is in *Bruhat–Tits Theory* and in the theory of the arithmetic groups.
 
@@ -110,7 +110,7 @@ A Hermitian space over a local field $(K,c)$ is classified non-Archimedeanly by 
 | $\operatorname{disc}(H) = \det(H)$ | Discriminant in $K_0^\times/N(K^\times)$ |
 | $s(H) \in \{\pm 1\}$ | Hasse invariant |
 | $(n,m)$ | Signature in the Archimedean case |
-| $U(V,h)$ | Unitary group, a locally compact group |
+| $\mathrm{U}(V,h)$ | Unitary group, a locally compact group |
 | lattice $L$ | Full-rank $\mathcal{O}_K$-submodule |
 | building | Flag complex of the homothety classes of the lattices |
 | apartment | Subcomplex of a maximal split torus, a Coxeter complex |

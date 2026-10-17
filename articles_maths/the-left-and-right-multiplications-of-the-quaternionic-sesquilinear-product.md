@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines and its one-sided actions of the unit are *Introduction to the General Quaternionic Sesqualgebra*; the associator is *The Associator of the General Quaternionic Sesquilinear Product*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_t - \vec P$, ${}^{*}$ is the star conjugation, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the pair of **multiplication operators** attached to the multiplication,
 
@@ -23,7 +23,7 @@ $$
 L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\,\overline{\tilde B}} , \qquad R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\,\tilde A^{*}} ,
 $$
 
-where $T_{\tilde P,\tilde Q}(\tilde X) = \tilde P\tilde X\tilde Q$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde A} = S_{\tilde A^{\natural},e_0}$, and the monoid they generate is the sandwich monoid of that article.
+where $T_{\tilde P,\tilde Q}(\tilde X) = \tilde P\tilde X\tilde Q$ is the ordinary two-sided operator. Third, the **absence of a monoid**: the composition of two left multiplications is $\mathbb{C}$-linear whereas every left multiplication is conjugate-linear, so the class is not closed under composition and the left multiplications do not form a monoid. They are sandwiches in the sense of *The Sesquilinear Sandwich Operator*, $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of that article.
 
 The article owns the two families, their parities, their composition laws and the failure of the monoid property. It cites the general operator theory to *The Left and Right Multiplication Operators of a Sesqualgebra*; it cites the sandwich and its composition table to *The Sesquilinear Sandwich Operator*; it cites the composition of the left multiplications of the four general products to *Relations Between the Four General Products* §*The Left Multiplications*; and it does not treat the ternary operator, which is *The Ternary Product and the Failure of the Jordan Triple Identity*, nor the matrix realization, which is *The General Quaternionic Sesquilinear Product in the 2×2 Matrix Model*.
 
@@ -42,12 +42,12 @@ The two families are $\mathcal{L} = \{ L_{\tilde A} : \tilde A \in \mathbb{B} \}
 **Proposition (the closed forms).** For every $\tilde A$ and $\tilde X$,
 
 $$
-L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*} = S_{\tilde A^{\natural},\,e_0}(\tilde X) , \qquad R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*} ,
+L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*} = S_{\tilde A^{\natural},\,e_t}(\tilde X) , \qquad R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*} ,
 $$
 
-where $S_{a,b}(\tilde X) = a\tilde X^{*}b$ is the sesquilinear sandwich of *The Sesquilinear Sandwich Operator*; so every left multiplication is the sandwich with parameters $\tilde A^{\natural}$ and $e_0$.
+where $S_{a,b}(\tilde X) = a\tilde X^{*}b$ is the sesquilinear sandwich of *The Sesquilinear Sandwich Operator*; so every left multiplication is the sandwich with parameters $\tilde A^{\natural}$ and $e_t$.
 
-**Proof.** The first display is the rule; the sandwich with second parameter $e_0$ is $a\tilde X^{*}e_0 = a\tilde X^{*}$, which is the left multiplication with $a = \tilde A^{\natural}$. The second display is the rule read on the right slot.
+**Proof.** The first display is the rule; the sandwich with second parameter $e_t$ is $a\tilde X^{*}e_t = a\tilde X^{*}$, which is the left multiplication with $a = \tilde A^{\natural}$. The second display is the rule read on the right slot.
 
 **Remark.** The left multiplication is a sandwich and the right multiplication is not: $R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*}$ carries the natural conjugation in the first factor rather than the star in the middle, and it is a $\mathbb{C}$-linear operator, whereas every sandwich is conjugate-linear. The asymmetry of the two slots of the multiplication therefore appears at the operator level as the asymmetry between a sandwich and a linear two-sided operator.
 
@@ -63,7 +63,7 @@ $$
 
 **Proposition (the parities of the parametrisations).** The map $\tilde A \mapsto L_{\tilde A}$ is injective and $\mathbb{C}$-**linear**, and the map $\tilde A \mapsto R_{\tilde A}$ is injective and **conjugate-linear**.
 
-**Proof.** For the linearity of the first, $L_{\tilde A + \lambda\tilde B}(\tilde X) = (\tilde A + \lambda\tilde B)^{\natural}\tilde X^{*} = \tilde A^{\natural}\tilde X^{*} + \lambda\tilde B^{\natural}\tilde X^{*}$; the natural conjugation is $\mathbb{C}$-linear, so $(\lambda\tilde B)^{\natural} = \lambda\tilde B^{\natural}$ and $L_{\tilde A+\lambda\tilde B} = L_{\tilde A} + \lambda L_{\tilde B}$. Injectivity: $L_{\tilde A} = 0$ means $\tilde A^{\natural}\tilde X^{*} = 0$ for every $\tilde X$, which at $\tilde X = e_0$ gives $\tilde A^{\natural} = 0$, hence $\tilde A = 0$. For the second, $R_{\tilde A+\lambda\tilde B}(\tilde X) = \tilde X^{\natural}(\tilde A + \lambda\tilde B)^{*} = \tilde X^{\natural}\tilde A^{*} + \bar\lambda\tilde X^{\natural}\tilde B^{*}$, since the star is conjugate-linear; injectivity is as before at $\tilde X = e_0$.
+**Proof.** For the linearity of the first, $L_{\tilde A + \lambda\tilde B}(\tilde X) = (\tilde A + \lambda\tilde B)^{\natural}\tilde X^{*} = \tilde A^{\natural}\tilde X^{*} + \lambda\tilde B^{\natural}\tilde X^{*}$; the natural conjugation is $\mathbb{C}$-linear, so $(\lambda\tilde B)^{\natural} = \lambda\tilde B^{\natural}$ and $L_{\tilde A+\lambda\tilde B} = L_{\tilde A} + \lambda L_{\tilde B}$. Injectivity: $L_{\tilde A} = 0$ means $\tilde A^{\natural}\tilde X^{*} = 0$ for every $\tilde X$, which at $\tilde X = e_t$ gives $\tilde A^{\natural} = 0$, hence $\tilde A = 0$. For the second, $R_{\tilde A+\lambda\tilde B}(\tilde X) = \tilde X^{\natural}(\tilde A + \lambda\tilde B)^{*} = \tilde X^{\natural}\tilde A^{*} + \bar\lambda\tilde X^{\natural}\tilde B^{*}$, since the star is conjugate-linear; injectivity is as before at $\tilde X = e_t$.
 
 **Remark.** The two families are therefore two different images of $\mathbb{B}$: the left one is a $\mathbb{C}$-linear image inside the conjugate-linear endomorphisms, and the right one a conjugate-linear image inside the linear endomorphisms. The left family is a copy of $\mathbb{B}$ and not a representation of the multiplication, because the multiplication is not associative; the right family is the conjugate copy. This is the operator-level reason the group has no regular representation in the sense of an algebra, and it is the first of the two negative results of the article.
 
@@ -111,25 +111,25 @@ which is $T_{\tilde A^{\natural},\overline{\tilde B}}(\tilde X)$.
 
 ### The Sandwich Algebra
 
-**Theorem (the generated monoid).** The left multiplications are the sandwiches $L_{\tilde A} = S_{\tilde A^{\natural},e_0}$, and the monoid they generate under composition is the sandwich monoid of *The Sesquilinear Sandwich Operator*, the set
+**Theorem (the generated monoid).** The left multiplications are the sandwiches $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$, and the monoid they generate under composition is the sandwich monoid of *The Sesquilinear Sandwich Operator*, the set
 
 $$
 \{ T_{\tilde P,\tilde Q} : \tilde P, \tilde Q \in \mathbb{B} \} \cup \{ S_{a,b} : a, b \in \mathbb{B} \} ,
 $$
 
-with unit $T_{e_0,e_0} = \mathrm{id}$.
+with unit $T_{e_t,e_t} = \mathrm{id}$.
 
-**Proof.** The identification $L_{\tilde A} = S_{\tilde A^{\natural},e_0}$ is the closed form of the first proposition. The composition table of *The Sesquilinear Sandwich Operator* gives $S_{a,b} \circ S_{c,d} = T_{a d^{*},\, c^{*} b}$ and $T_{p,q} \circ T_{r,s} = T_{pr,\, sq}$, so the product of two left multiplications is
+**Proof.** The identification $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$ is the closed form of the first proposition. The composition table of *The Sesquilinear Sandwich Operator* gives $S_{a,b} \circ S_{c,d} = T_{a d^{*},\, c^{*} b}$ and $T_{p,q} \circ T_{r,s} = T_{pr,\, sq}$, so the product of two left multiplications is
 
 $$
-S_{\tilde A^{\natural},e_0} \circ S_{\tilde B^{\natural},e_0}
-= T_{\tilde A^{\natural} e_0^{*},\, (\tilde B^{\natural})^{*} e_0} 
+S_{\tilde A^{\natural},e_t} \circ S_{\tilde B^{\natural},e_t}
+= T_{\tilde A^{\natural} e_t^{*},\, (\tilde B^{\natural})^{*} e_t} 
 = T_{\tilde A^{\natural},\,\overline{\tilde B}} ,
 $$
 
-in agreement with the composition law above; the products of a sandwich and a two-sided operator are a sandwich, by the same table, and the two-sided operators close among themselves. The generated set is therefore the union displayed, and it is a monoid with unit $T_{e_0,e_0}$, the identity operator.
+in agreement with the composition law above; the products of a sandwich and a two-sided operator are a sandwich, by the same table, and the two-sided operators close among themselves. The generated set is therefore the union displayed, and it is a monoid with unit $T_{e_t,e_t}$, the identity operator.
 
-**Remark.** The composition of two conjugate-linear operators is linear, which is the passage from the two sandwiches to the two-sided operator $T_{\tilde A^{\natural},\overline{\tilde B}}$; this is the same computation as the composition of two elements of $\mathcal{L}$, and it shows that the operator closure of the multiplication is a different, larger structure than the multiplication. The multiplication's left multiplications are the sandwiches with second parameter $e_0$, and the sandwich monoid is their operator closure.
+**Remark.** The composition of two conjugate-linear operators is linear, which is the passage from the two sandwiches to the two-sided operator $T_{\tilde A^{\natural},\overline{\tilde B}}$; this is the same computation as the composition of two elements of $\mathcal{L}$, and it shows that the operator closure of the multiplication is a different, larger structure than the multiplication. The multiplication's left multiplications are the sandwiches with second parameter $e_t$, and the sandwich monoid is their operator closure.
 
 ## The Other Compositions
 
@@ -143,15 +143,15 @@ $$
 
 **Proof.** Expanding, $R_{\tilde A}(R_{\tilde B}(\tilde X)) = (\tilde X^{\natural}\tilde B^{*})^{\natural}\tilde A^{*} = (\tilde B^{*})^{\natural}(\tilde X^{\natural})^{\natural}\tilde A^{*} = \overline{\tilde B}\,\tilde X\,\tilde A^{*}$, using the anti-multiplicativity of ${}^{\natural}$ and $(\tilde B^{*})^{\natural} = \overline{\tilde B}$.
 
-**Corollary.** The composition of two right multiplications is $\mathbb{C}$-linear, and every right multiplication is itself $\mathbb{C}$-linear, so parity alone does not separate the two classes here; the class is nevertheless not closed under composition, and the smallest witness is $R_{e_0} \circ R_{e_0} = \mathrm{id} \notin \mathcal{R}$. In general $R_{\tilde A}\circ R_{\tilde B} = R_{\tilde C}$ would require
+**Corollary.** The composition of two right multiplications is $\mathbb{C}$-linear, and every right multiplication is itself $\mathbb{C}$-linear, so parity alone does not separate the two classes here; the class is nevertheless not closed under composition, and the smallest witness is $R_{e_t} \circ R_{e_t} = \mathrm{id} \notin \mathcal{R}$. In general $R_{\tilde A}\circ R_{\tilde B} = R_{\tilde C}$ would require
 
 $$
 \tilde X^{\natural}\tilde C^{*} = \overline{\tilde B}\,\tilde X\,\tilde A^{*}
 $$
 
-for every $\tilde X$; at $\tilde X = e_0$ this gives $\tilde C^{*} = \overline{\tilde B}\tilde A^{*}$, and at $\tilde X = e_k$ it gives $\overline{\tilde B}e_k\tilde A^{*} + e_k\overline{\tilde B}\tilde A^{*} = 0$. When $\tilde A$ is a unit of the algebra these conditions force $\tilde B = 0$, so with $\tilde A$ invertible the only composition $R_{\tilde A}\circ R_{\tilde B}$ that is a right multiplication is the zero operator.
+for every $\tilde X$; at $\tilde X = e_t$ this gives $\tilde C^{*} = \overline{\tilde B}\tilde A^{*}$, and at $\tilde X = \vec e_k$ it gives $\overline{\tilde B}\vec e_k\tilde A^{*} + \vec e_k\overline{\tilde B}\tilde A^{*} = 0$. When $\tilde A$ is a unit of the algebra these conditions force $\tilde B = 0$, so with $\tilde A$ invertible the only composition $R_{\tilde A}\circ R_{\tilde B}$ that is a right multiplication is the zero operator.
 
-**Proof.** The composition is the plain two-sided operator $T_{\overline{\tilde B},\tilde A^{*}}$, which is linear, so the parity argument of the left case is unavailable. For the witness, $R_{e_0}(\tilde X) = \tilde X^{\natural}$, so $R_{e_0}\bigl(R_{e_0}(\tilde X)\bigr) = (\tilde X^{\natural})^{\natural} = \tilde X$; if this were $R_{\tilde C}$ then at $\tilde X = e_0$ it would give $\tilde C^{*} = e_0$ and at $\tilde X = e_1$ it would give $e_1^{\natural}\tilde C^{*} = -e_1$, contradicting $\tilde C^{*} = e_0$. For the general condition, write $P = \overline{\tilde B}$ and $Z = \tilde A^{*}$; the three conditions read $(Pe_k + e_kP)Z = 0$, and $Pe_k + e_kP = 2p_0e_k - 2p_ke_0$ for $P = \sum_\mu p_\mu e_\mu$. If $\tilde A$ is a unit then $Z$ is invertible, so $p_0e_k - p_ke_0 = 0$ for $k = 1, 2, 3$, hence $p_0 = p_1 = p_2 = p_3 = 0$ and $P = 0$, that is $\tilde B = 0$.
+**Proof.** The composition is the plain two-sided operator $T_{\overline{\tilde B},\tilde A^{*}}$, which is linear, so the parity argument of the left case is unavailable. For the witness, $R_{e_t}(\tilde X) = \tilde X^{\natural}$, so $R_{e_t}\bigl(R_{e_t}(\tilde X)\bigr) = (\tilde X^{\natural})^{\natural} = \tilde X$; if this were $R_{\tilde C}$ then at $\tilde X = e_t$ it would give $\tilde C^{*} = e_t$ and at $\tilde X = \vec e_x$ it would give $\vec e_x^{\natural}\tilde C^{*} = -\vec e_x$, contradicting $\tilde C^{*} = e_t$. For the general condition, write $\tilde P = \overline{\tilde B}$ and $\tilde Z = \tilde A^{*}$; the three conditions read $(\tilde P\vec e_k + \vec e_k\tilde P)\tilde Z = 0$, and $\tilde P\vec e_k + \vec e_k\tilde P = 2P_t\vec e_k - 2P_ke_t$ for $\tilde P = \sum_\mu P_\mu e_\mu$. If $\tilde A$ is a unit then $\tilde Z$ is invertible, so $P_t\vec e_k - P_ke_t = 0$ for $k = 1, 2, 3$, hence $P_t = P_x = P_y = P_z = 0$ and $\tilde P = 0$, that is $\tilde B = 0$.
 
 ### The Mixed Compositions
 
@@ -180,7 +180,7 @@ both operators being conjugate-linear in $\tilde X$.
 
 **Proof.** The four values are the four theorems above. For the class: a left multiplication is conjugate-linear and a right multiplication is linear, so a $\mathbb{C}$-linear composite cannot be a left multiplication and a conjugate-linear composite cannot be a right multiplication; the two linear composites are excluded from the class of the left multiplications by the same parity, and from the class of the right multiplications by the closed-form tests of the two corollaries above.
 
-**Remark.** Apart from the degenerate composite of the zero multiplications, no composition of two multiplication operators is again a multiplication operator — the closest the family comes is $R_{e_0} \circ R_{e_0} = \mathrm{id}$, and the identity is not a multiplication operator either — so neither family is closed and neither is a monoid; the only element common to $\mathcal{L}$ and $\mathcal{R}$ is zero, since a map that is both linear and conjugate-linear is zero. The table is the operator form of the group's negative statements: the absence of a unit, the failure of associativity and the failure of flexibility all read as the failure of the operator families to close.
+**Remark.** Apart from the degenerate composite of the zero multiplications, no composition of two multiplication operators is again a multiplication operator — the closest the family comes is $R_{e_t} \circ R_{e_t} = \mathrm{id}$, and the identity is not a multiplication operator either — so neither family is closed and neither is a monoid; the only element common to $\mathcal{L}$ and $\mathcal{R}$ is zero, since a map that is both linear and conjugate-linear is zero. The table is the operator form of the group's negative statements: the absence of a unit, the failure of associativity and the failure of flexibility all read as the failure of the operator families to close.
 
 ## The Absence of a Monoid
 
@@ -188,9 +188,9 @@ both operators being conjugate-linear in $\tilde X$.
 
 **Theorem.** Neither the left multiplications nor the right multiplications form a monoid under composition.
 
-**Proof.** A monoid of operators requires closure under composition and an identity in the class. The left multiplications are not closed, by the corollary after the composition law; the right multiplications are not closed, by the corollary after their composition law. For the identity, no $L_{\tilde A}$ is the identity operator, since $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ equals $\tilde X$ for all $\tilde X$ only if $\tilde A^{\natural} = e_0$ and $\tilde X^{*} = \tilde X$ for all $\tilde X$, which fails; and no $R_{\tilde A}$ is the identity for the same reason.
+**Proof.** A monoid of operators requires closure under composition and an identity in the class. The left multiplications are not closed, by the corollary after the composition law; the right multiplications are not closed, by the corollary after their composition law. For the identity, no $L_{\tilde A}$ is the identity operator, since $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ equals $\tilde X$ for all $\tilde X$ only if $\tilde A^{\natural} = e_t$ and $\tilde X^{*} = \tilde X$ for all $\tilde X$, which fails; and no $R_{\tilde A}$ is the identity for the same reason.
 
-**Remark.** The identity of the operator monoid is the plain two-sided operator $T_{e_0,e_0}$, which is the identity of the sandwich monoid and is not a multiplication operator of the product; the left and right multiplications sit inside the sandwich monoid and generate it, but they do not contain its identity. This is the operator-level form of the absence of a unit of the multiplication.
+**Remark.** The identity of the operator monoid is the plain two-sided operator $T_{e_t,e_t}$, which is the identity of the sandwich monoid and is not a multiplication operator of the product; the left and right multiplications sit inside the sandwich monoid and generate it, but they do not contain its identity. This is the operator-level form of the absence of a unit of the multiplication.
 
 ### The Regular Map Is Not Multiplicative
 
@@ -225,33 +225,33 @@ for generic $\tilde A, \tilde B$.
 
 ### The Unit Candidate
 
-**Proposition.** At $\tilde A = e_0$ the two multiplications are the two conjugations,
+**Proposition.** At $\tilde A = e_t$ the two multiplications are the two conjugations,
 
 $$
-L_{e_0} = {}^{*} , \qquad R_{e_0} = {}^{\natural} ,
+L_{e_t} = {}^{*} , \qquad R_{e_t} = {}^{\natural} ,
 $$
 
-and they satisfy $L_{e_0}^{2} = R_{e_0}^{2} = \mathrm{id}$ and $L_{e_0} \circ R_{e_0} = R_{e_0} \circ L_{e_0} = \bar{\cdot}$, the coefficientwise conjugation.
+and they satisfy $L_{e_t}^{2} = R_{e_t}^{2} = \mathrm{id}$ and $L_{e_t} \circ R_{e_t} = R_{e_t} \circ L_{e_t} = \bar{\cdot}$, the coefficientwise conjugation.
 
-**Proof.** The first two are the two actions of $e_0$ (*The Two One-Sided Actions and the Absence of a Unit*). For the squares, the composition law gives $L_{e_0}^{2} = T_{e_0^{\natural},\overline{e_0}} = T_{e_0,e_0} = \mathrm{id}$ and $R_{e_0}^{2} = T_{\overline{e_0},e_0^{*}} = T_{e_0,e_0} = \mathrm{id}$. For the mixed product, $L_{e_0}(R_{e_0}(\tilde X)) = e_0^{\natural}e_0\overline{\tilde X} = \overline{\tilde X}$, and $R_{e_0}(L_{e_0}(\tilde X)) = \overline{\tilde X}e_0e_0^{*} = \overline{\tilde X}$.
+**Proof.** The first two are the two actions of $e_t$ (*The Two One-Sided Actions and the Absence of a Unit*). For the squares, the composition law gives $L_{e_t}^{2} = T_{e_t^{\natural},\overline{e_t}} = T_{e_t,e_t} = \mathrm{id}$ and $R_{e_t}^{2} = T_{\overline{e_t},e_t^{*}} = T_{e_t,e_t} = \mathrm{id}$. For the mixed product, $L_{e_t}(R_{e_t}(\tilde X)) = e_t^{\natural}e_t\overline{\tilde X} = \overline{\tilde X}$, and $R_{e_t}(L_{e_t}(\tilde X)) = \overline{\tilde X}e_te_t^{*} = \overline{\tilde X}$.
 
-**Remark.** The operator identity $\mathrm{id}$ is the composition $L_{e_0}^{2}$, and it is not a left multiplication; this is the smallest instance of the failure of closure, and it is the operator form of the absence of a unit: the closest the family comes to containing the identity is the square of the left multiplication by $e_0$.
+**Remark.** The operator identity $\mathrm{id}$ is the composition $L_{e_t}^{2}$, and it is not a left multiplication; this is the smallest instance of the failure of closure, and it is the operator form of the absence of a unit: the closest the family comes to containing the identity is the square of the left multiplication by $e_t$.
 
 ### The Idempotents and the Units
 
 **Proposition.** Let $\tilde\Pi$ be a nontrivial idempotent of the multiplication, $\tilde\Pi \star \tilde\Pi = \tilde\Pi$. Then
 
 $$
-L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = \langle\tilde\Pi\rangle_{\natural}\,e_0 . 
+L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi , \qquad L_{\tilde\Pi}\bigl(\tilde\Pi^{\natural}\bigr) = \langle\tilde\Pi\rangle_{\natural}\,e_t . 
 $$
 
-**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = \langle\tilde\Pi\rangle_{\natural}e_0$, the plain product of an element with its natural conjugate being the norm times the identity.
+**Proof.** The first is the idempotent equation, $L_{\tilde\Pi}(\tilde\Pi) = \tilde\Pi \star \tilde\Pi = \tilde\Pi$. For the second, the nontrivial idempotents have real coordinates (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), so $\overline{\tilde\Pi} = \tilde\Pi$ and $(\tilde\Pi^{\natural})^{*} = \overline{\tilde\Pi} = \tilde\Pi$; hence $L_{\tilde\Pi}(\tilde\Pi^{\natural}) = \tilde\Pi^{\natural}(\tilde\Pi^{\natural})^{*} = \tilde\Pi^{\natural}\tilde\Pi = \langle\tilde\Pi\rangle_{\natural}e_t$, the plain product of an element with its natural conjugate being the norm times the identity.
 
-**Remark.** With $\langle\tilde\Pi\rangle_{\natural} = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_0$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
+**Remark.** With $\langle\tilde\Pi\rangle_{\natural} = 1$ for the nontrivial idempotents of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*, the second value is $e_t$, and the two values together show that the left multiplication by an idempotent fixes the idempotent and sends its natural conjugate to the identity. This is the operator reading of the two-sided nature of an idempotent, and it is the closest the operator theory comes to the unit that the multiplication does not have.
 
 ## Summary
 
-The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ and $R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde A \mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and the map $\tilde A \mapsto R_{\tilde A}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\overline{\tilde B}}$ and $R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\tilde A^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde A}R_{\tilde B} = \tilde A^{\natural}\tilde B\overline{\tilde X}$ and $R_{\tilde B}L_{\tilde A} = \overline{\tilde X}\tilde A\tilde B^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $S_{\tilde A^{\natural},e_0}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_0,e_0}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four general products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
+The left and right multiplications of the general quaternionic sesquilinear multiplication are $L_{\tilde A}(\tilde X) = \tilde A^{\natural}\tilde X^{*}$ and $R_{\tilde A}(\tilde X) = \tilde X^{\natural}\tilde A^{*}$. The left multiplication is conjugate-linear and the right one is linear; the map $\tilde A \mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and the map $\tilde A \mapsto R_{\tilde A}$ is conjugate-linear, both injective, so the two families are two different images of $\mathbb{B}$ and not a single regular representation. The composition laws are $L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\overline{\tilde B}}$ and $R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\tilde A^{*}}$, both compositions $\mathbb{C}$-linear; the mixed compositions $L_{\tilde A}R_{\tilde B} = \tilde A^{\natural}\tilde B\overline{\tilde X}$ and $R_{\tilde B}L_{\tilde A} = \overline{\tilde X}\tilde A\tilde B^{*}$ are conjugate-linear. Since every left multiplication is conjugate-linear and every right one is linear, the compositions leave the two classes, and neither family is closed under composition or contains an identity: neither is a monoid. The left multiplications are the sandwiches $S_{\tilde A^{\natural},e_t}$, and the monoid they generate is the sandwich monoid of *The Sesquilinear Sandwich Operator*, whose identity is the ordinary two-sided operator $T_{e_t,e_t}$. The regular map is a linear injection that is not multiplicative, which is the operator form of the failure of associativity, and the four general products split into the two bilinear ones, whose left multiplications form monoids, and the two sesquilinear ones, whose left multiplications do not.
 
 ## Summary of Notation
 
@@ -259,14 +259,14 @@ The left and right multiplications of the general quaternionic sesquilinear mult
 |---|---|
 | $L_{\tilde A}(\tilde X) = \tilde A \star \tilde X = \tilde A^{\natural}\tilde X^{*}$ | the left multiplication, conjugate-linear |
 | $R_{\tilde A}(\tilde X) = \tilde X \star \tilde A = \tilde X^{\natural}\tilde A^{*}$ | the right multiplication, linear |
-| $L_{\tilde A} = S_{\tilde A^{\natural},e_0}$ | the left multiplication as a sandwich |
+| $L_{\tilde A} = S_{\tilde A^{\natural},e_t}$ | the left multiplication as a sandwich |
 | $T_{\tilde P,\tilde Q}(\tilde X) = \tilde P\tilde X\tilde Q$ | the ordinary two-sided operator |
 | $L_{\tilde A} \circ L_{\tilde B} = T_{\tilde A^{\natural},\overline{\tilde B}}$ | the composition of two left multiplications |
 | $R_{\tilde A} \circ R_{\tilde B} = T_{\overline{\tilde B},\tilde A^{*}}$ | the composition of two right multiplications |
 | $L_{\tilde A} \circ R_{\tilde B} = \tilde A^{\natural}\tilde B\overline{\tilde X}$ | a mixed composition, conjugate-linear |
 | $R_{\tilde B} \circ L_{\tilde A} = \overline{\tilde X}\tilde A\tilde B^{*}$ | the other mixed composition |
 | $\ell : \tilde A \mapsto L_{\tilde A}$ | the regular map, linear and injective but not multiplicative |
-| $L_{e_0} = {}^{*}$, $R_{e_0} = {}^{\natural}$ | the two actions of the unit candidate |
+| $L_{e_t} = {}^{*}$, $R_{e_t} = {}^{\natural}$ | the two actions of the unit candidate |
 
 ## Further Reading
 

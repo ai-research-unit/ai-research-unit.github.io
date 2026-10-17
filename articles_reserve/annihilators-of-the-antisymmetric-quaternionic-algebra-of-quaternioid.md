@@ -16,7 +16,7 @@ operator, so it is a linear subspace.
 
 The block of this article is the **antisymmetric quaternionic multiplication**
 $$
-\tilde p\diamond\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)=p_0\vec q-q_0\vec p-\vec p\times\vec q,
+\tilde p\diamond\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)=p_0\vec q-q_t\vec p-\vec p\times\vec q,
 $$
 scalar part zero and vector part the mixed term with the cross term subtracted (*Introduction to
 the Antisymmetric Quaternionic Algebra of Quaternions*). It is alternating, so every nonzero
@@ -53,7 +53,7 @@ L_{\tilde p}\tilde x=\tilde p\diamond\tilde x,
 $$
 so that $A_\diamond(\tilde p)=\ker L_{\tilde p}$. The block is the twin of the **antisymmetric
 plain algebra**, whose annihilator of a noncentral element is the real plane
-$\mathbb{R}e_0\oplus\mathbb{R}\vec p$ (*Annihilators of the Antisymmetric Plain Algebra*); the
+$\mathbb{R}e_t\oplus\mathbb{R}\vec p$ (*Annihilators of the Antisymmetric Plain Algebra*); the
 two are the two antisymmetric blocks of the six, and this one fails the Jacobi identity where the
 plain one holds it.
 
@@ -89,15 +89,15 @@ and the kernel is all of $\mathbb{H}$.
 is annihilated, $\tilde p\in A_\diamond(\tilde p)$, by alternation; for a nonzero element the
 annihilator is exactly the line that $\tilde p$ spans.
 
-**Example.** At the scalar unit $e_0$ the operator is $L_{e_0}\tilde x=\vec x$, which vanishes
-exactly on the centre $\mathbb{R}e_0$, of real dimension one. At a nonzero pure element $\vec p$
+**Example.** At the scalar unit $e_t$ the operator is $L_{e_t}\tilde x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, which vanishes
+exactly on the centre $\mathbb{R}e_t$, of real dimension one. At a nonzero pure element $\vec p$
 the annihilator is the line $\mathbb{R}\vec p$, inside the vector subspace. The real block has
 no isotropic vector, so the line is the only value the annihilator takes away from the origin.
 
 ## The Multiplication Operator and the Rank
 
-**Proposition (the operator and its characteristic polynomial).** In the basis $e_0,e_1,e_2,e_3$
-the operator $L_{\tilde p}$ of an element $\tilde p=p_0e_0+\vec p$ has matrix
+**Proposition (the operator and its characteristic polynomial).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$
+the operator $L_{\tilde p}$ of an element $\tilde p=p_0e_t+\vec p$ has matrix
 $$
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
@@ -112,7 +112,7 @@ $$
 $$
 
 *Proof.* The columns are the values $\tilde p\diamond e_\nu$: at $\nu=0$ the value $-\vec p$, at
-$\nu=k$ the value $p_0e_k-\vec p\times e_k$. The lower three-by-three block is
+$\nu=k$ the value $p_0\vec e_k-\vec p\times \vec e_k$. The lower three-by-three block is
 $p_0\mathrm{I}_3-[\vec p]_\times$, whose eigenvalues are $p_0$ and $p_0\pm i|\vec p|$, of
 characteristic polynomial $(t-p_0)\bigl((t-p_0)^{2}+|\vec p|^{2}\bigr)$; the first row is zero,
 so the eigenvalue $0$ is added and the determinant, the constant term, vanishes. The trace $3p_0$
@@ -151,13 +151,13 @@ $\mathbb{C}\tilde p$ off the isotropic cone of the central square and the larger
 name); over $\mathbb{R}$ the cone degenerates to the origin and the annihilator is the line at
 every nonzero element. The complex antisymmetric quaternionic sesqualgebra, whose product is the
 single cross term, has for a noncentral element the plane
-$\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec Q}$, of dimension two over $\mathbb{C}$
+$\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q}$, of dimension two over $\mathbb{C}$
 (*Annihilators of the Antisymmetric Quaternionic Sesqualgebra*); the coupling of the scalar and the
 vector parts, which the block here carries and the sesquilinear one does not, is what cuts the
 annihilator down to the **real line** $\mathbb{R}\tilde p$.
 
 **The real antisymmetric plain algebra.** The real twin, the antisymmetric plain algebra, has for a
-noncentral element the two-dimensional **plane** $\mathbb{R}e_0\oplus\mathbb{R}\vec p$, because
+noncentral element the two-dimensional **plane** $\mathbb{R}e_t\oplus\mathbb{R}\vec p$, because
 its cross product ignores the scalar coordinate (*Annihilators of the Antisymmetric Plain
 Algebra*); the coupling of the scalar and the vector parts in the block here is again what cuts the
 annihilator down to the line.
@@ -165,7 +165,7 @@ annihilator down to the line.
 ## The Annihilator on the Remarkable Subspaces
 
 The quaternion space has two remarkable real subspaces, the scalar line
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$
 (*Introduction to the Remarkable Subspaces of the Quaternions*).
 
 **The restriction is alternating.** On each subspace the block restricts to an alternating
@@ -178,15 +178,15 @@ subspace, and $\tilde x\diamond\tilde x=0$ holds for every $\tilde x$ of the amb
 for every element of the subspace; the kernel of the restricted operator is the intersection of the
 ambient kernel with the subspace.
 
-**The centre.** A nonzero central element $\tilde p=\lambda e_0$ has
-$L_{\lambda e_0}\tilde x=\lambda\vec x$, the scalar multiple of the projection onto the vector
-subspace, so its annihilator is the centre $\mathbb{R}e_0$: the central elements annihilate the
+**The centre.** A nonzero central element $\tilde p=\lambda e_t$ has
+$L_{\lambda e_t}\tilde x=\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar multiple of the projection onto the vector
+subspace, so its annihilator is the centre $\mathbb{R}e_t$: the central elements annihilate the
 centre alone.
 
 **The vector subspace.** On the vector subspace, where $p_0=0$ and $\tilde x$ is pure, the
-operation is the negative cross product $\tilde p\diamond\tilde x=-\vec p\times\vec x$. The
+operation is the negative cross product $\tilde p\diamond\tilde x=-\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The
 annihilator of a nonzero pure element meets the vector subspace in the line $\mathbb{R}\vec p$
-and is that line in the ambient space; the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ of the
+and is that line in the ambient space; the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$ of the
 plain twin, which would add the centre, does not occur here.
 
 ## Summary
@@ -198,7 +198,7 @@ contain the element itself. The operator $L_{\tilde p}$ has trace $3p_0$, determ
 characteristic polynomial $t(t-p_0)\bigl((t-p_0)^{2}+|\vec p|^{2}\bigr)$: its rank is three for
 every nonzero element and its kernel the real line $\mathbb{R}\tilde p$, of real dimension one,
 while at the origin the operator is zero and the annihilator is the whole space, of real dimension
-four. At $e_0$ the annihilator is the centre, and on the vector subspace it is the line of the
+four. At $e_t$ the annihilator is the centre, and on the vector subspace it is the line of the
 element inside the subspace. The zero-divisor set of the block is the whole punctured space and
 gives none of this, and the annihilator reads the block's single exceptional element, the origin.
 Over $\mathbb{C}$ the annihilator widens on the isotropic cone of the parent; over $\mathbb{R}$ the
@@ -215,7 +215,7 @@ nonzero element.
 | $\chi_{L_{\tilde p}}(t)=t(t-p_0)\bigl((t-p_0)^{2}+|\vec p|^{2}\bigr)$ | the characteristic polynomial of the operator |
 | $\mathbb{R}\tilde p$ | the annihilator of a nonzero element, a real line of real dimension one |
 | $\mathbb{H}$ | the annihilator of $0$, the whole space of real dimension four |
-| $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ | the centre, the annihilator of the nonzero central elements |
+| $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ | the centre, the annihilator of the nonzero central elements |
 | $|\vec p|^{2}=p_1^{2}+p_2^{2}+p_3^{2}$ | the vector form, positive definite over $\mathbb{R}$ |
 
 ## Further Reading
@@ -226,5 +226,5 @@ nonzero element.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra-of-quaternioid.md`), below this article in this category, for the multiplication operator and its invariants.
 - *Annihilators in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternioid-r-space.md`), for the structure-level annihilating set, the elements that kill the whole space for a fixed product.
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar line and the vector subspace on which the restriction is read.
-- *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternioid.md`), the real twin block, whose annihilator of a noncentral element is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$.
-- *Annihilators of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-sesqualgebra.md`), the complex sibling whose annihilator of a noncentral element is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec Q}$.
+- *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternioid.md`), the real twin block, whose annihilator of a noncentral element is the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$.
+- *Annihilators of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-sesqualgebra.md`), the complex sibling whose annihilator of a noncentral element is the plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec Q}$.

@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the Hermitian form is $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-sesquilinear in the appropriate sense and **conjugate-commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric sesqualgebra. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
-- **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_0$ return the star and the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
+- **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_t$ return the star and the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Plain Sesqualgebra*.
 - **The algebraic norm and invertibility.** The norm of the structure is the Hermitian form $\langle\tilde P,\tilde Q\rangle_{*}$, positive definite; the invertibility criterion and the one-sided inverses. Owner: *Norm and Invertibility in the Symmetric Plain Sesqualgebra*.
 - **Zero divisors.** The zero-divisor set of the product and the set on which its values vanish. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -56,12 +56,12 @@ The biquaternioid symmetric plain sesqualgebra is the structure $\tilde P\star\t
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q^{*}+\tilde Q^{*}\tilde P)$ | the symmetric plain sesquilinear product, $\mathrm{SPS}$ |
 | $\langle\tilde P,\tilde Q\rangle_{*}=\sum_\mu P_\mu\overline{Q_\mu}$ | the Hermitian form; the algebraic norm |
 | $\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}\ge0$ | positivity of the norm |
-| $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\tilde Q)e_0=\langle\tilde P,\tilde Q\rangle_{*}e_0$ | the product on the state side |
+| $\tilde P\star\tilde Q=\mathrm{Sc}(\tilde P\tilde Q)e_t=\langle\tilde P,\tilde Q\rangle_{*}e_t$ | the product on the state side |
 | $\tfrac12\operatorname{Tr}(\tilde\varrho\tilde\sigma)$ | the trace pairing; one half of the amplitude |
 | $R^{\star}_{\tilde A}$, $L^{\star}_{\tilde A}$ | the two one-sided operators of the band |
 | $\mathbb{M}_+$ | the informational sector; the state side |
 | $\mathrm{APS}$ | the antisymmetric sibling; the imaginary part, which carries the phase |
-| $e_0\star\tilde X=\tilde X^{*}$ | the absence of a unit |
+| $e_t\star\tilde X=\tilde X^{*}$ | the absence of a unit |
 
 ## Further Reading
 

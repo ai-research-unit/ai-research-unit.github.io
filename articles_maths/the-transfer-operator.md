@@ -34,7 +34,7 @@ $$
 
 The map $T$ is **measure-preserving** if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$, and more generally $T$ preserves $\mu=h\,m$ exactly when $\mathcal{P}_T h=h$; the fixed points of $\mathcal{P}_T$ in the positive cone of $L^1$ are the **invariant densities**.
 
-**Theorem (elementary properties).** Let $T$ and $S$ be nonsingular. Then (i) $\mathcal{P}_T$ is linear, positive and $\|\mathcal{P}_T h\|_1=\|h\|_1$ for $h\ge0$, so $\mathcal{P}_T$ is a contraction of $L^1$; (ii) $\mathcal{P}_T\mathbf{1}$ is the density of the pushforward $m\circ T^{-1}$, and $T$ is measure-preserving if and only if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$; (iii) $\mathcal{P}_{T\circ S}=\mathcal{P}_S\circ\mathcal{P}_T$, the order reversing, because the pushforward of a composition is the composition of the pushforwards in the reverse order; and (iv) if $T$ is invertible and measure-preserving then $\mathcal{P}_T h=h\circ T^{-1}$, so $\mathcal{P}_T=U_{T^{-1}}$ and $\mathcal{P}_T^{-1}=\mathcal{P}_{T^{-1}}=U_T$.
+**Theorem (elementary properties).** Let $T$ and $S$ be nonsingular. Then (i) $\mathcal{P}_T$ is linear, positive and $\|\mathcal{P}_T h\|_1=\|h\|_1$ for $h\ge0$, so $\mathcal{P}_T$ is a contraction of $L^1$; (ii) $\mathcal{P}_T\mathbf{1}$ is the density of the pushforward $m\circ T^{-1}$, and $T$ is measure-preserving if and only if $\mathcal{P}_T\mathbf{1}=\mathbf{1}$; (iii) $\mathcal{P}_{T\circ S}=\mathcal{P}_S\circ\mathcal{P}_T$, the order reversing, because the pushforward of a composition is the composition of the pushforwards in the reverse order; and (iv) if $T$ is invertible and measure-preserving then $\mathcal{P}_T h=h\circ T^{-1}$, so $\mathcal{P}_T=\Omega_{T^{-1}}$ and $\mathcal{P}_T^{-1}=\mathcal{P}_{T^{-1}}=\Omega_T$.
 
 *Proof.* The positivity is immediate from the definition as an integral over a set. The contraction: for $h\ge0$, taking $A=X$ gives $\|\mathcal{P}_Th\|_1=\int_X\mathcal{P}_Th\,dm=\int_Xh\,dm=\|h\|_1$; for a general real $h$ one splits into the positive and negative parts, and the same identity applied to $|h|$ gives the bound. For (ii), taking $h=\mathbf{1}$ gives $\int_A\mathcal{P}_T\mathbf{1}\,dm=m(T^{-1}A)$, so $\mathcal{P}_T\mathbf{1}$ is the Radon–Nikodym derivative of $m\circ T^{-1}$, and it is $1$ exactly when $T$ preserves $m$. For (iii), $(T\circ S)^{-1}(A)=S^{-1}(T^{-1}(A))$ and the definition applies in order. For (iv), the change of variables $y=Tx$ with a measure-preserving invertible $T$ gives $\int_{T^{-1}A}h\,dm=\int_Ah\circ T^{-1}\,dm$.
 
@@ -48,7 +48,7 @@ $$
 
 the sum over the preimages of $x$.
 
-*Proof.* On a small neighbourhood $U$ of $x$ over which the branch $y_i$ is defined, the change of variables $u=y_i(v)$ gives $\int_{y_i(U)}h(u)\,du=\int_U h(y_i(v))|y_i'(v)|\,dv$ with $|y_i'(v)|=1/|T'(y_i(v))|$; summing over the branches, which partition $T^{-1}(U)$, gives the formula.
+*Proof.* On a small neighbourhood $\Omega$ of $x$ over which the branch $y_i$ is defined, the change of variables $u=y_i(v)$ gives $\int_{y_i(\Omega)}h(u)\,du=\int_\Omega h(y_i(v))|y_i'(v)|\,dv$ with $|y_i'(v)|=1/|T'(y_i(v))|$; summing over the branches, which partition $T^{-1}(\Omega)$, gives the formula.
 
 **Example (the doubling map).** For $T x=2x\bmod1$ on $[0,1]$ with Lebesgue measure the two branches are $y_1(x)=x/2$ and $y_2(x)=(x+1)/2$, and
 
@@ -98,7 +98,7 @@ consequently $\mathcal{P}_T$ on the space $\mathrm{BV}$ of functions of bounded 
 
 *Proof (sketch).* The variation of each branch contribution is estimated from the chain rule and the mean value theorem: the variation of $h\circ y_i/|T'\!\circ y_i|$ is at most the variation of $h$ times $\sup|y_i'|$, plus a term proportional to $\|h\circ y_i/|T'\circ y_i|\|_\infty$, and $\sup|y_i'|\le1/\lambda$; summing over the branches gives the displayed inequality with $\theta=1/\lambda$ up to the distortion constants, and the quasi-compactness is the standard Hennion/Nussbaum argument for an operator satisfying such an inequality.
 
-**Remark (the gap and the statistics).** The spectral gap is exactly the quantitative input of the statistical theory: the eigenvalue $1$ gives the invariant density, the remainder of the spectrum inside the disc of radius $\theta$ gives the exponential decay of correlations $\langle U_T^nf,g\rangle-\mu(f)\mu(g)=O(\theta^n)$ for functions in the space, and the analyticity of the resolvent across the spectral disc yields the central limit theorem and the large deviations by the perturbation theory of the operator. The transfer operator is thus the operator whose spectrum contains the statistical behaviour of the system.
+**Remark (the gap and the statistics).** The spectral gap is exactly the quantitative input of the statistical theory: the eigenvalue $1$ gives the invariant density, the remainder of the spectrum inside the disc of radius $\theta$ gives the exponential decay of correlations $\langle \Omega_T^nf,g\rangle-\mu(f)\mu(g)=O(\theta^n)$ for functions in the space, and the analyticity of the resolvent across the spectral disc yields the central limit theorem and the large deviations by the perturbation theory of the operator. The transfer operator is thus the operator whose spectrum contains the statistical behaviour of the system.
 
 ## The Weighted Transfer Operator and the Pressure
 

@@ -83,7 +83,7 @@ The norms of the number systems are the examples through which the general theor
 | $\mathbb{H}$ with $N(q) = q\bar q$ | the positive definite quaternion norm of dimension $4$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Quaternion Algebra* |
 | $\mathbb{B}$ with $N(q) = q\bar q$ | the complex-valued biquaternion norm; the real part and imaginary part are forms of signature $(4,4)$ | *Quadratic Forms over Algebras and Norms*; *The Realification and the Effect of the Change of Scalars* |
 | the split biquaternions $\mathbb{H}_{\mathbb{D}}$ | a norm that is isotropic; the split form of the quaternion norm | *Quadratic Forms over Algebras and Norms*; *Split-Biquaternions and Hyperbolic Geometry* |
-| $\mathbb{O}$ with $N(x) = x\bar x$ | the octonion norm of dimension $8$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms*; *Octonion Algebra* |
+| $\mathbb{O}$ with $N(x) = x\bar x$ | the octonion norm of dimension $8$; a composition law; anisotropic | *Quadratic Forms over Algebras and Norms* |
 | the split octonions | the isotropic norm of dimension $8$; the $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$ | *Quadratic Forms over Algebras and Norms* |
 | the quadric $\mathcal{Q}(Q)$ | the projective quadric $\{[x] : \mathfrak{Q}(x) = 0\}$ of an $A$-valued form | *Quadratic Forms over Algebras and Norms*; *Projective Geometry* |
 

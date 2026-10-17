@@ -9,41 +9,41 @@ The split-quaternion algebra, its split-quaternion norm and its idempotents are 
 
 ## The Metric Structure
 
-**Definition.** Identify $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ by $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, and put
+**Definition.** Identify $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ by $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, and put
 
 $$
-|\tilde q|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
+|\tilde q|^2 = q_t^2 + q_x^2 + q_y^2 + q_z^2 .
 $$
 
-This is the **Euclidean norm** of the algebra. The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$ is indefinite and is not a norm in the analytic sense.
+This is the **Euclidean norm** of the algebra. The split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ is indefinite and is not a norm in the analytic sense.
 
-**Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q,\tilde p \in \mathbb{H}_{\mathrm{s}}$,
+**Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$,
 
 $$
-|\tilde q \tilde p| \leq \sqrt{2}\,|\tilde q|\,|\tilde p| .
+|\tilde q_1 \tilde q_2| \leq \sqrt{2}\,|\tilde q_1|\,|\tilde q_2| .
 $$
 
 The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{2}$, and it induces the product topology of $\mathbb{R}^4$.
 
-**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q \tilde p|^2 \leq 2\,|\tilde q|^2|\tilde p|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_0p_0 - B(\vec q,\vec v)$ and the vector part $q_0\vec v + p_0\vec q + \tfrac12[\vec q,\vec v]$; equality is attained at $\tilde q = \tilde p = 1 + e_2$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
+**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q_1 \tilde q_2|^2 \leq 2\,|\tilde q_1|^2|\tilde q_2|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_{1t}q_{2t} - B(\vec q_1,\vec q_2)$ and the vector part $q_{1t}\vec q_2 + q_{2t}\vec q_1 + \tfrac12[\vec q_1,\vec q_2]$; equality is attained at $\tilde q_1 = \tilde q_2 = 1 + \vec e_y$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
 
-**Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $U$ and the level sets of the split-quaternion norm are closed subsets.
+**Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $\mathrm{U}$ and the level sets of the split-quaternion norm are closed subsets.
 
 **Proof.** The units are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{\tilde q \neq 0, \langle\tilde q\rangle_{\natural}=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $\langle\cdot\rangle_{\natural}$ is continuous.
 
-**Corollary (No Multiplicative Norm).** There is no norm on the algebra satisfying $|\tilde q \tilde p| = |\tilde q||\tilde p|$ for all $\tilde q,\tilde p$.
+**Corollary (No Multiplicative Norm).** There is no norm on the algebra satisfying $|\tilde q_1 \tilde q_2| = |\tilde q_1||\tilde q_2|$ for all $\tilde q_1,\tilde q_2$.
 
-**Proof.** Such a norm would force $\tilde q \neq 0 \neq \tilde p \Rightarrow \tilde q \tilde p \neq 0$, which fails for the zero divisors of *Split-Quaternion Zero Divisors*.
+**Proof.** Such a norm would force $\tilde q_1 \neq 0 \neq \tilde q_2 \Rightarrow \tilde q_1 \tilde q_2 \neq 0$, which fails for the zero divisors of *Split-Quaternion Zero Divisors*.
 
 ## Limits and Continuity
 
-**Definition.** A function $f : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ has **limit** $L$ at $q_0$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - q_0| < \delta$; and $f$ is **continuous** at $q_0$ when the limit there is $f(q_0)$.
+**Definition.** A function $f : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ has **limit** $L$ at $\tilde q_1$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - \tilde q_1| < \delta$; and $f$ is **continuous** at $\tilde q_1$ when the limit there is $f(\tilde q_1)$.
 
-**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q,\tilde p) \mapsto \tilde q+\tilde p$, $(\tilde q,\tilde p)\mapsto \tilde q \tilde p$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
+**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q_1,\tilde q_2) \mapsto \tilde q_1+\tilde q_2$, $(\tilde q_1,\tilde q_2)\mapsto \tilde q_1 \tilde q_2$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
 
-**Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q \tilde p - q_0p_0| \leq |\tilde q-q_0||\tilde p| + |q_0||\tilde p-p_0|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-q_0^{-1} = \tilde q^{-1}(q_0-\tilde q)q_0^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $q_0$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $\langle\tilde q\rangle_{\natural}$.
+**Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q_1 \tilde q_2 - q_{1t}q_{2t}| \leq |\tilde q_1-q_{1t}||\tilde q_2| + |q_{1t}||\tilde q_2-q_{2t}|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-\tilde q_1^{-1} = \tilde q^{-1}(\tilde q_1-\tilde q)\tilde q_1^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $\tilde q_1$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $\langle\tilde q\rangle_{\natural}$.
 
-**Corollary (Coordinate Description).** Continuity, limits and convergence of sequences in the algebra are equivalent to the corresponding statements for the four real coordinates $(q_0,q_1,q_2,q_3)$.
+**Corollary (Coordinate Description).** Continuity, limits and convergence of sequences in the algebra are equivalent to the corresponding statements for the four real coordinates $(q_t,q_x,q_y,q_z)$.
 
 **Proof.** The coordinates are continuous functions on the algebra and the algebra is $\mathbb{R}^4$ with the Euclidean topology, so the two notions coincide.
 
@@ -75,35 +75,35 @@ for every invertible $h$, and the quotient depends on $h$ unless $\tilde q$ is c
 
 ## The Differential Operators
 
-**Definition.** With the coordinates $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the **vector operator** of the system is
+**Definition.** With the coordinates $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, the **vector operator** of the system is
 
 $$
-D = e_1 \frac{\partial}{\partial q_1} + e_2 \frac{\partial}{\partial q_2} + e_3 \frac{\partial}{\partial q_3},
+D = \vec e_x \frac{\partial}{\partial q_x} + \vec e_y \frac{\partial}{\partial q_y} + \vec e_z \frac{\partial}{\partial q_z},
 $$
 
-acting on functions of the four coordinates, and the **scalar** derivative is $\partial_{q_0} = \partial/\partial q_0$.
+acting on functions of the four coordinates, and the **scalar** derivative is $\partial/\partial q_t$.
 
-**Theorem (The Square of the Operator Is the Wave Operator).** Using $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$ and $e_ie_j = -e_je_i$ for $i \neq j$,
+**Theorem (The Square of the Operator Is the Wave Operator).** Using $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = +1$ and $e_ie_j = -e_je_i$ for $i \neq j$,
 
 $$
-D^2 = -\frac{\partial^2}{\partial q_1^2} + \frac{\partial^2}{\partial q_2^2} + \frac{\partial^2}{\partial q_3^2} = \Box_{(2,1)},
+D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \frac{\partial^2}{\partial q_z^2} = \Box_{(2,1)},
 $$
 
 the wave operator of the form of signature $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
 
 $$
-q_1^2 - q_2^2 - q_3^2 = 0 ,
+q_x^2 - q_y^2 - q_z^2 = 0 ,
 $$
 
 which is the zero divisor set of the algebra in the vector subspace.
 
-**Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, whose square is $-\xi_1^2 + \xi_2^2 + \xi_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, the null cone of the vector subspace is the zero divisor set.
+**Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $\vec e_x \xi_1 + \vec e_y \xi_2 + \vec e_z \xi_3$, whose square is $-\xi_1^2 + \xi_2^2 + \xi_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*Definition and Criterion*, the null cone of the vector subspace is the zero divisor set.
 
-**Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions. Every solution of $Df = 0$ solves the wave equation $\Box_{(2,1)}f = 0$, because $D^2 = \Box_{(2,1)}$, but not conversely: the scalar function $f = bc$ satisfies $\Box_{(2,1)}f = 0$ while $Df = q_2\,e_1 + q_1\,e_2 \neq 0$. The monogenic class is therefore a proper subclass of the wave solutions, it is not closed under the operations of the elliptic theory, and its members have neither the mean-value property nor the maximum principle nor the elliptic regularity of *Clifford Analysis*; the zero divisors of the algebra are exactly the characteristic directions of the operator.
+**Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions. Every solution of $Df = 0$ solves the wave equation $\Box_{(2,1)}f = 0$, because $D^2 = \Box_{(2,1)}$, but not conversely: the scalar function $f = q_x q_y$ satisfies $\Box_{(2,1)}f = 0$ while $Df = q_y\,\vec e_x + q_x\,\vec e_y \neq 0$. The monogenic class is therefore a proper subclass of the wave solutions, it is not closed under the operations of the elliptic theory, and its members have neither the mean-value property nor the maximum principle nor the elliptic regularity of *Clifford Analysis*; the zero divisors of the algebra are exactly the characteristic directions of the operator.
 
 **Proof.** The implication is $D^2 = \Box_{(2,1)}$, the counterexample is the displayed computation, and an operator with a cone of nonzero characteristic vectors is not elliptic, so the elliptic-theoretic properties fail along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. That the class is much smaller than the wave solutions, and in particular is not parametrised by arbitrary data on a hypersurface, is the kernel computation of *Split-Quaternion Integration*, §*The Kernel of the Vector Operator*, where the two transported families and the nonzero compactly supported solutions are exhibited. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*.
 
-**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $e_1,e_2,e_3$ of $\mathbb{H}_{\mathrm{s}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
+**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{H}_{\mathrm{s}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
 
 **Proof.** The generators of $\mathbb{H}_{\mathrm{s}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators.
 
@@ -119,14 +119,14 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Corollary (No Identity Theorem).** Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.
 
-**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde r \neq 0$ has $\tilde r^2 = 0$, then the function $\tilde q \mapsto \tilde r(\tilde q - q_0)$ vanishes on the set $\tilde q - q_0 \in \tilde r\mathbb{H}_{\mathrm{s}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde r(\tilde q-q_0)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
+**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $\tilde\nu \neq 0$ has $\tilde\nu^2 = 0$, then the function $\tilde q \mapsto \tilde\nu(\tilde q - q_t)$ vanishes on the set $\tilde q - q_t \in \tilde\nu\mathbb{H}_{\mathrm{s}}$, which contains a point but not an open set, while $\tilde q \mapsto \tilde\nu(\tilde q-q_t)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*.
 
 ## Singularities
 
-**Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_0 + v$ with $v \in V$, then
+**Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_t + \vec q$ with $\vec q \in V$, then
 
 $$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_0 - v}{q_0^2 - \langle v\rangle_{\natural}},
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{q_t - \vec q}{q_t^2 - \langle \vec q\rangle_{\natural}},
 $$
 
 which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.
@@ -141,7 +141,7 @@ which blows up as the denominator tends to zero, and the limit depends on the di
 
 The idempotents of the algebra give coordinates in which the algebraic operations become explicit, and they turn the calculus into a coordinatewise calculus.
 
-**Definition.** With $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$, the **Peirce coordinates** of $\tilde q$ are
+**Definition.** With $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$, the **Peirce coordinates** of $\tilde q$ are
 
 $$
 \tilde q = \sum_{\epsilon,\eta \in \{+,-\}} \tilde\pi_\epsilon\, \tilde q\, \tilde\pi_\eta,
@@ -155,33 +155,33 @@ $$
 \tilde q \longmapsto \big(\tilde\pi_1\tilde q\tilde\pi_1,\ \tilde\pi_1\tilde q\tilde\pi_2,\ \tilde\pi_2\tilde q\tilde\pi_1,\ \tilde\pi_2\tilde q\tilde\pi_2\big)
 $$
 
-is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q, \tilde p$,
+is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $\tilde q_1, \tilde q_2$,
 
 $$
-(\tilde\pi_\epsilon \tilde q \tilde\pi_\eta)(\tilde\pi_{\eta'} \tilde p \tilde\pi_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
+(\tilde\pi_\epsilon \tilde q_1 \tilde\pi_\eta)(\tilde\pi_{\eta'} \tilde q_2 \tilde\pi_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
 $$
 
-and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q \tilde\pi_\eta \tilde p) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}_{\mathrm{s}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
+and, when $\eta = \eta'$, the product is $\tilde\pi_\epsilon (\tilde q_1 \tilde\pi_\eta \tilde q_2) \tilde\pi_{\epsilon'}$, which lies in the line $\tilde\pi_\epsilon\mathbb{H}_{\mathrm{s}}\tilde\pi_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
 
-Written in the basis $1, e_1, e_2, e_3$, the four components of $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are
+Written in the basis $1, \vec e_x, \vec e_y, \vec e_z$, the four components of $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ are
 
 $$
-\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\,\tilde\pi_1, \qquad \tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\,\tilde\pi_2, \qquad \tilde\pi_1\tilde q\tilde\pi_2 = \tfrac{q_1-q_3}{2}(e_1-e_3), \qquad \tilde\pi_2\tilde q\tilde\pi_1 = \tfrac{q_1+q_3}{2}(e_1+e_3).
+\tilde\pi_1\tilde q\tilde\pi_1 = (q_t+q_y)\,\tilde\pi_1, \qquad \tilde\pi_2\tilde q\tilde\pi_2 = (q_t-q_y)\,\tilde\pi_2, \qquad \tilde\pi_1\tilde q\tilde\pi_2 = \tfrac{q_x-q_z}{2}(\vec e_x-\vec e_z), \qquad \tilde\pi_2\tilde q\tilde\pi_1 = \tfrac{q_x+q_z}{2}(\vec e_x+\vec e_z).
 $$
 
 The Peirce coordinates of an element are the four numbers
 
 $$
-(q_0+q_2,\ q_0-q_2,\ q_1-q_3,\ q_1+q_3),
+(q_t+q_y,\ q_t-q_y,\ q_x-q_z,\ q_x+q_z),
 $$
 
-which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\tilde\pi_1 = (q_0+q_2)\tilde\pi_1$ and $\tilde\pi_2\tilde q\tilde\pi_2 = (q_0-q_2)\tilde\pi_2$, together with the two off-diagonal corner coefficients $q_1-q_3$ and $q_1+q_3$; they are a linear change of the standard coordinates $(q_0,q_1,q_2,q_3)$.
+which are the two eigenvalues of the diagonal projections, $\tilde\pi_1\tilde q\tilde\pi_1 = (q_t+q_y)\tilde\pi_1$ and $\tilde\pi_2\tilde q\tilde\pi_2 = (q_t-q_y)\tilde\pi_2$, together with the two off-diagonal corner coefficients $q_x-q_z$ and $q_x+q_z$; they are a linear change of the standard coordinates $(q_t,q_x,q_y,q_z)$.
 
-**Proof.** The decomposition of the identity $1 = \tilde\pi_1 + \tilde\pi_2$ with $\tilde\pi_1\tilde\pi_2 = \tilde\pi_2\tilde\pi_1 = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_1\tilde\pi_1 = \tilde\pi_1$, $\tilde\pi_{1,2} e_2 \tilde\pi_{1,2} = \pm \tilde\pi_{1,2}$, $\tilde\pi_1e_1\tilde\pi_1 = \tilde\pi_1e_3\tilde\pi_1 = \tilde\pi_2e_1\tilde\pi_2 = \tilde\pi_2e_3\tilde\pi_2 = 0$, $\tilde\pi_1e_1\tilde\pi_2 = \tfrac12(e_1-e_3)$, $\tilde\pi_1e_3\tilde\pi_2 = -\tfrac12(e_1-e_3)$, $\tilde\pi_2e_1\tilde\pi_1 = \tilde\pi_2e_3\tilde\pi_1 = \tfrac12(e_1+e_3)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
+**Proof.** The decomposition of the identity $1 = \tilde\pi_1 + \tilde\pi_2$ with $\tilde\pi_1\tilde\pi_2 = \tilde\pi_2\tilde\pi_1 = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $\tilde\pi_\eta \tilde\pi_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $\tilde\pi_1\tilde\pi_1 = \tilde\pi_1$, $\tilde\pi_{1,2} \vec e_y \tilde\pi_{1,2} = \pm \tilde\pi_{1,2}$, $\tilde\pi_1\vec e_x\tilde\pi_1 = \tilde\pi_1\vec e_z\tilde\pi_1 = \tilde\pi_2\vec e_x\tilde\pi_2 = \tilde\pi_2\vec e_z\tilde\pi_2 = 0$, $\tilde\pi_1\vec e_x\tilde\pi_2 = \tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_1\vec e_z\tilde\pi_2 = -\tfrac12(\vec e_x-\vec e_z)$, $\tilde\pi_2\vec e_x\tilde\pi_1 = \tilde\pi_2\vec e_z\tilde\pi_1 = \tfrac12(\vec e_x+\vec e_z)$. The Peirce coordinates are read off the multiplication table, and they are a linear change of the standard coordinates.
 
 **Corollary (Partial Derivatives and Smoothness).** A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates; the partial derivatives with respect to the Peirce coordinates are the components of the derivative, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.
 
-**Proof.** The map to the Peirce coordinates is a linear isomorphism, hence a diffeomorphism, and the definition of smoothness is transported along it; the operators have constant coefficients in the coordinates $(q_0,q_1,q_2,q_3)$ and therefore in the linear coordinates.
+**Proof.** The map to the Peirce coordinates is a linear isomorphism, hence a diffeomorphism, and the definition of smoothness is transported along it; the operators have constant coefficients in the coordinates $(q_t,q_x,q_y,q_z)$ and therefore in the linear coordinates.
 
 ## Comparison with the Quaternion and Split-Complex Cases
 
@@ -201,17 +201,17 @@ The quaternion column is the content of *Quaternion Analysis*, and the split-com
 
 The algebra is a normed algebra up to the constant $\sqrt{2}$ in the Euclidean norm, with the product topology of $\mathbb{R}^4$, the units open and the zero divisors closed. Limits and continuity are the coordinatewise notions of the four real coordinates. The naive derivative fails already for $\tilde q \mapsto \tilde q^2$, because the difference quotient involves the conjugate $h\tilde q h^{-1}$, and it fails again near the null cone, where $h$ need not be invertible.
 
-The natural operators are the vector operator $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
+The natural operators are the vector operator $D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $|\tilde q|^2 = q_0^2+q_1^2+q_2^2+q_3^2$ | the Euclidean norm | this article |
-| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the split-quaternion norm, indefinite, not a norm in the analytic sense | *Split-Quaternion Algebra* |
-| $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ | the vector operator | this article |
+| $|\tilde q|^2 = q_t^2+q_x^2+q_y^2+q_z^2$ | the Euclidean norm | this article |
+| $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, indefinite, not a norm in the analytic sense | *Split-Quaternion Algebra* |
+| $D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z$ | the vector operator | this article |
 | $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
-| $q_1^2-q_2^2-q_3^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
+| $q_x^2-q_y^2-q_z^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
 | power series $\sum q_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |
 | $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |

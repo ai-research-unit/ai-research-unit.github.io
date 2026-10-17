@@ -23,10 +23,10 @@ that reverses every tangent vector. It is smooth, it commutes with the bundle pr
 **Definition.** The **geodesic symmetry** at $p$ is the conjugate of $\iota$ by the exponential map,
 
 $$
-\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1} : U \longrightarrow U, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
+\sigma_p = \exp_p\circ\iota\circ\exp_p^{-1} : \Omega \longrightarrow \Omega, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
 $$
 
-on a normal neighbourhood $U$ of $p$; the previous articles of this category use it as the defining involution of a locally symmetric space.
+on a normal neighbourhood $\Omega$ of $p$; the previous articles of this category use it as the defining involution of a locally symmetric space.
 
 **Theorem.** The geodesic symmetry is an involution of the normal neighbourhood, fixing $p$ alone and reversing every geodesic through $p$, and its differential at $p$ is the geodesic involution of the tangent space:
 

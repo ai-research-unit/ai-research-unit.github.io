@@ -21,7 +21,6 @@ An **algebra over a field** $F$ is an $F$-module with a bilinear product; it is 
 | Centre $Z(A)$ | the elements commuting with every element; a commutative subalgebra | *Algebras* |
 | Lie algebra | an anticommutative product satisfying the Jacobi identity; not associative | *Lie Algebras* |
 | Jordan algebra | a commutative product satisfying the Jordan identity; not associative | *Jordan Algebras* |
-| Non-example: a non-associative algebra | fails associativity: the octonions and the Lie algebras are the examples | *Octonion Algebra* |
 | Non-example: a non-unital algebra | fails to have an identity: the even part of a Clifford algebra with a nontrivial radical | *Clifford Algebras* |
 
 ## Associative Algebras and Their Invariants
@@ -68,7 +67,7 @@ The tensor algebra $T(V)$ is the free associative algebra on a vector space, and
 | Symmetric algebra $\operatorname{Sym}(V)$ | the polynomial algebra on $\dim V$ generators; centre the whole algebra | *The Symmetric Algebra of a Module* |
 | Exterior algebra $\Lambda(V)$ | dimension $2^{\dim V}$; graded-commutative; not commutative for $\dim V \geq 2$ | *The Exterior Algebra* |
 | Clifford algebra $\mathrm{Cl}(V,\mathfrak{Q})$ | dimension $2^{\dim V}$; centre computed from the volume element; a $\mathbb{Z}/2$-grading | *Clifford Algebras* |
-| Universal enveloping algebra $U(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
+| Universal enveloping algebra $\mathrm{U}(\mathrm{G})$ | infinite-dimensional; centre the Casimir-type elements; by PBW a filtered deformation of $\operatorname{Sym}(\mathrm{G})$ | *Representations of Lie Algebras* |
 | Weyl algebra $A_1$ | infinite-dimensional; centre $k$; the algebra of polynomial differential operators, with $yx - xy = 1$ | *Quotients of the Tensor Algebra* |
 | Quotients giving the number systems | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{D}$ and $\mathbb{H}$ as quotients of $T(V)$ | *Quotients of the Tensor Algebra* |
 | Clifford algebras in finite dimensions | the real Clifford algebras of dimension $2^n$, with their centre and periodicity | *Clifford Algebras in Finite Dimensions* |
@@ -83,12 +82,10 @@ The number systems give the corpus its chain of non-associative algebras: $\math
 | Algebra | Dimension, centre, ideals | Introduced in |
 |---|---|---|
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ | dimensions $1$, $2$, $4$; centres $\mathbb{R}$, $\mathbb{C}$, $\mathbb{R}$; associative division algebras | *Division Algebras* |
-| Octonions $\mathbb{O}$ | dimension $8$; centre $\mathbb{R}$; a non-associative division algebra | *Octonion Algebra* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | dimension $8$; centre $\mathbb{D}$; associative with zero divisors, isomorphic to $\mathbb{H}\oplus\mathbb{H}$; not a division algebra | *Split-Biquaternion Algebra* |
 | Lie algebra $\mathrm{GL}_n(k)$ | dimension $n^2$; centre the scalar matrices; non-associative, with the bracket | *Lie Algebras* |
 | Jordan algebra | commutative and non-associative, with the Jordan identity; the spin factors as examples | *Jordan Algebras* |
 | The number systems as Clifford algebras | the realisation of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$ inside Clifford algebras of a form | *The Number Systems as Clifford Algebras* |
-| Non-example: the octonions as associative | fails associativity: the associator is nonzero | *Octonion Algebra* |
 | Non-example: the split biquaternions as a division algebra | fail to be a division algebra: they have zero divisors, though they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
 
 ## Summary
@@ -103,7 +100,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 |---|---|
 | $T(V)$, $\operatorname{Sym}(V)$, $\Lambda(V)$ | tensor, symmetric and exterior algebras |
 | $\mathrm{Cl}(V,\mathfrak{Q})$ | Clifford algebra of a quadratic form |
-| $U(\mathrm{G})$ | universal enveloping algebra of a Lie algebra |
+| $\mathrm{U}(\mathrm{G})$ | universal enveloping algebra of a Lie algebra |
 | $A_1$ | the Weyl algebra, $yx - xy = 1$ |
 | $M_n(k)$ | matrix algebra |
 | $Z(A)$ | centre of an algebra |

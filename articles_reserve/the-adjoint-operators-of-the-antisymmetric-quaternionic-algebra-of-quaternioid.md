@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ carries the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$, which fails the Jacobi identity (*The Jacobi
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$, which fails the Jacobi identity (*The Jacobi
 Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, below this article in
 this category). This article reads its adjoint operators: the left multiplications by an element, their
 matrix and invariants, the failure of the derivation property and its identity with the Jacobi failure,
@@ -25,9 +25,9 @@ Quaternions* and *The Jacobi Failure and the Associator Defect of the Antisymmet
 Algebra*, below this article in this category. The comparator is *The Adjoint Operators and the
 chapter.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the **centre** is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; a generic element is $\tilde q=q_te_t+\vec q$, the **centre** is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 The **adjoint operator** is the left multiplication $L^{\diamond}_{\tilde p}\tilde q=\tilde p\diamond\tilde q$,
 with matrix $M_{\tilde p}$ in the coefficient basis, and the **derivation** is an endomorphism $D$ with
 $D(\tilde p\diamond\tilde q)=D\tilde p\diamond\tilde q+\tilde p\diamond D\tilde q$. The **cyclic sum**
@@ -37,10 +37,10 @@ Quaternionic Algebra*, below this article in this category.
 ## The Adjoint Operators
 
 **Proposition.** The adjoint operator of $\tilde p$ is
-$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, $\mathbb{R}$-linear,
-and the map $\tilde p\mapsto L^{\diamond}_{\tilde p}$ is injective, since $L^{\diamond}_{\tilde p}e_0=-\vec p$.
+$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$, $\mathbb{R}$-linear,
+and the map $\tilde p\mapsto L^{\diamond}_{\tilde p}$ is injective, since $L^{\diamond}_{\tilde p}e_t=-\vec p$.
 
-**Proposition (the matrix).** In the basis $(e_0,e_1,e_2,e_3)$ the matrix is
+**Proposition (the matrix).** In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the matrix is
 
 $$
 M_{\tilde p}=\begin{pmatrix}
@@ -54,8 +54,8 @@ $$
 the first column being $-\vec p$ and the three-by-three block carrying $p_0\mathrm{I}_3-[\vec p]_\times$.
 
 *Proof.* The columns are the coordinates of $\tilde p\diamond e_\nu$: at $\nu=0$ the value is $-\vec p$;
-at $\nu=k$ the value is $p_0e_k-\vec p\times e_k$, whose coordinates are $p_0$ on the $k$-th vector
-line and the cross terms of $\vec p\times e_k$ elsewhere.
+at $\nu=k$ the value is $p_0\vec e_k-\vec p\times \vec e_k$, whose coordinates are $p_0$ on the $k$-th vector
+line and the cross terms of $\vec p\times \vec e_k$ elsewhere.
 
 **Theorem (the invariants).** The operator has
 
@@ -98,9 +98,9 @@ $$
 \bigl([L^{\diamond}_{\tilde p},L^{\diamond}_{\tilde q}]-L^{\diamond}_{\tilde p\diamond\tilde q}\bigr)\tilde r=-\,J(\tilde p,\tilde q,\tilde r).
 $$
 
-The defect is nonzero on $18$ of the $64$ basis triples, and the witness is $(e_0,e_1,e_2)$: there
-$L^{\diamond}_{e_0}(e_1\diamond e_2)=-e_3$ against
-$L^{\diamond}_{e_0}e_1\diamond e_2+e_1\diamond L^{\diamond}_{e_0}e_2=-e_3-e_3=-2e_3$, a defect $e_3$.
+The defect is nonzero on $18$ of the $64$ basis triples, and the witness is $(e_t,\vec e_x,\vec e_y)$: there
+$L^{\diamond}_{e_t}(\vec e_x\diamond \vec e_y)=-\vec e_z$ against
+$L^{\diamond}_{e_t}\vec e_x\diamond \vec e_y+\vec e_x\diamond L^{\diamond}_{e_t}\vec e_y=-\vec e_z-\vec e_z=-2\vec e_z$, a defect $\vec e_z$.
 
 *Proof.* Expanding, the derivation defect is $p\diamond(q\diamond r)-(p\diamond q)\diamond r-q\diamond(p\diamond r)=-J(p,q,r)$
 by the closed form of the cyclic sum, and the homomorphism defect is the same operator, $-J$, since it equals the derivation defect. The count and
@@ -114,7 +114,7 @@ $$
 \bigl[L^{\diamond}_{\tilde p},L^{\diamond}_{\tilde q}\bigr]=L^{\diamond}_{\tilde p\diamond\tilde q}-J(\tilde p,\tilde q,\cdot),
 $$
 
-with $J(\tilde p,\tilde q,\cdot)$ the operator $r\mapsto -p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$,
+with $J(\tilde p,\tilde q,\cdot)$ the operator $r\mapsto -p_0(\vec q\times\vec r)+q_t(\vec p\times\vec r)-r_0(\vec p\times\vec q)$,
 nonzero for general arguments; the block's adjoint map is therefore not a representation.
 
 ## The Derivation Algebra
@@ -122,17 +122,17 @@ nonzero for general arguments; the block's adjoint map is therefore not a repres
 **Theorem (the derivations are all outer).** The derivation algebra of the block is
 
 $$
-\operatorname{Der}(\diamond)=\{\text{the maps annihilating }e_0\text{ and acting on }\mathrm{Vect}(\mathbb{H})\text{ by skew maps}\},
+\operatorname{Der}(\diamond)=\{\text{the maps annihilating }e_t\text{ and acting on }\mathrm{Vect}(\mathbb{H})\text{ by skew maps}\},
 $$
 
 of real dimension three, and every derivation is **outer**: there is no nonzero inner derivation.
 
 *Proof.* Let $D$ be the matrix of a general endomorphism and impose $D(\tilde p\diamond\tilde q)=D\tilde p\diamond\tilde q+\tilde p\diamond D\tilde q$
 on the sixteen basis pairs. The system forces the first row and the first column of $D$ to vanish, so
-$D(e_0)=0$ and $D$ preserves the vector subspace, and leaves the three-by-three vector block a general
+$D(e_t)=0$ and $D$ preserves the vector subspace, and leaves the three-by-three vector block a general
 skew matrix; its solution space is therefore the skew maps of the vector subspace, of dimension three.
-For the inner derivations, $L^{\diamond}_{\tilde p}e_0=-\vec p$ vanishes exactly when $\vec p=0$,
-and then $L^{\diamond}_{e_0}=\mathrm{diag}(0,1,1,1)$ is not a derivation, so the only inner derivation is
+For the inner derivations, $L^{\diamond}_{\tilde p}e_t=-\vec p$ vanishes exactly when $\vec p=0$,
+and then $L^{\diamond}_{e_t}=\mathrm{diag}(0,1,1,1)$ is not a derivation, so the only inner derivation is
 zero.
 
 **Remark (the contrast with the Lie case).** The adjacent block $\mathrm{APA}$ has a three-dimensional
@@ -141,10 +141,10 @@ derivation algebra $\mathfrak{so}(3)$. The block of this article has a three-dim
 algebra, all of it outer: the adjoint map is not a representation and its image contributes no
 derivation. The two derivation algebras are the same algebra, reached in opposite ways.
 
-**Remark (the automorphism group).** An automorphism of the bracket fixes $e_0$: the identity
-$T(e_0\diamond\tilde u)=T(e_0)\diamond T\tilde u$ exhibits the left multiplication by $T(e_0)$ as a
+**Remark (the automorphism group).** An automorphism of the bracket fixes $e_t$: the identity
+$T(e_t\diamond\tilde u)=T(e_t)\diamond T\tilde u$ exhibits the left multiplication by $T(e_t)$ as a
 rank-three idempotent, and by the matrix above $L^{\diamond}_{\tilde p}$ is a rank-three idempotent only
-at $\tilde p=e_0$. It therefore preserves the vector subspace and the cross product on it; the
+at $\tilde p=e_t$. It therefore preserves the vector subspace and the cross product on it; the
 automorphism group is the group of linear maps of the vector subspace preserving the cross product, of
 real dimension three, whose Lie algebra is the derivation algebra above. The structure group, with the
 scalar multiplier free, is its product with $\mathbb{R}^{\times}$, of real dimension four.
@@ -177,27 +177,27 @@ of the parent product.
 | the operator | $\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})$ | $M_{\tilde p}$, first column $-\vec p$ |
 | the trace | $0$ | $3p_0$ |
 | the rank | $2$ off the centre | $3$ off the origin |
-| the kernel | the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ | the line $\mathbb{R}\tilde p$ |
+| the kernel | the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$ | the line $\mathbb{R}\tilde p$ |
 | the commutator formula | $\operatorname{ad}_{\tilde p\times\tilde q}=[\operatorname{ad}_{\tilde p},\operatorname{ad}_{\tilde q}]$ | $[L_{\tilde p},L_{\tilde q}]=L_{\tilde p\diamond\tilde q}-J(\tilde p,\tilde q,\cdot)$ |
 | the derivations | three-dimensional, all inner | three-dimensional, all outer |
 | the pure part | $\vec p\times\cdot$ | $-\vec p\times\cdot$ |
 
 **Remark (the deformation).** On pure elements the block is the negative of the cross product, so the
 operator of a pure element is the operator of $\mathrm{APA}$ with the sign reversed, a Lie bracket on
-the vector subspace; for a general element the two mixed terms $p_0\vec q-q_0\vec p$ are added,
+the vector subspace; for a general element the two mixed terms $p_0\vec q-q_t\vec p$ are added,
 the trace $3p_0$ appears where it was zero, the kernel shrinks from a plane to the line of the element,
 and the commutator acquires the deviation $J$, the operator form of the Jacobi failure.
 
 ## Summary
 
 The adjoint operator of the antisymmetric quaternionic block is the left multiplication
-$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, of matrix with
+$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$, of matrix with
 first column $-\vec p$ and vector block $p_0\mathrm{I}_3-[\vec p]_\times$, of trace $3p_0$,
 determinant zero, rank three off the origin, characteristic polynomial
 $t(t-p_0)\bigl((t-p_0)^2+|\vec p|^2\bigr)$, kernel the line $\mathbb{R}\tilde p$ and image the vector
 subspace. The operators are not derivations: the derivation defect is $-J$ and the homomorphism defect
 is $-J$, both zero exactly on the triples on which the cyclic sum vanishes, with the witness
-$(e_0,e_1,e_2)$ giving a defect $e_3$; the commutator of two operators is the operator of the value
+$(e_t,\vec e_x,\vec e_y)$ giving a defect $\vec e_z$; the commutator of two operators is the operator of the value
 minus the operator form of the cyclic sum. The operators and their products span an associative algebra
 of dimension twelve, thirteen with the identity, and generate a Lie algebra of dimension seven. The
 derivations of the block are the skew maps of the vector subspace, of dimension three, and all are

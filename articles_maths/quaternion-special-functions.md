@@ -7,9 +7,9 @@ This article introduces the quaternion special functions as a collection of name
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The order of presentation follows the dependency order: the quaternion exponential and its consequences first, then functions defined from them, then functions defined by series and integrals.
 
-Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
+Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
-Here the quaternion norm $\langle\tilde q\rangle_{\natural}$ is real and non-negative, so there is a single regime rather than two, and a function of the quaternion variable is computed from its scalar part $q_0$ and the modulus $|\vec q|$ of its vector part, without the complex factorisations of that case.
+Here the quaternion norm $\langle\tilde q\rangle_{\natural}$ is real and non-negative, so there is a single regime rather than two, and a function of the quaternion variable is computed from its scalar part $q_t$ and the modulus $|\vec q|$ of its vector part, without the complex factorisations of that case.
 
 ## The Exponential and the Logarithm
 
@@ -24,14 +24,14 @@ $$
 The series converges absolutely for every $\tilde q$, because the quaternion norm is submultiplicative. The function is entire in the quaternion sense, and it satisfies
 
 $$
-\exp(p + \tilde q) = \exp(p) \exp(\tilde q) \quad \text{only if } p\tilde q = \tilde q p,
+\exp(\tilde q_1 + \tilde q_2) = \exp(\tilde q_1) \exp(\tilde q_2) \quad \text{only if } \tilde q_1\tilde q_2 = \tilde q_2\tilde q_1,
 $$
 
 $$
 \exp(0) = 1, \qquad \exp'(\tilde q) = \exp(\tilde q).
 $$
 
-**Caution.** The exponential is not multiplicative in general, because $\mathbb{H}$ is not commutative. The identity $\exp(p + \tilde q) = \exp(p) \exp(\tilde q)$ holds if and only if $p$ and $\tilde q$ commute.
+**Caution.** The exponential is not multiplicative in general, because $\mathbb{H}$ is not commutative. The identity $\exp(\tilde q_1 + \tilde q_2) = \exp(\tilde q_1) \exp(\tilde q_2)$ holds if and only if $\tilde q_1$ and $\tilde q_2$ commute.
 
 For a pure quaternion $\vec q \in \operatorname{Im}\mathbb{H}$ with $|\vec q| = \theta$, the exponential is
 
@@ -47,15 +47,15 @@ $$
 
 This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$.
 
-For a general quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q \neq 0$ and $\theta = |\vec q|$,
+For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\theta = |\vec q|$,
 
 $$
-\exp(\tilde q) = \exp(q_0) \left(\cos\theta + \frac{\vec q}{\theta} \sin\theta \right).
+\exp(\tilde q) = \exp(q_t) \left(\cos\theta + \frac{\vec q}{\theta} \sin\theta \right).
 $$
 
 So the exponential is the product of a real exponential and a unit quaternion. This is the quaternion analogue of the polar form of a complex number.
 
-**Remark.** Two moduli occur in the formulae of this article and must not be confused. The **quaternion norm** $\lvert \tilde q\rvert = \sqrt{q_0^2 + \lvert\vec q\rvert^2}$ is used in $\lvert \exp \tilde q\rvert = \exp(q_0)$ and in the logarithm; the **modulus of the vector part** $\lvert\vec q\rvert$ is used in the polar form and in every formula below that separates the two parts. The two agree only when $q_0 = 0$. In the source literature the single symbol $\lvert p\rvert$ carries both meanings, the vector modulus in the polar form of the exponential and the trigonometric functions and the full norm in the logarithm; below the two are written separately.
+**Remark.** Two moduli occur in the formulae of this article and must not be confused. The **quaternion norm** $\lvert \tilde q\rvert = \sqrt{q_t^2 + \lvert\vec q\rvert^2}$ is used in $\lvert \exp \tilde q\rvert = \exp(q_t)$ and in the logarithm; the **modulus of the vector part** $\lvert\vec q\rvert$ is used in the polar form and in every formula below that separates the two parts. The two agree only when $q_t = 0$. In the source literature the single symbol $\lvert p\rvert$ carries both meanings, the vector modulus in the polar form of the exponential and the trigonometric functions and the full norm in the logarithm; below the two are written separately.
 
 **Conjugation and the image of a sphere.** Conjugation commutes with the exponential,
 
@@ -63,7 +63,7 @@ $$
 \exp(\tilde{q}^{\natural}) = (\exp \tilde q)^{\natural},
 $$
 
-because the series for $\exp \tilde{q}^{\natural}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \vec q\rvert = r$, the exponential maps the sphere onto the sphere of radius $\exp(q_0)\lvert \sin r\rvert$ centred at the real point $\exp(q_0)\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k \exp(q_0)$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.
+because the series for $\exp \tilde{q}^{\natural}$ is the conjugate of the series for $\exp \tilde q$ term by term. The scalar-vector form also describes the image of each sphere. For fixed $\lvert \vec q\rvert = r$, the exponential maps the sphere onto the sphere of radius $\exp(q_t)\lvert \sin r\rvert$ centred at the real point $\exp(q_t)\cos r$, swept out as the direction $\operatorname{sgn}(\tilde q)$ runs over the unit imaginary sphere; at $r = k\pi$ the image collapses to the single point $(-1)^k \exp(q_t)$, so the whole sphere of pure quaternions of modulus $\pi$ is sent to the one point $-1$. This collapse is the geometric reason the exponential is not injective.
 
 **de Moivre's formula and the sequential limit.** For every integer $n$,
 
@@ -84,20 +84,20 @@ and more generally $\exp \tilde q = \lim_n (1 + \tilde q_n/n)^n$ for every seque
 The **quaternion logarithm** is the inverse of the exponential. It is defined for $\tilde q$ with $\tilde q \notin (-\infty, 0]$ by
 
 $$
-\log(\tilde q) = \log|\tilde q| + \frac{\vec q}{|\vec q|} \arccos\left(\frac{q_0}{|\tilde q|}\right).
+\log(\tilde q) = \log|\tilde q| + \frac{\vec q}{|\vec q|} \arccos\left(\frac{q_t}{|\tilde q|}\right).
 $$
 
 The logarithm is defined on the complement of the non-positive real axis, and it is single-valued on that domain. It satisfies
 
 $$
-\log(p\tilde q) = \log(p) + \log(\tilde q) \quad \text{only if } p\tilde q = \tilde q p,
+\log(\tilde q_1\tilde q_2) = \log(\tilde q_1) + \log(\tilde q_2) \quad \text{only if } \tilde q_1\tilde q_2 = \tilde q_2\tilde q_1,
 $$
 
 $$
 \log(1) = 0, \qquad \log'(\tilde q) = \tilde q^{-1}.
 $$
 
-**Caution.** The logarithm is not additive in general, because $\mathbb{H}$ is not commutative. The identity $\log(p\tilde q) = \log(p) + \log(\tilde q)$ holds if and only if $p$ and $\tilde q$ commute.
+**Caution.** The logarithm is not additive in general, because $\mathbb{H}$ is not commutative. The identity $\log(\tilde q_1\tilde q_2) = \log(\tilde q_1) + \log(\tilde q_2)$ holds if and only if $\tilde q_1$ and $\tilde q_2$ commute.
 
 **Conjugation.** The principal logarithm also commutes with conjugation,
 
@@ -125,13 +125,13 @@ $$
 \log(\exp \tilde q) = \tilde q \quad \iff \quad \lvert \mathrm{Vect}\tilde q\rvert < \pi.
 $$
 
-The condition for the second is on the vector part alone, not on the sign of $q_0$, and it is sharp. Beyond it the value is shifted by exactly one period,
+The condition for the second is on the vector part alone, not on the sign of $q_t$, and it is sharp. Beyond it the value is shifted by exactly one period,
 
 $$
 \log(\exp \tilde q) = \tilde q - 2\pi \operatorname{sgn}(\tilde q) \qquad \text{when } \pi \le \lvert \mathrm{Vect}\tilde q\rvert < 2\pi,
 $$
 
-and at the boundary $\exp \tilde q = -\exp(q_0)$ is a negative real, where the principal logarithm is not defined at all.
+and at the boundary $\exp \tilde q = -\exp(q_t)$ is a negative real, where the principal logarithm is not defined at all.
 
 **The power law.** For every integer $n$, $\exp(n \log \tilde q) = \tilde q^n$, so $n \log \tilde q$ is a logarithm of $\tilde q^n$. The principal values of the two sides agree only when the argument of $n \log \tilde q$ falls in the principal range, so the identity $\log(\tilde q^n) = n \log \tilde q$ holds between the multi-valued logarithms and not, in general, between principal values.
 
@@ -186,42 +186,42 @@ Throughout this subsection a sequence of quaternions converges when it converges
 The $n$-th root is the power with exponent $1/n$,
 
 $$
-\tilde p^{1/n} = \exp\left(\frac{1}{n}\log \tilde p\right),
+\tilde q^{1/n} = \exp\left(\frac{1}{n}\log \tilde q\right),
 $$
 
 and the roots tend to $1$ as $n$ grows. The first-order term of that approach is the logarithm itself.
 
-**Theorem (the root expansion).** For $\tilde p \neq 0$,
+**Theorem (the root expansion).** For $\tilde q \neq 0$,
 
 $$
-\lim_{n \to \infty} n\left(\tilde p^{1/n} - 1\right) = \log\tilde p.
+\lim_{n \to \infty} n\left(\tilde q^{1/n} - 1\right) = \log\tilde q.
 $$
 
-**Proof.** Write $\tilde L = \log\tilde p$ and $\omega = \operatorname{sgn}\tilde L$, so that $\tilde L = \omega\,\lvert \tilde L\rvert$ and the powers of $\tilde L$ commute. Then
+**Proof.** Write $\tilde L = \log\tilde q$ and $\omega = \operatorname{sgn}\tilde L$, so that $\tilde L = \omega\,\lvert \tilde L\rvert$ and the powers of $\tilde L$ commute. Then
 
 $$
-\tilde p^{1/n} = \exp\left(\frac{\tilde L}{n}\right) = \cos\frac{\lvert\tilde L\rvert}{n} + \omega \sin\frac{\lvert\tilde L\rvert}{n} = 1 + \frac{\tilde L}{n} - \frac{\lvert\tilde L\rvert^2}{2n^2} + O\left(\frac{1}{n^3}\right),
+\tilde q^{1/n} = \exp\left(\frac{\tilde L}{n}\right) = \cos\frac{\lvert\tilde L\rvert}{n} + \omega \sin\frac{\lvert\tilde L\rvert}{n} = 1 + \frac{\tilde L}{n} - \frac{\lvert\tilde L\rvert^2}{2n^2} + O\left(\frac{1}{n^3}\right),
 $$
 
-so $n(\tilde p^{1/n} - 1) = \tilde L + O(1/n)$.
+so $n(\tilde q^{1/n} - 1) = \tilde L + O(1/n)$.
 
 **Corollary (the mean of one and a root).**
 
 $$
-\lim_{n \to \infty}\left(\frac{1 + \tilde p^{1/n}}{2}\right)^n = \tilde p^{1/2}.
+\lim_{n \to \infty}\left(\frac{1 + \tilde q^{1/n}}{2}\right)^n = \tilde q^{1/2}.
 $$
 
-**Proof.** By the expansion, $\frac{1+\tilde p^{1/n}}{2} = 1 + \frac{\tilde L/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde L/2) = \tilde p^{1/2}$.
+**Proof.** By the expansion, $\frac{1+\tilde q^{1/n}}{2} = 1 + \frac{\tilde L/2}{n} + O(1/n^2)$, and the binomial limit gives the exponential of the first-order coefficient, which is $\exp(\tilde L/2) = \tilde q^{1/2}$.
 
-**Corollary (the mean of several roots).** For $\tilde p_1, \dots, \tilde p_k \neq 0$,
+**Corollary (the mean of several roots).** For $\tilde q_1, \dots, \tilde q_k \neq 0$,
 
 $$
-\lim_{n \to \infty}\left(\frac{1}{k}\sum_{\nu=1}^k \tilde p_\nu^{1/n}\right)^n = \exp\left(\frac{1}{k}\sum_{\nu=1}^k \log\tilde p_\nu\right),
+\lim_{n \to \infty}\left(\frac{1}{k}\sum_{\nu=1}^k \tilde q_\nu^{1/n}\right)^n = \exp\left(\frac{1}{k}\sum_{\nu=1}^k \log\tilde q_\nu\right),
 $$
 
 the right-hand side being the exponential of the mean of the logarithms.
 
-**Caution (the modulus is not the limit).** For a positive real argument the three limits reduce to the classical statements $n(\sqrt[n]{a} - 1) \to \log a$ and $\left((1 + \sqrt[n]{a})/2\right)^n \to \sqrt{a}$ and the geometric mean. For a general quaternion they do not, and the real numbers obtained by reading the limits as their real parts are wrong: $\log \lvert \tilde p\rvert$ is only the scalar part of $\log\tilde p$, so it is $\lvert \log\tilde p\rvert = \sqrt{\log^2 \lvert \tilde p\rvert + \lvert \operatorname{Arg}\tilde p\rvert^2}$ and not $\log \lvert \tilde p\rvert$ that equals $\lvert n(\tilde p^{1/n}-1)\rvert$ in the limit; likewise $\sqrt{\lvert \tilde p\rvert}$ is the modulus of the limit $\tilde p^{1/2}$ and $\left(\prod_\nu \lvert \tilde p_\nu\rvert\right)^{1/k}$ the modulus of the mean limit, not the limits themselves.
+**Caution (the modulus is not the limit).** For a positive real argument the three limits reduce to the classical statements $n(\sqrt[n]{a} - 1) \to \log a$ and $\left((1 + \sqrt[n]{a})/2\right)^n \to \sqrt{a}$ and the geometric mean. For a general quaternion they do not, and the real numbers obtained by reading the limits as their real parts are wrong: $\log \lvert \tilde q\rvert$ is only the scalar part of $\log\tilde q$, so it is $\lvert \log\tilde q\rvert = \sqrt{\log^2 \lvert \tilde q\rvert + \lvert \operatorname{Arg}\tilde q\rvert^2}$ and not $\log \lvert \tilde q\rvert$ that equals $\lvert n(\tilde q^{1/n}-1)\rvert$ in the limit; likewise $\sqrt{\lvert \tilde q\rvert}$ is the modulus of the limit $\tilde q^{1/2}$ and $\left(\prod_\nu \lvert \tilde q_\nu\rvert\right)^{1/k}$ the modulus of the mean limit, not the limits themselves.
 
 ## The Trigonometric and Hyperbolic Functions
 
@@ -230,11 +230,11 @@ the right-hand side being the exponential of the mean of the logarithms.
 The **quaternion sine** and **cosine** are defined by the scalar-vector decomposition
 
 $$
-\sin(\tilde q) = \sin(q_0) \cosh(|\vec q|) + \frac{\vec q}{|\vec q|} \cos(q_0) \sinh(|\vec q|),
+\sin(\tilde q) = \sin(q_t) \cosh(|\vec q|) + \frac{\vec q}{|\vec q|} \cos(q_t) \sinh(|\vec q|),
 $$
 
 $$
-\cos(\tilde q) = \cos(q_0) \cosh(|\vec q|) - \frac{\vec q}{|\vec q|} \sin(q_0) \sinh(|\vec q|).
+\cos(\tilde q) = \cos(q_t) \cosh(|\vec q|) - \frac{\vec q}{|\vec q|} \sin(q_t) \sinh(|\vec q|).
 $$
 
 These functions are entire, and they satisfy
@@ -252,10 +252,10 @@ $$
 **Modulus and zeros.** The scalar-vector form also gives the modulus of each function in closed form:
 
 $$
-\lvert \sin \tilde q\rvert^2 = \sin^2 q_0 + \sinh^2\lvert \vec q\rvert, \qquad \lvert \cos \tilde q\rvert^2 = \cos^2 q_0 + \sinh^2\lvert \vec q\rvert.
+\lvert \sin \tilde q\rvert^2 = \sin^2 q_t + \sinh^2\lvert \vec q\rvert, \qquad \lvert \cos \tilde q\rvert^2 = \cos^2 q_t + \sinh^2\lvert \vec q\rvert.
 $$
 
-Each right-hand side is a sum of two non-negative terms, so $\sin \tilde q = 0$ forces $\sin q_0 = 0$ and $\lvert \vec q\rvert = 0$, and $\cos \tilde q = 0$ forces $\cos q_0 = 0$ and $\lvert \vec q\rvert = 0$. The zeros are therefore exactly the real ones: $\sin \tilde q$ vanishes at $q_0 = n\pi$ and $\cos \tilde q$ at $q_0 = (n + \tfrac{1}{2})\pi$, for $n \in \mathbb{Z}$, and nowhere off the real axis.
+Each right-hand side is a sum of two non-negative terms, so $\sin \tilde q = 0$ forces $\sin q_t = 0$ and $\lvert \vec q\rvert = 0$, and $\cos \tilde q = 0$ forces $\cos q_t = 0$ and $\lvert \vec q\rvert = 0$. The zeros are therefore exactly the real ones: $\sin \tilde q$ vanishes at $q_t = n\pi$ and $\cos \tilde q$ at $q_t = (n + \tfrac{1}{2})\pi$, for $n \in \mathbb{Z}$, and nowhere off the real axis.
 
 **The relation to the hyperbolic functions.** The trigonometric and the hyperbolic functions differ only by the unit pure quaternion $\operatorname{sgn}(\tilde q) = \vec q/\lvert \vec q\rvert$ that carries the vector part:
 
@@ -263,7 +263,7 @@ $$
 \sin \tilde q = -\operatorname{sgn}(\tilde q) \sinh\bigl(\tilde q \operatorname{sgn}(\tilde q)\bigr), \qquad \cos \tilde q = \cosh\bigl(\tilde q \operatorname{sgn}(\tilde q)\bigr),
 $$
 
-The element $\tilde q \operatorname{sgn}(\tilde q) = q_0 \operatorname{sgn}(\tilde q) - \lvert \vec q\rvert$ lies in the plane of $1$ and $\operatorname{sgn}(\tilde q)$, so the two identities reduce each quaternion function to a complex-valued one, with $\operatorname{sgn}(\tilde q)$ playing the role of the imaginary unit. This is the sense in which the quaternion trigonometric functions are the hyperbolic functions of a rotated variable, and it is the reason the trigonometric inverses below are read off from the hyperbolic ones.
+The element $\tilde q \operatorname{sgn}(\tilde q) = q_t \operatorname{sgn}(\tilde q) - \lvert \vec q\rvert$ lies in the plane of $1$ and $\operatorname{sgn}(\tilde q)$, so the two identities reduce each quaternion function to a complex-valued one, with $\operatorname{sgn}(\tilde q)$ playing the role of the imaginary unit. This is the sense in which the quaternion trigonometric functions are the hyperbolic functions of a rotated variable, and it is the reason the trigonometric inverses below are read off from the hyperbolic ones.
 
 ### Hyperbolic Functions
 
@@ -286,10 +286,10 @@ $$
 **Modulus and zeros.** The moduli are
 
 $$
-\lvert \sinh \tilde q\rvert^2 = \sinh^2 q_0 + \sin^2\lvert \vec q\rvert, \qquad \lvert \cosh \tilde q\rvert^2 = \sinh^2 q_0 + \cos^2\lvert \vec q\rvert.
+\lvert \sinh \tilde q\rvert^2 = \sinh^2 q_t + \sin^2\lvert \vec q\rvert, \qquad \lvert \cosh \tilde q\rvert^2 = \sinh^2 q_t + \cos^2\lvert \vec q\rvert.
 $$
 
-Hence $\sinh \tilde q = 0$ exactly when $q_0 = 0$ and $\lvert \vec q\rvert = n\pi$, and $\cosh \tilde q = 0$ exactly when $q_0 = 0$ and $\lvert \vec q\rvert = (n + \tfrac{1}{2})\pi$, for $n \in \mathbb{Z}$: the zeros are the pure quaternions of those moduli, a union of spheres, and the scalar part vanishes at every one of them.
+Hence $\sinh \tilde q = 0$ exactly when $q_t = 0$ and $\lvert \vec q\rvert = n\pi$, and $\cosh \tilde q = 0$ exactly when $q_t = 0$ and $\lvert \vec q\rvert = (n + \tfrac{1}{2})\pi$, for $n \in \mathbb{Z}$: the zeros are the pure quaternions of those moduli, a union of spheres, and the scalar part vanishes at every one of them.
 
 ### Other Functions
 
@@ -305,33 +305,33 @@ $$
 
 ### Inequalities
 
-The modulus formulas turn the elementary real inequalities into bounds for the quaternion functions. On the region where the vector part is short, $\lvert \vec q\rvert \le \ln(1 + \sqrt{2})$, one has $\sinh^2\lvert \vec q\rvert \le 1$ and $\lvert \sin q_0\rvert \le \lvert q_0\rvert$, so
+The modulus formulas turn the elementary real inequalities into bounds for the quaternion functions. On the region where the vector part is short, $\lvert \vec q\rvert \le \ln(1 + \sqrt{2})$, one has $\sinh^2\lvert \vec q\rvert \le 1$ and $\lvert \sin q_t\rvert \le \lvert q_t\rvert$, so
 
 $$
-\lvert \sin \tilde q\rvert \le \sqrt{q_0^2 + 1},
+\lvert \sin \tilde q\rvert \le \sqrt{q_t^2 + 1},
 $$
 
-and, without any restriction on the vector part, $\lvert \cos \tilde q\rvert \geq 1 - q_0^2/2$ for $q_0 \in [0, \sqrt{2}]$, because $\lvert \cos \tilde q\rvert^2 \ge \cos^2 q_0$ and $\cos q_0 \ge 1 - q_0^2/2$ on that interval. Dividing the two bounds gives the corresponding bound for the tangent,
+and, without any restriction on the vector part, $\lvert \cos \tilde q\rvert \geq 1 - q_t^2/2$ for $q_t \in [0, \sqrt{2}]$, because $\lvert \cos \tilde q\rvert^2 \ge \cos^2 q_t$ and $\cos q_t \ge 1 - q_t^2/2$ on that interval. Dividing the two bounds gives the corresponding bound for the tangent,
 
 $$
-\lvert \tan \tilde q\rvert \le \frac{2\sqrt{1 + q_0^2}}{2 - q_0^2} \qquad \bigl(\lvert \vec q\rvert \le \ln(1 + \sqrt{2}), \ q_0 \in [0, \sqrt{2})\bigr).
+\lvert \tan \tilde q\rvert \le \frac{2\sqrt{1 + q_t^2}}{2 - q_t^2} \qquad \bigl(\lvert \vec q\rvert \le \ln(1 + \sqrt{2}), \ q_t \in [0, \sqrt{2})\bigr).
 $$
 
-For the hyperbolic functions the relevant bound has no restriction on the region: from $\lvert \sinh \tilde q\rvert^2 = \sinh^2 q_0 + \sin^2\lvert \vec q\rvert \le \sinh^2 q_0 + 1$ and the same for $\cosh$,
+For the hyperbolic functions the relevant bound has no restriction on the region: from $\lvert \sinh \tilde q\rvert^2 = \sinh^2 q_t + \sin^2\lvert \vec q\rvert \le \sinh^2 q_t + 1$ and the same for $\cosh$,
 
 $$
-\lvert \sinh \tilde q\rvert \le 2\cosh q_0, \qquad \lvert \cosh \tilde q\rvert \le 2\cosh q_0.
+\lvert \sinh \tilde q\rvert \le 2\cosh q_t, \qquad \lvert \cosh \tilde q\rvert \le 2\cosh q_t.
 $$
 
-These bounds are elementary consequences of the modulus formulas. The corresponding lower bounds on the far region, $\lvert \vec q\rvert \geq \ln(1 + \sqrt{2})$, come from $\sinh^2\lvert \vec q\rvert \geq 1$ in the same way. There the scalar side needs a cubic bound in place of the tangent one, $\sin^2 q_0 \ge (q_0 - q_0^3/6)^2$ for $\lvert q_0\rvert \le \sqrt{6}$, and the two combine into
+These bounds are elementary consequences of the modulus formulas. The corresponding lower bounds on the far region, $\lvert \vec q\rvert \geq \ln(1 + \sqrt{2})$, come from $\sinh^2\lvert \vec q\rvert \geq 1$ in the same way. There the scalar side needs a cubic bound in place of the tangent one, $\sin^2 q_t \ge (q_t - q_t^3/6)^2$ for $\lvert q_t\rvert \le \sqrt{6}$, and the two combine into
 
 $$
-\lvert \sin \tilde q\rvert \ge \sqrt{1 + \left(q_0 - \frac{q_0^3}{6}\right)^2} \qquad \bigl(\lvert \vec q\rvert \ge \ln(1 + \sqrt{2}), \ \lvert q_0\rvert \le \sqrt{6}\bigr),
+\lvert \sin \tilde q\rvert \ge \sqrt{1 + \left(q_t - \frac{q_t^3}{6}\right)^2} \qquad \bigl(\lvert \vec q\rvert \ge \ln(1 + \sqrt{2}), \ \lvert q_t\rvert \le \sqrt{6}\bigr),
 $$
 
-so that the reciprocal $1/\sin \tilde q$ is bounded, on the same region, by the reciprocal of the right-hand side. The bound is sharp at the corner where the two hypotheses meet: at $q_0 = 0$ and $\lvert \vec q\rvert = \ln(1 + \sqrt{2})$ both inequalities are equalities, and $\lvert \sin \tilde q\rvert = 1$ there.
+so that the reciprocal $1/\sin \tilde q$ is bounded, on the same region, by the reciprocal of the right-hand side. The bound is sharp at the corner where the two hypotheses meet: at $q_t = 0$ and $\lvert \vec q\rvert = \ln(1 + \sqrt{2})$ both inequalities are equalities, and $\lvert \sin \tilde q\rvert = 1$ there.
 
-**The scalar range is not one-sided.** The bound requires $\lvert q_0\rvert \le \sqrt{6}$, and the two-sided form is necessary: the cubic bound on $\sin^2 q_0$ fails for large negative $q_0$, where $(q_0 - q_0^3/6)^2$ outruns $\sin^2 q_0$ without limit, so no bound of this shape can hold on a range of the form $q_0 \le -\sqrt{6}$. For example $\tilde q = -3 + \ln(1+\sqrt{2})\,e_1$ has $\lvert \sin \tilde q\rvert = 1.010$, against the right-hand side $1.803$ obtained by substituting $q_0 = -3$.
+**The scalar range is not one-sided.** The bound requires $\lvert q_t\rvert \le \sqrt{6}$, and the two-sided form is necessary: the cubic bound on $\sin^2 q_t$ fails for large negative $q_t$, where $(q_t - q_t^3/6)^2$ outruns $\sin^2 q_t$ without limit, so no bound of this shape can hold on a range of the form $q_t \le -\sqrt{6}$. For example $\tilde q = -3 + \ln(1+\sqrt{2})\,\vec e_x$ has $\lvert \sin \tilde q\rvert = 1.010$, against the right-hand side $1.803$ obtained by substituting $q_t = -3$.
 
 ## The Inverse Trigonometric and Hyperbolic Functions
 
@@ -373,13 +373,13 @@ The branch points sit where the square root or the logarithm degenerates. For $\
 
 ### Definition
 
-The **quaternion gamma function** is defined for $\tilde q$ with $q_0 > 0$ by
+The **quaternion gamma function** is defined for $\tilde q$ with $q_t > 0$ by
 
 $$
 \Gamma(\tilde q) = \int_0^\infty t^{\tilde q-1} \exp(-t) \, dt,
 $$
 
-where the integral is along the positive real axis, $t^{\tilde q-1}$ is the quaternion power, and $\exp(-t)$ is the quaternion exponential. Because the integrand is a function of the real variable $t$ and the quaternion $\tilde q$ appears only in the exponent, the integral converges for $q_0 > 0$.
+where the integral is along the positive real axis, $t^{\tilde q-1}$ is the quaternion power, and $\exp(-t)$ is the quaternion exponential. Because the integrand is a function of the real variable $t$ and the quaternion $\tilde q$ appears only in the exponent, the integral converges for $q_t > 0$.
 
 ### Properties
 
@@ -409,7 +409,7 @@ where the sine is the quaternion sine. This follows from the real reflection for
 
 ### Definition
 
-The **quaternion beta function** is defined for $p, \tilde q$ with $p_0 > 0$ and $q_0 > 0$ by
+The **quaternion beta function** is defined for $p, \tilde q$ with $p_0 > 0$ and $q_t > 0$ by
 
 $$
 B(p, \tilde q) = \int_0^1 t^{p-1} (1 - t)^{\tilde q-1} \, dt,
@@ -470,7 +470,7 @@ $$
 The **quaternion Airy function** is defined by the contour integral
 
 $$
-\operatorname{Ai}(\tilde q) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - qt\right) dt,
+\operatorname{Ai}(\tilde q) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - \tilde q t\right) dt,
 $$
 
 where $C$ is a contour in the complex plane, the exponential is the quaternion exponential, and $\tilde q$ is a quaternion. Because the integrand is a function of the complex variable $t$ and the quaternion $\tilde q$ appears only in the exponent, the integral converges and defines an entire function of $\tilde q$.
@@ -485,13 +485,13 @@ This is Airy's equation, and it holds in the quaternion sense.
 
 ### Asymptotics
 
-For $\tilde q$ with $q_0 \to +\infty$ along the real axis,
+For $\tilde q$ with $q_t \to +\infty$ along the real axis,
 
 $$
 \operatorname{Ai}(\tilde q) \sim \frac{1}{2 \sqrt{\pi} \tilde q^{1/4}} \exp(-2 \tilde q^{3/2}/3).
 $$
 
-For $\tilde q$ with $q_0 \to -\infty$ along the real axis,
+For $\tilde q$ with $q_t \to -\infty$ along the real axis,
 
 $$
 \operatorname{Ai}(\tilde q) \sim \frac{1}{\sqrt{\pi} |\tilde q|^{1/4}} \sin\left(\frac{2 |\tilde q|^{3/2}}{3} + \frac{\pi}{4}\right).
@@ -586,7 +586,7 @@ Most special functions of quaternion analysis are special cases of ${}_pF_q$.
 The **quaternion Lambert W function** is the inverse of
 
 $$
-f(w) = w \exp(w),
+f(\tilde q) = \tilde q \exp(\tilde q),
 $$
 
 where the exponential is the quaternion exponential. That is, $W(\tilde q)$ is any solution of
@@ -630,10 +630,10 @@ in the sense of distributions. It is the quaternion analogue of the kernel $1/A$
 The **exponential** written in scalar-vector form is the function
 
 $$
-f(\tilde q) = \exp(q_0) \left(\cos|\vec q| + \frac{\vec q}{|\vec q|} \sin|\vec q| \right),
+f(\tilde q) = \exp(q_t) \left(\cos|\vec q| + \frac{\vec q}{|\vec q|} \sin|\vec q| \right),
 $$
 
-which is $\exp(\tilde q)$. It is not monogenic: $D f = -2 \exp(q_0) \sin|\vec q| / |\vec q|$, which is non-zero wherever $\sin|\vec q| \neq 0$.
+which is $\exp(\tilde q)$. It is not monogenic: $D f = -2 \exp(q_t) \sin|\vec q| / |\vec q|$, which is non-zero wherever $\sin|\vec q| \neq 0$.
 
 ### The Power Functions
 
@@ -643,7 +643,7 @@ $$
 f_n(\tilde q) = \tilde q^n, \qquad n \in \mathbb{Z},
 $$
 
-which are not monogenic: $D \tilde q = -2$ and $D(\tilde q^2) = -4 q_0$, neither of which vanishes identically. For negative $n$, the functions have singularities at the origin, and the Laurent expansion of a monogenic function is expressed in terms of other powers.
+which are not monogenic: $D \tilde q = -2$ and $D(\tilde q^2) = -4 q_t$, neither of which vanishes identically. For negative $n$, the functions have singularities at the origin, and the Laurent expansion of a monogenic function is expressed in terms of other powers.
 
 ### The Monogenic Bessel Functions
 
@@ -653,10 +653,10 @@ The **monogenic Bessel functions** are the radial monogenic functions, which are
 
 The pattern in all the definitions above is the same: every quaternion special function is defined by a formula that involves the quaternion algebra operations, the quaternion exponential, and the quaternion logarithm. Unlike the complex case, the resulting functions are not determined by a single scalar variable, because $\mathbb{H}$ is four-dimensional and non-commutative. The functions depend on the scalar part and the vector part separately, and the non-commutativity prevents the simple identities that hold in the commutative case.
 
-**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the quaternions defined by the same power series. Then for $\tilde q$ with $q_0 \in I$ and $\vec q$ arbitrary,
+**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the quaternions defined by the same power series. Then for $\tilde q$ with $q_t \in I$ and $\vec q$ arbitrary,
 
 $$
-\tilde{F}(\tilde q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_0)}{n!} \vec q^n,
+\tilde{F}(\tilde q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_t)}{n!} \vec q^n,
 $$
 
 where the powers $\vec q^n$ are the quaternion powers of the vector part.
@@ -669,7 +669,7 @@ This theorem is the reason quaternion special functions are richer than real or 
 
 The quaternion special functions are the named functions that arise in quaternion analysis, in Clifford analysis and in the geometry of the quaternion space. Each is obtained by carrying the corresponding real or complex definition to the quaternion variable by means of the quaternion exponential and the quaternion operations.
 
-The exponential is defined by its series, and the trigonometric and hyperbolic functions are built from it, with the scalar-vector decomposition of a quaternion taking the place of the real and imaginary parts of a complex number. The scalar-vector form also fixes the modulus and the zeros of each of them, and the same form reads the trigonometric functions as the hyperbolic functions of a rotated variable, which is how the inverse trigonometric functions are obtained from the inverse hyperbolic ones. The same form answers the quantitative questions: it turns the elementary real inequalities into bounds for each function, and it makes the $n$-th roots of a quaternion approach $1$ at a rate fixed by the logarithm, $n(\tilde p^{1/n} - 1) \to \log \tilde p$ and the means of roots converge to the exponential of the mean of the logarithms. Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $w \mapsto w\exp(w)$.
+The exponential is defined by its series, and the trigonometric and hyperbolic functions are built from it, with the scalar-vector decomposition of a quaternion taking the place of the real and imaginary parts of a complex number. The scalar-vector form also fixes the modulus and the zeros of each of them, and the same form reads the trigonometric functions as the hyperbolic functions of a rotated variable, which is how the inverse trigonometric functions are obtained from the inverse hyperbolic ones. The same form answers the quantitative questions: it turns the elementary real inequalities into bounds for each function, and it makes the $n$-th roots of a quaternion approach $1$ at a rate fixed by the logarithm, $n(\tilde q^{1/n} - 1) \to \log \tilde q$ and the means of roots converge to the exponential of the mean of the logarithms. Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $\tilde q \mapsto \tilde q\exp(\tilde q)$.
 
 The exponential is single-valued and not injective; the logarithm is its multi-valued inverse, with infinitely many branches differing by a multiple of $2\pi \operatorname{sgn}(\tilde q)$, and the power functions inherit that multi-valuedness. The two compositions of the exponential and the logarithm behave differently: the logarithm inverts the exponential everywhere on its domain, while the exponential is inverted by the logarithm only on the region $\lvert \mathrm{Vect}\tilde q\rvert < \pi$, off which the value is shifted by a period.
 
@@ -680,9 +680,9 @@ The Cauchy kernel $\tilde{q}^{\natural}/\lvert \tilde q\rvert^4$, the fundamenta
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
-| $\vec q = \mathrm{Vect}\tilde q = q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector part |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | General quaternion |
+| $\vec q = \mathrm{Vect}\tilde q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Vector part |
 | $\operatorname{sgn}(\tilde q) = \vec q/\lvert \vec q\rvert$ | Unit pure quaternion of the vector part |
 | $\exp(\tilde q), \log \tilde q$ | Quaternion exponential, logarithm (principal branch) |
 | $\operatorname{Arg}\tilde q$ | Principal argument of $\tilde q$, in $[0, \pi]$ |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric quaternionic multiplication $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$
+The symmetric quaternionic multiplication $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$
 (*Introduction to the Symmetric Quaternionic Algebra*) is read here on the remarkable
 real subspaces of *Introduction to the Remarkable Subspaces*: the centre $\mathbb{C}_{\mathbb{B}}$, the vector
 subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion
@@ -21,11 +21,11 @@ recomputed. The isotropic elements are *Zero Divisors of the Biquaternion Algebr
 Elements of the Symmetric Quaternionic Algebra*; the staying-inside statement for the symmetrised quaternionic
 product is *Remarkable Subspaces and the Four General Products*.
 
-**Conventions.** A general element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and
-$Q_\mu\in\mathbb{C}$; $A,B$ are complex numbers; $h,g$ are real quaternions, $h=h_0e_0+\cdots+h_3e_3$ with
-$h_\mu\in\mathbb{R}$; and $\vec p,\vec q,\vec r$ are real vectors of $\mathbb{R}^3$. The remarkable subspaces have the real bases $\{e_0,ie_0\}$ for the centre, $\{e_k,ie_k\}$ for the vector subspace,
-$\{e_0,e_1,e_2,e_3\}$ for $\mathbb{H}_{\mathbb{B}}$, $\{ie_0,ie_1,ie_2,ie_3\}$ for
-$i\mathbb{H}_{\mathbb{B}}$, $\{e_0,ie_1,ie_2,ie_3\}$ for $\mathbb{M}_+$ and $\{ie_0,e_1,e_2,e_3\}$ for
+**Conventions.** A general element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$ and
+$Q_\mu\in\mathbb{C}$; $A,B$ are complex numbers; $h,g$ are real quaternions, $h=h_te_t+h_x\vec e_x+h_y\vec e_y+h_z\vec e_z$ with
+$h_\mu\in\mathbb{R}$; and $\vec p,\vec q,\vec r$ are real vectors of $\mathbb{R}^3$. The remarkable subspaces have the real bases $\{e_t,ie_t\}$ for the centre, $\{\vec e_k,i\vec e_k\}$ for the vector subspace,
+$\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ for $\mathbb{H}_{\mathbb{B}}$, $\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for
+$i\mathbb{H}_{\mathbb{B}}$, $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ for $\mathbb{M}_+$ and $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ for
 $\mathbb{M}_-$.
 
 **Definition.** A subspace $U$ **stays inside itself** under $\star$, or is **kept inside itself** by $\star$,
@@ -35,126 +35,126 @@ when $\tilde P,\tilde Q\in U$ implies $\tilde P\star\tilde Q\in U$.
 
 ### The Centre
 
-On $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ the general elements are $Ae_0$ and $Be_0$, and
+On $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ the general elements are $Ae_t$ and $Be_t$, and
 
 $$
-(Ae_0)\star(Be_0) = \bigl(AB\bigr)e_0 .
+(Ae_t)\star(Be_t) = \bigl(AB\bigr)e_t .
 $$
 
 The product stays in the centre, and the restriction of the operation to the centre is the multiplication of
 $\mathbb{C}$: the centre is kept inside itself by $\star$ and is the only subspace on which the operation is a
-multiplication with a unit, the unit being $e_0$ for the centre. The idempotents are $0$ and $e_0$; the
-isotropic elements are none for the complex form, since the norm of a central element is $\langle Ae_0\rangle_{\natural}=A^2$, which
+multiplication with a unit, the unit being $e_t$ for the centre. The idempotents are $0$ and $e_t$; the
+isotropic elements are none for the complex form, since the norm of a central element is $\langle Ae_t\rangle_{\natural}=A^2$, which
 vanishes only at $A=0$; the two real
-lines $\mathbb{R}(e_0\pm ie_0)$ are isotropic for the **realification** of the form and not for the complex
+lines $\mathbb{R}(e_t\pm ie_t)$ are isotropic for the **realification** of the form and not for the complex
 form.
 
 ### The Vector Subspace
 
-On $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{e_1,e_2,e_3\}$ the general elements are $\vec P$ and
+On $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$ the general elements are $\vec P$ and
 $\vec Q$, and
 
 $$
-\vec P\star\vec Q = \bigl(\vec P,\vec Q\bigr)e_0 .
+\vec P\star\vec Q = \bigl(\vec P,\vec Q\bigr)e_t .
 $$
 
 The product does not stay in the vector subspace: it is central, and it is in the subspace only when the
-coefficient vanishes. The **smallest nonzero value off the subspace** is $e_0$, produced by the pair
-$e_1,e_1$; more generally $\vec P\star\vec Q=0$ exactly when the two complex vectors are
-$\langle\cdot\rangle_{\natural}$-isotropic partners, $(\vec P,\vec Q)=0$. The idempotents are $0$ alone, since $e_0$ is not in the
+coefficient vanishes. The **smallest nonzero value off the subspace** is $e_t$, produced by the pair
+$\vec e_x,\vec e_x$; more generally $\vec P\star\vec Q=0$ exactly when the two complex vectors are
+$\langle\cdot\rangle_{\natural}$-isotropic partners, $(\vec P,\vec Q)=0$. The idempotents are $0$ alone, since $e_t$ is not in the
 subspace; the isotropic elements are the pure zero divisors, the complex cone
 $\sum_kQ_k^2=0$ of *Zero Divisors of the Biquaternion Algebra*.
 
 ### The Quaternion Subspace
 
-On $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$ the general elements are real quaternions $h$ and
+On $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ the general elements are real quaternions $h$ and
 $g$, and
 
 $$
-h\star g = \bigl(h_0g_0+h_1g_1+h_2g_2+h_3g_3\bigr)e_0 .
+h\star g = \bigl(h_tg_t+h_xg_x+h_yg_y+h_zg_z\bigr)e_t .
 $$
 
-The coefficient is real, so the product is a real multiple of $e_0$, an element of the real line
-$\mathbb{R}e_0\subset\mathbb{H}_{\mathbb{B}}$: the quaternion subspace is kept inside itself by $\star$. It is a **definite**
+The coefficient is real, so the product is a real multiple of $e_t$, an element of the real line
+$\mathbb{R}e_t\subset\mathbb{H}_{\mathbb{B}}$: the quaternion subspace is kept inside itself by $\star$. It is a **definite**
 row, the coefficient being the positive definite form $\sum_\mu h_\mu g_\mu$; hence there is **no nonzero isotropic
 element** of the form, and no nonzero element of the subspace is a zero divisor of the parent plain product. (Every nonzero
 element of the block is a zero divisor of the block itself, as *Zero Divisors of the Symmetric Quaternionic
 Algebra* shows; the definiteness is a statement about the form and about the parent product, not about the block's
-zero-divisor set.) The idempotents are $0$ and $e_0$.
+zero-divisor set.) The idempotents are $0$ and $e_t$.
 
 ### The Anti-Quaternion Subspace
 
-On $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_0,ie_1,ie_2,ie_3\}$ the general elements are $ih$ and $ig$ with
+On $i\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{ie_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the general elements are $ih$ and $ig$ with
 $h,g$ real, and
 
 $$
-(ih)\star(ig) = -\bigl(h_0g_0+h_1g_1+h_2g_2+h_3g_3\bigr)e_0 .
+(ih)\star(ig) = -\bigl(h_tg_t+h_xg_x+h_yg_y+h_zg_z\bigr)e_t .
 $$
 
-The coefficient is real and the product is a real multiple of $e_0$, which lies in $\mathbb{H}_{\mathbb{B}}$
+The coefficient is real and the product is a real multiple of $e_t$, which lies in $\mathbb{H}_{\mathbb{B}}$
 and not in $i\mathbb{H}_{\mathbb{B}}$: the subspace is **not** kept inside itself by $\star$, and the **smallest nonzero
-value off the subspace** is $-e_0$, produced by the pair $ie_1,ie_1$. The subspace is a definite row of
-negative sign, so there is no isotropic element; the idempotent is $0$ alone, $e_0$ not lying in the subspace.
+value off the subspace** is $-e_t$, produced by the pair $i\vec e_x,i\vec e_x$. The subspace is a definite row of
+negative sign, so there is no isotropic element; the idempotent is $0$ alone, $e_t$ not lying in the subspace.
 
 ### The Hermitian Subspace
 
-On $\mathbb{M}_+=\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ the general elements are $a_0e_0+i\vec p$ and
-$b_0e_0+i\vec q$ with $a_0,b_0$ real and $\vec p,\vec q$ real vectors, and
+On $\mathbb{M}_+=\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the general elements are $a_te_t+i\vec p$ and
+$b_te_t+i\vec q$ with $a_t,b_t$ real and $\vec p,\vec q$ real vectors, and
 
 $$
-(a_0e_0+i\vec p)\star(b_0e_0+i\vec q) = \bigl(a_0b_0-(\vec p,\vec q)\bigr)e_0 .
+(a_te_t+i\vec p)\star(b_te_t+i\vec q) = \bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t .
 $$
 
-The coefficient is real, so the product is a real multiple of $e_0$, an element of the real line
-$\mathbb{R}e_0\subset\mathbb{M}_+$: the Hermitian subspace is kept inside itself by $\star$. The idempotents of the
-operation are $0$ and $e_0$: the nontrivial idempotents of the algebra, the elements $\tfrac12(e_0+i\vec q_a)$
+The coefficient is real, so the product is a real multiple of $e_t$, an element of the real line
+$\mathbb{R}e_t\subset\mathbb{M}_+$: the Hermitian subspace is kept inside itself by $\star$. The idempotents of the
+operation are $0$ and $e_t$: the nontrivial idempotents of the algebra, the elements $\tfrac12(e_t+i\vec q_a)$
 over real unit vectors $\vec q_a$, have norm $N=\tfrac14(1-(\vec q_a,\vec q_a))=0$ and are isotropic for
 $\star$ instead of idempotent. The isotropic elements are the real light cone, the elements with
-$a_0^2=(\vec p,\vec p)$, which
+$a_t^2=(\vec p,\vec p)$, which
 are the non-pure zero divisors of the Hermitian subspace (*Remarkable Subspaces under the General Quaternionic
 Algebra of Biquaternions*).
 
 ### The Anti-Hermitian Subspace
 
-On $\mathbb{M}_-=\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ the general elements are $ia_0e_0+\vec p$ and
-$ib_0e_0+\vec q$, and
+On $\mathbb{M}_-=\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ the general elements are $ia_te_t+\vec p$ and
+$ib_te_t+\vec q$, and
 
 $$
-(ia_0e_0+\vec p)\star(ib_0e_0+\vec q) = \bigl((\vec p,\vec q)-a_0b_0\bigr)e_0 .
+(ia_te_t+\vec p)\star(ib_te_t+\vec q) = \bigl((\vec p,\vec q)-a_tb_t\bigr)e_t .
 $$
 
-The coefficient is real but the product is a real multiple of $e_0$, which lies in $\mathbb{H}_{\mathbb{B}}$
+The coefficient is real but the product is a real multiple of $e_t$, which lies in $\mathbb{H}_{\mathbb{B}}$
 and not in $\mathbb{M}_-$: the subspace is **not** kept inside itself by $\star$, and the **smallest nonzero value off the
-subspace** is $e_0$, produced by the pair $e_3,e_3$. The idempotent is $0$ alone, $e_0$ not lying in the
+subspace** is $e_t$, produced by the pair $\vec e_z,\vec e_z$. The idempotent is $0$ alone, $e_t$ not lying in the
 subspace; the isotropic elements are the real light cone of the subspace, the elements with
-$(\vec p,\vec p)=a_0^2$.
+$(\vec p,\vec p)=a_t^2$.
 
 ## The Table of the Remarkable Subspaces
 
 | subspace | real basis | the product of two general elements | stays inside itself | smallest nonzero value off | isotropic elements | idempotents |
 |---|---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $e_0,\,ie_0$ | $(AB)e_0$ | yes | — | none (complex form) | $0,\,e_0$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $e_k,\,ie_k$ | $(\vec P,\vec Q)e_0$ | no | $e_0$ at $e_1,e_1$ | the pure zero divisors | $0$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $e_0,\dots,e_3$ | $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$ | yes | — | none | $0,\,e_0$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $ie_0,\dots,ie_3$ | $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$ | no | $-e_0$ at $ie_1,ie_1$ | none | $0$ |
-| $\mathbb{M}_+$ | $e_0,ie_1,ie_2,ie_3$ | $\bigl(a_0b_0-(\vec p,\vec q)\bigr)e_0$ | yes | — | the real light cone | $0,\,e_0$ |
-| $\mathbb{M}_-$ | $ie_0,e_1,e_2,e_3$ | $\bigl((\vec p,\vec q)-a_0b_0\bigr)e_0$ | no | $e_0$ at $e_3,e_3$ | the real light cone | $0$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $(AB)e_t$ | yes | — | none (complex form) | $0,\,e_t$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\vec e_k,\,i\vec e_k$ | $(\vec P,\vec Q)e_t$ | no | $e_t$ at $\vec e_x,\vec e_x$ | the pure zero divisors | $0$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $e_t,\dots,\vec e_z$ | $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$ | yes | — | none | $0,\,e_t$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,\dots,i\vec e_z$ | $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$ | no | $-e_t$ at $i\vec e_x,i\vec e_x$ | none | $0$ |
+| $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $\bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t$ | yes | — | the real light cone | $0,\,e_t$ |
+| $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $\bigl((\vec p,\vec q)-a_tb_t\bigr)e_t$ | no | $e_t$ at $\vec e_z,\vec e_z$ | the real light cone | $0$ |
 
 **Remark (the three that stay inside and the three that leave).** The operation is kept inside itself by
 exactly three of the remarkable subspaces — the centre, the quaternion subspace and the Hermitian subspace — and it
 leaves the other three, in agreement with the staying-inside statement of *Remarkable Subspaces and the Four General Products* for the symmetrisation of the general quaternionic product, which this article follows. The centre
 stays inside because it is the image of the operation; the quaternion subspace and the Hermitian subspace stay
-inside because the coefficient is real on each of them and the real line $\mathbb{R}e_0$ lies in both. The
-vector subspace returns a complex multiple of $e_0$ that leaves it, while the anti-quaternion and
-anti-Hermitian subspaces return a real multiple of $e_0$, which lies in $\mathbb{H}_{\mathbb{B}}$ and not in
+inside because the coefficient is real on each of them and the real line $\mathbb{R}e_t$ lies in both. The
+vector subspace returns a complex multiple of $e_t$ that leaves it, while the anti-quaternion and
+anti-Hermitian subspaces return a real multiple of $e_t$, which lies in $\mathbb{H}_{\mathbb{B}}$ and not in
 them: each of the three leaves the subspace and enters the centre.
 
 **Remark (no unit on any subspace).** The operation has no unit on the whole algebra
 (*Introduction to the Symmetric Quaternionic Algebra*), so it has no unit on any of the remarkable subspaces;
-and even on the centre, where the restriction is the multiplication of $\mathbb{C}$, the unit $e_0$ is a unit
-of the restricted centre and not of the algebra. The element $e_0$ acts on every subspace by the projection of
-the scalar part, $\tilde A\star e_0=A_0e_0$, which is the identity only on the centre. For every nonzero
-$\tilde A$ the equation $\tilde A\star\tilde X=e_0$ has the affine hyperplane $\langle\tilde A,\tilde X\rangle_{\natural}=1$ of
+and even on the centre, where the restriction is the multiplication of $\mathbb{C}$, the unit $e_t$ is a unit
+of the restricted centre and not of the algebra. The element $e_t$ acts on every subspace by the projection of
+the scalar part, $\tilde A\star e_t=A_te_t$, which is the identity only on the centre. For every nonzero
+$\tilde A$ the equation $\tilde A\star\tilde X=e_t$ has the affine hyperplane $\langle\tilde A,\tilde X\rangle_{\natural}=1$ of
 solutions, since the form is non-degenerate; but there is no unit, so no element is invertible in the sense of
 the operation.
 
@@ -169,42 +169,42 @@ readings — none, the complex cone, the real light cone — are the ones record
 
 ## Worked Examples
 
-**A central pair.** For $\tilde P=e_0$ and $\tilde Q=ie_0$ the product is $(1\cdot i)e_0=ie_0$, a central
+**A central pair.** For $\tilde P=e_t$ and $\tilde Q=ie_t$ the product is $(1\cdot i)e_t=ie_t$, a central
 element: the centre is kept inside itself and the value is the product $i$ of the two coefficients.
 
-**A vector pair off the subspace.** For $\tilde P=\tilde Q=e_1$ in the vector subspace the product is
-$(\vec P,\vec Q)e_0=1\cdot e_0=e_0$, so the smallest nonzero value off the subspace is $e_0$; the
-product of $e_1$ with $ie_2$ is $(1\cdot i)e_0=ie_0$, again off the subspace.
+**A vector pair off the subspace.** For $\tilde P=\tilde Q=\vec e_x$ in the vector subspace the product is
+$(\vec P,\vec Q)e_t=1\cdot e_t=e_t$, so the smallest nonzero value off the subspace is $e_t$; the
+product of $\vec e_x$ with $i\vec e_y$ is $(1\cdot i)e_t=ie_t$, again off the subspace.
 
-**A quaternion pair.** For $h=e_0+e_1$ and $g=e_0-e_1$ the coefficient is $1-1=0$, so $h\star g=0$: two
+**A quaternion pair.** For $h=e_t+\vec e_x$ and $g=e_t-\vec e_x$ the coefficient is $1-1=0$, so $h\star g=0$: two
 nonzero elements of the quaternion subspace multiply to $0$. Definiteness is a statement about the diagonal,
 $\langle h,h\rangle_{\natural}>0$, and does not prevent two distinct elements from pairing to zero.
 
-**An anti-quaternion pair.** For $\tilde P=\tilde Q=ie_1$ the product is $-e_0$, which lies in
+**An anti-quaternion pair.** For $\tilde P=\tilde Q=i\vec e_x$ the product is $-e_t$, which lies in
 $\mathbb{H}_{\mathbb{B}}$: the anti-quaternion subspace is not kept inside itself, and the value is the
 negative of the unit.
 
-**A Hermitian pair.** For $\tilde P=e_0+ie_1$ and $\tilde Q=e_0+ie_1$ the coefficient is $1-1=0$, so the
+**A Hermitian pair.** For $\tilde P=e_t+i\vec e_x$ and $\tilde Q=e_t+i\vec e_x$ the coefficient is $1-1=0$, so the
 element is isotropic; it is the standard non-pure zero divisor of the Hermitian subspace. For
-$\tilde P=e_0+ie_1$ and $\tilde Q=e_0-ie_1$ the coefficient is $1+1=2$, so the product is $2e_0$.
+$\tilde P=e_t+i\vec e_x$ and $\tilde Q=e_t-i\vec e_x$ the coefficient is $1+1=2$, so the product is $2e_t$.
 
-**An anti-Hermitian pair.** For $\tilde P=ie_0+e_1$ the square is $(1-1)e_0=0$: the element is isotropic and
+**An anti-Hermitian pair.** For $\tilde P=ie_t+\vec e_x$ the square is $(1-1)e_t=0$: the element is isotropic and
 non-pure, and its product is $0$ with itself.
 
-**A cross pair.** For $\tilde P=e_0$ in the quaternion subspace and $\tilde Q=ie_1$ in the vector subspace the
-product is $\langle e_0,ie_1\rangle_{\natural}e_0=0$, the two directions being paired to zero by the form.
+**A cross pair.** For $\tilde P=e_t$ in the quaternion subspace and $\tilde Q=i\vec e_x$ in the vector subspace the
+product is $\langle e_t,i\vec e_x\rangle_{\natural}e_t=0$, the two directions being paired to zero by the form.
 
 ## Summary
 
 On the remarkable real subspaces the symmetric quaternionic multiplication has the rules
-$(AB)e_0$ on the centre, $(\vec P,\vec Q)e_0$ on the vector subspace, $(\sum_\mu h_\mu g_\mu)e_0$ on the
-quaternion subspace, $-(\sum_\mu h_\mu g_\mu)e_0$ on the anti-quaternion subspace,
-$(a_0b_0-(\vec p,\vec q))e_0$ on the Hermitian subspace and $((\vec p,\vec q)-a_0b_0)e_0$ on the
+$(AB)e_t$ on the centre, $(\vec P,\vec Q)e_t$ on the vector subspace, $(\sum_\mu h_\mu g_\mu)e_t$ on the
+quaternion subspace, $-(\sum_\mu h_\mu g_\mu)e_t$ on the anti-quaternion subspace,
+$(a_tb_t-(\vec p,\vec q))e_t$ on the Hermitian subspace and $((\vec p,\vec q)-a_tb_t)e_t$ on the
 anti-Hermitian subspace. Exactly three of the remarkable subspaces are kept inside themselves — the centre, the quaternion
 subspace and the Hermitian subspace, the three that contain the real line — and the other three leave the
-subspace, the vector subspace producing a complex multiple of $e_0$ and the anti-quaternion and anti-Hermitian
-subspaces a real one; the smallest nonzero values off are $e_0$ at $e_1,e_1$, $-e_0$ at $ie_1,ie_1$ and $e_0$ at
-$e_3,e_3$. The idempotents are $0$ and $e_0$ on the three subspaces that contain $e_0$ and $0$ alone on the
+subspace, the vector subspace producing a complex multiple of $e_t$ and the anti-quaternion and anti-Hermitian
+subspaces a real one; the smallest nonzero values off are $e_t$ at $\vec e_x,\vec e_x$, $-e_t$ at $i\vec e_x,i\vec e_x$ and $e_t$ at
+$\vec e_z,\vec e_z$. The idempotents are $0$ and $e_t$ on the three subspaces that contain $e_t$ and $0$ alone on the
 other three; there is no unit on any subspace. The isotropic elements are none on the two definite rows, the
 pure zero divisors on the vector subspace, none for the complex form on the centre, and the real light cones of
 the non-pure zero divisors on the two Hermitian subspaces. The form whose coefficient the product reads has
@@ -216,12 +216,12 @@ isotropic set appropriate to each.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable real subspaces |
-| $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$ | the symmetric quaternionic multiplication |
-| $A,B$; $h,g$; $a_0,b_0$; $\vec p,\vec q$ | complex coefficients, real quaternions, real scalars, real vectors |
-| $(AB)e_0$, $(\vec P,\vec Q)e_0$, $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$ | the products on the centre, the vector and the quaternion subspaces |
-| $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_0$, $\bigl(a_0b_0-(\vec p,\vec q)\bigr)e_0$, $\bigl((\vec p,\vec q)-a_0b_0\bigr)e_0$ | the products on the anti-quaternion, Hermitian and anti-Hermitian subspaces |
+| $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ | the symmetric quaternionic multiplication |
+| $A,B$; $h,g$; $a_t,b_t$; $\vec p,\vec q$ | complex coefficients, real quaternions, real scalars, real vectors |
+| $(AB)e_t$, $(\vec P,\vec Q)e_t$, $\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$ | the products on the centre, the vector and the quaternion subspaces |
+| $-\bigl(\sum_\mu h_\mu g_\mu\bigr)e_t$, $\bigl(a_tb_t-(\vec p,\vec q)\bigr)e_t$, $\bigl((\vec p,\vec q)-a_tb_t\bigr)e_t$ | the products on the anti-quaternion, Hermitian and anti-Hermitian subspaces |
 | kept inside itself by $\star$ | the product of two elements stays in the subspace |
-| $0$, $e_0$ | the idempotents of the operation |
+| $0$, $e_t$ | the idempotents of the operation |
 | $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of the form on the remarkable subspaces |
 
 ## Further Reading

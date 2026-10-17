@@ -79,7 +79,7 @@ for the noncompact type, where the bracket is that of $\mathrm{G}$ and $\|[X,Y]\
 
 **Corollary (constancy of the curvature invariants).** On a symmetric space the curvature tensor, the Ricci tensor and the scalar curvature are parallel; the Ricci tensor is a multiple of the restriction to $\mathrm{M}$ of the Killing form of $\mathrm{G}$, with the sign of the type, and the space is Einstein precisely when the isotropy representation is irreducible, by Schur's lemma applied to the invariant bilinear form $\mathrm{Ric}$.
 
-**Example (the four families of rank-one).** The compact rank-one symmetric spaces are $S^n = SO(n+1)/SO(n)$ and $\mathbb{RP}^n = S^n/\{\pm1\}$ of constant curvature $+1$; the complex projective spaces $\mathbb{CP}^m = S^{2m+1}/S^1 = SU(m+1)/S(U(m)\times U(1))$ of real dimension $2m$; the quaternionic projective spaces $\mathbb{HP}^m = S^{4m+3}/Sp(1) = Sp(m+1)/(Sp(m)\times Sp(1))$ of real dimension $4m$; and the Cayley projective plane $\mathbb{OP}^2 = F_4/\mathrm{Spin}(9)$ of dimension $16$. Their curvature is positive but, except in the real case, not constant, and together with the four hyperbolic spaces they are the simply connected symmetric spaces of rank one. The Cayley plane is the only one not obtained from an associative division algebra, and its geometry is that of the octonions.
+**Example (the four families of rank-one).** The compact rank-one symmetric spaces are $S^n = SO(n+1)/SO(n)$ and $\mathbb{RP}^n = S^n/\{\pm1\}$ of constant curvature $+1$; the complex projective spaces $\mathbb{CP}^m = S^{2m+1}/S^1 = SU(m+1)/S(\mathrm{U}(m)\times \mathrm{U}(1))$ of real dimension $2m$; the quaternionic projective spaces $\mathbb{HP}^m = S^{4m+3}/Sp(1) = Sp(m+1)/(Sp(m)\times Sp(1))$ of real dimension $4m$; and the Cayley projective plane $\mathbb{OP}^2 = F_4/\mathrm{Spin}(9)$ of dimension $16$. Their curvature is positive but, except in the real case, not constant, and together with the four hyperbolic spaces they are the simply connected symmetric spaces of rank one. The Cayley plane is the only one not obtained from an associative division algebra, and its geometry is that of the octonions.
 
 ## The Two Types and Cartan Duality
 
@@ -131,9 +131,9 @@ is a diffeomorphism; consequently $M$ is diffeomorphic to a Euclidean space, and
 | A II | $SU(2n)/Sp(n)$ | $\mathrm{Sp}(n)$ |
 | A III | $SU(p+q)/S(U(p)\times U(q))$ | $\mathrm{SU}(p)\oplus\mathrm{SU}(q)\oplus\mathrm{U}(1)$ |
 | B I, D I | $SO(p+q)/(SO(p)\times SO(q))$ | $\mathrm{SO}(p)\oplus\mathrm{SO}(q)$ |
-| C I | $Sp(n)/U(n)$ | $\mathrm{U}(n)$ |
+| C I | $Sp(n)/\mathrm{U}(n)$ | $\mathrm{U}(n)$ |
 | C II | $Sp(p+q)/(Sp(p)\times Sp(q))$ | $\mathrm{Sp}(p)\oplus\mathrm{Sp}(q)$ |
-| D III | $SO(2n)/U(n)$ | $\mathrm{U}(n)$ |
+| D III | $SO(2n)/\mathrm{U}(n)$ | $\mathrm{U}(n)$ |
 
 and the exceptional entries, in the Cartan notation, are
 
@@ -174,7 +174,7 @@ together with the single entry $G_2/SO(4)$; each compact entry has a noncompact 
 **Corollary (the holonomy classification).** The irreducible simply connected Riemannian manifolds that are not locally symmetric have restricted holonomy one of
 
 $$
-SO(n), \quad U(n), \quad SU(n), \quad Sp(n), \quad Sp(n)\cdot Sp(1), \quad G_2, \quad \mathrm{Spin}(7) ,
+SO(n), \quad \mathrm{U}(n), \quad SU(n), \quad Sp(n), \quad Sp(n)\cdot Sp(1), \quad G_2, \quad \mathrm{Spin}(7) ,
 $$
 
 by the Berger classification of the holonomy groups; the locally symmetric manifolds are the remaining equality cases, in which the holonomy is the compact part of the isotropy representation of the symmetric pair. The special holonomy manifolds themselves — Calabi–Yau, hyperkähler, quaternionic Kähler, $G_2$ and $\mathrm{Spin}(7)$ — are *Kähler Geometry*, *Calabi–Yau Manifolds*, *Quaternionic Geometry*, *$G_2$ and $\mathrm{Spin}(7)$ Manifolds*, written in parallel, and the holonomy classification is cited there.
@@ -210,7 +210,7 @@ The classification of the irreducible symmetric spaces is Cartan's, and reduces 
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $\mathrm{Gr}_k(\mathbb{C}^n)$ | Symmetric spaces of rank $\min(k,n-k)$ |
 | Hermitian symmetric space, $J$ | Parallel invariant almost complex structure; central circle in $\mathrm{H}$ |
 | Locally symmetric space | Complete manifold with $\nabla R=0$; quotient of a symmetric space |
-| $\mathrm{Hol}$, special holonomy | Holonomy of the Levi-Civita connection; $U(n)$, $SU(n)$, $Sp(n)$, $G_2$, $\mathrm{Spin}(7)$ |
+| $\mathrm{Hol}$, special holonomy | Holonomy of the Levi-Civita connection; $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $G_2$, $\mathrm{Spin}(7)$ |
 
 ## Further Reading
 

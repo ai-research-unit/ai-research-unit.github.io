@@ -21,7 +21,7 @@ In the form in which it was posed, the group operation is assumed only continuou
 
 **Definition.** A **topological group** is a group $G$ with a topology for which the multiplication $G \times G \to G$ and the inversion $G \to G$ are continuous. A **Lie group** is a group that is a smooth manifold for which the same two maps are smooth.
 
-**Definition.** A topological group $G$ has **no small subgroups**, abbreviated **NSS**, if there is a neighbourhood $U$ of the identity containing no subgroup of $G$ other than $\{e\}$; equivalently, every neighbourhood of the identity contains a neighbourhood with the same property. The condition is a local one, and it is inherited by open subgroups.
+**Definition.** A topological group $G$ has **no small subgroups**, abbreviated **NSS**, if there is a neighbourhood $\Omega$ of the identity containing no subgroup of $G$ other than $\{e\}$; equivalently, every neighbourhood of the identity contains a neighbourhood with the same property. The condition is a local one, and it is inherited by open subgroups.
 
 **Example.** A Lie group has NSS. In a neighbourhood of the identity small enough that the exponential is a local diffeomorphism, a subgroup is a union of curves through the identity tangent to its Lie algebra, and a nontrivial such subgroup has a nonzero tangent vector whose powers leave every sufficiently small neighbourhood. The precise statement is the one recorded below as a lemma.
 
@@ -39,7 +39,7 @@ The lemma is the reduction of Hilbert's problem to a purely infinite-group-theor
 
 **Proposition.** The class of NSS groups is closed under taking open subgroups, taking closed subgroups, taking quotients by closed normal subgroups, and taking finite direct products.
 
-**Proof.** An open subgroup inherits the neighbourhood. A closed subgroup $H$ does too, since a subgroup of $H$ lying in the subgroup-free neighbourhood $U \cap H$ is a subgroup of $G$ lying in $U$, hence trivial. A quotient map carries a subgroup-free neighbourhood to a subgroup-free neighbourhood, because the preimage of a subgroup is a subgroup. A product is handled by a product of subgroup-free neighbourhoods of the identities: the projection of a subgroup of the product into each factor is a subgroup of that factor, hence trivial.
+**Proof.** An open subgroup inherits the neighbourhood. A closed subgroup $H$ does too, since a subgroup of $H$ lying in the subgroup-free neighbourhood $\Omega \cap H$ is a subgroup of $G$ lying in $\Omega$, hence trivial. A quotient map carries a subgroup-free neighbourhood to a subgroup-free neighbourhood, because the preimage of a subgroup is a subgroup. A product is handled by a product of subgroup-free neighbourhoods of the identities: the projection of a subgroup of the product into each factor is a subgroup of that factor, hence trivial.
 
 ## The Solution of the Problem
 

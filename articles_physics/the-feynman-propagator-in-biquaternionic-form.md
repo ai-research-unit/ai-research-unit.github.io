@@ -16,7 +16,7 @@ The specific question this article asks is a question about the algebra. The biq
 
 We answer this on a concrete case, by computing the pole structure and the contour explicitly and by recomputing every displayed formula on a momentum chosen for the purpose. The finding is stated at the outset because it is the article's content. **The algebra supplies the complex plane in which the contour is drawn, and a natural notation for the prescription — the deformed mass-shell scalar $\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon$, whose imaginary part lies along the $ict$ direction of the material sector — but it does not select the contour.** The deformation's *axis* is algebraically natural; its *orientation*, which is what distinguishes the Feynman propagator from the retarded and advanced ones, is an analytic boundary condition. In this problem the algebra adds notation and a home for the $i\epsilon$, not the physics that fixes it. If that is all it adds, we say so.
 
-**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace (the fixed-point set of complex conjugation) and $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ is the centre. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. On the spinor module the biquaternion Dirac equation reads $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient, and $\not p=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$ for $p^\mu=(E,\vec p)$. The wave biquaternion is $\tilde{k}=iE\,e_0+\vec p$ (natural units $\hbar=c=1$), with $\tilde{k}\tilde{k}^{\natural}=-E^2+\vec p^2=-p^2$ and mass shell $\tilde{k}\tilde{k}^{\natural}=-m^2$. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary with $i^2=-1$. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace (the fixed-point set of complex conjugation) and $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ is the centre. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. On the spinor module the biquaternion Dirac equation reads $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient, and $\not p=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$ for $p^\mu=(E,\vec p)$. The wave biquaternion is $\tilde{k}=iE\,e_t+\vec p$ (natural units $\hbar=c=1$), with $\tilde{k}\tilde{k}^{\natural}=-E^2+\vec p^2=-p^2$ and mass shell $\tilde{k}\tilde{k}^{\natural}=-m^2$. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Two-Point Function of the Quantized Dirac Field
 
@@ -131,7 +131,7 @@ This is the physical content of the $i\epsilon$, and it is exactly the content t
 
 ## The Biquaternion Form of the Prescription
 
-The Feynman denominator has a compact biquaternion form. With the wave biquaternion $\tilde{k}=iE\,e_0+\vec p$ and its quaternion conjugate $\tilde{k}^{\natural}=iE\,e_0-\vec p$, the quaternion product is
+The Feynman denominator has a compact biquaternion form. With the wave biquaternion $\tilde{k}=iE\,e_t+\vec p$ and its quaternion conjugate $\tilde{k}^{\natural}=iE\,e_t-\vec p$, the quaternion product is
 
 $$
 \tilde{k}\tilde{k}^{\natural}=(iE)^2+\vec p^2=-E^2+\vec p^2=-p^2 .
@@ -151,7 +151,7 @@ $$
 
 the denominator being the **deformed mass-shell operator** $\mathcal{M}(\tilde{k})=\tilde{k}\tilde{k}^{\natural}+m^2$, shifted by $-i\epsilon$. The prescription is thus a deformation of the scalar on which the mass shell is defined, not an addition to the algebra.
 
-The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_0$, an element with purely imaginary scalar coefficient and zero vector part; by the definition of the material sector it lies in $\mathbb{M}_-$, and it lies in the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. Written out, $-i\epsilon\,e_0$ is a displacement along the same $ict$ direction that the framework uses for the temporal coordinate of $\mathbb{M}_-$. So the algebra does three things here, and it is worth separating them:
+The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$, an element with purely imaginary scalar coefficient and zero vector part; by the definition of the material sector it lies in $\mathbb{M}_-$, and it lies in the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. Written out, $-i\epsilon\,e_t$ is a displacement along the same $ict$ direction that the framework uses for the temporal coordinate of $\mathbb{M}_-$. So the algebra does three things here, and it is worth separating them:
 
 1. it provides the complex plane in which the contour is drawn — the coefficient complex structure of $\mathbb{C}_{\mathbb{B}}$;
 2. it locates the deformation direction, the $ict$ axis of $\mathbb{M}_-$;
@@ -159,7 +159,7 @@ The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_0$, an
 
 What it does not do is choose the orientation. Replacing $\epsilon$ by $-\epsilon$ reverses the pole displacements, turning the Feynman propagator into the anti-Feynman one; replacing the opposite displacement by a common one gives the retarded or advanced propagator. All three denominators are built from the same $\tilde{k}\tilde{k}^{\natural}+m^2$ and the same central $i$. The algebra cannot tell them apart, because the difference is not in the algebra; it is in which half-plane the contour closes, equivalently in which boundary condition the distribution is defined by. The $i\epsilon$ is therefore written *with* the algebra's complex structure and *lives in* its material sector, but it is not *produced* by either. The algebra names the axis; the physics chooses the direction.
 
-The closest the complex structure comes to doing real work is the Wick rotation. In the $ict$ convention the hyperbolic operator $\Box=-\partial_t^2/c^2+\Delta$ becomes, after $t\to-i\tau$, the elliptic operator with all four directions on the same footing. The Euclidean Green's function of the elliptic operator is unique once one demands decay at infinity, and its analytic continuation back to real time is the Feynman propagator. In that route the complexification of time is exactly what makes the continuation available.
+The closest the complex structure comes to doing real work is the Wick rotation. In the $ict$ convention the hyperbolic operator $\Box=-c^{-2}\,\partial^2/\partial t^2+\Delta$ becomes, after $t\to-i\tau$, the elliptic operator with all four directions on the same footing. The Euclidean Green's function of the elliptic operator is unique once one demands decay at infinity, and its analytic continuation back to real time is the Feynman propagator. In that route the complexification of time is exactly what makes the continuation available.
 
 But the selection is still analytic, not algebraic. The step "continue the unique Euclidean Green's function" is the input: uniqueness rests on a decay condition in the Euclidean variables, and the direction of the rotation is a further choice, equivalent to the sign of $\epsilon$. Nothing in $\mathbb{B}$ prefers decaying-in-Euclidean over growing. So the Wick rotation exhibits the algebra's complex structure as a *necessary* carrier of the continuation, and the analytic input as the thing that fixes which continuation; it does not convert the algebra into a derivation of the Feynman prescription.
 
@@ -168,7 +168,7 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated expression $(\not p+m)/(p^2-m^2)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\not p-m$ off the mass shell into a distributional inverse on all of momentum space. The propagator satisfies
 
 $$
-(i\not\partial_x-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
+(i\not\partial/\partial Q_x-m)\,S_F(x-y)=i\,\delta^{(4)}(x-y)
 $$
 
 in the distributional sense, and this is a statement that holds for the Feynman, retarded, and advanced choices alike — because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x^0\gtrless y^0$.
@@ -206,25 +206,25 @@ $$
 
 The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
 
-Writing the wave biquaternion $\tilde{k}=iE\,e_0+\vec p$, so that $\tilde{k}\tilde{k}^{\natural}=-p^2$, the propagator amplitude becomes
+Writing the wave biquaternion $\tilde{k}=iE\,e_t+\vec p$, so that $\tilde{k}\tilde{k}^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
 S_F(p)=-\frac{i(\not p+m)}{\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon},
 $$
 
-and the prescription is a deformation of the mass-shell scalar. The deformation $-i\epsilon\,e_0$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and along the $ict$ axis of the material sector $\mathbb{M}_-$. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the deformation but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
+and the prescription is a deformation of the mass-shell scalar. The deformation $-i\epsilon\,e_t$ lies in the centre $\mathbb{C}_{\mathbb{B}}$ and along the $ict$ axis of the material sector $\mathbb{M}_-$. The Feynman, retarded, and advanced propagators differ only in whether the two pole displacements are opposite or common; the algebra provides the complex plane and the axis of the deformation but not its orientation, which is a boundary condition on the distributional inverse. The algebra therefore adds notation and a natural home for the $i\epsilon$, not the selection of the Feynman contour.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (fixed points of complex conjugation) |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$ |
-| $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$ |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat=-\tilde{\Psi}^{*}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
 | $\psi$, $\bar\psi=\psi^\dagger\gamma^0$ | Spinor-module representative and its adjoint |
@@ -236,7 +236,7 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\bar w w=2m$, $\bar v v=-2m$, $\sum_r w\bar w=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
 | $S_F(x-y)=\langle 0|T \psi^{\mathrm{fop}}(x)\bar{\psi^{\mathrm{fop}}}(y)|0\rangle$ | Feynman propagator |
-| $\tilde{k}=iE\,e_0+\vec p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |
+| $\tilde{k}=iE\,e_t+\vec p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |
 | $\tilde{k}\tilde{k}^{\natural}=-m^2$ | Biquaternion mass-shell condition |
 | $\mathcal{M}(\tilde{k})=\tilde{k}\tilde{k}^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde{k})-i\epsilon$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing |

@@ -12,24 +12,24 @@ The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm
 **Definition.** The **norm-one group** of the algebra is
 
 $$
-U = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\},
+\mathrm{U} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = 1\},
 $$
 
 and the set of elements of norm $\pm 1$ is
 
 $$
-U^{\pm} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
+\mathrm{U}^{\pm} = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
 $$
 
-Both are groups under multiplication, and $U$ is a subgroup of $U^{\pm}$.
+Both are groups under multiplication, and $\mathrm{U}$ is a subgroup of $\mathrm{U}^{\pm}$.
 
-**Theorem (The Two Components).** The group $U$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $U^{\pm}$ has exactly two connected components,
+**Theorem (The Two Components).** The group $\mathrm{U}$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $\mathrm{U}^{\pm}$ has exactly two connected components,
 
 $$
-U = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
+\mathrm{U} = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{\tilde q : \langle\tilde q\rangle_{\natural} = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
 $$
 
-and the two components are interchanged by multiplication by $e_2$. The full group of units is
+and the two components are interchanged by multiplication by $\vec e_y$. The full group of units is
 
 $$
 \mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\},
@@ -37,19 +37,19 @@ $$
 
 its centre is $\mathbb{R}^{\times}$, and it has the two components $\{N > 0\}$ and $\{N < 0\}$.
 
-**Proof.** The identification $U \cong \mathrm{SL}_2(\mathbb{R})$ and the description of the unit group are (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*), where the connectedness of the norm-one group and the splitting of the units into the two components $\{N>0\}$, $\{N<0\}$ are recorded. The element $e_2$ has $\langle e_2\rangle_{\natural} = -1$ and $e_2^{-1} = e_2$, so multiplication by $e_2$ exchanges the two split-quaternion norm levels; it therefore identifies the two components of $U^{\pm}$, and since $U$ is connected, $U^{\pm}$ has exactly two components. The centre is $\mathbb{R}$ by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*), so the central units are the nonzero scalars.
+**Proof.** The identification $\mathrm{U} \cong \mathrm{SL}_2(\mathbb{R})$ and the description of the unit group are (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*), where the connectedness of the norm-one group and the splitting of the units into the two components $\{N>0\}$, $\{N<0\}$ are recorded. The element $\vec e_y$ has $\langle \vec e_y\rangle_{\natural} = -1$ and $\vec e_y^{-1} = \vec e_y$, so multiplication by $\vec e_y$ exchanges the two split-quaternion norm levels; it therefore identifies the two components of $\mathrm{U}^{\pm}$, and since $\mathrm{U}$ is connected, $\mathrm{U}^{\pm}$ has exactly two components. The centre is $\mathbb{R}$ by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*), so the central units are the nonzero scalars.
 
-**Remark (Two readings of "the unit split-quaternions").** The norm-one group $U$ is connected and has no two-component structure; the two components appear for the group $U^{\pm}$ of units of norm $\pm 1$. Both readings occur in the literature, and this article keeps them apart: the double cover below is a statement about $U = \mathrm{SL}_2(\mathbb{R})$, and the second component of $U^{\pm}$ is reached by $e_2$ and acts by isometries reversing the time direction.
+**Remark (Two readings of "the unit split-quaternions").** The norm-one group $\mathrm{U}$ is connected and has no two-component structure; the two components appear for the group $\mathrm{U}^{\pm}$ of units of norm $\pm 1$. Both readings occur in the literature, and this article keeps them apart: the double cover below is a statement about $\mathrm{U} = \mathrm{SL}_2(\mathbb{R})$, and the second component of $\mathrm{U}^{\pm}$ is reached by $\vec e_y$ and acts by isometries reversing the time direction.
 
 ## The Adjoint Action on the Vector Subspace
 
-For a unit $u$ define the conjugation map
+For a unit $\tilde u$ define the conjugation map
 
 $$
-\Theta(u) : V \to V, \qquad \Theta(u)v = u v u^{-1}.
+\Theta(\tilde u) : V \to V, \qquad \Theta(\tilde u)\vec q = \tilde u \vec q \tilde u^{-1}.
 $$
 
-**Theorem (The Adjoint Representation).** For every unit $u$, the map $\Theta(u)$ is a real-linear automorphism of $V$ preserving the form $\langle\cdot\rangle_{\natural}$; the assignment $u \mapsto \Theta(u)$ is a group homomorphism
+**Theorem (The Adjoint Representation).** For every unit $\tilde u$, the map $\Theta(\tilde u)$ is a real-linear automorphism of $V$ preserving the form $\langle\cdot\rangle_{\natural}$; the assignment $\tilde u \mapsto \Theta(\tilde u)$ is a group homomorphism
 
 $$
 \Theta : \mathbb{H}_{\mathrm{s}}^{\times} \longrightarrow O(V, N) \cong O(2,1),
@@ -58,12 +58,12 @@ $$
 whose kernel is the centre $\mathbb{R}^{\times}$ and whose image lies in $SO(2,1)$. On the norm-one group the restriction
 
 $$
-\Theta : U \cong \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
+\Theta : \mathrm{U} \cong \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
 $$
 
 has kernel $\{\pm 1\}$.
 
-**Proof.** *The maps land in $V$.* Conjugation by $u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{uvu^{-1}} = u^{\natural}\,v^{\natural}\,(u^{\natural})^{-1}$ and $\overline{u^{-1}} = (u^{\natural})^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $\langle uvu^{-1}\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}\langle u\rangle_{\natural}^{-1} = \langle v\rangle_{\natural}$ by multiplicativity, since $\langle\cdot\rangle_{\natural}$ is real and nonzero on a unit. Hence $\Theta(u) \in O(V,N)$. *Kernel.* If $\Theta(u) = \mathrm{id}$ then $u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $u$ is central, so $u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $e_2e_1e_2 = -e_1$, $e_2e_2e_2 = e_2$, $e_2e_3e_2 = -e_3$, so $\Theta(e_2) = \operatorname{diag}(-1,1,-1)$ in the basis $e_1,e_2,e_3$ and $\det\Theta(e_2) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $U$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$.
+**Proof.** *The maps land in $V$.* Conjugation by $\tilde u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{\tilde u\vec q\tilde u^{-1}} = \tilde u^{\natural}\,\vec q^{\natural}\,(\tilde u^{\natural})^{-1}$ and $\overline{\tilde u^{-1}} = (\tilde u^{\natural})^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $\langle \tilde u\vec q\tilde u^{-1}\rangle_{\natural} = \langle\tilde u\rangle_{\natural}\langle\vec q\rangle_{\natural}\langle\tilde u\rangle_{\natural}^{-1} = \langle\vec q\rangle_{\natural}$ by multiplicativity, since $\langle\cdot\rangle_{\natural}$ is real and nonzero on a unit. Hence $\Theta(\tilde u) \in O(V,N)$. *Kernel.* If $\Theta(\tilde u) = \mathrm{id}$ then $\tilde u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $\tilde u$ is central, so $\tilde u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is connected, so $\det\Theta \equiv 1$ there. On the second component, the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $\vec e_y \vec e_x \vec e_y = -\vec e_x$, $\vec e_y \vec e_y \vec e_y = \vec e_y$, $\vec e_y \vec e_z \vec e_y = -\vec e_z$, so $\Theta(\vec e_y) = \operatorname{diag}(-1,1,-1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$ and $\det\Theta(\vec e_y) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $\mathrm{U}$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$.
 
 **Corollary (The Image of the Unit Group).** The image of the full unit group is
 
@@ -71,9 +71,9 @@ $$
 \Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R}),
 $$
 
-and the image of the norm-one group is $\Theta(U) = SO^{+}(2,1)$, the identity component.
+and the image of the norm-one group is $\Theta(\mathrm{U}) = SO^{+}(2,1)$, the identity component.
 
-**Proof.** The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $U$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(U)$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.
+**Proof.** The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $\mathrm{U}$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(\mathrm{U})$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover.
 
 ## The Multiplication Operators
 
@@ -82,14 +82,14 @@ The adjoint action is not the only way an element acts on the algebra: left and 
 **Definition.** For $\tilde q \in \mathbb{H}_{\mathrm{s}}$ the **left multiplication operator** and the **right multiplication operator** are
 
 $$
-L_{\tilde q} : \tilde p \mapsto \tilde q \tilde p, \qquad R_{\tilde q} : \tilde p \mapsto \tilde p\tilde q .
+L_{\tilde q} : \tilde q_2 \mapsto \tilde q \tilde q_2, \qquad R_{\tilde q} : \tilde q_2 \mapsto \tilde q_2\tilde q .
 $$
 
 Both are $\mathbb{R}$-linear endomorphisms of the four-dimensional space, and the assignments $\tilde q \mapsto L_{\tilde q}$, $\tilde q \mapsto R_{\tilde q}$ are $\mathbb{R}$-algebra (anti-)homomorphisms into $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$; the first is the **left regular representation**. Multiplication differs from the adjoint action in kind: it is not an algebra automorphism, since it does not carry $1$ to $1$, whereas the adjoint action fixes the scalar line pointwise.
 
-**Proposition.** Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4\operatorname{Sc}(\tilde q) = 4q_0$ and determinant $\langle\tilde q\rangle_{\natural}^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit.
+**Proposition.** Both $L_{\tilde q}$ and $R_{\tilde q}$ have trace $4\operatorname{Sc}(\tilde q) = 4q_t$ and determinant $\langle\tilde q\rangle_{\natural}^2$, and $L_{\tilde q}$ is invertible if and only if $\tilde q$ is a unit.
 
-**Proof.** Under the identification of the algebra with $M_2(\mathbb{R})$ — a statement about the algebra, not about a representation — left multiplication by $\tilde q$ on the four-dimensional space becomes left multiplication by the matrix $\tilde q$ on $M_2(\mathbb{R})\cong\mathbb{R}^4$, whose eigenvalues are the two eigenvalues of $\tilde q$, each with multiplicity two. Those two eigenvalues are the roots of the characteristic polynomial $\lambda^2-2\operatorname{Sc}(\tilde q)\lambda+\langle\tilde q\rangle_{\natural}$ (*Split-Quaternion Spectral Theory*), whose sum is $2q_0$ and whose product is $\langle\tilde q\rangle_{\natural}$. Hence $\operatorname{tr}L_{\tilde q} = 2\cdot 2q_0 = 4q_0$ and $\det L_{\tilde q} = \langle\tilde q\rangle_{\natural}^2$. Right multiplication $R_{\tilde q}$ is the transpose of $L_{\tilde q}$ with respect to the non-degenerate trace form $(\tilde q,\tilde p)\mapsto\operatorname{tr}(\tilde q\tilde p)$ on $M_2(\mathbb{R})$, hence has the same eigenvalues, trace and determinant. For invertibility, $L_{\tilde q}(1) = \tilde q$ shows that $L_{\tilde q} = 0$ only for $\tilde q = 0$; if $\langle\tilde q\rangle_{\natural}\neq0$ then $\tilde q$ is a unit and $L_{\tilde q}$ has inverse $L_{\tilde q^{-1}}$, while if $\langle\tilde q\rangle_{\natural} = 0$ and $\tilde q\neq0$ then $\tilde q$ is a zero divisor and there is $\tilde p\neq0$ with $\tilde q\tilde p = 0$ (*Split-Quaternion Zero Divisors*), so $L_{\tilde q}$ is not invertible.
+**Proof.** Under the identification of the algebra with $M_2(\mathbb{R})$ — a statement about the algebra, not about a representation — left multiplication by $\tilde q$ on the four-dimensional space becomes left multiplication by the matrix $\tilde q$ on $M_2(\mathbb{R})\cong\mathbb{R}^4$, whose eigenvalues are the two eigenvalues of $\tilde q$, each with multiplicity two. Those two eigenvalues are the roots of the characteristic polynomial $\lambda^2-2\operatorname{Sc}(\tilde q)\lambda+\langle\tilde q\rangle_{\natural}$ (*Split-Quaternion Spectral Theory*), whose sum is $2q_t$ and whose product is $\langle\tilde q\rangle_{\natural}$. Hence $\operatorname{tr}L_{\tilde q} = 2\cdot 2q_t = 4q_t$ and $\det L_{\tilde q} = \langle\tilde q\rangle_{\natural}^2$. Right multiplication $R_{\tilde q}$ is the transpose of $L_{\tilde q}$ with respect to the non-degenerate trace form $(\tilde q_1,\tilde q_2)\mapsto\operatorname{tr}(\tilde q_1\tilde q_2)$ on $M_2(\mathbb{R})$, hence has the same eigenvalues, trace and determinant. For invertibility, $L_{\tilde q}(1) = \tilde q$ shows that $L_{\tilde q} = 0$ only for $\tilde q = 0$; if $\langle\tilde q\rangle_{\natural}\neq0$ then $\tilde q$ is a unit and $L_{\tilde q}$ has inverse $L_{\tilde q^{-1}}$, while if $\langle\tilde q\rangle_{\natural} = 0$ and $\tilde q\neq0$ then $\tilde q$ is a zero divisor and there is $\tilde q_2\neq0$ with $\tilde q\tilde q_2 = 0$ (*Split-Quaternion Zero Divisors*), so $L_{\tilde q}$ is not invertible.
 
 **Remark.** The doubled eigenvalues and the square $\langle\tilde q\rangle_{\natural}^2$ are the operator form of the double cover: $\tilde q$ and $-\tilde q$ induce the same adjoint action on $V$ and their multiplication operators have the same determinant.
 
@@ -121,9 +121,9 @@ This is a structural difference from the quaternion case and it is worth naming:
 
 ## The Lorentz Group of Signature $(2,1)$
 
-**Definition.** The **Lorentz group of signature $(2,1)$** is the isometry group $O(V,N) \cong O(2,1)$ of the form $N = q_1^2 - q_2^2 - q_3^2$ on the three-dimensional vector subspace; its **identity component** is $\mathrm{SO}^{+}(2,1)$, the group of isometries of determinant $+1$ preserving the time orientation.
+**Definition.** The **Lorentz group of signature $(2,1)$** is the isometry group $O(V,N) \cong O(2,1)$ of the form $N = q_x^2 - q_y^2 - q_z^2$ on the three-dimensional vector subspace; its **identity component** is $\mathrm{SO}^{+}(2,1)$, the group of isometries of determinant $+1$ preserving the time orientation.
 
-**Theorem (The Structure of the Group).** The group $O(2,1)$ has four connected components, distinguished by the signs of $\det$ and of the coordinate $q_1$ of a timelike vector; the subgroup $SO(2,1)$ of determinant $+1$ has two components, and its identity component is $\mathrm{SO}^{+}(2,1)$, a three-dimensional group isomorphic to $\mathrm{PSL}_2(\mathbb{R})$. The full group of units of the algebra maps onto $SO(2,1)$ with kernel $\mathbb{R}^{\times}$, and the norm-one group maps onto $\mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$.
+**Theorem (The Structure of the Group).** The group $O(2,1)$ has four connected components, distinguished by the signs of $\det$ and of the coordinate $q_x$ of a timelike vector; the subgroup $SO(2,1)$ of determinant $+1$ has two components, and its identity component is $\mathrm{SO}^{+}(2,1)$, a three-dimensional group isomorphic to $\mathrm{PSL}_2(\mathbb{R})$. The full group of units of the algebra maps onto $SO(2,1)$ with kernel $\mathbb{R}^{\times}$, and the norm-one group maps onto $\mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$.
 
 **Proof.** The components of $O(2,1)$ are described in *Isometries and Orthogonal Transformations*; the isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ is the double cover of the preceding section, and the statement about the images and kernels is the theorem on the adjoint representation and its corollary.
 
@@ -131,7 +131,7 @@ This is a structural difference from the quaternion case and it is worth naming:
 
 ## Elliptic and Hyperbolic One-Parameter Subgroups
 
-The solutions of $\tilde\xi^2 = -1$ and of $\eta^2 = +1$ generate the two kinds of one-parameter subgroup of $U$.
+The solutions of $\tilde\xi^2 = -1$ and of $\eta^2 = +1$ generate the two kinds of one-parameter subgroup of $\mathrm{U}$.
 
 **Theorem (Elliptic Subgroups).** Let $\tilde\xi \in V$ with $\tilde\xi^2 = -1$. Then the elements
 
@@ -139,15 +139,15 @@ $$
 g(\theta) = \cos\theta + \tilde\xi \sin\theta, \qquad \theta \in \mathbb{R},
 $$
 
-form a subgroup of $U$ isomorphic to $SO(2)$, and
+form a subgroup of $\mathrm{U}$ isomorphic to $SO(2)$, and
 
 $$
 \Theta(g(\theta)) \tilde\xi = \tilde\xi, \qquad \Theta(g(\theta)) : \tilde\xi^{\perp} \to \tilde\xi^{\perp} \text{ is a rotation by } 2\theta .
 $$
 
-The subgroups obtained from the solutions of $\tilde\xi^2 = -1$ are the compact subgroups of $U$, and they exhaust the conjugacy classes of maximal compact subgroups.
+The subgroups obtained from the solutions of $\tilde\xi^2 = -1$ are the compact subgroups of $\mathrm{U}$, and they exhaust the conjugacy classes of maximal compact subgroups.
 
-**Proof.** The split-quaternion norm is $\langle g(\theta)\rangle_{\natural} = \cos^2\theta \cdot 1 + \sin^2\theta \cdot \langle\tilde\xi\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$, using $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$; the addition formula for $g$ follows from $\tilde\xi^2 = -1$. The element $g$ commutes with $\tilde\xi$, so $\tilde\xi$ is fixed; and $\tilde\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\tilde\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\tilde\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Rotations and Reflections*, §*The Homomorphism to SO(3)*.
+**Proof.** The split-quaternion norm is $\langle g(\theta)\rangle_{\natural} = \cos^2\theta \cdot 1 + \sin^2\theta \cdot \langle\tilde\xi\rangle_{\natural} = \cos^2\theta + \sin^2\theta = 1$, using $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$; the addition formula for $g$ follows from $\tilde\xi^2 = -1$. The element $g$ commutes with $\tilde\xi$, so $\tilde\xi$ is fixed; and $\tilde\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\tilde\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\tilde\xi = \vec e_x$ in the basis $\vec e_y,\vec e_z$ gives $\Theta(g(\theta))\vec e_y = \cos 2\theta\, \vec e_y + \sin 2\theta\, \vec e_z$ and $\Theta(g(\theta))\vec e_z = -\sin 2\theta\, \vec e_y + \cos 2\theta\, \vec e_z$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Rotations and Reflections*, §*The Homomorphism to SO(3)*.
 
 **Theorem (Hyperbolic Subgroups).** Let $\eta \in V$ with $\eta^2 = +1$, that is $\langle \eta\rangle_{\natural} = -1$. Then the elements
 
@@ -155,7 +155,7 @@ $$
 h(t) = \cosh t + \eta \sinh t, \qquad t \in \mathbb{R},
 $$
 
-form a subgroup of $U$ isomorphic to $\mathbb{R}$, and
+form a subgroup of $\mathrm{U}$ isomorphic to $\mathbb{R}$, and
 
 $$
 \Theta(h(t)) \eta = \eta, \qquad \Theta(h(t)) : \eta^{\perp} \to \eta^{\perp}
@@ -167,7 +167,7 @@ acts on the plane $\eta^{\perp}$ of signature $(1,1)$ as a hyperbolic rotation w
 
 **Remark (versors and hyperbolic versors).** The two families of the theorems are the two kinds of *versor* of the split-quaternion units: $\cos\theta + \tilde\xi\sin\theta$ from a root of $-1$ is a versor, and $\cosh t + \eta\sinh t$ from a unit of square $+1$ is a hyperbolic versor, an element whose earliest instances are Cockle's tessarines. On the plane $\eta^{\perp}$ of Lorentzian signature the second family is the one-parameter group of a boost of rapidity $2t$ at the generator $\eta$, so the hyperbolic versor is the exponential form of the boost; the closed form and the naming are in *Split-Quaternion Exponential and Lie Group Structure*.
 
-**Corollary (The Trichotomy of Subgroups).** The subgroup generated by a solution of $\tilde\xi^2 = -1$ is compact and consists of elements without real eigenvalues; the subgroup generated by a solution of $\eta^2 = +1$ is non-compact and its non-identity elements have the two real eigenvalues $\exp(\pm t)$ of the isometry. The three families correspond to the three conjugacy classes of one-parameter subgroups of $U$: the elliptic class, the hyperbolic class, and the parabolic class, the last consisting of the subgroups generated by the nilpotents of $V$ and acting by parabolic isometries fixing a single isotropic line.
+**Corollary (The Trichotomy of Subgroups).** The subgroup generated by a solution of $\tilde\xi^2 = -1$ is compact and consists of elements without real eigenvalues; the subgroup generated by a solution of $\eta^2 = +1$ is non-compact and its non-identity elements have the two real eigenvalues $\exp(\pm t)$ of the isometry. The three families correspond to the three conjugacy classes of one-parameter subgroups of $\mathrm{U}$: the elliptic class, the hyperbolic class, and the parabolic class, the last consisting of the subgroups generated by the nilpotents of $V$ and acting by parabolic isometries fixing a single isotropic line.
 
 **Proof.** The first two statements are the computations of the two theorems; the parabolic case uses the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*), whose exponentials are the elements $1 + t\tilde\xi$ with $\tilde\xi^2 = 0$ and $\langle\tilde\xi\rangle_{\natural} = 0$.
 
@@ -175,20 +175,20 @@ acts on the plane $\eta^{\perp}$ of signature $(1,1)$ as a hyperbolic rotation w
 
 The form $\langle\cdot\rangle_{\natural}$ is isotropic, so the trichotomy is real: all three classes are nonempty, unlike in the quaternion case, where the form is definite and only the analogue of the timelike class occurs.
 
-**Definition.** A nonzero element $v \in V$ is **timelike** when $\langle v\rangle_{\natural} > 0$, **lightlike** when $\langle v\rangle_{\natural} = 0$, and **spacelike** when $\langle v\rangle_{\natural} < 0$. The lightlike elements are the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*).
+**Definition.** A nonzero element $\vec q \in V$ is **timelike** when $\langle\vec q\rangle_{\natural} > 0$, **lightlike** when $\langle\vec q\rangle_{\natural} = 0$, and **spacelike** when $\langle\vec q\rangle_{\natural} < 0$. The lightlike elements are the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*).
 
 **Theorem (The Orbits).** The action of $\mathrm{SO}^{+}(2,1)$ on $V$ has the following orbits.
 
 | Orbit | Criterion | Structure |
 |---|---|---|
-| $\{0\}$ | $v = 0$ | one point |
-| two timelike orbits | $\langle v\rangle_{\natural} = 1$, the two sheets $q_1 \geq 1$ and $q_1 \leq -1$ | each a copy of the hyperbolic plane |
-| two lightlike orbits | $v \neq 0$, $\langle v\rangle_{\natural} = 0$ | the two nappes of the cone, each a homogeneous space of dimension $2$ |
-| one spacelike orbit | $\langle v\rangle_{\natural} = -1$ | the one-sheeted hyperboloid, a homogeneous space of dimension $2$ |
+| $\{0\}$ | $\vec q = 0$ | one point |
+| two timelike orbits | $\langle\vec q\rangle_{\natural} = 1$, the two sheets $q_x \geq 1$ and $q_x \leq -1$ | each a copy of the hyperbolic plane |
+| two lightlike orbits | $\vec q \neq 0$, $\langle\vec q\rangle_{\natural} = 0$ | the two nappes of the cone, each a homogeneous space of dimension $2$ |
+| one spacelike orbit | $\langle\vec q\rangle_{\natural} = -1$ | the one-sheeted hyperboloid, a homogeneous space of dimension $2$ |
 
 Each nontrivial orbit is a level set of $\langle\cdot\rangle_{\natural}$ scaled to $\pm 1$ or $0$, and the stabiliser of a timelike point is a copy of $SO(2)$, the stabiliser of a spacelike point is a copy of $SO(1,1) \cong \mathbb{R}$, and the stabiliser of a lightlike point is the one-parameter unipotent group of null transvections, isomorphic to $\mathbb{R}$.
 
-**Proof.** The form and its action are those of the preceding sections; the level sets are invariant because $\Theta$ preserves $\langle\cdot\rangle_{\natural}$, and transitivity on each level set is the standard transitivity of the Lorentz group on each hyperboloid, proved in *Isometries and Orthogonal Transformations*, together with the orbit–stabiliser theorem. The stabiliser of a timelike vector is the group of isometries of the positive-definite orthogonal complement, namely $SO(2)$; that of a spacelike vector is the group of isometries of the signature-$(1,1)$ complement, namely $SO(1,1)$; and that of a lightlike vector preserves the radical $\mathbb{R}v$ of the orthogonal complement and acts trivially on the one-dimensional quotient $v^{\perp}/\mathbb{R}v$, so that its Lie algebra is the line $\{X \in \mathrm{SO}(2,1) : Xv = 0\}$, of dimension one: every orbit in the table is two-dimensional and the group is three-dimensional, so every stabiliser is one-dimensional, the three of them being $SO(2)$, $SO(1,1)$ and the unipotent group. (The stabiliser of a lightlike *direction*, which is a point of the boundary of the hyperbolic plane rather than a vector of the cone, is the larger two-dimensional solvable group, the affine group of the line.)
+**Proof.** The form and its action are those of the preceding sections; the level sets are invariant because $\Theta$ preserves $\langle\cdot\rangle_{\natural}$, and transitivity on each level set is the standard transitivity of the Lorentz group on each hyperboloid, proved in *Isometries and Orthogonal Transformations*, together with the orbit–stabiliser theorem. The stabiliser of a timelike vector is the group of isometries of the positive-definite orthogonal complement, namely $SO(2)$; that of a spacelike vector is the group of isometries of the signature-$(1,1)$ complement, namely $SO(1,1)$; and that of a lightlike vector preserves the radical $\mathbb{R}\vec q$ of the orthogonal complement and acts trivially on the one-dimensional quotient $\vec q^{\perp}/\mathbb{R}\vec q$, so that its Lie algebra is the line $\{X \in \mathrm{SO}(2,1) : X\vec q = 0\}$, of dimension one: every orbit in the table is two-dimensional and the group is three-dimensional, so every stabiliser is one-dimensional, the three of them being $SO(2)$, $SO(1,1)$ and the unipotent group. (The stabiliser of a lightlike *direction*, which is a point of the boundary of the hyperbolic plane rather than a vector of the cone, is the larger two-dimensional solvable group, the affine group of the line.)
 
 **Corollary (The Two Sheets and the Hyperbolic Plane).** Each sheet of $N = 1$ is a copy of the hyperbolic plane, and the identity component of its isometry group is $\mathrm{SO}^{+}(2,1) \cong \mathrm{PSL}_2(\mathbb{R})$. The model is built on the split-quaternions in *Split-Quaternions and Hyperbolic Geometry*, which carries the geometry; the present article supplies the group action, not the model.
 
@@ -200,24 +200,24 @@ Each nontrivial orbit is a level set of $\langle\cdot\rangle_{\natural}$ scaled 
 
 ## Invariants and the Action on the Distinguished Subspaces
 
-Conjugation by a unit is an automorphism of the whole algebra, not only a linear map of $V$ (*Split-Quaternion Automorphisms and Derivations*), so it preserves the two summands of $\mathbb{H}_{\mathrm{s}} = S\oplus V$ separately and never mixes them: it acts trivially on the scalar line $S$, which it fixes pointwise, and by the Lorentz action on $V$. On the whole algebra the invariants of the adjoint action are therefore the scalar part $q_0$ and the split-quaternion norm $\langle\tilde q\rangle_{\natural}$, the first because $S$ is fixed and the second because the action is an automorphism; this is why the whole group-theoretic content of the operator sits on the vector subspace.
+Conjugation by a unit is an automorphism of the whole algebra, not only a linear map of $V$ (*Split-Quaternion Automorphisms and Derivations*), so it preserves the two summands of $\mathbb{H}_{\mathrm{s}} = S\oplus V$ separately and never mixes them: it acts trivially on the scalar line $S$, which it fixes pointwise, and by the Lorentz action on $V$. On the whole algebra the invariants of the adjoint action are therefore the scalar part $q_t$ and the split-quaternion norm $\langle\tilde q\rangle_{\natural}$, the first because $S$ is fixed and the second because the action is an automorphism; this is why the whole group-theoretic content of the operator sits on the vector subspace.
 
 The adjoint action on the distinguished subspaces is as follows.
 
 | subspace | image under $\Theta(g)$ | preserved? | remark |
 |---|---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $S$ | yes, pointwise | the centre is fixed |
-| $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $V$ | yes | the Lorentz action of signature $(2,1)$ |
-| a line $\mathbb{R} v \subset V$ | a line $\mathbb{R}\,\Theta(g)v$ | yes as a class | the sign of $\langle v\rangle_{\natural}$ is preserved |
-| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
-| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
+| $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $V$ | yes | the Lorentz action of signature $(2,1)$ |
+| a line $\mathbb{R} \vec q \subset V$ | a line $\mathbb{R}\,\Theta(g)\vec q$ | yes as a class | the sign of $\langle \vec q\rangle_{\natural}$ is preserved |
+| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | a conjugate split-complex plane | only if $g$ normalises it | automorphisms permute the split-complex planes |
+| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | a conjugate split-complex plane | only if $g$ normalises it | as above |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | a minimal left ideal | only if $g$ normalises it | idempotents map to idempotents |
 
 The first three rows are the content of the preceding sections. The remaining rows record that an automorphism sends a subalgebra to a subalgebra of the same isomorphism type: the split-complex planes are permuted among their conjugates, since the split Cartan subalgebras of $M_2(\mathbb{R})$ are conjugate, and a unit normalises a given plane exactly when it preserves the pair of isotropic lines of that plane. The idempotents form a single orbit-like set under the automorphism group and the minimal left ideals are permuted accordingly; this is developed alongside the idempotent theory in *Split-Quaternion Ideals and Peirce Decomposition*.
 
 ## The Relation to the Polar Representation
 
-Every nonzero split-quaternion has a polar representation $\tilde q = \rho u$ with $\rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0$ and $u$ a unit of norm $\pm1$ (*Split-Quaternion Polar Element Representation*). In it the operator content of $\tilde q$ splits: the positive scale contributes the scalar operator $L_\rho = \rho\,\mathrm{id}$, and the unit contributes the adjoint automorphism $\Theta(u)$ on $V$, which is the Lorentz transformation the element carries. Left multiplication by $\tilde q$ is therefore the composite of a scaling and an operator whose restriction to $V$ is that Lorentz transformation: $L_{\tilde q} = \rho\,L_u$, and the adjoint action sees only $u$. The explicit polar factor in each of the three sign cases $N>0$, $N<0$, $N=0$ is the subject of *Split-Quaternion Polar Element Representation*.
+Every nonzero split-quaternion has a polar representation $\tilde q = \rho \tilde u$ with $\rho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0$ and $\tilde u$ a unit of norm $\pm1$ (*Split-Quaternion Polar Element Representation*). In it the operator content of $\tilde q$ splits: the positive scale contributes the scalar operator $L_\rho = \rho\,\mathrm{id}$, and the unit contributes the adjoint automorphism $\Theta(\tilde u)$ on $V$, which is the Lorentz transformation the element carries. Left multiplication by $\tilde q$ is therefore the composite of a scaling and an operator whose restriction to $V$ is that Lorentz transformation: $L_{\tilde q} = \rho\,L_{\tilde u}$, and the adjoint action sees only $\tilde u$. The explicit polar factor in each of the three sign cases $N>0$, $N<0$, $N=0$ is the subject of *Split-Quaternion Polar Element Representation*.
 
 ## Comparison with the Quaternion and Split-Biquaternion Cases
 
@@ -240,23 +240,23 @@ The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$ of the notation table is
 
 ## Summary
 
-The norm-one group of the split-quaternion algebra is $U \cong \mathrm{SL}_2(\mathbb{R})$, connected; the group of units of norm $\pm 1$ has the two components $U$ and the split-quaternion norm $-1$ component interchanged by $e_2$; and the full group of units $\{N \neq 0\}$ has centre $\mathbb{R}^{\times}$.
+The norm-one group of the split-quaternion algebra is $\mathrm{U} \cong \mathrm{SL}_2(\mathbb{R})$, connected; the group of units of norm $\pm 1$ has the two components $\mathrm{U}$ and the split-quaternion norm $-1$ component interchanged by $\vec e_y$; and the full group of units $\{N \neq 0\}$ has centre $\mathbb{R}^{\times}$.
 
-Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $\mathrm{SO}(2,1) \cong \mathrm{PGL}_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$ — onto the full group, not only its identity component, because a negative-norm unit such as $e_2$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which reverses the sheets — and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}(2,1)$ of the signature-$(2,1)$ form, with identity component $\mathrm{SO}^{+}(2,1)$, and not $\mathrm{SO}(3,1)$.
+Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $\mathrm{SO}(2,1) \cong \mathrm{PGL}_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$ — onto the full group, not only its identity component, because a negative-norm unit such as $\vec e_y$ acts on $V$ as $\operatorname{diag}(-1,1,-1)$, which reverses the sheets — and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}(2,1)$ of the signature-$(2,1)$ form, with identity component $\mathrm{SO}^{+}(2,1)$, and not $\mathrm{SO}(3,1)$.
 
-Besides conjugation, an element acts by left multiplication $L_{\tilde q}(\tilde p) = \tilde q\tilde p$ and right multiplication $R_{\tilde q}(\tilde p) = \tilde p\tilde q$, operators of trace $4q_0$ and determinant $\langle\tilde q\rangle_{\natural}^2$, with $L_{\tilde q}$ invertible exactly for a unit. On the whole algebra the adjoint action preserves the scalar part and the norm and never mixes $S$ with $V$, so its invariants are $q_0$ and $\langle\tilde q\rangle_{\natural}$; it fixes $S$ pointwise, preserves $V$, and permutes the split-complex planes and the minimal left ideals among their conjugates. In the polar form $\tilde q = \rho u$ the scale contributes the scalar operator $\rho\,\mathrm{id}$ and the unit the Lorentz transformation $\Theta(u)$, so that $L_{\tilde q} = \rho\,L_u$ and conjugation sees only $u$.
+Besides conjugation, an element acts by left multiplication $L_{\tilde q}(\tilde q_2) = \tilde q\tilde q_2$ and right multiplication $R_{\tilde q}(\tilde q_2) = \tilde q_2\tilde q$, operators of trace $4q_t$ and determinant $\langle\tilde q\rangle_{\natural}^2$, with $L_{\tilde q}$ invertible exactly for a unit. On the whole algebra the adjoint action preserves the scalar part and the norm and never mixes $S$ with $V$, so its invariants are $q_t$ and $\langle\tilde q\rangle_{\natural}$; it fixes $S$ pointwise, preserves $V$, and permutes the split-complex planes and the minimal left ideals among their conjugates. In the polar form $\tilde q = \rho \tilde u$ the scale contributes the scalar operator $\rho\,\mathrm{id}$ and the unit the Lorentz transformation $\Theta(\tilde u)$, so that $L_{\tilde q} = \rho\,L_{\tilde u}$ and conjugation sees only $\tilde u$.
 
-The roots of $\tilde\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
+The roots of $\tilde\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. Under the norm-one group $\mathrm{U} \cong \mathrm{SL}_2(\mathbb{R})$, the nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit; the four sheets and nappes merge in pairs under the negative-norm units, so that the full group of units has one orbit of each sign type. The trichotomy is nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $U = \{N=1\}$ | the norm-one group, $\cong \mathrm{SL}_2(\mathbb{R})$ | *Split-Quaternion Norm and Invertibility* |
-| $U^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
+| $\mathrm{U} = \{N=1\}$ | the norm-one group, $\cong \mathrm{SL}_2(\mathbb{R})$ | *Split-Quaternion Norm and Invertibility* |
+| $\mathrm{U}^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
 | $\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\}$ | the group of units | *Split-Quaternion Norm and Invertibility* |
-| $\Theta(u)v = uvu^{-1}$ | the adjoint action on $V$ | this article |
-| $L_{\tilde q}(\tilde p) = \tilde q\tilde p$, $R_{\tilde q}(\tilde p) = \tilde p\tilde q$ | left and right multiplication operators; trace $4q_0$, determinant $\langle\tilde q\rangle_{\natural}^2$ | this article |
+| $\Theta(\tilde u)\vec q = \tilde u\vec q\tilde u^{-1}$ | the adjoint action on $V$ | this article |
+| $L_{\tilde q}(\tilde q_2) = \tilde q\tilde q_2$, $R_{\tilde q}(\tilde q_2) = \tilde q_2\tilde q$ | left and right multiplication operators; trace $4q_t$, determinant $\langle\tilde q\rangle_{\natural}^2$ | this article |
 | $(V,N) \cong \mathbb{R}^{2,1}$ | the vector subspace with its signature-$(2,1)$ form | *Split-Quaternion Algebra* |
 | $O(2,1)$, $SO(2,1)$, $\mathrm{SO}^{+}(2,1)$ | the Lorentz group, its determinant-one part, its identity component | this article |
 | $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ | the double cover | this article |

@@ -9,14 +9,14 @@ The article uses *Quaternion Algebra* for the basis and product, *Quaternion Nor
 
 The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$; the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$; the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
 
 ## The Algebra as a Topological Space
 
 **Theorem.** The linear map
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3\longmapsto(q_0,q_1,q_2,q_3)
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z\longmapsto(q_t,q_x,q_y,q_z)
 $$
 
 is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.
@@ -39,7 +39,7 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The unit sphere is a closed, compact, connected three-dimensional manifold, homeomorphic to the standard sphere $S^3\subset\mathbb{R}^4$, and it is a topological group under the inherited multiplication, with $S^3\subseteq\mathbb{H}^{\times}$; its smooth and Lie-group structure is that of *Quaternion Exponential and Lie Group Structure*, where it is identified with $Sp(1)\cong SU(2)$.
 
-*Proof.* The unit sphere is the level set of the continuous function $\langle\cdot\rangle_{\natural}$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $\langle p\tilde q\rangle_{\natural} = \langle p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
+*Proof.* The unit sphere is the level set of the continuous function $\langle\cdot\rangle_{\natural}$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $\langle \tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
 
 ## The Group of Units
 

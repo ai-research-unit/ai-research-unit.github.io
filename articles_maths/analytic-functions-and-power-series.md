@@ -93,21 +93,21 @@ The non-Archimedean case has no analogue of the delicate boundary behaviour of t
 
 ### Definition and Elementary Properties
 
-**Definition.** Let $F$ be a complete valued field and $U \subseteq F$ open. A function $f : U \to F$ is **analytic on $U$** if for every $a \in U$ there is a power series $\sum_n c_n (x-a)^n$ with positive radius of convergence whose sum agrees with $f$ on $B(a,\rho)$ for some $\rho > 0$. The set of analytic functions on $U$ is written $\mathcal{O}(U)$.
+**Definition.** Let $F$ be a complete valued field and $\Omega \subseteq F$ open. A function $f : \Omega \to F$ is **analytic on $\Omega$** if for every $a \in \Omega$ there is a power series $\sum_n c_n (x-a)^n$ with positive radius of convergence whose sum agrees with $f$ on $B(a,\rho)$ for some $\rho > 0$. The set of analytic functions on $\Omega$ is written $\mathcal{O}(\Omega)$.
 
 The definition is local: analyticity is a property of the germ of $f$ at each point, and it is inherited by restrictions to smaller open sets. A polynomial is analytic on $F$, and a power series with radius $R$ is analytic on its disc of convergence, with the expansion about any interior point $a$ obtained by expanding $(x - b)^n = ((x-a) + (a-b))^n$ and regrouping; the regrouping is legitimate because the resulting double series converges absolutely in the Archimedean case, and because its terms tend to $0$ in each variable in the non-Archimedean case.
 
-**Theorem.** Let $f$ be analytic on $U$. Then:
+**Theorem.** Let $f$ be analytic on $\Omega$. Then:
 
-**(a)** $f$ is continuous on $U$;
+**(a)** $f$ is continuous on $\Omega$;
 
-**(b)** $f$ is differentiable on $U$, in the sense that
+**(b)** $f$ is differentiable on $\Omega$, in the sense that
 
 $$
 f'(a) = \lim_{h \to 0} \frac{f(a+h) - f(a)}{h}
 $$
 
-exists for every $a \in U$, and $f'$ is analytic on $U$, with $f'(x) = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;
+exists for every $a \in \Omega$, and $f'$ is analytic on $\Omega$, with $f'(x) = \sum_n n\,c_n (x-a)^{n-1}$ on a neighbourhood of $a$;
 
 **(c)** if $f$ is analytic and $f(a) \neq 0$ then $1/f$ is analytic on a neighbourhood of $a$;
 
@@ -304,7 +304,7 @@ The exponential has radius $\lvert p \rvert^{1/(p-1)}$ over a field of residue c
 | $B(a,r)$, $\overline{B}(a,r)$ | Open and closed discs of centre $a$, radius $r$ |
 | $\sum_n a_n (x-a)^n$ | Power series about $a$ |
 | $R$ | Radius of convergence $1/\limsup \lvert a_n \rvert^{1/n}$ |
-| $\mathcal{O}(U)$ | Ring of analytic functions on $U$ |
+| $\mathcal{O}(\Omega)$ | Ring of analytic functions on $\Omega$ |
 | $f'$, $f^{(n)}$ | Derivative, $n$-th derivative |
 | $\exp$, $\log$ | Exponential and logarithmic series |
 | $\rho_{\exp} = \lvert p \rvert^{1/(p-1)}$ | Radius of convergence of the exponential |

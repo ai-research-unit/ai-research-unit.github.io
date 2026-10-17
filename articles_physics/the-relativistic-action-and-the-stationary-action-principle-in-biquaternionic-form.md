@@ -33,7 +33,7 @@ The condition that the variation vanish on the boundary is what makes the princi
 
 The Lagrangian must be a **real scalar**, and this is a statement about the algebra, not a convenience. A biquaternion
 $$
-\mathcal{L} = \mathcal{L}_0e_0 + \mathcal{L}_ke_k \in \mathbb{B}
+\mathcal{L} = \mathcal{L}_0e_t + \mathcal{L}_k\vec e_k \in \mathbb{B}
 $$
 carries eight real numbers, and only its scalar part, and only the real part of that, is invariant under the central phase and compatible with the Lorentz action. The framework therefore builds its Lagrangians from two pairings, both supplied by the involution lattice:
 $$
@@ -78,7 +78,7 @@ The action of a free relativistic particle is the proper time along its worldlin
 $$
 S = -mc\int\sqrt{-\,d\tilde{Q}\,\overline{d\tilde{Q}}} = -mc\int\sqrt{-\,\langle d\tilde{Q}\rangle_{\natural}} ,
 $$
-with $\tilde{Q} = ict\,e_0 + \vec x$ the four-position biquaternion. With $d\tilde{Q} = (ic\,e_0 + \dot{\vec x})\,dt$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
+with $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the four-position biquaternion. With $d\tilde{Q} = (ic\,e_t + d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt)\,dt$ the integrand is the invariant interval, and parametrising by the coordinate time gives the standard Lagrangian
 $$
 S = -mc^2\int\frac{dt}{\gamma} = \int L\,dt , \qquad
 L = -mc^2\sqrt{1 - \frac{\vec v^2}{c^2}} , \qquad \gamma = \frac{1}{\sqrt{1-\vec v^2/c^2}} ,
@@ -89,7 +89,7 @@ as the companion *Relativistic Mechanics in Biquaternionic Form* records. The re
 
 Parametrising by proper time and writing $\tilde{V} = d\tilde{Q}/d\tau$, the four-velocity obeys
 $$
-\tilde{V} = \gamma\bigl(ic\,e_0 + \vec v\bigr) \in \mathbb{M}_- ,
+\tilde{V} = \gamma\bigl(ic\,e_t + \vec v\bigr) \in \mathbb{M}_- ,
 \qquad
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\bigl(-c^2 + \vec v^2\bigr) = -c^2 .
 $$
@@ -114,7 +114,7 @@ the straight worldline. A discrete check confirms it: stationarity of the discre
 
 ### The coupling to an external potential
 
-The coupling of a charge $ϙ$ to an external four-potential $\tilde{A} = i(\phi/c)e_0 + \vec A$ is the standard line integral
+The coupling of a charge $ϙ$ to an external four-potential $\tilde{A} = i(\phi/c)e_t + \vec A$ is the standard line integral
 $$
 S_{\mathrm{int}} = -ϙ\int A_\mu\,dx^\mu ,
 $$
@@ -128,9 +128,9 @@ with $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ the field tensor. Th
 
 ### The canonical four-momentum and the mass shell
 
-The momentum conjugate to $\tilde{Q}$ is $\tilde{P} = \partial L/\partial\dot{\tilde{Q}} = m\tilde{V}$, so that
+The momentum conjugate to $\tilde{Q}$ is $\tilde{P} = \partial L/\partial\left(d\tilde{Q}/d\tau\right) = m\tilde{V}$, so that
 $$
-\tilde{P} = m\tilde{V} = m\gamma\bigl(ic\,e_0 + \vec v\bigr) = i\,\frac{E}{c}\,e_0 + \vec p ,
+\tilde{P} = m\tilde{V} = m\gamma\bigl(ic\,e_t + \vec v\bigr) = i\,\frac{E}{c}\,e_t + \vec p ,
 \qquad
 \langle\tilde{P}\rangle_{\natural} = \gamma^2\bigl(-m^2c^2 + m^2\vec v^2\bigr) = -m^2c^2 .
 $$
@@ -140,7 +140,7 @@ The mass shell is the biquaternion-norm statement $\langle\tilde{P}\rangle_{\nat
 
 ### The real Lagrangian and the second-order equation
 
-For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{\Phi} = \phi\,e_0 \in \mathbb{C}_{\mathbb{B}}$. Its action is
+For a complex field the framework uses the Hermitian pairing, and the relativistic scalar field of the series is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$. Its action is
 $$
 S[\tilde{\Phi}] = \int\mathcal{L}\,d^4x ,
 \qquad
@@ -148,19 +148,19 @@ S[\tilde{\Phi}] = \int\mathcal{L}\,d^4x ,
 $$
 the form fixed by the companion *Noether's Theorem in Biquaternionic Form* and the companion *The Klein–Gordon Equation in Biquaternionic Form*. Expanding the scalar parts,
 $$
-\mathcal{L} = -\,(\partial_{ict}\phi^*)(\partial_{ict}\phi) - \sum_k(\partial_k\phi^*)(\partial_k\phi) - \mu^2\,\phi^*\phi ,
+\mathcal{L} = -\,(\partial/\partial Q_t\,\phi^*)(\partial/\partial Q_t\,\phi) - \sum_k(\partial/\partial Q_k\,\phi^*)(\partial/\partial Q_k\,\phi) - \mu^2\,\phi^*\phi ,
 \qquad \mu = \frac{mc}{\hbar} ,
 $$
 which is the standard relativistic scalar Lagrangian with the time-like kinetic term carrying the sign the $ict$ convention gives it. Its Euler–Lagrange equation is
 $$
 \left(\Box - \mu^2\right)\tilde{\Phi} = 0 ,
-\qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta ,
+\qquad \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta ,
 $$
 the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\phi - \mu^2\phi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring.
 
 ### The general biquaternion field
 
-The scalar field is the case $\tilde{\Phi} = \phi\,e_0$, and the Lagrangian is written for a general $\tilde{\Phi}\in\mathbb{B}$ without change of form, because both of its invariants are defined for every element:
+The scalar field is the case $\tilde{\Phi} = \phi\,e_t$, and the Lagrangian is written for a general $\tilde{\Phi}\in\mathbb{B}$ without change of form, because both of its invariants are defined for every element:
 $$
 \mathcal{L} = -\,\mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] - \mu^2\,\mathrm{Sc}\!\left[\tilde{\Phi}^{*}\tilde{\Phi}\right] .
 $$
@@ -182,17 +182,17 @@ T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}\!\left(e_\mu e_\rho e_
 $$
 with $\sigma_0 = +1$, $\sigma_k = -1$. The tensor is **not** $\delta_{\mu\nu}\delta_{\rho\sigma}$: exactly one $\sigma$ gives a nonvanishing coefficient for each triple $(\mu,\rho,\nu)$, so it has $64$ nonzero entries of $256$, and $48$ of them carry $\rho \neq \sigma$ and therefore couple different components of the field.
 
-The components therefore decouple for exactly the fields that are **central**. For $\tilde{\Phi} = \phi\,e_0$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
+The components therefore decouple for exactly the fields that are **central**. For $\tilde{\Phi} = \phi\,e_t$ only scalars stand between the two basis insertions, $\mathrm{Sc}(e_\mu^{*} e_\nu) = \delta_{\mu\nu}$ collapses the double sum, and
 $$
 \mathrm{Sc}\!\left[\bigl(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*}\bigr)\bigl(\tilde{\nabla}\tilde{\Phi}\bigr)\right] = \sum_\mu\bigl|\partial_\mu\phi\bigr|^2 ,
 $$
-the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{\Phi} = \phi\,e_0 \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{\Phi} = \mu^2\tilde{\Phi}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
+the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{\Phi} = \phi\,e_t \in \mathbb{C}_{\mathbb{B}}$, and for it the variation separates and returns the single equation $\Box\tilde{\Phi} = \mu^2\tilde{\Phi}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
 The centrality of the mass is the structural point to carry forward. The companion *The Dirac Equation in Biquaternionic Form* records that the first-order (Dirac) mass is instead the chirality-off-diagonal coupling, a non-central term; the two mass terms are different objects, and the second-order action above can only produce the central one. This is the variational statement of the same distinction the involution lattice draws between the two kinds of mass.
 
 ### The dispersion relation
 
-On a plane-wave field $\tilde{\Phi} = \tilde{\Phi}_0\exp(i(\vec k\cdot\vec x-\omega t))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
+On a plane-wave field $\tilde{\Phi} = \tilde{\Phi}_0\exp(i(\vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)-\omega t))$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
 \Box \to \frac{\omega^2}{c^2} - \vec k^2 = \mu^2 ,
 \qquad
@@ -200,7 +200,7 @@ $$
 $$
 the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \vec k^2$ to the accuracy of the difference scheme, and the mass shell is the level set $\mu^2$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
 $$
-\langle\tilde{K}\rangle_{\natural} = -\mu^2 , \qquad \tilde{K} = i\,\frac{\omega}{c}\,e_0 + \vec k ,
+\langle\tilde{K}\rangle_{\natural} = -\mu^2 , \qquad \tilde{K} = i\,\frac{\omega}{c}\,e_t + \vec k ,
 $$
 which is the field-theoretic counterpart of the particle's $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ and was verified on a random on-shell momentum. The particle and the field therefore sit on the same biquaternion-norm shell, one for the four-momentum and one for the wave four-vector, and the action is what puts them there.
 
@@ -249,9 +249,9 @@ The Lorentz action on the framework's coordinates is conjugation by a unit-norm 
 $$
 \tilde{Q} \mapsto \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*} ,
 \qquad
-\tilde{\Lambda}\,\tilde{\Lambda}^{\natural} = e_0 ,
+\tilde{\Lambda}\,\tilde{\Lambda}^{\natural} = e_t ,
 $$
-the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde{\Lambda}^{*}\overline{\tilde{\Lambda}} = e_0$, which is a separate statement and not the same one: for the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ while $\tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{-1}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
+the second statement being the unit-norm condition. Its dagger is the companion condition $\tilde{\Lambda}^{*}\overline{\tilde{\Lambda}} = e_t$, which is a separate statement and not the same one: for the boost rotor $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ of the companion *The Lorentz Transformation as a Biquaternionic Rotation* one has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ while $\tilde{\Lambda}^{\natural} = \tilde{\Lambda}^{-1}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = \gamma + i\gamma\vec v/c$ is **not** the identity. What is needed for the invariance is the pair of conditions, not the single one. The biquaternion norm is the invariant,
 $$
 N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{Q}\rangle_{\natural} ,
 $$
@@ -320,7 +320,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $L = -mc^2\sqrt{1-\vec v^2/c^2}$ | Standard relativistic Lagrangian |
 | $\tilde{V} = d\tilde{Q}/d\tau$, $\langle\tilde{V}\rangle_{\natural} = -c^2$ | Four-velocity and its normalisation |
 | $\tilde{P} = m\tilde{V}$, $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ | Four-momentum and the mass shell |
-| $\tilde{A} = i(\phi/c)e_0 + \vec A$ | External four-potential |
+| $\tilde{A} = i(\phi/c)e_t + \vec A$ | External four-potential |
 | $m\,du^\mu/d\tau = ϙF^{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})] - \mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$ | Scalar field Lagrangian |
 | $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_k=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |

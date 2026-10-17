@@ -22,7 +22,7 @@ for all $(t,x)$ in the domain; the maps $\phi_t = \phi(t, \cdot)$ are the **loca
 
 **Theorem.** About every point there is a neighbourhood and a time interval on which the local flow of $X$ exists and is unique.
 
-*Proof.* The equation $\dot\gamma = X(\gamma)$ is a first-order ordinary differential equation with a smooth vector field on the right-hand side; the theorem of *Ordinary Differential Equations*, later in this Part, gives a unique solution through each initial condition. Uniqueness gives the group law: both $t\mapsto\phi_{s+t}(x)$ and $t\mapsto\phi_s(\phi_t(x))$ solve the equation with the same value at $t=0$. No global flow is asserted: a vector field on a non-compact manifold may have solutions that escape in finite time, and the flow is local.
+*Proof.* The equation $d\gamma/dt = X(\gamma)$ is a first-order ordinary differential equation with a smooth vector field on the right-hand side; the theorem of *Ordinary Differential Equations*, later in this Part, gives a unique solution through each initial condition. Uniqueness gives the group law: both $t\mapsto\phi_{s+t}(x)$ and $t\mapsto\phi_s(\phi_t(x))$ solve the equation with the same value at $t=0$. No global flow is asserted: a vector field on a non-compact manifold may have solutions that escape in finite time, and the flow is local.
 
 ### Functions and Vector Fields
 

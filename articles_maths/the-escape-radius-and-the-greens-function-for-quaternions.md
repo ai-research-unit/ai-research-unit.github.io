@@ -14,7 +14,7 @@ The article also records an honest limitation. The menu asks for a potential "ha
 
 The escape lemma, the filled Julia set and the quadratic map are from *The Quaternion Quadratic Map and Its Julia Sets*; the complex Green's function, the Böttcher coordinate and the conjugacy to the squaring map are from *The Escape Radius and the Green's Function* and *The Julia Sets of a Complex Polynomial*; the quaternion norm and its multiplicativity are from *Quaternion Norm and Invertibility*; the potential theory is Part III's, in *Potential Theory*; and the dimension is *The Dimension of the Quaternion Julia Sets*'s. No physics is invoked.
 
-Throughout, $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$, $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, and $R(c)=1+|c|$.
+Throughout, $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$, $|\tilde q|=\sqrt{\langle\tilde q\rangle_{\natural}}$, and $R(c)=1+|c|$.
 
 ## The Escape Radius
 
@@ -100,7 +100,7 @@ $$
 
 **(b) The parameter $c=-1$.** For the same point the partial sums $\log|\tilde q_n|/2^n$ are $0.8350$, $0.7929$, $0.8009$, $0.80082$, and they converge to $G_{-1}(\tilde q)=0.800820\ldots$; the functional equation holds to the last reliable digit, $G_{-1}(\tilde q^2-1)/G_{-1}(\tilde q)=2.000000$, and the asymptotic $G_{-1}(\tilde q)-\log|\tilde q|=-0.0342$ is of the order of $|\tilde q|^{-2}$.
 
-**(c) The escape radius on the orbit of $c=-1$.** The critical orbit is $0 \mapsto -1 \mapsto 0$, so it never exceeds $R(-1)=2$; the point $\tilde q=e_0+e_1$ has orbit $e_0+e_1 \mapsto -e_0+2e_1 \mapsto -4e_0-4e_1$, and the modulus of the first iterate is $\sqrt5>2$, so the escape is certified at the first step and $G_{-1}$ is defined at the point from there by the series.
+**(c) The escape radius on the orbit of $c=-1$.** The critical orbit is $0 \mapsto -1 \mapsto 0$, so it never exceeds $R(-1)=2$; the point $\tilde q=e_t+\vec e_x$ has orbit $e_t+\vec e_x \mapsto -e_t+2\vec e_x \mapsto -4e_t-4\vec e_x$, and the modulus of the first iterate is $\sqrt5>2$, so the escape is certified at the first step and $G_{-1}$ is defined at the point from there by the series.
 
 ## Summary
 

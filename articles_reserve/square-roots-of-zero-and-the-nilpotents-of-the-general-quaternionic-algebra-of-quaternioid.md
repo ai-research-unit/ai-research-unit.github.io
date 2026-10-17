@@ -14,7 +14,7 @@ definition of the square and of the roots of a central value, and the general de
 *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 The whole article is settled by one computation, the square of every element being the central element
-$N(\tilde p)e_0$. The root equation of the value $0$ therefore reads $N(\tilde p)=0$, and the nilpotent
+$N(\tilde p)e_t$. The root equation of the value $0$ therefore reads $N(\tilde p)=0$, and the nilpotent
 equation is decided by the same scalar. Over $\mathbb{R}$ the norm is a sum of four squares, so it vanishes
 only at the origin; the roots of $0$ are the single element $0$, and the product has **no nilpotent at all**,
 of index two or of any larger index. The absence is the collapse of the complex sibling, where the root set
@@ -44,20 +44,20 @@ definiteness of the form is *The Isotropic Structure of the General Quaternionic
 general root problem for an arbitrary radicand is *Square Roots of a General Element in the General
 Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
-$e_k^2=-e_0$ and $e_1e_2=e_3$. Juxtaposition is the plain product and $\star$ the general quaternionic
+**Conventions.** $\mathbb{H}$ is the real quaternion algebra with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the rules
+$\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$. Juxtaposition is the plain product and $\star$ the general quaternionic
 bilinear product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$, with the conjugation
-$\tilde p^{\natural}=p_0-\vec p$ and $\tilde p=p_0e_0+\vec p$,
-$\vec p=p_1e_1+p_2e_2+p_3e_3$. The **powers** are the left-nested products $\tilde p^{1}=\tilde p$ and
+$\tilde p^{\natural}=p_0-\vec p$ and $\tilde p=p_0e_t+\vec p$,
+$\vec p=p_1\vec e_x+p_2\vec e_y+p_3\vec e_z$. The **powers** are the left-nested products $\tilde p^{1}=\tilde p$ and
 $\tilde p^{k+1}=\tilde p\star\tilde p^{k}$, and the **plain powers** are the same nestings in the plain
-product, written $\tilde p^{(k)}$, with $\tilde p^{(0)}=e_0$. The **algebraic norm** is
+product, written $\tilde p^{(k)}$, with $\tilde p^{(0)}=e_t$. The **algebraic norm** is
 
 $$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu\in\{t,x,y,z\}}p_\mu^2 ,
 $$
 
-positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. The centre is
-the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
+positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$. The centre is
+the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\{\vec p\}$.
 
 ## The Roots of Zero
@@ -77,7 +77,7 @@ and the solution set is the single element $\tilde\xi=0$.
 
 **Proof.** The reduction of the root equation of a central value is *Square Roots of One and the Idempotents
 of the General Quaternionic Algebra*, §*The Root Equation and Its Reduction*, which reads
-$\tilde\xi\star\tilde\xi=\lambda e_0$ as the single equation $N(\tilde\xi)=\lambda$; at $\lambda=0$ this is
+$\tilde\xi\star\tilde\xi=\lambda e_t$ as the single equation $N(\tilde\xi)=\lambda$; at $\lambda=0$ this is
 $N=0$. The norm is a sum of four real squares, so $N(\tilde\xi)=0$ forces every coordinate to vanish, that
 is $\tilde\xi=0$; the norm is positive definite (*Norm and Invertibility in the General Quaternionic
 Algebra*), and the origin is its only zero.
@@ -104,9 +104,9 @@ The same level set is read side by side with the plain product, and over $\mathb
 plain product alike; both algebras are division algebras, and neither has a square-zero element.
 
 **Proof.** The quaternionic column is §*The Root Set*. For the plain column the plain square is
-$(\xi_0^2-\lvert\vec\xi\rvert^2)e_0+2\xi_0\vec\xi$; the equation $\tilde\xi^2=0$ is the pair
-$\xi_0^2=\lvert\vec\xi\rvert^2$ and $\xi_0\vec\xi=0$. If $\xi_0\neq0$ then $\vec\xi=0$
-and $\xi_0^2=0$, a contradiction; hence $\xi_0=0$ and then $\lvert\vec\xi\rvert^2=0$, so
+$(\xi_t^2-\lvert\vec\xi\rvert^2)e_t+2\xi_t\vec\xi$; the equation $\tilde\xi^2=0$ is the pair
+$\xi_t^2=\lvert\vec\xi\rvert^2$ and $\xi_t\vec\xi=0$. If $\xi_t\neq0$ then $\vec\xi=0$
+and $\xi_t^2=0$, a contradiction; hence $\xi_t=0$ and then $\lvert\vec\xi\rvert^2=0$, so
 $\tilde\xi=0$. The plain column is *Square Roots of Zero and the Nilpotents of the General Plain Algebra*.
 
 **Remark (the collapse of the complex root set).** In the complex chapter the root set of $0$ of the
@@ -133,20 +133,20 @@ class taking its nonzero members. Throughout this article the product is $\star$
 **Lemma (the square is central).** For every $\tilde p\in\mathbb{H}$,
 
 $$
-\tilde p\star\tilde p=\tilde p^{\natural}\tilde p=N(\tilde p)\,e_0 , \qquad
+\tilde p\star\tilde p=\tilde p^{\natural}\tilde p=N(\tilde p)\,e_t , \qquad
 N(\tilde p)=p_0^2+p_1^2+p_2^2+p_3^2 .
 $$
 
 **Proof.** At equal arguments the vector part of the product is
 $p_0\vec p-p_0\vec p-\vec p\times\vec p=0$, so the square is the scalar part
-$p_0^2+\vec p\cdot\vec p$ times $e_0$ (*Introduction to the General Quaternionic Algebra of
+$p_0^2+\vec p\cdot\vec p$ times $e_t$ (*Introduction to the General Quaternionic Algebra of
 Quaternions*, and *Square Roots of One and the Idempotents of the General Quaternionic Algebra*).
 
 **Theorem (the criterion).** For $\tilde p\in\mathbb{H}$, $\tilde p\star\tilde p=0$ if and only if
 $N(\tilde p)=0$, that is if and only if $\tilde p=0$. The square-zero set of the general quaternionic
 product is the single point $\{0\}$, and the product has no square-zero element.
 
-**Proof.** By the lemma $\tilde p\star\tilde p=N(\tilde p)e_0$, which vanishes exactly when
+**Proof.** By the lemma $\tilde p\star\tilde p=N(\tilde p)e_t$, which vanishes exactly when
 $N(\tilde p)=0$. The norm is a sum of four real squares, so it vanishes only at $\tilde p=0$; the norm is
 positive definite, and the criterion is met by the origin alone. The origin has vanishing square but is not a
 nilpotent, the nilpotent class taking the nonzero members.
@@ -168,7 +168,7 @@ $$
 where the factor on the right is the plain power of order $k-2$ of $\tilde p^{\natural}$.
 
 **Proof.** By induction on $k$. For $k=2$ the identity is the central square
-$\tilde p^{2}=N(\tilde p)e_0=N(\tilde p)(\tilde p^{\natural})^{(0)}$. Assume it for $k$; then, using the
+$\tilde p^{2}=N(\tilde p)e_t=N(\tilde p)(\tilde p^{\natural})^{(0)}$. Assume it for $k$; then, using the
 plain associativity inside the power,
 
 $$
@@ -208,12 +208,12 @@ The root set of a central value is the solution set of $\tilde\xi\star\tilde\xi=
 square-zero set is the value $0$, and the value $0$ is the only central value whose root set degenerates to
 the origin.
 
-**Theorem (the three central values).** The root sets of the central values $-e_0$, $0$ and $+e_0$ are
+**Theorem (the three central values).** The root sets of the central values $-e_t$, $0$ and $+e_t$ are
 
 $$
-\{\tilde\xi:\tilde\xi\star\tilde\xi=-e_0\}=\varnothing,\qquad
+\{\tilde\xi:\tilde\xi\star\tilde\xi=-e_t\}=\varnothing,\qquad
 \{\tilde\xi:\tilde\xi\star\tilde\xi=0\}=\{0\},\qquad
-\{\tilde\xi:\tilde\xi\star\tilde\xi=+e_0\}=\mathrm{Sp}(1) ,
+\{\tilde\xi:\tilde\xi\star\tilde\xi=+e_t\}=\mathrm{Sp}(1) ,
 $$
 
 the first empty, the third the unit sphere of real dimension three. The statement and the reduction are
@@ -225,24 +225,24 @@ positive definite, so the first has no solution, the second has the origin alone
 norm-one level set, the sphere $\mathrm{Sp}(1)$.
 
 **Corollary.** The square-zero set is the root set of $0$ and is strictly smaller than the root set of
-$+e_0$, and the nilpotents, which are its nonzero members, do not exist; the element $0$ is at the same time
+$+e_t$, and the nilpotents, which are its nonzero members, do not exist; the element $0$ is at the same time
 the only root of $0$ and the only idempotent that is not the left unit.
 
 ## The Nilpotents on the Remarkable Subspaces
 
 The square-zero equation is the vanishing of the norm, and the norm is read on the two remarkable subspaces
-of $\mathbb{H}$, the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the centre, and the vector subspace
+of $\mathbb{H}$, the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, the centre, and the vector subspace
 $\mathrm{Vect}(\mathbb{H})$.
 
 **Proposition.** On the centre and on the vector subspace the square vanishes only at the origin, so neither
 subspace carries a square-zero element and neither carries a nilpotent; in the centre the square is
-$A^2e_0$, and in the vector subspace it is the central element $\lvert\vec p\rvert^2e_0\neq0$ for every
+$A^2e_t$, and in the vector subspace it is the central element $\lvert\vec p\rvert^2e_t\neq0$ for every
 nonzero pure $\vec p$.
 
 | subspace | element | square | nilpotents |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{H}}$, the centre | $Ae_0$ | $A^2e_0$ | none |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2e_0$ | none |
+| $\mathbb{R}_{\mathbb{H}}$, the centre | $Ae_t$ | $A^2e_t$ | none |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2e_t$ | none |
 
 **Proof.** The square is the norm on the subspace of each row, by the lemma; $A^2$ vanishes only at $A=0$
 and $\lvert\vec p\rvert^2$ only at $\vec p=0$. A nonzero pure element has a central nonzero square, so
@@ -263,7 +263,7 @@ the origin alone.
 Square-Zero Sets*, where the plain square is anisotropic
 and the quaternionic square is the definite norm; the two alternating rows are the same theorem, the
 products being alternating. The four structures with the origin alone are exactly those whose square is the
-plain square or the central element $N(\tilde x)e_0$, neither of which vanishes off the origin over
+plain square or the central element $N(\tilde x)e_t$, neither of which vanishes off the origin over
 $\mathbb{R}$.
 
 **Remark (the complex ordering and the real collapse).** The complex chapter carries twelve structures and
@@ -281,14 +281,14 @@ the empty set.
 ## Summary
 
 In the general quaternionic bilinear product the square of every element is the central element
-$N(\tilde p)e_0$, and the square vanishes exactly when the norm does. Over $\mathbb{R}$ the norm is a sum of
+$N(\tilde p)e_t$, and the square vanishes exactly when the norm does. Over $\mathbb{R}$ the norm is a sum of
 four squares, hence positive definite, so the root set of $0$ is the origin alone, the square-zero set is the
 origin alone, and the product has **no nilpotent**, of index two or of any larger index. The absence is not a
 consequence of the square-zero case alone: the powers satisfy
 $\tilde p^{k}=N(\tilde p)(\tilde p^{\natural})^{(k-2)}$ for $k\geq2$, so a vanishing power forces either a
 vanishing norm or a vanishing plain power, and neither occurs off the origin because the plain algebra is a
 division algebra. The root set of $0$ coincides with the zero set of the norm and is strictly smaller than
-the root set of $+e_0$, the sphere $\mathrm{Sp}(1)$; the root set of $-e_0$ is empty. Neither remarkable
+the root set of $+e_t$, the sphere $\mathrm{Sp}(1)$; the root set of $-e_t$ is empty. Neither remarkable
 subspace, the centre nor the vector subspace, carries a square-zero element. Against the six structures of
 the real chapter the general quaternionic structure is one of the four whose square-zero set is the origin,
 the other two being the whole space; against the twelve structures of the complex chapter, whose square-zero
@@ -303,11 +303,11 @@ definiteness that removes the zero divisors.
 | $\tilde\nu$ | a nilpotent of the product; the class is empty |
 | $\tilde p^{k}$ | the left-nested power, $\tilde p^{k+1}=\tilde p\star\tilde p^{k}$ |
 | $\tilde p^{(k)}$ | the plain power of order $k$ |
-| $\tilde p\star\tilde p=N(\tilde p)e_0$ | the square, always central |
+| $\tilde p\star\tilde p=N(\tilde p)e_t$ | the square, always central |
 | $N(\tilde p)=\sum_\mu p_\mu^2$ | the quaternionic bilinear algebraic norm, positive definite |
 | $\{0\}$ | the root set of $0$, the zero set of the norm, the square-zero set |
-| $\varnothing$ | the nilpotent class of the block, and the root set of $-e_0$ |
-| $\mathrm{Sp}(1)$ | the root set of $+e_0$, the unit sphere of dimension three |
+| $\varnothing$ | the nilpotent class of the block, and the root set of $-e_t$ |
+| $\mathrm{Sp}(1)$ | the root set of $+e_t$, the unit sphere of dimension three |
 | $\tilde p^{k}=N(\tilde p)(\tilde p^{\natural})^{(k-2)}$, $k\geq2$ | the power identity that excludes nilpotents of every index |
 | $\mathbb{R}_{\mathbb{H}},\mathrm{Vect}(\mathbb{H})$ | the centre and the vector subspace, neither carrying a square-zero element |
 

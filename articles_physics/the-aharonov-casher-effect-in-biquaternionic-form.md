@@ -18,7 +18,7 @@ This article treats the AC effect in the biquaternion algebra $\mathbb{B} = \mat
 4. **The AC effect and the AB effect are electric–magnetic duals.** The AB phase is $\frac{ϙ}{\hbar}\oint\vec A\cdot d\vec r$ for a charge; the AC phase is $\frac{1}{\hbar c^2}\oint(\vec E\times\vec\mu)\cdot d\vec r$ for a dipole. The electric dipole analogue is the He–McKellar–Wilkens phase.
 5. **The phase is measurable and has been measured.** Neutron interferometry, atom interferometry and electron interferometry all exhibit the AC phase; orders of magnitude are given below.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the phase from the action and the Lagrangian route.
@@ -82,7 +82,7 @@ $$
 \mathcal{A}_{AC} = \frac{\gamma}{2c^2}\left(\vec E\times i\mathbf e\right)\cdot d\vec r,
 $$
 
-a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
+a one-form with values in the Hermitian subspace $\mathbb{M}_+$ (the spin components $i \vec e_k$ are Hermitian). Its integral is the generator of a rotor; the phase for a given spin state is the expectation
 
 $$
 \phi_{AC} = \left\langle \frac{\gamma}{2c^2}\oint\left(\vec E\times i\mathbf e\right)\cdot d\vec r\right\rangle,
@@ -152,14 +152,14 @@ $$
 = \frac{ϙ}{\hbar}\Phi_B,
 $$
 
-the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $U(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\phi_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
+the enclosed magnetic flux; the connection is $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$, with values in the Lie algebra of $\mathrm{U}(1)$. In the AC effect a magnetic dipole $\vec\mu$ moving in an electric field acquires $\phi_{AC}$ as above; the connection is $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$, with values in the spin algebra. The dictionary is
 
 | | Aharonov–Bohm | Aharonov–Casher |
 |---|---|---|
 | Source | magnetic flux $\Phi_B$ | electric field $\vec E$ |
 | Coupling | electric charge $ϙ$ | magnetic dipole $\vec\mu$ |
 | Connection | $\frac{ϙ}{\hbar}\vec A\cdot d\vec r$ | $\frac{1}{\hbar c^2}(\vec E\times\vec\mu)\cdot d\vec r$ |
-| Structure group | $U(1)$ | $SU(2)$ for spin-1/2 |
+| Structure group | $\mathrm{U}(1)$ | $SU(2)$ for spin-1/2 |
 | Observability | interference of charged beams | interference of neutral dipoles |
 
 Both phases are geometric: neither depends on the speed of traversal, and both are defined modulo $2\pi$. The AC connection is non-abelian for a genuine spin-1/2, since its components do not commute when the effective field direction varies along the path; for a spin prepared in an eigenstate the phase reduces to the abelian expectation.
@@ -295,7 +295,7 @@ The AC effect is the electric dual of the Aharonov–Bohm effect and the magneti
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_+$ | Hermitian (informational) subspace; home of the AC connection |
 | $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; the holonomy rotors |

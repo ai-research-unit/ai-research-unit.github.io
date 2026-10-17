@@ -13,7 +13,7 @@ The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, 
 
 ### Length and the Riemannian Distance
 
-Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of *Smooth Manifolds and Differential Geometry*: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial_{x^i}, \partial_{x^j})$. The **speed** of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the **length** is the integral of the speed. The **Riemannian distance** $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.
+Let $(M, g)$ be a Riemannian manifold of dimension $n$, with the conventions of *Smooth Manifolds and Differential Geometry*: for each $p \in M$ the bilinear form $g_p$ is a positive definite inner product on $T_pM$, and in a chart with coordinates $x^i$ the coefficients are $g_{ij} = g(\partial/\partial x^i, \partial/\partial x^j)$. The **speed** of a smooth curve $\gamma$ is $|\gamma'|_g = \sqrt{g(\gamma', \gamma')}$ and the **length** is the integral of the speed. The **Riemannian distance** $d_g(p, q)$ is the infimum of the lengths of the piecewise smooth curves joining $p$ to $q$, and it is a metric whose topology is the topology of $M$.
 
 **Definition.** The **volume form** of an oriented Riemannian manifold is the unique $n$-form $\mathrm{vol}_g \in \Omega^n(M)$ that assigns the value $1$ to every positively oriented orthonormal frame; in a positively oriented chart,
 
@@ -58,9 +58,9 @@ $$
 **Definition.** In a chart the Christoffel symbols are
 
 $$
-\nabla_{\partial_{x^i}}\partial_{x^j} = \sum_k \Gamma^k_{ij}\,\partial_{x^k},
+\nabla_{\partial/\partial x^i}\partial/\partial x^j = \sum_k \Gamma^k_{ij}\,\partial/\partial x^k,
 \qquad
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\Bigr),
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\Bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\Bigr),
 $$
 
 where $(g^{kl})$ is the inverse matrix of $(g_{ij})$. The connection form of $\nabla$ in the coordinate frame is the matrix $\theta = (\theta^i_{\ j})$ of $1$-forms with $\theta^i_{\ j} = \sum_k \Gamma^i_{jk}dx^k$; the connection-form letter is $\theta$ and not $\omega$, which is reserved for the symplectic form.
@@ -119,7 +119,7 @@ $$
 
 In words, the radial geodesics leave $p$ orthogonally to the spheres of constant radius, and the exponential map is a radial isometry.
 
-**Proof sketch.** The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial_s\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.
+**Proof sketch.** The identity is the first-variation computation for the length applied to a geodesic and a variation by a family of geodesics; the derivative of $t \mapsto g(\gamma_v'(t), \partial/\partial s\,\gamma_s(t))$ at $s = 0$ vanishes because $\gamma_v$ is a geodesic.
 
 **Definition.** The **normal coordinates** at $p$ are obtained by choosing an orthonormal basis $u_1, \ldots, u_n$ of $T_pM$ and, for a point $x$ near $p$, taking the unique $v \in T_pM$ with $\exp_p(v) = x$ and setting $x^i = v^i$, where $v = \sum_i v^i u_i$. Equivalently, the coordinates are the coefficients of $v$ in the orthonormal basis, so that the geodesic through $p$ in the direction $u_i$ is the $i$-th coordinate axis. In normal coordinates $g_{ij}(p) = \delta_{ij}$ and the first derivatives of $g_{ij}$ vanish at $p$, so the Christoffel symbols vanish at $p$ and the metric is Euclidean to second order there; the second derivatives of the metric at $p$ are exactly the curvature.
 
@@ -333,10 +333,10 @@ The complete simply connected manifolds of constant curvature are the round sphe
 | $S = \sum_i \operatorname{Ric}(e_i,e_i)$ | Scalar curvature |
 | $G = \operatorname{Ric} - \frac12 Sg$ | Einstein tensor; $\operatorname{div} G = 0$ |
 | $\nabla_{\gamma'}\gamma' = 0$ | Geodesic equation in invariant form |
-| $\ddot x^k + \sum_{ij}\Gamma^k_{ij}\dot x^i\dot x^j = 0$ | Geodesic equation in a chart |
+| $d^2x^{k}/dt^2 + \sum_{ij}\Gamma^k_{ij}dx^{i}/dt dx^{j}/dt = 0$ | Geodesic equation in a chart |
 | $\exp_p : T_pM \to M$ | Exponential map of the metric; $d(\exp_p)_0 = \mathrm{id}$ |
 | Gauss lemma | $g(d\exp_p(v), d\exp_p(w)) = g(v,w)$ for the radial direction |
-| Normal coordinates | Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial_k g_{ij}(p) = 0$ |
+| Normal coordinates | Coordinates in which $g_{ij}(p) = \delta_{ij}$ and $\partial/\partial x^k g_{ij}(p) = 0$ |
 | $\mathrm{vol}_g = \sqrt{\det(g_{ij})}\,dx^1\wedge\cdots\wedge dx^n$ | Riemannian volume form |
 | $K = 1/r^2,\ 0,\ -1/r^2$ | Curvatures of the elliptic, Euclidean and hyperbolic models |
 | $S^n_r$, $\mathbb{H}^n_r$ | Round sphere and hyperbolic space of radius $r$ |

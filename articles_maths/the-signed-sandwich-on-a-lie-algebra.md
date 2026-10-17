@@ -123,7 +123,7 @@ and it is an involution of the algebra exactly when $a+\alpha(a)$ is central.
 
 ### The Relation to the Sandwich
 
-**Theorem.** In the enveloping algebra $U(\mathrm{G})$ the signed sandwich by the pair of a unit $u$ and its inverse $u^{-1}$ is the signed conjugation,
+**Theorem.** In the enveloping algebra $\mathrm{U}(\mathrm{G})$ the signed sandwich by the pair of a unit $u$ and its inverse $u^{-1}$ is the signed conjugation,
 
 $$
 \Sigma^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1} = \rho_u(x) ,

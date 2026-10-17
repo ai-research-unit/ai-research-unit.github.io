@@ -96,7 +96,7 @@ $$
 
 up to the ordering of the transport, where the loop is the boundary of a small coordinate parallelogram spanned by $X$ and $Y$.
 
-**Proof.** The transport along the geodesic satisfies the ordinary differential equation $\frac{D}{dt}V = 0$ with $V(0) = v$, which is $\dot V(t) = -\Gamma(\gamma',V)$; substituting and taking the limit gives the covariant derivative. The parallelogram statement is the same computation one order further: the transport around the closed parallelogram differs from the identity by the curvature, which is the infinitesimal holonomy, $R(X,Y) = [\nabla_X,\nabla_Y]-\nabla_{[X,Y]}$.
+**Proof.** The transport along the geodesic satisfies the ordinary differential equation $\frac{D}{dt}V = 0$ with $V(0) = v$, which is $\left(dV/dt\right)(t) = -\Gamma(\gamma',V)$; substituting and taking the limit gives the covariant derivative. The parallelogram statement is the same computation one order further: the transport around the closed parallelogram differs from the identity by the curvature, which is the infinitesimal holonomy, $R(X,Y) = [\nabla_X,\nabla_Y]-\nabla_{[X,Y]}$.
 
 ## Transport Along a Geodesic
 
@@ -106,7 +106,7 @@ $$
 \frac{D}{dt}V = 0, \qquad V(0) = v,
 $$
 
-equivalently $\dot V^k(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'^i(t)V^j(t)$.
+equivalently $\left(dV^{k}/dt\right)(t) = -\sum_i\Gamma^k_{ij}(\gamma(t))\gamma'^i(t)V^j(t)$.
 
 **Proof.** A vector field $t\mapsto\gamma'(t)/|\gamma'|$ is parallel along a geodesic because the geodesic equation is $\frac{D}{dt}\gamma'=0$, so the velocity is preserved. The Jacobi fields are the fields $P_t$ applied to the solutions of the Jacobi equation at the origin, which is the statement that the transport trivialises the tangent bundle along the geodesic and the curvature is the transported curvature; the fundamental-matrix statement is the linear system read in a chart.
 

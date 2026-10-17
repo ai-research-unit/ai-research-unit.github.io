@@ -4,9 +4,9 @@
 
 This article treats the split-complex numbers as a **linear space**: the underlying real plane, the split complex structure that multiplication by $j$ puts on it, the separation of the real-linear self-maps into those that commute with that structure and those that anticommute with it, the self-reading of $\mathbb{D}$ as a module over the ring $\mathbb{D}$ rather than over a field of scalars, and the idempotent coordinates in which the plane is a pair of real lines. The map $J$, multiplication by $j$, satisfies $J^2=+\mathrm{id}$: it is a **product structure**, an involution with two real eigenspaces, and not a complex structure, which would satisfy $J^2=-\mathrm{id}$ and have no real eigenvector. This one sign is the whole difference from the complex reading and the source of everything that follows in the category.
 
-The realification of $\mathbb{D}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category. The two products on the space are *The Two Products of the Split-Complexoid Space*; the distinguished subspaces are *Split-Complexoid Subspaces*, and their decomposition and comparison is *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid*. The submodules of the self-reading are the ideals of the ring, owned by *Split-Complex Ideals and Peirce Decomposition*. No form and no norm is developed here: the norm $\langle A\rangle_{\natural}=A\bar A=a^2-a'^2$, its multiplicativity and the invertibility it decides are *Split-Complex Norm and Invertibility*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, both below this article in this category.
+The realification of $\mathbb{D}$ as an algebra over $\mathbb{R}$, with the change of scalars organised and the split statements read against the real ones, is *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*, below this article in this category. The two products on the space are *The Two Products of the Split-Complexoid Space*; the distinguished subspaces are *Split-Complexoid Subspaces*, and their decomposition and comparison is *Decompositions and Comparison of the Remarkable Subspaces of the Split-Complexoid*. The submodules of the self-reading are the ideals of the ring, owned by *Split-Complex Ideals and Peirce Decomposition*. No form and no norm is developed here: the norm $\langle Q\rangle_{\natural}=Q\bar Q=q^2-q'^2$, its multiplicativity and the invertibility it decides are *Split-Complex Norm and Invertibility*, and the two forms are *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*, both below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$ and $j^2=+1$; a general element is $A=a+ja'$, with $a=\operatorname{Re}A$ and $a'=\operatorname{Im}A$, and the conjugate is $\bar A=a-ja'$. The idempotents are $\Pi_{1,2}=\tfrac12(1\pm j)$, with idempotent coordinates $A_\pm=a\pm a'$ and $A=A_+\Pi_1+A_-\Pi_2$.
+**Conventions.** The algebra is $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$, with basis $1,j$ and $j^2=+1$; a general element is $Q=q+jq'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Im}Q$, and the conjugate is $\bar Q=q-jq'$. The idempotents are $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$, with idempotent coordinates $q_+=q+q'$ and $q_-=q-q'$, and $Q=q_+\Pi_1+q_-\Pi_2$.
 
 ## The Vector Space over $\mathbb{R}$
 
@@ -16,7 +16,7 @@ $$
 1, \quad j, \qquad j^2 = +1 ,
 $$
 
-and every element is the unique real combination $A = a + ja'$. The additive group is the plane $\mathbb{R}^2$ with coordinates $(a,a')$, and the two basis elements are linearly independent over $\mathbb{R}$.
+and every element is the unique real combination $Q = q + jq'$. The additive group is the plane $\mathbb{R}^2$ with coordinates $(q,q')$, and the two basis elements are linearly independent over $\mathbb{R}$.
 
 The dimension is two. It is the first of the two readings, and it must be told from the second, the self-reading over $\mathbb{D}$, in which the set is a module of rank one over a ring rather than a vector space over a field: read over $\mathbb{R}$ the scalars are the reals and the dimension is two, read over $\mathbb{D}$ the scalars are the split-complex numbers and the rank is one.
 
@@ -32,7 +32,7 @@ Both readings are of the same set, and the second is the stronger structure: eve
 Multiplication by $j$ is a real-linear map of the plane,
 
 $$
-J : \mathbb{D} \longrightarrow \mathbb{D}, \qquad J(A) = jA ,
+J : \mathbb{D} \longrightarrow \mathbb{D}, \qquad J(Q) = jQ ,
 $$
 
 whose values on the basis are $J(1)=j$ and $J(j)=j^2=1$, so that its matrix in the basis $\{1,j\}$ is
@@ -43,7 +43,7 @@ $$
 
 **Proposition.** The map $J$ is an involution, $J^2=+\mathrm{id}$, of trace $0$ and determinant $-1$; it is diagonalisable over $\mathbb{R}$, with eigenvalues $+1$ and $-1$ and eigenvectors $\Pi_1$ and $\Pi_2$.
 
-**Proof.** $J^2(A)=j(jA)=j^2A=A$ since $j^2=+1$, so $J^2=\mathrm{id}$. The diagonal entries of the matrix sum to $0$ and its determinant is $-1$. The vectors $\Pi_{1,2}=\tfrac12(1\pm j)$ satisfy $j\Pi_1=\Pi_1$ and $j\Pi_2=-\Pi_2$, so in the basis $\{\Pi_1,\Pi_2\}$ the matrix of $J$ is $\operatorname{diag}(1,-1)$.
+**Proof.** $J^2(Q)=j(jQ)=j^2Q=Q$ since $j^2=+1$, so $J^2=\mathrm{id}$. The diagonal entries of the matrix sum to $0$ and its determinant is $-1$. The vectors $\Pi_1=\tfrac12(1+j)$ and $\Pi_2=\tfrac12(1-j)$ satisfy $j\Pi_1=\Pi_1$ and $j\Pi_2=-\Pi_2$, so in the basis $\{\Pi_1,\Pi_2\}$ the matrix of $J$ is $\operatorname{diag}(1,-1)$.
 
 So $J$ is a **product structure**: a linear involution with two real eigenspaces, the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$. On $\mathbb{C}$ the corresponding map is the multiplication by the imaginary unit, $J_\mathbb{C}(z)=iz$, with
 
@@ -51,7 +51,7 @@ $$
 J_\mathbb{C}^2 = -\mathrm{id},
 $$
 
-a **complex structure**: it has no real eigenvalue, no real eigenvector, and its two eigenvalues $\pm i$ are exchanged by conjugation. The two maps differ by one sign, and that sign is the whole difference of the two readings:
+a **complex structure**: it has no real eigenvalue, no real eigenvector, and its two eigenvalues $+i$ and $-i$ are exchanged by conjugation. The two maps differ by one sign, and that sign is the whole difference of the two readings:
 
 | | $\mathbb{C}$ | $\mathbb{D}$ |
 |---|---|---|
@@ -70,31 +70,31 @@ The two readings of the plane are separated by one operator, and the separation 
 **Proposition (linearity is the commutator with $J$).** A real-linear map $T$ of $\mathbb{D}$ is $\mathbb{D}$-linear exactly when it commutes with $J$, and conjugate-linear over $\mathbb{D}$ exactly when it anticommutes with it:
 
 $$
-T(AX) = A\,T(X) \text{ for all } A,X \iff TJ = JT, \qquad T(AX) = \bar A\,T(X) \text{ for all } A,X \iff TJ = -JT .
+T(Q_1Q_2) = Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = JT, \qquad T(Q_1Q_2) = \bar Q_1\,T(Q_2) \text{ for all } Q_1,Q_2 \iff TJ = -JT .
 $$
 
-**Proof.** Let $T$ be real-linear. Then $T(JX)=T(jX)$ and $J(TX)=jT(X)$, so the identity $T(jX)=jT(X)$ is exactly $TJ=JT$; real-linearity then gives $T(AX)=T(aX+ja'X)=aT(X)+j a'T(X)=A\,T(X)$ for every $A=a+ja'$, and conversely $TJ=JT$ gives $T(jX)=jT(X)$, hence the same identity for every $A$. The conjugate-linear case is the same computation with the sign reversed: $T(jX)=-jT(X)$, and then $T(AX)=aT(X)-ja'T(X)=\bar A\,T(X)$.
+**Proof.** Let $T$ be real-linear. Then $T(JQ_2)=T(jQ_2)$ and $J(TQ_2)=jT(Q_2)$, so the identity $T(jQ_2)=jT(Q_2)$ is exactly $TJ=JT$; real-linearity then gives $T(Q_1Q_2)=T(q_1Q_2+jq'_1Q_2)=q_1T(Q_2)+j q'_1T(Q_2)=Q_1\,T(Q_2)$ for every $Q_1=q_1+jq'_1$, and conversely $TJ=JT$ gives $T(jQ_2)=jT(Q_2)$, hence the same identity for every $Q_1$. The conjugate-linear case is the same computation with the sign reversed: $T(jQ_2)=-jT(Q_2)$, and then $T(Q_1Q_2)=q_1T(Q_2)-jq'_1T(Q_2)=\bar Q_1\,T(Q_2)$.
 
-**The two block shapes.** Writing a real-linear map in the basis as a matrix $T=\begin{pmatrix} p & q \\ r & s \end{pmatrix}$, the two conditions are read off the two products
+**The two block shapes.** Writing a real-linear map in the basis as a matrix $T=\begin{pmatrix} p & u \\ r & s \end{pmatrix}$, the two conditions are read off the two products
 
 $$
-TJ = \begin{pmatrix} q & p \\ s & r \end{pmatrix}, \qquad JT = \begin{pmatrix} r & s \\ p & q \end{pmatrix},
+TJ = \begin{pmatrix} u & p \\ s & r \end{pmatrix}, \qquad JT = \begin{pmatrix} r & s \\ p & u \end{pmatrix},
 $$
 
 and equality or opposite equality fixes the entries:
 
 | class | condition | matrix shape | trace | meaning |
 |---|---|---|---|---|
-| $\mathbb{D}$-linear | $TJ = JT$ | $\begin{pmatrix} p & q \\ q & p \end{pmatrix}$ | $2p$ | multiplication by $p+jq$ |
-| conjugate-linear | $TJ = -JT$ | $\begin{pmatrix} p & q \\ -q & -p \end{pmatrix}$ | $0$ | composition of the conjugation with a $\mathbb{D}$-linear map |
+| $\mathbb{D}$-linear | $TJ = JT$ | $\begin{pmatrix} p & u \\ u & p \end{pmatrix}$ | $2p$ | multiplication by $p+ju$ |
+| conjugate-linear | $TJ = -JT$ | $\begin{pmatrix} p & u \\ -u & -p \end{pmatrix}$ | $0$ | composition of the conjugation with a $\mathbb{D}$-linear map |
 
-The commuting shape is symmetric with equal diagonal entries, and it is exactly the image of multiplication by the element $p+jq$, the regular matrix of *Split-Complex Regular Element Representation*; the two classes are the $\mathbb{D}$-linear and the conjugate-linear maps of the plane.
+The commuting shape is symmetric with equal diagonal entries, and it is exactly the image of multiplication by the element $p+ju$, the regular matrix of *Split-Complex Regular Element Representation*; the two classes are the $\mathbb{D}$-linear and the conjugate-linear maps of the plane.
 
-**Remark.** Composing the conjugation $\kappa(A)=\bar A$, whose matrix is $\operatorname{diag}(1,-1)$, with a $\mathbb{D}$-linear map on either side gives a conjugate-linear map, and every conjugate-linear map arises so: $\kappa$ anticommutes with $J$, so $\kappa T$ and $T\kappa$ anticommute with $J$ when $T$ commutes with it. The real-linear self-maps form $\operatorname{End}_\mathbb{R}(\mathbb{D})\cong M_2(\mathbb{R})$, of real dimension four, and the $\mathbb{D}$-linear ones form the two-dimensional subspace $M_2(\mathbb{D})=\{aI+a'J\}$, the image of $\mathbb{D}$.
+**Remark.** Composing the conjugation $\kappa(Q)=\bar Q$, whose matrix is $\operatorname{diag}(1,-1)$, with a $\mathbb{D}$-linear map on either side gives a conjugate-linear map, and every conjugate-linear map arises so: $\kappa$ anticommutes with $J$, so $\kappa T$ and $T\kappa$ anticommute with $J$ when $T$ commutes with it. The real-linear self-maps form $\operatorname{End}_\mathbb{R}(\mathbb{D})\cong M_2(\mathbb{R})$, of real dimension four, and the $\mathbb{D}$-linear ones form the two-dimensional subspace $M_2(\mathbb{D})=\{qI+q'J\}$, the image of $\mathbb{D}$.
 
 ## The Self-Interpretation over $\mathbb{D}$
 
-Read over the ring $\mathbb{D}$ itself, the set is a **free module of rank one** on the single basis element $1$: every element is $A\cdot 1$ for a unique $A\in\mathbb{D}$, and the module is $\mathbb{D}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.
+Read over the ring $\mathbb{D}$ itself, the set is a **free module of rank one** on the single basis element $1$: every element is $Q\cdot 1$ for a unique $Q\in\mathbb{D}$, and the module is $\mathbb{D}$ acting on itself. This is the second reading of the table above, and it is not a vector space, because the scalars form a ring and not a field.
 
 The difference is concrete. A vector space over a field has every nonzero element invertible as a scalar, so every nonzero vector generates; here the scalars include the zero divisors, so a nonzero element of the module need not generate it. Exactly as in the ring, the element $\Pi_1$ is a nonzero scalar that annihilates $\Pi_2$, and $\Pi_1\cdot\mathbb{D}=\mathbb{R}\Pi_1$ is a proper nonzero submodule. The submodules of the rank-one module are the ideals of the ring,
 
@@ -104,20 +104,20 @@ $$
 
 the two idempotent lines and the two trivial submodules; each idempotent line is closed under multiplication by every scalar, and it is minimal. This is the two-dimensional case of the ideal theory owned by *Split-Complex Ideals and Peirce Decomposition*, and the submodules are the same two lines as the subspaces of *Split-Complexoid Subspaces*: the module theory and the subspace theory meet at the idempotent lines.
 
-**Remark.** The module is free of rank one, so it has a basis, but the basis element is not interchangeable with every nonzero element: an element $A\cdot 1$ is again a basis exactly when $A$ is a unit, by the invertibility criterion $\langle A\rangle_{\natural}\neq 0$ of *Split-Complex Norm and Invertibility*. A zero divisor such as $\Pi_1$ spans only its own line. This is the sense in which the self-reading is a module and not a vector space: the failure is the same failure of division that makes the ring not a field.
+**Remark.** The module is free of rank one, so it has a basis, but the basis element is not interchangeable with every nonzero element: an element $Q\cdot 1$ is again a basis exactly when $Q$ is a unit, by the invertibility criterion $\langle Q\rangle_{\natural}\neq 0$ of *Split-Complex Norm and Invertibility*. A zero divisor such as $\Pi_1$ spans only its own line. This is the sense in which the self-reading is a module and not a vector space: the failure is the same failure of division that makes the ring not a field.
 
 ## The Idempotent Coordinates
 
 The idempotent basis diagonalises the structure $J$ and splits the plane into two real lines. With
 
 $$
-\Pi_{1,2} = \tfrac12(1\pm j), \qquad \Pi_1^2=\Pi_1, \quad \Pi_2^2=\Pi_2, \quad \Pi_1\Pi_2=0, \quad \Pi_1+\Pi_2=1,
+\Pi_1 = \tfrac12(1+j), \quad \Pi_2 = \tfrac12(1-j), \qquad \Pi_1^2=\Pi_1, \quad \Pi_2^2=\Pi_2, \quad \Pi_1\Pi_2=0, \quad \Pi_1+\Pi_2=1,
 $$
 
-every element is written $A=A_+\Pi_1+A_-\Pi_2$ with $A_\pm=a\pm a'$, and the change of coordinates from the basis $\{1,j\}$ is the invertible real map
+every element is written $Q=q_+\Pi_1+q_-\Pi_2$ with $q_+=q+q'$ and $q_-=q-q'$, and the change of coordinates from the basis $\{1,j\}$ is the invertible real map
 
 $$
-A_+ = a+a', \qquad A_- = a-a', \qquad a = \tfrac12(A_++A_-), \qquad a' = \tfrac12(A_+-A_-).
+q_+ = q+q', \qquad q_- = q-q', \qquad q = \tfrac12(q_++q_-), \qquad q' = \tfrac12(q_+-q_-).
 $$
 
 So the plane is a **pair of real lines**,
@@ -126,28 +126,28 @@ $$
 \mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2,
 $$
 
-and in these coordinates the structure is diagonal, $J(A_+\Pi_1+A_-\Pi_2)=A_+\Pi_1-A_-\Pi_2$, hence $J=\operatorname{diag}(1,-1)$. The two coordinate lines are exactly its two eigenspaces, and the coordinates in which they separate are the reason $J$ is a product structure and not a complex structure. The same coordinates carry the multiplication, which is componentwise, and they are developed as a representation in *Split-Complex Two-Component Element Representation*.
+and in these coordinates the structure is diagonal, $J(q_+\Pi_1+q_-\Pi_2)=q_+\Pi_1-q_-\Pi_2$, hence $J=\operatorname{diag}(1,-1)$. The two coordinate lines are exactly its two eigenspaces, and the coordinates in which they separate are the reason $J$ is a product structure and not a complex structure. The same coordinates carry the multiplication, which is componentwise, and they are developed as a representation in *Split-Complex Two-Component Element Representation*.
 
 ## Summary
 
 The split-complex numbers form a real vector space of dimension two on the basis $1,j$, and they also form a free module of rank one over the ring $\mathbb{D}$ itself. Multiplication by $j$ is the real-linear map $J$ of matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, an involution with $J^2=+\mathrm{id}$, diagonalisable over $\mathbb{R}$ with eigenvalues $+1$ and $-1$; it is a **product structure**, against the complex structure $J_\mathbb{C}^2=-\mathrm{id}$ of the complex field, and the difference is the sign of the square of the generator. The algebra is the split analogue of $\mathbb{C}$: adjoining a root of the split polynomial $x^2-1$ gives a product of two copies of $\mathbb{R}$ and not a field, and its scalar extension to $\mathbb{C}$ is likewise not a field.
 
-A real-linear map of the plane is $\mathbb{D}$-linear exactly when it commutes with $J$, and conjugate-linear exactly when it anticommutes. The commuting maps have the block shape $\begin{pmatrix}p&q\\q&p\end{pmatrix}$ and are the multiplications by an element of $\mathbb{D}$; the anticommuting ones have the shape $\begin{pmatrix}p&q\\-q&-p\end{pmatrix}$, are of trace zero, and are the compositions of the conjugation with a $\mathbb{D}$-linear map. Read over the ring, the module of rank one has for submodules the two idempotent lines and the two trivial ones, and it fails to be a vector space for the same reason the ring fails to be a field, the presence of zero divisors. In the idempotent coordinates $A=A_+\Pi_1+A_-\Pi_2$ the plane is the direct sum of the two real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and $J=\operatorname{diag}(1,-1)$.
+A real-linear map of the plane is $\mathbb{D}$-linear exactly when it commutes with $J$, and conjugate-linear exactly when it anticommutes. The commuting maps have the block shape $\begin{pmatrix}p&u\\u&p\end{pmatrix}$ and are the multiplications by an element of $\mathbb{D}$; the anticommuting ones have the shape $\begin{pmatrix}p&u\\-u&-p\end{pmatrix}$, are of trace zero, and are the compositions of the conjugation with a $\mathbb{D}$-linear map. Read over the ring, the module of rank one has for submodules the two idempotent lines and the two trivial ones, and it fails to be a vector space for the same reason the ring fails to be a field, the presence of zero divisors. In the idempotent coordinates $Q=q_+\Pi_1+q_-\Pi_2$ the plane is the direct sum of the two real lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and $J=\operatorname{diag}(1,-1)$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}=\mathbb{R}[x]/(x^2-1)$ | the split-complex algebra, $j^2=+1$ |
-| $A=a+ja'$ | general element, $a=\operatorname{Re}A$, $a'=\operatorname{Im}A$ |
-| $\bar A=a-ja'$ | the conjugation |
-| $J(A)=jA$ | the real-linear product structure, $J^2=+\mathrm{id}$, matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ |
+| $Q=q+jq'$ | general element, $q=\operatorname{Re}Q$, $q'=\operatorname{Im}Q$ |
+| $\bar Q=q-jq'$ | the conjugation |
+| $J(Q)=jQ$ | the real-linear product structure, $J^2=+\mathrm{id}$, matrix $\begin{pmatrix}0&1\\1&0\end{pmatrix}$ |
 | $TJ=JT$ / $TJ=-JT$ | $\mathbb{D}$-linearity / conjugate-linearity of a real-linear $T$ |
-| $\begin{pmatrix}p&q\\q&p\end{pmatrix}$, $\begin{pmatrix}p&q\\-q&-p\end{pmatrix}$ | the two block shapes of the two classes |
-| $\kappa(A)=\bar A$ | the conjugation as a real-linear map, matrix $\operatorname{diag}(1,-1)$ |
-| $M_2(\mathbb{D})=\{aI+a'J\}$ | the $\mathbb{D}$-linear maps, image of the regular representation |
-| $\Pi_{1,2}=\tfrac12(1\pm j)$ | the idempotents, eigenvectors of $J$ |
-| $A_\pm=a\pm a'$ | idempotent coordinates, $A=A_+\Pi_1+A_-\Pi_2$ |
+| $\begin{pmatrix}p&u\\u&p\end{pmatrix}$, $\begin{pmatrix}p&u\\-u&-p\end{pmatrix}$ | the two block shapes of the two classes |
+| $\kappa(Q)=\bar Q$ | the conjugation as a real-linear map, matrix $\operatorname{diag}(1,-1)$ |
+| $M_2(\mathbb{D})=\{qI+q'J\}$ | the $\mathbb{D}$-linear maps, image of the regular representation |
+| $\Pi_1=\tfrac12(1+j)$, $\Pi_2=\tfrac12(1-j)$ | the idempotents, eigenvectors of $J$ |
+| $q_+=q+q'$, $q_-=q-q'$ | idempotent coordinates, $Q=q_+\Pi_1+q_-\Pi_2$ |
 | $\mathbb{R}\Pi_1,\mathbb{R}\Pi_2$ | the two coordinate lines, the submodules of the self-reading |
 
 ## Further Reading

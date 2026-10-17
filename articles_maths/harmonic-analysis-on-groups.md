@@ -211,7 +211,7 @@ The example shows exactly what fails. For an abelian group the irreducible unita
 
 The general replacement is as follows; the statements are made precise in the other articles, and the representation theory they use is Part II's.
 
-Let $G$ be unimodular and $\pi : G \to U(\mathcal{H}_\pi)$ an irreducible unitary representation. For $f \in L^1(G)$ put
+Let $G$ be unimodular and $\pi : G \to \mathrm{U}(\mathcal{H}_\pi)$ an irreducible unitary representation. For $f \in L^1(G)$ put
 
 $$
 (\mathcal F f)(\pi) = \int_G f(g)\,\pi(g)\,dg \in B(\mathcal{H}_\pi) ,

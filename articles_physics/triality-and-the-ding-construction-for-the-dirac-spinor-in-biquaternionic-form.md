@@ -8,7 +8,7 @@ In four-dimensional Minkowski space the three spaces do not coincide: a Lorentz 
 
 This article records the construction, the trilinear and cubic invariant forms, the order-three map $J$, and the order-four braid maps that Liu calls "Dirac's game". It is the group-theoretic companion of *The s-Vector Representation of the Dirac Spinor in Biquaternionic Form*, which carries the dictionary and the Lagrangian; this article carries the symmetry structure.
 
-The conventions are those of the companion articles: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$.
+The conventions are those of the companion articles: the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and four-vector indices $\mu = 0,1,2,3$ carry the generator metric $g_{\mu\nu} = \mathrm{diag}(+1,-1,-1,-1)$.
 
 ## The Three Spaces
 
@@ -29,8 +29,8 @@ Here $q$ is a unit biquaternion of the Lorentz group, $S_1(q)$ is left multiplic
 The building block is the matrix representation of the algebra on this four-dimensional carrier. Writing $e_\mu = i\vec u_{\mu}$ for the three spatial units in the trinomial basis, the units satisfy
 
 $$
-\vec u_1\vec u_2\vec u_3 = -I, \qquad \vec u_k^2 = -I, \qquad
-\vec u_1\vec u_2 = \vec u_3, \quad \vec u_2\vec u_3 = \vec u_1, \quad \vec u_3\vec u_1 = \vec u_2,
+\vec u_x\vec u_y\vec u_z = -I, \qquad \vec u_k^2 = -I, \qquad
+\vec u_x\vec u_y = \vec u_z, \quad \vec u_y\vec u_z = \vec u_x, \quad \vec u_z\vec u_x = \vec u_y,
 $$
 
 the quaternion relations of $\mathbb{B}$. An order-$\ell$ **ding** is an $\ell$-linear map on a product of the three spaces with values in $\mathbb{C}$ built from these units and a parameter $z \neq 0$. For each order the source exhibits the map explicitly; the invariant content of the construction is the low-order maps, which are the ones that can be contracted with the physical fields.
@@ -98,26 +98,26 @@ This is the four-dimensional triality. Its order is three, $J^3 = 1$, and it act
 The source also exhibits order-four maps that act inside the triple and generalise the triality moves:
 
 $$
-q_1 : \ (A, B, N) \mapsto (-B, A, N), \qquad
-q_2 : \ (A, B, N) \mapsto (A, -N, B) .
+q_x : \ (A, B, N) \mapsto (-B, A, N), \qquad
+q_y : \ (A, B, N) \mapsto (A, -N, B) .
 $$
 
 These are *fourth* roots of unity,
 
 $$
-q_1^4 = 1, \qquad q_2^4 = 1,
+q_x^4 = 1, \qquad q_y^4 = 1,
 $$
 
 and they satisfy the braid relation
 
 $$
-q_1 q_2 q_1 = q_2 q_1 q_2 ,
+q_x q_y q_x = q_y q_x q_y ,
 $$
 
 so they generate a quotient of the braid group $B_3$ on three strands. The name "Dirac's game" is the source's. The content is that the combination
 
 $$
-q_1 q_2 q_2 q_1
+q_x q_y q_y q_x
 $$
 
 leaves the cubic form $C$ invariant. The order-four moves and the order-three $J$ together are the two families of symmetries of the triple that the construction supplies; the order-three family is the triality, the order-four family the braid.
@@ -126,7 +126,7 @@ The contrast with Cartan's case is worth naming. There the triality automorphism
 
 ## What the Ding Is and Is Not
 
-**It is** a genuine order-three symmetry of the invariant trilinear form on the triple (vector, semi-spinor-1, semi-spinor-2). Every identity stated above — the trilinear form, the cubic decomposition, the invariance of $C$ under $J$, the braid relations and the invariance of $C$ under $q_1q_2q_2q_1$ — was recomputed on the corpus's convention and holds.
+**It is** a genuine order-three symmetry of the invariant trilinear form on the triple (vector, semi-spinor-1, semi-spinor-2). Every identity stated above — the trilinear form, the cubic decomposition, the invariance of $C$ under $J$, the braid relations and the invariance of $C$ under $q_xq_yq_yq_x$ — was recomputed on the corpus's convention and holds.
 
 **It is not** a symmetry of the theory. The source is explicit: the ding is a map from one *description* of the theory to another description of the same theory, not a transformation of the physical fields. A symmetry of the theory would have to act on a single field configuration and leave the action invariant; $J$ permutes three different spaces, each of which is the same field read in a different representation. This is the same distinction the corpus draws for the triality of $\mathrm{Spin}(8)$: the triality automorphism is not a symmetry of an ordinary field theory either, it relates the vector and the two spinor descriptions.
 
@@ -138,7 +138,7 @@ The contrast with Cartan's case is worth naming. There the triality automorphism
 
 2. **The relation to the Cartan case.** The four-dimensional ding and the eight-dimensional triality are the $4$ and $8$ cases of the Hurwitz list. Is there a uniform construction for $1, 2, 4, 8$ — with the complex numbers, the quaternions and the octonions? The $1$- and $2$-dimensional cases are degenerate; the $4$- and $8$-dimensional cases are the ones Liu's construction and Cartan's triality treat.
 
-3. **The role of the braid group.** The braid relation $q_1q_2q_1 = q_2q_1q_2$ is the defining relation of $B_3$. The corpus's *Anyons and Braid Statistics in Biquaternionic Form* treats braid statistics as a physical phenomenon in $2+1$ dimensions. Is the braid structure used by the four-dimensional construction the same braid group, or only the same presentation?
+3. **The role of the braid group.** The braid relation $q_xq_yq_x = q_yq_xq_y$ is the defining relation of $B_3$. The corpus's *Anyons and Braid Statistics in Biquaternionic Form* treats braid statistics as a physical phenomenon in $2+1$ dimensions. Is the braid structure used by the four-dimensional construction the same braid group, or only the same presentation?
 
 4. **The three-generation interpretation.** A triality relates exactly three spaces. The Standard Model has exactly three generations of fermions. Whether the ding's order-three structure is the group-theoretic shadow of the three generations — or merely a numerical coincidence of the same number — is not addressed by the source, and the corpus records the observation only as a speculation.
 
@@ -153,7 +153,7 @@ $$
 = A_\mu\bigl[t^{\nu\mu\lambda}(B_\nu B_\lambda + N_\nu N_\lambda) + 2\varepsilon^{\nu\mu\lambda}B_\nu N_\lambda\bigr],
 $$
 
-and its evaluation on a single spinor is the cubic form $A_\mu\bar\Psi\gamma^\mu\Psi$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_1 : (A,B,N) \mapsto (-B,A,N)$ and $q_2 : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_1^4 = q_2^4 = 1$ and the braid relation $q_1q_2q_1 = q_2q_1q_2$, and the combination $q_1q_2q_2q_1$ leaves the cubic form invariant — "Dirac's game".
+and its evaluation on a single spinor is the cubic form $A_\mu\bar\Psi\gamma^\mu\Psi$. The order-three map $J : A \mapsto B \mapsto N \mapsto A$ permutes the three spaces and leaves $\varepsilon$ invariant; this is the four-dimensional analogue of Cartan's triality, with the biquaternion algebra in place of the octonions, and it exists because the three modules have equal real dimension in $1+3$. The order-four maps $q_x : (A,B,N) \mapsto (-B,A,N)$ and $q_y : (A,B,N) \mapsto (A,-N,B)$ satisfy $q_x^4 = q_y^4 = 1$ and the braid relation $q_xq_yq_x = q_yq_xq_y$, and the combination $q_xq_yq_yq_x$ leaves the cubic form invariant — "Dirac's game".
 
 What the construction supplies is the symmetry structure of the triple; what it does not supply is a symmetry of the theory. The ding is a map between descriptions, not a transformation of the fields, and the algebra that carries it is the associative biquaternion algebra, not the octonions. Both cases are the $4$ and the $8$ of the Hurwitz list.
 
@@ -167,19 +167,19 @@ What the construction supplies is the symmetry structure of the triple; what it 
 | $G^\mu = B^\mu + iN^\mu$ | s-Vector |
 | $q$ | Unit biquaternion of the Lorentz group |
 | $S_1(q), S_2(q), \Lambda(q)$ | Left, right and mixed actions of $q$ |
-| $e_\nu = i\vec u_{\nu}$ | Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_1\vec u_2 = \vec u_3$ |
+| $e_\nu = i\vec u_{\nu}$ | Units of the trinomial basis, $\vec u_k^2 = -I$, $\vec u_x\vec u_y = \vec u_z$ |
 | $t^{\mu\nu\lambda\rho} = \tfrac14\mathrm{tr}(\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Symmetric gamma trace |
 | $\varepsilon^{\mu\nu\lambda\rho} = \tfrac{i}{4}\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\lambda\gamma^\rho)$ | Totally antisymmetric symbol, $\varepsilon^{0123} = 1$ |
 | $\varepsilon(A,B,N) = 2A_\mu\varepsilon^{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$ | Order-three ding (the invariant trilinear form) |
 | $C = A_\mu\bar\Psi\gamma^\mu\Psi$ | Cubic form |
 | $J : A \mapsto B \mapsto N \mapsto A$ | Order-three ding map (the four-dimensional triality) |
-| $q_1 : (A,B,N)\mapsto(-B,A,N)$ | Order-four braid map |
-| $q_2 : (A,B,N)\mapsto(A,-N,B)$ | Order-four braid map |
+| $q_x : (A,B,N)\mapsto(-B,A,N)$ | Order-four braid map |
+| $q_y : (A,B,N)\mapsto(A,-N,B)$ | Order-four braid map |
 
 ## Further Reading
 
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §2, for the three spaces, the construction of the dings, the trilinear form $2A_\mu\varepsilon^{\nu\mu\lambda\sigma}k_\sigma B_\nu N_\lambda$, and the order-three map; the source's own comparison with Cartan's triality is there.
-- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), §2, for the restatement of the dings, the cubic form, the braid maps $q_1, q_2$ and "Dirac's game", and the chiral biquaternions.
+- Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), §2, for the restatement of the dings, the cubic form, the braid maps $q_x, q_y$ and "Dirac's game", and the chiral biquaternions.
 - E. Cartan, *Leçons sur la théorie des spineurs* I, II (Hermann, Paris, 1938); English translation by R. Streater, *The Theory of Spinors* (Hermann, Paris, 1966), for the triality of $\mathrm{Spin}(8)$.
 - C. C. Chevalley, *The Algebraic Theory of Spinors* (Columbia University Press, New York, 1954), for the neutral elements and for the triality as an outer automorphism.
 - J. F. Adams, *Lectures on Exceptional Lie Groups* (University of Chicago Press, Chicago, 1996), for triality and the Hurwitz dimensions $1, 2, 4, 8$.

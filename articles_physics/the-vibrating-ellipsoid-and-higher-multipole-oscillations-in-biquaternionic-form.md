@@ -6,7 +6,7 @@ An isolated body of finite size that is not perfectly spherical has a shape with
 
 This article develops the mechanics of the vibrating and rotating ellipsoid in the biquaternion framework, and follows the multipole tower it generates. The treatment is **non-relativistic** and classical: the body is described by its shape and orientation, the mode amplitudes obey ordinary harmonic-oscillator equations, and the fields it produces are read in the long-wavelength limit. The relativistic quadrupole is a separate subject.
 
-The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t)$ enter the algebra as the central elements $a_{lm}e_0$. The **orientation** of the body is a rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde{\Lambda}\vec w\tilde{\Lambda}^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
+The framework's role here is specific, and it is worth stating before the details. The **shape** of the body is a scalar function on the sphere, and its modes are scalars: the amplitudes $a_{lm}(t)$ enter the algebra as the central elements $a_{lm}e_t$. The **orientation** of the body is a rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a real unit quaternion acting on vectors by $\vec w\mapsto\tilde{\Lambda}\vec w\tilde{\Lambda}^{\natural}$. The **velocity field** of the medium is a vector, an element of the vector part. The multipole **moments** themselves are tensors: as the preceding article established, the monopole and the dipole are algebra elements, but the quadrupole and every higher moment are symmetric traceless tensors over the vector part, not elements of $\mathbb{B}$. The result is a clean division of labour. The algebra carries the rotors and the vector fields; the tower of shape oscillations is carried by the function space, and the algebra acts on it through the rotor without containing it.
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
@@ -14,7 +14,7 @@ The biquaternion conventions are those of the companion articles:
 - Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric (its three levels are ruled on in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*), and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the material sector is $\mathbb{M}_-$ with basis $ie_0, e_1, e_2, e_3$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \vec\nabla$ with $\vec\nabla = e_1\partial_x + e_2\partial_y + e_3\partial_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{\rho}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the material sector is $\mathbb{M}_-$ with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The symbol $\rho_m$ in this article denotes a **mass** density (the corpus reserves the bare $\rho$ for the charge density, and $\tilde{\rho}$ for the density operator of the informational sector), $M$ the body's mass, and $\sigma$ a surface tension. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$ (Wigner's $D$), so the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Rigid-Body Rotor
 
@@ -22,7 +22,7 @@ The rotor algebra used below is stated explicitly, from first principles.
 
 ### Rotors
 
-A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\vec u = u_1e_1 + u_2e_2 + u_3e_3$, with $\vec u^2 = -e_0$, is represented by the **rotor**
+A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\vec u = u_x\vec e_x + u_y\vec e_y + u_z\vec e_z$, with $\vec u^2 = -e_t$, is represented by the **rotor**
 
 $$
 \tilde{\Lambda}(\theta,\vec u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\vec u \in \mathbb{H}_{\mathbb{B}} ,
@@ -31,7 +31,7 @@ $$
 a real quaternion of unit norm,
 
 $$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\vec u^2 = e_0 .
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \cos^2\frac{\theta}{2} - \sin^2\frac{\theta}{2}\,\vec u^2 = e_t .
 $$
 
 Because $\tilde{\Lambda}$ is a real quaternion, its Hermitian conjugate is its quaternion conjugate, $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{\natural}$. The rotor acts on a vector by conjugation,
@@ -46,17 +46,17 @@ $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1 \;\longleftrightarrow\; R_2R_1 ,
 $$
 
-so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\vec u) = -\tilde{\Lambda}(\theta,\vec u)$, with $+2\pi$ and $4\pi$ giving respectively $-e_0$ and $+e_0$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the **same** rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.
+so the rotors form a group, and the map is two-to-one: $\tilde{\Lambda}(\theta + 2\pi,\vec u) = -\tilde{\Lambda}(\theta,\vec u)$, with $+2\pi$ and $4\pi$ giving respectively $-e_t$ and $+e_t$. This has been checked directly. The two rotors $\pm\tilde{\Lambda}$ produce the **same** rotation of vectors, which is the familiar two-sheeted cover of the rotation group by its spin group.
 
 ### Angular Velocity
 
-Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = \dot\theta\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
+Let the axis be fixed and the angle vary, $\theta = \theta(t)$, and write $\tilde{\omega} = d\theta/dt\,\vec u$ for the angular velocity as a real pure quaternion. Differentiating the rotor gives the kinematic identity
 
 $$
-\dot{\tilde{\Lambda}} = \tfrac12\,\tilde{\Lambda}\,\tilde{\omega} .
+d\tilde{\Lambda}/dt = \tfrac12\,\tilde{\Lambda}\,\tilde{\omega} .
 $$
 
-This has been verified numerically: for $\theta(t)$ increasing at rate $\omega$ about $e_3$, the central difference $(\tilde{\Lambda}(t+\delta)-\tilde{\Lambda}(t-\delta))/(2\delta)$ equals $\frac12\tilde{\Lambda}\tilde{\omega}$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\tilde{\omega}$ lies in the vector part, as the angular velocity of a rigid body must.
+This has been verified numerically: for $\theta(t)$ increasing at rate $\omega$ about $\vec e_z$, the central difference $(\tilde{\Lambda}(t+\delta)-\tilde{\Lambda}(t-\delta))/(2\delta)$ equals $\frac12\tilde{\Lambda}\tilde{\omega}$ to $10^{-8}$ at a step $\delta = 10^{-4}$, the residual falling with $\delta^2$ as a central difference must. For a general rotation the axis may itself move, and the identity is then the body-frame version of the angular-velocity relation; the vector $\tilde{\omega}$ lies in the vector part, as the angular velocity of a rigid body must.
 
 ### Rotation of a Rank-Two Tensor
 
@@ -99,7 +99,7 @@ for $l\geq1$. They are ordinary scalar functions of time — real if real spheri
 For small amplitudes each mode decouples, and each amplitude obeys a harmonic-oscillator equation,
 
 $$
-\ddot{a}_{lm}(t) + \omega_l^2\,a_{lm}(t) = 0 ,
+\left(d^2a_{lm}/dt^2\right)(t) + \omega_l^2\,a_{lm}(t) = 0 ,
 $$
 
 with a frequency $\omega_l$ that depends on the order $l$ and on the body's constitution. For the **spherical** equilibrium the frequency is independent of the azimuthal index $m$, so the $2l+1$ modes of order $l$ are degenerate and the solution is $a_{lm}(t) = A_{lm}\cos(\omega_l t + \varphi_{lm})$; a non-spherical equilibrium lifts that degeneracy, and the frequency then acquires an $m$-dependence of order the ellipticity. That splitting is the mechanism the rotating-ellipsoid section below makes use of.
@@ -123,16 +123,16 @@ For a homogeneous ellipsoid with semi-axes $a, b, c$ along the principal axes, t
 The quadrupole tensor of a mass distribution is, by the convention of the preceding article,
 
 $$
-\Theta_{ij} = \int \rho_m(\vec x')\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' ,
+\Theta_{ij} = \int \rho_m(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\left(3x_i'x_j' - r'^{\,2}\delta_{ij}\right)d^3x' ,
 $$
 
-symmetric and traceless. For a uniform ellipsoid of mass $M$ and semi-axes $a, b, c$ aligned with the axes, the principal second moments are $\int x^2\,dV = Ma^2/5$ and its cyclic relatives. The value follows from the substitution to the unit ball. Setting $x = a u_1$, $y = b u_2$, $z = c u_3$, the volume element is $dV = abc\,du_1\,du_2\,du_3$ and the unit ball is $u_1^2+u_2^2+u_3^2\leq 1$, so
+symmetric and traceless. For a uniform ellipsoid of mass $M$ and semi-axes $a, b, c$ aligned with the axes, the principal second moments are $\int x^2\,dV = Ma^2/5$ and its cyclic relatives. The value follows from the substitution to the unit ball. Setting $x = a u_x$, $y = b u_y$, $z = c u_z$, the volume element is $dV = abc\,du_1\,du_2\,du_3$ and the unit ball is $u_x^2+u_y^2+u_z^2\leq 1$, so
 
 $$
-\int x^2\,dV = a^2\cdot abc\int_{u_1^2+u_2^2+u_3^2\leq1} u_1^2\,du_1\,du_2\,du_3 = a^3bc\cdot\frac{4\pi}{15},
+\int x^2\,dV = a^2\cdot abc\int_{u_x^2+u_y^2+u_z^2\leq1} u_x^2\,du_1\,du_2\,du_3 = a^3bc\cdot\frac{4\pi}{15},
 $$
 
-using the standard second moment $\int u_1^2\,d^3u = 4\pi/15$ of the unit ball. Since $M = \rho_m\,\mathrm{Vol} = \rho_m\cdot 4\pi abc/3$, the density times the integral is
+using the standard second moment $\int u_x^2\,d^3u = 4\pi/15$ of the unit ball. Since $M = \rho_m\,\mathrm{Vol} = \rho_m\cdot 4\pi abc/3$, the density times the integral is
 
 $$
 \rho_m\int x^2\,dV = \frac{4\pi a^3bc/15}{4\pi abc/3}\,M = \frac{Ma^2}{5},
@@ -180,17 +180,17 @@ verified for random $\vec a, \vec d$ with residuals below $10^{-13}$ and vanishi
 
 ### Body Frame and Lab Frame
 
-A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $e_3$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
+A rotating non-axisymmetric body is a second and distinct source of an oscillating quadrupole. Let the body frame carry the constant quadrupole $\mathcal{Q}^{(b)} = \mathrm{diag}(\lambda_1, \lambda_2, \lambda_3)$ with $\lambda_1+\lambda_2+\lambda_3 = 0$, and let the body rotate about the $\vec e_z$ axis with constant angular speed $\Omega$. The lab-frame moment is the rotor conjugate,
 
 $$
 \mathcal{Q}^{(lab)}_{ij}(t) = R_{ik}(t)\,R_{jl}(t)\,\mathcal{Q}^{(b)}_{kl},
 \qquad
-\tilde{\Lambda}(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,e_3 .
+\tilde{\Lambda}(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\vec e_z .
 $$
 
 ### The $2\Omega$ Frequency
 
-Carrying out the rotation about $e_3$ gives, with the rotation matrix $R = R_3(\Omega t)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
+Carrying out the rotation about $\vec e_z$ gives, with the rotation matrix $R = R_3(\Omega t)$ and $\mathcal{Q}^{(lab)} = R\mathcal{Q}^{(b)}R^{\mathsf{T}}$,
 
 $$
 \begin{aligned}
@@ -228,7 +228,7 @@ so that a rigidly rotating deformed body emits a tower of harmonics up to $l\Ome
 
 Two structural comments belong here, because they are where the framework's bookkeeping becomes visible.
 
-**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(t)$ are central elements of the algebra, $a_{lm}(t)e_0\in\mathbb{C}_{\mathbb{B}}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
+**The mode amplitudes are scalars.** The vibrating body's shape is a scalar function on the sphere, and its normal-mode amplitudes $a_{lm}(t)$ are central elements of the algebra, $a_{lm}(t)e_t\in\mathbb{C}_{\mathbb{B}}$. The tower of modes $l = 2, 3, \dots$ is a tower of *functions*, one for each irreducible representation $D^{(l)}$ of the rotation group, and the algebra contains only $D^{(0)}$ and $D^{(1)}$ as elements. The tower is carried by the function space, exactly as in the static expansion.
 
 **The algebra supplies the rotor.** The orientation of the body is a single rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, and the passage from body-frame to lab-frame moments is the rotor conjugation of the bilinear form. The rotor is an algebra element, and it is the same element for every $l$: one rotation acts on the whole tower of tensors at once, because they are all representations of the one rotation group. The algebra does not need to contain the tower in order to act on it.
 
@@ -236,10 +236,10 @@ Two structural comments belong here, because they are where the framework's book
 
 ### The Velocity Field Is a Vector Element
 
-The motion of the medium is described by a velocity field $\vec v(\vec x,t)$, and in the algebra it is a pure real vector element,
+The motion of the medium is described by a velocity field $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)$, and in the algebra it is a pure real vector element,
 
 $$
-\tilde{v} = v_1e_1 + v_2e_2 + v_3e_3 \in \mathbb{H}_{\mathbb{B}} ,
+\tilde{v} = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z \in \mathbb{H}_{\mathbb{B}} ,
 $$
 
 lying in the vector part, hence in $\mathbb{M}_-$. For a small surface deformation of an incompressible body the velocity field is obtained from the shape function by the kinematic boundary condition, and to leading order its angular dependence follows that of the mode that drives it, so that the deformation of order $l$ drives a velocity field whose angular content is of the same order. What sits in the algebra is the **value** of the velocity field, and that value is a vector, an element of the vector part; the angular order $l$ is a property of the field as a function, and the function space, not the algebra, is what carries it. The algebra holds the velocity's value, and the function space holds the mode's order.
@@ -247,18 +247,18 @@ lying in the vector part, hence in $\mathbb{M}_-$. For a small surface deformati
 The continuity equation relates the shape to the velocity in the usual way. For an incompressible medium, $\vec\nabla\cdot\vec v = 0$, and the surface displacement follows by integrating the normal velocity. In the algebra the divergence is the central part of the gradient acting on the velocity element,
 
 $$
-\mathrm{Sc}\!\left(\vec\nabla\tilde{v}\right) = -\sum_i\partial_iv_i = -\vec\nabla\cdot\vec v,
+\mathrm{Sc}\!\left(\vec\nabla\tilde{v}\right) = -\sum_\mu\partial/\partial Q_\mu\,v_\mu = -\vec\nabla\cdot\vec v,
 $$
 
-obtained from $\vec\nabla\tilde{v} = \sum_{i,j}e_ie_j\partial_iv_j$: only the terms with $i = j$ contribute to the centre, and $e_i^2 = -e_0$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\tilde{v}$, a scalar statement, while the remainder of $\vec\nabla\tilde{v}$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
+obtained from $\vec\nabla\tilde{v} = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial/\partial Q_\mu\,v_\nu$: only the terms with $\mu = \nu$ contribute to the centre, and $\vec e_k^2 = -e_t$. The divergence-free condition is therefore the vanishing of the central part of $\vec\nabla\tilde{v}$, a scalar statement, while the remainder of $\vec\nabla\tilde{v}$ is the curl, a vector. The gradient of a vector thus splits into its $D^{(0)}$ and $D^{(1)}$ pieces, exactly the two representations the algebra carries:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the vector-part algebra and the commutator $[\tilde{H},\tilde{K}] = -2(\vec h\times\vec k)$ used in these manipulations.
 
 ### The Energy of a Mode
 
-For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\dot a_l^2$. Writing $E = \frac12 M_l\dot a_l^2 + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
+For small oscillations the energy of a mode is the sum of a kinetic term and a potential term, each quadratic in the amplitude. For a surface-tension drop of density $\rho_m$ and equilibrium radius $R_0$, the potential energy of an $l$-th mode of amplitude $a_l$ is proportional to the change in surface area, and the kinetic energy is proportional to $\rho_m R_0^5\left(da_{l}/dt\right)^{2}$. Writing $E = \frac12 M_l\left(da_{l}/dt\right)^{2} + \frac12 K_l a_l^2$ and identifying the frequency from $\omega_l^2 = K_l/M_l$ gives the Rayleigh value quoted above; the coefficients $M_l$ and $K_l$ follow from the standard surface-area and kinetic-energy integrals of an incompressible mode, and their ratio is the standard result. Each mode is then an independent harmonic oscillator, and the total energy is the sum over the tower,
 
 $$
-E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\dot a_{lm}^2 + K_l\,a_{lm}^2\right),
+E = \sum_{l=2}^{\infty}\sum_{m=-l}^{l}\tfrac12\left(M_l\,\left(da_{lm}/dt\right)^{2} + K_l\,a_{lm}^2\right),
 $$
 
 the $l = 0$ and $l = 1$ terms being omitted for a body that conserves volume and does not translate. The number of oscillators at order $l$ is $2l+1$: the energy sum runs over the same infinite tower as the multipole series, one harmonic oscillator for each independent multipole component.
@@ -275,7 +275,7 @@ The moments $\Theta_{ij}(t)$, $\Theta_{ijk}(t), \dots$ are the sources of a time
 
 ### Power Scaling
 
-The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|\dddot{Q}|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t$ this gives $\dddot{Q}\propto\omega^3$ and
+The radiated power from a time-varying multipole of order $l$ scales with the frequency as a high power. For an electric quadrupole, the standard long-wavelength result gives $P\propto|d^3Q/dt^3|^2$; for a moment oscillating as $\mathcal{Q}\propto\cos\omega t$ this gives $d^3Q/dt^3\propto\omega^3$ and
 
 $$
 P \;\propto\; \omega^6 .
@@ -293,28 +293,28 @@ A vibrating or rotating ellipsoid is a source of oscillating multipoles. Its sha
 
 The quadrupole moment of a homogeneous ellipsoid is $\Theta_{xx} = \frac{M}{5}(2a^2-b^2-c^2)$ with cyclic permutations, traceless; for a small trace-free strain it is linear, $\Theta_{ij} = \frac{6MR_0^2}{5}\epsilon_{ij}$. A vibrating ellipsoid therefore has a quadrupole moment oscillating at the mode frequency $\omega_2$. A triaxial ellipsoid rotating at $\Omega$ has a lab-frame quadrupole oscillating at $2\Omega$, because the body-frame moment carries azimuthal components $m' = \pm 2$; an axisymmetric body has a static moment and does not oscillate. In general, a rigidly rotating body with an $l$-pole deformation produces harmonics up to $l\Omega$.
 
-In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_0\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde{\Lambda}^{\natural}\vec v\tilde{\Lambda}, \tilde{\Lambda}^{\natural}\vec w\tilde{\Lambda})$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
+In the biquaternion framework the division of labour is exact. The shape mode amplitudes are scalars, $a_{lm}(t)e_t\in\mathbb{C}_{\mathbb{B}}$, and the multipole moments of order $l\geq2$ are tensors over the vector part, not algebra elements. The orientation is a single rotor $\tilde{\Lambda}(t)\in\mathbb{H}_{\mathbb{B}}$, a unit-norm real quaternion, which acts on every tensor of the tower at once by conjugation of its bilinear form, $\mathcal{Q}^{(lab)}(\vec v,\vec w) = \mathcal{Q}^{(b)}(\tilde{\Lambda}^{\natural}\vec v\tilde{\Lambda}, \tilde{\Lambda}^{\natural}\vec w\tilde{\Lambda})$. The velocity field of the medium is a vector, an element of the vector part. The algebra thus supplies the rotors and the vector fields and acts on the tower without containing it; the tower of oscillating modes is carried by the function space. The oscillating multipole moments are the sources of a time-dependent field; in the non-relativistic long-wavelength limit the radiated power from a quadrupole scales as $\omega^6$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $\tilde{\Lambda} = \cos(\theta/2) + \sin(\theta/2)\vec u$ | Rotation rotor, a real unit quaternion |
 | $\vec w' = \tilde{\Lambda}\vec w\tilde{\Lambda}^{\natural}$ | Rotor action on a vector |
 | $R(\theta,\vec u)$ | Rotation matrix in $SO(3)$, the image of $\tilde{\Lambda}$ (distinct from the radius $R_0$) |
-| $\tilde{\omega} = \dot\theta\,\vec u$ | Angular velocity (body-frame vector) |
-| $\dot{\tilde{\Lambda}} = \tfrac12\tilde{\Lambda}\tilde{\omega}$ | Rotor kinematic identity |
+| $\tilde{\omega} = d\theta/dt\,\vec u$ | Angular velocity (body-frame vector) |
+| $d\tilde{\Lambda}/dt = \tfrac12\tilde{\Lambda}\tilde{\omega}$ | Rotor kinematic identity |
 | $Y_l^m$ | Spherical harmonics |
 | $r(\theta,\phi,t) = R_0[1+\sum a_{lm}Y_l^m]$ | Shape function of the deformed body |
 | $a_{lm}(t)$ | Normal-mode amplitude (a scalar) |
-| $\vec v(\vec x,t)$, $\tilde{v}$ | Velocity field and its vector element |
+| $\vec v(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,t)$, $\tilde{v}$ | Velocity field and its vector element |
 | $\rho_m$, $\sigma$, $M$ | Mass density, surface tension, total mass |
 | $M_l, K_l$ | Mode inertia and restoring coefficients, $\omega_l^2 = K_l/M_l$ |
 | $\omega_l$ | Frequency of the $l$-th mode |
@@ -327,8 +327,8 @@ In the biquaternion framework the division of labour is exact. The shape mode am
 | $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\Omega$ | Angular speed of rigid rotation |
-| $\tilde{\nabla} = e_0\partial_{ict}+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t+\vec\nabla$ | Biquaternionic gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
 
 ## Further Reading
 

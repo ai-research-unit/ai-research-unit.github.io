@@ -19,29 +19,29 @@ A directed set need not be linearly ordered, and this is the whole point of the 
 
 **Example.** The natural numbers with their usual order are directed, and a directed set with a countable cofinal subset is **countably directed**. The finite subsets $\mathcal{P}_{\mathrm{fin}}(X)$ of a set $X$, ordered by inclusion, are directed since the union of two finite sets is finite, and they have no countable cofinal subset when $X$ is uncountable.
 
-**Example.** The neighbourhoods $\mathcal{N}_x$ of a point of a topological space, ordered by **reverse inclusion**, are directed because $U \cap V$ is an upper bound; this directed set is countable exactly when the space is first countable at $x$. The product $D \times E$ of two directed sets, ordered coordinatewise, is directed, and it indexes the double nets of the next sections.
+**Example.** The neighbourhoods $\mathcal{N}_x$ of a point of a topological space, ordered by **reverse inclusion**, are directed because $\Omega \cap V$ is an upper bound; this directed set is countable exactly when the space is first countable at $x$. The product $D \times E$ of two directed sets, ordered coordinatewise, is directed, and it indexes the double nets of the next sections.
 
 ### Nets and their Convergence
 
 **Definition.** A **net** in a set $X$ is a function $x : D \to X$ from a directed set $D$ into $X$. It is written $(x_\alpha)_{\alpha \in D}$, or $(x_\alpha)$ when the index set is clear, and its value at $\alpha$ is $x_\alpha$. A net indexed by $\mathbb{N}$ is a sequence, and a net indexed by $\mathcal{N}_x$ ordered by reverse inclusion is a **neighbourhood net** at $x$.
 
-**Definition.** Let $(x_\alpha)_{\alpha \in D}$ be a net in a topological space $X$. It **converges to** $x \in X$, written $x_\alpha \to x$ or $\lim_\alpha x_\alpha = x$, if for every neighbourhood $U$ of $x$ there is $\alpha_0 \in D$ such that $x_\alpha \in U$ for every $\alpha \geq \alpha_0$:
+**Definition.** Let $(x_\alpha)_{\alpha \in D}$ be a net in a topological space $X$. It **converges to** $x \in X$, written $x_\alpha \to x$ or $\lim_\alpha x_\alpha = x$, if for every neighbourhood $\Omega$ of $x$ there is $\alpha_0 \in D$ such that $x_\alpha \in \Omega$ for every $\alpha \geq \alpha_0$:
 $$
-x_\alpha \to x \iff \forall\, U \in \mathcal{N}_x\ \ \exists\, \alpha_0 \in D\ \ \forall\, \alpha \geq \alpha_0 : \ x_\alpha \in U ,
+x_\alpha \to x \iff \forall\, \Omega \in \mathcal{N}_x\ \ \exists\, \alpha_0 \in D\ \ \forall\, \alpha \geq \alpha_0 : \ x_\alpha \in \Omega ,
 $$
-and one says that the net is **eventually** in $U$. A point $x$ is a **cluster point** of the net if for every neighbourhood $U$ of $x$ and every $\alpha_0 \in D$ there is $\alpha \geq \alpha_0$ with $x_\alpha \in U$:
+and one says that the net is **eventually** in $\Omega$. A point $x$ is a **cluster point** of the net if for every neighbourhood $\Omega$ of $x$ and every $\alpha_0 \in D$ there is $\alpha \geq \alpha_0$ with $x_\alpha \in \Omega$:
 $$
-x \text{ is a cluster point of } (x_\alpha) \iff \forall\, U \in \mathcal{N}_x\ \ \forall\, \alpha_0 \in D\ \ \exists\, \alpha \geq \alpha_0 : \ x_\alpha \in U ,
+x \text{ is a cluster point of } (x_\alpha) \iff \forall\, \Omega \in \mathcal{N}_x\ \ \forall\, \alpha_0 \in D\ \ \exists\, \alpha \geq \alpha_0 : \ x_\alpha \in \Omega ,
 $$
-and one says that the net is **frequently** in $U$.
+and one says that the net is **frequently** in $\Omega$.
 
 Convergence is tested on a neighbourhood base, by the definition of the neighbourhood filter: if $x_\alpha \to x$ and $\mathcal{N}_x$ is a neighbourhood base at $x$, it suffices to check eventual containment in the members of $\mathcal{N}_x$. When the topology is given by a metric, $x_\alpha \to x$ means that for every $\epsilon > 0$ there is $\alpha_0$ with $d(x_\alpha, x) < \epsilon$ for $\alpha \geq \alpha_0$, which is the usual definition for sequences written for a general index set.
 
 **Proposition.** A net converges to $x$ if and only if every neighbourhood of $x$ contains a tail of the net. A point $x$ is a cluster point of the net if and only if every neighbourhood of $x$ meets every tail.
 
-**Proof.** A tail is a set of the form $\{x_\alpha : \alpha \geq \alpha_0\}$; the first statement is the definition of eventual containment. For the second, the defining condition says that no neighbourhood $U$ and no $\alpha_0$ have $x_\alpha \notin U$ for all $\alpha \geq \alpha_0$, that is, $U$ meets the tail over $\alpha_0$.
+**Proof.** A tail is a set of the form $\{x_\alpha : \alpha \geq \alpha_0\}$; the first statement is the definition of eventual containment. For the second, the defining condition says that no neighbourhood $\Omega$ and no $\alpha_0$ have $x_\alpha \notin \Omega$ for all $\alpha \geq \alpha_0$, that is, $\Omega$ meets the tail over $\alpha_0$.
 
-**Example.** Every sequence in a metric space whose terms approach $x$ is a net converging to $x$; conversely a convergent net in a metric space need not be a sequence. Let $\psi$ assign to each finite set $F \subseteq \mathbb{R}$ the least integer not in $F$, a point outside $F$. The net $(\psi(F))$ over the directed set of finite subsets has no limit in $\mathbb{R}$: if $U$ is a bounded neighbourhood of a point and $F_0$ an index, then for any integer $N$ above $U$ the finite set $F = F_0 \cup \{\, k \in \mathbb{Z} : k \leq N \,\}$ has $\psi(F) > N$ and hence $\psi(F) \notin U$, so no tail is contained in $U$. Every integer $m$ is a cluster point, since $\psi(F) = m$ for the finite sets $F$ containing every integer below $m$ and not $m$, so the net is frequently in every neighbourhood of $m$; the non-integral points with a neighbourhood containing no integer are not cluster points. A net therefore separates the two notions that coincide for sequences in a metric space.
+**Example.** Every sequence in a metric space whose terms approach $x$ is a net converging to $x$; conversely a convergent net in a metric space need not be a sequence. Let $\psi$ assign to each finite set $F \subseteq \mathbb{R}$ the least integer not in $F$, a point outside $F$. The net $(\psi(F))$ over the directed set of finite subsets has no limit in $\mathbb{R}$: if $\Omega$ is a bounded neighbourhood of a point and $F_0$ an index, then for any integer $N$ above $\Omega$ the finite set $F = F_0 \cup \{\, k \in \mathbb{Z} : k \leq N \,\}$ has $\psi(F) > N$ and hence $\psi(F) \notin \Omega$, so no tail is contained in $\Omega$. Every integer $m$ is a cluster point, since $\psi(F) = m$ for the finite sets $F$ containing every integer below $m$ and not $m$, so the net is frequently in every neighbourhood of $m$; the non-integral points with a neighbourhood containing no integer are not cluster points. A net therefore separates the two notions that coincide for sequences in a metric space.
 
 **Remark.** A net is a generalisation of a sequence and not of a convergent series; the directed set need not be countable and need not have a smallest element. The neighbourhood net of a point of a non-first-countable space is of this kind, and it is the net that witnesses the failure of sequential arguments.
 
@@ -55,7 +55,7 @@ A subnet of a sequence indexed by a directed set $E$ need not be a sequence, and
 
 **Proposition.** If $x_\alpha \to x$ and $(y_\beta)$ is a subnet of $(x_\alpha)$, then $y_\beta \to x$. If $x$ is a cluster point of $(x_\alpha)$, there is a subnet of $(x_\alpha)$ converging to $x$.
 
-**Proof.** Given a neighbourhood $U$ of $x$, choose $\alpha_0$ with $x_\alpha \in U$ for $\alpha \geq \alpha_0$ and then $\beta_0$ with $\varphi(\beta) \geq \alpha_0$ for $\beta \geq \beta_0$; then $y_\beta = x_{\varphi(\beta)} \in U$ for $\beta \geq \beta_0$. For the second statement let $E$ be the set of the pairs $(\alpha, U)$ with $\alpha \in D$, $U$ a neighbourhood of $x$ and $x_\alpha \in U$, ordered componentwise and directed by clusterhood: given $(\alpha, U)$ and $(\alpha', U')$ choose $\gamma \geq \alpha, \alpha'$ and $V \subseteq U \cap U'$, and a $\delta \geq \gamma$ with $x_\delta \in V$. The projection $(\alpha, U) \mapsto \alpha$ is monotone and cofinal, since $(\delta, X)$ lies above every prescribed index, and $y_{(\alpha,U)} = x_\alpha$ converges to $x$ because for a given $U$ and $\alpha_0$ one takes $\delta \geq \alpha_0$ with $x_\delta \in U$, and then $y_{(\alpha,V)} \in U$ for all $(\alpha, V) \geq (\delta, U)$.
+**Proof.** Given a neighbourhood $\Omega$ of $x$, choose $\alpha_0$ with $x_\alpha \in \Omega$ for $\alpha \geq \alpha_0$ and then $\beta_0$ with $\varphi(\beta) \geq \alpha_0$ for $\beta \geq \beta_0$; then $y_\beta = x_{\varphi(\beta)} \in \Omega$ for $\beta \geq \beta_0$. For the second statement let $E$ be the set of the pairs $(\alpha, \Omega)$ with $\alpha \in D$, $\Omega$ a neighbourhood of $x$ and $x_\alpha \in \Omega$, ordered componentwise and directed by clusterhood: given $(\alpha, \Omega)$ and $(\alpha', \Omega')$ choose $\gamma \geq \alpha, \alpha'$ and $V \subseteq \Omega \cap \Omega'$, and a $\delta \geq \gamma$ with $x_\delta \in V$. The projection $(\alpha, \Omega) \mapsto \alpha$ is monotone and cofinal, since $(\delta, X)$ lies above every prescribed index, and $y_{(\alpha,\Omega)} = x_\alpha$ converges to $x$ because for a given $\Omega$ and $\alpha_0$ one takes $\delta \geq \alpha_0$ with $x_\delta \in \Omega$, and then $y_{(\alpha,V)} \in \Omega$ for all $(\alpha, V) \geq (\delta, \Omega)$.
 
 **Corollary.** A net has a convergent subnet if and only if it has a cluster point: passing to a subnet is exactly the operation of selecting a piece of the net that accumulates at a prescribed point.
 
@@ -81,7 +81,7 @@ Every filter is a filter base, and a filter base generates its filter by (F3). T
 
 **Example (the neighbourhood filter).** For $x \in X$ the family $\mathcal{N}_x$ of neighbourhoods of $x$ is a filter, the **neighbourhood filter**. Its members need not be open; the open neighbourhoods form a base for it, and if $X$ is first countable the filter has a countable base.
 
-**Definition.** A filter $\mathcal{F}$ is **finer** than a filter $\mathcal{G}$, and $\mathcal{G}$ is **coarser** than $\mathcal{F}$, if $\mathcal{G} \subseteq \mathcal{F}$. Two filters are **comparable** if one is finer than the other. The lattice of filters on $X$ has a largest element, the filter of all nonempty subsets of $X$, and its finest principal members are the filters $\dot x = \{\, A \subseteq X : x \in A \,\}$ at the points $x \in X$, each of them an ultrafilter and called the **principal ultrafilter** at $x$.
+**Definition.** A filter $\mathcal{F}$ is **finer** than a filter $\mathcal{G}$, and $\mathcal{G}$ is **coarser** than $\mathcal{F}$, if $\mathcal{G} \subseteq \mathcal{F}$. Two filters are **comparable** if one is finer than the other. The lattice of filters on $X$ has a largest element, the filter of all nonempty subsets of $X$, and its finest principal members are the filters $dx/dt = \{\, A \subseteq X : x \in A \,\}$ at the points $x \in X$, each of them an ultrafilter and called the **principal ultrafilter** at $x$.
 
 A family of sets with the finite intersection property generates a filter, by (F2); the maximal filters under inclusion are the ultrafilters of the next section. Finer filters contain more sets and therefore give more information, which is why convergence will be tested by being finer than the neighbourhood filter.
 
@@ -89,9 +89,9 @@ A family of sets with the finite intersection property generates a filter, by (F
 
 **Definition.** Let $\mathcal{F}$ be a filter on a topological space $X$. It **converges to** $x \in X$, written $\mathcal{F} \to x$, if $\mathcal{N}_x \subseteq \mathcal{F}$, that is, if every neighbourhood of $x$ belongs to $\mathcal{F}$. A point $x$ is a **cluster point** of $\mathcal{F}$ if $x \in \overline{A}$ for every $A \in \mathcal{F}$, equivalently if every neighbourhood of $x$ meets every member of $\mathcal{F}$.
 
-**Proposition.** A filter $\mathcal{F}$ converges to $x$ if and only if it is finer than the neighbourhood filter $\mathcal{N}_x$. A point $x$ is a cluster point of $\mathcal{F}$ if and only if the filter generated by $\{\,U \cap A : U \in \mathcal{N}_x,\ A \in \mathcal{F}\,\}$ is a filter, equivalently if there is a filter finer than both $\mathcal{N}_x$ and $\mathcal{F}$.
+**Proposition.** A filter $\mathcal{F}$ converges to $x$ if and only if it is finer than the neighbourhood filter $\mathcal{N}_x$. A point $x$ is a cluster point of $\mathcal{F}$ if and only if the filter generated by $\{\,\Omega \cap A : \Omega \in \mathcal{N}_x,\ A \in \mathcal{F}\,\}$ is a filter, equivalently if there is a filter finer than both $\mathcal{N}_x$ and $\mathcal{F}$.
 
-**Proof.** The first statement is the definition. For the second, $x$ is a cluster point exactly when no neighbourhood of $x$ is disjoint from a member of $\mathcal{F}$, which is the condition that the displayed family has no empty member and has the finite intersection property; that family is then a filter base generating a filter finer than both $\mathcal{N}_x$ and $\mathcal{F}$. Conversely a filter finer than both contains $U \cap A$ for all $U \in \mathcal{N}_x$, $A \in \mathcal{F}$, so none of these is empty.
+**Proof.** The first statement is the definition. For the second, $x$ is a cluster point exactly when no neighbourhood of $x$ is disjoint from a member of $\mathcal{F}$, which is the condition that the displayed family has no empty member and has the finite intersection property; that family is then a filter base generating a filter finer than both $\mathcal{N}_x$ and $\mathcal{F}$. Conversely a filter finer than both contains $\Omega \cap A$ for all $\Omega \in \mathcal{N}_x$, $A \in \mathcal{F}$, so none of these is empty.
 
 **Example.** The neighbourhood filter $\mathcal{N}_x$ itself converges to $x$, and the filter of all nonempty subsets converges to every point, so a limit need not be unique. On $\mathbb{R}$ the Fréchet filter of the cofinite sets converges to no point, since a bounded open interval is a neighbourhood of a point and is not cofinite, so it is not a member of the filter; an ultrafilter finer than the Fréchet filter likewise converges to no point, because a convergent filter contains a bounded neighbourhood of its limit, the cofinite sets contain no bounded set, and an ultrafilter cannot contain two disjoint sets.
 
@@ -119,7 +119,7 @@ Ultrafilters are the tool that makes compactness algebraic: a space is compact w
 
 **Theorem.** A topological space $X$ is compact if and only if every ultrafilter on $X$ converges.
 
-**Proof.** Suppose $X$ compact and let $\mathcal{U}$ be an ultrafilter with no limit. For each $x \in X$ there is a neighbourhood $U_x \notin \mathcal{U}$, hence $X \setminus U_x \in \mathcal{U}$ by the characterisation above. The sets $U_x$ cover $X$; by compactness finitely many cover, say $U_{x_1}, \ldots, U_{x_n}$. Then $\bigcap_i (X \setminus U_{x_i}) = \emptyset \in \mathcal{U}$, a contradiction. Conversely let $\mathcal{U}$ converge and let $\{F_i\}$ be a family of closed sets with the finite intersection property. Extend the filter they generate to an ultrafilter $\mathcal{V}$; by hypothesis $\mathcal{V} \to x$ for some $x$, and each $F_i \in \mathcal{V}$ is closed, so $x \in \overline{F_i} = F_i$ for every $i$ by the cluster-point criterion. Hence $\bigcap_i F_i \neq \emptyset$ and $X$ is compact by the finite intersection property.
+**Proof.** Suppose $X$ compact and let $\mathcal{U}$ be an ultrafilter with no limit. For each $x \in X$ there is a neighbourhood $\Omega_x \notin \mathcal{U}$, hence $X \setminus \Omega_x \in \mathcal{U}$ by the characterisation above. The sets $\Omega_x$ cover $X$; by compactness finitely many cover, say $\Omega_{x_1}, \ldots, \Omega_{x_n}$. Then $\bigcap_i (X \setminus \Omega_{x_i}) = \emptyset \in \mathcal{U}$, a contradiction. Conversely let $\mathcal{U}$ converge and let $\{F_i\}$ be a family of closed sets with the finite intersection property. Extend the filter they generate to an ultrafilter $\mathcal{V}$; by hypothesis $\mathcal{V} \to x$ for some $x$, and each $F_i \in \mathcal{V}$ is closed, so $x \in \overline{F_i} = F_i$ for every $i$ by the cluster-point criterion. Hence $\bigcap_i F_i \neq \emptyset$ and $X$ is compact by the finite intersection property.
 
 **Theorem (Tychonoff, by ultrafilters).** An arbitrary product of compact spaces is compact.
 
@@ -155,7 +155,7 @@ and defined by $\xi_{(a,A)} = a$. It is directed because $\mathcal{F}$ is closed
 
 **Proposition.** A filter $\mathcal{F}$ converges to $x$ if and only if its associated net converges to $x$, and $x$ is a cluster point of one exactly when it is a cluster point of the other.
 
-**Proof.** If $\mathcal{F} \to x$ and $U$ is a neighbourhood of $x$, then $U \in \mathcal{F}$ and $\xi_{(a,A)} = a \in A \subseteq U$ whenever $A \subseteq U$, which holds for all $(a, A) \geq (a_0, U)$. Conversely if the associated net converges to $x$ and $U$ is a neighbourhood of $x$, there is $(a_0, A_0)$ with $\xi_{(a,A)} \in U$ for $(a,A) \geq (a_0, A_0)$. For every $b \in A_0$ the pair $(b, A_0)$ is above $(a_0, A_0)$, so $b = \xi_{(b,A_0)} \in U$; hence $A_0 \subseteq U$ and $U \in \mathcal{F}$, so $\mathcal{N}_x \subseteq \mathcal{F}$. The cluster statements are proved in the same way from the definition of "frequently" and the fact that the tails of the associated net are the members of $\mathcal{F}$.
+**Proof.** If $\mathcal{F} \to x$ and $\Omega$ is a neighbourhood of $x$, then $\Omega \in \mathcal{F}$ and $\xi_{(a,A)} = a \in A \subseteq \Omega$ whenever $A \subseteq \Omega$, which holds for all $(a, A) \geq (a_0, \Omega)$. Conversely if the associated net converges to $x$ and $\Omega$ is a neighbourhood of $x$, there is $(a_0, A_0)$ with $\xi_{(a,A)} \in \Omega$ for $(a,A) \geq (a_0, A_0)$. For every $b \in A_0$ the pair $(b, A_0)$ is above $(a_0, A_0)$, so $b = \xi_{(b,A_0)} \in \Omega$; hence $A_0 \subseteq \Omega$ and $\Omega \in \mathcal{F}$, so $\mathcal{N}_x \subseteq \mathcal{F}$. The cluster statements are proved in the same way from the definition of "frequently" and the fact that the tails of the associated net are the members of $\mathcal{F}$.
 
 **Theorem (the dictionary).** The two assignments are inverse to one another on the convergence data: for every filter $\mathcal{F}$ the tail filter of its associated net is $\mathcal{F}$, and for every net $(x_\alpha)$ with tail filter $\mathcal{F}$ the net associated to $\mathcal{F}$ is a subnet of $(x_\alpha)$ up to the choice of representatives. Consequently, for a topological space $X$, for a map $f : X \to Y$ and for a subset $A \subseteq X$, every statement expressed with nets has a translation expressed with filters and conversely, with limits and cluster points corresponding to limits and cluster points and passage to a finer filter corresponding to passage to a subnet.
 
@@ -170,11 +170,11 @@ $$
 x \in \overline{A} \iff x_\alpha \to x \text{ for some net } (x_\alpha) \text{ in } A \iff \mathcal{F} \to x \text{ for some filter } \mathcal{F} \text{ with } A \in \mathcal{F} .
 $$
 
-**Proof.** If $x \in \overline{A}$, the family $\{U \cap A : U \in \mathcal{N}_x\}$ has the finite intersection property and generates a filter containing $A$ and converging to $x$. If a net in $A$ converges to $x_1$, every neighbourhood of $x_1$ contains a point of $A$, so $x_1 \in \overline{A}$; the filter statement is the same finite-intersection argument.
+**Proof.** If $x \in \overline{A}$, the family $\{\Omega \cap A : \Omega \in \mathcal{N}_x\}$ has the finite intersection property and generates a filter containing $A$ and converging to $x$. If a net in $A$ converges to $x_1$, every neighbourhood of $x_1$ contains a point of $A$, so $x_1 \in \overline{A}$; the filter statement is the same finite-intersection argument.
 
 **Theorem.** A map $f : X \to Y$ is continuous if and only if $x_\alpha \to x$ implies $f(x_\alpha) \to f(x)$ for every net in $X$, and if and only if $\mathcal{F} \to x$ implies $f(\mathcal{F}) \to f(x)$ for every filter, where $f(\mathcal{F})$ is the filter generated by $\{f(A) : A \in \mathcal{F}\}$.
 
-**Proof.** Continuity gives the preservation of convergence. Conversely suppose every convergent net is preserved and let $x \in X$; if $f$ were not continuous at $x$ there would be a neighbourhood $V$ of $f(x)$ whose preimage is not a neighbourhood of $x$, so that $U \setminus f^{-1}(V) \neq \emptyset$ for every neighbourhood $U$ of $x$. Choosing $x_U$ in that set and indexing by $\mathcal{N}_x$ ordered by reverse inclusion gives a net $x_U \to x$ with $f(x_U) \notin V$, a contradiction; the filter version is the same argument.
+**Proof.** Continuity gives the preservation of convergence. Conversely suppose every convergent net is preserved and let $x \in X$; if $f$ were not continuous at $x$ there would be a neighbourhood $V$ of $f(x)$ whose preimage is not a neighbourhood of $x$, so that $\Omega \setminus f^{-1}(V) \neq \emptyset$ for every neighbourhood $\Omega$ of $x$. Choosing $x_\Omega$ in that set and indexing by $\mathcal{N}_x$ ordered by reverse inclusion gives a net $x_\Omega \to x$ with $f(x_\Omega) \notin V$, a contradiction; the filter version is the same argument.
 
 **Corollary.** Let $X$ be first countable. Then $f$ is continuous if and only if it preserves limits of sequences, and $x \in \overline{A}$ if and only if some sequence in $A$ converges to $x$. In a general space the preservation of sequential limits is necessary for continuity but not sufficient.
 
@@ -182,7 +182,7 @@ $$
 
 **Theorem.** $X$ is Hausdorff if and only if every net has at most one limit, and if and only if every filter has at most one limit. If every ultrafilter on $X$ has at most one limit, then $X$ is Hausdorff.
 
-**Proof.** If $x \neq y$ are not separated, the sets $U \cap V$, with $U$ a neighbourhood of $x$ and $V$ one of $y$, form a filter base generating a filter that converges to both points; a net converges to the same points as its tail filter, which gives the net statement, and an ultrafilter finer than that filter converges to both points, which gives the last statement.
+**Proof.** If $x \neq y$ are not separated, the sets $\Omega \cap V$, with $\Omega$ a neighbourhood of $x$ and $V$ one of $y$, form a filter base generating a filter that converges to both points; a net converges to the same points as its tail filter, which gives the net statement, and an ultrafilter finer than that filter converges to both points, which gives the last statement.
 
 ## Convergence Spaces
 
@@ -192,7 +192,7 @@ The dictionary of the last section suggests a change of viewpoint: take converge
 
 **Definition.** A **convergence structure** on a set $X$ is an assignment to every $x \in X$ of a family $\Lambda(x)$ of filters on $X$, called the filters **converging to** $x$, written $\mathcal{F} \to x$, such that
 
-**(C1)** the principal filter $\dot x$ at $x$ converges to $x$;
+**(C1)** the principal filter generated by $x$ converges to $x$;
 
 **(C2)** if $\mathcal{F} \to x$ and $\mathcal{F} \subseteq \mathcal{G}$, then $\mathcal{G} \to x$;
 
@@ -204,9 +204,9 @@ Axioms (C1)–(C3) say that $\Lambda(x)$ is upward closed and closed under the b
 
 **Definition.** A convergence structure is **pretopological** if for every $x$ the family $\Lambda(x)$ has a least member under inclusion, denoted $\mathcal{N}(x)$ and called the **neighbourhood filter**; then $\mathcal{F} \to x$ if and only if $\mathcal{N}(x) \subseteq \mathcal{F}$. It is **topological** if it is pretopological and the neighbourhood filters arise from a topology, that is
 
-**(T)** for every $U \in \mathcal{N}(x)$ there is $V \in \mathcal{N}(x)$ with $V \subseteq U$ and $U \in \mathcal{N}(y)$ for every $y \in V$.
+**(T)** for every $\Omega \in \mathcal{N}(x)$ there is $V \in \mathcal{N}(x)$ with $V \subseteq \Omega$ and $\Omega \in \mathcal{N}(y)$ for every $y \in V$.
 
-For a topological convergence structure the family of sets $U$ with $U \in \mathcal{N}(x)$ for every $x \in U$ is a topology on $X$, and the filters converging to $x$ are exactly the filters containing the neighbourhood filter of the topology. Conversely every topology determines a convergence structure, and the topology is recovered by (T). The two passages are inverse, so topological spaces are identified with the topological convergence structures.
+For a topological convergence structure the family of sets $\Omega$ with $\Omega \in \mathcal{N}(x)$ for every $x \in \Omega$ is a topology on $X$, and the filters converging to $x$ are exactly the filters containing the neighbourhood filter of the topology. Conversely every topology determines a convergence structure, and the topology is recovered by (T). The two passages are inverse, so topological spaces are identified with the topological convergence structures.
 
 ### Initial and Final Structures
 
@@ -254,7 +254,7 @@ Topological properties are read off both languages: Hausdorff means unique limit
 | $\mathcal{N}_x$, $\mathcal{N}(x)$ | Neighbourhood filter at $x$ |
 | $\mathcal{F} \to x$ | Filter convergence, $\mathcal{N}_x \subseteq \mathcal{F}$ |
 | Finer, coarser | $\mathcal{G} \subseteq \mathcal{F}$; inclusion of filters |
-| $\dot x$ | Principal ultrafilter at $x$ |
+| $\uparrow x$ | Principal filter at $x$ |
 | $\mathcal{U}$ | An ultrafilter |
 | $\beta X$ | Set of ultrafilters on $X$; the ultrafilter monad |
 | $f(\mathcal{F})$ | Image filter generated by $\{f(A) : A \in \mathcal{F}\}$ |

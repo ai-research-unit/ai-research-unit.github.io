@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its two actions of the unit and its associator are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\vec Q}$, and the bar is the coefficientwise complex conjugation.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its two actions of the unit and its associator are *Introduction to the General Quaternionic Sesqualgebra*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_t - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_t} - \overline{\vec P}$, and the bar is the coefficientwise complex conjugation.
 
 The subject of this article is the **ternary product** attached to the multiplication and the failure of the **Jordan triple identity** for it. The binary multiplication has no unit (*The Two One-Sided Actions and the Absence of a Unit*) and is not associative (*The Associator of the General Quaternionic Sesquilinear Product*), and the ternary product is the natural replacement: it is the three-slot operation
 
@@ -76,12 +76,12 @@ the **left model** of *Algebraic J\*-Algebras*, the product of the algebra with 
 **Proposition (the operator of a pair).** For fixed $\tilde P$ and $\tilde Q$, the map $\Theta_{\tilde P,\tilde Q} : \tilde R \mapsto \{\tilde P,\tilde Q,\tilde R\}$ is $\mathbb{C}$-linear, and it is the plain left multiplication
 
 $$
-\Theta_{\tilde P,\tilde Q} = T_{\overline{\tilde Q}\tilde P,\,e_0} , \qquad \Theta_{\tilde P,\tilde Q}(\tilde R) = \bigl(\overline{\tilde Q}\,\tilde P\bigr)\tilde R ,
+\Theta_{\tilde P,\tilde Q} = T_{\overline{\tilde Q}\tilde P,\,e_t} , \qquad \Theta_{\tilde P,\tilde Q}(\tilde R) = \bigl(\overline{\tilde Q}\,\tilde P\bigr)\tilde R ,
 $$
 
 the operator attached to the pair $(\tilde P,\tilde Q)$ in the sense of *The Ternary Product as an Operator*. The pair map $(\tilde P,\tilde Q)\mapsto\Theta_{\tilde P,\tilde Q}$ is $\mathbb{C}$-linear in $\tilde P$ and conjugate-linear in $\tilde Q$.
 
-**Proof.** The variable $\tilde R$ enters through the plain product on the right, so $\Theta_{\tilde P,\tilde Q}(\lambda\tilde R+\mu\tilde R')=\lambda\Theta_{\tilde P,\tilde Q}(\tilde R)+\mu\Theta_{\tilde P,\tilde Q}(\tilde R')$; the factorisation through the plain left multiplication by $\overline{\tilde Q}\tilde P$ is the closed form $\overline{\tilde Q}\tilde P\tilde R$. The parities of the pair map are those of the closed form in the first two arguments.
+**Proof.** The variable $\tilde R$ enters through the plain product on the right, so $\Theta_{\tilde P,\tilde Q}(\lambda\tilde R_1+\mu\tilde R_2)=\lambda\Theta_{\tilde P,\tilde Q}(\tilde R_1)+\mu\Theta_{\tilde P,\tilde Q}(\tilde R_2)$; the factorisation through the plain left multiplication by $\overline{\tilde Q}\tilde P$ is the closed form $\overline{\tilde Q}\tilde P\tilde R$. The parities of the pair map are those of the closed form in the first two arguments.
 
 **Remark.** The operator is a plain left multiplication, a $\mathbb{C}$-linear endomorphism of $\mathbb{B}$, and this agrees with the third reading of *The Ternary Product as an Operator* §*The Three Interpretations*: the third slot of the ternary product gives a plain one-sided operator. What the pair map carries of the ternary structure is its parity, conjugate-linear in the second argument, and this is the same conjugate-linearity that the middle-slot reading of that article names as the sandwich $S_{\tilde P,\tilde R} : \tilde Q\mapsto\tilde P\tilde Q^{*}\tilde R$, which in the closed form is $\overline{\tilde Q}\tilde P\tilde R$ with the conjugation moved. The middle-slot reading is the only conjugate-linear reading of the three, and it is the one the Jordan triple identity tests.
 
@@ -96,18 +96,18 @@ $$
 the plain product being associative, and the scalar part is
 
 $$
-\mathrm{Sc}\{\tilde P,\tilde Q,\tilde R\} = \overline{Q_0}\,\mathrm{Sc}\bigl(\tilde P\tilde R\bigr) - \bigl(\overline{\vec Q},\mathrm{Vec}(\tilde P\tilde R)\bigr) ,
+\mathrm{Sc}\{\tilde P,\tilde Q,\tilde R\} = \overline{Q_t}\,\mathrm{Sc}\bigl(\tilde P\tilde R\bigr) - \bigl(\overline{\vec Q},\mathrm{Vec}(\tilde P\tilde R)\bigr) ,
 $$
 
-with $\mathrm{Sc}(\tilde P\tilde R) = P_0R_0 - (\vec P,\vec R)$ and $\mathrm{Vec}(\tilde P\tilde R) = P_0\vec R + R_0\vec P + \vec P\times\vec R$.
+with $\mathrm{Sc}(\tilde P\tilde R) = P_tR_t - (\vec P,\vec R)$ and $\mathrm{Vec}(\tilde P\tilde R) = P_t\vec R + R_t\vec P + \vec P\times\vec R$.
 
-**Proof.** The closed form is $\overline{\tilde Q}\tilde P\tilde R$; the plain product is associative, so the two groupings written agree, and this is the only regrouping the associativity of the algebra offers. The scalar part is the scalar part of the plain product of $\overline{\tilde Q}$ and $\tilde P\tilde R$, that is $\overline{Q_0}\mathrm{Sc}(\tilde P\tilde R) - (\overline{\vec Q},\mathrm{Vec}(\tilde P\tilde R))$ by the scalar–vector rule of the plain product; the two displayed values are that rule read on $\tilde P\tilde R$.
+**Proof.** The closed form is $\overline{\tilde Q}\tilde P\tilde R$; the plain product is associative, so the two groupings written agree, and this is the only regrouping the associativity of the algebra offers. The scalar part is the scalar part of the plain product of $\overline{\tilde Q}$ and $\tilde P\tilde R$, that is $\overline{Q_t}\mathrm{Sc}(\tilde P\tilde R) - (\overline{\vec Q},\mathrm{Vec}(\tilde P\tilde R))$ by the scalar–vector rule of the plain product; the two displayed values are that rule read on $\tilde P\tilde R$.
 
-**Corollary (the degenerate cases on the identity).** With $\tilde Q = e_0$ the ternary product is the plain product of the outer factors, $\{\tilde P,e_0,\tilde R\} = \tilde P\tilde R$; with $\tilde R = e_0$ it is $\{\tilde P,\tilde Q,e_0\} = \overline{\tilde Q}\tilde P$; and with $\tilde P = e_0$ it is $\{e_0,\tilde Q,\tilde R\} = \overline{\tilde Q}\tilde R$.
+**Corollary (the degenerate cases on the identity).** With $\tilde Q = e_t$ the ternary product is the plain product of the outer factors, $\{\tilde P,e_t,\tilde R\} = \tilde P\tilde R$; with $\tilde R = e_t$ it is $\{\tilde P,\tilde Q,e_t\} = \overline{\tilde Q}\tilde P$; and with $\tilde P = e_t$ it is $\{e_t,\tilde Q,\tilde R\} = \overline{\tilde Q}\tilde R$.
 
-**Proof.** Each is the closed form with the indicated argument the identity and the coefficientwise conjugation of $e_0$ equal to $e_0$.
+**Proof.** Each is the closed form with the indicated argument the identity and the coefficientwise conjugation of $e_t$ equal to $e_t$.
 
-**Remark.** The corollary shows that the ternary product contains the plain multiplication: the middle insertion of the identity returns the plain product of the outer factors, $\{\tilde P,e_0,\tilde R\} = \tilde P\tilde R$, so the ternary product determines the multiplication of the algebra, and a fortiori the sesquilinear product, since $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is read from the plain product and the two conjugations. What the ternary product cannot supply is a unit of the sesquilinear multiplication itself: the degenerate values are $\tilde P\tilde R$, $\overline{\tilde Q}\tilde P$ and $\overline{\tilde Q}\tilde R$, and two of the three carry a conjugation, so no insertion of $e_0$ returns an element that is the identity of the twisted product on a side.
+**Remark.** The corollary shows that the ternary product contains the plain multiplication: the middle insertion of the identity returns the plain product of the outer factors, $\{\tilde P,e_t,\tilde R\} = \tilde P\tilde R$, so the ternary product determines the multiplication of the algebra, and a fortiori the sesquilinear product, since $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ is read from the plain product and the two conjugations. What the ternary product cannot supply is a unit of the sesquilinear multiplication itself: the degenerate values are $\tilde P\tilde R$, $\overline{\tilde Q}\tilde P$ and $\overline{\tilde Q}\tilde R$, and two of the three carry a conjugation, so no insertion of $e_t$ returns an element that is the identity of the twisted product on a side.
 
 ### The Ternary Product and the Associator
 
@@ -133,17 +133,17 @@ so that the first term of the associator is the ternary product evaluated at the
 
 | triple | value | reason |
 |---|---|---|
-| $\{e_1,e_2,e_3\}$ | $e_0$ | $e_2e_1e_3 = (-e_3)e_3 = e_0$ |
-| $\{e_1,e_1,e_1\}$ | $-e_1$ | $e_1e_1e_1 = -e_1$ |
-| $\{e_1,e_2,e_1\}$ | $-e_2$ | $e_2e_1e_1 = -e_2$ |
-| $\{ie_1,ie_2,e_0\}$ | $-e_3$ | $(-ie_2)(ie_1) = e_2e_1 = -e_3$ |
+| $\{\vec e_x,\vec e_y,\vec e_z\}$ | $e_t$ | $\vec e_y\vec e_x\vec e_z = (-\vec e_z)\vec e_z = e_t$ |
+| $\{\vec e_x,\vec e_x,\vec e_x\}$ | $-\vec e_x$ | $\vec e_x\vec e_x\vec e_x = -\vec e_x$ |
+| $\{\vec e_x,\vec e_y,\vec e_x\}$ | $-\vec e_y$ | $\vec e_y\vec e_x\vec e_x = -\vec e_y$ |
+| $\{i\vec e_x,i\vec e_y,e_t\}$ | $-\vec e_z$ | $(-i\vec e_y)(i\vec e_x) = \vec e_y\vec e_x = -\vec e_z$ |
 
-The fourth row shows the coefficientwise conjugation acting on the middle factor: the conjugation of $ie_2$ is $-ie_2$, and it is this and not the multiplication that produces the value.
+The fourth row shows the coefficientwise conjugation acting on the middle factor: the conjugation of $i\vec e_y$ is $-i\vec e_y$, and it is this and not the multiplication that produces the value.
 
 **Example (the conjugate-linearity in the middle slot).** With the same outer arguments and one inner argument scaled by $i$,
 
 $$
-\{e_0,e_1,ie_2\} = i\{e_0,e_1,e_2\} = ie_3 , \qquad \{e_0,ie_1,e_2\} = \bar i\,\{e_0,e_1,e_2\} = -ie_3 ,
+\{e_t,\vec e_x,i\vec e_y\} = i\{e_t,\vec e_x,\vec e_y\} = i\vec e_z , \qquad \{e_t,i\vec e_x,\vec e_y\} = \bar i\,\{e_t,\vec e_x,\vec e_y\} = -i\vec e_z ,
 $$
 
 so the scaling of the middle argument by $i$ multiplies the value by the conjugate scalar $\bar i = -i$, while the scaling of the third argument by $i$ multiplies it by $i$: the middle slot is conjugate-linear, the outer slots are linear, and the two rules are visible on this pair of triples.
@@ -166,15 +166,15 @@ for all $x,y,u,v,w$ (*Jordan Triples with an Involution*). The identity is the l
 
 ### The Failure
 
-**Theorem (the identity fails).** The ternary product of the multiplication does **not** satisfy the Jordan triple identity. At the basis elements $(x,y,u,v,w) = (e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$, so the two differ and the identity fails.
+**Theorem (the identity fails).** The ternary product of the multiplication does **not** satisfy the Jordan triple identity. At the basis elements $(x,y,u,v,w) = (e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$, so the two differ and the identity fails.
 
 **Proof.** The closed form of the ternary product is $\overline{\tilde Q}\tilde P\tilde R$. The basis coefficients are real, so the coefficientwise conjugation fixes each basis element, $\overline{e_\mu} = e_\mu$.
 
-For the left-hand side, the inner bracket is $\{e_0,e_2,e_0\} = \overline{e_2}e_0e_0 = e_2$, and the outer one is $\{e_0,e_1,e_2\} = \overline{e_1}e_0e_2 = e_1e_2 = e_3$.
+For the left-hand side, the inner bracket is $\{e_t,\vec e_y,e_t\} = \overline{\vec e_y}e_te_t = \vec e_y$, and the outer one is $\{e_t,\vec e_x,\vec e_y\} = \overline{\vec e_x}e_t\vec e_y = \vec e_x\vec e_y = \vec e_z$.
 
-For the right-hand side the three terms are as follows. The first is $\{\{e_0,e_1,e_0\},e_2,e_0\}$; the inner bracket is $\{e_0,e_1,e_0\} = \overline{e_1}e_0e_0 = e_1$, and the outer one is $\{e_1,e_2,e_0\} = \overline{e_2}e_1e_0 = e_2e_1 = -e_3$. The second term is $-\{e_0,\{e_1,e_0,e_2\},e_0\}$; the inner bracket is $\{e_1,e_0,e_2\} = \overline{e_0}e_1e_2 = e_1e_2 = e_3$, and the outer one is $\{e_0,e_3,e_0\} = \overline{e_3}e_0e_0 = e_3$, so the term is $-e_3$. The third term is $\{e_0,e_2,\{e_0,e_1,e_0\}\} = \{e_0,e_2,e_1\} = \overline{e_2}e_0e_1 = e_2e_1 = -e_3$. The sum of the three terms is $-e_3 - e_3 - e_3 = -3e_3$, which differs from the left-hand side $e_3$.
+For the right-hand side the three terms are as follows. The first is $\{\{e_t,\vec e_x,e_t\},\vec e_y,e_t\}$; the inner bracket is $\{e_t,\vec e_x,e_t\} = \overline{\vec e_x}e_te_t = \vec e_x$, and the outer one is $\{\vec e_x,\vec e_y,e_t\} = \overline{\vec e_y}\vec e_xe_t = \vec e_y\vec e_x = -\vec e_z$. The second term is $-\{e_t,\{\vec e_x,e_t,\vec e_y\},e_t\}$; the inner bracket is $\{\vec e_x,e_t,\vec e_y\} = \overline{e_t}\vec e_x\vec e_y = \vec e_x\vec e_y = \vec e_z$, and the outer one is $\{e_t,\vec e_z,e_t\} = \overline{\vec e_z}e_te_t = \vec e_z$, so the term is $-\vec e_z$. The third term is $\{e_t,\vec e_y,\{e_t,\vec e_x,e_t\}\} = \{e_t,\vec e_y,\vec e_x\} = \overline{\vec e_y}e_t\vec e_x = \vec e_y\vec e_x = -\vec e_z$. The sum of the three terms is $-\vec e_z - \vec e_z - \vec e_z = -3\vec e_z$, which differs from the left-hand side $\vec e_z$.
 
-**Remark.** The witness uses only basis elements, and it is the one the group article records. Of the $1024$ five-tuples drawn from the four real quaternion units $e_0,e_1,e_2,e_3$, $480$ make the identity fail and $544$ make it hold; on the full eight-element real basis the same proportion gives $15360$ of the $32768$. The failure is therefore not a small-set phenomenon: the identity is false on an open set of genuine five-tuples and the failure cannot be removed by restricting to the basis. This is the sharp form of the statement that the ternary product has the *parity* of a Jordan triple but not its *identity*.
+**Remark.** The witness uses only basis elements, and it is the one the group article records. Of the $1024$ five-tuples drawn from the four real quaternion units $e_t,\vec e_x,\vec e_y,\vec e_z$, $480$ make the identity fail and $544$ make it hold; on the full eight-element real basis the same proportion gives $15360$ of the $32768$. The failure is therefore not a small-set phenomenon: the identity is false on an open set of genuine five-tuples and the failure cannot be removed by restricting to the basis. This is the sharp form of the statement that the ternary product has the *parity* of a Jordan triple but not its *identity*.
 
 ### The Operator Form of the Failure
 
@@ -184,11 +184,11 @@ $$
 [\Theta_{\tilde X,\tilde Y},\Theta_{\tilde T,\tilde S}] = \Theta_{\{\tilde X,\tilde Y,\tilde T\},\tilde S} - \Theta_{\tilde T,\{\tilde Y,\tilde X,\tilde S\}} ,
 $$
 
-the bracket being the commutator in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and for the multiplication of this group the operator identity fails: at $\tilde X=\tilde T=\tilde W=e_0$, $\tilde Y=e_1$ and $\tilde S=e_2$, the left-hand side applied to $\tilde W$ is $2e_3$ while the right-hand side applied to $\tilde W$ is $-2e_3$.
+the bracket being the commutator in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and for the multiplication of this group the operator identity fails: at $\tilde X=\tilde T=\tilde W=e_t$, $\tilde Y=\vec e_x$ and $\tilde S=\vec e_y$, the left-hand side applied to $\tilde W$ is $2\vec e_z$ while the right-hand side applied to $\tilde W$ is $-2\vec e_z$.
 
-**Proof.** Expanding the two compositions at an argument $\tilde W$ gives $\Theta_{\tilde X,\tilde Y}\Theta_{\tilde T,\tilde S}(\tilde W) = \{\tilde X,\tilde Y,\{\tilde T,\tilde S,\tilde W\}\}$ and $\Theta_{\tilde T,\tilde S}\Theta_{\tilde X,\tilde Y}(\tilde W) = \{\tilde T,\tilde S,\{\tilde X,\tilde Y,\tilde W\}\}$, so the commutator is the difference of the two sides of the Jordan triple identity after the standard rearrangement, which is the equivalence of *The Ternary Product as an Operator* §*The Bracket and the Lie Triple System*. At the displayed arguments, $\Theta_{\tilde T,\tilde S}(\tilde W) = \{e_0,e_2,e_0\} = e_2$ and $\Theta_{\tilde X,\tilde Y}(\tilde W) = \{e_0,e_1,e_0\} = e_1$, so the left-hand side applied to $\tilde W$ is $\{e_0,e_1,e_2\} - \{e_0,e_2,e_1\} = e_3 - (-e_3) = 2e_3$; and $\{\tilde X,\tilde Y,\tilde T\} = \{e_0,e_1,e_0\} = e_1$ with $\{\tilde Y,\tilde X,\tilde S\} = \{e_1,e_0,e_2\} = e_3$ give the right-hand side applied to $\tilde W$ as $\{e_1,e_2,e_0\} - \{e_0,e_3,e_0\} = -e_3 - e_3 = -2e_3$.
+**Proof.** Expanding the two compositions at an argument $\tilde W$ gives $\Theta_{\tilde X,\tilde Y}\Theta_{\tilde T,\tilde S}(\tilde W) = \{\tilde X,\tilde Y,\{\tilde T,\tilde S,\tilde W\}\}$ and $\Theta_{\tilde T,\tilde S}\Theta_{\tilde X,\tilde Y}(\tilde W) = \{\tilde T,\tilde S,\{\tilde X,\tilde Y,\tilde W\}\}$, so the commutator is the difference of the two sides of the Jordan triple identity after the standard rearrangement, which is the equivalence of *The Ternary Product as an Operator* §*The Bracket and the Lie Triple System*. At the displayed arguments, $\Theta_{\tilde T,\tilde S}(\tilde W) = \{e_t,\vec e_y,e_t\} = \vec e_y$ and $\Theta_{\tilde X,\tilde Y}(\tilde W) = \{e_t,\vec e_x,e_t\} = \vec e_x$, so the left-hand side applied to $\tilde W$ is $\{e_t,\vec e_x,\vec e_y\} - \{e_t,\vec e_y,\vec e_x\} = \vec e_z - (-\vec e_z) = 2\vec e_z$; and $\{\tilde X,\tilde Y,\tilde T\} = \{e_t,\vec e_x,e_t\} = \vec e_x$ with $\{\tilde Y,\tilde X,\tilde S\} = \{\vec e_x,e_t,\vec e_y\} = \vec e_z$ give the right-hand side applied to $\tilde W$ as $\{\vec e_x,\vec e_y,e_t\} - \{e_t,\vec e_z,e_t\} = -\vec e_z - \vec e_z = -2\vec e_z$.
 
-**Remark.** The operator form is the reason the failure matters: in a Jordan triple the operators $\Theta_{\tilde X,\tilde Y}$ generate a Lie algebra, the first step of the Tits–Kantor–Koecher construction, and the failure of the identity means that this construction is not available for the ternary product of this group. The computation above exhibits the obstruction in the operators themselves: $\Theta_{\tilde P,\tilde Q}$ is the plain left multiplication by $\overline{\tilde Q}\tilde P$, so each $\Theta$ is a left multiplication and the bracket of two of them is the left multiplication by $[\overline{\tilde Y}\tilde X,\overline{\tilde S}\tilde T]$; at the witness this is the left multiplication by $[e_1,e_2]=2e_3$, while the right-hand side is the difference $\Theta_{e_1,e_2}-\Theta_{e_0,e_3}$, the left multiplications by $-e_3$ and by $e_3$, hence the left multiplication by $-2e_3$. The two sides are left multiplications by opposite elements, so the identity fails by the failure of the Jordan triple identity and not by any ambiguity of the operators. The general theory is *Jordan Triples with an Involution* and *Algebraic J\*-Algebras*; the operator statement is *The Ternary Product as an Operator*, and the present article supplies the counterexample that shows the theory's hypothesis is not met.
+**Remark.** The operator form is the reason the failure matters: in a Jordan triple the operators $\Theta_{\tilde X,\tilde Y}$ generate a Lie algebra, the first step of the Tits–Kantor–Koecher construction, and the failure of the identity means that this construction is not available for the ternary product of this group. The computation above exhibits the obstruction in the operators themselves: $\Theta_{\tilde P,\tilde Q}$ is the plain left multiplication by $\overline{\tilde Q}\tilde P$, so each $\Theta$ is a left multiplication and the bracket of two of them is the left multiplication by $[\overline{\tilde Y}\tilde X,\overline{\tilde S}\tilde T]$; at the witness this is the left multiplication by $[\vec e_x,\vec e_y]=2\vec e_z$, while the right-hand side is the difference $\Theta_{\vec e_x,\vec e_y}-\Theta_{e_t,\vec e_z}$, the left multiplications by $-\vec e_z$ and by $\vec e_z$, hence the left multiplication by $-2\vec e_z$. The two sides are left multiplications by opposite elements, so the identity fails by the failure of the Jordan triple identity and not by any ambiguity of the operators. The general theory is *Jordan Triples with an Involution* and *Algebraic J\*-Algebras*; the operator statement is *The Ternary Product as an Operator*, and the present article supplies the counterexample that shows the theory's hypothesis is not met.
 
 ### The Ternary Product on the Remarkable Subspaces
 
@@ -208,7 +208,7 @@ which is an associative triple product; the Jordan triple identity nevertheless 
 
 **Proposition.** The identity holds when all five arguments are central.
 
-**Proof.** For central arguments, $\tilde X = Xe_0$ with $X \in \mathbb{C}$, the ternary product is $\{Xe_0,Ye_0,Ze_0\} = \bar YXZe_0$ by the closed form, and both sides of the Jordan triple identity are complex scalars computed from a commutative product of scalars and their conjugates; the identity reduces to the commutativity and associativity of $\mathbb{C}$, and holds.
+**Proof.** For central arguments, $\tilde X = Xe_t$ with $X \in \mathbb{C}$, the ternary product is $\{Xe_t,Ye_t,Ze_t\} = \bar YXZe_t$ by the closed form, and both sides of the Jordan triple identity are complex scalars computed from a commutative product of scalars and their conjugates; the identity reduces to the commutativity and associativity of $\mathbb{C}$, and holds.
 
 **Remark.** The identity therefore holds on the centre and fails on the whole algebra. The passage from the centre to the algebra is the passage from the commutative base to the non-commutative product, and it is the same passage on which the multiplication first fails associativity.
 
@@ -216,7 +216,7 @@ which is an associative triple product; the Jordan triple identity nevertheless 
 
 **Proposition.** The identity fails on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where all the coefficients are real and the two sesquilinear products coincide with the two bilinear ones.
 
-**Proof.** The witness $(e_0,e_1,e_0,e_2,e_0)$ already has all its coefficients real, so it is a witness inside $\mathbb{H}_{\mathbb{B}}$; the failure is therefore not a phenomenon of the complex coefficients and survives the restriction to the real quaternion subspace. The identity fails there by the same computation.
+**Proof.** The witness $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ already has all its coefficients real, so it is a witness inside $\mathbb{H}_{\mathbb{B}}$; the failure is therefore not a phenomenon of the complex coefficients and survives the restriction to the real quaternion subspace. The identity fails there by the same computation.
 
 **Remark.** The failure is therefore not a phenomenon of the complex coefficients, and it survives the restriction to every real subspace on which the two conjugations differ: the witness has real coordinates, so it lives in the quaternion subspace and in each of the remarkable subspaces that contains it, and the identity fails there as it fails on the whole algebra. The sibling sesquilinear product, by contrast, is the middle model on the whole algebra and on every subspace, and its identity is not lost by restriction. The failure is recorded by the group article as the reason the general theorems of *Algebraic J\*-Algebras* do not apply to the fourth product's ternary reading.
 
@@ -252,7 +252,7 @@ where the right-hand side is the sibling's ternary product evaluated at the thre
 
 ## Summary
 
-The ternary product attached to the general quaternionic sesquilinear multiplication is $\{\tilde P,\tilde Q,\tilde R\} = (\tilde P \star \tilde Q) \star \tilde R^{*} = \overline{\tilde Q}\tilde P\tilde R$, additive in each variable, $\mathbb{C}$-linear in the first and the third and conjugate-linear in the second. The closed form is the plain product of the coefficientwise-conjugated middle factor with the outer two, so it is also $(\overline{\tilde Q}\tilde P)\tilde R$ by the associativity of the plain product, the middle slot carries the conjugation and the outer slots are linear. Under the relabelling $\tilde Q \mapsto \tilde Q^{\natural}$ it is the left model $\tilde X^{*}\tilde Y\tilde Z$ of the theory of algebraic $J^{*}$-algebras, the sibling general plain sesquilinear product giving the middle model $\tilde X\tilde Y^{*}\tilde Z$ instead; the first term of the associator of the multiplication is the ternary product at the third argument $\tilde R^{*}$. The Jordan triple identity $\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\}$ fails for the ternary product of this group: at the basis elements $(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$, so the two differ by $4e_3$, and $480$ of the $1024$ five-tuples of the four real quaternion units are witnesses. The identity holds when all five arguments are central and fails on the quaternion subspace as well as on the whole algebra, so the failure is not an artefact of the complex coefficients. In operator form the identity is the commutator identity $[\Theta_{\tilde X,\tilde Y},\Theta_{\tilde T,\tilde S}] = \Theta_{\{\tilde X,\tilde Y,\tilde T\},\tilde S} - \Theta_{\tilde T,\{\tilde Y,\tilde X,\tilde S\}}$ for the linear operators $\Theta_{\tilde P,\tilde Q}(\tilde R) = \{\tilde P,\tilde Q,\tilde R\}$, which are the plain left multiplications by $\overline{\tilde Q}\tilde P$; at the witness the two sides are the left multiplications by $2e_3$ and by $-2e_3$. The ternary product therefore carries the parity of a Jordan triple and not its identity, and the general theorems of *Algebraic J\*-Algebras* do not apply to it.
+The ternary product attached to the general quaternionic sesquilinear multiplication is $\{\tilde P,\tilde Q,\tilde R\} = (\tilde P \star \tilde Q) \star \tilde R^{*} = \overline{\tilde Q}\tilde P\tilde R$, additive in each variable, $\mathbb{C}$-linear in the first and the third and conjugate-linear in the second. The closed form is the plain product of the coefficientwise-conjugated middle factor with the outer two, so it is also $(\overline{\tilde Q}\tilde P)\tilde R$ by the associativity of the plain product, the middle slot carries the conjugation and the outer slots are linear. Under the relabelling $\tilde Q \mapsto \tilde Q^{\natural}$ it is the left model $\tilde X^{*}\tilde Y\tilde Z$ of the theory of algebraic $J^{*}$-algebras, the sibling general plain sesquilinear product giving the middle model $\tilde X\tilde Y^{*}\tilde Z$ instead; the first term of the associator of the multiplication is the ternary product at the third argument $\tilde R^{*}$. The Jordan triple identity $\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\}$ fails for the ternary product of this group: at the basis elements $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$, so the two differ by $4\vec e_z$, and $480$ of the $1024$ five-tuples of the four real quaternion units are witnesses. The identity holds when all five arguments are central and fails on the quaternion subspace as well as on the whole algebra, so the failure is not an artefact of the complex coefficients. In operator form the identity is the commutator identity $[\Theta_{\tilde X,\tilde Y},\Theta_{\tilde T,\tilde S}] = \Theta_{\{\tilde X,\tilde Y,\tilde T\},\tilde S} - \Theta_{\tilde T,\{\tilde Y,\tilde X,\tilde S\}}$ for the linear operators $\Theta_{\tilde P,\tilde Q}(\tilde R) = \{\tilde P,\tilde Q,\tilde R\}$, which are the plain left multiplications by $\overline{\tilde Q}\tilde P$; at the witness the two sides are the left multiplications by $2\vec e_z$ and by $-2\vec e_z$. The ternary product therefore carries the parity of a Jordan triple and not its identity, and the general theorems of *Algebraic J\*-Algebras* do not apply to it.
 
 ## Summary of Notation
 
@@ -260,7 +260,7 @@ The ternary product attached to the general quaternionic sesquilinear multiplica
 |---|---|
 | $\{\tilde P,\tilde Q,\tilde R\}$ | the ternary product $(\tilde P\star\tilde Q)\star\tilde R^{*}$ |
 | $\{\tilde P,\tilde Q,\tilde R\} = \overline{\tilde Q}\tilde P\tilde R$ | the closed form of the ternary product |
-| $\{\tilde P,e_0,\tilde R\} = \tilde P\tilde R$ | the middle identity returns the plain product of the outer factors |
+| $\{\tilde P,e_t,\tilde R\} = \tilde P\tilde R$ | the middle identity returns the plain product of the outer factors |
 | linear in the first and third, conjugate-linear in the second | the parities of the ternary product |
 | $[\tilde P,\tilde Q,\tilde R] = \{\tilde P,\tilde Q,\tilde R^{*}\} - \tilde P^{\natural}\tilde R\overline{\tilde Q}$ | the associator in ternary terms |
 | $\tilde X^{*}\tilde Y\tilde Z$ | the left model, the ternary product after the relabelling |
@@ -268,7 +268,7 @@ The ternary product attached to the general quaternionic sesquilinear multiplica
 | $\Theta_{\tilde P,\tilde Q}(\tilde R) = \{\tilde P,\tilde Q,\tilde R\}$ | the linear operator of a pair, the plain left multiplication by $\overline{\tilde Q}\tilde P$ |
 | $[\Theta_{\tilde X,\tilde Y},\Theta_{\tilde T,\tilde S}] = \Theta_{\{\tilde X,\tilde Y,\tilde T\},\tilde S} - \Theta_{\tilde T,\{\tilde Y,\tilde X,\tilde S\}}$ | the operator form of the Jordan triple identity |
 | Jordan triple identity | $\{x,y,\{u,v,w\}\} = \{\{x,y,u\},v,w\} - \{u,\{y,x,v\},w\} + \{u,v,\{x,y,w\}\}$ |
-| $(e_0,e_1,e_0,e_2,e_0)$ | the basis witness of the failure, $e_3$ against $-3e_3$ |
+| $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ | the basis witness of the failure, $\vec e_z$ against $-3\vec e_z$ |
 | $480$ of $1024$ | the five-tuples of the four real quaternion units that witness the failure |
 
 ## Further Reading

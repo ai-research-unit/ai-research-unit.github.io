@@ -9,7 +9,7 @@ The split-quaternion algebra, its central product $\langle\tilde q\rangle_{\natu
 
 ## Definition and Criterion
 
-**Definition.** A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $\tilde p \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q \tilde p = 0$ or a nonzero $\tilde r \in \mathbb{H}_{\mathrm{s}}$ with $\tilde r\tilde q = 0$. The **zero divisor set** is
+**Definition.** A nonzero element $\tilde q \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $\tilde q_1 \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q \tilde q_1 = 0$ or a nonzero $\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$ with $\tilde q_2\tilde q = 0$. The **zero divisor set** is
 
 $$
 Z = \{\tilde q \in \mathbb{H}_{\mathrm{s}} : \tilde q \neq 0 \text{ and } \tilde q \text{ is a zero divisor}\}.
@@ -35,18 +35,18 @@ That the zero divisor set is connected is a topological statement and belongs to
 
 ## The Annihilator of a Zero Divisor
 
-The zero divisors are exactly the elements with a nonzero annihilator: $\tilde q \neq 0$ is a zero divisor if and only if $\{\tilde a : \tilde a\tilde q = 0\}$ or $\{\tilde a : \tilde q\tilde a = 0\}$ is nonzero.
+The zero divisors are exactly the elements with a nonzero annihilator: $\tilde q \neq 0$ is a zero divisor if and only if $\{\tilde q_1 : \tilde q_1\tilde q = 0\}$ or $\{\tilde q_2 : \tilde q\tilde q_2 = 0\}$ is nonzero.
 
-**Theorem (The Left Annihilator Is a Minimal Left Ideal).** Let $\tilde q \neq 0$ be a zero divisor. Then the left annihilator $P_{\tilde q} = \{\tilde a : \tilde a\tilde q = 0\}$ is a two-dimensional minimal left ideal, and the right annihilator is a two-dimensional minimal right ideal. Consequently the zero divisor set is the union of the nonzero elements of the minimal one-sided ideals, with the origin removed.
+**Theorem (The Left Annihilator Is a Minimal Left Ideal).** Let $\tilde q \neq 0$ be a zero divisor. Then the left annihilator $P_{\tilde q} = \{\tilde q_1 : \tilde q_1\tilde q = 0\}$ is a two-dimensional minimal left ideal, and the right annihilator is a two-dimensional minimal right ideal. Consequently the zero divisor set is the union of the nonzero elements of the minimal one-sided ideals, with the origin removed.
 
-**Proof.** The left annihilator is a left ideal, since $\tilde a\tilde q = 0$ implies $\tilde b\tilde a\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and $\langle\tilde q\rangle_{\natural} = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde a = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde a\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
+**Proof.** The left annihilator is a left ideal, since $\tilde q_1\tilde q = 0$ implies $\tilde q_2\tilde q_1\tilde q = 0$. It is nonzero: the central product is symmetric, $\tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural}\tilde q = \langle\tilde q\rangle_{\natural}$, and $\langle\tilde q\rangle_{\natural} = 0$ by the criterion, so the conjugate $\tilde{q}^{\natural}$ is nonzero and lies in it. It is proper, because $1 \cdot \tilde q = \tilde q \neq 0$ excludes $\tilde q_1 = 1$. In $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ every nonzero proper left ideal is a minimal left ideal and every minimal left ideal is two-dimensional, by *Split-Quaternion Ideals and Peirce Decomposition*; hence $P_{\tilde q}$ is two-dimensional and minimal. The right annihilator is the image of a left annihilator under the conjugation, which reverses the order of multiplication, so it is a two-dimensional minimal right ideal. Every nonzero element of a left annihilator $P_{\tilde q}$ satisfies $\tilde q_1\tilde q = 0$ with $\tilde q \neq 0$, hence is a zero divisor; conversely every zero divisor lies in its own annihilator. Since the annihilator depends only on the line $\mathbb{R}\tilde q$, the zero divisor set is the union of the nonzero elements of the minimal left and right ideals.
 
 ## The Two Families
 
 **Definition.** For a zero-divisor line $L = \mathbb{R}\tilde q$, the **left annihilator** and the **right annihilator** are
 
 $$
-\mathcal{K}_L = \{\tilde a : \tilde a\tilde q = 0\}, \qquad \mathcal{R}_L = \{\tilde a : \tilde q\tilde a = 0\},
+\mathcal{K}_L = \{\tilde q_1 : \tilde q_1\tilde q = 0\}, \qquad \mathcal{R}_L = \{\tilde q_1 : \tilde q\tilde q_1 = 0\},
 $$
 
 and each depends only on the line $L$ and not on the chosen representative $\tilde q$.
@@ -59,7 +59,7 @@ $$
 
 each parametrised by the projective line, are the **two families**; the two families are disjoint.
 
-**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $N$, so it has the same properties. The condition $\tilde a(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde a\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
+**Proof.** The left annihilator is the minimal left ideal $P_{\tilde q}$ of the preceding theorem, hence two-dimensional. The right annihilator is the image of the left annihilator of $\tilde{q}^{\natural}$ under the conjugation, which reverses the order of multiplication and preserves $N$, so it has the same properties. The condition $\tilde q_1(\lambda\tilde q) = 0$ for $\lambda \neq 0$ is the condition $\tilde q_1\tilde q = 0$, so the annihilator depends only on the zero-divisor line. The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ has two families of minimal one-sided ideals, the left and the right, each parametrised by the projective line, by *Split-Quaternion Ideals and Peirce Decomposition*. The two annihilator constructions realise the two families.
 
 **Corollary (Each Zero-Divisor Line Lies in One Ideal of Each Family).** Through each zero-divisor line pass exactly two minimal one-sided ideals, one from each family; the zero divisor set is the union of their nonzero elements. Two ideals of opposite families meet in a line, and two distinct ideals of the same family meet only at the origin.
 
@@ -72,12 +72,12 @@ each parametrised by the projective line, are the **two families**; the two fami
 **Corollary (The Anti-Automorphism $\tau$ Swaps the Families).** The assignment on the generators
 
 $$
-\tau(e_1) = -e_1, \qquad \tau(e_2) = e_2, \qquad \tau(e_3) = e_3
+\tau(\vec e_x) = -\vec e_x, \qquad \tau(\vec e_y) = \vec e_y, \qquad \tau(\vec e_z) = \vec e_z
 $$
 
 extends to an involutive algebra anti-automorphism that preserves $N$ and interchanges the two families: $\tau(\mathcal{K}_L) \in \mathcal{R}$ and $\tau(\mathcal{R}_L) \in \mathcal{K}$ for every zero-divisor line $L$.
 
-**Proof.** As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $\langle\tau(\tilde q)\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 = \langle\tilde q\rangle_{\natural}$ for $\tilde q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$, so $\tau$ preserves $N$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.
+**Proof.** As for the conjugation the relations are checked on the generators, giving an anti-automorphism with $\tau^2 = \mathrm{id}$; and $\langle\tau(\tilde q)\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 = \langle\tilde q\rangle_{\natural}$ for $\tilde q = q_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, so $\tau$ preserves $N$. An anti-automorphism carries a left ideal to a right ideal and preserves minimality, so it carries a member of $\mathcal{K}$ to a member of $\mathcal{R}$; being an involution, it interchanges the families.
 
 ## Nonzero Nilpotents
 
@@ -89,23 +89,23 @@ $$
 \tilde q \in V \quad \text{and} \quad \langle\tilde q\rangle_{\natural} = 0,
 $$
 
-that is, if and only if $\tilde q$ is a nonzero vector of the vector subspace lying on the level set $N = 0$, $q_1^2 = q_2^2 + q_3^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular
+that is, if and only if $\tilde q$ is a nonzero vector of the vector subspace lying on the level set $N = 0$, $q_x^2 = q_y^2 + q_z^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular
 
 $$
-(e_1 + e_3)^2 = e_1^2 + e_1 e_3 + e_3 e_1 + e_3^2 = -1 + 0 + 1 = 0 .
+(\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -1 + 0 + 1 = 0 .
 $$
 
 Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.
 
-**Proof.** Write $\tilde q = q_0 + \vec v$ with $q_0 \in S$ and $\vec v \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is
+**Proof.** Write $\tilde q = q_t + \vec v$ with $q_t \in S$ and $\vec v \in V$. Since $\vec e_x, \vec e_y, \vec e_z$ are traceless and the product of two distinct generators is the third with a sign, the square is
 
 $$
-\tilde q^2 = q_0^2 + 2q_0\vec v + \vec v^2 = q_0^2 + 2q_0\vec v - \langle \vec v\rangle_{\natural},
+\tilde q^2 = q_t^2 + 2q_t\vec v + \vec v^2 = q_t^2 + 2q_t\vec v - \langle \vec v\rangle_{\natural},
 $$
 
-where $\vec v^2 = -\langle \vec v\rangle_{\natural}$ is the identity for pure vectors recorded in (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_0\vec v = 0$, so $q_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $q_0^2 = 0$, so $q_0 = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_0 = 0$ and $\tilde q = \vec v \in V$. Then $\tilde q^2 = -\langle\tilde q\rangle_{\natural}$, so $\tilde q^2 = 0$ exactly when $\langle\tilde q\rangle_{\natural} = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $\langle\tilde q\rangle_{\natural}^2 = \langle\tilde q^2\rangle_{\natural} = 0$, hence $\langle\tilde q\rangle_{\natural} = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $\langle 1+e_2\rangle_{\natural} = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper.
+where $\vec v^2 = -\langle \vec v\rangle_{\natural}$ is the identity for pure vectors recorded in (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_t\vec v = 0$, so $q_t = 0$ or $\vec v = 0$. If $\vec v = 0$ then $q_t^2 = 0$, so $q_t = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_t = 0$ and $\tilde q = \vec v \in V$. Then $\tilde q^2 = -\langle\tilde q\rangle_{\natural}$, so $\tilde q^2 = 0$ exactly when $\langle\tilde q\rangle_{\natural} = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $\vec e_x + \vec e_z$ uses $\vec e_x \vec e_z = -\vec e_z \vec e_x$ and $\vec e_x^2 = -1$, $\vec e_z^2 = +1$. Every nilpotent satisfies $\langle\tilde q\rangle_{\natural}^2 = \langle\tilde q^2\rangle_{\natural} = 0$, hence $\langle\tilde q\rangle_{\natural} = 0$, so it is a zero divisor; the element $1 + \vec e_y$ is a zero divisor with $\langle 1+\vec e_y\rangle_{\natural} = 0$ but $(1+\vec e_y)^2 = 2(1+\vec e_y) \neq 0$, so the inclusion is proper.
 
-The nilpotent set is the level set $N = 0$ in $V$; by *Split-Quaternion Norm and Invertibility*, §*Isotropy*, its lines are the curve $\mathbb{R}(e_1 + \cos\theta\, e_2 + \sin\theta\, e_3)$.
+The nilpotent set is the level set $N = 0$ in $V$; by *Split-Quaternion Norm and Invertibility*, §*Isotropy*, its lines are the curve $\mathbb{R}(\vec e_x + \cos\theta\, \vec e_y + \sin\theta\, \vec e_z)$.
 
 ### The Contrast with the Division Algebras
 
@@ -124,9 +124,9 @@ The zero divisors are distributed over the distinguished subspaces as follows. T
 | Subspace | Zero divisors | Description |
 |---|---|---|
 | $S = \mathbb{R}\cdot 1$ | none | every nonzero scalar is a unit |
-| $V$ | the nonzero vectors with $q_1^2 = q_2^2 + q_3^2$ | the level set $N = 0$, a two-dimensional cone, every nonzero point of which is nilpotent |
-| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | the nonzero multiples of $1 \pm e_2$ | two zero-divisor lines |
-| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the nonzero multiples of $1 \pm e_3$ | two zero-divisor lines |
+| $V$ | the nonzero vectors with $q_x^2 = q_y^2 + q_z^2$ | the level set $N = 0$, a two-dimensional cone, every nonzero point of which is nilpotent |
+| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | the nonzero multiples of $1 \pm \vec e_y$ | two zero-divisor lines |
+| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | the nonzero multiples of $1 \pm \vec e_z$ | two zero-divisor lines |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | the whole subspace minus the origin | four minimal one-sided ideals |
 | $\tilde\pi_{1,2}$ themselves | $\tilde\pi_1$ and $\tilde\pi_2$ | the two non-central idempotents |
 
@@ -134,7 +134,7 @@ The table is completed by the following observations.
 
 **The vector subspace.** On $V$ the zero divisors are exactly the lightlike vectors, and by *Nonzero Nilpotents* they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the traceless part and does not hold in the whole algebra.
 
-**The idempotents.** The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ are zero divisors with $\tilde\pi_1 \tilde\pi_2 = 0$; they are not nilpotent, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2} \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
+**The idempotents.** The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are zero divisors with $\tilde\pi_1 \tilde\pi_2 = 0$; they are not nilpotent, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2} \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
 
 **The splitting.** The zero divisor set is the union of the planes of the two families of *The Two Families*. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a further two-dimensional set of points of the zero divisor set lying outside that subcone.
 
@@ -146,7 +146,7 @@ A nonzero split-quaternion is a zero divisor exactly when $\langle\tilde q\rangl
 
 The zero divisor set splits into the two families of minimal one-sided ideals, each parametrised by the projective line; each ideal is two-dimensional and minimal, and the two families are the two rulings of the projective zero set. Every zero-divisor line lies in exactly one member of each family, the two families are exchanged by the anti-automorphism $\tau$, and the four minimal ideals of the algebra are members of the families.
 
-The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on the level set $N = 0$, and $(e_1 + e_3)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.
+The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on the level set $N = 0$, and $(\vec e_x + \vec e_z)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.
 
 ## Summary of Notation
 
@@ -154,12 +154,12 @@ The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when 
 |---|---|---|
 | $Z$ | the zero divisor set $\{\tilde q \neq 0 : \langle\tilde q\rangle_{\natural} = 0\}$ | this article |
 | $\mathcal{N}$ | the null cone $\{\tilde q : \langle\tilde q\rangle_{\natural} = 0\}$ | this article |
-| $\mathbb{R}\tilde q$, $[\tilde q]$ | a zero-divisor line of the projective zero set $Q$ | this article |
+| $\mathbb{R}\tilde q$, $[\tilde q]$ | a zero-divisor line of the projective zero set $\mathcal{Q}$ | this article |
 | $\mathcal{R}$, $\mathcal{K}$ | the two families of minimal one-sided ideals | this article |
 | $\mathcal{K}_L$, $\mathcal{R}_L$ | the left and right annihilators of a zero-divisor line $L$ | this article |
-| $\tau$ | the anti-automorphism $e_1 \mapsto -e_1$, $e_2, e_3 \mapsto e_2, e_3$ | this article |
+| $\tau$ | the anti-automorphism $\vec e_x \mapsto -\vec e_x$, $\vec e_y, \vec e_z \mapsto \vec e_y, \vec e_z$ | this article |
 | nilpotent | nonzero $\tilde q$ with $\tilde q^2 = 0$ | this article |
-| $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
+| $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the central product, formed algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | *Split-Quaternion Algebra* |
 
 ## Further Reading

@@ -2,14 +2,14 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $T=q_1\Pi_{1}+q_2\Pi_{2}$ in the two central idempotents, and with the quadratic family $F_{C}(T)=T^{2}+C$ whose filled Julia set is the product
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents, and with the quadratic family $F_{C}(Q_\pm)=Q_\pm^{2}+C$ whose filled Julia set is the product
 
 $$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}},\qquad \mathcal{J}_{C}=\partial\bigl(K_{c_{1}}\times K_{c_{2}}\bigr)
 =\bigl(J_{c_{1}}\times K_{c_{2}}\bigr)\cup\bigl(K_{c_{1}}\times J_{c_{2}}\bigr),
 $$
 
-read in the idempotent coordinates $C=c_{1}\Pi_{1}+c_{2}\Pi_{2}$. The article computes the Hausdorff dimension of these sets.
+read in the idempotent coordinates $C=c_{1}\Pi_++c_{2}\Pi_-$. The article computes the Hausdorff dimension of these sets.
 
 The result is that the dimension is exact for every hyperbolic parameter of the family, that is every parameter whose two coordinates lie outside the boundary of the Mandelbrot set: it is the sum of the two complex dimensions for the filled Julia set, and the maximum of the two mixed sums for the Julia set, so that the whole dimension theory of the reduced biquaternion fractal is the sum of the two complex dimension theories. The boundary parameters are the single delicate case, deferred to the complex theory. At the parameter zero the filled Julia set is a solid bidisc of dimension four, the Julia set is its boundary of dimension three, and the singular part of the Julia set, its intersection with the zero-divisor cone, has dimension one. When both complex parameters lie in the interior of the Mandelbrot set the filled Julia set is of dimension four and the Julia set of dimension $2$ plus the larger of the two hyperbolic dimensions; when a parameter leaves the Mandelbrot set the filler becomes a Cantor set and the Julia set and the filled set have the same dimension. The dimension problem is thereby reduced to the complex dimension theory, with the boundary parameters as the only delicate case, in contrast with the non-commutative companion where the exact dimension is known only in part.
 

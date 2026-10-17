@@ -126,7 +126,7 @@ $\langle c(x)s,t\rangle=\langle s,c(x^{*})t\rangle$.
 ### The Adjoint of the Operator $D$
 
 **Theorem (formal adjointness and the boundary term).** On $L^2(\Omega;\mathcal{S})$ the operator
-$D=\sum_\mu c(e_\mu)\partial_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
+$D=\sum_\mu c(e_\mu)\partial/\partial x_\mu$ has formal adjoint $D^{\dagger}=-\bar D$ on compactly supported
 sections, and for sections on a bounded domain with smooth boundary,
 
 $$
@@ -143,7 +143,7 @@ $D^{\dagger}=-\bar D$.
 **Corollary (self-adjointness on a closed domain, and on the Hardy space).** If the boundary term
 vanishes — for example on the boundary values of monogenic functions, or on a domain without
 boundary — then $D$ is skew-adjoint up to the conjugation, and the operator
-$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial_i$ is self-adjoint on the appropriate domain, with
+$D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i) \partial/\partial x_i$ is self-adjoint on the appropriate domain, with
 $D_{\mathrm{sa}}^2=-\Delta$ and a real spectrum. The spectral theory of that operator is *Dirac
 Differential Operators*', and the passage from the formal adjoint to the unbounded self-adjoint
 operator is the one of *Unbounded Operators and Spectral Measures* in *Analysis on Linear Spaces*.
@@ -209,7 +209,7 @@ an Adjoint*; the reproducing kernels are *Positive Definite Kernels in Clifford 
 | $c(x)^{\dagger}=c(x^{*})$ | Adjoint of the multiplication |
 | $L^2(\Omega;\mathcal{S})$ | Hilbert module of sections; $\langle f,g\rangle=\int(f,g)$ |
 | $D$, $D^{\dagger}=-\bar D$ | Operator and its formal adjoint; conormal boundary term |
-| $D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i)\partial_i$ | Self-adjoint vector operator; $D_{\mathrm{sa}}^2=-\Delta$ |
+| $D_{\mathrm{sa}}=\sum_{i\ge1}c(e_i)\partial/\partial x_i$ | Self-adjoint vector operator; $D_{\mathrm{sa}}^2=-\Delta$ |
 | $\mathcal{A}^2(\Omega;\mathcal{S})=\ker D\cap L^2$ | Monogenic Bergman space; Bergman projection |
 | $H^2(\Omega;\mathcal{S})$, $P^+=\tfrac12(I+\mathcal{S})$ | Monogenic Hardy space; Szegő projection |
 | $c(\nu_B)$ | Conormal multiplication in the boundary term |

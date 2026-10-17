@@ -92,7 +92,6 @@ The matrix ring $M_2(\mathbb{R})$ is the standard non-commutative ring with zero
 
 | Object | Why it is not on this list | Introduced in |
 |---|---|---|
-| $\mathbb{O}$ | a division algebra whose multiplication is not associative, so not a ring | *Octonion Algebra* |
 | $\mathbb{S}$ | the sedenions, non-associative and with zero divisors | *Division Algebras* |
 | the commutative domains $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$ | domains, but listed on the commutative ladder in *List of Integral Domains* | *The Integers*, *Examples of Rings and Fields* |
 | the ring of upper triangular matrices | not a domain: the strictly upper triangular matrices square to zero | *Matrix Algebras* |

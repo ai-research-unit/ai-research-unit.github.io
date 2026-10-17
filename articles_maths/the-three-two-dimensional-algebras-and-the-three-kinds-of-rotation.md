@@ -66,13 +66,13 @@ $$
 u(\theta) = \cos\theta + i \sin\theta, \qquad N(u(\theta)) = \cos^2\theta + \sin^2\theta = 1,
 $$
 
-and $u(\theta)u(\phi) = u(\theta + \phi)$ by the addition formulas, so $G_{\mathbb{C}} = U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is
+and $u(\theta)u(\phi) = u(\theta + \phi)$ by the addition formulas, so $G_{\mathbb{C}} = \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$. The matrix of multiplication is
 
 $$
 M(u(\theta)) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} \in SO(2),
 $$
 
-since $a = \cos\theta$, $b = \sin\theta$ and $\det M = 1$. The map $\theta \mapsto M(u(\theta))$ is an isomorphism $U(1) \cong SO(2)$: every determinant-one orthogonal transformation of the plane arises, and the parametrisation is the usual one.
+since $a = \cos\theta$, $b = \sin\theta$ and $\det M = 1$. The map $\theta \mapsto M(u(\theta))$ is an isomorphism $\mathrm{U}(1) \cong SO(2)$: every determinant-one orthogonal transformation of the plane arises, and the parametrisation is the usual one.
 
 **Orbits and fixed lines.** Multiplication by $u(\theta)$ preserves $N$, so it maps each circle $x^2 + y^2 = r^2$ to itself; the orbit of a point $z \neq 0$ is the circle of radius $|z|$. For $\theta$ not a multiple of $\pi$ the transformation has no real fixed line, because a real eigenvector would require $\sin\theta = 0$; the only fixed point is the origin. The group is compact, and the parametrisation is by an angle in a bounded interval.
 
@@ -131,7 +131,7 @@ The three cases differ in every feature that the quadratic form controls.
 | norm $N$ | $x^2+y^2$ | $x^2-y^2$ | $x^2$ |
 | signature | $(2,0)$ definite | $(1,1)$ indefinite | $(1,0)$ degenerate |
 | zero divisors | none | on $x=\pm y$ | on $x=0$ |
-| $G_A = \{u : N(u)=1\}$ | $U(1)\cong SO(2)$, connected | two branches; identity component $\cong SO(1,1)_0$ | two branches; identity component the transvections |
+| $G_A = \{u : N(u)=1\}$ | $\mathrm{U}(1)\cong SO(2)$, connected | two branches; identity component $\cong SO(1,1)_0$ | two branches; identity component the transvections |
 | matrix | $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$ | $\begin{pmatrix} a & b \\ b & a\end{pmatrix}$ | $\begin{pmatrix} a & 0 \\ b & a\end{pmatrix}$ |
 | orbit of a generic point | circle | hyperbola | horizontal line |
 | fixed lines | none | two null lines | one null line |
@@ -181,7 +181,7 @@ The three two-dimensional theories thus sit at the bottom of a hierarchy: the co
 
 ## Summary
 
-The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong U(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
+The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{D} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{D}' = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $N(u) = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : N(u)=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{D}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{D}'$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
 
 Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.
 

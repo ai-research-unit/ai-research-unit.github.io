@@ -231,7 +231,7 @@ The hypothesis is equivalent to the error term $O(x^{1/2}\log^2x)$ in $\psi(x)-x
 | $\sigma(n)$, $H_n$ | Divisor sum, $n$-th harmonic number |
 | $\lambda_n$ | Li coefficients, $\lambda_n = \sum_\rho(1-(1-1/\rho)^n)$ |
 | $\rho_\theta$ | Nyman–Beurling function $\{\theta/x\}-\theta\{1/x\}$ |
-| $W(h)$, $h^{\mathrm{refl}}$ | Weil positivity functional and the reflection $h\mapstoh^{\mathrm{refl}}(x)=\overline{h(-x)}$ |
+| $W(h)$, $h^{\mathrm{refl}}$ | Weil positivity functional and the reflection $h\mapsto h^{\mathrm{refl}}(x)=\overline{h(-x)}$ |
 | $H_\lambda$, $\Lambda$ | de Bruijn–Newman family, de Bruijn–Newman constant |
 | $F(\alpha,T)$ | Montgomery's pair-correlation function |
 | GRH, GUE | Generalised Riemann hypothesis; Gaussian unitary ensemble |

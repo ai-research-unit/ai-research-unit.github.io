@@ -11,12 +11,12 @@ $$
 and the covariant derivative is
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu .
+D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu .
 $$
 
 The gauge principle article derived $D$ from the localization of the algebra's central phase and verified that $D\tilde{\Psi}$ transforms homogeneously. It applied the result to a general biquaternion field, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* names the minimal coupling of the Dirac field as the subject of the companion treatment (its open question 7); the precise biquaternion form is representation-dependent. This article supplies that statement, and reports what the recomputation gives.
 
-Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose components are $\sum_\mu e_\mu(\partial_\mu + \frac{iϙ}{\hbar}A_\mu)\tilde{\Psi}_R = m\tilde{\Psi}_L$ and its conjugate partner. The second is that this coupling is **exactly gauge covariant, in the massive case as well as the massless one** — $D\tilde{\Psi} = 0$ and the massive chiral pair each hold in every gauge when they hold in one — because the parent's mass term is the linear chiral pair and the central phase passes through it; the axial symmetry, not the phase symmetry, is what the mass breaks. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
+Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose components are $\sum_\mu e_\mu(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu)\tilde{\Psi}_R = m\tilde{\Psi}_L$ and its conjugate partner. The second is that this coupling is **exactly gauge covariant, in the massive case as well as the massless one** — $D\tilde{\Psi} = 0$ and the massive chiral pair each hold in every gauge when they hold in one — because the parent's mass term is the linear chiral pair and the central phase passes through it; the axial symmetry, not the phase symmetry, is what the mass breaks. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
@@ -27,7 +27,7 @@ The division between what is established and what is interpretation is stated at
 
 The article is organized as follows. The next section recalls the Dirac field and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the axial symmetry is what the mass breaks. A section examines the interaction current and the Maxwell source, reports the negative result, and records one external identity of the same shape, due to Arbab, which is verified here and cited without being adopted as framework content. A section relates the construction to the standard spinor-module minimal coupling. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ and $\tilde{\Psi}^{*} = \overline{\tilde{\Psi}^{\natural}}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_\mu$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_t + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ and $\tilde{\Psi}^{*} = \overline{\tilde{\Psi}^{\natural}}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Dirac Field and Its Phase Symmetry
 
@@ -46,10 +46,10 @@ $$
 
 when $m = 0$. The massless equation is identical in form to the source-free biquaternion Maxwell equation obeyed by the field-strength biquaternion $\tilde{F}$; the difference is the representation, the Maxwell field living in the vector part of the algebra and the Dirac field in the full algebra. The two are the two representations of the same Clifford algebra, as the parent article records.
 
-The symmetry that minimal coupling localizes is the algebra's central $U(1)$, established in the gauge principle article. The centre of $\mathbb{B}$ is the complex scalar subspace
+The symmetry that minimal coupling localizes is the algebra's central $\mathrm{U}(1)$, established in the gauge principle article. The centre of $\mathbb{B}$ is the complex scalar subspace
 
 $$
-\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,\, ie_0\},
+\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,\, ie_t\},
 $$
 
 and its unitary elements are the phases $\lambda = \exp(i\theta)$ with $\theta \in \mathbb{R}$. A **constant** central phase
@@ -106,22 +106,22 @@ The term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ is the **interaction term**. I
 **Component form.** Write the potential as $\tilde{A} = \sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another. Since each $A_\mu$ is a scalar and commutes with the basis, the covariant derivative separates into components:
 
 $$
-D = \sum_{\mu=0}^{3} e_\mu\left(\partial_\mu + \frac{iϙ}{\hbar}A_\mu\right),
+D = \sum_{\mu\in\{t,x,y,z\}} e_\mu\left(\partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu\right),
 \qquad
-D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu,
+D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
-with $\partial_0 = \partial_{ict}$ and $\partial_k = \partial_{x_k}$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $D_\mu = \partial_\mu + iqA_\mu$, the convention used for the minimal substitution in the companion article on the Dirac equation's solutions and the non-relativistic limit.
+with $\partial/\partial Q_t = \partial/\partial Q_t$ and $\partial/\partial Q_k = \partial/\partial x_k$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $D_\mu = \partial/\partial Q_\mu + iqA_\mu$, the convention used for the minimal substitution in the companion article on the Dirac equation's solutions and the non-relativistic limit.
 
 **The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iϙ}{\hbar}\tilde{A}$ in $D$ is Hermitian. This is inherited, not rederived.
 
-**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial_\mu \to \partial_\mu - iqA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
+**Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ with the phase $\lambda = \exp(iϙ\Gamma/\hbar)$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $ϙ$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
 **Left action and right action.** The prescription above acts on the left. The algebra also admits a mirror construction, with the derivative taken on the right and the connection inserted on the right:
 
 $$
 \tilde{\Psi}\overleftarrow{\tilde{\nabla}} + \frac{iϙ}{\hbar}\,\tilde{\Psi}\,\tilde{A},
-\qquad \tilde{\Psi}\overleftarrow{\tilde{\nabla}} := \sum_\mu (\partial_\mu\tilde{\Psi})\,e_\mu .
+\qquad \tilde{\Psi}\overleftarrow{\tilde{\nabla}} := \sum_\mu (\partial/\partial Q_\mu\,\tilde{\Psi})\,e_\mu .
 $$
 
 Both constructions are gauge covariant (verified below). What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right. The two consistent constructions correspond to the two ways the algebra can act on the field, and the choice between them is a choice of **matter representation**: on which module, and from which side, the Dirac field sits. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
@@ -195,9 +195,9 @@ $$
 
 The two sides transform identically, because the central phase commutes with the mass. The same holds for the second equation, with $\bar{\lambda}$. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
 
-This is the biquaternion form of the standard fact that a mass term linear in the field is compatible with a gauged continuous $U(1)$ (fermion number). A mass term that instead pairs the field with its conjugate — a Majorana-type mass, built on the algebra's anti-Hermitian conjugation $\flat$, which is antilinear — would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and would be form-invariant only for $\lambda = \pm 1$. That obstruction is a property of the real structure $\flat$, not of the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality rather than here.
+This is the biquaternion form of the standard fact that a mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$ (fermion number). A mass term that instead pairs the field with its conjugate — a Majorana-type mass, built on the algebra's anti-Hermitian conjugation $\flat$, which is antilinear — would acquire the factor $\exp(2iϙ\Gamma/\hbar)$ and would be form-invariant only for $\lambda = \pm 1$. That obstruction is a property of the real structure $\flat$, not of the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality rather than here.
 
-**What this is.** The computation is elementary and exact, and it is the biquaternion form of a familiar fact: a mass term linear in the field is compatible with a gauged continuous $U(1)$ (fermion number), whereas a mass term that pairs a field with its conjugate — a **Majorana-type** mass — is not. The complex scalar realization of the phase symmetry in the gauge principle article has a linear mass term, and so does the biquaternion Dirac field in its parent's present form; both keep their $U(1)$ even when massive. The standard four-component Dirac equation has the linear mass term $m\psi$ and is gauge covariant under minimal coupling, and the biquaternion chiral pair is its algebra-level transcription. The object the phase cannot pass through is the antilinear conjugation $\flat$, which is retained as the algebra's real structure and is no longer the mass term.
+**What this is.** The computation is elementary and exact, and it is the biquaternion form of a familiar fact: a mass term linear in the field is compatible with a gauged continuous $\mathrm{U}(1)$ (fermion number), whereas a mass term that pairs a field with its conjugate — a **Majorana-type** mass — is not. The complex scalar realization of the phase symmetry in the gauge principle article has a linear mass term, and so does the biquaternion Dirac field in its parent's present form; both keep their $\mathrm{U}(1)$ even when massive. The standard four-component Dirac equation has the linear mass term $m\psi$ and is gauge covariant under minimal coupling, and the biquaternion chiral pair is its algebra-level transcription. The object the phase cannot pass through is the antilinear conjugation $\flat$, which is retained as the algebra's real structure and is no longer the mass term.
 
 **What it is not.** The article does not declare the standard minimal coupling deficient, and with the linear mass term it does not need to: the massive sector is gauge covariant on the same footing as the massless one. What the biquaternion form adds is the algebra-level location of the coupling — the covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ acting by left multiplication, with the central phase passing through the linear mass and the **axial** symmetry broken instead. The residual question of the left-versus-right matter representation is the parent's, and is collected in the open questions below.
 
@@ -224,7 +224,7 @@ and it is **anti-Hermitian**, $\tilde{J}^{*} = -\tilde{J}$, hence an element of 
 **It is not conserved.** The divergence of $\tilde{J}$ in the $ict$ convention is the scalar part of $\tilde{\nabla}^{\natural}\tilde{J}$,
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial_{ict}J_0 + \mathrm{div}\,\vec J,
+\mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{J}\right) = \partial/\partial Q_t\,J_0 + \mathrm{div}\,\vec J,
 $$
 
 the quantity that would have to vanish on solutions. It does not. To check this without relying on the case that suggested the candidate, take a field generated from a wave-equation potential: if $\phi$ is a biquaternion whose every component satisfies the scalar wave equation $\Box\phi = 0$, then
@@ -235,7 +235,7 @@ $$
 
 satisfies $\tilde{\nabla}\tilde{\Psi} = \tilde{\nabla}\tilde{\nabla}^{\natural}\phi = \Box\phi = 0$, so it is a genuine solution of the massless equation. On such a solution, with $\phi$ built from superposed plane waves so that no accidental cancellation is available, the divergence $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})$ is not zero; the computation gives values of order $10^2$ at generic points, for either sign of the bilinear. The naive biquaternion product is therefore **not** the conserved electromagnetic current of the Dirac field.
 
-**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j^\mu = \bar{\psi}\gamma^\mu\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger\gamma^0$. The factor $\gamma^0$ is a Clifford-**odd** element; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde{J} = ic\,j^0e_0 + \vec j$ with $j^0 = \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
+**Why, and what the current is instead.** The reason is representation-theoretic. The conserved current of the Dirac field is the spinor-module bilinear $j^\mu = \bar{\psi}\gamma^\mu\psi$ with the **Dirac adjoint** $\bar{\psi} = \psi^\dagger\gamma^0$. The factor $\gamma^0$ is a Clifford-**odd** element; it is not in the even subalgebra $\mathbb{C}\ell_{1,3}^+ \cong \mathbb{B}$, and it is exactly the extra ingredient that the biquaternion formulation needs to recover the four-component Dirac spinor from its pair of Weyl spinors. A bilinear formed only from $\tilde{\Psi}$ and $\tilde{\Psi}^{*}$ inside $\mathbb{B}$ cannot supply it. The physical current therefore lies partly **outside** the algebra, and the pure-biquaternion form of the interaction current is not given by the naive product. That the electron's current is nevertheless an $\mathbb{M}_-$ four-vector — $\tilde{J} = ic\,j^0e_t + \vec j$ with $j^0 = \psi^\dagger\psi$ — is a statement about the spinor-module transcription, not about a product in $\mathbb{B}$.
 
 This is the same representation question as the left/right action of the previous sections, met from the current side. The parent Dirac article's open question flags the representation conventions; this article records that they are not idle. The biquaternion form of the conserved current, and the sense in which the sourced Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ is fed by the Dirac field, remain open.
 
@@ -250,7 +250,7 @@ $$
 = \mu_0\left(\vec A_g\cdot\vec J_D - \varphi_g\,\rho_D\right),
 $$
 
-where $\vec E_g = -\nabla\varphi_g - \partial_t\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination; the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included.
+where $\vec E_g = -\nabla\varphi_g - \partial/\partial t\,\vec A_g$ and $\vec B_g = \nabla\times\vec A_g$ are the boson's own electric and magnetic fields. The source cites its eqs. (5) and (8) for the elimination; the residual form given below shows what the identity rests on, namely the whole four-equation system, the Ampère-like equation included.
 
 **What the identity says.** The left-hand side is a mixed invariant. It is the cross-contraction $\tfrac12 F^{g}_{\mu\nu}F_{D}^{\mu\nu}$ of the two field strengths, the two-field analogue of the corpus's $I_1 = \vec E^2 - c^2\vec B^2$, which contracts one field strength with itself. The right-hand side is the pairing of the boson potential with the matter source. The identity therefore says that once two fields are coupled, their mixed invariant is not free: it is fixed by the source, and fixed by a source built linearly from the potential and the four-current. It is a constraint on the source, not an independent field equation, and it is the shape of answer that Open Question 4 asks for. The source notes the two-field coincidence, where the identity reads $\epsilon_0\vec E^2 - \vec B^2/\mu_0 = \varphi\rho - \vec A\cdot\vec J$ and is written covariantly as $\frac{1}{2\mu_0}F^{\mu\nu}F_{\mu\nu} = A^\sigma J_\sigma$; the mixed form above is the general one.
 
@@ -259,7 +259,7 @@ where $\vec E_g = -\nabla\varphi_g - \partial_t\vec A_g$ and $\vec B_g = \nabla\
 
 $$
 \vec B_g\cdot\vec B_D - \frac{1}{c^2}\vec E_g\cdot\vec E_D - \mu_0\left(\vec A_g\cdot\vec J_D - \varphi_g\rho_D\right)
-= \frac{\hbar}{qc}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial_t r_8 ,
+= \frac{\hbar}{qc}\,\nabla\cdot\vec r_6 + \vec A_g\cdot\vec r_7 - \frac{\varphi_g}{c^2}\,r_5 - \frac{\hbar}{qc}\,\partial/\partial t r_8 ,
 $$
 
 so that the identity holds exactly on the solution set of the four equations and not for arbitrary fields.
@@ -268,15 +268,15 @@ so that the identity holds exactly on the solution set of the four equations and
 
 ## Recovering the Standard Minimal Coupling
 
-The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient plays the role of the Dirac operator $\not\partial = \gamma^\mu\partial_\mu$ on the spinor module. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma^\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
+The construction meets the standard theory in the spinor-module transcription. The biquaternion field, viewed as an element of $\mathbb{B}\cong M_2(\mathbb{C})$, is a pair of two-component Weyl spinors, and the biquaternion gradient plays the role of the Dirac operator $\not\partial = \gamma^\mu\partial/\partial Q_\mu$ on the spinor module. Under that transcription, left multiplication by the connection $\tilde{A} = \sum_\mu A_\mu e_\mu$ is the representative of the matrix $\gamma^\mu A_\mu$, and the coupled biquaternion equation becomes the standard minimally coupled Dirac equation
 
 $$
-\left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu ,
+\left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu ,
 $$
 
 **provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is $j^\mu = \bar{\psi}\gamma^\mu\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
 
-The transcription carries the representation conventions that the parent Dirac article explicitly left open — the identification of the biquaternion units with the gamma matrices, the placement of the two chiralities in the algebra, and the role of the Dirac adjoint. This article does not fix them. What it fixes is the biquaternion form of the coupling itself: the covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ acting by left multiplication, the component operators $D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu$, and the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
+The transcription carries the representation conventions that the parent Dirac article explicitly left open — the identification of the biquaternion units with the gamma matrices, the placement of the two chiralities in the algebra, and the role of the Dirac adjoint. This article does not fix them. What it fixes is the biquaternion form of the coupling itself: the covariant derivative $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ acting by left multiplication, the component operators $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$, and the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
 
 ## What the Algebra Supplies and What It Only Transcribes
 
@@ -284,7 +284,7 @@ It is worth separating the two, because they are easily conflated.
 
 **What the algebra supplies.**
 
-- *A canonical abelian coupling.* The gauge group is the unitary part of the centre, and the centre is the only place a central phase can live. The $U(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
+- *A canonical abelian coupling.* The gauge group is the unitary part of the centre, and the centre is the only place a central phase can live. The $\mathrm{U}(1)$ that minimal coupling gauges is attached to the algebra without a choice of representation, as the gauge principle article establishes.
 - *The covariant derivative as the localization of the phase.* The interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ is not added by hand: it is the term the localized phase forces, and the connection it forces is exactly the potential biquaternion of the Maxwell article.
 - *Exact covariance of the massless coupled equation*, with the component operators $D_\mu$ and the phase law $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ inherited unchanged.
 - *A material-sector connection.* For a real gauge function the connection stays in $\mathbb{M}_-$, so the coupling respects the sector decomposition the framework is built on.
@@ -295,13 +295,13 @@ It is worth separating the two, because they are easily conflated.
 - *The value of the coupling.* The charge $ϙ$ is a parameter; the algebra does not fix it.
 - *The standard spinor-module results.* The conserved current, the non-relativistic limit, and $g=2$ are properties of the Dirac equation the framework contains, obtained with the linear mass term on the spinor module; the framework transcribes them.
 
-**The commutativity that makes this unambiguous — and the sector where it fails.** The whole prescription rests on a property of internal gauge forces that this article has used without naming: for an internal gauge group the substitution $\partial \to D$ gives the same equation whether it is applied to the action or to the Euler–Lagrange equation of motion, so it does not matter which is gauged. The reason is that the internal generators commute with $\gamma^a$, and the abelian $U(1)$ of this article is the simplest case. The property is not universal. For a Dirac fermion coupled to gravity in the standard vierbein formulation, the gauge generators are the Lorentz generators $S^{cd}$, which do not commute with $\gamma^a$ — they satisfy $[\gamma^c,S^{ab}] = V^{ab}{}_d\gamma^d$ — and the two procedures then differ by an anticommutator term; J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and constructs a world-index formalism in which it is removed, recorded in *Curved Spacetime and the Biquaternion Framework*. The consequence for this article is a boundary rather than a defect: the minimal-coupling prescription derived here is unambiguous **because** its gauge group is internal, and it must not be transferred to the gravitational sector unchanged, where the same prescription is a different and inequivalent construction.
+**The commutativity that makes this unambiguous — and the sector where it fails.** The whole prescription rests on a property of internal gauge forces that this article has used without naming: for an internal gauge group the substitution $\partial \to D$ gives the same equation whether it is applied to the action or to the Euler–Lagrange equation of motion, so it does not matter which is gauged. The reason is that the internal generators commute with $\gamma^a$, and the abelian $\mathrm{U}(1)$ of this article is the simplest case. The property is not universal. For a Dirac fermion coupled to gravity in the standard vierbein formulation, the gauge generators are the Lorentz generators $S^{cd}$, which do not commute with $\gamma^a$ — they satisfy $[\gamma^c,S^{ab}] = V^{ab}{}_d\gamma^d$ — and the two procedures then differ by an anticommutator term; J. Fredsted (arXiv:1906.12200v3 [physics.gen-ph], 2019) proves the mismatch and constructs a world-index formalism in which it is removed, recorded in *Curved Spacetime and the Biquaternion Framework*. The consequence for this article is a boundary rather than a defect: the minimal-coupling prescription derived here is unambiguous **because** its gauge group is internal, and it must not be transferred to the gravitational sector unchanged, where the same prescription is a different and inequivalent construction.
 
 **What is interpretation.** Reading the coupled equation as a Dirac field propagating in a background connection is a geometric interpretation. The algebraic content is the transformation law, the covariance of the massless equation, and the explicit component form; the bundle picture is a consistent interpretation of that content, as in the gauge principle article.
 
 ## Open Questions
 
-1. **The massive sector and the axial symmetry.** With the linear mass term the vector $U(1)$ survives and the massive sector is gauge covariant, so the minimal coupling derived here applies to it. What the mass breaks is the axial symmetry between the two central ideals. Can that symmetry be gauged, and does the framework's central-element structure supply anything analogous to the would-be Goldstone statement for the breaking? The former question — whether the parent's mass term is a Majorana-type coupling — is answered in its second branch by the linear mass term.
+1. **The massive sector and the axial symmetry.** With the linear mass term the vector $\mathrm{U}(1)$ survives and the massive sector is gauge covariant, so the minimal coupling derived here applies to it. What the mass breaks is the axial symmetry between the two central ideals. Can that symmetry be gauged, and does the framework's central-element structure supply anything analogous to the would-be Goldstone statement for the breaking? The former question — whether the parent's mass term is a Majorana-type coupling — is answered in its second branch by the linear mass term.
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which action — which spinor module — is the physical Dirac field in? What fixes it inside the algebra?
 
@@ -320,7 +320,7 @@ It is worth separating the two, because they are easily conflated.
 The minimal coupling of the biquaternion Dirac field to electromagnetism is the replacement of the gradient by the covariant derivative of the gauge principle,
 
 $$
-D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu,
+D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}, \qquad D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu,
 $$
 
 acting by left multiplication on the field. The coupled equation is
@@ -331,7 +331,7 @@ $$
 
 with the interaction term $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ that the localized central phase forces, and the massless case $D\tilde{\Psi} = 0$.
 
-The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{\Psi}' = \exp(iϙ\Gamma/\hbar)\tilde{\Psi}$ and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D'\tilde{\Psi}' = \lambda D\tilde{\Psi}$, and the parent's linear mass term acquires the same factor $\lambda$, so $D\tilde{\Psi}_R = m\tilde{\Psi}_L$ holds in every gauge when it holds in one. The continuous $U(1)$ of the massless theory survives the mass. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $U(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
+The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{\Psi}' = \exp(iϙ\Gamma/\hbar)\tilde{\Psi}$ and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D'\tilde{\Psi}' = \lambda D\tilde{\Psi}$, and the parent's linear mass term acquires the same factor $\lambda$, so $D\tilde{\Psi}_R = m\tilde{\Psi}_L$ holds in every gauge when it holds in one. The continuous $\mathrm{U}(1)$ of the massless theory survives the mass. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $\mathrm{U}(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
 
 The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^{*}$ is not conserved on solutions of the massless equation; the physical current is the spinor-module $j^\mu = \bar{\psi}\gamma^\mu\psi$, whose Dirac adjoint uses the Clifford-odd $\gamma^0$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
 
@@ -342,28 +342,28 @@ One external result is recorded on the source side, and it is not a development 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Centre of the algebra; source of the abelian gauge group |
-| $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
-| $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; source of the abelian gauge group |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_\mu\,\partial/\partial Q_\mu$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Biquaternion Dirac field |
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$, $\tilde{\Psi}^{*} = \overline{\tilde{\Psi}^{\natural}}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Free biquaternion Dirac equation (massive chiral pair) |
-| $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\phi/c\,e_t + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = \exp(iϙ\Gamma/\hbar)$ | Local central phase; $\Gamma$ real scalar |
 | $ϙ$ | Charge (coupling constant), not fixed by the algebra |
 | $D = \tilde{\nabla} + \frac{iϙ}{\hbar}\tilde{A}$ | Covariant derivative (left action) |
-| $D_\mu = \partial_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial_0 = \partial_{ict}$ |
+| $D_\mu = \partial/\partial Q_\mu + \frac{iϙ}{\hbar}A_\mu$ | Components; $\partial/\partial Q_t = \partial/\partial Q_t$ |
 | $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Minimally coupled Dirac equation |
 | $\frac{iϙ}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
 | $\exp(2iϙ\Gamma/\hbar)$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\tilde{J} = i\tilde{\Psi}\tilde{\Psi}^{*}$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
 | $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\bar{\psi} = \psi^\dagger\gamma^0$ | Spinor-module conserved current (involves the Clifford-odd $\gamma^0$) |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ | Maxwell source biquaternion |
+| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ | Maxwell source biquaternion |
 | $\tilde{\nabla}\tilde{F} = -\tilde{R}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |

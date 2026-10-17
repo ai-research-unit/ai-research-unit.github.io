@@ -21,7 +21,7 @@ $$
 
 from Lie groups and smooth homomorphisms to Lie algebras and Lie algebra homomorphisms. It is neither full nor faithful, and the failure is exactly the content of the correspondence: distinct group homomorphisms can induce the same linear map, and not every linear map descends.
 
-**Example.** The groups $\mathbb{R}$ and $U(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $U(1)$ is compact. The covering homomorphism $\mathbb{R} \to U(1)$, $t \mapsto \exp(2\pi i t)$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.
+**Example.** The groups $\mathbb{R}$ and $\mathrm{U}(1) = \{z \in \mathbb{C} : |z| = 1\}$ have isomorphic Lie algebras, both $\mathbb{R}$ with zero bracket, but they are not isomorphic: $\mathbb{R}$ is simply connected and non-compact, while $\mathrm{U}(1)$ is compact. The covering homomorphism $\mathbb{R} \to \mathrm{U}(1)$, $t \mapsto \exp(2\pi i t)$, induces an isomorphism of Lie algebras. The functor $\operatorname{Lie}$ therefore loses the information of the fundamental group.
 
 **Example.** The covering $SU(2) \to SO(3)$ of degree $2$ induces an isomorphism $\mathrm{SU}(2) \to \mathrm{SO}(3)$ between the Lie algebras, and the two groups are not isomorphic; $SO(3)$ has fundamental group $\mathbb{Z}/2$, while $SU(2)$ is simply connected.
 
@@ -166,7 +166,7 @@ $$
 
 the centre of the Lie algebra.
 
-**Example.** For $G = SU(2)$ the centre is $\{\pm I\}$ and $\operatorname{Ad}$ maps $SU(2)$ onto $SO(3)$, the double cover $SU(2) \to SO(3) = SU(2)/\{\pm I\}$; the kernel of $\operatorname{Ad}$ is exactly $\{\pm I\}$. For $G = U(1)$ the adjoint representation is trivial, the Lie algebra being abelian, and $\ker\operatorname{Ad} = U(1) = Z(G)$.
+**Example.** For $G = SU(2)$ the centre is $\{\pm I\}$ and $\operatorname{Ad}$ maps $SU(2)$ onto $SO(3)$, the double cover $SU(2) \to SO(3) = SU(2)/\{\pm I\}$; the kernel of $\operatorname{Ad}$ is exactly $\{\pm I\}$. For $G = \mathrm{U}(1)$ the adjoint representation is trivial, the Lie algebra being abelian, and $\ker\operatorname{Ad} = \mathrm{U}(1) = Z(G)$.
 
 ### The Semisimple Case
 

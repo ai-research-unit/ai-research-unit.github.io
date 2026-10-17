@@ -4,7 +4,7 @@
 
 This article is the second application of the category, and it identifies the symmetric powers of *Symmetric Powers* with the harmonic layers of the polynomial algebra. The symmetric-tensor statements hold over a field $F$ of characteristic $0$, so that all factorials are invertible and the symmetric power is the module of invariants; the polynomial algebra is that of *The Symmetric Algebra of a Module*, and the symmetric powers are its graded pieces $\operatorname{Sym}^k$.
 
-Let $V = \mathbb{R}^n$ with its standard inner product and let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$. The **Laplacian** $\Delta = \sum_i \partial_i^2$ maps $P_k$ to $P_{k-2}$, and the **harmonic polynomials** of degree $k$ are
+Let $V = \mathbb{R}^n$ with its standard inner product and let $P_k$ be the space of homogeneous polynomials of degree $k$ in $x_1, \ldots, x_n$. The **Laplacian** $\Delta = \sum_i \partial^2/\partial x_i^2$ maps $P_k$ to $P_{k-2}$, and the **harmonic polynomials** of degree $k$ are
 
 $$
 \mathcal{H}_k = \{f \in P_k : \Delta f = 0\}.
@@ -134,7 +134,7 @@ $$
 \Delta_S f = -k(k + n - 2)\, f .
 $$
 
-*Proof.* In polar coordinates the Euclidean Laplacian is $\Delta = \partial_r^2 + \frac{n-1}{r}\partial_r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial_r^2 f = k(k-1)r^{k-2}f^{\mathrm{res}}$ and $\frac{n-1}{r}\partial_r f = (n-1)k r^{k-2}f^{\mathrm{res}}$, where $f^{\mathrm{res}} = f|_{S^{n-1}}$. Hence
+*Proof.* In polar coordinates the Euclidean Laplacian is $\Delta = \partial^2/\partial r^2 + \frac{n-1}{r}\partial/\partial r + \frac{1}{r^2}\Delta_S$. For a homogeneous harmonic $f$ of degree $k$ one has $\partial^2/\partial r^2 f = k(k-1)r^{k-2}f^{\mathrm{res}}$ and $\frac{n-1}{r}\partial/\partial r f = (n-1)k r^{k-2}f^{\mathrm{res}}$, where $f^{\mathrm{res}} = f|_{S^{n-1}}$. Hence
 
 $$
 0 = \Delta f = r^{k-2}\Bigl(k(k-1) + (n-1)k\Bigr)f^{\mathrm{res}} + r^{k-2}\Delta_S f^{\mathrm{res}} ,
@@ -157,10 +157,10 @@ $$
 Integrating over the unit ball $B$ and applying the divergence theorem,
 
 $$
-0 = \int_B \nabla\cdot F\,dV = \int_{S^{n-1}} \langle F, x\rangle\,d\sigma = \int_{S^{n-1}}\bigl(h\,\partial_r f - f\,\partial_r h\bigr)d\sigma ,
+0 = \int_B \nabla\cdot F\,dV = \int_{S^{n-1}} \langle F, x\rangle\,d\sigma = \int_{S^{n-1}}\bigl(h\,\partial/\partial r f - f\,\partial/\partial r h\bigr)d\sigma ,
 $$
 
-because the outward normal to the ball on the sphere is $x$. Since $f$ and $h$ are homogeneous, Euler's relation gives $\partial_r f = j f$ and $\partial_r h = k h$, so
+because the outward normal to the ball on the sphere is $x$. Since $f$ and $h$ are homogeneous, Euler's relation gives $\partial/\partial r f = j f$ and $\partial/\partial r h = k h$, so
 
 $$
 0 = (j - k)\int_{S^{n-1}} f h\,d\sigma ,
@@ -258,7 +258,7 @@ equal to $2k+1$ for $n=3$ and to $(k+1)^2$ for $n=4$, and the harmonic layers ar
 | $g$, $g_{ij} = \delta_{ij}$ | Standard positive definite inner product |
 | $\operatorname{Sym}^k(V^*)$ | Symmetric tensors of rank $k$, dimension $\binom{n+k-1}{k}$ |
 | $P_k$ | Homogeneous polynomials of degree $k$ |
-| $\Delta = \sum_i\partial_i^2$ | Laplacian, $P_k \to P_{k-2}$ |
+| $\Delta = \sum_i\partial^2/\partial x_i^2$ | Laplacian, $P_k \to P_{k-2}$ |
 | $\mathcal{H}_k = \ker\Delta \cap P_k$ | Harmonic polynomials of degree $k$ |
 | $r^2 = x_1^2 + \cdots + x_n^2$ | Squared norm |
 | $S^{n-1}$, $d\sigma$ | Unit sphere and surface measure |

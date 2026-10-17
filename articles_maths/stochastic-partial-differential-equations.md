@@ -31,7 +31,7 @@ $$
 W_t = \sum_{k\ge1}\beta_k(t)e_k ,
 $$
 
-which does not converge in $H$; the series converges in every larger Hilbert space $H^{\mathrm{ext}}\supset H$ for which the inclusion $H\toH^{\mathrm{ext}}$ is Hilbert–Schmidt.
+which does not converge in $H$; the series converges in every larger Hilbert space $H^{\mathrm{ext}}\supset H$ for which the inclusion $H\to H^{\mathrm{ext}}$ is Hilbert–Schmidt.
 
 **Definition.** Let $\Sigma$ be a bounded, nonnegative, self-adjoint operator on $H$ with finite trace (a **trace-class covariance**), and let $(e_k)$ diagonalise $\Sigma$ with eigenvalues $q_k$: $\Sigma e_k=q_ke_k$, $\sum_kq_k<\infty$. A **$\Sigma$-Wiener process** is
 
@@ -105,29 +105,29 @@ it satisfies $\sup_{t\le T}\mathbb{E}\|W_A(t)\|_H^2 = \sup_{t\le T}\operatorname
 
 ## The Infinite-Dimensional Itô Formula
 
-**Theorem (Itô's formula in Hilbert space).** Let $X$ be a strong solution of the stochastic evolution equation with $F$ and $B$ bounded on bounded sets, and let $f : [0,T]\times H\to\mathbb{R}$ be $C^1$ in $t$ and twice Fréchet differentiable in $x$, with $\partial_xf$, $\partial_x^2f$ continuous and bounded on bounded sets. Then almost surely, for all $t$,
+**Theorem (Itô's formula in Hilbert space).** Let $X$ be a strong solution of the stochastic evolution equation with $F$ and $B$ bounded on bounded sets, and let $f : [0,T]\times H\to\mathbb{R}$ be $C^1$ in $t$ and twice Fréchet differentiable in $x$, with $\partial/\partial x\,f$, $\partial^2/\partial x^2\,f$ continuous and bounded on bounded sets. Then almost surely, for all $t$,
 
 $$
-f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial_sf+\langle\partial_xf,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)\Sigma B(X_s)^*\partial_x^2f\bigr)\Bigr)ds+\int_0^t\langle\partial_xf,B(X_s)\,dW^\Sigma_s\rangle_H .
+f(t,X_t) = f(0,X_0)+\int_0^t\Bigl(\partial/\partial s\,f+\langle\partial/\partial x\,f,AX_s+F(X_s)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(X_s)\Sigma B(X_s)^*\partial^2/\partial x^2\,f\bigr)\Bigr)ds+\int_0^t\langle\partial/\partial x\,f,B(X_s)\,dW^\Sigma_s\rangle_H .
 $$
 
-*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial_x^2f\,B e_k\Sigma^{1/2},Be_k\Sigma^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
+*Proof.* Quoted as standard. The finite-dimensional Itô formula is applied to the projection of $X$ onto each finite-dimensional subspace spanned by the first $N$ basis vectors, and the resulting identities are passed to the limit $N\to\infty$; the trace term arises as the limit of the finite-dimensional traces $\sum_{k\le N}\langle\partial^2/\partial x^2\,f\,B e_k\Sigma^{1/2},Be_k\Sigma^{1/2}\rangle$, which converges by the Hilbert–Schmidt hypothesis, and the convergence of the stochastic integrals in $L^2(\Omega)$ is the isometry.
 
 **Definition.** For an $H$-valued diffusion with drift $F$ and noise coefficient $B$, the **Kolmogorov operator** is
 
 $$
-\mathcal{L}f(x) = \langle F(x),\partial_xf(x)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(x)\Sigma B(x)^*\partial_x^2f(x)\bigr),
+\mathcal{L}f(x) = \langle F(x),\partial/\partial x\,f(x)\rangle_H+\tfrac12\operatorname{Tr}\bigl(B(x)\Sigma B(x)^*\partial^2/\partial x^2\,f(x)\bigr),
 $$
 
 with domain the twice Fréchet differentiable functions with bounded derivatives; the equation $dX_t=AX_tdt+BdW^\Sigma_t$ has the operator $\mathcal{L}$ with $F(x)=Ax$.
 
-**Corollary (backward Kolmogorov equation and the semigroup).** If $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $f$ bounded and continuous, then $u$ solves $\partial_t u=\mathcal{L}u$ in the weak sense, $\mathcal{L}$ is the generator of the transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ on the space of bounded continuous functions, and the semigroup is strongly continuous on the space of functions that are uniformly continuous on bounded sets.
+**Corollary (backward Kolmogorov equation and the semigroup).** If $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $f$ bounded and continuous, then $u$ solves $\partial/\partial t u=\mathcal{L}u$ in the weak sense, $\mathcal{L}$ is the generator of the transition semigroup $P_tf(x)=\mathbb{E}_x[f(X_t)]$ on the space of bounded continuous functions, and the semigroup is strongly continuous on the space of functions that are uniformly continuous on bounded sets.
 
-*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial_t u=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case.
+*Proof.* Apply the Itô formula to $f(X_t)$ and take expectations; the martingale term vanishes and the identity $\partial/\partial t u=\mathcal{L}u$ follows in the integral form, which is the weak formulation. The semigroup property and the continuity are proved from the Markov property, as in the finite-dimensional case.
 
-**Theorem (Wong–Zakai).** Let $W^\varepsilon$ be a smooth approximation of the cylindrical Wiener process, obtained by convolution in time with an approximate identity, and let $X^\varepsilon$ solve the equation driven by $W^\varepsilon$ with the **Stratonovich** interpretation of the noise term. Then $X^\varepsilon\to X$ in probability in $C([0,T];H)$ as $\varepsilon\to0$, where $X$ solves the equation in the Stratonovich sense; if the equation is rewritten in the Itô form, the Itô drift acquires the correction $\frac12\sum_k(\partial_xB)(Be_k\Sigma^{1/2})(Be_k\Sigma^{1/2})$.
+**Theorem (Wong–Zakai).** Let $W^\varepsilon$ be a smooth approximation of the cylindrical Wiener process, obtained by convolution in time with an approximate identity, and let $X^\varepsilon$ solve the equation driven by $W^\varepsilon$ with the **Stratonovich** interpretation of the noise term. Then $X^\varepsilon\to X$ in probability in $C([0,T];H)$ as $\varepsilon\to0$, where $X$ solves the equation in the Stratonovich sense; if the equation is rewritten in the Itô form, the Itô drift acquires the correction $\frac12\sum_k(\partial/\partial x\,B)(Be_k\Sigma^{1/2})(Be_k\Sigma^{1/2})$.
 
-*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial_xB)B\Sigma B^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation.
+*Proof.* Quoted as standard (Wong–Zakai). The difference between the Stratonovich and the Itô equation is the joint quadratic variation of the noise coefficient with the Wiener process; for the approximation by smooth processes the corrections converge to the trace term $\frac12\operatorname{Tr}((\partial/\partial x\,B)B\Sigma B^*)$, and the convergence of the solutions is by the standard stability estimate for the mild formulation.
 
 ## The Stochastic Heat Equation and the Ornstein–Uhlenbeck Process
 
@@ -170,7 +170,7 @@ which is the unique solution of the Lyapunov equation $A\Sigma_\infty+\Sigma_\in
 **Example (the stochastic Burgers equation).** On the interval, the equation
 
 $$
-du = \bigl(\nu \partial_x^2 u+\tfrac12\partial_x(u^2)\bigr)dt+dW
+du = \bigl(\nu \partial^2/\partial x^2 u+\tfrac12\partial/\partial x\,(u^2)\bigr)dt+dW
 $$
 
 is the stochastic Burgers equation with viscosity $\nu>0$; for $\Sigma=I$ the noise is admissible in one dimension and the Lipschitz-type theory applies after an integration by parts of the nonlinearity, while the limit $\nu\to0$ produces a singular stochastic equation for the potential in which the nonlinearity requires a renormalisation. This is the standard instance in which the smooth theory is available for the regularised equation and fails at the singular limit.
@@ -191,7 +191,7 @@ $$
 
 a linear stochastic partial differential equation whose solution is a measure-valued process; the equation is linear despite the nonlinearity of the underlying filtering problem, and its well-posedness is obtained from the theory above with the noise coefficient $B(\rho)=\rho h$ acquiring the appropriate Hilbert–Schmidt structure. This is the standard bridge between the stochastic partial differential equations and the conditional expectations of the measure-theoretic article.
 
-**Example (the Feynman–Kac representation in infinite dimensions).** The solution of the backward Kolmogorov equation $\partial_t u=\mathcal{L}u$ for the infinite-dimensional Ornstein–Uhlenbeck operator admits the representation $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $X$ the Ornstein–Uhlenbeck process, and the Feynman–Kac formula with a potential holds verbatim in this setting, with the trace term of the Itô formula in place of the finite-dimensional Laplacian. The representation is the infinite-dimensional analogue of the formula of the preceding article.
+**Example (the Feynman–Kac representation in infinite dimensions).** The solution of the backward Kolmogorov equation $\partial/\partial t u=\mathcal{L}u$ for the infinite-dimensional Ornstein–Uhlenbeck operator admits the representation $u(t,x)=\mathbb{E}_x[f(X_t)]$ with $X$ the Ornstein–Uhlenbeck process, and the Feynman–Kac formula with a potential holds verbatim in this setting, with the trace term of the Itô formula in place of the finite-dimensional Laplacian. The representation is the infinite-dimensional analogue of the formula of the preceding article.
 
 ## Singular Equations
 

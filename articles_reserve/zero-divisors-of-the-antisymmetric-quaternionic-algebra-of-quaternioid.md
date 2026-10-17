@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ carries the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$
 of *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*. The parent quaternionic
 product has no zero divisor, the ambient algebra $\mathbb{H}$ being a division algebra; the
 antisymmetric block is at the opposite extreme. This article determines its zero divisors: the
@@ -20,13 +20,13 @@ Quaternions*; the left multiplication operator is read in *The Adjoint Operators
 Antisymmetric Quaternionic Algebra*, below this article in this category; the comparison with the
 parent's divisor theory is
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with
-$\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. A generic element is $\tilde q=q_te_t+\vec q$ with
+$\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
 Euclidean dot product, $\vec p\times\vec q$ the vector product, the **centre** is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is
 $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$; the **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$.
+$N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$.
 
 ## The Notion and the Product
 
@@ -54,23 +54,23 @@ $\tilde q=\tilde p$; no nonzero element is excluded.
 **Theorem (the criterion).** For nonzero $\tilde p,\tilde q$,
 
 $$
-\tilde p\diamond\tilde q=0\iff p_0\vec q=q_0\vec p+\vec p\times\vec q
+\tilde p\diamond\tilde q=0\iff p_0\vec q=q_t\vec p+\vec p\times\vec q
 \iff \tilde q\ \text{is a multiple of}\ \tilde p,\ \tilde q=\lambda\tilde p .
 $$
 
 For a nonzero element the annihilating partners are exactly the multiples of the element.
 
 *Proof.* The equation
-$\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q=0$ is the displayed
+$\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q=0$ is the displayed
 criterion. Let $\vec q=\alpha\vec p+\vec q_\perp$ with $\vec q_\perp\perp\vec p$;
-the criterion splits into the parallel part $(p_0\alpha-q_0)\vec p=0$ and the perpendicular part
-$p_0\vec q_\perp=\vec p\times\vec q_\perp$. The first gives $\alpha=q_0/p_0$ when
+the criterion splits into the parallel part $(p_0\alpha-q_t)\vec p=0$ and the perpendicular part
+$p_0\vec q_\perp=\vec p\times\vec q_\perp$. The first gives $\alpha=q_t/p_0$ when
 $p_0\neq0$; the second is $p_0\vec q_\perp=|\vec p|R(\vec q_\perp)$ with $R$ a quarter
 turn of the plane orthogonal to $\vec p$, so that
 $(p_0/|\vec p|)\vec q_\perp=R(\vec q_\perp)$ would make the real number $p_0/|\vec p|$
 an eigenvalue of $R$, and a quarter turn has no real eigenvalue; hence $\vec q_\perp=0$, so
 $\vec q=\alpha\vec p$ and $\tilde q=\lambda\tilde p$. For a pure $\tilde p$ the parallel part
-gives $q_0=0$ and the perpendicular part $\vec p\times\vec q=0$, so again
+gives $q_t=0$ and the perpendicular part $\vec p\times\vec q=0$, so again
 $\tilde q=\lambda\tilde p$, then pure. The direct verification by the rank of the multiplication
 operator is below.
 
@@ -123,7 +123,7 @@ a line.
 The antisymmetrised quaternionic block has no nontrivial divisor theory: the operation is
 alternating, so every nonzero element is a zero divisor with itself as partner and the zero-divisor
 set is the punctured four-dimensional space. The criterion for a pair is
-$p_0\vec q=q_0\vec p+\vec p\times\vec q$, which forces the partner to be a **multiple
+$p_0\vec q=q_t\vec p+\vec p\times\vec q$, which forces the partner to be a **multiple
 of the element**, $\tilde q=\lambda\tilde p$: the perpendicular component is killed by the
 quarter-turn comparison of the scalar and cross terms, and the annihilator is the **line**
 $\mathbb{R}\tilde p$ for a nonzero element, cutting the multiplication operator down to rank three,
@@ -139,7 +139,7 @@ $\mathbb{R}$ the cone is empty and the annihilator is always the line.
 |---|---|
 | $\tilde p\diamond\tilde q=0$, $\tilde p,\tilde q\neq0$ | a zero-divisor pair |
 | $\mathbb{H}\setminus\{0\}$ | the zero-divisor set, total |
-| $p_0\vec q=q_0\vec p+\vec p\times\vec q$ | the criterion |
+| $p_0\vec q=q_t\vec p+\vec p\times\vec q$ | the criterion |
 | $\tilde q=\lambda\tilde p$ | the partner, a multiple of the element |
 | $\operatorname{Ann}(\tilde p)=\mathbb{R}\tilde p$ | the annihilator, a line |
 | $\operatorname{Tr}L^{\diamond}_{\tilde p}=3p_0$, $\det=0$, rank $3$ | the invariants of the operator |

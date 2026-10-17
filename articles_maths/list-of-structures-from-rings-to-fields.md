@@ -101,7 +101,6 @@ The passage to the fraction field does not repair a failure of unique factorisat
 |---|---|---|
 | $\mathbb{H}$ | a division ring, but not commutative, so it never enters the commutative progression | *Quaternion Algebra* |
 | the free algebra $R\langle x_1, \dots, x_n\rangle$ | a non-commutative domain; the non-commutative ladder is the subject of *List of Structures from Rings to Division Rings* | *Tensor Powers and the Free Algebra* |
-| $\mathbb{O}$ | a division algebra whose multiplication is not associative; not even a ring | *Octonion Algebra* |
 | the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 
 A non-commutative division ring is not stopped by a missing zero divisor: it is stopped by commutativity, and the two chains meet only at the fields. This is recorded again, from the non-commutative side, in *List of Structures from Rings to Division Rings*.

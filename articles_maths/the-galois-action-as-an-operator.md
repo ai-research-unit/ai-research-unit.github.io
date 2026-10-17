@@ -53,7 +53,7 @@ $$
 
 ## The Action on Functions and on the Structure Sheaf
 
-**Definition.** For an open $U\subseteq X_L$ and a function $f\in\mathcal{O}_{X_L}(U)$, the **translate** of $f$ by $\sigma$ is the function on $\sigma_X^{-1}(U)$ defined by
+**Definition.** For an open $\Omega\subseteq X_L$ and a function $f\in\mathcal{O}_{X_L}(\Omega)$, the **translate** of $f$ by $\sigma$ is the function on $\sigma_X^{-1}(\Omega)$ defined by
 $$
 (\sigma\cdot f)(x) = \sigma\bigl(f(\sigma_X^{-1}x)\bigr) .
 $$

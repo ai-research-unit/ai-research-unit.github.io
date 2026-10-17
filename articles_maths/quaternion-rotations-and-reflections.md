@@ -7,9 +7,9 @@ This article describes the orthogonal group of three-dimensional Euclidean space
 
 The treatment is mathematical throughout. A rotation is an element of $SO(3)$ and a reflection is an element of $O(3)$; no physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The group $Sp(1)$ is treated as a group of quaternions, and the maps $Sp(1)\to SO(3)$ and $Sp(1)\times Sp(1)\to SO(4)$ are treated as covering homomorphisms of Lie groups.
 
-The quaternion algebra, its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, its conjugation, its quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
+The quaternion algebra, its basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, its conjugation, its quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and its imaginary subspace $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ are taken from *Quaternion Algebra*. The structure of $\mathbb{H}$ as a simple algebra is taken from *Quaternion Ideals and Simplicity*. The general construction of the Clifford, Pin and Spin groups, of which the results below are the three-dimensional instance, is the subject of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the parity of the Cartan–Dieudonné reflection length is taken from *The Rotation Group and Orientation* and from *Isometries and Orthogonal Transformations*. The complex plane, where the same questions have the degenerate answer that multiplication by a unit is already a rotation and the sandwich action is trivial, is treated in *Rotations and Reflections in the Complex Plane*.
 
-Throughout, a general quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with scalar part $q_0$ and vector part $\vec q = q_1e_1+q_2e_2+q_3e_3 \in \operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle \vec q, \vec p\rangle = \mathrm{Sc}(\vec q \vec p^{\natural}) = \sum_{k=1}^{3} q_kp_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|\vec q|^2 = \langle \vec q,\vec q\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
+Throughout, a general quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with scalar part $q_t$ and vector part $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z \in \operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, and the real inner product of two vectors of $\operatorname{Im}\mathbb{H}$ is $\langle \vec q, \vec p\rangle = \mathrm{Sc}(\vec q \vec p^{\natural}) = \sum_{k=1}^{3} q_kp_k$. A point of $\operatorname{Im}\mathbb{H}$ is a **vector**, and $|\vec q|^2 = \langle \vec q,\vec q\rangle$. The transpose of a matrix $A$ is $A^{T}$ and the conjugate transpose is $A^{\dagger}$.
 
 ## The Group of Unit Quaternions
 
@@ -27,7 +27,7 @@ As a subset of $\mathbb{H}\cong\mathbb{R}^4$ it is the unit sphere $S^3$.
 
 **Proof.** The quaternion norm is multiplicative, $\langle uv\rangle_{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$, because $uv(uv)^{\natural} = uvv^{\natural}u^{\natural} = uN(v)u^{\natural} = \langle u\rangle_{\natural}\langle v\rangle_{\natural}$; hence if $|u| = |v| = 1$ then $|uv| = 1$, and if $|u| = 1$ then $u^{-1} = u^{\natural}$ has $|u^{-1}| = 1$. Associativity and the identity $1\in Sp(1)$ are inherited from $\mathbb{H}$, and multiplication is a surjective homomorphism $\mathbb{H}^{\times}\to\mathbb{R}_{>0}$ with kernel exactly $Sp(1)$.
 
-For every unit quaternion $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ one has $\tilde q^{-1} = \tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
+For every unit quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ one has $\tilde q^{-1} = \tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, so inversion is quaternion conjugation. The group is non-abelian; its centre is the two-element group
 
 $$
 Z(Sp(1)) = \{\pm 1\},
@@ -45,7 +45,7 @@ $$
 
 in which the angle $\theta$ is unique; the axis $u$ is unique when $0 < \theta < \pi$, while for $\theta = 0$ and $\theta = \pi$ the quaternion is $\tilde q = 1$ and $\tilde q = -1$ respectively and $u$ is arbitrary.
 
-**Proof.** A unit quaternion has $q_0^2 + |\vec q|^2 = 1$, so there is a unique $\theta\in[0,\pi]$ with $q_0 = \cos\theta$ and $|\vec q| = \sin\theta$. If $\sin\theta\neq0$ then $u = \vec q/\sin\theta$ is a unit vector, uniquely determined by $\tilde q$, and $\tilde q = \cos\theta+u\sin\theta$; if $\sin\theta = 0$ then $\vec q = 0$ and $\tilde q = \pm1$.
+**Proof.** A unit quaternion has $q_t^2 + |\vec q|^2 = 1$, so there is a unique $\theta\in[0,\pi]$ with $q_t = \cos\theta$ and $|\vec q| = \sin\theta$. If $\sin\theta\neq0$ then $u = \vec q/\sin\theta$ is a unit vector, uniquely determined by $\tilde q$, and $\tilde q = \cos\theta+u\sin\theta$; if $\sin\theta = 0$ then $\vec q = 0$ and $\tilde q = \pm1$.
 
 **Theorem (exponential).** For a unit vector $u\in\operatorname{Im}\mathbb{H}$ and real $\theta$,
 
@@ -105,51 +105,51 @@ $$
 
 **Proof.** An isometry of a three-dimensional real inner product space has determinant $\pm1$. The determinant function $\det\circ\operatorname{Ad} : Sp(1)\to\{\pm1\}$ is continuous, and $Sp(1)$ is connected, so its image is connected in the discrete two-point set; hence it is constant, and its value at $\tilde q = 1$ is $\det(\mathrm{id}) = 1$.
 
-In the basis $(e_1, e_2, e_3)$ of $\operatorname{Im}\mathbb{H}$ the matrix of $\operatorname{Ad}_{\tilde q}$, with $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, is
+In the basis $(\vec e_x, \vec e_y, \vec e_z)$ of $\operatorname{Im}\mathbb{H}$ the matrix of $\operatorname{Ad}_{\tilde q}$, with $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, is
 
 $$
 R_{\tilde q} = \begin{pmatrix}
-1 - 2(q_2^2 + q_3^2) & 2(q_1q_2 - q_0q_3) & 2(q_1q_3 + q_0q_2) \\
-2(q_1q_2 + q_0q_3) & 1 - 2(q_1^2 + q_3^2) & 2(q_2q_3 - q_0q_1) \\
-2(q_1q_3 - q_0q_2) & 2(q_2q_3 + q_0q_1) & 1 - 2(q_1^2 + q_2^2)
+1 - 2(q_y^2 + q_z^2) & 2(q_xq_y - q_tq_z) & 2(q_xq_z + q_tq_y) \\
+2(q_xq_y + q_tq_z) & 1 - 2(q_x^2 + q_z^2) & 2(q_yq_z - q_tq_x) \\
+2(q_xq_z - q_tq_y) & 2(q_yq_z + q_tq_x) & 1 - 2(q_x^2 + q_y^2)
 \end{pmatrix},
 $$
 
-whose trace is $\operatorname{tr}R_{\tilde q} = 4q_0^2 - 1$. The formula is the coordinate expression of $\operatorname{Ad}_{\tilde q}$ and is the standard quaternion parametrisation of the rotation group.
+whose trace is $\operatorname{tr}R_{\tilde q} = 4q_t^2 - 1$. The formula is the coordinate expression of $\operatorname{Ad}_{\tilde q}$ and is the standard quaternion parametrisation of the rotation group.
 
 **Remark (reading the quaternion off the matrix, and the largest entry).** The parametrisation is two-to-one, $R_{\tilde q} = R_{-\tilde q}$, so the matrix determines the pair $\{\pm\tilde q\}$ and no more. The four quantities
 
 $$
-1+\operatorname{tr}R_{\tilde q} = 4q_0^2,
+1+\operatorname{tr}R_{\tilde q} = 4q_t^2,
 \qquad
-1+R_{11}-R_{22}-R_{33} = 4q_1^2,
+1+R_{11}-R_{22}-R_{33} = 4q_x^2,
 \qquad
-1+R_{22}-R_{33}-R_{11} = 4q_2^2,
+1+R_{22}-R_{33}-R_{11} = 4q_y^2,
 \qquad
-1+R_{33}-R_{11}-R_{22} = 4q_3^2
+1+R_{33}-R_{11}-R_{22} = 4q_z^2
 $$
 
 are the squares of the four coefficients, and they sum to $4$ because $|\tilde q| = 1$; hence the largest of them is at least $1$, and it is the one to take the square root of. The remaining three coefficients then follow from the off-diagonal entries: the antisymmetric combinations carry the products with the scalar part,
 
 $$
-4q_0q_1 = R_{21}-R_{12},
+4q_tq_x = R_{21}-R_{12},
 \qquad
-4q_0q_2 = R_{02}-R_{20},
+4q_tq_y = R_{02}-R_{20},
 \qquad
-4q_0q_3 = R_{10}-R_{01},
+4q_tq_z = R_{10}-R_{01},
 $$
 
 and the symmetric combinations the products of the imaginary coefficients,
 
 $$
-4q_1q_2 = R_{01}+R_{10},
+4q_xq_y = R_{01}+R_{10},
 \qquad
-4q_1q_3 = R_{02}+R_{20},
+4q_xq_z = R_{02}+R_{20},
 \qquad
-4q_2q_3 = R_{12}+R_{21}.
+4q_yq_z = R_{12}+R_{21}.
 $$
 
-Choosing the largest of the four is not a convenience but the point: recovering $q_0$ from the trace and dividing by it is exact for a generic rotation and fails precisely when $q_0 = 0$, that is at a rotation through $\pi$, where the trace is $-1$ and the quotient is $0/0$. Since the largest of the four quantities is at least $1$ for every rotation, the branch that uses it never divides by a small number. The trace also reads off the angle, $\operatorname{tr}R_{\tilde q} = 1+2\cos\theta$, which is the same statement as $q_0 = \cos(\theta/2)$: at $\theta = \pi$ the scalar part vanishes and the matrix alone cannot distinguish the two senses of the axis, which is the degeneracy just described. Finally, replacing the parametrising quaternion by its inverse — that is, reversing the orientation of the rotation — transposes the matrix, $R_{\tilde q^{-1}} = R_{\tilde q}^{T}$, since the adjoint action of $\tilde q^{-1}$ inverts the automorphism $\operatorname{Ad}_{\tilde q}$ on $\operatorname{Im}\mathbb{H}$.
+Choosing the largest of the four is not a convenience but the point: recovering $q_t$ from the trace and dividing by it is exact for a generic rotation and fails precisely when $q_t = 0$, that is at a rotation through $\pi$, where the trace is $-1$ and the quotient is $0/0$. Since the largest of the four quantities is at least $1$ for every rotation, the branch that uses it never divides by a small number. The trace also reads off the angle, $\operatorname{tr}R_{\tilde q} = 1+2\cos\theta$, which is the same statement as $q_t = \cos(\theta/2)$: at $\theta = \pi$ the scalar part vanishes and the matrix alone cannot distinguish the two senses of the axis, which is the degeneracy just described. Finally, replacing the parametrising quaternion by its inverse — that is, reversing the orientation of the rotation — transposes the matrix, $R_{\tilde q^{-1}} = R_{\tilde q}^{T}$, since the adjoint action of $\tilde q^{-1}$ inverts the automorphism $\operatorname{Ad}_{\tilde q}$ on $\operatorname{Im}\mathbb{H}$.
 
 ### The Closest Rotation and the Largest Eigenvalue
 
@@ -166,9 +166,9 @@ Q_{21}-Q_{12} & Q_{13}+Q_{31} & Q_{23}+Q_{32} & 2Q_{33}-\operatorname{tr}Q
 \end{pmatrix},
 $$
 
-whose rows and columns are indexed by $(e_0, e_1, e_2, e_3)$.
+whose rows and columns are indexed by $(e_t, \vec e_x, \vec e_y, \vec e_z)$.
 
-**Theorem (the fitting matrix is the correlation matrix of the rotation).** For every unit quaternion $\tilde q$ with coefficient vector $q = (q_0, q_1, q_2, q_3)$ and every real $3\times3$ matrix $Q$,
+**Theorem (the fitting matrix is the correlation matrix of the rotation).** For every unit quaternion $\tilde q$ with coefficient vector $q = (q_t, q_x, q_y, q_z)$ and every real $3\times3$ matrix $Q$,
 
 $$
 q^{T}K(Q)\,q = \operatorname{tr}\bigl(R_{\tilde q}^{T}Q\bigr) = \sum_{i,j=1}^{3}(R_{\tilde q})_{ij}Q_{ij},
@@ -176,7 +176,7 @@ $$
 
 the sum being the **correlation** of the rotation $R_{\tilde q}$ with $Q$.
 
-*Proof.* Both sides are quadratic forms in $q$, and $K(Q)$ is linear in $Q$, so it suffices to expand and collect the coefficient of each $Q_{ij}$. The diagonal entries of $K(Q)$ give $q_0^2+q_i^2-q_j^2-q_k^2$ for the coefficient of $Q_{ii}$ with $\{i,j,k\} = \{1,2,3\}$, which is $1-2(q_j^2+q_k^2) = (R_{\tilde q})_{ii}$ because $|\tilde q| = 1$; the off-diagonal entries give $2q_0q_k+2q_iq_j$ for the coefficient of $Q_{ij}$ with the cyclic order $(i,j,k)$, which is $(R_{\tilde q})_{ij}$ by the displayed matrix. Hence the two quadratic forms agree on every matrix unit $Q = E_{ij}$ and therefore everywhere.
+*Proof.* Both sides are quadratic forms in $q$, and $K(Q)$ is linear in $Q$, so it suffices to expand and collect the coefficient of each $Q_{ij}$. The diagonal entries of $K(Q)$ give $q_t^2+q_i^2-q_j^2-q_k^2$ for the coefficient of $Q_{ii}$ with $\{i,j,k\} = \{1,2,3\}$, which is $1-2(q_j^2+q_k^2) = (R_{\tilde q})_{ii}$ because $|\tilde q| = 1$; the off-diagonal entries give $2q_tq_k+2q_iq_j$ for the coefficient of $Q_{ij}$ with the cyclic order $(i,j,k)$, which is $(R_{\tilde q})_{ij}$ by the displayed matrix. Hence the two quadratic forms agree on every matrix unit $Q = E_{ij}$ and therefore everywhere.
 
 **Theorem (the closest rotation).** Let $Q$ be a real $3\times3$ matrix and let $q_\ast$ be a unit eigenvector of $K(Q)$ for its **largest** eigenvalue $\lambda_\ast$. Then
 
@@ -190,17 +190,17 @@ so $R_{q_\ast}$ is the rotation that **best fits** $Q$: among all matrices of $S
 
 **Corollary (the exact case, and the eigenvalue as a test of fit).** If $Q$ is itself a rotation, $Q = R_{\tilde q_0}$, then $\lambda_\ast = 3$, the eigenvectors for $\lambda_\ast$ are $\pm\tilde q_0$, and the best fit is exact. Equivalently, the largest eigenvalue of $\frac{1}{3}K(Q)$ is $1$ for a rotation matrix, and its eigenvector is the quaternion of the rotation; the value $\lambda_\ast$ is the achieved correlation, and the gap $3-\lambda_\ast$ measures how far $Q$ is from a rotation.
 
-*Proof.* For $Q = R_{\tilde q_0}$ one has $\operatorname{tr}(R_{\tilde q}^{T}Q) = \operatorname{tr}(R_{\tilde q}^{T}R_{\tilde q_0}) = \operatorname{tr}(R_{\tilde q^{\natural}\tilde q_0})$, and the trace is $4(q_0')^2-1\le3$ with the scalar part $q_0' = \langle \tilde q,\tilde q_0\rangle$ of the product, so the maximum is $3$, attained exactly at $\tilde q = \pm\tilde q_0$. The factor $\frac{1}{3}$ is the normalisation of the definition.
+*Proof.* For $Q = R_{\tilde q_0}$ one has $\operatorname{tr}(R_{\tilde q}^{T}Q) = \operatorname{tr}(R_{\tilde q}^{T}R_{\tilde q_0}) = \operatorname{tr}(R_{\tilde q^{\natural}\tilde q_0})$, and the trace is $4(q_t')^2-1\le3$ with the scalar part $q_t' = \langle \tilde q,\tilde q_0\rangle$ of the product, so the maximum is $3$, attained exactly at $\tilde q = \pm\tilde q_0$. The factor $\frac{1}{3}$ is the normalisation of the definition.
 
-**Remark (why the eigenvector, and not the four square roots).** The four quantities of the preceding remark are the diagonal entries of the eigenvector problem in disguise: $1+\operatorname{tr}R_{\tilde q} = 4q_0^2$ and the three others are $\frac{1}{3}K(Q)$'s diagonal deviations, and when $Q$ is a rotation the eigenvector for $\lambda_\ast = 3$ has components proportional to $(\sqrt{1+\operatorname{tr}Q}, \pm\sqrt{1+R_{11}-R_{22}-R_{33}}, \dots)$. The largest-eigenvalue route is the numerically stable version of the largest-square-root route: it never divides by a component that may vanish, and it extends off the rotation matrices, where the four-branch formulas have no meaning. The problem of finding the rotation that carries one set of measured vectors to another in the least-squares sense is the same computation with $Q$ the correlation matrix of the two sets, and it is posed in that form in the attitude-determination literature cited below.
+**Remark (why the eigenvector, and not the four square roots).** The four quantities of the preceding remark are the diagonal entries of the eigenvector problem in disguise: $1+\operatorname{tr}R_{\tilde q} = 4q_t^2$ and the three others are $\frac{1}{3}K(Q)$'s diagonal deviations, and when $Q$ is a rotation the eigenvector for $\lambda_\ast = 3$ has components proportional to $(\sqrt{1+\operatorname{tr}Q}, \pm\sqrt{1+R_{11}-R_{22}-R_{33}}, \dots)$. The largest-eigenvalue route is the numerically stable version of the largest-square-root route: it never divides by a component that may vanish, and it extends off the rotation matrices, where the four-branch formulas have no meaning. The problem of finding the rotation that carries one set of measured vectors to another in the least-squares sense is the same computation with $Q$ the correlation matrix of the two sets, and it is posed in that form in the attitude-determination literature cited below.
 
 **Remark (the arithmetic cost, and what the four numbers buy).** Representing a rotation by a quaternion costs four real numbers subject to one constraint, against nine for the matrix; composing two rotations is one quaternion product, sixteen multiplications and twelve additions, against twenty-seven multiplications for the matrix product; and renormalising a drifting quaternion is a four-term operation against the re-orthogonalisation of a matrix. The single respect in which the matrix is cheaper is the action on a vector: nine multiplications against the two quaternion products, thirty-two multiplications, of the sandwich. The eigenvector computation above is the fourth operation for which the four numbers are used, and the double cover is its only price: the eigenvector is determined up to sign, which is exactly the two-to-one redundancy of the parametrisation.
 
 ### The Differential and the Lie Algebra
 
-**Theorem.** The Lie algebra of $Sp(1)$ is $\operatorname{Im}\mathbb{H}$ with the commutator bracket $[\vec q,\vec p] = \vec q\vec p - \vec p\vec q = 2(\vec q\times \vec p)$, where $\times$ is the cross product. The differential of the adjoint action at the identity is the map $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$, $\vec q\mapsto \operatorname{ad}_\vec q = [\vec q,\cdot]$, and the map $\vec q\mapsto \operatorname{ad}_\vec q$ is an isomorphism of Lie algebras $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$.
+**Theorem.** The Lie algebra of $Sp(1)$ is $\operatorname{Im}\mathbb{H}$ with the commutator bracket $[\vec q,\vec p] = \vec q\vec p - \vec p\vec q = 2(\vec q\times \vec p)$, where $\times$ is the cross product. The differential of the adjoint action at the identity is the map $\operatorname{Im}\mathbb{H}\to\mathrm{SO}(3)$, $\vec q\mapsto \operatorname{ad}_{\vec q} = [\vec q,\cdot]$, and the map $\vec q\mapsto \operatorname{ad}_{\vec q}$ is an isomorphism of Lie algebras $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$.
 
-**Proof.** The tangent space of $Sp(1) = S^3$ at $1$ is the orthogonal complement of $1$, which is $\operatorname{Im}\mathbb{H}$. For pure imaginary $\vec q,\vec p$, the product is $\vec q\vec p = \vec q\times \vec p - \langle \vec q, \vec p\rangle$, so $\vec q\vec p - \vec p\vec q = 2(\vec q\times \vec p)$ and the bracket is $\mathbb{R}$-bilinear and antisymmetric. The adjoint action of $Sp(1)$ differentiates to the bracket of the Lie algebra, $\operatorname{ad}_\vec q(\vec p) = [\vec q,\vec p]$, and $\operatorname{ad}_\vec q$ is skew-symmetric because $\langle \vec q\times \vec p, \vec r\rangle = -\langle \vec p, \vec q\times \vec r\rangle$. The map $\vec q\mapsto\operatorname{ad}_\vec q$ is injective: if $\operatorname{ad}_\vec q = 0$ then $\vec q\times \vec p = 0$ for every $\vec p$, so $\vec q = 0$. Both $\operatorname{Im}\mathbb{H}$ and $\mathrm{SO}(3)$ are three-dimensional, so it is a linear isomorphism, and it preserves brackets because it is the derivative of a homomorphism of groups.
+**Proof.** The tangent space of $Sp(1) = S^3$ at $1$ is the orthogonal complement of $1$, which is $\operatorname{Im}\mathbb{H}$. For pure imaginary $\vec q,\vec p$, the product is $\vec q\vec p = \vec q\times \vec p - \langle \vec q, \vec p\rangle$, so $\vec q\vec p - \vec p\vec q = 2(\vec q\times \vec p)$ and the bracket is $\mathbb{R}$-bilinear and antisymmetric. The adjoint action of $Sp(1)$ differentiates to the bracket of the Lie algebra, $\operatorname{ad}_{\vec q}(\vec p) = [\vec q,\vec p]$, and $\operatorname{ad}_{\vec q}$ is skew-symmetric because $\langle \vec q\times \vec p, \vec r\rangle = -\langle \vec p, \vec q\times \vec r\rangle$. The map $\vec q\mapsto\operatorname{ad}_{\vec q}$ is injective: if $\operatorname{ad}_{\vec q} = 0$ then $\vec q\times \vec p = 0$ for every $\vec p$, so $\vec q = 0$. Both $\operatorname{Im}\mathbb{H}$ and $\mathrm{SO}(3)$ are three-dimensional, so it is a linear isomorphism, and it preserves brackets because it is the derivative of a homomorphism of groups.
 
 The Lie algebra isomorphism $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$ is the differential form of the group isomorphism established below; it also identifies $\operatorname{Im}\mathbb{H}$ with $\mathrm{SU}(2)$, and the factor $2$ in the bracket is the infinitesimal shadow of the half-angle.
 
@@ -268,13 +268,13 @@ $$
 
 and $\tilde q$ is determined by the rotation up to the replacement $\tilde q\mapsto -\tilde q$.
 
-**Proof.** The preceding theorem identifies $\operatorname{Ad}_{\tilde q}$ as the rotation about $u$ through $\theta$. If $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_{\tilde q'}$ then $\tilde q'\tilde q^{-1}$ lies in the kernel $\{\pm1\}$, so $\tilde q' = \pm \tilde q$.
+**Proof.** The preceding theorem identifies $\operatorname{Ad}_{\tilde q}$ as the rotation about $u$ through $\theta$. If $\operatorname{Ad}_{\tilde q_1} = \operatorname{Ad}_{\tilde q_2}$ then $\tilde q_2\tilde q_1^{-1}$ lies in the kernel $\{\pm1\}$, so $\tilde q_2 = \pm \tilde q_1$.
 
 The occurrence of the half-angle is the algebraic expression of the double cover: the rotation angle is $\theta$, but the quaternion carries $\theta/2$, so a rotation through $2\pi$, whose matrix is the identity, is represented by $\exp(\pi u) = -1$ and not by $1$.
 
 ### The Composition of Rotations
 
-**Theorem.** For $q_1, q_2\in Sp(1)$,
+**Theorem.** For $\tilde q_1, \tilde q_2\in Sp(1)$,
 
 $$
 \operatorname{Ad}_{\tilde q_1}\circ\operatorname{Ad}_{\tilde q_2} = \operatorname{Ad}_{\tilde q_1\tilde q_2},
@@ -334,8 +334,8 @@ Left and right multiplication are the operators of the regular representation, t
 
 | Operator | On $\mathbb{R}_{\mathbb{H}}$ | On $\operatorname{Im}\mathbb{H}$ |
 |---|---|---|
-| $L_{\tilde q}$, left multiplication | $s\mapsto \tilde q s$, lands in the span of $1,\vec q$ | $\vec p\mapsto -\langle\vec q,\vec p\rangle+q_0\vec p+\vec q\times\vec p$ |
-| $\rho_{\tilde q}$, right multiplication | $s\mapsto s\tilde q = \tilde q s$ | $\vec p\mapsto -\langle\vec p,\vec q\rangle+q_0\vec p+\vec p\times\vec q$ |
+| $L_{\tilde q}$, left multiplication | $s\mapsto \tilde q s$, lands in the span of $1,\vec q$ | $\vec p\mapsto -\langle\vec q,\vec p\rangle+q_t\vec p+\vec q\times\vec p$ |
+| $\rho_{\tilde q}$, right multiplication | $s\mapsto s\tilde q = \tilde q s$ | $\vec p\mapsto -\langle\vec p,\vec q\rangle+q_t\vec p+\vec p\times\vec q$ |
 | $\operatorname{Ad}_{\tilde q}$, adjoint | identity | rotation by the angle and axis of $\tilde q$ |
 | $S_{\tilde q}$, sandwich | $\langle\tilde q\rangle_{\natural}\,\mathrm{id}$ | $\langle\tilde q\rangle_{\natural}$ times the rotation of $\operatorname{Ad}_{\tilde q}$ |
 
@@ -349,7 +349,7 @@ Left and right multiplication are the operators of the regular representation, t
 
 ### The Sandwich and the Polar Form
 
-**Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_u$, while the sandwich carries the scale, $S_{\tilde q} = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \vec q/|\vec q|$ and $\cos\frac{\theta}{2} = q_0/|\tilde q|$.
+**Theorem.** Every non-zero quaternion has the polar form $\tilde q = |\tilde q|u$ with $u\in Sp(1)$, and the adjoint action depends only on the unit factor, $\operatorname{Ad}_{\tilde q} = \operatorname{Ad}_u$, while the sandwich carries the scale, $S_{\tilde q} = |\tilde q|^2\operatorname{Ad}_u$. The axis and angle of the rotation $\operatorname{Ad}_u$ are those of the polar form, $\mu = \vec q/|\vec q|$ and $\cos\frac{\theta}{2} = q_t/|\tilde q|$.
 
 **Proof.** The scale cancels in the adjoint action because $\tilde q$ and $\tilde q^{-1}$ contribute $|\tilde q|$ and $|\tilde q|^{-1}$, while the sandwich carries $\langle\tilde q\rangle_{\natural} = |\tilde q|^2$; the axis-angle identification is the polar form of *Quaternion Polar Element Representation*, where the half-angle is the angle of the unit factor.
 
@@ -379,7 +379,7 @@ $$
 
 using $v^2 = -1$. The formula shows that $\rho_v$ is the identity on the hyperplane $\langle \vec q,v\rangle = 0$ and equals $-v$ on $\mathbb{R}v$; linearity and norm preservation are immediate, and $\rho_v^2 = \mathrm{id}$ because the eigenvalues are $+1$ on the plane and $-1$ on the line, so the determinant is $-1$.
 
-**Remark.** On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_0,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_0,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the signed inner conjugation action $\operatorname{Ad}^{\mathrm{si}}_v(\vec q) = \alpha(v)\vec q v^{-1}$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, in which the grade involution supplies the sign that distinguishes odd from even elements.
+**Remark.** On the whole algebra $\mathbb{H}$, and not merely on $\operatorname{Im}\mathbb{H}$, the map $\rho_v$ is not the reflection in a hyperplane of $\mathbb{R}^4$: it also multiplies the scalar line by $-1$, so its fixed space is the two-dimensional plane $\operatorname{span}(e_t,v)^{\perp}$ and it acts as a rotation through $\pi$ in the plane $\operatorname{span}(e_t,v)$. The reflection statement above is the statement about the three-dimensional imaginary subspace, which is the space the rotation and reflection groups act on. This is the quaternionic instance of the signed inner conjugation action $\operatorname{Ad}^{\mathrm{si}}_v(\vec q) = \alpha(v)\vec q v^{-1}$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, in which the grade involution supplies the sign that distinguishes odd from even elements.
 
 ### Products of Two Reflections
 
@@ -407,7 +407,7 @@ Conversely every rotation is a product of two reflections. By the half-angle for
 
 **Proof.** This is the general Cartan–Dieudonné theorem of *Isometries and Orthogonal Transformations* specialised to a three-dimensional non-degenerate space: every isometry is a product of reflections in hyperplanes, and the number of factors can be reduced to at most the dimension, so at most three suffice. The parity is the determinant, which is $(-1)^{(\text{number of factors})}$ because each reflection has determinant $-1$.
 
-In the quaternion algebra the two-factor products are $\tilde q = v_1v_2$, acting as the rotation $\operatorname{Ad}_{\tilde q}$, and conversely every unit quaternion is a product of two unit vectors: given $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_0^2+|\vec q|^2 = 1$, choose a unit vector $a\perp\vec q$ and put $b = \vec q\times a - q_0a$, so that $ab = a\times b - \langle a,b\rangle = \vec q + q_0 = \tilde q$. Hence the even products of unit vectors are exactly the elements of $Sp(1)$, and the odd products are the elements of $\mathrm{Pin}(3)$ outside its even part, whose signed inner conjugations are the orientation-reversing isometries.
+In the quaternion algebra the two-factor products are $\tilde q = v_1v_2$, acting as the rotation $\operatorname{Ad}_{\tilde q}$, and conversely every unit quaternion is a product of two unit vectors: given $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_t^2+|\vec q|^2 = 1$, choose a unit vector $a\perp\vec q$ and put $b = \vec q\times a - q_ta$, so that $ab = a\times b - \langle a,b\rangle = \vec q + q_t = \tilde q$. Hence the even products of unit vectors are exactly the elements of $Sp(1)$, and the odd products are the elements of $\mathrm{Pin}(3)$ outside its even part, whose signed inner conjugations are the orientation-reversing isometries.
 
 ### The Pin Group
 
@@ -433,16 +433,16 @@ and an element of $O(3)$ is orientation-preserving exactly when it is a product 
 
 The adjoint action uses one unit quaternion. Using one on each side gives the full four-dimensional rotation group.
 
-**Definition.** For $(q_1, q_2)\in Sp(1)\times Sp(1)$ define
+**Definition.** For $(\tilde q_1, \tilde q_2)\in Sp(1)\times Sp(1)$ define
 
 $$
-\Phi_{(q_1,q_2)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(q_1,q_2)}(\vec q) = q_1\,\vec q\,q_2^{-1} = q_1\vec q\tilde{q}^{\natural}_2.
+\Phi_{(\tilde q_1,\tilde q_2)} : \mathbb{H}\longrightarrow\mathbb{H}, \qquad \Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\,\vec q\,\tilde q_2^{-1} = \tilde q_1\vec q\tilde{q}^{\natural}_2.
 $$
 
-**Theorem.** Each $\Phi_{(q_1,q_2)}$ is an $\mathbb{R}$-linear isometry of $\mathbb{H}\cong\mathbb{R}^4$ with determinant $+1$, and
+**Theorem.** Each $\Phi_{(\tilde q_1,\tilde q_2)}$ is an $\mathbb{R}$-linear isometry of $\mathbb{H}\cong\mathbb{R}^4$ with determinant $+1$, and
 
 $$
-\mathsf{M}_2 : Sp(1)\times Sp(1)\longrightarrow SO(4), \qquad (q_1,q_2)\mapsto\Phi_{(q_1,q_2)},
+\mathsf{M}_2 : Sp(1)\times Sp(1)\longrightarrow SO(4), \qquad (\tilde q_1,\tilde q_2)\mapsto\Phi_{(\tilde q_1,\tilde q_2)},
 $$
 
 is a surjective homomorphism with kernel $\{\pm(1,1)\}$. Hence
@@ -451,9 +451,9 @@ $$
 SO(4) \cong (Sp(1)\times Sp(1))/\{\pm(1,1)\} \cong \mathrm{Spin}(4).
 $$
 
-**Proof.** Linearity is clear. Norm preservation: $\langle q_1\vec q q_2^{-1}\rangle_{\natural} = \langle q_1\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle q_2\rangle_{\natural}^{-1} = \langle \vec q\rangle_{\natural}$. Homomorphism: $\Phi_{(q_1,q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(q_1r_1, q_2r_2)}$. Determinant: $\det\Phi_{(q_1,q_2)} = \pm1$ and depends continuously on $(q_1,q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(q_1,q_2)} = \mathrm{id}$ then evaluating at $\vec q = 1$ gives $q_1q_2^{-1} = 1$, so $q_1 = q_2 = \tilde q$, and then $\tilde q \vec q\tilde q^{-1} = \vec q$ for all $\vec q$, so $\tilde q\in\{\pm1\}$. Surjectivity: the differential of $\mathsf{M}_2$ at the identity is the linear map $(\vec q,\vec p)\mapsto\bigl(\vec r\mapsto \vec q\vec r - \vec r\vec p\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathrm{SO}(4)$; it is injective, because $\vec q\vec r = \vec r\vec p$ for all $\vec r$ gives $\vec q = \vec p$ on taking $\vec r = 1$ and then forces $\vec q$ to be central, hence $\vec q = \vec p = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\mathsf{M}_2$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything.
+**Proof.** Linearity is clear. Norm preservation: $\langle \tilde q_1\vec q \tilde q_2^{-1}\rangle_{\natural} = \langle \tilde q_1\rangle_{\natural}\langle \vec q\rangle_{\natural}\langle \tilde q_2\rangle_{\natural}^{-1} = \langle \vec q\rangle_{\natural}$. Homomorphism: $\Phi_{(\tilde q_1,\tilde q_2)}\circ\Phi_{(r_1,r_2)} = \Phi_{(\tilde q_1r_1, \tilde q_2r_2)}$. Determinant: $\det\Phi_{(\tilde q_1,\tilde q_2)} = \pm1$ and depends continuously on $(\tilde q_1,\tilde q_2)$, which ranges over the connected set $Sp(1)\times Sp(1)$, so it is constant and equals its value $\det(\mathrm{id}) = 1$ at $(1,1)$. Kernel: if $\Phi_{(\tilde q_1,\tilde q_2)} = \mathrm{id}$ then evaluating at $\vec q = 1$ gives $\tilde q_1\tilde q_2^{-1} = 1$, so $\tilde q_1 = \tilde q_2$, and then $\tilde q_1 \vec q\tilde q_1^{-1} = \vec q$ for all $\vec q$, so $\tilde q_1\in\{\pm1\}$. Surjectivity: the differential of $\mathsf{M}_2$ at the identity is the linear map $(\vec q,\vec p)\mapsto\bigl(\vec r\mapsto \vec q\vec r - \vec r\vec p\bigr)$ from $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$ to $\mathrm{SO}(4)$; it is injective, because $\vec q\vec r = \vec r\vec p$ for all $\vec r$ gives $\vec q = \vec p$ on taking $\vec r = 1$ and then forces $\vec q$ to be central, hence $\vec q = \vec p = 0$; since both spaces have dimension $6$, it is an isomorphism. Hence $\mathsf{M}_2$ is a local diffeomorphism, its image is open, and, being a compact subgroup, it is also closed in the connected group $SO(4)$, so the image is everything.
 
-The kernel has order two, so $SO(4)$ is doubly covered by $Sp(1)\times Sp(1)$, which is simply connected as $S^3\times S^3$; this is the Spin group $\mathrm{Spin}(4)$ of the four-dimensional Euclidean space. Whereas $SO(3)$ is simple and its universal cover is the simple group $Sp(1)$, the group $SO(4)$ is not simple, and the two factors of the cover are the left and the right multiplications. The adjoint action of the diagonal subgroup $q_1 = q_2 = \tilde q$ is $\operatorname{Ad}_{\tilde q}$ on $\operatorname{Im}\mathbb{H}$ together with the identity on the scalar line, and it is the copy of $SO(3)$ found earlier.
+The kernel has order two, so $SO(4)$ is doubly covered by $Sp(1)\times Sp(1)$, which is simply connected as $S^3\times S^3$; this is the Spin group $\mathrm{Spin}(4)$ of the four-dimensional Euclidean space. Whereas $SO(3)$ is simple and its universal cover is the simple group $Sp(1)$, the group $SO(4)$ is not simple, and the two factors of the cover are the left and the right multiplications. The adjoint action of the diagonal subgroup $\tilde q_1 = \tilde q_2$ is $\operatorname{Ad}_{\tilde q_1}$ on $\operatorname{Im}\mathbb{H}$ together with the identity on the scalar line, and it is the copy of $SO(3)$ found earlier.
 
 ## Homotopy Groups and the Double Cover
 
@@ -487,7 +487,7 @@ The rotation about the unit axis $u$ through the angle $\theta$ is $\operatornam
 
 The reflection in the plane $v^{\perp}$ with unit normal $v$ is $\rho_v(\vec q) = -v\vec q v^{-1} = \vec q - 2\langle \vec q,v\rangle v$, an orientation-reversing involution; the product of two reflections is the rotation $\operatorname{Ad}_{v_1v_2}$ about the intersection line, and by Cartan–Dieudonné every isometry of $\mathbb{R}^3$ is a product of at most three reflections. The reflections and rotations together are the image of the Pin group $\mathrm{Pin}(3)$, whose even part is $\mathrm{Spin}(3)\cong Sp(1)$, and $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$.
 
-Finally, the two-sided action $\Phi_{(q_1,q_2)}(\vec q) = q_1\vec q q_2^{-1}$ is a surjective homomorphism $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4)\cong \mathrm{Spin}(4)\cong (Sp(1)\times Sp(1))/\{\pm1\}$; the diagonal copy of $Sp(1)$ in it is the adjoint action that gives the rotations of the three-dimensional imaginary subspace.
+Finally, the two-sided action $\Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\vec q \tilde q_2^{-1}$ is a surjective homomorphism $Sp(1)\times Sp(1)\to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4)\cong \mathrm{Spin}(4)\cong (Sp(1)\times Sp(1))/\{\pm1\}$; the diagonal copy of $Sp(1)$ in it is the adjoint action that gives the rotations of the three-dimensional imaginary subspace.
 
 The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the adjoint action rescaled, $S_{\tilde q} = \langle\tilde q\rangle_{\natural}\operatorname{Ad}_{\tilde q}$, so the two coincide exactly on the unit slice and differ elsewhere by the factor $\langle\tilde q\rangle_{\natural}$; the sandwich multiplies the quaternion norm by $\langle\tilde q\rangle_{\natural}^2$ and has determinant $\langle\tilde q\rangle_{\natural}^4$. It preserves the scalar and the vector subspaces, acting by the identity, respectively by the scale $\langle\tilde q\rangle_{\natural}$, on the scalar line and by a rotation, respectively a scaled rotation, on the vector subspace; the action table records this beside the behaviour of the left and right multiplications $L_{\tilde q}$ and $\rho_{\tilde q}$ of the regular representation, which preserve neither subspace. For $\tilde q\neq0$ all four operators are invertible, and the fixed subspace of the adjoint action is the centraliser of $\tilde q$, with the axis line as the fixed direction on the imaginary subspace.
 
@@ -496,9 +496,9 @@ The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
-| $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_t$, vector part $\vec q$ |
+| $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | Quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $U\tilde q = \tilde q/\lvert\tilde q\rvert$, $T\tilde q = \lvert\tilde q\rvert$ | Versor and tensor of $\tilde q$ (Hamilton); a versor is a unit quaternion, so $Sp(1)$ is the group of versors |
 | $\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3$ | Imaginary quaternions, the space of vectors |
@@ -512,14 +512,14 @@ The sandwich $S_{\tilde q}(\vec q) = \tilde q \vec q\tilde{q}^{\natural}$ is the
 | $L_{\tilde q}(\vec q) = \tilde q \vec q$, $\rho_{\tilde q}(\vec q) = \vec q\tilde q$ | Left and right multiplication operators of the regular representation |
 | $R_{\tilde q}$ | Matrix of $\operatorname{Ad}_{\tilde q}$ on $\operatorname{Im}\mathbb{H}$ |
 | $K(Q)$ | Fitting matrix of a real $3\times3$ matrix $Q$, with $q^{T}K(Q)q = \operatorname{tr}(R_{\tilde q}^{T}Q)$; its largest eigenvector is the quaternion of the rotation closest to $Q$ |
-| $\operatorname{ad}_\vec q(\vec p) = [\vec q,\vec p] = 2(\vec q\times \vec p)$ | Adjoint map of the Lie algebra $\operatorname{Im}\mathbb{H}$ |
+| $\operatorname{ad}_{\vec q}(\vec p) = [\vec q,\vec p] = 2(\vec q\times \vec p)$ | Adjoint map of the Lie algebra $\operatorname{Im}\mathbb{H}$ |
 | $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)\cong\mathrm{SU}(2)$ | Lie algebra of $Sp(1)\cong SU(2)$ and of $SO(3)$ |
 | $SO(3)$ | Rotation group of $\mathbb{R}^3$, $\cong Sp(1)/\{\pm1\}$ |
 | $O(3)\cong SO(3)\rtimes\mathbb{Z}/2\mathbb{Z}$ | Orthogonal group of $\mathbb{R}^3$ |
 | $\rho_v(\vec q) = -v\vec q v^{-1}$ | Reflection in the plane $v^{\perp}$, $v$ a unit vector |
 | $\mathrm{Pin}(3)$ | Pin group, generated by the unit vectors |
 | $\mathrm{Spin}(3) = \mathrm{Pin}(3)\cap\mathrm{Cl}^0_{3,0}\cong Sp(1)$ | Spin group; $\mathrm{Cl}_{3,0}$ is the Clifford algebra of the Euclidean form on $\mathbb{R}^3$ and $\mathrm{Cl}^0_{3,0}$ its even part |
-| $\Phi_{(q_1,q_2)}(\vec q) = q_1\vec q q_2^{-1}$ | Two-sided action of $Sp(1)\times Sp(1)$ |
+| $\Phi_{(\tilde q_1,\tilde q_2)}(\vec q) = \tilde q_1\vec q \tilde q_2^{-1}$ | Two-sided action of $Sp(1)\times Sp(1)$ |
 | $SO(4)\cong\mathrm{Spin}(4)\cong(Sp(1)\times Sp(1))/\{\pm1\}$ | Rotation group of $\mathbb{R}^4$ |
 | $\pi_1(SO(3))\cong\mathbb{Z}/2\mathbb{Z}$ | Fundamental group of the rotation group |
 

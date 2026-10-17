@@ -6,7 +6,7 @@ The biquaternion algebra is the even part of the Clifford algebra of Minkowski s
 
 The point of stating this separately is that the parity is **not a second structure**. The signed inner conjugation $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)yx^{-1}$ of *Biquaternion Versors and the Orthogonal Group* is not a second conjugation beside the ordinary one, and the odd slot is not a second copy of the algebra: the two are tied by the multiplication rule odd $\times$ odd $=$ even, and that rule is what makes the reflection, the parity and the graded bracket work. Two statements make it sharp, and both are proved below. The first is that the twist $\alpha$ is itself a conjugation, by the volume element $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$: the parity twist is the conjugation by the pseudoscalar, so it is not new data but the grading read as an inner automorphism. The second is that two odd steps compose to an even one, so the composite of two signed conjugations by fermionic elements is an ordinary conjugation by a bosonic element — the two signs cancel. Two reflections compose to a rotation, and the composite element is an element of the biquaternion algebra.
 
-The ambient algebra $\mathrm{Cl}_{1,3}$ is announced as $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$; the identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the dictionary $e_1\mapsto\gamma^2\gamma^3$, $e_2\mapsto\gamma^3\gamma^1$, $e_3\mapsto\gamma^1\gamma^2$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Other Algebraic Element Representations*; the two slots of the envelope, the signed inner conjugation, the reflection and the determinants of the odd and even versors are *Biquaternion Versors and the Orthogonal Group*; the volume element and its two actions are the same article, where $\mathrm{Ad}^{\alpha}_\Omega(v)=-v$ is proved; the fermionic mode and the identity $(-1)^F=ie_3$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; and the parity of the state space, $\Gamma(-I)=(-1)^{N}$, is *The Fermionic Fock Space in Biquaternionic Form*. Nothing owned by those articles is re-derived.
+The ambient algebra $\mathrm{Cl}_{1,3}$ is announced as $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$; the identification $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}$, the dictionary $\vec e_x\mapsto\gamma^2\gamma^3$, $\vec e_y\mapsto\gamma^3\gamma^1$, $\vec e_z\mapsto\gamma^1\gamma^2$, $i\mapsto-\Omega$ and the chirality operator $\gamma^5=i\Omega$ are *Biquaternion Other Algebraic Element Representations*; the two slots of the envelope, the signed inner conjugation, the reflection and the determinants of the odd and even versors are *Biquaternion Versors and the Orthogonal Group*; the volume element and its two actions are the same article, where $\mathrm{Ad}^{\alpha}_\Omega(v)=-v$ is proved; the fermionic mode and the identity $(-1)^F=i\vec e_z$ are *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; and the parity of the state space, $\Gamma(-I)=(-1)^{N}$, is *The Fermionic Fock Space in Biquaternionic Form*. Nothing owned by those articles is re-derived.
 
 ## The Grading of the Ambient Algebra
 
@@ -94,19 +94,19 @@ Several distinct $\mathbb{Z}/2$'s coexist in the framework, and the parity of th
 | frame grading $\beta$ | large/small components, Foldy–Wouthuysen | no; a frame-dependent split |
 | number grading $N$ | the Fock space by total particle number | a grading of the state space |
 
-The first row is the grading of this article; the second is the grading the supersymmetry article uses, and *Supersymmetric Quantum Physics in the Biquaternion Framework* records that the chirality grading must not be conflated with the frame grading. The third row is explicitly **not** an algebra grading, because the product of two Hermitian elements need not be Hermitian; the counterexample $(ie_1)(ie_2)=-e_3$ is the one recorded in the three-gradings section of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The fifth is a grading of the state space and never of the algebra.
+The first row is the grading of this article; the second is the grading the supersymmetry article uses, and *Supersymmetric Quantum Physics in the Biquaternion Framework* records that the chirality grading must not be conflated with the frame grading. The third row is explicitly **not** an algebra grading, because the product of two Hermitian elements need not be Hermitian; the counterexample $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is the one recorded in the three-gradings section of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*. The fifth is a grading of the state space and never of the algebra.
 
-**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N}=\prod_{\text{modes}}ie_3^{(\text{mode})}$, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra, which is the open item recorded by *The Fermionic Fock Space in Biquaternionic Form*. For one mode, $(-1)^F=ie_3$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic.
+**What the grading does not supply.** The parity of a many-mode field is a product over the modes, $\Gamma(-I)=(-1)^{N}=\prod_{\text{modes}}i\vec e_z^{(\text{mode})}$, and the product over modes is not an element of $\mathbb{B}$: the parity of the field is external to the algebra, which is the open item recorded by *The Fermionic Fock Space in Biquaternionic Form*. For one mode, $(-1)^F=i\vec e_z$ is an element of the algebra and is even, as the grading requires of a parity operator: the operator that measures the fermion parity is itself bosonic.
 
 ## Worked Cases
 
 ### The Twist on the Two Slots
 
-In $\mathrm{Cl}_{1,3}$, with the dictionary $e_1=\gamma^2\gamma^3$ of *Biquaternion Other Algebraic Element Representations*:
+In $\mathrm{Cl}_{1,3}$, with the dictionary $\vec e_x=\gamma^2\gamma^3$ of *Biquaternion Other Algebraic Element Representations*:
 
 $$
 \Omega\gamma^0\Omega^{-1}=-\gamma^0,\qquad
-\Omega\gamma^1\gamma^2\Omega^{-1}=\gamma^1\gamma^2=e_3,\qquad
+\Omega\gamma^1\gamma^2\Omega^{-1}=\gamma^1\gamma^2=\vec e_z,\qquad
 \Omega\,i\,\Omega^{-1}=i .
 $$
 
@@ -119,10 +119,10 @@ The generators $\gamma^1$ and $\gamma^2$ are both odd and both of square $-1$. T
 $$
 \mathrm{Ad}^{\alpha}_{\gamma^1}\circ\mathrm{Ad}^{\alpha}_{\gamma^2}
 =\mathrm{Ad}^{\alpha}_{\gamma^1\gamma^2}
-=\mathrm{Ad}_{e_3},
+=\mathrm{Ad}_{\vec e_z},
 $$
 
-the last equality because $\gamma^1\gamma^2=e_3$ is an element of the biquaternion algebra. The composite is an ordinary conjugation by a bosonic element and is a rotation. Two reflections of determinant $-1$ have composed to a rotation of determinant $+1$, and the composite element is a quaternion unit: the parity word of the isometry is the grading of the two factors.
+the last equality because $\gamma^1\gamma^2=\vec e_z$ is an element of the biquaternion algebra. The composite is an ordinary conjugation by a bosonic element and is a rotation. Two reflections of determinant $-1$ have composed to a rotation of determinant $+1$, and the composite element is a quaternion unit: the parity word of the isometry is the grading of the two factors.
 
 ### The Square of a Generator
 
@@ -140,7 +140,7 @@ The ambient Clifford algebra is $\mathbb{Z}/2$-graded, $\mathrm{Cl}_{1,3}=\mathr
 
 The twist $\alpha$ of the signed inner conjugation is a conjugation: by the volume element $\Omega=\gamma^0\gamma^1\gamma^2\gamma^3$, equivalently by the central scalar imaginary $i=-\Omega$, one has $\alpha(x)=\Omega x\Omega^{-1}=(-1)^{\lvert x\rvert}x$. The signed inner conjugation is therefore the ordinary conjugation with a chirality factor inserted on the left, and the factor is invisible on the bosonic sector and is the minus sign on the fermionic one. Two odd steps compose to an even one: $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$ with $xz$ even whenever $x$ and $z$ are odd, so the composite of two signed conjugations by fermionic elements is an ordinary conjugation by a bosonic element. Physically this is the reflection count: two reflections compose to a rotation, the composite element is a bivector and hence an element of the biquaternion algebra, and the parity of the reflection word is the $\mathbb{Z}/2$ behind $\mathrm{Pin}/\mathrm{Spin}$ and the split of $O(1,3)$ from $SO(1,3)$.
 
-The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$'s in the framework: the chirality $L/R$ grading of the supersymmetry article, the sector splitting by the dagger, which is not an algebra grading, the frame grading $\beta$, and the number grading of the Fock space. The parity operator is itself bosonic, $(-1)^F=ie_3$ for one mode, and for the field it is a product over modes and therefore external to the algebra.
+The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$'s in the framework: the chirality $L/R$ grading of the supersymmetry article, the sector splitting by the dagger, which is not an algebra grading, the frame grading $\beta$, and the number grading of the Fock space. The parity operator is itself bosonic, $(-1)^F=i\vec e_z$ for one mode, and for the field it is a product over modes and therefore external to the algebra.
 
 ## Summary of Notation
 
@@ -155,9 +155,9 @@ The grading is the parity of the theory, and it is one of several $\mathbb{Z}/2$
 | $\gamma^5=i\Omega$, $(\gamma^5)^2=+1$ | The chirality operator, the involution interpretation of the same element |
 | $\mathrm{Ad}^{\alpha}_x=\alpha(x)\,(\ )\,x^{-1}$ | Signed inner conjugation, conjugation with a chirality factor on the left |
 | $\mathrm{Ad}^{\alpha}_x\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz}$ | Composition; ordinary composite for two odd factors |
-| $\mathrm{Ad}^{\alpha}_{\gamma^1}\mathrm{Ad}^{\alpha}_{\gamma^2}=\mathrm{Ad}_{e_3}$ | Two reflections give a rotation by a bosonic element |
+| $\mathrm{Ad}^{\alpha}_{\gamma^1}\mathrm{Ad}^{\alpha}_{\gamma^2}=\mathrm{Ad}_{\vec e_z}$ | Two reflections give a rotation by a bosonic element |
 | $\mathrm{Cl}^1=\mathbb{B}\gamma$ | The odd slot as a coset; not a subalgebra |
-| $(-1)^F=ie_3$ | Parity of one mode, an even element; external for the field |
+| $(-1)^F=i\vec e_z$ | Parity of one mode, an even element; external for the field |
 
 ## Further Reading
 

@@ -21,11 +21,11 @@ These are the closed subgroups of the general linear groups defined by polynomia
 | $SL_n(\mathbb{C})$ | $2n^2 - 2$ | connected and simply connected | *Lie Groups* |
 | $O(n)$ | $n(n-1)/2$ | compact, two components; identity component $SO(n)$ | *Lie Groups* |
 | $SO(n)$ | $n(n-1)/2$ | compact connected; $\pi_1 = \mathbb{Z}/2$ for $n \geq 3$ | *Lie Groups*; *The Orthogonal Lie Algebra* |
-| $U(n)$ | $n^2$ | compact connected; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
+| $\mathrm{U}(n)$ | $n^2$ | compact connected; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
 | $SU(n)$ | $n^2 - 1$ | compact, connected and simply connected | *Lie Groups* |
 | $Sp(n)$ | $n(2n+1)$ | compact, connected and simply connected; the quaternionic unitary group | *Lie Groups* |
 | $Sp(2n,\mathbb{R})$ | $n(2n+1)$ | the real symplectic group, $A^TJA = J$ | *Lie Groups* |
-| $S^1 = U(1) = SO(2)$ | $1$ | compact connected abelian; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
+| $S^1 = \mathrm{U}(1) = SO(2)$ | $1$ | compact connected abelian; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
 | $S^3 = SU(2) = Sp(1)$ | $3$ | compact, connected and simply connected; the unit quaternions | *Lie Groups* |
 | $\operatorname{Spin}(n)$, $n \geq 3$ | $n(n-1)/2$ | compact, connected and simply connected; the double cover of $SO(n)$ | *Lie Groups*; *List of Clifford Algebras and Spin Groups* |
 | $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $8$ | the units of the biquaternion algebra, a real Lie group | *Lie Groups*; *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
@@ -44,7 +44,7 @@ The elementary Lie groups come from vector spaces, from their quotients by latti
 | the affine group $\mathbb{R}^n \rtimes GL_n(\mathbb{R})$ | $n^2 + n$ | the automorphism group of affine $n$-space | *List of Affine and Euclidean Groups* |
 | the Lorentz group $O(1,3)$ | $6$ | the isometry group of Minkowski space; $SO^+(1,3)$ has cover $SL_2(\mathbb{C})$ | *Lie Groups*; *Pseudo-Riemannian and Lorentzian Geometry* |
 | $S^3/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$ | $3$ | compact connected, not simply connected | *Lie Groups* |
-| the complex and quaternionic unit spheres | $2n-1$ and $4n-1$ | closed under multiplication only for $n = 1$ in the complex case, and for $n = 1, 2$ in the quaternionic case, where $S^7$ is a Moufang loop and not a group | *Lie Groups*; *Octonion Element Representations* |
+| the complex and quaternionic unit spheres | $2n-1$ and $4n-1$ | closed under multiplication only for $n = 1$ in the complex case, and for $n = 1, 2$ in the quaternionic case, where $S^7$ is a Moufang loop and not a group | *Lie Groups* |
 
 ## The Simple Groups and Their Lie Algebras by Type
 
@@ -56,11 +56,11 @@ A semisimple complex Lie algebra is a direct sum of simple algebras, and the sim
 | $B_n$ | $\mathrm{SO}(2n+1,\mathbb{C})$ | $n$ | $n(2n+1)$ | $\operatorname{Spin}(2n+1)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
 | $C_n$ | $\mathrm{Sp}(2n,\mathbb{C})$ | $n$ | $n(2n+1)$ | $Sp(n)$ | *Root Systems and Classification* |
 | $D_n$ | $\mathrm{SO}(2n,\mathbb{C})$ | $n$ | $n(2n-1)$ | $\operatorname{Spin}(2n)$ | *Root Systems and Classification*; *The Orthogonal Lie Algebra* |
-| $G_2$ | $\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$ | $2$ | $14$ | $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $F_4$ | $\mathrm{F}_4$ | $4$ | $52$ | $F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O}))$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_6$ | $\mathrm{E}_6$ | $6$ | $78$ | the simply connected compact $E_6$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_7$ | $\mathrm{E}_7$ | $7$ | $133$ | the simply connected compact $E_7$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
-| $E_8$ | $\mathrm{E}_8$ | $8$ | $248$ | the simply connected compact $E_8$ | *Root Systems and Classification*; *Octonions and the Exceptional Lie Groups* |
+| $G_2$ | $\mathrm{G}_2 = \operatorname{Der}(\mathbb{O})$ | $2$ | $14$ | $G_2 = \operatorname{Aut}(\mathbb{O})$ | *Root Systems and Classification* |
+| $F_4$ | $\mathrm{F}_4$ | $4$ | $52$ | $F_4 = \operatorname{Aut}(\mathrm{H}_3(\mathbb{O}))$ | *Root Systems and Classification* |
+| $E_6$ | $\mathrm{E}_6$ | $6$ | $78$ | the simply connected compact $E_6$ | *Root Systems and Classification* |
+| $E_7$ | $\mathrm{E}_7$ | $7$ | $133$ | the simply connected compact $E_7$ | *Root Systems and Classification* |
+| $E_8$ | $\mathrm{E}_8$ | $8$ | $248$ | the simply connected compact $E_8$ | *Root Systems and Classification* |
 
 The low-dimensional coincidences of the classification are recorded with it: $B_2 = C_2$ and $A_3 = D_3$, and $A_1 = B_1 = C_1$; on the group side, $Sp(1) \cong SU(2)$, $Sp(2,\mathbb{R}) \cong SL_2(\mathbb{R})$, and $\mathrm{SO}(3,1) \cong \mathrm{SL}_2(\mathbb{C})$ as complex algebras.
 
@@ -94,7 +94,7 @@ The passage from the group to the algebra is a functor, and its failure to be an
 | the exponential map of $SL_2(\mathbb{R})$ | it is not surjective; the image omits the matrices with negative eigenvalue and two distinct real eigenvalues | *Lie Groups*; *The Lie Algebra and the Exponential Map* |
 | the Lie functor | it is neither full nor faithful; it sees only the local structure, and the global form needs simple connectivity | *The Lie Correspondence and the Adjoint Representation* |
 | the matrix group of a disconnected group | a homomorphism from a disconnected source is not determined by its differential at the identity | *The Lie Correspondence and the Adjoint Representation* |
-| $O(n)$, $U(n)$ as group-layer objects | they are *defined* by a form, so they are introduced among the classical geometric groups and are listed here only as matrix Lie groups | *List of Classical Geometric Groups* |
+| $O(n)$, $\mathrm{U}(n)$ as group-layer objects | they are *defined* by a form, so they are introduced among the classical geometric groups and are listed here only as matrix Lie groups | *List of Classical Geometric Groups* |
 
 Objects that a reader may expect in a list of Lie groups, and does not find here.
 
@@ -108,7 +108,7 @@ Objects that a reader may expect in a list of Lie groups, and does not find here
 
 ## Summary
 
-This article has listed the Lie groups of the corpus with their Lie algebras, dimensions and ranks: the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$ and $Sp(2n,\mathbb{R})$; the abelian, nilpotent and semidirect examples, the torus, the Heisenberg group, the Euclidean and affine groups and the Lorentz group; the simple groups and their algebras by type $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$, with their ranks and dimensions; and the correspondence between a group and its algebra, the exponential map, the Campbell–Baker–Hausdorff formula, Lie's third theorem, the simply connected cover, the adjoint representation and the structure theory of the algebra. Beside the examples stand the non-examples: $S^7$, the irrational line of the torus, the quotient by a non-closed subgroup, the exponential map of $SL_2(\mathbb{R})$ and the failures of the global correspondence. The list introduces and proves nothing; it is the index of the Lie theory of the corpus.
+This article has listed the Lie groups of the corpus with their Lie algebras, dimensions and ranks: the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$ and $Sp(2n,\mathbb{R})$; the abelian, nilpotent and semidirect examples, the torus, the Heisenberg group, the Euclidean and affine groups and the Lorentz group; the simple groups and their algebras by type $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$, with their ranks and dimensions; and the correspondence between a group and its algebra, the exponential map, the Campbell–Baker–Hausdorff formula, Lie's third theorem, the simply connected cover, the adjoint representation and the structure theory of the algebra. Beside the examples stand the non-examples: $S^7$, the irrational line of the torus, the quotient by a non-closed subgroup, the exponential map of $SL_2(\mathbb{R})$ and the failures of the global correspondence. The list introduces and proves nothing; it is the index of the Lie theory of the corpus.
 
 ## Summary of Notation
 
@@ -123,8 +123,8 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $d\varphi_e$ | the differential of a homomorphism at the identity |
 | $\mathrm{SL}_n$, $\mathrm{SO}_n$, $\mathrm{Sp}_n$, $\mathrm{G}_2$, $\mathrm{F}_4$, $\mathrm{E}_6$, $\mathrm{E}_7$, $\mathrm{E}_8$ | the simple Lie algebras by type |
 | $A_n$, $B_n$, $C_n$, $D_n$, $G_2$, $F_4$, $E_6$, $E_7$, $E_8$ | the types of the classification, with $r$ the rank and $\Phi$ the root system |
-| $GL_n(\mathbb{K})$, $SL_n(\mathbb{K})$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, $Sp(2n,\mathbb{R})$ | the classical matrix groups |
-| $T^n = U(1)^n$ | the maximal torus of the compact examples |
+| $GL_n(\mathbb{K})$, $SL_n(\mathbb{K})$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $Sp(2n,\mathbb{R})$ | the classical matrix groups |
+| $T^n = \mathrm{U}(1)^n$ | the maximal torus of the compact examples |
 | $\operatorname{Spin}(n)$ | the universal cover of $SO(n)$ for $n \geq 3$ |
 | $Z(G)$, $\mathrm{Z}(\mathrm{G})$ | the centre of a group and of an algebra |
 | $\kappa$ | the Killing form |

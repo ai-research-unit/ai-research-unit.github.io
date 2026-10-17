@@ -9,7 +9,7 @@ quadratic space of dimension $m$, the variable ranges over the vector subspace
 $\mathbb{R}^{m+1}=\operatorname{span}(1,e_1,\dots,e_m)$ of $A$, and the operator is
 
 $$
-D = \partial_0+\sum_{i=1}^{m}e_i\,\partial_i = \sum_{\mu=0}^{m}e_\mu\,\partial_\mu , \qquad e_0=1 ,
+D = \partial/\partial x_0+\sum_{i=1}^{m}e_i\,\partial/\partial x_i = \sum_{\mu=0}^{m}e_\mu\,\partial/\partial x_\mu , \qquad e_0=1 ,
 $$
 
 acting on the smooth $\mathcal{S}$-valued functions of the variable by the one-sided Clifford action
@@ -53,7 +53,7 @@ Modules with Inner Conjugation*. The **operator** of this article acts on a $C^1
 $f:\Omega\to\mathcal{S}$ on an open set $\Omega\subseteq\mathbb{R}^{m+1}$ by
 
 $$
-(Df)(x) = \sum_{\mu=0}^{m}e_\mu\,\partial_\mu f(x) ,
+(Df)(x) = \sum_{\mu=0}^{m}e_\mu\,\partial/\partial x_\mu f(x) ,
 $$
 
 the coefficient $e_\mu$ acting on the value by the module action and the derivative acting on the
@@ -63,20 +63,20 @@ in the sense of *Regularity and the Cauchy–Riemann Operator*.
 **Definition.** The **conjugate operator** is
 
 $$
-\bar D = \partial_0-\sum_{i=1}^{m}e_i\,\partial_i ,
+\bar D = \partial/\partial x_0-\sum_{i=1}^{m}e_i\,\partial/\partial x_i ,
 $$
 
 and the two are related by the Clifford conjugation $x^{\natural}=x_0-\sum_{i\ge1}x_ie_i$ extended
 to $A$ as the anti-automorphism with $(uv)^{\natural}=v^{\natural}u^{\natural}$.
 
 **Remark (the two names, reconciled).** The operator $D$ is the Cauchy–Riemann operator of the
-corpus; the name *Dirac operator* is the classical name of the operator $\sum_\mu e_\mu\partial_\mu$
+corpus; the name *Dirac operator* is the classical name of the operator $\sum_\mu e_\mu\partial/\partial x_\mu$
 in the literature, and the corpus reserves it for the self-adjoint family $\sum_jc(e_j)\nabla_{e_j}$
 of *Dirac Differential Operators*. The two are not the same operator: the family of that article has
 all its coefficients skew for the fibre metric, while $D$ carries the single Hermitian coefficient
 $e_0=1$, which is the origin of the failure of symmetry recorded below. The present article uses the
 symbol $D$ throughout and the name *Dirac operator* only in its title and in this remark. That $D$
-and the self-adjoint vector operator $\sum_{i\ge1}e_i\partial_i$ are the two faces of one
+and the self-adjoint vector operator $\sum_{i\ge1}e_i\partial/\partial x_i$ are the two faces of one
 factorisation of the Laplacian is stated in *Dirac Differential Operators*.
 
 ### The Symbol and Ellipticity
@@ -108,7 +108,7 @@ $\epsilon_0=1$, $\epsilon_i=-1$. The value $|\xi|^2$ is a positive real number, 
 and the displayed inverse is immediate. The computation is identical in the other order because
 $\xi_0$ is central and the two factors commute.
 
-**Corollary.** The equality $D\bar D=\bar DD=\Delta$ holds, $\Delta=\sum_{\mu=0}^{m}\partial_\mu^2$
+**Corollary.** The equality $D\bar D=\bar DD=\Delta$ holds, $\Delta=\sum_{\mu=0}^{m}\partial^2/\partial x_\mu^2$
 being the Laplacian of the ambient space, and $D$ is a first-order elliptic operator with constant
 coefficients.
 
@@ -121,7 +121,7 @@ Operator*.
 **Proposition (divergence form).** Because the coefficients are constant,
 
 $$
-Df = \sum_{\mu=0}^{m}\partial_\mu\bigl(e_\mu f\bigr) ,
+Df = \sum_{\mu=0}^{m}\partial/\partial x_\mu\bigl(e_\mu f\bigr) ,
 $$
 
 so $D$ is the divergence of the $A$-valued field with components $e_\mu f$, and the divergence
@@ -133,7 +133,7 @@ $$
 $$
 
 *Proof.* The derivative of a constant times a function is the constant times the derivative, and
-$\partial_\mu(e_\mu f)=e_\mu\partial_\mu f$.
+$\partial/\partial x_\mu(e_\mu f)=e_\mu\partial/\partial x_\mu f$.
 
 ## The Square and the Failure of Symmetry
 
@@ -158,33 +158,33 @@ Adjoint of the One-Sided Action with Hermitian Adjoint*.
 **Proposition (the adjoint of $D$).** On compactly supported smooth functions,
 
 $$
-D^{*} = -\partial_0+\sum_{i=1}^{m}e_i\partial_i = -\bar D .
+D^{*} = -\partial/\partial x_0+\sum_{i=1}^{m}e_i\partial/\partial x_i = -\bar D .
 $$
 
 *Proof.* The Clifford coefficients $e_i$ for $i\ge1$ are skew for the module form, so $e_i^{*}=-e_i$
 under the adjoint of the one-sided action, while the scalar coefficient $e_0=1$ is Hermitian,
-$e_0^{*}=e_0$; the coordinate derivative satisfies $\partial_\mu^{*}=-\partial_\mu$ on compactly
+$e_0^{*}=e_0$; the coordinate derivative satisfies $(\partial/\partial x_\mu)^{*}=-\partial/\partial x_\mu$ on compactly
 supported functions. Reversing the factors in the adjoint of a product,
-$(e_\mu\partial_\mu)^{*}=\partial_\mu^{*}e_\mu^{*}=(-\partial_\mu)e_\mu^{*}$, which is $-\partial_0$
-for $\mu=0$ and $+e_i\partial_i$ for $\mu=i\ge1$. Summing over $\mu$ gives
-$D^{*}=-\partial_0+\sum_{i\ge1}e_i\partial_i=-\bar D$.
+$(e_\mu\partial/\partial x_\mu)^{*}=(\partial/\partial x_\mu)^{*}e_\mu^{*}=(-\partial/\partial x_\mu)e_\mu^{*}$, which is $-\partial/\partial x_0$
+for $\mu=0$ and $+e_i\partial/\partial x_i$ for $\mu=i\ge1$. Summing over $\mu$ gives
+$D^{*}=-\partial/\partial x_0+\sum_{i\ge1}e_i\partial/\partial x_i=-\bar D$.
 
 **Corollary (the operator is not symmetric).** $D$ satisfies $D^{*}=-\bar D$, so $D$ is symmetric
-only if $D=-\bar D$, that is only if $\partial_0=0$; on the full space of functions $D$ is neither
+only if $D=-\bar D$, that is only if $\partial/\partial x_0=0$; on the full space of functions $D$ is neither
 symmetric nor normal. Its **self-adjoint part** is the vector operator
-$D_{\mathrm{sa}}=\tfrac12(D-D^{*})=\sum_{i\ge1}e_i\partial_i$, and its **skew-adjoint part** is
-$\partial_0$. The factorisation of the Laplacian can be read through the split: $D\bar D=\Delta$ is
+$D_{\mathrm{sa}}=\tfrac12(D-D^{*})=\sum_{i\ge1}e_i\partial/\partial x_i$, and its **skew-adjoint part** is
+$\partial/\partial x_0$. The factorisation of the Laplacian can be read through the split: $D\bar D=\Delta$ is
 the product of two distinct operators, while $D_{\mathrm{sa}}^2=-\Delta$ is the square of one
 self-adjoint operator.
 
 *Proof.* The split is immediate from the Proposition. For the square, $D_{\mathrm{sa}}$ has all
 coefficients skew, so expanding $D_{\mathrm{sa}}^2$ gives
-$\sum_{i,j}e_ie_j\partial_i\partial_j =-\sum_i\partial_i^2=-\Delta$.
+$\sum_{i,j}e_ie_j\partial^2/\partial x_i\partial x_j =-\sum_i\partial^2/\partial x_i^2=-\Delta$.
 
 **Remark (the two factorisations, and which article owns which).** The operator $D_{\mathrm{sa}}$
 and its spectral theory belong to *Dirac Differential Operators*; the present article records the
 split and the factorisations, and does not develop the spectrum. In the complex case $m=1$, where
-$A\cong\mathbb{C}$, the split degenerates: $D_{\mathrm{sa}}=e_1\partial_1$ and $\partial_0$ are the
+$A\cong\mathbb{C}$, the split degenerates: $D_{\mathrm{sa}}=e_1\partial/\partial x_1$ and $\partial/\partial x_0$ are the
 two halves of the classical Cauchy–Riemann operator, and their sum is the holomorphic operator on
 the one hand and its conjugate on the other.
 
@@ -266,7 +266,7 @@ the two facts together are what make a Cauchy theory available, and both are the
 symbol computation and of the Fischer decomposition above.
 
 **Example (the complex case, $m=1$).** Here $A\cong\mathbb{C}$ with $e_1=i$, the operator is
-$D=\partial_0+i\partial_1$, the monogenic functions are the holomorphic ones, and the Fischer
+$D=\partial/\partial x_0+i\partial/\partial x_1$, the monogenic functions are the holomorphic ones, and the Fischer
 decomposition $\mathcal{P}_k=\bigoplus_{j=0}^{k}\bar z^{\,j}\mathbb{C}z^{k-j}$ is the monomial basis
 of the homogeneous polynomials of degree $k$. The dimension formula reads
 $\dim_{\mathbb{C}}\mathcal{M}_k=\binom{k+1}{k}-\binom{k}{k-1}=1$; the monogenic part is the single
@@ -284,7 +284,7 @@ Clifford module, so the whole construction — symbol, ellipticity, square, kern
 the choice of $\mathcal{S}$, and the count $\dim\mathcal{M}_k$ alone depends on it. The passage to a
 vector bundle and to a connection, which produces the twisted operator and the elliptic complex of
 *Clifford Modules and the Twisted Cauchy–Riemann Operator*, replaces the constant coefficients
-$e_\mu$ by the Clifford multiplication $c(e_j)$ and the derivative $\partial_j$ by a covariant
+$e_\mu$ by the Clifford multiplication $c(e_j)$ and the derivative $\partial/\partial x_j$ by a covariant
 derivative $\nabla_{e_j}$; the flat operator of this article is the local model of that
 construction, and the relation between the two — the Weitzenböck formula as the curved form of
 $D\bar D=\Delta$ — is stated there.
@@ -298,7 +298,7 @@ is Part IV's.
 
 ## Summary
 
-The operator of Clifford analysis is $D=\partial_0+\sum_{i=1}^{m}e_i\partial_i$, acting on
+The operator of Clifford analysis is $D=\partial/\partial x_0+\sum_{i=1}^{m}e_i\partial/\partial x_i$, acting on
 $\mathcal{S}$-valued functions of a vector variable by the one-sided Clifford action; the corpus
 names it the Cauchy–Riemann operator, and the classical name *Dirac operator* is carried by the
 self-adjoint family of *Dirac Differential Operators*. Its principal symbol is left multiplication
@@ -309,8 +309,8 @@ divergence theorem applies to it with the conormal element $\nu_B=\sum_\mu\nu_\m
 
 The operator is not symmetric: with respect to the module form in which the vectors are skew,
 $D^{*}=-\bar D$, so $D$ is neither symmetric nor normal, and it splits into the self-adjoint vector
-part $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial_i$, with $D_{\mathrm{sa}}^2=-\Delta$, and the
-skew-adjoint scalar part $\partial_0$; the two factorisations of the Laplacian by $D\bar D$ and by
+part $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$, with $D_{\mathrm{sa}}^2=-\Delta$, and the
+skew-adjoint scalar part $\partial/\partial x_0$; the two factorisations of the Laplacian by $D\bar D$ and by
 $D_{\mathrm{sa}}^2$ are the two faces of the split, and the spectral theory of the second is *Dirac
 Differential Operators*. The kernel of $D$ is the class of monogenic functions, organised in
 polynomials by the Fischer decomposition
@@ -332,13 +332,13 @@ Twisted Cauchy–Riemann Operator*.
 | $x=x_0+\sum_{i\ge1}e_ix_i$ | Vector variable of $\mathbb{R}^{m+1}$ |
 | $x^{\natural}$ | Clifford conjugation, $xx^{\natural}=|x|^2$ |
 | $\mathcal{S}$ | Left Clifford module of values; the algebra in the scalar case |
-| $D=\sum_{\mu=0}^{m}e_\mu\partial_\mu$ | The operator of the article (the corpus's Cauchy–Riemann operator) |
-| $\bar D=\partial_0-\sum_{i\ge1}e_i\partial_i$ | Conjugate operator |
-| $\Delta=\sum_\mu\partial_\mu^2$ | Laplacian; $D\bar D=\bar DD=\Delta$ |
+| $D=\sum_{\mu=0}^{m}e_\mu\partial/\partial x_\mu$ | The operator of the article (the corpus's Cauchy–Riemann operator) |
+| $\bar D=\partial/\partial x_0-\sum_{i\ge1}e_i\partial/\partial x_i$ | Conjugate operator |
+| $\Delta=\sum_\mu\partial^2/\partial x_\mu^2$ | Laplacian; $D\bar D=\bar DD=\Delta$ |
 | $\sigma(\xi)=\sum_\mu e_\mu\xi_\mu$ | Principal symbol; $\sigma\bar\sigma=|\xi|^2$ |
 | $\nu_B=\sum_\mu\nu_\mu e_\mu$ | Conormal element of a boundary |
 | $D^{*}=-\bar D$ | Adjoint for the module form with skew vectors |
-| $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial_i$ | Self-adjoint vector part; $D_{\mathrm{sa}}^2=-\Delta$ |
+| $D_{\mathrm{sa}}=\sum_{i\ge1}e_i\partial/\partial x_i$ | Self-adjoint vector part; $D_{\mathrm{sa}}^2=-\Delta$ |
 | $\mathcal{S}$-valued $\mathcal{P}_k$, $\mathcal M_k$ | Homogeneous polynomials of degree $k$; solid spherical monogenics |
 | $E=\bar D\Phi=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ | Fundamental solution of $D$, the Cauchy kernel |
 | $\omega_m=|S^m|$ | Surface area of the unit sphere in $\mathbb{R}^{m+1}$ |

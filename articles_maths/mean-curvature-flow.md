@@ -14,7 +14,7 @@ where $F : M^n\times[0,T)\to\mathbb{R}^{n+1}$ is a family of immersions of a fix
 The flow is a quasilinear parabolic equation for the hypersurface, and for a surface described as a graph it becomes the explicit equation
 
 $$
-\frac{\partial u}{\partial t} = \sqrt{1+|\nabla u|^2}\,\operatorname{div}\left(\frac{\nabla u}{\sqrt{1+|\nabla u|^2}}\right),
+\frac{\partial w}{\partial t} = \sqrt{1+|\nabla w|^2}\,\operatorname{div}\left(\frac{\nabla w}{\sqrt{1+|\nabla w|^2}}\right),
 $$
 
 whose stationary solutions are the minimal graphs. The parabolic character makes the flow well posed for smooth initial data, the maximum principle governs the evolution of the curvature, the area decreases monotonically and a monotone quantity localises the singularities, and the blow-up limits of the singularities are the self-shrinkers. The theory is analogous at every stage to the Ricci flow of the preceding article: the curvature evolves by a reaction-diffusion equation, the maximum principle controls it, a monotone functional excludes collapse, and the singular models are the self-similar solutions. What is different is the ambient setting and the object that evolves: here a submanifold in a fixed space, there a metric on a fixed manifold.
@@ -31,7 +31,7 @@ $$
 
 where $\nu$ is a unit normal field and $H = \operatorname{tr}\mathrm{II}$ is the mean curvature with respect to $\nu$; the flow is **inward** for a convex surface when $\nu$ is the outward normal.
 
-**Theorem (first variation and the gradient-flow property).** The mean curvature flow is the $L^2$-gradient flow of the area functional: for a variation $F(\cdot,t)$ with variational field $V = \partial_tF$, the first variation of the area is
+**Theorem (first variation and the gradient-flow property).** The mean curvature flow is the $L^2$-gradient flow of the area functional: for a variation $F(\cdot,t)$ with variational field $V = \partial/\partial t\,F$, the first variation of the area is
 
 $$
 \frac{d}{dt}\operatorname{Area}(F(\cdot,t)) = -\int_M H\,(V\cdot\nu)\,dA ,
@@ -59,25 +59,25 @@ $$
 
 which becomes extinct at $T = r_0^2/(2n)$. The solution is self-similar: it is a rescaling of the initial sphere, and its speed at each point is proportional to the curvature.
 
-*Proof.* A sphere of radius $r$ has $H=n/r$ with the outward normal, so the flow moves each point inward with speed $n/r$, and $\dot r=-n/r$; integrating gives $r^2 = r_0^2-2nt$. The exactness of the family is verified by substituting the ansatz into the flow.
+*Proof.* A sphere of radius $r$ has $H=n/r$ with the outward normal, so the flow moves each point inward with speed $n/r$, and $dr/dt=-n/r$; integrating gives $r^2 = r_0^2-2nt$. The exactness of the family is verified by substituting the ansatz into the flow.
 
 ## The Graph Equation and Curve Shortening
 
-**Theorem (the equation for a graph).** If the surface is the graph of a function $u : \Omega\to\mathbb{R}$ and the normal is chosen upward, then the mean curvature flow is
+**Theorem (the equation for a graph).** If the surface is the graph of a function $w : \Omega\to\mathbb{R}$ and the normal is chosen upward, then the mean curvature flow is
 
 $$
-\frac{\partial u}{\partial t} = \sqrt{1+|\nabla u|^2}\,\operatorname{div}\left(\frac{\nabla u}{\sqrt{1+|\nabla u|^2}}\right),
+\frac{\partial w}{\partial t} = \sqrt{1+|\nabla w|^2}\,\operatorname{div}\left(\frac{\nabla w}{\sqrt{1+|\nabla w|^2}}\right),
 $$
 
 a quasilinear parabolic equation whose principal part is the mean curvature operator and whose stationary equation is the minimal surface equation.
 
-*Proof.* For a graph the unit normal is $\nu = (-\nabla u,1)/\sqrt{1+|\nabla u|^2}$ and the mean curvature with the upward normal is $H = -\operatorname{div}(\nabla u/\sqrt{1+|\nabla u|^2})$. Write $W=\sqrt{1+|\nabla u|^2}$, so that $\nu\cdot e_{n+1}=1/W$. The surface moves with normal velocity $-H$, while the velocity of the parametrisation $\partial_tF=(0,\partial_t u)$ is vertical; its normal component is $\partial_t u/W$, so matching the normal components gives $\partial_t u/W=-H$ and hence
+*Proof.* For a graph the unit normal is $\nu = (-\nabla w,1)/\sqrt{1+|\nabla w|^2}$ and the mean curvature with the upward normal is $H = -\operatorname{div}(\nabla w/\sqrt{1+|\nabla w|^2})$. Write $W=\sqrt{1+|\nabla w|^2}$, so that $\nu\cdot e_{n+1}=1/W$. The surface moves with normal velocity $-H$, while the velocity of the parametrisation $\partial/\partial t\,F=(0,\partial/\partial t w)$ is vertical; its normal component is $\partial/\partial t w/W$, so matching the normal components gives $\partial/\partial t w/W=-H$ and hence
 
 $$
-\partial_t u = -HW = W\operatorname{div}\Bigl(\frac{\nabla u}{W}\Bigr),
+\partial/\partial t w = -HW = W\operatorname{div}\Bigl(\frac{\nabla w}{W}\Bigr),
 $$
 
-which is the displayed equation. The equation is parabolic because $\operatorname{div}(\nabla u/W)$ has the Hessian of $u$ as its principal part with the positive definite coefficient matrix $(1/W)(I-\nabla u\otimes\nabla u/W^2)$.
+which is the displayed equation. The equation is parabolic because $\operatorname{div}(\nabla w/W)$ has the Hessian of $w$ as its principal part with the positive definite coefficient matrix $(1/W)(I-\nabla w\otimes\nabla w/W^2)$.
 
 **Example (curve shortening in the plane).** For a closed embedded curve $\gamma : S^1\to\mathbb{R}^2$ the flow
 
@@ -89,7 +89,7 @@ with $\kappa$ the curvature and $N$ the inward normal shrinks the curve; a circl
 
 **Theorem (Gage–Hamilton, Grayson).** Under curve shortening flow a convex embedded closed plane curve remains convex, shrinks to a point in finite time, after rescaling about the extinction point so that the enclosed area is constant, converges to a round circle; moreover every embedded closed plane curve becomes convex after finite time, so the conclusion holds for arbitrary embedded initial curves.
 
-*Proof.* Quoted as standard (Gage–Hamilton for the convex case, Grayson for the reduction to it). The convexity is preserved by the maximum principle applied to the curvature, which satisfies $\partial_t\kappa = \kappa_{ss}+\kappa^3$ in the arclength parameter $s$; the convergence to a circle uses the monotonicity of an isoperimetric ratio; the elimination of the non-convex case is a separate argument controlling the number of inflections.
+*Proof.* Quoted as standard (Gage–Hamilton for the convex case, Grayson for the reduction to it). The convexity is preserved by the maximum principle applied to the curvature, which satisfies $\partial/\partial t\,\kappa = \kappa_{ss}+\kappa^3$ in the arclength parameter $s$; the convergence to a circle uses the monotonicity of an isoperimetric ratio; the elimination of the non-convex case is a separate argument controlling the number of inflections.
 
 **Remark (non-embedded curves and singularities).** An immersed but non-embedded plane curve need not become convex: a figure-eight curve shrinks to a crossing point and the flow becomes singular there before extinction, the crossing point forming a self-similar singularity. The example shows that the global regularity conclusion of Grayson's theorem is a property of embeddedness, and it is the first indication that the flow can develop a singularity whose model is not the shrinking circle.
 
@@ -108,7 +108,7 @@ where $|A|^2$ is the squared norm of the second fundamental form and $\Delta$ is
 
 **Corollary (the maximum principle for the curvature).** Along a mean curvature flow, $\max_MH$ is nonincreasing and $\min_MH$ is nondecreasing when $H$ is signed appropriately, so a strictly convex initial hypersurface remains strictly convex; the corresponding statement for $|A|^2$ requires the pinching cone used in Huisken's theorem below.
 
-*Proof.* The equation $\partial_tH=\Delta H+H|A|^2$ is a differential inequality $\partial_t H\ge\Delta H+H|A|^2$ whose zeroth-order term has a definite sign when $H$ has a definite sign; the maximum principle applied to $-H$ gives the nonincrease of the maximum, and the minimum is treated by the same argument with the sign of the reaction term reversed.
+*Proof.* The equation $\partial H/\partial t=\Delta H+H|A|^2$ is a differential inequality $\partial H/\partial t\ge\Delta H+H|A|^2$ whose zeroth-order term has a definite sign when $H$ has a definite sign; the maximum principle applied to $-H$ gives the nonincrease of the maximum, and the minimum is treated by the same argument with the sign of the reaction term reversed.
 
 **Theorem (Huisken's pinching theorem).** Let $F_0 : M^n\to\mathbb{R}^{n+1}$ be a compact, strictly convex immersed hypersurface. Then the mean curvature flow becomes extinct at a finite time $T$, and, after rescaling about the extinction point so that the enclosed volume is constant,
 
@@ -156,15 +156,15 @@ which also identifies the equality case.
 
 ## Weak Solutions
 
-**Definition.** A **level-set flow** is a weak solution of the mean curvature flow defined by the evolution of a function $u : \mathbb{R}^{n+1}\times[0,\infty)\to\mathbb{R}$ whose level sets are the evolving surfaces; it is given by the **viscosity solution** of the degenerate parabolic equation
+**Definition.** A **level-set flow** is a weak solution of the mean curvature flow defined by the evolution of a function $w : \mathbb{R}^{n+1}\times[0,\infty)\to\mathbb{R}$ whose level sets are the evolving surfaces; it is given by the **viscosity solution** of the degenerate parabolic equation
 
 $$
-\partial_t u = |\nabla u|\operatorname{div}\left(\frac{\nabla u}{|\nabla u|}\right),
+\partial/\partial t w = |\nabla w|\operatorname{div}\left(\frac{\nabla w}{|\nabla w|}\right),
 $$
 
-which is the level-set form of the flow and which is independent of the choice of $u$ differing by a monotone reparametrisation.
+which is the level-set form of the flow and which is independent of the choice of $w$ differing by a monotone reparametrisation.
 
-**Theorem (well-posedness of the level-set flow).** For every continuous $u_0$ that changes sign, the level-set equation has a unique viscosity solution, and the zero level set agrees with the classical mean curvature flow wherever the latter is smooth; the solution is stable under the addition of a small constant, which selects the level set in the sense of an evolution of closed sets.
+**Theorem (well-posedness of the level-set flow).** For every continuous $w_0$ that changes sign, the level-set equation has a unique viscosity solution, and the zero level set agrees with the classical mean curvature flow wherever the latter is smooth; the solution is stable under the addition of a small constant, which selects the level set in the sense of an evolution of closed sets.
 
 *Proof.* Quoted as standard (Evans–Spruck, Chen–Giga–Goto). The equation is degenerate parabolic and is understood in the viscosity sense; the comparison principle for viscosity solutions gives uniqueness, and the agreement with the smooth flow follows from the fact that the smooth immersion satisfies the equation after composition with a suitable reparametrisation.
 
@@ -175,7 +175,7 @@ which is the level-set form of the flow and which is independent of the choice o
 **Remark (the parabolic analogue of minimal surface theory).** The mean curvature flow is to the minimal surface equation as the heat equation is to Laplace's equation: the stationary solutions of the flow are the minimal surfaces, and the flow selects a minimal surface as its large-time limit when such a limit exists, exactly as the heat flow selects a harmonic function. The second variation of the area, which defines stability for a minimal surface, has a parabolic counterpart: the linearisation of the flow about a minimal surface is the heat equation for the normal component with the potential $|A|^2$,
 
 $$
-\partial_tf = \Delta f + |A|^2f ,
+\partial/\partial t\,f = \Delta f + |A|^2f ,
 $$
 
 whose stability is decided by the sign of the Jacobi operator of the minimal surface theory. A stable minimal surface is thus linearly stable under the flow, and an unstable one has growing normal modes; the helicoid is the standard instance on the unstable side, and the detailed correspondence between the spectral properties of $\Delta+|A|^2$ and the linear stability of the flow is the bridge between the two articles.
@@ -184,7 +184,7 @@ whose stability is decided by the sign of the Jacobi operator of the minimal sur
 
 ## Summary
 
-Mean curvature flow moves a hypersurface in the direction of its normal with speed equal to the mean curvature, and it is the $L^2$-gradient flow of the area, which decreases at the rate $-\int H^2dA$; its stationary surfaces are the minimal surfaces. For a graph the equation is $\partial_t u=\sqrt{1+|\nabla u|^2}\operatorname{div}(\nabla u/\sqrt{1+|\nabla u|^2})$, a quasilinear parabolic equation; in two dimensions the curve shortening flow shrinks a circle by $r(t)=\sqrt{r_0^2-2t}$ and, by the theorems of Gage–Hamilton and Grayson, shrinks every embedded closed plane curve to a round point. The curvature evolves by $\partial_tH=\Delta H+H|A|^2$ and $\partial_t|A|^2=\Delta|A|^2-2|\nabla A|^2+2|A|^4$, the maximum principle controls the flow of a convex surface, and Huisken's theorem states that a compact strictly convex hypersurface becomes extinct in finite time and converges, after rescaling, to a round sphere. Singularities are modelled by the self-similar solutions: the self-shrinkers satisfy $H-\frac12\langle x,\nu\rangle=0$, the sphere $S^n(\sqrt{2n})$ and the cylinder $S^k(\sqrt{2k})\times\mathbb{R}^{n-k}$ being the basic examples; Huisken's monotonicity of the Gaussian area localises the singularities, and the blow-up limits of a Type I singularity are self-shrinkers, while the dumbbell neckpinch is the prototype that requires the weak theories. The level-set and Brakke varifold formulations provide well-posed weak solutions for nonsmooth data, and the linearisation about a minimal surface is the heat equation with potential $|A|^2$, which ties the stability theory of minimal surfaces to that of the flow.
+Mean curvature flow moves a hypersurface in the direction of its normal with speed equal to the mean curvature, and it is the $L^2$-gradient flow of the area, which decreases at the rate $-\int H^2dA$; its stationary surfaces are the minimal surfaces. For a graph the equation is $\partial/\partial t w=\sqrt{1+|\nabla w|^2}\operatorname{div}(\nabla w/\sqrt{1+|\nabla w|^2})$, a quasilinear parabolic equation; in two dimensions the curve shortening flow shrinks a circle by $r(t)=\sqrt{r_0^2-2t}$ and, by the theorems of Gage–Hamilton and Grayson, shrinks every embedded closed plane curve to a round point. The curvature evolves by $\partial H/\partial t=\Delta H+H|A|^2$ and $\partial/\partial t|A|^2=\Delta|A|^2-2|\nabla A|^2+2|A|^4$, the maximum principle controls the flow of a convex surface, and Huisken's theorem states that a compact strictly convex hypersurface becomes extinct in finite time and converges, after rescaling, to a round sphere. Singularities are modelled by the self-similar solutions: the self-shrinkers satisfy $H-\frac12\langle x,\nu\rangle=0$, the sphere $S^n(\sqrt{2n})$ and the cylinder $S^k(\sqrt{2k})\times\mathbb{R}^{n-k}$ being the basic examples; Huisken's monotonicity of the Gaussian area localises the singularities, and the blow-up limits of a Type I singularity are self-shrinkers, while the dumbbell neckpinch is the prototype that requires the weak theories. The level-set and Brakke varifold formulations provide well-posed weak solutions for nonsmooth data, and the linearisation about a minimal surface is the heat equation with potential $|A|^2$, which ties the stability theory of minimal surfaces to that of the flow.
 
 ## Summary of Notation
 
@@ -192,16 +192,16 @@ Mean curvature flow moves a hypersurface in the direction of its normal with spe
 |---|---|
 | $F(x,t)$, $M$, $n$ | Evolving immersion, its manifold and dimension |
 | $\nu$, $H$ | Unit normal and mean curvature |
-| $\partial_tF=-H\nu$ | Mean curvature flow equation |
+| $\partial/\partial t\,F=-H\nu$ | Mean curvature flow equation |
 | $\mathrm{II}$, $A$, $|A|^2$ | Second fundamental form, its squared norm |
 | $dA$ | Area element; $\frac{d}{dt}\operatorname{Area}=-\int H^2dA$ |
-| $u(x,t)$ | Graph function; graph mean curvature equation |
+| $w(x,t)$ | Graph function; graph mean curvature equation |
 | $\kappa$, $N$ | Curvature and normal of a plane curve |
 | $\Delta$ | Laplace–Beltrami operator of the evolving surface |
 | self-shrinker | $H-\frac12\langle x,\nu\rangle=0$; centre of self-similarity |
 | translator | $H+\langle b,\nu\rangle=0$ |
 | $\Phi_{x_0,t_0}$ | Huisken's Gaussian area, monotone in $t$ |
-| level-set equation | $\partial_t u=|\nabla u|\operatorname{div}(\nabla u/|\nabla u|)$ |
+| level-set equation | $\partial/\partial t w=|\nabla w|\operatorname{div}(\nabla w/|\nabla w|)$ |
 | Brakke flow | Varifold weak solution of the flow |
 
 

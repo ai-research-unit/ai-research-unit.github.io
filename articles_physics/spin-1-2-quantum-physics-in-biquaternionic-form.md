@@ -16,7 +16,7 @@ This article develops the identification in detail. It is not an article about n
 
 The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{M}_+$ with the observables is given, and the idempotents with the states. Then the trace formula is stated as the Born rule. Then the relation to the four-vector space $\mathbb{M}_-$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
 
-The conventions are those of the companion articles: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{M}_+, \mathbb{M}_-$.
+The conventions are those of the companion articles: the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{M}_+, \mathbb{M}_-$.
 
 ## The Two-State System in Quantum Physics
 
@@ -91,19 +91,19 @@ $$
 An explicit isomorphism, consistent with the quaternion multiplication rules of the algebra, is given by
 
 $$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3, \qquad i \mapsto iI_2,
+e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto iI_2,
 $$
 
 where $i$ on the left is the scalar imaginary of $\mathbb{B}$ and $i$ on the right is the complex unit in $M_2(\mathbb{C})$.
 
-It is useful to verify that this is indeed an isomorphism of algebras. The quaternion units satisfy $e_k^2 = -e_0$ and $e_j e_k = \epsilon_{jkl} e_l$ for $j \neq k$. Under the map:
+It is useful to verify that this is indeed an isomorphism of algebras. The quaternion units satisfy $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda} \vec e_\lambda$ for $\mu \neq \nu$. Under the map:
 
 $$
-e_k^2 \mapsto (-i\sigma_k)^2 = -\sigma_k^2 = -I_2 = -e_0,
+\vec e_\mu^2 \mapsto (-i\sigma_k)^2 = -\sigma_k^2 = -I_2 = -e_t,
 $$
 
 $$
-e_1 e_2 \mapsto (-i\sigma_1)(-i\sigma_2) = (-i)^2 \sigma_1 \sigma_2 = -\sigma_1 \sigma_2 = -i\sigma_3 = e_3.
+\vec e_x \vec e_y \mapsto (-i\sigma_1)(-i\sigma_2) = (-i)^2 \sigma_1 \sigma_2 = -\sigma_1 \sigma_2 = -i\sigma_3 = \vec e_z.
 $$
 
 So the map preserves the multiplication rules. The scalar imaginary $i$ maps to $iI_2$, which satisfies $(iI_2)^2 = -I_2$ and commutes with all $(-i\sigma_k)$. Both properties are required.
@@ -112,7 +112,7 @@ So the map preserves the multiplication rules. The scalar imaginary $i$ maps to 
 
 Under this isomorphism, the fixed-point subspaces of the algebra acquire concrete matrix forms.
 
-**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde{H} = h_0 e_0 + i h_1 e_1 + i h_2 e_2 + i h_3 e_3$ with $h_k \in \mathbb{R}$. Under the isomorphism:
+**Hermitian subspace $\mathbb{M}_+$.** A general element is $\tilde{H} = h_0 e_t + i h_1 \vec e_x + i h_2 \vec e_y + i h_3 \vec e_z$ with $h_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{H} \mapsto h_0 I_2 + h_1 \sigma_1 + h_2 \sigma_2 + h_3 \sigma_3.
@@ -120,7 +120,7 @@ $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-**Anti-Hermitian subspace $\mathbb{M}_-$.** A general element is $\tilde{Q} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ with $x_k \in \mathbb{R}$. Under the isomorphism:
+**Anti-Hermitian subspace $\mathbb{M}_-$.** A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
@@ -128,10 +128,10 @@ $$
 
 This is $i$ times a Hermitian matrix, i.e., an **anti-Hermitian** matrix. So $\mathbb{M}_-$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.
 
-**Real quaternion subspace $\mathbb{H}_\mathbb{B}$.** A general element is $\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_k \in \mathbb{R}$. Under the isomorphism:
+**Real quaternion subspace $\mathbb{H}_\mathbb{B}$.** A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
-\tilde{Q} \mapsto q_0 I_2 - i q_1\sigma_1 - i q_2\sigma_2 - i q_3\sigma_3 = \begin{pmatrix} q_0 - i q_3 & -i(q_1 - i q_2) \\ -i(q_1 + i q_2) & q_0 + i q_3 \end{pmatrix}.
+\tilde{Q} \mapsto q_t I_2 - i q_x\sigma_1 - i q_y\sigma_2 - i q_z\sigma_3 = \begin{pmatrix} q_t - i q_z & -i(q_x - i q_y) \\ -i(q_x + i q_y) & q_t + i q_z \end{pmatrix}.
 $$
 
 This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \\ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is **not** the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.
@@ -148,9 +148,9 @@ The identification of $\mathbb{M}_+$ with the observables is direct.
 
 **Real dimension.** $\mathbb{M}_+$ has real dimension 4, matching the dimension of the space of Hermitian $2\times 2$ matrices. This is the same as the dimension of the space of observables of a two-state system.
 
-**Basis.** The four elements $e_0, ie_1, ie_2, ie_3$ of $\mathbb{M}_+$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
+**Basis.** The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{M}_+$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
 
-**The identity and the traceless part.** The scalar part $h_0 e_0$ maps to the identity component $h_0 I_2$, which is the "trivial" observable. The vector part $i(h_1 e_1 + h_2 e_2 + h_3 e_3)$ maps to the traceless part $h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_0$ (twice the scalar part), which corresponds to the trace of the matrix.
+**The identity and the traceless part.** The scalar part $h_0 e_t$ maps to the identity component $h_0 I_2$, which is the "trivial" observable. The vector part $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$ maps to the traceless part $h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$. The trace of an element of $\mathbb{M}_+$ is $2h_0$ (twice the scalar part), which corresponds to the trace of the matrix.
 
 ## The Idempotents as Pure States
 
@@ -159,10 +159,10 @@ The idempotents of $\mathbb{M}_+$ are the pure-state projectors of the spin-1/2 
 **Statement.** The idempotents of $\mathbb{M}_+$ are exactly the elements
 
 $$
-\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_0 \pm \vec u i\right),
+\tilde\Pi_{1,2} = \tfrac{1}{2}\left(e_t \pm \vec u i\right),
 $$
 
-where $\vec u = u_1 e_1 + u_2 e_2 + u_3 e_3$ is a unit pure real quaternion, $u_1^2 + u_2^2 + u_3^2 = 1$.
+where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real quaternion, $u_x^2 + u_y^2 + u_z^2 = 1$.
 
 **Properties.** Each such $\tilde\Pi_{1,2}$ satisfies:
 
@@ -171,12 +171,12 @@ where $\vec u = u_1 e_1 + u_2 e_2 + u_3 e_3$ is a unit pure real quaternion, $u_
 3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$.
 4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
-**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_0 \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).
+**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{\Xi} i)$ with $\tilde{\Xi}$ a root of $-1$. The idempotents in $\mathbb{M}_+$ correspond to the "real roots" $\tilde{\Xi} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent, trace-1 properties are direct computations (article 3).
 
 **Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 
 $$
-\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_1\sigma_1 \pm u_2\sigma_2 \pm u_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_x\sigma_1 \pm u_y\sigma_2 \pm u_z\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
 $$
 
 This is exactly the spin projector $|\pm\vec u\rangle\langle\pm\vec u|$ onto the spin-up or spin-down state along the direction $\vec u$.
@@ -199,10 +199,10 @@ is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the sta
 
 ### Example
 
-Take $\vec u = e_3$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis; the element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_0 - e_3 i)$ are its two associated idempotents. Let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then
+Take $\vec u = \vec e_z$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_t + \vec e_z i)$ corresponds to the spin-up state along the $z$ axis; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_t - \vec e_z i)$ are its two associated idempotents. Let $\tilde{H} = i \vec e_x$ (the spin observable along the $x$ axis). Then
 
 $$
-\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
+\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_x) = \tfrac{1}{2}(i\vec e_x + \vec e_z i \cdot i \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_z \vec e_x) = \tfrac{1}{2}(i\vec e_x - \vec e_y).
 $$
 
 Taking twice the scalar part:
@@ -213,10 +213,10 @@ $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
 
-Take instead $\tilde{H} = ie_3$ (the spin observable along the $z$ axis):
+Take instead $\tilde{H} = i\vec e_z$ (the spin observable along the $z$ axis):
 
 $$
-\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_3) = \tfrac{1}{2}(ie_3 + e_3 i \cdot ie_3) = \tfrac{1}{2}(ie_3 - e_3 e_3) = \tfrac{1}{2}(ie_3 + e_0).
+\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_t + \vec e_z i)(i\vec e_z) = \tfrac{1}{2}(i\vec e_z + \vec e_z i \cdot i\vec e_z) = \tfrac{1}{2}(i\vec e_z - \vec e_z \vec e_z) = \tfrac{1}{2}(i\vec e_z + e_t).
 $$
 
 Taking twice the scalar part:
@@ -246,7 +246,7 @@ The action of $\mathbb{B}$ on $\mathbb{C}^2$ is the **fundamental representation
 The subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ act on the spinor space in specific ways:
 
 - **Hermitian elements** (in $\mathbb{M}_+$) act as **Hermitian operators** on $\mathbb{C}^2$. These are the observables, whose eigenvalues are real.
-- **Anti-Hermitian elements** (in $\mathbb{M}_-$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of unitary transformations, whose exponentials give the unitary group $U(2)$.
+- **Anti-Hermitian elements** (in $\mathbb{M}_-$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of unitary transformations, whose exponentials give the unitary group $\mathrm{U}(2)$.
 
 The action of the algebra on the spinor space is the fundamental operation of quantum physics: the observables act on the states, and the generators act on the states to produce the dynamics.
 
@@ -270,9 +270,9 @@ The unitary biquaternions generate the spin rotation group, and the Hermitian bi
 
 ### Unitary Biquaternions
 
-A biquaternion $\tilde{U}$ is **unitary** if $\tilde{U}\tilde{U}^{*} = e_0$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $U(2)$.
+A biquaternion $\tilde{U}$ is **unitary** if $\tilde{U}\tilde{U}^{*} = e_t$. In the matrix representation, $\tilde{U}$ maps to a unitary matrix. The group of unitary biquaternions is $\mathrm{U}(2)$.
 
-The subgroup of $U(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
+The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{M}_-$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
 
 So the **spin rotations of a spin-1/2 particle are realized in the biquaternion framework by the $SU(2)$ subgroup of unit-norm biquaternions**.
 
@@ -352,7 +352,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\tilde{R}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial_\mu \to \partial_\mu - iqA_\mu/\hbar$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\tilde{R}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial Q_\mu \to \partial/\partial Q_\mu - iqA_\mu/\hbar$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 
@@ -394,7 +394,7 @@ These questions are open.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ for a unit pure quaternion $\vec u$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.
 
 The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
@@ -409,11 +409,11 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\mathbb{B} \cong M_2(\mathbb{C})$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace = observables |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace = generators |
-| $e_0, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\sigma_1, \sigma_2, \sigma_3$ | Pauli matrices |
-| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm \vec u i)$ | Idempotent (pure spin state) |
-| $\tilde{H} = h_0 e_0 + ih_k e_k$ | Hermitian element (observable) |
+| $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm \vec u i)$ | Idempotent (pure spin state) |
+| $\tilde{H} = h_0 e_t + ih_\mu \vec e_\mu$ | Hermitian element (observable) |
 | $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ | Born-rule expectation value |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |

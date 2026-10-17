@@ -295,17 +295,17 @@ $$
 Then the constants of the exchanged product are
 
 $$
-e_{i} \star^{c} e_{j} = \sum_{l} \tilde{c}^{\,l}{}_{ij}\, e_{l},
-\qquad \tilde{c}^{\,l}{}_{ij} = \sum_{k} \gamma^{l}{}_{k}\, \varsigma\bigl(c^{k}{}_{ji}\bigr).
+e_{i} \star^{c} e_{j} = \sum_{l} d^{\,l}{}_{ij}\, e_{l},
+\qquad d^{\,l}{}_{ij} = \sum_{k} \gamma^{l}{}_{k}\, \varsigma\bigl(c^{k}{}_{ji}\bigr).
 $$
 
 When the basis is fixed by the conjugation, $c(e_{i}) = e_{i}$ for every $i$, this reads
 
 $$
-\tilde{c}^{\,k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr),
+d^{\,k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr),
 $$
 
-and the conjugate-symmetric products are exactly those whose constants satisfy the **conjugate-symmetry** $c^{k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr)$.
+and the conjugate-symmetric products are exactly those whose constants satisfy $d=c$, the **conjugate-symmetry** $c^{k}{}_{ij} = \varsigma\bigl(c^{k}{}_{ji}\bigr)$.
 
 *Proof.* Compute the exchanged product on basis elements, $\star^{c}(e_{i}, e_{j}) = c(\star(e_{j}, e_{i}))$, expand the inner product and use the semilinearity of $c$, $c(\lambda e_{k}) = \varsigma(\lambda)c(e_{k})$; when each basis vector is fixed this is $\sum_{k}\varsigma(c^{k}{}_{ji})e_{k}$. The condition $c^{k}{}_{ij} = \varsigma(c^{k}{}_{ji})$ is the fixed-point equation of the previous line.
 
@@ -433,7 +433,7 @@ the second trace being the conjugate of the first, since $\operatorname{tr}(\bar
 
 **Remark (the two sesquilinear halves in closed form).** On the general plain sesquilinear product the central half and the skew half are the scalar and the vector part of the value,
 $$
-\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_0=\bigl(P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr)e_0,\qquad
+\tfrac12\bigl(\tilde P\tilde Q^{*}+(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_t=\bigl(P_0\overline{Q_t}+(\vec P,\overline{\vec Q})\bigr)e_t,\qquad
 \tfrac12\bigl(\tilde P\tilde Q^{*}-(\tilde P\tilde Q^{*})^{\natural}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*}),
 $$
 the first the Hermitian form $H$ in the centre and the second the whole vector part; on the general quaternionic sesquilinear product they are the symmetrisation of $\tilde P^{\natural}$ with $\tilde Q^{*}$ and half their commutator,
@@ -441,7 +441,7 @@ $$
 \tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr),\qquad
 \tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr),
 $$
-both sesquilinear over $\mathbb C$ — the class is kept — and here the skew half is the cross product $\vec P\times\overline{\vec Q}$, vector-valued, while the symmetric half carries the general quaternionic sesquilinear form $K$ in its scalar part, $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$, and is not central in general.
+both sesquilinear over $\mathbb C$ — the class is kept — and here the skew half is the cross product $\vec P\times\overline{\vec Q}$, vector-valued, while the symmetric half carries the general quaternionic sesquilinear form $K$ in its scalar part, $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_0\overline{Q_t}-(\vec P,\overline{\vec Q})$, and is not central in general.
 
 **Remark (the order swap and the conjugation of the biquaternion products).** The four general products each admit the plain interchange of the two arguments, the **order symmetry**, and its two halves are the symmetric and the antisymmetric parts of *The 12 Products of the Biquaternioid Complex Space*. For the two bilinear products that plain split is the split of this article, since $\varsigma = \mathrm{id}$ and the exchange is the plain one, and it is the split developed in that article. For the two sesquilinear products the order symmetry gives halves that are only $R^{\varsigma}$-bilinear, by §*The Plain Split*, and it is therefore the wrong symmetry for the category: the symmetric and antisymmetric parts of the order symmetry of $\tilde{P}\tilde{Q}^{*}$ and $\tilde{P}^{\natural}\tilde{Q}^{*}$ are not products of a sesqualgebra, and their reading with the symmetrised sesquilinear product and the sesquilinear commutator is *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternioid*. The conjugate-symmetric and skew halves of this article are the corrected form of the same idea, the one in which the two halves stay in the category, and the two notions coincide exactly on the two bilinear products.
 

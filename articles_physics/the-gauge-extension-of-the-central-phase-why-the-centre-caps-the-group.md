@@ -3,7 +3,7 @@
 ## Introduction
 
 The framework's continuous symmetry is the **central phase**, the group of central unitaries
-$\exp(i\theta)e_0\cong U(1)$. It is exact and it is global: being central, it multiplies every subspace and
+$\exp(i\theta)e_t\cong \mathrm{U}(1)$. It is exact and it is global: being central, it multiplies every subspace and
 every element by the same factor, so it acts the same way at every point, and the corpus records the fact as
 the interpretation "centrality is globality". A gauge theory needs the opposite — a phase that may differ from
 point to point, and a compensating connection that makes the difference covariant — and the question this
@@ -12,22 +12,22 @@ to be.
 
 The article owns the statement of the **extension problem**, the reason the centre caps it, and the two
 candidate interpretations. It owns no new theorem. The centre and its triviality are *The Centre of the Biquaternion
-Algebra as the Classical Sector*; the ceiling $U(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
+Algebra as the Classical Sector*; the ceiling $\mathrm{U}(2)$ is *The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*; the generator is *Conventions in the Biquaternion
 Universe*, §*The Central Map and Its Restrictions*; the discrete charge the compact phase
 carries is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*; and the placement of the gauge row among the products is *The Heat Map
 of the Framework: Which Physics Hangs on Which Product*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the centre is
-$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\{z e_0\}$, of one complex (two real) dimensions; the unitary slice is
-$U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$.
+$Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\{z e_t\}$, of one complex (two real) dimensions; the unitary slice is
+$U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$.
 
 ## The Central Phase and the Gauge Principle
 
-The central phase is the one-parameter subgroup $\theta\mapsto \exp(i\theta)e_0$ of the centre. Three of its
+The central phase is the one-parameter subgroup $\theta\mapsto \exp(i\theta)e_t$ of the centre. Three of its
 properties are the whole of its relevance.
 
-- It is **central**: $\exp(i\theta)e_0$ commutes with every element, so it acts by the same scalar at every
+- It is **central**: $\exp(i\theta)e_t$ commutes with every element, so it acts by the same scalar at every
   element and in every subspace.
 - It is **compact**: the parameter is an angle and the group is a circle, so its irreducible labels are
   integers and the internal charge it carries is **discrete**.
@@ -38,7 +38,7 @@ The gauge principle asks for the local version: a phase $\theta(x)$ that depends
 connection $\tilde{A}_\mu$ that transforms so that the covariant derivative
 $\partial_\mu - iϙ\tilde{A}_\mu$ is phase-covariant. **The framework has the phase and not the connection**,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
-group, and the Lie algebra of the central phase is the one-dimensional span of $ie_0$, which is central. A
+group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
 couple to anything and the covariant derivative collapses to the ordinary one. A gauged central phase is
 therefore **no gauge theory at all**: an abelian gauge field needs a matter field that transforms
@@ -46,28 +46,28 @@ non-trivially, and the framework's matter lives in modules on which a central ph
 
 ## Why the Centre Caps the Group
 
-The obstruction stated, the reason the gauge group stays at $U(2)$ follows. The intrinsic gauge group of the
-algebra is the unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$, the central product
-$(SU(2)\times U(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
+The obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
+algebra is the unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
+$(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
 the group is the structure of the centre:
 
 | piece of the group | where it lives | what it does |
 |---|---|---|
-| $U(1)$ | the centre, $\{\exp(i\theta)e_0\}$ | the global phase, the discrete charge label |
+| $\mathrm{U}(1)$ | the centre, $\{\exp(i\theta)e_t\}$ | the global phase, the discrete charge label |
 | $SU(2)$ | the unit quaternions, the real slice | the internal rotations acting on the module |
-| $\mathbb{Z}_2$ | $\{\pm e_0\}$ | the identification, the spin double cover |
+| $\mathbb{Z}_2$ | $\{\pm e_t\}$ | the identification, the spin double cover |
 
 A larger group would need generators outside the centre and outside the real-quaternion triple, and there
 are none: the anti-Hermitian sector of $\mathbb{B}$ has real dimension four, giving $\mathfrak{u}(2)$ exactly,
 and the Cartan decomposition of that Lie algebra has the compact part $\mathfrak{u}(2)$ and no more. So the
 ceiling is not a limit of the framework's ambitions but a computation of the algebra, and the route past it
-is an enlarged carrier — $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic gauge group is $U(2n)$
+is an enlarged carrier — $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, whose intrinsic gauge group is $\mathrm{U}(2n)$
 and which contains $SU(3)$ for $n\ge2$, as the ceiling article computes — and not a new interpretation of
 $\mathbb{B}$. What the enlargement changes is the **algebra** and not its centre: every matrix algebra over
 $\mathbb{C}$ has centre the scalars, so the additional generators are non-central, and it is their presence,
 and not a larger centre, that carries the larger group. The centre's role is exact and it is narrower than it
 may look: it is the whole of the algebra's **uniform** symmetry, so it fixes the abelian factor of the
-intrinsic group at $U(1)$ and forbids a second uniform phase, and it does not by itself bound the group,
+intrinsic group at $\mathrm{U}(1)$ and forbids a second uniform phase, and it does not by itself bound the group,
 which is bounded by the dimension of the anti-Hermitian sector.
 
 ## The Two Candidate Readings
@@ -76,9 +76,9 @@ Two interpretations of the extension problem are consistent with the algebra, an
 chooses neither.
 
 **Reading A — the central extension is the whole extension.** The gauge structure of the framework is the
-central product $U(2)$ and nothing else, and the physically meaningful statement is that the framework's
+central product $\mathrm{U}(2)$ and nothing else, and the physically meaningful statement is that the framework's
 gauge group is the extension of $SU(2)$ by the central phase. On this interpretation the framework is a
-$U(2)$-gauge theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
+$\mathrm{U}(2)$-gauge theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
 weak isospin is the module action, and the ceiling is a result about the gauge group of the algebra rather
 than a defect. The interpretation is the framework's own position and is labelled as an interpretation: the algebra fixes
 the group and not the names of its factors.
@@ -101,7 +101,7 @@ question is being asked.
   and that the algebra supplies no non-central generator with which to localise it.
 - It does not claim that the ceiling is **permanent**. The ceiling is a statement about $\mathbb{B}$; the
   enlarged carriers of the ceiling article pass it, and the price is stated there and not repeated here.
-- It does not claim that the framework's $U(1)$ is the electromagnetic one. The identification of the
+- It does not claim that the framework's $\mathrm{U}(1)$ is the electromagnetic one. The identification of the
   central phase with hypercharge, with electric charge, or with a global phase of the state module is a
   interpretation of the framework and not a consequence of the algebra, and no experiment is proposed here.
 
@@ -109,7 +109,7 @@ question is being asked.
 
 - **The centre is the gauge group's abelian factor.** The interpretation is that the algebra's one continuous
   uniform symmetry is the abelian factor of its intrinsic gauge group, so a framework whose only
-  uniform symmetry is a phase is a framework with a $U(1)$ factor and no more. Owner: *The Centre of the
+  uniform symmetry is a phase is a framework with a $\mathrm{U}(1)$ factor and no more. Owner: *The Centre of the
   Biquaternion Algebra as the Classical Sector*.
 - **Compactness is the discreteness of the charge.** The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
@@ -121,11 +121,11 @@ question is being asked.
 
 ## Summary
 
-The framework's continuous symmetry is the central phase $\exp(i\theta)e_0\cong U(1)$, central, compact and
+The framework's continuous symmetry is the central phase $\exp(i\theta)e_t\cong \mathrm{U}(1)$, central, compact and
 global, and it is the whole of the algebra's uniform symmetry. Its gauge extension is blocked by centrality:
 a local phase needs a connection valued in a non-central generator, the algebra's only uniform generator is
-the central $ie_0$, and a central connection couples to nothing. The intrinsic gauge group is the unitary
-slice $U(2)=(SU(2)\times U(1))/\mathbb{Z}_2$, whose abelian factor is the central phase and whose size is
+the central $ie_t$, and a central connection couples to nothing. The intrinsic gauge group is the unitary
+slice $\mathrm{U}(2)=(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, whose abelian factor is the central phase and whose size is
 fixed by the four-dimensional anti-Hermitian sector; a larger group requires an enlarged carrier with
 non-central generators, not a larger centre. Two interpretations are stated and neither is chosen: that the central
 extension is the whole extension, and that the central phase is the trace of a local structure the algebra
@@ -135,10 +135,10 @@ does not contain.
 
 | Symbol | Meaning |
 |---|---|
-| $\exp(i\theta)e_0$ | the central phase, the group $U(1)$ of central unitaries |
-| $ie_0$ | the generator of the central phase, central and of one real dimension |
-| $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ | the unitary slice, the algebra's intrinsic gauge group |
-| $(SU(2)\times U(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |
+| $\exp(i\theta)e_t$ | the central phase, the group $\mathrm{U}(1)$ of central unitaries |
+| $ie_t$ | the generator of the central phase, central and of one real dimension |
+| $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ | the unitary slice, the algebra's intrinsic gauge group |
+| $(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$ | the structure of the slice, with the abelian factor the central phase |
 | $\mathfrak{u}(2)$ | the anti-Hermitian sector of the algebra, the Lie algebra of the slice |
 
 ## Further Reading

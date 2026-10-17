@@ -4,7 +4,7 @@
 
 A **covariant derivative** on a vector bundle is the operator that differentiates its sections by comparing the fibres over neighbouring points through a **connection**; the connection is the horizontal distribution, the covariant derivative is its action on sections, and the two are the same datum read in two ways. The definition, the local connection form and the transformation rule are those of *Fibre Bundles, Connections and Curvature*; this article reads that datum as an **operator** and develops the operator calculus it generates, which is what the rest of the Part and the geometry above it use.
 
-The article develops the covariant derivative from the definition, not repeating the definition itself. It fixes the operator $\nabla_X$ along a vector field, its $C^\infty(M)$-linearity in $X$ and its Leibniz rule in the section, and its extension $d^\nabla$ to the forms with values in the bundle, the operator of degree one whose square is the multiplication by the curvature. It proves that the curvature is the failure of the covariant derivatives to commute, that it is tensorial, and that the Bianchi identity is the operator statement $d^\nabla R = 0$. It then develops **parallel transport**, the flow of the equation $\nabla_{\dot\gamma}V = 0$ along a curve, which turns the curvature into the infinitesimal non-commutativity of translation around a small loop and recovers the holonomy group. It treats the metric-compatible and torsion-free case, the Levi–Civita connection of a metric, and the autoparallel curves it defines.
+The article develops the covariant derivative from the definition, not repeating the definition itself. It fixes the operator $\nabla_X$ along a vector field, its $C^\infty(M)$-linearity in $X$ and its Leibniz rule in the section, and its extension $d^\nabla$ to the forms with values in the bundle, the operator of degree one whose square is the multiplication by the curvature. It proves that the curvature is the failure of the covariant derivatives to commute, that it is tensorial, and that the Bianchi identity is the operator statement $d^\nabla R = 0$. It then develops **parallel transport**, the flow of the equation $\nabla_{d\gamma/dt}V = 0$ along a curve, which turns the curvature into the infinitesimal non-commutativity of translation around a small loop and recovers the holonomy group. It treats the metric-compatible and torsion-free case, the Levi–Civita connection of a metric, and the autoparallel curves it defines.
 
 The article assumes the vector bundles, their sections and frames, the connection, the connection form, the curvature, the structure equation, the Bianchi identity and the holonomy group of *Fibre Bundles, Connections and Curvature*; the vector fields, the Lie bracket and the tangent bundle of *Smooth Manifolds and Differential Geometry*; and the differential forms and the exterior derivative of *Differential Forms and Stokes' Theorem*. The existence and uniqueness of the solution of the parallel-transport equation is the theorem of *Ordinary Differential Equations*, later in this Part, and is quoted where it is used. The geodesics, the exponential map of a metric and the curvature as a geometric object are Part IV's, and are named here only as forward references. No physics is invoked.
 
@@ -101,13 +101,13 @@ The local frame in which the connection is trivial is the flat case of the paral
 Let $\gamma : [a,b] \to M$ be a smooth curve and let $V$ be a section of $E$ along $\gamma$, that is, a smooth family $V(t) \in E_{\gamma(t)}$. The section is **parallel along $\gamma$** if
 
 $$
-\nabla_{\dot\gamma}V = 0,
+\nabla_{d\gamma/dt}V = 0,
 $$
 
 an equation whose local form in a frame pulled back to $[a,b]$ is the linear system of ordinary differential equations
 
 $$
-\dot V^a(t) + \sum_b \omega^a_{\ b}(\dot\gamma(t))\, V^b(t) = 0, \qquad a = 1, \ldots, r .
+\left(dV^{a}/dt\right)(t) + \sum_b \omega^a_{\ b}(\left(d\gamma/dt\right)(t))\, V^b(t) = 0, \qquad a = 1, \ldots, r .
 $$
 
 **Theorem (existence and uniqueness).** For every curve $\gamma$ and every initial value $v \in E_{\gamma(a)}$ there is a unique parallel section $V$ along $\gamma$ with $V(a) = v$.
@@ -126,7 +126,7 @@ where $V$ is the parallel section with $V(a) = v$.
 
 **Theorem.** The map $P_\gamma$ is a linear isomorphism; it depends only on the curve up to reparametrisation preserving the endpoints; it is functorial under concatenation, $P_{\gamma_2 * \gamma_1} = P_{\gamma_2}\circ P_{\gamma_1}$, and $P_{\gamma^{-1}} = P_\gamma^{-1}$. For closed curves based at $x$ the maps $P_\gamma$ form a subgroup of $GL(E_x)$, the **holonomy group**, and its identity component is the holonomy group of the connection.
 
-*Proof.* Linearity and invertibility are the linearity of the equation and the reversibility of the curve. Reparametrisation invariance is the chain rule, which replaces $\dot\gamma$ by a positive multiple and leaves the equation's solution set unchanged. The concatenation and inverse laws are the uniqueness of the solution of the initial-value problem applied to the two subintervals and to the reversed curve. The group laws follow, and the closed curves at a fixed base give a subgroup of the linear group of the fibre, which is a Lie subgroup because the transport depends smoothly on the curve.
+*Proof.* Linearity and invertibility are the linearity of the equation and the reversibility of the curve. Reparametrisation invariance is the chain rule, which replaces $d\gamma/dt$ by a positive multiple and leaves the equation's solution set unchanged. The concatenation and inverse laws are the uniqueness of the solution of the initial-value problem applied to the two subintervals and to the reversed curve. The group laws follow, and the closed curves at a fixed base give a subgroup of the linear group of the fibre, which is a Lie subgroup because the transport depends smoothly on the curve.
 
 **Theorem (curvature as the infinitesimal holonomy).** Let $X, Y$ be vector fields on a neighbourhood of $x$, let $\square_\epsilon$ be the coordinate rectangle spanned by $\epsilon X$ and $\epsilon Y$ and traversed in the order $X, Y, -X, -Y$, and let $P_\epsilon$ be the parallel transport around it. Then
 
@@ -136,11 +136,11 @@ $$
 
 as $\epsilon \to 0$. Consequently the curvature endomorphisms $R(X,Y)(x)$ span the Lie algebra of the holonomy group, and the connection is flat if and only if the parallel transport around every contractible loop is the identity.
 
-*Proof sketch.* Write the parallel transport as the flow of the linear system $\dot V = -\omega(\dot\gamma)V$ and expand the ordered product of the four flows in powers of $\epsilon$ by the Lie–Trotter product formula; the first-order terms cancel by the opposite traversals, and the second-order term is the commutator $d\omega + \omega\wedge\omega$ evaluated on $X\wedge Y$, which is $R(X,Y)$. The span statement is the theorem of Ambrose and Singer, quoted from *Fibre Bundles, Connections and Curvature*; the flatness criterion follows because a flat connection has a flat local frame, in which $P_\epsilon = \mathrm{id}$.
+*Proof sketch.* Write the parallel transport as the flow of the linear system $dV/dt = -\omega(d\gamma/dt)V$ and expand the ordered product of the four flows in powers of $\epsilon$ by the Lie–Trotter product formula; the first-order terms cancel by the opposite traversals, and the second-order term is the commutator $d\omega + \omega\wedge\omega$ evaluated on $X\wedge Y$, which is $R(X,Y)$. The span statement is the theorem of Ambrose and Singer, quoted from *Fibre Bundles, Connections and Curvature*; the flatness criterion follows because a flat connection has a flat local frame, in which $P_\epsilon = \mathrm{id}$.
 
 ### The Autoparallel Curves
 
-**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{\dot\gamma}\dot\gamma = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $\ddot\gamma^i + \sum_{j,k}\Gamma^i_{jk}\dot\gamma^j\dot\gamma^k = 0$.
+**Definition.** A smooth curve $\gamma$ in $M$ is **autoparallel** for a connection $\nabla$ on $TM$ if $\nabla_{d\gamma/dt}d\gamma/dt = 0$; in a chart with Christoffel symbols $\Gamma^i_{jk}$ the equation reads $d^2\gamma^{i}/dt^2 + \sum_{j,k}\Gamma^i_{jk}d\gamma^{j}/dt d\gamma^{k}/dt = 0$.
 
 The autoparallel curves are the straight lines of the connection: they are the curves whose velocity is parallel along themselves, and in a flat frame they are the linear curves. For the Levi–Civita connection of a Riemannian metric they are the geodesics, and the metric geometry of those curves — the exponential map, the length-minimising property, the completeness — is *Riemannian Geometry* and *Curvature and Geodesics* in Part IV; what belongs to the present article is the differential equation, its existence and uniqueness by *Ordinary Differential Equations*, and the fact that the equation is the same for every connection on the tangent bundle.
 
@@ -166,7 +166,7 @@ which expresses its covariant derivative in terms of the metric and the Lie brac
 
 **Proposition.** For a metric-compatible connection the parallel transport preserves the metric, $h(P_\gamma u, P_\gamma v) = h(u,v)$ for every curve $\gamma$; conversely, if the parallel transport preserves the metric for every curve, the connection is metric-compatible.
 
-*Proof.* If $u, v$ are parallel along $\gamma$, then $\frac{d}{dt}h(u,v) = \dot\gamma\,h(u,v) = h(\nabla_{\dot\gamma}u, v) + h(u,\nabla_{\dot\gamma}v) = 0$; the converse differentiates the constancy of $h$ along the parallel sections with the given initial values.
+*Proof.* If $u, v$ are parallel along $\gamma$, then $\frac{d}{dt}h(u,v) = d\gamma/dt\,h(u,v) = h(\nabla_{d\gamma/dt}u, v) + h(u,\nabla_{d\gamma/dt}v) = 0$; the converse differentiates the constancy of $h$ along the parallel sections with the given initial values.
 
 The two conditions of the theorem are the ones that single out the Levi–Civita connection from the affine space of the connections, and the metric refinement of it — the metric as an object, its curvature and its geodesics — is the subject of *Riemannian Geometry* in Part IV; the metric-compatibility condition on an arbitrary bundle, its reading as adjointness, and its interaction with an involution are the subject of *Hermitian Connections and the Adjoint* and *Hermitian Vector Bundles and the Chern Connection* in this category.
 
@@ -174,7 +174,7 @@ The two conditions of the theorem are the ones that single out the Levi–Civita
 
 A covariant derivative is a connection read as an operator: $\nabla_X$ is first-order, $C^\infty(M)$-linear in $X$ and a derivation in the section; in a frame it is $d + \omega$ on the components, and the connections on a bundle form an affine space modelled on the $1$-forms with values in the endomorphisms. Extending to the bundle-valued forms gives the operator $d^\nabla$ of degree one, locally $d + \omega\wedge\cdot$, whose square is the multiplication by the curvature. The curvature $R(X,Y) = \nabla_X\nabla_Y - \nabla_Y\nabla_X - \nabla_{[X,Y]}$ is a tensorial $2$-form with values in the endomorphisms; it is the failure of the covariant derivatives to represent the Lie algebra of vector fields, it satisfies the Bianchi identity $d^\nabla R = 0$, and it vanishes exactly when the connection is locally trivial.
 
-Parallel transport solves the equation $\nabla_{\dot\gamma}V = 0$ along a curve; the solution exists and is unique, and it defines a linear isomorphism $P_\gamma$ between the fibres that is functorial under concatenation and inversion. The maps around the closed curves form the holonomy group; the parallel transport around a small rectangle is $\mathrm{id} - \epsilon^2R(X,Y) + O(\epsilon^3)$, so the curvature spans the Lie algebra of the holonomy, and flatness is the triviality of the transport around the contractible loops. The autoparallel curves are the curves with $\nabla_{\dot\gamma}\dot\gamma = 0$, the straight lines of the connection. The metric-compatible and torsion-free condition singles out the Levi–Civita connection of a metric, expressed by the Koszul formula, and for it the parallel transport is an isometry; the metric geometry of geodesics and curvature is Part IV's.
+Parallel transport solves the equation $\nabla_{d\gamma/dt}V = 0$ along a curve; the solution exists and is unique, and it defines a linear isomorphism $P_\gamma$ between the fibres that is functorial under concatenation and inversion. The maps around the closed curves form the holonomy group; the parallel transport around a small rectangle is $\mathrm{id} - \epsilon^2R(X,Y) + O(\epsilon^3)$, so the curvature spans the Lie algebra of the holonomy, and flatness is the triviality of the transport around the contractible loops. The autoparallel curves are the curves with $\nabla_{d\gamma/dt}d\gamma/dt = 0$, the straight lines of the connection. The metric-compatible and torsion-free condition singles out the Levi–Civita connection of a metric, expressed by the Koszul formula, and for it the parallel transport is an isometry; the metric geometry of geodesics and curvature is Part IV's.
 
 ## Summary of Notation
 
@@ -190,11 +190,11 @@ Parallel transport solves the equation $\nabla_{\dot\gamma}V = 0$ along a curve;
 | $R = d\omega + \omega\wedge\omega$ | Local curvature; the structure equation |
 | $d^\nabla R = 0$, $dR + [\omega,R] = 0$ | Bianchi identity |
 | Flat | $R = 0$; locally $\omega = 0$ and the horizontal distribution is integrable |
-| $\nabla_{\dot\gamma}V = 0$ | Parallel transport equation along a curve |
+| $\nabla_{d\gamma/dt}V = 0$ | Parallel transport equation along a curve |
 | $P_\gamma : E_{\gamma(a)} \to E_{\gamma(b)}$ | Parallel transport, a linear isomorphism |
 | Holonomy group | $\{P_\gamma\}$ over the closed curves based at $x$; a subgroup of $GL(E_x)$ |
 | $R(X,Y)(x)$ | Spans the Lie algebra of the holonomy (Ambrose–Singer) |
-| $\nabla_{\dot\gamma}\dot\gamma = 0$ | Autoparallel curves; the geodesics for the Levi–Civita connection |
+| $\nabla_{d\gamma/dt}d\gamma/dt = 0$ | Autoparallel curves; the geodesics for the Levi–Civita connection |
 | $T(X,Y) = \nabla_XY - \nabla_YX - [X,Y]$ | Torsion of a connection on $TM$ |
 | Metric-compatible, $Xh(s,t) = h(\nabla_Xs,t) + h(s,\nabla_Xt)$ | The connection preserves the metric |
 | Koszul formula, Levi–Civita | The unique metric and torsion-free connection of a metric |

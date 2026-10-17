@@ -33,7 +33,6 @@ This article lists the integral transforms the corpus constructs and inverts. An
 | the Hilbert transform on the line | kernel $1/(\pi(x-y))$; inversion by $H^2 = -I$ and the boundedness on $L^{n}$, $1<p<\infty$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Riesz transforms $R_j$ | symbols $-i\xi_j/\lvert\xi\rvert$; the model singular integrals of the Calderón–Zygmund theory, of which the Hilbert transform is the case $n=1$ | *Fourier Analysis on Euclidean Spaces*; *Real Harmonic Analysis* |
 | the Radon transform | integration over hyperplanes; inversion by the Fourier slice theorem and filtered back-projection | *Complex Harmonic Analysis* |
-| the Hankel transform | kernel $J_\nu(\rho r)r$; inversion by the Hankel inversion theorem, the radial part of the Fourier transform | *Octonion Harmonic Analysis* |
 | the wavelet transform | kernel $\psi((t-b)/a)/a$; inversion by the admissibility condition $\int \lvert\hat\psi(\omega)\rvert^2/\lvert\omega\rvert\,d\omega < \infty$ | *Complex Harmonic Analysis* |
 | the wavelet transform on a hypercomplex system | the same kernel with the system's scalings; inversion by the resolution of the identity | *Biquaternion Continuous Harmonic Analysis* |
 

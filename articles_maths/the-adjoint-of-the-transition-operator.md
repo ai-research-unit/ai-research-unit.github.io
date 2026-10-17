@@ -104,7 +104,7 @@ so the spectrum of the adjoint is the conjugate of the spectrum of the original,
 
 **Example (the directed cycle).** On $\{1,2,3\}$ with the deterministic cyclic motion the transition operator is the cyclic shift, its adjoint is the backwards shift, and $P_t^{*}\ne P_t$; the generator is the anti-Hermitian cyclic derivative, $L^*=-L$, with the purely imaginary spectrum, and the Dirichlet form is not symmetric.
 
-**Example (the Ornstein–Uhlenbeck semigroup).** The generator $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ on $L^2$ of the normal law is self-adjoint, so the semigroup $P_t$ is self-adjoint and the process reversible; the adjoint semigroup is the original, the spectrum of $L$ is $\{-n\theta\}$, and the Dirichlet form is the quadratic form of the Hermite operator.
+**Example (the Ornstein–Uhlenbeck semigroup).** The generator $L=\frac{\sigma^2}{2}\partial^2/\partial x^2-\theta x\partial/\partial x$ on $L^2$ of the normal law is self-adjoint, so the semigroup $P_t$ is self-adjoint and the process reversible; the adjoint semigroup is the original, the spectrum of $L$ is $\{-n\theta\}$, and the Dirichlet form is the quadratic form of the Hermite operator.
 
 **Example (the Brownian semigroup).** The heat semigroup $P_t=\exp(\frac12\Delta t)$ on $L^2(\mathbb R)$ with the Lebesgue measure is self-adjoint, being the function of a self-adjoint operator; the adjoint is the original and the process reversible. The example shows that the reversibility is the symmetry of the Dirichlet form, $-\langle Lf,g\rangle=\frac12\langle\nabla f,\nabla g\rangle$.
 

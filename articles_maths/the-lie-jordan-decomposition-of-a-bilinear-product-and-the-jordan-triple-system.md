@@ -101,7 +101,7 @@ Both ternary products above satisfy this identity. A Jordan triple system need n
 
 ### The Block Structure
 
-The four-dimensional carrier has one more piece of visible structure. In the trinomial basis the units $e_\mu = i\hat e_\mu$ are $2\times2$ *block* matrices: each unit is a $2\times2$ matrix of $2\times2$ blocks, and the blocks of the three spatial units close under multiplication into the quaternion group $Q_8$ modulo its centre. The source groups these blocks under the name **periodic matrices** $J_i$; the block form itself is what the algebra supplies, and it exhibits $\mathbb{B} \cong M_2(\mathbb{C})$ directly — the algebra is a $2\times2$ matrix algebra, its symmetric part is the special Jordan algebra, and its skew part is the Lie algebra. The verified content of the block structure is exactly the quaternion relations $\hat e_k^2 = -I$ and $\hat e_1\hat e_2 = \hat e_3$; the identification of the individual blocks with the source's $J_i$ is the source's, and the corpus records it as such.
+The four-dimensional carrier has one more piece of visible structure. In the trinomial basis the units $e_\mu = i\hat e_\mu$ are $2\times2$ *block* matrices: each unit is a $2\times2$ matrix of $2\times2$ blocks, and the blocks of the three spatial units close under multiplication into the quaternion group $Q_8$ modulo its centre. The source groups these blocks under the name **periodic matrices** $J_i$; the block form itself is what the algebra supplies, and it exhibits $\mathbb{B} \cong M_2(\mathbb{C})$ directly — the algebra is a $2\times2$ matrix algebra, its symmetric part is the special Jordan algebra, and its skew part is the Lie algebra. The verified content of the block structure is exactly the quaternion relations $\hat e_\mu^2 = -I$ and $\hat e_x \hat e_y = \hat e_z$; the identification of the individual blocks with the source's $J_i$ is the source's, and the corpus records it as such.
 
 ## What Is Verified and What Is the Source's
 
@@ -111,7 +111,7 @@ The four-dimensional carrier has one more piece of visible structure. In the tri
 - the derivation identity $[G, H\bullet K] = [G,H]\bullet K + H\bullet[G,K]$;
 - the fundamental identity $[G,H\bullet K] + [H,K\bullet G] + [K,G\bullet H] = 0$;
 - the symmetry $\{G,H,K\} = \{K,H,G\}$ and the five-linear Jordan triple identity, for both ternary forms;
-- that the composition is associative with unit $k$, and that the blocks of $e_1, e_2, e_3$ reproduce the quaternion relations.
+- that the composition is associative with unit $k$, and that the blocks of $\vec e_x, \vec e_y, \vec e_z$ reproduce the quaternion relations.
 
 **The source's**, transcribed and not independently derivable from the identities above: the naming of the block matrices $J_i$ and the claim that the "revised" account corrects an earlier formulation by a sign; the identification of the ternary product with the source's order-three ding; and the general definition of an order-$\ell$ ding. The identities themselves are the definitional ones for Lie, Jordan and Jordan-triple structures; what the source adds is the observation that the *same* product carries all three, and the explicit construction that shows it.
 
@@ -149,7 +149,7 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 | $G \bullet H = \tfrac12(G\star H + H\star G)$ | Jordan (symmetric) product |
 | $[G,H] = \tfrac12(G\star H - H\star G)$ | Lie (antisymmetric) bracket |
 | $\{G,H,K\}$ | Ternary (Jordan triple) product |
-| $e_\mu = i\hat e_\mu$ | Units of the trinomial basis, $\hat e_k^2 = -I$ |
+| $e_\mu = i\hat e_\mu$ | Units of the trinomial basis, $\hat e_\mu^2 = -I$ |
 | $J_i$ | The source's name for the four $2\times2$ blocks of the units |
 
 ## Further Reading

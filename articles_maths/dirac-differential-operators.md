@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Dirac operator is a formally self-adjoint first-order elliptic operator whose square is a Laplace-type operator. In this corpus the flat operator $e_\mu\partial_\mu$ is named the **Cauchy–Riemann operator**; the classical name *Dirac operator*, glossed once in *Clifford Analysis*, is reserved for the family of operators studied here: the operator $D=\sum_\mu c_\mu\partial_\mu+\cdots$ assembled from Clifford multiplication by the coefficients of a connection, including the spin Dirac operator of a Riemannian manifold, its twists by auxiliary bundles, and its flat Euclidean model. The present article treats that family as mathematics.
+A Dirac operator is a formally self-adjoint first-order elliptic operator whose square is a Laplace-type operator. In this corpus the flat operator $e_\mu\partial/\partial x_\mu$ is named the **Cauchy–Riemann operator**; the classical name *Dirac operator*, glossed once in *Clifford Analysis*, is reserved for the family of operators studied here: the operator $D=\sum_\mu c_\mu\partial/\partial x_\mu+\cdots$ assembled from Clifford multiplication by the coefficients of a connection, including the spin Dirac operator of a Riemannian manifold, its twists by auxiliary bundles, and its flat Euclidean model. The present article treats that family as mathematics.
 
 The content of the article is the **analytic theory** of these operators: formal self-adjointness and essential self-adjointness, the domain and the closure, the spectrum and its structure, the compactness of the resolvent on a closed manifold, the finite-dimensionality of the kernel, and the relation between the operator and the index of its chiral part. The geometric constructions — spin structures, the spinor bundle, the Lichnerowicz formula as a geometric identity, the Atiyah–Singer theorem — belong to Part IV and are cited; the article states the analysis that those constructions support, and it states it for the general Dirac-type operator before specialising to the flat model and to examples whose spectrum can be computed exactly.
 
@@ -53,7 +53,7 @@ where $\nabla^*\nabla=-\sum_j\nabla_{e_j}\nabla_{e_j}+\cdots$ is the connection 
 
 ### The Flat Model
 
-The flat case is the model on which every statement can be checked by Fourier analysis. Let $M=\mathbb{R}^m$ with the Euclidean metric, let $\mathcal{S}$ be a module over $\mathrm{Cl}_{0,m}$ with a Hermitian metric for which $e_1,\dots,e_m$ are skew, and let $D=\sum_{j=1}^{m}e_j\partial_j$ act on $C_c^\infty(\mathbb{R}^m;\mathcal{S})$.
+The flat case is the model on which every statement can be checked by Fourier analysis. Let $M=\mathbb{R}^m$ with the Euclidean metric, let $\mathcal{S}$ be a module over $\mathrm{Cl}_{0,m}$ with a Hermitian metric for which $e_1,\dots,e_m$ are skew, and let $D=\sum_{j=1}^{m}e_j\partial/\partial x_j$ act on $C_c^\infty(\mathbb{R}^m;\mathcal{S})$.
 
 **Proposition (formal self-adjointness).** For $f,g\in C_c^\infty(\mathbb{R}^m;\mathcal{S})$,
 
@@ -61,11 +61,11 @@ $$
 \langle Df,g\rangle = \langle f,Dg\rangle .
 $$
 
-*Proof.* Since $e_j$ is skew and constant, $\langle e_j\partial_jf,g\rangle=-\langle\partial_jf,e_jg\rangle$; integrating by parts, the boundary term vanishing for compact support, gives $+\langle f,e_j\partial_jg\rangle$, and summing over $j$ gives the claim.
+*Proof.* Since $e_j$ is skew and constant, $\langle e_j\partial/\partial x_j\,f,g\rangle=-\langle\partial/\partial x_j\,f,e_jg\rangle$; integrating by parts, the boundary term vanishing for compact support, gives $+\langle f,e_j\partial/\partial x_j\,g\rangle$, and summing over $j$ gives the claim.
 
 **Theorem (essential self-adjointness and domain).** The operator $D$ with domain $C_c^\infty$ is essentially self-adjoint; its closure has domain the Sobolev space $H^1(\mathbb{R}^m;\mathcal{S})$ and is self-adjoint with $D^2=-\Delta$, the positive Laplacian.
 
-*Proof.* The Clifford relations give $D^2=\sum_{j,k}e_je_k\partial_j\partial_k=\sum_je_j^2\partial_j^2=-\Delta$, since the off-diagonal terms cancel. Hence for $f\in C_c^\infty$,
+*Proof.* The Clifford relations give $D^2=\sum_{j,k}e_je_k\partial^2/\partial x_j\partial x_k=\sum_je_j^2\partial^2/\partial x_j^2=-\Delta$, since the off-diagonal terms cancel. Hence for $f\in C_c^\infty$,
 
 $$
 \|Df\|^2 = \langle D^2f,f\rangle = \langle-\Delta f,f\rangle = \|\nabla f\|^2 ,
@@ -81,7 +81,7 @@ $$
 
 and the multiplier $i\sigma(\xi)$ is Hermitian with eigenvalues $\pm|\xi|$.
 
-*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial_j$ into multiplication by $i\xi_j$, hence $D$ into multiplication by $i\sigma(\xi)$. Since $\sigma(\xi)^2=-|\xi|^2$ and $e_j$ is skew, $i\sigma(\xi)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\xi|^2$, namely $\pm|\xi|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\xi}\{-|\xi|,|\xi|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\xi\neq0$; absolute continuity follows from the explicit direct-integral form.
+*Proof.* The Fourier transform is unitary on $L^2(\mathbb{R}^m;\mathcal{S})$ and turns $\partial/\partial x_j$ into multiplication by $i\xi_j$, hence $D$ into multiplication by $i\sigma(\xi)$. Since $\sigma(\xi)^2=-|\xi|^2$ and $e_j$ is skew, $i\sigma(\xi)$ is Hermitian, so it is diagonalisable with real eigenvalues; its eigenvalues are the square roots of $|\xi|^2$, namely $\pm|\xi|$. The spectrum of a direct-integral multiplication operator is the closure of the union of the spectra of its fibres, here $\overline{\bigcup_{\xi}\{-|\xi|,|\xi|\}}=\mathbb{R}$. There are no eigenvalues because the fibres are invertible for $\xi\neq0$; absolute continuity follows from the explicit direct-integral form.
 
 **Corollary (Weyl-type asymptotics on a torus).** On the flat torus $\mathbb{T}^m=\mathbb{R}^m/\mathbb{Z}^m$, with the same operator acting on smooth sections, the spectrum is $\{\pm|\xi|:\xi\in\mathbb{Z}^m\}$ with the multiplicities of the fibre eigenvalues, and the counting function satisfies $\#\{\text{eigenvalues of }|D|\le\lambda\}\sim c_m\lambda^m$ with $c_m$ the volume of the unit ball; this is Weyl's law for a first-order elliptic operator, in which the exponent is the dimension, not half of it.
 
@@ -129,13 +129,13 @@ is unchanged by continuous deformations of the operator within the class of Dira
 
 The corpus's flat operator and the self-adjoint operator of this article differ in one coordinate direction, and the difference is worth isolating.
 
-**Remark (the scalar direction).** Let $A=\mathrm{Cl}_{0,m}$ and let $D=\partial_0+\sum_{j=1}^{m}e_j\partial_j$ be the Cauchy–Riemann operator of *Clifford Analysis*. Its coefficients are $1,e_1,\dots,e_m$: the vector coefficients are skew for the standard metric on the module, but the coefficient $1$ of the scalar direction is Hermitian and not skew. Consequently the formal adjoint is not $D$ but $-\partial$, where $\partial=\partial_0-\sum_je_j\partial_j$ is the conjugate operator: integration by parts gives
+**Remark (the scalar direction).** Let $A=\mathrm{Cl}_{0,m}$ and let $D=\partial/\partial x_0+\sum_{j=1}^{m}e_j\partial/\partial x_j$ be the Cauchy–Riemann operator of *Clifford Analysis*. Its coefficients are $1,e_1,\dots,e_m$: the vector coefficients are skew for the standard metric on the module, but the coefficient $1$ of the scalar direction is Hermitian and not skew. Consequently the formal adjoint is not $D$ but $-\partial$, where $\partial=\partial/\partial x_0-\sum_je_j\partial/\partial x_j$ is the conjugate operator: integration by parts gives
 
 $$
-\langle Df,g\rangle = -\langle f,\partial_0g\rangle+\sum_{j=1}^{m}\langle f,e_j\partial_jg\rangle = \Bigl\langle f,\Bigl(-\partial_0+\sum_{j=1}^{m}e_j\partial_j\Bigr)g\Bigr\rangle ,
+\langle Df,g\rangle = -\langle f,\partial/\partial x_0\,g\rangle+\sum_{j=1}^{m}\langle f,e_j\partial/\partial x_j\,g\rangle = \Bigl\langle f,\Bigl(-\partial/\partial x_0+\sum_{j=1}^{m}e_j\partial/\partial x_j\Bigr)g\Bigr\rangle ,
 $$
 
-so $D^*=-\partial$, where $\partial=\partial_0-\sum_je_j\partial_j$ is the conjugate operator. Splitting into Hermitian parts, the self-adjoint part of $D$ is the vector operator $D_{\mathrm{sa}}=\sum_je_j\partial_j$ and its skew-adjoint part is $\partial_0$. The operator $D$ is elliptic — its symbol is invertible, as *Regularity and the Cauchy–Riemann Operator* shows — but it is not symmetric, and it is the sum of a self-adjoint and a skew-adjoint operator, so it is not normal either; the self-adjoint Dirac operator of the family is $D_{\mathrm{sa}}$, and the corpus's operator is the same operator with one direction treated as a Hermitian rather than an anti-Hermitian coefficient.
+so $D^*=-\partial$, where $\partial=\partial/\partial x_0-\sum_je_j\partial/\partial x_j$ is the conjugate operator. Splitting into Hermitian parts, the self-adjoint part of $D$ is the vector operator $D_{\mathrm{sa}}=\sum_je_j\partial/\partial x_j$ and its skew-adjoint part is $\partial/\partial x_0$. The operator $D$ is elliptic — its symbol is invertible, as *Regularity and the Cauchy–Riemann Operator* shows — but it is not symmetric, and it is the sum of a self-adjoint and a skew-adjoint operator, so it is not normal either; the self-adjoint Dirac operator of the family is $D_{\mathrm{sa}}$, and the corpus's operator is the same operator with one direction treated as a Hermitian rather than an anti-Hermitian coefficient.
 
 **Remark (the two factorisations).** Both facts can be read in one line. The corpus's operator satisfies $D\bar D=\bar DD=\Delta$, so its square with its conjugate is the Laplacian; the self-adjoint vector operator satisfies $D_{\mathrm{sa}}^2=-\Delta$, so its own square is the Laplacian. In the first case the Laplacian is produced by a product of two distinct operators and the individual operator has no spectral theory of the usual self-adjoint kind; in the second the Laplacian is produced by the square of one self-adjoint operator, whose spectral theory is the subject of this article. The two theories are the two faces of the factorisation of the Laplacian, and the passage between them is the passage between a Hermitian and an anti-Hermitian treatment of the scalar coordinate.
 
@@ -143,7 +143,7 @@ so $D^*=-\partial$, where $\partial=\partial_0-\sum_je_j\partial_j$ is the conju
 
 ## Summary
 
-A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Clifford multiplication by an orthonormal frame and a Clifford connection, the coefficients being skew for the fibre metric; the spin Dirac operator and the twisted Dirac operator of a Clifford module are the two fundamental examples, and the constructions of the bundles and the Lichnerowicz formula as a geometric identity are Part IV's. The Weitzenböck identity $D^2=\nabla^*\nabla+\mathcal R$ makes the square a Laplace-type operator; for the spin Dirac operator $\mathcal R=\tfrac14\mathrm{scal}$, and positive scalar curvature kills the harmonic spinors. The flat model $D=\sum_je_j\partial_j$ on $\mathbb{R}^m$ is essentially self-adjoint on $C_c^\infty$, with closure the self-adjoint operator on $H^1$ and with $D^2=-\Delta$; its spectrum is all of $\mathbb{R}$, purely absolutely continuous, with no eigenvalues, and the Fourier transform diagonalises it as multiplication by the Hermitian multiplier $i\sigma(\xi)$ with $\sigma(\xi)=\sum_je_j\xi_j$ and eigenvalues $\pm|\xi|$. On a closed manifold a Dirac-type operator is self-adjoint with compact resolvent, hence has discrete spectrum, finite-dimensional eigenspaces and finite-dimensional kernel; with a chirality grading it is odd, and the index of its chiral part is a deformation invariant computed by the Atiyah–Singer theorem, with the Fredholm theory supplied by *Fredholm Theory* and the spectral theory by *Unbounded Operators and Spectral Measures*. The corpus's Cauchy–Riemann operator $e_\mu\partial_\mu$ is the flat elliptic operator with one Hermitian coefficient; it is not symmetric, its self-adjoint part is the vector operator $\sum e_j\partial_j$, and the two are the two faces of the factorisation of the Laplacian, the first producing $\Delta$ as $D\bar D$ and the second as $D_{\mathrm{sa}}^2$.
+A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Clifford multiplication by an orthonormal frame and a Clifford connection, the coefficients being skew for the fibre metric; the spin Dirac operator and the twisted Dirac operator of a Clifford module are the two fundamental examples, and the constructions of the bundles and the Lichnerowicz formula as a geometric identity are Part IV's. The Weitzenböck identity $D^2=\nabla^*\nabla+\mathcal R$ makes the square a Laplace-type operator; for the spin Dirac operator $\mathcal R=\tfrac14\mathrm{scal}$, and positive scalar curvature kills the harmonic spinors. The flat model $D=\sum_je_j\partial/\partial x_j$ on $\mathbb{R}^m$ is essentially self-adjoint on $C_c^\infty$, with closure the self-adjoint operator on $H^1$ and with $D^2=-\Delta$; its spectrum is all of $\mathbb{R}$, purely absolutely continuous, with no eigenvalues, and the Fourier transform diagonalises it as multiplication by the Hermitian multiplier $i\sigma(\xi)$ with $\sigma(\xi)=\sum_je_j\xi_j$ and eigenvalues $\pm|\xi|$. On a closed manifold a Dirac-type operator is self-adjoint with compact resolvent, hence has discrete spectrum, finite-dimensional eigenspaces and finite-dimensional kernel; with a chirality grading it is odd, and the index of its chiral part is a deformation invariant computed by the Atiyah–Singer theorem, with the Fredholm theory supplied by *Fredholm Theory* and the spectral theory by *Unbounded Operators and Spectral Measures*. The corpus's Cauchy–Riemann operator $e_\mu\partial/\partial x_\mu$ is the flat elliptic operator with one Hermitian coefficient; it is not symmetric, its self-adjoint part is the vector operator $\sum e_j\partial/\partial x_j$, and the two are the two faces of the factorisation of the Laplacian, the first producing $\Delta$ as $D\bar D$ and the second as $D_{\mathrm{sa}}^2$.
 
 ## Summary of Notation
 
@@ -159,8 +159,8 @@ A Dirac-type operator is $D=\sum_jc(e_j)\nabla_{e_j}+$zeroth order, with Cliffor
 | $H^1(M;S)$ | Sobolev domain of the closure |
 | $\sigma(\xi)=\sum_je_j\xi_j$ | Symbol in the flat case |
 | $\operatorname{ind}D^+$ | Analytic index, $\dim\ker D^+-\dim\ker D^-$ |
-| $e_\mu\partial_\mu$, $\partial_0+\sum_je_j\partial_j$ | Cauchy–Riemann operator of the corpus (flat, non-symmetric) |
-| $D_{\mathrm{sa}}=\sum_je_j\partial_j$ | Self-adjoint vector part |
+| $e_\mu\partial/\partial x_\mu$, $\partial/\partial x_0+\sum_je_j\partial/\partial x_j$ | Cauchy–Riemann operator of the corpus (flat, non-symmetric) |
+| $D_{\mathrm{sa}}=\sum_je_j\partial/\partial x_j$ | Self-adjoint vector part |
 
 ## Further Reading
 

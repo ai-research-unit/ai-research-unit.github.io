@@ -140,7 +140,7 @@ so that the operator is not conformally invariant but acquires a zeroth-order te
 
 ### The Flat Space
 
-For $M=\mathbb{R}^n$ with the Euclidean metric and the trivial spin structure, the spin connection is the ordinary derivative and the spinor operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial_i$, with $D^2=-\Delta$ on spinor-valued functions and with kernel the monogenic spinors of *Clifford Analysis*. The flat case is the model for the symbol and the elliptic regularity of the general operator.
+For $M=\mathbb{R}^n$ with the Euclidean metric and the trivial spin structure, the spin connection is the ordinary derivative and the spinor operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial/\partial x_i$, with $D^2=-\Delta$ on spinor-valued functions and with kernel the monogenic spinors of *Clifford Analysis*. The flat case is the model for the symbol and the elliptic regularity of the general operator.
 
 ### The Round Sphere
 

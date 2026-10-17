@@ -3,13 +3,13 @@
 ## Introduction
 
 The underlying real space of the quaternion algebra $\mathbb{H}$ carries the general plain bilinear
-product $\tilde p\tilde q$, the multiplication of *Introduction to the General Plain Algebra of
+product $\tilde q_1\tilde q_2$, the multiplication of *Introduction to the General Plain Algebra of
 Quaternions*. The exchange of the two arguments splits that product into a symmetric and an
 antisymmetric part, and each part is again a real bilinear product of the same space. This article
 reads the **antisymmetric part** as a multiplication in its own right:
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
+\tilde q_1\times\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr)=\vec q_1\times\vec q_2,
 $$
 
 the cross product of the two vector parts. The space $\mathbb{H}$ with this operation is written
@@ -17,8 +17,8 @@ $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block, t
 $\mathrm{APA}$ in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real
-scalars, but $\times$ is a different multiplication from $\tilde p\tilde q$: it is alternating, it
-is not associative, and $e_0$ is not a unit. Throughout, the natural sign ${}^{\natural}$ is the
+scalars, but $\times$ is a different multiplication from $\tilde q_1\tilde q_2$: it is alternating, it
+is not associative, and $e_t$ is not a unit. Throughout, the natural sign ${}^{\natural}$ is the
 quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution,
 and the star coincides with the natural sign and gives nothing new.
 
@@ -36,12 +36,12 @@ The split that produces the block, with its two projections, is *The Symmetric a
 Parts of an Algebra Product*; the symmetric half is *Introduction to the Symmetric Plain Algebra of
 Quaternions*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so
-that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is
-$\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$;
-$\vec p\cdot\vec q$ is the Euclidean dot product and $\vec p\times\vec q$ the vector
-product of the vector parts. The plain product is $\tilde p\tilde q$, its scalar–vector rule is
-$\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$,
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x \vec e_y=\vec e_z$, so
+that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. A generic element is
+$\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$;
+$\vec q_1\cdot\vec q_2$ is the Euclidean dot product and $\vec q_1\times\vec q_2$ the vector
+product of the vector parts. The plain product is $\tilde q_1\tilde q_2$, its scalar–vector rule is
+$\tilde q_1\tilde q_2=(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2)+q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$,
 and the symbol $\circ$ is reserved for the composition of maps.
 
 ## The Antisymmetric Part of the Plain Product
@@ -51,10 +51,10 @@ and the symbol $\circ$ is reserved for the composition of maps.
 **Definition.** The **antisymmetric plain product** of two quaternions is
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr).
+\tilde q_1\times\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr).
 $$
 
-It is the **antisymmetrisation** of the general plain bilinear product $\tilde p\tilde q$, the
+It is the **antisymmetrisation** of the general plain bilinear product $\tilde q_1\tilde q_2$, the
 operation called the antisymmetric part of the product in *The Symmetric and Antisymmetric Parts of
 an Algebra Product*, and the operation named $\mathrm{APA}$ in *The Algebraic Structures over the
 Quaternioid $\mathbb{R}$ Space*. The space $\mathbb{H}$ with the product $\times$ is written
@@ -62,55 +62,55 @@ $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block.
 
 ### The Coordinate and Scalar–Vector Forms
 
-The plain product reads $\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$,
-and its exchange $\tilde q\tilde p$ differs from it in the sign of the cross term and in the order of
+The plain product reads $\tilde q_1\tilde q_2=(q_{1t}q_{2t}-\vec q_1\cdot\vec q_2)+q_{1t}\vec q_2+q_{2t}\vec q_1+\vec q_1\times\vec q_2$,
+and its exchange $\tilde q_2\tilde q_1$ differs from it in the sign of the cross term and in the order of
 the mixed terms. Subtracting and halving, the symmetric pieces cancel and the operation is the cross
 term alone:
 
 $$
-\tilde p\times\tilde q=\vec p\times\vec q .
+\tilde q_1\times\tilde q_2=\vec q_1\times\vec q_2 .
 $$
 
 Read on the coordinates,
 
 $$
-\tilde p\times\tilde q=(p_2q_3-p_3q_2)e_1+(p_3q_1-p_1q_3)e_2+(p_1q_2-p_2q_1)e_3 .
+\tilde q_1\times\tilde q_2=(q_{1y}q_{2z}-q_{1z}q_{2y})\vec e_x+(q_{1z}q_{2x}-q_{1x}q_{2z})\vec e_y+(q_{1x}q_{2y}-q_{1y}q_{2x})\vec e_z .
 $$
 
 **Remark (the scalar part is invisible).** The product depends only on the two vector parts, so
-**the operation discards both scalar coordinates**: $\tilde p\times\tilde q$ is unchanged when
-$p_0e_0$ or $q_0e_0$ is added to either argument, and every value is a pure element.
+**the operation discards both scalar coordinates**: $\tilde q_1\times\tilde q_2$ is unchanged when
+$q_{1t}e_t$ or $q_{2t}e_t$ is added to either argument, and every value is a pure element.
 
 ### Bilinearity and the Class
 
 **Proposition.** The operation is $\mathbb{R}$-**bilinear**, it is **alternating**,
 
 $$
-\tilde p\times\tilde q=-\tilde q\times\tilde p,\qquad \tilde p\times\tilde p=0 ,
+\tilde q_1\times\tilde q_2=-\tilde q_2\times\tilde q_1,\qquad \tilde q\times\tilde q=0 ,
 $$
 
-and it is neither commutative nor associative: at the units $\tilde p=e_1$, $\tilde q=e_2$ the two
-orderings are opposite, and $\tilde p\times\tilde p=0$ while $(\tilde p\times\tilde p)\times\tilde q=0$
-is not $(\tilde p\times\tilde q)\times\tilde p$ at $\tilde p=e_1,\tilde q=e_2$.
+and it is neither commutative nor associative: at the units $\tilde q_1=\vec e_x$, $\tilde q_2=\vec e_y$ the two
+orderings are opposite, and $\tilde q_1\times\tilde q_1=0$ while $(\tilde q_1\times\tilde q_1)\times\tilde q_2=0$
+is not $(\tilde q_1\times\tilde q_2)\times\tilde q_1$ at $\tilde q_1=\vec e_x,\tilde q_2=\vec e_y$.
 
 *Proof.* The difference of two biadditive maps is biadditive; the exchange of the arguments
 reverses the difference, which is the alternation, and the alternation at equal arguments gives
-$\tilde p\times\tilde p=0$. The non-associativity is read on the basis, where
-$e_1\times e_2=e_3$ and $(e_1\times e_1)\times e_2=0$, while
-$(e_1\times e_2)\times e_1=e_3\times e_1=e_2\neq0$.
+$\tilde q\times\tilde q=0$. The non-associativity is read on the basis, where
+$\vec e_x\times \vec e_y=\vec e_z$ and $(\vec e_x\times \vec e_x)\times \vec e_y=0$, while
+$(\vec e_x\times \vec e_y)\times \vec e_x=\vec e_z\times \vec e_x=\vec e_y\neq0$.
 
 ## The Identity with the Commutator
 
 **Definition.** The **commutator** of the plain product is
 
 $$
-[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p .
+[\tilde q_1,\tilde q_2]=\tilde q_1\tilde q_2-\tilde q_2\tilde q_1 .
 $$
 
 **Proposition.** The operation is half the commutator,
 
 $$
-[\tilde p,\tilde q]=2\,(\tilde p\times\tilde q),
+[\tilde q_1,\tilde q_2]=2\,(\tilde q_1\times\tilde q_2),
 $$
 
 and it is the commutator of the associative product, which is its structural reason: the bracket of
@@ -118,19 +118,19 @@ an associative algebra is alternating and satisfies the Jacobi identity.
 
 *Proof.* The identity is the definition of the commutator against the definition of the halved
 difference; and the commutator of an associative product is alternating,
-$[\tilde p,\tilde q]=-[\tilde q,\tilde p]$, so its half is too.
+$[\tilde q_1,\tilde q_2]=-[\tilde q_2,\tilde q_1]$, so its half is too.
 
 ## The Lie Bracket and the Jacobi Identity
 
-**Theorem (the Jacobi identity).** For all $\tilde p,\tilde q,\tilde r\in\mathbb{H}$,
+**Theorem (the Jacobi identity).** For all $\tilde q_1,\tilde q_2,\tilde q_3\in\mathbb{H}$,
 
 $$
-J(\tilde p,\tilde q,\tilde r)=(\tilde p\times\tilde q)\times\tilde r
-+(\tilde q\times\tilde r)\times\tilde p+(\tilde r\times\tilde p)\times\tilde q=0 .
+J(\tilde q_1,\tilde q_2,\tilde q_3)=(\tilde q_1\times\tilde q_2)\times\tilde q_3
++(\tilde q_2\times\tilde q_3)\times\tilde q_1+(\tilde q_3\times\tilde q_1)\times\tilde q_2=0 .
 $$
 
 *Proof.* Read on the vector parts, the cyclic sum is
-$(\vec p\times\vec q)\times\vec r+(\vec q\times\vec r)\times\vec p+(\vec r\times\vec p)\times\vec q$,
+$(\vec q_1\times\vec q_2)\times\vec q_3+(\vec q_2\times\vec q_3)\times\vec q_1+(\vec q_3\times\vec q_1)\times\vec q_2$,
 which vanishes by the anticommutativity and the Jacobi identity of the vector product of
 $\mathbb{R}^3$ (*Quaternion Algebra*); the identity is verified on general elements and on the
 $64$ triples of the units. The scalar coordinates do not enter.
@@ -145,15 +145,15 @@ the Antisymmetric Plain Algebra*, below this article in this category.
 The scalar direction is killed by the operation on both sides, and the vector units multiply by the
 cross product of $\mathbb{R}^3$:
 
-| $\times$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
+| $\times$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $e_0$ | $0$ | $0$ | $0$ | $0$ |
-| $e_1$ | $0$ | $0$ | $e_3$ | $-e_2$ |
-| $e_2$ | $0$ | $-e_3$ | $0$ | $e_1$ |
-| $e_3$ | $0$ | $e_2$ | $-e_1$ | $0$ |
+| $e_t$ | $0$ | $0$ | $0$ | $0$ |
+| $\vec e_x$ | $0$ | $0$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $0$ | $-\vec e_z$ | $0$ | $\vec e_x$ |
+| $\vec e_z$ | $0$ | $\vec e_y$ | $-\vec e_x$ | $0$ |
 
-The table has four kinds of entries: the zero diagonal $\tilde p\times\tilde p=0$; the zero first row
-and first column; the six unit products $\pm e_k$, which are the structure constants of the cross
+The table has four kinds of entries: the zero diagonal $\tilde q\times\tilde q=0$; the zero first row
+and first column; the six unit products $\pm \vec e_k$, which are the structure constants of the cross
 product; and nothing else.
 
 ## The Image, the Absence of a Unit and the Reconstruction
@@ -161,28 +161,28 @@ product; and nothing else.
 **Proposition (the image).** The image of the block is the vector subspace,
 
 $$
-\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\{q_0=0\},
+\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\{q_t=0\},
 $$
 
 of real dimension three, and the block is onto it: every pure element is a value, since
-$e_1\times e_2=e_3$ and its cyclic images generate the vector subspace.
+$\vec e_x\times \vec e_y=\vec e_z$ and its cyclic images generate the vector subspace.
 
 **Proposition (no unit).** The block has no left unit, no right unit and no two-sided unit. For a
-candidate unit $\tilde e=e_0$ one has $e_0\times\tilde q=0$, which is not $\tilde q$ off the origin;
+candidate $e_t$ one has $e_t\times\tilde q=0$, which is not $\tilde q$ off the origin;
 and no other candidate produces the scalar direction at all, every value being pure.
 
-*Proof.* The values are pure, so a unit $\tilde e$ would give $\tilde e\times\tilde q=\tilde q$ for
-all $\tilde q$, in particular a pure right-hand side for $\tilde q=\tilde e$ and a central one for
+*Proof.* The values are pure, so a unit $\tilde u$ would give $\tilde u\times\tilde q=\tilde q$ for
+all $\tilde q$, in particular a pure right-hand side for $\tilde q=\tilde u$ and a central one for
 pure $\tilde q$; the two demands are incompatible off the pure elements. Checked on the four units:
-$e_k\times e_0=0\neq e_k$ and $e_0\times e_0=0\neq e_0$.
+$\vec e_k\times e_t=0\neq \vec e_k$ and $e_t\times e_t=0\neq e_t$.
 
 **Proposition (the reconstruction).** The algebra product is the sum of its two halves,
 
 $$
-\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\times\tilde q ,
+\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\times\tilde q_2 ,
 $$
 
-with $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ the symmetric half. The
+with $\tilde q_1\bullet\tilde q_2=\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$ the symmetric half. The
 square map sees only the symmetric half, $\tilde q\tilde q=\tilde q\bullet\tilde q$, so the
 antisymmetric half carries no square and no norm; this is why the block is its own product and not a
 reading of the algebra product.
@@ -194,26 +194,26 @@ The space $\mathbb{H}$ carries, beside the algebra product of the *Quaternions* 
 ## Summary
 
 The antisymmetric plain multiplication is
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$, the
+$\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$, the
 cross product of the two vector parts, the antisymmetric half of the plain product. It is
-$\mathbb{R}$-bilinear and alternating, with $\tilde p\times\tilde p=0$, half the commutator
-$[\tilde p,\tilde q]=2(\tilde p\times\tilde q)$ of the associative product. It satisfies the Jacobi
+$\mathbb{R}$-bilinear and alternating, with $\tilde q\times\tilde q=0$, half the commutator
+$[\tilde q_1,\tilde q_2]=2(\tilde q_1\times\tilde q_2)$ of the associative product. It satisfies the Jacobi
 identity, so $(\mathbb{H},\times)$ is a real Lie algebra of dimension four; its image is the vector
 subspace $\mathrm{Vect}(\mathbb{H})$ of real dimension three; and it has no unit on either side. The
-algebra product is reconstructed as $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$, and the square map sees
+algebra product is reconstructed as $\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2$, and the square map sees
 only the symmetric half, so the block carries no square of its own. Among the companion products of the category the block is the antisymmetrisation of the algebra product, the Lie bracket of the space.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\mathbb{H}^{\times}$ | the quaternion space with the antisymmetric plain product |
-| $\vec p\times\vec q$ | the vector product of the vector parts |
-| $[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p=2(\tilde p\times\tilde q)$ | the commutator of the plain product, twice the operation |
-| $\tilde p\times\tilde p=0$ | the alternation, the vanishing square |
+| $\vec q_1\times\vec q_2$ | the vector product of the vector parts |
+| $[\tilde q_1,\tilde q_2]=\tilde q_1\tilde q_2-\tilde q_2\tilde q_1=2(\tilde q_1\times\tilde q_2)$ | the commutator of the plain product, twice the operation |
+| $\tilde q\times\tilde q=0$ | the alternation, the vanishing square |
 | $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$ | the image, the vector subspace |
-| $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ | the reconstruction of the algebra product from its two halves |
+| $\tilde q_1\tilde q_2=\tilde q_1\bullet\tilde q_2+\tilde q_1\wedge\tilde q_2$ | the reconstruction of the algebra product from its two halves |
 | $\mathfrak{g}=(\mathbb{H},\times)$ | the real Lie algebra of the block |
 
 ## Further Reading

@@ -86,7 +86,6 @@ In the non-Archimedean case the completion preserves both invariants: the value 
 | $\mathbb{Z}[x]$, $k[x]$ | not local, and not valuation rings | *Polynomial Rings and Rational Functions* |
 | $M_2(\mathbb{R})$ | not commutative, so outside the commutative local theory | *Matrix Algebras* |
 | $\mathbb{H}$ | a division ring; its only maximal ideal is $(0)$, but the local theory here is commutative | *Quaternion Algebra* |
-| $\mathbb{O}$ | not a ring | *Octonion Algebra* |
 | $\mathbb{Z}/6\mathbb{Z}$ | not local: it has the two maximal ideals $(2)$ and $(3)$ | *Modular Arithmetic and the Ring of Residues* |
 | a Boolean ring | not local unless it is $\mathbb{F}_2$: its prime ideals are maximal, and there is one for every ultrafilter | *Von Neumann Regular Rings* |
 

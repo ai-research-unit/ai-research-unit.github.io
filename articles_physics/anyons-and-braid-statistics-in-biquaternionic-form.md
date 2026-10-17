@@ -11,7 +11,7 @@ The article is organized as follows. The braid group and its difference from the
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the non-abelian connection and its representation structure.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the four-dimensional theorem whose two cases the anyon interpolates.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$; the trace of a quaternion is $\mathrm{Tr}(q)=2\,\mathrm{Sc}(q)$ and the scalar part is $\mathrm{Sc}$. The algebraic structure of the gauge group is the one of the non-abelian gauge field construction; the spacetime is three-dimensional, with coordinates $x^\mu=(t,x,y)$ or, in the $ict$ convention, $x^\mu=(ict,x,y)$, so that the coordinate metric is $\eta=\mathrm{diag}(-1,+1,+1)$ and the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$. The statistics angle is $\theta$, the exchange phase $\exp(i\theta)$, the spin $s$, and the Chern–Simons level $k$; the linking number of two curves is $\mathrm{Lk}$.
 
 ## The Braid Group and the Failure of the Permutation Group
 
@@ -31,7 +31,7 @@ $$
 S_n = B_n\big/\langle\sigma_i^2=e\rangle ,
 $$
 
-so that the braid group is larger than the permutation group and its representations are correspondingly richer. A wavefunction on the configuration space carries a representation of $\pi_1$, and in $2+1$ dimensions the representation is a representation of $B_n$ rather than of $S_n$; this is the origin of fractional statistics.
+so that the braid group is larger than the permutation group and its representations are correspondingly richer. A wavefunction on the configuration space carries a representation of $\pi_x$, and in $2+1$ dimensions the representation is a representation of $B_n$ rather than of $S_n$; this is the origin of fractional statistics.
 
 ### Representations: Abelian and Non-Abelian Anyons
 
@@ -55,7 +55,7 @@ $$
 B_n^{\mathrm{ab}} \cong \mathbb{Z} ,
 $$
 
-with the image of every generator $\sigma_i$ being the same generator of $\mathbb{Z}$. A one-dimensional unitary representation is a homomorphism into an abelian group, hence factors through the abelianization, hence is determined by the image of the single generator, hence is $\sigma_i\mapsto \exp(i\theta)$ for some $\theta$: **the abelian anyon's phase is the coordinate on the dual of $\mathbb{Z}$**, that is, on the circle $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$. The integer that labels the abelianization is the total winding of the braid — the number of times the strands wrap, counted with sign — and the phase is its exponential. A non-abelian representation does not factor through the abelianization; it uses the full braid group, and its dimension is the dimension of the representation space. The distinction is therefore not a technicality but the algebraic content of the abelian/non-abelian division: one-dimensional representations see only the winding, and higher-dimensional ones see the braid.
+with the image of every generator $\sigma_i$ being the same generator of $\mathbb{Z}$. A one-dimensional unitary representation is a homomorphism into an abelian group, hence factors through the abelianization, hence is determined by the image of the single generator, hence is $\sigma_i\mapsto \exp(i\theta)$ for some $\theta$: **the abelian anyon's phase is the coordinate on the dual of $\mathbb{Z}$**, that is, on the circle $\mathrm{Hom}(\mathbb{Z},\mathrm{U}(1))=\mathrm{U}(1)$. The integer that labels the abelianization is the total winding of the braid — the number of times the strands wrap, counted with sign — and the phase is its exponential. A non-abelian representation does not factor through the abelianization; it uses the full braid group, and its dimension is the dimension of the representation space. The distinction is therefore not a technicality but the algebraic content of the abelian/non-abelian division: one-dimensional representations see only the winding, and higher-dimensional ones see the braid.
 
 ### The Framework's Reading of the Braid
 
@@ -147,8 +147,8 @@ The linking number was verified by direct computation. The Gauss integral
 
 $$
 \mathrm{Lk}(C_1,C_2) = \frac{1}{4\pi}\oint_{C_1}\oint_{C_2}
-\frac{(\vec x_1-\vec x_2)\cdot(d\vec x_1\times d\vec x_2)}
-{|\vec x_1-\vec x_2|^3}
+\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))}
+{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^3}
 $$
 
 was evaluated numerically for the Hopf link, the two circles linked once, and gave
@@ -249,7 +249,7 @@ The relation of the anyon's angle to the vacuum angle is worth recording, with a
 
 ## Summary
 
-In two spatial dimensions the exchange of identical particles is described by the braid group $B_n$ rather than by the symmetric group $S_n$; the braid generators satisfy $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ and do not square to the identity, and the symmetric group is the quotient in which they do. The one-dimensional unitary representations are $\sigma_i\mapsto \exp(i\theta)$ for arbitrary $\theta$, giving anyons; the higher-dimensional representations give non-abelian anyons. These statements were verified: the permutation matrices of $S_3$ satisfy the braid relation and square to the identity; the reduced Burau representation satisfies the braid relation without squaring to the identity; and the one-dimensional representation satisfies it for every angle. The one-dimensional representations factor through the abelianization $B_n^{\mathrm{ab}}\cong\mathbb{Z}$, so that the abelian anyon's phase is the coordinate on $\mathrm{Hom}(\mathbb{Z},U(1))=U(1)$; the level-$k$ representations of the $\mathrm{SU}(2)$ type factor through the Temperley–Lieb algebra with $d=2\cos(\pi/(k+2))$, which gives $d=\varphi$ at $k=3$; and the Fibonacci quantum dimension satisfies $d_\tau^2=1+d_\tau$, whose solution $d_\tau=(1+\sqrt5)/2$ was verified to machine precision.
+In two spatial dimensions the exchange of identical particles is described by the braid group $B_n$ rather than by the symmetric group $S_n$; the braid generators satisfy $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ and do not square to the identity, and the symmetric group is the quotient in which they do. The one-dimensional unitary representations are $\sigma_i\mapsto \exp(i\theta)$ for arbitrary $\theta$, giving anyons; the higher-dimensional representations give non-abelian anyons. These statements were verified: the permutation matrices of $S_3$ satisfy the braid relation and square to the identity; the reduced Burau representation satisfies the braid relation without squaring to the identity; and the one-dimensional representation satisfies it for every angle. The one-dimensional representations factor through the abelianization $B_n^{\mathrm{ab}}\cong\mathbb{Z}$, so that the abelian anyon's phase is the coordinate on $\mathrm{Hom}(\mathbb{Z},\mathrm{U}(1))=\mathrm{U}(1)$; the level-$k$ representations of the $\mathrm{SU}(2)$ type factor through the Temperley–Lieb algebra with $d=2\cos(\pi/(k+2))$, which gives $d=\varphi$ at $k=3$; and the Fibonacci quantum dimension satisfies $d_\tau^2=1+d_\tau$, whose solution $d_\tau=(1+\sqrt5)/2$ was verified to machine precision.
 
 The flux–charge composite realizes the anyon, with the exchange phase $\exp(i\theta)=\exp(ie\Phi/2\hbar)$ derived from the Aharonov–Bohm effect, and the spin–statistics relation $\theta=2\pi s$ ties the angle to a spin that need not be an integer or half-integer. The Chern–Simons theory supplies the field theory of fractional statistics: the loop correlator is the exponential of the linking number, the statistics angle is $\theta=\pi ϙ^2/k$, and the spin is $ϙ^2/2k$, with the semion at $k=2,ϙ=1$ having angle $\pi/2$ and spin $\tfrac14$. The linking number was computed for the Hopf link by the Gauss integral and found to be $\pm1$. The non-abelian case replaces the phase by a matrix, with the fusion rules $a\times b=\sum_c N_{ab}^c c$ and the quantum dimension organizing the state space.
 
@@ -273,7 +273,7 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
 | $\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\rangle=\exp(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
 | $\theta=\pi ϙ^2/k$, $s=ϙ^2/2k$ | Statistics angle and spin of the charge-$ϙ$ anyon at level $k$ |
-| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(\vec x_1-\vec x_2)\cdot(d\vec x_1\times d\vec x_2)}{|\vec x_1-\vec x_2|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
+| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))\cdot(d(x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z)\times d(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z))}{|x_1\,\vec e_x+y_1\,\vec e_y+z_1\,\vec e_z-(x_2\,\vec e_x+y_2\,\vec e_y+z_2\,\vec e_z)|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
 | $a\times b=\sum_c N_{ab}^c c$ | Fusion rules; multiplicities from tensor products |
 | $d_a$ | Quantum dimension |
 | $\mathrm{TL}_n(d)$, $d=2\cos\frac{\pi}{k+2}$ | Temperley–Lieb algebra; level dependence of the braid representation |

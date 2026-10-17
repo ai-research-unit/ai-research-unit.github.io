@@ -3,17 +3,17 @@
 
 ## Introduction
 
-A quaternionic structure on a manifold is a family of complex structures on its tangent spaces modelled on the imaginary quaternions. Where a complex structure singles out one operator $J$ with $J^2 = -\mathrm{id}$, a quaternionic structure provides a three-dimensional bundle $\mathcal{Q}$ of such operators, locally spanned by a triple $J_1, J_2, J_3$ satisfying the multiplication table of $e_1, e_2, e_3$ in the quaternion algebra $\mathbb{H}$. A manifold with such a structure has real dimension divisible by four, and the geometry is the geometry of the quaternionic general linear group $GL(n,\mathbb{H})$ and its compact unitary subgroup $Sp(n)$.
+A quaternionic structure on a manifold is a family of complex structures on its tangent spaces modelled on the imaginary quaternions. Where a complex structure singles out one operator $J$ with $J^2 = -\mathrm{id}$, a quaternionic structure provides a three-dimensional bundle $\mathcal{Q}$ of such operators, locally spanned by a triple $J_1, J_2, J_3$ satisfying the multiplication table of $\vec e_x, \vec e_y, \vec e_z$ in the quaternion algebra $\mathbb{H}$. A manifold with such a structure has real dimension divisible by four, and the geometry is the geometry of the quaternionic general linear group $GL(n,\mathbb{H})$ and its compact unitary subgroup $Sp(n)$.
 
 The subject has two levels, and the distinction between them is the organising principle of this article. An **almost quaternionic structure** is the pointwise datum, a rank-three subbundle $\mathcal{Q} \subseteq \mathrm{End}(TM)$ with the quaternionic relations. A **quaternionic structure** is an almost quaternionic structure that admits a torsion-free connection preserving it — the **Obata connection** — and Obata's theorem says that such a connection is unique when it exists. The integrability theory is therefore different in character from the complex case: there is no Nijenhuis tensor for the rank-three bundle, and integrability is expressed by the existence of a canonical connection rather than by the vanishing of a tensor.
 
 Above the quaternionic level sit the metric conditions. A **quaternionic Kähler manifold** is a Riemannian manifold whose Levi-Civita connection preserves the quaternionic structure — equivalently, whose holonomy group lies in $Sp(n)\cdot Sp(1)$ — and such a manifold is automatically Einstein in dimension at least eight. The **hypercomplex** and **hyperkähler** conditions, in which the three complex structures are themselves integrable or Kähler, are the subject, and the quaternionic Kähler manifolds with vanishing scalar curvature are exactly the hyperkähler ones.
 
-**The boundaries of the article.** The quaternion algebra $\mathbb{H}$, its basis $e_0=1,e_1,e_2,e_3$, the conjugations and the norm are those of Part I, and the quaternionic inner products and their Hermitian and anti-Hermitian subspaces those of the Part I quaternionic companions; nothing of the algebra is re-derived here. The Riemannian metric, the Levi-Civita connection, the holonomy group and the Ricci tensor are those of the companion article *Riemannian Geometry*; the pseudo-Riemannian and Lorentzian variants are those of *Pseudo-Riemannian and Lorentzian Geometry*. The complex and Hermitian structures, the fundamental form and the Chern connection are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition those of *Kähler Geometry*. The homogeneous spaces $G/H$ and their isotropy representations are the Lie-theoretic input of *Lie Groups* and its companions, cited throughout. The hyperkähler and Calabi–Yau conditions are developed andbeing, and are introduced here only far enough to locate them. The existence of the Obata connection, the Einstein property and the twistor correspondence are proved by the elliptic and parabolic methods of the analysis of Part III, where the measure and the limit are available; the statements are given here and the proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
+**The boundaries of the article.** The quaternion algebra $\mathbb{H}$, its basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, the conjugations and the norm are those of Part I, and the quaternionic inner products and their Hermitian and anti-Hermitian subspaces those of the Part I quaternionic companions; nothing of the algebra is re-derived here. The Riemannian metric, the Levi-Civita connection, the holonomy group and the Ricci tensor are those of the companion article *Riemannian Geometry*; the pseudo-Riemannian and Lorentzian variants are those of *Pseudo-Riemannian and Lorentzian Geometry*. The complex and Hermitian structures, the fundamental form and the Chern connection are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition those of *Kähler Geometry*. The homogeneous spaces $G/H$ and their isotropy representations are the Lie-theoretic input of *Lie Groups* and its companions, cited throughout. The hyperkähler and Calabi–Yau conditions are developed andbeing, and are introduced here only far enough to locate them. The existence of the Obata connection, the Einstein property and the twistor correspondence are proved by the elliptic and parabolic methods of the analysis of Part III, where the measure and the limit are available; the statements are given here and the proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
 
 ## Quaternionic Vector Spaces
 
-Let $\mathbb{H}$ be the algebra of quaternions with basis $e_0 = 1, e_1, e_2, e_3$ and relations $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$, $e_ie_j = -e_je_i$ for $i \neq j$, $e_1^2=e_2^2=e_3^2=-e_0$; the algebra is the real division algebra of Part I'sand conjugation and the norm are its conjugation and norm.
+Let $\mathbb{H}$ be the algebra of quaternions with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and relations $\vec e_x\vec e_y = \vec e_z$, $\vec e_y\vec e_z = \vec e_x$, $\vec e_z\vec e_x = \vec e_y$, $e_ie_j = -e_je_i$ for $i \neq j$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the algebra is the real division algebra of Part I'sand conjugation and the norm are its conjugation and norm.
 
 **Definition.** A **quaternionic vector space** is a left module over $\mathbb{H}$, that is, a real vector space $V$ with an action of $\mathbb{H}$ on the left. If $V \cong \mathbb{H}^n$ then $\dim_{\mathbb{R}} V = 4n$, and the group of $\mathbb{H}$-linear automorphisms is $GL(n,\mathbb{H})$.
 
@@ -23,7 +23,7 @@ $$
 \rho : \mathbb{H} \longrightarrow \mathrm{End}(V), \qquad \rho(1) = \mathrm{id},
 $$
 
-equivalently a triple of endomorphisms $J_1 = \rho(e_1)$, $J_2 = \rho(e_2)$, $J_3 = \rho(e_3)$ with
+equivalently a triple of endomorphisms $J_1 = \rho(\vec e_x)$, $J_2 = \rho(\vec e_y)$, $J_3 = \rho(\vec e_z)$ with
 
 $$
 J_1^2 = J_2^2 = J_3^2 = -\mathrm{id}, \qquad J_1J_2 = J_3, \quad J_2J_3 = J_1, \quad J_3J_1 = J_2, \qquad J_iJ_j = -J_jJ_i \ (i\neq j).
@@ -35,7 +35,7 @@ The last relation shows in particular that the $J_i$ pairwise anticommute.
 
 **Proof.** A left $\mathbb{H}$-module structure is an $\mathbb{R}$-algebra homomorphism $\rho : \mathbb{H}\to\mathrm{End}(V)$ whose value at $\lambda$ is the operator $v\mapsto\lambda v$; it satisfies $\rho(\lambda\mu) = \rho(\lambda)\rho(\mu)$ and $\rho(1)=\mathrm{id}$. Conversely such a homomorphism defines the left action $\lambda\cdot v = \rho(\lambda)v$, which is associative because $\rho$ is an algebra homomorphism. The $\mathbb{H}$-linear automorphisms are exactly the real automorphisms intertwining $\rho$, which is the centraliser of $\rho(\mathbb{H})$, and for $\rho$ the standard representation on $\mathbb{H}^n$ this centraliser is $GL(n,\mathbb{H})$.
 
-**Example.** On $\mathbb{H}^n$ with the basis $e_0,e_1,e_2,e_3$ for each copy of $\mathbb{H}$, left multiplication by $e_1, e_2, e_3$ gives a quaternionic structure. In the real basis $(1, e_1, e_2, e_3)$ of $\mathbb{H}$, the three operators are the $4\times 4$ matrices
+**Example.** On $\mathbb{H}^n$ with the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ for each copy of $\mathbb{H}$, left multiplication by $\vec e_x, \vec e_y, \vec e_z$ gives a quaternionic structure. In the real basis $(1, \vec e_x, \vec e_y, \vec e_z)$ of $\mathbb{H}$, the three operators are the $4\times 4$ matrices
 
 $$
 J_1 = \begin{pmatrix} 0 & -1 & 0 & 0\\ 1 & 0 & 0 & 0\\ 0 & 0 & 0 & -1\\ 0 & 0 & 1 & 0 \end{pmatrix}, \quad
@@ -56,7 +56,7 @@ positive definite in the sense that $h(v,v)$ is real and positive for $v \neq 0$
 **Remark.** The inclusion of groups is
 
 $$
-Sp(n) \subset SU(2n) \subset U(2n) \subset SO(4n),
+Sp(n) \subset SU(2n) \subset \mathrm{U}(2n) \subset SO(4n),
 $$
 
 and its dimension count $n(2n+1) + 3 = \dim(Sp(n)\cdot Sp(1)) = \dim Sp(n) + \dim Sp(1)$ exhibits the product $Sp(n)\cdot Sp(1)$ as the group generated by the quaternionic unitary transformations and the unit quaternions $\mathbb{H}^*/\mathbb{R}^* = Sp(1) = S^3$. This product group is the structure group of a quaternionic Kähler manifold, and $Sp(n)$ alone is the structure group of a hyperkähler one; both are groups of Part I, and their Lie theory is that of *Lie Groups*.
@@ -130,7 +130,7 @@ where $\nabla$ is the Levi-Civita connection of $g$; equivalently the local fram
 | $G/H$ | $\dim$ | $n$ |
 |---|---|---|
 | $\mathbb{HP}^n = Sp(n+1)/(Sp(n)\cdot Sp(1))$ | $4n$ | $n$ |
-| $\mathrm{Gr}_2(\mathbb{C}^{n+2}) = SU(n+2)/S(U(n)\cdot U(2))$ | $4n$ | $n$ |
+| $\mathrm{Gr}_2(\mathbb{C}^{n+2}) = SU(n+2)/S(\mathrm{U}(n)\cdot \mathrm{U}(2))$ | $4n$ | $n$ |
 | $\mathrm{Gr}_4(\mathbb{R}^{n+4}) = SO(n+4)/(SO(n)\cdot SO(4))$ | $4n$ | $n$ |
 | $G_2/SO(4)$ | $8$ | $2$ |
 | $F_4/(Sp(3)\cdot Sp(1))$ | $28$ | $7$ |
@@ -208,7 +208,7 @@ The twistor space $Z(M)$, an $S^2$-bundle of almost complex structures over a qu
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}$ | The quaternions, with basis $e_0=1,e_1,e_2,e_3$ |
+| $\mathbb{H}$ | The quaternions, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ |
 | $G$ | A simple Lie group (this article only in the Wolf list) |
 | $\mathcal{Q}$ | The rank-three subbundle of $\mathrm{End}(TM)$ defining an almost quaternionic structure |
 | $J_1, J_2, J_3$ | Local quaternionic frame: $J_i^2=-\mathrm{id}$, $J_1J_2=J_3$, $J_2J_3=J_1$, $J_3J_1=J_2$ (notation fixed by the shared block) |

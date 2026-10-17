@@ -87,7 +87,7 @@ and the same with $R_a$ in place of $L_a$.
 
 **Proof.** Immediate from the theorem; unitarity means $L_a^{*}L_a = \mathrm{id}$, that is $L_{a^{\dagger}a} = \mathrm{id}$, that is $a^{\dagger}a = 1$ by the injectivity of $a\mapsto L_a$ proved below.
 
-**Corollary (the slice and the vectors).** The left multiplications by the elements of the unitary slice are the unitary one-sided operators, so $a\mapsto L_a$ restricts to a unitary representation $U\to \mathrm U(\mathrm{Cl}(V,\mathfrak{Q}),(\cdot,\cdot))$ of the slice; and **every vector acts by a skew-adjoint operator**, $L_v^{*} = L_{v^{\dagger}} = -L_v$, because the dagger negates the vectors. When the involution is positive, a vector also satisfies $v^{\dagger}v = -v^{2} = \mathfrak{Q}(v)\cdot(-1)$, so $L_v$ is unitary exactly on the norm-one vectors, and the left multiplications by an orthonormal frame are the **complex structures** of the algebra: each is skew-adjoint, unitary and of square $-1$.
+**Corollary (the slice and the vectors).** The left multiplications by the elements of the unitary slice are the unitary one-sided operators, so $a\mapsto L_a$ restricts to a unitary representation $U\to \mathrm \mathrm{U}(\mathrm{Cl}(V,\mathfrak{Q}),(\cdot,\cdot))$ of the slice; and **every vector acts by a skew-adjoint operator**, $L_v^{*} = L_{v^{\dagger}} = -L_v$, because the dagger negates the vectors. When the involution is positive, a vector also satisfies $v^{\dagger}v = -v^{2} = \mathfrak{Q}(v)\cdot(-1)$, so $L_v$ is unitary exactly on the norm-one vectors, and the left multiplications by an orthonormal frame are the **complex structures** of the algebra: each is skew-adjoint, unitary and of square $-1$.
 
 ### The Generated $*$-Algebra
 

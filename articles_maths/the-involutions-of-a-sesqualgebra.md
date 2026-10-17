@@ -82,7 +82,7 @@ $$
 
 ### The Family of a Unitary Element
 
-**Theorem.** Let $u \in U(A)$ be unitary and let $\sigma_{u}(x) = ux^{*}u^{*}$. Then $\sigma_{u}$ is a $\varsigma$-semilinear anti-automorphism of $A$ with $\sigma_{u} = \alpha_{u} \circ *$, where $\alpha_{u}(x) = uxu^{*}$ is the inner $*$-automorphism of *Units and the Unitary Elements*, and
+**Theorem.** Let $u \in \mathrm{U}(A)$ be unitary and let $\sigma_{u}(x) = ux^{*}u^{*}$. Then $\sigma_{u}$ is a $\varsigma$-semilinear anti-automorphism of $A$ with $\sigma_{u} = \alpha_{u} \circ *$, where $\alpha_{u}(x) = uxu^{*}$ is the inner $*$-automorphism of *Units and the Unitary Elements*, and
 
 $$
 \sigma_{u}^{2} = \alpha_{u^{2}} , \qquad \text{so that} \qquad \sigma_{u} \in \operatorname{Inv}(A) \iff u^{2} \in Z(A) .
@@ -102,7 +102,7 @@ $$
 
 so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, that is $u^{2} \in Z(A)$.
 
-**Remark.** The criterion is not $u \in U(A)$ alone: the unitary element $u = \mathrm{diag}(i,1)$ of $M_{2}(\mathbb{C})$ has $u^{2} = \mathrm{diag}(-1,1)$, which is not central, and $\sigma_{u}$ is then not an involution, since $\sigma_{u}^{2}(E_{12}) = -E_{12}$; the unitary element $u = \mathrm{diag}(i,i)$ has $u^{2} = -I$ central and $\sigma_{u}$ is an involution. The condition $u^{2} \in Z(A)$ holds in particular for every unitary involution, $u^{2} = 1$, and for every central unitary.
+**Remark.** The criterion is not $u \in \mathrm{U}(A)$ alone: the unitary element $u = \mathrm{diag}(i,1)$ of $M_{2}(\mathbb{C})$ has $u^{2} = \mathrm{diag}(-1,1)$, which is not central, and $\sigma_{u}$ is then not an involution, since $\sigma_{u}^{2}(E_{12}) = -E_{12}$; the unitary element $u = \mathrm{diag}(i,i)$ has $u^{2} = -I$ central and $\sigma_{u}$ is an involution. The condition $u^{2} \in Z(A)$ holds in particular for every unitary involution, $u^{2} = 1$, and for every central unitary.
 
 **Corollary.** The family $\{\sigma_{u}\}$ is a family of involutions exactly over the unitary elements with $u^{2} \in Z(A)$, and $\sigma_{u} = *$ for every central unitary $u$.
 
@@ -110,7 +110,7 @@ so $\sigma_{u}^{2} = \mathrm{id}$ exactly when $u^{2}$ commutes with every $x$, 
 
 ### The Orbit of the Datum
 
-**Proposition.** For $u, v \in U(A)$ the maps $\sigma_{u}$ and $\sigma_{v}$ are equal exactly when $v^{*}u$ is central, and the assignment $u \mapsto \sigma_{u}$ identifies the family with the unitary elements modulo the central unitary ones.
+**Proposition.** For $u, v \in \mathrm{U}(A)$ the maps $\sigma_{u}$ and $\sigma_{v}$ are equal exactly when $v^{*}u$ is central, and the assignment $u \mapsto \sigma_{u}$ identifies the family with the unitary elements modulo the central unitary ones.
 
 **Proof.** From $ux^{*}u^{*} = vx^{*}v^{*}$ for every $x$, multiplying by $v^{*}$ on the left and by $v$ on the right, one gets $w x^{*} = x^{*} w$ with $w = v^{*}u$, for every $x$; this says exactly that $w$ is central. Conversely a central $w$ gives the equality.
 

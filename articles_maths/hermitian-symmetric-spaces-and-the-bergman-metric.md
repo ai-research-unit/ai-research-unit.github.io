@@ -5,7 +5,7 @@
 
 A **Hermitian symmetric space** is a connected complex manifold with a Hermitian metric such that every point is an isolated fixed point of an involutive holomorphic isometry — the geodesic symmetry — the Hermitian refinement of a Riemannian symmetric space in which the symmetry is holomorphic and the metric is compatible with the complex structure. The model is the bounded symmetric domain: a bounded domain $\Omega \subseteq \mathbb{C}^n$ such that every point is an isolated fixed point of an involutive holomorphic automorphism of $\Omega$. Such a domain carries a canonical metric, the **Bergman metric**
 $$
-g^{\mathrm{B}}_{i\bar j} = \partial_i\bar\partial_j \log K(z,z) ,
+g^{\mathrm{B}}_{i\bar j} = \partial/\partial z_i\,\partial/\partial\bar z_j \log K(z,z) ,
 $$
 built from the Bergman kernel $K$ of the domain; it is Kähler, it is invariant under every holomorphic automorphism, and it makes $\Omega$ a Hermitian symmetric space of noncompact type. The connection is a theorem of both directions: every bounded symmetric domain is a Hermitian symmetric space of noncompact type with the Bergman metric as its invariant metric, and every Hermitian symmetric space of noncompact type is realised as a bounded symmetric domain, its **Harish-Chandra embedding**. The compact and noncompact types, the flat factor and the classification of Cartan are the classification of the geometry that the Bergman metric defines.
 
@@ -35,7 +35,7 @@ The map $s_p$ is the **geodesic symmetry** at $p$, and the condition that $M$ be
 
 **Definition.** A **bounded symmetric domain** is a bounded domain $\Omega \subseteq \mathbb{C}^n$ such that for every $p \in \Omega$ there is a holomorphic automorphism $s_p$ of $\Omega$, involutive, with $p$ as an isolated fixed point. Its **Bergman metric** is
 $$
-g^{\mathrm B}_{i\bar j}(z) = \partial_i\bar\partial_j \log K(z,z),
+g^{\mathrm B}_{i\bar j}(z) = \partial/\partial z_i\,\partial/\partial\bar z_j \log K(z,z),
 $$
 where $K$ is the Bergman kernel of $\Omega$; the norm is invariant under the holomorphic automorphisms and is a Kähler metric.
 
@@ -63,7 +63,7 @@ where $K$ is the Bergman kernel of $\Omega$; the norm is invariant under the hol
 
 ## Summary
 
-A Hermitian symmetric space is a connected complex manifold with a Hermitian metric admitting an involutive holomorphic isometry $s_p$ with $p$ as isolated fixed point; equivalently it is a Riemannian symmetric space that is Kähler with $\nabla J = 0$, and equivalently a homogeneous space $G/H$ whose complex structure comes from a central element of the isotropy algebra. A bounded symmetric domain is a bounded domain with an involutive automorphism at each point; its Bergman metric $g^{\mathrm B}_{i\bar j} = \partial_i\bar\partial_j\log K(z,z)$, built from the Bergman kernel of *The Bergman Operator*, is Kähler, positive definite, invariant under every holomorphic automorphism and complete, so the domain with it is a Hermitian symmetric space of noncompact type, and the automorphism group acts transitively by isometries with compact stabiliser. Every Hermitian symmetric space without Euclidean factor is the product of a compact and a noncompact type, dual to one another, and the irreducible noncompact ones, the bounded symmetric domains, are classified by Cartan into four infinite families and two exceptional domains. The symmetric spaces and the Hermitian symmetric pair are *Symmetric Spaces* and *The Unitary Group and the Hermitian Symmetric Space*; the kernel is *The Bergman Operator*; the metric and curvature are *Kähler Geometry*, *Kähler Manifolds and the Hermitian Form* and *The Curvature Operator of a Complex Manifold*.
+A Hermitian symmetric space is a connected complex manifold with a Hermitian metric admitting an involutive holomorphic isometry $s_p$ with $p$ as isolated fixed point; equivalently it is a Riemannian symmetric space that is Kähler with $\nabla J = 0$, and equivalently a homogeneous space $G/H$ whose complex structure comes from a central element of the isotropy algebra. A bounded symmetric domain is a bounded domain with an involutive automorphism at each point; its Bergman metric $g^{\mathrm B}_{i\bar j} = \partial/\partial z_i\,\partial/\partial\bar z_j\,\log K(z,z)$, built from the Bergman kernel of *The Bergman Operator*, is Kähler, positive definite, invariant under every holomorphic automorphism and complete, so the domain with it is a Hermitian symmetric space of noncompact type, and the automorphism group acts transitively by isometries with compact stabiliser. Every Hermitian symmetric space without Euclidean factor is the product of a compact and a noncompact type, dual to one another, and the irreducible noncompact ones, the bounded symmetric domains, are classified by Cartan into four infinite families and two exceptional domains. The symmetric spaces and the Hermitian symmetric pair are *Symmetric Spaces* and *The Unitary Group and the Hermitian Symmetric Space*; the kernel is *The Bergman Operator*; the metric and curvature are *Kähler Geometry*, *Kähler Manifolds and the Hermitian Form* and *The Curvature Operator of a Complex Manifold*.
 
 ## Summary of Notation
 
@@ -74,7 +74,7 @@ A Hermitian symmetric space is a connected complex manifold with a Hermitian met
 | $M=G/H$ | the group form, $H$ the compact stabiliser |
 | $\Omega\subseteq\mathbb{C}^n$ | a bounded symmetric domain |
 | $K(z,w)$ | the Bergman kernel |
-| $g^{\mathrm B}_{i\bar j}=\partial_i\bar\partial_j\log K(z,z)$ | the Bergman metric |
+| $g^{\mathrm B}_{i\bar j}=\partial/\partial z_i\,\partial/\partial\bar z_j\,\log K(z,z)$ | the Bergman metric |
 | $G$, $\Omega=G/H$ | the holomorphic automorphism group and its orbit |
 
 ## Further Reading

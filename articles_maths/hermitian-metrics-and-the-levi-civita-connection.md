@@ -27,12 +27,12 @@ $$
 and in a coordinate chart its components are the Christoffel symbols
 
 $$
-\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial_j g_{kl} + \partial_k g_{jl} - \partial_l g_{jk}\bigr).
+\Gamma^i_{jk} = \tfrac12 \sum_l g^{il}\bigl(\partial/\partial x^j g_{kl} + \partial/\partial x^k g_{jl} - \partial/\partial x^l g_{jk}\bigr).
 $$
 
 *Proof.* This is the theorem of *The Covariant Derivative* in this category, where the existence, the uniqueness and the Koszul formula are proved; the coordinate formula is the same computation written in a chart. The article cites the theorem and uses it.
 
-**Proposition (properties of the Levi-Civita connection).** Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{\dot\gamma}\dot\gamma=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.
+**Proposition (properties of the Levi-Civita connection).** Its parallel transport preserves the metric, hence the length and the angle; its geodesics are the autoparallel curves $\nabla_{d\gamma/dt}d\gamma/dt=0$ of the metric; its curvature satisfies the symmetries of the Riemann curvature tensor; and it is the connection used throughout the operator group. The geodesics, the exponential map and the curvature as geometry are Part IV's.
 
 ## Hermitian Metrics and the Involution
 
@@ -126,7 +126,7 @@ For a metric-compatible connection, preserving the fundamental form, preserving 
 | $\flat, \sharp$ | Musical isomorphisms $TM \leftrightarrow T^*M$ |
 | $\mathrm{vol}_g$, $\star$, $\delta$ | Metric volume form, Hodge star, codifferential |
 | Fundamental theorem, Koszul formula | The unique metric-compatible torsion-free connection |
-| $\Gamma^i_{jk} = \tfrac12g^{il}(\partial_jg_{kl}+\partial_kg_{jl}-\partial_lg_{jk})$ | Christoffel symbols |
+| $\Gamma^i_{jk} = \tfrac12g^{il}(\partial/\partial x^j\,g_{kl}+\partial/\partial x^k\,g_{jl}-\partial/\partial x^l\,g_{jk})$ | Christoffel symbols |
 | $J$, $J^2=-\mathrm{id}$ | Almost complex structure; the involution of the tangent spaces |
 | $g(JX,JY)=g(X,Y)$ | Hermitian condition; equivalently $g(JX,Y)=-g(X,JY)$, $J^*=-J$ |
 | $(M,J,g)$ | Hermitian manifold |

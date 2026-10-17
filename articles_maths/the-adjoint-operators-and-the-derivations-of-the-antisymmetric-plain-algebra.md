@@ -48,21 +48,21 @@ so the halved adjoint coincides with the operator $\vec P\times$ on the vector s
 **Theorem.** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\operatorname{ad}_{\tilde P}=0$; $\operatorname{ad}^{\wedge}_{\tilde P}=0$; $\tilde P$ is central; and $\tilde P\in\mathbb{C}_{\mathbb{B}}$. Hence
 
 $$
-\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0,
+\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t,
 $$
 
 the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde P}(\tilde X)=0$ for $\tilde X\in\mathbb{C}_{\mathbb{B}}$.
 
-*Proof.* $\operatorname{ad}_{\tilde P}=0$ exactly when $[\tilde P,\tilde X]=0$ for all $\tilde X$, which by the cross-product formula is $\vec P\times\vec X=0$ for all $\vec X$, forcing $\vec P=0$, that is $\tilde P\in\mathbb{C}e_0$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*.
+*Proof.* $\operatorname{ad}_{\tilde P}=0$ exactly when $[\tilde P,\tilde X]=0$ for all $\tilde X$, which by the cross-product formula is $\vec P\times\vec X=0$ for all $\vec X$, forcing $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*.
 
 **Remark.** **The kernel of the adjoint representation is the centre, and the centre is also annihilated by every adjoint**: the first is the kernel of the map $\tilde P\mapsto\operatorname{ad}_{\tilde P}$, the second is the common kernel of the operators on the algebra, and the two statements together say that the centre is the whole carrier of the invisibility of the bracket.
 
 ### The Matrix in the Real Basis and the Trace
 
-**Theorem.** In the real basis $(e_0,ie_0,e_1,e_2,e_3,ie_1,ie_2,ie_3)$ of $\mathbb{B}$, with the centre first and the vector subspace after, the adjoint of $e_1$ is the block-diagonal matrix
+**Theorem.** In the real basis $(e_t,ie_t,\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z)$ of $\mathbb{B}$, with the centre first and the vector subspace after, the adjoint of $\vec e_x$ is the block-diagonal matrix
 
 $$
-\operatorname{ad}_{e_1}=
+\operatorname{ad}_{\vec e_x}=
 \begin{pmatrix}
 0 & & & & & & & \\
 & 0 & & & & & & \\
@@ -75,9 +75,9 @@ $$
 \end{pmatrix},
 $$
 
-the two zero entries on the centre, and the $6\times6$ part the realification of the operator $2C_{e_1}$ on the complex vector subspace. Its trace is zero and its rank is $4$; the same statements hold for the adjoint of every nonzero vector element, and the adjoint of every central element is zero.
+the two zero entries on the centre, and the $6\times6$ part the realification of the operator $2C_{\vec e_x}$ on the complex vector subspace. Its trace is zero and its rank is $4$; the same statements hold for the adjoint of every nonzero vector element, and the adjoint of every central element is zero.
 
-*Proof.* The adjoint is twice the cross product by the vector part, and the cross product by $e_1$ sends $e_2\mapsto e_3$, $e_3\mapsto-e_2$ and fixes $e_1$, with the same action on $ie_1,ie_2,ie_3$ because it is $\mathbb{C}$-linear; doubling and reading the images as columns gives the displayed block. The trace vanishes because the diagonal is zero; the rank is $4$ because the kernel is the complex plane spanned by $e_0$ and $e_1$ (and its real coordinates $ie_0$, $ie_1$), of real dimension four. Computed exactly on the real basis.
+*Proof.* The adjoint is twice the cross product by the vector part, and the cross product by $\vec e_x$ sends $\vec e_y\mapsto \vec e_z$, $\vec e_z\mapsto-\vec e_y$ and fixes $\vec e_x$, with the same action on $i\vec e_x,i\vec e_y,i\vec e_z$ because it is $\mathbb{C}$-linear; doubling and reading the images as columns gives the displayed block. The trace vanishes because the diagonal is zero; the rank is $4$ because the kernel is the complex plane spanned by $e_t$ and $\vec e_x$ (and its real coordinates $ie_t$, $i\vec e_x$), of real dimension four. Computed exactly on the real basis.
 
 **Remark (the general matrix and the characteristic polynomial).** For a general vector element $\tilde P$ the $6\times6$ part is the realification of the complex operator $2C_{\vec P}$, whose characteristic polynomial is $\lambda(\lambda^2+4\,\vec P\cdot\vec P)$; the realification of a complex operator doubles each complex eigenvalue by its conjugate, so the characteristic polynomial of the $6\times6$ block is $\lambda^2(\lambda^2+4\,\vec P\cdot\vec P)(\lambda^2+4\,\overline{\vec P\cdot\vec P})$, which on the real unit directions is $\lambda^2(\lambda^2+4)^2$, with $0$ of multiplicity two and $\pm2i$ of multiplicity two each, and together with the two zero eigenvalues on the centre the adjoint on the real space has characteristic polynomial $\lambda^2$ times that. The trace is zero. The cross-product operator $C_{\vec P}$ itself has characteristic polynomial $\lambda(\lambda^2+\vec P\cdot\vec P)$. **The trace of every adjoint vanishes, which is the first invariant of the block and the reason the Killing form is read on the adjoints and not on the operators of the multiplication.** The trace form of the multiplication operators themselves, which does not vanish, is *Two-Sided Operators on the Biquaternion Algebra*.
 
@@ -117,7 +117,7 @@ of complex dimension three and real dimension six.
 **Theorem.** The outer derivations form a complex line, spanned by the derivation
 
 $$
-D_0:\quad D_0(e_0)=e_0,\qquad D_0(ie_0)=ie_0,\qquad D_0(\tilde X)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
+D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde X)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
 $$
 
 which scales the centre and annihilates the derived algebra; it is the derivation induced by the dual number $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ acting on the centre in the description below. Hence
@@ -147,7 +147,7 @@ for all $\tilde P,\tilde Q$; the automorphisms form the group $\operatorname{Aut
 **Theorem.** Every automorphism preserves the centre and the derived algebra, and it is the direct sum of an invertible scalar on the centre and an automorphism of the derived algebra:
 
 $$
-T(\tilde P)=\alpha\,P_0e_0\oplus A(\vec P),\qquad \alpha\in\mathbb{C}^{\times},\qquad A\in\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
+T(\tilde P)=\alpha\,P_te_t\oplus A(\vec P),\qquad \alpha\in\mathbb{C}^{\times},\qquad A\in\operatorname{Aut}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
 $$
 
 so that
@@ -230,19 +230,19 @@ where $D_{\mathrm{dil}}$ is the **dilation** of the derived algebra (the identit
 
 ## Worked Examples
 
-**A central adjoint.** $\operatorname{ad}_{e_0+ie_0}=0$, because both coordinates are central: the adjoint representation kills the centre.
+**A central adjoint.** $\operatorname{ad}_{e_t+ie_t}=0$, because both coordinates are central: the adjoint representation kills the centre.
 
-**A vector adjoint.** $\operatorname{ad}_{e_1}(e_2)=2e_3$ and $\operatorname{ad}_{e_1}(e_3)=-2e_2$: the adjoint of $e_1$ is twice the cross product by $e_1$, and it fixes $e_1$ and the centre.
+**A vector adjoint.** $\operatorname{ad}_{\vec e_x}(\vec e_y)=2\vec e_z$ and $\operatorname{ad}_{\vec e_x}(\vec e_z)=-2\vec e_y$: the adjoint of $\vec e_x$ is twice the cross product by $\vec e_x$, and it fixes $\vec e_x$ and the centre.
 
-**The trace.** $\operatorname{Tr}(\operatorname{ad}_{e_1})=0$ and $\operatorname{Tr}(\operatorname{ad}_{ie_1})=0$: every adjoint has vanishing trace, the diagonal of the displayed matrix being zero.
+**The trace.** $\operatorname{Tr}(\operatorname{ad}_{\vec e_x})=0$ and $\operatorname{Tr}(\operatorname{ad}_{i\vec e_x})=0$: every adjoint has vanishing trace, the diagonal of the displayed matrix being zero.
 
-**A derivation.** $\operatorname{ad}_{e_3}$ sends $e_1\mapsto 2e_2$ and $e_2\mapsto-2e_1$, and it obeys the Leibniz rule on the pair $e_1,e_2$: $\operatorname{ad}_{e_3}(e_1\wedge e_2)=\operatorname{ad}_{e_3}e_3=0$, and $\operatorname{ad}_{e_3}e_1\wedge e_2+e_1\wedge\operatorname{ad}_{e_3}e_2=2e_2\wedge e_2+e_1\wedge(-2e_1)=0$.
+**A derivation.** $\operatorname{ad}_{\vec e_z}$ sends $\vec e_x\mapsto 2\vec e_y$ and $\vec e_y\mapsto-2\vec e_x$, and it obeys the Leibniz rule on the pair $\vec e_x,\vec e_y$: $\operatorname{ad}_{\vec e_z}(\vec e_x\wedge \vec e_y)=\operatorname{ad}_{\vec e_z}\vec e_z=0$, and $\operatorname{ad}_{\vec e_z}\vec e_x\wedge \vec e_y+\vec e_x\wedge\operatorname{ad}_{\vec e_z}\vec e_y=2\vec e_y\wedge \vec e_y+\vec e_x\wedge(-2\vec e_x)=0$.
 
-**The outer derivation.** $D_0(e_0)=e_0$ and $D_0(e_1)=0$: the centre scaling, which is not inner because an inner derivation vanishes on the centre.
+**The outer derivation.** $D_0(e_t)=e_t$ and $D_0(\vec e_x)=0$: the centre scaling, which is not inner because an inner derivation vanishes on the centre.
 
-**The conjugation by a unit.** For $\tilde U=e_1$, a unit with $e_1^{-1}=-e_1$, the conjugation fixes $e_1$ and reverses the sign on the plane orthogonal to it: $e_1e_2e_1^{-1}=(e_1e_2)(-e_1)=-e_3e_1=-e_2$, and $e_1e_3e_1^{-1}=-e_3$. It is a nontrivial automorphism of the derived algebra and the identity on the centre.
+**The conjugation by a unit.** For $\tilde U=\vec e_x$, a unit with $\vec e_x^{-1}=-\vec e_x$, the conjugation fixes $\vec e_x$ and reverses the sign on the plane orthogonal to it: $\vec e_x\vec e_y\vec e_x^{-1}=(\vec e_x\vec e_y)(-\vec e_x)=-\vec e_z\vec e_x=-\vec e_y$, and $\vec e_x\vec e_z\vec e_x^{-1}=-\vec e_z$. It is a nontrivial automorphism of the derived algebra and the identity on the centre.
 
-**The central scalar.** $T_\lambda(e_0)=\lambda e_0$, $T_\lambda(e_1)=e_1$ is an automorphism for every $\lambda\neq0$; the adjoint representation is unchanged by it, since the centre is in its kernel.
+**The central scalar.** $T_\lambda(e_t)=\lambda e_t$, $T_\lambda(\vec e_x)=\vec e_x$ is an automorphism for every $\lambda\neq0$; the adjoint representation is unchanged by it, since the centre is in its kernel.
 
 **A similarity.** $T$ that fixes the centre and multiplies the derived algebra by $\mu$ satisfies $T(\tilde P\wedge\tilde Q)=\mu^{-1}(T\tilde P\wedge T\tilde Q)$: the multiplier is the reciprocal of the dilation, as the theorem states.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A particle of integer spin is, in Wigner's classification, a state that transforms under the rotation group in a representation of dimension $2s+1$: one state for $s=0$, three for $s=1$, five for $s=2$. The spin-$0$ case is realized in the biquaternion framework by the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, on which the rotations act trivially; the spin-$\tfrac12$ case by the left ideal that carries the fundamental representation, treated in the companion subcategory on spin $\tfrac12$. The present article treats the integer-spin cases, and its central claim is that the **spin-one** representation is not merely compatible with the biquaternion algebra but is *the same object as* a natural operation inside it: the adjoint action of the rotation algebra on the vector part of the material sector $\mathbb{M}_-$ is, on the nose, the three-dimensional spin-one representation.
+A particle of integer spin is, in Wigner's classification, a state that transforms under the rotation group in a representation of dimension $2s+1$: one state for $s=0$, three for $s=1$, five for $s=2$. The spin-$0$ case is realized in the biquaternion framework by the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, on which the rotations act trivially; the spin-$\tfrac12$ case by the left ideal that carries the fundamental representation, treated in the companion subcategory on spin $\tfrac12$. The present article treats the integer-spin cases, and its central claim is that the **spin-one** representation is not merely compatible with the biquaternion algebra but is *the same object as* a natural operation inside it: the adjoint action of the rotation algebra on the vector part of the material sector $\mathbb{M}_-$ is, on the nose, the three-dimensional spin-one representation.
 
 This identification is the framework's own contribution, and it is the reason the subcategory is organized around the material sector rather than around a separate internal space. The algebra does not have to be told what a vector is, nor how the rotation group acts on one, in order to produce the spin-one triplet: the quaternion multiplication already does it, and the diagonalization of the adjoint action already produces the circular and longitudinal polarizations that the massive vector field needs.
 
@@ -17,55 +17,55 @@ The article is organized as follows. The rotation algebra is constructed as the 
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the massive vector field whose three on-shell polarizations are the weight basis of this article.
 - Companion article *Canonical Quantization of the Biquaternion Graviton Field*, for the rank-two instance of the tensor-power construction, where the trace removal is performed on the symmetric square of the material vector.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, and central $i$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar plus real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$, and the material basis is $\vec u_0=ie_0$, $\vec u_k=e_k$, with $\eta_{\mu\nu}=\langle\vec u_{\mu},\vec u_{\nu}\rangle=\mathrm{diag}(-1,+1,+1,+1)$. The vector part of the material sector is $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$, a three-dimensional complex space on which the rotations act, and it is the carrier of the spin-one representation. The angular momentum operator is $J_k=\tfrac12\mathrm{ad}_{ie_k}$, with $\mathrm{ad}_{\tilde{Q}}\tilde{R}=[\tilde{Q},\tilde{R}]=\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q}$. The adjoint action is bracketing, a derivation of the algebra: $\mathrm{ad}_{\tilde{Q}}(\tilde{R}\tilde{S})=(\mathrm{ad}_{\tilde{Q}}\tilde{R})\tilde{S}+\tilde{R}(\mathrm{ad}_{\tilde{Q}}\tilde{S})$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and central $i$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (imaginary scalar plus real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$, and the material basis is $\vec u_t=ie_t$, $\vec u_k=\vec e_k$, with $\eta_{\mu\nu}=\langle\vec u_{\mu},\vec u_{\nu}\rangle=\mathrm{diag}(-1,+1,+1,+1)$. The vector part of the material sector is $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-dimensional complex space on which the rotations act, and it is the carrier of the spin-one representation. The angular momentum operator is $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$, with $\mathrm{ad}_{\tilde{Q}}\tilde{R}=[\tilde{Q},\tilde{R}]=\tilde{Q}\tilde{R}-\tilde{R}\tilde{Q}$. The adjoint action is bracketing, a derivation of the algebra: $\mathrm{ad}_{\tilde{Q}}(\tilde{R}\tilde{S})=(\mathrm{ad}_{\tilde{Q}}\tilde{R})\tilde{S}+\tilde{R}(\mathrm{ad}_{\tilde{Q}}\tilde{S})$.
 
 ## The Rotation Algebra as Inner Derivations
 
 ### Rotations and Their Generators
 
-The rotation group acts on the algebra by inner automorphisms. For a unit quaternion $Q$ with $Q\bar{Q}=e_0$, the map
+The rotation group acts on the algebra by inner automorphisms. For a unit quaternion $Q$ with $Q\bar{Q}=e_t$, the map
 
 $$
 R_Q:\;\tilde{Q}\longmapsto Q\tilde{Q}Q^{-1}=\bar{Q}\tilde{Q}Q
 $$
 
-is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
+is an algebra automorphism that fixes the centre, hence fixes $i$, and preserves the division of $\mathbb{B}$ into $\mathbb{M}_-$ and $\mathbb{M}_+$: conjugation preserves the Hermiticity type, so the material sector is mapped to itself. Writing $Q=\exp(\theta\,\vec e_k/2)$ with $\theta$ the rotation angle about the $k$-th axis, the infinitesimal generator of the map is the inner derivation
 
 $$
-\delta_k\tilde{Q} = \tfrac{\theta}{2}\,[e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{e_k}\tilde{Q} .
+\delta_k\tilde{Q} = \tfrac{\theta}{2}\,[\vec e_k,\tilde{Q}] = \tfrac{\theta}{2}\,\mathrm{ad}_{\vec e_k}\tilde{Q} .
 $$
 
-The three derivations $\mathrm{ad}_{e_k}$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
+The three derivations $\mathrm{ad}_{\vec e_k}$ span the Lie algebra of the rotation group, and the Hermitian angular-momentum operator is the corresponding anti-Hermitian generator multiplied by $i$:
 
 $$
-J_k = \tfrac12\,\mathrm{ad}_{ie_k} = \tfrac{i}{2}\,\mathrm{ad}_{e_k}.
+J_k = \tfrac12\,\mathrm{ad}_{i\vec e_k} = \tfrac{i}{2}\,\mathrm{ad}_{\vec e_k}.
 $$
 
-The factor $i$ is the usual one that turns the anti-Hermitian generator $e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
+The factor $i$ is the usual one that turns the anti-Hermitian generator $\vec e_k$ of the unitary rotation into a Hermitian observable. The three $J_k$ act on the material sector by bracketing, $\tilde{Q}\mapsto[J_k,\tilde{Q}]$, and they are derivations: the Leibniz rule holds, so the action on a product is the sum of the actions on the factors.
 
 ### The Adjoint Action Preserves the Material Sector
 
-A short computation fixes the action on the basis. Since $ie_0$ is central, $\mathrm{ad}_{ie_k}(ie_0)=0$: the imaginary scalar direction is invariant. On the vector units the multiplication rule gives
+A short computation fixes the action on the basis. Since $ie_t$ is central, $\mathrm{ad}_{i\vec e_k}(ie_t)=0$: the imaginary scalar direction is invariant. On the vector units the multiplication rule gives
 
 $$
-\mathrm{ad}_{e_3}(e_1)=2e_2,\qquad
-\mathrm{ad}_{e_3}(e_2)=-2e_1,\qquad
-\mathrm{ad}_{e_3}(e_3)=0,
+\mathrm{ad}_{\vec e_z}(\vec e_x)=2\vec e_y,\qquad
+\mathrm{ad}_{\vec e_z}(\vec e_y)=-2\vec e_x,\qquad
+\mathrm{ad}_{\vec e_z}(\vec e_z)=0,
 $$
 
 and cyclically, so that
 
 $$
-J_3e_1=ie_2,\qquad J_3e_2=-ie_1,\qquad J_3e_3=0 .
+J_3\vec e_x=i\vec e_y,\qquad J_3\vec e_y=-i\vec e_x,\qquad J_3\vec e_z=0 .
 $$
 
-The computation is elementary and was checked against the $2\times2$ complex representation $e_k=-i\sigma_k$, where the multiplication rule $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$ (with $e_k^2=-e_0$) holds with residual zero. Three consequences follow at once: the vector part $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ is invariant under the adjoint action; the full material sector decomposes into invariant pieces,
+The computation is elementary and was checked against the $2\times2$ complex representation $\vec e_k=-i\sigma_k$, where the multiplication rule $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$ (with $\vec e_k^2=-e_t$) holds with residual zero. Three consequences follow at once: the vector part $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is invariant under the adjoint action; the full material sector decomposes into invariant pieces,
 
 $$
-\mathbb{M}_- = \mathrm{span}_{\mathbb{R}}\{ie_0\}\;\oplus\;V,
+\mathbb{M}_- = \mathrm{span}_{\mathbb{R}}\{ie_t\}\;\oplus\;V,
 $$
 
-of real dimensions $1$ and $3$ (or complex dimensions, if the vector part is complexified); and the adjoint action is real on $V$ in the sense that it maps the real span of $e_1,e_2,e_3$ to itself, with the $i$'s appearing only through the Hermitian normalization of $J_k$.
+of real dimensions $1$ and $3$ (or complex dimensions, if the vector part is complexified); and the adjoint action is real on $V$ in the sense that it maps the real span of $\vec e_x,\vec e_y,\vec e_z$ to itself, with the $i$'s appearing only through the Hermitian normalization of $J_k$.
 
 ### The Commutators and the Casimir
 
@@ -85,7 +85,7 @@ verified with residual zero. The value $2=s(s+1)$ at $s=1$ is the algebraic stat
 
 ### The Explicit Matrices
 
-In the basis $(e_1,e_2,e_3)$ the three generators read off from the adjoint action are the standard Cartesian spin-one matrices,
+In the basis $(\vec e_x,\vec e_y,\vec e_z)$ the three generators read off from the adjoint action are the standard Cartesian spin-one matrices,
 
 $$
 J_1=\begin{pmatrix}0&0&0\\0&0&-i\\0&i&0\end{pmatrix},
@@ -95,7 +95,7 @@ J_2=\begin{pmatrix}0&0&i\\0&0&0\\-i&0&0\end{pmatrix},
 J_3=\begin{pmatrix}0&-i&0\\i&0&0\\0&0&0\end{pmatrix}.
 $$
 
-Each was obtained by applying $\tfrac12\mathrm{ad}_{ie_k}$ to the basis units and reading the coefficients of $e_1,e_2,e_3$, and the matrices agree with the standard spin-one representation in the Cartesian basis. They are Hermitian and traceless, and the trace vanishing is the statement that the weights of the triplet sum to zero. The deeper distinction between integer and half-integer spin is visible in the weight set itself: for integer $s$ the weights are $-s,\dots,0,\dots,s$ and include $m=0$, so the multiplet dimension $2s+1$ is odd and the minimal polynomial of $J_3$ has odd degree; for half-integer $s$ the weights are $\pm\tfrac12,\pm\tfrac32,\dots$, no weight vanishes, and the dimension is even. The adjoint action produces only the first case, because its representation space is a subspace of the algebra and the algebra is built from integer weights.
+Each was obtained by applying $\tfrac12\mathrm{ad}_{i\vec e_k}$ to the basis units and reading the coefficients of $\vec e_x,\vec e_y,\vec e_z$, and the matrices agree with the standard spin-one representation in the Cartesian basis. They are Hermitian and traceless, and the trace vanishing is the statement that the weights of the triplet sum to zero. The deeper distinction between integer and half-integer spin is visible in the weight set itself: for integer $s$ the weights are $-s,\dots,0,\dots,s$ and include $m=0$, so the multiplet dimension $2s+1$ is odd and the minimal polynomial of $J_3$ has odd degree; for half-integer $s$ the weights are $\pm\tfrac12,\pm\tfrac32,\dots$, no weight vanishes, and the dimension is even. The adjoint action produces only the first case, because its representation space is a subspace of the algebra and the algebra is built from integer weights.
 
 ## The Spin-One Multiplet and Its Weight Basis
 
@@ -104,11 +104,11 @@ Each was obtained by applying $\tfrac12\mathrm{ad}_{ie_k}$ to the basis units an
 The eigenvectors of $J_3$ are found by diagonalizing the $3\times3$ matrix. The result is that the complex combinations
 
 $$
-\varepsilon_+ = \frac{e_1+ie_2}{\sqrt2},
+\varepsilon_+ = \frac{\vec e_x+i\vec e_y}{\sqrt2},
 \qquad
-\varepsilon_- = \frac{e_1-ie_2}{\sqrt2},
+\varepsilon_- = \frac{\vec e_x-i\vec e_y}{\sqrt2},
 \qquad
-\varepsilon_0 = e_3
+\varepsilon_0 = \vec e_z
 $$
 
 satisfy
@@ -158,7 +158,7 @@ For the massless field the situation is different in a way the adjoint action ma
 
 ### The Massless Restriction of the Adjoint Action
 
-For a massless field the little group is the Euclidean group of the plane transverse to the momentum, and its finite-dimensional unitary representations that occur in nature are labelled by the helicity, the eigenvalue of $\lambda=\vec u_p\cdot\vec J$. In the adjoint action's basis this is transparent. Choosing $\vec u_p=e_3$, the helicity is $J_3$, with eigenvalues $\pm1,0$: the two circular states $\varepsilon_\pm$ have $\lambda=\pm1$ and span the transverse plane, while $\varepsilon_0$ has $\lambda=0$ and is longitudinal. The massless field keeps the two states of $\lambda=\pm1$, and the restriction of the adjoint action to the transverse plane is the direct sum of the two one-dimensional helicity representations,
+For a massless field the little group is the Euclidean group of the plane transverse to the momentum, and its finite-dimensional unitary representations that occur in nature are labelled by the helicity, the eigenvalue of $\lambda=\vec u_p\cdot\vec J$. In the adjoint action's basis this is transparent. Choosing $\vec u_p=\vec e_z$, the helicity is $J_3$, with eigenvalues $\pm1,0$: the two circular states $\varepsilon_\pm$ have $\lambda=\pm1$ and span the transverse plane, while $\varepsilon_0$ has $\lambda=0$ and is longitudinal. The massless field keeps the two states of $\lambda=\pm1$, and the restriction of the adjoint action to the transverse plane is the direct sum of the two one-dimensional helicity representations,
 
 $$
 J_3\big|_{\mathrm{span}\{\varepsilon_+,\varepsilon_-\}} = \mathrm{diag}(+1,-1).
@@ -179,19 +179,19 @@ $$
 \qquad
 \vec L = \tilde{x}\times\tilde{p},
 \qquad
-\vec S_k = \tfrac12\mathrm{ad}_{ie_k},
+\vec S_k = \tfrac12\mathrm{ad}_{i\vec e_k},
 $$
 
 with $\vec S$ the adjoint action acting on the material index. The two commute, because $\vec L$ acts on the argument and $\vec S$ on the value, and the total generators satisfy the same algebra. The scalar field of the companion spin-$0$ subcategory has $\vec S=0$ because its values lie in the centre; the spin-$\tfrac12$ field has $\vec S$ equal to the left-ideal action of the companion subcategory. The integer-spin field of spin one is the first case in which the internal action is the adjoint action, and the reason is that the field is a material **vector**, the representation of $\mathbb{B}$ that the algebra naturally acts on by bracketing.
 
-The decomposition of the material sector, $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$, is the decomposition of the field into a spin-$0$ piece and a spin-$1$ piece under the internal action. For the Proca field this is not a decomposition into independent physical fields — the constraint structure of the massive vector theory ties the two together, and the spin-$0$ component $A_0$ is not independent — but it is the correct transformation law of the components.
+The decomposition of the material sector, $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$, is the decomposition of the field into a spin-$0$ piece and a spin-$1$ piece under the internal action. For the Proca field this is not a decomposition into independent physical fields — the constraint structure of the massive vector theory ties the two together, and the spin-$0$ component $A_0$ is not independent — but it is the correct transformation law of the components.
 
 ## General Integer Spin
 
 For spin $s$ the carrier is the space of symmetric traceless rank-$s$ tensors of the material vector space $V$, of complex dimension $2s+1$. In biquaternion terms this is the symmetric traceless part of the $s$-fold tensor power of the vector part, and the angular momentum operator is the sum of the adjoint actions on the factors, by the Leibniz rule,
 
 $$
-\vec S^{(s)}_k = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{ie_k}\otimes\cdots\otimes I}_{s\ \text{factors}} .
+\vec S^{(s)}_k = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{i\vec e_k}\otimes\cdots\otimes I}_{s\ \text{factors}} .
 $$
 
 The trace removal is what reduces the tensor power to the irreducible spin-$s$ piece; it can be imposed by the metric pairing $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$ between factors, which is an operation the algebra already provides. The integer-spin representations are thus all constructed from the adjoint action, the tensor product, the symmetry projector, and the trace removal, and no new algebraic input is required.
@@ -249,7 +249,7 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{ie_k}$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_0$, giving the internal decomposition $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$; the commutation relations $[J_i,J_j]=i\varepsilon_{ijk}J_k$; the Casimir eigenvalue $J^2=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $J_\pm$; the identity $J_3^3=J_3$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
+**Supplied by the algebra, and recomputed here.** The inner derivations $\mathrm{ad}_{i\vec e_k}$ as the rotation generators, and the fact that they preserve the material sector; the invariant vector part $V$ and the scalar direction $ie_t$, giving the internal decomposition $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$; the commutation relations $[J_i,J_j]=i\varepsilon_{ijk}J_k$; the Casimir eigenvalue $J^2=2I$, which is the algebraic statement of spin one; the weight basis $\varepsilon_\pm,\varepsilon_0$ and the ladder structure $J_\pm$; the identity $J_3^3=J_3$; the tensor-power construction of the higher integer-spin carriers, with the trace removal supplied by the algebra's bilinear form.
 
 **Imported, and left visible.** The Wigner classification and the little-group analysis; the bosonic oscillator algebra and the Fock construction; the normal-ordering and positivity arguments; the spin–statistics theorem, cited to the companion article; the Clebsch–Gordan series used to identify the content of the rank-two tensor; and the identification of the adjoint action's triplet with the polarizations of the massive vector field, which is a **physical interpretation** of an algebraic fact.
 
@@ -273,9 +273,9 @@ The massive integer-spin case is the case in which the little group is $\mathrm{
 
 ## Summary
 
-Integer-spin quantization in the biquaternion framework rests on an identification: the adjoint action of the rotation algebra on the vector part of the material sector **is** the spin-one representation. The rotation generators are the inner derivations $J_k=\tfrac12\mathrm{ad}_{ie_k}$, the vector part $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ is invariant, and the imaginary scalar direction $ie_0$ is fixed, so that $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$ decomposes into an internal spin-$0$ and spin-$1$ piece.
+Integer-spin quantization in the biquaternion framework rests on an identification: the adjoint action of the rotation algebra on the vector part of the material sector **is** the spin-one representation. The rotation generators are the inner derivations $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$, the vector part $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ is invariant, and the imaginary scalar direction $ie_t$ is fixed, so that $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$ decomposes into an internal spin-$0$ and spin-$1$ piece.
 
-The representation was computed explicitly: $[J_i,J_j]=i\varepsilon_{ijk}J_k$ with residual zero, the Casimir $J^2=2I$ with residual zero, the weight basis $\varepsilon_\pm=(e_1\pm ie_2)/\sqrt2$ and $\varepsilon_0=e_3$ with $J_3$ eigenvalues $\pm1,0$, and the identity $J_3^3-J_3=0$ that characterizes the triple. The ladder operators $J_\pm=J_1\pm iJ_2$ shift between the weights with matrix element $\sqrt2$. The triplet is the polarization triad of the massive vector field, and the massless theory retains the two helicity states $\pm1$ while the gauge structure removes the $\lambda=0$ state.
+The representation was computed explicitly: $[J_i,J_j]=i\varepsilon_{ijk}J_k$ with residual zero, the Casimir $J^2=2I$ with residual zero, the weight basis $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$ and $\varepsilon_0=\vec e_z$ with $J_3$ eigenvalues $\pm1,0$, and the identity $J_3^3-J_3=0$ that characterizes the triple. The ladder operators $J_\pm=J_1\pm iJ_2$ shift between the weights with matrix element $\sqrt2$. The triplet is the polarization triad of the massive vector field, and the massless theory retains the two helicity states $\pm1$ while the gauge structure removes the $\lambda=0$ state.
 
 For general integer spin the carrier is the symmetric traceless rank-$s$ tensor of $V$, the angular momentum is the sum of the adjoint actions on the factors, and the trace removal is effected by the algebra's bilinear form. The rank-one case is the adjoint action itself; the rank-two case is the graviton, with helicity $\pm2$. Integer-spin fields are quantized bosonically, with $2s+1$ mode pairs and positive norm in the massive case, and with the indefinite metric and the subsidiary condition in the massless one; the linkage between integer spin and commuting mode operators is the content of the spin–statistics theorem, which the algebra respects but does not by itself prove.
 
@@ -286,16 +286,16 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ | Material sector (anti-Hermitian) |
-| $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ | Informational sector (Hermitian) |
-| $V=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$ | Vector part of the material sector; spin-one carrier |
+| $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ | Material sector (anti-Hermitian) |
+| $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ | Informational sector (Hermitian) |
+| $V=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Vector part of the material sector; spin-one carrier |
 | $\mathrm{ad}_{\tilde{Q}}\tilde{R}=[\tilde{Q},\tilde{R}]$ | Inner derivation (adjoint action) |
-| $R_Q(\tilde{Q})=Q\tilde{Q}Q^{-1}$ | Inner automorphism; rotation for $Q=\exp(\theta e_k/2)$ |
-| $J_k=\tfrac12\mathrm{ad}_{ie_k}$ | Hermitian angular-momentum (spin) generator |
+| $R_Q(\tilde{Q})=Q\tilde{Q}Q^{-1}$ | Inner automorphism; rotation for $Q=\exp(\theta \vec e_k/2)$ |
+| $J_k=\tfrac12\mathrm{ad}_{i\vec e_k}$ | Hermitian angular-momentum (spin) generator |
 | $\vec L=\tilde{x}\times\tilde{p}$, $\vec S_k=J_k$ | Orbital and internal parts; $\vec J=\vec L+\vec S$ |
 | $[J_i,J_j]=i\varepsilon_{ijk}J_k$ | Rotation algebra (verified, residual zero) |
 | $J^2=J_1^2+J_2^2+J_3^2=2I$ | Casimir; $2=s(s+1)$ at $s=1$ |
-| $\varepsilon_\pm=(e_1\pm ie_2)/\sqrt2$, $\varepsilon_0=e_3$ | Weight basis of the triplet; $J_3$ eigenvalues $\pm1,0$ |
+| $\varepsilon_\pm=(\vec e_x\pm i\vec e_y)/\sqrt2$, $\varepsilon_0=\vec e_z$ | Weight basis of the triplet; $J_3$ eigenvalues $\pm1,0$ |
 | $J_\pm=J_1\pm iJ_2$ | Ladder operators, matrix element $\sqrt2$ |
 | $J_3^3-J_3=0$ | Minimal polynomial of the spin-one generator |
 | $\chi^r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |

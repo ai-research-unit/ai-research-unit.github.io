@@ -115,7 +115,7 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-of real dimension $2 \cdot 4 = 8$. The copy of $\mathbb{C}$ given by $\mathbb{C} \otimes 1$ is the central scalar imaginary $i$ with $i^2 = -1$, and it commutes with the quaternion units $1 \otimes e_k$. This is the definition of $\mathbb{B}$ used in *Biquaternion Algebra ($\mathbb{B}$)*.
+of real dimension $2 \cdot 4 = 8$. The copy of $\mathbb{C}$ given by $\mathbb{C} \otimes 1$ is the central scalar imaginary $i$ with $i^2 = -1$, and it commutes with the quaternion units $1 \otimes e_\mu$. This is the definition of $\mathbb{B}$ used in *Biquaternion Algebra ($\mathbb{B}$)*.
 
 **Example (the split biquaternions).** With $A = \mathbb{D}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,
 
@@ -167,7 +167,7 @@ $$
 (a,b)_F = F\langle i,j\rangle\big/\bigl(i^2 - a,\; j^2 - b,\; ij + ji\bigr),
 $$
 
-so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_k$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in *Central Simple Algebras and the Brauer Group*.
+so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_\mu$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes; the Brauer group, Wedderburn's theorem and the examples are in *Central Simple Algebras and the Brauer Group*.
 
 ## Functoriality and Base Change
 
@@ -261,7 +261,7 @@ $$
 
 Each $\sigma$ acts by an algebra automorphism, because the product is componentwise and permutation preserves componentwise multiplication. The fixed subalgebra $(A^{\otimes n})^{S_n}$ is the algebra of **symmetric tensors**; its study, and the symmetric powers that appear as its degree-$n$ part in the commutative case, belongs to category 06.
 
-**Example.** For $A = \mathbb{H}$, the tensor powers $\mathbb{H}^{\otimes n}$ are algebras of real dimension $4^n$, and $S_n$ permutes the factors. The invariant subalgebra of $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}$ under the swap $a \otimes b \mapsto b \otimes a$ is the fixed space of a linear involution, of real dimension $(16 + 4)/2 = 10$; it is spanned by the four tensors $e_i \otimes e_i$ and the six sums $e_i \otimes e_j + e_j \otimes e_i$ with $0 \leq i < j \leq 3$, and it is a subalgebra because the fixed points of an algebra automorphism always are.
+**Example.** For $A = \mathbb{H}$, the tensor powers $\mathbb{H}^{\otimes n}$ are algebras of real dimension $4^n$, and $S_n$ permutes the factors. The invariant subalgebra of $\mathbb{H} \otimes_\mathbb{R} \mathbb{H}$ under the swap $a \otimes b \mapsto b \otimes a$ is the fixed space of a linear involution, of real dimension $(16 + 4)/2 = 10$; it is spanned by the four tensors $e_\mu \otimes e_\mu$ and the six sums $e_\mu \otimes e_\nu + e_\nu \otimes e_\mu$ with $0 \leq \mu < \nu \leq 3$, and it is a subalgebra because the fixed points of an algebra automorphism always are.
 
 ## Summary
 

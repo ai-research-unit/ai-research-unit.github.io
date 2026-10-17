@@ -37,11 +37,11 @@ where $S''[\tilde\phi]$ is the second variation of the action about the classica
 
 The article proceeds as follows. The next section defines the connected functional and its derivatives. A section defines the classical field and the Legendre transform, with the convexity in the real form. A section gives the effective action and the loop expansion, and a section the sector factorization. A section treats the effective potential and its relation to the vacuum, and a section the one-loop term and the determinant. A section separates what is established from what is interpretation, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational). The real bilinear form is
+**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational). The real bilinear form is
 $$
 \langle \tilde{Q},\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde Y\big),
 $$
-positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ with $\tilde K=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
+positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$. The quadratic action is $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ with $\tilde K=\Box-m^2$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The companion articles *The Biquaternion Vacuum as a Minimal Idempotent* and *The GNS Construction in the Biquaternion Framework* supply the vacuum state; the trace pairing and the module are those of *The Feynman Propagator in Biquaternionic Form* and *The S-Matrix in Biquaternionic Form*.
 
 ## The Connected Generating Functional
 
@@ -67,7 +67,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad\text{equivalently}\qquad
 W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde k\tilde k^{\natural}+m^2},
 $$
-using the wave biquaternion $\tilde k=iEe_0+\vec p$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
+using the wave biquaternion $\tilde k=iEe_t+\vec p$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -96,7 +96,7 @@ with the comparison of the two module elements understood through the positive-d
 
 **The inverse-Hessian relation.** The second derivatives satisfy
 $$
-\Gamma^{(2)}[\tilde\phi]\;W^{(2)}[\tilde J]\Big|_{\tilde\phi=\delta W/\delta\tilde J} = \tilde I ,
+\Gamma^{(2)}[\tilde\phi]\;W^{(2)}[\tilde J]\Big|_{\tilde\phi=\delta W/\delta\tilde J} = I ,
 $$
 the module identity, and the Legendre identity
 $$
@@ -269,8 +269,8 @@ Because a central kinetic operator does not mix the material and informational s
 | $\Gamma=\Gamma_-+\Gamma_+$ | Sector factorization for a central (sector-diagonal) action |
 | $V_{\mathrm{eff}}(\tilde\phi)=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde\phi=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde\phi^2\ge0$ | Vacuum condition; stability (convexity) |
-| $\tilde K=\Box-m^2$, $\Box=\partial_{ict}^2+\Delta$ | Central kinetic operator |
-| $\tilde k=iEe_0+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
+| $\tilde K=\Box-m^2$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Central kinetic operator |
+| $\tilde k=iEe_t+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading
 

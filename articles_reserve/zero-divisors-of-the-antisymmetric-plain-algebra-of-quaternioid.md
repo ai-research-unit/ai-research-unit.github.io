@@ -20,11 +20,11 @@ Quaternions*; the multiplication operators of the block are read in *The Adjoint
 Derivations of the Antisymmetric Plain Algebra* and its two matrix models, all below this article
 in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with
-$\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. A generic element is $\tilde q=q_te_t+\vec q$ with
+$\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
 Euclidean dot product and $\vec p\times\vec q$ the vector product of the vector parts; the
-**centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
+**centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is
 $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 
 ## The Notion and the Product
@@ -70,7 +70,7 @@ vector being proportional to every vector.
 two vectors are linearly dependent. Two nonzero vectors of $\mathbb{R}^3$ are linearly dependent
 exactly when they are proportional.
 
-**Remark (the criterion is blind to the scalars).** The scalar coordinates $p_0,q_0$ do not enter
+**Remark (the criterion is blind to the scalars).** The scalar coordinates $p_0,q_t$ do not enter
 the criterion at all: a pure and a non-pure element with the same vector part have the same
 partners. This is the reason the collapse that the definiteness of the norm forces on the other
 blocks does not occur here — the operation never reads a norm.
@@ -78,7 +78,7 @@ blocks does not occur here — the operation never reads a norm.
 ### The Annihilators
 
 The annihilator of an element is the kernel of its left multiplication, the two sides coinciding
-because the block is alternating; it is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ for a
+because the block is alternating; it is the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$ for a
 noncentral element and the whole space for a central one. The annihilators, the operator
 $\operatorname{diag}(0,C_{\vec p})$ with its characteristic polynomial $t^2(t^2+|\vec p|^2)$,
 the rank table and the dichotomy by the vector part are the companion article *Annihilators of the
@@ -103,12 +103,12 @@ the vector parts being parallel in the second family too, or one of them zero.
 *Proof.* By the criterion the vector parts are parallel. Two pure elements with nonzero vector
 parts give the first family; a non-pure element gives the second, its partner having a parallel
 vector part by the criterion. If one vector part is zero the corresponding element is the pure
-scalar $\lambda e_0$ with $\lambda\neq0$, a case of the second family with the partner free; if
+scalar $\lambda e_t$ with $\lambda\neq0$, a case of the second family with the partner free; if
 both vector parts are nonzero and parallel, the pair is in the first family exactly when both
 elements are pure. The two families are disjoint and cover every pair.
 
 **Remark (the two families and the annihilator).** For a noncentral element the annihilator is the
-plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$: its vector line $\mathbb{R}\vec p$ carries the
+plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$: its vector line $\mathbb{R}\vec p$ carries the
 pure partners and the rest of the plane the non-pure ones, so the pure pairs are the vector-line
 stratum and the pairs with a scalar part the complementary stratum. For a central element the
 annihilator is the whole space and the partner is arbitrary.
@@ -120,9 +120,9 @@ real dimension six, and the annihilator of a noncentral element is a plane of re
 
 *Proof.* The zero-divisor set is $\mathbb{H}\setminus\{0\}$, of dimension four. For a pair, choose
 the first element: if it is noncentral, four parameters, then the partner ranges over the
-annihilator plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of dimension two, giving a family of
+annihilator plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$, of dimension two, giving a family of
 dimension six, which dominates the central stratum
-$\{\lambda e_0\}\times(\mathbb{H}\setminus\{0\})$, of dimension five. So the pairs have dimension
+$\{\lambda e_t\}\times(\mathbb{H}\setminus\{0\})$, of dimension five. So the pairs have dimension
 six.
 
 ## Summary
@@ -133,7 +133,7 @@ as partner, the zero-divisor set being the punctured four-dimensional space. The
 pair is the parallelism of the vector parts,
 $\vec p\times\vec q=0\iff\vec q=\lambda\vec p$ or $\vec p=\lambda\vec q$, and the
 annihilator of a noncentral element is the two-dimensional plane
-$\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of the left multiplication operator
+$\mathbb{R}e_t\oplus\mathbb{R}\vec p$, of the left multiplication operator
 $\operatorname{diag}(0,C_{\vec p})$, of vanishing trace and determinant and rank two off the
 centre. The zero-divisor pairs form two families, the pure parallel pairs and the pairs with a
 scalar part, of total real dimension six. Over $\mathbb{C}$ the criterion is identical and the only
@@ -146,7 +146,7 @@ difference is the possible degeneracy of the operator's quadratic factor on the 
 | $\tilde p\times\tilde q=0$, $\tilde p,\tilde q\neq0$ | a zero-divisor pair |
 | $\mathbb{H}\setminus\{0\}$ | the zero-divisor set, total |
 | $\vec p,\vec q$ proportional | the criterion |
-| $\operatorname{Ann}(\tilde p)=\mathbb{R}e_0\oplus\mathbb{R}\vec p$ | the annihilator of a noncentral element |
+| $\operatorname{Ann}(\tilde p)=\mathbb{R}e_t\oplus\mathbb{R}\vec p$ | the annihilator of a noncentral element |
 | $L^{\times}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})$ | the left multiplication operator |
 | $t^2(t^2+\lvert\vec p\rvert^2)$ | its characteristic polynomial |
 | rank $2$ / $0$ | on the noncentral elements / on the centre |

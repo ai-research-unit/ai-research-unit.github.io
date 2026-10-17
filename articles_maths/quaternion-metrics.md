@@ -16,7 +16,7 @@ The treatment is mathematical throughout. No physical object is introduced, no s
 
 The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the algebra, the conjugate and the scalar–vector decomposition are from *Quaternion Algebra*; the norm, the inner product and the group of units are from *Quaternion Norm and Invertibility*; the forms with values in an algebra that are the norms are from *Quadratic Forms over Algebras and Norms*; the determinant of the left regular representation is pointed to in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the split-quaternion form of signature $(2,2)$ used for contrast is from *Split-Quaternion Norm and Invertibility*.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. A quaternion is $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, with **scalar part** $\mathrm{Sc}\,\tilde q = q_0$ and **vector part** $\vec q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0e_0 - \vec q$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$, and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The four real numbers $q_0,q_1,q_2,q_3$ form the coordinate vector of $\tilde q$, also written $q = (q_0,q_1,q_2,q_3)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$. A quaternion is $\tilde q = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, with **scalar part** $\mathrm{Sc}\,\tilde q = q_t$ and **vector part** $\vec q = \mathrm{Vect}\,\tilde q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_te_t - \vec q$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$, and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The four real numbers $q_t,q_x,q_y,q_z$ form the coordinate vector of $\tilde q$, also written $q = (q_t,q_x,q_y,q_z)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.
 
 ## The Minkowski Form of the Algebra
 
@@ -25,22 +25,22 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 **Definition.** The **Minkowski form** of $\mathbb{H}$ is
 
 $$
-\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_0^2 - q_1^2 - q_2^2 - q_3^2.
+\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_t^2 - q_x^2 - q_y^2 - q_z^2.
 $$
 
-The equality is the computation of a square: writing $\tilde q = q_0e_0+\vec q$, one has $\tilde q^2 = q_0^2e_0 + 2q_0\vec q + \vec q^2$, and $\vec q^2 = -\langle\vec q,\vec q\rangle e_0$ is a scalar, so the scalar part is $q_0^2 - |\vec q|^2$.
+The equality is the computation of a square: writing $\tilde q = q_te_t+\vec q$, one has $\tilde q^2 = q_t^2e_t + 2q_t\vec q + \vec q^2$, and $\vec q^2 = -\langle\vec q,\vec q\rangle e_t$ is a scalar, so the scalar part is $q_t^2 - |\vec q|^2$.
 
 The form $\omega$ is a quadratic form on the underlying real vector space $\mathbb{H}\cong\mathbb{R}^4$. Its **polar form** is the symmetric bilinear form
 
 $$
-\beta_\omega(\tilde u,\tilde v) = \tfrac12\bigl(\omega(\tilde u+\tilde v)-\omega(\tilde u)-\omega(\tilde v)\bigr) = \tfrac12\,\mathrm{Sc}(\tilde u\tilde v + \tilde v\tilde u).
+\beta_\omega(\tilde q_1,\tilde q_2) = \tfrac12\bigl(\omega(\tilde q_1+\tilde q_2)-\omega(\tilde q_1)-\omega(\tilde q_2)\bigr) = \tfrac12\,\mathrm{Sc}(\tilde q_1\tilde q_2 + \tilde q_2\tilde q_1).
 $$
 
-It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\vec q_a,\vec v$ one has $\vec q_a\vec v+\vec v\vec q_a = -2\langle\vec q_a,\vec v\rangle e_0$.
+It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\vec q_1,\vec q_2$ one has $\vec q_1\vec q_2+\vec q_2\vec q_1 = -2\langle\vec q_1,\vec q_2\rangle e_t$.
 
 ### Signature and Isometry Group
 
-**Proposition.** The Minkowski form is non-degenerate of signature $(1,3)$. In the basis $e_0,e_1,e_2,e_3$ its Gram matrix is
+**Proposition.** The Minkowski form is non-degenerate of signature $(1,3)$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its Gram matrix is
 
 $$
 \eta = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix},
@@ -66,7 +66,7 @@ $$
 L_g(\tilde q) = g\tilde q, \qquad R_g(\tilde q) = \tilde q g.
 $$
 
-**Proposition.** $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{p\tilde q} = L_pL_{\tilde q}$, $R_{p\tilde q} = R_{\tilde q}R_p$.
+**Proposition.** $L_g$ and $R_g$ are bijective for $g\neq0$, with $L_g^{-1} = L_{g^{-1}}$ and $R_g^{-1} = R_{g^{-1}}$, and $L_{\tilde q_1\tilde q_2} = L_{\tilde q_1}L_{\tilde q_2}$, $R_{\tilde q_1\tilde q_2} = R_{\tilde q_2}R_{\tilde q_1}$.
 
 *Proof.* Multiplication is associative and every nonzero quaternion is invertible by *Quaternion Norm and Invertibility*, with $g^{-1} = g^{\natural}/\langle g\rangle_{\natural}$; this gives the inverses and the composition rules directly from the definitions.
 
@@ -104,9 +104,9 @@ In particular $Q_g$ depends on $g$ and on the line $\mathbb{R} g$, and it is hom
 
 **Proposition.** For $g\neq0$ the form $Q_g$ is a quadratic form on $\mathbb{H}$, it is not the zero form, and it is isotropic: it vanishes on a nonzero vector, and therefore on the whole line that the vector spans.
 
-*Proof.* It is $\omega\circ L_g$ by the lemma, and the composition of a quadratic form with a linear map is a quadratic form. It is not zero because $\omega$ is not zero and $L_g$ is onto for $g\neq0$. For the isotropy, $Q_g(L_g^{-1}(e_0+e_1)) = \omega(e_0+e_1) = 0$, and $e_0+e_1\neq0$; the vanishing propagates along the line by homogeneity, since $Q_g(\lambda\tilde q) = \lambda^2Q_g(\tilde q)$. A nonzero vector on which the form vanishes is a **null vector**, and the line it spans is a **null line**.
+*Proof.* It is $\omega\circ L_g$ by the lemma, and the composition of a quadratic form with a linear map is a quadratic form. It is not zero because $\omega$ is not zero and $L_g$ is onto for $g\neq0$. For the isotropy, $Q_g(L_g^{-1}(e_t+\vec e_x)) = \omega(e_t+\vec e_x) = 0$, and $e_t+\vec e_x\neq0$; the vanishing propagates along the line by homogeneity, since $Q_g(\lambda\tilde q) = \lambda^2Q_g(\tilde q)$. A nonzero vector on which the form vanishes is a **null vector**, and the line it spans is a **null line**.
 
-**Remark (the source's reading).** The source proposes exactly this form, $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$, as the way to generalise the interval $\mathrm{Sc}(\tilde q^2) = q_0^2-\vec q\cdot\vec q$ of the algebra while leaving Hamilton's rules $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2e_3=-e_0$ untouched; changing the multiplication rules is the Riemannian strategy, which the source sets aside. The reading is recorded as the source's; the mathematics of the form does not depend on it.
+**Remark (the source's reading).** The source proposes exactly this form, $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$, as the way to generalise the interval $\mathrm{Sc}(\tilde q^2) = q_t^2-\vec q\cdot\vec q$ of the algebra while leaving Hamilton's rules $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y\vec e_z=-e_t$ untouched; changing the multiplication rules is the Riemannian strategy, which the source sets aside. The reading is recorded as the source's; the mathematics of the form does not depend on it.
 
 ## The Gram Matrix
 
@@ -115,20 +115,20 @@ In particular $Q_g$ depends on $g$ and on the line $\mathbb{R} g$, and it is hom
 **Definition.** The **Gram matrix** of $Q_g$ is the $4\times4$ real matrix
 
 $$
-M(g)_{\mu\nu} = \beta_g(e_\mu,e_\nu), \qquad \beta_g(\tilde q,\tilde p) = \tfrac12\bigl(Q_g(\tilde q+\tilde p)-Q_g(\tilde q)-Q_g(\tilde p)\bigr),
+M(g)_{\mu\nu} = \beta_g(e_\mu,e_\nu), \qquad \beta_g(\tilde q_1,\tilde q_2) = \tfrac12\bigl(Q_g(\tilde q_1+\tilde q_2)-Q_g(\tilde q_1)-Q_g(\tilde q_2)\bigr),
 $$
 
 where $\beta_g$ is the polar form of $Q_g$. The indices run over $\mu,\nu = 0,1,2,3$.
 
-Because $Q_g = \omega\circ L_g$, the polar form of $Q_g$ is the polar form of $\omega$ at the images: $\beta_g(\tilde q,\tilde p) = \beta_\omega(g\tilde q,g\tilde p)$, that is
+Because $Q_g = \omega\circ L_g$, the polar form of $Q_g$ is the polar form of $\omega$ at the images: $\beta_g(\tilde q_1,\tilde q_2) = \beta_\omega(g\tilde q_1,g\tilde q_2)$, that is
 
 $$
-\beta_g(\tilde q,\tilde p) = \tfrac12\,\mathrm{Sc}(g\tilde qg\tilde p + g\tilde pg\tilde q).
+\beta_g(\tilde q_1,\tilde q_2) = \tfrac12\,\mathrm{Sc}(g\tilde q_1g\tilde q_2 + g\tilde q_2g\tilde q_1).
 $$
 
 ### Closed Form
 
-**Proposition.** Write $g = g_0e_0 + g_1e_1+g_2e_2+g_3e_3$. The Gram matrix of $Q_g$ is
+**Proposition.** Write $g = g_0e_t + g_1\vec e_x+g_2\vec e_y+g_3\vec e_z$. The Gram matrix of $Q_g$ is
 
 $$
 M(g) = \begin{pmatrix}
@@ -141,7 +141,7 @@ $$
 
 Its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$; its off-diagonal entries are $-2g_0g_k$ against the time coordinate and $2g_jg_k$ against two space coordinates.
 
-*Proof.* One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\vec g|^2$ at $\mu=0$ and $-\mathrm{Sc}(ge_kg e_k)$ at $\mu=k$; expanding $g = g_0+\vec g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\vec g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_0ge_k$ and $ge_kg e_0$ are $g^2e_k$ and $ge_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(j,k)$ of distinct space indices the antisymmetry $e_je_k+e_ke_j = 0$ makes the two products equal, and the scalar part of $ge_jge_k$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $e_k^2=-e_0$, $e_1e_2=e_3$ and its cyclic permutations, and the vanishing of the scalar part of $e_je_k$ for $j\neq k$.
+*Proof.* One evaluates the polar form on the sixteen pairs of basis elements. For the diagonal, $Q_g(e_\mu) = \mathrm{Sc}((ge_\mu)^2)$, which is $\mathrm{Sc}(g^2) = g_0^2-|\vec g|^2$ at $\mu=0$ and $-\mathrm{Sc}(g\vec e_kg \vec e_k)$ at $\mu=k$; expanding $g = g_0+\vec g$ in the second and using that the scalar part of a product of two pure quaternions is minus their inner product gives $-g_0^2-|\vec g|^2+2g_k^2$. For the pair $(0,k)$ the two products $ge_tg\vec e_k$ and $g\vec e_kg e_t$ are $g^2\vec e_k$ and $g\vec e_kg$, whose scalar parts are both $-2g_0g_k$ by the same expansion, so the polar form is $-2g_0g_k$. For a pair $(\mu,\nu)$ of distinct space indices the antisymmetry $\vec e_\mu \vec e_\nu+\vec e_\nu \vec e_\mu = 0$ makes the two products equal, and the scalar part of $g\vec e_\mu g\vec e_\nu$ is $2g_jg_k$; the polar form carries the factor $\tfrac12$ and is $2g_jg_k$. The relations used are $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ and its cyclic permutations, and the vanishing of the scalar part of $\vec e_\mu \vec e_\nu$ for $\mu\neq\nu$.
 
 **Remark (the two block forms).** With $s = g_0^2-|\vec g|^2$ and $c = g_0^2+|\vec g|^2 = \langle g\rangle_{\natural}$, the matrix is
 
@@ -155,12 +155,12 @@ with $I_3$ the $3\times3$ identity and $\vec g$ the column of the three vector c
 
 | $g$ | $M(g)$ | signature | reading |
 |---|---|---|---|
-| $e_0$ | $\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the Minkowski form of the basis |
-| $e_k$ | $\mathrm{diag}(-1,-1,\dots,+1,\dots,-1)$ with the $+1$ in the $k$-th place | $(1,3)$ | the coordinate $q_k$ plays the role of time |
-| $e_0+e_k$ | the form with $s=0$ | $(1,3)$ | the two axes $e_0$ and $e_k$ are null |
-| $2e_0$ | $4\,\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the scale of $g$ rescales the form |
+| $e_t$ | $\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the Minkowski form of the basis |
+| $\vec e_k$ | $\mathrm{diag}(-1,-1,\dots,+1,\dots,-1)$ with the $+1$ in the $k$-th place | $(1,3)$ | the coordinate $q_k$ plays the role of time |
+| $e_t+\vec e_k$ | the form with $s=0$ | $(1,3)$ | the two axes $e_t$ and $\vec e_k$ are null |
+| $2e_t$ | $4\,\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the scale of $g$ rescales the form |
 
-For $g = e_0$ the form is $\omega$ itself, $Q_{e_0}(\tilde q) = q_0^2-q_1^2-q_2^2-q_3^2$, and the Gram matrix is $\eta$. For $g = e_k$ the form is $\omega$ with the time coordinate exchanged with $q_k$: for $g=e_1$ one has $Q_{e_1}(\tilde q) = -q_0^2+q_1^2-q_2^2-q_3^2$. For $g = e_0+e_1$ the matrix has $s=0$, and the vectors $e_0$ and $e_1$ are null for the form: $Q_{e_0+e_1}(e_0) = Q_{e_0+e_1}(e_1) = 0$.
+For $g = e_t$ the form is $\omega$ itself, $Q_{e_t}(\tilde q) = q_t^2-q_x^2-q_y^2-q_z^2$, and the Gram matrix is $\eta$. For $g = \vec e_k$ the form is $\omega$ with the time coordinate exchanged with $q_k$: for $g=\vec e_x$ one has $Q_{\vec e_x}(\tilde q) = -q_t^2+q_x^2-q_y^2-q_z^2$. For $g = e_t+\vec e_x$ the matrix has $s=0$, and the vectors $e_t$ and $\vec e_x$ are null for the form: $Q_{e_t+\vec e_x}(e_t) = Q_{e_t+\vec e_x}(\vec e_x) = 0$.
 
 ## Non-Degeneracy, Signature and Determinant
 
@@ -218,7 +218,7 @@ $$
 \mathcal{C}_g = \{\tilde q\in\mathbb{H} : Q_g(\tilde q) = 0\} = L_g^{-1}(\mathcal C),
 $$
 
-where $\mathcal{C} = \{\tilde q : q_0^2 = |\vec q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.
+where $\mathcal{C} = \{\tilde q : q_t^2 = |\vec q|^2\}$ is the null cone of $\omega$, the double cone over the unit sphere of the vector subspace.
 
 **Proposition.** $\mathcal{C}_g$ is a non-degenerate quadratic cone in $\mathbb{R}^4$ with apex $0$, carried by the isometry $L_g$ to the standard cone; it is not the zero-divisor set of the algebra, because $\mathbb{H}$ has none.
 
@@ -230,11 +230,11 @@ The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ va
 
 ### The Definite Norm Is Not in the Family
 
-The quaternion norm $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2+q_2^2+q_3^2$ of *Quaternion Norm and Invertibility* is positive definite, and every form of the present family is of signature $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.
+The quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ of *Quaternion Norm and Invertibility* is positive definite, and every form of the present family is of signature $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.
 
 ### The Forms with Values in an Algebra
 
-*Quadratic Forms over Algebras and Norms* studies forms whose values lie in the algebra, of which the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is the quaternion case, together with the composition laws $\langle\tilde q\tilde p\rangle_{\natural} = \langle\tilde q\rangle_{\natural}\langle\tilde p\rangle_{\natural}$ and the Cayley–Dickson doubling that they support. A quaternion metric takes its values in the base field and carries no composition law; the two theories intersect in the single form $\omega = Q_{e_0}$, which is the Minkowski form of the algebra and is not the norm.
+*Quadratic Forms over Algebras and Norms* studies forms whose values lie in the algebra, of which the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ is the quaternion case, together with the composition laws $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ and the Cayley–Dickson doubling that they support. A quaternion metric takes its values in the base field and carries no composition law; the two theories intersect in the single form $\omega = Q_{e_t}$, which is the Minkowski form of the algebra and is not the norm.
 
 ### The Other Four-Dimensional Forms of the Corpus
 
@@ -248,7 +248,7 @@ The family of quaternion metrics is a four-parameter family inside the ten-dimen
 
 ## Summary
 
-A quaternion metric is the real quadratic form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}((g\tilde q)^2)$ determined by a nonzero quaternion $g$. The identity $Q_g = \omega\circ L_g$, where $\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_0^2-q_1^2-q_2^2-q_3^2$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$, is the core of the construction: it exhibits $Q_g$ as the interval form read at the left translate $g\tilde q$, and it makes $L_g$ an isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$.
+A quaternion metric is the real quadratic form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}((g\tilde q)^2)$ determined by a nonzero quaternion $g$. The identity $Q_g = \omega\circ L_g$, where $\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_t^2-q_x^2-q_y^2-q_z^2$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$, is the core of the construction: it exhibits $Q_g$ as the interval form read at the left translate $g\tilde q$, and it makes $L_g$ an isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$.
 
 It follows that every quaternion metric is non-degenerate of signature $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.
 
@@ -259,13 +259,13 @@ The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra over $\mathbb{R}$ |
-| $e_0=1,e_1,e_2,e_3$ | Basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
-| $\tilde q = q_0e_0+\vec q$ | Quaternion, scalar part $q_0$, vector part $\vec q$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Basis, $\vec e_k^2=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
+| $\tilde q = q_te_t+\vec q$ | Quaternion, scalar part $q_t$, vector part $\vec q$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
 | $\tilde{q}^{\natural}$ | Quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde{q}^{\natural}$ | Quaternion norm (from *Quaternion Norm and Invertibility*) |
 | $L_g(\tilde q)=g\tilde q$, $R_g(\tilde q)=\tilde q g$ | Left and right multiplication |
-| $\omega(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_0^2-q_1^2-q_2^2-q_3^2$ | Minkowski form of the algebra |
+| $\omega(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$ | Minkowski form of the algebra |
 | $\beta_\omega$ | Its polar form |
 | $\eta=\mathrm{diag}(1,-1,-1,-1)$ | Gram matrix of $\omega$, $\det\eta=-1$ |
 | $O(\omega)=O(1,3)$ | Isometry group of the Minkowski form |
@@ -278,7 +278,7 @@ The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $q_0^2-|\vec q|^2$.
+- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $q_t^2-|\vec q|^2$.
 - Douglas B. Sweetser, *Doing Physics with Quaternions* (2005), section "A New Idea for Metrics", for the construction $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$ and the proposal to generalise the interval by it rather than by a change of the multiplication rules.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition, 2001), for the Minkowski form, its orthogonal group and the Clifford reading of the Lorentz transformations.
 - Serge Lang, *Algebra* (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the signatures.

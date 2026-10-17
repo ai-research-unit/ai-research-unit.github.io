@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ (informational) and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ (material) with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ (informational) and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ (material) with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-bilinear — it conjugates no coefficient — and it is not associative. Its class among the twelve structures is that of a general algebra. Owner: *Introduction to the General Quaternionic Algebra*.
-- **The unit.** $e_0$ is a **left** identity, $e_0\star\tilde X=\tilde X$, and not a right one, $\tilde X\star e_0=\tilde X^{\natural}$. The structure therefore has no two-sided unit, and this is the algebraic mark of the orientation of the material composition. Owner: *Introduction to the General Quaternionic Algebra*.
+- **The unit.** $e_t$ is a **left** identity, $e_t\star\tilde X=\tilde X$, and not a right one, $\tilde X\star e_t=\tilde X^{\natural}$. The structure therefore has no two-sided unit, and this is the algebraic mark of the orientation of the material composition. Owner: *Introduction to the General Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$, which is **multiplicative** for the product, $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and is reversed by the central generator, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$. The invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$, with the inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Owner: *Norm and Invertibility in the General Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set is the cone $\{\langle\tilde Q\rangle_{\natural}=0\}$: the lightlike parameters, the causal cone of the structure. Owner: *Zero Divisors of the General Quaternionic Algebra*.
 - **Annihilators.** The left, the right and the two-sided annihilator of an element and the radical of the product. Owner: *Annihilators of the General Quaternionic Algebra*.
@@ -58,7 +58,7 @@ The biquaternioid general quaternionic algebra is the structure $\tilde P\star\t
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic product, $\mathrm{GQA}$ |
-| $e_0\star\tilde X=\tilde X$; $\tilde X\star e_0=\tilde X^{\natural}$ | a left unit; no right unit |
+| $e_t\star\tilde X=\tilde X$; $\tilde X\star e_t=\tilde X^{\natural}$ | a left unit; no right unit |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
 | $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | multiplicativity of the norm |
 | $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ | the norm reversal of the central generator |

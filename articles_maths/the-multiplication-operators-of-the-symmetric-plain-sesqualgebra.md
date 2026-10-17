@@ -2,26 +2,26 @@
 
 ## Introduction
 
-The symmetric plain sesqualgebra is the operation $\tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_0$ (*Introduction to the Symmetric Plain Sesqualgebra*), and its multiplication operators are the two maps
+The symmetric plain sesqualgebra is the operation $\tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ (*Introduction to the Symmetric Plain Sesqualgebra*), and its multiplication operators are the two maps
 
 $$
-L^{\star}_{\tilde A}\tilde R = \tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}\,e_0 , \qquad R^{\star}_{\tilde A}\tilde R = \tilde R\star\tilde A = \langle\tilde R,\tilde A\rangle_{*}\,e_0 .
+L^{\star}_{\tilde A}\tilde R = \tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}\,e_t , \qquad R^{\star}_{\tilde A}\tilde R = \tilde R\star\tilde A = \langle\tilde R,\tilde A\rangle_{*}\,e_t .
 $$
 
 This article studies the family $\{L^{\star}_{\tilde A}, R^{\star}_{\tilde A}\}$ as a family of operators: their linearity — **the left family is conjugate-linear and the right family is $\mathbb{C}$-linear**, because the second slot of the product carries the conjugation — their rank, image, kernel and traces, their adjoints with respect to the form $H$, their composition laws and the failure of multiplicativity, and the groups of linear maps that preserve the form and the product.
 
-The result that organises the article is the pair of facts that the operators are **rank one** and that the adjoint question has a **negative answer**. Every nonzero operator of the block has image the centre $\mathbb{C}_{\mathbb{B}}$, kernel the hyperplane $H(\tilde A,\cdot\,) = 0$, and trace the scalar part of the parameter — $\overline{A_0}$ for the right family and $A_0$ for the left one in the conjugate-linear convention — so the right family carries the conjugation of the parameter and the left family does not, the trace-level mark of the sesquilinear class in contrast with the bilinear quaternionic block whose traces are both linear. And the adjoint of $L^{\star}_{\tilde A}$ with respect to $H$ is **not** $L^{\star}_{\tilde A}$, and it is **not** $R^{\star}_{\tilde A}$ either: it is the conjugate-linear map $\tilde S\mapsto \overline{S_0}\,\tilde A$, which is not a multiplication operator of the block. The failure is the operator expression of the conjugate-linearity, and it is the sharpest difference from the one-sided operators of the general sesqualgebra, where the adjoint of a multiplication is again a multiplication.
+The result that organises the article is the pair of facts that the operators are **rank one** and that the adjoint question has a **negative answer**. Every nonzero operator of the block has image the centre $\mathbb{C}_{\mathbb{B}}$, kernel the hyperplane $H(\tilde A,\cdot\,) = 0$, and trace the scalar part of the parameter — $\overline{A_t}$ for the right family and $A_t$ for the left one in the conjugate-linear convention — so the right family carries the conjugation of the parameter and the left family does not, the trace-level mark of the sesquilinear class in contrast with the bilinear quaternionic block whose traces are both linear. And the adjoint of $L^{\star}_{\tilde A}$ with respect to $H$ is **not** $L^{\star}_{\tilde A}$, and it is **not** $R^{\star}_{\tilde A}$ either: it is the conjugate-linear map $\tilde S\mapsto \overline{S_t}\,\tilde A$, which is not a multiplication operator of the block. The failure is the operator expression of the conjugate-linearity, and it is the sharpest difference from the one-sided operators of the general sesqualgebra, where the adjoint of a multiplication is again a multiplication.
 
 **Boundaries.** The general sesquilinear operator theory, the composition and the adjoints of the left and right multiplications of the general plain sesquilinear product, and the mixed operators with two independent parameters, are *One-Sided Operators on the General Plain Sesqualgebra*, *Two-Sided Operators on the General Plain Sesqualgebra* and *Mixed Inner Conjugation on the General Plain Sesqualgebra*; they are cited here and not restated. The form $H$ is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra*. The operators of the sibling blocks are *The Multiplication Operators of the Symmetric Plain Algebra* and *The Multiplication Operators of the Symmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_0,e_1,e_2,e_3$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_0$ with $\langle\tilde A,\tilde R\rangle_{*} = \sum_\mu A_\mu\overline{R_\mu}$; the form $H$ is linear in the first argument and conjugate-linear in the second. The adjoint of a conjugate-linear operator $T$ with respect to $H$ is the map $T^{\dagger}$ with $\langle T\tilde R,\tilde S\rangle_{*} = \overline{\langle\tilde R,T^{\dagger}\tilde S\rangle_{*}}$ for all $\tilde R,\tilde S$, the natural conjugate of the linear convention; that a conjugate-linear operator has no adjoint in the linear convention is the content of the last section.
+**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde A\star\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ with $\langle\tilde A,\tilde R\rangle_{*} = \sum_\mu A_\mu\overline{R_\mu}$; the form $H$ is linear in the first argument and conjugate-linear in the second. The adjoint of a conjugate-linear operator $T$ with respect to $H$ is the map $T^{\dagger}$ with $\langle T\tilde R,\tilde S\rangle_{*} = \overline{\langle\tilde R,T^{\dagger}\tilde S\rangle_{*}}$ for all $\tilde R,\tilde S$, the natural conjugate of the linear convention; that a conjugate-linear operator has no adjoint in the linear convention is the content of the last section.
 
 ## The Operators and Their Linearity
 
 **Definition.** For $\tilde A\in\mathbb{B}$ the **left** and the **right multiplication** by $\tilde A$ are the maps
 
 $$
-L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_0 , \qquad R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_0 .
+L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t , \qquad R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_t .
 $$
 
 **Proposition (the linearity of the two families).** $L^{\star}_{\tilde A}$ is $\mathbb{C}$-linear in the parameter $\tilde A$ and **conjugate-linear** in its argument; $R^{\star}_{\tilde A}$ is conjugate-linear in the parameter and $\mathbb{C}$-**linear** in its argument:
@@ -40,7 +40,7 @@ $$
 
 the bar acting on the central value. Equivalently $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$, where the bar is applied to the value; this is the conjugate-commutative law read on the operators.
 
-*Proof.* $\langle\tilde R,\tilde A\rangle_{*} = \overline{\langle\tilde A,\tilde R\rangle_{*}}$ by the Hermitian symmetry of the form; multiply by $e_0$ and conjugate.
+*Proof.* $\langle\tilde R,\tilde A\rangle_{*} = \overline{\langle\tilde A,\tilde R\rangle_{*}}$ by the Hermitian symmetry of the form; multiply by $e_t$ and conjugate.
 
 ## Rank, Image and Kernel
 
@@ -50,7 +50,7 @@ the bar acting on the central value. Equivalently $R^{\star}_{\tilde A} = \overl
 2. the kernel of each is the hyperplane $\{\tilde R : \langle\tilde A,\tilde R\rangle_{*} = 0\}$, of complex dimension three and real dimension six;
 3. neither operator is injective, and each is surjective onto the centre.
 
-*Proof.* Every value is a complex multiple of $e_0$, and the value $\langle\tilde A,\tilde R\rangle_{*}e_0$ runs over the whole centre as $\tilde R$ runs over $\mathbb{B}$ because $H(\tilde A,\cdot\,)$ is a nonzero conjugate-linear functional for $\tilde A\neq0$: the form is non-degenerate, so its kernel is a hyperplane and its image is $\mathbb{C}e_0$.
+*Proof.* Every value is a complex multiple of $e_t$, and the value $\langle\tilde A,\tilde R\rangle_{*}e_t$ runs over the whole centre as $\tilde R$ runs over $\mathbb{B}$ because $H(\tilde A,\cdot\,)$ is a nonzero conjugate-linear functional for $\tilde A\neq0$: the form is non-degenerate, so its kernel is a hyperplane and its image is $\mathbb{C}e_t$.
 
 **Corollary (the operators see the centre alone).** The image of every operator of the block is the one-dimensional complex space $\mathbb{C}_{\mathbb{B}}$, whatever the parameter; the block has no operator whose image contains a vector part, which is the operator form of the central image of the product.
 
@@ -59,21 +59,21 @@ the bar acting on the central value. Equivalently $R^{\star}_{\tilde A} = \overl
 **Proposition (the traces).** For every $\tilde A$,
 
 $$
-\operatorname{Tr}\bigl(R^{\star}_{\tilde A}\bigr) = \langle e_0,\tilde A\rangle_{*} = \overline{A_0} , \qquad \operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr) = \langle\tilde A,e_0\rangle_{*} = A_0 ,
+\operatorname{Tr}\bigl(R^{\star}_{\tilde A}\bigr) = \langle e_t,\tilde A\rangle_{*} = \overline{A_t} , \qquad \operatorname{Tr}\bigl(L^{\star}_{\tilde A}\bigr) = \langle\tilde A,e_t\rangle_{*} = A_t ,
 $$
 
-the first the ordinary trace of the $\mathbb{C}$-linear operator $R^{\star}_{\tilde A}$ in the basis $e_0,e_1,e_2,e_3$, the second the trace of the conjugate-linear $L^{\star}_{\tilde A}$ in the conjugate-linear convention; the real-linear trace of $L^{\star}_{\tilde A}$ is $0$.
+the first the ordinary trace of the $\mathbb{C}$-linear operator $R^{\star}_{\tilde A}$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the second the trace of the conjugate-linear $L^{\star}_{\tilde A}$ in the conjugate-linear convention; the real-linear trace of $L^{\star}_{\tilde A}$ is $0$.
 
-*Proof.* In the basis the matrix of $R^{\star}_{\tilde A}$ has the single nonzero row $R^{\star}_{\tilde A}(e_j) = \langle e_j,\tilde A\rangle_{*}e_0$, so it is zero except in its first row, whose entries are $\langle e_j,\tilde A\rangle_{*}$; the trace is $\langle e_0,\tilde A\rangle_{*} = \overline{A_0}$. The conjugate-linear $L^{\star}_{\tilde A}$ has $L^{\star}_{\tilde A}(e_0) = \langle\tilde A,e_0\rangle_{*}e_0 = A_0e_0$ and $L^{\star}_{\tilde A}(e_j) = \langle\tilde A,e_j\rangle_{*}e_0$; as a conjugate-linear map its trace in the conjugate-linear convention is $\langle\tilde A,e_0\rangle_{*} = A_0$, while as a real-linear map its matrix has trace $0$.
+*Proof.* In the basis the matrix of $R^{\star}_{\tilde A}$ has the single nonzero row $R^{\star}_{\tilde A}(e_\mu) = \langle e_\mu,\tilde A\rangle_{*}e_t$, so it is zero except in its first row, whose entries are $\langle e_\mu,\tilde A\rangle_{*}$; the trace is $\langle e_t,\tilde A\rangle_{*} = \overline{A_t}$. The conjugate-linear $L^{\star}_{\tilde A}$ has $L^{\star}_{\tilde A}(e_t) = \langle\tilde A,e_t\rangle_{*}e_t = A_te_t$ and $L^{\star}_{\tilde A}(e_\mu) = \langle\tilde A,e_\mu\rangle_{*}e_t$; as a conjugate-linear map its trace in the conjugate-linear convention is $\langle\tilde A,e_t\rangle_{*} = A_t$, while as a real-linear map its matrix has trace $0$.
 
-**Remark (the trace and the parameter).** The trace of the block's right multiplication is $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_0}$, conjugate-linear in the parameter, and the trace of the left multiplication is $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_0$ in the conjugate-linear convention, linear in the parameter; the real-linear trace of $L^{\star}_{\tilde A}$ is $0$. The trace-level mark of the sesquilinear class is the **conjugate** $\overline{A_0}$ where the bilinear quaternionic block has the plain $A_0$: the right multiplication of the symmetric quaternionic block has the linear trace $A_0$, and the right multiplication of the block of this article has the conjugate trace $\overline{A_0}$.
+**Remark (the trace and the parameter).** The trace of the block's right multiplication is $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, conjugate-linear in the parameter, and the trace of the left multiplication is $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ in the conjugate-linear convention, linear in the parameter; the real-linear trace of $L^{\star}_{\tilde A}$ is $0$. The trace-level mark of the sesquilinear class is the **conjugate** $\overline{A_t}$ where the bilinear quaternionic block has the plain $A_t$: the right multiplication of the symmetric quaternionic block has the linear trace $A_t$, and the right multiplication of the block of this article has the conjugate trace $\overline{A_t}$.
 
 ## The Adjoint of the Left Multiplication
 
 **Theorem (the adjoint, and it is neither family).** Let $\tilde A\in\mathbb{B}$ and let $L^{\star}_{\tilde A}$ be the left multiplication, of conjugate-linear kind. Its adjoint with respect to $H$ in the conjugate-linear convention is the conjugate-linear map
 
 $$
-\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S = \overline{S_0}\,\tilde A ,
+\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde S = \overline{S_t}\,\tilde A ,
 $$
 
 which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$.
@@ -81,16 +81,16 @@ which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$.
 *Proof.* For all $\tilde R,\tilde S$,
 
 $$
-H\bigl(L^{\star}_{\tilde A}\tilde R,\tilde S\bigr) = H\bigl(\langle\tilde A,\tilde R\rangle_{*}e_0,\tilde S\bigr) = \langle\tilde A,\tilde R\rangle_{*}\,\overline{S_0} ,
+H\bigl(L^{\star}_{\tilde A}\tilde R,\tilde S\bigr) = H\bigl(\langle\tilde A,\tilde R\rangle_{*}e_t,\tilde S\bigr) = \langle\tilde A,\tilde R\rangle_{*}\,\overline{S_t} ,
 $$
 
-and, with $\tilde S\mapsto\overline{S_0}\tilde A$ on the right,
+and, with $\tilde S\mapsto\overline{S_t}\tilde A$ on the right,
 
 $$
-\overline{H\bigl(\tilde R,\overline{S_0}\tilde A\bigr)} = \overline{S_0\,H\bigl(\tilde R,\tilde A\bigr)} = \overline{S_0}\,\langle\tilde A,\tilde R\rangle_{*} .
+\overline{H\bigl(\tilde R,\overline{S_t}\tilde A\bigr)} = \overline{S_t\,H\bigl(\tilde R,\tilde A\bigr)} = \overline{S_t}\,\langle\tilde A,\tilde R\rangle_{*} .
 $$
 
-The two agree because $\langle\tilde A,\tilde R\rangle_{*}\overline{S_0} = \overline{S_0}\langle\tilde A,\tilde R\rangle_{*}$, the two scalars commuting; the Hermitian symmetry of the form is what puts $\langle\tilde A,\tilde R\rangle_{*}$ in place of $\langle\tilde R,\tilde A\rangle_{*}$. The candidate is conjugate-linear, as the adjoint of a conjugate-linear map must be. It is not $L^{\star}_{\tilde A}\tilde S = \langle\tilde A,\tilde S\rangle_{*}e_0$, which is central, and it is not $R^{\star}_{\tilde A}\tilde S = \langle\tilde S,\tilde A\rangle_{*}e_0$, which is central; the map $\tilde S\mapsto\overline{S_0}\tilde A$ is neither central-valued nor a multiplication of the block.
+The two agree because $\langle\tilde A,\tilde R\rangle_{*}\overline{S_t} = \overline{S_t}\langle\tilde A,\tilde R\rangle_{*}$, the two scalars commuting; the Hermitian symmetry of the form is what puts $\langle\tilde A,\tilde R\rangle_{*}$ in place of $\langle\tilde R,\tilde A\rangle_{*}$. The candidate is conjugate-linear, as the adjoint of a conjugate-linear map must be. It is not $L^{\star}_{\tilde A}\tilde S = \langle\tilde A,\tilde S\rangle_{*}e_t$, which is central, and it is not $R^{\star}_{\tilde A}\tilde S = \langle\tilde S,\tilde A\rangle_{*}e_t$, which is central; the map $\tilde S\mapsto\overline{S_t}\tilde A$ is neither central-valued nor a multiplication of the block.
 
 **Remark (why no adjoint in the linear convention).** The defining identity of the linear convention, $\langle L^{\star}_{\tilde A}\tilde R,\tilde S\rangle_{*} = \langle\tilde R,T^{\dagger}\tilde S\rangle_{*}$, is impossible for a conjugate-linear $L^{\star}_{\tilde A}$: the left-hand side is conjugate-linear in $\tilde R$, while the right-hand side is linear in $\tilde R$ for every additive $T^{\dagger}$. The adjoint therefore exists only in the conjugate-linear convention, where it is the map above. This is the operator expression of the conjugate-linearity of the second slot, and the reason the one-sided theory of the general sesqualgebra, which is written for linear multiplications, does not apply to this family without the conjugate.
 
@@ -99,12 +99,12 @@ The two agree because $\langle\tilde A,\tilde R\rangle_{*}\overline{S_0} = \over
 **Theorem (the four composition laws).** For all $\tilde A,\tilde B$,
 
 $$
-L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_0\,R^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_0}\,R^{\star}_{\tilde B} , \qquad L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_0\,L^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_0}\,L^{\star}_{\tilde B} .
+L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_t\,R^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_t}\,R^{\star}_{\tilde B} , \qquad L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_t\,L^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_t}\,L^{\star}_{\tilde B} .
 $$
 
 In particular the family of operators is closed under composition; the composition of two operators is again a rank-one operator of the family, scaled by the scalar part of the first parameter.
 
-*Proof.* $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\tilde R = L^{\star}_{\tilde A}\bigl(\langle\tilde B,\tilde R\rangle_{*}e_0\bigr) = H\bigl(\tilde A,\langle\tilde B,\tilde R\rangle_{*}e_0\bigr)e_0 = \overline{\langle\tilde B,\tilde R\rangle_{*}}\,A_0e_0 = \langle\tilde R,\tilde B\rangle_{*}A_0e_0 = A_0R^{\star}_{\tilde B}\tilde R$; the other three are the same computation with the other slot, using $\langle e_0,\tilde A\rangle_{*} = \overline{A_0}$ for the right family.
+*Proof.* $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\tilde R = L^{\star}_{\tilde A}\bigl(\langle\tilde B,\tilde R\rangle_{*}e_t\bigr) = H\bigl(\tilde A,\langle\tilde B,\tilde R\rangle_{*}e_t\bigr)e_t = \overline{\langle\tilde B,\tilde R\rangle_{*}}\,A_te_t = \langle\tilde R,\tilde B\rangle_{*}A_te_t = A_tR^{\star}_{\tilde B}\tilde R$; the other three are the same computation with the other slot, using $\langle e_t,\tilde A\rangle_{*} = \overline{A_t}$ for the right family.
 
 **Corollary (the failure of multiplicativity).** The assignment $\tilde A\mapsto L^{\star}_{\tilde A}$ is **not** multiplicative:
 
@@ -112,7 +112,7 @@ $$
 L^{\star}_{\tilde A}L^{\star}_{\tilde B} \neq L^{\star}_{\tilde A\star\tilde B}
 $$
 
-in general, the left-hand side being $A_0R^{\star}_{\tilde B}$ and the right-hand side the operator of the central product $\tilde A\star\tilde B = \langle\tilde A,\tilde B\rangle_{*}e_0$, namely $\tilde R\mapsto \langle\tilde A,\tilde B\rangle_{*}\overline{R_0}e_0$.
+in general, the left-hand side being $A_tR^{\star}_{\tilde B}$ and the right-hand side the operator of the central product $\tilde A\star\tilde B = \langle\tilde A,\tilde B\rangle_{*}e_t$, namely $\tilde R\mapsto \langle\tilde A,\tilde B\rangle_{*}\overline{R_t}e_t$.
 
 *Proof.* The two sides have the forms displayed in the two displays and differ already at generic $\tilde A,\tilde B$.
 
@@ -126,7 +126,7 @@ $$
 G_H = \{\,T\in GL_{\mathbb{C}}(\mathbb{B}) : \langle T\tilde P,T\tilde Q\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}\ \text{for all }\tilde P,\tilde Q\,\} .
 $$
 
-In the basis $e_0,e_1,e_2,e_3$, whose Gram matrix for $H$ is the identity, the condition on the matrix $T$ of the map is
+In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, whose Gram matrix for $H$ is the identity, the condition on the matrix $T$ of the map is
 
 $$
 T^{\mathsf H}T = I_4 ,
@@ -144,45 +144,45 @@ the endomorphisms **skew with respect to $H$**.
 
 *Proof.* Extend the scalars to the ring of dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ and put $S = I + \varepsilon X$ in $G_H$: the invariance $\langle S\tilde P,S\tilde Q\rangle_{*} = \langle\tilde P,\tilde Q\rangle_{*}$ reads $\langle\tilde P,\tilde Q\rangle_{*} + \varepsilon\bigl(\langle X\tilde P,\tilde Q\rangle_{*} + \langle\tilde P,X\tilde Q\rangle_{*}\bigr) = \langle\tilde P,\tilde Q\rangle_{*}$, the terms of order $\varepsilon^2$ vanishing because $\varepsilon^2 = 0$. The order-one part is $\langle X\tilde P,\tilde Q\rangle_{*} + \langle\tilde P,X\tilde Q\rangle_{*}$, which therefore vanishes identically, and in the basis this is $X^{\mathsf H} + X = 0$. The same computation read backwards gives the converse, so the two conditions cut out the same space.
 
-**Theorem (the automorphisms of the block).** A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde P\star\tilde Q) = T\tilde P\star T\tilde Q$, if and only if it preserves the form and fixes the idempotent $e_0$:
+**Theorem (the automorphisms of the block).** A $\mathbb{C}$-linear bijection $T$ is an automorphism of the product, $T(\tilde P\star\tilde Q) = T\tilde P\star T\tilde Q$, if and only if it preserves the form and fixes the idempotent $e_t$:
 
 $$
-\operatorname{Aut}(\star) = \{\,T\in G_H : Te_0 = e_0\,\} .
+\operatorname{Aut}(\star) = \{\,T\in G_H : Te_t = e_t\,\} .
 $$
 
-*Proof.* If $T\in G_H$ with $Te_0 = e_0$, then $T(\tilde P\star\tilde Q) = \langle\tilde P,\tilde Q\rangle_{*}Te_0 = \langle\tilde P,\tilde Q\rangle_{*}e_0$ and $T\tilde P\star T\tilde Q = \langle T\tilde P,T\tilde Q\rangle_{*}e_0 = \langle\tilde P,\tilde Q\rangle_{*}e_0$, so $T$ is an automorphism. Conversely, let $T$ be an automorphism. Applying it to the identity exhibited in the central form gives $\langle\tilde P,\tilde Q\rangle_{*}Te_0 = \langle T\tilde P,T\tilde Q\rangle_{*}e_0$ for all $\tilde P,\tilde Q$; comparing the vector part gives $Te_0 = c_0e_0$ a central element, and comparing the scalar part then gives $\langle T\tilde P,T\tilde Q\rangle_{*} = c_0\langle\tilde P,\tilde Q\rangle_{*}$; taking $\tilde P = \tilde Q = e_0$ gives $c_0 = \lvert c_0\rvert^{2}$, so $c_0\in\{0,1\}$, and the invertibility of $T$ forces $c_0 = 1$. Hence $T\in G_H$ and $Te_0 = e_0$.
+*Proof.* If $T\in G_H$ with $Te_t = e_t$, then $T(\tilde P\star\tilde Q) = \langle\tilde P,\tilde Q\rangle_{*}Te_t = \langle\tilde P,\tilde Q\rangle_{*}e_t$ and $T\tilde P\star T\tilde Q = \langle T\tilde P,T\tilde Q\rangle_{*}e_t = \langle\tilde P,\tilde Q\rangle_{*}e_t$, so $T$ is an automorphism. Conversely, let $T$ be an automorphism. Applying it to the identity exhibited in the central form gives $\langle\tilde P,\tilde Q\rangle_{*}Te_t = \langle T\tilde P,T\tilde Q\rangle_{*}e_t$ for all $\tilde P,\tilde Q$; comparing the vector part gives $Te_t = c_te_t$ a central element, and comparing the scalar part then gives $\langle T\tilde P,T\tilde Q\rangle_{*} = c_t\langle\tilde P,\tilde Q\rangle_{*}$; taking $\tilde P = \tilde Q = e_t$ gives $c_t = \lvert c_t\rvert^{2}$, so $c_t\in\{0,1\}$, and the invertibility of $T$ forces $c_t = 1$. Hence $T\in G_H$ and $Te_t = e_t$.
 
-**Remark (the structure group).** The group that preserves the product **up to a scalar** is the group of $\mathbb{C}$-linear maps $T$ for which $T(\tilde P\star\tilde Q) = \chi(T)(T\tilde P\star T\tilde Q)$ for a nonzero scalar $\chi(T)$; the same computation shows that $T$ must be a **similarity** of $H$, $\langle T\tilde P,T\tilde Q\rangle_{*} = r(T)\langle\tilde P,\tilde Q\rangle_{*}$ with $r(T)$ a nonzero scalar, and must send $e_0$ into the line $\mathbb{C}e_0$, with the two scalars related by $Te_0 = \chi(T)r(T)e_0$. The automorphism group above is the part with $\chi = r = 1$; the structure group is the bundle of similarities of $H$ that fix the line of the idempotent.
+**Remark (the structure group).** The group that preserves the product **up to a scalar** is the group of $\mathbb{C}$-linear maps $T$ for which $T(\tilde P\star\tilde Q) = \chi(T)(T\tilde P\star T\tilde Q)$ for a nonzero scalar $\chi(T)$; the same computation shows that $T$ must be a **similarity** of $H$, $\langle T\tilde P,T\tilde Q\rangle_{*} = r(T)\langle\tilde P,\tilde Q\rangle_{*}$ with $r(T)$ a nonzero scalar, and must send $e_t$ into the line $\mathbb{C}e_t$, with the two scalars related by $Te_t = \chi(T)r(T)e_t$. The automorphism group above is the part with $\chi = r = 1$; the structure group is the bundle of similarities of $H$ that fix the line of the idempotent.
 
 ## Worked Examples
 
-**The identity and the central parameter.** For $\tilde A = \lambda e_0$ the two operators are $L^{\star}_{\lambda e_0}\tilde R = \lambda\,\overline{R_0}e_0$ and $R^{\star}_{\lambda e_0}\tilde R = \overline{\lambda}\,R_0e_0$; for $\lambda = 1$ these are $L^{\star}_{e_0}\tilde R = \overline{R_0}e_0$ and $R^{\star}_{e_0}\tilde R = R_0e_0$, the two projections of the centre, and neither is the identity because the product has no unit.
+**The identity and the central parameter.** For $\tilde A = \lambda e_t$ the two operators are $L^{\star}_{\lambda e_t}\tilde R = \lambda\,\overline{R_t}e_t$ and $R^{\star}_{\lambda e_t}\tilde R = \overline{\lambda}\,R_te_t$; for $\lambda = 1$ these are $L^{\star}_{e_t}\tilde R = \overline{R_t}e_t$ and $R^{\star}_{e_t}\tilde R = R_te_t$, the two projections of the centre, and neither is the identity because the product has no unit.
 
-**A vector parameter.** For $\tilde A = e_1$, $L^{\star}_{e_1}\tilde R = \langle e_1,\tilde R\rangle_{*}e_0 = \overline{R_1}e_0$ and $R^{\star}_{e_1}\tilde R = \langle\tilde R,e_1\rangle_{*}e_0 = R_1e_0$; the operators are rank one, with kernel the hyperplane $R_1 = 0$, and their traces are $0$ and $0$ respectively.
+**A vector parameter.** For $\tilde A = \vec e_x$, $L^{\star}_{\vec e_x}\tilde R = \langle \vec e_x,\tilde R\rangle_{*}e_t = \overline{R_x}e_t$ and $R^{\star}_{\vec e_x}\tilde R = \langle\tilde R,\vec e_x\rangle_{*}e_t = R_xe_t$; the operators are rank one, with kernel the hyperplane $R_x = 0$, and their traces are $0$ and $0$ respectively.
 
-**The adjoint.** For $\tilde A = e_1 + ie_2$, the identity $\langle L^{\star}_{\tilde A}\tilde R,\tilde S\rangle_{*} = \overline{\langle\tilde R,\overline{S_0}\tilde A\rangle_{*}}$ holds for all $\tilde R,\tilde S$, while the candidate $R^{\star}_{\tilde A}$ does not satisfy it; the adjoint of $L^{\star}_{\tilde A}$ is therefore the conjugate-linear map $\tilde S\mapsto\overline{S_0}\tilde A$.
+**The adjoint.** For $\tilde A = \vec e_x + i\vec e_y$, the identity $\langle L^{\star}_{\tilde A}\tilde R,\tilde S\rangle_{*} = \overline{\langle\tilde R,\overline{S_t}\tilde A\rangle_{*}}$ holds for all $\tilde R,\tilde S$, while the candidate $R^{\star}_{\tilde A}$ does not satisfy it; the adjoint of $L^{\star}_{\tilde A}$ is therefore the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde A$.
 
-**A composition.** The operators $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $A_0R^{\star}_{\tilde B}$ are equal, while $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $L^{\star}_{\tilde A\star\tilde B}$ differ in general; the composition of two operators of the family is not the operator of the product of their parameters.
+**A composition.** The operators $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $A_tR^{\star}_{\tilde B}$ are equal, while $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $L^{\star}_{\tilde A\star\tilde B}$ differ in general; the composition of two operators of the family is not the operator of the product of their parameters.
 
 ## Summary
 
-The multiplication operators of the block are $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_0$ and $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_0$; the left family is **conjugate-linear** in its argument and the right family is **$\mathbb{C}$-linear**, and the two are the pointwise conjugates of one another, $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$. Every nonzero operator has **rank one**, image the centre and kernel the hyperplane $H(\tilde A,\cdot\,) = 0$ of real dimension six. The **traces** are $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_0}$, conjugate-linear in the parameter, and $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_0$ in the conjugate-linear convention, the trace-level mark of the sesquilinear class against the bilinear quaternionic block. The **adjoint** of $L^{\star}_{\tilde A}$ with respect to $H$ is the conjugate-linear map $\tilde S\mapsto\overline{S_0}\tilde A$, which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$; a conjugate-linear operator has no adjoint in the linear convention, and the failure is the operator expression of the conjugate-linearity. The **composition** laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_0R^{\star}_{\tilde B}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_0}R^{\star}_{\tilde B}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_0L^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_0}L^{\star}_{\tilde B}$, so the family is closed under composition but the assignment is **not multiplicative**, $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$. Finally the group $G_H$ of $\mathbb{C}$-linear maps preserving $H$ has the matrix condition $T^{\mathsf H}T = I_4$ and the Lie algebra $X^{\mathsf H} + X = 0$, the skew endomorphisms; the **automorphisms** of the block are the elements of $G_H$ fixing $e_0$, and the **structure group** is the group of similarities of $H$ fixing the line of the idempotent.
+The multiplication operators of the block are $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ and $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_t$; the left family is **conjugate-linear** in its argument and the right family is **$\mathbb{C}$-linear**, and the two are the pointwise conjugates of one another, $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$. Every nonzero operator has **rank one**, image the centre and kernel the hyperplane $H(\tilde A,\cdot\,) = 0$ of real dimension six. The **traces** are $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, conjugate-linear in the parameter, and $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ in the conjugate-linear convention, the trace-level mark of the sesquilinear class against the bilinear quaternionic block. The **adjoint** of $L^{\star}_{\tilde A}$ with respect to $H$ is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde A$, which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$; a conjugate-linear operator has no adjoint in the linear convention, and the failure is the operator expression of the conjugate-linearity. The **composition** laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_tR^{\star}_{\tilde B}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_t}R^{\star}_{\tilde B}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_tL^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_t}L^{\star}_{\tilde B}$, so the family is closed under composition but the assignment is **not multiplicative**, $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$. Finally the group $G_H$ of $\mathbb{C}$-linear maps preserving $H$ has the matrix condition $T^{\mathsf H}T = I_4$ and the Lie algebra $X^{\mathsf H} + X = 0$, the skew endomorphisms; the **automorphisms** of the block are the elements of $G_H$ fixing $e_t$, and the **structure group** is the group of similarities of $H$ fixing the line of the idempotent.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_0$ | the left multiplication; conjugate-linear |
-| $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_0$ | the right multiplication; $\mathbb{C}$-linear |
+| $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ | the left multiplication; conjugate-linear |
+| $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_t$ | the right multiplication; $\mathbb{C}$-linear |
 | $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$ | the two families are pointwise conjugate |
 | $\mathbb{C}_{\mathbb{B}}$, $\{H(\tilde A,\cdot\,) = 0\}$ | the image and the kernel of a nonzero operator; rank one |
-| $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_0}$, $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_0$ | the traces |
-| $(L^{\star}_{\tilde A})^{\dagger}\tilde S = \overline{S_0}\tilde A$ | the adjoint in the conjugate-linear convention |
-| $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_0R^{\star}_{\tilde B}$, etc. | the four composition laws |
+| $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ | the traces |
+| $(L^{\star}_{\tilde A})^{\dagger}\tilde S = \overline{S_t}\tilde A$ | the adjoint in the conjugate-linear convention |
+| $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_tR^{\star}_{\tilde B}$, etc. | the four composition laws |
 | $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$ | the failure of multiplicativity |
 | $G_H$, $T^{\mathsf H}T = I_4$ | the group of linear maps preserving $H$ |
 | $X^{\mathsf H} + X = 0$ | its Lie algebra, the skew endomorphisms |
-| $\operatorname{Aut}(\star) = \{T\in G_H : Te_0 = e_0\}$ | the automorphisms of the block |
+| $\operatorname{Aut}(\star) = \{T\in G_H : Te_t = e_t\}$ | the automorphisms of the block |
 
 ## Further Reading
 

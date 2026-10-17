@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The earlier exercises treated single measurements, time evolution, successive measurements, and entangled measurements of two spins. This exercise treats a complementary aspect of entanglement: the **state of one subsystem** when the joint system is in an entangled state. This introduces the **reduced density matrix**, and with it the concept of a **mixed state**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.
 
 ## The Exercise
 
@@ -108,10 +108,10 @@ The reduced state is not pure: it is a mixed state, and it carries the maximum p
 
 ### Step 1: The joint state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_0 + i\vec u_m)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and the singlet state corresponds to the idempotent
 
 $$
-P_{\mathrm{singlet}} = \frac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
+P_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 ### Step 2: The reduced state
@@ -134,54 +134,54 @@ and extended by linearity.
 
 We compute the partial trace term by term.
 
-**First term.** $\frac{1}{4}e_0\otimes e_0$ contributes
+**First term.** $\frac{1}{4}e_t\otimes e_t$ contributes
 
 $$
-\mathrm{Tr}_2\!\left(\frac{1}{4}e_0\otimes e_0\right) = \frac{1}{4}e_0 \cdot \mathrm{Tr}_\mathbb{B}(e_0) = \frac{1}{4}e_0 \cdot 2 = \frac{1}{2}e_0.
+\mathrm{Tr}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot \mathrm{Tr}_\mathbb{B}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
 $$
 
-**Remaining terms.** For $k = 1, 2, 3$, the term $\frac{1}{4}e_k\otimes e_k$ contributes
+**Remaining terms.** For $k = 1, 2, 3$, the term $\frac{1}{4}\vec e_k\otimes \vec e_k$ contributes
 
 $$
-\mathrm{Tr}_2\!\left(\frac{1}{4}e_k\otimes e_k\right) = \frac{1}{4}e_k \cdot \mathrm{Tr}_\mathbb{B}(e_k) = \frac{1}{4}e_k \cdot 0 = 0,
+\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_k\otimes \vec e_k\right) = \frac{1}{4}\vec e_k \cdot \mathrm{Tr}_\mathbb{B}(\vec e_k) = \frac{1}{4}\vec e_k \cdot 0 = 0,
 $$
 
-since $\mathrm{Tr}_\mathbb{B}(e_k) = 2\,\mathrm{Sc}(e_k) = 0$ for the pure quaternion units.
+since $\mathrm{Tr}_\mathbb{B}(\vec e_k) = 2\,\mathrm{Sc}(\vec e_k) = 0$ for the pure quaternion units.
 
 Summing the contributions,
 
 $$
-\rho_1 = \frac{1}{2}e_0.
+\rho_1 = \frac{1}{2}e_t.
 $$
 
 ### Step 4: The result
 
 $$
-\rho_1 = \frac{1}{2}e_0.
+\rho_1 = \frac{1}{2}e_t.
 $$
 
 This is the maximally mixed state of a qubit, expressed in biquaternion form. Its purity and von Neumann entropy are
 
 $$
-\mathrm{Tr}(\rho_1^2) = \mathrm{Tr}\!\left(\frac{1}{4}e_0\right) = \frac{1}{4}\cdot 2 = \frac{1}{2},
+\mathrm{Tr}(\rho_1^2) = \mathrm{Tr}\!\left(\frac{1}{4}e_t\right) = \frac{1}{4}\cdot 2 = \frac{1}{2},
 $$
 
 $$
-S(\rho_1) = -\mathrm{Tr}(\rho_1 \log \rho_1) = -\mathrm{Tr}\!\left(\frac{1}{2}e_0 \cdot \log\tfrac{1}{2}e_0\right) = -\log\tfrac{1}{2} \cdot \mathrm{Tr}\!\left(\frac{1}{2}e_0\right) = \log 2.
+S(\rho_1) = -\mathrm{Tr}(\rho_1 \log \rho_1) = -\mathrm{Tr}\!\left(\frac{1}{2}e_t \cdot \log\tfrac{1}{2}e_t\right) = -\log\tfrac{1}{2} \cdot \mathrm{Tr}\!\left(\frac{1}{2}e_t\right) = \log 2.
 $$
 
 The same values as in the standard formulation.
 
 ## Properties of the Reduced State
 
-The reduced state $\rho_1 = \frac{1}{2} e_0$ has three notable properties.
+The reduced state $\rho_1 = \frac{1}{2} e_t$ has three notable properties.
 
-**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\rho = \tfrac{1}{2}(e_0 + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\rho_1 = \frac{1}{2} e_0$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
+**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\rho = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\rho_1 = \frac{1}{2} e_t$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
-**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\rho_1 \mapsto \tilde{U}\rho_1\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$, the reduced state is unchanged:
+**2. It is invariant under all unitary transformations.** Under a rotor conjugation $\rho_1 \mapsto \tilde{U}\rho_1\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_t$, the reduced state is unchanged:
 
 $$
-\tilde{U}\left(\tfrac{1}{2}e_0\right)\tilde{U}^{*} = \tfrac{1}{2}\tilde{U}\tilde{U}^{*} = \tfrac{1}{2}e_0.
+\tilde{U}\left(\tfrac{1}{2}e_t\right)\tilde{U}^{*} = \tfrac{1}{2}\tilde{U}\tilde{U}^{*} = \tfrac{1}{2}e_t.
 $$
 
 This invariance is a specific property of the maximally mixed state.
@@ -208,7 +208,7 @@ $$
 P_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
 $$
 
-with $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$. Computing the partial trace,
+with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial trace,
 
 $$
 \rho_1^{\mathrm{prod}} = \mathrm{Tr}_2(P_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
@@ -216,7 +216,7 @@ $$
 
 using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
 
-So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, which is an idempotent with Bloch vector $\vec r = e_3$ and purity $1$. The purity and entropy are
+So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec r = \vec e_z$ and purity $1$. The purity and entropy are
 
 $$
 \mathrm{Tr}((\rho_1^{\mathrm{prod}})^2) = 1, \qquad S(\rho_1^{\mathrm{prod}}) = 0.
@@ -226,8 +226,8 @@ This is in sharp contrast with the singlet case.
 
 | State | Reduced state $\rho_1$ | Purity | Entropy |
 |---|---|---|---|
-| Singlet $|\Psi^-\rangle$ | $\frac{1}{2}e_0$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
-| Product $|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_0 + ie_3)$ (pure) | $1$ | $0$ |
+| Singlet $|\Psi^-\rangle$ | $\frac{1}{2}e_t$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
+| Product $|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_t + i\vec e_z)$ (pure) | $1$ | $0$ |
 
 The contrast is the operational signature of entanglement: **product states have pure reduced states; entangled states have mixed reduced states**. The more entangled the joint state, the more mixed the reduced state.
 
@@ -235,9 +235,9 @@ The contrast is the operational signature of entanglement: **product states have
 
 **1. The reduced state is obtained by a partial trace.** The partial trace $\mathrm{Tr}_2$ is a linear map $\mathbb{B}\otimes\mathbb{B} \to \mathbb{B}$, defined on elementary tensors by $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$. This is the biquaternion form of the standard partial trace.
 
-**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_0$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
+**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
 
-**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $e_k\otimes e_k$ with $k \neq 0$, and none of the form $e_k\otimes e_0$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_0\otimes e_0$ term survives, giving the maximally mixed reduced state. In a product state the terms $e_k\otimes e_0$ are present, and they carry the pure reduced state.
+**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_k\otimes \vec e_k$ with $k \neq 0$, and none of the form $\vec e_k\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_k\otimes e_t$ are present, and they carry the pure reduced state.
 
 **4. The purity and entropy are natural functions on $\mathbb{M}_+$.** Both the purity $\mathrm{Tr}(\rho_1^2)$ and the entropy $-\mathrm{Tr}(\rho_1\log\rho_1)$ are expressed in terms of the trace on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.
 
@@ -251,7 +251,7 @@ The contrast is the operational signature of entanglement: **product states have
 | Physical process | Measurement | Evolution | Successive measurements | Entangled measurement | Reduced state |
 | Structural object | Idempotent + idempotent | Idempotent + unitary | Sequence of idempotents | State in $\mathbb{B}\otimes\mathbb{B}$ | Partial trace of a state |
 | Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula | Partial trace + trace formula |
-| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\rho_1 = \frac{1}{2}e_0$, purity $\frac{1}{2}$, entropy $\log 2$ |
+| Result | $\cos^2(\theta/2)$ | $(\hbar/2)\cos(\omega_L t)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1-\vec u_a\cdot\vec u_b)$ | $\rho_1 = \frac{1}{2}e_t$, purity $\frac{1}{2}$, entropy $\log 2$ |
 
 These exercises illustrate five fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), **entangled measurement** (Exercise: Two Spins in the Singlet State), and **partial trace** (Exercise: The Reduced State of an Entangled Subsystem). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$, $\mathbb{H}_\mathbb{B}$, and their tensor products.
 
@@ -261,7 +261,7 @@ We have solved a fifth exercise in quantum physics — the reduced state of one 
 
 In the **standard formulation**, the solution proceeds through the joint density matrix, the partial trace, and the result $\rho_1 = \frac{1}{2}I$, giving a maximally mixed state with purity $\frac{1}{2}$ and entropy $\log 2$.
 
-In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the partial trace on the tensor product, and the result $\rho_1 = \frac{1}{2}e_0$, giving the same values.
+In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the partial trace on the tensor product, and the result $\rho_1 = \frac{1}{2}e_t$, giving the same values.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic origin of the mixedness: the entanglement of the joint state is encoded in the off-diagonal tensor-product terms, and tracing out one subsystem produces a mixed state whose mixedness measures the entanglement.
 
@@ -274,13 +274,13 @@ The comparison with a product state — where the reduced state is pure — illu
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $|\Psi^-\rangle$ | Singlet state |
-| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
+| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}})$ | Reduced state of particle 1 |
-| $\frac{1}{2}e_0$ | Maximally mixed state of a qubit |
+| $\frac{1}{2}e_t$ | Maximally mixed state of a qubit |
 | $\mathrm{Tr}(\rho_1^2)$ | Purity of the reduced state |
 | $S(\rho_1) = -\mathrm{Tr}(\rho_1\log\rho_1)$ | von Neumann entropy |
 | $\log$ | Natural logarithm |

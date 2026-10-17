@@ -12,7 +12,7 @@ This article collects the identities that link the four. They are not four unrel
 
 Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternioid Complex Space*.
 
-The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the conjugations from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\vec P$ and $\tilde Q=Q_0+\vec Q$ separate the complex scalar part from the complex vector part, $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, and the conjugations from *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\vec P$ and $\tilde Q=Q_t+\vec Q$ separate the complex scalar part from the complex vector part, $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part.
 
 ## The Two Choices, and the Four General Products
 
@@ -43,8 +43,8 @@ The ${}^{\natural}$ in the first slot and the ${}^{*}$ in the second are what di
 Separating the scalar part of the first factor from its vector part, the general plain bilinear product and the ${}^{\natural}$-product are
 
 $$
-\tilde P\tilde Q=(P_0e_0)\tilde Q+\vec P\tilde Q , \qquad
-\tilde P^{\natural}\tilde Q=(P_0e_0)\tilde Q-\vec P\tilde Q ,
+\tilde P\tilde Q=(P_0e_t)\tilde Q+\vec P\tilde Q , \qquad
+\tilde P^{\natural}\tilde Q=(P_0e_t)\tilde Q-\vec P\tilde Q ,
 $$
 
 the vector part being read as an element where it multiplies. Adding and subtracting,
@@ -112,12 +112,12 @@ The scalar part of each of the four general products is read on the coordinates 
 with $\varepsilon=(1,-1,-1,-1)$; the first and the third are linear in the coordinates of both factors and the second and the fourth are conjugate-linear in the coordinates of the second. The four are related two by two, the two bilinear ones by the bilinear dot product and the two sesquilinear ones by its Hermitian companion:
 
 $$
-\mathrm{Sc}(\tilde P\tilde Q)+\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=2P_0Q_0 , \qquad
+\mathrm{Sc}(\tilde P\tilde Q)+\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=2P_0Q_t , \qquad
 \mathrm{Sc}(\tilde P\tilde Q)-\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=-2(\vec P,\vec Q) ,
 $$
 
 $$
-\mathrm{Sc}(\tilde P\tilde Q^{*})+\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2P_0\overline{Q_0} , \qquad
+\mathrm{Sc}(\tilde P\tilde Q^{*})+\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2P_0\overline{Q_t} , \qquad
 \mathrm{Sc}(\tilde P\tilde Q^{*})-\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2(\vec P,\overline{\vec Q}) .
 $$
 
@@ -171,12 +171,12 @@ The first says that the vector part of the ${}^{\natural}$-product is the reflec
 
 | product | vector part | cross term |
 |---|---|---|
-| $\tilde P\tilde Q$ | $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ | $+$ |
-| $\tilde P\tilde Q^{*}$ | $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ | $-$ |
-| $\tilde P^{\natural}\tilde Q$ | $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | $-$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$ | $+$ |
+| $\tilde P\tilde Q$ | $P_0\vec Q+Q_t\vec P+\vec P\times\vec Q$ | $+$ |
+| $\tilde P\tilde Q^{*}$ | $-P_0\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$ | $-$ |
+| $\tilde P^{\natural}\tilde Q$ | $P_0\vec Q-Q_t\vec P-\vec P\times\vec Q$ | $-$ |
+| $\tilde P^{\natural}\tilde Q^{*}$ | $-P_0\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}$ | $+$ |
 
-Deleting the cross term, the first and the third rows are reflections of each other in $P_0\vec Q$, and the second and the fourth in $-P_0\overline{\vec Q}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q$, reverses the sign of the $P_0$-term and of the cross term, and leaves the sign of the $Q_0$-term alone.
+Deleting the cross term, the first and the third rows are reflections of each other in $P_0\vec Q$, and the second and the fourth in $-P_0\overline{\vec Q}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q$, reverses the sign of the $P_0$-term and of the cross term, and leaves the sign of the $Q_t$-term alone.
 
 ## The Left Multiplications
 
@@ -252,7 +252,7 @@ The left multiplications of the four are the general plain bilinear ones read th
 | symbol | meaning |
 |---|---|
 | $\tilde P\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q, \tilde P^{\natural}\tilde Q^{*}$ | the four general products, defined in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* |
-| $\vec P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
+| $\vec P$ | the vector part of $\tilde P$, $P_1\vec e_x+P_2\vec e_y+P_3\vec e_z$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde P}$, $R_{\tilde P}$ | the left and right multiplications of the general plain bilinear product by $\tilde P$ |
 | $L^{\natural}_{\tilde P}$, $L^{*}_{\tilde P}$, $L^{\natural*}_{\tilde P}$ | the left multiplications of the three other products |

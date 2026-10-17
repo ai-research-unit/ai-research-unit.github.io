@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **general plain sesquimultiplication**
 $$
 \tilde P\star\tilde Q=\tilde P\tilde Q^{*}
-=\bigl[P_0Q_0-(\vec P,\overline{\vec Q})\bigr]+P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
+=\bigl[P_tQ_t-(\vec P,\overline{\vec Q})\bigr]+P_t\overline{\vec Q}+\overline{Q_t}\vec P-\vec P\times\overline{\vec Q},
 $$
 the plain product with the conjugate linear star in the second slot (*Introduction to the General
 Plain Sesqualgebra of Biquaternions*). Its zero divisors are again the elements of the cone
@@ -76,10 +76,10 @@ $\tilde Q\tilde X^{*}=0$, with the converse by the same argument because ${}^{*}
 the two sets are therefore equal. The dimension is that of the plain annihilator, two on the cone
 and zero off it.
 
-**Example.** For the zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the common
+**Example.** For the zero divisor $\tilde Q=e_t+i\vec e_x$, of central square $1-1=0$, the common
 annihilator is
 $$
-A_\star(e_0+ie_1)=\mathbb{C}\{e_1+ie_0,\ e_2+ie_3\}.
+A_\star(e_t+i\vec e_x)=\mathbb{C}\{\vec e_x+ie_t,\ \vec e_y+i\vec e_z\}.
 $$
 
 ## The Multiplication Operator and the Rank
@@ -120,8 +120,8 @@ Sesqualgebra*, whose two sides are again distinct.
 
 **On every remarkable subspace the annihilator is the ambient one intersected with the subspace: $\{0\}$ off the cone, and the conjugate of the plain annihilator, a complex plane, inside the subspace on the cone.**
 
-**The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
-$L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
+**The centre.** A nonzero central element $\tilde P=\lambda e_t$ has
+$L_{\lambda e_t}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
 $\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
 annihilator is $\{0\}$.
 

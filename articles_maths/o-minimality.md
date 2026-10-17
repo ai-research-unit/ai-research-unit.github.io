@@ -195,7 +195,7 @@ and for every definable function $f : A \to M^n$, $\dim f(A) \leq \dim A$, with 
 
 ### Counting Rational Points: The Pila–Wilkie Theorem
 
-**Theorem (Pila–Wilkie).** Let $A \subseteq \mathbb{R}^n$ be definable in an o-minimal structure and suppose that $A$ contains no infinite semialgebraic subset. Then for every $\varepsilon > 0$ there is $c$ such that the number of rational points of height at most $H$ in $A$ is at most $c H^{\varepsilon}$, where the height of $p/q$ is $\max(\lvert p\rvert, q)$.
+**Theorem (Pila–Wilkie).** Let $A \subseteq \mathbb{R}^n$ be definable in an o-minimal structure and suppose that $A$ contains no infinite semialgebraic subset. Then for every $\varepsilon > 0$ there is $c$ such that the number of rational points of height at most $H$ in $A$ is at most $c H^{\varepsilon}$, where the height of $r/s$ is $\max(\lvert r\rvert, s)$.
 
 **Proof.** The theorem is Pila and Wilkie's, proved by a counting of the intersections of $A$ with the algebraic curves of bounded degree and a reduction to the o-minimal dimension theory; it is quoted from the literature.
 
@@ -226,7 +226,7 @@ The structure theory of o-minimal structures rests on the cell decomposition: ev
 | Cell | Definable set of the recursive interval or graph form |
 | $\dim A$ | Dimension of a definable set, cell dimension |
 | $\pi$ | Coordinate projection |
-| $H$ | Height of a rational point, $\max(\lvert p\rvert, q)$ |
+| $H$ | Height of a rational point, $\max(\lvert r\rvert, s)$ |
 
 ## Further Reading
 

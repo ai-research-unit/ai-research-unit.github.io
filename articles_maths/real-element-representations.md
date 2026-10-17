@@ -14,13 +14,13 @@ The treatment is mathematically honest: every claim is either proved or stated a
 A **representation** of $\mathbb{R}$ is a real vector space $V$ together with a bilinear map
 
 $$
-\rho : \mathbb{R} \times V \to V, \qquad \rho(a, v) = a \cdot v,
+\rho : \mathbb{R} \times V \to V, \qquad \rho(q, v) = q \cdot v,
 $$
 
 satisfying
 
 $$
-a \cdot (b \cdot v) = (ab) \cdot v, \qquad 1 \cdot v = v.
+q_1 \cdot (q_2 \cdot v) = (q_1 q_2) \cdot v, \qquad 1 \cdot v = v.
 $$
 
 Equivalently, a representation is an algebra homomorphism
@@ -36,10 +36,10 @@ Since $\mathbb{R}$ is a field, every representation is a real vector space, and 
 The **regular representation** of $\mathbb{R}$ is $\mathbb{R}$ acting on itself by left multiplication:
 
 $$
-\rho_{\mathrm{reg}}(a) b = a b, \qquad a, b \in \mathbb{R}.
+\rho_{\mathrm{reg}}(q_1) q_2 = q_1 q_2, \qquad q_1, q_2 \in \mathbb{R}.
 $$
 
-This is the representation $\rho_{\mathrm{reg}} : \mathbb{R} \to \operatorname{End}(\mathbb{R})$ given by $\rho_{\mathrm{reg}}(a) = a$. It is the representation of $\mathbb{R}$ on a one-dimensional real vector space.
+This is the representation $\rho_{\mathrm{reg}} : \mathbb{R} \to \operatorname{End}(\mathbb{R})$ given by $\rho_{\mathrm{reg}}(q) = q$. It is the representation of $\mathbb{R}$ on a one-dimensional real vector space.
 
 ## Classification
 
@@ -48,16 +48,16 @@ This is the representation $\rho_{\mathrm{reg}} : \mathbb{R} \to \operatorname{E
 **Theorem.** Every finite-dimensional real representation of $\mathbb{R}$ is isomorphic to a direct sum of copies of the regular representation:
 
 $$
-V \cong \mathbb{R}^{\oplus n}, \qquad \rho(a)(v_1, \dots, v_n) = (a v_1, \dots, a v_n).
+V \cong \mathbb{R}^{\oplus n}, \qquad \rho(q)(v_1, \dots, v_n) = (q v_1, \dots, q v_n).
 $$
 
-**Proof.** For fixed $v \in V$, the map $a \mapsto a \cdot v$ is $\mathbb{R}$-linear in $a$, being the composite of the $\mathbb{R}$-linear map $\rho : \mathbb{R} \to \operatorname{End}(V)$ with evaluation at $v$. It is therefore determined by its value at $1$, which is $v$: hence
+**Proof.** For fixed $v \in V$, the map $q \mapsto q \cdot v$ is $\mathbb{R}$-linear in $q$, being the composite of the $\mathbb{R}$-linear map $\rho : \mathbb{R} \to \operatorname{End}(V)$ with evaluation at $v$. It is therefore determined by its value at $1$, which is $v$: hence
 
 $$
-a \cdot v = a(1 \cdot v) = a v
+q \cdot v = q(1 \cdot v) = q v
 $$
 
-for every $a \in \mathbb{R}$ and every $v \in V$, where the scalar $a$ on the right multiplies in $V$. So the action of the field element $a$ is already the scalar multiplication of $V$, and in any basis the matrix of $\rho(a)$ is diagonal with every entry equal to $a$. The representation is thus a direct sum of copies of the regular representation.
+for every $q \in \mathbb{R}$ and every $v \in V$, where the scalar $q$ on the right multiplies in $V$. So the action of the field element $q$ is already the scalar multiplication of $V$, and in any basis the matrix of $\rho(q)$ is diagonal with every entry equal to $q$. The representation is thus a direct sum of copies of the regular representation.
 
 ### Irreducible Representations
 
@@ -116,12 +116,12 @@ The order on $\mathbb{R}$ does not enter the representation theory, because repr
 A representation $V$ admits a **positive-definite invariant inner product** if there exists an inner product $\langle \cdot, \cdot \rangle$ on $V$ such that
 
 $$
-\langle a \cdot v, w \rangle = \langle v, a \cdot w \rangle, \qquad a \in \mathbb{R}, \; v, w \in V.
+\langle q \cdot v, w \rangle = \langle v, q \cdot w \rangle, \qquad q \in \mathbb{R}, \; v, w \in V.
 $$
 
 **Theorem.** Every finite-dimensional real representation of $\mathbb{R}$ admits a positive-definite invariant inner product.
 
-**Proof.** The representation is a direct sum of copies of the regular representation, and on the regular representation the standard inner product is invariant: $\langle a \cdot v, w \rangle = (av)w = v(aw) = \langle v, a \cdot w \rangle$. The orthogonal direct sum of the standard inner products on the summands is then an invariant positive-definite inner product on $V$.
+**Proof.** The representation is a direct sum of copies of the regular representation, and on the regular representation the standard inner product is invariant: $\langle q \cdot v, w \rangle = (qv)w = v(qw) = \langle v, q \cdot w \rangle$. The orthogonal direct sum of the standard inner products on the summands is then an invariant positive-definite inner product on $V$.
 
 ### The Role of Completeness
 
@@ -129,7 +129,7 @@ Completeness does not in fact enter the representation theory, even for infinite
 
 **Theorem.** Every Banach representation of $\mathbb{R}$ is a direct sum of copies of the regular representation, in the sense that $V$ is a direct sum of closed invariant subspaces on each of which $\mathbb{R}$ acts by scalar multiplication.
 
-**Proof.** Since $\rho$ is an algebra homomorphism of real algebras it is $\mathbb{R}$-linear and unital, so $\rho(a) = \rho(a \cdot 1) = a\,\rho(1) = a\,\mathrm{id}$ for every $a \in \mathbb{R}$: the field $\mathbb{R}$ acts on $V$ by scalar multiplication. Neither continuity nor completeness is used, and the conclusion holds for every representation, finite- or infinite-dimensional, Banach or not.
+**Proof.** Since $\rho$ is an algebra homomorphism of real algebras it is $\mathbb{R}$-linear and unital, so $\rho(q) = \rho(q \cdot 1) = q\,\rho(1) = q\,\mathrm{id}$ for every $q \in \mathbb{R}$: the field $\mathbb{R}$ acts on $V$ by scalar multiplication. Neither continuity nor completeness is used, and the conclusion holds for every representation, finite- or infinite-dimensional, Banach or not.
 
 ## The Dual Representation
 
@@ -138,7 +138,7 @@ Completeness does not in fact enter the representation theory, even for infinite
 The **dual** (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by
 
 $$
-(\rho^*(a) f)(v) = f(\rho(a) v), \qquad a \in \mathbb{R}, \; f \in V^*, \; v \in V.
+(\rho^*(q) f)(v) = f(\rho(q) v), \qquad q \in \mathbb{R}, \; f \in V^*, \; v \in V.
 $$
 
 ### Basic Properties
@@ -162,7 +162,7 @@ $$
 satisfies
 
 $$
-\langle \rho^*(a) f, v \rangle = \langle f, \rho(a) v \rangle.
+\langle \rho^*(q) f, v \rangle = \langle f, \rho(q) v \rangle.
 $$
 
 This is the definition of the dual representation, written as a pairing.
@@ -174,7 +174,7 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by
 
 $$
-a \cdot (v \otimes w) = (a \cdot v) \otimes w = v \otimes (a \cdot w).
+q \cdot (v \otimes w) = (q \cdot v) \otimes w = v \otimes (q \cdot w).
 $$
 
 The two definitions agree because $\mathbb{R}$ is commutative.
@@ -200,7 +200,7 @@ $$
 A **homomorphism** of representations $V$ and $W$ is a real-linear map $T : V \to W$ such that
 
 $$
-T(a \cdot v) = a \cdot T(v), \qquad a \in \mathbb{R}, \; v \in V.
+T(q \cdot v) = q \cdot T(v), \qquad q \in \mathbb{R}, \; v \in V.
 $$
 
 The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{R}}(V, W)$.
@@ -211,13 +211,13 @@ The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{R}}(
 
 **Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{R}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{R}}(V, V) \cong \mathbb{R}$.
 
-**Dimension count.** For $V \cong \mathbb{R}^{\oplus p}$ and $W \cong \mathbb{R}^{\oplus q}$,
+**Dimension count.** For $V \cong \mathbb{R}^{\oplus p}$ and $W \cong \mathbb{R}^{\oplus m}$,
 
 $$
-\dim_{\mathbb{R}} \operatorname{Hom}_{\mathbb{R}}(V, W) = pq.
+\dim_{\mathbb{R}} \operatorname{Hom}_{\mathbb{R}}(V, W) = pm.
 $$
 
-**Proof.** A homomorphism is a real-linear map between finite-dimensional real vector spaces, so it is determined by a $q \times p$ real matrix, of real dimension $pq$.
+**Proof.** A homomorphism is a real-linear map between finite-dimensional real vector spaces, so it is determined by a $m \times p$ real matrix, of real dimension $pm$.
 
 ### The Endomorphism Ring
 

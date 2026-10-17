@@ -73,7 +73,7 @@ The manifolds with a reduced holonomy carry the richest invariants of the list, 
 | Manifold | Dimension | Holonomy | Invariants | Introduced in |
 |---|---|---|---|---|
 | a complex manifold | $2n$ | $GL(n,\mathbb{C})$ | complex structure $J$; Dolbeault cohomology | *Kähler Geometry* |
-| a Kähler manifold | $2n$ | $U(n)$ | Hodge numbers $h^{n,m}$; Kähler form $\Omega$ | *Kähler Geometry* |
+| a Kähler manifold | $2n$ | $\mathrm{U}(n)$ | Hodge numbers $h^{n,m}$; Kähler form $\Omega$ | *Kähler Geometry* |
 | a Calabi–Yau manifold | $2n$ | $SU(n)$ | $c_1 = 0$; holomorphic volume form | *Calabi–Yau Manifolds* |
 | a hyperkähler manifold | $4n$ | $Sp(n)$ | three Kähler forms; Ricci-flat | *Hyperkähler Geometry* |
 | a quaternionic Kähler manifold | $4n$ | $Sp(n)\cdot Sp(1)$ | Einstein; twistor space | *Quaternionic Geometry* |
@@ -130,7 +130,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $L(n,m)$ | Lens space |
 | $\chi$, $b_i$, $h^{n,m}$ | Euler characteristic, Betti numbers, Hodge numbers |
 | $\Theta_n$, $bP_{n+1}$ | Group of homotopy spheres; boundary of the parallelizable case |
-| $U(n)$, $SU(n)$, $Sp(n)$, $Sp(n)\cdot Sp(1)$, $G_2$, $\mathrm{Spin}(7)$ | Holonomy groups |
+| $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, $Sp(n)\cdot Sp(1)$, $G_2$, $\mathrm{Spin}(7)$ | Holonomy groups |
 | $\mathrm{Gr}_k(\mathbb{R}^n)$, $F\ell_n(\mathbb{C})$ | Grassmannian and flag manifold |
 | $\mathbb{Z}$ | The standard number systems of the corpus |
 

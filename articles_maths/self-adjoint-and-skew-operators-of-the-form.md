@@ -64,9 +64,9 @@ $$
 
 ### The Skew-Adjoint Part is a Lie Algebra
 
-**Theorem (the Lie algebra).** The skew-adjoint operators form a real Lie algebra under the commutator $[S,T] = ST - TS$, and in the definite complete case this Lie algebra is the Lie algebra of the unitary group $U(A,h)$.
+**Theorem (the Lie algebra).** The skew-adjoint operators form a real Lie algebra under the commutator $[S,T] = ST - TS$, and in the definite complete case this Lie algebra is the Lie algebra of the unitary group $\mathrm{U}(A,h)$.
 
-*Proof.* The commutator of two skew-adjoint operators is skew-adjoint by the sign rule at $\epsilon = \delta = -1$; the commutator is bilinear and alternating, and the Jacobi identity is the associativity of the product. For the second clause, in the definite complete case the exponential $\exp(tS)$ of a skew-adjoint operator is unitary for every real $t$ by the next section, so the Lie algebra exponentiates into $U(A,h)$; conversely a unitary one-parameter group has skew-adjoint generator, obtained by differentiating $h(\exp(tS)x, \exp(tS)y) = h(x,y)$ at $t = 0$.
+*Proof.* The commutator of two skew-adjoint operators is skew-adjoint by the sign rule at $\epsilon = \delta = -1$; the commutator is bilinear and alternating, and the Jacobi identity is the associativity of the product. For the second clause, in the definite complete case the exponential $\exp(tS)$ of a skew-adjoint operator is unitary for every real $t$ by the next section, so the Lie algebra exponentiates into $\mathrm{U}(A,h)$; conversely a unitary one-parameter group has skew-adjoint generator, obtained by differentiating $h(\exp(tS)x, \exp(tS)y) = h(x,y)$ at $t = 0$.
 
 **Remark (what the Lie algebra is not).** The Lie algebra is real: multiplying a skew-adjoint operator by a scalar $\lambda$ gives a skew-adjoint operator only when $\varsigma(\lambda) = \lambda$, that is when $\lambda \in k$, so the Lie algebra is a Lie algebra over the fixed field $k$ and not an $R$-module of operators closed under scalars. Over the sesquilinear base every operator is $A + \mathrm{i}B$ with $A$ and $B$ self-adjoint, so the complexification of the skew-adjoint operators is the whole operator algebra; over the collapsed base the complexification is only the part they span, the difference between the two bases being the difference between $\mathfrak{u}(n)$ and $\mathfrak{so}(n)$ at the level of the scalar field. In both cases the passage from the Lie algebra to the unitary group is the passage from $k$ to the circle of the scalars of modulus one, exactly as for the scalar field.
 
@@ -88,7 +88,7 @@ that is, the circle product is commutative, it is $R$-bilinear, and it satisfies
 
 ### The One-Parameter Unitary Group
 
-**Theorem (the exponential of a skew-adjoint operator).** Let $A$ be a Banach sesqualgebra with a form in the definite complete case, and let $S$ be skew-adjoint. Then the series $\exp(S) = \sum_{n \geq 0} S^{n}/n!$ converges in $B(A)$, the operator $\exp(S)$ is unitary, and $t \mapsto \exp(tS)$ is a group homomorphism from the additive line into $U(A,h)$ with
+**Theorem (the exponential of a skew-adjoint operator).** Let $A$ be a Banach sesqualgebra with a form in the definite complete case, and let $S$ be skew-adjoint. Then the series $\exp(S) = \sum_{n \geq 0} S^{n}/n!$ converges in $B(A)$, the operator $\exp(S)$ is unitary, and $t \mapsto \exp(tS)$ is a group homomorphism from the additive line into $\mathrm{U}(A,h)$ with
 
 $$
 (\exp(S))^{\dagger} = \exp(-S) = (\exp(S))^{-1} .
@@ -170,16 +170,16 @@ $$
 T_{\lambda} \text{ is self-adjoint} \iff \lambda \in \mathbb{R} , \qquad T_{\lambda} \text{ is skew-adjoint} \iff \lambda \in \mathrm{i}\mathbb{R} .
 $$
 
-The skew-adjoint operators are the line $\mathrm{i}\mathbb{R}$, which is the Lie algebra of the circle $U(1)$, and the self-adjoint operators are the line $\mathbb{R}$; the exponential of $\mathrm{i}\theta$ is the point $\exp(\mathrm{i}\theta)$ of the circle, and the Cayley transform of $\mathrm{i}t$ is the point $(1-\mathrm{i}t)(1+\mathrm{i}t)^{-1} = (\mathrm{i}+t)/(\mathrm{i}-t)$ of the same circle. The example is the smallest in which the Lie algebra, the group and both transforms are visible at once, and its skew-adjoint operators are the purely imaginary scalars, which carry no real part.
+The skew-adjoint operators are the line $\mathrm{i}\mathbb{R}$, which is the Lie algebra of the circle $\mathrm{U}(1)$, and the self-adjoint operators are the line $\mathbb{R}$; the exponential of $\mathrm{i}\theta$ is the point $\exp(\mathrm{i}\theta)$ of the circle, and the Cayley transform of $\mathrm{i}t$ is the point $(1-\mathrm{i}t)(1+\mathrm{i}t)^{-1} = (\mathrm{i}+t)/(\mathrm{i}-t)$ of the same circle. The example is the smallest in which the Lie algebra, the group and both transforms are visible at once, and its skew-adjoint operators are the purely imaginary scalars, which carry no real part.
 
 ### The Matrices
 
-**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, and let $m_{Z}$ be the multiplication by $Z$ on the left. By the regular representation, $m_{Z}$ is self-adjoint exactly when $Z$ is Hermitian and skew-adjoint exactly when $Z$ is skew-Hermitian; the skew-adjoint multiplications therefore form the Lie algebra $\mathfrak{u}(n)$ of the unitary group $U(n)$, and the self-adjoint ones the Jordan algebra of the Hermitian matrices. The exponential of $m_{Z}$ is the multiplication by $\exp(Z)$, which is unitary exactly when $Z$ is skew-Hermitian, and the identification of the operator algebra with $\mathbb{C}^{n^{2}}$ through the trace form carries the adjoint of the layer to the conjugate transpose of the operator, so the splitting of the layer is the classical one. The example is the model of the article and the smallest in which the Lie algebra is not abelian. The two generating elements are
+**Example (the matrices).** Let $A = M_{n}(\mathbb{C})$ with the conjugate transpose and the trace form $h(X,Y) = \operatorname{tr}(XY^{*})$, and let $m_{Z}$ be the multiplication by $Z$ on the left. By the regular representation, $m_{Z}$ is self-adjoint exactly when $Z$ is Hermitian and skew-adjoint exactly when $Z$ is skew-Hermitian; the skew-adjoint multiplications therefore form the Lie algebra $\mathfrak{u}(n)$ of the unitary group $\mathrm{U}(n)$, and the self-adjoint ones the Jordan algebra of the Hermitian matrices. The exponential of $m_{Z}$ is the multiplication by $\exp(Z)$, which is unitary exactly when $Z$ is skew-Hermitian, and the identification of the operator algebra with $\mathbb{C}^{n^{2}}$ through the trace form carries the adjoint of the layer to the conjugate transpose of the operator, so the splitting of the layer is the classical one. The example is the model of the article and the smallest in which the Lie algebra is not abelian. The two generating elements are
 
 $$
 \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}=\sigma_1^{*},\qquad
 W=\begin{pmatrix}i&0\\0&-i\end{pmatrix}=-W^{*},\qquad
-\exp(W)=\begin{pmatrix}\exp(i)&0\\0&\exp(-i)\end{pmatrix}\in U(2),\quad (\exp(W))^{*}\exp(W)=I_2 ,
+\exp(W)=\begin{pmatrix}\exp(i)&0\\0&\exp(-i)\end{pmatrix}\in \mathrm{U}(2),\quad (\exp(W))^{*}\exp(W)=I_2 ,
 $$
 
 the first Hermitian so that $m_{\sigma_1}$ is self-adjoint, the second skew-Hermitian so that $m_{W}$ is skew-adjoint in $\mathfrak{u}(2)$, and the third the unitary exponential of the skew-Hermitian generator.

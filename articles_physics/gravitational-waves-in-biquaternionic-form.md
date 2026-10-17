@@ -8,11 +8,11 @@ This article takes up that deferral, and only as far as the linearized approxima
 
 The findings are worth separating at the outset, because one of them is negative and is easy to mistake for a defect of the exposition.
 
-- **Established, and recomputed below.** The harmonic condition $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ does not exhaust the gauge freedom: it is preserved by exactly those residual transformations with $\Box\xi_\nu = 0$. Counting the physical content therefore requires the residual freedom, and with it the count $10 \to 6 \to 2$ is justified rather than asserted: the ten components of $h_{\mu\nu}$ reduce to six under the four harmonic conditions, and the six-dimensional space is the direct sum of the two-dimensional transverse-traceless space and the four-dimensional image of the residual gauge freedom. The two polarizations are transverse-traceless, and both the transversality and the tracelessness are verified on an explicit plane-wave ansatz, together with $R_{\mu\nu} = 0$ and $R_{\mu\nu\rho\sigma} \ne 0$ for each of the plus and cross amplitudes. The quadrupole formula $P = \frac{G}{5c^5}\langle \dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ is verified by matching it, on the equal-mass circular binary, to the standard result $\frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}$; the radiation is quadrupole because the monopole and dipole moments are conserved, and the mass dipole's second derivative vanishes by momentum conservation.
+- **Established, and recomputed below.** The harmonic condition $\partial^\lambda\bar{h}_{\lambda\nu} = 0$ does not exhaust the gauge freedom: it is preserved by exactly those residual transformations with $\Box\xi_\nu = 0$. Counting the physical content therefore requires the residual freedom, and with it the count $10 \to 6 \to 2$ is justified rather than asserted: the ten components of $h_{\mu\nu}$ reduce to six under the four harmonic conditions, and the six-dimensional space is the direct sum of the two-dimensional transverse-traceless space and the four-dimensional image of the residual gauge freedom. The two polarizations are transverse-traceless, and both the transversality and the tracelessness are verified on an explicit plane-wave ansatz, together with $R_{\mu\nu} = 0$ and $R_{\mu\nu\rho\sigma} \ne 0$ for each of the plus and cross amplitudes. The quadrupole formula $P = \frac{G}{5c^5}\langle \,d^3Q_{ij}/dt^3 d^3Q_{ij}/dt^3\rangle$ is verified by matching it, on the equal-mass circular binary, to the standard result $\frac{32}{5}\frac{G^4}{c^5}\frac{(m_1m_2)^2(m_1+m_2)}{d^5}$; the radiation is quadrupole because the monopole and dipole moments are conserved, and the mass dipole's second derivative vanishes by momentum conservation.
 - **The framework's contribution, and its limit.** The algebra supplies the wave operator $\Box$ and the shape of the gauge transformation, both inherited from the parent, and it supplies the residual gauge freedom as the condition $\Box\tilde{\Delta} = 0$ on a material four-vector. It supplies **no natural handle on the polarization count**: the step $6 \to 2$ is a dynamical statement about which of the harmonic-gauge components propagate, and the algebra does not generate it. The physical polarization amplitudes are carried by a symmetric traceless rank-two object, and the algebra's natural single-biquaternion packaging of that object collapses to its trace, which vanishes — so the two polarizations are precisely what a single biquaternion cannot hold. The quadrupole moment is the same kind of object, and the same collapse applies to it; the source $T_{\mu\nu}$ belongs to the same class. Consequently the quadrupole formula is transcribed into the framework's notation, not derived from it, and the prefactor $G/5c^5$ is not fixed by the algebra.
 - **What is not claimed.** Linearized general relativity is not derived from the biquaternion algebra. No action, no field equation, and no representation of diffeomorphism invariance is supplied here; these are the parent's gaps, and nothing in the radiation theory closes them. The framework predicts no deviation from standard gravitational-wave physics.
 
-**Conventions.** The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$; $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The material basis is $\varepsilon_0 = ie_0$, $\varepsilon_k = e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q},\tilde{P}\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. As in the parent, the coordinates in which tensor components are written are the real components $x^\mu = (ct,x,y,z)$, so $\tilde{Q} = X^\mu\varepsilon_\mu$ and $\partial_{ict} = -i\partial_0$ with $\partial_0 = \partial/\partial(ct)$; consequently $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. A plane wave of wave vector $k^\mu = (\omega/c)(1,0,0,1)$ then has phase $\omega(z/c - t)$, and $k^\mu k_\mu = 0$.
+**Conventions.** The conventions of the read-list articles are inherited without change. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$ and $e_j\vec e_k = -\delta_{jk}e_t + \epsilon_{jkm}e_m$; $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $\vec e_k$. The subspaces are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), and $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The material basis is $\varepsilon_0 = ie_t$, $\varepsilon_k = \vec e_k$, with $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ and the general quaternionic bilinear form $\langle\tilde{Q},\tilde{P}\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. As in the parent, the coordinates in which tensor components are written are the real components $x^\mu = (ct,x,y,z)$, so $\tilde{Q} = X^\mu\varepsilon_\mu$ and $\partial/\partial Q_t = -i\partial/\partial(ct)$; consequently $\Box = \eta^{\mu\nu}\partial_\mu\partial_\nu$. A plane wave of wave vector $k^\mu = (\omega/c)(1,0,0,1)$ then has phase $\omega(z/c - t)$, and $k^\mu k_\mu = 0$.
 
 ## The Trace-Reversed Perturbation and the Wave Equation
 
@@ -132,22 +132,22 @@ $$
 k^\mu A_{\mu\nu} = 0 \qquad\text{and}\qquad \eta^{\mu\nu}A_{\mu\nu} = 0 ,
 $$
 
-and in which, in addition, the components with a timelike index vanish, $A_{0\mu} = 0$. For propagation in the $+z$ direction, $k^\mu = (\omega/c)(1,0,0,1)$, so that the phase is $\omega(z/c - t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
+and in which, in addition, the components with a timelike index vanish, $A_{t\mu} = 0$. For propagation in the $+z$ direction, $k^\mu = (\omega/c)(1,0,0,1)$, so that the phase is $\omega(z/c - t)$ and the plane transverse to the propagation is spanned by $x$ and $y$.
 
 **The transversality and tracelessness are checked, not assumed.** For the two amplitudes
 
 $$
-\text{plus:}\quad A_{11} = -A_{22} \ne 0, \qquad
-\text{cross:}\quad A_{12} = A_{21} \ne 0,
+\text{plus:}\quad A_{xx} = -A_{yy} \ne 0, \qquad
+\text{cross:}\quad A_{xy} = A_{yx} \ne 0,
 $$
 
-with all other components zero, a direct check verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{0\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves
+with all other components zero, a direct check verifies $k^\mu k_\mu = 0$, $k^\mu A_{\mu\nu} = 0$, and $\eta^{\mu\nu}A_{\mu\nu} = 0$, for each amplitude and for the general transverse-traceless solution. Solving the conditions $A_{t\mu} = 0$, $k^\mu A_{\mu\nu} = 0$, $\eta^{\mu\nu}A_{\mu\nu} = 0$ on a general symmetric $A_{\mu\nu}$ leaves
 
 $$
-A_{11} = -A_{22}, \qquad A_{12} = A_{21}, \qquad \text{all other components zero},
+A_{xx} = -A_{yy}, \qquad A_{xy} = A_{yx}, \qquad \text{all other components zero},
 $$
 
-a two-parameter family: the plus amplitude and the cross amplitude, and nothing else. The two are related by a rotation through $45^\circ$ in the transverse plane, and together they span the two-dimensional space of physical polarizations, whose helicity eigenstates are the two circular combinations $A_{11}\pm iA_{12}$.
+a two-parameter family: the plus amplitude and the cross amplitude, and nothing else. The two are related by a rotation through $45^\circ$ in the transverse plane, and together they span the two-dimensional space of physical polarizations, whose helicity eigenstates are the two circular combinations $A_{xx}\pm iA_{xy}$.
 
 **The curvature is nonzero, so the wave is not pure gauge.** A direct computation of the linearized Riemann tensor of the displayed ansatz, using
 
@@ -158,15 +158,15 @@ $$
 gives, for the plus amplitude,
 
 $$
-R_{0101} = -R_{0202} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
-\qquad R_{0303} = 0,
+R_{txtx} = -R_{tyty} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
+\qquad R_{tztz} = 0,
 $$
 
 and, for the cross amplitude,
 
 $$
-R_{0102} = R_{0123} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
-\qquad R_{0101} = R_{0202} = R_{0303} = 0 .
+R_{txty} = R_{txyz} = \frac{\omega^2}{2c^2}\cos\!\left(\frac{\omega}{c}(z - ct)\right),
+\qquad R_{txtx} = R_{tyty} = R_{tztz} = 0 .
 $$
 
 In both cases the Ricci tensor vanishes,
@@ -186,24 +186,24 @@ The wave equation of the first section, $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}
 **The amplitude.** For an isolated, slowly moving source, the far-field transverse-traceless perturbation is
 
 $$
-h_{ij}^{\mathrm{TT}}(t,\vec x) = \frac{2G}{c^4 r}\,\ddot{Q}_{ij}^{\mathrm{TT}}(t - r/c), \qquad
-\Theta_{ij} = \int \rho(\vec x')\left(x'_ix'_j - \tfrac{1}{3}r'^2\delta_{ij}\right)d^3x',
+h_{ij}^{\mathrm{TT}}(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{2G}{c^4 r}\,\left(d^2Q_{ij}^{\mathrm{TT}}/dt^2\right)(t - r/c), \qquad
+\Theta_{ij} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\left(x'_ix'_j - \tfrac{1}{3}r'^2\delta_{ij}\right)d^3x',
 $$
 
-where $r = |\vec x|$, $\Theta_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
+where $r = |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, $\Theta_{ij}$ is the **traceless (reduced) quadrupole moment**, and the transverse-traceless projection removes the trace and the longitudinal parts. The field is proportional to the **second** time derivative of the quadrupole moment. The retarded argument makes the wave outgoing along the future light cone, the null cone of $\Box$, which is the zero-divisor cone of $\mathbb{M}_-$ inherited from the material sector.
 
-**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $\dot{M} = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $\dot{d}_i = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $\ddot{d}_i = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
+**No monopole, no dipole.** The multipole expansion begins at the quadrupole, and the reason is conservation. The monopole moment $M = \int\rho\,d^3x$ is the total mass–energy; it is conserved, $dM/dt = 0$, so there is no monopole radiation. The dipole moment $d_i = \int\rho\,x_i\,d^3x$ has $dd_{i}/dt = \int\rho\,v_i\,d^3x = P_i$, the total momentum, which is conserved for an isolated source; hence $d^2d_{i}/dt^2 = 0$ and there is no dipole radiation. The leading radiating moment is therefore the quadrupole. This is the sharpest structural difference from electromagnetism, where the dipole radiates; it is a consequence of momentum conservation, and it is why the gravitational-wave formula has three time derivatives on a quadrupole rather than two on a dipole.
 
 **The power.** The radiated power, averaged over a period, is
 
 $$
-\boxed{\;P = \frac{G}{5c^5}\left\langle \dddot{Q}_{ij}\,\dddot{Q}_{ij} \right\rangle, \;}
+\boxed{\;P = \frac{G}{5c^5}\left\langle \,d^3Q_{ij}/dt^3\,d^3Q_{ij}/dt^3 \right\rangle, \;}
 $$
 
 with the same traceless quadrupole moment. The power is quadratic in the **third** derivative; the field is linear in the second. An equivalent form uses the un-reduced moment $I_{ij} = \int\rho\,x_ix_j\,d^3x$,
 
 $$
-P = \frac{G}{5c^5}\left\langle \dddot{I}_{ij}\dddot{I}_{ij} - \tfrac{1}{3}\left(\dddot{I}_{kk}\right)^2 \right\rangle,
+P = \frac{G}{5c^5}\left\langle \,d^3I_{ij}/dt^3 d^3I_{ij}/dt^3 - \tfrac{1}{3}\left(d^3I_{kk}/dt^3\right)^2 \right\rangle,
 $$
 
 which reduces to the traceless form because $I_{ij} = \Theta_{ij} + \tfrac13\delta_{ij}I_{kk}$.
@@ -216,7 +216,7 @@ $$
 \Theta_{xy} = mR^2\sin 2\omega t,
 $$
 
-whose third derivatives give $\dddot{Q}_{ij}\dddot{Q}_{ij} = 128\,m^2R^4\omega^6$, a constant. Then
+whose third derivatives give $d^3Q_{ij}/dt^3 d^3Q_{ij}/dt^3 = 128\,m^2R^4\omega^6$, a constant. Then
 
 $$
 P = \frac{G}{5c^5}\cdot128\,m^2R^4\omega^6
@@ -257,7 +257,7 @@ $$
 \tilde{A} = \sum_{i,j=1}^{3} A_{ij}\,\varepsilon_i\bar{\varepsilon}_j .
 $$
 
-For a traceless $A_{ij}$ this vanishes identically, $\tilde{A} = (\eta^{ij}A_{ij})e_0 = 0$, by the same computation that makes the packaging of $h_{\mu\nu}$ collapse to its trace in the parent article. The two polarizations are therefore **exactly the components that the algebra's natural packaging annihilates**. The same holds for a plus amplitude and a cross amplitude separately: each is traceless, each packages to zero. The framework carries the wave in the frame perturbation $\delta\tilde{E}_\mu$, an $\mathbb{M}_-$-valued one-form; every attempt to compress it into a single biquaternion retains only the trace, and in transverse-traceless gauge the trace is zero. This is sharper than the parent's statement that the graviton is not a material biquaternion: the polarization content is invisible not only to $\mathbb{M}_-$ but to the natural packaging into *any* single algebra element.
+For a traceless $A_{ij}$ this vanishes identically, $\tilde{A} = (\eta^{ij}A_{ij})e_t = 0$, by the same computation that makes the packaging of $h_{\mu\nu}$ collapse to its trace in the parent article. The two polarizations are therefore **exactly the components that the algebra's natural packaging annihilates**. The same holds for a plus amplitude and a cross amplitude separately: each is traceless, each packages to zero. The framework carries the wave in the frame perturbation $\delta\tilde{E}_\mu$, an $\mathbb{M}_-$-valued one-form; every attempt to compress it into a single biquaternion retains only the trace, and in transverse-traceless gauge the trace is zero. This is sharper than the parent's statement that the graviton is not a material biquaternion: the polarization content is invisible not only to $\mathbb{M}_-$ but to the natural packaging into *any* single algebra element.
 
 **The field strength, and a trap.** The gauge-invariant field strength is the linearized Riemann tensor, packaged index by index as a bivector-valued two-form
 
@@ -265,9 +265,9 @@ $$
 \tilde{R}_{\mu\nu} = \tfrac{1}{2}\sum_{\rho,\sigma} R_{\mu\nu\rho\sigma}\,\bar{\varepsilon}^\rho\varepsilon^\sigma .
 $$
 
-Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a **complex pure vector** — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{e_k, ie_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a **field strength** built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the *field strength* sits in the bivector subspace, the *potential* sits in $\mathbb{M}_-$, and the *graviton itself* sits in no sector of the algebra at all.
+Because the antisymmetric part of $\bar{\varepsilon}^\rho\varepsilon^\sigma$ has no scalar component, each $\tilde{R}_{\mu\nu}$ is a **complex pure vector** — an element of the six-dimensional subspace $\mathrm{span}_{\mathbb{R}}\{\vec e_k, i\vec e_k\}$ that the parent identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ — and so lies in neither $\mathbb{M}_-$ nor $\mathbb{M}_+$. This invites an analogy with the electromagnetic field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, which is also a complex pure vector with vanishing scalar part and is likewise not in $\mathbb{M}_-$. The analogy is real but narrow, and it must not be pushed past the field strength. What the two cases share is that a **field strength** built from derivatives of a potential can leave the material sector; the electromagnetic potential $\tilde{A}$ itself is a single material four-vector, whereas the gravitational potential is an $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$, one material four-vector per coordinate direction. And the graviton is not the field strength: it is the symmetric rank-two perturbation $h_{\mu\nu}$, or its frame carrier, or the two traceless amplitudes — an object of dimension ten that is not a bivector, not a four-vector, and not a single element of $\mathbb{B}$. Placing the graviton "in a sector" because $\tilde{F}$ is not in $\mathbb{M}_-$ would be an inference the notation does not license; the honest statement is that the *field strength* sits in the bivector subspace, the *potential* sits in $\mathbb{M}_-$, and the *graviton itself* sits in no sector of the algebra at all.
 
-**The source and the quadrupole moment.** The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $\Theta_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}\Theta_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}\Theta_{ij})e_0 = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.
+**The source and the quadrupole moment.** The radiating source is the symmetric energy–momentum tensor $T_{\mu\nu}$, and the radiating moment is the symmetric traceless $\Theta_{ij}$. Both are symmetric rank-two objects, the class the material-space article records as not lying in $\mathbb{M}_-$ and that the energy–momentum exercise shows no single biquaternion can faithfully carry. For the quadrupole moment the collapse is exact and total: $\sum_{ij}\Theta_{ij}\varepsilon_i\bar{\varepsilon}_j = (\eta^{ij}\Theta_{ij})e_t = 0$ for traceless $Q$. The algebra therefore cannot hold the quantity that the quadrupole formula differentiates; the formula is transcribed into the framework's notation, not derived from it. In particular the coupling constant $8\pi G/c^4$, and with it the prefactor $G/5c^5$, is not fixed by the algebra.
 
 ## What the Algebra Supplies and What It Does Not
 
@@ -285,7 +285,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 2. **A faithful biquaternion carrier of the quadrupole moment.** No single biquaternion carries the symmetric traceless $\Theta_{ij}$: the natural packaging collapses it to its vanishing trace, exactly as it collapses $h_{\mu\nu}$ to the trace that does not propagate. The electromagnetic energy–momentum tensor is carried not by a single biquaternion but by a bilinear, and the exercise on that object shows how. Is the same true of $\Theta_{ij}$ — is there a bilinear of two $\mathbb{M}_-$ elements, or of a matter field, whose symmetric traceless part is the quadrupole moment and whose transformation under the Lorentz group is correct? A positive answer would give the framework a place to stand in the generation problem; a negative answer would explain why the quadrupole formula resists transcription into a single algebra element.
 
-3. **The retarded solution and the null cone.** The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \ddot{Q}_{ij}^{\mathrm{TT}}$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.
+3. **The retarded solution and the null cone.** The Maxwell article writes the retarded potential with a kernel supported on the past light cone. Does the same construction, applied to the $\mathbb{M}_-$-valued one-form $\delta\tilde{E}_\mu$ with a rank-two source, produce the retarded $\bar{h}_{\mu\nu}$ and the far-field amplitude $h_{ij}^{\mathrm{TT}} \propto \,d^2Q_{ij}^{\mathrm{TT}}/dt^2$? The transverse-traceless projection of the far field is the step most likely to require structure the algebra does not have, but the retarded kernel itself may go through unchanged.
 
 4. **The Weyl tensor, helicity, and the two sectors.** The gauge-invariant content of the wave is the Weyl tensor, naturally packaged through self-dual and anti-self-dual bivectors. Does the decomposition into $\mathbb{M}_+$ and $\mathbb{M}_-$ organise the Weyl bivectors, and do the five Newman–Penrose scalars appear as components of biquaternion objects? The two helicities of the graviton are the two circular polarizations of the radiation; whether the algebra distinguishes them, or sees only their sum, is open. The twistor formulation of the biquaternions is the natural place to look.
 
@@ -299,7 +299,7 @@ The boundary can be drawn as a list, in the manner of the parent article.
 
 Gravitational radiation in the linearized theory has been written in the biquaternion framework, and each step has been identified as either framework content or transcribed standard theory.
 
-The trace-reversed perturbation $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\xi_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
+The trace-reversed perturbation $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$ satisfies $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ in harmonic gauge, the framework's image of the condition being $\Box\bar{\delta\tilde{E}}_\mu = 0$. The harmonic gauge is preserved by the residual transformations with $\Box\xi_\nu = 0$ — a condition verified on a general gauge parameter, not only on a plane wave — so the gauge freedom is not exhausted by the gauge condition. The physical count is $10 \to 6 \to 2$: ten components of the symmetric perturbation, four harmonic conditions leaving six, and a four-dimensional residual gauge image inside those six whose complement is the two-dimensional transverse-traceless subspace. The split was verified by rank computation, and the final two were confirmed independently by the transverse-traceless tensor count and by the helicity count. On an explicit plane-wave ansatz, both the plus and the cross amplitudes were verified to be transverse and traceless, to have vanishing Ricci tensor, and to have nonvanishing Riemann tensor, so both carry physical curvature and neither is pure gauge. The quadrupole formula $P = \tfrac{G}{5c^5}\langle\,d^3Q_{ij}/dt^3 d^3Q_{ij}/dt^3\rangle$ was verified by matching it, on the equal-mass circular binary, to $\tfrac{32}{5}\tfrac{G^4}{c^5}\tfrac{(m_1m_2)^2(m_1+m_2)}{d^5}$, and the absence of monopole and dipole radiation was traced to the conservation of mass–energy and momentum.
 
 The framework's reach was drawn. It supplies the wave operator and its null cone; the carrier of the wave as an $\mathbb{M}_-$-valued one-form; the gauge transformation whose residual part is the kernel of $\Box$ on $\mathbb{M}_-$; the count $16 = 10 + 6$ and the removal of the four gauge directions from the ten; and the bivector packaging of the curvature, whose values lie in the complex pure-vector subspace and so in neither sector. It does not supply the dynamics that selects two of the six harmonic-gauge components: the framework has no natural handle on the polarization count, and the number two is inherited. The physical polarization amplitudes are exactly the components the algebra's natural single-biquaternion packaging annihilates, as is the traceless quadrupole moment, and the energy–momentum source is the rank-two object no single biquaternion carries. The quadrupole formula, and the coupling constant within it, are therefore transcribed rather than derived. The distinction between the electromagnetic field strength, which is a bivector outside $\mathbb{M}_-$ despite the material potential it comes from, and the graviton, which is a symmetric rank-two object belonging to no sector at all, has been kept explicit; the two are not to be identified by the accident that both field strengths leave the material sector.
 
@@ -308,13 +308,13 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\varepsilon_\mu = (ie_0, e_1, e_2, e_3)$ | Material basis of $\mathbb{M}_-$ |
+| $\varepsilon_\mu = (ie_t, \vec e_x, \vec e_y, \vec e_z)$ | Material basis of $\mathbb{M}_-$ |
 | $\eta_{\mu\nu} = \langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = \mathrm{diag}(-1,1,1,1)$ | Flat metric of the material sector |
 | $\langle\tilde{Q},\tilde{P}\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$ | General quaternionic bilinear form on $\mathbb{M}_-$, the interval |
-| $x^\mu = (ct,x,y,z)$, $\partial_\mu = \partial/\partial x^\mu$ | Real coordinates and their derivatives; $\partial_{ict} = -i\partial_0$ |
+| $x^\mu = (ct,x,y,z)$, $\partial_\mu = \partial/\partial x^\mu$ | Real coordinates and their derivatives; $\partial/\partial Q_t = -i\partial/\partial(ct)$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \eta^{\mu\nu}\partial_\mu\partial_\nu$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $h_{\mu\nu}$, $h = \eta^{\mu\nu}h_{\mu\nu}$ | Metric perturbation and its trace |
 | $\bar{h}_{\mu\nu} = h_{\mu\nu} - \tfrac12\eta_{\mu\nu}h$, $\bar{h} = -h$ | Trace-reversed perturbation |
@@ -323,12 +323,12 @@ The framework's reach was drawn. It supplies the wave operator and its null cone
 | $\tilde{\Delta} \in \mathbb{M}_-$ | Gauge four-vector, $\delta\tilde{E}_\mu \mapsto \delta\tilde{E}_\mu - \partial_\mu\tilde{\Delta}$ |
 | $\partial^\lambda\bar{h}_{\lambda\nu} = 0$, $\Box\xi_\nu = 0$ | Harmonic (Lorenz, de Donder) gauge and its residual gauge freedom |
 | $\Box\bar{h}_{\mu\nu} = -\tfrac{16\pi G}{c^4}T_{\mu\nu}$ | Linearized Einstein equation |
-| $A_{\mu\nu}$; $A_{11} = -A_{22}$, $A_{12} = A_{21}$ | Plane-wave amplitude; the plus and cross polarizations |
+| $A_{\mu\nu}$; $A_{xx} = -A_{yy}$, $A_{xy} = A_{yx}$ | Plane-wave amplitude; the plus and cross polarizations |
 | $k^\mu = (\omega/c)(1,0,0,1)$, $k^\mu k_\mu = 0$ | Wave vector along $+z$ and its null condition |
 | $R_{\mu\nu\rho\sigma}$, $R_{\mu\nu}$, $G_{\mu\nu}$ | Linearized Riemann, Ricci, and Einstein tensors |
 | $\tilde{R}_{\mu\nu} = \tfrac12\sum_{\rho\sigma}R_{\mu\nu\rho\sigma}\bar{\varepsilon}^\rho\varepsilon^\sigma$ | Curvature as a bivector-valued two-form |
 | $\Theta_{ij} = \int\rho(x_ix_j - \tfrac13r^2\delta_{ij})d^3x$ | Traceless (reduced) quadrupole moment |
-| $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}\ddot{Q}_{ij}^{\mathrm{TT}}$, $P = \tfrac{G}{5c^5}\langle\dddot{Q}_{ij}\dddot{Q}_{ij}\rangle$ | Quadrupole amplitude and power |
+| $h_{ij}^{\mathrm{TT}} = \tfrac{2G}{c^4r}d^2Q_{ij}^{\mathrm{TT}}/dt^2$, $P = \tfrac{G}{5c^5}\langle\,d^3Q_{ij}/dt^3 d^3Q_{ij}/dt^3\rangle$ | Quadrupole amplitude and power |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula of the informational sector |
 
 ## Further Reading

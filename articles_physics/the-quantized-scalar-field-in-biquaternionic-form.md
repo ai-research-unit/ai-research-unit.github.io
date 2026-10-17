@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field* promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_0$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the **field operator** $\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.
+The companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field* promotes the classical central-valued field $\tilde{\Phi}=\phi\,e_t$ to an operator, imposes the equal-time commutators, expands it in the parent's plane waves, and obtains the mode algebra, the Fock space and the Hamiltonian. It leaves one object unexamined for its own sake: the **field operator** $\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})$ itself. This article is about that object — what kind of thing it is, how it splits, what its algebra is, how it transforms, and what its correlation functions are.
 
 The distinction from the companion quantization is the same as the distinction between the Dirac equation article and the *solutions* article of the spin-$\tfrac12$ sector. There the field equation was one subject and the space of its solutions, with the plane waves, normalizations and spin sums, was another. Here the mode algebra was one subject, and the field operator built from it is another. The article's question is exact:
 
@@ -10,7 +10,7 @@ The distinction from the companion quantization is the same as the distinction b
 
 Three answers organise the article, and they are not the same answer.
 
-1. **Its value space.** The field is central-valued: at each event it is an operator times $e_0$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.
+1. **Its value space.** The field is central-valued: at each event it is an operator times $e_t$, so its value-space indices are trivial, its Lorentz transformation has no spin part, and it commutes with every element of the algebra. This is the operator form of the statement that spin $0$ lives in the centre.
 2. **Its algebra.** The field is an operator-valued distribution, unbounded, and its commutator with its adjoint is a **multiple of the identity**, the commutator function. The field therefore generates a CCR algebra whose brackets are central; the non-commutativity of the field is a fixed c-number function, not an operator. This is what makes the scalar field bosonic, and it is the structure $\mathbb{B}$ cannot host, as the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves.
 3. **Its phases.** The only biquaternion structure the field carries is the transport of the central phase $\exp(\pm i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}))$ and the centrality of that phase. The mass shell is a level set of the biquaternion norm; the exponentials are central unitaries; the Lorentz rotors act trivially on them.
 
@@ -18,12 +18,12 @@ The article is organised as follows. The next section treats the field as an ope
 
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the Lagrangian, the equal-time commutators, the mode algebra, and the Hamiltonian.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two branches, and the mass-shell condition.
-- Companion article *Noether's Theorem in Biquaternionic Form*, for the $U(1)$ current $\tilde J\in\mathbb{M}_-$ and the energy–momentum tensor.
+- Companion article *Noether's Theorem in Biquaternionic Form*, for the $\mathrm{U}(1)$ current $\tilde J\in\mathbb{M}_-$ and the energy–momentum tensor.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material four-wavevector, the biquaternion norm, and the plane-wave phase.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the c-number commutator.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t,\vec x)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde{K}=i\omega\,e_0+\vec p$ in these units.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian) and ${}^\flat=-{}^{*}$. The gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. Natural units $\hbar=c=1$ are used where the algebra is at issue, with $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and $\mu=mc/\hbar$, and dimensionful factors are restored where they carry meaning. Physical components are written $x=(t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $p=(\omega,\vec p)$; the material four-wavevector is $\tilde{K}=i\omega\,e_t+\vec p$ in these units.
 
 ## The Field Operator and Its Value Space
 
@@ -40,16 +40,16 @@ and it is this smeared object, not the point value, that is a well-defined opera
 The value space of the field is the centre. In the mode expansion
 
 $$
-\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})=\phi^{\mathrm{fop}}(x)\,e_0,
+\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})=\phi^{\mathrm{fop}}(x)\,e_t,
 \qquad
 \phi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+b^{\mathrm{fop}}_{\vec p}^\dagger \exp(+ip\cdot x)\right),
+\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{b^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
-every coefficient multiplies the central unit $e_0$. Three consequences follow immediately and are worth stating separately.
+every coefficient multiplies the central unit $e_t$. Three consequences follow immediately and are worth stating separately.
 
 - **The field commutes with the algebra.** For every $\tilde A\in\mathbb{B}$ and every test function, $[\\tilde\\Phi^{\mathrm{fop}}(f),\tilde A]=0$ in the sense that the field carries no value-space index on which $\tilde A$ could act. The algebra's action on the state module and the field's action on the Fock space are independent; the field is a scalar with respect to $\mathbb{B}$.
-- **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{M}_+$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde\Phi\tilde U^{*}=\tilde\Phi$, because $\tilde\Phi$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_0$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
+- **There is no spin part to its Lorentz transformation.** A field in a nontrivial representation of the Lorentz group transforms by a rotor $\tilde U\in\mathbb{M}_+$ acting on its indices. A central element is fixed by rotor conjugation, $\tilde U\tilde\Phi\tilde U^{*}=\tilde\Phi$, because $\tilde\Phi$ commutes with $\tilde U$ and $\tilde U\tilde U^{*}=e_t$. The triviality of the spin-$0$ representation is thus an algebraic identity about the centre, not an assumption.
 - **The field is not an element of $\mathbb{B}$.** Its coefficients $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ are not in the algebra, as the trace argument below shows; the field is an operator on the Fock space built from a module, and the centre is only its value space.
 
 ## The Positive- and Negative-Frequency Parts
@@ -59,10 +59,10 @@ The decomposition of the field into its two exponential branches is the operator
 $$
 \phi^{\mathrm{fop}(+)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,a^{\mathrm{fop}}_{\vec p}\,\exp(-ip\cdot x),
 \qquad
-\phi^{\mathrm{fop}(-)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,b^{\mathrm{fop}}_{\vec p}^\dagger\,\exp(+ip\cdot x),
+\phi^{\mathrm{fop}(-)}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\,{b^{\mathrm{fop}}_{\vec p}}^\dagger\,\exp(+ip\cdot x),
 $$
 
-so that $\phi^{\mathrm{fop}}=\phi^{\mathrm{fop}(+)}+\phi^{\mathrm{fop}(-)}$ and $\phi^{\mathrm{fop}\dagger}=\phi^{\mathrm{fop}{}(+){}^{*}}+\phi^{\mathrm{fop}{}(-){}^{*}}$, with $\phi^{\mathrm{fop}{}(+){}^{*}}$ containing $a^{\mathrm{fop}}_{\vec p}^\dagger$ and $\phi^{\mathrm{fop}{}(-){}^{*}}$ containing $b^{\mathrm{fop}}_{\vec p}$. Two facts fix the interpretation.
+so that $\phi^{\mathrm{fop}}=\phi^{\mathrm{fop}(+)}+\phi^{\mathrm{fop}(-)}$ and $\phi^{\mathrm{fop}\dagger}=\phi^{\mathrm{fop}{}(+){}^{*}}+\phi^{\mathrm{fop}{}(-){}^{*}}$, with $\phi^{\mathrm{fop}{}(+){}^{*}}$ containing ${a^{\mathrm{fop}}_{\vec p}}^\dagger$ and $\phi^{\mathrm{fop}{}(-){}^{*}}$ containing $b^{\mathrm{fop}}_{\vec p}$. Two facts fix the interpretation.
 
 **The positive-frequency part annihilates the vacuum.** Because $a^{\mathrm{fop}}_{\vec p}|0\rangle=0$ for every $\vec p$,
 
@@ -81,7 +81,7 @@ so $\phi^{\mathrm{fop}(+)}$ is the **annihilation part** and $\phi^{\mathrm{fop}
 
 The framework admits both cases, and their difference is the standard one, sharpened by the algebra's conjugation structure.
 
-**The complex (charged) field.** Here $\phi^{\mathrm{fop}\dagger}\ne\phi^{\mathrm{fop}}$, and the expansion contains two independent operator sets, $a^{\mathrm{fop}}_{\vec p}$ and $b^{\mathrm{fop}}_{\vec p}$. The field carries a conserved $U(1)$ charge, with $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ and $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}\dagger}]=+\phi^{\mathrm{fop}\dagger}$, so the field operator has a definite charge and its conjugate has the opposite one. The charge is the Noether charge of the current $\tilde J\in\mathbb{M}_-$ of the companion article *Noether's Theorem in Biquaternionic Form*.
+**The complex (charged) field.** Here $\phi^{\mathrm{fop}\dagger}\ne\phi^{\mathrm{fop}}$, and the expansion contains two independent operator sets, $a^{\mathrm{fop}}_{\vec p}$ and $b^{\mathrm{fop}}_{\vec p}$. The field carries a conserved $\mathrm{U}(1)$ charge, with $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ and $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}\dagger}]=+\phi^{\mathrm{fop}\dagger}$, so the field operator has a definite charge and its conjugate has the opposite one. The charge is the Noether charge of the current $\tilde J\in\mathbb{M}_-$ of the companion article *Noether's Theorem in Biquaternionic Form*.
 
 **Charge conjugation.** The map that exchanges particles and antiparticles is
 
@@ -99,12 +99,12 @@ and it leaves the commutators and the Hamiltonian invariant. It is an antiunitar
 
 $$
 \phi^{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
-\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+a^{\mathrm{fop}}_{\vec p}^\dagger \exp(+ip\cdot x)\right),
+\left(a^{\mathrm{fop}}_{\vec p}\exp(-ip\cdot x)+{a^{\mathrm{fop}}_{\vec p}}^\dagger \exp(+ip\cdot x)\right),
 $$
 
-in which the field creates and destroys its own antiparticle. The charge vanishes identically, and the $U(1)$ symmetry of the complex case is not present. In the framework's terms the real field is a **Hermitian central-valued** operator field, while the complex field is a central-valued field whose conjugate is a distinct operator.
+in which the field creates and destroys its own antiparticle. The charge vanishes identically, and the $\mathrm{U}(1)$ symmetry of the complex case is not present. In the framework's terms the real field is a **Hermitian central-valued** operator field, while the complex field is a central-valued field whose conjugate is a distinct operator.
 
-**The real structure is not charge conjugation.** The algebra carries the anti-Hermitian conjugation $\tilde{\Phi}^\flat=-\tilde{\Phi}^{*}$, which on a central element is $\phi\,e_0\mapsto-\phi^*e_0$. This is the algebra's real structure; it is not the particle–antiparticle exchange, because it acts on the value space rather than on the mode operators and it carries a minus sign. The two operations coincide only after a further convention is fixed, and the framework does not fix one. The four levels at which the corpus uses the name charge conjugation are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. What the framework does supply is the **central phase** $\exp(i\alpha)$ under which $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$, generated by the charge; this $U(1)$ is the group that the companion articles *Goldstone's Theorem in Biquaternionic Form* and *The Higgs Mechanism in Biquaternionic Form* take as the framework's canonical continuous symmetry.
+**The real structure is not charge conjugation.** The algebra carries the anti-Hermitian conjugation $\tilde{\Phi}^\flat=-\tilde{\Phi}^{*}$, which on a central element is $\phi\,e_t\mapsto-\phi^*e_t$. This is the algebra's real structure; it is not the particle–antiparticle exchange, because it acts on the value space rather than on the mode operators and it carries a minus sign. The two operations coincide only after a further convention is fixed, and the framework does not fix one. The four levels at which the corpus uses the name charge conjugation are tabulated in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. What the framework does supply is the **central phase** $\exp(i\alpha)$ under which $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$, generated by the charge; this $\mathrm{U}(1)$ is the group that the companion articles *Goldstone's Theorem in Biquaternionic Form* and *The Higgs Mechanism in Biquaternionic Form* take as the framework's canonical continuous symmetry.
 
 ## The Field Algebra: Commutators as c-Numbers
 
@@ -162,7 +162,7 @@ $$
 
 with the $i\epsilon$ prescription that selects the positive-frequency part for the forward propagation. Its scalar two-point function is the Green's function of the parent equation; the companion article *The Feynman Propagator in Biquaternionic Form* constructs the analogous object for the spin-$\tfrac12$ field, and the scalar case is the standard one.
 
-The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde{K}=i\omega\,e_0+\vec p$, the biquaternion norm is $\langle\tilde{K}\rangle_{\natural}=(-\omega^2+\vec p^2)e_0$, so that $p^2=-\langle\tilde{K}\rangle_{\natural}$ and
+The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde{K}=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde{K}\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde{K}\rangle_{\natural}$ and
 
 $$
 p^2-\mu^2=-\left(\langle\tilde{K}\rangle_{\natural}+\mu^2\right),
@@ -181,7 +181,7 @@ U(\Lambda,a)\,\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})\,U(\Lambda,a)^{-1}
 =\\tilde\\Phi^{\mathrm{fop}}\big(\Lambda\tilde{Q}+a\big),
 $$
 
-the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_0\tilde U^{*}=e_0$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
+the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{M}_+$ acting on the material coordinate by conjugation, $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
 
 The internal symmetry acts by the central phase,
 
@@ -197,44 +197,44 @@ $$
 
 and it commutes with the Poincaré action. The generator $Ϙ^{\mathrm{fop}}$ is the Noether charge of the current $\tilde J\in\mathbb{M}_-$; the phase is central, so it multiplies the field by a central unitary and does not act on the state module's spinor structure. In this sense the framework's canonical internal symmetry is the group of central phases, and the scalar field is its simplest charged representation.
 
-Two statements must be kept apart, because the corpus uses both. The phase $\exp(-i\alpha)$ is the **active** $U(1)$ transformation of the field operator, generated by the charge. The Wick-rotated weight $\exp(-S_E/\hbar)$ is a **weight** in a functional integral on the centre, not a transformation of the field; the two are distinct and are not to be identified. The former is a symmetry, the latter is a convergence factor.
+Two statements must be kept apart, because the corpus uses both. The phase $\exp(-i\alpha)$ is the **active** $\mathrm{U}(1)$ transformation of the field operator, generated by the charge. The Wick-rotated weight $\exp(-S_E/\hbar)$ is a **weight** in a functional integral on the centre, not a transformation of the field; the two are distinct and are not to be identified. The former is a symmetry, the latter is a convergence factor.
 
 ## The Schrödinger Functional and the Field Basis
 
 The field operator's representation on states can be made explicit with the field-basis wave functionals, and the connection to the functional-integral formulation of the scalar sector becomes transparent. A state is a functional $\Psi[\phi]$ of configurations; the field acts by multiplication and the momentum by differentiation,
 
 $$
-\langle\phi|\phi^{\mathrm{fop}}(\vec x)|\Psi\rangle=\phi(\vec x)\,\Psi[\phi],
+\langle\phi|\phi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|\Psi\rangle=\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,\Psi[\phi],
 \qquad
-\langle\phi|\pi^{\mathrm{fop}}(\vec x)|\Psi\rangle=-i\hbar\,\frac{\delta\Psi}{\delta\phi(\vec x)},
+\langle\phi|\pi^{\mathrm{fop}}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|\Psi\rangle=-i\hbar\,\frac{\delta\Psi}{\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)},
 $$
 
-so the canonical commutator is the identity $\delta\phi(\vec x)/\delta\phi(\vec y)=\delta^{(3)}(\vec x-\vec y)$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
+so the canonical commutator is the identity $\delta\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/\delta\phi(\vec y)=\delta^{(3)}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)$ and the field-basis representation is the functional analogue of the coordinate representation of quantum physics. In this representation the Hamiltonian is a differential operator and the Schrödinger equation is a functional differential equation.
 
 For the free scalar the ground-state functional is an explicit Gaussian. With the Hamiltonian of the companion quantization and the real field for economy,
 
 $$
 \Psi_0[\phi]\;\propto\;\exp\!\left(-\frac{1}{2}\int\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,\big|\tilde{\phi}(\vec p)\big|^2\right)
-=\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\phi(\vec x)\,K(\vec x-\vec y)\,\phi(\vec y)\right),
+=\exp\!\left(-\frac{1}{2}\int d^3x\,d^3y\;\phi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\,K(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-\vec y)\,\phi(\vec y)\right),
 $$
 
-where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the biquaternion norm's square root. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\Psi[\phi_f,t_f]=\int\mathcal{D}\phi_i\,K(\phi_f,t_f;\phi_i,t_i)\Psi[\phi_i,t_i]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\Psi[\phi]=\Psi[\phi\,e_0]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
+where $K$ has Fourier symbol $E_{\vec p}=\sqrt{\vec p^2+\mu^2}$; the vacuum wave functional is the exponential of a positive quadratic form, and its width is the biquaternion norm's square root. The Gaussian integral of this functional over configurations is the vacuum-to-vacuum amplitude of the scalar functional integral, and the transition functional $\Psi[\phi_f,t_f]=\int\mathcal{D}\phi_i\,K(\phi_f,t_f;\phi_i,t_i)\Psi[\phi_i,t_i]$ is its kernel. The framework's interpretation is that the wave functional is a functional of **central-valued** configurations, $\Psi[\phi]=\Psi[\phi\,e_t]$, and that it is a complex number for each configuration rather than an element of $\mathbb{B}$; the informational sector's density operators are recovered only in finite-dimensional truncations, as the Fock-space companion records.
 
 ## What Is Standard and What Is Open
 
-**Standard, and transcribed.** The operator-valued-distribution status of the field and its smearing; the positive/negative frequency split and the vacuum annihilation property; the real and complex cases and charge conjugation; the c-number commutator, microcausality and the support of the commutator function; the Wightman function, the Feynman propagator and the $i\epsilon$ prescription; the Poincaré transformation law of a scalar field and the $U(1)$ phase. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions.
+**Standard, and transcribed.** The operator-valued-distribution status of the field and its smearing; the positive/negative frequency split and the vacuum annihilation property; the real and complex cases and charge conjugation; the c-number commutator, microcausality and the support of the commutator function; the Wightman function, the Feynman propagator and the $i\epsilon$ prescription; the Poincaré transformation law of a scalar field and the $\mathrm{U}(1)$ phase. None of this is new, and none of it depends on the biquaternion structure beyond the kinematical conventions.
 
 **Open in the biquaternion framework.**
 
 - **The intrinsic operator field.** The field is central-valued because the classical field is. Whether a genuinely algebra-valued operator field, transforming in a representation of $\mathbb{B}$ rather than trivially, is available for spin $0$, is not decided; the centre is the only value space that carries no spinor index.
 - **The real structure and charge conjugation.** The algebra's $\flat=-{}^{*}$ and the particle–antiparticle exchange are distinct operations, and whether the framework prefers one over the other as the real structure of the scalar sector is a convention it does not fix.
 - **The propagator's intrinsic derivation.** The scalar propagator is the inverse of the biquaternion norm shifted by the mass, but whether the framework derives the $i\epsilon$ prescription from its own complex structure — rather than importing it from the time-ordering of the operator formalism — is open, as the companion article *The Feynman Propagator in Biquaternionic Form* records for the spin-$\tfrac12$ case.
-- **The bosonic gap.** The field's CCR algebra is not an object of $\mathbb{B}$: no pair in the algebra realizes $[\tilde a,\tilde a^\dagger]=e_0$. Whether an infinite-dimensional module canonically attached to $\mathbb{B}$ can carry the scalar ladder is the structural question, and it is not answered here.
+- **The bosonic gap.** The field's CCR algebra is not an object of $\mathbb{B}$: no pair in the algebra realizes $[\tilde a,\tilde a^\dagger]=e_t$. Whether an infinite-dimensional module canonically attached to $\mathbb{B}$ can carry the scalar ladder is the structural question, and it is not answered here.
 - **Empirical content.** Whether the operator field as constructed yields a prediction distinguishing the framework from standard scalar field theory is open.
 
 ## Summary
 
-The quantized scalar field of the framework is an operator-valued distribution whose value space is the centre $\mathbb{C}_{\mathbb{B}}$: at each event it is an operator times $e_0$, it commutes with every element of $\mathbb{B}$, and the Lorentz rotors act on it trivially, which is the algebraic content of spin $0$. It splits into an annihilation part $\phi^{\mathrm{fop}(+)}$, which annihilates the vacuum and is the positive-frequency transport of the central phase, and a creation part $\phi^{\mathrm{fop}(-)}$, its adjoint; the split is Lorentz invariant because the sign of the energy is. The complex field carries a $U(1)$ charge, with $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$, and charge conjugation is the exchange $a^{\mathrm{fop}}\leftrightarrow b^{\mathrm{fop}}$; the real field is the Hermitian case $b^{\mathrm{fop}}=a^{\mathrm{fop}}$ with vanishing charge. The algebra's real structure $\flat=-{}^{*}$ is not charge conjugation.
+The quantized scalar field of the framework is an operator-valued distribution whose value space is the centre $\mathbb{C}_{\mathbb{B}}$: at each event it is an operator times $e_t$, it commutes with every element of $\mathbb{B}$, and the Lorentz rotors act on it trivially, which is the algebraic content of spin $0$. It splits into an annihilation part $\phi^{\mathrm{fop}(+)}$, which annihilates the vacuum and is the positive-frequency transport of the central phase, and a creation part $\phi^{\mathrm{fop}(-)}$, its adjoint; the split is Lorentz invariant because the sign of the energy is. The complex field carries a $\mathrm{U}(1)$ charge, with $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$, and charge conjugation is the exchange $a^{\mathrm{fop}}\leftrightarrow b^{\mathrm{fop}}$; the real field is the Hermitian case $b^{\mathrm{fop}}=a^{\mathrm{fop}}$ with vanishing charge. The algebra's real structure $\flat=-{}^{*}$ is not charge conjugation.
 
 The defining property of the field is that its commutator is a c-number,
 
@@ -244,7 +244,7 @@ $$
 \big[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}}(y)\big]=0,
 $$
 
-so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde{K})=-i/(\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $U(1)$, and the phase is central because the field's value space is.
+so the field generates a CCR algebra with central brackets; at equal times the commutator vanishes, and for spacelike separation it vanishes as well, which is microcausality. The two-point function is the positive-frequency Wightman function, annihilated by the Klein–Gordon operator, and the Feynman propagator is its time-ordered continuation with $\Delta_F(\tilde{K})=-i/(\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon)$; its pole is the mass-shell level set of the biquaternion norm. The field transforms as a scalar under the Poincaré group and by the central phase under the $\mathrm{U}(1)$, and the phase is central because the field's value space is.
 
 The biquaternion content of the field operator is therefore confined to its value space and its phases: central-valuedness, the trivial rotor action, and the biquaternion-norm interpretation of the mass shell and the propagator pole. The ladder, the Fock space and the correlation functions are the standard bosonic construction on an imported module, and the algebra supplies no part of them; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* proves the exclusion by the trace of a commutator. The field is a scalar with respect to $\mathbb{B}$ and a standard bosonic operator field on the outside.
 
@@ -253,25 +253,25 @@ The biquaternion content of the field operator is therefore confined to its valu
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Centre; the field's value space |
-| $\tilde{Q}=ict\,e_0+\vec x$ | Material coordinate |
-| $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$, $\Box=\partial_{ict}^2+\Delta$ | Gradient and d'Alembertian |
-| $\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})=\phi^{\mathrm{fop}}(x)e_0$ | Quantized scalar field (central-valued) |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the field's value space |
+| $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\sum_k \vec e_k\,\partial/\partial Q_k$, $\Box=\partial^2/\partial Q_t^2+\Delta$ | Gradient and d'Alembertian |
+| $\\tilde\\Phi^{\mathrm{fop}}(\tilde{Q})=\phi^{\mathrm{fop}}(x)e_t$ | Quantized scalar field (central-valued) |
 | $\phi^{\mathrm{fop}(+)},\phi^{\mathrm{fop}(-)}$ | Annihilation (positive-frequency) and creation parts |
 | $a^{\mathrm{fop}}_{\vec p},b^{\mathrm{fop}}_{\vec p}$ | Particle and antiparticle annihilation operators |
-| $Ϙ^{\mathrm{fop}}$ | Conserved $U(1)$ charge; $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ |
+| $Ϙ^{\mathrm{fop}}$ | Conserved $\mathrm{U}(1)$ charge; $[Ϙ^{\mathrm{fop}},\phi^{\mathrm{fop}}]=-\phi^{\mathrm{fop}}$ |
 | $\mathcal{C}:\phi^{\mathrm{fop}}\mapsto\phi^{\mathrm{fop}\dagger}$ | Charge conjugation, $a^{\mathrm{fop}}\leftrightarrow b^{\mathrm{fop}}$, $Ϙ^{\mathrm{fop}}\mapsto-Ϙ^{\mathrm{fop}}$ |
 | $i\Delta(x-y)=[\phi^{\mathrm{fop}}(x),\phi^{\mathrm{fop}\dagger}(y)]$ | Commutator function (c-number) |
 | $W(x-y)=\langle0|\phi^{\mathrm{fop}}(x)\phi^{\mathrm{fop}\dagger}(y)|0\rangle$ | Wightman function (positive frequency) |
 | $\Delta_F=\theta(x^0-y^0)W(x-y)+\theta(y^0-x^0)W(y-x)$ | Feynman propagator (time-ordered Wightman function) |
 | $\Delta_F(\tilde{K})=-i/(\langle\tilde{K}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation; pole at $\langle\tilde{K}\rangle_{\natural}=-\mu^2$ |
-| $\tilde{K}=i\omega\,e_0+\vec p$, $\langle\tilde{K}\rangle_{\natural}=\tilde{K}\tilde{K}^{\natural}$ | Material four-wavevector and biquaternion norm |
-| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $U(1)$ phase |
-| $\tilde U\in\mathbb{M}_+$, $\tilde U e_0\tilde U^{*}=e_0$ | Lorentz rotor; trivial action on the centre |
-| $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}[\tilde A,\tilde B]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $\tilde{K}=i\omega\,e_t+\vec p$, $\langle\tilde{K}\rangle_{\natural}=\tilde{K}\tilde{K}^{\natural}$ | Material four-wavevector and biquaternion norm |
+| $U^{\mathrm{fop}}_\alpha=\exp(i\alpha Ϙ^{\mathrm{fop}})$, $\phi^{\mathrm{fop}}\to \exp(-i\alpha)\phi^{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
+| $\tilde U\in\mathbb{M}_+$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
+| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde A,\tilde B]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

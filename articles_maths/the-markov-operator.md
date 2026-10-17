@@ -7,7 +7,7 @@ A Markov chain carries two operators, one acting on the functions of its state a
 
 The probabilistic content is fixed elsewhere and is cited rather than re-derived. The Markov chain, the transition kernel and the Chapman–Kolmogorov equations, the classification of the states, the recurrence and the transience, the existence and the uniqueness of the stationary distribution, the ergodic theorem for the chain and the convergence to stationarity are *Markov Chains and Processes*, written; the operator identities proved here are the operator form of those statements. The link to the martingale theory is $Ph=h$: a bounded harmonic function of the chain is a martingale along the chain, and the fixed space of the operator is the space of the harmonic functions, so the martingale convergence theorem of *Martingales* controls them. The condition that the operator be self-adjoint on $L^2(\pi)$, which is the reversibility of the chain, is *Reversible Markov Chains and Time Reversal* and the computation of the adjoint itself is *The Adjoint of the Markov Operator*, both later in this category; the continuous-time semigroup and its generator are *The Transition Operator*, next in this category; the general Cesàro averaging of a unitary operator is *The Ergodic Operator*, later in this category; and the shift whose orbit is the chain is *The Shift Operator of a Process*, later in this category. The general operator theory of the Hilbert space is *Banach and Hilbert Spaces*, and the measure theory is *Measure Theory and Integration*. No physics is invoked.
 
-Throughout, $E$ is a state space, countable with the discrete $\sigma$-algebra or a Polish space with its Borel $\sigma$-algebra, and $p(x,dy)$ is a Markov kernel on $E$; the chain is $\{X_n\}_{n\ge0}$ on a probability space $(\Omega,\mathcal F,\mathbb P)$ with $\mathbb P_x$ and $\mathbb E_x$ marking the law started at $x$. The pairing of a bounded measurable function and a finite measure is $\langle f,\mu\rangle=\int_E f\,d\mu$, the sup norm is $\|f\|_\infty=\operatorname{ess\,sup}_E|f|$, the norm of a finite signed measure is the total variation $\|\mu\|_{\mathrm{TV}}=\sup\{|\langle f,\mu\rangle|:\|f\|_\infty\le1\}$, and the norm of $L^{n}(\pi)$ is $\|f\|_{L^{n}}(\pi)}=(\int_E|f|^p\,d\pi)^{1/p}$ for $1\le p<\infty$.
+Throughout, $E$ is a state space, countable with the discrete $\sigma$-algebra or a Polish space with its Borel $\sigma$-algebra, and $p(x,dy)$ is a Markov kernel on $E$; the chain is $\{X_n\}_{n\ge0}$ on a probability space $(\Omega,\mathcal F,\mathbb P)$ with $\mathbb P_x$ and $\mathbb E_x$ marking the law started at $x$. The pairing of a bounded measurable function and a finite measure is $\langle f,\mu\rangle=\int_E f\,d\mu$, the sup norm is $\|f\|_\infty=\operatorname{ess\,sup}_E|f|$, the norm of a finite signed measure is the total variation $\|\mu\|_{\mathrm{TV}}=\sup\{|\langle f,\mu\rangle|:\|f\|_\infty\le1\}$, and the norm of $L^{n}(\pi)$ is $\|f\|_{L^{n}(\pi)}=(\int_E|f|^p\,d\pi)^{1/p}$ for $1\le p<\infty$.
 
 ## The Operator and Its Two Actions
 
@@ -46,7 +46,7 @@ The powers $\{P^n\}$ are the discrete semigroup of the chain, and the identity i
 
 **Theorem (contractivity on $L^{n}$).** Let $\pi$ be an invariant probability measure. Then $P$ acts on $L^{n}(\pi)$ for every $1\le p\le\infty$ and
 $$
-\|Pf\|_{L^{n}}(\pi)}\le\|f\|_{L^{n}}(\pi)},\qquad P\mathbf 1=\mathbf 1 ,
+\|Pf\|_{L^{n}(\pi)}\le\|f\|_{L^{n}(\pi)},\qquad P\mathbf 1=\mathbf 1 ,
 $$
 so $P$ is a contraction of every $L^{n}(\pi)$ that fixes the constants.
 
@@ -162,7 +162,7 @@ The Markov operator of a kernel $p$ acts on bounded functions by $Pf(x)=\int f\,
 | $Pf(x)=\int f\,dp(x,\cdot)$ | Markov operator on functions |
 | $\mu P(B)=\int\mu(dx)p(x,B)$ | the action on measures |
 | $\langle f,\mu\rangle=\int f\,d\mu$ | pairing of a function and a measure |
-| $\|f\|_\infty$, $\|\mu\|_{\mathrm{TV}}$, $\|f\|_{L^{n}}(\pi)}$ | sup norm, total variation, $L^{n}(\pi)$ norm |
+| $\|f\|_\infty$, $\|\mu\|_{\mathrm{TV}}$, $\|f\|_{L^{n}(\pi)}$ | sup norm, total variation, $L^{n}(\pi)$ norm |
 | $P^{m+n}=P^mP^n$ | Chapman–Kolmogorov for the operator |
 | $\pi P=\pi$ | invariant measure |
 | $Ph=h$, $h(X_n)$ | harmonic function and its martingale |

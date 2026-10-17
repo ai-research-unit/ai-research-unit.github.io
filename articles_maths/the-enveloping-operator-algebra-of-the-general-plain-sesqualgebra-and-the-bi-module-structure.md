@@ -8,13 +8,13 @@ The **general plain sesqualgebra** is one of those other structures, and the nai
 
 The first is that the block's **one-sided families generate the operator algebra in pairs**. A single left multiplication $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}$ is conjugate-linear and lies outside the $\mathbb{C}$-linear operators, but the composite of two is the ordinary two-sided multiplication, $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$; the $\mathbb{C}$-linear operators produced by the block's own one-sided multiplications therefore fill the enveloping algebra of the underlying algebra, and it is $\mathbb{B}^{\mathrm e}$ again. The block does not add an algebra to the envelope; it adds a **reading** of it, and the reading is what the two other results make precise.
 
-The second is the **sandwich monoid**. The conjugate-indexed parametrisation $(\tilde P,\tilde Q)\mapsto W_{\tilde P,\tilde Q}$, $W_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the **decomposable** operators, a proper submonoid of the endomorphism monoid whose **span** is the whole endomorphism algebra; the multiplication of the block is the value of the sandwich at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_0)$.
+The second is the **sandwich monoid**. The conjugate-indexed parametrisation $(\tilde P,\tilde Q)\mapsto W_{\tilde P,\tilde Q}$, $W_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the **decomposable** operators, a proper submonoid of the endomorphism monoid whose **span** is the whole endomorphism algebra; the multiplication of the block is the value of the sandwich at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_t)$.
 
 The third is the **bi-module** read through the involution. The block's regular bimodule is the algebra's, with the plain actions, which commute; the block's own one-sided multiplications are those actions **twisted by the involution** in the appropriate slot, and they no longer commute, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ against $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$. So the block is a bi-module over its enveloping algebra, and the two-sidedness of the algebra's own is spent on the twist.
 
 **Boundaries.** The block's one-sided multiplications, their parities and their composition laws are *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*; the sandwich is *The Sesquilinear Sandwich on the Biquaternioid*; the one-sided and two-sided operators of the block are *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*; the general operator theory of a sesqualgebra is *The Left and Right Multiplication Operators of a Sesqualgebra* and *The Sesquilinear Sandwich Operator*; the algebra's envelope, its Peirce decomposition, its bi-module and its left-versus-right question are *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*; the multiplication and the associator of the block are *Introduction to the General Plain Sesqualgebra* and *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*; the projections are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; and the Peirce lines of the block are *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0$ the unit, and $i$ is the central scalar imaginary. ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation; the block's product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the involution as an operator is $\eta(\tilde X)=\tilde X^{*}$. The four operator families are
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit, and $i$ is the central scalar imaginary. ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation; the block's product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the involution as an operator is $\eta(\tilde X)=\tilde X^{*}$. The four operator families are
 
 $$
 L_{\tilde A}(\tilde X)=\tilde A\star\tilde X=\tilde A\tilde X^{*},\qquad
@@ -28,7 +28,7 @@ T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q,\qquad
 S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*},
 $$
 
-the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*. A projection is a Hermitian idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_0-\tilde\Pi$ is its complement, and $\tilde e_1=\tilde\Pi$, $\tilde e_2=\tilde\Pi^{\perp}$.
+the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$ of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*. A projection is a Hermitian idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; $\tilde\Pi^{\perp}=e_t-\tilde\Pi$ is its complement, and $\tilde\Pi_+=\tilde\Pi$, $\tilde\Pi_-=\tilde\Pi^{\perp}$.
 
 ## The Sandwich and the Two-Sided Multiplications
 
@@ -67,7 +67,7 @@ $$
 W_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}},\qquad W_{\tilde P,\tilde Q}(\tilde X)=\tilde P\,\tilde X\,\tilde Q^{*} .
 $$
 
-The family is the ordinary two-sided multiplications read with the conjugate in the second parameter, and it is the family the block's product produces: $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_0)$.
+The family is the ordinary two-sided multiplications read with the conjugate in the second parameter, and it is the family the block's product produces: $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_t)$.
 
 **Proposition (linearity).** $W_{\tilde P,\tilde Q}$ is $\mathbb{C}$-linear in $\tilde X$, $\mathbb{C}$-linear in the first parameter and $\mathbb{C}$-**anti**-linear in the second; the family is therefore a family of $\mathbb{C}$-linear operators indexed by the pairs, and not a $\mathbb{C}$-bilinear function of the pair.
 
@@ -91,10 +91,10 @@ $$
 \varphi\colon \mathbb{B}\times\mathbb{B}\longrightarrow \operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \varphi(\tilde P,\tilde Q)=W_{\tilde P,\tilde Q},
 $$
 
-the monoid of the source being the direct product of the multiplicative monoid $(\mathbb{B},\cdot)$ with itself, with the elementwise product and the identity $(e_0,e_0)$. Its kernel is the diagonal
+the monoid of the source being the direct product of the multiplicative monoid $(\mathbb{B},\cdot)$ with itself, with the elementwise product and the identity $(e_t,e_t)$. Its kernel is the diagonal
 
 $$
-\ker\varphi=\{(\lambda e_0,\overline{\lambda}^{-1}e_0):\lambda\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
+\ker\varphi=\{(\lambda e_t,\overline{\lambda}^{-1}e_t):\lambda\in\mathbb{C}^{\times}\}\cong\mathbb{C}^{\times},
 $$
 
 and its image is the **proper** submonoid of the **decomposable** operators, so that
@@ -105,19 +105,19 @@ $$
 
 is the monoid of the elementary tensors $\tilde P\otimes\tilde Q^{\mathrm{opp}}$ of $\mathbb{B}^{\mathrm e}$. The whole endomorphism algebra is the **span** of the image and not the image. The group of units of the image is $(\mathbb{B}^{\times}\times\mathbb{B}^{\times})/\mathbb{C}^{\times}$, the two unit groups amalgamated along the diagonal centre.
 
-**Proof.** That $\varphi$ is a monoid homomorphism with the elementwise product is the forward law, and $\varphi(e_0,e_0)=W_{e_0,e_0}=\mathrm{id}$. For the kernel, $W_{\tilde P,\tilde Q}=\mathrm{id}$ means $\tilde P\tilde X\tilde Q^{*}=\tilde X$ for every $\tilde X$; at $\tilde X=e_0$ this is $\tilde P\tilde Q^{*}=e_0$, so that $\tilde P$ and $\tilde Q$ are units with $\tilde Q^{*}=\tilde P^{-1}$, and substituting this back gives $\tilde P\tilde X\tilde P^{-1}=\tilde X$ for every $\tilde X$, that is, $\tilde P$ is central; since the centre of $\mathbb{B}$ is $\mathbb{C}e_0$, this is $\tilde P=\lambda e_0$ with a nonzero complex $\lambda$, and then $\tilde Q=\overline{\lambda}^{-1}e_0$. So the kernel is the set of the pairs $(\lambda e_0,\overline{\lambda}^{-1}e_0)$, the diagonal displayed. The quotient by the kernel is the image, and under the isomorphism $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ of §*The Enveloping Algebra* the image is the set of the elementary tensors $\tilde P\otimes\tilde Q^{\mathrm{opp}}$. It is proper: at the standard pair in the matrix model the operator
+**Proof.** That $\varphi$ is a monoid homomorphism with the elementwise product is the forward law, and $\varphi(e_t,e_t)=W_{e_t,e_t}=\mathrm{id}$. For the kernel, $W_{\tilde P,\tilde Q}=\mathrm{id}$ means $\tilde P\tilde X\tilde Q^{*}=\tilde X$ for every $\tilde X$; at $\tilde X=e_t$ this is $\tilde P\tilde Q^{*}=e_t$, so that $\tilde P$ and $\tilde Q$ are units with $\tilde Q^{*}=\tilde P^{-1}$, and substituting this back gives $\tilde P\tilde X\tilde P^{-1}=\tilde X$ for every $\tilde X$, that is, $\tilde P$ is central; since the centre of $\mathbb{B}$ is $\mathbb{C}e_t$, this is $\tilde P=\lambda e_t$ with a nonzero complex $\lambda$, and then $\tilde Q=\overline{\lambda}^{-1}e_t$. So the kernel is the set of the pairs $(\lambda e_t,\overline{\lambda}^{-1}e_t)$, the diagonal displayed. The quotient by the kernel is the image, and under the isomorphism $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ of §*The Enveloping Algebra* the image is the set of the elementary tensors $\tilde P\otimes\tilde Q^{\mathrm{opp}}$. It is proper: at the standard pair in the matrix model the operator
 $$
-D\colon\tilde X\longmapsto\tilde e_1\tilde X\tilde e_1+\tilde e_2\tilde X\tilde e_2
+D\colon\tilde X\longmapsto\tilde\Pi_+\tilde X\tilde\Pi_++\tilde\Pi_-\tilde X\tilde\Pi_-
 $$
 is the sum of the two independent elementary tensors $E_{11}\otimes E_{11}^{\mathrm{opp}}+E_{22}\otimes E_{22}^{\mathrm{opp}}$, and it is not one of them. Indeed if $D(\tilde X)=\tilde P\tilde X\tilde Q$ for all $\tilde X$, then $D(E_{11})=E_{11}$ forces the first column of $P$ and the first row of $Q$ to be nonzero, $D(E_{12})=0$ then forces the second row of $Q$ to vanish, and $D(E_{22})=E_{22}$ forces that row to be nonzero: a contradiction. The span of the image is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, because the elementary tensors $e_\mu\otimes e_\nu^{\mathrm{opp}}$ over the basis are a basis of $\mathbb{B}^{\mathrm e}$, which is the dimension count of §*The Enveloping Algebra*. Finally $W_{\tilde P,\tilde Q}$ is invertible exactly when $\tilde P$ and $\tilde Q$ are, by the criterion of *The Sesquilinear Sandwich Operator*, §*The Invertible Sandwiches*, transported to $W_{\tilde P,\tilde Q}=S_{\tilde P,\tilde Q^{*}}$, so the units of the image are the classes of the pairs of units, the quotient displayed.
 
-**Remark (the same statement for the family $T$).** The two parametrisations are exchanged by the involution of the second factor, $W_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}}$, so the statement for $T$ is the same with the kernel $\{(\lambda e_0,\lambda^{-1}e_0)\}$, the two diagonals being exchanged by the involution of the second coordinate; the image is the same submonoid of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the quotient is the same monoid.
+**Remark (the same statement for the family $T$).** The two parametrisations are exchanged by the involution of the second factor, $W_{\tilde P,\tilde Q}=T_{\tilde P,\tilde Q^{*}}$, so the statement for $T$ is the same with the kernel $\{(\lambda e_t,\lambda^{-1}e_t)\}$, the two diagonals being exchanged by the involution of the second coordinate; the image is the same submonoid of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ and the quotient is the same monoid.
 
-**Remark (the value at the unit).** The multiplication is the diagonal of the sandwich evaluated at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_0)$, and the two terms of the associator are the two ways of composing the parameters before the evaluation,
+**Remark (the value at the unit).** The multiplication is the diagonal of the sandwich evaluated at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_t)$, and the two terms of the associator are the two ways of composing the parameters before the evaluation,
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R=W_{\tilde P\tilde Q^{*},\tilde R}(e_0),\qquad
-\tilde P\star(\tilde Q\star\tilde R)=W_{\tilde P,\tilde Q\tilde R^{*}}(e_0).
+(\tilde P\star\tilde Q)\star\tilde R=W_{\tilde P\tilde Q^{*},\tilde R}(e_t),\qquad
+\tilde P\star(\tilde Q\star\tilde R)=W_{\tilde P,\tilde Q\tilde R^{*}}(e_t).
 $$
 
 The associator is the difference of the two values, and it does not vanish in general because the two monoid elements $(\tilde P\tilde Q^{*},\tilde R)$ and $(\tilde P,\tilde Q\tilde R^{*})$ are not equal in the quotient $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$; the monoid law itself is not violated, and the non-associativity of the multiplication is the non-equality of those two monoid elements. The associator is computed in *The Ternary Product and the Associator of the Biquaternion Sesqualgebra*.
@@ -132,7 +132,7 @@ $$
 \mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}},
 $$
 
-with multiplication the tensor product of the plain multiplications, $(\tilde P\otimes\tilde Q^{\mathrm{opp}})(\tilde R\otimes\tilde S^{\mathrm{opp}})=\tilde P\tilde R\otimes(\tilde S\tilde Q)^{\mathrm{opp}}$, and unit $e_0\otimes e_0^{\mathrm{opp}}$. It has complex dimension $16$, and it acts on $\mathbb{B}$ by the **sandwich action**
+with multiplication the tensor product of the plain multiplications, $(\tilde P\otimes\tilde Q^{\mathrm{opp}})(\tilde R\otimes\tilde S^{\mathrm{opp}})=\tilde P\tilde R\otimes(\tilde S\tilde Q)^{\mathrm{opp}}$, and unit $e_t\otimes e_t^{\mathrm{opp}}$. It has complex dimension $16$, and it acts on $\mathbb{B}$ by the **sandwich action**
 
 $$
 (\tilde P\otimes\tilde Q^{\mathrm{opp}})\cdot\tilde X=\tilde P\tilde X\tilde Q=T_{\tilde P,\tilde Q}(\tilde X).
@@ -157,20 +157,20 @@ so that $\mathbb{B}^{\mathrm e}\cong M_4(\mathbb{C})$ and the left action of $\m
 **Corollary (the block's operator content).** The block's own operators are the elements of the envelope twisted by the involution:
 
 $$
-R_{\tilde A}=\varphi\bigl(e_0\otimes(\tilde A^{*})^{\mathrm{opp}}\bigr),\qquad
+R_{\tilde A}=\varphi\bigl(e_t\otimes(\tilde A^{*})^{\mathrm{opp}}\bigr),\qquad
 \Theta_{\tilde Q}=\varphi\bigl(\tilde Q\otimes(\tilde Q^{*})^{\mathrm{opp}}\bigr),\qquad
-L_{\tilde A}=\varphi\bigl(\tilde A\otimes e_0^{\mathrm{opp}}\bigr)\circ\eta ,
+L_{\tilde A}=\varphi\bigl(\tilde A\otimes e_t^{\mathrm{opp}}\bigr)\circ\eta ,
 $$
 
 where $\varphi(\tilde P\otimes\tilde Q^{\mathrm{opp}})$ is the sandwich action of $\tilde P\otimes\tilde Q^{\mathrm{opp}}$.
 
-**Proof.** $\varphi(e_0\otimes(\tilde A^{*})^{\mathrm{opp}})(\tilde X)=e_0\tilde X\tilde A^{*}=\tilde X\tilde A^{*}=R_{\tilde A}(\tilde X)$, so the right multiplications are the envelope's right-sided elements with the conjugated parameter. The two-sided operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\dagger}=\tilde Q\tilde X\tilde Q^{*}$ is $\varphi(\tilde Q\otimes(\tilde Q^{*})^{\mathrm{opp}})$, the elementary tensor whose two parameters are conjugate. Finally $\varphi(\tilde A\otimes e_0^{\mathrm{opp}})(\tilde X)=\tilde A\tilde X$, so $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}=(\varphi(\tilde A\otimes e_0^{\mathrm{opp}})\circ\eta)(\tilde X)$.
+**Proof.** $\varphi(e_t\otimes(\tilde A^{*})^{\mathrm{opp}})(\tilde X)=e_t\tilde X\tilde A^{*}=\tilde X\tilde A^{*}=R_{\tilde A}(\tilde X)$, so the right multiplications are the envelope's right-sided elements with the conjugated parameter. The two-sided operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\dagger}=\tilde Q\tilde X\tilde Q^{*}$ is $\varphi(\tilde Q\otimes(\tilde Q^{*})^{\mathrm{opp}})$, the elementary tensor whose two parameters are conjugate. Finally $\varphi(\tilde A\otimes e_t^{\mathrm{opp}})(\tilde X)=\tilde A\tilde X$, so $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}=(\varphi(\tilde A\otimes e_t^{\mathrm{opp}})\circ\eta)(\tilde X)$.
 
-**Remark (the pair generation).** The corollary explains the block's composition laws. The product of two right multiplications stays among the envelope's right-sided elements, $R_{\tilde A}R_{\tilde B}=\varphi(e_0\otimes(\tilde B^{*}\tilde A^{*})^{\mathrm{opp}})=R_{\tilde A\tilde B}$; the product of two left multiplications leaves the conjugate-linear operators and is the elementary tensor $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, that is $\varphi(\tilde A\otimes\tilde B^{\mathrm{opp}})$ read with the conjugated parameter; and a mixed product is a left multiplication or a sandwich according to the order. So the even products of the block's own one-sided multiplications span the envelope, and a single one-sided multiplication never lies in it: a single one is not $\mathbb{C}$-linear, and the pairs are. In the notation of §*The Conjugate-Indexed Family and the Sandwich Monoid*, $L_{\tilde A}L_{\tilde B}=W_{\tilde A,\tilde B}$, $R_{\tilde A}=W_{e_0,\tilde A}$ and $L_{\tilde A}=W_{\tilde A,e_0}\circ\eta$.
+**Remark (the pair generation).** The corollary explains the block's composition laws. The product of two right multiplications stays among the envelope's right-sided elements, $R_{\tilde A}R_{\tilde B}=\varphi(e_t\otimes(\tilde B^{*}\tilde A^{*})^{\mathrm{opp}})=R_{\tilde A\tilde B}$; the product of two left multiplications leaves the conjugate-linear operators and is the elementary tensor $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, that is $\varphi(\tilde A\otimes\tilde B^{\mathrm{opp}})$ read with the conjugated parameter; and a mixed product is a left multiplication or a sandwich according to the order. So the even products of the block's own one-sided multiplications span the envelope, and a single one-sided multiplication never lies in it: a single one is not $\mathbb{C}$-linear, and the pairs are. In the notation of §*The Conjugate-Indexed Family and the Sandwich Monoid*, $L_{\tilde A}L_{\tilde B}=W_{\tilde A,\tilde B}$, $R_{\tilde A}=W_{e_t,\tilde A}$ and $L_{\tilde A}=W_{\tilde A,e_t}\circ\eta$.
 
 ### The Base Field and the Real Dimension Count
 
-**Remark (over $\mathbb{R}$ the action is not faithful).** Regard $\mathbb{B}$ as a real algebra, $\dim_{\mathbb{R}}\mathbb{B}=8$, so that $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{opp}}$ has real dimension $64$, the same as $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$. The sandwich map is then **not** injective: the element $i e_0\otimes e_0^{\mathrm{opp}}-e_0\otimes(i e_0)^{\mathrm{opp}}$ acts as $\tilde X\mapsto i\tilde X-\tilde X i=0$, because $i$ is central, and the image is only the space of $\mathbb{C}$-linear operators, of real dimension $32$, so the kernel has real dimension $32$. The complex base field removes exactly this redundancy, which is why the theorem above is stated over $\mathbb{C}$; the computation is the one of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Base Field and the Real Dimension Count*, and the block inherits it unchanged.
+**Remark (over $\mathbb{R}$ the action is not faithful).** Regard $\mathbb{B}$ as a real algebra, $\dim_{\mathbb{R}}\mathbb{B}=8$, so that $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}^{\mathrm{opp}}$ has real dimension $64$, the same as $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$. The sandwich map is then **not** injective: the element $i e_t\otimes e_t^{\mathrm{opp}}-e_t\otimes(i e_t)^{\mathrm{opp}}$ acts as $\tilde X\mapsto i\tilde X-\tilde X i=0$, because $i$ is central, and the image is only the space of $\mathbb{C}$-linear operators, of real dimension $32$, so the kernel has real dimension $32$. The complex base field removes exactly this redundancy, which is why the theorem above is stated over $\mathbb{C}$; the computation is the one of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Base Field and the Real Dimension Count*, and the block inherits it unchanged.
 
 ### The Comparison with the Algebra
 
@@ -189,36 +189,36 @@ is an isomorphism of $\mathbb{C}$-algebras $\mathbb{B}\otimes_{\mathbb{C}}\overl
 The Peirce decomposition of the block of *Ideals and Peirce Decomposition of the General Plain Sesqualgebra* tensors to a decomposition of $\mathbb{B}^{\mathrm e}$, exactly as in the algebra's case. The four elements
 
 $$
-E_{ik}=\tilde e_i\otimes\tilde e_k^{\mathrm{opp}},\qquad i,k\in\{1,2\},
+E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}},\qquad i,k\in\{+,-\},
 $$
 
-are idempotent and pairwise orthogonal, $E_{ik}E_{jl}=\delta_{ij}\delta_{kl}E_{ik}$, and they sum to the unit $e_0\otimes e_0^{\mathrm{opp}}=\sum_{ik}E_{ik}$; they are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional line $\mathbb{C}(\tilde e_i\otimes\tilde e_k^{\mathrm{opp}})$.
+are idempotent and pairwise orthogonal, $E_{ik}E_{jl}=\delta_{ij}\delta_{kl}E_{ik}$, and they sum to the unit $e_t\otimes e_t^{\mathrm{opp}}=\sum_{ik}E_{ik}$; they are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional line $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$.
 
 **Proposition (the sixteen corners).** The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to the family $E_{ik}$ has sixteen one-dimensional corners
 
 $$
-E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde e_i\mathbb{B}\tilde e_j\bigr)\otimes\bigl(\tilde e_l\mathbb{B}\tilde e_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+E_{ik}\,\mathbb{B}^{\mathrm e}\,E_{jl}=\bigl(\tilde\Pi_i\mathbb{B}\tilde\Pi_j\bigr)\otimes\bigl(\tilde\Pi_l\mathbb{B}\tilde\Pi_k\bigr)^{\mathrm{opp}}=\mathbb{C}\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
 $$
 
-where $\Lambda_{ij}$ generates the block's corner $\tilde e_i\mathbb{B}\tilde e_j$ — that is $\tilde\Pi,\vec\Upsilon_1,\vec\Upsilon_2,\tilde\Pi^{\perp}$ for $(i,j)=(1,1),(1,2),(2,1),(2,2)$ — and the corners multiply by
+where $\Lambda_{ij}$ generates the block's corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is $\tilde\Pi,\vec\Upsilon_x,\vec\Upsilon_y,\tilde\Pi^{\perp}$ for $(i,j)=(+,+),(+,-),(-,+),(-,-)$ — and the corners multiply by
 
 $$
 \bigl(E_{ik}\mathbb{B}^{\mathrm e}E_{jl}\bigr)\bigl(E_{i'k'}\mathbb{B}^{\mathrm e}E_{j'l'}\bigr)\subseteq\delta_{ji'}\delta_{lk'}\,E_{ik}\mathbb{B}^{\mathrm e}E_{j'l'} .
 $$
 
-**Proof.** The corner is $(\tilde e_i\otimes\tilde e_k^{\mathrm{opp}})(\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}})(\tilde e_j\otimes\tilde e_l^{\mathrm{opp}})=(\tilde e_i\mathbb{B}\tilde e_j)\otimes(\tilde e_l\mathbb{B}\tilde e_k)^{\mathrm{opp}}$, the reversal of the second index pair being the reversal of the multiplication in the second factor; each factor is one-dimensional by *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Biquaternion Cases*, and the product rule is the algebra table applied in each factor, with the second factor read in the reversed order.
+**Proof.** The corner is $(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})(\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}})(\tilde\Pi_j\otimes\tilde\Pi_l^{\mathrm{opp}})=(\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}}$, the reversal of the second index pair being the reversal of the multiplication in the second factor; each factor is one-dimensional by *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Biquaternion Cases*, and the product rule is the algebra table applied in each factor, with the second factor read in the reversed order.
 
 **Remark (the second Peirce index is reversed).** The corner basis element is $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$, with the second index pair reversed, and the transposed shape is not an artefact of the writing: it is the reversal of §*The Composition of the Two-Sided Multiplications*, the same reversal as in the composition of the elementary tensors, and it is the reason the second factor is written with an $\mathrm{op}$. The block's own multiplication then reads the corners with the **transposed** index rule of *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Two Tables*; the envelope's reversal and the multiplication's transposition are the two faces of the same involution.
 
 **Remark (the action of the four idempotents).** Under the sandwich action the four idempotents cut the block itself:
 
 $$
-E_{ik}\cdot\tilde X=(\tilde e_i\otimes\tilde e_k^{\mathrm{opp}})\cdot\tilde X=\tilde e_i\tilde X\tilde e_k ,
+E_{ik}\cdot\tilde X=(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})\cdot\tilde X=\tilde\Pi_i\tilde X\tilde\Pi_k ,
 $$
 
-which is the Peirce projection onto the corner $\tilde e_i\mathbb{B}\tilde e_k$ of the block. Since the four idempotents are complete and orthogonal, the left $\mathbb{B}^{\mathrm e}$-module ${}_{\mathbb{B}^{\mathrm e}}\mathbb{B}$ splits as the direct sum of the four complex lines $\tilde e_i\mathbb{B}\tilde e_k$: the Peirce decomposition of the block is the decomposition of $\mathbb{B}$ as a module over its enveloping algebra, and the identity operator is $\sum_{ik}E_{ik}=e_0\otimes e_0^{\mathrm{opp}}$. This is the module form of *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
+which is the Peirce projection onto the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_k$ of the block. Since the four idempotents are complete and orthogonal, the left $\mathbb{B}^{\mathrm e}$-module ${}_{\mathbb{B}^{\mathrm e}}\mathbb{B}$ splits as the direct sum of the four complex lines $\tilde\Pi_i\mathbb{B}\tilde\Pi_k$: the Peirce decomposition of the block is the decomposition of $\mathbb{B}$ as a module over its enveloping algebra, and the identity operator is $\sum_{ik}E_{ik}=e_t\otimes e_t^{\mathrm{opp}}$. This is the module form of *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*.
 
-**Remark (where the family comes from).** The complementary pair $(\tilde\Pi,\tilde\Pi^{\perp})$ that indexes the four idempotents is a pair of **orthogonal** right $\star$-ideals of the block, and it is one pair out of the projective line of them: by *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Complementary Pairs and the Peirce Decompositions*, every unordered pair of distinct right ideals carries a complete family $\tilde e,e_0-\tilde e$ and a Peirce decomposition, and the orthogonal pairs are exactly the ones whose idempotents are Hermitian, that is, the pairs of projections used here. The four idempotents of the envelope, the corners of the block and the $2\times2$ matrix realizations of the same section are three readings of the one right-ideal lattice.
+**Remark (where the family comes from).** The complementary pair $(\tilde\Pi,\tilde\Pi^{\perp})$ that indexes the four idempotents is a pair of **orthogonal** right $\star$-ideals of the block, and it is one pair out of the projective line of them: by *Ideals and Peirce Decomposition of the General Plain Sesqualgebra*, §*The Complementary Pairs and the Peirce Decompositions*, every unordered pair of distinct right ideals carries a complete family $\tilde\Pi,e_t-\tilde\Pi$ and a Peirce decomposition, and the orthogonal pairs are exactly the ones whose idempotents are Hermitian, that is, the pairs of projections used here. The four idempotents of the envelope, the corners of the block and the $2\times2$ matrix realizations of the same section are three readings of the one right-ideal lattice.
 
 ## The Bi-module Structure
 
@@ -245,9 +245,9 @@ L_{\tilde P}(\tilde X)=\bigl((\tilde P\cdot{})\circ\eta\bigr)(\tilde X),\qquad
 R_{\tilde Q}(\tilde X)=\bigl(({}\cdot\tilde Q^{*})\bigr)(\tilde X),
 $$
 
-and the twisted actions **do not commute**: $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ while $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$, and the two differ in general, the witness being $\tilde A=e_1,\tilde B=e_2,\tilde X=e_0$, where $L_{e_1}R_{e_2}(e_0)=e_3$ and $R_{e_2}L_{e_1}(e_0)=-e_3$.
+and the twisted actions **do not commute**: $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ while $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$, and the two differ in general, the witness being $\tilde A=\vec e_x,\tilde B=\vec e_y,\tilde X=e_t$, where $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_z$ and $R_{\vec e_y}L_{\vec e_x}(e_t)=-\vec e_z$.
 
-**Proof.** The first display is the definition, $L_{\tilde P}(\tilde X)=\tilde P\tilde X^{*}$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q^{*}$. The composition laws are those of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*: $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A(\tilde X\tilde B^{*})^{*}=\tilde A\tilde B\tilde X^{*}=L_{\tilde A\tilde B}(\tilde X)$ and $R_{\tilde B}L_{\tilde A}(\tilde X)=(\tilde A\tilde X^{*})\tilde B^{*}=\tilde A\tilde X^{*}\tilde B^{*}=S_{\tilde A,\tilde B}(\tilde X)$; the value at $\tilde A=e_1,\tilde B=e_2,\tilde X=e_0$ is $e_1e_2=e_3$ against $e_1e_0^{*}e_2^{*}=e_1\cdot e_0\cdot(-e_2)=-e_3$, the witness recorded in that article.
+**Proof.** The first display is the definition, $L_{\tilde P}(\tilde X)=\tilde P\tilde X^{*}$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q^{*}$. The composition laws are those of *The Left and Right Multiplications of the Biquaternioid Sesqualgebra*, §*The Mixed Composites*: $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A(\tilde X\tilde B^{*})^{*}=\tilde A\tilde B\tilde X^{*}=L_{\tilde A\tilde B}(\tilde X)$ and $R_{\tilde B}L_{\tilde A}(\tilde X)=(\tilde A\tilde X^{*})\tilde B^{*}=\tilde A\tilde X^{*}\tilde B^{*}=S_{\tilde A,\tilde B}(\tilde X)$; the value at $\tilde A=\vec e_x,\tilde B=\vec e_y,\tilde X=e_t$ is $\vec e_x\vec e_y=\vec e_z$ against $\vec e_xe_t^{*}\vec e_y^{*}=\vec e_x\cdot e_t\cdot(-\vec e_y)=-\vec e_z$, the witness recorded in that article.
 
 **Remark (what the failure costs).** The plain actions commute and make $\mathbb{B}$ a bi-module; the twisted actions do not, so the multiplication alone does not give a bi-module structure on the block. The failure is the non-associativity of the multiplication, and it is measured by the difference between the left multiplication $L_{\tilde A\tilde B}$ and the sandwich $S_{\tilde A,\tilde B}$ of the mixed composites. The block therefore has a bi-module structure only through its enveloping algebra: $\mathbb{B}$ is the left regular module of $\mathbb{B}^{\mathrm e}$, the multiplication is the diagonal of the envelope read at the unit, and the two twisted actions are the plain ones read through the derived product $m\circ(\mathrm{id}\otimes\eta)$, so the loss of commutativity is the price of the derivation.
 
@@ -273,16 +273,16 @@ The claims of the article were recomputed on the model $\mathsf{M}_2$ at no more
 - **The monoid kernel.** The scaling $(\tilde P,\tilde Q)\mapsto(\lambda\tilde P,\overline{\lambda}^{-1}\tilde Q)$ leaves $W_{\tilde P,\tilde Q}$ unchanged on a hundred random pairs and scalars, with residual at most $5\cdot10^{-16}$, and the operator is the identity exactly on that set, as the theorem states.
 - **The span.** The complex span of the sixteen operators $T_{e_\mu,e_\nu}$ over the basis is all of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and the real span of the sandwich operators over the real basis is thirty-two.
 - **The properness of the image.** The operator $D(\tilde X)=E_{11}\tilde XE_{11}+E_{22}\tilde XE_{22}$ has coefficient matrix $\operatorname{diag}(1,0,0,1)$ of rank two in the tensor basis $E_{ij}\otimes E_{kl}^{\mathrm{opp}}$, so it is not an elementary tensor; and the equations of the proof were checked on the matrix units, where $PE_{11}Q=E_{11}$ forces the first column of $P$ and the first row of $Q$ nonzero, $PE_{12}Q=0$ then forces the second row of $Q$ to vanish, and $PE_{22}Q=E_{22}$ forces it not to.
-- **The envelope axioms.** The sandwich action is a left action (residual zero on a hundred triples), the unit acts as the identity, the map $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, and the identity operator is $T_{e_0,e_0}$.
-- **The block's operators in the envelope.** The identities $R_{\tilde A}=W_{e_0,\tilde A}$, $\Theta_{\tilde Q}=W_{\tilde Q,\tilde Q}$, $L_{\tilde A}=W_{\tilde A,e_0}\circ\eta$, $L_{\tilde A}L_{\tilde B}=W_{\tilde A,\tilde B}$ and the witness $L_{e_1}R_{e_2}(e_0)=e_3$, $R_{e_2}L_{e_1}(e_0)=-e_3$ were each verified with residual zero.
+- **The envelope axioms.** The sandwich action is a left action (residual zero on a hundred triples), the unit acts as the identity, the map $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is multiplicative, and the identity operator is $T_{e_t,e_t}$.
+- **The block's operators in the envelope.** The identities $R_{\tilde A}=W_{e_t,\tilde A}$, $\Theta_{\tilde Q}=W_{\tilde Q,\tilde Q}$, $L_{\tilde A}=W_{\tilde A,e_t}\circ\eta$, $L_{\tilde A}L_{\tilde B}=W_{\tilde A,\tilde B}$ and the witness $L_{\vec e_x}R_{\vec e_y}(e_t)=\vec e_z$, $R_{\vec e_y}L_{\vec e_x}(e_t)=-\vec e_z$ were each verified with residual zero.
 
 ## Summary
 
 The block's one-sided multiplications are of opposite $\mathbb{C}$-parity, and a single one lies outside the $\mathbb{C}$-linear operators, but the product of two lies inside: $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, and the products of the block's own one-sided multiplications fill the enveloping algebra of the underlying plain product.
 
-The parametrisation $(\tilde P,\tilde Q)\mapsto W_{\tilde P,\tilde Q}$, $W_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the decomposable operators, a proper submonoid of the endomorphism monoid whose span is the whole endomorphism algebra; the block's product is the value of the sandwich at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_0)$. The parametrisation is $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so its envelope is $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$, the second factor conjugated and isomorphic to $\mathbb{B}^{\mathrm{opp}}$.
+The parametrisation $(\tilde P,\tilde Q)\mapsto W_{\tilde P,\tilde Q}$, $W_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q^{*}$, is a homomorphism of monoids from the direct product $\mathbb{B}\times\mathbb{B}$ with kernel the diagonal $\mathbb{C}^{\times}$, and its image is the monoid $(\mathbb{B}\times\mathbb{B})/\mathbb{C}^{\times}$ of the decomposable operators, a proper submonoid of the endomorphism monoid whose span is the whole endomorphism algebra; the block's product is the value of the sandwich at the unit, $\tilde P\star\tilde Q=W_{\tilde P,\tilde Q}(e_t)$. The parametrisation is $\mathbb{C}$-linear in the first parameter and conjugate-linear in the second, so its envelope is $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$, the second factor conjugated and isomorphic to $\mathbb{B}^{\mathrm{opp}}$.
 
-The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ with the sandwich action, $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, and it is the algebra's; the block's right multiplications and two-sided operators are its elements with the conjugated parameter, its left multiplications its elements composed with the involution, and its product is the derived product $m\circ(\mathrm{id}\otimes\eta)$. The block is the left regular module of the envelope, and its Peirce decomposition is the module decomposition along the four idempotents $\tilde e_i\otimes\tilde e_k^{\mathrm{opp}}$, whose corner basis is $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ with the second index pair reversed. The plain actions make $\mathbb{B}$ a bi-module and commute; the block's twisted actions do not commute, and the failure is the non-associativity of the multiplication.
+The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ with the sandwich action, $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, and it is the algebra's; the block's right multiplications and two-sided operators are its elements with the conjugated parameter, its left multiplications its elements composed with the involution, and its product is the derived product $m\circ(\mathrm{id}\otimes\eta)$. The block is the left regular module of the envelope, and its Peirce decomposition is the module decomposition along the four idempotents $\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$, whose corner basis is $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ with the second index pair reversed. The plain actions make $\mathbb{B}$ a bi-module and commute; the block's twisted actions do not commute, and the failure is the non-associativity of the multiplication.
 
 ## Summary of Notation
 
@@ -297,8 +297,8 @@ The enveloping algebra is $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}
 | $\Theta_{\tilde Q}=W_{\tilde Q,\tilde Q}$ | the two-sided operator $\tilde Q\tilde X\tilde Q^{\dagger}$, the diagonal |
 | $\mathbb{B}^{\mathrm e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ | the enveloping algebra of the block, with the sandwich action |
 | $\overline{\mathbb{B}}$ | the conjugate algebra, $\overline{\mathbb{B}}\cong\mathbb{B}^{\mathrm{opp}}$ by $\tilde Q\mapsto\tilde Q^{*}$ |
-| $E_{ik}=\tilde e_i\otimes\tilde e_k^{\mathrm{opp}}$ | the four idempotents of the envelope's Peirce family |
-| $\Lambda_{ij}$ | the generator of the Peirce corner $\tilde e_i\mathbb{B}\tilde e_j$ |
+| $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | the four idempotents of the envelope's Peirce family |
+| $\Lambda_{ij}$ | the generator of the Peirce corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ |
 
 ## Further Reading
 

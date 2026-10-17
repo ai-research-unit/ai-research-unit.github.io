@@ -452,15 +452,15 @@ The two theories are the positive-definite and indefinite cases of the same cons
 |---|---|---|
 | Norm | $a^2 + a'^2$, signature $(2,0)$ | $a^2 - a'^2$, signature $(1,1)$ |
 | Null cone | $\{0\}$, no null directions | two null lines, the zero divisors |
-| Norm-one group | circle $U(1)$, compact, connected | hyperbola $\mathcal{H}$, non-compact, two branches |
-| Rotation group | $SO(2) \cong U(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ | $SO^+(1,1) \cong \mathbb{R}$, $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$ |
+| Norm-one group | circle $\mathrm{U}(1)$, compact, connected | hyperbola $\mathcal{H}$, non-compact, two branches |
+| Rotation group | $SO(2) \cong \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ | $SO^+(1,1) \cong \mathbb{R}$, $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$ |
 | Angle | $\theta$, defined mod $2\pi$ | $\phi \in \mathbb{R}$, no period |
 | Exponential | $\exp(i\theta) = \cos\theta + i\sin\theta$, periodic | $\exp(j\phi) = \cosh\phi + j\sinh\phi$, injective |
 | Exponential map | $\mathbb{R} \to SO(2)$ surjective, kernel $2\pi\mathbb{Z}$ | $\mathbb{R} \to SO^+(1,1)$ bijective |
 | Reflection | $S_u(A) = u\bar A$, fixes a line | $S_u(A) = u\bar A$, fixes a line |
 | Conjugacy classes of the reflections | one | two, one for each branch of $\mathcal{H}$ |
 | Two reflections | compose to a rotation | compose to a rotation |
-| Orthogonal group | $O(2) \cong U(1) \rtimes \mathbb{Z}/2$, two components | $O(1,1) \cong SO(1,1) \rtimes \mathbb{Z}/2$, four components |
+| Orthogonal group | $O(2) \cong \mathrm{U}(1) \rtimes \mathbb{Z}/2$, two components | $O(1,1) \cong SO(1,1) \rtimes \mathbb{Z}/2$, four components |
 | Trace of a rotation matrix | $2\cos\theta \in [-2,2]$ | $2\cosh\phi \geq 2$ |
 
 The complex rotation group is compact and the angle is periodic, so a rotation is described by a point of a circle; the split rotation group is a line and the angle is a real parameter. In both cases multiplication by a unit, rather than conjugation by it, is the natural action of a commutative algebra on itself, and in both cases the reflections are the anti-linear isometries $A \mapsto u\bar A$; what differs is the shape of the unit set, and hence the topology and the type of the group. One further contrast belongs here: an isometry of the Euclidean plane is a translation composed with a linear isometry, whereas the indefinite form admits no translation at all, since $\langle A+b\rangle_{\natural} = \langle A\rangle_{\natural}$ for all $A$ gives $2g(A,b) + \langle b\rangle_{\natural} = 0$ for all $A$, hence $g(A,b) = 0$ for all $A$ and $b = 0$ by non-degeneracy of $g$. The isometry group of $\langle\cdot,\cdot\rangle_{\natural}$ is therefore the linear group $O(1,1)$ itself.

@@ -120,7 +120,7 @@ $$
 
 is open in $G$; equivalently the action factors through a discrete quotient of $G$. When it is continuous, the orbits are discrete and the orbit map $g \mapsto g\cdot m$ is locally constant for each $m$.
 
-**Proof.** The space $M$ is discrete, so a map $G \to M$ is continuous exactly when it is locally constant, that is when every point has a neighbourhood on which it is constant; the orbit map $g\mapsto g\cdot m$ being locally constant is exactly the openness of its stabiliser $G_m$. The action is continuous at $(g_0, m_0)$ exactly when there is a neighbourhood $U$ of $g_0$ with $g\cdot m_0 = g_0\cdot m_0$ for $g \in U$, which is the openness of $G_{m_0}$ after translating by $g_0^{-1}$. The factorisation statement is the definition of the quotient by the open normal subgroup $\bigcap_m G_m$.
+**Proof.** The space $M$ is discrete, so a map $G \to M$ is continuous exactly when it is locally constant, that is when every point has a neighbourhood on which it is constant; the orbit map $g\mapsto g\cdot m$ being locally constant is exactly the openness of its stabiliser $G_m$. The action is continuous at $(g_0, m_0)$ exactly when there is a neighbourhood $\Omega$ of $g_0$ with $g\cdot m_0 = g_0\cdot m_0$ for $g \in \Omega$, which is the openness of $G_{m_0}$ after translating by $g_0^{-1}$. The factorisation statement is the definition of the quotient by the open normal subgroup $\bigcap_m G_m$.
 
 **Theorem (the grading involution is continuous).** The grading involution $\varepsilon$ of a graded module with the discrete topology is a homeomorphism of order two, its two eigenspaces $M_{\bar0}$, $M_{\bar1}$ are closed and open, and the homogeneous components are preserved by every continuous linear operator commuting with $\varepsilon$.
 

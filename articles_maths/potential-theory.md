@@ -15,7 +15,7 @@ The prerequisites are *Measure Theory and Integration* for the measure, the inte
 
 ### The Mean Value Property
 
-**Definition.** Let $\Omega\subseteq\mathbb{R}^n$ be open. A function $u\in C^2(\Omega)$ is **harmonic** if $\Delta u = 0$ on $\Omega$, where $\Delta = \sum_j\partial_j^2$; the **Newtonian kernel** is
+**Definition.** Let $\Omega\subseteq\mathbb{R}^n$ be open. A function $u\in C^2(\Omega)$ is **harmonic** if $\Delta u = 0$ on $\Omega$, where $\Delta = \sum_j\partial^2/\partial x_j^2$; the **Newtonian kernel** is
 $$
 N(x) = \begin{cases}\dfrac{1}{(2-n)\sigma_{n-1}}\lvert x\rvert^{2-n},&n\geq3,\\[2mm] \dfrac{1}{2\pi}\log\lvert x\rvert,&n = 2,\end{cases}
 $$
@@ -47,15 +47,15 @@ and the **Poisson integral** of a function $f\in C(\partial B)$ is $u(x) = \frac
 
 **Theorem.** $P$ is harmonic in $x$, positive, and normalised: $\frac{1}{\sigma_{n-1}}\int_{\partial B}P(x,\zeta)d\sigma(\zeta) = 1$ for every $x\in B$. In the plane the kernel is $P(r\exp(i\theta),\zeta) = \frac{1-r^2}{1-2r\cos(\theta-\varphi)+r^2}$ with $\zeta = \exp(i\varphi)$, and its integral against $d\theta$ over a period equals $2\pi$. The Poisson integral of a continuous $f$ solves the Dirichlet problem: $u$ is harmonic on $B$, extends continuously to $\bar B$ with $u = f$ on $\partial B$, and is the unique such function; moreover $u$ is the real part of a holomorphic function in the plane case, and the family $\{P(x,\cdot)\}_{x\to\zeta_0}$ is an approximate identity on the sphere, so that $u(x)\to f(\zeta_0)$ as $x\to\zeta_0$ along every approach.
 
-**Proof sketch.** The kernel is $\partial_\nu G$ for the Green function of the ball; positivity and normalisation are direct computations, and the approximate identity property is the concentration of $P(x,\cdot)$ near $\zeta$ as $x\to\zeta$, controlled by the positivity and the normalisation, with the continuity of $f$ giving the limit. Uniqueness is the maximum principle applied to the difference of two solutions.
+**Proof sketch.** The kernel is $\partial/\partial\nu G$ for the Green function of the ball; positivity and normalisation are direct computations, and the approximate identity property is the concentration of $P(x,\cdot)$ near $\zeta$ as $x\to\zeta$, controlled by the positivity and the normalisation, with the continuity of $f$ giving the limit. Uniqueness is the maximum principle applied to the difference of two solutions.
 
 **Example.** For $u(x,y) = x^2-y^2$, harmonic in the plane, the mean value over the circle of radius $R$ about $(a,b)$ equals $u(a,b)$; the numerical averages over $200000$ points of the circles centred at $(0.3,-0.2)$ with $R = 0.5$ and at $(1,1)$ with $R = 2$ give $0.050000$ and $0$, in agreement with $u$ at the centres. The Poisson kernel in the plane has been integrated numerically over the period for $r = 0,0.3,0.7,0.95$, giving $2\pi$ in each case, which is the normalisation $u\equiv1$ and the exact value of the integral of the kernel.
 
 **Theorem (Green's function and the representation).** Let $\Omega$ be a bounded domain with smooth boundary. There is a unique function $G:\Omega\times\Omega\to(-\infty,+\infty]$ with $G(x,y) = N(x-y)-h_x(y)$, where $h_x$ is harmonic in $y$ and chosen so that $G(x,\cdot) = 0$ on $\partial\Omega$; it is symmetric, $G(x,y) = G(y,x)$, positive, and satisfies for every $u$ harmonic on a neighbourhood of $\bar\Omega$
 $$
-u(x) = \frac{1}{\sigma_{n-1}}\int_{\partial\Omega}\partial_\nu G(x,\zeta)\,u(\zeta)\,d\sigma(\zeta),
+u(x) = \frac{1}{\sigma_{n-1}}\int_{\partial\Omega}\partial/\partial\nu G(x,\zeta)\,u(\zeta)\,d\sigma(\zeta),
 $$
-the **Poisson formula** of the domain, whose kernel $\partial_\nu G$ is the Poisson kernel.
+the **Poisson formula** of the domain, whose kernel $\partial/\partial\nu G$ is the Poisson kernel.
 
 **Proof sketch.** The existence of $h_x$ is the Dirichlet problem for the harmonic function $N(x-\cdot)$ on the boundary, solved by the method of the next section; symmetry follows by applying Green's second identity to $G(x,\cdot)$ and $G(y,\cdot)$ on the domain with two small balls removed and letting the radii tend to zero, which produces the symmetry of the singular parts.
 
@@ -133,7 +133,7 @@ and let $u(x) = \sup_{v\in\mathcal{P}(f)}v(x)$, the **Perron function**. Then $\
 
 **Theorem (the spherical harmonics).** The eigenvalues of the Laplace–Beltrami operator $\Delta_{S^{n-1}}$ on the unit sphere are $-k(k+n-2)$, $k = 0,1,2,\dots$, the eigenspace of the eigenvalue $-k(k+n-2)$ consisting of the restrictions to the sphere of the harmonic homogeneous polynomials of degree $k$, of dimension $\binom{n+k-1}{k}-\binom{n+k-3}{k-2}$; the eigenfunctions are the **spherical harmonics** $Y_{k,j}$, they are orthogonal in $L^2(S^{n-1})$, and they are complete.
 
-**Proof sketch.** A homogeneous polynomial $p$ of degree $k$ that is harmonic satisfies, by the computation of the Laplacian in polar coordinates $\Delta = \partial_r^2+\frac{n-1}{r}\partial_r+\frac{1}{r^2}\Delta_{S^{n-1}}$ applied to $r^kp(\zeta)$, the eigenrelation $\Delta_{S^{n-1}}p = -k(k+n-2)p$ on the sphere; conversely an eigenfunction that is a polynomial restriction is harmonic because the radial part of the Laplacian annihilates $r^k$ times it. The dimension count is the difference of the dimensions of the spaces of homogeneous polynomials of degree $k$ and of degree $k-2$, and the completeness is the spectral theorem for the compact self-adjoint operator obtained from the inverse of $-\Delta_{S^{n-1}}$, together with the density of the restrictions of polynomials in $L^2(S^{n-1})$.
+**Proof sketch.** A homogeneous polynomial $p$ of degree $k$ that is harmonic satisfies, by the computation of the Laplacian in polar coordinates $\Delta = \partial^2/\partial r^2+\frac{n-1}{r}\partial/\partial r+\frac{1}{r^2}\Delta_{S^{n-1}}$ applied to $r^kp(\zeta)$, the eigenrelation $\Delta_{S^{n-1}}p = -k(k+n-2)p$ on the sphere; conversely an eigenfunction that is a polynomial restriction is harmonic because the radial part of the Laplacian annihilates $r^k$ times it. The dimension count is the difference of the dimensions of the spaces of homogeneous polynomials of degree $k$ and of degree $k-2$, and the completeness is the spectral theorem for the compact self-adjoint operator obtained from the inverse of $-\Delta_{S^{n-1}}$, together with the density of the restrictions of polynomials in $L^2(S^{n-1})$.
 
 **Remark (the Poisson kernel and the transform).** The Poisson kernel of the ball is the generating function of the spherical harmonics: in the plane with $\zeta = \exp(i\varphi)$ and $x = r\exp(i\theta)$,
 $$

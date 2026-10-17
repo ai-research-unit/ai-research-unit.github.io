@@ -1,10 +1,10 @@
-# __The Group of Units of the General Plain Algebra of the Reduced Biquaternions__
+# __The Group of Units of the Algebra of the Reduced Biquaternions__
 
 ## Introduction
 
-Of the eight algebraic structures that the reduced biquaternion complex space carries, exactly one is an associative unital algebra, the general plain product $TW$ of *Introduction to the General Plain Algebra of the Reduced Biquaternions*; the specificity that its associativity and its two-sided unit $1$ deliver is that the invertible elements form a genuine **group** (*The Specificities of the General Plain Algebra of the Reduced Biquaternions*). This article studies that group and the exact meaning of its boundary. The group of units is the complement of the null set of the norm, the algebra is the disjoint union of the units, the zero divisors and the single element $0$, and the null set of the norm is at once the complement of the group and its boundary.
+Of the eight algebraic structures that the reduced biquaternion complex space carries, exactly one is an associative unital algebra, the general plain product $Q_{\pm,1}Q_{\pm,2}$ of *Introduction to the Algebra of the Reduced Biquaternions*; the specificity that its associativity and its two-sided unit $1$ deliver is that the invertible elements form a genuine **group** (*The Specificities of the Algebra of the Reduced Biquaternions*). This article studies that group and the exact meaning of its boundary. The group of units is the complement of the null set of the norm, the algebra is the disjoint union of the units, the zero divisors and the single element $0$, and the null set of the norm is at once the complement of the group and its boundary.
 
-The boundary deserves an article of its own because it is drawn by a form the product does not visibly carry. The plain product has its algebraic norm $\langle T\rangle_{\natural}=A^{2}-B^{2}$, and $\langle\cdot\rangle_{\natural}$ is **multiplicative**: $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$. That multiplicativity is exactly the reason the non-vanishing set of $\langle\cdot\rangle_{\natural}$ is closed under the product and under inversion, hence a group, and the zero-divisor set is the punctured vanishing set of $\langle\cdot\rangle_{\natural}$, $\mathcal N=\{T\neq0:\langle T\rangle_{\natural}=0\}$. The two statements of the article are the pair of these facts: **the units of the plain product are the elements of non-vanishing norm $\langle\cdot\rangle_{\natural}$, and the complement of the unit group is the union of two lines**, the two idempotent lines $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$.
+The boundary deserves an article of its own because it is drawn by a form the product does not visibly carry. The plain product has its algebraic norm $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$, and $\langle\cdot\rangle_{\natural}$ is **multiplicative**: $\langle Q_{\pm,1}Q_{\pm,2}\rangle_{\natural}=\langle Q_{\pm,1}\rangle_{\natural}\langle Q_{\pm,2}\rangle_{\natural}$. That multiplicativity is exactly the reason the non-vanishing set of $\langle\cdot\rangle_{\natural}$ is closed under the product and under inversion, hence a group, and the zero-divisor set is the punctured vanishing set of $\langle\cdot\rangle_{\natural}$, $\mathcal N=\{Q_\pm\neq0:\langle Q_\pm\rangle_{\natural}=0\}$. The two statements of the article are the pair of these facts: **the units of the plain product are the elements of non-vanishing norm $\langle\cdot\rangle_{\natural}$, and the complement of the unit group is the union of two lines**, the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$.
 
 **The results.** The algebra is the disjoint union
 $$
@@ -12,28 +12,28 @@ $$
 $$
 where $\mathbb{B}_{\mathrm{r}}^{\times}$ is the unit group and $\mathcal N$ is the zero-divisor set, the punctured vanishing set of the norm. The unit group is the group
 $$
-\mathbb{B}_{\mathrm{r}}^{\times}=\{T:\langle T\rangle_{\natural}\neq0\}=\{T:A+B\neq0\ \text{and}\ A-B\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
+\mathbb{B}_{\mathrm{r}}^{\times}=\{Q_\pm:\langle Q_\pm\rangle_{\natural}\neq0\}=\{Q_\pm:Q_++Q_-\neq0\ \text{and}\ Q_+-Q_-\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
-**abelian and connected**, of complex dimension two and real dimension four, with fundamental group $\mathbb{Z}\times\mathbb{Z}$. The isomorphism is the idempotent coordinate map $T\mapsto(q_1,q_2)=(A+B,A-B)$, under which the product is componentwise. The zero-divisor set is the **punctured union of the two idempotent lines** $\mathcal N=(\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2})\setminus\{0\}$, whose elements are the nonzero zero divisors. Every nonzero element of the algebra is either a unit or a zero divisor; there is no third kind.
+**abelian and connected**, of complex dimension two and real dimension four, with fundamental group $\mathbb{Z}\times\mathbb{Z}$. The isomorphism is the idempotent coordinate map $Q_\pm\mapsto(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-)$, under which the product is componentwise. The zero-divisor set is the **punctured union of the two idempotent lines** $\mathcal N=(\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-)\setminus\{0\}$, whose elements are the nonzero zero divisors. Every nonzero element of the algebra is either a unit or a zero divisor; there is no third kind.
 
-**Boundaries.** The norm is *Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions*, and the zero divisors and the two lines are *Zero Divisors of the General Plain Algebra of the Reduced Biquaternions*; the idempotents and the idempotent coordinates are *Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions* and *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The multiplication operators, whose invertibility is the same criterion on the operator level, are *The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions*; the matrix model, in which the unit group is the group of invertible diagonal matrices, is *The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*. The biquaternion unit group, which is not abelian, is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
+**Boundaries.** The norm is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, and the zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the idempotents and the idempotent coordinates are *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$*. The multiplication operators, whose invertibility is the same criterion on the operator level, are *The Multiplication Operators of the Algebra of the Reduced Biquaternions*; the matrix model, in which the unit group is the group of invertible diagonal matrices, is *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions*. The biquaternion unit group, which is not abelian, is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*.
 
 ## The Partition of the Algebra
 
 **The algebra is the disjoint union of its units, its nonzero zero divisors and the single element $0$.**
 
-**Definition (the zero-divisor set).** An element $T$ is a **zero divisor** when there is a nonzero $W$ with $TW=0$; the **zero-divisor set** is the set of the zero divisors. It is the punctured **null set** of the norm, $\mathcal N=\{T\neq0:\langle T\rangle_{\natural}=0\}$.
+**Definition (the zero-divisor set).** An element $Q_\pm$ is a **zero divisor** when there is a nonzero $Q_{\pm,2}$ with $Q_\pm Q_{\pm,2}=0$; the **zero-divisor set** is the set of the zero divisors. It is the punctured **null set** of the norm, $\mathcal N=\{Q_\pm\neq0:\langle Q_\pm\rangle_{\natural}=0\}$.
 
 **Theorem (the partition).** The zero-divisor set of the general plain algebra is the union of the two idempotent lines with the origin removed,
 $$
-\mathcal N=\bigl(\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2}\bigr)\setminus\{0\},
+\mathcal N=\bigl(\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-\bigr)\setminus\{0\},
 $$
 and the algebra is the disjoint union
 $$
 \mathbb{B}_{\mathrm{r}}=\mathbb{B}_{\mathrm{r}}^{\times}\ \sqcup\ \mathcal N\ \sqcup\ \{0\}.
 $$
 
-*Proof.* By *Zero Divisors of the General Plain Algebra of the Reduced Biquaternions* the zero divisors are the nonzero elements of the null set of the norm, and by *Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions* the null set is $\mathcal N\cup\{0\}=\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2}$, since $\langle T\rangle_{\natural}=A^{2}-B^{2}=(A+B)(A-B)=0$ if and only if $A+B=0$ or $A-B=0$, that is $T\in\mathbb{C}\Pi_{2}$ or $T\in\mathbb{C}\Pi_{1}$. The zero divisors are the nonzero elements of that set, that is $\mathcal N$; the units are the elements of $N\neq0$; and $0$ is neither.
+*Proof.* By *Zero Divisors of the Algebra of the Reduced Biquaternions* the zero divisors are the nonzero elements of the null set of the norm, and by *Norm and Invertibility in the Algebra of the Reduced Biquaternions* the null set is $\mathcal N\cup\{0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, since $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}=(Q_++Q_-)(Q_+-Q_-)=0$ if and only if $Q_++Q_-=0$ or $Q_+-Q_-=0$, that is $Q_\pm\in\mathbb{C}\Pi_-$ or $Q_\pm\in\mathbb{C}\Pi_+$. The zero divisors are the nonzero elements of that set, that is $\mathcal N$; the units are the elements of $N\neq0$; and $0$ is neither.
 
 **Corollary (no third kind).** Every nonzero element of $\mathbb{B}_{\mathrm{r}}$ is a unit or a zero divisor. There is no element that is neither, and none that is both.
 
@@ -41,25 +41,25 @@ $$
 
 **An element is a unit exactly when its norm does not vanish, equivalently when neither idempotent coordinate vanishes.**
 
-**Theorem (the criterion).** For $T=A+Bj$ the following are equivalent:
+**Theorem (the criterion).** For $Q_\pm=Q_++jQ_-$ the following are equivalent:
 
-1. $T$ is a unit, that is, there is $S$ with $TS=ST=1$;
-2. $\langle T\rangle_{\natural}=A^{2}-B^{2}\neq0$;
-3. both idempotent coordinates are nonzero, $q_1=A+B\neq0$ and $q_2=A-B\neq0$.
+1. $Q_\pm$ is a unit, that is, there is $Q_{\pm,2}$ with $Q_\pm Q_{\pm,2}=Q_{\pm,2}Q_\pm=1$;
+2. $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}\neq0$;
+3. both idempotent coordinates are nonzero, $Q_{++}=Q_++Q_-\neq0$ and $Q_{--}=Q_+-Q_-\neq0$.
 
 When they hold, the inverse is
 $$
-T^{-1}=\frac{A-Bj}{A^{2}-B^{2}}=\frac{1}{2}\Bigl(\frac{1}{A+B}+\frac{1}{A-B}\Bigr)+\frac{1}{2}\Bigl(\frac{1}{A+B}-\frac{1}{A-B}\Bigr)j,
+Q_\pm^{-1}=\frac{Q_+-jQ_-}{Q_+^{2}-Q_-^{2}}=\frac{1}{2}\Bigl(\frac{1}{Q_++Q_-}+\frac{1}{Q_+-Q_-}\Bigr)+\frac{1}{2}\Bigl(\frac{1}{Q_++Q_-}-\frac{1}{Q_+-Q_-}\Bigr)j,
 $$
-with idempotent coordinates $(q_1^{-1},q_2^{-1})$.
+with idempotent coordinates $(Q_{++}^{-1},Q_{--}^{-1})$.
 
-*Proof.* (1)$\Rightarrow$(2): a unit is not a zero divisor, and the zero divisors are the elements of $\langle\cdot\rangle_{\natural}=0$, so $\langle T\rangle_{\natural}\neq0$. (2)$\Rightarrow$(3): $A^{2}-B^{2}=(A+B)(A-B)$, and $\mathbb{C}$ is a field, so the product is nonzero exactly when both factors are. (3)$\Rightarrow$(1): the displayed $T^{-1}$ has $TT^{-1}=1$ by the multiplication rule $TW=(AC+BD)+(AD+BC)j$, since
+*Proof.* (1)$\Rightarrow$(2): a unit is not a zero divisor, and the zero divisors are the elements with $\langle Q_\pm\rangle_{\natural}=0$, so $\langle Q_\pm\rangle_{\natural}\neq0$. (2)$\Rightarrow$(3): $Q_+^{2}-Q_-^{2}=(Q_++Q_-)(Q_+-Q_-)$, and $\mathbb{C}$ is a field, so the product is nonzero exactly when both factors are. (3)$\Rightarrow$(1): the displayed $Q_\pm^{-1}$ has $Q_\pm Q_\pm^{-1}=1$ by the multiplication rule $Q_{\pm,1}Q_{\pm,2}=(Q_{1+}Q_{2+}+Q_{1-}Q_{2-})+(Q_{1+}Q_{2-}+Q_{1-}Q_{2+})j$, since
 $$
-A\cdot\frac{A}{A^{2}-B^{2}}+B\cdot\frac{-B}{A^{2}-B^{2}}=\frac{A^{2}-B^{2}}{A^{2}-B^{2}}=1,
+Q_+\cdot\frac{Q_+}{Q_+^{2}-Q_-^{2}}+Q_-\cdot\frac{-Q_-}{Q_+^{2}-Q_-^{2}}=\frac{Q_+^{2}-Q_-^{2}}{Q_+^{2}-Q_-^{2}}=1,
 $$
-and $A\cdot\frac{-B}{A^{2}-B^{2}}+B\cdot\frac{A}{A^{2}-B^{2}}=0$; in the idempotent coordinates the inverse is $(q_1^{-1},q_2^{-1})$, which is the componentwise inverse.
+and $Q_+\cdot\frac{-Q_-}{Q_+^{2}-Q_-^{2}}+Q_-\cdot\frac{Q_+}{Q_+^{2}-Q_-^{2}}=0$; in the idempotent coordinates the inverse is $(Q_{++}^{-1},Q_{--}^{-1})$, which is the componentwise inverse.
 
-**Corollary (multiplicativity is the mechanism).** The norm is multiplicative, $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$, because $\langle\cdot\rangle_{\natural}$ is the product of the two idempotent coordinates, $\langle T\rangle_{\natural}=q_1q_2$, and the coordinates of the product are the products of the coordinates. Hence the set $N\neq0$ is closed under the product, and the criterion makes it closed under inversion as well; this is why it is a group. The multiplicativity is read on the product of the two copies of $\mathbb{C}^{\times}$.
+**Corollary (multiplicativity is the mechanism).** The norm is multiplicative, $\langle Q_{\pm,1}Q_{\pm,2}\rangle_{\natural}=\langle Q_{\pm,1}\rangle_{\natural}\langle Q_{\pm,2}\rangle_{\natural}$, because $\langle\cdot\rangle_{\natural}$ is the product of the two idempotent coordinates, $\langle Q_\pm\rangle_{\natural}=Q_{++}Q_{--}$, and the coordinates of the product are the products of the coordinates. Hence the set $N\neq0$ is closed under the product, and the criterion makes it closed under inversion as well; this is why it is a group. The multiplicativity is read on the product of the two copies of $\mathbb{C}^{\times}$.
 
 ## The Group and Its Structure
 
@@ -67,11 +67,11 @@ and $A\cdot\frac{-B}{A^{2}-B^{2}}+B\cdot\frac{A}{A^{2}-B^{2}}=0$; in the idempot
 
 **Theorem (the structure of the unit group).** The map
 $$
-\Phi:\mathbb{B}_{\mathrm{r}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad T\mapsto(q_1,q_2)=(A+B,A-B),
+\Phi:\mathbb{B}_{\mathrm{r}}^{\times}\to\mathbb{C}^{\times}\times\mathbb{C}^{\times},\qquad Q_\pm\mapsto(Q_{++},Q_{--})=(Q_++Q_-,Q_+-Q_-),
 $$
 is an isomorphism of groups.
 
-*Proof.* The idempotent coordinate map $T\mapsto(q_1,q_2)$ is an algebra isomorphism of $(\mathbb{B}_{\mathrm{r}},\cdot)$ onto $\mathbb{C}\times\mathbb{C}$ (*The Specificities of the General Plain Algebra of the Reduced Biquaternions*); it carries the invertible elements onto the pairs of invertible elements, that is onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The product is componentwise and the identity $1$ corresponds to $(1,1)$.
+*Proof.* The idempotent coordinate map $Q_\pm\mapsto(Q_{++},Q_{--})$ is an algebra isomorphism of $(\mathbb{B}_{\mathrm{r}},\cdot)$ onto $\mathbb{C}\times\mathbb{C}$ (*The Specificities of the Algebra of the Reduced Biquaternions*); it carries the invertible elements onto the pairs of invertible elements, that is onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The product is componentwise and the identity $1$ corresponds to $(1,1)$.
 
 **Corollary (the structure).** The unit group is:
 
@@ -87,64 +87,64 @@ The contrast with the biquaternion unit group is the point: there the general pl
 
 **The complement of the unit group is the union of the two idempotent lines, and that union is the topological boundary of the group.**
 
-**Definition.** The **null set** of the norm is $\mathcal N\cup\{0\}=\{T:\langle T\rangle_{\natural}=0\}=\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2}$, the union of the two idempotent lines, each a complex line through the origin, with $\mathcal N$ its punctured part.
+**Definition.** The **null set** of the norm is $\mathcal N\cup\{0\}=\{Q_\pm:\langle Q_\pm\rangle_{\natural}=0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$, the union of the two idempotent lines, each a complex line through the origin, with $\mathcal N$ its punctured part.
 
 **Theorem (the boundary).** The unit group $\mathbb{B}_{\mathrm{r}}^{\times}$ is open and dense in $\mathbb{B}_{\mathrm{r}}$; its complement is $\mathcal N\cup\{0\}$, the union of the two lines; and $\mathcal N\cup\{0\}$ is the topological boundary $\partial\mathbb{B}_{\mathrm{r}}^{\times}=\overline{\mathbb{B}_{\mathrm{r}}^{\times}}\setminus\mathbb{B}_{\mathrm{r}}^{\times}=\mathcal N\cup\{0\}$.
 
 *Proof.* The null set is the vanishing set of the continuous function $\langle\cdot\rangle_{\natural}$, hence closed, so its complement $\mathbb{B}_{\mathrm{r}}^{\times}$ is open; the null set has empty interior because each of the two lines does (a complex line in $\mathbb{C}^{2}$ has empty interior), so $\mathbb{B}_{\mathrm{r}}^{\times}$ is dense; and a dense open set has closure the whole space, so its boundary is its complement, the null set.
 
-**Remark (two lines, not one cone).** The boundary of the reduced biquaternion unit group is **two complex lines**, of real dimension two each, not a single cone of real dimension three as in the biquaternion category. The difference is the split of the algebra: the biquaternion reduced norm is an irreducible quadratic in four complex variables, whose null set is an irreducible cone; the reduced biquaternion norm factors, $\langle\cdot\rangle_{\natural}=(A+B)(A-B)$, and its null set is the union of the two hyperplanes $A+B=0$ and $A-B=0$. The factoring is the idempotent splitting read on the norm, and it is the reason the boundary here is a union of lines.
+**Remark (two lines, not one cone).** The boundary of the reduced biquaternion unit group is **two complex lines**, of real dimension two each, not a single cone of real dimension three as in the biquaternion category. The difference is the split of the algebra: the biquaternion reduced norm is an irreducible quadratic in four complex variables, whose null set is an irreducible cone; the reduced biquaternion norm factors, $\langle\cdot\rangle_{\natural}=(Q_++Q_-)(Q_+-Q_-)$, and its null set is the union of the two hyperplanes $Q_++Q_-=0$ and $Q_+-Q_-=0$. The factoring is the idempotent splitting read on the norm, and it is the reason the boundary here is a union of lines.
 
 ## The Units inside the Remarkable Subspaces
 
-**The units and the zero divisors are distributed over the remarkable subspaces as follows: every nonzero element of the scalar line, the $j$-line, the Hermitian plane and the anti-Hermitian plane is a unit, the two split planes carry the two real zero-divisor lines $\mathbb{R}\Pi_{1}$, $\mathbb{R}\Pi_{2}$ beside their units, and every zero divisor of the algebra lies on one of the two idempotent lines.**
+**The units and the zero divisors are distributed over the remarkable subspaces as follows: every nonzero element of the scalar line, the $j$-line, the Hermitian plane and the anti-Hermitian plane is a unit, the two split planes carry the two real zero-divisor lines $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$ beside their units, and every zero divisor of the algebra lies on one of the two idempotent lines.**
 
 **Theorem (the distribution).** For the remarkable subspaces of *Introduction to the Remarkable Subspaces*:
 
 | subspace | definition | norm $\langle\cdot\rangle_{\natural}$ | elements |
 |---|---|---|---|
-| scalar line $\mathbb{C}$ | $T=A$, $\langle\cdot\rangle=0$ | $A^{2}$ | unit iff $A\neq0$ |
-| $j$-line $\mathbb{C}j$ | $T=Bj$, $A=0$ | $-B^{2}$ | unit iff $B\neq0$ |
-| real subalgebra $\mathbb{R}\{1,j\}$ | $A,B\in\mathbb{R}$ | $a^{2}-b^{2}$ | unit iff $\lvert a\rvert\neq\lvert b\rvert$ |
-| $i$-multiple $i\mathbb{R}\{1,j\}$ | $T=iS$, $S$ real-split | $-(a^{2}-b^{2})$ | unit iff $\lvert a\rvert\neq\lvert b\rvert$ |
-| Hermitian subspace $\mathbb{R}\{1,ij\}$ | $T=a+bij$, $a,b\in\mathbb{R}$ | $a^{2}+b^{2}$ | unit iff $(a,b)\neq(0,0)$ |
-| anti-Hermitian subspace $\mathbb{R}\{i,j\}$ | $T=ai+bj$ | $-(a^{2}+b^{2})$ | unit iff $(a,b)\neq(0,0)$ |
-| idempotent lines $\mathbb{C}\Pi_{1}$, $\mathbb{C}\Pi_{2}$ | $T=x\Pi_{i}$ | $0$ | all nonzero elements are zero divisors |
+| scalar line $\mathbb{C}$ | $Q_\pm=Q_+$ ($Q_-=0$) | $Q_+^{2}$ | unit iff $Q_+\neq0$ |
+| $j$-line $\mathbb{C}j$ | $Q_\pm=jQ_-$, $Q_+=0$ | $-Q_-^{2}$ | unit iff $Q_-\neq0$ |
+| real subalgebra $\mathbb{R}\{1,j\}$ | $Q_+,Q_-\in\mathbb{R}$ | $q_+^{2}-q_-^{2}$ | unit iff $\lvert q_+\rvert\neq\lvert q_-\rvert$ |
+| $i$-multiple $i\mathbb{R}\{1,j\}$ | $Q_\pm=iQ_{\pm,2}$, $Q_{\pm,2}$ real-split | $-(a^{2}-b^{2})$ | unit iff $\lvert a\rvert\neq\lvert b\rvert$ |
+| Hermitian subspace $\mathbb{R}\{1,ij\}$ | $Q_\pm=a+bij$, $a,b\in\mathbb{R}$ | $a^{2}+b^{2}$ | unit iff $(a,b)\neq(0,0)$ |
+| anti-Hermitian subspace $\mathbb{R}\{i,j\}$ | $Q_\pm=ai+bj$ | $-(a^{2}+b^{2})$ | unit iff $(a,b)\neq(0,0)$ |
+| idempotent lines $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ | $Q_\pm=Q_{++}\Pi_+$ or $Q_\pm=Q_{--}\Pi_-$ | $0$ | all nonzero elements are zero divisors |
 
-*Proof.* The norm is computed on each subspace from its definition $\langle T\rangle_{\natural}=A^{2}-B^{2}$ and the criterion of §*The Invertibility Criterion*. On $\mathbb{C}$ and $\mathbb{C}j$ the norm is $\pm$ the square of the single complex coordinate, nonzero for a nonzero coordinate. On the real subalgebra and its $i$-multiple the norm is $\pm(a^{2}-b^{2})$ with $a,b$ real, vanishing exactly on the two real lines $a=\pm b$. On the Hermitian and anti-Hermitian subspaces the norm is $\pm(a^{2}+b^{2})$ with $a,b$ real, nonzero for every nonzero element. On the idempotent lines the norm is $0$.
+*Proof.* The norm is computed on each subspace from its definition $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ and the criterion of §*The Invertibility Criterion*. On $\mathbb{C}$ and $\mathbb{C}j$ the norm is $\pm$ the square of the single complex coordinate, nonzero for a nonzero coordinate. On the real subalgebra and its $i$-multiple the norm is $\pm(a^{2}-b^{2})$ with $a,b$ real, vanishing exactly on the two real lines $a=\pm b$. On the Hermitian and anti-Hermitian subspaces the norm is $\pm(a^{2}+b^{2})$ with $a,b$ real, nonzero for every nonzero element. On the idempotent lines the norm is $0$.
 
-**Corollary (the two families of lines).** The two lines of the natural sign — the scalar line and the $j$-line — carry a unit at every nonzero element, and so do the Hermitian and the anti-Hermitian plane; the two split planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ are the only remarkable subspaces that carry zero divisors, on the two real lines $\mathbb{R}\Pi_{1}$, $\mathbb{R}\Pi_{2}$; and the two lines of the idempotent splitting — $\mathbb{C}\Pi_{1}$ and $\mathbb{C}\Pi_{2}$ — carry a zero divisor at every nonzero element. The distinction between *unit at every nonzero point* and *zero divisor at every nonzero point* is exactly the distinction between the fixed and anti-fixed spaces of the natural sign and the eigenlines of the multiplication by $j$.
+**Corollary (the two families of lines).** The two lines of the natural sign — the scalar line and the $j$-line — carry a unit at every nonzero element, and so do the Hermitian and the anti-Hermitian plane; the two split planes $\mathbb{R}\{1,j\}$ and $\mathbb{R}\{i,ij\}$ are the only remarkable subspaces that carry zero divisors, on the two real lines $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$; and the two lines of the idempotent splitting — $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ — carry a zero divisor at every nonzero element. The distinction between *unit at every nonzero point* and *zero divisor at every nonzero point* is exactly the distinction between the fixed and anti-fixed spaces of the natural sign and the eigenlines of the multiplication by $j$.
 
 ## The Complement in the Other Seven Structures
 
 **For the other seven structures the complement of the unit set is not a group, and the plain product is the only one whose non-vanishing set is closed under its own operation.**
 
-The seven other structures of *The Four Products, Their Forms and Their Algebraic Norms* are the general quaternionic bilinear product, the two sesquilinear products and the four symmetrised and antisymmetrised structures. Their inverses and their unit-like sets are read in their own blocks; the single point that belongs here is the reason the plain product is special. An operation $\circ$ has a group of "units" only when its non-vanishing set is closed under $\circ$ and under $\circ$-inversion, and that closure needs the multiplicativity of an algebraic norm that the operation respects. The general plain product has it, through $\langle TW\rangle_{\natural}=\langle T\rangle_{\natural}\langle W\rangle_{\natural}$; the other operations do not preserve $\langle\cdot\rangle_{\natural}$, so their non-vanishing sets are not closed under them, and their invertible elements do not form a group of the same kind. The biquaternion counterpart of this section is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*, §*The Complement in the Other Eleven Structures*.
+The seven other structures of *The Four Products, Their Forms and Their Algebraic Norms* are the general quaternionic bilinear product, the two sesquilinear products and the four symmetrised and antisymmetrised structures. Their inverses and their unit-like sets are read in their own blocks; the single point that belongs here is the reason the plain product is special. An operation $\circ$ has a group of "units" only when its non-vanishing set is closed under $\circ$ and under $\circ$-inversion, and that closure needs the multiplicativity of an algebraic norm that the operation respects. The general plain product has it, through $\langle Q_{\pm,1}Q_{\pm,2}\rangle_{\natural}=\langle Q_{\pm,1}\rangle_{\natural}\langle Q_{\pm,2}\rangle_{\natural}$; the other operations do not preserve $\langle\cdot\rangle_{\natural}$, so their non-vanishing sets are not closed under them, and their invertible elements do not form a group of the same kind. The biquaternion counterpart of this section is *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone*, §*The Complement in the Other Eleven Structures*.
 
 ## Summary
 
-The general plain algebra of the reduced biquaternions is the disjoint union of its unit group, its nonzero zero divisors and the single element $0$. An element $T=A+Bj$ is a unit exactly when its norm $\langle T\rangle_{\natural}=A^{2}-B^{2}$ does not vanish, equivalently when neither idempotent coordinate $q_1=A+B$, $q_2=A-B$ vanishes; the inverse is $(A-Bj)/(A^{2}-B^{2})$, or $(q_1^{-1},q_2^{-1})$ in the idempotent coordinates. The unit group is the abelian group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ under the isomorphism $T\mapsto(q_1,q_2)$, connected, of complex dimension two, with fundamental group $\mathbb{Z}\times\mathbb{Z}$; the biquaternion unit group $GL(2,\mathbb{C})$ is its non-abelian counterpart. The complement of the group is the null set of the norm, the union of the two idempotent lines $\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2}$; it is the complement of the open dense unit group, is closed and of empty interior, and is therefore the topological boundary of the group; it is a union of two complex lines and not an irreducible cone, because the norm factors as $(A+B)(A-B)$. On the remarkable subspaces every nonzero element of the scalar line, the $j$-line, the Hermitian plane and the anti-Hermitian plane is a unit, the two split planes carry the two real zero-divisor lines $\mathbb{R}\Pi_{1}$, $\mathbb{R}\Pi_{2}$ beside their units, and every nonzero element of the two idempotent lines is a zero divisor. The closure of the non-vanishing set under the operation is what makes a group, and only the plain product has it.
+The general plain algebra of the reduced biquaternions is the disjoint union of its unit group, its nonzero zero divisors and the single element $0$. An element $Q_\pm=Q_++jQ_-$ is a unit exactly when its norm $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ does not vanish, equivalently when neither idempotent coordinate $Q_{++}=Q_++Q_-$, $Q_{--}=Q_+-Q_-$ vanishes; the inverse is $(Q_+-jQ_-)/(Q_+^{2}-Q_-^{2})$, or $(Q_{++}^{-1},Q_{--}^{-1})$ in the idempotent coordinates. The unit group is the abelian group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ under the isomorphism $Q_\pm\mapsto(Q_{++},Q_{--})$, connected, of complex dimension two, with fundamental group $\mathbb{Z}\times\mathbb{Z}$; the biquaternion unit group $GL(2,\mathbb{C})$ is its non-abelian counterpart. The complement of the group is the null set of the norm, the union of the two idempotent lines $\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$; it is the complement of the open dense unit group, is closed and of empty interior, and is therefore the topological boundary of the group; it is a union of two complex lines and not an irreducible cone, because the norm factors as $(Q_++Q_-)(Q_+-Q_-)$. On the remarkable subspaces every nonzero element of the scalar line, the $j$-line, the Hermitian plane and the anti-Hermitian plane is a unit, the two split planes carry the two real zero-divisor lines $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$ beside their units, and every nonzero element of the two idempotent lines is a zero divisor. The closure of the non-vanishing set under the operation is what makes a group, and only the plain product has it.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $T=A+Bj$ | a general element |
-| $\langle T\rangle_{\natural}=A^{2}-B^{2}$ | the algebraic norm of the multiplication |
-| $q_1=A+B,\ q_2=A-B$ | the idempotent coordinates |
+| $Q_\pm=Q_++jQ_-$ | a general element |
+| $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$ | the algebraic norm of the multiplication |
+| $Q_{++}=Q_++Q_-,\ Q_{--}=Q_+-Q_-$ | the idempotent coordinates |
 | $\mathbb{B}_{\mathrm{r}}^{\times}$ | the group of units |
-| $\mathcal N=\{T\neq0:N=0\}=\mathbb{C}^{\times}\Pi_{1}\cup\mathbb{C}^{\times}\Pi_{2}$ | the zero-divisor set, the punctured null set |
-| $\mathcal N\cup\{0\}=\mathbb{C}\Pi_{1}\cup\mathbb{C}\Pi_{2}$ | the null set, the union of the two idempotent lines |
-| $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, under $T\mapsto(q_1,q_2)$ |
-| $T^{-1}=(A-Bj)/(A^{2}-B^{2})$ | the inverse of a unit |
+| $\mathcal N=\{Q_\pm\neq0:\langle Q_\pm\rangle_{\natural}=0\}=\mathbb{C}^{\times}\Pi_+\cup\mathbb{C}^{\times}\Pi_-$ | the zero-divisor set, the punctured null set |
+| $\mathcal N\cup\{0\}=\mathbb{C}\Pi_+\cup\mathbb{C}\Pi_-$ | the null set, the union of the two idempotent lines |
+| $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the unit group, under $Q_\pm\mapsto(Q_{++},Q_{--})$ |
+| $Q_\pm^{-1}=(Q_+-jQ_-)/(Q_+^{2}-Q_-^{2})$ | the inverse of a unit |
 | $\partial\mathbb{B}_{\mathrm{r}}^{\times}=\mathcal N\cup\{0\}$ | the boundary of the unit group |
 | $GL(2,\mathbb{C})$ | the biquaternion unit group, the non-abelian companion |
 
 ## Further Reading
 
-- *Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the norm and the criterion.
-- *Zero Divisors of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the zero-divisor set and the two lines.
-- *The Specificities of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the associativity and the central split that make the group.
-- *Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotent lines as the minimal ideals.
-- *The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility of the operators.
+- *Norm and Invertibility in the Algebra of the Reduced Biquaternions* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the norm and the criterion.
+- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the zero-divisor set and the two lines.
+- *The Specificities of the Algebra of the Reduced Biquaternions* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the associativity and the central split that make the group.
+- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the idempotent lines as the minimal ideals.
+- *The Multiplication Operators of the Algebra of the Reduced Biquaternions* (`articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), for the invertibility of the operators.
 - *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* (`articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.md`), for the non-abelian companion.

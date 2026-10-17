@@ -55,7 +55,7 @@ $$
 \qquad \text{for every normalized } |\psi\rangle\in S ,
 $$
 
-with $\tilde{U}\tilde{U}^{*} = \tilde{U}^{*}\tilde{U} = e_0\otimes e_0$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde{U}$ clones every input. This is the form in which the obstruction is transparent.
+with $\tilde{U}\tilde{U}^{*} = \tilde{U}^{*}\tilde{U} = e_t\otimes e_t$. The blank $|0\rangle$ is a fixed unit vector of the second factor, and the requirement is that the same $\tilde{U}$ clones every input. This is the form in which the obstruction is transparent.
 
 ## The Algebraic Obstruction
 
@@ -255,10 +255,10 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner â
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra (input and blank) |
 | $\mathbb{M}_+$ | Hermitian subspace (states) |
-| $e_0=1,e_1,e_2,e_3$; $i$ | Quaternion units; central imaginary |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\psi)$ | Rank-one idempotent of a pure state |
 | $\mathrm{Tr}(\tilde\Pi(\psi)\tilde\Pi(\phi)) = |\langle\psi|\phi\rangle|^2$ | Trace pairing (distinguishability) |
-| $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_0\otimes e_0$ |
+| $\tilde{U}$ | Cloning unitary, $\tilde{U}\tilde{U}^{*} = e_t\otimes e_t$ |
 | $\Phi$ | Cloning channel, completely positive trace preserving |
 | $\Phi(\tilde{\rho}\otimes\tilde{\rho}_0) = \tilde{\rho}\otimes\tilde{\rho}$ | Cloning requirement |
 | $\mathrm{Tr}(P_\psi P_\phi) = (\mathrm{Tr}(P_\psi P_\phi))^2$ | Algebraic obstruction |

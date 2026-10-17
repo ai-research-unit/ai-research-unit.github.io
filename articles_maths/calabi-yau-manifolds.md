@@ -23,12 +23,12 @@ This article develops the condition, its equivalent forms, the holomorphic volum
 
 **(d)** the reduced holonomy group of some Kähler metric on $M$ is contained in $SU(n)$.
 
-**Proof sketch.** (a)$\Leftrightarrow$(c) is Yau's theorem, stated below: the Ricci form represents $2\pi c_1(M)$, so a Kähler class is the class of a Ricci-flat metric exactly when $c_1=0$. (c)$\Rightarrow$(d): a Ricci-flat Kähler metric has reduced holonomy in $SU(n)$, the subgroup of $U(n)$ fixing the complex volume form. (d)$\Rightarrow$(b): a metric of holonomy in $SU(n)$ has a parallel complex volume form, which is a nowhere vanishing holomorphic $n$-form on the finite étale cover that makes the holonomy connected, so that the canonical bundle is trivial there and torsion in general. (b)$\Rightarrow$(a): a torsion canonical bundle has $c_1(K_M)=0$ in $H^2(M;\mathbb{R})$, and $c_1(M) = -c_1(K_M)$. The passage from the vanishing of $c_1$ in real cohomology to the torsion of the canonical bundle is the theorem of Bogomolov and Beauville; it is the step that makes the equivalence a statement about compact Kähler manifolds.
+**Proof sketch.** (a)$\Leftrightarrow$(c) is Yau's theorem, stated below: the Ricci form represents $2\pi c_1(M)$, so a Kähler class is the class of a Ricci-flat metric exactly when $c_1=0$. (c)$\Rightarrow$(d): a Ricci-flat Kähler metric has reduced holonomy in $SU(n)$, the subgroup of $\mathrm{U}(n)$ fixing the complex volume form. (d)$\Rightarrow$(b): a metric of holonomy in $SU(n)$ has a parallel complex volume form, which is a nowhere vanishing holomorphic $n$-form on the finite étale cover that makes the holonomy connected, so that the canonical bundle is trivial there and torsion in general. (b)$\Rightarrow$(a): a torsion canonical bundle has $c_1(K_M)=0$ in $H^2(M;\mathbb{R})$, and $c_1(M) = -c_1(K_M)$. The passage from the vanishing of $c_1$ in real cohomology to the torsion of the canonical bundle is the theorem of Bogomolov and Beauville; it is the step that makes the equivalence a statement about compact Kähler manifolds.
 
 **Theorem (Yau, on the Calabi conjecture).** Let $M$ be a compact Kähler manifold with $c_1(M)=0$. Then every Kähler class on $M$ contains exactly one Ricci-flat Kähler metric. The metric is obtained by solving the complex Monge–Ampère equation
 
 $$
-\det\Bigl(g_{i\bar j} + \partial_i\partial_{\bar j}\varphi\Bigr) = \det(g_{i\bar j})
+\det\Bigl(g_{i\bar j} + \partial^2/\partial z_i\partial\bar z_j\,\varphi\Bigr) = \det(g_{i\bar j})
 $$
 
 for the potential $\varphi$, where $g$ is any Kähler metric in the given class.
@@ -153,7 +153,7 @@ The standard examples are the elliptic curves in dimension one, the tori and $K3
 | $c_1(M)=0$ | The Calabi–Yau condition; equivalently $K_M$ torsion, equivalently reduced holonomy in $SU(n)$ |
 | $K_M = \Lambda^n(T^{1,0}M)^*$ | Canonical bundle; $c_1(M) = -c_1(K_M)$ |
 | $\Omega \in H^0(M,K_M)$ | Holomorphic volume form; $\nabla\Omega=0$, $|\Omega|_g$ constant |
-| $g_{i\bar j}$, $\varphi$ | Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial_i\partial_{\bar j}\varphi)=\det(g_{i\bar j})$ |
+| $g_{i\bar j}$, $\varphi$ | Kähler metric and potential; Monge–Ampère $\det(g_{i\bar j}+\partial^2/\partial z_i\partial\bar z_j\,\varphi)=\det(g_{i\bar j})$ |
 | $h^{n,m}$, $\chi$ | Hodge numbers; $\chi = \sum(-1)^{n+m}h^{n,m}$, $h^{n,m}=h^{N-n, N-m}$ |
 | Strict Calabi–Yau | Holonomy exactly $SU(n)$; $h^{p,0}=0$ ($0<p<n$), $b_1=0$ |
 | $X_d\subseteq\mathbb{CP}^n$ | Hypersurface of degree $d$; Calabi–Yau iff $d=n+1$; $c_1=(n+1-d)H$ |

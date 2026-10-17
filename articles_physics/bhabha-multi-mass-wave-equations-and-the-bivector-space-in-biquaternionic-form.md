@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The mass formula of the companion *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form* comes from a family of wave equations, not from a single one. These are the **relativistic wave equations of Bhabha, Gel'fand and Yaglom**: finite-dimensional equations for a field in an arbitrary Lorentz representation $\tau^{l\dot l}$, whose mass operator is a matrix and whose determinant is a polynomial in $p^2$ with several roots — one field, several masses. When the representation is an interlocking chain $(l,\dot l)\oplus(\dot l,l)$, the equation describes a particle of the generalised spin $s=|l-\dot l|$ and of mass $m$, and the chain that carries the proton is a case in point: the proton's equation is a $3540$-component equation, and its mass is the leading root.
+The mass formula of the companion *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form* comes from a family of wave equations, not from a single one. These are the **relativistic wave equations of Bhabha, Gel'fand and Yaglom**: finite-dimensional equations for a field in an arbitrary Lorentz representation $\tau^{l\bar l}$, whose mass operator is a matrix and whose determinant is a polynomial in $p^2$ with several roots — one field, several masses. When the representation is an interlocking chain $(l,\bar l)\oplus(\bar l,l)$, the equation describes a particle of the generalised spin $s=|l-\bar l|$ and of mass $m$, and the chain that carries the proton is a case in point: the proton's equation is a $3540$-component equation, and its mass is the leading root.
 
 This article records the equations, the spin chains they live on, and the third ingredient the programme attaches to them: the reduction of the equations from Minkowski space to the **bivector space** $\mathbb{R}^6$. The reduction is not decorative. The Lorentz group is six-dimensional, its parameter space is six-dimensional, and the space of antisymmetric two-tensors — the bivectors, the field strengths — is six-dimensional; the programme maps the wave equations into that space and writes them there. The corpus knows this space under another name: the field-strength biquaternion $\vec E+i\vec B$, the subject of *The Field-Strength Biquaternion and Its Invariants*, which has six real components and is exactly a point of the bivector space. The article notes the identification and states where it stops.
 
@@ -10,7 +10,7 @@ It is worth separating this article from the companion that shares the name Bhab
 
 The article is organised as follows. A first section fixes the spintensors and the spin chains. A second states the wave equations and the determinant argument. A third gives the bivector-space reduction. A fourth works the proton chain and its Dirac limit. A closing section states the biquaternion interpretation.
 
-**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\dot l}$ with $l=k/2$, $\dot l=r/2$, spin $s=|l-\dot l|$. The equations, the chains and the bivector-space material are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §2.2) and from the Bhabha and Gel'fand–Yaglom papers. One convention differs and is flagged forward: the source's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, whereas the corpus uses the $ict$ metric with three positive spacelike directions; the bivector-space signs below are the source's, and a discrepancy in their printed metric is recorded as a convention issue rather than smoothed over.
+**Conventions.** The Lorentz conventions are the corpus's: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l=k/2$, $\bar l=r/2$, spin $s=|l-\bar l|$. The equations, the chains and the bivector-space material are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400, §2.2) and from the Bhabha and Gel'fand–Yaglom papers. One convention differs and is flagged forward: the source's Minkowski metric is $\mathrm{diag}(-1,-1,-1,+1)$, whereas the corpus uses the $ict$ metric with three positive spacelike directions; the bivector-space signs below are the source's, and a discrepancy in their printed metric is recorded as a convention issue rather than smoothed over.
 
 - Companion article *The Spin–Mass Formula and the Spectrum of Elementary Particles in Biquaternionic Form*, for the mass spectrum these equations produce.
 - Companion article *The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form*, for the space in which the multi-mass fields are placed.
@@ -24,16 +24,16 @@ The article is organised as follows. A first section fixes the spintensors and t
 
 ### The Spintensor
 
-A representation of $\mathrm{SL}(2,\mathbb{C})$ is carried by a **spintensor** with $k$ undotted and $r$ dotted indices,
+A representation of $\mathrm{SL}(2,\mathbb{C})$ is carried by a **spintensor** with $k$ unbarred and $r$ barred indices,
 
 $$
-S = s_{\alpha_1\alpha_2\dots\alpha_k\dot\alpha_1\dot\alpha_2\dots\dot\alpha_r},
+S = s_{\alpha_1\alpha_2\dots\alpha_k\bar\alpha_1\bar\alpha_2\dots\bar\alpha_r},
 $$
 
-a polynomial in the products of the undotted and dotted spinors $s_\alpha$ and $s_{\dot\alpha}$; the representation is $\tau^{l\dot l}$ with
+a polynomial in the products of the unbarred and barred spinors $s_\alpha$ and $s_{\bar\alpha}$; the representation is $\tau^{l\bar l}$ with
 
 $$
-l = \tfrac{k}{2}, \qquad \dot l = \tfrac{r}{2},
+l = \tfrac{k}{2}, \qquad \bar l = \tfrac{r}{2},
 $$
 
 and the spintensor is the image of the tensor product with $k$ fundamental factors and $r$ conjugate factors,
@@ -47,7 +47,7 @@ whose spin space is
 
 $$
 \underbrace{S_2\otimes\cdots\otimes S_2}_{k}\otimes
-\underbrace{\dot S_2\otimes\cdots\otimes\dot S_2}_{r}
+\underbrace{\bar S_2\otimes\cdots\otimes\bar S_2}_{r}
 $$
 
 with $2^{k+r}$ components. Using the symmetry under permutations of the indices within each group, a spintensor can be taken **symmetric**, and the space $\mathrm{Sym}^{(k,r)}$ of symmetric spintensors has dimension
@@ -56,21 +56,21 @@ $$
 \dim\mathrm{Sym}^{(k,r)} = (k+1)(r+1),
 $$
 
-the **degree** of the representation $\tau^{l\dot l}$. This is the number that the mass formula uses: because $l=k/2$ and $\dot l=r/2$, the degree is $(2l+1)(2\dot l+1)$, and $\mathrm{SL}(2,\mathbb{C})$ has representations of every degree.
+the **degree** of the representation $\tau^{l\bar l}$. This is the number that the mass formula uses: because $l=k/2$ and $\bar l=r/2$, the degree is $(2l+1)(2\bar l+1)$, and $\mathrm{SL}(2,\mathbb{C})$ has representations of every degree.
 
 ### The Two Schemes
 
-The representations do not stand alone. $\tau^{l\dot l}$ and $\tau^{l'\dot l'}$ are **interlocking** when $l'=l\pm\frac12$, $\dot l'=\dot l\pm\frac12$, and the interlocking relations arrange all representations into three schemes: the **Bose scheme** of integer spin (the spin-0, spin-1, ... lines) and the **Fermi scheme** of half-integer spin (the spin-$\frac12$, spin-$\frac32$, ... lines), each an infinite grid of representations joined diagonally. A **field of type $(l,\dot l)\oplus(\dot l,l)$** is a field transforming in a representation and its conjugate; the wave equations of the next section are written for such fields and describe a particle of generalised spin
+The representations do not stand alone. $\tau^{l\bar l}$ and $\tau^{l'\bar l'}$ are **interlocking** when $l'=l\pm\frac12$, $\bar l'=\bar l\pm\frac12$, and the interlocking relations arrange all representations into three schemes: the **Bose scheme** of integer spin (the spin-0, spin-1, ... lines) and the **Fermi scheme** of half-integer spin (the spin-$\frac12$, spin-$\frac32$, ... lines), each an infinite grid of representations joined diagonally. A **field of type $(l,\bar l)\oplus(\bar l,l)$** is a field transforming in a representation and its conjugate; the wave equations of the next section are written for such fields and describe a particle of generalised spin
 
 $$
-s = |l-\dot l| .
+s = |l-\bar l| .
 $$
 
-The usual spin is recovered only on the restriction $\tau^{l\dot l}\to\tau^{l,0}$ (or $\to\tau^{0,\dot l}$), that is, at $\mathrm{SU}(2)\subset\mathrm{SL}(2,\mathbb{C})$, where the spin values run over $-l,-l+1,\dots,l$.
+The usual spin is recovered only on the restriction $\tau^{l\bar l}\to\tau^{l,0}$ (or $\to\tau^{0,\bar l}$), that is, at $\mathrm{SU}(2)\subset\mathrm{SL}(2,\mathbb{C})$, where the spin values run over $-l,-l+1,\dots,l$.
 
 ## The Wave Equations and the Determinant Argument
 
-The equations are written with a set of generators $\Lambda^{l\dot l}_j$ of the representation, one for each spatial direction, and read, for the field $\psi$ of the representation $\tau^{l\dot l}$,
+The equations are written with a set of generators $\Lambda^{l\bar l}_j$ of the representation, one for each spatial direction, and read, for the field $\psi$ of the representation $\tau^{l\bar l}$,
 
 $$
 \Bigl(\Gamma^{0}p_0-\Gamma^{1}p_1-\Gamma^{2}p_2-\Gamma^{3}p_3\Bigr)\psi + m\psi = 0,
@@ -86,13 +86,13 @@ $$
 The determinant is a polynomial in $p_0,p_1,p_2,p_3$ and is constant on the transitivity surfaces of the Lorentz group, the hyperboloids $s^2(p)=p_0^2-p_1^2-p_2^2-p_3^2=\text{const}$, so it depends on $s^2$ alone and factors as
 
 $$
-\tilde D\bigl(s^2\bigr) = c\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr).
+\tilde D\bigl(s^2\bigr) = \kappa\bigl(s^2-m_1^2\bigr)\bigl(s^2-m_2^2\bigr)\cdots\bigl(s^2-m_k^2\bigr).
 $$
 
 The equation has a solution exactly when $s^2=m_i^2$, so the roots $m_i$ are the masses the field can carry: a multi-mass field. Putting $\vec p=0$ makes $\Gamma(p)=p_0\Gamma^0$ and
 
 $$
-\det\bigl(p_0\Gamma^0+mE\bigr) = \tilde c\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots,
+\det\bigl(p_0\Gamma^0+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots,
 $$
 
 with $\lambda_i$ the eigenvalues of $\Gamma^0$ and $\mu_0$ a single mass scale. Comparing the two factorisations gives
@@ -101,20 +101,20 @@ $$
 m_1 = \mu_0\lambda_1,\quad -m_1=\mu_0\lambda_2,\quad m_2=\mu_0\lambda_3=-\mu_0\lambda_4,\ \dots
 $$
 
-for the representations of type $\tau^{0,\dot l}$, and in the general case of $\tau^{l\dot l}$
+for the representations of type $\tau^{0,\bar l}$, and in the general case of $\tau^{l\bar l}$
 
 $$
-m_1 = \mu_0\lambda_1\dot\lambda_1,\qquad -m_1=\mu_0\lambda_2\dot\lambda_2,\qquad m_2=\mu_0\lambda_3\dot\lambda_3=-\mu_0\lambda_4\dot\lambda_4,\ \dots
+m_1 = \mu_0\lambda_1\bar\lambda_1,\qquad -m_1=\mu_0\lambda_2\bar\lambda_2,\qquad m_2=\mu_0\lambda_3\bar\lambda_3=-\mu_0\lambda_4\bar\lambda_4,\ \dots
 $$
 
-Each non-null eigenvalue $\lambda$ occurs with $-\lambda$ of the same multiplicity, so the masses come in $\pm$ pairs, and the physical masses are the positive $|\lambda_i\dot\lambda_i|$ times $\mu_0$. In the infinite-dimensional limit $l,\dot l\to\infty$ the formula degenerates to
+Each non-null eigenvalue $\lambda$ occurs with $-\lambda$ of the same multiplicity, so the masses come in $\pm$ pairs, and the physical masses are the positive $|\lambda_i\bar\lambda_i|$ times $\mu_0$. In the infinite-dimensional limit $l,\bar l\to\infty$ the formula degenerates to
 
 $$
-m^{(s)} = \mu_0\bigl(l+\tfrac12\bigr)\bigl(\dot l+\tfrac12\bigr),
-\qquad s=|l-\dot l| ,
+m^{(s)} = \mu_0\bigl(l+\tfrac12\bigr)\bigl(\bar l+\tfrac12\bigr),
+\qquad s=|l-\bar l| ,
 $$
 
-which is the companion mass formula; in degree form it is $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$. The present article's contribution is the equations and the chains; the companion's is the spectrum and the assignments, and the two are not repeated against each other.
+which is the companion mass formula; in degree form it is $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$. The present article's contribution is the equations and the chains; the companion's is the spectrum and the assignments, and the two are not repeated against each other.
 
 ## The Bivector Space R6
 
@@ -150,14 +150,14 @@ i.e. a diagonal $(-1,+1,+1,-1,-1,+1)$, while the printed metric is $(-1,-1,-1,+1
 
 ### The equations in R6
 
-Mapping the wave equations into $\mathbb{R}^6$ turns the four spacetime derivatives into the six bivector derivatives. With $\Lambda^{l\dot l}_j$ the generators, $a_j$ the three complex coordinates ($a_1,a_2,a_3$), $g_4=ia_1$, $g_5=ia_2$, $g_6=ia_3$ and $\tilde a_j$ the dual coordinates, the equations for the field and its conjugate become
+Mapping the wave equations into $\mathbb{R}^6$ turns the four spacetime derivatives into the six bivector derivatives. With $\Lambda^{l\bar l}_j$ the generators, $a_j$ the three complex coordinates ($a_1,a_2,a_3$), $g_4=ia_1$, $g_5=ia_2$, $g_6=ia_3$ and $\tilde a_j$ the dual coordinates, the equations for the field and its conjugate become
 
 $$
-\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\dot l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\dot l}_j\Bigr)\frac{\partial\psi}{\partial a_j}
-+i\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\dot l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\dot l}_j\Bigr)^{*}\frac{\partial\psi}{\partial a_j^{*}}+m\psi = 0,
+\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\bar l}_j\Bigr)\frac{\partial\psi}{\partial a_j}
++i\sum_{j=1}^{3}\Bigl(\Lambda^{l}_j\otimes\mathbf{1}_{2\bar l+1}-\mathbf{1}_{2l+1}\otimes\Lambda^{\bar l}_j\Bigr)^{*}\frac{\partial\psi}{\partial a_j^{*}}+m\psi = 0,
 $$
 
-together with the conjugate equation for $\dot\psi$. The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is isometric to $\mathbb{R}^6$; the generalised spin is $s=|l-\dot l|$ and the mass is $m$, exactly as in Minkowski space. The passage to $\mathbb{C}^3\cong\mathbb{R}^6$ is the programme's way of writing the spinor structure's own wave equations, and the structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that will become the Dirac equation's gamma matrices at the first chain member.
+together with the conjugate equation for $\bar\psi$. The equations are defined in the three-dimensional complex space $\mathbb{C}^3$, which is isometric to $\mathbb{R}^6$; the generalised spin is $s=|l-\bar l|$ and the mass is $m$, exactly as in Minkowski space. The passage to $\mathbb{C}^3\cong\mathbb{R}^6$ is the programme's way of writing the spinor structure's own wave equations, and the structure of the equations — a difference of two tensor-product generators contracted with a derivative — is the structure that will become the Dirac equation's gamma matrices at the first chain member.
 
 ## The Proton Chain and the Dirac Limit
 
@@ -189,10 +189,10 @@ $$
 as the proton, because the mass ratio fixes it. The rule is the mass formula: normalising so that the electron's fundamental representation gives $m_e=\mu_0/2$, the ratio is
 
 $$
-\frac{m_p}{m_e} = \frac{(2l+1)(2\dot l+1)}{2},
+\frac{m_p}{m_e} = \frac{(2l+1)(2\bar l+1)}{2},
 $$
 
-and $(59/2,29)$ gives $60\times59/2=1770$. The programme's own text states the condition as $(l+\frac12)(\dot l+\frac12)\approx1800$, which is loose by a factor two — $(l+\frac12)(\dot l+\frac12)=30\times29.5=885$ — and corresponds to the normalisation $m_e=\mu_0$ rather than the $m_e=\mu_0/2$ that its own ratios require (the same factor-two slip recorded in the companion article's context). In the correct normalisation $m_p/m_e=1770$, $3.6\%$ below the measured $1836$. The proton's wave equation in $\mathbb{R}^6$ is then the $3540$-component version of the equations above, with $\Lambda^{59/2,29}_j$ replacing $\Lambda^{1/2,0}_j$. The programme's reason for not keeping the electron's chain — that the chain $(\frac12,0)\leftrightarrow(0,\frac12)$ is algebraically too simple to describe the proton's internal structure — is recorded, and the replacement of the simple chain by the high member is recorded as a **choice**, not a derivation.
+and $(59/2,29)$ gives $60\times59/2=1770$. The programme's own text states the condition as $(l+\frac12)(\bar l+\frac12)\approx1800$, which is loose by a factor two — $(l+\frac12)(\bar l+\frac12)=30\times29.5=885$ — and corresponds to the normalisation $m_e=\mu_0$ rather than the $m_e=\mu_0/2$ that its own ratios require (the same factor-two slip recorded in the companion article's context). In the correct normalisation $m_p/m_e=1770$, $3.6\%$ below the measured $1836$. The proton's wave equation in $\mathbb{R}^6$ is then the $3540$-component version of the equations above, with $\Lambda^{59/2,29}_j$ replacing $\Lambda^{1/2,0}_j$. The programme's reason for not keeping the electron's chain — that the chain $(\frac12,0)\leftrightarrow(0,\frac12)$ is algebraically too simple to describe the proton's internal structure — is recorded, and the replacement of the simple chain by the high member is recorded as a **choice**, not a derivation.
 
 ## The Biquaternion Reading
 
@@ -214,8 +214,8 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 
 **Established, and recomputed.**
 
-- The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\dot l+1)$ at $l=k/2$, $\dot l=r/2$; for the proton's chain member $60\times59=3540$.
-- The determinant factorisation $D(p)=\tilde D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\dot\lambda_i$ for $\tau^{l\dot l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma^0$; reproduced in outline.
+- The spintensor degree $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ equals the representation degree $(2l+1)(2\bar l+1)$ at $l=k/2$, $\bar l=r/2$; for the proton's chain member $60\times59=3540$.
+- The determinant factorisation $D(p)=\tilde D(s^2)$, the relation $m_i=\mu_0\lambda_i$ (and $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$), and the $\pm$ pairing of the eigenvalues of $\Gamma^0$; reproduced in outline.
 - The bivector metric's $(3,3)$ signature, matching the six-dimensional Lorentz parameter space's boost/rotation split.
 - The Dirac-limit generators reducing to the Pauli matrices at $c_{\frac12,\frac12}=2$; reproduced from the printed matrices.
 
@@ -246,7 +246,7 @@ Third, the **equations** themselves are the corpus's Dirac-Maxwell package in th
 
 ## Summary
 
-The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lorentz representation $\tau^{l\dot l}$, carried by coefficients of symmetric spintensors of degree $(k+1)(r+1)=(2l+1)(2\dot l+1)$, and give it a matrix mass whose determinant factors in $s^2=p^2$ with roots $m_i=\mu_0\lambda_i\dot\lambda_i$. The representations are organised into interlocking chains — the Bose and Fermi schemes — and the fields of type $(l,\dot l)\oplus(\dot l,l)$ carry generalised spin $s=|l-\dot l|$. The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$, whose metric and index order are transcribed and whose printed form is not fully reproduced by the stated mapping. The first chain member is the electron's Dirac doublet, whose $\mathbb{R}^6$ generators reduce to the Pauli matrices at normalisation $c=2$; the nucleon is taken at the chain member $(59/2,29)$ of degree $3540$.
+The Bhabha–Gel'fand–Yaglom wave equations place a field in an arbitrary Lorentz representation $\tau^{l\bar l}$, carried by coefficients of symmetric spintensors of degree $(k+1)(r+1)=(2l+1)(2\bar l+1)$, and give it a matrix mass whose determinant factors in $s^2=p^2$ with roots $m_i=\mu_0\lambda_i\bar\lambda_i$. The representations are organised into interlocking chains — the Bose and Fermi schemes — and the fields of type $(l,\bar l)\oplus(\bar l,l)$ carry generalised spin $s=|l-\bar l|$. The equations can be mapped into the six-dimensional bivector space $\mathbb{R}^6\cong\mathbb{C}^3$, whose metric and index order are transcribed and whose printed form is not fully reproduced by the stated mapping. The first chain member is the electron's Dirac doublet, whose $\mathbb{R}^6$ generators reduce to the Pauli matrices at normalisation $c=2$; the nucleon is taken at the chain member $(59/2,29)$ of degree $3540$.
 
 The framework's relation to this is the fundamental doublet's factor: $\mathbb{C}^2$ is the defining module of the biquaternion algebra, the bivector space is the corpus's field-strength space, and the equations' massless limit is the corpus's spinor Maxwell field. The higher chain members lie outside $\mathbb{B}$, and the physical assignments are choices fixed by the mass ratio.
 
@@ -254,13 +254,13 @@ The framework's relation to this is the fundamental doublet's factor: $\mathbb{C
 
 | Symbol | Meaning |
 |---|---|
-| $s_{\alpha_1\dots\alpha_k\dot\alpha_1\dots\dot\alpha_r}$ | Spintensor of the representation $\tau^{l\dot l}$ |
-| $l=k/2$, $\dot l=r/2$ | Lorentz labels from the numbers of undotted/dotted indices |
+| $s_{\alpha_1\dots\alpha_k\bar\alpha_1\dots\bar\alpha_r}$ | Spintensor of the representation $\tau^{l\bar l}$ |
+| $l=k/2$, $\bar l=r/2$ | Lorentz labels from the numbers of unbarred/barred indices |
 | $\dim\mathrm{Sym}^{(k,r)}=(k+1)(r+1)$ | Degree of the representation |
-| $s=\lvert l-\dot l\rvert$ | Generalised spin of the field type $(l,\dot l)\oplus(\dot l,l)$ |
+| $s=\lvert l-\bar l\rvert$ | Generalised spin of the field type $(l,\bar l)\oplus(\bar l,l)$ |
 | $\Gamma(p)$, $\Gamma^{0}$ | Momentum-contracted generator matrix and its time part |
 | $D(p)=\det(\Gamma(p)+mE)$ | Determinant whose roots are the masses |
-| $m_i=\mu_0\lambda_i\dot\lambda_i$ | Masses from the eigenvalues of $\Gamma^0$ |
+| $m_i=\mu_0\lambda_i\bar\lambda_i$ | Masses from the eigenvalues of $\Gamma^0$ |
 | $g_{ab}$, collective order $23,10,20,30,31,12$ | Bivector-space metric and index order |
 | $\mathbb{C}^3\cong\mathbb{R}^6$ | Complex form of the bivector space, Lorentz parameter space |
 | $(59/2,29)$, degree $3540$ | The proton's chain member |

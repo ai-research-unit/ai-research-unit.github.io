@@ -13,7 +13,7 @@ This article proves the statement in full. The proof is a single computation: a 
 
 The article is the third of the structural batch: the element theory is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the square theory is *The Squares and the Positive Cone of the Biquaternioid Sesqualgebra*, and the structure theory of the ideals is here. The general theory that it reads is *Ideals and Quotients of a Sesqualgebra*, where the one-sided and two-sided ideals of a sesqualgebra are defined, and *Simple Sesqualgebras and Minimal Ideals*, where the two notions of simplicity are compared and the one-sided case is treated. On the biquaternion side the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the minimal one-sided ideals of the algebra and the idempotents that determine them are the same article.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
+The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the unit, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ with ${}^{*}$ the conjugate-linear involution. The two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*, and the ideal theory of the general sesqualgebra is the one that is applied.
 
 ## Ideals of the Multiplication
 
@@ -21,13 +21,13 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 
 **Definition.** A **left ideal** of the multiplication is an $R$-submodule $I\subseteq\mathbb{B}$ with $\mathbb{B}\star I\subseteq I$; a **right ideal** is an $R$-submodule with $I\star\mathbb{B}\subseteq I$; a **two-sided ideal** is an $R$-submodule with both. The **conjugate image** of a subset $I$ is $I^{*}=\{\tilde X^{*}:\tilde X\in I\}$, and a **$\ast$-ideal** is a two-sided ideal with $I^{*}\subseteq I$.
 
-**Remark.** The definitions are those of *Ideals and Quotients of a Sesqualgebra*, §*Ideals*, read on $\mathbb{B}$ with the multiplication $\star$. The scalar-closure clause is automatic in the unital case, by the proposition of that article on the unital case, so the three notions are the plain product-closed ones here, the unit being $e_0$ on the right.
+**Remark.** The definitions are those of *Ideals and Quotients of a Sesqualgebra*, §*Ideals*, read on $\mathbb{B}$ with the multiplication $\star$. The scalar-closure clause is automatic in the unital case, by the proposition of that article on the unital case, so the three notions are the plain product-closed ones here, the unit being $e_t$ on the right.
 
 ### Two-Sided $\star$-Ideals Are $\ast$-Ideals
 
 **Theorem.** A two-sided ideal of the multiplication is stable under the involution, so the two-sided $\star$-ideals of $\mathbb{B}$ and the $\ast$-ideals of $\mathbb{B}$ are the same class.
 
-**Proof.** This is the theorem of *Simple Sesqualgebras and Minimal Ideals*, §*The Two Notions Coincide in the Derived Model*, applied to the derived model $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ with the unit $e_0$. The one computation is $\tilde X^{*}=e_0\star\tilde X$ for an element of a two-sided ideal, which lies in $\mathbb{B}\star I\subseteq I$ and so drags the conjugate into the ideal; the involution is then of order two and gives equality. With stability in hand the $\star$-conditions read $\mathbb{B}I\subseteq I$ and $I\mathbb{B}\subseteq I$, so a two-sided $\star$-ideal is a two-sided algebra ideal as well, that is, a $\ast$-ideal; and conversely an $\ast$-ideal satisfies the $\star$-conditions because $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$.
+**Proof.** This is the theorem of *Simple Sesqualgebras and Minimal Ideals*, §*The Two Notions Coincide in the Derived Model*, applied to the derived model $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ with the unit $e_t$. The one computation is $\tilde X^{*}=e_t\star\tilde X$ for an element of a two-sided ideal, which lies in $\mathbb{B}\star I\subseteq I$ and so drags the conjugate into the ideal; the involution is then of order two and gives equality. With stability in hand the $\star$-conditions read $\mathbb{B}I\subseteq I$ and $I\mathbb{B}\subseteq I$, so a two-sided $\star$-ideal is a two-sided algebra ideal as well, that is, a $\ast$-ideal; and conversely an $\ast$-ideal satisfies the $\star$-conditions because $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$.
 
 **Remark.** The stability is what a general sesqualgebra need not have, and *Ideals and Quotients of a Sesqualgebra* records the example of the principal ideal that is not stable; the derived model with a unit is exactly the case in which the involution is strong enough to close the gap. On $\mathbb{B}$ the theorem says that the two-sided ideals of the multiplication are the $\ast$-stable two-sided algebra ideals, and the next section computes them.
 
@@ -45,7 +45,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 
 **Proposition (the unit criterion).** A two-sided ideal of an algebra with a unit that contains a unit is the whole algebra.
 
-**Proof.** If $I$ contains the unit $e_0$ then for every $\tilde X$ one has $\tilde X=\tilde X e_0\in I\mathbb{B}\subseteq I$, so $I=\mathbb{B}$. The general-algebra form is the unit criterion for ideals.
+**Proof.** If $I$ contains the unit $e_t$ then for every $\tilde X$ one has $\tilde X=\tilde X e_t\in I\mathbb{B}\subseteq I$, so $I=\mathbb{B}$. The general-algebra form is the unit criterion for ideals.
 
 **Proposition (one element generates the algebra).** Let $I$ be a two-sided $\star$-ideal of $\mathbb{B}$ and let $0\neq\tilde X\in I$. Then $I=\mathbb{B}$.
 
@@ -53,7 +53,7 @@ The setting is that of *Introduction to the General Plain Sesqualgebra*: $\mathb
 $$
 \mathbb{B}\,\tilde X\,\mathbb{B}=\Bigl\{\sum_{i}\tilde A_i\tilde X\tilde B_i\Bigr\}
 $$
-is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$ because $I$ is two-sided. Since $\tilde X\neq0$, the ideal $\mathbb{B}\tilde X\mathbb{B}$ is nonzero, and the only nonzero two-sided ideal of $\mathbb{B}$ is $\mathbb{B}$ itself, by *Ideals and Peirce Decomposition of the Biquaternion Algebra*; hence $\mathbb{B}\tilde X\mathbb{B}=\mathbb{B}$. The unit criterion now gives $e_0\in I$ and $I=\mathbb{B}$.
+is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$ because $I$ is two-sided. Since $\tilde X\neq0$, the ideal $\mathbb{B}\tilde X\mathbb{B}$ is nonzero, and the only nonzero two-sided ideal of $\mathbb{B}$ is $\mathbb{B}$ itself, by *Ideals and Peirce Decomposition of the Biquaternion Algebra*; hence $\mathbb{B}\tilde X\mathbb{B}=\mathbb{B}$. The unit criterion now gives $e_t\in I$ and $I=\mathbb{B}$.
 
 **Corollary.** A nonzero two-sided $\star$-ideal contains the unit, and the two-sided $\star$-ideals are exactly $0$ and $\mathbb{B}$.
 
@@ -94,7 +94,7 @@ is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$
 
 **Theorem.** A one-sided $\star$-ideal of a derived model with a unit is stable under the involution; consequently the one-sided $\star$-ideals of $\mathbb{B}$ are exactly the stable one-sided algebra ideals.
 
-**Proof.** The stability is *Simple Sesqualgebras and Minimal Ideals*, §*The One-Sided Case*: for a left $\star$-ideal $I$ and $\tilde X\in I$ one has $\tilde X^{*}=e_0\star\tilde X\in\mathbb{B}\star I\subseteq I$; the right case is the same on the other side, and the two-sided case is the two together. With $I^{*}=I$ the $\star$-condition $\mathbb{B}\star I\subseteq I$ reads $\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$, which is the left algebra condition; conversely a stable left algebra ideal satisfies $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$.
+**Proof.** The stability is *Simple Sesqualgebras and Minimal Ideals*, §*The One-Sided Case*: for a left $\star$-ideal $I$ and $\tilde X\in I$ one has $\tilde X^{*}=e_t\star\tilde X\in\mathbb{B}\star I\subseteq I$; the right case is the same on the other side, and the two-sided case is the two together. With $I^{*}=I$ the $\star$-condition $\mathbb{B}\star I\subseteq I$ reads $\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$, which is the left algebra condition; conversely a stable left algebra ideal satisfies $\mathbb{B}\star I=\mathbb{B}I^{*}=\mathbb{B}I\subseteq I$.
 
 **Proposition (no proper one-sided $\star$-ideal).** The only left $\star$-ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$, and the same for the right ideals.
 
@@ -112,15 +112,15 @@ is a two-sided algebra ideal, it contains $\tilde X$, and it is contained in $I$
 
 **Proposition.** A minimal left algebra ideal of $\mathbb{B}$ is not a left $\star$-ideal.
 
-**Proof.** A minimal left algebra ideal is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent. Its conjugate image is $(\mathbb{B}\tilde\Pi)^{*}=\tilde\Pi^{*}\mathbb{B}$, a minimal right ideal, and it equals $\mathbb{B}\tilde\Pi$ only if $\tilde\Pi$ is central, which no primitive idempotent of $\mathbb{B}$ is, the centre being $\mathbb{C}e_0$ and the primitive idempotents the elements $\tilde\Pi(\xi)$ and the projections. So the ideal is not stable and, by the stability of one-sided $\star$-ideals, it is not a left $\star$-ideal.
+**Proof.** A minimal left algebra ideal is $\mathbb{B}\tilde\Pi$ with $\tilde\Pi$ a primitive idempotent. Its conjugate image is $(\mathbb{B}\tilde\Pi)^{*}=\tilde\Pi^{*}\mathbb{B}$, a minimal right ideal, and it equals $\mathbb{B}\tilde\Pi$ only if $\tilde\Pi$ is central, which no primitive idempotent of $\mathbb{B}$ is, the centre being $\mathbb{C}e_t$ and the primitive idempotents the elements $\tilde\Pi(\xi)$ and the projections. So the ideal is not stable and, by the stability of one-sided $\star$-ideals, it is not a left $\star$-ideal.
 
 **Remark.** The elements of the algebra therefore determine a rich lattice of minimal one-sided ideals, one for each primitive idempotent and one for each zero divisor, and the multiplication keeps none of them: the passage from the algebra to the sesqualgebra collapses the one-sided lattice to the two trivial elements. The contrast of the two lattices is the one-sided face of the simplicity of the sesqualgebra.
 
 ## The Centre and the Field
 
-**Theorem.** The centre of $\mathbb{B}$ is $\mathbb{C}e_0$, a field, and the only central idempotents are $0$ and $e_0$.
+**Theorem.** The centre of $\mathbb{B}$ is $\mathbb{C}e_t$, a field, and the only central idempotents are $0$ and $e_t$.
 
-**Proof.** The centre of the full matrix algebra is the scalar multiples of the identity, transported to $\mathbb{C}e_0$ by *Biquaternion $2\times2$ Matrix Element Representation* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the centre of a field is a field, and $\mathbb{C}e_0$ is identified with $\mathbb{C}$. A central idempotent $\tilde Z$ satisfies $\tilde Z(1-\tilde Z)=0$ and, being central, generates the two-sided ideal $\mathbb{B}\tilde Z$; since the only two-sided ideals are $0$ and $\mathbb{B}$, the idempotent is $0$ or $e_0$.
+**Proof.** The centre of the full matrix algebra is the scalar multiples of the identity, transported to $\mathbb{C}e_t$ by *Biquaternion $2\times2$ Matrix Element Representation* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the centre of a field is a field, and $\mathbb{C}e_t$ is identified with $\mathbb{C}$. A central idempotent $\tilde Z$ satisfies $\tilde Z(1-\tilde Z)=0$ and, being central, generates the two-sided ideal $\mathbb{B}\tilde Z$; since the only two-sided ideals are $0$ and $\mathbb{B}$, the idempotent is $0$ or $e_t$.
 
 **Remark.** The centre is the field of scalars of the algebra, so $\mathbb{B}$ is a **central** simple algebra, in the sense of *Central Simple Algebras and the Brauer Group*; the two-sided simplicity and the trivial centre are the two halves of that notion.
 
@@ -138,8 +138,8 @@ The two-sided ideals of the sesquilinear multiplication on $\mathbb{B}$ are $0$ 
 | $\ast$-ideal | a two-sided algebra ideal with $I^{*}\subseteq I$ |
 | $\mathbb{B}\tilde X\mathbb{B}$ | the two-sided algebra ideal generated by $\tilde X$ |
 | $\mathbb{B}\tilde\Pi$ | a minimal left algebra ideal, $\tilde\Pi$ primitive |
-| $Z(\mathbb{B})=\mathbb{C}e_0$ | the centre, a field |
-| $e_0$ | the unit and the two-sided generator of the unit criterion |
+| $Z(\mathbb{B})=\mathbb{C}e_t$ | the centre, a field |
+| $e_t$ | the unit and the two-sided generator of the unit criterion |
 
 ## Further Reading
 

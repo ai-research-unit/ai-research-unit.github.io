@@ -24,7 +24,7 @@ The article develops five things.
 
 The division between transcribed standard material and the algebra's own statements is marked throughout.
 
-**Conventions.** From the companion articles and the conventions article: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ and $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the trace $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$ at the Clifford level, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ at the $ict$ level. All statements about the finite algebra are in $\mathbb{B}$; all statements about the field are on the module.
+**Conventions.** From the companion articles and the conventions article: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ and $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); the biquaternion norm $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ and the trace $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$ at the Clifford level, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ at the $ict$ level. All statements about the finite algebra are in $\mathbb{B}$; all statements about the field are on the module.
 
 ## The One-Particle Space
 
@@ -33,7 +33,7 @@ The one-particle space of the biquaternion Dirac field is the spinor module $S=\
 $$
 S\;\cong\;\mathbb{B}\tilde\varepsilon_+ ,
 \qquad
-\tilde\varepsilon_+=\tfrac12(e_0+ie_3),
+\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z),
 \qquad
 \tilde\varepsilon_+^2=\tilde\varepsilon_+,
 \qquad
@@ -52,7 +52,7 @@ $$
 
 complex-valued, $\mathbb{C}$-antilinear in the first argument and positive definite. This is the Hilbert-space form of the Fock construction, and it is the one that makes the fermionic Fock space a Hilbert space. It is *not* the algebra's biquaternion norm.
 
-**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\varepsilon_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
+**The biquaternion norm.** On $\mathbb{B}$, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\varepsilon_+$ vanishes identically: the left ideal is totally isotropic for $\langle\cdot\rangle_{\natural}$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
 
 A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\varepsilon_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $w^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
 
@@ -60,12 +60,12 @@ A one-particle state is therefore an element of the ideal, whose *physical* cont
 
 The Lorentz action on $S$ is the spin-$\tfrac12$ representation. Two of its features are used below and are recorded here.
 
-First, the action factors through the double cover: the rotor through $2\pi$ is $-e_0$, and $-e_0$ acts on $S$ as $-\mathrm{id}$. This is the module-level statement of the covering and is computed in the spin–statistics companion.
+First, the action factors through the double cover: the rotor through $2\pi$ is $-e_t$, and $-e_t$ acts on $S$ as $-\mathrm{id}$. This is the module-level statement of the covering and is computed in the spin–statistics companion.
 
 Second, the action is by algebra multiplication. It preserves the biquaternion norm of the algebra, and it preserves the antisymmetric form $\varepsilon=i\sigma_2$; the Hermitian form $h$ is invariant only on the compact subgroup $SU(2)$, as the spinor-module article states, so a boost does not preserve it and the invariant bilinears of the module are $\varepsilon$ and the mixed pairing. With $\Phi$ the matrix realization of the algebra, the antisymmetric invariant satisfies
 
 $$
-\Phi(-e_2)=i\sigma_2 ,
+\Phi(-\vec e_y)=i\sigma_2 ,
 \qquad
 U^{\mathsf T}\varepsilon\,U=\det(U)\,\varepsilon ,
 \qquad
@@ -130,7 +130,7 @@ The even part is the state space of an even number of quanta; the odd part is th
 
 For a bosonic field the state space is the symmetric algebra $\mathrm{S}(V)$ over the one-particle space; for a fermionic field it is the exterior algebra. The choice is fixed by the bracket, and the bracket is fixed by the spin through the spin–statistics theorem, which the companion article states and tests. Two remarks make the connection to the algebra concrete.
 
-The first is the one-mode coincidence of the parent Fock-space article: inside $\mathbb{B}$ the ladder $\tilde a=\tfrac12(ie_1-e_2)$ satisfies $\tilde a^2=0$ and $\{\tilde a,\tilde a^\dagger\}=e_0$ exactly, while the commutator fails the bosonic relation by $[\tilde a,\tilde a^\dagger]=ie_3\ne e_0$. The algebra therefore hosts one *fermionic* mode and no bosonic one, and that single mode carries the two-dimensional Fock space whose basis is the parent's vacuum and one-particle state; the four-dimensional $\Lambda S$ above is the same construction applied to the two spin states of one momentum, which the parent counts as two modes. The second is the trace identity that blocks the bosonic alternative: a canonical commutator would have to be central, $[\tilde a,\tilde a^\dagger]=c\,e_0$ with $c\in\mathbb{C}$, but the trace of a commutator vanishes and $\mathrm{Tr}(e_0)=2$, so $c=0$.
+The first is the one-mode coincidence of the parent Fock-space article: inside $\mathbb{B}$ the ladder $\tilde a=\tfrac12(i\vec e_x-\vec e_y)$ satisfies $\tilde a^2=0$ and $\{\tilde a,\tilde a^\dagger\}=e_t$ exactly, while the commutator fails the bosonic relation by $[\tilde a,\tilde a^\dagger]=i\vec e_z\ne e_t$. The algebra therefore hosts one *fermionic* mode and no bosonic one, and that single mode carries the two-dimensional Fock space whose basis is the parent's vacuum and one-particle state; the four-dimensional $\Lambda S$ above is the same construction applied to the two spin states of one momentum, which the parent counts as two modes. The second is the trace identity that blocks the bosonic alternative: a canonical commutator would have to be central, $[\tilde a,\tilde a^\dagger]=c\,e_t$ with $c\in\mathbb{C}$, but the trace of a commutator vanishes and $\mathrm{Tr}(e_t)=2$, so $c=0$.
 
 Neither remark *derives* the fermionic bracket for the field — that is the theorem's, and the companion is explicit that the algebra does not force it. What they establish is that the algebra's finite content is the fermionic one, so that the exterior algebra over the module is the state space the algebra itself supplies.
 
@@ -176,7 +176,7 @@ because the representing matrices of $\mathrm{SU}(2)$ on $S$ are traceless. Henc
 
 Three consequences are worth stating.
 
-**The $2\pi$ sign and the grading agree.** The covering element $-e_0$ acts on $\Lambda^nS$ as $(-1)^n$ times the identity, so the nontrivial element of the double cover is precisely the degree parity on the Fock space. Because the one-particle space is odd, the action of $-e_0$ on it is $-\mathrm{id}$; on the vacuum and on the pair it is $+\mathrm{id}$. A $2\pi$ rotation therefore acts as the fermionic parity $(-1)^{N^{\mathrm{fop}}}$ on the state space: the spinors carry the sign $-1$, while the even subspace and every bilinear are returned to themselves, so the sign is invisible in observables and only the $4\pi$ rotation returns a spinor to itself. This is the state-space content of the spin–statistics pairing of the companion article.
+**The $2\pi$ sign and the grading agree.** The covering element $-e_t$ acts on $\Lambda^nS$ as $(-1)^n$ times the identity, so the nontrivial element of the double cover is precisely the degree parity on the Fock space. Because the one-particle space is odd, the action of $-e_t$ on it is $-\mathrm{id}$; on the vacuum and on the pair it is $+\mathrm{id}$. A $2\pi$ rotation therefore acts as the fermionic parity $(-1)^{N^{\mathrm{fop}}}$ on the state space: the spinors carry the sign $-1$, while the even subspace and every bilinear are returned to themselves, so the sign is invisible in observables and only the $4\pi$ rotation returns a spinor to itself. This is the state-space content of the spin–statistics pairing of the companion article.
 
 **The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\vec p,r}S_{\vec p,r}$, and the functor gives
 
@@ -204,14 +204,14 @@ The exterior-power construction is a functor from the one-particle category to t
 **The parity of the negation.** The one-particle space carries the representation of the double cover; the scalar $-1$ acts on $S$ as $-\mathrm{id}$. On $\Lambda^nS$ it acts as $(-1)^n$, hence on the whole Fock space as the operator
 
 $$
-\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2\vec u)=\prod_{\text{modes}}i e_3^{(\text{mode})} ,
+\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}=\prod_{\text{modes}}(I-2\vec u)=\prod_{\text{modes}}i \vec e_z^{(\text{mode})} ,
 $$
 
-where the last equality uses the one-mode identity $(-1)^F=ie_3$ of the parents. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
+where the last equality uses the one-mode identity $(-1)^F=i\vec e_z$ of the parents. The operator identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed on the four-dimensional space $\Lambda S$: $\Gamma(-I)$ built as $\mathrm{diag}(1,-1,-1,1)$ from its action on degree $0,1,2$ equals the product of the single-mode parities exactly, with eigenvalue list $\{+1,+1,-1,-1\}$ in both constructions.
 
 **The parity and the field.** The field operator, being a sum of one-mode operators, is odd under $\Gamma(-I)$; a bilinear is even. The observable algebra of the field is therefore the even part of the Fock space's operator algebra, and the state space splits into an even and an odd sector that never mix under observables. This is the state-space statement of the field's $\mathbb{Z}/2$ grading.
 
-**The sign convention.** With $\vec u=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has $(-1)^{\vec u}=i e_3$ for one mode; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}ie_3$ this reads $(-1)^F=2\tilde S_3/\hbar$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
+**The sign convention.** With $\vec u=a^{\mathrm{fop}\dagger} a^{\mathrm{fop}}$ one has $(-1)^{\vec u}=i \vec e_z$ for one mode; with the $\mathbb{M}_+$ generator $\tilde S_3=\tfrac{\hbar}{2}i\vec e_z$ this reads $(-1)^F=2\tilde S_3/\hbar$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode; for the field, the product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
 ## The Inner Product, States and the Trace Pairing
 
@@ -246,7 +246,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 **The algebra's own.**
 
 - *The one-particle space as a minimal left ideal* $S=\mathbb{B}\tilde\varepsilon_+$, with the two structures on it: the Hermitian form for probabilities and the antisymmetric form for invariants, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it. The distinction is a framework convention and is kept explicit.
-- *The one-mode identification of the state space with the algebra's own spin structure*: $\Lambda S$ is four-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=ie_3$ are all statements about $\mathbb{B}$, while over the two spin states of one momentum the state space is $\Lambda S$ itself.
+- *The one-mode identification of the state space with the algebra's own spin structure*: $\Lambda S$ is four-dimensional and its grading is the degree parity, so for a single ladder the Fock space, the spin tower and the parity $(-1)^F=i\vec e_z$ are all statements about $\mathbb{B}$, while over the two spin states of one momentum the state space is $\Lambda S$ itself.
 - *The sector assignment of states and observables*, both in $\mathbb{M}_+$, with the trace pairing as the Born rule.
 
 **Open.**
@@ -263,7 +263,7 @@ Second, the trace pairing uses the *algebraic* trace $2\,\mathrm{Sc}$, which for
 
 ## Summary
 
-The fermionic Fock space of the biquaternion spin-$\tfrac12$ field is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states of one momentum; the antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\varepsilon_+$ with $\tilde\varepsilon_+=\tfrac12(e_0+ie_3)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
+The fermionic Fock space of the biquaternion spin-$\tfrac12$ field is the exterior algebra over the one-particle spinor module, $\mathcal{F}=\Lambda S$ with $\dim_\mathbb{C}\Lambda S=1+2+1=4$ over the two spin states of one momentum; the antisymmetry is forced by the anticommutator, which the spin–statistics companion fixes by the spin. The one-particle space is the minimal left ideal $S=\mathbb{B}\tilde\varepsilon_+$ with $\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z)$ Hermitian and primitive, carrying the positive-definite Hermitian form for probabilities and the antisymmetric form for the Lorentz-invariant bilinears, while the algebra's biquaternion norm is isotropic on the ideal and does not descend to it; the idempotent and the ideal dimension were recomputed exactly.
 
 The occupation-number basis $|0\rangle,|\!\uparrow\rangle,|\!\downarrow\rangle,|\!\uparrow\downarrow\rangle$ has the wedge product with the Koszul sign, which yields Pauli exclusion. The Lorentz content is
 
@@ -273,7 +273,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\vec J^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_0)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=ie_3=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
+with $\vec J^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_t)=(-1)^{N^{\mathrm{fop}}}$, and the identity $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde P H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde P H^{\mathrm{fop}})$, checked to machine precision.
 
@@ -282,10 +282,10 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | Symbol | Meaning |
 |---|---|
 | $S=\mathbb{C}^2=\mathbb{B}\tilde\varepsilon_+$ | One-particle spinor module (minimal left ideal) |
-| $\tilde\varepsilon_+=\tfrac12(e_0+ie_3)$ | Primitive Hermitian idempotent, $\tilde\varepsilon_+^2=\tilde\varepsilon_+$ |
+| $\tilde\varepsilon_+=\tfrac12(e_t+i\vec e_z)$ | Primitive Hermitian idempotent, $\tilde\varepsilon_+^2=\tilde\varepsilon_+$ |
 | $\langle\xi,\eta\rangle=\xi^{*}\eta$ | Positive-definite Hermitian form on $S$ (invariant on $SU(2)$ only) |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm on $\mathbb{B}$; signature $(3,1)$ on $\mathbb{M}_-$, $(1,3)$ on $\mathbb{M}_+$, vanishing on the left ideal |
-| $\varepsilon=i\sigma_2=\Phi(-e_2)$ | Invariant antisymmetric form, $U^{\mathsf T}\varepsilon U=\varepsilon$ |
+| $\varepsilon=i\sigma_2=\Phi(-\vec e_y)$ | Invariant antisymmetric form, $U^{\mathsf T}\varepsilon U=\varepsilon$ |
 | $\mathcal{F}=\Lambda S$ | Fermionic Fock space |
 | $|0\rangle,|\!\uparrow\rangle,|\!\downarrow\rangle,|\!\uparrow\downarrow\rangle$ | Occupation-number basis; $\dim_\mathbb{C}\mathcal{F}=4$ |
 | $q_1\wedge q_2=(-1)^{|q_1||q_2|}q_2\wedge q_1$ | Graded-commutative wedge (Koszul sign) |
@@ -294,7 +294,7 @@ The operators generated by the mode operators fill the matrix algebra of the Foc
 | $\Lambda S=\mathbb{C}\oplus S\oplus\mathbb{C}$ | Lorentz content of the two spin states of one momentum: $0\oplus\tfrac12\oplus0$ |
 | $S_i=\tfrac12a_s^{\mathrm{fop}\dagger}(\sigma_i)_{ss'}a_{s'}^{\mathrm{fop}}$ | Spin operators on $\Lambda S$ |
 | $\Gamma(-I)=(-1)^{N^{\mathrm{fop}}}$ | Degree parity; $2\pi$ rotation on the Fock space |
-| $(-1)^F=ie_3=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$ |
+| $(-1)^F=i\vec e_z=2\tilde S_3/\hbar$ (one mode) | Parity as an element of $\mathbb{M}_+$ |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Mode algebra of $\langle\cdot\rangle_{\natural}$ fermionic modes |
 | $\tilde P^2=\tilde P=\tilde P^{*}$, $\mathrm{Tr}\tilde P=1$ | Pure state as a Hermitian idempotent in $\mathbb{M}_+$ |
 | $\langle H^{\mathrm{fop}}\rangle=\mathrm{Tr}(\tilde P H^{\mathrm{fop}})=2\,\mathrm{Sc}(\tilde P H^{\mathrm{fop}})$ | Born rule as the trace pairing |

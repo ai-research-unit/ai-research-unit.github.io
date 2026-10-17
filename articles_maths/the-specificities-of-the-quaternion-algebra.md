@@ -10,30 +10,30 @@ This article collects what is specific to the quaternion algebra among the algeb
 
 | Class | Condition | Set in $\mathbb{H}$ |
 |---|---|---|
-| zero divisors | $\tilde p\tilde q=0$, both non-zero | none |
-| non-zero nilpotents | $\tilde a^2=0$, $\tilde a\neq0$ | none |
-| idempotents | $\tilde a^2=\tilde a$ | $\{0,e_0\}$ |
-| roots of $-1$ | $\tilde\xi^2=-e_0$ | the unit sphere of the vector subspace $V$, a two-dimensional family |
-| roots of $+1$ | $\tilde\xi^2=e_0$ | $\{\pm e_0\}$ |
+| zero divisors | $\tilde q_1\tilde q_2=0$, both non-zero | none |
+| non-zero nilpotents | $\tilde q^2=0$, $\tilde q\neq0$ | none |
+| idempotents | $\tilde q^2=\tilde q$ | $\{0,e_t\}$ |
+| roots of $-1$ | $\tilde\xi^2=-e_t$ | the unit sphere of the vector subspace $V$, a two-dimensional family |
+| roots of $+1$ | $\tilde\xi^2=e_t$ | $\{\pm e_t\}$ |
 | roots of $0$ | $\tilde\xi^2=0$ | $\{0\}$ |
 
-*Proof.* Every non-zero element is invertible by *Norm and Invertibility in the Quaternion Algebra*, above this article in this category, with $\tilde q^{-1}=\tilde q^{\natural}/\tilde q\tilde q^{\natural}$; a vanishing product with a non-zero factor therefore forces the other factor to vanish, so there is no zero divisor, and a non-zero nilpotent would be a zero divisor with itself. For the idempotents, $\tilde a(\tilde a-e_0)=0$ forces $\tilde a=0$ or $\tilde a=e_0$. The three root sets are the cases $q_0=-1,0,1$ of the classification of *Square Roots of a General Element in the Quaternion Algebra*, above this article in this category.
+*Proof.* Every non-zero element is invertible by *Norm and Invertibility in the Quaternion Algebra*, above this article in this category, with $\tilde q^{-1}=\tilde q^{\natural}/\tilde q\tilde q^{\natural}$; a vanishing product with a non-zero factor therefore forces the other factor to vanish, so there is no zero divisor, and a non-zero nilpotent would be a zero divisor with itself. For the idempotents, $\tilde q(\tilde q-e_t)=0$ forces $\tilde q=0$ or $\tilde q=e_t$. The three root sets are the cases $q_t=-1,0,1$ of the classification of *Square Roots of a General Element in the Quaternion Algebra*, above this article in this category.
 
 ## Associativity, the Unit and the Division Property
 
 The three properties that isolate the block are:
 
-- **Associativity**, $(\tilde p\tilde q)\tilde r=\tilde p(\tilde q\tilde r)$, proved on the generators $e_1,e_2$ in *Introduction to the Quaternion Algebra*, above this article in this category;
-- the **two-sided unit** $e_0$, $e_0\tilde q=\tilde qe_0=\tilde q$;
-- the **division property**, every non-zero element invertible, equivalently the equation $\tilde a\tilde x=\tilde b$ uniquely solvable for $\tilde x$ whenever $\tilde a\neq0$.
+- **Associativity**, $(\tilde q_1\tilde q_2)\tilde q_3=\tilde q_1(\tilde q_2\tilde q_3)$, proved on the generators $\vec e_x,\vec e_y$ in *Introduction to the Quaternion Algebra*, above this article in this category;
+- the **two-sided unit** $e_t$, $e_t\tilde q=\tilde qe_t=\tilde q$;
+- the **division property**, every non-zero element invertible, equivalently the equation $\tilde q_1\tilde q_2=\tilde q_3$ uniquely solvable for $\tilde q_2$ whenever $\tilde q_1\neq0$.
 
 **Theorem.** The quaternion product is associative with a two-sided unit and has the division property.
 
 ## The Centre
 
-**Theorem.** The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}e_0$, and the centre of the group of units is $\mathbb{R}^{\times}e_0$.
+**Theorem.** The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}e_t$, and the centre of the group of units is $\mathbb{R}^{\times}e_t$.
 
-*Proof.* Commuting with $e_1$ and with $e_2$ forces the vector part to vanish; the scalars commute. For the units, an element commuting with every quaternion lies in the centre, and a non-zero scalar is a unit.
+*Proof.* Commuting with $\vec e_x$ and with $\vec e_y$ forces the vector part to vanish; the scalars commute. For the units, an element commuting with every quaternion lies in the centre, and a non-zero scalar is a unit.
 
 The centrality of the scalar line is what makes $\langle\tilde q\rangle_{\natural}$ a scalar and what makes the polar split of the units a direct product; both readings are in *Norm and Invertibility in the Quaternion Algebra*, above this article in this category.
 
@@ -45,7 +45,7 @@ $$
 \mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}\cong \operatorname{End}_\mathbb{R}(\mathbb{H})\cong M_4(\mathbb{R}).
 $$
 
-*Proof.* The sandwich map $\tilde p\otimes\tilde q^{\mathrm{opp}}\mapsto(\tilde r\mapsto\tilde p\tilde r\tilde q)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
+*Proof.* The sandwich map $\tilde q_1\otimes\tilde q_2^{\mathrm{opp}}\mapsto(\tilde q_3\mapsto\tilde q_1\tilde q_3\tilde q_2)$ is an $\mathbb{R}$-algebra homomorphism of a $16$-dimensional algebra onto $\operatorname{End}_\mathbb{R}(\mathbb{H})$, of dimension $16$; it is injective because $\mathbb{H}$ is central simple over $\mathbb{R}$, and the enveloping algebra and the operator basis are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 
 Thus the algebra is a division algebra over $\mathbb{R}$ and its enveloping tensor product is the full endomorphism algebra.
 
@@ -61,15 +61,15 @@ Thus the algebra is a division algebra over $\mathbb{R}$ and its enveloping tens
 
 ## Summary
 
-The quaternion product is the only product the space carries that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_0$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_0$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_0$; the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
+The quaternion product is the only product the space carries that is associative with a two-sided unit and has the division property; every non-zero quaternion is invertible. Consequently the zero divisors, the non-zero nilpotents and the nontrivial idempotents are all absent, and the classes of element reduce to the table: no zero divisor, no non-zero nilpotent, idempotents $0$ and $e_t$, roots of $-1$ the unit sphere of the vector subspace, roots of $+1$ the pair $\pm e_t$, roots of $0$ the origin. The centre is the scalar line $\mathbb{R}e_t$; the enveloping algebra is $M_4(\mathbb{R})$; by Frobenius the algebra is one of the three real associative division algebras, and by Hurwitz one of the four real composition algebras.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra, the block's division algebra |
-| $e_0$ | Two-sided unit |
-| $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | Vector subspace |
+| $e_t$ | Two-sided unit |
+| $V=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | Vector subspace |
 | $\mathbb{H}^{\mathrm{opp}}$ | Opposite algebra |
 | $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ | Enveloping algebra, $\cong M_4(\mathbb{R})$ |
 

@@ -52,7 +52,7 @@ $$
 
 **Corollary (the multiplications are isometric and multiplicative).** The maps $U\mapsto L_U$ and $V\mapsto R_V$ are linear, multiplicative and isometric: $\|L_U\|=\|U\|$, $\|R_V\|=\|V\|$, and the two families commute, $L_UR_V=R_VL_U$.
 
-*Proof.* The norm identity is $\|UT\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality at a rank-one operator for which the vector is aligned with $U$; multiplicativity is associativity, and the commutativity is $U(TV)=(UT)V$.
+*Proof.* The norm identity is $\|UT\|_{\mathrm{HS}}\le\|U\|\|T\|_{\mathrm{HS}}$ with equality at a rank-one operator for which the vector is aligned with $U$; multiplicativity is associativity, and the commutativity is $\mathrm{U}(TV)=(UT)V$.
 
 ## Self-Adjointness, Normality and the Order
 

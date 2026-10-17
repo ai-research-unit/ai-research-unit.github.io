@@ -6,7 +6,7 @@ The biquaternion algebra is a Clifford algebra in two separate senses, and the s
 
 The article is a slot article: it states the geometry the Clifford structure defines and cites the articles that construct it. The module itself is realised in the matrix model in *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the Clifford multiplication being stated here; the analytic theory of the operator is *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis; the rulings that the spinor lines trace are in *The Null Quadric and Its Projective Geometry*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra* is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra* is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
 
@@ -16,17 +16,17 @@ As a module over the complexified Lorentz algebra, the complexification of the M
 $$
 \mathbb{B}\cong\Delta^+\otimes\Delta^-,\qquad \dim_{\mathbb{C}}\Delta^\pm=2 .
 $$
-A biquaternion is therefore a **mixed spinor** with one unprimed and one primed index, $A_\alpha{}^{\dot\beta}$, and the null condition is exactly factorisability:
+A biquaternion is therefore a **mixed spinor** with one unbarred and one barred index, $A_\alpha{}^{\bar\beta}$, and the null condition is exactly factorisability:
 $$
-A_\alpha{}^{\dot\beta}=\phi_\alpha\,\pi^{\dot\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
+A_\alpha{}^{\bar\beta}=\phi_\alpha\,\pi^{\bar\beta},\qquad \phi\in\Delta^+,\ \pi\in\Delta^- .
 $$
-Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the column $u$ is the unprimed spinor $\phi$ and the row $v^{T}$ the primed spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **primed and unprimed spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
+Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the column $u$ is the unbarred spinor $\phi$ and the row $v^{T}$ the barred spinor $\pi$. Hence fixing $\phi$ and varying $\pi$ traces $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)=\mathbb{P}^1$, while fixing $\pi$ and varying $\phi$ traces $m_{[\pi]}\cong\mathbb{P}(\Delta^+)=\mathbb{P}^1$. The two rulings are the **barred and unbarred spinor lines**, and they correspond to the two chiralities, since the complexified algebra splits into two simple summands, the two chirality eigenspaces. Which half-spin module is named $\Delta^+$ is a convention.
 
 ---
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\vec u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_t\pm i\vec u)$ are a complete pair of orthogonal idempotents (*Idempotents of the Biquaternion Algebra*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$
@@ -34,7 +34,7 @@ so that the module of the spin representation is realised inside the algebra as 
 
 ## The Spin Representation and Its Dimension
 
-The spin representation of the biquaternion algebra is the natural representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$, of complex dimension $2$ and real dimension $4$. Its two chiral halves $\Delta^\pm$ are each of complex dimension $2$; the algebra acts on $\Delta^+$ from one side and on $\Delta^-$ from the other, and a general biquaternion is the mixed tensor $A_\alpha{}^{\dot\beta}\in\Delta^+\otimes\Delta^-$. The representation is irreducible as a module over the full algebra, since $\mathbb{B}$ is simple, and it splits into the two chiral summands only after complexification, $S\otimes_{\mathbb{R}}\mathbb{C}=S_+\oplus S_-$, the two halves being the two simple modules of the complexified Clifford algebra.
+The spin representation of the biquaternion algebra is the natural representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$, of complex dimension $2$ and real dimension $4$. Its two chiral halves $\Delta^\pm$ are each of complex dimension $2$; the algebra acts on $\Delta^+$ from one side and on $\Delta^-$ from the other, and a general biquaternion is the mixed tensor $A_\alpha{}^{\bar\beta}\in\Delta^+\otimes\Delta^-$. The representation is irreducible as a module over the full algebra, since $\mathbb{B}$ is simple, and it splits into the two chiral summands only after complexification, $S\otimes_{\mathbb{R}}\mathbb{C}=S_+\oplus S_-$, the two halves being the two simple modules of the complexified Clifford algebra.
 
 **Clifford multiplication.** The module carries the **Clifford multiplication** of $\mathrm{Cl}_{3,0}$, in which the generators act by the Pauli matrices,
 $$
@@ -46,7 +46,7 @@ in the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$; the images satisfy $c(\ga
 $$
 c(\omega)=c(\gamma_1)c(\gamma_2)c(\gamma_3)=\sigma_1\sigma_2\sigma_3=iI,
 $$
-agreement of the two computations being $\omega\mapsto(ie_1)(ie_2)(ie_3)=i^3e_1e_2e_3=(-i)(-e_0)=i$. Consequently $S$ carries **no chirality splitting**: every vector of $S$ is an eigenvector of $c(\omega)$ with the one eigenvalue $i$, and the volume element does not grade the module.
+agreement of the two computations being $\omega\mapsto(i\vec e_x)(i\vec e_y)(i\vec e_z)=i^3\vec e_x\vec e_y\vec e_z=(-i)(-e_t)=i$. Consequently $S$ carries **no chirality splitting**: every vector of $S$ is an eigenvector of $c(\omega)$ with the one eigenvalue $i$, and the volume element does not grade the module.
 
 ## Chirality, Reality and the Two Halves
 
@@ -58,13 +58,13 @@ the two Weyl spinor spaces: as representations of $SL(2,\mathbb{C})$ they are co
 
 **Remark (the two faces of chirality).** The same two Weyl spaces appear twice, and the two appearances must not be confused. As the tensor factors of the even Clifford algebra, $\mathbb{B}\cong\Delta^+\otimes\Delta^-$, they describe a biquaternion as a mixed spinor (§*The Spinor Module and Its Two Chiral Halves*); as the summands of the complexified module, $S\otimes_{\mathbb{R}}\mathbb{C}=\Delta^+\oplus\Delta^-$, they describe the Dirac spinor of complex dimension four. The tensor splitting is a statement about the algebra, the direct splitting a statement about its module, and both express the same chirality.
 
-**Remark (the spin group acts, the Lorentz group does not).** The module carries the defining action of $SL(2,\mathbb{C})=\mathbb{B}^\times_1$ by Clifford multiplication, which is the spin representation of *Biquaternion Rotations and Lorentz Transformations*, §*The Group of Units and Its Representations*. The Lorentz group $SO^+(1,3)$ is the quotient by $\{\pm e_0\}$ and acts on the module only up to sign: it acts on the algebra by automorphisms, but it does not act on the module by algebra automorphisms, which is the standard statement that the Lorentz group itself has no two-dimensional spin representation.
+**Remark (the spin group acts, the Lorentz group does not).** The module carries the defining action of $SL(2,\mathbb{C})=\mathbb{B}^\times_1$ by Clifford multiplication, which is the spin representation of *Biquaternion Rotations and Lorentz Transformations*, §*The Group of Units and Its Representations*. The Lorentz group $SO^+(1,3)$ is the quotient by $\{\pm e_t\}$ and acts on the module only up to sign: it acts on the algebra by automorphisms, but it does not act on the module by algebra automorphisms, which is the standard statement that the Lorentz group itself has no two-dimensional spin representation.
 
 ## The Dirac Operator
 
 The Clifford structure puts a first-order operator on the spinor module: the Dirac operator, the composition of the covariant derivative with the Clifford multiplication by the basis vectors. On the flat algebra it is the constant-coefficient operator
 $$
-D=\sum_{\mu=0}^{3} e_\mu\,\partial_\mu ,
+D=\sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial_\mu ,
 $$
 whose square is the d'Alembertian, $D^2=\Box$, and whose kernel is the space of regular functions of the algebra. The operator is a geometric object: it is defined by the Clifford multiplication alone, it is invariant under the motions the form defines, and it is the operator the spin structure exists to carry. Its properties as an operator — the kernel and its integral representation, the Cauchy integral, the decomposition of the space of functions — are the subject of *Fueter Theory for Biquaternions* and *Biquaternion Regular Functions* in Analysis, and the general theory is *Spin Geometry* and *The Dirac Operator* of Part IV; it is cited here and not restated.
 
@@ -74,7 +74,7 @@ The two Clifford structures of the algebra give two different spinor modules, an
 
 ## Summary
 
-The spin geometry of the biquaternion algebra rests on the identification of the algebra with an even Clifford algebra. The spinor module is the natural module of $M_2(\mathbb{C})$, of complex dimension $2$; it carries the Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, so the volume element acts as a scalar and does not grade the module; the chiral halves appear only on complexification, where they are the $\pm i$ eigenspaces of $c(\omega)$, and the reality type is complex, so there is no Majorana spinor. Its two chiral halves $\Delta^\pm$ are the two simple summands of the even part, and a biquaternion is the mixed spinor $A_\alpha{}^{\dot\beta}\in\Delta^+\otimes\Delta^-$. The null condition on a mixed spinor is factorisability, $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$, and the two rulings of the null quadric — the primed and unprimed spinor lines — are the families traced by fixing one factor.
+The spin geometry of the biquaternion algebra rests on the identification of the algebra with an even Clifford algebra. The spinor module is the natural module of $M_2(\mathbb{C})$, of complex dimension $2$; it carries the Clifford multiplication $c(\gamma_k)=\sigma_k$, $c(\omega)=iI$, so the volume element acts as a scalar and does not grade the module; the chiral halves appear only on complexification, where they are the $\pm i$ eigenspaces of $c(\omega)$, and the reality type is complex, so there is no Majorana spinor. Its two chiral halves $\Delta^\pm$ are the two simple summands of the even part, and a biquaternion is the mixed spinor $A_\alpha{}^{\bar\beta}\in\Delta^+\otimes\Delta^-$. The null condition on a mixed spinor is factorisability, $A_\alpha{}^{\bar\beta}=\phi_\alpha\pi^{\bar\beta}$, and the two rulings of the null quadric — the barred and unbarred spinor lines — are the families traced by fixing one factor.
 
 The module is realised inside the algebra as a minimal left ideal, the algebra being the direct sum $\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ of the two ideals cut out by a complete pair of orthogonal idempotents; the two ideals are isomorphic, and each of them complexifies to $S_+\oplus S_-$, so neither is itself a chiral half. The Dirac operator is the constant-coefficient operator $D=\sum_\mu e_\mu\partial_\mu$ with $D^2=\Box$, defined by the Clifford multiplication alone and invariant under the motions of the form. Its analytic theory is in Analysis and the general theory in Part IV, both cited.
 
@@ -91,8 +91,8 @@ The algebra carries two Clifford structures, and with them two spinor modules: t
 | complex; no Majorana | Reality type of the module; no real chirality splitting, no Majorana spinor |
 | $SL(2,\mathbb{C})$ | Acts on the module by Clifford multiplication; $SO^+(1,3)$ only up to sign |
 | $\mathbb{B}\cong\Delta^+\otimes\Delta^-$ | Biquaternion as a mixed spinor |
-| $A_\alpha{}^{\dot\beta}=\phi_\alpha\pi^{\dot\beta}$ | Factorisation of a null biquaternion |
-| $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)$, $m_{[\pi]}\cong\mathbb{P}(\Delta^+)$ | The two rulings, as the primed and unprimed spinor lines |
+| $A_\alpha{}^{\bar\beta}=\phi_\alpha\pi^{\bar\beta}$ | Factorisation of a null biquaternion |
+| $\ell_{[\phi]}\cong\mathbb{P}(\Delta^-)$, $m_{[\pi]}\cong\mathbb{P}(\Delta^+)$ | The two rulings, as the barred and unbarred spinor lines |
 | $\tilde\Pi_{1,2}$ | Complete pair of orthogonal idempotents; $\mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2$ |
 | $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$ | Minimal left ideal; the module of the spin representation |
 | $D=\sum_\mu e_\mu\partial_\mu$ | Dirac operator; $D^2=\Box$ |

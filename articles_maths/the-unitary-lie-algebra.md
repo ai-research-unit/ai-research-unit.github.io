@@ -12,7 +12,7 @@ the set $S(A)$ with the bracket $[x,y] = xy - yx$. It is the Lie companion of *T
 
 The article turns on one difference from its Jordan twin and on one parallel. The difference is the hypothesis: the Jordan structure needs $2$ invertible in $R$, and the Lie structure needs nothing on $2$ at all, because the commutator is alternating and the closure computation uses only that the involution is an anti-automorphism of order two. The parallel is the scalars: as for the Hermitian half, the skew-Hermitian half is a module over the **fixed ring** $R^{\varsigma}$ and not over $R$, and the Lie algebra is an algebra over $R^{\varsigma}$. The bilinear theory of the skew part is *The Self-Adjoint Part of an Algebra*, §*The Skew Part as a Lie Algebra*, and the present article is its sesquilinear counterpart, obtained by cutting the scalars down to the fixed ring. That article writes $K(A)$ for the skew part; here the sesquilinear notation $S(A)$ is kept throughout.
 
-The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$. The two halves and the closure of $S(A)$ under the commutator are *Hermitian and Skew-Hermitian Elements*, §*The Skew-Hermitian Part is a Lie Algebra*; the skew-Hermitian elements under the symmetrised product are the Jordan twin, *The Hermitian Jordan Algebra*; the unitary elements, the group $U(A)$ and the inner $*$-automorphisms $x \mapsto uxu^{*}$ are *Units and the Unitary Elements*; the derivations and the inner derivations $D_{a}(x) = ax - xa$ are *Derivations of a Sesqualgebra*; the general theory and the structure theory are *Lie Algebras* and *Structure of Lie Algebras*; and the Lie structures a sesqualgebra carries as a whole are *Lie Algebras of Sesqualgebras*.
+The setting is that of *Sesqualgebras*: $R$ is a commutative ring with $1$, $\varsigma$ is an involution of $R$, and $A$ is an associative $R$-algebra with a $\varsigma$-semilinear involution $*$. The two halves and the closure of $S(A)$ under the commutator are *Hermitian and Skew-Hermitian Elements*, §*The Skew-Hermitian Part is a Lie Algebra*; the skew-Hermitian elements under the symmetrised product are the Jordan twin, *The Hermitian Jordan Algebra*; the unitary elements, the group $\mathrm{U}(A)$ and the inner $*$-automorphisms $x \mapsto uxu^{*}$ are *Units and the Unitary Elements*; the derivations and the inner derivations $D_{a}(x) = ax - xa$ are *Derivations of a Sesqualgebra*; the general theory and the structure theory are *Lie Algebras* and *Structure of Lie Algebras*; and the Lie structures a sesqualgebra carries as a whole are *Lie Algebras of Sesqualgebras*.
 
 ---
 
@@ -102,13 +102,13 @@ Finally $\mathrm{ad}_{s} = 0$ if and only if $sx = xs$ for every $x$, that is if
 
 ### The Unitary Group
 
-**Theorem.** Let $u \in U(A)$ be unitary and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u}$ preserves $S(A)$, and it is an automorphism of the Lie algebra $\mathfrak{u}(A)$:
+**Theorem.** Let $u \in \mathrm{U}(A)$ be unitary and let $\alpha_{u}(x) = uxu^{*}$. Then $\alpha_{u}$ preserves $S(A)$, and it is an automorphism of the Lie algebra $\mathfrak{u}(A)$:
 
 $$
 \alpha_{u}\bigl([x,y]\bigr) = \bigl[\alpha_{u}(x), \alpha_{u}(y)\bigr] \quad \text{for all } x, y \in S(A) .
 $$
 
-The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $U(A)$ into the automorphism group of $\mathfrak{u}(A)$, and its kernel is the group of the central unitary elements.
+The assignment $u \mapsto \alpha_{u}$ is a homomorphism of the group $\mathrm{U}(A)$ into the automorphism group of $\mathfrak{u}(A)$, and its kernel is the group of the central unitary elements.
 
 **Proof.** For $s \in S(A)$, $\alpha_{u}(s)^{*} = (usu^{*})^{*} = u s^{*} u^{*} = -usu^{*}$, so $\alpha_{u}(s) \in S(A)$. For the bracket, $\alpha_{u}(xy - yx) = uxyu^{*} - uyxu^{*} = (uxu^{*})(uyu^{*}) - (uyu^{*})(uxu^{*}) = [\alpha_{u}(x), \alpha_{u}(y)]$, using the multiplicativity of the conjugation by $u$. The map is multiplicative in $u$, since $\alpha_{u}\alpha_{v} = \alpha_{uv}$, and it fixes $x$ for all $x$ exactly when $ux = xu$ for all $x$, that is when $u$ is central; this is the computation of *Units and the Unitary Elements*, §*Inner $*$-Automorphisms*, read on the skew-Hermitian half.
 
@@ -176,7 +176,7 @@ The one structural difference from the bilinear theory of the skew part of *The 
 | $\mathrm{ad}_{s}(x) = [s,x]$ | the inner $*$-derivation attached to $s \in S(A)$ |
 | $[\mathrm{ad}_{s},\mathrm{ad}_{t}] = \mathrm{ad}_{[s,t]}$ | the homomorphism of the half into $\operatorname{Der}(A)$ |
 | $S(A) \cap Z(A)$ | the kernel of $s \mapsto \mathrm{ad}_{s}$ |
-| $\alpha_{u}(x) = uxu^{*}$ | the adjoint action of $u \in U(A)$ on $\mathfrak{u}(A)$ |
+| $\alpha_{u}(x) = uxu^{*}$ | the adjoint action of $u \in \mathrm{U}(A)$ on $\mathfrak{u}(A)$ |
 | $[p,q] = 2\,(p \times q)$ | the quaternion case, the cross product up to the factor $2$ |
 
 ## Further Reading

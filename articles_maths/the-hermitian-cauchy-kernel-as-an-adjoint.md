@@ -15,8 +15,8 @@ Values* becomes a statement about adjoints, and the boundary projections of the 
 space appear as self-adjoint idempotents.
 
 The setting is that of *Hermitian Quaternionic Analysis and the Conjugate Cauchy–Riemann Operator*:
-the algebra $\mathbb{H}_N$, the four Hermitian operators $\partial_{Z_r}$ and their conjugates
-$\partial_{Z_r}^{\dagger}$, the Hermitian variables $Z_r$ and their adjoints $Z_r^{*}$, and the
+the algebra $\mathbb{H}_N$, the four Hermitian operators $\partial/\partial Z_r$ and their conjugates
+$(\partial/\partial Z_r)^{\dagger}$, the Hermitian variables $Z_r$ and their adjoints $Z_r^{*}$, and the
 kernels $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$. The module and form background is *Hermitian Hilbert
 Modules over a Clifford Algebra*; the operator-theoretic statements about the Hermitian Dirac
 operator are *The Hermitian Dirac Operator*; the integral formulae and the matrix device are *The

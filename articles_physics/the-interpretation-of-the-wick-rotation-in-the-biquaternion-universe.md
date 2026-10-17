@@ -19,13 +19,13 @@ The biquaternion algebra $\mathbb{B}$ is cut into remarkable real subspaces: the
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
 
 $$
-\tilde{Q} = q_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3 = (ct')\, e_0 + x\, e_1 + y\, e_2 + z\, e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z = (ct')\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z, \qquad q_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
 All four coefficients are **real**. The quadratic form
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
 $$
 
 has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.
@@ -33,13 +33,13 @@ has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic 
 **The material sector $\mathbb{M}_-$.** An element has the form
 
 $$
-\tilde{Q} = i q'_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
 The first coefficient is **imaginary**, the three remaining coefficients are **real**. The quadratic form
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2
+\langle\tilde{Q}\rangle_{\natural} = -(q'_t)^2 + q_x^2 + q_y^2 + q_z^2
 $$
 
 has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
@@ -47,13 +47,13 @@ has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a thre
 **The informational sector $\mathbb{M}_+$.** An element has the form
 
 $$
-\tilde{Q} = q_0\, e_0 + i q'_1\, e_1 + i q'_2\, e_2 + i q'_3\, e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+\tilde{Q} = q_t\, e_t + i q'_x\, \vec e_x + i q'_y\, \vec e_y + i q'_z\, \vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
 $$
 
 The first coefficient is **real**, the three remaining coefficients are **imaginary**. The quadratic form
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2
+\langle\tilde{Q}\rangle_{\natural} = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2
 $$
 
 has signature $(1, 3)$, the mirror image of the signature on $\mathbb{M}_-$.
@@ -65,7 +65,7 @@ The three subspaces are distinct, and each has its own algebraic and analytic ch
 In relativistic field theory, a point of the material sector is written
 
 $$
-\tilde{Q}_- = i c t\, e_0 + x\, e_1 + y\, e_2 + z\, e_3 \in \mathbb{M}_-,
+\tilde{Q}_- = i c t\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z \in \mathbb{M}_-,
 $$
 
 where $t$ is the time coordinate, $x, y, z$ are the spatial coordinates, and the four coefficients are $ict, x, y, z$ respectively.
@@ -85,10 +85,10 @@ $$
 while the spatial coefficients $x, y, z$ are unchanged. The rotated point is
 
 $$
-\tilde{Q}_\mathbb{H} = c\tau\, e_0 + x\, e_1 + y\, e_2 + z\, e_3,
+\tilde{Q}_\mathbb{H} = c\tau\, e_t + x\, \vec e_x + y\, \vec e_y + z\, \vec e_z,
 $$
 
-with **all four coefficients real**. In the notation of the quaternion subspace these are the four parameters $q_0 = c\tau$, $q_1 = x$, $q_2 = y$, $q_3 = z$.
+with **all four coefficients real**. In the notation of the quaternion subspace these are the four parameters $q_t = c\tau$, $q_x = x$, $q_y = y$, $q_z = z$.
 
 So the standard Wick rotation is the identification
 
@@ -112,7 +112,7 @@ $$
 Z_E = \int \mathcal{D}\phi\; \exp(-S_E[\phi]/\hbar),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial_t^2/c^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-c^{-2}\,\partial^2/\partial t^2 + \Delta$, becomes the Euclidean Laplacian $\partial_\tau^2/c^2 + \Delta$, which is elliptic and well behaved.
 
 In the biquaternion interpretation, the operation is the following. The Lorentzian field $\phi$ on $\mathbb{M}_-$ is transferred to a field $\phi_\mathbb{H}$ on $\mathbb{H}_{\mathbb{B}}$ by the relabeling $ict \mapsto c\tau$. The Lorentzian d'Alembertian on $\mathbb{M}_-$,
 
@@ -137,7 +137,7 @@ The reason the transfer is useful is that $\mathbb{H}_{\mathbb{B}}$ is better be
 | Property | $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_-$ |
 |---|---|---|
 | Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial_\tau^2/c^2 + \Delta$ (elliptic) | $-\partial_t^2/c^2 + \Delta$ (hyperbolic) |
+| d'Alembertian | $\partial_\tau^2/c^2 + \Delta$ (elliptic) | $-c^{-2}\,\partial^2/\partial t^2 + \Delta$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
@@ -219,10 +219,10 @@ The interpretation predicts a split of applications into those that transfer har
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
 | $\mathbb{M}_+$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
 | $\mathbb{M}_-$ | Material sector: signature $(3, 1)$, hyperbolic |
-| $q_0, q_1, q_2, q_3$ | Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_0, e_1, e_2, e_3$; the rotated point has $q_0 = c\tau$ |
-| $(ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$ | The same element in physical coordinates; $q_0 = ct'$ and $(q_1,q_2,q_3) = (x,y,z)$ |
-| $q'_0, q_1, q_2, q_3$ | Real parameters on $\mathbb{M}_-$, on $ie_0, e_1, e_2, e_3$; the material point has $q'_0 = ct$ |
-| $q_0, q'_1, q'_2, q'_3$ | Real parameters on $\mathbb{M}_+$, on $e_0, ie_1, ie_2, ie_3$; $q_0 = ct'$ |
+| $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
+| $(ct')\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z$ | The same element in physical coordinates; $q_t = ct'$ and $(q_x,q_y,q_z) = (x,y,z)$ |
+| $q'_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{M}_-$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$; the material point has $q'_t = ct$ |
+| $q_t, q'_x, q'_y, q'_z$ | Real parameters on $\mathbb{M}_+$, on $e_t, i\vec e_x, i\vec e_y, i\vec e_z$; $q_t = ct'$ |
 | $c$ | Speed of light in the medium |
 | $t$ | Time coordinate on $\mathbb{M}_-$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{H}_{\mathbb{B}}$ |

@@ -2,31 +2,31 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{1,2}=\tfrac12(1\pm j)$ satisfy
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, and its two idempotents $\Pi_{\pm}=\tfrac12(1\pm j)$ satisfy
 
 $$
-\Pi_{1}+\Pi_{2}=1,\qquad \Pi_{1}\Pi_{2}=0,\qquad \Pi_{1}^{2}=\Pi_{1},\qquad \Pi_{2}^{2}=\Pi_{2},
+\Pi_++\Pi_-=1,\qquad \Pi_+\Pi_-=0,\qquad \Pi_+^{2}=\Pi_+,\qquad \Pi_-^{2}=\Pi_-,
 $$
 
-so the algebra is the direct sum of rings $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$. The decomposition is **global**: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.
+so the algebra is the direct sum of rings $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The decomposition is **global**: the idempotents are central, every element is a pair of complex numbers, and every multiplication, every involution and every norm of the algebra is computed coordinatewise. The article draws the consequences for the fractals of the algebra, and proves the reduction of the dynamics to the two complex slices.
 
 The result is the strongest possible reduction. A self-map of the algebra written in the coordinates is a pair of complex maps with the same index, a quadratic map of the algebra is a pair of complex quadratic maps, and a quadratic fractal is the product of the two complex fractals while the attractor of a system of contractions is the graph-like set of the pairs matched by the same coding. The coupling term that makes the non-commutative companion hard is identically zero here, and the only place where the two coordinates interact is the index of the generators: a point of the attractor has the same coding in the two coordinates, and that is the whole of the interaction. The singular sets, the zero-divisor cone and its slices, are then computed from the two complex singular sets.
 
-The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the systems of contractions are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Idempotent Decomposition and the Split Fractal*, where the idempotents are not central and the decomposition is only local.
+The article owns the global decomposition, the proof of the reduction, the coupling term and its vanishing, the matched structure of the split fractal, and the effect of the zero divisors on the singular sets. The algebra, the idempotents and the coordinates are *Reduced Biquaternion Space* and *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the quadratic map and its fractal are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the systems of contractions are *The Reduced Biquaternion Iterated Function Systems*; the connectedness locus is *The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus*. The companion is *The Idempotent Decomposition and the Split Fractal*, where the idempotents are not central and the decomposition is only local.
 
-**Conventions.** The element is $T=q_1\Pi_{1}+q_2\Pi_{2}$ with $q_1,q_2\in\mathbb{C}$; the topological norm is $\langle T\rangle_{\natural*}=\tfrac12(|q_1|^{2}+|q_2|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **map of the algebra** is a map written in the coordinates, and a **generator** is one of the maps of a finite system.
+**Conventions.** The element is $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ with $Q_{++},Q_{--}\in\mathbb{C}$; the topological norm is $\langle Q_\pm\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$; the complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$ with filled Julia set $K_{c}$ and Julia set $J_{c}$; a **map of the algebra** is a map written in the coordinates, and a **generator** is one of the maps of a finite system.
 
 ## The Global Decomposition
 
 **Theorem (the decomposition is a direct sum of rings).** The algebra is the direct sum of its two idempotent lines,
 
 $$
-\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2},
+\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-,
 $$
 
-and the two projections $T\mapsto q_1$ and $T\mapsto q_2$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.
+and the two projections $Q_\pm\mapsto Q_{++}$ and $Q_\pm\mapsto Q_{--}$ are algebra homomorphisms onto $\mathbb{C}$, the two characters of the algebra.
 
-**Proof.** The four relations above give $\Pi_{1}(q_1\Pi_{1}+q_2\Pi_{2})=q_1\Pi_{1}$ and $\Pi_{2}(q_1\Pi_{1}+q_2\Pi_{2})=q_2\Pi_{2}$, so the decomposition is additive and multiplicative; the projections are ring homomorphisms because the multiplication is componentwise, and they are the two nontrivial complex-valued algebra homomorphisms.
+**Proof.** The four relations above give $\Pi_+(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{++}\Pi_+$ and $\Pi_-(Q_{++}\Pi_++Q_{--}\Pi_-)=Q_{--}\Pi_-$, so the decomposition is additive and multiplicative; the projections are ring homomorphisms because the multiplication is componentwise, and they are the two nontrivial complex-valued algebra homomorphisms.
 
 **Corollary (everything is coordinatewise).** The multiplication, the four products, the involutions, the four norms and the matrix model are computed on the two coordinates separately and combined; an algebra endomorphism is the pair of a complex automorphism of the first coordinate and a complex automorphism of the second, subject to the reality condition.
 
@@ -34,10 +34,10 @@ and the two projections $T\mapsto q_1$ and $T\mapsto q_2$ are algebra homomorphi
 
 ## The Reduction of the Dynamics
 
-**Theorem (the reduction).** Let $F:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$ be a map that in the coordinates is continuous and written as $F(q_1,q_2)=(F_{1}(q_1),F_{2}(q_2))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $T=(q_1,q_2)$ is the pair of the orbits of the two coordinates,
+**Theorem (the reduction).** Let $F:\mathbb{B}_{\mathrm{r}}\to\mathbb{B}_{\mathrm{r}}$ be a map that in the coordinates is continuous and written as $F(Q_{++},Q_{--})=(F_{1}(Q_{++}),F_{2}(Q_{--}))$ — that is, a pair of maps of one complex variable, each depending on its own coordinate. Then the orbit of $Q_\pm=(Q_{++},Q_{--})$ is the pair of the orbits of the two coordinates,
 
 $$
-F^{n}(T)=\bigl(F_{1}^{n}(q_1),\,F_{2}^{n}(q_2)\bigr),
+F^{n}(Q_\pm)=\bigl(F_{1}^{n}(Q_{++}),\,F_{2}^{n}(Q_{--})\bigr),
 $$
 
 and the filled set of bounded orbits is
@@ -48,29 +48,29 @@ $$
 
 where $K^{(j)}$ is the filled set of the one-variable map $F_{j}$ in the bounded sense.
 
-**Proof.** By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\natural*}=\tfrac12(|q_1|^{2}+|q_2|^{2})$ exactly when both coordinate orbits are bounded.
+**Proof.** By induction the $n$-th iterate is the pair of the $n$-th iterates; the orbit is bounded for $\langle\cdot\rangle_{\natural*}=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$ exactly when both coordinate orbits are bounded.
 
-**Corollary (the quadratic case).** The quadratic map $F_{C}(T)=T^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.
+**Corollary (the quadratic case).** The quadratic map $F_{C}(Q_\pm)=Q_\pm^{2}+C$ is a map of this form, with $F_{j}(\zeta)=\zeta^{2}+c_{j}$; hence $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ and the dynamics of the algebra is the product of the two complex dynamics.
 
 **Proof.** The square and the translation are coordinatewise, and the corollary restates the product theorem of *The Reduced Biquaternion Quadratic Map and Its Julia Sets*.
 
 ## The Coupling Term and Its Vanishing
 
-**Proposition (the coupling vanishes).** Write a general quadratic map of the algebra with a linear and a constant term, $F(T)=T^{2}+AT+B$, in the coordinates $A=a_{1}\Pi_{1}+a_{2}\Pi_{2}$ and $B=b_{1}\Pi_{1}+b_{2}\Pi_{2}$. Then
+**Proposition (the coupling vanishes).** Write a general quadratic map of the algebra with a linear and a constant term, $F(Q_\pm)=Q_\pm^{2}+AQ_\pm+B$, in the coordinates $A=a_{1}\Pi_++a_{2}\Pi_-$ and $B=b_{1}\Pi_++b_{2}\Pi_-$. Then
 
 $$
-F(q_1,q_2)=\bigl(q_1^{2}+a_{1}q_1+b_{1},\;q_2^{2}+a_{2}q_2+b_{2}\bigr),
+F(Q_{++},Q_{--})=\bigl(Q_{++}^{2}+a_{1}Q_{++}+b_{1},\;Q_{--}^{2}+a_{2}Q_{--}+b_{2}\bigr),
 $$
 
-with no term mixing $q_1$ and $q_2$; every polynomial map of the algebra is the pair of its two complex polynomial maps.
+with no term mixing $Q_{++}$ and $Q_{--}$; every polynomial map of the algebra is the pair of its two complex polynomial maps.
 
-**Proof.** The multiplication is componentwise, so $T^{2}=(q_1^{2},q_2^{2})$, $AT=(a_{1}q_1,a_{2}q_2)$ and $B=(b_{1},b_{2})$; there is no monomial of mixed coordinates because the algebra is a direct product of rings, in which the two coordinates are orthogonal.
+**Proof.** The multiplication is componentwise, so $Q_\pm^{2}=(Q_{++}^{2},Q_{--}^{2})$, $AQ_\pm=(a_{1}Q_{++},a_{2}Q_{--})$ and $B=(b_{1},b_{2})$; there is no monomial of mixed coordinates because the algebra is a direct product of rings, in which the two coordinates are orthogonal.
 
-**Remark (what the vanishing buys).** In the biquaternion algebra the product $AT$ is not coordinatewise, and the idempotent coordinates of a product contain a term mixing the two complex coordinates, proportional to the imaginary part of the quaternion product; that term is the obstruction to the global reduction and the source of the non-product structure of the biquaternion fractal. In the reduced algebra the term is identically zero, and the global reduction is available.
+**Remark (what the vanishing buys).** In the biquaternion algebra the product $AQ_\pm$ is not coordinatewise, and the idempotent coordinates of a product contain a term mixing the two complex coordinates, proportional to the imaginary part of the quaternion product; that term is the obstruction to the global reduction and the source of the non-product structure of the biquaternion fractal. In the reduced algebra the term is identically zero, and the global reduction is available.
 
 ## The Matched Structure of the Split Fractal
 
-**Definition (the split fractal).** Let $f_{1},\dots,f_{m}$ be **generators**, each a contraction of the algebra written in the coordinates as a pair of complex maps, $f_{i}(q_1,q_2)=(f_{i}^{+}(q_1),f_{i}^{-}(q_2))$. The **split fractal** of the system is the attractor of the system, the unique non-empty compact set $\mathcal{K}$ with
+**Definition (the split fractal).** Let $f_{1},\dots,f_{m}$ be **generators**, each a contraction of the algebra written in the coordinates as a pair of complex maps, $f_{i}(Q_{++},Q_{--})=(f_{i}^{+}(Q_{++}),f_{i}^{-}(Q_{--}))$. The **split fractal** of the system is the attractor of the system, the unique non-empty compact set $\mathcal{K}$ with
 
 $$
 \mathcal{K}=\bigcup_{i=1}^{m}f_{i}(\mathcal{K}).
@@ -102,7 +102,7 @@ so the displayed set is a fixed point of the Hutchinson operator; it is compact,
 
 ## The Zero Divisors and the Singular Sets
 
-**Proposition (the singular slices).** The zero-divisor cone of the algebra is $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$, the union of the two coordinate planes, and for the quadratic family
+**Proposition (the singular slices).** The zero-divisor cone of the algebra is $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$, the union of the two coordinate planes, and for the quadratic family
 
 $$
 \mathcal{K}_{C}\cap\mathscr{Z}=\bigl(\{0\}\cap K_{c_{1}}\bigr)\times K_{c_{2}}\;\cup\;K_{c_{1}}\times\bigl(\{0\}\cap K_{c_{2}}\bigr),
@@ -110,7 +110,7 @@ $$
 
 so each singular slice is either a full complex filled Julia set or empty, and it is a two-real-dimensional set.
 
-**Proof.** The singular set is the set of elements with a vanishing coordinate; intersecting a product with the plane $q_1=0$ gives the product of the intersection of the first factor with $\{0\}$ and the whole second factor; the set $\{0\}\cap K_{c_{1}}$ is the filled Julia set of the parameter $c_{1}$ when the critical point $0$ belongs to it, and empty otherwise.
+**Proof.** The singular set is the set of elements with a vanishing coordinate; intersecting a product with the plane $Q_{++}=0$ gives the product of the intersection of the first factor with $\{0\}$ and the whole second factor; the set $\{0\}\cap K_{c_{1}}$ is the filled Julia set of the parameter $c_{1}$ when the critical point $0$ belongs to it, and empty otherwise.
 
 **Remark (the singular codes).** For a general system the same computation gives the singular slices as unions of products in which one coordinate is a point and the other a piece of the coordinate attractor; the singular part of the split fractal is therefore thin, of the dimension of one complex slice, and the zero divisors do not create a singular manifold of the dimension of the algebra. This is the sharp contrast with the non-commutative companion, where the idempotent manifold is a real four-dimensional subset of the fractal and its singular structure is genuinely higher-dimensional.
 
@@ -120,25 +120,25 @@ so each singular slice is either a full complex filled Julia set or empty, and i
 
 ## Summary
 
-The idempotent decomposition of the reduced biquaternion algebra is a direct sum of rings, global because the idempotents are central: the algebra is $\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$, the two coordinates are the two characters, and every product, norm and polynomial map is computed coordinatewise. Consequently the quadratic map is the pair of two complex quadratic maps, the filled Julia set is exactly the product $K_{c_{1}}\times K_{c_{2}}$, and there is no coupling term mixing the two coordinates, in sharp contrast with the biquaternion algebra, where that term is the obstruction to a global reduction. For a finite system of generators the attractor is the set of the matched pairs, the image of the coding space under the pair of the two coding maps, a graph-like subset of the product of the two coordinate attractors, of the dimension of one coordinate attractor and not of the sum; the interaction between the two coordinates is exactly the identity of the coding. The singular sets are read from the two complex slices: for the quadratic family the slice on a coordinate plane is either a full complex filled Julia set or empty, so the singular part of the fractal is thin, of the dimension of a complex slice, whereas in the non-commutative companion the singular manifold has the dimension of the algebra. The connectedness of the quadratic filled set is exactly the connectedness of the two complex filled sets, that is the membership of the parameter in the product of the two Mandelbrot sets.
+The idempotent decomposition of the reduced biquaternion algebra is a direct sum of rings, global because the idempotents are central: the algebra is $\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$, the two coordinates are the two characters, and every product, norm and polynomial map is computed coordinatewise. Consequently the quadratic map is the pair of two complex quadratic maps, the filled Julia set is exactly the product $K_{c_{1}}\times K_{c_{2}}$, and there is no coupling term mixing the two coordinates, in sharp contrast with the biquaternion algebra, where that term is the obstruction to a global reduction. For a finite system of generators the attractor is the set of the matched pairs, the image of the coding space under the pair of the two coding maps, a graph-like subset of the product of the two coordinate attractors, of the dimension of one coordinate attractor and not of the sum; the interaction between the two coordinates is exactly the identity of the coding. The singular sets are read from the two complex slices: for the quadratic family the slice on a coordinate plane is either a full complex filled Julia set or empty, so the singular part of the fractal is thin, of the dimension of a complex slice, whereas in the non-commutative companion the singular manifold has the dimension of the algebra. The connectedness of the quadratic filled set is exactly the connectedness of the two complex filled sets, that is the membership of the parameter in the product of the two Mandelbrot sets.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\Pi_{1,2}=\tfrac12(1\pm j)$ | the two central idempotents |
-| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_{1}\oplus\mathbb{C}\Pi_{2}$ | the global decomposition |
-| $T=q_1\Pi_{1}+q_2\Pi_{2}$ | the element and its idempotent coordinates |
-| $f_{i}(q_1,q_2)=(f_{i}^{+}(q_1),f_{i}^{-}(q_2))$ | a generator of a system, a pair of complex maps |
+| $\Pi_{\pm}=\tfrac12(1\pm j)$ | the two central idempotents |
+| $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$ | the global decomposition |
+| $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ | the element and its idempotent coordinates |
+| $f_{i}(Q_{++},Q_{--})=(f_{i}^{+}(Q_{++}),f_{i}^{-}(Q_{--}))$ | a generator of a system, a pair of complex maps |
 | $\mathcal{K}=\bigcup_{i}f_{i}(\mathcal{K})$ | the attractor, the split fractal |
 | $\mathcal{K}=\{(h^{+}(\sigma),h^{-}(\sigma)):\sigma\in\Sigma\}$ | the matched set of the coding space |
-| $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$ | the zero-divisor cone, the singular set |
+| $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$ | the zero-divisor cone, the singular set |
 | $\mathcal{K}_{C}\cap\mathscr{Z}$ | the singular slices, full complex filled sets or empty |
 
 ## Further Reading
 
 - *Reduced Biquaternion Space* (`articles_maths/reduced-biquaternion-space.md`), above this article in this category, for the idempotents and the coordinates.
-- *Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the decomposition of the algebra into the idempotent lines.
+- *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the decomposition of the algebra into the idempotent lines.
 - *The Reduced Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md`), above this article, for the quadratic family and its product fractal.
 - *The Slices of the Reduced Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.md`), below this article, for the slices computed from the product.
 - *The Reduced Biquaternion Iterated Function Systems* (`articles_maths/the-reduced-biquaternion-iterated-function-systems.md`), below this article, for the contractions and the dimension of the attractors.

@@ -15,13 +15,13 @@ The article is organised as follows. The next section recalls the standard pictu
 The free Dirac equation in the parent's spinor-module form is
 
 $$
-(i\hbar\gamma^\mu\partial_\mu - mc)\psi = 0,
+(i\hbar\gamma^\mu\partial/\partial Q_\mu - mc)\psi = 0,
 $$
 
-or, in natural units $\hbar = c = 1$, $(i\gamma^\mu\partial_\mu - m)\psi = 0$. Multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
+or, in natural units $\hbar = c = 1$, $(i\gamma^\mu\partial/\partial Q_\mu - m)\psi = 0$. Multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
 
 $$
-i\,\partial_t\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
+i\,\partial/\partial t\,\psi = H\psi, \qquad H = c\,\boldsymbol{\alpha}\cdot p + \beta mc^2,
 $$
 
 where $\beta = \gamma^0$ and $\boldsymbol{\alpha}^k = \gamma^0\gamma^k$; we restore $\hbar$ and $c$ when a physical statement is made. The matrices satisfy
@@ -51,10 +51,10 @@ The interpretation of this result is contested, and the article does not settle 
 
 ## The Biquaternionic Setting
 
-The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, scalar imaginary $i$, and biquaternionic gradient
+The notation is that of the parent and its read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient
 
 $$
-\tilde\nabla = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z.
+\tilde\nabla = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z.
 $$
 
 The Hermitian conjugation is $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$, and it defines the two sectors by their fixed points,
@@ -73,13 +73,13 @@ $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*},
 $$
 
-with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_0k_0 + \vec k$ and the single mass-shell condition
+with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_tk_0 + \vec k$ and the single mass-shell condition
 
 $$
 \tilde k\tilde k^{\natural} = -\frac{m^2c^2}{\hbar^2}.
 $$
 
-The two roots of that condition — positive and negative frequency — are the two branches $\psi^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot\vec x))$ and $\chi^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot\vec x))$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
+The two roots of that condition — positive and negative frequency — are the two branches $\psi^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and $\chi^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
 
 One fact about the field decomposition will be needed throughout. For $\tilde\Psi = \tilde\Psi_+ + \tilde\Psi_-$ with $\tilde\Psi_\pm \in \mathbb{M}_\pm$, Hermitian conjugation acts as $\tilde\Psi_\pm^{*} = \pm\tilde\Psi_\pm$, so
 
@@ -130,10 +130,10 @@ There is a genuinely algebraic statement available, and it is the strongest posi
 **The rest-energy phase rotates the sectors into one another.** Factoring out the rest energy writes the free phase as
 
 $$
-\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_0 \;-\; \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_0),
+\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_t \;-\; \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_t),
 $$
 
-and the two terms lie in different sectors: $e_0 \in \mathbb{M}_+$ and $ie_0 \in \mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is therefore a **rotation between the sectors**, at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_0$ toward the $\mathbb{M}_-$ direction $ie_0$ and back. This is the sense in which the complexification rotates one sector into the other; the rotation is the central phase, whose frequency the mass fixes through the mass shell.
+and the two terms lie in different sectors: $e_t \in \mathbb{M}_+$ and $ie_t \in \mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is therefore a **rotation between the sectors**, at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_t$ toward the $\mathbb{M}_-$ direction $ie_t$ and back. This is the sense in which the complexification rotates one sector into the other; the rotation is the central phase, whose frequency the mass fixes through the mass shell.
 
 The Zitterbewegung frequency is exactly twice this rate. That is not a coincidence of arithmetic but an algebraic relation: the oscillating factor of the velocity identity is
 
@@ -162,10 +162,10 @@ and it contains $\beta = \gamma^0$. But $\gamma^0$ is an **odd** element of the 
 **The natural dictionary the corpus supplies points the other way.** For a normalized two-component spinor the parent identifies the rank-one Hermitian form
 
 $$
-\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_0 + i\vec u\big) \in \mathbb{M}_+,
+\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_t + i\vec u\big) \in \mathbb{M}_+,
 $$
 
-the idempotent of the informational sector, independent of energy sign. Both rest-frame branches of the parent — $\psi^{(r)}(0)\propto(\xi^{(r)},0)$ and $\chi^{(r)}(0)\propto(0,\eta^{(r)})$ in the Dirac basis — reduce to a single two-component spinor and therefore to an $\mathbb{M}_+$ object. The sector $\mathbb{M}_-$ is where the *current* lives, $\tilde J = ic\,j^0e_0 + \vec j \in \mathbb{M}_-$, not where the negative-energy component lives. So on the dictionary actually available, the sector split tracks the operator–vector (state–current) distinction, not the energy sign, and both energy signs land in the same sector.
+the idempotent of the informational sector, independent of energy sign. Both rest-frame branches of the parent — $\psi^{(r)}(0)\propto(\xi^{(r)},0)$ and $\chi^{(r)}(0)\propto(0,\eta^{(r)})$ in the Dirac basis — reduce to a single two-component spinor and therefore to an $\mathbb{M}_+$ object. The sector $\mathbb{M}_-$ is where the *current* lives, $\tilde J = ic\,j^0e_t + \vec j \in \mathbb{M}_-$, not where the negative-energy component lives. So on the dictionary actually available, the sector split tracks the operator–vector (state–current) distinction, not the energy sign, and both energy signs land in the same sector.
 
 **A momentum argument reinforces this.** The sector split is pointwise and momentum-independent: whether an element is Hermitian is a property of the element, not of any Fourier mode it carries. The energy projection is momentum-dependent through $\boldsymbol{\alpha}\cdot\vec p$. A momentum-independent algebraic split cannot be a momentum-dependent spectral projection except in the trivial case $\vec p = 0$, and even there the two rest branches both land in $\mathbb{M}_+$.
 
@@ -180,7 +180,7 @@ The following table separates the claims.
 | The trembling is an interference of $\pm$-frequency branches, frequency $2E/\hbar$ | Established; the standard result, recomputed here |
 | Rest-frame frequency $2mc^2/\hbar$, amplitude $\hbar/(2mc)$ | Established; checked numerically above |
 | The real structure $\flat$ acts with opposite signs on $\mathbb{M}_\pm$ | Established; diagonal, verified from $\tilde\Psi_\pm^{*} = \pm\tilde\Psi_\pm$ |
-| The rest-energy phase rotates the sectors at $mc^2/\hbar$ | Established; $\exp(-i\theta) = \cos\theta\,e_0 - \sin\theta\,(ie_0)$ |
+| The rest-energy phase rotates the sectors at $mc^2/\hbar$ | Established; $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
 | The Zitterbewegung phase is the square of the free-evolution phase | Established; hence the frequency is doubled |
 | $\pm$-energy components **are** the $\mathbb{M}_\mp$ sectors | False as an identity; the generator $\beta$ lies outside $\mathbb{B}$ |
 | The $\mathbb{M}_\pm$ split does work beyond relabelling the Hermitian decomposition | Not established; the interference is between energy branches, which are not the sectors |
@@ -195,7 +195,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a co
 
 The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t) = cp_k/H + \exp(iHt/\hbar)(\alpha^k(0)-cp_k/H)\exp(-iHt/\hbar)$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
 
-The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t/\hbar) = \cos(mc^2t/\hbar)e_0 - \sin(mc^2t/\hbar)(ie_0)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
+The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $\exp(-imc^2t/\hbar) = \cos(mc^2t/\hbar)e_t - \sin(mc^2t/\hbar)(ie_t)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
 The structural claim that motivated the article fails. The positive- and negative-energy components are **not** the $\mathbb{M}_+$ and $\mathbb{M}_-$ sectors. The energy-sign projector is built from $\beta = \gamma^0$, an odd Clifford element with no representative in $\mathbb{B} \cong \mathrm{Cl}^+_{1,3}$, while the sector projectors are built from Hermitian conjugation; the two are splits of different objects (module versus algebra); and on the dictionary the series supplies, both energy branches correspond to $\mathbb{M}_+$ objects while the current lives in $\mathbb{M}_-$. The relation between the trembling and the complexification is therefore one of phase and scale — the trembling is the second harmonic of the sector rotation — and not the identity the strong form of the claim requires.
 
@@ -204,11 +204,11 @@ The structural claim that motivated the article fails. The positive- and negativ
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
-| $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_\mu\,\partial/\partial Q_\mu$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde k\tilde k^{\natural} = -m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 | $\psi^{(r)}, \chi^{(r)}$ | Positive- and negative-frequency spinors |

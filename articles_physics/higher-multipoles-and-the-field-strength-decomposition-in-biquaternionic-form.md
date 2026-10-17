@@ -25,7 +25,7 @@ The conventions are those of the companion articles:
 - Companion article *Radiation from Accelerated Charges in Biquaternionic Form*, for the retarded solution and the radiation field.
 - Companion article *The Spinor Representation of the Lorentz Group in Biquaternionic Form*, for the two complex three-dimensional representations of the Lorentz group.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$, the informational sector $\mathbb{M}_+$, and the centre is $\mathbb{C}_{\mathbb{B}}$; the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + \vec\nabla$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$; and the speed of light is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is $D^{(l)}$; the electric and magnetic multipoles of order $l$ are written $E_l$ and $M_l$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $e_k^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{M}_-$, the informational sector $\mathbb{M}_+$, and the centre is $\mathbb{C}_{\mathbb{B}}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec\nabla$, with $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; and the speed of light is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is $D^{(l)}$; the electric and magnetic multipoles of order $l$ are written $E_l$ and $M_l$.
 
 ## The Multipole Series of a Localised Source
 
@@ -42,7 +42,7 @@ $$
 each $D^{(l)}$ appearing once. The coefficients of the expansion are the **multipole moments**, functionals of the source:
 
 $$
-\mathcal{Q}_{lm} = \int \rho(\vec x')\,r'^{\,l}\,Y_l^{m*}(\vec u_x')\,d^3x' ,
+\mathcal{Q}_{lm} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,r'^{\,l}\,Y_l^{m*}(\vec u_x')\,d^3x' ,
 $$
 
 the electric moments, together with the magnetic moments built from the current. The potential of the source at a field point outside it is a sum of two radial behaviours for each $l$: the irregular solution, which is the near-zone multipole field of the source, and the outgoing spherical wave, which is its radiation. The angular order $l$ is common to both; the multipole order is a property of the angular map, and the near-to-far transition is a property of the radial function. This is the standard multipole expansion and is transcribed rather than re-derived.
@@ -50,12 +50,12 @@ the electric moments, together with the magnetic moments built from the current.
 For radiation the cleanest bookkeeping is through the **radiation vector** of the electromagnetic series,
 
 $$
-\vec F(\vec u) = \int \vec J(\vec x')\,\exp(-ik\vec u\cdot\vec x')\,d^3x' ,
+\vec F(\vec u) = \int \vec J(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,\exp(-ik\vec u\cdot(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))\,d^3x' ,
 \qquad
 k = \frac{\omega}{c} ,
 $$
 
-whose expansion in powers of $k\vec u\cdot\vec x'$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
+whose expansion in powers of $k\vec u\cdot(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ is the multipole series in the long-wavelength limit. The term of order $k^n$ contributes the two types of multipole of neighbouring orders,
 
 $$
 k^0:\ E_1 ,
@@ -289,10 +289,10 @@ The consequence for the multipole series is that a boost mixes the electric and 
 For the dipole the mixing is classical. A charge distribution translating with velocity $\vec v$ has current $\vec J = \rho\vec v$, so its magnetic dipole moment is
 
 $$
-\vec m = \frac{1}{2}\int\vec x'\times\vec J\,d^3x' = \frac{1}{2}\,\vec p\times\vec v ,
+\vec m = \frac{1}{2}\int(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\times\vec J\,d^3x' = \frac{1}{2}\,\vec p\times\vec v ,
 $$
 
-the magnetic dipole generated from the electric dipole by the motion. For the quadrupole the same structure holds: a translating electric quadrupole carries a magnetic quadrupole moment. With a rest-frame planar quadrupole built from charges $+ϙ$ at $(\pm a,0,0)$ and $-ϙ$ at $(0,\pm a,0)$, whose only non-vanishing second moments are $D'_{xx} = 2qa^2$ and $D'_{yy} = -2qa^2$, the boost leaves $D_{xx}$ and $D_{yy}$ unchanged — they are transverse to a boost along $z$ — while the magnetic quadrupole built from the traceless part of $\int\rho\,x_i(\vec x\times\vec v)_j$ acquires a non-vanishing component proportional to $(D_{xx}-D_{yy})v$, and therefore to the electric quadrupole moment times the velocity. The electric quadrupole and the magnetic quadrupole are tied together by the boost, exactly as the electric and magnetic dipoles are.
+the magnetic dipole generated from the electric dipole by the motion. For the quadrupole the same structure holds: a translating electric quadrupole carries a magnetic quadrupole moment. With a rest-frame planar quadrupole built from charges $+ϙ$ at $(\pm a,0,0)$ and $-ϙ$ at $(0,\pm a,0)$, whose only non-vanishing second moments are $D'_{xx} = 2qa^2$ and $D'_{yy} = -2qa^2$, the boost leaves $D_{xx}$ and $D_{yy}$ unchanged — they are transverse to a boost along $z$ — while the magnetic quadrupole built from the traceless part of $\int\rho\,x_i((x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\times\vec v)_j$ acquires a non-vanishing component proportional to $(D_{xx}-D_{yy})v$, and therefore to the electric quadrupole moment times the velocity. The electric quadrupole and the magnetic quadrupole are tied together by the boost, exactly as the electric and magnetic dipoles are.
 
 At the level of the field the mixing of the two multipole types is a consequence of the boost's mixing of the electric and magnetic **fields**, that is, of the non-invariance of the Hermitian split. This is consistent with the parity bookkeeping: the electric multipole type is parity-even or parity-odd according to $l$, the magnetic type has the opposite parity, and a boost does not preserve parity. The covariant packaging of the moments is the standard covariant multipole tensor, and on the field side the covariant object is the self-dual field strength; in both cases the electric and magnetic labels are frame-dependent.
 
@@ -303,7 +303,7 @@ The rotation subgroup preserves the angular decomposition. A rotation acts on th
 The quadrupole is its own illustration. Its rest-frame potential is the degree-two solid harmonic $\Phi \propto (3z^2-r^2)/r^5$, and a boost along $z$ gives, on the sphere $r'=1$,
 
 $$
-\Phi'(\vec x')\big|_{r'=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
+\Phi'(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\big|_{r'=1}\ \propto\ \frac{(2\gamma^2+1)u^2-1}{\left(1+(\gamma^2-1)u^2\right)^{5/2}} ,
 \qquad
 u = \cos\theta' ,
 $$
@@ -317,7 +317,7 @@ What survives is the algebra of the value. The field-strength biquaternion, its 
 Two different pairings of electric and magnetic multiplets appear in the subject, and it is important not to conflate them.
 
 - The **covariant pairing** combines the electric and magnetic moments of a given rank into the covariant multipole tensor of that rank, so that neither is separately Lorentz-covariant; a boost rotates the two types into one another. This pairing is a statement about the **source moments**, which are frame-dependent.
-- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $\exp(-ik\vec u\cdot\vec x')$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
+- The **long-wavelength pairing** pairs $E_{l+1}$ with $M_l$ at the same order in $k$ in the radiation vector, because the expansion of the phase $\exp(-ik\vec u\cdot(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))$ couples the rank-$(n+1)$ symmetric moment to the rank-$n$ antisymmetric moment. This pairing is a statement about the **field** in a fixed frame.
 
 Both are standard, and they answer different questions. The first says that the electric and magnetic moments of an order are not separately covariant; the second says which multipoles dominate at a given order in the long-wavelength expansion. The quadrupole illustrates both: it is paired with the magnetic quadrupole by covariance, and with the magnetic dipole by the order counting.
 
@@ -388,12 +388,12 @@ The multipole series and the two decompositions act on different spaces. The dec
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\dim_{\mathbb{C}} = 4$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B})$ | Centre and complex vector part of $\mathbb{B}$ |
-| $\tilde{\nabla} = e_0\partial_{ict}+\vec\nabla$ | Biquaternionic gradient |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\tilde{\nabla} = e_t\,\partial/\partial Q_t+\vec\nabla$ | Biquaternionic gradient |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |
 | $\vec N = \vec E+ic\vec B$ | Riemann–Silberstein vector (self-dual) |
@@ -407,7 +407,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $\mathcal{Q}_{lm}$ | Electric multipole moment of the source |
 | $\vec Y_{lm} = \vec LY_{lm}/\sqrt{l(l+1)}$ | Vector spherical harmonic (magnetic family) |
 | $\vec u_r\times\vec Y_{lm}$ | Electric family of vector spherical harmonics |
-| $\vec F(\vec u) = \int\vec J\,\exp(-ik\vec u\cdot\vec x')d^3x'$ | Radiation vector |
+| $\vec F(\vec u) = \int\vec J\,\exp(-ik\vec u\cdot(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))d^3x'$ | Radiation vector |
 | $k = \omega/c$ | Wavenumber |
 | $\vec p$, $\vec m$ | Electric and magnetic dipole moments |
 | $\mathcal{Q}_{ij}$, $M_{ij}$ | Electric and magnetic quadrupole moments |

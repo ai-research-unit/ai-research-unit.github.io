@@ -106,36 +106,36 @@ $$
 The set of unitary elements is denoted
 
 $$
-U(M)=\{u \in E : u^{*}u=uu^{*}=\mathrm{id}\}.
+\mathrm{U}(M)=\{u \in E : u^{*}u=uu^{*}=\mathrm{id}\}.
 $$
 
-**Proposition.** $U(M)$ is a subgroup of the group $E^{\times}=\operatorname{Aut}_A(M)$ of units, and it is contained in it: a unitary element is invertible with $u^{-1}=u^{*}$. It is the group of **isometries** of the pairing.
+**Proposition.** $\mathrm{U}(M)$ is a subgroup of the group $E^{\times}=\operatorname{Aut}_A(M)$ of units, and it is contained in it: a unitary element is invertible with $u^{-1}=u^{*}$. It is the group of **isometries** of the pairing.
 
-*Proof.* If $u\in U(M)$ then $u^{-1}=u^{*}$ explicitly, so $u\in E^{\times}$. Closure: if $u,v\in U(M)$ then $(uv)^{*}(uv)=v^{*}u^{*}uv=v^{*}v=\mathrm{id}$ and similarly on the other side, so $uv\in U(M)$; the identity is unitary; and $u^{-1}\in U(M)$ because $(u^{*})^{*}=u$ and $u^{*}u=uu^{*}=\mathrm{id}$ read as $u^{*}(u^{*})^{*}=(u^{*})^{*}u^{*}=\mathrm{id}$.
+*Proof.* If $u\in \mathrm{U}(M)$ then $u^{-1}=u^{*}$ explicitly, so $u\in E^{\times}$. Closure: if $u,v\in \mathrm{U}(M)$ then $(uv)^{*}(uv)=v^{*}u^{*}uv=v^{*}v=\mathrm{id}$ and similarly on the other side, so $uv\in \mathrm{U}(M)$; the identity is unitary; and $u^{-1}\in \mathrm{U}(M)$ because $(u^{*})^{*}=u$ and $u^{*}u=uu^{*}=\mathrm{id}$ read as $u^{*}(u^{*})^{*}=(u^{*})^{*}u^{*}=\mathrm{id}$.
 
 ### The isometry characterisation
 
 **Theorem.** An endomorphism $u$ is unitary if and only if it preserves the pairing:
 
 $$
-u \in U(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M .
+u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M .
 $$
 
-*Proof.* $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in U(M)$.
+*Proof.* $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in \mathrm{U}(M)$.
 
-Thus the unitary elements are exactly the automorphisms of $M$ that preserve the pairing, and $U(M)$ is the **unitary group** of the pairing; in the classical cases it is the orthogonal group, the unitary group or the symplectic group, as the examples show.
+Thus the unitary elements are exactly the automorphisms of $M$ that preserve the pairing, and $\mathrm{U}(M)$ is the **unitary group** of the pairing; in the classical cases it is the orthogonal group, the unitary group or the symplectic group, as the examples show.
 
 ### The unitary orbits and the self-adjoint elements
 
-**Proposition.** For $u \in U(M)$ and $f \in E$,
+**Proposition.** For $u \in \mathrm{U}(M)$ and $f \in E$,
 
 $$
 (u^{*}fu)^{*}=u^{*}f^{*}u, \qquad (ufu^{-1})^{*}=u f^{*}u^{*} .
 $$
 
-Consequently $U(M)$ acts on the involutive algebra $E$ by **unitary conjugation**, $f \mapsto ufu^{*}=ufu^{-1}$, and this action preserves self-adjointness, skew-adjointness and the Jordan product. It is the **unitary group of the involutive algebra** $(E,{}^{*})$.
+Consequently $\mathrm{U}(M)$ acts on the involutive algebra $E$ by **unitary conjugation**, $f \mapsto ufu^{*}=ufu^{-1}$, and this action preserves self-adjointness, skew-adjointness and the Jordan product. It is the **unitary group of the involutive algebra** $(E,{}^{*})$.
 
-*Proof.* The two identities are anti-multiplicativity and $(u^{*})^{*}=u$; for $u\in U(M)$, $u^{*}=u^{-1}$, so $ufu^{-1}=ufu^{*}$ and conjugation by a unitary element maps $f^{*}$ to $(ufu^{*})^{*}=u f^{*}u^{*}$, preserving the fixed and skew parts; it preserves products and hence the Jordan product.
+*Proof.* The two identities are anti-multiplicativity and $(u^{*})^{*}=u$; for $u\in \mathrm{U}(M)$, $u^{*}=u^{-1}$, so $ufu^{-1}=ufu^{*}$ and conjugation by a unitary element maps $f^{*}$ to $(ufu^{*})^{*}=u f^{*}u^{*}$, preserving the fixed and skew parts; it preserves products and hence the Jordan product.
 
 ## The Involution and the Centre
 
@@ -183,19 +183,19 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 ## Examples
 
-**(a) The orthogonal group.** For $A=R$ a field, $M=R^n$ and the standard bilinear pairing $\langle x,y\rangle=\sum x_iy_i$, the involution is the transpose, the self-adjoint elements are the symmetric matrices, the skew-adjoint the alternating ones, and $U(M)=O(n)$.
+**(a) The orthogonal group.** For $A=R$ a field, $M=R^n$ and the standard bilinear pairing $\langle x,y\rangle=\sum x_iy_i$, the involution is the transpose, the self-adjoint elements are the symmetric matrices, the skew-adjoint the alternating ones, and $\mathrm{U}(M)=O(n)$.
 
-**(b) The unitary group.** For $A=\mathbb{C}$, $M=\mathbb{C}^n$ and the sesquilinear pairing $\langle x,y\rangle=\sum x_i\overline{y_i}$, the involution is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and $U(M)=U(n)$.
+**(b) The unitary group.** For $A=\mathbb{C}$, $M=\mathbb{C}^n$ and the sesquilinear pairing $\langle x,y\rangle=\sum x_i\overline{y_i}$, the involution is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and $\mathrm{U}(M)=\mathrm{U}(n)$.
 
-**(c) The symplectic group.** For $M=R^{2n}$ with the alternating pairing $\langle x,y\rangle=\sum_i(x_iy_{i+n}-x_{i+n}y_i)$, the involution is $(f^{*})^{*}=f$ with $f^{*}=J^{-1}f^{\mathsf{T}}J$, and $U(M)=Sp(2n)$.
+**(c) The symplectic group.** For $M=R^{2n}$ with the alternating pairing $\langle x,y\rangle=\sum_i(x_iy_{i+n}-x_{i+n}y_i)$, the involution is $(f^{*})^{*}=f$ with $f^{*}=J^{-1}f^{\mathsf{T}}J$, and $\mathrm{U}(M)=Sp(2n)$.
 
-**(d) The regular module of a division ring.** For $M=A=D$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the involution on $\operatorname{End}_D(D)\cong D^{\mathrm{opp}}$ is $\sigma$, the self-adjoint elements are the symmetric elements of $D$, and $U(D)=\{u : \sigma(u)u=1\}$ is the unitary group of $D$.
+**(d) The regular module of a division ring.** For $M=A=D$ a division ring with $\langle a,b\rangle=\sigma(a)b$, the involution on $\operatorname{End}_D(D)\cong D^{\mathrm{opp}}$ is $\sigma$, the self-adjoint elements are the symmetric elements of $D$, and $\mathrm{U}(D)=\{u : \sigma(u)u=1\}$ is the unitary group of $D$.
 
-**(e) A matrix algebra.** For $A=M_n(\mathbb{C})$ with the conjugate transpose involution and $M=A$ as the regular module, the involution on $E\cong A^{\mathrm{opp}}$ is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and the unitary group is the classical $U(n)$ acting by right multiplication.
+**(e) A matrix algebra.** For $A=M_n(\mathbb{C})$ with the conjugate transpose involution and $M=A$ as the regular module, the involution on $E\cong A^{\mathrm{opp}}$ is the conjugate transpose, the self-adjoint elements are the hermitian matrices, and the unitary group is the classical $\mathrm{U}(n)$ acting by right multiplication.
 
 ## Summary
 
-A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\Theta(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $U(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $U(M)$ is $O(n)$, $U(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
+A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\Theta(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the skew-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
 
 ## Summary of Notation
 
@@ -207,7 +207,7 @@ A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M
 | $f^{*}$ | the adjoint, $\langle f(m),n\rangle=\langle m,f^{*}(n)\rangle$ |
 | $\operatorname{Sym}(M)$, $\operatorname{Skew}(M)$ | self-adjoint and skew-adjoint endomorphisms |
 | $f\bullet g=\frac12(fg+gf)$ | the Jordan product on the self-adjoint part |
-| $U(M)=\{u : u^{*}u=uu^{*}=\mathrm{id}\}$ | the unitary group |
+| $\mathrm{U}(M)=\{u : u^{*}u=uu^{*}=\mathrm{id}\}$ | the unitary group |
 | $\langle u(m),u(n)\rangle=\langle m,n\rangle$ | the isometry characterisation of unitarity |
 | $Z(E)$ | the centre of the endomorphism ring |
 | first kind, second kind | involution fixing or moving the centre |

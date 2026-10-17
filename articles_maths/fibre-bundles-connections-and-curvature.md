@@ -13,13 +13,13 @@ Manifolds are smooth and second countable; bundles are smooth; the structure gro
 
 ### Definitions
 
-**Definition.** A **fibre bundle** with **total space** $E$, **base** $B$ and **fibre** $F$ is a smooth map $\pi : E \to B$ together with a cover $\{U_\alpha\}$ of $B$ by open sets and diffeomorphisms
+**Definition.** A **fibre bundle** with **total space** $E$, **base** $B$ and **fibre** $F$ is a smooth map $\pi : E \to B$ together with a cover $\{\Xi_\alpha\}$ of $B$ by open sets and diffeomorphisms
 
 $$
-\phi_\alpha : \pi^{-1}(U_\alpha) \longrightarrow U_\alpha \times F
+\phi_\alpha : \pi^{-1}(\Xi_\alpha) \longrightarrow \Xi_\alpha \times F
 $$
 
-such that $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ on $\pi^{-1}(U_\alpha)$ and the maps $\phi_\alpha \circ \phi_\beta^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : U_\alpha \cap U_\beta \to \operatorname{Diff}(F)$. The data $\{(U_\alpha, \phi_\alpha)\}$ are a **bundle atlas**, the maps $g_{\alpha\beta}$ are the **transition functions**, and the bundle is **trivial** if it admits an atlas with one chart, $E \cong B \times F$.
+such that $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ on $\pi^{-1}(\Xi_\alpha)$ and the maps $\phi_\alpha \circ \phi_\beta^{-1}$ are of the form $(x, v) \mapsto (x, g_{\alpha\beta}(x)v)$ for smooth maps $g_{\alpha\beta} : \Xi_\alpha \cap \Xi_\beta \to \operatorname{Diff}(F)$. The data $\{(\Xi_\alpha, \phi_\alpha)\}$ are a **bundle atlas**, the maps $g_{\alpha\beta}$ are the **transition functions**, and the bundle is **trivial** if it admits an atlas with one chart, $E \cong B \times F$.
 
 **Definition.** A **structure group** of the bundle is a Lie group $G$ acting on $F$ such that all transition functions take values in $G$; a bundle with structure group $G$ is a **$G$-bundle**. The condition that the transition functions lie in a fixed $G$ is an additional datum; the transition functions of a bundle always lie in the diffeomorphism group of the fibre.
 
@@ -31,7 +31,7 @@ $$
 
 on the triple intersections; conversely, given an open cover and functions satisfying these identities, there is a bundle with those transition functions, unique up to isomorphism.
 
-**Proof.** Comparing the three trivialisations over a triple intersection gives the relation; conversely, the disjoint union $\bigsqcup_\alpha U_\alpha \times F$ modulo the equivalence $(x, v)_\beta \sim (x, g_{\alpha\beta}(x)v)_\alpha$ on overlaps is a manifold and a bundle with the required transition functions.
+**Proof.** Comparing the three trivialisations over a triple intersection gives the relation; conversely, the disjoint union $\bigsqcup_\alpha \Xi_\alpha \times F$ modulo the equivalence $(x, v)_\beta \sim (x, g_{\alpha\beta}(x)v)_\alpha$ on overlaps is a manifold and a bundle with the required transition functions.
 
 ### Vector Bundles and Principal Bundles
 
@@ -51,7 +51,7 @@ a fibre bundle over $B$ with fibre $F$. Every vector bundle of rank $k$ with str
 
 ### Cocycles and Classification
 
-**Definition.** Two cocycles $\{g_{\alpha\beta}\}$ and $\{g'_{\alpha\beta}\}$ on the same cover define isomorphic bundles if there are maps $h_\alpha : U_\alpha \to G$ with
+**Definition.** Two cocycles $\{g_{\alpha\beta}\}$ and $\{g'_{\alpha\beta}\}$ on the same cover define isomorphic bundles if there are maps $h_\alpha : \Xi_\alpha \to G$ with
 
 $$
 g'_{\alpha\beta} = h_\alpha^{-1}\, g_{\alpha\beta}\, h_\beta
@@ -81,9 +81,9 @@ for all $f \in C^\infty(M)$ and $s \in \Gamma(E)$. The operator $\nabla_X s = \l
 
 **Proposition.** A connection exists on every vector bundle, and the set of connections on $E$ is an affine space modelled on $\Omega^1(M; \operatorname{End}(E)) = \Gamma(T^*M\otimes\operatorname{End}E)$: if $\nabla$ and $\nabla'$ are connections then $\nabla' - \nabla$ is a $1$-form with values in the endomorphisms of $E$.
 
-**Proof.** On a trivial bundle $U \times \mathbb{R}^k$ the exterior derivative $d$ on the components is a connection; on a general bundle choose a locally finite cover by trivialising charts, a partition of unity, and convex-combine the local connections with the partition of unity to obtain a global connection. The difference of two connections is $C^\infty(M)$-linear in $s$ by the Leibniz rule, hence a tensor, which is a section of $T^*M\otimes\operatorname{End}E$.
+**Proof.** On a trivial bundle $\Xi \times \mathbb{R}^k$ the exterior derivative $d$ on the components is a connection; on a general bundle choose a locally finite cover by trivialising charts, a partition of unity, and convex-combine the local connections with the partition of unity to obtain a global connection. The difference of two connections is $C^\infty(M)$-linear in $s$ by the Leibniz rule, hence a tensor, which is a section of $T^*M\otimes\operatorname{End}E$.
 
-**Definition.** Let $e = (e_1, \ldots, e_k)$ be a **local frame** of $E$ over an open set $U$, so that every section over $U$ is $s = \sum_i s^i e_i$ with $s^i \in C^\infty(U)$. The **connection form** of $\nabla$ in this frame is the matrix of $1$-forms $\omega = (\omega^i_{\ j})$ defined by
+**Definition.** Let $e = (e_1, \ldots, e_k)$ be a **local frame** of $E$ over an open set $\Xi$, so that every section over $\Xi$ is $s = \sum_i s^i e_i$ with $s^i \in C^\infty(\Xi)$. The **connection form** of $\nabla$ in this frame is the matrix of $1$-forms $\omega = (\omega^i_{\ j})$ defined by
 
 $$
 \nabla e_j = \sum_i \omega^i_{\ j} \otimes e_i,
@@ -91,7 +91,7 @@ $$
 
 so that $\nabla s = \sum_i \bigl(ds^i + \sum_j \omega^i_{\ j}s^j\bigr)\otimes e_i$, and $\nabla = d + \omega$ in matrix notation.
 
-**Proposition (change of frame).** Let $e' = e\,g$ be another frame, with $g : U \to GL_k(\mathbb{R})$ a smooth map. Then the connection forms are related by
+**Proposition (change of frame).** Let $e' = e\,g$ be another frame, with $g : \Xi \to GL_k(\mathbb{R})$ a smooth map. Then the connection forms are related by
 
 $$
 \omega' = g^{-1}\omega\, g + g^{-1} dg.
@@ -99,7 +99,7 @@ $$
 
 **Proof.** Write $e'_j = \sum_a e_a g^a_{\ j}$ and compute $\nabla e'_j$ in both frames; the Leibniz rule produces the term $dg$ alongside the transformation of $\omega$ by $g$.
 
-**Theorem.** The connection forms $\omega_\alpha$ of a connection on the trivialisations $U_\alpha$ satisfy $\omega_\beta = g_{\alpha\beta}^{-1}\omega_\alpha g_{\alpha\beta} + g_{\alpha\beta}^{-1}dg_{\alpha\beta}$ on overlaps; conversely, such a family defines a connection.
+**Theorem.** The connection forms $\omega_\alpha$ of a connection on the trivialisations $\Xi_\alpha$ satisfy $\omega_\beta = g_{\alpha\beta}^{-1}\omega_\alpha g_{\alpha\beta} + g_{\alpha\beta}^{-1}dg_{\alpha\beta}$ on overlaps; conversely, such a family defines a connection.
 
 ### Connections on Principal Bundles
 
@@ -113,9 +113,9 @@ The **horizontal subspace** at $n \in P$ is $H_pP = \ker\omega_n \subseteq T_pP$
 
 **Proposition.** A connection form exists on every principal bundle, and the horizontal distribution $H = \ker\omega$ is a $G$-invariant distribution complementary to the vertical distribution; a distribution with these properties determines a unique connection form.
 
-**Proof.** Existence: on a local trivialisation $U \times G$ define $\omega = \mathrm{pr}_2^*\theta$, where $\theta$ is the Maurer–Cartan form of $G$; patch the local forms with a partition of unity and correct by the $\operatorname{Ad}$-equivariance to obtain a global form satisfying both conditions. The equivalence with a $G$-invariant complement is the definition of the kernel and the existence of the fundamental vector fields.
+**Proof.** Existence: on a local trivialisation $\Xi \times G$ define $\omega = \mathrm{pr}_2^*\theta$, where $\theta$ is the Maurer–Cartan form of $G$; patch the local forms with a partition of unity and correct by the $\operatorname{Ad}$-equivariance to obtain a global form satisfying both conditions. The equivalence with a $G$-invariant complement is the definition of the kernel and the existence of the fundamental vector fields.
 
-**Definition.** Let $s : U \to P$ be a local section, so that $U \times G \to \pi^{-1}(U)$, $(x, g) \mapsto s(x)\cdot g$, is a trivialisation. The **local connection form** is $\omega_s = s^*\omega \in \Omega^1(U; \mathrm{G})$, and for $s' = s \cdot h$ with $h : U \to G$,
+**Definition.** Let $s : \Xi \to P$ be a local section, so that $\Xi \times G \to \pi^{-1}(\Xi)$, $(x, g) \mapsto s(x)\cdot g$, is a trivialisation. The **local connection form** is $\omega_s = s^*\omega \in \Omega^1(\Xi; \mathrm{G})$, and for $s' = s \cdot h$ with $h : \Xi \to G$,
 
 $$
 \omega_{s'} = h^{-1}\omega_s h + h^{-1}dh.
@@ -259,7 +259,7 @@ $$
 
 ## Summary
 
-A fibre bundle is a manifold locally isomorphic to a product $U \times F$, with transition functions satisfying the cocycle condition; a vector bundle is a bundle with linear fibres and structure group $GL_k$, a principal $G$-bundle is a bundle with a free transitive $G$-action on the fibres, and the associated bundle construction produces vector bundles from principal ones and their representations. Sections of a vector bundle form a module over the smooth functions, and a bundle is described by a local frame together with the transition data.
+A fibre bundle is a manifold locally isomorphic to a product $\Xi \times F$, with transition functions satisfying the cocycle condition; a vector bundle is a bundle with linear fibres and structure group $GL_k$, a principal $G$-bundle is a bundle with a free transitive $G$-action on the fibres, and the associated bundle construction produces vector bundles from principal ones and their representations. Sections of a vector bundle form a module over the smooth functions, and a bundle is described by a local frame together with the transition data.
 
 A connection on a vector bundle is a covariant derivative $\nabla$ satisfying the Leibniz rule; locally it is a matrix of $1$-forms $\omega$, transforming as $\omega' = g^{-1}\omega g + g^{-1}dg$ under a change of frame, and connections exist by a partition-of-unity argument. On a principal bundle a connection is a $\mathrm{G}$-valued $1$-form with $\omega(A^\#) = A$ and $R_g^*\omega = \operatorname{Ad}(g^{-1})\omega$, equivalently a $G$-invariant horizontal distribution. The curvature is $R = d\omega + \omega\wedge\omega$, a tensorial $2$-form transforming as $R' = g^{-1}Rg$, and it satisfies the Bianchi identity $d^\nabla R = 0$; the connection is flat exactly when the horizontal distribution is integrable, equivalently when the curvature vanishes.
 
@@ -269,7 +269,7 @@ Invariant polynomials in the curvature are closed basic forms whose de Rham clas
 
 | Symbol | Meaning |
 |---|---|
-| $\pi : E \to B$, fibre $F$ | Fibre bundle; locally $E \cong U \times F$ |
+| $\pi : E \to B$, fibre $F$ | Fibre bundle; locally $E \cong \Xi \times F$ |
 | $g_{\alpha\beta}$ | Transition functions; $g_{\alpha\beta}g_{\beta\gamma} = g_{\alpha\gamma}$ |
 | $G$-bundle, principal $G$-bundle $P \to M$ | Structure group $G$; free transitive right $G$-action on fibres |
 | $P\times_G F$ | Associated bundle; vector bundles arise from frame bundles |

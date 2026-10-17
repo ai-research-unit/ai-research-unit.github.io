@@ -11,13 +11,13 @@ The article uses no analysis and no geometry: the structure sheaf is a sheaf of 
 
 ## Involutions of the Structure Sheaf
 
-**Definition.** An **involution** of the structure sheaf is a morphism of sheaves of rings $\sigma:\mathcal{O}_X\to\mathcal{O}_X$ with $\sigma^2=\mathrm{id}$; equivalently, a ring involution $\sigma_U$ of each ring of sections $\mathcal{O}_X(U)$, natural in $U$. The **fixed structure sheaf** is
+**Definition.** An **involution** of the structure sheaf is a morphism of sheaves of rings $\sigma:\mathcal{O}_X\to\mathcal{O}_X$ with $\sigma^2=\mathrm{id}$; equivalently, a ring involution $\sigma_\Omega$ of each ring of sections $\mathcal{O}_X(\Omega)$, natural in $\Omega$. The **fixed structure sheaf** is
 
 $$
-\mathcal{O}_X^{\sigma}:\ U\longmapsto \mathcal{O}_X(U)^{\sigma}=\{\,a: \sigma_U(a)=a\,\},
+\mathcal{O}_X^{\sigma}:\ \Omega\longmapsto \mathcal{O}_X(\Omega)^{\sigma}=\{\,a: \sigma_\Omega(a)=a\,\},
 $$
 
-the sheaf of **self-adjoint** or **invariant** functions, and when $2$ is invertible the **anti-invariant sheaf** is $\mathcal{O}_X^-$, with $\mathcal{O}_X(U)^-=\{a:\sigma_U(a)=-a\}$.
+the sheaf of **self-adjoint** or **invariant** functions, and when $2$ is invertible the **anti-invariant sheaf** is $\mathcal{O}_X^-$, with $\mathcal{O}_X(\Omega)^-=\{a:\sigma_\Omega(a)=-a\}$.
 
 **Proposition.** $\mathcal{O}_X^{\sigma}$ is a subsheaf of $\mathcal{O}_X$ and a sheaf of commutative rings; $\mathcal{O}_X$ is a sheaf of $\mathcal{O}_X^{\sigma}$-algebras; and when $2$ is invertible in $\mathcal{O}_X(X)$ there is a direct sum decomposition
 
@@ -46,7 +46,7 @@ exhibiting $\mathcal{O}_X$ as the trivial extension of $\mathcal{O}_X^{\sigma}$ 
 **Proposition (the fixed module).** The **fixed part** of a $\sigma$-equivariant module is the subsheaf
 
 $$
-\mathcal{M}^{\sigma}:\ U\longmapsto \{\,m\in\mathcal{M}(U): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $U$},
+\mathcal{M}^{\sigma}:\ \Omega\longmapsto \{\,m\in\mathcal{M}(\Omega): u(m)=m\,\}\quad\text{for a $\sigma$-invariant $\Omega$},
 $$
 
 a sheaf of $\mathcal{O}_X^{\sigma}$-modules; the same discussion of the invariant opens as in *Equivariant Sheaves and Descent* applies, and over an invariant open set the fixed part is the fixed subspace of the $\sigma$-semilinear involution.

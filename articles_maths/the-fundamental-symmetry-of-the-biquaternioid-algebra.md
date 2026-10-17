@@ -12,7 +12,7 @@ with $\langle\cdot,\cdot\rangle_{*}$ the positive definite Hermitian inner produ
 
 The general theory is *The Fundamental Symmetry*, *Krein Spaces* and *Indefinite Inner Product Spaces*; the operators that ${}^{\natural}$ makes available are *J-Self-Adjoint and J-Unitary Operators*; the form is *The Krein Gram Matrix and the Restrictions of the Form*; the positive definite form of the bridge is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; and the four involutions whose lattice ${}^{\natural}$ belongs to are *The Group of Involutions* and *Comparison of the Remarkable Subspaces*.
 
-**Conventions.** As in the companion articles: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q})_\mu=\varepsilon_\mu Q_\mu$, the dagger acts on the coefficients by $Q_\mu^{*}=\varepsilon_\mu\bar Q_\mu$, and the form is the four terms $\bar Q_0Q'_0-\bar Q_1Q'_1-\bar Q_2Q'_2-\bar Q_3Q'_3$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
+**Conventions.** As in the companion articles: $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^{2})^{1/2}$, dagger ${}^{*}={}^{\natural}\circ\bar{\cdot}$, general quaternionic sesquilinear form $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\mathrm{Sc}(\tilde{Q}^{\natural*}\tilde{Q}')$, with the **sign vector** $\varepsilon=(1,-1,-1,-1)$ of the coefficient basis, so that $(J\tilde{Q})_\mu=\varepsilon_\mu Q_\mu$, the dagger acts on the coefficients by $Q_\mu^{*}=\varepsilon_\mu\bar Q_\mu$, and the form is the four terms $\bar Q_tQ'_t-\bar Q_xQ'_x-\bar Q_yQ'_y-\bar Q_zQ'_z$ written compactly with $\sum_\mu$, and $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ the matrix model, which carries ${}^{\natural}$ to the adjugate, $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})$ (*The Matrix Element Representation and the Biquaternion Dynamics*).
 
 ## The Natural Conjugation as a Fundamental Symmetry
 
@@ -45,8 +45,8 @@ and it is orthogonal for the definite structure, $\|J\tilde{Q}\|_E=\|\tilde{Q}\|
 **Theorem (the decomposition is the $\natural$-splitting).** The eigenspaces of $J$ are
 
 $$
-\mathbb{B}_{+}=\ker(J-\mathrm{id})=\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_0\},\qquad
-\mathbb{B}_{-}=\ker(J+\mathrm{id})=\mathbb{V}_{\mathbb{B}}=\{Q_0=0\},
+\mathbb{B}_{+}=\ker(J-\mathrm{id})=\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{C}}\{e_t\},\qquad
+\mathbb{B}_{-}=\ker(J+\mathrm{id})=\mathbb{V}_{\mathbb{B}}=\{Q_t=0\},
 $$
 
 the **centre** and the **vector subspace**; they are the positive and the negative definite parts of the fundamental decomposition
@@ -85,7 +85,7 @@ The general theory attaches three numbers to an indefinite inner product (*Krein
 
 ## The Natural Conjugation as an Anti-Automorphism
 
-**Proposition.** ${}^{\natural}$ is a $\mathbb{C}$-linear algebra **anti-automorphism** of order two: ${}^{\natural}(e_0)=e_0$ and
+**Proposition.** ${}^{\natural}$ is a $\mathbb{C}$-linear algebra **anti-automorphism** of order two: ${}^{\natural}(e_t)=e_t$ and
 
 $$
 (\tilde{Q}\tilde{R})^{\natural}=\tilde{R}^{\natural}\tilde{Q}^{\natural}.
@@ -98,7 +98,7 @@ $$
 {}^{\natural}\,R_{\tilde{R}}\,{}^{\natural}=L_{\tilde{R}^{\natural}}.
 $$
 
-**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $e_k^{\natural}=-e_k$ and $(-e_k)(-e_l)=e_ke_l=-(e_le_k)$ for $k\neq l$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}}{}^{\natural}\right)(\tilde{P})={}^{\natural}(\tilde{Q}\,\tilde{P}^{\natural})=\tilde{P}\,\tilde{Q}^{\natural}=R_{\tilde{Q}^{\natural}}\tilde{P}$, using the anti-automorphism; the second is the same computation.
+**Proof.** ${}^{\natural}$ is quaternion conjugation on the coefficients, and quaternion conjugation reverses products; on the units, $\vec e_\mu^{\natural}=-\vec e_\mu$ and $(-\vec e_\mu)(-\vec e_\nu)=\vec e_\mu \vec e_\nu=-(\vec e_\nu \vec e_\mu)$ for $\mu\neq\nu$. The commutation with $\bar{\cdot}$ is that $i$ is fixed and $\bar{\cdot}$ acts on the coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ commutes with ${}^{\natural}$ because $\bar{\cdot}$ does and ${}^{\natural}{}^{2}=\mathrm{id}$. For the last identities, $\left({}^{\natural}L_{\tilde{Q}}{}^{\natural}\right)(\tilde{P})={}^{\natural}(\tilde{Q}\,\tilde{P}^{\natural})=\tilde{P}\,\tilde{Q}^{\natural}=R_{\tilde{Q}^{\natural}}\tilde{P}$, using the anti-automorphism; the second is the same computation.
 
 **Remark (the matrix picture).** Under $\mathsf{M}_2$ the natural conjugation is the adjugate: $\mathsf{M}_2(\tilde{Q}^{\natural})=\mathrm{adj}\,\mathsf{M}_2(\tilde{Q})=\mathsf{A}\,\mathsf{M}_2(\tilde{Q})^{\mathsf T}\mathsf{A}^{-1}$ with $\mathsf{A}=i\sigma_2$, and the anti-automorphism property is the classical identity $\mathrm{adj}(MN)=\mathrm{adj}(N)\mathrm{adj}(M)$. The fundamental symmetry is therefore the linear operator $X\mapsto\mathrm{adj}X=\mathsf{A}X^{\mathsf T}\mathsf{A}^{-1}$ on $M_2(\mathbb{C})$.
 
@@ -109,7 +109,7 @@ The fundamental symmetries of an indefinite inner product are not unique when bo
 **Theorem (the family of fundamental symmetries).** The fundamental symmetries of the general quaternionic sesquilinear form are exactly the involutions $J_{\tilde S}$ that act as $+\mathrm{id}$ on the positive definite complex line
 
 $$
-\ell_{\tilde S}=\mathbb{C}\cdot(e_0+\tilde S),\qquad \tilde S\in\mathbb{V}_{\mathbb{B}},\ \|\tilde S\|_E<1,
+\ell_{\tilde S}=\mathbb{C}\cdot(e_t+\tilde S),\qquad \tilde S\in\mathbb{V}_{\mathbb{B}},\ \|\tilde S\|_E<1,
 $$
 
 and as $-\mathrm{id}$ on its Krein-orthogonal complement. The parametrisation $\tilde S\mapsto\ell_{\tilde S}$ is a bijection onto the set $\lVert\tilde S\rVert_E<1$ of $\mathbb{V}_{\mathbb{B}}$:
@@ -118,15 +118,15 @@ $$
 \{\text{fundamental symmetries}\}\longleftrightarrow\{\tilde S\in\mathbb{V}_{\mathbb{B}}:\|\tilde S\|_E<1\}\cong\{T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}},\ \|T\|<1\}.
 $$
 
-**Proof.** By the general parametrisation, the fundamental symmetries correspond to the maximal positive definite subspaces, and a maximal positive definite subspace of this Krein space has complex dimension one because the positive index is one; each such line is the graph of a $\mathbb{C}$-linear map $T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$, that is, is generated by $e_0+\tilde S$ with $\tilde S=T(e_0)$; and it is positive definite exactly when $\|T\|<1$, which is $\|\tilde S\|_E<1$ because $\|e_0\|_E=1$. Distinct $\tilde S$ give distinct lines and distinct symmetries.
+**Proof.** By the general parametrisation, the fundamental symmetries correspond to the maximal positive definite subspaces, and a maximal positive definite subspace of this Krein space has complex dimension one because the positive index is one; each such line is the graph of a $\mathbb{C}$-linear map $T:\mathbb{C}_{\mathbb{B}}\to\mathbb{V}_{\mathbb{B}}$, that is, is generated by $e_t+\tilde S$ with $\tilde S=T(e_t)$; and it is positive definite exactly when $\|T\|<1$, which is $\|\tilde S\|_E<1$ because $\|e_t\|_E=1$. Distinct $\tilde S$ give distinct lines and distinct symmetries.
 
 **Theorem ($\natural$ is the only one that respects the algebra).** The natural conjugation ${}^{\natural}=J_0$ is the unique fundamental symmetry of the general quaternionic sesquilinear form that is a $\mathbb{C}$-algebra anti-automorphism, equivalently the unique one that fixes the identity and satisfies $J(\tilde{Q}\tilde{R})=J(\tilde{R})J(\tilde{Q})$. In the parametrisation above it is the member $\tilde S=0$.
 
-**Proof.** Let $J$ be a fundamental symmetry and a unital $\mathbb{C}$-algebra anti-automorphism. The $+1$-eigenspace $W$ of $J$ is a complex subspace of complex dimension one (the positive index), and it contains $e_0$, because a unital anti-automorphism of a bijective-involution type satisfies $J(e_0)=J(e_0^{2})=J(e_0)^{2}$ with $J$ bijective, whence $J(e_0)=e_0$. A one-dimensional complex subspace containing $e_0$ is $\mathbb{C}_{\mathbb{B}}$, so $W=\mathbb{C}_{\mathbb{B}}$, and then $J$ is $+\mathrm{id}$ on the centre and $-\mathrm{id}$ on the vector subspace, which is ${}^{\natural}$. Conversely ${}^{\natural}$ is such a symmetry by the two preceding sections.
+**Proof.** Let $J$ be a fundamental symmetry and a unital $\mathbb{C}$-algebra anti-automorphism. The $+1$-eigenspace $W$ of $J$ is a complex subspace of complex dimension one (the positive index), and it contains $e_t$, because a unital anti-automorphism of a bijective-involution type satisfies $J(e_t)=J(e_t^{2})=J(e_t)^{2}$ with $J$ bijective, whence $J(e_t)=e_t$. A one-dimensional complex subspace containing $e_t$ is $\mathbb{C}_{\mathbb{B}}$, so $W=\mathbb{C}_{\mathbb{B}}$, and then $J$ is $+\mathrm{id}$ on the centre and $-\mathrm{id}$ on the vector subspace, which is ${}^{\natural}$. Conversely ${}^{\natural}$ is such a symmetry by the two preceding sections.
 
-**Corollary (the tilted symmetries are not algebraic).** For $\tilde S\neq0$ the symmetry $J_{\tilde S}$ fixes no algebra structure: it does not preserve the multiplication, and it does not even fix $e_0$, since $e_0\notin\ell_{\tilde S}$.
+**Corollary (the tilted symmetries are not algebraic).** For $\tilde S\neq0$ the symmetry $J_{\tilde S}$ fixes no algebra structure: it does not preserve the multiplication, and it does not even fix $e_t$, since $e_t\notin\ell_{\tilde S}$.
 
-**Proof.** $e_0\in\ell_{\tilde S}$ would force $\tilde S\in\mathbb{V}_{\mathbb{B}}\cap\mathbb{C}_{\mathbb{B}}=0$.
+**Proof.** $e_t\in\ell_{\tilde S}$ would force $\tilde S\in\mathbb{V}_{\mathbb{B}}\cap\mathbb{C}_{\mathbb{B}}=0$.
 
 ## The Indefinite Adjoint and the Order
 
@@ -149,13 +149,13 @@ $$
 
 ## Worked Examples
 
-**The canonical symmetry.** $J_0={}^{\natural}$: positive part $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, negative part $\mathbb{V}_{\mathbb{B}}$.
+**The canonical symmetry.** $J_0={}^{\natural}$: positive part $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, negative part $\mathbb{V}_{\mathbb{B}}$.
 
-**A tilted symmetry.** $\tilde S=\tfrac12e_1$. The line $\ell=\mathbb{C}(e_0+\tfrac12e_1)$ is positive definite, $\langle e_0+\tfrac12e_1,e_0+\tfrac12e_1\rangle_{\natural*}=1-\tfrac14=\tfrac34>0$, so $J_{\tilde S}$ is a fundamental symmetry; it does not fix $e_0$, and it is not an anti-automorphism.
+**A tilted symmetry.** $\tilde S=\tfrac12\vec e_x$. The line $\ell=\mathbb{C}(e_t+\tfrac12\vec e_x)$ is positive definite, $\langle e_t+\tfrac12\vec e_x,e_t+\tfrac12\vec e_x\rangle_{\natural*}=1-\tfrac14=\tfrac34>0$, so $J_{\tilde S}$ is a fundamental symmetry; it does not fix $e_t$, and it is not an anti-automorphism.
 
-**The boundary.** $\tilde S=e_1$: $\langle e_0+e_1,e_0+e_1\rangle_{\natural*}=0$, the line is totally isotropic, so $\|\tilde S\|_E<1$ is optimal and the set $\lVert\tilde S\rVert_E<1$ is exactly the set of admissible parameters.
+**The boundary.** $\tilde S=\vec e_x$: $\langle e_t+\vec e_x,e_t+\vec e_x\rangle_{\natural*}=0$, the line is totally isotropic, so $\|\tilde S\|_E<1$ is optimal and the set $\lVert\tilde S\rVert_E<1$ is exactly the set of admissible parameters.
 
-**A non-admissible parameter.** $\tilde S=2e_1$: $\langle e_0+2e_1,e_0+2e_1\rangle_{\natural*}=1-4<0$, the line is negative, and no fundamental symmetry with that positive part exists.
+**A non-admissible parameter.** $\tilde S=2\vec e_x$: $\langle e_t+2\vec e_x,e_t+2\vec e_x\rangle_{\natural*}=1-4<0$, the line is negative, and no fundamental symmetry with that positive part exists.
 
 **The two indices.** For the algebra, $(n,m)=(2,6)$ over $\mathbb{R}$, so the negative index is $6$ and the Pontryagin index is $2$, written $\Pi_{6}$; over $\mathbb{C}$ the pair is $(1,3)$ and the two indices are $3$ and $1$. The Pontryagin index is the dimension of the positive part, the centre.
 
@@ -163,7 +163,7 @@ $$
 
 ## Summary
 
-The **fundamental symmetry** of the general quaternionic sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_0$-lines, with the bridge $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_0+\tilde S)$, $\|\tilde S\|_E<1$, a family parametrised by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_0$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself. The negative index is $6$ over $\mathbb{R}$ and $3$ over $\mathbb{C}$, and the Pontryagin index $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$; the fundamental symmetry $J$ exhibits one fundamental decomposition, and every other one is obtained from a maximal positive definite line.
+The **fundamental symmetry** of the general quaternionic sesquilinear form is the natural conjugation $J={}^{\natural}$: a $\mathbb{C}$-linear involution, self-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$, positive on $e_t$-lines, with the bridge $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\langle\tilde{Q}',\tilde{Q}^{\natural}\rangle_{*}$. Its eigenspaces are the centre (positive, complex dimension one) and the vector subspace (negative, complex dimension three), so the fundamental decomposition is precisely the eigenspace splitting of one of the algebra's four involutions. ${}^{\natural}$ is a $\mathbb{C}$-algebra anti-automorphism (quaternion conjugation, the adjugate in the matrix model) and commutes with the complex conjugation and the dagger; it exchanges left and right multiplications. All the other fundamental symmetries are the involutions with positive part a positive definite line $\mathbb{C}(e_t+\tilde S)$, $\|\tilde S\|_E<1$, a family parametrised by the set $\lVert\tilde S\rVert_E<1$ of the vector subspace; among them ${}^{\natural}$ is the unique one that is an anti-automorphism, equivalently the unique one fixing $e_t$. The $J$-adjoint $T^{\dagger}=JT^{*}J$ makes the indefinite operator theory the definite theory conjugated by $J$, and the $J$-positive cone contains $J$ itself. The negative index is $6$ over $\mathbb{R}$ and $3$ over $\mathbb{C}$, and the Pontryagin index $2$ over $\mathbb{R}$ and $1$ over $\mathbb{C}$; the fundamental symmetry $J$ exhibits one fundamental decomposition, and every other one is obtained from a maximal positive definite line.
 
 ## Summary of Notation
 
@@ -174,7 +174,7 @@ The **fundamental symmetry** of the general quaternionic sesquilinear form is th
 | $\mathbb{B}_{+}=\mathbb{C}_{\mathbb{B}}$, $\mathbb{B}_{-}=\mathbb{V}_{\mathbb{B}}$ | The $\pm1$-eigenspaces; centre and vector subspace |
 | $(\tilde{Q}\tilde{R})^{\natural}=\tilde{R}^{\natural}\tilde{Q}^{\natural}$ | Anti-automorphism property |
 | ${}^{\natural}L_{\tilde{Q}}{}^{\natural}=R_{\tilde{Q}^{\natural}}$ | Exchange of the sides |
-| $\ell_{\tilde S}=\mathbb{C}(e_0+\tilde S)$, $\|\tilde S\|_E<1$ | General fundamental symmetry |
+| $\ell_{\tilde S}=\mathbb{C}(e_t+\tilde S)$, $\|\tilde S\|_E<1$ | General fundamental symmetry |
 | $T^{\dagger}=JT^{*}J$ | The $J$-adjoint |
 | $(n,m)=(1,3)$ over $\mathbb{C}$, $(2,6)$ over $\mathbb{R}$ | The signature; $m$ the negative index, $\min(n,m)$ the Pontryagin index |
 | $\Pi_{6}$ | The negative index over $\mathbb{R}$ is $6$; the Pontryagin index is $2$ |

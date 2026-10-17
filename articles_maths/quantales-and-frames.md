@@ -34,10 +34,10 @@ and conversely every complete Heyting algebra is a frame. The underlying lattice
 **Example (open sets).** Let $X$ be a topological space. The open sets, ordered by inclusion, form a frame $\mathcal{O}(X)$: the join of a family of open sets is its union, the meet of two is the intersection, and the distribution axiom is the set-theoretic identity
 
 $$
-U \cap \bigcup_{i} V_i = \bigcup_{i} (U \cap V_i).
+\Omega \cap \bigcup_{i} V_i = \bigcup_{i} (\Omega \cap V_i).
 $$
 
-The relative pseudocomplement is $U \to V = \operatorname{int}\bigl((X \setminus U)\cup V\bigr)$, and the pseudocomplement is $\neg U = \operatorname{int}(X \setminus U)$, as in *Heyting Algebras and Intuitionistic Logic*. Every frame of the form $\mathcal{O}(X)$ is **spatial**, in the sense defined below.
+The relative pseudocomplement is $\Omega \to V = \operatorname{int}\bigl((X \setminus \Omega)\cup V\bigr)$, and the pseudocomplement is $\neg \Omega = \operatorname{int}(X \setminus \Omega)$, as in *Heyting Algebras and Intuitionistic Logic*. Every frame of the form $\mathcal{O}(X)$ is **spatial**, in the sense defined below.
 
 **Example (ideals and down-sets).** Let $R$ be a commutative ring and let $\operatorname{Id}(R)$ be the set of ideals ordered by inclusion; it is a complete lattice under arbitrary sums and intersections, and it is a frame. Its elements are the ideals, not the ring. Let $P$ be a poset and let $\operatorname{Dn}(P)$ be the set of down-sets ordered by inclusion; arbitrary unions and intersections of down-sets are down-sets, and the distribution axiom holds, so $\operatorname{Dn}(P)$ is a frame. These two frames are the homes of the ideal theory of *Rings* and of the order theory of *Order Theory and Lattices*.
 
@@ -57,7 +57,7 @@ $$
 
 **Example (the double-negation nucleus).** The map $j(\alpha) = \neg\neg \alpha$ is a nucleus on any frame, as in *Heyting Algebras and Intuitionistic Logic*; its fixed points are the **regular elements**. For $L = \mathcal{O}(X)$ they are the regular open sets, and $L_j$ is the complete Boolean algebra of regular open sets, the **Booleanization** of the frame. It is the smallest dense sublocale of $L$: it contains no new open sets and every element of $L$ has a dense interior in $L_j$.
 
-**Example (the open-set nucleus).** For a subspace $Y \subseteq X$, the map $U \mapsto U \cap Y$ on $\mathcal{O}(X)$ is not a nucleus; the correct construction is to take the frame $\mathcal{O}(Y)$, which is the image of the frame homomorphism $\mathcal{O}(X) \to \mathcal{O}(Y)$, $U \mapsto U\cap Y$. The nuclei of $\mathcal{O}(X)$ are exactly the sublocales, which include more than the subspaces: the sublocales of a locale form a frame under the reverse of inclusion, and the empty sublocale and the whole locale are among them.
+**Example (the open-set nucleus).** For a subspace $Y \subseteq X$, the map $\Omega \mapsto \Omega \cap Y$ on $\mathcal{O}(X)$ is not a nucleus; the correct construction is to take the frame $\mathcal{O}(Y)$, which is the image of the frame homomorphism $\mathcal{O}(X) \to \mathcal{O}(Y)$, $\Omega \mapsto \Omega\cap Y$. The nuclei of $\mathcal{O}(X)$ are exactly the sublocales, which include more than the subspaces: the sublocales of a locale form a frame under the reverse of inclusion, and the empty sublocale and the whole locale are among them.
 
 ## Locales and Pointfree Topology
 
@@ -79,7 +79,7 @@ $$
 \operatorname{Hom}_{\mathbf{Loc}}(\mathcal{O}(X), L) \cong \operatorname{Hom}_{\mathbf{Top}}(X, \operatorname{pt}(L)),
 $$
 
-the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $U \mapsto 1$ if $x \in U$ and $0$ otherwise.
+the unit $X \to \operatorname{pt}(\mathcal{O}(X))$ assigns to a point $x$ the frame homomorphism $\Omega \mapsto 1$ if $x \in \Omega$ and $0$ otherwise.
 
 **Proof.** A continuous map $g : X \to \operatorname{pt}(L)$ determines the frame homomorphism $L \to \mathcal{O}(X)$, $\alpha \mapsto \{x : g(x)(\alpha) = 1\}$, and conversely a frame homomorphism $L \to \mathcal{O}(X)$ determines $g$ by the same formula. The two assignments are mutually inverse and natural, which is the adjunction. The unit is the special case.
 

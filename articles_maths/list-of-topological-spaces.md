@@ -42,7 +42,7 @@ The spaces of the geometry articles are the model spaces of constant curvature a
 | $S^0 = \{\pm1\}$ | the two-point discrete space; compact, totally disconnected | *Spherical Geometry* |
 | $D^n$ | the closed unit ball; compact, connected, path connected, contractible | *Smooth Manifolds and Differential Geometry* |
 | $\mathbf{H}^n$ | the hyperbolic space; connected, path connected, contractible and complete for the hyperbolic metric; not compact | *Hyperbolic Geometry* |
-| $S^1$ | compact, connected, path connected; simultaneously the circle and the unitary group $U(1)$ | *Topological Spaces* |
+| $S^1$ | compact, connected, path connected; simultaneously the circle and the unitary group $\mathrm{U}(1)$ | *Topological Spaces* |
 | $T^n = \mathbb{R}^n/\mathbb{Z}^n$ | compact, connected, path connected; a Lie group and a symmetric space | *Topological Spaces* |
 | $\mathbb{RP}^n = S^n/\{\pm1\}$ | compact, connected for $n \geq 1$; a manifold, connected even though $S^n$ is a double cover | *Projective Geometry*; *Smooth Manifolds and Differential Geometry* |
 | $\mathbb{CP}^n$ | compact, connected, path connected; a complex manifold of dimension $n$ | *Topological Spaces*; *Several Complex Variables* |
@@ -62,7 +62,7 @@ A Lie group is a topological space as well as a group, and the corpus uses its t
 | $GL_n(\mathbb{R})$ | locally compact Hausdorff, second countable, not compact; two components, separated by the sign of the determinant | *The General Linear Group*; *Lie Groups* |
 | $GL_n(\mathbb{C})$ | locally compact Hausdorff, second countable, not compact; connected | *The General Linear Group* |
 | $SL_n(\mathbb{R})$, $SL_n(\mathbb{C})$ | locally compact Hausdorff, not compact; connected, and simply connected for the complex case | *The Special Linear Group and the Determinant* |
-| $O(n)$, $U(n)$, $Sp(n)$ | compact, Hausdorff, metrisable; $O(n)$ has two components, $U(n)$ and $Sp(n)$ are connected | *Isometries and Orthogonal Transformations*; *The Unitary and Symplectic Groups* |
+| $O(n)$, $\mathrm{U}(n)$, $Sp(n)$ | compact, Hausdorff, metrisable; $O(n)$ has two components, $\mathrm{U}(n)$ and $Sp(n)$ are connected | *Isometries and Orthogonal Transformations*; *The Unitary and Symplectic Groups* |
 | $SO(n)$, $SU(n)$ | compact and connected; $SU(n)$ is simply connected, and $SO(n)$ has fundamental group $\mathbb{Z}/2$ for $n \geq 3$ | *The Rotation Group and Orientation*; *The Unitary and Symplectic Groups* |
 | $G/H$ | the homogeneous space of a closed subgroup; locally compact Hausdorff, and compact when $H$ is cocompact | *Homogeneous Spaces* |
 | $\operatorname{Gr}(k,n) = GL_n/H$ | the Grassmannian as a homogeneous space; compact, connected, and a projective variety when the field is algebraically closed | *Homogeneous Spaces*; *Grassmannians and Stiefel Manifolds* |
@@ -151,7 +151,7 @@ Objects that a reader may expect to find among the topological spaces, and does 
 
 | Object | Why it is not listed as a topological space | Introduced in |
 |---|---|---|
-| the octonions $\mathbb{O}$ | a non-associative algebra, named in the corpus as a division algebra and not equipped with a topology of its own | *Octonion Algebra*; *Normed Division Algebras and the Hurwitz Theorem* |
+| the octonions $\mathbb{O}$ | a non-associative algebra, named in the corpus as a division algebra and not equipped with a topology of its own | ; *Normed Division Algebras and the Hurwitz Theorem* |
 | a group such as the free group $F_2$ | an object of Part I, with no topology attached until it is made a topological group | *Combinatorial Group Theory* |
 | the orthogonal group $O(n)$ | a Lie group and a compact space, but it is defined by a form, so it is a geometric group and not a space of this list | *Isometries and Orthogonal Transformations* |
 | the Zariski topology on $\mathbb{R}^n$ | a topology introduced with the algebraic structure of a real variety; recorded here through $\operatorname{Spec} R$ and not as a separate space | *Real Algebraic Geometry* |

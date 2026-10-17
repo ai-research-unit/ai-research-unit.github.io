@@ -11,12 +11,12 @@ Two boundaries are stated at once. The homological algebra — derived functors,
 
 ## Quasi-Coherent and Coherent Sheaves
 
-**Definition.** Let $(X,\mathcal{O}_X)$ be a scheme. An $\mathcal{O}_X$-**module** is a sheaf $\mathcal{F}$ of abelian groups with a multiplication $\mathcal{O}_X(U)\times\mathcal{F}(U)\to\mathcal{F}(U)$ making each $\mathcal{F}(U)$ a module over the ring $\mathcal{O}_X(U)$ compatibly with restriction. A morphism of $\mathcal{O}_X$-modules is a morphism of sheaves compatible with the multiplications; the category is abelian with kernels, cokernels and images formed on sections, by *Presheaves and Sheaves*. An $\mathcal{O}_X$-module $\mathcal{F}$ is:
+**Definition.** Let $(X,\mathcal{O}_X)$ be a scheme. An $\mathcal{O}_X$-**module** is a sheaf $\mathcal{F}$ of abelian groups with a multiplication $\mathcal{O}_X(\Omega)\times\mathcal{F}(\Omega)\to\mathcal{F}(\Omega)$ making each $\mathcal{F}(\Omega)$ a module over the ring $\mathcal{O}_X(\Omega)$ compatibly with restriction. A morphism of $\mathcal{O}_X$-modules is a morphism of sheaves compatible with the multiplications; the category is abelian with kernels, cokernels and images formed on sections, by *Presheaves and Sheaves*. An $\mathcal{O}_X$-module $\mathcal{F}$ is:
 
-1. **quasi-coherent** if every point of $X$ has an affine open neighbourhood $U = \operatorname{Spec} A$ with $\mathcal{F}|_U\congM^{\mathrm{sh}}$ for an $A$-module $M$;
-2. **of finite type** if in addition every point has an affine neighbourhood on which $\mathcal{F}|_U$ is a quotient of a finite free $\mathcal{O}_U$-module;
-3. **coherent** if it is of finite type and for every open $U$ and every morphism $\mathcal{O}_U^n\to\mathcal{F}|_U$ the kernel is of finite type;
-4. **locally free** of rank $r$ if every point has a neighbourhood $U$ with $\mathcal{F}|_U\cong\mathcal{O}_U^r$.
+1. **quasi-coherent** if every point of $X$ has an affine open neighbourhood $\Omega = \operatorname{Spec} A$ with $\mathcal{F}|_\Omega\cong M^{\mathrm{sh}}$ for an $A$-module $M$;
+2. **of finite type** if in addition every point has an affine neighbourhood on which $\mathcal{F}|_\Omega$ is a quotient of a finite free $\mathcal{O}_\Omega$-module;
+3. **coherent** if it is of finite type and for every open $\Omega$ and every morphism $\mathcal{O}_\Omega^n\to\mathcal{F}|_\Omega$ the kernel is of finite type;
+4. **locally free** of rank $r$ if every point has a neighbourhood $\Omega$ with $\mathcal{F}|_\Omega\cong\mathcal{O}_\Omega^r$.
 
 The categories are written $\mathbf{QCoh}(X)$, $\mathbf{Coh}(X)$, and $\mathbf{Mod}(\mathcal{O}_X)$ for all modules.
 
@@ -32,17 +32,17 @@ The categories are written $\mathbf{QCoh}(X)$, $\mathbf{Coh}(X)$, and $\mathbf{M
 
 **Example (a coherent sheaf that is not locally free).** On $X = \operatorname{Spec} k[x,y]$ the ideal sheaf $(x,y)$ is coherent and not locally free: it has rank one at the generic point and its fibre at the origin is two-dimensional. The example is the reason the theory of coherent sheaves is not the theory of vector bundles: the rank of a coherent sheaf is defined only at the points where it is locally free, and the locus where a coherent sheaf is locally free of a given rank is open but not closed, the failure being measured by the local Ext sheaves of the next sections.
 
-**Remark (the module side).** On $X = \operatorname{Spec} A$ the functor $M\mapstoM^{\mathrm{sh}}$ is an equivalence of categories from $A$-modules to quasi-coherent sheaves, exact and commuting with tensor products and homs, and the coherent sheaves correspond to the finitely generated modules when $A$ is Noetherian, as in *Sheaves in Algebraic Geometry*; the whole content of the present article is therefore invisible on an affine scheme, and its theorems are statements about what happens when the affine charts are glued. The general statement of the passage from local to global for sheaves of modules is the descent theorem of Part I's *Descent Theory*: quasi-coherent sheaves form a stack on the Zariski site of $X$, so that specifying one is the same as specifying modules on the charts together with the descent datum, the compatibility isomorphisms over the overlaps satisfying the cocycle condition.
+**Remark (the module side).** On $X = \operatorname{Spec} A$ the functor $M\mapsto M^{\mathrm{sh}}$ is an equivalence of categories from $A$-modules to quasi-coherent sheaves, exact and commuting with tensor products and homs, and the coherent sheaves correspond to the finitely generated modules when $A$ is Noetherian, as in *Sheaves in Algebraic Geometry*; the whole content of the present article is therefore invisible on an affine scheme, and its theorems are statements about what happens when the affine charts are glued. The general statement of the passage from local to global for sheaves of modules is the descent theorem of Part I's *Descent Theory*: quasi-coherent sheaves form a stack on the Zariski site of $X$, so that specifying one is the same as specifying modules on the charts together with the descent datum, the compatibility isomorphisms over the overlaps satisfying the cocycle condition.
 
 ## Glueing and the Graded Case
 
-**Theorem (glueing of sheaves).** Let $X$ be a scheme with affine charts $U_i = \operatorname{Spec} A_i$ and intersections $U_{ij} = U_i\cap U_j = \operatorname{Spec} A_{ij}$, the $A_{ij}$ being the localisations of the $A_i$. The data of a quasi-coherent sheaf $\mathcal{F}$ on $X$ are equivalent to the data of $A_i$-modules $M_i$ with isomorphisms $\varphi_{ij} : M_i\otimes_{A_i}A_{ij}\to M_j\otimes_{A_j}A_{ij}$ satisfying $\varphi_{ii} = \mathrm{id}$ and the cocycle condition $\varphi_{ik} = \varphi_{jk}\circ\varphi_{ij}$ on the triple overlaps. The same statement holds for coherent sheaves with finitely generated modules, and for locally free sheaves with the $M_i$ free.
+**Theorem (glueing of sheaves).** Let $X$ be a scheme with affine charts $\Omega_i = \operatorname{Spec} A_i$ and intersections $\Omega_{ij} = \Omega_i\cap \Omega_j = \operatorname{Spec} A_{ij}$, the $A_{ij}$ being the localisations of the $A_i$. The data of a quasi-coherent sheaf $\mathcal{F}$ on $X$ are equivalent to the data of $A_i$-modules $M_i$ with isomorphisms $\varphi_{ij} : M_i\otimes_{A_i}A_{ij}\to M_j\otimes_{A_j}A_{ij}$ satisfying $\varphi_{ii} = \mathrm{id}$ and the cocycle condition $\varphi_{ik} = \varphi_{jk}\circ\varphi_{ij}$ on the triple overlaps. The same statement holds for coherent sheaves with finitely generated modules, and for locally free sheaves with the $M_i$ free.
 
-*Proof.* Given $\mathcal{F}$, take $M_i = \Gamma(U_i,\mathcal{F})$, and the $\varphi_{ij}$ are the comparison isomorphisms on the overlaps, which satisfy the cocycle condition because restriction maps do. Conversely, given the data, glue the sheaves $M^{\mathrm{sh}}_i}$ on the $U_i$ by the glueing lemma for sheaves, the cocycle condition being exactly the compatibility required; the resulting sheaf is an $\mathcal{O}_X$-module, and it is quasi-coherent because it is locally isomorphic to the $M^{\mathrm{sh}}_i}$.
+*Proof.* Given $\mathcal{F}$, take $M_i = \Gamma(\Omega_i,\mathcal{F})$, and the $\varphi_{ij}$ are the comparison isomorphisms on the overlaps, which satisfy the cocycle condition because restriction maps do. Conversely, given the data, glue the sheaves $M^{\mathrm{sh}}_i$ on the $\Omega_i$ by the glueing lemma for sheaves, the cocycle condition being exactly the compatibility required; the resulting sheaf is an $\mathcal{O}_X$-module, and it is quasi-coherent because it is locally isomorphic to the $M^{\mathrm{sh}}_i$.
 
 **Theorem (the graded case).** Let $S$ be a graded ring, $X = \operatorname{Proj} S$, and $M$ a graded $S$-module. Then there is a quasi-coherent sheaf $M^{\mathrm{sh}}$ on $X$ with $M^{\mathrm{sh}}|_{D_+(f)} = (M_f)_0$ for homogeneous $f$, the assignment is exact and takes the shifted modules $M(d)$ to the twists $M^{\mathrm{sh}}(d)$, and:
 
-1. the functor $M\mapstoM^{\mathrm{sh}}$ is essentially surjective onto the quasi-coherent sheaves and its kernel is the category of graded modules whose localisation vanishes, the **torsion** graded modules of $X$;
+1. the functor $M\mapsto M^{\mathrm{sh}}$ is essentially surjective onto the quasi-coherent sheaves and its kernel is the category of graded modules whose localisation vanishes, the **torsion** graded modules of $X$;
 2. if $S$ is Noetherian and $M$ is finitely generated then $M^{\mathrm{sh}}$ is coherent, and every coherent sheaf on the projective scheme $\operatorname{Proj} S$ arises this way from a finitely generated graded module;
 3. consequently the coherent sheaves on a projective scheme over a Noetherian ring are the finitely generated graded modules modulo the torsion ones, and the cohomology of $M^{\mathrm{sh}}$ is computed from the graded module by the Čech complex of the standard cover.
 
@@ -61,20 +61,20 @@ $$
 the right derived functors of the global sections functor, so that $H^0(X,\mathcal{F}) = \Gamma(X,\mathcal{F})$ and there is a long exact sequence in $i$ for every short exact sequence of sheaves, as in *Sheaf Cohomology*. For a morphism $f : X\to Y$ the **higher direct images** are the sheaves associated with the presheaves
 
 $$
-U\mapsto H^i(f^{-1}U,\mathcal{F}), \qquad R^if_*\mathcal{F} = \mathcal{O}_Y\text{-module associated with } \bigl(U\mapsto H^i(f^{-1}U,\mathcal{F})\bigr),
+\Omega\mapsto H^i(f^{-1}\Omega,\mathcal{F}), \qquad R^if_*\mathcal{F} = \mathcal{O}_Y\text{-module associated with } \bigl(\Omega\mapsto H^i(f^{-1}\Omega,\mathcal{F})\bigr),
 $$
 
 and they are quasi-coherent when $\mathcal{F}$ is, for $f$ quasicompact and quasiseparated; the Leray spectral sequence $E_2^{n,m} = H^p(Y,R^qf_*\mathcal{F})\Rightarrow H^{p+q}(X,\mathcal{F})$ is that of *Derived Functors and Sheaf Cohomology*.
 
-**Theorem (the Čech computation on a separated scheme).** Let $X$ be a separated scheme, $\mathcal{U} = \{U_i\}$ an affine open cover and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then the Čech complex
+**Theorem (the Čech computation on a separated scheme).** Let $X$ be a separated scheme, $\mathcal{U} = \{\Omega_i\}$ an affine open cover and $\mathcal{F}$ a quasi-coherent sheaf on $X$. Then the Čech complex
 
 $$
-\check C^\bullet(\mathcal{U},\mathcal{F}) : \prod_i\mathcal{F}(U_i)\to\prod_{i,j}\mathcal{F}(U_i\cap U_j)\to\cdots
+\check C^\bullet(\mathcal{U},\mathcal{F}) : \prod_i\mathcal{F}(\Omega_i)\to\prod_{i,j}\mathcal{F}(\Omega_i\cap \Omega_j)\to\cdots
 $$
 
 computes the cohomology: $\check H^i(\mathcal{U},\mathcal{F})\cong H^i(X,\mathcal{F})$ for all $i$. Consequently the cohomology of a quasi-coherent sheaf on a separated scheme is computed by an explicit complex of modules, and for a separated scheme of finite type over a Noetherian ring the cohomology groups are finitely generated when $\mathcal{F}$ is coherent.
 
-*Proof.* The intersections $U_{i_0\cdots i_p}$ are affine, since $X$ is separated and the intersection of affines in a separated scheme is affine; a quasi-coherent sheaf on an affine scheme has no higher cohomology by the affine vanishing theorem of *Sheaves in Algebraic Geometry*, so $\mathcal{F}$ is acyclic on every intersection and the Leray theorem of *Čech Cohomology* applies to the cover. The finite generation follows because the Čech complex is then a finite complex of finitely generated modules over a Noetherian ring in the presence of a finite affine cover.
+*Proof.* The intersections $\Omega_{i_0\cdots i_p}$ are affine, since $X$ is separated and the intersection of affines in a separated scheme is affine; a quasi-coherent sheaf on an affine scheme has no higher cohomology by the affine vanishing theorem of *Sheaves in Algebraic Geometry*, so $\mathcal{F}$ is acyclic on every intersection and the Leray theorem of *Čech Cohomology* applies to the cover. The finite generation follows because the Čech complex is then a finite complex of finitely generated modules over a Noetherian ring in the presence of a finite affine cover.
 
 **Theorem (finiteness and vanishing).** Let $f : X\to Y$ be a proper morphism of locally Noetherian schemes and $\mathcal{F}$ a coherent sheaf on $X$.
 

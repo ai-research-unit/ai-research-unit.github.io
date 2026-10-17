@@ -11,7 +11,7 @@ No form appears in this article: the Hermitian form and the inner product are *T
 **Definition.** The **real reading** of $\mathbb{B}$ is the same additive group over the subfield $\mathbb{R}$ of $\mathbb{C}$, obtained by restriction of scalars: the elements are unchanged and the scalar domain is cut from $\mathbb{C}$ down to the subfield $\mathbb{R}$. The general element is written in the eight real coordinates of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, §*The Coordinate Systems*, on the real basis
 
 $$
-e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3 .
+e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z .
 $$
 
 Every element is a unique real combination of those eight, so the real dimension is the complex dimension doubled, $\dim_\mathbb{R}\mathbb{B} = 2\dim_\mathbb{C}\mathbb{B} = 8$, as recorded in the complex article, §*The Complex Vector Space*.
@@ -62,7 +62,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 **Proof.** If $\mathbb{B} = V \oplus JV$, then $V \cap JV = 0$ by the directness of the sum. Conversely let $V \cap JV = 0$. If $v + Jw = 0$ with $v, w \in V$, then $v = -Jw$ lies in $V \cap JV$, so $v = 0$ and $Jw = 0$, hence $w = 0$; the map $V \oplus JV \to \mathbb{B}$, $v + Jw \mapsto v + Jw$, is therefore injective, and since both sides have real dimension eight it is an isomorphism, $\mathbb{B} = V \oplus JV$. The map $\mathbb{C}\otimes_\mathbb{R}V \to \mathbb{B}$, $z \otimes v \mapsto zv$, is then $\mathbb{C}$-linear and surjective, because its image contains $V$ and $JV$, hence all of $\mathbb{B}$, and both spaces have complex dimension four, so it is an isomorphism.
 
-**Example.** The elements with real coefficients, spanned by $e_0, e_1, e_2, e_3$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.
+**Example.** The elements with real coefficients, spanned by $e_t, \vec e_x, \vec e_y, \vec e_z$, form a real form; its image under $J$ is the subspace of elements with purely imaginary coefficients, the two meet at zero and their sum is $\mathbb{B}$. Real forms are not unique, and the choice of one is data beyond the real reading.
 
 **Remark (the two real spaces, of dimensions eight and four).** The two dimensions must not be confused. The restriction of scalars of the complex reading is the eight-dimensional space above, whose extension of scalars back to $\mathbb{C}$ has complex dimension eight; the extension of scalars of a real form is the four-dimensional complex space $\mathbb{B}$ itself. What returns the complex reading from the eight-dimensional space is the operator $J$, not a scalar extension. The version of this caution for the algebra and its base rings, where $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\times\mathbb{C}$, is *The Realification and the Effect of the Change of Scalars*.
 
@@ -74,7 +74,7 @@ The real reading sees more subspaces than the complex one, since every complex s
 
 ## Summary
 
-The biquaternion algebra read over the real scalars is the set $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the scalar domain cut down to the subfield $\mathbb{R}$: the same additive group as the complex reading, of real dimension eight on the basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, twice the complex dimension.
+The biquaternion algebra read over the real scalars is the set $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with the scalar domain cut down to the subfield $\mathbb{R}$: the same additive group as the complex reading, of real dimension eight on the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, twice the complex dimension.
 
 The gap between the two readings is one operator: the multiplication $J : \tilde{Q} \mapsto i\tilde{Q}$ by the central imaginary, real-linear with $J^2 = -\mathrm{id}$, is the complex structure of the real space, and the complex action is the real action together with $J$. A real-linear map is $\mathbb{C}$-linear exactly when it commutes with $J$ and antilinear exactly when it anticommutes; the quaternion conjugation commutes and the other three conjugations anticommute. The real reading therefore sees more linear maps — $\operatorname{End}_\mathbb{R}(\mathbb{B}) \cong M_8(\mathbb{R})$ against $\operatorname{End}_\mathbb{C}(\mathbb{B}) \cong M_4(\mathbb{C})$, of real dimensions $64$ and $32$ — and more subspaces, since every complex subspace is a real one and not conversely.
 
@@ -87,7 +87,7 @@ The product stays $\mathbb{R}$-bilinear, so the four general products of *The Fo
 | Symbol | Meaning |
 |---|---|
 | $\operatorname{Res}_{\mathbb{C}/\mathbb{R}}\mathbb{B}$ | the real reading: the same additive group and the same elements over the scalars $\mathbb{R}$, dimension $8$ |
-| $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$ | the real basis |
+| $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$ | the real basis |
 | $J : \tilde{Q} \mapsto i\tilde{Q}$ | the real-linear complex structure, $J^2 = -\mathrm{id}$ |
 | $\lambda\tilde{Q} = a\tilde{Q} + bJ(\tilde{Q})$ | the complex action read over $\mathbb{R}$, for $\lambda = a + bi$ |
 | $\operatorname{End}_\mathbb{R}(\mathbb{B})$ | the real-linear self-maps, $\cong M_8(\mathbb{R})$ |

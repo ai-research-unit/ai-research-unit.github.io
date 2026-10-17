@@ -70,9 +70,9 @@ A point of $X^{\sigma}$ is a **fixed point**; a point outside it is **moved** by
 
 ### Fixed Points of an Involution of Order Two
 
-**Proposition.** If $\sigma$ is a continuous involution and $x$ is moved, then the two points of the orbit have homeomorphic neighbourhoods: the involution is a homeomorphism carrying every neighbourhood of $x$ to a neighbourhood of $\sigma(x)$. In particular the orbit map is a local homeomorphism at a moved point exactly when there is a neighbourhood $U$ of $x$ with $U \cap \sigma(U) = \emptyset$.
+**Proposition.** If $\sigma$ is a continuous involution and $x$ is moved, then the two points of the orbit have homeomorphic neighbourhoods: the involution is a homeomorphism carrying every neighbourhood of $x$ to a neighbourhood of $\sigma(x)$. In particular the orbit map is a local homeomorphism at a moved point exactly when there is a neighbourhood $\Omega$ of $x$ with $\Omega \cap \sigma(\Omega) = \emptyset$.
 
-**Proof.** $\sigma$ is a homeomorphism, so it carries the neighbourhood filter of $x$ bijectively onto that of $\sigma(x)$. The local homeomorphism statement is the definition of a covering at the orbit: the image of $U$ is open, and its preimage is $U \cup \sigma(U)$, which is two disjoint copies exactly when $U \cap \sigma(U) = \emptyset$.
+**Proof.** $\sigma$ is a homeomorphism, so it carries the neighbourhood filter of $x$ bijectively onto that of $\sigma(x)$. The local homeomorphism statement is the definition of a covering at the orbit: the image of $\Omega$ is open, and its preimage is $\Omega \cup \sigma(\Omega)$, which is two disjoint copies exactly when $\Omega \cap \sigma(\Omega) = \emptyset$.
 
 ## The Orbit Space as the Quotient
 
@@ -110,7 +110,7 @@ An involution on $X$ acts on $\mathcal{P}(X)$ by $\sigma(A) = \{\sigma(x) : x \i
 
 **Proof.** $\sigma$ is a bijection, so $A \mapsto \sigma(A)$ preserves the Boolean operations and has order two; a set is fixed exactly when it is a union of orbits. The remaining clauses are those of *The Orbit Map* for the group $\mathbb{Z}/2$.
 
-**Remark.** The induced involution on the power set is the simplest instance of the observation that an involution on a structure induces one on the structures built from it. On the lattice of open sets it is the map $U \mapsto \sigma(U)$, which is an automorphism of the lattice and restricts to an automorphism of the clopen algebra; on the cohomology the induced involution is the subject of the group `- * Operator Theory` of this category.
+**Remark.** The induced involution on the power set is the simplest instance of the observation that an involution on a structure induces one on the structures built from it. On the lattice of open sets it is the map $\Omega \mapsto \sigma(\Omega)$, which is an automorphism of the lattice and restricts to an automorphism of the clopen algebra; on the cohomology the induced involution is the subject of the group `- * Operator Theory` of this category.
 
 ## Examples
 

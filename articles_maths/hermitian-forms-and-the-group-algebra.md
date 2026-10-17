@@ -56,14 +56,14 @@ and the assignment $\phi\mapsto B_\phi$ is the composition of the identification
 **Definition.** Let $B$ be a positive semidefinite Hermitian form on $\mathcal{A}$ compatible with the involution. The **null space** is $N_B = \{f : B(f,f) = 0\}$; the **associated Hilbert space** is the completion $\mathcal{H}_B$ of $\mathcal{A}/N_B$ for the induced inner product; and the **unitary group** of $B$ is
 
 $$
-U(B) = \{h\in\mathcal{A} : B(h*f,h*g) = B(f,g)\ \text{for all }f,g\} .
+\mathrm{U}(B) = \{h\in\mathcal{A} : B(h*f,h*g) = B(f,g)\ \text{for all }f,g\} .
 $$
 
 **Theorem (compatibility gives the representation).** If $B = B_\omega$ for a positive functional $\omega$, then the quotient $\mathcal{A}/N_B$ carries a unique unitary representation $\pi_B$ with $\pi_B(x)(f + N_B) = L_xf + N_B$, and the vector $\xi_B = u + N_B$ of a normalised approximate identity is cyclic with $B_\omega(f,\xi_B) = \omega(f)$; the representation is the GNS representation of $\phi_\omega = \omega$ read on the group.
 
 **Proof.** Compatibility makes $N_B$ a left ideal, so the quotient is a pre-Hilbert space; left translation preserves the form by the invariance in the theorem above, so it descends to a unitary, and multiplicativity of $L$ gives the representation. Cyclicity and the vector statement are the GNS construction of *Positive Definite Functions and the Gelfand–Raikov Theorem*.
 
-**Theorem (the unitary group of the form).** For a positive semidefinite compatible $B$, the unitary group $U(B)$ is a group, the **form-preserving elements**, and the assignment $h\mapsto\pi_B(h)$ embeds $U(B)$ into the unitary group $\mathcal{U}(\mathcal{H}_B)$; the set $U(B)$ is closed in $\mathcal{A}$ in the strong topology of the representation, and it contains the unitary elements of any unital subalgebra on which $B$ is defined.
+**Theorem (the unitary group of the form).** For a positive semidefinite compatible $B$, the unitary group $\mathrm{U}(B)$ is a group, the **form-preserving elements**, and the assignment $h\mapsto\pi_B(h)$ embeds $\mathrm{U}(B)$ into the unitary group $\mathcal{U}(\mathcal{H}_B)$; the set $\mathrm{U}(B)$ is closed in $\mathcal{A}$ in the strong topology of the representation, and it contains the unitary elements of any unital subalgebra on which $B$ is defined.
 
 **Proof.** The composition of two form-preserving elements is form-preserving, and the identity is; the map $h\mapsto\pi_B(h)$ is multiplicative and preserves the form by definition, so its image is unitary. Closedness is the closedness of the isometry group of a Hilbert space under strong convergence, pulled back along the continuous representation.
 
@@ -119,7 +119,7 @@ A Hermitian form on the group algebra is conjugate-linear in the first variable,
 | $B_\omega(h*f,g) = B_\omega(f,h^*\!*g)$ | Compatibility with the involution |
 | $N_B = \{f : B(f,f) = 0\}$ | The null space, a left ideal |
 | $\mathcal{H}_B$ | The completion of $\mathcal{A}/N_B$ |
-| $U(B)$ | The unitary group of the form |
+| $\mathrm{U}(B)$ | The unitary group of the form |
 | $B(f,g) = C(f,g^*)$ | The conversion of a bilinear form into a Hermitian one |
 | $C(f^*,g^*) = \overline{C(g,f)}$ | The compatibility of the bilinear form $C$ |
 | $\phi\leftrightarrow\omega\leftrightarrow B$ | The three-way correspondence |

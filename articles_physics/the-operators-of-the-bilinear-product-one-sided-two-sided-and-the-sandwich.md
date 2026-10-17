@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is the operator article of the general plain algebra, the algebra of *The Bilinear Product on the Biquaternion Space*. Its product is the general plain bilinear product $\tilde P\tilde Q$, and the operators of the block are the maps
+This article is the operator article of the general plain algebra, the algebra of *The Products, Their Forms and Their Norms*. Its product is the general plain bilinear product $\tilde P\tilde Q$, and the operators of the block are the maps
 that attach an element to an argument:
 
 $$
@@ -38,13 +38,13 @@ of the block is the consequence: a one-sided operator is self-adjoint exactly wh
 parameter is central, a two-sided operator exactly when its two parameters are proportional, and no generator appears
 in either family. The criteria and their proofs are the mathematics of *One-Sided Operators on the Biquaternion Algebra*, *Two-Sided Operators on the Biquaternion Algebra* and *Association and the Transpose on the Quaternion Algebra*; the article reads them.
 
-Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\vec Q$ with the vector part
-$\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The adjoint for the plain form is written $F^{\approx}$ and called the **associate**.
+Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$,
+$\vec e_k^{2}=-e_t$ and central imaginary $i$; a general element is $\tilde Q=Q_te_t+\vec Q$ with the vector part
+$\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The adjoint for the plain form is written $F^{\approx}$ and called the **associate**.
 The form is
 
 $$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,\qquad
+\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q,\qquad
 \mathrm{Gram}=\mathrm{diag}(1,-1,-1,-1),
 $$
 
@@ -70,7 +70,7 @@ opposite algebra; the third says that attaching an operation before an argument 
 independent; the fourth says that the two-sided family is closed under composition, with the second slot read in the
 reverse order because the right multiplications form an anti-representation. The parallel is exact: the parameter
 enters **once** in each slot, so the assignment $\tilde A\mapsto L_{\tilde A}$ is $\mathbb{C}$-linear and injective, and
-$L_{\tilde A}(e_0)=\tilde A$ recovers the parameter from the operator. The composition laws and the monoid of acting
+$L_{\tilde A}(e_t)=\tilde A$ recovers the parameter from the operator. The composition laws and the monoid of acting
 maps are *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*, and the
 enveloping algebra they generate is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
@@ -98,7 +98,7 @@ $$
 $$
 
 the algebraic norm pair $(\tilde A,\tilde B)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
-$\Theta_{e_0}=\mathrm{id}$ and $R_{\tilde Q}=L_{e_0}R_{\tilde Q}$, $L_{\tilde Q}=L_{\tilde Q}R_{e_0}$.
+$\Theta_{e_t}=\mathrm{id}$ and $R_{\tilde Q}=L_{e_t}R_{\tilde Q}$, $L_{\tilde Q}=L_{\tilde Q}R_{e_t}$.
 
 The sandwich is one of the four objects the corpus calls an action, and it is the only one of them whose two slots are
 tied; its own article is *The Sandwich Action in Subspaces*, and the operator form $\mathrm{H}_{\tilde Q}$ is *The 4×4
@@ -159,7 +159,7 @@ and the same two criteria hold on the right with $\tilde B$ in place of $\tilde 
 
 *Proof.* By the swap theorem, self-adjointness of $L_{\tilde A}$ is $R_{\tilde A}=L_{\tilde A}$, that is
 $\tilde A\tilde Y=\tilde Y\tilde A$ for every $\tilde Y$, which is centrality; skew-adjointness is
-$\tilde A\tilde Y=-\tilde Y\tilde A$ for every $\tilde Y$, and at $\tilde Y=e_0$ this reads $\tilde A=-\tilde A$, so
+$\tilde A\tilde Y=-\tilde Y\tilde A$ for every $\tilde Y$, and at $\tilde Y=e_t$ this reads $\tilde A=-\tilde A$, so
 $\tilde A=0$.
 
 **Theorem (the two-sided types).** For $\tilde A\neq0$,
@@ -171,10 +171,10 @@ L_{\tilde A}R_{\tilde B}\ \text{skew-adjoint}\iff L_{\tilde A}R_{\tilde B}=0 .
 $$
 
 *Proof.* Self-adjointness is $L_{\tilde B}R_{\tilde A}=L_{\tilde A}R_{\tilde B}$ by the swap, that is
-$\tilde B\tilde Y\tilde A=\tilde A\tilde Y\tilde B$ for all $\tilde Y$; at $\tilde Y=e_0$ the parameters commute, and
+$\tilde B\tilde Y\tilde A=\tilde A\tilde Y\tilde B$ for all $\tilde Y$; at $\tilde Y=e_t$ the parameters commute, and
 substituting $\tilde Y=\tilde A^{-1}\tilde C\tilde A^{-1}$ for a unit $\tilde A$ gives that $\tilde B\tilde A^{-1}$ is
 central. Skew-adjointness gives $\mathrm{Sc}(\tilde Y\tilde A\tilde B)=0$ for all $\tilde Y$, hence $\tilde A\tilde B=0$
-and symmetrically $\tilde B\tilde A=0$, and then the defining identity at $\tilde Y=e_0$ reads
+and symmetrically $\tilde B\tilde A=0$, and then the defining identity at $\tilde Y=e_t$ reads
 $\tilde B\tilde A=-\tilde A\tilde B$, so both products vanish; the remaining cases were settled by elimination.
 
 **Corollary (the types of the sandwich).** The sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is
@@ -202,7 +202,7 @@ uses of the one action form.
 $\mathbb{M}_+$ and its sandwich is self-adjoint for the plain form.
 - The **material conjugation** has an anti-Hermitian parameter, $\tilde Q\in\mathbb{M}_-$, and by the criterion it is
 self-adjoint too; the sector signs of the two cases are opposite, which is the $\lambda=\pm1$ of the proof.
-- The **Lorentz action** has a unit-norm parameter $\tilde U\tilde U^{\natural}=e_0$ which is in general in
+- The **Lorentz action** has a unit-norm parameter $\tilde U\tilde U^{\natural}=e_t$ which is in general in
 neither sector, and then the sandwich is **not** self-adjoint for the plain form: a boost is not symmetric for the
 sector sign.
 
@@ -221,7 +221,7 @@ $$
 B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=\langle\tilde X,\tilde Y\rangle\qquad\text{for all }\tilde X,\tilde Y,
 $$
 
-if and only if $\tilde A=\pm e_0$, that is $L_{\tilde A}=\pm\mathrm{id}$; the same criterion holds on the right.
+if and only if $\tilde A=\pm e_t$, that is $L_{\tilde A}=\pm\mathrm{id}$; the same criterion holds on the right.
 
 *Proof.* Using the swap and the symmetry of the form,
 
@@ -231,15 +231,15 @@ B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=\mathrm{Sc}\bigl(\tilde A
 $$
 
 so preservation is $\tilde A\tilde Y\tilde A=\tilde Y$ for all $\tilde Y$. At
-$\tilde Y=e_0$ this gives $\tilde A^{2}=e_0$ and centrality, and a central element of square $e_0$ is $\pm e_0$.
+$\tilde Y=e_t$ this gives $\tilde A^{2}=e_t$ and centrality, and a central element of square $e_t$ is $\pm e_t$.
 
 **Theorem (the two-sided automorphisms of the form).** The two-sided operator $L_{\tilde A}R_{\tilde B}$ preserves the
-plain form if and only if $\tilde B\tilde A=\pm e_0$, that is $\tilde B=\pm\tilde A^{-1}$; the operator is then
+plain form if and only if $\tilde B\tilde A=\pm e_t$, that is $\tilde B=\pm\tilde A^{-1}$; the operator is then
 $\pm\mathrm{Ad}_{\tilde A}$, the inner automorphism of the unit $\tilde A$ up to sign, and $\mathrm{Ad}_{\tilde A}$
 itself preserves the form.
 
 **Theorem (the multiplicative operators).** The operator $L_{\tilde A}R_{\tilde B}$ is multiplicative if and only if
-$\tilde A\tilde B=e_0$, that is $\tilde B=\tilde A^{-1}$:
+$\tilde A\tilde B=e_t$, that is $\tilde B=\tilde A^{-1}$:
 
 $$
 \bigl(L_{\tilde A}R_{\tilde B}\tilde X\bigr)\bigl(L_{\tilde A}R_{\tilde B}\tilde Y\bigr)
@@ -280,17 +280,17 @@ because there the twist absorbs a norm and here there is no twist to absorb one.
 ## The Operators Acting on the Spinor Space
 
 The operators of the block act on the state space, and the action is the content of the two other articles of this
-group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_2\}$ be the minimal left ideal of *The Spinor Space as a Module of the Biquaternion Algebra*, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ and the complement
-$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in the Biquaternion Algebra*.
+group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec\Upsilon_y\}$ be the minimal left ideal of *The Spinor Space as a Module of the Biquaternion Algebra*, with $\tilde\Pi_-=e_t-\tilde\Pi_+$ and the complement
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\vec\Upsilon_x\}$ of *The Complementary Space of the Spinor Space in the Biquaternion Algebra*.
 
-**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_+,\vec\Upsilon_2)$ the
+**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_+,\vec\Upsilon_y)$ the
 four left multiplications by the basis elements are the matrix units
 
 $$
 L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
 L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
-L_{\vec\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
-L_{\vec\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
+L_{\vec\Upsilon_x}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+L_{\vec\Upsilon_y}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$
 
 so $L$ restricted to $S$ is the map $\tilde Q\mapsto\mathsf{M}_2(\tilde Q)$ of the algebra onto $M_2(\mathbb{C})$, and
@@ -302,8 +302,8 @@ simple module.
 
 **Proposition (the right actions move the state space to its complement).** A right multiplication commutes with every
 left one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; right multiplication by the
-nilpotent $\vec\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
-multiplication by $\vec\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
+nilpotent $\vec\Upsilon_x$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
+multiplication by $\vec\Upsilon_y$ carries the complement onto $S$. A central element, by contrast, has equal left and
 right actions and can move nothing.
 
 *Proof.* The commutation is the third composition law, which makes every $R_{\tilde B}$ a module map; the two nilpotent
@@ -320,7 +320,7 @@ $$
 \{S:SL_{\tilde A}=L_{\tilde A}S,\ SR_{\tilde B}=R_{\tilde B}S\ \forall\tilde A,\tilde B\}=\mathbb{C}\,\mathrm{id}.
 $$
 
-*Proof.* The commutant of the left regular representation is the right one, computed by evaluating at $e_0$; the
+*Proof.* The commutant of the left regular representation is the right one, computed by evaluating at $e_t$; the
 bicommutant is then the centre, by the same argument on the right.
 
 **Read as a physical statement.** Three interpretations. The left actions are the **observables** acting on the state space,
@@ -346,7 +346,7 @@ $$
 $$
 
 so the sandwich conjugates by the **conjugate** of the parameter and the inner automorphism by its **inverse**. The
-two operators agree exactly when $\tilde A^{*}=\tilde A^{-1}$, that is when $\tilde A\tilde A^{*}=e_0$: on the
+two operators agree exactly when $\tilde A^{*}=\tilde A^{-1}$, that is when $\tilde A\tilde A^{*}=e_t$: on the
 **unitary** parameters, and there alone.
 
 *Proof.* The first display is the definition of the sandwich, the second the definition of the inner automorphism, and
@@ -354,10 +354,10 @@ they coincide exactly when the two right parameters coincide; the kernel of the 
 is the centre, so no ambiguity remains.
 
 **Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U$ be of unit norm,
-$\tilde U\tilde U^{\natural}=e_0$. Then $\Theta_{\tilde U}$ and $\mathrm{Ad}_{\tilde U}$ both
+$\tilde U\tilde U^{\natural}=e_t$. Then $\Theta_{\tilde U}$ and $\mathrm{Ad}_{\tilde U}$ both
 preserve the interval $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
 $\mathbb{M}_\pm$; the inner automorphism preserves the plain form $\langle\cdot,\cdot\rangle$ as well, and the sandwich preserves it exactly
-when $\tilde U^{*}\tilde U=\pm e_0$, a condition the unit-norm boosts fail. A boost is therefore a parameter
+when $\tilde U^{*}\tilde U=\pm e_t$, a condition the unit-norm boosts fail. A boost is therefore a parameter
 for which the two operators differ **and** for which the sandwich loses the plain form.
 
 *Proof.* For the interval, with $\tilde U^{\natural}=\tilde U^{-1}$ and
@@ -372,13 +372,13 @@ N\bigl(\Theta_{\tilde U}\tilde P,\Theta_{\tilde U}\tilde Q\bigr)
 =\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr),
 $$
 
-where the third step uses $\tilde U^{\natural}\tilde U=e_0$ and the cyclicity of the scalar part, and the
+where the third step uses $\tilde U^{\natural}\tilde U=e_t$ and the cyclicity of the scalar part, and the
 last uses
 
 $$
 \tilde U^{*}\tilde U^{*\natural}
 =\bar{\tilde U}^{\,\natural}\bar{\tilde U}
-=\overline{\tilde U^{\natural}\tilde U}=e_0 .
+=\overline{\tilde U^{\natural}\tilde U}=e_t .
 $$
 
 The inner automorphism preserves the interval because it preserves the product and the natural conjugation; the sector statement is
@@ -401,9 +401,9 @@ conjugations of the block are read there.
 Take one material element as a parameter,
 
 $$
-\tilde Q=ie_0+2e_1\in\mathbb{M}_-,\qquad
+\tilde Q=ie_t+2\vec e_x\in\mathbb{M}_-,\qquad
 \langle\tilde Q,\tilde Q\rangle=-5,\qquad \langle\tilde Q,\tilde Q\rangle_{\natural}=+3,\qquad
-\tilde Q^{2}=-5e_0+4ie_1 .
+\tilde Q^{2}=-5e_t+4i\vec e_x .
 $$
 
 Its conjugate is $-\tilde Q$, so the sandwich is $\Theta_{\tilde Q}=L_{\tilde Q}R_{-\tilde Q}$ and the criterion reads
@@ -411,10 +411,10 @@ $\lambda=-1$: the operator is self-adjoint for the plain form, as the corollary 
 sector $\mathbb{M}_-$ is why. On the unit,
 
 $$
-\Theta_{\tilde Q}(e_0)=\tilde Q\tilde Q^{*}=-\tilde Q^{2}=5e_0-4ie_1,
+\Theta_{\tilde Q}(e_t)=\tilde Q\tilde Q^{*}=-\tilde Q^{2}=5e_t-4i\vec e_x,
 $$
 
-a combination of the central and the $e_1$ directions, and the value is a material element up to the imaginary unit that
+a combination of the central and the $\vec e_x$ directions, and the value is a material element up to the imaginary unit that
 the transport across the pairing introduces. The same parameter gives the two different invariants of the block at once,
 $\langle\tilde Q,\tilde Q\rangle$ negative and $\langle\tilde Q,\tilde Q\rangle_{\natural}$ positive, so the case displays the distinction the group is built on: the operator is symmetric
 for the sector sign while the parameter is a material four-vector.
@@ -422,28 +422,28 @@ for the sector sign while the parameter is a material four-vector.
 Take next a **boost** parameter,
 
 $$
-\tilde U=\cosh u\,e_0+\sinh u\,ie_1,\qquad
-\tilde U\tilde U^{\natural}=e_0,\qquad
-\tilde U\tilde U^{*}=\cosh 2u\,e_0+\sinh 2u\,ie_1\neq e_0 .
+\tilde U=\cosh u\,e_t+\sinh u\,i\vec e_x,\qquad
+\tilde U\tilde U^{\natural}=e_t,\qquad
+\tilde U\tilde U^{*}=\cosh 2u\,e_t+\sinh 2u\,i\vec e_x\neq e_t .
 $$
 
 The parameter has unit norm and is Hermitian, so it is in $\mathbb{M}_+$ and the sandwich is self-adjoint; but it is not
-unitary, so it is not in the compact slice. On $e_1$ the two conjugations separate:
+unitary, so it is not in the compact slice. On $\vec e_x$ the two conjugations separate:
 
 $$
-\Theta_{\tilde U}(e_1)=\tilde U^{2}e_1=\cosh 2u\,e_1-\sinh 2u\,ie_0,
+\Theta_{\tilde U}(\vec e_x)=\tilde U^{2}\vec e_x=\cosh 2u\,\vec e_x-\sinh 2u\,ie_t,
 \qquad
-\mathrm{Ad}_{\tilde U}(e_1)=e_1 .
+\mathrm{Ad}_{\tilde U}(\vec e_x)=\vec e_x .
 $$
 
-Both operators preserve the interval, the sandwich moves $e_1$ by a hyperbolic rotation, and the inner automorphism
+Both operators preserve the interval, the sandwich moves $\vec e_x$ by a hyperbolic rotation, and the inner automorphism
 leaves it fixed; the difference is the non-compact part of the parameter, displayed on one element. For $u\to0$ the two
 operators merge, which is the unitary limit.
 
 Take finally a **measurement** parameter,
 
 $$
-\tilde\Pi=\tfrac12(e_0+ie_1),\qquad
+\tilde\Pi=\tfrac12(e_t+i\vec e_x),\qquad
 \tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}\in\mathbb{M}_+ ,\qquad
 \Theta_{\tilde\Pi}=L_{\tilde\Pi}R_{\tilde\Pi},
 $$
@@ -459,7 +459,7 @@ $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, $L_{\tilde A}R_{\tilde B}=R_{\t
 $\langle L_{\tilde A}\tilde X,\tilde Y\rangle=\langle\tilde X,R_{\tilde A}\tilde Y\rangle$ and
 $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ hold to machine precision; the type criteria were
 checked on random, central, pure, null and unit parameters; the sandwich criterion holds on the two sectors and fails
-off them; the form-preserving criteria hold exactly at $\tilde A=\pm e_0$ and $\tilde B\tilde A=\pm e_0$; and the two
+off them; the form-preserving criteria hold exactly at $\tilde A=\pm e_t$ and $\tilde B\tilde A=\pm e_t$; and the two
 conjugations of the boost case were compared element by element.
 
 ## The Bound
@@ -500,7 +500,7 @@ two-sided operator is self-adjoint exactly when its parameters are proportional 
 the sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is self-adjoint exactly when $\tilde Q$ lies in a sector,
 so the measurement update and the material conjugation qualify and a generic Lorentz parameter does not; the one-sided
 form-preserving operators are $\pm\mathrm{id}$ and the two-sided ones are the $\pm\mathrm{Ad}_{\tilde A}$ with
-$\tilde B\tilde A=\pm e_0$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
+$\tilde B\tilde A=\pm e_t$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
 the commutant of the left regular representation is the right one and the bicommutant is the scalars; and the sandwich
 and the inner automorphism agree exactly on the unitary parameters.
 
@@ -531,7 +531,7 @@ The operators of the general plain algebra are the left and the right multiplica
 and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, and their products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
-$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ of Gram matrix
+$\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ of Gram matrix
 $\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $\langle\cdot,\cdot\rangle$ **swaps the two sides**:
 $(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
@@ -552,7 +552,7 @@ the naming.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^{2}=-e_0$, $e_1e_2=e_3$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, for $\langle\cdot,\cdot\rangle$ |
 | $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ | Left multiplication; the left regular representation |
@@ -565,12 +565,12 @@ the naming.
 | Self-adjoint $L_{\tilde A}\iff\tilde A$ central | One-sided type criterion; skew sector $\{0\}$ |
 | Self-adjoint $L_{\tilde A}R_{\tilde B}\iff\tilde B=\lambda\tilde A$ | Two-sided type criterion |
 | $\Theta_{\tilde Q}$ self-adjoint $\iff\tilde Q\in\mathbb{M}_\pm$ | The sector criterion of the sandwich |
-| $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde A=\pm e_0$ | One-sided automorphisms of the form |
-| $\tilde B\tilde A=\pm e_0\iff L_{\tilde A}R_{\tilde B}=\pm\mathrm{Ad}_{\tilde A}$ | Two-sided automorphisms of the form |
-| $\tilde A\tilde B=e_0\iff L_{\tilde A}R_{\tilde B}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
+| $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde A=\pm e_t$ | One-sided automorphisms of the form |
+| $\tilde B\tilde A=\pm e_t\iff L_{\tilde A}R_{\tilde B}=\pm\mathrm{Ad}_{\tilde A}$ | Two-sided automorphisms of the form |
+| $\tilde A\tilde B=e_t\iff L_{\tilde A}R_{\tilde B}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
 | $\tilde B\tilde A$ central $\implies$ multiplicative up to $\tilde B\tilde A$ | The partial law; no norm enters |
 | $\{S:SL_{\tilde A}=L_{\tilde A}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
-| $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_0$ | The two conjugations agree on the unitary slice |
+| $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_t$ | The two conjugations agree on the unitary slice |
 | $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
 
 ## Further Reading
@@ -593,8 +593,8 @@ operators as the decomposable tensors.
 - Mathematics article *Modules over the Biquaternion Algebra*
 (`articles_maths/modules-over-the-biquaternion-algebra.md`), for the simple module, its
 endomorphism ring and the decomposition of the left regular module.
-- Physics article *The Bilinear Product on the Biquaternion Space*
-(`articles_physics/the-bilinear-product-on-the-biquaternion-space.md`), the framing article of this group, for $\langle\cdot,\cdot\rangle$, the
+- Physics article *The Products, Their Forms and Their Norms*
+(`articles_physics/the-products-their-forms-and-their-norms.md`), the framing article of this group, for $\langle\cdot,\cdot\rangle$, the
 sector sign and the boundary of the block.
 - Physics article *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*
 (`articles_physics/the-monoid-of-acting-maps-the-process-is-the-multiplication-the-state-is-the-idempotent.md`), for

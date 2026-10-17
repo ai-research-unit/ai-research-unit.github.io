@@ -51,7 +51,7 @@ $$
 \mathcal{F}^{G}(V)=\mathcal{F}\bigl(q^{-1}V\bigr)^{G}.
 $$
 
-This is a sheaf on the quotient $X/G$, the **fixed sheaf** of $\mathcal{F}$, also written $q_*^{G}\mathcal{F}$ and called the **descent** of $\mathcal{F}$; the assignment $\mathcal{F}\mapsto\mathcal{F}^{G}$ is a functor $\mathrm{Sh}_G(X)\to\mathrm{Sh}(X/G)$. For a $G$-invariant open $U\subseteq X$ the same formula with $U$ in place of $q^{-1}V$ gives the invariants of the $G$-module $\mathcal{F}(U)$, which is the local description of the fixed sheaf.
+This is a sheaf on the quotient $X/G$, the **fixed sheaf** of $\mathcal{F}$, also written $q_*^{G}\mathcal{F}$ and called the **descent** of $\mathcal{F}$; the assignment $\mathcal{F}\mapsto\mathcal{F}^{G}$ is a functor $\mathrm{Sh}_G(X)\to\mathrm{Sh}(X/G)$. For a $G$-invariant open $\Omega\subseteq X$ the same formula with $\Omega$ in place of $q^{-1}V$ gives the invariants of the $G$-module $\mathcal{F}(\Omega)$, which is the local description of the fixed sheaf.
 
 **Proposition (the fixed sheaf is a sheaf, and left exact).** The presheaf $V\mapsto\mathcal{F}(q^{-1}V)^{G}$ on $X/G$ is a sheaf, and the functor $(-)^{G}$ is left exact.
 

@@ -147,13 +147,13 @@ $$
 \delta(x^n) = n x^{n-1}\delta(x) = n x^{n-1} f(x).
 $$
 
-Hence $\delta = f \partial_x$ and
+Hence $\delta = f \partial/\partial x$ and
 
 $$
-\operatorname{Der}_R(R[x]) = R[x]\,\partial_x,
+\operatorname{Der}_R(R[x]) = R[x]\,\partial/\partial x,
 $$
 
-a free $R[x]$-module of rank one, with $\partial_x = d/dx$ the usual formal derivative.
+a free $R[x]$-module of rank one, with $\partial/\partial x = d/dx$ the usual formal derivative.
 
 **Example.** For the quaternion algebra, $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is the space of inner derivations below; it is three-dimensional and its bracket is twice the commutator product on the space of pure imaginary quaternions.
 
@@ -241,7 +241,7 @@ $$
 [p, q] = pq - qp = 2\,\mathrm{Vec}(pq),
 $$
 
-so the bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is twice the commutator product of the pure imaginary parts. Rescaling the basis to $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ gives the structure constants
+so the bracket on $\operatorname{Der}_{\mathbb{R}}(\mathbb{H})$ is twice the commutator product of the pure imaginary parts. Rescaling the basis to $D_\mu = \tfrac{1}{2}\mathrm{ad}_{\vec e_\mu}$ gives the structure constants
 
 $$
 [D_1, D_2] = D_3, \qquad [D_2, D_3] = D_1, \qquad [D_3, D_1] = D_2 .
@@ -331,8 +331,8 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $\mathrm{ad}_a(x) = [a,x]$ | Inner derivation by $a$ |
 | $\operatorname{InnDer}_R(A) \cong A/Z(A)$ | Inner derivations |
 | $[\delta,\varepsilon]$ | Commutator bracket on derivations |
-| $\delta = f\partial_x$ | The derivations of $R[x]$ |
-| $D_k = \tfrac{1}{2}\mathrm{ad}_{e_k}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$ |
+| $\delta = f\partial/\partial x$ | The derivations of $R[x]$ |
+| $D_\mu = \tfrac{1}{2}\mathrm{ad}_{\vec e_\mu}$ | Basis of $\operatorname{Der}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}/\mathbb{R}$ |
 | $PGL_n(k) = GL_n(k)/k^\times$ | Automorphism group of $M_n(k)$ |
 | $\exp(\delta)$ | Exponential of a derivation |
 | $\mathbb{H}/\mathbb{R}$, $\mathrm{SL}_n(k)$ | Commutator Lie algebra of the imaginary quaternions and traceless matrices |

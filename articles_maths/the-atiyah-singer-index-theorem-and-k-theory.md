@@ -18,7 +18,7 @@ $$
 **Theorem.** $K^0(X)$ is an abelian group, every element is a difference of classes of honest bundles, and the **rank** map $r\colon K^0(X)\to\mathbb{Z}$, $[E]-[F]\mapsto\operatorname{rank}E-\operatorname{rank}F$, is a surjective homomorphism. Its kernel is the **reduced group** $K^0_{\mathrm{red}}(X)$, so that
 
 $$
-K^0(X)\congK^0_{\mathrm{red}}(X)\oplus\mathbb{Z}.
+K^0(X)\cong K^0_{\mathrm{red}}(X)\oplus\mathbb{Z}.
 $$
 
 **Proof.** The Grothendieck construction on a commutative monoid always gives a group; the relation exhibited is the standard one for the free abelian group on $\mathrm{Vect}(X)$ modulo the submonoid of relations $[E\oplus F]-[E]-[F]$. The rank is well defined on the relations and surjective because $\mathbb{C}^n$ has rank $n$.

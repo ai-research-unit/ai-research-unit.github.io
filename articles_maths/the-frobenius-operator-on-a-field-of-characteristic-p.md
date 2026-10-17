@@ -96,7 +96,7 @@ Hence $F^p \subseteq F^{D}$ for every derivation $D$, and if $F$ is perfect ever
 
 **Proof.** The power rule for a derivation in a commutative ring gives $D(x^p) = p\,x^{p-1}D(x)$, and $p = 0$ in $F$. For a perfect field $F = F^p$, so $D = 0$ on all of $F$.
 
-**Example.** On $\mathbb{F}_p(t)$ the derivation $\partial/\partial t$ is nonzero and kills $\mathbb{F}_p(t^p) = F^p$. The pair $(\varphi, \partial_t)$ exhibits the two operators in characteristic $p$: the Frobenius is the endomorphism with image the constants of the derivation, and the derivation is the one that the Frobenius's image annihilates. This is the algebraic skeleton of the theory of derivations of an imperfect field, and it is used in *Derivations of a Ring*.
+**Example.** On $\mathbb{F}_p(t)$ the derivation $\partial/\partial t$ is nonzero and kills $\mathbb{F}_p(t^p) = F^p$. The pair $(\varphi, \partial/\partial t)$ exhibits the two operators in characteristic $p$: the Frobenius is the endomorphism with image the constants of the derivation, and the derivation is the one that the Frobenius's image annihilates. This is the algebraic skeleton of the theory of derivations of an imperfect field, and it is used in *Derivations of a Ring*.
 
 ## Summary
 

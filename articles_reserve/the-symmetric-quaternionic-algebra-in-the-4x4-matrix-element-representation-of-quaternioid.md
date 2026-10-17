@@ -6,7 +6,7 @@ The quaternion algebra acts on itself by left multiplication, and the resulting 
 
 **Boundaries.** The regular representation is *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*; the product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The realization $\mathsf{M}_4$ is the **left regular representation**: $\mathsf{M}_4(\tilde q)$ is the matrix of the map $\tilde x\mapsto\tilde q\tilde x$, with columns the images of the basis elements, so that the entries are real and
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde q=q_te_t+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_te_t-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$. The realization $\mathsf{M}_4$ is the **left regular representation**: $\mathsf{M}_4(\tilde q)$ is the matrix of the map $\tilde x\mapsto\tilde q\tilde x$, with columns the images of the basis elements, so that the entries are real and
 
 $$
 \mathsf{M}_4(\tilde p\tilde q)=\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q).
@@ -17,14 +17,14 @@ $$
 **Proposition (the invariants of the regular model).** For every $\tilde q$,
 
 $$
-\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0,\qquad
+\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t,\qquad
 \det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2},\qquad
 \mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}.
 $$
 
-*Proof.* The left multiplications are a faithful representation of $\mathbb{H}$; the trace is the sum of the diagonal entries of the matrix of $\tilde x\mapsto\tilde q\tilde x$, each coordinate contribution carrying $q_0$ once, giving $4q_0$; the determinant of a left multiplication by $\tilde q$ is its norm power $N(\tilde q)^{2}$, the algebra being $4$-dimensional over $\mathbb{R}$, as *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* records; the transpose identity is checked on the basis, where left multiplication by $e_k$ is skew and by $e_0$ is the identity, so transposition exchanges $e_k$ and $-e_k$.
+*Proof.* The left multiplications are a faithful representation of $\mathbb{H}$; the trace is the sum of the diagonal entries of the matrix of $\tilde x\mapsto\tilde q\tilde x$, each coordinate contribution carrying $q_t$ once, giving $4q_t$; the determinant of a left multiplication by $\tilde q$ is its norm power $N(\tilde q)^{2}$, the algebra being $4$-dimensional over $\mathbb{R}$, as *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* records; the transpose identity is checked on the basis, where left multiplication by $\vec e_k$ is skew and by $e_t$ is the identity, so transposition exchanges $\vec e_k$ and $-\vec e_k$.
 
-**Remark (trace and determinant in the two dimensions).** The regular model has $\operatorname{Tr}=4q_0$ and $\det=N^{2}$, against $\operatorname{Tr}=2q_0$ and $\det=N$ in the $2\times2$ complex model; the factor is the dimension of the algebra over the field of the model, and the transpose replaces the conjugate transpose.
+**Remark (trace and determinant in the two dimensions).** The regular model has $\operatorname{Tr}=4q_t$ and $\det=N^{2}$, against $\operatorname{Tr}=2q_t$ and $\det=N$ in the $2\times2$ complex model; the factor is the dimension of the algebra over the field of the model, and the transpose replaces the conjugate transpose.
 
 ## The Product Read on the Model
 
@@ -35,7 +35,7 @@ $$
 =\mathsf{M}_4(\tilde p\star\tilde q)=N(\tilde p,\tilde q)\,I_4 .
 $$
 
-*Proof.* The transpose identity gives $\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)=\mathsf{M}_4(\tilde p^{\natural})\mathsf{M}_4(\tilde q)=\mathsf{M}_4(\tilde p^{\natural}\tilde q)$ by multiplicativity; the half-sum is $\mathsf{M}_4\bigl(\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)\bigr)=\mathsf{M}_4(N(\tilde p,\tilde q)e_0)=N(\tilde p,\tilde q)I_4$.
+*Proof.* The transpose identity gives $\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)=\mathsf{M}_4(\tilde p^{\natural})\mathsf{M}_4(\tilde q)=\mathsf{M}_4(\tilde p^{\natural}\tilde q)$ by multiplicativity; the half-sum is $\mathsf{M}_4\bigl(\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)\bigr)=\mathsf{M}_4(N(\tilde p,\tilde q)e_t)=N(\tilde p,\tilde q)I_4$.
 
 **Corollary (the value is a scalar matrix).** The value of the block in the regular model is a real multiple of $I_4$, and the transposition of the regular matrix plays the role of the quaternion conjugation.
 
@@ -67,7 +67,7 @@ $$
 
 restricted to the regular matrices $\mathsf{M}_4(\tilde q)$ has image the real scalar matrices $\mathbb{R}I_4$, rank $1$, trace $p_0$ and kernel the regular matrices $\mathsf{M}_4(\tilde p^{\perp})$.
 
-*Proof.* On $X=\mathsf{M}_4(\tilde q)$ the map is $N(\tilde p,\tilde q)I_4$ by the theorem, so the image is $\mathbb{R}I_4$, the rank is $1$ for $\tilde p\neq0$, the trace is the coefficient of the image of $I_4=\mathsf{M}_4(e_0)$, namely $N(\tilde p,e_0)=p_0$, and the kernel is $\mathsf{M}_4(\tilde p^{\perp})$; the argument is the same as in the $2\times2$ model.
+*Proof.* On $X=\mathsf{M}_4(\tilde q)$ the map is $N(\tilde p,\tilde q)I_4$ by the theorem, so the image is $\mathbb{R}I_4$, the rank is $1$ for $\tilde p\neq0$, the trace is the coefficient of the image of $I_4=\mathsf{M}_4(e_t)$, namely $N(\tilde p,e_t)=p_0$, and the kernel is $\mathsf{M}_4(\tilde p^{\perp})$; the argument is the same as in the $2\times2$ model.
 
 **Theorem (the operator on the whole matrix space).** Extended to the whole of $M_4(\mathbb{R})$, the map $X\mapsto\tfrac12(\mathsf{M}_4(\tilde p)^{\mathsf T}X+X^{\mathsf T}\mathsf{M}_4(\tilde p))$ has image the symmetric matrices and rank $10$ for every $\tilde p\neq0$.
 
@@ -92,11 +92,11 @@ and the block is the only row whose value is always a scalar matrix.
 
 *Proof.* Each row is the realization of the corresponding product, by the multiplicativity of $\mathsf{M}$ in the plain cases and by the transpose identity $\mathsf{M}(\tilde p^{\natural})=\mathsf{M}(\tilde p)^{\mathsf T}$ in the quaternionic cases; the block's row is the theorem of §*The Product Read on the Model*. The last clause is the isolation theorem of *The Specificities of the Symmetric Quaternionic Algebra*.
 
-Over $\mathbb{R}$ the model is real and the value is a real scalar matrix; the invariants $\operatorname{Tr}=4q_0$ and $\det=N^{2}$ are the same powers, with the norm definite instead of indefinite.
+Over $\mathbb{R}$ the model is real and the value is a real scalar matrix; the invariants $\operatorname{Tr}=4q_t$ and $\det=N^{2}$ are the same powers, with the norm definite instead of indefinite.
 
 ## Summary
 
-In the left regular representation the quaternion algebra is a space of real $4\times4$ matrices with $\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_0$, $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2}$ and $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$. The symmetric quaternionic product is the symmetrisation of the transposed products, $\tfrac12(\mathsf{M}(\tilde p)^{\mathsf T}\mathsf{M}(\tilde q)+\mathsf{M}(\tilde q)^{\mathsf T}\mathsf{M}(\tilde p))=N(\tilde p,\tilde q)I_4$, a scalar matrix; the coefficient form is a quarter of the trace pairing and the quadratic form is the square root of the determinant. The transported operator has rank one and image the real scalar matrices on the regular matrices, trace $p_0$ and kernel $\mathsf{M}_4(\tilde p^{\perp})$; extended to the whole of $M_4(\mathbb{R})$ it has image the symmetric matrices and rank $10$ for every nonzero multiplier.
+In the left regular representation the quaternion algebra is a space of real $4\times4$ matrices with $\operatorname{Tr}\mathsf{M}_4(\tilde q)=4q_t$, $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^{2}$ and $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$. The symmetric quaternionic product is the symmetrisation of the transposed products, $\tfrac12(\mathsf{M}(\tilde p)^{\mathsf T}\mathsf{M}(\tilde q)+\mathsf{M}(\tilde q)^{\mathsf T}\mathsf{M}(\tilde p))=N(\tilde p,\tilde q)I_4$, a scalar matrix; the coefficient form is a quarter of the trace pairing and the quadratic form is the square root of the determinant. The transported operator has rank one and image the real scalar matrices on the regular matrices, trace $p_0$ and kernel $\mathsf{M}_4(\tilde p^{\perp})$; extended to the whole of $M_4(\mathbb{R})$ it has image the symmetric matrices and rank $10$ for every nonzero multiplier.
 
 ## Summary of Notation
 
@@ -104,7 +104,7 @@ In the left regular representation the quaternion algebra is a space of real $4\
 |---|---|
 | $\mathsf{M}_4$ | the left regular representation, columns the images of the basis |
 | $\mathsf{M}_4(\tilde p\tilde q)=\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)$ | multiplicativity |
-| $\operatorname{Tr}=4q_0$, $\det=N(\tilde q)^{2}$, $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$ | the invariants |
+| $\operatorname{Tr}=4q_t$, $\det=N(\tilde q)^{2}$, $\mathsf{M}_4(\tilde q^{\natural})=\mathsf{M}_4(\tilde q)^{\mathsf T}$ | the invariants |
 | $N(\tilde p,\tilde q)=\tfrac14\operatorname{Tr}(\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q))$ | the trace pairing |
 | rank $1$ on the regular matrices, rank $10$ on $M_4(\mathbb{R})$ | the two ranks of the transported operator |
 | $\tfrac12(\mathsf{M}_4(\tilde p)^{\mathsf T}\mathsf{M}_4(\tilde q)+\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde p))=N(\tilde p,\tilde q)I_4$ | the block in the model |

@@ -45,7 +45,7 @@ The measurable spaces are the ones on which the integral is available, and their
 | $B^{s}_{n,m}$, Besov space | the mixed $\ell^{m}(L^{n})$ norm of the Littlewood–Paley blocks; a quasi-Banach space, complete | *Besov and Triebel–Lizorkin Spaces* |
 | $F^{s}_{n,m}$, Triebel–Lizorkin space | the mixed $L^{n}(\ell^{m})$ norm of the Littlewood–Paley blocks; complete | *Besov and Triebel–Lizorkin Spaces* |
 | $H^1$, real Hardy space | $\lVert f\rVert_{H^1} = \lVert \sup_t \lvert f * \phi_t\rvert\rVert_1$; complete, and the borderline case $F^0_{1,2}$ | *Besov and Triebel–Lizorkin Spaces* |
-| $L^{n},q}$, Lorentz space | the norm of the decreasing rearrangement, $\lVert f\rVert = \left(\int_0^\infty (t^{1/p}f^*(t))^q \frac{dt}{t}\right)^{1/q}$; complete | *Interpolation Theory* |
+| $L^{n,q}$, Lorentz space | the norm of the decreasing rearrangement, $\lVert f\rVert = \left(\int_0^\infty (t^{1/p}f^*(t))^q \frac{dt}{t}\right)^{1/q}$; complete | *Interpolation Theory* |
 
 ## The Analytic and Test-Function Spaces
 

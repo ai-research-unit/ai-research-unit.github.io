@@ -1,7 +1,5 @@
 The goal is not to focus only on "usual things" , the goal of the project is to do some theoretical research around the biquaternion theory, that s why both "usual things" and rare and structurally interesting objects are very attractive for that.
 
-memory, very real 
-
 
 
 
@@ -28,45 +26,12 @@ Exponentials for states and roots : exp(θ Ξ~ )
 
 
 
-Article physical reading of et = 1  
-
-meaning   basis time scalar of biquaternion albegra
-e 
-t
-​
- =1
-
- the scalar unit of the quaternion is the scalar used in temporal dimension 
-
-
-
-
-
-FIX SIGMA where e with vect 
-
-
-
-
-explain ux
-
-not i j k colludes
-
-freed 1 2 3
-
-tableaux, 1,2 
-
-In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; all partial derivatives are written explicitly with \(\partial\).
 
 
 
 
 
 
-
-Generic elements Q1 q1 Q2 q2
-
-
-ORDINARY ELEMENTS AND THEIR COEFFICIENTS
 
 
 
@@ -82,95 +47,6 @@ u v
 
 
 
-
-
-
-```
-THE DOT IN THIS CORPUS — WHAT IT MEANS AND WHY IT CANNOT BE BLINDLY REPLACED
-
-WHAT WAS ASKED
-Replace every dot (time-derivative mark) with an explicit partial, across the corpus.
-
-WHAT THE CHECK FOUND
-The dot is not one mark with one meaning. It carries three meanings.
-
-  1. TIME DERIVATIVE (a velocity) — the dominant use.
-     Symbols: \dot q (168), \dot x (127), \dot\gamma (93), \dot{\tilde q} (81),
-     \dot{\vec\beta} (67), \dot\phi (67), \dot{\tilde Q} (42), \dot{\tilde u} (36)...
-     Shape: \dot{coordinate}, \dot{rotor}, \dot{vector}, \dot{field}.
-     Example: L(q,\dot q,t) and (d/dt)(dL/d\dot q) = dL/dq.
-     Variable: coordinate time t in most places.
-     Count: about 1300 marks in about 90 articles.
-
-  2. REPRESENTATION LABEL — not a derivative.
-     Bhabha: m^(s) = \mu_0 (l + 1/2)(\dot l + 1/2), and \mathbf{1}_{2\dot l+1}.
-     Here \dot l is a second spin label, not d l/dt.
-     Count: about 110 marks.
-
-  3. SCOPE DOT OF AN OPERATOR — not a time derivative.
-     Geometric calculus: \dot\partial(AB) = \dot\partial A · B + \dot A · \dot\partial B.
-     The article states it: "the factor it differentiates is marked with an overdot".
-     Count: about 17 marks.
-
-SCALE
-  \partial is used 13768 times.  The dot is used about 1428 times.
-  So \partial is already the dominant derivative notation; the dot is the minority mark.
-
-WHY A GLOBAL FIND-AND-REPLACE FAILS
-  a. It would rewrite \mathbf{1}_{2\dot l+1} into nonsense (label, not derivative).
-  b. It would destroy the scope rule \dot\partial in geometric calculus.
-  c. d/dt is a TOTAL derivative; \partial_t is a PARTIAL one. The corpus dot is a
-     velocity along a motion, i.e. total, so \partial_t is the wrong symbol in general.
-  d. Powers need brackets: \tfrac12 \dot x^2 means \tfrac12 (\dot x)^2, so it becomes
-     \tfrac12 (\partial_t x)^2, NOT \tfrac12 \partial_t x^2.
-  e. The relativistic and radiation files differentiate with respect to PROPER TIME
-     (\tau) or RETARDED TIME (t_r), not t. Those need \partial_\tau and \partial_{t_r}.
-
-CONCLUSION
-  The dot is meaningful, not garbage. Three meanings, one dominant (time derivative).
-  A blanket rewrite is unsafe. If the dot is to go, the rewrite must be done
-  meaning by meaning: time derivatives only, with the correct variable and correct
-  bracketing; labels and the scope dot left untouched.
-
-RECOMMENDATION
-  Keep the dot as the total-time-derivative mark, and state that in the conventions
-  article instead of banning it.
-
-NOTHING WAS MODIFIED. Only the two conventions articles carry the new bold sentence
-on index conventions; no article was rewritten for this dot question.
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The algebra carries four forms, the scalar parts of the four general products of The Four General Products of the Biquaternioid 
-C
-C Space; on 
-M
-+
-M 
-+
-​
-  they pair off and coincide, so two remain. They are the Hermitian form, which here equals the general plain bilinear form, and the bilinear form 
-N
-N (the general quaternionic bilinear form), which here equals the general quaternionic sesquilinear form 
-K
-K because the coefficient conjugation acts as the natural sign on a Hermitian element. The biquaternion norm is not a separate bilinear form but the quadratic form of 
-N
-N.
 
 
 
@@ -7447,20 +7323,6 @@ The Twisted Spinor Operator Representation of Biquaternions
 
 
 
-
-
-
-
-There are two quadratic forms:
-
-Form                                      Vanishing set        Role
-N(Q) = Q0² + Q1² + Q2² + Q3²               zero-divisor cone    decides invertibility
-B(Q) = Q0² - Q1² - Q2² - Q3²               a different cone     does not decide invertibility
-
-So you could call:
-
-N-singular:  N(Q) = 0  —  the true zero-divisor cone,
-B-singular:  B(Q) = 0  —  the "other" cone.
 
 
 

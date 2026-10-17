@@ -22,7 +22,7 @@ First, and most important, **"non-commutative" here does not mean the non-commut
 
 Second, the deformation is of the **Moyal** type — an algebra deformation, $\theta^{\mu\nu}$ a fixed background. It is not the **C-space** programme of Clifford-valued coordinates, which deforms the arena differently; the corpus holds that programme separately and the two must be compared, not merged. The mathematical side of the Moyal deformation is the star product of *Deformation Quantization*, and the classical limit that the corpus's *Similitudes between the Poisson Bracket and the Quantum Commutator* develops is the undeformed limit here.
 
-Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it$, the corpus writes $\tilde Q = ict\,e_0 + \vec x$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_0=1,e_1,e_2,e_3$ are the same objects with different names. Throughout, $c=\hbar=1$.
+Third, the source's arithmetic convention is the corpus's, with the imaginary unit placed in the time coordinate: the source writes $x_4 = it$, the corpus writes $\tilde Q = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and both make the temporal direction imaginary. The source writes the quaternion units $e_4 = 1$, $e_1,e_2,e_3$ with $e_k^2=-1$, and realises them by $\tau_4 = i\tau_0$, $\tau_k = i\sigma_k$; the corpus's units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ are the same objects with different names. Throughout, $c=\hbar=1$.
 
 ## The Non-Commutative Arena
 
@@ -245,7 +245,7 @@ proportional to the two invariants contracted with the background, and therefore
 ### The energy density as an integrability condition
 
 The relation behind the Poynting theorem above,
-$\vec E\cdot\partial_t\vec D + \vec H\cdot\partial_t\vec B = \partial_t\mathcal E$, is not a
+$\vec E\cdot\partial/\partial t\vec D + \vec H\cdot\partial/\partial t\vec B = \partial/\partial t\mathcal E$, is not a
 convenience: it is the **integrability condition** for an energy density to exist at all, and it holds because
 $\vec D$ and $\vec H$ are the field-derivatives of a Lagrangian. This is a statement about variational
 non-linear media generally rather than about non-commutativity — the energy density is defined precisely when

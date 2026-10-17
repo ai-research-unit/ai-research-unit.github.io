@@ -13,7 +13,7 @@ The article assumes the universal enveloping algebra and its universality from *
 
 ### The Definition
 
-**Definition.** Let $\mathrm{G}$ be a real Lie algebra and $U(\mathrm{G})$ its universal enveloping algebra. The **principal anti-automorphism** is the unique $\mathbb{R}$-linear map $\sigma : U(\mathrm{G})\to U(\mathrm{G})$ with
+**Definition.** Let $\mathrm{G}$ be a real Lie algebra and $\mathrm{U}(\mathrm{G})$ its universal enveloping algebra. The **principal anti-automorphism** is the unique $\mathbb{R}$-linear map $\sigma : \mathrm{U}(\mathrm{G})\to \mathrm{U}(\mathrm{G})$ with
 
 $$
 \sigma(1) = 1, \qquad \sigma(X) = -X \quad (X\in\mathrm{G}), \qquad \sigma(uv) = \sigma(v)\sigma(u) ,
@@ -21,9 +21,9 @@ $$
 
 and the **star** of an element is written $u^{\star} = \sigma(u)$.
 
-**Theorem.** The principal anti-automorphism exists and is unique; it is an involutive anti-automorphism of $U(\mathrm{G})$, $\sigma^2 = \mathrm{id}$, and it is the unique anti-automorphism of $U(\mathrm{G})$ that is $-\mathrm{id}$ on $\mathrm{G}$.
+**Theorem.** The principal anti-automorphism exists and is unique; it is an involutive anti-automorphism of $\mathrm{U}(\mathrm{G})$, $\sigma^2 = \mathrm{id}$, and it is the unique anti-automorphism of $\mathrm{U}(\mathrm{G})$ that is $-\mathrm{id}$ on $\mathrm{G}$.
 
-*Proof.* The map $X\mapsto -X$ is a homomorphism from the Lie algebra $\mathrm{G}$ to the opposite Lie algebra $U(\mathrm{G})^{\mathrm{opp}}$: it is linear, and $[-X,-Y] = [X,Y]$ equals the opposite bracket. By the universal property of $U(\mathrm{G})$ applied to $U(\mathrm{G})^{\mathrm{opp}}$ it extends to an algebra homomorphism from $U(\mathrm{G})$ to $U(\mathrm{G})^{\mathrm{opp}}$, that is to an anti-automorphism of $U(\mathrm{G})$; it is involutive because its square is an endomorphism of $U(\mathrm{G})$ equal to the identity on $\mathrm{G}$ and hence on the whole algebra; uniqueness is the uniqueness in the universal property.
+*Proof.* The map $X\mapsto -X$ is a homomorphism from the Lie algebra $\mathrm{G}$ to the opposite Lie algebra $\mathrm{U}(\mathrm{G})^{\mathrm{opp}}$: it is linear, and $[-X,-Y] = [X,Y]$ equals the opposite bracket. By the universal property of $\mathrm{U}(\mathrm{G})$ applied to $\mathrm{U}(\mathrm{G})^{\mathrm{opp}}$ it extends to an algebra homomorphism from $\mathrm{U}(\mathrm{G})$ to $\mathrm{U}(\mathrm{G})^{\mathrm{opp}}$, that is to an anti-automorphism of $\mathrm{U}(\mathrm{G})$; it is involutive because its square is an endomorphism of $\mathrm{U}(\mathrm{G})$ equal to the identity on $\mathrm{G}$ and hence on the whole algebra; uniqueness is the uniqueness in the universal property.
 
 ### The Properties
 
@@ -33,7 +33,7 @@ $$
 (X_{i_1}\cdots X_{i_k})^{\star} = (-1)^k\,X_{i_k}\cdots X_{i_1} .
 $$
 
-The star is an anti-automorphism of the filtered algebra and preserves the filtration degree; the centre is stable under it, $Z(U(\mathrm{G}))^{\star} = Z(U(\mathrm{G}))$.
+The star is an anti-automorphism of the filtered algebra and preserves the filtration degree; the centre is stable under it, $Z(\mathrm{U}(\mathrm{G}))^{\star} = Z(\mathrm{U}(\mathrm{G}))$.
 
 *Proof.* The formula follows by reversing the product and negating each factor; the filtration degree is the number of factors, unchanged; the stability of the centre is because an anti-automorphism preserves centrality.
 
@@ -42,7 +42,7 @@ The star is an anti-automorphism of the filtered algebra and preserves the filtr
 **Theorem (the star is the derivative of the inversion).** Let $G$ be a Lie group with Lie algebra $\mathrm{G}$ and let $\iota : G\to G$ be the inversion. Then for every $X\in\mathrm{G}$ the differential of $\iota$ at $e$ is $-\mathrm{id}$, and on the distributions supported at the identity the transpose of $\iota$ is the principal anti-automorphism $\sigma$,
 
 $$
-\iota^{*}(u) = u^{\star} \qquad (u\in U(\mathrm{G})\cong\mathcal{D}_e(G)) .
+\iota^{*}(u) = u^{\star} \qquad (u\in \mathrm{U}(\mathrm{G})\cong\mathcal{D}_e(G)) .
 $$
 
 *Proof.* The inversion is a diffeomorphism with differential $-\mathrm{id}$ at the identity because its square is the identity; the transpose on distributions reverses the convolution product, because $\iota(xy) = \iota(y)\iota(x)$, and it sends the left-invariant vector field $X$ to $-X$; the two facts identify it with $\sigma$ under the isomorphism of *Operators on a Lie Group*.
@@ -51,7 +51,7 @@ $$
 
 ### The Star Structure
 
-**Definition.** The pair $(U(\mathrm{G}),\sigma)$ is an **involutive algebra**: an associative algebra over $\mathbb{R}$ with an involutive anti-automorphism. An element is **Hermitian** when $u^{\star} = u$, and **skew** when $u^{\star} = -u$; the Hermitian elements form a real subspace, and a Hermitian element is **positive** when it is a sum of elements of the form $u^{\star}u$.
+**Definition.** The pair $(\mathrm{U}(\mathrm{G}),\sigma)$ is an **involutive algebra**: an associative algebra over $\mathbb{R}$ with an involutive anti-automorphism. An element is **Hermitian** when $u^{\star} = u$, and **skew** when $u^{\star} = -u$; the Hermitian elements form a real subspace, and a Hermitian element is **positive** when it is a sum of elements of the form $u^{\star}u$.
 
 **Proposition.** Every element is the sum of a Hermitian and a skew part, $u = \tfrac12(u + u^{\star}) + \tfrac12(u - u^{\star})$; the generators $X\in\mathrm{G}$ are skew, the unit is Hermitian, and the real span of the products $u^{\star}u$ is a cone stable under the star.
 
@@ -59,7 +59,7 @@ $$
 
 ### The Trace Form
 
-**Definition.** The **trace form** of $U(\mathrm{G})$ is the symmetric bilinear form $\langle u,v\rangle = \tau(uv)$ where $\tau$ is the linear functional vanishing on the monomials of PBW degree different from the top and equal to the coefficient of the top monomial; it is invariant, $\langle uv,w\rangle = \langle u,vw\rangle$, and compatible with the star, $\langle u^{\star},v^{\star}\rangle = \langle u,v\rangle$.
+**Definition.** The **trace form** of $\mathrm{U}(\mathrm{G})$ is the symmetric bilinear form $\langle u,v\rangle = \tau(uv)$ where $\tau$ is the linear functional vanishing on the monomials of PBW degree different from the top and equal to the coefficient of the top monomial; it is invariant, $\langle uv,w\rangle = \langle u,vw\rangle$, and compatible with the star, $\langle u^{\star},v^{\star}\rangle = \langle u,v\rangle$.
 
 **Proposition.** The trace form is non-degenerate on each finite-dimensional filtered piece, and its restriction to the Hermitian elements is definite on the semisimple case; the Casimir element is Hermitian and, for a compact form, positive.
 
@@ -69,7 +69,7 @@ $$
 
 ### The Extension of the Involution
 
-**Definition.** Let $\mathrm{G} = \mathrm{G}^0\oplus\mathrm{G}^1$ be a graded Lie algebra, $\alpha$ the grade involution, $+1$ on the even part and $-1$ on the odd part. The **grade involution of the enveloping algebra** is the algebra automorphism $\alpha : U(\mathrm{G})\to U(\mathrm{G})$ extending the linear map that is $\pm\mathrm{id}$ on the homogeneous components.
+**Definition.** Let $\mathrm{G} = \mathrm{G}^0\oplus\mathrm{G}^1$ be a graded Lie algebra, $\alpha$ the grade involution, $+1$ on the even part and $-1$ on the odd part. The **grade involution of the enveloping algebra** is the algebra automorphism $\alpha : \mathrm{U}(\mathrm{G})\to \mathrm{U}(\mathrm{G})$ extending the linear map that is $\pm\mathrm{id}$ on the homogeneous components.
 
 **Proposition.** The grade involution is an algebra automorphism with $\alpha^2 = \mathrm{id}$, it commutes with the principal anti-automorphism, $\alpha\sigma = \sigma\alpha$, and in the parity grading of *Superalgebras and Graded Structures* it is the automorphism that changes the sign of the odd part. On a generator $X$ of parity $\lvert X\rvert$ the two involutions act by
 
@@ -81,7 +81,7 @@ $$
 
 ### The Two Involutions
 
-**Theorem.** The group generated by $\sigma$ and $\alpha$ inside the algebra of linear maps of $U(\mathrm{G})$ is the Klein four-group, and its three non-trivial elements are $\sigma$, $\alpha$ and the composite $\alpha\sigma$, with
+**Theorem.** The group generated by $\sigma$ and $\alpha$ inside the algebra of linear maps of $\mathrm{U}(\mathrm{G})$ is the Klein four-group, and its three non-trivial elements are $\sigma$, $\alpha$ and the composite $\alpha\sigma$, with
 
 $$
 \sigma^2 = \alpha^2 = (\alpha\sigma)^2 = \mathrm{id} .
@@ -95,7 +95,7 @@ The composite $\alpha\sigma$ is the **graded transposition**, the anti-automorph
 
 ### The Star-Representations
 
-**Definition.** A **star-representation** of $(U(\mathrm{G}),\sigma)$ on a Hilbert space $\mathcal{H}$ is an algebra homomorphism $\pi$ such that
+**Definition.** A **star-representation** of $(\mathrm{U}(\mathrm{G}),\sigma)$ on a Hilbert space $\mathcal{H}$ is an algebra homomorphism $\pi$ such that
 
 $$
 \pi(u^{\star}) = \pi(u)^{*}
@@ -109,13 +109,13 @@ $$
 \pi_*(X)^{*} = -\pi_*(X) \qquad (X\in\mathrm{G}),
 $$
 
-so $\pi_*$ is a star-representation of $U(\mathrm{G})$: the generators are skew-adjoint and the star is the adjoint operation. Conversely a star-representation of $U(\mathrm{G})$ whose operators integrate to a group representation gives a unitary representation.
+so $\pi_*$ is a star-representation of $\mathrm{U}(\mathrm{G})$: the generators are skew-adjoint and the star is the adjoint operation. Conversely a star-representation of $\mathrm{U}(\mathrm{G})$ whose operators integrate to a group representation gives a unitary representation.
 
-*Proof.* The skew-adjointness of $\pi_*(X)$ is the derivative of the unitarity at the identity; since the generators are skew and generate $U(\mathrm{G})$, the identity $\pi_*(u^{\star}) = \pi_*(u)^{*}$ holds on the whole algebra by multiplicativity and the adjoint of a product; the converse is the integration of the skew operators to a unitary group, which is Stone's theorem of *Unitary Representations of a Lie Group*.
+*Proof.* The skew-adjointness of $\pi_*(X)$ is the derivative of the unitarity at the identity; since the generators are skew and generate $\mathrm{U}(\mathrm{G})$, the identity $\pi_*(u^{\star}) = \pi_*(u)^{*}$ holds on the whole algebra by multiplicativity and the adjoint of a product; the converse is the integration of the skew operators to a unitary group, which is Stone's theorem of *Unitary Representations of a Lie Group*.
 
 ### The Form and the Star
 
-**Theorem.** Let $H$ be an invariant Hermitian form on $\mathrm{G}$ whose associated operator is the star, in the sense that $H([X,Y],Z) + H(Y,[X,Z]) = 0$ for all $X,Y,Z$. Then the adjoint of the operator of left multiplication $\pi_*(X)$ with respect to $H$ is $-\pi_*(X)$, and the star of $U(\mathrm{G})$ is the adjoint operation for the extended form on the enveloping algebra; the invariance of $H$ on $\mathrm{G}$ is equivalent to the star identity on $U(\mathrm{G})$.
+**Theorem.** Let $H$ be an invariant Hermitian form on $\mathrm{G}$ whose associated operator is the star, in the sense that $H([X,Y],Z) + H(Y,[X,Z]) = 0$ for all $X,Y,Z$. Then the adjoint of the operator of left multiplication $\pi_*(X)$ with respect to $H$ is $-\pi_*(X)$, and the star of $\mathrm{U}(\mathrm{G})$ is the adjoint operation for the extended form on the enveloping algebra; the invariance of $H$ on $\mathrm{G}$ is equivalent to the star identity on $\mathrm{U}(\mathrm{G})$.
 
 *Proof.* The invariance of $H$ under the adjoint action says that $\operatorname{ad}_X$ is skew for $H$, so the adjoint of $\operatorname{ad}_X$ is $-\operatorname{ad}_X = \operatorname{ad}_{X^{\star}}$; the extension to the enveloping algebra is by multiplicativity of the adjoint and of the star. The equivalence is the statement that both properties are generated on the first order.
 
@@ -139,7 +139,7 @@ For a Lie superalgebra with a non-trivial odd part the grade involution is not t
 
 ## Summary
 
-The universal enveloping algebra of a real Lie algebra carries the **principal anti-automorphism** $\sigma$, the unique anti-automorphism equal to $-\mathrm{id}$ on the generators; it is involutive, it reverses the order of a product, it preserves the filtration and the centre, and it is the infinitesimal form of the inversion of the group, acting on the distributions supported at the identity as the transpose of the inversion. Its square is the identity and its fixed elements are the Hermitian ones, the generators being skew; the trace form is invariant and compatible with it, and the Casimir element of a compact form is positive. A graded Lie algebra carries in addition the **grade involution** $\alpha$, an involutive automorphism changing the sign of the odd part; $\sigma$ and $\alpha$ commute and generate the Klein four-group, whose third element is the graded transposition. A star-representation of $U(\mathrm{G})$ on a Hilbert space is one with $\pi(u^{\star}) = \pi(u)^{*}$, and the derived representation of a unitary representation is a star-representation with skew-adjoint generators, the star playing the role of the Hilbert-space adjoint; the invariance of a Hermitian form on the Lie algebra is equivalent to the star identity on the enveloping algebra, so the unitary representations are the star-representations and the adjoint operation is the star.
+The universal enveloping algebra of a real Lie algebra carries the **principal anti-automorphism** $\sigma$, the unique anti-automorphism equal to $-\mathrm{id}$ on the generators; it is involutive, it reverses the order of a product, it preserves the filtration and the centre, and it is the infinitesimal form of the inversion of the group, acting on the distributions supported at the identity as the transpose of the inversion. Its square is the identity and its fixed elements are the Hermitian ones, the generators being skew; the trace form is invariant and compatible with it, and the Casimir element of a compact form is positive. A graded Lie algebra carries in addition the **grade involution** $\alpha$, an involutive automorphism changing the sign of the odd part; $\sigma$ and $\alpha$ commute and generate the Klein four-group, whose third element is the graded transposition. A star-representation of $\mathrm{U}(\mathrm{G})$ on a Hilbert space is one with $\pi(u^{\star}) = \pi(u)^{*}$, and the derived representation of a unitary representation is a star-representation with skew-adjoint generators, the star playing the role of the Hilbert-space adjoint; the invariance of a Hermitian form on the Lie algebra is equivalent to the star identity on the enveloping algebra, so the unitary representations are the star-representations and the adjoint operation is the star.
 
 ## Summary of Notation
 

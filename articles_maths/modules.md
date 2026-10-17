@@ -188,7 +188,7 @@ Applying the Chinese remainder theorem to the prime-power factors of the $d_i$ g
 
 ## 16. Applications
 
-**(a) Finitely generated abelian groups.** For $R=\mathbb{Z}$, every finitely generated abelian group is $\mathbb{Z}^r \oplus \mathbb{Z}/(d_1)\oplus\cdots\oplus\mathbb{Z}/(d_k)$ with $d_1 \mid \cdots \mid d_k$ and $d_i \geq 2$, and a finite abelian group is $\mathbb{Z}/(p_1^{e_1})\oplus\cdots\oplus\mathbb{Z}/(p_s^{e_s})$, the usual classification into cyclic groups of prime-power order.
+**(a) Finitely generated abelian groups.** For $R=\mathbb{Z}$, every finitely generated abelian group is $\mathbb{Z}^r \oplus \mathbb{Z}/(d_1)\oplus\cdots\oplus\mathbb{Z}/(d_k)$ with $d_1 \mid \cdots \mid d_k$ and $d_i \geq 2$, and a finite abelian group is $\mathbb{Z}/(p_1^{\vec e_x})\oplus\cdots\oplus\mathbb{Z}/(p_s^{e_s})$, the usual classification into cyclic groups of prime-power order.
 
 **(b) Rational canonical form.** If $V$ is finite-dimensional over a field $K$ and $T:V \to V$ is linear, then $x \cdot v=T(v)$ makes $V$ a finitely generated torsion $K[x]$-module, so $V \cong K[x]/(f_1)\oplus\cdots\oplus K[x]/(f_k)$ with $f_1 \mid \cdots \mid f_k$. The $f_i$ are the invariant factors of $T$; taken monic, the largest is the minimal polynomial and their product is the characteristic polynomial, and the resulting block matrix of companion matrices is the **rational canonical form**, valid over any field.
 

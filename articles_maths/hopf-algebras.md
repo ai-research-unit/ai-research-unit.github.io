@@ -142,16 +142,16 @@ extended linearly. Coassociativity and the counit axioms are immediate from the 
 **Example (the universal enveloping algebra).** Let $\mathrm{G}$ be a Lie algebra over $k$, with bracket $[\cdot,\cdot]$, and let
 
 $$
-U(\mathrm{G}) = T(\mathrm{G})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
+\mathrm{U}(\mathrm{G}) = T(\mathrm{G})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
 $$
 
-be its universal enveloping algebra, as in *Quotients of the Tensor Algebra*; the systematic theory of $U(\mathrm{G})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $U(\mathrm{G})$ is a Hopf algebra with
+be its universal enveloping algebra, as in *Quotients of the Tensor Algebra*; the systematic theory of $\mathrm{U}(\mathrm{G})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $\mathrm{U}(\mathrm{G})$ is a Hopf algebra with
 
 $$
 \Delta(x) = x\otimes 1 + 1\otimes x, \qquad \varepsilon(x) = 0, \qquad S(x) = -x \qquad (x \in \mathrm{G}),
 $$
 
-extended so that $\Delta$ and $\varepsilon$ are algebra homomorphisms and $S$ is an algebra anti-homomorphism. The primitive elements are exactly $\mathrm{G}$, which is the statement that the Lie algebra can be recovered from its enveloping algebra. The Hopf algebra $U(\mathrm{G})$ is cocommutative, and it is commutative exactly when $\mathrm{G}$ is abelian, in which case $U(\mathrm{G}) = \operatorname{Sym}(\mathrm{G})$ as a Hopf algebra.
+extended so that $\Delta$ and $\varepsilon$ are algebra homomorphisms and $S$ is an algebra anti-homomorphism. The primitive elements are exactly $\mathrm{G}$, which is the statement that the Lie algebra can be recovered from its enveloping algebra. The Hopf algebra $\mathrm{U}(\mathrm{G})$ is cocommutative, and it is commutative exactly when $\mathrm{G}$ is abelian, in which case $\mathrm{U}(\mathrm{G}) = \operatorname{Sym}(\mathrm{G})$ as a Hopf algebra.
 
 **Example (functions on a finite group).** Let $G$ be finite and let $k^G = \operatorname{Hom}_k(k[G],k)$ be the dual of the group algebra, with basis the coordinate functions $\delta_g$, $\delta_g(h) = \delta_{gh}$. The product in the dual is pointwise, $(fg)(h) = (f\otimes g)(\Delta h) = f(h)g(h)$, so $\delta_g\delta_h = \delta_{gh}\,\delta_g$ where $\delta_{gh}$ is the Kronecker symbol; the algebra is therefore the product $\prod_{g\in G}k$ of $\lvert G\rvert$ copies of $k$, and it has $\lvert G\rvert$ orthogonal idempotents $\delta_g$. The Hopf structure is
 
@@ -273,7 +273,7 @@ The **quantum plane** is the algebra $k_q[x,y]$ with the single relation $yx = q
 
 A **coalgebra** is the formal dual of an algebra: a space with a coassociative comultiplication $\Delta$ and a counit $\varepsilon$ satisfying $(\varepsilon\otimes\mathrm{id})\Delta = \mathrm{id} = (\mathrm{id}\otimes\varepsilon)\Delta$. A **bialgebra** is an algebra and a coalgebra whose comultiplication and counit are algebra homomorphisms, and the **convolution product** $(f*g)(h) = f(h_{(1)})g(h_{(2)})$ makes $\operatorname{Hom}_k(C,A)$ an algebra with identity $\eta\varepsilon$. A **Hopf algebra** is a bialgebra whose identity map is convolution-invertible; the inverse is the **antipode** $S$, characterised by $S(h_{(1)})h_{(2)} = \varepsilon(h)1 = h_{(1)}S(h_{(2)})$. The antipode is unique, it is an algebra and coalgebra anti-homomorphism, and $\Delta(S(h)) = S(h_{(2)})\otimes S(h_{(1)})$; the **group-like** elements $\Delta(g) = g\otimes g$ form a group, and the **primitive** elements $\Delta(x) = x\otimes 1 + 1\otimes x$ form a Lie algebra.
 
-The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $U(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the **Larson–Sweedler theorem**; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic **Maschke theorem** and specialises to the classical one for $k[G]$; and it is a **Frobenius algebra** in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The **fundamental theorem of Hopf modules** identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.
+The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g)=g^{-1}$ and the enveloping algebra $\mathrm{U}(\mathrm{G})$ with $\Delta(x) = x\otimes 1+1\otimes x$, $\varepsilon(x)=0$, $S(x)=-x$ are the two primordial examples, cocommutative and generating the theory; the dual $H^*$ of a finite-dimensional Hopf algebra is a Hopf algebra with the transposed structure maps, so $k^G = (k[G])^*$ is the commutative Hopf algebra of functions on a finite group. A finite-dimensional Hopf algebra has a one-dimensional space of left integrals and a one-dimensional space of right integrals, the **Larson–Sweedler theorem**; it is semisimple exactly when some left integral has $\varepsilon(\Lambda) \neq 0$, which is the Hopf-algebraic **Maschke theorem** and specialises to the classical one for $k[G]$; and it is a **Frobenius algebra** in the sense of the preceding article, with the Frobenius functional built from the integral and the counit, symmetric exactly when $S^2 = \mathrm{id}$. The **fundamental theorem of Hopf modules** identifies every Hopf module with $H\otimes_k M^{\mathrm{co}H}$, making the coinvariants the correct fixed objects and providing the algebraic engine of Hopf–Galois theory.
 
 ## Summary of Notation
 
@@ -290,7 +290,7 @@ The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g
 | $P(H)$ | primitive elements, $\Delta(x)=x\otimes1+1\otimes x$ |
 | $H^*$ | dual Hopf algebra for $\dim_k H < \infty$ |
 | $k[G]$ | group algebra, $S(g)=g^{-1}$ |
-| $U(\mathrm{G})$ | enveloping algebra, $S(x)=-x$ |
+| $\mathrm{U}(\mathrm{G})$ | enveloping algebra, $S(x)=-x$ |
 | $k^G = (k[G])^*$ | Hopf algebra of functions on a finite group |
 | $\int_H^\ell$, $\int_H^r$ | left and right integrals, one-dimensional |
 | $\varepsilon(\Lambda)\neq0$ | Maschke condition for semisimplicity |

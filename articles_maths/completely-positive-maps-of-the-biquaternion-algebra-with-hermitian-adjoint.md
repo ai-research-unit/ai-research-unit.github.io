@@ -6,20 +6,20 @@ Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$
 
 > **A linear map of the biquaternion algebra is completely positive if and only if it is a sum of two-sided operators of the corpus:**
 > $$
-> \Phi = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}},\qquad \Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\,\tilde P\,\tilde{Q}^{*},\qquad r\le 4 .
+> \Phi = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}},\qquad \Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\,\tilde{Q}_2\,\tilde{Q}^{*},\qquad r\le 4 .
 > $$
 
 The rank-one case is exactly the sandwich of *Two-Sided Operators on the General Plain Sesqualgebra*, so the completely positive maps are **sums of sandwiches**, and the article's task is to say exactly which sums are allowed, when the map is unital, when it is trace preserving, and what the canonical positive map that is *not* completely positive looks like. The criterion is **Choi's**: complete positivity is the positivity of a single $4\times4$ Hermitian matrix, the **Choi matrix** of the map.
 
 ## Positive Maps and the Cone
 
-**Convention.** The algebra carries the general plain sesquilinear form $(\tilde R,\tilde P)=\mathrm{Sc}(\tilde{R}^{*}\tilde P)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde P\succeq0$ implies $\Phi(\tilde P)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
+**Convention.** The algebra carries the general plain sesquilinear form $(\tilde R,\tilde{Q}_2)=\mathrm{Sc}(\tilde{R}^{*}\tilde{Q}_2)$ and the positive cone $P=\{\tilde{Q}\in\mathbb{M}_+:\tilde{Q}\succeq0\}$ of the elements that are positive semidefinite in the matrix model. A linear map $\Phi:\mathbb{B}\to\mathbb{B}$ is **positive** if $\tilde{Q}_2\succeq0$ implies $\Phi(\tilde{Q}_2)\succeq0$, and **$n$-positive** if the amplification $\mathrm{id}_{n}\otimes\Phi$ on $M_{n}(\mathbb{C})\otimes\mathbb{B}$ is positive; it is **completely positive** (CP) if it is $n$-positive for every $n$.
 
-**Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde P\succeq0$ then $\tilde{Q}\tilde P\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
+**Proposition (the sandwich is positive).** For every $\tilde{Q}$, the two-sided operator $\Theta_{\tilde{Q}}$ is positive: if $\tilde{Q}_2\succeq0$ then $\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}\succeq0$. Moreover every $\Theta_{\tilde{Q}}$ is **completely positive**, since in the amplified algebra $\mathrm{id}_{n}\otimes \Theta_{\tilde{Q}}$ is again a sandwich, by the matrix $I_{n}\otimes\Phi(\tilde{Q})$.
 
-*Proof.* For $\tilde P\succeq0$, write $\tilde P=\bar{\tilde S}\tilde S$; then $\tilde{Q}\tilde P\tilde{Q}^{*}=(\tilde R\tilde S)^{\dagger}(\tilde R\tilde S)\succeq0$. The amplified statement is the same computation blockwise.
+*Proof.* For $\tilde{Q}_2\succeq0$, write $\tilde{Q}_2=\bar{\tilde S}\tilde S$; then $\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}=(\tilde R\tilde S)^{\dagger}(\tilde R\tilde S)\succeq0$. The amplified statement is the same computation blockwise.
 
-**Proposition (positivity is not complete positivity).** A positive map need not be completely positive; the canonical example on the biquaternion algebra is the **transposition** $\Phi(\tilde P)=\tilde P^{T}$, which is positive and not completely positive. This is the content of the section *The Transposition* below.
+**Proposition (positivity is not complete positivity).** A positive map need not be completely positive; the canonical example on the biquaternion algebra is the **transposition** $\Phi(\tilde{Q}_2)=\tilde{Q}_2^{T}$, which is positive and not completely positive. This is the content of the section *The Transposition* below.
 
 ## The Choi Matrix
 
@@ -32,7 +32,7 @@ $$
 It is the matrix of the sesquilinear form $(v,w)\mapsto(v,\Phi(w))$ in the vectorised description, and the map is recovered from it by
 
 $$
-\Phi(\tilde P)_{ij}=\sum_{a,b}C_{\Phi}\bigl[(i,a),(j,b)\bigr]\,V_{ab},
+\Phi(\tilde{Q}_2)_{ij}=\sum_{a,b}C_{\Phi}\bigl[(i,a),(j,b)\bigr]\,V_{ab},
 $$
 
 so the correspondence $\Phi\leftrightarrow C_{\Phi}$ is a linear bijection between the linear maps of $\mathbb{B}$ and the $4\times4$ matrices.
@@ -50,7 +50,7 @@ $$
 **Theorem (Kraus).** A linear map $\Phi$ of the biquaternion algebra is completely positive if and only if there are elements $\tilde{Q}_{1},\dots,\tilde{Q}_{r}\in\mathbb{B}$, $r\le4$, with
 
 $$
-\Phi(\tilde P) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde P\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde P).
+\Phi(\tilde{Q}_2) = \sum_{k=1}^{r} \tilde{Q}_{k}\,\tilde{Q}_2\,\tilde{Q}_{k}^{*} = \sum_{k=1}^{r} \Theta_{\tilde{Q}_{k}}(\tilde{Q}_2).
 $$
 
 The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
@@ -65,17 +65,17 @@ The minimal such $r$ is the rank of the Choi matrix $C_{\Phi}$.
 
 **Theorem (the normalisation conditions).** For $\Phi=\sum_{k}\Theta_{\tilde{Q}_{k}}$:
 
-1. $\Phi$ is **unital**, $\Phi(e_{0})=e_{0}$, if and only if $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{0}$;
-2. $\Phi$ is **trace preserving**, $\mathrm{tr}\,\Phi(\tilde P)=\mathrm{tr}\,\tilde P$ for all $\tilde P$, if and only if $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$;
+1. $\Phi$ is **unital**, $\Phi(e_{t})=e_{t}$, if and only if $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{t}$;
+2. $\Phi$ is **trace preserving**, $\mathrm{tr}\,\Phi(\tilde{Q}_2)=\mathrm{tr}\,\tilde{Q}_2$ for all $\tilde{Q}_2$, if and only if $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{t}$;
 3. the sandwich $\Theta_{\tilde{Q}}$ is unital if and only if $\tilde{Q}\in U$, and then it is trace preserving and reversible; more generally $\Theta_{\tilde{Q}}$ is trace preserving exactly for $\tilde{Q}\in U$.
 
-*Proof.* (1) $\Phi(e_{0})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde P\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde P)$, so the trace is preserved for all $\tilde P$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{0}$.
+*Proof.* (1) $\Phi(e_{t})=\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}$. (2) $\mathrm{tr}(\tilde{Q}_{k}\tilde{Q}_2\tilde{Q}_{k}^{*})=\mathrm{tr}(\tilde{Q}_{k}^{*}\tilde{Q}_{k}\tilde{Q}_2)$, so the trace is preserved for all $\tilde{Q}_2$ exactly when $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{t}$. (3) is (1) and (2) for $r=1$ with $\tilde{Q}^{*}\tilde{Q}=\tilde{Q}\tilde{Q}^{*}=e_{t}$.
 
-**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde P\mapsto \tilde{Q}\tilde P\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
+**Remark (the invertible ones with positive inverse are the unitaries).** A completely positive map with a single Kraus operator, $\Phi=\Theta_{\tilde{Q}}$, is invertible as a linear map exactly when $\tilde{Q}$ is invertible, but its inverse is again a completely positive map (indeed again a sandwich $\Theta_{\tilde{Q}^{-1}}$) exactly when $\tilde{Q}\in U$. The completely positive maps whose inverse is completely positive are therefore the **unitary conjugations** $\tilde{Q}_2\mapsto \tilde{Q}\tilde{Q}_2\tilde{Q}^{*}$ with $\tilde{Q}\in U$, which are exactly the automorphisms $\Theta_{\tilde{Q}}$ of *Two-Sided Operators on the General Plain Sesqualgebra*; every other completely positive map has a non-positive inverse even when invertible as a linear map.
 
 ## The Transposition
 
-**Theorem (the canonical positive map that is not completely positive).** The transposition $\Phi(\tilde P)=\tilde P^{T}$ is positive on the biquaternion algebra and its Choi matrix is the **flip**
+**Theorem (the canonical positive map that is not completely positive).** The transposition $\Phi(\tilde{Q}_2)=\tilde{Q}_2^{T}$ is positive on the biquaternion algebra and its Choi matrix is the **flip**
 
 $$
 C_{\Phi}=\sum_{i,j}E_{ij}\otimes E_{ji},
@@ -93,32 +93,32 @@ whose eigenvalues are $+1$ with multiplicity three and $-1$ with multiplicity on
 
 *Proof.* Sums and positive multiples of Choi matrices are Choi matrices with the same property; the extremes of the cone of positive semidefinite $4\times4$ matrices are the rank-one ones, i.e. the sandwiches; the composition of two sums of sandwiches is a sum of sandwiches by $\Theta_{\tilde{Q}}\Theta_{\tilde{S}}=\Theta_{\tilde{Q}\tilde{S}}$ from the composition law of the two-sided operators. All statements were verified structurally, and the composition law by the operator identity.
 
-**Corollary (the cone and the image of the identity).** The positive cone of the algebra is the image of the unital completely positive maps applied to the rank-one projections: $\tilde{Q}\succeq0$ is $\Phi(e_{0})$ for the unital sandwich $\Theta_{\tilde{Q}}$ scaled, and the trace-one slice of the cone is the image of the trace-preserving and unital maps. The positive cone of the algebra is therefore the orbit of the identity under the unital completely positive maps, and the trace-preserving ones are the maps that act on the cone preserving the normalisation.
+**Corollary (the cone and the image of the identity).** The positive cone of the algebra is the image of the unital completely positive maps applied to the rank-one projections: $\tilde{Q}\succeq0$ is $\Phi(e_{t})$ for the unital sandwich $\Theta_{\tilde{Q}}$ scaled, and the trace-one slice of the cone is the image of the trace-preserving and unital maps. The positive cone of the algebra is therefore the orbit of the identity under the unital completely positive maps, and the trace-preserving ones are the maps that act on the cone preserving the normalisation.
 
 ## Worked Examples
 
-**The sandwich of the identity.** $\Phi=\Theta_{e_{0}}=\mathrm{id}$: Choi matrix the rank-one projection onto the vectorised identity, unital, trace preserving, invertible with completely positive inverse. It is the identity of the composition of completely positive maps.
+**The sandwich of the identity.** $\Phi=\Theta_{e_{t}}=\mathrm{id}$: Choi matrix the rank-one projection onto the vectorised identity, unital, trace preserving, invertible with completely positive inverse. It is the identity of the composition of completely positive maps.
 
-**A two-term map: the diagonal projection.** $\Phi=\frac12 \Theta_{e_{0}}+\frac12 \Theta_{ie_{3}}$: the Choi matrix is the sum of two rank-one positive matrices, hence positive semidefinite of rank two. Since $e_{0}e_{0}^{\dagger}=e_{0}$ and $(ie_{3})(ie_{3})^{\dagger}=e_{0}$, the map is unital and trace preserving, and in the matrix model it is $\Phi(\tilde P)=\frac12(\tilde P+\sigma_{3}\tilde P\sigma_{3})=\mathrm{diag}(\tilde P)$: the **diagonal projection**, i.e. the orthogonal projection onto the diagonal subalgebra in the chosen basis, which is the subalgebra of the Hermitian sector $\mathbb{M}_+$. It is a completely positive map and not an automorphism, and its image is the diagonal, of real dimension two inside the four-dimensional algebra.
+**A two-term map: the diagonal projection.** $\Phi=\frac12 \Theta_{e_{t}}+\frac12 \Theta_{i\vec e_z}$: the Choi matrix is the sum of two rank-one positive matrices, hence positive semidefinite of rank two. Since $e_{t}e_{t}^{\dagger}=e_{t}$ and $(i\vec e_z)(i\vec e_z)^{\dagger}=e_{t}$, the map is unital and trace preserving, and in the matrix model it is $\Phi(\tilde Q_2)=\frac12(\tilde Q_2+\sigma_{3}\tilde Q_2\sigma_{3})=\mathrm{diag}(\tilde Q_2)$: the **diagonal projection**, i.e. the orthogonal projection onto the diagonal subalgebra in the chosen basis, which is the subalgebra of the Hermitian sector $\mathbb{M}_+$. It is a completely positive map and not an automorphism, and its image is the diagonal, of real dimension two inside the four-dimensional algebra.
 
 **The transposition relative to a sandwich.** The composition of a sandwich with the transposition is positive and not completely positive; its Choi matrix has a negative eigenvalue, and the negativity is the obstruction to a Kraus representation.
 
-**The null sandwich revisited.** $\Theta_{e_{0}+ie_{3}}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{0}+ie_{3}$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the General Plain Sesqualgebra*.
+**The null sandwich revisited.** $\Theta_{e_{t}+i\vec e_z}$ has Choi rank one but is **not** unital: for $\tilde{Q}=e_{t}+i\vec e_z$ one has $\tilde{Q}\tilde{Q}^{*}=\tilde{Q}^{2}=2\tilde{Q}$, whose matrix is $\mathrm{diag}(4,0)$ of trace $4$, not the trace $2$ of the identity. The map is neither unital nor trace preserving, and it has no completely positive inverse although it is a positive rank-one map. It illustrates that rank one does not mean unital, and that the positive cone collapses under the null map exactly as computed in *Two-Sided Operators on the General Plain Sesqualgebra*.
 
 ## Summary
 
-The completely positive maps of the biquaternion algebra are exactly the sums of at most four two-sided operators, $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, by the Choi–Kraus theorem; the sandwiches $\Theta_{\tilde{Q}}$ are the rank-one (extreme) completely positive maps, and they are exactly the two-sided operators of the corpus. The map is unital iff $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{0}$, trace preserving iff $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$, and invertible with completely positive inverse iff it is a single sandwich of a unitary element. The transposition is the canonical positive map that is **not** completely positive, with the flip as its Choi matrix and the single negative eigenvalue $-1$; the positivity of the Choi matrix is the complete positivity criterion, and the round-trip $\Phi\leftrightarrow C_{\Phi}$ was verified to machine precision. The completely positive maps form a cone generated by the sandwiches, closed under composition, and the positive cone of the algebra is the orbit of the identity under the unital ones.
+The completely positive maps of the biquaternion algebra are exactly the sums of at most four two-sided operators, $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$ with $r=\mathrm{rank}\,C_{\Phi}\le4$, by the Choi–Kraus theorem; the sandwiches $\Theta_{\tilde{Q}}$ are the rank-one (extreme) completely positive maps, and they are exactly the two-sided operators of the corpus. The map is unital iff $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{t}$, trace preserving iff $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{t}$, and invertible with completely positive inverse iff it is a single sandwich of a unitary element. The transposition is the canonical positive map that is **not** completely positive, with the flip as its Choi matrix and the single negative eigenvalue $-1$; the positivity of the Choi matrix is the complete positivity criterion, and the round-trip $\Phi\leftrightarrow C_{\Phi}$ was verified to machine precision. The completely positive maps form a cone generated by the sandwiches, closed under composition, and the positive cone of the algebra is the orbit of the identity under the unital ones.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $P$ | The positive cone of the Hermitian elements |
-| $\Theta_{\tilde{Q}}(\tilde P)=\tilde{Q}\tilde P\tilde{Q}^{*}$ | The sandwich; the rank-one CP map |
+| $\Theta_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}$ | The sandwich; the rank-one CP map |
 | $C_{\Phi}=\sum_{ij}E_{ij}\otimes\Phi(E_{ij})$ | The Choi matrix; $\Phi$ CP iff $C_{\Phi}\succeq0$ |
 | $\Phi=\sum_{k=1}^{r}\Theta_{\tilde{Q}_{k}}$, $r\le4$ | Kraus form; the completely positive maps are sums of sandwiches |
-| $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{0}$ | Unitality condition |
-| $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{0}$ | Trace preservation condition |
+| $\sum_{k}\tilde{Q}_{k}\tilde{Q}_{k}^{*}=e_{t}$ | Unitality condition |
+| $\sum_{k}\tilde{Q}_{k}^{*}\tilde{Q}_{k}=e_{t}$ | Trace preservation condition |
 | $r=\mathrm{rank}\,C_{\Phi}$ | Choi rank; minimal number of Kraus terms |
 | $\sum_{ij}E_{ij}\otimes E_{ji}$ | The flip; the Choi matrix of the transposition; eigenvalues $(1,1,1,-1)$ |
 | $\tilde{Q}\in U$ | Exactly the sandwiches with completely positive inverse (unitary conjugations) |

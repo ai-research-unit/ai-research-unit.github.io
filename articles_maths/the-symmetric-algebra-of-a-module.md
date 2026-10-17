@@ -95,7 +95,7 @@ $$
 from $R$-modules to commutative unital $R$-algebras is left adjoint to the forgetful functor $U : \mathsf{CAlg}_R \to \mathsf{Mod}_R$:
 
 $$
-\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, U(A)\bigr),
+\operatorname{Hom}_{\mathsf{CAlg}_R}\bigl(\operatorname{Sym}(M), A\bigr) \cong \operatorname{Hom}_{\mathsf{Mod}_R}\bigl(M, \mathrm{U}(A)\bigr),
 $$
 
 naturally in $M$ and $A$. The natural transformation $M \to U(\operatorname{Sym}(M))$ is the inclusion of the degree-one part.

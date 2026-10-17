@@ -116,7 +116,7 @@ $$
 u^{*}u=uu^{*}=1 ,
 $$
 
-and they form a subgroup $U(A,{}^{*})$ of the units; the condition is the **unitarity condition**.
+and they form a subgroup $\mathrm{U}(A,{}^{*})$ of the units; the condition is the **unitarity condition**.
 
 **Theorem.** If $u$ is unitary then the signed sandwich $\Sigma^{\alpha}_{u,u^{*}}$ is an isometry of the star form.
 

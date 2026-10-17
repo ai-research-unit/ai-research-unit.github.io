@@ -17,7 +17,7 @@ $$
 \mathcal{E}nd(\mathcal{O}_X) = \mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X),
 $$
 
-whose sections over an open $U$ are the $\mathcal{O}_X(U)$-linear endomorphisms of $\mathcal{O}_X(U)$, with composition as product. Its global sections form the $k$-algebra $\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)$.
+whose sections over an open $\Xi$ are the $\mathcal{O}_X(\Xi)$-linear endomorphisms of $\mathcal{O}_X(\Xi)$, with composition as product. Its global sections form the $k$-algebra $\operatorname{End}_{\mathcal{O}_X}(\mathcal{O}_X)$.
 
 **Theorem (the operator layer is the structure sheaf).** The map
 $$
@@ -29,7 +29,7 @@ $$
 $$
 a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the group of invertible global functions.
 
-*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $U$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $U$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
+*Proof.* The map is $\mathcal{O}_X$-linear and multiplicative, $m_sm_t = m_{st}$, and it is injective because $m_s(1) = s$. For surjectivity, let $\varphi$ be a section of $\mathcal{H}om_{\mathcal{O}_X}(\mathcal{O}_X,\mathcal{O}_X)$ over $\Xi$ and put $s = \varphi(1)$. Then for any section $t$ of $\mathcal{O}_X$ over $\Xi$, $\mathcal{O}_X$-linearity gives $\varphi(t) = \varphi(t\cdot 1) = t\,\varphi(1) = ts$, so $\varphi = m_s$. On the global sections the product is pointwise and the ring is $\Gamma(X,\mathcal{O}_X)$; its units are exactly the sections that are invertible at every point, which is $\Gamma(X,\mathcal{O}_X^\times)$.
 
 **Remark (the two readings of "endomorphism").** The theorem is about the operators **linear over the structure sheaf**, and those are the multiplications. The ring endomorphisms of $\mathcal{O}_X$ as a sheaf of rings, which need not be $\mathcal{O}_X$-linear, are a different and larger object, and they are treated in *Endomorphisms and Automorphisms of the Structure Sheaf* below. The two must be kept apart: a multiplication $m_s$ is never an automorphism of the pair $(X,\mathcal{O}_X)$ unless $s$ is a unit, while an automorphism of the variety is a ring automorphism that is almost never $\mathcal{O}_X$-linear.
 
@@ -37,7 +37,7 @@ a commutative ring. Its group of units is $\Gamma(X,\mathcal{O}_X^\times)$, the 
 
 ## Vector Fields
 
-**Definition.** A **derivation** of $\mathcal{O}_X$ over $k$ is a $k$-linear map $D : \mathcal{O}_X(U)\to\mathcal{O}_X(U)$ on each open $U$, compatible with restriction, satisfying the Leibniz rule
+**Definition.** A **derivation** of $\mathcal{O}_X$ over $k$ is a $k$-linear map $D : \mathcal{O}_X(\Xi)\to\mathcal{O}_X(\Xi)$ on each open $\Xi$, compatible with restriction, satisfying the Leibniz rule
 $$
 D(fg) = f\,D(g) + D(f)\,g .
 $$
@@ -46,11 +46,11 @@ $$
 \mathcal{T}_X = \mathcal{D}er_k(\mathcal{O}_X).
 $$
 
-**Theorem (the operator structure of the vector fields).** On each open $U$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(U))$ form a Lie algebra under the commutator
+**Theorem (the operator structure of the vector fields).** On each open $\Xi$ the derivations $\operatorname{Der}_k(\mathcal{O}_X(\Xi))$ form a Lie algebra under the commutator
 $$
 [D_1,D_2] = D_1D_2 - D_2D_1,
 $$
-and a module over the ring $\mathcal{O}_X(U)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
+and a module over the ring $\mathcal{O}_X(\Xi)$ under $(fD)(g) = f\,D(g)$. The two are compatible in the Leibniz rule for the bracket,
 $$
 [fD_1,\,gD_2] = fg\,[D_1,D_2] + f\,D_1(g)\,D_2 - g\,D_2(f)\,D_1 ,
 $$
@@ -68,15 +68,15 @@ where $\Omega^1_{X/k}$ is the cotangent sheaf of *Schemes*. On an affine chart $
 
 **Example ($\mathbb{A}^n$ and the Euler field).** On $\mathbb{A}^n_k$ the derivations form the free $\mathcal{O}$-module of rank $n$,
 $$
-\operatorname{Der}_k(k[x_1,\ldots,x_n]) = \bigoplus_{i=1}^n k[x_1,\ldots,x_n]\,\partial_i, \qquad \partial_i = \frac{\partial}{\partial x_i},
+\operatorname{Der}_k(k[x_1,\ldots,x_n]) = \bigoplus_{i=1}^n k[x_1,\ldots,x_n]\,\partial/\partial x_i, \qquad \partial/\partial x_i = \frac{\partial}{\partial x_i},
 $$
-so $\mathcal{T}_{\mathbb{A}^n}$ is free of rank $n$. The **Euler derivation** $E = \sum_i x_i\partial_i$ satisfies $E(f) = \deg(f)\,f$ on homogeneous polynomials, and it is the generator of the grading of the polynomial ring. On $\mathbb{A}^1$ the derivations are $k[t]\partial_t$, and the space is one-dimensional over the ring; the only derivation with $D(t) = 1$ is $\partial_t$.
+so $\mathcal{T}_{\mathbb{A}^n}$ is free of rank $n$. The **Euler derivation** $E = \sum_i x_i\partial/\partial x_i$ satisfies $E(f) = \deg(f)\,f$ on homogeneous polynomials, and it is the generator of the grading of the polynomial ring. On $\mathbb{A}^1$ the derivations are $k[t]\partial/\partial t$, and the space is one-dimensional over the ring; the only derivation with $D(t) = 1$ is $\partial/\partial t$.
 
 **Example (global vector fields on projective space).** On $\mathbb{P}^n_k$ the global vector fields form the space
 $$
 H^0(\mathbb{P}^n,\mathcal{T}_{\mathbb{P}^n}) \cong \mathrm{sl}_{n+1}(k),
 $$
-of dimension $(n+1)^2-1$, spanned by the derivations $x_i\partial_j$ of the polynomial ring with the radial field $\sum_i x_i\partial_i$ removed. The identification of this space with the Lie algebra of the automorphism group $\mathrm{PGL}_{n+1}$ is the operator-level form of the statement that the automorphisms of $\mathbb{P}^n$ are the projective linear transformations; the Lie algebra of a group is a Part III notion, and the space itself is an algebraic one.
+of dimension $(n+1)^2-1$, spanned by the derivations $x_i\partial/\partial x_j$ of the polynomial ring with the radial field $\sum_i x_i\partial/\partial x_i$ removed. The identification of this space with the Lie algebra of the automorphism group $\mathrm{PGL}_{n+1}$ is the operator-level form of the statement that the automorphisms of $\mathbb{P}^n$ are the projective linear transformations; the Lie algebra of a group is a Part III notion, and the space itself is an algebraic one.
 
 ## Endomorphisms and Automorphisms of the Structure Sheaf
 
@@ -102,7 +102,7 @@ is an isomorphism of Lie algebras $\operatorname{Der}_k(\mathcal{O}_X)\to\operat
 
 *Proof.* Conjugation by an invertible element of a ring is a ring automorphism, and $\varphi^*$ is invertible with inverse $(\varphi^{-1})^*$. For the derivations, $\varphi_*D$ is the transport of the derivation $D$ along the $k$-algebra isomorphism $\varphi^*$, so it is a derivation and the assignment is a Lie-algebra isomorphism because conjugation of operators preserves commutators. The fixed-multiplication statement is $\mathrm{Ad}_\varphi(m_s) = m_{\varphi^*(s)} = m_s$ for all $s$, that is $\varphi^* = \mathrm{id}$.
 
-**Example (the affine line and its inversions).** On $\mathbb{A}^1_k$ the automorphisms are the affine maps $t\mapsto at+b$ with $a\in k^\times$, $b\in k$, since these are exactly the invertible $k$-algebra endomorphisms of $k[t]$. The group is the affine group of the line, of dimension two, and its conjugation action sends the vector field $f(t)\partial_t$ to $f(at+b)\partial_t$ with the chain-rule factor $a^{-1}$ absorbed: precisely, $(\varphi_*D)(t) = a^{-1}D(at+b)$. On the projective line $\mathbb{P}^1_k$ the automorphism group is $\mathrm{PGL}_2(k)$, of dimension three, and the global vector fields form its three-dimensional Lie algebra $\mathrm{sl}_2(k)$.
+**Example (the affine line and its inversions).** On $\mathbb{A}^1_k$ the automorphisms are the affine maps $t\mapsto at+b$ with $a\in k^\times$, $b\in k$, since these are exactly the invertible $k$-algebra endomorphisms of $k[t]$. The group is the affine group of the line, of dimension two, and its conjugation action sends the vector field $f(t)\partial/\partial t$ to $f(at+b)\partial/\partial t$ with the chain-rule factor $a^{-1}$ absorbed: precisely, $(\varphi_*D)(t) = a^{-1}D(at+b)$. On the projective line $\mathbb{P}^1_k$ the automorphism group is $\mathrm{PGL}_2(k)$, of dimension three, and the global vector fields form its three-dimensional Lie algebra $\mathrm{sl}_2(k)$.
 
 ## The Action on the Function Field and on Cohomology
 
@@ -139,7 +139,7 @@ The third class is the automorphisms of the variety, the invertible ring endomor
 | $[D_1,D_2]=D_1D_2-D_2D_1$ | Lie bracket of derivations |
 | $(fD)(g)=fD(g)$ | $\mathcal{O}_X$-module structure on the vector fields |
 | $\Omega^1_{X/k}$ | cotangent sheaf; $\mathcal{T}_X$ is its $\mathcal{O}_X$-dual |
-| $E=\sum_ix_i\partial_i$ | Euler derivation of the polynomial ring |
+| $E=\sum_ix_i\partial/\partial x_i$ | Euler derivation of the polynomial ring |
 | $\operatorname{Aut}(X)$, $\varphi^*$ | automorphism group; pullback of functions |
 | $\mathrm{Ad}_\varphi(T)=(\varphi^*)^{-1}T\varphi^*$ | conjugation action of an automorphism on the operator layer |
 | $k(X)$ | function field; rational functions pulled back by a dominant map |

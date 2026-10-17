@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $T=q_1\Pi_{1}+q_2\Pi_{2}$ in the two central idempotents, and with the quadratic family $F_{C}(T)=T^{2}+C$ whose filled Julia set, in the idempotent coordinates $C=c_{1}\Pi_{1}+c_{2}\Pi_{2}$, is the product
+The reduced biquaternion algebra is the commutative algebra $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ of basis $1,i,j,ij$, with element $Q_\pm=Q_{++}\Pi_++Q_{--}\Pi_-$ in the two central idempotents, and with the quadratic family $F_{C}(Q_\pm)=Q_\pm^{2}+C$ whose filled Julia set, in the idempotent coordinates $C=c_{1}\Pi_++c_{2}\Pi_-$, is the product
 
 $$
 \mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}.
@@ -12,9 +12,9 @@ The **connectedness locus** of the family is the set of parameters whose filled 
 
 The result is that the connectedness locus is the product of the Mandelbrot set with itself, that the escape-time algorithm is exact and decomposes into the two complex algorithms, and that there is no obstruction to the theory. The reduced biquaternion Mandelbrot set is therefore the square of the complex Mandelbrot set, a set in the two-dimensional complex parameter space; its complex line slices are degenerate, its real slices are intersections of the Mandelbrot set with translates of itself, and the bifurcation locus is the union of the two products of a boundary with the whole. The zero divisors enter through the critical set, which is the zero-divisor cone, and through the parameters whose critical orbit meets it.
 
-The article owns the connectedness locus, the bifurcation locus, the escape-time algorithm and its exactness, the singular parameters and the singular slices. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the zero divisors are *Zero Divisors of the General Plain Algebra of the Reduced Biquaternions*; the topological norm that measures the escape is *Topology and Metric for Each of the Operations*. The companion is *The Biquaternion Mandelbrot Set and the Connectedness Locus*, where the escape criterion meets an obstruction.
+The article owns the connectedness locus, the bifurcation locus, the escape-time algorithm and its exactness, the singular parameters and the singular slices. The fractal and its product structure are *The Reduced Biquaternion Quadratic Map and Its Julia Sets*; the global decomposition is *The Idempotent Decomposition and the Split Fractal*; the slices are *The Slices of the Reduced Biquaternion Julia Sets*; the dimension is *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets*; the zero divisors are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the topological norm that measures the escape is *Topology and Metric for Each of the Operations*. The companion is *The Biquaternion Mandelbrot Set and the Connectedness Locus*, where the escape criterion meets an obstruction.
 
-**Conventions.** The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_{1}+c_{2}\Pi_{2}$; the topological norm is $K(T)=\tfrac12(|q_1|^{2}+|q_2|^{2})$.
+**Conventions.** The complex quadratic map of parameter $c$ is $f_{c}(\zeta)=\zeta^{2}+c$, with filled Julia set $K_{c}$, Julia set $J_{c}$ and Mandelbrot set $\mathcal{M}=\{c:K_{c}\text{ connected}\}$; the reduced biquaternion family is parametrised by $C=c_{1}\Pi_++c_{2}\Pi_-$; the topological norm is $K(Q_\pm)=\tfrac12(|Q_{++}|^{2}+|Q_{--}|^{2})$.
 
 ## The Mandelbrot Set of the Complex Family
 
@@ -68,7 +68,7 @@ $$
 
 ## The Escape-Time Algorithm
 
-**Theorem (the algorithm is exact and decomposes).** The orbit of $T=(q_1,q_2)$ under $F_{C}$ is bounded exactly when both coordinate orbits are bounded, and the numerical criterion is applied to each coordinate separately: with the standard escape radius $R$ of the complex family, if $|q_1|>R$ or $|q_2|>R$ after an iterate then the orbit escapes, and the membership of $C$ in the connectedness locus is decided coordinatewise.
+**Theorem (the algorithm is exact and decomposes).** The orbit of $Q_\pm=(Q_{++},Q_{--})$ under $F_{C}$ is bounded exactly when both coordinate orbits are bounded, and the numerical criterion is applied to each coordinate separately: with the standard escape radius $R$ of the complex family, if $|Q_{++}|>R$ or $|Q_{--}|>R$ after an iterate then the orbit escapes, and the membership of $C$ in the connectedness locus is decided coordinatewise.
 
 **Proof.** The orbit is the pair of the coordinate orbits, and the norm $\langle\cdot\rangle_{\natural*}$ is unbounded exactly when one coordinate modulus is unbounded; the complex escape criterion $|\zeta|>R$ with $R$ the standard radius of the quadratic family is applied to each coordinate.
 
@@ -78,7 +78,7 @@ $$
 
 ## The Zero Divisors and the Singular Parameters
 
-**Proposition (the critical set and the singular slices).** The derivative of $F_{C}$ is the multiplication by $2T$, singular exactly on the zero-divisor cone $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$ and vanishing only at the origin; the singular slices of the fractal are
+**Proposition (the critical set and the singular slices).** The derivative of $F_{C}$ is the multiplication by $2Q_\pm$, singular exactly on the zero-divisor cone $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$ and vanishing only at the origin; the singular slices of the fractal are
 
 $$
 \mathcal{K}_{C}\cap\mathscr{Z}=\bigl(\{0\}\cap K_{c_{1}}\bigr)\times K_{c_{2}}\;\cup\;K_{c_{1}}\times\bigl(\{0\}\cap K_{c_{2}}\bigr),
@@ -116,12 +116,12 @@ The connectedness locus of the reduced biquaternion quadratic family is the prod
 
 | Symbol | Meaning |
 |---|---|
-| $F_{C}(T)=T^{2}+C$ | the quadratic map of the algebra |
+| $F_{C}(Q_\pm)=Q_\pm^{2}+C$ | the quadratic map of the algebra |
 | $\mathcal{K}_{C}=K_{c_{1}}\times K_{c_{2}}$ | the filled Julia set as a product |
 | $\mathcal{M}$ | the complex Mandelbrot set |
 | $\mathfrak{M}=\mathcal{M}\times\mathcal{M}$ | the connectedness locus of the reduced biquaternion family |
 | $\partial\mathfrak{M}=(\partial\mathcal{M}\times\mathcal{M})\cup(\mathcal{M}\times\partial\mathcal{M})$ | the boundary of the locus |
-| $\mathscr{Z}=\{q_1=0\}\cup\{q_2=0\}$ | the critical set, the zero-divisor cone |
+| $\mathscr{Z}=\{Q_{++}=0\}\cup\{Q_{--}=0\}$ | the critical set, the zero-divisor cone |
 | $C_{0}$ | the complex parameters whose critical orbit returns to the origin, the centres |
 | $\mathfrak{S}=(C_{0}\times\mathbb{C})\cup(\mathbb{C}\times C_{0})$ | the singular parameters |
 | escape time | the smaller of the two coordinate escape times |
@@ -131,6 +131,6 @@ The connectedness locus of the reduced biquaternion quadratic family is the prod
 - *The Reduced Biquaternion Quadratic Map and Its Julia Sets* (`articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.md`), above this article, for the product fractal and the critical set.
 - *The Idempotent Decomposition and the Split Fractal* (`articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.md`), above this article, for the global product structure behind the locus.
 - *The Slices of the Reduced Biquaternion Julia Sets* (`articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.md`), above this article, for the slices of the locus.
-- *Zero Divisors of the General Plain Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the critical cone.
+- *Zero Divisors of the Algebra of the Reduced Biquaternions* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.md`), above this article, for the critical cone.
 - *The Hausdorff Dimension of the Reduced Biquaternion Julia Sets* (`articles_maths/the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.md`), below this article, for the dimension as a function of the parameter.
 - *The Biquaternion Mandelbrot Set and the Connectedness Locus* (`articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.md`), for the companion in which the escape criterion meets an obstruction.

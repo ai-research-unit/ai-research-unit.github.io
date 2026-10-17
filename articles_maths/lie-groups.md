@@ -14,7 +14,7 @@ To a Lie group $G$ one associates its tangent space at the identity, $\mathrm{G}
 
 ## 1. Smooth Manifolds (Recalled)
 
-A **smooth manifold** of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\phi : U \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.
+A **smooth manifold** of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\phi : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.
 
 ## 2. Definition of a Lie Group
 
@@ -51,7 +51,7 @@ O(n) = \{A \in GL_n(\mathbb{R}) : A^TA = I\}, \qquad SO(n) = \{A \in O(n) : \det
 $$
 
 $$
-U(n) = \{A \in GL_n(\mathbb{C}) : A^*A = I\}, \qquad SU(n) = \{A \in U(n) : \det A = 1\}.
+\mathrm{U}(n) = \{A \in GL_n(\mathbb{C}) : A^*A = I\}, \qquad SU(n) = \{A \in \mathrm{U}(n) : \det A = 1\}.
 $$
 
 Two groups share the name **symplectic**: the compact symplectic (quaternionic unitary) group $Sp(n) = \{A \in GL_n(\mathbb{H}) : A^*A = I\}$, and the real symplectic group $Sp(2n,\mathbb{R}) = \{A \in GL_{2n}(\mathbb{R}) : A^TJA = J\}$ for a fixed invertible antisymmetric $J$. Note $Sp(1) \cong SU(2)$ and $Sp(2,\mathbb{R}) \cong SL_2(\mathbb{R})$.
@@ -66,22 +66,22 @@ The real dimensions are:
 | $SL_n(\mathbb{C})$ | $\mathbb{C}$ | $2n^2 - 2$ |
 | $O(n)$ | $\mathbb{R}$ | $n(n-1)/2$ |
 | $SO(n)$ | $\mathbb{R}$ | $n(n-1)/2$ |
-| $U(n)$ | $\mathbb{C}$ | $n^2$ |
+| $\mathrm{U}(n)$ | $\mathbb{C}$ | $n^2$ |
 | $SU(n)$ | $\mathbb{C}$ | $n^2 - 1$ |
 | $Sp(n)$ | $\mathbb{H}$ | $n(2n+1)$ |
 | $Sp(2n,\mathbb{R})$ | $\mathbb{R}$ | $n(2n+1)$ |
 
-Each is a closed subgroup of a general linear group, itself a Lie group with polynomial multiplication and rational inversion. The defining conditions are level sets of smooth maps with surjective derivative; for instance $A \mapsto A^TA$ has derivative $H \mapsto A^TH + H^TA$, so the regular value theorem makes $O(n)$ an embedded submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$, and the same argument gives the table (Cartan's closed subgroup theorem, §12, is an alternative). The group operations restrict from the ambient group, so each group is a Lie group. Here $O(n)$ is compact with identity component $SO(n)$, of index $2$, while $U(n)$ and $SU(n)$ are compact connected with $U(n)/SU(n) \cong U(1)$.
+Each is a closed subgroup of a general linear group, itself a Lie group with polynomial multiplication and rational inversion. The defining conditions are level sets of smooth maps with surjective derivative; for instance $A \mapsto A^TA$ has derivative $H \mapsto A^TH + H^TA$, so the regular value theorem makes $O(n)$ an embedded submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$, and the same argument gives the table (Cartan's closed subgroup theorem, §12, is an alternative). The group operations restrict from the ambient group, so each group is a Lie group. Here $O(n)$ is compact with identity component $SO(n)$, of index $2$, while $\mathrm{U}(n)$ and $SU(n)$ are compact connected with $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$.
 
 ## 4. Further Examples
 
 The additive group $\mathbb{R}^n$ is an abelian Lie group of dimension $n$, and $\mathbb{C}^n$ is a real Lie group of dimension $2n$. A **torus**
 
 $$
-T^n = \mathbb{R}^n/\mathbb{Z}^n = U(1)^n
+T^n = \mathbb{R}^n/\mathbb{Z}^n = \mathrm{U}(1)^n
 $$
 
-is a compact connected abelian Lie group of dimension $n$; the circle $S^1 = U(1)$ is the case $n=1$.
+is a compact connected abelian Lie group of dimension $n$; the circle $S^1 = \mathrm{U}(1)$ is the case $n=1$.
 
 The unit sphere $S^3 = \{q \in \mathbb{H} : |q| = 1\}$ is closed under quaternion multiplication and inversion, and
 
@@ -179,7 +179,7 @@ $$
 
 **(b)** $\exp(sX)\exp(tX) = \exp((s+t)X)$ and $\exp(-X) = \exp(X)^{-1}$.
 
-**(c)** The map $\exp$ is smooth with $d\exp_0 = \operatorname{id}_{\mathrm{G}}$, so by the inverse function theorem some neighborhoods $U$ of $0$ and $V$ of $e$ satisfy $\exp(U) = V$ diffeomorphically; thus every element near $e$ has a unique small logarithm.
+**(c)** The map $\exp$ is smooth with $d\exp_0 = \operatorname{id}_{\mathrm{G}}$, so by the inverse function theorem some neighborhoods $\Omega$ of $0$ and $V$ of $e$ satisfy $\exp(\Omega) = V$ diffeomorphically; thus every element near $e$ has a unique small logarithm.
 
 **(d)** For a Lie group homomorphism $\varphi : G \to H$,
 $$
@@ -202,14 +202,14 @@ a convergent series of iterated brackets. Thus the group law near $e$ is determi
 
 The map $\exp$ is a local diffeomorphism at $0$, but in general it is neither injective nor surjective.
 
-- **Not injective.** For $G = S^1 = U(1)$ and $\mathrm{G} = i\mathbb{R}$, one has $\exp(2\pi i) = 1 = \exp(0)$.
+- **Not injective.** For $G = S^1 = \mathrm{U}(1)$ and $\mathrm{G} = i\mathbb{R}$, one has $\exp(2\pi i) = 1 = \exp(0)$.
 - **Not surjective.** For $G = SL_2(\mathbb{R})$, the matrix
 $$
 A = \begin{pmatrix} -1 & 1 \\ 0 & -1 \end{pmatrix}
 $$
 lies in $SL_2(\mathbb{R})$ but equals no $\exp(X)$ with $X$ real. A real matrix is the exponential of a real matrix exactly when it is invertible and each Jordan block belonging to a negative real eigenvalue occurs an even number of times; the eigenvalue $-1$ of $A$ has a single Jordan block of size $2$, so $A$ has no real logarithm.
-- **Surjective cases.** The map $\exp$ is surjective when $G$ is connected and compact (for example $U(n)$, $SU(n)$, $SO(n)$, $Sp(n)$, $T^n$), when $G = GL_n(\mathbb{C})$ (every invertible complex matrix has a complex logarithm), and when $G$ is connected and nilpotent; in the last case, if $G$ is simply connected then $\exp$ is a diffeomorphism, the standard example being the Heisenberg group $H_3(\mathbb{R})$. If $G$ is connected and abelian, then $\exp : \mathrm{G} \to G$ is a surjective homomorphism with discrete kernel, so $G \cong \mathrm{G}/\Gamma$ for a discrete subgroup $\Gamma$, as for $\mathbb{R}/\mathbb{Z} \cong S^1$ and $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$.
-- **Exponential coordinates.** Since $\exp$ is a local diffeomorphism at $0$, the pair $(U,\exp^{-1})$ is a chart near $e$, called a system of **exponential coordinates**.
+- **Surjective cases.** The map $\exp$ is surjective when $G$ is connected and compact (for example $\mathrm{U}(n)$, $SU(n)$, $SO(n)$, $Sp(n)$, $T^n$), when $G = GL_n(\mathbb{C})$ (every invertible complex matrix has a complex logarithm), and when $G$ is connected and nilpotent; in the last case, if $G$ is simply connected then $\exp$ is a diffeomorphism, the standard example being the Heisenberg group $H_3(\mathbb{R})$. If $G$ is connected and abelian, then $\exp : \mathrm{G} \to G$ is a surjective homomorphism with discrete kernel, so $G \cong \mathrm{G}/\Gamma$ for a discrete subgroup $\Gamma$, as for $\mathbb{R}/\mathbb{Z} \cong S^1$ and $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$.
+- **Exponential coordinates.** Since $\exp$ is a local diffeomorphism at $0$, the pair $(\Omega,\exp^{-1})$ is a chart near $e$, called a system of **exponential coordinates**.
 
 ---
 
@@ -267,7 +267,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 |---|---|---|---|
 | $\mathbb{R}^n$ | yes | yes | no |
 | $T^n$, $n \geq 1$ | yes | no | yes |
-| $S^1 = U(1)$ | yes | no | yes |
+| $S^1 = \mathrm{U}(1)$ | yes | no | yes |
 | $S^3 = SU(2) = Sp(1)$ | yes | yes | yes |
 | $GL_n(\mathbb{R})$, $n \geq 1$ | no | no | no |
 | $GL_n(\mathbb{C})$, $n \geq 1$ | yes | no | no |
@@ -275,7 +275,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 | $SL_n(\mathbb{C})$, $n \geq 2$ | yes | yes | no |
 | $O(n)$ | no | no | yes |
 | $SO(n)$, $n \geq 2$ | yes | no | yes |
-| $U(n)$ | yes | no | yes |
+| $\mathrm{U}(n)$ | yes | no | yes |
 | $SU(n)$ | yes | yes | yes |
 | $Sp(n)$ | yes | yes | yes |
 
@@ -343,7 +343,7 @@ The map $\pi$ is a principal $N$-bundle, and $G/N$ is connected, respectively co
 
 **First isomorphism theorem.** For a Lie group homomorphism $\varphi : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\varphi$ induces an isomorphism of Lie groups $G/\ker\varphi \cong \varphi(G)$.
 
-Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$, $SU(2)/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$, $U(n)/SU(n) \cong U(1)$, $GL_n(\mathbb{R})/SL_n(\mathbb{R}) \cong \mathbb{R}^\times$, and $G/[G,G]$ is the maximal abelian quotient, equal to $\mathbb{R}^2$ for the Heisenberg group.
+Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^n$, $SU(2)/\{\pm1\} \cong SO(3) \cong \mathbb{RP}^3$, $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$, $GL_n(\mathbb{R})/SL_n(\mathbb{R}) \cong \mathbb{R}^\times$, and $G/[G,G]$ is the maximal abelian quotient, equal to $\mathbb{R}^2$ for the Heisenberg group.
 
 ---
 
@@ -359,7 +359,7 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 ## Summary
 
-- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in §3.
+- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in §3.
 - Its Lie algebra $\mathrm{G} = T_eG$ is the space of left-invariant vector fields with the commutator bracket; for matrix groups $[X,Y] = XY - YX$.
 - The exponential map is a local diffeomorphism at $0$, natural in homomorphisms, and surjective for connected compact groups, connected nilpotent groups, and $GL_n(\mathbb{C})$, but not in general.
 - Lie group homomorphisms differentiate to Lie algebra homomorphisms, and the differential functor is an equivalence between simply connected Lie groups and finite-dimensional real Lie algebras; Lie subalgebras correspond to connected immersed Lie subgroups, closed subgroups being embedded.

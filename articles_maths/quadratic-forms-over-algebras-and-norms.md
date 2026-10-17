@@ -85,10 +85,10 @@ Regarded over $\mathbb{C}$ itself, the form $x^2 + y^2 = (x + iy)(x - iy)$ facto
 
 ### Definition and Properties
 
-Let $\mathbb{H}$ be the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$. The conjugation ${}^{\natural}$ negates the vector part, and the **norm** is
+Let $\mathbb{H}$ be the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$. The conjugation ${}^{\natural}$ negates the vector part, and the **norm** is
 
 $$
-N(x) = x x^{\natural} = x_0^2 + x_1^2 + x_2^2 + x_3^2, \qquad x = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3.
+N(x) = x x^{\natural} = x_t^2 + x_x^2 + x_y^2 + x_z^2, \qquad x = x_t e_t + x_x \vec e_x + x_y \vec e_y + x_z \vec e_z.
 $$
 
 **Proposition.** The norm of $\mathbb{H}$ is positive definite and multiplicative, $N(xy) = N(x)N(y)$; hence $\mathbb{H}$ is a division algebra over $\mathbb{R}$.
@@ -97,27 +97,27 @@ $$
 
 ### The Quadric in Both Cases
 
-Over $\mathbb{R}$ the norm $x_0^2 + x_1^2 + x_2^2 + x_3^2$ is anisotropic and its real quadric is empty. Over $\mathbb{C}$ the quaternion algebra splits, $\mathbb{H}_{\mathbb{C}} \cong M_2(\mathbb{C})$, and the norm becomes $\sum_\mu z_\mu^2$.
+Over $\mathbb{R}$ the norm $x_t^2 + x_x^2 + x_y^2 + x_z^2$ is anisotropic and its real quadric is empty. Over $\mathbb{C}$ the quaternion algebra splits, $\mathbb{H}_{\mathbb{C}} \cong M_2(\mathbb{C})$, and the norm becomes $\sum_\mu z_\mu^2$.
 
-**Proposition.** Over $\mathbb{C}$ the quaternion norm $\sum_{\mu=0}^{3} z_\mu^2$ is isotropic, and its nonzero zeros form the quadric of rank-one $2 \times 2$ matrices, isomorphic to $\mathbb{P}^1 \times \mathbb{P}^1$.
+**Proposition.** Over $\mathbb{C}$ the quaternion norm $\sum_{\mu\in\{t,x,y,z\}} z_\mu^2$ is isotropic, and its nonzero zeros form the quadric of rank-one $2 \times 2$ matrices, isomorphic to $\mathbb{P}^1 \times \mathbb{P}^1$.
 
-**Proof.** The form is $z_0^2 + z_1^2 + z_2^2 + z_3^2 = (z_0 + iz_1)(z_0 - iz_1) + (z_2 + iz_3)(z_2 - iz_3)$ after collecting the pairs, and it vanishes at $(z_0, z_1, z_2, z_3) = (1, i, 0, 0)$; this shows isotropy. Under the identification $\mathbb{H}_{\mathbb{C}} \cong M_2(\mathbb{C})$ the norm is the determinant, so its zero locus consists of the singular matrices, of which the nonzero ones have rank one. A rank-one matrix is a product $uv^T$ with $0 \neq u, v \in \mathbb{C}^2$, determined up to $(u, v) \mapsto (\lambda u, \lambda^{-1}v)$, so the pair of lines $([u], [v])$ is well defined and the quadric is the image of $\mathbb{P}^1 \times \mathbb{P}^1$ under the Segre embedding.
+**Proof.** The form is $z_t^2 + z_x^2 + z_y^2 + z_z^2 = (z_t + iz_x)(z_t - iz_x) + (z_y + iz_z)(z_y - iz_z)$ after collecting the pairs, and it vanishes at $(z_t, z_x, z_y, z_z) = (1, i, 0, 0)$; this shows isotropy. Under the identification $\mathbb{H}_{\mathbb{C}} \cong M_2(\mathbb{C})$ the norm is the determinant, so its zero locus consists of the singular matrices, of which the nonzero ones have rank one. A rank-one matrix is a product $uv^T$ with $0 \neq u, v \in \mathbb{C}^2$, determined up to $(u, v) \mapsto (\lambda u, \lambda^{-1}v)$, so the pair of lines $([u], [v])$ is well defined and the quadric is the image of $\mathbb{P}^1 \times \mathbb{P}^1$ under the Segre embedding.
 
 ## The Norm of the Biquaternions
 
 ### Definition
 
-Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_0, e_1, e_2, e_3$ over $\mathbb{C}$, the conventions. The **norm** is
+Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_t, \vec e_x, \vec e_y, \vec e_z$ over $\mathbb{C}$, the conventions. The **norm** is
 
 $$
-\langle\tilde Q\rangle_{\natural} = \tilde Q \tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
+\langle\tilde Q\rangle_{\natural} = \tilde Q \tilde{Q}^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2, \qquad \tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu,
 $$
 
 a $\mathbb{C}$-valued form that is multiplicative, $\langle\tilde Q \tilde R\rangle_{\natural} = \langle\tilde Q\rangle_{\natural}\langle\tilde R\rangle_{\natural}$.
 
 **Proposition.** The norm of $\mathbb{B}$ is the reduced norm of the central simple algebra $\mathbb{B}$ of degree $2$; equivalently, under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ it is the determinant.
 
-**Proof.** The biquaternion algebra is central simple of degree $2$ over $\mathbb{C}$ and is split, $\mathbb{B} \cong M_2(\mathbb{C})$. Under an explicit isomorphism sending $e_1 \mapsto \operatorname{diag}(i, -i)$ and $e_2 \mapsto \begin{pmatrix}0 & 1\\ -1 & 0\end{pmatrix}$, the matrix of $\tilde Q$ is $\begin{pmatrix} Q_0 + iQ_1 & Q_2 + iQ_3 \\ -Q_2 + iQ_3 & Q_0 - iQ_1\end{pmatrix}$, whose determinant is $(Q_0 + iQ_1)(Q_0 - iQ_1) - (Q_2 + iQ_3)(-Q_2 + iQ_3) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. This is the reduced norm because the reduced norm of a split algebra of degree $2$ is the determinant.
+**Proof.** The biquaternion algebra is central simple of degree $2$ over $\mathbb{C}$ and is split, $\mathbb{B} \cong M_2(\mathbb{C})$. Under an explicit isomorphism sending $\vec e_x \mapsto \operatorname{diag}(i, -i)$ and $\vec e_y \mapsto \begin{pmatrix}0 & 1\\ -1 & 0\end{pmatrix}$, the matrix of $\tilde Q$ is $\begin{pmatrix} Q_t + iQ_x & Q_y + iQ_z \\ -Q_y + iQ_z & Q_t - iQ_x\end{pmatrix}$, whose determinant is $(Q_t + iQ_x)(Q_t - iQ_x) - (Q_y + iQ_z)(-Q_y + iQ_z) = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$. This is the reduced norm because the reduced norm of a split algebra of degree $2$ is the determinant.
 
 ### The Quadric and the Zero Divisors
 
@@ -161,7 +161,7 @@ The multiplicativity of $N'$ is the classical statement of the doubling, verifie
 
 ### The Octonions
 
-**Definition.** The **octonions** are the double $\mathbb{O} = \mathbb{H} \oplus \mathbb{H}$ of the quaternions, of dimension $8$ over $\mathbb{R}$. Writing an element as $(a, b)$ with $a = x_0 + x_1e_1 + x_2e_2 + x_3e_3$ and $b = x_4 + x_5e_1 + x_6e_2 + x_7e_3$ in the quaternion basis, the norm is
+**Definition.** The **octonions** are the double $\mathbb{O} = \mathbb{H} \oplus \mathbb{H}$ of the quaternions, of dimension $8$ over $\mathbb{R}$. Writing an element as $(a, b)$ with $a = x_0 + x_1\vec e_x + x_2\vec e_y + x_3\vec e_z$ and $b = x_4 + x_5\vec e_x + x_6\vec e_y + x_7\vec e_z$ in the quaternion basis, the norm is
 
 $$
 N(a, b) = N(a) + N(b) = x_0^2 + x_1^2 + \cdots + x_7^2,
@@ -172,10 +172,10 @@ so the norm of the octonions is the sum of eight squares, positive definite and 
 **Proposition.** The octonions are not associative; for the basis elements of the doubling one has
 
 $$
-(e_1e_2)e_4 \neq e_1(e_2e_4).
+(\vec e_x \vec e_y)e_4 \neq \vec e_x(\vec e_y e_4).
 $$
 
-**Proof.** The basis is that of the recursive construction, with $e_1, e_2, e_3$ the quaternion units and $e_4 = (0, 1)$ the new generator of the doubling ($e_4^2 = -1$); the two products are computed from the multiplication formula and differ by a sign.
+**Proof.** The basis is that of the recursive construction, with $\vec e_x, \vec e_y, \vec e_z$ the quaternion units and $e_4 = (0, 1)$ the new generator of the doubling ($e_4^2 = -1$); the two products are computed from the multiplication formula and differ by a sign.
 
 Non-associativity is thus a phenomenon of dimension $8$: the octonions are a division algebra, in which every nonzero element is invertible with inverse $x^{\natural}/N(x)$, and the elements of norm $1$ are closed under multiplication, but they form only a loop, not a group, because the associative law fails. The two-square, four-square and eight-square identities of the next section are the coordinate forms of the multiplicativity of the norms of $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$.
 
@@ -272,7 +272,7 @@ $$
 \Bigl(\sum_{k=1}^{4} x_k^2\Bigr)\Bigl(\sum_{k=1}^{4} y_k^2\Bigr) = \sum_{k=1}^{4} z_k^2,
 $$
 
-where $z = (x_1 + x_2e_1 + x_3e_2 + x_4e_3)(y_1 + y_2e_1 + y_3e_2 + y_4e_3)$ is the quaternion product; the coordinates $z_k$ of the product are the right-hand side.
+where $z = (x_1 + x_2\vec e_x + x_3\vec e_y + x_4\vec e_z)(y_1 + y_2\vec e_x + y_3\vec e_y + y_4\vec e_z)$ is the quaternion product; the coordinates $z_k$ of the product are the right-hand side.
 
 **Proof.** This is multiplicativity of the quaternion norm in coordinates, with $N(x) = \sum_k x_k^2$ by the formula above.
 
@@ -290,9 +290,9 @@ where $z = (x_1 + x_2e_1 + x_3e_2 + x_4e_3)(y_1 + y_2e_1 + y_3e_2 + y_4e_3)$ is 
 
 A **quadratic form with values in a commutative algebra** $A$ is a function $Q : V \to A$ that is homogeneous of degree two and whose polar form $B_Q(x, y) = \tfrac{1}{2}(\mathfrak{Q}(x+y) - \mathfrak{Q}(x) - \mathfrak{Q}(y))$ is $A$-bilinear. Expanding in a basis of $A$ produces scalar forms whose common zero locus is the **quadric** $\mathcal{Q}(Q) \subseteq \mathbb{P}(V)$.
 
-The **norm** $N(x) = x x^{\natural}$ of an algebra with involution is the central example. For a quadratic field extension $K = F(\sqrt d)$ it is $a^2 - db^2$, anisotropic exactly when $K$ is a field; for a separable extension of degree $n > 2$ it is a form of degree $n$, hence not quadratic. For the complex numbers it is $x^2 + y^2$, positive definite and anisotropic over $\mathbb{R}$ and isotropic over $\mathbb{C}$. For the quaternions it is $x_0^2 + x_1^2 + x_2^2 + x_3^2$, positive definite and multiplicative, making $\mathbb{H}$ a division algebra; over $\mathbb{C}$ the quaternion algebra splits and this form becomes the determinant on $M_2(\mathbb{C})$, whose nonzero zeros are the rank-one matrices and whose quadric is the Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1$. For the biquaternions the norm is $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$, the reduced norm, equal to the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$; it is isotropic and its nonzero zeros are the zero divisors. The norms of the quadratic extension and of the quaternions give the complex and quaternion composition laws $N(xy) = N(x)N(y)$, hence the two-square and four-square identities, and **Hurwitz's theorem** states that a composition algebra has dimension $1, 2, 4$ or $8$, the four anisotropic real cases being $\mathbb{R}, \mathbb{C}, \mathbb{H}$ and the octonions.
+The **norm** $N(x) = x x^{\natural}$ of an algebra with involution is the central example. For a quadratic field extension $K = F(\sqrt d)$ it is $a^2 - db^2$, anisotropic exactly when $K$ is a field; for a separable extension of degree $n > 2$ it is a form of degree $n$, hence not quadratic. For the complex numbers it is $x^2 + y^2$, positive definite and anisotropic over $\mathbb{R}$ and isotropic over $\mathbb{C}$. For the quaternions it is $x_t^2 + x_x^2 + x_y^2 + x_z^2$, positive definite and multiplicative, making $\mathbb{H}$ a division algebra; over $\mathbb{C}$ the quaternion algebra splits and this form becomes the determinant on $M_2(\mathbb{C})$, whose nonzero zeros are the rank-one matrices and whose quadric is the Segre quadric $\mathbb{P}^1 \times \mathbb{P}^1$. For the biquaternions the norm is $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2$, the reduced norm, equal to the determinant under $\mathbb{B} \cong M_2(\mathbb{C})$; it is isotropic and its nonzero zeros are the zero divisors. The norms of the quadratic extension and of the quaternions give the complex and quaternion composition laws $N(xy) = N(x)N(y)$, hence the two-square and four-square identities, and **Hurwitz's theorem** states that a composition algebra has dimension $1, 2, 4$ or $8$, the four anisotropic real cases being $\mathbb{R}, \mathbb{C}, \mathbb{H}$ and the octonions.
 
-The recursion behind that list is the **Cayley–Dickson doubling**: on $A' = A \oplus A$ with $(a,b)(c,d) = (ac - d^{\natural}b, da + bc^{\natural})$ and $\overline{(a,b)} = (a^{\natural}, -b)$, the norm $N'(a,b) = N(a) + N(b)$ is multiplicative whenever $A$ is an associative composition algebra, and the dimension doubles. Starting from $\mathbb{R}$ this yields $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$, whose norm is the sum of eight squares; the double is associative exactly when the algebra doubled is associative and commutative, so associativity survives the first two steps and fails at $\mathbb{H} \to \mathbb{O}$, where $(e_1e_2)e_4 \neq e_1(e_2e_4)$. Replacing the new generator of square $-1$ by one of square $+1$ produces the split composition algebras, and over $\mathbb{R}$ there are exactly two composition algebras in each of the dimensions $2$, $4$ and $8$, one anisotropic and one split.
+The recursion behind that list is the **Cayley–Dickson doubling**: on $A' = A \oplus A$ with $(a,b)(c,d) = (ac - d^{\natural}b, da + bc^{\natural})$ and $\overline{(a,b)} = (a^{\natural}, -b)$, the norm $N'(a,b) = N(a) + N(b)$ is multiplicative whenever $A$ is an associative composition algebra, and the dimension doubles. Starting from $\mathbb{R}$ this yields $\mathbb{C}$, $\mathbb{H}$ and the octonions $\mathbb{O}$, whose norm is the sum of eight squares; the double is associative exactly when the algebra doubled is associative and commutative, so associativity survives the first two steps and fails at $\mathbb{H} \to \mathbb{O}$, where $(\vec e_x \vec e_y)e_4 \neq \vec e_x(\vec e_y e_4)$. Replacing the new generator of square $-1$ by one of square $+1$ produces the split composition algebras, and over $\mathbb{R}$ there are exactly two composition algebras in each of the dimensions $2$, $4$ and $8$, one anisotropic and one split.
 
 The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu d^{\natural}b, da + b c^{\natural})$ and norm $N_\mu = N \perp (-\mu)N$, so that the parameter is appended to the Pfister form: if $N \cong \langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ then $N_\mu \cong \langle\!\langle a_1, \ldots, a_n, \mu\rangle\!\rangle$. Iterating with $\mu = -1$ gives $\mathbb{C}, \mathbb{H}, \mathbb{O}$ with positive definite norms $\langle\!\langle -1\rangle\!\rangle = \langle 1,1\rangle$, $\langle\!\langle -1,-1\rangle\!\rangle$ and $\langle\!\langle -1,-1,-1\rangle\!\rangle$, while iterating with $\mu = +1$ gives the split complex numbers $\mathbb{D}$, the split quaternions $M_2(\mathbb{R})$ and the split octonions, with isotropic norms from dimension $2$ onwards. **The classification of the composition algebras** states that the composition algebras of dimension at least $2$ are the separable quadratic algebras, the quaternion algebras and the octonion algebras, and that such an algebra is determined up to isomorphism by its norm, the possible norms being exactly the Pfister forms of dimension $2, 4, 8$.
 
@@ -311,7 +311,7 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu d^{\natu
 | $K = F(\sqrt d)$ | Separable quadratic extension |
 | $B_N$ | Polar form of the norm, $B_N(x,y) = \tfrac12(N(x+y)-N(x)-N(y))$ |
 | ${}^{\natural}$ | Conjugation on $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central complex unit, $i^2 = -1$, in $\mathbb{B}$ |
 | $j$ | Split unit, $j^2 = +1$, in $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ |
 | $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{B}, \mathbb{D}, \mathbb{D}'$ | Real, complex, quaternion, biquaternion, split complex, dual numbers |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric quaternionic product is the operation $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$
+The symmetric quaternionic product is the operation $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$
 of *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, the quaternion form placed
 on the scalar line. A scalar-valued operation has no room for a mystery in its equations: the
 product $\tilde p\star\tilde q$ vanishes exactly when its coefficient vanishes. This article reads
@@ -11,15 +11,15 @@ definition of the **zero divisor**, of the **annihilator** and of the **regular 
 general one of *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, and the criterion is the
 only computation of the article; everything after it is a reading of the criterion.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The
-**quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_kq_k\vec e_k$. The
+**quaternion conjugation** is $\tilde q^{\natural}=q_te_t-\vec q$; the bar is the identity, the
 star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ and
+$N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ and
 the **plain form** is
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$. The
+$B(\tilde p,\tilde q)=p_0q_t-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$. The
 **symmetric quaternionic product** is
-$\tilde p\star\tilde q=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_0$.
+$\tilde p\star\tilde q=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_t$.
 
 Throughout, a **zero divisor** of the block is an element $\tilde a\neq0$ for which there is
 $\tilde b\neq0$ with $\tilde a\star\tilde b=0$ or $\tilde b\star\tilde a=0$; the block is
@@ -36,8 +36,8 @@ $$
 \tilde p\star\tilde q=0\quad\Longleftrightarrow\quad N(\tilde p,\tilde q)=0 .
 $$
 
-*Proof.* The product is $N(\tilde p,\tilde q)e_0$ by the governing formula of *Introduction to the
-Symmetric Quaternionic Algebra of Quaternions*, and a real multiple of $e_0$ vanishes exactly when
+*Proof.* The product is $N(\tilde p,\tilde q)e_t$ by the governing formula of *Introduction to the
+Symmetric Quaternionic Algebra of Quaternions*, and a real multiple of $e_t$ vanishes exactly when
 the real coefficient does.
 
 **The annihilator.** The left and the right annihilator of an element coincide, and they are the
@@ -54,7 +54,7 @@ rank of the operator and the reading on the remarkable subspaces are the compani
 the criterion kills $\tilde p\star\tilde q$ for a suitable $\tilde q$ even when
 $\tilde p\star\tilde p\neq0$. The block therefore separates two things that coincide in many
 algebras: the vanishing of a *square* and the vanishing of a *product*, and the separation is the
-whole point of this article. The square $\tilde p\star\tilde p=N(\tilde p,\tilde p)e_0$ never
+whole point of this article. The square $\tilde p\star\tilde p=N(\tilde p,\tilde p)e_t$ never
 vanishes off $0$, because the form is definite; the products vanish on a large set, because a
 definite form still pairs an element with many others to zero.
 
@@ -64,20 +64,20 @@ definite form still pairs an element with many others to zero.
 $\tilde p\star\tilde q=0$ form the quadric
 
 $$
-\{(\tilde p,\tilde q)\in\mathbb{H}\times\mathbb{H}:p_0q_0+\vec p\cdot\vec q=0\},
+\{(\tilde p,\tilde q)\in\mathbb{H}\times\mathbb{H}:p_0q_t+\vec p\cdot\vec q=0\},
 $$
 
 a real hypersurface of $\mathbb{H}\times\mathbb{H}\cong\mathbb{R}^8$ of real dimension $7$. In
 terms of the scalar and vector parts the pairs fall into three families:
 
-- **both pure**, $p_0=q_0=0$: then $\vec p\cdot\vec q=0$, so the two vector parts are perpendicular;
-- **exactly one pure**, say $p_0=0\ne q_0$: then $\vec p\cdot\vec q=0$, the scalar coordinate $q_0$ being free and the vector part $\vec q$ constrained to the plane perpendicular to $\vec p$;
-- **both nonpure**, $p_0q_0\ne0$: then $q_0=-\dfrac{\vec p\cdot\vec q}{p_0}$, the **scalar compensation** that offsets the pairing of the vector parts.
+- **both pure**, $p_0=q_t=0$: then $\vec p\cdot\vec q=0$, so the two vector parts are perpendicular;
+- **exactly one pure**, say $p_0=0\ne q_t$: then $\vec p\cdot\vec q=0$, the scalar coordinate $q_t$ being free and the vector part $\vec q$ constrained to the plane perpendicular to $\vec p$;
+- **both nonpure**, $p_0q_t\ne0$: then $q_t=-\dfrac{\vec p\cdot\vec q}{p_0}$, the **scalar compensation** that offsets the pairing of the vector parts.
 
-*Proof.* The quadric is the zero set of the polynomial $p_0q_0+\vec p\cdot\vec q$, which is
+*Proof.* The quadric is the zero set of the polynomial $p_0q_t+\vec p\cdot\vec q$, which is
 not identically zero, so the set is a hypersurface of the eight-dimensional product; the three
 families are the splitting of the equation according to which scalar coordinates vanish, and the
-display of the third family is the equation solved for $q_0$.
+display of the third family is the equation solved for $q_t$.
 
 ## The Zero-Divisor Set
 
@@ -106,9 +106,9 @@ block, and it is the reason the article separates the zero-divisor set from the 
 first is everything nonzero, the second is only the origin.
 
 **Remark (a witness, and the contrast with the plain block).** The pair
-$(\tilde p,\tilde q)=(e_0,e_1)$ gives $e_0\star e_1=N(e_0,e_1)e_0=0$ with $e_1\neq0$, so $e_0$ is a
+$(\tilde p,\tilde q)=(e_t,\vec e_x)$ gives $e_t\star \vec e_x=N(e_t,\vec e_x)e_t=0$ with $\vec e_x\neq0$, so $e_t$ is a
 zero divisor of the block. In the symmetric plain algebra the same element is a unit,
-$e_0\bullet\tilde q=\tilde q$, and is not a zero divisor (*Zero Divisors of the Symmetric Plain
+$e_t\bullet\tilde q=\tilde q$, and is not a zero divisor (*Zero Divisors of the Symmetric Plain
 Algebra*): the two scalar-valued-looking blocks of the six behave oppositely at the unit.
 
 ## The Relation to the Isotropic Elements
@@ -120,9 +120,9 @@ $$
 N(\tilde p,\tilde q)=B(\tilde p,\tilde q^{\natural})=\mathrm{Sc}\bigl(\tilde p\,\tilde q^{\natural}\bigr).
 $$
 
-*Proof.* Since $\tilde q^{\natural}=q_0e_0-\vec q$, the product $\tilde p\tilde q^{\natural}$
+*Proof.* Since $\tilde q^{\natural}=q_te_t-\vec q$, the product $\tilde p\tilde q^{\natural}$
 has scalar part
-$p_0q_0-\vec p\cdot(-\vec q)=p_0q_0+\vec p\cdot\vec q=N(\tilde p,\tilde q)$, and
+$p_0q_t-\vec p\cdot(-\vec q)=p_0q_t+\vec p\cdot\vec q=N(\tilde p,\tilde q)$, and
 $\mathrm{Sc}(\tilde p\tilde q^{\natural})=B(\tilde p,\tilde q^{\natural})$ by the definition of the
 plain form.
 
@@ -133,7 +133,7 @@ the **plain form**, evaluated at $\tilde p$ and the conjugate of $\tilde q$.
 *Proof.* Compose the theorem of §*The Criterion* with the proposition.
 
 Now the plain form $B$ is indefinite of signature $(1,3)$, and its isotropic elements are the
-nonzero solutions of $B(\tilde q,\tilde q)=q_0^{2}-|\vec q|^{2}=0$, the cone of real dimension
+nonzero solutions of $B(\tilde q,\tilde q)=q_t^{2}-|\vec q|^{2}=0$, the cone of real dimension
 $3$ with two families (*The 2 Forms over the Quaternioid $\mathbb{R}$ Space*). The quaternion form
 $N$ is definite, and its only isotropic element is $0$. The block's zero-divisor pairs are the
 pairs that the plain form kills at $\tilde q^{\natural}$, a much larger class than the isotropic
@@ -168,13 +168,13 @@ so the same division property gives $\tilde q=0$.
 exactly the nonzero pure quaternions.
 
 *Proof.* Write
-$\tilde p\bullet\tilde q=(p_0q_0-\vec p\cdot\vec q)e_0+p_0\vec q+q_0\vec p$. If both
-elements are pure, the value is $-(\vec p\cdot\vec q)e_0$, which vanishes exactly when
-$\vec p\cdot\vec q=0$. If exactly one is pure, say $p_0=0\ne q_0$, the vector part is
-$q_0\vec p$, which vanishes only for $\vec p=0$; so no such pair is a zero-divisor pair. If
-both are nonpure, the vector part $p_0\vec q+q_0\vec p$ forces
-$\vec q=-(q_0/p_0)\vec p$, and the scalar part $p_0q_0-\vec p\cdot\vec q=0$ then reads
-$p_0q_0+(q_0/p_0)|\vec p|^{2}=0$, that is $q_0\bigl(p_0^{2}+|\vec p|^{2}\bigr)/p_0=0$, which
+$\tilde p\bullet\tilde q=(p_0q_t-\vec p\cdot\vec q)e_t+p_0\vec q+q_t\vec p$. If both
+elements are pure, the value is $-(\vec p\cdot\vec q)e_t$, which vanishes exactly when
+$\vec p\cdot\vec q=0$. If exactly one is pure, say $p_0=0\ne q_t$, the vector part is
+$q_t\vec p$, which vanishes only for $\vec p=0$; so no such pair is a zero-divisor pair. If
+both are nonpure, the vector part $p_0\vec q+q_t\vec p$ forces
+$\vec q=-(q_t/p_0)\vec p$, and the scalar part $p_0q_t-\vec p\cdot\vec q=0$ then reads
+$p_0q_t+(q_t/p_0)|\vec p|^{2}=0$, that is $q_t\bigl(p_0^{2}+|\vec p|^{2}\bigr)/p_0=0$, which
 forces $\tilde p=0$, a contradiction. So the zero-divisor pairs have both factors pure and
 perpendicular vector parts, and a pure element is a zero divisor exactly when it is nonzero.
 
@@ -224,9 +224,9 @@ structure has only the nonzero pure quaternions, and the two general structures 
 
 | symbol | meaning |
 |---|---|
-| $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ | the symmetric quaternionic product |
-| $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, definite |
-| $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite |
+| $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$ | the symmetric quaternionic product |
+| $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, definite |
+| $B(\tilde p,\tilde q)=p_0q_t-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite |
 | $\mathrm{Ann}(\tilde a)=\tilde a^{\perp}$ | the annihilator, a hyperplane of real dimension $3$ for $\tilde a\neq0$ |
 | $\{N=0\}$ | the quadric of zero-divisor pairs, real dimension $7$ |
 | $N(\tilde p,\tilde q)=B(\tilde p,\tilde q^{\natural})$ | the bridge between the criterion and the plain form |

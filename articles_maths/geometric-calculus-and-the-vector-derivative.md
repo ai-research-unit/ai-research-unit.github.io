@@ -19,16 +19,16 @@ $$
 \partial F=\sum_{i=1}^{n}e^i\,\frac{\partial F}{\partial x^i},
 $$
 
-and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x^i}e^i$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an overdot, as in $\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B$; the bracket convention is explained in the remark below.
+and the derivative from the right is $F\partial=\sum_i\frac{\partial F}{\partial x^i}e^i$. The operator $\partial$ acts on the function to its right, and the factor it differentiates is marked with an underline, as in $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$; the bracket convention is explained in the remark below.
 
-**Proposition.** The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial_i$.
+**Proposition.** The vector derivative is independent of the basis used in its definition, and the two sides agree when the basis is orthonormal: $\partial=\sum_ie_i\partial/\partial x^i$.
 
 **Proof.** A change of basis changes both the reciprocal vectors and the coordinates in the compensating way, and the identity $B(e^i,e_j)=\delta^i_j$ is the definition of reciprocity; for an orthonormal basis the reciprocal basis is the basis itself.
 
-**Example (the derivative of the position vector).** Let $x=\sum_ix^ie_i$, so that $\partial_i x=e_i$. Then
+**Example (the derivative of the position vector).** Let $x=\sum_ix^ie_i$, so that $\partial/\partial x^i x=e_i$. Then
 
 $$
-\partial x=\sum_i\exp(i)\partial_ix=\sum_i\exp(i)e_i=n,
+\partial x=\sum_i\exp(i)\partial/\partial x^i\,x=\sum_i\exp(i)e_i=n,
 $$
 
 the dimension of the space; the derivative of the position vector is the dimension, which is the Clifford form of the statement that the divergence of the position field is the dimension.
@@ -48,14 +48,14 @@ where $\partial\cdot F$ is the divergence of the field, a scalar-valued function
 **Theorem (the Leibniz rule).** For smooth functions $A$ and $B$,
 
 $$
-\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B,
+\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B,
 $$
 
-where the dots indicate the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands.
+where the underlines indicate the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands.
 
-**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial_i(AB)=\partial_iA\,B+A\,\partial_iB$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the dots keeping track of which factor each differentiation acts upon.
+**Proof.** Differentiating the product in a coordinate and multiplying by the reciprocal vector gives $\partial/\partial x^i\,(AB)=\partial/\partial x^i\,A\,B+A\,\partial/\partial x^i\,B$; multiplying by $e^i$ on the left and using the associativity of the geometric product gives the statement, the underlines keeping track of which factor each differentiation acts upon.
 
-**Remark (the bracket convention).** The overdot records both the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands: in the second term $\dot A\dot\partial B$ the derivative acts on $B$ and the vector factor it produces stands where $A$ stands, which is what the expansion of $\partial(AB)$ in a coordinate basis produces. With this convention the Leibniz rule above is an identity and not a convention.
+**Remark (the bracket convention).** The underline records both the factor to which the derivative is applied and the place at which the vector factor of the differentiation stands: in the second term $\underline{A}\underline{\partial} B$ the derivative acts on $B$ and the vector factor it produces stands where $A$ stands, which is what the expansion of $\partial(AB)$ in a coordinate basis produces. With this convention the Leibniz rule above is an identity and not a convention.
 
 ## The Fundamental Theorem
 
@@ -64,7 +64,7 @@ where the dots indicate the factor to which the derivative is applied and the pl
 **Theorem (the fundamental theorem of geometric calculus).** Let $M$ be a compact region with smooth boundary and let $F$ be a smooth multivector-valued function on a neighbourhood of $M$. Then
 
 $$
-\int_M \dot\partial F\,dV=\int_{\partial M}dS\,F,
+\int_M \underline{\partial} F\,dV=\int_{\partial M}dS\,F,
 $$
 
 where $dV$ is the volume element of the region and $dS$ is the directed boundary element, a vector $(n)\,|dS|$ with $n$ the outward unit normal and $|dS|$ the scalar element of area.
@@ -79,7 +79,7 @@ $$
 \int_{\partial M}dS\cdot F=\int_M\partial\cdot F\,dV .
 $$
 
-**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the scalar part of both sides. On the left, $dS F=dS\cdot F+dS\wedge F$ and the scalar part is $dS\cdot F$; on the right, $\dot\partial F=\partial\cdot F+\partial\wedge F$ and the scalar part is $\partial\cdot F$.
+**Proof.** Apply the fundamental theorem to the vector-valued $F$ and take the scalar part of both sides. On the left, $dS F=dS\cdot F+dS\wedge F$ and the scalar part is $dS\cdot F$; on the right, $\underline{\partial} F=\partial\cdot F+\partial\wedge F$ and the scalar part is $\partial\cdot F$.
 
 **Theorem (Stokes).** For a vector-valued function $F$,
 
@@ -113,7 +113,7 @@ $$
 
 in the positive definite case and with orthonormal coordinates; hence every monogenic function is harmonic, in every component.
 
-**Proof.** $\partial^2=\bigl(\sum_i\exp(i)\partial_i\bigr)\bigl(\sum_j\exp(j)\partial_j\bigr)=\sum_{i,j}e^ie^j\partial_i\partial_j=\sum_i\partial_i^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\partial_i^2=\partial_i^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
+**Proof.** $\partial^2=\bigl(\sum_i\exp(i)\partial/\partial x^i\bigr)\bigl(\sum_j\exp(j)\partial/\partial x^j\bigr)=\sum_{i,j}e^ie^j\,\partial^2/\partial x^i\partial x^j=\sum_i\partial^2/\partial (x^i)^2$, because the mixed terms with $i\neq j$ cancel in pairs, $e^ie^j+\exp(j)e^i=2B(e^i,\exp(j))=0$ for the orthonormal reciprocal basis of a diagonal form, while the equal-index terms contribute $e^i\exp(i)\,\partial^2/\partial (x^i)^2=\partial^2/\partial (x^i)^2$. A monogenic $F$ has $\Delta F=\partial(\partial F)=0$.
 
 **Remark.** The converse fails: a harmonic function need not be monogenic, exactly as a harmonic function of two variables need not be holomorphic. The monogenic functions form a much smaller class, and the theory of that class, with the Cauchy integral formula, the Fischer decomposition and the function theory of the Clifford algebras, is the subject of *Clifford Analysis* and of *Clifford Modules and the Twisted Cauchy–Riemann Operator*, where the results are developed.
 
@@ -169,12 +169,12 @@ with $F$ a bivector-valued field and $J$ a vector-valued current encodes the fou
 
 ## Summary
 
-The **vector derivative** is the operator $\partial=\sum_i\exp(i)\partial_{x^i}$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial_i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
+The **vector derivative** is the operator $\partial=\sum_i\exp(i)\partial/\partial x^i$, where the $e^i$ are the reciprocal basis vectors; it is basis independent and equals $\sum_ie_i\partial/\partial x^i$ in an orthonormal basis. Applied to the position vector it gives the dimension of the space, $\partial x=n$, and applied to a vector-valued function it splits into the divergence and the curl, $\partial F=\partial\cdot F+\partial\wedge F$. Its Leibniz rule is $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ with the bracket notation recording which factor is differentiated, and it squares to the Laplacian, so that the monogenic functions, those with $\partial F=0$, are harmonic; the converse fails and the theory of the monogenic functions with its integral formula is Clifford analysis.
 
 The **fundamental theorem of geometric calculus** is
 
 $$
-\int_M\dot\partial F\,dV=\int_{\partial M}dS\,F,
+\int_M\underline{\partial} F\,dV=\int_{\partial M}dS\,F,
 $$
 
 the integral of the derivative of a multivector-valued function over a region equalling the integral of the function over the directed boundary. Its scalar part for a vector-valued $F$ is the divergence theorem of Gauss, $\int_{\partial M}dS\cdot F=\int_M\partial\cdot F\,dV$; its bivector part is Stokes' theorem, $\int_{\partial M}dS\wedge F=\int_M\partial\wedge F\,dV$; and in one dimension it is the fundamental theorem of calculus. In the plane, with the identification of the plane with the complex numbers, the equation $\partial F=0$ is the Cauchy–Riemann equation and the theorem is Cauchy's integral theorem. The wedge part of the vector derivative is the exterior derivative and the contraction part is the codifferential, so that $d\delta+\delta d=\Delta$; the Dirac-type equation $(\partial+m)\psi=0$ and the Maxwell-type equation $\partial F=J$ in Lorentzian signature are the two one-line forms of the equations of mathematical physics, and the four components of each are the four grades of a single equation.
@@ -184,13 +184,13 @@ the integral of the derivative of a multivector-valued function over a region eq
 | Symbol | Meaning |
 |---|---|
 | $e^i$, $B(e^i,e_j)=\delta^i_j$ | Reciprocal basis |
-| $\partial F=\sum_i\exp(i)\partial_iF$ | Vector derivative, acting on the right |
+| $\partial F=\sum_i\exp(i)\partial/\partial x^i\,F$ | Vector derivative, acting on the right |
 | $F\partial$ | Derivative from the right |
 | $\partial x=n$ | Derivative of the position vector |
 | $\partial\cdot F$, $\partial\wedge F$ | Divergence and curl of a vector field |
-| $\dot\partial(AB)=\dot\partial A\,B+\dot A\dot\partial B$ | Leibniz rule with the bracket convention |
+| $\underline{\partial}(AB)=\underline{\partial} A\,B+\underline{A}\underline{\partial} B$ | Leibniz rule with the bracket convention |
 | $dV$, $dS=n\,|dS|$ | Volume element and directed boundary element |
-| $\int_M\dot\partial F\,dV=\int_{\partial M}dS\,F$ | Fundamental theorem |
+| $\int_M\underline{\partial} F\,dV=\int_{\partial M}dS\,F$ | Fundamental theorem |
 | $\partial^2=\Delta$ | Square of the vector derivative |
 | $\partial F=0$ | Monogenic functions |
 | $d$, $\delta$ | Exterior derivative and codifferential |

@@ -3330,7 +3330,7 @@
 <!-- the analysis of functions with values in a Clifford algebra; the Dirac operator and monogenic functions; the Cauchy integral formula; the relation to the Clifford algebras of Part II; the monogenic, polymonogenic and shifted theories; the Hermitean refinement, with the four Hermitean Dirac operators, the simultaneous null solutions and the circulant matrix of Cauchy kernels; the measure-theoretic boundary theory, with the Federer normal, the Cauchy and Hilbert transforms on Ahlfors–David regular surfaces, the Plemelj calculus and the complementary projections, the removable singularities, and the $d$-summable fractal boundaries on which the transform is rebuilt from the Teodorescu transform and a Whitney extension, with the approximate dimension in the solvability condition. -->
 
 <a href="articles_maths/geometric-calculus-and-the-vector-derivative.html">Geometric Calculus and the Vector Derivative</a>
-<!-- the vector derivative $\partial=\sum_ie^i\partial_i$ and the reciprocal basis; $\partial x=n$; the split $\partial F=\partial\cdot F+\partial\wedge F$ into divergence and curl; the Leibniz rule with the bracket convention; the fundamental theorem $\int_M\dot\partial F\,dV=\int_{\partial M}dS\,F$ and its grades, Gauss, Stokes and the fundamental theorem of calculus; $\partial^2=\Delta$ and the monogenic functions; the Green's function and the Cauchy integral formula; the exterior derivative and the codifferential; the Dirac-type and Maxwell-type equations. -->
+<!-- the vector derivative $\partial=\sum_ie^i\partial_i$ and the reciprocal basis; $\partial x=n$; the split $\partial F=\partial\cdot F+\partial\wedge F$ into divergence and curl; the Leibniz rule with the bracket convention; the fundamental theorem $\int_M\underline{\partial}F\,dV=\int_{\partial M}dS\,F$ and its grades, Gauss, Stokes and the fundamental theorem of calculus; $\partial^2=\Delta$ and the monogenic functions; the Green's function and the Cauchy integral formula; the exterior derivative and the codifferential; the Dirac-type and Maxwell-type equations. -->
 
 <a href="articles_maths/clifford-modules-and-the-twisted-cauchy-riemann-operator.html">Clifford Modules and the Twisted Cauchy–Riemann Operator</a>
 <!-- Clifford modules and their structure; the spinor module; the twisted Cauchy–Riemann operator acting on a Clifford module; the resulting elliptic complex and the computation of its index. -->
@@ -3630,7 +3630,7 @@
 <!-- the fundamental variation identity; the first theorem, a rigid symmetry, its current and charge, with translation, Lorentz and internal $U(1)$ as examples; the second theorem, a local symmetry with arbitrary functions and the differential identity among the Euler–Lagrange expressions, valid off shell; the equations are not independent and a gauge condition is needed; the Maxwell identity and the conservation of the source as an integrability condition; a Stueckelberg-type field whose local symmetry contains a rigid subgroup; the counting of conservation laws against identities; the Hamiltonian form; and Weyl's naming of symmetries of the first and second kind. -->
 
 <a href="articles_maths/optimal-control-and-the-pontryagin-maximum-principle.html">Optimal Control and the Pontryagin Maximum Principle</a>
-<!-- the optimal control problem: a state obeying a controlled differential equation, a running cost and a terminal cost, and the minimisation of the cost over the admissible controls; the relation to the calculus of variations and the state equation as a non-holonomic constraint with the costate as its multiplier; the control Hamiltonian $\langle p,f\rangle+L$ and the Pontryagin maximum principle, with the state and costate equations, the pointwise minimisation of the Hamiltonian, the transversality condition $p(T)=\varphi_x(x(T))$ for a free final state and the condition $H(T)=0$ for a free final time; the derivation from the Lagrange multiplier rule and the role of the needle variation; the conservation of the Hamiltonian for an autonomous problem and the costate as the sensitivity of the optimal cost; the linear-quadratic regulator, the matrix Riccati equation $\dot S=-C-A^{\mathsf T}S-SA+SBD^{-1}B^{\mathsf T}S$, the scalar instance $S=\tanh(T-t)$ and the finite escape of the Riccati solution; the time-optimal problem of the double integrator, the bang-bang principle, the switching curve $\sigma=x_1+\tfrac12x_2\lvert x_2\rvert$ and the singular arc; the value function, Bellman's principle, the Hamilton–Jacobi–Bellman equation and the verification theorem; the identity $p=V_x$ and the characteristic passage between the maximum principle and the Bellman equation; sufficiency under convexity; the relation to the Riccati equation of the integrable systems of this part. -->
+<!-- the optimal control problem: a state obeying a controlled differential equation, a running cost and a terminal cost, and the minimisation of the cost over the admissible controls; the relation to the calculus of variations and the state equation as a non-holonomic constraint with the costate as its multiplier; the control Hamiltonian $\langle p,f\rangle+L$ and the Pontryagin maximum principle, with the state and costate equations, the pointwise minimisation of the Hamiltonian, the transversality condition $p(T)=\varphi_x(x(T))$ for a free final state and the condition $H(T)=0$ for a free final time; the derivation from the Lagrange multiplier rule and the role of the needle variation; the conservation of the Hamiltonian for an autonomous problem and the costate as the sensitivity of the optimal cost; the linear-quadratic regulator, the matrix Riccati equation $dS/dt=-C-A^{\mathsf T}S-SA+SBD^{-1}B^{\mathsf T}S$, the scalar instance $S=\tanh(T-t)$ and the finite escape of the Riccati solution; the time-optimal problem of the double integrator, the bang-bang principle, the switching curve $\sigma=x_1+\tfrac12x_2\lvert x_2\rvert$ and the singular arc; the value function, Bellman's principle, the Hamilton–Jacobi–Bellman equation and the verification theorem; the identity $p=V_x$ and the characteristic passage between the maximum principle and the Bellman equation; sufficiency under convexity; the relation to the Riccati equation of the integrable systems of this part. -->
 
 <a href="articles_maths/minimal-surfaces.html">Minimal Surfaces</a>
 <!-- minimal surfaces and the variational problem they solve; the relation to the calculus of variations of this part and to the geometric measure theory of Part IV. -->
@@ -3645,7 +3645,7 @@
 <!-- solitons and their properties; the inverse scattering transform; the relation to the integrable systems of this part. -->
 
 <a href="articles_maths/lagrangian-and-hamiltonian-systems.html">Lagrangian and Hamiltonian Systems</a>
-<!-- Hamiltonian systems and their properties; the symplectic form; the relation to the symplectic geometry of Part IV and to the integrable systems of this part; the Lagrangian systems, the Euler–Lagrange equations and the Legendre transform between the two pictures; the modified Hamilton principle $\delta\int(\sum_ip_i\dot q^i-H)dt=0$ with independent variations of the coordinates and the momenta; the cyclic coordinate and its conserved conjugate momentum; the canonical momentum one-form and the coordinate-free Euler–Lagrange equation $\mathcal{L}_X\theta_L=dL$ with the field of the system as the unique second-order field; the higher-derivative Lagrangians and the Ostrogradsky instability; the mechanical origin of the equation in D'Alembert's principle of virtual work, the ideal constraints and the generalised force, the derivation of the Lagrange equation from D'Alembert's principle, the holonomic, scleronomic, rheonomic and non-holonomic constraints, the Lagrange–d'Alembert equations with their multipliers, the skate as the non-integrable example, and the conservation of energy for a non-holonomic system; the bracket formulation $\frac{d}{dt}g=\{g,H\}+\partial_tg$ and Poisson's theorem that the bracket of two constants of motion is itself a constant of motion, the constants of motion forming the Lie subalgebra that centralises $H$; the canonical transformations and their equivalent criteria by the symplectic form, the Poisson bracket and the canonical brackets, the generating functions of the four types $F_1$, $F_2$, $F_3$, $F_4$ and their Legendre transforms, the time-dependent generating function and the shift $K=H+\partial F/\partial t$, the elementary instances, the group generated by the Hamiltonian flows and the infinitesimal canonical transformations with their generator, the Hamiltonian generating the flow; the Hamilton–Jacobi equation as the vanishing of the new Hamiltonian and the action as the generating function that trivialises the flow, the method itself — the complete integral, the separation of variables and the Stäckel conditions — being the companion article *The Hamilton–Jacobi Equation and Separability*; Liouville's equation $\partial_t\rho+\{\rho,H\}=0$ for a density, with the conserved densities stationary; and the phase portrait of one degree of freedom, with the elliptic and hyperbolic equilibria, the Jacobian $JH''$ and the separatrix. -->
+<!-- Hamiltonian systems and their properties; the symplectic form; the relation to the symplectic geometry of Part IV and to the integrable systems of this part; the Lagrangian systems, the Euler–Lagrange equations and the Legendre transform between the two pictures; the modified Hamilton principle $\delta\int(\sum_ip_i\,dq^i/dt-H)dt=0$ with independent variations of the coordinates and the momenta; the cyclic coordinate and its conserved conjugate momentum; the canonical momentum one-form and the coordinate-free Euler–Lagrange equation $\mathcal{L}_X\theta_L=dL$ with the field of the system as the unique second-order field; the higher-derivative Lagrangians and the Ostrogradsky instability; the mechanical origin of the equation in D'Alembert's principle of virtual work, the ideal constraints and the generalised force, the derivation of the Lagrange equation from D'Alembert's principle, the holonomic, scleronomic, rheonomic and non-holonomic constraints, the Lagrange–d'Alembert equations with their multipliers, the skate as the non-integrable example, and the conservation of energy for a non-holonomic system; the bracket formulation $\frac{d}{dt}g=\{g,H\}+\partial_tg$ and Poisson's theorem that the bracket of two constants of motion is itself a constant of motion, the constants of motion forming the Lie subalgebra that centralises $H$; the canonical transformations and their equivalent criteria by the symplectic form, the Poisson bracket and the canonical brackets, the generating functions of the four types $F_1$, $F_2$, $F_3$, $F_4$ and their Legendre transforms, the time-dependent generating function and the shift $K=H+\partial F/\partial t$, the elementary instances, the group generated by the Hamiltonian flows and the infinitesimal canonical transformations with their generator, the Hamiltonian generating the flow; the Hamilton–Jacobi equation as the vanishing of the new Hamiltonian and the action as the generating function that trivialises the flow, the method itself — the complete integral, the separation of variables and the Stäckel conditions — being the companion article *The Hamilton–Jacobi Equation and Separability*; Liouville's equation $\partial_t\rho+\{\rho,H\}=0$ for a density, with the conserved densities stationary; and the phase portrait of one degree of freedom, with the elliptic and hyperbolic equilibria, the Jacobian $JH''$ and the separatrix. -->
 
 <a href="articles_maths/the-hamilton-jacobi-equation-and-separability.html">The Hamilton–Jacobi Equation and Separability</a>
 <!-- the equation as the condition that the Hamiltonian-generating canonical transformation vanish, and as a first-order partial differential equation whose characteristics are Hamilton's equations; the principal function and Hamilton's characteristic function $W$, the reduced equation $H(q,\partial W/\partial q)=\alpha_1$; the complete integral, the nonsingularity of $\partial^2S/\partial q\,\partial\alpha$, and Jacobi's theorem solving the system by inverting $\beta=\partial S/\partial\alpha$; additive separation, the criterion that a coordinate entering through one combination of itself and its gradient separates, and the cyclic coordinate as the extreme case; the Stäckel conditions $U=\sum_i(1/h_i^2)U_i(q^i)$ for a quadratic Hamiltonian in orthogonal coordinates, with the spherical instance $U=U_r(r)+U_\theta(\theta)/r^2+U_\phi(\phi)/(r^2\sin^2\theta)$; the Stäckel matrix and the Stäckel class; the classical finite list of orthogonal coordinate systems of Euclidean three-space in which the free equation separates; the tie to integrability, the separation constants as the commuting integrals and the actions as the closed integrals of the separated momenta; the examples — the oscillator, the central force, Kepler and the conic of eccentricity $e=\sqrt{1+2\alpha_1L^2/mk^2}$, the spherical coordinates with $|\mathbf L|^2$, the parabolic coordinates and the Coulomb problem in a uniform field with $B_1+B_2=2\kappa$, and the elliptic coordinates of the two-centre problem; and the limits of the method — the dependence of separation on the coordinates, integrability without separation, and the three-body problem. -->
@@ -4331,7 +4331,7 @@
 <!-- Poisson manifolds and their properties; the relation to the symplectic geometry of this part and to the Poisson algebras of Part I. -->
 
 <a href="articles_maths/lie-poisson-reduction-and-the-euler-poincare-equation.html">Lie–Poisson Reduction and the Euler–Poincaré Equation</a>
-<!-- the trivialisation of the cotangent bundle of a Lie group and the reduction $T^*G/G\cong\mathfrak g^*$; the reduced bracket and its derivation, with the linearity, the Jacobi identity and the rank as the codimension of the coadjoint orbit; the coadjoint convention and the sign of the reduced equation, with the fork between the bracket of *Poisson Geometry* and the Euler top of *Lagrangian and Hamiltonian Systems*; the Lie–Poisson equation $\dot\xi=\mathrm{ad}^*_{dH}\xi$ and the Casimirs as the invariants of the coadjoint representation; the reduction of Hamilton's principle to a Lagrangian on the Lie algebra and the Euler–Poincaré equation $\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}$, with the reconstruction of the configuration variable; the rigid body as the geodesic equation of a left-invariant metric and the agreement of the two derivations; the semidirect product bracket, the heavy top and its two Casimirs; the volume-preserving diffeomorphism group, the vorticity bracket, the Euler equation of an ideal incompressible flow and the enstrophy Casimir. -->
+<!-- the trivialisation of the cotangent bundle of a Lie group and the reduction $T^*G/G\cong\mathfrak g^*$; the reduced bracket and its derivation, with the linearity, the Jacobi identity and the rank as the codimension of the coadjoint orbit; the coadjoint convention and the sign of the reduced equation, with the fork between the bracket of *Poisson Geometry* and the Euler top of *Lagrangian and Hamiltonian Systems*; the Lie–Poisson equation $d\xi/dt=\mathrm{ad}^*_{dH}\xi$ and the Casimirs as the invariants of the coadjoint representation; the reduction of Hamilton's principle to a Lagrangian on the Lie algebra and the Euler–Poincaré equation $\frac{d}{dt}\frac{\delta\ell}{\delta\xi}=\mathrm{ad}^*_\xi\frac{\delta\ell}{\delta\xi}$, with the reconstruction of the configuration variable; the rigid body as the geodesic equation of a left-invariant metric and the agreement of the two derivations; the semidirect product bracket, the heavy top and its two Casimirs; the volume-preserving diffeomorphism group, the vorticity bracket, the Euler equation of an ideal incompressible flow and the enstrophy Casimir. -->
 
 <a href="articles_maths/kahler-geometry.html">Kähler Geometry</a>
 <!-- Kähler manifolds and their properties; the relation to the complex manifolds and to the symplectic geometry of this part. -->
@@ -4449,7 +4449,7 @@
 <!-- $\mathrm{Cl}_{3,0,1}$ of a degenerate form with the null generator $e_0$ of the radical; planes as the vectors $a+de_0$, lines and points as wedges, incidence by the vanishing of a wedge and the join by duality; the rigid motions as rotors, in particular the translation $1+\tfrac12te_0$, and every motion a screw motion; the even part as the dual quaternions $\mathbb{H}[\varepsilon]/(\varepsilon^2)$ with the unit conditions $N(q_0)=1$ and $B(q_0,q_1)=0$; the double cover of $SE(3)$ and the action on points; the comparison with the conformal model. -->
 
 <a href="articles_maths/curves-and-surfaces-in-the-biquaternion-moving-frame.html">Curves and Surfaces in the Biquaternion Moving Frame</a>
-<!-- the moving frame as one rotor $r$ of the real quaternion subspace of $\mathbb{B}$ with $v_k=r\gamma_kr^{\dagger}$; the affine connection one-form $\mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1e_1+\iota_2e_2+\iota_3e_3$ and the frame equation $\mathrm dv_k=r(\mathrm Dv_k)r^{\dagger}$ with $\mathrm Dv_k=\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$; the Frenet frame as the frame with $\mathrm dx=\mathrm ds\,v_1$ and $\iota_2=0$, the Frenet equations $\mathrm d\iota_F=\tau\mathrm ds\,e_1+\rho\mathrm ds\,e_3$ and the invariants $\rho$ and $\tau$ read from $\dot x\wedge\ddot x$ and from the trivector, with the helix worked; the coframe and the two fundamental forms of a surface, $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, the Gaussian and mean curvatures $K=L_{11}L_{22}-L_{12}^2$ and $H=\tfrac12(L_{11}+L_{22})$, the theorema egregium $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$; the Darboux frame with the relative torsion, the normal curvature and the geodesic curvature; the integrability of the frame, the structure equation $\partial_v\iota_1-\partial_u\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ as the Gauss and Codazzi–Mainardi equations; the curvature lines, the asymptotic lines and the geodesics, with the sphere worked; the classical local theory in three dimensions, whose Riemannian generalisation is *Curvature and Geodesics* and whose exterior and contraction algebra is Part II. -->
+<!-- the moving frame as one rotor $r$ of the real quaternion subspace of $\mathbb{B}$ with $v_k=r\gamma_kr^{\dagger}$; the affine connection one-form $\mathrm d\iota=2r^{\dagger}\mathrm dr=\iota_1e_1+\iota_2e_2+\iota_3e_3$ and the frame equation $\mathrm dv_k=r(\mathrm Dv_k)r^{\dagger}$ with $\mathrm Dv_k=\tfrac12(\mathrm d\iota\gamma_k-\gamma_k\mathrm d\iota)$; the Frenet frame as the frame with $\mathrm dx=\mathrm ds\,v_1$ and $\iota_2=0$, the Frenet equations $\mathrm d\iota_F=\tau\mathrm ds\,e_1+\rho\mathrm ds\,e_3$ and the invariants $\rho$ and $\tau$ read from $(dx/dt)\wedge(d^2x/dt^2)$ and from the trivector, with the helix worked; the coframe and the two fundamental forms of a surface, $\Pi=-\mathrm Dv_3\cdot\mathrm dx=L_{11}\omega_1^2+2L_{12}\omega_1\omega_2+L_{22}\omega_2^2$, the Gaussian and mean curvatures $K=L_{11}L_{22}-L_{12}^2$ and $H=\tfrac12(L_{11}+L_{22})$, the theorema egregium $K=(a_1b_2-a_2b_1)/(A_1B_2-A_2B_1)$; the Darboux frame with the relative torsion, the normal curvature and the geodesic curvature; the integrability of the frame, the structure equation $\partial_v\iota_1-\partial_u\iota_2=\iota_1\wedge\iota_2$ and the symmetry $L_{12}=L_{21}$ as the Gauss and Codazzi–Mainardi equations; the curvature lines, the asymptotic lines and the geodesics, with the sphere worked; the classical local theory in three dimensions, whose Riemannian generalisation is *Curvature and Geodesics* and whose exterior and contraction algebra is Part II. -->
 
 ### Operator Theory
 
@@ -5406,6 +5406,254 @@
 <a href="articles_maths/the-dual-number-iterated-function-systems.html">The Dual-Number Iterated Function Systems</a>
 <!-- the contractions of the dual-number plane, where the nilpotent direction is contracted at the derivative of the real part of the contraction; the attractors, which are the products of a real self-similar set with the infinitesimal direction and are not fractal in the dual coordinate; the relation to the shears and the parabolic rotations of this category and to the one-dimensional systems of the real category; the comparison of the dual systems with the complex and the split-complex ones. -->
 
+## Reduced Biquaternions
+
+### Algebra
+
+#### Introduction to the Reduced Biquaternion Algebra
+
+<a href="articles_maths/reduced-biquaternion-space.html">Reduced Biquaternion Space</a>
+<!-- the algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$, the basis $1, i, j, ij$, the defining relations and the two idempotents $\tfrac12(1\pm j)$. -->
+
+<a href="articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.html">Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</a>
+<!-- the space as a real and as a complex vector space, the change of scalars and the realification. -->
+
+<a href="articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html">The Two Involutions and the Group of Involutions</a>
+<!-- the tessarine conjugation and the coefficient conjugation, their fixed spaces and the group they generate. -->
+
+<a href="articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html">The Four Products, Their Forms and Their Algebraic Norms</a>
+<!-- the four general products on the coordinates, the forms they carry and the algebraic norms they define; the relations and the comparison between them. -->
+
+<a href="articles_maths/the-non-negative-cone-and-the-coordinatewise-order-of-the-reduced-biquaternions.html">The Non-Negative Cone and the Coordinatewise Order of the Reduced Biquaternions</a>
+<!-- the non-negative cone of the four real coordinates and the coordinatewise order it defines; the cone axioms, the extreme rays and the simplicial form, the self-duality for the Euclidean inner product $\operatorname{Re}K$, the order unit and the order-unit norm; the incompatibility with the product, with the square of a non-negative element leaving the cone; the idempotent ray and the strictly positive zero divisor inside the cone; the cone-preserving multiplications as the split-complex orthant, the multiplicative core and the comparison with the ordered-algebra statement; the image of the cone in the idempotent coordinates and its trace on the split-complex plane, against the forward cone of the split-complex algebra. -->
+
+#### Properties of the Reduced Biquaternion Algebra over $\mathbb{C}$
+
+##### Basic Properties
+
+<a href="articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html">Introduction to the Algebra of the Reduced Biquaternions</a>
+<!-- the definition, the data and the plan. -->
+
+<a href="articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Norm and Invertibility in the Algebra of the Reduced Biquaternions</a>
+<!-- the algebraic norm, the invertibility criterion and the group of units. -->
+
+<a href="articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the Algebra of the Reduced Biquaternions</a>
+<!-- the zero divisors, the null cone and its structure. -->
+
+<a href="articles_maths/annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Annihilators of the Algebra of the Reduced Biquaternions</a>
+<!-- the annihilators of an element and the two-sided annihilator of the structure. -->
+
+<a href="articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions</a>
+<!-- the roots of $1$, the idempotents and the projections they carry. -->
+
+<a href="articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions</a>
+<!-- the roots of $0$ and the nilpotents, product by product. -->
+
+<a href="articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of a General Element in the Algebra of the Reduced Biquaternions</a>
+<!-- the roots of a general element, with the existence and the count. -->
+
+##### Advanced Properties
+
+<a href="articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Specificities of the Algebra of the Reduced Biquaternions</a>
+<!-- what the structure adds to the shared theory and what it shares with the others. -->
+
+<a href="articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</a>
+<!-- the two minimal ideals and the Peirce decomposition along the two idempotents. -->
+
+<a href="articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Group of Units of the Algebra of the Reduced Biquaternions</a>
+<!-- the group of units and the complement of the zero-divisor cone. -->
+
+<a href="articles_maths/the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Forms of the Algebra of the Reduced Biquaternions</a>
+<!-- the bilinear and sesquilinear forms the structure carries. -->
+
+##### Operators
+
+<a href="articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Multiplication Operators of the Algebra of the Reduced Biquaternions</a>
+<!-- the left and right multiplications and the bi-module structure. -->
+
+##### Representations
+
+<a href="articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html">The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</a>
+<!-- the structure read in the $2\times2$ matrix element representation. -->
+
+#### Remarkable Subspaces
+
+<a href="articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Introduction to the Remarkable Subspaces</a>
+<!-- the centre, the vector subspace, the Hermitian and the anti-Hermitian subspaces and the idempotent lines. -->
+
+<a href="articles_maths/decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Decompositions Along the Remarkable Subspaces</a>
+<!-- the block decomposition along the two involutions and the decomposition along the idempotents. -->
+
+<a href="articles_maths/comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Comparison of the Remarkable Subspaces</a>
+<!-- the subspaces at a glance, with defining conditions, bases, dimensions and closure. -->
+
+#### Reduced Biquaternions Standard Element Representations
+
+<a href="articles_maths/introduction-to-reduced-biquaternion-element-representations.html">Introduction to Reduced Biquaternion Element Representations</a>
+<!-- the representations of an element and how they are read. -->
+
+<a href="articles_maths/the-four-vector-element-representation-of-the-reduced-biquaternions.html">The Four-Vector Element Representation of the Reduced Biquaternions</a>
+<!-- the element as a quadruple of real numbers and as a pair of complex numbers. -->
+
+<a href="articles_maths/introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.html">Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</a>
+<!-- the regular representation and the $2\times2$ matrix model with real or complex entries. -->
+
+<a href="articles_maths/reduced-biquaternion-other-algebraic-element-representations.html">Reduced Biquaternion Other Algebraic Element Representations</a>
+<!-- the remaining representations and their comparison. -->
+
+#### Reduced Biquaternions Polar Element Representation
+
+<a href="articles_maths/reduced-biquaternions-polar-element-representation.html">Reduced Biquaternions Polar Element Representation</a>
+<!-- the polar form, its uniqueness under the phase-range convention and the two-factor reading. -->
+
+#### Operators
+
+<a href="articles_maths/operators-on-the-reduced-biquaternions.html">Operators on the Reduced Biquaternions</a>
+<!-- the operators of the four general products collected and compared. -->
+
+#### Operators Representations
+
+### Topology
+
+#### Introduction to Topology on the Reduced Biquaternions
+
+<a href="articles_maths/topology-in-the-space-of-reduced-biquaternions.html">Topology in the Space of Reduced Biquaternions</a>
+<!-- the topology of the space and its relation to the four general products. -->
+
+#### Topology of the Reduced Biquaternion Algebra
+
+<a href="articles_maths/the-euclidean-topology-of-the-reduced-biquaternion-algebra.html">The Euclidean Topology of the Reduced Biquaternion Algebra</a>
+<!-- the Euclidean topology, the unit group as a topological group and the topology of the zero-divisor cone. -->
+
+#### Metrics of the Reduced Biquaternion Algebra
+
+<a href="articles_maths/topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html">Topology and Metric for Each of the Operations</a>
+<!-- the topology and the metric attached to each of the four general products. -->
+
+### Analysis
+
+<a href="articles_maths/reduced-biquaternion-analysis.html">Reduced Biquaternion Analysis</a>
+<!-- the analysis on the space and the part the two idempotent factors play. -->
+
+<a href="articles_maths/reduced-biquaternion-regular-functions.html">Reduced Biquaternion Regular Functions</a>
+<!-- regular functions and the Cauchy-Riemann system of the algebra. -->
+
+<a href="articles_maths/reduced-biquaternion-spectral-theory.html">Reduced Biquaternion Spectral Theory</a>
+<!-- spectral theory for the operators on the algebra. -->
+
+<a href="articles_maths/reduced-biquaternion-integration.html">Reduced Biquaternion Integration</a>
+<!-- integration and the integral theorems. -->
+
+<a href="articles_maths/reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>
+<!-- the elementary functions and their reduction to two complex factors. -->
+
+<a href="articles_maths/reduced-biquaternion-higher-special-functions.html">Reduced Biquaternion Higher Special Functions</a>
+<!-- the higher special functions over the algebra. -->
+
+<a href="articles_maths/reduced-biquaternion-lie-group-and-exponential-structure.html">Reduced Biquaternion Lie Group and Exponential Structure</a>
+<!-- the exponential and the Lie group structure of the unit group. -->
+
+<a href="articles_maths/reduced-biquaternion-discrete-harmonic-analysis.html">Reduced Biquaternion Discrete Harmonic Analysis</a>
+<!-- the discrete reduced biquaternion Fourier transform and the idempotent reduction. -->
+
+<a href="articles_maths/reduced-biquaternion-continuous-harmonic-analysis.html">Reduced Biquaternion Continuous Harmonic Analysis</a>
+<!-- the continuous transform, the convolution theorem and the Bochner theorem. -->
+
+<a href="articles_maths/fueter-theory-for-reduced-biquaternions.html">Fueter Theory for Reduced Biquaternions</a>
+<!-- the Fueter theory on the algebra. -->
+
+### Geometry
+
+<a href="articles_maths/reduced-biquaternion-rotations-and-lorentz-transformations.html">Reduced Biquaternion Rotations and Lorentz Transformations</a>
+<!-- the elliptic and the hyperbolic rotation the two factors carry. -->
+
+<a href="articles_maths/reduced-biquaternion-automorphisms-and-derivations.html">Reduced Biquaternion Automorphisms and Derivations</a>
+<!-- the automorphisms and the derivations of the algebra. -->
+
+<a href="articles_maths/the-null-quadric-and-its-projective-geometry-for-the-reduced-biquaternions.html">The Null Quadric and its Projective Geometry</a>
+<!-- the null quadric of the norm and its projective geometry. -->
+
+<a href="articles_maths/reduced-biquaternion-versors-and-the-orthogonal-group.html">Reduced Biquaternion Versors and the Orthogonal Group</a>
+<!-- the versors and the orthogonal group of the bilinear form. -->
+
+<a href="articles_maths/the-unitary-group-of-the-reduced-biquaternion-algebra.html">The Unitary Group of the Reduced Biquaternion Algebra</a>
+<!-- the unitary group of the Hermitian form and its decomposition. -->
+
+<a href="articles_maths/reduced-biquaternions-and-hyperbolic-geometry.html">Reduced Biquaternions and Hyperbolic Geometry</a>
+<!-- the hyperbolic geometry the indefinite form carries. -->
+
+<a href="articles_maths/reduced-biquaternion-objects-and-their-matrix-correspondences.html">Reduced Biquaternion Objects and their Matrix Correspondences</a>
+<!-- the objects of the geometry and their matrix correspondences. -->
+
+<a href="articles_maths/reduced-biquaternion-spin-geometry.html">Reduced Biquaternion Spin Geometry</a>
+<!-- the spin geometry of the algebra. -->
+
+#### Fractal Geometry
+
+<a href="articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html">The Reduced Biquaternion Quadratic Map and its Julia Sets</a>
+<!-- the quadratic family and its Julia sets. -->
+
+<a href="articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html">The Idempotent Decomposition and the Split Fractal</a>
+<!-- the reduction of the dynamics to the two complex factors. -->
+
+<a href="articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.html">The Slices of the Reduced Biquaternion Julia Sets</a>
+<!-- the slices of the Julia sets and their comparison. -->
+
+<a href="articles_maths/the-reduced-biquaternion-iterated-function-systems.html">The Reduced Biquaternion Iterated Function Systems</a>
+<!-- the contractions and the self-similar sets they produce. -->
+
+<a href="articles_maths/the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus.html">The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</a>
+<!-- the connectedness locus and the effect of the zero divisors. -->
+
+<a href="articles_maths/the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.html">The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</a>
+<!-- the Hausdorff dimension of the Julia sets. -->
+
+### Applications
+
+<a href="articles_maths/least-squares-and-total-least-squares-over-the-reduced-biquaternions.html">Least Squares and Total Least Squares over the Reduced Biquaternions</a>
+<!-- the approximation $AX\approx B$ over the reduced biquaternions, $A\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, $B\in\mathbb{B}_{\mathrm{r}}^{m\times d}$, $m\ge n+d$; the least squares, total least squares and mixed problems and the parameter $n_{1}$ of exact columns; the idempotent reduction to two complex problems, the multiplication componentwise and the norm $K$ half the sum of the two complex Frobenius norms; the arbitrary reduced biquaternion unknown against the complex and the real ones and the nesting of the minima; the form $K$ as a real inner product, the $K$-adjoint the bar-transpose and the Moore-Penrose inverse the pair of the complex pseudoinverses; the coefficient stack, the real representation, the complex representation $M^{C}$ and the source's equivalence; the algorithm of Householder reduction and singular value decomposition; existence and uniqueness by the two spectral gaps and the nonsingularity of $V_{22}$; the special cases of one right-hand side and of the complex field; the solution as a possible zero divisor. -->
+
+<a href="articles_maths/matrix-equations-and-structured-solutions-over-the-reduced-biquaternions.html">Matrix Equations and Structured Solutions over the Reduced Biquaternions</a>
+<!-- the linear matrix equation $\sum_lA_lX_lB_l=E$ over the reduced biquaternions with each unknown in an L-structure; the L-structure as a real subspace condition on the coefficient stack, with the basis matrix $M_L$, the real dimension $D$ and the structures of entry type $\mathrm{vec}(X)=\mathsf E_L\xi_L$; the four classical L-structures Toeplitz, symmetric Toeplitz, Hankel and circulant, their zero-one generating families $J_d$, $J_k+J_{-k}$, $R_m$, $Z_k$, their widths $2n-1,n,2n-1,n$ and the encodings $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ of full column rank; the one algebra-valued system $\mathsf C\xi=\mathrm{vec}(E)$ assembled from the Kronecker products and the encodings, with the vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holding over the commutative algebra and the reduction cited from *Least Squares and Total Least Squares over the Reduced Biquaternions*; the least-norm structured least squares solution as the pair of the complex Moore-Penrose solutions, with the consistency and uniqueness criteria; the source's real reading as the stacked system $\begin{pmatrix}Q_1\\Q_2\end{pmatrix}x=e$ and its partitioned pseudoinverse; and the applications to the structured equation $AXB+CYD=E$, to the partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ and to the generalized PDIEP $M\Phi=N\Phi\Lambda$. -->
+
+<a href="articles_maths/hermitian-solutions-of-the-pair-matrix-equation-over-the-reduced-biquaternions.html">Hermitian Solutions of the Pair Matrix Equation over the Reduced Biquaternions</a>
+<!-- the pair equation $(AXB,CXD)=(E,F)$ over the reduced biquaternions with one unknown $X$ carrying two equations; the Hermitian set of the source, fixed by the transpose composed with the conjugation negating the three imaginary units, of real dimension $2n^{2}-n$, read in the two complex blocks as the Hermitian $U=X_{0}+iX_{1}$ and the skew-symmetric $V=X_{2}+iX_{3}$ and distinct from the star-Hermitian plane of the corpus; the obstruction to the idempotent reduction, the set not being a module over the algebra, with the coupled equations $q_{1}^{\mathsf T}+q_{1}=q_{2}^{\mathsf T}+q_{2}$ and $q_{1}^{\mathsf T}+q_{2}^{\mathsf T}=\bar q_{1}+\bar q_{2}$; the real representation $M^{R}$ and its row form $[M_{0},-M_{1},M_{2},-M_{3}]$, the signed selection $J$, the vectorisations $\mathrm{vec}_{S}$ and $\mathrm{vec}_{A}$ with the encodings $K_{S}$ and $K_{A}$ and the block diagonals $Q=\operatorname{diag}(K_{S},-K_{A},K_{A},-K_{A})$ and $R=\operatorname{diag}(K_{S},K_{A},K_{A},K_{A})$; the residual identity $\|(AXB-E,CXD-F)\|_{\mathrm F}^{2}=\|PJQz-t\|^{2}$, the least squares set, the least-norm element in the coordinates $R(PJQ)_{\mathrm{MP}}t$, the consistency criterion and the uniqueness criterion $\operatorname{rank}(PJQ)=2n^{2}-n$, and the weight $R^{\mathsf T}R$ that makes the pseudoinverse minimise the coordinate norm and not the Frobenius norm of $X$; the complex case with $n^{2}$ unknowns; and the Hermitian partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ with the rank criterion and the non-uniqueness. -->
+
+<a href="articles_maths/non-negative-matrix-factorization-over-the-reduced-biquaternions.html">Non-Negative Matrix Factorization over the Reduced Biquaternions</a>
+<!-- the non-negative reduced biquaternion matrix factorization $X\approx WH$ with the non-negative basis and the structured coefficient matrix; the two cones of matrices and their inclusion, the product formula in the four components and the closure of the product, the indispensability of the structured constraint with the witness $i^{2}=-1$; the non-negative reduced biquaternion rank, its bound and the structured data of a real basis; the reduction of the objective to the two complex factorizations and the coupling of the constraints in the idempotent components, with the band $H^{+}\ge|H^{-}|$; the graph Laplacian, the graph identity and the graph regularizer as the Dirichlet energy of the two real coefficient matrices; the alternating projected gradient method, the projection lemma, the backtracking line search and the nonincreasing objective with a stationary limit point. -->
+
+#### Tensors
+
++<a href="articles_maths/reduced-biquaternion-tensors-as-a-vector-space.html">Reduced Biquaternion Tensors as a Vector Space</a>
+<!-- the third-order tensor over the algebra, written $A\in\mathbb{B}_{\mathrm{r}}^{n_{1}\times n_{2}\times n_{3}}$ as a plain capital typed by the exponent, the order carried by the type and never by a script letter, which the corpus keeps for its sets and algebras; the horizontal, the lateral and the frontal slices $A(i,:,:)$, $A(:,j,:)$ and $A(:,:,k)$, and the frontal slice $A^{(k)}$; the four real coefficient tensors of $A=A_{0}+A_{1}i+A_{2}j+A_{3}ij$ and the split $A=A_{1,i}+jA_{j,k}$ into two complex tensors; the idempotent form $A=A_{(1)}\Pi_{1}+A_{(2)}\Pi_{2}$ with $\Pi_{1}=\tfrac12(1+j)$ and $\Pi_{2}=\tfrac12(1-j)$, and the independence of the two coordinates; the addition, the scalar multiplication, and the module structure over the algebra of real dimension $4n_{1}n_{2}n_{3}$; the Frobenius norm $\lVert A\rVert_{\mathrm{F}}^{2}=\sum_{i_{1},i_{2},i_{3}}\lvert a_{i_{1}i_{2}i_{3}}\rvert^{2}$ and its reading as the sum of the four real coefficient norms; the transpose and the conjugate transpose; and the reading of the four algebraic norms of the algebra on a tensor. The element and the algebra are *Reduced Biquaternion Space* and *Conventions in Mathematics*, and the matrix reading it extends is *Least Squares and Total Least Squares over the Reduced Biquaternions*. -->
+
+<a href="articles_maths/the-einstein-product-of-reduced-biquaternion-tensors.html">The Einstein Product of Reduced Biquaternion Tensors</a>
+<!-- the contraction of the trailing indices of the first tensor against the leading indices of the second, $(AB)_{p_{1}\cdots p_{m}q_{1}\cdots q_{s}}=\sum_{l_{1},\dots,l_{n}}a_{p_{1}\cdots p_{m}l_{1}\cdots l_{n}}b_{l_{1}\cdots l_{n}q_{1}\cdots q_{s}}$, written by juxtaposition $AB$ as the matrix product and never with the mark $\ast$ of the t-product; the product of two third-order tensors as a tensor of order four, against the third-order product of the t-product, and the agreement of the two at order two; the bilinearity over the algebra, the associativity and the unit tensor $\mathrm I$ of the square case; the matricisation $\mathrm{mat}(A)_{PL}=a_{PL}$ in the row-major reading of the two multi-indices and the multiplicativity $\mathrm{mat}(AB)=\mathrm{mat}(A)\mathrm{mat}(B)$; the square tensors of order $2m$ as an associative algebra free of rank $N^{2}$, $N=n_{1}\cdots n_{m}$, isomorphic to $M_{N}(\mathbb{B}_{\mathrm{r}})$, not commutative for $N\ge2$ and not a division algebra; the unit criterion through the two complex coordinate tensors, the inverse as the pair of the two complex inverses, the one-sided inverse theorem $AB=\mathrm I\Rightarrow BA=\mathrm I$, and the zero divisors, with the tensor all of whose entries are units that annihilates another; the boundary against the t-product of *The t-Product of Reduced Biquaternion Tensors*. -->
+
++<a href="articles_maths/the-t-product-of-reduced-biquaternion-tensors.html">The t-Product of Reduced Biquaternion Tensors</a>
+<!-- the block circulant matrix $\mathrm{circ}(A)$ of the frontal slices, the operators $\mathrm{Vec}$ and $\mathrm{Fold}$, and the discrete Fourier transform along the third mode $\mathcal F_{3}$, written as an operator glyph and never as a mark on the tensor; the product $A\ast B=\mathrm{Fold}((\mathrm{circ}(A_{1,i})+j\,\mathrm{circ}(A_{j,k}))\mathrm{Vec}(B))$; the equivalent form in the transform, where the frontal slices of $\mathcal F_{3}A$ and $\mathcal F_{3}B$ multiply one by one, so that the transform carries the product to the product of the diagonalised slices; the associativity and the two distributive laws; the identity tensor and the inverse; the conjugate transpose, with $(A\ast B)^{*}=B^{*}\ast A^{*}$; the idempotent reduction, the product being the pair of the two complex products $A_{(1)}\ast B_{(1)}$ and $A_{(2)}\ast B_{(2)}$ in the two idempotent coordinates, which is the form the commutativity of the algebra gives to the theorem; and the explicit caution that the letter t names this transformed product and that it is not the tensor product $\otimes$ of *Tensor Products of Algebras* and *Tensor Products of Sesqualgebras*. -->
+
++<a href="articles_maths/the-singular-value-decomposition-of-a-reduced-biquaternion-tensor.html">The Singular Value Decomposition of a Reduced Biquaternion Tensor</a>
+<!-- the f-diagonal tensor, whose every frontal slice is diagonal, and the unitary tensors; the decomposition $A=U\ast S\ast V^{*}$ and its existence, proved by taking the transform along the third mode and the singular value decomposition of each frontal slice of the transform; the algorithm, with the transform of the two idempotent coordinates and the inverse transform; the complexity, dominated by the fast transform and by the slice-wise decompositions; the identity $\lVert A\rVert_{\mathrm{F}}=\tfrac{1}{\sqrt{n_{3}}}\lVert\mathrm{diag}(\mathcal F_{3}A)\rVert_{\mathrm{F}}$ relating the norm of the tensor to the norm of its transform; and the idempotent reduction to the pair of the two complex tensor decompositions. -->
+
+<a href="articles_maths/eigenvalues-and-eigentensors-of-a-reduced-biquaternion-tensor-and-the-gershgorin-theorem.html">Eigenvalues and Eigentensors of a Reduced Biquaternion Tensor and the Gershgorin Theorem</a>
+<!-- the eigenvalue problem $AX=\lambda X$ over the Einstein product, for a square tensor of order $2m$ and an eigentensor of order $m$; the eigenvalue written on either side because the algebra is commutative, with no separate left spectrum; the coordinate reduction to $A=A_{(1)}\Pi_{1}+A_{(2)}\Pi_{2}$; the theorem that the spectrum is the union of the two coordinate spectra over $\sigma(A_{(1)})$ and $\sigma(A_{(2)})$, nonempty and unbounded because an eigentensor may lie in one idempotent coordinate alone, against the finite spectra of the complex and the quaternion cases; the pairing theorem of the source for the eigentensors with both coordinates nonzero, the two complex tensors $B_{1}$ and $B_{2}$ of the source being $A_{(1)}$ and $A_{(2)}$; the Gershgorin theorem in the coordinate form, with the Gershgorin set of a complex tensor and the maximal-entry lemma it rests on, and the remark that the source's modulus $\lvert\langle T\rangle_{\natural}\rvert^{1/2}$ vanishes on the zero divisors, fails the triangle inequality, and makes the stated inclusion fail, with the counterexample of the matrix $\begin{smallmatrix}0&1\\1&0\end{smallmatrix}$ and the eigenvalue $\Pi_{1}+100\Pi_{2}$; and the eigenvalues of a power, $A^{n}=a\mathrm I$, with the roots displayed for a unit $a$ and read coordinatewise, and the correction of the source's list of the $n^{2}$ values, which are neither the spectrum, nor a subset of it, nor a superset of it. -->
+
++<a href="articles_maths/the-moore-penrose-inverse-of-a-reduced-biquaternion-tensor.html">The Moore-Penrose Inverse of a Reduced Biquaternion Tensor</a>
+<!-- the four Penrose equations over the t-product, $A\ast X\ast A=A$, $X\ast A\ast X=X$, $(A\ast X)^{*}=A\ast X$ and $(X\ast A)^{*}=X\ast A$; the existence and the uniqueness of their solution, written $A^{\dagger}$ in the glyph of the matrix article; the formula read on the decomposition of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*; the properties, the reflexivity $(A^{\dagger})^{\dagger}=A$, the adjoint identity under the conditions of the statement, the idempotency of $A^{\dagger}\ast A$ and of $A\ast A^{\dagger}$, and the reduction to the identity at a Hermitian idempotent; and the reduction to the pair of the two complex tensor inverses, one per idempotent coordinate. The matrix counterpart is the Moore-Penrose inverse of *Least Squares and Total Least Squares over the Reduced Biquaternions*. -->
+
++<a href="articles_maths/tensor-equations-over-the-reduced-biquaternions.html">Tensor Equations over the Reduced Biquaternions</a>
+<!-- the equation $A\ast X=B$ over the t-product; the solvability criterion on the residual of the right-hand side against the orthogonal projector of *The Moore-Penrose Inverse of a Reduced Biquaternion Tensor*; the general solution $X=A^{\dagger}\ast B+(I-A^{\dagger}\ast A)\ast Y$ with an arbitrary tensor $Y$; the Hermitian solution, with its solvability conditions and its general form; the least-squares solutions and the minimum-norm least-squares solution $X=A^{\dagger}\ast B$; the right-handed equation $X\ast A=B$; and the reduction of every statement to the pair of the two complex tensor equations, one per idempotent coordinate. The matrix counterpart is *Matrix Equations and Structured Solutions over the Reduced Biquaternions*. -->
+
++<a href="articles_maths/the-rank-of-a-reduced-biquaternion-tensor-and-its-low-rank-approximation.html">The Rank of a Reduced Biquaternion Tensor and its Low-Rank Approximation</a>
+<!-- the rank of a tensor read on its decomposition of *The Singular Value Decomposition of a Reduced Biquaternion Tensor*, the tubal rank $\mathrm{rank}_{\mathrm{t}}(A)=\#\{i:\lVert S(i,i,:)\rVert_{\mathrm{F}}>0\}$; its equality with the largest rank among the frontal slices of the transform; the truncation to the leading indices and the best rank-$k$ approximation $A_{k}$; the error of the approximation and its minimality over the tensors of that rank; and the comparison with the rank of the matrix case and with the tensor ring decomposition. The matrix approximation it extends is *Least Squares and Total Least Squares over the Reduced Biquaternions*. -->
+
++<a href="articles_maths/zero-divisors-of-the-reduced-biquaternion-tensor-algebra.html">Zero Divisors of the Reduced Biquaternion Tensor Algebra</a>
+<!-- the invertibility of a tensor under the t-product and its criterion on the frontal slices of the transform; the zero divisors of the tensor algebra and their reading in the two idempotent coordinates, where a tensor is a zero divisor exactly when one of its two complex coordinates is; the left and the right annihilators of a tensor; and the norm that decides invertibility. This article is not in the sources of the branch: it is the corpus's own reading of the algebra of tensors, the tensor analogue of *Zero Divisors of the Algebra of the Reduced Biquaternions* and *Annihilators of the Algebra of the Reduced Biquaternions*, and it is written only after the algebra of the product is settled. -->
+
++<a href="articles_maths/color-video-compression-and-deblurring-with-reduced-biquaternion-tensors.html">Color Video Compression and Deblurring with Reduced Biquaternion Tensors</a>
+<!-- a color video as a tensor $A_{\mathrm{C}}(m,n,t)=A_{\mathrm{R}}(m,n,t)i+A_{\mathrm{G}}(m,n,t)j+A_{\mathrm{B}}(m,n,t)k$, one frame to a frontal slice; the compression by the rank-$k$ approximation of *The Rank of a Reduced Biquaternion Tensor and its Low-Rank Approximation* and its algorithm; the peak signal-to-noise ratio $\mathrm{PSNR}=10\log_{10}(3n_{1}n_{2}\lVert C\rVert_{\infty}^{2}/\lVert C-C_{k}\rVert_{\mathrm{F}}^{2})$; the deblurring by the tensor equation of *Tensor Equations over the Reduced Biquaternions*; and the cost of the transform-based algorithm against the quaternion tensor algorithm it improves on. The image counterpart is *Non-Negative Matrix Factorization over the Reduced Biquaternions*. -->
+
 ## Quaternions
 
 ### Algebra
@@ -5545,7 +5793,7 @@
 <!-- the quaternion space; limits and continuity; quaternion differentiability and why the naive derivative is ambiguous; the correct notion of monogenic function; integration; power series; singularities; the Cauchy–Riemann operator; comparison with complex analysis. -->
 
 <a href="articles_maths/quaternion-regular-functions.html">Quaternion Regular Functions</a>
-<!-- the Cauchy-Riemann operator on $\mathbb{H}$ (classically the Dirac operator, glossed once) and its conjugate; regularity and the system of equations; harmonicity and the factorization of the Laplacian; the Cauchy integral formula where it holds; the three-dimensional reduced-quaternion theory, with the Riesz system, two-sidedness, the hypercomplex derivative, the hyperholomorphic constants, the spherical monogenics, the dimension $2n+3$ and the orthogonal split into a main part and a constant. -->
+<!-- the Cauchy-Riemann operator on $\mathbb{H}$ (classically the Dirac operator, glossed once) and its conjugate; regularity and the system of equations; harmonicity and the factorization of the Laplacian; the Cauchy integral formula where it holds; the three-dimensional reduced-quaternion theory, with the Riesz system, two-sidedness, the hypercomplex derivative, the hyperholomorphic constants, the spherical monogenics, the dimension $2n+3$ and the orthogonal split into a main part and a constant; the vectorial-coefficient equation $D_3f+f\vec\alpha=0$, with the componentwise reduction to four scalar Schrödinger operators, the projection device, and the restricted coefficient's pair of Schrödinger equations with quaternionic potentials. -->
 
 <a href="articles_maths/blochs-theorem-and-the-bloch-constant-for-monogenic-functions.html">Bloch's Theorem and the Bloch Constant for Monogenic Functions</a>
 <!-- Bloch's theorem of geometric function theory for monogenic functions of the reduced quaternions; the classical theorem and the Bloch constant, with $1/12$ and the sharper elementary $3/2-\sqrt2$; the maximum modulus function and the normalisation by the hypercomplex derivative; the derivative and primitive estimates of Estermann type; the auxiliary function and the location of its unique maximum; the local normalisation and Estermann's global argument; the constant $\frac1{120}-\frac{31096}{20511149}\sqrt3$ and its value, with the correction that the announced bound $1/150$ is false and $1/180$ is the safe one; the comparison with the classical and the several-variable cases. -->
@@ -5946,219 +6194,6 @@
 <a href="articles_maths/the-split-quaternion-iterated-function-systems.html">The Split-Quaternion Iterated Function Systems</a>
 <!-- the contractions of the split quaternions and the self-similar sets they produce in the indefinite metric; the hyperbolic Cantor sets and the hyperbolic gaskets, and the failure of the open set condition in the null cone; the relation to the limit sets of the hyperbolic lattices and to the hyperbolic geometry of this category; the comparison with the quaternion and the split-complex systems. -->
 
-## Reduced Biquaternions
-
-### Algebra
-
-#### Introduction to the Reduced Biquaternion Algebra
-
-<a href="articles_maths/reduced-biquaternion-space.html">Reduced Biquaternion Space</a>
-<!-- the algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$, the basis $1, i, j, ij$, the defining relations and the two idempotents $\tfrac12(1\pm j)$. -->
-
-<a href="articles_maths/reduced-biquaternions-as-a-vector-space-over-r-and-c.html">Reduced Biquaternions as a Vector Space over $\mathbb{R}$ and $\mathbb{C}$</a>
-<!-- the space as a real and as a complex vector space, the change of scalars and the realification. -->
-
-<a href="articles_maths/the-two-involutions-and-the-group-of-involutions-of-the-reduced-biquaternions.html">The Two Involutions and the Group of Involutions</a>
-<!-- the tessarine conjugation and the coefficient conjugation, their fixed spaces and the group they generate. -->
-
-<a href="articles_maths/the-four-products-their-forms-and-their-algebraic-norms-of-the-reduced-biquaternions.html">The Four Products, Their Forms and Their Algebraic Norms</a>
-<!-- the four general products on the coordinates, the forms they carry and the algebraic norms they define; the relations and the comparison between them. -->
-
-<a href="articles_maths/the-non-negative-cone-and-the-coordinatewise-order-of-the-reduced-biquaternions.html">The Non-Negative Cone and the Coordinatewise Order of the Reduced Biquaternions</a>
-<!-- the non-negative cone of the four real coordinates and the coordinatewise order it defines; the cone axioms, the extreme rays and the simplicial form, the self-duality for the Euclidean inner product $\operatorname{Re}K$, the order unit and the order-unit norm; the incompatibility with the product, with the square of a non-negative element leaving the cone; the idempotent ray and the strictly positive zero divisor inside the cone; the cone-preserving multiplications as the split-complex orthant, the multiplicative core and the comparison with the ordered-algebra statement; the image of the cone in the idempotent coordinates and its trace on the split-complex plane, against the forward cone of the split-complex algebra. -->
-
-#### Properties of the Reduced Biquaternion Algebra over $\mathbb{C}$
-
-##### Basic Properties
-
-<a href="articles_maths/introduction-to-the-general-plain-algebra-of-the-reduced-biquaternions.html">Introduction to the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the definition, the data and the plan. -->
-
-<a href="articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Norm and Invertibility in the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the algebraic norm, the invertibility criterion and the group of units. -->
-
-<a href="articles_maths/zero-divisors-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Zero Divisors of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the zero divisors, the null cone and its structure. -->
-
-<a href="articles_maths/annihilators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Annihilators of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the annihilators of an element and the two-sided annihilator of the structure. -->
-
-<a href="articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of One and the Idempotents of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the roots of $1$, the idempotents and the projections they carry. -->
-
-<a href="articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of Zero and the Nilpotents of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the roots of $0$ and the nilpotents, product by product. -->
-
-<a href="articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-the-reduced-biquaternions.html">Square Roots of a General Element in the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the roots of a general element, with the existence and the count. -->
-
-##### Advanced Properties
-
-<a href="articles_maths/the-specificities-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Specificities of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- what the structure adds to the shared theory and what it shares with the others. -->
-
-<a href="articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">Ideals and Peirce Decomposition of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the two minimal ideals and the Peirce decomposition along the two idempotents. -->
-
-<a href="articles_maths/the-group-of-units-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Group of Units of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the group of units and the complement of the zero-divisor cone. -->
-
-<a href="articles_maths/the-forms-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Forms of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the bilinear and sesquilinear forms the structure carries. -->
-
-##### Operators
-
-<a href="articles_maths/the-multiplication-operators-of-the-general-plain-algebra-of-the-reduced-biquaternions.html">The Multiplication Operators of the General Plain Algebra of the Reduced Biquaternions</a>
-<!-- the left and right multiplications and the bi-module structure. -->
-
-##### Representations
-
-<a href="articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-the-reduced-biquaternions.html">The General Plain Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions</a>
-<!-- the structure read in the $2\times2$ matrix element representation. -->
-
-#### Remarkable Subspaces
-
-<a href="articles_maths/introduction-to-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Introduction to the Remarkable Subspaces</a>
-<!-- the centre, the vector subspace, the Hermitian and the anti-Hermitian subspaces and the idempotent lines. -->
-
-<a href="articles_maths/decompositions-along-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Decompositions Along the Remarkable Subspaces</a>
-<!-- the block decomposition along the two involutions and the decomposition along the idempotents. -->
-
-<a href="articles_maths/comparison-of-the-remarkable-subspaces-of-the-reduced-biquaternions.html">Comparison of the Remarkable Subspaces</a>
-<!-- the subspaces at a glance, with defining conditions, bases, dimensions and closure. -->
-
-#### Reduced Biquaternions Standard Element Representations
-
-<a href="articles_maths/introduction-to-reduced-biquaternion-element-representations.html">Introduction to Reduced Biquaternion Element Representations</a>
-<!-- the representations of an element and how they are read. -->
-
-<a href="articles_maths/the-four-vector-element-representation-of-the-reduced-biquaternions.html">The Four-Vector Element Representation of the Reduced Biquaternions</a>
-<!-- the element as a quadruple of real numbers and as a pair of complex numbers. -->
-
-<a href="articles_maths/introduction-to-the-2x2-matrix-element-representation-of-reduced-biquaternions.html">Introduction to the $2\times2$ Matrix Element Representation of Reduced Biquaternions</a>
-<!-- the regular representation and the $2\times2$ matrix model with real or complex entries. -->
-
-<a href="articles_maths/reduced-biquaternion-other-algebraic-element-representations.html">Reduced Biquaternion Other Algebraic Element Representations</a>
-<!-- the remaining representations and their comparison. -->
-
-#### Reduced Biquaternions Polar Element Representation
-
-<a href="articles_maths/reduced-biquaternions-polar-element-representation.html">Reduced Biquaternions Polar Element Representation</a>
-<!-- the polar form, its uniqueness under the phase-range convention and the two-factor reading. -->
-
-#### Operators
-
-<a href="articles_maths/operators-on-the-reduced-biquaternions.html">Operators on the Reduced Biquaternions</a>
-<!-- the operators of the four general products collected and compared. -->
-
-#### Operators Representations
-
-### Topology
-
-#### Introduction to Topology on the Reduced Biquaternions
-
-<a href="articles_maths/topology-in-the-space-of-reduced-biquaternions.html">Topology in the Space of Reduced Biquaternions</a>
-<!-- the topology of the space and its relation to the four general products. -->
-
-#### Topology of the Reduced Biquaternion Algebra
-
-<a href="articles_maths/the-euclidean-topology-of-the-reduced-biquaternion-algebra.html">The Euclidean Topology of the Reduced Biquaternion Algebra</a>
-<!-- the Euclidean topology, the unit group as a topological group and the topology of the zero-divisor cone. -->
-
-#### Metrics of the Reduced Biquaternion Algebra
-
-<a href="articles_maths/topology-and-metric-for-each-of-the-operations-of-the-reduced-biquaternions.html">Topology and Metric for Each of the Operations</a>
-<!-- the topology and the metric attached to each of the four general products. -->
-
-### Analysis
-
-<a href="articles_maths/reduced-biquaternion-analysis.html">Reduced Biquaternion Analysis</a>
-<!-- the analysis on the space and the part the two idempotent factors play. -->
-
-<a href="articles_maths/reduced-biquaternion-regular-functions.html">Reduced Biquaternion Regular Functions</a>
-<!-- regular functions and the Cauchy-Riemann system of the algebra. -->
-
-<a href="articles_maths/reduced-biquaternion-spectral-theory.html">Reduced Biquaternion Spectral Theory</a>
-<!-- spectral theory for the operators on the algebra. -->
-
-<a href="articles_maths/reduced-biquaternion-integration.html">Reduced Biquaternion Integration</a>
-<!-- integration and the integral theorems. -->
-
-<a href="articles_maths/reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>
-<!-- the elementary functions and their reduction to two complex factors. -->
-
-<a href="articles_maths/reduced-biquaternion-higher-special-functions.html">Reduced Biquaternion Higher Special Functions</a>
-<!-- the higher special functions over the algebra. -->
-
-<a href="articles_maths/reduced-biquaternion-lie-group-and-exponential-structure.html">Reduced Biquaternion Lie Group and Exponential Structure</a>
-<!-- the exponential and the Lie group structure of the unit group. -->
-
-<a href="articles_maths/reduced-biquaternion-discrete-harmonic-analysis.html">Reduced Biquaternion Discrete Harmonic Analysis</a>
-<!-- the discrete reduced biquaternion Fourier transform and the idempotent reduction. -->
-
-<a href="articles_maths/reduced-biquaternion-continuous-harmonic-analysis.html">Reduced Biquaternion Continuous Harmonic Analysis</a>
-<!-- the continuous transform, the convolution theorem and the Bochner theorem. -->
-
-<a href="articles_maths/fueter-theory-for-reduced-biquaternions.html">Fueter Theory for Reduced Biquaternions</a>
-<!-- the Fueter theory on the algebra. -->
-
-### Geometry
-
-<a href="articles_maths/reduced-biquaternion-rotations-and-lorentz-transformations.html">Reduced Biquaternion Rotations and Lorentz Transformations</a>
-<!-- the elliptic and the hyperbolic rotation the two factors carry. -->
-
-<a href="articles_maths/reduced-biquaternion-automorphisms-and-derivations.html">Reduced Biquaternion Automorphisms and Derivations</a>
-<!-- the automorphisms and the derivations of the algebra. -->
-
-<a href="articles_maths/the-null-quadric-and-its-projective-geometry-for-the-reduced-biquaternions.html">The Null Quadric and its Projective Geometry</a>
-<!-- the null quadric of the norm and its projective geometry. -->
-
-<a href="articles_maths/reduced-biquaternion-versors-and-the-orthogonal-group.html">Reduced Biquaternion Versors and the Orthogonal Group</a>
-<!-- the versors and the orthogonal group of the bilinear form. -->
-
-<a href="articles_maths/the-unitary-group-of-the-reduced-biquaternion-algebra.html">The Unitary Group of the Reduced Biquaternion Algebra</a>
-<!-- the unitary group of the Hermitian form and its decomposition. -->
-
-<a href="articles_maths/reduced-biquaternions-and-hyperbolic-geometry.html">Reduced Biquaternions and Hyperbolic Geometry</a>
-<!-- the hyperbolic geometry the indefinite form carries. -->
-
-<a href="articles_maths/reduced-biquaternion-objects-and-their-matrix-correspondences.html">Reduced Biquaternion Objects and their Matrix Correspondences</a>
-<!-- the objects of the geometry and their matrix correspondences. -->
-
-<a href="articles_maths/reduced-biquaternion-spin-geometry.html">Reduced Biquaternion Spin Geometry</a>
-<!-- the spin geometry of the algebra. -->
-
-#### Fractal Geometry
-
-<a href="articles_maths/the-reduced-biquaternion-quadratic-map-and-its-julia-sets.html">The Reduced Biquaternion Quadratic Map and its Julia Sets</a>
-<!-- the quadratic family and its Julia sets. -->
-
-<a href="articles_maths/the-idempotent-decomposition-and-the-reduced-biquaternion-split-fractal.html">The Idempotent Decomposition and the Split Fractal</a>
-<!-- the reduction of the dynamics to the two complex factors. -->
-
-<a href="articles_maths/the-slices-of-the-reduced-biquaternion-julia-sets.html">The Slices of the Reduced Biquaternion Julia Sets</a>
-<!-- the slices of the Julia sets and their comparison. -->
-
-<a href="articles_maths/the-reduced-biquaternion-iterated-function-systems.html">The Reduced Biquaternion Iterated Function Systems</a>
-<!-- the contractions and the self-similar sets they produce. -->
-
-<a href="articles_maths/the-reduced-biquaternion-mandelbrot-set-and-the-connectedness-locus.html">The Reduced Biquaternion Mandelbrot Set and the Connectedness Locus</a>
-<!-- the connectedness locus and the effect of the zero divisors. -->
-
-<a href="articles_maths/the-hausdorff-dimension-of-the-reduced-biquaternion-julia-sets.html">The Hausdorff Dimension of the Reduced Biquaternion Julia Sets</a>
-<!-- the Hausdorff dimension of the Julia sets. -->
-
-### Applications
-
-<a href="articles_maths/least-squares-and-total-least-squares-over-the-reduced-biquaternions.html">Least Squares and Total Least Squares over the Reduced Biquaternions</a>
-<!-- the approximation $AX\approx B$ over the reduced biquaternions, $A\in\mathbb{B}_{\mathrm{r}}^{m\times n}$, $B\in\mathbb{B}_{\mathrm{r}}^{m\times d}$, $m\ge n+d$; the least squares, total least squares and mixed problems and the parameter $n_{1}$ of exact columns; the idempotent reduction to two complex problems, the multiplication componentwise and the norm $K$ half the sum of the two complex Frobenius norms; the arbitrary reduced biquaternion unknown against the complex and the real ones and the nesting of the minima; the form $K$ as a real inner product, the $K$-adjoint the bar-transpose and the Moore-Penrose inverse the pair of the complex pseudoinverses; the coefficient stack, the real representation and the source's equivalence; the algorithm of Householder reduction and singular value decomposition; existence and uniqueness by the two spectral gaps and the nonsingularity of $V_{22}$; the special cases of one right-hand side and of the complex field; the solution as a possible zero divisor. -->
-
-<a href="articles_maths/matrix-equations-and-structured-solutions-over-the-reduced-biquaternions.html">Matrix Equations and Structured Solutions over the Reduced Biquaternions</a>
-<!-- the linear matrix equation $\sum_lA_lX_lB_l=E$ over the reduced biquaternions with each unknown in an L-structure; the L-structure as a real subspace condition on the coefficient stack, with the basis matrix $M_L$, the real dimension $D$ and the structures of entry type $\mathrm{vec}(X)=\mathsf E_L\xi_L$; the four classical L-structures Toeplitz, symmetric Toeplitz, Hankel and circulant, their zero-one generating families $J_d$, $J_k+J_{-k}$, $R_m$, $Z_k$, their widths $2n-1,n,2n-1,n$ and the encodings $\mathsf E_T,\mathsf E_{ST},\mathsf E_H,\mathsf E_C$ of full column rank; the one algebra-valued system $\mathsf C\xi=\mathrm{vec}(E)$ assembled from the Kronecker products and the encodings, with the vec identity $\mathrm{vec}(AXB)=(B^{\mathsf T}\otimes A)\mathrm{vec}(X)$ holding over the commutative algebra and the reduction cited from *Least Squares and Total Least Squares over the Reduced Biquaternions*; the least-norm structured least squares solution as the pair of the complex Moore-Penrose solutions, with the consistency and uniqueness criteria; the source's real reading as the stacked system $\begin{pmatrix}Q_1\\Q_2\end{pmatrix}x=e$ and its partitioned pseudoinverse; and the applications to the structured equation $AXB+CYD=E$, to the partial inverse eigenvalue problem $M\Phi=\Phi\Lambda$ and to the generalized PDIEP $M\Phi=N\Phi\Lambda$. -->
-
-<a href="articles_maths/non-negative-matrix-factorization-over-the-reduced-biquaternions.html">Non-Negative Matrix Factorization over the Reduced Biquaternions</a>
-<!-- the non-negative reduced biquaternion matrix factorization $X\approx WH$ with the non-negative basis and the structured coefficient matrix; the two cones of matrices and their inclusion, the product formula in the four components and the closure of the product, the indispensability of the structured constraint with the witness $i^{2}=-1$; the non-negative reduced biquaternion rank, its bound and the structured data of a real basis; the reduction of the objective to the two complex factorizations and the coupling of the constraints in the idempotent components, with the band $H^{+}\ge|H^{-}|$; the graph Laplacian, the graph identity and the graph regularizer as the Dirichlet energy of the two real coefficient matrices; the alternating projected gradient method, the projection lemma, the backtracking line search and the nonincreasing objective with a stationary limit point. -->
-
 ## Biquaternions
 
 ### Generalities
@@ -6213,7 +6248,7 @@
 <a href="articles_maths/introduction-to-the-biquaternion-algebra.html">Introduction to the Biquaternion Algebra</a>
 <!-- the opening of the Biquaternions category: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its construction by the tensor product and the complexification of $\mathbb{H}$, the basis $e_0,e_1,e_2,e_3$ and the central scalar imaginary $i$; the element and its coordinates, the scalar–vector split and the complex bilinear dot and cross products; the multiplication, its coordinate rule, its scalar–vector form, the sixteen products of the basis and the multiplication table, bilinearity, the determination by the table; the algebra axioms, associativity, the two-sided unit $e_0$, non-commutativity, hence a four-dimensional associative unital non-commutative $\mathbb{C}$-algebra; the multiplication as the tensor product of the complex and the quaternion multiplications, hence $\mathbb{B}$ as the complexification of $\mathbb{H}$, with the quaternion subspace the image of the second factor embedding; the scalars read through the structure map $\varphi(A)=Ae_0$ and the central element of square $-1$ that carries the complex structure; the centre quoted as the scalar line, centrality; simplicity and the absence of division, with the witness $e_0+ie_1$; the generators $e_1,e_2$ and the presentation $\mathbb{C}\langle E_1,E_2\rangle/(E_1^2+1,E_2^2+1,E_1E_2+E_2E_1)$ as the quaternion algebra over $\mathbb{C}$, with the three-generator presentation shown to fail; the four conjugations $\natural,\bar{\cdot},{}^{*},\flat$, the Klein four-group and the six remarkable subspaces they single out; the classification $\mathbb{B}\cong M_2(\mathbb{C})$ and the reduced norm $N(\tilde Q)=\sum_\mu Q_\mu^2$ with the invertibility criterion $N\neq0$; and the subalgebra generated by one element, the plane $\mathbb{C}e_0\oplus\mathbb{C}\tilde{Q}$ being $\mathbb{C}\oplus\mathbb{C}$ or the dual numbers according as the vector part is anisotropic or isotropic. This article absorbs the retired *The Biquaternions ($\mathbb{B}$)* and is the first article of the Biquaternions category. -->
 
-<a href="articles_maths/the-four-products-their-forms-and-their-algebraic-norms.html">The Four Products, Their Forms and Their Algebraic Norms</a>
+<a href="articles_maths/the-products-their-forms-and-their-algebraic-norms.html">The Products, Their Forms and Their Algebraic Norms</a>
 <!-- the four general products, their scalar parts the four forms and the four algebraic norms: the two-slot construction, the collapse of the twelve operations to four forms, the Gram matrices and signatures and the groups, and the four algebraic norms with the definite $H$ and the multiplicative $N$. -->
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
@@ -6326,7 +6361,7 @@
 
 #### Operators Representations
 
-### The Krein Form
+#### The Krein Form
 
 <a href="articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.html">The Fundamental Symmetry of the Biquaternioid Algebra</a>
 <!-- the fundamental symmetry $J=\natural$: $\mathbb{C}$-linear, $J^2=\mathrm{id}$, self-adjoint for the Krein form, with the bridge $[\tilde Q,\tilde Q']=\langle J\tilde Q,\tilde Q'\rangle$ to the Hermitian form and $[J\tilde Q,\tilde Q]=\lVert\tilde Q\rVert_E^2$; the eigenspaces, the centre and the vector subspace, as the fundamental decomposition, so the decomposition is the splitting of an Algebra involution; $\natural$ as the $\mathbb{C}$-algebra anti-automorphism exchanging the sides of the left and right multiplications and the uniqueness of $\natural$ among the fundamental symmetries that respect the algebra; the whole family of fundamental symmetries as the open unit ball of the vector subspace, $\ell_{\tilde V}=\mathbb{C}(e_0+\tilde V)$ with $\lVert\tilde V\rVert_E<1$; the $J$-adjoint and the dictionary; the $J$-positive cone containing $J$; and the Pontryagin data — signature $(2,6)$ over $\mathbb R$ and $(1,3)$ over $\mathbb C$, negative index $6$ and $3$, Pontryagin index $\min(p,q)=2$ and $1$, so the algebra is $\Pi_6$ over $\mathbb R$ and $\Pi_3$ over $\mathbb C$. General theory: *The Fundamental Symmetry*, *Krein Spaces*, *Pontryagin Spaces*. -->
@@ -6373,6 +6408,9 @@
 
 <a href="articles_maths/biquaternion-analysis.html">Biquaternion Analysis</a>
 <!-- the Euclidean norm and the metric structure of $\mathbb{B}$; the distance, balls and neighbourhoods; limits of functions and continuity; the problem of differentiability and its two obstructions, the failure of left and right division and the zero divisors; the standard approach and the function theory it defines; functions on a four-dimensional subspace and their partial derivatives; the biquaternionic gradient and its quaternion conjugate; the d'Alembertian, the square of the gradient and the convective derivative; the relation to Fueter and Clifford analysis. -->
+
+<a href="articles_maths/the-differential-operators-the-products-the-forms-and-the-d-alembertian.html">The Differential Operators, the Products, the Forms and the D'Alembertian</a>
+<!-- the derivative conventions of the corpus collected in one place and read on the single operator the algebra differentiates with: the subscript that is a component or a label and never a derivative, every partial derivative written with $\partial$ and its variable named in full, the prime reserved for a function of one variable, and the imaginary-time derivative $\partial/\partial Q_t=-\frac{i}{c}\partial/\partial t$ on the material sector; the biquaternionic gradient $\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$ with its tilde marking the operator, its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$, the identity of the Hermitian and coefficientwise conjugates on the gradient, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ and $\overline{\tilde\nabla}=\tilde\nabla$, and the spatial gradient, the divergence, the curl and $\Delta_Q$; the four general products read on the gradient with an element-valued field $\tilde F=F_te_t+\vec F$, the plain product holding the divergence, the gradient and the curl with $\tilde\nabla\tilde F=-\tilde R$ the Maxwell equation, and the quaternionic bilinear, the Hermitian on the conjugated field and the Krein products, each with its half-sum and its half-difference; the four forms as the contractions of the derivative with the field, $\frac{\partial F_t}{\partial Q_t}-\nabla\cdot\vec F$, $\frac{\partial F_t}{\partial Q_t}+\nabla\cdot\vec F$, $\frac{\partial\bar F_t}{\partial Q_t}+\nabla\cdot\overline{\vec F}$ and $\frac{\partial\bar F_t}{\partial Q_t}-\nabla\cdot\overline{\vec F}$, each form conjugating its own slot; the four norms as the forms at their two equal arguments, giving two operators, the d'Alembertian $\Box=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\partial^2/\partial Q_t^2+\Delta_Q$ as the quaternionic bilinear and the Hermitian norm, scalar and acting coefficient by coefficient, and its partner $\partial^2/\partial Q_t^2-\Delta_Q$ as the plain bilinear and the Krein norm; the sector readings $\Box|_{\mathbb{M}_-}=\Delta-c^{-2}\partial^2/\partial t^2$, $\Box|_{\mathbb{M}_+}=\partial^2/\partial q_t^2-\sum_k\partial^2/\partial(q'_k)^2$ and the Euclidean four-dimensional Laplacian on the quaternion subspace, the signature belonging to the slice and not to the operator, with the statement that no article of the corpus defines a second d'Alembertian; the rule that a contraction is a form and never an index; and five worked examples. The conventions are *Conventions in Mathematics*; the owners are *Biquaternion Analysis*, *The 12 Products of the Biquaternioid $\mathbb{C}$ Space*, *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space* and *Remarkable Subspaces and the Analysis*, and the physics companion is *The Differential Operators, the Products, the Forms and the D'Alembertian in Biquaternionic Form*. -->
 
 <a href="articles_maths/biquaternion-regular-functions.html">Biquaternion Regular Functions</a>
 <!-- the biquaternion variable and its two complex structures; the Cauchy–Riemann operator and its conjugate; regularity as single-plane holomorphy against hypercomplex regularity; the system of regularity equations; examples; harmonicity and the factorisation of the Laplacian; the Cauchy integral formula where it holds; the shifted operator $D_\alpha = D + M_\alpha$, its three branches, its four theorems and the boundary-value criterion $P_\alpha f = f$, with the parameter itself allowed to be a zero divisor; the splitting of the Helmholtz null-set into the two shifted kernels by the differential projectors $\Pi_{\pm\alpha}$; where the complex analogy fails, the zero divisors and the null cone; the naive inverse function. -->
@@ -7159,66 +7197,3 @@
 
 <a href="articles_maths/comparison-of-automorphisms-and-derivations.html">Comparison of Automorphisms and Derivations</a>
 <!-- the automorphism group $\operatorname{Aut}$ and the derivation space $\operatorname{Der}$ of the eight algebras: the group, its real dimension and its number of components, its inner and outer parts, the derivation space and its dimension, and whether every derivation is inner; the passage from the trivial automorphism group of $\mathbb{R}$ and the two-element Galois group of $\mathbb{C}$ to the positive-dimensional inner automorphism groups of the quaternion, split-quaternion, biquaternion and split-biquaternion systems, with those groups read as the rotation and Lorentz groups of the invariant form of each algebra; the table of the automorphism groups and the derivation spaces. -->
-
-## Octonions
-
-### Algebra
-
-<a href="articles_maths/octonion-algebra.html">Octonion Algebra</a>
-<!-- the octonions on $\mathbb{R}^8$; the multiplication and its non-associativity; the norm; the conjugation; the relation to the normed division algebras and to the Hurwitz theorem of Part I; the relation to the Clifford algebras of Part II. -->
-
-<a href="articles_maths/octonion-norm-and-invertibility.html">Octonion Norm and Invertibility</a>
-<!-- the norm on the octonions; the invertibility criterion; the group of units and the fact that the octonions have no zero divisors, in contrast to the biquaternions and the split-biquaternions; the relation to the octonion algebra and to the division algebras of Part I. -->
-
-<a href="articles_maths/complex-octonions-and-the-clifford-algebra-cl6.html">Complex Octonions and the Clifford Algebra Cl(6)</a>
-<!-- the complex octonions $\mathbb{C}\otimes\mathbb{O}$ and Furey's Fano convention $e_1e_2=e_4$ with the shift and doubling rules, and its warning that the corpus's octonion basis is related to Furey's by a signed relabelling of the units which is not the identity, so results are not transplanted index by index; the complex octonionic chain algebra, associative, generated by the left multiplications and isomorphic to $\mathrm{Cl}(6)\cong\mathrm{Cl}_6(\mathbb{C})\cong M_8(\mathbb{C})$; the Clifford relations $\{e_i,e_j\}=-2\delta_{ij}$ of the six units, the $64$ independent monomials and the volume element $e_1e_2e_3e_4e_5e_6=e_7$; the maximal totally isotropic subspace, its ladder operators $\alpha_i,\alpha_i^\dagger$ and their anticommutation relations, and the number operator $N$ with spectrum $0,1,1,1,2,2,2,3$; the intrinsic $\mathrm{su}(3)$ of the MTIS, its standard structure constants, its identity with the octonionic automorphism generators fixing $e_7$, the weights of the ladder operators and the Casimir $4/3$; the primitive idempotent $P=\alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$, the eight-dimensional minimal left ideal $S^u$ and the charge operator $Q=N/3$ with values $0,1/3,2/3,1$. -->
-
-<a href="articles_maths/split-bioctonions-and-the-clifford-algebra-cl7.html">Split Bioctonions and the Clifford Algebra Cl(7)</a>
-<!-- the bioctonions $\mathbb{C}\otimes\mathbb{O}$, the split bioctonions $\mathbb{D}\otimes\mathbb{O}$ and the complex split bioctonions $\mathbb{C}\otimes\mathbb{D}\otimes\mathbb{O}\cong(\mathbb{C}\otimes\mathbb{O})\oplus(\mathbb{C}\otimes\mathbb{O})$; the chain algebra of a direct sum and the theorem that the chain algebra of the complex split bioctonions is $\mathrm{Cl}(7)\cong\mathrm{Cl}(6)\oplus\mathrm{Cl}(6)\cong M_8(\mathbb{C})\oplus M_8(\mathbb{C})$; the volume element $J=e_1\cdots e_7=\Gamma e_7$, central, self-adjoint and an involution, $J^2=1$, and the identity $e_7=-\Gamma J$ expressing the seventh generator as the $\mathrm{Cl}(6)$ volume element on each summand; the central idempotents $\Pi_{1,2}=\tfrac12(1\pm J)$ and the splitting into two copies of the complex octonionic chain algebra, each of complex dimension $64$; the parity automorphism $e_i\mapsto-e_i$ and the two inequivalent pinor representations distinguished by the eigenvalue of $J$; the Furey ladder operators, the primitive idempotent, the eight-dimensional minimal left ideal and the charges $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$ in each summand; the intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$ commuting with $J$, so that the two summands differ only in chirality; and the warning about the two meanings of the label $e_7$. -->
-
-<a href="articles_maths/maximal-totally-isotropic-subspaces-and-their-unitary-symmetries.html">Maximal Totally Isotropic Subspaces and Their Unitary Symmetries</a>
-<!-- isotropic and totally isotropic subspaces, the Witt index and the bound $\dim W\le n$ in dimension $2n$; the Witt decomposition and the Witt basis $u_i,u_i^\dagger$ with the Fock relations $\{u_i,u_j^\dagger\}=\delta_{ij}$; the number operator, its spectrum and the multiplicities $\binom nk$; the unitary symmetry $\mathfrak u(n)=\mathfrak{su}(n)\oplus\mathfrak u(1)$ of an MTIS, its Schwinger realization by the bivectors $u_i^\dagger u_j$, and the general group statement that the stabiliser of an MTIS is $\mathrm{U}(n)$; the primitive idempotent $u_1\cdots u_nu_n^\dagger\cdots u_1^\dagger$, the minimal left ideal and the Fock decomposition $\bigoplus_k\Lambda^k(\mathbf n)$, with the case $n=3$ giving $\mathbf1\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1$; the relation to the octonionic construction of the companion article, whose $\mathrm{Cl}(6)$ realization carries the charge spectrum $0,1/3,2/3,1$. -->
-
-#### Element Representations
-
-<a href="articles_maths/octonion-element-representations.html">Octonion Element Representations</a>
-<!-- representations of the octonions and their classification; the bimodules over a non-associative algebra and the obstruction to an associative module theory; the relation to the octonion algebra and to the representation theory of algebras. -->
-
-<a href="articles_maths/octonions-and-the-exceptional-lie-groups.html">Octonions and the Exceptional Lie Groups</a>
-<!-- the construction of the exceptional Lie groups from the octonions, by the magic square and through the exceptional Jordan algebras; $G_2$ as the automorphism group of the octonions; the relation to the Lie algebras of Part I and to the exceptional Jordan algebras of Part I. -->
-
-### Analysis
-
-<a href="articles_maths/octonion-analysis.html">Octonion Analysis</a>
-<!-- octonion analysis and its properties; the non-associativity and what it costs; the relation to the hypercomplex analysis and to the octonion algebra; the relation to the Clifford analysis of Part III. -->
-
-<a href="articles_maths/octonion-integration.html">Octonion Integration</a>
-<!-- integration of octonion-valued functions; the relation to the hypercomplex integration and to the octonion analysis of this system. -->
-
-<a href="articles_maths/octonion-special-functions.html">Octonion Special Functions</a>
-<!-- special functions of an octonion variable; the relation to the octonion analysis of this system and to the special functions of Part VI. -->
-
-<a href="articles_maths/octonion-harmonic-analysis.html">Octonion Harmonic Analysis</a>
-<!-- harmonic analysis on the octonions; the relation to the octonion analysis of this system and to the harmonic analysis of Part III. -->
-
-### Geometry
-
-<a href="articles_maths/octonion-geometry.html">Octonion Geometry</a>
-<!-- octonion geometry and its properties; the octonionic projective plane; the relation to the octonion algebra and to the exceptional geometry; the relation to the geometry of Part IV. -->
-
-<a href="articles_maths/octonions-and-exceptional-geometry.html">Octonions and Exceptional Geometry</a>
-<!-- the use of the octonions in exceptional geometry; the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ and the manifolds that carry them; the relation to the octonion algebra and to the $G_2$ and $\operatorname{Spin}(7)$ manifolds of Part IV. -->
-
-#### Fractal Geometry
-
-<a href="articles_maths/the-octonion-quadratic-map-and-the-non-associative-julia-sets.html">The Octonion Quadratic Map and the Non-Associative Julia Sets</a>
-<!-- the iteration of $x\mapsto x^2+c$ in the octonions, where the multiplication is neither commutative nor associative; the failure of the iterate to be well defined without a bracketing convention, and the two conventions, the left-nested and the right-nested, which give two different dynamics; the Julia set defined for each convention and the question of the two sets' relation; the statement that this is the least settled of the eight systems and that the article records what is known and what is open. -->
-
-<a href="articles_maths/the-octonion-mandelbrot-set.html">The Octonion Mandelbrot Set</a>
-<!-- the connectedness locus of the octonion quadratic family for each bracketing convention; the reduction to the complex slice, which is the critical slice, and the extra parameters the non-associativity contributes off it; the computational exploration of the low-dimensional subspaces and the pictures it gives; the comparison with the quaternion and the biquaternion loci. -->
-
-<a href="articles_maths/the-associator-and-the-closure-of-the-octonion-orbits.html">The Associator and the Closure of the Octonion Orbits</a>
-<!-- the associator of the octonions and the failure of the associativity as the obstruction that makes a multi-step iterate ambiguous; the orbit of a point under a bracketed iterate and the closure it acquires from the alternative bracketings, so that the orbit is a set and not a sequence; the measure of the orbit and the notion of a limit set for it; the relation to the alternative algebras and the Moufang identities of *Octonion Algebra*, cited rather than restated. -->
-
-<a href="articles_maths/the-octonion-iterated-function-systems.html">The Octonion Iterated Function Systems</a>
-<!-- the contractions of the octonions and the self-similar sets they produce; the linear systems built from left and right multiplications, whose attractors are governed by the associator; the exceptional geometry of the octonions and the self-similar sets it carries, cited to *Octonions and Exceptional Geometry*; the comparison with the quaternion systems, where the associativity removes the obstruction. -->

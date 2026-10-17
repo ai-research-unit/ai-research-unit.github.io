@@ -41,7 +41,7 @@ $$
 X^{\mathrm{lift}} f = \frac{d}{dt}\Big|_{t=0} L_{\exp(tX)}f .
 $$
 
-Hence the derived representation of the left regular representation is the representation by the left-invariant fields, and the right regular representation has the derived representation $X \mapsto -X^{\mathrm{lift}}^{R}$, where $X^{\mathrm{lift}}^{R}$ is the right-invariant field equal to $X$ at the identity.
+Hence the derived representation of the left regular representation is the representation by the left-invariant fields, and the right regular representation has the derived representation $X \mapsto -{X^{\mathrm{lift}}}^{R}$, where ${X^{\mathrm{lift}}}^{R}$ is the right-invariant field equal to $X$ at the identity.
 
 *Proof.* The value is $\frac{d}{dt}\big|_{t=0} f(\exp(-tX)x)$, which is the definition of the left-invariant field. The right statement is the same computation with $R_{\exp(tX)}$ and the right-trivialisation, the sign being that of the inverse in the flow.
 
@@ -50,14 +50,14 @@ Hence the derived representation of the left regular representation is the repre
 **Theorem.** The derived representation extends to an algebra homomorphism
 
 $$
-U(\mathrm{G}) \longrightarrow \operatorname{End}_\mathbb{C}(C^\infty(G)), \qquad X_1 \cdots X_k \longmapsto X^{\mathrm{lift}}_1 \cdots X^{\mathrm{lift}}_k ,
+\mathrm{U}(\mathrm{G}) \longrightarrow \operatorname{End}_\mathbb{C}(C^\infty(G)), \qquad X_1 \cdots X_k \longmapsto X^{\mathrm{lift}}_1 \cdots X^{\mathrm{lift}}_k ,
 $$
 
 whose image is the algebra $D_L(G)$ of left-invariant differential operators; it is injective, and its image on the right-invariant side is the opposite algebra $D_R(G)$.
 
-*Proof.* This is the universal property of the enveloping algebra applied to the Lie algebra homomorphism $X \mapsto X^{\mathrm{lift}}$, together with the isomorphism $U(\mathrm{G}) \cong D_L(G)$ of *Operators on a Lie Group*. The right-invariant side is the same statement with the opposite multiplication, since the right-invariant fields compose in the reverse order.
+*Proof.* This is the universal property of the enveloping algebra applied to the Lie algebra homomorphism $X \mapsto X^{\mathrm{lift}}$, together with the isomorphism $\mathrm{U}(\mathrm{G}) \cong D_L(G)$ of *Operators on a Lie Group*. The right-invariant side is the same statement with the opposite multiplication, since the right-invariant fields compose in the reverse order.
 
-**Corollary (the derived representations commute).** For all $u, v \in U(\mathrm{G})$ and the corresponding left- and right-invariant operators $u^{\mathrm{lift}} \in D_L(G)$, $v^{\mathrm{lift}} \in D_R(G)$, one has $u^{\mathrm{lift}}v^{\mathrm{lift}} = v^{\mathrm{lift}}u^{\mathrm{lift}}$.
+**Corollary (the derived representations commute).** For all $u, v \in \mathrm{U}(\mathrm{G})$ and the corresponding left- and right-invariant operators $u^{\mathrm{lift}} \in D_L(G)$, $v^{\mathrm{lift}} \in D_R(G)$, one has $u^{\mathrm{lift}}v^{\mathrm{lift}} = v^{\mathrm{lift}}u^{\mathrm{lift}}$.
 
 *Proof.* The left and right translations of the group commute and generate the two actions, so their differential operators commute; equivalently, the two-sided action differentiates to two commuting representations of the algebra and of its opposite.
 
@@ -65,12 +65,12 @@ whose image is the algebra $D_L(G)$ of left-invariant differential operators; it
 
 ### The Two-Sided Action on Functions
 
-**Definition.** The **two-sided action** of $U(\mathrm{G})\otimes U(\mathrm{G})$ on $C^\infty(G)$ is the extension of $(X,Y)\mapsto X^{\mathrm{lift}} - Y^{\mathrm{lift}}^{R}$, sending $u\otimes v$ to the operator $u^{\mathrm{lift}}\,v^{\mathrm{lift}}^{R}$; it is an algebra homomorphism from $U(\mathrm{G})\otimes U(\mathrm{G})$ to $\operatorname{End}_\mathbb{C}(C^\infty(G))$.
+**Definition.** The **two-sided action** of $\mathrm{U}(\mathrm{G})\otimes \mathrm{U}(\mathrm{G})$ on $C^\infty(G)$ is the extension of $(X,Y)\mapsto X^{\mathrm{lift}} - {Y^{\mathrm{lift}}}^{R}$, sending $u\otimes v$ to the operator $u^{\mathrm{lift}}\,{v^{\mathrm{lift}}}^{R}$; it is an algebra homomorphism from $\mathrm{U}(\mathrm{G})\otimes \mathrm{U}(\mathrm{G})$ to $\operatorname{End}_\mathbb{C}(C^\infty(G))$.
 
-**Theorem (the bi-invariant operators are the invariants).** An operator $D \in \operatorname{End}_\mathbb{C}(C^\infty(G))$ commutes with every left and every right translation if and only if it lies in the image of the centre $Z(U(\mathrm{G}))$,
+**Theorem (the bi-invariant operators are the invariants).** An operator $D \in \operatorname{End}_\mathbb{C}(C^\infty(G))$ commutes with every left and every right translation if and only if it lies in the image of the centre $Z(\mathrm{U}(\mathrm{G}))$,
 
 $$
-D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(U(\mathrm{G})) .
+D_L(G)\cap D_R(G) = Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G})) .
 $$
 
 *Proof.* This is the identification of the bi-invariant differential operators with the centre of the enveloping algebra from *Operators on a Lie Group*, restated as the statement that the operators fixed by the two-sided action are the elements of the centre. An operator commuting with all translations is in particular left-invariant and right-invariant, hence bi-invariant; the converse is the centrality.
@@ -115,7 +115,7 @@ Let $G$ be the Heisenberg group with its three-dimensional nilpotent algebra. Th
 
 ## Summary
 
-The left and right regular representations of a Lie group are the actions on smooth functions by $L_gf(x) = f(g^{-1}x)$ and $R_gf(x) = f(xg)$; they are actions by algebra automorphisms, they commute, and the kernel of the two-sided action is the anti-diagonal copy of the centre. The derived representation of the Lie algebra is by the left-invariant fields, $X \mapsto X^{\mathrm{lift}}$, it is the derivative of the left regular representation, and it extends to an injective algebra homomorphism $U(\mathrm{G}) \to D_L(G)$ from the universal enveloping algebra onto the left-invariant differential operators; the right-invariant operators are the same statement with the opposite multiplication, and they commute with the left-invariant ones. The operators commuting with both actions are exactly the image of the centre $Z(U(\mathrm{G}))$, that is the bi-invariant operators; the group algebra acts by convolution and commutes with the left translations, while the enveloping algebra is realised as the distributions supported at the identity. On a compact group the Peter--Weyl theorem decomposes the regular representation into the irreducible unitary representations with multiplicity their dimension, and the Casimir operator, which is the Laplacian of a bi-invariant metric, acts on each summand by its quadratic invariant.
+The left and right regular representations of a Lie group are the actions on smooth functions by $L_gf(x) = f(g^{-1}x)$ and $R_gf(x) = f(xg)$; they are actions by algebra automorphisms, they commute, and the kernel of the two-sided action is the anti-diagonal copy of the centre. The derived representation of the Lie algebra is by the left-invariant fields, $X \mapsto X^{\mathrm{lift}}$, it is the derivative of the left regular representation, and it extends to an injective algebra homomorphism $\mathrm{U}(\mathrm{G}) \to D_L(G)$ from the universal enveloping algebra onto the left-invariant differential operators; the right-invariant operators are the same statement with the opposite multiplication, and they commute with the left-invariant ones. The operators commuting with both actions are exactly the image of the centre $Z(\mathrm{U}(\mathrm{G}))$, that is the bi-invariant operators; the group algebra acts by convolution and commutes with the left translations, while the enveloping algebra is realised as the distributions supported at the identity. On a compact group the Peter--Weyl theorem decomposes the regular representation into the irreducible unitary representations with multiplicity their dimension, and the Casimir operator, which is the Laplacian of a bi-invariant metric, acts on each summand by its quadratic invariant.
 
 ## Summary of Notation
 
@@ -125,10 +125,10 @@ The left and right regular representations of a Lie group are the actions on smo
 | $R_gf(x) = f(xg)$ | the right regular representation |
 | $L_gR_h$ | the two-sided action, with kernel the anti-diagonal centre |
 | $X^{\mathrm{lift}}$ | the left-invariant field, the derived representation of $X$ |
-| $U(\mathrm{G}) \to D_L(G)$ | the extension to the enveloping algebra, injective |
-| $v^{\mathrm{lift}}^{R}$ | the right-invariant operator attached to $v$ |
-| $u^{\mathrm{lift}}v^{\mathrm{lift}}^{R} = v^{\mathrm{lift}}^{R}u^{\mathrm{lift}}$ | commutation of the two derived representations |
-| $Z^{\mathrm{lift}}(U(\mathrm{G}))$ | the operators commuting with both actions |
+| $\mathrm{U}(\mathrm{G}) \to D_L(G)$ | the extension to the enveloping algebra, injective |
+| ${v^{\mathrm{lift}}}^{R}$ | the right-invariant operator attached to $v$ |
+| $u^{\mathrm{lift}}{v^{\mathrm{lift}}}^{R} = {v^{\mathrm{lift}}}^{R}u^{\mathrm{lift}}$ | commutation of the two derived representations |
+| $Z^{\mathrm{lift}}(\mathrm{U}(\mathrm{G}))$ | the operators commuting with both actions |
 | $k[G]$ | the group algebra, acting by convolution |
 | $\bigoplus_\pi V_\pi\otimes V_\pi^{*}$ | the Peter--Weyl decomposition for compact $G$ |
 | $\langle\lambda,\lambda+2\varrho\rangle$ | the Casimir eigenvalue on a summand |

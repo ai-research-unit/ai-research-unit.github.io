@@ -14,19 +14,19 @@ The treatment is mathematically honest: every claim is either proved or stated a
 The complex plane $\mathbb{C}$ is a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$. Its **characters** are the continuous homomorphisms
 
 $$
-\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)), \qquad \xi \in \mathbb{C}.
+\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)), \qquad \xi \in \mathbb{C}.
 $$
 
-Equivalently, writing $\xi = b + i b'$ and $A = a + i a'$,
+Equivalently, writing $\xi = b + i b'$ and $Q = q + i q'$,
 
 $$
-\chi_\xi(A) = \exp(2\pi i (b a + b' a')).
+\chi_\xi(Q) = \exp(2\pi i (b q + b' q')).
 $$
 
 The dual group $\hat{\mathbb{C}}$ is isomorphic to $\mathbb{C}$ itself, and the pairing is
 
 $$
-\langle \xi, A \rangle = \operatorname{Re}(\bar{\xi} A) = b a + b' a'.
+\langle \xi, Q \rangle = \operatorname{Re}(\bar{\xi} Q) = b q + b' q'.
 $$
 
 So complex harmonic analysis is, at the level of the additive group, the same as Fourier analysis on $\mathbb{R}^2$. The complex structure enters through the identification of $\mathbb{C}$ with itself as a dual object, and through the interaction with multiplication.
@@ -36,13 +36,13 @@ So complex harmonic analysis is, at the level of the additive group, the same as
 The multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ is also a locally compact abelian group, isomorphic to $\mathbb{R}_{>0} \times \mathbb{S}^1$ via the polar decomposition
 
 $$
-A = r \exp(i\theta), \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
+Q = r \exp(i\theta), \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
 $$
 
 Its characters are
 
 $$
-\chi_{\tau, n}(A) = r^{i \tau} \exp(i n \theta), \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
+\chi_{\tau, n}(Q) = r^{i \tau} \exp(i n \theta), \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
 $$
 
 This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C}$, which is the Mellin transform in disguise.
@@ -54,13 +54,13 @@ This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C
 The **Fourier transform** of $f \in L^1(\mathbb{C})$ is
 
 $$
-(\mathcal F f)(\xi) = \int_{\mathbb{C}} f(A) \exp(-2\pi i \operatorname{Re}(\bar{\xi} A)) \, dA,
+(\mathcal F f)(\xi) = \int_{\mathbb{C}} f(Q) \exp(-2\pi i \operatorname{Re}(\bar{\xi} Q)) \, dQ,
 $$
 
-where $dA$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $A = a + i a'$ and $\xi = b + i b'$,
+where $dQ$ is Lebesgue measure on $\mathbb{C} \cong \mathbb{R}^2$. Writing $Q = q + i q'$ and $\xi = b + i b'$,
 
 $$
-(\mathcal F f)(b, b') = \int_{\mathbb{R}^2} f(a, a') \exp(-2\pi i (b a + b' a')) \, da \, da'.
+(\mathcal F f)(b, b') = \int_{\mathbb{R}^2} f(q, q') \exp(-2\pi i (b q + b' q')) \, dq \, dq'.
 $$
 
 This is the ordinary two-dimensional Fourier transform. The complex notation is a convenience; the content is the same.
@@ -69,11 +69,11 @@ This is the ordinary two-dimensional Fourier transform. The complex notation is 
 
 **Linearity.** $\widehat{af + bg} = a \mathcal F f + b \mathcal F g$.
 
-**Translation.** If $f_B(A) = f(A - B)$, then $\mathcal F f_B(\xi) = \exp(-2\pi i \operatorname{Re}(\bar{\xi} B)) (\mathcal F f)(\xi)$.
+**Translation.** If $f_{Q_2}(Q_1) = f(Q_1 - Q_2)$, then $\mathcal F f_{Q_2}(\xi) = \exp(-2\pi i \operatorname{Re}(\bar{\xi} Q_2)) (\mathcal F f)(\xi)$.
 
-**Modulation.** If $f_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A)) f(A)$, then $\mathcal F f_\xi(\eta) = (\mathcal F f)(\eta - \xi)$.
+**Modulation.** If $f_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)) f(Q)$, then $\mathcal F f_\xi(\eta) = (\mathcal F f)(\eta - \xi)$.
 
-**Scaling.** If $f_\lambda(A) = f(\lambda A)$ for $\lambda \in \mathbb{C}^\times$, then
+**Scaling.** If $f_\lambda(Q) = f(\lambda Q)$ for $\lambda \in \mathbb{C}^\times$, then
 
 $$
 \widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \mathcal F f\left(\frac{\xi}{\bar{\lambda}}\right),
@@ -81,7 +81,7 @@ $$
 
 where $\xi/\bar{\lambda}$ is complex division.
 
-**Rotation.** If $f_\theta(A) = f(\exp(i\theta) A)$, then $\mathcal F f_\theta(\xi) = (\mathcal F f)(\exp(i\theta) \xi)$. The Fourier transform commutes with rotations.
+**Rotation.** If $f_\theta(Q) = f(\exp(i\theta) Q)$, then $\mathcal F f_\theta(\xi) = (\mathcal F f)(\exp(i\theta) \xi)$. The Fourier transform commutes with rotations.
 
 **Conjugation.** $\widehat{\bar{f}}(\xi) = \overline{(\mathcal F f)(-\xi)}$.
 
@@ -106,10 +106,10 @@ This is the Plancherel theorem for $\mathbb{R}^2$, written in complex notation.
 **Theorem.** If $f \in L^1(\mathbb{C})$ and $\mathcal F f \in L^1(\mathbb{C})$, then
 
 $$
-f(A) = \int_{\mathbb{C}} (\mathcal F f)(\xi) \exp(2\pi i \operatorname{Re}(\bar{\xi} A)) \, d\xi
+f(Q) = \int_{\mathbb{C}} (\mathcal F f)(\xi) \exp(2\pi i \operatorname{Re}(\bar{\xi} Q)) \, d\xi
 $$
 
-for almost every $A$.
+for almost every $Q$.
 
 ## Convolution
 
@@ -118,7 +118,7 @@ for almost every $A$.
 The **convolution** of $f, g : \mathbb{C} \to \mathbb{C}$ is
 
 $$
-(f * g)(A) = \int_{\mathbb{C}} f(A - B) g(B) \, dB,
+(f * g)(Q_1) = \int_{\mathbb{C}} f(Q_1 - Q_2) g(Q_2) \, dQ_2,
 $$
 
 whenever the integral converges. This is the convolution on the additive group $\mathbb{C} \cong \mathbb{R}^2$.
@@ -144,7 +144,7 @@ $$
 The convolution is the additive convolution. There is also a **multiplicative convolution** on $\mathbb{C}^\times$, defined by
 
 $$
-(f \star g)(A) = \int_{\mathbb{C}^\times} f(A/B) g(B) \frac{dB}{|B|^2},
+(f \star g)(Q_1) = \int_{\mathbb{C}^\times} f(Q_1/Q_2) g(Q_2) \frac{dQ_2}{|Q_2|^2},
 $$
 
 whose Fourier transform is the Mellin transform.
@@ -156,7 +156,7 @@ whose Fourier transform is the Mellin transform.
 A holomorphic function $F : \mathbb{C} \to \mathbb{C}$ is of **exponential type** if there exist constants $A, B > 0$ such that
 
 $$
-|F(A)| \leq A \exp(B |A|), \qquad A \in \mathbb{C}.
+|F(Q)| \leq A \exp(B |Q|), \qquad Q \in \mathbb{C}.
 $$
 
 The **indicator function** of $F$ is
@@ -192,16 +192,16 @@ This theorem is the foundation of the theory of **hyperfunctions**, which are th
 The **Cauchy–Riemann operator** is
 
 $$
-\bar{\partial} = \frac{\partial}{\partial \bar{A}} = \frac{1}{2}\left( \frac{\partial}{\partial a} + i \frac{\partial}{\partial a'} \right).
+\bar{\partial} = \frac{\partial}{\partial \bar{Q}} = \frac{1}{2}\left( \frac{\partial}{\partial q} + i \frac{\partial}{\partial q'} \right).
 $$
 
 A function $f$ is holomorphic iff $\bar{\partial} f = 0$. The **Laplacian** on $\mathbb{C}$ is
 
 $$
-\Delta = 4 \partial \bar{\partial} = \frac{\partial^2}{\partial a^2} + \frac{\partial^2}{\partial a'^2},
+\Delta = 4 \partial \bar{\partial} = \frac{\partial^2}{\partial q^2} + \frac{\partial^2}{\partial q'^2},
 $$
 
-where $\partial = \partial/\partial A$.
+where $\partial = \partial/\partial Q$.
 
 ### The Fourier Transform and the Laplacian
 
@@ -226,7 +226,7 @@ where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the 
 The **fundamental solution** of the Laplacian on $\mathbb{C}$ is
 
 $$
-\Phi(A) = \frac{1}{2\pi} \log |A|.
+\Phi(Q) = \frac{1}{2\pi} \log |Q|.
 $$
 
 It satisfies
@@ -248,13 +248,13 @@ which is defined by principal value.
 The **fundamental solution** of the Cauchy–Riemann operator is
 
 $$
-\frac{1}{\pi A},
+\frac{1}{\pi Q},
 $$
 
 which satisfies
 
 $$
-\bar{\partial}\left( \frac{1}{\pi A} \right) = \delta_0
+\bar{\partial}\left( \frac{1}{\pi Q} \right) = \delta_0
 $$
 
 in the sense of distributions. This is the starting point of the theory of the **Bochner–Martinelli integral** and of the solution of the $\bar{\partial}$-equation.
@@ -263,7 +263,7 @@ in the sense of distributions. This is the starting point of the theory of the *
 
 ### The Hardy Spaces
 
-The **Hardy space** $H^p(D)$ on the unit disk $D = \{A : |A| < 1\}$ is the set of holomorphic functions $f$ on $D$ with
+The **Hardy space** $H^p(D)$ on the unit disk $D = \{Q : |Q| < 1\}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
 \|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
@@ -272,7 +272,7 @@ $$
 for $1 \leq p < \infty$, and
 
 $$
-\|f\|_{H^\infty} = \sup_{A \in D} |f(A)| < \infty
+\|f\|_{H^\infty} = \sup_{Q \in D} |f(Q)| < \infty
 $$
 
 for $p = \infty$.
@@ -290,7 +290,7 @@ The **Paley–Wiener space** $PW_B$ is the set of entire functions of exponentia
 The Paley–Wiener space is a reproducing kernel Hilbert space, with reproducing kernel
 
 $$
-K_B(A, B) = \frac{\sin(2\pi B (A - \bar{B}))}{\pi (A - \bar{B})}.
+K_B(Q_1, Q_2) = \frac{\sin(2\pi B (Q_1 - \bar{Q}_2))}{\pi (Q_1 - \bar{Q}_2)}.
 $$
 
 It is the natural setting for the sampling theorem of Shannon, which states that a function in $PW_B$ is determined by its values on the lattice $\mathbb{Z}/(2B)$.
@@ -300,13 +300,13 @@ It is the natural setting for the sampling theorem of Shannon, which states that
 The **Bergman space** $A^p(D)$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{A^p} = \left( \int_{D} |f(A)|^p \, da \, da' \right)^{1/p} < \infty.
+\|f\|_{A^p} = \left( \int_{D} |f(Q)|^p \, dq \, dq' \right)^{1/p} < \infty.
 $$
 
 For $p = 2$, the Bergman space is a reproducing kernel Hilbert space, with reproducing kernel
 
 $$
-K(A, B) = \frac{1}{\pi (1 - A \bar{B})^2}.
+K(Q_1, Q_2) = \frac{1}{\pi (1 - Q_1 \bar{Q}_2)^2}.
 $$
 
 It is the natural setting for the study of holomorphic functions with controlled $L^{n}$ growth on the disk.
@@ -316,7 +316,7 @@ It is the natural setting for the study of holomorphic functions with controlled
 The **Bloch space** $\mathcal{B}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{\mathcal{B}} = |f(0)| + \sup_{A \in D} (1 - |A|^2) |f'(A)| < \infty.
+\|f\|_{\mathcal{B}} = |f(0)| + \sup_{Q \in D} (1 - |Q|^2) |f'(Q)| < \infty.
 $$
 
 It is a Banach space, and it is the natural setting for the study of holomorphic functions with bounded mean oscillation of the derivative.
@@ -438,14 +438,14 @@ The wavelet transform localizes in both frequency and position, unlike the Fouri
 In the complex setting, the wavelet $\psi$ is allowed to be complex-valued, and the transform becomes
 
 $$
-W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(A) \overline{\psi\left( \frac{A - b}{a} \right)} \, dA, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{C}} f(Q) \overline{\psi\left( \frac{Q - b}{a} \right)} \, dQ, \qquad a \in \mathbb{C}^\times, \; b \in \mathbb{C}.
 $$
 
 The complex wavelet transform is used in image processing, where it provides both magnitude and phase information, and in the analysis of oriented textures.
 
 ## Summary
 
-Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi}A))$ are the exponentials from which the transform is built.
+Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi}Q))$ are the exponentials from which the transform is built.
 
 The Fourier transform on $\mathbb{C}$ is the transform on that group, written in the complex variable, and convolution is the group convolution on $\mathbb{R}^2$. The Paley–Wiener theorem relates the decay of the transform to the holomorphic extension of the function. The article then takes up the interaction of the transform with holomorphy: the Cauchy–Riemann operator and the Laplacian, the Hardy spaces of holomorphic functions on the disc, and the theorems describing how harmonic analysis restricts to the holomorphic category.
 
@@ -456,15 +456,15 @@ The last three sections extend the transform beyond the group setting: the Melli
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}$ | Complex plane |
-| $A = a + i a'$ | Generic complex number |
+| $Q = q + i q'$ | Generic complex number |
 | $\xi = b + i b'$ | Frequency variable |
-| $\chi_\xi(A) = \exp(2\pi i \operatorname{Re}(\bar{\xi} A))$ | Character of $\mathbb{C}$ |
+| $\chi_\xi(Q) = \exp(2\pi i \operatorname{Re}(\bar{\xi} Q))$ | Character of $\mathbb{C}$ |
 | $\mathcal F f$ | Fourier transform |
 | $f * g$ | Additive convolution |
 | $f \star g$ | Multiplicative (Mellin) convolution |
-| $\bar{\partial} = \partial/\partial \bar{A}$ | Cauchy–Riemann operator |
+| $\bar{\partial} = \partial/\partial \bar{Q}$ | Cauchy–Riemann operator |
 | $\Delta$ | Laplacian |
-| $D = \{A : |A| < 1\}$ | Unit disk |
+| $D = \{Q : |Q| < 1\}$ | Unit disk |
 | $H^p(D)$ | Hardy space |
 | $PW_B$ | Paley–Wiener space |
 | $A^p(D)$ | Bergman space |

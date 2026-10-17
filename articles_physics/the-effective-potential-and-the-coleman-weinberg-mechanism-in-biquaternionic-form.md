@@ -7,7 +7,7 @@ The **effective potential** is the part of the quantum effective action that sur
 This article works the effective potential of the scalar sector of the biquaternion framework $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ in the notation of the companion articles, and derives the Coleman–Weinberg result for the framework's scalar. The scalar sector has already been fixed by the read list. The framework's scalar is the **complex central field**
 
 $$
-\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_0 \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\},
+\tilde{\Phi}(\tilde{Q}) = \varphi(\tilde{Q})\,e_t \in \mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\},
 $$
 
 with $\varphi$ a complex function and $\mathbb{C}_{\mathbb{B}}$ the centre of the algebra. Its renormalizable invariant potential is a function of the single modulus
@@ -20,7 +20,7 @@ and the tree-level potential, the vacuum manifold, the radial mode and the would
 
 The findings are the following, and they are separated at the outset in the corpus's three-way form.
 
-- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and every gauge-invariant, $U(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $V''(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
+- **Established, and recomputed below.** The framework's scalar invariant is $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi})$, and every gauge-invariant, $\mathrm{U}(1)$-preserving potential is a function of $\rho$ alone. The one-loop effective potential of the central scalar is a function of $\rho$ alone as well, because the fluctuation operator of a central background is central: the radiative correction respects the central symmetry exactly and does not generate a non-central operator. The one-loop coefficient that multiplies $\rho^2\ln(\rho/\mu^2)$ is fixed by the field content; for the central scalar coupled to the central gauge field it is $B = (12ϙ^4 + \tfrac52\lambda^2)/(64\pi^2)$ in units $\hbar = c = 1$. With $B > 0$ the one-loop potential of a classically scale-invariant central scalar has a minimum at the exponentially small value $\ln(\langle \rho\rangle/\mu^2) = -\tfrac12 - \lambda/(4B)$, with $V''(\langle \rho\rangle) = 2B > 0$ and $V(\langle \rho\rangle) = -\tfrac{B}{2}\langle \rho\rangle^2 < 0$.
 - **Interpretation.** Interpretation the exponentially small scale as **dimensional transmutation** — a dimensionless coupling traded for a dimensionful vacuum scale — and reading the negative value of the potential at the minimum as the standard energy lowering of the broken phase is the standard interpretation of the algebra. It is labelled as interpretation where it occurs.
 - **Gap, left visible.** The loop integral, its regularization and its renormalization are standard field theory and are imported. The framework contributes the centrality of the fluctuation operator — which is what makes the effective potential a function of the central invariant and nothing else — and no native loop structure. Whether the framework's trace or biquaternion norm selects a preferred normalization of the renormalization scale, or a preferred value of the quartic coupling, is not shown here.
 
@@ -34,7 +34,7 @@ The findings are the following, and they are separated at the outset in the corp
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauging of the central phase.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta$. The scalar is $\tilde{\Phi} = \varphi\,e_0$ with $\varphi$ complex and $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$; the connection is $\tilde{A} = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$ with $A_0$ imaginary and $\vec A$ real, and the covariant derivative of the gauge-principle article is $D_\mu = \partial_\mu + i\kappa A_\mu$ with $\kappa = ϙ/\hbar$. The $ict$ metric for index contractions is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and $\partial_\mu\theta\partial^\mu\theta$ denotes the Lorentz-invariant contraction in that metric. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. In the loop integrals of this article we set $\hbar = c = 1$ and restore $\hbar$ only where the gauge-boson mass is quoted; the effective-potential loop integrals are conventionally written in that system. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector), with $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$ is the centre. The biquaternionic gradient is $\tilde{\nabla} = e_t\,\partial/\partial Q_t + e_k\,\partial/\partial Q_k$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - e_k\,\partial/\partial Q_k$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_t^2 + \Delta$. The scalar is $\tilde{\Phi} = \varphi\,e_t$ with $\varphi$ complex and $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$; the connection is $\tilde{A} = i\phi/c\,e_t + \vec A \in \mathbb{M}_-$ with $A_0$ imaginary and $\vec A$ real, and the covariant derivative of the gauge-principle article is $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$ with $\kappa = ϙ/\hbar$. The $ict$ metric for index contractions is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and $\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\theta\,\tilde\nabla\tilde\theta\bigr)$ denotes the Lorentz-invariant contraction in that metric. The trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. In the loop integrals of this article we set $\hbar = c = 1$ and restore $\hbar$ only where the gauge-boson mass is quoted; the effective-potential loop integrals are conventionally written in that system. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 ## The Invariant Potential and Its Symmetry
 
@@ -70,7 +70,7 @@ $$
 m_h^2 = \left.\frac{d^2V_0}{dh^2}\right|_{h=0} = \lambda v_0^2 ,
 $$
 
-and a vanishing angular mass, $m_\theta^2 = 0$: the potential depends on the modulus alone, so the phase direction is exactly flat. The angular field is the would-be Goldstone boson of the broken central $U(1)$, and the companion article on Goldstone's theorem derives its masslessness, its derivative couplings and its decay constant $f = \sqrt2\,v_0$ from the same potential.
+and a vanishing angular mass, $m_\theta^2 = 0$: the potential depends on the modulus alone, so the phase direction is exactly flat. The angular field is the would-be Goldstone boson of the broken central $\mathrm{U}(1)$, and the companion article on Goldstone's theorem derives its masslessness, its derivative couplings and its decay constant $f = \sqrt2\,v_0$ from the same potential.
 
 Two features of this potential matter for what follows. First, its **normalization** is fixed by the two parameters $\lambda$ and $v_0$, and the quartic coupling $\lambda$ is dimensionless while $v_0$ carries the dimension of mass. Second, at $v_0 = 0$ the potential is $\frac{\lambda}{4}\rho^2$: it is **scale invariant** at the classical level, its minimum is the degenerate point $\rho=0$, and no scale is present in the classical theory. It is this second case that the Coleman–Weinberg mechanism addresses.
 
@@ -87,7 +87,7 @@ $$
 
 and it has the loop expansion $\Gamma = S + \hbar\Gamma_1 + \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action, and they are used unchanged. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
-For a **constant** classical field $\tilde{\varphi} = \varphi_c\,e_0$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
+For a **constant** classical field $\tilde{\varphi} = \varphi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
 $$
 V_\text{eff}(\varphi_c) = -\frac{\Gamma[\varphi_c]}{\text{vol}},
@@ -273,7 +273,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 ## Summary
 
-The scalar sector of the biquaternion framework is the complex central field $\tilde{\Phi} = \varphi\,e_0$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
+The scalar sector of the biquaternion framework is the complex central field $\tilde{\Phi} = \varphi\,e_t$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
 
 For the classically scale-invariant case $v_0 = 0$ the one-loop potential is
 
@@ -302,17 +302,17 @@ The loop integral, its regularization and its renormalization are standard and a
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_1e_2 = e_3$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Centre of the algebra; value space of the scalar |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_0\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
-| $\tilde{\Phi} = \varphi\,e_0 \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
+| $\tilde{\nabla} = e_t\,\partial/\partial Q_t + e_k\,\partial/\partial Q_k$, $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$ | Biquaternionic gradient; d'Alembertian |
+| $\tilde{\Phi} = \varphi\,e_t \in \mathbb{C}_{\mathbb{B}}$ | Complex central scalar |
 | $\rho = \mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = |\varphi|^2$ | Central invariant; the potential's argument |
 | $V_0(\rho) = \frac{\lambda}{4}(\rho - v_0^2)^2$ | Tree-level invariant potential |
 | $\lambda, v_0$ | Quartic coupling; tree-level vacuum parameter; $v_0 = v/\sqrt2$, $\lambda = 4\beta$ against the Higgs companion's $V = \beta(\rho-v^2/2)^2$ |
 | $m_h^2 = \lambda v_0^2$, $m_\theta^2 = 0$ | Radial and angular (Goldstone) masses at tree level |
-| $D_\mu = \partial_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
+| $D_\mu = \partial/\partial Q_\mu + i\kappa A_\mu$, $\kappa = ϙ/\hbar$ | Covariant derivative of the central phase |
 | $ϙ$ | Gauge charge (parameter) |
 | $\Gamma[\tilde{\varphi}] = \langle\tilde{J},\tilde{\varphi}\rangle - W[\tilde{J}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S''[\tilde{\varphi}]$ | One-loop effective action (determinant) |

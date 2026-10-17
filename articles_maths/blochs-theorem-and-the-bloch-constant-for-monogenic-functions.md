@@ -6,7 +6,7 @@ Bloch's theorem is the foundational statement of geometric function theory that 
 
 The article is the Bloch-type companion of *Quaternion Regular Functions*, which owns the reduced-quaternion operator, the Riesz system, the hypercomplex derivative, the hyperholomorphic constants and the spherical monogenics used here without proof. The classical theory is *Complex Harmonic Analysis* for the Bloch space and the one-variable background, and the comparison with the conformal case is made throughout. The Bloch theorem and the Bloch constant are the only objects claimed here: the estimates of the hypercomplex derivative and of its primitive are the ones proved by the source, restated in this corpus's notation and conventions.
 
-Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_0+q_1e_1+q_2e_2$ ranges over $\mathbb{R}^3$; $D = \partial_0+e_1\partial_1+e_2\partial_2$ and $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is **monogenic** when $Df = 0$, and its **hypercomplex derivative** is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the **maximum modulus function** is
+Throughout, $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y\}$ is the real vector space of reduced quaternions, a three-dimensional subspace of $\mathbb{H}$ that is not a subalgebra; $\tilde q = q_t+q_x\vec e_x+q_y\vec e_y$ ranges over $\mathbb{R}^3$; $D = \partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y$ and $\bar D = \partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y$ are the reduced Cauchy–Riemann operator and its conjugate, with $D\bar D = \bar DD = \Delta_3$; a function is **monogenic** when $Df = 0$, and its **hypercomplex derivative** is $\tfrac12\bar Df$. The ball of centre $0$ and radius $r$ is $B_r$, and for a continuous $\mathcal{A}$-valued function the **maximum modulus function** is
 
 $$
 \mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)|.
@@ -84,7 +84,7 @@ $$
 \left|\mathcal{P}_r\!\left\{(\tfrac12\bar D)f(\tilde q)-(\tfrac12\bar D)f(0)\right\}\right| \leq \frac{12}{\sqrt3}\,\frac{|\tilde q|^3\,r\left(4|\tilde q|^2+9r^2-11|\tilde q|r\right)}{(r-|\tilde q|)^5}\;\mathcal{M}\!\left((\tfrac12\bar D)f,\,r\right).
 $$
 
-The linear term $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.
+The linear term $\mathbf{X}^{0,\dagger}_1(\tilde q)\,(\tfrac12\bar D)f(0)$, with $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_t+\tfrac12q_x\vec e_x+\tfrac12q_y\vec e_y$, is the degree-one monogenic polynomial, and the subtraction of it is the step that makes the estimate orthogonal to the hyperholomorphic constants and hence sharp enough for the theorem.
 
 ### The orthogonality, and why it is the crux
 
@@ -222,13 +222,13 @@ The constant as printed in the source, $1/120-(31096/20511149)\sqrt3$, is correc
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_0,e_1,e_2\}$ | Reduced quaternions; a real subspace, not a subalgebra |
-| $D = \partial_0+e_1\partial_1+e_2\partial_2$ | Reduced Cauchy–Riemann operator on $\mathbb{R}^3$ |
-| $\bar D = \partial_0-e_1\partial_1-e_2\partial_2$ | Its conjugate; $D\bar D = \bar DD = \Delta_3$ |
+| $\mathcal{A} = \operatorname{span}_\mathbb{R}\{e_t,\vec e_x,\vec e_y\}$ | Reduced quaternions; a real subspace, not a subalgebra |
+| $D = \partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y$ | Reduced Cauchy–Riemann operator on $\mathbb{R}^3$ |
+| $\bar D = \partial/\partial Q_t-\vec e_x\partial/\partial Q_x-\vec e_y\partial/\partial Q_y$ | Its conjugate; $D\bar D = \bar DD = \Delta_3$ |
 | $Df = 0$ | Monogenicity; two-sided, $Df = 0\iff fD = 0$ |
 | $\tfrac12\bar Df$ | Hypercomplex derivative |
 | $\mathcal{P}, \mathcal{P}_r$ | Monogenic primitive, and its normalisation to $B_r$ orthogonal to the constants |
-| $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_0+\tfrac12q_1e_1+\tfrac12q_2e_2$ | Degree-one monogenic polynomial; $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$ |
+| $\mathbf{X}^{0,\dagger}_1(\tilde q) = q_t+\tfrac12q_x\vec e_x+\tfrac12q_y\vec e_y$ | Degree-one monogenic polynomial; $(\tfrac12\bar D)\mathbf{X}^{0,\dagger}_1 = 1$ |
 | $\mathcal{R}^+(B_r;\mathcal{A})$ | Monogenic functions on $B_r$ |
 | $\mathcal{R}^+(B_r;\mathcal{A};n)$ | Homogeneous monogenic polynomials of degree $n$; $\dim = 2n+3$ |
 | $\mathcal{M}(f,r) = \max_{|\tilde q|\leq r}|f(\tilde q)|$ | Maximum modulus function |

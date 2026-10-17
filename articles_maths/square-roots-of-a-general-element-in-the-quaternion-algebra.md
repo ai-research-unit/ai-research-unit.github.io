@@ -2,65 +2,65 @@
 
 ## Introduction
 
-This article solves the equation $\tilde p^2=\tilde q$ in $\mathbb{H}$ for an arbitrary $\tilde q$. It is the general case of which *Square Roots of One and the Idempotents of the Quaternion Algebra* and *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*, above this article in this category, treat the three central values; the method is the split of a quaternion into its scalar and its vector part and the resulting pair of a quadratic and a linear equation, and it uses neither Clifford algebras nor forms. The result is a classification by the vanishing of the vector part of $\tilde q$: away from the scalar line there are exactly two roots, and on the scalar line the count is two roots, one root or a sphere of roots according as the scalar is positive, zero or negative. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category, and they are neither used nor needed.
+This article solves the equation $\tilde q_2^2=\tilde q_1$ in $\mathbb{H}$ for an arbitrary $\tilde q_1$. It is the general case of which *Square Roots of One and the Idempotents of the Quaternion Algebra* and *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*, above this article in this category, treat the three central values; the method is the split of a quaternion into its scalar and its vector part and the resulting pair of a quadratic and a linear equation, and it uses neither Clifford algebras nor forms. The result is a classification by the vanishing of the vector part of $\tilde q_1$: away from the scalar line there are exactly two roots, and on the scalar line the count is two roots, one root or a sphere of roots according as the scalar is positive, zero or negative. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category, and they are neither used nor needed.
 
 ## The Reduction
 
-Throughout, $\tilde q=q_0+\vec Q$ and $\tilde p=p_0+\vec P$ with $q_0,p_0\in\mathbb{R}$ and $\vec Q,\vec P$ in the vector subspace $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$, and $|\vec P|^2=p_1^2+p_2^2+p_3^2$ is the sum of the squares of the three coordinates, a non-negative real number.
+Throughout, $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$ with $q_{1t},q_{2t}\in\mathbb{R}$ and $\vec q_1,\vec q_2$ in the vector subspace $V=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$, and $|\vec q_2|^2=q_{2x}^2+q_{2y}^2+q_{2z}^2$ is the sum of the squares of the three coordinates, a non-negative real number.
 
-**Proposition (the square).** For $\tilde p=p_0+\vec P$,
-
-$$
-\tilde p^2=(p_0^2-|\vec P|^2)+2p_0\vec P.
-$$
-
-*Proof.* Expand: $p_0^2+2p_0\vec P+\vec P^2$. The square of a vector is the scalar $\vec P^2=-|\vec P|^2$, because the vector coordinates anticommute in pairs and $e_k^2=-e_0$; the cross terms cancel in pairs.
-
-**Corollary.** The equation $\tilde p^2=\tilde q$ is the pair
+**Proposition (the square).** For $\tilde q_2=q_{2t}e_t+\vec q_2$,
 
 $$
-2p_0\vec P=\vec Q,\qquad p_0^2-|\vec P|^2=q_0.
+\tilde q_2^2=(q_{2t}^2-|\vec q_2|^2)e_t+2q_{2t}\vec q_2.
 $$
 
-The second is the **reduced quadratic** in the unknown $t=p_0^2$; when $\vec Q\neq0$ the first determines $\vec P=\vec Q/(2p_0)$ and the second becomes the quadratic
+*Proof.* Expand: $q_{2t}^2+2q_{2t}\vec q_2+\vec q_2^2$. The square of a vector is the scalar $\vec q_2^2=-|\vec q_2|^2$, because the vector coordinates anticommute in pairs and $\vec e_\mu^2=-e_t$; the cross terms cancel in pairs.
+
+**Corollary.** The equation $\tilde q_2^2=\tilde q_1$ is the pair
 
 $$
-t^2-q_0t-\tfrac14|\vec Q|^2=0,\qquad \Delta=q_0^2+|\vec Q|^2,
+2q_{2t}\vec q_2=\vec q_1,\qquad q_{2t}^2-|\vec q_2|^2=q_{1t}.
 $$
 
-with discriminant $\Delta\geq0$ and $\sqrt\Delta=|\tilde q|$.
+The second is the **reduced quadratic** in the unknown $t=q_{2t}^2$; when $\vec q_1\neq0$ the first determines $\vec q_2=\vec q_1/(2q_{2t})$ and the second becomes the quadratic
+
+$$
+t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0,\qquad \Delta=q_{1t}^2+|\vec q_1|^2,
+$$
+
+with discriminant $\Delta\geq0$ and $\sqrt\Delta=|\tilde q_1|$.
 
 ## The Two Cases
 
-**Theorem (non-scalar case).** Let $\vec Q\neq0$. Then $\tilde q$ has exactly two square roots, and they are
+**Theorem (non-scalar case).** Let $\vec q_1\neq0$. Then $\tilde q_1$ has exactly two square roots, and they are
 
 $$
-\tilde p_\pm=\pm\Bigl(\sqrt{\tfrac12\bigl(q_0+|\tilde q|\bigr)}\;e_0+\frac{\vec Q}{2\sqrt{\tfrac12(q_0+|\tilde q|)}}\Bigr).
+\tilde q_{2\pm}=\pm\Bigl(\sqrt{\tfrac12\bigl(q_{1t}+|\tilde q_1|\bigr)}\;e_t+\frac{\vec q_1}{2\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}}\Bigr).
 $$
 
-*Proof.* The vector equation $2p_0\vec P=\vec Q$ forces $p_0\neq0$ and $\vec P=\vec Q/(2p_0)$. Substituting in the reduced quadratic gives $4p_0^4-4q_0p_0^2-|\vec Q|^2=0$, that is $t^2-q_0t-\tfrac14|\vec Q|^2=0$ with roots $\tfrac12(q_0\pm\sqrt\Delta)$. The minus root is $\tfrac12(q_0-|\tilde q|)$, negative because $\vec Q\neq0$ gives $|\tilde q|>|q_0|$; it yields no real $p_0$. The plus root is $\tfrac12(q_0+|\tilde q|)>0$, and it yields the two values $p_0=\pm\sqrt{\tfrac12(q_0+|\tilde q|)}$ and the two displayed roots. Since $p_0\neq0$ and $\vec P$ is determined by $p_0$, there are no others.
+*Proof.* The vector equation $2q_{2t}\vec q_2=\vec q_1$ forces $q_{2t}\neq0$ and $\vec q_2=\vec q_1/(2q_{2t})$. Substituting in the reduced quadratic gives $4q_{2t}^4-4q_{1t}q_{2t}^2-|\vec q_1|^2=0$, that is $t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0$ with roots $\tfrac12(q_{1t}\pm\sqrt\Delta)$. The minus root is $\tfrac12(q_{1t}-|\tilde q_1|)$, negative because $\vec q_1\neq0$ gives $|\tilde q_1|>|q_{1t}|$; it yields no real $q_{2t}$. The plus root is $\tfrac12(q_{1t}+|\tilde q_1|)>0$, and it yields the two values $q_{2t}=\pm\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}$ and the two displayed roots. Since $q_{2t}\neq0$ and $\vec q_2$ is determined by $q_{2t}$, there are no others.
 
-**Theorem (scalar case).** Let $\tilde q=q_0e_0$, so $\vec Q=0$. Then
+**Theorem (scalar case).** Let $\tilde q_1=q_{1t}e_t$, so $\vec q_1=0$. Then
 
 $$
-\tilde p^2=q_0e_0\iff
+\tilde q_2^2=q_{1t}e_t\iff
 \begin{cases}
-\tilde p=\pm\sqrt{q_0}\,e_0, & q_0>0,\\
-\tilde p=0, & q_0=0,\\
-\tilde p=\vec P\in V,\quad |\vec P|^2=-q_0, & q_0<0.
+\tilde q_2=\pm\sqrt{q_{1t}}\,e_t, & q_{1t}>0,\\
+\tilde q_2=0, & q_{1t}=0,\\
+\tilde q_2=\vec q_2\in V,\quad |\vec q_2|^2=-q_{1t}, & q_{1t}<0.
 \end{cases}
 $$
 
-*Proof.* With $\vec Q=0$ the vector equation reads $p_0\vec P=0$, so $p_0=0$ or $\vec P=0$. If $\vec P=0$ the scalar equation is $p_0^2=q_0$, solvable only for $q_0\geq0$, giving $\pm\sqrt{q_0}e_0$ for $q_0>0$ and $0$ for $q_0=0$. If $p_0=0$ the scalar equation is $-|\vec P|^2=q_0$, solvable only for $q_0\leq0$, giving $|\vec P|^2=-q_0$; for $q_0=0$ this is again $\tilde p=0$, and for $q_0<0$ it is the level set of a positive-definite quadratic form on the three-dimensional space $V$, a sphere of roots.
+*Proof.* With $\vec q_1=0$ the vector equation reads $q_{2t}\vec q_2=0$, so $q_{2t}=0$ or $\vec q_2=0$. If $\vec q_2=0$ the scalar equation is $q_{2t}^2=q_{1t}$, solvable only for $q_{1t}\geq0$, giving $\pm\sqrt{q_{1t}}e_t$ for $q_{1t}>0$ and $0$ for $q_{1t}=0$. If $q_{2t}=0$ the scalar equation is $-|\vec q_2|^2=q_{1t}$, solvable only for $q_{1t}\leq0$, giving $|\vec q_2|^2=-q_{1t}$; for $q_{1t}=0$ this is again $\tilde q_2=0$, and for $q_{1t}<0$ it is the level set of a positive-definite quadratic form on the three-dimensional space $V$, a sphere of roots.
 
-**Theorem (classification).** Every $\tilde q\in\mathbb{H}$ has at least one square root, and the root set is
+**Theorem (classification).** Every $\tilde q_1\in\mathbb{H}$ has at least one square root, and the root set is
 
 | Case | Root set | Cardinality |
 |---|---|---|
-| $\vec Q\neq0$ | $\{\tilde p_+,\tilde p_-\}$ | two |
-| $\vec Q=0$, $q_0>0$ | $\{\pm\sqrt{q_0}e_0\}$ | two |
-| $\vec Q=0$, $q_0=0$ | $\{0\}$ | one |
-| $\vec Q=0$, $q_0<0$ | $\{\vec P\in V : |\vec P|^2=-q_0\}$ | a sphere |
+| $\vec q_1\neq0$ | $\{\tilde q_{2+},\tilde q_{2-}\}$ | two |
+| $\vec q_1=0$, $q_{1t}>0$ | $\{\pm\sqrt{q_{1t}}e_t\}$ | two |
+| $\vec q_1=0$, $q_{1t}=0$ | $\{0\}$ | one |
+| $\vec q_1=0$, $q_{1t}<0$ | $\{\vec q_2\in V : |\vec q_2|^2=-q_{1t}\}$ | a sphere |
 
 *Proof.* The two preceding theorems.
 
@@ -68,11 +68,11 @@ The minus root of the reduced quadratic is what the positive-definiteness of the
 
 ## The Specialisation to the Central Values
 
-The three central equations of *Square Roots of One and the Idempotents of the Quaternion Algebra* and *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*, above this article in this category, are the cases $\vec Q=0$, $q_0=-1,0,1$ of the classification:
+The three central equations of *Square Roots of One and the Idempotents of the Quaternion Algebra* and *Square Roots of Zero and the Nilpotents of the Quaternion Algebra*, above this article in this category, are the cases $\vec q_1=0$, $q_{1t}=-1,0,1$ of the classification:
 
-- $q_0=-1$: the sphere $\{\vec P\in V : |\vec P|^2=1\}$, the unit sphere of the vector subspace, matching the roots of $-1$;
-- $q_0=0$: the single root $0$, matching the root set of $0$;
-- $q_0=1$: the pair $\{\pm e_0\}$, matching the roots of $+1$.
+- $q_{1t}=-1$: the sphere $\{\vec q_2\in V : |\vec q_2|^2=1\}$, the unit sphere of the vector subspace, matching the roots of $-1$;
+- $q_{1t}=0$: the single root $0$, matching the root set of $0$;
+- $q_{1t}=1$: the pair $\{\pm e_t\}$, matching the roots of $+1$.
 
 The count of the roots of $-1$ is a two-dimensional sphere, that of $+1$ is two points, and that of $0$ is one point; these are the three values of the classification table, and the agreement is a consistency check on the two articles rather than a new computation.
 
@@ -80,27 +80,27 @@ The count of the roots of $-1$ is a two-dimensional sphere, that of $+1$ is two 
 
 Each root below is checked by squaring.
 
-- $\tilde q=4e_0$: the roots are $\pm2e_0$, and $(-2e_0)^2=4e_0$.
-- $\tilde q=0$: the only root is $0$.
-- $\tilde q=-4e_0$: the roots are the pure quaternions $\vec P$ with $p_1^2+p_2^2+p_3^2=4$, for instance $\tilde p=2e_2$, and $(2e_2)^2=-4e_0$.
-- $\tilde q=e_1$, a pure unit quaternion: $|\tilde q|=1$ and $\tfrac12(q_0+|\tilde q|)=\tfrac12$, so $\tilde p_\pm=\pm\bigl(\tfrac{1}{\sqrt2}e_0+\tfrac{1}{\sqrt2}e_1\bigr)$; squaring gives $\tfrac12-\tfrac12+2\cdot\tfrac12 e_1=e_1$.
-- $\tilde q=3+2e_1+2e_2$: $|\tilde q|=\sqrt{9+4+4}=\sqrt{17}$, so $p_0^2=\tfrac12(3+\sqrt{17})\approx3.56$, so $\tilde p\approx1.89\,e_0+0.53\,e_1+0.53\,e_2$; squaring returns $\tilde q$ to the precision of the arithmetic.
-- $\tilde q=-3+4e_3$: $|\tilde q|=5$, $p_0^2=\tfrac12(-3+5)=1$, and the roots are $\pm(e_0+2e_3)$, since $(e_0+2e_3)^2=e_0+4e_3-4e_0=-3+4e_3$.
+- $\tilde q_1=4e_t$: the roots are $\pm2e_t$, and $(-2e_t)^2=4e_t$.
+- $\tilde q_1=0$: the only root is $0$.
+- $\tilde q_1=-4e_t$: the roots are the pure quaternions $\vec q_2$ with $q_{2x}^2+q_{2y}^2+q_{2z}^2=4$, for instance $\tilde q_2=2\vec e_y$, and $(2\vec e_y)^2=-4e_t$.
+- $\tilde q_1=\vec e_x$, a pure unit quaternion: $|\tilde q_1|=1$ and $\tfrac12(q_{1t}+|\tilde q_1|)=\tfrac12$, so $\tilde q_{2\pm}=\pm\bigl(\tfrac{1}{\sqrt2}e_t+\tfrac{1}{\sqrt2}\vec e_x\bigr)$; squaring gives $\tfrac12-\tfrac12+2\cdot\tfrac12 \vec e_x=\vec e_x$.
+- $\tilde q_1=3e_t+2\vec e_x+2\vec e_y$: $|\tilde q_1|=\sqrt{9+4+4}=\sqrt{17}$, so $q_{2t}^2=\tfrac12(3+\sqrt{17})\approx3.56$, so $\tilde q_2\approx1.89\,e_t+0.53\,\vec e_x+0.53\,\vec e_y$; squaring returns $\tilde q_1$ to the precision of the arithmetic.
+- $\tilde q_1=-3e_t+4\vec e_z$: $|\tilde q_1|=5$, $q_{2t}^2=\tfrac12(-3+5)=1$, and the roots are $\pm(e_t+2\vec e_z)$, since $(e_t+2\vec e_z)^2=e_t+4\vec e_z-4e_t=-3e_t+4\vec e_z$.
 
 ## Summary
 
-Writing $\tilde q=q_0+\vec Q$ and $\tilde p=p_0+\vec P$, the square is $\tilde p^2=(p_0^2-|\vec P|^2)+2p_0\vec P$, so the equation $\tilde p^2=\tilde q$ is the vector equation $2p_0\vec P=\vec Q$ and the reduced quadratic $t^2-q_0t-\tfrac14|\vec Q|^2=0$ in $t=p_0^2$, whose discriminant is $\Delta=q_0^2+|\vec Q|^2\geq0$. If the vector part of $\tilde q$ does not vanish there are exactly two roots, $\pm\tilde p$ with $p_0=\sqrt{\tfrac12(q_0+|\tilde q|)}$ and $\vec P=\vec Q/(2p_0)$; if it vanishes the roots are $\pm\sqrt{q_0}e_0$ for $q_0>0$, the single root $0$ for $q_0=0$, and the sphere $\{|\vec P|^2=-q_0\}$ for $q_0<0$. Every quaternion therefore has at least one square root over $\mathbb{R}$, and the three central equations $q_0=-1,0,1$ reproduce the roots of $-1$, of $0$ and of $+1$.
+Writing $\tilde q_1=q_{1t}e_t+\vec q_1$ and $\tilde q_2=q_{2t}e_t+\vec q_2$, the square is $\tilde q_2^2=(q_{2t}^2-|\vec q_2|^2)e_t+2q_{2t}\vec q_2$, so the equation $\tilde q_2^2=\tilde q_1$ is the vector equation $2q_{2t}\vec q_2=\vec q_1$ and the reduced quadratic $t^2-q_{1t}t-\tfrac14|\vec q_1|^2=0$ in $t=q_{2t}^2$, whose discriminant is $\Delta=q_{1t}^2+|\vec q_1|^2\geq0$. If the vector part of $\tilde q_1$ does not vanish there are exactly two roots, $\pm\tilde q_2$ with $q_{2t}=\sqrt{\tfrac12(q_{1t}+|\tilde q_1|)}$ and $\vec q_2=\vec q_1/(2q_{2t})$; if it vanishes the roots are $\pm\sqrt{q_{1t}}e_t$ for $q_{1t}>0$, the single root $0$ for $q_{1t}=0$, and the sphere $\{|\vec q_2|^2=-q_{1t}\}$ for $q_{1t}<0$. Every quaternion therefore has at least one square root over $\mathbb{R}$, and the three central equations $q_{1t}=-1,0,1$ reproduce the roots of $-1$, of $0$ and of $+1$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde q=q_0+\vec Q$ | Quaternion split into scalar part $q_0$ and vector part $\vec Q$ |
-| $\tilde p=p_0+\vec P$ | The unknown root, similarly split |
-| $V=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | The vector subspace |
-| $|\vec P|^2=p_1^2+p_2^2+p_3^2$ | Sum of the squares of the vector coordinates |
-| $t=p_0^2$ | The unknown of the reduced quadratic |
-| $\Delta=q_0^2+|\vec Q|^2$ | Discriminant of the reduced quadratic, $=|\tilde q|^2$ |
+| $\tilde q_1=q_{1t}e_t+\vec q_1$ | Quaternion split into scalar part $q_{1t}$ and vector part $\vec q_1$ |
+| $\tilde q_2=q_{2t}e_t+\vec q_2$ | The unknown root, similarly split |
+| $V=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | The vector subspace |
+| $|\vec q_2|^2=q_{2x}^2+q_{2y}^2+q_{2z}^2$ | Sum of the squares of the vector coordinates |
+| $t=q_{2t}^2$ | The unknown of the reduced quadratic |
+| $\Delta=q_{1t}^2+|\vec q_1|^2$ | Discriminant of the reduced quadratic, $=|\tilde q_1|^2$ |
 
 ## Further Reading
 

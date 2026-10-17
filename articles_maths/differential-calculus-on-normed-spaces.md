@@ -7,7 +7,7 @@ The derivative of a function of one real variable is a number, the derivative of
 
 The substance of the article is the local theory. The derivative is defined and its uniqueness and continuity are established; the rules of differentiation are collected; higher derivatives are identified with bounded symmetric multilinear maps and Taylor's theorem is given with a remainder; and the two structural theorems, the inverse function theorem and the implicit function theorem, are proved by one and the same device, the contraction mapping principle applied to a well-chosen auxiliary map. That principle is stated here, in the form the calculus needs, because the differential calculus of this article and the ordinary differential equations of the extension of this Part both rely on it, and because, treats its systematic theory.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are normed spaces over $\mathbb{K}$, and $U \subseteq X$ is open. The basic theory of norms, bounded maps, the operator norm, completeness and the Baire-based cornerstones is that of the companion articles *Normed and Banach Spaces* and *Banach and Hilbert Spaces*; the general locally convex setting is that of *Locally Convex Spaces*. Integration of vector-valued functions, used only for the integral form of the remainder, is the Bochner integral, whose properties follow from the scalar theory of *Measure Theory and Integration* by duality. The differentiation of measures, the differentiation theory of functions of a real variable and the differential equations that the theorems below make solvable are not treated here: the first two belong to *Measure Theory and Integration* and to *Modes of Convergence*, and the last to the extension of this Part that contains. The differential geometry of manifolds, where the same calculus is applied to the tangent bundle, belongs to Part II and to *Smooth Manifolds and Differential Geometry*.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$, $X$ and $Y$ are normed spaces over $\mathbb{K}$, and $\Omega \subseteq X$ is open. The basic theory of norms, bounded maps, the operator norm, completeness and the Baire-based cornerstones is that of the companion articles *Normed and Banach Spaces* and *Banach and Hilbert Spaces*; the general locally convex setting is that of *Locally Convex Spaces*. Integration of vector-valued functions, used only for the integral form of the remainder, is the Bochner integral, whose properties follow from the scalar theory of *Measure Theory and Integration* by duality. The differentiation of measures, the differentiation theory of functions of a real variable and the differential equations that the theorems below make solvable are not treated here: the first two belong to *Measure Theory and Integration* and to *Modes of Convergence*, and the last to the extension of this Part that contains. The differential geometry of manifolds, where the same calculus is applied to the tangent bundle, belongs to Part II and to *Smooth Manifolds and Differential Geometry*.
 
 No physics is invoked.
 
@@ -71,13 +71,13 @@ $$
 
 ### Definition and Uniqueness
 
-**Definition.** Let $f:U \to Y$. The function $f$ is **differentiable at $x \in U$** if there is a bounded linear map $Df(x) \in B(X,Y)$ with
+**Definition.** Let $f:\Omega \to Y$. The function $f$ is **differentiable at $x \in \Omega$** if there is a bounded linear map $Df(x) \in B(X,Y)$ with
 
 $$
 f(x+h)=f(x)+Df(x)h+o(\|h\|), \qquad \text{that is} \qquad \lim_{h \to 0}\frac{\|f(x+h)-f(x)-Df(x)h\|}{\|h\|}=0 .
 $$
 
-The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken over $h \neq 0$ with $x+h \in U$, and it is a limit in the norm of $Y$. If $f$ is differentiable at every point of $U$ and $x \mapsto Df(x)$ is continuous as a map $U \to B(X,Y)$, then $f$ is of class $C^1$, written $f \in C^1(U,Y)$.
+The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken over $h \neq 0$ with $x+h \in \Omega$, and it is a limit in the norm of $Y$. If $f$ is differentiable at every point of $\Omega$ and $x \mapsto Df(x)$ is continuous as a map $\Omega \to B(X,Y)$, then $f$ is of class $C^1$, written $f \in C^1(\Omega,Y)$.
 
 **Proposition (uniqueness).** If $f$ is differentiable at $x$, the derivative is unique.
 
@@ -95,17 +95,17 @@ The map $Df(x)$ is the **Fréchet derivative** of $f$ at $x$. The limit is taken
 
 ### The Rules of Differentiation
 
-**Theorem (algebra of derivatives).** Let $f,g:U \to Y$ be differentiable at $x$ and let $T \in B(Y,Z)$. Then:
+**Theorem (algebra of derivatives).** Let $f,g:\Omega \to Y$ be differentiable at $x$ and let $T \in B(Y,Z)$. Then:
 
 (i) $D(f+g)(x)=Df(x)+Dg(x)$ and $D(\lambda f)(x)=\lambda\,Df(x)$;
 
 (ii) $D(T \circ f)(x)=T \circ Df(x)$;
 
-(iii) if $\varphi:U \to \mathbb{K}$ is differentiable at $x$ then so is $\varphi f$, with $D(\varphi f)(x)h=\varphi(x)Df(x)h+(D\varphi(x)h)f(x)$.
+(iii) if $\varphi:\Omega \to \mathbb{K}$ is differentiable at $x$ then so is $\varphi f$, with $D(\varphi f)(x)h=\varphi(x)Df(x)h+(D\varphi(x)h)f(x)$.
 
 *Proof.* The difference quotients of (i) and (ii) are the corresponding combinations of the difference quotients of $f$ and $g$, each of which is $o(\|h\|)$; for (iii), $(\varphi f)(x+h)-(\varphi f)(x)=\varphi(x)Df(x)h+\varphi(x)o(\|h\|)+(D\varphi(x)h)f(x)+(D\varphi(x)h)Df(x)h+o(\|h\|)$ and the last two terms are $O(\|h\|^2)$, hence $o(\|h\|)$.
 
-**Theorem (chain rule).** Let $f:U \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with
+**Theorem (chain rule).** Let $f:\Omega \to V$ and $g:V \to Z$ with $V \subseteq Y$ open. If $f$ is differentiable at $x$ and $g$ is differentiable at $f(x)$, then $g \circ f$ is differentiable at $x$ with
 
 $$
 D(g \circ f)(x)=Dg(f(x)) \circ Df(x).
@@ -125,7 +125,7 @@ For $k=2$ this is the product rule $DA(x_1,x_2)(h_1,h_2)=A(h_1,x_2)+A(x_1,h_2)$;
 
 ### Partial Derivatives and the Total Derivative
 
-**Definition.** Let $X=X_1 \times \cdots \times X_n$ be a product of normed spaces with any of the equivalent product norms, and let $x=(x_1,\dots,x_n)$. The **partial derivative** of $f:U \to Y$ with respect to the $i$-th variable at $x$ is the derivative at $x_i$ of the map $u \mapsto f(x_1,\dots,x_{i-1},u,x_{i+1},\dots,x_n)$, written $D_if(x) \in B(X_i,Y)$; it is computed on the line through $x$ in the direction of $X_i$.
+**Definition.** Let $X=X_1 \times \cdots \times X_n$ be a product of normed spaces with any of the equivalent product norms, and let $x=(x_1,\dots,x_n)$. The **partial derivative** of $f:\Omega \to Y$ with respect to the $i$-th variable at $x$ is the derivative at $x_i$ of the map $u \mapsto f(x_1,\dots,x_{i-1},u,x_{i+1},\dots,x_n)$, written $D_if(x) \in B(X_i,Y)$; it is computed on the line through $x$ in the direction of $X_i$.
 
 **Theorem.** If $f$ is differentiable at $x$ with $X=X_1\times\cdots\times X_n$, then all partial derivatives exist and
 
@@ -143,10 +143,10 @@ Conversely, if the partial derivatives exist and are continuous on a neighbourho
 
 The mean value theorem of the real calculus has no direct vector-valued analogue: the function $f(t)=\exp(it)$ on $[0,2\pi]$ satisfies $f(2\pi)-f(0)=0$ while $f'$ never vanishes. What survives is an inequality.
 
-**Theorem (mean value inequality).** Let $U$ be convex, let $f:U \to Y$ be continuous on $U$ and differentiable on the interior, and suppose $\|Df(z)\|\le M$ for all $z$ in the interior. Then
+**Theorem (mean value inequality).** Let $\Omega$ be convex, let $f:\Omega \to Y$ be continuous on $\Omega$ and differentiable on the interior, and suppose $\|Df(z)\|\le M$ for all $z$ in the interior. Then
 
 $$
-\|f(x)-f(y)\| \le M\|x-y\| \qquad \text{for all } x,y \in U .
+\|f(x)-f(y)\| \le M\|x-y\| \qquad \text{for all } x,y \in \Omega .
 $$
 
 *Proof.* Fix $x,y$, fix $\varepsilon>0$ and put $\varphi(t)=f(x+t(y-x))$ for $t \in [0,1]$. Let $\Phi$ be the set of $t \in [0,1]$ such that $\|\varphi(s)-\varphi(0)\|\le(M+\varepsilon)s\|y-x\|$ for every $s \le t$. The set is nonempty, since $0 \in \Phi$, and closed by continuity. If $t \in \Phi$ with $t<1$, then differentiability at $t$ gives $\|\varphi(t+h)-\varphi(t)-\varphi'(t)h\|\le\varepsilon h\|y-x\|$ for all sufficiently small $h>0$, and $\|\varphi'(t)\|\le M\|y-x\|$, whence
@@ -157,13 +157,13 @@ $$
 
 so $t+h \in \Phi$. Hence $\Phi$ is open in $[0,1]$ as well as closed and nonempty, so $\Phi=[0,1]$; taking $t=1$ and letting $\varepsilon \to 0$ gives the inequality.
 
-**Corollary.** If $f$ is differentiable on a convex $U$ with $Df=0$ there, then $f$ is constant. If $f$ and $g$ have the same derivative on a convex $U$, they differ by a constant.
+**Corollary.** If $f$ is differentiable on a convex $\Omega$ with $Df=0$ there, then $f$ is constant. If $f$ and $g$ have the same derivative on a convex $\Omega$, they differ by a constant.
 
 ## Higher Derivatives and Taylor's Theorem
 
 ### The Second Derivative and Symmetry
 
-**Definition.** Let $f:U \to Y$ be differentiable. Its derivative is a map $Df:U \to B(X,Y)$, and if that map is differentiable at $x$ its derivative is the **second derivative**
+**Definition.** Let $f:\Omega \to Y$ be differentiable. Its derivative is a map $Df:\Omega \to B(X,Y)$, and if that map is differentiable at $x$ its derivative is the **second derivative**
 
 $$
 D^2f(x)=D(Df)(x) \in B\bigl(X,B(X,Y)\bigr)\cong \mathcal L^2(X;Y),
@@ -175,7 +175,7 @@ $$
 D^kf(x) \in \mathcal L^k(X;Y),
 $$
 
-defined wherever the preceding derivative is differentiable, and $f$ is of class $C^k$ if $D^kf$ exists and is continuous on $U$; $f$ is **smooth** if it is of class $C^k$ for every $k$.
+defined wherever the preceding derivative is differentiable, and $f$ is of class $C^k$ if $D^kf$ exists and is continuous on $\Omega$; $f$ is **smooth** if it is of class $C^k$ for every $k$.
 
 **Theorem (symmetry of the second derivative).** If $f$ is twice differentiable at $x$ and $D^2f$ is continuous at $x$, then $D^2f(x)$ is symmetric:
 
@@ -185,11 +185,11 @@ $$
 
 *Proof.* For small $s,t$ form the second difference $\Delta=f(x+sh+tk)-f(x+sh)-f(x+tk)+f(x)$, which is symmetric in $h,k$. Applying the mean value inequality twice, first to $u \mapsto f(x+u+tk)-f(x+u)$ whose derivative at $x+u$ is $Df(x+u+tk)-Df(x+u)$, and then to the map $u \mapsto Df(x+u+tk)-Df(x+u)$, gives $\Delta=D^2f(x)(sh,tk)+o(st)$ and likewise with $h,k$ exchanged; comparing and letting $s,t \to 0$ gives the result.
 
-**Corollary.** $D^kf(x)(h_1,\dots,h_k)$ is unchanged under permutations of $h_1,\dots,h_k$, so $D^kf(x)$ is symmetric; equivalently $D^kf(x)$ takes its values in $\mathcal L^k_{\mathrm{sym}}(X;Y)$. In coordinates on $\mathbb{R}^n$ the second derivative is the Hessian matrix $\bigl(\partial_i\partial_jf(x)\bigr)$ and its symmetry is the equality of mixed partial derivatives.
+**Corollary.** $D^kf(x)(h_1,\dots,h_k)$ is unchanged under permutations of $h_1,\dots,h_k$, so $D^kf(x)$ is symmetric; equivalently $D^kf(x)$ takes its values in $\mathcal L^k_{\mathrm{sym}}(X;Y)$. In coordinates on $\mathbb{R}^n$ the second derivative is the Hessian matrix $\bigl(\partial^2/\partial x_i\partial x_j\,f(x)\bigr)$ and its symmetry is the equality of mixed partial derivatives.
 
 ### Taylor's Theorem
 
-**Theorem (Taylor with integral remainder).** Let $f:U \to Y$ be of class $C^{k+1}$ and let $x \in U$, with the segment from $x$ to $x+h$ contained in $U$. Then
+**Theorem (Taylor with integral remainder).** Let $f:\Omega \to Y$ be of class $C^{k+1}$ and let $x \in \Omega$, with the segment from $x$ to $x+h$ contained in $\Omega$. Then
 
 $$
 f(x+h)=\sum_{j=0}^{k}\frac{1}{j!}D^jf(x)h^j+\int_0^1\frac{(1-t)^k}{k!}D^{k+1}f(x+th)h^{k+1}\,dt,
@@ -233,7 +233,7 @@ $$
 
 ## The Inverse Function Theorem
 
-**Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $U \subseteq X$ open, $f:U \to Y$ of class $C^1$, and let $x_0 \in U$ with $Df(x_0)$ invertible in $B(X,Y)$ and with a bounded inverse. Then there are open neighbourhoods $U_0$ of $x_0$ and $V_0$ of $y_0=f(x_0)$ such that $f:U_0 \to V_0$ is a bijection whose inverse $g:V_0 \to U_0$ is of class $C^1$, and
+**Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $\Omega \subseteq X$ open, $f:\Omega \to Y$ of class $C^1$, and let $x_0 \in \Omega$ with $Df(x_0)$ invertible in $B(X,Y)$ and with a bounded inverse. Then there are open neighbourhoods $\Omega_0$ of $x_0$ and $V_0$ of $y_0=f(x_0)$ such that $f:\Omega_0 \to V_0$ is a bijection whose inverse $g:V_0 \to \Omega_0$ is of class $C^1$, and
 
 $$
 Dg(y)=\bigl(Df(g(y))\bigr)^{-1} \qquad (y \in V_0).
@@ -261,13 +261,13 @@ so $Df(x,y)$ is invertible at every point and the theorem gives a local inverse 
 
 ## The Implicit Function Theorem
 
-**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $W \subseteq X \times Y$ be open and $F:W \to Z$ of class $C^1$, and let $(x_0,y_0) \in W$ with $F(x_0,y_0)=0$. Suppose the partial derivative $D_2F(x_0,y_0) \in B(Y,Z)$ is invertible with bounded inverse, where $D_2F$ denotes the derivative with respect to the second variable. Then there are open neighbourhoods $U_0$ of $x_0$ and $V_0$ of $y_0$ and a unique map $\varphi:U_0 \to V_0$ of class $C^1$ with
+**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $W \subseteq X \times Y$ be open and $F:W \to Z$ of class $C^1$, and let $(x_0,y_0) \in W$ with $F(x_0,y_0)=0$. Suppose the partial derivative $D_2F(x_0,y_0) \in B(Y,Z)$ is invertible with bounded inverse, where $D_2F$ denotes the derivative with respect to the second variable. Then there are open neighbourhoods $\Omega_0$ of $x_0$ and $V_0$ of $y_0$ and a unique map $\varphi:\Omega_0 \to V_0$ of class $C^1$ with
 
 $$
-F(x,\varphi(x))=0 \quad (x \in U_0), \qquad \varphi(x_0)=y_0,
+F(x,\varphi(x))=0 \quad (x \in \Omega_0), \qquad \varphi(x_0)=y_0,
 $$
 
-and for $x \in U_0$,
+and for $x \in \Omega_0$,
 
 $$
 D\varphi(x)=-\bigl(D_2F(x,\varphi(x))\bigr)^{-1}\circ D_1F(x,\varphi(x)).
@@ -285,7 +285,7 @@ If $F$ is of class $C^k$ then so is $\varphi$.
 
 In finite dimension the theory reduces to matrices, and the general theorems become the theorems of linear algebra and of the classical calculus.
 
-**Definition.** For $U \subseteq \mathbb{K}^n$ open and $f:U \to \mathbb{K}^m$ with components $f_1,\dots,f_m$, the **Jacobian matrix** at $x$ is
+**Definition.** For $\Omega \subseteq \mathbb{K}^n$ open and $f:\Omega \to \mathbb{K}^m$ with components $f_1,\dots,f_m$, the **Jacobian matrix** at $x$ is
 
 $$
 J_f(x)=\Bigl(\frac{\partial f_i}{\partial x_j}(x)\Bigr)_{i,j} \in M_{m\times n}(\mathbb{K}),
@@ -293,7 +293,7 @@ $$
 
 and $Df(x)$ is the linear map it represents.
 
-**Theorem.** (i) $f$ is differentiable at $x$ if and only if all partial derivatives $\partial_jf_i(x)$ exist and the linear map $h \mapsto J_f(x)h$ approximates $f$ to first order; then $Df(x)h=J_f(x)h$.
+**Theorem.** (i) $f$ is differentiable at $x$ if and only if all partial derivatives $\partial/\partial x_j\,f_i(x)$ exist and the linear map $h \mapsto J_f(x)h$ approximates $f$ to first order; then $Df(x)h=J_f(x)h$.
 
 (ii) The chain rule is matrix multiplication: $J_{g\circ f}(x)=J_g(f(x))J_f(x)$.
 
@@ -307,7 +307,7 @@ and $Df(x)$ is the linear map it represents.
 
 ## Summary
 
-A bounded multilinear map is one that is continuous, and the bounded $k$-linear maps form a normed space $\mathcal L(X_1,\dots,X_k;Y)$, complete when $Y$ is; the telescoping identity converts differences of products into sums of products of differences. A map $f:U\to Y$ is differentiable at $x$ when a bounded linear map $Df(x)$ approximates it to first order with error $o(\|h\|)$; the derivative is unique, differentiability implies continuity, and the chain rule $D(g\circ f)(x)=Dg(f(x))\circ Df(x)$ holds, with the sum, scalar-multiple and product rules. Partial derivatives exist whenever the total derivative does and assemble it as $Df(x)h=\sum_iD_if(x)h_i$; conversely continuous partial derivatives imply differentiability. The mean value theorem is replaced by the mean value inequality $\|f(x)-f(y)\|\le M\|x-y\|$ when $\|Df\|\le M$ on a convex set, and a vanishing derivative on a convex set forces constancy.
+A bounded multilinear map is one that is continuous, and the bounded $k$-linear maps form a normed space $\mathcal L(X_1,\dots,X_k;Y)$, complete when $Y$ is; the telescoping identity converts differences of products into sums of products of differences. A map $f:\Omega\to Y$ is differentiable at $x$ when a bounded linear map $Df(x)$ approximates it to first order with error $o(\|h\|)$; the derivative is unique, differentiability implies continuity, and the chain rule $D(g\circ f)(x)=Dg(f(x))\circ Df(x)$ holds, with the sum, scalar-multiple and product rules. Partial derivatives exist whenever the total derivative does and assemble it as $Df(x)h=\sum_iD_if(x)h_i$; conversely continuous partial derivatives imply differentiability. The mean value theorem is replaced by the mean value inequality $\|f(x)-f(y)\|\le M\|x-y\|$ when $\|Df\|\le M$ on a convex set, and a vanishing derivative on a convex set forces constancy.
 
 Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal L^k(X;Y)$, the symmetry of the second derivative holding when it is continuous and extending to all orders; Taylor's theorem holds with the integral remainder, giving an error bounded by $\|h\|^{k+1}\sup\|D^{k+1}f\|/(k+1)!$ for $C^{k+1}$ maps, and with the Peano remainder $o(\|h\|^k)$ for $C^k$ maps. The Banach contraction principle supplies the unique fixed point and the geometric error estimates, and from it the inverse function theorem follows by contraction of the auxiliary map $x \mapsto x+y-f(x)$: an invertible derivative at a point makes the map a local $C^k$ diffeomorphism with $D(f^{-1})(y)=(Df(f^{-1}(y)))^{-1}$. The implicit function theorem follows from the inverse theorem applied to $(x,y)\mapsto(x,F(x,y))$: an invertible partial derivative $D_2F$ makes the equation $F(x,y)=0$ locally solvable as $y=\varphi(x)$, with $D\varphi=-(D_2F)^{-1}D_1F$, and gives the local rank theorem. In finite dimension all of this is the Jacobian matrix: the chain rule is matrix multiplication and the inverse function theorem is the nonvanishing of $\det J_f$.
 
@@ -316,15 +316,15 @@ Higher derivatives are bounded symmetric multilinear maps $D^kf(x) \in \mathcal 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{K}$ | $\mathbb{R}$ or $\mathbb{C}$ |
-| $X,Y,Z$ | normed spaces; $U,V,W$ open subsets |
+| $X,Y,Z$ | normed spaces; $\Omega,V,W$ open subsets |
 | $B(X,Y)$ | bounded linear maps |
 | $\mathcal L(X_1,\dots,X_k;Y)$, $\mathcal L^k(X;Y)$ | bounded multilinear maps |
 | $\|A\|$ | norm of a multilinear map |
 | $\operatorname{Sym}(A)$, $\mathcal L^k_{\mathrm{sym}}$ | symmetrisation and symmetric multilinear maps |
 | $Df(x)$ | Fréchet derivative |
 | $D^kf(x)$ | $k$-th derivative, a symmetric $k$-linear map |
-| $C^k(U,Y)$, smooth | classes of differentiability |
-| $D_if$, $\partial_jf_i$ | partial derivatives |
+| $C^k(\Omega,Y)$, smooth | classes of differentiability |
+| $D_if$, $\partial/\partial x_j\,f_i$ | partial derivatives |
 | $J_f(x)$, $\det J_f$ | Jacobian matrix and determinant |
 | $o(\|h\|)$, $O(\|h\|^2)$ | Landau notation in the norm of $X$ |
 | $M$, $c$ | bounds and contraction constants |

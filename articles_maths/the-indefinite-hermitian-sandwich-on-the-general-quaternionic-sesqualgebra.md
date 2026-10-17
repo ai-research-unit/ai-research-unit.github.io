@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two general plain sesquilinear forms of different type. The first is the **definite** form of the dagger, $(\tilde P,\tilde W) = \mathrm{Sc}(\tilde P^{*}\tilde W)$, positive definite of signature $(4,0)$, on which the whole definite operator theory is built (*Two-Sided Operators on the General Plain Sesqualgebra*). The second is the **general quaternionic sesquilinear form** $\langle\tilde W,\tilde P\rangle_{\natural*} = \mathrm{Sc}(\tilde P^{\natural*}\tilde W)$ of signature $(1,3)$, whose fundamental symmetry is the involution $J={}^{\natural}$ and whose automorphism group is $U(1,3)$ (*The Krein Gram Matrix and the Restrictions of the Form*, *The Fundamental Symmetry of the Biquaternioid Algebra*, *The Krein Isometry Group and Its J-Contractions*). On a Krein space the sandwich by an operator $Q$ is formed with the **indefinite adjoint** $Q^{\dagger} = JQ^{*}J$ rather than with $Q^{*}$,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries two general plain sesquilinear forms of different type. The first is the **definite** form of the dagger, $(\tilde P,\tilde W) = \mathrm{Sc}(\tilde P^{*}\tilde W)$, positive definite of signature $(4,0)$, on which the whole definite operator theory is built (*Two-Sided Operators on the General Plain Sesqualgebra*). The second is the **general quaternionic sesquilinear form** $\langle\tilde W,\tilde P\rangle_{\natural*} = \mathrm{Sc}(\tilde P^{\natural*}\tilde W)$ of signature $(1,3)$, whose fundamental symmetry is the involution $J={}^{\natural}$ and whose automorphism group is $\mathrm{U}(1,3)$ (*The Krein Gram Matrix and the Restrictions of the Form*, *The Fundamental Symmetry of the Biquaternioid Algebra*, *The Krein Isometry Group and Its J-Contractions*). On a Krein space the sandwich by an operator $Q$ is formed with the **indefinite adjoint** $Q^{\dagger} = JQ^{*}J$ rather than with $Q^{*}$,
 
 $$
 H_{Q}(T) = Q\,T\,Q^{\dagger} ,
@@ -14,7 +14,7 @@ The two sandwiches must not be confused, and the algebra makes the difference vi
 
 The forms and the algebra are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; the definite form and the dagger sandwich are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *Two-Sided Operators on the General Plain Sesqualgebra*; the indefinite form, its symmetry and its adjoint are *The Krein Gram Matrix and the Restrictions of the Form*, *The Fundamental Symmetry of the Biquaternioid Algebra* and *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*; the positive cone of the indefinite order is *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*; the group of $J$-unitary parameters is *The Krein Isometry Group and Its J-Contractions*; and the general operator is *The Hermitian Sandwich on a Krein Space*.
 
-**Conventions.** The algebra is read in the coefficient basis $e_0,e_1,e_2,e_3$, so that $\tilde P = \sum_\mu P_\mu e_\mu$ is a vector of coefficients; the definite form is $(\tilde P,\tilde W) = \sum_\mu\overline{P_\mu}W_\mu$ and the general quaternionic sesquilinear form is $\langle\tilde W,\tilde P\rangle_{\natural*} = \sum_\mu\varepsilon_\mu\overline{P_\mu}W_\mu$ with $\varepsilon = (1,-1,-1,-1)$. The fundamental symmetry is $J={}^{\natural}$, the operator $\tilde P\mapsto \tilde P^{\natural}$ of matrix $E = \mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and
+**Conventions.** The algebra is read in the coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$, so that $\tilde P = \sum_\mu P_\mu e_\mu$ is a vector of coefficients; the definite form is $(\tilde P,\tilde W) = \sum_\mu\overline{P_\mu}W_\mu$ and the general quaternionic sesquilinear form is $\langle\tilde W,\tilde P\rangle_{\natural*} = \sum_\mu\varepsilon_\mu\overline{P_\mu}W_\mu$ with $\varepsilon = (1,-1,-1,-1)$. The fundamental symmetry is $J={}^{\natural}$, the operator $\tilde P\mapsto \tilde P^{\natural}$ of matrix $E = \mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis, and
 
 $$
 \langle\tilde W,\tilde P\rangle_{\natural*} = (J\tilde P,\tilde W) , \qquad J^{2} = \mathrm{id}, \qquad E^{2} = \mathrm{I}_4 .
@@ -24,10 +24,10 @@ The Krein adjoint of a $\mathbb{C}$-linear operator is $Q^{\dagger} = JQ^{*}J$, 
 
 ## The Coefficient Model of the Form
 
-**Proposition (the coefficient model).** Under the $\mathbb{C}$-linear identification $\tilde P\mapsto(P_0,P_1,P_2,P_3)$ of $\mathbb{B}$ with $\mathbb{C}^{4}$, the general quaternionic sesquilinear form is the standard form of signature $(1,3)$,
+**Proposition (the coefficient model).** Under the $\mathbb{C}$-linear identification $\tilde P\mapsto(P_t,P_x,P_y,P_z)$ of $\mathbb{B}$ with $\mathbb{C}^{4}$, the general quaternionic sesquilinear form is the standard form of signature $(1,3)$,
 
 $$
-\langle\tilde W,\tilde P\rangle_{\natural*} = \overline{P_0}W_0 - \overline{P_1}W_1 - \overline{P_2}W_2 - \overline{P_3}W_3 ,
+\langle\tilde W,\tilde P\rangle_{\natural*} = \overline{P_t}W_t - \overline{P_x}W_x - \overline{P_y}W_y - \overline{P_z}W_z ,
 $$
 
 and the fundamental symmetry is the diagonal operator $J = \mathrm{diag}(1,-1,-1,-1)$, self-adjoint for both forms, with $J^{2}=\mathrm{id}$ and with the twisted form $\langle\tilde W,\tilde P\rangle_{\natural*} = (J\tilde P,\tilde W)$.
@@ -61,7 +61,7 @@ H_{Q}\bigl(H_{S}(T)\bigr) = H_{QS}(T) , \qquad
 H_{Q}(ST) = H_{Q}(S)\,H_{Q}(T) \iff Q^{\dagger}Q = \mathrm{id} .
 $$
 
-*Proof.* The composition is associativity: $\mathfrak{Q}(S\,T\,S^{\dagger})Q^{\dagger} = (QS)T(QS)^{\dagger}$. For the second, $H_Q(S)H_Q(T) = QSQ^{\dagger}QTQ^{\dagger} = QS(Q^{\dagger}Q)TQ^{\dagger}$, which equals $QSTQ^{\dagger}=H_Q(ST)$ identically exactly when $Q^{\dagger}Q=\mathrm{id}$.
+*Proof.* The composition is associativity: $Q(S\,T\,S^{\dagger})Q^{\dagger} = (QS)T(QS)^{\dagger}$. For the second, $H_Q(S)H_Q(T) = QSQ^{\dagger}QTQ^{\dagger} = QS(Q^{\dagger}Q)TQ^{\dagger}$, which equals $QSTQ^{\dagger}=H_Q(ST)$ identically exactly when $Q^{\dagger}Q=\mathrm{id}$.
 
 **Proposition (the parameter rule).** For a complex scalar $\alpha$ and all $T$,
 
@@ -130,14 +130,14 @@ with $\bar{\tilde Q} = \sum_\mu\overline{Q_\mu}e_\mu$ the coefficient conjugatio
 **Theorem ($J$-unitarity of the algebra parameters).** For $\tilde Q\in\mathbb{B}$,
 
 $$
-L_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_0 , \qquad
-R_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_0 , \qquad
+L_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_t , \qquad
+R_{\tilde Q}\ \text{is }J\text{-unitary} \iff \tilde Q\in S^{1}e_t , \qquad
 \Theta_{\tilde Q}\ \text{is }J\text{-unitary} \iff \lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert = 1 .
 $$
 
-*Proof.* This is the theorem of *The Krein Isometry Group and Its J-Contractions*, repeated because the sandwich needs it: $L_{\tilde Q}^{\dagger}L_{\tilde Q}$ is the operator $\tilde P\mapsto\tilde Q\tilde P\bar{\tilde Q}$, which is the identity only for central phases; and $\Theta_{\tilde Q}^{\dagger}\Theta_{\tilde Q} = \Theta_{\langle\tilde Q,\tilde Q\rangle_{\natural}e_0} = \lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert^{2}\mathrm{id}$.
+*Proof.* This is the theorem of *The Krein Isometry Group and Its J-Contractions*, repeated because the sandwich needs it: $L_{\tilde Q}^{\dagger}L_{\tilde Q}$ is the operator $\tilde P\mapsto\tilde Q\tilde P\bar{\tilde Q}$, which is the identity only for central phases; and $\Theta_{\tilde Q}^{\dagger}\Theta_{\tilde Q} = \Theta_{\langle\tilde Q,\tilde Q\rangle_{\natural}e_t} = \lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert^{2}\mathrm{id}$.
 
-**Corollary (the two regimes of the sandwich).** For a central phase $\tilde Q = ce_0$, $\lvert c\rvert=1$, the parameter $L_{\tilde Q}=c\,\mathrm{id}$ gives the trivial sandwich $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$, so the only sandwich coming from a left or right multiplication by a $J$-unitary element is the identity. The interesting sandwiches come from the **norm-one slice**: for $\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$ the operator $\Theta_{\tilde Q}$ is $J$-unitary, the sandwich
+**Corollary (the two regimes of the sandwich).** For a central phase $\tilde Q = ce_t$, $\lvert c\rvert=1$, the parameter $L_{\tilde Q}=c\,\mathrm{id}$ gives the trivial sandwich $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$, so the only sandwich coming from a left or right multiplication by a $J$-unitary element is the identity. The interesting sandwiches come from the **norm-one slice**: for $\lvert \langle\tilde Q,\tilde Q\rangle_{\natural}\rvert=1$ the operator $\Theta_{\tilde Q}$ is $J$-unitary, the sandwich
 
 $$
 H_{\Theta_{\tilde Q}}(T) = \Theta_{\tilde Q}\circ T\circ\Theta_{\tilde Q}^{\dagger}
@@ -149,15 +149,15 @@ $$
 \bigl(\Theta_{\tilde Q}\bigr)^{\dagger} = \Theta_{\tilde Q^{-1}} .
 $$
 
-*Proof.* The triviality of the central-phase sandwich is the parameter rule with $\lvert c\rvert=1$. For the second, the theorem makes $\Theta_{\tilde Q}$ $J$-unitary on the norm-one slice, so $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$, the last equality by the composition law $\Theta_{\tilde Q}\Theta_{\tilde Q^{-1}}=\Theta_{e_0}=\mathrm{id}$ of *Two-Sided Operators on the General Plain Sesqualgebra*.
+*Proof.* The triviality of the central-phase sandwich is the parameter rule with $\lvert c\rvert=1$. For the second, the theorem makes $\Theta_{\tilde Q}$ $J$-unitary on the norm-one slice, so $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q}^{-1}=\Theta_{\tilde Q^{-1}}$, the last equality by the composition law $\Theta_{\tilde Q}\Theta_{\tilde Q^{-1}}=\Theta_{e_t}=\mathrm{id}$ of *Two-Sided Operators on the General Plain Sesqualgebra*.
 
-**Remark (the kernel of the sandwich map).** The sandwich map $Q\mapsto H_Q$ is a homomorphism from the $J$-unitary group into the automorphism group of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ whose kernel is the circle of scalars of modulus one: $H_Q(T)=T$ for all $T$ forces $Q$ central, and the $J$-unitary central operators are the phases. The algebra's own parameters generate inside the $J$-unitary group the subgroup $U(1)\times PU(2)\cong U(1)\times SO(3)$ of *The Krein Isometry Group and Its J-Contractions*, and the sandwich restricts to the automorphisms $\Theta_{\tilde Q}$ themselves, which are inner and depend only on the class of $\tilde Q$ in $PU(2)$.
+**Remark (the kernel of the sandwich map).** The sandwich map $Q\mapsto H_Q$ is a homomorphism from the $J$-unitary group into the automorphism group of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ whose kernel is the circle of scalars of modulus one: $H_Q(T)=T$ for all $T$ forces $Q$ central, and the $J$-unitary central operators are the phases. The algebra's own parameters generate inside the $J$-unitary group the subgroup $\mathrm{U}(1)\times PU(2)\cong \mathrm{U}(1)\times SO(3)$ of *The Krein Isometry Group and Its J-Contractions*, and the sandwich restricts to the automorphisms $\Theta_{\tilde Q}$ themselves, which are inner and depend only on the class of $\tilde Q$ in $PU(2)$.
 
 *Proof.* Multiplicativity and the kernel statement are the propositions of the first section; the subgroup statement is the corollary of the cited article, and the inner reading is the composition law, since $H_{\Theta_{\tilde Q}}(\Theta_{\tilde R}) = \Theta_{\tilde Q}\Theta_{\tilde R}\Theta_{\tilde Q}^{\dagger}$ is conjugation in the group of $J$-unitary operators.
 
 ## Contrast with the Definite Sandwich
 
-**Remark (two adjoints, two sandwiches).** The definite sandwich $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint* uses the adjoint $Q^{*}$ of the definite form $(\cdot,\cdot)$ and is multiplicative in its argument exactly when $\tilde Q^{*}\tilde Q=e_0$, that is on the unitary slice $U(2)$; the indefinite sandwich $H_Q(T)=QTQ^{\dagger}$ uses the adjoint of the general quaternionic sesquilinear form and is multiplicative exactly when $Q^{\dagger}Q=\mathrm{id}$, that is on the Krein-unitary group $U(1,3)$. The identity that separates them is that the adjoint of a left multiplication for the general quaternionic sesquilinear form changes sides, $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, whereas for the definite form it stays, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$.
+**Remark (two adjoints, two sandwiches).** The definite sandwich $\Theta_{\tilde Q}(\tilde P)=\tilde Q\tilde P\tilde Q^{*}$ of *The Hermitian Sandwich in the Biquaternion Algebra with Hermitian Adjoint* uses the adjoint $Q^{*}$ of the definite form $(\cdot,\cdot)$ and is multiplicative in its argument exactly when $\tilde Q^{*}\tilde Q=e_t$, that is on the unitary slice $\mathrm{U}(2)$; the indefinite sandwich $H_Q(T)=QTQ^{\dagger}$ uses the adjoint of the general quaternionic sesquilinear form and is multiplicative exactly when $Q^{\dagger}Q=\mathrm{id}$, that is on the Krein-unitary group $\mathrm{U}(1,3)$. The identity that separates them is that the adjoint of a left multiplication for the general quaternionic sesquilinear form changes sides, $(L_{\tilde Q})^{\dagger}=R_{\bar{\tilde Q}}$, whereas for the definite form it stays, $(L_{\tilde Q})^{*}=L_{\tilde Q^{*}}$.
 
 **Theorem (the failures of the indefinite sandwich).** For a $J$-unitary $Q$ that is not unitary, the sandwich $H_Q$ does not preserve the norm of the definite form, its orthogonal complements, its positive cone or its spectrum. It preserves the general quaternionic sesquilinear form, $J$-self-adjointness, $J$-positivity, $J$-unitarity, and the kernel and the image of every operator.
 
@@ -177,22 +177,22 @@ $$
 so $H_{J}(T)$ is self-adjoint for the definite form exactly when $T$ is, and $\langle H_{J}(T)\tilde P,\tilde P\rangle = \langle T(J\tilde P),J\tilde P\rangle$ shows that $H_{J}(T)\geq0$ for the definite form exactly when $T\geq0$. The link with the indefinite data is the dictionary of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*: $T$ is $J$-self-adjoint exactly when $JT$ is self-adjoint for the definite form, and in that case $H_{J}(T)=T^{*}$.
 
 ### The Boost
-On the two-dimensional sub-block spanned by $e_0,e_1$ let
+On the two-dimensional sub-block spanned by $e_t,\vec e_x$ let
 
 $$
 \mathsf{B}_{t} = \begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix} , \qquad t\in\mathbb{R},
 $$
 
-extended by the identity on $e_2,e_3$. Then $\mathsf{B}_{t}$ is $J$-unitary, $\mathsf{B}_{t}^{\dagger}=\mathsf{B}_{t}^{-1}=\mathsf{B}_{-t}$, and $\mathsf{B}_t$ is not unitary, since $\mathsf{B}_t^{*}\mathsf{B}_t = \mathsf{B}_t^{2} = \mathsf{B}_{2t}$. For $\tilde P = e_0$ one has $\mathsf{B}_te_0 = \cosh t\,e_0 + \sinh t\,e_1$ and
+extended by the identity on $\vec e_y,\vec e_z$. Then $\mathsf{B}_{t}$ is $J$-unitary, $\mathsf{B}_{t}^{\dagger}=\mathsf{B}_{t}^{-1}=\mathsf{B}_{-t}$, and $\mathsf{B}_t$ is not unitary, since $\mathsf{B}_t^{*}\mathsf{B}_t = \mathsf{B}_t^{2} = \mathsf{B}_{2t}$. For $\tilde P = e_t$ one has $\mathsf{B}_te_t = \cosh t\,e_t + \sinh t\,\vec e_x$ and
 
 $$
-\langle \mathsf{B}_te_0,\mathsf{B}_te_0\rangle_{\natural*} = 1 = \langle e_0,e_0\rangle_{\natural*} , \qquad (\mathsf{B}_te_0,\mathsf{B}_te_0) = \cosh^{2}t + \sinh^{2}t = \cosh 2t .
+\langle \mathsf{B}_te_t,\mathsf{B}_te_t\rangle_{\natural*} = 1 = \langle e_t,e_t\rangle_{\natural*} , \qquad (\mathsf{B}_te_t,\mathsf{B}_te_t) = \cosh^{2}t + \sinh^{2}t = \cosh 2t .
 $$
 
 So the sandwich preserves the general quaternionic sesquilinear form and changes the norm of the definite form, by the factor $\cosh 2t$ per unit of the parameter; the boost is the model of the failure theorem, and it is the reason the indefinite sandwich preserves the indefinite form only.
 
 ### The Phase Parameters
-For $\tilde Q = ce_0$ with $\lvert c\rvert=1$ the left multiplication is $L_{\tilde Q}=c\,\mathrm{id}$, $J$-unitary and central, and $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$ by the parameter rule. The sandwich therefore sees the projective class of the parameter, and the circle $S^{1}e_0$ is exactly the kernel of $Q\mapsto H_Q$, as the kernel computation of the previous section asserts.
+For $\tilde Q = ce_t$ with $\lvert c\rvert=1$ the left multiplication is $L_{\tilde Q}=c\,\mathrm{id}$, $J$-unitary and central, and $H_{L_{\tilde Q}}(T)=\lvert c\rvert^{2}T=T$ by the parameter rule. The sandwich therefore sees the projective class of the parameter, and the circle $S^{1}e_t$ is exactly the kernel of $Q\mapsto H_Q$, as the kernel computation of the previous section asserts.
 
 ## Summary
 

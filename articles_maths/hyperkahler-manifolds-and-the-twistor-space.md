@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A hyperkähler manifold carries three complex structures $J_1,J_2,J_3$ with the quaternionic relations, each a Kähler structure for the same metric. The three are not isolated: every unit quaternion $\lambda=ae_1+be_2+ce_3$ gives a complex structure
+A hyperkähler manifold carries three complex structures $J_1,J_2,J_3$ with the quaternionic relations, each a Kähler structure for the same metric. The three are not isolated: every unit quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$ gives a complex structure
 
 $$
 I_\lambda = aJ_1+bJ_2+cJ_3 , \qquad I_\lambda^2=-\mathrm{id} ,
@@ -15,7 +15,7 @@ and the whole family is a two-sphere, the **twistor family** of the manifold. Th
 
 ## The Twistor Family of Complex Structures
 
-**Definition.** Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=ae_1+be_2+ce_3$, $a^2+b^2+c^2=1$, the **twistor family** is
+**Definition.** Let $(M,g,J_1,J_2,J_3)$ be hyperkähler with fundamental forms $\omega_i(X,Y)=g(J_iX,Y)$. For a unit imaginary quaternion $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$, $a^2+b^2+c^2=1$, the **twistor family** is
 
 $$
 I_\lambda=aJ_1+bJ_2+cJ_3 , \qquad \Omega_\lambda = a\omega_1+b\omega_2+c\omega_3 .
@@ -47,7 +47,7 @@ $$
 
 the fibre over $\lambda$ being $M$ with the complex structure $I_\lambda$; the **twistor lines** are the sections $x\mapsto (x,\lambda)$ for fixed $\lambda$, identified with $M$ as a complex manifold for that $\lambda$.
 
-**Theorem (the complex structure, quoted).** The total space $Z$ carries a complex structure $I$ whose restriction to the fibre $\pi^{-1}(\lambda)$ is $I_\lambda$ and whose horizontal part is the family of the $I_\lambda$ transported across the sphere; with respect to it the fibration $\pi$ is holomorphic, the twistor lines are holomorphic sections with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and on each fibre the two-form $\Omega_2+i\Omega_3$, restricted to the fibre $\pi^{-1}(e_1)$ and extended by the family, is a **holomorphic symplectic form** $\omega$ of $Z$: it is closed, of type $(2,0)$ with respect to $I$, and non-degenerate on the vertical tangent space.
+**Theorem (the complex structure, quoted).** The total space $Z$ carries a complex structure $I$ whose restriction to the fibre $\pi^{-1}(\lambda)$ is $I_\lambda$ and whose horizontal part is the family of the $I_\lambda$ transported across the sphere; with respect to it the fibration $\pi$ is holomorphic, the twistor lines are holomorphic sections with normal bundle $\mathcal{O}(1)\oplus\mathcal{O}(1)$, and on each fibre the two-form $\Omega_2+i\Omega_3$, restricted to the fibre $\pi^{-1}(\vec e_x)$ and extended by the family, is a **holomorphic symplectic form** $\omega$ of $Z$: it is closed, of type $(2,0)$ with respect to $I$, and non-degenerate on the vertical tangent space.
 
 **Proof sketch.** The integrability of $I$ uses the parallelness of the family and the holomorphicity of the fibration uses the anti-holomorphicity of the antipodal conjugation; the closedness of $\omega$ is that of the $\omega_i$ and the type is read from the Kähler forms of the family; the normal-bundle statement is the deformation computation of the twistor theory of *Twistor Spaces and the Hermitian Structure of a Conformal Manifold*, quoted. The construction is the standard hyperkähler twistor construction and its details are the cited literature.
 
@@ -69,7 +69,7 @@ the fibre over $\lambda$ being $M$ with the complex structure $I_\lambda$; the *
 
 ### The Flat Quaternionic Space
 
-For $\mathbb{H}^n$ with the flat metric the three structures are the constant left multiplications by $e_1,e_2,e_3$, the family $I_\lambda$ is constant in $\lambda$, and the twistor space is the product $\mathbb{H}^n\times\mathbb{CP}^1$ with the product complex structure; the holomorphic symplectic form is the constant form $\Omega_2+i\Omega_3$.
+For $\mathbb{H}^n$ with the flat metric the three structures are the constant left multiplications by $\vec e_x,\vec e_y,\vec e_z$, the family $I_\lambda$ is constant in $\lambda$, and the twistor space is the product $\mathbb{H}^n\times\mathbb{CP}^1$ with the product complex structure; the holomorphic symplectic form is the constant form $\Omega_2+i\Omega_3$.
 
 ### The Four-Torus
 
@@ -88,7 +88,7 @@ A **hyperkähler manifold** carries the **twistor family** $I_\lambda=aJ_1+bJ_2+
 | Symbol | Meaning |
 |---|---|
 | $J_1,J_2,J_3$ | Hyperkähler triple; $\omega_i(X,Y)=g(J_iX,Y)$ |
-| $\lambda=ae_1+be_2+ce_3$ | Unit imaginary quaternion |
+| $\lambda=a\vec e_x+b\vec e_y+c\vec e_z$ | Unit imaginary quaternion |
 | $I_\lambda=aJ_1+bJ_2+cJ_3$ | Twistor family of complex structures |
 | $\Omega_\lambda=a\omega_1+b\omega_2+c\omega_3$ | Fundamental form of $I_\lambda$ |
 | $\lambda\mapsto\bar\lambda$ | Conjugation; acts by the antipode $I_\lambda\mapsto-I_\lambda$ |

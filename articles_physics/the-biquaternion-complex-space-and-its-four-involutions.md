@@ -16,19 +16,19 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-read as a **complex vector space of dimension four** on the basis $e_0, e_1, e_2, e_3$, with the unit and the quaternion relations
+read as a **complex vector space of dimension four** on the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, with the unit and the quaternion relations
 
 $$
-e_0 = 1, \qquad e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1e_2 = -e_2e_1 = e_3,
+e_t = 1, \qquad \vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t, \qquad \vec e_x\vec e_y = -\vec e_y\vec e_x = \vec e_z,
 $$
 
-with the cyclic companions $e_2e_3 = -e_3e_2 = e_1$ and $e_3e_1 = -e_1e_3 = e_2$. A general element is
+with the cyclic companions $\vec e_y\vec e_z = -\vec e_z\vec e_y = \vec e_x$ and $\vec e_z\vec e_x = -\vec e_x\vec e_z = \vec e_y$. A general element is
 
 $$
-\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu = Q_0 e_0 + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k e_k, \qquad Q_\mu \in \mathbb{C},
+\tilde Q = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu = Q_t e_t + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k \vec e_k, \qquad Q_\mu \in \mathbb{C},
 $$
 
-the **scalar part** $Q_0e_0$ and the **vector part** $\vec Q$. The tilde marks an element of the algebra, the majuscule a complex coefficient and the boldface a vector part.
+the **scalar part** $Q_te_t$ and the **vector part** $\vec Q$. The tilde marks an element of the algebra, the majuscule a complex coefficient and the boldface a vector part.
 
 **Four complex coordinates, eight real ones.** Every coefficient is a real part plus $i$ times a real part,
 
@@ -38,7 +38,7 @@ $$
 
 so the four complex coordinates are eight real ones: $q_\mu$ is the coefficient of $e_\mu$ and $q'_\mu$ the coefficient of $ie_\mu$, the prime marking the slot that carries the scalar imaginary, the same rule for every $\mu$.
 
-**The central imaginary.** The unit $i$ satisfies $i^2 = -1$ and commutes with the quaternion units, $i e_\mu = e_\mu i$, because it belongs to the $\mathbb{C}$ factor of the tensor product while the units belong to the $\mathbb{H}$ factor. Multiplication by it is the real-linear **complex structure** $J$, with $J^2 = -\mathrm{id}$, of the real reading *The Biquaternioid as a Vector Space over $\mathbb{R}$*. The elements commuting with everything are the multiples of $e_0$, so the **centre** is the complex line $\mathbb{C}e_0$, of real dimension two, spanned by $e_0$ and $ie_0$; its elements of unit modulus, $\exp(i\theta)e_0$, are the **central phase**, and the centre is the algebra's classical or global sector.
+**The central imaginary.** The unit $i$ satisfies $i^2 = -1$ and commutes with the quaternion units, $i e_\mu = e_\mu i$, because it belongs to the $\mathbb{C}$ factor of the tensor product while the units belong to the $\mathbb{H}$ factor. Multiplication by it is the real-linear **complex structure** $J$, with $J^2 = -\mathrm{id}$, of the real reading *The Biquaternioid as a Vector Space over $\mathbb{R}$*. The elements commuting with everything are the multiples of $e_t$, so the **centre** is the complex line $\mathbb{C}e_t$, of real dimension two, spanned by $e_t$ and $ie_t$; its elements of unit modulus, $\exp(i\theta)e_t$, are the **central phase**, and the centre is the algebra's classical or global sector.
 
 ## The Coordinates
 
@@ -46,36 +46,36 @@ One element, three scalar systems, all three used in the corpus.
 
 | coordinates | basis | count | scalars |
 |---|---|---|---|
-| real | $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$ | $8$ | $\mathbb{R}$ |
-| complex | $e_0, e_1, e_2, e_3$ | $4$ | $\mathbb{C}$ |
-| quaternionic | $e_0, ie_0$ | $2$ | $\mathbb{H}$ |
+| real | $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$ | $8$ | $\mathbb{R}$ |
+| complex | $e_t, \vec e_x, \vec e_y, \vec e_z$ | $4$ | $\mathbb{C}$ |
+| quaternionic | $e_t, ie_t$ | $2$ | $\mathbb{H}$ |
 
 The third row gathers the eight real numbers as a real quaternion plus $i$ times another, $\tilde Q = h_1 + i h_2$ with $h_1 = \sum_\mu q_\mu e_\mu$ and $h_2 = \sum_\mu q'_\mu e_\mu$ in $\mathbb{H}$; the first two gather the same numbers as eight real coordinates or as four complex ones. The three rows are one object.
 
 **The physical dictionary.** The eight real parameters are read as physical coordinates by the dictionary, fixed once and for all,
 
 $$
-q'_0 = c\,t, \qquad (q_1, q_2, q_3) = (x, y, z), \qquad q_0 = c\,t', \qquad (q'_1, q'_2, q'_3) = (x', y', z'),
+q'_t = c\,t, \qquad (q_x, q_y, q_z) = (x, y, z), \qquad q_t = c\,t', \qquad (q'_x, q'_y, q'_z) = (x', y', z'),
 $$
 
-with $\vec x = x e_1 + y e_2 + z e_3$ the real spatial vector and $\vec x' = x' e_1 + y' e_2 + z' e_3$ its informational counterpart. Its two ends are the coordinates of the two sectors,
+with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the real spatial vector and $x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$ its informational counterpart. Its two ends are the coordinates of the two sectors,
 
 $$
-\tilde Q = i c t\, e_0 + \vec x, \qquad \tilde Q = c t'\, e_0 + i\vec x',
+\tilde Q = i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad \tilde Q = c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z),
 $$
 
 the **material coordinate**, with the temporal direction imaginary and the three spatial directions real, and the **informational coordinate**, with the temporal direction real and the three spatial directions imaginary. Read together with the complex coefficients, each $Q_\mu$ has three guises:
 
 | coefficient | complex | real part | imaginary part | material | informational |
 |---|---|---|---|---|---|
-| $Q_0$ | $q_0 + iq'_0$ | $c t'$ | $c t$ | $i c t$ | $c t'$ |
-| $Q_1$ | $q_1 + iq'_1$ | $x$ | $x'$ | $x$ | $i x'$ |
-| $Q_2$ | $q_2 + iq'_2$ | $y$ | $y'$ | $y$ | $i y'$ |
-| $Q_3$ | $q_3 + iq'_3$ | $z$ | $z'$ | $z$ | $i z'$ |
+| $Q_t$ | $q_t + iq'_t$ | $c t'$ | $c t$ | $i c t$ | $c t'$ |
+| $Q_x$ | $q_x + iq'_x$ | $x$ | $x'$ | $x$ | $i x'$ |
+| $Q_y$ | $q_y + iq'_y$ | $y$ | $y'$ | $y$ | $i y'$ |
+| $Q_z$ | $q_z + iq'_z$ | $z$ | $z'$ | $z$ | $i z'$ |
 
-**The prime falls on the scalar in one sector and on the three vectors in the other.** In the material sector the primed parameter is the time, $q'_0 = ct$, so the temporal direction is imaginary and the three spatial directions real. In the informational sector the primed parameters are the three space coordinates, $q'_k = x'_k$, so the temporal direction is real and the three spatial directions imaginary. The two sectors are the same eight coordinates with the place of the prime exchanged, which is the mirror statement of the algebra and not a second convention.
+**The prime falls on the scalar in one sector and on the three vectors in the other.** In the material sector the primed parameter is the time, $q'_t = ct$, so the temporal direction is imaginary and the three spatial directions real. In the informational sector the primed parameters are the three space coordinates, $q'_k = x'_k$, so the temporal direction is real and the three spatial directions imaginary. The two sectors are the same eight coordinates with the place of the prime exchanged, which is the mirror statement of the algebra and not a second convention.
 
-**One element, one point, one label.** The eight parameters split four and four between the sectors, so one element of $\mathbb{B}$ carries a point of the material sector and a point of the informational sector at once. A material element is a spacetime event, $i c t\, e_0 + \vec x$, and the four informational parameters it also carries are its internal label; an informational element is a point $c t'\, e_0 + i\vec x'$ of the state side, carrying four material labels. No coefficient is idle, and that is why one element of the algebra serves both as a four-vector and as a state; the physical content is *Introduction to the Biquaternion Universe*.
+**One element, one point, one label.** The eight parameters split four and four between the sectors, so one element of $\mathbb{B}$ carries a point of the material sector and a point of the informational sector at once. A material element is a spacetime event, $i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the four informational parameters it also carries are its internal label; an informational element is a point $c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ of the state side, carrying four material labels. No coefficient is idle, and that is why one element of the algebra serves both as a four-vector and as a state; the physical content is *Introduction to the Biquaternion Universe*.
 
 **Why the temporal coordinate is imaginary.** The material time enters as $i c t$, and the factor $i$ is what the algebra supplies: because $i^2 = -1$, a temporal displacement and a spatial displacement do not count with the same sign, and the reversed sign of the time is carried by the imaginary unit and not added by hand. With $c t$ real in place of $i c t$ the material sector would carry a Euclidean reading and no causal cone. The dictionary and the convention are *Conventions in the Biquaternion Universe*, and the causal structure they produce belongs to the articles on the material sector.
 
@@ -89,10 +89,10 @@ The algebraic content of the article is the four conjugations. The **complex con
 
 | Involution | Symbol | Conjugate Element | Sign-Vector Rule | $\mathbb{C}$-Linear | $\mathbb{C}$-Antilinear | $\mathbb{R}$-Linear |
 |---|---|---|---|---|---|---|
-| Complex Conjugation | $\bar{\cdot}$ | $\bar{\tilde Q} = \bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$ | $(\bar{\tilde Q})_\mu = \bar Q_\mu$ | No | Yes | Yes |
-| Quaternion Conjugation | ${}^{\natural}$ | $\tilde Q^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$ | $(\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu$ | Yes | No | Yes |
-| Hermitian Conjugation | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | $\tilde Q^{*} = \bar Q_0 e_0 - \bar Q_1 e_1 - \bar Q_2 e_2 - \bar Q_3 e_3$ | $(\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
-| Anti-Hermitian Conjugation | ${}^{\flat} = -{}^{*}$ | $\tilde Q^{\flat} = -\bar Q_0 e_0 + \bar Q_1 e_1 + \bar Q_2 e_2 + \bar Q_3 e_3$ | $(\tilde Q^{\flat})_\mu = -\varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
+| Complex Conjugation | $\bar{\cdot}$ | $\bar{\tilde Q} = \bar Q_t e_t + \bar Q_x \vec e_x + \bar Q_y \vec e_y + \bar Q_z \vec e_z$ | $(\bar{\tilde Q})_\mu = \bar Q_\mu$ | No | Yes | Yes |
+| Quaternion Conjugation | ${}^{\natural}$ | $\tilde Q^{\natural} = Q_t e_t - Q_x \vec e_x - Q_y \vec e_y - Q_z \vec e_z$ | $(\tilde Q^{\natural})_\mu = \varepsilon_\mu Q_\mu$ | Yes | No | Yes |
+| Hermitian Conjugation | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | $\tilde Q^{*} = \bar Q_t e_t - \bar Q_x \vec e_x - \bar Q_y \vec e_y - \bar Q_z \vec e_z$ | $(\tilde Q^{*})_\mu = \varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
+| Anti-Hermitian Conjugation | ${}^{\flat} = -{}^{*}$ | $\tilde Q^{\flat} = -\bar Q_t e_t + \bar Q_x \vec e_x + \bar Q_y \vec e_y + \bar Q_z \vec e_z$ | $(\tilde Q^{\flat})_\mu = -\varepsilon_\mu \bar Q_\mu$ | No | Yes | Yes |
 
 The three linearity properties are collected in the last columns of the table above: the quaternion conjugation is the only $\mathbb{C}$-**linear** one of the four, the other three are $\mathbb{C}$-**antilinear**, and all four are $\mathbb{R}$-linear, since conjugating a complex coefficient is an $\mathbb{R}$-linear operation.
 
@@ -124,9 +124,9 @@ $$
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad \mathbb{M}_- = \{\tilde Q : \tilde Q^{*} = -\tilde Q\}, \qquad \mathbb{M}_+ = \{\tilde Q : \tilde Q^{*} = +\tilde Q\},
 $$
 
-the eigenspace split of the Hermitian conjugation, and it is also the split into the fixed and anti-fixed spaces of the reversal, which is the star with the central sign. The **material sector** $\mathbb{M}_-$ is the anti-Hermitian one, where the scalar coefficient is imaginary and the three vector coefficients are real; it carries the four-position $i c t\, e_0 + \vec x$ and the four-vectors, and it is the fixed space of the algebra's real structure. The **informational sector** $\mathbb{M}_+$ is the Hermitian one, where the scalar coefficient is real and the three vector coefficients are imaginary; it carries the states and the observables, and it is the fixed space of the star. Every one of the four involutions preserves both sectors, which is why the two can carry two different physical readings without a cross-term; the maps that do cross between them are built from the central unit and are *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors*.
+the eigenspace split of the Hermitian conjugation, and it is also the split into the fixed and anti-fixed spaces of the reversal, which is the star with the central sign. The **material sector** $\mathbb{M}_-$ is the anti-Hermitian one, where the scalar coefficient is imaginary and the three vector coefficients are real; it carries the four-position $i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the four-vectors, and it is the fixed space of the algebra's real structure. The **informational sector** $\mathbb{M}_+$ is the Hermitian one, where the scalar coefficient is real and the three vector coefficients are imaginary; it carries the states and the observables, and it is the fixed space of the star. Every one of the four involutions preserves both sectors, which is why the two can carry two different physical readings without a cross-term; the maps that do cross between them are built from the central unit and are *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors*.
 
-On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_0 + \vec x$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_0 + i\vec x'$. The physics of the material sector is *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, the physics of the informational sector *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the sector split in the framework *Introduction to the Biquaternion Universe*. The informational sector is written in quantum physics with the letter of an operator, $\mathbb{M}_+ \ni \tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with real $h_\mu$: the same element as $ct'\,e_0 + i\vec x'$, under coefficient names that record its role as a Hermitian operator, and the Pauli expansion $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ under the module dictionary of *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
+On the physical dictionary the sectors read as the two ends of the table above: the material sector has three real spatial directions and one imaginary temporal one, $\mathbb{M}_-\ni i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the informational sector three imaginary spatial directions and one real temporal one, $\mathbb{M}_+\ni c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. The physics of the material sector is *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, the physics of the informational sector *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the sector split in the framework *Introduction to the Biquaternion Universe*. The informational sector is written in quantum physics with the letter of an operator, $\mathbb{M}_+ \ni \tilde{H} = h_0e_t + ih_1\vec e_x + ih_2\vec e_y + ih_3\vec e_z$ with real $h_\mu$: the same element as $ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$, under coefficient names that record its role as a Hermitian operator, and the Pauli expansion $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ under the module dictionary of *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
 
 ## Physical Readings
 
@@ -142,9 +142,9 @@ Two readings of the space and of the involutions belong to this article: the sec
 
 ## Summary
 
-The biquaternion complex space is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ read as a complex vector space of dimension four on the basis $e_0, e_1, e_2, e_3$, with $e_k^2 = -e_0$ and $e_1e_2 = e_3$ cyclic. A general element is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with complex coefficients $Q_\mu = q_\mu + iq'_\mu$, so it has four complex coordinates, eight real ones and a reading as a pair of real quaternions; the central imaginary $i$ commutes with the units, its multiples form the centre $\mathbb{C}e_0$, and its unit-modulus elements $\exp(i\theta)e_0$ are the central phase.
+The biquaternion complex space is $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ read as a complex vector space of dimension four on the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, with $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclic. A general element is $\tilde Q = \sum_\mu Q_\mu e_\mu$ with complex coefficients $Q_\mu = q_\mu + iq'_\mu$, so it has four complex coordinates, eight real ones and a reading as a pair of real quaternions; the central imaginary $i$ commutes with the units, its multiples form the centre $\mathbb{C}e_t$, and its unit-modulus elements $\exp(i\theta)e_t$ are the central phase.
 
-The eight real parameters are read as physical coordinates, $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$, $q_0 = ct'$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. The material coordinate is $ict\,e_0 + \vec x$ and the informational coordinate is $ct'\,e_0 + i\vec x'$; the prime falls on the scalar in the first and on the three vectors in the second, so the two sectors are mirror images, with three real spatial directions and one imaginary temporal one against three imaginary spatial directions and one real temporal one. The temporal coordinate is imaginary because the algebra's central unit supplies the reversed sign of a timelike displacement, and the identification of that unit is local, carrying the scale $c = 1/\sqrt{\epsilon\mu}$.
+The eight real parameters are read as physical coordinates, $q'_t = ct$, $(q_x,q_y,q_z) = (x,y,z)$, $q_t = ct'$ and $(q'_x,q'_y,q'_z) = (x',y',z')$. The material coordinate is $ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the informational coordinate is $ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$; the prime falls on the scalar in the first and on the three vectors in the second, so the two sectors are mirror images, with three real spatial directions and one imaginary temporal one against three imaginary spatial directions and one real temporal one. The temporal coordinate is imaginary because the algebra's central unit supplies the reversed sign of a timelike displacement, and the identification of that unit is local, carrying the scale $c = 1/\sqrt{\epsilon\mu}$.
 
 The space carries four involutions, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$. The natural conjugation is $\mathbb{C}$-linear and the other three are $\mathbb{C}$-antilinear; the identity, the natural, the bar and the star form the Klein four-group, and the flat is the fourth character outside it. Each involution cuts the algebra into a fixed and an anti-fixed space, giving the six remarkable subspaces, of which the corpus develops the two sectors; the sector split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ is the eigenspace split of the star, reproduced by the reversal, and every involution preserves both sectors. The products, the forms and the norms of the space are the subject of the band that follows, not of this article.
 
@@ -153,15 +153,15 @@ The space carries four involutions, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | the biquaternion algebra |
-| $e_0, e_1, e_2, e_3$ | the basis, $e_0 = 1$, $e_k^2 = -e_0$ |
+| $e_t, \vec e_x, \vec e_y, \vec e_z$ | the basis, $e_t = 1$, $\vec e_k^2 = -e_t$ |
 | $i$ | the central scalar imaginary, $i^2 = -1$ |
 | $\tilde Q = \sum_\mu Q_\mu e_\mu$ | a general element |
 | $Q_\mu = q_\mu + i q'_\mu$ | a complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$ |
-| $Q_0$, $\vec Q$ | the scalar part and the vector part |
-| $q'_0 = c t$, $(q_1,q_2,q_3) = (x,y,z)$ | the material dictionary |
-| $q_0 = c t'$, $(q'_1,q'_2,q'_3) = (x',y',z')$ | the informational dictionary |
-| $i c t\, e_0 + \vec x$ | the material coordinate, in $\mathbb{M}_-$ |
-| $c t'\, e_0 + i\vec x'$ | the informational coordinate, in $\mathbb{M}_+$ |
+| $Q_t$, $\vec Q$ | the scalar part and the vector part |
+| $q'_t = c t$, $(q_x,q_y,q_z) = (x,y,z)$ | the material dictionary |
+| $q_t = c t'$, $(q'_x,q'_y,q'_z) = (x',y',z')$ | the informational dictionary |
+| $i c t\, e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | the material coordinate, in $\mathbb{M}_-$ |
+| $c t'\, e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | the informational coordinate, in $\mathbb{M}_+$ |
 | $J : \tilde Q \mapsto i\tilde Q$ | the real-linear complex structure, $J^2 = -\mathrm{id}$ |
 | ${}^{\natural}$ | quaternion conjugation, the $\mathbb{C}$-linear involution |
 | $\bar{\cdot}$ | complex conjugation, the $\mathbb{C}$-antilinear involution |

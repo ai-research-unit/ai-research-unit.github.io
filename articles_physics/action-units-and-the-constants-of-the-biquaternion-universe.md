@@ -8,19 +8,19 @@ The article is about action and about its unit. Action is the difference of kine
 
 That much is already recorded, in one line, by the companion article *The Empirical Status of the Biquaternion Framework*: the algebra is dimensionless, and $c$, $\hbar$, $m$ and $e$ are inserted. The present article is the systematic treatment of that line. Three questions are left open by it, and each is taken up below.
 
-1. **What does the algebra's dimensional blindness force?** The biquaternion norm is a sum of four squares, and the algebra fixes the **sign** of each of them: the temporal coefficient of the material sector is attached to $ie_0$, whose square is $-e_0$, while the three spatial coefficients enter without such a sign. It fixes nothing about magnitudes. The first result of this article is the exact division: the **signature** of the material quadratic form is algebraic, and the **scale** of its temporal slot is imported. The corpus's $ict$ is the coordinate device in which that scale is absorbed into the coordinate, and the article treats the device and the form it is a device for.
+1. **What does the algebra's dimensional blindness force?** The biquaternion norm is a sum of four squares, and the algebra fixes the **sign** of each of them: the temporal coefficient of the material sector is attached to $ie_t$, whose square is $-e_t$, while the three spatial coefficients enter without such a sign. It fixes nothing about magnitudes. The first result of this article is the exact division: the **signature** of the material quadratic form is algebraic, and the **scale** of its temporal slot is imported. The corpus's $ict$ is the coordinate device in which that scale is absorbed into the coordinate, and the article treats the device and the form it is a device for.
 2. **Where does each imported constant enter?** The constants are not inserted at one place. Each enters at a different point of the structure — in the temporal slot of the material quadratic form, in the exponent of the phase, in the boundary condition on a thermal state — and the point of entry is the sharpest available statement of what each constant is *for*. The second section develops a taxonomy of the constants by point of entry, and records the same division as it appears in the SI itself, where the dimensionful constants are defined and the dimensionless ones measured.
 3. **Why do action and angular momentum share a unit?** Action, angular momentum, and the symplectic pairing of a configuration with its conjugate momentum all have the dimensions of energy × time. In the framework they are not three quantities that happen to share a unit: they are the scalar and the vector parts of one biquaternion product, $\tilde q\tilde p$. This is the structural core of the article.
 
 The article is a **limitation statement**, of the same species as the companion articles *Conventions in the Biquaternion Universe* and *The Empirical Status of the Biquaternion Framework*: its content is what the algebra supplies and what it does not. It adds no physics, and it derives no constant. It is written because the corpus makes the dimensional remarks piecemeal — the Stern–Gerlach article records that $\hbar$ is supplied from outside, the electron article that the mass and the charge are inserted, the $g-2$ article that the algebra fixes the ratio and not the scale — and those remarks have no common home. The home is here.
 
-The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary is $i$, central, with $i^2=-1$; a general element is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients $Q_\mu=q_\mu+iq'_\mu$. The involutions are the quaternion conjugation $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the complex conjugation $\bar{\tilde Q}=\bar Q_0e_0+\bar Q_1e_1+\bar Q_2e_2+\bar Q_3e_3$, and the Hermitian conjugation $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_0e_0-\bar Q_1e_1-\bar Q_2e_2-\bar Q_3e_3$, with $\tilde Q^{\flat}=-\tilde Q^{*}$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_0$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0,e_1,e_2,e_3\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The four general products of the corpus are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$. The **biquaternion norm** is the scalar form of the second of them,
+The conventions are those of the companion articles, unchanged. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$ and $\vec e_\nu \vec e_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}\vec e_\lambda$; the scalar imaginary is $i$, central, with $i^2=-1$; a general element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients $Q_\mu=q_\mu+iq'_\mu$. The involutions are the quaternion conjugation $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the complex conjugation $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and the Hermitian conjugation $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$, with $\tilde Q^{\flat}=-\tilde Q^{*}$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$. The material sector is $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ (imaginary scalar, real vector), the informational sector is $\mathbb{M}_+=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ (real scalar, imaginary vector), the real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. The four general products of the corpus are $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$. The **biquaternion norm** is the scalar form of the second of them,
 
 $$
-\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_0^2+Q_1^2+Q_2^2+Q_3^2 ,
+\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
 $$
 
-the configuration–momentum product of §*The Product $\tilde q\tilde p$ in the Algebra* is the first, and the sesquilinear pairings belong to the informational articles. The trace is normalized by $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})=2\langle\tilde{P},\tilde{H}\rangle$. The material coordinate is written in the length coordinate $\tilde Q=ic\,t\,e_0+\vec x$; the biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, equivalently $\tilde\nabla=c^{-1}e_0\partial_t+\nabla$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
+the configuration–momentum product of §*The Product $\tilde q\tilde p$ in the Algebra* is the first, and the sesquilinear pairings belong to the informational articles. The trace is normalized by $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})=2\langle\tilde{P},\tilde{H}\rangle$. The material coordinate is written in the length coordinate $\tilde Q=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, equivalently $\tilde\nabla=c^{-1}e_t\partial/\partial t+\nabla$, and the series d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$. The speed of light in the medium is $c=1/\sqrt{\epsilon\mu}$ and the vacuum speed is $c_0=1/\sqrt{\epsilon_0\mu_0}$; $\hbar=h/2\pi$ is the reduced Planck constant, $h$ the Planck constant, and $k_B$ the Boltzmann constant.
 
 The companion articles used below are:
 
@@ -40,7 +40,7 @@ The companion articles used below are:
 The multiplication table of $\mathbb{B}$ is fixed once and for all:
 
 $$
-e_0=1,\qquad e_k^2=-e_0,\qquad e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l \quad (j\neq k).
+e_t=1,\qquad \vec e_\mu^2=-e_t,\qquad \vec e_\nu \vec e_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}\vec e_\lambda \quad (\nu \neq \mu).
 $$
 
 Every constant appearing on the right-hand side is $0$, $+1$ or $-1$. There is no free real parameter in the algebra, no modulus, no coupling, nothing that could carry a unit. The same is true of the biquaternion norm and of the four conjugations: they are canonical, and none of them introduces a scale. An algebra whose constants are all integers has nowhere to put a unit, and that is what makes the framework's silence about magnitudes structural rather than accidental.
@@ -55,7 +55,7 @@ $$
 (\lambda\tilde{A})(\lambda\tilde{B})=\lambda^2\tilde{A}\tilde{B}\neq\lambda(\tilde{A}\tilde{B}).
 $$
 
-This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{Q}=ict\,e_0+\vec x$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
+This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.
 
 There is an exception worth noting, because it is the only place where the algebra speaks about a scale at all. An element's biquaternion norm is homogeneous of degree two under the rescaling, $\langle\lambda\tilde{Q}\rangle_{\natural}=\lambda^2\langle\tilde{Q}\rangle_{\natural}$, so a *ratio* of biquaternion norms is rescaling-invariant. The framework therefore has access to ratios and to pure numbers, and to nothing dimensionful. This is the algebraic root of the dichotomy that organises the whole article and is stated flatly in the summary: **the framework's outputs are pure numbers; its inputs are dimensionful.**
 
@@ -66,7 +66,7 @@ There is an exception worth noting, because it is the only place where the algeb
 The biquaternion norm of a general element is
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q})=Q_0^2+Q_1^2+Q_2^2+Q_3^2 .
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q})=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
 
 This is a sum of four squares. It is a single scalar, and it is meaningful as a sum only if its four terms carry the same unit. It follows that **the four coefficients of a single element of $\mathbb{B}$ must share one unit**, whatever that unit is. The constraint is not imposed from outside; it is a property of the algebra's quadratic form once its four coefficients are read as the components of one physical quantity, and it is met by any choice of coordinates in which those components are measured in one unit. It applies to every element of the algebra that carries a **physical interpretation**, and it applies in both sectors.
@@ -75,10 +75,10 @@ The constraint is **per element, and not across elements**. The biquaternion nor
 
 ### The Sign Is Algebraic; the Scale Is Local
 
-Apply the constraint to a displacement. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_0$ in the material sector, and $(ie_0)^2=-e_0$; the three spatial coefficients are attached to $e_1,e_2,e_3$, and each enters as the square of a real coefficient without a further sign. Hence
+Apply the constraint to a displacement. The four coefficients of the element are the four components of the displacement, and the norm is the invariant interval. The algebra fixes the **sign** of each term of that norm and nothing else. The temporal coefficient is attached to $ie_t$ in the material sector, and $(ie_t)^2=-e_t$; the three spatial coefficients are attached to $\vec e_x,\vec e_y,\vec e_z$, and each enters as the square of a real coefficient without a further sign. Hence
 
 $$
-\langle\tilde{T}\rangle_{\natural}=(ict)^2+\vec x^2=-c^2t^2+x^2+y^2+z^2 ,
+\langle\tilde{T}\rangle_{\natural}=(ict)^2+x^2+y^2+z^2=-c^2t^2+x^2+y^2+z^2 ,
 $$
 
 of signature $(-,+,+,+)$, equivalently $(3,1)$, with the minus on the temporal term. The **magnitude** of that term is $c^2$, and it is not supplied by the algebra: it is the scale of the imaginary time axis, and the algebra supplies no scale.
@@ -86,13 +86,13 @@ of signature $(-,+,+,+)$, equivalently $(3,1)$, with the minus on the temporal t
 Two writings of the same element must be kept apart, because the framework uses both and they are not the same statement.
 
 - **The length coordinate.** The temporal component is $ict$, with $c$ a speed, so all four coefficients of $\tilde{T}$ are lengths, the four terms of $\langle\cdot\rangle_{\natural}$ are commensurable, and the norm is literally a sum of four squares of lengths. This is the corpus's convention, and it is a **choice of coordinate on the temporal slot**: measuring the time in units of length, $t\mapsto c\,t$.
-- **The time coordinate.** The temporal component is $it$, with $t$ a time, and the norm reads $\langle\tilde{T}\rangle_{\natural}=-t^2+x^2+y^2+z^2$, a sum of four squares whose terms carry two different units. Written invariantly it is $\langle\tilde{T}\rangle_{\natural}=-c^2t^2+\vec x^2$, with the conversion between the temporal slot and the three spatial ones carried by the coefficient $g_{00}=-c^2$ of the metric.
+- **The time coordinate.** The temporal component is $it$, with $t$ a time, and the norm reads $\langle\tilde{T}\rangle_{\natural}=-t^2+x^2+y^2+z^2$, a sum of four squares whose terms carry two different units. Written invariantly it is $\langle\tilde{T}\rangle_{\natural}=-c^2t^2+x^2+y^2+z^2$, with the conversion between the temporal slot and the three spatial ones carried by the coefficient $g_{tt}=-c^2$ of the metric.
 
 The two writings are related by the substitution $t\mapsto c\,t$ and describe one quadratic form. Neither is forced by the algebra, and the two slots are kept apart in both: the first measures time in the unit of length, and the second keeps time in seconds and lets the metric coefficient carry the conversion. The framework's $ict$ is the first writing, and it is a device of presentation — precisely the sense in which the companion article *The Local Complex Structure and the Speed of Light* calls the global $ict$ "a coordinate device".
 
 What is forced is the **signature**, and it is forced for an algebraic reason: the sign of the temporal term is $(i)^2$, and the plus of the spatial terms is the absence of any such sign. The companion article *The Local Complex Structure and the Speed of Light* states the division in this form — "the signature is algebraic", "the magnitude is local" — and *Why Complexify Spacetime?* records the same interpretation. What the present section adds is the dimensional statement that goes with it: a quadratic form that is a sum of four squares of commensurable quantities can be written only after a scale has been supplied for the temporal slot, and that scale is the imported constant $c$.
 
-The same division holds for the other elements of the sector. The four-velocity $\tilde{V}=\gamma(ic\,e_0+\vec v)$ has $\langle\tilde{V}\rangle_{\natural}=-c^2$, and the four-momentum $\tilde{P}=m\tilde{V}$ has $\langle\tilde{P}\rangle_{\natural}=-m^2c^2$: three different elements, three different sets of units, one algebraic sign, and the scales $c$ and $m$ imported at their own points.
+The same division holds for the other elements of the sector. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ has $\langle\tilde{V}\rangle_{\natural}=-c^2$, and the four-momentum $\tilde{P}=m\tilde{V}$ has $\langle\tilde{P}\rangle_{\natural}=-m^2c^2$: three different elements, three different sets of units, one algebraic sign, and the scales $c$ and $m$ imported at their own points.
 
 One caution, in the spirit of the conventions article. The statement above is internal to the requirement that $\langle\cdot\rangle_{\natural}$ be *the* quadratic form of the algebra, read on its temporal and its spatial slots. A framework that relaxed that requirement — a graded norm, or a norm whose coefficients carry different dimensions without a metric coefficient — would not be *wrong*; it would be a different framework. Within this one the claim is that the sign is algebraic and the scale is not, and that the $ict$ writing is a coordinate device rather than a consequence. The comparison of the four terms also presumes a **local** action, an integral of a density along the coordinate, which is what makes them comparable term by term; nonlocal actions are a recognised extension of the action principle and lie outside its reach.
 
@@ -101,16 +101,16 @@ One caution, in the spirit of the conventions article. The statement above is in
 The constraint is not confined to the algebra's elements; it propagates to every operator the framework builds. The biquaternionic gradient is
 
 $$
-\tilde{\nabla}=e_0\,\partial_{ict}+e_1\,\partial_x+e_2\,\partial_y+e_3\,\partial_z=\frac{1}{c}\,e_0\,\partial_t+\nabla ,
+\tilde{\nabla}=e_t\,\partial/\partial Q_t+\vec e_x\,\partial/\partial Q_x+\vec e_y\,\partial/\partial Q_y+\vec e_z\,\partial/\partial Q_z=\frac{1}{c}\,e_t\,\partial/\partial t+\nabla ,
 $$
 
 the second writing being the time coordinate of the previous section. Its biquaternion norm is the d'Alembertian,
 
 $$
-\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-\frac{1}{c^2}\,\partial_t^2 ,
+\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2 ,
 $$
 
-the same operator in both writings. In the length coordinate the four coefficients of $\tilde{\nabla}$ are inverse lengths; in the time coordinate the temporal coefficient is $c^{-1}\partial_t$, an inverse length through the explicit $c^{-1}$. The scale is the same in both, and it is the same $c^2$ that appears as the metric coefficient $-c^2$ of the interval: the $c^{-2}$ of $\Box$ is not a choice of units, it is the metric coefficient seen from the inverse side.
+the same operator in both writings. In the length coordinate the four coefficients of $\tilde{\nabla}$ are inverse lengths; in the time coordinate the temporal coefficient is $c^{-1}\partial/\partial t$, an inverse length through the explicit $c^{-1}$. The scale is the same in both, and it is the same $c^2$ that appears as the metric coefficient $-c^2$ of the interval: the $c^{-2}$ of $\Box$ is not a choice of units, it is the metric coefficient seen from the inverse side.
 
 The same reasoning constrains the mass parameter of a first-order equation. The companion article *The Dirac Equation in Biquaternionic Form* writes the massive Dirac pair as
 
@@ -144,7 +144,7 @@ Every dimensionful constant of physics must be imported, but the imports are not
 
 ### $c$: the Scale of the Local Complex Structure
 
-$c$ is the constant that enters the algebra's own quadratic form, and it enters at one place: the temporal slot of the material sector. The division is the one of §*The Sign Is Algebraic; the Scale Is Local*. The **sign** of the slot is algebraic — it is $(i)^2$ — and the **magnitude** is the scale of the imaginary time axis, which the algebra does not supply. In the time coordinate the scale is the coefficient $g_{00}=-c^2$ of the metric; in the length coordinate it is absorbed into the coordinate $ict$, and that is the corpus's presentation convention. The companion article *The Local Complex Structure and the Speed of Light* fixes the value independently by two routes — the aperture of the null cone of the biquaternion norm, and the characteristic speed of the medium's wave operator — which agree and both give $c=1/\sqrt{\epsilon\mu}$. Nothing is added to that here; the point to record is the asymmetry, and it is an asymmetry of **position**. Of the constants in the table, $c$ is the one that appears inside the framework's own quadratic form, as the scale of the distinguished temporal slot, and the algebra fixes where it appears and not how large it is.
+$c$ is the constant that enters the algebra's own quadratic form, and it enters at one place: the temporal slot of the material sector. The division is the one of §*The Sign Is Algebraic; the Scale Is Local*. The **sign** of the slot is algebraic — it is $(i)^2$ — and the **magnitude** is the scale of the imaginary time axis, which the algebra does not supply. In the time coordinate the scale is the coefficient $g_{tt}=-c^2$ of the metric; in the length coordinate it is absorbed into the coordinate $ict$, and that is the corpus's presentation convention. The companion article *The Local Complex Structure and the Speed of Light* fixes the value independently by two routes — the aperture of the null cone of the biquaternion norm, and the characteristic speed of the medium's wave operator — which agree and both give $c=1/\sqrt{\epsilon\mu}$. Nothing is added to that here; the point to record is the asymmetry, and it is an asymmetry of **position**. Of the constants in the table, $c$ is the one that appears inside the framework's own quadratic form, as the scale of the distinguished temporal slot, and the algebra fixes where it appears and not how large it is.
 
 ### $\hbar$: the Action–Phase Exchange Rate
 
@@ -163,10 +163,10 @@ First, the classical limit is a statement about a **dimensionless ratio**. The c
 Second, $\hbar$ is the **unit of the operator algebra**. The informational sector's elements are dimensionless as algebra, and their physical dimensions are assigned by the identification. The corpus's spin observable makes the assignment visible,
 
 $$
-\tilde{S}_3=\frac{\hbar}{2}\,i e_3 ,
+\tilde{S}_3=\frac{\hbar}{2}\,i \vec e_z ,
 $$
 
-where the algebra supplies $i e_3$ and the factor $\tfrac12$, and $\hbar$ is inserted. The companion article *The Stern–Gerlach Experiment in Biquaternionic Form* states the position exactly: the algebra "fixes the form of the observable but not the value of the quantum of action".
+where the algebra supplies $i \vec e_z$ and the factor $\tfrac12$, and $\hbar$ is inserted. The companion article *The Stern–Gerlach Experiment in Biquaternionic Form* states the position exactly: the algebra "fixes the form of the observable but not the value of the quantum of action".
 
 ### $k_B$: Energy and the Thermal Circle
 
@@ -178,7 +178,7 @@ $$
 
 the correlation functions are analytic in the strip $0<\mathrm{Im}(t)<\beta$, and the imaginary time direction is compact with circumference $\beta$.
 
-The structural interest of $k_B$ is that it enters **in series with $\hbar$**. The KMS condition says that the imaginary time direction is periodic; $\hbar$ converts the temperature into a time and $c$ converts that time into a length, so the thermal circle has circumference $\hbar c/(k_BT)$ in the material sector's units. The imaginary-time direction is algebraic — it is the direction of the $ie_0$ coordinate — and what the two constants do is give it a size. This is the same division of labour as in the biquaternion norm: the algebra supplies the direction and the phase, and the constants supply the scale.
+The structural interest of $k_B$ is that it enters **in series with $\hbar$**. The KMS condition says that the imaginary time direction is periodic; $\hbar$ converts the temperature into a time and $c$ converts that time into a length, so the thermal circle has circumference $\hbar c/(k_BT)$ in the material sector's units. The imaginary-time direction is algebraic — it is the direction of the $ie_t$ coordinate — and what the two constants do is give it a size. This is the same division of labour as in the biquaternion norm: the algebra supplies the direction and the phase, and the constants supply the scale.
 
 ### $G$, $m$ and $e$: the Scales With No Algebraic Role
 
@@ -202,21 +202,21 @@ The dimensional identity that this section explains is elementary and well known
 
 ### The Product $\tilde q\tilde p$ in the Algebra
 
-Let $\tilde q=q_0e_0+\vec q$ and $\tilde p=p_0e_0+\vec p$ be real quaternions, the configuration and its conjugate momentum of the companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*. Their product is
+Let $\tilde q=q_te_t+\vec q$ and $\tilde p=p_te_t+\vec p$ be real quaternions, the configuration and its conjugate momentum of the companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*. Their product is
 
 $$
-\tilde q\,\tilde p=(q_0e_0+\vec q)(p_0e_0+\vec p)
-=q_0p_0+q_0\vec p+p_0\vec q+\vec q\vec p ,
+\tilde q\,\tilde p=(q_te_t+\vec q)(p_te_t+\vec p)
+=q_tp_t+q_t\vec p+p_t\vec q+\vec q\vec p ,
 $$
 
 and the quaternion product of two pure vectors is $\vec q\vec p=-\vec q\cdot\vec p+\vec q\times\vec p$. Hence
 
 $$
-\tilde q\,\tilde p=\bigl(\underbrace{q_0p_0-\vec q\cdot\vec p}_{\text{scalar part}}\bigr)
-+\bigl(\underbrace{q_0\vec p+p_0\vec q+\vec q\times\vec p}_{\text{vector part}}\bigr).
+\tilde q\,\tilde p=\bigl(\underbrace{q_tp_t-\vec q\cdot\vec p}_{\text{scalar part}}\bigr)
++\bigl(\underbrace{q_t\vec p+p_t\vec q+\vec q\times\vec p}_{\text{vector part}}\bigr).
 $$
 
-The scalar part is $q_0p_0-\vec q\cdot\vec p$, the contraction of the configuration with the momentum. The corpus's scalar pairing is the conjugate version of it, $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ — the pairing the companion article's conventions define, and the one whose momentum-differential is the symplectic potential. In the **pure-vector case** $q_0=p_0=0$ — a particle in three dimensions, the case that carries the spatial interpretation — the product collapses to
+The scalar part is $q_tp_t-\vec q\cdot\vec p$, the contraction of the configuration with the momentum. The corpus's scalar pairing is the conjugate version of it, $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ — the pairing the companion article's conventions define, and the one whose momentum-differential is the symplectic potential. In the **pure-vector case** $q_t=p_t=0$ — a particle in three dimensions, the case that carries the spatial interpretation — the product collapses to
 
 $$
 \tilde q\,\tilde p=-\vec q\cdot\vec p+\vec q\times\vec p,
@@ -234,7 +234,7 @@ $$
 
 and Maupertuis's principle states that at fixed energy the true path is the one on which $S_0$ is stationary. Hamilton's action is an integral in time; the abbreviated action is an integral along the path; and both are momentum contracted with a coordinate displacement, which is why they share the dimension. The parametrisation is what the abbreviated action discards, and the energy is what it holds fixed.
 
-The corpus already uses the abbreviated action, and one coordinate of it, under other names. Hamilton's **characteristic function** $\mathcal{W}$ of the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*, the solution of $H(\tilde q,\partial_{\tilde q}\mathcal{W})=E$ for a time-independent problem, is the abbreviated action read as a function of the endpoint. The **action variable** $I_k=\oint p_k\,dq_k$ of the same article is the abbreviated action **of a single coordinate**: the abbreviated action is the full dot product $\int\vec p\cdot d\vec q$, the action variable is one coordinate's contribution to it, and the two coincide only for a system with one degree of freedom. This is the sense in which the action variable is the adiabatic invariant of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*. The dimensional identity of this section therefore has three members — action, abbreviated action (equivalently the characteristic function), and angular momentum — all of dimension action because each pairs a momentum with a displacement.
+The corpus already uses the abbreviated action, and one coordinate of it, under other names. Hamilton's **characteristic function** $\mathcal{W}$ of the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*, the solution of $H(\tilde q,\partial/\partial\tilde q\,\mathcal{W})=E$ for a time-independent problem, is the abbreviated action read as a function of the endpoint. The **action variable** $I_\mu=\oint p_\mu\,dq_\mu$ of the same article is the abbreviated action **of a single coordinate**: the abbreviated action is the full dot product $\int\vec p\cdot d\vec q$, the action variable is one coordinate's contribution to it, and the two coincide only for a system with one degree of freedom. This is the sense in which the action variable is the adiabatic invariant of the companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*. The dimensional identity of this section therefore has three members — action, abbreviated action (equivalently the characteristic function), and angular momentum — all of dimension action because each pairs a momentum with a displacement.
 
 The two principles are not two names for one statement, because their **constraints are reversed**. Hamilton's principle fixes the two **events**, position and time at both ends, and varies at fixed $\Delta t$. Maupertuis's principle fixes the endpoints and the **energy** and leaves the time free; its solutions are therefore **orbits** — relations between coordinates with time as a parameter — rather than world lines. The same path with the same endpoints appears in both, but it carries **different times and different energies in the two forms**, so the second is not a rewriting of the first.
 
@@ -250,7 +250,7 @@ Two limits are worth naming. When no force acts — a rigid body with no net for
 
 ### The Same Unit, Because It Is the Same Object
 
-Both parts of $\tilde q\tilde p$ have the dimensions of length × momentum, which is action. But the framework's statement is stronger than a dimensional coincidence: the angular momentum is a **part of the same algebra element** whose scalar part is the contraction of the configuration with the momentum. There is no independent quantity "angular momentum" with a separately guaranteed unit; there is one biquaternion, of one dimension, whose two parts are read as two things. The two interpretations differ only in the conjugate convention on one factor — $\tilde q\tilde p$ has scalar part $q_0p_0-\vec q\cdot\vec p$, while $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ is the Euclidean pairing — and that convention is fixed by the companion articles.
+Both parts of $\tilde q\tilde p$ have the dimensions of length × momentum, which is action. But the framework's statement is stronger than a dimensional coincidence: the angular momentum is a **part of the same algebra element** whose scalar part is the contraction of the configuration with the momentum. There is no independent quantity "angular momentum" with a separately guaranteed unit; there is one biquaternion, of one dimension, whose two parts are read as two things. The two interpretations differ only in the conjugate convention on one factor — $\tilde q\tilde p$ has scalar part $q_tp_t-\vec q\cdot\vec p$, while $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ is the Euclidean pairing — and that convention is fixed by the companion articles.
 
 The same product appears at the other end of the theory. The symplectic potential of the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* is
 
@@ -261,7 +261,7 @@ $$
 momentum contracted with a configuration displacement, again of dimension action; and on shell the differential of the action is the difference of the pairing at the two endpoints, $dS=\theta_2-\theta_1$. The action variable of a periodic orbit,
 
 $$
-I_k=\oint p_k\,dq_k ,
+I_\mu=\oint p_\mu\,dq_\mu ,
 $$
 
 is that pairing integrated around a cycle. The symplectic potential, the differential of the on-shell action and the action variable are all interpretations of the scalar pairing of $\tilde q$ and $\tilde p$, and the angular momentum is the vector part of their product; all of them have the dimension of action, and the dimensional identity is the shadow of the algebraic one.
@@ -276,7 +276,7 @@ $$
 \oint p\,dx=2\pi\hbar\left(n+\tfrac12\right)=h\left(n+\tfrac12\right),
 $$
 
-the single-valuedness of the central phase $\exp(iS/\hbar)$ around a closed orbit. The vector part is quantised by the spin spectrum: the observable is $\tilde{S}_3=\tfrac{\hbar}{2}ie_3$, its eigenvalues are half-integer multiples of $\hbar$, so the quantum of angular momentum is $\hbar$, with $\hbar/2$ the elementary value for spin $\tfrac12$.
+the single-valuedness of the central phase $\exp(iS/\hbar)$ around a closed orbit. The vector part is quantised by the spin spectrum: the observable is $\tilde{S}_3=\tfrac{\hbar}{2}i\vec e_z$, its eigenvalues are half-integer multiples of $\hbar$, so the quantum of angular momentum is $\hbar$, with $\hbar/2$ the elementary value for spin $\tfrac12$.
 
 The two quanta are not numerically the same, and the difference is worth being precise about. The quantum of *action* read off the closed orbit is $h$; the quantum of *angular momentum* is $\hbar$. The relation between them is exact and algebraic, $h=2\pi\hbar$, and the $2\pi$ is not a stray factor: it is the period of the phase. The orbit closes because $\exp(iS/\hbar)$ is single-valued, and single-valuedness *is* $2\pi$ periodicity in the phase variable. The same $2\pi$ that makes the phase well defined therefore separates the quantum of the action from the quantum of the angular momentum. The two quanta are one constant written twice, $\hbar$ and $2\pi\hbar$: they differ by the phase's period and by nothing else. The $2\pi$ is not a second constant — but neither is it a structure constant of the multiplication table. It is the period of the exponential of the central imaginary unit $i$, so it is the central complex structure, not the quaternion arithmetic, that supplies it.
 
@@ -296,12 +296,12 @@ The dichotomy of the previous sections is worth tabulating, because it is the ar
 | that a mass term is an inverse length | the mass, and $\hbar$ |
 | that a phase is $\exp(iS/\hbar)$, with $S$ the biquaternion-norm action | the value of $\hbar$ |
 | the position of the constants, i.e. where each must appear | the value of any constant |
-| pure numbers: $\mathrm{Tr}(e_0)=2$, the $\tfrac12$ of the idempotents, the half-angles of the rotors, the ratio $g=2$ | magnitudes: $\mu_B$, $m_e$, $e$, $\alpha$, $G$ |
+| pure numbers: $\mathrm{Tr}(e_t)=2$, the $\tfrac12$ of the idempotents, the half-angles of the rotors, the ratio $g=2$ | magnitudes: $\mu_B$, $m_e$, $e$, $\alpha$, $G$ |
 | the dimension of the module (two), the number of sectors (two), of space directions (three) | any fundamental length or energy |
 
 Two entries deserve a word.
 
-**The half-angles.** The rotor $\tilde{R}=\cos(\theta/2)+\sin(\theta/2)\vec u_m$ carries the half-angle because the group of unit quaternions double-covers the rotation group. The factor $\tfrac12$ is a pure number, and it is algebraic: it is the statement that a $2\pi$ rotation acts as $-1$. Once $\hbar$ is supplied as the unit of angular momentum, that pure number becomes the statement that angular momentum is quantised in half-integer multiples. The algebra supplies the half; the constant supplies the unit. This is a particularly clean instance of the dichotomy, and it is the reason the spin spectrum of the informational sector has the form it has.
+**The half-angles.** The rotor $\tilde{R}=\cos(\theta/2)+\sin(\theta/2)\vec u_\rho$ carries the half-angle because the group of unit quaternions double-covers the rotation group. The factor $\tfrac12$ is a pure number, and it is algebraic: it is the statement that a $2\pi$ rotation acts as $-1$. Once $\hbar$ is supplied as the unit of angular momentum, that pure number becomes the statement that angular momentum is quantised in half-integer multiples. The algebra supplies the half; the constant supplies the unit. This is a particularly clean instance of the dichotomy, and it is the reason the spin spectrum of the informational sector has the form it has.
 
 **The ratio $g=2$.** The companion article *The Classical Origin of g = 2 in Biquaternionic Form* draws the distinction in the terms this article has been using: the algebra fixes the ratio of the magnetic moment to the spin, and therefore the dimensionless factor $g$, "because both quantities are carried by the same algebra and their weights are algebraically determined", while it "does not fix the scale of the moment, because the proportionality constant between the angular momentum and the numerical value of the moment involves $\hbar$ and the mass". A dimensionless ratio is algebraic; the scale is imported. The same article records the conclusion in the direction of this article: the algebra supplies the two, not the one Bohr magneton $\mu_B=e\hbar/2m_e$.
 
@@ -311,7 +311,7 @@ The framework is often used with $\hbar=c=1$, and the corpus notes that the alge
 
 Two consequences are worth recording as guidance rather than as a rule.
 
-First, the two constants do opposite things and are hidden by the same convention for different reasons. Setting $c=1$ removes the **commensuration** that made the material coordinate a length; setting $\hbar=1$ removes the **unit** in which the action is measured. A statement about the algebra's quadratic form is clearer with $c$ explicit, because the $c^{-2}$ in $\Box=\Delta-c^{-2}\partial_t^2$ is the same scale that makes $ict$ a length. A statement about quantisation is clearer with $\hbar$ explicit, because the Bohr–Sommerfeld offset $2\pi\hbar(n+\tfrac12)=h(n+\tfrac12)$ and the spin spectrum in units of $\hbar$ are statements about that unit.
+First, the two constants do opposite things and are hidden by the same convention for different reasons. Setting $c=1$ removes the **commensuration** that made the material coordinate a length; setting $\hbar=1$ removes the **unit** in which the action is measured. A statement about the algebra's quadratic form is clearer with $c$ explicit, because the $c^{-2}$ in $\Box=\Delta+ \partial^2/\partial Q_t^2$ is the same scale that makes $ict$ a length. A statement about quantisation is clearer with $\hbar$ explicit, because the Bohr–Sommerfeld offset $2\pi\hbar(n+\tfrac12)=h(n+\tfrac12)$ and the spin spectrum in units of $\hbar$ are statements about that unit.
 
 Second, the corpus already follows this principle where it matters, and the pattern is consistent. The action articles keep $\hbar$ explicit because the phase and the classical-limit ratio depend on it; the relativistic articles keep $c$ explicit because the biquaternion norm and the mass shell depend on it; and the articles that set natural units are the ones whose subject is insensitive to both. Natural units are a presentation convention, and like the conventions collected in the companion article *Conventions in the Biquaternion Universe* they should be chosen per article for what the article is doing.
 
@@ -337,7 +337,7 @@ The constants can be read as the two ends of one clock. The central phase is per
 
 The biquaternion algebra carries no scale. Every structure constant in its multiplication table is an integer, the algebra has no free real parameter, and the four conjugations and the biquaternion norm are canonical. The framework therefore fixes **form** and no **magnitude**: its outputs are pure numbers, and its inputs are dimensionful.
 
-The algebra's quadratic form nevertheless places the units, and the placement is the article's first result. The biquaternion norm is a sum of four squares of the coefficients of one element, and the requirement that its four terms be commensurable is a requirement on the **writing** of that element and not on the algebra: in the length coordinate the four coefficients of a displacement are lengths, and in the time coordinate the conversion is carried by the metric coefficient $g_{00}=-c^2$. The sign of the temporal term is algebraic — it is $(i)^2$ — and the scale is the imported $c$. The same placement holds for the gradient, whose temporal coefficient is $c^{-1}\partial_t$ in the time coordinate, so that the mass parameter of an equation built on $\tilde\nabla$ is necessarily an inverse length — as the framework's $\mu=mc/\hbar$ makes explicit.
+The algebra's quadratic form nevertheless places the units, and the placement is the article's first result. The biquaternion norm is a sum of four squares of the coefficients of one element, and the requirement that its four terms be commensurable is a requirement on the **writing** of that element and not on the algebra: in the length coordinate the four coefficients of a displacement are lengths, and in the time coordinate the conversion is carried by the metric coefficient $g_{tt}=-c^2$. The sign of the temporal term is algebraic — it is $(i)^2$ — and the scale is the imported $c$. The same placement holds for the gradient, whose temporal coefficient is $c^{-1}\partial/\partial t$ in the time coordinate, so that the mass parameter of an equation built on $\tilde\nabla$ is necessarily an inverse length — as the framework's $\mu=mc/\hbar$ makes explicit.
 
 The constants that physics supplies enter at different points, and the point of entry is what each constant is for. $c$ enters in the temporal slot of the material quadratic form, as the scale of the local complex structure: the algebra fixes the sign of the slot and the position of the scale, and not its value, which is a defining constant of the SI in the vacuum and a measured one in a medium.
 
@@ -354,27 +354,27 @@ The framework's guideline follows from the dichotomy: a dimensionful constant is
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; no free parameter, integer structure constants |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\nu \vec e_\mu=-\delta_{\nu\mu}e_t+\varepsilon_{\nu\mu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (real scalar, imaginary vector) and material (imaginary scalar, real vector) sectors |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ | Centre; real-quaternion subspace |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^2$ | Biquaternion norm, the scalar form of the quaternionic product: a sum of four squares |
-| $\tilde{Q}=ic\,t\,e_0+\vec x$ | Material coordinate in the length coordinate; equivalently $\tilde Q=it\,e_0+\vec x$ with the metric coefficient $g_{00}=-c^2$ |
-| $\tilde{\nabla}=e_0\partial_{ict}+\nabla=c^{-1}e_0\partial_t+\nabla$ | Biquaternionic gradient; the two writings of the temporal coordinate |
-| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
+| $\tilde{Q}=ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material coordinate in the length coordinate; equivalently $\tilde Q=it\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with the metric coefficient $g_{tt}=-c^2$ |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\nabla=c^{-1}e_t\partial/\partial t+\nabla$ | Biquaternionic gradient; the two writings of the temporal coordinate |
+| $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2$ | d'Alembertian |
 | $\mu=mc/\hbar$ | Inverse Compton length; the mass parameter as an inverse length |
 | $\tilde{q}$, $\tilde{p}$ | Configuration quaternion and conjugate momentum, both real quaternions |
-| $\tilde{q}\tilde{p}=(q_0p_0-\vec q\cdot\vec p)+(q_0\vec p+p_0\vec q+\vec q\times\vec p)$ | The product carrying the contraction and the angular momentum |
+| $\tilde{q}\tilde{p}=(q_tp_t-\vec q\cdot\vec p)+(q_t\vec p+p_t\vec q+\vec q\times\vec p)$ | The product carrying the contraction and the angular momentum |
 | $\tilde{q}\tilde{p}=-\vec q\cdot\vec p+\vec q\times\vec p$ | Pure-vector case: scalar part the contraction, vector part $\vec L=\vec q\times\vec p$ |
 | $\mathrm{Sc}(\tilde q^{\natural}\tilde p)=\sum_\mu q_\mu p_\mu$ | Scalar pairing (the conjugate convention; $\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)$ is its differential) |
 | $\theta=\mathrm{Sc}(\tilde{p}^{\natural}\,d\tilde{q})$, $dS=\theta_2-\theta_1$ | Symplectic potential and the action differential |
-| $I_k=\oint p_k\,dq_k$ | Action variable; the abbreviated action of one coordinate around its cycle |
+| $I_\mu=\oint p_\mu\,dq_\mu$ | Action variable; the abbreviated action of one coordinate around its cycle |
 | $S_0=\int\vec p\cdot d\vec q$, $S=S_0-E\,\Delta t$ | Abbreviated action (Maupertuis), stationary at fixed energy; the two actions differ by a Legendre transform in the time–energy pair |
-| $\mathcal{W}$ | Hamilton's characteristic function, $H(\tilde q,\partial_{\tilde q}\mathcal{W})=E$; the abbreviated action as endpoint function |
-| $\tilde{S}_3=\tfrac{\hbar}{2}ie_3$ | Spin observable; algebra supplies $ie_3$ and $\tfrac12$, not $\hbar$ |
+| $\mathcal{W}$ | Hamilton's characteristic function, $H(\tilde q,\partial/\partial\tilde q\,\mathcal{W})=E$; the abbreviated action as endpoint function |
+| $\tilde{S}_3=\tfrac{\hbar}{2}i\vec e_z$ | Spin observable; algebra supplies $i\vec e_z$ and $\tfrac12$, not $\hbar$ |
 | $S/\hbar$ | Dimensionless phase; the classical-limit parameter |
 | $\beta=\hbar/(k_BT)$ | Thermal strip width; thermal circle circumference $\hbar c/(k_BT)$ |
-| $\mathrm{Tr}(e_0)=2$, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace normalization and trace formula; the factor $2$ is a pure number |
+| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace normalization and trace formula; the factor $2$ is a pure number |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds of light; $c_0$ is a defining constant of the SI, the medium value is measured |
 | $\hbar=h/2\pi$ | Reduced Planck constant; the unit that makes the phase $S/\hbar$ dimensionless |
 | $h=2\pi\hbar$ | Planck constant; the quantum of action, where $\hbar$ is the quantum of angular momentum |

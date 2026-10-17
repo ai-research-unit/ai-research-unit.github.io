@@ -18,7 +18,7 @@ This article asks what entanglement entropy and the replica trick are in the biq
 
 The article proceeds as follows. Entanglement entropy and the Rényi entropies are defined, with the entropy as their $n\to1$ limit. The replica trick is recalled in its field-theoretic form and restated in finite dimension. The replica structure of the biquaternion tensor power is set out, with the shift operator and the swap. A two-qubit biquaternion state is worked out completely, its reduced state, its Rényi entropies and the $n\to1$ limit being computed and tabulated. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimesA_n^{(1)})=\prod_i\mathrm{Tr}(\tilde A_i)$. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, states and the Bloch ball those of *The GNS Construction in the Biquaternion Framework*, and the entropy closed form that of *Relative Entropy and the Biquaternion Framework*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace, $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde A_i)$. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, states and the Bloch ball those of *The GNS Construction in the Biquaternion Framework*, and the entropy closed form that of *Relative Entropy and the Biquaternion Framework*.
 
 ## Entanglement Entropy and Rényi Entropies
 
@@ -142,11 +142,11 @@ $$
 Tracing out $B$ in the biquaternion tensor product — equivalently, using the partial trace of the strong-subadditivity companion article — gives the reduced state
 $$
 \rho_A=\cos^2\theta\,|0\rangle\langle0|+\sin^2\theta\,|1\rangle\langle1|
-=\frac{1}{2}\Big(e_0+i\cos(2\theta)\,e_3\Big),
+=\frac{1}{2}\Big(e_t+i\cos(2\theta)\,\vec e_z\Big),
 $$
 a biquaternion state of the Bloch ball with
 $$
-\vec r_A=\cos(2\theta)\,\vec u_3,
+\vec r_A=\cos(2\theta)\,\vec u_z,
 \qquad
 |\vec r_A|=\big|\cos(2\theta)\big|,
 \qquad
@@ -237,10 +237,10 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; $n$ replicas |
 | $\rho_A=\mathrm{Tr}_B\rho_{AB}$ | Reduced state |
 | $S_A=S(\rho_A)=-\mathrm{Tr}(\rho_A\log\rho_A)$ | Entanglement entropy |

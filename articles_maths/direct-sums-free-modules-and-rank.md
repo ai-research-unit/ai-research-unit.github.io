@@ -47,7 +47,7 @@ The product and the sum are the categorical product and coproduct, and it is the
 
 *Proof.* For the product take $f(n)=(f_i(n))$. For the sum take $g((m_i))=\sum_i g_i(m_i)$, a finite sum because $(m_i)$ is finitely supported; uniqueness follows on the summands.
 
-Neither universal property restricts the family of maps, and the finiteness in the second statement lies in the *elements* of $\bigoplus_i M_i$, not in the maps out of it. The asymmetry between the two constructions appears when $I$ is infinite, and it is an asymmetry between the elements: $\bigoplus_i M_i$ is the submodule of $\prod_i M_i$ consisting of the finitely supported families, the inclusion is injective and not surjective, and the direct sum is therefore a coproduct but not a product, while the product is a product but not a coproduct. When $I$ is finite the two objects coincide, and the two universal properties make $\bigoplus_i M_i$ both a product and a coproduct; such an object is a **biproduct**. In the finite case the injections and projections satisfy the relations $\pi_j\iota_j=\operatorname{id}$, $\pi_j\iota_k=0$ for $j\neq k$, $\sum_j \iota_j\pi_j=\operatorname{id}$, and every element of the biproduct is recovered from them by $m=\iota_1\pi_1(m)+\iota_2\pi_2(m)$.
+Neither universal property restricts the family of maps, and the finiteness in the second statement lies in the *elements* of $\bigoplus_i M_i$, not in the maps out of it. The asymmetry between the two constructions appears when $I$ is infinite, and it is an asymmetry between the elements: $\bigoplus_i M_i$ is the submodule of $\prod_i M_i$ consisting of the finitely supported families, the inclusion is injective and not surjective, and the direct sum is therefore a coproduct but not a product, while the product is a product but not a coproduct. When $I$ is finite the two objects coincide, and the two universal properties make $\bigoplus_i M_i$ both a product and a coproduct; such an object is a **biproduct**. In the finite case the injections and projections satisfy the relations $\pi_j\iota_j=\operatorname{id}$, $\pi_j\iota_k=0$ for $j\neq k$, $\sum_j \iota_j\pi_j=\operatorname{id}$, and every element of the biproduct is recovered from them by $m=\iota_1\pi_x(m)+\iota_2\pi_y(m)$.
 
 ### Internal Direct Sums
 
@@ -221,13 +221,13 @@ Over a principal ideal domain, every submodule of a free module is free. This is
 
 ### Over the Split Complex Numbers
 
-The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_1^2=\pi_1$, $\pi_2^2=\pi_2$, $\pi_1\pi_2=0$ and $\pi_1+\pi_2=1$. The ring isomorphism
+The split complex numbers $\mathbb{D}=\mathbb{R}[j]/(j^2-1)$ are not a domain, and their module theory is governed by the idempotents $\pi_{1,2}=\tfrac{1}{2}(1 \pm j)$, which satisfy $\pi_x^2=\pi_x$, $\pi_y^2=\pi_y$, $\pi_x\pi_y=0$ and $\pi_x+\pi_y=1$. The ring isomorphism
 
 $$
 \mathbb{D} \cong \mathbb{R} \times \mathbb{R}, \qquad a+bj \longmapsto (a+b,\ a-b),
 $$
 
-sends $\pi_1$ to $(1,0)$ and $\pi_2$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
+sends $\pi_x$ to $(1,0)$ and $\pi_y$ to $(0,1)$. Every $\mathbb{D}$-module therefore splits as $M \cong M_+ \oplus M_-$ with $M_\pm$ real vector spaces, and
 
 $$
 \mathbb{D}^{(I)} \cong \mathbb{R}^{(I)} \oplus \mathbb{R}^{(I)}

@@ -23,16 +23,16 @@ with $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2} \in \mathbb{H}$ ordinary quatern
 
 ### Definition
 
-Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $Q_0, Q_1, Q_2, Q_3$. Let $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as
+Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. Let $F^{\mathrm{fn}} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-biquaternion-valued function, written in components as
 
 $$
-F^{\mathrm{fn}}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(Q_0, Q_1, Q_2, Q_3) e_\mu, \qquad F_\mu \in \mathbb{D}.
+F^{\mathrm{fn}}(\tilde{Q}) = \sum_{\mu\in\{t,x,y,z\}} F_\mu(Q_t, Q_x, Q_y, Q_z) e_\mu, \qquad F_\mu \in \mathbb{D}.
 $$
 
 Let $\Omega \subset V$ be a domain. The **integral** of $F^{\mathrm{fn}}$ over $\Omega$ is
 
 $$
-\int_\Omega F^{\mathrm{fn}} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
+\int_\Omega F^{\mathrm{fn}} \, dV = \sum_{\mu\in\{t,x,y,z\}} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
 $$
 
 where each $F_\mu$ is a split-complex-valued function on $\Omega$. Writing $F_\mu = u_\mu + j v_\mu$ with $u_\mu, v_\mu \in \mathbb{R}$, the integral is
@@ -110,7 +110,7 @@ This is the same reduction as for the differential operators: the split biquater
 **Theorem (integration by parts).** Let $\phi$ be a scalar function and $F^{\mathrm{fn}}$ a split-biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
 
 $$
-\int_\Omega (\partial_\mu \phi) F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \phi F^{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \phi (\partial_\mu F^{\mathrm{fn}}) \, dV,
+\int_\Omega (\partial/\partial q_\mu \phi) F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \phi F^{\mathrm{fn}} \, n_\mu \, dS - \int_\Omega \phi (\partial/\partial q_\mu F^{\mathrm{fn}}) \, dV,
 $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
@@ -122,7 +122,7 @@ where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial 
 **Theorem (integration by parts for the gradient).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write
 
 $$
-F^{\mathrm{fn}}\overleftarrow{\nabla} = \sum_{\mu=0}^{3} (\partial_\mu F^{\mathrm{fn}}) e_\mu
+F^{\mathrm{fn}}\overleftarrow{\nabla} = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}}) e_\mu
 $$
 
 for the **right gradient** of $F^{\mathrm{fn}}$. Then
@@ -134,14 +134,14 @@ $$
 and equivalently
 
 $$
-\int_\Omega (\tilde{\nabla}F^{\mathrm{fn}}) G^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde{n} F^{\mathrm{fn}} G^{\mathrm{fn}} \, dS - \int_\Omega \sum_{\mu=0}^{3} e_\mu F^{\mathrm{fn}} (\partial_\mu G^{\mathrm{fn}}) \, dV,
+\int_\Omega (\tilde{\nabla}F^{\mathrm{fn}}) G^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde{n} F^{\mathrm{fn}} G^{\mathrm{fn}} \, dS - \int_\Omega \sum_{\mu\in\{t,x,y,z\}} e_\mu F^{\mathrm{fn}} (\partial/\partial q_\mu G^{\mathrm{fn}}) \, dV,
 $$
 
 where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
-**Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(F^{\mathrm{fn}}G^{\mathrm{fn}}) = (\tilde{\nabla}F^{\mathrm{fn}})G^{\mathrm{fn}} + \sum_\mu e_\mu F^{\mathrm{fn}}\,\partial_\mu G^{\mathrm{fn}}$, and the divergence theorem applied to the product $F^{\mathrm{fn}}G^{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}$ and sum over $\mu$.
+**Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(F^{\mathrm{fn}}G^{\mathrm{fn}}) = (\tilde{\nabla}F^{\mathrm{fn}})G^{\mathrm{fn}} + \sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$, and the divergence theorem applied to the product $F^{\mathrm{fn}}G^{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F^{\mathrm{fn}} e_\mu G^{\mathrm{fn}}$ and sum over $\mu$.
 
-**Remark (the non-commutative correction).** The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is **false for a non-central** $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction.
+**Remark (the non-commutative correction).** The transposition that moves the derivative off $G^{\mathrm{fn}}$ while leaving $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ in the volume term is **false for a non-central** $F^{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F^{\mathrm{fn}}\,\partial/\partial q_\mu G^{\mathrm{fn}}$ equals $F^{\mathrm{fn}}(\tilde{\nabla}G^{\mathrm{fn}})$ only when $F^{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\overleftarrow{\nabla}$ is the transposition that removes the restriction.
 
 ## The Divergence Theorem
 
@@ -151,18 +151,18 @@ $$
 \int_\Omega \tilde{\nabla} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde{n} F^{\mathrm{fn}} \, dS,
 $$
 
-where $\tilde{n} = \sum_{\mu=0}^{3} n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
+where $\tilde{n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
 **Proof.** The gradient $\tilde{\nabla}F^{\mathrm{fn}}$ is a split-biquaternion-valued function with components
 
 $$
-(\tilde{\nabla}F^{\mathrm{fn}})_\nu = \sum_{\mu=0}^{3} (\partial_\mu F_\nu) e_\mu e_\nu.
+(\tilde{\nabla}F^{\mathrm{fn}})_\nu = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_\nu) e_\mu e_\nu.
 $$
 
 Integrating each component over $\Omega$ and applying the ordinary divergence theorem in $\mathbb{R}^4$ gives
 
 $$
-\int_\Omega \partial_\mu F_\nu \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
+\int_\Omega \partial/\partial q_\mu F_\nu \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
 $$
 
 Multiplying by $e_\mu e_\nu$ and summing gives the result.
@@ -173,7 +173,7 @@ $$
 \int_\Omega \tilde{\nabla}^{\natural} F^{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde{n}^{\natural} F^{\mathrm{fn}} \, dS,
 $$
 
-where $\tilde{n}^{\natural} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
+where $\tilde{n}^{\natural} = n_0 e_t - \sum_{k=1}^{3} n_k \vec e_k$ is the quaternion conjugate of the outward unit normal.
 
 **Proof.** This is the same computation as above, with the signs of the vector components reversed.
 
@@ -181,47 +181,47 @@ where $\tilde{n}^{\natural} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternio
 
 ### First Green's Formula
 
-**Theorem (first Green's formula).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$ be the scalar normal derivative. Then
+**Theorem (first Green's formula).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde n = \sum_\mu n_\mu \partial/\partial q_\mu$ be the scalar normal derivative. Then
 
 $$
-\int_\Omega \left[ \sum_{\mu=0}^{3} (\partial_\mu F^{\mathrm{fn}})\, ((\partial_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial_{\tilde{n}} G^{\mathrm{fn}})^{\natural} \, dS.
+\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F^{\mathrm{fn}})\, ((\partial/\partial q_\mu G^{\mathrm{fn}}))^{\natural} + F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F^{\mathrm{fn}}\, (\partial/\partial\tilde n G^{\mathrm{fn}})^{\natural} \, dS.
 $$
 
-**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F^{\mathrm{fn}}\,(\partial_\mu G^{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial_\mu(F^{\mathrm{fn}}\,(\partial_\mu G^{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F^{\mathrm{fn}}\,(\partial_\mu G^{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial_\muF^{\mathrm{fn}})\,(\partial_\mu G^{\mathrm{fn}})^{\natural} + F^{\mathrm{fn}}\,(\partial_\mu^2 G^{\mathrm{fn}})^{\natural}$, the second term because $\partial_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial_\mu$ by $\partial_{\tilde{n}}$.
+**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu\,(F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F^{\mathrm{fn}}\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F^{\mathrm{fn}})\,(\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural} + F^{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G^{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde n$.
 
 ### Second Green's Formula
 
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, G^{\mathrm{fn}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial_{\tilde{n}} G^{\mathrm{fn}})^{\natural} - (\partial_{\tilde{n}} F^{\mathrm{fn}})\, G^{\mathrm{fn}}^{\natural} \right] dS.
+\int_\Omega \left[ F^{\mathrm{fn}}\, (\Box G^{\mathrm{fn}})^{\natural} - (\Box F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F^{\mathrm{fn}}\, (\partial/\partial\tilde n G^{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde n F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] dS.
 $$
 
 **Proof.** For each $\mu$ the product rule gives
 
 $$
-\partial_\mu \left[ F^{\mathrm{fn}}\, (\partial_\mu G^{\mathrm{fn}})^{\natural} - (\partial_\mu F^{\mathrm{fn}})\, G^{\mathrm{fn}}^{\natural} \right] = F^{\mathrm{fn}}\, (\partial_\mu^2 G^{\mathrm{fn}})^{\natural} - (\partial_\mu^2 F^{\mathrm{fn}})\, G^{\mathrm{fn}}^{\natural},
+\partial/\partial q_\mu \left[ F^{\mathrm{fn}}\, (\partial/\partial q_\mu G^{\mathrm{fn}})^{\natural} - (\partial/\partial q_\mu F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural} \right] = F^{\mathrm{fn}}\, (\partial^2/\partial q_\mu^2 G^{\mathrm{fn}})^{\natural} - (\partial^2/\partial q_\mu^2 F^{\mathrm{fn}})\, {G^{\mathrm{fn}}}^{\natural},
 $$
 
-the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a split-biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. The conjugation is inert throughout because $\partial_\mu$ is real.
+the two mixed terms being the same product and cancelling. Summing over $\mu$ makes the left side the divergence of a split-biquaternion-valued field, whose volume integral is the stated volume integrand and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial/\partial q_\mu = \partial/\partial\tilde n$, is the stated surface term. The conjugation is inert throughout because $\partial/\partial q_\mu$ is real.
 
 ### Green's Formula for the d'Alembertian
 
-**Theorem (Green's formula for $\Box$).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial_{\tilde{n}} = \sum_\mu n_\mu \partial_{q_\mu}$. Then
+**Theorem (Green's formula for $\Box$).** Let $F^{\mathrm{fn}}$ and $G^{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde n = \sum_\mu n_\mu \partial/\partial q_\mu$. Then
 
 $$
-\int_\Omega \left[ (\Box F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\Box G^{\mathrm{fn}}) \right] dV = \int_{\partial \Omega} \left[ (\partial_{\tilde{n}} F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial_{\tilde{n}} G^{\mathrm{fn}}) \right] dS,
+\int_\Omega \left[ (\Box F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\Box G^{\mathrm{fn}}) \right] dV = \int_{\partial \Omega} \left[ (\partial/\partial\tilde n F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial/\partial\tilde n G^{\mathrm{fn}}) \right] dS,
 $$
 
-where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
+where $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the four-dimensional Laplacian.
 
 **Proof.** For each $\mu$ the product rule gives
 
 $$
-\partial_\mu \left[ (\partial_\mu F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial_\mu G^{\mathrm{fn}}) \right] = (\partial_\mu^2 F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial_\mu^2 G^{\mathrm{fn}}),
+\partial/\partial q_\mu \left[ (\partial/\partial q_\mu F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial/\partial q_\mu G^{\mathrm{fn}}) \right] = (\partial^2/\partial q_\mu^2 F^{\mathrm{fn}}) G^{\mathrm{fn}} - F^{\mathrm{fn}} (\partial^2/\partial q_\mu^2 G^{\mathrm{fn}}),
 $$
 
-the two mixed terms cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial_\mu = \partial_{\tilde{n}}$, is the stated surface term. This is the conjugate pairing of the second Green formula above, i.e. the second Green formula with $G^{\mathrm{fn}}$ replaced by $G^{\mathrm{fn}}^{\natural}$ up to the sign of both sides.
+the two mixed terms cancelling. Summing over $\mu$ makes the left side a divergence whose volume integral is the stated volume integrand, and whose boundary integral, by the ordinary divergence theorem and $\sum_\mu n_\mu \partial/\partial q_\mu = \partial/\partial\tilde n$, is the stated surface term. This is the conjugate pairing of the second Green formula above, i.e. the second Green formula with $G^{\mathrm{fn}}$ replaced by ${G^{\mathrm{fn}}}^{\natural}$ up to the sign of both sides.
 
 ## The Fundamental Solution
 
@@ -247,32 +247,32 @@ $$
 \tilde{\nabla} G^{\mathrm{fn}}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \sum_k Q_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_k Q_k \vec e_k$. So
 
 $$
-G^{\mathrm{fn}}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu Q_\mu^2)^2}.
+G^{\mathrm{fn}}(\tilde{Q}) = \frac{Q_t e_t - \sum_k Q_k \vec e_k}{(\sum_\mu Q_\mu^2)^2}.
 $$
 
 A direct computation gives
 
 $$
-\tilde{\nabla} G^{\mathrm{fn}} = \sum_\mu e_\mu \partial_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
+\tilde{\nabla} G^{\mathrm{fn}} = \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
 $$
 
-The first term is $\sum_\mu e_\mu \partial_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
+The first term is $\sum_\mu e_\mu \partial/\partial q_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = e_t + e_t + e_t + e_t = 4 e_t$. The second term is
 
 $$
-\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
+\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
 $$
 
-Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} G^{\mathrm{fn}} = 0$.
+Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|_E^2 e_t$, the second term is $-4 \|\tilde{Q}\|_E^2 / \|\tilde{Q}\|_E^6 \cdot e_t = -4 e_t / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} G^{\mathrm{fn}} = 0$.
 
 ### The Distributional Gradient
 
 **Theorem.** In the sense of distributions,
 
 $$
-\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_0,
+\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t,
 $$
 
 where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
@@ -292,22 +292,22 @@ $$
 On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde{n} = -\tilde{Q}/\varepsilon$, and $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
 
 $$
-G^{\mathrm{fn}} \tilde{n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = -\frac{\varepsilon^2}{\varepsilon^5} e_0 = -\frac{1}{\varepsilon^3} e_0.
+G^{\mathrm{fn}} \tilde{n} = \frac{\tilde{Q}^{\natural}}{\varepsilon^4} \cdot \left(-\frac{\tilde{Q}}{\varepsilon}\right) = -\frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_t = -\frac{\varepsilon^2}{\varepsilon^5} e_t = -\frac{1}{\varepsilon^3} e_t.
 $$
 
 So
 
 $$
-\int_{\|\tilde{Q}\|_E = \varepsilon} G^{\mathrm{fn}} \tilde{n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\|_E = \varepsilon} \phi \, dS \cdot e_0.
+\int_{\|\tilde{Q}\|_E = \varepsilon} G^{\mathrm{fn}} \tilde{n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\|_E = \varepsilon} \phi \, dS \cdot e_t.
 $$
 
-As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_0$. Therefore
+As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_t$. Therefore
 
 $$
-\langle \tilde{\nabla} G^{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_0,
+\langle \tilde{\nabla} G^{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_t,
 $$
 
-which is the distributional identity $\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_0$, in agreement with the statement of the theorem.
+which is the distributional identity $\tilde{\nabla} G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, in agreement with the statement of the theorem.
 
 ## The Cauchy Integral Formula
 
@@ -389,7 +389,7 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 **Theorem (maximum principle).** If $F^{\mathrm{fn}}$ satisfies $\tilde{\nabla}F^{\mathrm{fn}} = 0$ on a domain $\Omega$ and $\|F^{\mathrm{fn}}\|_E$ attains its maximum at an interior point of $\Omega$, then $F^{\mathrm{fn}}$ is constant on $\Omega$.
 
-**Proof.** Use the mean value property: if $\|F^{\mathrm{fn}}\|_E$ attains its maximum at $\tilde{Q}_0$, then $F^{\mathrm{fn}}(\tilde{Q}_0)$ equals the average of $F^{\mathrm{fn}}$ over every small sphere around $\tilde{Q}_0$, so $\|F^{\mathrm{fn}}(\tilde{Q}_0)\|_E \leq$ the average of $\|F^{\mathrm{fn}}\|_E \leq \|F^{\mathrm{fn}}(\tilde{Q}_0)\|_E$; both inequalities are equalities, so $\|F^{\mathrm{fn}}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial_\mu F^{\mathrm{fn}}(\tilde{Q}_0) = 0$, so $F^{\mathrm{fn}}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $F^{\mathrm{fn}}$ is constant on $\Omega$.
+**Proof.** Use the mean value property: if $\|F^{\mathrm{fn}}\|_E$ attains its maximum at $\tilde{Q}_0$, then $F^{\mathrm{fn}}(\tilde{Q}_0)$ equals the average of $F^{\mathrm{fn}}$ over every small sphere around $\tilde{Q}_0$, so $\|F^{\mathrm{fn}}(\tilde{Q}_0)\|_E \leq$ the average of $\|F^{\mathrm{fn}}\|_E \leq \|F^{\mathrm{fn}}(\tilde{Q}_0)\|_E$; both inequalities are equalities, so $\|F^{\mathrm{fn}}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial/\partial q_\mu F^{\mathrm{fn}}(\tilde{Q}_0) = 0$, so $F^{\mathrm{fn}}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $F^{\mathrm{fn}}$ is constant on $\Omega$.
 
 ### Liouville's Theorem
 
@@ -457,7 +457,7 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
-**In the fundamental solution.** The fundamental solution $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G^{\mathrm{fn}} = 0$; the only singularity of $G^{\mathrm{fn}}$ is the origin.
+**In the fundamental solution.** The fundamental solution $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G^{\mathrm{fn}} = 0$; the only singularity of $G^{\mathrm{fn}}$ is the origin.
 
 **In the Cauchy integral formula.** The formula requires the function $F^{\mathrm{fn}}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
 
@@ -509,22 +509,22 @@ The following questions are not answered in this article and are left for later 
 
 The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient $\overleftarrow{\nabla}$, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_0$, the distributional identity established above.
+The **fundamental solution** of the gradient operator is $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
-| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
+| $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$, $F_\mu = u_\mu + j v_\mu$ | Split complex coefficients and values |
 | ${}^{\natural}, \bar{\cdot}, {}^\dagger, {}^\flat$ | The four conjugations |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
-| $V$ | A four-dimensional real subspace, coordinates $Q_0, \dots, Q_3$ |
+| $V$ | A four-dimensional real subspace, coordinates $Q_t, \dots, Q_z$ |
 | $\Omega \subset V$ | Domain of integration |
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega F^{\mathrm{fn}} \, dV$ | Integral of $F^{\mathrm{fn}}$ over $\Omega$ |

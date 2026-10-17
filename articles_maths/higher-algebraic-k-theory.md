@@ -184,13 +184,13 @@ $$
 
 for which $k_0(F) = \mathbb{Z}/2$, $k_1(F) = F^\times/F^{\times 2}$, and $k_2(F) \cong \operatorname{Br}_2(F)$, the two-torsion of the Brauer group, by Merkurjev's theorem. The dictionary is the one that turns the symbol $\{a,b\}$ into the class of the quaternion algebra $(a,b)_F$, and the relations above into the splitting of $(a,-a)_F$ and of $(a,1-a)_F$ — the second because $1 - a$ is the norm of $1 + \sqrt a$ from $F(\sqrt a)$, so that $(a,1-a)_F$ is always split. Two deep identifications place the group: **Milnor's conjecture**, proved by Voevodsky for fields of characteristic not $2$, states $k_n(F) \cong H^n(F;\mathbb{Z}/2)$ in the notation of *Galois Cohomology*, and the corresponding statement for the powers of the fundamental ideal, $I^n/I^{n+1} \cong k_n(F)$, is in *The Witt Group and the Grothendieck–Witt Ring*, which writes the same group as $k_n^M(F)/2$.
 
-**Definition (the tame symbol).** Let $v$ be a discrete valuation of a field $E$ with residue field $\kappa_v$ and uniformiser $\pi$, and write $f = u_f\pi^{v(f)}$ for the unit part $u_f$. The **tame symbol** is the homomorphism $\partial_v : k_2(E) \to k_1(\kappa_v)$ given on symbols by
+**Definition (the tame symbol).** Let $v$ be a discrete valuation of a field $E$ with residue field $\kappa_v$ and uniformiser $\pi$, and write $f = u_f\pi^{v(f)}$ for the unit part $u_f$. The **tame symbol** is the homomorphism $\partial/\partial v : k_2(E) \to k_1(\kappa_v)$ given on symbols by
 
 $$
-\partial_v(\{f,g\}) = (-1)^{v(f)v(g)} u_f^{-v(g)} u_g^{v(f)} \qquad \text{in } k_1(\kappa_v) = \kappa_v^\times/\kappa_v^{\times 2},
+\partial/\partial v(\{f,g\}) = (-1)^{v(f)v(g)} u_f^{-v(g)} u_g^{v(f)} \qquad \text{in } k_1(\kappa_v) = \kappa_v^\times/\kappa_v^{\times 2},
 $$
 
-the powers of $\pi$ cancelling between the two unit parts. It annihilates the two relations. First, $\partial_v(\{f,-f\}) = u_f^{2v(f)}$, a square, since $v(f)(v(f)+1)$ is even. Second, $\partial_v(\{f,1-f\}) = 1$ at every place: the value is $1$ where both elements are units; it is $u_f^{-v(1-f)}$ where $v(f) = 0 < v(1-f)$, and there $f \equiv 1$ modulo the maximal ideal; it is $u_{1-f}^{v(f)}$ where $v(f) > 0$, and there $1 - f \equiv 1$; and it is $(-1)^{k^2}(u_{1-f}/u_f)^{-k}$ where $v(f) = v(1-f) = k < 0$, and there $u_{1-f}/u_f \equiv -1$, again giving $1$ because $k^2 - k$ is even. Hence $\partial_v$ descends from the symbols to $k_2(E)$.
+the powers of $\pi$ cancelling between the two unit parts. It annihilates the two relations. First, $\partial/\partial v(\{f,-f\}) = u_f^{2v(f)}$, a square, since $v(f)(v(f)+1)$ is even. Second, $\partial/\partial v(\{f,1-f\}) = 1$ at every place: the value is $1$ where both elements are units; it is $u_f^{-v(1-f)}$ where $v(f) = 0 < v(1-f)$, and there $f \equiv 1$ modulo the maximal ideal; it is $u_{1-f}^{v(f)}$ where $v(f) > 0$, and there $1 - f \equiv 1$; and it is $(-1)^{k^2}(u_{1-f}/u_f)^{-k}$ where $v(f) = v(1-f) = k < 0$, and there $u_{1-f}/u_f \equiv -1$, again giving $1$ because $k^2 - k$ is even. Hence $\partial/\partial v$ descends from the symbols to $k_2(E)$.
 
 **The ramification of a rational function field.** The tame symbol is the first ingredient of the arithmetic of the rational function field $F(t)$. The tame symbols at the places of $F(t)$, the monic irreducible polynomials of $F[t]$ and the place at infinity, sum to the ramification map, and Milnor's exact sequence identifies its image with the group $R_2(F)$ of **ramification sequences**, the sequences of square-class data whose norms cancel; the sequences that come from a single symbol $\{f,g\}$, as opposed to a general class of $k_2(F(t))$, are decided by a quadratic form over $F$, the Bezoutian form of the pair. The exact sequence, the group $R_2(F)$ and the criterion are the subject of *Ramification Sequences and Bezoutian Forms*; the failure of representability is what makes the biquaternion division algebras of *Division Algebras* a phenomenon of a rational function field.
 
@@ -256,7 +256,7 @@ For a field the Quillen groups are accompanied by the **Milnor $K$-groups** $k_n
 | $k_n^M(F)$ | Milnor $K$-groups of a field; $k_1^M(F) = F^\times$, $k_2^M(F) \cong K_2(F)$ |
 | $k_n(F) = k_n^M(F)/2$ | Mod-2 Milnor $K$-group; $k_2(F) \cong \operatorname{Br}_2(F)$ and $k_n(F) \cong H^n(F;\mathbb{Z}/2)$ |
 | $\{a_1, \ldots, a_n\}$ | Symbol in $k_n^M(F)$ |
-| $\partial_v$ | Tame symbol at a discrete valuation, into $k_1$ of the residue field |
+| $\partial/\partial v$ | Tame symbol at a discrete valuation, into $k_1$ of the residue field |
 | $F_p$, $R_2(F)$ | Residue field of a place $p$ of $F(t)$; group of ramification sequences (*Ramification Sequences and Bezoutian Forms*) |
 
 ## Further Reading

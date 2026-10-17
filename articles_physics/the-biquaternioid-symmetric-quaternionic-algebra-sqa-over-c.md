@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ with $\flat=-{}^{*}$; the centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **commutative**, and it is not associative. Its class among the twelve structures is that of a symmetric algebra. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
-- **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_0$ return the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
+- **The absence of a unit.** The structure has no unit: the two one-sided actions of $e_t$ return the natural conjugate of the argument, not the argument. Owner: *Introduction to the Symmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure — the interval read on the square — and the invertibility criterion of the symmetrised quaternionic product. Owner: *Norm and Invertibility in the Symmetric Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -40,7 +40,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Symmet
 - **Its class is the class of the probability form.** A central value is the only kind of value that a change of the local complex structure leaves alone, which is why the two central-valued forms of the grid are the ones that survive a change of frame.
 - **The isotropic elements read as the null cone.** The radical of the central product is the cone read as a degeneration of a product, and a central product cannot compose because composing needs a value that can be multiplied rather than only added.
 - **The scalar coupling carries no side.** Where the parent structure has a left family and a right family that do not close, the commutativity of the operation makes the two one, so a comparison of two material operations attaches the same operator from either slot and the operator content of the order is gone.
-- **The comparison is a rank-one functional.** The multiplication is the pairing with the parameter read with the fixed value $e_0$, so its kernel is the hyperplane of operations the coupling does not see and its image is the central line: the coupling returns a number and not a direction. The adjoint is the **symmetry of the comparison and not a comparison**, and the conjugation of a parameter belongs to the Hermitian form and not to the quaternion form, which has none to apply.
+- **The comparison is a rank-one functional.** The multiplication is the pairing with the parameter read with the fixed value $e_t$, so its kernel is the hyperplane of operations the coupling does not see and its image is the central line: the coupling returns a number and not a direction. The adjoint is the **symmetry of the comparison and not a comparison**, and the conjugation of a parameter belongs to the Hermitian form and not to the quaternion form, which has none to apply.
 - **The infinitesimal structure of the band is the rotation algebra, outer to the family.** The central line is the self-adjoint class, there is no non-zero skew-adjoint multiplication, and what is infinitesimal in the band is not the commutators of the couplings but the rotations of the frame they are read in — of dimension three.
 - **The separation of measurement and motion.** The two-sided operators are rank one, so the spin group is not realised in the band and the symmetrisation that makes the coupling destroys invertibility, leaving the double cover to the parent. The algebraic norm two-sided operator is a scalar times a projection and never a conjugation, so the coupling cannot relabel the algebra.
 - **A material coupling of material operations is read as a scalar of the informational sector carrying no phase of its own.** On the state space the operator is a functional, contracting a state with the parameter and returning a central number.
@@ -58,8 +58,8 @@ The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star
 | $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ | the quaternion form; the coupling |
 | $\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic elements; the radical of the product |
-| $e_0\star\tilde X=\tilde X^{\natural}$ | the absence of a unit |
-| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | the centre; the line of the values |
+| $e_t\star\tilde X=\tilde X^{\natural}$ | the absence of a unit |
+| $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | the centre; the line of the values |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $S_{\tilde P,\tilde P}$ | the two-sided operator; a scalar times a projection |
 

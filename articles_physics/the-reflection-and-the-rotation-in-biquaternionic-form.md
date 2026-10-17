@@ -8,7 +8,7 @@ The subject is the following observation, made precise. The biquaternion algebra
 
 The article is organized as follows. The first section reconciles the two ways a single element of the algebra is used — as an object and as an operator. The second establishes the grading, by the classical theorem that every orthogonal transformation is a product of reflections. The third introduces the frame $\gamma^0$ and shows that the Clifford metric is the biquaternion norm of the Hermitian sector, which is what makes the mostly-minus convention of the series a statement about the objects rather than a choice. The fourth shows that conjugation by $\gamma^0$ is complex conjugation on $\mathbb{B}$, so that the frame, the sector swap, and the reflection are one operator. The fifth and sixth give the spaces of rotations and of reflections, and answer the question of how many reflections a given Lorentz transformation needs. The last two sections draw the consequence for chirality and explain why the Pauli algebra cannot carry it.
 
-The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, $e_1e_2 = e_3$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the isomorphism $\mathsf{M}_4$ of the dictionary article, under which $\mathsf{M}_4(e_k)$ is a spacelike bivector, $\mathsf{M}_4(e_0) = I_4$, and $\mathsf{M}_4(i) = -\omega$ with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the pseudoscalar. No convention is changed here.
+The conventions are those of the series: the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_\mu^2 = -e_t$, $\vec e_x \vec e_y = \vec e_z$; the scalar imaginary $i$; the sectors $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$; the Clifford metric $g = \mathrm{diag}(+1,-1,-1,-1)$ of the generators; and the isomorphism $\mathsf{M}_4$ of the dictionary article, under which $\mathsf{M}_4(\vec e_\mu)$ is a spacelike bivector, $\mathsf{M}_4(e_t) = I_4$, and $\mathsf{M}_4(i) = -\omega$ with $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the pseudoscalar. No convention is changed here.
 
 ## One Algebra, Read Twice
 
@@ -78,11 +78,11 @@ with all coefficients positive; every trivector is $\gamma^0\mathsf{M}_4(w')$ wi
 
 | Clifford element | biquaternion | sector |
 |---|---|---|
-| $\gamma^0$ | $e_0$ | $\mathbb{M}_+$ |
-| $\gamma^1, \gamma^2, \gamma^3$ | $ie_1, ie_2, ie_3$ | $\mathbb{M}_+$ |
-| trivectors | combinations of $ie_0, e_1, e_2, e_3$ | $\mathbb{M}_-$ |
+| $\gamma^0$ | $e_t$ | $\mathbb{M}_+$ |
+| $\gamma^1, \gamma^2, \gamma^3$ | $i\vec e_x, i\vec e_y, i\vec e_z$ | $\mathbb{M}_+$ |
+| trivectors | combinations of $ie_t, \vec e_x, \vec e_y, \vec e_z$ | $\mathbb{M}_-$ |
 
-The generators therefore *are* the Hermitian-sector basis, pushed through $\gamma^0$: the scalar direction $e_0$ becomes the time generator, the three imaginary-quaternion directions $ie_k$ become the three spatial generators. And in the other direction, the frame maps the even algebra onto its generators:
+The generators therefore *are* the Hermitian-sector basis, pushed through $\gamma^0$: the scalar direction $e_t$ becomes the time generator, the three imaginary-quaternion directions $i\vec e_\mu$ become the three spatial generators. And in the other direction, the frame maps the even algebra onto its generators:
 
 $$
 \mathsf{M}_4(\mathbb{M}_+) = \mathrm{span}\{I_4,\ \gamma^0\gamma^1,\ \gamma^0\gamma^2,\ \gamma^0\gamma^3\},
@@ -99,18 +99,18 @@ the identity together with the spacelike bivectors, which generate the spatial r
 The decisive consequence concerns the **metric**. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ evaluated on the two sector bases gives
 
 $$
-N \text{ on } (e_0, ie_1, ie_2, ie_3) = \mathrm{diag}(+1,-1,-1,-1) = g,
+N \text{ on } (e_t, i\vec e_x, i\vec e_y, i\vec e_z) = \mathrm{diag}(+1,-1,-1,-1) = g,
 $$
 $$
-N \text{ on } (ie_0, e_1, e_2, e_3) = \mathrm{diag}(-1,+1,+1,+1) = \eta = -g .
+N \text{ on } (ie_t, \vec e_x, \vec e_y, \vec e_z) = \mathrm{diag}(-1,+1,+1,+1) = \eta = -g .
 $$
 
 The Clifford metric of the generators is not an independent convention laid on top of the algebra. **It is the biquaternion norm of the Hermitian sector**, and the $ict$ metric of the material sector is its negative, the biquaternion norm of $\mathbb{M}_-$. This closes the loop of the series' metric conventions: level $2$ carries $\eta = \mathrm{diag}(-1,+1,+1,+1)$, the form of the material coordinates; level $3$ carries $g = \mathrm{diag}(+1,-1,-1,-1)$, the form of the objects the generators represent, which are Hermitian. The two differ by the sign that distinguishes the two sectors, and neither could consistently be anything else.
 
-The same fact appears in the vector square. For $w = x_0e_0 + ix_1e_1 + ix_2e_2 + ix_3e_3 \in \mathbb{M}_+$,
+The same fact appears in the vector square. For $w = x_te_t + ix_x\vec e_x + ix_y\vec e_y + ix_z\vec e_z \in \mathbb{M}_+$,
 
 $$
-\left(x_\mu\gamma^\mu\right)^2 = \langle w\rangle_{\natural}\,I_4 = \left(x_0^2 - x_1^2 - x_2^2 - x_3^2\right)I_4 ,
+\left(x_\mu\gamma^\mu\right)^2 = \langle w\rangle_{\natural}\,I_4 = \left(x_t^2 - x_x^2 - x_y^2 - x_z^2\right)I_4 ,
 $$
 
 with no relative sign between the Clifford square and the biquaternion norm. The absence of that sign is the signature $g$ showing through.
@@ -127,7 +127,7 @@ $$
 
 where $\tilde{Q}^*$ is the complex conjugate, $i\mapsto -i$ with the quaternion units fixed. Since complex conjugation is exactly the map that fixes $\mathbb{H}_{\mathbb{B}}$ and negates $i\mathbb{H}_{\mathbb{B}}$, this says that **conjugation by $\gamma^0$ is the sector-exchanging conjugation**: it is the spacetime-side avatar of the operation that separates the material and informational sectors.
 
-Among the four generators, $\gamma^0$ is unique in this. The spatial generators reflect instead: $\gamma^k$ fixes $e_k$ and negates the two units $e_j$ with $j\neq k$, and it acts dually on the imaginary units, negating $ie_k$ and fixing the other two. They are linear involutions on the quaternion units, not conjugations. Only the time direction conjugates.
+Among the four generators, $\gamma^0$ is unique in this. The spatial generators reflect instead: $\gamma^k$ fixes $\vec e_k$ and negates the two units $\vec e_j$ with $j\neq k$, and it acts dually on the imaginary units, negating $i\vec e_k$ and fixing the other two. They are linear involutions on the quaternion units, not conjugations. Only the time direction conjugates.
 
 The frame completes the Clifford interpretation of the conjugations of $\mathbb{B}$. Clifford reversal $\mathrm{rev}$, the anti-automorphism that reverses the order of the factors in a product, acts on the biquaternions as **quaternion conjugation**:
 
@@ -155,7 +155,7 @@ $$
 SL(2,\mathbb{C}) = \{\tilde{U}\in\mathbb{B} : \langle\tilde{U}\rangle_{\natural} = 1\},
 $$
 
-a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $e_k$ and $ie_k$ under $\mathsf{M}_4$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
+a group of real dimension $6$, the double cover of $SO^+(1,3)$. Its Lie algebra is the span of the six bivectors, the images of $\vec e_\mu$ and $i\vec e_\mu$ under $\mathsf{M}_4$. This is the space in which the rotors of the relativity articles live and act: on four-vectors in *Relativistic Mechanics in Biquaternionic Form* and *Exercise: Boosting a Four-Velocity and Rapidity Composition*, on spinors in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, on states in *Quantum Physics in Biquaternionic Form*, and in the composition of rotations of *Exercise: The Thomas Precession*.
 
 Two subfamilies are worth separating, because the series uses them differently:
 
@@ -172,7 +172,7 @@ $$
 u = \gamma^0\mathsf{M}_4(w), \qquad w\in\mathbb{M}_+, \quad \langle w\rangle_{\natural} = \pm 1 ,
 $$
 
-the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\mathsf{M}_4(e_0)$: its normal is the identity $e_0$ of $\mathbb{B}$.
+the timelike normals for $\langle w\rangle_{\natural} = +1$ and the spacelike ones for $\langle w\rangle_{\natural} = -1$. The canonical reflection is the frame itself, $\gamma^0 = \gamma^0\mathsf{M}_4(e_t)$: its normal is the identity $e_t$ of $\mathbb{B}$.
 
 The reflections do **not** form a group, and this is the sharp difference from the rotations. Multiplying two reflections gives an even element — a rotation — so the set of reflections is a single coset of the rotation group, not closed under multiplication. Its dimension is $3$, the dimension of the unit quadric, against the $6$ of the rotations. The two together form the Pin group,
 
@@ -207,7 +207,7 @@ so the two columns are exchanged: an **even** internal matrix gives a reflection
 | $T$ | $\gamma^1\gamma^3$ | even | anti-linear | $-1$ | reflection |
 | $C$ | $i\gamma^2$ | odd | anti-linear | $+1$ | proper |
 
-This is why $T$ is a reflection whose internal matrix is an **even** element — the real quaternion $\gamma^1\gamma^3=-e_2$ of that article — while $C$ is a proper transformation carried by an **odd** one. Neither fact is visible from the grade alone, and both are recorded here so that the grade assignments of the CPT article are not read against the rule of this one.
+This is why $T$ is a reflection whose internal matrix is an **even** element — the real quaternion $\gamma^1\gamma^3=-\vec e_y$ of that article — while $C$ is a proper transformation carried by an **odd** one. Neither fact is visible from the grade alone, and both are recorded here so that the grade assignments of the CPT article are not read against the rule of this one.
 
 What anti-linearity does **not** change is the chirality behaviour. Chirality is decided by anticommutation with $\gamma_5$, which is a property of the Clifford element and not of the map's linearity: $C$ and $P$, both odd, exchange the chiral halves; $T$, even, preserves them; hence $CPT$, even, preserves them. The grade governs which chirality a spinor is carried to; the determinant governs the spacetime parity it is carried by; and anti-linearity moves only the second.
 
@@ -241,7 +241,7 @@ $$
 v = -\cos\frac{\theta}{2}\,\gamma^j + \sin\frac{\theta}{2}\,\gamma^k , \qquad v^2 = -I_4 ,
 $$
 
-so that $\gamma^j v = \cos\frac{\theta}{2}I_4 + \sin\frac{\theta}{2}\gamma^j\gamma^k$. A generic Lorentz transformation fixes no plane at all — a boost and a rotation in non-parallel planes destroy every fixed direction — so by Cartan–Dieudonné it requires four reflections, the maximum. In these factorisations $u$ and $v$ are unit vectors in the Clifford sense, $u^2 = \pm I_4$; the generators $\mathsf{M}_4(ie_k)$ themselves have $N = -1$ and are not rotors, the rotors being their exponentials.
+so that $\gamma^j v = \cos\frac{\theta}{2}I_4 + \sin\frac{\theta}{2}\gamma^j\gamma^k$. A generic Lorentz transformation fixes no plane at all — a boost and a rotation in non-parallel planes destroy every fixed direction — so by Cartan–Dieudonné it requires four reflections, the maximum. In these factorisations $u$ and $v$ are unit vectors in the Clifford sense, $u^2 = \pm I_4$; the generators $\mathsf{M}_4(i\vec e_\mu)$ themselves have $N = -1$ and are not rotors, the rotors being their exponentials.
 
 So the answer to the question is: **pure boosts and pure spatial rotations are products of two reflections; a generic Lorentz transformation is not, and needs four.** The set of transformations admitting a two-reflection form is exactly the set fixing a plane, a proper submanifold of $SL(2,\mathbb{C})$ — the Thomas–Wigner rotation of a general composed boost is what carries a transformation out of it.
 
@@ -340,13 +340,13 @@ The claims of this article, in order.
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathrm{Cl}_{1,3}$, $\mathrm{Cl}_{1,3}^{\pm}$ | Clifford algebra and its even/odd parts |
-| $\mathsf{M}_4$ | Isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$, $\mathsf{M}_4(e_0) = I_4$, $\mathsf{M}_4(i) = -\omega$ |
+| $\mathsf{M}_4$ | Isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$, $\mathsf{M}_4(e_t) = I_4$, $\mathsf{M}_4(i) = -\omega$ |
 | $g = \mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the generators |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$ | $ict$ metric of the material coordinates |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -I_4$ |
 | $\gamma_5 = i_{\mathrm{Cl}}\omega$ | Chirality operator, $\gamma_5^2 = I_4$ |
 | $\tilde\Pi_{L,R} = \tfrac12(1\pm\gamma_5)$ | Chirality projectors, rank $2$ |
-| $\gamma^0$ | The frame; the reflection whose normal is $e_0$ |
+| $\gamma^0$ | The frame; the reflection whose normal is $e_t$ |
 | $\rho(u) : x\mapsto -uxu^{-1}$ | Pin action of an odd unit element |
 | $\mathrm{rev}(\mathsf{M}_4(\tilde{Q})) = \mathsf{M}_4(\tilde{Q}^{\natural})$ | Clifford reversal is quaternion conjugation |
 | $\mathsf{M}_4(\tilde{Q}^{*}) = \gamma^0\mathrm{rev}(\mathsf{M}_4(\tilde{Q}))\gamma^0$ | Hermitian conjugation |

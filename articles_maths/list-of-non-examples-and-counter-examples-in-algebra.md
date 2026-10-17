@@ -19,7 +19,6 @@ A **domain** is a commutative ring with $1 \neq 0$ and no zero divisors; the obj
 | The exterior algebra $\Lambda(V)$, $\dim V \geq 1$ | not a domain: $v \wedge v = 0$ for $v \in V$ | *The Exterior Algebra* |
 | Split biquaternions $\mathbb{H}_{\mathbb{D}}$ | not a domain: they are $\mathbb{H}\oplus\mathbb{H}$, and have zero divisors | *Split-Biquaternion Algebra* |
 | Biquaternions $\mathbb{B}$ | not a domain: $\mathbb{B} \cong M_2(\mathbb{C})$ has zero divisors | *The Biquaternioid as a Vector Space over $\mathbb{C}$* |
-| Sedenions $\mathbb{S}$ | not a domain: the norm is not multiplicative and there are zero divisors | *Octonion Algebra* |
 | The ring $\mathbb{Z}[\sqrt{-5}]$ as a counter-example | it is nevertheless a domain: it is the failure of unique factorisation, not of the domain axiom | *Unique Factorisation Domains* |
 
 ## Not Reduced: Nilpotents
@@ -84,8 +83,6 @@ A **division ring** is a ring in which every nonzero element is a unit; a **divi
 | $\mathbb{Z}$ | a domain but not a division ring: only $\pm 1$ are units | *The Integers* |
 | The free algebra $k\langle x_1,\dots,x_n\rangle$ | a domain but not a division ring, and not commutative | *Tensor Powers and the Free Algebra* |
 | The Weyl algebra $A_1$ | a domain but not a division ring; it embeds in a division ring of fractions | *Quotients of the Tensor Algebra* |
-| The octonions $\mathbb{O}$ | a division algebra but **not a ring**: the multiplication is not associative | *Octonion Algebra* |
-| The sedenions $\mathbb{S}$ | not even a division algebra: zero divisors | *Octonion Algebra* |
 | Non-example: $\mathbb{H}$ as a division ring that is not a field | it is a division ring: the failure is commutativity, not inverses | *Quaternion Algebra* |
 | Non-example: a finite division ring that is not a field | does not exist, by Wedderburn's little theorem | *Division Algebras* |
 
@@ -96,7 +93,6 @@ A **field** is a commutative division ring; the objects here are domains or divi
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
 | $\mathbb{H}$ | a division ring but not a field: not commutative | *Quaternion Algebra* |
-| $\mathbb{O}$ | neither commutative nor associative, so neither a ring nor a field | *Octonion Algebra* |
 | $\mathbb{Z}$ | an integral domain but not a field: $2$ is not a unit | *The Integers* |
 | $\mathbb{Z}_p$, the $p$-adic integers | a principal ideal domain but not a field: $p$ is not a unit | *Absolute Values, Valuations and Completions* |
 | $k[x]$, $k[[x]]$ | principal ideal domains but not fields: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
@@ -111,8 +107,6 @@ A **field** is a commutative division ring; the objects here are domains or divi
 
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
-| The octonions $\mathbb{O}$ | not associative: $(e_1e_2)e_4 = e_7$ but $e_1(e_2e_4) = -e_7$; alternative and power-associative | *Octonion Algebra* |
-| The sedenions $\mathbb{S}$ | neither associative nor alternative, and not a division algebra | *Octonion Algebra* |
 | A Lie algebra $\mathrm{G}$ | not associative and not commutative: $[x,y] = -[y,x]$ | *Lie Algebras* |
 | A Jordan algebra | not associative: the Jordan identity replaces associativity | *Jordan Algebras* |
 | The free algebra $k\langle x_1,\dots,x_n\rangle$ | associative but not commutative for $n \geq 2$ | *Tensor Powers and the Free Algebra* |

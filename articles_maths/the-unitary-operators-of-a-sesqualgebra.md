@@ -14,7 +14,7 @@ The subject is the group-theoretic half of the operator theory of the sesqualgeb
 
 **The boundaries.** The pairing, the two adjoints, the parity obstruction and the scalar laws of the adjoint operation are *The Sesquilinear Adjoint Operator*; the one-sided and two-sided cases are *The Adjoint of the Conjugate Left Multiplication*, *The Adjoint of the Ternary Product* and *The Adjoint of the Sesquilinear Sandwich*; the product-preserving maps are the subject of the last section here and are named beside the *-automorphisms of *Automorphisms and Derivations of Algebras*; and the bilinear analogue of the whole article is *Unitary Operators of an Involutive Algebra*. This article stays inside Part I: no distance, no limit, no completeness.
 
-Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*, with $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\varphi(x,y)=\tau(xy^{*})$ is $R$-linear in the first variable, $\varsigma$-semilinear in the second and perfect. The derived product is $x\star y=xy^{*}$, the operators are $L_{a}(x)=ax^{*}$, $R_{b}(x)=xb^{*}$, $S_{a,b}(x)=ax^{*}b$ and $T_{p,q}(x)=pxq$, the unitary elements are $U(A)=\{u:uu^{*}=u^{*}u=1\}$, and $\alpha_{u}(x)=uxu^{*}$ is the inner $*$-automorphism of a unitary element $u$. The adjoint of a $\varsigma$-semilinear $S$ is defined by $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$ and that of an $R$-linear $T$ by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, both existing and unique by *The Sesquilinear Adjoint Operator*.
+Throughout, $R$ is a commutative ring with $1$ without zero divisors, $\varsigma$ is an involution of $R$, and $A$ is a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, so that $A$ is a sesqualgebra in the sense of *Sesqualgebras*, with $1^{*}=1$. The function $\tau:A\to R$ is $R$-linear, central, $\tau(ab)=\tau(ba)$, and compatible with the involution, $\tau(x^{*})=\varsigma(\tau(x))$, and the pairing $\varphi(x,y)=\tau(xy^{*})$ is $R$-linear in the first variable, $\varsigma$-semilinear in the second and perfect. The derived product is $x\star y=xy^{*}$, the operators are $L_{a}(x)=ax^{*}$, $R_{b}(x)=xb^{*}$, $S_{a,b}(x)=ax^{*}b$ and $T_{p,q}(x)=pxq$, the unitary elements are $\mathrm{U}(A)=\{u:uu^{*}=u^{*}u=1\}$, and $\alpha_{u}(x)=uxu^{*}$ is the inner $*$-automorphism of a unitary element $u$. The adjoint of a $\varsigma$-semilinear $S$ is defined by $\varphi(Sx,y)=\varsigma\bigl(\varphi(x,S^{\dagger}y)\bigr)$ and that of an $R$-linear $T$ by $\varphi(Tx,y)=\varphi(x,T^{\dagger}y)$, both existing and unique by *The Sesquilinear Adjoint Operator*.
 
 ## The Unitary Condition
 
@@ -52,7 +52,7 @@ equivalently when $T^{\dagger}=T^{-1}$; an $R$-linear one is a **unitary operato
 
 ## The Relation to the Unitary Elements
 
-**Theorem (the one-sided operators).** Let $u\in U(A)$. Then
+**Theorem (the one-sided operators).** Let $u\in \mathrm{U}(A)$. Then
 
 $$
 L_{u}^{\dagger}=S_{1,u}=L_{u}^{-1},
@@ -62,7 +62,7 @@ so the conjugate left multiplication by a unitary element is an antiunitary oper
 
 **Proof.** For the left multiplication, $L_{u}=S_{u,1}$ and the adjoint of the sandwich is $S_{1,u}$; and $L_{u}(S_{1,u}x)=u(x^{*}u)^{*}=uu^{*}x=x$, $S_{1,u}(L_{u}x)=(ux^{*})^{*}u=xu^{*}u=x$, so the inverse is $S_{1,u}$, the two identities holding because $u$ is unitary. For the right multiplication, $R_{b}$ is $R$-linear with $R_{b}^{\dagger}=R_{b^{*}}$, and $R_{b}(R_{b^{-1}}x)=xb^{-1}b=x$ and $R_{b^{-1}}(R_{b}x)=xbb^{-1}=x$, so $R_{b}^{-1}=R_{b^{-1}}$; the adjoint and the inverse agree exactly when $b^{*}=b^{-1}$, that is when $b$ is unitary.
 
-**Theorem (the inner $*$-automorphisms).** Let $u\in U(A)$. Then $\alpha_{u}(x)=uxu^{*}$ is an $R$-linear unitary operator, with
+**Theorem (the inner $*$-automorphisms).** Let $u\in \mathrm{U}(A)$. Then $\alpha_{u}(x)=uxu^{*}$ is an $R$-linear unitary operator, with
 
 $$
 \alpha_{u}^{\dagger}=\alpha_{u^{*}}=\alpha_{u}^{-1}.
@@ -70,11 +70,11 @@ $$
 
 **Proof.** The linearity and the multiplicativity are those of the inner $*$-automorphism; for the adjoint, $\varphi(\alpha_{u}x,y)=\tau(uxu^{*}y^{*})=\tau(xu^{*}y^{*}u)=\varphi(x,\alpha_{u^{*}}y)$ by the centrality of $\tau$, so $\alpha_{u}^{\dagger}=\alpha_{u^{*}}$; and $\alpha_{u^{*}}=\alpha_{u^{-1}}=\alpha_{u}^{-1}$ because $u$ is unitary.
 
-**Corollary (the maps from the group of the elements).** For a unitary $u$ the sandwich $S_{a,b}$ with $a=u$, $b=1$ is antiunitary and with $a,b\in U(A)$ is unitary; and the assignments $u\mapsto L_{u}$, $u\mapsto R_{u}$ and $u\mapsto\alpha_{u}$ carry $U(A)$ into $G$, the first into the antiunitary coset and the last two into $G_{0}$. The kernel of $u\mapsto\alpha_{u}$ is the group $U(A)\cap Z(A)$ of the central unitary elements, and $u\mapsto L_{u}$ and $u\mapsto R_{u}$ are injective.
+**Corollary (the maps from the group of the elements).** For a unitary $u$ the sandwich $S_{a,b}$ with $a=u$, $b=1$ is antiunitary and with $a,b\in \mathrm{U}(A)$ is unitary; and the assignments $u\mapsto L_{u}$, $u\mapsto R_{u}$ and $u\mapsto\alpha_{u}$ carry $\mathrm{U}(A)$ into $G$, the first into the antiunitary coset and the last two into $G_{0}$. The kernel of $u\mapsto\alpha_{u}$ is the group $\mathrm{U}(A)\cap Z(A)$ of the central unitary elements, and $u\mapsto L_{u}$ and $u\mapsto R_{u}$ are injective.
 
-**Proof.** The antiunitarity of $L_{u}$ and the unitarity of $S_{u,v}$ are the theorems above and the corollary of *The Adjoint of the Sesquilinear Sandwich*; the unitarity of $R_{u}$ and $\alpha_{u}$ are the theorems above. The kernel of $u\mapsto\alpha_{u}$ is the set of unitary $u$ with $uxu^{*}=x$, that is $ux=xu$ for all $x$, which is $U(A)\cap Z(A)$; and $L_{u}=L_{u'}$ forces $u=L_{u}(1)=L_{u'}(1)=u'$, so $u\mapsto L_{u}$ is injective, and $R_{b}=R_{b'}$ forces $b^{*}=b'^{*}$ at $x=1$.
+**Proof.** The antiunitarity of $L_{u}$ and the unitarity of $S_{u,v}$ are the theorems above and the corollary of *The Adjoint of the Sesquilinear Sandwich*; the unitarity of $R_{u}$ and $\alpha_{u}$ are the theorems above. The kernel of $u\mapsto\alpha_{u}$ is the set of unitary $u$ with $uxu^{*}=x$, that is $ux=xu$ for all $x$, which is $\mathrm{U}(A)\cap Z(A)$; and $L_{u}=L_{u'}$ forces $u=L_{u}(1)=L_{u'}(1)=u'$, so $u\mapsto L_{u}$ is injective, and $R_{b}=R_{b'}$ forces $b^{*}=b'^{*}$ at $x=1$.
 
-**Remark (the picture).** The group of the elements therefore sits inside the unitary group of the operators in three ways: the right multiplications and the inner automorphisms give the $R$-linear part, and the left multiplications give the $\varsigma$-semilinear part. As maps of sets the three are injective, but they are not all multiplicative: $u\mapsto\alpha_{u}$ and $u\mapsto R_{u}$ are homomorphisms, $R_{u}R_{v}=R_{uv}$, while $u\mapsto L_{u}$ is not, its composite $L_{u}L_{v}=T_{u,\,v^{*}}$ leaving the one-sided family. The antilinear character of the left regular representation, which *The Left and Right Multiplication Operators of a Sesqualgebra* records as the reason no single linear representation carries the whole product, appears here as the reason half of the image of $U(A)$ is antiunitary.
+**Remark (the picture).** The group of the elements therefore sits inside the unitary group of the operators in three ways: the right multiplications and the inner automorphisms give the $R$-linear part, and the left multiplications give the $\varsigma$-semilinear part. As maps of sets the three are injective, but they are not all multiplicative: $u\mapsto\alpha_{u}$ and $u\mapsto R_{u}$ are homomorphisms, $R_{u}R_{v}=R_{uv}$, while $u\mapsto L_{u}$ is not, its composite $L_{u}L_{v}=T_{u,\,v^{*}}$ leaving the one-sided family. The antilinear character of the left regular representation, which *The Left and Right Multiplication Operators of a Sesqualgebra* records as the reason no single linear representation carries the whole product, appears here as the reason half of the image of $\mathrm{U}(A)$ is antiunitary.
 
 ## The Operators that Preserve the Product
 
@@ -134,7 +134,7 @@ The unitary elements inject into $G$ through their one-sided operators: the conj
 | $R_{b}^{\dagger}=R_{b^{*}}$, $R_{b}^{-1}=R_{b^{-1}}$ | the right multiplication is unitary exactly for $b$ unitary |
 | $\alpha_{u}^{\dagger}=\alpha_{u^{*}}=\alpha_{u}^{-1}$ | the inner $*$-automorphism is unitary |
 | $T(x\star y)=Tx\star Ty$ | the product-preserving condition |
-| $U(A)\cap Z(A)$ | the kernel of the inner $*$-automorphism map |
+| $\mathrm{U}(A)\cap Z(A)$ | the kernel of the inner $*$-automorphism map |
 | $X\mapsto UXV$, $X\mapsto U\overline{X}V$ | the unitary and the antiunitary operators of $M_{n}(\mathbb{C})$ |
 
 ## Further Reading

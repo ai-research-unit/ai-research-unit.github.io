@@ -200,7 +200,7 @@ of real dimension $4$. Left multiplication $L_q(x)=qx$ is the module action; it 
 
 ## Worked Case: The Biquaternions
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra, viewed over $\mathbb{C}$, where $\mathbb{B}\cong M_2(\mathbb{C})$. The basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the scalar imaginary $i$ is central, and a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Since $\mathbb{B}$ is a matrix algebra and not a division algebra, its module theory is that of $M_2(\mathbb{C})$, and the transformations of its modules separate sharply into a $\mathbb{C}$-linear part and a $\mathbb{B}$-linear part.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra, viewed over $\mathbb{C}$, where $\mathbb{B}\cong M_2(\mathbb{C})$. The basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$, the scalar imaginary $i$ is central, and a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Since $\mathbb{B}$ is a matrix algebra and not a division algebra, its module theory is that of $M_2(\mathbb{C})$, and the transformations of its modules separate sharply into a $\mathbb{C}$-linear part and a $\mathbb{B}$-linear part.
 
 Let $S=\mathbb{C}^2$ be the defining module. Then $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $S$ by matrices, and:
 

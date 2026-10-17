@@ -64,12 +64,12 @@ The square of a material element is its interval, and the interval is a real sca
 **Identity (the square is the interval).** For every $\tilde{Q}$,
 
 $$
-\tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_0,
+\tilde{Q}^{\natural}\tilde{Q} = \langle\tilde{Q}\rangle_{\natural}\,e_t,
 $$
 
-with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\vec x$
-with real $t$ and $\vec x$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+\vec x^{2}$ is **real**, and the
-scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.
+with $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$
+with real $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the value $\langle\tilde{Q}\rangle_{\natural} = -c^{2}t^{2}+x^2+y^2+z^2$ is **real**, and the
+scalar line $\mathbb{R}e_t$ lies in $\mathbb{M}_+$.
 
 **Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
 and it is the minimal instance of a cross-sector coupling supplied by the product itself. It is
@@ -82,15 +82,15 @@ $100$; on $100$ random pairs of material elements the product lies in neither se
 
 The second map is a rotation of the four-vector into an element of the informational sector.
 
-**Map.** On a material element $\tilde{Q} = ict\,e_0+\vec x$, the central element
+**Map.** On a material element $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the central element
 $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ is
 
 $$
-\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\vec x\bigr) = \tfrac12\bigl(ct\,e_0-i\vec x\bigr) \in \mathbb{M}_+,
+\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_t+(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = \tfrac12\bigl(ct\,e_t-i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \in \mathbb{M}_+,
 $$
 
 with $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac14 \langle\tilde{Q}\rangle_{\natural}$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\vec r)$ with $\vec r = -\vec x$,
+$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_t+i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$,
 a point of the Bloch ball.
 
 **Interpretation.** The map is a dictionary and not a dynamics: it names a **state preparation**, the
@@ -146,14 +146,14 @@ A coupling can also be a scalar read from one element of each sector.
 the scalar part of the plain product is purely imaginary,
 
 $$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-\vec x\cdot\vec h\bigr) \quad \text{for }
-\tilde{P} = ict\,e_0+\vec x, \quad \tilde{H} = h_0e_0+i\vec h,
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot\vec h\bigr) \quad \text{for }
+\tilde{P} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \quad \tilde{H} = h_0e_t+i\vec h,
 $$
 
 with both factors real.
 
 **Why.** The scalar part of the product is $P_0H_0-(\vec P,\vec H)$, and the two terms are
-$ict\cdot h_0$ and $\vec x\cdot i\vec h$, each carrying one factor of $i$.
+$ict\cdot h_0$ and $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot i\vec h$, each carrying one factor of $i$.
 
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of *The Bilinear Product on the Material Sector*. It is a pairing and
@@ -204,7 +204,7 @@ Biquaternionic Form*.
 
 | operation | type | source $\to$ target | owner | boundary |
 |---|---|---|---|---|
-| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not informational |
+| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_t$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not informational |
 | preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
@@ -258,10 +258,10 @@ each of its instances owned by an article that proves it.
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | Material ($-$) and informational ($+$) sectors |
-| ${}^{*}$ | Hermitian conjugation, $e_k^{*} = -e_k$, $i^{*} = -i$ |
+| ${}^{*}$ | Hermitian conjugation, $\vec e_k^{*} = -\vec e_k$, $i^{*} = -i$ |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$ | Quaternion conjugation, coefficient conjugation, the real structure |
-| $\tilde{Q} = ict\,e_0+\vec x$ | Material element, $t$ and $\vec x$ real |
-| $\tilde{H} = h_0e_0+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
+| $\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material element, $t$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ real |
+| $\tilde{H} = h_0e_t+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
 | $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |

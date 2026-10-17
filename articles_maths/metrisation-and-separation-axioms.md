@@ -20,9 +20,9 @@ All the axioms below constrain a topological space $X$ by asking for open sets t
 - **$T_0$** if for all distinct $x, y$ there is an open set containing exactly one of them;
 - **$T_1$** if for all distinct $x, y$ there is an open set containing $x$ and not $y$;
 - **Hausdorff**, or **$T_2$**, if distinct points have disjoint neighbourhoods;
-- **regular** if for every point $x$ and every closed set $F$ with $x \notin F$ there are disjoint open sets $U \ni x$ and $V \supseteq F$;
+- **regular** if for every point $x$ and every closed set $F$ with $x \notin F$ there are disjoint open sets $\Omega \ni x$ and $V \supseteq F$;
 - **completely regular** if for every $x$ and every closed $F \not\ni x$ there is a continuous $f : X \to [0,1]$ with $f(x) = 0$ and $f = 1$ on $F$;
-- **normal** if for all disjoint closed sets $F, G$ there are disjoint open sets $U \supseteq F$ and $V \supseteq G$.
+- **normal** if for all disjoint closed sets $F, G$ there are disjoint open sets $\Omega \supseteq F$ and $V \supseteq G$.
 
 The axioms $T_3$, $T_{3\frac12}$ and $T_4$ are the corresponding regularity, complete regularity and normality conditions together with $T_1$:
 
@@ -90,15 +90,15 @@ Urysohn's lemma is the tool that converts the separation of closed sets by open 
 
 **Theorem (Urysohn's lemma).** Let $X$ be a normal space and let $A$ and $B$ be disjoint closed subsets of $X$. Then there is a continuous function $f : X \to [0,1]$ with $f = 0$ on $A$ and $f = 1$ on $B$.
 
-**Proof.** Let $D$ be the set of dyadic rationals in $[0,1]$. One constructs open sets $U_q$ for $q \in D$ with
+**Proof.** Let $D$ be the set of dyadic rationals in $[0,1]$. One constructs open sets $\Omega_q$ for $q \in D$ with
 $$
-A \subseteq U_0, \qquad U_1 = X \setminus B, \qquad \overline{U_q} \subseteq U_r \quad (q < r).
+A \subseteq \Omega_0, \qquad \Omega_1 = X \setminus B, \qquad \overline{U_q} \subseteq \Omega_r \quad (q < r).
 $$
-Start with $U_1 = X \setminus B$ and use normality to find $U_0$ open with $A \subseteq U_0 \subseteq \overline{U_0} \subseteq U_1$. Having defined $U_q$ for the dyadic rationals with denominator $2^n$, let $q < r$ be consecutive ones and insert the new midpoint: normality applied to the closed set $\overline{U_q}$ and the closed set $X \setminus U_r$ produces an open $U_{(q+r)/2}$ with $\overline{U_q} \subseteq U_{(q+r)/2} \subseteq \overline{U_{(q+r)/2}} \subseteq U_r$. Define
+Start with $\Omega_1 = X \setminus B$ and use normality to find $\Omega_0$ open with $A \subseteq \Omega_0 \subseteq \overline{U_0} \subseteq \Omega_1$. Having defined $\Omega_q$ for the dyadic rationals with denominator $2^n$, let $q < r$ be consecutive ones and insert the new midpoint: normality applied to the closed set $\overline{U_q}$ and the closed set $X \setminus \Omega_r$ produces an open $\Omega_{(q+r)/2}$ with $\overline{U_q} \subseteq \Omega_{(q+r)/2} \subseteq \overline{U_{(q+r)/2}} \subseteq \Omega_r$. Define
 $$
-f(x) = \inf\{\, q \in D : x \in U_q \,\}, \qquad f(x) = 1 \text{ if } x \notin U_q \text{ for every } q \in D .
+f(x) = \inf\{\, q \in D : x \in \Omega_q \,\}, \qquad f(x) = 1 \text{ if } x \notin \Omega_q \text{ for every } q \in D .
 $$
-Then $f = 0$ on $A$, and $f = 1$ on $B$ because $U_1 = X \setminus B$. For continuity, note that $f(x) < a$ if and only if $x \in U_q$ for some $q < a$, an open condition, and $f(x) > a$ if and only if $x \notin \overline{U_q}$ for some $q > a$, also open; these conditions generate the topology of $[0,1]$.
+Then $f = 0$ on $A$, and $f = 1$ on $B$ because $\Omega_1 = X \setminus B$. For continuity, note that $f(x) < a$ if and only if $x \in \Omega_q$ for some $q < a$, an open condition, and $f(x) > a$ if and only if $x \notin \overline{U_q}$ for some $q > a$, also open; these conditions generate the topology of $[0,1]$.
 
 **Corollary.** A normal space is completely regular, and a $T_4$ space is Tychonoff. The function $f$ of the lemma separates $A$ and $B$ in the unit interval, and rescaling gives a function with values in $[a,b]$ for any $a < b$.
 
@@ -108,17 +108,17 @@ Then $f = 0$ on $A$, and $f = 1$ on $B$ because $U_1 = X \setminus B$. For conti
 
 **Remark.** The Tietze theorem is the extension statement dual to Urysohn's lemma: the lemma is the case in which $f$ is the two-valued function on the closed set $A \cup B$ taking the values $0$ and $1$, and the extension theorem is the general case. The theorem also holds for functions into $\mathbb{R}^n$, by applying it coordinatewise, and for a function into a separable metric space.
 
-**Theorem (Urysohn embedding lemma).** Let $X$ be a $T_1$ space and let $(f_n)_{n \in \mathbb{N}}$ be a countable family of continuous functions $f_n : X \to [0,1]$ such that for every $x \in X$ and every neighbourhood $U$ of $x$ there is $n$ with $f_n(x) > 0$ and $f_n = 0$ outside $U$. Then
+**Theorem (Urysohn embedding lemma).** Let $X$ be a $T_1$ space and let $(f_n)_{n \in \mathbb{N}}$ be a countable family of continuous functions $f_n : X \to [0,1]$ such that for every $x \in X$ and every neighbourhood $\Omega$ of $x$ there is $n$ with $f_n(x) > 0$ and $f_n = 0$ outside $\Omega$. Then
 $$
 F : X \longrightarrow [0,1]^{\mathbb{N}}, \qquad F(x) = (f_n(x))_{n \in \mathbb{N}},
 $$
 is an embedding onto a subspace of the Hilbert cube.
 
-**Proof.** The map $F$ is continuous because each coordinate is. If $x \neq y$, choose a neighbourhood $U$ of $x$ with $y \notin U$; the function $f_n$ of the hypothesis vanishes outside $U$, so $f_n(y) = 0$ while $f_n(x) > 0$, and the images differ. Thus $F$ is injective. To see that $F$ is an embedding, let $U$ be a neighbourhood of $x$ and choose $n$ with $f_n(x) > 0$ and $f_n = 0$ off $U$; then $F^{-1}(V_n) \subseteq U$, where $V_n = \{z : z_n > 0\}$ is an open subset of the cube: if $F(y) \in V_n$ then $f_n(y) > 0$, so $y \in U$. Hence $F$ carries neighbourhoods of $X$ to traces of neighbourhoods of the cube, and the inverse is continuous on the image.
+**Proof.** The map $F$ is continuous because each coordinate is. If $x \neq y$, choose a neighbourhood $\Omega$ of $x$ with $y \notin \Omega$; the function $f_n$ of the hypothesis vanishes outside $\Omega$, so $f_n(y) = 0$ while $f_n(x) > 0$, and the images differ. Thus $F$ is injective. To see that $F$ is an embedding, let $\Omega$ be a neighbourhood of $x$ and choose $n$ with $f_n(x) > 0$ and $f_n = 0$ off $\Omega$; then $F^{-1}(V_n) \subseteq \Omega$, where $V_n = \{z : z_n > 0\}$ is an open subset of the cube: if $F(y) \in V_n$ then $f_n(y) > 0$, so $y \in \Omega$. Hence $F$ carries neighbourhoods of $X$ to traces of neighbourhoods of the cube, and the inverse is continuous on the image.
 
-**Corollary (local compactness version).** If $X$ is locally compact Hausdorff, $K \subseteq X$ compact and $U$ open with $K \subseteq U$, then there is a continuous $f : X \to [0,1]$ with $f = 1$ on $K$ and $f = 0$ outside a compact subset of $U$. Such an $f$ is a **bump function** for the pair $(K, U)$.
+**Corollary (local compactness version).** If $X$ is locally compact Hausdorff, $K \subseteq X$ compact and $\Omega$ open with $K \subseteq \Omega$, then there is a continuous $f : X \to [0,1]$ with $f = 1$ on $K$ and $f = 0$ outside a compact subset of $\Omega$. Such an $f$ is a **bump function** for the pair $(K, \Omega)$.
 
-**Proof.** In a locally compact Hausdorff space there is, by Urysohn's lemma applied to the compact Hausdorff (hence normal) space $X^+$ or directly, an open set $V$ with $K \subseteq V \subseteq \overline{V} \subseteq U$ and $\overline V$ compact; the lemma for the normal space $\overline V$ separates $K$ from its boundary and the result extends by zero.
+**Proof.** In a locally compact Hausdorff space there is, by Urysohn's lemma applied to the compact Hausdorff (hence normal) space $X^+$ or directly, an open set $V$ with $K \subseteq V \subseteq \overline{V} \subseteq \Omega$ and $\overline V$ compact; the lemma for the normal space $\overline V$ separates $K$ from its boundary and the result extends by zero.
 
 ## Metrisation
 
@@ -138,7 +138,7 @@ Before asking for sufficient conditions, it is worth recording what a metrisable
 
 **Theorem (Urysohn).** Every regular second-countable $T_1$ space is metrisable.
 
-**Proof.** Let $\mathcal{B} = (B_n)_{n \in \mathbb{N}}$ be a countable base. For every pair $(m,n)$ with $\overline{B_m} \subseteq B_n$, apply Urysohn's lemma — available because a regular Lindelöf space is normal, and a second-countable space is Lindelöf — to the disjoint closed sets $\overline{B_m}$ and $X \setminus B_n$, obtaining a continuous $f_{m,n} : X \to [0,1]$ that is $1$ on $\overline{B_m}$ and $0$ outside $B_n$. The countable family of the $f_{m,n}$ satisfies the hypothesis of the embedding lemma: given $x$ and a neighbourhood $U$ of $x$, choose a base element $B_n$ with $x \in B_n \subseteq U$ and, by regularity, a base element $B_m$ with $x \in B_m \subseteq \overline{B_m} \subseteq B_n$; then $f_{m,n}(x) = 1 > 0$ and $f_{m,n} = 0$ outside $B_n \subseteq U$. The embedding lemma embeds $X$ into the Hilbert cube $[0,1]^{\mathbb{N}}$, which is metrisable as a countable product of metrisable spaces, and a subspace of a metrisable space is metrisable.
+**Proof.** Let $\mathcal{B} = (B_n)_{n \in \mathbb{N}}$ be a countable base. For every pair $(m,n)$ with $\overline{B_m} \subseteq B_n$, apply Urysohn's lemma — available because a regular Lindelöf space is normal, and a second-countable space is Lindelöf — to the disjoint closed sets $\overline{B_m}$ and $X \setminus B_n$, obtaining a continuous $f_{m,n} : X \to [0,1]$ that is $1$ on $\overline{B_m}$ and $0$ outside $B_n$. The countable family of the $f_{m,n}$ satisfies the hypothesis of the embedding lemma: given $x$ and a neighbourhood $\Omega$ of $x$, choose a base element $B_n$ with $x \in B_n \subseteq \Omega$ and, by regularity, a base element $B_m$ with $x \in B_m \subseteq \overline{B_m} \subseteq B_n$; then $f_{m,n}(x) = 1 > 0$ and $f_{m,n} = 0$ outside $B_n \subseteq \Omega$. The embedding lemma embeds $X$ into the Hilbert cube $[0,1]^{\mathbb{N}}$, which is metrisable as a countable product of metrisable spaces, and a subspace of a metrisable space is metrisable.
 
 **Corollary.** Every second-countable regular space is normal, hence perfectly normal; every second-countable normal space is metrisable and separable. The Hilbert cube itself is compact, metrisable and separable, and it contains a homeomorph of every separable metrisable space.
 
@@ -158,7 +158,7 @@ The countability hypothesis of Urysohn's theorem is that the whole topology has 
 $$
 d(x, y) = \sum_{n=1}^{\infty} \frac{1}{2^n} \sum_{B \in \mathcal{B}_n} \bigl| f_{n,B}(x) - f_{n,B}(y) \bigr| .
 $$
-The series converges, $d$ is symmetric and satisfies the triangle inequality, and $d(x,y) = 0$ implies $x = y$ because the functions distinguish the points of a $T_1$ space. The metric induces the original topology: an open set $U$ and $x \in U$ contain a base element $B \in \mathcal{B}_n$ with $x \in B$, and the function $f_{n,B}$ is $1$ at $x$ and $0$ off a set contained in $U$, so a small $d$-ball about $x$ lies in $U$; conversely the functions are continuous for the original topology, so the $d$-balls are open in it. This is the Nagata–Smirnov metric, and Bing's argument replaces the σ-locally finite base by a σ-discrete one and the sums by an equivalent metric built on the same pattern.
+The series converges, $d$ is symmetric and satisfies the triangle inequality, and $d(x,y) = 0$ implies $x = y$ because the functions distinguish the points of a $T_1$ space. The metric induces the original topology: an open set $\Omega$ and $x \in \Omega$ contain a base element $B \in \mathcal{B}_n$ with $x \in B$, and the function $f_{n,B}$ is $1$ at $x$ and $0$ off a set contained in $\Omega$, so a small $d$-ball about $x$ lies in $\Omega$; conversely the functions are continuous for the original topology, so the $d$-balls are open in it. This is the Nagata–Smirnov metric, and Bing's argument replaces the σ-locally finite base by a σ-discrete one and the sums by an equivalent metric built on the same pattern.
 
 **Corollary.** A regular space with a σ-locally finite base is paracompact and normal. Every metrisable space has such a base, so the two conditions of the theorem are independent of the particular metric: the theorem characterises the topology, not the distance.
 
@@ -178,7 +178,7 @@ A metrisable space may admit some metrics that are complete and some that are no
 
 The corpus uses several topologies that carry other structure and are not metrisable, and it is worth recording which of them are, so that no later argument silently assumes a distance.
 
-**Example (the Stone space of $\mathbb{N}$).** By the dictionary of nets and filters, the set $\beta\mathbb{N}$ of ultrafilters on $\mathbb{N}$ carries the topology with base $\{U : A \in U\}$ for $A \subseteq \mathbb{N}$. It is compact Hausdorff, and it is not first countable at any free ultrafilter: given countably many sets $A_n$ in an ultrafilter $\mathcal{U}$, partition $\mathbb{N}$ into finite or infinite cells refining them and choose a set $B$ meeting every cell in a way incompatible with all but finitely many of the $A_n$; the details give an open neighbourhood of $\mathcal{U}$ containing no member of any proposed countable base. Hence $\beta\mathbb{N}$ is not metrisable. It is the Stone–Čech compactification of the discrete space $\mathbb{N}$, and it is the presentation of the compact Hausdorff spaces that is available once ultrafilters are, as in *Nets, Filters and Convergence*.
+**Example (the Stone space of $\mathbb{N}$).** By the dictionary of nets and filters, the set $\beta\mathbb{N}$ of ultrafilters on $\mathbb{N}$ carries the topology with base $\{\Omega : A \in \Omega\}$ for $A \subseteq \mathbb{N}$. It is compact Hausdorff, and it is not first countable at any free ultrafilter: given countably many sets $A_n$ in an ultrafilter $\mathcal{U}$, partition $\mathbb{N}$ into finite or infinite cells refining them and choose a set $B$ meeting every cell in a way incompatible with all but finitely many of the $A_n$; the details give an open neighbourhood of $\mathcal{U}$ containing no member of any proposed countable base. Hence $\beta\mathbb{N}$ is not metrisable. It is the Stone–Čech compactification of the discrete space $\mathbb{N}$, and it is the presentation of the compact Hausdorff spaces that is available once ultrafilters are, as in *Nets, Filters and Convergence*.
 
 **Example (arbitrary products).** The space $\{0,1\}^{I}$ is compact Hausdorff and metrisable exactly when $I$ is countable. For uncountable $I$ it is not first countable, so it carries no metric; it is the standard compact Hausdorff non-metrisable space, and it is the ambient space of the inverse limits that are treated in *Topological Groups*.
 

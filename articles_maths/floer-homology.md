@@ -38,7 +38,7 @@ The **Floer homology** $HF_*(\mathcal{A})$ is the homology of this complex.
 **Definition.** Let $(M,\omega)$ be a closed symplectic manifold, let $H : S^1\times M\to\mathbb{R}$ be a periodic Hamiltonian with associated time-dependent vector field $X_H$ and flow $\phi^1_H$, and let $J$ be a compatible almost complex structure. The **Hamiltonian Floer complex** $CF_*(M,H)$ is the free module on the $1$-periodic orbits $x : S^1\to M$ of $X_H$ that are contractible and nondegenerate, graded by the **Conley–Zehnder index** $\mu(x)$. The **Floer equation** for a map $u : \mathbb{R}\times S^1\to M$ is
 
 $$
-\partial_s u + J(u)\bigl(\partial_t u - X_H(t,u)\bigr) = 0 ,
+\partial/\partial s u + J(u)\bigl(\partial/\partial t u - X_H(t,u)\bigr) = 0 ,
 $$
 
 and the differential $\partial$ counts, with signs, the solutions that converge at the two ends to prescribed periodic orbits, the count being finite for a generic choice of $J$ and of a time-dependent perturbation of $H$.
@@ -76,7 +76,7 @@ $$
 **Definition.** Let $(M,\omega)$ be a closed or exact symplectic manifold, let $L_0, L_1\subseteq M$ be closed Lagrangian submanifolds intersecting transversely, and let $J$ be a compatible almost complex structure. The **Lagrangian Floer complex** $CF_*(L_0,L_1)$ is the free module on the intersection points $L_0\cap L_1$, graded by the **Maslov index** $\mu(p)$. The differential counts the pseudoholomorphic strips $u:\mathbb{R}\times[0,1]\to M$ with $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$ and $u(s,\cdot)\to p_\pm$ as $s\to\pm\infty$, which solve the Cauchy–Riemann equation
 
 $$
-\partial_s u + J(u)\partial_t u = 0
+\partial/\partial s u + J(u)\partial/\partial t u = 0
 $$
 
 with Lagrangian boundary conditions; the counts are finite for a generic $J$ and a generic Hamiltonian perturbation of one of the Lagrangians.
@@ -166,10 +166,10 @@ Hamiltonian Floer homology counts the periodic orbits of a Hamiltonian flow; its
 | $CF_*, HF_*$ | Floer complex and Floer homology |
 | $\mu(x)$ | Conley–Zehnder index of a periodic orbit; Maslov index of a Lagrangian intersection |
 | $X_H$, $\phi^1_H$ | Hamiltonian vector field and its time-one flow |
-| Floer equation | $\partial_s u + J(u)(\partial_t u - X_H(t,u))=0$, a pseudoholomorphic cylinder with a Hamiltonian term |
+| Floer equation | $\partial/\partial s u + J(u)(\partial/\partial t u - X_H(t,u))=0$, a pseudoholomorphic cylinder with a Hamiltonian term |
 | $CF_*(M,H)$ | Hamiltonian Floer complex on the contractible periodic orbits |
 | $L_0, L_1$ | Lagrangian submanifolds; $CF_*(L_0,L_1)$ on $L_0\cap L_1$ |
-| Pseudoholomorphic strip | $\partial_s u + J(u)\partial_t u = 0$, $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$ |
+| Pseudoholomorphic strip | $\partial/\partial s u + J(u)\partial/\partial t u = 0$, $u(\cdot,0)\in L_0$, $u(\cdot,1)\in L_1$ |
 | $\mathrm{CS}(A)$ | Chern–Simons functional on connections over a three-manifold |
 | $I_*(Y)$, $\lambda(Y)$ | Instanton Floer homology of a three-manifold; Casson invariant, with $\chi(I_*(Y)) = 2\lambda(Y)$ |
 | $\widehat{HF}(Y)$ | Heegaard Floer homology; isomorphic to Seiberg–Witten Floer homology |

@@ -47,7 +47,7 @@ structures of the twelve, the symmetric plain algebra the only Jordan product an
 plain algebra the only Lie product.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
-$e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. The product written $\star$ is
+$e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The product written $\star$ is
 a generic one, its identity stated at each use. The **left multiplication** of a product $\star$ by
 $\tilde X$ is $L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$, and the **adjoint map** is
 $\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$, so that for an
@@ -146,7 +146,7 @@ which is the identity of the source article read with the doubled adjoint. Both 
 adjoints are kept apart.
 
 **Corollary (the kernel and the image).** The adjoint representation of the block has kernel the
-centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and image the inner derivations, identified with the
+centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ and image the inner derivations, identified with the
 derived algebra $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$:
 $$
 \ker\mathrm{ad}=\mathbb{C}_{\mathbb{B}},\qquad
@@ -173,7 +173,7 @@ One law separates the block from the other eleven. The block's product is **alte
 | the plain product and its symmetrisation | GPA, SPA | no | — | fails by non-alternation |
 | the antisymmetric plain product | APA | **yes** | **yes** | **yes**, the criterion |
 | the quaternionic product and its symmetrisation | GQA, SQA | no | — | fails by non-alternation |
-| the antisymmetric quaternionic product | AQA | yes | no | fails by the Jacobi defect at $(e_0,e_1,e_2)$ |
+| the antisymmetric quaternionic product | AQA | yes | no | fails by the Jacobi defect at $(e_t,\vec e_x,\vec e_y)$ |
 | the six sesquilinear structures | GPS, SPS, APS, GQS, SQS, AQS | no | — | fails by non-alternation |
 
 The isolation is about the **law** and not about isolated elements, and the distinction is the boundary of the claim. Single elements of the other structures do give derivations — the zero element gives the zero operator in all twelve, and in the associative general plain product the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$ is a derivation for every element — but no other structure carries the law, and the theory needs the law at every element and not a case of it. The article therefore refuses the false strengthening "no other structure has a derivation" and states the true one: only here is every left multiplication a derivation.
@@ -262,7 +262,7 @@ the Killing form of radical the centre, the Cartan criteria, the Casimir element
 algebra and the matrix models — is a theory and not a collection of examples: it holds at every
 element of the block. Among the twelve it is the block alone, the ten non-alternating structures
 failing the identity directly and the one other alternating structure, $\mathrm{AQA}$, through its
-Jacobi defect at $(e_0,e_1,e_2)$; the isolation is a statement about the law and not about isolated
+Jacobi defect at $(e_t,\vec e_x,\vec e_y)$; the isolation is a statement about the law and not about isolated
 elements.
 
 ## Summary of Notation
@@ -276,7 +276,7 @@ elements.
 | $L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)$ | the Leibniz identity, the criterion |
 | $\Lambda=-J$ | the Leibniz defect is the negative of the cyclic sum, for an alternating product |
 | $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the kernel of the adjoint representation, the centre of the bracket |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the kernel of the adjoint representation, the centre of the bracket |
 | $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$ | the image of the adjoint representation, the inner derivations |
 
 ## Further Reading

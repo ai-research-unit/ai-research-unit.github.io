@@ -21,7 +21,7 @@ annihilators **coincide for every element**, unit or zero divisor alike, because
 conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is
 the one product of the block whose annihilators are not exchanged by the conjugation.
 
-**The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_0=0$ and $(\vec Q,\vec Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_0\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_0\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
+**The results.** A nonzero biquaternion is a zero divisor of the general quaternionic product exactly when its algebraic norm vanishes, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=Q_t^2+(\vec Q,\vec Q)=0$, so the zero divisors are the nonzero points of the **zero-divisor cone** $C=\{N=0\}$, a real cone of real dimension $6$ that is not a subspace and is stable under the product. The cone splits into the **pure** family, the plain nilpotents with $Q_t=0$ and $(\vec Q,\vec Q)=0$ forming an isotropic cone of real dimension $4$, and the **non-pure** family, the complex multiples $\tilde Q=2Q_t\tilde\Pi$ of the nontrivial plain idempotents, on which $\tilde Q\star\tilde Q=0$ while the plain square is the nonzero multiple $2Q_t\tilde Q$. The two annihilators of an element coincide, are $\{0\}$ off the cone and a complex plane on it, and the four general products select one and the same zero-divisor set. Each section below states its result first and then proves it.
 
 **Boundaries.** The zero divisors of the algebra, the two families, the criterion in the plain
 product and the structure of the cone are *Zero Divisors of the Biquaternion Algebra*; the plain
@@ -33,19 +33,19 @@ Algebra*; the nilpotents of the product are *Square Roots of Zero and the Nilpot
 the form on the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic
 Algebra of Biquaternions*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$,
-with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
+with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product
 and $\star$ the general quaternionic bilinear product,
 
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q ,
 $$
 
-with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\vec Q$. An element is
-$\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, the **algebraic norm** is
+with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_t-\vec Q$. An element is
+$\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_k\vec e_k$, the **algebraic norm** is
 $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^2$, and
 $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts. An element
-is **pure** when $Q_0=0$ and **non-pure** when $Q_0\neq0$.
+is **pure** when $Q_t=0$ and **non-pure** when $Q_t\neq0$.
 
 ## Definition
 
@@ -78,13 +78,13 @@ which are plain-product equations in the conjugated first factor.
 $\tilde Q\in\mathbb{B}$, $\tilde Q$ is a zero divisor of $\star$ if and only if
 
 $$
-\langle\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2=0 .
+\langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=0 .
 $$
 
 **Proof.** Suppose $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$. Then
 
 $$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_0=0 ,
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t=0 ,
 $$
 
 so $\tilde R=\tilde Q$ is a nonzero element with $\tilde Q\star\tilde R=0$ and $\tilde Q$ is a left
@@ -131,13 +131,13 @@ below.
 
 ## The Two Families of Zero Divisors
 
-**The zero divisors split into the pure ones, $Q_0=0$ with $(\vec Q,\vec Q)=0$, and the non-pure ones, $Q_0\neq0$ with $(\vec Q,\vec Q)=-Q_0^2$, and the split does not depend on the product.**
+**The zero divisors split into the pure ones, $Q_t=0$ with $(\vec Q,\vec Q)=0$, and the non-pure ones, $Q_t\neq0$ with $(\vec Q,\vec Q)=-Q_t^2$, and the split does not depend on the product.**
 
 The zero divisors split into two families according to the value of the scalar part, and the split
-does not depend on the product, because $\langle\tilde Q\rangle_{\natural}=Q_0^2+(\vec Q,\vec Q)$ separates the two
-cases on the element. A biquaternion is **pure** when $Q_0=0$ and **non-pure** when $Q_0\neq0$; on
+does not depend on the product, because $\langle\tilde Q\rangle_{\natural}=Q_t^2+(\vec Q,\vec Q)$ separates the two
+cases on the element. A biquaternion is **pure** when $Q_t=0$ and **non-pure** when $Q_t\neq0$; on
 a pure element the criterion is $(\vec Q,\vec Q)=0$, and on a non-pure one it is
-$(\vec Q,\vec Q)=-Q_0^2$, which can be met by the vector part cancelling the scalar
+$(\vec Q,\vec Q)=-Q_t^2$, which can be met by the vector part cancelling the scalar
 contribution. The two families are developed in *Zero Divisors of the Biquaternion Algebra*; in
 this product they are separated not by the square, which vanishes on both, but by the plain square,
 as the two sections below compute.
@@ -149,11 +149,11 @@ as the two sections below compute.
 **Proposition (the square of a pure element).** Let $\tilde Q=\vec Q$ be a pure element. Then
 
 $$
-\tilde Q\star\tilde Q=(\vec Q,\vec Q)\,e_0 , \qquad \tilde Q\tilde Q=-(\vec Q,\vec Q)\,e_0 , \qquad \tilde Q^{\natural}=-\tilde Q .
+\tilde Q\star\tilde Q=(\vec Q,\vec Q)\,e_t , \qquad \tilde Q\tilde Q=-(\vec Q,\vec Q)\,e_t , \qquad \tilde Q^{\natural}=-\tilde Q .
 $$
 
-**Proof.** The scalar–vector form of the product at a pure pair is $(\vec Q,\vec Q)e_0$ for
-the quaternionic product and $-(\vec Q,\vec Q)e_0$ for the plain one, and the natural
+**Proof.** The scalar–vector form of the product at a pure pair is $(\vec Q,\vec Q)e_t$ for
+the quaternionic product and $-(\vec Q,\vec Q)e_t$ for the plain one, and the natural
 conjugation negates a pure element.
 
 **Theorem (the criterion in the pure case).** For a nonzero pure $\tilde Q$ the following are
@@ -162,7 +162,7 @@ equivalent:
 1. $\tilde Q$ is a zero divisor of $\star$; 2. $(\vec Q,\vec Q)=0$; 3.
 $\tilde Q\star\tilde Q=0$; 4. $\tilde Q$ is a nilpotent of the plain product, $\tilde Q\tilde Q=0$.
 
-**Proof.** The equivalence of (1) and (2) is the criterion specialised to $Q_0=0$. The equivalence
+**Proof.** The equivalence of (1) and (2) is the criterion specialised to $Q_t=0$. The equivalence
 of (2) with (3) and with (4) is the proposition above, both squares being the same scalar up to
 sign.
 
@@ -175,43 +175,43 @@ Algebra*, §*The Bivector Form*.
 
 ## Non-Pure Zero Divisors
 
-**A zero divisor with $Q_0\neq0$ has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\star\tilde Q=0$ while its plain square is the nonzero element $\tilde Q\tilde Q=2Q_0\tilde Q$, and it is a complex multiple $\tilde Q=2Q_0\tilde\Pi$ of a nontrivial plain idempotent.**
+**A zero divisor with $Q_t\neq0$ has $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\star\tilde Q=0$ while its plain square is the nonzero element $\tilde Q\tilde Q=2Q_t\tilde Q$, and it is a complex multiple $\tilde Q=2Q_t\tilde\Pi$ of a nontrivial plain idempotent.**
 
-**Proposition (the square of a non-pure element).** Let $\tilde Q=Q_0e_0+\vec Q$ with $Q_0\neq0$
+**Proposition (the square of a non-pure element).** Let $\tilde Q=Q_te_t+\vec Q$ with $Q_t\neq0$
 and $\langle\tilde Q\rangle_{\natural}=0$. Then
 
 $$
-\tilde Q\star\tilde Q=0 , \qquad \tilde Q\tilde Q=2Q_0\tilde Q\neq0 .
+\tilde Q\star\tilde Q=0 , \qquad \tilde Q\tilde Q=2Q_t\tilde Q\neq0 .
 $$
 
-**Proof.** The quaternionic square is $\langle\tilde Q\rangle_{\natural}e_0$ and the algebraic norm vanishes by the
-criterion. The plain square is $(Q_0^2-(\vec Q,\vec Q))e_0+2Q_0\vec Q$, and the criterion
-$(\vec Q,\vec Q)=-Q_0^2$ turns it into $2Q_0^2e_0+2Q_0\vec Q=2Q_0\tilde Q$, which is
-nonzero because $Q_0\neq0$ and $\tilde Q\neq0$.
+**Proof.** The quaternionic square is $\langle\tilde Q\rangle_{\natural}e_t$ and the algebraic norm vanishes by the
+criterion. The plain square is $(Q_t^2-(\vec Q,\vec Q))e_t+2Q_t\vec Q$, and the criterion
+$(\vec Q,\vec Q)=-Q_t^2$ turns it into $2Q_t^2e_t+2Q_t\vec Q=2Q_t\tilde Q$, which is
+nonzero because $Q_t\neq0$ and $\tilde Q\neq0$.
 
 **Theorem (the non-pure family is the idempotent family).** A non-pure zero divisor is a complex
 multiple of a nontrivial idempotent of the plain product,
 
 $$
-\tilde Q=2Q_0\tilde\Pi , \qquad \tilde\Pi=\frac{\tilde Q}{2Q_0} ,
+\tilde Q=2Q_t\tilde\Pi , \qquad \tilde\Pi=\frac{\tilde Q}{2Q_t} ,
 $$
 
 and conversely every complex multiple of a nontrivial plain idempotent is a non-pure zero divisor
 of $\star$.
 
-**Proof.** The relation $\tilde Q\tilde Q=2Q_0\tilde Q$ of the proposition makes
-$\tilde\Pi=\tilde Q/(2Q_0)$ an idempotent of the plain product, nontrivial because $\tilde Q\neq0$
-and $Q_0\neq0$; the converse is the statement of *Idempotents of the General Plain Algebra*,
+**Proof.** The relation $\tilde Q\tilde Q=2Q_t\tilde Q$ of the proposition makes
+$\tilde\Pi=\tilde Q/(2Q_t)$ an idempotent of the plain product, nontrivial because $\tilde Q\neq0$
+and $Q_t\neq0$; the converse is the statement of *Idempotents of the General Plain Algebra*,
 §*Idempotents and the Non-Pure Zero Divisors*, read with the algebraic norm.
 
 **Remark (the displacement).** The non-pure zero divisor has vanishing quaternionic square, so it
 is a **nilpotent of the quaternionic product**, while it is the opposite of a nilpotent in the
-plain product: its plain square is the nonzero element $2Q_0\tilde Q$. In particular the Hermitian
-idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\vec u$
+plain product: its plain square is the nonzero element $2Q_t\tilde Q$. In particular the Hermitian
+idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ over the real unit vectors $\vec u$
 satisfy
 
 $$
-\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=\langle\tilde\Pi_+(\tilde\Xi)\rangle_{\natural}e_0=\tfrac14\bigl(1-(\vec u,\vec u)\bigr)e_0=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
+\tilde\Pi_+(\tilde\Xi)\star\tilde\Pi_+(\tilde\Xi)=\langle\tilde\Pi_+(\tilde\Xi)\rangle_{\natural}e_t=\tfrac14\bigl(1-(\vec u,\vec u)\bigr)e_t=0 , \qquad \tilde\Pi_+(\tilde\Xi)\tilde\Pi_+(\tilde\Xi)=\tilde\Pi_+(\tilde\Xi) ,
 $$
 
 so the two products see the same element as an idempotent and as a square-zero element. This
@@ -235,7 +235,7 @@ eight-dimensional space $\mathbb{B}$, and it is not a real subspace.
 $N=\sum_\mu(q_\mu^2-q'_\mu{}^2)+2i\sum_\mu q_\mu q'_\mu=0$ is one complex equation, hence two real
 equations, and the set is a cone because $\langle\cdot\rangle_{\natural}$ is homogeneous of degree two; the two equations are
 independent off the origin, so the real dimension is $8-2=6$. For the failure of linearity, the
-elements $e_1+ie_2$ and $e_1-ie_2$ have algebraic norm $1-1=0$, while their sum $2e_1$ has
+elements $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ have algebraic norm $1-1=0$, while their sum $2\vec e_x$ has
 algebraic norm $4$.
 
 **Corollary.** The cone is a multiplicative set: for every $\tilde P$ and every $\tilde Q$ with
@@ -254,7 +254,7 @@ Quaternionic Algebra*, §*Multiplicativity*, evaluated at $\langle\tilde Q\rangl
 pure family is the isotropic cone of the vector subspace, of real dimension four, and the non-pure
 family is the rest, of real dimension six. On a pure element the quaternionic and the plain squares
 vanish together; on a non-pure one only the quaternionic square vanishes, and the plain square is
-the nonzero multiple $2Q_0\tilde Q$. The distinction is invisible at the level of the quaternionic
+the nonzero multiple $2Q_t\tilde Q$. The distinction is invisible at the level of the quaternionic
 square, which is blind to it, and it is read from the scalar part of the element.
 
 ## The Annihilators
@@ -300,14 +300,14 @@ signatures are *Remarkable Subspaces under the General Quaternionic Algebra*.
 | $\mathbb{H}_{\mathbb{B}}$, the quaternion subspace | none |
 | $i\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace | none |
 | $\mathrm{Vect}(\mathbb{B})$, the vector subspace | the pure family, an isotropic cone of real dimension four |
-| $\mathbb{M}_{+}$, the Hermitian subspace | the non-pure Hermitian elements with $Q_0^2=-(\vec Q,\vec Q)$ |
+| $\mathbb{M}_{+}$, the Hermitian subspace | the non-pure Hermitian elements with $Q_t^2=-(\vec Q,\vec Q)$ |
 | $\mathbb{M}_{-}$, the anti-Hermitian subspace | the non-pure anti-Hermitian elements with the same condition |
 
 The centre, the quaternion subspace and the anti-quaternion subspace carry no zero divisor: the
 algebraic norm is definite on the last two and vanishes on the first only at the origin. The vector
 subspace carries the whole pure family. The two Hermitian subspaces carry the non-pure family in
 the form in which its elements are fixed by the star; a general non-pure zero divisor lies in
-neither, and the elements $e_1+ie_2$, of the vector subspace, and $e_0+ie_1$, of the Hermitian
+neither, and the elements $\vec e_x+i\vec e_y$, of the vector subspace, and $e_t+i\vec e_x$, of the Hermitian
 subspace, are the two standard witnesses.
 
 ## Summary
@@ -320,7 +320,7 @@ is the union of the **pure** family, the plain nilpotents $\vec\rho+i\vec\rho'$ 
 $\vec\rho\perp\vec\rho'$ and equal lengths, on which the quaternionic and the plain
 squares vanish together, and the **non-pure** family, the complex multiples of the nontrivial plain
 idempotents, on which the quaternionic square vanishes while the plain square is the nonzero
-multiple $2Q_0\tilde Q$. The left and the right annihilator of a zero divisor are each a complex
+multiple $2Q_t\tilde Q$. The left and the right annihilator of a zero divisor are each a complex
 plane containing the element, and both are $0$ for a unit; the two annihilators **coincide for
 every element**, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of
 order two that turns the one equation into the other. The zero-divisor set is the same set as for
@@ -333,13 +333,13 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2=-e_0$ |
-| $\tilde Q=Q_0e_0+\vec Q$ | an element and its scalar–vector split |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2=-e_t$ |
+| $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the algebraic norm, vanishing exactly on the zero-divisor cone |
 | $C=\{N=0\}$ | the zero-divisor cone, the square-zero set of the product |
-| pure, non-pure | $Q_0=0$; $Q_0\neq0$ |
-| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\vec u$ |
+| pure, non-pure | $Q_t=0$; $Q_t\neq0$ |
+| $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\vec u$ |
 | $\mathrm{Ann}_\ell(\tilde Q),\mathrm{Ann}_r(\tilde Q)$ | the left and the right annihilator of $\tilde Q$ for $\star$ |
 | $\mathrm{Ann}(\tilde Q)$ | their common value, of complex dimension two for a zero divisor |
 

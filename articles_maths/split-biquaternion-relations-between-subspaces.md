@@ -5,7 +5,7 @@
 
 The four distinguished subspaces of $\mathbb{H}_{\mathbb{D}}$ are defined by the four involutions, but they are not independent objects: they intersect one another, they sum to subspaces of $\mathbb{H}_{\mathbb{D}}$, they split the eight real coordinates into four **coordinate blocks**, and they are permuted and negated by the involutions. This article collects those relations in one place, after the four individual articles *Split-Biquaternion Split-Complex Subspace*, *Split-Biquaternion Quaternion Subspace*, *Split-Biquaternion Hermitian Subspace* and *Split-Biquaternion Anti-Hermitian Subspace*, and before the structural article *Split-Biquaternion Involution Lattice*, which treats the four involutions themselves.
 
-Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived here from the definitions by the comparison of coefficients, so the article doubles as the index of the four subspaces. Throughout, $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$.
+Every number below — dimensions of intersections, of sums, and the entries of the tables — is derived here from the definitions by the comparison of coefficients, so the article doubles as the index of the four subspaces. Throughout, $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu = q_\mu + j q'_\mu \in \mathbb{D}$, and the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (split complex), ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ and ${}^{\flat} = -{}^{*}$.
 
 ## The Three Decompositions
 
@@ -23,35 +23,35 @@ The fourth conjugation, the anti-Hermitian conjugation $\flat = -{}^{*}$, has th
 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_0, j$ | $2$ | yes, $\cong \mathbb{D}$ | $Q_0^2$, split complex; real part $(2,0)$, Hermitian form $(1,1)$ |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,e_1,e_2,e_3$ | $4$ | yes, $\cong \mathbb{H}$ | $q_0^2+q_1^2+q_2^2+q_3^2$, definite positive |
-| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_0,je_1,je_2,je_3$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
-| $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_0,e_1,e_2,e_3$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
+| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $\tilde{Q}^{\natural} = \tilde{Q}$ | $e_t, j$ | $2$ | yes, $\cong \mathbb{D}$ | $Q_t^2$, split complex; real part $(2,0)$, Hermitian form $(1,1)$ |
+| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | yes, $\cong \mathbb{H}$ | $q_t^2+q_x^2+q_y^2+q_z^2$, definite positive |
+| $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_t,j\vec e_x,j\vec e_y,j\vec e_z$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
+| $\mathbb{M}_-$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
 
 Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of remarkable subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{M}_\pm$ carry an **indefinite** norm of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
 
 ## The Four Coordinate Blocks
 
-The eight real coordinates of $\mathbb{H}_{\mathbb{D}}$ are $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$. They group into four real subspaces, each of dimension one or three, and each block is the simultaneous intersection of two of the four subspaces:
+The eight real coordinates of $\mathbb{H}_{\mathbb{D}}$ are $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$. They group into four real subspaces, each of dimension one or three, and each block is the simultaneous intersection of two of the four subspaces:
 
 | block | basis | $\dim_{\mathbb{R}}$ | as an intersection |
 |---|---|---|---|
-| the real scalar line | $e_0$ | $1$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+$ |
-| the split-imaginary scalar line | $je_0$ | $1$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$ |
-| the real vector triple | $e_1,e_2,e_3$ | $3$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$ |
-| the split-imaginary vector triple | $je_1,je_2,je_3$ | $3$ | — (not an intersection of two of the four) |
+| the real scalar line | $e_t$ | $1$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+$ |
+| the split-imaginary scalar line | $je_t$ | $1$ | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$ |
+| the real vector triple | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$ |
+| the split-imaginary vector triple | $j\vec e_x,j\vec e_y,j\vec e_z$ | $3$ | — (not an intersection of two of the four) |
 
 The four subspaces are sums of blocks:
 
 $$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \langle e_0 \rangle \oplus \langle je_0\rangle, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle e_0 \rangle \oplus \langle e_1,e_2,e_3\rangle,
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \langle e_t \rangle \oplus \langle je_t\rangle, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle e_t \rangle \oplus \langle \vec e_x,\vec e_y,\vec e_z\rangle,
 $$
 
 $$
-\mathbb{M}_+ = \langle e_0 \rangle \oplus \langle je_1,je_2,je_3\rangle, \qquad \mathbb{M}_- = \langle je_0 \rangle \oplus \langle e_1,e_2,e_3\rangle.
+\mathbb{M}_+ = \langle e_t \rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle, \qquad \mathbb{M}_- = \langle je_t \rangle \oplus \langle \vec e_x,\vec e_y,\vec e_z\rangle.
 $$
 
-The two anti-fixed spaces that complete the pattern are also sums of blocks, $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}}) = \langle e_1,e_2,e_3\rangle \oplus \langle je_1,je_2,je_3\rangle$ and $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle je_0\rangle \oplus \langle je_1,je_2,je_3\rangle$. Every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple: two subspaces meet in a block if they share a block, in a sum of blocks if they share two, and in the origin if they share none. The split-imaginary vector triple is the one block that is not the intersection of two of the four subspaces; it is $\mathbb{M}_+ \cap \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$.
+The two anti-fixed spaces that complete the pattern are also sums of blocks, $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}}) = \langle \vec e_x,\vec e_y,\vec e_z\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ and $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \langle je_t\rangle \oplus \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$. Every intersection below is a sum of blocks, which is why the dimension arithmetic is so simple: two subspaces meet in a block if they share a block, in a sum of blocks if they share two, and in the origin if they share none. The split-imaginary vector triple is the one block that is not the intersection of two of the four subspaces; it is $\mathbb{M}_+ \cap \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$.
 
 ## The Intersections
 
@@ -67,7 +67,7 @@ The pairwise intersections, with dimensions:
 The diagonal carries the dimensions of the subspaces themselves. Three features deserve to be isolated, because they are the relations the individual articles use:
 
 - the two members of each decomposition meet in the origin, and of the four subspaces only the pair $(\mathbb{M}_+,\mathbb{M}_-)$ is a decomposition, so it is the only pair with intersection $0$;
-- the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ meets each of the others in one of the two scalar lines, $e_0$ for the quaternion and Hermitian spaces and $je_0$ for the anti-Hermitian space;
+- the centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ meets each of the others in one of the two scalar lines, $e_t$ for the quaternion and Hermitian spaces and $je_t$ for the anti-Hermitian space;
 - the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ meets the Hermitian subspace in the scalar line and the anti-Hermitian subspace in the real vector triple.
 
 The last two rows encode the same information as the block table: $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_-$ share the real vector triple, while $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_-$ share the split-imaginary scalar line.
@@ -110,15 +110,15 @@ Since the centre is central and the four subspaces are the fixed spaces of invol
 |---|---|---|---|
 | $\mathbb{M}_+, \mathbb{M}_+$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 | $\mathbb{M}_-, \mathbb{M}_-$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $\mathbb{M}_+, \mathbb{M}_-$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_-$ | $\mathrm{span}\{je_1,je_2,je_3\}$ |
+| $\mathbb{M}_+, \mathbb{M}_-$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_-$ | $\mathrm{span}\{j\vec e_x,j\vec e_y,j\vec e_z\}$ |
 
-The entries are read off the expansions of the product. For $\tilde{Q} = q_0 e_0 + j\vec q$ and $\tilde{R} = r_0 e_0 + j\vec v$ in $\mathbb{M}_+$,
+The entries are read off the expansions of the product. For $\tilde{Q}_1 = Q_{1t} e_t + j\vec Q_1$ and $\tilde{Q}_2 = Q_{2t} e_t + j\vec Q_2$ in $\mathbb{M}_+$,
 
 $$
-\tilde{Q}\tilde{R} = q_0 r_0 - \vec q\cdot\vec v + \vec q\times\vec v + j(q_0\vec v+r_0\vec q),
+\tilde{Q}_1\tilde{Q}_2 = Q_{1t} Q_{2t} - \vec Q_1\cdot\vec Q_2 + \vec Q_1\times\vec Q_2 + j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1),
 $$
 
-which has real scalar part, real vector part $\vec q\times\vec v$ and split-imaginary vector part $j(q_0\vec v+r_0\vec q)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec q\times\vec v$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec q\times\vec v$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
+which has real scalar part, real vector part $\vec Q_1\times\vec Q_2$ and split-imaginary vector part $j(Q_{1t}\vec Q_2+Q_{2t}\vec Q_1)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec Q_1\times\vec Q_2$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec Q_1\times\vec Q_2$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
 
 ### The Reduction from Remarkable Subspaces to Four
 
@@ -133,18 +133,18 @@ The four named subspaces are therefore the four fixed spaces of the four involut
 
 ### An Intersection of Dimension Three
 
-The element $e_1$ has real coefficients, so it lies in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and it has real vector part with zero scalar part, so it lies in $\mathbb{M}_-$; hence it lies in the intersection $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$, which is the three-dimensional space $\mathrm{span}\{e_1,e_2,e_3\}$. The same holds for $e_2$ and $e_3$, and no element of the intersection has a nonzero real scalar part, by the defining conditions $Q_0 = 0$ and $Q_k$ real.
+The element $\vec e_x$ has real coefficients, so it lies in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and it has real vector part with zero scalar part, so it lies in $\mathbb{M}_-$; hence it lies in the intersection $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_-$, which is the three-dimensional space $\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$. The same holds for $\vec e_y$ and $\vec e_z$, and no element of the intersection has a nonzero real scalar part, by the defining conditions $Q_t = 0$ and $Q_k$ real.
 
 ### The Hermitian Decomposition
 
-For an arbitrary element, $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ is Hermitian and $\tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*})$ is anti-Hermitian — these being fixed by ${}^{*}$ and by $\flat = -{}^{*}$ respectively — and they sum to $\tilde{Q}$. For instance $e_0 \in \mathbb{M}_+$ and $j = je_0 \in \mathbb{M}_-$; therefore $\mathbb{M}_+ + \mathbb{M}_- = \mathbb{H}_{\mathbb{D}}$, and since the two meet only at the origin, the sum is direct.
+For an arbitrary element, $\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*})$ is Hermitian and $\tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*})$ is anti-Hermitian — these being fixed by ${}^{*}$ and by $\flat = -{}^{*}$ respectively — and they sum to $\tilde{Q}$. For instance $e_t \in \mathbb{M}_+$ and $j = je_t \in \mathbb{M}_-$; therefore $\mathbb{M}_+ + \mathbb{M}_- = \mathbb{H}_{\mathbb{D}}$, and since the two meet only at the origin, the sum is direct.
 
 ### A Mixed Element and Its Blocks
 
-For the element $\tilde{Q} = (1 + j) + e_1 + je_2$ the four coordinate blocks are the real scalar part $1$, the split-imaginary scalar part $j$, the real vector part $e_1$ and the split-imaginary vector part $je_2$. Its Hermitian conjugate is $\tilde{Q}^{*} = (1 - j) - e_1 + je_2$, so
+For the element $\tilde{Q} = (1 + j) + \vec e_x + j\vec e_y$ the four coordinate blocks are the real scalar part $1$, the split-imaginary scalar part $j$, the real vector part $\vec e_x$ and the split-imaginary vector part $j\vec e_y$. Its Hermitian conjugate is $\tilde{Q}^{*} = (1 - j) - \vec e_x + j\vec e_y$, so
 
 $$
-\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + je_2 \in \mathbb{M}_+, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + e_1 \in \mathbb{M}_-,
+\tfrac{1}{2}(\tilde{Q} + \tilde{Q}^{*}) = 1 + j\vec e_y \in \mathbb{M}_+, \qquad \tfrac{1}{2}(\tilde{Q} - \tilde{Q}^{*}) = j + \vec e_x \in \mathbb{M}_-,
 $$
 
 the two parts lying in the two sectors of the Hermitian decomposition, as the general statement requires.
@@ -184,10 +184,10 @@ The four distinguished subspaces of $\mathbb{H}_{\mathbb{D}}$ are the fixed spac
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, dimension $4$ |
 | $\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | Vector subspace, anti-fixed space of ${}^{\natural}$, dimension $6$ |
 | $j\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Anti-fixed space of $\bar{\cdot}$, dimension $4$ |
-| $\langle e_0\rangle, \langle je_0\rangle, \langle e_1,e_2,e_3\rangle, \langle je_1,je_2,je_3\rangle$ | The four coordinate blocks |
+| $\langle e_t\rangle, \langle je_t\rangle, \langle \vec e_x,\vec e_y,\vec e_z\rangle, \langle j\vec e_x,j\vec e_y,j\vec e_z\rangle$ | The four coordinate blocks |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
 | $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$, $j\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | Target spaces of the sector products |
-| $\mathrm{SO}(3)$ | Bracket image of the pure units, $\mathrm{span}\{e_1,e_2,e_3\}$ |
+| $\mathrm{SO}(3)$ | Bracket image of the pure units, $\mathrm{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 
 ## Further Reading
 

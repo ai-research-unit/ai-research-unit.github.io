@@ -113,7 +113,7 @@ where $\operatorname{Var}_\pi(f)=\|f-\int f\,d\pi\|_{L^2(\pi)}^2$, and the infim
 
 **Example (a non-reversible cycle).** On $E=\{1,2,3\}$ let $p(i,i+1)=1$ cyclically. The uniform measure is stationary, but $\pi(1)p(1,2)=\frac13$ while $\pi(2)p(2,1)=0$, so the chain is not reversible; the reversed chain runs around the cycle backwards, the Markov operator is the cyclic permutation matrix with the complex eigenvalues $1,\exp(\pm2\pi i/3)$, and the spectrum is not real.
 
-**Example (the Ornstein–Uhlenbeck chain).** The diffusion with generator $\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ and invariant law $N(0,\sigma^2/(2\theta))$ is reversible, its generator is self-adjoint on $L^2$ of the normal law, and its spectrum is the arithmetic set $\{-n\theta\}$ of the Hermite operator; the reversibility is the symmetry of the Gaussian kernel.
+**Example (the Ornstein–Uhlenbeck chain).** The diffusion with generator $\frac{\sigma^2}{2}\partial^2/\partial x^2-\theta x\partial/\partial x$ and invariant law $N(0,\sigma^2/(2\theta))$ is reversible, its generator is self-adjoint on $L^2$ of the normal law, and its spectrum is the arithmetic set $\{-n\theta\}$ of the Hermite operator; the reversibility is the symmetry of the Gaussian kernel.
 
 ## Failure of the Degenerate Cases
 

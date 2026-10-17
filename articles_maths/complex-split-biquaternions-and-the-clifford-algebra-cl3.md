@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is the Clifford algebra of three generators of square $-1$. Its three anticommuting generators are the elements $j e_1, j e_2, j e_3$, where $e_1, e_2, e_3$ are the quaternion units and $j$ is the central split unit of $\mathbb{D}$ with $j^2 = +1$; the product of the three is $-j$, the central split unit again. This article studies the **complexification** of that algebra,
+The split biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ is the Clifford algebra of three generators of square $-1$. Its three anticommuting generators are the elements $j \vec e_x, j \vec e_y, j \vec e_z$, where $\vec e_x, \vec e_y, \vec e_z$ are the quaternion units and $j$ is the central split unit of $\mathbb{D}$ with $j^2 = +1$; the product of the three is $-j$, the central split unit again. This article studies the **complexification** of that algebra,
 $$
 \mathrm{Cl}(3) := \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H},
 $$
@@ -11,31 +11,31 @@ the **complex split biquaternions**. Over $\mathbb{C}$ the algebra is eight-dime
 $$
 \mathrm{Cl}(3) \cong \mathrm{Cl}(2)\oplus\mathrm{Cl}(2) \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}) \cong \mathbb{B}\oplus\mathbb{B},
 $$
-each copy isomorphic to the biquaternion algebra. Where $\mathrm{Cl}(2)$ is simple, $\mathrm{Cl}(3)$ is not; where $\mathrm{Cl}(2)$ has a single family of minimal left ideals, $\mathrm{Cl}(3)$ has two, and the two are interchanged by the parity automorphism $e_i\mapsto -e_i$ and distinguished by the sign of the volume element. That pair is the algebraic content of the two **chiralities** of the four-dimensional spinor representation, and it is the reason the algebra is of interest to the physics of the left-right symmetric extension of the Standard Model, treated in *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
+each copy isomorphic to the biquaternion algebra. Where $\mathrm{Cl}(2)$ is simple, $\mathrm{Cl}(3)$ is not; where $\mathrm{Cl}(2)$ has a single family of minimal left ideals, $\mathrm{Cl}(3)$ has two, and the two are interchanged by the parity automorphism $\vec e_\mu\mapsto -\vec e_\mu$ and distinguished by the sign of the volume element. That pair is the algebraic content of the two **chiralities** of the four-dimensional spinor representation, and it is the reason the algebra is of interest to the physics of the left-right symmetric extension of the Standard Model, treated in *Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions*.
 
-The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Other Algebraic Element Representations*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents, its off-diagonal elements and its minimal left ideals are *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Other Algebraic Element Representations*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Spinors as Minimal Left Ideals with Inner Conjugation* and *Maximal Totally Isotropic Subspaces and Their Unitary Symmetries*. The same construction one rung higher, on the octonions, is *Split Bioctonions and the Clifford Algebra Cl(7)*.
+The article is the Clifford entry of the split biquaternion system, the higher rung of the pair whose lower rung is *Biquaternion Other Algebraic Element Representations*. The split biquaternion algebra, its conjugations, its idempotents $\tilde\Pi_{1,2}=\tfrac12(1\pm j)$ and its isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ are *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, its idempotents, its off-diagonal elements and its minimal left ideals are *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the complex Clifford algebra $\mathrm{Cl}(2)\cong\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$, its volume element and its grade structure are *Biquaternion Other Algebraic Element Representations*; and the maximal totally isotropic subspace, the ladder operators and the charge operator are *Spinors as Minimal Left Ideals with Inner Conjugation*.
 
 **Conventions.** The Clifford algebra $\mathrm{Cl}(3)$ is generated over $\mathbb{C}$ by $E_1,E_2,E_3$ with
 $$
-E_i^2=-1, \qquad E_iE_j=-E_jE_i \quad (i\neq j),
+E_\mu^2=-1, \qquad E_\muE_\nu=-E_\nuE_\mu \quad (\mu\neq\nu),
 $$
-so that $\{E_i,E_j\}=-2\delta_{ij}$; the eight monomials $E_1^{\epsilon_1}E_2^{\epsilon_2}E_3^{\epsilon_3}$, $\epsilon_i\in\{0,1\}$, are a $\mathbb{C}$-basis. The scalar imaginary is $i$, central, with $i^2=-1$. The Hermitian adjoint is fixed by
+so that $\{E_\mu,E_\nu\}=-2\delta_{\mu\nu}$; the eight monomials $E_1^{\epsilon_1}E_2^{\epsilon_2}E_3^{\epsilon_3}$, $\epsilon_i\in\{0,1\}$, are a $\mathbb{C}$-basis. The scalar imaginary is $i$, central, with $i^2=-1$. The Hermitian adjoint is fixed by
 $$
-E_i^{\dagger}=-E_i, \qquad i^{\dagger}=-i,
+E_\mu^{\dagger}=-E_\mu, \qquad i^{\dagger}=-i,
 $$
-so that the rescaled generators $\gamma_i=iE_i$ are Hermitian, $\gamma_i^{\dagger}=\gamma_i$; this is the convention of *Complex Octonions and the Clifford Algebra Cl(6)*, and it is the one that makes the volume element self-adjoint below. The split biquaternion algebra is written with quaternion units $e_0=1,e_1,e_2,e_3$ and central split unit $j$, $j^2=+1$, as in *Split-Biquaternion Algebra*. The Clifford algebra $\mathrm{Cl}(0,3)$ of three generators of square $-1$ is written in the series convention $\mathrm{Cl}_{n,m}$; the complex algebra is written interchangeably $\mathrm{Cl}(n)$ and $\mathrm{Cl}_n(\mathbb{C})$, as in *Complex Octonions and the Clifford Algebra Cl(6)*.
+so that the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$; this is the convention that makes the volume element self-adjoint below. The split biquaternion algebra is written with quaternion units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central split unit $j$, $j^2=+1$, as in *Split-Biquaternion Algebra*. The Clifford algebra $\mathrm{Cl}(0,3)$ of three generators of square $-1$ is written in the series convention $\mathrm{Cl}_{n,m}$; the complex algebra is written interchangeably $\mathrm{Cl}(n)$ and $\mathrm{Cl}_n(\mathbb{C})$.
 
 ## The Algebra and Its Generators
 
 **Proposition (the split biquaternion generators).** In $\mathbb{H}_{\mathbb{D}}$ the three elements
 $$
-E_1 := j e_1, \qquad E_2 := j e_2, \qquad E_3 := j e_3
+E_1 := j \vec e_x, \qquad E_2 := j \vec e_y, \qquad E_3 := j \vec e_z
 $$
-satisfy $E_i^2=-1$ and $E_iE_j=-E_jE_i$ for $i\neq j$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H}_{\mathbb{D}}\cong\mathrm{Cl}(0,3)$.
+satisfy $E_\mu^2=-1$ and $E_\muE_\nu=-E_\nuE_\mu$ for $\mu\neq\nu$. Hence they generate a copy of $\mathrm{Cl}(0,3)$ inside $\mathbb{H}_{\mathbb{D}}$, and $\mathbb{H}_{\mathbb{D}}\cong\mathrm{Cl}(0,3)$.
 
-*Proof.* Since $j$ is central with $j^2=+1$ and the quaternion units anticommute with $e_i^2=-1$,
+*Proof.* Since $j$ is central with $j^2=+1$ and the quaternion units anticommute with $\vec e_\mu^2=-1$,
 $$
-E_i^2 = j^2e_i^2 = -1, \qquad E_iE_j = j^2e_ie_j = e_ie_j = -e_je_i = -E_jE_i \quad(i\neq j).
+E_\mu^2 = j^2\vec e_\mu^2 = -1, \qquad E_\muE_\nu = j^2\vec e_\mu \vec e_\nu = \vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu = -E_\nuE_\mu \quad(\mu\neq\nu).
 $$
 The eight monomials are independent and span $\mathbb{H}_{\mathbb{D}}$, so the generated algebra is the whole of it. The split biquaternion algebra is therefore the Clifford algebra of a three-dimensional negative definite space.
 
@@ -43,16 +43,16 @@ The eight monomials are independent and span $\mathbb{H}_{\mathbb{D}}$, so the g
 $$
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}
 $$
-is the complex Clifford algebra generated by the same $E_i$, with complex coefficients; it has complex dimension $8$ and real dimension $16$, and
+is the complex Clifford algebra generated by the same $E_\mu$, with complex coefficients; it has complex dimension $8$ and real dimension $16$, and
 $$
 \mathrm{Cl}(3)\cong\mathrm{Cl}_3(\mathbb{C}).
 $$
 
 *Proof.* Complexification extends scalars only, so the relations of the generators are unchanged and the $2^3$ monomials over $\mathbb{C}$ are a basis.
 
-**Proposition (the adjoint on the generators).** With $E_i^{\dagger}=-E_i$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $\gamma_i=iE_i$ are Hermitian, $\gamma_i^{\dagger}=\gamma_i$, with $\{\gamma_i,\gamma_j\}=+2\delta_{ij}$.
+**Proposition (the adjoint on the generators).** With $E_\mu^{\dagger}=-E_\mu$ and $i^{\dagger}=-i$ the map $\dagger$ is an anti-involution of $\mathrm{Cl}(3)$, and the rescaled generators $\gamma_\mu=iE_\mu$ are Hermitian, $\gamma_\mu^{\dagger}=\gamma_\mu$, with $\{\gamma_\mu,\gamma_\nu\}=+2\delta_{\mu\nu}$.
 
-*Proof.* The adjoint of a product reverses the order, so $(E_iE_j)^{\dagger}=E_j^{\dagger}E_i^{\dagger}=(-E_j)(-E_i)=-E_iE_j$ for $i\neq j$, consistent; the rest is immediate.
+*Proof.* The adjoint of a product reverses the order, so $(E_\muE_\nu)^{\dagger}=E_\nu^{\dagger}E_\mu^{\dagger}=(-E_\nu)(-E_\mu)=-E_\muE_\nu$ for $\mu\neq\nu$, consistent; the rest is immediate.
 
 ## The Volume Element and the Central Splitting
 
@@ -62,40 +62,40 @@ $$
 $$
 satisfies
 $$
-\omega^2=1, \qquad \omega E_i = E_i\omega \quad (i=1,2,3), \qquad \omega^{\dagger}=\omega .
+\omega^2=1, \qquad \omega E_\mu = E_\mu\omega \quad (\mu=1,2,3), \qquad \omega^{\dagger}=\omega .
 $$
 That is, $\omega$ is central, it is an involution, and it is self-adjoint.
 
-*Proof.* For $i\neq j$ the generators anticommute, so $E_i\omega=\omega E_i$ for each $i$: each of the three factors crosses the other two once, at the cost of one sign, and the three signs cancel. Hence $\omega$ commutes with the generators, and therefore with the whole algebra. For the square, move the factors into adjacent pairs,
+*Proof.* For $\mu\neq\nu$ the generators anticommute, so $E_\mu\omega=\omega E_\mu$ for each $\mu$: each of the three factors crosses the other two once, at the cost of one sign, and the three signs cancel. Hence $\omega$ commutes with the generators, and therefore with the whole algebra. For the square, move the factors into adjacent pairs,
 $$
 \omega^2 = E_1E_2E_3E_1E_2E_3 = E_1E_2(E_3E_1)E_2E_3 = -E_1E_2E_1E_3E_2E_3 = E_1^2E_2E_3E_2E_3 = -E_2E_3E_2E_3 = E_2^2E_3^2 = +1,
 $$
 where $E_3E_1=-E_1E_3$, $E_2E_1=-E_1E_2$, $E_3E_2=-E_2E_3$ and $E_1^2=E_2^2=E_3^2=-1$ were used successively. This is the general formula $(-1)^{n(n-1)/2}c^n$ for the square of a product of $n$ anticommuting generators of square $c$, at $n=3$, $c=-1$. Finally, $\omega^{\dagger}=E_3^{\dagger}E_2^{\dagger}E_1^{\dagger}=(-E_3)(-E_2)(-E_1)=-E_3E_2E_1=+E_1E_2E_3=\omega$, since reversing three anticommuting factors costs one sign. Every identity was checked on the eight monomials of the algebra with zero residual.
 
-The two properties, centrality and $\omega^2=+1$, are exactly what a **split** unit has, and they are the reason the complexified algebra behaves like the split biquaternions rather than like the biquaternions. Since $\omega=-j$ (because $E_1E_2E_3=(je_1)(je_2)(je_3)=j^3(e_1e_2)e_3=-j$), the involution $\omega$ of $\mathrm{Cl}(3)$ is the central split unit of $\mathbb{H}_{\mathbb{D}}$ up to sign.
+The two properties, centrality and $\omega^2=+1$, are exactly what a **split** unit has, and they are the reason the complexified algebra behaves like the split biquaternions rather than like the biquaternions. Since $\omega=-j$ (because $E_1E_2E_3=(j\vec e_x)(j\vec e_y)(j\vec e_z)=j^3(\vec e_x \vec e_y)\vec e_z=-j$), the involution $\omega$ of $\mathrm{Cl}(3)$ is the central split unit of $\mathbb{H}_{\mathbb{D}}$ up to sign.
 
 **Theorem (the central splitting).** Define
 $$
-\Pi_1 := \tfrac12(1+\omega), \qquad \Pi_2 := \tfrac12(1-\omega).
+\Pi_x := \tfrac12(1+\omega), \qquad \Pi_y := \tfrac12(1-\omega).
 $$
 Then
 $$
-\Pi_1^2=\Pi_1, \qquad \Pi_2^2=\Pi_2, \qquad \Pi_1\Pi_2=\Pi_2\Pi_1=0, \qquad \Pi_1+\Pi_2=1,
+\Pi_x^2=\Pi_x, \qquad \Pi_y^2=\Pi_y, \qquad \Pi_x\Pi_y=\Pi_y\Pi_x=0, \qquad \Pi_x+\Pi_y=1,
 $$
 and both are central. Consequently
 $$
-\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_1 \oplus \mathrm{Cl}(3)\Pi_2
+\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_x \oplus \mathrm{Cl}(3)\Pi_y
 $$
 is a decomposition of $\mathrm{Cl}(3)$ into the direct sum of two proper nonzero two-sided ideals, each of complex dimension $4$, and each isomorphic to the biquaternion algebra:
 $$
 \mathrm{Cl}(3)\Pi_{1,2} \cong \mathrm{Cl}(2) \cong \mathbb{C}\mathrm{l}_2 \cong \mathbb{B} \cong M_2(\mathbb{C}).
 $$
 
-*Proof.* Orthogonality, idempotency and completeness are the algebra $\omega^2=1$: for instance $\Pi_1\Pi_2=\tfrac14(1-\omega^2)=0$ and $\Pi_1^2=\tfrac14(1+2\omega+\omega^2)=\tfrac12(1+\omega)=\Pi_1$. Centrality is centrality of $\omega$. The direct sum is the decomposition of a module by a complete family of orthogonal central idempotents. Each ideal has complex dimension $4$, since left multiplication by $\Pi_1$ is a rank-$4$ projector of the $8$-dimensional space; and a four-dimensional complex algebra that is a full matrix algebra is $M_2(\mathbb{C})$, which is $\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$ by *Biquaternion Other Algebraic Element Representations*. The dimension of each ideal was computed to be $4$ on the eight monomials.
+*Proof.* Orthogonality, idempotency and completeness are the algebra $\omega^2=1$: for instance $\Pi_x\Pi_y=\tfrac14(1-\omega^2)=0$ and $\Pi_x^2=\tfrac14(1+2\omega+\omega^2)=\tfrac12(1+\omega)=\Pi_x$. Centrality is centrality of $\omega$. The direct sum is the decomposition of a module by a complete family of orthogonal central idempotents. Each ideal has complex dimension $4$, since left multiplication by $\Pi_x$ is a rank-$4$ projector of the $8$-dimensional space; and a four-dimensional complex algebra that is a full matrix algebra is $M_2(\mathbb{C})$, which is $\mathbb{C}\mathrm{l}_2\cong\mathbb{B}$ by *Biquaternion Other Algebraic Element Representations*. The dimension of each ideal was computed to be $4$ on the eight monomials.
 
-**Corollary (semisimple, not simple).** $\mathrm{Cl}(3)$ is semisimple and is not simple; its two-sided ideals are $0$, $\mathrm{Cl}(3)\Pi_1$, $\mathrm{Cl}(3)\Pi_2$ and $\mathrm{Cl}(3)$. Its minimal left, right and two-sided ideals coincide, and its left ideals form the diamond
+**Corollary (semisimple, not simple).** $\mathrm{Cl}(3)$ is semisimple and is not simple; its two-sided ideals are $0$, $\mathrm{Cl}(3)\Pi_x$, $\mathrm{Cl}(3)\Pi_y$ and $\mathrm{Cl}(3)$. Its minimal left, right and two-sided ideals coincide, and its left ideals form the diamond
 $$
-0 \subset \mathrm{Cl}(3)\Pi_1,\ \mathrm{Cl}(3)\Pi_2 \subset \mathrm{Cl}(3).
+0 \subset \mathrm{Cl}(3)\Pi_x,\ \mathrm{Cl}(3)\Pi_y \subset \mathrm{Cl}(3).
 $$
 
 *Proof.* Because $\Pi_{1,2}$ are central, the left, right and two-sided ideals they generate agree; the summands are simple matrix algebras and have no proper nonzero ideal, so no further ideals occur. The lattice is then the diamond, as in *Split-Biquaternion Ideals and Peirce Decomposition*.
@@ -105,19 +105,19 @@ $$
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_1\bigr) \oplus \mathbb{C}\otimes_{\mathbb{R}}\bigl(\mathbb{H}\tilde\Pi_2\bigr) \cong \mathbb{B}\oplus\mathbb{B}.
 $$
 
-*Proof.* With $\omega=-j$ one has $\Pi_1=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_2=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
+*Proof.* With $\omega=-j$ one has $\Pi_x=\tfrac12(1-j)=\tilde\Pi_2$ and $\Pi_y=\tfrac12(1+j)=\tilde\Pi_1$. The two-sided ideals $\mathbb{H}\tilde\Pi_{1,2}\cong\mathbb{H}$ of *Split-Biquaternion Ideals and Peirce Decomposition* complexify to $\mathbb{B}\cong\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.
 
 **Theorem (the parity automorphism).** The map
 $$
-\sigma : \mathrm{Cl}(3)\to\mathrm{Cl}(3), \qquad \sigma(E_i)=-E_i,
+\sigma : \mathrm{Cl}(3)\to\mathrm{Cl}(3), \qquad \sigma(E_\mu)=-E_\mu,
 $$
 is an algebra automorphism; it fixes the even monomials and negates the odd ones; it satisfies $\sigma(\omega)=-\omega$, and it therefore interchanges the two summands,
 $$
-\sigma(\Pi_1)=\Pi_2, \qquad \sigma(\Pi_2)=\Pi_1 .
+\sigma(\Pi_x)=\Pi_y, \qquad \sigma(\Pi_y)=\Pi_x .
 $$
 The two summands are the two **pinor representations** of $\mathrm{Cl}(3)$: the two simple modules of $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, inequivalent and distinguished by the eigenvalue $\pm1$ of the central volume element $\omega$.
 
-*Proof.* Sending every generator to its negative preserves the quadratic relations $E_i^2=-1$, $E_iE_j=-E_jE_i$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ are the two projections and their distinct images are the two non-isomorphic simple modules.
+*Proof.* Sending every generator to its negative preserves the quadratic relations $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$, and is invertible, so it is an automorphism; it is the grading automorphism of the Clifford algebra, equal to $+1$ on the even subalgebra and $-1$ on the odd part. On the volume element the three sign flips give $\sigma(\omega)=(-1)^3\omega=-\omega$, and the action on $\Pi_{1,2}$ follows. A central element of a product of two simple algebras acts as a scalar on each simple module; the idempotents $\Pi_{1,2}$ are the two projections and their distinct images are the two non-isomorphic simple modules.
 
 ## The Ladder Structure and the Minimal Left Ideal
 
@@ -162,7 +162,7 @@ The **charge operator** $Ϙ := N$ therefore takes the two values $0$ and $1$ on 
 
 *Proof.* The idempotent $P$ is primitive (its rank as an endomorphism of the two-space is one), so $S$ is minimal; the two elements are independent; and the actions follow from $\alpha P=0$ (as $\alpha^2=0$) and $\alpha^{\dagger}\alpha\alpha^{\dagger}=\alpha^{\dagger}(1-\alpha\alpha^{\dagger})=\alpha^{\dagger}$. The two vacuum and excited eigenvalues were computed on $S$ and are exactly $0$ and $1$.
 
-The conjugate ideal is obtained from the conjugated idempotent $P^{*}=\tfrac12(1-iE_1E_2)=N$; conversely the ideal $\mathrm{Cl}(3)N$ has basis $\{N,\alpha N\}$ with charges $1$ and $0$. The construction is the two-dimensional case of the general theorem of *Maximal Totally Isotropic Subspaces and Their Unitary Symmetries*, whose unitary symmetry on a one-dimensional isotropic subspace is the abelian $\mathrm{u}(1)$ generated by the number operator: in $\mathrm{Cl}(3)$ the intrinsic symmetry of one copy is therefore $\mathrm{u}(1)$ alone, to be contrasted with the $\mathrm{su}(3)\oplus\mathrm{u}(1)$ of the six-dimensional case of *Complex Octonions and the Clifford Algebra Cl(6)*. The particle content attached to $S$ — a neutrino of charge $0$ and a charged lepton of charge $1$, with their conjugates on the conjugate ideal, and the doubling of the whole set into the two chiralities — is the reading of the companion physics article, not an algebraic statement of this one.
+The conjugate ideal is obtained from the conjugated idempotent $P^{*}=\tfrac12(1-iE_1E_2)=N$; conversely the ideal $\mathrm{Cl}(3)N$ has basis $\{N,\alpha N\}$ with charges $1$ and $0$. The construction is the two-dimensional case of the general theorem that a maximal totally isotropic subspace of a complexified Euclidean space carries a unitary symmetry: on a one-dimensional isotropic subspace it is the abelian $\mathrm{u}(1)$ generated by the number operator, so in $\mathrm{Cl}(3)$ the intrinsic symmetry of one copy is $\mathrm{u}(1)$ alone, to be contrasted with the $\mathrm{su}(3)\oplus\mathrm{u}(1)$ of the six-dimensional case. The particle content attached to $S$ — a neutrino of charge $0$ and a charged lepton of charge $1$, with their conjugates on the conjugate ideal, and the doubling of the whole set into the two chiralities — is the reading of the companion physics article, not an algebraic statement of this one.
 
 ## The Right Action and the Enveloping Algebra
 
@@ -176,7 +176,7 @@ $$
 $$
 the complexification of the Dirac algebra. The one-rung-higher statement, in which the left action is enlarged from the biquaternion algebra to the whole of $\mathrm{Cl}(3)$, is the content of the theorem below.
 
-**Theorem (the right action of $\mathbb{B}$ on $\mathrm{Cl}(3)$).** Let $\mathbb{B}\subset\mathrm{Cl}(3)$ be the biquaternion subalgebra spanned by $1,e_1,e_2,e_3$, and let $L_a$ and $R_b$ be left multiplication by $a\in\mathrm{Cl}(3)$ and right multiplication by $b\in\mathbb{B}$ on the eight-dimensional space $\mathrm{Cl}(3)$. Then
+**Theorem (the right action of $\mathbb{B}$ on $\mathrm{Cl}(3)$).** Let $\mathbb{B}\subset\mathrm{Cl}(3)$ be the biquaternion subalgebra spanned by $1,\vec e_x,\vec e_y,\vec e_z$, and let $L_a$ and $R_b$ be left multiplication by $a\in\mathrm{Cl}(3)$ and right multiplication by $b\in\mathbb{B}$ on the eight-dimensional space $\mathrm{Cl}(3)$. Then
 $$
 (L_aR_b)(L_{a'}R_{b'})=L_{aa'}R_{b'b},
 $$
@@ -186,7 +186,7 @@ $$
 $$
 of complex dimension $32$ and with a two-dimensional centre.
 
-*Proof.* The left and right multiplications commute by associativity of $\mathrm{Cl}(3)$, so $(L_aR_b)(L_{a'}R_{b'})=(L_aL_{a'})(R_bR_{b'})$; the reversal in the second factor, $R_bR_{b'}=R_{b'b}$, is the opposite-algebra multiplication of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. Hence the span of the $L_aR_b$ is a subalgebra, and it is the image of the algebra homomorphism $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathrm{Cl}(3))$, $a\otimes b^{\mathrm{opp}}\mapsto L_aR_b$. The domain is $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong(M_2(\mathbb{C})\oplus M_2(\mathbb{C}))\otimes_{\mathbb{C}}M_2(\mathbb{C})\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, of complex dimension $8\cdot4=32$; the image was recomputed to be $32$-dimensional, so the map is injective and the image is the whole domain. The identifications $M_4(\mathbb{C})\cong\mathrm{Cl}(4)_{\mathbb{C}}$, $M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}$ and $\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$ are the low-dimensional classification of complex Clifford algebras. The closure identity, the dimension $32$ (thirty-two independent products) and the two-dimensional centre were all recomputed on the eight monomials with zero residual, and the opposite-algebra sign $R_{e_1}R_{e_2}=-R_{e_3}$ was recomputed as well.
+*Proof.* The left and right multiplications commute by associativity of $\mathrm{Cl}(3)$, so $(L_aR_b)(L_{a'}R_{b'})=(L_aL_{a'})(R_bR_{b'})$; the reversal in the second factor, $R_bR_{b'}=R_{b'b}$, is the opposite-algebra multiplication of *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*. Hence the span of the $L_aR_b$ is a subalgebra, and it is the image of the algebra homomorphism $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathrm{Cl}(3))$, $a\otimes b^{\mathrm{opp}}\mapsto L_aR_b$. The domain is $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong(M_2(\mathbb{C})\oplus M_2(\mathbb{C}))\otimes_{\mathbb{C}}M_2(\mathbb{C})\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, of complex dimension $8\cdot4=32$; the image was recomputed to be $32$-dimensional, so the map is injective and the image is the whole domain. The identifications $M_4(\mathbb{C})\cong\mathrm{Cl}(4)_{\mathbb{C}}$, $M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}$ and $\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$ are the low-dimensional classification of complex Clifford algebras. The closure identity, the dimension $32$ (thirty-two independent products) and the two-dimensional centre were all recomputed on the eight monomials with zero residual, and the opposite-algebra sign $R_{\vec e_x}R_{\vec e_y}=-R_{\vec e_z}$ was recomputed as well.
 
 The theorem shows that the two-sided structure of the algebra has two rungs. On the biquaternion algebra alone the left and the right actions generate $\mathbb{B}^{\mathrm{e}}\cong\mathrm{Cl}(4)_{\mathbb{C}}$, of dimension $16$; enlarging the left action from $\mathbb{B}$ to $\mathrm{Cl}(3)$ and keeping the right action of $\mathbb{B}$ raises the generated algebra to $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong\mathrm{Cl}(5)_{\mathbb{C}}$, of dimension $32$. The right action of $\mathbb{B}$ alone is four-dimensional and is the Clifford algebra $\mathrm{Cl}(2)$; it is the pair of actions together that produces the next complex Clifford algebra. Both rungs were recorded by the source of the companion physics article, which writes the first as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathbb{C}\otimes\mathbb{H}$ gives $\mathrm{Cl}(4)$" and the second as "the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathrm{Cl}(3)$ gives $\mathrm{Cl}(5)$"; the source's reading of the second — that the enlargement supplies the parity-reversal operator that $\mathrm{Cl}(3)$ does not contain, and that $\mathrm{Cl}(5)\cong\mathrm{Cl}(6)^+$ is the second of the two complex octonionic chain algebras of the division-algebra approach, one carrying $\mathrm{SO}(4)$ and one carrying $\mathrm{SU}(3)\times\mathrm{U}(1)$ — belongs to the companion physics article and is not an algebraic statement of this one.
 
@@ -197,32 +197,32 @@ $$
 \mathrm{Cl}(3) = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}
 \cong \mathrm{Cl}_3(\mathbb{C}),
 $$
-of complex dimension $8$. Its generators $E_i=je_i$ satisfy $\{E_i,E_j\}=-2\delta_{ij}$, and its volume element $\omega=E_1E_2E_3$ is central, self-adjoint and an involution, $\omega^2=1$. The centrality gives the complete family of orthogonal central idempotents $\Pi_{1,2}=\tfrac12(1\pm\omega)$ and the splitting
+of complex dimension $8$. Its generators $E_\mu=j\vec e_\mu$ satisfy $\{E_\mu,E_\nu\}=-2\delta_{\mu\nu}$, and its volume element $\omega=E_1E_2E_3$ is central, self-adjoint and an involution, $\omega^2=1$. The centrality gives the complete family of orthogonal central idempotents $\Pi_{1,2}=\tfrac12(1\pm\omega)$ and the splitting
 $$
-\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_1 \oplus \mathrm{Cl}(3)\Pi_2 \cong \mathbb{B}\oplus\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
+\mathrm{Cl}(3) = \mathrm{Cl}(3)\Pi_x \oplus \mathrm{Cl}(3)\Pi_y \cong \mathbb{B}\oplus\mathbb{B} \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
 $$
-into two copies of the biquaternion algebra, each of complex dimension $4$, so that $\mathrm{Cl}(3)$ is semisimple and not simple, with a four-element ideal lattice. The parity automorphism $E_i\mapsto-E_i$ negates $\omega$ and interchanges the two summands; they are the two pinor representations of $\mathrm{Cl}(3)$, inequivalent and distinguished by the eigenvalue $\pm1$ of $\omega$. Inside each summand the ladder element $\alpha=\tfrac12(E_1+iE_2)$ is isotropic, its number operator $N=\alpha^{\dagger}\alpha$ has the complementary projector $\alpha\alpha^{\dagger}$ as partner, and the minimal left ideal $\mathrm{Cl}(3)( \alpha\alpha^{\dagger})$ has basis $\{P,\alpha^{\dagger}P\}$ with charges $0$ and $1$ under $Ϙ=N$. The whole construction is the three-dimensional case of the doubling of $\mathrm{Cl}(2n)$ to $\mathrm{Cl}(2n+1)$ by a central involution, of which the octonionic case is *Split Bioctonions and the Clifford Algebra Cl(7)*. The two-sided structure has two rungs: the left and right actions of $\mathbb{B}$ on itself generate the enveloping algebra $\mathbb{B}^{\mathrm{e}}\cong M_4(\mathbb{C})\cong\mathrm{Cl}(4)_{\mathbb{C}}$, and the left action of $\mathrm{Cl}(3)$ together with the right action of $\mathbb{B}$ generates $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$.
+into two copies of the biquaternion algebra, each of complex dimension $4$, so that $\mathrm{Cl}(3)$ is semisimple and not simple, with a four-element ideal lattice. The parity automorphism $E_\mu\mapsto-E_\mu$ negates $\omega$ and interchanges the two summands; they are the two pinor representations of $\mathrm{Cl}(3)$, inequivalent and distinguished by the eigenvalue $\pm1$ of $\omega$. Inside each summand the ladder element $\alpha=\tfrac12(E_1+iE_2)$ is isotropic, its number operator $N=\alpha^{\dagger}\alpha$ has the complementary projector $\alpha\alpha^{\dagger}$ as partner, and the minimal left ideal $\mathrm{Cl}(3)( \alpha\alpha^{\dagger})$ has basis $\{P,\alpha^{\dagger}P\}$ with charges $0$ and $1$ under $Q=N$. The whole construction is the three-dimensional case of the doubling of $\mathrm{Cl}(2n)$ to $\mathrm{Cl}(2n+1)$ by a central involution. The two-sided structure has two rungs: the left and right actions of $\mathbb{B}$ on itself generate the enveloping algebra $\mathbb{B}^{\mathrm{e}}\cong M_4(\mathbb{C})\cong\mathrm{Cl}(4)_{\mathbb{C}}$, and the left action of $\mathrm{Cl}(3)$ together with the right action of $\mathbb{B}$ generates $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra, unit $j$, $j^2=+1$ |
-| $\mathbb{H}$ | Quaternion algebra, units $e_0=1,e_1,e_2,e_3$, $e_k^2=-1$, $e_1e_2=e_3$ |
+| $\mathbb{H}$ | Quaternion algebra, units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-1$, $\vec e_x \vec e_y=\vec e_z$ |
 | $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | Split biquaternion algebra, ${}\cong\mathrm{Cl}(0,3)\cong\mathbb{H}\oplus\mathbb{H}$ |
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, ${}\cong M_2(\mathbb{C})\cong\mathbb{C}\mathrm{l}_2$ |
 | $\mathrm{Cl}(3)=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}_{\mathbb{D}}$ | Complex split biquaternions, ${}\cong\mathrm{Cl}_3(\mathbb{C})$ |
-| $E_1,E_2,E_3=je_1,je_2,je_3$ | Clifford generators, $E_i^2=-1$, $E_iE_j=-E_jE_i$ |
-| $\gamma_i=iE_i$ | Hermitian generators, $\gamma_i^{\dagger}=\gamma_i$, $\{\gamma_i,\gamma_j\}=2\delta_{ij}$ |
-| $\dagger$ | Hermitian adjoint, $E_i^{\dagger}=-E_i$, $i^{\dagger}=-i$ |
+| $E_1,E_2,E_3=j\vec e_x,j\vec e_y,j\vec e_z$ | Clifford generators, $E_\mu^2=-1$, $E_\muE_\nu=-E_\nuE_\mu$ |
+| $\gamma_\mu=iE_\mu$ | Hermitian generators, $\gamma_\mu^{\dagger}=\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}$ |
+| $\dagger$ | Hermitian adjoint, $E_\mu^{\dagger}=-E_\mu$, $i^{\dagger}=-i$ |
 | $\omega=E_1E_2E_3=-j$ | Volume element, central, self-adjoint, $\omega^2=1$ |
-| $\Pi_1 = \tilde\Pi_2 = \tfrac12(1+\omega)$, $\Pi_2 = \tilde\Pi_1 = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
+| $\Pi_x = \tilde\Pi_2 = \tfrac12(1+\omega)$, $\Pi_y = \tilde\Pi_1 = \tfrac12(1-\omega)$ | Central idempotents, complete and orthogonal |
 | $\mathrm{Cl}(3)\Pi_{1,2}$ | The two simple summands, each ${}\cong\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\sigma:E_i\mapsto-E_i$ | Parity (grading) automorphism, interchanges the summands |
+| $\sigma:E_\mu\mapsto-E_\mu$ | Parity (grading) automorphism, interchanges the summands |
 | $\alpha=\tfrac12(E_1+iE_2)$ | Isotropic (ladder) element, $\alpha^2=0$ |
 | $N=\alpha^{\dagger}\alpha$, $P=\alpha\alpha^{\dagger}$ | Number operator and its complementary projector, $P+N=1$ |
 | $S=\mathrm{Cl}(3)P$ | Minimal left ideal, basis $\{P,\alpha^{\dagger}P\}$ |
-| $Ϙ=N$ | Charge operator, values $0,1$ on $S$ |
+| $Q=N$ | Charge operator, values $0,1$ on $S$ |
 | $L_a,R_b$ | Left and right multiplications, $L_a\tilde Q=a\tilde Q$, $R_b\tilde Q=\tilde Q b$ |
 | $\mathrm{Cl}(3)\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}$ | Generated by left $\mathrm{Cl}(3)$ and right $\mathbb{B}$, ${}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\cong\mathrm{Cl}(5)_{\mathbb{C}}\cong\mathrm{Cl}(6)^+$ |
 
@@ -235,6 +235,4 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 - Companion article *Split-Biquaternion Algebra*, for the algebra being complexified, its conjugations and its idempotents.
 - Companion article *Split-Biquaternion Ideals and Peirce Decomposition*, for the splitting $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and its diamond of ideals.
 - Companion article *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Biquaternion Other Algebraic Element Representations*, for $\mathbb{B}\cong\mathbb{C}\mathrm{l}_2$, its idempotents and its minimal left ideals.
-- Companion article *Maximal Totally Isotropic Subspaces and Their Unitary Symmetries*, for the general ladder, number-operator and charge construction.
 - Companion article *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, for the left and right multiplications, their commuting, and $\mathbb{B}^{\mathrm{e}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$.
-- Companion article *Split Bioctonions and the Clifford Algebra Cl(7)*, for the same doubling one rung higher, on the octonions.

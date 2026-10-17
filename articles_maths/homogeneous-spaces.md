@@ -27,7 +27,7 @@ is a well-defined $G$-equivariant bijection. In particular, if the action is tra
 
 **Proof.** If $gG_x = g'G_x$ then $g^{-1}g' \in G_x$, so $g\cdot x = g'\cdot x$; this is well definedness. It is injective because $g\cdot x = g'\cdot x$ gives $g^{-1}g' \in G_x$; it is surjective by transitivity; and it is equivariant by construction.
 
-**Definition.** The action is **free** if every stabiliser is trivial, **effective** (or faithful) if the homomorphism $G \to \operatorname{Sym}(X)$ is injective, and **properly discontinuous** if every point has a neighbourhood $U$ with $g U \cap U \neq \emptyset$ for only finitely many $g$.
+**Definition.** The action is **free** if every stabiliser is trivial, **effective** (or faithful) if the homomorphism $G \to \operatorname{Sym}(X)$ is injective, and **properly discontinuous** if every point has a neighbourhood $\Omega$ with $g \Omega \cap \Omega \neq \emptyset$ for only finitely many $g$.
 
 **Theorem.** For a topological group $G$ acting continuously on a topological space $X$, if $H$ is a closed subgroup then $G/H$ with the quotient topology is Hausdorff, the projection $G \to G/H$ is open, and the action map $G \times G/H \to G/H$, $(g, g'H) \mapsto gg'H$, is continuous; if $H$ is normal, $G/H$ is a topological group.
 
@@ -85,7 +85,7 @@ is a principal $H$-bundle: $H$ acts on $G$ by right translation, the action pres
 
 **Example (spheres).** The sphere $S^n$ is the homogeneous space $SO(n+1)/SO(n)$, the stabiliser of a point being the rotations of the orthogonal complement; $\dim SO(n+1) - \dim SO(n) = n(n+1)/2 - n(n-1)/2 = n$, matching the dimension of the sphere. Likewise $S^{2n-1} = SU(n)/SU(n-1)$ and $S^{4n-1} = Sp(n)/Sp(n-1)$ realise the odd spheres as quotients of the unitary and symplectic groups, and $S^3 = SU(2) = Sp(1)$ as a group itself.
 
-**Example (projective spaces).** $\mathbb{RP}^{n} = SO(n+1)/O(n)$ and $\mathbb{CP}^n = SU(n+1)/(SU(n)\times U(1))$; in each case the stabiliser is the image of the isotropy representation, the group preserving a line and its orthogonal complement. The dimension of $\mathbb{CP}^n$ is $(n+1)^2 - 1 - n^2 = 2n$, the real dimension of a complex $n$-manifold.
+**Example (projective spaces).** $\mathbb{RP}^{n} = SO(n+1)/O(n)$ and $\mathbb{CP}^n = SU(n+1)/(SU(n)\times \mathrm{U}(1))$; in each case the stabiliser is the image of the isotropy representation, the group preserving a line and its orthogonal complement. The dimension of $\mathbb{CP}^n$ is $(n+1)^2 - 1 - n^2 = 2n$, the real dimension of a complex $n$-manifold.
 
 **Example (Grassmannians and Stiefel manifolds).** As in *Grassmannians and Stiefel Manifolds*,
 
@@ -150,7 +150,7 @@ a **reductive decomposition** with $\mathrm{M}$ an $\operatorname{Ad}(H)$-invari
 **Definition.** For the reductive decomposition $\mathrm{G} = \mathrm{H}\oplus\mathrm{M}$, let $p : \mathrm{G} \to \mathrm{M}$ and $p_{\mathrm{H}} : \mathrm{G}\to\mathrm{H}$ be the projections, and define, for $\xi, \eta \in \mathrm{M}$,
 
 $$
-[\xi, \eta]_{\mathrm{M}} = p([\xi,\eta]) \in \mathrm{M}, \qquad \text{and} \qquad U_\xi \eta = - \tfrac{1}{2}\,[\xi,\eta]_{\mathrm{M}} + (\text{the symmetric part}),
+[\xi, \eta]_{\mathrm{M}} = p([\xi,\eta]) \in \mathrm{M}, \qquad \text{and} \qquad \Omega_\xi \eta = - \tfrac{1}{2}\,[\xi,\eta]_{\mathrm{M}} + (\text{the symmetric part}),
 $$
 
 the **canonical connection** (or Nomizu connection) of the reductive decomposition.
@@ -199,7 +199,7 @@ which is the stated formula.
 
 **Corollary (Mostow–Palais).** The action of a compact Lie group on a manifold is locally linearisable at each point: for a compact $G$ acting smoothly on $M$ and $p \in M$, there is a $G_p$-invariant neighbourhood of the origin in $T_pM$ and an equivariant diffeomorphism onto a neighbourhood of $p$. Consequently the orbit structure of a compact group action is locally that of a linear action, and the orbit space is a manifold near a point of a principal orbit.
 
-**Remark.** The isometry group is the largest group acting effectively and isometrically, and the homogeneous spaces of a fixed manifold are its orbit types. Two different groups may present the same homogeneous space: $\mathbb{RP}^{2} = O(3)/O(2) = SO(3)/SO(2)$, and the sphere $S^{2n-1}$ is a homogeneous space of $SO(2n)$, of $U(n)$ and of $SU(n)$. What is intrinsic is the pair (manifold, metric); the pair $(G, H)$ is extra structure, and the same manifold may be written as a quotient in many ways.
+**Remark.** The isometry group is the largest group acting effectively and isometrically, and the homogeneous spaces of a fixed manifold are its orbit types. Two different groups may present the same homogeneous space: $\mathbb{RP}^{2} = O(3)/O(2) = SO(3)/SO(2)$, and the sphere $S^{2n-1}$ is a homogeneous space of $SO(2n)$, of $\mathrm{U}(n)$ and of $SU(n)$. What is intrinsic is the pair (manifold, metric); the pair $(G, H)$ is extra structure, and the same manifold may be written as a quotient in many ways.
 
 ## Compact and Noncompact Duality
 
@@ -213,7 +213,7 @@ which is the stated formula.
 
 **Example.** The compact dual of the hyperbolic plane is the round sphere: $SO(1,2)/SO(2)$ dualises to $SO(3)/SO(2)$, and the two are the constant-curvature surfaces of curvature $-1$ and $+1$. The entire trichotomy of *Non-Euclidean Geometry* is a family of Cartan dualities; the Euclidean case is the intermediate flat limit.
 
-**Example.** The compact dual of the complex hyperbolic space $\mathbb{CH}^n = SU(1,n)/U(n)$ is the complex projective space $\mathbb{CP}^n = SU(n+1)/U(n)$, and the dual of the quaternionic hyperbolic space is the quaternionic projective space. The duality is the structural reason the compact and noncompact families of Grassmannians, of projective spaces and of hyperbolic spaces have the same algebra and opposite curvature signs.
+**Example.** The compact dual of the complex hyperbolic space $\mathbb{CH}^n = SU(1,n)/\mathrm{U}(n)$ is the complex projective space $\mathbb{CP}^n = SU(n+1)/\mathrm{U}(n)$, and the dual of the quaternionic hyperbolic space is the quaternionic projective space. The duality is the structural reason the compact and noncompact families of Grassmannians, of projective spaces and of hyperbolic spaces have the same algebra and opposite curvature signs.
 
 ### Isotropy, Rank and Irreducibility
 

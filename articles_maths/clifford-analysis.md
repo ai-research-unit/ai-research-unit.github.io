@@ -6,7 +6,7 @@
 Clifford analysis is the function theory of a first-order operator built from a Clifford algebra. The variable is a vector $x = x_0 + \sum_{i=1}^{m}x_ie_i$ in a Euclidean space of dimension $m+1$, the values lie in the Clifford algebra $\mathrm{Cl}_{0,m}$ or in a Clifford module, and the operator is
 
 $$
-D = \partial_0 + \sum_{i=1}^{m}e_i\,\partial_i ,
+D = \partial/\partial x_0 + \sum_{i=1}^{m}e_i\,\partial/\partial x_i ,
 $$
 
 with generators satisfying $e_ie_j+e_je_i=-2\delta_{ij}$. This operator is the **Cauchy–Riemann operator** of the corpus; its classical name, the *Dirac operator*, is mentioned once here as a gloss and is carried by the family of operators treated in *Dirac Differential Operators*. The operator is elliptic, its square and the square of its conjugate are the Laplacian, and the functions it annihilates — the **monogenic** or left regular functions — form a class that generalises the holomorphic functions of one complex variable: for $m=1$ the algebra is $\mathrm{Cl}_{0,1}\cong\mathbb{C}$, the operator is the classical Cauchy–Riemann operator, and the monogenic functions are exactly the holomorphic ones.
@@ -40,15 +40,15 @@ that is, a module of the Clifford algebra as in *Clifford Modules and the Twiste
 **Definition.** The **Cauchy–Riemann operator** of Clifford analysis is
 
 $$
-D = \partial_0+\sum_{i=1}^{m}e_i\partial_i = \sum_{\mu=0}^{m}e_\mu\partial_\mu , \qquad e_0 = 1 ,
+D = \partial/\partial x_0+\sum_{i=1}^{m}e_i\partial/\partial x_i = \sum_{\mu=0}^{m}e_\mu\partial/\partial x_\mu , \qquad e_0 = 1 ,
 $$
 
-and its conjugate is $\bar D = \partial_0-\sum_{i=1}^{m}e_i\partial_i$. It acts on a $C^1$ function $f : \Omega\to\mathcal{S}$ by $Df = \sum_\mu e_\mu\partial_\mu f$.
+and its conjugate is $\bar D = \partial/\partial x_0-\sum_{i=1}^{m}e_i\partial/\partial x_i$. It acts on a $C^1$ function $f : \Omega\to\mathcal{S}$ by $Df = \sum_\mu e_\mu\partial/\partial x_\mu f$.
 
 **Proposition (factorisation and ellipticity).** The identities
 
 $$
-D\bar D = \bar DD = \Delta = \sum_{\mu=0}^{m}\partial_\mu^2
+D\bar D = \bar DD = \Delta = \sum_{\mu=0}^{m}\partial^2/\partial x_\mu^2
 $$
 
 hold, and $D$ is elliptic: its principal symbol $\sigma(\xi) = \sum_\mu e_\mu\xi_\mu$ is a unit of $A$ for every $\xi = (\xi_0,\dots,\xi_m)\neq0$, with
@@ -57,7 +57,7 @@ $$
 \sigma(\xi)^{-1} = \frac{\bar\sigma(\xi)}{|\xi|^2}, \qquad \bar\sigma(\xi) = \xi_0-\sum_{i=1}^{m}e_i\xi_i .
 $$
 
-*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $\partial_0^2-\sum_{i,j}e_ie_j\partial_i\partial_j$, the diagonal terms contribute $\sum_i\partial_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\xi)\bar\sigma(\xi) = \xi_0^2-\sum_{i,j}e_ie_j\xi_i\xi_j = \xi_0^2+\sum_i\xi_i^2 = |\xi|^2$, a positive real number, which is a unit of $A$; the same computation in the other order gives the same product, so $\sigma(\xi)$ is invertible.
+*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $(\partial/\partial x_0)^2-\sum_{i,j}e_ie_j\partial^2/\partial x_i\partial x_j$, the diagonal terms contribute $\sum_i\partial^2/\partial x_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\xi)\bar\sigma(\xi) = \xi_0^2-\sum_{i,j}e_ie_j\xi_i\xi_j = \xi_0^2+\sum_i\xi_i^2 = |\xi|^2$, a positive real number, which is a unit of $A$; the same computation in the other order gives the same product, so $\sigma(\xi)$ is invertible.
 
 The factorisation is the reason the Clifford case is the favourable one: the second-order operator that governs the theory is the ordinary Laplacian of the ambient space, so the harmonic tools of classical analysis apply to the components. The ellipticity is the reason the integral representation of the next section exists with a kernel of homogeneity $1-(m+1)$.
 
@@ -67,11 +67,11 @@ The factorisation is the reason the Clifford case is the favourable one: the sec
 
 **Proposition (linear structure and one-sided multiplication).** The left monogenic functions on $\Omega$ form a real vector space, closed under right multiplication by constants of $A$; if $a\in A$ is central then $af$ is monogenic whenever $f$ is. The class is not closed under multiplication of two monogenic functions, and this is the non-commutative obstruction of *Hypercomplex Analysis* in its Clifford form.
 
-*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = \sum_\mu e_\mu(\partial_\mu f)a = (Df)a$ and $D(af) = \sum_\mu e_\mu a\partial_\mu f$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic.
+*Proof.* Linearity of $D$ gives the vector space statement, and for a constant $a$ the Leibniz rule gives $D(fa) = \sum_\mu e_\mu(\partial/\partial x_\mu f)a = (Df)a$ and $D(af) = \sum_\mu e_\mu a\partial/\partial x_\mu f$, which vanishes for central $a$ because $e_\mu a = ae_\mu$. The failure of closure is exhibited by the monogenic function $x\mapsto x+ae_1$ of the next example and the monogenic function $x\mapsto x$ in the complex case; over $\mathbb{H}$ the product of two monogenic functions is in general not monogenic.
 
-**Example (the complex case).** For $m=1$ let $z = x_0+e_1x_1$. Then $Dz = \partial_0z+e_1\partial_1z = 1+e_1^2=0$, so $z$ is left monogenic, and more generally $D(z^k)=0$ for every $k\ge0$: $\partial_0z^k = kz^{k-1}$ and $\partial_1z^k = kz^{k-1}e_1$, so $D(z^k) = kz^{k-1}+e_1kz^{k-1}e_1 = kz^{k-1}(1+e_1^2)=0$. Thus the polynomials in one complex variable are monogenic, and with $A=\mathbb{C}$ the monogenic functions are the holomorphic ones.
+**Example (the complex case).** For $m=1$ let $z = x_0+e_1x_1$. Then $Dz = \partial/\partial x_0\,z+e_1\partial/\partial x_1\,z = 1+e_1^2=0$, so $z$ is left monogenic, and more generally $D(z^k)=0$ for every $k\ge0$: $\partial/\partial x_0\,z^k = kz^{k-1}$ and $\partial/\partial x_1\,z^k = kz^{k-1}e_1$, so $D(z^k) = kz^{k-1}+e_1kz^{k-1}e_1 = kz^{k-1}(1+e_1^2)=0$. Thus the polynomials in one complex variable are monogenic, and with $A=\mathbb{C}$ the monogenic functions are the holomorphic ones.
 
-**Example (the vector variable is not monogenic).** For the variable $x$ itself, $Dx = \partial_0x+\sum_{i\ge1}e_i\partial_ix = 1-\sum_{i\ge1}e_i^2 = 1-m$; hence $x$ is monogenic only in the complex case $m=1$. In the Clifford case the elementary monogenic function is not $x$ but the **Cauchy kernel** of the next section, which is $x^{\natural}$ times a radial power. The computation also shows that the operator's action on polynomials records the ambient dimension, exactly as $\Delta(|x|^2)=2(m+1)$ does.
+**Example (the vector variable is not monogenic).** For the variable $x$ itself, $Dx = \partial/\partial x_0\,x+\sum_{i\ge1}e_i\partial/\partial x_i\,x = 1-\sum_{i\ge1}e_i^2 = 1-m$; hence $x$ is monogenic only in the complex case $m=1$. In the Clifford case the elementary monogenic function is not $x$ but the **Cauchy kernel** of the next section, which is $x^{\natural}$ times a radial power. The computation also shows that the operator's action on polynomials records the ambient dimension, exactly as $\Delta(|x|^2)=2(m+1)$ does.
 
 **Example (planes and the complex variable).** The functions $x\mapsto a$ (constants) and $x\mapsto z^k a$ are the elementary monogenic functions of the complex subalgebra generated by $1$ and $e_1$. The same construction works inside any subalgebra generated by $1$ and a unit vector $u$ with $u^2=-1$: the powers of $x_0+ux_1$ are monogenic. For $m\ge2$ this gives a family of monogenic functions depending on two of the $m+1$ coordinates, and it shows that the kernel of $D$ is infinite-dimensional on every nonempty open set.
 
@@ -105,7 +105,7 @@ in the sense of distributions; consequently $E$ is a fundamental solution of $D$
 
 *Proof.* Let $\Phi$ be the fundamental solution of the Laplacian in $\mathbb{R}^{m+1}$, normalised so that $\Delta\Phi=\delta_0$; then $D\bar D = \Delta$ gives $D(\bar D\Phi) = \delta_0$, so $E = \bar D\Phi$ is a fundamental solution, and the computation of $\bar D\Phi$ for the radially symmetric $\Phi$ produces the displayed formula. In one dimension $E(x) = \frac{1}{2\pi}\frac{x^{\natural}}{|x|^2}$, which is the classical kernel $1/(2\pi z)$; for $m=2$ the kernel is $\frac{1}{4\pi}\frac{x^{\natural}}{|x|^3}$; and in general the homogeneity is $1-(m+1)$.
 
-**Remark (verification in the quaternionic case).** The identity $DE=0$ off the origin is readily checked by direct computation for $m=2$: with the quaternion multiplication of $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and the finite-difference approximation of $D=\partial_0+e_1\partial_1+e_2\partial_2$, the quantity $DE$ at the points $(0.3,0.4,0.5)$, $(1,-0.7,0.2)$ and $(0.11,0.22,-0.31)$ is zero to machine precision, and $Dx=-1=1-m$ at the same points, as the general formula requires.
+**Remark (verification in the quaternionic case).** The identity $DE=0$ off the origin is readily checked by direct computation for $m=2$: with the quaternion multiplication of $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and the finite-difference approximation of $D=\partial/\partial x_0+e_1\partial/\partial x_1+e_2\partial/\partial x_2$, the quantity $DE$ at the points $(0.3,0.4,0.5)$, $(1,-0.7,0.2)$ and $(0.11,0.22,-0.31)$ is zero to machine precision, and $Dx=-1=1-m$ at the same points, as the general formula requires.
 
 ### Cauchy–Pompeiu and Cauchy
 
@@ -396,10 +396,10 @@ the growth being the power $t_k^{d-s}$, so the integral diverges and $E$ is not 
 **Definition (the fractal Cauchy transform).** Let $d\in(m,m+1)$, let $\Omega$ be a Jordan domain with $d$-summable boundary $\Gamma$, and let $\omega$ be a majorant such that $\omega(t)/t$ is non-increasing and $\omega(t)/t^{d-m}$ is non-decreasing. For $u\in C^{0,\omega}(\Gamma)$ let $u_{\mathrm{ext}}$ be a **Whitney extension** of $u$, continuous on $\mathbb{R}^{m+1}$ with the same modulus of continuity. The **fractal Cauchy transform** of $u$ is
 
 $$
-\mathcal{C}_\Gamma u(x) = \chi_\Omega(x)\,u_{\mathrm{ext}}(x) + \int_{\mathbb{R}^{m+1}}E(x-y)\,\partial_yu_{\mathrm{ext}}(y)\,d\mathcal{L}^{m+1}(y), \qquad x\in\mathbb{R}^{m+1}\setminus\Gamma ,
+\mathcal{C}_\Gamma u(x) = \chi_\Omega(x)\,u_{\mathrm{ext}}(x) + \int_{\mathbb{R}^{m+1}}E(x-y)\,\partial/\partial y\,u_{\mathrm{ext}}(y)\,d\mathcal{L}^{m+1}(y), \qquad x\in\mathbb{R}^{m+1}\setminus\Gamma ,
 $$
 
-in which $\chi_\Omega$ is the characteristic function of the domain and $\partial_yu_{\mathrm{ext}}$ is the Cauchy–Riemann derivative of the extension, which is the density the volume integral integrates against. Both terms are left monogenic in $x$ off $\Gamma$, and $\mathcal{C}_\Gamma u$ vanishes at infinity, the kernel being homogeneous of degree $-m$. The transform is built so that it reduces to the Cauchy transform of the previous subsection when the boundary is regular enough for the boundary integral to exist — on an Ahlfors–David regular surface, for instance — the characteristic term being the Cauchy–Pompeiu boundary term and the volume integral the **Teodorescu transform** $\mathcal{T}u(x)=\int_\Omega E(x-y)u(y)\,d\mathcal{L}^{m+1}(y)$, the Green-type inverse of the Cauchy–Riemann operator on the domain; the sources write that kernel as $E(y-x)$ and their sign accordingly. The construction goes back to Kats, whose method for Riemann boundary-value problems of analytic functions in the plane is the model; the role of the Whitney extension is to make the density defined off the boundary, which is the price of the boundary's having no measure to integrate against.
+in which $\chi_\Omega$ is the characteristic function of the domain and $\partial/\partial y\,u_{\mathrm{ext}}$ is the Cauchy–Riemann derivative of the extension, which is the density the volume integral integrates against. Both terms are left monogenic in $x$ off $\Gamma$, and $\mathcal{C}_\Gamma u$ vanishes at infinity, the kernel being homogeneous of degree $-m$. The transform is built so that it reduces to the Cauchy transform of the previous subsection when the boundary is regular enough for the boundary integral to exist — on an Ahlfors–David regular surface, for instance — the characteristic term being the Cauchy–Pompeiu boundary term and the volume integral the **Teodorescu transform** $\mathcal{T}u(x)=\int_\Omega E(x-y)u(y)\,d\mathcal{L}^{m+1}(y)$, the Green-type inverse of the Cauchy–Riemann operator on the domain; the sources write that kernel as $E(y-x)$ and their sign accordingly. The construction goes back to Kats, whose method for Riemann boundary-value problems of analytic functions in the plane is the model; the role of the Whitney extension is to make the density defined off the boundary, which is the price of the boundary's having no measure to integrate against.
 
 **Remark (why the transform is the right object).** The identity $\mathcal{S}=2\mathcal{C}-I$ on boundary data, or equivalently $2(\mathcal{C}u)^+-u(z)=\mathcal{S}u(z)$, is a formal consequence of the Plemelj formula and holds whether or not the boundary is smooth. The transform $\mathcal{C}_\Gamma$ provides a continuous trace $(\mathcal{C}_\Gamma u)^+$ on a fractal boundary, and it therefore provides a definition of the Hilbert transform
 
@@ -471,7 +471,7 @@ a finite direct sum in which $(x^{\natural})^{\,j}$ denotes left multiplication 
 
 *Proof.* Quoted as standard. Multiplication by $x^{\natural}$ raises the degree by one, and its interaction with $D$ differs from a scalar by terms of the same parity; the monogenic part of $\mathcal{P}_k$ is $\mathcal{M}_k$, the remainder is $x^{\natural}$ times the polynomials of degree $k-1$, and the argument is an induction on the degree of the same triangular kind as the Fischer decomposition for the Laplacian, with $D$ in place of $\Delta$ and $x^{\natural}$ in place of the radial factor. The decomposition is the Clifford analogue of the decomposition of harmonic polynomials into radial layers, with the solid harmonics replaced by the solid spherical monogenics.
 
-**Remark (the multiplier and the sign convention).** The operator that raises the degree in the decomposition is the conjugate variable $x^{\natural}$, not $x$, and this is forced by the sign convention $D=\partial_0+\sum_{i\ge1}e_i\partial_i$ with $D\bar D=\Delta$: in the complex case $m=1$, where the monogenic polynomials of degree $d$ are the multiples of $z^d$, the piece $(x^{\natural})^{\,j}\mathcal{M}_{k-j}$ is the complex line spanned by $\bar z^{\,j}z^{k-j}$, and the $k+1$ lines of the decomposition are exactly the standard monomial basis of the homogeneous polynomials of degree $k$. The operator $\bar D=\partial_0-\sum_{i\ge1}e_i\partial_i$ plays the mirror role, and the decomposition can equally be written with $\bar D$ and the powers of $x$.
+**Remark (the multiplier and the sign convention).** The operator that raises the degree in the decomposition is the conjugate variable $x^{\natural}$, not $x$, and this is forced by the sign convention $D=\partial/\partial x_0+\sum_{i\ge1}e_i\partial/\partial x_i$ with $D\bar D=\Delta$: in the complex case $m=1$, where the monogenic polynomials of degree $d$ are the multiples of $z^d$, the piece $(x^{\natural})^{\,j}\mathcal{M}_{k-j}$ is the complex line spanned by $\bar z^{\,j}z^{k-j}$, and the $k+1$ lines of the decomposition are exactly the standard monomial basis of the homogeneous polynomials of degree $k$. The operator $\bar D=\partial/\partial x_0-\sum_{i\ge1}e_i\partial/\partial x_i$ plays the mirror role, and the decomposition can equally be written with $\bar D$ and the powers of $x$.
 
 **Corollary (the dimension of the pieces).** The Fischer decomposition reduces the computation of $\dim\mathcal{M}_k$ to a recursion with initial value $\dim\mathcal{M}_0=\dim\mathcal{S}$; explicitly, for $k\ge1$,
 
@@ -515,7 +515,7 @@ D_\lambda=D+\lambda .
 $$
 The shift is of order zero, so $D_\lambda$ has the same principal symbol as $D$: the ellipticity, the symbol, and the order of the singularity of the kernel are those of $D$, and the two operators differ in a lower-order term alone. Their function theories are parallel rather than nested, and for $\lambda\neq0$ they meet only at the origin: if $Df=0$ and $D_\lambda f=0$ simultaneously then $\lambda f=0$.
 
-**Theorem (the Helmholtz splitting).** Let $\lambda\neq0$ and let $D=\sum_{k=1}^ne_k\partial_k$ with $e_k^2=-1$ for every $k$, so that $D^2=-\Delta$. Then
+**Theorem (the Helmholtz splitting).** Let $\lambda\neq0$ and let $D=\sum_{k=1}^ne_k\partial/\partial x_k$ with $e_k^2=-1$ for every $k$, so that $D^2=-\Delta$. Then
 $$
 D_\lambda D_{-\lambda}=D^2-\lambda^2=-(\Delta+\lambda^2),
 \qquad
@@ -553,7 +553,7 @@ The theory above rests on a single operator. A second refinement of the Clifford
 
 The construction starts from the Euclidean data. Let $N=4n$, let $\mathrm{Cl}_{0,N}$ be generated by $e_1,\dots,e_N$ with $e_ie_j+e_je_i=-2\delta_{ij}$, and let the quaternions act as central scalars, so that the values lie in $\mathbb{H}_N=\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,N}$; the variable is the pure vector $X=\sum_{i=1}^{N}e_ix_i$ and the operator is the vector part of the corpus's $D$,
 $$
-\partial_X=\sum_{i=1}^{N}e_i\partial_{x_i},\qquad \partial_X^2=-\Delta_N ,
+\partial/\partial X=\sum_{i=1}^{N}e_i\partial/\partial x_i,\qquad \partial^2/\partial X^2=-\Delta_N ,
 $$
 the sign being the one of *Regularity and the Cauchy–Riemann Operator* for the part of $D$ assembled from the generators (the corpus's $D\bar D=\Delta$ is unaffected; the squared vector part is $-\Delta$, as in the kernel computation of the Cauchy section). Group the generators in fours and put, for $l=1,\dots,n$,
 $$
@@ -564,17 +564,17 @@ X_2&=\sum_{l=1}^{n}\bigl(e_{4l-3}x_{4l-1}+e_{4l-2}x_{4l}-e_{4l-1}x_{4l-3}-e_{4l}
 X_3&=\sum_{l=1}^{n}\bigl(e_{4l-3}x_{4l}-e_{4l-2}x_{4l-1}+e_{4l-1}x_{4l-2}-e_{4l}x_{4l-3}\bigr).
 \end{aligned}
 $$
-The first is the ordinary Clifford vector; the other three are its companions under the quaternionic sign changes (the *twisted* vectors of the Hermitean literature, a different use of the word from the twisted operator of the next section). The four are Fischer duals of the four operators $\partial_{X_r}$ and satisfy
+The first is the ordinary Clifford vector; the other three are its companions under the quaternionic sign changes (the *twisted* vectors of the Hermitean literature, a different use of the word from the twisted operator of the next section). The four are Fischer duals of the four operators $\partial/\partial X_r$ and satisfy
 $$
 X_r^2=-|X|^2,\qquad \{X_r,X_s\}=X_rX_s+X_sX_r=0 \quad (r\neq s),
 $$
 with the same two relations for the operators in place of the vectors. The **Hermitean variables** and the **Hermitean Dirac operators** are the four invertible combinations
 $$
 \begin{aligned}
-\partial_{Z_0}&=\tfrac{1}{16}\bigl(\partial_{X_0}+i\,\partial_{X_1}+j\,\partial_{X_2}+k\,\partial_{X_3}\bigr),&
-\partial_{Z_1}&=\tfrac{1}{16}\bigl(\partial_{X_0}+i\,\partial_{X_1}-j\,\partial_{X_2}-k\,\partial_{X_3}\bigr),\\
-\partial_{Z_2}&=\tfrac{1}{16}\bigl(\partial_{X_0}-i\,\partial_{X_1}+j\,\partial_{X_2}-k\,\partial_{X_3}\bigr),&
-\partial_{Z_3}&=\tfrac{1}{16}\bigl(\partial_{X_0}-i\,\partial_{X_1}-j\,\partial_{X_2}+k\,\partial_{X_3}\bigr),
+\partial/\partial Z_0&=\tfrac{1}{16}\bigl(\partial/\partial X_0+i\,\partial/\partial X_1+j\,\partial/\partial X_2+k\,\partial/\partial X_3\bigr),&
+\partial/\partial Z_1&=\tfrac{1}{16}\bigl(\partial/\partial X_0+i\,\partial/\partial X_1-j\,\partial/\partial X_2-k\,\partial/\partial X_3\bigr),\\
+\partial/\partial Z_2&=\tfrac{1}{16}\bigl(\partial/\partial X_0-i\,\partial/\partial X_1+j\,\partial/\partial X_2-k\,\partial/\partial X_3\bigr),&
+\partial/\partial Z_3&=\tfrac{1}{16}\bigl(\partial/\partial X_0-i\,\partial/\partial X_1-j\,\partial/\partial X_2+k\,\partial/\partial X_3\bigr),
 \end{aligned}
 $$
 with the variables $Z_r$ built from the $X_r$ by the *same* four sign patterns. The factor $\tfrac1{16}$ is the normalisation that makes the Laplacian split below; the patterns are the rows of the Hadamard matrix with $SS^{\mathsf T}=4I_4$ and $\det S=-16$, which is what makes the two descriptions equivalent.
@@ -586,15 +586,15 @@ $$
 the sum running over the blades $e_A$ of $\mathrm{Cl}_{0,N}$, so that a vector is anti-self-adjoint, $X_r^\dagger=-X_r$, and the four operators are the conjugates of one another in pairs. With this involution the Hermitean variables reproduce the norm of $X$ and the four operators *split* the Laplacian:
 $$
 \sum_{r=0}^{3}Z_rZ_r^\dagger=\sum_{r=0}^{3}Z_r^\dagger Z_r=16|X|^2,\qquad
-\Delta_N=16\sum_{r=0}^{3}\partial_{Z_r}\partial_{Z_r}^\dagger=16\sum_{r=0}^{3}\partial_{Z_r}^\dagger\partial_{Z_r}.
+\Delta_N=16\sum_{r=0}^{3}\partial/\partial Z_r\,(\partial/\partial Z_r)^\dagger=16\sum_{r=0}^{3}(\partial/\partial Z_r)^\dagger\,\partial/\partial Z_r.
 $$
 The second display is the Hermitean counterpart of $D\bar D=\bar DD=\Delta$: the one second-order operator of the Euclidean theory is now the sum of four first-order squares. Note that the involution entering it is *not* the $L^2$ adjoint; it is the algebra anti-involution above, under which a 1-vector changes sign, and the identity holds with that sign.
 
 **Definition.** Let $\Omega\subseteq\mathbb{R}^{4n}$ be open. A $C^1$ function $f:\Omega\to\mathbb{H}_N$ is **q-Hermitean monogenic** in $\Omega$ when
 $$
-\partial_{Z_0}f=\partial_{Z_1}f=\partial_{Z_2}f=\partial_{Z_3}f=0,
+\partial/\partial Z_0\,f=\partial/\partial Z_1\,f=\partial/\partial Z_2\,f=\partial/\partial Z_3\,f=0,
 $$
-equivalently, and by the same four sign patterns, when $\partial_{X_0}f=\partial_{X_1}f=\partial_{X_2}f=\partial_{X_3}f=0$. The two systems are equivalent because the sign matrix relating them is invertible; there is no claim that either equation alone defines the class.
+equivalently, and by the same four sign patterns, when $\partial/\partial X_0\,f=\partial/\partial X_1\,f=\partial/\partial X_2\,f=\partial/\partial X_3\,f=0$. The two systems are equivalent because the sign matrix relating them is invertible; there is no claim that either equation alone defines the class.
 
 ### The Circulant Matrix Device
 
@@ -604,18 +604,18 @@ F_r(X)=-\frac{X_r}{a_{4n}|X|^{4n}},\qquad a_{4n}=\frac{2\pi^{2n}}{\Gamma(2n)}=|S
 $$
 the area of the unit sphere in $\mathbb{R}^{4n}$. This is the corpus's Cauchy kernel $\omega_m^{-1}x^{\natural}|x|^{-m-1}$ for the pure vector variable, where $\bar X_r=-X_r$ and the sphere is $S^{4n-1}$; the homogeneity is $1-4n$. It satisfies
 $$
-\partial_{X_r}F_r=\delta,\qquad \partial_{X_r}F_s+\partial_{X_s}F_r=0\quad(r\neq s),
+\partial/\partial X_r\,F_r=\delta,\qquad \partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r=0\quad(r\neq s),
 $$
 the second identity being the operator form of $\{X_r,X_s\}=0$. The **Hermitean kernels** are
 $$
 E_r(Z)=\frac{Z_r^\dagger}{a_{4n}|Z|^{4n}} .
 $$
-The kernel $E_r$ is **not** a fundamental solution of $\partial_{Z_r}$; the four kernels are needed together, and the object that carries the fundamental solution is a matrix. With the circulant matrices
+The kernel $E_r$ is **not** a fundamental solution of $\partial/\partial Z_r$; the four kernels are needed together, and the object that carries the fundamental solution is a matrix. With the circulant matrices
 $$
-D=\begin{pmatrix}\partial_{Z_0}&\partial_{Z_3}&\partial_{Z_2}&\partial_{Z_1}\\
-\partial_{Z_1}&\partial_{Z_0}&\partial_{Z_3}&\partial_{Z_2}\\
-\partial_{Z_2}&\partial_{Z_1}&\partial_{Z_0}&\partial_{Z_3}\\
-\partial_{Z_3}&\partial_{Z_2}&\partial_{Z_1}&\partial_{Z_0}\end{pmatrix},
+D=\begin{pmatrix}\partial/\partial Z_0&\partial/\partial Z_3&\partial/\partial Z_2&\partial/\partial Z_1\\
+\partial/\partial Z_1&\partial/\partial Z_0&\partial/\partial Z_3&\partial/\partial Z_2\\
+\partial/\partial Z_2&\partial/\partial Z_1&\partial/\partial Z_0&\partial/\partial Z_3\\
+\partial/\partial Z_3&\partial/\partial Z_2&\partial/\partial Z_1&\partial/\partial Z_0\end{pmatrix},
 \qquad
 E=\begin{pmatrix}E_0&E_3&E_2&E_1\\ E_1&E_0&E_3&E_2\\ E_2&E_1&E_0&E_3\\ E_3&E_2&E_1&E_0\end{pmatrix},
 $$
@@ -623,9 +623,9 @@ one has
 $$
 D^{\mathsf T}E=\delta I ,
 $$
-so that $E$ is a fundamental solution of the matrix Dirac operator $D^{\mathsf T}$. The $(0,0)$ entry is the combination $\partial_{Z_0}E_0+\partial_{Z_1}E_1+\partial_{Z_2}E_2+\partial_{Z_3}E_3$, and it evaluates to
+so that $E$ is a fundamental solution of the matrix Dirac operator $D^{\mathsf T}$. The $(0,0)$ entry is the combination $\partial/\partial Z_0\,E_0+\partial/\partial Z_1\,E_1+\partial/\partial Z_2\,E_2+\partial/\partial Z_3\,E_3$, and it evaluates to
 $$
-\partial_{Z_0}E_0+\partial_{Z_1}E_1+\partial_{Z_2}E_2+\partial_{Z_3}E_3
+\partial/\partial Z_0\,E_0+\partial/\partial Z_1\,E_1+\partial/\partial Z_2\,E_2+\partial/\partial Z_3\,E_3
 =\tfrac{1}{16}\bigl(4\,\delta(X_0)+4\,\delta(X_1)+4\,\delta(X_2)+4\,\delta(X_3)\bigr)=\delta(Z),
 $$
 a single delta: the four Euclidean deltas coincide, because the vectors $X_r$ are related to $X$ by an orthogonal change of variables, and the factor of four in front of each is the contribution of the four rows of the Hadamard matrix. The same calculus gives the matrix form of the Laplacian split,
@@ -646,13 +646,13 @@ $$
 $$
 and, when the second integral vanishes because $G$ is Q-Hermitean monogenic, the **Q-Hermitean Cauchy integral formula** with the same right-hand side. Applied to the diagonal matrix whose four diagonal entries coincide with a single function $g$, the two statements become the corresponding formulae for $g$, and the kernel $E$ is the quaternionic Hermitean Cauchy kernel. In a special case the representation reduces to the **Martinelli–Bochner type formula**
 $$
-\sum_{s=0}^{3}\Bigl[\int_{\partial\Gamma}E_s(Z-V)N_s(Z)g(X)\,dS(X)-\int_{\Gamma}E_s(Z-V)\bigl(\partial_{Z_s}g(X)\bigr)dV(X)\Bigr]=g(Y),
+\sum_{s=0}^{3}\Bigl[\int_{\partial\Gamma}E_s(Z-V)N_s(Z)g(X)\,dS(X)-\int_{\Gamma}E_s(Z-V)\bigl(\partial/\partial Z_s\,g(X)\bigr)dV(X)\Bigr]=g(Y),
 $$
 the integral representation of several complex variables, which is the classical Cauchy formula when $n=1$. The complex theory follows the same plan with two operators and a circulant $(2\times2)$ matrix, and there Hermitean monogenicity is equivalent to holomorphy in the underlying complex variables in particular cases — another way in which the refinement is a statement about the *operator*, not about a new class of functions.
 
 **Remark (what the refinement is, and is not).** Three distinct notions now carry the word *monogenic*, and they must not be run together: the corpus's $Df=0$ of this article and of *Regularity and the Cauchy–Riemann Operator*; the Hermitean monogenicity above, which is the simultaneous vanishing of two or four operators; and the nonlinear monogenicity of the algebrodynamics programme, where the equation is nonlinear and the solutions are not a linear class. The Hermitean refinement belongs to Clifford analysis and is function-theoretic: its results are integral representations, boundary-value problems and the matrix function theory built around them, not a physical model, and the corpus uses it as the analytic reference behind the quaternionic integral representations rather than as a source of physics. Its relation to the corpus is through the Cauchy theory: the Cauchy–Pompeiu and Cauchy formulae of the Cauchy section are the one-operator case, and the matrix formulae above are what the same theorems become when the operator is split.
 
-**Remark (verification).** The identities above were recomputed in $\mathrm{Cl}_{0,4}$ with quaternion coefficients, in the model $\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,4}$. The coefficient matrices of the four vectors are column-orthonormal, whence $X_r^2=-|X|^2$ and $\{X_r,X_s\}=0$ for all six pairs; the corresponding operator identities give $\partial_{X_r}^2=-\Delta_4$ and $\{\partial_{X_r},\partial_{X_s}\}=0$. The norm identity $\sum_rZ_rZ_r^\dagger=16|X|^2$ and the split $\Delta_4=16\sum_r\partial_{Z_r}\partial_{Z_r}^\dagger=16\sum_r\partial_{Z_r}^\dagger\partial_{Z_r}$ both hold in that model, the second only when the involution is the composition of the two conjugations, as stated above; with the $\mathbb{H}$-conjugation alone the split comes out with the opposite sign, which is the one place in this section where a convention can silently invert a result. The Hadamard matrix has $SS^{\mathsf T}=4I_4$ and $\det S=-16$, so the Hermitean and Euclidean null systems are equivalent. In the $(0,0)$ entry of $D^{\mathsf T}E$, the sixteen cross terms cancel in antisymmetric pairs and the diagonal terms contribute $\delta$ with coefficient one, giving $\delta$ and hence $\delta(Z)$ after the factor $\tfrac1{16}$; the identity $\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$, on which the cancellation rests, is the operator form of the anticommutation verified above.
+**Remark (verification).** The identities above were recomputed in $\mathrm{Cl}_{0,4}$ with quaternion coefficients, in the model $\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,4}$. The coefficient matrices of the four vectors are column-orthonormal, whence $X_r^2=-|X|^2$ and $\{X_r,X_s\}=0$ for all six pairs; the corresponding operator identities give $\partial^2/\partial X_r^2=-\Delta_4$ and $\{\partial/\partial X_r,\partial/\partial X_s\}=0$. The norm identity $\sum_rZ_rZ_r^\dagger=16|X|^2$ and the split $\Delta_4=16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^\dagger=16\sum_r(\partial/\partial Z_r)^\dagger\,\partial/\partial Z_r$ both hold in that model, the second only when the involution is the composition of the two conjugations, as stated above; with the $\mathbb{H}$-conjugation alone the split comes out with the opposite sign, which is the one place in this section where a convention can silently invert a result. The Hadamard matrix has $SS^{\mathsf T}=4I_4$ and $\det S=-16$, so the Hermitean and Euclidean null systems are equivalent. In the $(0,0)$ entry of $D^{\mathsf T}E$, the sixteen cross terms cancel in antisymmetric pairs and the diagonal terms contribute $\delta$ with coefficient one, giving $\delta$ and hence $\delta(Z)$ after the factor $\tfrac1{16}$; the identity $\partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r=0$ for $r\neq s$, on which the cancellation rests, is the operator form of the anticommutation verified above.
 
 ## Modules, Twisting and the Boundary to Part II
 
@@ -664,7 +664,7 @@ the integral representation of several complex variables, which is the classical
 
 ## Summary
 
-Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\partial_0+\sum_{i=1}^me_i\partial_i$ with $e_ie_j+e_je_i=-2\delta_{ij}$; the variable ranges over the vector space $\mathbb{R}^{m+1}$ and the values lie in the Clifford algebra $\mathrm{Cl}_{0,m}$ or a Clifford module. The operator satisfies $D\bar D=\bar DD=\Delta$ and is elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ invertible for $\xi\neq0$ and inverse $\bar\sigma(\xi)/|\xi|^2$. The functions annihilated by $D$ are the monogenic, or left regular, functions; they form a real vector space closed under right multiplication by constants but not under products, and they include the powers $z^k$ of the complex variable $z=x_0+e_1x_1$ as well as the exponential-type solutions generated by isotropic covectors. Because every monogenic function is harmonic componentwise, it is real-analytic, satisfies the mean value property, the maximum principle, Liouville's theorem and the identity theorem. The fundamental solution is the Cauchy kernel $E(x)=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ with $\omega_m=|S^m|$, which reduces to $1/(2\pi z)$ in the complex case and is the kernel of the Cauchy–Pompeiu formula and of the Cauchy integral formula; the boundary Cauchy transform is the orthogonal projection onto the monogenic Hardy space. The homogeneous monogenic polynomials $\mathcal{M}_k$ are finite-dimensional, pairwise orthogonal by degree, and organise all polynomials through the Fischer decomposition $\mathcal{P}_k=\bigoplus_{j=0}^k (x^{\natural})^{\,j}\mathcal{M}_{k-j}$; the polymonogenic functions, the solutions of $D^kf=0$, are described by the Almansi representation $f=\sum_{j=0}^{k-1}(x^{\natural})^{\,j}f_j$ with $f_j$ monogenic, the Clifford counterpart of the Almansi theorem for polyharmonic functions. The **shifted** operator $D_\lambda=D+\lambda$ is the other way the Clifford structure builds a second-order theory out of the first-order one: its square factorises the Helmholtz operator, $D_\lambda D_{-\lambda}=-(\Delta+\lambda^2)$, the Helmholtz space splits with the explicit projections $f_\pm=\mp(1/2\lambda)D_{\mp\lambda}f$ as $\ker(\Delta+\lambda^2)=\ker D_\lambda\oplus\ker D_{-\lambda}$, and the kernel of $D_\lambda$ is one application of the conjugate operator to the Helmholtz kernel, the shift leaving the normalisation of the kernel unchanged. The **Hermitean** refinement keeps the algebra and splits the operator: in $\mathbb{R}^{4n}$ the four Hermitean Dirac operators $\partial_{Z_r}=\tfrac1{16}(\partial_{X_0}\pm i\partial_{X_1}\pm j\partial_{X_2}\pm k\partial_{X_3})$ split the Laplacian, $\Delta_{4n}=16\sum_r\partial_{Z_r}\partial_{Z_r}^\dagger$, their simultaneous null solutions are the q-Hermitean monogenic functions, defined by $\partial_{Z_0}f=\dots=\partial_{Z_3}f=0$ and equivalently by the same system for the four Euclidean operators, and the four Euclidean Cauchy kernels combine into a circulant matrix $E$ that is the fundamental solution of the matrix operator $D^{\mathsf T}$, giving the Hermitean Clifford–Stokes, Borel–Pompeiu and Cauchy formulae and, in a special case, the Martinelli–Bochner formula. The twisted operator on a Clifford module, the spin-geometric operator on a spin manifold and the index theory of both are Part II's and are cited rather than developed. The boundary theory is refined once more by the measure-theoretic version: on a boundary of finite $m$-dimensional Hausdorff measure the Cauchy transform is still a boundary integral, now against Federer's normal, and on an Ahlfors–David regular surface the Plemelj calculus holds with the involution $\mathcal{S}$ and the complementary projections $P^\pm=\tfrac12(I\pm\mathcal{S})$, with $\mathcal{S}$ of norm one in the norm associated to the splitting and with the embedding of the Hölder classes into the spaces $M^l,M^r$ compact; on a rectifiable $\lvert F\rvert$-regular surface the transform is defined with the weight $\lvert F\rvert$ and the weighted Plemelj formula carries $F$ in its boundary term, the existence of the continuous limit values being equivalent to the uniform convergence of the truncated integral; on a $d$-summable fractal boundary there is no boundary measure to integrate against, the transform is rebuilt from the Teodorescu transform and a Whitney extension, the fractal Hilbert transform is defined by the trace of the new transform, a density of class $C^{0,\alpha}$ with $(m+1)\alpha>d$ gains an exponent $\beta<((m+1)\alpha-d)/(m+1-d)$, and the approximate dimension replaces the Minkowski dimension in the solvability condition $\alpha>\dim_a\Gamma/(m+1)$ of the jump problem.
+Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\partial/\partial x_0+\sum_{i=1}^me_i\partial/\partial x_i$ with $e_ie_j+e_je_i=-2\delta_{ij}$; the variable ranges over the vector space $\mathbb{R}^{m+1}$ and the values lie in the Clifford algebra $\mathrm{Cl}_{0,m}$ or a Clifford module. The operator satisfies $D\bar D=\bar DD=\Delta$ and is elliptic, with symbol $\sigma(\xi)=\xi_0+\sum_ie_i\xi_i$ invertible for $\xi\neq0$ and inverse $\bar\sigma(\xi)/|\xi|^2$. The functions annihilated by $D$ are the monogenic, or left regular, functions; they form a real vector space closed under right multiplication by constants but not under products, and they include the powers $z^k$ of the complex variable $z=x_0+e_1x_1$ as well as the exponential-type solutions generated by isotropic covectors. Because every monogenic function is harmonic componentwise, it is real-analytic, satisfies the mean value property, the maximum principle, Liouville's theorem and the identity theorem. The fundamental solution is the Cauchy kernel $E(x)=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ with $\omega_m=|S^m|$, which reduces to $1/(2\pi z)$ in the complex case and is the kernel of the Cauchy–Pompeiu formula and of the Cauchy integral formula; the boundary Cauchy transform is the orthogonal projection onto the monogenic Hardy space. The homogeneous monogenic polynomials $\mathcal{M}_k$ are finite-dimensional, pairwise orthogonal by degree, and organise all polynomials through the Fischer decomposition $\mathcal{P}_k=\bigoplus_{j=0}^k (x^{\natural})^{\,j}\mathcal{M}_{k-j}$; the polymonogenic functions, the solutions of $D^kf=0$, are described by the Almansi representation $f=\sum_{j=0}^{k-1}(x^{\natural})^{\,j}f_j$ with $f_j$ monogenic, the Clifford counterpart of the Almansi theorem for polyharmonic functions. The **shifted** operator $D_\lambda=D+\lambda$ is the other way the Clifford structure builds a second-order theory out of the first-order one: its square factorises the Helmholtz operator, $D_\lambda D_{-\lambda}=-(\Delta+\lambda^2)$, the Helmholtz space splits with the explicit projections $f_\pm=\mp(1/2\lambda)D_{\mp\lambda}f$ as $\ker(\Delta+\lambda^2)=\ker D_\lambda\oplus\ker D_{-\lambda}$, and the kernel of $D_\lambda$ is one application of the conjugate operator to the Helmholtz kernel, the shift leaving the normalisation of the kernel unchanged. The **Hermitean** refinement keeps the algebra and splits the operator: in $\mathbb{R}^{4n}$ the four Hermitean Dirac operators $\partial/\partial Z_r=\tfrac1{16}(\partial/\partial X_0\pm i\partial/\partial X_1\pm j\partial/\partial X_2\pm k\partial/\partial X_3)$ split the Laplacian, $\Delta_{4n}=16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^\dagger$, their simultaneous null solutions are the q-Hermitean monogenic functions, defined by $\partial/\partial Z_0\,f=\dots=\partial/\partial Z_3\,f=0$ and equivalently by the same system for the four Euclidean operators, and the four Euclidean Cauchy kernels combine into a circulant matrix $E$ that is the fundamental solution of the matrix operator $D^{\mathsf T}$, giving the Hermitean Clifford–Stokes, Borel–Pompeiu and Cauchy formulae and, in a special case, the Martinelli–Bochner formula. The twisted operator on a Clifford module, the spin-geometric operator on a spin manifold and the index theory of both are Part II's and are cited rather than developed. The boundary theory is refined once more by the measure-theoretic version: on a boundary of finite $m$-dimensional Hausdorff measure the Cauchy transform is still a boundary integral, now against Federer's normal, and on an Ahlfors–David regular surface the Plemelj calculus holds with the involution $\mathcal{S}$ and the complementary projections $P^\pm=\tfrac12(I\pm\mathcal{S})$, with $\mathcal{S}$ of norm one in the norm associated to the splitting and with the embedding of the Hölder classes into the spaces $M^l,M^r$ compact; on a rectifiable $\lvert F\rvert$-regular surface the transform is defined with the weight $\lvert F\rvert$ and the weighted Plemelj formula carries $F$ in its boundary term, the existence of the continuous limit values being equivalent to the uniform convergence of the truncated integral; on a $d$-summable fractal boundary there is no boundary measure to integrate against, the transform is rebuilt from the Teodorescu transform and a Whitney extension, the fractal Hilbert transform is defined by the trace of the new transform, a density of class $C^{0,\alpha}$ with $(m+1)\alpha>d$ gains an exponent $\beta<((m+1)\alpha-d)/(m+1-d)$, and the approximate dimension replaces the Minkowski dimension in the solvability condition $\alpha>\dim_a\Gamma/(m+1)$ of the jump problem.
 
 ## Summary of Notation
 
@@ -676,8 +676,8 @@ Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\pa
 | $x=x_0+\sum_ix_ie_i$ | Vector variable in $\mathbb{R}^{m+1}$ |
 | $x^{\natural} = x_0-\sum_ix_ie_i$ | Clifford conjugation; $x x^{\natural}=|x|^2$ |
 | $\mathcal{S}$ | Clifford module of values (spinor module in the classical case) |
-| $D=\sum_{\mu=0}^me_\mu\partial_\mu$ | Cauchy–Riemann operator (classically, Dirac operator) |
-| $\bar D=\partial_0-\sum_ie_i\partial_i$ | Conjugate operator; $D\bar D=\bar DD=\Delta$ |
+| $D=\sum_{\mu=0}^me_\mu\partial/\partial x_\mu$ | Cauchy–Riemann operator (classically, Dirac operator) |
+| $\bar D=\partial/\partial x_0-\sum_ie_i\partial/\partial x_i$ | Conjugate operator; $D\bar D=\bar DD=\Delta$ |
 | $\sigma(\xi)$, $\bar\sigma(\xi)$ | Symbol and conjugate symbol |
 | $Df=0$, $fD=0$ | Left and right monogenicity |
 | $E(x)=\omega_m^{-1}x^{\natural}|x|^{-m-1}$ | Cauchy kernel, $DE=\delta_0$ |
@@ -690,10 +690,10 @@ Clifford analysis is the function theory of the Cauchy–Riemann operator $D=\pa
 | $D_\lambda=D+\lambda$ | Shifted operator ($\lambda$ central, constant); $D_\lambda D_{-\lambda}=-(\Delta+\lambda^2)$ |
 | $E_\lambda=D_{-\lambda}\Phi_\lambda$ | Kernel of $D_\lambda$, from a fundamental solution of $-(\Delta+\lambda^2)$ |
 | $X_0,\dots,X_3$ | The four Euclidean vectors; $X_r^2=-\lvert X\rvert^2$, $\{X_r,X_s\}=0$ |
-| $\partial_{X_0},\dots,\partial_{X_3}$ | Their Fischer duals; $\partial_{X_r}^2=-\Delta_{4n}$ |
+| $\partial/\partial X_0,\dots,\partial/\partial X_3$ | Their Fischer duals; $\partial^2/\partial X_r^2=-\Delta_{4n}$ |
 | $Z_0,\dots,Z_3$ | Hermitean variables, the four $X_0\pm iX_1\pm jX_2\pm kX_3$ |
-| $\partial_{Z_0},\dots,\partial_{Z_3}$ | Hermitean Dirac operators; $\Delta_{4n}=16\sum_r\partial_{Z_r}\partial_{Z_r}^\dagger$ |
-| q-Hermitean monogenic | $\partial_{Z_0}f=\partial_{Z_1}f=\partial_{Z_2}f=\partial_{Z_3}f=0$ |
+| $\partial/\partial Z_0,\dots,\partial/\partial Z_3$ | Hermitean Dirac operators; $\Delta_{4n}=16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^\dagger$ |
+| q-Hermitean monogenic | $\partial/\partial Z_0\,f=\partial/\partial Z_1\,f=\partial/\partial Z_2\,f=\partial/\partial Z_3\,f=0$ |
 | $F_r$, $a_{4n}$ | Euclidean Hermitean kernels $F_r=-X_r/(a_{4n}\lvert X\rvert^{4n})$; $a_{4n}=\lvert S^{4n-1}\rvert$ |
 | $E_r$, $E$, $D$, $N$ | Hermitean kernels $E_r=Z_r^\dagger/(a_{4n}\lvert Z\rvert^{4n})$; circulant matrices, $D^{\mathsf T}E=\delta I$ |
 | $\nu_B$, $\mathcal{H}^m$, $\mathcal{L}^{m+1}$ | Federer exterior normal of a boundary; Hausdorff boundary measure; Lebesgue measure |

@@ -22,7 +22,7 @@ $$
 
 the quaternion units $i,j,k$ commute with the generators and are the coefficients of the Hermitian
 structure. The Euclidean variable is the pure vector $X=\sum_{a=1}^{N}e_ax_a$ and the Euclidean
-operator is $\partial_X=\sum_{a=1}^{N}e_a\partial_{x_a}$, with $\partial_X^2=-\Delta_N$.
+operator is $\partial/\partial X=\sum_{a=1}^{N}e_a\partial/\partial x_a$, with $\partial^2/\partial X^2=-\Delta_N$.
 
 This article fixes the four twisted Euclidean vectors, the four Hermitian variables and the four
 Hermitian Dirac operators, defines the Hermitian conjugation and states the split of the Laplacian,
@@ -39,11 +39,11 @@ Clifford Modules with Inner Conjugation*.
 
 ### The Euclidean Data
 
-**Definition.** The Euclidean operator is $\partial_X=\sum_{a=1}^{N}e_a\partial_{x_a}$, the vector
+**Definition.** The Euclidean operator is $\partial/\partial X=\sum_{a=1}^{N}e_a\partial/\partial x_a$, the vector
 part of the Cauchy–Riemann operator of *The Dirac Operator*; it is elliptic, with
 
 $$
-\partial_X^2 = -\Delta_N , \qquad \Delta_N = \sum_{a=1}^{N}\partial_{x_a}^2 ,
+\partial^2/\partial X^2 = -\Delta_N , \qquad \Delta_N = \sum_{a=1}^{N}\partial^2/\partial x_a^2 ,
 $$
 
 the sign being the one of the corpus for the part of the operator assembled from the generators (the
@@ -64,7 +64,7 @@ $$
 The first is the ordinary Clifford vector; the other three are its companions under the quaternionic
 sign changes, the **twisted vectors** of the Hermitian literature (a different use of the word
 *twisted* from the twisted operator of *Clifford Modules and the Twisted Cauchy–Riemann Operator*).
-The four operators $\partial_{X_r}$ are formed by the same patterns.
+The four operators $\partial/\partial X_r$ are formed by the same patterns.
 
 **Proposition (the relations of the twisted data).** The twisted vectors and their operators satisfy
 
@@ -72,7 +72,7 @@ $$
 X_r^2=-|X|^2 , \qquad \{X_r,X_s\}=X_rX_s+X_sX_r=0 \quad (r\neq s),
 $$
 $$
-\partial_{X_r}^2=-\Delta_N , \qquad \{\partial_{X_r},\partial_{X_s}\}=0 \quad (r\neq s).
+\partial^2/\partial X_r^2=-\Delta_N , \qquad \{\partial/\partial X_r,\partial/\partial X_s\}=0 \quad (r\neq s).
 $$
 
 *Proof.* The coefficient matrices of the four vectors are column-orthonormal, as the Hadamard sign
@@ -88,10 +88,10 @@ invertible combinations built from the twisted data by the same four sign patter
 
 $$
 \begin{aligned}
-\partial_{Z_0}&=\tfrac{1}{16}\bigl(\partial_{X_0}+i\,\partial_{X_1}+j\,\partial_{X_2}+k\,\partial_{X_3}\bigr),&
-\partial_{Z_1}&=\tfrac{1}{16}\bigl(\partial_{X_0}+i\,\partial_{X_1}-j\,\partial_{X_2}-k\,\partial_{X_3}\bigr),\\
-\partial_{Z_2}&=\tfrac{1}{16}\bigl(\partial_{X_0}-i\,\partial_{X_1}+j\,\partial_{X_2}-k\,\partial_{X_3}\bigr),&
-\partial_{Z_3}&=\tfrac{1}{16}\bigl(\partial_{X_0}-i\,\partial_{X_1}-j\,\partial_{X_2}+k\,\partial_{X_3}\bigr),
+\partial/\partial Z_0&=\tfrac{1}{16}\bigl(\partial/\partial X_0+i\,\partial/\partial X_1+j\,\partial/\partial X_2+k\,\partial/\partial X_3\bigr),&
+\partial/\partial Z_1&=\tfrac{1}{16}\bigl(\partial/\partial X_0+i\,\partial/\partial X_1-j\,\partial/\partial X_2-k\,\partial/\partial X_3\bigr),\\
+\partial/\partial Z_2&=\tfrac{1}{16}\bigl(\partial/\partial X_0-i\,\partial/\partial X_1+j\,\partial/\partial X_2-k\,\partial/\partial X_3\bigr),&
+\partial/\partial Z_3&=\tfrac{1}{16}\bigl(\partial/\partial X_0-i\,\partial/\partial X_1-j\,\partial/\partial X_2+k\,\partial/\partial X_3\bigr),
 \end{aligned}
 $$
 
@@ -118,15 +118,15 @@ $$
 
 the sum running over the blades $e_A$ of $\mathrm{Cl}_{0,N}$, where $\bar\lambda_A$ is the
 quaternionic conjugate and $e_A^{\natural}$ the Clifford conjugate. Under it a vector is
-anti-self-adjoint, $X_r^{*}=-X_r$, and consequently $\partial_{X_r}^{\dagger}=-\partial_{X_r}$.
+anti-self-adjoint, $X_r^{*}=-X_r$, and consequently $(\partial/\partial X_r)^{\dagger}=-\partial/\partial X_r$.
 
 **Theorem (the split of the Laplacian).** With the Hermitian conjugation,
 
 $$
 \sum_{r=0}^{3}Z_rZ_r^{*} = \sum_{r=0}^{3}Z_r^{*}Z_r = 16\,|X|^2 ,
 \qquad
-\Delta_N = 16\sum_{r=0}^{3}\partial_{Z_r}\partial_{Z_r}^{\dagger}
-= 16\sum_{r=0}^{3}\partial_{Z_r}^{\dagger}\partial_{Z_r} .
+\Delta_N = 16\sum_{r=0}^{3}\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}
+= 16\sum_{r=0}^{3}(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r .
 $$
 
 *Proof.* The Hadamard patterns are orthogonal with $SS^{\mathsf T}=4I_4$; combining the four
@@ -147,40 +147,40 @@ algebra, and its sign is fixed by the stated convention.
 ## The Conjugate Cauchy–Riemann Operator
 
 **Definition.** The **conjugate Cauchy–Riemann operator** of the Hermitian theory is the Hermitian
-adjoint $\partial_{Z_r}^{\dagger}$ of the Hermitian Dirac operator, the operator obtained by
+adjoint $(\partial/\partial Z_r)^{\dagger}$ of the Hermitian Dirac operator, the operator obtained by
 applying the Hermitian conjugation to the coefficients:
 
 $$
-\partial_{Z_r}^{\dagger} = \tfrac{1}{16}\sum_{a=0}^{3}\overline{\varepsilon_{ra}}\;\partial_{X_a}^{\dagger}
-= -\tfrac{1}{16}\sum_{a=0}^{3}\overline{\varepsilon_{ra}}\;\partial_{X_a},
+(\partial/\partial Z_r)^{\dagger} = \tfrac{1}{16}\sum_{a=0}^{3}\overline{\varepsilon_{ra}}\;(\partial/\partial X_a)^{\dagger}
+= -\tfrac{1}{16}\sum_{a=0}^{3}\overline{\varepsilon_{ra}}\;\partial/\partial X_a,
 $$
 
 where $\varepsilon_{ra}$ are the entries of the Hadamard matrix and $\overline{\varepsilon_{ra}}$
 the quaternionic conjugates of the coefficients.
 
 **Theorem (the pair of Cauchy–Riemann operators).** The conjugate Cauchy–Riemann operator is the
-partner of $\partial_{Z_r}$ in the split of the Laplacian:
+partner of $\partial/\partial Z_r$ in the split of the Laplacian:
 
 $$
-\Delta_N = 16\sum_r\partial_{Z_r}\partial_{Z_r}^{\dagger} = 16\sum_r\partial_{Z_r}^{\dagger}\partial_{Z_r},
+\Delta_N = 16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger} = 16\sum_r(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r,
 $$
 
-and the two operators $\partial_{Z_r}$ and $\partial_{Z_r}^{\dagger}$ are the two halves of the
-Cauchy pairing: the kernel of $\partial_{Z_r}$ is what the Cauchy integral of *The Hermitian Cauchy
+and the two operators $\partial/\partial Z_r$ and $(\partial/\partial Z_r)^{\dagger}$ are the two halves of the
+Cauchy pairing: the kernel of $\partial/\partial Z_r$ is what the Cauchy integral of *The Hermitian Cauchy
 Integral and the Boundary Values* reproduces, and the conjugate operator is what turns the Hermitian
 variables into the Cauchy kernel.
 
 *Proof.* The split is the theorem above; the role of the conjugate operator in the kernel
 computation is the computation $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$, in which the conjugate variable
 appears in the numerator and the kernel satisfies the Euclidean identities
-$\partial_{X_r}F_r=\delta$ and $\partial_{X_r}F_s+\partial_{X_s}F_r=0$ for $r\neq s$; these are
+$\partial/\partial X_r\,F_r=\delta$ and $\partial/\partial X_r\,F_s+\partial/\partial X_s\,F_r=0$ for $r\neq s$; these are
 stated in *The Hermitian Cauchy Integral and the Boundary Values*.
 
 **Remark (the complex reduction).** In the complex case $n=1$ of the preceding article the two
 Hermitian Dirac operators are conjugates in the same sense: the conjugate of
-$\partial_{\underline z}=\sum_jf_j\partial_{z_j}$ is the anti-holomorphic
-$\partial_{\bar z}=\sum_jf_j^{*}\partial_{\bar z_j}$, and the split of the Laplacian reads
-$\Delta_{2n}=4\{\partial_{\underline z},\partial_{\bar z}\}$, the two-operator case of the identity
+$\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$ is the anti-holomorphic
+$\partial/\partial\bar z=\sum_jf_j^{*}\partial/\partial\bar z_j$, and the split of the Laplacian reads
+$\Delta_{2n}=4\{\partial/\partial\underline z,\partial/\partial\bar z\}$, the two-operator case of the identity
 above. The quaternionic case is the four-operator case of the same statement, and the conjugate
 operator is the one that carries the second half of every Hermitian Cauchy formula.
 
@@ -190,21 +190,21 @@ operator is the one that carries the second half of every Hermitian Cauchy formu
 $f:\Omega\to\mathbb{H}_N$ is **$q$-Hermitian monogenic** in $\Omega$ when
 
 $$
-\partial_{Z_0}f=\partial_{Z_1}f=\partial_{Z_2}f=\partial_{Z_3}f=0 ,
+\partial/\partial Z_0\,f=\partial/\partial Z_1\,f=\partial/\partial Z_2\,f=\partial/\partial Z_3\,f=0 ,
 $$
 
 equivalently, by the same four sign patterns, when
-$\partial_{X_0}f=\partial_{X_1}f=\partial_{X_2}f=\partial_{X_3}f=0$. The two systems are equivalent
+$\partial/\partial X_0\,f=\partial/\partial X_1\,f=\partial/\partial X_2\,f=\partial/\partial X_3\,f=0$. The two systems are equivalent
 because the sign matrix relating them is invertible; neither equation alone defines the class.
 
 **Proposition (the class is monogenic and smaller).** Every $q$-Hermitian monogenic function is
-monogenic for the Euclidean operator $\partial_X$ and harmonic; the class is strictly smaller than
+monogenic for the Euclidean operator $\partial/\partial X$ and harmonic; the class is strictly smaller than
 the monogenic one, the four equations being one equation read four times through the sign patterns.
 
 *Proof.* The Euclidean operator is a linear combination of the four Hermitian operators — its
 coefficients are the signs of the Hadamard matrix with quaternionic weights — so its vanishing
 follows from theirs; the Laplacian is the sum of the four general products
-$\partial_{Z_r}\partial_{Z_r}^{\dagger}$, so it vanishes too. The strictness is that of a system
+$\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}$, so it vanishes too. The strictness is that of a system
 over a single equation, and it is recorded in *Clifford Analysis*.
 
 **Remark (the axial and the slice structures).** For $n=1$ the four-operator system reduces to a
@@ -220,8 +220,8 @@ the one in which the two indices — Hermitian and fueterian — meet.
 $\Omega$ when it is annihilated by the conjugate operators,
 
 $$
-\partial_{Z_0}^{\dagger}f=\partial_{Z_1}^{\dagger}f=\partial_{Z_2}^{\dagger}f
-=\partial_{Z_3}^{\dagger}f=0 ,
+(\partial/\partial Z_0)^{\dagger}f=(\partial/\partial Z_1)^{\dagger}f=(\partial/\partial Z_2)^{\dagger}f
+=(\partial/\partial Z_3)^{\dagger}f=0 ,
 $$
 
 equivalently when it is $q$-Hermitian monogenic for the conjugate module structure
@@ -234,7 +234,7 @@ $\dagger$-images of the $q$-Hermitian monogenic ones, and the conjugate Cauchy�
 the adjoint of the Hermitian one, so the two classes are the two kernels
 
 $$
-\ker\partial_{Z_r}\quad\text{and}\quad\ker\partial_{Z_r}^{\dagger}=\bigl(\ker\partial_{Z_r}\bigr)^{\dagger} ;
+\ker\partial/\partial Z_r\quad\text{and}\quad\ker(\partial/\partial Z_r)^{\dagger}=\bigl(\ker\partial/\partial Z_r\bigr)^{\dagger} ;
 $$
 
 a function is both $q$-Hermitian monogenic and anti-monogenic exactly when it is annihilated by all
@@ -243,9 +243,9 @@ reduced by the singular split.
 
 *Proof.* The first identity is the definition of the anti-monogenic class read through the
 conjugation of the values; the relation between the kernel of an operator and the kernel of its
-adjoint is the one proved for $\partial_{Z_r}$ and $\partial_{Z_r}^{\dagger}$ in *The Hermitian
+adjoint is the one proved for $\partial/\partial Z_r$ and $(\partial/\partial Z_r)^{\dagger}$ in *The Hermitian
 Dirac Operator*, and the eight-operator kernel is the intersection, which the singular split does
-not preserve because the split $\mathcal{D}=\partial_{\underline z}+\partial_{\bar z}$ is a sum and
+not preserve because the split $\mathcal{D}=\partial/\partial\underline z+\partial/\partial\bar z$ is a sum and
 not a direct sum on the kernel.
 
 **Remark (why the pair matters).** The Hermitian refinement carries the monogenic and the
@@ -261,15 +261,15 @@ integral is *The Hermitian Cauchy Integral and the Boundary Values*.
 In $4n$ Euclidean dimensions with quaternions as central scalars, the four **twisted vectors**
 $X_0,\dots, X_3$ built from the generators by the Hadamard sign patterns satisfy $X_r^2=-|X|^2$ and
 $\{X_r,X_s\}=0$, and their operators satisfy the same relations with $-\Delta_N$. The four
-**Hermitian variables** $Z_r$ and **Hermitian Dirac operators** $\partial_{Z_r}$, built from the
+**Hermitian variables** $Z_r$ and **Hermitian Dirac operators** $\partial/\partial Z_r$, built from the
 twisted data by the same patterns with the normalisation $\tfrac1{16}$, are the components of the
 Euclidean operator under the quaternionic central structure; the **Hermitian conjugation** — the
 composition of the quaternionic with the Clifford conjugation, under which a vector is
 anti-self-adjoint — gives the norm identity $\sum_rZ_rZ_r^{*}=16|X|^2$ and the split of the
 Laplacian
-$\Delta_N=16\sum_r\partial_{Z_r}\partial_{Z_r}^{\dagger}=16\sum_r\partial_{Z_r}^{\dagger}\partial_{Z_r}$,
+$\Delta_N=16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}=16\sum_r(\partial/\partial Z_r)^{\dagger}\partial/\partial Z_r$,
 the four-operator form of $D\bar D=\Delta$. The **conjugate Cauchy–Riemann operator**
-$\partial_{Z_r}^{\dagger}$ is the Hermitian adjoint and the partner of $\partial_{Z_r}$ in the
+$(\partial/\partial Z_r)^{\dagger}$ is the Hermitian adjoint and the partner of $\partial/\partial Z_r$ in the
 split; it is the operator that produces the Hermitian Cauchy kernel
 $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ and carries the second half of the Hermitian Cauchy formulae,
 which are the subject of *The Hermitian Cauchy Integral and the Boundary Values*. The **
@@ -284,15 +284,15 @@ Monogenic Functions*; the general construction is *Clifford Analysis*.
 | Symbol | Meaning |
 |---|---|
 | $N=4n$, $\mathbb{H}_N=\mathbb{H}\otimes_\mathbb{R}\mathrm{Cl}_{0,N}$ | Ambient dimension and value algebra |
-| $\partial_X=\sum_{a=1}^Ne_a\partial_{x_a}$ | Euclidean operator; $\partial_X^2=-\Delta_N$ |
+| $\partial/\partial X=\sum_{a=1}^Ne_a\partial/\partial x_a$ | Euclidean operator; $\partial^2/\partial X^2=-\Delta_N$ |
 | $X_0,\dots,X_3$ | Twisted vectors; $X_r^2=-|X|^2$, $\{X_r,X_s\}=0$ |
 | $Z_0,\dots,Z_3$ | Hermitian variables; Hadamard patterns |
-| $\partial_{Z_0},\dots,\partial_{Z_3}$ | Hermitian Dirac operators; normalisation $\tfrac1{16}$ |
+| $\partial/\partial Z_0,\dots,\partial/\partial Z_3$ | Hermitian Dirac operators; normalisation $\tfrac1{16}$ |
 | $\lambda^{*}=\sum_A\bar\lambda_Ae_A^{\natural}$ | Hermitian conjugation; $X_r^{*}=-X_r$ |
-| $\Delta_N=16\sum_r\partial_{Z_r}\partial_{Z_r}^{\dagger}$ | Split of the Laplacian |
-| $\partial_{Z_r}^{\dagger}$ | Conjugate Cauchy–Riemann operator |
+| $\Delta_N=16\sum_r\partial/\partial Z_r\,(\partial/\partial Z_r)^{\dagger}$ | Split of the Laplacian |
+| $(\partial/\partial Z_r)^{\dagger}$ | Conjugate Cauchy–Riemann operator |
 | $E_r(Z)=Z_r^{*}/(a_{4n}|Z|^{4n})$ | Hermitian Cauchy kernels |
-| $\partial_{Z_0}f=\cdots=\partial_{Z_3}f=0$ | $q$-Hermitian monogenicity |
+| $\partial/\partial Z_0\,f=\cdots=\partial/\partial Z_3\,f=0$ | $q$-Hermitian monogenicity |
 | $a_{4n}=|S^{4n-1}|=2\pi^{2n}/\Gamma(2n)$ | Area of the unit sphere in $\mathbb{R}^{4n}$ |
 
 ## Further Reading

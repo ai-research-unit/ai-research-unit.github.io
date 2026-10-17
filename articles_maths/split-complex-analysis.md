@@ -53,7 +53,7 @@ It is an open disk in the split complex plane, exactly as in the complex plane. 
 
 ### Open and Closed Sets
 
-A set $U \subseteq \mathbb{D}$ is **open** if for every $A_0 \in U$ there exists $r > 0$ with $B(A_0, r) \subseteq U$.
+A set $\Omega \subseteq \mathbb{D}$ is **open** if for every $A_0 \in \Omega$ there exists $r > 0$ with $B(A_0, r) \subseteq \Omega$.
 
 A set $F \subseteq \mathbb{D}$ is **closed** if its complement $\mathbb{D} \setminus F$ is open.
 
@@ -61,7 +61,7 @@ Arbitrary unions of open sets are open. Finite intersections of open sets are op
 
 ### Connectedness and Domains
 
-A set $U \subseteq \mathbb{D}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.
+A set $\Omega \subseteq \mathbb{D}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $\Omega$. It is **path-connected** if any two points can be joined by a continuous path in $\Omega$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.
 
 A **domain** is a non-empty open connected subset of $\mathbb{D}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
@@ -171,7 +171,7 @@ $$
 
 ### The Derivative
 
-Let $f : U \to \mathbb{D}$ with $U$ open, and let $A_0 \in U$. The **derivative** of $f$ at $A_0$ is
+Let $f : \Omega \to \mathbb{D}$ with $\Omega$ open, and let $A_0 \in \Omega$. The **derivative** of $f$ at $A_0$ is
 
 $$
 f'(A_0) = \lim_{h \to 0} \frac{f(A_0 + h) - f(A_0)}{h},
@@ -185,7 +185,7 @@ The limit is taken in the split complex plane, so $h$ can approach $0$ from any 
 
 ### The Cauchy–Riemann Equations
 
-Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : U \to \mathbb{R}$.
+Write $f(A) = u(a, a') + j v(a, a')$, where $A = a + ja'$ and $u, v : \Omega \to \mathbb{R}$.
 
 **Theorem.** $f$ is split complex differentiable at $A_0 = a_0 + j a'_0$ iff $u$ and $v$ are real differentiable at $(a_0, a'_0)$ and satisfy the **split Cauchy–Riemann equations**
 
@@ -196,7 +196,7 @@ $$
 **Proof.** Write $h = h_1 + j h_2$. The difference quotient is
 
 $$
-\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(u_a h_1 + u_{a'} h_2) + j (v_a h_1 + v_{a'} h_2)}{h_1 + j h_2} + o(1).
+\frac{f(A_0 + h) - f(A_0)}{h} = \frac{(\partial u/\partial a h_1 + \partial u/\partial a' h_2) + j (\partial v/\partial a h_1 + \partial v/\partial a' h_2)}{h_1 + j h_2} + o(1).
 $$
 
 For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations.
@@ -307,7 +307,7 @@ The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultipli
 
 ### The Cauchy–Goursat Theorem
 
-**Theorem (Cauchy–Goursat, split version).** If $f$ is split complex differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
+**Theorem (Cauchy–Goursat, split version).** If $f$ is split complex differentiable on a simply connected domain $\Omega$ and $\gamma$ is a closed contour in $\Omega$, then
 
 $$
 \oint_\gamma f(A) \, dA = 0.
@@ -405,7 +405,7 @@ The differences between split complex analysis and complex analysis are conseque
 |---|---|---|
 | Multiplication | $i^2 = -1$ | $j^2 = +1$ |
 | Zero divisors | none | $1 \pm j$ |
-| Cauchy–Riemann | $u_a = v_{a'}$, $u_{a'} = -v_a$ | $u_a = v_{a'}$, $u_{a'} = v_a$ |
+| Cauchy–Riemann | $\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = -\partial v/\partial a$ | $\partial u/\partial a = \partial v/\partial a'$, $\partial u/\partial a' = \partial v/\partial a$ |
 | Harmonic equation | $\Delta u = 0$ | $\Box u = 0$ |
 | Cauchy integral | yes | no |
 | Residue theory | yes | no |
@@ -441,7 +441,7 @@ The article develops the subject in that basis: contour integrals along paths, p
 | $\Pi_2 = (1 - j)/2$ | Negative idempotent |
 | $A = A_+ \Pi_1 + A_- \Pi_2$ | Idempotent decomposition |
 | $\int_\gamma f(A) \, dA$ | Contour integral |
-| $\Box = \partial_a^2 - \partial_{a'}^2$ | d'Alembertian |
+| $\Box = \partial^2/\partial a^2 - \partial^2/\partial a'^2$ | d'Alembertian |
 
 ## Further Reading
 

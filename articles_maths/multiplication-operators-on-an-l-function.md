@@ -89,9 +89,9 @@ that is, $\Lambda_f(1-s)=\epsilon\,\Lambda_{f^*}(s)$ for all $s$; it is an invol
 
 ### The dual form
 
-**Definition.** The **dual form** $f^{\mathrm{dual}}$ is the arithmetic function with Dirichlet series $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapstof^{\mathrm{dual}}$ is an involution on the forms whose completion satisfies the equation.
+**Definition.** The **dual form** $f^{\mathrm{dual}}$ is the arithmetic function with Dirichlet series $L(f^{\mathrm{dual}},s)=\gamma(f,s)^{-1}L(f,1-s)$, where $\gamma(f,s)=\epsilon N^{s-1/2}\prod_j\Gamma(1-s+\bar\mu_j)/\Gamma(s+\mu_j)$; it exists whenever the functional equation does, and $f\mapsto f^{\mathrm{dual}}$ is an involution on the forms whose completion satisfies the equation.
 
-**Proposition.** $L(f^{\mathrm{dual}},s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f}=M_{h^*}f^{\mathrm{dual}}$. The operator identity of the previous theorem and the definition of $f^{\mathrm{dual}}$ are the same identity read on two sides.
+**Proposition.** $L(f^{\mathrm{dual}},s)=\epsilon^{-1}\overline{L(f^*,1-\bar s)}$ in the self-dual case, and $M_h$ commutes with the duality up to the factor $h^*$: $M_h^{\mathrm{dual}}f=M_{h^*}f^{\mathrm{dual}}$. The operator identity of the previous theorem and the definition of $f^{\mathrm{dual}}$ are the same identity read on two sides.
 
 **Proof.** Substitute $s\mapsto1-s$ into the definition of $f^{\mathrm{dual}}$ and use the functional equation; the compatibility with $M_h$ is the multiplicativity of the involution on coefficients. This is the operator form of the functional equation in the sense of *L-Functions*.
 

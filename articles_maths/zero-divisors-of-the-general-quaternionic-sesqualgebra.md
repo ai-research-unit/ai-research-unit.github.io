@@ -26,18 +26,18 @@ Sesqualgebra*; the position of the set in the remarkable subspaces is *Remarkabl
 the General Quaternionic Sesqualgebra of Biquaternions*.
 
 **Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
-$e_0 = 1, e_1, e_2, e_3$, $e_1e_2 = e_3$, and central scalar imaginary $i$. An element is
-$\tilde Q = Q_0 e_0 + \vec Q$ with $Q_0 \in \mathbb{C}$ and
-$\vec Q = \sum_{k=1}^{3} Q_k e_k$, and
+$e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_x\vec e_y = \vec e_z$, and central scalar imaginary $i$. An element is
+$\tilde Q = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}$ and
+$\vec Q = \sum_{k=1}^{3} Q_k \vec e_k$, and
 
 $$
-\tilde Q^{\natural} = Q_0 - \vec Q , \qquad \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_0} - \overline{\vec Q} , \qquad \overline{\tilde Q} = \tilde Q^{\natural*} = \overline{Q_0} + \overline{\vec Q} ,
+\tilde Q^{\natural} = Q_t - \vec Q , \qquad \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_t} - \overline{\vec Q} , \qquad \overline{\tilde Q} = \tilde Q^{\natural*} = \overline{Q_t} + \overline{\vec Q} ,
 $$
 
 where the bar on a coefficient is the complex conjugate. The **central square** is
 
 $$
-C(\tilde Q) = \sum_{\mu=0}^{3} Q_\mu^2 , \qquad C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q ,
+C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 , \qquad C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural} = \tilde Q^{\natural}\tilde Q ,
 $$
 
 and its vanishing is the zero-divisor criterion of the general plain algebra (*Zero Divisors of the
@@ -46,7 +46,7 @@ with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^
 the juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of
 the algebra.
 
-**The results.** A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_0=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_0\neq0$ with $\sum_k Q_k^{2}=-Q_0^{2}$, and the square-zero elements, of real dimension four, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.
+**The results.** A nonzero element $\tilde Q$ is a zero divisor of the general quaternionic sesquilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ if and only if its central square vanishes, $C(\tilde Q)=\sum_\mu Q_\mu^{2}=0$; the left and the right reading give the same condition, and the four general products share this one set. The set is the complex cone $\{C(\tilde Q)=0\}$ of complex dimension three and real dimension six, the same subset the plain product cuts out. It splits by the scalar part into the pure family $Q_t=0$ with $\sum_k Q_k^{2}=0$ and the non-pure family $Q_t\neq0$ with $\sum_k Q_k^{2}=-Q_t^{2}$, and the square-zero elements, of real dimension four, lie in the **non-pure** family, so the split by the square and the split by the scalar part cut across each other. Each section below states its result first and then proves it.
 
 ## The Definition
 
@@ -70,7 +70,7 @@ theorem that the four coincide, are *Zero Divisors in the Algebraic Structures o
 if
 
 $$
-C(\tilde Q) = \sum_{\mu=0}^{3} Q_\mu^2 = 0 .
+C(\tilde Q) = \sum_{\mu\in\{t,x,y,z\}} Q_\mu^2 = 0 .
 $$
 
 **Proof.** The product is $\tilde Q\star\tilde R = \tilde Q^{\natural}\tilde R^{*}$. An element
@@ -80,7 +80,7 @@ existence of a nonzero $\tilde Y$ with $\tilde Q^{\natural}\tilde Y = 0$, that i
 $\tilde Q^{\natural}$ is a left zero divisor of the plain product, with $\tilde Y = \tilde R^{*}$.
 The zero-divisor criterion of the plain algebra says that this happens exactly when
 $C(\tilde Q^{\natural}) = 0$, and the natural conjugation keeps the three vector squares and the
-scalar square, so $C(\tilde Q^{\natural}) = Q_0^2 + \sum_k Q_k^2 = C(\tilde Q)$. The left statement
+scalar square, so $C(\tilde Q^{\natural}) = Q_t^2 + \sum_k Q_k^2 = C(\tilde Q)$. The left statement
 follows; the right statement is the same computation with $\tilde R^{\natural}\tilde Q^{*} = 0$,
 which for varying $\tilde R$ says that $\tilde Q^{*}$ is a right zero divisor of the plain product;
 the plain criterion applied to $\tilde Q^{*}$ gives back one condition because
@@ -92,18 +92,18 @@ the comparison below. What the GQS criterion does **not** inherit is the reading
 an element of $C = 0$ whose scalar part vanishes is a nilpotent of the plain algebra, while here
 the square of a zero divisor need not vanish at all.
 
-**Example.** The element $\tilde Q = e_1 + ie_2$ has $\vec Q = e_1 + ie_2$, so
+**Example.** The element $\tilde Q = \vec e_x + i\vec e_y$ has $\vec Q = \vec e_x + i\vec e_y$, so
 $C(\tilde Q) = 1 + i^2 = 0$ and it is a zero divisor. Its left partner is the element
-$\tilde R = ie_0 - e_3$, for which
+$\tilde R = ie_t - \vec e_z$, for which
 
 $$
-\tilde Q\star\tilde R = (e_1+ie_2)^{\natural}(ie_0-e_3)^{*} = (-e_1-ie_2)(-ie_0+e_3) = 0 ,
+\tilde Q\star\tilde R = (\vec e_x+i\vec e_y)^{\natural}(ie_t-\vec e_z)^{*} = (-\vec e_x-i\vec e_y)(-ie_t+\vec e_z) = 0 ,
 $$
 
 and its square is
 
 $$
-\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural} = (-2e_0+2ie_3)^{\natural} = -2e_0-2ie_3 \neq 0 .
+\tilde Q\star\tilde Q = (\overline{\tilde Q}\tilde Q)^{\natural} = (-2e_t+2i\vec e_z)^{\natural} = -2e_t-2i\vec e_z \neq 0 .
 $$
 
 So $\tilde Q$ is a zero divisor whose left multiplication is not square-zero, in contrast to a
@@ -112,13 +112,13 @@ Sesqualgebra*).
 
 ## The Two Families
 
-**The zero-divisor set splits by the scalar part into the disjoint pure family $Q_0=0$ with $\sum_k Q_k^{2}=0$ and non-pure family $Q_0\neq0$ with $\sum_k Q_k^{2}=-Q_0^{2}\neq0$, whose union with the origin is the whole set, and the square-zero elements lie in the non-pure family, so the split by the square cuts across the split by the scalar part.**
+**The zero-divisor set splits by the scalar part into the disjoint pure family $Q_t=0$ with $\sum_k Q_k^{2}=0$ and non-pure family $Q_t\neq0$ with $\sum_k Q_k^{2}=-Q_t^{2}\neq0$, whose union with the origin is the whole set, and the square-zero elements lie in the non-pure family, so the split by the square cuts across the split by the scalar part.**
 
 The zero-divisor set splits by the scalar part, as it does for the plain product, and the split is
 named.
 
-**Definition (the two families).** A zero divisor $\tilde Q$ of $\star$ is **pure** when $Q_0 = 0$
-and **non-pure** when $Q_0 \neq 0$. The set is the disjoint union of the two families and the
+**Definition (the two families).** A zero divisor $\tilde Q$ of $\star$ is **pure** when $Q_t = 0$
+and **non-pure** when $Q_t \neq 0$. The set is the disjoint union of the two families and the
 origin.
 
 **Proposition (the pure family).** A pure zero divisor $\tilde Q = \vec Q$ satisfies
@@ -129,20 +129,20 @@ $$
 
 and conversely every nonzero pure element with $\sum_k Q_k^2 = 0$ is a zero divisor.
 
-**Proof.** Purity is $Q_0 = 0$, and the criterion $C(\tilde Q) = Q_0^2 + \sum_k Q_k^2 = 0$ is then
+**Proof.** Purity is $Q_t = 0$, and the criterion $C(\tilde Q) = Q_t^2 + \sum_k Q_k^2 = 0$ is then
 the displayed relation. The converse is the criterion read backwards.
 
 **Proposition (the non-pure family).** A non-pure zero divisor satisfies
 
 $$
-\sum_{k=1}^{3} Q_k^2 = -Q_0^2 \neq 0 ,
+\sum_{k=1}^{3} Q_k^2 = -Q_t^2 \neq 0 ,
 $$
 
 and the family is non-empty; every element of the square-zero family of *Nilpotents of the General
-Quaternionic Sesqualgebra*, in particular $e_0 + ie_1$, is non-pure.
+Quaternionic Sesqualgebra*, in particular $e_t + i\vec e_x$, is non-pure.
 
-**Proof.** The relation is the criterion with $Q_0 \neq 0$. The element $e_0 + ie_1$ has $Q_0 = 1$,
-$Q_1 = i$, $Q_2 = Q_3 = 0$, so $C = 1 - 1 = 0$, and it is a zero divisor with nonzero scalar part.
+**Proof.** The relation is the criterion with $Q_t \neq 0$. The element $e_t + i\vec e_x$ has $Q_t = 1$,
+$Q_x = i$, $Q_y = Q_z = 0$, so $C = 1 - 1 = 0$, and it is a zero divisor with nonzero scalar part.
 Its square vanishes, as the cited article records, so the non-pure family is not the complement of
 the square-zero family.
 
@@ -160,19 +160,19 @@ cone.
 **Theorem (the set).** The zero-divisor set of $\star$ is
 
 $$
-\{\tilde Q \neq 0 : C(\tilde Q) = 0\} = \{\tilde Q \neq 0 : Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0\} ,
+\{\tilde Q \neq 0 : C(\tilde Q) = 0\} = \{\tilde Q \neq 0 : Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0\} ,
 $$
 
 a complex cone of complex dimension three and real dimension six, the zero set of the
 non-degenerate complex quadratic form $C$ on $\mathbb{C}^4$. Its vertex is the origin, which is not
-a zero divisor, and it contains the whole vector subspace part $\{Q_0 = 0, \sum_k Q_k^2 = 0\}$ of
-complex dimension two together with the non-pure part $Q_0 \neq 0$ of complex dimension three.
+a zero divisor, and it contains the whole vector subspace part $\{Q_t = 0, \sum_k Q_k^2 = 0\}$ of
+complex dimension two together with the non-pure part $Q_t \neq 0$ of complex dimension three.
 
 **Proof.** The description is the criterion. The form $C$ is non-degenerate and its zero set is the
 affine cone over the non-singular quadric $C = 0$ in $\mathbb{P}^3$, of complex dimension two, so
 the affine cone has complex dimension three and real dimension six. The vector-subspace part is the
-cone over a conic in $\mathbb{P}^2$, of complex dimension two, and for $Q_0 \neq 0$ one solves
-$\sum_k Q_k^2 = -Q_0^2$, a quadric in three variables, so the non-pure part has complex dimension
+cone over a conic in $\mathbb{P}^2$, of complex dimension two, and for $Q_t \neq 0$ one solves
+$\sum_k Q_k^2 = -Q_t^2$, a quadric in three variables, so the non-pure part has complex dimension
 three.
 
 The dimension is the same as for the plain product, because the criterion is the same form; the two
@@ -218,7 +218,7 @@ non-purity are *Square Roots of Zero and the Nilpotents of the General Quaternio
 
 **Corollary (the contrast with the plain product).** In the plain algebra the square-zero elements
 are the pure zero divisors and the non-pure zero divisors have non-vanishing square; in the GQS the
-square-zero elements are non-pure and a pure zero divisor, such as $e_1 + ie_2$, has nonzero
+square-zero elements are non-pure and a pure zero divisor, such as $\vec e_x + i\vec e_y$, has nonzero
 square.
 
 **Proof.** The plain statement is *Nilpotents of the General Plain Algebra*; the GQS statement is
@@ -241,12 +241,12 @@ cut out, a coincidence that is a theorem of *Zero Divisors in the Algebraic Stru
 is the vanishing of the central square and the four products differ only by the two slot
 involutions.
 
-The set splits by the scalar part into the pure family $Q_0 = 0$, with $\sum_k Q_k^2 = 0$, and the
-non-pure family $Q_0 \neq 0$, with $\sum_k Q_k^2 = -Q_0^2$; the square-zero elements, which are a
+The set splits by the scalar part into the pure family $Q_t = 0$, with $\sum_k Q_k^2 = 0$, and the
+non-pure family $Q_t \neq 0$, with $\sum_k Q_k^2 = -Q_t^2$; the square-zero elements, which are a
 real four-dimensional proper subfamily, lie in the **non-pure** family, so the split by the square
 and the split by the scalar part cut across each other and the analogy with the plain product stops
-at the criterion. The element $e_1 + ie_2$ is a pure zero divisor whose square is $-2e_0 - 2ie_3$,
-and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
+at the criterion. The element $\vec e_x + i\vec e_y$ is a pure zero divisor whose square is $-2e_t - 2i\vec e_z$,
+and the element $e_t + i\vec e_x$ is a non-pure zero divisor whose square vanishes.
 
 ## Summary of Notation
 
@@ -255,11 +255,11 @@ and the element $e_0 + ie_1$ is a non-pure zero divisor whose square vanishes.
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde Q^{\natural}$, $\tilde Q^{*}$, $\overline{\tilde Q}$ | the natural, the star and the Hermitian conjugations |
 | zero divisor of $\star$ | a nonzero $\tilde Q$ with a nonzero right or left partner of vanishing product |
-| $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, $C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$ |
+| $C(\tilde Q) = \sum_\mu Q_\mu^2$ | the central square, $C(\tilde Q)e_t = \tilde Q\tilde Q^{\natural}$ |
 | $C(\tilde Q) = 0$ | the zero-divisor criterion |
-| pure, non-pure | $Q_0 = 0$; $Q_0 \neq 0$ |
-| $e_1 + ie_2$ | a pure zero divisor with non-vanishing square |
-| $e_0 + ie_1$ | a non-pure zero divisor with vanishing square |
+| pure, non-pure | $Q_t = 0$; $Q_t \neq 0$ |
+| $\vec e_x + i\vec e_y$ | a pure zero divisor with non-vanishing square |
+| $e_t + i\vec e_x$ | a non-pure zero divisor with vanishing square |
 
 ## Further Reading
 

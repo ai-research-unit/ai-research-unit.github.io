@@ -26,7 +26,7 @@ is a probability measure with $P^*\mu_P=d^k\mu_P$, supported on the Julia set of
 
 ## The Green's Function and the Current
 
-**Proposition (the current and its invariance).** Let $\tilde C=Ce_0$ be central and let $G_{\tilde C}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde C}$ is plurisubharmonic and smooth, the current
+**Proposition (the current and its invariance).** Let $\tilde C=Ce_t$ be central and let $G_{\tilde C}$ be the Green's function, defined on the regular part of the escaping set. On the open set where $G_{\tilde C}$ is plurisubharmonic and smooth, the current
 
 $$
 \gamma_{\tilde C}=(dd^cG_{\tilde C})^4
@@ -52,7 +52,7 @@ the product of the two one-variable equilibrium measures of $\zeta\mapsto\zeta^2
 
 **Proposition (the pullback loses mass on the cone).** The equation $\tilde Q^2=\tilde W$ has four solutions for a generic regular value $\tilde W$ (*Square Roots of a General Element in the Biquaternion Algebra*), so the generic fibre of the square map has four points; at $\tilde W=0$ the equation is $\tilde Q^2=0$ and its solution set is the square-zero cone, of complex dimension two. The topological degree of the square map is therefore not locally constant at $0$: the fibre over $0$ has complex dimension two while the generic fibre has dimension zero.
 
-**Proof.** The generic count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, since the reduced quadratic then has two distinct non-zero solutions and each contributes two scalar parts; the fibre over $0$ is the set of nilpotent elements, the cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$ of complex dimension two. The derivative of the square map at $\tilde Q$ is $\tilde P\mapsto\tilde Q\tilde P+\tilde P\tilde Q$, singular exactly on the critical set; at a square-zero point it is nilpotent with image of complex dimension two, so the map is not locally finite there.
+**Proof.** The generic count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, since the reduced quadratic then has two distinct non-zero solutions and each contributes two scalar parts; the fibre over $0$ is the set of nilpotent elements, the cone $\{Q_t=0,\ (\vec Q,\vec Q)=0\}$ of complex dimension two. The derivative of the square map at $\tilde Q$ is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$, singular exactly on the critical set; at a square-zero point it is nilpotent with image of complex dimension two, so the map is not locally finite there.
 
 **Remark (the consequence for the measure).** A polynomial map whose leading part is proper pulls back a generic point to exactly $d^k$ preimages, counted with multiplicity, so the preimage measure equidistributes; the biquaternion map pulls back $0$ to a positive-dimensional cone, and the preimages of a point outside the cone may have limit points in the cone. **The equidistribution of preimages holds away from the cone and gains a correction term from the cone; the correction is not known in closed form, and this is the technical core of the open problem of the category.**
 

@@ -15,7 +15,7 @@ and $M_2(\mathbb{R})$ is **simple**: its only two-sided ideals are $0$ and the w
 
 The article treats, in order, the definitions of ideals; the two-sided ideals and simplicity; the artinian and semisimple structure and the length of the algebra as a module over itself; the two idempotents and their orthogonal complementarity; the explicit matrix units; the Peirce decomposition into four one-dimensional corners; the grouping of the matrix units into minimal left and minimal right ideals; and the lattice of left ideals, which is a real projective line. It closes with the contrast with the quaternions $\mathbb{H}$, where there are no proper ideals at all, and with the biquaternions $\mathbb{B}$, whose ideal theory has the same shape over $\mathbb{C}$.
 
-**Conventions.** The basis is $1, e_1, e_2, e_3$, with $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$; a general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation and the central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
+**Conventions.** The basis is $1, \vec e_x, \vec e_y, \vec e_z$, with $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$; a general element is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation and the central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ are assumed from *Split-Quaternion Algebra*, the idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ from *Split-Quaternion Idempotents and Projections*, and the metrical reading of $\langle\cdot\rangle_{\natural}$ from *Split-Quaternion Norm and Invertibility*. The definitions of rings and modules apply to the noncommutative algebra $\mathbb{H}_{\mathrm{s}}$, where "left" and "right" must be distinguished.
 
 ## Ideals in an Algebra
 
@@ -44,7 +44,7 @@ Consequences:
 - The centre of $\mathbb{H}_{\mathrm{s}}$ is the scalar copy $\mathbb{R}\cdot 1$ of $\mathbb{R}$, so $\mathbb{H}_{\mathrm{s}}$ is a **central simple** $\mathbb{R}$-algebra; in particular it is not a product $A_1 \times A_2$ of nonzero algebras.
 - The many one-sided ideals constructed below are all non-two-sided, so they do not contradict simplicity.
 
-Simplicity does not imply that every nonzero element is invertible: the element $1 + e_2$ is a nonzero zero divisor, since $(1+e_2)(1-e_2) = 0$, yet it generates $\mathbb{H}_{\mathrm{s}}$ as a two-sided ideal. Simplicity and the division property are independent, and $\mathbb{H}_{\mathrm{s}}$ is the standard example distinguishing them.
+Simplicity does not imply that every nonzero element is invertible: the element $1 + \vec e_y$ is a nonzero zero divisor, since $(1+\vec e_y)(1-\vec e_y) = 0$, yet it generates $\mathbb{H}_{\mathrm{s}}$ as a two-sided ideal. Simplicity and the division property are independent, and $\mathbb{H}_{\mathrm{s}}$ is the standard example distinguishing them.
 
 ## Artinian, Semisimple, and Length Two
 
@@ -71,17 +71,17 @@ $$
 The idempotents
 
 $$
-\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2)
+\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)
 $$
 
-satisfy $\tilde\pi_1^2 = \tilde\pi_1$, $\tilde\pi_2^2 = \tilde\pi_2$, $\tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$, ; they are primitive. Their classification — the bijection with the roots of $+1$ in the vector subspace — is the subject of *Split-Quaternion Idempotents and Projections*, and is quoted here only for the pair used below.
+satisfy $\tilde\pi_1^2 = \tilde\pi_1$, $\tilde\pi_2^2 = \tilde\pi_2$, $\tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = 0$ and $\tilde\pi_1 + \tilde\pi_2 = 1$; they are primitive. Their classification — the bijection with the roots of $+1$ in the vector subspace — is the subject of *Split-Quaternion Idempotents and Projections*, and is quoted here only for the pair used below.
 
 ## Matrix Units in the Split-Quaternion Algebra
 
 The off-diagonal matrix units can be written explicitly. Put
 
 $$
-\tilde q = \tfrac{1}{2}(e_3 - e_1), \qquad \tilde p = \tfrac{1}{2}(e_1 + e_3).
+\tilde q = \tfrac{1}{2}(\vec e_z - \vec e_x), \qquad \tilde p = \tfrac{1}{2}(\vec e_x + \vec e_z).
 $$
 
 Then $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is an $\mathbb{R}$-basis of $\mathbb{H}_{\mathrm{s}}$, and it satisfies the matrix-unit relations with
@@ -102,7 +102,7 @@ together with $\tilde q \tilde\pi_1 = \tilde\pi_2 \tilde q = 0$, $\tilde\pi_1 \t
 
 The **Peirce decomposition** is the decomposition of an algebra relative to a family of orthogonal idempotents; it is the algebraic form of a block decomposition of a matrix.
 
-**One idempotent.** Let $e \in A$ be idempotent and $f = 1 - e$. Every $q_0 \in A$ expands as $q_0 = eae + eaf + fae + faf$, giving the direct sum
+**One idempotent.** Let $e \in A$ be idempotent and $f = 1 - e$. Every $a \in A$ expands as $a = eae + eaf + fae + faf$, giving the direct sum
 
 $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
@@ -136,7 +136,7 @@ $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 = \bigoplus_{i,j=1}^{2} \mathbb{R} E_{ij}.
 $$
 
-The diagonal part $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde\pi_2$ is the two-dimensional commutative subalgebra isomorphic to $\mathbb{R} \times \mathbb{R}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{R}$, which is the primitivity criterion. The off-diagonal corner $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \mathbb{R} \tilde q$ is nonzero, and it is the reason the decomposition of $\mathbb{H}_{\mathrm{s}}$ by the non-central idempotent $\tilde\pi_1$ is a module decomposition and not an algebra decomposition; the element $\tilde\pi_1 e_3 \tilde\pi_2 = \tilde q$ detects it.
+The diagonal part $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \tilde\pi_2 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde\pi_2$ is the two-dimensional commutative subalgebra isomorphic to $\mathbb{R} \times \mathbb{R}$, the diagonal subalgebra of the matrix picture. Each diagonal corner is a division ring, namely $\mathbb{R}$, which is the primitivity criterion. The off-diagonal corner $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \mathbb{R} \tilde q$ is nonzero, and it is the reason the decomposition of $\mathbb{H}_{\mathrm{s}}$ by the non-central idempotent $\tilde\pi_1$ is a module decomposition and not an algebra decomposition; the element $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tilde q$ detects it.
 
 ## The Matrix-Unit Decomposition as a Sum of Minimal Ideals
 
@@ -198,9 +198,9 @@ The middle elements are pairwise incomparable; each covers $0$ and is covered by
 
 ## Summary
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple: its only two-sided ideals are $0$ and $\mathbb{H}_{\mathrm{s}}$. It is semisimple, artinian, and of length $2$ as a left module over itself, with $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ and $\mathbb{R}^2$ the defining module. Simplicity does not force the division property: $1 + e_2$ is a nonzero zero divisor that nonetheless generates the algebra as a two-sided ideal.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple: its only two-sided ideals are $0$ and $\mathbb{H}_{\mathrm{s}}$. It is semisimple, artinian, and of length $2$ as a left module over itself, with $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ and $\mathbb{R}^2$ the defining module. Simplicity does not force the division property: $1 + \vec e_y$ is a nonzero zero divisor that nonetheless generates the algebra as a two-sided ideal.
 
-The standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ are orthogonal, complete and primitive. With the explicit matrix units $\tilde q = \tfrac{1}{2}(e_3 - e_1)$ and $\tilde p = \tfrac{1}{2}(e_1 + e_3)$, the set $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is a set of matrix units and the Peirce decomposition is the four-corner decomposition
+The standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ are orthogonal, complete and primitive. With the explicit matrix units $\tilde q = \tfrac{1}{2}(\vec e_z - \vec e_x)$ and $\tilde p = \tfrac{1}{2}(\vec e_x + \vec e_z)$, the set $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ is a set of matrix units and the Peirce decomposition is the four-corner decomposition
 
 $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{R} \tilde\pi_1 \oplus \mathbb{R} \tilde q \oplus \mathbb{R} \tilde p \oplus \mathbb{R} \tilde\pi_2 .
@@ -215,8 +215,8 @@ The two columns $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ are the minimal left i
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $I$ | an ideal (left, right or two-sided) | this article |
 | $M_2(\mathbb{R})$, $E_{ij}$ | the matrix algebra and its matrix units, $E_{ij}E_{kl}=\delta_{jk}E_{il}$ | *Matrix Algebras* |
-| $\tilde\pi_1 = \tfrac{1}{2}(1+e_2)$, $\tilde\pi_2 = \tfrac{1}{2}(1-e_2)$ | the standard orthogonal idempotents | *Split-Quaternion Idempotents and Projections* |
-| $\tilde q = \tfrac{1}{2}(e_3-e_1)$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$ | the off-diagonal matrix units $E_{12}$, $E_{21}$ | this article |
+| $\tilde\pi_1 = \tfrac{1}{2}(1+\vec e_y)$, $\tilde\pi_2 = \tfrac{1}{2}(1-\vec e_y)$ | the standard orthogonal idempotents | *Split-Quaternion Idempotents and Projections* |
+| $\tilde q = \tfrac{1}{2}(\vec e_z-\vec e_x)$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$ | the off-diagonal matrix units $E_{12}$, $E_{21}$ | this article |
 | $\mathbb{R}^2$ | the simple (defining) left module, $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^2 \oplus \mathbb{R}^2$ | this article |
 | $(\mathbb{R}^2)^{*}$ | the dual (right) module | this article |
 | $eAe$, $eAf$, … | the Peirce spaces of an idempotent $e$ | this article |

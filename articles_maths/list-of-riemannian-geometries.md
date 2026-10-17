@@ -97,7 +97,7 @@ The geometries of constant curvature are the models of the comparison, and the E
 | an Einstein metric | $\operatorname{Ric} = \lambda g$, with $\lambda = S/n$ | *Riemannian Geometry* |
 | a Kähler–Einstein metric | a Kähler metric with $\rho = \lambda\Omega$ | *Kähler Geometry* |
 | a Calabi–Yau metric | a Ricci-flat Kähler metric, $c_1 = 0$ | *Calabi–Yau Manifolds* |
-| the Ricci flow | the evolution $\partial_tg = -2\operatorname{Ric}$, deforming a metric to an Einstein one | *Ricci Flow* |
+| the Ricci flow | the evolution $\partial/\partial t\,g = -2\operatorname{Ric}$, deforming a metric to an Einstein one | *Ricci Flow* |
 | the Ricci flow with surgery | the flow continued through singularities, used to prove geometrisation | *Ricci Flow*; *Low-Dimensional Topology* |
 
 The three model spaces are the complete simply connected geometries of constant curvature, and the space-form theorem says that every complete constant-curvature geometry is a quotient of one of them. The Einstein condition is the weakest curvature condition that singles out a geometry, and the Ricci flow is the parabolic equation that deforms an arbitrary metric towards it; the flow with surgery is the tool by which the geometrisation of three-manifolds is proved.

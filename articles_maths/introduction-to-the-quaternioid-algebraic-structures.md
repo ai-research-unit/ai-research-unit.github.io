@@ -2,37 +2,37 @@
 
 ## Introduction
 
-The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is the subject of the *Quaternions* category, entered at *Introduction to the Quaternion Algebra*. This category treats another question about the same carrier. Beyond the algebra product $\tilde p\tilde q$ the space $\mathbb{R}^4$ carries the products built from it and from the conjugation: the symmetrisation $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$, the antisymmetrisation $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$, and the product $\tilde p^{\natural}\tilde q$ with the conjugation read in the first slot. Their algebras are the **symmetric plain algebra** ($\mathrm{SPA}$), the **antisymmetric plain algebra** ($\mathrm{APA}$) and the **general quaternionic algebra** ($\mathrm{GQA}$). These three are the structures of the category, and the articles below read their basic properties, their element theory and their operators.
+The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is the subject of the *Quaternions* category, entered at *Introduction to the Quaternion Algebra*. This category treats another question about the same carrier. Beyond the algebra product $\tilde q_1\tilde q_2$ the space $\mathbb{R}^4$ carries the products built from it and from the conjugation: the symmetrisation $\tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1)$, the antisymmetrisation $\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)$, and the product $\tilde q_1^{\natural}\tilde q_2$ with the conjugation read in the first slot. Their algebras are the **symmetric plain algebra** ($\mathrm{SPA}$), the **antisymmetric plain algebra** ($\mathrm{APA}$) and the **general quaternionic algebra** ($\mathrm{GQA}$). These three are the structures of the category, and the articles below read their basic properties, their element theory and their operators.
 
 ## Conventions
 
-$\tilde p = p_0e_0+\vec p = \sum_{\mu=0}^{3}p_\mu e_\mu$ with $p_\mu\in\mathbb{R}$, and $\vec p = \sum_{k=1}^{3}p_ke_k$ is the vector part; $e_0$ is the unit; ${}^{\natural}$ is the quaternion conjugation, $e_k^{\natural}=-e_k$ on the imaginary units and $e_0^{\natural}=e_0$; $(\vec p,\vec q)=\sum_kp_kq_k$ and $\vec p\times\vec q$ are the real dot and cross products. The algebra product $\tilde p\tilde q$ is owned by the *Quaternions* category and is cited from here, never restated. The tilde and the mark ${}^{\natural}$ are those of *Conventions in Mathematics*.
+$\tilde q = q_te_t+\vec q = \sum_{\mu\in\{t,x,y,z\}}q_\mu e_\mu$ with $q_\mu\in\mathbb{R}$, and $\vec q = \sum_{k=1}^{3}q_k\vec e_k$ is the vector part; $e_t$ is the unit; ${}^{\natural}$ is the quaternion conjugation, $\vec e_k^{\natural}=-\vec e_k$ on the imaginary units and $e_t^{\natural}=e_t$; $(\vec q_1,\vec q_2)=\sum_kq_{1k}q_{2k}$ and $\vec q_1\times\vec q_2$ are the real dot and cross products. The algebra product $\tilde q_1\tilde q_2$ is owned by the *Quaternions* category and is cited from here, never restated. The tilde and the mark ${}^{\natural}$ are those of *Conventions in Mathematics*.
 
 ## The Three Companion Products
 
 **Definition.** The **three companion products** of the quaternion space are the **symmetric plain product**, the **antisymmetric plain product** and the **general quaternionic product**,
 
 $$
-\tilde p\bullet\tilde q = \tfrac12(\tilde p\tilde q+\tilde q\tilde p) = \bigl(p_0q_0-(\vec p,\vec q)\bigr) + p_0\vec q + q_0\vec p,
+\tilde q_1\bullet\tilde q_2 = \tfrac12(\tilde q_1\tilde q_2+\tilde q_2\tilde q_1) = \bigl(q_{1t}q_{2t}-(\vec q_1,\vec q_2)\bigr) + q_{1t}\vec q_2 + q_{2t}\vec q_1,
 $$
 
 $$
-\tilde p\wedge\tilde q = \tfrac12(\tilde p\tilde q-\tilde q\tilde p) = \vec p\times\vec q,
+\tilde q_1\wedge\tilde q_2 = \tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1) = \vec q_1\times\vec q_2,
 $$
 
 $$
-\tilde p^{\natural}\tilde q = \bigl(p_0q_0+(\vec p,\vec q)\bigr) + p_0\vec q - q_0\vec p - \vec p\times\vec q .
+\tilde q_1^{\natural}\tilde q_2 = \bigl(q_{1t}q_{2t}+(\vec q_1,\vec q_2)\bigr) + q_{1t}\vec q_2 - q_{2t}\vec q_1 - \vec q_1\times\vec q_2 .
 $$
 
 **Theorem.** The algebra product is the sum of its two halves, and the quaternionic product is separated from it by the scalar and the vector part of the first factor,
 
 $$
-\tilde p\tilde q = \tilde p\bullet\tilde q + \tilde p\wedge\tilde q, \qquad
-\tilde p\tilde q + \tilde p^{\natural}\tilde q = 2p_0\tilde q, \qquad
-\tilde p\tilde q - \tilde p^{\natural}\tilde q = 2\vec p\,\tilde q .
+\tilde q_1\tilde q_2 = \tilde q_1\bullet\tilde q_2 + \tilde q_1\wedge\tilde q_2, \qquad
+\tilde q_1\tilde q_2 + \tilde q_1^{\natural}\tilde q_2 = 2q_{1t}\tilde q_2, \qquad
+\tilde q_1\tilde q_2 - \tilde q_1^{\natural}\tilde q_2 = 2\vec q_1\,\tilde q_2 .
 $$
 
-**Proof.** The symmetrisation keeps the scalar product and the two linear terms of $\tilde p\tilde q$ and the antisymmetrisation keeps the cross product, so their sum is the algebra product; the quaternionic product is the algebra product with $\tilde p$ replaced by $\tilde p^{\natural}=p_0e_0-\vec p$, which flips the signs of $(\vec p,\vec q)$, of $q_0\vec p$ and of $\vec p\times\vec q$, and adding or subtracting the two displays kills the vector terms of the first factor. The algebra product and the general quaternionic product are the **two general products** of the space in the sense of the general theory of a product with an involution; the two halves of the first are the symmetric and antisymmetric plain products. The products and their tables are *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and *The Two General Products of the Quaternioid $\mathbb{R}$ Space*.
+**Proof.** The symmetrisation keeps the scalar product and the two linear terms of $\tilde q_1\tilde q_2$ and the antisymmetrisation keeps the cross product, so their sum is the algebra product; the quaternionic product is the algebra product with $\tilde q_1$ replaced by $\tilde q_1^{\natural}=q_{1t}e_t-\vec q_1$, which flips the signs of $(\vec q_1,\vec q_2)$, of $q_{2t}\vec q_1$ and of $\vec q_1\times\vec q_2$, and adding or subtracting the two displays kills the vector terms of the first factor. The algebra product and the general quaternionic product are the **two general products** of the space in the sense of the general theory of a product with an involution; the two halves of the first are the symmetric and antisymmetric plain products. The products and their tables are *The 6 Products of the Quaternioid $\mathbb{R}$ Space* and *The Two General Products of the Quaternioid $\mathbb{R}$ Space*.
 
 ## The Three Structures
 
@@ -40,25 +40,25 @@ $$
 
 | Structure | Product | Nature |
 |---|---|---|
-| symmetric plain algebra (SPA) | $\tilde p\bullet\tilde q$ | commutative Jordan algebra, unital, not associative |
-| antisymmetric plain algebra (APA) | $\tilde p\wedge\tilde q$ | alternating Lie algebra, no unit |
-| general quaternionic algebra (GQA) | $\tilde p^{\natural}\tilde q$ | left-unital, non-associative |
+| symmetric plain algebra (SPA) | $\tilde q_1\bullet\tilde q_2$ | commutative Jordan algebra, unital, not associative |
+| antisymmetric plain algebra (APA) | $\tilde q_1\wedge\tilde q_2$ | alternating Lie algebra, no unit |
+| general quaternionic algebra (GQA) | $\tilde q_1^{\natural}\tilde q_2$ | left-unital, non-associative |
 
-**Theorem (the laws).** The antisymmetric plain algebra is the only one of the three that satisfies the Jacobi identity, and it is a Lie algebra; the symmetric plain algebra is commutative and satisfies the Jordan identity but not associativity; the general quaternionic algebra has the left unit $e_0$ alone and satisfies neither associativity nor the Jordan identity. Only the general quaternionic structure is free of zero divisors: the symmetric plain product vanishes at two anticommuting pure quaternions, such as $e_1$ and $e_2$, and the antisymmetric product vanishes at every element against itself.
+**Theorem (the laws).** The antisymmetric plain algebra is the only one of the three that satisfies the Jacobi identity, and it is a Lie algebra; the symmetric plain algebra is commutative and satisfies the Jordan identity but not associativity; the general quaternionic algebra has the left unit $e_t$ alone and satisfies neither associativity nor the Jordan identity. Only the general quaternionic structure is free of zero divisors: the symmetric plain product vanishes at two anticommuting pure quaternions, such as $\vec e_x$ and $\vec e_y$, and the antisymmetric product vanishes at every element against itself.
 
-**Proof.** The Jordan and Lie laws are computed in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the zero-divisor reading is *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. For the last clause, the left multiplication of the quaternionic product is $\tilde q\mapsto\tilde p^{\natural}\tilde q$, which is the left multiplication of the division algebra $\mathbb{H}$ by $\tilde p^{\natural}$, invertible for $\tilde p\neq0$, and the right multiplication $\tilde q\mapsto\tilde q\tilde p^{\natural}$ is invertible likewise.
+**Proof.** The Jordan and Lie laws are computed in *The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the zero-divisor reading is *Zero Divisors in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*. For the last clause, the left multiplication of the quaternionic product is $\tilde q_2\mapsto\tilde q_1^{\natural}\tilde q_2$, which is the left multiplication of the division algebra $\mathbb{H}$ by $\tilde q_1^{\natural}$, invertible for $\tilde q_1\neq0$, and the right multiplication $\tilde q_2\mapsto\tilde q_2\tilde q_1^{\natural}$ is invertible likewise.
 
 ## The Two Forms and the Two Algebraic Norms
 
 **Theorem.** The companion products carry **two bilinear forms**, the plain form and the quaternion form,
 
 $$
-\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0-(\vec p,\vec q), \qquad \langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0+(\vec p,\vec q),
+\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2) = q_{1t}q_{2t}-(\vec q_1,\vec q_2), \qquad \langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) = q_{1t}q_{2t}+(\vec q_1,\vec q_2),
 $$
 
 of Gram matrices $\operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$, hence of signatures $(1,3)$ and $(4,0)$; the first is carried by the algebra product and by the symmetric plain structure, the second by the general quaternionic structure. The forms are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*.
 
-**Theorem.** The **two algebraic norms** are the two forms read at their two equal arguments, $\langle\tilde p\rangle = p_0^2-\lvert\vec p\rvert^2$ and $\langle\tilde p\rangle_{\natural} = p_0^2+\lvert\vec p\rvert^2$; the first is indefinite and not multiplicative, the second is positive definite, zero only at the origin, and multiplicative. The criterion of invertibility of the algebra product is the second's: $\tilde p$ is invertible exactly when $\langle\tilde p\rangle_{\natural}\neq0$, with $\tilde p^{-1} = \tilde p^{\natural}/\lvert\tilde p\rvert^2$. The two algebraic norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*.
+**Theorem.** The **two algebraic norms** are the two forms read at their two equal arguments, $\langle\tilde q\rangle = q_t^2-\lvert\vec q\rvert^2$ and $\langle\tilde q\rangle_{\natural} = q_t^2+\lvert\vec q\rvert^2$; the first is indefinite and not multiplicative, the second is positive definite, zero only at the origin, and multiplicative. The criterion of invertibility of the algebra product is the second's: $\tilde q$ is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq0$, with $\tilde q^{-1} = \tilde q^{\natural}/\lvert\tilde q\rvert^2$. The two algebraic norms are *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*.
 
 ## The General and the Higher Structures
 
@@ -68,27 +68,27 @@ of Gram matrices $\operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$, hence of s
 
 ## Summary
 
-The quaternion space $\mathbb{H}$, of real dimension four and with the single involution ${}^{\natural}$, carries, beyond the algebra product of the *Quaternions* category, three companion products: the symmetric plain product $\tilde p\bullet\tilde q$, the antisymmetric plain product $\tilde p\wedge\tilde q = \vec p\times\vec q$, and the general quaternionic product $\tilde p^{\natural}\tilde q$. Their algebras are the structures of this category. The antisymmetric plain structure is a Lie algebra and the only one of the three satisfying Jacobi; the symmetric plain structure is a commutative Jordan algebra, unital and not associative; the general quaternionic structure is left-unital and non-associative, and faithful on each side.
+The quaternion space $\mathbb{H}$, of real dimension four and with the single involution ${}^{\natural}$, carries, beyond the algebra product of the *Quaternions* category, three companion products: the symmetric plain product $\tilde q_1\bullet\tilde q_2$, the antisymmetric plain product $\tilde q_1\wedge\tilde q_2 = \vec q_1\times\vec q_2$, and the general quaternionic product $\tilde q_1^{\natural}\tilde q_2$. Their algebras are the structures of this category. The antisymmetric plain structure is a Lie algebra and the only one of the three satisfying Jacobi; the symmetric plain structure is a commutative Jordan algebra, unital and not associative; the general quaternionic structure is left-unital and non-associative, and faithful on each side.
 
-The companion products carry two forms, $\langle\cdot,\cdot\rangle$ of signature $(1,3)$ and $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(4,0)$, and two algebraic norms, $\langle\tilde p\rangle = p_0^2-\lvert\vec p\rvert^2$, indefinite and not multiplicative, and $\langle\tilde p\rangle_{\natural} = p_0^2+\lvert\vec p\rvert^2$, definite and multiplicative, the latter being the criterion of invertibility of the algebra product.
+The companion products carry two forms, $\langle\cdot,\cdot\rangle$ of signature $(1,3)$ and $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(4,0)$, and two algebraic norms, $\langle\tilde q\rangle = q_t^2-\lvert\vec q\rvert^2$, indefinite and not multiplicative, and $\langle\tilde q\rangle_{\natural} = q_t^2+\lvert\vec q\rvert^2$, definite and multiplicative, the latter being the criterion of invertibility of the algebra product.
 
 | Structure | Product | Form | Algebraic norm |
 |---|---|---|---|
-| SPA | $\tilde p\bullet\tilde q$ | $\langle\tilde p,\tilde q\rangle = p_0q_0-(\vec p,\vec q)$ | $\langle\tilde p\rangle = p_0^2-\lvert\vec p\rvert^2$, indefinite |
-| APA | $\tilde p\wedge\tilde q$ | vanishing (antisymmetric) | vanishing |
-| GQA | $\tilde p^{\natural}\tilde q$ | $\langle\tilde p,\tilde q\rangle_{\natural} = p_0q_0+(\vec p,\vec q)$ | $\langle\tilde p\rangle_{\natural} = p_0^2+\lvert\vec p\rvert^2$, definite |
+| SPA | $\tilde q_1\bullet\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle = q_{1t}q_{2t}-(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle = q_t^2-\lvert\vec q\rvert^2$, indefinite |
+| APA | $\tilde q_1\wedge\tilde q_2$ | vanishing (antisymmetric) | vanishing |
+| GQA | $\tilde q_1^{\natural}\tilde q_2$ | $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = q_{1t}q_{2t}+(\vec q_1,\vec q_2)$ | $\langle\tilde q\rangle_{\natural} = q_t^2+\lvert\vec q\rvert^2$, definite |
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p = p_0e_0+\vec p$ | general quaternion, $p_\mu\in\mathbb{R}$ |
-| $\tilde p^{\natural}$ | quaternion conjugation, $e_k^{\natural} = -e_k$ |
-| $\tilde p\tilde q$ | the algebra product, of the *Quaternions* category |
-| $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q$, $\tilde p^{\natural}\tilde q$ | the three companion products |
+| $\tilde q = q_te_t+\vec q$ | general quaternion, $q_\mu\in\mathbb{R}$ |
+| $\tilde q^{\natural}$ | quaternion conjugation, $\vec e_k^{\natural} = -\vec e_k$ |
+| $\tilde q_1\tilde q_2$ | the algebra product, of the *Quaternions* category |
+| $\tilde q_1\bullet\tilde q_2$, $\tilde q_1\wedge\tilde q_2$, $\tilde q_1^{\natural}\tilde q_2$ | the three companion products |
 | SPA, APA, GQA | the three structures |
-| $\langle\tilde p,\tilde q\rangle$, $\langle\tilde p,\tilde q\rangle_{\natural}$ | the plain form and the quaternion form |
-| $\langle\tilde p\rangle$, $\langle\tilde p\rangle_{\natural}$ | the plain and quaternion algebraic norms |
+| $\langle\tilde q_1,\tilde q_2\rangle$, $\langle\tilde q_1,\tilde q_2\rangle_{\natural}$ | the plain form and the quaternion form |
+| $\langle\tilde q\rangle$, $\langle\tilde q\rangle_{\natural}$ | the plain and quaternion algebraic norms |
 | $\operatorname{diag}(1,-1,-1,-1)$, $\mathrm I_4$ | Gram matrices of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ |
 
 ## Further Reading

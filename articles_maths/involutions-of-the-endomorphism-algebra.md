@@ -68,7 +68,7 @@ $$
 A^{*}A = \mathrm{id} \iff B(Ax,Ay) = B(x,y) \text{ for all } x,y ,
 $$
 
-and they form a subgroup $U(V,B)$ of $E^{\times}$; in the bilinear symmetric case it contains $-1$ and the scalars $\lambda$ with $\lambda^{2} = 1$, in the antisymmetric case it contains $1$ and the scalars are $1$ only, and in the sesquilinear case it contains the scalars $\lambda$ with $\lambda\varsigma(\lambda) = 1$.
+and they form a subgroup $\mathrm{U}(V,B)$ of $E^{\times}$; in the bilinear symmetric case it contains $-1$ and the scalars $\lambda$ with $\lambda^{2} = 1$, in the antisymmetric case it contains $1$ and the scalars are $1$ only, and in the sesquilinear case it contains the scalars $\lambda$ with $\lambda\varsigma(\lambda) = 1$.
 
 **Proof.** If $A^{*} = A^{-1}$ then $B(Ax,Ay) = B(x,A^{*}Ay) = B(x,y)$; conversely $B(Ax,Ay)=B(x,y)$ for all $x,y$ gives $B(x,A^{*}Ay) = B(x,y)$, hence $A^{*}A = \mathrm{id}$ by non-degeneracy, and $AA^{*} = \mathrm{id}$ follows because $A$ is invertible, with inverse $A^{*}$. The product of two unitaries is unitary because $(AB)^{*}AB = B^{*}A^{*}AB = B^{*}B = \mathrm{id}$; the identity and inverses are unitary because $(A^{-1})^{*} = (A^{*})^{-1}$. The scalar computation is $(\lambda\mathrm{id})^{*}(\lambda\mathrm{id}) = \varsigma(\lambda)\lambda\,\mathrm{id}$.
 
@@ -76,7 +76,7 @@ and they form a subgroup $U(V,B)$ of $E^{\times}$; in the bilinear symmetric cas
 
 **Proof.** The first part is multiplicativity of the determinant and $\det A^{*}=\det A$; the antisymmetric case is the standard determinant identity for the symplectic group, quoted from the theory of the classical groups and belonging to *Symmetric Algebras* and *Anti-symmetric Algebras*.
 
-**Remark (the unitary elements as a set, not yet a group of operators).** This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $U(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are *Unitary Endomorphisms*, which follows.
+**Remark (the unitary elements as a set, not yet a group of operators).** This article owns the unitary elements of the involution: the fixed part, the skew part, the matrix description and the preservation criterion. The group structure of $\mathrm{U}(V,B)$ as a transformation group, its action on $V$, the subspace it preserves and the Lie algebra of self-adjoint elements under the commutator are *Unitary Endomorphisms*, which follows.
 
 ## Summary
 
@@ -95,7 +95,7 @@ A non-degenerate reflexive pairing $B$ on a finite-dimensional space $V$ defines
 | $E^{+}$, $E^{-}$ | self-adjoint and skew-adjoint parts, $A^{*}=\pm A$ |
 | $\Phi_{ij}=B(v_i,v_j)$ | the Gram matrix |
 | $[A^{*}]=\Phi^{-1}\overline{[A]}^{\mathsf{T}}\Phi$ | the matrix form of the involution |
-| $U(V,B)$ | the unitary elements, $A^{*}A=AA^{*}=\mathrm{id}$ |
+| $\mathrm{U}(V,B)$ | the unitary elements, $A^{*}A=AA^{*}=\mathrm{id}$ |
 | $\varepsilon$ | the sign of the reflexive bilinear pairing, $B(y,x)=\varepsilon B(x,y)$ |
 
 ## Further Reading

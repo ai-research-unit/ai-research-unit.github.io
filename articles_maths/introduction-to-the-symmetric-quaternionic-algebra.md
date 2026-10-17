@@ -8,11 +8,11 @@ $$
 \tilde P\star\tilde Q = \tfrac12\bigl(\tilde P^{\natural}\tilde Q + \tilde Q^{\natural}\tilde P\bigr).
 $$
 
-The general construction of the splitting is *The Symmetric and Antisymmetric Parts of an Algebra Product*; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\mathrm{SQA}$ among the twelve. The name $\mathrm{SQA}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$.
+The general construction of the splitting is *The Symmetric and Antisymmetric Parts of an Algebra Product*; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\mathrm{SQA}$ among the twelve. The name $\mathrm{SQA}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$.
 
 **Boundaries.** The four general products and their comparison are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *Comparison Between the Four General Products*; the catalogue of the twelve operations, whose row $\mathrm{SQA}$ is one line, is *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent and the root are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the norm, its polarisation and its isotropic cone are *Norm and Invertibility in the General Quaternionic Algebra* and *Zero Divisors of the Biquaternion Algebra*; the Jordan theory and the symmetrisation of an associative product are *Jordan Algebras*. The companion articles of the block read the same operation through its form (*The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*), on the remarkable subspaces (*Remarkable Subspaces under the Symmetric Quaternionic Algebra*), through its multiplication operators (*The Multiplication Operators of the Symmetric Quaternionic Algebra*) and in the two matrix models.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_0\in\mathbb{C}$ and $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ is the complex bilinear form of the two vector parts. The **natural conjugation** is $\tilde Q^{\natural}=Q_0-\vec Q$, the **star** is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$, and the **Hermitian conjugation** is $\overline{\tilde Q}=\tilde Q^{\natural*}$; all three fix $e_0$, and the star and the Hermitian conjugation are conjugate-linear. The **centre** of the plain product is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are the remaining remarkable subspaces of *Introduction to the Remarkable Subspaces*. The symmetric quaternionic multiplication is denoted $\star$ throughout the Common Theory entries of the block and $\bullet$ in its Specific Theory and Operators entries; the two are the same operation.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu=Q_te_t+\vec Q$ with $Q_t\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and $(\vec P,\vec Q)=\sum_{k\in\{x,y,z\}}P_kQ_k$ is the complex bilinear form of the two vector parts. The **natural conjugation** is $\tilde Q^{\natural}=Q_t-\vec Q$, the **star** is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$, and the **Hermitian conjugation** is $\overline{\tilde Q}=\tilde Q^{\natural*}$; all three fix $e_t$, and the star and the Hermitian conjugation are conjugate-linear. The **centre** of the plain product is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the **vector subspace** is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}\vec e_x+\mathbb{C}\vec e_y+\mathbb{C}\vec e_z$, and $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are the remaining remarkable subspaces of *Introduction to the Remarkable Subspaces*. The symmetric quaternionic multiplication is denoted $\star$ throughout the Common Theory entries of the block and $\bullet$ in its Specific Theory and Operators entries; the two are the same operation.
 
 ## The Operation
 
@@ -39,10 +39,10 @@ and the operation is the multiplication of the structure denoted $\mathrm{SQA}$ 
 **Theorem (the value is central and the coefficient is the quaternion form).** For all $\tilde P,\tilde Q\in\mathbb{B}$,
 
 $$
-\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{\natural}\,e_0,\qquad \langle\tilde P,\tilde Q\rangle_{\natural}=P_0Q_0+(\vec P,\vec Q).
+\tilde P\star\tilde Q = \langle\tilde P,\tilde Q\rangle_{\natural}\,e_t,\qquad \langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q).
 $$
 
-*Proof.* Write $\tilde P^{\natural}\tilde Q$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $P_0Q_0+(\vec P,\vec Q)$, vector part $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$. The exchange $\tilde Q^{\natural}\tilde P$ has the same scalar part and the vector part $Q_0\vec P-P_0\vec Q-\vec Q\times\vec P$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec P\times\vec Q=-\vec Q\times\vec P$.
+*Proof.* Write $\tilde P^{\natural}\tilde Q$ in scalar and vector parts (*Introduction to the General Quaternionic Algebra*): scalar part $P_tQ_t+(\vec P,\vec Q)$, vector part $P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$. The exchange $\tilde Q^{\natural}\tilde P$ has the same scalar part and the vector part $Q_t\vec P-P_t\vec Q-\vec Q\times\vec P$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec P\times\vec Q=-\vec Q\times\vec P$.
 
 The coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the **quaternion form**, the one of the four forms of the space that the catalogue article *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* attaches to $\mathrm{SQA}$; its comparison with the other three forms is *Comparison Between the Four General Products* and *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
@@ -54,30 +54,30 @@ $$
 
 *Proof.* Bilinearity is read on the definition, the two slots being linear; commutativity is read on the defining half-sum; centrality is the theorem; and the commutator vanishes because the product is commutative.
 
-**Remark (the value is central although neither summand is).** The two summands $\tilde P^{\natural}\tilde Q$ and $\tilde Q^{\natural}\tilde P$ are exchanged by the natural conjugation, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\mathrm{SQA}$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_0$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
+**Remark (the value is central although neither summand is).** The two summands $\tilde P^{\natural}\tilde Q$ and $\tilde Q^{\natural}\tilde P$ are exchanged by the natural conjugation, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\mathrm{SQA}$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t$; the operation is the pairing $\langle\cdot,\cdot\rangle_{\natural}$ placed on the central line.
 
 ## The Multiplication Table
 
 The product of two basis elements is read from the definition and tabulated.
 
-**Proposition (the basis table).** For $\mu,\nu\in\{0,1,2,3\}$,
+**Proposition (the basis table).** For $\mu,\nu\in\{t,x,y,z\}$,
 
 $$
-e_\mu\star e_\nu = \delta_{\mu\nu}\,e_0 .
+e_\mu\star e_\nu = \delta_{\mu\nu}\,e_t .
 $$
 
-*Proof.* For $\mu=\nu=0$: $e_0\star e_0=\tfrac12(e_0e_0+e_0e_0)=e_0$, and $\langle e_0,e_0\rangle_{\natural}=1$. For $\mu=\nu=k\ne0$: $e_k\star e_k=e_k^{\natural}e_k=(-e_k)e_k=e_0$, since $e_k^2=-e_0$, and $\langle e_k,e_k\rangle_{\natural}=1$. For $\mu\ne\nu$: if both indices are nonzero then $e_\mu^{\natural}e_\nu=-e_\mu e_\nu$ and $e_\nu^{\natural}e_\mu=-e_\nu e_\mu$, and $e_\mu e_\nu=-e_\nu e_\mu$ for the basis, so the two summands cancel; if one index is $0$ and the other is $k\ne0$ then $e_0^{\natural}e_k=e_k$ and $e_k^{\natural}e_0=-e_k$, which cancel; so the value is $0=\delta_{\mu\nu}e_0$.
+*Proof.* For $\mu=\nu=t$: $e_t\star e_t=\tfrac12(e_t e_t+e_t e_t)=e_t$, and $\langle e_t,e_t\rangle_{\natural}=1$. For $\mu=\nu=k\in\{x,y,z\}$: $\vec e_k\star \vec e_k=\vec e_k^{\natural}\vec e_k=(-\vec e_k)\vec e_k=e_t$, since $\vec e_k^2=-e_t$, and $\langle \vec e_k,\vec e_k\rangle_{\natural}=1$. For $\mu\ne\nu$: if both indices are in $\{x,y,z\}$ then $e_\mu^{\natural}e_\nu=-e_\mu e_\nu$ and $e_\nu^{\natural}e_\mu=-e_\nu e_\mu$, and $e_\mu e_\nu=-e_\nu e_\mu$ for the basis, so the two summands cancel; if one index is $t$ and the other is $k\in\{x,y,z\}$ then $e_t^{\natural}\vec e_k=\vec e_k$ and $\vec e_k^{\natural}e_t=-\vec e_k$, which cancel; so the value is $0=\delta_{\mu\nu}e_t$.
 
-| $\star$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
+| $\star$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $e_0$ | $e_0$ | $0$ | $0$ | $0$ |
-| $e_1$ | $0$ | $e_0$ | $0$ | $0$ |
-| $e_2$ | $0$ | $0$ | $e_0$ | $0$ |
-| $e_3$ | $0$ | $0$ | $0$ | $e_0$ |
+| $e_t$ | $e_t$ | $0$ | $0$ | $0$ |
+| $\vec e_x$ | $0$ | $e_t$ | $0$ | $0$ |
+| $\vec e_y$ | $0$ | $0$ | $e_t$ | $0$ |
+| $\vec e_z$ | $0$ | $0$ | $0$ | $e_t$ |
 
-**Corollary (bilinearity and the determination by the table).** The sixteen products are exactly the sixteen entries of the unit matrix: the coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the standard symmetric $\mathbb{C}$-bilinear form of $\mathbb{C}^4$, with Gram matrix the identity on the basis, and the operation is determined by its table, $(\sum_\mu P_\mu e_\mu)\star(\sum_\nu Q_\nu e_\nu)=\sum_\mu P_\mu Q_\mu\,e_0$.
+**Corollary (bilinearity and the determination by the table).** The sixteen products are exactly the sixteen entries of the unit matrix: the coefficient $\langle\cdot,\cdot\rangle_{\natural}$ is the standard symmetric $\mathbb{C}$-bilinear form of $\mathbb{C}^4$, with Gram matrix the identity on the basis, and the operation is determined by its table, $(\sum_\mu P_\mu e_\mu)\star(\sum_\nu Q_\nu e_\nu)=\sum_\mu P_\mu Q_\mu\,e_t$.
 
-*Proof.* The table gives $e_\mu\star e_\nu=\delta_{\mu\nu}e_0$, and bilinearity extends the display to the general pair; conversely the display evaluates the definition of $\langle\cdot,\cdot\rangle_{\natural}$.
+*Proof.* The table gives $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, and bilinearity extends the display to the general pair; conversely the display evaluates the definition of $\langle\cdot,\cdot\rangle_{\natural}$.
 
 **Remark (the table is not the one of the plain product).** The plain product gives a fixed-point-free permutation table with signs (*Introduction to the Biquaternion Algebra*), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.
 
@@ -87,40 +87,40 @@ The operation is a commutative multiplication with zero commutator, and no furth
 
 ### Commutativity, and the Collapse of the Derived Operation
 
-The operation is commutative, so its **commutator** vanishes identically and the derived operation is the zero operation. The derived algebra is therefore the central line $\mathbb{C}e_0$ alone, on which the operation is the multiplication of $\mathbb{C}$: for complex $A,B$,
+The operation is commutative, so its **commutator** vanishes identically and the derived operation is the zero operation. The derived algebra is therefore the central line $\mathbb{C}e_t$ alone, on which the operation is the multiplication of $\mathbb{C}$: for complex $A,B$,
 
 $$
-(Ae_0)\star(Be_0)=AB\,e_0 .
+(Ae_t)\star(Be_t)=AB\,e_t .
 $$
 
 The operation carries no Lie structure; the antisymmetric half of the parent carries it instead, and that half is $\mathrm{AQA}$.
 
 ### Associativity
 
-**Proposition (the operation is not associative).** At $\tilde P=\tilde Q=e_1$, $\tilde R=e_0$ the two bracketings differ,
+**Proposition (the operation is not associative).** At $\tilde P=\tilde Q=\vec e_x$, $\tilde R=e_t$ the two bracketings differ,
 
 $$
-(\tilde P\star\tilde Q)\star\tilde R=e_0\neq 0=\tilde P\star(\tilde Q\star\tilde R),
+(\tilde P\star\tilde Q)\star\tilde R=e_t\neq 0=\tilde P\star(\tilde Q\star\tilde R),
 $$
 
 and the general associator is
 
 $$
 (\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)
-=\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_0-P_0\langle\tilde Q,\tilde R\rangle_{\natural}\bigr)e_0 .
+=\bigl(\langle\tilde P,\tilde Q\rangle_{\natural}R_t-P_t\langle\tilde Q,\tilde R\rangle_{\natural}\bigr)e_t .
 $$
 
-*Proof.* $(\tilde P\star\tilde Q)\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}e_0\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}R_0e_0$, and $\tilde P\star(\tilde Q\star\tilde R)=\langle\tilde Q,\tilde R\rangle_{\natural}\,P_0e_0$. At the witness the first is $\langle e_1,e_1\rangle_{\natural}e_0=e_0$ and the second $\langle e_1,e_0\rangle_{\natural}e_0=0$.
+*Proof.* $(\tilde P\star\tilde Q)\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}e_t\star\tilde R=\langle\tilde P,\tilde Q\rangle_{\natural}R_te_t$, and $\tilde P\star(\tilde Q\star\tilde R)=\langle\tilde Q,\tilde R\rangle_{\natural}\,P_te_t$. At the witness the first is $\langle \vec e_x,\vec e_x\rangle_{\natural}e_t=e_t$ and the second $\langle \vec e_x,e_t\rangle_{\natural}e_t=0$.
 
 ### Power-Associativity
 
-**Proposition (the operation is not power-associative).** The bracketings of the fourth power do not agree. At $\tilde X=e_0+e_1$, whose square is $\tilde X\star\tilde X=2e_0$,
+**Proposition (the operation is not power-associative).** The bracketings of the fourth power do not agree. At $\tilde X=e_t+\vec e_x$, whose square is $\tilde X\star\tilde X=2e_t$,
 
 $$
-(\tilde X\star\tilde X)\star(\tilde X\star\tilde X)=4e_0\neq 2e_0=\bigl((\tilde X\star\tilde X)\star\tilde X\bigr)\star\tilde X .
+(\tilde X\star\tilde X)\star(\tilde X\star\tilde X)=4e_t\neq 2e_t=\bigl((\tilde X\star\tilde X)\star\tilde X\bigr)\star\tilde X .
 $$
 
-*Proof.* $\tilde X\star\tilde X=\langle\tilde X\rangle_{\natural}e_0=2e_0$. On the left the product is $2e_0\star2e_0=4e_0$. On the right, $(\tilde X\star\tilde X)\star\tilde X=2e_0\star\tilde X=2X_0e_0=2e_0$, and $2e_0\star\tilde X=2e_0$ again; so the right side is $2e_0$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.
+*Proof.* $\tilde X\star\tilde X=\langle\tilde X\rangle_{\natural}e_t=2e_t$. On the left the product is $2e_t\star2e_t=4e_t$. On the right, $(\tilde X\star\tilde X)\star\tilde X=2e_t\star\tilde X=2X_te_t=2e_t$, and $2e_t\star\tilde X=2e_t$ again; so the right side is $2e_t$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.
 
 The three-element powers agree, since $\tilde X\star(\tilde X\star\tilde X)=(\tilde X\star\tilde X)\star\tilde X$ by commutativity; the failure appears at the fourth power, the first power at which two essentially different bracketings exist.
 
@@ -133,9 +133,9 @@ $$
 =\bigl(\tilde P\star\tilde Q\bigr)\star\bigl(\tilde P\star\tilde P\bigr)
 $$
 
-fails, and at $\tilde P=\tilde Q=e_1$ the two sides are $0$ and $e_0$.
+fails, and at $\tilde P=\tilde Q=\vec e_x$ the two sides are $0$ and $e_t$.
 
-*Proof.* At $x=e_1$ the square is $x\star x=e_0$. The left side is $x\star(x\star e_0)=x\star \langle x,e_0\rangle_{\natural}e_0=x\star0=0$; the right side is $(x\star x)\star(x\star x)=e_0\star e_0=\langle e_0,e_0\rangle_{\natural}e_0=e_0$.
+*Proof.* At $x=\vec e_x$ the square is $x\star x=e_t$. The left side is $x\star(x\star e_t)=x\star \langle x,e_t\rangle_{\natural}e_t=x\star0=0$; the right side is $(x\star x)\star(x\star x)=e_t\star e_t=\langle e_t,e_t\rangle_{\natural}e_t=e_t$.
 
 **Proposition (the Jacobi identity fails).** For the same product the identity
 
@@ -143,46 +143,46 @@ $$
 \tilde X\star(\tilde Y\star\tilde Z)+\tilde Y\star(\tilde Z\star\tilde X)+\tilde Z\star(\tilde X\star\tilde Y)=0
 $$
 
-fails, and at $\tilde X=\tilde Y=\tilde Z=e_0$ its left side is $3e_0$.
+fails, and at $\tilde X=\tilde Y=\tilde Z=e_t$ its left side is $3e_t$.
 
-*Proof.* $\tilde Y\star\tilde Z=\langle\tilde Y,\tilde Z\rangle_{\natural}e_0$, so the first term is $X_0\langle\tilde Y,\tilde Z\rangle_{\natural}e_0$ and the sum is $\bigl(X_0\langle\tilde Y,\tilde Z\rangle_{\natural}+Y_0\langle\tilde Z,\tilde X\rangle_{\natural}+Z_0\langle\tilde X,\tilde Y\rangle_{\natural}\bigr)e_0$, which at the three units is $3e_0$.
+*Proof.* $\tilde Y\star\tilde Z=\langle\tilde Y,\tilde Z\rangle_{\natural}e_t$, so the first term is $X_t\langle\tilde Y,\tilde Z\rangle_{\natural}e_t$ and the sum is $\bigl(X_t\langle\tilde Y,\tilde Z\rangle_{\natural}+Y_t\langle\tilde Z,\tilde X\rangle_{\natural}+Z_t\langle\tilde X,\tilde Y\rangle_{\natural}\bigr)e_t$, which at the three units is $3e_t$.
 
-**Proposition (the alternating law fails).** The operation is not alternating: $e_0\star e_0=e_0\neq0$, so there is an element whose square does not vanish.
+**Proposition (the alternating law fails).** The operation is not alternating: $e_t\star e_t=e_t\neq0$, so there is an element whose square does not vanish.
 
 The operation is therefore neither associative, nor power-associative, nor a Jordan product, nor a Lie bracket. It is one of the two central operations of the twelve, the other being the symmetric part of the plain sesquilinear product, and the collapse of the commutator does not imply the collapse of the associator.
 
 ## The Image and the Unit
 
-**Proposition (the image is the central line).** The image of $\star$ is the central line $\mathbb{C}e_0=\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$.
+**Proposition (the image is the central line).** The image of $\star$ is the central line $\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$.
 
-*Proof.* Every value is central by the theorem of §*The Operation*, and every central element is a complex multiple of $e_0$.
+*Proof.* Every value is central by the theorem of §*The Operation*, and every central element is a complex multiple of $e_t$.
 
 **Proposition (there is no unit).** The operation has no unit, and no one-sided unit either. For every element $\tilde A$,
 
 $$
-\tilde A\star e_0=e_0\star\tilde A=A_0\,e_0 ,
+\tilde A\star e_t=e_t\star\tilde A=A_t\,e_t ,
 $$
 
-so $e_0$ is a unit for the central line alone. An element $u$ with $u\star\tilde Q=\tilde Q$ for every $\tilde Q$ would give $u\star e_0=u_0e_0=e_0$, hence $u_0=1$, and then $u\star e_1=u_1e_0=e_1$, which is impossible because $u_1e_0$ is central and $e_1$ is not.
+so $e_t$ is a unit for the central line alone. An element $\tilde u$ with $\tilde u\star\tilde Q=\tilde Q$ for every $\tilde Q$ would give $\tilde u\star e_t=u_te_t=e_t$, hence $u_t=1$, and then $\tilde u\star \vec e_x=u_xe_t=\vec e_x$, which is impossible because $u_xe_t$ is central and $\vec e_x$ is not.
 
-*Proof.* The display is the theorem at $\tilde Q=e_0$: $\langle\tilde A,e_0\rangle_{\natural}=A_0=\langle e_0,\tilde A\rangle_{\natural}$. The unit argument is the one displayed; the same computation with the argument $e_1$ excludes a right unit.
+*Proof.* The display is the theorem at $\tilde Q=e_t$: $\langle\tilde A,e_t\rangle_{\natural}=A_t=\langle e_t,\tilde A\rangle_{\natural}$. The unit argument is the one displayed; the same computation with the argument $\vec e_x$ excludes a right unit.
 
-**Remark (the centre of the operation and the centre of the plain product).** Two different sets could be called central and are kept apart. Because $\star$ is commutative, its mutual commutant is the whole space: every element commutes with every other under $\star$. The centre of the *plain* product is the line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and that is the set in which the *values* of $\star$ lie. The operation is thus commutative everywhere while producing values in the centre of the algebra, and the two statements are not merged.
+**Remark (the centre of the operation and the centre of the plain product).** Two different sets could be called central and are kept apart. Because $\star$ is commutative, its mutual commutant is the whole space: every element commutes with every other under $\star$. The centre of the *plain* product is the line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, and that is the set in which the *values* of $\star$ lie. The operation is thus commutative everywhere while producing values in the centre of the algebra, and the two statements are not merged.
 
-**Remark (the operation acts by the scalar part).** Multiplication by the central element $Ae_0$ is the map $\tilde Q\mapsto AQ_0e_0$: the scalar part of the argument, scaled and placed in the centre. The vector part of any argument is annihilated by the product with any element of the image. The operation is accordingly a representation of $\mathbb{C}$ on the central line rather than the multiplication of a unital algebra, and the first row and the first column of the table are the identity row and the identity column while the three vector rows and columns are zero.
+**Remark (the operation acts by the scalar part).** Multiplication by the central element $Ae_t$ is the map $\tilde Q\mapsto AQ_te_t$: the scalar part of the argument, scaled and placed in the centre. The vector part of any argument is annihilated by the product with any element of the image. The operation is accordingly a representation of $\mathbb{C}$ on the central line rather than the multiplication of a unital algebra, and the first row and the first column of the table are the identity row and the identity column while the three vector rows and columns are zero.
 
 ## The Square and Its Polarisation
 
 **Proposition (the square).** For every $\tilde Q$,
 
 $$
-\tilde Q\star\tilde Q = \langle\tilde Q\rangle_{\natural}\,e_0,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2,
+\tilde Q\star\tilde Q = \langle\tilde Q\rangle_{\natural}\,e_t,\qquad \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2,
 $$
 
 and the coefficient is the polarisation of the square,
 
 $$
-\tilde P\star\tilde Q=\tfrac12\Bigl(\langle\tilde P+\tilde Q\rangle_{\natural}-\langle\tilde P\rangle_{\natural}-\langle\tilde Q\rangle_{\natural}\Bigr)e_0 .
+\tilde P\star\tilde Q=\tfrac12\Bigl(\langle\tilde P+\tilde Q\rangle_{\natural}-\langle\tilde P\rangle_{\natural}-\langle\tilde Q\rangle_{\natural}\Bigr)e_t .
 $$
 
 *Proof.* The square is the theorem of §*The Operation* at $\tilde P=\tilde Q$, and $\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; the polarisation identity is the expansion of the square of $\tilde P+\tilde Q$ by bilinearity.
@@ -206,28 +206,28 @@ with $\mathrm{SQA}$ one of the two central operations and $\mathrm{AQA}$ one of 
 | $\mathrm{SQA}$ | $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | $\mathbb{C}$-bilinear, commutative, central values, no unit |
 | $\mathrm{AQA}$ | $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | $\mathbb{C}$-bilinear, alternating, no unit |
 
-**The two contrasts.** The operation differs from the symmetric part of the **plain** product, which is the Jordan product with the unit $e_0$, which is commutative and not central-valued, and which satisfies the Jordan identity; and it differs from the symmetric part of the **plain sesquilinear** product, which is central-valued like $\mathrm{SQA}$ but conjugate-commutative rather than commutative. On the real elements the two central operations coincide, $\mathrm{SQA}=\mathrm{SPS}$, and the catalogue records ten distinct operations on the real part against twelve on the complex space (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The exclusive law that singles $\mathrm{SQA}$ out among the twelve is stated in *The Specificities of the Symmetric Quaternionic Algebra*; the element theory of the block is the subject of the six later Common Theory entries.
+**The two contrasts.** The operation differs from the symmetric part of the **plain** product, which is the Jordan product with the unit $e_t$, which is commutative and not central-valued, and which satisfies the Jordan identity; and it differs from the symmetric part of the **plain sesquilinear** product, which is central-valued like $\mathrm{SQA}$ but conjugate-commutative rather than commutative. On the real elements the two central operations coincide, $\mathrm{SQA}=\mathrm{SPS}$, and the catalogue records ten distinct operations on the real part against twelve on the complex space (*The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). The exclusive law that singles $\mathrm{SQA}$ out among the twelve is stated in *The Specificities of the Symmetric Quaternionic Algebra*; the element theory of the block is the subject of the six later Common Theory entries.
 
 **Remark (the name and what it does not claim).** The trailing $\mathrm A$ records that the operation is $\mathbb{C}$-bilinear and not merely sesquilinear, since the general quaternionic product from which it is taken is $\mathbb{C}$-bilinear. The word *symmetric* refers to the symmetry of the two slots, and the word *quaternionic* to the conjugation inserted in the parent product; neither word is a claim about a further structure.
 
 ## Summary
 
-The symmetric part of the general quaternionic product $\tilde P^{\natural}\tilde Q$ is the commutative $\mathbb{C}$-bilinear operation $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, whose value is always the central element $\langle\tilde P,\tilde Q\rangle_{\natural}e_0$ with $\langle\tilde P,\tilde Q\rangle_{\natural}=P_0Q_0+(\vec P,\vec Q)$ the quaternion form. The sixteen basis products are the entries of the unit matrix, $e_\mu\star e_\nu=\delta_{\mu\nu}e_0$, so the operation is the standard symmetric form of $\mathbb{C}^4$ read as a product and is determined by its table. The image is the central line $\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$; there is no unit and no one-sided unit, the element $e_0$ being a unit for the central line alone. The operation is commutative with vanishing commutator, and it fails associativity at $(e_1,e_1,e_0)$, power-associativity at $e_0+e_1$, the Jordan identity at $e_1$, the Jacobi identity at $e_0$ and the alternating law at $e_0$; the collapse of the commutator does not imply the collapse of the associator. The square is the norm of the parent product, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_0$ with $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and its polarisation is the form $\langle\tilde P,\tilde Q\rangle_{\natural}$. The operation is the unique central and commutative one among the six $\mathbb{C}$-bilinear operations of the catalogue, and it collapses on the real part with the symmetric part of the plain sesquilinear product; the companion articles of the block read it through its form, its subspaces, its operators and its matrix models.
+The symmetric part of the general quaternionic product $\tilde P^{\natural}\tilde Q$ is the commutative $\mathbb{C}$-bilinear operation $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, whose value is always the central element $\langle\tilde P,\tilde Q\rangle_{\natural}e_t$ with $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ the quaternion form. The sixteen basis products are the entries of the unit matrix, $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, so the operation is the standard symmetric form of $\mathbb{C}^4$ read as a product and is determined by its table. The image is the central line $\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$; there is no unit and no one-sided unit, the element $e_t$ being a unit for the central line alone. The operation is commutative with vanishing commutator, and it fails associativity at $(\vec e_x,\vec e_x,e_t)$, power-associativity at $e_t+\vec e_x$, the Jordan identity at $\vec e_x$, the Jacobi identity at $e_t$ and the alternating law at $e_t$; the collapse of the commutator does not imply the collapse of the associator. The square is the norm of the parent product, $\tilde Q\star\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ with $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$, and its polarisation is the form $\langle\tilde P,\tilde Q\rangle_{\natural}$. The operation is the unique central and commutative one among the six $\mathbb{C}$-bilinear operations of the catalogue, and it collapses on the real part with the symmetric part of the plain sesquilinear product; the companion articles of the block read it through its form, its subspaces, its operators and its matrix models.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2=-e_0$, $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$ |
-| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the natural, the star and the Hermitian conjugations, all fixing $e_0$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the basis, $e_t$ the identity, $\vec e_k^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$, $\vec e_y \vec e_z=\vec e_x$, $\vec e_z \vec e_x=\vec e_y$ |
+| ${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$ | the natural, the star and the Hermitian conjugations, all fixing $e_t$ |
 | $i$ | the central scalar imaginary, $i^2=-1$ |
 | $\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the parent product |
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$ |
 | $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ | the quaternionic bracket, the operation $\mathrm{AQA}$ |
-| $\langle\tilde P,\tilde Q\rangle_{\natural}=P_0Q_0+(\vec P,\vec Q)$ | the quaternion form, the coefficient of the product |
+| $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$ | the quaternion form, the coefficient of the product |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $\langle\cdot,\cdot\rangle_{\natural}$, the norm of the parent product |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre of the plain product, the image of $\star$ |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the plain product, the image of $\star$ |
 | $\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$ | the three operations of the quaternionic row of the catalogue |
 
 ## Further Reading

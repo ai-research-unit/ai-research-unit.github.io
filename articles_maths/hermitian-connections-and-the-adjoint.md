@@ -82,7 +82,7 @@ where $e_1,\ldots,e_n$ is a local orthonormal frame, $\nabla^* : \Gamma(T^*M\oti
 
 **Proposition.** The connection Laplacian is a formally self-adjoint second-order operator; its principal symbol is $\lvert\xi\rvert^2\,\mathrm{id}$, so it is elliptic and positive semidefinite; for the trivial connection on functions it is the Laplace–Beltrami operator, and for the Levi-Civita connection on the tangent bundle it is the rough Laplacian of the metric.
 
-*Proof.* The formal self-adjointness is $\langle\nabla^*\nabla s,t\rangle_{L^2} = \langle\nabla s,\nabla t\rangle_{L^2} = \langle s,\nabla^*\nabla t\rangle_{L^2}$ up to the sign, which is the pairing of the $1$-form-valued sections by the metric extended to $T^*M\otimes E$; the symbol is computed from the second-order part, which is the metric contraction, $-\sum g^{ij}\partial_i\partial_j$, whose symbol is $g^{ij}\xi_i\xi_j=\lvert\xi\rvert^2$. The identifications with the Laplace–Beltrami and the rough Laplacian are the definitions.
+*Proof.* The formal self-adjointness is $\langle\nabla^*\nabla s,t\rangle_{L^2} = \langle\nabla s,\nabla t\rangle_{L^2} = \langle s,\nabla^*\nabla t\rangle_{L^2}$ up to the sign, which is the pairing of the $1$-form-valued sections by the metric extended to $T^*M\otimes E$; the symbol is computed from the second-order part, which is the metric contraction, $-\sum g^{ij}\partial^2/\partial x_i\partial x_j$, whose symbol is $g^{ij}\xi_i\xi_j=\lvert\xi\rvert^2$. The identifications with the Laplace–Beltrami and the rough Laplacian are the definitions.
 
 ## The Curvature of the Adjoint Connection
 

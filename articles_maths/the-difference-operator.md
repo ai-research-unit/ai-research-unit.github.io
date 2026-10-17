@@ -23,7 +23,7 @@ transform in the form used here, and *Modes of Convergence* for the convergence 
 series of a sequence and the character theory of $\mathbb Z$ are used as they are available in the
 Fourier article, and the general transform on a locally compact abelian group is *Harmonic Analysis on
 Groups*, in the neighbouring category *Analysis on Groups* of this Part. Nothing about the derivative is
-assumed beyond the definition: the passage from $\Delta_h/h$ to $\partial_j$ is proved here by Taylor's
+assumed beyond the definition: the passage from $\Delta_h/h$ to $\partial/\partial x_j$ is proved here by Taylor's
 formula, and the one-parameter ideas are those of the preceding article. The algebra of the special
 sequences and of the polynomials of the finite difference calculus — the Bernoulli and Euler numbers, the
 Sheffer and Appell sequences, the umbral composition — belongs to *Special Functions* and to *Combinatorial
@@ -93,9 +93,9 @@ $$
 collecting gives the stated identities.
 
 The theorem is the sense in which the difference operator is the discrete generator: the preceding article
-proved that $-\partial_j$ is the generator of the one-parameter group $\tau_{te_j}$, and the difference
+proved that $-\partial/\partial x_j$ is the generator of the one-parameter group $\tau_{te_j}$, and the difference
 $\Delta_{te_j}$ is its first-order discrete version, the two being related by
-$\Delta_{te_j}=t\partial_j+o(t)=-tA_j+o(t)$ on the domain of $A_j$.
+$\Delta_{te_j}=t\partial/\partial x_j+o(t)=-tA_j+o(t)$ on the domain of $A_j$.
 
 ## Summation: The Inverse of the Difference
 
@@ -247,7 +247,7 @@ Laplacian** is
 $$
 L_h=\frac1{h^2}\sum_{j=1}^n\bigl(\tau_{he_j}-2\mathrm{id}+\tau_{-he_j}\bigr),
 $$
-which by the second-difference theorem converges to the Laplacian $\sum_j\partial_j^2$ on smooth
+which by the second-difference theorem converges to the Laplacian $\sum_j\partial^2/\partial x_j^2$ on smooth
 functions as $h\to0$. The operator $L_h$ is the generator of the simple random walk on the lattice
 $h\mathbb Z^n$ in the sign convention of the heat equation, and the discrete maximum principle for it —
 a function with $L_hf\geq0$ has no interior maximum — is the discrete form of the maximum principle that
@@ -263,7 +263,7 @@ and its eigenvalues are $\exp(2\pi in/N)-1$, the discrete version of the transfo
 
 The forward difference $\Delta=\tau_{-1}-\mathrm{id}$ is the discrete derivative, with
 $(\Delta a)_n=a_{n+1}-a_n$ and $(\Delta_ha)(x)=a(x+h)-a(x)$; its iterates expand binomially,
-$\Delta^ma_n=\sum_j(-1)^{m-j}\binom mj a_{n+j}$, the Leibniz rule holds, and $\Delta_h/h\to\partial_j$ with
+$\Delta^ma_n=\sum_j(-1)^{m-j}\binom mj a_{n+j}$, the Leibniz rule holds, and $\Delta_h/h\to\partial/\partial x_j$ with
 the second difference giving the second derivative. Its inverse is the summation $\Sigma$, characterised by
 $\Delta\Sigma=\mathrm{id}$ and $\Sigma\Delta a=a-a_0$, with summation by parts as the discrete integration
 by parts and Abel's and Dirichlet's tests as its consequences. The eigenfunctions are the characters, with

@@ -23,10 +23,10 @@ The article assumes the topological background of *Topological Spaces* and *Metr
 
 The three conditions are not redundant. Hausdorffness makes limits unique and prevents the line with two origins; second countability excludes the long line and makes partitions of unity available; the local Euclidean condition makes the space locally compact and locally path connected. The number $n$ is well defined, by the invariance of dimension, which is a theorem of algebraic topology and is quoted as standard.
 
-**Definition.** A **chart** on $M$ is a pair $(U, \varphi)$ where $U \subseteq M$ is open and $\varphi : U \to \varphi(U) \subseteq \mathbb{R}^n$ is a homeomorphism onto an open set. The functions $x^i = \operatorname{pr}_i \circ \varphi$ are the **coordinate functions** of the chart. Two charts $(U, \varphi)$ and $(V, \psi)$ are **smoothly compatible** if either $U \cap V = \emptyset$ or the **transition map**
+**Definition.** A **chart** on $M$ is a pair $(\Omega, \varphi)$ where $\Omega \subseteq M$ is open and $\varphi : \Omega \to \varphi(\Omega) \subseteq \mathbb{R}^n$ is a homeomorphism onto an open set. The functions $x^i = \operatorname{pr}_i \circ \varphi$ are the **coordinate functions** of the chart. Two charts $(\Omega, \varphi)$ and $(V, \psi)$ are **smoothly compatible** if either $\Omega \cap V = \emptyset$ or the **transition map**
 
 $$
-\psi \circ \varphi^{-1} : \varphi(U \cap V) \longrightarrow \psi(U \cap V)
+\psi \circ \varphi^{-1} : \varphi(\Omega \cap V) \longrightarrow \psi(\Omega \cap V)
 $$
 
 is a diffeomorphism of open subsets of $\mathbb{R}^n$, that is, a bijection that is smooth with smooth inverse.
@@ -37,10 +37,10 @@ is a diffeomorphism of open subsets of $\mathbb{R}^n$, that is, a bijection that
 
 ### Smooth Maps and Diffeomorphisms
 
-**Definition.** Let $M$ and $N$ be smooth manifolds of dimensions $m$ and $n$. A continuous map $F : M \to N$ is **smooth** if for every pair of charts $(U, \varphi)$ on $M$ and $(V, \psi)$ on $N$ the composition
+**Definition.** Let $M$ and $N$ be smooth manifolds of dimensions $m$ and $n$. A continuous map $F : M \to N$ is **smooth** if for every pair of charts $(\Omega, \varphi)$ on $M$ and $(V, \psi)$ on $N$ the composition
 
 $$
-\psi \circ F \circ \varphi^{-1} : \varphi(U \cap F^{-1}(V)) \longrightarrow \mathbb{R}^n
+\psi \circ F \circ \varphi^{-1} : \varphi(\Omega \cap F^{-1}(V)) \longrightarrow \mathbb{R}^n
 $$
 
 is smooth as a map of open subsets of Euclidean spaces. The property is local, so it suffices to check it on a cover by charts, and it is independent of the atlases chosen in the equivalence classes.
@@ -53,9 +53,9 @@ is smooth as a map of open subsets of Euclidean spaces. The property is local, s
 
 ### Partitions of Unity
 
-**Definition.** Let $\{U_\alpha\}$ be an open cover of a smooth manifold $M$. A **partition of unity subordinate** to the cover is a family $\{\rho_\alpha\}$ of smooth functions $\rho_\alpha : M \to [0, 1]$ such that
+**Definition.** Let $\{\Omega_\alpha\}$ be an open cover of a smooth manifold $M$. A **partition of unity subordinate** to the cover is a family $\{\rho_\alpha\}$ of smooth functions $\rho_\alpha : M \to [0, 1]$ such that
 
-**(a)** the support of $\rho_\alpha$, the closure of $\{x : \rho_\alpha(x) \neq 0\}$, is contained in $U_\alpha$;
+**(a)** the support of $\rho_\alpha$, the closure of $\{x : \rho_\alpha(x) \neq 0\}$, is contained in $\Omega_\alpha$;
 
 **(b)** every point has a neighbourhood on which only finitely many $\rho_\alpha$ are nonzero (the family is **locally finite**);
 
@@ -71,13 +71,13 @@ is smooth as a map of open subsets of Euclidean spaces. The property is local, s
 
 ### Curves and Their Velocities
 
-Let $M$ be a smooth manifold and $p \in M$. A **smooth curve** through $p$ is a smooth map $\gamma : (-\epsilon, \epsilon) \to M$ with $\gamma(0) = p$. In a chart $(U, \varphi)$ with $\varphi(p) = 0$, the curve has a coordinate expression $\varphi \circ \gamma$, and the velocity of the curve in this chart is the vector $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$.
+Let $M$ be a smooth manifold and $p \in M$. A **smooth curve** through $p$ is a smooth map $\gamma : (-\epsilon, \epsilon) \to M$ with $\gamma(0) = p$. In a chart $(\Omega, \varphi)$ with $\varphi(p) = 0$, the curve has a coordinate expression $\varphi \circ \gamma$, and the velocity of the curve in this chart is the vector $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$.
 
-**Definition.** Two smooth curves $\gamma_1, \gamma_2$ through $p$ are **tangent at $p$** if for one, hence every, chart $(U, \varphi)$ about $p$ one has $(\varphi \circ \gamma_1)'(0) = (\varphi \circ \gamma_2)'(0)$. Tangency at $p$ is an equivalence relation, and a **tangent vector** at $p$ is an equivalence class of smooth curves through $p$.
+**Definition.** Two smooth curves $\gamma_1, \gamma_2$ through $p$ are **tangent at $p$** if for one, hence every, chart $(\Omega, \varphi)$ about $p$ one has $(\varphi \circ \gamma_1)'(0) = (\varphi \circ \gamma_2)'(0)$. Tangency at $p$ is an equivalence relation, and a **tangent vector** at $p$ is an equivalence class of smooth curves through $p$.
 
 **Definition.** The set of tangent vectors at $p$ is the **tangent space** $T_pM$. It is a real vector space of dimension $n = \dim M$; the vector space structure is defined in a chart by the vector space structure of $\mathbb{R}^n$, and it is independent of the chart because the transition map is a diffeomorphism, so its derivative is a linear isomorphism.
 
-A chart $(U, \varphi)$ with coordinates $x^1, \ldots, x^n$ determines a basis of $T_pM$ for $p \in U$: the class of the $i$-th coordinate curve $t \mapsto \varphi^{-1}(\varphi(p) + t e_i)$, written $\partial/\partial x^i|_p$ or $\partial_{x^i}|_p$. Every tangent vector is uniquely $v = \sum_i v^i \partial_{x^i}|_p$ with $v^i \in \mathbb{R}$, and under a change of chart the coefficients transform by the Jacobian of the transition map, the **chain rule** for tangent vectors.
+A chart $(\Omega, \varphi)$ with coordinates $x^1, \ldots, x^n$ determines a basis of $T_pM$ for $p \in \Omega$: the class of the $i$-th coordinate curve $t \mapsto \varphi^{-1}(\varphi(p) + t e_i)$, written $\partial/\partial x^i|_p$. Every tangent vector is uniquely $v = \sum_i v^i \partial/\partial x^i|_p$ with $v^i \in \mathbb{R}$, and under a change of chart the coefficients transform by the Jacobian of the transition map, the **chain rule** for tangent vectors.
 
 ### Derivations
 
@@ -95,9 +95,9 @@ $$
 T_pM \longrightarrow \operatorname{Der}_p(C^\infty(M)).
 $$
 
-**Proof sketch.** The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial_{x^i}|_p$.
+**Proof sketch.** The map is well defined because tangent curves give the same derivative of $f \circ \gamma$ by the chain rule, and it is linear. For injectivity, a derivation that kills every function has vanishing pairing with every coordinate function, hence the corresponding coordinate velocity vanishes. For surjectivity, let $D$ be a derivation and choose a chart with coordinates $x^i$ around $p$, which we may suppose is the origin. Writing $f$ in the chart and subtracting its Taylor expansion to first order expresses $f - f(p) - \sum_i (\partial f/\partial x^i)(0) x^i$ as a sum of products of functions vanishing at $0$; the Leibniz rule applied to those products shows that $D(f) = \sum_i D(x^i)\,(\partial f/\partial x^i)(0)$, so $D$ is the derivation of the vector $\sum_i D(x^i)\partial/\partial x^i|_p$.
 
-The theorem identifies the two definitions, and one writes a tangent vector as a derivation $v = \sum_i v^i \partial_{x^i}|_p$ acting on functions by $v(f) = \sum_i v^i \partial f/\partial x^i(p)$. This is the **directional derivative**.
+The theorem identifies the two definitions, and one writes a tangent vector as a derivation $v = \sum_i v^i \partial/\partial x^i|_p$ acting on functions by $v(f) = \sum_i v^i \partial f/\partial x^i(p)$. This is the **directional derivative**.
 
 ### The Differential
 
@@ -125,7 +125,7 @@ $$
 
 which is the claim; the identity statement is immediate, and the inverse statement follows because $d(F^{-1})_{F(p)} \circ dF_p = d(\mathrm{id})_p = \mathrm{id}$.
 
-In coordinates $x^1, \ldots, x^m$ on $M$ and $y^1, \ldots, y^n$ on $N$, the matrix of $dF_p$ in the bases $\partial_{x^i}$ and $\partial_{y^j}$ is the Jacobian matrix with entries $\partial F^j/\partial x^i(p)$, so the differential is the intrinsic form of the Jacobian.
+In coordinates $x^1, \ldots, x^m$ on $M$ and $y^1, \ldots, y^n$ on $N$, the matrix of $dF_p$ in the bases $\partial/\partial x^i$ and $\partial/\partial y^j$ is the Jacobian matrix with entries $\partial F^j/\partial x^i(p)$, so the differential is the intrinsic form of the Jacobian.
 
 **Definition.** The **tangent bundle** is the disjoint union
 
@@ -133,13 +133,13 @@ $$
 TM = \bigsqcup_{p \in M} T_pM,
 $$
 
-with the projection $\pi : TM \to M$ sending $T_pM$ to $p$. The charts of $M$ induce charts of $TM$ making it a smooth manifold of dimension $2n$: over a chart $(U, \varphi)$ with coordinates $x^i$, the map $(p, \sum_i v^i \partial_{x^i}|_p) \mapsto (\varphi(p), v^1, \ldots, v^n)$ is a chart. The **cotangent bundle** $T^*M$ is defined dually.
+with the projection $\pi : TM \to M$ sending $T_pM$ to $p$. The charts of $M$ induce charts of $TM$ making it a smooth manifold of dimension $2n$: over a chart $(\Omega, \varphi)$ with coordinates $x^i$, the map $(p, \sum_i v^i \partial/\partial x^i|_p) \mapsto (\varphi(p), v^1, \ldots, v^n)$ is a chart. The **cotangent bundle** $T^*M$ is defined dually.
 
 The bundle structure of $TM$, its sections and its transition functions are the first example of the theory, and the tangent bundle is the model on which that theory is built.
 
 ## Vector Fields and the Lie Bracket
 
-**Definition.** A **vector field** on $M$ is a smooth section of the tangent bundle, that is, a smooth map $X : M \to TM$ with $\pi \circ X = \mathrm{id}_M$. The space of vector fields is written $\mathrm{X}(M)$; it is a module over the ring $C^\infty(M)$ and a real vector space. In a chart, $X = \sum_i X^i \partial_{x^i}$ with $X^i \in C^\infty(U)$, and $X$ acts on functions by $X(f) = \sum_i X^i \partial f/\partial x^i$.
+**Definition.** A **vector field** on $M$ is a smooth section of the tangent bundle, that is, a smooth map $X : M \to TM$ with $\pi \circ X = \mathrm{id}_M$. The space of vector fields is written $\mathrm{X}(M)$; it is a module over the ring $C^\infty(M)$ and a real vector space. In a chart, $X = \sum_i X^i \partial/\partial x^i$ with $X^i \in C^\infty(\Omega)$, and $X$ acts on functions by $X(f) = \sum_i X^i \partial f/\partial x^i$.
 
 **Definition.** The **Lie bracket** of vector fields $X$ and $Y$ is the vector field
 
@@ -167,7 +167,7 @@ for $f \in C^\infty(M)$. It is not a tensor: the value of $[X, Y]$ at $p$ depend
 
 **Proof.** The module $\mathrm{X}(M)$ is a real vector space and the bracket is bilinear, alternating and satisfies the Jacobi identity, which is the definition of a Lie algebra.
 
-**Definition.** Vector fields $X$ and $Y$ **commute** if $[X, Y] = 0$. In a chart with coordinates $x^i$, the coordinate vector fields satisfy $[\partial_{x^i}, \partial_{x^j}] = 0$, and this is exactly the symmetry of the mixed partial derivatives.
+**Definition.** Vector fields $X$ and $Y$ **commute** if $[X, Y] = 0$. In a chart with coordinates $x^i$, the coordinate vector fields satisfy $[\partial/\partial x^i, \partial/\partial x^j] = 0$, and this is exactly the symmetry of the mixed partial derivatives.
 
 **Remark (integral curves and flows).** An **integral curve** of a vector field $X$ is a smooth curve $\gamma$ with $\gamma'(t) = X(\gamma(t))$ for all $t$, where $\gamma'(t) = d\gamma_t(1)$ is the tangent vector of the curve. The standard existence and uniqueness theorem states that every smooth vector field has, about each point, a unique maximal integral curve through that point, and that the resulting local flow $\Phi_t$ is a local one-parameter group of local diffeomorphisms; the theorem is a statement in the theory of ordinary differential equations, and its proof, together with the analytic properties of the flow, belongs to Part III, where the differential equations are treated. What differential geometry uses is the geometric consequence: two vector fields commute exactly when their local flows commute, and the bracket $[X, Y]$ measures the failure of the infinitesimal parallelograms spanned by $X$ and $Y$ to close.
 
@@ -175,15 +175,15 @@ for $f \in C^\infty(M)$. It is not a tensor: the value of $[X, Y]$ at $p$ depend
 
 ### Immersions, Submersions and Submanifolds
 
-**Definition.** A subset $S$ of a smooth manifold $M$ is a **regular submanifold** of dimension $k$ if for every $p \in S$ there is a chart $(U, \varphi)$ of $M$ about $p$ with $\varphi(p) = 0$ such that
+**Definition.** A subset $S$ of a smooth manifold $M$ is a **regular submanifold** of dimension $k$ if for every $p \in S$ there is a chart $(\Omega, \varphi)$ of $M$ about $p$ with $\varphi(p) = 0$ such that
 
 $$
-\varphi(U \cap S) = \{x \in \varphi(U) : x^{k+1} = \cdots = x^n = 0\}.
+\varphi(\Omega \cap S) = \{x \in \varphi(\Omega) : x^{k+1} = \cdots = x^n = 0\}.
 $$
 
 Such a chart is **adapted** to $S$. The subspace $S$ then carries a smooth structure of dimension $k$, with charts the restrictions of the adapted charts, and the inclusion $S \hookrightarrow M$ is an embedding.
 
-**Theorem (rank theorem).** Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(U, \varphi)$ about $p$ and $(V, \psi)$ about $F(p)$ with $F(U) \subseteq V$ such that
+**Theorem (rank theorem).** Let $F : M \to N$ be a smooth map of constant rank $r$ near $p$. Then there are charts $(\Omega, \varphi)$ about $p$ and $(V, \psi)$ about $F(p)$ with $F(\Omega) \subseteq V$ such that
 
 $$
 \psi \circ F \circ \varphi^{-1}(x^1, \ldots, x^m) = (x^1, \ldots, x^r, 0, \ldots, 0).
@@ -235,7 +235,7 @@ where $\langle\cdot,\cdot\rangle$ is the standard positive definite inner produc
 
 **Theorem.** The space $\mathbb{RP}^n$ is a compact smooth manifold of dimension $n$.
 
-**Proof sketch.** For $i = 0, \ldots, n$ let $U_i$ be the set of lines not contained in the hyperplane $x^i = 0$; the map sending a line to the affine coordinates $(x^0/x^i, \ldots, \widehat{x^i/x^i}, \ldots, x^n/x^i)$ is a homeomorphism onto $\mathbb{R}^n$, and the transition maps are smooth rational functions, so the $U_i$ form a smooth atlas with $n+1$ charts. Compactness is the compactness of $S^n$ under the quotient map.
+**Proof sketch.** For $i = 0, \ldots, n$ let $\Omega_i$ be the set of lines not contained in the hyperplane $x^i = 0$; the map sending a line to the affine coordinates $(x^0/x^i, \ldots, \widehat{x^i/x^i}, \ldots, x^n/x^i)$ is a homeomorphism onto $\mathbb{R}^n$, and the transition maps are smooth rational functions, so the $\Omega_i$ form a smooth atlas with $n+1$ charts. Compactness is the compactness of $S^n$ under the quotient map.
 
 ### The Classical Matrix Groups
 
@@ -251,9 +251,9 @@ is a compact smooth submanifold of $M_n(\mathbb{R})$ of dimension $n(n-1)/2$, an
 
 **Proof.** Consider $F : M_n(\mathbb{R}) \to \operatorname{Sym}_n(\mathbb{R})$, $F(A) = A^T A$, where $\operatorname{Sym}_n$ is the space of symmetric matrices, of dimension $n(n+1)/2$. Its differential at $A$ is $dF_A(H) = A^T H + H^T A$. For $A \in O(n)$, this map is surjective: given a symmetric $S$, take $H = \frac{1}{2} A S$, then $A^T H + H^T A = \frac{1}{2}S + \frac{1}{2}S = S$. Hence $I$ is a regular value, and $O(n) = F^{-1}(I)$ is a submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$. It is bounded in $M_n(\mathbb{R})$ and closed, hence compact; $SO(n)$ is a union of components, cut out by the condition $\det = 1$.
 
-**Theorem.** The unitary group $U(n)$ is a smooth submanifold of $M_n(\mathbb{C}) \cong \mathbb{R}^{2n^2}$ of real dimension $n^2$, and the special unitary group $SU(n)$ has real dimension $n^2 - 1$.
+**Theorem.** The unitary group $\mathrm{U}(n)$ is a smooth submanifold of $M_n(\mathbb{C}) \cong \mathbb{R}^{2n^2}$ of real dimension $n^2$, and the special unitary group $SU(n)$ has real dimension $n^2 - 1$.
 
-**Proof.** The same argument applied to $F(A) = A^* A$ with values in the real vector space of Hermitian matrices, of real dimension $n^2$, gives $\dim U(n) = 2n^2 - n^2 = n^2$; the determinant maps $U(n)$ onto the unit circle with kernel $SU(n)$, and the derivative of the determinant is surjective, so $SU(n)$ is a submanifold of dimension $n^2 - 1$.
+**Proof.** The same argument applied to $F(A) = A^* A$ with values in the real vector space of Hermitian matrices, of real dimension $n^2$, gives $\dim \mathrm{U}(n) = 2n^2 - n^2 = n^2$; the determinant maps $\mathrm{U}(n)$ onto the unit circle with kernel $SU(n)$, and the derivative of the determinant is surjective, so $SU(n)$ is a submanifold of dimension $n^2 - 1$.
 
 These groups are the classical groups of *Matrix Groups and Classical Groups*, and they are Lie groups in the sense of *Lie Groups*: the group operations are smooth because they are given by polynomial and rational expressions in the matrix entries, and the manifold structure is the one produced here.
 
@@ -263,17 +263,17 @@ These groups are the classical groups of *Matrix Groups and Classical Groups*, a
 
 ### Riemannian Metrics
 
-**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth assignment to each $p \in M$ of a positive definite inner product $g_p$ on the tangent space $T_pM$, in the sense that for every chart $(U, \varphi)$ with coordinates $x^i$ the functions
+**Definition.** A **Riemannian metric** on a smooth manifold $M$ is a smooth assignment to each $p \in M$ of a positive definite inner product $g_p$ on the tangent space $T_pM$, in the sense that for every chart $(\Omega, \varphi)$ with coordinates $x^i$ the functions
 
 $$
 g_{ij}(p) = g_p\!\left(\frac{\partial}{\partial x^i}\Big|_p, \frac{\partial}{\partial x^j}\Big|_p\right)
 $$
 
-are smooth on $U$, and the matrix $(g_{ij}(p))$ is symmetric and positive definite at every $p$. A **Riemannian manifold** is a pair $(M, g)$.
+are smooth on $\Omega$, and the matrix $(g_{ij}(p))$ is symmetric and positive definite at every $p$. A **Riemannian manifold** is a pair $(M, g)$.
 
 **Theorem.** Every smooth manifold carries a Riemannian metric.
 
-**Proof.** Choose an atlas $\{U_\alpha\}$ and a subordinate smooth partition of unity $\{\rho_\alpha\}$. On each chart domain pull back the standard inner product of $\mathbb{R}^n$ along the coordinate map to obtain a positive semidefinite symmetric form $g_\alpha$ on $U_\alpha$, definite on $U_\alpha$; put
+**Proof.** Choose an atlas $\{\Omega_\alpha\}$ and a subordinate smooth partition of unity $\{\rho_\alpha\}$. On each chart domain pull back the standard inner product of $\mathbb{R}^n$ along the coordinate map to obtain a positive semidefinite symmetric form $g_\alpha$ on $\Omega_\alpha$, definite on $\Omega_\alpha$; put
 
 $$
 g = \sum_\alpha \rho_\alpha\, g_\alpha.
@@ -327,7 +327,7 @@ The metric $d_g$ is the distance that this Part places on the manifold, and it i
 
 A topological manifold is a second-countable Hausdorff space locally homeomorphic to $\mathbb{R}^n$; a smooth structure is a maximal atlas of smoothly compatible charts, and a smooth manifold is the pair. Smooth maps are those whose coordinate expressions are smooth, diffeomorphisms are the isomorphisms of the category, and smooth partitions of unity subordinate to any open cover are the gluing device that the rest of the theory uses.
 
-The tangent space $T_pM$ may be defined by equivalence classes of curves through $p$ or as the derivations of the algebra of smooth functions at $p$, and the two definitions agree; it is a vector space of dimension $n$ with a basis of coordinate derivations $\partial_{x^i}$ in each chart. The differential $dF_p : T_pM \to T_{F(p)}N$ is the intrinsic form of the Jacobian and satisfies the chain rule, so it is the functorial part of the theory. Vector fields are sections of the tangent bundle, they form the real Lie algebra $\mathrm{X}(M)$ under the bracket $[X, Y](f) = X(Y(f)) - Y(X(f))$, and the bracket measures the failure of the flows of the fields to commute; the existence of the flows is a differential-equation statement deferred to Part III.
+The tangent space $T_pM$ may be defined by equivalence classes of curves through $p$ or as the derivations of the algebra of smooth functions at $p$, and the two definitions agree; it is a vector space of dimension $n$ with a basis of coordinate derivations $\partial/\partial x^i$ in each chart. The differential $dF_p : T_pM \to T_{F(p)}N$ is the intrinsic form of the Jacobian and satisfies the chain rule, so it is the functorial part of the theory. Vector fields are sections of the tangent bundle, they form the real Lie algebra $\mathrm{X}(M)$ under the bracket $[X, Y](f) = X(Y(f)) - Y(X(f))$, and the bracket measures the failure of the flows of the fields to commute; the existence of the flows is a differential-equation statement deferred to Part III.
 
 A regular submanifold is one that looks locally like a coordinate subspace, the rank theorem puts every constant-rank map into a normal form, and the implicit function theorem identifies the preimage of a regular value as a submanifold whose tangent space is the kernel of the differential. The spheres, the real projective spaces, and the general linear, orthogonal, unitary and special unitary groups are manifolds by these results, the last three being the classical groups of this Part.
 
@@ -338,12 +338,12 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 | Symbol | Meaning |
 |---|---|
 | $M, N$ | Smooth manifolds; $n = \dim M$ |
-| $(U, \varphi)$, $x^i$ | Chart and its coordinate functions |
+| $(\Omega, \varphi)$, $x^i$ | Chart and its coordinate functions |
 | $\psi \circ \varphi^{-1}$ | Transition map of two charts; smooth for compatible charts |
 | $C^\infty(M)$ | Smooth real-valued functions on $M$ |
 | $\operatorname{Diff}(M)$ | Group of diffeomorphisms of $M$ onto itself |
 | $T_pM$, $TM$, $T^*M$ | Tangent space at $p$, tangent bundle, cotangent bundle |
-| $\partial_{x^i}\big|_p$ | Coordinate basis vector of $T_pM$ |
+| $\partial/\partial x^i\big|_p$ | Coordinate basis vector of $T_pM$ |
 | $dF_p : T_pM \to T_{F(p)}N$ | Differential (tangent map, pushforward) of a smooth map |
 | $\mathrm{X}(M)$ | Lie algebra of smooth vector fields on $M$ |
 | $[X, Y](f) = X(Y(f)) - Y(X(f))$ | Lie bracket of vector fields; $[X,Y] = -[Y,X]$, Jacobi identity |
@@ -352,7 +352,7 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 | $S^{n-1} = \{x : \langle x,x\rangle = 1\}$ | Unit sphere, a manifold of dimension $n-1$ |
 | $\mathbb{RP}^n = S^n/\{\pm 1\}$ | Real projective space, a compact manifold of dimension $n$ |
 | $GL_n(\mathbb{R})$, $SL_n(\mathbb{R})$ | General and special linear groups, open submanifolds of $M_n(\mathbb{R})$ |
-| $O(n)$, $SO(n)$, $U(n)$, $SU(n)$ | Orthogonal, special orthogonal, unitary and special unitary groups; $\dim O(n) = n(n-1)/2$, $\dim U(n) = n^2$ |
+| $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$ | Orthogonal, special orthogonal, unitary and special unitary groups; $\dim O(n) = n(n-1)/2$, $\dim \mathrm{U}(n) = n^2$ |
 | $g$, $g_{ij}$ | Riemannian metric and its coefficients in a chart |
 | $|\gamma'(t)|_g$, $L_g(\gamma)$ | Speed and length of a curve |
 | $d_g(p,q) = \inf_\gamma L_g(\gamma)$ | Riemannian distance; its metric topology is the topology of $M$ |

@@ -19,16 +19,16 @@ Types, Discrete Charge and Three-Particle Couplings* for the compact slice and t
 *Conformal Invariance and the Massless Limit in Biquaternionic Form*. The four forms and the sesquilinear
 product are *Conventions in the Biquaternion Universe*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, units
-$e_k^2=-e_0$; the material sector $\mathbb{M}_-$ with the four-position
-$\tilde{Q}=ict\,e_0+\vec x$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, units
+$\vec e_k^2=-e_t$; the material sector $\mathbb{M}_-$ with the four-position
+$\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
 matrix model $\mathsf{M}_2$.
 
 ## The Four Readings, One at a Time
 
 **The norm.** $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
-$-c^2t^2+\vec x^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
+$-c^2t^2+x^2+y^2+z^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
 hyperboloid and the light cone is $N=0$. The interpretation is **value**: which level set the element lies on.
 
 **The rank.** The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when
@@ -36,7 +36,7 @@ $\langle\tilde{Q}\rangle_{\natural}\neq0$ and of rank at most one on the cone. B
 polarisations**: two for the massive type and one for the massless type. The interpretation is **count**: how many
 independent rank-one terms the square needs.
 
-**The charge.** The unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_0\}\cong U(2)$ is compact, and the
+**The charge.** The unitary slice $U=\{\tilde{U}:\tilde{U}\tilde{U}^{*}=e_t\}\cong \mathrm{U}(2)$ is compact, and the
 finite-dimensional unitary representations of a compact group are labelled by discrete data. Beside the mass,
 this is the **other internal label**: the charge is the discrete label of a representation of the compact
 internal group, and it is discrete because the group is compact and for no other reason. The interpretation is
@@ -81,7 +81,7 @@ probability sense.
 Two limiting elements show where the interpretations must be stated with their scope.
 
 **The rank-one state.** A rank-one element of the informational sector is a pure state — the projector
-$\tilde{\Pi}=\tfrac12(e_0-ie_3)$ has $N=0$, rank one, and $\mathrm{Sc}(\tilde{\Pi}\tilde{\Pi}^{*})=\tfrac12$
+$\tilde{\Pi}=\tfrac12(e_t-i\vec e_z)$ has $N=0$, rank one, and $\mathrm{Sc}(\tilde{\Pi}\tilde{\Pi}^{*})=\tfrac12$
 — so the same rank-one condition that reads as **massless** on the material side reads as **pure state** on
 the informational side. The two interpretations are not in conflict, because they are interpretations of the rank on two
 different sectors: a massless material element is a null four-vector, and a rank-one informational element
@@ -100,7 +100,7 @@ algebra and not a legitimate state.
 |---|---|---|---|---|
 | norm | $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$ | the value and its sign; the mass shell as a level set | is the mass: $N=-m^2c^2$ on shell | detects no polarisation count and no label |
 | rank | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the count of polarisations, two or one | whether $m$ vanishes, never its value | does not fix the sign of $\langle\cdot\rangle_{\natural}$ |
-| charge | the compact slice $U(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | nothing; $m$ is not a charge | says nothing about the cone |
+| charge | the compact slice $\mathrm{U}(2)\cong(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ | the discrete internal label | nothing; $m$ is not a charge | says nothing about the cone |
 | scale | the polar modulus $r$ | the unit of length, the dilation potential | the unit of $m$: $r=mc$ for the four-momentum | is a unit and not a level set |
 
 The dictionary is the answer the article offers: the four readings are four questions asked of one element,
@@ -160,7 +160,7 @@ left out, and the Dirac and Majorana pair is placed at the equation level, outsi
 |---|---|
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | the biquaternion norm, the interval, the value and its level set |
 | $\mathrm{rank}\,\mathsf{M}_2(\tilde{Q}\tilde{Q}^{*})$ | the rank of the Hermitian square, two off the cone and at most one on it |
-| $U(2)$ | the unitary slice, compact, the internal group whose labels are the discrete charge |
+| $\mathrm{U}(2)$ | the unitary slice, compact, the internal group whose labels are the discrete charge |
 | $r$ | the polar scale, the modulus of the polar factor, the unit of the scale reading |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | the material and informational sectors, on which the rank-one condition reads as massless and as a pure state respectively |
 

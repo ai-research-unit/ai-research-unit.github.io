@@ -13,13 +13,13 @@ This article constructs the weak derivative and the Sobolev spaces, proves their
 
 ### The Weak Derivative
 
-**Definition.** Let $\Omega \subseteq \mathbb{R}^n$ be open and let $u, w \in L^1_{\mathrm{loc}}(\Omega)$. The function $w$ is the **weak derivative** of $u$ with respect to $x_i$, written $w = \partial_iu$, if
+**Definition.** Let $\Omega \subseteq \mathbb{R}^n$ be open and let $u, w \in L^1_{\mathrm{loc}}(\Omega)$. The function $w$ is the **weak derivative** of $u$ with respect to $x_i$, written $w = \partial/\partial x_i\,u$, if
 
 $$
-\int_\Omega u\,\partial_i\varphi\,dx = -\int_\Omega w\,\varphi\,dx \qquad \text{for every } \varphi \in C_c^\infty(\Omega).
+\int_\Omega u\,\partial/\partial x_i\,\varphi\,dx = -\int_\Omega w\,\varphi\,dx \qquad \text{for every } \varphi \in C_c^\infty(\Omega).
 $$
 
-For a multi-index $\gamma = (\gamma_1,\dots,\gamma_n)$ the weak derivative $\partial^\gamma u$ is defined by iterating the definition, with $|\gamma| = \sum_i\gamma_i$ and $\partial^\gamma = \partial_1^{\gamma_1}\cdots\partial_n^{\gamma_n}$.
+For a multi-index $\gamma = (\gamma_1,\dots,\gamma_n)$ the weak derivative $\partial^\gamma u$ is defined by iterating the definition, with $|\gamma| = \sum_i\gamma_i$ and $\partial^\gamma = (\partial/\partial x_1)^{\gamma_1}\cdots(\partial/\partial x_n)^{\gamma_n}$.
 
 **Proposition (uniqueness).** The weak derivative, if it exists, is unique up to equality almost everywhere.
 
@@ -64,7 +64,7 @@ $$
 
 **Theorem (calculus).** If $u,v \in W^{k,n}(\Omega)\cap L^\infty(\Omega)$ then $uv \in W^{k,n}(\Omega)$ and the product rule holds; if $F \in C^k(\mathbb{R})$ with $F(0)=0$ and $F'$ bounded, then $F\circ u \in W^{k,n}(\Omega)$ for $u \in W^{k,n}(\Omega)$; and the chain rule holds for a $C^k$ diffeomorphism of the domain.
 
-*Proof.* The identities are proved first for smooth approximants and pass to the limit in $L^{n}$ by the density theorem below; the product rule $\partial_i(uv) = \partial_iu\cdot v + u\cdot\partial_iv$ holds almost everywhere for the approximants and its limit is the weak derivative of the product.
+*Proof.* The identities are proved first for smooth approximants and pass to the limit in $L^{n}$ by the density theorem below; the product rule $\partial/\partial x_i\,(uv) = \partial/\partial x_i\,u\cdot v + u\cdot\partial/\partial x_i\,v$ holds almost everywhere for the approximants and its limit is the weak derivative of the product.
 
 **Theorem (density, Meyers–Serrin).** $C^\infty(\Omega)\cap W^{k,n}(\Omega)$ is dense in $W^{k,n}(\Omega)$ for every open $\Omega$; if $\Omega$ is bounded with Lipschitz boundary, then $C^\infty(\overline\Omega)$ is dense. Consequently the product and chain rules hold for all $u$ of the space, by approximation.
 
@@ -79,10 +79,10 @@ $$
 **Theorem (Gagliardo–Nirenberg–Sobolev).** Let $1\le p<n$ and $k\ge1$ with $kp<n$. Then there is a constant $C$ with
 
 $$
-\|u\|_{L^{n}}^*}(\mathbb{R}^n)} \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n)}, \qquad \frac1{p^*} = \frac1p - \frac{k}{n},
+\|u\|_{L^{n}}^*(\mathbb{R}^n) \le C\sum_{|\gamma|=k}\|\partial^\gamma u\|_{L^{n}}(\mathbb{R}^n), \qquad \frac1{p^*} = \frac1p - \frac{k}{n},
 $$
 
-for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,n}(\mathbb{R}^n) \hookrightarrow L^{n^*}}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the **Sobolev conjugate** of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.
+for every $u \in C_c^\infty(\mathbb{R}^n)$; consequently $W^{k,n}(\mathbb{R}^n) \hookrightarrow L^{n^*}(\mathbb{R}^n)$, the embedding being continuous. The exponent $p^*$ is the **Sobolev conjugate** of $p$ at order $k$, and it is the largest $q$ for which such an estimate can hold.
 
 *Proof.* Quoted as standard. For $k=1$ the inequality follows from the one-dimensional fundamental theorem of calculus applied in each coordinate and the Hölder and arithmetic–geometric inequalities; the case $k>1$ follows by iterating it. Sharpness is shown by testing the inequality on the family $u_\varepsilon(x) = \varepsilon^{-n/p^*}\eta(x/\varepsilon)$ for a fixed $\eta \in C_c^\infty$: all the norms on the left are then constant in $\varepsilon$ while the right-hand side stays bounded only for $q\le p^*$.
 
@@ -104,7 +104,7 @@ whenever $kp>n$ and $n/p$ is not an integer; the embedding is continuous, so $W^
 
 $$
 \operatorname{tr} : W^{1,n}(\Omega) \to L^{n}(\partial\Omega), \qquad
-\|{\operatorname{tr}}\,u\|_{L^{n}}(\partial\Omega)} \le C\|u\|_{W^{1,n}(\Omega)},
+\|{\operatorname{tr}}\,u\|_{L^{n}(\partial\Omega)} \le C\|u\|_{W^{1,n}(\Omega)},
 $$
 
 agreeing with the restriction for $u \in C(\overline\Omega)$, and its kernel is exactly $W^{1,n}_0(\Omega)$. For $p<n$ the trace actually maps into $L^{m}(\partial\Omega)$ for $q \le \frac{p(n-1)}{n-p}$.
@@ -114,7 +114,7 @@ agreeing with the restriction for $u \in C(\overline\Omega)$, and its kernel is 
 **Theorem (Poincaré and Friedrichs).** If $\Omega$ is bounded in one direction with width $L$, then for $u \in W^{1,n}_0(\Omega)$,
 
 $$
-\|u\|_{L^{n}}(\Omega)} \le L\|\nabla u\|_{L^{n}}(\Omega)}, \qquad 1\le p<\infty ,
+\|u\|_{L^{n}(\Omega)} \le L\|\nabla u\|_{L^{n}(\Omega)}, \qquad 1\le p<\infty ,
 $$
 
 and for $u \in W^{1,n}(\Omega)$ with $\int_\Omega u = 0$ the same inequality holds with a constant depending only on $\Omega$. On the interval $(0,L)$ with $p=2$ the sharp constant is $L/\pi$.
@@ -181,7 +181,7 @@ $$
 
 with $C$ depending on $\Omega'$, $\Omega$, the ellipticity constants and the bounds on the coefficients. If $f \in H^k(\Omega)$ for all $k$, then $u \in H^{k+2}_{\mathrm{loc}}(\Omega)$ and hence, by the embedding theorem, $u \in C^\infty(\Omega)$: **Weyl's lemma**, that a weak solution of an elliptic equation with smooth coefficients is smooth.
 
-*Proof.* Quoted as standard. One takes difference quotients of the weak formulation in a direction $e_i$, uses the ellipticity to bound the $L^2$ norms of the difference quotients of $\nabla u$ by the data, and concludes that $\partial_i\nabla u \in L^2_{\mathrm{loc}}$; iterating gives the higher derivatives, and the Morrey embedding gives continuity.
+*Proof.* Quoted as standard. One takes difference quotients of the weak formulation in a direction $e_i$, uses the ellipticity to bound the $L^2$ norms of the difference quotients of $\nabla u$ by the data, and concludes that $\partial/\partial x_i\,\nabla u \in L^2_{\mathrm{loc}}$; iterating gives the higher derivatives, and the Morrey embedding gives continuity.
 
 **Theorem (boundary regularity).** If in addition $\Omega$ has $C^{k+2}$ boundary, $A \in C^{k+1}(\overline\Omega)$, $c\in C^k(\overline\Omega)$ and $f \in H^k(\Omega)$, then the weak solution with zero boundary values lies in $H^{k+2}(\Omega)\cap H^1_0(\Omega)$, with the corresponding estimate; in particular for $k=0$ and $\Omega$ of class $C^2$ the solution lies in $H^2(\Omega)$.
 
@@ -219,7 +219,7 @@ holds for almost every $t$.
 
 *Proof.* Choose an orthonormal basis $(w_j)$ of $V$ and seek the finite-dimensional Galerkin approximations $u_m(t) = \sum_{j\le m}d_j(t)w_j$ solving the projected system, an ordinary linear system in $d_j$; the energy estimate, valid at each level and uniform in $m$, bounds the approximations in $L^\infty(0,T;H)\cap L^2(0,T;V)$. A weak-compactness argument (Banach–Alaoglu) extracts a limit $u$, and the limit satisfies the weak formulation after passage to the limit in each projection; uniqueness follows from the estimate applied to the difference of two solutions with $f=0$ and $u_0=0$.
 
-**Example (the heat equation).** For $V = H^1_0(\Omega)$, $H = L^2(\Omega)$ and $\mathfrak{a}(u,v) = \int\nabla u\cdot\nabla v$, the parabolic theorem gives the weak solution of $\partial_t u=\Delta u$ with $u(0)=u_0\in L^2(\Omega)$, which is unique and lies in $L^2(0,T;H^1_0)\cap C([0,T];L^2)$; the energy estimate is the decay $\|u(t)\|_{L^2}^2 + 2\int_0^t\|\nabla u\|^2 \le \|u_0\|^2$. For $u_0$ continuous and bounded this is the classical solution of the preceding article obtained by convolution.
+**Example (the heat equation).** For $V = H^1_0(\Omega)$, $H = L^2(\Omega)$ and $\mathfrak{a}(u,v) = \int\nabla u\cdot\nabla v$, the parabolic theorem gives the weak solution of $\partial/\partial t u=\Delta u$ with $u(0)=u_0\in L^2(\Omega)$, which is unique and lies in $L^2(0,T;H^1_0)\cap C([0,T];L^2)$; the energy estimate is the decay $\|u(t)\|_{L^2}^2 + 2\int_0^t\|\nabla u\|^2 \le \|u_0\|^2$. For $u_0$ continuous and bounded this is the classical solution of the preceding article obtained by convolution.
 
 **Remark (hyperbolic equations).** For the wave equation the formulation is two-sided in time: $u \in L^2(0,T;H^1_0)$ with $u' \in L^2(0,T;L^2)$ and $u'' \in L^2(0,T;H^{-1})$, and the Galerkin argument with the second-order equation in $t$ gives existence and uniqueness for data $(u_0,u_1) \in H^1_0\times L^2$ together with the energy identity
 
@@ -245,9 +245,9 @@ The Dirichlet principle is the origin of the subject and the reason for the name
 
 ## Summary
 
-The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial_i\varphi = -\int w\varphi$ for every test function $\varphi \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1<p<\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.
+The weak derivative of $u \in L^1_{\mathrm{loc}}(\Omega)$ is the function $w$ for which $\int u\,\partial/\partial x_i\,\varphi = -\int w\varphi$ for every test function $\varphi \in C_c^\infty(\Omega)$; it is unique when it exists and it exists for functions that are not classically differentiable, as $|x|$ shows. The Sobolev space $W^{k,n}(\Omega)$ consists of the $L^{n}$ functions whose weak derivatives up to order $k$ lie in $L^{n}$; it is a Banach space, separable and reflexive for $1<p<\infty$, and $H^k = W^{k,2}$ is a Hilbert space. Smooth functions are dense, the product and chain rules hold, and $W^{k,n}_0$ is the closure of the compactly supported smooth functions, which is how the Dirichlet boundary condition is imposed.
 
-The embedding theorems are the working tools: $W^{k,n}\hookrightarrow L^{n^*}}$ with $1/p^* = 1/p-k/n$ when $kp<n$, with $p^*$ sharp; $W^{k,n}\hookrightarrow C^{m,\gamma}$ when $kp>n$; the embeddings are compact into $L^{m}$ for $q<p^*$ on a bounded Lipschitz domain by Rellich–Kondrachov; the trace map restricts $W^{1,n}(\Omega)$ to $L^{n}(\partial\Omega)$ with kernel $W^{1,n}_0$; and the Poincaré inequality controls the $L^{n}$ norm by the gradient for a function vanishing on the boundary, with the sharp constant $L/\pi$ on the interval $(0,L)$.
+The embedding theorems are the working tools: $W^{k,n}\hookrightarrow L^{n^*}$ with $1/p^* = 1/p-k/n$ when $kp<n$, with $p^*$ sharp; $W^{k,n}\hookrightarrow C^{m,\gamma}$ when $kp>n$; the embeddings are compact into $L^{m}$ for $q<p^*$ on a bounded Lipschitz domain by Rellich–Kondrachov; the trace map restricts $W^{1,n}(\Omega)$ to $L^{n}(\partial\Omega)$ with kernel $W^{1,n}_0$; and the Poincaré inequality controls the $L^{n}$ norm by the gradient for a function vanishing on the boundary, with the sharp constant $L/\pi$ on the interval $(0,L)$.
 
 An elliptic Dirichlet problem with uniformly elliptic coefficients and $L^2$ data has a unique weak solution in $H^1_0(\Omega)$ by the Lax–Milgram theorem, with the energy estimate $\|u\|_{H^1}\le C\lambda^{-1}\|f\|_{L^2}$; the solution is $H^2$ in the interior and near a smooth boundary when the data allow, and is $C^\infty$ when the data are, which is Weyl's lemma; the inhomogeneous problem satisfies the Fredholm alternative. The parabolic and hyperbolic equations are solved weakly by the Galerkin method, with the energy estimates that the method is built on. Finally the weak solution of a symmetric elliptic problem is the unique minimiser of the Dirichlet energy $J$, the Dirichlet principle, which is the model case of the direct method of the calculus of variations.
 

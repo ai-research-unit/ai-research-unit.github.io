@@ -70,7 +70,7 @@ This is why restriction to the centre governs the automorphism group; it is used
 | $\mathbb{B}$ | $\mathbb{C}\cdot 1$ | the central scalar imaginary $i$ commutes with everything |
 | $M_n(k)$ | $k \cdot I_n$ | the scalar matrices |
 
-The entries for $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$ follow from the scalar-vector multiplication formula: an element commutes with every pure vector precisely when its vector part is zero, and the scalars that commute with the quaternion units are exactly the coefficients in the ground ring. In $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the centre is the copy of $\mathbb{C}$ spanned by $e_0$, of real dimension $2$; in the eight-dimensional real view this is the subspace $\mathbb{C}_{\mathbb{B}}$.
+The entries for $\mathbb{H}$, $\mathbb{H}_{\mathbb{D}}$ and $\mathbb{B}$ follow from the scalar-vector multiplication formula: an element commutes with every pure vector precisely when its vector part is zero, and the scalars that commute with the quaternion units are exactly the coefficients in the ground ring. In $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the centre is the copy of $\mathbb{C}$ spanned by $e_t$, of real dimension $2$; in the eight-dimensional real view this is the subspace $\mathbb{C}_{\mathbb{B}}$.
 
 **Example (matrix and endomorphism algebras).** For a commutative ring $R$ and $n \geq 1$, the centre of $M_n(R)$ is the set of scalar matrices $\{r I_n : r \in R\}$, isomorphic to $R$. Indeed a matrix commuting with every matrix unit $E_{ij}$ is scalar. More generally, for a faithful module $M$ over a ring $A$, the centre of $\operatorname{End}_A(M)$ need not be the scalars; for $A$ central simple and $M$ the regular module it is.
 
@@ -120,7 +120,7 @@ The element $v$ is unique when it exists and is written $u^{-1}$; the units form
 | $\mathbb{C}$ | $z\bar z = a^2+b^2 \neq 0$ | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ |
 | $\mathbb{D}$ | $z\bar z = a^2-b^2 \neq 0$ | four components, $\cong \mathbb{R}^\times \times \mathbb{R}^\times$ |
 | $\mathbb{D}'$ | $a \neq 0$ | $\{a + b\varepsilon : a \neq 0\}$, an abelian group |
-| $\mathbb{H}$ | $q q^{\natural} = q_0^2+q_1^2+q_2^2+q_3^2 \neq 0$ | $\mathbb{H}\setminus\{0\}$ |
+| $\mathbb{H}$ | $q q^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 \neq 0$ | $\mathbb{H}\setminus\{0\}$ |
 | $\mathbb{H}_{\mathbb{D}}$ | $u\bar u$ a unit of $\mathbb{D}$ | $\{u : u\bar u \in \mathbb{D}^\times\}$ |
 | $\mathbb{B}$ | $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 \neq 0$ | $\mathbb{B}^\times = \{\tilde{Q} : \tilde{Q}\tilde{Q}^{\natural} \neq 0\}$ |
 

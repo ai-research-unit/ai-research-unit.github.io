@@ -12,7 +12,7 @@ This article develops the biquaternionic formulation of the Lorentz transformati
 
 The article is organized as follows. First the $ict$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\vec v_b$ (or $\vec v$) is reserved for particle and frame velocities.
 
 ## The $ict$ Convention and the Euclidean Metric
 
@@ -101,10 +101,10 @@ $$
 \tilde{\Lambda}\tilde{\Lambda}^{\natural} = \left(\cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}\right)\left(\cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\vec u_{\mathrm b}\right) = \cosh^2\frac{\psi}{2} - \left(i\sinh\frac{\psi}{2}\right)^2\vec u_{\mathrm b}^2.
 $$
 
-Since $\vec u_{\mathrm b}^2 = -e_0$ and $(i\sinh\frac{\psi}{2})^2 = -\sinh^2\frac{\psi}{2}$, the second term is $-\left(-\sinh^2\frac{\psi}{2}\right)(-e_0) = -\sinh^2\frac{\psi}{2}e_0$. So
+Since $\vec u_{\mathrm b}^2 = -e_t$ and $(i\sinh\frac{\psi}{2})^2 = -\sinh^2\frac{\psi}{2}$, the second term is $-\left(-\sinh^2\frac{\psi}{2}\right)(-e_t) = -\sinh^2\frac{\psi}{2}e_t$. So
 
 $$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \left(\cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2}\right)e_0 = e_0.
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = \left(\cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2}\right)e_t = e_t.
 $$
 
 **4. It is a rotor.** In geometric algebra, a **rotor** is an even element that generates a rotation by conjugation. The boost biquaternion $\tilde{\Lambda}$ is the biquaternion form of the Lorentz rotor, and its conjugation action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ implements the Lorentz transformation on four-vectors.
@@ -120,8 +120,8 @@ Compare:
 
 Both are rotors in the sense of geometric algebra, both satisfy the unit-norm condition, and both act by conjugation. The difference is the **sign** of the vector part squared:
 
-- In the spatial case, $\vec u_{\mathrm r}^2 = -e_0$ (spacelike bivector).
-- In the boost case, $(i\vec u_{\mathrm b})^2 = +e_0$ (timelike bivector).
+- In the spatial case, $\vec u_{\mathrm r}^2 = -e_t$ (spacelike bivector).
+- In the boost case, $(i\vec u_{\mathrm b})^2 = +e_t$ (timelike bivector).
 
 This sign difference is the algebraic distinction between a rotation in a spacelike plane and a rotation in a timelike plane. In the biquaternion formulation, the imaginary unit $i$ is the marker that converts a spacelike rotation into a timelike one.
 
@@ -192,11 +192,11 @@ $$
 
 and these differ by the insertion of $\tilde{\Lambda}^{*}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a **real** quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{B}\mapsto\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{-1}$.
 
-**It does not fix the centre.** The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_0) = b\,\tilde{\Lambda}\tilde{\Lambda}^{*} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\vec u_{\mathrm b}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.
+**It does not fix the centre.** The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_t) = b\,\tilde{\Lambda}\tilde{\Lambda}^{*} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\vec u_{\mathrm b}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.
 
 ### Verification Against Component Formulas
 
-The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_0 + \vec A$, and apply the rotor conjugation with $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$.
+The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$, and apply the rotor conjugation with $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$.
 
 The scalar part of $\tilde{A}'$ is
 
@@ -227,7 +227,7 @@ So the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{
 The two biquaternions $\tilde{V}$ (four-velocity) and $\tilde{\Lambda}$ (boost) are distinct but related. Given the four-velocity
 
 $$
-\tilde{V} = \gamma\left(ic\,e_0 + \vec v\right),
+\tilde{V} = \gamma\left(ic\,e_t + \vec v\right),
 $$
 
 the associated boost biquaternion is
@@ -236,14 +236,14 @@ $$
 \tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}},
 $$
 
-where the square root is the biquaternion square root (multivalued by sign) and $\tilde{V}^{\natural} = \gamma(ic\,e_0 - \vec v)$ is the quaternion conjugate.
+where the square root is the biquaternion square root (multivalued by sign) and $\tilde{V}^{\natural} = \gamma(ic\,e_t - \vec v)$ is the quaternion conjugate.
 
 ### Derivation
 
-The derivation is a direct computation. Define the unit four-velocity $\tilde{v} = \tilde{V}/c = \gamma(i\,e_0 + \vec v/c)$, so that $\tilde{v}^{\natural} = \gamma(i\,e_0 - \vec v/c)$. Then
+The derivation is a direct computation. Define the unit four-velocity $\tilde{v} = \tilde{V}/c = \gamma(i\,e_t + \vec v/c)$, so that $\tilde{v}^{\natural} = \gamma(i\,e_t - \vec v/c)$. Then
 
 $$
--i\tilde{v}^{\natural} = -i\gamma(i\,e_0 - \vec v/c) = \gamma\,e_0 + i\gamma\frac{\vec v}{c}.
+-i\tilde{v}^{\natural} = -i\gamma(i\,e_t - \vec v/c) = \gamma\,e_t + i\gamma\frac{\vec v}{c}.
 $$
 
 On the other hand, the square of the boost biquaternion is
@@ -310,14 +310,14 @@ The **bisector property** is the statement that the image $r=\tilde\Lambda^2p$ a
 The **unit-norm biquaternions** form a group under multiplication. The general element is
 
 $$
-\tilde{Q} \in \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\tilde{Q}^{\natural} = e_0\},
+\tilde{Q} \in \{\tilde{Q} \in \mathbb{B} : \tilde{Q}\tilde{Q}^{\natural} = e_t\},
 $$
 
 which under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is the group $SL(2, \mathbb{C})$, the group of $2 \times 2$ complex matrices with determinant $1$. The map from $SL(2, \mathbb{C})$ to the proper orthochronous Lorentz group $SO^+(1,3)$ is $2$-to-$1$, exactly as in the standard matrix formulation.
 
 **Pure boosts** are the **Hermitian** elements of $SL(2,\mathbb{C})$: those satisfying $\tilde{\Lambda}^{*} = \tilde{\Lambda}$. They do **not** form a subgroup of $SL(2,\mathbb{C})$, because the product of two non-collinear boosts is generally a boost plus a spatial rotation (the Thomas–Wigner rotation), which is not Hermitian. So the set of pure boosts is a symmetric submanifold of $SL(2,\mathbb{C})$, but not a group.
 
-**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_0$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
+**Pure spatial rotations** are the elements with **real vector part** (i.e., lying in $\mathbb{H}_{\mathbb{B}}$, the real quaternion subalgebra), satisfying $\tilde{R} = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\vec u_{\mathrm r}$ with $\vec u_{\mathrm r}^2 = -e_t$. These form the subgroup $SU(2) \subset SL(2,\mathbb{C})$.
 
 The general Lorentz transformation is the product of a boost and a rotation, and corresponds to a general element of $SL(2,\mathbb{C})$.
 
@@ -333,15 +333,15 @@ $$
 
 carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_1\mapsto\tilde{P}_2$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde{L}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.
 
-**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_0, e_1, e_2, e_3\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
+**The reciprocal basis.** The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal{E}^{\mu}\mathcal{E}_{\nu}) = \delta^{\mu}_{\ \nu}$. The basis and its dual are
 
 $$
-\mathcal{E}_0 = e_0,\quad \mathcal{E}_k = e_k,
+\mathcal{E}_0 = e_t,\quad \mathcal{E}_k = \vec e_k,
 \qquad
-\mathcal{E}^{0} = e_0,\quad \mathcal{E}^{k} = -e_k,
+\mathcal{E}^{0} = e_t,\quad \mathcal{E}^{k} = -\vec e_k,
 $$
 
-the minus signs coming from $e_k^2 = -e_0$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_0$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde{L}$, the components transform as
+the minus signs coming from $\vec e_k^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $ict$, the pair $(q^0, q^k) = (ict, x_k)$ is the coordinate quadruple. Given a rotor $\tilde{L}$, the components transform as
 
 $$
 q'^{\mu} = \sum_{\nu} L^{\mu}{}_{\nu}\, q^{\nu},
@@ -454,7 +454,7 @@ $$
 
 For a pure boost, $\tilde{\Lambda} \in \mathbb{M}_+$ (Hermitian, unit norm). The rapidity $\psi$ is related to the velocity $\vec v_b$ by $\tanh\psi = v_b/c$.
 
-The **four-velocity biquaternion** $\tilde{V} = \gamma(ic\,e_0 + \vec v)$, which lives in $\mathbb{M}_-$, is related to the boost biquaternion by
+The **four-velocity biquaternion** $\tilde{V} = \gamma(ic\,e_t + \vec v)$, which lives in $\mathbb{M}_-$, is related to the boost biquaternion by
 
 $$
 \tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}},
@@ -480,7 +480,7 @@ The transformation itself is fixed by experiment, not by the algebra: aberration
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\beta = v/c$ | Velocity ratio of a frame or particle |
 | $\gamma = 1/\sqrt{1-\beta^2}$ | Lorentz factor |
-| $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity biquaternion |
+| $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost biquaternion (Hermitian for pure boosts) |
 | $\psi$ | Rapidity, $\tanh\psi = v_b/c$ |
 | $\vec u_{\mathrm b}$ | Unit vector in boost direction |

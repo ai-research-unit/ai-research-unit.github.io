@@ -13,7 +13,7 @@ The article establishes:
 3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_0\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{\rho} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -273,7 +273,7 @@ In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{\rho}
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{M}_+$ | Hermitian (informational) subspace |
 | $\mathbb{H}_{\mathbb{B}}$ | Unit real quaternions; rigid rotations |

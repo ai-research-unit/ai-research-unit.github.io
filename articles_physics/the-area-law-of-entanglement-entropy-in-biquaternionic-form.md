@@ -18,7 +18,7 @@ This article asks what the area law is in the biquaternion framework. The framew
 
 The article proceeds as follows. The area law is stated in its field-theoretic form, with the gapped and gapless cases distinguished and the coefficient discussed. The locality mechanism is explained as a bond-cutting bound, with the finite-depth circuit and matrix-product-state versions. The discrete area law is then realized and verified in the biquaternion chain, with the dimer state and a table of region entropies. The field statement, its holographic and black-hole cases, are recalled. The article closes with the established/interpretation/open split.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, scalar imaginary $i$, and isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The material and informational subspaces are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. The trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_t)=2$; on the tensor power the trace is the product trace. Reduced states and partial traces are those of *Strong Subadditivity in the Biquaternion Framework*, the entanglement entropy and replica moments those of *Entanglement Entropy and the Replica Trick in Biquaternionic Form*, and the one-particle module that of *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*.
 
 ## The Area Law
 
@@ -215,10 +215,10 @@ What the framework cannot supply is the geometry: the metric, the dimension, the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace pairing; $\mathrm{Tr}(e_t)=2$ |
 | $\mathbb{B}^{\otimes N}\cong M_{2^N}(\mathbb{C})$ | Chain of $N$ modes |
 | $A,\bar A,\partial A$ | Region, complement, and boundary bonds |
 | $\rho_A=\mathrm{Tr}_{\bar A}\,\rho$ | Reduced state of the region |

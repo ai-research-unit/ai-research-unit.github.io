@@ -12,21 +12,21 @@ The article assumes the metric, the connection, the geodesics, the exponential m
 
 ### Definition in Normal Coordinates
 
-**Definition.** Let $(M, g)$ be a Riemannian manifold and $p \in M$. On a normal neighbourhood $U$ of $p$, on which the exponential map $\exp_p$ is a diffeomorphism from a ball of $T_pM$ onto $U$, the **geodesic symmetry** at $p$ is
+**Definition.** Let $(M, g)$ be a Riemannian manifold and $p \in M$. On a normal neighbourhood $\Omega$ of $p$, on which the exponential map $\exp_p$ is a diffeomorphism from a ball of $T_pM$ onto $\Omega$, the **geodesic symmetry** at $p$ is
 
 $$
-\sigma_p : U \longrightarrow U, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
+\sigma_p : \Omega \longrightarrow \Omega, \qquad \sigma_p\bigl(\exp_p(v)\bigr) = \exp_p(-v),
 $$
 
 equivalently, on a geodesic $\gamma$ with $\gamma(0) = p$, the map $\sigma_p(\gamma(t)) = \gamma(-t)$. The manifold is symmetric at $p$ if there is a global isometry with these two properties, and **symmetric** if it is connected and symmetric at every point.
 
-**Theorem.** The geodesic symmetry is well defined, smooth and an involution of $U$, it fixes $p$ and only $p$ in $U$, and its differential at $p$ is $-\mathrm{id}$:
+**Theorem.** The geodesic symmetry is well defined, smooth and an involution of $\Omega$, it fixes $p$ and only $p$ in $\Omega$, and its differential at $p$ is $-\mathrm{id}$:
 
 $$
-\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_U, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM} .
+\sigma_p(p) = p, \qquad \sigma_p^2 = \mathrm{id}_\Omega, \qquad d(\sigma_p)_p = -\mathrm{id}_{T_pM} .
 $$
 
-**Proof.** The exponential map is a diffeomorphism on a ball of $T_pM$, and the reflection $v \mapsto -v$ is a diffeomorphism of the ball, so the composition is a smooth map; applying it twice returns the original point, $\sigma_p^2 = \mathrm{id}$. The fixed points in $U$ are the images of the fixed points of $v\mapsto -v$, that is of $v = 0$, so $p$ is the only fixed point; and the differential at $0$ of $v \mapsto -v$ is $-\mathrm{id}$, which is $d(\sigma_p)_p$ because $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.
+**Proof.** The exponential map is a diffeomorphism on a ball of $T_pM$, and the reflection $v \mapsto -v$ is a diffeomorphism of the ball, so the composition is a smooth map; applying it twice returns the original point, $\sigma_p^2 = \mathrm{id}$. The fixed points in $\Omega$ are the images of the fixed points of $v\mapsto -v$, that is of $v = 0$, so $p$ is the only fixed point; and the differential at $0$ of $v \mapsto -v$ is $-\mathrm{id}$, which is $d(\sigma_p)_p$ because $d(\exp_p)_0 = \mathrm{id}_{T_pM}$.
 
 ### Uniqueness and the Involution Property
 
@@ -122,7 +122,7 @@ On a locally symmetric manifold all the covariant derivatives of the curvature v
 
 | Symbol | Meaning |
 |---|---|
-| $\sigma_p$, $U$, $\exp_p$ | Geodesic symmetry at $p$; normal neighbourhood; exponential |
+| $\sigma_p$, $\Omega$, $\exp_p$ | Geodesic symmetry at $p$; normal neighbourhood; exponential |
 | $\sigma_p(\exp_p v) = \exp_p(-v)$ | Definition of the symmetry |
 | $\sigma_p^2=\mathrm{id}$, $d(\sigma_p)_p=-\mathrm{id}$ | Involution; differential at the fixed point |
 | $\nabla R = 0$ | The local symmetry equation |

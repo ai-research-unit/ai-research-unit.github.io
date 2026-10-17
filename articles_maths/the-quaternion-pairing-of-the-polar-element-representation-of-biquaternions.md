@@ -16,7 +16,7 @@ The reference article of the series, *The Polar Element Representation of Biquat
 
 **The result, in one sentence.** Writing $\tilde{Q} = Q_r+iQ_i$ with real quaternion parts $Q_r,Q_i$, the element is the product $Q\exp(i\Psi)$ of the quaternion modulus $Q = Q_r(\cos\Psi)^{-1}$ and the quaternion angle $\tan\Psi = Q_r^{-1}Q_i$ whenever $Q_r$ is invertible and the biquaternion norm does not vanish; the two factors are the polar word's scale-times-rotor and the exponential of its central phase and its rotor-conjugated boost.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and its real and imaginary quaternion parts are $Q_r,Q_i\in\mathbb{H}$ under $\tilde{Q} = Q_r+iQ_i$; the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_0e_0-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_0}e_0+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the two operations commuting. The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^{2}$, and the domain of the polar representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ and the subspaces $\mathbb{M}_\pm$, $\mathrm{Sp}(1)$ are those of *The Polar Element Representation of Biquaternions*. The quaternion modulus is $Q$ and the quaternion angle is $\Psi$, with $\theta_{\mathrm b} = \psi/2$ half the rapidity and $\vec u_{\mathrm b}'$ the boost axis rotated by the rotor.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y = \vec e_z$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu = Q_te_t+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_k\vec e_k$ and $Q_\mu\in\mathbb{C}$, and its real and imaginary quaternion parts are $Q_r,Q_i\in\mathbb{H}$ under $\tilde{Q} = Q_r+iQ_i$; the quaternion subspace is $\mathbb{H}_{\mathbb{B}}$. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \overline{Q_t}e_t+\overline{\vec Q}$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, the two operations commuting. The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2}$, and the domain of the polar representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The symbols $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ and the subspaces $\mathbb{M}_\pm$, $\mathrm{Sp}(1)$ are those of *The Polar Element Representation of Biquaternions*. The quaternion modulus is $Q$ and the quaternion angle is $\Psi$, with $\theta_{\mathrm b} = \psi/2$ half the rapidity and $\vec u_{\mathrm b}'$ the boost axis rotated by the rotor.
 
 ## The Quaternion Pairing
 
@@ -31,7 +31,7 @@ $$
 The modulus is a real quaternion, of norm $\langle Q,Q\rangle_{\natural} = r^2$, and the exponential is central in its phase but not in its boost: the boost has been conjugated by the rotor, so that it can stand to the right of the modulus in the canonical order. Writing the conjugated boost as
 
 $$
-\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cosh\theta_{\mathrm b}\,e_0 + i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}', \qquad \theta_{\mathrm b} = \frac{\psi}{2},
+\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cosh\theta_{\mathrm b}\,e_t + i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}', \qquad \theta_{\mathrm b} = \frac{\psi}{2},
 $$
 
 with $\psi$ the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}'$ its axis rotated by the rotor, the exponent is
@@ -98,17 +98,17 @@ $$
 
 the condition $Q_r\neq0$ being equivalent to the invertibility of the real quaternion part because $\mathbb{H}$ is a division algebra.
 
-The two conditions are again independent, and the second is met or missed independently of the first: the element $ie_1+ie_2$ has $N = -2\neq0$, so it is invertible, while its real quaternion part vanishes, so the construction fails on it; and the element $1+e_1+ie_2$ has $Q_r = 1+e_1 \neq 0$ but no Hamilton representation, so the two domains are not nested. Within its domain the representation is unique up to the replacement $\Psi\mapsto\Psi+\pi$ with the sign of $Q$ adjusted, which is the branch ambiguity of the tangent.
+The two conditions are again independent, and the second is met or missed independently of the first: the element $i\vec e_x+i\vec e_y$ has $N = -2\neq0$, so it is invertible, while its real quaternion part vanishes, so the construction fails on it; and the element $1+\vec e_x+i\vec e_y$ has $Q_r = 1+\vec e_x \neq 0$ but no Hamilton representation, so the two domains are not nested. Within its domain the representation is unique up to the replacement $\Psi\mapsto\Psi+\pi$ with the sign of $Q$ adjusted, which is the branch ambiguity of the tangent.
 
 ### The Pairing Without the Construction
 
-A remark is in order, because it separates two distinct statements. The pairing $\tilde{Q} = (r\tilde u_{\mathrm r})\exp(i\Psi)$ is a grouping of the four factors of the polar representation, and the four factors exist whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Hence the **factorisation** of $\tilde{Q}$ as a real quaternion times an exponential of the central imaginary exists on the whole complement of the null cone, while the **construction** of it from the real quaternion part needs $Q_r$ invertible. On the element $ie_1+ie_2$ the pairing gives
+A remark is in order, because it separates two distinct statements. The pairing $\tilde{Q} = (r\tilde u_{\mathrm r})\exp(i\Psi)$ is a grouping of the four factors of the polar representation, and the four factors exist whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Hence the **factorisation** of $\tilde{Q}$ as a real quaternion times an exponential of the central imaginary exists on the whole complement of the null cone, while the **construction** of it from the real quaternion part needs $Q_r$ invertible. On the element $i\vec e_x+i\vec e_y$ the pairing gives
 
 $$
-ie_1+ie_2 = \left(e_1+e_2\right)\,\exp\!\left(i\frac{\pi}{2}\right),
+i\vec e_x+i\vec e_y = \left(\vec e_x+\vec e_y\right)\,\exp\!\left(i\frac{\pi}{2}\right),
 $$
 
-with modulus $e_1+e_2$, which is a real quaternion, and exponent $\pi/2$, which is real: the factorisation holds, and the construction formula $\tan\Psi = Q_r^{-1}Q_i$ is what fails, since $Q_r = 0$ has no inverse. The distinction between the factorisation and the construction is recorded here because the domain of a partial representation is a statement about the construction, and the pairing is what shows it to be a grouping of the four factors.
+with modulus $\vec e_x+\vec e_y$, which is a real quaternion, and exponent $\pi/2$, which is real: the factorisation holds, and the construction formula $\tan\Psi = Q_r^{-1}Q_i$ is what fails, since $Q_r = 0$ has no inverse. The distinction between the factorisation and the construction is recorded here because the domain of a partial representation is a statement about the construction, and the pairing is what shows it to be a grouping of the four factors.
 
 ## The Domain Comparison
 
@@ -128,12 +128,12 @@ The domains are not nested. The Hamilton and quaternion domains overlap without 
 
 | element | $N$ | $(\vec Q,\vec Q)$ | $Q_r$ | Hamilton | quaternion |
 |---|---|---|---|---|---|
-| $(1+i)e_0+e_1+2e_2$ | $5+2i$ | $5$ | $1+e_1+2e_2$ | yes | yes |
-| $1+e_1+ie_2$ | $1$ | $0$ | $1+e_1$ | no | yes |
-| $ie_1+ie_2$ | $-2$ | $-2$ | $0$ | yes | no |
+| $(1+i)e_t+\vec e_x+2\vec e_y$ | $5+2i$ | $5$ | $1+\vec e_x+2\vec e_y$ | yes | yes |
+| $1+\vec e_x+i\vec e_y$ | $1$ | $0$ | $1+\vec e_x$ | no | yes |
+| $i\vec e_x+i\vec e_y$ | $-2$ | $-2$ | $0$ | yes | no |
 | $i$ | $-1$ | $0$ | $0$ | no | no |
 
-The first line is the generic case, in which both partial representations are available and give two different groupings of the same four factors. The second line separates the Hamilton pairing from the quaternion one: the element is invertible and has an invertible real part, but its vector part is null, so no axis exists. The third line separates the quaternion pairing from the Hamilton one: the vector part is non-null and the real part vanishes. The fourth line, the scalar imaginary, fails the two conditions simultaneously and lies outside both partial representations; it is nevertheless an invertible element, and the polar representation is $i = 1\cdot \exp(i\pi/2)\cdot e_0\cdot e_0$.
+The first line is the generic case, in which both partial representations are available and give two different groupings of the same four factors. The second line separates the Hamilton pairing from the quaternion one: the element is invertible and has an invertible real part, but its vector part is null, so no axis exists. The third line separates the quaternion pairing from the Hamilton one: the vector part is non-null and the real part vanishes. The fourth line, the scalar imaginary, fails the two conditions simultaneously and lies outside both partial representations; it is nevertheless an invertible element, and the polar representation is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$.
 
 The union of the two domains is the whole complement of the null cone, and the elements that the Hamilton and quaternion pairings miss between them are exactly the nonzero purely imaginary complex scalars. The reason is elementary: $Q_r = 0$ means that every coefficient is purely imaginary, $Q_\mu = ib_\mu$ with $b_\mu\in\mathbb{R}$, and then
 
@@ -141,7 +141,7 @@ $$
 (\vec Q,\vec Q) = \sum_{k=1}^{3}(ib_k)^2 = -\sum_{k=1}^{3}b_k^2 \leq 0 ,
 $$
 
-a negative real that vanishes only when $b_1 = b_2 = b_3 = 0$. So the two conditions fail together only on $\tilde{Q} = ib_0e_0$, $b_0\neq0$. Each such element lies in the domain of the polar representation, with $r = |b_0|$ and $\alpha = \pm\pi/2$; and it has an ordinary complex polar form $ib_0 = |b_0|\exp(\pm i\pi/2)$, which the quaternion pairing reproduces only in the degenerate sense of the section on the degenerate limits below.
+a negative real that vanishes only when $b_1 = b_2 = b_3 = 0$. So the two conditions fail together only on $\tilde{Q} = ib_0e_t$, $b_0\neq0$. Each such element lies in the domain of the polar representation, with $r = |b_0|$ and $\alpha = \pm\pi/2$; and it has an ordinary complex polar form $ib_0 = |b_0|\exp(\pm i\pi/2)$, which the quaternion pairing reproduces only in the degenerate sense of the section on the degenerate limits below.
 
 ### Why the Four-Factor Form Is the Reference
 
@@ -182,10 +182,10 @@ $$
 and the two agree exactly when $Q_r^{\natural}$ and $Q_i^{\natural}$ commute, equivalently when $Q_r$ and $Q_i$ commute. The commuting case is exact and the non-commuting case is genuinely different: the element
 
 $$
-\tilde{Q} = (1+e_1) + i(e_1+e_2), \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 2i, \qquad Q_r = 1+e_1\ \text{invertible} ,
+\tilde{Q} = (1+\vec e_x) + i(\vec e_x+\vec e_y), \qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 2i, \qquad Q_r = 1+\vec e_x\ \text{invertible} ,
 $$
 
-has $\tan\Psi = \tfrac12(1+e_1+e_2-e_3)$, conjugate $\tfrac12(1-e_1-e_2+e_3)$, and angle of the conjugated element $\tan\Psi' = \tfrac12(1-e_1-e_2-e_3)$; the two differ in the $e_3$ coefficient alone, the commutator being $Q_rQ_i-Q_iQ_r = 2e_3$.
+has $\tan\Psi = \tfrac12(1+\vec e_x+\vec e_y-\vec e_z)$, conjugate $\tfrac12(1-\vec e_x-\vec e_y+\vec e_z)$, and angle of the conjugated element $\tan\Psi' = \tfrac12(1-\vec e_x-\vec e_y-\vec e_z)$; the two differ in the $\vec e_z$ coefficient alone, the commutator being $Q_rQ_i-Q_iQ_r = 2\vec e_z$.
 
 **Hermitian conjugation.** Combining the two, $\tilde{Q}^{*} = \exp(-i\Psi^{\natural})\,Q^{\natural}$, again with the factors in the reversed order.
 
@@ -200,18 +200,18 @@ Two exact statements identify which classical polar form each named pairing gene
 **A real quaternion.** If all four coefficients of $\tilde{Q}$ are real then $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, and with the principal branch of the square root
 
 $$
-R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_0}{R}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{R}\in[0,1] ,
+R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{R}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{R}\in[0,1] ,
 $$
 
 so both the modulus and the angle are real and $\vec\Xi = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar representation of the companion article *Quaternion Polar Element Representation*, in the two forms that article gives it: the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ with $r = R$ and $\tilde u_{\mathrm r} = \exp(\vec\Xi\Theta)$, and the exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec\Xi$ and $\theta = 2\Theta$, the companion's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $Q_i = 0$, hence $\tan\Psi = 0$, $\Psi = 0$ and $Q = Q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ of the same article, with $r = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/r$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the companion article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.
 
-**A complex scalar.** If $\tilde{Q} = Ae_0$ with $A\in\mathbb{C}$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable, while the quaternion pairing gives
+**A complex scalar.** If $\tilde{Q} = Ae_t$ with $A\in\mathbb{C}$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable, while the quaternion pairing gives
 
 $$
-Q_r = (\operatorname{Re}A)e_0, \qquad Q_i = (\operatorname{Im}A)e_0, \qquad \tan\Psi = \frac{\operatorname{Im}A}{\operatorname{Re}A}\,e_0, \qquad Q = \frac{\operatorname{Re}A}{\cos\Psi}\,e_0 = |A|\,e_0 ,
+Q_r = (\operatorname{Re}A)e_t, \qquad Q_i = (\operatorname{Im}A)e_t, \qquad \tan\Psi = \frac{\operatorname{Im}A}{\operatorname{Re}A}\,e_t, \qquad Q = \frac{\operatorname{Re}A}{\cos\Psi}\,e_t = |A|\,e_t ,
 $$
 
-so that $\Psi = (\arg A)e_0$ is a scalar and $\tilde{Q} = |A|\exp\!\big(i(\arg A)e_0\big)$: the quaternion pairing reduces to the ordinary complex polar form of $\mathbb{C}$, with the central scalar imaginary of the algebra in the role of the scalar imaginary of $\mathbb{C}$ and the quaternion modulus collapsed to a scalar.
+so that $\Psi = (\arg A)e_t$ is a scalar and $\tilde{Q} = |A|\exp\!\big(i(\arg A)e_t\big)$: the quaternion pairing reduces to the ordinary complex polar form of $\mathbb{C}$, with the central scalar imaginary of the algebra in the role of the scalar imaginary of $\mathbb{C}$ and the quaternion modulus collapsed to a scalar.
 
 The two limits are disjoint, and together they are the reason the two named pairings are complementary rather than competing: the Hamilton representation is the one that carries the quaternion polar form into the biquaternions, and the quaternion pairing is the one that carries the complex polar form.
 
@@ -219,22 +219,22 @@ The two limits are disjoint, and together they are the reason the two named pair
 
 ### The Generic Element
 
-Take $\tilde{Q} = (1+i)e_0+e_1+2e_2$, the generic element of the table above. Its polar representation, computed in the companion article, is
+Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the generic element of the table above. Its polar representation, computed in the companion article, is
 
 $$
-r = 2.320595787, \quad \alpha = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_0 - 0.173166789\,i\,e_1 - 0.346333577\,i\,e_2, \quad \tilde u_{\mathrm r} = 0.470592172\,e_0+0.394599292\,e_1+0.789198585\,e_2 .
+r = 2.320595787, \quad \alpha = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
 $$
 
 *The regrouping.* The modulus is the real quaternion
 
 $$
-Q = r\tilde u_{\mathrm r} = 1.092054\,e_0 + 0.915705\,e_1 + 1.831411\,e_2 ,
+Q = r\tilde u_{\mathrm r} = 1.092054\,e_t + 0.915705\,\vec e_x + 1.831411\,\vec e_y ,
 $$
 
-matching the modulus $Q_r(\cos\Psi)^{-1}$ of the construction with $Q_r = 1+e_1+2e_2$, and the exponent is
+matching the modulus $Q_r(\cos\Psi)^{-1}$ of the construction with $Q_r = 1+\vec e_x+2\vec e_y$, and the exponent is
 
 $$
-\Psi = \alpha + \frac{\psi}{2}\vec u_{\mathrm b}' = 0.190253 - 0.169108\,e_1 - 0.338216\,e_2 ,
+\Psi = \alpha + \frac{\psi}{2}\vec u_{\mathrm b}' = 0.190253 - 0.169108\,\vec e_x - 0.338216\,\vec e_y ,
 $$
 
 where $\psi = 0.756273220$ is the rapidity of $\tilde U_{\mathrm b}$ and $\vec u_{\mathrm b}' = -(1,2,0)/\sqrt5$ is its axis, unchanged by the rotor because the rotor's axis is parallel to it.
@@ -243,33 +243,33 @@ The two partial regroupings of the same four factors are therefore displayed on 
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+e_1+ie_2$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1+1+i^2 = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so the Hamilton representation does not exist: $B = 0$ and the axis is undefined. The quaternion pairing does exist, with
+Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1+1+i^2 = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so the Hamilton representation does not exist: $B = 0$ and the axis is undefined. The quaternion pairing does exist, with
 
 $$
-r = 1, \qquad \alpha = 0, \qquad \tilde U_{\mathrm b} = 1.414213562\,e_0 + 0.707106781\,i\,e_2 + 0.707106781\,i\,e_3, \qquad \tilde u_{\mathrm r} = 0.707106781\left(e_0+e_1\right) ,
+r = 1, \qquad \alpha = 0, \qquad \tilde U_{\mathrm b} = 1.414213562\,e_t + 0.707106781\,i\,\vec e_y + 0.707106781\,i\,\vec e_z, \qquad \tilde u_{\mathrm r} = 0.707106781\left(e_t+\vec e_x\right) ,
 $$
 
-so that the quaternion modulus is $Q = \tilde u_{\mathrm r} = 0.707106781(e_0+e_1)$. The modulus computed from the parts, $Q_r(\cos\Psi)^{-1}$, is the same quaternion, and this equality is the identity proved in the section on the pairing above; the element is also the non-scalar example of that section.
+so that the quaternion modulus is $Q = \tilde u_{\mathrm r} = 0.707106781(e_t+\vec e_x)$. The modulus computed from the parts, $Q_r(\cos\Psi)^{-1}$, is the same quaternion, and this equality is the identity proved in the section on the pairing above; the element is also the non-scalar example of that section.
 
 ### The Element with a Vanishing Real Part
 
-Take $\tilde{Q} = ie_1+ie_2$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -2$ and $Q_r = 0$, so the construction of the quaternion pairing from the element's parts fails. The polar representation gives
+Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -2$ and $Q_r = 0$, so the construction of the quaternion pairing from the element's parts fails. The polar representation gives
 
 $$
-r = \sqrt{2}, \qquad \alpha = \frac{\pi}{2}, \qquad \tilde U_{\mathrm b} = e_0, \qquad \tilde u_{\mathrm r} = \frac{e_1+e_2}{\sqrt{2}} ,
+r = \sqrt{2}, \qquad \alpha = \frac{\pi}{2}, \qquad \tilde U_{\mathrm b} = e_t, \qquad \tilde u_{\mathrm r} = \frac{\vec e_x+\vec e_y}{\sqrt{2}} ,
 $$
 
-so the Hamilton representation exists, with $B = \sqrt{-2} = i\sqrt{2}$, axis $\vec\Xi = (e_1+e_2)/\sqrt2$, $R = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
+so the Hamilton representation exists, with $B = \sqrt{-2} = i\sqrt{2}$, axis $\vec\Xi = (\vec e_x+\vec e_y)/\sqrt2$, $R = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
 
 $$
-\tilde{Q} = i\sqrt{2}\,\exp\!\left(\frac{e_1+e_2}{\sqrt2}\frac{\pi}{2}\right) .
+\tilde{Q} = i\sqrt{2}\,\exp\!\left(\frac{\vec e_x+\vec e_y}{\sqrt2}\frac{\pi}{2}\right) .
 $$
 
-The quaternion pairing, on the other hand, exists with modulus $r\tilde u_{\mathrm r} = e_1+e_2$ and exponent $\Psi = \alpha = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
+The quaternion pairing, on the other hand, exists with modulus $r\tilde u_{\mathrm r} = \vec e_x+\vec e_y$ and exponent $\Psi = \alpha = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, so the element is invertible and the polar representation is $i = 1\cdot \exp(i\pi/2)\cdot e_0\cdot e_0$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\vec Q = 0$ and $Q_r = 0$; the element is nevertheless in the domain of the polar representation, and the Cartan pairing, which needs only $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, is available as $i = e_0\cdot i$. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
+Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, so the element is invertible and the polar representation is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\vec Q = 0$ and $Q_r = 0$; the element is nevertheless in the domain of the polar representation, and the Cartan pairing, which needs only $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, is available as $i = e_t\cdot i$. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
 
 
 ## Summary
@@ -287,8 +287,8 @@ Under the three conjugations the modulus and the angle of the pairing are unchan
 | $\tilde{Q} = r \exp(i\alpha)\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar representation, four factors |
 | $r$, $\exp(i\alpha)$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\rho = r\exp(i\alpha) = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the complex modulus of the four-factor representation |
-| $\vec Q = Q_1e_1+Q_2e_2+Q_3e_3$ | the vector part of $\tilde{Q}$ |
-| $(\vec Q,\vec Q) = Q_1^2+Q_2^2+Q_3^2$ | the general plain bilinear square of the vector part |
+| $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
+| $(\vec Q,\vec Q) = Q_x^2+Q_y^2+Q_z^2$ | the general plain bilinear square of the vector part |
 | $Q_r$, $Q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $R$ | Hamilton modulus, the complex scalar $\rho$ |
 | $\vec\Xi$, $\Theta$ | Hamilton axis, parallel to $\vec Q$, and complex angle |

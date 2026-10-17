@@ -12,7 +12,7 @@ The article assumes *Complex Analysis* for the normal families and Montel's theo
 
 ## The Fatou and Julia Sets
 
-**Definition.** For a rational map $R$ of degree $d \geq 2$, a point $z$ belongs to the **Fatou set** $F(R)$ when there is a neighbourhood $U$ of $z$ on which the family $\{R^n\}$ of iterates is normal in the sense of *Complex Analysis*, that is, equicontinuous with respect to the spherical metric; the **Julia set** is the complement $J(R)$.
+**Definition.** For a rational map $R$ of degree $d \geq 2$, a point $z$ belongs to the **Fatou set** $F(R)$ when there is a neighbourhood $\Omega$ of $z$ on which the family $\{R^n\}$ of iterates is normal in the sense of *Complex Analysis*, that is, equicontinuous with respect to the spherical metric; the **Julia set** is the complement $J(R)$.
 
 **Theorem (the Fatou–Julia properties).** For a rational map of degree $d \geq 2$:
 

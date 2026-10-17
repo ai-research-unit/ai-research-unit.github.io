@@ -14,11 +14,11 @@ $$
 L_x^{\dagger} = L_x .
 $$
 
-This is the Jordan-algebra counterpart of the familiar adjointness of the left and right multiplications in an associative algebra, and it is the reason the trace form is the natural pairing in the structure theory of a Jordan algebra: the multiplications, and with them the quadratic representations $U_x = 2L_x^2-L_{x^2}$, are self-adjoint.
+This is the Jordan-algebra counterpart of the familiar adjointness of the left and right multiplications in an associative algebra, and it is the reason the trace form is the natural pairing in the structure theory of a Jordan algebra: the multiplications, and with them the quadratic representations $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$, are self-adjoint.
 
-The article defines the trace form, proves its symmetry and its associativity, deduces the self-adjointness of every left multiplication and of every polynomial in the multiplications, and describes the **symmetries**: the quadratic representation $U_x$ is self-adjoint, and for invertible $x$ the operator $U_x$ is invertible with $U_x^{-1} = U_{x^{-1}}$, so the automorphisms of the form that it generates are the symmetries of the algebra. It then describes the induced adjoint involution on the endomorphism algebra, its self-adjoint part — which contains the multiplication algebra and its polynomial closure — and the quadratic operators. The comparison with the associative case is *Adjoints in a Commutative Involutive Algebra*, where the left and the right multiplications are mutual adjoints; in the Jordan case the two multiplications coincide because the product is commutative, and the common operator is self-adjoint.
+The article defines the trace form, proves its symmetry and its associativity, deduces the self-adjointness of every left multiplication and of every polynomial in the multiplications, and describes the **symmetries**: the quadratic representation $\mathrm{Jor}_x$ is self-adjoint, and for invertible $x$ the operator $\mathrm{Jor}_x$ is invertible with $\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}}$, so the automorphisms of the form that it generates are the symmetries of the algebra. It then describes the induced adjoint involution on the endomorphism algebra, its self-adjoint part — which contains the multiplication algebra and its polynomial closure — and the quadratic operators. The comparison with the associative case is *Adjoints in a Commutative Involutive Algebra*, where the left and the right multiplications are mutual adjoints; in the Jordan case the two multiplications coincide because the product is commutative, and the common operator is self-adjoint.
 
-The article assumes *Jordan Algebras* for the product $\bullet$, the left multiplication and the quadratic representation, *The Operators on an Algebra* for the multiplication algebra, *The Adjoint of an Endomorphism* for the adjoint with respect to a bilinear pairing, *Involutive Algebras* for the involution of the endomorphism algebra, and *Commutative Algebras with an Involution* for the comparison with the associative case. The signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, in this group; the forms and the positivity of the trace form are Part II. Throughout, $F$ is a field with $2 \ne 0$, $J$ is a finite-dimensional unital Jordan algebra over $F$, $L_x$ is the left multiplication, $U_x = 2L_x^2-L_{x^2}$ is the quadratic representation, and $T$ is the trace form; no norm, distance, positivity or operator spectrum occurs.
+The article assumes *Jordan Algebras* for the product $\bullet$, the left multiplication and the quadratic representation, *The Operators on an Algebra* for the multiplication algebra, *The Adjoint of an Endomorphism* for the adjoint with respect to a bilinear pairing, *Involutive Algebras* for the involution of the endomorphism algebra, and *Commutative Algebras with an Involution* for the comparison with the associative case. The signed variants are *The Signed Adjoint Sandwich*, *The Signed Adjoint of the Reflection* and *The Signed Adjoint of the Left Multiplication*, in this group; the forms and the positivity of the trace form are Part II. Throughout, $F$ is a field with $2 \ne 0$, $J$ is a finite-dimensional unital Jordan algebra over $F$, $L_x$ is the left multiplication, $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ is the quadratic representation, and $T$ is the trace form; no norm, distance, positivity or operator spectrum occurs.
 
 ## The Trace Form of a Jordan Algebra
 
@@ -66,19 +66,19 @@ $$
 
 ### The Quadratic Representation
 
-**Theorem.** The quadratic representation is self-adjoint, $U_x^{\dagger} = U_x$; for invertible $x$ it is invertible with
+**Theorem.** The quadratic representation is self-adjoint, $\mathrm{Jor}_x^{\dagger} = \mathrm{Jor}_x$; for invertible $x$ it is invertible with
 
 $$
-U_x^{-1} = U_{x^{-1}} , \qquad (U_x^{-1})^{\dagger} = U_x^{-1} ,
+\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}} , \qquad (\mathrm{Jor}_x^{-1})^{\dagger} = \mathrm{Jor}_x^{-1} ,
 $$
 
-and the map $U : x\mapsto U_x$ defines the symmetries of the algebra.
+and the map $\mathrm{Jor} : x\mapsto \mathrm{Jor}_x$ defines the symmetries of the algebra.
 
-*Proof.* $U_x = 2L_x^2-L_{x^2}$ is a polynomial in the self-adjoint operators $L_x$ and $L_{x^2}$, hence self-adjoint by the corollary. The inverse formula $U_x^{-1} = U_{x^{-1}}$ is the standard invertibility criterion of the quadratic representation; the adjoint of the inverse is the inverse of the adjoint, so $U_x^{-1}$ is self-adjoint.
+*Proof.* $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ is a polynomial in the self-adjoint operators $L_x$ and $L_{x^2}$, hence self-adjoint by the corollary. The inverse formula $\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}}$ is the standard invertibility criterion of the quadratic representation; the adjoint of the inverse is the inverse of the adjoint, so $\mathrm{Jor}_x^{-1}$ is self-adjoint.
 
-**Corollary (the symmetries).** The automorphisms of $J$ of the form $U_x$ for invertible $x$ are the **symmetries**; they preserve the trace form, $T(U_xy, U_xz) = T(y,z)$, and they generate the structure group. The inner automorphisms so obtained are the maps by which the Jordan algebra is reflected at the element $x$.
+**Corollary (the symmetries).** The automorphisms of $J$ of the form $\mathrm{Jor}_x$ for invertible $x$ are the **symmetries**; they preserve the trace form, $T(\mathrm{Jor}_x y, \mathrm{Jor}_x z) = T(y,z)$, and they generate the structure group. The inner automorphisms so obtained are the maps by which the Jordan algebra is reflected at the element $x$.
 
-*Proof.* $U_x$ is self-adjoint and invertible and thus an isometry of the non-degenerate form $T$ on the invertible elements by the standard computation $T(U_xy,U_xz) = T(y,U_xU_xz)$; the structure group of a Jordan algebra is generated by the $U_x$.
+*Proof.* $\mathrm{Jor}_x$ is self-adjoint and invertible and thus an isometry of the non-degenerate form $T$ on the invertible elements by the standard computation $T(\mathrm{Jor}_x y,\mathrm{Jor}_x z) = T(y,\mathrm{Jor}_x\mathrm{Jor}_x z)$; the structure group of a Jordan algebra is generated by the $\mathrm{Jor}_x$.
 
 ## The Self-Adjoint Operators and the Involution
 
@@ -88,13 +88,13 @@ and the map $U : x\mapsto U_x$ defines the symmetries of the algebra.
 
 ## Examples
 
-**Example (the symmetric matrices).** Let $J = H_n(F)$ be the Jordan algebra of the symmetric matrices with $x\bullet y = \tfrac12(xy+yx)$. The trace form is a nonzero multiple of the ordinary trace pairing, $T(x,y) = c\,\operatorname{tr}(xy)$, and every $L_x$ is self-adjoint; the quadratic representation $U_x(y) = xyx$ is self-adjoint, and for the invertible $x$ it is a symmetry. The self-adjoint part of $\operatorname{End}_F(J)$ contains the multiplication algebra of the symmetric matrices.
+**Example (the symmetric matrices).** Let $J = H_n(F)$ be the Jordan algebra of the symmetric matrices with $x\bullet y = \tfrac12(xy+yx)$. The trace form is a nonzero multiple of the ordinary trace pairing, $T(x,y) = c\,\operatorname{tr}(xy)$, and every $L_x$ is self-adjoint; the quadratic representation $\mathrm{Jor}_x(y) = xyx$ is self-adjoint, and for the invertible $x$ it is a symmetry. The self-adjoint part of $\operatorname{End}_F(J)$ contains the multiplication algebra of the symmetric matrices.
 
-**Example (the scalar algebra).** For $J = F$ the trace form is $T(x,y) = xy$ and $L_x = U_x$ is the multiplication by $x$, self-adjoint; the symmetries are the nonzero scalars acting by $x\mapsto x^2 y$, and the adjoint involution is the identity on $\operatorname{End}_F(F)\cong F$.
+**Example (the scalar algebra).** For $J = F$ the trace form is $T(x,y) = xy$ and $L_x = \mathrm{Jor}_x$ is the multiplication by $x$, self-adjoint; the symmetries are the nonzero scalars acting by $x\mapsto x^2 y$, and the adjoint involution is the identity on $\operatorname{End}_F(F)\cong F$.
 
 ## Summary
 
-The **trace form** $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of a finite-dimensional Jordan algebra is symmetric and **associative**, $T(x\bullet y,z) = T(x,y\bullet z)$, and therefore the **left multiplication is self-adjoint**: $L_x^{\dagger} = L_x$. Every polynomial in the left multiplications is self-adjoint, and in particular the **quadratic representation** $U_x = 2L_x^2-L_{x^2}$ is self-adjoint, with $U_x^{-1} = U_{x^{-1}}$ for invertible $x$; the operators $U_x$ are the **symmetries**, they preserve the trace form and they generate the structure group. The adjoint involution of the endomorphism algebra has the multiplication algebra and its polynomial closure inside its self-adjoint part, which is a Jordan algebra under the symmetrised product. The symmetric matrices and the scalar algebra are the worked examples. No norm, distance, positivity or operator spectrum occurs.
+The **trace form** $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of a finite-dimensional Jordan algebra is symmetric and **associative**, $T(x\bullet y,z) = T(x,y\bullet z)$, and therefore the **left multiplication is self-adjoint**: $L_x^{\dagger} = L_x$. Every polynomial in the left multiplications is self-adjoint, and in particular the **quadratic representation** $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ is self-adjoint, with $\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}}$ for invertible $x$; the operators $\mathrm{Jor}_x$ are the **symmetries**, they preserve the trace form and they generate the structure group. The adjoint involution of the endomorphism algebra has the multiplication algebra and its polynomial closure inside its self-adjoint part, which is a Jordan algebra under the symmetrised product. The symmetric matrices and the scalar algebra are the worked examples. No norm, distance, positivity or operator spectrum occurs.
 
 ## Summary of Notation
 
@@ -106,8 +106,8 @@ The **trace form** $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ of a finite-dime
 | $T(x,y) = \operatorname{tr}(L_{x\bullet y})$ | Trace form |
 | $T(x\bullet y,z) = T(x,y\bullet z)$ | Associativity of the trace form |
 | $L_x^{\dagger} = L_x$ | Self-adjointness of the left multiplication |
-| $U_x = 2L_x^2-L_{x^2}$ | Quadratic representation, self-adjoint |
-| $U_x^{-1} = U_{x^{-1}}$ | Symmetry at an invertible element |
+| $\mathrm{Jor}_x = 2L_x^2-L_{x^2}$ | Quadratic representation, self-adjoint |
+| $\mathrm{Jor}_x^{-1} = \mathrm{Jor}_{x^{-1}}$ | Symmetry at an invertible element |
 
 ## Further Reading
 

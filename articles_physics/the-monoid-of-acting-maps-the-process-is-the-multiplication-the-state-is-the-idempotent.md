@@ -16,7 +16,7 @@ $$
 L_{\tilde{P}} : \tilde{R} \mapsto \tilde{P}\tilde{R}, \qquad\qquad R_{\tilde{P}} : \tilde{R} \mapsto \tilde{R}\tilde{P}.
 $$
 
-Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_0) = \tilde{P}$ and $R_{\tilde{P}}(e_0) = \tilde{P}$. Their **composition rules** are the associativity of the product read on the maps,
+Both are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, and both are determined by the element: $L_{\tilde{P}}(e_t) = \tilde{P}$ and $R_{\tilde{P}}(e_t) = \tilde{P}$. Their **composition rules** are the associativity of the product read on the maps,
 
 $$
 L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}, \qquad\qquad R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}},
@@ -38,7 +38,7 @@ $$
 \tilde{Q}\;\longmapsto\; L_{\tilde{Q}}
 $$
 
-is an **injective algebra homomorphism** from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_0$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_0) = \tilde{Q}$ recovers the element from the map. This is the **left regular representation** of the algebra, and it is the abstract content of the two matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.
+is an **injective algebra homomorphism** from $\mathbb{B}$ into the endomorphisms of $\mathbb{B}$: it is linear, it respects the product by the rule, it carries $e_t$ to the identity map, and it is injective because $L_{\tilde{Q}}(e_t) = \tilde{Q}$ recovers the element from the map. This is the **left regular representation** of the algebra, and it is the abstract content of the two matrix operator articles: what those articles tabulate in matrices is the image of this homomorphism, $L_{\tilde{Q}}$ read in the coefficient basis.
 
 ## The Monoid of Acting Maps
 
@@ -48,10 +48,10 @@ $$
 \mathcal{L} = \{\,L_{\tilde{Q}} \;:\; \tilde{Q}\in\mathbb{B}\,\},
 $$
 
-and its structure is fixed by the composition rule. Composition of maps is associative always, so $\mathcal{L}$ is **associative**; the identity element is the left multiplication by the algebra's unit, $L_{e_0} = \mathrm{id}$; and $\mathcal{L}$ is closed under composition by the rule. Therefore
+and its structure is fixed by the composition rule. Composition of maps is associative always, so $\mathcal{L}$ is **associative**; the identity element is the left multiplication by the algebra's unit, $L_{e_t} = \mathrm{id}$; and $\mathcal{L}$ is closed under composition by the rule. Therefore
 
 $$
-(\mathcal{L},\,\circ,\;L_{e_0})
+(\mathcal{L},\,\circ,\;L_{e_t})
 $$
 
 is a **monoid**: a set with an associative product and an identity. It is not a group, and the reason is the algebra's zero divisors. The element $L_{\tilde{Q}}$ is invertible **iff** $\tilde{Q}$ is a unit, that is iff $\langle\tilde{Q}\rangle_{\natural}\neq0$, in which case $L_{\tilde{Q}}^{-1} = L_{\tilde{Q}^{-1}}$ with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$; if $\langle\tilde{Q}\rangle_{\natural} = 0$ the element is a zero divisor and $L_{\tilde{Q}}$ is not invertible. So the group of units of the monoid is the image of the group of invertible elements, and **the zero divisors are the non-invertible maps**.
@@ -121,7 +121,7 @@ Read as a **horizon**, the zero-divisor cone is at once the locus of light, the 
 
 ## Summary
 
-An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_0}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
+An element of the biquaternion algebra generates two $\mathbb{C}$-linear maps, the left multiplication $L_{\tilde{Q}}$ and the right multiplication $R_{\tilde{Q}}$, with $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ and $R_{\tilde{P}}\circ R_{\tilde{Q}} = R_{\tilde{Q}\tilde{P}}$. The left multiplications form a **monoid** under composition: associative, with identity $L_{e_t}$, closed by the product rule. The element-to-map correspondence is the injective left regular representation, and it is the abstract content of the two matrix operator articles. The units of the monoid are exactly the off-cone elements, the zero divisors are the non-invertible maps, and the light cone is the boundary between them.
 
 The sandwich of the two matrix articles is the composition of a left action with a right action, $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$, which is why it is a congruence and not a similarity. The states are the projectors, and idempotent elements are idempotent maps under the injective representation; the projectors lie in $\mathbb{M}_+$ and $\mathbb{M}_-$ has none, the minimal ones are the rank-one projectors, and those are null and sit on the cone. The reading is the process–state split: the process is the map of the monoid, the state is the idempotent, the reversible dynamics is the group of units off the cone, and the measurement is the passage to a non-invertible map on it.
 
@@ -132,7 +132,7 @@ The sandwich of the two matrix articles is the composition of a left action with
 | $L_{\tilde{P}}$, $R_{\tilde{P}}$ | left and right multiplication by $\tilde{P}$, $L_{\tilde{P}}(\tilde{R})=\tilde{P}\tilde{R}$, $R_{\tilde{P}}(\tilde{R})=\tilde{R}\tilde{P}$ |
 | $L_{\tilde{P}}\circ L_{\tilde{Q}} = L_{\tilde{P}\tilde{Q}}$ | the composition rule of the left multiplications |
 | $\mathcal{L} = \{L_{\tilde{Q}}\}$ | the monoid of left multiplications |
-| $L_{e_0}$ | the identity of the monoid |
+| $L_{e_t}$ | the identity of the monoid |
 | $\mathsf{M}_4, \mathsf{M}_4^{R}$ | the regular matrices of the $4\times4$ article |
 | $\mathsf{M}_2$, $M = \mathsf{M}_2(\tilde{Q})$ | the matrix image and its matrix |
 | $\operatorname{H}_{\tilde{Q}} = L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$ | the sandwich as a composition of a left and a right action |

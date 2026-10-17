@@ -11,13 +11,13 @@ The article uses the notation of *Operators on a Sheaf* throughout and does not 
 
 ## The Sections of the Sheaf of Operators
 
-**Proposition (sections and their gluing).** For every open $U\subseteq X$ the sections of the sheaf of operators are the operators on the restriction,
+**Proposition (sections and their gluing).** For every open $\Omega\subseteq X$ the sections of the sheaf of operators are the operators on the restriction,
 
 $$
-\Gamma(U,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_U),
+\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}|_\Omega),
 $$
 
-and an operator on $\mathcal{F}$ over $U$ is the same thing as a compatible family of operators over the members of an open cover of $U$: if $U=\bigcup_iU_i$ and $T_i\in\operatorname{End}(\mathcal{F}|_{U_i})$ satisfy $T_i|_{U_i\cap U_j}=T_j|_{U_i\cap U_j}$ for all $i,j$, then there is a unique $T\in\operatorname{End}(\mathcal{F}|_U)$ restricting to $T_i$ on each $U_i$.
+and an operator on $\mathcal{F}$ over $\Omega$ is the same thing as a compatible family of operators over the members of an open cover of $\Omega$: if $\Omega=\bigcup_iU_i$ and $T_i\in\operatorname{End}(\mathcal{F}|_{\Omega_i})$ satisfy $T_i|_{\Omega_i\cap \Omega_j}=T_j|_{\Omega_i\cap \Omega_j}$ for all $i,j$, then there is a unique $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ restricting to $T_i$ on each $\Omega_i$.
 
 *Proof.* The first identity and the gluing are the sheaf property of $\mathcal{E}nd(\mathcal{F})$ established in *Operators on a Sheaf*; they are restated here only to fix the reading of the sections as operators on the restriction.
 
@@ -38,18 +38,18 @@ and $\mathcal{E}nd$ is a functor on the groupoid of sheaves and isomorphisms.
 **Definition.** The **sheaf of units** of the operator sheaf is the sheaf of groups
 
 $$
-\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times},\qquad \Gamma(U,\mathcal{G}L(\mathcal{F}))=\operatorname{Aut}(\mathcal{F}|_U),
+\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times},\qquad \Gamma(\Omega,\mathcal{G}L(\mathcal{F}))=\operatorname{Aut}(\mathcal{F}|_\Omega),
 $$
 
 the subsheaf of the locally invertible operators; it is also written $\mathcal{A}ut(\mathcal{F})$ and called the **automorphism sheaf**. Its global sections form the group $\operatorname{Aut}(\mathcal{F})=\mathcal{G}L(\mathcal{F})(X)$ of *Operators on a Sheaf*.
 
-**Proposition (units sectionwise).** An operator $T\in\operatorname{End}(\mathcal{F}|_U)$ is a unit of the ring $\operatorname{End}(\mathcal{F}|_U)$ if and only if its germ $T_x$ is a unit of $\operatorname{End}(\mathcal{F}_x)$ for every $x\in U$; the property of being invertible is local, and $\mathcal{G}L(\mathcal{F})$ is a subsheaf of $\mathcal{E}nd(\mathcal{F})$.
+**Proposition (units sectionwise).** An operator $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ is a unit of the ring $\operatorname{End}(\mathcal{F}|_\Omega)$ if and only if its germ $T_x$ is a unit of $\operatorname{End}(\mathcal{F}_x)$ for every $x\in \Omega$; the property of being invertible is local, and $\mathcal{G}L(\mathcal{F})$ is a subsheaf of $\mathcal{E}nd(\mathcal{F})$.
 
-*Proof.* If $T$ has a two-sided inverse $S$ on $U$ then the germs invert one another, so the condition is necessary. Conversely if every germ is invertible then the germs of the inverse operator are defined locally and agree on overlaps, so they glue to an inverse of $T$ over $U$ by the sheaf property of $\mathcal{E}nd(\mathcal{F})$. The gluing of the inverses uses the uniqueness of an inverse in a ring.
+*Proof.* If $T$ has a two-sided inverse $S$ on $\Omega$ then the germs invert one another, so the condition is necessary. Conversely if every germ is invertible then the germs of the inverse operator are defined locally and agree on overlaps, so they glue to an inverse of $T$ over $\Omega$ by the sheaf property of $\mathcal{E}nd(\mathcal{F})$. The gluing of the inverses uses the uniqueness of an inverse in a ring.
 
-**Proposition (the matrices of automorphisms).** If $\mathcal{F}$ is locally free of finite rank $r$, then on a trivializing open set $U$ there is an isomorphism $\mathcal{G}L(\mathcal{F})|_U\cong\mathrm{GL}_r(\mathcal{O}_X)|_U$, the sheaf of $r\times r$ matrices with invertible determinant, and $\mathcal{G}L(\mathcal{F})$ is a twisted form of the general linear group, with twisting cocycle the Čech 1-cocycle of the trivialization in $\mathrm{GL}_r(\mathcal{O}_X)$.
+**Proposition (the matrices of automorphisms).** If $\mathcal{F}$ is locally free of finite rank $r$, then on a trivializing open set $\Omega$ there is an isomorphism $\mathcal{G}L(\mathcal{F})|_\Omega\cong\mathrm{GL}_r(\mathcal{O}_X)|_\Omega$, the sheaf of $r\times r$ matrices with invertible determinant, and $\mathcal{G}L(\mathcal{F})$ is a twisted form of the general linear group, with twisting cocycle the Čech 1-cocycle of the trivialization in $\mathrm{GL}_r(\mathcal{O}_X)$.
 
-*Proof.* Choose a trivialization $\mathcal{F}|_U\cong\mathcal{O}_U^r$; conjugation by it identifies the operators on $\mathcal{F}|_U$ with the matrices, by the bifunctoriality above, and the units with the invertible matrices. On the overlaps two trivializations differ by an element of $\mathrm{GL}_r(\mathcal{O}_{U\cap V})$, giving the transition cocycle; the cocycle condition on the triple overlaps is the associativity of the transition isomorphisms, and it is the Čech cocycle of *Čech Cohomology*.
+*Proof.* Choose a trivialization $\mathcal{F}|_\Omega\cong\mathcal{O}_\Omega^r$; conjugation by it identifies the operators on $\mathcal{F}|_\Omega$ with the matrices, by the bifunctoriality above, and the units with the invertible matrices. On the overlaps two trivializations differ by an element of $\mathrm{GL}_r(\mathcal{O}_{\Omega\cap V})$, giving the transition cocycle; the cocycle condition on the triple overlaps is the associativity of the transition isomorphisms, and it is the Čech cocycle of *Čech Cohomology*.
 
 **Remark (the classification by the cocycle).** Two trivializations of a locally free $\mathcal{F}$ over a cover give two matrix descriptions of the same operator; the two cocycles differ by a coboundary, and conversely two cocycles differing by a coboundary define isomorphic sheaves, by gluing the local free sheaves along the coboundary. This is the descent of the local models in the sense of *Descent Theory*, and the Čech computation belongs to *Čech Cohomology*.
 
@@ -57,15 +57,15 @@ the subsheaf of the locally invertible operators; it is also written $\mathcal{A
 
 **Theorem (the local matrix model).** Let $\mathcal{F}$ be locally free of finite rank $r$ on the ringed space $(X,\mathcal{O}_X)$. Then $\mathcal{E}nd(\mathcal{F})$ is a sheaf of $\mathcal{O}_X$-algebras satisfying:
 
-1. $\mathcal{E}nd(\mathcal{F})$ is locally free of finite rank $r^2$ over $\mathcal{O}_X$, and on a trivializing open set $U$ for $\mathcal{F}$ there is an isomorphism of sheaves of $\mathcal{O}_U$-algebras $\mathcal{E}nd(\mathcal{F})|_U\cong M_r(\mathcal{O}_U)$;
-2. $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee}$, and taking global sections on an open $U$ gives $\operatorname{End}(\mathcal{F}|_U)\cong(\mathcal{F}\otimes\mathcal{F}^{\vee})(U)$;
+1. $\mathcal{E}nd(\mathcal{F})$ is locally free of finite rank $r^2$ over $\mathcal{O}_X$, and on a trivializing open set $\Omega$ for $\mathcal{F}$ there is an isomorphism of sheaves of $\mathcal{O}_\Omega$-algebras $\mathcal{E}nd(\mathcal{F})|_\Omega\cong M_r(\mathcal{O}_\Omega)$;
+2. $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes_{\mathcal{O}_X}\mathcal{F}^{\vee}$, and taking global sections on an open $\Omega$ gives $\operatorname{End}(\mathcal{F}|_\Omega)\cong(\mathcal{F}\otimes\mathcal{F}^{\vee})(\Omega)$;
 3. the centre of $\mathcal{E}nd(\mathcal{F})$ is $\mathcal{O}_X$, and the scalar morphism $\mathcal{O}_X\to\mathcal{E}nd(\mathcal{F})$ is an isomorphism onto the centre.
 
-*Proof.* (1) On a trivialization $\mathcal{F}|_U\cong\mathcal{O}_U^r$ the conjugation isomorphism of the previous section identifies the operator sheaf with $\mathcal{H}om(\mathcal{O}_U^r,\mathcal{O}_U^r)=M_r(\mathcal{O}_U)$, which is free of rank $r^2$. (2) The identification $\mathcal{H}om(\mathcal{F},\mathcal{G})\cong\mathcal{F}^{\vee}\otimes_{\mathcal{O}_X}\mathcal{G}$ for locally free $\mathcal{F}$ of finite rank is the standard adjunction of tensor and hom; with $\mathcal{G}=\mathcal{F}$ it gives $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}^{\vee}\otimes\mathcal{F}$, and the symmetry of the tensor product for the order of the factors is immaterial. (3) On a trivialization the centre of $M_r(\mathcal{O}_U)$ is the scalar matrices for $r\geq1$; the local identifications glue, giving $Z(\mathcal{E}nd(\mathcal{F}))=\mathcal{O}_X$, and the scalar morphism is a sectionwise isomorphism onto it.
+*Proof.* (1) On a trivialization $\mathcal{F}|_\Omega\cong\mathcal{O}_\Omega^r$ the conjugation isomorphism of the previous section identifies the operator sheaf with $\mathcal{H}om(\mathcal{O}_\Omega^r,\mathcal{O}_\Omega^r)=M_r(\mathcal{O}_\Omega)$, which is free of rank $r^2$. (2) The identification $\mathcal{H}om(\mathcal{F},\mathcal{G})\cong\mathcal{F}^{\vee}\otimes_{\mathcal{O}_X}\mathcal{G}$ for locally free $\mathcal{F}$ of finite rank is the standard adjunction of tensor and hom; with $\mathcal{G}=\mathcal{F}$ it gives $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}^{\vee}\otimes\mathcal{F}$, and the symmetry of the tensor product for the order of the factors is immaterial. (3) On a trivialization the centre of $M_r(\mathcal{O}_\Omega)$ is the scalar matrices for $r\geq1$; the local identifications glue, giving $Z(\mathcal{E}nd(\mathcal{F}))=\mathcal{O}_X$, and the scalar morphism is a sectionwise isomorphism onto it.
 
 **Proposition (the two-sided ideals).** If $\mathcal{F}$ is locally free of finite rank $r\geq1$, every two-sided ideal of $\mathcal{E}nd(\mathcal{F})$ is of the form $\mathcal{J}\cdot\mathcal{E}nd(\mathcal{F})$ for a unique ideal $\mathcal{J}$ of $\mathcal{O}_X$; equivalently, the two-sided ideals of the operator sheaf are the ideals pulled back from its centre.
 
-*Proof.* On a trivializing open set the two-sided ideals of $M_r(\mathcal{O}_U)$ are the ideals $\mathcal{J}\,M_r(\mathcal{O}_U)$ with $\mathcal{J}$ an ideal of $\mathcal{O}_U$, by the standard description of the ideals of a full matrix ring; the local ideals and the local generators glue because the trivializations on overlaps conjugate the matrix algebras and preserve the two-sided ideals, and the ideal $\mathcal{J}$ is the pullback of the ideal to the centre.
+*Proof.* On a trivializing open set the two-sided ideals of $M_r(\mathcal{O}_\Omega)$ are the ideals $\mathcal{J}\,M_r(\mathcal{O}_\Omega)$ with $\mathcal{J}$ an ideal of $\mathcal{O}_\Omega$, by the standard description of the ideals of a full matrix ring; the local ideals and the local generators glue because the trivializations on overlaps conjugate the matrix algebras and preserve the two-sided ideals, and the ideal $\mathcal{J}$ is the pullback of the ideal to the centre.
 
 **Proposition (the trace).** Let $\mathcal{F}$ be locally free of finite rank $r$. There is a morphism of sheaves $\operatorname{tr}:\mathcal{E}nd(\mathcal{F})\to\mathcal{O}_X$, the **trace**, characterised on a trivialization by the matrix trace; it is $\mathcal{O}_X$-linear, satisfies $\operatorname{tr}(TS)=\operatorname{tr}(ST)$ and $\operatorname{tr}(\mathrm{id})=r$, and an operator is **traceless** when $\operatorname{tr}T=0$. If $r$ is invertible in $\mathcal{O}_X(X)$ the **reduced trace** $\frac1r\operatorname{tr}$ is defined and $\operatorname{tr}(T)=0$ is equivalent to the tracelessness of $T-\frac1r\operatorname{tr}(T)\,\mathrm{id}$.
 
@@ -127,7 +127,7 @@ For a locally free sheaf of finite rank $r$ the local structure is the matrix al
 
 | Symbol | Meaning |
 |---|---|
-| $\Gamma(U,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_U)$ | sections of the operator sheaf are the operators on the restriction |
+| $\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_\Omega)$ | sections of the operator sheaf are the operators on the restriction |
 | $\mathcal{H}om(-,-)$ | bifunctor, contravariant in the source and covariant in the target |
 | $\mathcal{E}nd(\varphi)(T)=\varphi T\varphi^{-1}$ | functoriality on isomorphisms by conjugation |
 | $\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times}$ | sheaf of units, the automorphism sheaf $\mathcal{A}ut(\mathcal{F})$ |

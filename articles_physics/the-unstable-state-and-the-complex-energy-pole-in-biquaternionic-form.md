@@ -11,13 +11,13 @@ This article treats the unstable state in the biquaternion framework of this ser
 
 The article is organised as follows. A first section defines the survival amplitude and the survival probability in the module and records the exact short-time law, which is quadratic and which no pure exponential satisfies. A second writes the resolvent of the interacting Hamiltonian, defines the self-energy, and locates the pole on the second sheet. A third reads the pole in the algebra: its conjugate mirror, and its centrality. A fourth derives the effective central self-energy of a block that couples the two module slots, which is the framework's form of the statement that a state-dependent coupling can be eliminated into a complex central potential. A fifth treats the exactly soluble case and separates what is transcribed from the external literature from what is recomputed here. A sixth gives the decay law and its limits, and a seventh separates what the algebra adds from what it does not. The closing sections are the open questions, the summary, the notation table and the external reading.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Quantum Physics in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace is $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$; the Hamiltonian is $\tilde H\in\mathbb{M}_+$, so that
+**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Quantum Physics in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace is $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$; the Hamiltonian is $\tilde H\in\mathbb{M}_+$, so that
 
 $$
-\tilde H = h_0\,e_0 + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
+\tilde H = h_0\,e_t + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(ie_k)=\sigma_k$; a pure state is the idempotent $\tilde P=\tfrac12(e_0+i\vec u)$ with $\vec u$ a unit vector along the $e_k$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_0$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
+and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde P=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_t$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
 
 The convention for the resolvent follows *The Resolvent Operator*, which writes $R(\lambda)=(L-\lambda)^{-1}$; this article writes the Green's function $G(z)=(z-\tilde H)^{-1}$, so the two are related by $G(z)=-R(z)$, and the poles are the eigenvalues in both.
 
@@ -94,7 +94,7 @@ which is the matrix form of the reflective symmetry of the resolvent in the real
 
 ### The self-energy
 
-Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde P_0$ project on the state of interest with $\tilde H_0\tilde P_0=E_0\tilde P_0$. Write $Q=e_0-\tilde P_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
+Split the Hamiltonian into a solvable part and a coupling, $\tilde H=\tilde H_0+\tilde V$, and let $\tilde P_0$ project on the state of interest with $\tilde H_0\tilde P_0=E_0\tilde P_0$. Write $Q=e_t-\tilde P_0$ for the complementary projection and $Q\tilde HQ$ for the coupling restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
 
 $$
 G_{00}(z) = \mathrm{Tr}\bigl(\tilde P_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde P_0\,G(z)\,\tilde P_0\bigr),
@@ -166,7 +166,7 @@ The centrality is not a coincidence of the models treated below. It is a consequ
 
 ### The reduction
 
-The state module splits into two orthogonal summands, and a Hamiltonian that couples them can be written in the corresponding block form. Let $\tilde\Pi$ be the idempotent of one summand and $S=S_1\oplus S_2$ the splitting $S_1=\tilde\Pi S$, $S_2=(e_0-\tilde\Pi)S$. In the module basis, with $\tilde H$ Hermitian, the matrix image of the Hamiltonian is
+The state module splits into two orthogonal summands, and a Hamiltonian that couples them can be written in the corresponding block form. Let $\tilde\Pi$ be the idempotent of one summand and $S=S_1\oplus S_2$ the splitting $S_1=\tilde\Pi S$, $S_2=(e_t-\tilde\Pi)S$. In the module basis, with $\tilde H$ Hermitian, the matrix image of the Hamiltonian is
 
 $$
 H = \begin{pmatrix} H_{\mathrm{c}} & V \\ V^{*} & H_{\mathrm{nc}}\end{pmatrix},
@@ -284,11 +284,11 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $\tilde H=h_0e_0+i\vec h$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
+| $\tilde H=h_0e_t+i\vec h$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde P_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
-| $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_0$ |
+| $\tilde U(t)=\exp(-i\tilde Ht/\hbar)$ | Unitary evolution, $\tilde U\tilde U^{*}=e_t$ |
 | $A(t)=\mathrm{Tr}(\tilde P_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |
 | $(\Delta\tilde H)^{2}$ | Variance of $\tilde H$ in the initial state |
 | $G(z)=(z-\tilde H)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |

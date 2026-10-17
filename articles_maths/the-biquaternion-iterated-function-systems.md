@@ -18,7 +18,7 @@ $$
 \tilde Q\longmapsto \tilde A\tilde Q+\tilde B \ (\text{left-affine}), \qquad \tilde Q\longmapsto\tilde Q\tilde A+\tilde B\ (\text{right-affine}), \qquad \tilde Q\longmapsto\tilde A\tilde Q\tilde C+\tilde B\ (\text{two-sided}).
 $$
 
-The three families are nested; a left-affine map is two-sided with $\tilde C=e_0$, and the two-sided form is the general shape of a map that is affine for the general plain bilinear product.
+The three families are nested; a left-affine map is two-sided with $\tilde C=e_t$, and the two-sided form is the general shape of a map that is affine for the general plain bilinear product.
 
 **Proposition (the two-sided forms span the linear maps).** Every $\mathbb{C}$-linear endomorphism $L$ of $\mathbb{B}$ is a finite sum of two-sided multipliers, $L=\sum_j\tilde A_j(\cdot)\tilde C_j$; the complex-linear maps form a space of complex dimension sixteen and the two-sided forms span it.
 
@@ -30,7 +30,7 @@ The three families are nested; a left-affine map is two-sided with $\tilde C=e_0
 
 **Proposition (the Lipschitz constant).** The map $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is Lipschitz with constant $\|L_{\tilde A}\|$, and $\|L_{\tilde A}\|\le\sqrt2\,\|\tilde A\|_E$. It is a contraction exactly when $\|L_{\tilde A}\|<1$.
 
-**Proof.** $\|f(\tilde P)-f(\tilde Q)\|_E=\|\tilde A(\tilde P-\tilde Q)\|_E\le\|L_{\tilde A}\|\|\tilde P-\tilde Q\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
+**Proof.** $\|f(\tilde Q_2)-f(\tilde Q)\|_E=\|\tilde A(\tilde Q_2-\tilde Q)\|_E\le\|L_{\tilde A}\|\|\tilde Q_2-\tilde Q\|_E$ by definition of the operator norm, and the estimate $\|L_{\tilde A}\|\le\sqrt2\|\tilde A\|_E$ is the norm comparison of *The Matrix Element Representation and the Biquaternion Dynamics*.
 
 **Theorem (the similarity multipliers).** Let $\tilde A$ be a real quaternion of positive norm, $\tilde A\in\mathbb{H}_{\mathbb{B}}$, $\langle\tilde A\rangle_{\natural}=\rho^2$ with $\rho>0$. Then left multiplication by $\tilde A$ is a similarity of the eight-dimensional space with ratio $\rho$,
 
@@ -42,7 +42,7 @@ so $f(\tilde Q)=\tilde A\tilde Q+\tilde B$ is a similarity with ratio $\rho$ and
 
 **Proof.** Write $\tilde A=\rho U$ with $U$ a real unit quaternion. Left multiplication by a unit real quaternion is a rotation of the four-dimensional real space $\mathbb{H}$, because it preserves the quaternion norm and the identity; writing $\tilde Q=\tilde P+i\tilde R$ with $\tilde P,\tilde R\in\mathbb{H}$, one has $\tilde A\tilde Q=\tilde A\tilde P+i\tilde A\tilde R$ and $\|\tilde A\tilde Q\|_E^2=\rho^2(\|\tilde P\|^2+\|\tilde R\|^2)=\rho^2\|\tilde Q\|_E^2$. The last clause is the Lipschitz criterion with the constant $\rho$.
 
-**Remark (the central multipliers).** For a central multiplier $\tilde A=\lambda e_0$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_0\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
+**Remark (the central multipliers).** For a central multiplier $\tilde A=\lambda e_t$ the similarity ratio is $|\lambda|$, the smallest possible among the multipliers of a given biquaternion norm, because $\|\lambda e_t\|_E=|\lambda|$ and the operator norm is $|\lambda|$. **For a real quaternionic multiplier the ratio is the square root of the biquaternion norm; for a general multiplier the ratio lies between the two extremes and there is no formula in terms of $\langle\cdot\rangle_{\natural}$ alone**, because the algebra is not a division algebra.
 
 **Remark (the zero divisors are not contractions of the algebra).** If $\tilde A$ is a zero divisor then left multiplication by $\tilde A$ is a singular operator, but its operator norm can still be less than one; the map is then a contraction with an image contained in a proper subspace. **A zero-divisor multiplier is a legitimate contraction whose image avoids a direction, and the attractor it produces is contained in the image subspace**; no invertibility of the multiplier is needed for the existence of the attractor.
 
@@ -74,7 +74,7 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 ## The Inverse Branches of the Quadratic Map
 
-**Proposition (the square root and its branches).** For $\tilde W\in\mathbb{B}$ the equation $\tilde Q^2=\tilde W$ is solved by the square-root formula of the algebra: writing the root as $\tilde Q=Q_0e_0+\vec Q$, its scalar part is $P_0=\pm\sqrt{x}$ for the two solutions $x_\pm=\tfrac12(Q_0\pm\sqrt{n})$ of the reduced quadratic in $x=P_0^2$, and there are generically four roots, falling to two in the degenerate cases and to none for a non-zero nilpotent $\tilde W$ (*Square Roots of a General Element in the Biquaternion Algebra*). On the regular part of the square map the roots are therefore the values of finitely many local branches.
+**Proposition (the square root and its branches).** For $\tilde W\in\mathbb{B}$ the equation $\tilde Q^2=\tilde W$ is solved by the square-root formula of the algebra: writing the root as $\tilde Q=Q_te_t+\vec Q$, its scalar part is $P_0=\pm\sqrt{x}$ for the two solutions $x_\pm=\tfrac12(Q_t\pm\sqrt{n})$ of the reduced quadratic in $x=P_0^2$, and there are generically four roots, falling to two in the degenerate cases and to none for a non-zero nilpotent $\tilde W$ (*Square Roots of a General Element in the Biquaternion Algebra*). On the regular part of the square map the roots are therefore the values of finitely many local branches.
 
 **Proof.** The count is the corollary on the number of roots of *Square Roots of a General Element in the Biquaternion Algebra*: four roots when $(\vec Q,\vec Q)\neq0$ and $n\neq0$, two in the degenerate cases, and none for a rootless element, the example being a non-zero nilpotent of the algebra; the square map is the polynomial $M\mapsto M^2$ in the matrix model (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
@@ -86,7 +86,7 @@ and the Hausdorff measure in dimension $s$ of the attractor is positive and fini
 
 **Proposition (the conjugations act on the systems).** Let $g$ be one of the conjugations ${}^{\natural},\bar{\cdot},{}^{*}$. If every generator and every translation of a system satisfies $g(\tilde A_i)=\tilde A_i$ and $g(\tilde B_i)=\tilde B_i$, then $g$ maps the attractor to itself. If $g$ maps the data of a system to the data of another system, then $g$ maps the attractor of the first to the attractor of the second.
 
-**Proof.** $g$ is an isometry of the Euclidean norm and satisfies $g(\tilde P\tilde Q)=g(\tilde P)g(\tilde Q)$ for $\tilde A\tilde Q$ with $\tilde A$ fixed; applying $g$ to $K=\bigcup f_i(K)$ gives the first statement, and the second is the same computation with the images of the generators and translations.
+**Proof.** $g$ is an isometry of the Euclidean norm and satisfies $g(\tilde A\tilde Q)=g(\tilde A)g(\tilde Q)$ for $\tilde A\tilde Q$ with $\tilde A$ fixed; applying $g$ to $K=\bigcup f_i(K)$ gives the first statement, and the second is the same computation with the images of the generators and translations.
 
 **Remark (the symmetric systems).** A system with real quaternionic generators and translations is invariant under the quaternion conjugation, and a system with central real generators is invariant under the whole group $G$; **the symmetries of the attractor are read from the symmetries of the generator list, exactly as for the quadratic fractal, and the classification of the previous article applies.**
 

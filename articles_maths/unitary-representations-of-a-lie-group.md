@@ -13,7 +13,7 @@ The article assumes the Hilbert space, the bounded operators and the spectral th
 
 ### The Definition
 
-**Definition.** A **unitary representation** of $G$ on a complex Hilbert space $\mathcal{H}$ is a homomorphism $\pi : G \to U(\mathcal{H})$ into the unitary group such that for every $v \in \mathcal{H}$ the map $g \mapsto \pi(g)v$ is continuous. Two unitary representations are **unitarily equivalent** when there is a unitary $U$ with $U\pi_1(g) = \pi_2(g)U$ for all $g$.
+**Definition.** A **unitary representation** of $G$ on a complex Hilbert space $\mathcal{H}$ is a homomorphism $\pi : G \to \mathrm{U}(\mathcal{H})$ into the unitary group such that for every $v \in \mathcal{H}$ the map $g \mapsto \pi(g)v$ is continuous. Two unitary representations are **unitarily equivalent** when there is a unitary $U$ with $U\pi_1(g) = \pi_2(g)U$ for all $g$.
 
 **Definition.** A unitary representation is **irreducible** when it has no non-trivial closed invariant subspace, and **topologically irreducible** when the only closed invariant subspaces are $0$ and $\mathcal{H}$; for unitary representations the two notions coincide, and the representation is a **direct sum** of representations when $\mathcal{H}$ is the orthogonal direct sum of invariant subspaces.
 
@@ -25,7 +25,7 @@ The article assumes the Hilbert space, the bounded operators and the spectral th
 
 ### The Derived Representation
 
-**Theorem (Stone).** Let $g : \mathbb{R} \to U(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.
+**Theorem (Stone).** Let $g : \mathbb{R} \to \mathrm{U}(\mathcal{H})$ be a strongly continuous one-parameter unitary group. Then there is a self-adjoint operator $A$ on a dense domain such that $g(t) = \exp(itA)$; conversely every self-adjoint $A$ defines such a group. The operator $A$ is determined by $g$ and is written $A = -i\,g'(0)$ in the sense of the derivative on the domain of analytic vectors.
 
 *Proof.* Stone's theorem is the spectral theorem for the one-parameter group; the map $t\mapsto g(t)$ has a generator $B$ which is skew-adjoint with dense domain, and $A = -iB$ is self-adjoint with the same domain.
 
@@ -37,7 +37,7 @@ $$
 
 **Theorem.** The derived representation is a representation of the Lie algebra by skew-adjoint operators, $\pi_*(X)^* = -\pi_*(X)$ on $\mathcal{H}^\infty$, so that $i\pi_*(X)$ is self-adjoint and $\pi_*$ extends to a representation of the universal enveloping algebra; the space $\mathcal{H}^\infty$ is dense, invariant and carries a Fréchet structure on which every $\pi_*(u)$ is continuous.
 
-*Proof.* The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $U(\mathrm{G})$ is the universal property.
+*Proof.* The skew-adjointness is the derivative of the equality $\pi(\exp tX)^*\pi(\exp tX) = \mathrm{id}$ at $t = 0$; the bracket identity is the multiplicativity of $\pi$ and the group law; the density and the Fréchet structure are the standard Sobolev structure of a unitary representation, in which a vector is smooth when all the derived operators act, and the extension to $\mathrm{U}(\mathrm{G})$ is the universal property.
 
 **Corollary.** The Casimir element of *The Casimir Operator of a Lie Group* acts on $\mathcal{H}^\infty$ by the operator $\pi_*(\Omega) = \sum_i\pi_*(X_i)\pi_*(X^i)$; when the invariant form is such that $\pi_*(\Omega)$ is bounded below, it is essentially self-adjoint and its spectrum is a lowest eigenvalue when the representation is irreducible and has a lowest weight.
 
@@ -143,7 +143,7 @@ A unitary representation of a Lie group is a strongly continuous homomorphism in
 
 | Symbol | Meaning |
 |---|---|
-| $\pi : G \to U(\mathcal{H})$ | a unitary representation |
+| $\pi : G \to \mathrm{U}(\mathcal{H})$ | a unitary representation |
 | $\widehat{G}$ | the unitary dual |
 | $\pi_*$ | the derived representation on the smooth vectors |
 | $\pi_*(X)^* = -\pi_*(X)$ | skew-adjointness of the generators |

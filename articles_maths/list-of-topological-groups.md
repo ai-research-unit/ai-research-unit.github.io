@@ -39,7 +39,7 @@ A locally compact group is a Hausdorff topological group in which every point ha
 | a compact group $K$ | compact Hausdorff; the Haar measure normalised to a probability | yes | *Analysis on Compact Groups* |
 | $\mathbb{R}^n$ | the Euclidean topology; Lebesgue measure | yes | *Locally Compact Groups and Haar Measure* |
 | $\mathbb{Q}_p^n$, $\mathbb{Z}_p^n$ | the $p$-adic topology; Haar measure normalised by $\mu(\mathbb{Z}_p) = 1$ | yes, the group is abelian | *The $p$-adic Numbers* |
-| $GL_n(\mathbb{R})$, $SL_n(\mathbb{R})$, $O(n)$, $U(n)$ | the matrix topology; $GL_n$ with the measure $\lvert\det A\rvert^{-n}dA$ | yes for all of them | *Locally Compact Groups and Haar Measure*; *The General Linear Group* |
+| $GL_n(\mathbb{R})$, $SL_n(\mathbb{R})$, $O(n)$, $\mathrm{U}(n)$ | the matrix topology; $GL_n$ with the measure $\lvert\det A\rvert^{-n}dA$ | yes for all of them | *Locally Compact Groups and Haar Measure*; *The General Linear Group* |
 | the affine group $\mathbb{R} \rtimes \mathbb{R}_{>0}$ | the topology of $\mathbb{R}^2$; left Haar measure $a^{-2}da\,db$ and right Haar measure $a^{-1}da\,db$ | **no**; $\Delta(a,b) = a^{-1}$ | *Locally Compact Groups and Haar Measure*; *Affine Spaces and Translations* |
 | the Heisenberg group | the topology of $\mathbb{R}^3$; Lebesgue measure | yes | *Lie Groups*; *Locally Compact Groups and Haar Measure* |
 | the adeles $\mathbb{A}_K$, the ideles $\mathbb{I}_K$ | the restricted-product topology; locally compact and totally disconnected away from the archimedean places | yes, the groups are abelian | *Adeles and Ideles* |

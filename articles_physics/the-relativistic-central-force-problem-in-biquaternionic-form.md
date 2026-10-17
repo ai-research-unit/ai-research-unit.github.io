@@ -24,11 +24,11 @@ The article is deliberately parallel to its non-relativistic counterparts. *Cent
 
 The companion article *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre* supplies the field-theoretic origin of the potential treated here: the static field of a central scalar source is the $1/r$ potential, and a test particle in it is the problem of this article.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\varepsilon_{jkl}e_l$ for $j\neq k$; the scalar imaginary $i$ is central with $i^2=-e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_0$. For two real vectors,
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$; the scalar imaginary $i$ is central with $i^2=-e_t$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector and the Hermitian subspace $\mathbb{M}_+$ the informational sector, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$. Position, momentum, force and angular momentum are real vectors in the three-space $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the energy, the potential and the rest mass are central scalars, real multiples of $e_t$. For two real vectors,
 $$
-\vec a\vec b=-\vec a\cdot\vec b\,e_0+\vec a\times\vec b, \qquad [\vec a,\vec b]=2\,\vec a\times\vec b,
+\vec a\vec b=-\vec a\cdot\vec b\,e_t+\vec a\times\vec b, \qquad [\vec a,\vec b]=2\,\vec a\times\vec b,
 $$
-so that the angular momentum is $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$, and its magnitude is $L=|\vec L|=\sqrt{\langle \vec L\rangle_{\natural}}$. The four-position is $\tilde{Q}=ict\,e_0+\vec x\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_0+\vec p$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-ϙ_1ϙ_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
+so that the angular momentum is $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, the vector part of the quaternion product $\vec r\vec p$, and its magnitude is $L=|\vec L|=\sqrt{\langle \vec L\rangle_{\natural}}$. The four-position is $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$ and the four-momentum is $\tilde{P}=iE/c\,e_t+\vec p$, whose biquaternion norm is the mass-shell relation. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; the symbol $\vec v$ is reserved for particle and frame velocities. The coupling $\kappa$ is positive for an attractive inverse-square force; for gravity $\kappa=GMm$, and for the Coulomb problem $\kappa=-ϙ_1ϙ_2/(4\pi\epsilon_0)$, as fixed in the companion article on the classical Coulomb problem.
 
 ## The Relativistic Central Force
 
@@ -79,20 +79,20 @@ $$
 which is the algebraic criterion for a central force established in the companion article *The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form*. The conservation of angular momentum is then the two-line computation of that article,
 
 $$
-\dot{\vec L}=\tfrac12[\vec r,\dot{\vec p}]=\tfrac12[\vec r,\vec F]=0 ,
+d\vec L/dt=\tfrac12[\vec r,d\vec p/dt]=\tfrac12[\vec r,\vec F]=0 ,
 $$
 
 with the proper time or the coordinate time giving the same vanishing because the two differ by the central factor $\gamma$. The motion is planar, in the plane orthogonal to $\vec L$.
 
 ### The Mass-Shell Relation and the Radial Momentum
 
-The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_0+\vec p$ and the biquaternion norm $\langle\tilde{P}\rangle_{\natural}=\tilde{P}\tilde{P}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
+The relativistic content enters through the mass-shell relation for the four-momentum. With $\tilde{P}=iE/c\,e_t+\vec p$ and the biquaternion norm $\langle\tilde{P}\rangle_{\natural}=\tilde{P}\tilde{P}^{\natural}=-E^2/c^2+\vec p^2$, the on-shell condition with the potential included is
 
 $$
 (E-V)^2=\vec p^2c^2+m^2c^4 .
 $$
 
-Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma m\dot r$, the mass-shell relation becomes the **radial constraint**
+Decomposing the momentum into radial and tangential parts, $\vec p^2=p_r^2+L^2/r^2$ with $p_r=\gamma mdr/dt$, the mass-shell relation becomes the **radial constraint**
 
 $$
 (E-V)^2-m^2c^4 = c^2\left(p_r^2+\frac{L^2}{r^2}\right).
@@ -107,11 +107,11 @@ The left-hand side is fixed by the state $(E,L)$ and the right-hand side is non-
 Let $u=1/r$, so that the orbit is the function $u(\theta)$, and let a prime denote $d/d\theta$. The radial momentum is related to $u'$ by a chain rule that is worth writing once:
 
 $$
-p_r=\gamma m\,\dot r=\gamma m\,\frac{dr}{d\theta}\,\dot\theta
+p_r=\gamma m\,dr/dt=\gamma m\,\frac{dr}{d\theta}\,d\theta/dt
 =\gamma m\left(-\frac{u'}{u^2}\right)\frac{L}{\gamma m r^2}=-L\,u' ,
 $$
 
-using $\dot\theta=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,
+using $d\theta/dt=L/(\gamma m r^2)$ from the definition of $L$. Substituting into the radial constraint,
 
 $$
 (E-V)^2-m^2c^4 = c^2L^2\left(u'^2+u^2\right). \tag{1}
@@ -141,7 +141,7 @@ $$
 u''+u=-\frac{mF(1/u)}{L^2u^2},
 $$
 
-which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2\dot\theta$, not the non-relativistic $mr^2\dot\theta$.
+which is the equation of the companion article on the central-scalar limit. The angular momentum $L$ here is the relativistic angular momentum $\gamma mr^2d\theta/dt$, not the non-relativistic $mr^2d\theta/dt$.
 
 ### What the Relativistic Mass Changes
 
@@ -294,7 +294,7 @@ The non-relativistic inverse-square problem conserves, besides $\vec L$, the Run
 
 The orbit remains a conic **in the rotating frame** $\varphi=\omega\theta$, so the shape of the orbit is preserved and the only relativistic effect on it is the uniform rotation of the apsidal line. Equivalently, the relativistic problem retains the same number of constants of motion as any planar central-force problem — the energy, the angular momentum and the orientation of the orbit — but the orientation is no longer fixed: the periapsis direction advances by $\Delta$ per revolution.
 
-A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_\varphi/r^2$ from the force and a term $\alpha\,\dot{\vec u_r}=\alpha L\,\vec u_\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
+A vector with the algebraic form of the Runge–Lenz vector is therefore **not conserved** in the relativistic problem, and the reason is visible in the equation of motion. For an ansatz $\vec A_{\text{rel}}=\vec p\times\vec L-\alpha\,\vec u_r$ with constant $\alpha$, the time derivative contains a term $\vec F\times\vec L=\kappa L\,\vec u_\varphi/r^2$ from the force and a term $\alpha\,d\vec u_r/dt=\alpha L\,\vec u_\varphi/(\gamma mr^2)$ from the rotating unit vector, and the two cancel only if $\alpha=\gamma m\kappa=(E-V)\kappa/c^2$, which is not constant along the orbit. No choice of constant $\alpha$ removes both terms, and the deficit is exactly the precession.
 
 What survives is a rotating-frame quantity: the vector constructed from the conic in the $(r,\varphi)$ plane has a fixed direction in that plane, and in the physical plane it rotates by $\Delta$ per revolution. The hidden symmetry of the non-relativistic problem is thus not destroyed but **deformed**: the compact $\mathrm{SO}(4)$ of the bound Kepler problem becomes a symmetry whose generator acquires a state-dependent phase, and the parameter of the deformation is $\kappa^2/(c^2L^2)$, the same parameter that sets the precession.
 
@@ -376,9 +376,9 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$; central $i$ |
+| $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$; central $i$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\vec r,\vec p,\vec v,\vec F$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{e_1,e_2,e_3\}$ |
+| $\vec r,\vec p,\vec v,\vec F$ | Position, momentum, velocity, force: real vectors in $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$, $L=|\vec L|$ | Angular momentum and its magnitude; vector part of $\vec r\vec p$ |
 | $V(r)$, $F(r)=-dV/dr$ | Central potential energy; radial force component |
 | $\kappa$ | Inverse-square coupling; $\kappa>0$ attractive; $\kappa=GMm$ for gravity |
@@ -386,7 +386,7 @@ In the limit $c\to\infty$ the frequency tends to unity, the orbit becomes the co
 | $\varepsilon=E-mc^2$ | Energy measured from the rest energy |
 | $\gamma=1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $m_{\text{rel}}=\gamma m=(E-V)/c^2$ | Relativistic mass |
-| $p_r=\gamma m\dot r=-Lu'$ | Radial momentum; the chain-rule identity |
+| $p_r=\gamma mdr/dt=-Lu'$ | Radial momentum; the chain-rule identity |
 | $u=1/r$ | Binet variable; prime denotes $d/d\theta$ |
 | $(E-V)^2-m^2c^4=c^2L^2(u'^2+u^2)$ | The orbit constraint (mass-shell identity) |
 | $u''+u=-m_{\text{rel}}F(1/u)/(L^2u^2)$ | Relativistic Binet equation |

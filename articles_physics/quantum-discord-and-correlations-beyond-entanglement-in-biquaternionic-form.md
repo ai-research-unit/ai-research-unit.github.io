@@ -26,7 +26,7 @@ $$
 \qquad p_\epsilon\geq0, \quad \sum_\epsilon p_\epsilon = 1,
 $$
 
-are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j \in \mathbb{M}_+^{\otimes 2}$. These are the trace pairings of the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
+are exactly the states whose correlation structure is controlled by three real numbers $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -\vec e_\mu\otimes\vec e_\mu \in \mathbb{M}_+^{\otimes 2}$. These are the trace pairings of the state with the three tensor-product observables built from the imaginary units. The entanglement, the entropy, the mutual information, and the discord of the whole family are functions of the triple $(c_1,c_2,c_3)$ only. The article computes the discord for this family explicitly and exhibits a separable state with positive discord, verifying every number by recomputation. Logarithms in this article are base two, so entropies are in bits.
 
 ## Bipartite States and Their Mutual Information
 
@@ -52,26 +52,26 @@ non-negative by subadditivity of the entropy. It is symmetric in $A$ and $B$ and
 
 ### The Bell-diagonal family
 
-The four Bell idempotents $P_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $P_\epsilon P_{\epsilon'} = \delta_{\epsilon\epsilon'}P_\epsilon$ and $\sum_\epsilon P_\epsilon = e_0\otimes e_0$. The **Bell-diagonal states** are the convex combinations
+The four Bell idempotents $P_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra, with $P_\epsilon P_{\epsilon'} = \delta_{\epsilon\epsilon'}P_\epsilon$ and $\sum_\epsilon P_\epsilon = e_t\otimes e_t$. The **Bell-diagonal states** are the convex combinations
 
 $$
 \tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon\,P_\epsilon ,
 \qquad p_\epsilon\geq0, \qquad \sum_\epsilon p_\epsilon = 1 .
 $$
 
-Each $P_\epsilon$ is the joint spectral idempotent of the stabilizer pair $S_1 = -e_1\otimes e_1$ and $S_3 = -e_3\otimes e_3$, with $S_1P_\epsilon = -\epsilon_1 P_\epsilon$ and $S_3P_\epsilon = -\epsilon_3 P_\epsilon$. The same family is parametrized by the three correlation coefficients
+Each $P_\epsilon$ is the joint spectral idempotent of the stabilizer pair $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, with $S_1P_\epsilon = -\epsilon_1 P_\epsilon$ and $S_3P_\epsilon = -\epsilon_3 P_\epsilon$. The same family is parametrized by the three correlation coefficients
 
 $$
 c_j = \mathrm{Tr}\bigl(\tilde{\rho}_{AB}\,\tilde{Q}_j\bigr),
 \qquad
-\tilde{Q}_1 = -e_1\otimes e_1, \quad \tilde{Q}_2 = -e_2\otimes e_2, \quad \tilde{Q}_3 = -e_3\otimes e_3 ,
+\tilde{Q}_1 = -\vec e_x\otimes \vec e_x, \quad \tilde{Q}_2 = -\vec e_y\otimes \vec e_y, \quad \tilde{Q}_3 = -\vec e_z\otimes \vec e_z ,
 $$
 
 as the state
 
 $$
-\tilde{\rho}_{AB} = \tfrac{1}{4}\bigl(e_0\otimes e_0 + c_1\,ie_1\otimes ie_1 + c_2\,ie_2\otimes ie_2 + c_3\,ie_3\otimes ie_3\bigr)
-= \tfrac{1}{4}\Bigl(e_0\otimes e_0 + \sum_{j=1}^{3} c_j\,(ie_j)\otimes(ie_j)\Bigr).
+\tilde{\rho}_{AB} = \tfrac{1}{4}\bigl(e_t\otimes e_t + c_1\,i\vec e_x\otimes i\vec e_x + c_2\,i\vec e_y\otimes i\vec e_y + c_3\,i\vec e_z\otimes i\vec e_z\bigr)
+= \tfrac{1}{4}\Bigl(e_t\otimes e_t + \sum_{j=1}^{3} c_j\,(i\vec e_\mu)\otimes(i\vec e_\mu)\Bigr).
 $$
 
 The equivalence of the two parametrizations is $p_\epsilon = \tfrac14(1-\sum_j c_j\epsilon_j)$ and $c_j = -\sum_\epsilon \epsilon_j p_\epsilon = -\langle\epsilon_j\rangle$. The coefficients are bounded by the positivity of the state; the whole family is a tetrahedron in the cube $[-1,1]^3$ containing the four Bell states at its vertices, where $(c_1,c_2,c_3) = -\epsilon$.
@@ -79,11 +79,11 @@ The equivalence of the two parametrizations is $p_\epsilon = \tfrac14(1-\sum_j c
 The state of this family is determined by the triple $(c_1,c_2,c_3)$, and the marginal states are always maximally mixed,
 
 $$
-\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0 ,
+\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_t ,
 \qquad S(\tilde{\rho}_A) = S(\tilde{\rho}_B) = 1\ \text{bit},
 $$
 
-because the trace of every $ie_j$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $P_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
+because the trace of every $i\vec e_\mu$ vanishes. The eigenvalues, computed from the action of the stabilizers on the $P_\epsilon$, are $\tfrac14(1-\sum_j c_j\epsilon_j)$, so
 
 $$
 S(\tilde{\rho}_{AB}) = -\sum_\epsilon \tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr)\log_2\tfrac14\bigl(1-{\textstyle\sum_j}c_j\epsilon_j\bigr),
@@ -100,15 +100,15 @@ For Bell-diagonal states the quantum mutual information is thus a function of th
 To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\vec u$ has idempotents
 
 $$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\vec u\cdot\vec u_e\bigr) \quad\text{on }B,
+\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_t \pm i\vec u\cdot\vec u_e\bigr) \quad\text{on }B,
 \qquad
- e_0\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
+ e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$
 
-with outcomes of probability $p_\pm = \mathrm{Tr}[(e_0\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}]$ and conditional states of $A$
+with outcomes of probability $p_\pm = \mathrm{Tr}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}]$ and conditional states of $A$
 
 $$
-\tilde{\rho}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}(e_0\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
+\tilde{\rho}_{A|\pm} = \frac{\mathrm{Tr}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{\rho}_{AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.
 $$
 
 The conditional entropy of $A$ given the measurement is $S(A|\{\tilde{\Pi}\}) = \sum_\pm p_\pm S(\tilde{\rho}_{A|\pm})$, and the **classical mutual information** extractable by that measurement is
@@ -131,11 +131,11 @@ The measurement is performed on one side only, so $J(A|B)$ and $J(B|A)$ need not
 
 ### Discord for Bell-diagonal states
 
-For Bell-diagonal states the calculation is explicit. A measurement of the coordinate $ie_j$ on $B$ has the two outcomes with equal probability $\tfrac12$, and it leaves $A$ in the conditional states
+For Bell-diagonal states the calculation is explicit. A measurement of the coordinate $i\vec e_\mu$ on $B$ has the two outcomes with equal probability $\tfrac12$, and it leaves $A$ in the conditional states
 
 $$
-\tilde{\rho}_{A|\pm} = \mathrm{Tr}_B\bigl[(e_0\otimes\tilde{\Pi}^{j}_\pm)\tilde{\rho}_{AB}\bigr]\Big/\tfrac12
-= \tfrac{1}{2}\bigl(e_0 \pm c_j\,ie_j\bigr),
+\tilde{\rho}_{A|\pm} = \mathrm{Tr}_B\bigl[(e_t\otimes\tilde{\Pi}^{j}_\pm)\tilde{\rho}_{AB}\bigr]\Big/\tfrac12
+= \tfrac{1}{2}\bigl(e_t \pm c_j\,i\vec e_\mu\bigr),
 $$
 
 whose eigenvalues are $\tfrac12(1\pm c_j)$ and whose entropies are $h_2\!\left(\tfrac{1\pm c_j}{2}\right)$, with $h_2$ the binary entropy in bits. The conditional entropy of that measurement is therefore
@@ -176,13 +176,13 @@ $$
 = \ 0.2875,\quad 0.3125,\quad 0.3875,\quad 0.0125 ,
 $$
 
-which sum to one; the entropy is $S(\tilde{\rho}_{AB}) = 1.6504$ bits. The marginals are $\tfrac12 e_0$, so $S(\tilde{\rho}_A) = S(\tilde{\rho}_B) = 1$ and
+which sum to one; the entropy is $S(\tilde{\rho}_{AB}) = 1.6504$ bits. The marginals are $\tfrac12 e_t$, so $S(\tilde{\rho}_A) = S(\tilde{\rho}_B) = 1$ and
 
 $$
 I(A:B) = 1 + 1 - 1.6504 = 0.3496 \ \text{bits}.
 $$
 
-For a measurement of the coordinate $j$ on $B$ the conditional states of $A$ are $\tfrac12(e_0\pm c_j\,ie_j)$ with eigenvalues $\tfrac12(1\pm c_j)$, so the conditional entropies are $h_2\!\left(\tfrac{1+|c_j|}{2}\right)$ for $j=1,2,3$:
+For a measurement of the coordinate $j$ on $B$ the conditional states of $A$ are $\tfrac12(e_t\pm c_j\,i\vec e_\mu)$ with eigenvalues $\tfrac12(1\pm c_j)$, so the conditional entropies are $h_2\!\left(\tfrac{1+|c_j|}{2}\right)$ for $j=1,2,3$:
 
 $$
 h_2(0.7) = 0.8813, \qquad h_2(0.675) = 0.9097, \qquad h_2(0.6) = 0.9710 .
@@ -204,7 +204,7 @@ The example of the previous section is the point of the article, and it deserves
 
 > In the algebra $\mathbb{B}\otimes\mathbb{B}$ there are separable states — positive trace-one elements that are convex combinations of tensor products of single-qubit idempotents, hence contain no entanglement — whose correlations are not classical, $D(A|B)>0$.
 
-The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ are the trace pairings with the three tensor-product observables $\tilde{Q}_j = -e_j\otimes e_j$. The criterion is a property of the triple of trace pairings; separability, entanglement, and discord of the family are all read off those three numbers.
+The separability criterion used is the standard one for Bell-diagonal states, that the state is separable if and only if $\sum_j|c_j|\leq1$, where $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ are the trace pairings with the three tensor-product observables $\tilde{Q}_j = -\vec e_\mu\otimes\vec e_\mu$. The criterion is a property of the triple of trace pairings; separability, entanglement, and discord of the family are all read off those three numbers.
 
 The physical meaning is that entanglement is one kind of quantum correlation and discord is a broader one. A separable state can still be **quantumly correlated** in the sense that no measurement on one subsystem leaves the other in a state that, averaged over outcomes, accounts for the total mutual information. In the framework this is visible directly: the total correlation $I(A:B)$ is fixed by the spectrum of $\tilde{\rho}_{AB}$, i.e. by the three trace pairings $c_j$; the classical correlation $J(A|B)$ is fixed by the conditional states after a coordinate measurement; and the difference, the discord, is what no local measurement can reach.
 
@@ -213,7 +213,7 @@ The physical meaning is that entanglement is one kind of quantum correlation and
 **What it does.**
 
 - It expresses the bipartite mutual information and the discord entirely in terms of the partial trace, the trace pairing, and the entropies of elements of $\mathbb{M}_+^{\otimes2}$.
-- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -e_j\otimes e_j$.
+- It identifies the Bell-diagonal family with the convex hull of the Bell idempotents and parametrizes it by the three trace pairings $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ with $\tilde{Q}_j = -\vec e_\mu\otimes\vec e_\mu$.
 - It gives the entropy and the mutual information of the family as functions of the triple $(c_1,c_2,c_3)$, the two-qubit analogue of the single-qubit biquaternion-norm statement.
 - It exhibits a separable state with positive discord and verifies the separability criterion and the discord numerically.
 
@@ -252,12 +252,12 @@ $$
 In the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$ the Bell-diagonal states $\tilde{\rho}_{AB} = \sum_\epsilon p_\epsilon P_\epsilon$ are parametrized by the three trace pairings
 
 $$
-c_j = \mathrm{Tr}\bigl(\tilde{\rho}_{AB}\,\tilde{Q}_j\bigr), \qquad \tilde{Q}_j = -e_j\otimes e_j ,
+c_j = \mathrm{Tr}\bigl(\tilde{\rho}_{AB}\,\tilde{Q}_j\bigr), \qquad \tilde{Q}_j = -\vec e_\mu\otimes\vec e_\mu ,
 \qquad
-\tilde{\rho}_{AB} = \tfrac14\bigl(e_0\otimes e_0 + {\textstyle\sum_j} c_j\,(ie_j)\otimes(ie_j)\bigr),
+\tilde{\rho}_{AB} = \tfrac14\bigl(e_t\otimes e_t + {\textstyle\sum_j} c_j\,(i\vec e_\mu)\otimes(i\vec e_\mu)\bigr),
 $$
 
-with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0$ and entropy a function of the triple alone. The family is separable if and only if $\sum_j|c_j|\leq1$. The article exhibits a separable state, $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ with $\sum_j|c_j| = 0.95$, whose discord is $0.2308$ bits; a separable state with zero discord, $(0.3,0,0)$; and an entangled state with a *smaller* discord, $(0.6,0.5,0.4)$ with $0.1397$ bits. Discord is therefore a genuinely broader correlation measure than entanglement: the algebra contains separable elements whose correlations no local measurement can fully account for, and the trace pairings with the three observables $-e_j\otimes e_j$ control the whole Bell-diagonal family.
+with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_t$ and entropy a function of the triple alone. The family is separable if and only if $\sum_j|c_j|\leq1$. The article exhibits a separable state, $(c_1,c_2,c_3) = (0.4,0.35,0.2)$ with $\sum_j|c_j| = 0.95$, whose discord is $0.2308$ bits; a separable state with zero discord, $(0.3,0,0)$; and an entangled state with a *smaller* discord, $(0.6,0.5,0.4)$ with $0.1397$ bits. Discord is therefore a genuinely broader correlation measure than entanglement: the algebra contains separable elements whose correlations no local measurement can fully account for, and the trace pairings with the three observables $-\vec e_\mu\otimes\vec e_\mu$ control the whole Bell-diagonal family.
 
 ## Summary of Notation
 
@@ -265,17 +265,17 @@ with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0$ and entropy a fu
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra, module dimension four |
 | $\mathbb{M}_+^{\otimes2}$ | Two-qubit Hermitian subspace (states) |
-| $e_0=1,e_1,e_2,e_3$; $i$ | Quaternion units; central imaginary |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $P_\epsilon$ | Bell idempotents (idempotent basis) |
 | $\tilde{\rho}_A = \mathrm{Tr}_B\tilde{\rho}_{AB}$, $\tilde{\rho}_B = \mathrm{Tr}_A\tilde{\rho}_{AB}$ | Marginal states |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log_2\tilde{\rho})$ | Von Neumann entropy (bits) |
 | $I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB})$ | Quantum mutual information |
-| $\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\vec u\cdot\vec u_e)$ | Projective measurement on $B$ |
+| $\tilde{\Pi}_{1,2} = \tfrac12(e_t\pm i\vec u\cdot\vec u_e)$ | Projective measurement on $B$ |
 | $J(A|B) = S(\tilde{\rho}_A)-S(A|\{\tilde{\Pi}\})$ | Classical mutual information |
 | $D(A|B) = I(A:B)-\max J(A|B)$ | Quantum discord |
 | $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ | Correlation coefficients |
-| $\tilde{Q}_j = -e_j\otimes e_j$ | Tensor-product observables |
-| $\tilde{\rho}_{AB} = \tfrac14(e_0\otimes e_0+\sum_j c_j(ie_j)\otimes(ie_j))$ | Bell-diagonal state |
+| $\tilde{Q}_j = -\vec e_\mu\otimes\vec e_\mu$ | Tensor-product observables |
+| $\tilde{\rho}_{AB} = \tfrac14(e_t\otimes e_t+\sum_j c_j(i\vec e_\mu)\otimes(i\vec e_\mu))$ | Bell-diagonal state |
 | $\sum_j|c_j|\leq1$ | Separability criterion (Bell-diagonal) |
 
 ## Further Reading

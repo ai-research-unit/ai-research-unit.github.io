@@ -12,15 +12,15 @@ The article owns the dimension of the slices, the exact values at the parameter 
 
 ## The Dimension of a Slice
 
-**Proposition (the classical slices).** Let $\tilde C=Ce_0$ be central. Then
+**Proposition (the classical slices).** Let $\tilde C=Ce_t$ be central. Then
 
 $$
-\dim_H\bigl(J_{Ce_0}\cap\mathbb{C}e_0\bigr)=\dim_H J_C,\qquad \dim_H\bigl(\mathcal K_{Ce_0}\cap\mathbb{C}e_0\bigr)=\dim_H K_C,
+\dim_H\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H J_C,\qquad \dim_H\bigl(\mathcal K_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H K_C,
 $$
 
 and for a real central parameter the same with the real quaternion subspace and the quaternion Julia set in place of the complex one.
 
-**Proof.** The central slice is the image of the classical sets under the isometry $A\mapsto Ae_0$ of the Euclidean plane onto the centre (*The Slices of the Biquaternion Julia Sets*), and the quaternion slice is the classical quaternion picture; Hausdorff dimension is invariant under isometries.
+**Proof.** The central slice is the image of the classical sets under the isometry $A\mapsto Ae_t$ of the Euclidean plane onto the centre (*The Slices of the Biquaternion Julia Sets*), and the quaternion slice is the classical quaternion picture; Hausdorff dimension is invariant under isometries.
 
 **Theorem (the dimension of a product slice).** Let $\tilde\Pi$ be a primitive idempotent and $\tilde C=C_1\tilde\Pi+C_2\tilde\Pi'$ a parameter in the idempotent plane $W_{\tilde\Pi}$. Then
 
@@ -50,16 +50,16 @@ Moreover $J_0$ contains the idempotent manifold, a real four-dimensional smooth 
 
 ## The Central Parameter
 
-**Theorem (the central parameter bound).** Let $\tilde C=Ce_0$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.
+**Theorem (the central parameter bound).** Let $\tilde C=Ce_t$ be central and let $\mathcal K_c$ be the complex filled Julia set of $\zeta\mapsto\zeta^2+C$.
 
-1. If $C$ lies in the interior of the Mandelbrot set, then $\dim_H\mathcal K_{Ce_0}=8$.
+1. If $C$ lies in the interior of the Mandelbrot set, then $\dim_H\mathcal K_{Ce_t}=8$.
 2. If the complex filled Julia set has dimension $\alpha$, then
 
 $$
-\dim_H\mathcal K_{Ce_0}\le4+2\alpha .
+\dim_H\mathcal K_{Ce_t}\le4+2\alpha .
 $$
 
-**Proof.** (1) For $C$ in the interior of the Mandelbrot set the origin is in the interior of the complex filled Julia set, and the set of matrices whose eigenvalues lie in a disc about the origin contained in $K_C$ is an open neighbourhood of $0$ in $\mathcal K_{Ce_0}$; hence the set is full-dimensional. (2) A matrix in $\mathcal K_{Ce_0}$ with distinct eigenvalues $\lambda_1\neq\lambda_2$ is $S\operatorname{diag}(\lambda_1,\lambda_2)S^{-1}$. Fix the unordered pair of eigenvalues in $K_C$: the conjugates of the diagonal matrix form the conjugacy class, the quotient of $GL_2(\mathbb{C})$, of real dimension eight, by the centraliser of a diagonal matrix with distinct eigenvalues, which is the torus of diagonal matrices, of real dimension four; the class therefore has real dimension four, and near a matrix with distinct eigenvalues the conjugacy class and the eigenvalue pair are local coordinates on $\mathcal K_{Ce_0}$, four real dimensions from the class and at most $2\dim_HK_C$ from the pair, since the pair ranges over $K_C\times K_C$ and the product formula holds for these sets. The matrices with repeated eigenvalues form a set of lower dimension and do not affect the bound. Hence $\dim_H\mathcal K_{Ce_0}\le4+2\dim_HK_C$.
+**Proof.** (1) For $C$ in the interior of the Mandelbrot set the origin is in the interior of the complex filled Julia set, and the set of matrices whose eigenvalues lie in a disc about the origin contained in $K_C$ is an open neighbourhood of $0$ in $\mathcal K_{Ce_t}$; hence the set is full-dimensional. (2) A matrix in $\mathcal K_{Ce_t}$ with distinct eigenvalues $\lambda_1\neq\lambda_2$ is $S\operatorname{diag}(\lambda_1,\lambda_2)S^{-1}$. Fix the unordered pair of eigenvalues in $K_C$: the conjugates of the diagonal matrix form the conjugacy class, the quotient of $GL_2(\mathbb{C})$, of real dimension eight, by the centraliser of a diagonal matrix with distinct eigenvalues, which is the torus of diagonal matrices, of real dimension four; the class therefore has real dimension four, and near a matrix with distinct eigenvalues the conjugacy class and the eigenvalue pair are local coordinates on $\mathcal K_{Ce_t}$, four real dimensions from the class and at most $2\dim_HK_C$ from the pair, since the pair ranges over $K_C\times K_C$ and the product formula holds for these sets. The matrices with repeated eigenvalues form a set of lower dimension and do not affect the bound. Hence $\dim_H\mathcal K_{Ce_t}\le4+2\dim_HK_C$.
 
 **Remark (the expectation and the evidence).** The bound is expected to be an equality, the four dimensions coming from the conjugacy class of a matrix and the $2\alpha$ from the pair of eigenvalues; the equality holds at $C=0$, where $\alpha=2$ and $4+2\alpha=8$. **The exact dimension of the biquaternion Julia set at a central parameter is the dimension of the complex Julia set, doubled and shifted by four, and this is the only clean formula the category has.** No such formula exists for a non-central parameter, because the orbit is not a polynomial in one element and the spectrum does not separate.
 

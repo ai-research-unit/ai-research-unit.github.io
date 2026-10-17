@@ -57,7 +57,7 @@ where $T^*M$ is identified with $TM$ by the metric. When $E$ is $\mathbb{Z}/2$-g
 
 **Proof.** The sum $\sum_ic(e_i)\nabla^E_{e_i}$ is a geometric first-order operator: a change of orthonormal frame replaces $e_i$ by $O_{ij}e_j$ with $O$ orthogonal, and the contracted expression is invariant because $c$ is linear and $\sum_iO_{ij}O_{ik}=\delta_{jk}$. Compatibility of $\nabla^E$ with the Clifford action identifies the sum with the composition displayed; oddness is the statement that $c(v)$ is odd and that $\nabla^E$ preserves the grading.
 
-**Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial_0+i\partial_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
+**Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial/\partial x_0+i\partial/\partial x_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
 
 **Example (the spinor-bundle twist).** In even dimension $n=2m$ the twisting space may be taken to be the spinor module itself, $W=S$, and the standard identification of complexified Clifford modules
 $$

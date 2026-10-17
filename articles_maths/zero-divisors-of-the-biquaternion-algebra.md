@@ -11,7 +11,7 @@ Biquaternion Algebra*, and its vocabulary of pure and non-pure is used throughou
 is to characterize the zero divisors **of the general plain bilinear product**, to split them into
 two families, and to describe their structure.
 
-**The results.** A nonzero biquaternion is a zero divisor of the plain product exactly when its central square vanishes, $\tilde{Q}\tilde{Q}^{\natural} = 0$; the elements therefore fall into the three classes invertible, zero and zero divisor. The zero divisors split into two disjoint families: the **pure** ones, exactly the nonzero nilpotents with $\tilde{Q}^2 = 0$ and $Q_1^2 + Q_2^2 + Q_3^2 = 0$, forming a cone of real dimension $4$; and the **non-pure** ones, exactly the complex multiples of the nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ and $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$, forming the rest of the cone. The zero-divisor set is a complex cone of complex dimension $3$ and real dimension $6$.
+**The results.** A nonzero biquaternion is a zero divisor of the plain product exactly when its central square vanishes, $\tilde{Q}\tilde{Q}^{\natural} = 0$; the elements therefore fall into the three classes invertible, zero and zero divisor. The zero divisors split into two disjoint families: the **pure** ones, exactly the nonzero nilpotents with $\tilde{Q}^2 = 0$ and $Q_x^2 + Q_y^2 + Q_z^2 = 0$, forming a cone of real dimension $4$; and the **non-pure** ones, exactly the complex multiples of the nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_t \tilde{Q}$ and $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$, forming the rest of the cone. The zero-divisor set is a complex cone of complex dimension $3$ and real dimension $6$.
 
 A divisor is relative to a product. The definition is stated once for a general product in
 *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and read on the products of the space;
@@ -27,12 +27,12 @@ Invertibility in the Biquaternion Algebra*. The idempotents that the non-pure fa
 *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the nilpotents of the
 pure family are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
 
-Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar
+Throughout this article, the quaternion basis is written $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, and the scalar
 imaginary is written $i$, so that it does not collide with the quaternion units. A general
 biquaternion is written
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C}.
 $$
 
 The quaternion conjugate is denoted $\tilde{Q}^{\natural}$, the complex conjugate is denoted
@@ -40,9 +40,9 @@ $\bar{\tilde{Q}}$, the Hermitian conjugate is denoted
 $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is denoted
 $\tilde{Q}^\flat = -\tilde{Q}^{*}$. A product of the space is written $\star$ when the statement is
 one about an arbitrary product and only the fact that it is a product is used, as in §*Definition*;
-the four general products keep their signs $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$,
-$\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$, and the general plain bilinear product,
-the multiplication of the algebra, is written $\tilde P\tilde Q$. The product
+the four general products keep their signs $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$,
+$\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and the general plain bilinear product,
+the multiplication of the algebra, is written $\tilde Q_1\tilde Q_2$. The product
 $\tilde{Q}\tilde{Q}^{\natural}$ lies in the scalar line $\mathbb{C}_{\mathbb{B}}$; its vanishing is
 the algebraic condition that decides the zero divisors of the plain product, and it is never read
 here as a length.
@@ -54,21 +54,21 @@ products of this space; it is stated once and for all in *Definitions for the St
 *The 12 Products of the Biquaternioid Complex Space*, that is one of the four general products or
 one of their symmetric or antisymmetric parts.
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde Q\in\mathbb{B}$. The
-element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ and there is a
-nonzero $\tilde R$ with $\tilde Q\star\tilde R = 0$; it is a **right zero divisor of $\star$** when
-$\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q = 0$; and it is a
+**Definition.** Let $\star$ be a product on $\mathbb{B}$ and let $\tilde{Q}_1\in\mathbb{B}$. The
+element $\tilde{Q}_1$ is a **left zero divisor of $\star$** when $\tilde{Q}_1\neq0$ and there is a
+nonzero $\tilde{Q}_2$ with $\tilde{Q}_1\star\tilde{Q}_2 = 0$; it is a **right zero divisor of $\star$** when
+$\tilde{Q}_1\neq0$ and there is a nonzero $\tilde{Q}_2$ with $\tilde{Q}_2\star\tilde{Q}_1 = 0$; and it is a
 **zero divisor of $\star$** when it is one or the other. An element that is both a left and a right
 zero divisor of $\star$ is a **two-sided zero divisor of $\star$**.
 
-The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the
-element $\tilde{Q} = 0$ is **not** a zero divisor of any product, even though $0\star\tilde{R} = 0$
-for any $\tilde{R}$.
+The requirement that both $\tilde{Q}_1$ and $\tilde{Q}_2$ be nonzero is essential. In particular, the
+element $\tilde{Q}_1 = 0$ is **not** a zero divisor of any product, even though $0\star\tilde{Q}_2 = 0$
+for any $\tilde{Q}_2$.
 
 **On the products of the space.** Substituting the product for $\star$ gives one definition to a
-product. On the general plain bilinear product the two equations are $\tilde Q\tilde R = 0$ and
-$\tilde R\tilde Q = 0$, the classical pair; on $\tilde P^{\natural}\tilde Q$ they are
-$\tilde Q^{\natural}\tilde R = 0$ and $\tilde R^{\natural}\tilde Q = 0$; and the outer product has
+product. On the general plain bilinear product the two equations are $\tilde Q_1\tilde Q_2 = 0$ and
+$\tilde Q_2\tilde Q_1 = 0$, the classical pair; on $\tilde Q_1^{\natural}\tilde Q_2$ they are
+$\tilde Q_1^{\natural}\tilde Q_2 = 0$ and $\tilde Q_2^{\natural}\tilde Q_1 = 0$; and the outer product has
 every nonzero element as a zero divisor, since $\tilde Q\wedge\tilde Q = 0$. The four general
 products, four different equations, happen to select the one cone $\mathcal{C}\setminus\{0\}$
 described here, a coincidence of this algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -91,16 +91,16 @@ $$
 \tilde{Q}\tilde{Q}^{\natural} = 0.
 $$
 
-**Proof.** Suppose $\tilde{Q} \neq 0$ and $\tilde{Q}\tilde{Q}^{\natural} = 0$. Then
-$\tilde{Q} \tilde{Q}^{\natural} = 0$. Since $\tilde{Q} \neq 0$, we also have
-$\tilde{Q}^{\natural} \neq 0$. So $\tilde{R} = \tilde{Q}^{\natural}$ is a nonzero biquaternion with
-$\tilde{Q}\tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.
+**Proof.** Suppose $\tilde{Q}_1 \neq 0$ and $\tilde{Q}_1\tilde{Q}_1^{\natural} = 0$. Then
+$\tilde{Q}_1 \tilde{Q}_1^{\natural} = 0$. Since $\tilde{Q}_1 \neq 0$, we also have
+$\tilde{Q}_1^{\natural} \neq 0$. So $\tilde{Q}_2 = \tilde{Q}_1^{\natural}$ is a nonzero biquaternion with
+$\tilde{Q}_1\tilde{Q}_2 = 0$. Hence $\tilde{Q}_1$ is a zero divisor.
 
-Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with
-$\tilde{Q}\tilde{R} = 0$. If $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, then $\tilde{Q}$ is invertible
-by the invertibility criterion, and multiplying $\tilde{Q}\tilde{R} = 0$ on the left by
-$\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So
-$\tilde{Q}\tilde{Q}^{\natural} = 0$.
+Conversely, suppose $\tilde{Q}_1$ is a zero divisor: there exists $\tilde{Q}_2 \neq 0$ with
+$\tilde{Q}_1\tilde{Q}_2 = 0$. If $\tilde{Q}_1\tilde{Q}_1^{\natural} \neq 0$, then $\tilde{Q}_1$ is invertible
+by the invertibility criterion, and multiplying $\tilde{Q}_1\tilde{Q}_2 = 0$ on the left by
+$\tilde{Q}_1^{-1}$ gives $\tilde{Q}_2 = 0$, contradicting $\tilde{Q}_2 \neq 0$. So
+$\tilde{Q}_1\tilde{Q}_1^{\natural} = 0$.
 
 The proof uses the plain product twice: the left zero-divisor equation is the plain one, and the
 inverse $\tilde{Q}^{-1}$ is the inverse of the plain product, the only one of the four general
@@ -141,22 +141,22 @@ associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{
 
 ## The Two Families of Zero Divisors
 
-**The zero divisors split into two disjoint families: the pure ones ($Q_0 = 0$), which are the nilpotents, and the non-pure ones ($Q_0 \neq 0$), which are the complex multiples of the idempotents.**
+**The zero divisors split into two disjoint families: the pure ones ($Q_t = 0$), which are the nilpotents, and the non-pure ones ($Q_t \neq 0$), which are the complex multiples of the idempotents.**
 
-The zero divisors split into two families according to the value of the scalar part $Q_0$. A
-biquaternion is **pure** when $Q_0 = 0$,
+The zero divisors split into two families according to the value of the scalar part $Q_t$. A
+biquaternion is **pure** when $Q_t = 0$,
 
 $$
-\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_1, Q_2, Q_3 \in \mathbb{C},
+\tilde{Q} = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_x, Q_y, Q_z \in \mathbb{C},
 $$
 
-and **non-pure** when $Q_0 \neq 0$. The distinction is structural, and it organizes the
+and **non-pure** when $Q_t \neq 0$. The distinction is structural, and it organizes the
 classification.
 
 The scalar part is the right invariant because the scalar imaginary $i$ is central: the scalar part
 is the component of the element in the central direction, and the vector part is the component
 perpendicular to it, so "pure" and "non-pure" ask whether the central component vanishes. The two
-cases read the criterion $\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\vec Q, \vec Q) = 0$
+cases read the criterion $\tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + (\vec Q, \vec Q) = 0$
 differently — in the pure case the scalar contribution drops out, in the non-pure case it can
 cancel the vector contribution — and the two resulting families are structurally distinct: a
 nilpotent in the pure case, a complex multiple of an idempotent in the non-pure one, as the
@@ -164,28 +164,28 @@ sections below compute.
 
 ## Pure Zero Divisors
 
-**A nonzero pure biquaternion is a zero divisor exactly when $Q_1^2 + Q_2^2 + Q_3^2 = 0$, and then it is a nilpotent with $\tilde{Q}^2 = 0$.**
+**A nonzero pure biquaternion is a zero divisor exactly when $Q_x^2 + Q_y^2 + Q_z^2 = 0$, and then it is a nilpotent with $\tilde{Q}^2 = 0$.**
 
 ### The Square of a Pure Biquaternion
 
-Let $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ be a pure biquaternion. Using the product formula for
+Let $\tilde{Q} = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ be a pure biquaternion. Using the product formula for
 two pure biquaternions,
 
 $$
-\tilde{P} \tilde{Q} = -\sum_{k=1}^{3} P_k Q_k + \sum_{j,k,l=1}^{3} \epsilon_{jkl} P_j Q_k e_l,
+\tilde{Q}_2 \tilde{Q} = -\sum_{\mu\in\{x,y,z\}} Q_{2\mu} Q_\mu + \sum_{\mu,\nu,\lambda\in\{x,y,z\}} \epsilon_{\mu\nu\lambda} Q_{2\mu} Q_\nu \vec e_\lambda,
 $$
 
-and setting $\tilde{P} = \tilde{Q}$, we get
+and setting $\tilde{Q}_2 = \tilde{Q}$, we get
 
 $$
-\tilde{Q}^2 = -\sum_{k=1}^{3} Q_k^2 + \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j Q_k e_l.
+\tilde{Q}^2 = -\sum_{\mu\in\{x,y,z\}} Q_\mu^2 + \sum_{\mu,\nu,\lambda\in\{x,y,z\}} \epsilon_{\mu\nu\lambda} Q_\mu Q_\nu \vec e_\lambda.
 $$
 
-The vector part vanishes, because $\epsilon_{jkl}$ is antisymmetric in $j, k$ while $Q_j Q_k$ is
+The vector part vanishes, because $\epsilon_{\mu\nu\lambda}$ is antisymmetric in $\mu, \nu$ while $Q_\mu Q_\nu$ is
 symmetric. Therefore
 
 $$
-\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -\tilde{Q}\tilde{Q}^{\natural} e_0.
+\tilde{Q}^2 = -(Q_x^2 + Q_y^2 + Q_z^2) e_t = -\tilde{Q}\tilde{Q}^{\natural} e_t.
 $$
 
 ### The Criterion in the Pure Case
@@ -194,11 +194,11 @@ $$
 equivalent:
 
 1. $\tilde{Q}$ is a zero divisor. 2. $\tilde{Q}\tilde{Q}^{\natural} = 0$, i.e.
-$Q_1^2 + Q_2^2 + Q_3^2 = 0$. 3. $\tilde{Q}^2 = 0$.
+$Q_x^2 + Q_y^2 + Q_z^2 = 0$. 3. $\tilde{Q}^2 = 0$.
 
 **Proof.** The equivalence of (1) and (2) is the general criterion for zero divisors. The
 equivalence of (2) and (3) follows from the computation of the square above:
-$\tilde{Q}^2 = -\tilde{Q}\tilde{Q}^{\natural} e_0$ vanishes if and only if
+$\tilde{Q}^2 = -\tilde{Q}\tilde{Q}^{\natural} e_t$ vanishes if and only if
 $\tilde{Q}\tilde{Q}^{\natural} = 0$.
 
 A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a **nilpotent**, written $\tilde\Upsilon$
@@ -232,7 +232,7 @@ $\vec\rho\,\vec\sigma = -\vec\rho\cdot\vec\sigma + \vec\rho\times\vec\sigma$
 for two real vectors, the square of a pure biquaternion is
 
 $$
-\tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_0 - 2i\,(\vec\rho\cdot\vec\rho')\, e_0 .
+\tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_t - 2i\,(\vec\rho\cdot\vec\rho')\, e_t .
 $$
 
 The square is therefore a complex scalar, and it vanishes exactly when the two conditions
@@ -266,43 +266,43 @@ its origin turns on (*A Brief History of Biquaternions in Physics*).
 
 ## Non-Pure Zero Divisors
 
-**A zero divisor with nonzero scalar part satisfies $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ and $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, and it is a complex multiple of the nontrivial idempotent $\tilde\Pi = \tilde{Q}/(2 Q_0)$.**
+**A zero divisor with nonzero scalar part satisfies $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$ and $\tilde{Q}^2 = 2 Q_t \tilde{Q}$, and it is a complex multiple of the nontrivial idempotent $\tilde\Pi = \tilde{Q}/(2 Q_t)$.**
 
 ### The Square of a Non-Pure Biquaternion
 
-Let $\tilde{Q} = Q_0 e_0 + \vec Q$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and
-$\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Using the product formula,
+Let $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}$, $Q_t \neq 0$, and
+$\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. Using the product formula,
 
 $$
-\tilde{Q}^2 = (Q_0^2 - (\vec Q, \vec Q)) e_0 + 2 Q_0 \vec Q,
+\tilde{Q}^2 = (Q_t^2 - (\vec Q, \vec Q)) e_t + 2 Q_t \vec Q,
 $$
 
-where $(\vec Q, \vec Q) = Q_1^2 + Q_2^2 + Q_3^2$.
+where $(\vec Q, \vec Q) = Q_x^2 + Q_y^2 + Q_z^2$.
 
 ### The Relation to the Scalar Part
 
 The product $\tilde{Q}\tilde{Q}^{\natural}$ is
 
 $$
-\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\vec Q, \vec Q).
+\tilde{Q}\tilde{Q}^{\natural} = Q_t^2 + (\vec Q, \vec Q).
 $$
 
 So the condition $\tilde{Q}\tilde{Q}^{\natural} = 0$ is equivalent to
 
 $$
-(\vec Q, \vec Q) = -Q_0^2.
+(\vec Q, \vec Q) = -Q_t^2.
 $$
 
 Substituting this into the expression for $\tilde{Q}^2$:
 
 $$
-\tilde{Q}^2 = (Q_0^2 + Q_0^2) e_0 + 2 Q_0 \vec Q = 2 Q_0^2 e_0 + 2 Q_0 \vec Q = 2 Q_0 (Q_0 e_0 + \vec Q) = 2 Q_0 \tilde{Q}.
+\tilde{Q}^2 = (Q_t^2 + Q_t^2) e_t + 2 Q_t \vec Q = 2 Q_t^2 e_t + 2 Q_t \vec Q = 2 Q_t (Q_t e_t + \vec Q) = 2 Q_t \tilde{Q}.
 $$
 
 So every non-pure zero divisor satisfies
 
 $$
-\tilde{Q}^2 = 2 Q_0 \tilde{Q}.
+\tilde{Q}^2 = 2 Q_t \tilde{Q}.
 $$
 
 This is the key structural property of non-pure zero divisors: their square is a complex multiple
@@ -310,46 +310,46 @@ of themselves, with the multiplier equal to twice the scalar part.
 
 ### The Associated Idempotent
 
-From the relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, we divide by $2 Q_0$ (which is nonzero, since
-$Q_0 \neq 0$) and obtain
+From the relation $\tilde{Q}^2 = 2 Q_t \tilde{Q}$, we divide by $2 Q_t$ (which is nonzero, since
+$Q_t \neq 0$) and obtain
 
 $$
-\tilde\Pi = \frac{\tilde{Q}}{2 Q_0}, \qquad \tilde\Pi^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde\Pi,
+\tilde\Pi = \frac{\tilde{Q}}{2 Q_t}, \qquad \tilde\Pi^2 = \frac{\tilde{Q}^2}{(2 Q_t)^2} = \frac{2 Q_t \tilde{Q}}{4 Q_t^2} = \frac{\tilde{Q}}{2 Q_t} = \tilde\Pi,
 $$
 
 so $\tilde\Pi$ is an **idempotent** and $\tilde{Q}$ is recovered from it by
-$\tilde{Q} = 2 Q_0 \tilde\Pi$: every non-pure zero divisor is a complex multiple of an idempotent.
+$\tilde{Q} = 2 Q_t \tilde\Pi$: every non-pure zero divisor is a complex multiple of an idempotent.
 The idempotents themselves — their classification and the dimension of the set they form — are the
 subject of *Square Roots of One and the Idempotents of the Biquaternion Algebra*.
 
 **A non-pure zero divisor is a complex scalar times a product of two nilpotents.** The idempotent
-$\tilde\Pi = \tilde{Q}/(2Q_0)$ attached to a non-pure zero divisor is nontrivial, and every
+$\tilde\Pi = \tilde{Q}/(2Q_t)$ attached to a non-pure zero divisor is nontrivial, and every
 nontrivial idempotent of $\mathbb{B}$ is a product of two nilpotents (*Ideals and Peirce
 Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*). Its Peirce decomposition
-supplies two mixed units $u \in \tilde\Pi\mathbb{B}(e_0-\tilde\Pi)$ and
-$w \in (e_0-\tilde\Pi)\mathbb{B}\tilde\Pi$, normalised so that $uw = \tilde\Pi$; both are
+supplies two mixed units $u \in \tilde\Pi\mathbb{B}(e_t-\tilde\Pi)$ and
+$w \in (e_t-\tilde\Pi)\mathbb{B}\tilde\Pi$, normalised so that $uw = \tilde\Pi$; both are
 square-zero, $u^2 = w^2 = 0$, hence nilpotent. So
 
 $$
-\tilde{Q} = 2 Q_0\, u w, \qquad u^2 = w^2 = 0 .
+\tilde{Q} = 2 Q_t\, u w, \qquad u^2 = w^2 = 0 .
 $$
 
 For the standard idempotents the factorisation is the multiplication table of the Peirce
-decomposition, $\tilde\Pi_1 = \vec\Upsilon_1\vec\Upsilon_2$ and
-$\tilde\Pi_2 = \vec\Upsilon_2\vec\Upsilon_1$ with $\vec\Upsilon_1^2 = \vec\Upsilon_2^2 = 0$,
-so the corresponding non-pure zero divisors are $2 Q_0 \vec\Upsilon_1\vec\Upsilon_2$ and
-$2 Q_0 \vec\Upsilon_2\vec\Upsilon_1$. The trivial idempotent $e_0$ is not a product of two
-nilpotents, since a product equal to $e_0$ would make a factor a unit; the trivial idempotent $0$
+decomposition, $\tilde\Pi_1 = \vec\Upsilon_x\vec\Upsilon_y$ and
+$\tilde\Pi_2 = \vec\Upsilon_y\vec\Upsilon_x$ with $\vec\Upsilon_x^2 = \vec\Upsilon_y^2 = 0$,
+so the corresponding non-pure zero divisors are $2 Q_t \vec\Upsilon_x\vec\Upsilon_y$ and
+$2 Q_t \vec\Upsilon_y\vec\Upsilon_x$. The trivial idempotent $e_t$ is not a product of two
+nilpotents, since a product equal to $e_t$ would make a factor a unit; the trivial idempotent $0$
 is one, $0 = 0 \cdot 0$.
 
 ### Properties
 
 A non-pure zero divisor $\tilde{Q}$ has no inverse, by the criterion for invertibility, and its
-annihilator is nontrivial: the element $\tilde{Q} - 2 Q_0 e_0 = 2 Q_0 (\tilde\Pi - e_0)$ is
+annihilator is nontrivial: the element $\tilde{Q} - 2 Q_t e_t = 2 Q_t (\tilde\Pi - e_t)$ is
 annihilated by $\tilde{Q}$ on the right and on the left,
 
 $$
-\tilde{Q}(\tilde{Q} - 2 Q_0 e_0) = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0, \qquad (\tilde{Q} - 2 Q_0 e_0)\tilde{Q} = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0.
+\tilde{Q}(\tilde{Q} - 2 Q_t e_t) = \tilde{Q}^2 - 2 Q_t \tilde{Q} = 0, \qquad (\tilde{Q} - 2 Q_t e_t)\tilde{Q} = \tilde{Q}^2 - 2 Q_t \tilde{Q} = 0.
 $$
 
 ## Structure of the Zero Divisors
@@ -358,16 +358,16 @@ $$
 
 The two cases are distinct in their structure.
 
-| | Pure case ($Q_0 = 0$) | Non-pure case ($Q_0 \neq 0$) |
+| | Pure case ($Q_t = 0$) | Non-pure case ($Q_t \neq 0$) |
 |---|---|---|
-| Form | $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ |
-| Criterion | $Q_1^2 + Q_2^2 + Q_3^2 = 0$ | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ |
-| Square | $\tilde{Q}^2 = 0$ | $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ |
+| Form | $\tilde{Q} = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ | $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ |
+| Criterion | $Q_x^2 + Q_y^2 + Q_z^2 = 0$ | $Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$ |
+| Square | $\tilde{Q}^2 = 0$ | $\tilde{Q}^2 = 2 Q_t \tilde{Q}$ |
 | Structure | Nilpotent | Complex multiple of an idempotent |
-| Annihilator | Contains $\tilde{Q}$ itself | Contains $\tilde{Q} - 2 Q_0 e_0$ |
-| Idempotent | None | $\tilde\Pi = \tilde{Q}/(2 Q_0)$ |
+| Annihilator | Contains $\tilde{Q}$ itself | Contains $\tilde{Q} - 2 Q_t e_t$ |
+| Idempotent | None | $\tilde\Pi = \tilde{Q}/(2 Q_t)$ |
 
-The two families are **disjoint** — they are distinguished by whether the scalar part $Q_0$
+The two families are **disjoint** — they are distinguished by whether the scalar part $Q_t$
 vanishes, and the origin is excluded from both — and their union is the zero divisor set
 $\mathcal{Z}$. As complex cones the pure family (the nilpotent cone) has complex dimension $2$ in
 the three vector coefficients and real dimension $4$, and the non-pure family, being the rest of
@@ -399,7 +399,7 @@ dimension $6$.
 A zero divisor is an element on which $\tilde{Q}\tilde{Q}^{\natural}$ vanishes, so which subspaces
 contain zero divisors is the question of where that polynomial vanishes. Of the remarkable
 subspaces, $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$
-contain none: on the centre $\tilde{Q}\tilde{Q}^{\natural} = Q_0^2$ vanishes only at
+contain none: on the centre $\tilde{Q}\tilde{Q}^{\natural} = Q_t^2$ vanishes only at
 $\tilde{Q} = 0$, and on the two quaternion subspaces it is $\pm$ a sum of squares of real
 coefficients, which likewise vanishes only at zero. The vector subspace $\mathrm{Vect}(\mathbb{B})$
 contains the nilpotents, on which it vanishes for nonzero $\tilde{Q}$, and $\mathbb{M}_+$ and
@@ -410,12 +410,12 @@ subspaces.
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which
 $\tilde{Q}\tilde{Q}^{\natural}$ vanishes. They split into two disjoint families. The **pure zero
-divisors** have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$; they are exactly the
+divisors** have vanishing scalar part and satisfy $Q_x^2 + Q_y^2 + Q_z^2 = 0$; they are exactly the
 nonzero nilpotents, with $\tilde{Q}^2 = 0$ and self-annihilation, and they form a complex cone of
 real dimension $4$. The **non-pure zero divisors** have nonzero scalar part and satisfy
-$Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$; they are exactly the nonzero complex multiples of the
-nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$ and annihilator containing
-$\tilde{Q} - 2 Q_0 e_0$, and they form the rest of the zero divisor cone, of real dimension $6$.
+$Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 = 0$; they are exactly the nonzero complex multiples of the
+nontrivial idempotents, with $\tilde{Q}^2 = 2 Q_t \tilde{Q}$ and annihilator containing
+$\tilde{Q} - 2 Q_t e_t$, and they form the rest of the zero divisor cone, of real dimension $6$.
 The set is a complex cone of complex dimension $3$ (real dimension $6$) in
 $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. Of the remarkable subspaces,
 $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ contain none,
@@ -445,7 +445,7 @@ Biquaternion Algebra*.
 ## Further Reading
 
 - *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the product-relative definition of the zero divisor and the dictionary of the classes against the four general products.
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`) and *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure, and for the Peirce factorisation $\tilde{Q} = 2 Q_0\,uw$ of the non-pure family.
+- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`) and *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the two families of the zero-divisor set, the non-pure and the pure, and for the Peirce factorisation $\tilde{Q} = 2 Q_t\,uw$ of the non-pure family.
 - *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the same set read against the four general products and the annihilators.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.
 - William Rowan Hamilton, "On the Geometrical Interpretation of some Results obtained by calculation with Biquaternions," *Proceedings of the Royal Irish Academy* **5** (1853) 388–390, for the bivectors, the null-square bivectors $i + hj$ and $j + hk$, and the simplification $(1 + j + hk)^a = 1 + a(j + hk)$.

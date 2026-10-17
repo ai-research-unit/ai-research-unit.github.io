@@ -57,9 +57,9 @@ and the anticommutator replaces the commutator; for two even elements the ordina
 
 *Proof.* The displayed identity is the definition with both parities odd, where $(-1)^{\lvert x\rvert\lvert y\rvert} = -1$; the compatibility of the three parities with the graded Jacobi identity of $\mathrm{G}$ forces the sign, because the action is a representation and the graded Jacobi identity is the associativity of the action.
 
-**Corollary.** The action extends to the enveloping algebra $U(\mathrm{G})$ with the graded product: $M$ is a module over the associative algebra $U(\mathrm{G})$, the multiplication of two odd elements acquiring the sign $-1$, and the parity operator $\beta$ is an automorphism of $M$ as a graded module in the sense of the graded-commutation above.
+**Corollary.** The action extends to the enveloping algebra $\mathrm{U}(\mathrm{G})$ with the graded product: $M$ is a module over the associative algebra $\mathrm{U}(\mathrm{G})$, the multiplication of two odd elements acquiring the sign $-1$, and the parity operator $\beta$ is an automorphism of $M$ as a graded module in the sense of the graded-commutation above.
 
-*Proof.* The universal property of $U(\mathrm{G})$ as the quotient of the tensor algebra by the relations $xy - (-1)^{\lvert x\rvert\lvert y\rvert}yx = [x,y]$ gives the extension; the compatibility of $\beta$ is the proposition.
+*Proof.* The universal property of $\mathrm{U}(\mathrm{G})$ as the quotient of the tensor algebra by the relations $xy - (-1)^{\lvert x\rvert\lvert y\rvert}yx = [x,y]$ gives the extension; the compatibility of $\beta$ is the proposition.
 
 ## The Structure of the Graded Action
 
@@ -73,15 +73,15 @@ and the anticommutator replaces the commutator; for two even elements the ordina
 
 **Definition.** A **graded submodule** is a subspace $N\subseteq M$ with $N = (N\cap M^{+})\oplus(N\cap M^{-})$ and $\mathrm{G}\cdot N\subseteq N$; the **quotient** $M/N$ is graded with the induced decomposition, and the **homomorphisms** of graded modules are the linear maps respecting the action and the grading, $f(M^{\delta})\subseteq N^{\delta}$.
 
-**Theorem.** The graded modules over $\mathrm{G}$ form an abelian category with the exact sequences respecting the grading, every homomorphism has a kernel and a cokernel graded, and the category is equivalent to the category of the graded modules over the enveloping algebra $U(\mathrm{G})$.
+**Theorem.** The graded modules over $\mathrm{G}$ form an abelian category with the exact sequences respecting the grading, every homomorphism has a kernel and a cokernel graded, and the category is equivalent to the category of the graded modules over the enveloping algebra $\mathrm{U}(\mathrm{G})$.
 
-*Proof.* The axioms are verified as for the modules over a ring, with the gradings carried along; the equivalence is the extension of the action to $U(\mathrm{G})$ of the corollary above, which is an equivalence on the objects and on the morphisms.
+*Proof.* The axioms are verified as for the modules over a ring, with the gradings carried along; the equivalence is the extension of the action to $\mathrm{U}(\mathrm{G})$ of the corollary above, which is an equivalence on the objects and on the morphisms.
 
 ### The Free Module and the Basis
 
-**Theorem.** The graded module $U(\mathrm{G})$ with the multiplication as the action is the free graded module of rank one; a graded module is free exactly when it has a homogeneous basis, and over a field every graded module has a homogeneous basis obtained by extending a basis of $M^{+}$ and one of $M^{-}$.
+**Theorem.** The graded module $\mathrm{U}(\mathrm{G})$ with the multiplication as the action is the free graded module of rank one; a graded module is free exactly when it has a homogeneous basis, and over a field every graded module has a homogeneous basis obtained by extending a basis of $M^{+}$ and one of $M^{-}$.
 
-*Proof.* The action of $U(\mathrm{G})$ on itself by multiplication satisfies the compatibility by the associativity; the existence of the homogeneous basis is the extension of bases in a graded vector space, and the freeness is the universality of $U(\mathrm{G})$.
+*Proof.* The action of $\mathrm{U}(\mathrm{G})$ on itself by multiplication satisfies the compatibility by the associativity; the existence of the homogeneous basis is the extension of bases in a graded vector space, and the freeness is the universality of $\mathrm{U}(\mathrm{G})$.
 
 ## The Enveloping Algebra and the Induced Structures
 
@@ -107,9 +107,9 @@ and the **Koszul flip** $\tau(m\otimes n) = (-1)^{\lvert m\rvert\lvert n\rvert}n
 
 ### The Free Module
 
-**Theorem.** For a graded vector space $V$ the module $U(\mathrm{G})\otimes V$ with the action by the left multiplication of the first factor is the **free graded module** on the generators $V$, and every graded module is a quotient of a free one; a graded module is free exactly when it has a homogeneous basis, and the rank is the graded dimension of $V$.
+**Theorem.** For a graded vector space $V$ the module $\mathrm{U}(\mathrm{G})\otimes V$ with the action by the left multiplication of the first factor is the **free graded module** on the generators $V$, and every graded module is a quotient of a free one; a graded module is free exactly when it has a homogeneous basis, and the rank is the graded dimension of $V$.
 
-*Proof.* The action of $U(\mathrm{G})$ on the tensor product by the left multiplication is well defined and satisfies the compatibility; the universal property of the tensor product over the field gives the freeness, and the homogeneous basis is the one of $V$; the quotient statement is the standard presentation of a module by its relations, with the gradings carried along.
+*Proof.* The action of $\mathrm{U}(\mathrm{G})$ on the tensor product by the left multiplication is well defined and satisfies the compatibility; the universal property of the tensor product over the field gives the freeness, and the homogeneous basis is the one of $V$; the quotient statement is the standard presentation of a module by its relations, with the gradings carried along.
 
 ### The Graded Dual
 
@@ -143,7 +143,7 @@ If $\mathrm{G}$ is entirely even, the grade involution is the identity, the sign
 
 ## Summary
 
-A **graded module** over a graded Lie algebra is a module $M = M^{+}\oplus M^{-}$ with $\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$ and the graded compatibility $[x,y]\cdot m = x\cdot(y\cdot m) - (-1)^{\lvert x\rvert\lvert y\rvert}y\cdot(x\cdot m)$; it carries the parity operator $\beta$ equal to $\pm\mathrm{id}$ on the two pieces, and the action graded-commutes with it, $x\beta = (-1)^{\lvert x\rvert}\beta x$, so the even elements preserve the grading and the odd elements reverse it. The sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ is forced by the graded Jacobi identity: for two odd elements the anticommutator replaces the commutator, and there is no other consistent sign. The action extends to the enveloping algebra $U(\mathrm{G})$ with the graded product, so the graded modules are the graded modules over $U(\mathrm{G})$, and they form an abelian category with the graded submodules, the quotients and the homogeneous bases; the algebra itself is the adjoint module, the exterior algebra on an odd space is the module of the derivations, and the Clifford module of the orthogonal algebra is the module of the two chiralities. The trivial grading recovers the ungraded theory, and the interesting case is the one with a nonzero odd part, in which the sign rule is visible.
+A **graded module** over a graded Lie algebra is a module $M = M^{+}\oplus M^{-}$ with $\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$ and the graded compatibility $[x,y]\cdot m = x\cdot(y\cdot m) - (-1)^{\lvert x\rvert\lvert y\rvert}y\cdot(x\cdot m)$; it carries the parity operator $\beta$ equal to $\pm\mathrm{id}$ on the two pieces, and the action graded-commutes with it, $x\beta = (-1)^{\lvert x\rvert}\beta x$, so the even elements preserve the grading and the odd elements reverse it. The sign $(-1)^{\lvert x\rvert\lvert y\rvert}$ is forced by the graded Jacobi identity: for two odd elements the anticommutator replaces the commutator, and there is no other consistent sign. The action extends to the enveloping algebra $\mathrm{U}(\mathrm{G})$ with the graded product, so the graded modules are the graded modules over $\mathrm{U}(\mathrm{G})$, and they form an abelian category with the graded submodules, the quotients and the homogeneous bases; the algebra itself is the adjoint module, the exterior algebra on an odd space is the module of the derivations, and the Clifford module of the orthogonal algebra is the module of the two chiralities. The trivial grading recovers the ungraded theory, and the interesting case is the one with a nonzero odd part, in which the sign rule is visible.
 
 ## Summary of Notation
 
@@ -157,7 +157,7 @@ A **graded module** over a graded Lie algebra is a module $M = M^{+}\oplus M^{-}
 | $\mathrm{G}^{\epsilon}\cdot M^{\delta}\subseteq M^{\epsilon+\delta}$ | the compatibility with the grading |
 | $[x,y]\cdot m = x(y m) - (-1)^{\lvert x\rvert\lvert y\rvert}y(x m)$ | the sign rule |
 | $\beta$ | the parity operator, $x\beta = (-1)^{\lvert x\rvert}\beta x$ |
-| $U(\mathrm{G})$ | the enveloping algebra, with the graded product |
+| $\mathrm{U}(\mathrm{G})$ | the enveloping algebra, with the graded product |
 | graded submodule, homogeneous basis | the submodules and the free modules |
 
 ## Further Reading

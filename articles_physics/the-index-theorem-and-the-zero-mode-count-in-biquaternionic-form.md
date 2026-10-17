@@ -6,13 +6,13 @@ The Hopf fibration of the companion article *The Hopf Fibration and the Biquater
 
 The framework enters through two facts that are genuinely its own and one that is not.
 
-- **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* fix it. The index is a property of that operator.
+- **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* fix it. The index is a property of that operator.
 - **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\vec E\cdot\vec B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
 - **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $\langle\tilde F\rangle_{\natural}=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
 
 The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $e_k^2=-e_0$, $e_1e_2=e_3$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ with generators $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Ϙ=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in *Instantons and Solitons in Biquaternionic Form*.
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The algebra is $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ with $\vec e_\mu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$, and central $i$. The material sector is $\mathbb M_-$ and the informational sector is $\mathbb M_+$. The compact gauge algebra is $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ with generators $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ on the anti-Hermitian convention. The gauge connection and curvature are $\mathcal A_\mu\in\mathrm{SU}(2)$ and $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$, with $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$. The topological charge is $Ϙ=\frac{1}{8\pi^2}\int_{\mathbb R^4}\mathrm{Tr}(F\wedge F)\in\mathbb Z$ and the matrix trace $\mathrm{Tr}$ is distinguished from the informational trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. On the Euclidean slice the curvature is written without the explicit factor $i$ in the commutator, as in *Instantons and Solitons in Biquaternionic Form*.
 
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the operator whose index is taken.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module and its chirality.
@@ -27,7 +27,7 @@ On a four-manifold with a spin structure and a gauge bundle in a representation 
 $$
 \slashed{D}_R \;=\; \gamma^\mu D_\mu ,
 \qquad
-D_\mu=\partial_\mu+i\kappa\,\mathcal A_\mu^{R} ,
+D_\mu=\partial/\partial Q_\mu+i\kappa\,\mathcal A_\mu^{R} ,
 $$
 
 with $\gamma^\mu$ the Clifford generators, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$, and the connection acting in the representation $R$. The operator is elliptic, and its kernel splits under the chirality grading $\gamma_5$ into the positive and negative chirality zero-mode spaces,
@@ -44,7 +44,7 @@ $$
 \mathrm{ind}\,\slashed{D}_R \;=\; n_+ - n_- ,
 $$
 
-an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and *The Dirac Equation in Biquaternionic Form* shows that $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $\Box=\partial_{ict}^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.
+an integer that is invariant under continuous deformations of the connection and the metric because it is an integer-valued continuous function. In the biquaternionic framework the operator is the one built from $\tilde\nabla$; the algebraic form of the massless Dirac equation is $\tilde\nabla\psi=0$, and *The Dirac Equation in Biquaternionic Form* shows that $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $\Box=\partial^2/\partial Q_t^2+\Delta$, so the operator is the square root of the framework's d'Alembertian. The index is the property of this operator that the rest of the article computes.
 
 ## The Atiyah–Singer Theorem
 
@@ -132,7 +132,7 @@ so the abelian index density is the framework's own invariant $I_2$ up to a cons
 
 ## A Worked Case: the Abelian Index and the Monopole Zero Modes
 
-The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $U(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
+The index formula is worth exercising in the framework's abelian sector, where every ingredient is the algebra's. Take the two-sphere with a $\mathrm{U}(1)$ gauge field whose first Chern number is $n$; the associated line bundle has $c_1=n$, and the Hopf bundle of *The Hopf Fibration and the Biquaternion Gauge Bundle* is the case $n=1$. The twisted Dirac index is
 
 $$
 \mathrm{ind}\,\slashed{D}_n=\int_{S^2}\mathrm{ch}(L)\wedge\mathrm{A}(TS^2)=\int_{S^2}c_1(L)=n ,
@@ -140,7 +140,7 @@ $$
 
 since the A-roof genus of a two-manifold is $1$. The count of zero modes is therefore $|n|$, with the sign of $n$ selecting the chirality, and for $n=1$ there is exactly one zero mode. This is the standard result that a magnetic monopole binds one fermion mode per unit magnetic charge, and it is the abelian counterpart of the $n_+=k$ count in the defining representation.
 
-The zero modes can be exhibited explicitly, and they are the framework's monopole harmonics. In the $U(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections
+The zero modes can be exhibited explicitly, and they are the framework's monopole harmonics. In the $\mathrm{U}(1)$ patch with $a=\tfrac12(1-\cos\theta)d\phi$ of the Hopf article, the massless two-component equation $\slashed{D}\psi=0$ separates, and the positive-chirality solutions are the sections
 
 $$
 \psi_n^{(m)}=f_n^{(m)}(\theta)\,\exp(im\phi),
@@ -189,12 +189,12 @@ The index density is a total derivative whose integral equals the instanton char
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb M_+,\mathbb M_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb H_{\mathbb B}$ | Real-quaternion subspace |
-| $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ | Biquaternionic gradient; Dirac operator |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian (series convention) |
+| $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_\mu\partial/\partial Q_\mu$ | Biquaternionic gradient; Dirac operator |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian (series convention) |
 | $\slashed{D}_R=\gamma^\mu D_\mu$ | Twisted Dirac operator in representation $R$ |
 | $\gamma_5$ | Chirality grading; $\ker\slashed{D}_R=\ker^+\oplus\ker^-$ |
 | $n_\pm$ | Dimensions of the positive/negative chirality zero-mode spaces |
@@ -202,10 +202,10 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathrm{ch}(E_R)\wedge\mathrm{A}(TM)$ | Index density; $\mathrm{A}=1$ on the flat slice |
 | $T(R)$ | Dynkin index; $T(\text{defining})=\tfrac12$, $T(\text{adjoint})=2$ |
 | $R$ | Defining (dim 2) or adjoint (dim 3) representation of $\mathrm{SU}(2)$ |
-| $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ | Compact gauge algebra inside $\mathbb M_-$ |
+| $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb M_-$ |
 | $T_a=\tfrac12 e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
 | $\mathcal F=d\mathcal A+i\kappa\,\mathcal A\wedge\mathcal A$ | Field-strength two-form |
-| $F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
+| $F_{\mu\nu}=\partial/\partial Q_\mu\,\mathcal A_\nu-\partial/\partial Q_\nu\,\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]$ | Its components; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Ϙ\in\mathbb Z$ |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |

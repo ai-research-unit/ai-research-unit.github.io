@@ -14,24 +14,24 @@ This article applies those findings to the spin-$\tfrac12$ field, where the hist
 
 The boundary with the neighbouring subjects is sharp and is stated where it occurs: the systematic evaluation of the functional determinant, the transformation of the measure under field redefinitions, and the anomalies that follow from it are not treated here.
 
-**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, $e_k^2=-e_0$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict$ axis of $\mathbb{M}_-$. **Grassmann conventions.** To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.
+**Conventions.** From the companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_k^2=-e_t$, central $i$ with $i^{*}=-i$; $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, $\flat=-{}^{*}$; $\mathbb{M}_-$ anti-Hermitian (material), $\mathbb{M}_+$ Hermitian (informational); biquaternion norm $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$; the mass term is the linear chirality-off-diagonal pair; on the module $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, $\bar\psi=\psi^\dagger\gamma^0$, $g=\mathrm{diag}(+1,-1,-1,-1)$, $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the $i\epsilon$ sits along the $ict$ axis of $\mathbb{M}_-$. **Grassmann conventions.** To each mode belong odd generators $\theta,\theta^*$ with $\theta^2=\theta^{*2}=0$, $\theta\theta^*=-\theta^*\theta$, and Berezin integration is normalized by $\int d\theta^*d\theta\,\theta\theta^*=1$; consequences are $\int d\theta^*d\theta\,\exp(-\theta^*\theta)=1$ and $\int d\theta^*d\theta\,\exp(-\theta^*M\theta)=M$.
 
 ## The Action in Biquaternion Form
 
 The classical field theory is defined by the parent article's Lagrangian density,
 
 $$
-\mathcal{L}=\bar\psi\,(i\gamma^\mu\partial_\mu-m)\,\psi ,
+\mathcal{L}=\bar\psi\,(i\gamma^\mu\partial/\partial Q_\mu-m)\,\psi ,
 $$
 
-a real Lorentz scalar whose variation returns $(i\gamma^\mu\partial_\mu-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.
+a real Lorentz scalar whose variation returns $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, with conjugate momentum $\pi=i\psi^\dagger$. For the path integral this is the object whose integral is the phase.
 
-**The biquaternion transcription, and what it does not fix.** On the module the kinetic operator is $i\gamma^\mu\partial_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial_\mu$:
+**The biquaternion transcription, and what it does not fix.** On the module the kinetic operator is $i\gamma^\mu\partial/\partial Q_\mu$, and the dictionary companion identifies the Clifford vector with the Hermitian biquaternion through $x_\mu\gamma^\mu=\gamma^0\Phi(w)$, $w\in\mathbb{M}_+$, so that the $ict$ gradient of the series is the biquaternion transcription of $i\gamma^\mu\partial/\partial Q_\mu$:
 
 $$
-i\gamma^\mu\partial_\mu\;\longleftrightarrow\;\tilde{\nabla}=e_0\,\partial_{ict}+e_k\,\partial_k ,
+i\gamma^\mu\partial/\partial Q_\mu\;\longleftrightarrow\;\tilde{\nabla}=e_t\,\partial/\partial Q_t+e_k\,\partial/\partial Q_k ,
 \qquad
-\bar\psi\,i\gamma^\mu\partial_\mu\psi\;\longleftrightarrow\;\mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big) ,
+\bar\psi\,i\gamma^\mu\partial/\partial Q_\mu\,\psi\;\longleftrightarrow\;\mathrm{Sc}\big(\tilde\Psi^{\natural}\,\tilde{\nabla}\tilde{\Psi}\big) ,
 $$
 
 with the scalar part as the natural pairing. The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the module transcription is the working setting. The path integral inherits that status: everything below is exact for the module transcription, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
@@ -133,7 +133,7 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde k=iE\,e_0+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde k=iE\,e_t+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^y$, the momentum-space kernel is
 
 $$
 S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon},
@@ -180,7 +180,7 @@ Second, the algebra's own statement is the *existence* of the antisymmetric pair
 $$
 \exp(\,iS)\;\longrightarrow\;\exp(\,-S_{\mathrm{E}}),
 \qquad
-S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\gamma^0\partial_\tau-i\boldsymbol\gamma\cdot\nabla+m\big)\psi ,
+S_{\mathrm{E}}=\int d\tau\,d^3x\;\bar\psi\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)\psi ,
 $$
 
 with the kinetic operator now anti-Hermitian and the mass Hermitian, so that the quadratic form has a definite real part off the zero modes.
@@ -197,7 +197,7 @@ which is the same statement as the Matsubara frequencies $\omega_n=(2n+1)\pi/\be
 
 $$
 Z(\beta)=\int_{\text{antiperiodic}}\mathcal{D}\bar\psi\mathcal{D}\psi\;\exp(-S_{\mathrm{E}})
-=\det\big(\gamma^0\partial_\tau-i\boldsymbol\gamma\cdot\nabla+m\big)_{\text{AP}} ,
+=\det\big(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m\big)_{\text{AP}} ,
 $$
 
 whose logarithm is the free energy of the fermion gas. The identity is the standard finite-temperature reduction of the fermionic integral and is recorded, not recomputed; what the biquaternion framework adds is again only the location of the deformation and the centrality of the phase. The companion article *The KMS Condition and the Biquaternion Framework* treats the analytic structure that the antiperiodicity generates.
@@ -258,7 +258,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 
 | Symbol | Meaning |
 |---|---|
-| $S=\int d^4x\,\bar\psi(i\gamma^\mu\partial_\mu-m)\psi$ | Biquaternion Dirac action (bilinear) |
+| $S=\int d^4x\,\bar\psi(i\gamma^\mu\partial/\partial Q_\mu-m)\psi$ | Biquaternion Dirac action (bilinear) |
 | $S=\int\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\nabla\tilde\Psi)-\int m\,\mathrm{Sc}(\tilde\Psi^{\natural}\tilde\Psi)$ | Action as a trace pairing |
 | $\exp(iS)$ | Path-integral phase; central, in $\mathbb{C}_{\mathbb{B}}$, exponent along $ict$ |
 | $\eta,\bar\eta$ | Odd (Grassmann) sources |
@@ -273,7 +273,7 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\flat=-{}^{*}$ | Real structure; source of the field-to-conjugate pairing |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($ict$ direction becomes real) |
 | $\psi(\tau+\beta)=-\psi(\tau)$, $\omega_n=(2n+1)\pi/\beta$ | Antiperiodic thermal boundary condition |
-| $Z(\beta)=\det(\gamma^0\partial_\tau-i\boldsymbol\gamma\cdot\nabla+m)_{\text{AP}}$ | Finite-temperature free partition function |
+| $Z(\beta)=\det(\gamma^0\partial/\partial\tau-i\boldsymbol\gamma\cdot\nabla+m)_{\text{AP}}$ | Finite-temperature free partition function |
 
 ## Further Reading
 

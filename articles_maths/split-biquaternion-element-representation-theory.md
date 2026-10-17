@@ -81,7 +81,7 @@ Because the centre is $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, a real re
 **Theorem.** The group of units of $\mathbb{H}_{\mathbb{D}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
 
 $$
-\mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \tilde{Q}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
+\mathbb{H}_{\mathbb{D}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad \mathbb{H}_{\mathbb{D}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
 $$
 
 **Proof.** An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements.
@@ -92,7 +92,7 @@ $$
 \mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
 $$
 
-a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $U(2)$.
+a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $\mathrm{U}(2)$.
 
 The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{D}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
 
@@ -136,7 +136,7 @@ $$
 \tilde{Q} \longmapsto \tilde{Q}_+ \otimes \tilde{Q}_-
 $$
 
-is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}' + \tilde{Q}''$ the two sides $(\tilde{Q}'+\tilde{Q}'')_+ \otimes (\tilde{Q}'+\tilde{Q}'')_-$ and $\tilde{Q}'_+ \otimes \tilde{Q}'_- + \tilde{Q}''_+ \otimes \tilde{Q}''_-$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.
+is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}_1 + \tilde{Q}_2$ the two sides $(\tilde{Q}_1+\tilde{Q}_2)_+ \otimes (\tilde{Q}_1+\tilde{Q}_2)_-$ and $\tilde{Q}_{1+} \otimes \tilde{Q}_{1-} + \tilde{Q}_{2+} \otimes \tilde{Q}_{2-}$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.
 
 The tensor products that are defined are those of the unit-group representations: the irreducible finite-dimensional representations $\rho_{(n_1,n_2)}$ form the tensor products of representations of the two $SU(2)$ factors, and their tensor product is computed factor by factor by the Clebsch–Gordan rule of $SU(2)$. The product of $\rho_{(n_1,n_2)}$ and $\rho_{(m_1,m_2)}$ is the direct sum of the $\rho_{(k_1,k_2)}$ with $|n_1-m_1| \leq k_1 \leq n_1+m_1$ and $|n_2-m_2| \leq k_2 \leq n_2+m_2$, the steps being two and each pair appearing once. This is the Clebsch–Gordan rule applied independently to two factors, in place of the single $SU(2)$ rule of the biquaternion case.
 

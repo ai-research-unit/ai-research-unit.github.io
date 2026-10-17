@@ -117,7 +117,7 @@ The theorems that the scope line names are collected here with the layer that pr
 | the spaces without a universal cover | the classification of coverings fails when the space is not semilocally simply connected; the Hawaiian earring is the standard example | *The Fundamental Group and Covering Spaces* |
 | a weak homotopy equivalence | without a CW structure it need not be a homotopy equivalence; the Whitehead theorem needs the CW hypothesis | *Homotopy Groups and Fibrations* |
 | a category with weak equivalences | it need not be a model category, and the homotopy category is then not computable from the three classes alone | *Model Categories and Homotopy Theory* |
-| the Hopf fibration over $\mathbb{O}$ | the octonionic fibration $S^7 \to S^{15} \to S^8$ exists; there is no such fibration in the next Cayley–Dickson step, by the theorem of Adams | *Homotopy Groups and Fibrations*; *Octonion Algebra* |
+| the Hopf fibration over $\mathbb{O}$ | the octonionic fibration $S^7 \to S^{15} \to S^8$ exists; there is no such fibration in the next Cayley–Dickson step, by the theorem of Adams | *Homotopy Groups and Fibrations* |
 
 Objects that a reader may expect to find in a list of homotopy theories, and does not.
 

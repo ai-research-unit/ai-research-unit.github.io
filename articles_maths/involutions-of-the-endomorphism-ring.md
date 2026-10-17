@@ -36,13 +36,13 @@ The assignment $T \mapsto T^{*}$ is well defined, and it is an **involution of t
 **Definition.** The **unitary elements** of $(E,B)$ are
 
 $$
-U(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}.
+\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}.
 $$
 
-**Proposition.** $U(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,
+**Proposition.** $\mathrm{U}(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,
 
 $$
-T \in U(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V .
+T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V .
 $$
 
 **Proof.** If $T$ is unitary then $B(Tx,Ty) = B(T^{*}Tx,y) = B(x,y)$, using the defining identity for $T^{*}$ with the pair $(Tx,y)$ replaced by $(x,Ty)$; conversely, if $T$ preserves $B$ then $B(x,T^{*}Ty) = B(Tx,Ty) = B(x,y)$ for all $x$, so $T^{*}T = \mathrm{id}$ by nondegeneracy, and the same argument on the other side gives $TT^{*} = \mathrm{id}$. The product of two unitary elements is unitary because the adjoint is anti-multiplicative, $(ST)^{*}(ST) = T^{*}S^{*}ST = T^{*}T = \mathrm{id}$, and the inverse of a unitary element is unitary because $T^{*} = T^{-1}$.
@@ -53,17 +53,17 @@ $$
 
 ## Examples
 
-**(a) The standard pairing.** $V = R^n$ with $B(x,y) = \sum_i x_iy_i$ and $R$ a commutative ring; the adjoint of a matrix is its transpose, $X^{*} = X^{\mathrm t}$, so the involution of the matrix ring is the transpose and $U(V,B)$ is the orthogonal group.
+**(a) The standard pairing.** $V = R^n$ with $B(x,y) = \sum_i x_iy_i$ and $R$ a commutative ring; the adjoint of a matrix is its transpose, $X^{*} = X^{\mathrm t}$, so the involution of the matrix ring is the transpose and $\mathrm{U}(V,B)$ is the orthogonal group.
 
-**(b) The symplectic pairing.** $V = R^{2n}$ with the pairing $B(x,y) = \sum_i(x_iy_{i+n}-x_{i+n}y_i)$; the adjoint of $X$ is $-JX^{\mathrm t}J$ with $J$ the standard symplectic matrix, the involution is the symplectic one of *Matrix Rings with an Involution*, and $U(V,B)$ is the symplectic group.
+**(b) The symplectic pairing.** $V = R^{2n}$ with the pairing $B(x,y) = \sum_i(x_iy_{i+n}-x_{i+n}y_i)$; the adjoint of $X$ is $-JX^{\mathrm t}J$ with $J$ the standard symplectic matrix, the involution is the symplectic one of *Matrix Rings with an Involution*, and $\mathrm{U}(V,B)$ is the symplectic group.
 
-**(c) The Hermitian pairing.** $R = \mathbb{C}$ with the conjugation, $B(x,y) = \sum_i \overline{x_i}y_i$; the adjoint is the conjugate transpose and $U(V,B)$ the unitary group. The construction is the second-kind case of the remark.
+**(c) The Hermitian pairing.** $R = \mathbb{C}$ with the conjugation, $B(x,y) = \sum_i \overline{x_i}y_i$; the adjoint is the conjugate transpose and $\mathrm{U}(V,B)$ the unitary group. The construction is the second-kind case of the remark.
 
 **(d) The regular pairing of a ring.** On $V = A$ the pairing $B(x,y) = \tau(xy)$, with $\tau$ the regular trace, is symmetric and nondegenerate under the hypothesis of *The Adjoint of the Left Multiplication on a Ring*; the adjoint of the left multiplication $L_a$ is the right multiplication $R_a$, and the unitary elements are the units $u$ with $u^{*} = u^{-1}$.
 
 ## Summary
 
-A perfect pairing $B$ on an additive group $V$ defines an **adjoint involution** $T \mapsto T^{*}$ of the endomorphism ring $E = \operatorname{End}(V)$ by $B(Tx,y) = B(x,T^{*}y)$; the adjoint exists and is unique for each $T$, the assignment is additive, anti-multiplicative and of order two, and it is $\sigma$-semilinear in the coefficients when the pairing is sesquilinear with an involution $\sigma$. The unitary elements $U(V,B) = \{T : T^{*}T = TT^{*} = \mathrm{id}\}$ form a subgroup of $E^\times$ and are exactly the endomorphisms preserving the pairing; a symmetric pairing gives the **orthogonal** involution and an antisymmetric one the **symplectic** involution, with the matrix calculations and the unitary groups of *Matrix Rings with an Involution* and *Matrix Rings and the Adjoint*. The specialisation to the regular pairing $B(x,y) = \tau(xy)$ of a ring with involution gives the adjoint of the left multiplication, treated in *The Adjoint of the Left Multiplication on a Ring*.
+A perfect pairing $B$ on an additive group $V$ defines an **adjoint involution** $T \mapsto T^{*}$ of the endomorphism ring $E = \operatorname{End}(V)$ by $B(Tx,y) = B(x,T^{*}y)$; the adjoint exists and is unique for each $T$, the assignment is additive, anti-multiplicative and of order two, and it is $\sigma$-semilinear in the coefficients when the pairing is sesquilinear with an involution $\sigma$. The unitary elements $\mathrm{U}(V,B) = \{T : T^{*}T = TT^{*} = \mathrm{id}\}$ form a subgroup of $E^\times$ and are exactly the endomorphisms preserving the pairing; a symmetric pairing gives the **orthogonal** involution and an antisymmetric one the **symplectic** involution, with the matrix calculations and the unitary groups of *Matrix Rings with an Involution* and *Matrix Rings and the Adjoint*. The specialisation to the regular pairing $B(x,y) = \tau(xy)$ of a ring with involution gives the adjoint of the left multiplication, treated in *The Adjoint of the Left Multiplication on a Ring*.
 
 ## Summary of Notation
 
@@ -74,7 +74,7 @@ A perfect pairing $B$ on an additive group $V$ defines an **adjoint involution**
 | $E = \operatorname{End}(V)$ | Endomorphism ring |
 | $B(Tx,y) = B(x,T^{*}y)$ | Defining identity of the adjoint |
 | $T \mapsto T^{*}$ | Adjoint involution of $E$ |
-| $U(V,B)$ | Unitary group: $T^{*}T = TT^{*} = \mathrm{id}$, equivalently $B(Tx,Ty) = B(x,y)$ |
+| $\mathrm{U}(V,B)$ | Unitary group: $T^{*}T = TT^{*} = \mathrm{id}$, equivalently $B(Tx,Ty) = B(x,y)$ |
 | symmetric $B$ / antisymmetric $B$ | Orthogonal / symplectic involution |
 | $B = \tau(xy)$ on $A$ | Regular pairing of a ring; $L_a^{*} = R_a$ |
 | $\sigma$ | Coefficient involution; adjoint is $\sigma$-semilinear when $B$ is sesquilinear |

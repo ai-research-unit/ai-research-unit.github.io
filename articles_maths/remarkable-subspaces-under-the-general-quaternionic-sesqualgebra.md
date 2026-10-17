@@ -5,7 +5,7 @@
 
 The general quaternionic sesquilinear form $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$ of *The Krein Gram Matrix and the Restrictions of the Form*, of signature $(2,6)$, is read here on the remarkable real subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$.
 
-The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $U(1,3)$ are the matter of *The Krein Gram Matrix and the Restrictions of the Form*; its Gram matrices and the signature of each restriction are *The Krein Gram Matrix and the Restrictions of the Form*; its null set and its totally isotropic subspaces are *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
+The form is used, not re-derived. Its definition, its Krein signature $(2,6)$ and its automorphism group $\mathrm{U}(1,3)$ are the matter of *The Krein Gram Matrix and the Restrictions of the Form*; its Gram matrices and the signature of each restriction are *The Krein Gram Matrix and the Restrictions of the Form*; its null set and its totally isotropic subspaces are *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the remarkable subspaces and their bases are *Introduction to the Remarkable Subspaces*; and the companion readings of the same six by the other three pairings are *Remarkable Subspaces and the Four Forms*, *Remarkable Subspaces under the General Quaternionic Algebra* and *Remarkable Subspaces under the General Plain Sesqualgebra*. This article owns the restrictions themselves and the structure of each one.
 
 ## The Restriction Matrices
 
@@ -13,18 +13,18 @@ The form differs from the Euclidean square by the sign vector $\varepsilon=(1,-1
 
 | Subspace | Natural real basis | Restricted form | Restriction matrix | Signature | Character |
 |---|---|---|---|---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_0,\,ie_0$ | $\lvert Q_0\rvert^{2}=q_0^{2}+(q'_0)^{2}$ | $\operatorname{diag}(1,1)$ | $(2,0)$ | positive definite |
-| Vector $\mathrm{Vect}(\mathbb{B})$ | $e_1,e_2,e_3,\,ie_1,ie_2,ie_3$ | $-\sum_k\lvert Q_k\rvert^{2}$ | $-\mathrm{I}_6$ | $(0,6)$ | negative definite |
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_0,e_1,e_2,e_3$ | $q_0^{2}-q_1^{2}-q_2^{2}-q_3^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_0,ie_1,ie_2,ie_3$ | $(q'_0)^{2}-(q'_1)^{2}-(q'_2)^{2}-(q'_3)^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
-| Hermitian $\mathbb{M}_+$ | $e_0,ie_1,ie_2,ie_3$ | $q_0^{2}-(q'_1)^{2}-(q'_2)^{2}-(q'_3)^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
-| Anti-Hermitian $\mathbb{M}_-$ | $ie_0,e_1,e_2,e_3$ | $(q'_0)^{2}-q_1^{2}-q_2^{2}-q_3^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
+| Centre $\mathbb{C}_{\mathbb{B}}$ | $e_t,\,ie_t$ | $\lvert Q_t\rvert^{2}=q_t^{2}+(q'_t)^{2}$ | $\operatorname{diag}(1,1)$ | $(2,0)$ | positive definite |
+| Vector $\mathrm{Vect}(\mathbb{B})$ | $\vec e_x,\vec e_y,\vec e_z,\,i\vec e_x,i\vec e_y,i\vec e_z$ | $-\sum_k\lvert Q_k\rvert^{2}$ | $-\mathrm{I}_6$ | $(0,6)$ | negative definite |
+| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $e_t,\vec e_x,\vec e_y,\vec e_z$ | $q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
+| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $(q'_t)^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
+| Hermitian $\mathbb{M}_+$ | $e_t,i\vec e_x,i\vec e_y,i\vec e_z$ | $q_t^{2}-(q'_x)^{2}-(q'_y)^{2}-(q'_z)^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
+| Anti-Hermitian $\mathbb{M}_-$ | $ie_t,\vec e_x,\vec e_y,\vec e_z$ | $(q'_t)^{2}-q_x^{2}-q_y^{2}-q_z^{2}$ | $\mathrm{E}$ | $(1,3)$ | indefinite |
 
 **Proposition (the matrices).** In the natural real basis displayed the restriction is diagonal with entries $\varepsilon_\mu$ on the four-dimensional rows and with entries $1,1$ on the centre and $-1$ on the vector subspace; each restriction is non-degenerate, with Gram determinant $\pm1$.
 
-*Proof.* In the real basis of the algebra the form is diagonal with the signs $\varepsilon,\varepsilon$, since $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$ and $\langle ie_\mu,ie_\nu\rangle_{\natural*}=\varepsilon_\mu|i|^{2}\delta_{\mu\nu}=\varepsilon_\mu\delta_{\mu\nu}$, while the mixed entries have vanishing real part. The natural real basis of each subspace is a subset of the algebra's real basis, so each restriction is the corresponding principal submatrix. On the centre the basis is $\{e_0,ie_0\}$, giving $\operatorname{diag}(1,1)$; on the vector subspace it is $\{e_k,ie_k\}$, where the signs are all $-1$; and on each four-dimensional subspace the basis selects one direction of each complex coordinate, giving the sign string $\varepsilon$ in a different order.
+*Proof.* In the real basis of the algebra the form is diagonal with the signs $\varepsilon,\varepsilon$, since $\langle e_\mu,e_\nu\rangle_{\natural*}=\varepsilon_\mu\delta_{\mu\nu}$ and $\langle ie_\mu,ie_\nu\rangle_{\natural*}=\varepsilon_\mu|i|^{2}\delta_{\mu\nu}=\varepsilon_\mu\delta_{\mu\nu}$, while the mixed entries have vanishing real part. The natural real basis of each subspace is a subset of the algebra's real basis, so each restriction is the corresponding principal submatrix. On the centre the basis is $\{e_t,ie_t\}$, giving $\operatorname{diag}(1,1)$; on the vector subspace it is $\{\vec e_k,i\vec e_k\}$, where the signs are all $-1$; and on each four-dimensional subspace the basis selects one direction of each complex coordinate, giving the sign string $\varepsilon$ in a different order.
 
-**Remark (the four real forms carry the Lorentzian form).** On each of the four four-dimensional real subspaces the restriction is a Lorentzian form of signature $(1,3)$: it is the Krein form of Minkowski space, with one timelike and three spacelike directions. The four selections of the timelike direction are the four real subspaces: the real scalar direction $e_0$ on $\mathbb{H}_{\mathbb{B}}$, the imaginary scalar direction $ie_0$ on $i\mathbb{H}_{\mathbb{B}}$, the real scalar direction again on $\mathbb{M}_+$, and the imaginary scalar direction again on $\mathbb{M}_-$.
+**Remark (the four real forms carry the Lorentzian form).** On each of the four four-dimensional real subspaces the restriction is a Lorentzian form of signature $(1,3)$: it is the Krein form of Minkowski space, with one timelike and three spacelike directions. The four selections of the timelike direction are the four real subspaces: the real scalar direction $e_t$ on $\mathbb{H}_{\mathbb{B}}$, the imaginary scalar direction $ie_t$ on $i\mathbb{H}_{\mathbb{B}}$, the real scalar direction again on $\mathbb{M}_+$, and the imaginary scalar direction again on $\mathbb{M}_-$.
 
 ## The Definite Rows and the Fundamental Decomposition
 
@@ -45,10 +45,10 @@ Each of the four indefinite rows carries a **real light cone**, of real dimensio
 
 | Subspace | Null cone | Real dimension |
 |---|---|---|
-| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $q_0^{2}=q_1^{2}+q_2^{2}+q_3^{2}$ | $3$ |
-| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $(q'_0)^{2}=(q'_1)^{2}+(q'_2)^{2}+(q'_3)^{2}$ | $3$ |
-| Hermitian $\mathbb{M}_+$ | $q_0^{2}=(q'_1)^{2}+(q'_2)^{2}+(q'_3)^{2}$ | $3$ |
-| Anti-Hermitian $\mathbb{M}_-$ | $(q'_0)^{2}=q_1^{2}+q_2^{2}+q_3^{2}$ | $3$ |
+| Quaternion $\mathbb{H}_{\mathbb{B}}$ | $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
+| Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $(q'_t)^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
+| Hermitian $\mathbb{M}_+$ | $q_t^{2}=(q'_x)^{2}+(q'_y)^{2}+(q'_z)^{2}$ | $3$ |
+| Anti-Hermitian $\mathbb{M}_-$ | $(q'_t)^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ | $3$ |
 
 **Remark (the isotropic lines of a row).** On each indefinite row the null cone is a quadratic cone of real dimension $3$, whose isotropic real lines are parametrised by the real unit directions; the maximal dimension of a totally isotropic subspace is $1$ on each row, since the signature is $(1,3)$ and the Witt index of a Lorentzian form is $1$. On the two definite rows there is no isotropic element, and on the centre and the vector subspace the form is definite, so the origin is the only isotropic point. The isotropic structure of the form on the whole algebra, where the Witt index over $\mathbb{R}$ is $2$, is *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
 
@@ -58,14 +58,14 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 | Subspace | Coincidence |
 |---|---|
-| Centre $\mathbb{C}_{\mathbb{B}}$ | equals the general plain sesquilinear form, $\lvert Q_0\rvert^{2}$ |
+| Centre $\mathbb{C}_{\mathbb{B}}$ | equals the general plain sesquilinear form, $\lvert Q_t\rvert^{2}$ |
 | Vector $\mathrm{Vect}(\mathbb{B})$ | equals the negative of the general plain sesquilinear form |
 | Quaternion $\mathbb{H}_{\mathbb{B}}$ | equals the general plain bilinear form |
 | Anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | equals the general plain bilinear form |
 | Hermitian $\mathbb{M}_+$ | equals the general quaternionic bilinear form |
 | Anti-Hermitian $\mathbb{M}_-$ | equals the negative of the general quaternionic bilinear form |
 
-**Proof.** On the centre the sign $\varepsilon_0=1$ leaves $\lvert Q_0\rvert^{2}$, which is the general plain sesquilinear restriction; on the vector subspace the three signs $\varepsilon_k=-1$ give $-\sum_k\lvert Q_k\rvert^{2}$, the negative of the general plain sesquilinear restriction. On $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\lvert Q_\mu\rvert^{2}=Q_\mu^{2}$ and the form reads $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, which is the general plain bilinear restriction; on $i\mathbb{H}_{\mathbb{B}}$ the coefficients are $iq'_\mu$, so $\lvert Q_\mu\rvert^{2}=(q'_\mu)^{2}$ and the form reads $\sum_\mu\varepsilon_\mu(q'_\mu)^{2}$, again the general plain bilinear restriction, the two signs of $i^{2}$ cancelling. On $\mathbb{M}_+$ the scalar coefficient is real and the vector coefficients are $ip_k$, so the form reads $q_0^{2}-\sum_kp_k^{2}$, which is the general quaternionic bilinear restriction $\sum_\mu Q_\mu^{2}=q_0^{2}+\sum_k(ip_k)^{2}$; on $\mathbb{M}_-$ the scalar coefficient is $ib_0$ and the vector coefficients are real, so the form reads $b_0^{2}-\sum_kq_k^{2}$ while the general quaternionic bilinear restriction reads $-b_0^{2}+\sum_kq_k^{2}$, the negative.
+**Proof.** On the centre the sign $\varepsilon_t=1$ leaves $\lvert Q_t\rvert^{2}$, which is the general plain sesquilinear restriction; on the vector subspace the three signs $\varepsilon_k=-1$ give $-\sum_k\lvert Q_k\rvert^{2}$, the negative of the general plain sesquilinear restriction. On $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\lvert Q_\mu\rvert^{2}=Q_\mu^{2}$ and the form reads $\sum_\mu\varepsilon_\mu Q_\mu^{2}$, which is the general plain bilinear restriction; on $i\mathbb{H}_{\mathbb{B}}$ the coefficients are $iq'_\mu$, so $\lvert Q_\mu\rvert^{2}=(q'_\mu)^{2}$ and the form reads $\sum_\mu\varepsilon_\mu(q'_\mu)^{2}$, again the general plain bilinear restriction, the two signs of $i^{2}$ cancelling. On $\mathbb{M}_+$ the scalar coefficient is real and the vector coefficients are $ip_k$, so the form reads $q_t^{2}-\sum_kp_k^{2}$, which is the general quaternionic bilinear restriction $\sum_\mu Q_\mu^{2}=q_t^{2}+\sum_k(ip_k)^{2}$; on $\mathbb{M}_-$ the scalar coefficient is $ib_t$ and the vector coefficients are real, so the form reads $b_t^{2}-\sum_kq_k^{2}$ while the general quaternionic bilinear restriction reads $-b_t^{2}+\sum_kq_k^{2}$, the negative.
 
 **Remark (the coincidence is not an identity).** The coincidences are accidental to the subspace and do not extend to the algebra: the four forms are pairwise distinct there, of signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$. The comparison of the four on the same remarkable subspaces is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*.
 
@@ -84,25 +84,25 @@ On the remarkable subspaces the general quaternionic sesquilinear form coincides
 
 **Proof.** A real-linear automorphism of a non-degenerate real symmetric form of signature $(n,m)$ is an element of $O(n,m)$, of real dimension $n(n-1)/2$ with $n=p+q$, giving $1$, $15$ and $6$; the two definite rows give $O(2)$ and $O(6)\cong O(0,6)$, and the four Lorentzian rows give $O(1,3)$ four times.
 
-**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $U(1,3)$ of real dimension $16$, of *The Krein Gram Matrix and the Restrictions of the Form*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
+**Remark (the ambient Krein group).** The complex-linear automorphism group of the form on the algebra is the indefinite unitary group $\mathrm{U}(1,3)$ of real dimension $16$, of *The Krein Gram Matrix and the Restrictions of the Form*; the real-linear automorphism group of the realified form is the larger $O(2,6)$. The groups of the table are the largest groups preserving the restriction of the form to a subspace, and they are not induced by the ambient group: an automorphism of the ambient form need not preserve a given subspace.
 
 ## Worked Examples
 
-**A positive central element.** For $\tilde Q=e_0$ the value is $\varepsilon_0|1|^{2}=1$, and for $\tilde Q=e_0+ie_0$ it is $1+1=2$, in agreement with the positive definiteness of the centre and its signature $(2,0)$.
+**A positive central element.** For $\tilde Q=e_t$ the value is $\varepsilon_t|1|^{2}=1$, and for $\tilde Q=e_t+ie_t$ it is $1+1=2$, in agreement with the positive definiteness of the centre and its signature $(2,0)$.
 
-**A negative vector element.** For $\tilde Q=e_1$ the value is $\varepsilon_1|1|^{2}=-1$, and for $\tilde Q=e_1+ie_1$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
+**A negative vector element.** For $\tilde Q=\vec e_x$ the value is $\varepsilon_x|1|^{2}=-1$, and for $\tilde Q=\vec e_x+i\vec e_x$ it is $-1-1=-2$; the vector subspace is negative definite, and it realises the negative index $6$ of the form.
 
-**The null element of the quaternion row.** For $\tilde Q=e_0+e_1$ the value is $1-1=0$, and the element lies on the light cone $q_0^{2}=q_1^{2}+q_2^{2}+q_3^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
+**The null element of the quaternion row.** For $\tilde Q=e_t+\vec e_x$ the value is $1-1=0$, and the element lies on the light cone $q_t^{2}=q_x^{2}+q_y^{2}+q_z^{2}$ of the quaternion subspace; it is a zero divisor of the algebra, and the Peirce lines it carries are those of *The Isotropic Structure of the General Quaternionic Sesqualgebra*.
 
-**The null element of the anti-quaternion row.** For $\tilde Q=ie_0+ie_1$ the value is $1-1=0$, on the cone $(q'_0)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
+**The null element of the anti-quaternion row.** For $\tilde Q=ie_t+i\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_k(q'_k)^{2}$ of the anti-quaternion subspace; the sign of the scalar coefficient is the one the row prescribes.
 
-**The null element of the Hermitian row.** For $\tilde Q=e_0+ie_1$ the value is $1-1=0$, on the cone $q_0^{2}=\sum_k(q'_k)^{2}$ of $\mathbb{M}_+$; the same element is null for the general quaternionic bilinear form, with which the form coincides on this row.
+**The null element of the Hermitian row.** For $\tilde Q=e_t+i\vec e_x$ the value is $1-1=0$, on the cone $q_t^{2}=\sum_k(q'_k)^{2}$ of $\mathbb{M}_+$; the same element is null for the general quaternionic bilinear form, with which the form coincides on this row.
 
-**The null element of the anti-Hermitian row.** For $\tilde Q=ie_0+e_1$ the value is $1-1=0$, on the cone $(q'_0)^{2}=\sum_kq_k^{2}$ of $\mathbb{M}_-$.
+**The null element of the anti-Hermitian row.** For $\tilde Q=ie_t+\vec e_x$ the value is $1-1=0$, on the cone $(q'_t)^{2}=\sum_kq_k^{2}$ of $\mathbb{M}_-$.
 
-**A maximal totally isotropic real plane.** On the quaternion subspace the span $\mathbb{R}\{e_0+e_1,\ i(e_0+e_1)\}$ is a totally isotropic real plane, of the maximal dimension $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$ that the Witt index of the form allows; the complex line $\mathbb{C}(e_0+e_1)$ is one of its isotropic lines.
+**A maximal totally isotropic real line.** On the quaternion subspace the real line $\mathbb{R}\{e_t+\vec e_x\}$ is a maximal totally isotropic real subspace, of the maximal dimension $1$ that the Witt index of the restriction allows; in the ambient complex space the complex line $\mathbb{C}(e_t+\vec e_x)$ is totally isotropic, and it meets the quaternion subspace in that real line.
 
-**The centre is not isotropic.** For a central element $Ae_0$ with $A=q_0+iq'_0$ the value is $\lvert A\rvert^{2}=q_0^{2}+(q'_0)^{2}$, which vanishes only at $A=0$: the centre is the positive definite half of the fundamental decomposition, and its only isotropic point is the origin.
+**The centre is not isotropic.** For a central element $Ae_t$ with $A=q_t+iq'_t$ the value is $\lvert A\rvert^{2}=q_t^{2}+(q'_t)^{2}$, which vanishes only at $A=0$: the centre is the positive definite half of the fundamental decomposition, and its only isotropic point is the origin.
 
 ## Summary
 
@@ -116,9 +116,9 @@ On the remarkable real subspaces the general quaternionic sesquilinear form carr
 | $(2,0),(0,6),(1,3)$ | the signatures of the restrictions |
 | $\operatorname{diag}(1,1)$, $-\mathrm{I}_6$, $\mathrm{E}$ | the restriction matrices on the centre, the vector subspace and the four four-dimensional subspaces |
 | $\mathbb{C}_{\mathbb{B}}\perp^{+}\mathrm{Vect}(\mathbb{B})$ | the fundamental decomposition $(2,0)+(0,6)$ |
-| $q_0^{2}=\sum_kq_k^{2}$, etc. | the four light cones, of real dimension $3$ |
+| $q_t^{2}=\sum_kq_k^{2}$, etc. | the four light cones, of real dimension $3$ |
 | $O(2),O(6),O(1,3)$ | the automorphism groups of the restrictions |
-| $U(1,3)$ | the complex-linear automorphism group of the form on the algebra |
+| $\mathrm{U}(1,3)$ | the complex-linear automorphism group of the form on the algebra |
 
 ## Further Reading
 

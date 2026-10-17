@@ -60,7 +60,7 @@ the metric contraction of the form factor with $\xi$; it is a surjection for $\x
 
 **Given.** The Clifford contraction $c : T^*M\otimes\mathcal{S}\to\mathcal{S}$, $c(\xi\otimes\sigma)=\xi^{\sharp}\cdot\sigma$, with adjoint $c^* : \mathcal{S}\to T^*M\otimes\mathcal{S}$, $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$, and the orthogonality of the two first-order operators built from the connection: $D=c\circ\nabla^{\mathcal{S}}$ and $\mathcal{T}=\pi\circ\nabla^{\mathcal{S}}$ with $\pi=\operatorname{id}-\frac1n c^*c$, as in *The Clifford Multiplication Operator* and *The Twistor Operator*.
 
-**Proposition (the flat model).** For the flat connection on $\mathbb{R}^n$, with $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ and $\delta\alpha=-\sum_i(\partial_{e_i}\alpha)(e_i)$, one has
+**Proposition (the flat model).** For the flat connection on $\mathbb{R}^n$, with $c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ and $\delta\alpha=-\sum_i(\partial/\partial e_i\,\alpha)(e_i)$, one has
 
 $$
 (\delta\circ c^*)\sigma = D\sigma ,
@@ -69,7 +69,7 @@ $$
 
 since in the flat case the derivative of the frame vanishes.
 
-**Proof.** With $\alpha=c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ the components of $\alpha$ are constant in the frame and $\delta c^*\sigma = -\sum_i\partial_{e_i}(-e_i\cdot\sigma) = \sum_i e_i\cdot\partial_{e_i}\sigma = D\sigma$, using $e_i\cdot e_i=-1$ in the Riemannian convention and the constancy of the frame. The adjoint of a composition is the composition of the adjoints in reverse order, $D^*=(\nabla^{\mathcal{S}})^*c^*=\delta c^*$, and the display gives $D^*=D$.
+**Proof.** With $\alpha=c^*\sigma=-\sum_i\theta^i\otimes(e_i\cdot\sigma)$ the components of $\alpha$ are constant in the frame and $\delta c^*\sigma = -\sum_i\partial/\partial e_i\,(-e_i\cdot\sigma) = \sum_i e_i\cdot\partial/\partial e_i\,\sigma = D\sigma$, using $e_i\cdot e_i=-1$ in the Riemannian convention and the constancy of the frame. The adjoint of a composition is the composition of the adjoints in reverse order, $D^*=(\nabla^{\mathcal{S}})^*c^*=\delta c^*$, and the display gives $D^*=D$.
 
 **Theorem (the curved case, quoted).** On a closed spin manifold with the spin connection and the fibre form $h$, the Cauchy–Riemann operator is formally self-adjoint,
 

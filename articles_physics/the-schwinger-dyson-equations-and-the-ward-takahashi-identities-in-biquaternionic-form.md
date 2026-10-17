@@ -17,11 +17,11 @@ The contribution is an interpretation, and it is small.
 
 The article proceeds as follows. A section fixes the total-derivative argument on which both relations rest. Two sections derive the Schwinger–Dyson equations — the quantum equation of motion and the master equation — and specialise them to the scalar field, the gauge field, and the fermion. A section derives the Ward–Takahashi identities in general form, and two sections treat the central phase, which is the framework's canonical case, and the axial identity with its anomaly. A section separates what the algebra supplies from what it imports, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central imaginary $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\flat=-{}^{*}$ the anti-Hermitian conjugation. The real bilinear form is
+**Conventions.** We use those of the companion articles, in particular *The Functional Integral in Biquaternionic Form* and *The Generating Functional and the Effective Action in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and central imaginary $i$. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$ and $\flat=-{}^{*}$ the anti-Hermitian conjugation. The real bilinear form is
 $$
 \langle \tilde Q,\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde Q^{*}\tilde Y\big),
 $$
-positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_0)=2$. The material coordinate is $\tilde Q=ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the quadratic operator is $\tilde K=\Box-m^2$. The functional integral with source is
+positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_t)=2$. The material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$; the quadratic operator is $\tilde K=\Box-m^2$. The functional integral with source is
 $$
 Z[\tilde J]=\int\mathcal{D}\tilde\Phi\;\exp(\,iS[\tilde\Phi]/\hbar+\langle\tilde J,\tilde\Phi\rangle),
 $$
@@ -100,7 +100,7 @@ $$
 K=\begin{pmatrix}2&0.3&0\\0.3&1.4&0.2\\0&0.2&1.1\end{pmatrix},
 \qquad J=(0.5,-0.4,0.9),
 $$
-for which $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{-1}J)=J$ to machine precision; the two-point contact term $\tilde K\langle\tilde\Phi\tilde\Phi^{\mathsf T}\rangle_{\!J}=\tilde I+\tilde J\langle\tilde\Phi\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $\tilde K^{-1}$ and not its negative.
+for which $K^{-1}J=(0.322647,-0.484316,0.906239)$ and $K\,(K^{-1}J)=J$ to machine precision; the two-point contact term $\tilde K\langle\tilde\Phi\tilde\Phi^{\mathsf T}\rangle_{\!J}=I+\tilde J\langle\tilde\Phi\rangle^{\mathsf T}_{\!J}$ was checked on the same matrix and closed with the same accuracy. The sign recorded in the box is the one that makes the $J$-expansion reproduce the free propagator $\tilde K^{-1}$ and not its negative.
 
 ## The Equations in the Framework's Theories
 
@@ -124,7 +124,7 @@ equivalently, since $\tilde K$ is central and the expectation is linear,
 $$
 \big(\Box-m^2\big)\,\big\langle\tilde\Phi\big\rangle=-\tfrac12\Big\langle\frac{\delta S_{\mathrm{int}}}{\delta\tilde\Phi}\Big\rangle .
 $$
-The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde k)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde k)=\tilde k\tilde k^{\natural}+m^2$ and $\tilde k=iE e_0+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
+The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde k)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde k)=\tilde k\tilde k^{\natural}+m^2$ and $\tilde k=iE e_t+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
 
 ### The Gauge Field and the Fermion
 
@@ -146,7 +146,7 @@ of *The Dirac Equation in Biquaternionic Form*. The variation of the fermionic a
 
 Let $Q$ be a derivation generating a one-parameter group of transformations of the field, $\delta\tilde\Phi=Q\tilde\Phi$, and suppose that the action is invariant in the local sense that
 $$
-Q S=\int d^4x\;\partial_\mu j^\mu(x)
+Q S=\int d^4x\;\langle\tilde\nabla,\tilde j\rangle_{\natural}(x)
 $$
 for some current $j^\mu$ — that is, $QS$ is a total divergence, so that the transformation is a symmetry of the bulk action up to a boundary term. Take $F$ in the working identity and replace the generic variation by the symmetry variation $Q$:
 $$
@@ -155,15 +155,15 @@ $$
 $$
 where the second equality uses the **invariance of the measure**, $\int\mathcal{D}\tilde\Phi\,Q(\;\cdot\;)=0$ — the assumption that the measure, and not only the action, is invariant. Then
 $$
-\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4x\,\partial_\mu j^\mu\Big\rangle=0 .
+\big\langle QF\big\rangle+\frac{i}{\hbar}\Big\langle F\int d^4x\,\langle\tilde\nabla,\tilde j\rangle_{\natural}\Big\rangle=0 .
 $$
 For $F=1$ this is the statement that the current is conserved inside the vacuum:
 $$
-\Big\langle\partial_\mu j^\mu(x)\Big\rangle=0 .
+\Big\langle\,\langle\tilde\nabla,\tilde j\rangle_{\natural}(x)\Big\rangle=0 .
 $$
 For $F$ a product of fields the identity relates the divergence of the current to the variation of the product, and when $Q$ is a local generator, $Q=\int d^4x\,q(x)$, the identity holds locally as
 $$
-\partial_\mu\big\langle j^\mu(x)\,F\big\rangle
+\partial/\partial Q_\mu\,\big\langle j^\mu(x)\,F\big\rangle
 =-\big\langle q(x)F\big\rangle+\text{contact terms},
 $$
 the **Ward–Takahashi identity**. The contact terms are the variation of the inserted fields, exactly as in the Schwinger–Dyson case, and they are distributional at coincident points.
@@ -184,22 +184,22 @@ $$
 $$
 with the Noether identity $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=i\,\mathrm{Sc}[\tilde\Phi^{*}(\Box\tilde\Phi)-(\Box\tilde\Phi^{*})\tilde\Phi]$, zero on shell. The Ward–Takahashi identity of the central phase is the quantum interpretation of that identity:
 $$
-\partial_\mu\big\langle J^\mu(x)\,F\big\rangle
+\partial/\partial Q_\mu\,\big\langle J^\mu(x)\,F\big\rangle
 =i\big\langle\tilde\Phi(x)F\big\rangle+\text{contact terms},
 $$
 the current divergence given by the variation of the inserted fields. The algebra supplies three things here and no more: the symmetry, because the centre is $\mathbb{C}$ and its unit circle is a continuous group; the current's address, in the material sector $\mathbb{M}_-$; and the compactness of the identity, because the divergence is the scalar part of $\tilde\nabla^{\natural}\tilde J$. What it does not supply is the invariance of the measure over $\mathbb{B}$-valued fields, which is the premise of the identity and is transcribed.
 
-**The abelian Ward identity.** In the gauge theory the central phase is the $U(1)$ of the abelian connection $\tilde A=ict\cdots$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{M}_-$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
+**The abelian Ward identity.** In the gauge theory the central phase is the $\mathrm{U}(1)$ of the abelian connection $\tilde A=ict\cdots$ of *Maxwell's Equations in the Biquaternionic Formulation* and *Canonical Quantization of the Biquaternion Maxwell Field*. The Ward identity of that symmetry is the statement that the longitudinal part of the photon's vacuum polarisation vanishes and that the vertex renormalisation equals the wave-function renormalisation, $Z_1=Z_2$; in the framework these are standard results of the abelian theory, transcribed, and their content is the conservation of the current that the algebra locates in $\mathbb{M}_-$. The non-abelian generalisation replaces the single identity by one per external leg and by the Slavnov–Taylor family, below.
 
 ### The Axial Identity and the Anomaly
 
 The second symmetry of the free massless Dirac field is the **axial** or chirality rotation, $\tilde\Psi\mapsto \exp(i\alpha\gamma_5)\tilde\Psi$, generated by the chirality operator, whose conservation the mass breaks. The classical identity is
 $$
-\partial_\mu j_5^\mu=2im\,\tilde\Psi^{\natural}\gamma_5\tilde\Psi ,
+\partial/\partial Q_\mu j_5^\mu=2im\,\tilde\Psi^{\natural}\gamma_5\tilde\Psi ,
 $$
 holding for the linear, chirality-off-diagonal mass term of the series conventions, and it is recorded in *Noether's Theorem in Biquaternionic Form* as the divergence that the mass generates between the two central ideals of $\mathbb{B}$. The **quantum** identity is the Ward–Takahashi identity of the same rotation, and its right-hand side acquires the **anomaly**,
 $$
-\partial_\mu\big\langle j_5^\mu\big\rangle=2im\big\langle\tilde\Psi^{\natural}\gamma_5\tilde\Psi\big\rangle+\frac{g^2}{16\pi^2}\big\langle F\tilde F\big\rangle ,
+\partial/\partial Q_\mu\,\big\langle j_5^\mu\big\rangle=2im\big\langle\tilde\Psi^{\natural}\gamma_5\tilde\Psi\big\rangle+\frac{g^2}{16\pi^2}\big\langle F\tilde F\big\rangle ,
 $$
 the second term being the topological density. In the quantum theory the axial current is **not** conserved even at $m=0$, because the measure of the fermionic functional integral is not invariant under the chirality rotation — precisely the failure of the measure premise. The biquaternion interpretation is the one of *Anomalies and Anomaly Cancellation in Biquaternionic Form* and *The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form*: the anomaly is the non-invariance of the fermionic measure, computed from the Jacobian of the rotation on the module, and the algebra's part is the module's chirality structure and the trace that defines the Jacobian. The algebra does not produce the anomaly's coefficient; it locates the object whose Jacobian carries it.
 
@@ -235,7 +235,7 @@ The Schwinger–Dyson equations and the Ward–Takahashi identities descend from
 $$
 \Big\langle\frac{\delta F}{\delta\tilde\Phi(x)}\Big\rangle_{\!J}+\frac{i}{\hbar}\Big\langle F\,\frac{\delta S}{\delta\tilde\Phi(x)}\Big\rangle_{\!J}+\big\langle F\,\tilde J(x)\big\rangle_{\!J}=0,
 $$
-which at $F=1$ gives the quantum equation of motion $\langle\delta S/\delta\tilde\Phi(x)\rangle=0$, at generic $F$ the contact-term hierarchy, and at the symmetry variation gives the Ward–Takahashi identity $\partial_\mu\langle j^\mu F\rangle=-\langle qF\rangle+\text{contact terms}$. The generating form is the **master Schwinger–Dyson equation**
+which at $F=1$ gives the quantum equation of motion $\langle\delta S/\delta\tilde\Phi(x)\rangle=0$, at generic $F$ the contact-term hierarchy, and at the symmetry variation gives the Ward–Takahashi identity $\partial/\partial Q_\mu\,\langle j^\mu F\rangle=-\langle qF\rangle+\text{contact terms}$. The generating form is the **master Schwinger–Dyson equation**
 $$
 \Big(\frac{\delta S}{\delta\tilde\Phi}\Big)\Big[\frac{\delta}{\delta\tilde J}\Big]Z[\tilde J]=i\hbar\,\tilde J(x)\,Z[\tilde J],
 $$
@@ -248,13 +248,13 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\flat=-{}^{*}$ | Anti-Hermitian conjugation |
 | $\langle\tilde Q,\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde Q^{*}\tilde Y)$ | Real bilinear form; source pairing |
-| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_0)=2$ | Trace formula |
-| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
+| $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, $\mathrm{Tr}(e_t)=2$ | Trace formula |
+| $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ | d'Alembertian, series convention |
 | $\tilde K=\Box-m^2$ | Quadratic operator |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,\exp(\,iS/\hbar+\langle\tilde J,\tilde\Phi\rangle)$ | Functional integral with module-valued source |
 | $\delta F/\delta\tilde\Phi$ | Module gradient, defined through the pairing |
@@ -262,8 +262,8 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $\big(\delta S/\delta\tilde\Phi\big)[\delta/\delta\tilde J]Z=i\hbar\tilde JZ$ | Master Schwinger–Dyson equation |
 | $Q$, $Q\tilde\Phi=i\tilde\Phi$ | Symmetry generator; central phase generator |
 | $j^\mu$, $\tilde J=J^\nu e_\nu\in\mathbb{M}_-$ | Noether current of the central phase |
-| $\partial_\mu\langle j^\mu F\rangle=-\langle qF\rangle+\text{contact terms}$ | Ward–Takahashi identity |
-| $\partial_\mu j_5^\mu=2im\,\tilde\Psi^{\natural}\gamma_5\tilde\Psi$ | Classical axial divergence |
+| $\partial/\partial Q_\mu\,\langle j^\mu F\rangle=-\langle qF\rangle+\text{contact terms}$ | Ward–Takahashi identity |
+| $\partial/\partial Q_\mu j_5^\mu=2im\,\tilde\Psi^{\natural}\gamma_5\tilde\Psi$ | Classical axial divergence |
 | $g^2\langle F\tilde F\rangle/16\pi^2$ | Axial anomaly (topological density) |
 | $s$, $s^2=0$ | BRST derivation and nilpotency; source of the Slavnov–Taylor identities |
 | $\mathcal{D}\tilde\Phi$ | Functional measure; its invariance is the premise |

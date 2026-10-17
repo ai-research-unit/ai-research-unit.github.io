@@ -23,25 +23,25 @@ The **geodesic distance** is $d_{\mathrm{FS}}(\tilde{P},\tilde{Q}) = \arccos\lve
 
 The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the trace pairing; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the projector displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational interpretation of the same geometry, which belongs to the informational articles, and the spin-specific interpretations, which belong to the spin articles.
 
-**Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
+**Conventions.** The notation is inherited unchanged from the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_\mu^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian and anti-Hermitian subspaces are
 $$
-\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\},
+\mathbb{M}_+=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 \qquad
-\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\},
+\mathbb{M}_-=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
-with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_0)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_0+i\vec h$,
+with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, with $\mathrm{Tr}(e_t)=2$, and the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, so that on $\mathbb{M}_+$, with $\tilde{H}=h_0e_t+i\vec h$,
 $$
-\langle\tilde{H}\rangle_{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_0 .
+\langle\tilde{H}\rangle_{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_t .
 $$
-A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\vec{u})=\tfrac12(e_0\pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, with matrix units $x=\tfrac12(ie_1-e_2)$, $y=\tfrac12(ie_1+e_2)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
+A state is $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; a pure state is the idempotent $\tilde\Pi_{1,2}(\vec{u})=\tfrac12(e_t\pm i\vec{u})$ with $\vec{u}$ a unit pure real quaternion. The state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, with matrix units $x=\tfrac12(i\vec e_x-\vec e_y)$, $y=\tfrac12(i\vec e_x+\vec e_y)$ and basis $\{\tilde\Pi_+,y\}$. The unit quaternions act on the Bloch sphere by rotations.
 
 ## The State Space and Its Two Forms
 
-An element of the Hermitian subspace is $\tilde{H}=h_0e_0+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, and the state space is the trace-one slice of the future cone,
+An element of the Hermitian subspace is $\tilde{H}=h_0e_t+i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$, and the state space is the trace-one slice of the future cone,
 $$
 \{\text{states}\}=\left\{\tilde{\rho}\in\mathbb{M}_+:\ \mathrm{Tr}(\tilde{\rho})=1,\ \langle\tilde{\rho}\rangle_{\natural}\geq0\right\},
 \qquad
-\tilde{\rho}=\tfrac12(e_0+i\vec r),\quad |\vec r|\leq1 .
+\tilde{\rho}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 .
 $$
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
@@ -50,40 +50,40 @@ Two symmetric forms live on the same four-dimensional real space, and the whole 
 $$
 \mathrm{Tr}(\tilde{H}\tilde{K})=2\bigl(h_0k_0+\vec h\cdot\vec k\bigr)
 $$
-is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mathbb{R}^4$ up to the normalization $\mathrm{Tr}(e_0)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
+is positive definite, of signature $(4,0)$; it is the Euclidean pairing on $\mathbb{R}^4$ up to the normalization $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
 **The biquaternion norm and its polarization.**
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_0,
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=\tilde{H}\tilde{H}^{\natural}=\bigl(h_0^2-|\vec h|^2\bigr)e_t,
 \qquad
-\langle\tilde{H},\tilde{K}\rangle=\tfrac12\bigl(\tilde{H}\tilde{K}^{\natural}+\tilde{K}\tilde{H}^{\natural}\bigr)=\bigl(h_0k_0-\vec h\cdot\vec k\bigr)e_0,
+\langle\tilde{H},\tilde{K}\rangle=\tfrac12\bigl(\tilde{H}\tilde{K}^{\natural}+\tilde{K}\tilde{H}^{\natural}\bigr)=\bigl(h_0k_0-\vec h\cdot\vec k\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
 The two forms are the two ingredients of the geometry. The trace pairing is positive definite and therefore measures *overlap*; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure *length* on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.
 
-The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_0=\det M(\tilde{Q})\,e_0$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(M(\tilde{H})M(\tilde{K}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
+The reader should also keep in mind what these forms are *not*. Neither is the algebra's product; the biquaternion norm is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}\,e_t=\det M(\tilde{Q})\,e_t$, and the trace pairing is the matrix trace, $\mathrm{Tr}(\tilde{H}\tilde{K})=\mathrm{Tr}(M(\tilde{H})M(\tilde{K}))$. The geometry below is therefore a statement about the matrix model of the algebra, read through the two canonical matrix functionals.
 
 ## Pure States and the Projective Line
 
 The boundary of the ball is the sphere $|\vec r|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
 $$
-\langle\tilde{\rho}\rangle_{\natural}=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_0=0 ,
+\langle\tilde{\rho}\rangle_{\natural}=0,\qquad \tilde{\rho}^2-\tilde{\rho}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
 $$
 so a boundary state is an idempotent of trace one and, in the matrix model, a rank-one projection. Writing it as
 $$
-\tilde\Pi(\vec{u})=\tfrac12\bigl(e_0+i\vec{u}\bigr),\qquad |\vec{u}|=1 ,
+\tilde\Pi(\vec{u})=\tfrac12\bigl(e_t+i\vec{u}\bigr),\qquad |\vec{u}|=1 ,
 $$
-the map $\vec{u}\mapsto\tilde\Pi(\vec{u})$ is a bijection from the unit sphere $S^2=\{\vec{u}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\vec{u})$ and $\tilde\Pi(-\vec{u})=e_0-\tilde\Pi(\vec{u})$ are complementary orthogonal projections.
+the map $\vec{u}\mapsto\tilde\Pi(\vec{u})$ is a bijection from the unit sphere $S^2=\{\vec{u}\in\mathbb{R}^3\}$ to the pure states, and $\tilde\Pi(\vec{u})$ and $\tilde\Pi(-\vec{u})=e_t-\tilde\Pi(\vec{u})$ are complementary orthogonal projections.
 
 The pure states have a second, independent parametrization, and the agreement of the two is what makes the projective geometry available. The **state module** is the minimal left ideal
 $$
 \mathbb{B}\tilde\Pi_+=\{\psi_1\,\tilde\Pi_++\psi_2\,y:\ \psi_1,\psi_2\in\mathbb{C}\}\cong\mathbb{C}^2,
 \qquad
-\tilde\Pi_+=\tfrac12(e_0+ie_3),
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),
 $$
 
-Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 and its rays $[\psi]=\mathbb{C}\psi$ constitute the projective line $\mathbb{P}^1(\mathbb{C})$. To a nonzero spinor $\psi$ attach the rank-one element
 $$
 \tilde\Pi_\psi=\frac{\psi\,\psi^\dagger}{\mathrm{Tr}(\psi^\dagger\psi)} .
@@ -96,7 +96,7 @@ is the standard identification of the projective line with the Bloch sphere. The
 $$
 |\psi(\theta,\varphi)\rangle=\cos\tfrac{\theta}{2}\,|0\rangle+\exp(i\varphi)\sin\tfrac{\theta}{2}\,|1\rangle ,
 $$
-and the physical equivalence of $\psi$ and $\exp(i\alpha)\psi$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $U(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
+and the physical equivalence of $\psi$ and $\exp(i\alpha)\psi$ is the statement that the phase direction is the fiber of the Hopf map $S^3\to S^2$. The **central scalar imaginary** $i$ supplies that phase: it is central, so left multiplication by $i$ commutes with the left action of $\mathbb{B}$ on the module and gives the module its complex structure. The phase $\mathrm{U}(1)$ is a central subgroup, and the quotient by it is the passage from spinors to rays.
 
 Two remarks fix the roles. First, the complex structure used here lives on the **state module** $\mathbb{B}\tilde\Pi_+$, not on $\mathbb{M}_+$: multiplication by $i$ exchanges the sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so it is not an operator on the state space. The projective structure is that of the module, and it descends to the boundary of the ball. Second, the pure states are the extreme points of the ball, so the boundary is not merely a convenient subset: it is the set on which the geometry is specified by the algebra's *quadratic* form rather than by the trace.
 
@@ -105,8 +105,8 @@ Two remarks fix the roles. First, the complex structure used here lives on the *
 The trace pairing gives the overlap of two pure states. From the idempotent form and the quaternion product of pure real quaternions, which reads $\vec{u}_1\vec{u}_2=-\vec{u}_1\cdot\vec{u}_2+\vec{u}_1\times\vec{u}_2$,
 $$
 \tilde\Pi(\vec{u}_1)\tilde\Pi(\vec{u}_2)
-=\tfrac14\bigl(e_0+i\vec{u}_1\bigr)\bigl(e_0+i\vec{u}_2\bigr)
-=\tfrac14\Bigl(\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)e_0+i(\vec{u}_1+\vec{u}_2)-\vec{u}_1\times\vec{u}_2\Bigr).
+=\tfrac14\bigl(e_t+i\vec{u}_1\bigr)\bigl(e_t+i\vec{u}_2\bigr)
+=\tfrac14\Bigl(\bigl(1+\vec{u}_1\cdot\vec{u}_2\bigr)e_t+i(\vec{u}_1+\vec{u}_2)-\vec{u}_1\times\vec{u}_2\Bigr).
 $$
 The trace keeps only the scalar part,
 $$
@@ -136,11 +136,11 @@ The biquaternion norm vanishes on the pure states, so it assigns them a *length*
 
 ### The projector variation
 
-Differentiate the idempotent along the boundary. Since $\tilde\Pi(\vec{u})=\tfrac12(e_0+i\vec{u})$,
+Differentiate the idempotent along the boundary. Since $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$,
 $$
 \delta\tilde{P}=\tfrac12\,i\,\delta\vec{u},\qquad \vec{u}\cdot\delta\vec{u}=0 ,
 $$
-the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_0$:
+the tangency condition being the differentiation of $|\vec{u}|^2=1$. The displacement is Hermitian, $\delta\tilde{P}\in\mathbb{M}_+$, with vanishing scalar part. Compute the biquaternion norm of the displacement, using that $\overline{\delta\vec{u}}=-\delta\vec{u}$ for a pure real quaternion and that $(\delta\vec{u})^2=-|\delta\vec{u}|^2e_t$:
 $$
 \langle\delta\tilde{P}\rangle_{\natural}
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\overline{\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)}
@@ -148,7 +148,7 @@ $$
 =\Bigl(\tfrac12 i\,\delta\vec{u}\Bigr)\Bigl(-\tfrac12 i\,\delta\vec{u}\Bigr)
 =-\tfrac14\,i^2\,(\delta\vec{u})^2
 =\tfrac14\,(\delta\vec{u})^2
-=-\tfrac14\,|\delta\vec{u}|^2\,e_0 .
+=-\tfrac14\,|\delta\vec{u}|^2\,e_t .
 $$
 
 The scalar coefficient is **negative**, so the biquaternion norm is negative on tangential displacements; the metric is the negative of the form on those directions, and the Fubini–Study line element is
@@ -162,7 +162,7 @@ $$
 $$
 The round metric of the unit Bloch sphere is $d\Omega^2=d\theta^2+\sin^2\theta\,d\varphi^2$, so the Fubini–Study metric of the pure states is one quarter of the round metric of the sphere on which the states are drawn. Equivalently, the pure-state manifold is a round sphere of radius $\tfrac12$ with the Fubini–Study normalization, and its total area is $\pi$.
 
-The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde{P}\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_0$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde{P}\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
+The sign convention in $-N$ deserves a word, because the biquaternion norm itself is indefinite and no sign choice can be avoided. On the tangential directions of the boundary the quadratic form is negative, $\langle\delta\tilde{P}\rangle_{\natural}=-\tfrac14|\delta\vec{u}|^2e_t$, as the computation shows; the same displacement written in the $(1,3)$ coordinates of $\mathbb{M}_+$ has negative spatial norm, and the two statements agree. The minus sign in $ds^2_{\mathrm{FS}}=-\langle\delta\tilde{P}\rangle_{\natural}$ converts the algebra's $(1,3)$ normalization to the positive normalization of a length. This is the precise sense in which the biquaternion norm, though indefinite, *does* contain the Fubini–Study metric: the metric is the negative of the form evaluated on the null boundary's tangential directions.
 
 ### The spinor computation
 
@@ -178,17 +178,17 @@ the second term removing the phase direction. With
 $$
 d\psi=\Bigl(-\tfrac12\sin\tfrac{\theta}{2}\,d\theta\Bigr)\tilde\Pi_++\exp(i\varphi)\Bigl(\tfrac12\cos\tfrac{\theta}{2}\,d\theta+i\sin\tfrac{\theta}{2}\,d\varphi\Bigr)y ,
 $$
-from which $\partial_\varphi\psi=i\,\exp(i\varphi)\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $\tilde\Pi_+^2=\tilde\Pi_+$, $y^2=x^2=0$, $xy=\tilde\Pi_+$, $yx=e_0-\tilde\Pi_+$ with $y^{*}=x$, the four first derivatives are
+from which $\partial/\partial\varphi\,\psi=i\,\exp(i\varphi)\sin\tfrac{\theta}{2}\,y$. Using the trace formula $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, the normalization $\mathrm{Tr}(\psi^\dagger\psi)=1$, and the matrix-unit relations $\tilde\Pi_+^2=\tilde\Pi_+$, $y^2=x^2=0$, $xy=\tilde\Pi_+$, $yx=e_t-\tilde\Pi_+$ with $y^{*}=x$, the four first derivatives are
 $$
-\mathrm{Tr}\!\left(\psi^\dagger\partial_\theta\psi\right)=0,
+\mathrm{Tr}\!\left(\psi^\dagger\partial/\partial\theta\,\psi\right)=0,
 \qquad
-\mathrm{Tr}\!\left(\psi^\dagger\partial_\varphi\psi\right)=i\,\sin^2\tfrac{\theta}{2},
+\mathrm{Tr}\!\left(\psi^\dagger\partial/\partial\varphi\,\psi\right)=i\,\sin^2\tfrac{\theta}{2},
 \qquad
-\mathrm{Tr}\!\left(\partial_\theta\psi^\dagger\partial_\theta\psi\right)=\tfrac14,
+\mathrm{Tr}\!\left(\partial/\partial\theta\,\psi^\dagger\partial/\partial\theta\,\psi\right)=\tfrac14,
 \qquad
-\mathrm{Tr}\!\left(\partial_\varphi\psi^\dagger\partial_\varphi\psi\right)=\sin^2\tfrac{\theta}{2},
+\mathrm{Tr}\!\left(\partial/\partial\varphi\,\psi^\dagger\partial/\partial\varphi\,\psi\right)=\sin^2\tfrac{\theta}{2},
 $$
-the only mixed trace being $\mathrm{Tr}(\partial_\theta\psi^\dagger\partial_\varphi\psi)=\tfrac{i}{4}\sin\theta$ and its reverse, which is purely imaginary and cancels in the symmetrization $d\theta\,d\varphi=d\varphi\,d\theta$. Hence
+the only mixed trace being $\mathrm{Tr}(\partial/\partial\theta\,\psi^\dagger\partial/\partial\varphi\,\psi)=\tfrac{i}{4}\sin\theta$ and its reverse, which is purely imaginary and cancels in the symmetrization $d\theta\,d\varphi=d\varphi\,d\theta$. Hence
 $$
 \mathrm{Tr}\!\left(\psi^\dagger d\psi\right)=i\,\sin^2\tfrac{\theta}{2}\,d\varphi,
 \qquad
@@ -207,9 +207,9 @@ which is the result of the projector computation. The two derivations use differ
 
 ### The spinorial factor of four
 
-The factor $\tfrac14$ is not an accident of normalization, and it is worth identifying. The unit spinors form the sphere $S^3$, the rays form $S^2$, and the map between them is the Hopf fibration, whose fibres are the central phase circles $U(1)$. The double cover in the background is that of the rotation group, $SU(2)\cong S^3\to SO(3)$: a rotation of the Bloch vector by $2\pi$ corresponds to the spinor $\psi\mapsto-\psi$, an operation that is trivial on rays. The angle between two rays is **half** the angle between the corresponding Bloch vectors, and squaring that ratio of angles gives the ratio of metrics, $\tfrac14$. The Fubini–Study metric is therefore the metric induced on the ray space by the unit spinor sphere through the Hopf fibration — the Riemannian submersion of $S^3$ onto the sphere of radius $\tfrac12$ — and the group behind it is the same $SU(2)\to SO(3)$ that the companion article *Angular Momentum and Spin in Biquaternionic Form* exhibits as the group of unit real quaternions.
+The factor $\tfrac14$ is not an accident of normalization, and it is worth identifying. The unit spinors form the sphere $S^3$, the rays form $S^2$, and the map between them is the Hopf fibration, whose fibres are the central phase circles $\mathrm{U}(1)$. The double cover in the background is that of the rotation group, $SU(2)\cong S^3\to SO(3)$: a rotation of the Bloch vector by $2\pi$ corresponds to the spinor $\psi\mapsto-\psi$, an operation that is trivial on rays. The angle between two rays is **half** the angle between the corresponding Bloch vectors, and squaring that ratio of angles gives the ratio of metrics, $\tfrac14$. The Fubini–Study metric is therefore the metric induced on the ray space by the unit spinor sphere through the Hopf fibration — the Riemannian submersion of $S^3$ onto the sphere of radius $\tfrac12$ — and the group behind it is the same $SU(2)\to SO(3)$ that the companion article *Angular Momentum and Spin in Biquaternionic Form* exhibits as the group of unit real quaternions.
 
-The factor also shows why the trace normalization matters. The trace of the algebra is fixed to $\mathrm{Tr}(e_0)=2$ by the $2\times2$ matrix representation: $e_0$ is represented by the $2\times2$ unit matrix, whose trace is $2$. The metric above is normalized by that trace. A rescaling of the trace would rescale the metric and the factor $\tfrac14$; the invariant statement, independent of the normalization, is that the Fubini–Study metric is *a fixed multiple* of the round metric of the Bloch sphere, and the multiple is the square of the double-cover ratio. All distances, areas and curvatures below are stated in the normalization $\mathrm{Tr}(e_0)=2$.
+The factor also shows why the trace normalization matters. The trace of the algebra is fixed to $\mathrm{Tr}(e_t)=2$ by the $2\times2$ matrix representation: $e_t$ is represented by the $2\times2$ unit matrix, whose trace is $2$. The metric above is normalized by that trace. A rescaling of the trace would rescale the metric and the factor $\tfrac14$; the invariant statement, independent of the normalization, is that the Fubini–Study metric is *a fixed multiple* of the round metric of the Bloch sphere, and the multiple is the square of the double-cover ratio. All distances, areas and curvatures below are stated in the normalization $\mathrm{Tr}(e_t)=2$.
 
 ## Complex Structure and the Kähler Form
 
@@ -260,11 +260,11 @@ This is the algebraic face of the Kähler form: it is built from the trace pairi
 $$
 ds^2_{\mathrm{FS}}=\frac{|dw|^2}{\bigl(1+|w|^2\bigr)^2},
 \qquad
-g_{w\bar{w}}=\partial_w\partial_{\bar{w}}\,K,
+g_{w\bar{w}}=\partial^2/\partial w\partial\bar w\,K,
 \qquad
 K=\log\bigl(1+|w|^2\bigr),
 $$
-so the Kähler potential is the logarithm of the spinor norm, and the metric is the second derivative of that logarithm. The normalization is the one in which $|dw|^2=dw\,d\bar{w}$ and the line element is $g_{w\bar{w}}\,dw\,d\bar{w}$ with **no** factor of two, so that $g_{w\bar{w}}=1/(1+|w|^2)^2$, equivalently $\partial_w\partial_{\bar{w}}K=\tfrac14\Delta_0K$ with $\Delta_0=4\partial_w\partial_{\bar{w}}$ the flat Laplacian of the coordinate plane; a reader who uses the convention $ds^2=2g_{w\bar{w}}\,dw\,d\bar{w}$ must halve the $g_{w\bar{w}}$ written here, and with the normalization stated the display reproduces $\tfrac14(d\theta^2+\sin^2\theta\,d\varphi^2)$ exactly. The sphere is the projective line, the coordinate $w$ is the ratio of the two spinor components, and the central phase has been quotiented out by the passage to the ratio. The fibration is the Hopf fibration $S^3\to S^2$; its connection is what the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form* integrates to give the Berry phase, and the curvature of that connection is proportional to $\omega$. The present article needs only the symplectic form, but it is worth recording that the two articles are reading the same structure: the Berry phase is the holonomy of the Hopf connection, and the Fubini–Study form is its curvature.
+so the Kähler potential is the logarithm of the spinor norm, and the metric is the second derivative of that logarithm. The normalization is the one in which $|dw|^2=dw\,d\bar{w}$ and the line element is $g_{w\bar{w}}\,dw\,d\bar{w}$ with **no** factor of two, so that $g_{w\bar{w}}=1/(1+|w|^2)^2$, equivalently $\partial^2/\partial w\partial\bar w\,K=\tfrac14\Delta_0K$ with $\Delta_0=4\partial^2/\partial w\partial\bar w$ the flat Laplacian of the coordinate plane; a reader who uses the convention $ds^2=2g_{w\bar{w}}\,dw\,d\bar{w}$ must halve the $g_{w\bar{w}}$ written here, and with the normalization stated the display reproduces $\tfrac14(d\theta^2+\sin^2\theta\,d\varphi^2)$ exactly. The sphere is the projective line, the coordinate $w$ is the ratio of the two spinor components, and the central phase has been quotiented out by the passage to the ratio. The fibration is the Hopf fibration $S^3\to S^2$; its connection is what the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form* integrates to give the Berry phase, and the curvature of that connection is proportional to $\omega$. The present article needs only the symplectic form, but it is worth recording that the two articles are reading the same structure: the Berry phase is the holonomy of the Hopf connection, and the Fubini–Study form is its curvature.
 
 ## Geodesics, Distance, and the Trace Distance
 
@@ -286,7 +286,7 @@ d_{\mathrm{FS}}=\arccos\sqrt{\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)}=\arcsin 
 $$
 The first is the trace pairing, the second the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States*, and the third the Fubini–Study distance. They are not three independent geometries but one: the trace pairing gives the squared cosine, the trace distance gives the sine, and the Fubini–Study distance is the angle. The complementarity identity $D^2+\mathrm{Tr}(\tilde{P}\tilde{Q})=1$ of the exercise article is the Pythagorean identity of the same triangle.
 
-**Uniqueness and invariance.** The unitary group $U(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric **up to scale**. The scale is then fixed by the trace pairing, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-\langle\delta\tilde{P}\rangle_{\natural}$, whose normalization is the trace normalization. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the trace fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.
+**Uniqueness and invariance.** The unitary group $\mathrm{U}(2)$ acts transitively on the rays, and its image $SO(3)$ acts transitively on the boundary sphere. Any metric on the boundary that is invariant under this action is a multiple of the round metric, so the algebra's own symmetry group fixes the Fubini–Study metric **up to scale**. The scale is then fixed by the trace pairing, through the identification of the transition probability with $\cos^2 d_{\mathrm{FS}}$; equivalently, by the requirement that the line element be $-\langle\delta\tilde{P}\rangle_{\natural}$, whose normalization is the trace normalization. This is a two-step determination worth naming: the symmetry fixes the metric up to a constant, and the trace fixes the constant. Neither step imports a geometric posit beyond the algebra's two forms.
 
 **Units.** The line element has been written so that $\vec{u}$ is a unit vector, i.e. the Bloch vector is measured in units in which the ball has radius one. If the physical Bloch vector is measured with a radius $r_0$ — for instance $r_0=\hbar/2$ for a spin — then the metric is multiplied by $r_0^2$ and the distance by $r_0$; the dimensionless statements above are the ones fixed by the algebra, and the physical conversion is a separate posit, like the identification of $\vec{u}$ with a direction in space.
 
@@ -294,9 +294,9 @@ The first is the trace pairing, the second the trace distance of the companion a
 
 The pure states are the boundary; the mixed states are the interior. The metric of the interior is not determined by the boundary metric alone, and the algebra's own favourite quadratic form does not supply it. This section states what the algebra supplies, what is standard, and where the two part company.
 
-**What the biquaternion norm supplies in the interior.** For a state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and a displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the computation of the projector variation goes through unchanged,
+**What the biquaternion norm supplies in the interior.** For a state $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the computation of the projector variation goes through unchanged,
 $$
-\langle\delta\tilde{\rho}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_0,
+\langle\delta\tilde{\rho}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
 \qquad
 -\langle\delta\tilde{\rho}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
 $$
@@ -326,7 +326,7 @@ Five statements summarize the result, and two of them are limitations that a rea
 
 4. **The interior metric is imported.** The Bures metric of the mixed states is the standard monotone metric of quantum information theory. The algebra determines its boundary value and its value at the centre, and it determines the flat alternative that it is not; it does not determine the interpolation. This is a limit on the algebra's reach, not a defect of the derivation, and it is stated to prevent an overclaim.
 
-5. **All normalization statements are trace-relative.** The factor $\tfrac14$ and the area $\pi$ are stated in the trace normalization $\mathrm{Tr}(e_0)=2$; the invariant content is that the Fubini–Study metric is a fixed multiple of the round metric, with the multiple fixed by the double cover and the trace. A reader who changes the trace normalization changes these numbers and not the geometry.
+5. **All normalization statements are trace-relative.** The factor $\tfrac14$ and the area $\pi$ are stated in the trace normalization $\mathrm{Tr}(e_t)=2$; the invariant content is that the Fubini–Study metric is a fixed multiple of the round metric, with the multiple fixed by the double cover and the trace. A reader who changes the trace normalization changes these numbers and not the geometry.
 
 ## Summary
 
@@ -345,16 +345,16 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}$ | Hermitian conjugation, ${}^{*}={}^{\natural}\circ\bar{\cdot}$ |
-| $\mathbb{M}_+$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$ |
-| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
+| $\mathbb{M}_+$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
+| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ | State, $|\vec r|\leq1$ |
-| $\tilde\Pi(\vec{u})=\tfrac12(e_0+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
-| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ | State module, $\cong\mathbb{C}^2$ |
+| $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ | State, $|\vec r|\leq1$ |
+| $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
+| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | State module, $\cong\mathbb{C}^2$ |
 | $\psi$, $\lvert\psi\rangle$ | Spinor in the state module |
 | $\mathrm{Tr}(\tilde{P}\tilde{Q})$ | Transition probability of two pure states |
 | $\theta$ | Angle between $\vec{u}_1$ and $\vec{u}_2$ |

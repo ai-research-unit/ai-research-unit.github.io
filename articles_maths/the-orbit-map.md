@@ -36,19 +36,19 @@ The proposition is the set-theoretic skeleton of every orbit-space computation, 
 
 From this point $X$ is a topological space and the action is **by homeomorphisms**: for every $g \in G$ the map $x \mapsto gx$ is a homeomorphism of $X$. No topology is placed on $G$.
 
-**Definition.** The **orbit topology** on $X/G$ is the quotient (identification) topology of *Topological Spaces* for the surjection $\pi$: a set $U \subseteq X/G$ is open when $\pi^{-1}(U)$ is open in $X$. With this topology the orbit space is the **quotient of $X$ by $G$**, and the orbit map $\pi$ is the **quotient map**.
+**Definition.** The **orbit topology** on $X/G$ is the quotient (identification) topology of *Topological Spaces* for the surjection $\pi$: a set $\Omega \subseteq X/G$ is open when $\pi^{-1}(\Omega)$ is open in $X$. With this topology the orbit space is the **quotient of $X$ by $G$**, and the orbit map $\pi$ is the **quotient map**.
 
 The definition is not a choice: the quotient topology is the finest topology on $X/G$ making $\pi$ continuous, and it is the only topology with the universal property proved below.
 
 **Theorem.** The orbit map $\pi$ is continuous and surjective, and
 
 $$
-\pi^{-1}(U) = \bigcup_{O \in U} O \quad \text{for } U \subseteq X/G,
+\pi^{-1}(\Omega) = \bigcup_{O \in \Omega} O \quad \text{for } \Omega \subseteq X/G,
 $$
 
-so the preimage of a set of orbits is a union of orbits. A subset $U \subseteq X/G$ is open if and only if its preimage is open in $X$, if and only if its preimage is a $G$-invariant open set of $X$.
+so the preimage of a set of orbits is a union of orbits. A subset $\Omega \subseteq X/G$ is open if and only if its preimage is open in $X$, if and only if its preimage is a $G$-invariant open set of $X$.
 
-**Proof.** Continuity is the definition of the quotient topology. For the formula, $x \in \pi^{-1}(U)$ iff $\pi(x) \in U$ iff the orbit of $x$ is a member of $U$. The set $\pi^{-1}(U)$ is a union of orbits, hence invariant: $g\pi^{-1}(U) = \pi^{-1}(U)$ for every $g$, since $g$ permutes each orbit. Conversely an invariant set $W$ satisfies $W = \pi^{-1}(\pi(W))$, so it is the preimage of a set of orbits.
+**Proof.** Continuity is the definition of the quotient topology. For the formula, $x \in \pi^{-1}(\Omega)$ iff $\pi(x) \in \Omega$ iff the orbit of $x$ is a member of $\Omega$. The set $\pi^{-1}(\Omega)$ is a union of orbits, hence invariant: $g\pi^{-1}(\Omega) = \pi^{-1}(\Omega)$ for every $g$, since $g$ permutes each orbit. Conversely an invariant set $W$ satisfies $W = \pi^{-1}(\pi(W))$, so it is the preimage of a set of orbits.
 
 ## The Orbit Map as an Operator
 
@@ -64,7 +64,7 @@ $$
 
 is a bijection onto the invariant subalgebra, and it is an isomorphism of Boolean algebras and of complete lattices: it preserves $\emptyset$, $X/G$, arbitrary unions, arbitrary intersections and complements.
 
-**Proof.** The map is well defined by the theorem above, and it lands in the invariant sets. It is injective because $\pi$ is surjective: $\pi^{-1}(U) = \pi^{-1}(V)$ implies $U = \pi(\pi^{-1}(U)) = \pi(\pi^{-1}(V)) = V$. It is surjective onto the invariant sets because an invariant $W$ equals $\pi^{-1}(\pi(W))$. It preserves the Boolean operations because the preimage does, by *Continuous Maps as Operators*.
+**Proof.** The map is well defined by the theorem above, and it lands in the invariant sets. It is injective because $\pi$ is surjective: $\pi^{-1}(\Omega) = \pi^{-1}(V)$ implies $\Omega = \pi(\pi^{-1}(\Omega)) = \pi(\pi^{-1}(V)) = V$. It is surjective onto the invariant sets because an invariant $W$ equals $\pi^{-1}(\pi(W))$. It preserves the Boolean operations because the preimage does, by *Continuous Maps as Operators*.
 
 The theorem is the precise sense in which the subsets of the orbit space are the invariant subsets of $X$: the preimage identifies the two algebras, and the orbit map gives an isomorphism of the algebra of the quotient onto the algebra of invariants, read backwards. The inverse is the direct image.
 
@@ -89,16 +89,16 @@ The saturation is the operator that sends a set to the union of the orbits it me
 **Theorem.** The direct image and the preimage of the orbit map are adjoint,
 
 $$
-\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq U \iff A \subseteq \pi^{-1}(U),
+\pi_{*} \dashv \pi^{-1}, \qquad \pi_{*}(A) \subseteq \Omega \iff A \subseteq \pi^{-1}(\Omega),
 $$
 
 and the preimage is a bijection onto the invariants, so the unit and the counit of the adjunction are the saturation and the identity:
 
 $$
-\pi^{-1}\pi_{*}(A) = \operatorname{sat}(A), \qquad \pi_{*}\pi^{-1}(U) = U .
+\pi^{-1}\pi_{*}(A) = \operatorname{sat}(A), \qquad \pi_{*}\pi^{-1}(\Omega) = \Omega .
 $$
 
-**Proof.** The adjunction is the Galois connection of *Continuous Maps as Operators* for the particular map $\pi$. The two composites are the definitions: $\pi^{-1}\pi_{*}(A)$ is the union of the orbits meeting $A$, and $\pi_{*}\pi^{-1}(U)$ is the set of orbits contained in the union of the orbits of $U$, which is $U$.
+**Proof.** The adjunction is the Galois connection of *Continuous Maps as Operators* for the particular map $\pi$. The two composites are the definitions: $\pi^{-1}\pi_{*}(A)$ is the union of the orbits meeting $A$, and $\pi_{*}\pi^{-1}(\Omega)$ is the set of orbits contained in the union of the orbits of $\Omega$, which is $\Omega$.
 
 The adjunction is a **reflection**: the preimage is fully faithful, the counit is an isomorphism, and the invariant subalgebra is a reflective subcategory of the power set, with the saturation the reflection. This is the operator content of the orbit map, and it is what makes the quotient computable: a statement about subsets of $X/G$ is a statement about invariant subsets of $X$.
 
@@ -176,7 +176,7 @@ Let a group $G$ act on a topological space $X$ by homeomorphisms. The orbits par
 | $X$, $Y$ | Topological spaces; $X$ carries the action |
 | $Gx$, $G_x$ | The orbit of $x$, and its stabiliser |
 | $X/G$, $\pi$ | Orbit space, and the orbit map $\pi(x) = Gx$ |
-| orbit topology | $U \subseteq X/G$ open iff $\pi^{-1}(U)$ open; the quotient topology |
+| orbit topology | $\Omega \subseteq X/G$ open iff $\pi^{-1}(\Omega)$ open; the quotient topology |
 | $X^{G}$ | The fixed set $\{x : Gx = \{x\}\}$ |
 | invariant, saturated set | A union of orbits; $gA = A$; $A = \pi^{-1}(\pi(A))$ |
 | $\mathcal{P}(X)^{G}$ | The Boolean subalgebra of invariant subsets |

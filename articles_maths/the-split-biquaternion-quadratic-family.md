@@ -8,7 +8,7 @@ The split-biquaternion algebra, its conjugations, its central idempotents and it
 
 The article owns the idempotent splitting of the family, the transport of the orbit to a pair of quaternion orbits, the escape dichotomy in product form, the filled Julia set and the Julia set of the split-biquaternion family, the critical orbit and the connectedness reduction, the norm and the zero divisors, and the symmetry. It does not re-derive the quaternion theory it quotes.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$, and
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with central split unit $j$, $j^2=+1$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, and
 
 $$
 \tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2, \qquad \tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H} .
@@ -30,7 +30,7 @@ $$
 F_{\tilde C}\;\longleftrightarrow\; (\tilde Q_+,\tilde Q_-)\longmapsto\bigl(\tilde Q_+^2+\tilde C_+,\ \tilde Q_-^2+\tilde C_-\bigr) .
 $$
 
-**Proof.** $\tilde\Pi_{1,2}$ are central orthogonal idempotents with $\tilde\Pi_1+\tilde\Pi_2=e_0$ and $\tilde\Pi_1\tilde\Pi_2=0$, so the Chinese-remainder decomposition $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$ is an algebra isomorphism onto $\mathbb{H}\oplus\mathbb{H}$ (*Split-Biquaternion Ideals and Peirce Decomposition*). Writing $\tilde Q=\tilde A+j\tilde B$ with $\tilde A,\tilde B\in\mathbb{H}$ gives $\tilde Q_\pm=\tilde A\pm\tilde B$, a Hadamard change of coordinates, whence the norm identity. Squaring is componentwise because the idempotents are central: $\tilde Q^2=\tilde Q_+^2\tilde\Pi_1+\tilde Q_-^2\tilde\Pi_2$ since the cross terms carry $\tilde\Pi_1\tilde\Pi_2=0$.
+**Proof.** $\tilde\Pi_{1,2}$ are central orthogonal idempotents with $\tilde\Pi_1+\tilde\Pi_2=e_t$ and $\tilde\Pi_1\tilde\Pi_2=0$, so the Chinese-remainder decomposition $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$ is an algebra isomorphism onto $\mathbb{H}\oplus\mathbb{H}$ (*Split-Biquaternion Ideals and Peirce Decomposition*). Writing $\tilde Q=\tilde q+j\tilde q'$ with $\tilde q,\tilde q'\in\mathbb{H}$ gives $\tilde Q_\pm=\tilde q\pm\tilde q'$, a Hadamard change of coordinates, whence the norm identity. Squaring is componentwise because the idempotents are central: $\tilde Q^2=\tilde Q_+^2\tilde\Pi_1+\tilde Q_-^2\tilde\Pi_2$ since the cross terms carry $\tilde\Pi_1\tilde\Pi_2=0$.
 
 **Corollary (the orbit is a pair of quaternion orbits).** $F_{\tilde C}^{\,n}(\tilde Q)$ corresponds to the pair $(f_{\tilde C_+}^{\,n}(\tilde Q_+),f_{\tilde C_-}^{\,n}(\tilde Q_-))$, the iterates of the quaternion quadratic maps $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ of the two parameters $\tilde C_\pm$.
 
@@ -124,7 +124,7 @@ identified with the pairs $(\tilde C_+,\tilde C_-)$. Separately, the filled Juli
 
 ## Summary
 
-The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|_E^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde C_+}\times K_{\tilde C_-}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.
+The split-biquaternion quadratic family is, by the centrality of the idempotents $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$, exactly the product of two quaternion quadratic families, with the norm identity $\|\tilde Q\|_E^2=\tfrac12(\|\tilde Q_+\|^2+\|\tilde Q_-\|^2)$; the orbit is the pair of the quaternion orbits and there is no coupling. The escape lemma of the quaternion factors gives the escape dichotomy for the product, the filled Julia set is the product $K_{\tilde C_+}\times K_{\tilde C_-}$, the Julia set is the boundary of the product $(J_+\times K_-)\cup(K_+\times J_-)$, and every product property of the fractal is inherited. The units are the pairs of non-zero quaternions and the zero divisors are the two four-dimensional ideals, so the zero divisors of the split-biquaternion algebra do not obstruct the escape radius, in contrast with the biquaternion case. The critical orbit is the pair of the quaternion critical orbits and the connectedness locus is the square $\mathcal{M}_{\mathbb{H}}\times\mathcal{M}_{\mathbb{H}}$ of the quaternion connectedness locus. The symmetry group is the product of the automorphism groups of the two factors together with the swap.
 
 ## Summary of Notation
 
@@ -132,7 +132,7 @@ The split-biquaternion quadratic family is, by the centrality of the idempotents
 |---|---|
 | $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | the split-biquaternion algebra |
 | $j$, $j^2=+1$ | the central split unit |
-| $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$ | the central idempotents |
+| $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$ | the central idempotents |
 | $\tilde Q_\pm=\tilde Q\tilde\Pi_{1,2}\in\mathbb{H}$ | the two quaternion components |
 | $\tilde C_\pm=\tilde C\tilde\Pi_{1,2}$ | the two quaternion parameters |
 | $F_{\tilde C}(\tilde Q)=\tilde Q^2+\tilde C$ | the quadratic family |

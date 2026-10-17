@@ -10,7 +10,7 @@ The article is kinematic throughout. It reads the central map that *Conventions 
 
 ## The Two Times in One Plane
 
-The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ and $e_1^2 = e_2^2 = e_3^2 = -e_0$; the conjugations are the quaternion conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, and the adjoint ${}^{*} = {}^{\natural}\circ\bar{\cdot}$.
+The conventions are those of the series. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$; the conjugations are the quaternion conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, and the adjoint ${}^{*} = {}^{\natural}\circ\bar{\cdot}$.
 
 The two sectors are the two halves of the algebra under the adjoint,
 
@@ -21,18 +21,18 @@ $$
 the anti-Hermitian material sector and the Hermitian informational sector. In coordinates,
 
 $$
-\tilde{Q}_- = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct'\,e_0 + i\bigl(x'e_1 + y'e_2 + z'e_3\bigr) \in \mathbb{M}_+,
+\tilde{Q}_- = ict\,e_t + x\,\vec e_x + y\,\vec e_y + z\,\vec e_z \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct'\,e_t + i\bigl(x'\vec e_x + y'\vec e_y + z'\vec e_z\bigr) \in \mathbb{M}_+,
 $$
 
-with $t, \vec x, t', \vec x'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
+with $t, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t', x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
 
-The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and it is the complex time sector of *Other Remarkable Subspaces*. The two times are its two real coordinates: writing
+The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$, and it is the complex time sector of *Other Remarkable Subspaces*. The two times are its two real coordinates: writing
 
 $$
 z = ct' + i\,ct,
 $$
 
-the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_0$, and its action on $z$ is the rotation of the plane.
+the centre is the complex plane of the coordinate $z$, the informational time is the real part of $z$ and the material time is $i$ times its imaginary part. This is the sense in which the framework has no external parameter: both times are coordinates of elements, and there is no slot outside the algebra for a parametric time to occupy. The plane is also the plane in which the global phase acts: the one-parameter group of the centre is $\exp(i\theta)e_t$, and its action on $z$ is the rotation of the plane.
 
 ## The Exchange as a Quarter Turn
 
@@ -45,10 +45,10 @@ $$
 so $i\tilde{Q}_- \in \mathbb{M}_+$, and the same computation run backwards sends $\mathbb{M}_+$ to $\mathbb{M}_-$. In coordinates the exchange is
 
 $$
-i\bigl(ict\,e_0 + \vec x\bigr) = -ct\,e_0 + i\vec x \in \mathbb{M}_+, \qquad i\bigl(ct'\,e_0 + i\vec x'\bigr) = ict'\,e_0 - \vec x' \in \mathbb{M}_- .
+i\bigl(ict\,e_t + (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) = -ct\,e_t + i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) \in \mathbb{M}_+, \qquad i\bigl(ct'\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\bigr) = ict'\,e_t - (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) \in \mathbb{M}_- .
 $$
 
-Read on the coefficients, the material element $(t, \vec x)$ is carried to the informational element $(t' = -t,\ \vec x' = \vec x)$, and the informational element $(t', \vec x')$ is carried to the material element $(t = t',\ \vec x = -\vec x')$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(t, x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is carried to the informational element $(t' = -t,\ (x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and the informational element $(t', x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ is carried to the material element $(t = t',\ (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z))$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
 z \mapsto i z = -ct + i\,ct' ,
@@ -56,7 +56,7 @@ $$
 
 which is the quarter turn of the complex time plane: the informational time becomes the material coordinate, and the material time becomes minus the informational one.
 
-Two properties of the map fix what a clock built on it can be. The first is the order. The square of the generator is $-e_0$, the antipodal map of the plane and not the identity, and the fourth power is $e_0$; the orbit of a central coordinate under the generator is therefore the four-element cycle
+Two properties of the map fix what a clock built on it can be. The first is the order. The square of the generator is $-e_t$, the antipodal map of the plane and not the identity, and the fourth power is $e_t$; the orbit of a central coordinate under the generator is therefore the four-element cycle
 
 $$
 z \ \longrightarrow\ iz \ \longrightarrow\ -z \ \longrightarrow\ -iz \ \longrightarrow\ z .
@@ -74,12 +74,12 @@ $$
 ct' = \lvert z\rvert\cos\theta, \qquad ct = \lvert z\rvert\sin\theta .
 $$
 
-The one-parameter group $\exp(i\theta)e_0$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(iS/\hbar)$ of the action articles is the same central phase read on a dynamics.
+The one-parameter group $\exp(i\theta)e_t$ is the continuous motion of the hand, and the generator is its infinitesimal element. Read this way the global phase is not an auxiliary factor of the amplitude; it is the clock coordinate of the central plane, and the amplitude factor $\exp(iS/\hbar)$ of the action articles is the same central phase read on a dynamics.
 
 **The tick.** A tick of the clock is a quarter turn of the hand, the application of the generator. The four quarter turns are the identity, the exchange, the antipodal map and the inverse exchange,
 
 $$
-e_0 \ \text{(no tick)}, \qquad i e_0 \ \text{(the exchange)}, \qquad -e_0 \ \text{(the antipodal map)}, \qquad -i e_0 \ \text{(the inverse exchange)} ,
+e_t \ \text{(no tick)}, \qquad i e_t \ \text{(the exchange)}, \qquad -e_t \ \text{(the antipodal map)}, \qquad -i e_t \ \text{(the inverse exchange)} ,
 $$
 
 and the period is the full rotation $2\pi$, made of four quarter turns. The four-element cycle is the whole of the clock's internal structure, and it is exact: no approximation enters, because the orbit is the orbit of a central element under a group of order four.
@@ -93,7 +93,7 @@ A clock, whether mechanical or algebraic, needs four things, and the framework's
 | What a clock needs | What the framework supplies |
 |---|---|
 | A **reference**: a direction or a subsystem against which the interpretation is defined | Supplied. The other sector: the material time is read against the informational axis and the reverse |
-| A **period**: a repeatable tick | Supplied up to scale. The central rotation, $\exp(i\theta)e_0$ with $\theta = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration |
+| A **period**: a repeatable tick | Supplied up to scale. The central rotation, $\exp(i\theta)e_t$ with $\theta = 2\pi$ the identity, divided into four quarter turns; the period is an angle and carries no duration |
 | An **arrow**: an orientation of the tick | Not supplied. The generator is invertible of order four, and $\exp(i\theta)$ and $\exp(-i\theta)$ are both in the algebra |
 | A **rate**: a duration per tick | Not supplied. The algebra carries the phase, which is dimensionless, and no second |
 
@@ -132,14 +132,14 @@ The accounting of a clock is partial, and the two missing entries are the ones t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | the basis, $e_1^2 = e_2^2 = e_3^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | the basis, $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion conjugation, complex conjugation, adjoint $= {}^{\natural}\circ\bar{\cdot}$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | the material (anti-Hermitian) and informational (Hermitian) sectors |
-| $i$ | the central imaginary, $i\,e_0$; the generator of the exchange |
-| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | the centre, the complex time plane |
+| $i$ | the central imaginary, $i\,e_t$; the generator of the exchange |
+| $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | the centre, the complex time plane |
 | $z = ct' + i\,ct$ | the clock hand; the central coordinate of an element |
 | $ct'$, $ict$ | the informational and the material time, the two projections of the hand |
-| $\exp(i\theta)e_0$ | the one-parameter group of the centre, the motion of the hand |
+| $\exp(i\theta)e_t$ | the one-parameter group of the centre, the motion of the hand |
 | $i\mathbb{M}_\pm = \mathbb{M}_\mp$ | the sector exchange, the quarter turn, the tick |
 
 ## Further Reading

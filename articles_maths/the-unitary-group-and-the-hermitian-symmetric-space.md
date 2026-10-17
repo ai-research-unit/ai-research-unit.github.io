@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The isometry group of a non-degenerate Hermitian form of signature $(n,m)$ is the unitary group $U(n,m)$, and the quotient of it by the stabiliser of a maximal negative-definite subspace is a **Hermitian symmetric space**: a symmetric space in which the geodesic symmetry at each point is complex-linear, so that the space carries an invariant complex structure and the symmetry group acts by holomorphic transformations. The unitary group is the case of the classical groups in which the symmetric space has a complex structure built in, and it is the source of the bounded symmetric domains: the space $U(n,m)/(U(n)\times U(m))$ is a bounded domain in $\mathbb{C}^{pq}$, the **matrix unit ball** $\{Z : Z^{\dagger}Z < I\}$, by the Harish-Chandra embedding, and the group acts on it by fractional linear transformations.
+The isometry group of a non-degenerate Hermitian form of signature $(n,m)$ is the unitary group $\mathrm{U}(n,m)$, and the quotient of it by the stabiliser of a maximal negative-definite subspace is a **Hermitian symmetric space**: a symmetric space in which the geodesic symmetry at each point is complex-linear, so that the space carries an invariant complex structure and the symmetry group acts by holomorphic transformations. The unitary group is the case of the classical groups in which the symmetric space has a complex structure built in, and it is the source of the bounded symmetric domains: the space $\mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m))$ is a bounded domain in $\mathbb{C}^{pq}$, the **matrix unit ball** $\{Z : Z^{\dagger}Z < I\}$, by the Harish-Chandra embedding, and the group acts on it by fractional linear transformations.
 
 The article treats the group, the involution that defines the symmetric space, the space itself as the manifold of negative subspaces, and the bounded realisation. The unitary group of a Hermitian form, its determinant and its special subgroup are *The Unitary and Symplectic Groups*; the Hermitian forms and their classification are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*; the symmetric space, the symmetric pair, the Cartan involution and the rank are *Riemannian Symmetric Spaces and the Involution*; the homogeneous space $G/K$, its isotropy representation and its invariant connections are *Transformation Groups*; the Lie group structure and the Lie algebra are *Lie Groups* and *The Orthogonal Lie Algebra*. The invariant Kähler metric of the domain, the Bergman kernel and the boundary theory are *Hermitian Symmetric Spaces and the Bergman Metric* and *Kähler Geometry*, below this Part, and are named but not developed here; the curvature of the domain is *Curvature and Geodesics*. The involution on the **elements** of the group is what this article reads; the **adjoint** of an operator and the `*`-structures it defines are the group `- * Operator Theory` of this category and are not used.
 
-The article has four sections: the Hermitian form and the unitary group; the involution and the symmetric space; the bounded realisation; and the worked cases. Throughout, $n, m \geq 1$, $V = \mathbb{C}^{n+m}$ is the standard module with the Hermitian form $h$ of signature $(n,m)$ and matrix $J = \operatorname{diag}(I_n, -I_m)$, and $U(n,m) = \{g \in GL_{n+m}(\mathbb{C}) : g^{\dagger}Jg = J\}$; the compact case $m = 0$ is the ordinary unitary group $U(n) = U(n,0)$ of *The Unitary and Symplectic Groups*.
+The article has four sections: the Hermitian form and the unitary group; the involution and the symmetric space; the bounded realisation; and the worked cases. Throughout, $n, m \geq 1$, $V = \mathbb{C}^{n+m}$ is the standard module with the Hermitian form $h$ of signature $(n,m)$ and matrix $J = \operatorname{diag}(I_n, -I_m)$, and $\mathrm{U}(n,m) = \{g \in GL_{n+m}(\mathbb{C}) : g^{\dagger}Jg = J\}$; the compact case $m = 0$ is the ordinary unitary group $\mathrm{U}(n) = U(n,0)$ of *The Unitary and Symplectic Groups*.
 
 ## The Hermitian Form and the Unitary Group
 
@@ -24,32 +24,32 @@ conjugate-linear in the first argument, linear in the second, and Hermitian; its
 **Proposition.** The form $h$ is non-degenerate, the maximal $h$-negative subspaces have dimension $m$, the maximal positive ones dimension $n$, and the orthogonal complement of a negative subspace is positive and of dimension $n$. The group of linear isomorphisms preserving $h$ is
 
 $$
-U(n,m) = \{g \in GL_{n+m}(\mathbb{C}) : h(gz, gw) = h(z, w) \text{ for all } z, w\} = \{g : g^{\dagger} J g = J\},
+\mathrm{U}(n,m) = \{g \in GL_{n+m}(\mathbb{C}) : h(gz, gw) = h(z, w) \text{ for all } z, w\} = \{g : g^{\dagger} J g = J\},
 $$
 
-a real Lie group of dimension $(n+m)^2$; the **special unitary group** $SU(n,m)$ is the kernel of the determinant, and the centre of $U(n,m)$ is the group of scalars $\lambda I$ with $\lvert\lambda\rvert = 1$.
+a real Lie group of dimension $(n+m)^2$; the **special unitary group** $SU(n,m)$ is the kernel of the determinant, and the centre of $\mathrm{U}(n,m)$ is the group of scalars $\lambda I$ with $\lvert\lambda\rvert = 1$.
 
-**Proof.** Non-degeneracy is $\det J = (-1)^m \neq 0$; the dimension claims are Sylvester's law of inertia, *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. The matrix form of the isometry equation is $g^{\dagger}Jg = J$, which is a real algebraic condition cutting out a closed subgroup of $GL_{n+m}(\mathbb{C})$; its dimension is computed from the Lie algebra below. The determinant has modulus one on $U(n,m)$ by the same computation as in the compact case, and the centre consists of the scalars commuting with $J$.
+**Proof.** Non-degeneracy is $\det J = (-1)^m \neq 0$; the dimension claims are Sylvester's law of inertia, *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. The matrix form of the isometry equation is $g^{\dagger}Jg = J$, which is a real algebraic condition cutting out a closed subgroup of $GL_{n+m}(\mathbb{C})$; its dimension is computed from the Lie algebra below. The determinant has modulus one on $\mathrm{U}(n,m)$ by the same computation as in the compact case, and the centre consists of the scalars commuting with $J$.
 
 ### The Compact Subgroup
 
-**Definition.** The **standard maximal compact subgroup** of $U(n,m)$ is
+**Definition.** The **standard maximal compact subgroup** of $\mathrm{U}(n,m)$ is
 
 $$
-K = U(n)\times U(m) = \left\{\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} : A \in U(n),\ D \in U(m)\right\},
+K = \mathrm{U}(n)\times \mathrm{U}(m) = \left\{\begin{pmatrix} A & 0 \\ 0 & D\end{pmatrix} : A \in \mathrm{U}(n),\ D \in \mathrm{U}(m)\right\},
 $$
 
 the isometries preserving the standard positive subspace $\mathbb{C}^n\oplus 0$ and its negative complement.
 
-**Proposition.** $K$ is a maximal compact subgroup of $U(n,m)$, the quotient $U(n,m)/K$ is connected and simply connected, and the **Cartan decomposition** at the level of Lie algebras is
+**Proposition.** $K$ is a maximal compact subgroup of $\mathrm{U}(n,m)$, the quotient $\mathrm{U}(n,m)/K$ is connected and simply connected, and the **Cartan decomposition** at the level of Lie algebras is
 
 $$
 \mathfrak{u}(n,m) = \mathfrak{k}\oplus\mathfrak{n}, \qquad \mathfrak{k} = \mathfrak{u}(n)\oplus\mathfrak{u}(m), \qquad \mathfrak{n} = \left\{\begin{pmatrix} 0 & Z \\ -Z^{\dagger} & 0\end{pmatrix} : Z \in \mathbb{C}^{n\times m}\right\},
 $$
 
-with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{n}]\subseteq\mathfrak{n}$ and $[\mathfrak{n},\mathfrak{n}]\subseteq\mathfrak{k}$; $\mathfrak{n}$ is real-isomorphic to $\mathbb{C}^{pq}$ and $\dim_{\mathbb{R}} U(n,m)/K = 2pq$.
+with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{n}]\subseteq\mathfrak{n}$ and $[\mathfrak{n},\mathfrak{n}]\subseteq\mathfrak{k}$; $\mathfrak{n}$ is real-isomorphic to $\mathbb{C}^{pq}$ and $\dim_{\mathbb{R}} \mathrm{U}(n,m)/K = 2pq$.
 
-**Proof.** The subgroup $K$ is compact, being a product of unitary groups, and maximal because any compact subgroup has a fixed vector, hence a fixed negative subspace, and can therefore be conjugated into $K$; the quotient is connected because $U(n,m)$ is, and simply connected because $K$ is connected and the pair is the noncompact dual of the compact pair computed in *Riemannian Symmetric Spaces and the Involution*. The bracket relations are the standard ones of a symmetric pair, read off the block decomposition; the identification of $\mathfrak{n}$ with $\mathbb{C}^{pq}$ is the entry $Z$.
+**Proof.** The subgroup $K$ is compact, being a product of unitary groups, and maximal because any compact subgroup has a fixed vector, hence a fixed negative subspace, and can therefore be conjugated into $K$; the quotient is connected because $\mathrm{U}(n,m)$ is, and simply connected because $K$ is connected and the pair is the noncompact dual of the compact pair computed in *Riemannian Symmetric Spaces and the Involution*. The bracket relations are the standard ones of a symmetric pair, read off the block decomposition; the identification of $\mathfrak{n}$ with $\mathbb{C}^{pq}$ is the entry $Z$.
 
 ## The Involution and the Symmetric Space
 
@@ -58,21 +58,21 @@ with $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfra
 **Proposition.** The map
 
 $$
-\theta : U(n,m) \longrightarrow U(n,m), \qquad \theta(g) = J\,g\,J^{-1} = J\,g\,J,
+\theta : \mathrm{U}(n,m) \longrightarrow \mathrm{U}(n,m), \qquad \theta(g) = J\,g\,J^{-1} = J\,g\,J,
 $$
 
-is an involutive automorphism of $U(n,m)$, equal to the inverse-conjugate-transpose, $\theta(g) = (g^{\dagger})^{-1}$; its fixed subgroup is $K = U(n)\times U(m)$, and its differential at the identity is $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$.
+is an involutive automorphism of $\mathrm{U}(n,m)$, equal to the inverse-conjugate-transpose, $\theta(g) = (g^{\dagger})^{-1}$; its fixed subgroup is $K = \mathrm{U}(n)\times \mathrm{U}(m)$, and its differential at the identity is $+1$ on $\mathfrak{k}$ and $-1$ on $\mathfrak{n}$.
 
-**Proof.** From $g^{\dagger}Jg = J$ one gets $g^{\dagger} = Jg^{-1}J^{-1}$, whence $(g^{\dagger})^{-1} = JgJ^{-1} = JgJ$ since $J^{-1} = J$; the inner automorphism by $J$ is an automorphism, of order two because $J^2 = I$, and it preserves $U(n,m)$ because $J$ commutes with the defining relation. Its fixed points are the matrices commuting with $J$, which are exactly the block-diagonal ones, and the differential acts by conjugation on the Lie algebra, giving $+1$ on the blocks that commute with $J$ and $-1$ on those that anticommute.
+**Proof.** From $g^{\dagger}Jg = J$ one gets $g^{\dagger} = Jg^{-1}J^{-1}$, whence $(g^{\dagger})^{-1} = JgJ^{-1} = JgJ$ since $J^{-1} = J$; the inner automorphism by $J$ is an automorphism, of order two because $J^2 = I$, and it preserves $\mathrm{U}(n,m)$ because $J$ commutes with the defining relation. Its fixed points are the matrices commuting with $J$, which are exactly the block-diagonal ones, and the differential acts by conjugation on the Lie algebra, giving $+1$ on the blocks that commute with $J$ and $-1$ on those that anticommute.
 
-**Remark.** The involution is the **Cartan involution** of the pair $(U(n,m), K)$, and $\theta$ is the differential of the geodesic symmetry of the symmetric space at the base point, *Riemannian Symmetric Spaces and the Involution*. It is an involution on the **elements** of the group, in the sense of the group `- * Theory` of this category; the adjoint of an operator it defines is not taken here.
+**Remark.** The involution is the **Cartan involution** of the pair $(\mathrm{U}(n,m), K)$, and $\theta$ is the differential of the geodesic symmetry of the symmetric space at the base point, *Riemannian Symmetric Spaces and the Involution*. It is an involution on the **elements** of the group, in the sense of the group `- * Theory` of this category; the adjoint of an operator it defines is not taken here.
 
 ### The Symmetric Space as a Manifold of Subspaces
 
 **Definition.** The **Hermitian symmetric space** of the unitary group is the homogeneous space
 
 $$
-X = U(n,m)/K = U(n,m)/(U(n)\times U(m)),
+X = \mathrm{U}(n,m)/K = \mathrm{U}(n,m)/(\mathrm{U}(n)\times \mathrm{U}(m)),
 $$
 
 with base point $o = eK$, and the **geodesic symmetry** at $o$ is $s_o(gK) = \theta(g)K$.
@@ -85,11 +85,11 @@ $$
 
 by $gK \mapsto gW_0$ with $W_0 = 0\oplus\mathbb{C}^m$; it is a symmetric space of noncompact type, simply connected, of dimension $2pq$ and rank $\min(n,m)$; the symmetry $s_o$ is an involutive isometry with the isolated fixed point $o$, and the symmetries at the other points are its conjugates, so $X$ is a symmetric space in the sense of *Riemannian Symmetric Spaces and the Involution*.
 
-**Proof.** The stabiliser of $W_0$ is $K$, so the orbit of $W_0$ is $U(n,m)/K$; the map is injective because $U(n,m)$ acts transitively on the negative $m$-subspaces, and surjective by the same transitivity, which is Witt's theorem in the Hermitian case. The symmetry statement is that $\theta$ is an involutive automorphism with fixed subgroup $K$, the general construction of a symmetric space from a symmetric pair; the rank is $\min(n,m)$ because a maximal abelian subspace of $\mathfrak{n}$ is parametrised by the diagonal of a $n\times m$ matrix, whose rank is at most $\min(n,m)$.
+**Proof.** The stabiliser of $W_0$ is $K$, so the orbit of $W_0$ is $\mathrm{U}(n,m)/K$; the map is injective because $\mathrm{U}(n,m)$ acts transitively on the negative $m$-subspaces, and surjective by the same transitivity, which is Witt's theorem in the Hermitian case. The symmetry statement is that $\theta$ is an involutive automorphism with fixed subgroup $K$, the general construction of a symmetric space from a symmetric pair; the rank is $\min(n,m)$ because a maximal abelian subspace of $\mathfrak{n}$ is parametrised by the diagonal of a $n\times m$ matrix, whose rank is at most $\min(n,m)$.
 
 ### The Complex Structure
 
-**Proposition.** The space $X$ carries a $U(n,m)$-invariant complex structure $J_o$ on the tangent space $T_oX = \mathfrak{n}$ given by the multiplication by $i$ on the entry $Z \in \mathbb{C}^{pq}$, and it extends to an integrable invariant almost complex structure on $X$; the geodesic symmetry $s_o$ is complex-antisymmetric, and the involution $\theta$ is the "complex" symmetry of the Hermitian symmetric space.
+**Proposition.** The space $X$ carries a $\mathrm{U}(n,m)$-invariant complex structure $J_o$ on the tangent space $T_oX = \mathfrak{n}$ given by the multiplication by $i$ on the entry $Z \in \mathbb{C}^{pq}$, and it extends to an integrable invariant almost complex structure on $X$; the geodesic symmetry $s_o$ is complex-antisymmetric, and the involution $\theta$ is the "complex" symmetry of the Hermitian symmetric space.
 
 **Proof.** The isotropy representation of $K$ on $\mathfrak{n}$ is the action $Z \mapsto AZD^{-1}$, which is complex-linear, so the multiplication by $i$ commutes with the isotropy and defines an invariant almost complex structure; the integrability is the vanishing of the Nijenhuis tensor, which holds because $\mathfrak{n}$ is a complex vector space and the structure comes from a complex Lie algebra grading, the general theory of Hermitian symmetric spaces in *Riemannian Symmetric Spaces and the Involution* and *Kähler Geometry*. The antisymmetry of $s_o$ is the statement that $\theta$ acts as $-1$ on $\mathfrak{n}$, which anticommutes with the complex structure of the noncompact dual.
 
@@ -116,7 +116,7 @@ the set of $n\times m$ matrices $Z$ whose Hermitian square satisfies $Z^{\dagger
 **Theorem (bounded realisation).** The map
 
 $$
-\Phi : U(n,m)/K \longrightarrow D, \qquad gK \longmapsto Z = (g \cdot 0),
+\Phi : \mathrm{U}(n,m)/K \longrightarrow D, \qquad gK \longmapsto Z = (g \cdot 0),
 $$
 
 where $g = \begin{pmatrix} A & B \\ C & D\end{pmatrix}$ acts by the fractional linear transformation
@@ -125,25 +125,25 @@ $$
 Z \longmapsto (AZ + B)(CZ + D)^{-1},
 $$
 
-is a $U(n,m)$-equivariant bijection of the symmetric space onto the matrix unit ball; it is the **Harish-Chandra embedding** of the symmetric space as a bounded domain, and $U(n,m)$ acts on $D$ by biholomorphisms.
+is a $\mathrm{U}(n,m)$-equivariant bijection of the symmetric space onto the matrix unit ball; it is the **Harish-Chandra embedding** of the symmetric space as a bounded domain, and $\mathrm{U}(n,m)$ acts on $D$ by biholomorphisms.
 
-**Proof.** The fractional linear transformation is defined on the set where $CZ + D$ is invertible, which contains $D$ because $I_m - Z^{\dagger}Z > 0$ implies the invertibility of $CZ + D$ for $g \in U(n,m)$, by the identity $h(g\cdot z, g\cdot w) = h(z, w)$ read at $Z$; the map decreases $\lVert Z\rVert$ or preserves the ball, so $D$ is stable. It is a bijection onto $D$ because the stabiliser of $0$ in $U(n,m)$ is exactly the block-diagonal $K$ — the condition $\theta$-invariance at $Z = 0$ forces the off-diagonal block $B$ to vanish — so the orbit of $0$ is a copy of $U(n,m)/K$ inside $D$, and it exhausts $D$ because every matrix $Z$ with $Z^{\dagger}Z < I_m$ is reached by a fractional linear transformation of $U(n,m)$. This is the Harish-Chandra embedding of *Riemannian Symmetric Spaces and the Involution*, quoted.
+**Proof.** The fractional linear transformation is defined on the set where $CZ + D$ is invertible, which contains $D$ because $I_m - Z^{\dagger}Z > 0$ implies the invertibility of $CZ + D$ for $g \in \mathrm{U}(n,m)$, by the identity $h(g\cdot z, g\cdot w) = h(z, w)$ read at $Z$; the map decreases $\lVert Z\rVert$ or preserves the ball, so $D$ is stable. It is a bijection onto $D$ because the stabiliser of $0$ in $\mathrm{U}(n,m)$ is exactly the block-diagonal $K$ — the condition $\theta$-invariance at $Z = 0$ forces the off-diagonal block $B$ to vanish — so the orbit of $0$ is a copy of $\mathrm{U}(n,m)/K$ inside $D$, and it exhausts $D$ because every matrix $Z$ with $Z^{\dagger}Z < I_m$ is reached by a fractional linear transformation of $\mathrm{U}(n,m)$. This is the Harish-Chandra embedding of *Riemannian Symmetric Spaces and the Involution*, quoted.
 
 **Remark.** The realisation is the geometric reason the symmetric space of a unitary group is special: it is a bounded domain, its group acts by biholomorphisms, and the Bergman metric, the Bergman kernel and the boundary behaviour of the domain are the subject of *Hermitian Symmetric Spaces and the Bergman Metric* and *The Bergman Operator*, below this Part and written in parallel. The embedding also exhibits the symmetric space as the **bounded symmetric domain** of the Hermitian case.
 
 ## Worked Cases
 
-**Example (the Poincaré disc).** Let $n = m = 1$. Then $U(1,1)/(U(1)\times U(1))$ is the unit disc $\{z \in \mathbb{C} : \lvert z\rvert < 1\}$, the geodesic symmetry is $z \mapsto -z$ at the origin, the involution is $\theta(g) = JgJ$, and the group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and acts by Möbius transformations. The example is the smallest Hermitian symmetric space and the one that shows the bounded realisation directly.
+**Example (the Poincaré disc).** Let $n = m = 1$. Then $\mathrm{U}(1,1)/(\mathrm{U}(1)\times \mathrm{U}(1))$ is the unit disc $\{z \in \mathbb{C} : \lvert z\rvert < 1\}$, the geodesic symmetry is $z \mapsto -z$ at the origin, the involution is $\theta(g) = JgJ$, and the group $SU(1,1)$ is isomorphic to $SL(2, \mathbb{R})$ and acts by Möbius transformations. The example is the smallest Hermitian symmetric space and the one that shows the bounded realisation directly.
 
-**Example (complex hyperbolic space).** Let $n = 1$, $m = n$. Then $X = U(1,n)/(U(1)\times U(n))$ is the unit ball $B^n \subseteq \mathbb{C}^n$, the **complex hyperbolic space** $\mathbb{C}H^n$ of complex dimension $n$, with the group $U(1,n)$ acting by fractional linear transformations and the boundary the sphere $S^{2n-1}$. The Hermitian symmetric space has rank one, its geodesic symmetry is complex-antisymmetric, and it is the complex counterpart of the real hyperbolic space of *Curvature and Geodesics*.
+**Example (complex hyperbolic space).** Let $n = 1$, $m = n$. Then $X = U(1,n)/(\mathrm{U}(1)\times \mathrm{U}(n))$ is the unit ball $B^n \subseteq \mathbb{C}^n$, the **complex hyperbolic space** $\mathbb{C}H^n$ of complex dimension $n$, with the group $U(1,n)$ acting by fractional linear transformations and the boundary the sphere $S^{2n-1}$. The Hermitian symmetric space has rank one, its geodesic symmetry is complex-antisymmetric, and it is the complex counterpart of the real hyperbolic space of *Curvature and Geodesics*.
 
-**Example (the Siegel disc).** Let $n = m = n$. Then $X = U(n,n)/(U(n)\times U(n))$ is the matrix unit ball $D = \{Z \in \mathbb{C}^{n\times n} : Z^{\dagger}Z < I\}$, of rank $n$ and dimension $2n^2$, the **Siegel disc**. The space is the bounded realisation of the symmetric space of the unitary group of a form of split signature, and its boundary carries the Shilov boundary, the unitary group $U(n)$ embedded as the set $Z^{\dagger}Z = I$, which is named in *Hermitian Symmetric Spaces and the Bergman Metric*, below this Part.
+**Example (the Siegel disc).** Let $n = m = n$. Then $X = \mathrm{U}(n,n)/(\mathrm{U}(n)\times \mathrm{U}(n))$ is the matrix unit ball $D = \{Z \in \mathbb{C}^{n\times n} : Z^{\dagger}Z < I\}$, of rank $n$ and dimension $2n^2$, the **Siegel disc**. The space is the bounded realisation of the symmetric space of the unitary group of a form of split signature, and its boundary carries the Shilov boundary, the unitary group $\mathrm{U}(n)$ embedded as the set $Z^{\dagger}Z = I$, which is named in *Hermitian Symmetric Spaces and the Bergman Metric*, below this Part.
 
-**Example (the compact case).** Let $m = 0$. Then $U(n,0) = U(n)$, $K = U(n)$, and the quotient is a point: the compact form of a Hermitian symmetric space of the unitary family has no noncompact factor, the group already being compact, and the symmetric space is degenerate. The noncompact case $m \geq 1$ is the one that carries the bounded domain and the invariant metric, and it is the case of the article.
+**Example (the compact case).** Let $m = 0$. Then $U(n,0) = \mathrm{U}(n)$, $K = \mathrm{U}(n)$, and the quotient is a point: the compact form of a Hermitian symmetric space of the unitary family has no noncompact factor, the group already being compact, and the symmetric space is degenerate. The noncompact case $m \geq 1$ is the one that carries the bounded domain and the invariant metric, and it is the case of the article.
 
 ## Summary
 
-The unitary group of the Hermitian form $h(z,w) = \sum_{i\le n}\overline{z_i}w_i - \sum_{i>n}\overline{z_i}w_i$ of signature $(n,m)$ is $U(n,m) = \{g : g^{\dagger}Jg = J\}$ with $J = \operatorname{diag}(I_n,-I_m)$; it is a real Lie group of dimension $(n+m)^2$ with special subgroup $SU(n,m)$ and standard maximal compact subgroup $K = U(n)\times U(m)$. The map $\theta(g) = JgJ^{-1} = (g^{\dagger})^{-1}$ is an involutive automorphism with fixed subgroup $K$ and differential $+1$ on $\mathfrak{k} = \mathfrak{u}(n)\oplus\mathfrak{u}(m)$ and $-1$ on $\mathfrak{n}\cong\mathbb{C}^{pq}$; the quotient $X = U(n,m)/K$ is the symmetric space of the negative $m$-subspaces of $V$, a simply connected symmetric space of noncompact type, dimension $2pq$ and rank $\min(n,m)$, and the isotropy representation makes its tangent space a complex vector space, so $X$ is a Hermitian symmetric space with complex-antisymmetric geodesic symmetry. The Harish-Chandra embedding realises $X$ as the matrix unit ball $D = \{Z \in \mathbb{C}^{n\times m} : Z^{\dagger}Z < I_m\}$, a bounded convex domain in $\mathbb{C}^{pq}$ on which $U(n,m)$ acts by fractional linear transformations; the Poincaré disc, the complex hyperbolic space and the Siegel disc are the cases $(1,1)$, $(1,n)$ and $(n,n)$. The invariant Kähler metric, the Bergman kernel and the boundary theory belong to *Hermitian Symmetric Spaces and the Bergman Metric*, below this Part. The involution here is on the elements of the group; no adjoint is taken.
+The unitary group of the Hermitian form $h(z,w) = \sum_{i\le n}\overline{z_i}w_i - \sum_{i>n}\overline{z_i}w_i$ of signature $(n,m)$ is $\mathrm{U}(n,m) = \{g : g^{\dagger}Jg = J\}$ with $J = \operatorname{diag}(I_n,-I_m)$; it is a real Lie group of dimension $(n+m)^2$ with special subgroup $SU(n,m)$ and standard maximal compact subgroup $K = \mathrm{U}(n)\times \mathrm{U}(m)$. The map $\theta(g) = JgJ^{-1} = (g^{\dagger})^{-1}$ is an involutive automorphism with fixed subgroup $K$ and differential $+1$ on $\mathfrak{k} = \mathfrak{u}(n)\oplus\mathfrak{u}(m)$ and $-1$ on $\mathfrak{n}\cong\mathbb{C}^{pq}$; the quotient $X = \mathrm{U}(n,m)/K$ is the symmetric space of the negative $m$-subspaces of $V$, a simply connected symmetric space of noncompact type, dimension $2pq$ and rank $\min(n,m)$, and the isotropy representation makes its tangent space a complex vector space, so $X$ is a Hermitian symmetric space with complex-antisymmetric geodesic symmetry. The Harish-Chandra embedding realises $X$ as the matrix unit ball $D = \{Z \in \mathbb{C}^{n\times m} : Z^{\dagger}Z < I_m\}$, a bounded convex domain in $\mathbb{C}^{pq}$ on which $\mathrm{U}(n,m)$ acts by fractional linear transformations; the Poincaré disc, the complex hyperbolic space and the Siegel disc are the cases $(1,1)$, $(1,n)$ and $(n,n)$. The invariant Kähler metric, the Bergman kernel and the boundary theory belong to *Hermitian Symmetric Spaces and the Bergman Metric*, below this Part. The involution here is on the elements of the group; no adjoint is taken.
 
 ## Summary of Notation
 
@@ -152,16 +152,16 @@ The unitary group of the Hermitian form $h(z,w) = \sum_{i\le n}\overline{z_i}w_i
 | $n, m$ | the signature of the Hermitian form |
 | $h$ | the Hermitian form of signature $(n,m)$ on $\mathbb{C}^{n+m}$ |
 | $J = \operatorname{diag}(I_n,-I_m)$ | the matrix of $h$; the involution defining the group |
-| $U(n,m)$ | the unitary group of $h$, $\{g : g^{\dagger}Jg = J\}$ |
+| $\mathrm{U}(n,m)$ | the unitary group of $h$, $\{g : g^{\dagger}Jg = J\}$ |
 | $SU(n,m)$ | the special unitary group, the kernel of the determinant |
-| $K = U(n)\times U(m)$ | the standard maximal compact subgroup; the block-diagonal matrices |
+| $K = \mathrm{U}(n)\times \mathrm{U}(m)$ | the standard maximal compact subgroup; the block-diagonal matrices |
 | $\theta(g) = JgJ^{-1} = (g^{\dagger})^{-1}$ | the Cartan involution of the pair |
 | $\mathfrak{k}\oplus\mathfrak{n}$ | the Cartan decomposition; $\mathfrak{n}\cong\mathbb{C}^{pq}$ the isotropy complement |
-| $X = U(n,m)/K$ | the Hermitian symmetric space; the negative $m$-subspaces of $V$ |
+| $X = \mathrm{U}(n,m)/K$ | the Hermitian symmetric space; the negative $m$-subspaces of $V$ |
 | $s_o(gK) = \theta(g)K$ | the geodesic symmetry at the base point |
 | $D = \{Z : Z^{\dagger}Z < I_m\}$ | the matrix unit ball; the bounded realisation |
 | $\Phi$ | the Harish-Chandra embedding $X \to D$ |
-| $Z \mapsto (AZ+B)(CZ+D)^{-1}$ | the fractional linear action of $U(n,m)$ on $D$ |
+| $Z \mapsto (AZ+B)(CZ+D)^{-1}$ | the fractional linear action of $\mathrm{U}(n,m)$ on $D$ |
 
 ## Further Reading
 

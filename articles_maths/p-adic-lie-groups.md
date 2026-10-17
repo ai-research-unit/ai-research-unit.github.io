@@ -15,7 +15,7 @@ The boundary with Part III is the one fixed for this block. What is developed he
 
 ### Convergent Power Series
 
-**Definition.** Let $\mathbb{Q}_p$ be the field of $p$-adic numbers with its non-archimedean absolute value $|\cdot|_p$ and valuation $v$, and let $x \in \mathbb{Q}_p$. A series $\sum_{n\geq0}a_nx^n$ with $a_n \in \mathbb{Q}_p$ **converges** at $x$ if the sequence of partial sums converges in the metric of $\mathbb{Q}_p$; when it converges at $x$ it converges absolutely and the value depends only on $x$. A function $f : U \to \mathbb{Q}_p$ on an open set $U$ is **analytic** at $a \in U$ if it is given by a convergent power series $\sum_n a_n(x-a)^n$ on a neighbourhood of $a$; it is analytic on $U$ if analytic at every point.
+**Definition.** Let $\mathbb{Q}_p$ be the field of $p$-adic numbers with its non-archimedean absolute value $|\cdot|_p$ and valuation $v$, and let $x \in \mathbb{Q}_p$. A series $\sum_{n\geq0}a_nx^n$ with $a_n \in \mathbb{Q}_p$ **converges** at $x$ if the sequence of partial sums converges in the metric of $\mathbb{Q}_p$; when it converges at $x$ it converges absolutely and the value depends only on $x$. A function $f : \Omega \to \mathbb{Q}_p$ on an open set $\Omega$ is **analytic** at $a \in \Omega$ if it is given by a convergent power series $\sum_n a_n(x-a)^n$ on a neighbourhood of $a$; it is analytic on $\Omega$ if analytic at every point.
 
 **Proposition (the convergence radius).** For a series $\sum_na_nx^n$ there is a well-defined **radius of convergence**
 
@@ -51,7 +51,7 @@ evaluated at $(x,y)$, a series in the noncommuting variables $X,Y$ whose terms a
 
 ### $p$-adic Analytic Manifolds
 
-**Definition.** A **$p$-adic analytic manifold** of dimension $n$ is a topological space $M$ together with an open cover $\{U_i\}$ and homeomorphisms $\varphi_i : U_i \to V_i$ onto open subsets $V_i \subseteq \mathbb{Q}_p^n$ such that the transition maps $\varphi_j\circ\varphi_i^{-1}$ are analytic on their domains; a **morphism** of $p$-adic manifolds is a continuous map that is analytic in the charts. A **$p$-adic Lie group** is a group object in this category: a group $G$ with the structure of a $p$-adic analytic manifold for which the multiplication $G\times G\to G$ and the inversion $G\to G$ are morphisms.
+**Definition.** A **$p$-adic analytic manifold** of dimension $n$ is a topological space $M$ together with an open cover $\{\Omega_i\}$ and homeomorphisms $\varphi_i : \Omega_i \to V_i$ onto open subsets $V_i \subseteq \mathbb{Q}_p^n$ such that the transition maps $\varphi_j\circ\varphi_i^{-1}$ are analytic on their domains; a **morphism** of $p$-adic manifolds is a continuous map that is analytic in the charts. A **$p$-adic Lie group** is a group object in this category: a group $G$ with the structure of a $p$-adic analytic manifold for which the multiplication $G\times G\to G$ and the inversion $G\to G$ are morphisms.
 
 **Example.** The additive group $\mathbb{Q}_p^n$ is a $p$-adic Lie group of dimension $n$ with the trivial atlas; the multiplicative group $\mathbb{Q}_p^\times$ is a $p$-adic Lie group of dimension $1$ with the atlas given by the logarithm on the ball $v(x-1) > 1/(p-1)$ and the charts $x \mapsto x/p^k$ elsewhere; the groups $GL_n(\mathbb{Q}_p)$ and $GL_n(\mathbb{Z}_p)$ are $p$-adic Lie groups of dimension $n^2$, the second one compact and of dimension $n^2$ because the congruence subgroups $1+p^kM_n(\mathbb{Z}_p)$ are clopen and the local structure at the identity is that of $M_n(\mathbb{Z}_p) \cong \mathbb{Z}_p^{n^2}$.
 
@@ -63,7 +63,7 @@ evaluated at $(x,y)$, a series in the noncommuting variables $X,Y$ whose terms a
 
 **Theorem (Lie correspondence over $\mathbb{Q}_p$).** Let $G$ be a $p$-adic Lie group with Lie algebra $\mathrm{G}$.
 
-**(a)** There is a neighbourhood $U$ of $0$ in $\mathrm{G}$ and a neighbourhood $V$ of $1$ in $G$ such that $\exp : U\to V$ is an analytic bijection with inverse $\log$, and the Hausdorff series makes $\exp(U)$ a subgroup of $G$ when $U$ is chosen inside the ball of convergence.
+**(a)** There is a neighbourhood $\Omega$ of $0$ in $\mathrm{G}$ and a neighbourhood $V$ of $1$ in $G$ such that $\exp : \Omega\to V$ is an analytic bijection with inverse $\log$, and the Hausdorff series makes $\exp(\Omega)$ a subgroup of $G$ when $\Omega$ is chosen inside the ball of convergence.
 
 **(b)** Every morphism $f : G\to H$ of $p$-adic Lie groups is analytic, and its differential $df : \mathrm{G}\to\mathrm{H}$ is a homomorphism of Lie algebras; the functor $G\mapsto\mathrm{G}$ is faithful and, on the category of simply connected $p$-adic Lie groups, an equivalence onto the category of finite-dimensional $\mathbb{Q}_p$-Lie algebras. In particular every finite-dimensional Lie algebra over $\mathbb{Q}_p$ is the Lie algebra of a $p$-adic Lie group, unique up to isomorphism among the simply connected ones.
 
@@ -115,7 +115,7 @@ and in that case every open subgroup of $G$ is $p$-adic analytic, the rank of $G
 
 ### $p$-adic Analytic Groups and the Fifth Problem
 
-**Theorem (Lazard's $p$-adic fifth problem).** Let $G$ be a locally compact group that is totally disconnected and has **no small subgroups** — there is a neighbourhood $U$ of $1$ containing no nontrivial subgroup. Then $G$ is a $p$-adic Lie group with finitely many connected components, and conversely a $p$-adic Lie group has no small subgroups and is locally compact and totally disconnected. Consequently the locally compact totally disconnected groups that are Lie groups over a local field are exactly those without small subgroups, which is the $p$-adic form of the solution of Hilbert's fifth problem analysed in *Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory*.
+**Theorem (Lazard's $p$-adic fifth problem).** Let $G$ be a locally compact group that is totally disconnected and has **no small subgroups** — there is a neighbourhood $\Omega$ of $1$ containing no nontrivial subgroup. Then $G$ is a $p$-adic Lie group with finitely many connected components, and conversely a $p$-adic Lie group has no small subgroups and is locally compact and totally disconnected. Consequently the locally compact totally disconnected groups that are Lie groups over a local field are exactly those without small subgroups, which is the $p$-adic form of the solution of Hilbert's fifth problem analysed in *Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory*.
 
 **Proof sketch.** The theorem of Lazard reduces the problem to the structure of the compact open subgroups: a compact totally disconnected group without small subgroups is a compact $p$-adic Lie group by the theory of the pro-$p$ groups of finite rank and the uniformisation of their Lie algebras. The converse is immediate from the exponential coordinates. The statement is Lazard's and is quoted from the literature; the real case is the theorem of Gleason, Montgomery and Zippin discussed in *Hilbert's Fifth Problem and Infinite-Dimensional Lie Theory*.
 

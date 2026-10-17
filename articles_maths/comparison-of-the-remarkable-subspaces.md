@@ -23,18 +23,18 @@ The relations between the remarkable subspaces are read off from four subspaces 
 **Definition.** The **coordinate blocks** are the four real subspaces
 
 $$
-A_1 = \mathbb{R}e_0 , \qquad A_2 = \mathbb{R}(ie_0) , \qquad
-B_1 = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\} , \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1, ie_2, ie_3\} ,
+A_1 = \mathbb{R}e_t , \qquad A_2 = \mathbb{R}(ie_t) , \qquad
+B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z\} , \qquad B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x, i\vec e_y, i\vec e_z\} ,
 $$
 
-the two **scalar blocks** $A_1, A_2$ of dimension $1$ and the two **vector blocks** $B_1, B_2$ of dimension $3$. They are the pieces into which the eight real coordinates of $\mathbb{B}$ group: the two scalar blocks carry the two real coordinates of the scalar coefficient $Q_0$, and the two vector blocks the six real coordinates of the vector part.
+the two **scalar blocks** $A_1, A_2$ of dimension $1$ and the two **vector blocks** $B_1, B_2$ of dimension $3$. They are the pieces into which the eight real coordinates of $\mathbb{B}$ group: the two scalar blocks carry the two real coordinates of the scalar coefficient $Q_t$, and the two vector blocks the six real coordinates of the vector part.
 
-Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, the four blocks are the four Clifford grades:
+Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\vec e_k$, the four blocks are the four Clifford grades:
 
 | block | $A_1$ | $B_2$ | $B_1$ | $A_2$ |
 |---|---|---|---|---|
 | grade | $0$ | $1$ | $2$ | $3$ |
-| basis | $e_0$ | $ie_1,ie_2,ie_3$ | $e_1,e_2,e_3$ | $ie_0$ |
+| basis | $e_t$ | $i\vec e_x,i\vec e_y,i\vec e_z$ | $\vec e_x,\vec e_y,\vec e_z$ | $ie_t$ |
 
 grade zero is the real scalar line, grade one the imaginary pure quaternions, grade two the real pure quaternions and grade three the imaginary scalar line, so that the quaternion vector part is the grade-two part while the geometric vectors of the Clifford reading are the grade-one part; the two names do not agree, and the literature on the algebra records the trap. The table of sums below is therefore a table of sums of grades,
 
@@ -49,10 +49,10 @@ Each block is the intersection of the three subspaces that contain it:
 
 | block | basis | $\dim_{\mathbb{R}}$ | it is the intersection |
 |---|---|---|---|
-| $A_1$ | $e_0$ | $1$ | $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$ |
-| $A_2$ | $ie_0$ | $1$ | $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ |
-| $B_1$ | $e_1, e_2, e_3$ | $3$ | $\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ |
-| $B_2$ | $ie_1, ie_2, ie_3$ | $3$ | $\mathrm{Vect}(\mathbb{B}) \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$ |
+| $A_1$ | $e_t$ | $1$ | $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$ |
+| $A_2$ | $ie_t$ | $1$ | $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ |
+| $B_1$ | $\vec e_x, \vec e_y, \vec e_z$ | $3$ | $\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ |
+| $B_2$ | $i\vec e_x, i\vec e_y, i\vec e_z$ | $3$ | $\mathrm{Vect}(\mathbb{B}) \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$ |
 
 **Theorem.** Each of the remarkable subspaces is the sum of two blocks:
 
@@ -89,7 +89,7 @@ The fifteen dimensions, the diagonal carrying the dimensions of the subspaces th
 Three features of the table are used again and again in the thematic articles.
 
 - The two members of a decomposition meet in the origin. The entries $0$ are exactly the three pairs $(\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}))$, $(\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}})$ and $(\mathbb{M}_+, \mathbb{M}_-)$, and no other pair meets in the origin.
-- The centre meets each of the other four subspaces in a scalar line: $A_1 = \mathbb{R}e_0$ with the quaternion and Hermitian subspaces, $A_2 = \mathbb{R}(ie_0)$ with the anti-quaternion and anti-Hermitian ones.
+- The centre meets each of the other four subspaces in a scalar line: $A_1 = \mathbb{R}e_t$ with the quaternion and Hermitian subspaces, $A_2 = \mathbb{R}(ie_t)$ with the anti-quaternion and anti-Hermitian ones.
 - The vector subspace meets each of the other four in a vector triple: $B_1$ with the quaternion and anti-Hermitian subspaces, $B_2$ with the anti-quaternion and Hermitian ones.
 
 In particular, no two of the remarkable subspaces are equal, since equal subspaces would meet in their common dimension, and no off-diagonal entry of the table is $2$, $4$ or $6$.
@@ -129,24 +129,24 @@ Over the coordinate blocks the subspaces sit at the following levels of dimensio
 | $\mathbb{B}$ | the whole algebra, dimension $8$ |
 | the sums | $\mathbb{C}_{\mathbb{B}}+\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}+i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_++\mathbb{M}_-$ — all equal to $\mathbb{B}$ |
 | the four-dimensional spaces | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ |
-| the three-dimensional triples | $\langle e_1,e_2,e_3\rangle=\mathrm{Vect}\cap\mathbb{H}_{\mathbb{B}}$, $\langle ie_1,ie_2,ie_3\rangle=\mathrm{Vect}\cap\mathbb{M}_+$ |
-| the two-dimensional centre | $\mathbb{C}_{\mathbb{B}}=\langle e_0\rangle\oplus\langle ie_0\rangle$ |
-| the one-dimensional lines | $\langle e_0\rangle$, $\langle ie_0\rangle$ |
+| the three-dimensional triples | $\langle \vec e_x,\vec e_y,\vec e_z\rangle=\mathrm{Vect}\cap\mathbb{H}_{\mathbb{B}}$, $\langle i\vec e_x,i\vec e_y,i\vec e_z\rangle=\mathrm{Vect}\cap\mathbb{M}_+$ |
+| the two-dimensional centre | $\mathbb{C}_{\mathbb{B}}=\langle e_t\rangle\oplus\langle ie_t\rangle$ |
+| the one-dimensional lines | $\langle e_t\rangle$, $\langle ie_t\rangle$ |
 | the origin | $0$ |
 
 The object is not a chain, and it is not closed under sum, being the union of the three decompositions of $\mathbb{B}$ rather than a single distributive lattice: the intersections of §*The Intersections* are its meets, and the sums of §*The Sums* are its joins wherever the sum does not reach the top. Its skeleton is the block table, that is, the three decompositions of the four coordinate blocks, and the levels record how the remarkable subspaces sit over those blocks.
 
 ## Worked Examples
 
-**An element and its blocks.** Take $\tilde{Q} = 3e_1 + ie_2$. Its real part $3e_1$ lies in the real vector block $B_1$ and its imaginary part $ie_2$ in the imaginary vector block $B_2$, while both scalar blocks carry nothing. Every subspace containing $\tilde{Q}$ must then contain both $B_1$ and $B_2$, and the only sum of two blocks that does so is $\mathrm{Vect}(\mathbb{B}) = B_1 \oplus B_2$: the element lies in the vector subspace and in none of the other five. Its two parts lie in the two three-dimensional intersections $B_1 = \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ and $B_2 = i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$, which is the block reading of the entries $3$ of the intersection table.
+**An element and its blocks.** Take $\tilde{Q} = 3\vec e_x + i\vec e_y$. Its real part $3\vec e_x$ lies in the real vector block $B_1$ and its imaginary part $i\vec e_y$ in the imaginary vector block $B_2$, while both scalar blocks carry nothing. Every subspace containing $\tilde{Q}$ must then contain both $B_1$ and $B_2$, and the only sum of two blocks that does so is $\mathrm{Vect}(\mathbb{B}) = B_1 \oplus B_2$: the element lies in the vector subspace and in none of the other five. Its two parts lie in the two three-dimensional intersections $B_1 = \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ and $B_2 = i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+$, which is the block reading of the entries $3$ of the intersection table.
 
 **An intersection of dimension three.** The quaternion subspace is $A_1 \oplus B_1$ and the anti-Hermitian subspace is $A_2 \oplus B_1$, so they share the single block $B_1$ and meet in it:
 
 $$
-\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = B_1 = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad \dim_{\mathbb{R}} = 3 .
+\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z\}, \qquad \dim_{\mathbb{R}} = 3 .
 $$
 
-The same answer follows from the defining conditions: an element of $\mathbb{H}_{\mathbb{B}}$ has real coefficients, and an element of $\mathbb{M}_-$ has a purely imaginary scalar coefficient and real vector coefficients, so the scalar coefficient must vanish and the element is a real vector. The element $e_1 + 2e_2$ is a concrete member, and $3$ is the entry of this pair in the intersection table.
+The same answer follows from the defining conditions: an element of $\mathbb{H}_{\mathbb{B}}$ has real coefficients, and an element of $\mathbb{M}_-$ has a purely imaginary scalar coefficient and real vector coefficients, so the scalar coefficient must vanish and the element is a real vector. The element $\vec e_x + 2\vec e_y$ is a concrete member, and $3$ is the entry of this pair in the intersection table.
 
 ## The Involutions as Sign Patterns
 
@@ -187,7 +187,7 @@ The centre and the vector subspace are stable, the quaternion subspace is carrie
 
 ## Summary
 
-The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate blocks $A_1 = \mathbb{R}e_0$, $A_2 = \mathbb{R}(ie_0)$, $B_1 = \operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $B_2 = \operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, each of which is the intersection of the three subspaces containing it. Every one of the remarkable subspaces is a sum of two blocks: the centre of the two scalar blocks, the vector subspace of the two vector blocks, and each of the four four-dimensional subspaces of one scalar and one vector block, the four ways of choosing the pair being the four such subspaces. The three decompositions of the algebra are the three pairings of the four blocks into two complementary pairs, which is why there are exactly three. The four involutions, the reversal included, give a fixed space and an anti-fixed space each; the eight labelled spaces reduce to the remarkable subspaces, the Hermitian pair being counted twice, and they sit over the four blocks in the lattice of the fixed spaces, which is not a chain and not closed under sum. Two distinct subspaces meet in the blocks they share, so the fifteen pairwise intersections have dimension $0$, $1$ or $3$: the members of a decomposition meet in the origin, the centre meets each other subspace in a scalar line, and the vector subspace in a vector triple. Exactly the three pairs of the decompositions sum to the whole algebra; the pairs sharing a vector triple sum to a subspace of dimension $7$, and those sharing a scalar line to one of dimension $5$. Two worked examples make the block arithmetic concrete: the element $3e_1 + ie_2$ lies in $\mathrm{Vect}(\mathbb{B})$ alone, and $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ is the single block $B_1$. Each of the four conjugations preserves each subspace and acts on it diagonally with signs $+1$ and $-1$, the vanishing multiplicities of $-1$ identifying the subspaces fixed by each conjugation and the table of multiplicities exhibiting the composition ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ as a symmetric difference. The complex structure $J : \tilde{Q} \mapsto i\tilde{Q}$ preserves the centre and the vector subspace and exchanges the other two pairs; none of the four conjugations does this, each of them preserving every one of the remarkable subspaces.
+The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate blocks $A_1 = \mathbb{R}e_t$, $A_2 = \mathbb{R}(ie_t)$, $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, each of which is the intersection of the three subspaces containing it. Every one of the remarkable subspaces is a sum of two blocks: the centre of the two scalar blocks, the vector subspace of the two vector blocks, and each of the four four-dimensional subspaces of one scalar and one vector block, the four ways of choosing the pair being the four such subspaces. The three decompositions of the algebra are the three pairings of the four blocks into two complementary pairs, which is why there are exactly three. The four involutions, the reversal included, give a fixed space and an anti-fixed space each; the eight labelled spaces reduce to the remarkable subspaces, the Hermitian pair being counted twice, and they sit over the four blocks in the lattice of the fixed spaces, which is not a chain and not closed under sum. Two distinct subspaces meet in the blocks they share, so the fifteen pairwise intersections have dimension $0$, $1$ or $3$: the members of a decomposition meet in the origin, the centre meets each other subspace in a scalar line, and the vector subspace in a vector triple. Exactly the three pairs of the decompositions sum to the whole algebra; the pairs sharing a vector triple sum to a subspace of dimension $7$, and those sharing a scalar line to one of dimension $5$. Two worked examples make the block arithmetic concrete: the element $3\vec e_x + i\vec e_y$ lies in $\mathrm{Vect}(\mathbb{B})$ alone, and $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ is the single block $B_1$. Each of the four conjugations preserves each subspace and acts on it diagonally with signs $+1$ and $-1$, the vanishing multiplicities of $-1$ identifying the subspaces fixed by each conjugation and the table of multiplicities exhibiting the composition ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ as a symmetric difference. The complex structure $J : \tilde{Q} \mapsto i\tilde{Q}$ preserves the centre and the vector subspace and exchanges the other two pairs; none of the four conjugations does this, each of them preserving every one of the remarkable subspaces.
 
 ## Summary of Notation
 
@@ -197,8 +197,8 @@ The remarkable subspaces of $\mathbb{B}$ are organized by the four coordinate bl
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}$ | the quaternion and anti-quaternion subspaces |
 | $\mathbb{M}_+, \mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, \flat$ | quaternion, complex, Hermitian conjugation and reversal |
-| $A_1, A_2$ | the scalar blocks $\mathbb{R}e_0$ and $\mathbb{R}(ie_0)$ |
-| $B_1, B_2$ | the vector blocks $\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ |
+| $A_1, A_2$ | the scalar blocks $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ |
+| $B_1, B_2$ | the vector blocks $\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ and $\operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\oplus$ | direct sum of real subspaces |
 | $J$ | the complex structure $J : \tilde{Q} \mapsto i\tilde{Q}$, $J^2 = -\mathrm{id}$, exchanging the scalar blocks and the vector blocks |
 | fixed space, anti-fixed space | the elements fixed, or negated, by an involution |

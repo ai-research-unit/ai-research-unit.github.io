@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, e_1, e_2, e_3$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
+The algebra article defined the split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$, its basis $1, \vec e_x, \vec e_y, \vec e_z$, its conjugation, its central product $\tilde q\tilde{q}^{\natural}$ and its distinguished subspaces. This article treats the **idempotents** of $\mathbb{H}_{\mathrm{s}}$ — the elements $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$ — and the projections and direct sum decompositions they carry.
 
 Idempotents are the algebraic form of a projection, and in $\mathbb{H}_{\mathrm{s}}$ they do four jobs at once:
 
@@ -16,13 +16,13 @@ The last two items are developed in the companion articles *Split-Quaternion Zer
 
 **Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\vec v = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, the relations $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$ and $\vec e_x \vec e_y = -\vec e_y \vec e_x$. A general element is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, its scalar part is $q_t = \operatorname{Sc}(\tilde q)$ and its vector part is $\vec v = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$. The conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
 
 $$
-\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
+\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 ;
 $$
 
-it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\vec v^2 = -\langle \vec v\rangle_{\natural}$.
+it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$; on $V$ the square of an element is minus that product, $\vec v^2 = -\langle \vec v\rangle_{\natural}$.
 
 ## Idempotents in an Algebra
 
@@ -45,32 +45,32 @@ The algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ is simple, hence sem
 Put
 
 $$
-\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2).
+\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y).
 $$
 
-Since $e_2^2 = +1$, one has $\tilde\pi_1^2 = \tilde\pi_1$, $\tilde\pi_2^2 = \tilde\pi_2$ and
+Since $\vec e_y^2 = +1$, one has $\tilde\pi_1^2 = \tilde\pi_1$, $\tilde\pi_2^2 = \tilde\pi_2$ and
 
 $$
-\tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1.
+\tilde\pi_1 \tilde\pi_2 = \tilde\pi_2 \tilde\pi_1 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1.
 $$
 
-So $\tilde\pi_1$ and $\tilde\pi_2$ are orthogonal idempotents summing to the unit. They are **not central**: the element $e_1$ anticommutes with $e_2$, hence
+So $\tilde\pi_1$ and $\tilde\pi_2$ are orthogonal idempotents summing to the unit. They are **not central**: the element $\vec e_x$ anticommutes with $\vec e_y$, hence
 
 $$
-e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3), \qquad \tilde\pi_1 e_1 = \tfrac{1}{2}(e_1 - e_3),
+\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z), \qquad \tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z),
 $$
 
-and the two differ, which is the non-centrality of $\tilde\pi_{1,2}$ in the algebra; the two idempotents are the idempotents of the split-complex subalgebra $\operatorname{span}\{1, e_2\}$.
+and the two differ, which is the non-centrality of $\tilde\pi_{1,2}$ in the algebra; the two idempotents are the idempotents of the split-complex subalgebra $\operatorname{span}\{1, \vec e_y\}$.
 
-Neither is central: an element commuting with $\tilde\pi_1$ commutes with $e_2 = 2\tilde\pi_1 - 1$, and the centraliser of $e_2$ in $\mathbb{H}_{\mathrm{s}}$ is the split-complex plane $\operatorname{span}\{1, e_2\}$, since $e_1$ and $e_3$ anticommute with $e_2$. Both idempotents are primitive: if $\tilde\pi_1 = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_1$ and so lie in $\operatorname{span}\{1, e_2\}$, whose only idempotents are $0, 1, \tilde\pi_1, \tilde\pi_2$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_1$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $e_2$, namely $\tilde\pi_1 e_2 = \tilde\pi_1$ and $\tilde\pi_2 e_2 = -\tilde\pi_2$.
+Neither is central: an element commuting with $\tilde\pi_1$ commutes with $\vec e_y = 2\tilde\pi_1 - 1$, and the centraliser of $\vec e_y$ in $\mathbb{H}_{\mathrm{s}}$ is the split-complex plane $\operatorname{span}\{1, \vec e_y\}$, since $\vec e_x$ and $\vec e_z$ anticommute with $\vec e_y$. Both idempotents are primitive: if $\tilde\pi_1 = p + q$ with $p, q$ orthogonal idempotents, then $p$ and $q$ commute with $\tilde\pi_1$ and so lie in $\operatorname{span}\{1, \vec e_y\}$, whose only idempotents are $0, 1, \tilde\pi_1, \tilde\pi_2$, and no nontrivial orthogonal pair among these sums to $\tilde\pi_1$. Unlike the biquaternion case, where the two idempotents are the diagonal idempotents on which the central unit acts, here the two idempotents carry opposite eigenvalues of $\vec e_y$, namely $\tilde\pi_1 \vec e_y = \tilde\pi_1$ and $\tilde\pi_2 \vec e_y = -\tilde\pi_2$.
 
-Left multiplication by $e_1, e_2, e_3$ acts on $\tilde\pi_1$ as
+Left multiplication by $\vec e_x, \vec e_y, \vec e_z$ acts on $\tilde\pi_1$ as
 
 $$
-e_2 \tilde\pi_1 = \tilde\pi_1, \qquad e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3), \qquad e_3 \tilde\pi_1 = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_1,
+\vec e_y \tilde\pi_1 = \tilde\pi_1, \qquad \vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z), \qquad \vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1,
 $$
 
-so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $e_1 \tilde\pi_1$, and $\{\tilde\pi_1, e_1 \tilde\pi_1\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_2$ read $e_2 \tilde\pi_2 = -\tilde\pi_2$ and $e_3 \tilde\pi_2 = -\tfrac{1}{2}(e_1 - e_3) = -e_1 \tilde\pi_2$, so $\{\tilde\pi_2, e_1 \tilde\pi_2\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$.
+so the four general products $e_\mu \tilde\pi_1$ reduce to $\tilde\pi_1$ and $\vec e_x \tilde\pi_1$, and $\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ over $\mathbb{R}$. The analogous identities for $\tilde\pi_2$ read $\vec e_y \tilde\pi_2 = -\tilde\pi_2$ and $\vec e_z \tilde\pi_2 = -\tfrac{1}{2}(\vec e_x - \vec e_z) = -\vec e_x \tilde\pi_2$, so $\{\tilde\pi_2, \vec e_x \tilde\pi_2\}$ spans $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$.
 
 ## The Classification of the Idempotents
 
@@ -82,19 +82,19 @@ $$
 
 where $\eta \in V$ is a root of $+1$, i.e. $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$. There are no other idempotents in $\mathbb{H}_{\mathrm{s}}$.
 
-**Proof.** Write $\tilde\pi = q_0 + \vec q$ with $q_0 \in \mathbb{R}$ and $\vec q \in V$. Since $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector,
+**Proof.** Write $\tilde\pi = q_t + \vec q$ with $q_t \in \mathbb{R}$ and $\vec q \in V$. Since $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector,
 
 $$
-\tilde\pi^2 = q_0^2 + 2q_0\vec q + \vec q^2 = \big(q_0^2 - \langle \vec q\rangle_{\natural}\big) + 2q_0\vec q.
+\tilde\pi^2 = q_t^2 + 2q_t\vec q + \vec q^2 = \big(q_t^2 - \langle \vec q\rangle_{\natural}\big) + 2q_t\vec q.
 $$
 
-Equating to $\tilde\pi = q_0 + \vec q$ and separating the scalar and vector parts gives the two equations
+Equating to $\tilde\pi = q_t + \vec q$ and separating the scalar and vector parts gives the two equations
 
 $$
-q_0^2 - \langle \vec q\rangle_{\natural} = q_0, \qquad 2q_0\vec q = \vec q.
+q_t^2 - \langle \vec q\rangle_{\natural} = q_t, \qquad 2q_t\vec q = \vec q.
 $$
 
-If $\vec q = 0$, then $q_0^2 = q_0$, so $q_0 = 0$ or $q_0 = 1$, giving the trivial idempotents. If $\vec q \neq 0$, the second equation gives $q_0 = \tfrac{1}{2}$. Substituting into the first gives $\tfrac{1}{4} - \langle \vec q\rangle_{\natural} = \tfrac{1}{2}$, so $\langle \vec q\rangle_{\natural} = -\tfrac{1}{4}$.
+If $\vec q = 0$, then $q_t^2 = q_t$, so $q_t = 0$ or $q_t = 1$, giving the trivial idempotents. If $\vec q \neq 0$, the second equation gives $q_t = \tfrac{1}{2}$. Substituting into the first gives $\tfrac{1}{4} - \langle \vec q\rangle_{\natural} = \tfrac{1}{2}$, so $\langle \vec q\rangle_{\natural} = -\tfrac{1}{4}$.
 
 Define $\eta = 2\vec q$. Then $\eta \in V$, and
 
@@ -104,7 +104,7 @@ $$
 
 where the second identity uses $\vec q^2 = -\langle \vec q\rangle_{\natural}$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \vec q = \tfrac{1}{2}(1 + \eta)$.
 
-The roots of $+1$ in $V$ are the vectors of the **spacelike unit hyperboloid** $N = -1$, a one-sheeted hyperboloid of two real dimensions, as recorded in *Split-Quaternion Roots of Minus One*, §*The Roots of $+1$*. The standard idempotents correspond to $\eta = e_2$ and $\eta = -e_2$, both of which satisfy $N = -1$.
+The roots of $+1$ in $V$ are the vectors of the **spacelike unit hyperboloid** $N = -1$, a one-sheeted hyperboloid of two real dimensions, as recorded in *Split-Quaternion Roots of Minus One*, §*The Roots of $+1$*. The standard idempotents correspond to $\eta = \vec e_y$ and $\eta = -\vec e_y$, both of which satisfy $N = -1$.
 
 ## The Bijection With the Roots of $+1$
 
@@ -122,7 +122,7 @@ $$
 \tilde\pi(\eta)^2 = \tfrac{1}{4}(1 + 2\eta + \eta^2) = \tfrac{1}{4}(1 + 2\eta + 1) = \tfrac{1}{2}(1 + \eta) = \tilde\pi(\eta),
 $$
 
-and $\tilde\pi(\eta)$ is non-scalar because $\eta \neq 0$. *Injective:* $\tilde\pi(\eta) = \tilde\pi(\eta')$ gives $\eta = \eta'$. *Surjective:* the classification theorem says every non-scalar idempotent is $\tfrac{1}{2}(1+\eta)$ for a root $\eta$ of $+1$ in $V$.
+and $\tilde\pi(\eta)$ is non-scalar because $\eta \neq 0$. *Injective:* $\tilde\pi(\eta_1) = \tilde\pi(\eta_2)$ gives $\eta_1 = \eta_2$. *Surjective:* the classification theorem says every non-scalar idempotent is $\tfrac{1}{2}(1+\eta)$ for a root $\eta$ of $+1$ in $V$.
 
 The **complementary pairs** $\{\tilde\pi, 1 - \tilde\pi\}$ of non-scalar idempotents are in bijection with the roots of $+1$ modulo the sign identification $\eta \sim -\eta$, since
 
@@ -130,7 +130,7 @@ $$
 \tilde\pi(-\eta) = \tfrac{1}{2}(1 - \eta) = 1 - \tilde\pi(\eta).
 $$
 
-Thus $\tilde\pi(\eta)$ and $\tilde\pi(-\eta)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\eta, -\eta\}$. The two standard idempotents $\tilde\pi_{1,2}$ are the pair of the class $\{\pm e_2\}$.
+Thus $\tilde\pi(\eta)$ and $\tilde\pi(-\eta)$ are the two members of a complementary pair, and the pair corresponds to the class $\{\eta, -\eta\}$. The two standard idempotents $\tilde\pi_{1,2}$ are the pair of the class $\{\pm \vec e_y\}$.
 
 ## Idempotents as Projections
 
@@ -152,14 +152,14 @@ For the standard pair this reads
 
 $$
 \mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2, \qquad
-\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\}, \qquad
-\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, e_1 \tilde\pi_2\},
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}, \qquad
+\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\},
 $$
 
 each summand of real dimension $2$. The decomposition is a decomposition of the underlying module. It is **not** an algebra decomposition: since $\tilde\pi_1$ is not central, the off-diagonal product $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ does not vanish. Indeed
 
 $$
-\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0,
+\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0,
 $$
 
 so an element of the first summand times an element of the second need not lie in either, and the sum is not closed as a product of subalgebras. This is the precise sense in which a non-central idempotent gives a module splitting without giving an algebra splitting; the algebra-level decomposition of a central idempotent, in which the off-diagonal corners vanish and the sum is a product of algebras, does not occur in the simple algebra $\mathbb{H}_{\mathrm{s}}$.
@@ -175,7 +175,7 @@ $$
 and both factors are nonzero unless $\tilde\pi$ is $0$ or $1$. The direct verification is the product
 
 $$
-\tilde\pi_{1,2} \bar{\tilde\pi}_{1,2} = \tfrac{1}{4}(1 \pm e_2)(1 \mp e_2) = \tfrac{1}{4}(1 - e_2^2) = 0,
+\tilde\pi_{1,2} \bar{\tilde\pi}_{1,2} = \tfrac{1}{4}(1 \pm \vec e_y)(1 \mp \vec e_y) = \tfrac{1}{4}(1 - \vec e_y^2) = 0,
 $$
 
 and for a general non-scalar idempotent $\tilde\pi = \tfrac{1}{2}(1+\eta)$ with $\eta \in V$ and $\eta^2 = 1$,
@@ -196,11 +196,11 @@ $$
 
 satisfy $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ as left $\mathbb{H}_{\mathrm{s}}$-modules, and each has real dimension $2$ and is a minimal left ideal.
 
-**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2) = \tilde q \tilde\pi_1 + \tilde q \tilde\pi_2$, and the intersection of the two ideals is zero because $\tilde\pi_1 \tilde\pi_2 = 0$: if $\tilde q \tilde\pi_1 = \tilde p \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q \tilde\pi_1 = 0$. For the dimension, the reduction $e_3 \tilde\pi_1 = e_1 \tilde\pi_1$ above shows that the four general products $e_\mu \tilde\pi_1$ lie in $\operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_1$.
+**Proof.** Every $\tilde q$ satisfies $\tilde q = \tilde q(\tilde\pi_1 + \tilde\pi_2) = \tilde q \tilde\pi_1 + \tilde q \tilde\pi_2$, and the intersection of the two ideals is zero because $\tilde\pi_1 \tilde\pi_2 = 0$: if $\tilde q_1 \tilde\pi_1 = \tilde q_2 \tilde\pi_2$ then multiplying on the right by $\tilde\pi_1$ gives $\tilde q_1 \tilde\pi_1 = 0$. For the dimension, the reduction $\vec e_z \tilde\pi_1 = \vec e_x \tilde\pi_1$ above shows that the four general products $e_\mu \tilde\pi_1$ lie in $\operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\}$, and the two are independent, so $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ has dimension $2$; the two summands then span $2 + 2 = 4 = \dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}}$. Minimality is the standard fact that the left ideal generated by a primitive idempotent of a ring is a minimal left ideal (*Rings*), applied to the primitive idempotent $\tilde\pi_1$.
 
 **Proposition.** Each minimal left ideal is a two-dimensional real vector space, and the two ideals are isomorphic to one another as left $\mathbb{H}_{\mathrm{s}}$-modules.
 
-**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ is uniquely $\alpha \tilde\pi_1 + \beta e_1 \tilde\pi_1$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_1 + \beta e_1 \tilde\pi_1 \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q'$ sends $\tilde q \tilde\pi_1$ to $(\tilde q' \tilde q) \tilde\pi_1$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_2$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
+**Proof.** Every element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$ is uniquely $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1$ with $\alpha, \beta \in \mathbb{R}$, so the assignment $\alpha \tilde\pi_1 + \beta \vec e_x \tilde\pi_1 \mapsto (\alpha, \beta)$ is a bijection onto $\mathbb{R}^2$, exhibiting the ideal as a two-dimensional real vector space. Left multiplication by $\tilde q_2$ sends $\tilde q_1 \tilde\pi_1$ to $(\tilde q_2 \tilde q_1) \tilde\pi_1$, again an element of $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, with coordinates linear in $(\alpha, \beta)$; hence it is an isomorphism of left $\mathbb{H}_{\mathrm{s}}$-modules. The same argument applies to $\tilde\pi_2$; since the algebra is simple, all its simple left modules are isomorphic, so the two ideals are isomorphic.
 
 The two ideals here are the two minimal left ideals of the projective line of left ideals of *Split-Quaternion Ideals and Peirce Decomposition*, where the Peirce corners and the matrix units are computed. The corresponding right ideals are $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ and $\tilde\pi_2 \mathbb{H}_{\mathrm{s}}$.
 
@@ -215,10 +215,10 @@ The trivial idempotents $0$ and $1$ are the two isolated points of the idempoten
 The contrast with the biquaternion idempotent theory is the contrast of the two signs. In the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$, the standard idempotents
 
 $$
-\tilde\Pi_+ = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_- = \tfrac{1}{2}(e_0 - i e_3)
+\tilde\Pi_+ = \tfrac{1}{2}(e_t + i \vec e_z), \qquad \tilde\Pi_- = \tfrac{1}{2}(e_t - i \vec e_z)
 $$
 
-are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\tilde\Xi \mapsto \tfrac{1}{2}(e_0 + \tilde\Xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$. $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_t$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\tilde\Xi \mapsto \tfrac{1}{2}(e_t + \tilde\Xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$. $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{H}_{\mathbb{D}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{s}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{D}$ exhibits, and the split-quaternion idempotents $\tilde\pi_{1,2}$ are precisely the images of the idempotents of $\mathbb{D}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{s}}$, where they cease to be central.
 
@@ -227,12 +227,12 @@ The algebra in which the idempotents are genuinely **central** is not $\mathbb{B
 An idempotent of $\mathbb{H}_{\mathrm{s}}$ is an element $\tilde\pi$ with $\tilde\pi^2 = \tilde\pi$. The algebra has the standard orthogonal idempotents
 
 $$
-\tilde\pi_1 = \tfrac{1}{2}(1 + e_2), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - e_2), \qquad \tilde\pi_1 \tilde\pi_2 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1,
+\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y), \qquad \tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y), \qquad \tilde\pi_1 \tilde\pi_2 = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1,
 $$
 
-which are non-central and primitive, carrying opposite eigenvalues of $e_2$. They give the module decomposition $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ into two minimal left ideals, each of real dimension $2$.
+which are non-central and primitive, carrying opposite eigenvalues of $\vec e_y$. They give the module decomposition $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ into two minimal left ideals, each of real dimension $2$.
 
-Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $\langle\tilde\pi\rangle_{\natural} = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}_{\mathrm{s}} = \tilde\pi\mathbb{H}_{\mathrm{s}} \oplus (1-\tilde\pi)\mathbb{H}_{\mathrm{s}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_{1,2}$ are the idempotents of the subalgebra $\mathbb{D}_2 = \operatorname{span}\{1, e_2\} \cong \mathbb{D}$.
+Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfrac{1}{2}(1 + \eta)$ with $\eta \in V$ and $\eta^2 = 1$, equivalently $\langle \eta\rangle_{\natural} = -1$; the map $\eta \mapsto \tfrac{1}{2}(1+\eta)$ is a bijection from the roots of $+1$ in the vector subspace onto the non-scalar idempotents, under which complementary pairs correspond to the classes $\{\eta, -\eta\}$. Every non-scalar idempotent is a zero divisor with $\langle\tilde\pi\rangle_{\natural} = 0$, and none is nilpotent. The idempotents and their complements split the underlying module as $\mathbb{H}_{\mathrm{s}} = \tilde\pi\mathbb{H}_{\mathrm{s}} \oplus (1-\tilde\pi)\mathbb{H}_{\mathrm{s}}$, but not as an algebra, because the off-diagonal Peirce corner does not vanish; $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$. The idempotents of the algebra are exactly the idempotents of its split-complex subalgebras; in particular $\tilde\pi_{1,2}$ are the idempotents of the subalgebra $\mathbb{D}_2 = \operatorname{span}\{1, \vec e_y\} \cong \mathbb{D}$.
 
 ## Summary of Notation
 
@@ -240,14 +240,14 @@ Every idempotent is either trivial ($0$ or $1$) or of the form $\tilde\pi = \tfr
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $\tilde\pi$ | a general idempotent, $\tilde\pi^2 = \tilde\pi$ | this article |
-| $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$, $\tilde\pi_2 = \tfrac{1}{2}(1 - e_2)$ | the standard orthogonal idempotents, $\tilde\pi_1 + \tilde\pi_2 = 1$ | this article |
+| $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$, $\tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)$ | the standard orthogonal idempotents, $\tilde\pi_1 + \tilde\pi_2 = 1$ | this article |
 | $\eta$ | a root of $+1$ in $V$, $\eta^2 = 1$, $\langle \eta\rangle_{\natural} = -1$ | this article |
 | $\tilde\pi(\eta) = \tfrac{1}{2}(1 + \eta)$ | the idempotent of the root $\eta$; $\eta \mapsto \tilde\pi(\eta)$ is a bijection | this article |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{s}}$ | the minimal left and right ideals, each $\cong \mathbb{R}^2$ | this article |
 | $\tilde\pi_1 \mathbb{H}_{\mathrm{s}} \tilde\pi_2$ | the off-diagonal Peirce corner, nonzero | this article |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the central product, formed and evaluated algebraically; the metrical reading is in *Split-Quaternion Norm and Invertibility* | this article |
-| $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
-| $\mathbb{D}_2 = \operatorname{span}\{1, e_2\}$ | the split-complex subalgebra carrying $\tilde\pi_{1,2}$ | *Split-Quaternion Algebra* |
+| $S = \mathbb{R}\cdot 1$, $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | the scalar and vector subspaces | *Split-Quaternion Algebra* |
+| $\mathbb{D}_2 = \operatorname{span}\{1, \vec e_y\}$ | the split-complex subalgebra carrying $\tilde\pi_{1,2}$ | *Split-Quaternion Algebra* |
 | $\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | the idempotents of the split-complex algebra $\mathbb{D}$ | *Split-Complex Algebra* |
 
 ## Further Reading

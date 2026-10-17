@@ -141,11 +141,11 @@ The Hofer metric is bi-invariant: it is invariant under the left translations, i
 
 ### Fragmentation, Simplicity and Bounded Generation
 
-**Definition.** Let $M$ be a manifold and let, for a subset $U\subseteq M$, $\mathrm{Diff}(M)_U$ denote the subgroup of the diffeomorphisms supported in $U$, that is, equal to the identity outside $U$. The diffeomorphism group is **fragmented** over a cover $\{U_i\}$ if every element of $\mathrm{Diff}_0(M)$ is a finite product of the elements of the subgroups $\mathrm{Diff}(M)_{U_i}$.
+**Definition.** Let $M$ be a manifold and let, for a subset $\Xi\subseteq M$, $\mathrm{Diff}(M)_\Xi$ denote the subgroup of the diffeomorphisms supported in $\Xi$, that is, equal to the identity outside $\Xi$. The diffeomorphism group is **fragmented** over a cover $\{\Xi_i\}$ if every element of $\mathrm{Diff}_0(M)$ is a finite product of the elements of the subgroups $\mathrm{Diff}(M)_{\Xi_i}$.
 
-**Theorem (fragmentation; Thurston, Mather, Banyaga).** Let $M$ be a connected manifold and let $\{U_i\}$ be an open cover of $M$.
+**Theorem (fragmentation; Thurston, Mather, Banyaga).** Let $M$ be a connected manifold and let $\{\Xi_i\}$ be an open cover of $M$.
 
-**(a)** (fragmentation) Every $\phi\in\mathrm{Diff}_0(M)$ is a finite product of the elements of the subgroups $\mathrm{Diff}(M)_{U_i}$; the number of the factors is finite and, in the compact case, bounded by a constant depending only on the manifold and the cover.
+**(a)** (fragmentation) Every $\phi\in\mathrm{Diff}_0(M)$ is a finite product of the elements of the subgroups $\mathrm{Diff}(M)_{\Xi_i}$; the number of the factors is finite and, in the compact case, bounded by a constant depending only on the manifold and the cover.
 
 **(b)** (simplicity) For $M$ compact and connected, the group $\mathrm{Diff}_0(M)$ is simple and perfect: every element is a product of commutators, and the group has no non-trivial proper normal subgroup. The same holds for the volume-preserving group $\mathrm{Diff}(M,\Omega)_0$ and, by Banyaga's theorem, for the Hamiltonian group $\mathrm{Ham}(M,\omega)$, while for the symplectomorphism group the commutator subgroup is the kernel of the flux.
 

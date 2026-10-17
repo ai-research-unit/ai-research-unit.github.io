@@ -7,7 +7,7 @@ This article develops integration for functions of one split complex variable. I
 
 The base ring throughout is $\mathbb{D}$. It is a commutative ring with identity, of characteristic zero, in which $2$ is invertible; it is not an integral domain, because $1 + j$ and $1 - j$ are non-zero and their product is zero. This single algebraic fact governs the whole theory, and it divides the classical Cauchy theory into a half that survives and a half that does not. The **vanishing** statement — the integral of a split complex differentiable function over a closed contour is zero — survives, and it in fact holds on every domain, not merely on the simply connected ones. The **representation** statement — the Cauchy integral formula that recovers an interior value from a boundary integral, and with it the residue theorem, the Cauchy estimates, the mean value property and the Laurent expansion — does not survive, and the obstruction is exactly the zero-divisor cone. The kernel $1/(\zeta - A)$ of the formula is defined only where $\zeta - A$ is a unit, and the set where it is not is not the point $A$ but the two lines through $A$; no contour that surrounds $A$ avoids them.
 
-No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial_A, \partial_{\bar A}$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
+No physics is invoked. Split complex differentiability and the idempotent decomposition are used as they were set up in *Split-Complex Analysis*, and the operator notation $\partial/\partial A, \partial/\partial\bar A$ is the one fixed there. The general shape of the integral theorems, and the place of the present theory among its companions for $\mathbb{C}$ and the dual numbers, is the subject of *Hypercomplex Integration*.
 
 Notation: $A = a + ja'$ with $a, a' \in \mathbb{R}$, $\bar A = a - ja'$, and $\|A\|_E = \sqrt{a^2 + a'^2}$. The idempotent coordinates are
 
@@ -103,7 +103,7 @@ and $4aa'bb' \leq 4\lvert aa'\rvert \lvert bb'\rvert \leq (a^2 + a'^2)(b^2 + b'^
 
 The reason the split complex integral is tractable is that $A \mapsto (A_+, A_-)$ is an algebra isomorphism $\mathbb{D} \to \mathbb{R} \oplus \mathbb{R}$.
 
-**Theorem.** Let $f : U \to \mathbb{D}$ be written in the idempotent basis as $f = f_+ \Pi_1 + f_- \Pi_2$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to U$ be piecewise $C^1$. Then
+**Theorem.** Let $f : \Omega \to \mathbb{D}$ be written in the idempotent basis as $f = f_+ \Pi_1 + f_- \Pi_2$, with $f_\pm$ real-valued, and let $\gamma : [a,b] \to \Omega$ be piecewise $C^1$. Then
 
 $$
 \int_\gamma f(A)\,dA = \Pi_1 \int_{\gamma_+} f_+(A_+)\,dA_+ + \Pi_2 \int_{\gamma_-} f_-(A_-)\,dA_-,
@@ -125,47 +125,47 @@ $$
 \frac{\partial}{\partial A} = \frac{1}{2}\left(\frac{\partial}{\partial a} + j\,\frac{\partial}{\partial a'}\right), \qquad \frac{\partial}{\partial \bar A} = \frac{1}{2}\left(\frac{\partial}{\partial a} - j\,\frac{\partial}{\partial a'}\right),
 $$
 
-and $D = 2\,\partial_{\bar A} = \partial_a - j\,\partial_{a'}$ is the **split Cauchy–Riemann operator**.
+and $D = 2\,\partial/\partial\bar A = \partial/\partial a - j\,\partial/\partial a'$ is the **split Cauchy–Riemann operator**.
 
 **Proposition.** With $\partial_\pm = \partial/\partial A_\pm$,
 
 $$
-\frac{\partial}{\partial A} = \Pi_1\, \partial_+ + \Pi_2\, \partial_-, \qquad \frac{\partial}{\partial \bar A} = \Pi_2\, \partial_+ + \Pi_1\, \partial_-.
+\frac{\partial}{\partial A} = \Pi_1\, \partial/\partial A_+ + \Pi_2\, \partial/\partial A_-, \qquad \frac{\partial}{\partial \bar A} = \Pi_2\, \partial/\partial A_+ + \Pi_1\, \partial/\partial A_-.
 $$
 
-**Proof.** Because $A_+ = a + a'$ and $A_- = a - a'$, one has $\partial_a = \partial_+ + \partial_-$ and $\partial_{a'} = \partial_+ - \partial_-$. Substituting,
+**Proof.** Because $A_+ = a + a'$ and $A_- = a - a'$, one has $\partial/\partial a = \partial/\partial A_+ + \partial/\partial A_-$ and $\partial/\partial a' = \partial/\partial A_+ - \partial/\partial A_-$. Substituting,
 
 $$
-\frac{\partial}{\partial A} = \tfrac12\big((\partial_+ + \partial_-) + j(\partial_+ - \partial_-)\big) = \tfrac12\big((1+j)\partial_+ + (1-j)\partial_-\big) = \Pi_1\partial_+ + \Pi_2\partial_-,
+\frac{\partial}{\partial A} = \tfrac12\big((\partial/\partial A_+ + \partial/\partial A_-) + j(\partial/\partial A_+ - \partial/\partial A_-)\big) = \tfrac12\big((1+j)\partial/\partial A_+ + (1-j)\partial/\partial A_-\big) = \Pi_1\partial/\partial A_+ + \Pi_2\partial/\partial A_-,
 $$
 
 and the conjugate is computed the same way with $j$ replaced by $-j$, which interchanges $\Pi_1$ and $\Pi_2$.
 
-**Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial_A = \partial_a + j\,\partial_{a'}$,
+**Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial/\partial A = \partial/\partial a + j\,\partial/\partial a'$,
 
 $$
-\bar D D = D \bar D = \Box := \partial_a^2 - \partial_{a'}^2 = 4\,\partial_+ \partial_-.
+\bar D D = D \bar D = \Box := \partial^2/\partial a^2 - \partial^2/\partial a'^2 = 4\,\partial^2/\partial A_+\partial A_-.
 $$
 
-**Proof.** Expanding, $\bar D D = (\partial_a + j\partial_{a'})(\partial_a - j\partial_{a'}) = \partial_a^2 - j^2 \partial_{a'}^2 = \partial_a^2 - \partial_{a'}^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial_+ \partial_- = \tfrac14(\partial_a^2 - \partial_{a'}^2)$.
+**Proof.** Expanding, $\bar D D = (\partial/\partial a + j\partial/\partial a')(\partial/\partial a - j\partial/\partial a') = \partial^2/\partial a^2 - j^2 \partial^2/\partial a'^2 = \partial^2/\partial a^2 - \partial^2/\partial a'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial A_+\partial A_- = \tfrac14(\partial^2/\partial a^2 - \partial^2/\partial a'^2)$.
 
-So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial_+\partial_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
+So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\xi_1 - j\,\xi_2$, whose norm is $\xi_1^2 - \xi_2^2$, so it is a unit off the two lines $\xi_1 = \pm\xi_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial A_+\partial A_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
 ### The Cauchy–Riemann Equations
 
-**Theorem.** For a real differentiable $f : U \to \mathbb{D}$ with $f = f_+ \Pi_1 + f_- \Pi_2$, the following are equivalent.
+**Theorem.** For a real differentiable $f : \Omega \to \mathbb{D}$ with $f = f_+ \Pi_1 + f_- \Pi_2$, the following are equivalent.
 
-1. $f$ is split complex differentiable on $U$.
-2. $\partial_{\bar A} f = 0$, that is $D f = 0$.
+1. $f$ is split complex differentiable on $\Omega$.
+2. $\partial/\partial\bar A f = 0$, that is $D f = 0$.
 3. $f_+$ is independent of $A_-$ and $f_-$ is independent of $A_+$.
 
 **Proof.** The equivalence of (1) and (2) is the split Cauchy–Riemann equations of *Split-Complex Analysis*. For (2) and (3), apply the factorised operator: for $f = f_+\Pi_1 + f_-\Pi_2$,
 
 $$
-\partial_{\bar A} f = (\Pi_2\partial_+ + \Pi_1\partial_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial_+ f_-)\,\Pi_2 + (\partial_- f_+)\,\Pi_1,
+\partial/\partial\bar A f = (\Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-)(f_+\Pi_1 + f_-\Pi_2) = (\partial/\partial A_+ f_-)\,\Pi_2 + (\partial/\partial A_- f_+)\,\Pi_1,
 $$
 
-because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_{1,2}^2 = \Pi_{1,2}$. The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.
+because $\Pi_2 \Pi_1 = \Pi_1 \Pi_2 = 0$ and $\Pi_{1,2}^2 = \Pi_{1,2}$. The two idempotents are independent, so this vanishes if and only if $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$, that is, if and only if $f_-$ is locally a function of $A_-$ alone and $f_+$ of $A_+$ alone.
 
 **Corollary (the derivative in idempotent coordinates).** If $f$ is split complex differentiable, then
 
@@ -189,39 +189,39 @@ and then $u$ and $v$ each satisfy the wave equation $\Box u = \Box v = 0$.
 
 ### Closedness of $f\,dA$
 
-**Theorem.** Let $f$ be $C^1$ on a domain $U$. Then the differential form $f\,dA$ is closed if and only if $f$ is split complex differentiable on $U$.
+**Theorem.** Let $f$ be $C^1$ on a domain $\Omega$. Then the differential form $f\,dA$ is closed if and only if $f$ is split complex differentiable on $\Omega$.
 
 **Proof.** In the idempotent coordinates, $f\,dA = f_+ \Pi_1 dA_+ + f_- \Pi_2 dA_-$, and since $\Pi_1$ and $\Pi_2$ are constant,
 
 $$
-d(f\,dA) = (\partial_- f_+)\,\Pi_1\, dA_- \wedge dA_+ + (\partial_+ f_-)\,\Pi_2\, dA_+ \wedge dA_- = \big[(\partial_+ f_-)\,\Pi_2 - (\partial_- f_+)\,\Pi_1\big]\, dA_+ \wedge dA_-.
+d(f\,dA) = (\partial/\partial A_- f_+)\,\Pi_1\, dA_- \wedge dA_+ + (\partial/\partial A_+ f_-)\,\Pi_2\, dA_+ \wedge dA_- = \big[(\partial/\partial A_+ f_-)\,\Pi_2 - (\partial/\partial A_- f_+)\,\Pi_1\big]\, dA_+ \wedge dA_-.
 $$
 
-The two idempotents are independent, so this vanishes if and only if $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$. Now compute directly in the coordinates $a, a'$: $dA = da + j\,da'$ and
+The two idempotents are independent, so this vanishes if and only if $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$. Now compute directly in the coordinates $a, a'$: $dA = da + j\,da'$ and
 
 $$
-d(f\,dA) = df \wedge dA = (\partial_a f\,da + \partial_{a'} f\,da')\wedge(da + j\,da') = \big(\partial_a f \, j - \partial_{a'} f\big)\,da \wedge da'.
+d(f\,dA) = df \wedge dA = (\partial/\partial a f\,da + \partial/\partial a' f\,da')\wedge(da + j\,da') = \big(\partial/\partial a f \, j - \partial/\partial a' f\big)\,da \wedge da'.
 $$
 
-This vanishes if and only if $\partial_{a'} f = \partial_a f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial_+ f_- = 0$ and $\partial_- f_+ = 0$ is precisely that equation in the idempotent basis.
+This vanishes if and only if $\partial/\partial a' f = \partial/\partial a f\, j$, which is the split Cauchy–Riemann equation $Df = 0$. The two computations agree because $\partial/\partial A_+ f_- = 0$ and $\partial/\partial A_- f_+ = 0$ is precisely that equation in the idempotent basis.
 
 In the complex plane the same computation gives the same conclusion, closedness being equivalent to holomorphy, so on the differentiable side the two theories have the same shape. What differs is what the condition costs. There it is an elliptic system, whose solutions are rigid; here it says only that $f_+$ does not depend on $A_-$ and $f_-$ does not depend on $A_+$, so that the differentiable functions are exactly the pairs of one-variable functions, one for each idempotent, with no interaction between the two components and no exclusion beyond the separation itself.
 
 ### Primitives and Path Independence
 
-**Theorem (primitive).** Let $f$ be split complex differentiable on a domain $U$. Then $f\,dA$ has a primitive on $U$: there is a split complex differentiable $F$ on $U$ with $F' = f$. The integral of $f$ depends only on the endpoints:
+**Theorem (primitive).** Let $f$ be split complex differentiable on a domain $\Omega$. Then $f\,dA$ has a primitive on $\Omega$: there is a split complex differentiable $F$ on $\Omega$ with $F' = f$. The integral of $f$ depends only on the endpoints:
 
 $$
 \int_\gamma f(A)\,dA = F(\gamma(b)) - F(\gamma(a)).
 $$
 
-**Proof.** On $U$ the components satisfy $f_+ = f_+(A_+)$ and $f_- = f_-(A_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $U$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ A_+ \cdot \Pi_1 + F_- \circ A_- \cdot \Pi_2$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
+**Proof.** On $\Omega$ the components satisfy $f_+ = f_+(A_+)$ and $f_- = f_-(A_-)$ with $f_\pm$ continuous functions of one real variable on intervals $I_\pm$, the projections of $\Omega$. A continuous function of one real variable has an antiderivative, so choose $F_+$ on $I_+$ with $F_+' = f_+$ and $F_-$ on $I_-$ with $F_-' = f_-$, and set $F = F_+ \circ A_+ \cdot \Pi_1 + F_- \circ A_- \cdot \Pi_2$. Then $F$ is split complex differentiable with $F' = f$ by the corollary of the previous section. Along a piecewise $C^1$ path, $\frac{d}{dt}F(\gamma(t)) = F'(\gamma(t))\gamma'(t) = f(\gamma(t))\gamma'(t)$, and the fundamental theorem of calculus in the two idempotent components gives the endpoint formula.
 
 Two facts distinguish this from the complex case. First, the primitive exists on *every* domain, with no simple connectivity hypothesis, because each component is a function of a single real variable and a real antiderivative always exists; in $\mathbb{C}$ the primitive exists only when the closed integrals vanish. Second, the primitive is determined only up to an additive split complex constant, since each one-variable antiderivative is determined up to a constant; the ambiguity does not affect differences.
 
 ### The Cauchy–Goursat Theorem
 
-**Theorem (Cauchy–Goursat).** If $f$ is split complex differentiable on a domain $U$ and $\gamma$ is a closed piecewise $C^1$ path in $U$, then
+**Theorem (Cauchy–Goursat).** If $f$ is split complex differentiable on a domain $\Omega$ and $\gamma$ is a closed piecewise $C^1$ path in $\Omega$, then
 
 $$
 \oint_\gamma f(A)\,dA = 0.
@@ -231,12 +231,12 @@ $$
 
 **Remark (softness).** The theorem holds in $\mathbb{D}$ for a reason that gives it no force: every pair of one-variable functions is split complex differentiable, so the class of integrands for which closed integrals vanish is the class of *all* differentiable functions, and the vanishing is not a restriction. In $\mathbb{C}$ the same statement is the origin of the whole theory — it forces primitives, the Cauchy integral formula, the maximum principle and the identity theorem. In $\mathbb{D}$ it forces none of these, because nothing is excluded. The mean value property likewise fails: a split complex differentiable function is a pair of arbitrary one-variable functions, and its average over a circle need not equal its centre value.
 
-**Theorem (rectangle criterion).** For a continuous $f : U \to \mathbb{D}$, the following are equivalent.
+**Theorem (rectangle criterion).** For a continuous $f : \Omega \to \mathbb{D}$, the following are equivalent.
 
-1. $\oint_{\partial R} f(A)\,dA = 0$ for every axis-parallel rectangle $R \subseteq U$.
+1. $\oint_{\partial R} f(A)\,dA = 0$ for every axis-parallel rectangle $R \subseteq \Omega$.
 2. $f$ has the separated form $f = f_+(A_+)\Pi_1 + f_-(A_-)\Pi_2$ with $f_\pm$ continuous functions of one variable.
 
-**Proof.** If (2) holds, $\oint_{\partial R} f\,dA = \Pi_1\oint_{\partial R} f_+(A_+)\,dA_+ + \Pi_2\oint_{\partial R} f_-(A_-)\,dA_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $U$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $U$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(A_+)\Pi_1 + F_-(A_-)\Pi_2$, so $f = F' = F_+'(A_+)\Pi_1 + F_-'(A_-)\Pi_2$ has the separated form.
+**Proof.** If (2) holds, $\oint_{\partial R} f\,dA = \Pi_1\oint_{\partial R} f_+(A_+)\,dA_+ + \Pi_2\oint_{\partial R} f_-(A_-)\,dA_-$, and each term vanishes because the projected boundary of the rectangle is a closed real path over which a one-variable continuous function is integrated, and every continuous function of one real variable has an antiderivative. Conversely, if (1) holds, the integral $F$ of $f$ from a fixed base point along axis-parallel paths is well defined: two such paths inside a rectangle of $\Omega$ differ by the boundaries of the subrectangles between them, and a chain of overlapping rectangles inside $\Omega$ carries the independence from one rectangle to the next. The standard difference-quotient computation in each component then shows that $F$ is split complex differentiable with $F' = f$. By the Cauchy–Riemann theorem $F$ has the separated form $F = F_+(A_+)\Pi_1 + F_-(A_-)\Pi_2$, so $f = F' = F_+'(A_+)\Pi_1 + F_-'(A_-)\Pi_2$ has the separated form.
 
 **Remark (no regularity upgrade).** In $\mathbb{C}$ the same rectangle hypothesis upgrades a merely continuous $f$ to a holomorphic one, because the primitive of a continuous function is holomorphic and the derivative of a holomorphic function is holomorphic. In $\mathbb{D}$ no such upgrade is available: the components $f_\pm = F_\pm'$ are derivatives of one-variable functions and are continuous by hypothesis, but a continuous function of one real variable need not be differentiable. The hypothesis of the theorem therefore stops at the separated form, one step short of differentiability, and this gap is a further face of the failure of the representation half of the theory. In particular there is no Morera theorem in $\mathbb{D}$ of the classical strength; the rectangle condition characterises the class of continuous separated densities, not the class of split complex differentiable functions.
 
@@ -270,7 +270,7 @@ This is the precise sense in which the Cauchy theorem of a ring with zero diviso
 
 The obstruction has an equivalent analytic form. In $\mathbb{C}$ the locally integrable function $1/(\pi A)$ is the fundamental solution of the Cauchy–Riemann operator, and its singularity is carried by the single point $0$; that is what makes a small circle an adequate contour.
 
-**Theorem.** Let $D = \partial_a - j\,\partial_{a'}$ be the split Cauchy–Riemann operator. A fundamental solution of $D$ is
+**Theorem.** Let $D = \partial/\partial a - j\,\partial/\partial a'$ be the split Cauchy–Riemann operator. A fundamental solution of $D$ is
 
 $$
 E(A) = H(A_-)\,\delta(A_+)\,\Pi_1 + H(A_+)\,\delta(A_-)\,\Pi_2,
@@ -284,13 +284,13 @@ $$
 
 so $E$ is not a locally integrable function: its support, and hence its singular support, is the union of those two rays rather than a single point.
 
-**Proof.** In the idempotent coordinates $D = 2(\Pi_2\partial_+ + \Pi_1\partial_-)$, so for $E = E_+\Pi_1 + E_-\Pi_2$,
+**Proof.** In the idempotent coordinates $D = 2(\Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-)$, so for $E = E_+\Pi_1 + E_-\Pi_2$,
 
 $$
-D E = 2\,(\partial_+ E_-)\,\Pi_2 + 2\,(\partial_- E_+)\,\Pi_1,
+D E = 2\,(\partial/\partial A_+ E_-)\,\Pi_2 + 2\,(\partial/\partial A_- E_+)\,\Pi_1,
 $$
 
-the cross terms vanishing as before. Taking $E_+ = H(A_-)\delta(A_+)$ and $E_- = H(A_+)\delta(A_-)$ gives $\partial_- E_+ = \delta(A_-)\delta(A_+)$ and $\partial_+ E_- = \delta(A_+)\delta(A_-)$; with $\lvert\partial(A_+,A_-)/\partial(a,a')\rvert = 2$, so that $\delta(A_+)\delta(A_-) = \tfrac12\delta_0$, one has $2\,\delta(A_+)\delta(A_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
+the cross terms vanishing as before. Taking $E_+ = H(A_-)\delta(A_+)$ and $E_- = H(A_+)\delta(A_-)$ gives $\partial/\partial A_- E_+ = \delta(A_-)\delta(A_+)$ and $\partial/\partial A_+ E_- = \delta(A_+)\delta(A_-)$; with $\lvert\partial(A_+,A_-)/\partial(a,a')\rvert = 2$, so that $\delta(A_+)\delta(A_-) = \tfrac12\delta_0$, one has $2\,\delta(A_+)\delta(A_-) = \delta_0$ in the plane measure, so $DE = \delta_0$. The support statement is immediate from the factors $H$ and $\delta$.
 
 The contrast with $\mathbb{C}$ is the contrast of an elliptic with a hyperbolic operator, and it is the same contrast as that of a field with a ring having zero divisors. In $\mathbb{C}$ the principal symbol never vanishes off the origin, the fundamental solution is a function singular at a point, and the boundary integral of the Cauchy formula is meaningful on any small circle. In $\mathbb{D}$ the principal symbol degenerates on the real characteristics, the fundamental solution is a distribution carried by those characteristics, and a boundary integral can represent an interior value only if the contour is allowed to meet the singular support — which the definition of the integral forbids.
 
@@ -330,15 +330,15 @@ So the derivative of a curve is a zero divisor exactly at its tangencies with th
 
 By the primitive theorem $f\,dA$ is exact on *every* domain, so path independence is a global property of the integrand and needs no hypothesis at all. The null cone therefore does not enter by creating a period; it enters by removing paths from the domain. A domain that omits the cone through $A_0$ falls into the four sectors bounded by the two null lines through $A_0$, and within one sector any two points can still be joined, so the integral between them is again independent of the route taken inside that sector.
 
-**Proposition.** Let $f$ be split complex differentiable on a domain $U$, let $P, Q \in U$, and let $\gamma_1, \gamma_2$ be piecewise $C^1$ paths in $U$ from $P$ to $Q$. Then
+**Proposition.** Let $f$ be split complex differentiable on a domain $\Omega$, let $P, Q \in \Omega$, and let $\gamma_1, \gamma_2$ be piecewise $C^1$ paths in $\Omega$ from $P$ to $Q$. Then
 
 $$
 \int_{\gamma_1} f(A)\,dA = \int_{\gamma_2} f(A)\,dA,
 $$
 
-with no hypothesis on $U$ beyond $f$ being defined and differentiable on it. In particular, if $U$ omits the null cone through $A_0$ and $P, Q$ lie in the same component of $U$, the two points may be joined inside that component and the integral between them is independent of the path.
+with no hypothesis on $\Omega$ beyond $f$ being defined and differentiable on it. In particular, if $\Omega$ omits the null cone through $A_0$ and $P, Q$ lie in the same component of $\Omega$, the two points may be joined inside that component and the integral between them is independent of the path.
 
-**Proof.** By the primitive theorem $f\,dA = dF$ for a globally defined primitive $F$ on $U$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$.
+**Proof.** By the primitive theorem $f\,dA = dF$ for a globally defined primitive $F$ on $\Omega$, and the integral of an exact form along a path depends only on the endpoints, so both integrals equal $F(Q) - F(P)$.
 
 Thus path independence does hold within each sector bounded by the null lines; it is the *extension* to paths that would cross a line which fails, and that is the subject of the next subsection.
 
@@ -401,7 +401,7 @@ The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1
 | Property | Complex | Split complex |
 |---|---|---|
 | Coefficient ring | field, no zero divisors | ring, zero divisors $1 \pm j$ |
-| Cauchy–Riemann operator | $\partial_a + i\partial_{a'}$, elliptic | $\partial_a - j\partial_{a'}$, hyperbolic |
+| Cauchy–Riemann operator | $\partial/\partial a + i\partial/\partial a'$, elliptic | $\partial/\partial a - j\partial/\partial a'$, hyperbolic |
 | Second-order operator | Laplacian $\Delta$ | d'Alembertian $\Box$ |
 | Characteristic set | $\{0\}$ | the null cone $N = 0$ |
 | Fundamental solution | a Cauchy kernel $A^{-1}$ up to a constant, singular at a point | supported on the null rays |
@@ -421,7 +421,7 @@ The complex case is rigid because the kernel $(\zeta - A_0)^{-1}$ is defined on 
 The general theory of *Hypercomplex Integration* is stated for an **elliptic** hypercomplex system: a finite-dimensional unital associative real algebra $A$ with a Cauchy–Riemann operator
 
 $$
-D = \partial_0 + \sum_{k \geq 1} B_k \partial_k, \qquad B_j B_k + B_k B_j = -2\delta_{jk}, \qquad B_k^2 = -1,
+D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad B_j B_k + B_k B_j = -2\delta_{jk}, \qquad B_k^2 = -1,
 $$
 
 whose square $D\bar D = \bar D D$ is a Laplacian and whose fundamental solution is a Cauchy kernel singular at a point. The hypothesis $B_k^2 = -1$ is exactly the hypothesis that $A$ contains square roots of $-1$ and that the system is elliptic, and it is exactly what fails for $\mathbb{D}$.
@@ -436,7 +436,7 @@ The consequences are those of the preceding sections. The general Cauchy–Gours
 
 The **split complex integral** $\int_\gamma f\,dA = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ exists for every piecewise $C^1$ path and continuous $f$, is linear, additive, reversed by reversal of the path, and satisfies the estimate $\|\int_\gamma f\,dA\|_E \leq \sqrt2\,m\,L(\gamma)$ with the sharp constant $\sqrt2$. Its **idempotent decomposition** $\int_\gamma f\,dA = \Pi_1\int_{\gamma_+} f_+ \,dA_+ + \Pi_2\int_{\gamma_-} f_-\,dA_-$ reduces it to a pair of real line integrals; this identity is the structural fact of the theory.
 
-In the idempotent coordinates the operator factorises as $\partial_{\bar A} = \Pi_2\partial_+ + \Pi_1\partial_-$, and **split complex differentiability** is equivalent to $f_+$ depending on $A_+$ alone and $f_-$ on $A_-$ alone. Hence $f\,dA$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the **Cauchy–Goursat theorem** $\oint_\gamma f\,dA = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.
+In the idempotent coordinates the operator factorises as $\partial/\partial\bar A = \Pi_2\partial/\partial A_+ + \Pi_1\partial/\partial A_-$, and **split complex differentiability** is equivalent to $f_+$ depending on $A_+$ alone and $f_-$ on $A_-$ alone. Hence $f\,dA$ is closed exactly when $f$ is differentiable, every differentiable $f$ has a primitive on every domain, the **Cauchy–Goursat theorem** $\oint_\gamma f\,dA = 0$ holds for every closed path, and for continuous densities the rectangle criterion is equivalent to the separated form. The theorem is nevertheless soft, since differentiability excludes nothing, and the rectangle criterion stops one step short of differentiability.
 
 The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zeta - A_0$ is a unit exactly off the null cone through $A_0$, so the Cauchy kernel is undefined there and no contour of non-zero winding about $A_0$ avoids the cone; the **Cauchy integral formula** therefore does not exist, and with it the Cauchy estimates, the mean value property, the maximum principle, Liouville's theorem and the Laurent expansion all fail. The same obstruction appears analytically as the **fundamental solution** of the split Cauchy–Riemann operator, which is a distribution supported on the null rays rather than a function singular at the origin.
 
@@ -459,12 +459,12 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $\gamma^*$, $-\gamma$, $\gamma_1 + \gamma_2$ | Trace, opposite path, concatenation |
 | $L(\gamma) = \int_a^b \|\gamma'(t)\|_E\,dt$ | Euclidean length |
 | $\int_\gamma f\,dA$ | Split complex integral |
-| $\partial_A = \tfrac12(\partial_a + j\partial_{a'})$ | Split Wirtinger derivative |
-| $\partial_{\bar A} = \tfrac12(\partial_a - j\partial_{a'})$ | Split Wirtinger derivative, conjugate of $\partial_A$ |
+| $\partial/\partial A = \tfrac12(\partial/\partial a + j\partial/\partial a')$ | Split Wirtinger derivative |
+| $\partial/\partial\bar A = \tfrac12(\partial/\partial a - j\partial/\partial a')$ | Split Wirtinger derivative, conjugate of $\partial/\partial A$ |
 | $\partial_\pm = \partial/\partial A_\pm$ | Null-coordinate derivatives |
-| $D = \partial_a - j\partial_{a'}$ | Split Cauchy–Riemann operator, $D = 2\partial_{\bar A}$ |
-| $\bar D = \partial_a + j\partial_{a'}$ | Conjugate operator |
-| $\Box = \partial_a^2 - \partial_{a'}^2 = 4\partial_+\partial_-$ | d'Alembertian |
+| $D = \partial/\partial a - j\partial/\partial a'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar A$ |
+| $\bar D = \partial/\partial a + j\partial/\partial a'$ | Conjugate operator |
+| $\Box = \partial^2/\partial a^2 - \partial^2/\partial a'^2 = 4\partial^2/\partial A_+\partial A_-$ | d'Alembertian |
 | $\|\Delta\|$ | Mesh of a partition of $[a,b]$, for the Riemann sums |
 | $\omega(\|\Delta\|)$ | Modulus of continuity of $\gamma'$ on a partition of mesh $\|\Delta\|$ |
 | $H$ | Heaviside function, $H(t) = 1$ for $t > 0$ and $0$ for $t < 0$ |

@@ -80,22 +80,22 @@ The later groups of the category build adjoints, and an adjoint is taken with re
 **Definition.** Let $k$ be a field and $k[G]$ the group algebra, with basis $G$ and finitely supported elements; write $C(G)$ for the $k$-algebra of continuous functions $G \to k$, carrying the topology of uniform convergence on compacta. The **natural pairing** of the category is
 
 $$
-\langle\cdot,\cdot\rangle : C(G) \times k[G] \longrightarrow k, \qquad \langle f, u\rangle = \sum_{g \in G} f(g)\,u_g ,
+\langle\cdot,\cdot\rangle : C(G) \times k[G] \longrightarrow k, \qquad \langle f, \lambda\rangle = \sum_{g \in G} f(g)\,\lambda_g ,
 $$
 
-the sum being finite because $u$ has finite support.
+the sum being finite because $\lambda$ has finite support.
 
 **Proposition.** The natural pairing is bilinear, it separates points of each side, and it is separately continuous for the topology of $C(G)$ and the discrete topology of $k[G]$.
 
-**Proof.** Bilinearity is the bilinearity of the sum. For separation: if $\langle f, u\rangle = 0$ for all $f \in C(G)$ then evaluating at the continuous functions vanishing off each finite support gives $u = 0$; if $\langle f, u\rangle = 0$ for all $u$ then taking $u = \delta_g$, the basis element at $g$, gives $f(g) = 0$ for every $g$. Separate continuity: for fixed $f$ the functional $u \mapsto \langle f, u\rangle$ depends on finitely many coordinates, hence is continuous for the discrete topology; for fixed $u$ the functional $f \mapsto \langle f,u\rangle$ is a finite linear combination of evaluations, each continuous in the topology of uniform convergence on compacta.
+**Proof.** Bilinearity is the bilinearity of the sum. For separation: if $\langle f, \lambda\rangle = 0$ for all $f \in C(G)$ then evaluating at the continuous functions vanishing off each finite support gives $\lambda = 0$; if $\langle f, \lambda\rangle = 0$ for all $\lambda$ then taking $\lambda = \delta_g$, the basis element at $g$, gives $f(g) = 0$ for every $g$. Separate continuity: for fixed $f$ the functional $\lambda \mapsto \langle f, \lambda\rangle$ depends on finitely many coordinates, hence is continuous for the discrete topology; for fixed $\lambda$ the functional $f \mapsto \langle f,\lambda\rangle$ is a finite linear combination of evaluations, each continuous in the topology of uniform convergence on compacta.
 
 **Proposition (the translations are adjoint to their inverses).** On $C(G)$ let $L_a$ act by $(L_af)(x) = f(a^{-1}x)$ and $R_b$ by $(R_bf)(x) = f(xb)$; on $k[G]$ let $L_a$, $R_b$ act by left and right multiplication. Then
 
 $$
-\langle L_a f, u\rangle = \langle f, L_{a^{-1}}u\rangle , \qquad \langle R_b f, u\rangle = \langle f, R_{b^{-1}}u\rangle .
+\langle L_a f, \lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle , \qquad \langle R_b f, \lambda\rangle = \langle f, R_{b^{-1}}\lambda\rangle .
 $$
 
-**Proof.** $\langle L_af, u\rangle = \sum_x f(a^{-1}x)u_x = \sum_y f(y)u_{ay}$, on reindexing $y = a^{-1}x$, and $(a^{-1}u)_y = u_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_bf, u\rangle = \sum_x f(xb)u_x = \sum_y f(y)u_{yb^{-1}}$, on reindexing $y = xb$, and $(ub^{-1})_y = u_{yb}$, which gives the second identity.
+**Proof.** $\langle L_af, \lambda\rangle = \sum_x f(a^{-1}x)\lambda_x = \sum_y f(y)\lambda_{ay}$, on reindexing $y = a^{-1}x$, and $(a^{-1}\lambda)_y = \lambda_{ay}$, so the first identity is the definition of the pairing. Similarly $\langle R_bf, \lambda\rangle = \sum_x f(xb)\lambda_x = \sum_y f(y)\lambda_{yb^{-1}}$, on reindexing $y = xb$, and $(ub^{-1})_y = \lambda_{yb}$, which gives the second identity.
 
 The two identities are the algebraic content of the statement that the inversion carries the left regular operators to their adjoints. They are what *The Adjoint of the Left Multiplication on a Topological Group* and *The Group Inversion as an Adjoint* formalise, and the twisted pairing built from a continuous involution is *The Signed Adjoint of the Left Multiplication on a Topological Group*.
 
@@ -118,8 +118,8 @@ A continuous operator on a topological group is a continuous self-map, the inver
 | $\ker\pi = \{(z,z^{-1}) : z \in Z(G)\}$ | the anti-diagonal copy of the centre |
 | $Z(G)$ | the centre, whose translations are the intersection $L(G)\cap R(G)$ |
 | $k[G]$, $C(G)$ | the group algebra of finitely supported functions, and the continuous functions |
-| $\langle f, u\rangle = \sum_g f(g)u_g$ | the natural pairing of the category |
-| $\langle L_af,u\rangle = \langle f, L_{a^{-1}}u\rangle$ | the translations are adjoint to their inverses |
+| $\langle f, \lambda\rangle = \sum_g f(g)\lambda_g$ | the natural pairing of the category |
+| $\langle L_af,\lambda\rangle = \langle f, L_{a^{-1}}\lambda\rangle$ | the translations are adjoint to their inverses |
 
 ## Further Reading
 

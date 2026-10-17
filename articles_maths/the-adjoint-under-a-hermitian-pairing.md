@@ -75,7 +75,7 @@ the Hermitian part and the skew-Hermitian part; the Hermitian operators form a $
 
 ## The Unitary Elements and the Group
 
-**Definition.** The **unitary elements** of $\operatorname{End}_K(V)$ are the operators with $T^{\dagger}T = \mathrm{id}$; they form the **unitary group** $U(V,h)$ of the pairing, and they are exactly the isometries of the form, $h(Tx,Ty) = h(x,y)$ for all $x,y$.
+**Definition.** The **unitary elements** of $\operatorname{End}_K(V)$ are the operators with $T^{\dagger}T = \mathrm{id}$; they form the **unitary group** $\mathrm{U}(V,h)$ of the pairing, and they are exactly the isometries of the form, $h(Tx,Ty) = h(x,y)$ for all $x,y$.
 
 **Theorem.** The unitary elements form a group under the composition, equal to the group of the isometries of $h$; the determinant of a unitary element has norm one, $N(\det T) = 1$ in the nontrivial case, and the special unitary group is the subgroup of determinant one. The self-adjoint and the skew-adjoint elements are the tangent spaces of the unitary group at the identity,
 
@@ -107,7 +107,7 @@ the sandwich of the conjugate transpose between the matrix $H$ of the pairing an
 
 ## Examples
 
-**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the skew-adjoint are the skew-Hermitian matrices, and the unitary group is the classical unitary group $U(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
+**Example (the matrix algebra and the standard pairing).** Let $V = K^n$ and $h$ the standard pairing, $H = I$; the adjoint is the conjugate transpose $T^{\dagger} = T^{*}$, the self-adjoint operators are the Hermitian matrices, the skew-adjoint are the skew-Hermitian matrices, and the unitary group is the classical unitary group $\mathrm{U}(n)$ over $\mathbb{C}$ or the orthogonal group $O(n)$ over $\mathbb{R}$ with the trivial involution.
 
 **Example (the hyperbolic pairing).** Let $\dim V = 2$ and let $h$ have the matrix of the hyperbolic plane; then the adjoint of $T = \begin{pmatrix} a & b \\ c & d\end{pmatrix}$ is $T^{\dagger} = H^{-1}T^{*}H$ with the sign on the off-diagonal entries reversed, and the skew-adjoint operators of the hyperbolic plane form a real Lie algebra isomorphic to $\mathfrak{su}(1,1)$, which is isomorphic to $\mathfrak{sl}_2(\mathbb{R})$. The hyperbolic pairing is the local model of the unitary group of signature $(1,1)$.
 
@@ -129,7 +129,7 @@ A nondegenerate Hermitian pairing $h$ induces on the algebra of the operators th
 | $T^{*} = \overline{T}^{\mathsf T}$ | Conjugate transpose |
 | $\operatorname{Herm}(V,h)$, $\operatorname{Skew}(V,h)$ | Self-adjoint and skew-adjoint operators |
 | $T^{\dagger} = T$, $T^{\dagger} = -T$ | Self-adjoint and skew-adjoint conditions |
-| $U(V,h) = \{T : T^{\dagger}T = \mathrm{id}\}$ | Unitary group, the isometries |
+| $\mathrm{U}(V,h) = \{T : T^{\dagger}T = \mathrm{id}\}$ | Unitary group, the isometries |
 | $\mathfrak{u}(V,h) = \operatorname{Skew}(V,h)$ | Lie algebra of the unitary group |
 | $\mathrm{ad}_h(T) = H^{-1}T^{*}H$ | Adjoint map, the two-sided involution |
 | $N(\det T) = 1$ | Norm-one determinant of a unitary element |

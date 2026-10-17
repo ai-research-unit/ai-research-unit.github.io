@@ -60,7 +60,7 @@ $$
 h_{\natural*}(P,Q) = \operatorname{Sc}(P^{\natural}Q^{*}) = \sum_{\mu}\varepsilon_{\mu}P_{\mu}\overline{Q_{\mu}} , \qquad \varepsilon = (1,-1,-1,-1) ,
 $$
 
-is Hermitian, nondegenerate and **indefinite**, of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$; it is **not compatible** with the product, and the witness is the element $e_{1}$: with $P = Q = e_{1}$ and $R = 1$ one has $h_{\natural*}(PQ,R) = -1$ while $h_{\natural*}(Q,P^{*}R) = 1$, so the identity of the compatibility fails. The pair of forms is the finite-dimensional witness that definiteness and compatibility are independent conditions on a Hermitian form, and the second is the input of the indefinite theory of *The Fundamental Symmetry of the Form* and *The Krein Gram Matrix and the Restrictions of the Form*, whose isometry group is $U(1,3)$.
+is Hermitian, nondegenerate and **indefinite**, of signature $(2,6)$ over $\mathbb{R}$ and $(1,3)$ over $\mathbb{C}$; it is **not compatible** with the product, and the witness is the element $e_{1}$: with $P = Q = e_{1}$ and $R = 1$ one has $h_{\natural*}(PQ,R) = -1$ while $h_{\natural*}(Q,P^{*}R) = 1$, so the identity of the compatibility fails. The pair of forms is the finite-dimensional witness that definiteness and compatibility are independent conditions on a Hermitian form, and the second is the input of the indefinite theory of *The Fundamental Symmetry of the Form* and *The Krein Gram Matrix and the Restrictions of the Form*, whose isometry group is $\mathrm{U}(1,3)$.
 
 ### The Dual Numbers
 

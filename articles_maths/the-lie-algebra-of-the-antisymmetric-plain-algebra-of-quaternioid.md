@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ carries the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
+$\tilde q_1\times\tilde q_2=\tfrac12(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1)=\vec q_1\times\vec q_2$ of
 *Introduction to the Antisymmetric Plain Algebra*, which is alternating and satisfies
 the Jacobi identity (*The Specificities of the Antisymmetric Plain Algebra*, below this article in
 this category). By the definition of the Lie structure it is a **real Lie algebra** of dimension four,
@@ -28,34 +28,34 @@ elements of the structure are *The Killing Form of the Antisymmetric Plain Algeb
 Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this
 category, and the general theory of Lie algebras is *Structure of Lie Algebras*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; the cross product of the vector parts is $\vec p\times\vec q$, with
-$e_1\times e_2=e_3$ and its cyclic images. The **centre** is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the cross product of the vector parts is $\vec q_1\times\vec q_2$, with
+$\vec e_x\times \vec e_y=\vec e_z$ and its cyclic images. The **centre** is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ and the **vector subspace** is
 $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$, identified with $\mathbb{R}^3$ as a vector space. The
 Pauli matrices are $\sigma_1,\sigma_2,\sigma_3$, with $\sigma_j\sigma_k=\delta_{jk}\mathrm{I}_2+i\sum_l\varepsilon_{jkl}\sigma_l$.
 
 ## The Lie Algebra and Its Centre
 
-**Theorem.** The space $\mathfrak{g}=\mathbb{H}$ with the bracket $\tilde p\times\tilde q$ is a real
+**Theorem.** The space $\mathfrak{g}=\mathbb{H}$ with the bracket $\tilde q_1\times\tilde q_2$ is a real
 Lie algebra of dimension four. Its bracket vanishes on the scalar direction,
 
 $$
-e_0\times\tilde q=0\qquad\text{for every }\tilde q,
+e_t\times\tilde q=0\qquad\text{for every }\tilde q,
 $$
 
 and on the pure elements it is the vector product of $\mathbb{R}^3$. Its centre is the scalar line,
 
 $$
-\mathfrak{z}(\mathfrak{g})=\{\tilde p:\tilde p\times\tilde q=0\ \text{for every }\tilde q\}=\mathbb{R}e_0 ,
+\mathfrak{z}(\mathfrak{g})=\{\tilde q_1:\tilde q_1\times\tilde q_2=0\ \text{for every }\tilde q_2\}=\mathbb{R}e_t ,
 $$
 
 of real dimension one.
 
 *Proof.* The bracket is bilinear and alternating and satisfies the Jacobi identity, which is the Lie
 structure. The vanishing on the scalar direction is the table; the fixed elements of the cross product
-are the multiples of the scalar direction, since $\vec p\times\vec q=0$ for every $\vec q$
-forces $\vec p=0$.
+are the multiples of the scalar direction, since $\vec q_1\times\vec q_2=0$ for every $\vec q_2$
+forces $\vec q_1=0$.
 
 ## The Derived Algebra and the Identifications
 
@@ -66,17 +66,17 @@ $$
 $$
 
 of real dimension three, and it is an ideal. The quotient $\mathfrak{g}/[\mathfrak{g},\mathfrak{g}]$
-is the one-dimensional abelian algebra $\mathbb{R}e_0$, so
+is the one-dimensional abelian algebra $\mathbb{R}e_t$, so
 
 $$
-\mathfrak{g}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})
+\mathfrak{g}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})
 $$
 
 is the direct sum of its centre and its derived algebra, two ideals.
 
 *Proof.* The bracket of two elements is pure, so $[\mathfrak{g},\mathfrak{g}]\subseteq\mathrm{Vect}(\mathbb{H})$;
-and the pure brackets generate the vector subspace, since $e_1\times e_2=e_3$ with its cyclic images
-give a basis. The pure subspace is an ideal because $[\tilde p,\vec q]$ is pure for every $\tilde p$.
+and the pure brackets generate the vector subspace, since $\vec e_x\times \vec e_y=\vec e_z$ with its cyclic images
+give a basis. The pure subspace is an ideal because $[\tilde q_1,\vec q_2]$ is pure for every $\tilde q_1$.
 The sum is direct because the centre meets the derived algebra at $0$, and both are ideals, so the
 bracket is the sum of the two brackets.
 
@@ -86,7 +86,7 @@ bracket is the sum of the two brackets.
 traceless skew-Hermitian $2\times2$ complex matrices, by
 
 $$
-e_1\mapsto-\tfrac{i}{2}\sigma_1,\qquad e_2\mapsto-\tfrac{i}{2}\sigma_2,\qquad e_3\mapsto-\tfrac{i}{2}\sigma_3 .
+\vec e_x\mapsto-\tfrac{i}{2}\sigma_1,\qquad \vec e_y\mapsto-\tfrac{i}{2}\sigma_2,\qquad \vec e_z\mapsto-\tfrac{i}{2}\sigma_3 .
 $$
 
 *Proof.* The Pauli matrices satisfy $\sigma_j\sigma_k=\delta_{jk}\mathrm{I}_2+i\sum_l\varepsilon_{jkl}\sigma_l$,
@@ -97,55 +97,55 @@ skew-Hermitian. The map is a Lie isomorphism onto $\mathfrak{su}(2)$.
 ### The Isomorphism with $\mathfrak{so}(3)$
 
 **Theorem.** The derived algebra is isomorphic to the real Lie algebra $\mathfrak{so}(3)$ of the
-skew-symmetric $3\times3$ real matrices, by $\vec p\mapsto C_{\vec p}$, the cross-product matrix
-$C_{\vec p}\vec q=\vec p\times\vec q$. Under this map the adjoint representation of
+skew-symmetric $3\times3$ real matrices, by $\vec q_1\mapsto C_{\vec q_1}$, the cross-product matrix
+$C_{\vec q_1}\vec q_2=\vec q_1\times\vec q_2$. Under this map the adjoint representation of
 $\mathfrak{g}$ on the derived algebra is
 
 $$
-\operatorname{ad}_{\tilde p}\longmapsto C_{\vec p},\qquad
-\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})\ \text{on}\ \mathbb{H}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H}) .
+\operatorname{ad}_{\tilde q_1}\longmapsto C_{\vec q_1},\qquad
+\operatorname{ad}_{\tilde q_1}=\operatorname{diag}(0,C_{\vec q_1})\ \text{on}\ \mathbb{H}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H}) .
 $$
 
-*Proof.* The cross-product matrix is skew-symmetric because $\vec p\times\vec q\perp\vec p$, and
-$C_{\vec p}\vec q=\vec p\times\vec q$ is the defining matrix of the cross product; the
-identification $C_{\vec p}\leftrightarrow\vec p$ carries the bracket to the commutator,
-$[C_{\vec p},C_{\vec q}]=C_{\vec p\times\vec q}$, since the cross product satisfies the
+*Proof.* The cross-product matrix is skew-symmetric because $\vec q_1\times\vec q_2\perp\vec q_1$, and
+$C_{\vec q_1}\vec q_2=\vec q_1\times\vec q_2$ is the defining matrix of the cross product; the
+identification $C_{\vec q_1}\leftrightarrow\vec q_1$ carries the bracket to the commutator,
+$[C_{\vec q_1},C_{\vec q_2}]=C_{\vec q_1\times\vec q_2}$, since the cross product satisfies the
 Jacobi identity. The adjoint vanishes on the centre and acts on the pure part by the cross product.
 
 **Remark (the three presentations).** The three algebras $\mathbb{R}^3$ with the cross product,
 $\mathfrak{su}(2)$ and $\mathfrak{so}(3)$ are one and the same real Lie algebra of dimension three,
 the compact form of $\mathfrak{sl}(2,\mathbb{C})$; the isomorphism between the last two is
-$\vec p\mapsto C_{\vec p}$ through the vector product. This is the block's contribution to the
+$\vec q\mapsto C_{\vec q}$ through the vector product. This is the block's contribution to the
 dictionary of the chapter.
 
 ## The Structure Constants
 
-In the basis $(e_0,e_1,e_2,e_3)$ the bracket is
+In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ the bracket is
 
 $$
-[e_0,e_k]=0,\qquad [e_j,e_k]=\sum_{l=1}^{3}\varepsilon_{jkl}e_l\quad(j,k,l\in\{1,2,3\}),
+[e_t,\vec e_\nu]=0,\qquad [\vec e_\mu,\vec e_\nu]=\sum_{\lambda=1}^{3}\varepsilon_{\mu\nu\lambda}\vec e_\lambda\quad(\mu,\nu,\lambda\in\{1,2,3\}),
 $$
 
 with $\varepsilon$ the Levi-Civita symbol, and the table is the one of the cross product of
 $\mathbb{R}^3$ extended by zero on the scalar direction.
 
-| $[\cdot,\cdot]$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
+| $[\cdot,\cdot]$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $e_0$ | $0$ | $0$ | $0$ | $0$ |
-| $e_1$ | $0$ | $0$ | $e_3$ | $-e_2$ |
-| $e_2$ | $0$ | $-e_3$ | $0$ | $e_1$ |
-| $e_3$ | $0$ | $e_2$ | $-e_1$ | $0$ |
+| $e_t$ | $0$ | $0$ | $0$ | $0$ |
+| $\vec e_x$ | $0$ | $0$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $0$ | $-\vec e_z$ | $0$ | $\vec e_x$ |
+| $\vec e_z$ | $0$ | $\vec e_y$ | $-\vec e_x$ | $0$ |
 
 ## The Ideals, the Simplicity and the Centre
 
 **Theorem.** The ideals of $\mathfrak{g}$ are
 
 $$
-0,\qquad \mathbb{R}e_0,\qquad \mathrm{Vect}(\mathbb{H}),\qquad \mathfrak{g} ,
+0,\qquad \mathbb{R}e_t,\qquad \mathrm{Vect}(\mathbb{H}),\qquad \mathfrak{g} ,
 $$
 
 and there are no others. The algebra is not simple and not semisimple; its radical is the centre
-$\mathbb{R}e_0$; and the derived algebra $\mathrm{Vect}(\mathbb{H})$ is simple.
+$\mathbb{R}e_t$; and the derived algebra $\mathrm{Vect}(\mathbb{H})$ is simple.
 
 *Proof.* An ideal is a subspace stable under the brackets. The centre and the derived algebra are
 ideals, and the sum is direct; a nonzero proper ideal $\mathfrak{a}$ that is not the centre meets the
@@ -167,7 +167,7 @@ derived algebra is perfect, $[\mathrm{Vect}(\mathbb{H}),\mathrm{Vect}(\mathbb{H}
 *Proof.* The derived algebra is $\mathfrak{so}(3)$, which is perfect, so both series freeze at it; a
 solvable or nilpotent algebra would have a vanishing terminal term.
 
-**Remark (the enveloping algebra).** Because $\mathfrak{g}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})$
+**Remark (the enveloping algebra).** Because $\mathfrak{g}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})$
 is a direct sum of ideals, the universal enveloping algebra is
 $\mathrm{U}(\mathfrak{g})\cong\mathbb{R}[z]\otimes\mathrm{U}(\mathfrak{su}(2))$: the centre
 contributes the polynomial ring in one variable and the derived algebra the enveloping algebra of
@@ -178,8 +178,8 @@ Algebra*, below this article in this category.
 
 The antisymmetric plain block is the real Lie algebra $\mathfrak{g}=(\mathbb{H},\times)$ of dimension
 four, the cross product of the vector parts extended by zero on the scalar direction. Its centre is
-the scalar line $\mathbb{R}e_0$ and its derived algebra the vector subspace
-$\mathrm{Vect}(\mathbb{H})$, so $\mathfrak{g}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})$ is the
+the scalar line $\mathbb{R}e_t$ and its derived algebra the vector subspace
+$\mathrm{Vect}(\mathbb{H})$, so $\mathfrak{g}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})$ is the
 direct sum of two ideals, reductive with radical the centre and not semisimple. The derived algebra is
 the three-dimensional simple algebra $\mathfrak{so}(3)$, also isomorphic to $\mathfrak{su}(2)$ by the
 Pauli matrices and to $\mathbb{R}^3$ with the cross product; the structure constants are the
@@ -193,12 +193,12 @@ $\mathfrak{su}(2)$.
 | Symbol | Meaning |
 |---|---|
 | $\mathfrak{g}=(\mathbb{H},\times)$ | the real Lie algebra of the block |
-| $\mathfrak{z}(\mathfrak{g})=\mathbb{R}e_0$ | the centre |
+| $\mathfrak{z}(\mathfrak{g})=\mathbb{R}e_t$ | the centre |
 | $[\mathfrak{g},\mathfrak{g}]=\mathrm{Vect}(\mathbb{H})$ | the derived algebra |
-| $\mathfrak{g}=\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{H})$ | the direct sum decomposition |
-| $[e_j,e_k]=\sum_l\varepsilon_{jkl}e_l$ | the structure constants |
+| $\mathfrak{g}=\mathbb{R}e_t\oplus\mathrm{Vect}(\mathbb{H})$ | the direct sum decomposition |
+| $[\vec e_\mu,\vec e_\nu]=\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ | the structure constants |
 | $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ | the derived algebra, the compact form of $\mathfrak{sl}(2,\mathbb{C})$ |
-| $e_k\mapsto-\tfrac{i}{2}\sigma_k$ | the isomorphism with $\mathfrak{su}(2)$ |
+| $\vec e_\mu\mapsto-\tfrac{i}{2}\sigma_\mu$ | the isomorphism with $\mathfrak{su}(2)$ |
 
 ## Further Reading
 

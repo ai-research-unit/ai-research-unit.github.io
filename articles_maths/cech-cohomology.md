@@ -3,10 +3,10 @@
 
 ## Introduction
 
-Sheaf cohomology, as constructed in *Sheaf Cohomology*, is defined by injective resolutions and is therefore not immediately computable. **Čech cohomology** is the computable approximation: for an open cover $\mathcal{U} = \{U_i\}_{i\in I}$ of a space $X$ and a sheaf $\mathcal{F}$, one forms the cochain complex
+Sheaf cohomology, as constructed in *Sheaf Cohomology*, is defined by injective resolutions and is therefore not immediately computable. **Čech cohomology** is the computable approximation: for an open cover $\mathcal{U} = \{\Xi_i\}_{i\in I}$ of a space $X$ and a sheaf $\mathcal{F}$, one forms the cochain complex
 
 $$
-0 \to \prod_i \mathcal{F}(U_i) \to \prod_{i<j}\mathcal{F}(U_i\cap U_j) \to \prod_{i<j<k}\mathcal{F}(U_i\cap U_j\cap U_k) \to \cdots,
+0 \to \prod_i \mathcal{F}(\Xi_i) \to \prod_{i<j}\mathcal{F}(\Xi_i\cap \Xi_j) \to \prod_{i<j<k}\mathcal{F}(\Xi_i\cap \Xi_j\cap \Xi_k) \to \cdots,
 $$
 
 whose cohomology $\check H^n(\mathcal{U},\mathcal{F})$ is read off from the sections of $\mathcal{F}$ on the members of the cover and their finite intersections, and whose failure to be exact measures the failure of the local sections to glue. The complex is finite when the cover is finite, its terms are groups of sections rather than abstract derived objects, and in degree one its cohomology is exactly the obstruction to gluing: $\check H^1(\mathcal{U},\mathcal{F})$ is the quotient of the group of gluing data on the cover by the gluing data that come from local sections, so that a class in $\check H^1$ is a "twisted" piece of the sheaf. Passing to all refinements of the cover removes the dependence on $\mathcal{U}$ and produces an invariant $\check H^n(X,\mathcal{F})$ of the pair $(X,\mathcal{F})$, which for a good cover coincides with the sheaf cohomology, and for a paracompact space coincides with it always.
@@ -15,26 +15,26 @@ The article develops the theory in the order in which it is used. The first sect
 
 The general homological algebra used — complexes, derived functors, spectral sequences — is Part I's *Homological Algebra*, *Derived Functors* and *Spectral Sequences*; the sheaf-theoretic results used — stalks, sheafification, flabby and soft sheaves, the comparison with singular cohomology — are *Presheaves and Sheaves* and *Sheaf Cohomology*. The Grothendieck topologies for which the Čech construction is one among several are Part I's *Sheaves on Sites*, and the descent-theoretic interpretation is *Descent Theory* of Part I; here the site is the poset of open sets with its open covers, as in the previous two articles.
 
-Throughout, $\mathcal{U} = \{U_i\}_{i\in I}$ is an open cover of $X$, $\mathcal{F}$ is a sheaf of abelian groups on $X$, and for a finite subset $I' = \{i_0 < i_1 < \cdots < i_n\} \subseteq I$ one writes
+Throughout, $\mathcal{U} = \{\Xi_i\}_{i\in I}$ is an open cover of $X$, $\mathcal{F}$ is a sheaf of abelian groups on $X$, and for a finite subset $I' = \{i_0 < i_1 < \cdots < i_n\} \subseteq I$ one writes
 
 $$
-U_{i_0\ldots i_n} = U_{i_0}\cap\cdots\cap U_{i_n}, \qquad \mathcal{F}(U_{i_0\ldots i_n}) = \Gamma(U_{i_0\ldots i_n},\mathcal{F}),
+\Xi_{i_0\ldots i_n} = \Xi_{i_0}\cap\cdots\cap \Xi_{i_n}, \qquad \mathcal{F}(\Xi_{i_0\ldots i_n}) = \Gamma(\Xi_{i_0\ldots i_n},\mathcal{F}),
 $$
 
 with the convention that $\mathcal{F}(\emptyset) = 0$. The cohomology with a comma is sheaf cohomology, as fixed in *Sheaves and Cohomology*; the Čech groups are written with a check, $\check H^n$.
 
 ## The Čech Complex of a Cover
 
-**Definition.** Let $\mathcal{U} = \{U_i\}_{i\in I}$ be an open cover, ordered by a fixed total order on $I$, which exists by the well-ordering of $I$ but has no further significance. The **Čech complex** of $\mathcal{U}$ with coefficients in $\mathcal{F}$ is the cochain complex $\check C^\bullet(\mathcal{U},\mathcal{F})$ of abelian groups
+**Definition.** Let $\mathcal{U} = \{\Xi_i\}_{i\in I}$ be an open cover, ordered by a fixed total order on $I$, which exists by the well-ordering of $I$ but has no further significance. The **Čech complex** of $\mathcal{U}$ with coefficients in $\mathcal{F}$ is the cochain complex $\check C^\bullet(\mathcal{U},\mathcal{F})$ of abelian groups
 
 $$
-\check C^n(\mathcal{U},\mathcal{F}) = \prod_{i_0<\cdots<i_n}\mathcal{F}(U_{i_0\ldots i_n}), \qquad n \geq 0,
+\check C^n(\mathcal{U},\mathcal{F}) = \prod_{i_0<\cdots<i_n}\mathcal{F}(\Xi_{i_0\ldots i_n}), \qquad n \geq 0,
 $$
 
 whose differential $\delta : \check C^n \to \check C^{n+1}$ is
 
 $$
-(\delta s)_{i_0\ldots i_{n+1}} = \sum_{k=0}^{n+1}(-1)^k\, s_{i_0\ldots \hat{i_k}\ldots i_{n+1}}\Big|_{U_{i_0\ldots i_{n+1}}},
+(\delta s)_{i_0\ldots i_{n+1}} = \sum_{k=0}^{n+1}(-1)^k\, s_{i_0\ldots \hat{i_k}\ldots i_{n+1}}\Big|_{\Xi_{i_0\ldots i_{n+1}}},
 $$
 
 the hat meaning that the index is omitted and the vertical bar meaning restriction of a section of $\mathcal{F}$. The **Čech cohomology of the cover** is $\check H^n(\mathcal{U},\mathcal{F}) = H^n(\check C^\bullet(\mathcal{U},\mathcal{F}))$.
@@ -47,24 +47,24 @@ the hat meaning that the index is omitted and the vertical bar meaning restricti
 
 1. If $\mathcal{F}$ is a sheaf then $\check H^0(\mathcal{U},\mathcal{F}) = \Gamma(X,\mathcal{F})$, and the identification is the map sending a global section to the family of its restrictions. For a presheaf the same formula holds with $\Gamma$ denoting the presheaf sections, and the degree-zero Čech group is then the group of matching families.
 2. $\check H^1(\mathcal{U},\mathcal{F})$ is the quotient of the group
-   $$Z^1 = \Bigl\{(s_{ij}) \in \prod_{i<j}\mathcal{F}(U_{ij}) : s_{jk}|_{U_{ijk}} - s_{ik}|_{U_{ijk}} + s_{ij}|_{U_{ijk}} = 0 \text{ for all } i<j<k\Bigr\}$$
-   by the subgroup of **coboundaries** $s_{ij} = t_j|_{U_{ij}} - t_i|_{U_{ij}}$ for a family $(t_i) \in \prod_i\mathcal{F}(U_i)$. The class of a cocycle $(s_{ij})$ vanishes if and only if the gluing data it represents are trivial, in the sense that the locally defined sections can be adjusted on the members of the cover to a global section; if $\mathcal{U}$ is a cover by two sets with connected intersection and $\mathcal{F}$ is a sheaf, then $\check H^1(\mathcal{U},\mathcal{F}) = \operatorname{coker}\bigl(\mathcal{F}(U_0)\oplus\mathcal{F}(U_1)\to\mathcal{F}(U_{01})\bigr)$.
+   $$Z^1 = \Bigl\{(s_{ij}) \in \prod_{i<j}\mathcal{F}(\Xi_{ij}) : s_{jk}|_{\Xi_{ijk}} - s_{ik}|_{\Xi_{ijk}} + s_{ij}|_{\Xi_{ijk}} = 0 \text{ for all } i<j<k\Bigr\}$$
+   by the subgroup of **coboundaries** $s_{ij} = t_j|_{\Xi_{ij}} - t_i|_{\Xi_{ij}}$ for a family $(t_i) \in \prod_i\mathcal{F}(\Xi_i)$. The class of a cocycle $(s_{ij})$ vanishes if and only if the gluing data it represents are trivial, in the sense that the locally defined sections can be adjusted on the members of the cover to a global section; if $\mathcal{U}$ is a cover by two sets with connected intersection and $\mathcal{F}$ is a sheaf, then $\check H^1(\mathcal{U},\mathcal{F}) = \operatorname{coker}\bigl(\mathcal{F}(\Xi_0)\oplus\mathcal{F}(\Xi_1)\to\mathcal{F}(\Xi_{01})\bigr)$.
 
-*Proof.* (1) The kernel of $\delta : \check C^0 \to \check C^1$ consists of families $(s_i)$ with $s_i|_{U_{ij}} = s_j|_{U_{ij}}$, which by the sheaf condition is exactly $\Gamma(X,\mathcal{F})$, the existence and uniqueness clauses of *Presheaves and Sheaves* giving surjectivity and injectivity respectively. (2) is the definition unwound, the cocycle condition being $\delta s = 0$ in degree two and the coboundaries being the image of $\delta$ in degree zero.
+*Proof.* (1) The kernel of $\delta : \check C^0 \to \check C^1$ consists of families $(s_i)$ with $s_i|_{\Xi_{ij}} = s_j|_{\Xi_{ij}}$, which by the sheaf condition is exactly $\Gamma(X,\mathcal{F})$, the existence and uniqueness clauses of *Presheaves and Sheaves* giving surjectivity and injectivity respectively. (2) is the definition unwound, the cocycle condition being $\delta s = 0$ in degree two and the coboundaries being the image of $\delta$ in degree zero.
 
-**Example (the two-set cover of the circle).** Let $X = S^1 = U_0\cup U_1$ with $U_0, U_1$ open arcs whose intersection is the disjoint union $W_1\sqcup W_2$ of two intervals. Then $\check C^0 = \mathbb{Z}\oplus\mathbb{Z}$ and $\check C^1 = \mathbb{Z}\oplus\mathbb{Z}$, the differential in the alternating convention being $\delta(a_0,a_1) = (a_1-a_0, a_1-a_0)$ on the two components of the intersection, since a constant restricts to the same constant on each component. Hence
+**Example (the two-set cover of the circle).** Let $X = S^1 = \Xi_0\cup \Xi_1$ with $\Xi_0, \Xi_1$ open arcs whose intersection is the disjoint union $W_1\sqcup W_2$ of two intervals. Then $\check C^0 = \mathbb{Z}\oplus\mathbb{Z}$ and $\check C^1 = \mathbb{Z}\oplus\mathbb{Z}$, the differential in the alternating convention being $\delta(a_0,a_1) = (a_1-a_0, a_1-a_0)$ on the two components of the intersection, since a constant restricts to the same constant on each component. Hence
 
 $$
 \check H^0(\mathcal{U},\underline{\mathbb{Z}}) = \mathbb{Z}, \qquad \check H^1(\mathcal{U},\underline{\mathbb{Z}}) = \mathbb{Z}, \qquad \check H^n(\mathcal{U},\underline{\mathbb{Z}}) = 0 \ (n \geq 2),
 $$
 
-in agreement with $H^*(S^1;\mathbb{Z})$. The example shows that a cover by two sets meeting in two components computes the cohomology correctly: the acyclicity hypothesis of the Leray theorem below is satisfied, each of $U_0$, $U_1$ and each component of their intersection being contractible, so the theorem applies and predicts exactly this answer. The point of the example is that the intersections in a Čech cover need not be connected, and that the *alternating* convention is what handles this, since each component of an intersection contributes its own coordinate to $\check C^1$.
+in agreement with $H^*(S^1;\mathbb{Z})$. The example shows that a cover by two sets meeting in two components computes the cohomology correctly: the acyclicity hypothesis of the Leray theorem below is satisfied, each of $\Xi_0$, $\Xi_1$ and each component of their intersection being contractible, so the theorem applies and predicts exactly this answer. The point of the example is that the intersections in a Čech cover need not be connected, and that the *alternating* convention is what handles this, since each component of an intersection contributes its own coordinate to $\check C^1$.
 
-**Remark (the ordered and the alternating complex).** One may also form the complex with $C^{n}_{\mathrm{ord}}(\mathcal{U},\mathcal{F}) = \prod_{(i_0,\ldots,i_n)\in I^{n+1}}\mathcal{F}(U_{i_0\ldots i_n})$ over all ordered tuples, with the same differential; the inclusion of the alternating subcomplex is a quasi-isomorphism, since the extra terms with repeated indices are contractible by a "normalisation" homotopy. The alternating convention is used throughout this article because it is the one whose terms are indexed by the *cells of the nerve*, as the fourth section explains.
+**Remark (the ordered and the alternating complex).** One may also form the complex with $C^{n}_{\mathrm{ord}}(\mathcal{U},\mathcal{F}) = \prod_{(i_0,\ldots,i_n)\in I^{n+1}}\mathcal{F}(\Xi_{i_0\ldots i_n})$ over all ordered tuples, with the same differential; the inclusion of the alternating subcomplex is a quasi-isomorphism, since the extra terms with repeated indices are contractible by a "normalisation" homotopy. The alternating convention is used throughout this article because it is the one whose terms are indexed by the *cells of the nerve*, as the fourth section explains.
 
 ## Refinements and the Direct Limit
 
-**Definition.** A cover $\mathrm{V} = \{V_j\}_{j\in J}$ **refines** $\mathcal{U} = \{U_i\}_{i\in I}$, written $\mathrm{V} \preceq \mathcal{U}$, if there is a map $\varphi : J \to I$ with $V_j \subseteq U_{\varphi(j)}$ for every $j$. The choice of $\varphi$ gives a **refinement map** of complexes
+**Definition.** A cover $\mathrm{V} = \{V_j\}_{j\in J}$ **refines** $\mathcal{U} = \{\Xi_i\}_{i\in I}$, written $\mathrm{V} \preceq \mathcal{U}$, if there is a map $\varphi : J \to I$ with $V_j \subseteq \Xi_{\varphi(j)}$ for every $j$. The choice of $\varphi$ gives a **refinement map** of complexes
 
 $$
 \check C^\bullet(\mathcal{U},\mathcal{F}) \to \check C^\bullet(\mathrm{V},\mathcal{F}), \qquad (s_{i_0\ldots i_n}) \mapsto \Bigl(\varphi: (j_0<\cdots<j_n) \mapsto s_{\varphi(j_0)\ldots\varphi(j_n)}\big|_{V_{j_0\ldots j_n}}\Bigr),
@@ -95,7 +95,7 @@ over the directed set of open covers of $X$ ordered by refinement. The natural m
 
 ## The Leray Theorem and the Spectral Sequence
 
-**Theorem (the Čech-to-derived spectral sequence).** Let $\mathcal{U}$ be an open cover of $X$ and let $\underline{H}^m(\mathcal{F})$ denote the **presheaf** $U\mapsto H^m(U,\mathcal{F})$ of sheaf cohomology, with $\underline{H}^0(\mathcal{F}) = \mathcal{F}$. There is a spectral sequence of cohomological type
+**Theorem (the Čech-to-derived spectral sequence).** Let $\mathcal{U}$ be an open cover of $X$ and let $\underline{H}^m(\mathcal{F})$ denote the **presheaf** $\Xi\mapsto H^m(\Xi,\mathcal{F})$ of sheaf cohomology, with $\underline{H}^0(\mathcal{F}) = \mathcal{F}$. There is a spectral sequence of cohomological type
 
 $$
 E_2^{n,m} = \check H^n\bigl(\mathcal{U}, \underline{H}^m(\mathcal{F})\bigr) \Longrightarrow H^{n+m}(X,\mathcal{F}),
@@ -103,9 +103,9 @@ $$
 
 natural in $\mathcal{U}$ and $\mathcal{F}$, converging to the sheaf cohomology of $\mathcal{F}$; it is a spectral sequence of a double complex, the **Čech–de Rham double complex**, and its first-quadrant form is that of *Spectral Sequences* of Part I.
 
-*Proof sketch.* Form the double complex $K^{n,m} = \check C^n(\mathcal{U}, \mathcal{Q}^m)$ for a resolution $\mathcal{Q}^\bullet$ of $\mathcal{F}$ by injectives, with the Čech differential in $n$ and the resolution differential in $m$. The spectral sequence of the double complex filtered by the total degree has $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{Q}^m)$; taking the cohomology in $m$ first uses that a section of $H^m(\mathcal{Q}^\bullet)$ over a member of the cover computes $H^m(U_i,\mathcal{F})$, giving $E_2^{n,m} = \check H^n(\mathcal{U},\underline{H}^m(\mathcal{F}))$, and the other filtration converges to the cohomology of the total complex, which is $H^*(X,\mathcal{F})$ because the rows are resolutions and the Čech complex of an injective resolution computes the derived functors.
+*Proof sketch.* Form the double complex $K^{n,m} = \check C^n(\mathcal{U}, \mathcal{Q}^m)$ for a resolution $\mathcal{Q}^\bullet$ of $\mathcal{F}$ by injectives, with the Čech differential in $n$ and the resolution differential in $m$. The spectral sequence of the double complex filtered by the total degree has $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{Q}^m)$; taking the cohomology in $m$ first uses that a section of $H^m(\mathcal{Q}^\bullet)$ over a member of the cover computes $H^m(\Xi_i,\mathcal{F})$, giving $E_2^{n,m} = \check H^n(\mathcal{U},\underline{H}^m(\mathcal{F}))$, and the other filtration converges to the cohomology of the total complex, which is $H^*(X,\mathcal{F})$ because the rows are resolutions and the Čech complex of an injective resolution computes the derived functors.
 
-**Theorem (Leray's theorem).** Let $\mathcal{U}$ be an open cover of $X$ such that $\underline{H}^m(\mathcal{F})(U_{i_0\ldots i_n}) = H^m(U_{i_0\ldots i_n},\mathcal{F}) = 0$ for every nonempty finite intersection and every $m > 0$, that is, every nonempty finite intersection is **acyclic** for $\mathcal{F}$. Then the natural map
+**Theorem (Leray's theorem).** Let $\mathcal{U}$ be an open cover of $X$ such that $\underline{H}^m(\mathcal{F})(\Xi_{i_0\ldots i_n}) = H^m(\Xi_{i_0\ldots i_n},\mathcal{F}) = 0$ for every nonempty finite intersection and every $m > 0$, that is, every nonempty finite intersection is **acyclic** for $\mathcal{F}$. Then the natural map
 
 $$
 \check H^n(\mathcal{U},\mathcal{F}) \to H^n(X,\mathcal{F})
@@ -121,15 +121,15 @@ is an isomorphism for every $n \geq 0$.
 
 ## The Nerve of a Cover
 
-**Definition.** The **nerve** of the cover $\mathcal{U} = \{U_i\}_{i\in I}$ is the simplicial complex $N(\mathcal{U})$ with vertex set $I$, in which a finite subset $\{i_0,\ldots,i_n\}$ spans a $n$-simplex if and only if the intersection $U_{i_0\ldots i_n}$ is nonempty. Its geometric realisation is written $|N(\mathcal{U})|$.
+**Definition.** The **nerve** of the cover $\mathcal{U} = \{\Xi_i\}_{i\in I}$ is the simplicial complex $N(\mathcal{U})$ with vertex set $I$, in which a finite subset $\{i_0,\ldots,i_n\}$ spans a $n$-simplex if and only if the intersection $\Xi_{i_0\ldots i_n}$ is nonempty. Its geometric realisation is written $|N(\mathcal{U})|$.
 
-**Theorem (the nerve theorem).** Let $X$ be a paracompact space and $\mathcal{U}$ an open cover such that every nonempty finite intersection $U_{i_0\ldots i_n}$ is contractible. Then the geometric realisation of the nerve is homotopy equivalent to $X$:
+**Theorem (the nerve theorem).** Let $X$ be a paracompact space and $\mathcal{U}$ an open cover such that every nonempty finite intersection $\Xi_{i_0\ldots i_n}$ is contractible. Then the geometric realisation of the nerve is homotopy equivalent to $X$:
 
 $$
 |N(\mathcal{U})| \simeq X.
 $$
 
-*Proof sketch.* The homotopy equivalence is realised by a map sending the vertex $i$ to a point of $U_i$ and extending over the simplices using the contractibility of the intersections; the inverse is a partition-of-unity map, which exists because the cover may be taken locally finite on a paracompact space, sending $x$ to the barycentric coordinates of the set of members of the cover containing $x$. The two composites are homotopic to the identity by a straight-line homotopy in the simplex of the nerve, the partitions of unity providing the continuity.
+*Proof sketch.* The homotopy equivalence is realised by a map sending the vertex $i$ to a point of $\Xi_i$ and extending over the simplices using the contractibility of the intersections; the inverse is a partition-of-unity map, which exists because the cover may be taken locally finite on a paracompact space, sending $x$ to the barycentric coordinates of the set of members of the cover containing $x$. The two composites are homotopic to the identity by a straight-line homotopy in the simplex of the nerve, the partitions of unity providing the continuity.
 
 **Corollary (Čech cohomology is the cohomology of the nerve).** For a cover $\mathcal{U}$ with all nonempty finite intersections acyclic for the constant sheaf $\underline{A}$, the Čech complex of $\mathcal{U}$ with coefficients in $\underline{A}$ is the simplicial cochain complex of the nerve with coefficients in $A$:
 
@@ -141,7 +141,7 @@ the simplicial cohomology of *Simplicial and Singular Homology*. If in addition 
 
 *Proof.* The alternation convention of the Čech complex makes $\check C^n(\mathcal{U},\underline{A})$ the group of functions on the $n$-simplices of the nerve with values in $A$, and the Čech differential is the simplicial coboundary; the identification of the two complexes is then tautological.
 
-**Example (the circle, the torus and the classifying space).** The circle $S^1$ has a good cover by three arcs $U_0, U_1, U_2$ such that each pairwise intersection is an arc (nonempty and contractible) and the triple intersection is empty; the nerve is the boundary of a triangle, a circle, and $\check H^\bullet(\mathcal{U},\underline{\mathbb{Z}}) = (\mathbb{Z},\mathbb{Z},0) = H^\bullet(S^1;\mathbb{Z})$, in agreement with the two-set computation above. The good cover of the torus $T^2 = S^1\times S^1$ obtained by taking the product of the three-arc covers of the two factors has nine members, and its nerve is the product of the two triangle nerves, a triangulation of $T^2$; hence $\check H^\bullet = (\mathbb{Z},\mathbb{Z}^2,\mathbb{Z})$. The nerve of a good cover of $\mathbb{RP}^2$ may be taken to be the six-vertex triangulation of the projective plane, whose cohomology with $\mathbb{F}_2$ coefficients is $(\mathbb{F}_2,\mathbb{F}_2,\mathbb{F}_2)$. The construction is the prototype of the **classifying space** $BG$, whose general theory is that of *Classifying Spaces and Cohomology Operations*, above this article: for a discrete group $G$ acting freely and properly discontinuously on a contractible space $EG$, the quotient $BG$ has a good cover whose nerve is a model for the simplicial set $EG/G$, and $\check H^*(BG;A)$ is the group cohomology $H^*(G;A)$ of $G$ with coefficients in the trivial module $A$.
+**Example (the circle, the torus and the classifying space).** The circle $S^1$ has a good cover by three arcs $\Xi_0, \Xi_1, \Xi_2$ such that each pairwise intersection is an arc (nonempty and contractible) and the triple intersection is empty; the nerve is the boundary of a triangle, a circle, and $\check H^\bullet(\mathcal{U},\underline{\mathbb{Z}}) = (\mathbb{Z},\mathbb{Z},0) = H^\bullet(S^1;\mathbb{Z})$, in agreement with the two-set computation above. The good cover of the torus $T^2 = S^1\times S^1$ obtained by taking the product of the three-arc covers of the two factors has nine members, and its nerve is the product of the two triangle nerves, a triangulation of $T^2$; hence $\check H^\bullet = (\mathbb{Z},\mathbb{Z}^2,\mathbb{Z})$. The nerve of a good cover of $\mathbb{RP}^2$ may be taken to be the six-vertex triangulation of the projective plane, whose cohomology with $\mathbb{F}_2$ coefficients is $(\mathbb{F}_2,\mathbb{F}_2,\mathbb{F}_2)$. The construction is the prototype of the **classifying space** $BG$, whose general theory is that of *Classifying Spaces and Cohomology Operations*, above this article: for a discrete group $G$ acting freely and properly discontinuously on a contractible space $EG$, the quotient $BG$ has a good cover whose nerve is a model for the simplicial set $EG/G$, and $\check H^*(BG;A)$ is the group cohomology $H^*(G;A)$ of $G$ with coefficients in the trivial module $A$.
 
 ## Applications
 
@@ -173,7 +173,7 @@ is exact. In particular, for a complex manifold the exponential sequence compute
 
 **Theorem (classification of torsors).** Let $A$ be a sheaf of abelian groups on $X$. The classes in $\check H^1(X,A)$ are in natural bijection with the isomorphism classes of **$A$-torsors** on $X$, that is, of sheaves $\mathcal{L}$ of sets on $X$ with a free and transitive action of $A$, and the class $0$ corresponds to the trivial torsor $A$ itself.
 
-*Proof.* A torsor is trivialised by a cover $\{U_i\}$: choose local sections $s_i \in \mathcal{L}(U_i)$, and let $a_{ij}$ be the unique element of $A(U_{ij})$ with $a_{ij}\cdot s_j = s_i$ on the overlap; the transition elements satisfy the cocycle condition $a_{ij}a_{jk} = a_{ik}$ and define a class in $\check H^1(\mathcal{U},A)$. Changing the local sections changes the cocycle by a coboundary, and refining the cover does not change the class in the limit; conversely a cocycle with values in $A$ defines a torsor by gluing the local pieces $A|_{U_i}$ along the translations determined by the cocycle.
+*Proof.* A torsor is trivialised by a cover $\{\Xi_i\}$: choose local sections $s_i \in \mathcal{L}(\Xi_i)$, and let $a_{ij}$ be the unique element of $A(\Xi_{ij})$ with $a_{ij}\cdot s_j = s_i$ on the overlap; the transition elements satisfy the cocycle condition $a_{ij}a_{jk} = a_{ik}$ and define a class in $\check H^1(\mathcal{U},A)$. Changing the local sections changes the cocycle by a coboundary, and refining the cover does not change the class in the limit; conversely a cocycle with values in $A$ defines a torsor by gluing the local pieces $A|_{\Xi_i}$ along the translations determined by the cocycle.
 
 **Example.** For a covering space $n : X^{\mathrm{cov}}\to X$ with group of deck transformations $A$, the sheaf of local sections of $n$ is an $A$-torsor; when $n$ is the universal cover of a connected space with fundamental group $G$, the class of the torsor in $\check H^1(X,\underline{G})$ corresponds to the class of the covering in $\operatorname{Hom}(\pi_1(X),G)$ modulo conjugation, which is the classification of *The Fundamental Group and Covering Spaces* read through Čech cohomology. For $A = \mathcal{O}_X^*$ the torsors are the invertible sheaves, recovering the Picard group; for $A = \underline{\mathbb{Z}}$ on $\mathbb{C}^*$, the torsor of the multi-valued logarithm is the nonzero class of $H^1(\mathbb{C}^*,\underline{\mathbb{Z}})$.
 
@@ -185,7 +185,7 @@ $$
 K^{n,m} = \check C^n(\mathcal{U},\Omega^m),
 $$
 
-with the Čech differential $\delta$ in the horizontal direction and the exterior derivative $d$ in the vertical direction; the two commute, $\delta d = d\delta$, so that $K^{\bullet,\bullet}$ is a double complex, and the two spectral sequences of the filtration by total degree both converge to the hypercohomology of $\Omega^\bullet$: the first has $E_2^{n,m} = \check H^n(\mathcal{U},\mathcal{H}^m(\Omega^\bullet))$ with $\mathcal{H}^0(\Omega^\bullet) = \underline{\mathbb{R}}$ and $\mathcal{H}^m = 0$ for $m>0$ by the Poincaré lemma, and the second has $E_1^{n,m} = \Omega^m(U_{(n)})$ computing $H^m_{dR}(M)$. The comparison of the two degenerations is the **de Rham theorem**,
+with the Čech differential $\delta$ in the horizontal direction and the exterior derivative $d$ in the vertical direction; the two commute, $\delta d = d\delta$, so that $K^{\bullet,\bullet}$ is a double complex, and the two spectral sequences of the filtration by total degree both converge to the hypercohomology of $\Omega^\bullet$: the first has $E_2^{n,m} = \check H^n(\mathcal{U},\mathcal{H}^m(\Omega^\bullet))$ with $\mathcal{H}^0(\Omega^\bullet) = \underline{\mathbb{R}}$ and $\mathcal{H}^m = 0$ for $m>0$ by the Poincaré lemma, and the second has $E_1^{n,m} = \Omega^m(\Xi_{(n)})$ computing $H^m_{dR}(M)$. The comparison of the two degenerations is the **de Rham theorem**,
 
 $$
 H^n_{dR}(M) \cong H^n(M;\mathbb{R}),
@@ -203,13 +203,13 @@ The Čech-to-derived spectral sequence $E_2^{n,m} = \check H^n(\mathcal{U},\unde
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{U} = \{U_i\}_{i\in I}$ | open cover of $X$; $U_{i_0\ldots i_n}$ its $(n+1)$-fold intersection |
-| $\check C^n(\mathcal{U},\mathcal{F}) = \prod_{i_0<\cdots<i_n}\mathcal{F}(U_{i_0\ldots i_n})$ | Čech cochains of degree $n$, alternating convention |
+| $\mathcal{U} = \{\Xi_i\}_{i\in I}$ | open cover of $X$; $\Xi_{i_0\ldots i_n}$ its $(n+1)$-fold intersection |
+| $\check C^n(\mathcal{U},\mathcal{F}) = \prod_{i_0<\cdots<i_n}\mathcal{F}(\Xi_{i_0\ldots i_n})$ | Čech cochains of degree $n$, alternating convention |
 | $\delta$ | Čech differential, alternating sum with restrictions |
 | $\check H^n(\mathcal{U},\mathcal{F})$ | cohomology of the Čech complex of the cover |
 | $\check H^n(X,\mathcal{F}) = \varinjlim_{\mathcal{U}}\check H^n(\mathcal{U},\mathcal{F})$ | Čech cohomology, over all covers by refinement |
 | $\mathrm{V} \preceq \mathcal{U}$ | refinement; a refinement map on cochain complexes |
-| $\underline{H}^m(\mathcal{F}) : U\mapsto H^m(U,\mathcal{F})$ | presheaf of cohomology, coefficients of the Čech-to-derived sequence |
+| $\underline{H}^m(\mathcal{F}) : \Xi\mapsto H^m(\Xi,\mathcal{F})$ | presheaf of cohomology, coefficients of the Čech-to-derived sequence |
 | $E_2^{n,m} = \check H^n(\mathcal{U},\underline{H}^m(\mathcal{F}))$ | Čech-to-derived spectral sequence, converging to $H^{n+m}(X,\mathcal{F})$ |
 | good cover | all nonempty finite intersections contractible; Leray applies |
 | $N(\mathcal{U})$, $|N(\mathcal{U})|$ | nerve of the cover and its realisation; $|N(\mathcal{U})|\simeq X$ |

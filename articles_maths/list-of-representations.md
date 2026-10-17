@@ -36,7 +36,7 @@ A representation of a Lie algebra $\mathrm{G}$ is a vector space with a linear m
 | Representation | The property it has | Introduced in |
 |---|---|---|
 | Representation of a Lie algebra | a module over $\mathrm{G}$, with the bracket action | *Representations of Lie Algebras* |
-| Universal enveloping algebra $U(\mathrm{G})$ | the associative algebra whose modules are the representations, by the PBW theorem | *Representations of Lie Algebras* |
+| Universal enveloping algebra $\mathrm{U}(\mathrm{G})$ | the associative algebra whose modules are the representations, by the PBW theorem | *Representations of Lie Algebras* |
 | Weight and weight space | the generalised eigenspaces of a Cartan subalgebra | *Representations of Lie Algebras* |
 | Highest weight representation | the irreducible representation determined by a dominant weight | *Representations of Lie Algebras* |
 | Weyl's theorem | complete reducibility for a semisimple Lie algebra | *Representations of Lie Algebras* |
@@ -106,7 +106,7 @@ The article denotes its representations by name; the symbols appearing in the ta
 | $F[G]$, $k[G]$ | group algebra |
 | $\rho : G \to GL_F(V)$ | representation of a group |
 | $\chi_V$, $\operatorname{Res}$, $\operatorname{Ind}$, $R(G)$ | character, restriction, induction, representation ring |
-| $\mathrm{G}$, $\mathrm{GL}(V)$, $U(\mathrm{G})$ | Lie algebra, endomorphism algebra, universal enveloping algebra |
+| $\mathrm{G}$, $\mathrm{GL}(V)$, $\mathrm{U}(\mathrm{G})$ | Lie algebra, endomorphism algebra, universal enveloping algebra |
 | $\operatorname{ad}$ | adjoint representation |
 | $M_n(k)$ | matrix algebra |
 | $\operatorname{End}_A(S)$, $\operatorname{End}_A(M)$ | endomorphism ring of a simple module, of a module |

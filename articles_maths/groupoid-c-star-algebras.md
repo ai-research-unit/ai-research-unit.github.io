@@ -131,9 +131,9 @@ which is an isomorphism when $G$ is amenable, and $C_c(G)$ is dense in both. If 
 
 ### Ideals, Simplicity and Principal Groupoids
 
-**Theorem (simplicity; Renault).** Let $G$ be a second countable locally compact étale groupoid which is topologically principal. Then $C^*_r(G)$ is simple if and only if $G$ is minimal, that is, if and only if the only open subsets $U \subseteq G^{(0)}$ with $r^{-1}(U) = s^{-1}(U)$ are $\emptyset$ and $G^{(0)}$. If $G$ is effective, the same conclusion holds with effectiveness in place of topological principality.
+**Theorem (simplicity; Renault).** Let $G$ be a second countable locally compact étale groupoid which is topologically principal. Then $C^*_r(G)$ is simple if and only if $G$ is minimal, that is, if and only if the only open subsets $\Omega \subseteq G^{(0)}$ with $r^{-1}(\Omega) = s^{-1}(\Omega)$ are $\emptyset$ and $G^{(0)}$. If $G$ is effective, the same conclusion holds with effectiveness in place of topological principality.
 
-**Proof.** The ideal structure of $C^*_r(G)$ is controlled by the **open invariant subsets** of $G^{(0)}$: for each such $U$ the closure of $C_c(r^{-1}(U))$ is a closed two-sided ideal of $C^*_r(G)$, and for a topologically principal groupoid every ideal arises in this way (the ideal structure theorem of Renault). Minimality says that there are no nontrivial open invariant subsets, whence simplicity. The theorem is Renault's; it is quoted as standard.
+**Proof.** The ideal structure of $C^*_r(G)$ is controlled by the **open invariant subsets** of $G^{(0)}$: for each such $\Omega$ the closure of $C_c(r^{-1}(\Omega))$ is a closed two-sided ideal of $C^*_r(G)$, and for a topologically principal groupoid every ideal arises in this way (the ideal structure theorem of Renault). Minimality says that there are no nontrivial open invariant subsets, whence simplicity. The theorem is Renault's; it is quoted as standard.
 
 **Corollary.** For a countable row-finite graph $E$ with no sinks, the minimality of the graph groupoid is cofinality and the effectiveness is the exit condition (L); the simplicity criterion for $C^*(E)$ of *Graph C*-Algebras* is therefore the groupoid simplicity theorem in the case of $G_E$. Likewise, for a discrete group acting minimally and effectively on a locally compact space, the crossed product $C_0(X)\rtimes_r H$ is simple.
 

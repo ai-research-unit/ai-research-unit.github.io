@@ -2,31 +2,31 @@
 
 ## Introduction
 
-This is an exercise in the electromagnetism series. It is the exactly solvable special case of its direct parent, *Exercise: The Electromagnetic Field of a Moving Charge*, which performs the Liénard–Wiechert differentiation for a charge on an arbitrary subluminal worldline and verifies the velocity–acceleration split; that exercise is in turn the downstream case declared by *Radiation from Accelerated Charges in Biquaternionic Form*, the theory article that supplies the retarded solution. The special case treated here is **uniform motion**, $\dot{\vec v} \equiv 0$. Then the acceleration field vanishes identically, the field reduces to the Lorentz-boosted Coulomb field, and — this is the point of singling the case out — the retarded position can be written in **closed form**, so the entire field is available in closed form in terms of the *present* position of the charge. Nothing in the parent is changed; every object used below is inherited from it and from its own parents, and no new formalism is introduced.
+This is an exercise in the electromagnetism series. It is the exactly solvable special case of its direct parent, *Exercise: The Electromagnetic Field of a Moving Charge*, which performs the Liénard–Wiechert differentiation for a charge on an arbitrary subluminal worldline and verifies the velocity–acceleration split; that exercise is in turn the downstream case declared by *Radiation from Accelerated Charges in Biquaternionic Form*, the theory article that supplies the retarded solution. The special case treated here is **uniform motion**, $d\vec v/dt_r \equiv 0$. Then the acceleration field vanishes identically, the field reduces to the Lorentz-boosted Coulomb field, and — this is the point of singling the case out — the retarded position can be written in **closed form**, so the entire field is available in closed form in terms of the *present* position of the charge. Nothing in the parent is changed; every object used below is inherited from it and from its own parents, and no new formalism is introduced.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) — the home of the four-vectors — and the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, together with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace $\mathbb{C}_{\mathbb{B}}$. The biquaternionic gradient and its quaternion conjugate,
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) — the home of the four-vectors — and the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$, together with the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the scalar subspace $\mathbb{C}_{\mathbb{B}}$. The biquaternionic gradient and its quaternion conjugate,
 $$
-\tilde{\nabla} = e_0\,\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z,
+\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z,
 \qquad
-\tilde{\nabla}^{\natural} = e_0\,\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z,
+\tilde{\nabla}^{\natural} = e_t\,\partial/\partial Q_t - \vec e_x\partial/\partial Q_x - \vec e_y\partial/\partial Q_y - \vec e_z\partial/\partial Q_z,
 $$
-with $\partial_{ict} = -\frac{i}{c}\partial_t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_0 + \vec A$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
+with $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ (pure vector), the potential $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$, and the source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ (here $\rho$ is the charge density, not a distance). The permittivity and permeability $\epsilon,\mu$ with $c = 1/\sqrt{\epsilon\mu}$, and $\vec H = \vec B/\mu$. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ of the shared notation. No object of the informational sector arises below, so $\mathbb{M}_+$, the rotors, and the trace formula are recorded but the trace formula is not used; the boost rotor is invoked only in Problem 5.
 
-**What is inherited from the parent.** The charge $ϙ$ moves on the worldline $\vec x_q(t)$ with coordinate velocity $\vec v(t)$ and $\vec\beta = \vec v/c$. The retarded time is defined implicitly by
+**What is inherited from the parent.** The charge $ϙ$ moves on the worldline $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$ with coordinate velocity $\vec v(t)$ and $\vec\beta = \vec v/c$. The retarded time is defined implicitly by
 $$
 t_r = t - \frac{R}{c},
 \qquad
-R = \left|\vec x - \vec x_q(t_r)\right|,
+R = \left|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r)\right|,
 $$
 and writing
 $$
-\vec R = \vec x - \vec x_q(t_r), \qquad R = |\vec R|, \qquad \vec u_R = \frac{\vec R}{R},
+\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r), \qquad R = |\vec R|, \qquad \vec u_R = \frac{\vec R}{R},
 \qquad
 \kappa = 1 - \vec u_R\cdot\vec\beta,
 \qquad
 D = R\kappa,
 $$
-the Liénard–Wiechert potential is $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}$ with $\tilde{V} = ic\,e_0 + \vec v(t_r)$. The field splits exactly into a velocity part and an acceleration part, and for the velocity part the parent's closed component formula is
+the Liénard–Wiechert potential is $\tilde{A} = \frac{\mu ϙ}{4\pi D}\tilde{V}$ with $\tilde{V} = ic\,e_t + \vec v(t_r)$. The field splits exactly into a velocity part and an acceleration part, and for the velocity part the parent's closed component formula is
 $$
 \vec E_v = \frac{ϙ}{4\pi\epsilon}\,\frac{(1-\beta^2)\left(\vec u_R-\vec\beta\right)}{\kappa^3 R^2},
 \qquad
@@ -34,7 +34,7 @@ $$
 \qquad
 \vec E = \vec E_v + \vec E_a,
 $$
-with $\vec E_a$ linear in $\dot{\vec\beta}$. The velocity field is of electric type and not null; the acceleration field falls one power of $R$ more slowly, is transverse and null, and is the zero-divisor realization of radiation. All source quantities are evaluated at the retarded time, and a dot on a source quantity denotes $\frac{d}{dt_r}$.
+with $\vec E_a$ linear in $d\vec\beta/dt_r$. The velocity field is of electric type and not null; the acceleration field falls one power of $R$ more slowly, is transverse and null, and is the zero-divisor realization of radiation. All source quantities are evaluated at the retarded time, and the derivative of a source quantity is written $\frac{d}{dt_r}$.
 
 **The one convention used here, stated once.** The boost rotor
 $$
@@ -42,11 +42,11 @@ $$
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde{\Lambda}_{\vec v_b}(ic\,e_0)\tilde{\Lambda}_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\vec v_b}\tilde{F}\tilde{\Lambda}_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^{*}$; that is the parent's Problem 5 and we use its result.
+**carries the laboratory to the frame moving with $+\vec v_b$**: applied to the rest four-velocity it produces velocity $-\vec v_b$, i.e. $\tilde{\Lambda}_{\vec v_b}(ic\,e_t)\tilde{\Lambda}_{\vec v_b}^{*}$ has velocity $-\vec v_b$. This is the convention fixed by the boosting and two-body exercises of the relativity series and used by the parent. The field strength is rank two, and under this rotor it transforms by the **similarity** $\tilde{F}' = \tilde{\Lambda}^{\natural}_{\vec v_b}\tilde{F}\tilde{\Lambda}_{\vec v_b}$, not by the four-vector rotor conjugation $\tilde{\Lambda}\tilde{F}\tilde{\Lambda}^{*}$; that is the parent's Problem 5 and we use its result.
 
 **New notation for this exercise.** Since the uniform case is naturally organized around the charge's *present* position, write the **present separation**
 $$
-\vec d = \vec x - \vec x_q(t), \qquad d = |\vec d|, \qquad \vec u_d = \frac{\vec d}{d},
+\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z), \qquad d = |\vec d|, \qquad \vec u_d = \frac{\vec d}{d},
 $$
 with the components parallel and perpendicular to the (constant) velocity,
 $$
@@ -73,9 +73,9 @@ with $\gamma = (1-\beta^2)^{-1/2}$. The electric field is radial *from the prese
 
 ## The Problem
 
-The parent gives the velocity field in terms of the retarded separation $\vec R$ and the retarded denominator $\kappa$. For a charge in uniform motion that description is not the most economical one: the retarded time equation can be solved exactly, so $\vec R$, $R$ and $\kappa$ can all be eliminated in favour of the present separation $\vec d = \vec x-\vec x_q(t)$, which is the quantity a laboratory observer actually measures. The exercise is to carry out that elimination and then to *verify* the closed form rather than assert it. The specific demands are:
+The parent gives the velocity field in terms of the retarded separation $\vec R$ and the retarded denominator $\kappa$. For a charge in uniform motion that description is not the most economical one: the retarded time equation can be solved exactly, so $\vec R$, $R$ and $\kappa$ can all be eliminated in favour of the present separation $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z)$, which is the quantity a laboratory observer actually measures. The exercise is to carry out that elimination and then to *verify* the closed form rather than assert it. The specific demands are:
 
-1. derive the retarded position $\vec x_q(t_r) = \vec x_q(t) - \vec\betaR$ in closed form, including the quadratic that fixes $R$ and the choice of its root (the two traps being that the retarded position is **not** the present position, and that for uniform motion it nevertheless has a closed form);
+1. derive the retarded position $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r) = x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z - \vec\beta R$ in closed form, including the quadratic that fixes $R$ and the choice of its root (the two traps being that the retarded position is **not** the present position, and that for uniform motion it nevertheless has a closed form);
 2. substitute into the parent's velocity field to obtain the Heaviside ellipsoid field, and check the direction of $\vec E$ and the $1/d^2$ falloff;
 3. verify the non-relativistic limit (Coulomb) and the ultrarelativistic limit (transverse pancake) — two cases chosen because the second does not follow from the first;
 4. fix the boost-rotor convention and confirm the closed form as the boosted Coulomb field;
@@ -85,11 +85,11 @@ The numerical checks quoted below were performed under `/home/hp/.venvs/verify/b
 
 ## Problem 1: The Retarded Position in Closed Form
 
-**Statement.** For a charge in uniform motion, (a) integrate the worldline to show that the retarded position satisfies $\vec x_q(t_r) = \vec x_q(t) - \vec v(t-t_r)$, and hence, with $R = c(t-t_r)$, the **retarded-separation identity**
+**Statement.** For a charge in uniform motion, (a) integrate the worldline to show that the retarded position satisfies $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r) = x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z - \vec v(t-t_r)$, and hence, with $R = c(t-t_r)$, the **retarded-separation identity**
 $$
-\vec R = \vec d + \vec\betaR,
+\vec R = \vec d + \vec\beta R,
 \qquad
-\vec d = \vec x - \vec x_q(t).
+\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z).
 $$
 (b) Square it to obtain the quadratic $(1-\beta^2)R^2 - 2\beta d_\parallel R - d^2 = 0$ and show that its physical root is
 $$
@@ -103,15 +103,15 @@ $$
 $$
 (d) Quantify how far the retarded position is from the present position.
 
-**Solution (a).** For constant $\vec v$ the worldline is $\vec x_q(t_r) = \vec x_q(t) - \vec v(t-t_r)$: between emission and observation the charge has travelled for a time $t-t_r$ at the constant velocity $\vec v$. The retarded-time definition gives $t-t_r = R/c$, so $\vec x_q(t_r) = \vec x_q(t) - \vec\betaR$, and therefore
+**Solution (a).** For constant $\vec v$ the worldline is $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r) = x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z - \vec v(t-t_r)$: between emission and observation the charge has travelled for a time $t-t_r$ at the constant velocity $\vec v$. The retarded-time definition gives $t-t_r = R/c$, so $(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r) = x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z - \vec\beta R$, and therefore
 $$
-\vec R = \vec x - \vec x_q(t_r) = \vec x - \vec x_q(t) + \vec\betaR = \vec d + \vec\betaR .
+\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r) = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z - (x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z) + \vec\beta R = \vec d + \vec\beta R .
 $$
-Two remarks belong here. First, the retarded position is **not** the present position: the two differ by $\vec\betaR$, and Problem 1(d) shows that this offset is not small. Second, the identity $\vec R = \vec d+\vec\betaR$ is exact rather than a first-order approximation — that exactness is precisely what makes uniform motion solvable.
+Two remarks belong here. First, the retarded position is **not** the present position: the two differ by $\vec\beta R$, and Problem 1(d) shows that this offset is not small. Second, the identity $\vec R = \vec d+\vec\beta R$ is exact rather than a first-order approximation — that exactness is precisely what makes uniform motion solvable.
 
 **Solution (b).** Squaring the identity,
 $$
-R^2 = |\vec d+\vec\betaR|^2 = d^2 + 2R\,\vec d\cdot\vec\beta + \beta^2 R^2
+R^2 = |\vec d+\vec\beta R|^2 = d^2 + 2R\,\vec d\cdot\vec\beta + \beta^2 R^2
 = d^2 + 2\beta d_\parallel R + \beta^2 R^2,
 $$
 which rearranges to
@@ -141,9 +141,9 @@ This is the key to the whole exercise: the retarded combination $\vec u_R-\vec\b
 
 **Solution (d).** The charge has moved a distance
 $$
-\left|\vec x_q(t) - \vec x_q(t_r)\right| = \beta R
+\left|x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r)\right| = \beta R
 $$
-along $\vec u_v$ since emission. This is not a small correction at relativistic speeds. For the representative case $\vec\beta = 0.9\,(1,1,1)/\sqrt{3}$, $\vec x_q(t) = \vec\beta c t$ and observation at $ct = 3$, $\vec x = (2,-1.3,0.7)$ (units $c=1$), the closed form gives
+along $\vec u_v$ since emission. This is not a small correction at relativistic speeds. For the representative case $\vec\beta = 0.9\,(1,1,1)/\sqrt{3}$, $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z = \vec\beta c t$ and observation at $ct = 3$, $(x,y,z)=(2,-1.3,0.7)$ (units $c=1$), the closed form gives
 $$
 R = 2.362563, \qquad \kappa = 0.910632, \qquad D = 2.151426, \qquad d = 3.0175, \qquad \beta R = 2.1263 :
 $$
@@ -181,14 +181,14 @@ d_\parallel^2 + \frac{d_\perp^2}{\gamma^2} = D_0^2 ,
 $$
 ellipsoids of revolution about the velocity axis with semiaxis $D_0$ along the motion and $\gamma D_0$ transverse to it: flattened along the direction of motion, the **Heaviside ellipsoid**. The same flattening is visible in the field: it is enhanced in the transverse plane and suppressed along the motion, as Problem 4 makes quantitative.
 
-**Solution (c).** Since $\dot{\vec\beta} = 0$ identically, the parent's acceleration field $\vec E_a$, which is linear in $\dot{\vec\beta}$, vanishes at every event; the uniform field is entirely the velocity field. With $\vec B = \frac{1}{c^2}\vec v\times\vec E$ one has $\vec E\perp\vec B$ and, using $\vec u_R\cdot\vec E = \frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{D^2}$ (from Problem 1(c) and the parent),
+**Solution (c).** Since $d\vec\beta/dt_r = 0$ identically, the parent's acceleration field $\vec E_a$, which is linear in $d\vec\beta/dt_r$, vanishes at every event; the uniform field is entirely the velocity field. With $\vec B = \frac{1}{c^2}\vec v\times\vec E$ one has $\vec E\perp\vec B$ and, using $\vec u_R\cdot\vec E = \frac{ϙ}{4\pi\epsilon}\frac{1-\beta^2}{D^2}$ (from Problem 1(c) and the parent),
 $$
 I_1 = \vec E^2 - c^2\vec B^2 = \left(\vec u_R\cdot\vec E\right)^2
 = \left(\frac{ϙ}{4\pi\epsilon}\,\frac{1-\beta^2}{D^2}\right)^{\!2} > 0,
 \qquad
 I_2 = \vec E\cdot\vec B = 0 .
 $$
-The field is of electric type with a nonzero longitudinal component and is **not** null: $\langle\tilde{F}\rangle_{\natural} = -\epsilon I_1 \ne 0$ and $\tilde{F}^2 \ne 0$. It is therefore not a radiation field — consistent with $\dot{\vec\beta}=0$ — and this is the qualitative difference from the parent's acceleration field, which is a zero divisor.
+The field is of electric type with a nonzero longitudinal component and is **not** null: $\langle\tilde{F}\rangle_{\natural} = -\epsilon I_1 \ne 0$ and $\tilde{F}^2 \ne 0$. It is therefore not a radiation field — consistent with $d\vec\beta/dt_r=0$ — and this is the qualitative difference from the parent's acceleration field, which is a zero divisor.
 
 **Evidence.** On the same set of constant-velocity worldlines, the present-position closed form and the parent's retarded formula $\vec E_v$ agreed componentwise to better than $10^{-15}$ (quoted discrepancies ranged from $7\times10^{-21}$ to $2.2\times10^{-16}$); $|\vec E\times\vec d|$ and $|\vec B - \vec v\times\vec E/c^2|$ never exceeded $2\times10^{-17}$; and $d^2|\vec E|$ at fixed direction was constant to eight significant figures under $d\mapsto 2d,4d,8d$. The invariance of $d^2|\vec E|$ at fixed direction is the numerical form of the $1/d^2$ law.
 
@@ -276,7 +276,7 @@ $$
 \qquad
 \tanh\psi_b = \frac{v_b}{c},
 $$
-**carries the laboratory to the frame moving with $+\vec v_b$**. On the rest four-velocity $\tilde{V}_0 = ic\,e_0$, using $\tilde{\Lambda}_{\vec v_b}^{*} = \tilde{\Lambda}_{\vec v_b}$ (a pure boost is Hermitian),
+**carries the laboratory to the frame moving with $+\vec v_b$**. On the rest four-velocity $\tilde{V}_0 = ic\,e_t$, using $\tilde{\Lambda}_{\vec v_b}^{*} = \tilde{\Lambda}_{\vec v_b}$ (a pure boost is Hermitian),
 $$
 \tilde{\Lambda}_{\vec v_b}\,\tilde{V}_0\,\tilde{\Lambda}_{\vec v_b}^{*}
 = ic\,\tilde{\Lambda}_{\vec v_b}^2
@@ -353,7 +353,7 @@ $$
 \qquad
 \tilde{F}^2 = -\langle\tilde{F}\rangle_{\natural} = \epsilon I_1 > 0 .
 $$
-The field is of electric type, is **not** null, and is not a zero divisor: $\langle\tilde{F}\rangle_{\natural}\neq0$ and $\tilde{F}^2\neq0$. It therefore carries no radiation, in agreement with $\dot{\vec\beta}=0$; the contrast with the parent's acceleration field, whose $\tilde{F}_a$ *is* a zero divisor, is exact.
+The field is of electric type, is **not** null, and is not a zero divisor: $\langle\tilde{F}\rangle_{\natural}\neq0$ and $\tilde{F}^2\neq0$. It therefore carries no radiation, in agreement with $d\vec\beta/dt_r=0$; the contrast with the parent's acceleration field, whose $\tilde{F}_a$ *is* a zero divisor, is exact.
 
 **Evidence.** (a) The three checks just listed gave $2.1\times10^{-17}$ (rotor boost), the exact $\beta^2$ law of Problem 3, and the exact $\gamma$ and $1/\gamma^2$ laws of Problem 4. (b) The ratio $|\vec E|/|\vec E_C^{\text{present}}| = \Lambda(\theta)$ was computed at $\beta=0.5,0.9,0.99$: at $\beta=0.9$ it was $0.190$ along the motion, $0.267$ at $30^\circ$, $0.773$ at $60^\circ$, and $2.294=\gamma$ transverse; at $\beta=0.99$ it was $0.0199$, $0.0303$, $0.1459$, and $7.089$. (c) Over thirty random uniform worldlines, $|I_1-(\vec u_R\cdot\vec E)^2| \le 1.7\times10^{-18}$, $|I_2|\le 4.1\times10^{-20}$, and $|\langle\tilde{F}\rangle_{\natural}+\epsilon I_1| \le 8.7\times10^{-19}$; $\tilde{F}^2$ was nonzero (of order $10^{-3}$ in the sample), so the field is not a zero divisor.
 
@@ -364,14 +364,14 @@ The field is of electric type, is **not** null, and is not a zero divisor: $\lan
 **What it leaves open, recorded rather than closed.**
 
 1. **"Purely transverse" is a statement about the pancake, not about every direction.** The exact content is: in the transverse plane the field is exactly perpendicular to $\vec v$, and at fixed impact parameter the longitudinal component is a factor $0.385/\gamma$ below the transverse peak. At a fixed direction the longitudinal fraction is $\cos\theta$, independent of $\gamma$, so the naive interpretation is false at every finite $\gamma$. This is a clarification, not a defect, but it is the step most easily smoothed over.
-2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $\dot{\vec v}\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
+2. **Strictly uniform motion only.** The exact reduction to the boosted Coulomb field requires $d\vec v/dt_r\equiv0$, so that the charge's rest frame is inertial for all time. A charge that is only *instantaneously* unaccelerated at the emission event still carries the parent's acceleration field $\vec E_a$ at that event; the uniform-motion result is the limit in which that field is absent everywhere, and we did not attempt to bound the "almost uniform" correction.
 3. **The $\beta\to1$ behaviour of the closed-form retarded position.** The coefficient of $R^2$ in the quadratic degenerates as $\beta\to1$: for a field point ahead of the charge along the motion ($d_\parallel>0$) the closed form gives $R\sim2d_\parallel\gamma^2\to\infty$, while for one behind it ($d_\parallel<0$) $R\to(d_\parallel^2+d_\perp^2)/(2|d_\parallel|)$, finitely (checked numerically at $\beta$ up to $0.99999$). The present-position field is finite throughout, so the limit $\beta\to1$ does not commute with reading $R$ off the quadratic. We did not pursue the caustic $\kappa\to0$ or superluminal worldlines; that remains the parent's gap 3.
 4. **The similarity law is used, not derived.** We inherited $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$ from the parent and verified it numerically against the standard boost, but did not derive it from the biquaternion representation of the rank-two field. That derivation remains the parent's Further Problem 3.
 5. **The overall normalization of $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A}$.** The Maxwell article records a normalization caveat for this identification; we used the parent's fixed normalization and did not re-examine it.
 
 ## Summary
 
-The field of a charge in uniform motion is the exactly solvable case of the parent's Liénard–Wiechert problem, and the reason it is solvable is that the retarded position is available in closed form. With $R = c(t-t_r)$ and the present separation $\vec d = \vec x-\vec x_q(t)$, the identity $\vec R = \vec d+\vec\betaR$ gives the quadratic $(1-\beta^2)R^2-2\beta d_\parallel R-d^2=0$, whose physical root is the plus branch; from it follow
+The field of a charge in uniform motion is the exactly solvable case of the parent's Liénard–Wiechert problem, and the reason it is solvable is that the retarded position is available in closed form. With $R = c(t-t_r)$ and the present separation $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z)$, the identity $\vec R = \vec d+\vec\beta R$ gives the quadratic $(1-\beta^2)R^2-2\beta d_\parallel R-d^2=0$, whose physical root is the plus branch; from it follow
 $$
 D = R\kappa = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2}
 \qquad\text{and}\qquad
@@ -396,23 +396,23 @@ Two things are recorded rather than closed. The first is a clarification: "purel
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_je_k = -\delta_{jk}e_0 + \epsilon_{jkm}e_m$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}, \mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace, scalar subspace |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, its quaternion conjugate, d'Alembertian |
-| $\partial_{ict} = -\frac{i}{c}\partial_t$ | Temporal component of the gradient |
+| $\partial/\partial Q_t = -\frac{i}{c}\partial/\partial t$ | Temporal component of the gradient |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
-| $\tilde{A} = \frac{i\phi}{c}e_0 + \vec A$ | Potential biquaternion |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ | Source biquaternion; $\rho$ is the charge density |
+| $\tilde{A} = \frac{i\phi}{c}e_t + \vec A$ | Potential biquaternion |
+| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$ | Source biquaternion; $\rho$ is the charge density |
 | $\epsilon, \mu$, $c = 1/\sqrt{\epsilon\mu}$ | Permittivity, permeability, speed of light in the medium |
 | $\vec H = \vec B/\mu$ | Magnetic field; $\vec B$ the magnetic induction |
-| $ϙ$, $\vec x_q(t)$, $\vec v(t)$ | Charge, worldline, coordinate velocity |
+| $ϙ$, $x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z$, $\vec v(t)$ | Charge, worldline, coordinate velocity |
 | $t_r = t - R/c$ | Retarded time (defined implicitly) |
-| $\vec R = \vec x-\vec x_q(t_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
+| $\vec R = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t_r)$, $R = |\vec R|$, $\vec u_R = \vec R/R$ | Retarded separation, its length and direction |
 | $\vec\beta = \vec v/c$ | Coordinate velocity over $c$ (constant in this exercise) |
 | $\kappa = 1-\vec u_R\cdot\vec\beta$, $D = R\kappa$ | Retarded denominator (inherited) |
-| $\vec d = \vec x-\vec x_q(t)$, $d = |\vec d|$, $\vec u_d = \vec d/d$ | Present separation from the charge's present position |
+| $\vec d = x\,\vec e_x+y\,\vec e_y+z\,\vec e_z-(x_q(t)\,\vec e_x+y_q(t)\,\vec e_y+z_q(t)\,\vec e_z)$, $d = |\vec d|$, $\vec u_d = \vec d/d$ | Present separation from the charge's present position |
 | $d_\parallel = \vec u_v\cdot\vec d$, $d_\perp^2 = d^2-d_\parallel^2$ | Components parallel and perpendicular to the motion |
 | $D = \sqrt{d_\parallel^2+(1-\beta^2)d_\perp^2} = \sqrt{d_\parallel^2+d_\perp^2/\gamma^2}$ | Retarded denominator in closed form |
 | $\gamma = (1-\beta^2)^{-1/2}$ | Lorentz factor of the (constant) velocity |

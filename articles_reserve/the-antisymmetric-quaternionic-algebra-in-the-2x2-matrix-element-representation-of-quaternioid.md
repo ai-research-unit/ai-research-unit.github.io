@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ is the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric Quaternionic
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric Quaternionic
 Algebra of Quaternions*. This article reads it on the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$
 of *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, where
 the parent product becomes the **conjugated product** $\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$
@@ -29,20 +29,20 @@ companion articles are *The Antisymmetric Plain Algebra in the $2\times2$ Matrix
 $M_2(\mathbb{C})$*, above this article in this category, and *The Antisymmetric Quaternionic Algebra in
 the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; the model is
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
+$\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$; the model is
 
 $$
-\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_2\\ -iq_1+q_2 & q_0+iq_3\end{pmatrix},
+\mathsf{M}_2(\tilde q)=\begin{pmatrix}q_0-iq_3 & -iq_1-q_y\\ -iq_1+q_y & q_t+iq_3\end{pmatrix},
 $$
 
-with $\mathsf{M}_2(e_0)=\mathrm{I}_2$, $\mathsf{M}_2(e_1)=-i\sigma_1$, $\mathsf{M}_2(e_2)=-i\sigma_2$,
-$\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices. The plain product is the matrix product,
+with $\mathsf{M}_2(e_t)=\mathrm{I}_2$, $\mathsf{M}_2(\vec e_x)=-i\sigma_1$, $\mathsf{M}_2(\vec e_y)=-i\sigma_2$,
+$\mathsf{M}_2(\vec e_z)=-i\sigma_3$, the Pauli matrices. The plain product is the matrix product,
 $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, the parent product is
 $\mathsf{M}_2(\tilde p^{\natural}\tilde q)=\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$, and
 the conjugation is the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$.
-The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
+The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ and the **plain form**
+$B(\tilde p,\tilde q)=p_0q_t-\vec p\cdot\vec q$.
 
 ## The Model and the Conjugated Commutator
 
@@ -117,16 +117,16 @@ $$
 the unique invariant form of the block is the scalar-part form
 
 $$
-\varphi(\tilde p,\tilde q)=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\cdot\operatorname{Tr}\mathsf{M}_2(\tilde q),
+\varphi(\tilde p,\tilde q)=p_0q_t=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\cdot\operatorname{Tr}\mathsf{M}_2(\tilde q),
 $$
 
 and the operator trace form is the combination
-$K(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p,\tilde q)+5B(\tilde p,\tilde q)\bigr)=3p_0q_0-2\,\vec p\cdot\vec q$.
+$K(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p,\tilde q)+5B(\tilde p,\tilde q)\bigr)=3p_0q_t-2\,\vec p\cdot\vec q$.
 
 *Proof.* The model is multiplicative, so
 $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$
 and $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2B(\tilde p,\tilde q)$, by the trace
-formula of the model; the trace of the model is $2q_0$, whence $\varphi$; the combination is the
+formula of the model; the trace of the model is $2q_t$, whence $\varphi$; the combination is the
 operator trace form of *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, below
 this article in this category, solved in the two forms.
 
@@ -168,8 +168,8 @@ $\det\mathsf{M}_2(\tilde p\diamond\tilde q)=N(\tilde p\diamond\tilde q)=|\tilde 
 $\mathsf{M}_2(\tilde p\diamond\tilde q)^2=-N(\tilde p\diamond\tilde q)\mathrm{I}_2$. The trace of the
 model with the conjugate reads the quaternion form, $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$,
 the plain trace reads the plain form, the unique invariant form of the block is
-$\varphi=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$,
-and the operator trace form is $\tfrac12(N+5B)=3p_0q_0-2\,\vec p\cdot\vec q$. The six products are
+$\varphi=p_0q_t=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$,
+and the operator trace form is $\tfrac12(N+5B)=3p_0q_t-2\,\vec p\cdot\vec q$. The six products are
 the matrix product and its symmetric and antisymmetric halves, and the conjugated matrix product and its
 halves.
 
@@ -182,7 +182,7 @@ halves.
 | anti-Hermitian traceless | the image, the Lie algebra $\mathfrak{su}(2)$ |
 | $\det=N(\tilde p\diamond\tilde q)$, $X^2=-N(X)\mathrm{I}_2$ | the invariants |
 | $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$ | the quaternion form |
-| $\varphi=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$ | the unique invariant form |
+| $\varphi=p_0q_t=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$ | the unique invariant form |
 
 ## Further Reading
 

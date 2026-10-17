@@ -127,18 +127,18 @@ which preserves the empty set, the whole set, arbitrary unions and finite inters
 **Theorem.** For a continuous $f$ the restricted preimage $f^{-1} : \mathcal{O}(Y) \to \mathcal{O}(X)$ preserves the whole set, finite intersections and arbitrary unions, and it therefore has a **right adjoint** in the order of the lattices, given by
 
 $$
-f_{\forall}(U) = \bigcup \{\, V \in \mathcal{O}(Y) : f^{-1}(V) \subseteq U \,\},
+f_{\forall}(\Omega) = \bigcup \{\, V \in \mathcal{O}(Y) : f^{-1}(V) \subseteq \Omega \,\},
 $$
 
 so that $f^{-1} \dashv f_{\forall}$, that is,
 
 $$
-f^{-1}(V) \subseteq U \iff V \subseteq f_{\forall}(U)
+f^{-1}(V) \subseteq \Omega \iff V \subseteq f_{\forall}(\Omega)
 $$
 
-for every open $U \subseteq X$ and every open $V \subseteq Y$. The preimage has a **left adjoint** exactly when it preserves all intersections of open sets, and when it exists that adjoint sends $W$ to the smallest open set of $Y$ containing $f_{*}(W)$.
+for every open $\Omega \subseteq X$ and every open $V \subseteq Y$. The preimage has a **left adjoint** exactly when it preserves all intersections of open sets, and when it exists that adjoint sends $W$ to the smallest open set of $Y$ containing $f_{*}(W)$.
 
-**Proof.** The preimage of the whole set is the whole set and the preimage commutes with intersections, so the restriction to open sets preserves the top and finite meets; it commutes with arbitrary unions, so $f_{\forall}(U)$ is a legitimate open set, being a union of open sets. For the equivalence, if $f^{-1}(V) \subseteq U$ then $V$ is one of the open sets whose union is $f_{\forall}(U)$, so $V \subseteq f_{\forall}(U)$; conversely $f^{-1}(f_{\forall}(U)) = \bigcup \{f^{-1}(V) : f^{-1}(V) \subseteq U\} \subseteq U$, so $V \subseteq f_{\forall}(U)$ gives $f^{-1}(V) \subseteq f^{-1}(f_{\forall}(U)) \subseteq U$. For the left adjoint, a monotone map of complete lattices has a left adjoint exactly when it preserves all meets; when it does, the left adjoint is the meet $\bigwedge\{V : W \subseteq f^{-1}(V)\}$, the smallest open set containing $f_{*}(W)$.
+**Proof.** The preimage of the whole set is the whole set and the preimage commutes with intersections, so the restriction to open sets preserves the top and finite meets; it commutes with arbitrary unions, so $f_{\forall}(\Omega)$ is a legitimate open set, being a union of open sets. For the equivalence, if $f^{-1}(V) \subseteq \Omega$ then $V$ is one of the open sets whose union is $f_{\forall}(\Omega)$, so $V \subseteq f_{\forall}(\Omega)$; conversely $f^{-1}(f_{\forall}(\Omega)) = \bigcup \{f^{-1}(V) : f^{-1}(V) \subseteq \Omega\} \subseteq \Omega$, so $V \subseteq f_{\forall}(\Omega)$ gives $f^{-1}(V) \subseteq f^{-1}(f_{\forall}(\Omega)) \subseteq \Omega$. For the left adjoint, a monotone map of complete lattices has a left adjoint exactly when it preserves all meets; when it does, the left adjoint is the meet $\bigwedge\{V : W \subseteq f^{-1}(V)\}$, the smallest open set containing $f_{*}(W)$.
 
 The two adjoints of the preimage on the powersets are the direct image and the **universal image**
 
@@ -150,7 +150,7 @@ and the pair satisfies $f_{*} \dashv f^{-1} \dashv \forall_{f}$ on the Boolean a
 
 ### What the Preimage Does Not Preserve
 
-The restriction of $f^{-1}$ to the open sets does not determine the direct image, and the direct image of an open set need not be open. The right adjoint $f_{\forall}$ repairs the defect from the side of the target: $f_{\forall}(U)$ is the largest open set of $Y$ whose preimage lies in $U$, and it is the best open approximation to a direct image that the preimage operator can certify.
+The restriction of $f^{-1}$ to the open sets does not determine the direct image, and the direct image of an open set need not be open. The right adjoint $f_{\forall}$ repairs the defect from the side of the target: $f_{\forall}(\Omega)$ is the largest open set of $Y$ whose preimage lies in $\Omega$, and it is the best open approximation to a direct image that the preimage operator can certify.
 
 **Example (an open set whose image is not open).** Let $f : \mathbb{R} \to \mathbb{R}$ be the map $f(x) = x^{2}$ in the usual topology. The image of the open interval $(-1, 1)$ is $[0, 1)$, which is not open; its interior is $(0,1)$. The function is continuous and not open, and the failure of openness is exactly the failure of $f_{*}$ to land in $\mathcal{O}(\mathbb{R})$. Its right adjoint is the operator $f_{\forall}$: the largest open $V \subseteq \mathbb{R}$ with $f^{-1}(V) \subseteq (-2,2)$ is $V = (-4,4)$, since $f^{-1}((-4,4)) = (-2,2)$ and any larger open set contains a value above $4$, whose preimage leaves $(-2,2)$.
 
@@ -170,14 +170,14 @@ Every map $f : X \to Y$ carries two operators on the power sets: the preimage $f
 | $f, g$ | Maps, continuous when a continuity hypothesis is in force |
 | $\mathcal{P}(X)$ | Power set of $X$, as a Boolean algebra and complete lattice |
 | $\mathcal{O}(X)$, $\mathcal{F}(X)$ | Lattice of open sets, lattice of closed sets of $X$ |
-| $A, B, C$ | Subsets; $U, V, W$ open; $F$ closed; $A^{c}$ the complement of $A$ |
+| $A, B, C$ | Subsets; $\Omega, V, W$ open; $F$ closed; $A^{c}$ the complement of $A$ |
 | $f^{-1}$ | Preimage operator, $f^{-1}(B) = \{x : f(x) \in B\}$ |
 | $f_{*}$, $f(A)$ | Direct image operator, $f_{*}(A) = \{f(x) : x \in A\}$ |
 | $f_{*}(A) \subseteq B \iff A \subseteq f^{-1}(B)$ | The Galois connection; $f_{*} \dashv f^{-1}$ |
 | $\forall_{f}(A)$ | Universal image $\{y : f^{-1}(\{y\}) \subseteq A\}$; $f^{-1} \dashv \forall_{f}$ |
 | saturated set | A set $A$ with $f^{-1}(f_{*}(A)) = A$, a union of fibres |
 | $\overline{A}$, $\operatorname{int} A$ | Closure and interior; $\partial A$ the boundary |
-| $f_{\forall}$ | Right adjoint of the restricted preimage: the largest open $V \subseteq Y$ with $f^{-1}(V) \subseteq U$ |
+| $f_{\forall}$ | Right adjoint of the restricted preimage: the largest open $V \subseteq Y$ with $f^{-1}(V) \subseteq \Omega$ |
 | $T_0$ | The separation axiom under which the open lattice determines the points |
 
 ## Further Reading

@@ -204,7 +204,7 @@ $$
 is the unique bounded solution of the initial-value problem
 
 $$
-\partial_t u=\tfrac12\Delta u-Vu,\qquad u(0,\cdot)=f .
+\partial/\partial t u=\tfrac12\Delta u-Vu,\qquad u(0,\cdot)=f .
 $$
 
 The proof is the Itô formula applied to the process $\exp(-\int_0^sV(x_r)dr)u(t-s,x_s)$ together with the martingale property; it is given in *Brownian Motion and Stochastic Calculus*, and the result is quoted here as the identity that identifies the Euclidean path integral.
@@ -214,17 +214,17 @@ $$
 u(t,x)=(\cosh t)^{-1/2}\exp\Bigl(-\tfrac12x^2\tanh t\Bigr),
 $$
 
-whose residual for $\partial_t u=\tfrac12\partial_x^2 u-\tfrac12x^2u$ is at most $10^{-8}$ at $(t,x)=(0.3,0.0),(0.5,0.4),(0.2,1.1)$, and which satisfies the initial condition $u(0,x)=1$ to twelve decimal places; by the Feynman–Kac theorem the identity of the closed form and the path expectation follows.
+whose residual for $\partial/\partial t u=\tfrac12\partial^2/\partial x^2 u-\tfrac12x^2u$ is at most $10^{-8}$ at $(t,x)=(0.3,0.0),(0.5,0.4),(0.2,1.1)$, and which satisfies the initial condition $u(0,x)=1$ to twelve decimal places; by the Feynman–Kac theorem the identity of the closed form and the path expectation follows.
 
 ### The Euclidean Action as a Measure
 
 Write the Euclidean action of a path $x$ over $[0,t]$ with a potential $V$ as
 
 $$
-S_E[x]=\int_0^t\Bigl(\tfrac12|\dot x_s|^2+V(x_s)\Bigr)\,ds .
+S_E[x]=\int_0^t\Bigl(\tfrac12|dx_s/ds|^2+V(x_s)\Bigr)\,ds .
 $$
 
-The kinetic part is not a weight in the Feynman–Kac formula: it is the *measure*. Indeed the Wiener measure is the Gaussian measure whose covariance $Q=(-\Delta)^{-1}$ inverts the kinetic form, so that the quadratic functional $\tfrac12\int|\dot x|^2$ appears as the exponent of the Gaussian density, while the potential enters as the multiplicative density $\exp\bigl(-\int_0^tV(x_s)ds\bigr)$. The Feynman–Kac theorem therefore reads, as a correspondence between the formal path integral on the left and the genuine integral on the right,
+The kinetic part is not a weight in the Feynman–Kac formula: it is the *measure*. Indeed the Wiener measure is the Gaussian measure whose covariance $Q=(-\Delta)^{-1}$ inverts the kinetic form, so that the quadratic functional $\tfrac12\int|dx/ds|^2$ appears as the exponent of the Gaussian density, while the potential enters as the multiplicative density $\exp\bigl(-\int_0^tV(x_s)ds\bigr)$. The Feynman–Kac theorem therefore reads, as a correspondence between the formal path integral on the left and the genuine integral on the right,
 
 $$
 \int \exp(-S_E[x])\,\mathcal{D}x\ \longleftrightarrow\ \int_{C[0,t]}f(x_t)\,d\mu_V,\qquad d\mu_V=\exp\Bigl(-\int_0^tV(x_s)\,ds\Bigr)d\mathbb{W},
@@ -322,7 +322,7 @@ A cylinder measure on a vector space is a finitely additive set function on the 
 
 The Wiener measure is the Gaussian measure on $L^2(0,1)$ with the covariance kernel $R(s,t)=\min(s,t)$; its eigenfunctions are $\sqrt2\sin((k-\tfrac12)\pi t)$, its eigenvalues are $((k-\tfrac12)^2\pi^2)^{-1}$, its trace is $\tfrac12$, and the Kolmogorov continuity criterion upgrades it to a measure on $C[0,1]$, the law of Brownian motion. Its paths are Hölder of every exponent below $\tfrac12$ and not of exponent $\tfrac12$; the Cameron–Martin space is $H^1_0(0,1)$ with norm $\int(h')^2$, and the measure is quasi-invariant under exactly these translations, with the Radon–Nikodym derivative $\exp(\int h'\,dx-\tfrac12\|h\|^2_{H^1})$, and mutually singular under every other translation. The finite-dimensional model of the theorem is the translated Gaussian $\mu_v\ll\mu$ with density $\exp(\langle v,C^{-1}y\rangle-\tfrac12\langle v,C^{-1}v\rangle)$, finite exactly when $v$ lies in the range of $C^{1/2}$.
 
-The Feynman–Kac formula identifies the Euclidean path integral with an integral against the Wiener measure: $u(t,x)=\mathbb{E}^x[\exp(-\int_0^tV(x_s)ds)f(x_t)]$ solves $\partial_t u=\tfrac12\Delta u-Vu$, the free kinetic weight being the measure and the potential being the density $\exp(-\int V)$, and the same construction on a compact manifold with covariance $(-\Delta+m^2)^{-1}$ gives the free Euclidean field, a genuine Gaussian measure and the starting point of constructive field theory. The oscillatory path integral has no such reading: the factor $\exp(iS)$ has modulus one and the finite-dimensional normalisation $(2\pi i)^{n/2}$ grows like $(2\pi)^{n/2}$, so no countably additive complex measure can carry the density, and Cameron's theorem states the obstruction for a general action. What replaces the measure is analytic continuation to imaginary time, which turns the integral into the Euclidean one; the Fresnel integral, which defines the free oscillatory integral distributionally by the regularised limit $\int \exp(iax^2/2)dx=\sqrt{2\pi/a}\exp(i\pi/4)$; and the time slicing, in which the finite-dimensional oscillatory integrals over the slices converge. The slices are exact for a quadratic action — the free kernel is reproduced for every $n$ — and for the oscillator they converge to the Mehler kernel at second order in the time step, while their Euclidean version converges to the Wiener integral. The Euclidean slicing therefore converges to a measure and the oscillatory slicing to a kernel or a distribution, and the trace-class condition of the first section is the reason for the difference.
+The Feynman–Kac formula identifies the Euclidean path integral with an integral against the Wiener measure: $u(t,x)=\mathbb{E}^x[\exp(-\int_0^tV(x_s)ds)f(x_t)]$ solves $\partial/\partial t u=\tfrac12\Delta u-Vu$, the free kinetic weight being the measure and the potential being the density $\exp(-\int V)$, and the same construction on a compact manifold with covariance $(-\Delta+m^2)^{-1}$ gives the free Euclidean field, a genuine Gaussian measure and the starting point of constructive field theory. The oscillatory path integral has no such reading: the factor $\exp(iS)$ has modulus one and the finite-dimensional normalisation $(2\pi i)^{n/2}$ grows like $(2\pi)^{n/2}$, so no countably additive complex measure can carry the density, and Cameron's theorem states the obstruction for a general action. What replaces the measure is analytic continuation to imaginary time, which turns the integral into the Euclidean one; the Fresnel integral, which defines the free oscillatory integral distributionally by the regularised limit $\int \exp(iax^2/2)dx=\sqrt{2\pi/a}\exp(i\pi/4)$; and the time slicing, in which the finite-dimensional oscillatory integrals over the slices converge. The slices are exact for a quadratic action — the free kernel is reproduced for every $n$ — and for the oscillator they converge to the Mehler kernel at second order in the time step, while their Euclidean version converges to the Wiener integral. The Euclidean slicing therefore converges to a measure and the oscillatory slicing to a kernel or a distribution, and the trace-class condition of the first section is the reason for the difference.
 
 ## Summary of Notation
 

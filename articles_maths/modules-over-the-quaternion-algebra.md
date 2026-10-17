@@ -8,9 +8,9 @@ This article describes the left, right and two-sided modules over the quaternion
 
 **Definition.** The **regular left module** ${}_\mathbb{H}\mathbb{H}$ is the group $(\mathbb{H},+)$ with the action of $\mathbb{H}$ by left multiplication; the **regular right module** $\mathbb{H}_\mathbb{H}$ uses right multiplication by the opposite algebra $\mathbb{H}^{\mathrm{opp}}$; the **regular bimodule** ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ carries both actions.
 
-**Proposition.** The two actions commute, so ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a bimodule, equivalently a left module over the enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ under $(\tilde p\otimes\tilde q^{\mathrm{opp}})\cdot\tilde r=\tilde p\tilde r\tilde q$.
+**Proposition.** The two actions commute, so ${}_\mathbb{H}\mathbb{H}_\mathbb{H}$ is a bimodule, equivalently a left module over the enveloping algebra $\mathbb{H}^{\mathrm{e}}=\mathbb{H}\otimes_\mathbb{R}\mathbb{H}^{\mathrm{opp}}$ under $(\tilde q_1\otimes\tilde q_2^{\mathrm{opp}})\cdot\tilde q_3=\tilde q_1\tilde q_3\tilde q_2$.
 
-*Proof.* Associativity: $\tilde p(\tilde r\tilde q)=(\tilde p\tilde r)\tilde q$. The enveloping-algebra statements are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
+*Proof.* Associativity: $\tilde q_1(\tilde q_2\tilde q_3)=(\tilde q_1\tilde q_2)\tilde q_3$. The enveloping-algebra statements are *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 
 ## Every Module is Free
 
@@ -48,7 +48,7 @@ This article describes the left, right and two-sided modules over the quaternion
 
 **Theorem.** $\operatorname{End}_\mathbb{H}(\mathbb{H})\cong\mathbb{H}^{\mathrm{opp}}$ and $\operatorname{End}_{\mathbb{H}^{\mathrm{opp}}}(\mathbb{H})\cong\mathbb{H}$ as rings, while the bimodule endomorphisms are the scalars, $\operatorname{End}_{\mathbb{H},\mathbb{H}}(\mathbb{H})=\mathbb{R}$.
 
-*Proof.* An $\mathbb{H}$-linear endomorphism of ${}_\mathbb{H}\mathbb{H}$ is determined by the image of $e_0$, and $F(\tilde r)=F(\tilde r\,e_0)=\tilde r\,F(e_0)$, so $F$ is right multiplication by $F(e_0)$; the assignment $F\mapsto F(e_0)$ is an anti-isomorphism, whence $\mathbb{H}^{\mathrm{opp}}$. The right-sided case is the mirror, and an endomorphism that is linear on both sides is multiplication by a central element, that is by a real scalar.
+*Proof.* An $\mathbb{H}$-linear endomorphism of ${}_\mathbb{H}\mathbb{H}$ is determined by the image of $e_t$, and $F(\tilde r)=F(\tilde r\,e_t)=\tilde r\,F(e_t)$, so $F$ is right multiplication by $F(e_t)$; the assignment $F\mapsto F(e_t)$ is an anti-isomorphism, whence $\mathbb{H}^{\mathrm{opp}}$. The right-sided case is the mirror, and an endomorphism that is linear on both sides is multiplication by a central element, that is by a real scalar.
 
 **Corollary.** $\operatorname{End}_\mathbb{H}(\mathbb{H}^n)\cong M_n(\mathbb{H}^{\mathrm{opp}})$. The matrix algebra of the regular module acts by left multiplication on $\mathbb{H}^n$.
 

@@ -98,7 +98,7 @@ $$
 
 Then $R(x,y)=(y,x)$ is an involution and $R\circ f=f^{-1}\circ R$, so $f$ is reversible; this was checked numerically for $g(y)=y^2$. Every map of this form is reversible with the linear reversor $(y,x)$. The origin and $(2,2)$ are symmetric fixed points of the case $g(y)=y^2$. If in addition $g$ is odd, then $R'(x,y)=(-y,-x)$ is a second reversor, verified for $g(y)=y^3-3y$, and the composition $R\circ R'$ is a symmetry of $f$; for $g(y)=y^3-3y$ the pair $\{(1,-1),(-1,1)\}$ is a symmetric periodic orbit of period two, with $f(1,-1)=(-1,1)$ and both points fixed by $R'$.
 
-**Example (Hamiltonian time reversal).** For a Hamiltonian flow $\dot z=J\nabla H(z)$ on $\mathbb{R}^{2n}$ with $J$ the symplectic matrix, the **time-reversal** map
+**Example (Hamiltonian time reversal).** For a Hamiltonian flow $dz/dt=J\nabla H(z)$ on $\mathbb{R}^{2n}$ with $J$ the symplectic matrix, the **time-reversal** map
 
 $$
 R(x,p)=(x,-p), \qquad \text{or in general any linear involution with } RJR^{\mathsf T}=-J,
@@ -106,7 +106,7 @@ $$
 
 satisfies $R\circ\varphi_t=\varphi_{-t}\circ R$, because reversing the momentum reverses the sign of the Hamiltonian vector field. Every Hamiltonian flow is therefore reversible with respect to the momentum reversal; the reversor is an anti-symplectic involution, and it is the structure behind the reversibility of the billiard maps and of the N-body problem, whose solutions come in time-reversed pairs.
 
-**Example (the pendulum).** The equation $\ddot x=-\sin x$ has the flow of the vector field $(y,-\sin x)$ on the cylinder; the reversors $(x,y)\mapsto(-x,y)$ and $(x,y)\mapsto(x,-y)$ both reverse it, so the pendulum is reversible about the two symmetry lines, and the separatrix is symmetric under their composition. The composition of the two reversals is the half-turn $(x,y)\mapsto(-x,-y)$, a symmetry commuting with the flow.
+**Example (the pendulum).** The equation $d^2x/dt^2=-\sin x$ has the flow of the vector field $(y,-\sin x)$ on the cylinder; the reversors $(x,y)\mapsto(-x,y)$ and $(x,y)\mapsto(x,-y)$ both reverse it, so the pendulum is reversible about the two symmetry lines, and the separatrix is symmetric under their composition. The composition of the two reversals is the half-turn $(x,y)\mapsto(-x,-y)$, a symmetry commuting with the flow.
 
 **Caution (a non-example).** The Hénon map $H(x,y)=(1-ax^2+y,x)$ is **not** reversible with respect to the naive involution $(x,y)\mapsto(y,x)$; the numerical check of $RHR=H^{-1}$ fails in the second coordinate for every tested point. Reversibility is a strong condition and must be verified, not assumed.
 

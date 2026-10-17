@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **general quaternionic multiplication**
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q
-=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
+=\bigl[P_tQ_t+(\vec P,\vec Q)\bigr]+P_t\vec Q-Q_t\vec P-\vec P\times\vec Q,
 $$
 the product of the natural conjugate of the first factor with the second (*Introduction to the
 General Quaternionic Algebra of Biquaternions*). It is neither commutative nor alternating, and yet
@@ -29,7 +29,7 @@ article owns that reading, the operator with its rank, and the shape of the anni
 remarkable subspaces; the zero-divisor set and its comparison with the other three general products
 are the cited article's.
 
-**The results.** The left and the right annihilator of an element coincide for **every** element of $\mathbb{B}$, unit or zero divisor alike, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is the one general product whose annihilators are not exchanged but equal. The multiplication operator $L_{\tilde P}$ has trace $4P_0$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$: it is invertible off the zero-divisor cone, while on the cone it has rank two and a kernel of complex dimension two. The common annihilator is therefore $\{0\}$ off the cone and a complex plane on it, and the plane contains the element itself. Each section below states its result first and then proves it.
+**The results.** The left and the right annihilator of an element coincide for **every** element of $\mathbb{B}$, unit or zero divisor alike, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of order two; the quaternionic product is the one general product whose annihilators are not exchanged but equal. The multiplication operator $L_{\tilde P}$ has trace $4P_t$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$: it is invertible off the zero-divisor cone, while on the cone it has rank two and a kernel of complex dimension two. The common annihilator is therefore $\{0\}$ off the cone and a complex plane on it, and the plane contains the element itself. Each section below states its result first and then proves it.
 
 ## The Annihilator of a Product
 
@@ -79,19 +79,19 @@ annihilators are generally distinct.
 
 ## The Multiplication Operator and the Rank
 
-**The operator $L_{\tilde P}$ has trace $4P_0$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$; it is invertible with trivial kernel when $C(\tilde P)\neq0$, and of rank two with kernel of complex dimension two when $\tilde P\neq0$ and $C(\tilde P)=0$.**
+**The operator $L_{\tilde P}$ has trace $4P_t$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$; it is invertible with trivial kernel when $C(\tilde P)\neq0$, and of rank two with kernel of complex dimension two when $\tilde P\neq0$ and $C(\tilde P)=0$.**
 
-**Proposition (the operator and its determinant).** In the basis $e_0,e_1,e_2,e_3$ the operator
-$L_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ has the matrix of multiplication by
-$\tilde P^{\natural}$, of trace $4P_0$ and determinant
+**Proposition (the operator and its determinant).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the operator
+$L_{\tilde P}$ of an element $\tilde P=P_te_t+\vec P$ has the matrix of multiplication by
+$\tilde P^{\natural}$, of trace $4P_t$ and determinant
 $$
-\det L_{\tilde P}=C(\tilde P)^{2},\qquad C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
+\det L_{\tilde P}=C(\tilde P)^{2},\qquad C(\tilde P)=\sum_{\mu\in\{t,x,y,z\}}P_\mu^{2}.
 $$
 
 *Proof.* The matrix is the left multiplication matrix of the quaternion $\tilde P^{\natural}$,
 whose determinant is the square of the quaternion norm $C(\tilde P^{\natural})=C(\tilde P)$; the
 natural conjugation keeps the four squares, so the determinant is $C(\tilde P)^{2}$. The trace is
-the sum of the four diagonal entries, $4P_0$.
+the sum of the four diagonal entries, $4P_t$.
 
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde P}$ and the annihilator of
 $\tilde P$ are
@@ -123,16 +123,16 @@ $\tilde Q$.
 
 *Proof.* The first clause is the rank table. For the second, the annihilator is the kernel of the
 multiplication by $\tilde Q^{\natural}$, of rank two on the cone; and
-$\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0=0$, so $\tilde Q$ lies in the annihilator.
+$\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_t=0$, so $\tilde Q$ lies in the annihilator.
 
-**Example.** For the pure zero divisor $\tilde Q=e_1+ie_2$, whose vector part has
+**Example.** For the pure zero divisor $\tilde Q=\vec e_x+i\vec e_y$, whose vector part has
 $(\vec Q,\vec Q)=1-1=0$, the common annihilator is
 $$
-A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_3-ie_0\},
+A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ \vec e_z-ie_t\},
 $$
-and for the non-pure zero divisor $\tilde Q=e_0+ie_1$, of algebraic norm $1-1=0$,
+and for the non-pure zero divisor $\tilde Q=e_t+i\vec e_x$, of algebraic norm $1-1=0$,
 $$
-A_\star(e_0+ie_1)=\mathbb{C}\{e_0+ie_1,\ e_2+ie_3\}.
+A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\}.
 $$
 In both cases the element lies in its own annihilator and the annihilator is a complex plane.
 
@@ -153,8 +153,8 @@ than a plane on a cone. The annihilator is the invariant that separates the thre
 
 **On a nonzero central element the annihilator is $\{0\}$; on the vector subspace it is $\{0\}$ unless the vector part is isotropic, and a complex plane on the isotropic locus; and on the Hermitian and anti-Hermitian subspaces it is again a complex plane for a nonzero zero divisor.**
 
-**The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
-$L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
+**The centre.** A nonzero central element $\tilde P=\lambda e_t$ has
+$L_{\lambda e_t}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
 product and its annihilator is $\{0\}$.
 
 **The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
@@ -173,7 +173,7 @@ The annihilator of an element in a product is the set of partners the element ki
 the right annihilator being the kernels of the left and the right multiplication. The general
 quaternionic multiplication $\tilde P\star\tilde X=\tilde P^{\natural}\tilde X$ carries a
 $\mathbb{C}$-linear anti-automorphism of order two, so its two annihilators of an element always
-coincide. The operator $L_{\tilde P}$ has determinant $C(\tilde P)^{2}$ and trace $4P_0$: it is
+coincide. The operator $L_{\tilde P}$ has determinant $C(\tilde P)^{2}$ and trace $4P_t$: it is
 invertible off the cone and of rank two and kernel a complex plane on the cone, and the plane
 contains the element itself. The block shares the cone and the plane with the general plain algebra
 and the coincidence of the two sides with the symmetric quaternionic algebra, and it is the only
@@ -186,7 +186,7 @@ one of the three with both properties.
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic multiplication, the operation $\mathrm{GQA}$ |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, equal by the anti-automorphism ${}^{\natural}$ |
 | $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P^{\natural}\tilde X$, whose kernel is the annihilator |
-| $\det L_{\tilde P}=C(\tilde P)^{2}$, $\operatorname{tr}L_{\tilde P}=4P_0$ | the determinant and the trace of the operator |
+| $\det L_{\tilde P}=C(\tilde P)^{2}$, $\operatorname{tr}L_{\tilde P}=4P_t$ | the determinant and the trace of the operator |
 | $\{0\}$ off the cone | the annihilator of an element of nonzero central square, a unit of the plain product |
 | the complex plane on the cone | the annihilator of a nonzero zero divisor, containing the element itself |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the criterion of the cone |

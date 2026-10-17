@@ -149,7 +149,7 @@ The characteristic function of a random variable is the Fourier transform of its
 | $\phi_{X+Y}=\phi_X\phi_Y$ | multiplicativity for independent sums |
 | $m_k=i^{-k}\phi_X^{(k)}(0)$ | the moments |
 | $\log\phi_X(t)=\sum\kappa_n(it)^n/n!$ | the cumulants |
-| $R_{XY}=-\partial_s\partial_t\log\phi_{X,Y}|_0$ | the covariance as a mixed cumulant |
+| $R_{XY}=-\partial^2/\partial s\partial t\,\log\phi_{X,Y}|_0$ | the covariance as a mixed cumulant |
 
 ## Further Reading
 

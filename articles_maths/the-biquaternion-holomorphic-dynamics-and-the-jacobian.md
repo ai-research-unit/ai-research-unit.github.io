@@ -8,21 +8,21 @@ The quadratic family, its critical set and its derivative are *The Biquaternion 
 
 The article owns the Jacobian and its determinant, the local biholomorphism off the critical set, the definition of the Fatou and Julia sets, the central-parameter theorem identifying the two Julia sets, the fixed-point multiplier computation, and the local picture at the cone. It does not re-derive the derivative.
 
-**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.
+**Standing convention.** $F=F_{\tilde C}$ is the quadratic family in the general plain bilinear product, $dF|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ is its complex derivative, and $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ is the critical set.
 
 ## Holomorphy and the Jacobian
 
 **Proposition (holomorphy).** The map $F$ is holomorphic for the complex structure of the algebra: in the four complex coordinates of the model it is a polynomial map with no conjugated coordinate. Its derivative at $\tilde Q$ is the complex-linear map
 
 $$
-dF|_{\tilde Q}:\tilde P\longmapsto\tilde Q\tilde P+\tilde P\tilde Q ,
+dF|_{\tilde Q}:\tilde Q_2\longmapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q ,
 $$
 
-whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q\rangle_{\natural}\,(2Q_0)^2$.
+whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q\rangle_{\natural}\,(2Q_t)^2$.
 
 **Proof.** The general plain bilinear product is complex-bilinear and the map is a polynomial in it; the derivative is the product rule, and the determinant is the critical-set proposition of *The Biquaternion Quadratic Map and Its Julia Sets*, where the matrix model gives the explicit form $I\otimes M+M^{\mathsf{T}}\otimes I$ and the determinant $\det(M)\operatorname{tr}(M)^2\cdot4$.
 
-**Corollary (the local inverse).** Off the critical set $\Sigma(\mathbb{B})$ the map $F$ is a local biholomorphism: every $\tilde Q\notin\Sigma(\mathbb{B})$ has a neighbourhood $U$ with $F:U\to F(U)$ biholomorphic and $F^{-1}$ holomorphic on $F(U)$.
+**Corollary (the local inverse).** Off the critical set $\Sigma(\mathbb{B})$ the map $F$ is a local biholomorphism: every $\tilde Q\notin\Sigma(\mathbb{B})$ has a neighbourhood $\Omega$ with $F:\Omega\to F(\Omega)$ biholomorphic and $F^{-1}$ holomorphic on $F(\Omega)$.
 
 **Proof.** $\det dF|_{\tilde Q}\neq0$ exactly off $\Sigma(\mathbb{B})$, and the inverse function theorem for holomorphic maps of several variables applies.
 
@@ -30,11 +30,11 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q\rangl
 
 ## The Critical Set, the Critical Values and the Local Picture
 
-**Proposition (the critical values).** The critical set $\Sigma(\mathbb{B})$ is the union of the cone $\mathscr{Z}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, both of complex dimension three. The image of the cone is the translate of the cone, $F(\mathscr{Z})=\mathscr{Z}+\tilde C$, and the image of the vector subspace is the complex line through the parameter in the scalar direction, $F(\mathrm{Vect}(\mathbb{B}))=\tilde C+\mathbb{C}e_0$; hence the set of critical values is $(\mathscr{Z}+\tilde C)\cup(\tilde C+\mathbb{C}e_0)$.
+**Proposition (the critical values).** The critical set $\Sigma(\mathbb{B})$ is the union of the cone $\mathscr{Z}$ and the vector subspace $\mathrm{Vect}(\mathbb{B})$, both of complex dimension three. The image of the cone is the translate of the cone, $F(\mathscr{Z})=\mathscr{Z}+\tilde C$, and the image of the vector subspace is the complex line through the parameter in the scalar direction, $F(\mathrm{Vect}(\mathbb{B}))=\tilde C+\mathbb{C}e_t$; hence the set of critical values is $(\mathscr{Z}+\tilde C)\cup(\tilde C+\mathbb{C}e_t)$.
 
-**Proof.** On the cone $F(\tilde Q)=\tilde Q^2+\tilde C=2Q_0\tilde Q+\tilde C$ with $\tilde Q^2=2Q_0\tilde Q$ by Cayley–Hamilton, and $2Q_0\tilde Q$ ranges over the cone as $\tilde Q$ does, so the image is the cone translated by $\tilde C$. On the vector subspace, $\vec P^2=-(\vec P,\vec P)e_0$ is central, and $-(\vec P,\vec P)$ ranges over all of $\mathbb{C}$ as $\vec P$ ranges over the pure vectors, so the image is the scalar line through $\tilde C$.
+**Proof.** On the cone $F(\tilde Q)=\tilde Q^2+\tilde C=2Q_t\tilde Q+\tilde C$ with $\tilde Q^2=2Q_t\tilde Q$ by Cayley–Hamilton, and $2Q_t\tilde Q$ ranges over the cone as $\tilde Q$ does, so the image is the cone translated by $\tilde C$. On the vector subspace, $\vec P^2=-(\vec P,\vec P)e_t$ is central, and $-(\vec P,\vec P)$ ranges over all of $\mathbb{C}$ as $\vec P$ ranges over the pure vectors, so the image is the scalar line through $\tilde C$.
 
-**Remark (the derivative is nilpotent at the square-zero points).** At a square-zero $\tilde Q$ the derivative is $\tilde P\mapsto\tilde P\tilde Q+\tilde Q\tilde P$, of image of complex dimension two, so the map is not a local biholomorphism there and the local degree is degenerate; **on the cone the map is not finite, and this is the local form of the obstruction of the category.**
+**Remark (the derivative is nilpotent at the square-zero points).** At a square-zero $\tilde Q$ the derivative is $\tilde Q_2\mapsto\tilde Q_2\tilde Q+\tilde Q\tilde Q_2$, of image of complex dimension two, so the map is not a local biholomorphism there and the local degree is degenerate; **on the cone the map is not finite, and this is the local form of the obstruction of the category.**
 
 ## The Fatou Set and the Julia Set
 
@@ -48,7 +48,7 @@ whose determinant, in the coordinates of the model, is $4\,\langle\tilde Q\rangl
 
 ## The Central Parameter and the Eigenvalue Reduction
 
-**Theorem (the central-parameter identification).** Let $\tilde C=Ce_0$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$,
+**Theorem (the central-parameter identification).** Let $\tilde C=Ce_t$ be central and let $\mathcal{F}_C$, $\mathcal{J}_C$ be the Fatou set and the Julia set of $\zeta\mapsto\zeta^2+C$ in the complex plane. Then for a diagonalisable $\mathsf{M}_2(\tilde Q)$ with spectrum $\{\lambda_1,\lambda_2\}$,
 
 $$
 \tilde Q\in\mathcal{J}_{\tilde C}\iff \mathrm{spec}\,\mathsf{M}_2(\tilde Q)\cap\mathcal{J}_C\neq\emptyset ,
@@ -68,17 +68,17 @@ So for a central parameter the dynamical Julia set, the boundary of the filled J
 
 ## Fixed Points and Their Multipliers
 
-**Proposition (the fixed points).** For a central parameter $C$, the fixed points of $F$ are the solutions of $\tilde Q^2-\tilde Q+Ce_0=0$. They are the scalar solutions $\lambda e_0$ with $\lambda^2-\lambda+C=0$, and the non-scalar solutions $\tilde Q=\tfrac12e_0+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$, one for each complex isotropic vector of the quadratic form $\vec Q\cdot\vec Q$ with that value. The multiplier spectrum of a fixed point is
+**Proposition (the fixed points).** For a central parameter $C$, the fixed points of $F$ are the solutions of $\tilde Q^2-\tilde Q+Ce_t=0$. They are the scalar solutions $\lambda e_t$ with $\lambda^2-\lambda+C=0$, and the non-scalar solutions $\tilde Q=\tfrac12e_t+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$, one for each complex isotropic vector of the quadratic form $\vec Q\cdot\vec Q$ with that value. The multiplier spectrum of a fixed point is
 
 $$
-\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\} ,
+\{2\lambda_1,\ 2\lambda_2,\ 2Q_t,\ 2Q_t\} ,
 $$
 
 the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed point is attracting exactly when $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
-**Proof.** Insert $\tilde Q^2=2Q_0\tilde Q-\langle\tilde Q\rangle_{\natural}e_0$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_0-1)\tilde Q+(C-N)e_0=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_0=\tfrac12$ and $N=C$, that is $(\vec Q,\vec Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_0,\ 2Q_0\}$; the attracting condition is that all four have modulus below one, and since $2Q_0=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
+**Proof.** Insert $\tilde Q^2=2Q_t\tilde Q-\langle\tilde Q\rangle_{\natural}e_t$ (Cayley–Hamilton) into $\tilde Q^2+\tilde C=\tilde Q$: $(2Q_t-1)\tilde Q+(C-N)e_t=0$. If $\tilde Q$ is not central the two terms are independent and give $Q_t=\tfrac12$ and $N=C$, that is $(\vec Q,\vec Q)=C-\tfrac14$. The differential of the family is $L+R$, whose eigenvalues are the sums $\lambda_i+\lambda_j$ of the eigenvalues of the model, that is $\{2\lambda_1,\ \lambda_1+\lambda_2,\ \lambda_2+\lambda_1,\ 2\lambda_2\}=\{2\lambda_1,\ 2\lambda_2,\ 2Q_t,\ 2Q_t\}$; the attracting condition is that all four have modulus below one, and since $2Q_t=\lambda_1+\lambda_2$ is dominated by the two doubled eigenvalues, the condition is $|\lambda_i|<1/2$ for both, that is $\rho(\mathsf{M}_2(\tilde Q))<1/2$.
 
-**Corollary (the neutral fixed points).** The non-scalar fixed points have $2Q_0=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\mathsf{M}_2(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.
+**Corollary (the neutral fixed points).** The non-scalar fixed points have $2Q_t=1$ among their multipliers, so they are never attracting; the ones with $\operatorname{tr}\mathsf{M}_2(\tilde Q)=1$ are neutral in the trace direction and repelling or neutral in the other, and they carry the parabolic local dynamics at the singular set.
 
 ## The Local Dynamics at the Singular Set
 
@@ -88,14 +88,14 @@ the eigenvalues of the differential $L_{\tilde Q}+R_{\tilde Q}$, and the fixed p
 
 ## Summary
 
-The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $\langle\tilde Q\rangle_{\natural}Q_0^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_0+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_0,2Q_0\}$, the attracting condition is $\rho(\mathsf{M}_2(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
+The biquaternion quadratic map is holomorphic, its derivative at a point is the sum of the left and the right multiplications by the point, and its Jacobian determinant is proportional to $\langle\tilde Q\rangle_{\natural}Q_t^2$, so the map is a local biholomorphism exactly off the critical set, the union of the zero-divisor cone and the vector subspace. The Fatou set is defined by the equicontinuity of the iterates and the dynamical Julia set is its complement; the set-theoretic Julia set of the escape dichotomy and the small Julia set of the equilibrium measure are two other objects, and the three coincide in one variable and are not known to coincide in general here. For a central parameter the three do coincide: the dynamical Julia set, the boundary of the filled Julia set, and the set of the matrices with an eigenvalue on the complex Julia set are one set, and the Fatou set is its complement. The fixed points are the scalar solutions of $\lambda^2-\lambda+C=0$ and the non-scalar elements $\tfrac12e_t+\vec Q$ with $(\vec Q,\vec Q)=C-\tfrac14$; the multiplier spectrum is $\{2\lambda_1,2\lambda_2,2Q_t,2Q_t\}$, the attracting condition is $\rho(\mathsf{M}_2(\tilde Q))<1/2$, and the non-scalar fixed points are neutral in the trace direction. The local dynamics at the cone, the classification of the Fatou components and the general equivalence of the definitions are open.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $dF|_{\tilde Q}(\tilde P)=\tilde Q\tilde P+\tilde P\tilde Q$ | the complex derivative |
-| $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_0)^2$ | the Jacobian determinant |
+| $dF|_{\tilde Q}(\tilde Q_2)=\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$ | the complex derivative |
+| $\det dF=4\langle\tilde Q\rangle_{\natural}(2Q_t)^2$ | the Jacobian determinant |
 | $\Sigma(\mathbb{B})=\mathscr{Z}\cup\mathrm{Vect}(\mathbb{B})$ | the critical set |
 | $\mathcal{F}_{\tilde C}$, $\mathcal{J}_{\tilde C}$ | the Fatou set and the dynamical Julia set |
 | $\mathcal K_{\tilde C}$, $J_{\tilde C}=\partial\mathcal K_{\tilde C}$ | the filled Julia set and the set-theoretic Julia set |

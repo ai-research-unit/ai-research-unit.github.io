@@ -68,19 +68,19 @@ $$
 
 satisfies $Lu=f$ and $Bu=0$ for every admissible $f$, by interchanging $L_x$ with the integral; so $K$ defines a right inverse of $L$ on the admissible functions, and it is the Green function by uniqueness of the inverse.
 
-**Theorem (the jump condition).** Let $L = -(p\,\partial_x)' + q$ act on functions of one variable, with $p\in C^1$, $p>0$, and let $G$ be its Green function for a boundary condition of order $1$ at each endpoint. Then $G$ is continuous on the diagonal, $G$ is of class $C^2$ off it, and
+**Theorem (the jump condition).** Let $L = -(p\,\partial/\partial x)' + q$ act on functions of one variable, with $p\in C^1$, $p>0$, and let $G$ be its Green function for a boundary condition of order $1$ at each endpoint. Then $G$ is continuous on the diagonal, $G$ is of class $C^2$ off it, and
 
 $$
-p(y)\Bigl(\partial_xG(y^-,y) - \partial_xG(y^+,y)\Bigr) = 1 .
+p(y)\Bigl(\partial/\partial x\,G(y^-,y) - \partial/\partial x\,G(y^+,y)\Bigr) = 1 .
 $$
 
 *Proof.* The equation $L_xG=\delta(x-y)$ says that $L_xG=0$ away from the diagonal. Integrating the equation against the indicator of the interval $(y-\varepsilon,y+\varepsilon)$ gives
 
 $$
--\bigl[p\,\partial_xG\bigr]_{y-\varepsilon}^{y+\varepsilon} + \int_{y-\varepsilon}^{y+\varepsilon}q\,G\,dx = 1 ,
+-\bigl[p\,\partial/\partial x\,G\bigr]_{y-\varepsilon}^{y+\varepsilon} + \int_{y-\varepsilon}^{y+\varepsilon}q\,G\,dx = 1 ,
 $$
 
-and letting $\varepsilon\to0$ the integral tends to $0$ because $G$ is locally integrable, so the jump of $p\,\partial_xG$ is $1$. The continuity of $G$ itself follows from the same integration once more, the right-hand side being bounded; the regularity off the diagonal is that of the solutions of $Lw=0$ with $C^1$ coefficients, which are of class $C^2$.
+and letting $\varepsilon\to0$ the integral tends to $0$ because $G$ is locally integrable, so the jump of $p\,\partial/\partial x\,G$ is $1$. The continuity of $G$ itself follows from the same integration once more, the right-hand side being bounded; the regularity off the diagonal is that of the solutions of $Lw=0$ with $C^1$ coefficients, which are of class $C^2$.
 
 **Theorem (symmetry).** Let $(L,B)$ be formally self-adjoint, so that $L=L^{\dagger}$ and the boundary condition pairs with itself. Then the Green function is **Hermitian-symmetric**,
 
@@ -104,7 +104,7 @@ $$
 G(x,y) = \begin{cases} x(1-y), & x\le y,\\ y(1-x), & x\ge y,\end{cases}
 $$
 
-which is continuous, has the jump $\partial_xG(y^-,y)-\partial_xG(y^+,y) = (1-y)-(-y) = 1$, and is symmetric; the jump condition is satisfied with $p\equiv1$, and a direct differentiation confirms that $u(x)=\int_0^1G(x,y)f(y)\,dy$ solves $-u''=f$ with $u(0)=u(1)=0$.
+which is continuous, has the jump $\partial/\partial x\,G(y^-,y)-\partial/\partial x\,G(y^+,y) = (1-y)-(-y) = 1$, and is symmetric; the jump condition is satisfied with $p\equiv1$, and a direct differentiation confirms that $u(x)=\int_0^1G(x,y)f(y)\,dy$ solves $-u''=f$ with $u(0)=u(1)=0$.
 
 **Example (the Dirichlet Laplacian).** For $-\Delta u=f$ on a bounded domain $\Omega$ with $u|_{\partial\Omega}=0$, the Green function is
 
@@ -116,7 +116,7 @@ where $\Phi$ is the fundamental solution of the Laplacian and $H(\cdot,y)$ is th
 
 ## Construction and the Operator Calculus
 
-**Theorem (the one-dimensional construction).** Let $L = -(p\,\partial_x)'+q$ with $p>0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_<$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_<'(a)=1$, and $u_>$ the solution satisfying the condition at $b$, normalised by $u_>'(b)=1$. Then
+**Theorem (the one-dimensional construction).** Let $L = -(p\,\partial/\partial x)'+q$ with $p>0$ of class $C^1$ and $q$ continuous on $[a,b]$, and let the boundary condition be separated. If the homogeneous problem is trivial, let $u_<$ be the solution of $Lu=0$ satisfying the condition at $a$, normalised by $u_<'(a)=1$, and $u_>$ the solution satisfying the condition at $b$, normalised by $u_>'(b)=1$. Then
 
 $$
 G(x,y) = \frac{u_<(x\wedge y)\,u_>(x\vee y)}{p(y)\,W(y)} , \qquad W = u_<'u_> - u_<u_>' ,

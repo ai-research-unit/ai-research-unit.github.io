@@ -30,7 +30,7 @@ The modular conjugation **conjugates the scalar imaginary** $i$. Every sign in t
 
 The article proceeds as follows. The construction and its structural identities come first. Then the two hypotheses, with an explicit failure when separation is dropped. Then the modular flow and its identification with the KMS flow of the parent article. Then the finite-dimensional realization in $\mathbb{B}$ and the closed-form polar decomposition. Then the biquaternion candidate for $S$ and what the framework does and does not supply. Then the type of $\mathbb{B}$ and the inner/outer classification. It closes with the boundary between what is established and what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_0)=2$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_k^2=-e_t$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. Hermitian conjugation is ${}^{*}$, and it is the algebra involution $A\mapsto A^*$ of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, so that $\mathrm{Tr}(e_t)=2$.
 
 ## The Tomita–Takesaki Construction
 
@@ -97,11 +97,11 @@ with $i$ the scalar imaginary. The modular conjugation does not commute with $i$
 
 **Separation** is what makes $S_0$ single-valued. Without it there are $A\in M$ with $A\Omega=0$ but $A^*\Omega\neq0$, and the rule $A\Omega\mapsto A^*\Omega$ has no content.
 
-Both failures are visible in the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$. Let $\Omega=e_1$. The vector is cyclic, since $M_2(\mathbb{C})e_1=\mathbb{C}^2$, but it is not separating, since $E_{22}\Omega=0$ with $E_{22}\neq0$. The Tomita operator is not merely unproven — it is ill-defined: for $A=E_{12}$,
+Both failures are visible in the defining representation of $M_2(\mathbb{C})$ on $\mathbb{C}^2$. Let $\Omega=\vec e_x$. The vector is cyclic, since $M_2(\mathbb{C})\vec e_x=\mathbb{C}^2$, but it is not separating, since $E_{22}\Omega=0$ with $E_{22}\neq0$. The Tomita operator is not merely unproven — it is ill-defined: for $A=E_{12}$,
 $$
-A\Omega=E_{12}e_1=0, \qquad A^*\Omega=E_{12}^\dagger e_1=E_{21}e_1=e_2\neq0 .
+A\Omega=E_{12}\vec e_x=0, \qquad A^*\Omega=E_{12}^\dagger \vec e_x=E_{21}\vec e_x=\vec e_y\neq0 .
 $$
-The same vector $0$ has the two images $0$ and $e_2$, so no polar decomposition follows. Equivalently, the vector state $\omega(A)=\langle e_1,Ae_1\rangle$ is not faithful, since $\omega(E_{22})=0$ while $E_{22}>0$.
+The same vector $0$ has the two images $0$ and $\vec e_y$, so no polar decomposition follows. Equivalently, the vector state $\omega(A)=\langle \vec e_x,A\vec e_x\rangle$ is not faithful, since $\omega(E_{22})=0$ while $E_{22}>0$.
 
 **Faithfulness is the invariant form of the hypothesis.** In the GNS representation of a normal state $\omega$, the GNS vector $\Omega$ is cyclic and separating for $M$ if and only if $\omega$ is faithful. So "cyclic and separating" is not a technicality about a vector; it is the statement that the state assigns a nonzero expectation to every nonzero positive element. A pure state on $M_2(\mathbb{C})$ fails it; a faithful state, with positive-definite density, passes it.
 
@@ -137,21 +137,21 @@ $$
 $$
 let $M$ act by left multiplication, $\pi(\tilde{A})\tilde{B}=\tilde{A}\tilde{B}$, and take the vector
 $$
-\Omega := e_0 .
+\Omega := e_t .
 $$
 This is the GNS construction of the state
 $$
 \omega(\tilde{A}) = \langle\Omega,\pi(\tilde{A})\Omega\rangle_{\tilde\rho} = \mathrm{Tr}(\tilde\rho\,\tilde{A}).
 $$
-Because $\tilde\rho$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_0$ is cyclic and separating: cyclic because $\pi(\tilde{A})e_0=\tilde{A}$ runs over all of $\mathbb{B}$, and separating because $\tilde{A}e_0=\tilde{A}=0$ forces $\tilde{A}=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
+Because $\tilde\rho$ is positive definite the form is nondegenerate and the state is faithful, and $\Omega=e_t$ is cyclic and separating: cyclic because $\pi(\tilde{A})e_t=\tilde{A}$ runs over all of $\mathbb{B}$, and separating because $\tilde{A}e_t=\tilde{A}=0$ forces $\tilde{A}=0$. The hypothesis of the Tomita construction is thus, in this model, exactly the positivity of the density.
 
 ### The Tomita Operator, the Modular Operator, and the Modular Conjugation
 
-Identifying the vector $\pi(\tilde{A})\Omega=\tilde{A}e_0$ with the algebra element $\tilde{A}$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
+Identifying the vector $\pi(\tilde{A})\Omega=\tilde{A}e_t$ with the algebra element $\tilde{A}$ (the Hilbert space is $\mathbb{B}$ itself), the Tomita operator is
 $$
 S_0(\tilde{A}) = \tilde{A}^{*} .
 $$
-**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_0e_0-\sum_{k=1}^{3}\bar Q_ke_k$, using $e_0^\dagger=e_0$ and $e_k^{*}=-e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
+**The Tomita operator of the biquaternion algebra is its Hermitian conjugation.** It is anti-linear because ${}^{*}$ conjugates the coefficients: for $\tilde{A}=\sum_\mu Q_\mu e_\mu$ one has $\tilde{A}^{*}=\bar Q_te_t-\sum_{k=1}^{3}\bar Q_k\vec e_k$, using $e_t^\dagger=e_t$ and $\vec e_k^{*}=-\vec e_k$. The same conjugation of coefficients is what conjugates $i$, so the anti-linearity of $S_0$ and the conjugation of the scalar imaginary are one and the same operation in this framework.
 
 The Hilbert-space adjoint of the anti-linear $S_0$, defined by
 $$
@@ -191,21 +191,21 @@ The identities $S_0=J\Delta^{1/2}$, $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-
 
 Take the faithful state with Bloch vector
 $$
-\tilde\rho=\tfrac12\big(e_0+i\vec r\cdot\mathbf{e}\big),\qquad \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec r|^2=\tfrac{29}{100}<1 .
+\tilde\rho=\tfrac12\big(e_t+i\vec r\cdot\mathbf{e}\big),\qquad \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec r|^2=\tfrac{29}{100}<1 .
 $$
 Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
-\tilde K=-\log\tilde\rho=a_0e_0+i\vec a\cdot\mathbf{e},\qquad
+\tilde K=-\log\tilde\rho=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
 $$
 with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.746494,0.253506)$ in the $e_3$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde K=-\log\tilde\rho=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_0,
+\tilde K=-\log\tilde\rho=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_t,
 $$
-with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_0$ and with that article's partition function.
+with $Z=1+\exp(-\beta\omega)=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_t$ and with that article's partition function.
 
 ## The Biquaternion Candidate for $S$
 
@@ -215,11 +215,11 @@ S_0:\ \tilde{A}\mapsto\tilde{A}^{*} .
 $$
 This is not a choice made to fit the theory; it is the involution that defines the framework's two sectors, $\mathbb{M}_+$ being the $+1$ eigenspace of ${}^{*}$ and $\mathbb{M}_-$ the $-1$ eigenspace. Two remarks.
 
-**The candidate satisfies the hypotheses.** With $\Omega=e_0$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
+**The candidate satisfies the hypotheses.** With $\Omega=e_t$, cyclicity and separation hold automatically, and the state is faithful exactly when $\tilde\rho>0$. So the pair $(\mathbb{B},\Omega)$ with ${}^{*}$ as the involution is a genuine instance of the construction, not a formal resemblance. It also explains the anti-linearity: the Hermitian conjugation of $\mathbb{B}$ conjugates the coefficients, which is the same operation that conjugates $i$, so the anti-unitary character of $J$ is inherited from the framework's own conjugation rather than imported.
 
 **The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{A}\mapsto\tilde{A}^{*}$ for every $\tilde\rho$ — but the polar decomposition is not: $\Delta$ and $J$ depend on $\tilde\rho$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
-\tilde\rho=\tfrac12 e_0 \qquad(\vec r=0),
+\tilde\rho=\tfrac12 e_t \qquad(\vec r=0),
 $$
 for which
 $$
@@ -263,10 +263,10 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 **Established (recomputed here).**
 
-- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and $\Omega=e_0$, is an instance; $S_0={}^{*}$.
+- $M=\mathbb{B}$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and $\Omega=e_t$, is an instance; $S_0={}^{*}$.
 - $\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^{*}\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.
 - $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
-- $\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_0$, matching the parent and partition-function articles.
+- $\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_t$, matching the parent and partition-function articles.
 - $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.
 
 **Interpretation.**
@@ -277,14 +277,14 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 
 - The framework admits a modular flow but does not select a state; the distinguished tracial state gives the trivial flow $\sigma_t=\mathrm{id}$.
 - $\mathbb{B}$ is type I$_2$ and semifinite, so the genuinely type-III, outer modular flow lies outside it; realizing it requires an infinite-dimensional algebra built on $\mathbb{B}$-modules.
-- The action of $J$ on the sector decomposition and on the fermionic one-mode structure, in particular the parity $(-1)^F=ie_3$, has not been worked out.
+- The action of $J$ on the sector decomposition and on the fermionic one-mode structure, in particular the parity $(-1)^F=i\vec e_z$, has not been worked out.
 - No empirical consequence is derived.
 
 ## Summary
 
 The Tomita–Takesaki construction turns a cyclic and separating vector on a von Neumann algebra into an anti-linear involution $S$, and its polar decomposition $S=J\Delta^{1/2}$ into a positive modular operator $\Delta$, an anti-unitary modular conjugation $J$ with $J^2=1$ and $JMJ=M'$, and a modular automorphism group $\sigma_t(A)=\Delta^{it}A\Delta^{-it}$.
 
-In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_0$, the Tomita operator is the Hermitian conjugation,
+In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the GNS inner product $\langle\tilde{A},\tilde{B}\rangle_{\tilde\rho}=\mathrm{Tr}(\tilde\rho\tilde{A}^{*}\tilde{B})$ and the cyclic separating vector $\Omega=e_t$, the Tomita operator is the Hermitian conjugation,
 $$
 S_0:\tilde{A}\mapsto\tilde{A}^{*},
 $$
@@ -305,11 +305,11 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
+| $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula; $\mathrm{Tr}(e_t)=2$ |
 | $\mathcal{H},M,\Omega$ | Hilbert space, von Neumann algebra, cyclic separating vector |
 | $S_0,S$ | Tomita operator $A\Omega\mapsto A^*\Omega$ and its closure |
 | $\Delta=S^*S$ | Modular operator |
@@ -325,7 +325,7 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
 - Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
-- Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+\log Z\,e_0$.
+- Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+\log Z\,e_t$.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single fermionic mode, $\tilde{N}_{\mathrm{tr}}$, and the parity $(-1)^F$.
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
 - Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector and the four-vectors.

@@ -170,15 +170,15 @@ $$
 \alpha \to \beta = \bigvee \{\gamma : \gamma \wedge \alpha \leq \beta\},
 $$
 
-the join now being arbitrary. Complete Heyting algebras are exactly the **frames**, and their study is the pointfree topology of that article; the open sets of a topological space, ordered by inclusion, are the standard example, with implication the interior of the complement union, $U \to V = \operatorname{int}\bigl((X \setminus U) \cup V\bigr)$. The present article stops at the finitary theory, which is what the Lindenbaum construction of a finitely generated logic requires, and the topological enrichment — locales, spatiality, sobriety — is left to the frame article.
+the join now being arbitrary. Complete Heyting algebras are exactly the **frames**, and their study is the pointfree topology of that article; the open sets of a topological space, ordered by inclusion, are the standard example, with implication the interior of the complement union, $\Omega \to V = \operatorname{int}\bigl((X \setminus \Omega) \cup V\bigr)$. The present article stops at the finitary theory, which is what the Lindenbaum construction of a finitely generated logic requires, and the topological enrichment — locales, spatiality, sobriety — is left to the frame article.
 
 **Example (open sets).** Let $X$ be a topological space and $H = \mathcal{O}(X)$ its lattice of open sets. Then $H$ is a complete Heyting algebra, with
 
 $$
-U \wedge V = U \cap V, \qquad U \vee V = U \cup V, \qquad U \to V = \operatorname{int}\bigl((X \setminus U) \cup V\bigr), \qquad \neg U = \operatorname{int}(X \setminus U).
+\Omega \wedge V = \Omega \cap V, \qquad \Omega \vee V = \Omega \cup V, \qquad \Omega \to V = \operatorname{int}\bigl((X \setminus \Omega) \cup V\bigr), \qquad \neg \Omega = \operatorname{int}(X \setminus \Omega).
 $$
 
-The identity $\neg\neg U = U$ holds exactly for the **regular open** sets, so $H_{\neg\neg}$ is the Boolean algebra of regular open sets, and for $X = \mathbb{R}$ with its usual topology the regular open sets form a complete Boolean algebra in which the open interval $(0,1)$ is regular but the union $(0,1) \cup (1,2)$ is not. This example is the prototype of the view that intuitionistic logic is the logic of open sets, and it is the bridge to the topological slot of the system.
+The identity $\neg\neg \Omega = \Omega$ holds exactly for the **regular open** sets, so $H_{\neg\neg}$ is the Boolean algebra of regular open sets, and for $X = \mathbb{R}$ with its usual topology the regular open sets form a complete Boolean algebra in which the open interval $(0,1)$ is regular but the union $(0,1) \cup (1,2)$ is not. This example is the prototype of the view that intuitionistic logic is the logic of open sets, and it is the bridge to the topological slot of the system.
 
 **Example (the Sierpiński algebra).** The two-element algebra $\mathbf{2}$ is a Heyting algebra and also a topological space with open sets $\{\emptyset, \{1\}, \{0,1\}\}$; its open-set lattice is the three-element chain of the earlier example. The three-element chain is thus both the simplest non-Boolean Heyting algebra and the open-set lattice of the simplest non-discrete space, which is the reason the chain appears throughout pointfree topology.
 

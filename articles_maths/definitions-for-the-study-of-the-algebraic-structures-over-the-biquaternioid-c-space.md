@@ -6,7 +6,7 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$ and central imaginary $i$, and an element is $\tilde P=P_0e_0+\vec P$ with $\vec P=\sum_{k=1}^{3}P_ke_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
+**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central imaginary $i$, and an element is $\tilde P=P_0e_t+\vec P$ with $\vec P=\sum_{k=1}^{3}P_k\vec e_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
 $$
 \tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*}.
 $$
@@ -73,9 +73,9 @@ The inverse is defined by an equation in $\star$, so it is relative to the produ
 
 | product | left unit | right unit | two-sided unit |
 |---|---|---|---|
-| $\tilde P\tilde Q$ | $e_0$ | $e_0$ | $e_0$ |
-| $\tilde P\tilde Q^{*}$ | none | $e_0$ | none |
-| $\tilde P^{\natural}\tilde Q$ | $e_0$ | none | none |
+| $\tilde P\tilde Q$ | $e_t$ | $e_t$ | $e_t$ |
+| $\tilde P\tilde Q^{*}$ | none | $e_t$ | none |
+| $\tilde P^{\natural}\tilde Q$ | $e_t$ | none | none |
 | $\tilde P^{\natural}\tilde Q^{*}$ | none | none | none |
 
 The table is verified on the identity equations and it is the unit table of *Comparison Between the Four General Products*. Three of the four products are therefore not unital, and for them the group of units is not available; what survives is the one-sided inverse, and its equations are in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*.
@@ -120,7 +120,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_t+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the plain sesquilinear product has the Hermitian idempotents, the natural product has the trivial idempotents alone, and the quaternionic sesquilinear product has the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$. The table is in *Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the Biquaternion Algebra*.
 
 ---
 
@@ -153,13 +153,13 @@ The table is verified on the squares and is the table of *Zero Divisors in the A
 
 **Definition (root of a central value).** Let $\lambda\in\mathbb{C}$. A **root of $\lambda$ in $\star$** is a nonzero element with
 $$
-\tilde P\star\tilde P=\lambda e_0 .
+\tilde P\star\tilde P=\lambda e_t .
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of §5.
 
-**Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_0$.
+**Definition (square root of an element).** For an element $a\in\mathbb{B}$, a **square root of $a$ in $\star$** is an element with $\tilde P\star\tilde P=a$; the roots of a central value are the special case $a=\lambda e_t$.
 
-The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the Biquaternion Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
+The reading of the roots of $-1$, of $0$ and of $+1$ in the plain product, and the classification of the roots of a general element, are *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* and *Square Roots of a General Element in the Biquaternion Algebra*. The idempotents of §4 are the roots of $+1$ halved: the map $\tilde\Xi\mapsto\tfrac12(e_t+\tilde\Xi)$ carries the roots of $+1$ onto the idempotents of the plain product, and the nilpotents of §5 are the roots of $0$.
 
 ---
 
@@ -193,7 +193,7 @@ They are the two one-sided multiplications of §3, their kernels are the two ann
 
 The classes so far are those of the multiplication alone. The structures also carry forms and norms, and the definitions they use are collected here in the same product-relative spirit; the forms themselves are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and the norms *The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space*.
 
-**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ (*Introduction to the Biquaternion Algebra*).
+**Definition (centre and commutant).** The **commutant** of a subset $S\subseteq\mathbb{B}$ in a product $\star$ is $\{x: x\star s=s\star x\ \text{for all }s\in S\}$; the **centre** is the commutant of the whole space. For the plain product the centre is the scalar line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*).
 
 **Definition (isotropic element, radical).** Let $\langle\cdot,\cdot\rangle$ be a form on $\mathbb{B}$. An element is **isotropic** for the form when $\langle x,x\rangle=0$, and the **radical** is the set of elements orthogonal to the whole space. The isotropic elements of the four forms are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, and the isotropic cone of the quaternionic product is *The Isotropic Structure of the General Quaternionic Algebra*.
 
@@ -207,9 +207,9 @@ The four general products are four definitions to a class, and the table says wh
 
 | class of §  | $\tilde P\tilde Q$ | $\tilde P\tilde Q^{*}$ | $\tilde P^{\natural}\tilde Q$ | $\tilde P^{\natural}\tilde Q^{*}$ | verdict |
 |---|---|---|---|---|---|
-| unit | $e_0$ two-sided | right only | left only | none | differ |
+| unit | $e_t$ two-sided | right only | left only | none | differ |
 | zero divisor | $\mathcal{C}\setminus\{0\}$ | same | same | same | **coincide** |
-| idempotent | $\tfrac12(e_0+\tilde\Xi i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$ | differ |
+| idempotent | $\tfrac12(e_t+\tilde\Xi i)$ | the Hermitian ones | the trivial pair | $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ | differ |
 | square-zero | the pure cone | $\{0\}$ | the whole cone | $\{\overline{\tilde P}\tilde P=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |
@@ -238,7 +238,7 @@ A definition of the element theory names a product. This article states, once an
 | $[x,y]_\star$, $x\circ_\star y$ | the commutator and the symmetrisation of $\star$ |
 | $(x,y,z)_\star$ | the associator of $\star$ |
 | $L_a^{\star},R_a^{\star}$ | the left and the right multiplication by $a$ in $\star$ |
-| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre of the plain product |
+| $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the centre of the plain product |
 
 ## Further Reading
 

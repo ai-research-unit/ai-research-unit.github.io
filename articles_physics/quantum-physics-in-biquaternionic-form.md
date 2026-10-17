@@ -15,13 +15,13 @@ The article is organized as follows. First the Hermitian subspace $\mathbb{M}_+$
 An element of $\mathbb{M}_+$ has the form
 
 $$
-\tilde{H} = h_0\, e_0 + i h_1\, e_1 + i h_2\, e_2 + i h_3\, e_3, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R}.
+\tilde{H} = h_0\, e_t + i h_1\, \vec e_x + i h_2\, \vec e_y + i h_3\, \vec e_z, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R}.
 $$
 
-The **real scalar part** is $h_0 e_0$, and the **imaginary vector part** is $i(h_1 e_1 + h_2 e_2 + h_3 e_3)$. In compact form,
+The **real scalar part** is $h_0 e_t$, and the **imaginary vector part** is $i(h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z)$. In compact form,
 
 $$
-\tilde{H} = h_0\, e_0 + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
+\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
 $$
 
 The subspace $\mathbb{M}_+$ is a real vector space of dimension 4. Its elements are Hermitian (fixed under the Hermitian conjugation ${}^{*}$).
@@ -35,7 +35,7 @@ $$
 **Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{M}_+$:
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2) e_0.
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2) e_t.
 $$
 
 This is the form whose vanishing defines the light cone in $\mathbb{M}_+$; the nonzero elements on the cone are the zero divisors of $\mathbb{B}$ that lie in $\mathbb{M}_+$.
@@ -63,17 +63,17 @@ of signature $(1,3)$. It is the Lorentzian quadratic form whose future light con
 **The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}\tilde{K}^{\natural}$:
 
 $$
-\langle\tilde{H},\tilde{K}\rangle_{\natural}\,e_0 = \tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} + \tilde{K}\tilde{H}^{\natural}\right).
+\langle\tilde{H},\tilde{K}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}\tilde{K}^{\natural} + \tilde{K}\tilde{H}^{\natural}\right).
 $$
 
-Computing directly, using $\tilde{H}^{\natural} = h_0 e_0 - i\vec h$ and the quaternion product of pure vector parts,
+Computing directly, using $\tilde{H}^{\natural} = h_0 e_t - i\vec h$ and the quaternion product of pure vector parts,
 
 $$
-\tilde{H}\tilde{K}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_0 + i(k_0\vec h - h_0\vec k) + \vec h\times\vec k,
+\tilde{H}\tilde{K}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_t + i(k_0\vec h - h_0\vec k) + \vec h\times\vec k,
 $$
 
 $$
-\tilde{K}\tilde{H}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_0 - i(k_0\vec h - h_0\vec k) - \vec h\times\vec k.
+\tilde{K}\tilde{H}^{\natural} = (h_0 k_0 - \vec h\cdot\vec k)\,e_t - i(k_0\vec h - h_0\vec k) - \vec h\times\vec k.
 $$
 
 The sum is scalar:
@@ -108,22 +108,22 @@ The Hermitian form is the natural inner product on the space of operators, the o
 A **pure state** of a qubit is a rank-one projection operator. In the biquaternion framework, the rank-one projections in $\mathbb{M}_+$ are the **idempotents**:
 
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_0 \pm i\,\vec u\right),
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right),
 $$
 
-where $\vec u = u_1 e_1 + u_2 e_2 + u_3 e_3$ is a unit pure real quaternion, $|\vec u| = 1$.
+where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real quaternion, $|\vec u| = 1$.
 
 **Properties of the idempotents:**
 
 1. **Hermitian:** $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$.
 2. **Idempotent:** $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
 3. **Trace one:** $\mathrm{Tr}(\tilde\Pi_{1,2}) = 1$.
-4. **Complementary:** $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and $\tilde\Pi_1 \tilde\Pi_2 = 0 = \tilde\Pi_2 \tilde\Pi_1$.
+4. **Complementary:** $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1 \tilde\Pi_2 = 0 = \tilde\Pi_2 \tilde\Pi_1$.
 5. **Zero divisors:** $\langle\tilde\Pi_{1,2}\rangle_{\natural} = 0$.
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_1(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_2(\vec u) = \tilde\Pi_1(-\vec u)$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_k\mapsto-i\sigma_k$ (*Conventions in the Biquaternion Universe*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state
 
 $$
 |\vec u+\rangle\langle\vec u+|,
@@ -136,7 +136,7 @@ i.e., the spin-up state along direction $\vec u$. The set of pure states is the 
 A **mixed state** of a qubit is a positive Hermitian operator of trace one. In $\mathbb{M}_+$, such an element has the form
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\left(e_0 + i\,\vec r\right), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3.
+\tilde{\rho} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3.
 $$
 
 The **positivity** condition is the condition that the eigenvalues of the corresponding density matrix are non-negative:
@@ -147,7 +147,7 @@ $$
 
 The eigenvalues of $\tilde{\rho}$ are $\lambda_\pm = (1 \pm |\vec r|)/2$, which are non-negative if and only if $|\vec r| \leq 1$.
 
-The state is **pure** if and only if $|\vec r| = 1$, i.e., if and only if $\tilde{\rho}$ is idempotent. It is **mixed** if $|\vec r| < 1$. The **maximally mixed state** has $\vec r = 0$, i.e., $\tilde{\rho} = \tfrac{1}{2} e_0$.
+The state is **pure** if and only if $|\vec r| = 1$, i.e., if and only if $\tilde{\rho}$ is idempotent. It is **mixed** if $|\vec r| < 1$. The **maximally mixed state** has $\vec r = 0$, i.e., $\tilde{\rho} = \tfrac{1}{2} e_t$.
 
 ### The Bloch Ball
 
@@ -162,7 +162,7 @@ The pure states form the boundary sphere $|\vec r| = 1$; the maximally mixed sta
 **A structural observation.** The positivity condition $|\vec r| \leq 1$ is equivalent to the condition $\langle\tilde{\rho}\rangle_{\natural} \geq 0$ on the biquaternion norm of $\mathbb{B}$:
 
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_0.
+\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right) e_t.
 $$
 
 So the Bloch ball is the intersection of the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$ with the **future light cone** of the biquaternion norm. The pure states form the boundary of the cone, which is also the set of zero divisors of $\mathbb{M}_+$ at trace one.
@@ -176,12 +176,12 @@ This is a clean geometric characterization: **states are the trace-one elements 
 A **general observable** is a Hermitian element of $\mathbb{M}_+$:
 
 $$
-\tilde{H} = h_0\, e_0 + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
+\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h = (h_1, h_2, h_3) \in \mathbb{R}^3.
 $$
 
 It is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the eigenvalues of $iA$ are the readings.
 
-The **scalar part** $h_0 e_0$ is the trace part: $\mathrm{Tr}(\tilde{H}) = 2 h_0$. The **imaginary vector part** $i\vec h$ is the traceless part.
+The **scalar part** $h_0 e_t$ is the trace part: $\mathrm{Tr}(\tilde{H}) = 2 h_0$. The **imaginary vector part** $i\vec h$ is the traceless part.
 
 The **spectral decomposition** of $\tilde{H}$ is
 
@@ -214,11 +214,11 @@ where $\vec h\times\vec k$ is the ordinary cross product.
 **Derivation.** We compute
 
 $$
-\tilde{H}\tilde{K} = (h_0 k_0 + \vec h\cdot\vec k)e_0 + i(h_0\vec k + k_0\vec h) - \vec h\times\vec k,
+\tilde{H}\tilde{K} = (h_0 k_0 + \vec h\cdot\vec k)e_t + i(h_0\vec k + k_0\vec h) - \vec h\times\vec k,
 $$
 
 $$
-\tilde{K}\tilde{H} = (h_0 k_0 + \vec h\cdot\vec k)e_0 + i(h_0\vec k + k_0\vec h) + \vec h\times\vec k,
+\tilde{K}\tilde{H} = (h_0 k_0 + \vec h\cdot\vec k)e_t + i(h_0\vec k + k_0\vec h) + \vec h\times\vec k,
 $$
 
 so
@@ -227,7 +227,7 @@ $$
 [\tilde{H}, \tilde{K}] = -2(\vec h\times\vec k).
 $$
 
-The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}}$, where $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_0, e_1, e_2, e_3\}$ is the real quaternion subspace, and this intersection is the real span of $e_1, e_2, e_3$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.
+The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}}$, where $\mathbb{H}_{\mathbb{B}} = \operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ is the real quaternion subspace, and this intersection is the real span of $\vec e_x, \vec e_y, \vec e_z$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.
 
 ## The Born Rule
 
@@ -235,7 +235,7 @@ The **Born rule** gives the probability of an outcome of a measurement. In the b
 
 ### Expectation Values
 
-For an observable $\tilde{H} = h_0 e_0 + i\vec h$ and a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$, the **expectation value** is
+For an observable $\tilde{H} = h_0 e_t + i\vec h$ and a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, the **expectation value** is
 
 $$
 \langle \tilde{H}\rangle_{\tilde{\rho}} = \mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h.
@@ -244,7 +244,7 @@ $$
 **Derivation.** We compute
 
 $$
-\tilde{\rho}\tilde{H} = \tfrac{1}{2}(e_0 + i\vec r)(h_0 e_0 + i\vec h) = \tfrac{1}{2}\left(h_0 e_0 + i\vec h + i h_0 \vec r + (i\vec r)(i\vec h)\right).
+\tilde{\rho}\tilde{H} = \tfrac{1}{2}(e_t + i\vec r)(h_0 e_t + i\vec h) = \tfrac{1}{2}\left(h_0 e_t + i\vec h + i h_0 \vec r + (i\vec r)(i\vec h)\right).
 $$
 
 For pure quaternions, $(i\vec r)(i\vec h) = -\vec r\vec h = \vec r\cdot\vec h - \vec r\times\vec h$. Taking the scalar part,
@@ -259,7 +259,7 @@ This is exactly the standard formula $\mathrm{Tr}(\rho H) = h_0 + \vec r\cdot\ve
 
 ### Probabilities
 
-For a projective measurement of an observable $\tilde{H} = h_0 e_0 + i\vec h$ in a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$, the two outcomes are $\lambda_\pm = h_0 \pm |\vec h|$, with probabilities
+For a projective measurement of an observable $\tilde{H} = h_0 e_t + i\vec h$ in a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$, the two outcomes are $\lambda_\pm = h_0 \pm |\vec h|$, with probabilities
 
 $$
 p_\pm = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
@@ -295,29 +295,29 @@ So the state collapses to the idempotent associated with the outcome. This is th
 
 ### The Schrödinger Picture
 
-**Time evolution of a pure state.** A pure state is an idempotent $\tilde\Pi = \tfrac{1}{2}(e_0 + i\vec u)$. It evolves in time by conjugation with a one-parameter group of unitary elements:
+**Time evolution of a pure state.** A pure state is an idempotent $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec u)$. It evolves in time by conjugation with a one-parameter group of unitary elements:
 
 $$
 \tilde\Pi(t) = \tilde{U}(t)\,\tilde\Pi(0)\,\tilde{U}(t)^{*},
 $$
 
-where $\tilde{U}(t)$ is a **unitary biquaternion**, $\tilde{U}\tilde{U}^{*} = e_0$, satisfying the **Schrödinger equation**
+where $\tilde{U}(t)$ is a **unitary biquaternion**, $\tilde{U}\tilde{U}^{*} = e_t$, satisfying the **Schrödinger equation**
 
 $$
-i\hbar\, \frac{d}{dt}\tilde{U}(t) = \tilde{H}\,\tilde{U}(t), \qquad \tilde{U}(0) = e_0,
+i\hbar\, \frac{d}{dt}\tilde{U}(t) = \tilde{H}\,\tilde{U}(t), \qquad \tilde{U}(0) = e_t,
 $$
 
-with $\tilde{H} = h_0 e_0 + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).
+with $\tilde{H} = h_0 e_t + i\vec h \in \mathbb{M}_+$ a Hermitian element (the Hamiltonian).
 
-**The solution.** We have $-i\tilde{H} = -ih_0 e_0 + \vec h$. The scalar part and the vector part commute, so
+**The solution.** We have $-i\tilde{H} = -ih_0 e_t + \vec h$. The scalar part and the vector part commute, so
 
 $$
-\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar) = \exp(-ih_0 t/\hbar)\left(\cos(|\vec h|t/\hbar)\,e_0 + \sin(|\vec h|t/\hbar)\,\vec u_h\right),
+\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar) = \exp(-ih_0 t/\hbar)\left(\cos(|\vec h|t/\hbar)\,e_t + \sin(|\vec h|t/\hbar)\,\vec u_h\right),
 $$
 
-where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_0$, which gives the trigonometric form.
+where $\vec u_h = \vec h/|\vec h|$ (for $\vec h \neq 0$). The exponential of the vector part uses $\vec u_h^2 = -e_t$, which gives the trigonometric form.
 
-The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^{*} = e_0$. It is not Hermitian in general: writing $\theta = |\vec h|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_0$, which requires either $\sin\theta = 0$ together with $h_0t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_0t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_0 = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\vec h|$; for $h_0 \neq 0$ both cases contribute, and at each Hermitian time the angle condition and the phase condition hold together, whether the times are sparser or denser than $t = n\pi\hbar/|\vec h|$ depending on $h_0/|\vec h|$. It is a general element of the unitary group $U(2) \subset \mathbb{B}$.
+The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $h_0t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_0t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_0 = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\vec h|$; for $h_0 \neq 0$ both cases contribute, and at each Hermitian time the angle condition and the phase condition hold together, whether the times are sparser or denser than $t = n\pi\hbar/|\vec h|$ depending on $h_0/|\vec h|$. It is a general element of the unitary group $\mathrm{U}(2) \subset \mathbb{B}$.
 
 **The trace part of the Hamiltonian does not affect the state.** Since $\exp(-ih_0 t/\hbar)$ is a central complex scalar, and since the conjugation
 
@@ -325,9 +325,9 @@ $$
 \tilde{U}(t)\,\tilde\Pi\,\tilde{U}(t)^{*} = \exp(-ih_0 t/\hbar)\tilde R\,\tilde\Pi\,\exp(+ih_0 t/\hbar)\tilde R^{*} = \tilde R\,\tilde\Pi\,\tilde R^{*}
 $$
 
-(with $\tilde R = \cos(|\vec h|t/\hbar)e_0 + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_0 t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
+(with $\tilde R = \cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h$ a unit real quaternion), the phase $\exp(-ih_0 t/\hbar)$ cancels out. So only the traceless part $\vec h$ of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
 
-**Time evolution of a mixed state.** A general state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ evolves by the same conjugation:
+**Time evolution of a mixed state.** A general state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ evolves by the same conjugation:
 
 $$
 \tilde{\rho}(t) = \tilde{U}(t)\,\tilde{\rho}(0)\,\tilde{U}(t)^{*}.
@@ -359,10 +359,10 @@ $$
 
 where $\tilde{H}_0$ is the Hamiltonian.
 
-**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,\dot{\tilde{U}} = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\dot{\tilde{U}}^{*} = \tilde{U}^{*}\tilde{H}_0$:
+**Derivation.** We compute the time derivative of $\tilde{H}_{\mathrm{H}}(t) = \tilde{U}^{*}\tilde{H}\tilde{U}$, using the Schrödinger equation $i\hbar\,d\tilde{U}/dt = \tilde{H}_0\tilde{U}$ and its adjoint $-i\hbar\,\left(d\tilde{U}/dt\right)^{*} = \tilde{U}^{*}\tilde{H}_0$:
 
 $$
-i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\dot{\tilde{U}}^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\dot{\tilde{U}}\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
+i\hbar\, \frac{d}{dt}\tilde{H}_{\mathrm{H}} = i\hbar\left(\left(d\tilde{U}/dt\right)^{*}\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}d\tilde{U}/dt\right) = -\tilde{U}^{*}\tilde{H}_0\tilde{H}\tilde{U} + \tilde{U}^{*}\tilde{H}\tilde{H}_0\tilde{U} = \tilde{U}^{*}[\tilde{H}, \tilde{H}_0]\tilde{U}.
 $$
 
 Since $\tilde{U}(t) = \exp(-i\tilde{H}_0 t/\hbar)$ is a function of $\tilde{H}_0$, it **commutes with $\tilde{H}_0$**. This is what makes the last expression equal to $[\tilde{H}_{\mathrm{H}}, \tilde{U}^{*}\tilde{H}_0\tilde{U}] = [\tilde{H}_{\mathrm{H}}, \tilde{H}_0]$. So
@@ -375,20 +375,20 @@ The two pictures are related by a unitary transformation and give the same physi
 
 ### Reversibility
 
-The evolution generated by a Hermitian Hamiltonian is **unitary**: the element $\tilde{U}(t)$ satisfies $\tilde{U}(t)\tilde{U}(t)^{*} = e_0$. The evolution is therefore **reversible**: the state at any later time can be recovered from an earlier time by applying $\tilde{U}(t)^{*}$.
+The evolution generated by a Hermitian Hamiltonian is **unitary**: the element $\tilde{U}(t)$ satisfies $\tilde{U}(t)\tilde{U}(t)^{*} = e_t$. The evolution is therefore **reversible**: the state at any later time can be recovered from an earlier time by applying $\tilde{U}(t)^{*}$.
 
-Reversibility is one of the structural features of the biquaternion formulation. The unitary elements form the group $U(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{M}_+$ preserves the trace pairing and the biquaternion norm.
+Reversibility is one of the structural features of the biquaternion formulation. The unitary elements form the group $\mathrm{U}(2) \subset \mathbb{B}$, and their conjugation action on $\mathbb{M}_+$ preserves the trace pairing and the biquaternion norm.
 
 ## Measurement as an Algebraic Operation
 
 In the standard framework, the measurement postulate is stated separately from the unitary evolution. In the biquaternion framework, both are consequences of the same sesquilinear structure, the Hermitian form and its trace pairing.
 
-**Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_0 + i\vec h$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u_h)$. The outcome $+$ has:
+**Projective measurement.** A projective measurement of $\tilde{H} = h_0 e_t + i\vec h$ is specified by the spectral decomposition $\tilde{H} = \lambda_+ \tilde\Pi_1 + \lambda_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$. The outcome $+$ has:
 
 - **Probability** $p_+ = \mathrm{Tr}(\tilde\Pi_1\tilde{\rho})$, from the trace formula.
 - **Post-measurement state** $\tilde{\rho}' = \tilde\Pi_1$, from the sandwich operation.
 
-**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^{*}\tilde{K}_i = e_0$. The action on a state is
+**Generalized measurement.** A general measurement is described by a set of **Kraus operators** $\{\tilde{K}_i\} \subset \mathbb{B}$ satisfying $\sum_i \tilde{K}_i^{*}\tilde{K}_i = e_t$. The action on a state is
 
 $$
 \tilde{\rho} \;\longmapsto\; \sum_i \tilde{K}_i\,\tilde{\rho}\,\tilde{K}_i^{*},
@@ -396,13 +396,13 @@ $$
 
 and the probability of outcome $i$ is $p_i = \mathrm{Tr}(\tilde{K}_i^{*} \tilde{K}_i \tilde{\rho})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
 
-**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\tilde\Pi\tilde\Pi^{*} = \tilde\Pi \neq e_0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
+**A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. Unitary elements $\tilde{U}$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\tilde\Pi\tilde\Pi^{*} = \tilde\Pi \neq e_t$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
 
 ## Purity, Entropy, and Fidelity
 
 ### Purity
 
-The **purity** of a state $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ is
+The **purity** of a state $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ is
 
 $$
 \mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
@@ -415,7 +415,7 @@ which ranges from $\tfrac{1}{2}$ (maximally mixed, $\vec r = 0$) to $1$ (pure, $
 The deviation of $\tilde{\rho}$ from being idempotent is
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_0.
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\left(|\vec r|^2 - 1\right)e_t.
 $$
 
 So the mixedness of a state is captured by the scalar part of $\tilde{\rho}^2 - \tilde{\rho}$. Purity is the condition $\tilde{\rho}^2 = \tilde{\rho}$: the pure states are the fixed points of the squaring map.
@@ -438,7 +438,7 @@ which depends only on $|\vec r|$ and vanishes for pure states.
 
 ### Fidelity
 
-For two pure states $\tilde\Pi_{\mathrm p} = \tfrac{1}{2}(e_0 + i\vec u_{\mathrm p})$ and $\tilde\Pi_{\mathrm q} = \tfrac{1}{2}(e_0 + i\vec u_{\mathrm q})$, the **transition probability** (or fidelity squared) is
+For two pure states $\tilde\Pi_{\mathrm p} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm p})$ and $\tilde\Pi_{\mathrm q} = \tfrac{1}{2}(e_t + i\vec u_{\mathrm q})$, the **transition probability** (or fidelity squared) is
 
 $$
 \mathrm{Tr}(\tilde\Pi_{\mathrm p}\tilde\Pi_{\mathrm q}) = \tfrac{1}{2}\left(1 + \vec u_{\mathrm p}\cdot\vec u_{\mathrm q}\right).
@@ -452,17 +452,17 @@ For mixed states, the fidelity is given by the Uhlmann formula, which in the biq
 
 ### The Unitary Group
 
-The **unitary group** $U(2)$ acts on $\mathbb{M}_+$ by conjugation:
+The **unitary group** $\mathrm{U}(2)$ acts on $\mathbb{M}_+$ by conjugation:
 
 $$
-\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}, \qquad \tilde{U} \in U(2).
+\tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}, \qquad \tilde{U} \in \mathrm{U}(2).
 $$
 
 This action preserves the Hermitian property and the trace, so it maps states to states and observables to observables.
 
 ### Unit Quaternions and Spin Rotations
 
-The **unit quaternions** (elements of $\mathbb{H}_{\mathbb{B}}$ with unit quaternion norm) form the subgroup $SU(2) \subset U(2)$. Their conjugation action on $\mathbb{M}_+$ preserves the scalar part and rotates the imaginary vector part, giving the rotation group $SO(3)$ acting on the Bloch sphere. This is the standard spin-1/2 rotation group, expressed in the biquaternion framework.
+The **unit quaternions** (elements of $\mathbb{H}_{\mathbb{B}}$ with unit quaternion norm) form the subgroup $SU(2) \subset \mathrm{U}(2)$. Their conjugation action on $\mathbb{M}_+$ preserves the scalar part and rotates the imaginary vector part, giving the rotation group $SO(3)$ acting on the Bloch sphere. This is the standard spin-1/2 rotation group, expressed in the biquaternion framework.
 
 ### The Lie Algebra
 
@@ -492,7 +492,7 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **6. Composition rule.** The tensor product of two qubits corresponds to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B} \cong M_4(\mathbb{C})$ (tensor product over $\mathbb{C}$, treating $\mathbb{B}$ as a $\mathbb{C}$-algebra), and the partial trace is defined in terms of the standard trace on the tensor product. This is a natural extension of the framework.
 
-**7. Symmetry group.** The unitary group $U(2)$ acts on $\mathbb{M}_+$ by conjugation, with $SU(2)$ generating the spin rotations and $SO(3)$ acting on the Bloch sphere.
+**7. Symmetry group.** The unitary group $\mathrm{U}(2)$ acts on $\mathbb{M}_+$ by conjugation, with $SU(2)$ generating the spin rotations and $SO(3)$ acting on the Bloch sphere.
 
 **8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{M}_-$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in the companion article, and the quantization of the spinor field is a natural direction for future work.
 
@@ -511,10 +511,10 @@ $$
 \qquad \tilde{\Lambda} \in \mathbb{B} \ \ \text{invertible},
 $$
 
-and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$; these elements form the group $U(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
+and the two theories differ only in the subgroup of the invertible elements over which $\tilde{\Lambda}$ ranges. The **quantum operations** of the Schrödinger picture are the **unitary** case, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{M}_-$ are the case of **unit norm**, $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
 
 $$
-SU(2) \subset U(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad U(2) \cap SL(2,\mathbb{C}) = SU(2).
+SU(2) \subset \mathrm{U}(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad \mathrm{U}(2) \cap SL(2,\mathbb{C}) = SU(2).
 $$
 
 The intersection is the set of unit real quaternions. Its conjugation action rotates the Bloch vector of a state in $\mathbb{M}_+$ and the spatial three-vector of a four-vector in $\mathbb{M}_-$ by the same $SO(3)$ rotation, with the same rotor. The spin rotation of the qubit and the spatial rotation of the material sector are therefore one algebraic operation, not two that happen to agree. This is the double cover $SU(2) \to SO(3)$ of the companion articles, read inside the single biquaternion space $\mathbb{B}$.
@@ -522,7 +522,7 @@ The intersection is the set of unit real quaternions. Its conjugation action rot
 **What distinguishes the two groups.** The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,
 
 $$
-\tilde{U}\left(\tilde{Q}\tilde{Y}\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Y}\tilde{U}^{*}\right), \qquad \tilde{U} \in U(2),
+\tilde{U}\left(\tilde{Q}\tilde{Y}\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Y}\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
 $$
 
 so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.
@@ -531,7 +531,7 @@ The **trace pairing** $\mathrm{Tr}(\tilde{H}\tilde{K})$, the Euclidean Hilbert�
 
 $$
 \mathrm{Tr}\!\left(\tilde{\Lambda}\tilde{H}\tilde{\Lambda}^{*}\,\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}\right) = \mathrm{Tr}(\tilde{H}\tilde{K}) \ \ \text{for all Hermitian } \tilde{H},\tilde{K}
-\quad \Longleftrightarrow \quad \tilde{\Lambda} \in U(2),
+\quad \Longleftrightarrow \quad \tilde{\Lambda} \in \mathrm{U}(2),
 $$
 
 since the left-hand side is $\mathrm{Tr}\big((\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{K}(\tilde{\Lambda}^{*}\tilde{\Lambda})\tilde{H}\big)$, and the condition on $\tilde{\Lambda}^{*}\tilde{\Lambda}$ is the unitarity condition. A boost fails it.
@@ -549,13 +549,13 @@ This form does **not**, however, separate the two groups, and the point is worth
 **A boost is not a quantum operation.** A pure boost has a Hermitian rotor, and therefore lies in $\mathbb{M}_+$ itself, the subspace that carries the states and observables:
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde{\Lambda}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1 .
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_t + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \langle\tilde{\Lambda}\rangle_{\natural} = \cosh^2\frac{\psi}{2} - \sinh^2\frac{\psi}{2} = 1 .
 $$
 
 It lies on the **norm-one hyperboloid** of $\mathbb{M}_+$, whereas the states lie on the trace-one slice of the future light cone, with $\langle\tilde{\rho}\rangle_{\natural} = \tfrac{1}{4}(1 - |\vec r|^2) \geq 0$ and pure states at $N = 0$. Boost conjugation preserves Hermiticity, positivity (a congruence preserves the inertia), and the biquaternion norm, but it preserves neither the trace nor the trace pairing. On the maximally mixed state, for instance,
 
 $$
-\tilde{\Lambda}\,\tfrac{1}{2}e_0\,\tilde{\Lambda}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_0 + i\sinh\psi\,\vec u_{\mathrm b}\right),
+\tilde{\Lambda}\,\tfrac{1}{2}e_t\,\tilde{\Lambda}^{*} = \tfrac{1}{2}\left(\cosh\psi\,e_t + i\sinh\psi\,\vec u_{\mathrm b}\right),
 $$
 
 whose trace is $\cosh\psi$, not $1$. A boost therefore maps the state cone into itself while moving the state off the trace-one slice; the physical state is recovered by renormalizing. This is the algebraic form of a familiar relativistic fact: the Lorentz transformation of a state is not unitary, and the quantity it preserves is the Lorentzian biquaternion norm rather than the Euclidean trace pairing.
@@ -636,21 +636,21 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators) |
-| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_0, e_1, e_2, e_3\}$ (unit elements: $SU(2)$) |
-| $\tilde{H} = h_0 e_0 + i\vec h$ | Hermitian element (observable) |
-| $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state) |
+| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace, $\operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ (unit elements: $SU(2)$) |
+| $\tilde{H} = h_0 e_t + i\vec h$ | Hermitian element (observable) |
+| $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ | State |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state) |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
 | $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$ | Born rule |
 | $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = h_0^2 - |\vec h|^2$ | Biquaternion norm, signature $(1,3)$ |
 | $\langle\tilde{H},\tilde{K}\rangle_{\natural} = h_0 k_0 - \vec h\cdot\vec k$ | Polarization of the biquaternion norm |
 | $[\tilde{H}, \tilde{K}] = -2(\vec h\times\vec k)$ | Commutator |
 | $\tilde{\rho}\mapsto\tilde\Pi\tilde{\rho}\tilde\Pi$ | Projective measurement |
-| $\tilde{U}(t) = \exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_0 + \sin(|\vec h|t/\hbar)\vec u_h)$ | Unitary evolution |
+| $\tilde{U}(t) = \exp(-ih_0t/\hbar)(\cos(|\vec h|t/\hbar)e_t + \sin(|\vec h|t/\hbar)\vec u_h)$ | Unitary evolution |
 | $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}\tilde{U}(t)^{*}$ | Von Neumann evolution |
-| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$ (group $U(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ (group $SL(2,\mathbb{C})$) |
+| $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, $\tilde{\Lambda}$ invertible | Conjugation; quantum if $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$ (group $\mathrm{U}(2)$), Lorentz if $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$ (group $SL(2,\mathbb{C})$) |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
-| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2-1)e_0$ | Deviation from idempotency |
+| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2-1)e_t$ | Deviation from idempotency |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 

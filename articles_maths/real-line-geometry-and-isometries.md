@@ -3,43 +3,43 @@
 
 ## Introduction
 
-This is the geometry article of the Real Numbers system, and it occupies the **geometry slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the real line as a geometric object: the distance $\lvert a - b\rvert$, the isometries it determines, the group they form, the reflections and translations that generate it, and the subsidiary notions of interval, midpoint, similarity and crystallographic symmetry that the line supports. The real line is the *first* object of the ladder that carries a distance, and its geometry is the base case of the whole geometric ladder of the number systems.
+This is the geometry article of the Real Numbers system, and it occupies the **geometry slot** of that system. The system is the ordered field $\mathbb{R}$ of *The Real Numbers*, and the object of study is the real line as a geometric object: the distance $\lvert q_1 - q_2\rvert$, the isometries it determines, the group they form, the reflections and translations that generate it, and the subsidiary notions of interval, midpoint, similarity and crystallographic symmetry that the line supports. The real line is the *first* object of the ladder that carries a distance, and its geometry is the base case of the whole geometric ladder of the number systems.
 
 The algebra and the order of $\mathbb{R}$ are the subjects of *Real Algebra*, and are used here rather than developed; the metric and uniform structure of the line is from *Metric, Uniform and Complete Spaces*, the topological structure from *Topological Spaces* and *Topological Groups*, and the length of an interval from *Measure Theory and Integration*. What this article develops is only the geometric content: the classification of the isometries, the structure of the isometry group, the symmetries of a lattice, the similarities and the cross-ratio, and the failure of a nontrivial rotation in one dimension — the failure that makes the geometry of the line the base case of the Cayley–Klein ladder rather than a degenerate case of the plane — and the Riemannian reading of the line, its standard metric, its geodesics and its vanishing curvature.
 
-Throughout, $\mathbb{R}$ is the real line with its usual absolute value, $\lvert a - b\rvert$ is the distance between $a$ and $b$, and an **isometry** of $\mathbb{R}$ is a bijection $f : \mathbb{R} \to \mathbb{R}$ with $\lvert f(a) - f(b)\rvert = \lvert a - b\rvert$ for all $a, b$. The translation by $b$ is $T_b(a) = a+b$, the reflection in the point $b/2$ is $R_b(a) = b - a$, the dilation of ratio $a$ is $D_a(b) = ab$, and $\operatorname{Isom}(\mathbb{R})$ is the group of all isometries under composition. The infinite dihedral group is $D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, and the cross-ratio of four distinct real points is written $(a_1, a_2; a_3, a_4)$.
+Throughout, $\mathbb{R}$ is the real line with its usual absolute value, $\lvert q_1 - q_2\rvert$ is the distance between $q_1$ and $q_2$, and an **isometry** of $\mathbb{R}$ is a bijection $f : \mathbb{R} \to \mathbb{R}$ with $\lvert f(q_1) - f(q_2)\rvert = \lvert q_1 - q_2\rvert$ for all $q_1, q_2$. The translation by $b$ is $T_b(q_1) = q_1+b$, the reflection in the point $b/2$ is $R_b(q_1) = b - q_1$, the dilation of ratio $a$ is $D_a(q_2) = a q_2$, and $\operatorname{Isom}(\mathbb{R})$ is the group of all isometries under composition. The infinite dihedral group is $D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, and the cross-ratio of four distinct real points is written $(q_1, q_2; q_3, q_4)$.
 
 ## The Metric Geometry of the Line
 
 ### Distance and Its Properties
 
-**Definition.** The **distance** on $\mathbb{R}$ is $d(a,b) = \lvert a-b\rvert$. A **metric space** structure of this kind satisfies, for all $a, b, c$,
+**Definition.** The **distance** on $\mathbb{R}$ is $d(q_1,q_2) = \lvert q_1-q_2\rvert$. A **metric space** structure of this kind satisfies, for all $q_1, q_2, q_3$,
 
 $$
-d(a,b) \geq 0, \quad d(a,b) = 0 \iff a = b, \quad d(a,b) = d(b,a), \quad d(a,c) \leq d(a,b) + d(b,c),
+d(q_1,q_2) \geq 0, \quad d(q_1,q_2) = 0 \iff q_1 = q_2, \quad d(q_1,q_2) = d(q_2,q_1), \quad d(q_1,q_3) \leq d(q_1,q_2) + d(q_2,q_3),
 $$
 
-and the last is the triangle inequality, which for the absolute value is the inequality $\lvert a + b\rvert \leq \lvert a\rvert + \lvert b\rvert$.
+and the last is the triangle inequality, which for the absolute value is the inequality $\lvert q_1 + q_2\rvert \leq \lvert q_1\rvert + \lvert q_2\rvert$.
 
-**Theorem.** $(\mathbb{R}, d)$ is a complete, connected, separable metric space, and the closed balls $\bar B(a, r) = [a-r, a+r]$ are the closed intervals. The topology determined by $d$ is the order topology of $\mathbb{R}$, so its open sets are the unions of open intervals.
+**Theorem.** $(\mathbb{R}, d)$ is a complete, connected, separable metric space, and the closed balls $\bar B(q, r) = [q-r, q+r]$ are the closed intervals. The topology determined by $d$ is the order topology of $\mathbb{R}$, so its open sets are the unions of open intervals.
 
 **Proof.** Completeness is the Cauchy construction of *The Real Numbers*; connectedness is the intermediate value property of the order, proved in *The Real Numbers* by the completeness of the order; separability is the density of $\mathbb{Q}$ by *The Rational Numbers*; the identification of the balls with the intervals is immediate from the definition of the absolute value, and the agreement of the metric and order topologies is the standard equivalence of the two descriptions of the neighbourhoods.
 
-**Theorem.** The **convex** subsets of $\mathbb{R}$ are exactly the intervals, and every interval is the intersection of $\mathbb{R}$ with a closed or open interval of the extended line. For $a < b$, the **segment** between them is $[a,b]$, its **midpoint** is $(a+b)/2$, and it is the unique point equidistant from $a$ and $b$ lying between them.
+**Theorem.** The **convex** subsets of $\mathbb{R}$ are exactly the intervals, and every interval is the intersection of $\mathbb{R}$ with a closed or open interval of the extended line. For $q_1 < q_2$, the **segment** between them is $[q_1,q_2]$, its **midpoint** is $(q_1+q_2)/2$, and it is the unique point equidistant from $q_1$ and $q_2$ lying between them.
 
-**Proof.** Convexity of a set $A$ means that $a, b \in A$ and $a \leq c \leq b$ imply $c \in A$; the subsets with this property are the intervals in the sense of *Order Theory and Lattices*, and the interval notation of *Real Algebra* applies. The midpoint statement follows from the bijectivity and monotonicity of $a \mapsto 2a$.
+**Proof.** Convexity of a set $A$ means that $q_1, q_2 \in A$ and $q_1 \leq q_3 \leq q_2$ imply $q_3 \in A$; the subsets with this property are the intervals in the sense of *Order Theory and Lattices*, and the interval notation of *Real Algebra* applies. The midpoint statement follows from the bijectivity and monotonicity of $a \mapsto 2a$.
 
-**Remark.** The line is a **geodesic** metric space: every pair of points is joined by a segment of length $d(a,b)$, and the segment is unique. This is the weakest of the geometric properties that the later systems of the ladder will carry, and it is the reason the line is taken as the base case: the geometric ladder begins with the line, which has distance but no angle, and the two-dimensional systems, which have angle, come after.
+**Remark.** The line is a **geodesic** metric space: every pair of points is joined by a segment of length $d(q_1,q_2)$, and the segment is unique. This is the weakest of the geometric properties that the later systems of the ladder will carry, and it is the reason the line is taken as the base case: the geometric ladder begins with the line, which has distance but no angle, and the two-dimensional systems, which have angle, come after.
 
 ### Length and Measure
 
-**Theorem (Lebesgue measure on the line).** There is a unique measure $\lambda$ on the Borel subsets of $\mathbb{R}$ with $\lambda([a,b]) = b-a$ for $a \leq b$, and $\lambda$ is the unique (up to a positive scalar multiple) measure on the Borel sets that is invariant under all translations: $\lambda(A + b) = \lambda(A)$.
+**Theorem (Lebesgue measure on the line).** There is a unique measure $\lambda$ on the Borel subsets of $\mathbb{R}$ with $\lambda([q_1,q_2]) = q_2-q_1$ for $q_1 \leq q_2$, and $\lambda$ is the unique (up to a positive scalar multiple) measure on the Borel sets that is invariant under all translations: $\lambda(A + b) = \lambda(A)$.
 
 **Proof.** The existence and the specification on the Borel sets are the construction of Lebesgue measure on $\mathbb{R}$ in *Measure Theory and Integration*; uniqueness up to scale is the standard argument by monotone classes, using that a translation-invariant measure is determined by its value on the unit interval.
 
 **Corollary.** Every isometry of $\mathbb{R}$ preserves $\lambda$, since it preserves the length of intervals; the interval, its length and the distance therefore form a single geometric structure, and the group of transformations preserving all three is exactly $\operatorname{Isom}(\mathbb{R})$.
 
-**Proof.** A measure preserving all intervals of the form $[a,b]$ agrees with $\lambda$ up to a scalar, and the scalar is $1$ because $[0,1]$ is preserved in length by an isometry; the last statement combines the preservation of distance with the classification theorem below.
+**Proof.** A measure preserving all intervals of the form $[q_1,q_2]$ agrees with $\lambda$ up to a scalar, and the scalar is $1$ because $[0,1]$ is preserved in length by an isometry; the last statement combines the preservation of distance with the classification theorem below.
 
 ## Isometries of the Line
 
@@ -48,7 +48,7 @@ and the last is the triangle inequality, which for the absolute value is the ine
 **Theorem (classification of isometries).** Every isometry of $\mathbb{R}$ is of exactly one of the two forms
 
 $$
-T_b(a) = a + b \qquad (\text{a translation}), \qquad R_b(a) = b - a \qquad (\text{a reflection}).
+T_b(q) = q + b \qquad (\text{a translation}), \qquad R_b(q) = b - q \qquad (\text{a reflection}).
 $$
 
 Consequently
@@ -59,7 +59,7 @@ $$
 
 and the group is the disjoint union of the translations, which are orientation-preserving, and the reflections, which are orientation-reversing.
 
-**Proof.** Let $f$ be an isometry and put $b = f(0)$. From $\lvert f(a) - b\rvert = \lvert a\rvert$ we get $f(a) = b + \sigma(a)a$ with $\sigma(a) \in \{1,-1\}$ for $a \neq 0$, and $f(0) = b$. On $(0,\infty)$ the sign $\sigma$ is constant: if $\sigma(a) \neq \sigma(c)$ for $a, c > 0$ then $\lvert f(a) - f(c)\rvert = a + c \neq \lvert a-c\rvert$, contradicting the isometry property, and the same argument applies on $(-\infty,0)$. If the two constants differed, then taking $a > 0 > c$ gives $\lvert f(a) - f(c)\rvert = \lvert a + c\rvert \neq \lvert a - c\rvert$ because $ac \neq 0$; hence $\sigma$ is constant on $\mathbb{R}\setminus\{0\}$ and $f = T_b$ or $f = R_b$. The two forms never coincide, since $T_b$ is strictly increasing and $R_b$ strictly decreasing.
+**Proof.** Let $f$ be an isometry and put $b = f(0)$. From $\lvert f(q_1) - b\rvert = \lvert q_1\rvert$ we get $f(q_1) = b + \sigma(q_1)q_1$ with $\sigma(q_1) \in \{1,-1\}$ for $q_1 \neq 0$, and $f(0) = b$. On $(0,\infty)$ the sign $\sigma$ is constant: if $\sigma(q_1) \neq \sigma(q_2)$ for $q_1, q_2 > 0$ then $\lvert f(q_1) - f(q_2)\rvert = q_1 + q_2 \neq \lvert q_1-q_2\rvert$, contradicting the isometry property, and the same argument applies on $(-\infty,0)$. If the two constants differed, then taking $q_1 > 0 > q_2$ gives $\lvert f(q_1) - f(q_2)\rvert = \lvert q_1 + q_2\rvert \neq \lvert q_1 - q_2\rvert$ because $q_1 q_2 \neq 0$; hence $\sigma$ is constant on $\mathbb{R}\setminus\{0\}$ and $f = T_b$ or $f = R_b$. The two forms never coincide, since $T_b$ is strictly increasing and $R_b$ strictly decreasing.
 
 **Theorem (composition laws).** For all $a, b \in \mathbb{R}$,
 
@@ -69,7 +69,7 @@ $$
 
 Consequently the translations form a normal subgroup isomorphic to $(\mathbb{R}, +)$, the map $f \mapsto f(0) - 0$ restricted to the reflections is a torsor under the translations, and every reflection is an involution: $R_b \circ R_b = T_0 = \mathrm{id}$.
 
-**Proof.** Each identity is an immediate computation: for instance $R_a(R_b(c)) = a - (b - c) = c + (a-b) = T_{a-b}(c)$, and $R_a(T_b(c)) = a - (c+b) = (a-b) - c = R_{a-b}(c)$. Normality of the translations is $R_a \circ T_b \circ R_a = T_{-b}$, which follows from the displayed laws.
+**Proof.** Each identity is an immediate computation: for instance $R_a(R_b(q)) = a - (b - q) = q + (a-b) = T_{a-b}(q)$, and $R_a(T_b(q)) = a - (q+b) = (a-b) - q = R_{a-b}(q)$. Normality of the translations is $R_a \circ T_b \circ R_a = T_{-b}$, which follows from the displayed laws.
 
 | $\circ$ | $T_b$ | $R_b$ |
 |---|---|---|
@@ -94,21 +94,21 @@ which is the semidirect product law for the action of $\{\pm1\}$ on $\mathbb{R}$
 
 **Theorem (fixed points and transitivity).** A translation $T_b$ with $b \neq 0$ has no fixed point; the identity $T_0$ fixes everything. A reflection $R_b$ fixes exactly the point $b/2$. The group $\operatorname{Isom}(\mathbb{R})$ acts transitively on $\mathbb{R}$, the stabiliser of a point is of order $2$, and the action on the set of ordered pairs at a fixed distance is transitive.
 
-**Proof.** $T_b(a) = a$ gives $b = 0$; $R_b(a) = a$ gives $a = b/2$. Given $a, c$ there is a translation taking $a$ to $c$ (namely $T_{c-a}$), so the action is transitive; the stabiliser of $a$ is $\{\mathrm{id}, R_{2a}\}$; and given two ordered pairs with equal distance, a translation followed if necessary by the reflection in the midpoint carries one to the other.
+**Proof.** $T_b(q_1) = q_1$ gives $b = 0$; $R_b(q_1) = q_1$ gives $q_1 = b/2$. Given $q_1, q_2$ there is a translation taking $q_1$ to $q_2$ (namely $T_{q_2-q_1}$), so the action is transitive; the stabiliser of $q_1$ is $\{\mathrm{id}, R_{2q_1}\}$; and given two ordered pairs with equal distance, a translation followed if necessary by the reflection in the midpoint carries one to the other.
 
 ### Orientation, Similarities and the Affine Group
 
-**Definition.** The **similarity group** of the line is the group $\operatorname{Sim}(\mathbb{R}) = \{c \mapsto ac + b : a \neq 0\}$, the affine group $\operatorname{Aff}(\mathbb{R}) \cong \mathbb{R} \rtimes \mathbb{R}^\times$; the **ratio** of the similarity $c \mapsto ac+b$ is $\lvert a\rvert$, and it is **direct** if $a > 0$. A map is **affine** if it is of this form.
+**Definition.** The **similarity group** of the line is the group $\operatorname{Sim}(\mathbb{R}) = \{q \mapsto a q + b : a \neq 0\}$, the affine group $\operatorname{Aff}(\mathbb{R}) \cong \mathbb{R} \rtimes \mathbb{R}^\times$; the **ratio** of the similarity $q \mapsto a q+b$ is $\lvert a\rvert$, and it is **direct** if $a > 0$. A map is **affine** if it is of this form.
 
 **Theorem.** An isometry is a similarity of ratio $1$; a similarity of ratio $r$ multiplies every distance by $r$, and the direct similarities form the subgroup $\mathbb{R} \rtimes \mathbb{R}_{>0}$ of index $2$, with $\operatorname{Isom}(\mathbb{R}) \leq \operatorname{Sim}(\mathbb{R})$. The group $\operatorname{Aff}(\mathbb{R})$ is exactly the group of transformations preserving the cross-ratio
 
 $$
-(a_1, a_2; a_3, a_4) = \frac{(a_3 - a_1)(a_4 - a_2)}{(a_3 - a_2)(a_4 - a_1)},
+(q_1, q_2; q_3, q_4) = \frac{(q_3 - q_1)(q_4 - q_2)}{(q_3 - q_2)(q_4 - q_1)},
 $$
 
 for four distinct points, in the sense that a map preserving it in general position is affine.
 
-**Proof.** The distance scaling is the identity $\lvert (ac+b) - (ad+b)\rvert = \lvert a\rvert\lvert c - d\rvert$. The cross-ratio is invariant under $c \mapsto ac+b$ by direct substitution. Conversely, a bijection preserving the cross-ratio of every quadruple in general position carries three points to three points and is determined by them, hence agrees with the unique affine map taking three points to their images.
+**Proof.** The distance scaling is the identity $\lvert (a q_1+b) - (a q_2+b)\rvert = \lvert a\rvert\lvert q_1 - q_2\rvert$. The cross-ratio is invariant under $q \mapsto a q+b$ by direct substitution. Conversely, a bijection preserving the cross-ratio of every quadruple in general position carries three points to three points and is determined by them, hence agrees with the unique affine map taking three points to their images.
 
 **Remark.** The classification of isometries is the statement that the line has exactly two "directions" of rigid motion, the translations and the reflections, and that the orientation is a two-valued invariant. This is the one-dimensional case of the fact that the isometry group of $\mathbb{R}^n$ is the semidirect product of the translations and the orthogonal group $O(n)$, whose identity component is the rotation group $SO(n)$; in dimension one $SO(1)$ is trivial, which is the precise sense in which the line admits no nontrivial rotation.
 
@@ -116,7 +116,7 @@ for four distinct points, in the sense that a map preserving it in general posit
 
 **Theorem.** Every isometry of $\mathbb{R}$ that fixes a point and preserves orientation is the identity. Hence there is no nontrivial rotation of the real line.
 
-**Proof.** By the classification, an orientation-preserving isometry is a translation $T_b$, and if it fixes a point $a$ then $b = 0$, so it is the identity.
+**Proof.** By the classification, an orientation-preserving isometry is a translation $T_b$, and if it fixes a point $q$ then $b = 0$, so it is the identity.
 
 **Remark.** A rotation is, by definition, an orientation-preserving isometry with a fixed point; the theorem therefore rules it out in one dimension, and the first genuine rotation must appear in a two-dimensional system. This is the geometric content of the ladder: the complex plane, whose isometry group contains the rotations $A \mapsto \exp(i\theta) A$, is the first system in which rotation is nontrivial, and the real line is its degenerate one-dimensional base case, with the orthogonal group $O(1) = \{\pm 1\}$ in place of $O(2)$. The complex rotations are the subject of *Rotations and Reflections in the Complex Plane*, which completes the ladder begun here.
 
@@ -134,7 +134,7 @@ for four distinct points, in the sense that a map preserving it in general posit
 
 ### Crystallographic Symmetry in One Dimension
 
-**Definition.** A **discrete subgroup** of $\operatorname{Isom}(\mathbb{R})$ is a subgroup whose action on $\mathbb{R}$ is properly discontinuous: for every $a$ there is a neighbourhood $U$ of $a$ such that $g(U) \cap U = \varnothing$ for all $g \neq \mathrm{id}$.
+**Definition.** A **discrete subgroup** of $\operatorname{Isom}(\mathbb{R})$ is a subgroup whose action on $\mathbb{R}$ is properly discontinuous: for every $q$ there is a neighbourhood $\Omega$ of $q$ such that $g(\Omega) \cap \Omega = \varnothing$ for all $g \neq \mathrm{id}$.
 
 **Theorem.** A discrete subgroup $\Gamma \leq \operatorname{Isom}(\mathbb{R})$ that contains a nontrivial translation is generated by a translation and possibly one reflection, and is therefore
 
@@ -154,11 +154,11 @@ where $a > 0$ is the least positive translation length. A discrete subgroup cont
 
 ## The Line as a Riemannian Manifold
 
-Here $T_b(a) = a+b$ is the translation by $b$, $R_b(a) = b-a$ is the reflection in $b/2$, and $a\mathbb{Z}$ is the lattice of multiples of $a > 0$; the classification of the isometries of the line is the subject of *Real Line Geometry and Isometries*.
+Here $T_b(q) = q+b$ is the translation by $b$, $R_b(q) = b-q$ is the reflection in $b/2$, and $a\mathbb{Z}$ is the lattice of multiples of $a > 0$; the classification of the isometries of the line is the subject of *Real Line Geometry and Isometries*.
 
 ### The Riemannian Structure
 
-**Definition.** The **standard Riemannian metric** on $\mathbb{R}$ is the tensor field $g = da \otimes da$, which assigns to each tangent space the inner product $\langle \partial_a, \partial_a\rangle = 1$. The **length** of a piecewise $\mathcal{C}^1$ curve $\gamma : [c,d] \to \mathbb{R}$ is
+**Definition.** The **standard Riemannian metric** on $\mathbb{R}$ is the tensor field $g = da \otimes da$, which assigns to each tangent space the inner product $\langle \partial/\partial a, \partial/\partial a\rangle = 1$. The **length** of a piecewise $\mathcal{C}^1$ curve $\gamma : [c,d] \to \mathbb{R}$ is
 
 $$
 L(\gamma) = \int_c^d \lvert \gamma'(t)\rvert\,dt ,
@@ -166,9 +166,9 @@ $$
 
 and the **intrinsic distance** associated with $g$ is the infimum of the lengths of the curves joining two points.
 
-**Theorem.** The intrinsic distance of the standard metric is the distance $\lvert a - b\rvert$, and the infimum is attained by the affine curve $\gamma(t) = a + t(b-a)$; the metric is geodesic. The line is complete and connected, and its only isometries are the $T_b$ and $R_b$.
+**Theorem.** The intrinsic distance of the standard metric is the distance $\lvert q_1 - q_2\rvert$, and the infimum is attained by the affine curve $\gamma(t) = q_1 + t(q_2-q_1)$; the metric is geodesic. The line is complete and connected, and its only isometries are the $T_b$ and $R_b$.
 
-**Proof.** The length of the affine curve is $\lvert b-a\rvert$, and no curve can be shorter because $\lvert\int \gamma'\rvert \leq \int\lvert\gamma'\rvert$ together with the fundamental theorem of calculus gives $\lvert\gamma(d) - \gamma(c)\rvert \leq L(\gamma)$. Hence the intrinsic distance is $\lvert a-b\rvert$, and the isometries are those of the metric space, classified earlier.
+**Proof.** The length of the affine curve is $\lvert q_2-q_1\rvert$, and no curve can be shorter because $\lvert\int \gamma'\rvert \leq \int\lvert\gamma'\rvert$ together with the fundamental theorem of calculus gives $\lvert\gamma(d) - \gamma(c)\rvert \leq L(\gamma)$. Hence the intrinsic distance is $\lvert q_1-q_2\rvert$, and the isometries are those of the metric space, classified earlier.
 
 ### Geodesics and the Classification
 
@@ -194,26 +194,26 @@ and the **intrinsic distance** associated with $g$ is the infimum of the lengths
 
 ## Summary
 
-The real line is the first system of the ladder to carry a distance: $d(a,b) = \lvert a-b\rvert$ makes $\mathbb{R}$ a complete, connected, separable metric space whose topology is the order topology, whose convex subsets are the intervals, and whose segments have unique midpoints. The length of an interval is the restriction of Lebesgue measure, the unique translation-invariant Borel measure up to scale, and every isometry preserves it. Every isometry of the line is a translation $T_b(a) = a+b$ or a reflection $R_b(a) = b-a$, with the composition laws $T_aT_b = T_{a+b}$, $T_aR_b = R_{a+b}$, $R_aT_b = R_{a-b}$ and $R_aR_b = T_{a-b}$, so that $\operatorname{Isom}(\mathbb{R}) \cong \mathbb{R} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the translations as the identity component, the reflections as the orientation-reversing elements, and the stabiliser of a point of order two.
+The real line is the first system of the ladder to carry a distance: $d(q_1,q_2) = \lvert q_1-q_2\rvert$ makes $\mathbb{R}$ a complete, connected, separable metric space whose topology is the order topology, whose convex subsets are the intervals, and whose segments have unique midpoints. The length of an interval is the restriction of Lebesgue measure, the unique translation-invariant Borel measure up to scale, and every isometry preserves it. Every isometry of the line is a translation $T_b(q) = q+b$ or a reflection $R_b(q) = b-q$, with the composition laws $T_aT_b = T_{a+b}$, $T_aR_b = R_{a+b}$, $R_aT_b = R_{a-b}$ and $R_aR_b = T_{a-b}$, so that $\operatorname{Isom}(\mathbb{R}) \cong \mathbb{R} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the translations as the identity component, the reflections as the orientation-reversing elements, and the stabiliser of a point of order two.
 
-The similarities $c \mapsto ac+b$ form the affine group $\mathbb{R} \rtimes \mathbb{R}^\times$, of which the isometries are the ratio-one elements, and the affine group is exactly the group preserving the cross-ratio. An orientation-preserving isometry with a fixed point is the identity, so the line admits no nontrivial rotation: the first genuine rotation requires two dimensions, and this is the sense in which the real line is the base case of the Cayley–Klein ladder completed by the complex and other two-dimensional systems. The subgroups of $(\mathbb{R},+)$ are dense or cyclic, the discrete subgroups of $\operatorname{Isom}(\mathbb{R})$ are trivial, cyclic, of order two, or infinite dihedral, and the symmetry group of the integer lattice is $D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$; this is the one-dimensional crystallographic classification, and it closes the geometry of the system $\mathbb{R}$ at its base case. Read as a Riemannian manifold the line carries the standard metric $g = da \otimes da$, whose intrinsic distance is $\lvert a-b\rvert$ and whose geodesics are the affine curves; in one dimension the curvature vanishes identically, so every complete connected one-dimensional Riemannian manifold is a line or a circle, and the line is the universal cover of the circle.
+The similarities $q \mapsto a q+b$ form the affine group $\mathbb{R} \rtimes \mathbb{R}^\times$, of which the isometries are the ratio-one elements, and the affine group is exactly the group preserving the cross-ratio. An orientation-preserving isometry with a fixed point is the identity, so the line admits no nontrivial rotation: the first genuine rotation requires two dimensions, and this is the sense in which the real line is the base case of the Cayley–Klein ladder completed by the complex and other two-dimensional systems. The subgroups of $(\mathbb{R},+)$ are dense or cyclic, the discrete subgroups of $\operatorname{Isom}(\mathbb{R})$ are trivial, cyclic, of order two, or infinite dihedral, and the symmetry group of the integer lattice is $D_\infty = \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$; this is the one-dimensional crystallographic classification, and it closes the geometry of the system $\mathbb{R}$ at its base case. Read as a Riemannian manifold the line carries the standard metric $g = da \otimes da$, whose intrinsic distance is $\lvert q_1-q_2\rvert$ and whose geodesics are the affine curves; in one dimension the curvature vanishes identically, so every complete connected one-dimensional Riemannian manifold is a line or a circle, and the line is the universal cover of the circle.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\mathbb{R}$ | The real line |
-| $d(a,b) = \lvert a-b\rvert$ | Distance |
-| $\lvert a\rvert$ | Absolute value, the distance to $0$ |
-| $\bar B(a,r)$ | Closed ball, the interval $[a-r, a+r]$ |
+| $d(q_1,q_2) = \lvert q_1-q_2\rvert$ | Distance |
+| $\lvert q\rvert$ | Absolute value, the distance to $0$ |
+| $\bar B(q,r)$ | Closed ball, the interval $[q-r, q+r]$ |
 | $\lambda$ | Lebesgue measure on the line |
-| $T_b$ | Translation $a \mapsto a + b$ |
-| $R_b$ | Reflection $a \mapsto b - a$ |
+| $T_b$ | Translation $q \mapsto q + b$ |
+| $R_b$ | Reflection $q \mapsto b - q$ |
 | $\operatorname{Isom}(\mathbb{R})$ | Isometry group, $\mathbb{R} \rtimes \mathbb{Z}/2\mathbb{Z}$ |
 | $\operatorname{Sim}(\mathbb{R})$, $\operatorname{Aff}(\mathbb{R})$ | Similarity and affine groups, $\mathbb{R} \rtimes \mathbb{R}^\times$ |
-| $D_a$ | Dilation $b \mapsto ab$ |
+| $D_a$ | Dilation $q \mapsto a q$ |
 | $D_\infty$, $D_\infty(a)$ | Infinite dihedral group, $a\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ |
-| $(a_1,a_2;a_3,a_4)$ | Cross-ratio |
+| $(q_1,q_2;q_3,q_4)$ | Cross-ratio |
 | $a\mathbb{Z}$ | Discrete subgroup of translations of step $a$ |
 | $g = da \otimes da$ | The standard Riemannian metric |
 | $L(\gamma) = \int_c^d \lvert \gamma'(t)\rvert\,dt$ | Length of a piecewise $\mathcal{C}^1$ curve |

@@ -91,9 +91,9 @@ $$
 \bigl(\rho^{\alpha}(u)\bigr)^{*} = (-1)^{\lvert u\rvert}\,\rho^{\alpha}(u^{\star})
 $$
 
-on homogeneous $u\in U(\mathrm{G})$, where $u^{\star}$ is the star of the principal anti-automorphism; hence the graded action is a star-operation with the sign of the parity.
+on homogeneous $u\in \mathrm{U}(\mathrm{G})$, where $u^{\star}$ is the star of the principal anti-automorphism; hence the graded action is a star-operation with the sign of the parity.
 
-*Proof.* The action extends to $U(\mathrm{G})$ with the graded product; the adjoint of a product is the product of the adjoints in the reverse order with the sign rule of the parity, and the star of *The Involution on the Enveloping Algebra of a Lie Group* is the adjoint operation of the generators.
+*Proof.* The action extends to $\mathrm{U}(\mathrm{G})$ with the graded product; the adjoint of a product is the product of the adjoints in the reverse order with the sign rule of the parity, and the star of *The Involution on the Enveloping Algebra of a Lie Group* is the adjoint operation of the generators.
 
 ## The Sign Rule and the Structure
 

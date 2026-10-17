@@ -194,7 +194,7 @@ so that the bracket of two matrix units is a difference of two matrix units or v
 Let $A = \mathbb{H}$ over $\mathbb{R}$. The centre is $\mathbb{R}$, and on the pure imaginary part the bracket of two elements is twice their cross product,
 
 $$
-[e_1, e_2] = 2e_3, \qquad [e_2, e_3] = 2e_1, \qquad [e_3, e_1] = 2e_2,
+[\vec e_x, \vec e_y] = 2\vec e_z, \qquad [\vec e_y, \vec e_z] = 2\vec e_x, \qquad [\vec e_z, \vec e_x] = 2\vec e_y,
 $$
 
 with the labelling of the generators of *The Operators on an Algebra*. The operator $\mathrm{ad}_p$ for a pure imaginary $p$ is the derivation of $\mathbb{H}$ determined by $p$, and the correspondence $p \mapsto \mathrm{ad}_p$ is an isomorphism of Lie algebras $\mathbb{H}^{(-)}/\mathbb{R} \cong \mathbb{R}^3$ with the bracket twice the cross product; this is the reason the derivations of the quaternions form a three-dimensional Lie algebra.

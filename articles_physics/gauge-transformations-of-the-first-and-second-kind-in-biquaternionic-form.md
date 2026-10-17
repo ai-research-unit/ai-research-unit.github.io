@@ -2,7 +2,7 @@
 
 ## Introduction
 
-M. Tanişli's *Gauge transformation and electromagnetism with biquaternions* (*Europhysics Letters* **74** (2006) 569–573) writes the source-free Maxwell equations as the single biquaternion equation $\nabla F=0$, gives them a first-order Lagrangian density $L=F^*\cdot\nabla F$, and derives the local energy conservation law from what the paper calls a **biquaternionic gauge transformation of the first kind**, $F\to((1+\alpha)e_0 F)$, with $\alpha$ an infinitesimal function of $x$ and $t$. The stated result is the Poynting theorem; the stated purpose is to obtain it without translation invariance, and the paper suggests the same procedure for the momentum and the angular momentum.
+M. Tanişli's *Gauge transformation and electromagnetism with biquaternions* (*Europhysics Letters* **74** (2006) 569–573) writes the source-free Maxwell equations as the single biquaternion equation $\nabla F=0$, gives them a first-order Lagrangian density $L=F^*\cdot\nabla F$, and derives the local energy conservation law from what the paper calls a **biquaternionic gauge transformation of the first kind**, $F\to((1+\alpha)e_t F)$, with $\alpha$ an infinitesimal function of $x$ and $t$. The stated result is the Poynting theorem; the stated purpose is to obtain it without translation invariance, and the paper suggests the same procedure for the momentum and the angular momentum.
 
 The paper belongs to the tradition this corpus is built on, and its algebra is the corpus's algebra. The article records it as an external source. Its final result is correct and standard, and its route is its own; but three things about the route do not survive the corpus's conventions, and they are the reason the article exists rather than a footnote. First, the transformation is the corpus's **duality rotation**, so the physics it uses is already in the corpus, under another name. Second, the naming is reversed against Weyl's: a transformation whose parameter is an arbitrary function of the coordinates is a symmetry **of the second kind**, and the second kind produces a differential identity rather than a conservation law, which is the content of Noether's second theorem. Third, the transformation is *local*, and a genuinely local transformation of the source-free field is not a symmetry at all: a position-dependent phase of the field changes the equation it is supposed to leave invariant.
 
@@ -17,16 +17,16 @@ The algebra as printed also carries internal inconsistencies, three of which are
 The source works with the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, an eight-dimensional complex quaternion algebra written
 
 $$
-Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3 = (a_0+ib_0)e_0 + \dots + (a_3+ib_3)e_3 ,
+Q = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z = (a_0+ib_0)e_t + \dots + (a_3+ib_3)\vec e_z ,
 $$
 
 with real $a_k,b_k$, the scalar imaginary $i^2=-1$, and quaternion units of square $-1$ satisfying
 
 $$
-e_ie_j = -\delta_{ij}e_0 + \epsilon_{ijk}e_k ,
+\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda ,
 $$
 
-the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$ and $Q^* = Q_0^*e_0+\dots+Q_3^*e_3$, and the norm is $\langle Q\rangle_{\natural}=\bar QQ=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Realification and the Effect of the Change of Scalars*.
+the standard Hamilton rule. The quaternion conjugate and the complex conjugate are $\bar Q = Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$ and $Q^* = Q_t^*e_t+\dots+Q_z^*\vec e_z$, and the norm is $\langle Q\rangle_{\natural}=\bar QQ=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, which may vanish, so the algebra is not a division algebra. These are the corpus's objects; the algebra and its conjugations are fixed in *Conventions in the Biquaternion Universe*, and the two conjugate pairs $\bar\cdot$ and $\bar{\cdot}$ with their fixed subspaces are fixed in *The Realification and the Effect of the Change of Scalars*.
 
 ### Maxwell's equations and the biquaternionic form
 
@@ -41,7 +41,7 @@ $$
 and the electromagnetic bivector
 
 $$
-F = E_xe_1+E_ye_2+E_ze_3 + i\bigl(B_xe_1+B_ye_2+B_ze_3\bigr) ,
+F = E_x\vec e_x+E_y\vec e_y+E_z\vec e_z + i\bigl(B_x\vec e_x+B_y\vec e_y+B_z\vec e_z\bigr) ,
 $$
 
 so that the four equations become the single biquaternion equation
@@ -49,7 +49,7 @@ so that the four equations become the single biquaternion equation
 $$
 \nabla F = 0 ,
 \qquad
-\nabla = i\frac{\partial}{\partial t}e_0 + \frac{\partial}{\partial x}e_1 + \frac{\partial}{\partial y}e_2 + \frac{\partial}{\partial z}e_3 .
+\nabla = i\frac{\partial}{\partial t}e_t + \frac{\partial}{\partial x}\vec e_x + \frac{\partial}{\partial y}\vec e_y + \frac{\partial}{\partial z}\vec e_z .
 $$
 
 The Lagrangian density is $L=F^*\cdot\nabla F$ and the variational principle is $\delta A = \delta\int dt\int dx\,L=0$, with $F$ and $F^*$ treated as independent variables.
@@ -59,10 +59,10 @@ The Lagrangian density is $L=F^*\cdot\nabla F$ and the variational principle is 
 The transformation is
 
 $$
-F \longrightarrow F' = (1+\alpha)e_0F ,
+F \longrightarrow F' = (1+\alpha)e_tF ,
 $$
 
-with $\alpha$ an arbitrary infinitesimal function of $x$ and $t$, named in the paper *a biquaternionic gauge transformation of the first kind* and identified with $(\exp(i\alpha)F)$ to first order. Substituting into $L$ gives $\delta L = F^*\cdot(\nabla(\alpha e_0F))$, which the paper expands as
+with $\alpha$ an arbitrary infinitesimal function of $x$ and $t$, named in the paper *a biquaternionic gauge transformation of the first kind* and identified with $(\exp(i\alpha)F)$ to first order. Substituting into $L$ gives $\delta L = F^*\cdot(\nabla(\alpha e_tF))$, which the paper expands as
 
 $$
 \delta L = F^*\cdot(\nabla\alpha)F + \alpha\,(\nabla F) ,
@@ -77,7 +77,7 @@ $$
 which the paper calls the conservation of energy for the electromagnetic field. Expanding the left side using the two curl equations gives
 
 $$
-\partial_t u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
+\partial/\partial t u + \mathrm{div}\,(\vec E\times\vec B) = 0 ,
 \qquad
 u = \tfrac12\bigl(E_x^2+E_y^2+E_z^2+B_x^2+B_y^2+B_z^2\bigr),
 $$
@@ -111,7 +111,7 @@ $$
 and $\vec E^2+c^2\vec B^2$ is unchanged, as it must be since it is the length of $\vec N$.
 
 **A remark on $(1+\alpha)$.**
-The transformation is written $(1+\alpha)e_0F$, which to first order is $\exp(\alpha)F$, and the paper identifies this with $\exp(i\alpha)F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\vec E\to(1+\alpha)\vec E$, $\vec B\to(1+\alpha)\vec B$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary interpretation is the one that makes the paper's own identification correct.
+The transformation is written $(1+\alpha)e_tF$, which to first order is $\exp(\alpha)F$, and the paper identifies this with $\exp(i\alpha)F$. The two agree only when $\alpha$ is purely imaginary. A real infinitesimal $\alpha$ produces the common scaling $\vec E\to(1+\alpha)\vec E$, $\vec B\to(1+\alpha)\vec B$, which is also a symmetry of the source-free equations — the equations are linear and homogeneous — but which is a dilation rather than a duality rotation. The corpus's duality rotation requires the parameter that multiplies $F$ to be a phase, so the imaginary interpretation is the one that makes the paper's own identification correct.
 
 ## The Two Kinds
 
@@ -130,17 +130,17 @@ The consequence for the source's argument is direct. The paper's transformation 
 
 There is a sharper objection than the naming, and it can be checked directly: with $\alpha$ varying, the transformation does not preserve the equation it is applied to.
 
-In the corpus's variables the source-free equations are $i\partial_t\vec N=c\,\mathrm{rot}\,\vec N$ and $\mathrm{div}\,\vec N=0$, with $\vec N=\vec E+ic\vec B$. Under $\vec N\mapsto \exp(i\alpha)\vec N$ with $\alpha$ a function of the coordinates, the two sides acquire the extra contributions
+In the corpus's variables the source-free equations are $i\partial/\partial t\,\vec N=c\,\mathrm{rot}\,\vec N$ and $\mathrm{div}\,\vec N=0$, with $\vec N=\vec E+ic\vec B$. Under $\vec N\mapsto \exp(i\alpha)\vec N$ with $\alpha$ a function of the coordinates, the two sides acquire the extra contributions
 
 $$
-i\partial_t\bigl(\exp(i\alpha)\vec N\bigr) = \exp(i\alpha)\bigl(i\partial_t\vec N - (\partial_t\alpha)\vec N\bigr),
+i\partial/\partial t\bigl(\exp(i\alpha)\vec N\bigr) = \exp(i\alpha)\bigl(i\partial/\partial t\,\vec N - (\partial/\partial t\,\alpha)\vec N\bigr),
 \qquad
 c\,\mathrm{rot}\bigl(\exp(i\alpha)\vec N\bigr) = \exp(i\alpha)\bigl(c\,\mathrm{rot}\,\vec N + ic\,(\nabla\alpha)\times\vec N\bigr),
 $$
 
-so the equation is preserved only when $-(\partial_t\alpha)\vec N = ic\,(\nabla\alpha)\times\vec N$, which is not an identity. For constant $\alpha$ every derivative of $\alpha$ vanishes and the equation is preserved, which is the rigid duality rotation; for a position-dependent $\alpha$ it is not.
+so the equation is preserved only when $-(\partial/\partial t\,\alpha)\vec N = ic\,(\nabla\alpha)\times\vec N$, which is not an identity. For constant $\alpha$ every derivative of $\alpha$ vanishes and the equation is preserved, which is the rigid duality rotation; for a position-dependent $\alpha$ it is not.
 
-**Check.** On a free plane wave with $\vec k\cdot\vec E_0=0$, $\vec B_0 = \vec k\times\vec E_0/\omega$, the residual $|i\partial_t\vec N-c\,\mathrm{rot}\,\vec N|$ is $5.6\times10^{-12}$ at constant phase, which is the finite-difference floor, and $2.4\times10^{-1}$ at the local phase $\alpha = 0.5x-0.3z$, against a field scale of $5.1\times10^{-1}$. The local residual is half the field magnitude: the local transformation is not a symmetry.
+**Check.** On a free plane wave with $\vec k\cdot\vec E_0=0$, $\vec B_0 = \vec k\times\vec E_0/\omega$, the residual $|i\partial/\partial t\,\vec N-c\,\mathrm{rot}\,\vec N|$ is $5.6\times10^{-12}$ at constant phase, which is the finite-difference floor, and $2.4\times10^{-1}$ at the local phase $\alpha = 0.5x-0.3z$, against a field scale of $5.1\times10^{-1}$. The local residual is half the field magnitude: the local transformation is not a symmetry.
 
 The source uses an infinitesimal $\alpha$, and the objection is not removed by the smallness. The extra terms are first order in the derivatives of $\alpha$, not in $\alpha$ itself, so they do not vanish in the infinitesimal limit; the source's derivation uses the field equation $\nabla F=0$ to discard one term of $\delta L$, and the remaining term, $F^*\cdot(\nabla\alpha)F$, is not a divergence that can be dropped.
 
@@ -148,11 +148,11 @@ The source uses an infinitesimal $\alpha$, and the objection is not removed by t
 
 Put in the corpus's conventions, the construction is the following, and it is worth separating what it proves from what it claims.
 
-**The Lagrangian is not a real action.** $L=F^*\cdot\nabla F$ is complex-valued, and it is linear in $F^*$ and in the derivatives of $F$. Varying $F^*$ gives the field equation $\nabla F=0$ algebraically, because $F^*$ appears without derivatives; varying $F$ gives a condition on the derivatives of $F^*$, of the form $\partial_\mu F^*=0$, which is not the conjugate field equation $\nabla F^*=0$. So $\delta A=0$ with independent $F$ and $F^*$ is the statement that the coefficient of $\delta F^*$ vanishes, and it reproduces the field equation. The corpus's *Canonical Quantization of the Biquaternion Maxwell Field* has already recorded the general fact that governs this: no local Lagrangian in four dimensions has the first-order Maxwell system as its Euler–Lagrange equation when the field strength $\tilde F$ is the only field, because a polynomial invariant built from $\tilde F$ alone has an algebraic variation and a Lagrangian built from its derivatives gives a higher-derivative equation. The source's $L$ evades the statement only by depending on the second, independent variable $F^*$ and by being complex. It is therefore a variational *description* of the first-order system, not a real action whose stationarity is the dynamics.
+**The Lagrangian is not a real action.** $L=F^*\cdot\nabla F$ is complex-valued, and it is linear in $F^*$ and in the derivatives of $F$. Varying $F^*$ gives the field equation $\nabla F=0$ algebraically, because $F^*$ appears without derivatives; varying $F$ gives a condition on the derivatives of $F^*$, of the form $\partial/\partial Q_\mu F^*=0$, which is not the conjugate field equation $\nabla F^*=0$. So $\delta A=0$ with independent $F$ and $F^*$ is the statement that the coefficient of $\delta F^*$ vanishes, and it reproduces the field equation. The corpus's *Canonical Quantization of the Biquaternion Maxwell Field* has already recorded the general fact that governs this: no local Lagrangian in four dimensions has the first-order Maxwell system as its Euler–Lagrange equation when the field strength $\tilde F$ is the only field, because a polynomial invariant built from $\tilde F$ alone has an algebraic variation and a Lagrangian built from its derivatives gives a higher-derivative equation. The source's $L$ evades the statement only by depending on the second, independent variable $F^*$ and by being complex. It is therefore a variational *description* of the first-order system, not a real action whose stationarity is the dynamics.
 
 **The conservation law is a consequence of the field equation.** The scalar $F^*\cdot(\nabla F)=0$ is an immediate consequence of the field equation $\nabla F=0$: it is the field equation contracted with the conjugate field, a complex scalar condition, weaker in content than the biquaternion equation it comes from. The passage from the vanishing of the variation for arbitrary $\alpha$ to this equation is stated in the paper but not derived in detail, and what the paper then does with $F^*\cdot(\nabla F)=0$ is to expand it using the two curl equations; the expansion is the Poynting identity. So the conservation law obtained is the standard consequence of Maxwell's equations, evaluated on their solutions; it is not a statement independent of them.
 
-**The corpus's own route to the same law is translation invariance.** The energy conservation law is the real part of the biquaternion balance that the corpus derives from Noether's first theorem with translation symmetry: the Hermitian object $\tilde{\mathcal W}=\tfrac12\tilde F\tilde F^{*} = W e_0 + \tfrac{i}{c}\vec S$ satisfies $\tilde\nabla\tilde{\mathcal W}=-\tilde P$, whose scalar part is the Poynting theorem with the work term. This is the route the source's conclusion sets aside, and it is the route that does the job: the conservation law comes from a symmetry of the first kind, which is the only kind that yields one. The corpus's *Exercise: The Electromagnetic Energy–Momentum Tensor* works the object out in full and shows that the naive real four-component form $W+\tfrac{1}{c}\vec S$ fails while the Hermitian form succeeds.
+**The corpus's own route to the same law is translation invariance.** The energy conservation law is the real part of the biquaternion balance that the corpus derives from Noether's first theorem with translation symmetry: the Hermitian object $\tilde{\mathcal W}=\tfrac12\tilde F\tilde F^{*} = W e_t + \tfrac{i}{c}\vec S$ satisfies $\tilde\nabla\tilde{\mathcal W}=-\tilde P$, whose scalar part is the Poynting theorem with the work term. This is the route the source's conclusion sets aside, and it is the route that does the job: the conservation law comes from a symmetry of the first kind, which is the only kind that yields one. The corpus's *Exercise: The Electromagnetic Energy–Momentum Tensor* works the object out in full and shows that the naive real four-component form $W+\tfrac{1}{c}\vec S$ fails while the Hermitian form succeeds.
 
 **What is worth keeping.** Two things. The naming issue is a real service: the phrase "gauge transformation of the first kind" for a transformation whose parameter is a function of position is the inversion the corpus's new article on the two theorems is written to prevent. And the observation that the energy law can be written as a contraction of the field equation with the conjugate field is compact, and it is true; the corpus records it here as a remark carried by the biquaternion form, with the origin of the law attributed to the first theorem rather than to the transformation.
 
@@ -160,11 +160,11 @@ Put in the corpus's conventions, the construction is the following, and it is wo
 
 Three points of the printed algebra are internally inconsistent, and each is reproduced by recomputation against the paper's own rules. They are listed because the corpus records printed defects, not because the paper's final result depends on them; the final result is correct. The interpretation is from the scanned article as extracted, and isolated signs are the least reliable part of such an extraction.
 
-**The product rule against the basis rule.** The basis rule $e_ie_j=-\delta_{ij}e_0+\epsilon_{ijk}e_k$ gives $e_1e_2 = \epsilon_{123}e_3 = e_3$. The printed product rule is $PQ = P_0Q_0 - \vec P\cdot\vec Q + P_0Q + PQ_0 + iP\times Q$, which for $P=e_1$, $Q=e_2$ gives $ie_1\timese_2 = ie_3$ instead. The two rules differ by the factor $i$ on the cross term, and they cannot both hold. The recomputation gives $|e_3 - e_1e_2| = 0$ from the basis rule and $|ie_3 - e_1e_2| = \sqrt2$ from the product rule. The corpus uses the basis rule, which is the standard one.
+**The product rule against the basis rule.** The basis rule $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\epsilon_{\mu\nu\lambda}\vec e_\lambda$ gives $\vec e_x \vec e_y = \epsilon_{123}\vec e_z = \vec e_z$. The printed product rule is $PQ = P_0Q_t - \vec P\cdot\vec Q + P_0Q + PQ_0 + iP\times Q$, which for $P=\vec e_x$, $Q=\vec e_y$ gives $i\vec e_x\times\vec e_y = i\vec e_z$ instead. The two rules differ by the factor $i$ on the cross term, and they cannot both hold. The recomputation gives $|\vec e_z - \vec e_x \vec e_y| = 0$ from the basis rule and $|i\vec e_z - \vec e_x \vec e_y| = \sqrt2$ from the product rule. The corpus uses the basis rule, which is the standard one.
 
-**The sign of the imaginary part of the field.** With the printed gradient $\nabla = i\partial_te_0+\partial_xe_1+\partial_ye_2+\partial_ze_3$, the equation $\nabla F=0$ gives, on a free plane wave, $|\nabla F| = 9.4\times10^{-1}$ for the printed $F=\vec E+i\vec B$ against a field scale of $4.8\times10^{-1}$, and $3.3\times10^{-10}$ for $F=\vec E-i\vec B$. The consistent object is therefore $\vec E-i\vec B$, or equivalently the printed $\vec E+i\vec B$ with the conjugate placement of the $i$, $\nabla=\partial_te_0+i\nabla_3$, which also gives $3.3\times10^{-10}$. The paper's $\vec E+i\vec B$ with its printed $\nabla$ reproduces the two divergence equations but gives $\partial_t\vec E=-\mathrm{rot}\,\vec B$ and $\partial_t\vec B=+\mathrm{rot}\,\vec E$ in place of the paper's own curl equations; both signs are reversed. The corpus's own field is $\vec N=\vec E+ic\vec B$ with $\nabla$ in the $ict$ convention, for which the free equation is $i\partial_t\vec N=c\,\mathrm{rot}\,\vec N$, and the two conventions are related by the $\pm i$ that the check exhibits.
+**The sign of the imaginary part of the field.** With the printed gradient $\nabla = i\partial/\partial t\,e_t+\partial/\partial Q_x\,\vec e_x+\partial/\partial Q_y\,\vec e_y+\partial/\partial Q_z\,\vec e_z$, the equation $\nabla F=0$ gives, on a free plane wave, $|\nabla F| = 9.4\times10^{-1}$ for the printed $F=\vec E+i\vec B$ against a field scale of $4.8\times10^{-1}$, and $3.3\times10^{-10}$ for $F=\vec E-i\vec B$. The consistent object is therefore $\vec E-i\vec B$, or equivalently the printed $\vec E+i\vec B$ with the conjugate placement of the $i$, $\nabla=\partial/\partial t\,e_t+i\nabla_3$, which also gives $3.3\times10^{-10}$. The paper's $\vec E+i\vec B$ with its printed $\nabla$ reproduces the two divergence equations but gives $\partial/\partial t\,\vec E=-\mathrm{rot}\,\vec B$ and $\partial/\partial t\,\vec B=+\mathrm{rot}\,\vec E$ in place of the paper's own curl equations; both signs are reversed. The corpus's own field is $\vec N=\vec E+ic\vec B$ with $\nabla$ in the $ict$ convention, for which the free equation is $i\partial/\partial t\,\vec N=c\,\mathrm{rot}\,\vec N$, and the two conventions are related by the $\pm i$ that the check exhibits.
 
-**The sign of the expansion.** The second block of the printed expansion of $F^*\cdot(\nabla F)=0$ is $\vec E\cdot\mathrm{rot}\,\vec B-\vec B\cdot\mathrm{rot}\,\vec E$, which is $-\mathrm{div}\,(\vec E\times\vec B)$ by the identity $\mathrm{div}\,(\vec A\times\vec B)=\vec B\cdot\mathrm{rot}\,\vec A-\vec A\cdot\mathrm{rot}\,\vec B$. With the first block equal to $\partial_t u$, the printed expansion is $\partial_t u-\mathrm{div}\,(\vec E\times\vec B)=0$, while the stated conclusion is $\partial_t u+\mathrm{div}\,(\vec E\times\vec B)=0$. On random smooth fields the printed second block satisfies $|\text{block}+\mathrm{div}\,\vec S|=0$ and $|\text{block}-\mathrm{div}\,\vec S|=1.9\times10^{0}$ against $|\mathrm{div}\,\vec S|=9.7\times10^{-1}$, confirming the sign. One of the two — the second block or the stated conclusion — carries the opposite sign from the other; the conclusion as stated is the correct Poynting theorem, so the sign belongs to the printed expansion.
+**The sign of the expansion.** The second block of the printed expansion of $F^*\cdot(\nabla F)=0$ is $\vec E\cdot\mathrm{rot}\,\vec B-\vec B\cdot\mathrm{rot}\,\vec E$, which is $-\mathrm{div}\,(\vec E\times\vec B)$ by the identity $\mathrm{div}\,(\vec A\times\vec B)=\vec B\cdot\mathrm{rot}\,\vec A-\vec A\cdot\mathrm{rot}\,\vec B$. With the first block equal to $\partial/\partial t u$, the printed expansion is $\partial/\partial t u-\mathrm{div}\,(\vec E\times\vec B)=0$, while the stated conclusion is $\partial/\partial t u+\mathrm{div}\,(\vec E\times\vec B)=0$. On random smooth fields the printed second block satisfies $|\text{block}+\mathrm{div}\,\vec S|=0$ and $|\text{block}-\mathrm{div}\,\vec S|=1.9\times10^{0}$ against $|\mathrm{div}\,\vec S|=9.7\times10^{-1}$, confirming the sign. One of the two — the second block or the stated conclusion — carries the opposite sign from the other; the conclusion as stated is the correct Poynting theorem, so the sign belongs to the printed expansion.
 
 ## Open Questions
 
@@ -174,14 +174,14 @@ Three points of the printed algebra are internally inconsistent, and each is rep
 
 ## Summary
 
-Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ with $F=\vec E+i\vec B$, gives the first-order density $L=F^*\cdot\nabla F$, and derives the Poynting theorem from the local transformation $F\to(1+\alpha)F$ with $\alpha$ a function of $x$ and $t$. The transformation is the corpus's duality rotation: $F$ is the Riemann–Silberstein vector in dimensionless units, and $\exp(i\alpha)F$ rotates $\vec E$ and $\vec B$ into one another, leaving $\vec E^2+\vec B^2$ invariant and rotating the pair $(I_1,2cI_2)$ by $2\alpha$, checked to $8.9\times10^{-16}$. The naming is reversed against Weyl: a transformation depending on an arbitrary function is of the **second kind**, and the second kind yields a differential identity rather than a conservation law, which is the content of Noether's second theorem and the subject of *Noether's Two Theorems*. The transformation is also not a symmetry for position-dependent $\alpha$: the equation $i\partial_t\vec N=c\,\mathrm{rot}\,\vec N$ acquires the extra terms $-(\partial_t\alpha)\vec N$ and $ic\,(\nabla\alpha)\times\vec N$, which do not cancel, and the residual grows from the finite-difference floor to half the field magnitude. The paper's "$F^*\cdot(\nabla F)=0$" is a contraction of the field equation, and its expansion using the curl equations is the Poynting identity — the standard consequence of the field equations, whose origin in the corpus is translation invariance by Noether's first theorem. Three internal inconsistencies of the printed algebra are recorded: the product rule against the basis rule, the sign of the imaginary part of $F$, and the sign of the second block of the expansion.
+Tanişli's EPL paper writes the source-free Maxwell equations as $\nabla F=0$ with $F=\vec E+i\vec B$, gives the first-order density $L=F^*\cdot\nabla F$, and derives the Poynting theorem from the local transformation $F\to(1+\alpha)F$ with $\alpha$ a function of $x$ and $t$. The transformation is the corpus's duality rotation: $F$ is the Riemann–Silberstein vector in dimensionless units, and $\exp(i\alpha)F$ rotates $\vec E$ and $\vec B$ into one another, leaving $\vec E^2+\vec B^2$ invariant and rotating the pair $(I_1,2cI_2)$ by $2\alpha$, checked to $8.9\times10^{-16}$. The naming is reversed against Weyl: a transformation depending on an arbitrary function is of the **second kind**, and the second kind yields a differential identity rather than a conservation law, which is the content of Noether's second theorem and the subject of *Noether's Two Theorems*. The transformation is also not a symmetry for position-dependent $\alpha$: the equation $i\partial/\partial t\,\vec N=c\,\mathrm{rot}\,\vec N$ acquires the extra terms $-(\partial/\partial t\,\alpha)\vec N$ and $ic\,(\nabla\alpha)\times\vec N$, which do not cancel, and the residual grows from the finite-difference floor to half the field magnitude. The paper's "$F^*\cdot(\nabla F)=0$" is a contraction of the field equation, and its expansion using the curl equations is the Poynting identity — the standard consequence of the field equations, whose origin in the corpus is translation invariance by Noether's first theorem. Three internal inconsistencies of the printed algebra are recorded: the product rule against the basis rule, the sign of the imaginary part of $F$, and the sign of the second block of the expansion.
 
 ## Summary of Notation
 
 | Symbol | Source | Corpus |
 |---|---|---|
 | $F$ | Electromagnetic bivector $\vec E+i\vec B$ | Riemann–Silberstein $\vec N=\vec E+ic\vec B$ at $c=1$; $\tilde F = i\sqrt\epsilon\,\vec N$ |
-| $\nabla$ | Biquaternion gradient $i\partial_te_0+\partial_xe_1+\partial_ye_2+\partial_ze_3$ | $\tilde\nabla = e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ |
+| $\nabla$ | Biquaternion gradient $i\partial/\partial t\,e_t+\partial/\partial Q_x\,\vec e_x+\partial/\partial Q_y\,\vec e_y+\partial/\partial Q_z\,\vec e_z$ | $\tilde\nabla = e_t\partial/\partial Q_t+\vec e_x\partial/\partial Q_x+\vec e_y\partial/\partial Q_y+\vec e_z\partial/\partial Q_z$ |
 | $\nabla F=0$ | Source-free Maxwell equations | $\tilde\nabla\tilde F=0$, the homogeneous pair |
 | $L=F^*\cdot\nabla F$ | First-order density | No direct equivalent; no real local Lagrangian gives the first-order system |
 | $c$ | Set to $1$ | $c=1/\sqrt{\epsilon\mu}$ |

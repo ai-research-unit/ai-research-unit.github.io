@@ -15,13 +15,13 @@ The article is organised as follows. The next section sets up the naive discreti
 In Euclidean spacetime the free continuum Dirac action is
 
 $$
-S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial_\mu + m\right)\psi(x).
+S_F[\psi,\bar\psi] = \int d^4x\;\bar\psi(x)\left(\gamma^\mu\partial/\partial Q_\mu + m\right)\psi(x).
 $$
 
 Introduce a lattice of spacing $a$ whose sites are indexed by integer vectors $n = (n_1,n_2,n_3,n_4)$; the fields become Grassmann variables $\psi_n$, $\bar\psi_n$ at each site, and the derivative is replaced by the **symmetric difference**
 
 $$
-\partial_\mu\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
+\partial/\partial Q_\mu\,\psi \;\longrightarrow\; \frac{\psi_{n+\vec u} - \psi_{n-\vec u}}{2a}.
 $$
 
 The naive action is then
@@ -68,7 +68,7 @@ $$
 S_0 = I,\quad S_\nu = i\gamma_5\gamma_\nu ,
 $$
 
-with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transforming shows that this shifts the momentum by $\pi_A$ and flips the signs of a subset of the gamma matrices, $(\gamma_1,\gamma_2,\gamma_3,\gamma_4)\to(\pm\gamma_1,\pm\gamma_2,\pm\gamma_3,\pm\gamma_4)$, which is still a representation of the Dirac algebra. The transformation therefore exchanges the tastes; since it is a symmetry of the action, the tastes are physically indistinguishable. In an interacting theory they cannot even be ignored, because momentum is conserved only modulo $2\pi/a$: two $\pi_0$-taste fermions can scatter through a highly virtual gauge boson into two $\pi_1$-taste fermions.
+with $S_A$ the product of the $S_\nu$ over the indices in $A$. Fourier transforming shows that this shifts the momentum by $\pi_A$ and flips the signs of a subset of the gamma matrices, $(\gamma_1,\gamma_2,\gamma_3,\gamma_4)\to(\pm\gamma_1,\pm\gamma_2,\pm\gamma_3,\pm\gamma_4)$, which is still a representation of the Dirac algebra. The transformation therefore exchanges the tastes; since it is a symmetry of the action, the tastes are physically indistinguishable. In an interacting theory they cannot even be ignored, because momentum is conserved only modulo $2\pi/a$: two $\pi_t$-taste fermions can scatter through a highly virtual gauge boson into two $\pi_x$-taste fermions.
 
 ## The Nielsen–Ninomiya Theorem
 
@@ -106,7 +106,7 @@ The theorems that survive all of this are the ones with experimental consequence
 
 ### Discretizing the biquaternion gradient
 
-The framework's gradient is $\tilde\nabla = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial_\mu$ is $i\sin(p^\mu a)/a$ in each direction, and the biquaternion gradient acquires the symbol
+The framework's gradient is $\tilde\nabla = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. A lattice discretization replaces each partial derivative by a difference operator. If the symmetric difference is used, the Fourier symbol of $\partial/\partial Q_\mu$ is $i\sin(p^\mu a)/a$ in each direction, and the biquaternion gradient acquires the symbol
 
 $$
 \tilde\nabla \;\longrightarrow\; e_\mu\,\frac{i\sin(p^\mu a)}{a},

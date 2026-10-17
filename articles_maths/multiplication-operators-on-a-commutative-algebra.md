@@ -80,7 +80,7 @@ $$
 
 **Corollary.** The $R$-linear map $\operatorname{Der}_R(A) \to L(A)$, $\delta \mapsto L_{\delta(a)}$ for a fixed $a$, is the restriction of the adjoint action of $\operatorname{Der}_R(A)$ on the operator algebra; on the whole of $L(A)$ the derivation acts by $L_b \mapsto L_{\delta(b)}$, and this is the derivation of the commutative algebra $L(A) \cong A$ carried across the isomorphism. In particular the derivation space depends only on the algebra structure of $A$, as it must.
 
-**Example.** For $A = R[x]$ the derivations form the free module $R[x]\partial_x$ of rank one, and $[\partial_x, L_f] = L_{f'}$ where $f' = \partial_x f$ is the formal derivative. The operator identity $[\partial_x, L_f] = L_{f'}$ is the operator form of the product rule.
+**Example.** For $A = R[x]$ the derivations form the free module $R[x]\partial/\partial x$ of rank one, and $[\partial/\partial x, L_f] = L_{f'}$ where $f' = \partial/\partial x f$ is the formal derivative. The operator identity $[\partial/\partial x, L_f] = L_{f'}$ is the operator form of the product rule.
 
 ## Characters and the Gelfand Transform
 

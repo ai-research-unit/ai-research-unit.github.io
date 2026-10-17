@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The two preceding articles expand the field of a localised source in an infinite series of multipole moments, and follow the same series through the vibrating and rotating ellipsoid. The tower is genuinely infinite: a generic source has moments $q_{lm}$ for every order $l = 0, 1, 2, \dots$, each order carrying $2l+1$ independent components, and a generic vibrating body has a normal mode for every $l$ as well. The biquaternion algebra, by contrast, is finite-dimensional: four complex dimensions, eight real dimensions, spanned by the basis $e_0, e_1, e_2, e_3$. The question this article addresses is how a finite algebra can host an infinite tower.
+The two preceding articles expand the field of a localised source in an infinite series of multipole moments, and follow the same series through the vibrating and rotating ellipsoid. The tower is genuinely infinite: a generic source has moments $q_{lm}$ for every order $l = 0, 1, 2, \dots$, each order carrying $2l+1$ independent components, and a generic vibrating body has a normal mode for every $l$ as well. The biquaternion algebra, by contrast, is finite-dimensional: four complex dimensions, eight real dimensions, spanned by the basis $e_t, \vec e_x, \vec e_y, \vec e_z$. The question this article addresses is how a finite algebra can host an infinite tower.
 
 The question is worth taking seriously, because it is easy to ask it in a form that has no answer. If one expects the multipole moments to be *elements a field can take* — values of the algebra at each point — then an infinite tower cannot sit inside a four-dimensional algebra, and one might look for a larger algebra, or suspect an inconsistency. The resolution is that the tower is not a tower of algebra elements at all. The multipole order $l$ is a label of the angular structure of a **function** on the sphere; the tower is the decomposition of the infinite-dimensional function space into irreducible representations of the rotation group. The biquaternion algebra is the **value space** — the algebra in which the field takes its values at a point — and it is finite because it is the value algebra of a two-state, four-vector structure. Two different mathematical objects, of two different dimensions, are doing two different jobs, and there is no contradiction between them.
 
@@ -17,7 +17,7 @@ The article is structural and classical, and it stays inside the non-relativisti
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series and the quadrupole as a symmetric traceless tensor.
 - Companion article *The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form*, for the oscillating tower of a deformed body.
 
-The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and central scalar imaginary $i$, $i^2 = -1$; the vector part is $\vec v = v_1e_1 + v_2e_2 + v_3e_3$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the rotation generators are built from $e_1, e_2, e_3$; and $D^{(l)}$ denotes the irreducible complex representation of the rotation group of dimension $2l+1$, in the convention in which the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and central scalar imaginary $i$, $i^2 = -1$; the vector part is $\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z$; the material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$; the rotation generators are built from $\vec e_x, \vec e_y, \vec e_z$; and $D^{(l)}$ denotes the irreducible complex representation of the rotation group of dimension $2l+1$, in the convention in which the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Two Facts
 
@@ -26,11 +26,11 @@ The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis 
 Every element of $\mathbb{B}$ is a unique complex linear combination of the four basis elements,
 
 $$
-\tilde{Q} = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3 ,
-\qquad Q_0, Q_1, Q_2, Q_3 \in \mathbb{C} ,
+\tilde{Q} = Q_te_t + Q_x\vec e_x + Q_y\vec e_y + Q_z\vec e_z ,
+\qquad Q_t, Q_x, Q_y, Q_z \in \mathbb{C} ,
 $$
 
-so $\dim_{\mathbb{C}}\mathbb{B} = 4$ and $\dim_{\mathbb{R}}\mathbb{B} = 8$. The algebra closes on itself: the product of two basis elements is again a basis element up to signs, and the product of two general elements is again a four-component object. Equivalently, with $e_k\mapsto -i\sigma_k$ and $e_0\mapsto I_2$, the algebra is the matrix algebra
+so $\dim_{\mathbb{C}}\mathbb{B} = 4$ and $\dim_{\mathbb{R}}\mathbb{B} = 8$. The algebra closes on itself: the product of two basis elements is again a basis element up to signs, and the product of two general elements is again a four-component object. Equivalently, with $\vec e_k\mapsto -i\sigma_k$ and $e_t\mapsto I_2$, the algebra is the matrix algebra
 
 $$
 \mathbb{B} \cong M_2(\mathbb{C}) ,
@@ -38,7 +38,7 @@ $$
 
 whose dimension is four. Every algebraic fact below is a fact about a four-dimensional complex algebra.
 
-The finiteness is not an accident of the basis. An algebra that contains the unit and is generated by three elements $e_1, e_2, e_3$ with the quaternion relations is four-dimensional because those relations exhaust the algebra: any word in the generators reduces, using $e_ie_j = -\delta_{ij}e_0 + \epsilon_{ijk}e_k$, to a linear combination of $e_0, e_1, e_2, e_3$. There is no room for a fifth independent element.
+The finiteness is not an accident of the basis. An algebra that contains the unit and is generated by three elements $\vec e_x, \vec e_y, \vec e_z$ with the quaternion relations is four-dimensional because those relations exhaust the algebra: any word in the generators reduces, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$, to a linear combination of $e_t, \vec e_x, \vec e_y, \vec e_z$. There is no room for a fifth independent element.
 
 ### The Tower Is Infinite
 
@@ -72,7 +72,7 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_1e_1+Q_2e_2+Q_3e_3\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ with $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$ a real unit quaternion. Under this action the centre $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
 
 $$
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
@@ -125,7 +125,7 @@ The three roles can be summarised in one line each: the algebra *as a value spac
 From the three roles above, the product of two elements of $\mathbb{B}$ stays in $\mathbb{B}$ — that is what it means to be an algebra — and, restricted to the traceless part, it maps $D^{(1)}\otimes D^{(1)}$ onto $D^{(0)}\oplus D^{(1)}$. The truncation is visible in the symmetrization identities for pure vectors $\vec q, \vec v$:
 
 $$
-\tfrac12\left(\vec q\vec v + \vec v\vec q\right) = -(\vec q\cdot\vec v)\,e_0 \in D^{(0)} ,
+\tfrac12\left(\vec q\vec v + \vec v\vec q\right) = -(\vec q\cdot\vec v)\,e_t \in D^{(0)} ,
 \qquad
 \tfrac12\left(\vec q\vec v - \vec v\vec q\right) = \vec q\times\vec v \in D^{(1)} .
 $$
@@ -134,13 +134,13 @@ The symmetric traceless part of $\vec q\otimes\vec v$, the $D^{(2)}$ channel, is
 
 ### The Gradient
 
-The same truncation appears at the level of derivatives, and it is the form in which the multipole expansion actually meets the algebra. The spatial vector gradient is $\vec\nabla = e_1\partial_x + e_2\partial_y + e_3\partial_z$, and its square is
+The same truncation appears at the level of derivatives, and it is the form in which the multipole expansion actually meets the algebra. The spatial vector gradient is $\vec\nabla = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, and its square is
 
 $$
-\vec\nabla\,\vec\nabla = \sum_{i,j}e_ie_j\,\partial_i\partial_j = -\Delta\,e_0 ,
+\vec\nabla\,\vec\nabla = \sum_{\mu,\nu}\vec e_\mu \vec e_\nu\,\partial^2/\partial Q_\mu\partial Q_\nu = -\Delta\,e_t ,
 $$
 
-because the antisymmetric part of the product multiplies the symmetric operator $\partial_i\partial_j$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial_i\partial_j\Phi$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{ij}e_ie_j\,H_{ij} = -\mathrm{tr}(H)e_0$ exactly. The derivative operator, like the algebra, stops at the trace.
+because the antisymmetric part of the product multiplies the symmetric operator $\partial^2/\partial Q_\mu\partial Q_\nu$ and cancels, leaving only the trace. The second gradient of any scalar potential is therefore a **purely central** element: whatever traceless symmetric structure $\partial^2/\partial Q_i\partial Q_j\Phi$ has, the product of two gradient operators discards it. This was verified on a quadratic potential with a random symmetric Hessian, for which $\sum_{\mu\nu}\vec e_\mu \vec e_\nu\,H_{\mu\nu} = -\mathrm{tr}(H)e_t$ exactly. The derivative operator, like the algebra, stops at the trace.
 
 The two facts together — the algebra's product and its gradient — say that the finite object can iterate a vector operation arbitrarily many times and still produce only $D^{(0)}\oplus D^{(1)}$ content. The multipole order cannot be raised by multiplication or by differentiation inside the algebra.
 
@@ -160,12 +160,12 @@ $$
 
 which for $l = 2$ is the $\operatorname{Sym}^2_0(D^{(1)})\cong D^{(2)}$ of the quadrupole. The tower is the collection of all these tensor powers, and the space they span is infinite-dimensional. The algebra $\mathbb{B}$ is the $l\leq1$ part of this collection; the higher powers live outside it.
 
-**(iii) The universal enveloping algebra.** The rotation generators $J_1, J_2, J_3$ (equivalently, the algebra elements $e_k$ with their commutators) generate the universal enveloping algebra $U(\mathrm{SU}(2))$, whose elements are the polynomials in the generators. By the Poincaré–Birkhoff–Witt theorem it has a basis of ordered monomials and is **infinite-dimensional**, and it carries every irreducible representation $D^{(l)}$, because each $D^{(l)}$ is generated from a highest-weight vector by repeated application of the lowering generator. The enveloping algebra is an algebra — not merely a function space — that does contain the whole tower as its finite-dimensional modules, and it is exactly the enlargement the multipole series calls for. It is infinite-dimensional, and it must be.
+**(iii) The universal enveloping algebra.** The rotation generators $J_1, J_2, J_3$ (equivalently, the algebra elements $\vec e_k$ with their commutators) generate the universal enveloping algebra $U(\mathrm{SU}(2))$, whose elements are the polynomials in the generators. By the Poincaré–Birkhoff–Witt theorem it has a basis of ordered monomials and is **infinite-dimensional**, and it carries every irreducible representation $D^{(l)}$, because each $D^{(l)}$ is generated from a highest-weight vector by repeated application of the lowering generator. The enveloping algebra is an algebra — not merely a function space — that does contain the whole tower as its finite-dimensional modules, and it is exactly the enlargement the multipole series calls for. It is infinite-dimensional, and it must be.
 
 **(iv) The differential-operator algebra.** The operators generated by $\vec\nabla$ and the coordinate multiplications, acting on functions, form an infinite-dimensional algebra; the multipole moments are linear functionals on it, obtained by integrating the source against spherical harmonics. The moments are not values of the field but integrals over the source,
 
 $$
-q_{lm} = \int \rho(\vec x')\,r'^{\,l}\,Y_l^{m*}(\theta',\phi')\,d^3x' ,
+q_{lm} = \int \rho(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)\,r'^{\,l}\,Y_l^{m*}(\theta',\phi')\,d^3x' ,
 $$
 
 and a functional of the source is not an element of the value algebra. This is the most direct reason the tower does not need to fit inside $\mathbb{B}$.
@@ -239,7 +239,7 @@ A clarification of vocabulary is worth making here. The intrinsic spin content o
 
 The obstruction met here is not isolated; it is one instance of a general feature of finite-dimensional algebras, and the companion articles record others.
 
-Inside $\mathbb{B}$ the canonical commutation relation of quantum physics, $[\tilde{Q}, \tilde{P}] = i\hbar\,e_0$, cannot be realized: taking the trace of both sides gives $0 = \mathrm{Tr}(i\hbar\,e_0) = 2i\hbar \neq 0$, a contradiction, because the trace of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
+Inside $\mathbb{B}$ the canonical commutation relation of quantum physics, $[\tilde{Q}, \tilde{P}] = i\hbar\,e_t$, cannot be realized: taking the trace of both sides gives $0 = \mathrm{Tr}(i\hbar\,e_t) = 2i\hbar \neq 0$, a contradiction, because the trace of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction and the canonical bracket.
 
 Likewise the rotation generators themselves close inside the algebra — the spin operators are algebra elements — but the *eigenstates* of those operators, the tower of angular momentum states $|l,m\rangle$, do not fit inside the algebra; they live in the modules $D^{(l)}$, of dimensions $2l+1$ growing without bound:
@@ -253,7 +253,7 @@ In every case the pattern is the same: the *generators* and the *values* are fin
 
 The multipole tower is infinite and the biquaternion algebra is finite, and there is no contradiction. The tower is the decomposition of the infinite-dimensional space of angular functions, $L^2(S^2) = \bigoplus_{l\geq0} D^{(l)}$, and it is a property of the **field**, a function of position. The algebra is the finite-dimensional **value space**, of complex dimension four, isomorphic to $M_2(\mathbb{C})$, and it is a property of each individual value of the field.
 
-As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_0$, so the composition of two derivatives also keeps only the trace.
+As a rotation module the algebra is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$: its centre is the trivial representation and its vector part is the vector representation, with weights $0, 0, \pm1$ and character $2+2\cos\theta = \chi_0+\chi_1$. It contains no weight-$\pm2$ state and hence no $D^{(2)}$. Its elements can carry the monopole and the dipole, and no higher multipole. Its product cannot create higher multipoles either, because $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$ keeps only the $D^{(0)}$ and $D^{(1)}$ channels of $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$; and its gradient satisfies $\vec\nabla\vec\nabla = -\Delta\,e_t$, so the composition of two derivatives also keeps only the trace.
 
 The tower lives in the function space, in the symmetric traceless tensor powers $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$, in the harmonic polynomials $r^lY_l^m$, in the differential-operator algebra, and in the universal enveloping algebra $U(\mathrm{SU}(2))$, all infinite-dimensional; and the multipole moments are functionals of the source, not elements of the value algebra. A general no-go statement follows by dimension counting: no finite-dimensional complex algebra on which the rotation group acts by automorphisms can contain $D^{(l)}$ for all $l$ as subquotients of its rotation module, because a finite-dimensional module has only finitely many composition factors and the $D^{(l)}$ are pairwise non-isomorphic. Enlarging the algebra buys finitely many higher orders and no more — $M_3(\mathbb{C})$ contains $D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ but costs the two-dimensional spinor module — and only an infinite-dimensional algebra carries the whole tower.
 
@@ -264,18 +264,18 @@ The finite algebra is finite because it is the local value space; the tower is i
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\dim_{\mathbb{C}} = 4$, $\cong M_2(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_ie_j = -\delta_{ij}e_0+\epsilon_{ijk}e_k$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t+\epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0e_0\}$ | Centre of $\mathbb{B}$ (the scalars) |
-| $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_0) = 2$ (the conventions article) |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
+| $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_t) = 2$ (the conventions article) |
 | $\mathbb{M}_-, \mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_0$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ |
+| $\tilde{U}\in\mathbb{H}_{\mathbb{B}}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{\natural}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |
 | $L^2(S^2) = \bigoplus_l D^{(l)}$ | Angular function space (infinite-dimensional) |
 | $\operatorname{Sym}^l_0(D^{(1)})\cong D^{(l)}$ | Symmetric traceless $l$-th power of the vector part |
 | $r^lY_l^m$ | Solid harmonics: the harmonic polynomials of degree $l$ |
 | $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ | Clebsch–Gordan decomposition |
-| $\vec\nabla\vec\nabla = -\Delta\,e_0$ | The truncated second gradient |
+| $\vec\nabla\vec\nabla = -\Delta\,e_t$ | The truncated second gradient |
 | $U(\mathrm{SU}(2))$ | Universal enveloping algebra (infinite-dimensional) |
 | $S = \mathbb{B}\epsilon$ | Minimal left ideal: the two-dimensional spinor module, $\epsilon$ a nonzero idempotent |
 | $q_{lm}$ | Multipole moment (a functional of the source) |

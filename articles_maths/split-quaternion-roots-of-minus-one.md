@@ -9,43 +9,43 @@ The split-quaternion algebra, its basis, its vector subspace $V$, its central pr
 
 ## The Equation and the Reduction to the Vector Subspace
 
-**Theorem (The Solutions).** Let $\tilde\xi = q_0 + \vec q$ with $q_0 \in \mathbb{R}$ and $\vec q \in V$. Then $\tilde\xi^2 = -1$ if and only if
+**Theorem (The Solutions).** Let $\tilde\xi = q_t + \vec q$ with $q_t \in \mathbb{R}$ and $\vec q \in V$. Then $\tilde\xi^2 = -1$ if and only if
 
 $$
-q_0 = 0 \quad \text{and} \quad \langle \vec q\rangle_{\natural} = 1 .
+q_t = 0 \quad \text{and} \quad \langle \vec q\rangle_{\natural} = 1 .
 $$
 
 Hence the solution set is
 
 $$
-\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\} = \{b e_1 + q_2 e_2 + q_3 e_3 : q_1^2 - q_2^2 - q_3^2 = 1\},
+\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\} = \{q_x \vec e_x + q_y \vec e_y + q_z \vec e_z : q_x^2 - q_y^2 - q_z^2 = 1\},
 $$
 
 a subset of the vector subspace. No solution has a nonzero scalar part.
 
-**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\xi = q_0 + \vec q$,
+**Proof.** For an element of $V$ the square is $-\!N$ times the identity, by (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*); so for $\tilde\xi = q_t + \vec q$,
 
 $$
-\tilde\xi^2 = q_0^2 + 2q_0\vec q + \vec q^2 = \big(q_0^2 - \langle \vec q\rangle_{\natural}\big) + 2q_0\vec q,
+\tilde\xi^2 = q_t^2 + 2q_t\vec q + \vec q^2 = \big(q_t^2 - \langle \vec q\rangle_{\natural}\big) + 2q_t\vec q,
 $$
 
 where the first parenthesis is scalar and the second term is a vector. The equation $\tilde\xi^2 = -1$ splits into the two equations
 
 $$
-q_0^2 - \langle \vec q\rangle_{\natural} = -1, \qquad 2q_0\vec q = 0 .
+q_t^2 - \langle \vec q\rangle_{\natural} = -1, \qquad 2q_t\vec q = 0 .
 $$
 
-If $q_0 \neq 0$ the second equation gives $\vec q = 0$, and the first then gives $q_0^2 = -1$, which has no real solution. Hence $q_0 = 0$, and the first equation becomes $-\langle \vec q\rangle_{\natural} = -1$, that is $\langle \vec q\rangle_{\natural} = 1$. Conversely these two conditions give $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
+If $q_t \neq 0$ the second equation gives $\vec q = 0$, and the first then gives $q_t^2 = -1$, which has no real solution. Hence $q_t = 0$, and the first equation becomes $-\langle \vec q\rangle_{\natural} = -1$, that is $\langle \vec q\rangle_{\natural} = 1$. Conversely these two conditions give $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
 
 **Corollary (The Root Set Is the Level Set $N = 1$).** The solution set is a two-dimensional subset of the three-dimensional vector space $V$, namely the level set $N = 1$ in $V$, with two components
 
 $$
-\mathcal{R}_{-1} = \{b^2 - q_2^2 - q_3^2 = 1\} = \{b \geq 1\} \cup \{b \leq -1\},
+\mathcal{R}_{-1} = \{q_x^2 - q_y^2 - q_z^2 = 1\} = \{q_x \geq 1\} \cup \{q_x \leq -1\},
 $$
 
-the two components being distinguished by the sign of the coefficient $q_1$ of $e_1$. The set is not connected, and each component is diffeomorphic to a plane.
+the two components being distinguished by the sign of the coefficient $q_x$ of $\vec e_x$. The set is not connected, and each component is diffeomorphic to a plane.
 
-**Proof.** The two components are the intersections of the level set with the closed half-spaces $q_1 \geq 1$ and $q_1 \leq -1$; on the first, $q_1 = \sqrt{1 + q_2^2 + q_3^2}$, and the map $(\xi_2, \xi_3) \mapsto \big(\sqrt{1 + \xi_2^2 + \xi_3^2}, \xi_2, \xi_3\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
+**Proof.** The two components are the intersections of the level set with the closed half-spaces $q_x \geq 1$ and $q_x \leq -1$; on the first, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, and the map $(\xi_y, \xi_z) \mapsto \big(\sqrt{1 + \xi_y^2 + \xi_z^2}, \xi_y, \xi_z\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
 
 The solutions therefore have $\langle\tilde\xi\rangle_{\natural} = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
 
@@ -57,9 +57,9 @@ $$
 \mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\},
 $$
 
-the level set $q_1^2 - q_2^2 - q_3^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $\langle\tilde\xi\rangle_{\natural} = 1$, and conversely.
+the level set $q_x^2 - q_y^2 - q_z^2 = 1$; every solution has $\operatorname{Sc}\tilde\xi = 0$ and $\langle\tilde\xi\rangle_{\natural} = 1$, and conversely.
 
-**Proof.** Write $\tilde\xi = \xi_0 + \vec v$ with $\xi_0 \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_0^2 + 2\xi_0\vec v + \vec v^2 = \xi_0^2 + 2\xi_0\vec v - \langle \vec v\rangle_{\natural}$; this equals $-1$ exactly when the $V$-component $2\xi_0\vec v$ vanishes, so $\xi_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_0^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_0 = 0$ and the $S$-component gives $-\langle \vec v\rangle_{\natural} = -1$, that is $\langle\tilde\xi\rangle_{\natural} = 1$. Conversely $\tilde\xi \in V$ with $\langle\tilde\xi\rangle_{\natural} = 1$ has $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
+**Proof.** Write $\tilde\xi = \xi_t + \vec v$ with $\xi_t \in S$ and $\vec v \in V$. Then $\tilde\xi^2 = \xi_t^2 + 2\xi_t\vec v + \vec v^2 = \xi_t^2 + 2\xi_t\vec v - \langle \vec v\rangle_{\natural}$; this equals $-1$ exactly when the $V$-component $2\xi_t\vec v$ vanishes, so $\xi_t = 0$ or $\vec v = 0$. If $\vec v = 0$ then $\xi_t^2 = -1$, impossible over $\mathbb{R}$; hence $\xi_t = 0$ and the $S$-component gives $-\langle \vec v\rangle_{\natural} = -1$, that is $\langle\tilde\xi\rangle_{\natural} = 1$. Conversely $\tilde\xi \in V$ with $\langle\tilde\xi\rangle_{\natural} = 1$ has $\tilde\xi^2 = -\langle\tilde\xi\rangle_{\natural} = -1$.
 
 **Corollary (The Root Set as Complex Lines).** For each solution $\tilde\xi$, the subalgebra generated by $\tilde\xi$ is
 
@@ -69,47 +69,47 @@ $$
 
 a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalgebra of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\tilde\xi$ is again a solution and $\mathbb{R}[-\tilde\xi] = \mathbb{R}[\tilde\xi]$, so the map $\tilde\xi \mapsto \mathbb{R}[\tilde\xi]$ induces a bijection between the antipodal pairs $\{\pm\tilde\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different components.
 
-**Proof.** $\tilde\xi^2 = -1$ gives the isomorphism $p + q\tilde\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\xi]$ with square $-1$ are the $p + q\tilde\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\xi$; and $\tilde\xi$ and $-\tilde\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite.
+**Proof.** $\tilde\xi^2 = -1$ gives the isomorphism $p + q\tilde\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\tilde\xi]$ with square $-1$ are the $p + q\tilde\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\tilde\xi$; and $\tilde\xi$ and $-\tilde\xi$ lie on the two sheets, their coefficients of $\vec e_x$ being opposite.
 
 ## The Root Set as a Conjugacy Class
 
 **Theorem (A Single Conjugacy Class).** All solutions of $\tilde\xi^2 = -1$ are conjugate to one another under the group of units:
 
 $$
-\mathcal{R}_{-1} = \{g e_1 g^{-1} : g \in \mathbb{H}_{\mathrm{s}}^{\times}\} .
+\mathcal{R}_{-1} = \{g \vec e_x g^{-1} : g \in \mathbb{H}_{\mathrm{s}}^{\times}\} .
 $$
 
-The set is a single conjugacy class of the group $\mathbb{H}_{\mathrm{s}}^{\times}$, and it contains $e_1$, so it is the conjugacy class of $e_1$.
+The set is a single conjugacy class of the group $\mathbb{H}_{\mathrm{s}}^{\times}$, and it contains $\vec e_x$, so it is the conjugacy class of $\vec e_x$.
 
-**Proof.** The adjoint action of the unit group on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each component of the level set $N = 1$; the unit $e_2$ with $N = -1$ exchanges the components. Hence every solution is conjugate to $e_1$ under the unit group.
+**Proof.** The adjoint action of the unit group on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each component of the level set $N = 1$; the unit $\vec e_y$ with $N = -1$ exchanges the components. Hence every solution is conjugate to $\vec e_x$ under the unit group.
 
-**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group $\mathbb{H}_{\mathrm{s}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $e_2$, since $e_2 e_1 e_2^{-1} = -e_1$.
+**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group $\mathbb{H}_{\mathrm{s}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $\vec e_y$, since $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$.
 
-**Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $e_2$ is the computation $e_2 e_1 = -e_3 = -e_1 e_2$, so $e_2 e_1 e_2^{-1} = -e_1$; here $e_2^{-1} = e_2$ and $\langle e_2\rangle_{\natural} = -1$.
+**Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $\vec e_y$ is the computation $\vec e_y \vec e_x = -\vec e_z = -\vec e_x \vec e_y$, so $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$; here $\vec e_y^{-1} = \vec e_y$ and $\langle \vec e_y\rangle_{\natural} = -1$.
 
 ## The Root Set as a Homogeneous Space
 
-**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(e_1) = \{g \in \mathbb{H}_{\mathrm{s}}^{\times} : g e_1 = e_1 g\}$ be the centraliser of $e_1$ in the group of units. Then $\operatorname{Cent}(e_1)$ is the group of nonzero elements of the copy $\mathbb{R}[e_1] \cong \mathbb{C}$ of the complex numbers, so that
+**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(\vec e_x) = \{g \in \mathbb{H}_{\mathrm{s}}^{\times} : g \vec e_x = \vec e_x g\}$ be the centraliser of $\vec e_x$ in the group of units. Then $\operatorname{Cent}(\vec e_x)$ is the group of nonzero elements of the copy $\mathbb{R}[\vec e_x] \cong \mathbb{C}$ of the complex numbers, so that
 
 $$
-\operatorname{Cent}(e_1) \cong \mathbb{C}^{\times},
+\operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times},
 $$
 
-and the map $g \mapsto g e_1 g^{-1}$ induces a bijection of homogeneous spaces
+and the map $g \mapsto g \vec e_x g^{-1}$ induces a bijection of homogeneous spaces
 
 $$
-\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times} / \operatorname{Cent}(e_1), \qquad \operatorname{Cent}(e_1) \cong \mathbb{C}^{\times}.
+\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times} / \operatorname{Cent}(\vec e_x), \qquad \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}.
 $$
 
 The two sides are real surfaces: the unit group has real dimension $4$ and $\mathbb{C}^{\times}$ has real dimension $2$, so the quotient has real dimension $2$, matching the dimension of the level set.
 
-**Proof.** An element commutes with $e_1$ exactly when it lies in the subalgebra $\operatorname{span}\{1,e_1\} \cong \mathbb{C}$: the elements $1$ and $e_1$ commute with $e_1$, while $e_2$ and $e_3 = e_1e_2$ anticommute with it, since $e_1e_2 = -e_2e_1$ and $e_3e_1 = -e_1e_3$. The units of this subalgebra are the nonzero complex numbers, so $\operatorname{Cent}(e_1) \cong \mathbb{C}^{\times}$. The orbit of $e_1$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $e_1$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection.
+**Proof.** An element commutes with $\vec e_x$ exactly when it lies in the subalgebra $\operatorname{span}\{1,\vec e_x\} \cong \mathbb{C}$: the elements $1$ and $\vec e_x$ commute with $\vec e_x$, while $\vec e_y$ and $\vec e_z = \vec e_x\vec e_y$ anticommute with it, since $\vec e_x\vec e_y = -\vec e_y\vec e_x$ and $\vec e_z\vec e_x = -\vec e_x\vec e_z$. The units of this subalgebra are the nonzero complex numbers, so $\operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}$. The orbit of $\vec e_x$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $\vec e_x$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection.
 
 **Corollary (Each Component Is a Hyperbolic Plane).** The quotient $\mathrm{SL}_2(\mathbb{R}) / SO(2)$ is a model of the hyperbolic plane, and each component of $\mathcal{R}_{-1}$ is a copy of it, the copy carried by the component being acted on transitively by $\mathrm{SL}_2(\mathbb{R})$ with stabiliser $SO(2)$.
 
-**Proof.** The stabiliser of $e_1$ in the group $\{N = 1\}$ is $\operatorname{Cent}(e_1) \cap U = GL_1(\mathbb{C}) \cap \{N=1\}$, which is the group of unit complex numbers, isomorphic to $SO(2)$; the orbit of $e_1$ under $U$ is one sheet by the preceding corollary, and the orbit–stabiliser correspondence gives it as $SO(2)$-cosets. The identification of $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the hyperbolic plane is that of *Hyperbolic Geometry*.
+**Proof.** The stabiliser of $\vec e_x$ in the group $\{N = 1\}$ is $\operatorname{Cent}(\vec e_x) \cap U = GL_1(\mathbb{C}) \cap \{N=1\}$, which is the group of unit complex numbers, isomorphic to $SO(2)$; the orbit of $\vec e_x$ under $U$ is one sheet by the preceding corollary, and the orbit–stabiliser correspondence gives it as $SO(2)$-cosets. The identification of $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the hyperbolic plane is that of *Hyperbolic Geometry*.
 
-The name for the object is therefore: **the root set is the conjugacy class of $e_1$, a homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times} / \mathbb{C}^{\times}$, whose two connected components are two copies of the hyperbolic plane.**
+The name for the object is therefore: **the root set is the conjugacy class of $\vec e_x$, a homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times} / \mathbb{C}^{\times}$, whose two connected components are two copies of the hyperbolic plane.**
 
 ## The Relation to the Idempotents and to the Zero Divisors
 
@@ -117,9 +117,9 @@ The name for the object is therefore: **the root set is the conjugacy class of $
 
 The companion equation clarifies the role of the two signs.
 
-**Proposition (The Roots of $+1$).** Let $\eta = q_0 + \vec q$. Then $\eta^2 = +1$ if and only if either $q_0 = \pm 1$ and $\vec q = 0$, or $q_0 = 0$ and $\langle \vec q\rangle_{\natural} = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.
+**Proposition (The Roots of $+1$).** Let $\eta = q_t + \vec q$. Then $\eta^2 = +1$ if and only if either $q_t = \pm 1$ and $\vec q = 0$, or $q_t = 0$ and $\langle \vec q\rangle_{\natural} = -1$. The non-central solutions are the vectors of the level set $N = -1$ in $V$, which has one component; the central solutions are $\pm 1$.
 
-**Proof.** The same splitting as in the proof of the main theorem gives $q_0^2 - \langle \vec q\rangle_{\natural} = 1$ and $2q_0\vec q = 0$. If $\vec q = 0$ then $q_0 = \pm 1$; if $\vec q \neq 0$ then $q_0 = 0$ and $\langle \vec q\rangle_{\natural} = -1$.
+**Proof.** The same splitting as in the proof of the main theorem gives $q_t^2 - \langle \vec q\rangle_{\natural} = 1$ and $2q_t\vec q = 0$. If $\vec q = 0$ then $q_t = \pm 1$; if $\vec q \neq 0$ then $q_t = 0$ and $\langle \vec q\rangle_{\natural} = -1$.
 
 **Theorem (The Idempotents Come from the Roots of $+1$).** Let $\eta \in V$ be a solution of $\eta^2 = 1$. Then
 
@@ -127,7 +127,7 @@ $$
 p_+ = \tfrac{1}{2}(1 + \eta), \qquad p_- = \tfrac{1}{2}(1 - \eta)
 $$
 
-are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = e_2$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
+are idempotents with $p_+ + p_- = 1$ and $p_+ p_- = 0$, and they are zero divisors. The idempotents $\tilde\pi_{1,2}$ of (*Split-Quaternion Algebra*, §*The Idempotents*) are the case $\eta = \vec e_y$. Conversely every non-scalar idempotent of $\mathbb{H}_{\mathrm{s}}$ is of this form for a unique root $\eta$ of $+1$ in $V$, and the correspondence between non-scalar idempotents and the roots of $+1$ in $V$ is a bijection.
 
 **Proof.** The identities are the same computation as for $\tilde\pi_{1,2}$: $\big(\tfrac12(1\pm\eta)\big)^2 = \tfrac14(1 \pm 2\eta + \eta^2) = \tfrac12(1\pm\eta)$, and the products and the sum follow from $\eta^2=1$. The product that decides the zero divisor is
 
@@ -169,7 +169,7 @@ For the quaternion algebra the equation has a different solution set.
 | solution set | the level set $\{N = 1\}$ in $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$ | the level set $\{N = 1\}$ in $V$ |
 | real dimension | $2$ | $2$ |
 | conjugacy class | single class under $Sp(1)$ | single class under $\mathbb{H}_{\mathrm{s}}^{\times}$ |
-| homogeneous space | $Sp(1)/U(1)$ | $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes |
+| homogeneous space | $Sp(1)/\mathrm{U}(1)$ | $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, two hyperbolic planes |
 | generated algebra | a copy of $\mathbb{C}$ | a copy of $\mathbb{C}$ |
 
 The quaternion column is the standard description of the pure imaginary units with $N = 1$, recorded in *Quaternion Algebra*, §*Basic Properties*: for a pure quaternion $\vec q$ one has $\vec q^2 = -\langle \vec q\rangle_{\natural}$, so the solutions are the elements of the level set $\{N = 1\}$ of the imaginary part. The compactness of the quaternion case and the connectivity of the two components in the split case are topological statements and belong to *Split-Quaternion Topology*; what is used here is the algebraic statement that the solutions are the complex structures of a plane, which in the quaternion case are the complex structures of the imaginary three-space and in the split case are those of a real two-space.
@@ -180,13 +180,13 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the not
 
 ## Summary
 
-The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\xi\rangle_{\natural} = 1$, that is, the points of the level set $q_1^2 - q_2^2 - q_3^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
+The solutions of $\tilde\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\xi\rangle_{\natural} = 1$, that is, the points of the level set $q_x^2 - q_y^2 - q_z^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
 
 Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\xi$ and $-\tilde\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
-The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
+The solutions form a single conjugacy class, the class of $\vec e_x$; the stabiliser of $\vec e_x$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, of real dimension two. The group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two components, and each component is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 
-The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = e_2$. Every solution of $\tilde\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/U(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
+The roots of $+1$ play the companion role: they are $\pm 1$ together with the level set $N = -1$ in $V$, and each non-central root of $+1$ produces the idempotents $\tfrac12(1 \pm \eta)$, which are zero divisors; the idempotents $\tilde\pi_{1,2}$ are the case $\eta = \vec e_y$. Every solution of $\tilde\xi^2 = -1$ generates a zero divisor by multiplication with an idempotent, although it is not itself one. In the quaternion case the solution set is the compact connected two-dimensional set and the homogeneous space is $Sp(1)/\mathrm{U}(1)$; the biquaternion case is a later system of Part V, named and pointed forward.
 
 ## Summary of Notation
 
@@ -194,10 +194,10 @@ The roots of $+1$ play the companion role: they are $\pm 1$ together with the le
 |---|---|---|
 | $\tilde\xi^2 = -1$ | the equation of the article | this article |
 | $\mathcal{R}_{-1} = \{\tilde\xi \in V : \langle\tilde\xi\rangle_{\natural} = 1\}$ | the solution set | this article |
-| $q_1^2 - q_2^2 - q_3^2 = 1$ | the level set $N = 1$ in the basis $e_1,e_2,e_3$ | this article |
+| $q_x^2 - q_y^2 - q_z^2 = 1$ | the level set $N = 1$ in the basis $\vec e_x,\vec e_y,\vec e_z$ | this article |
 | $X^2 = -I$ | the corresponding equation for matrices | this article |
 | $GL_1(\mathbb{C})$ | the centraliser of a complex structure, $\cong \mathbb{C}^{\times}$ | this article |
-| $\operatorname{Cent}(e_1)$ | the centraliser of $e_1$, $\cong \mathbb{C}^{\times}$ | this article |
+| $\operatorname{Cent}(\vec e_x)$ | the centraliser of $\vec e_x$, $\cong \mathbb{C}^{\times}$ | this article |
 | $\mathcal{R}_{-1} \cong \mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$ | the root set as a homogeneous space | this article |
 | $\eta^2 = +1$, $\langle \eta\rangle_{\natural} = -1$ | the root set of $+1$ in $V$ | this article |
 | $\tfrac12(1 \pm \eta)$ | the idempotents attached to a root of $+1$ | this article |

@@ -60,9 +60,9 @@ $$
 \boxed{\;\tilde{\nabla}\tilde{F} = -\tilde{R}_e - i\,\tilde{R}_m\;}
 $$
 
-with the gradient $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ of the parent article. The factor of $-i$ in front of the magnetic source is not decoration: it is the same scalar phase that implements duality, and it is what places the magnetic contribution in the complementary sector of the algebra.
+with the gradient $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$ of the parent article. The factor of $-i$ in front of the magnetic source is not decoration: it is the same scalar phase that implements duality, and it is what places the magnetic contribution in the complementary sector of the algebra.
 
-The reduction is best seen by taking scalar and vector parts. For a pure-vector field strength, $\tilde{\nabla}\tilde{F}$ has scalar part $-\mathrm{div}\,\vec F$ and vector part $\partial_{ict}\vec F + \mathrm{rot}\,\vec F$. The scalar part of the equation gives
+The reduction is best seen by taking scalar and vector parts. For a pure-vector field strength, $\tilde{\nabla}\tilde{F}$ has scalar part $-\mathrm{div}\,\vec F$ and vector part $\partial/\partial Q_t\,\vec F + \mathrm{rot}\,\vec F$. The scalar part of the equation gives
 
 $$
 \mathrm{div}\,\vec F = \frac{i\rho_e}{\sqrt{\epsilon}} - \frac{\rho_m}{\sqrt{\mu}},
@@ -71,12 +71,12 @@ $$
 and the vector part gives
 
 $$
-\partial_{ict}\vec F + \mathrm{rot}\,\vec F = -\sqrt{\mu}\,\vec J_e - i\sqrt{\epsilon}\,\vec J_m .
+\partial/\partial Q_t\,\vec F + \mathrm{rot}\,\vec F = -\sqrt{\mu}\,\vec J_e - i\sqrt{\epsilon}\,\vec J_m .
 $$
 
-Substituting $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and separating real and imaginary parts returns the four equations above. Two cases verify the signs independently of the case that suggested them. For a **magnetostatic configuration** with $\rho_e = \vec J_e = \vec J_m = 0$ and $\partial_t = 0$, the scalar equation reads $\mathrm{div}\,\vec F = -\rho_m/\sqrt{\mu}$; since $\vec F = -\vec B/\sqrt{\mu}$ and $\mathrm{div}\,\vec B = \rho_m$, both sides equal $-\rho_m/\sqrt{\mu}$, and the vector part is zero on both sides because $\mathrm{rot}\,\vec H = 0$. For a **static magnetic current** with $\rho_m = 0$, $\mathrm{rot}\,\vec E = -\vec J_m$ and $\mathrm{rot}\,\vec H = 0$, the vector equation gives $\mathrm{rot}\,\vec F = i\sqrt{\epsilon}\,\mathrm{rot}\,\vec E = -i\sqrt{\epsilon}\,\vec J_m$, matching the right-hand side. The two checks use different components and different source types.
+Substituting $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ and separating real and imaginary parts returns the four equations above. Two cases verify the signs independently of the case that suggested them. For a **magnetostatic configuration** with $\rho_e = \vec J_e = \vec J_m = 0$ and $\partial/\partial t = 0$, the scalar equation reads $\mathrm{div}\,\vec F = -\rho_m/\sqrt{\mu}$; since $\vec F = -\vec B/\sqrt{\mu}$ and $\mathrm{div}\,\vec B = \rho_m$, both sides equal $-\rho_m/\sqrt{\mu}$, and the vector part is zero on both sides because $\mathrm{rot}\,\vec H = 0$. For a **static magnetic current** with $\rho_m = 0$, $\mathrm{rot}\,\vec E = -\vec J_m$ and $\mathrm{rot}\,\vec H = 0$, the vector equation gives $\mathrm{rot}\,\vec F = i\sqrt{\epsilon}\,\mathrm{rot}\,\vec E = -i\sqrt{\epsilon}\,\vec J_m$, matching the right-hand side. The two checks use different components and different source types.
 
-Charge conservation has a magnetic counterpart. Just as the electric source is constrained by $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}_e) = 0$, which is $\mathrm{div}\,\vec J_e + \partial_t\rho_e = 0$, the magnetic source satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}_m) = 0$, which is $\mathrm{div}\,\vec J_m + \partial_t\rho_m = 0$. Magnetic charge is conserved for exactly the algebraic reason electric charge is: the conservation law is the integrability condition of the field equation, and the two sources are subject to it separately because they occupy the two complementary sectors under $\mathrm{Sc}$.
+Charge conservation has a magnetic counterpart. Just as the electric source is constrained by $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}_e) = 0$, which is $\mathrm{div}\,\vec J_e + \partial/\partial t\rho_e = 0$, the magnetic source satisfies $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}_m) = 0$, which is $\mathrm{div}\,\vec J_m + \partial/\partial t\rho_m = 0$. Magnetic charge is conserved for exactly the algebraic reason electric charge is: the conservation law is the integrability condition of the field equation, and the two sources are subject to it separately because they occupy the two complementary sectors under $\mathrm{Sc}$.
 
 ## The Dual Field-Strength Biquaternion
 
@@ -114,9 +114,9 @@ $$
 
 The verification is direct and does not rely on the special value $\theta = \pi/2$: substituting the general rotation $\vec E \mapsto \vec E\cos\theta + c\vec B\sin\theta$, $\vec B \mapsto \vec B\cos\theta - c^{-1}\vec E\sin\theta$ into the definition of $\tilde{F}$, the coefficient of the electric term is $i\sqrt{\epsilon}\cos\theta + \sqrt{\epsilon}\sin\theta$ and the coefficient of the magnetic term is $i(\sin\theta)/\sqrt{\mu} - (\cos\theta)/\sqrt{\mu}$, which are precisely the coefficients in $\exp(-i\theta)\tilde{F} = (\cos\theta - i\sin\theta)(i\sqrt{\epsilon}\vec E - \vec B/\sqrt{\mu})$. The identity holds for every $\theta$, and the special case $\theta = \pi/2$ reproduces the dual field of the previous section.
 
-The phase $\exp(-i\theta)$ is a complex scalar of the algebra, an element of the scalar subspace $\mathbb{C}_{\mathbb{B}}$; it commutes with the quaternion units $e_1, e_2, e_3$ and hence with every element of $\mathbb{B}$, including every Lorentz rotor. Consequently:
+The phase $\exp(-i\theta)$ is a complex scalar of the algebra, an element of the scalar subspace $\mathbb{C}_{\mathbb{B}}$; it commutes with the quaternion units $\vec e_x, \vec e_y, \vec e_z$ and hence with every element of $\mathbb{B}$, including every Lorentz rotor. Consequently:
 
-- Duality **commutes with the Lorentz group**. It is not a Lorentz transformation and cannot be absorbed into one; it is an internal $U(1)$ symmetry generated by the scalar imaginary $i$.
+- Duality **commutes with the Lorentz group**. It is not a Lorentz transformation and cannot be absorbed into one; it is an internal $\mathrm{U}(1)$ symmetry generated by the scalar imaginary $i$.
 - Duality **mixes the two sectors**. Since $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$, the rotated field $\exp(-i\theta)\tilde{F}$ has both a Hermitian and an anti-Hermitian part for generic $\theta$, and the electric and magnetic halves are exchanged continuously.
 - Duality **rotates the biquaternion norm**. Because $\langle\cdot\rangle_{\natural}$ is bilinear, $\langle\exp(-i\theta)\tilde{F}\rangle_{\natural} = \exp(-2i\theta)\langle\tilde{F}\rangle_{\natural}$, in agreement with the doubled-angle rotation of the pair $(I_1, 2cI_2)$ recorded in the field-strength article.
 
@@ -124,25 +124,25 @@ The new content of the sourced theory is that duality is a symmetry of the equat
 
 ## The Monopole Field
 
-The static sector of the parent article carries over verbatim. With $\partial_t = 0$ the gradient reduces to $\tilde{\nabla}_{\mathrm{stat}} = e_1\partial_x + e_2\partial_y + e_3\partial_z$, and the sourced equation becomes
+The static sector of the parent article carries over verbatim. With $\partial/\partial t = 0$ the gradient reduces to $\tilde{\nabla}_{\mathrm{stat}} = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$, and the sourced equation becomes
 
 $$
 \tilde{\nabla}_{\mathrm{stat}}\tilde{F} = -\tilde{R}_e - i\tilde{R}_m .
 $$
 
-For a point magnetic charge $g$ at the origin, $\rho_m = g\,\delta(\vec x)$ and $\vec J_m = 0$, so $\tilde{R}_m = ig\,\delta(\vec x)e_0/\sqrt{\mu}$ and the right-hand side is the real scalar source $g\,\delta(\vec x)e_0/\sqrt{\mu}$. The parent article's static Green's function then gives
+For a point magnetic charge $g$ at the origin, $\rho_m = g\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ and $\vec J_m = 0$, so $\tilde{R}_m = ig\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)e_t/\sqrt{\mu}$ and the right-hand side is the real scalar source $g\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)e_t/\sqrt{\mu}$. The parent article's static Green's function then gives
 
 $$
-\tilde{F}(\vec x) = -\frac{g}{4\pi\sqrt{\mu}}\,\frac{\vec u_x}{\|\vec x\|^2},
+\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = -\frac{g}{4\pi\sqrt{\mu}}\,\frac{\vec u_x}{\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2},
 \qquad
-\vec B(\vec x) = \frac{g}{4\pi}\,\frac{\vec u_x}{\|\vec x\|^2},
+\vec B(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{g}{4\pi}\,\frac{\vec u_x}{\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2},
 \qquad
 \vec E = 0,
 $$
 
-the biquaternionic form of the Dirac monopole field $\vec B = g\vec u_x/(4\pi\|\vec x\|^2)$. Substituting back confirms the equation, and the sign is fixed by the scalar part: $\mathrm{div}\,\vec F = -\rho_m/\sqrt{\mu}$ while $\mathrm{div}\,\vec B = \rho_m$.
+the biquaternionic form of the Dirac monopole field $\vec B = g\vec u_x/(4\pi\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$. Substituting back confirms the equation, and the sign is fixed by the scalar part: $\mathrm{div}\,\vec F = -\rho_m/\sqrt{\mu}$ while $\mathrm{div}\,\vec B = \rho_m$.
 
-The monopole field has a structural feature worth isolating. The electric Coulomb field of a point charge $ϙ$ is, from the parent article, $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|\vec x\|^2)$: a purely **imaginary** vector, hence an element of the Hermitian subspace $\mathbb{M}_+$. The magnetic Coulomb field above is a purely **real** vector, hence an element of the anti-Hermitian subspace $\mathbb{M}_-$. A static electric charge is thus a source whose field lies in the informational half of the algebra; a static magnetic charge is a source whose field lies in the material half. The duality rotation, which multiplies by $-i$, interchanges the two. This is the sharpest statement the framework makes about the monopole: it is the source whose field populates the sector complementary to the electric one.
+The monopole field has a structural feature worth isolating. The electric Coulomb field of a point charge $ϙ$ is, from the parent article, $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$: a purely **imaginary** vector, hence an element of the Hermitian subspace $\mathbb{M}_+$. The magnetic Coulomb field above is a purely **real** vector, hence an element of the anti-Hermitian subspace $\mathbb{M}_-$. A static electric charge is thus a source whose field lies in the informational half of the algebra; a static magnetic charge is a source whose field lies in the material half. The duality rotation, which multiplies by $-i$, interchanges the two. This is the sharpest statement the framework makes about the monopole: it is the source whose field populates the sector complementary to the electric one.
 
 The field is also classically singular in the familiar way. Its energy density $W = \tfrac{1}{2}\mu\vec H^2 = \vec B^2/(2\mu) \propto g^2/r^4$ integrates to a linearly divergent total energy for a point source, so the classical point monopole has infinite self-energy. Its mass is therefore not a prediction of the algebra but a model-dependent quantity: finite-mass monopoles arise only when the point singularity is resolved by additional structure, as in the 't Hooft–Polyakov solitons. The biquaternion algebra is silent on that structure.
 
@@ -170,7 +170,7 @@ $$
 
 which is why $\rho_m$ appears in the scalar equation. This charge is conserved by the magnetic integrability condition of the second section, and it is a topological characteristic of the field configuration rather than the integral of a local density. If the brief phrase "the second invariant" is read as the second *conserved charge* of the theory, it is apt: electric charge is the first, magnetic charge is the second, and without monopoles the second is identically zero for every configuration. If it is read as the pointwise invariant $I_2$, it is not: that quantity vanishes on every static monopole. The framework supports the first interpretation and corrects the second, and the two should not be conflated.
 
-**Where the charge lives.** The topological charge is a degree, and the sphere that carries it sits in the material sector. For the abelian monopole of this article the integer $n$ is the winding of the multivalued $\Gamma$ around the string; for the non-abelian monopole of the companion article it is the degree of the map $\vec u_x\mapsto\phi^{\mathrm{fop}}$, whose target is the unit sphere of the three-dimensional real space $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ of the gauge algebra, a sphere contained in the anti-Hermitian subspace $\mathbb{M}_-$. In both interpretations the charge is fixed by the boundary data and not by the local shape of the field, which is what makes it topological.
+**Where the charge lives.** The topological charge is a degree, and the sphere that carries it sits in the material sector. For the abelian monopole of this article the integer $n$ is the winding of the multivalued $\Gamma$ around the string; for the non-abelian monopole of the companion article it is the degree of the map $\vec u_x\mapsto\phi^{\mathrm{fop}}$, whose target is the unit sphere of the three-dimensional real space $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ of the gauge algebra, a sphere contained in the anti-Hermitian subspace $\mathbb{M}_-$. In both interpretations the charge is fixed by the boundary data and not by the local shape of the field, which is what makes it topological.
 
 ## The Dirac Quantisation Condition
 
@@ -230,9 +230,9 @@ $$
 
 with the factor of $-i$ placing the magnetic source in the sector complementary to the electric one. The two sources assemble into the single complex source biquaternion $\tilde{\mathcal{R}} = \tilde{R}_e + i\tilde{R}_m$, and the dual field-strength biquaternion is $\tilde{F}_\star = -i\tilde{F}$: Hodge duality is internal multiplication by a scalar phase, not an independent field.
 
-The duality rotation $\tilde{F} \mapsto \exp(-i\theta)\tilde{F}$ is generated by a scalar in $\mathbb{C}_{\mathbb{B}}$, commutes with the quaternion units and with every Lorentz rotor, and is therefore an internal $U(1)$ symmetry, not a spacetime one. It rotates the two sectors of the field into one another, and with magnetic sources present it becomes a symmetry of the *sourced* equations, exchanging electric and magnetic charge. That is the structural role of the monopole in this framework.
+The duality rotation $\tilde{F} \mapsto \exp(-i\theta)\tilde{F}$ is generated by a scalar in $\mathbb{C}_{\mathbb{B}}$, commutes with the quaternion units and with every Lorentz rotor, and is therefore an internal $\mathrm{U}(1)$ symmetry, not a spacetime one. It rotates the two sectors of the field into one another, and with magnetic sources present it becomes a symmetry of the *sourced* equations, exchanging electric and magnetic charge. That is the structural role of the monopole in this framework.
 
-The static monopole field is $\tilde{F} = -g\vec u_x/(4\pi\sqrt{\mu}\|\vec x\|^2)$, a purely real vector in $\mathbb{M}_-$, in contrast with the electric Coulomb field, a purely imaginary vector in $\mathbb{M}_+$. A static monopole has $I_2 = \vec E\cdot\vec B = 0$ and $I_1 < 0$; the second pointwise invariant is nonzero only for a dyon. The genuinely "second" quantity is the topological magnetic charge $Q_m \propto \oint_{S^2}\vec B\cdot d\vec A$, conserved because it is the integrability condition of the magnetic equation.
+The static monopole field is $\tilde{F} = -g\vec u_x/(4\pi\sqrt{\mu}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$, a purely real vector in $\mathbb{M}_-$, in contrast with the electric Coulomb field, a purely imaginary vector in $\mathbb{M}_+$. A static monopole has $I_2 = \vec E\cdot\vec B = 0$ and $I_1 < 0$; the second pointwise invariant is nonzero only for a dyon. The genuinely "second" quantity is the topological magnetic charge $Q_m \propto \oint_{S^2}\vec B\cdot d\vec A$, conserved because it is the integrability condition of the magnetic equation.
 
 The Dirac quantisation condition $eg = 2\pi n\hbar c$ (Heaviside–Lorentz units) emerges from the single-valuedness of the biquaternionic gauge phase around the Dirac string, equivalently $\alpha_m = n^2/(4\alpha)$. It constrains the product of the charges; it does not predict the monopole's existence or mass, and it imports $\hbar$ from quantum physics. The framework re-expresses the monopole and its quantisation faithfully, and it is silent where the standard theory is silent.
 
@@ -243,7 +243,7 @@ A neighbouring programme reads the monopole differently, and the contrast is sha
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{C}_{\mathbb{B}}, \mathbb{H}_{\mathbb{B}}$ | Scalar subspace, real-quaternion subspace |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
@@ -263,7 +263,7 @@ A neighbouring programme reads the monopole differently, and the contrast is sha
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\vec N$ |
 | $g$ | Magnetic charge |
 | $Q_m \propto \oint_{S^2}\vec B\cdot d\vec A$ | Magnetic (topological) charge |
-| $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ | Gauge algebra, a real subspace of $\mathbb{M}_-$; its unit sphere is the target of the non-abelian monopole charge |
+| $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra, a real subspace of $\mathbb{M}_-$; its unit sphere is the target of the non-abelian monopole charge |
 | $e$ | Electric charge |
 | $n \in \mathbb{Z}$ | Winding number in the Dirac condition |
 | $\alpha, \alpha_m$ | Electric and magnetic fine-structure constants |

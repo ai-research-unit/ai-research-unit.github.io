@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Lie group is a group and a manifold at once, and the two structures constrain each other sharply: the multiplication is smooth, so the group acts on itself by diffeomorphisms, and every local question can be translated to the identity. The first topological invariant of a Lie group is its fundamental group, and the theory of *The Fundamental Group and Covering Spaces* applies with an extra rigidity. The fundamental group of any topological group is **abelian**; the universal cover of a connected Lie group carries a Lie group structure, so that every connected Lie group is a quotient $G^{\mathrm{cov}} \to G$ of a simply connected Lie group by a discrete central subgroup isomorphic to $\pi_1(G)$; and for a compact connected Lie group the fundamental group is finite and computable from the combinatorial data of a maximal torus and its roots. The classical groups are the standard examples: $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = 0$, $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and the double cover $SU(2) \to SO(3)$ is the first case of the spin cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+A Lie group is a group and a manifold at once, and the two structures constrain each other sharply: the multiplication is smooth, so the group acts on itself by diffeomorphisms, and every local question can be translated to the identity. The first topological invariant of a Lie group is its fundamental group, and the theory of *The Fundamental Group and Covering Spaces* applies with an extra rigidity. The fundamental group of any topological group is **abelian**; the universal cover of a connected Lie group carries a Lie group structure, so that every connected Lie group is a quotient $G^{\mathrm{cov}} \to G$ of a simply connected Lie group by a discrete central subgroup isomorphic to $\pi_1(G)$; and for a compact connected Lie group the fundamental group is finite and computable from the combinatorial data of a maximal torus and its roots. The classical groups are the standard examples: $\pi_1(\mathrm{U}(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = 0$, $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and the double cover $SU(2) \to SO(3)$ is the first case of the spin cover of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 The Lie theory itself — the correspondence between Lie groups and Lie algebras, the exponential map, the closed subgroup theorem, the maximal torus theory — is assumed from the companion article *Lie Groups* of Part I, and the topological group theory from *Topological Groups* and *Abelian Topological Groups*. What this article supplies is the topological computation: the abelianness of $\pi_1$ and its consequences, the classification of connected coverings of a Lie group and the universal covering group, the reduction of $\pi_1(G)$ to the fundamental group of a maximal compact subgroup, the computation of $\pi_1$ for a compact connected group from the coroot lattice of a maximal torus, and the long exact sequence of a homogeneous space, which relates $\pi_1$ of a Lie group to $\pi_1$ of the quotients by closed subgroups. The higher homotopy groups of Lie groups and their homogeneous spaces, and the homology computations that follow from them, are not covered here; the covering-space correspondence is that of *The Fundamental Group and Covering Spaces*, and the classification of coverings by subgroups of $\pi_1$ is used throughout.
 
@@ -51,7 +51,7 @@ is an exact sequence of Lie groups in which $\pi_1(G) \cong p^{-1}(e)$ is a disc
 
 **Corollary.** For a connected Lie group $G$, the connected coverings of $G$ stand in bijection with the subgroups of $\pi_1(G)$; since $\pi_1(G)$ is abelian, every subgroup is normal, and every connected covering of $G$ is again a Lie group with the covering map a homomorphism. In particular, every connected covering of a connected Lie group is a covering *group*.
 
-**Example.** For $G = U(1)$ the universal cover is $\mathbb{R} \to U(1)$, $t \mapsto \exp(2\pi i t)$, with kernel $\mathbb{Z} \cong \pi_1(U(1))$; the connected coverings are the maps $z \mapsto z^n$. For $G = SO(3) \cong \mathbb{RP}^3$ the universal cover is $SU(2) \cong S^3$ and $\pi_1(SO(3)) \cong \mathbb{Z}/2$; this is the case $n = 3$ of the spin cover $\mathrm{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+**Example.** For $G = \mathrm{U}(1)$ the universal cover is $\mathbb{R} \to \mathrm{U}(1)$, $t \mapsto \exp(2\pi i t)$, with kernel $\mathbb{Z} \cong \pi_1(\mathrm{U}(1))$; the connected coverings are the maps $z \mapsto z^n$. For $G = SO(3) \cong \mathbb{RP}^3$ the universal cover is $SU(2) \cong S^3$ and $\pi_1(SO(3)) \cong \mathbb{Z}/2$; this is the case $n = 3$ of the spin cover $\mathrm{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ### The Case of Finite Fundamental Group
 
@@ -63,7 +63,7 @@ is an exact sequence of Lie groups in which $\pi_1(G) \cong p^{-1}(e)$ is a disc
 
 *Proof.* (1) If $G^{\mathrm{cov}}$ is compact then $\pi_1(G) = p^{-1}(e)$ is a discrete closed subset of a compact space, hence finite. Conversely, if $\pi_1(G)$ is finite then $G^{\mathrm{cov}}$ is a finite covering of a compact space, hence compact. (2) is the exact sequence of the corollary applied to a compact group. (3) is the structure theory of compact connected Lie groups (the classification of *Lie Groups*): $G^{\mathrm{cov}}$ is a product of a torus and simply connected simple compact Lie groups, and the splitting follows from the theory of maximal tori.
 
-**Example ($SO(n)$ and the spin groups).** For $n \geq 3$ the group $SO(n)$ is compact connected with $\pi_1 \cong \mathbb{Z}/2$ and universal cover $\mathrm{Spin}(n)$, so $\mathrm{Spin}(n) \to SO(n)$ is a double cover and $\mathrm{Spin}(n)$ is compact simply connected; for $n \geq 7$, $\mathrm{Spin}(n)$ is simple. For $n = 2$, $SO(2) \cong U(1)$ has $\pi_1 \cong \mathbb{Z}$ and universal cover $\mathbb{R}$; for $n = 1$, $SO(1)$ is trivial.
+**Example ($SO(n)$ and the spin groups).** For $n \geq 3$ the group $SO(n)$ is compact connected with $\pi_1 \cong \mathbb{Z}/2$ and universal cover $\mathrm{Spin}(n)$, so $\mathrm{Spin}(n) \to SO(n)$ is a double cover and $\mathrm{Spin}(n)$ is compact simply connected; for $n \geq 7$, $\mathrm{Spin}(n)$ is simple. For $n = 2$, $SO(2) \cong \mathrm{U}(1)$ has $\pi_1 \cong \mathbb{Z}$ and universal cover $\mathbb{R}$; for $n = 1$, $SO(1)$ is trivial.
 
 **Remark.** The universal cover of a connected Lie group is a Lie group, but not necessarily a group of matrices: the universal cover of $SL(2,\mathbb{R})$ has no faithful finite-dimensional representation, while its quotient $SL(2,\mathbb{R})$ does. The passage to the universal cover therefore cannot always be performed inside the category of linear groups, although it can always be performed among Lie groups.
 
@@ -81,7 +81,7 @@ and $\pi_1(G)$ is finitely generated.
 
 *Proof sketch.* The **Iwasawa decomposition** writes a connected semisimple Lie group as $G = KAN$ with $K$ compact, $A$ a vector group and $N$ nilpotent, and $AN$ is diffeomorphic to a Euclidean space; hence the inclusion $K \to G$ is a homotopy equivalence. The general case is reduced to the semisimple case modulo the centre and the solvable radical, and the conjugacy of maximal compact subgroups is the **Malcev theorem**, proved by applying the Cartan fixed point theorem to the action on the symmetric space $G/K$.
 
-**Example.** $GL_n(\mathbb{R})$ has maximal compact $O(n)$; $SL_n(\mathbb{R})$ has maximal compact $SO(n)$; $GL_n(\mathbb{C})$ has maximal compact $U(n)$; $SL_n(\mathbb{C})$ has maximal compact $SU(n)$; $Sp_{2n}(\mathbb{R})$ has maximal compact $U(n)$. Each inclusion is a homotopy equivalence, so the homotopy of the real and complex groups is that of the corresponding compact groups; the complex case is the more transparent, since $\pi_1(U(n)) \cong \mathbb{Z}$ and $\pi_1(SU(n)) = 0$.
+**Example.** $GL_n(\mathbb{R})$ has maximal compact $O(n)$; $SL_n(\mathbb{R})$ has maximal compact $SO(n)$; $GL_n(\mathbb{C})$ has maximal compact $\mathrm{U}(n)$; $SL_n(\mathbb{C})$ has maximal compact $SU(n)$; $Sp_{2n}(\mathbb{R})$ has maximal compact $\mathrm{U}(n)$. Each inclusion is a homotopy equivalence, so the homotopy of the real and complex groups is that of the corresponding compact groups; the complex case is the more transparent, since $\pi_1(\mathrm{U}(n)) \cong \mathbb{Z}$ and $\pi_1(SU(n)) = 0$.
 
 **Example.** For $G = \mathbb{R}^n$ the maximal compact subgroup is trivial and $\pi_1(\mathbb{R}^n) = 0$; for $G = \mathbb{R}^*_+ \cong \mathbb{R}$ it is trivial; for $G = GL_n(\mathbb{R})$ with $n \geq 3$ it is $O(n)$, giving $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n)) \cong \mathbb{Z}/2$ for $n \geq 3$.
 
@@ -128,7 +128,7 @@ $$
 is the **coroot lattice** in $T$, and the coweight lattice is
 
 $$
-X_*(T) = \operatorname{Hom}(U(1), T) \cong \pi_1(T) \cong \mathbb{Z}^{\dim T}.
+X_*(T) = \operatorname{Hom}(\mathrm{U}(1), T) \cong \pi_1(T) \cong \mathbb{Z}^{\dim T}.
 $$
 
 **Theorem (Bott).** Let $G$ be a compact connected Lie group with maximal torus $T$. Then the inclusion $T \hookrightarrow G$ induces a surjection $\pi_1(T) \to \pi_1(G)$ whose kernel is the coroot lattice, so that
@@ -155,9 +155,9 @@ the centre of the simply connected cover.
 
 | $G$ | $\pi_1(G)$ |
 |---|---|
-| $U(n)$, $n \geq 1$ | $\mathbb{Z}$ |
+| $\mathrm{U}(n)$, $n \geq 1$ | $\mathbb{Z}$ |
 | $SU(n)$, $n \geq 1$ | $0$ |
-| $SO(2) \cong U(1)$ | $\mathbb{Z}$ |
+| $SO(2) \cong \mathrm{U}(1)$ | $\mathbb{Z}$ |
 | $SO(n)$, $n \geq 3$ | $\mathbb{Z}/2$ |
 | $O(n)$, $n \geq 3$ | $\mathbb{Z}/2$ |
 | $\mathrm{Spin}(n)$, $n \geq 3$ | $0$ |
@@ -165,9 +165,9 @@ the centre of the simply connected cover.
 | $GL_n(\mathbb{C})$, $n \geq 1$ | $\mathbb{Z}$ |
 | $GL_n(\mathbb{R})$, $n \geq 3$ | $\mathbb{Z}/2$ |
 
-*Proof.* For $U(n)$ the determinant $\det : U(n) \to U(1)$ is a fibre bundle with fibre $SU(n)$, and the homotopy sequence $0 = \pi_1(SU(n)) \to \pi_1(U(n)) \to \pi_1(U(1)) = \mathbb{Z} \to \pi_0(SU(n)) = 0$ gives $\pi_1(U(n)) \cong \mathbb{Z}$ once $SU(n)$ is known simply connected. For $SU(n)$ the theorem of Bott applies: with the standard maximal torus $T = \{ \operatorname{diag}(z_1,\ldots,z_n) : \prod z_i = 1\}$, the coweight lattice is $\{ (m_1,\ldots,m_n)\in\mathbb{Z}^n : \sum m_i = 0\}$, the roots are $z_i z_j^{-1}$ with coroots $z \mapsto (1,\ldots,z,\ldots,z^{-1},\ldots,1)$, and these generate exactly the coweight lattice, so $\pi_1(SU(n)) = 0$. For $SO(n)$, $n \geq 3$, the coroot lattice of the root system $B_{(n-1)/2}$ or $D_{n/2}$ has index $2$ in the coweight lattice, giving $\pi_1 \cong \mathbb{Z}/2$; alternatively $SO(n) = \mathrm{Spin}(n)/\{\pm1\}$ with $\mathrm{Spin}(n)$ simply connected by the theorem, since the coweight lattice of $\mathrm{Spin}(n)$ is the coroot lattice. $O(n)$ has two components and $\pi_1(O(n)) \cong \pi_1(SO(n))$. For $Sp(n)$ the root system $C_n$ has coweight lattice equal to the coroot lattice, so $\pi_1 = 0$. The general linear groups reduce to the compact ones by the Malcev–Iwasawa theorem: $GL_n(\mathbb{C})$ has maximal compact $U(n)$ and $GL_n(\mathbb{R})$ has maximal compact $O(n)$.
+*Proof.* For $\mathrm{U}(n)$ the determinant $\det : \mathrm{U}(n) \to \mathrm{U}(1)$ is a fibre bundle with fibre $SU(n)$, and the homotopy sequence $0 = \pi_1(SU(n)) \to \pi_1(\mathrm{U}(n)) \to \pi_1(\mathrm{U}(1)) = \mathbb{Z} \to \pi_0(SU(n)) = 0$ gives $\pi_1(\mathrm{U}(n)) \cong \mathbb{Z}$ once $SU(n)$ is known simply connected. For $SU(n)$ the theorem of Bott applies: with the standard maximal torus $T = \{ \operatorname{diag}(z_1,\ldots,z_n) : \prod z_i = 1\}$, the coweight lattice is $\{ (m_1,\ldots,m_n)\in\mathbb{Z}^n : \sum m_i = 0\}$, the roots are $z_i z_j^{-1}$ with coroots $z \mapsto (1,\ldots,z,\ldots,z^{-1},\ldots,1)$, and these generate exactly the coweight lattice, so $\pi_1(SU(n)) = 0$. For $SO(n)$, $n \geq 3$, the coroot lattice of the root system $B_{(n-1)/2}$ or $D_{n/2}$ has index $2$ in the coweight lattice, giving $\pi_1 \cong \mathbb{Z}/2$; alternatively $SO(n) = \mathrm{Spin}(n)/\{\pm1\}$ with $\mathrm{Spin}(n)$ simply connected by the theorem, since the coweight lattice of $\mathrm{Spin}(n)$ is the coroot lattice. $O(n)$ has two components and $\pi_1(O(n)) \cong \pi_1(SO(n))$. For $Sp(n)$ the root system $C_n$ has coweight lattice equal to the coroot lattice, so $\pi_1 = 0$. The general linear groups reduce to the compact ones by the Malcev–Iwasawa theorem: $GL_n(\mathbb{C})$ has maximal compact $\mathrm{U}(n)$ and $GL_n(\mathbb{R})$ has maximal compact $O(n)$.
 
-**Example ($\pi_1(U(n))$ and the determinant).** The determinant exhibits $\pi_1(U(n)) \cong \mathbb{Z}$ with a canonical generator, the class of $z \mapsto \operatorname{diag}(z,1,\ldots,1)$; this generator is the one that appears in the first Chern class of a complex line bundle, and it underlies the identification of $\pi_1(U(n))$ with the degree of the determinant.
+**Example ($\pi_1(\mathrm{U}(n))$ and the determinant).** The determinant exhibits $\pi_1(\mathrm{U}(n)) \cong \mathbb{Z}$ with a canonical generator, the class of $z \mapsto \operatorname{diag}(z,1,\ldots,1)$; this generator is the one that appears in the first Chern class of a complex line bundle, and it underlies the identification of $\pi_1(\mathrm{U}(n))$ with the degree of the determinant.
 
 **Example ($SU(2) \to SO(3)$).** Here $SU(2)$ has root system $A_1$, coweight lattice $\mathbb{Z}$ and coroot lattice $\mathbb{Z}$, so $\pi_1(SU(2)) = 0$; $SO(3)$ has the same root system with coweight lattice $\mathbb{Z}$ and coroot lattice $2\mathbb{Z}$, so $\pi_1(SO(3)) \cong \mathbb{Z}/2$; the quotient is realised by the double cover $SU(2) \to SO(3)$, the adjoint group of type $A_1$, and $\pi_1(SO(3)) \cong Z(SU(2)) = \{\pm I\}$.
 
@@ -175,7 +175,7 @@ the centre of the simply connected cover.
 
 ### Spin Covers and the General Theory of Coverings
 
-**Theorem.** For $n \geq 3$ the double cover $\mathrm{Spin}(n) \to SO(n)$ is the universal cover, and the connected coverings of $SO(n)$ are $\mathrm{Spin}(n) \to SO(n)$ and the identity; for $n = 2$ the connected coverings of $SO(2)$ are the maps $z \mapsto z^m$ of $U(1)$. The coverings of a compact connected Lie group correspond to the subgroups of the finite group $\pi_1(G)$, hence are finite in number and all compact.
+**Theorem.** For $n \geq 3$ the double cover $\mathrm{Spin}(n) \to SO(n)$ is the universal cover, and the connected coverings of $SO(n)$ are $\mathrm{Spin}(n) \to SO(n)$ and the identity; for $n = 2$ the connected coverings of $SO(2)$ are the maps $z \mapsto z^m$ of $\mathrm{U}(1)$. The coverings of a compact connected Lie group correspond to the subgroups of the finite group $\pi_1(G)$, hence are finite in number and all compact.
 
 *Proof.* The coverings of a connected space correspond to the subgroups of its fundamental group by *The Fundamental Group and Covering Spaces*; the fundamental group of a compact connected Lie group is finite by the theorem of Bott, since the coroot lattice has finite index in the coweight lattice. Comparing indices gives the stated covers and the finiteness.
 
@@ -185,7 +185,7 @@ the centre of the simply connected cover.
 
 The fundamental group of a topological group is abelian, by the Eckmann–Hilton interchange argument; for a Lie group, $\pi_1$ depends only on the identity component, equals $H_1$ by Hurewicz, and acts trivially on all the higher homotopy groups, so the local coefficients of the general fibration theory are constant in this setting. Every connected covering of a connected Lie group is again a Lie group, by lifting the multiplication to the covering, and the connected coverings are classified by the subgroups of $\pi_1(G)$; in particular the universal cover $G^{\mathrm{cov}}$ is a simply connected Lie group and $G \cong G^{\mathrm{cov}}/N$ with $N \cong \pi_1(G)$ discrete central. For a compact connected $G$ the fundamental group is finite, $G^{\mathrm{cov}}$ is compact, and $G$ is a quotient of $G^{\mathrm{cov}}$ by a finite central subgroup.
 
-The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to that of a maximal compact subgroup, so $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n))$ and $\pi_1(GL_n(\mathbb{C})) \cong \pi_1(U(n))$. For a compact connected group with maximal torus $T$, Bott's theorem identifies $\pi_1(G) \cong X_*(T)/Q^\vee$ with the quotient of the coweight lattice by the coroot lattice; this gives $\pi_1(U(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = \pi_1(Sp(n)) = 0$ and $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and identifies $\pi_1$ of the adjoint group with the centre of the simply connected cover, so that the double cover $SU(2)\to SO(3)$ is the first case of the spin covers. Finally, the long exact homotopy sequence of the fibration $H \to G \to G/H$ computes $\pi_1$ of a homogeneous space from that of the group and the stabiliser; a quotient of a simply connected group by a connected closed subgroup is simply connected.
+The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to that of a maximal compact subgroup, so $\pi_1(GL_n(\mathbb{R})) \cong \pi_1(O(n))$ and $\pi_1(GL_n(\mathbb{C})) \cong \pi_1(\mathrm{U}(n))$. For a compact connected group with maximal torus $T$, Bott's theorem identifies $\pi_1(G) \cong X_*(T)/Q^\vee$ with the quotient of the coweight lattice by the coroot lattice; this gives $\pi_1(\mathrm{U}(n)) \cong \mathbb{Z}$, $\pi_1(SU(n)) = \pi_1(Sp(n)) = 0$ and $\pi_1(SO(n)) \cong \mathbb{Z}/2$ for $n \geq 3$, and identifies $\pi_1$ of the adjoint group with the centre of the simply connected cover, so that the double cover $SU(2)\to SO(3)$ is the first case of the spin covers. Finally, the long exact homotopy sequence of the fibration $H \to G \to G/H$ computes $\pi_1$ of a homogeneous space from that of the group and the stabiliser; a quotient of a simply connected group by a connected closed subgroup is simply connected.
 
 ## Summary of Notation
 
@@ -197,14 +197,14 @@ The Malcev–Iwasawa theorem reduces the homotopy of a connected Lie group to th
 | $\pi_1(G)$, $H_1(G;\mathbb{Z})$ | Fundamental group of a Lie group; abelian, equals $H_1$ |
 | $\mu$ | Multiplication $G\times G \to G$; the H-space structure |
 | $K$ | Maximal compact subgroup; $G \simeq K$ (Malcev–Iwasawa) |
-| $T$, $X_*(T) = \operatorname{Hom}(U(1),T)$ | Maximal torus; coweight lattice $\cong \pi_1(T)$ |
+| $T$, $X_*(T) = \operatorname{Hom}(\mathrm{U}(1),T)$ | Maximal torus; coweight lattice $\cong \pi_1(T)$ |
 | $\Phi(\mathrm{G},\mathrm{T})$, $\alpha$, $\alpha^\vee$ | Root system, roots, coroots |
 | $Q^\vee = \langle \alpha^\vee\rangle$ | Coroot lattice; $\pi_1(G) \cong X_*(T)/Q^\vee$ (Bott) |
 | $G_{\mathrm{sc}}$, $G_{\mathrm{ad}} = G_{\mathrm{sc}}/Z(G_{\mathrm{sc}})$ | Simply connected cover; adjoint group |
 | $Z(G)$ | Centre; $\pi_1(G_{\mathrm{ad}}) \cong Z(G_{\mathrm{sc}})$ |
-| $SO(n)$, $SU(n)$, $U(n)$, $Sp(n)$, $O(n)$ | Classical compact groups |
+| $SO(n)$, $SU(n)$, $\mathrm{U}(n)$, $Sp(n)$, $O(n)$ | Classical compact groups |
 | $\mathrm{Spin}(n)$ | Simply connected double cover of $SO(n)$, $n \geq 3$ |
-| $GL_n(\mathbb{R})$, $GL_n(\mathbb{C})$ | General linear groups; maximal compact $O(n)$, $U(n)$ |
+| $GL_n(\mathbb{R})$, $GL_n(\mathbb{C})$ | General linear groups; maximal compact $O(n)$, $\mathrm{U}(n)$ |
 | $G/H$, $\pi_n(G/H)$ | Homogeneous space and its homotopy groups |
 | $P/Q$ | Weights modulo roots; dual to $\pi_1$ of the adjoint group |
 

@@ -17,7 +17,7 @@ Throughout, $G$ denotes a topological group, $H$ a discrete group when the conte
 
 **Definition.** Let $G$ be a topological group. A **principal $G$-bundle** over a space $B$ is a map $p : P \to B$ with a right action of $G$ on $P$ preserving the fibres, such that each fibre is a free orbit of $G$ and $B$ is covered by open sets $U$ for which there is a $G$-equivariant homeomorphism $p^{-1}(U) \cong U \times G$ over $U$, the action on the right being by multiplication on $G$. A **morphism** of principal $G$-bundles is a $G$-equivariant map over $B$; the **pullback** $f^*P$ of $P$ along a map $f : X \to B$ is the bundle whose fibre over $x$ is the fibre of $P$ over $f(x)$, with the evident $G$-action. Two bundles over $B$ are **isomorphic** if a morphism between them is a homeomorphism, and the set of isomorphism classes of principal $G$-bundles over $X$ is written $\operatorname{Prin}_G(X)$.
 
-**Example.** The trivial bundle is $X \times G \to X$ with the action on the second factor. For $G = U(1)$ the associated bundle of a principal $G$-bundle via the standard representation on $\mathbb{C}$ is a complex line bundle, and the passage between the two is the standard dictionary which makes the first Chern class of a line bundle a degree-two class of the base; the differentiable theory of a principal connection on such a bundle is that of *Fibre Bundles, Connections and Curvature*.
+**Example.** The trivial bundle is $X \times G \to X$ with the action on the second factor. For $G = \mathrm{U}(1)$ the associated bundle of a principal $G$-bundle via the standard representation on $\mathbb{C}$ is a complex line bundle, and the passage between the two is the standard dictionary which makes the first Chern class of a line bundle a degree-two class of the base; the differentiable theory of a principal connection on such a bundle is that of *Fibre Bundles, Connections and Curvature*.
 
 ### The Classifying Property
 
@@ -111,7 +111,7 @@ $$
 
 of *Homotopy Groups and Fibrations*. Every group in the middle vanishes because $EG$ is weakly contractible, so every connecting map is an isomorphism where both neighbouring terms vanish, which gives the displayed identifications; for $n = 1$ the sequence ends $\pi_0(EG) \to \pi_0(BG) \to \pi_0(G) \to \pi_0(EG)$, reading $\pi_1(BG)$ when basepoints are fixed.
 
-**Example.** For $G = U(1)$ the group is connected with $\pi_1(U(1)) = \mathbb{Z}$ and $\pi_n(U(1)) = 0$ for $n \geq 2$, so $BU(1)$ has $\pi_2 = \mathbb{Z}$ and all other homotopy groups trivial; it is therefore $K(\mathbb{Z},2)$, and indeed $BU(1) = \mathbb{CP}^\infty$. For $G = \mathbb{Z}/2\mathbb{Z}$ discrete one has $\pi_0(G) = \mathbb{Z}/2\mathbb{Z}$, so $B(\mathbb{Z}/2\mathbb{Z})$ has fundamental group $\mathbb{Z}/2\mathbb{Z}$ and no higher homotopy, that is, $B(\mathbb{Z}/2\mathbb{Z}) = K(\mathbb{Z}/2\mathbb{Z},1) = \mathbb{RP}^\infty$.
+**Example.** For $G = \mathrm{U}(1)$ the group is connected with $\pi_1(\mathrm{U}(1)) = \mathbb{Z}$ and $\pi_n(\mathrm{U}(1)) = 0$ for $n \geq 2$, so $BU(1)$ has $\pi_2 = \mathbb{Z}$ and all other homotopy groups trivial; it is therefore $K(\mathbb{Z},2)$, and indeed $BU(1) = \mathbb{CP}^\infty$. For $G = \mathbb{Z}/2\mathbb{Z}$ discrete one has $\pi_0(G) = \mathbb{Z}/2\mathbb{Z}$, so $B(\mathbb{Z}/2\mathbb{Z})$ has fundamental group $\mathbb{Z}/2\mathbb{Z}$ and no higher homotopy, that is, $B(\mathbb{Z}/2\mathbb{Z}) = K(\mathbb{Z}/2\mathbb{Z},1) = \mathbb{RP}^\infty$.
 
 ## The Standard Cases
 
@@ -142,10 +142,10 @@ The surfaces of genus $g \geq 1$ and the wedges of circles illustrate the genera
 |---|---|---|
 | $O(n)$ | $\mathrm{Gr}_n(\mathbb{R}^\infty) = BO(n)$ | tautological $\mathbb{R}^n$-bundle |
 | $SO(n)$ | $\mathrm{Gr}_n^+(\mathbb{R}^\infty) = BSO(n)$ | tautological oriented bundle |
-| $U(n)$ | $\mathrm{Gr}_n(\mathbb{C}^\infty) = BU(n)$ | tautological $\mathbb{C}^n$-bundle |
+| $\mathrm{U}(n)$ | $\mathrm{Gr}_n(\mathbb{C}^\infty) = BU(n)$ | tautological $\mathbb{C}^n$-bundle |
 | $SU(n)$ | $BSU(n)$ | tautological bundle with trivial determinant |
 | $Sp(n)$ | $\mathrm{Gr}_n(\mathbb{H}^\infty) = BSp(n)$ | tautological $\mathbb{H}^n$-bundle |
-| $U(1)$ | $\mathbb{CP}^\infty = BU(1)$ | tautological line bundle |
+| $\mathrm{U}(1)$ | $\mathbb{CP}^\infty = BU(1)$ | tautological line bundle |
 
 The Grassmannians and the Stiefel manifolds, together with the universal property of the tautological bundle, are treated in *Grassmannians and Stiefel Manifolds*; here they supply the concrete models of the classifying spaces of the classical groups, and the inclusions $\mathrm{Gr}_n(\mathbb{K}^N) \hookrightarrow \mathrm{Gr}_n(\mathbb{K}^{N+1})$ exhibit $BG$ as the colimit of finite-dimensional Grassmannians.
 
@@ -153,7 +153,7 @@ The Grassmannians and the Stiefel manifolds, together with the universal propert
 
 *Proof.* Immediate from the path–loop theorem: a connected group has $\pi_0(G) = 0$, so $\pi_1(BG) = 0$, and the remaining statements are the degree shift already established.
 
-**Example.** $BU(1) = \mathbb{CP}^\infty$ has $\pi_2 = \mathbb{Z}$ and higher homotopy trivial, so it is $K(\mathbb{Z},2)$; $BO(1) = \mathbb{RP}^\infty$ is $K(\mathbb{Z}/2\mathbb{Z},1)$; $BSO(2) = BU(1)$ because $SO(2) \cong U(1)$. The descriptions of these groups as matrix groups with their real, complex and quaternionic forms are those of *Matrix Groups and Classical Groups*.
+**Example.** $BU(1) = \mathbb{CP}^\infty$ has $\pi_2 = \mathbb{Z}$ and higher homotopy trivial, so it is $K(\mathbb{Z},2)$; $BO(1) = \mathbb{RP}^\infty$ is $K(\mathbb{Z}/2\mathbb{Z},1)$; $BSO(2) = BU(1)$ because $SO(2) \cong \mathrm{U}(1)$. The descriptions of these groups as matrix groups with their real, complex and quaternionic forms are those of *Matrix Groups and Classical Groups*.
 
 ### Products and Abelian Groups
 

@@ -78,7 +78,7 @@ The complement is therefore an **anti-isomorphism** of the Boolean algebra that 
 
 **Corollary.** The closure is the smallest closed set containing $A$ and the interior is the largest open set contained in $A$; consequently each of the two operators determines the other.
 
-**Proof.** The first clause is the proposition of the previous section and its dual, the dual being that $I(A)$ is open by (I3) and is contained in $A$ by (I2), and any open $U \subseteq A$ satisfies $U = I(U) \subseteq I(A)$ by monotonicity. The last statement is the theorem.
+**Proof.** The first clause is the proposition of the previous section and its dual, the dual being that $I(A)$ is open by (I3) and is contained in $A$ by (I2), and any open $\Omega \subseteq A$ satisfies $\Omega = I(\Omega) \subseteq I(A)$ by monotonicity. The last statement is the theorem.
 
 ## The Boundary
 

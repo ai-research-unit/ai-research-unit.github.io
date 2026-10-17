@@ -18,10 +18,10 @@ A second, less comfortable point belongs in the introduction. Almost every state
 
 ## The Electron as a Biquaternion Field
 
-The notation is that of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, scalar imaginary $i$, and biquaternionic gradient
+The notation is that of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, scalar imaginary $i$, and biquaternionic gradient
 
 $$
-\tilde{\nabla} = e_0\,\partial_{ict} + e_1\,\partial_x + e_2\,\partial_y + e_3\,\partial_z.
+\tilde{\nabla} = e_t\,\partial/\partial Q_t + \vec e_x\,\partial/\partial Q_x + \vec e_y\,\partial/\partial Q_y + \vec e_z\,\partial/\partial Q_z.
 $$
 
 Hermitian conjugation $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ defines the two sectors by their fixed points,
@@ -42,9 +42,9 @@ The electron field carries the electron's data in the following objects.
 | Free equation | $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$ |
 | Mass | the coefficient $m_e$ of the linear, chirality-off-diagonal mass pair |
 | Charge | the coupling $ϙ=-e$ inserted in the gradient (see below) |
-| Spin state | an idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_0 + i\vec u)\in\mathbb{M}_+$ |
+| Spin state | an idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$ |
 | Spin observables | Hermitian elements $\tilde{H} = i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$ |
-| Conserved current | $\tilde{J} = ic\,j^0 e_0 + \vec j\in\mathbb{M}_-$ |
+| Conserved current | $\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-$ |
 | Chiral halves | the left- and right-handed Weyl spinors of the spinor module |
 
 The placement of these objects already contains the article's main structural observation: the electron's state-like data (its spin) and its field-strength-like data (its Coulomb field) are $\mathbb{M}_+$ objects, its current is an $\mathbb{M}_-$ object, the algebra's real structure $\flat$ acts on the two sectors with opposite signs while the mass term couples the two chiralities, and it is the rest-energy phase that rotates one sector into the other. There is no single sector of the algebra in which "the electron" lives.
@@ -72,23 +72,23 @@ so $\flat$ acts as $-1$ on the $\mathbb{M}_+$ part and $+1$ on the $\mathbb{M}_-
 **It sets the rate at which the two sectors rotate into one another.** Factoring the rest energy out of a free plane wave gives
 
 $$
-\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_0 - \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_0),
+\exp(-imc^2t/\hbar) = \cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_t - \sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_t),
 $$
 
-with $e_0\in\mathbb{M}_+$ and $ie_0\in\mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\mathbb{M}_\pm = \mathbb{M}_\mp$ it is a rotation between the sectors at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_0$ toward the $\mathbb{M}_-$ direction $ie_0$ and back. The mass sets this scale — the frequency is $mc^2/\hbar$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
+with $e_t\in\mathbb{M}_+$ and $ie_t\in\mathbb{M}_-$ (an imaginary scalar is anti-Hermitian). The rest-energy phase is central, and because $i\mathbb{M}_\pm = \mathbb{M}_\mp$ it is a rotation between the sectors at angular frequency $mc^2/\hbar$: it takes the $\mathbb{M}_+$ direction $e_t$ toward the $\mathbb{M}_-$ direction $ie_t$ and back. The mass sets this scale — the frequency is $mc^2/\hbar$ — through the mass shell. This is the sense in which the electron's mass, in the framework, *is* the rate of the rotation between the material and informational subspaces.
 
 **What is not derived.** The value $m_e = 9.1093837015\times10^{-31}$ kg, or equivalently $m_ec^2 = 0.510998950$ MeV, is not a consequence of the algebra or of the equation; it is a parameter. The framework is scale-free until $m_e$ is supplied, and every electron scale below — the Compton length, the Zitterbewegung frequency — is set by the supplied value, not produced by the structure.
 
 ## Charge: A Coupling Constant in the Gradient
 
-The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A} = i\phi/c\,e_0 + \vec A\in\mathbb{M}_-$. In the spinor-module form this is the minimal substitution $p\to p - ϙ\vec A$, with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
+The free biquaternion Dirac equation contains no charge. Charge enters only through the coupling of the field to the four-potential $\tilde{A} = i\phi/c\,e_t + \vec A\in\mathbb{M}_-$. In the spinor-module form this is the minimal substitution $p\to p - ϙ\vec A$, with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
 
 Four statements are worth separating.
 
 **The current is derived.** Given the equation, the Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$ is conserved, and in the series' notation it is the four-vector biquaternion
 
 $$
-\tilde{J} = ic\,j^0 e_0 + \vec j\in\mathbb{M}_-, \qquad j^0 = \psi^\dagger\psi \ge 0 .
+\tilde{J} = ic\,j^0 e_t + \vec j\in\mathbb{M}_-, \qquad j^0 = \psi^\dagger\psi \ge 0 .
 $$
 
 That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption.
@@ -98,7 +98,7 @@ That the electron's conserved current is a material-sector object is a structura
 **The electron's Coulomb field is an $\mathbb{M}_+$ object.** For a point charge $ϙ$ at rest the field-strength biquaternion is, from the companion article on Maxwell's equations,
 
 $$
-\tilde{F}(\vec x) = \frac{i\,ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|\vec x\|^2},
+\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \frac{i\,ϙ\,\vec u_x}{4\pi\sqrt{\epsilon}\,\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2},
 $$
 
 a purely imaginary vector, hence an element of the Hermitian subspace $\mathbb{M}_+$. The electron's charge shows itself, in the framework, through a field in the informational sector, while its current lies in the material sector. The two faces of the same charge sit in opposite halves of the algebra.
@@ -109,11 +109,11 @@ a purely imaginary vector, hence an element of the Hermitian subspace $\mathbb{M
 
 The electron's spin is where the framework is strongest and where the distinction between derived and inserted is sharpest.
 
-**Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_0$ on the spinor module while acting as $+e_0$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.
+**Derived: the representation.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique irreducible module, of complex dimension two, and group of unit-norm biquaternions $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. A field placed in that module transforms in the spinor representation $(\tfrac12,0)$: its spin is $\tfrac{1}{2}$, and a rotation by $2\pi$ acts as $-e_t$ on the spinor module while acting as $+e_t$ on the four-vectors of $\mathbb{M}_-$. The twofold, double-valued character of electron spin is therefore a representation-theoretic consequence of where the field lives, not an independent postulate. The spin rotations are the unit-norm biquaternions with real vector part, forming $SU(2)$.
 
-**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_0 + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k e_k$ and $\tilde{P} = \tfrac{1}{2}(e_0 + i n_j e_j)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_jh_j$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_3)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(e_3)(ie_1)\big) = 0$, the correct values for the spin along $z$ and $x$.
+**Derived: the state and observable structure.** On the dictionary used in the companion articles, the electron's spin state along a unit direction $\vec u$ is represented by the idempotent $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)\in\mathbb{M}_+$, and its spin observables are the Hermitian elements $i\vec h\cdot\mathbf{e}\in\mathbb{M}_+$. (The companion articles leave the spinor-to-biquaternion dictionary as a convention; the state and observable structure below is what is checked, and it does not depend on which of the equivalent dictionaries is fixed.) The trace formula reproduces the spin-$\tfrac{1}{2}$ expectation values. For $\tilde{H} = i h_k \vec e_k$ and $\tilde{P} = \tfrac{1}{2}(e_t + i n_\nu \vec e_\nu)$ one has $2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = n_\nu h_\nu$; in particular $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_z)\big) = 1$ and $2\,\mathrm{Sc}\big(\tilde\Pi_1(\vec e_z)(i\vec e_x)\big) = 0$, the correct values for the spin along $z$ and $x$.
 
-**Inserted: the magnitude.** The spin operator is $S_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}ie_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
+**Inserted: the magnitude.** The spin operator is $S_k = \tfrac{\hbar}{2}\sigma_k$, corresponding to $\tfrac{\hbar}{2}i\vec e_k$. The factor $\hbar/2$ is a normalisation, not a prediction: the algebra fixes that spin is two-valued and that its observables close under $SU(2)$, but it does not fix the unit in which spin is measured. The number $\tfrac{1}{2}$ in "spin-$\tfrac{1}{2}$" is algebra; the number $\hbar$ is physics inserted from outside.
 
 ## The Dirac Description of the Electron
 
@@ -123,12 +123,12 @@ $$
 (i\hbar\gamma^\mu\partial_\mu - m_ec)\psi = 0
 $$
 
-in the notation of the companion solutions article. Its plane-wave solutions come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot\vec x))$ and the negative-frequency $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot\vec x))$, with $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label; together they span a four-dimensional complex amplitude space, which is the four components of the Dirac spinor. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
+in the notation of the companion solutions article. Its plane-wave solutions come in two branches at each momentum, the positive-frequency $w^{(r)}(\vec p)\exp(-i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$ and the negative-frequency $v^{(r)}(\vec p)\exp(+i(Et-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)))$, with $E = +\sqrt{\vec p^2c^2 + m_e^2c^4}$ and $r$ the spin label; together they span a four-dimensional complex amplitude space, which is the four components of the Dirac spinor. The spin sums, normalisations, and bilinears are constructed in the companion solutions article and are not repeated here.
 
 **A note on the wave biquaternion.** The mass-shell condition is written in the corpus convention, in which the four-wavevector has the imaginary time component of the $ict$ convention,
 
 $$
-\tilde{K} = i\,\frac{\omega}{c}\,e_0 + \vec k, \qquad
+\tilde{K} = i\,\frac{\omega}{c}\,e_t + \vec k, \qquad
 \langle\tilde{K}\rangle_{\natural} = \tilde{K}\tilde{K}^{\natural} = -\frac{\omega^2}{c^2} + \vec k^2 = -\frac{m_e^2c^2}{\hbar^2},
 $$
 
@@ -206,7 +206,7 @@ Two structural points and two cautions.
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ |
 | Coulomb field $\tilde{F}\in\mathbb{M}_+$ | Derived (from Maxwell) | point-charge solution; purely imaginary vector |
 | Mass term couples the two chiralities (central ideals), off-diagonally | Derived | linear chiral pair; Weyl decomposition |
-| Rest-energy phase rotates sectors at $mc^2/\hbar$ | Derived | $\exp(-i\theta) = \cos\theta\,e_0 - \sin\theta\,(ie_0)$ |
+| Rest-energy phase rotates sectors at $mc^2/\hbar$ | Derived | $\exp(-i\theta) = \cos\theta\,e_t - \sin\theta\,(ie_t)$ |
 | Zitterbewegung frequency and amplitude | Derived | two-branch interference; $2E/\hbar$, $\hbar/(2mc)$ |
 | Mass value $m_e$ | Represented | parameter of the equation |
 | Charge value $e$, sign convention, quantisation | Represented | minimal coupling; no derivation in the framework |
@@ -222,7 +222,7 @@ Two gaps are structural and cannot be closed by better notation: the mass value 
 
 ## Summary
 
-The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $\exp(-im_ec^2t/\hbar) = \cos(m_ec^2t/\hbar)e_0 - \sin(m_ec^2t/\hbar)(ie_0)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
+The electron is the biquaternion Dirac field, satisfying the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m_e\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m_e\tilde{\Psi}_R$, and its spinor-module transcription, the standard Dirac equation. Its mass appears as the coefficient of that off-diagonal chirality coupling; the algebra's real structure $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ acts on the two sectors with opposite signs, and the rest-energy phase $\exp(-im_ec^2t/\hbar) = \cos(m_ec^2t/\hbar)e_t - \sin(m_ec^2t/\hbar)(ie_t)$ rotates the two sectors into one another at $m_ec^2/\hbar$. Its charge is inserted at the gradient by minimal coupling, which for the linear mass pair is exactly gauge covariant; the conserved current is then derived and lies in $\mathbb{M}_-$, while the static Coulomb field of a point charge is a purely imaginary vector and lies in $\mathbb{M}_+$.
 
 The framework derives the electron's spin-$\tfrac{1}{2}$ representation content from the unique irreducible module of $\mathbb{B}\cong M_2(\mathbb{C})$, and the spin state and observable structure from the idempotents of $\mathbb{M}_+$ with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$; the magnitude $\hbar/2$ is a normalisation. It derives the tree-level gyromagnetic factor $g=2$ from the $1/2m_e$ coefficient produced by eliminating the small component, giving $\vec\mu_e = -(e/m_e)\vec S$ and one Bohr magneton $\mu_B = e\hbar/2m_e = 9.274010\times10^{-24}$ J T$^{-1}$; the anomalous part $a\approx\alpha/2\pi$ is outside the equation. It reproduces the Zitterbewegung at $\omega_Z = 2m_ec^2/\hbar = 1.55269\times10^{21}$ rad s$^{-1}$ and amplitude $\hbar/(2m_ec) = 193.1$ fm, and the companion article's test shows the trembling is the second harmonic of the sector rotation, not a signature of either sector. It contains the two-chirality structure and the mass term as the chirality-mixing coupling, but not the weak $V-A$ coupling of the left-handed electron.
 
@@ -233,17 +233,17 @@ The electron is not an element of either sector: state-like and field-strength-l
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace |
-| $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_k\partial/\partial Q_k$ | Biquaternionic gradient (Dirac operator) |
 | $\tilde{\Psi}$, $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_0 + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
+| $\tilde\Pi_1(\vec u) = \tfrac{1}{2}(e_t + i\vec u)$ | Spin-state idempotent in $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
-| $\tilde{J} = ic\,j^0 e_0 + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
-| $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|\vec x\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |
-| $\tilde{K} = i\omega/c\,e_0 + \vec k$ | Four-wavevector; $\langle\tilde{K}\rangle_{\natural} = -m^2c^2/\hbar^2$ |
+| $\tilde{J} = ic\,j^0 e_t + \vec j$ | Conserved four-current, in $\mathbb{M}_-$ |
+| $\tilde{F} = iϙ\vec u_x/(4\pi\sqrt{\epsilon}\|(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\|^2)$ | Coulomb field of a point charge, in $\mathbb{M}_+$ |
+| $\tilde{K} = i\omega/c\,e_t + \vec k$ | Four-wavevector; $\langle\tilde{K}\rangle_{\natural} = -m^2c^2/\hbar^2$ |
 | $m_e$, $e$, $\hbar$ | Electron mass, elementary charge, reduced Planck constant |
 | $\gamma_5$, $\psi_L$, $\psi_R$ | Chirality operator; left- and right-handed Weyl spinors |
 | $g$, $\mu_B = e\hbar/2m_e$ | Gyromagnetic factor; Bohr magneton |

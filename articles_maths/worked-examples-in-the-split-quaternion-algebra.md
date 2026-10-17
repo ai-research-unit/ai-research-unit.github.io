@@ -7,70 +7,70 @@ This article collects explicit computations in the split-quaternion algebra $\ma
 
 The article is a companion to the structural articles of the category. Its purpose is to put the abstract statements on concrete elements, so that the reader can carry each of them back to a computation. It introduces no new result; the statements it illustrates are those of *Split-Quaternion Algebra*, *Split-Quaternion Idempotents and Projections*, *Split-Quaternion Zero Divisors*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
-**Conventions.** A split-quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_0, q_1, q_2, q_3 \in \mathbb{R}$ and the products $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$, $e_1 e_2 = -e_2 e_1$. Its conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and its central product is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm e_2)$ are the standard idempotents.
+**Conventions.** A split-quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, with $q_t, q_x, q_y, q_z \in \mathbb{R}$ and the products $\vec e_x^2 = -1$, $\vec e_y^2 = +1$, $\vec e_z = \vec e_x \vec e_y$, $\vec e_x \vec e_y = -\vec e_y \vec e_x$. Its conjugation is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ and its central product is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, formed and evaluated algebraically and read metrically in *Split-Quaternion Norm and Invertibility*. The elements $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$ are the standard idempotents.
 
 ## The Basis Products
 
-The multiplication table, whose entry in row $i$ and column $j$ is $e_i e_j$, is
+The multiplication table, whose entry in row $\mu$ and column $\nu$ is $e_\mu e_\nu$, is
 
-| | $1$ | $e_1$ | $e_2$ | $e_3$ |
+| | $1$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $1$ | $1$ | $e_1$ | $e_2$ | $e_3$ |
-| $e_1$ | $e_1$ | $-1$ | $e_3$ | $-e_2$ |
-| $e_2$ | $e_2$ | $-e_3$ | $+1$ | $-e_1$ |
-| $e_3$ | $e_3$ | $e_2$ | $e_1$ | $+1$ |
+| $1$ | $1$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
+| $\vec e_x$ | $\vec e_x$ | $-1$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $\vec e_y$ | $-\vec e_z$ | $+1$ | $-\vec e_x$ |
+| $\vec e_z$ | $\vec e_z$ | $\vec e_y$ | $\vec e_x$ | $+1$ |
 
-**Example (a product worked in full).** The entry $e_3^2 = +1$ follows from $e_3 = e_1 e_2$ and anticommutativity:
+**Example (a product worked in full).** The entry $\vec e_z^2 = +1$ follows from $\vec e_z = \vec e_x \vec e_y$ and anticommutativity:
 
 $$
-e_3^2 = e_1 e_2 e_1 e_2 = -e_1^2 e_2^2 = -(-1)(+1) = +1 .
+\vec e_z^2 = \vec e_x \vec e_y \vec e_x \vec e_y = -\vec e_x^2 \vec e_y^2 = -(-1)(+1) = +1 .
 $$
 
 The product of two general elements, worked from the table, is
 
 $$
-(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3)(q_0' e_0 + q_1' e_1 + q_2' e_2 + q_3' e_3)
-= (q_0 q_0' - q_1 q_1' + q_2 q_2' + q_3 q_3') + (q_0 q_1' + q_0' q_1 - q_2 q_3' + q_2' q_3)e_1
-+ (q_0 q_2' + q_0' q_2 + q_1 q_3' - q_1' q_3)e_2 + (q_0 q_3' + q_0' q_3 + q_1 q_2' - q_1' q_2)e_3 .
+(q_{1t} e_t + q_{1x} \vec e_x + q_{1y} \vec e_y + q_{1z} \vec e_z)(q_{2t} e_t + q_{2x} \vec e_x + q_{2y} \vec e_y + q_{2z} \vec e_z)
+= (q_{1t} q_{2t} - q_{1x} q_{2x} + q_{1y} q_{2y} + q_{1z} q_{2z}) + (q_{1t} q_{2x} + q_{2t} q_{1x} - q_{1y} q_{2z} + q_{2y} q_{1z})\vec e_x
++ (q_{1t} q_{2y} + q_{2t} q_{1y} + q_{1x} q_{2z} - q_{2x} q_{1z})\vec e_y + (q_{1t} q_{2z} + q_{2t} q_{1z} + q_{1x} q_{2y} - q_{2x} q_{1y})\vec e_z .
 $$
 
 The product is associative and distributive, so the multiplication table of the four basis elements determines it completely; the table is collected in the summary. The products of the vector basis elements are
 
 $$
-e_1^2 = -1, \quad e_2^2 = 1, \quad e_3^2 = 1, \qquad
-e_1e_2 = e_3, \quad e_2e_1 = -e_3, \qquad
-e_1e_3 = -e_2, \quad e_3e_1 = e_2, \qquad
-e_2e_3 = -e_1, \quad e_3e_2 = e_1 .
+\vec e_x^2 = -1, \quad \vec e_y^2 = 1, \quad \vec e_z^2 = 1, \qquad
+\vec e_x \vec e_y = \vec e_z, \quad \vec e_y \vec e_x = -\vec e_z, \qquad
+\vec e_x \vec e_z = -\vec e_y, \quad \vec e_z \vec e_x = \vec e_y, \qquad
+\vec e_y \vec e_z = -\vec e_x, \quad \vec e_z \vec e_y = \vec e_x .
 $$
 
-**Example.** For $\tilde q = 2 + e_1$ and $\tilde p = 1 + e_2 + e_3$, the table gives
+**Example.** For $\tilde q = 2 + \vec e_x$ and $\tilde p = 1 + \vec e_y + \vec e_z$, the table gives
 
 $$
-(2 + e_1)(1 + e_2 + e_3) = 2 + 2e_2 + 2e_3 + e_1 + e_1e_2 + e_1e_3 = 2 + e_1 + 2e_2 + 2e_3 - e_2 + e_3 = 2 + e_1 + e_2 + 3e_3 ,
+(2 + \vec e_x)(1 + \vec e_y + \vec e_z) = 2 + 2\vec e_y + 2\vec e_z + \vec e_x + \vec e_x \vec e_y + \vec e_x \vec e_z = 2 + \vec e_x + 2\vec e_y + 2\vec e_z - \vec e_y + \vec e_z = 2 + \vec e_x + \vec e_y + 3\vec e_z ,
 $$
 
-so the product is $\tilde q \tilde p = 2 + e_1 + e_2 + 3e_3$; the coefficient of $e_1$ also follows from the general product formula displayed above.
+so the product is $\tilde q \tilde p = 2 + \vec e_x + \vec e_y + 3\vec e_z$; the coefficient of $\vec e_x$ also follows from the general product formula displayed above.
 
 ## The Three Involutions and Their Eigenspaces
 
 Three involutions act on the algebra. The **conjugation** ${}^{\natural}$ negates the vector part, the **principal involution** $\alpha$ is the automorphism
 
 $$
-\alpha(e_1) = -e_1, \qquad \alpha(e_2) = -e_2, \qquad \alpha(e_3) = e_3,
+\alpha(\vec e_x) = -\vec e_x, \qquad \alpha(\vec e_y) = -\vec e_y, \qquad \alpha(\vec e_z) = \vec e_z,
 $$
 
 and the **reversal** $\rho$ is the anti-automorphism
 
 $$
-\rho(e_1) = e_1, \qquad \rho(e_2) = e_2, \qquad \rho(e_3) = -e_3 .
+\rho(\vec e_x) = \vec e_x, \qquad \rho(\vec e_y) = \vec e_y, \qquad \rho(\vec e_z) = -\vec e_z .
 $$
 
 On a general element they read
 
 $$
-\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad
-\alpha(\tilde q) = q_0 - q_1 e_1 - q_2 e_2 + q_3 e_3, \qquad
-\rho(\tilde q) = q_0 + q_1 e_1 + q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z, \qquad
+\alpha(\tilde q) = q_t - q_x \vec e_x - q_y \vec e_y + q_z \vec e_z, \qquad
+\rho(\tilde q) = q_t + q_x \vec e_x + q_y \vec e_y - q_z \vec e_z,
 $$
 
 and the three are related by $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \rho(\alpha(\tilde q))$.
@@ -79,72 +79,72 @@ and the three are related by $\tilde{q}^{\natural} = \alpha(\rho(\tilde q)) = \r
 
 | involution | $+1$ eigenspace | $-1$ eigenspace | dimensions |
 |---|---|---|---|
-| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $1, 3$ |
-| $\alpha$ | $\operatorname{span}\{1, e_3\}$ | $\operatorname{span}\{e_1, e_2\}$ | $2, 2$ |
-| $\rho$ | $\operatorname{span}\{1, e_1, e_2\}$ | $\mathbb{R} e_3$ | $3, 1$ |
+| ${}^{\natural}$ | $S = \mathbb{R}\cdot 1$ | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $1, 3$ |
+| $\alpha$ | $\operatorname{span}\{1, \vec e_z\}$ | $\operatorname{span}\{\vec e_x, \vec e_y\}$ | $2, 2$ |
+| $\rho$ | $\operatorname{span}\{1, \vec e_x, \vec e_y\}$ | $\mathbb{R} \vec e_z$ | $3, 1$ |
 
 **Example (the common eigenspaces).** Since $\alpha$ and $\rho$ commute, they are simultaneously diagonalisable, and the common eigenspaces of the pair $(\alpha, \rho)$ are
 
 $$
-\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1, e_2\} \oplus \mathbb{R} e_3,
+\mathbb{H}_{\mathrm{s}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x, \vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$
 
-on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The plane $\operatorname{span}\{e_1,e_2\}$ is not split further: on it the conjugation also acts as $-1$, so no eigenspace of any of the three involutions cuts it. This is the finest decomposition produced by the involutions, and it is recorded in *Split-Quaternion Subspaces and the Involutions*.
+on which the sign pair $(\alpha, \rho)$ is $(+,+)$, $(-,+)$ and $(+,-)$ respectively. The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ is not split further: on it the conjugation also acts as $-1$, so no eigenspace of any of the three involutions cuts it. This is the finest decomposition produced by the involutions, and it is recorded in *Split-Quaternion Subspaces and the Involutions*.
 
 ## The Idempotents and the Two Minimal Left Ideals
 
-**Example (the standard idempotents).** With $\tilde\pi_1 = \tfrac{1}{2}(1 + e_2)$ and $\tilde\pi_2 = \tfrac{1}{2}(1 - e_2)$,
+**Example (the standard idempotents).** With $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$ and $\tilde\pi_2 = \tfrac{1}{2}(1 - \vec e_y)$,
 
 $$
-\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2e_2 + e_2^2) = \tfrac{1}{4}(2 + 2e_2) = \tilde\pi_1,
+\tilde\pi_1^2 = \tfrac{1}{4}(1 + 2\vec e_y + \vec e_y^2) = \tfrac{1}{4}(2 + 2\vec e_y) = \tilde\pi_1,
 $$
 
 and $\tilde\pi_2^2 = \tilde\pi_2$ likewise. Moreover
 
 $$
-\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - e_2^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0 .
+\tilde\pi_1 \tilde\pi_2 = \tfrac{1}{4}(1 - \vec e_y^2) = 0, \qquad \tilde\pi_1 + \tilde\pi_2 = 1, \qquad \langle\tilde\pi_1\rangle_{\natural} = \langle\tilde\pi_2\rangle_{\natural} = 0 .
 $$
 
-They are not central, since $e_1 \tilde\pi_1 = \tfrac{1}{2}(e_1 + e_3)$ while $\tilde\pi_1 e_1 = \tfrac{1}{2}(e_1 - e_3)$.
+They are not central, since $\vec e_x \tilde\pi_1 = \tfrac{1}{2}(\vec e_x + \vec e_z)$ while $\tilde\pi_1 \vec e_x = \tfrac{1}{2}(\vec e_x - \vec e_z)$.
 
-**Example (the two minimal left ideals).** The reductions $e_2 \tilde\pi_1 = \tilde\pi_1$ and $e_3 \tilde\pi_1 = \tfrac{1}{2}(e_3 + e_1) = e_1 \tilde\pi_1$ give
-
-$$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, e_1 \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + e_2),\, \tfrac{1}{2}(e_1 + e_3)\big\},
-$$
+**Example (the two minimal left ideals).** The reductions $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\vec e_z \tilde\pi_1 = \tfrac{1}{2}(\vec e_z + \vec e_x) = \vec e_x \tilde\pi_1$ give
 
 $$
-\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, e_1 \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - e_2),\, \tfrac{1}{2}(e_1 - e_3)\big\},
+\mathbb{H}_{\mathrm{s}} \tilde\pi_1 = \operatorname{span}\{\tilde\pi_1, \vec e_x \tilde\pi_1\} = \operatorname{span}\big\{\tfrac{1}{2}(1 + \vec e_y),\, \tfrac{1}{2}(\vec e_x + \vec e_z)\big\},
 $$
 
-each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(e_1+e_3)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(e_1-e_3)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+$$
+\mathbb{H}_{\mathrm{s}} \tilde\pi_2 = \operatorname{span}\{\tilde\pi_2, \vec e_x \tilde\pi_2\} = \operatorname{span}\big\{\tfrac{1}{2}(1 - \vec e_y),\, \tfrac{1}{2}(\vec e_x - \vec e_z)\big\},
+$$
 
-**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, e_2\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 e_3 \tilde\pi_2 = \tfrac{1}{2}(e_3 - e_1) \neq 0$.
+each of real dimension $2$, with $\mathbb{H}_{\mathrm{s}} = \mathbb{H}_{\mathrm{s}} \tilde\pi_1 \oplus \mathbb{H}_{\mathrm{s}} \tilde\pi_2$. The four spanning elements are the vectors $\tilde\pi_1$, $\tilde p = \tfrac{1}{2}(\vec e_x+\vec e_z)$, $\tilde\pi_2$, $-\tilde q = \tfrac{1}{2}(\vec e_x-\vec e_z)$ of the matrix-unit basis $\{\tilde\pi_1, \tilde q, \tilde p, \tilde\pi_2\}$ of *Split-Quaternion Ideals and Peirce Decomposition*.
+
+**Example (the split-complex subalgebra).** The idempotents lie in the subalgebra $\operatorname{span}\{1, \vec e_y\} \cong \mathbb{D}$, and in that commutative algebra they are central; in $\mathbb{H}_{\mathrm{s}}$ they are not, and the decomposition they give is a decomposition of modules and not of algebras, because $\tilde\pi_1 \vec e_z \tilde\pi_2 = \tfrac{1}{2}(\vec e_z - \vec e_x) \neq 0$.
 
 ## Explicit Zero-Divisor Pairs
 
 **Example (two split-complex pairs).** Let $\lambda, \mu$ be real. Then
 
 $$
-(1 + e_2)(1 - e_2) = 1 - e_2^2 = 0, \qquad (1 + e_3)(1 - e_3) = 1 - e_3^2 = 0,
+(1 + \vec e_y)(1 - \vec e_y) = 1 - \vec e_y^2 = 0, \qquad (1 + \vec e_z)(1 - \vec e_z) = 1 - \vec e_z^2 = 0,
 $$
 
-so $(1+e_2)$ with $(1-e_2)$, and $(1+e_3)$ with $(1-e_3)$, are explicit pairs of nonzero zero divisors.
+so $(1+\vec e_y)$ with $(1-\vec e_y)$, and $(1+\vec e_z)$ with $(1-\vec e_z)$, are explicit pairs of nonzero zero divisors.
 
-**Example (a nilpotent pair).** The element $e_1 + e_3$ is nonzero and
-
-$$
-(e_1 + e_3)^2 = e_1^2 + e_1 e_3 + e_3 e_1 + e_3^2 = -1 + (-e_2) + e_2 + 1 = 0,
-$$
-
-so $e_1 + e_3$ is a nonzero nilpotent and the pair $(e_1+e_3, e_1+e_3)$ is a zero-divisor pair.
-
-Every nilpotent lies in the vector subspace $V$ and on the level set $N = 0$, $q_1^2 = q_2^2 + q_3^2$; the element $1 + e_2$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+e_2)^2 = 2(1+e_2) \neq 0$.
-
-**Example (a mixed pair).** The idempotent $\tilde\pi_2$ annihilates $1 + e_2$:
+**Example (a nilpotent pair).** The element $\vec e_x + \vec e_z$ is nonzero and
 
 $$
-(1 + e_2) \tilde\pi_2 = 2 \tilde\pi_1 \tilde\pi_2 = 0,
+(\vec e_x + \vec e_z)^2 = \vec e_x^2 + \vec e_x \vec e_z + \vec e_z \vec e_x + \vec e_z^2 = -1 + (-\vec e_y) + \vec e_y + 1 = 0,
+$$
+
+so $\vec e_x + \vec e_z$ is a nonzero nilpotent and the pair $(\vec e_x+\vec e_z, \vec e_x+\vec e_z)$ is a zero-divisor pair.
+
+Every nilpotent lies in the vector subspace $V$ and on the level set $N = 0$, $q_x^2 = q_y^2 + q_z^2$; the element $1 + \vec e_y$ shows that the zero divisor set is strictly larger than the nilpotent set, since $(1+\vec e_y)^2 = 2(1+\vec e_y) \neq 0$.
+
+**Example (a mixed pair).** The idempotent $\tilde\pi_2$ annihilates $1 + \vec e_y$:
+
+$$
+(1 + \vec e_y) \tilde\pi_2 = 2 \tilde\pi_1 \tilde\pi_2 = 0,
 $$
 
 a pair in which neither factor is a nilpotent.
@@ -153,18 +153,18 @@ a pair in which neither factor is a nilpotent.
 
 **Criterion (from *Split-Quaternion Norm and Invertibility*).** A nonzero $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$. It is recalled here only to be applied.
 
-**Example (a unit of positive norm).** For $\tilde q = 2 + e_1$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = 4 + 1 = 5$, and
+**Example (a unit of positive norm).** For $\tilde q = 2 + \vec e_x$, the split-quaternion norm is $\langle\tilde q\rangle_{\natural} = 4 + 1 = 5$, and
 
 $$
-\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{2 - e_1}{5}, \qquad
-(2 + e_1)\frac{2 - e_1}{5} = \frac{4 - e_1^2}{5} = \frac{5}{5} = 1 .
+\tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_{\natural}} = \frac{2 - \vec e_x}{5}, \qquad
+(2 + \vec e_x)\frac{2 - \vec e_x}{5} = \frac{4 - \vec e_x^2}{5} = \frac{5}{5} = 1 .
 $$
 
-**Example (a unit of norm one).** For $\tilde p = 1 + e_1 + e_2$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - e_1 - e_2$; indeed $\tilde p \tilde p^{\natural} = (1+e_1+e_2)(1-e_1-e_2) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.
+**Example (a unit of norm one).** For $\tilde p = 1 + \vec e_x + \vec e_y$, the split-quaternion norm is $\langle\tilde p\rangle_{\natural} = 1 + 1 - 1 = 1$, so $\tilde p^{-1} = \tilde p^{\natural} = 1 - \vec e_x - \vec e_y$; indeed $\tilde p \tilde p^{\natural} = (1+\vec e_x+\vec e_y)(1-\vec e_x-\vec e_y) = 1$. Since $\langle\tilde p\rangle_{\natural} = 1$, the element is a unit split-quaternion.
 
-**Example (a unit of negative norm).** For $\tilde r = e_2$, the split-quaternion norm is $\langle\tilde r\rangle_{\natural} = -1$, and $\tilde r^{-1} = \bar{\tilde r}/\langle\tilde r\rangle_{\natural} = (-e_2)/(-1) = e_2$, consistent with $e_2^2 = 1$. 
+**Example (a unit of negative norm).** For $\tilde r = \vec e_y$, the split-quaternion norm is $\langle\tilde r\rangle_{\natural} = -1$, and $\tilde r^{-1} = \bar{\tilde r}/\langle\tilde r\rangle_{\natural} = (-\vec e_y)/(-1) = \vec e_y$, consistent with $\vec e_y^2 = 1$. 
 
-**Example (a non-unit).** For $w = 1 + e_3$, the split-quaternion norm is $\langle w\rangle_{\natural} = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+e_3)(1-e_3) = 0$. 
+**Example (a non-unit).** For $w = 1 + \vec e_z$, the split-quaternion norm is $\langle w\rangle_{\natural} = 1 - 1 = 0$, so $w$ is not invertible; and indeed $(1+\vec e_z)(1-\vec e_z) = 0$. 
 
 The four examples realise the three-way classification of *Split-Quaternion Norm and Invertibility* by the value of $\langle\cdot\rangle_{\natural}$: a positive value ($N = 5$ and $N = 1$), a negative value ($N = -1$), and the value zero ($N = 0$, the zero divisors).
 
@@ -174,20 +174,20 @@ The action of a unit on the vector subspace by conjugation, the elliptic and hyp
 
 ## Summary
 
-The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{e_1,e_2\} \oplus \mathbb{R} e_3$ are listed, and the plane $\operatorname{span}\{e_1,e_2\}$ does not split further.
+The basis products are collected in one table, and the multiplication table determines the algebra. The three involutions — conjugation, the principal involution $\alpha$ and the reversal $\rho$ — are diagonalisable; their individual eigenspaces and their common refinement $\mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$ are listed, and the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split further.
 
-The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, e_1 \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+e_2)(1-e_2) = 0$, $(1+e_3)(1-e_3) = 0$, the nilpotent $(e_1+e_3)^2 = 0$, and the mixed pair $(1+e_2)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+e_1$ (positive norm), $1+e_1+e_2$ (norm one), $e_2$ (negative norm), and the non-unit $1+e_3$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
+The idempotents $\tilde\pi_{1,2}$ are verified to be orthogonal, complete and of zero norm, and they give the two minimal left ideals $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2} = \operatorname{span}\{\tilde\pi_{1,2}, \vec e_x \tilde\pi_{1,2}\}$. Explicit zero-divisor pairs are $(1+\vec e_y)(1-\vec e_y) = 0$, $(1+\vec e_z)(1-\vec e_z) = 0$, the nilpotent $(\vec e_x+\vec e_z)^2 = 0$, and the mixed pair $(1+\vec e_y)\tilde\pi_2 = 0$. The unit criterion is carried through on four elements: $2+\vec e_x$ (positive norm), $1+\vec e_x+\vec e_y$ (norm one), $\vec e_y$ (negative norm), and the non-unit $1+\vec e_z$ (zero norm). The action of the unit group on the vector subspace is not worked here; it is the subject of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{s}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a general split-quaternion | *Split-Quaternion Algebra* |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a general split-quaternion | *Split-Quaternion Algebra* |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
-| $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm e_2)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
+| $\tilde\pi_{1,2} = \tfrac{1}{2}(1\pm \vec e_y)$ | the standard idempotents | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_{1,2}$ | the two minimal left ideals | *Split-Quaternion Idempotents and Projections* |
-| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the central product, formed and evaluated algebraically | *Split-Quaternion Algebra* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading

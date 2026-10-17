@@ -61,7 +61,7 @@ where $A^{\dagger}$ is the adjoint of $A$ for $h$, $h(Au,v) = h(u,A^{\dagger}v)$
 $$
 \langle L_U X, L_U Y\rangle = \langle X, Y\rangle, \qquad \langle R_U X, R_U Y\rangle = \langle X, Y\rangle ,
 $$
-and the maps $U \mapsto L_U$ and $U \mapsto R_U$ are commuting unitary representations of the unitary group $U(V,h)$ on the Hermitian space $E$.
+and the maps $U \mapsto L_U$ and $U \mapsto R_U$ are commuting unitary representations of the unitary group $\mathrm{U}(V,h)$ on the Hermitian space $E$.
 
 **Proof.** $\langle L_UX,L_UY\rangle = \operatorname{tr}((UX)^\dagger UY) = \operatorname{tr}(X^\dagger U^\dagger U Y) = \operatorname{tr}(X^\dagger Y)$, and likewise on the right with $U^\dagger U$ placed on the other side; the representation property is the composition law, and the commutativity of the two images is the proposition above. The unitary group and the involution are *The Unitary and Symplectic Groups* and *Hermitian Geometry and the Unitary Group*.
 

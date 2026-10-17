@@ -3,14 +3,14 @@
 
 ## Introduction
 
-*Hypercomplex Analysis* introduced a hypercomplex system $(A,D)$, where $A$ is a finite-dimensional unital associative real algebra and $D = \sum_\alpha B_\alpha \partial_\alpha$ is a generalised Cauchy–Riemann operator, and defined a function to be left regular when $Df = 0$. This article studies the operator itself: its symbol, the generalised Cauchy–Riemann equations it represents as a system of first-order equations, the ellipticity that follows from the Clifford relations, the relation between left and right regularity, the consequences of ellipticity for the kernel, and the sense in which the operator and the class of regular functions determine each other.
+*Hypercomplex Analysis* introduced a hypercomplex system $(A,D)$, where $A$ is a finite-dimensional unital associative real algebra and $D = \sum_\alpha B_\alpha \partial/\partial x_\alpha$ is a generalised Cauchy–Riemann operator, and defined a function to be left regular when $Df = 0$. This article studies the operator itself: its symbol, the generalised Cauchy–Riemann equations it represents as a system of first-order equations, the ellipticity that follows from the Clifford relations, the relation between left and right regularity, the consequences of ellipticity for the kernel, and the sense in which the operator and the class of regular functions determine each other.
 
-The subject is the operator, not a particular algebra. Everything below is a statement about $(A, D)$ under the standing hypotheses, and every particular hypercomplex theory is an instance: for $A = \mathbb{C}$ with $D = \partial_0 + i\partial_1$ the results reduce to the Cauchy–Riemann equations and the standard facts about holomorphic functions, and for $A = \mathbb{H}$ with the Fueter operator they reduce to the theory of monogenic functions. The systems themselves are treated in categories 26 to 29; here the operator is general.
+The subject is the operator, not a particular algebra. Everything below is a statement about $(A, D)$ under the standing hypotheses, and every particular hypercomplex theory is an instance: for $A = \mathbb{C}$ with $D = \partial/\partial x_0 + i\partial/\partial x_1$ the results reduce to the Cauchy–Riemann equations and the standard facts about holomorphic functions, and for $A = \mathbb{H}$ with the Fueter operator they reduce to the theory of monogenic functions. The systems themselves are treated in categories 26 to 29; here the operator is general.
 
 Throughout, $A$ is a finite-dimensional unital associative real algebra of dimension $m$, with fixed basis $e_0 = 1, e_1, \dots, e_{m-1}$; coordinates $x = \sum_\alpha x_\alpha e_\alpha$; and
 
 $$
-D = \partial_0 + \sum_{k \geq 1} B_k \partial_k, \qquad \bar D = \partial_0 - \sum_{k \geq 1} B_k \partial_k,
+D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad \bar D = \partial/\partial x_0 - \sum_{k \geq 1} B_k \partial/\partial x_k,
 $$
 
 the coefficients $B_k \in A$ satisfying the Clifford relations
@@ -55,20 +55,20 @@ using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\xi_
 
 **Corollary.** The symbol $\sigma_D$ is invertible for every nonzero covector, so $D$ is a first-order elliptic operator with constant coefficients on $\mathbb{R}^m$; in particular the Laplace-type operators $D\bar D$ and $\bar D D$ are the Laplacian.
 
-Ellipticity is exactly the property that makes the Cauchy–Riemann operator behave like the complex operator $\partial_0 + i\partial_1$ rather than like an arbitrary first-order system: it forces the solutions to be as regular as the coefficients, and it produces the integral representation of the next section.
+Ellipticity is exactly the property that makes the Cauchy–Riemann operator behave like the complex operator $\partial/\partial x_0 + i\partial/\partial x_1$ rather than like an arbitrary first-order system: it forces the solutions to be as regular as the coefficients, and it produces the integral representation of the next section.
 
 ## The Generalised Cauchy–Riemann Equations
 
 Write the coefficients in the basis, $B_\alpha = \sum_{\gamma} b^{\gamma}_{\alpha} e_\gamma$, and write $f = \sum_\delta f^\delta e_\delta$ with component functions $f^\delta : \Omega \to \mathbb{R}$. Then
 
 $$
-Df = \sum_{\alpha,\gamma,\delta} b^{\gamma}_{\alpha} \bigl(\partial_\alpha f^\delta\bigr)\, e_\gamma e_\delta,
+Df = \sum_{\alpha,\gamma,\delta} b^{\gamma}_{\alpha} \bigl(\partial/\partial x_\alpha f^\delta\bigr)\, e_\gamma e_\delta,
 $$
 
 and expanding $e_\gamma e_\delta = \sum_\varepsilon c^{\varepsilon}_{\gamma\delta} e_\varepsilon$ in the structure constants $c^{\varepsilon}_{\gamma\delta}$ of $A$ gives
 
 $$
-Df = \sum_\varepsilon \Bigl(\sum_{\alpha,\gamma,\delta} b^\gamma_\alpha c^\varepsilon_{\gamma\delta} \,\partial_\alpha f^\delta\Bigr) e_\varepsilon.
+Df = \sum_\varepsilon \Bigl(\sum_{\alpha,\gamma,\delta} b^\gamma_\alpha c^\varepsilon_{\gamma\delta} \,\partial/\partial x_\alpha f^\delta\Bigr) e_\varepsilon.
 $$
 
 **Proposition (the Cauchy–Riemann equations).** The equation $Df = 0$ is equivalent to the system of $m$ real first-order partial differential equations with constant coefficients
@@ -77,7 +77,7 @@ $$
 \sum_{\delta=0}^{m-1} L^{\varepsilon}_{\delta}(\partial)\, f^\delta = 0, \qquad \varepsilon = 0, \dots, m-1,
 $$
 
-where $L^{\varepsilon}_{\delta}(\partial) = \sum_{\alpha,\gamma} b^{\gamma}_{\alpha} c^{\varepsilon}_{\gamma\delta} \partial_\alpha$ is a first-order scalar differential operator. For $A = \mathbb{C}$ and $D = \partial_0 + i\partial_1$ this system is the pair of Cauchy–Riemann equations; for $A = \mathbb{H}$ and the Fueter operator it is the quaternionic Cauchy–Riemann system.
+where $L^{\varepsilon}_{\delta}(\partial) = \sum_{\alpha,\gamma} b^{\gamma}_{\alpha} c^{\varepsilon}_{\gamma\delta} \partial/\partial x_\alpha$ is a first-order scalar differential operator. For $A = \mathbb{C}$ and $D = \partial/\partial x_0 + i\partial/\partial x_1$ this system is the pair of Cauchy–Riemann equations; for $A = \mathbb{H}$ and the Fueter operator it is the quaternionic Cauchy–Riemann system.
 
 The system has as many equations as unknowns, but it is not a determined system in the classical sense: its symbol is a multiplication operator in the algebra, and for a non-commutative $A$ the components are coupled in a way that no single scalar equation captures. The correct invariant of the system is the operator $D$, and the correct notion of regularity is $Df = 0$.
 
@@ -88,24 +88,24 @@ The system has as many equations as unknowns, but it is not a determined system 
 The equation $Df = 0$ uses left multiplication of the values by the coefficients. Since $A$ is not commutative in general, the equation $fD = 0$ with right multiplication,
 
 $$
-fD = \sum_{\alpha=0}^{m-1} \partial_\alpha f\, B_\alpha,
+fD = \sum_{\alpha=0}^{m-1} \partial/\partial x_\alpha f\, B_\alpha,
 $$
 
 defines a different class of functions, the **right regular** functions. The two classes are exchanged by an anti-automorphism.
 
-**Theorem (conjugation exchanges the sides).** Suppose $\rho : A \to A$ is an involutive anti-automorphism — an $\mathbb{R}$-linear bijection with $\rho(xy) = \rho(y)\rho(x)$ and $\rho^2 = \mathrm{id}$ — and set $\bar D = \sum_\alpha \rho(B_\alpha)\partial_\alpha$. Then $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular.
+**Theorem (conjugation exchanges the sides).** Suppose $\rho : A \to A$ is an involutive anti-automorphism — an $\mathbb{R}$-linear bijection with $\rho(xy) = \rho(y)\rho(x)$ and $\rho^2 = \mathrm{id}$ — and set $\bar D = \sum_\alpha \rho(B_\alpha)\partial/\partial x_\alpha$. Then $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular.
 
-*Proof.* For a differentiable $f$ and a fixed index $\alpha$, linearity of $\rho$ gives $\partial_\alpha(\rho \circ f) = \rho \circ (\partial_\alpha f)$. Hence
+*Proof.* For a differentiable $f$ and a fixed index $\alpha$, linearity of $\rho$ gives $\partial/\partial x_\alpha(\rho \circ f) = \rho \circ (\partial/\partial x_\alpha f)$. Hence
 
 $$
-(\rho \circ f)\bar D = \sum_\alpha \partial_\alpha(\rho\circ f)\,\rho(B_\alpha) = \sum_\alpha \rho(\partial_\alpha f)\,\rho(B_\alpha) = \rho\Bigl(\sum_\alpha B_\alpha \partial_\alpha f\Bigr) = \rho(Df),
+(\rho \circ f)\bar D = \sum_\alpha \partial/\partial x_\alpha(\rho\circ f)\,\rho(B_\alpha) = \sum_\alpha \rho(\partial/\partial x_\alpha f)\,\rho(B_\alpha) = \rho\Bigl(\sum_\alpha B_\alpha \partial/\partial x_\alpha f\Bigr) = \rho(Df),
 $$
 
-using the anti-automorphism property $\rho(u)\rho(v) = \rho(vu)$ with $u = \partial_\alpha f$ and $v = B_\alpha$, and linearity for the sum. This vanishes if and only if $Df$ does.
+using the anti-automorphism property $\rho(u)\rho(v) = \rho(vu)$ with $u = \partial/\partial x_\alpha f$ and $v = B_\alpha$, and linearity for the sum. This vanishes if and only if $Df$ does.
 
-With $\rho$ the principal conjugation of a Clifford-type system, $\rho(B_k) = -B_k$ for $k \geq 1$ and $\rho(1) = 1$, so $\bar D = \partial_0 - \sum_k B_k\partial_k$ is the conjugate operator of *Hypercomplex Analysis*, and the theorem says that conjugation converts left regularity into right regularity. When $A$ is commutative, left and right regularity coincide, and the distinction disappears.
+With $\rho$ the principal conjugation of a Clifford-type system, $\rho(B_k) = -B_k$ for $k \geq 1$ and $\rho(1) = 1$, so $\bar D = \partial/\partial x_0 - \sum_k B_k\partial/\partial x_k$ is the conjugate operator of *Hypercomplex Analysis*, and the theorem says that conjugation converts left regularity into right regularity. When $A$ is commutative, left and right regularity coincide, and the distinction disappears.
 
-**Example.** For $A = \mathbb{C}$, conjugation $\rho(z) = \bar z$ gives $\bar D = \partial_0 - i\partial_1$, and the theorem says that $f$ is holomorphic if and only if $\bar f$ is regular for $\bar D$, the usual reflection principle. For $A = \mathbb{H}$ it says that conjugation of a left monogenic function is right monogenic, a standard fact of quaternion analysis.
+**Example.** For $A = \mathbb{C}$, conjugation $\rho(z) = \bar z$ gives $\bar D = \partial/\partial x_0 - i\partial/\partial x_1$, and the theorem says that $f$ is holomorphic if and only if $\bar f$ is regular for $\bar D$, the usual reflection principle. For $A = \mathbb{H}$ it says that conjugation of a left monogenic function is right monogenic, a standard fact of quaternion analysis.
 
 ## Consequences of Ellipticity
 
@@ -126,7 +126,7 @@ With $\rho$ the principal conjugation of a Clifford-type system, $\rho(B_k) = -B
 *Proof.* The case $m = 1$ is immediate: $A = \mathbb{R}$, $D = d/dx_0$, and the regular functions are the constants. Let $m \geq 2$. Since $B_1^2 = -1$, the subalgebra $C = \mathbb{R}[B_1]$ is a copy of $\mathbb{C}$, and the element $z = x_0 + B_1x_1$ satisfies
 
 $$
-\partial_0 z = 1, \qquad \partial_1 z = B_1, \qquad zB_1 = B_1z, \qquad Dz = 1 + B_1^2 = 0 .
+\partial/\partial x_0 z = 1, \qquad \partial/\partial x_1 z = B_1, \qquad zB_1 = B_1z, \qquad Dz = 1 + B_1^2 = 0 .
 $$
 
 For $n \geq 0$ and $a \in A$ the function $x \mapsto z^na$ therefore satisfies
@@ -135,7 +135,7 @@ $$
 D(z^na) = nz^{n-1}a + B_1\,nz^{n-1}B_1a = nz^{n-1}\bigl(1+B_1^2\bigr)a = 0,
 $$
 
-using $\partial_0 z^n = nz^{n-1}$, $\partial_1z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$.
+using $\partial/\partial x_0 z^n = nz^{n-1}$, $\partial/\partial x_1\,z^n = nz^{n-1}B_1$ and the centrality of $B_1$ in $C$. The functions $z^na$, $n \geq 0$, are linearly independent for $a \neq 0$, because their Taylor expansions at the origin have distinct lowest-degree terms; restricting them to a ball about the origin, and then to a ball about any other point by translating the variable, gives an infinite linearly independent family of left regular functions on every nonempty open $\Omega$.
 
 **Remark (plane waves).** The infinite dimensionality is also visible through plane waves, the standard mechanism for a constant-coefficient operator whose symbol is not injective over $\mathbb{C}$. Complexify the coefficients: for $\zeta \in \mathbb{C}^m$ the symbol element $\sigma(\zeta) = \sum_\alpha B_\alpha\zeta_\alpha$ and its conjugate $\sigma^{\mathrm{refl}}(\zeta) = \zeta_0 - \sum_kB_k\zeta_k$ satisfy
 
@@ -159,13 +159,13 @@ is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly indep
 
 **Remark.** The last statement is the qualitative reason the theory is rich: ellipticity together with the Cauchy formula makes the solution space large, while non-commutativity prevents it from being an algebra. The particular dimensions and bases of the solution spaces are properties of the individual systems.
 
-**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{D}$ with $D = \partial_0 + j\partial_1$ one has $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2 - \xi_1^2$, which vanishes on the two real lines $\xi_0 = \pm\xi_1$, so no component need be harmonic. In the characteristic coordinates $\xi_\pm = x_0 \pm x_1$ one has $D = 2(\pi_1\partial_+ + \pi_2\partial_-)$, so a left regular function has the form $f = f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $\partial_0^2u = \tfrac12(f_+'' + f_-'') = \partial_1^2u$. Accordingly:
+**Remark (the hypotheses are not removable).** The consequences above use ellipticity, and so ultimately the relations $B_k^2 = -1$ on the coefficients. For the systems whose natural generator squares to $+1$ or to $0$ the conclusions fail, and the reason is visible in the symbol: for $\mathbb{D}$ with $D = \partial/\partial x_0 + j\partial/\partial x_1$ one has $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2 - \xi_1^2$, which vanishes on the two real lines $\xi_0 = \pm\xi_1$, so no component need be harmonic. In the characteristic coordinates $\xi_\pm = x_0 \pm x_1$ one has $D = 2(\pi_1\partial/\partial\xi_+ + \pi_2\partial/\partial\xi_-)$, so a left regular function has the form $f = f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ with $f_\pm$ arbitrary differentiable functions of one real variable (*Hypercomplex Analysis*, §The Obstructions). The components then satisfy the wave equation rather than Laplace's equation: writing $u = \tfrac12(f_+ + f_-)$ one computes $(\partial/\partial x_0)^2u = \tfrac12(f_+'' + f_-'') = (\partial/\partial x_1)^2u$. Accordingly:
 
 - **Liouville fails.** The bounded non-constant function $\exp(-(x_0 - jx_1)^2)$ is left regular on all of $\mathbb{D}$.
 - **The maximum principle fails.** Its Euclidean norm satisfies $\|\exp(-(x_0-jx_1)^2)\| \leq 1 = \|f(0)\|$, so the maximum is attained at the interior point $0$.
 - **The mean value property fails.** The regular function $x \mapsto \xi_-^2\pi_1$ has value $0$ at the centre of $B(0,r)$, while its average over the ball is $\frac{1}{\pi r^2}\int_{B(0,r)}(x_0-x_1)^2\,dx = \tfrac{r^2}{2} \neq 0$.
 
-For $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$ the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0v = -u'$, the components satisfy the transport equations $\partial_0u = 0$ and $\partial_0v = -\partial_1u$, and the bounded non-constant regular function $1 + \varepsilon \exp(-x_1^2)$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
+For $\mathbb{D}'$ with $D = \partial/\partial x_0 + \varepsilon\partial/\partial x_1$ the symbol satisfies $\sigma(\xi)\sigma^{\mathrm{refl}}(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial/\partial x_0\,v = -u'$, the components satisfy the transport equations $\partial/\partial x_0\,u = 0$ and $\partial/\partial x_0\,v = -\partial/\partial x_1\,u$, and the bounded non-constant regular function $1 + \varepsilon \exp(-x_1^2)$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
 
 ## The Fischer and Stokes Decompositions
 
@@ -184,10 +184,10 @@ be the **harmonic** and the **left regular** (or **monogenic**) homogeneous poly
 *Proof.* For $Q \in \mathcal{P}_{k-2}$ the product rule for the Laplacian gives
 
 $$
-\Delta(|x|^2Q) = (\Delta|x|^2)Q + 2\sum_j x_j\,\partial_jQ + |x|^2\Delta Q = 2mQ + 4(k-2)Q + |x|^2\Delta Q,
+\Delta(|x|^2Q) = (\Delta|x|^2)Q + 2\sum_j x_j\,\partial/\partial x_j\,Q + |x|^2\Delta Q = 2mQ + 4(k-2)Q + |x|^2\Delta Q,
 $$
 
-using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial_jQ = (k-2)Q$. Write $T = \lambda\,\mathrm{id} + |x|^2\Delta$ with $\lambda = 2m + 4(k-2) > 0$. Since $\Delta$ lowers degree by two, the operator $|x|^2\Delta$ satisfies $(|x|^2\Delta)^r = |x|^{2r}\Delta^r$, which is zero as soon as $2r > k-2$; hence $|x|^2\Delta$ is nilpotent on $\mathcal{P}_{k-2}$ and $T$ is invertible, with inverse a finite geometric series in $|x|^2\Delta$. For any $R \in \mathcal{P}_{k-2}$ the element $P = |x|^2T^{-1}R$ therefore satisfies $\Delta P = T T^{-1}R = R$, so $\Delta$ is surjective. Moreover $|x|^2Q \in \mathcal{H}_k$ forces $TQ = 0$, hence $Q = 0$, so the image meets $\mathcal{H}_k$ trivially.
+using $\Delta|x|^2 = 2m$ and Euler's identity $\sum_j x_j\partial/\partial x_j\,Q = (k-2)Q$. Write $T = \lambda\,\mathrm{id} + |x|^2\Delta$ with $\lambda = 2m + 4(k-2) > 0$. Since $\Delta$ lowers degree by two, the operator $|x|^2\Delta$ satisfies $(|x|^2\Delta)^r = |x|^{2r}\Delta^r$, which is zero as soon as $2r > k-2$; hence $|x|^2\Delta$ is nilpotent on $\mathcal{P}_{k-2}$ and $T$ is invertible, with inverse a finite geometric series in $|x|^2\Delta$. For any $R \in \mathcal{P}_{k-2}$ the element $P = |x|^2T^{-1}R$ therefore satisfies $\Delta P = T T^{-1}R = R$, so $\Delta$ is surjective. Moreover $|x|^2Q \in \mathcal{H}_k$ forces $TQ = 0$, hence $Q = 0$, so the image meets $\mathcal{H}_k$ trivially.
 
 **Theorem (Fischer decomposition; the Stokes decomposition).** For every $k \geq 0$,
 
@@ -209,14 +209,14 @@ $$
 
 where $x^j$ denotes multiplication by the $j$-th power of the variable. This is the Fischer decomposition of Clifford analysis; it is proved by the same triangular argument with the Cauchy–Riemann operator in place of the Laplacian, and it is standard.
 
-**Example (the complex case).** For $A = \mathbb{C}$ and $D = \partial_0 + i\partial_1$ the regular homogeneous polynomials of degree $j$ are $\mathcal{M}_j = \{az^j : a \in \mathbb{C}\}$, so $x^j\mathcal{M}_{k-j}$ is spanned by $x^jz^{k-j}$ and $ix^jz^{k-j}$. Writing $x = \tfrac12(z+\bar z)$, the element $x^jz^{k-j}$ has $\bar z$-degree at most $j$, and the term $\bar z^{\,j}$ occurs only in $x^jz^{k-j}$; the triangular form of the expansions therefore shows that the $2(k+1)$ generators are independent and that their span is $\mathcal{P}_k$, whose complex dimension is $k+1$. This is the elementary verification of the refinement in the one case where every term is explicit.
+**Example (the complex case).** For $A = \mathbb{C}$ and $D = \partial/\partial x_0 + i\partial/\partial x_1$ the regular homogeneous polynomials of degree $j$ are $\mathcal{M}_j = \{az^j : a \in \mathbb{C}\}$, so $x^j\mathcal{M}_{k-j}$ is spanned by $x^jz^{k-j}$ and $ix^jz^{k-j}$. Writing $x = \tfrac12(z+\bar z)$, the element $x^jz^{k-j}$ has $\bar z$-degree at most $j$, and the term $\bar z^{\,j}$ occurs only in $x^jz^{k-j}$; the triangular form of the expansions therefore shows that the $2(k+1)$ generators are independent and that their span is $\mathcal{P}_k$, whose complex dimension is $k+1$. This is the elementary verification of the refinement in the one case where every term is explicit.
 
 ## Divergence Form, the Cauchy Kernel and Green's Identities
 
 Because the coefficients of $D$ are constant,
 
 $$
-D f = \sum_{\alpha=0}^{m-1} B_\alpha \,\partial_\alpha f = \sum_{\alpha=0}^{m-1} \partial_\alpha \bigl(B_\alpha f\bigr),
+D f = \sum_{\alpha=0}^{m-1} B_\alpha \,\partial/\partial x_\alpha f = \sum_{\alpha=0}^{m-1} \partial/\partial x_\alpha \bigl(B_\alpha f\bigr),
 $$
 
 so $D$ is the **divergence** of the $A$-valued vector field with components $B_\alpha f$ on $\mathbb{R}^m$. This is the form in which the divergence theorem applies.
@@ -236,15 +236,15 @@ $$
 *Proof.* The divergence theorem applied to the vector field with components $B_\alpha f$ on $\Omega$ gives
 
 $$
-\int_{\partial\Omega} \sum_\alpha \nu_\alpha B_\alpha f\, dS = \int_\Omega \sum_\alpha \partial_\alpha(B_\alpha f)\, dy = \int_\Omega Df\, dy = 0,
+\int_{\partial\Omega} \sum_\alpha \nu_\alpha B_\alpha f\, dS = \int_\Omega \sum_\alpha \partial/\partial x_\alpha(B_\alpha f)\, dy = \int_\Omega Df\, dy = 0,
 $$
 
-using the divergence form of $D$ and $\partial_\alpha(B_\alpha f) = B_\alpha \partial_\alpha f$ because $B_\alpha$ is constant.
+using the divergence form of $D$ and $\partial/\partial x_\alpha(B_\alpha f) = B_\alpha \partial/\partial x_\alpha f$ because $B_\alpha$ is constant.
 
 **Theorem (a fundamental solution from the Laplacian).** Let $\Phi$ be a fundamental solution of the Laplacian on $\mathbb{R}^m$, so that $\Delta \Phi = \delta_0$ in the sense of distributions. Then
 
 $$
-E = \bar D \Phi = \partial_0 \Phi - \sum_{k\geq1} B_k\,\partial_k \Phi
+E = \bar D \Phi = \partial/\partial x_0 \Phi - \sum_{k\geq1} B_k\,\partial/\partial x_k \Phi
 $$
 
 satisfies $D E = \delta_0$; thus $E$ is a fundamental solution of $D$, and $E(x - y)$ is a Cauchy kernel.
@@ -262,7 +262,7 @@ with the normalisation of $E$ chosen so that the signs are as displayed.
 *Proof (outline).* Fix $x \in \Omega$ and apply the divergence theorem to the vector field with components $B_\alpha\,E(x-\cdot)f$ on the punctured domain $\Omega \setminus \overline{B(x,\epsilon)}$. The divergence is
 
 $$
-\sum_\alpha \partial_\alpha\bigl(B_\alpha E(x-y)f(y)\bigr) = \bigl(D_y E(x-y)\bigr) f(y) + \sum_\alpha B_\alpha E(x-y)\,\partial_\alpha f(y),
+\sum_\alpha \partial/\partial x_\alpha\bigl(B_\alpha E(x-y)f(y)\bigr) = \bigl(D_y E(x-y)\bigr) f(y) + \sum_\alpha B_\alpha E(x-y)\,\partial/\partial x_\alpha f(y),
 $$
 
 and $D_y E(x-y) = -(DE)(x-y) = -\delta_x(y)$ by translation invariance and the evenness of $\delta_0$. Integrating, letting $\epsilon \to 0$ and using that the small sphere around $x$ contributes $f(x)$ in the limit gives the stated formula.
@@ -275,7 +275,7 @@ $$
 
 which is the general form of the Cauchy integral formula stated in *Hypercomplex Analysis*; the derivation above exhibits it as the case $Df = 0$ of the divergence theorem for $D$. Read through the operator, the formula says three things that its statement alone does not: the kernel is obtained from a fundamental solution of the Laplacian by applying the conjugate operator, $E = \bar D\Phi$, and it is a fundamental solution of $D$ itself, $DE = \delta_0$; ellipticity is exactly what supplies one, so no separate existence hypothesis is needed; and the one-sidedness of the product fixes the position of $E$ in the integrand, on the left for left regular $f$ and on the right for right regular $f$, with the order of the remaining factors reversed.
 
-**Remark (the hypotheses in operator terms).** Relative to the classical Cauchy formula, which asks for holomorphy on a simply connected domain, the hypotheses here are those the divergence theorem needs for $D$: a bounded domain with a sufficiently smooth oriented boundary, so that $\nu_B$ and $dS$ are defined; $f$ of class $C^1$ on the closure $\bar\Omega$; and, when $A$ has zero divisors, a boundary that avoids the set on which the kernel is undefined, since $E$ is built from the inverse of $\bar x$ up to a scalar. Simply connectedness is not required, and the classical case is recovered for $A = \mathbb{C}$ with $D = \partial_0 + i\partial_1$, where $\partial\Omega$ is a closed contour traversed once and $E(z) = 1/(2\pi z)$.
+**Remark (the hypotheses in operator terms).** Relative to the classical Cauchy formula, which asks for holomorphy on a simply connected domain, the hypotheses here are those the divergence theorem needs for $D$: a bounded domain with a sufficiently smooth oriented boundary, so that $\nu_B$ and $dS$ are defined; $f$ of class $C^1$ on the closure $\bar\Omega$; and, when $A$ has zero divisors, a boundary that avoids the set on which the kernel is undefined, since $E$ is built from the inverse of $\bar x$ up to a scalar. Simply connectedness is not required, and the classical case is recovered for $A = \mathbb{C}$ with $D = \partial/\partial x_0 + i\partial/\partial x_1$, where $\partial\Omega$ is a closed contour traversed once and $E(z) = 1/(2\pi z)$.
 
 ## Change of Operator
 
@@ -293,9 +293,9 @@ The classification of admissible operators up to this equivalence, and the deter
 
 ## Summary
 
-The **generalised Cauchy–Riemann operator** $D = \partial_0 + \sum_k B_k\partial_k$ has principal symbol equal to left multiplication by $\sigma(\xi) = \xi_0 + \sum_k B_k\xi_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\xi$, with inverse $(\xi_0 - \sum_k B_k\xi_k)/|\xi|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
+The **generalised Cauchy–Riemann operator** $D = \partial/\partial x_0 + \sum_k B_k\partial/\partial x_k$ has principal symbol equal to left multiplication by $\sigma(\xi) = \xi_0 + \sum_k B_k\xi_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\xi$, with inverse $(\xi_0 - \sum_k B_k\xi_k)/|\xi|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
 
-Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{D}$ and $\mathbb{D}'$, whose symbols vanish on the real space, the regular functions are $f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ and $u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0 v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_0-jx_1)^2)$ on $\mathbb{D}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{D}'$.
+Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{D}$ and $\mathbb{D}'$, whose symbols vanish on the real space, the regular functions are $f_+(\xi_-)\pi_1 + f_-(\xi_+)\pi_2$ and $u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial/\partial x_0 v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_0-jx_1)^2)$ on $\mathbb{D}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{D}'$.
 
 The integral representation is the divergence theorem for $D$ written in divergence form: the **Cauchy–Pompeiu formula** represents an arbitrary $C^1$ function on a bounded domain with smooth boundary by the boundary integral of the Cauchy kernel against the conormal element plus a volume integral of $Df$, and the **Cauchy integral formula** is the case $Df = 0$, in which the volume term drops. Its hypotheses are those the divergence theorem needs — a bounded domain with smooth boundary, $f$ of class $C^1$ on the closure, a global fundamental solution of the conjugate operator, which exists because $D$ is elliptic — and not the simple connectedness and holomorphy of the classical statement.
 
@@ -308,8 +308,8 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $A$ | Finite-dimensional unital associative real algebra, $\dim_\mathbb{R} A = m$ |
 | $e_0 = 1, \dots, e_{m-1}$ | Fixed basis of $A$ |
 | $B_k$ | Coefficients of $D$, with $B_jB_k + B_kB_j = -2\delta_{jk}$ |
-| $D = \partial_0 + \sum_k B_k\partial_k$ | Generalised Cauchy–Riemann operator |
-| $\bar D = \partial_0 - \sum_k B_k\partial_k$ | Conjugate operator |
+| $D = \partial/\partial x_0 + \sum_k B_k\partial/\partial x_k$ | Generalised Cauchy–Riemann operator |
+| $\bar D = \partial/\partial x_0 - \sum_k B_k\partial/\partial x_k$ | Conjugate operator |
 | $\sigma(\xi) = \sum_\alpha B_\alpha\xi_\alpha$ | Principal symbol |
 | $\sigma^{\mathrm{refl}}(\xi) = \xi_0 - \sum_k B_k\xi_k$ | Reflected symbol, $\sigma\sigma^{\mathrm{refl}} = \sum_\alpha\xi_\alpha^2$ |
 | $|\xi|^2 = \sum_\alpha \xi_\alpha^2$ | Euclidean squared norm of the covector |

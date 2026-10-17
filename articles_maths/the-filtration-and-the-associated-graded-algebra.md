@@ -109,7 +109,7 @@ So for a non-degenerate form the filtration adds nothing to the grading: the gra
 
 The construction is the quadratic analogue of a classical one for Lie algebras.
 
-**Theorem.** Let $\mathrm{G}$ be a Lie algebra and $U(\mathrm{G})$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathrm{G}$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$.
+**Theorem.** Let $\mathrm{G}$ be a Lie algebra and $\mathrm{U}(\mathrm{G})$ its universal enveloping algebra, filtered by the length of the products of elements of $\mathrm{G}$. Then the associated graded algebra is the symmetric algebra, $\operatorname{gr}\mathrm{U}(\mathrm{G})\cong S(\mathrm{G})$.
 
 **Proof.** This is the Poincaré–Birkhoff–Witt theorem for Lie algebras, as recorded in *Representations of Lie Algebras*.
 
@@ -120,11 +120,11 @@ The two theorems are read side by side as a dictionary:
 | Generators $x\in\mathrm{G}$ | Generators $v\in V$ |
 | Relation $xy-yx=[x,y]$ | Relation $uv+vu=2B(u,v)$ |
 | Symmetric normal form | Alternating normal form |
-| $\operatorname{gr}U(\mathrm{G})\cong S(\mathrm{G})$ | $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})\cong\Lambda(V)$ |
+| $\operatorname{gr}\mathrm{U}(\mathrm{G})\cong S(\mathrm{G})$ | $\operatorname{gr}\mathrm{Cl}(V,\mathfrak{Q})\cong\Lambda(V)$ |
 | Symmetric algebra | Exterior algebra |
 | Commutators lower the length by one | Anticommutators lower the length by two |
 
-The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $U(\mathrm{G})$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,\mathfrak{Q})$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.
+The last row is the substantive difference. The commutator of two generators has length one, so the filtration of $\mathrm{U}(\mathrm{G})$ is not separated by parity; the anticommutator of two generators is a scalar, of length zero and even, so every filtration step of $\mathrm{Cl}(V,\mathfrak{Q})$ splits into an even and an odd part, and the parity grading survives the passage to the associated graded algebra. The exterior algebra, not the symmetric one, appears because the Clifford relation is symmetric in the generators and the deformation it performs is a deformation by a quadratic form rather than by a Lie bracket.
 
 ## Worked Cases
 
@@ -161,7 +161,7 @@ When $m$ is non-degenerate the filtration is the cumulative filtration of the gr
 | $\Lambda^kV\to\operatorname{gr}_k$ | Poincaré–Birkhoff–Witt isomorphism |
 | $F_k=\bigoplus_{j\le k}\mathrm{Cl}_j$ | Cumulative filtration, $m$ non-degenerate |
 | $\mathrm{Alt}$ | Symbol map, the antisymmetrisation |
-| $U(\mathrm{G})$, $S(\mathrm{G})$ | Enveloping algebra and symmetric algebra, the parallel case |
+| $\mathrm{U}(\mathrm{G})$, $S(\mathrm{G})$ | Enveloping algebra and symmetric algebra, the parallel case |
 
 ## Further Reading
 

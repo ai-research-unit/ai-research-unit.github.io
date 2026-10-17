@@ -17,9 +17,9 @@ Both notions of the title are therefore **absences**, and they fail for one reas
 
 **Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The algebraic norm of the general quaternionic sesquilinear product is $\langle\cdot\rangle_{\natural*}$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Sesqualgebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$ and $e_k^2=-e_0$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde P^{\natural}\tilde Q^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_kA_kB_k$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_\mu^2=-e_t$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$. The natural conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general quaternionic sesquilinear product is $\tilde P^{\natural}\tilde Q^{*}$, and the product of the block is $\diamond$. The complex bilinear dot product of two vector parts is $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$.
 
-**The results.** The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_0$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
+**The results.** The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$, the conjugate cross product, has no unit on either side, so no element is invertible and the group of units is empty; the unit $e_t$ of the parent algebra is a square-zero element of the block, and the whole central line is annihilated by the block in both slots. The scalar part vanishes identically, so the algebraic norm of the operation is the zero function and the block carries **no algebraic norm** by the convention that counts a vanishing quadratic form as no norm; the diagonal $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ is a pure vector, a value and not a norm. The substitute for the inverse is the relative inverse: the multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel. Each section below states its result before it is proved.
 
 ## The Relative Definitions
 
@@ -33,17 +33,17 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 
 ## The Absence of a Unit
 
-**The block has no unit on either side, and the unit $e_0$ of the parent algebra is a square-zero element of the block.**
+**The block has no unit on either side, and the unit $e_t$ of the parent algebra is a square-zero element of the block.**
 
 **Theorem (no unit).** The block has no left unit, no right unit and no two-sided unit.
 
-*Proof.* A left unit $e$ must satisfy $e\diamond e_0=e_0$; but $e\diamond e_0=\vec e\times\overline{\mathbf{0}}=0$, since the vector part of $e_0$ is zero, so the equation reads $0=e_0$ and is false. A right unit $e$ must satisfy $e_0\diamond e=e$; but $e_0\diamond e=\mathbf{0}\times\overline{\vec e}=0$, so the equation reads $0=e$ and is false for a nonzero $e$, while the origin satisfies it only at the element zero.
+*Proof.* A left unit $e$ must satisfy $e\diamond e_t=e_t$; but $e\diamond e_t=\vec e\times\overline{\mathbf{0}}=0$, since the vector part of $e_t$ is zero, so the equation reads $0=e_t$ and is false. A right unit $e$ must satisfy $e_t\diamond e=e$; but $e_t\diamond e=\mathbf{0}\times\overline{\vec e}=0$, so the equation reads $0=e$ and is false for a nonzero $e$, while the origin satisfies it only at the element zero.
 
-**Remark (the unit is a square-zero element).** The failure is not a subtle one: the unit of the parent algebra satisfies $e_0\diamond e_0=0$ in the block, so it is not merely a non-unit, it is a nilpotent of index two. The whole central line shares the reading, $\lambda e_0\diamond\lambda e_0=0$, and the centre is annihilated by the block in both slots; the line of the units of the algebras is the line of the square-zero elements of the block.
+**Remark (the unit is a square-zero element).** The failure is not a subtle one: the unit of the parent algebra satisfies $e_t\diamond e_t=0$ in the block, so it is not merely a non-unit, it is a nilpotent of index two. The whole central line shares the reading, $\lambda e_t\diamond\lambda e_t=0$, and the centre is annihilated by the block in both slots; the line of the units of the algebras is the line of the square-zero elements of the block.
 
 ## The Absence of an Inverse
 
-**No element of the block is left-invertible, right-invertible or invertible, and the group of units is empty; the one-sided equations $\tilde Q\diamond\tilde R=e_0$ and $\tilde R\diamond\tilde Q=e_0$ have no solution.**
+**No element of the block is left-invertible, right-invertible or invertible, and the group of units is empty; the one-sided equations $\tilde Q\diamond\tilde R=e_t$ and $\tilde R\diamond\tilde Q=e_t$ have no solution.**
 
 **Corollary (no inverse, no group of units).** No element of the block is left-invertible, right-invertible or invertible, and the group of units of the block is empty.
 
@@ -52,12 +52,12 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 **Proposition (the one-sided equations have no solution).** For every $\tilde Q$ the two equations
 
 $$
-\tilde Q\diamond\tilde R=e_0,\qquad \tilde R\diamond\tilde Q=e_0
+\tilde Q\diamond\tilde R=e_t,\qquad \tilde R\diamond\tilde Q=e_t
 $$
 
 have no solution $\tilde R$.
 
-*Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_0$ has scalar part one. A pure vector is never $e_0$, so neither equation holds.
+*Proof.* Each left member is a value of the block, hence a pure vector of scalar part zero; the right member $e_t$ has scalar part one. A pure vector is never $e_t$, so neither equation holds.
 
 ## The Algebraic Norm of the Block
 
@@ -89,11 +89,11 @@ $$
 \tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q},
 $$
 
-a pure vector, generally nonzero. It is central exactly when it vanishes, so there is no quadratic form $N_\diamond$ with $\tilde X\diamond\tilde X=N_\diamond(\tilde X)e_0$ for every $\tilde X$: the equation would hold only on the cone of vanishing diagonal and define nothing outside. No central-valued quadratic map is built from the product.
+a pure vector, generally nonzero. It is central exactly when it vanishes, so there is no quadratic form $N_\diamond$ with $\tilde X\diamond\tilde X=N_\diamond(\tilde X)e_t$ for every $\tilde X$: the equation would hold only on the cone of vanishing diagonal and define nothing outside. No central-valued quadratic map is built from the product.
 
 ## The Relative Inverse
 
-**For a non-central element $\tilde A$, the multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
+**For a non-central element $\tilde A$, the multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot, so that $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on that plane and its solutions form a coset of the kernel.**
 
 The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
@@ -103,7 +103,7 @@ $$
 L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=\vec A\times\overline{\vec R},
 $$
 
-has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
+has the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
 
 *Proof.* The kernel is the annihilator computed in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec A)=0\}$, and the dimension count gives the bijection.
 
@@ -125,11 +125,11 @@ The antisymmetric quaternionic sesqualgebra $\tilde P\diamond\tilde Q=\vec P\tim
 |---|---|
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\vec P\times\overline{\vec Q}$ | the antisymmetric quaternionic sesqualgebra, the operation $\mathrm{AQS}$ |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the parent general quaternionic sesquilinear product |
-| $e_0$ | the unit of the parent algebra, a square-zero element of the block |
+| $e_t$ | the unit of the parent algebra, a square-zero element of the block |
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ | the diagonal, a pure vector |
-| $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ | the one-sided multiplication, kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ |
+| $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ | the one-sided multiplication, kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ |
 | no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading

@@ -182,7 +182,7 @@ of the homotopy-theoretic adjunction is the unstable form, and the stable homoto
 
 ## Summary
 
-The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X$ glued along $X$, and the cone operator $C$ satisfies the chain identity $\partial C + C\partial = \iota$ with the inclusion of the space in its cone, so that the cone is contractible. The pair $(C X, X)$ has its connecting homomorphism an isomorphism, and the **suspension operator** $\sigma : H_{n,\mathrm{red}}(X;R)\to H_{n+1,\mathrm{red}}(\Sigma X;R)$ is its inverse, realized on a cycle by the cone with a sign, $(-1)^{n+1}C$. The suspension operator is a natural isomorphism, functorial in based maps and homotopies, iterating to $H_{n+k,\mathrm{red}}(\Sigma^k X)\congH_{n,\mathrm{red}}(X)$; it is compatible with the boundary, in that it inverts the connecting homomorphism and commutes with the connecting maps of a pair, giving a map of the long exact sequences of the suspended pair. It is compatible with the transfer of a covering, suspending the fixed-part isomorphism of *The Transfer Map*; and it is not compatible with the products, because the reduced cohomology of a suspension has trivial product, which is why the products reappear only in the stable category of *Stable Homotopy Theory*. The suspension isomorphism for the homotopy groups is the Freudenthal theorem of *Homotopy Groups and Fibrations*, and the periodic isomorphism of the topological $K$-theory of *Topological K-Theory* is the same operator for that cohomology theory. Nothing analytic and nothing geometric was used.
+The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X$ glued along $X$, and the cone operator $C$ satisfies the chain identity $\partial C + C\partial = \iota$ with the inclusion of the space in its cone, so that the cone is contractible. The pair $(C X, X)$ has its connecting homomorphism an isomorphism, and the **suspension operator** $\sigma : H_{n,\mathrm{red}}(X;R)\to H_{n+1,\mathrm{red}}(\Sigma X;R)$ is its inverse, realized on a cycle by the cone with a sign, $(-1)^{n+1}C$. The suspension operator is a natural isomorphism, functorial in based maps and homotopies, iterating to $H_{n+k,\mathrm{red}}(\Sigma^k X)\cong H_{n,\mathrm{red}}(X)$; it is compatible with the boundary, in that it inverts the connecting homomorphism and commutes with the connecting maps of a pair, giving a map of the long exact sequences of the suspended pair. It is compatible with the transfer of a covering, suspending the fixed-part isomorphism of *The Transfer Map*; and it is not compatible with the products, because the reduced cohomology of a suspension has trivial product, which is why the products reappear only in the stable category of *Stable Homotopy Theory*. The suspension isomorphism for the homotopy groups is the Freudenthal theorem of *Homotopy Groups and Fibrations*, and the periodic isomorphism of the topological $K$-theory of *Topological K-Theory* is the same operator for that cohomology theory. Nothing analytic and nothing geometric was used.
 
 ## Summary of Notation
 
@@ -193,12 +193,12 @@ The reduced suspension $\Sigma X = X \wedge S^1$ is the union of two cones on $X
 | $C X$, $C\sigma$, $C$ | Cone on a space; cone on a simplex; the cone operator |
 | $\partial C + C\partial = \iota$ | Cone identity; the cone is contractible |
 | $(C X, X)$ | Cone pair; its connecting map is an isomorphism |
-| $\partial : H_{n+1,\mathrm{red}}(\Sigma X)\toH_{n,\mathrm{red}}(X)$ | Connecting isomorphism of the cone pair |
+| $\partial : H_{n+1,\mathrm{red}}(\Sigma X)\to H_{n,\mathrm{red}}(X)$ | Connecting isomorphism of the cone pair |
 | $\sigma_n = \partial^{-1}$ | Suspension operator, an isomorphism raising the degree |
 | $\sigma_n[c] = (-1)^{n+1}[Cc]$ | The operator on a cycle |
 | $\Sigma(X,A)$, $(\Sigma X,\Sigma A)$ | Suspension of a pair; the ladder of exact sequences |
 | $u\smile v = 0$ | Trivial product in the positive reduced cohomology of a suspension |
-| $H_{n+k,\mathrm{red}}(\Sigma^k X)\congH_{n,\mathrm{red}}(X)$ | Iterated suspension isomorphism |
+| $H_{n+k,\mathrm{red}}(\Sigma^k X)\cong H_{n,\mathrm{red}}(X)$ | Iterated suspension isomorphism |
 
 ## Further Reading
 

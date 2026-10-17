@@ -25,7 +25,7 @@ where the left action of $g$ on the parameter is the definition of $g(\tilde C)$
 **Remark (the fourth conjugation is excluded by a sign).** The natural, the complex and the Hermitian conjugations are anti-automorphisms or automorphisms of the ring; the anti-Hermitian conjugation is an anti-automorphism only up to the central sign,
 
 $$
-(\tilde P\tilde Q)^{\flat}=-\tilde Q^{\flat}\tilde P^{\flat} ,
+(\tilde Q_2\tilde Q)^{\flat}=-\tilde Q^{\flat}\tilde Q_2^{\flat} ,
 $$
 
 so that $(\tilde Q^2)^{\flat}=-(\tilde Q^{\flat})^2$ and $\flat\circ F_{\tilde C}=F^{-}_{\flat(\tilde C)}\circ\flat$, where $F^{-}_{\tilde C'}(\tilde Q)=-\tilde Q^2+\tilde C'$ is the *odd* quadratic family. **The anti-Hermitian conjugation relates the even family to the odd family, not to itself, and is therefore not a symmetry of the even fractal.** The three conjugations ${}^{\natural},\bar{\cdot},{}^{*}$ are the ones the article uses.
@@ -42,13 +42,13 @@ where $\mathrm{id}$ acts as the identity and $-\mathrm{id}$ as $\tilde Q\mapsto-
 
 **Theorem (the stabiliser).** $G_{\tilde C}$ is one of the following.
 
-1. $G$, when $\tilde C=Ce_0$ with $C$ real.
-2. $\{\mathrm{id},{}^{\natural}\}$, when $\tilde C=Ce_0$ with $C$ non-real.
-3. $\{\mathrm{id},\bar{\cdot}\}$, when $\tilde C$ is a non-central element fixed by complex conjugation, that is $\tilde C\in\mathbb{H}_{\mathbb{B}}$ with $\tilde C\notin\mathbb{C}e_0$.
-4. $\{\mathrm{id},{}^{*}\}$, when $\tilde C$ is a non-central element fixed by Hermitian conjugation, that is $\tilde C\in\mathbb{M}_+$ with $\tilde C\notin\mathbb{C}e_0$.
+1. $G$, when $\tilde C=Ce_t$ with $C$ real.
+2. $\{\mathrm{id},{}^{\natural}\}$, when $\tilde C=Ce_t$ with $C$ non-real.
+3. $\{\mathrm{id},\bar{\cdot}\}$, when $\tilde C$ is a non-central element fixed by complex conjugation, that is $\tilde C\in\mathbb{H}_{\mathbb{B}}$ with $\tilde C\notin\mathbb{C}e_t$.
+4. $\{\mathrm{id},{}^{*}\}$, when $\tilde C$ is a non-central element fixed by Hermitian conjugation, that is $\tilde C\in\mathbb{M}_+$ with $\tilde C\notin\mathbb{C}e_t$.
 5. $\{\mathrm{id}\}$, otherwise.
 
-**Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Remarkable Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_0\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_0$, $\mathbb{C}e_0$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_0$.
+**Proof.** The fixed subspace of ${}^{\natural}$ is the centre, of $\bar{\cdot}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and of ${}^{*}$ the Hermitian sector $\mathbb{M}_+$ (*The Group of Involutions*, *Introduction to the Remarkable Subspaces*). An element fixed by a set of involutions lies in the intersection of their fixed subspaces; the intersections are $\mathbb{C}e_t\cap\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_+=\mathbb{R}e_t$, $\mathbb{C}e_t$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{B}$, for the five cases, and the real central elements are exactly the real multiples of $e_t$.
 
 **Theorem (the even symmetry).** For every parameter, $\mathcal K_{\tilde C}$ and $J_{\tilde C}$ are invariant under $\tilde Q\mapsto-\tilde Q$, and the full symmetry group of the two sets contains $\Gamma_{\tilde C}$.
 
@@ -70,17 +70,17 @@ according as the parameter is a real central element, a non-real central element
 
 ## The Central Slice and the Mirror
 
-**Proposition (the complex conjugation acts as the mirror on the central slice).** For a central parameter $\tilde C=Ce_0$, the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and
+**Proposition (the complex conjugation acts as the mirror on the central slice).** For a central parameter $\tilde C=Ce_t$, the restriction of $\bar{\cdot}$ to the centre is the complex conjugation $C\mapsto\bar C$, and
 
 $$
-\bar{\cdot}\bigl(J_{Ce_0}\cap\mathbb{C}e_0\bigr)=J_{\bar C e_0}\cap\mathbb{C}e_0 .
+\bar{\cdot}\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=J_{\bar C e_t}\cap\mathbb{C}e_t .
 $$
 
 So the Julia set of the complex quadratic map and that of its conjugate parameter are mirror images in the central slice, and they coincide exactly when $C$ is real.
 
 **Proof.** The restriction of the equivariance to the centre, where the dynamics is the complex quadratic map and $\bar{\cdot}$ acts as the coefficientwise conjugation.
 
-**Remark (why the central fractal is not mirror-symmetric for non-real C).** For non-real $C$ the group $G_C$ contains only ${}^{\natural}$, and the mirror $C\mapsto\bar C$ is not in it, so the central slice of $J_{Ce_0}$ is the complex Julia set $J_C$ and not its mirror $J_{\bar C}$; the two are distinct unless $J_C$ happens to be symmetric. **The complex Julia set of a non-real parameter appears in the biquaternion theory exactly as itself, without its mirror, and the mirror is a second slice at the conjugate parameter.** This is the precise content of the failure of the mirror symmetry.
+**Remark (why the central fractal is not mirror-symmetric for non-real C).** For non-real $C$ the group $G_C$ contains only ${}^{\natural}$, and the mirror $C\mapsto\bar C$ is not in it, so the central slice of $J_{Ce_t}$ is the complex Julia set $J_C$ and not its mirror $J_{\bar C}$; the two are distinct unless $J_C$ happens to be symmetric. **The complex Julia set of a non-real parameter appears in the biquaternion theory exactly as itself, without its mirror, and the mirror is a second slice at the conjugate parameter.** This is the precise content of the failure of the mirror symmetry.
 
 ## The Central Inversion and the Antipodal Structure
 

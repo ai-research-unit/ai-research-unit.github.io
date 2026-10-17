@@ -157,13 +157,13 @@ and the series converges absolutely for every $A$.
 
 ### Local Diffeomorphism
 
-**Theorem (inverse function theorem for the exponential).** The exponential map is a local diffeomorphism at the origin of $\mathrm{G}$: there is an open neighbourhood $U$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_U : U \to V$ is a diffeomorphism.
+**Theorem (inverse function theorem for the exponential).** The exponential map is a local diffeomorphism at the origin of $\mathrm{G}$: there is an open neighbourhood $\Omega$ of $0$ in $\mathrm{G}$ and an open neighbourhood $V$ of $e$ in $G$ such that $\exp|_\Omega : \Omega \to V$ is a diffeomorphism.
 
 **Proof.** The differential $d(\exp)_0$ is the identity by the corollary above, hence invertible; the inverse function theorem for smooth manifolds gives a neighbourhood on which $\exp$ is a diffeomorphism onto its image.
 
 **Corollary.** The pair $(G, \mathrm{G})$ is locally determined by $\mathrm{G}$: exponential coordinates on $V$ identify a neighbourhood of the identity with a neighbourhood of $0$ in the vector space $\mathrm{G}$.
 
-**Remark (global failure of injectivity and surjectivity).** The exponential is only a local diffeomorphism in general. It is not injective: for the circle group $U(1)$ the kernel consists of the multiples of $2\pi i$. It is not surjective onto a connected group in general: for $G = SL_2(\mathbb{R})$ there are matrices with no real logarithm, so they lie outside the image of $\exp$. It is surjective when $G$ is connected and nilpotent, and when $G$ is compact and connected; the failure of surjectivity is a global phenomenon with no counterpart in the algebra.
+**Remark (global failure of injectivity and surjectivity).** The exponential is only a local diffeomorphism in general. It is not injective: for the circle group $\mathrm{U}(1)$ the kernel consists of the multiples of $2\pi i$. It is not surjective onto a connected group in general: for $G = SL_2(\mathbb{R})$ there are matrices with no real logarithm, so they lie outside the image of $\exp$. It is surjective when $G$ is connected and nilpotent, and when $G$ is compact and connected; the failure of surjectivity is a global phenomenon with no counterpart in the algebra.
 
 ### Naturality and Conjugation
 
@@ -256,7 +256,7 @@ defined near the origin of $\mathrm{G}$ is a local Lie group law with the proper
 Let $G = S^3 = \{q \in \mathbb{H} : |q| = 1\}$, the group of unit quaternions under multiplication; it is the spin group $\operatorname{Spin}(3)$, and it is a Lie group of dimension $3$. The tangent space at $1$ is the space of purely imaginary quaternions,
 
 $$
-\mathrm{G} = \operatorname{Im}\mathbb{H} = \{u = u_1 e_1 + u_2 e_2 + u_3 e_3\},
+\mathrm{G} = \operatorname{Im}\mathbb{H} = \{u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z\},
 $$
 
 which is a three-dimensional real vector space. With the commutator bracket inherited from the associative algebra $\mathbb{H}$, the bracket of two imaginary quaternions is

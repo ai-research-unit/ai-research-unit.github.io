@@ -6,7 +6,7 @@ The mathematics corpus develops the biquaternion Fourier transform twice, in *Bi
 
 Two facts organise the interpretation, and both are algebraic.
 
-The first is the **generator**. The kernel of the transform is $\exp(-2\pi\rho\,\omega t)$ with $\rho^{2}=-e_0$, and the central choice $\rho=i$ makes it the central exponential $\exp(-2\pi i\omega t)$. That is the one-parameter group $\exp(i\theta)e_0$ of the centre, the angle being $\theta=2\pi\omega t$ up to the sign that the kernel's exponent carries. The companion article *Conventions in the Biquaternion Universe* reads that group as the global phase, as the duality rotation and as the Wick rotation, and the transform is the same generator read on a coordinate.
+The first is the **generator**. The kernel of the transform is $\exp(-2\pi\rho\,\omega t)$ with $\rho^{2}=-e_t$, and the central choice $\rho=i$ makes it the central exponential $\exp(-2\pi i\omega t)$. That is the one-parameter group $\exp(i\theta)e_t$ of the centre, the angle being $\theta=2\pi\omega t$ up to the sign that the kernel's exponent carries. The companion article *Conventions in the Biquaternion Universe* reads that group as the global phase, as the duality rotation and as the Wick rotation, and the transform is the same generator read on a coordinate.
 
 The second is the **conjugate variable**. The variable conjugate to a material coordinate enters the kernel through a root of $-1$ and not through a real number. The whole of the **physical interpretation** turns on two sentences, one algebraic and one interpretive: the conjugate axis of a material coordinate is an imaginary direction of the algebra, and on the informational hypothesis an imaginary direction is a conjugate direction and not a spatial one.
 
@@ -17,7 +17,7 @@ The article is organised as follows. The kernel and the root are recalled. The c
 Fix a root of $-1$, an element $\rho\in\mathbb{B}$ with
 
 $$
-\rho^{2}=-e_0 .
+\rho^{2}=-e_t .
 $$
 
 The **biquaternion Fourier kernel** is the biquaternion exponential
@@ -26,21 +26,21 @@ $$
 W(t,\omega)=\exp(-2\pi\rho\,\omega t),
 $$
 
-and because $\rho^{2}=-e_0$ it closes on two terms,
+and because $\rho^{2}=-e_t$ it closes on two terms,
 
 $$
-W(t,\omega)=\cos(2\pi\omega t)\,e_0-\sin(2\pi\omega t)\,\rho .
+W(t,\omega)=\cos(2\pi\omega t)\,e_t-\sin(2\pi\omega t)\,\rho .
 $$
 
-The kernel is therefore a **rotation**: the two coefficients are the cosine and the sine of one real angle, and what the multiplication by $W$ does to a signal is a rotation in the plane spanned by $e_0$ and $\rho$. The root is the axis of that rotation and the frequency $\omega$ is its rate.
+The kernel is therefore a **rotation**: the two coefficients are the cosine and the sine of one real angle, and what the multiplication by $W$ does to a signal is a rotation in the plane spanned by $e_t$ and $\rho$. The root is the axis of that rotation and the frequency $\omega$ is its rate.
 
 Its inverse is the same expression with the sine reversed,
 
 $$
-W(t,\omega)^{-1}=\cos(2\pi\omega t)\,e_0+\sin(2\pi\omega t)\,\rho ,
+W(t,\omega)^{-1}=\cos(2\pi\omega t)\,e_t+\sin(2\pi\omega t)\,\rho ,
 $$
 
-and the identity $WW^{-1}=(\cos^{2}+\sin^{2})e_0=e_0$ uses only $\rho^{2}=-e_0$: it holds for every root. This is the reason the transform is a **change of description and not a measurement**. The kernel that performs the interpretation is invertible, so the passage to the conjugate variable loses nothing; the loss of information in the framework has other owners, and it is not this map.
+and the identity $WW^{-1}=(\cos^{2}+\sin^{2})e_t=e_t$ uses only $\rho^{2}=-e_t$: it holds for every root. This is the reason the transform is a **change of description and not a measurement**. The kernel that performs the interpretation is invertible, so the passage to the conjugate variable loses nothing; the loss of information in the framework has other owners, and it is not this map.
 
 ### Unitarity and the Pure Root
 
@@ -49,19 +49,19 @@ The roots of $-1$ fall into three families — the central imaginary $\rho=\pm i
 **For a pure root** — one whose scalar part vanishes, that is, the real family and the non-trivial family together — the kernel is unitary, its quaternion conjugate being its inverse,
 
 $$
-W(t,\omega)^{\natural}=\cos(2\pi\omega t)\,e_0+\sin(2\pi\omega t)\,\rho=W(t,\omega)^{-1},
+W(t,\omega)^{\natural}=\cos(2\pi\omega t)\,e_t+\sin(2\pi\omega t)\,\rho=W(t,\omega)^{-1},
 $$
 
 because $\rho^{\natural}=-\rho$ for a pure element, and its biquaternion norm is the identity,
 
 $$
-N\big(W(t,\omega)\big)=\cos^{2}(2\pi\omega t)+\sin^{2}(2\pi\omega t)=e_0 .
+N\big(W(t,\omega)\big)=\cos^{2}(2\pi\omega t)+\sin^{2}(2\pi\omega t)=e_t .
 $$
 
 **The central root is the exception.** The element $i$ is not pure — its scalar part is $i$ — and the kernel is then the central scalar
 
 $$
-W(t,\omega)=\exp(-2\pi i\omega t)e_0 ,
+W(t,\omega)=\exp(-2\pi i\omega t)e_t ,
 $$
 
 of unit modulus in the complex sense, whose inverse is its complex conjugate. The pure-root statements above are stated for a pure root and are not extended to it.
@@ -81,7 +81,7 @@ so that the **momentum operator is a root of $-1$ times a real frequency**. In o
 The material coordinate of the series is
 
 $$
-\tilde Q=ict\,e_0+\vec x ,
+\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z ,
 $$
 
 an element of the material sector $\mathbb{M}_-$ whose scalar coefficient is imaginary and whose vector part is real: the material time is imaginary and the material space is real, and the placement of the $i$ is the sector's. The conjugate variable of that coordinate enters through the root and not through a real number. On the informational hypothesis of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* the interpretation sharpens, because the imaginary directions are not extra spatial directions: the sector's own coordinates show the placement, the informational time being real while the informational space is imaginary, and the transform adds the complementary fact that **the imaginary directions are the conjugate directions**. Read this way, an imaginary axis is a conjugate axis and not a direction of propagation: it is the axis the root selects, along which the frequency and the wavevector are paired, and not a further direction in which anything travels.
@@ -90,7 +90,7 @@ The generator $i$ also **exchanges the two sectors**, $\mathbb{M}_-\leftrightarr
 
 ## The Interval as a Symbol
 
-The structural content of the continuous transform is that it diagonalises the constant-coefficient differential operators of the framework. The gradient $\tilde{\nabla}$ becomes multiplication by the biquaternion $2\pi\rho(\omega_0e_0+\omega_1e_1+\omega_2e_2+\omega_3e_3)$, and the d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ becomes multiplication by a scalar, its **symbol**,
+The structural content of the continuous transform is that it diagonalises the constant-coefficient differential operators of the framework. The gradient $\tilde{\nabla}$ becomes multiplication by the biquaternion $2\pi\rho(\omega_0e_t+\omega_1\vec e_x+\omega_2\vec e_y+\omega_3\vec e_z)$, and the d'Alembertian $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ becomes multiplication by a scalar, its **symbol**,
 
 $$
 \Box \;\longmapsto\; -4\pi^{2}\left(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2}\right) .
@@ -114,7 +114,7 @@ $$
 \sum_{k,l}\bar A_kA_l\,G(\omega_k-\omega_l)=\int N\big(Z(\tilde Q)\big)\,d\mu(\tilde Q),
 $$
 
-with the biquaternion norm on the right, and the norm is negative on the centre: at zero frequency with the central coefficient $A_1=i$ the left-hand side is $-\mu(\mathbb{R}^{n})e_0$, negative for every non-zero measure. The positivity that a Bochner-type hypothesis needs is therefore absent, and it is not restored by any restriction to ordinary data: it fails at the element that makes the algebra biquaternionic. The repair replaces the norm by a definite form, non-negative but not the norm of the product.
+with the biquaternion norm on the right, and the norm is negative on the centre: at zero frequency with the central coefficient $A_1=i$ the left-hand side is $-\mu(\mathbb{R}^{n})e_t$, negative for every non-zero measure. The positivity that a Bochner-type hypothesis needs is therefore absent, and it is not restored by any restriction to ordinary data: it fails at the element that makes the algebra biquaternionic. The repair replaces the norm by a definite form, non-negative but not the norm of the product.
 
 The interpretation is that the conjugate space is where the **indefinite norm of the framework shows up as a failure of positivity**, and that the definite form which repairs it is the positive form the informational sector already uses. The momentum-space positivity that ordinary quantum theory takes for granted is not supplied by the biquaternion norm; it is supplied by the Euclidean, Hermitian pairing $\langle\tilde P,\tilde Q\rangle_{*}$, the framework's probability form, which the companion articles on the sesquilinear products own. The absent positivity is the same indefiniteness that the vanishing-norm issue records, read at a value of the norm rather than at its zero.
 
@@ -133,7 +133,7 @@ The transform reads as a change of description generated by one clock. The kerne
 
 Six named interpretations belong with the section, each labelled.
 
-- **Frequency interpretation.** The transform is the central one-parameter group $\exp(i\theta)e_0$ read as a frequency: the angle is $\theta=2\pi\omega t$ up to the sign the exponent carries, so the frequency is the rate of the central clock and the spectrum is the group read parameter by parameter. Boundary: the interpretation is the clock interpretation of *Conventions in the Biquaternion Universe* with the frequency as its carrier, and it supplies no new generator.
+- **Frequency interpretation.** The transform is the central one-parameter group $\exp(i\theta)e_t$ read as a frequency: the angle is $\theta=2\pi\omega t$ up to the sign the exponent carries, so the frequency is the rate of the central clock and the spectrum is the group read parameter by parameter. Boundary: the interpretation is the clock interpretation of *Conventions in the Biquaternion Universe* with the frequency as its carrier, and it supplies no new generator.
 - **Conjugate-direction interpretation.** The variable conjugate to a material coordinate enters the kernel through a root of $-1$ and not through a real number, so an imaginary direction is a conjugate direction and not a direction of propagation. Boundary: the interpretation does not make the imaginary directions spatial, and it does not identify the informational sector as the Fourier dual of the material one.
 - **Symbol interpretation.** The transform is the basis in which the constant-coefficient operators are diagonal: the interval is the scalar symbol of the d'Alembertian, the mass labels its level set, and the mass shell is that level set, so in the frequency variables the interval acts as a multiplier and not as a form. Boundary: the interpretation is the conjugate-variable form of the interval and mass-shell interpretations and adds no theorem.
 - **Frame-change interpretation.** The kernel is a rotation with an explicit inverse, so the transform is a change of description and not a measurement; the sector exchange is the quarter turn inside the group the transform integrates, and the group is not the exchange. Boundary: no information is lost by the transform, and the framework's own information loss has other owners.
@@ -142,7 +142,7 @@ Six named interpretations belong with the section, each labelled.
 
 ## Summary
 
-The biquaternion Fourier transform is generated by a root of $-1$ and read on a coordinate, and its physics is the physics of that generator and of that coordinate. With the central root the kernel is the one-parameter group of the centre, $\exp(-2\pi i\omega t)e_0$, which is the same generator that *Conventions in the Biquaternion Universe* reads as the global phase, the duality rotation and the Wick rotation; the transform is the generator read as a **frequency**. The conjugate variable enters the kernel through the root and not through a real number, so the **conjugate axis of a material coordinate is an imaginary direction**; on the informational hypothesis this is the sharp form of the interpretation that the imaginary directions are informational and not spatial, and they are conjugate directions rather than wavevectors. The transform diagonalises the framework's constant-coefficient operators: the gradient becomes multiplication by $2\pi\rho(\omega_0e_0+\omega_1e_1+\omega_2e_2+\omega_3e_3)$, the d'Alembertian by its scalar symbol,
+The biquaternion Fourier transform is generated by a root of $-1$ and read on a coordinate, and its physics is the physics of that generator and of that coordinate. With the central root the kernel is the one-parameter group of the centre, $\exp(-2\pi i\omega t)e_t$, which is the same generator that *Conventions in the Biquaternion Universe* reads as the global phase, the duality rotation and the Wick rotation; the transform is the generator read as a **frequency**. The conjugate variable enters the kernel through the root and not through a real number, so the **conjugate axis of a material coordinate is an imaginary direction**; on the informational hypothesis this is the sharp form of the interpretation that the imaginary directions are informational and not spatial, and they are conjugate directions rather than wavevectors. The transform diagonalises the framework's constant-coefficient operators: the gradient becomes multiplication by $2\pi\rho(\omega_0e_t+\omega_1\vec e_x+\omega_2\vec e_y+\omega_3\vec e_z)$, the d'Alembertian by its scalar symbol,
 
 $$
 \Box \;\longmapsto\; -4\pi^{2}\left(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2}\right),
@@ -155,12 +155,12 @@ which vanishes on the light cone, so that the interval acts as a multiplier, the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra; real dim $8$, complex dim $4$ |
-| $e_0,e_1,e_2,e_3$; $i$ | Quaternion units; the central imaginary |
-| $\rho$, $\rho^{2}=-e_0$ | A root of $-1$; the three families are $\pm i$, the unit pure real quaternions, and the non-trivial roots |
-| $W(t,\omega)=\exp(-2\pi\rho\,\omega t)$ | The Fourier kernel; $=\cos(2\pi\omega t)e_0-\sin(2\pi\omega t)\rho$ |
-| $W(t,\omega)^{-1}$ | The inverse; $=\cos(2\pi\omega t)e_0+\sin(2\pi\omega t)\rho$, for every root |
-| $\langle\tilde Q\rangle_{\natural}$ | The biquaternion norm; $\langle W\rangle_{\natural}=e_0$ for a pure root |
-| $\tilde Q=ict\,e_0+\vec x$ | The material coordinate in $\mathbb{M}_-$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; the central imaginary |
+| $\rho$, $\rho^{2}=-e_t$ | A root of $-1$; the three families are $\pm i$, the unit pure real quaternions, and the non-trivial roots |
+| $W(t,\omega)=\exp(-2\pi\rho\,\omega t)$ | The Fourier kernel; $=\cos(2\pi\omega t)e_t-\sin(2\pi\omega t)\rho$ |
+| $W(t,\omega)^{-1}$ | The inverse; $=\cos(2\pi\omega t)e_t+\sin(2\pi\omega t)\rho$, for every root |
+| $\langle\tilde Q\rangle_{\natural}$ | The biquaternion norm; $\langle W\rangle_{\natural}=e_t$ for a pure root |
+| $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | The material coordinate in $\mathbb{M}_-$ |
 | $\partial_\mu\mapsto 2\pi\rho\,\omega_\mu$ | The diagonalisation of the derivative; the momentum operator |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The biquaternionic gradient and the d'Alembertian |
 | $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$ | The symbol of $\Box$; the interval in the conjugate variables |

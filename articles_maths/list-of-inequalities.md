@@ -24,7 +24,7 @@ This article lists the inequalities the corpus states and uses. An inequality is
 | Minkowski's inequality | $\lVert f+g\rVert_p \leq \lVert f\rVert_p + \lVert g\rVert_p$; the triangle inequality that makes $L^{n}$ a normed space | *Measure Theory and Integration* |
 | Young's convolution inequality | $\lVert f*g\rVert_r \leq \lVert f\rVert_p\lVert g\rVert_q$ for $1/n + 1/m = 1/r + 1$ | *Real Harmonic Analysis* |
 | Hausdorff–Young | $\lVert\\mathcal F f\rVert_q \leq \lVert f\rVert_p$ for $1 \leq p \leq 2$, $1/n + 1/m = 1$ | *Fourier Analysis on Euclidean Spaces* |
-| the Riesz–Thorin interpolation inequality | $\lVert T\rVert_{L^{n}}\to L^{m} \leq \lVert T\rVert_{L^{n}}_0}\to L^{m}_0}}^{1-\theta}\lVert T\rVert_{L^{n}}_1}\to L^{m}_1}}^{\theta}$ | *Interpolation Theory*; *Fourier Analysis on Euclidean Spaces* |
+| the Riesz–Thorin interpolation inequality | $\lVert T\rVert_{L^{n}\to L^{m}} \leq \lVert T\rVert_{L^{n_0}\to L^{m_0}}^{1-\theta}\lVert T\rVert_{L^{n_1}\to L^{m_1}}^{\theta}$ | *Interpolation Theory*; *Fourier Analysis on Euclidean Spaces* |
 | Chebyshev's inequality | $\mu(\lvert f\rvert \geq \lambda) \leq \lambda^{-p}\lVert f\rVert_p^p$; the bridge from $L^{n}$ convergence to convergence in measure | *Measure Theory and Integration* |
 | the Hardy–Littlewood maximal inequality | $\lVert Mf\rVert_p \leq C_p\lVert f\rVert_p$ for $1<p\leq\infty$, with the weak-type bound at $p=1$ | *Real Harmonic Analysis* |
 | the Hardy–Littlewood–Sobolev inequality | the fractional integral $I_\alpha f$ is bounded from $L^{n}$ to $L^{m}$ with $1/q = 1/p - \alpha/n$ | *Real Harmonic Analysis* |
@@ -37,7 +37,7 @@ A warning belongs here. The classical **Hardy inequality**, which bounds the mea
 
 | Object | What it bounds | Introduced in |
 |---|---|---|
-| the Sobolev embedding inequality | $\lVert f\rVert_{L^{n}}^*}} \leq C\lVert\nabla f\rVert_{L^{n}}$ for $p^* = np/(n-p)$, $p < n$ | *Sobolev Spaces and Weak Solutions* |
+| the Sobolev embedding inequality | $\lVert f\rVert_{L^{n}}^* \leq C\lVert\nabla f\rVert_{L^{n}}$ for $p^* = np/(n-p)$, $p < n$ | *Sobolev Spaces and Weak Solutions* |
 | the Sobolev inequality of geometric measure theory | the same bound as an isoperimetric inequality for the gradient measure | *Geometric Measure Theory* |
 | the Gagliardo–Nirenberg inequality | $\lVert D^j f\rVert \leq C\lVert D^k f\rVert^\theta\lVert f\rVert^{1-\theta}$; the interpolation between derivatives | *Sobolev Spaces and Weak Solutions* |
 | the Poincaré inequality | $\int_\Omega \lvert f - f_\Omega\rvert^p \leq C\int_\Omega \lvert\nabla f\rvert^p$; the control of a function by its gradient | *Sobolev Spaces and Weak Solutions*; *Markov Chains and Processes* |

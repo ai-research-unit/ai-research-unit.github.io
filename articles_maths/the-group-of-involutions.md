@@ -6,21 +6,21 @@ The biquaternion algebra carries two distinguished involutive anti-automorphisms
 
 The formulas of the four conjugations and the algebra itself are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; the lattice of the fixed spaces they produce is *Comparison of the Remarkable Subspaces*; and the remarkable subspaces, one to a section, are *Introduction to the Remarkable Subspaces*. None of these is repeated here.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$, the coefficients complex; units $e_0=1$ and $e_k^{2}=-e_0$; central scalar imaginary $i$; sign vector $\varepsilon=(1,-1,-1,-1)$. On the coefficients the four involutions act by
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$, the coefficients complex; units $e_t=1$ and $\vec e_k^{2}=-e_t$; central scalar imaginary $i$; sign vector $\varepsilon=(1,-1,-1,-1)$. On the coefficients the four involutions act by
 
 $$
 ({\tilde Q}^{\mathrm{id}})_\mu=Q_\mu , \qquad (\tilde Q^{\natural})_\mu=\varepsilon_\mu Q_\mu , \qquad ({\tilde Q}^{*})_\mu=\varepsilon_\mu \bar Q_\mu , \qquad (\bar{\tilde Q})_\mu=\bar Q_\mu .
 $$
 
-An **antilinear involution** of $\mathbb{B}$ is a real-linear map $\sigma$ with $\sigma^{2}=\mathrm{id}$ and $\sigma(\lambda\tilde Q)=\bar\lambda\,\sigma(\tilde Q)$ for $\lambda\in\mathbb{C}$. On the eight real coordinates $q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3$ of $\tilde Q=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ the four maps act by signed permutations:
+An **antilinear involution** of $\mathbb{B}$ is a real-linear map $\sigma$ with $\sigma^{2}=\mathrm{id}$ and $\sigma(\lambda\tilde Q)=\bar\lambda\,\sigma(\tilde Q)$ for $\lambda\in\mathbb{C}$. On the eight real coordinates $q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z$ of $\tilde Q=\sum_\mu(q_\mu+iq'_\mu)e_\mu$ the four maps act by signed permutations:
 
-| map | $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)\mapsto$ |
+| map | $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)\mapsto$ |
 |---|---|
-| $\mathrm{id}$ | $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$ |
-| ${}^{\natural}$ | $(q_0,-q_1,-q_2,-q_3,q'_0,-q'_1,-q'_2,-q'_3)$ |
-| $\bar{\cdot}$ | $(q_0,q_1,q_2,q_3,-q'_0,-q'_1,-q'_2,-q'_3)$ |
-| ${}^{*}$ | $(q_0,-q_1,-q_2,-q_3,-q'_0,q'_1,q'_2,q'_3)$ |
-| $\flat$ | $(-q_0,q_1,q_2,q_3,q'_0,-q'_1,-q'_2,-q'_3)$ |
+| $\mathrm{id}$ | $(q_t,q_x,q_y,q_z,q'_t,q'_x,q'_y,q'_z)$ |
+| ${}^{\natural}$ | $(q_t,-q_x,-q_y,-q_z,q'_t,-q'_x,-q'_y,-q'_z)$ |
+| $\bar{\cdot}$ | $(q_t,q_x,q_y,q_z,-q'_t,-q'_x,-q'_y,-q'_z)$ |
+| ${}^{*}$ | $(q_t,-q_x,-q_y,-q_z,-q'_t,q'_x,q'_y,q'_z)$ |
+| $\flat$ | $(-q_t,q_x,q_y,q_z,q'_t,-q'_x,-q'_y,-q'_z)$ |
 
 Only ${}^{*}$, $\bar{\cdot}$ and $\flat$ are antilinear in this sense; ${}^{\natural}$ is $\mathbb{C}$-linear, and $\mathrm{id}$ is the identity. The first three rows are the maps of the group studied below; the last is the reversal, treated with them and outside the group.
 
@@ -29,21 +29,21 @@ Only ${}^{*}$, $\bar{\cdot}$ and $\flat$ are antilinear in this sense; ${}^{\nat
 **Definition.** The **Hermitian conjugation** is the antilinear involution
 
 $$
-\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_0e_0-\bar Q_1e_1-\bar Q_2e_2-\bar Q_3e_3 ,
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z ,
 $$
 
 the C*-involution of the algebra, and the **quaternion conjugation** is the linear involution
 
 $$
-\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3 ,
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z ,
 $$
 
 the **extra involution**: the second anti-automorphism of order two that the algebra carries.
 
-**Proposition (both reverse the product).** For $\tilde Q,\tilde R\in\mathbb{B}$,
+**Proposition (both reverse the product).** For $\tilde Q_1,\tilde Q_2\in\mathbb{B}$,
 
 $$
-(\tilde Q\tilde R)^{*}=\tilde R^{*}\tilde Q^{*}, \qquad (\tilde Q\tilde R)^{\natural}=\tilde R^{\natural}\tilde Q^{\natural}, \qquad \overline{\tilde Q\tilde R}=\bar{\tilde Q}\,\bar{\tilde R} .
+(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}, \qquad (\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}, \qquad \overline{\tilde Q_1\tilde Q_2}=\bar{\tilde Q_1}\,\bar{\tilde Q_2} .
 $$
 
 Thus ${}^{*}$ and ${}^{\natural}$ are anti-automorphisms, reversing the order of every product, while the complex conjugation is an automorphism, reversing nothing.
@@ -83,7 +83,7 @@ The Cayley table, the entry being the map applied first in the row and then in t
 
 **Remark (the group is abelian).** Every square is the identity and the table is symmetric, so the four maps may be applied in any order, and the conjugation action of the group on itself is trivial. **The group is abelian, and the four involutions commute pairwise.**
 
-**Remark (the reversal is outside).** The fourth conjugation of the algebra, the reversal $\flat=-{}^{*}$, is not an element of $G$: its square is $\mathrm{id}$, but $\flat\circ{}^{*}=-\mathrm{id}$ is not one of the four, so the set $\{{}^{*},{}^{\natural},\bar{\cdot},\flat\}$ is not closed. The reversal is an anti-automorphism only up to the central sign, since $(\tilde Q\tilde R)^{\flat}=-\tilde R^{\flat}\tilde Q^{\flat}$, and its compositions with the group are read in the next table, where the entries are the maps of $G$ and their negatives.
+**Remark (the reversal is outside).** The fourth conjugation of the algebra, the reversal $\flat=-{}^{*}$, is not an element of $G$: its square is $\mathrm{id}$, but $\flat\circ{}^{*}=-\mathrm{id}$ is not one of the four, so the set $\{{}^{*},{}^{\natural},\bar{\cdot},\flat\}$ is not closed. The reversal is an anti-automorphism only up to the central sign, since $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and its compositions with the group are read in the next table, where the entries are the maps of $G$ and their negatives.
 
 ## The Composition Table with the Reversal
 
@@ -136,33 +136,33 @@ $$
 1 \quad\text{or}\quad 2 \quad\text{or}\quad 4 ,
 $$
 
-the size being $1$ on the real line $\langle e_0\rangle$; $2$ on the elements that lie in the centre $\mathbb{C}_{\mathbb{B}}$, in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the Hermitian subspace $\mathbb{M}_+$ but not on that line; and $4$ otherwise.
+the size being $1$ on the real line $\langle e_t\rangle$; $2$ on the elements that lie in the centre $\mathbb{C}_{\mathbb{B}}$, in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the Hermitian subspace $\mathbb{M}_+$ but not on that line; and $4$ otherwise.
 
-**Proof.** An element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by $\bar{\cdot}$, since ${}^{*}$ is their composite; that intersection is $\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}=\langle e_0\rangle$, which gives orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of ${}^{\natural},\bar{\cdot},{}^{*}$ and by no second one — fixed by two it is fixed by the third and lies on the real line — and the three fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_0\rangle$; this gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.
+**Proof.** An element is fixed by the whole group exactly when it is fixed by ${}^{\natural}$ and by $\bar{\cdot}$, since ${}^{*}$ is their composite; that intersection is $\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}=\langle e_t\rangle$, which gives orbit size $1$. The stabilizer has order two exactly when the element is fixed by one of ${}^{\natural},\bar{\cdot},{}^{*}$ and by no second one — fixed by two it is fixed by the third and lies on the real line — and the three fixed spaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$, whose pairwise intersections are all $\langle e_t\rangle$; this gives orbit size $2$ exactly on the stated set, and orbit size $4$ on its complement.
 
-**Example (an element of each orbit size).** For $\tilde Q=e_0+2e_1+3ie_1+4ie_2$ the images are
-
-$$
-\tilde Q^{\natural}=e_0-2e_1-3ie_1-4ie_2,\quad \bar{\tilde Q}=e_0+2e_1-3ie_1-4ie_2,\quad \tilde Q^{*}=e_0-2e_1+3ie_1+4ie_2,
-$$
-
-and $\tilde Q^{\flat}=-e_0+2e_1-3ie_1-4ie_2$; the four points are pairwise distinct, so the orbit has size $4$, the element lying in none of $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$. For the central but non-real element $\tilde Q=(1+3i)e_0$ the images are $(1+3i)e_0$ under $\mathrm{id}$ and ${}^{\natural}$, and $(1-3i)e_0$ under $\bar{\cdot}$ and ${}^{*}$, so the orbit is $\{(1+3i)e_0,(1-3i)e_0\}$ of size $2$. For $\tilde Q=2e_0$ every image is $2e_0$, so the orbit has size $1$.
-
-**Example (the stabilizer of a vector).** For $\tilde Q=e_1$ the maps ${}^{\natural}$ and ${}^{*}$ negate it, while $\bar{\cdot}$ fixes it, the coefficient being real:
+**Example (an element of each orbit size).** For $\tilde Q=e_t+2\vec e_x+3i\vec e_x+4i\vec e_y$ the images are
 
 $$
-{}^{\natural}(e_1)=-e_1,\qquad \bar{\cdot}(e_1)=e_1,\qquad {}^{*}(e_1)=-e_1,\qquad \flat(e_1)=e_1,
+\tilde Q^{\natural}=e_t-2\vec e_x-3i\vec e_x-4i\vec e_y,\quad \bar{\tilde Q}=e_t+2\vec e_x-3i\vec e_x-4i\vec e_y,\quad \tilde Q^{*}=e_t-2\vec e_x+3i\vec e_x+4i\vec e_y,
 $$
 
-so the orbit is $\{e_1,-e_1\}$ of size two and the stabilizer of $e_1$ is $\{\mathrm{id},\bar{\cdot}\}$, the subgroup that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise.
+and $\tilde Q^{\flat}=-e_t+2\vec e_x-3i\vec e_x-4i\vec e_y$; the four points are pairwise distinct, so the orbit has size $4$, the element lying in none of $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$. For the central but non-real element $\tilde Q=(1+3i)e_t$ the images are $(1+3i)e_t$ under $\mathrm{id}$ and ${}^{\natural}$, and $(1-3i)e_t$ under $\bar{\cdot}$ and ${}^{*}$, so the orbit is $\{(1+3i)e_t,(1-3i)e_t\}$ of size $2$. For $\tilde Q=2e_t$ every image is $2e_t$, so the orbit has size $1$.
 
-**Example (a Hermitian element).** For $\tilde Q=e_0+ie_1$ the images are
+**Example (the stabilizer of a vector).** For $\tilde Q=\vec e_x$ the maps ${}^{\natural}$ and ${}^{*}$ negate it, while $\bar{\cdot}$ fixes it, the coefficient being real:
 
 $$
-\tilde Q^{\natural}=e_0-ie_1,\qquad \bar{\tilde Q}=e_0-ie_1,\qquad \tilde Q^{*}=e_0+ie_1=\tilde Q,\qquad \tilde Q^{\flat}=-e_0-ie_1,
+{}^{\natural}(\vec e_x)=-\vec e_x,\qquad \bar{\cdot}(\vec e_x)=\vec e_x,\qquad {}^{*}(\vec e_x)=-\vec e_x,\qquad \flat(\vec e_x)=\vec e_x,
 $$
 
-so the orbit is $\{e_0+ie_1,\,e_0-ie_1,\,-e_0-ie_1,\,-e_0+ie_1\}$ of size four.
+so the orbit is $\{\vec e_x,-\vec e_x\}$ of size two and the stabilizer of $\vec e_x$ is $\{\mathrm{id},\bar{\cdot}\}$, the subgroup that fixes $\mathbb{H}_{\mathbb{B}}$ pointwise.
+
+**Example (a Hermitian element).** For $\tilde Q=e_t+i\vec e_x$ the images are
+
+$$
+\tilde Q^{\natural}=e_t-i\vec e_x,\qquad \bar{\tilde Q}=e_t-i\vec e_x,\qquad \tilde Q^{*}=e_t+i\vec e_x=\tilde Q,\qquad \tilde Q^{\flat}=-e_t-i\vec e_x,
+$$
+
+so the orbit is $\{e_t+i\vec e_x,\,e_t-i\vec e_x,\,-e_t-i\vec e_x,\,-e_t+i\vec e_x\}$ of size four.
 
 ## Summary
 

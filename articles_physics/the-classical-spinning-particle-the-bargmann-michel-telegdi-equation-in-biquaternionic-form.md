@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_0+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{M}_-$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $S_\mu v^\mu=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
+A **classical spinning particle** is a point particle of mass $m$ and charge $ϙ$ that carries, in addition to its four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$, an intrinsic angular momentum, the **spin four-vector** $\tilde{S}\in\mathbb{M}_-$, together with an intrinsic magnetic moment proportional to it. The spin four-vector is orthogonal to the four-velocity, $S_\mu v^\mu=0$, so that in the momentary rest frame it has a purely spatial representative $\vec s$, the spin; the constant of proportionality between moment and spin is the gyromagnetic ratio $\gamma_g=g\,ϙ/2m$. The classical model captures the two features of the intrinsic magnetism of a particle with spin $\tfrac12$ that survive in the limit $\hbar\to0$: an angular momentum that is not orbital, and a magnetic moment locked to it with a factor $g$ close to $2$.
 
 The equation of motion of $\tilde{S}$ in an external electromagnetic field is the **Bargmann–Michel–Telegdi (BMT) equation**, published in 1959. Like the Lorentz force, it is a standard result of relativistic classical physics, and it is transcribed here rather than re-derived from first principles. What the biquaternion algebra does is to **organize** it: it exhibits the two and only two covariant structures from which a covariant equation linear in the field and the spin can be built, it realizes the field coupling as a projection of a product of biquaternions and the invariant coupling as the material pairing, it expresses the orthogonality constraint $S_\mu v^\mu=0$ as the vanishing of the same pairing, and it writes the whole equation as one statement in the material sector $\mathbb{M}_-$.
 
@@ -48,7 +48,7 @@ Two boundaries are respected. The **spin-0 and multipole sectors** are excluded:
 
 The article proceeds as follows. The next section fixes the spin four-vector and its reduced form. The following section assembles the covariant equation from the two available structures and fixes the coefficients. The next section transcribes it into $\mathbb{B}$ and verifies the transcription. The remaining sections treat the rest-frame limit and the meaning of $g$, the degenerate case $g=2$ in which the spin is transported exactly as the four-velocity, the laboratory-frame reduction to the Larmor term and the Thomas term, and the separation of what the algebra supplies from what is standard.
 
-**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\neq k)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_0+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_0+\vec p$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,\vec x)$, so that the biquaternion representative of a four-vector $a^\mu$ is $\tilde{a}=i a^{0}e_0+a_k e_k$ and the invariant pairing is
+**Conventions.** We use those of the foundational articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^{2}=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$, and central scalar imaginary $i$, $i^{2}=-1$. The material sector is $\mathbb{M}_-$ (anti-Hermitian, the four-vectors) and the informational sector is $\mathbb{M}_+$ (Hermitian, the boost rotors), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate is $\tilde{Q}^{\natural}$, and $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$. The four-velocity is $\tilde{V}=\gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^{2}$; the four-momentum is $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$; the four-force is $\tilde{K}=d\tilde{P}/d\tau\in\mathbb{M}_-$; and the material sector carries the coordinates $x^\mu=(ct,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the biquaternion representative of a four-vector $a^\mu$ is $\tilde{a}=i a^{0}e_t+a_\mu \vec e_\mu$ and the invariant pairing is
 
 $$
 \langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}\!\left(\tilde{a}\,\tilde{b}^{\natural}\right)
@@ -59,7 +59,7 @@ $$
 The field-strength biquaternion is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, with $\vec B=\mu\vec H$ and $c=1/\sqrt{\epsilon\mu}$, as fixed once and for all in Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field-strength biquaternion, the Hodge dual and the field invariants. The electromagnetic field tensor has components
 
 $$
-F^{0k}=\frac{E_k}{c},
+F^{tk}=\frac{E_k}{c},
 \qquad
 F^{jk}=\epsilon_{jkl}B_l
 \qquad\text{(real components)},
@@ -80,7 +80,7 @@ S_\mu v^\mu=0
 \mathrm{Sc}\!\left(\tilde{S}\tilde{V}^{\natural}\right)=0 .
 $$
 
-The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_0+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde{\Lambda}_{\vec v}$, the rest-frame spin is
+The condition is what makes the spin a property of the particle rather than of the frame: it says that in the momentary rest frame the time component vanishes. Writing $\tilde{S}=iS^{0}e_t+\vec S_{\rm vec}$ and recalling that the boost to the rest frame is the conjugation with $\tilde{\Lambda}_{\vec v}$, the rest-frame spin is
 
 $$
 \vec s=\tilde{\Lambda}_{\vec v}\,\tilde{S}\,\tilde{\Lambda}_{\vec v}^{*}\Big|_{\rm vec},
@@ -187,15 +187,15 @@ $$
 
 The orthogonality of the spin and the four-velocity is thus preserved **identically**, for every field, by a one-parameter family of covariant equations; the second coefficient is not independent.
 
-**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v^\mu=(c,\mathbf{0})$, so $v^k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F^{k0}=-E_k/c$ and $F^{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
+**The rest-frame torque fixes the remaining coefficient.** In the instantaneous rest frame $v^\mu=(c,\mathbf{0})$, so $v^k=0$ and $\tilde{S}=(0,\vec s)$; the second term of the ansatz vanishes there, and the field tensor has $F^{kt}=-E_k/c$ and $F^{kj}=\epsilon_{kjl}B_l$. The spatial equation is therefore
 
 $$
 \frac{ds^k}{d\tau}
-=\frac{ϙ}{m}\,\alpha\,\Big(F^{k0}S_0+F^{kj}S_j\Big)
+=\frac{ϙ}{m}\,\alpha\,\Big(F^{kt}S_0+F^{kj}S_j\Big)
 =\frac{ϙ}{m}\,\alpha\,\big(\vec s\times\vec B\big)_k ,
 $$
 
-because $S_0=-S^{0}=0$ removes the electric contribution. Matching the gyromagnetic torque in the rest frame, $\dot{\vec s}=\gamma_g\,\vec s\times\vec B=(gq/2m)\,\vec s\times\vec B$, gives
+because $S_0=-S^{0}=0$ removes the electric contribution. Matching the gyromagnetic torque in the rest frame, $d\vec s/d\tau=\gamma_g\,\vec s\times\vec B=(gq/2m)\,\vec s\times\vec B$, gives
 
 $$
 \alpha=\frac{g}{2},
@@ -221,7 +221,7 @@ $$
 
 the anti-Hermitian projection of the product of the material element $\tilde{V}$ with the field-strength biquaternion $\tilde{F}$, rescaled by $-\sqrt{\mu}$. That $\mathrm{F}(\tilde{V})$ lies in the material sector is immediate, since the projection is onto $\mathbb{M}_-$ by construction; that its four-vector components are the contraction $F^{\mu\nu}V_\nu$ is the content of the field-normalization lemma.
 
-**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F^{0k}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$, one has
+**Lemma (field normalization).** With $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, $\vec B=\mu\vec H$, and the real-component field tensor $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$, one has
 
 $$
 \mathrm{F}(\tilde{V})=-\sqrt{\mu}\,P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right)
@@ -230,7 +230,7 @@ $$
 W^\mu=F^{\mu\nu}V_\nu .
 $$
 
-The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ in units $\epsilon=\mu=1$; repeating at $\epsilon=2,\mu=3$ and at $\epsilon=0.7,\mu=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $F^{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
+The instruction $-\sqrt{\mu}$ is exactly the one that cancels the normalizations of the field strength: the electric half of $\tilde{F}$ is weighted by $\sqrt{\epsilon}$ and the magnetic half by $\sqrt{\mu}$, and the projection combines them with the weights of the two self-dual halves. The lemma is verified by recomputation: forming the $2\times2$ complex matrices $\mathsf{M}_2(\vec e_\mu)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, building $\tilde{V}$ and $\tilde{F}$ from random real four-vectors and fields, projecting, and comparing with the component contraction gives agreement to machine precision, with the residual below $10^{-15}$ in units $\epsilon=\mu=1$; repeating at $\epsilon=2,\mu=3$ and at $\epsilon=0.7,\mu=1.3$ confirms the factor $\sqrt{\mu}$ at general medium parameters. The algebraic identity behind it is that the product $\tilde{V}\tilde{F}$ decomposes into the two self-dual halves of the field, and the anti-Hermitian projection selects the combination that carries the components of $F^{\mu\nu}V_\nu$; the companion article *The Field-Strength Biquaternion and Its Invariants*, for the decomposition into self-dual halves, contains the same algebra.
 
 The second structure is the **invariant pairing**
 
@@ -264,7 +264,7 @@ $$
 =\left(\frac{\vec E\cdot\vec s}{c},\ \vec s\times\vec B\right),
 $$
 
-because $F^{0k}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=S_\lambda F^{\lambda\nu}v_\nu=S_kF^{k0}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{k0}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
+because $F^{tk}S_k=(E_k/c)s_k$ and $F^{jk}S_k=(\vec s\times\vec B)_j$. The invariant scalar at rest is $B=\vec E\cdot\vec s$, since $B=S_\lambda F^{\lambda\nu}v_\nu=S_kF^{kt}v_0=\vec E\cdot\vec s$ with $v_0=-c$ and $F^{kt}=-E_k/c$. Substituting the two into the equation and separating the sectors gives the spatial torque
 
 $$
 \frac{d\vec s}{d\tau}=\frac{ϙ}{m}\,\frac{g}{2}\,\vec s\times\vec B
@@ -299,7 +299,7 @@ $$
 \frac{du^\mu}{d\tau}=\frac{ϙ}{m}\,F^{\mu\nu}v_\nu .
 $$
 
-The map $\tilde{Q}\mapsto (ϙ/m)F^{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{0k}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
+The map $\tilde{Q}\mapsto (ϙ/m)F^{\mu\nu}Q_\nu$ is linear, so the transport is the same for every four-vector and the space of solutions is preserved as a whole. In the special case of a purely magnetic field, $F^{tk}=0$, the time components of both $v$ and $S$ are constant and the spatial parts satisfy
 
 $$
 \frac{dX^k}{d\tau}=\frac{ϙ}{m}\big(\vec Q\times\vec B\big)_k ,
@@ -438,22 +438,22 @@ is the subject of the companion article of this subcategory. The equation's two-
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\neq k)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\neq\nu)$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Quaternion conjugate, Hermitian conjugate |
 | $P_{\mathbb{M}_-}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
-| $\tilde{V}=\gamma(ic\,e_0+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
-| $\tilde{P}=m\tilde{V}=iE/c\,e_0+\vec p$ | Four-momentum |
+| $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
+| $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{K}=d\tilde{P}/d\tau=ϙ\,\mathrm{F}(\tilde{V})$ | Four-force (Lorentz force), in $\mathbb{M}_-$ |
-| $\tilde{S}=iS^0e_0+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
+| $\tilde{S}=iS^0e_t+\vec S_{\rm vec}$ | Spin four-vector, in $\mathbb{M}_-$, $S_\mu v^\mu=0$ |
 | $\vec s$ | Rest-frame spin, $S_\mu S^\mu=\vec s^2$ |
 | $S^{\mu\nu}$ | Antisymmetric spin tensor, $S^\mu=\frac{1}{2c}\epsilon^{\mu\nu\rho\sigma}v_\nu S_{\rho\sigma}$ |
 | $g$, $\gamma_g=gq/2m$, $\vec\mu=\gamma_g\vec s$ | Gyromagnetic factor, ratio, magnetic moment |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
-| $F^{0k}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict$: $F^{0k}=iE_k/c$) |
+| $F^{tk}=E_k/c$, $F^{jk}=\epsilon_{jkl}B_l$ | Field tensor components (real time; $ict$: $F^{tk}=iE_k/c$) |
 | $\mathrm{F}(\tilde{V})=-\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ | Field action, components $F^{\mu\nu}V_\nu$ |
 | $\langle\tilde{a},\tilde{b}\rangle=\mathrm{Sc}(\tilde{a}\tilde{b}^{\natural})=-a^0b^0+\vec a\cdot\vec b$ | Invariant pairing on $\mathbb{M}_-$ |
 | $B=S_\lambda F^{\lambda\nu}v_\nu=\langle\tilde{S},\mathrm{F}(\tilde{V})\rangle$ | Spin–field–velocity invariant |

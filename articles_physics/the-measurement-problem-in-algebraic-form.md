@@ -6,13 +6,13 @@ The measurement problem is the unresolved question of how the definite, single o
 
 What it does is narrower, and worth doing carefully. A reformulation changes which notions are primitive, and the measurement problem is stated in terms of primitive notions. The question here is: **stated in the objects of the framework, what is the measurement problem, and what does the restatement change?**
 
-The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between **two kinds of time evolution** — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the **same bilinear operation**, $\tilde{Q} \mapsto \tilde{A} \tilde{Q} \tilde{A}^{*}$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: **unitary** ($\tilde{A}\tilde{A}^{*} = e_0$) or **Hermitian idempotent** ($\tilde{A}^2 = \tilde{A} = \tilde{A}^{*}$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.
+The answer, in advance, is one change in form and no change in physics. In its usual statement the problem is a clash between **two kinds of time evolution** — a unitary evolution and a projection — with no rule saying when each applies. In the framework both are instances of the **same bilinear operation**, $\tilde{Q} \mapsto \tilde{A} \tilde{Q} \tilde{A}^{*}$ (with renormalization in the measurement case), applied with an acting element $\tilde{A} \in \mathbb{B}$ of one of two algebraic types: **unitary** ($\tilde{A}\tilde{A}^{*} = e_t$) or **Hermitian idempotent** ($\tilde{A}^2 = \tilde{A} = \tilde{A}^{*}$). The two kinds of time evolution are thus one operation form applied to two classes of element. That is an exact restatement, and it moves the centre of gravity of the problem — from a boundary between physical regimes to a choice of acting element — without supplying a rule for the choice.
 
 The residue is stated below as the algebraic form of the problem. The companion article *Decoherence as Idempotent Projection* is then used to say exactly what the framework's dephasing model of decoherence does in this language: it supplies a unique channel that removes the coherences while preserving the outcome statistics, and that channel's output is the **average** of the outcomes, not one of them. The difference between the mixture and the outcome is thereby a difference between a segment of the Bloch ball and an endpoint of that segment. What the framework cannot do is make the endpoint a function of the state. That failure is the selection problem in algebraic form, and no change of notation removes it.
 
 The article proceeds as follows: the problem in standard terms; the algebraic vocabulary of acting elements; the problem stated in algebraic form; what decoherence supplies; the selection step; the preferred basis and the cut; what the restatement changes, and what it does not.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the central scalar imaginary. Traces are the matrix-element-representation traces, with $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; $\mathbb{M}_+$ is the Hermitian subspace of states and observables, $\mathbb{M}_-$ the anti-Hermitian subspace of generators, and $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the central scalar imaginary. Traces are the matrix-element-representation traces, with $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$.
 
 ## The Problem in Standard Terms
 
@@ -31,22 +31,22 @@ These strands are not independent, but they are distinct, and a reformulation ca
 Recall from *Quantum Physics in Biquaternionic Form* that a state of the informational sector is an element
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\left(e_0 + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3, \quad |\vec r| \leq 1,
+\tilde{\rho} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3, \quad |\vec r| \leq 1,
 $$
 
 that a general observable is a Hermitian element
 
 $$
-\tilde{H} = h_0\, e_0 + i\,\vec h, \qquad \vec h \in \mathbb{R}^3,
+\tilde{H} = h_0\, e_t + i\,\vec h, \qquad \vec h \in \mathbb{R}^3,
 $$
 
 and that a pure state is an idempotent
 
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_0 \pm i\,\vec u\right), \qquad \vec u \text{ a unit pure real quaternion},
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad \vec u \text{ a unit pure real quaternion},
 $$
 
-with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\mathrm{Tr}(\tilde\Pi_{1,2}) = 1$, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the trace formula
+with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\mathrm{Tr}(\tilde\Pi_{1,2}) = 1$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the trace formula
 
 $$
 p_\pm = \mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\vec u_h)\,\tilde{\rho}\right) = \tfrac{1}{2}\left(1 \pm \vec u_h\cdot\vec r\right),
@@ -64,14 +64,14 @@ $$
 
 The framework's two fundamental operations are both instances of $\Gamma_{\tilde{A}}$, distinguished only by an algebraic property of $\tilde{A}$:
 
-- **Unitary element.** If $\tilde{A} = \tilde{U}$ with $\tilde{U}\tilde{U}^{*} = e_0$, then $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$ is the reversible evolution of the state (equivalently, of any observable in the Heisenberg picture). It preserves the trace pairing, hence the Born probabilities, and it preserves the biquaternion norm; it is an algebra automorphism. It is generated by a Hermitian element: $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$.
+- **Unitary element.** If $\tilde{A} = \tilde{U}$ with $\tilde{U}\tilde{U}^{*} = e_t$, then $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$ is the reversible evolution of the state (equivalently, of any observable in the Heisenberg picture). It preserves the trace pairing, hence the Born probabilities, and it preserves the biquaternion norm; it is an algebra automorphism. It is generated by a Hermitian element: $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$.
 - **Idempotent element.** If $\tilde{A} = \tilde\Pi_{1,2}(\vec u_h)$, then, since $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, the conjugation is the **sandwich**
 
 $$
 \Gamma_{\tilde\Pi_{1,2}}(\tilde{\rho}) = \tilde\Pi_{1,2}\,\tilde{\rho}\,\tilde\Pi_{1,2} = p_\pm \tilde\Pi_{1,2},
 $$
 
-using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_0$, and it is not invertible.
+using $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$ and $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho}) = p_\pm$. As a linear map on the four-dimensional real space $\mathbb{M}_+$, this has rank one: its image is the single ray spanned by $\tilde\Pi_{1,2}$. It does not preserve the biquaternion norm unless $\tilde\Pi_{1,2} = e_t$, and it is not invertible.
 
 The measurement update of *Quantum Physics in Biquaternionic Form* is the normalized version of the idempotent case,
 
@@ -85,14 +85,14 @@ This restatement is exact. It is also only a restatement: membership in one clas
 
 ## The Problem in Algebraic Form
 
-Fix a state $\tilde{\rho} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_0 e_0 + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_0 \pm i\vec u_h)$ and Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$. The framework places three algebraic objects at our disposal:
+Fix a state $\tilde{\rho} \in \mathbb{M}_+$ and an observable $\tilde{H} = h_0 e_t + i\vec h$ with spectral idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(e_t \pm i\vec u_h)$ and Born probabilities $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}\tilde{\rho})$. The framework places three algebraic objects at our disposal:
 
-1. **The reversible evolution** $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$, with $\tilde{U}\tilde{U}^{*} = e_0$.
+1. **The reversible evolution** $\Gamma_{\tilde{U}}(\tilde{\rho}) = \tilde{U}\tilde{\rho}\tilde{U}^{*}$, with $\tilde{U}\tilde{U}^{*} = e_t$.
 2. **The two conditional outcomes** $\Gamma_{\tilde\Pi_{1,2}}(\tilde{\rho}) = p_\pm \tilde\Pi_{1,2}$; normalized, the post-measurement state is $\tilde\Pi_{1,2}$ itself, produced on the branch labelled $\pm$.
 3. **Their statistical average**, the element
 
 $$
-\tilde{\rho}_d \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_0 + i\,(\vec u_h\cdot\vec r)\,\vec u_h\right) .
+\tilde{\rho}_d \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_t + i\,(\vec u_h\cdot\vec r)\,\vec u_h\right) .
 $$
 
 The third object is the fully dephased state of *Decoherence as Idempotent Projection*, restricted to the measurement direction $\vec u_h$; it is developed in the next section. It is the element obtained when the outcome is not retained.
@@ -119,7 +119,7 @@ $$
 \Phi^{\mathrm{deph}}_p(\tilde{\rho}) = (1-p)\,\tilde{\rho} + p\left(\tilde\Pi_1(\vec u)\,\tilde{\rho}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{\rho}\,\tilde\Pi_2(\vec u)\right),
 $$
 
-with Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_0$ and $\tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\vec u)$, acting on the Bloch vector by
+with Kraus operators $\tilde{K}_0 = \sqrt{1-p}\,e_t$ and $\tilde{K}_{1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\vec u)$, acting on the Bloch vector by
 
 $$
 \vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u .
@@ -174,7 +174,7 @@ Three observations keep this honest.
 
 ## The Preferred Basis and the Cut
 
-The preferred-basis strand appears in the framework in a precise and limited form. The pointer direction $\vec u$ is an input to the dephasing channel and to the observable whose idempotents figure in the measurement. The algebra supplies, once $\vec u$ is given, the pointer idempotents, the commutative pointer subalgebra $A$, its $U(1)$ phase symmetry, the fixed states, and the decaying coherences. It does not supply $\vec u$: *Decoherence as Idempotent Projection* states this limitation explicitly, and its reason is structural. The direction is fixed by the system–environment interaction, and the algebra of the operational description represents the consequence of that interaction (the channel and the subalgebra) without containing the interaction dynamics. So the preferred-basis problem is neither sharpened into a solution nor worsened: it is located, unchanged, at the point where the direction enters as data.
+The preferred-basis strand appears in the framework in a precise and limited form. The pointer direction $\vec u$ is an input to the dephasing channel and to the observable whose idempotents figure in the measurement. The algebra supplies, once $\vec u$ is given, the pointer idempotents, the commutative pointer subalgebra $A$, its $\mathrm{U}(1)$ phase symmetry, the fixed states, and the decaying coherences. It does not supply $\vec u$: *Decoherence as Idempotent Projection* states this limitation explicitly, and its reason is structural. The direction is fixed by the system–environment interaction, and the algebra of the operational description represents the consequence of that interaction (the channel and the subalgebra) without containing the interaction dynamics. So the preferred-basis problem is neither sharpened into a solution nor worsened: it is located, unchanged, at the point where the direction enters as data.
 
 The cut strand behaves similarly. In the standard formulation the cut is a boundary between a quantum description and a classical description. In the framework the corresponding choice is the choice of acting element at each step — unitary or idempotent. That is a reformulation of the same freedom, not a derivation of it. The framework contains no condition that says when an interaction counts as a measurement; a physical measurement interaction of a system with an apparatus is, microscopically, a unitary interaction of the larger system, with the idempotent sandwich an effective description of the record. The idempotent is therefore a bookkeeping element for the outcome, not a second microscopic dynamics. That the two classes of element sit in one algebra does not say which one a given physical process realises.
 
@@ -184,7 +184,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 1. **"Two incompatible dynamics" becomes "one operation form, two element types."** The standard problem is often stated as a clash between unitary evolution and projective collapse, two postulates of different character. In the framework both are $\Gamma_{\tilde{A}}$ for $\tilde{A}$ unitary or idempotent, and the dichotomy is a property of $\tilde{A}$. This does not remove the dichotomy and does not fix the cut; it changes what is primitive in its statement. Whether it reduces a "postulate count" is a question about exposition, not about the world.
 
-2. **The mixedness of the decohered state is one scalar, and the residual gap is geometric.** $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2 - 1)e_0$ measures the loss of idempotency, and full dephasing is the trace-preserving conditional expectation onto the pointer subalgebra. The gap between "mixture" and "outcome" is then exactly the gap between an interior point of the pointer diameter and its endpoints. This is a clean and exact way to state the strand it states; it is a picture, not a mechanism.
+2. **The mixedness of the decohered state is one scalar, and the residual gap is geometric.** $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(|\vec r|^2 - 1)e_t$ measures the loss of idempotency, and full dephasing is the trace-preserving conditional expectation onto the pointer subalgebra. The gap between "mixture" and "outcome" is then exactly the gap between an interior point of the pointer diameter and its endpoints. This is a clean and exact way to state the strand it states; it is a picture, not a mechanism.
 
 3. **The statistics-preserving and selection operations are separated exactly.** $\Phi^{\mathrm{deph}}_1$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{\rho}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
 
@@ -208,7 +208,7 @@ The honest summary is a division of labour. The algebraic form makes the *struct
 
 ## Summary
 
-The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_0$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^{*}$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
+The measurement problem, stated in the framework's own terms, is the demand that the biquaternion algebra supply a criterion for measurement — and its unsatisfiability. The framework offers a single operation form, $\tilde{Q} \mapsto \tilde{A}\tilde{Q}\tilde{A}^{*}$, with the acting element either unitary ($\tilde{U}\tilde{U}^{*} = e_t$, reversible evolution) or Hermitian idempotent ($\tilde{P}^2 = \tilde{P} = \tilde{P}^{*}$, the projective sandwich). The Born rule is the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. The unitary evolution produces no definite outcome; the idempotent sandwich produces one but comes with no rule selecting which idempotent acts, and no rule selecting the idempotent case over the unitary case.
 
 Decoherence, in the framework's worked dephasing model, is the channel $\Phi^{\mathrm{deph}}_p$ of *Decoherence as Idempotent Projection*. At full strength it is the trace-preserving conditional expectation onto the pointer subalgebra, and it is the unique coherence-free assignment that reproduces the Born statistics: its output is the mixture $\tilde{\rho}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$, which, for a state $\tilde{\rho}$, is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The mixture is an interior point of the pointer diameter; the outcomes are its endpoints. Decoherence supplies the statistics and the segment, not the endpoint and not the index.
 
@@ -222,23 +222,23 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\mathbb{M}_+$ | Hermitian subspace (states and observables) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
-| $\tilde{H} = h_0e_0 + i\vec h$ | Hermitian observable |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
+| $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
+| $\tilde{H} = h_0e_t + i\vec h$ | Hermitian observable |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ | Trace formula (Born rule) |
 | $p_\pm = \mathrm{Tr}(\tilde\Pi_{1,2}(\vec u_h)\tilde{\rho})$ | Outcome probabilities |
 | $\vec u_h = \vec h/\|\vec h\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$ | Conjugation; unitary evolution ($\tilde{A} = \tilde{U}$) or projective sandwich ($\tilde{A} = \tilde\Pi_{1,2}$) |
-| $\tilde{U}\tilde{U}^{*} = e_0$ | Unitary element (reversible evolution) |
+| $\tilde{U}\tilde{U}^{*} = e_t$ | Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{\rho}_d = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |
 | $\Phi^{\mathrm{deph}}_p$ | Dephasing channel along $\vec u$ at strength $p$ |
 | $\Lambda_\pm(\tilde{Q}) = \mathrm{Tr}(\tilde{Q})\tilde\Pi_{1,2}$ | Selection (reset) channels onto the outcomes |
 | $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ | Pointer (commutative) subalgebra |
 | $\mathrm{Tr}(\tilde{\rho}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\vec r\|^2)$ |
-| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(\|\vec r\|^2 - 1)e_0$ | Deviation from idempotency (mixedness) |
+| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}(\|\vec r\|^2 - 1)e_t$ | Deviation from idempotency (mixedness) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

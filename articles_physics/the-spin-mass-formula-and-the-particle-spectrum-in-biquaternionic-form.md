@@ -4,17 +4,17 @@
 
 The corpus states repeatedly that the framework does not derive masses: the mass is an empirical input, a parameter of the equation, and the geometry supplies no scale. That statement is correct about the *framework's* derivation of a mass from the algebra, but there is a second question it does not settle. A field equation in a *finite-dimensional representation* of the Lorentz group carries a **matrix** $K$ whose eigenvalues are masses, and the representation can be chosen. The question is then not "what is the mass?" but "**which mass does each representation carry?**" — and that question, in the spinor-structure programme, has an answer that reproduces the gross mass ratios of the stable particles from the degrees of the representations alone.
 
-The formula is the following. For a field transforming in the Lorentz representation $\tau^{l\dot l}$ — the $(2l+1)(2\dot l+1)$-dimensional irreducible representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$ — the mass that the finite-dimensional (Bhabha–Gel'fand–Yaglom) equation assigns to the representation is
+The formula is the following. For a field transforming in the Lorentz representation $\tau^{l\bar l}$ — the $(2l+1)(2\bar l+1)$-dimensional irreducible representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$ — the mass that the finite-dimensional (Bhabha–Gel'fand–Yaglom) equation assigns to the representation is
 
 $$
-m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\dot l+\tfrac12\right) = \frac{\mu_0}{4}\,(2l+1)(2\dot l+1) = \frac{\mu_0}{4}\deg\tau^{l\dot l},
+m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right) = \frac{\mu_0}{4}\,(2l+1)(2\bar l+1) = \frac{\mu_0}{4}\deg\tau^{l\bar l},
 $$
 
-with $s=|l-\dot l|$ the spin. The last form is the whole content: **the mass is proportional to the dimension of the representation.** The representation dimension is the single datum, and the spectrum is the sequence of dimensions along the interlocking chains. Normalising to the electron, the fundamental representation $\tau^{1/2,0}$ of degree $2$, gives $m/m_e = \deg/2$.
+with $s=|l-\bar l|$ the spin. The last form is the whole content: **the mass is proportional to the dimension of the representation.** The representation dimension is the single datum, and the spectrum is the sequence of dimensions along the interlocking chains. Normalising to the electron, the fundamental representation $\tau^{1/2,0}$ of degree $2$, gives $m/m_e = \deg/2$.
 
 The article records this formula, its derivation from the determinant of the Bhabha operator, the interlocking chains that organise the representations, and the resulting spectrum with its three successes and its one important non-uniqueness. It stands beside the companion *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, which reaches a mass formula by the opposite route — a mass term that is itself a field — and beside *Antilinear Structure and the Two Kinds of Mass*, which distinguishes the Dirac and Majorana masses at the level of a single field's pairing; the present formula is a third thing, a spectrum over representations.
 
-**Conventions.** The Lorentz-group conventions are those of the corpus's spinor-module and angular-momentum articles: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\dot l}$ with $l,\dot l\in\frac12\mathbb{Z}_{\ge0}$, spin $s=|l-\dot l|$, and the $ict$ metric of the corpus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with an overall sign immaterial to the ratios. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, its Clifford form the corpus's *Clifford Algebra Representation*. The mass formula and the interlocking scheme are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400), whose route is the finite-dimensional Bhabha–Gel'fand–Yaglom equation.
+**Conventions.** The Lorentz-group conventions are those of the corpus's spinor-module and angular-momentum articles: $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, representations $\tau^{l\bar l}$ with $l,\bar l\in\frac12\mathbb{Z}_{\ge0}$, spin $s=|l-\bar l|$, and the $ict$ metric of the corpus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ with an overall sign immaterial to the ratios. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, its Clifford form the corpus's *Clifford Algebra Representation*. The mass formula and the interlocking scheme are transcribed from the spinor-structure programme (V. V. Varlamov, arXiv:1409.1400), whose route is the finite-dimensional Bhabha–Gel'fand–Yaglom equation.
 
 - Companion article *The Petiau System and the Quantisation of Mass in Biquaternionic Form*, for the other mass formula — the mass term as a field, the Einstein–Mayer mass biquaternion, and Barut's empirical ratio — and for the corpus's standing that the framework does not derive masses.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the Dirac/Majorana distinction and the statement that the framework does not fix the mass values.
@@ -42,7 +42,7 @@ $$
 Because $D(p)$ is Lorentz-invariant, it depends only on $s^{2}(p)=p_0^{2}-p_1^{2}-p_2^{2}-p_3^{2}$ and factors as
 
 $$
-\tilde{D}\bigl(s^{2}\bigr) = c\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr),
+\tilde{D}\bigl(s^{2}\bigr) = \kappa\,\bigl(s^{2}-m_1^{2}\bigr)\bigl(s^{2}-m_2^{2}\bigr)\cdots\bigl(s^{2}-m_k^{2}\bigr),
 $$
 
 so the masses $m_i$ are the roots: the representation carries a **discrete set of masses**, one for each distinct positive root of the determinant, and the field is a **multi-mass** field. This is the sense in which mass can be "quantised" by the representation, and it is the content the bivector-space article *Bhabha Multi-Mass Wave Equations and the Bivector Space in Biquaternionic Form* develops in full.
@@ -52,37 +52,37 @@ so the masses $m_i$ are the roots: the representation carries a **discrete set o
 The roots are read off from the eigenvalues of $\Gamma^{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma^0$ and
 
 $$
-\det\bigl(p_0\Gamma^{0}+mE\bigr) = \tilde{c}\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
+\det\bigl(p_0\Gamma^{0}+mE\bigr) = \kappa\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),
 $$
 
-where the $\lambda_i$ are the eigenvalues of $\Gamma^{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\lambda_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\lambda_i|$. For a representation of type $\tau^{0,\dot l}$ the eigenvalues are the $\dot\lambda$; for a general $\tau^{l\dot l}$ the mass is the **product** of a pair of eigenvalue factors,
+where the $\lambda_i$ are the eigenvalues of $\Gamma^{0}$ and $\mu_0$ is a single constant with the dimensions of mass. Comparing with the factorisation gives $m_i=\mu_0\lambda_i$ up to signs, and, because $\lambda$ and $-\lambda$ occur with the same multiplicity, the positive spectrum is the set of positive $|\lambda_i|$. For a representation of type $\tau^{0,\bar l}$ the eigenvalues are the $\bar\lambda$; for a general $\tau^{l\bar l}$ the mass is the **product** of a pair of eigenvalue factors,
 
 $$
-m_1 = \mu_0\,\lambda_1\dot\lambda_1,
+m_1 = \mu_0\,\lambda_1\bar\lambda_1,
 \qquad
--m_1 = \mu_0\,\lambda_2\dot\lambda_2,
+-m_1 = \mu_0\,\lambda_2\bar\lambda_2,
 \qquad
-m_2 = \mu_0\,\lambda_3\dot\lambda_3 = -\mu_0\,\lambda_4\dot\lambda_4,\ \dots
+m_2 = \mu_0\,\lambda_3\bar\lambda_3 = -\mu_0\,\lambda_4\bar\lambda_4,\ \dots
 $$
 
-The formula is a statement about the eigenvalues of $\Gamma^{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\dot l\to\infty$, the eigenvalues degenerate and
+The formula is a statement about the eigenvalues of $\Gamma^{0}$ in the representation. Its clean form is the asymptotic one: for the infinite-dimensional representations that arise as the limits of the chains, $l\to\infty$ and $\bar l\to\infty$, the eigenvalues degenerate and
 
 $$
-m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\dot l+\tfrac12\right),
-\qquad s=|l-\dot l| .
+m^{(s)} = \mu_0\left(l+\tfrac12\right)\left(\bar l+\tfrac12\right),
+\qquad s=|l-\bar l| .
 $$
 
-The identity $(l+\frac12)(\dot l+\frac12) = \frac14(2l+1)(2\dot l+1)$ then gives the dimension form announced above, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$. The mass is thus read from the dimension of the representation, and the constant $\mu_0$ is the single scale.
+The identity $(l+\frac12)(\bar l+\frac12) = \frac14(2l+1)(2\bar l+1)$ then gives the dimension form announced above, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$. The mass is thus read from the dimension of the representation, and the constant $\mu_0$ is the single scale.
 
 ## The Interlocking Chains
 
-The representations do not appear singly. Two irreducible representations $\tau^{l\dot l}$ and $\tau^{l'\dot l'}$ are called **interlocking** when $l'=l\pm\frac12$ and $\dot l'=\dot l\pm\frac12$, and the interlocking relations organise all representations into chains. The chain that carries the electron and the nucleon is the **spin-$\frac12$ line**,
+The representations do not appear singly. Two irreducible representations $\tau^{l\bar l}$ and $\tau^{l'\bar l'}$ are called **interlocking** when $l'=l\pm\frac12$ and $\bar l'=\bar l\pm\frac12$, and the interlocking relations organise all representations into chains. The chain that carries the electron and the nucleon is the **spin-$\frac12$ line**,
 
 $$
 \tau^{\frac12,0}\longrightarrow\tau^{1,\frac12}\longrightarrow\tau^{\frac32,1}\longrightarrow\tau^{2,\frac32}\longrightarrow\tau^{\frac52,2}\longrightarrow\cdots,
 $$
 
-that is, $\tau^{l\dot l}$ with $l=\frac{j+1}{2}$, $\dot l=\frac{j}{2}$, for $j=0,1,2,\dots$, all of spin $s=\frac12$ and of degree
+that is, $\tau^{l\bar l}$ with $l=\frac{j+1}{2}$, $\bar l=\frac{j}{2}$, for $j=0,1,2,\dots$, all of spin $s=\frac12$ and of degree
 
 $$
 \deg\tau^{\frac{j+1}{2},\frac j2} = (j+2)(j+1) = 2,\,6,\,12,\,20,\,30,\,42,\,56,\,72,\,90,\,110,\dots
@@ -101,12 +101,12 @@ The ordering of a chain by degree is the ordering by mass, since $m\propto\deg$.
 Normalising to the electron, the fundamental $\tau^{1/2,0}$ of degree $2$, gives
 
 $$
-\frac{m}{m_e} = \frac{\deg\tau^{l\dot l}}{2} = \frac{(2l+1)(2\dot l+1)}{2}.
+\frac{m}{m_e} = \frac{\deg\tau^{l\bar l}}{2} = \frac{(2l+1)(2\bar l+1)}{2}.
 $$
 
 The programme assigns the following representations, with the ratios below. The measured ratios are computed from the Particle Data Group values, in units of the electron mass $m_e=0.5110$ MeV: $m_p=938.272$ MeV ($m_p/m_e=1836.15$), the $\Sigma$-octet mean $m_\Sigma=(m_{\Sigma^+}+m_{\Sigma^0}+m_{\Sigma^-})/3=1193.15$ MeV ($2334.9$), $m_{\pi^\pm}=139.570$ MeV ($273.13$), and $m_{\pi^0}=134.977$ MeV ($264.14$). The programme itself quotes $m_\Sigma/m_e\approx2280$, which corresponds to a $\Sigma$ mass near $1165$ MeV and is not the PDG octet mean; the table uses the PDG value and the discrepancy is noted.
 
-| particle | rep $\tau^{l\dot l}$ | $s$ | degree $\deg$ | formula $m/m_e$ | measured $m/m_e$ | error |
+| particle | rep $\tau^{l\bar l}$ | $s$ | degree $\deg$ | formula $m/m_e$ | measured $m/m_e$ | error |
 |---|---|---|---|---|---|---|
 | electron | $\tau^{\frac12,0}$ | $\frac12$ | $2$ | $1.00$ | $1.00$ ($e$) | 0 |
 | proton | $\tau^{\frac{59}{2},29}$ | $\frac12$ | $3540$ | $1770$ | $1836.15$ ($p$) | $-3.6\%$ |
@@ -133,14 +133,14 @@ First, the head of the spin-$\frac12$ chain is the algebra itself: $\tau^{1/2,0}
 
 Second, the chain is a chain of Clifford algebras and the corpus's *Clifford Algebra Representation* and *Higher Spin from Tensor Products* locate the biquaternion algebra as the first even subalgebra in that chain, with the higher members reached only by tensor products that enlarge the algebra. The mass formula, read along the chain, is therefore a formula the framework can state but not contain: the higher degrees correspond to the representations the corpus has already shown lie *outside* $\mathbb{B}$, and the formula is a statement about how their masses would run if they were carried by an enlarged algebra.
 
-Third, the interlocking relation is the corpus's own tensor-product relation, and the Clebsch–Gordan decomposition of $\tau^{l\dot l}\otimes\tau^{1/2,1/2}$ contains the four interlocking neighbours. The chain is thus a walk in the corpus's representation ring, generated by repeatedly multiplying by the fundamental. The mass formula attaches a number to each vertex of that walk.
+Third, the interlocking relation is the corpus's own tensor-product relation, and the Clebsch–Gordan decomposition of $\tau^{l\bar l}\otimes\tau^{1/2,1/2}$ contains the four interlocking neighbours. The chain is thus a walk in the corpus's representation ring, generated by repeatedly multiplying by the fundamental. The mass formula attaches a number to each vertex of that walk.
 
 ## What the Framework Establishes, Transcribes, and Does Not
 
 **Established, and recomputed.**
 
-- The mass formula in dimension form, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\dot l}$, is the identity $(l+\frac12)(\dot l+\frac12)=\frac14(2l+1)(2\dot l+1)$ applied to the programme's asymptotic formula; it is an algebraic identity, verified here.
-- The determinant factorisation and the eigenvalue relation $m_i=\mu_0\lambda_i$ (with $m_i=\mu_0\lambda_i\dot\lambda_i$ for $\tau^{l\dot l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
+- The mass formula in dimension form, $m^{(s)}=\frac{\mu_0}{4}\deg\tau^{l\bar l}$, is the identity $(l+\frac12)(\bar l+\frac12)=\frac14(2l+1)(2\bar l+1)$ applied to the programme's asymptotic formula; it is an algebraic identity, verified here.
+- The determinant factorisation and the eigenvalue relation $m_i=\mu_0\lambda_i$ (with $m_i=\mu_0\lambda_i\bar\lambda_i$ for $\tau^{l\bar l}$) are the standard Bhabha–Gel'fand–Yaglom argument, reproduced in outline.
 - The degrees along the spin-$\frac12$ line are $(j+1)(j+2)$, giving $2,6,12,20,30,\dots$; the formula's ratios for the electron, proton, $\Sigma$ and $\pi$ are $1.00$, $1770$, $2278$, and $264.5$.
 - The next interlocking representation after $\tau^{59/2,29}$ on the same chain is $\tau^{30,29/2}$, of degree $3660$ and ratio $1830$; the programme's claim that it is $\tau^{67/2,33}$ skips eight places and is inconsistent with its own chain.
 
@@ -171,7 +171,7 @@ Third, the interlocking relation is the corpus's own tensor-product relation, an
 
 ## Summary
 
-The finite-dimensional Bhabha–Gel'fand–Yaglom equation assigns to each Lorentz representation $\tau^{l\dot l}$ a discrete mass spectrum whose leading term is $m^{(s)}=\mu_0(l+\frac12)(\dot l+\frac12)$, equal to $\frac{\mu_0}{4}$ times the dimension of the representation, with $s=|l-\dot l|$. Normalising to the electron, the fundamental representation of degree $2$, gives $m/m_e=\deg/2$. The representations are organised into interlocking chains; on the spin-$\frac12$ chain the degrees are $(j+1)(j+2)$ and the members are the electron, the nucleon, the $\Sigma$, and the higher resonances; on the spin-$0$ chain they are the squares. The formula reproduces the $\Sigma$ to $0.07\%$, the electron position exactly, and the proton and $\pi$ to about $3\%$, with the neighbour of the proton's representation doing distinctly better than the assignment the programme makes.
+The finite-dimensional Bhabha–Gel'fand–Yaglom equation assigns to each Lorentz representation $\tau^{l\bar l}$ a discrete mass spectrum whose leading term is $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)$, equal to $\frac{\mu_0}{4}$ times the dimension of the representation, with $s=|l-\bar l|$. Normalising to the electron, the fundamental representation of degree $2$, gives $m/m_e=\deg/2$. The representations are organised into interlocking chains; on the spin-$\frac12$ chain the degrees are $(j+1)(j+2)$ and the members are the electron, the nucleon, the $\Sigma$, and the higher resonances; on the spin-$0$ chain they are the squares. The formula reproduces the $\Sigma$ to $0.07\%$, the electron position exactly, and the proton and $\pi$ to about $3\%$, with the neighbour of the proton's representation doing distinctly better than the assignment the programme makes.
 
 What is transcribed is the formula, the chains, and the assignments; what is established is the dimension identity, the arithmetic of the chain and of the ratios, and the observation that the naturally next representation after the proton's is not the one the programme picks. What remains open is the scale $\mu_0$, the principle that selects the occupied representations, and the extension of the formula to the framework's own fields.
 
@@ -179,15 +179,15 @@ What is transcribed is the formula, the chains, and the assignments; what is est
 
 | Symbol | Meaning |
 |---|---|
-| $\tau^{l\dot l}$ | Irreducible representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$ |
-| $s=\lvert l-\dot l\rvert$ | Spin of the representation |
-| $\deg\tau^{l\dot l}=(2l+1)(2\dot l+1)$ | Degree (dimension) of the representation |
-| $m^{(s)}=\mu_0(l+\frac12)(\dot l+\frac12)=\frac{\mu_0}{4}\deg$ | The spin–mass formula |
+| $\tau^{l\bar l}$ | Irreducible representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$ |
+| $s=\lvert l-\bar l\rvert$ | Spin of the representation |
+| $\deg\tau^{l\bar l}=(2l+1)(2\bar l+1)$ | Degree (dimension) of the representation |
+| $m^{(s)}=\mu_0(l+\frac12)(\bar l+\frac12)=\frac{\mu_0}{4}\deg$ | The spin–mass formula |
 | $\mu_0$ | Mass scale; the electron's anchor is $m_e=\mu_0/2$ |
 | $\Gamma^{\mu}$, $\Gamma(p)$ | Generators and the momentum matrix of the Bhabha equation |
-| $\lambda_i$, $\dot\lambda_i$ | Eigenvalues of $\Gamma^{0}$; $m_i=\mu_0\lambda_i\dot\lambda_i$ |
+| $\lambda_i$, $\bar\lambda_i$ | Eigenvalues of $\Gamma^{0}$; $m_i=\mu_0\lambda_i\bar\lambda_i$ |
 | $D(p)=\det(\Gamma(p)+mE)$ | The determinant whose roots are the masses |
-| Interlocking | $l'=l\pm\frac12$, $\dot l'=\dot l\pm\frac12$ |
+| Interlocking | $l'=l\pm\frac12$, $\bar l'=\bar l\pm\frac12$ |
 | Spin-$\frac12$ line | $\tau^{\frac{j+1}{2},\frac j2}$, degree $(j+1)(j+2)$ |
 | $m/m_e=\deg/2$ | Ratio form, normalised to the electron |
 

@@ -4,7 +4,7 @@
 
 The entropy of a spin state measures the observer's ignorance about the spin, and in a relativistic theory the natural question is how that ignorance changes from frame to frame. The framework answers it with a single algebraic object. A state of the qubit is a positive trace-one element of the Hermitian sector,
 $$
-\tilde{\rho} = \tfrac12\bigl(e_0 + i\vec r\bigr), \qquad |\vec r|\leq 1 ,
+\tilde{\rho} = \tfrac12\bigl(e_t + i\vec r\bigr), \qquad |\vec r|\leq 1 ,
 $$
 and its von Neumann entropy is the binary entropy of the Bloch radius,
 $$
@@ -28,7 +28,7 @@ The findings are stated in advance.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The state is $\tilde{\rho} = \tfrac12(e_0+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$; the Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The state is $\tilde{\rho} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$; the Wigner rotation is $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}\in SU(2)$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the state space, the Bloch ball, and the little group.
@@ -45,7 +45,7 @@ The companion articles supply the pieces:
 
 A state of the qubit is a positive element of $\mathbb{M}_+$ of unit trace,
 $$
-\tilde{\rho} = \tfrac12\bigl(e_0 + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3, \qquad |\vec r|\leq 1 ,
+\tilde{\rho} = \tfrac12\bigl(e_t + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3, \qquad |\vec r|\leq 1 ,
 $$
 its eigenvalues are $\tfrac12(1\pm|\vec r|)$, and its von Neumann entropy is
 $$
@@ -61,7 +61,7 @@ in bits.
 
 The biquaternion norm evaluates on a state to
 $$
-\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr)e_0 ,
+\langle\tilde{\rho}\rangle_{\natural} = \tilde{\rho}\tilde{\rho}^{\natural} = \tfrac14\bigl(1-|\vec r|^2\bigr)e_t ,
 $$
 because the scalar and vector parts contribute $\tfrac14$ and $\tfrac14\sum_k(ir_k)^2 = -\tfrac14|\vec r|^2$ respectively. Hence $|\vec r| = \sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}$ and
 $$
@@ -73,9 +73,9 @@ The entropy is a function of the single algebraic invariant $\langle\tilde{\rho}
 
 The entropy can equally be read off from the Born pairing, which is the framework's primitive. For the two idempotents along the Bloch direction,
 $$
-\tilde\Pi_{1,2} = \tfrac12\bigl(e_0 \pm i\vec r/|\vec r|\bigr),
+\tilde\Pi_{1,2} = \tfrac12\bigl(e_t \pm i\vec r/|\vec r|\bigr),
 \qquad
-\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2},\quad \tilde\Pi_1\tilde\Pi_2 = 0,\quad \tilde\Pi_1 + \tilde\Pi_2 = e_0 ,
+\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2},\quad \tilde\Pi_1\tilde\Pi_2 = 0,\quad \tilde\Pi_1 + \tilde\Pi_2 = e_t ,
 $$
 the Born weights of the state are the trace pairings
 $$
@@ -244,7 +244,7 @@ This is the whole content of the Lorentz group's action on spin entropy, and it 
 
 ## Summary
 
-The spin state of the qubit is $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$, and its von Neumann entropy is
+The spin state of the qubit is $\tilde{\rho} = \tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, and its von Neumann entropy is
 $$
 S(\tilde{\rho}) = h\!\left(\frac{1+|\vec r|}{2}\right) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{\rho}\rangle_{\natural}}}{2}\right),
 \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
@@ -261,13 +261,13 @@ For a massive particle the little group is $SU(2)$, the Casimir labels are $(m,s
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ | Spin state, Bloch vector $\vec r$, $|\vec r|\leq1$ |
+| $\tilde{\rho} = \tfrac12(e_t+i\vec r)$ | Spin state, Bloch vector $\vec r$, $|\vec r|\leq1$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, multiplicative |
 | $\langle\tilde{\rho}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)$ | Biquaternion norm of a state |
 | $h(p) = -p\log_2p-(1-p)\log_2(1-p)$ | Binary entropy |
 | $S(\tilde{\rho}) = h((1+|\vec r|)/2)$ | Spin entropy, in bits |
 | $S = h((1+\sqrt{1-4N})/2)$ | Entropy as a function of the biquaternion norm |
-| $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin operators |
+| $\tilde{S}_k = \tfrac{\hbar}{2}i\vec e_k$ | Spin operators |
 | $\tilde{W}(\tilde{\Lambda},\tilde{U})\in SU(2)$ | Wigner rotation |
 | $\tilde{\rho}\mapsto\tilde{W}\tilde{\rho}\tilde{W}^{*}$ | Physical spin action, entropy-preserving |
 | $\tilde{\rho}\mapsto\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^{*}$ | Congruence, trace-changing, not a state map |

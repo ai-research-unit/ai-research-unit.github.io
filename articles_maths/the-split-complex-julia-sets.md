@@ -16,7 +16,7 @@ $$
 J_c = \mathbb{D} \setminus F_c .
 $$
 
-That is, $z \in F_c$ when there is a neighbourhood $U$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in U$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.
+That is, $z \in F_c$ when there is a neighbourhood $\Omega$ of $z$ on which, for every $\varepsilon > 0$, there is $\delta > 0$ with $|f_c^n(z') - f_c^n(z'')| < \varepsilon$ for all $n$ whenever $z', z'' \in \Omega$ with $|z'-z''| < \delta$; the distance in the compactification is the spherical one.
 
 **Remark (why the definition is the metric one).** A split-complex polynomial is not holomorphic in the sense of *Complex Analysis*, and the theory of normal families of holomorphic maps does not apply. The definition above is the real two-dimensional analogue: a family is normal exactly when it is equicontinuous in the spherical metric, and the Fatou set is the locus of normality. This is the definition used for the real dynamics of Part III, and it reduces to the holomorphic definition when the map is complex.
 

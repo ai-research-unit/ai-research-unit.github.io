@@ -13,23 +13,23 @@ The prerequisites are the measure theory of *Measure Theory and Integration* —
 
 ### Sequences, Nets and Filters
 
-**Definition.** Let $X$ be a topological space. A sequence $(x_n)$ in $X$ **converges** to $x \in X$, written $x_n \to x$, if for every neighbourhood $U$ of $x$ there is $N$ with $x_n \in U$ for all $n \geq N$. The point $x$ is a **limit** of the sequence. A sequence is **convergent** if it has a limit.
+**Definition.** Let $X$ be a topological space. A sequence $(x_n)$ in $X$ **converges** to $x \in X$, written $x_n \to x$, if for every neighbourhood $\Omega$ of $x$ there is $N$ with $x_n \in \Omega$ for all $n \geq N$. The point $x$ is a **limit** of the sequence. A sequence is **convergent** if it has a limit.
 
 A sequence is a function on the directed set $\mathbb{N}$; replacing $\mathbb{N}$ by an arbitrary directed set gives a **net**, and the same definition applies with the index set in place of $\mathbb{N}$. A **filter** on $X$ converges to $x$ if it contains every neighbourhood of $x$. Nets and filters carry the same convergence information, and in a first-countable space the topology is determined by its convergent sequences, so that sequences suffice for the metric and normed spaces that are the ambient spaces of this Part. The general theory is that of *Nets, Filters and Convergence*.
 
 **Proposition (uniqueness).** If $X$ is Hausdorff, a sequence has at most one limit.
 
-**Proof.** If $x \neq y$, choose disjoint neighbourhoods $U$ of $x$ and $V$ of $y$; a sequence converging to both lies eventually in each, hence eventually in $U \cap V = \emptyset$, a contradiction.
+**Proof.** If $x \neq y$, choose disjoint neighbourhoods $\Omega$ of $x$ and $V$ of $y$; a sequence converging to both lies eventually in each, hence eventually in $\Omega \cap V = \emptyset$, a contradiction.
 
 In a non-Hausdorff space a sequence may have several limits, and the notation $x_n \to x$ then asserts only that $x$ is one of them. Every space in this Part is Hausdorff, and the qualification is not repeated.
 
 **Theorem (convergence and continuity).** A map $f : X \to Y$ of topological spaces is continuous at $x$ if and only if $f(x_\lambda) \to f(x)$ for every net $x_\lambda \to x$. For first-countable $X$ it suffices to test sequences.
 
-**Proof.** If $f$ is continuous at $x$ and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so $x_\lambda$ lies eventually in it and $f(x_\lambda)$ lies eventually in $V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; the neighbourhoods of $x$ are directed by reverse inclusion, and choosing $x_U \in U \setminus f^{-1}(V)$ gives a net $x_U \to x$ with $f(x_U) \notin V$.
+**Proof.** If $f$ is continuous at $x$ and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so $x_\lambda$ lies eventually in it and $f(x_\lambda)$ lies eventually in $V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; the neighbourhoods of $x$ are directed by reverse inclusion, and choosing $x_\Omega \in \Omega \setminus f^{-1}(V)$ gives a net $x_\Omega \to x$ with $f(x_\Omega) \notin V$.
 
 ### Cauchy Sequences, Completeness and Compactness
 
-**Definition.** Let $(X, \mathcal{U})$ be a uniform space, with entourages the members of $\mathcal{U}$. A sequence $(x_n)$ is **Cauchy** if for every entourage $U$ there is $N$ with $(x_m, x_n) \in U$ for all $m, n \geq N$. The space is **complete** if every Cauchy sequence converges. In a metric space the condition is that $d(x_m, x_n) \to 0$ as $m, n \to \infty$.
+**Definition.** Let $(X, \mathcal{U})$ be a uniform space, with entourages the members of $\mathcal{U}$. A sequence $(x_n)$ is **Cauchy** if for every entourage $\Omega$ there is $N$ with $(x_m, x_n) \in \Omega$ for all $m, n \geq N$. The space is **complete** if every Cauchy sequence converges. In a metric space the condition is that $d(x_m, x_n) \to 0$ as $m, n \to \infty$.
 
 Convergent sequences are Cauchy, and the converse is the content of completeness; the two notions agree in a complete space and in a compact space. The following three facts are the ones this Part uses.
 
@@ -83,7 +83,7 @@ $$
 
 **Theorem.** $B(X, Y)$ with the supremum norm is a Banach space when $Y$ is a Banach space; the subspace $C_b(X,Y)$ of bounded continuous functions is closed in it, hence itself a Banach space, and a uniform limit of continuous functions is continuous.
 
-**Proof.** The norm axioms are immediate from those of $Y$. Completeness is the uniform Cauchy criterion. If $f_n \in C_b(X,Y)$ and $f_n \rightrightarrows f$, let $x_0 \in X$ and $\epsilon > 0$; choose $n$ with $\|f_n - f\|_\infty < \epsilon/3$ and a neighbourhood $U$ of $x_0$ with $\|f_n(x) - f_n(x_0)\| < \epsilon/3$ on $U$, then $\|f(x) - f(x_0)\| \leq \epsilon$ on $U$ by the triangle inequality.
+**Proof.** The norm axioms are immediate from those of $Y$. Completeness is the uniform Cauchy criterion. If $f_n \in C_b(X,Y)$ and $f_n \rightrightarrows f$, let $x_0 \in X$ and $\epsilon > 0$; choose $n$ with $\|f_n - f\|_\infty < \epsilon/3$ and a neighbourhood $\Omega$ of $x_0$ with $\|f_n(x) - f_n(x_0)\| < \epsilon/3$ on $\Omega$, then $\|f(x) - f(x_0)\| \leq \epsilon$ on $\Omega$ by the triangle inequality.
 
 Uniform convergence is therefore the mode that is adapted to continuity: the limit of a uniformly convergent sequence of continuous functions is continuous, with the same modulus of continuity estimate, and the argument uses only the triangle inequality.
 
@@ -95,7 +95,7 @@ Uniform convergence implies locally uniform convergence, which implies pointwise
 
 **Theorem (Dini).** Let $X$ be compact, $f_n : X \to \mathbb{R}$ continuous and $f_n(x) \downarrow f(x)$ for every $x$, with $f$ continuous. Then $f_n \rightrightarrows f$.
 
-**Proof.** Put $g_n = f_n - f \geq 0$, continuous and decreasing to $0$ pointwise. Given $\epsilon > 0$, the sets $U_n = \{x : g_n(x) < \epsilon\}$ are open, increase with $n$ and cover $X$; by compactness finitely many cover $X$, and since they increase, $U_N = X$ for some $N$. Hence $0 \leq g_n \leq \epsilon$ on $X$ for $n \geq N$.
+**Proof.** Put $g_n = f_n - f \geq 0$, continuous and decreasing to $0$ pointwise. Given $\epsilon > 0$, the sets $\Omega_n = \{x : g_n(x) < \epsilon\}$ are open, increase with $n$ and cover $X$; by compactness finitely many cover $X$, and since they increase, $\Omega_N = X$ for some $N$. Hence $0 \leq g_n \leq \epsilon$ on $X$ for $n \geq N$.
 
 Monotonicity is essential: on $[0,1]$ the functions $f_n(x) = \max(0, 1 - \lvert nx - 1\rvert)$ converge pointwise to $0$, the sequence is not monotone in $n$ at any point, and the convergence is not uniform, since $\|f_n\|_\infty = 1$ for every $n$. Dini's theorem is the standard device for upgrading a pointwise convergence that is monotone on a compact set.
 
@@ -161,7 +161,7 @@ The exact relation is therefore: a.e. convergence and convergence in measure do 
 
 Let $1 \leq p \leq \infty$ and let $L^{n}(\mu)$ be the Lebesgue space of *Measure Theory and Integration*, a Banach space for the norm $\|f\|_p = (\int \|f\|^p \, d\mu)^{1/p}$ when $p < \infty$, and $\|f\|_\infty$ the essential supremum when $p = \infty$.
 
-**Definition.** $f_n \to f$ **in $L^{n}$**, written $f_n \xrightarrow{L^{n} f$, if $\|f_n - f\|_p \to 0$.
+**Definition.** $f_n \to f$ **in $L^{n}$**, written $f_n \xrightarrow{L^{n} }$, if $\|f_n - f\|_p \to 0$.
 
 Convergence in $L^{n}$ is convergence in the metric of the norm, and it is a mode of convergence of the functions themselves, not of their values: the functions are identified when they agree a.e., and both the hypothesis and the conclusion are insensitive to null sets.
 
@@ -233,7 +233,7 @@ Let $X$ be a locally compact Hausdorff space and let $M(X)$ be the space of fini
 
 **Definition.** A sequence $(\mu_n) \subseteq M(X)$ **converges weakly** to $\mu$ if $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ for every $\varphi \in C_0(X)$; it **converges vaguely** if this holds for every $\varphi \in C_c(X)$, the continuous functions of compact support. On a compact $X$ the two agree.
 
-**Theorem (portmanteau).** For finite positive measures on a metric space $X$, weak convergence of $\mu_n$ to $\mu$ is equivalent to each of: $\limsup_n \mu_n(F) \leq \mu(F)$ for every closed $F$; $\liminf_n \mu_n(U) \geq \mu(U)$ for every open $U$; $\mu_n(A) \to \mu(A)$ for every Borel $A$ with $\mu(\partial A) = 0$; and $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ for every bounded uniformly continuous $\varphi$.
+**Theorem (portmanteau).** For finite positive measures on a metric space $X$, weak convergence of $\mu_n$ to $\mu$ is equivalent to each of: $\limsup_n \mu_n(F) \leq \mu(F)$ for every closed $F$; $\liminf_n \mu_n(\Omega) \geq \mu(\Omega)$ for every open $\Omega$; $\mu_n(A) \to \mu(A)$ for every Borel $A$ with $\mu(\partial A) = 0$; and $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$ for every bounded uniformly continuous $\varphi$.
 
 **Example (approximation of the Dirac measure).** On $\mathbb{R}$ let $\mu_n$ be the measure with density $n\,\mathbf{1}_{[0,1/n]}$ with respect to Lebesgue measure. Then $\int \varphi \, d\mu_n \to \varphi(0)$ for every $\varphi \in C_c(\mathbb{R})$, so $\mu_n$ converges vaguely, and weakly, to the Dirac measure $\delta_0$. The sequence of densities converges to $0$ a.e.; the convergence of the measures is a different statement from the a.e. convergence of the densities, and the distinction is the one between the mode of the previous sections and the mode of this one.
 
@@ -293,7 +293,7 @@ The modes fixed by this article, with their notation, are the following.
 | Almost everywhere | $f_n \to f$ $\mu$-a.e. | pointwise off a $\mu$-null set |
 | Almost uniform | $f_n \rightrightarrows f$ off $E$, $\mu(E) < \epsilon$ | Egorov's conclusion |
 | In measure | $f_n \xrightarrow{\mu} f$ | $\mu(\{\|f_n - f\| > \epsilon\}) \to 0$ |
-| In $L^{n}$ | $f_n \xrightarrow{L^{n} f$ | $\|f_n - f\|_p \to 0$ |
+| In $L^{n}$ | $f_n \xrightarrow{L^{n} }$ | $\|f_n - f\|_p \to 0$ |
 | Weak | $f_n \rightharpoonup f$ | $\varphi(f_n) \to \varphi(f)$ for all $\varphi \in X'$ |
 | Weak-$\ast$ | $f_n \xrightarrow{w^*} f$ | $f_n(x) \to f(x)$ for all $x \in X$, the $f_n$ lying in $X'$ |
 | Weakly (of measures) | $\mu_n \to \mu$ | $\int \varphi \, d\mu_n \to \int \varphi \, d\mu$, $\varphi \in C_0(X)$ |
@@ -333,7 +333,7 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | $f_n \to f$ $\mu$-a.e. | Convergence almost everywhere |
 | $f_n \xrightarrow{\mu} f$ | Convergence in measure |
 | $d_\mu$ | Metric for convergence in measure |
-| $f_n \xrightarrow{L^{n} f$, $\|f\|_p$ | Convergence in $L^{n}$, $L^{n}$ norm |
+| $f_n \xrightarrow{L^{n} }$, $\|f\|_p$ | Convergence in $L^{n}$, $L^{n}$ norm |
 | uniform integrability | $\lim_{c \to \infty} \sup_f \int_{\{|f| > c\}} \lvert f \rvert \, d\mu = 0$ |
 | $X'$ | Dual space of a normed space |
 | $x_n \rightharpoonup x$, $\sigma(X, X')$ | Weak convergence and weak topology |

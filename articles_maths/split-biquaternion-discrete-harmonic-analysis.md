@@ -14,20 +14,20 @@ Unlike the biquaternion case, the split biquaternion Fourier kernel is **not** d
 Throughout, a split biquaternion is written
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$. The split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
 $$
-\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+\tilde{Q}_+ = \sum_{\mu\in\{t,x,y,z\}} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu\in\{t,x,y,z\}} (q_\mu - q'_\mu) e_\mu.
 $$
 
 The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$, with $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$.
 
-**Notation.** To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
+**Notation.** To avoid collision with the standard basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split biquaternion roots of minus one.
 
 ## The Fourier Kernel
 
@@ -60,10 +60,10 @@ because the same root $\rho$ is used in both components. The kernel is the same 
 Since $\rho^2 = -1$, the kernel takes the closed form
 
 $$
-W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_0 - \sin\left(2\pi \frac{nu}{N}\right) \rho,
+W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_t - \sin\left(2\pi \frac{nu}{N}\right) \rho,
 $$
 
-where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_0$:
+where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_t$:
 
 $$
 \langle W_N(n, u)\rangle_{\natural} = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1.
@@ -89,11 +89,11 @@ The choice of the root $\rho$ determines the **axis** of the Fourier transform, 
 
 There are three natural choices:
 
-**$\rho = e_1$.** The kernel is the ordinary complex exponential in the $e_1$ direction, embedded in the quaternion algebra. The transform decomposes the signal into components along the $e_1$ axis.
+**$\rho = \vec e_x$.** The kernel is the ordinary complex exponential in the $\vec e_x$ direction, embedded in the quaternion algebra. The transform decomposes the signal into components along the $\vec e_x$ axis.
 
-**$\rho = e_2$.** Similarly, with the $e_2$ axis.
+**$\rho = \vec e_y$.** Similarly, with the $\vec e_y$ axis.
 
-**$\rho = e_3$.** Similarly, with the $e_3$ axis.
+**$\rho = \vec e_z$.** Similarly, with the $\vec e_z$ axis.
 
 The three choices are related by the quaternion multiplication, and they correspond to three different but equivalent decompositions of the signal.
 
@@ -120,7 +120,7 @@ $$
 Since the kernel is a unit quaternion, its inverse is its quaternion conjugate:
 
 $$
-W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_0 + \sin\left(2\pi \frac{nu}{N}\right) \rho.
+W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_t + \sin\left(2\pi \frac{nu}{N}\right) \rho.
 $$
 
 So the inverse transform is
@@ -141,7 +141,7 @@ The two transforms are closely related: the conjugate of the left-kernel transfo
 
 The invertibility of the transform depends on the properties of the kernel and of the signal.
 
-**The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $\langle W_N(n, u)\rangle_{\natural} = e_0$, as shown above. So the kernel is always invertible.
+**The kernel has unit norm.** For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $\langle W_N(n, u)\rangle_{\natural} = e_t$, as shown above. So the kernel is always invertible.
 
 **The signal may have vanishing norm.** A sample $f[n]$ with $\langle f[n]\rangle_{\natural} = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split biquaternion zero divisors.
 
@@ -156,7 +156,7 @@ $$
 The inner sum is the standard orthogonality relation:
 
 $$
-\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_t & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
 $$
 
 which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$.
@@ -223,10 +223,10 @@ $$
 
 where $W_N(n, u) = \exp(-2\pi \rho nu/N)$ and $\rho$ is a unit pure real quaternion.
 
-The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$:
+The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_t, \rho, \nu, \xi\}$:
 
 $$
-g[n] = g_0[n] e_0 + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
+g[n] = g_0[n] e_t + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
 $$
 
 The quaternion Fourier transform then decomposes into **four complex Fourier transforms**, one for each complex coefficient, as discussed in the biquaternion discrete harmonic analysis article.
@@ -415,10 +415,10 @@ The discrete transform is the discrete analogue of the continuous transform of t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternion algebra, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
 | $j$ | Split complex unit, central, $j^2 = +1$ |
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ | Idempotents of $\mathbb{D}$ |
-| $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
+| $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$, $Q_\mu = q_\mu + j q'_\mu$ | General split biquaternion |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |

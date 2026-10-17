@@ -16,7 +16,7 @@ In the standard formalism the Bloch ball is assembled state by state: one takes 
 
 The article is organized as follows. First the Hermitian subspace, its trace, and its biquaternion norm are recalled, together with the light cone and the zero divisors. Then the trace-one hyperplane is described and coordinatized by the Bloch vector. Then the Bloch ball is obtained as the slice of the future cone by that hyperplane, and the positivity of a state is identified with its causality. Then the pure states are characterized as the boundary of the ball — idempotents, extreme rays, and zero divisors at trace one — and the mixed states as its interior. Then purity, the Bloch radius, entropy, and fidelity are expressed in these terms. The article closes with the symmetries of the slice, with the mirror interpretation that places the ball against the material sector and its light cone and separates the two actor groups that the one action admits, with what the picture shows, and with open questions.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$ (the complex subspace, the centre of $\mathbb{B}$), $\mathbb{H}_{\mathbb{B}}$ (the real-quaternion subspace), and the two complementary four-dimensional subspaces $\mathbb{M}_+$ (Hermitian) and $\mathbb{M}_-$ (anti-Hermitian), with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.
 
 ## The Hermitian Subspace and the Biquaternion Norm
 
@@ -25,13 +25,13 @@ The conventions are those of the companion articles: the biquaternion algebra is
 An element of the Hermitian subspace is written
 
 $$
-\tilde{H} = h_0\,e_0 + i\,\vec h, \qquad h_0 \in \mathbb{R}, \qquad \vec h = h_1 e_1 + h_2 e_2 + h_3 e_3,
+\tilde{H} = h_0\,e_t + i\,\vec h, \qquad h_0 \in \mathbb{R}, \qquad \vec h = h_1 \vec e_x + h_2 \vec e_y + h_3 \vec e_z,
 $$
 
-where $\vec h$ is a pure real quaternion, identified with the vector $(h_1, h_2, h_3) \in \mathbb{R}^3$. The scalar part $h_0 e_0$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; here it is real, and the imaginary vector part $i\vec h$ carries the three remaining real coordinates. A natural basis of $\mathbb{M}_+$ over $\mathbb{R}$ is
+where $\vec h$ is a pure real quaternion, identified with the vector $(h_1, h_2, h_3) \in \mathbb{R}^3$. The scalar part $h_0 e_t$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; here it is real, and the imaginary vector part $i\vec h$ carries the three remaining real coordinates. A natural basis of $\mathbb{M}_+$ over $\mathbb{R}$ is
 
 $$
-\{e_0,\; i e_1,\; i e_2,\; i e_3\},
+\{e_t,\; i \vec e_x,\; i \vec e_y,\; i \vec e_z\},
 $$
 
 so that $\mathbb{M}_+$ is a four-dimensional real vector space and the fixed-point set of the Hermitian conjugation ${}^{*}$. Its **trace** is twice the scalar part:
@@ -42,13 +42,13 @@ $$
 
 ### The Biquaternion Norm
 
-The quaternion conjugate $\tilde{H}^{\natural} = h_0 e_0 - i\vec h$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
+The quaternion conjugate $\tilde{H}^{\natural} = h_0 e_t - i\vec h$ is again Hermitian, so quaternion conjugation preserves $\mathbb{M}_+$; it leaves the scalar part and negates the imaginary vector part. The **biquaternion norm** is
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = \bigl(h_0^2 - |\vec h|^2\bigr) e_0 ,
+\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = \bigl(h_0^2 - |\vec h|^2\bigr) e_t ,
 $$
 
-a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_0$ is positive, the three imaginary directions $i e_1, i e_2, i e_3$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
+a real-valued quadratic form on $\mathbb{M}_+$, of **signature $(1,3)$**: the scalar direction $e_t$ is positive, the three imaginary directions $i \vec e_x, i \vec e_y, i \vec e_z$ are negative. This is the mirror image of the signature $(3,1)$ that the same biquaternion norm carries on the anti-Hermitian subspace $\mathbb{M}_-$.
 
 The biquaternion norm is not the trace pairing. The trace pairing
 
@@ -68,7 +68,7 @@ $$
 
 a double cone in $\mathbb{R}^4$ with apex at the origin. The complement of the cone has three connected components: the spacelike region $N < 0$ (a single component), and the two components of the timelike region $N > 0$, namely $h_0 > |\vec h|$ and $h_0 < -|\vec h|$. The first of these, $h_0 > |\vec h|$, is the **future** component.
 
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ that maps $e_0 \mapsto I$ and $e_j \mapsto -i\sigma_j$, a Hermitian element $\tilde{H} = h_0 e_0 + i\vec h$ maps to the Hermitian matrix $h_0 I + \vec h\cdot\boldsymbol{\sigma}$, whose determinant is $h_0^2 - |\vec h|^2$. The biquaternion norm is therefore the determinant form:
+Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ that maps $e_t \mapsto I$ and $\vec e_j \mapsto -i\sigma_j$, a Hermitian element $\tilde{H} = h_0 e_t + i\vec h$ maps to the Hermitian matrix $h_0 I + \vec h\cdot\boldsymbol{\sigma}$, whose determinant is $h_0^2 - |\vec h|^2$. The biquaternion norm is therefore the determinant form:
 
 $$
 \langle\tilde{H}\rangle_{\natural} \;\longmapsto\; \det\bigl(h_0 I + \vec h\cdot\boldsymbol{\sigma}\bigr) I .
@@ -78,7 +78,7 @@ Consequently the nonzero elements of the light cone are exactly the **zero divis
 
 ### The Positive Cone Is the Future Light Cone
 
-The decisive structural fact is that, in $\mathbb{M}_+$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde{H} = h_0 e_0 + i\vec h$ has eigenvalues $h_0 \pm |\vec h|$ (they are the eigenvalues of $h_0 I + \vec h\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:
+The decisive structural fact is that, in $\mathbb{M}_+$, the algebra's positive cone and the geometry's future cone are the same set. A Hermitian element $\tilde{H} = h_0 e_t + i\vec h$ has eigenvalues $h_0 \pm |\vec h|$ (they are the eigenvalues of $h_0 I + \vec h\cdot\boldsymbol{\sigma}$), so it is positive semidefinite precisely when the smaller eigenvalue is non-negative. This gives:
 
 **Proposition.** For $\tilde{H} \in \mathbb{M}_+$,
 
@@ -101,21 +101,21 @@ $$
 the two descriptions being equivalent by $\mathrm{Tr} = 2\,\mathrm{Sc}$. In coordinates it is the level set $h_0 = \tfrac{1}{2}$. It is an affine hyperplane of real dimension three, with direction space the traceless subspace
 
 $$
-\{\tilde{H} \in \mathbb{M}_+ : h_0 = 0\} = \operatorname{span}_\mathbb{R}\{i e_1, i e_2, i e_3\}.
+\{\tilde{H} \in \mathbb{M}_+ : h_0 = 0\} = \operatorname{span}_\mathbb{R}\{i \vec e_x, i \vec e_y, i \vec e_z\}.
 $$
 
-The hyperplane does not contain the origin, and its normal direction is $e_0$. Since $\langle e_0\rangle_{\natural} = 1 > 0$, the normal is timelike and the hyperplane is **spacelike**; the quadratic form induced on it by (minus) the biquaternion norm is positive-definite. The slice is therefore a Euclidean three-space, and the ball that it will be found to contain is a genuine round ball in that Euclidean structure.
+The hyperplane does not contain the origin, and its normal direction is $e_t$. Since $\langle e_t\rangle_{\natural} = 1 > 0$, the normal is timelike and the hyperplane is **spacelike**; the quadratic form induced on it by (minus) the biquaternion norm is positive-definite. The slice is therefore a Euclidean three-space, and the ball that it will be found to contain is a genuine round ball in that Euclidean structure.
 
 Every element of $\mathcal{S}$ is written uniquely as
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\,\vec r\bigr), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3 ,
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = (r_1, r_2, r_3) \in \mathbb{R}^3 ,
 $$
 
 where $\vec r = 2\vec h$. The map $\vec r \mapsto \tilde{\rho}$ is an affine isomorphism $\mathbb{R}^3 \to \mathcal{S}$, and $\vec r$ is the **Bloch vector**. In this parametrization the trace pairing on the slice reads
 
 $$
-\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr) \qquad \text{for } \tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r),\ \tilde{\sigma} = \tfrac{1}{2}(e_0 + i\vec s),
+\mathrm{Tr}(\tilde{\rho}\tilde{\sigma}) = \tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s\bigr) \qquad \text{for } \tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r),\ \tilde{\sigma} = \tfrac{1}{2}(e_t + i\vec s),
 $$
 
 so the Hilbert–Schmidt geometry of the slice is the Euclidean geometry of $\mathbb{R}^3$, up to the additive constant and the factor inherited from the trace.
@@ -129,7 +129,7 @@ The intersection of an affine hyperplane $h_0 = c$ with the closed future cone i
 For the trace-one hyperplane $c = \tfrac{1}{2}$, the ball has radius $\tfrac{1}{2}$ in $\vec h$-coordinates, equivalently radius $1$ in the Bloch coordinate $\vec r = 2\vec h$. Explicitly, the biquaternion norm on the slice is
 
 $$
-\langle\tilde{H}\rangle_{\natural} = \bigl(h_0^2 - |\vec h|^2\bigr)e_0 = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_0 ,
+\langle\tilde{H}\rangle_{\natural} = \bigl(h_0^2 - |\vec h|^2\bigr)e_t = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
 $$
 
 so the causal condition $\langle\tilde{H}\rangle_{\natural} \geq 0$ is exactly
@@ -142,7 +142,7 @@ The intersection is the closed unit ball $B^3 = \{\vec r \in \mathbb{R}^3 : |\ve
 
 ### Positivity Is Causality on the Slice
 
-The eigenvalues of $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ are
+The eigenvalues of $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ are
 
 $$
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr),
@@ -159,7 +159,7 @@ so the biquaternion norm is exactly the product of the two eigenvalues. Because 
 **The state space.** The states of a qubit — the positive, trace-one elements of $\mathbb{M}_+$ — are exactly the elements of the trace-one hyperplane that lie in the closed future light cone:
 
 $$
-\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r), \qquad |\vec r| \leq 1 .
+\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r), \qquad |\vec r| \leq 1 .
 $$
 
 The intersection with the null cone $\langle\tilde{\rho}\rangle_{\natural} = 0$, i.e. the sphere $|\vec r| = 1$, is the boundary of the ball; the intersection with the interior of the cone, $\langle\tilde{\rho}\rangle_{\natural} > 0$, i.e. $|\vec r| < 1$, is the interior of the ball.
@@ -168,7 +168,7 @@ The elements of the trace-one hyperplane with $|\vec r| > 1$ have $\langle\tilde
 
 | Condition on $\tilde{\rho}\in\mathcal{S}$ | Algebraic form | Geometric form |
 |---|---|---|
-| Hermitian | $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | trace-one hyperplane of $\mathbb{M}_+$ |
+| Hermitian | $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ | trace-one hyperplane of $\mathbb{M}_+$ |
 | positive semidefinite | $\lambda_\pm = \tfrac{1}{2}(1 \pm |\vec r|) \geq 0$ | closed future cone, $\langle\tilde{\rho}\rangle_{\natural} \geq 0$ |
 | pure | idempotent, rank one | boundary of the cone, $\langle\tilde{\rho}\rangle_{\natural} = 0$ |
 | mixed | not idempotent, rank two | interior of the cone, $\langle\tilde{\rho}\rangle_{\natural} > 0$ |
@@ -177,28 +177,28 @@ The elements of the trace-one hyperplane with $|\vec r| > 1$ have $\langle\tilde
 
 The boundary $|\vec r| = 1$ consists of the states that lie on the null cone. In the algebra these have three equivalent descriptions, and the equivalence is the content of this section.
 
-**Idempotents and rank-one projections.** For $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$,
+**Idempotents and rank-one projections.** For $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$,
 
 $$
-\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_0 + i\vec r\bigr)^2 = \tfrac{1}{4}\bigl(1 + |\vec r|^2\bigr)e_0 + \tfrac{1}{2} i\vec r,
+\tilde{\rho}^2 = \tfrac{1}{4}\bigl(e_t + i\vec r\bigr)^2 = \tfrac{1}{4}\bigl(1 + |\vec r|^2\bigr)e_t + \tfrac{1}{2} i\vec r,
 $$
 
-using $(i\vec r)^2 = |\vec r|^2 e_0$. Hence
+using $(i\vec r)^2 = |\vec r|^2 e_t$. Hence
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_0 ,
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_t ,
 $$
 
 and $\tilde{\rho}$ is idempotent if and only if $|\vec r| = 1$. The idempotents of trace one have the form
 
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\bigl(e_0 \pm i\vec u\bigr), \qquad |\vec u| = 1 ,
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1 ,
 $$
 
 and are the rank-one projections of $\mathbb{M}_+$; under the isomorphism they are the standard spin-up and spin-down projectors along $\vec u$. The boundary is thus parametrized by the unit sphere $S^2 \subset \mathbb{R}^3$, with $\vec u$ and $-\vec u$ giving the complementary idempotents:
 
 $$
-\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u) = e_0, \qquad \tilde\Pi_1(\vec u)\tilde\Pi_2(\vec u) = 0 .
+\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u) = e_t, \qquad \tilde\Pi_1(\vec u)\tilde\Pi_2(\vec u) = 0 .
 $$
 
 **Zero divisors.** On the boundary $\langle\tilde{\rho}\rangle_{\natural} = 0$ with $\tilde{\rho} \neq 0$, so $\tilde{\rho}$ is a zero divisor of $\mathbb{B}$. Conversely, a positive trace-one element of $\mathbb{M}_+$ that is a zero divisor has vanishing biquaternion norm, hence $|\vec r| = 1$, hence is pure. Within the trace-one hyperplane of $\mathbb{M}_+$, therefore,
@@ -214,10 +214,10 @@ This is the sense in which "the pure states are the zero divisors at trace one":
 The transition probability between two pure states is the trace pairing,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec u_1)\tilde\Pi(\vec u_2)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u_1\cdot\vec u_2\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u_x\cdot\vec u_y\bigr) = \cos^2\frac{\theta}{2},
 $$
 
-where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\vec u_1 = \vec u_2$ and $0$ for $\vec u_1 = -\vec u_2$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
+where $\theta$ is the angle between the two Bloch directions. It equals $1$ for $\vec u_x = \vec u_y$ and $0$ for $\vec u_x = -\vec u_y$, the two antipodal points corresponding to the complementary orthogonal idempotents. Since the trace pairing is the Euclidean pairing, this is the usual cosine-squared law on the Bloch sphere.
 
 ## Mixed States: The Interior of the Ball
 
@@ -238,21 +238,21 @@ a convex combination of the two complementary pure states along the Bloch direct
 The centre of the ball is the **maximally mixed state**
 
 $$
-\vec r = 0, \qquad \tilde{\rho} = \tfrac{1}{2} e_0 ,
+\vec r = 0, \qquad \tilde{\rho} = \tfrac{1}{2} e_t ,
 $$
 
 with equal eigenvalues $\tfrac{1}{2}, \tfrac{1}{2}$; it is the barycentre of the ball and the only state invariant under all rotations of the boundary sphere. It is the state of minimal purity and maximal entropy.
 
-The affine structure of the slice matches the convex structure of the state space. If $\tilde{\rho}_i = \tfrac{1}{2}(e_0 + i\vec r_i)$ are states and $p_i \geq 0$ with $\sum_i p_i = 1$, then
+The affine structure of the slice matches the convex structure of the state space. If $\tilde{\rho}_i = \tfrac{1}{2}(e_t + i\vec r_i)$ are states and $p_i \geq 0$ with $\sum_i p_i = 1$, then
 
 $$
-\sum_i p_i \tilde{\rho}_i = \tfrac{1}{2}\Bigl(e_0 + i \sum_i p_i \vec r_i\Bigr)
+\sum_i p_i \tilde{\rho}_i = \tfrac{1}{2}\Bigl(e_t + i \sum_i p_i \vec r_i\Bigr)
 $$
 
 is again a state, with Bloch vector $\sum_i p_i \vec r_i$. Convex combinations of states are convex combinations of Bloch vectors, so the Bloch ball is a faithful affine model of the state space. The deviation of a state from purity is captured by
 
 $$
-\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_0 ,
+\tilde{\rho}^2 - \tilde{\rho} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_t ,
 $$
 
 which vanishes identically on the boundary and is strictly negative at every interior point.
@@ -290,7 +290,7 @@ $$
 and the trace distance from a state to the maximally mixed state is
 
 $$
-D\bigl(\tilde{\rho}, \tfrac{1}{2}e_0\bigr) = \tfrac{1}{2}\bigl|\vec r\bigr| .
+D\bigl(\tilde{\rho}, \tfrac{1}{2}e_t\bigr) = \tfrac{1}{2}\bigl|\vec r\bigr| .
 $$
 
 The Bloch radius is thus twice the trace distance to the centre of the ball — another expression of the same fact, that the radius is the state's purity.
@@ -326,7 +326,7 @@ Because the logarithm is the spectral logarithm on the positive cone, the trace 
 For two pure states, the **transition probability** is the trace pairing computed above,
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\vec u_1)\tilde\Pi(\vec u_2)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u_1\cdot\vec u_2\bigr) = \cos^2\frac{\theta}{2},
+\mathrm{Tr}\bigl(\tilde\Pi(\vec u_x)\tilde\Pi(\vec u_y)\bigr) = \tfrac{1}{2}\bigl(1 + \vec u_x\cdot\vec u_y\bigr) = \cos^2\frac{\theta}{2},
 $$
 
 a function of the angle between the Bloch directions alone. In terms of the boundary of the ball, it is a function of the chordal separation of two points of the sphere.
@@ -347,7 +347,7 @@ Three checks are immediate. When both states are pure, $|\vec r| = |\vec s| = 1$
 
 ## Symmetries of the Slice
 
-The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^{*} = e_0$, then the conjugation
+The structure just described is preserved by the unitary action. If $\tilde{U}$ is a unitary biquaternion, $\tilde{U}\tilde{U}^{*} = e_t$, then the conjugation
 
 $$
 \tilde{\rho} \;\longmapsto\; \tilde{U}\tilde{\rho}\tilde{U}^{*}
@@ -355,11 +355,11 @@ $$
 
 fixes the scalar part, hence preserves the trace-one hyperplane, and preserves the Hermitian property; because conjugation by a unitary is an algebra automorphism, it preserves the biquaternion norm $\langle\tilde{U}\tilde{\rho}\tilde{U}^{*}\rangle_{\natural} = \langle\tilde{\rho}\rangle_{\natural}$, hence preserves the future cone and its boundary. It therefore maps the Bloch ball to itself.
 
-On the Bloch vector the action is a rotation. The unit quaternions — the elements of $\mathbb{H}_{\mathbb{B}}$ of unit quaternion norm, forming $SU(2)$ — act by rotating the imaginary vector part and fixing the scalar part, so they act on the ball by the rotation group $SO(3)$. The general unitary group $U(2)$ acts through the same rotations, with a central phase that fixes every state. The maximally mixed state is the unique fixed point; the boundary sphere is homogeneous, and the purity radius is a complete invariant of the orbit. The slice is thus not merely a ball but a ball with its rotation group, and the geometry that makes the trace-one slice of the cone into a state space is exactly the geometry that the algebra's unitary group preserves.
+On the Bloch vector the action is a rotation. The unit quaternions — the elements of $\mathbb{H}_{\mathbb{B}}$ of unit quaternion norm, forming $SU(2)$ — act by rotating the imaginary vector part and fixing the scalar part, so they act on the ball by the rotation group $SO(3)$. The general unitary group $\mathrm{U}(2)$ acts through the same rotations, with a central phase that fixes every state. The maximally mixed state is the unique fixed point; the boundary sphere is homogeneous, and the purity radius is a complete invariant of the orbit. The slice is thus not merely a ball but a ball with its rotation group, and the geometry that makes the trace-one slice of the cone into a state space is exactly the geometry that the algebra's unitary group preserves.
 
 ### The Boundary Sphere as the Compact Member of a Family
 
-The sphere $S^2$ of the boundary is the compact member of a family of homogeneous spaces that the same two-dimensional module models, and naming the family places the ball in the wider picture the corpus uses. As a homogeneous space the boundary sphere is $S^2=SU(2)/U(1)$, the quotient of the compact group $SU(2)$ by the $U(1)$ that fixes the Bloch vector. The two companion spaces come from the rank-one non-compact group $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$, the double cover of the three-dimensional Lorentz group $SO(1,2)$ and the dynamical group of the oscillator's squeezings: they are the two-sheeted time-like hyperboloid $H^\pm=SU(1,1)/U(1)$ and the one-sheeted hyperboloid $H^{sl}$, whose vector stabiliser is the non-compact boost subgroup, the first being the case of $S^2$ with the compact direction replaced by a time-like one. All three are modelled on spinors of the same module in the same way the boundary sphere is:
+The sphere $S^2$ of the boundary is the compact member of a family of homogeneous spaces that the same two-dimensional module models, and naming the family places the ball in the wider picture the corpus uses. As a homogeneous space the boundary sphere is $S^2=SU(2)/\mathrm{U}(1)$, the quotient of the compact group $SU(2)$ by the $\mathrm{U}(1)$ that fixes the Bloch vector. The two companion spaces come from the rank-one non-compact group $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$, the double cover of the three-dimensional Lorentz group $SO(1,2)$ and the dynamical group of the oscillator's squeezings: they are the two-sheeted time-like hyperboloid $H^\pm=SU(1,1)/\mathrm{U}(1)$ and the one-sheeted hyperboloid $H^{sl}$, whose vector stabiliser is the non-compact boost subgroup, the first being the case of $S^2$ with the compact direction replaced by a time-like one. All three are modelled on spinors of the same module in the same way the boundary sphere is:
 
 - the sphere $S^2$, by one Weyl spinor with the definite pairing $\langle z|\sigma^i|z\rangle$ and $\langle z|z\rangle=1$ — the pure-state correspondence of the preceding sections, since the boundary of the ball is exactly the spin-$1/2$ pure states;
 - the hyperboloid $H^\pm$, by one Weyl spinor with the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$;
@@ -373,13 +373,13 @@ The ball has so far been described entirely inside $\mathbb{M}_+$, by its own co
 
 ### The Dictionary Between the Ball and the Cone
 
-Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{Q} = ict\,e_0 + \vec x$ it gives the Hermitian element
+Multiplication by $-\tfrac{i}{2}$ is a real-linear bijection carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$. For a material four-vector $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ it gives the Hermitian element
 
 $$
-\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{Q} \;=\; \tfrac{1}{2}\bigl(ct\,e_0 - i\vec x\bigr) \;=\; h_0\,e_0 + i\vec h,
+\tilde{H} \;=\; -\tfrac{i}{2}\,\tilde{Q} \;=\; \tfrac{1}{2}\bigl(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\bigr) \;=\; h_0\,e_t + i\vec h,
 $$
 
-with $h_0 = \tfrac{1}{2}ct$ and $\vec h = -\tfrac{1}{2}\vec x$, and
+with $h_0 = \tfrac{1}{2}ct$ and $\vec h = -\tfrac{1}{2}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and
 
 $$
 \mathrm{Tr}(\tilde{H}) \;=\; 2\,\mathrm{Sc}(\tilde{H}) \;=\; ct,
@@ -387,7 +387,7 @@ $$
 \langle\tilde{H}\rangle_{\natural} \;=\; -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}.
 $$
 
-Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -\vec x$; there the relations specialize to
+Each of the two relations is exact. The second is the whole dictionary in one line: the norm of the image is minus a quarter of the interval of the four-vector it mirrors. The image is a state exactly on the trace-one slice $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ with Bloch vector $\vec r = 2\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; there the relations specialize to
 
 $$
 \tilde{\rho} \geq 0
@@ -396,38 +396,38 @@ $$
 \;\Longleftrightarrow\;
 \langle\tilde{Q}\rangle_{\natural} \leq 0
 \;\Longleftrightarrow\;
-ct \geq |\vec x| ,
+ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z| ,
 $$
 
 so **positivity of a state is the causal condition of the four-vector it mirrors**. The boundary $|\vec r| = 1$ is $\langle\tilde{Q}\rangle_{\natural} = 0$, so the pure states of the ball are the lightlike four-vectors of the slice and the mixed states are the timelike ones. The correspondence is summarized in the following table.
 
 | Material object in $\mathbb{M}_-$ | Informational object in $\mathbb{M}_+$ |
 |---|---|
-| four-vector $\tilde{Q} = ict\,e_0 + \vec x$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ |
-| interval $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 + \vec x^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ |
-| future cone, $ct \geq |\vec x|$ | positive cone, $\tilde{H} \geq 0$ |
+| four-vector $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Hermitian element $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ |
+| interval $\langle\tilde{Q}\rangle_{\natural} = -c^2t^2 +x^2+y^2+z^2$ | norm $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ |
+| future cone, $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$ | positive cone, $\tilde{H} \geq 0$ |
 | null cone, $\langle\tilde{Q}\rangle_{\natural} = 0$ | null cone, $\langle\tilde{H}\rangle_{\natural} = 0$; the pure states at trace one |
 | interior of the timelike cone | positive definite elements; the interior of the ball at trace one |
 | trace-one slice, $ct = 1$ | trace-one hyperplane, $\mathrm{Sc} = \tfrac{1}{2}$ |
-| spatial part $\vec x$ | Bloch vector $\vec r = -\vec x$ |
-| unit-norm rotor, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ | unitary element, $\tilde{U}\tilde{U}^{*} = e_0$ |
+| spatial part $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Bloch vector $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
+| unit-norm rotor, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ | unitary element, $\tilde{U}\tilde{U}^{*} = e_t$ |
 
-<!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_0 = ct/2$ and $\vec x$ to $\vec h = -\vec x/2$, so $h_0 - |\vec h| = (ct - |\vec x|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
+<!-- PHYSICAL READING — one cone, not two cones in correspondence. On the trace-one slice the positive cone of the informational sector is exactly the image of the causal future of the material sector under $-\tfrac{i}{2}$: the map sends $ct$ to $h_0 = ct/2$ and $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, so $h_0 - |\vec h| = (ct - |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|)/2$. The statement is that a qubit state IS a timelike four-vector normalized to $ct = 1$ and read from inside: positivity of the operator is the timelike condition of the four-vector, and purity is nullness. Do not write that the two cones are "analogous" or "in correspondence"; they are one cone. -->
 
-<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{Q} = ict\,e_0$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{\rho}\rangle_{\natural}$ and $\langle\tilde{Q}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{Q}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$, is exact. -->
+<!-- INFORMATIONAL READING — mixedness is the timelike deficit. The centre of the ball, $\vec r = 0$, mirrors $\tilde{Q} = ict\,e_t$ at $ct = 1$, which is the four-velocity of a particle at rest in units $c = 1$; the boundary of the ball mirrors the light cone. Since the linear entropy satisfies $S_{\mathrm{lin}} = 2\langle\tilde{\rho}\rangle_{\natural}$ and $\langle\tilde{Q}\rangle_{\natural}$ is the interval, the linear entropy of a state is $-\tfrac{1}{2}\langle\tilde{Q}\rangle_{\natural}$ of its mirror: purity is nullness and mixedness is the timelike deficit. Reading mixedness as "how timelike the mirror is" is an interpretation of the dictionary and not a new result; the identity it rests on, $\langle\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$, is exact. -->
 
 ### The Whole Timelike Cone, Not Only the Slice
 
-The trace-one restriction is not essential to the correspondence, and saying so locates the normalization correctly. Off trace one, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{M}_-$ onto the positive definite elements of $\mathbb{M}_+$, of every trace (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde{H} = h_0 e_0 + i\vec h$, with $h_0 = ct/2$ and $\vec h = -\vec x/2$, its eigenvalues are
+The trace-one restriction is not essential to the correspondence, and saying so locates the normalization correctly. Off trace one, $-\tfrac{i}{2}$ carries the whole future timelike cone of $\mathbb{M}_-$ onto the positive definite elements of $\mathbb{M}_+$, of every trace (its apex, the origin, going to $0$), and the past timelike cone onto the negative definite elements. Writing the image as $\tilde{H} = h_0 e_t + i\vec h$, with $h_0 = ct/2$ and $\vec h = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/2$, its eigenvalues are
 
 $$
-\lambda_\pm \;=\; h_0 \pm |\vec h| \;=\; \tfrac{1}{2}\bigl(ct \pm |\vec x|\bigr),
+\lambda_\pm \;=\; h_0 \pm |\vec h| \;=\; \tfrac{1}{2}\bigl(ct \pm |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\bigr),
 $$
 
 both non-negative for $ct > 0$ and both non-positive for $ct < 0$. The sign of the trace is the sign of $ct$, so it is the **trace sign and not the sign of the norm** that separates the two sheets: $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ is positive on both timelike cones, and the quadratic form alone cannot tell them apart.
 
 
-The maximally mixed state is the image the map singles out. It is $\tilde{\rho} = \tfrac{1}{2}e_0$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_0$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
+The maximally mixed state is the image the map singles out. It is $\tilde{\rho} = \tfrac{1}{2}e_t$, the centre of the ball, and its mirror on the trace-one slice is $\tilde{Q} = i\,e_t$: timelike, of the largest interval on that slice, and equal to the four-velocity of a particle at rest divided by $c$. At the other end the idempotents, the boundary of the ball, mirror the null four-vectors. So the ordering of the ball by purity is the ordering of the timelike cone by the interval, read in reverse: the least pure state mirrors the most timelike four-vector, and the pure states mirror the light cone.
 
 **Interpretation (decoherence as inward motion).** The dictionary has a process interpretation. The pure states are the boundary of the ball and the light cone of the material sector; the maximally mixed state is the centre and the rest four-vector. A decoherence process moves a state from the boundary toward the centre, and under the mirror map that is motion from the null boundary into the **causal interior**, from a lightlike four-vector toward the timelike rest vector. Because the linear entropy is $S_{\mathrm{lin}} = 2\langle\tilde{\rho}\rangle_{\natural} = -\tfrac{1}{2}\langle\tilde{Q}\rangle_{\natural}$, an increase in entropy is exactly the growth of the timelike interval of the mirror, so **entropy increase tracks the inward motion** on the causal side. The interpretation is an interpretation of the dictionary and not a new theorem: the dictionary is static and exact, the motion is the added interpretation, and the algebra supplies no rate and no mechanism for it.
 
@@ -438,7 +438,7 @@ The two interpretations use one action. On $\mathbb{M}_-$,
 $$
 \Gamma_{\tilde{\Lambda}}(\tilde{Q}) \;=\; \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda}^{*},
 \qquad
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0 ,
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t ,
 $$
 
 preserves the interval and hence the cone. On $\mathbb{M}_+$ the same formula acts with the unitary of *Symmetries of the Slice*,
@@ -446,26 +446,26 @@ preserves the interval and hence the cone. On $\mathbb{M}_+$ the same formula ac
 $$
 \Gamma_{\tilde{U}}(\tilde{\rho}) \;=\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*},
 \qquad
-\tilde{U}\tilde{U}^{*} = e_0 ,
+\tilde{U}\tilde{U}^{*} = e_t ,
 $$
 
-and preserves the Hermitian property, the trace, and the norm, hence the ball. Writing $\tilde{A}$ for whichever actor is in play, the two cases are the one formula $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, and what differs between the relativistic and the quantum reading is only the class of actor and the invariant that defines it, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ against $\tilde{U}\tilde{U}^{*} = e_0$.
+and preserves the Hermitian property, the trace, and the norm, hence the ball. Writing $\tilde{A}$ for whichever actor is in play, the two cases are the one formula $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, and what differs between the relativistic and the quantum reading is only the class of actor and the invariant that defines it, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ against $\tilde{U}\tilde{U}^{*} = e_t$.
 
-<!-- PHYSICAL READING — one formula, two actors. Relativity and quantum theory are not two structures laid in correspondence here; they are two classes of acting element of one algebra acting by one rule. A Lorentz transformation and a quantum evolution differ in this framework by the relation their actor satisfies, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ or $\tilde{U}\tilde{U}^{*} = e_0$, and not by the shape of the action. The intersection of the two classes is the rotation group $SU(2)$, which is the group common to the two readings. This is the sharpest single statement of the "two faces of one algebra" thesis, and it is established material rather than a proposal. -->
+<!-- PHYSICAL READING — one formula, two actors. Relativity and quantum theory are not two structures laid in correspondence here; they are two classes of acting element of one algebra acting by one rule. A Lorentz transformation and a quantum evolution differ in this framework by the relation their actor satisfies, $\langle\tilde{\Lambda}\rangle_{\natural} = 1$ or $\tilde{U}\tilde{U}^{*} = e_t$, and not by the shape of the action. The intersection of the two classes is the rotation group $SU(2)$, which is the group common to the two readings. This is the sharpest single statement of the "two faces of one algebra" thesis, and it is established material rather than a proposal. -->
 
 ### The Two Actors Are Not the Same Group
 
 The formula in question is not new here. *Biquaternion Rotations and Lorentz Transformations* defines the conjugation $\Phi_{\tilde{\Lambda}}(\tilde{B}) = \tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*}$ on the whole algebra and proves that it carries each of the two sectors to itself and preserves the norm on both. What the previous subsection adds is only the reading of that one map on the two sectors in turn, and the actor substituted into it. The two substitutions are:
 
 $$
-\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0
+\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t
 \quad\text{on } \mathbb{M}_-,
 \qquad\qquad
-\tilde{U}\tilde{U}^{*} = e_0
+\tilde{U}\tilde{U}^{*} = e_t
 \quad\text{on } \mathbb{M}_+ .
 $$
 
-These are different groups. The unit-norm condition is $SL(2,\mathbb{C})$, whose action on a four-vector of $\mathbb{M}_-$ is the general proper orthochronous Lorentz transformation, boosts included. The unitary condition is $U(2)$, whose action is conjugation, which fixes the scalar part and rotates the vector part:
+These are different groups. The unit-norm condition is $SL(2,\mathbb{C})$, whose action on a four-vector of $\mathbb{M}_-$ is the general proper orthochronous Lorentz transformation, boosts included. The unitary condition is $\mathrm{U}(2)$, whose action is conjugation, which fixes the scalar part and rotates the vector part:
 
 $$
 \tilde{U}\tilde{H}\tilde{U}^{*} = \tilde{U}\tilde{H}\tilde{U}^{-1},
@@ -477,22 +477,22 @@ h_0 \ \text{fixed},
 R \in SO(3).
 $$
 
-That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde{\Lambda} = \cosh(\phi/2)e_0 + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_0$ is unitary with $N = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
+That is a Lorentz transformation as well, but only a rotation, and no boost is available to it. Neither class contains the other: the boost rotor $\tilde{\Lambda} = \cosh(\phi/2)e_t + i\sinh(\phi/2)\vec u$ has unit norm and is far from unitary, while $\exp(i\theta)e_t$ is unitary with $N = \exp(2i\theta)$, equal to $1$ only when $\theta$ is a multiple of $\pi$. What the two classes share is their intersection, $SU(2)$, and what that intersection induces is the rotations.
 
 The names of the two actors are the names of the two factors of the polar word. Every element of non-vanishing norm factors as $\tilde{Q} = r\,\exp(i\alpha)\tilde{B}\tilde{q}$, with a positive scale, a central phase, a positive definite Hermitian factor $\tilde{B}$ and a unit real quaternion rotor $\tilde{q}$ (*The Polar Element Representation in Subspaces*, *The Twisted Spinor Operator Representation of Biquaternions*). The two classes above are exactly the two ways of keeping two of those four factors:
 
 | actor | polar form | which factor is free | group |
 |---|---|---|---|
 | unit-norm rotor | $\tilde{B}\tilde{q}$ | the boost factor $\tilde{B}$ | $SL(2,\mathbb{C})$ |
-| unitary | $\exp(i\alpha)\tilde{q}$ | the central phase $\exp(i\alpha)$ | $U(2)$ |
+| unitary | $\exp(i\alpha)\tilde{q}$ | the central phase $\exp(i\alpha)$ | $\mathrm{U}(2)$ |
 | both | $\tilde{q}$, any | neither | $Sp(1) = SU(2)$ |
 
-So it is not merely that the two groups differ: **the boost factor is what a Lorentz transformation has and a unitary does not, and the central phase is what a unitary has and a boost does not.** The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_0$ exactly when $\tilde{B} = e_0$ — which in the matrix picture is the statement that the element is unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $\exp(2i\alpha) = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde{B} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{M}_+$ itself, so the factor that carries a state off the trace-one slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the unitary case is a rotation with no dilatation.
+So it is not merely that the two groups differ: **the boost factor is what a Lorentz transformation has and a unitary does not, and the central phase is what a unitary has and a boost does not.** The polar article states the first as its criterion for a trivial boost factor — $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_t$ exactly when $\tilde{B} = e_t$ — which in the matrix picture is the statement that the element is unitary up to a scale. The second is the same statement read the other way: unit norm forces $r = 1$ and $\exp(2i\alpha) = 1$, so the phase has no room and the boost factor has all of it. And the boost factor is not an outside object. It is $\tilde{B} = \sqrt{\tilde{Q}\tilde{Q}^{*}}/r$, a positive definite element of $\mathbb{M}_+$ itself, so the factor that carries a state off the trace-one slice belongs to the sector whose states they are. The twisted spinor article records the division on the other action: of the two, the unit-norm case is the Lorentz transformation on the material sector, while the unitary case is a rotation with no dilatation.
 
-The dividing line is sharper than a statement about groups, and the corpus draws it. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* records that the action is an inner automorphism exactly in the unitary sector, where $\tilde{A}^{*} = \tilde{A}^{-1}$, and not elsewhere; for a unit-norm rotor that equation means $\tilde{\Lambda}$ is a real quaternion — the pure-rotation case — while a boost has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq e_0$ and the map is not multiplicative. That same equation, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$, is exactly unitarity. So one condition wears five faces:
+The dividing line is sharper than a statement about groups, and the corpus draws it. *The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone* records that the action is an inner automorphism exactly in the unitary sector, where $\tilde{A}^{*} = \tilde{A}^{-1}$, and not elsewhere; for a unit-norm rotor that equation means $\tilde{\Lambda}$ is a real quaternion — the pure-rotation case — while a boost has $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq e_t$ and the map is not multiplicative. That same equation, $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_t$, is exactly unitarity. So one condition wears five faces:
 
 $$
-\tilde{U}\tilde{U}^{*} = e_0
+\tilde{U}\tilde{U}^{*} = e_t
 \;\Longleftrightarrow\;
 \tilde{U}^{*} = \tilde{U}^{-1}
 \;\Longleftrightarrow\;
@@ -506,13 +506,13 @@ $$
 The unitary actor is therefore the one for which the shared formula is a symmetry of the algebra itself, an inner automorphism; the unit-norm boost actor is the one for which it is a symmetry only of the sector and of the cone. This is why the general Lorentz transformation acts on the cone of $\mathbb{M}_+$ but not on the states. The remark in *Biquaternion Rotations and Lorentz Transformations* that on the identity the conjugation returns $\tilde{Q}\tilde{Q}^{*}$, so that "the unit leaves the centre and the centre is carried into the Hermitian sector", is precisely the state-space statement: the image of the identity is
 
 $$
-\Phi_{\tilde{\Lambda}}(e_0) = \tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^{2} = \cosh\phi\,e_0 + i\sinh\phi\,\vec u,
+\Phi_{\tilde{\Lambda}}(e_t) = \tilde{\Lambda}\tilde{\Lambda}^{*} = \tilde{\Lambda}^{2} = \cosh\phi\,e_t + i\sinh\phi\,\vec u,
 $$
 
 which is not central. On the maximally mixed state it gives
 
 $$
-\tfrac{1}{2}e_0 \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_0 + i\sinh\phi\,\vec u\bigr),
+\tfrac{1}{2}e_t \;\longmapsto\; \tfrac{1}{2}\bigl(\cosh\phi\,e_t + i\sinh\phi\,\vec u\bigr),
 $$
 
 of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not a state. Not fixing the centre is not preserving the trace, and not preserving the trace is leaving the slice. The Lorentz group acts on the cone of the informational sector; the group that acts on its state space is the rotation group. That a qubit carries rotations and no boost is then not an assumption imported from quantum theory: it is the statement that the trace, the normalization of a state, is not a Lorentz invariant.
@@ -534,7 +534,7 @@ $$
 (\tilde{Q},\tilde{Y} \text{ in the same sector}),
 $$
 
-from which three consequences follow at once. First, $\tilde{Q}\tilde{Y}$ is Hermitian exactly when $\tilde{Q}$ and $\tilde{Y}$ commute, and anti-Hermitian exactly when they anticommute. Second, both cases occur: $(ie_0)^2 = -e_0$ is Hermitian, a commuting pair, while $e_1e_2 = e_3$ is anti-Hermitian, an anticommuting pair. So neither sector is a subalgebra of $\mathbb{B}$, and a product of two material four-vectors can leave the material sector. Third, the commutator always returns:
+from which three consequences follow at once. First, $\tilde{Q}\tilde{Y}$ is Hermitian exactly when $\tilde{Q}$ and $\tilde{Y}$ commute, and anti-Hermitian exactly when they anticommute. Second, both cases occur: $(ie_t)^2 = -e_t$ is Hermitian, a commuting pair, while $\vec e_x \vec e_y = \vec e_z$ is anti-Hermitian, an anticommuting pair. So neither sector is a subalgebra of $\mathbb{B}$, and a product of two material four-vectors can leave the material sector. Third, the commutator always returns:
 
 $$
 (\tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q})^{*} \;=\; \tilde{Y}\tilde{Q} - \tilde{Q}\tilde{Y},
@@ -551,54 +551,54 @@ The main structural points are these. The state space of a qubit is not postulat
 
 Several points are left open in this picture. The base of the logarithm in the entropy is a convention, natural logarithms giving nats and base-two logarithms giving bits; the geometry does not prefer one. The normalization of the transition probability is likewise a convention, since some authors take the unsquared expression as the fidelity and others its square; the closed form above is stated for the squared normalization, which is the one that reduces to the pure-state transition probability. The extension of the slice picture to $n$ qubits requires the tensor product and the corresponding higher-dimensional cones, and the identification of the correct positivity domain there is a separate problem. Finally, this article has used only the future cone; the past cone, and the negative-trace elements of $\mathbb{M}_+$, have no state interpretation here, and whether they acquire one in a wider interpretation of the algebra is an open question.
 
-The mirror interpretation adds the material face of the same object. Under the map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ the ball is the trace-one slice of the timelike cone of the material sector, with the trace sign selecting the future sheet; positivity of a state is the causal condition $ct \geq |\vec x|$, purity is nullness, and the maximally mixed state is the rest four-velocity of the material interpretation. The same action formula $\tilde{A}\tilde{Q}\tilde{A}^{*}$ serves both faces, the actor being a unit-norm rotor, hence a general Lorentz transformation, in one case and a unitary element, hence a rotation, in the other. What the two sectors are not is isomorphic: the product rule within a sector reverses the order, so a product of two material elements need not be material, while the commutator always is. The identity of the two faces is therefore an identity of quadratic spaces, not of algebras.
+The mirror interpretation adds the material face of the same object. Under the map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ the ball is the trace-one slice of the timelike cone of the material sector, with the trace sign selecting the future sheet; positivity of a state is the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$, purity is nullness, and the maximally mixed state is the rest four-velocity of the material interpretation. The same action formula $\tilde{A}\tilde{Q}\tilde{A}^{*}$ serves both faces, the actor being a unit-norm rotor, hence a general Lorentz transformation, in one case and a unitary element, hence a rotation, in the other. What the two sectors are not is isomorphic: the product rule within a sector reverses the order, so a product of two material elements need not be material, while the commutator always is. The identity of the two faces is therefore an identity of quadratic spaces, not of algebras.
 
 ## Summary
 
 The Hermitian subspace $\mathbb{M}_+$ of the biquaternion algebra carries a biquaternion norm of signature $(1,3)$, whose positive cone coincides exactly with its future light cone. The qubit state space is the intersection of that cone with the affine hyperplane $\{\mathrm{Sc} = \tfrac{1}{2}\}$. Writing a state as
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\vec r\bigr),
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_t + i\vec r\bigr),
 $$
 
 the intersection is the closed unit ball $|\vec r| \leq 1$, the **Bloch ball**, whose boundary is the intersection with the null cone.
 
-The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\vec r|)$; the maximally mixed state is the centre $\vec r = 0$.
+The pure states are the boundary of the ball. Equivalently, they are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, the rank-one projections, the extreme rays of the positive cone, and the zero divisors of $\mathbb{B}$ at trace one; the boundary is parametrized by the Bloch sphere $S^2$. The mixed states are the interior, with eigenvalues $\tfrac{1}{2}(1 \pm |\vec r|)$; the maximally mixed state is the centre $\vec r = 0$.
 
 Purity is $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{\rho}^2) = 2\langle\tilde{\rho}\rangle_{\natural}$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
-The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_0 + \vec x$ to $\tfrac{1}{2}(ct\,e_0 - i\vec x)$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$. The image is a state exactly at $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ with $\vec r = -\vec x$. On that slice the map turns positivity of a state into the causal condition $ct \geq |\vec x|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Y}) = -\tilde{Q}\tilde{Y} \neq i(\tilde{Q}\tilde{Y})$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
+The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\tfrac{1}{2}(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$. The image is a state exactly at $ct = 1$, where it is $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. On that slice the map turns positivity of a state into the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Y}) = -\tilde{Q}\tilde{Y} \neq i(\tilde{Q}\tilde{Y})$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{C}_{\mathbb{B}}$ | Complex subspace (centre), fixed points of quaternion conjugation |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |
 | $\mathbb{M}_+$ | Hermitian subspace, fixed points of ${}^{*}$ |
 | $\mathbb{M}_-$, with $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Anti-Hermitian subspace, fixed points of $\flat$ |
-| $\tilde{H} = h_0 e_0 + i\vec h$ | General Hermitian element |
+| $\tilde{H} = h_0 e_t + i\vec h$ | General Hermitian element |
 | $\mathrm{Tr}(\tilde{H}) = 2 h_0$ | Trace |
-| $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2)e_0$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural} = \tilde{H}\tilde{H}^{\natural} = (h_0^2 - |\vec h|^2)e_t$ | Biquaternion norm, signature $(1,3)$ |
 | $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0 k_0 + \vec h\cdot\vec k)$ | Trace pairing, signature $(4,0)$ |
 | $\mathcal{S} = \{\mathrm{Sc} = \tfrac{1}{2}\}$ | Trace-one hyperplane |
-| $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ | State, Bloch vector $\vec r$ |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure state), $|\vec u| = 1$ |
+| $\tilde{\rho} = \tfrac{1}{2}(e_t + i\vec r)$ | State, Bloch vector $\vec r$ |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state), $|\vec u| = 1$ |
 | $\mathrm{Tr}(\tilde{\rho}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ | Purity |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log\tilde{\rho})$ | Von Neumann entropy |
 | $T(\tilde{\rho},\tilde{\sigma}) = (\mathrm{Tr}\sqrt{\sqrt{\tilde{\rho}}\,\tilde{\sigma}\sqrt{\tilde{\rho}}})^2$ | Uhlmann transition probability |
-| $S^2 = SU(2)/U(1)$ | Boundary (Bloch) sphere as a homogeneous space |
-| $H^\pm = SU(1,1)/U(1)$, $H^{sl}$ | Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$ |
+| $S^2 = SU(2)/\mathrm{U}(1)$ | Boundary (Bloch) sphere as a homogeneous space |
+| $H^\pm = SU(1,1)/\mathrm{U}(1)$, $H^{sl}$ | Time-like two-sheeted and space-like one-sheeted hyperboloids of $\mathbb{R}^{1,2}$ |
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | Mirror map carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{H}) = ct$, $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ | Trace and norm under the mirror map |
 | $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$ | Product rule within a sector; $[\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_-$ |
 | $\tilde{Q} = r \exp(i\alpha)\tilde{B}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
 | $\tilde{B}$, $\tilde{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |
-| $\tilde{B}\tilde{q}$, $\exp(i\alpha)\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $U(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |
+| $\tilde{B}\tilde{q}$, $\exp(i\alpha)\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $\mathrm{U}(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

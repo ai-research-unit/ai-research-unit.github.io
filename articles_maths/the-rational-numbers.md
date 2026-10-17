@@ -6,7 +6,7 @@ The rational numbers are the field of fractions of the integers: the smallest fi
 
 This article carries out the construction of $\mathbb{Q}$ from $\mathbb{Z}$, establishes its universal property, records its order and divisibility structure, and describes its subrings, its unit group, its orderings and its completions. The analysis of $\mathbb{Q}$ as a metric space belongs to the companion treatments of the real numbers and of valuations; the completions are named here and constructed in *Absolute Values, Valuations and Completions* and *The Real Numbers*.
 
-Throughout, $\mathbb{Z}$ is the ring of integers and $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$. Divisibility, prime factorization and localization are from *Integral Domains*, *Unique Factorisation Domains* and *Localization and the Fraction Field*.
+Throughout, $\mathbb{Z}$ is the ring of integers and $\mathbb{Q} = \operatorname{Frac}(\mathbb{Z})$. A generic rational is written $q$, and several are $q_1, q_2, \dots$; a rational written as a fraction is $r/s$, with numerator $r \in \mathbb{Z}$ and denominator $s \in \mathbb{N}_{\geq 1}$. Divisibility, prime factorization and localization are from *Integral Domains*, *Unique Factorisation Domains* and *Localization and the Fraction Field*.
 
 ---
 
@@ -17,36 +17,36 @@ Throughout, $\mathbb{Z}$ is the ring of integers and $\mathbb{Q} = \operatorname
 **Theorem.** $\mathbb{Z}$ is an integral domain, and its field of fractions
 
 $$
-\mathbb{Q} = \operatorname{Frac}(\mathbb{Z}) = (\mathbb{Z} \times (\mathbb{Z} \setminus \{0\}))/\sim, \qquad (n,m) \sim (k,\ell) \iff n\ell = mk,
+\mathbb{Q} = \operatorname{Frac}(\mathbb{Z}) = (\mathbb{Z} \times (\mathbb{Z} \setminus \{0\}))/\sim, \qquad (r,s) \sim (r',s') \iff rs' = r's,
 $$
 
 with addition and multiplication defined by
 
 $$
-\frac{n}{m} + \frac{k}{\ell} = \frac{n\ell + mk}{m\ell}, \qquad \frac{n}{m} \cdot \frac{k}{\ell} = \frac{nk}{m\ell},
+\frac{r}{s} + \frac{r'}{s'} = \frac{rs' + r's}{ss'}, \qquad \frac{r}{s} \cdot \frac{r'}{s'} = \frac{rr'}{ss'},
 $$
 
 is a field of characteristic $0$.
 
-**Proof.** $\mathbb{Z}$ is an integral domain, so the relation $\sim$ is an equivalence relation and the displayed operations are well defined; the general construction of the fraction field is given in *Localization and the Fraction Field*. In $\mathbb{Q}$ the class of $\tfrac{n}{1}$ is nonzero whenever $n \neq 0$, and $n \cdot 1 = \tfrac{n}{1} \neq 0$ for every $n \geq 1$, so the characteristic is $0$.
+**Proof.** $\mathbb{Z}$ is an integral domain, so the relation $\sim$ is an equivalence relation and the displayed operations are well defined; the general construction of the fraction field is given in *Localization and the Fraction Field*. In $\mathbb{Q}$ the class of $\tfrac{r}{1}$ is nonzero whenever $r \neq 0$, and $r \cdot 1 = \tfrac{r}{1} \neq 0$ for every $r \geq 1$, so the characteristic is $0$.
 
-**Theorem (universal property).** Let $K$ be a field and let $\varphi : \mathbb{Z} \to K$ be an injective ring homomorphism. Then there is a unique ring homomorphism $\Phi : \mathbb{Q} \to K$ with $\Phi(\tfrac{n}{1}) = \varphi(n)$; it is injective, and its image is the prime field of $K$.
+**Theorem (universal property).** Let $K$ be a field and let $\varphi : \mathbb{Z} \to K$ be an injective ring homomorphism. Then there is a unique ring homomorphism $\Phi : \mathbb{Q} \to K$ with $\Phi(\tfrac{r}{1}) = \varphi(r)$; it is injective, and its image is the prime field of $K$.
 
-**Proof.** The map $\Phi(\tfrac{n}{m}) = \varphi(n)\varphi(m)^{-1}$ is well defined because $\varphi(m) \neq 0$ for $m \neq 0$, and it is a ring homomorphism; uniqueness is forced because every rational is a quotient of images of integers. Injectivity: a field homomorphism is injective.
+**Proof.** The map $\Phi(\tfrac{r}{s}) = \varphi(r)\varphi(s)^{-1}$ is well defined because $\varphi(s) \neq 0$ for $s \neq 0$, and it is a ring homomorphism; uniqueness is forced because every rational is a quotient of images of integers. Injectivity: a field homomorphism is injective.
 
 **Corollary.** $\mathbb{Q}$ is the prime field of characteristic $0$: it is the smallest subfield of any field of characteristic $0$, and every field of characteristic $0$ contains a copy of $\mathbb{Q}$ as its prime field. Up to isomorphism, $\mathbb{Q}$ is the only field of characteristic $0$ whose only subfield is itself, and it is the initial object in the category of fields of characteristic $0$.
 
 ### Basic Arithmetic
 
-**Theorem (fundamental theorem of arithmetic).** Every nonzero integer has a factorization into primes, unique up to order and signs, and consequently every $a \in \mathbb{Q}^\times$ has a unique expression
+**Theorem (fundamental theorem of arithmetic).** Every nonzero integer has a factorization into primes, unique up to order and signs, and consequently every $q \in \mathbb{Q}^\times$ has a unique expression
 
 $$
-a = \operatorname{sgn}(a) \prod_p p^{v_p(a)}, \qquad v_p(a) \in \mathbb{Z},\ \text{finitely many nonzero},
+q = \operatorname{sgn}(q) \prod_p p^{v_p(q)}, \qquad v_p(q) \in \mathbb{Z},\ \text{finitely many nonzero},
 $$
 
-where $\operatorname{sgn}(a) = \pm 1$ and $v_p$ is the $p$-adic valuation of *Absolute Values, Valuations and Completions*.
+where $\operatorname{sgn}(q) = \pm 1$ and $v_p$ is the $p$-adic valuation of *Absolute Values, Valuations and Completions*.
 
-**Proof.** The factorization of integers is the unique factorization property of $\mathbb{Z}$ as a Euclidean domain, from *Euclidean Domains*; the rational statement follows by writing $a = n/m$ and subtracting the exponent vectors of $m$ from those of $n$, the uniqueness following from uniqueness for $n$ and $m$.
+**Proof.** The factorization of integers is the unique factorization property of $\mathbb{Z}$ as a Euclidean domain, from *Euclidean Domains*; the rational statement follows by writing $q = r/s$ and subtracting the exponent vectors of $s$ from those of $r$, the uniqueness following from uniqueness for $n$ and $m$.
 
 **Corollary (the unit group).** There is a group isomorphism
 
@@ -64,19 +64,19 @@ the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy 
 
 ### The Ordering
 
-**Definition.** A rational $a = \tfrac{n}{m}$ is **positive** if $nm > 0$ in $\mathbb{Z}$; the order is $a < b$ iff $b - a$ is positive.
+**Definition.** A rational $q = \tfrac{r}{s}$ is **positive** if $rs > 0$ in $\mathbb{Z}$; the order is $q_1 < q_2$ iff $q_2 - q_1$ is positive.
 
 **Theorem.** The relation so defined is a total order on $\mathbb{Q}$ making it an ordered field, and it is the only ordering of $\mathbb{Q}$.
 
-**Proof.** Well-definedness: if $\tfrac{n}{m} = \tfrac{k}{\ell}$ then $n\ell = mk$ and $nm$ has the same sign as $k\ell$, since $nm\ell^2 = m^2k\ell$ and $\ell^2, m^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of *Ordered Fields*, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.
+**Proof.** Well-definedness: if $\tfrac{r}{s} = \tfrac{r'}{s'}$ then $rs' = r's$ and $rs$ has the same sign as $r's'$, since $rs\,s'^2 = s^2r's'$ and $s'^2, s^2 > 0$. The order axioms reduce to the corresponding facts in $\mathbb{Z}$, and multiplication by a positive rational preserves positivity by the sign rules. Uniqueness: in any ordering of a field, $1 > 0$ by the basic rules of *Ordered Fields*, hence $n \cdot 1 > 0$ for $n \geq 1$ and $n \cdot 1 < 0$ for $n \leq -1$; so the sign of every integer is forced, and then the sign of every ratio is forced, giving the positive cone displayed.
 
 **Corollary.** $\mathbb{Q}$ is an Archimedean ordered field and the smallest one: it embeds as an ordered subfield in every ordered field. Its automorphism group is trivial, $\operatorname{Aut}(\mathbb{Q}) = 1$, and the only order-preserving automorphism of $\mathbb{Q}$ is the identity.
 
-**Theorem (the embedding of $\mathbb{Z}$ and density).** The map $\mathbb{Z} \to \mathbb{Q}$, $n \mapsto \tfrac{n}{1}$ is an injective order-preserving ring homomorphism, and $\mathbb{Z}$ is unbounded above in $\mathbb{Q}$. The order on $\mathbb{Q}$ is dense: for $a < b$ there is $c$ with $a < c < b$, for instance $c = \tfrac{a+b}{2}$.
+**Theorem (the embedding of $\mathbb{Z}$ and density).** The map $\mathbb{Z} \to \mathbb{Q}$, $r \mapsto \tfrac{r}{1}$ is an injective order-preserving ring homomorphism, and $\mathbb{Z}$ is unbounded above in $\mathbb{Q}$. The order on $\mathbb{Q}$ is dense: for $q_1 < q_2$ the mean $\tfrac{q_1+q_2}{2}$ lies strictly between them.
 
-**Proof.** Injectivity and order-preservation are immediate from the construction. Unboundedness: for any $\tfrac{n}{m}$ with $m > 0$ the integer $\lvert n \rvert + 1$ exceeds it, since $\tfrac{n}{m} \leq n < n+1$ for $n \geq 0$ and $\tfrac{n}{m} < 0 < \lvert n \rvert + 1$ for $n < 0$. Density: $2 = 1 + 1 > 0$, so $2^{-1} > 0$ and $a = \tfrac{a+a}{2} < \tfrac{a+b}{2} < \tfrac{b+b}{2} = b$.
+**Proof.** Injectivity and order-preservation are immediate from the construction. Unboundedness: for any $\tfrac{r}{s}$ with $s > 0$ the integer $\lvert r \rvert + 1$ exceeds it, since $\tfrac{r}{s} \leq r < r+1$ for $r \geq 0$ and $\tfrac{r}{s} < 0 < \lvert r \rvert + 1$ for $r < 0$. Density: $2 = 1 + 1 > 0$, so $2^{-1} > 0$ and $q_1 = \tfrac{q_1+q_1}{2} < \tfrac{q_1+q_2}{2} < \tfrac{q_2+q_2}{2} = q_2$.
 
-**Remark.** Density is a property of the order alone and does not make $\mathbb{Q}$ complete: the set $\{a \in \mathbb{Q} : a > 0,\ a^2 < 2\}$ is nonempty and bounded above and has no least upper bound in $\mathbb{Q}$, by the classical irrationality of $\sqrt2$. Completeness is treated in *Real-Closed and Complete Ordered Fields* and *The Real Numbers*.
+**Remark.** Density is a property of the order alone and does not make $\mathbb{Q}$ complete: the set $\{q \in \mathbb{Q} : q > 0,\ q^2 < 2\}$ is nonempty and bounded above and has no least upper bound in $\mathbb{Q}$, by the classical irrationality of $\sqrt2$. Completeness is treated in *Real-Closed and Complete Ordered Fields* and *The Real Numbers*.
 
 ---
 
@@ -87,12 +87,12 @@ the sign giving the $\mathbb{Z}/2$ and the exponent of each prime giving a copy 
 **Theorem.** Every subring $R \subseteq \mathbb{Q}$ is a localization of $\mathbb{Z}$: there is a set of primes $S$ such that
 
 $$
-R = \mathbb{Z}_S = \left\{\frac{n}{m} \in \mathbb{Q} : n \in \mathbb{Z},\ m \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } m \text{ lies in } S\right\}.
+R = \mathbb{Z}_S = \left\{\frac{r}{s} \in \mathbb{Q} : r \in \mathbb{Z},\ s \in \mathbb{Z}\setminus\{0\},\ \text{every prime dividing } s \text{ lies in } S\right\}.
 $$
 
 Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\mathbb{Z}$, and the correspondence $S \mapsto \mathbb{Z}_S$ is bijective between sets of primes and subrings of $\mathbb{Q}$ containing $\mathbb{Z}$.
 
-**Proof sketch.** Given $R$, let $S = \{p \text{ prime} : \tfrac1p \in R\}$. If $a = \tfrac{n}{m} \in R$ in lowest terms, then $\gcd(n,m) = 1$, so there are integers $s, t$ with $sn + tm = 1$, whence $\tfrac{1}{m} = s\tfrac{n}{m} + t \in R$ by the Bézout relation; multiplying $\tfrac1m$ by $m/p$ for a prime $p \mid m$ gives $\tfrac1p \in R$, so every prime divisor of $m$ lies in $S$ and $R \subseteq \mathbb{Z}_S$. Conversely, if $a = \tfrac{n}{m}$ with every prime divisor of $m$ in $S$, then $\tfrac1m$ is a product of the elements $\tfrac1p \in R$ and their powers, so $\tfrac1m \in R$ and $a = n \cdot \tfrac1m \in R$; hence $\mathbb{Z}_S \subseteq R$. Bijectivity: $S$ is recovered from $\mathbb{Z}_S$ as the primes with $\tfrac1p \in \mathbb{Z}_S$.
+**Proof sketch.** Given $R$, let $S = \{p \text{ prime} : \tfrac1p \in R\}$. If $q = \tfrac{r}{s} \in R$ in lowest terms, then $\gcd(r,s) = 1$, so there are integers $u, v$ with $ur + vs = 1$, whence $\tfrac{1}{s} = u\tfrac{r}{s} + v \in R$ by the Bézout relation; multiplying $\tfrac1s$ by $s/p$ for a prime $p \mid s$ gives $\tfrac1p \in R$, so every prime divisor of $s$ lies in $S$ and $R \subseteq \mathbb{Z}_S$. Conversely, if $q = \tfrac{r}{s}$ with every prime divisor of $s$ in $S$, then $\tfrac1s$ is a product of the elements $\tfrac1p \in R$ and their powers, so $\tfrac1s \in R$ and $q = r \cdot \tfrac1s \in R$; hence $\mathbb{Z}_S \subseteq R$. Bijectivity: $S$ is recovered from $\mathbb{Z}_S$ as the primes with $\tfrac1p \in \mathbb{Z}_S$.
 
 **Corollary.** $\mathbb{Z}$ and $\mathbb{Q}$ are the extreme cases $S = \emptyset$ and $S = $ all primes; the intermediate rings $\mathbb{Z}_S$ are precisely the rings between $\mathbb{Z}$ and $\mathbb{Q}$, and each is a principal ideal domain obtained from $\mathbb{Z}$ by inverting the primes in $S$. The rings $\mathbb{Z}_{(p)}$ for a single prime $p$, the localizations of *Localization and the Fraction Field*, are the valuation rings of the $p$-adic valuations.
 
@@ -100,9 +100,9 @@ Conversely each such $\mathbb{Z}_S$ is a subring of $\mathbb{Q}$ containing $\ma
 
 **Proposition.** The only ideals of $\mathbb{Q}$ are $0$ and $\mathbb{Q}$; consequently $\mathbb{Q}$ is a field, every nonzero element is a unit, and $\mathbb{Q}$ has no proper nonzero quotients.
 
-**Proof.** If $I \neq 0$ contains $a \neq 0$ then $1 = a \cdot a^{-1} \in I$, so $I = \mathbb{Q}$.
+**Proof.** If $I \neq 0$ contains $q \neq 0$ then $1 = q \cdot q^{-1} \in I$, so $I = \mathbb{Q}$.
 
-**Proposition.** $\mathbb{Z}$-submodules of $\mathbb{Q}$ need not be ideals, and are not classified by a single invariant: the additive subgroups of $\mathbb{Q}$ include $\mathbb{Z}$, $\mathbb{Z}[\tfrac12]$, $\mathbb{Z}_{(p)}$ and the $p$-primary subgroups, and the classification of the subgroups of $\mathbb{Q}$ belongs to the theory of abelian groups. The finitely generated $\mathbb{Z}$-submodules of $\mathbb{Q}$ are exactly the cyclic ones, $\mathbb{Z}\tfrac{n}{m}$, and the structure theory of modules over $\mathbb{Z}$ belongs to *Modules*.
+**Proposition.** $\mathbb{Z}$-submodules of $\mathbb{Q}$ need not be ideals, and are not classified by a single invariant: the additive subgroups of $\mathbb{Q}$ include $\mathbb{Z}$, $\mathbb{Z}[\tfrac12]$, $\mathbb{Z}_{(p)}$ and the $p$-primary subgroups, and the classification of the subgroups of $\mathbb{Q}$ belongs to the theory of abelian groups. The finitely generated $\mathbb{Z}$-submodules of $\mathbb{Q}$ are exactly the cyclic ones, $\mathbb{Z}\tfrac{r}{s}$, and the structure theory of modules over $\mathbb{Z}$ belongs to *Modules*.
 
 ---
 
@@ -174,7 +174,7 @@ so $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is an abelian Galois extension. The cyclotom
 
 **Theorem.** $\operatorname{End}(\mathbb{Q}) = \{\mathrm{id}\}$ and $\operatorname{Der}(\mathbb{Q}) = 0$: every unital ring endomorphism of $\mathbb{Q}$ is the identity, every derivation of $\mathbb{Q}$ into itself is zero, and the only non-unital ring homomorphisms $\mathbb{Q} \to \mathbb{Q}$ are the identity and the zero map.
 
-**Proof.** A unital ring homomorphism $\varphi : \mathbb{Q} \to \mathbb{Q}$ has kernel an ideal, so either $0$ or $\mathbb{Q}$; the kernel is not $\mathbb{Q}$ because $\varphi(1) = 1 \neq 0$, so $\varphi$ is injective, whence $\varphi(n) = n$ for integers and $\varphi(n/m) = \varphi(n)\varphi(m)^{-1} = n/m$. Dropping the unital condition adds the zero map and nothing else, since every other homomorphism carries $1$ to an idempotent of $\mathbb{Q}$ and the only nonzero idempotent is $1$. For derivations, $D(1) = D(1 \cdot 1) = D(1) + D(1)$ gives $D(1) = 0$, so $D(n) = 0$ for all integers and $0 = D(1) = D(m \cdot \tfrac1m) = m D(\tfrac1m)$, whence $D(\tfrac1m) = 0$ and $D(\tfrac{n}{m}) = 0$.
+**Proof.** A unital ring homomorphism $\varphi : \mathbb{Q} \to \mathbb{Q}$ has kernel an ideal, so either $0$ or $\mathbb{Q}$; the kernel is not $\mathbb{Q}$ because $\varphi(1) = 1 \neq 0$, so $\varphi$ is injective, whence $\varphi(n) = n$ for integers and $\varphi(r/s) = \varphi(r)\varphi(s)^{-1} = r/s$. Dropping the unital condition adds the zero map and nothing else, since every other homomorphism carries $1$ to an idempotent of $\mathbb{Q}$ and the only nonzero idempotent is $1$. For derivations, $D(1) = D(1 \cdot 1) = D(1) + D(1)$ gives $D(1) = 0$, so $D(n) = 0$ for all integers and $0 = D(1) = D(s \cdot \tfrac1s) = s D(\tfrac1s)$, whence $D(\tfrac1s) = 0$ and $D(\tfrac{r}{s}) = 0$.
 
 **Corollary.** $\operatorname{Aut}(\mathbb{Q}) = 1$, in agreement with the rigidity of the prime field observed in *Ring and Field Automorphisms*; and $\mathbb{Q}$ carries no nonzero derivation, so the tangent-space intuitions of differential algebra are vacuous over the rationals.
 
@@ -192,22 +192,22 @@ $$
 \widehat{\mathbb{Q}}_\infty = \mathbb{R}, \qquad \widehat{\mathbb{Q}}_p = \mathbb{Q}_p \ (p \text{ prime}),
 $$
 
-and no two of these are isomorphic: $\mathbb{R}$ is Archimedean and orderable, while each $\mathbb{Q}_p$ is not orderable, and $\mathbb{Q}_p \not\cong \mathbb{Q}_q$ for $p \neq q$ because the torsion subgroup of $\mathbb{Q}_p^\times$ is $\mu_{p-1}$, so two of these fields isomorphic as fields would force $p - 1 = q - 1$.
+and no two of these are isomorphic: $\mathbb{R}$ is Archimedean and orderable, while each $\mathbb{Q}_p$ is not orderable, and $\mathbb{Q}_p \not\cong \mathbb{Q}_\ell$ for $p \neq \ell$ because the torsion subgroup of $\mathbb{Q}_p^\times$ is $\mu_{p-1}$, so two of these fields isomorphic as fields would force $p - 1 = \ell - 1$.
 
-**Theorem (product formula).** For every $a \in \mathbb{Q}^\times$,
+**Theorem (product formula).** For every $q \in \mathbb{Q}^\times$,
 
 $$
-\lvert a \rvert_\infty \prod_p \lvert a \rvert_p = 1 .
+\lvert q \rvert_\infty \prod_p \lvert q \rvert_p = 1 .
 $$
 
-**Proof.** Immediate from the prime factorization $a = \operatorname{sgn}(a)\prod_p p^{v_p(a)}$, as in *Absolute Values, Valuations and Completions*.
+**Proof.** Immediate from the prime factorization $q = \operatorname{sgn}(q)\prod_p p^{v_p(q)}$, as in *Absolute Values, Valuations and Completions*.
 
 ### The Local Structure
 
 **Proposition.** For each prime $p$, the valuation ring of $\lvert \cdot \rvert_p$ on $\mathbb{Q}$ is the localization
 
 $$
-\mathbb{Z}_{(p)} = \left\{\frac{n}{m} : p \nmid m\right\} = \mathbb{Z}_S \ \text{with} \ S = \{\text{primes} \neq p\},
+\mathbb{Z}_{(p)} = \left\{\frac{r}{s} : p \nmid s\right\} = \mathbb{Z}_S \ \text{with} \ S = \{\text{primes} \neq p\},
 $$
 
 with maximal ideal $p\mathbb{Z}_{(p)}$ and residue field $\mathbb{F}_p$; its completion is $\mathbb{Z}_p$. The field $\mathbb{Q}$ is recovered from each localization by inverting the remaining primes, and $\mathbb{Q}$ is the localization of $\mathbb{Z}$ at the multiplicative set of all nonzero integers.
@@ -246,7 +246,9 @@ Every finite extension of $\mathbb{Q}$ is separable and simple, so it is $\mathb
 | $\mathbb{Q}^\times$ | Nonzero rationals |
 | $v_p$ | $p$-adic valuation |
 | $\lvert \cdot \rvert_p$, $\lvert \cdot \rvert_\infty$ | $p$-adic and usual absolute values |
-| $\operatorname{sgn}(a)$ | Sign of a nonzero rational |
+| $q$, $q_1$, $q_2$ | Generic rational elements |
+| $r/s$ | A rational written as a fraction, $r \in \mathbb{Z}$, $s \geq 1$ |
+| $\operatorname{sgn}(q)$ | Sign of a nonzero rational |
 | $\mathbb{Z}_S$, $\mathbb{Z}_{(p)}$ | Localizations of $\mathbb{Z}$ |
 | $\overline{\mathbb{Q}}$ | Algebraic numbers, the algebraic closure; $[\overline{\mathbb{Q}}:\mathbb{Q}]$ is infinite |
 | $\mathbb{R}$, $\mathbb{Q}_p$ | The completions of $\mathbb{Q}$ |
@@ -254,7 +256,7 @@ Every finite extension of $\mathbb{Q}$ is separable and simple, so it is $\mathb
 | $\operatorname{Aut}(\mathbb{Q})$ | Automorphism group, trivial |
 | $\operatorname{Gal}(\overline{\mathbb{Q}}/\mathbb{Q})$ | Absolute Galois group of $\mathbb{Q}$ |
 | $\operatorname{End}(\mathbb{Q})$, $\operatorname{Der}(\mathbb{Q})$ | Unital endomorphisms $\{\mathrm{id}\}$, all homomorphisms $\{0,\mathrm{id}\}$, derivations $0$ |
-| $(n,m) \sim (k,\ell)$ | Equivalence relation defining $\mathbb{Q}$ |
+| $(r,s) \sim (r',s')$ | Equivalence relation defining $\mathbb{Q}$ |
 | $(\mathbb{Q}^\times)^2$ | Squares, defining the square classes $\mathbb{Q}^\times/(\mathbb{Q}^\times)^2$ |
 | $\mathbb{Q}(\sqrt d)$ | Quadratic field, $d$ squarefree |
 | $\zeta_n$, $\varphi(n)$ | Primitive $n$-th root of unity, Euler function |

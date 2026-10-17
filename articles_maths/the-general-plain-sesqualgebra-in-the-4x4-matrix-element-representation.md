@@ -6,7 +6,7 @@ The left regular representation $\mathsf{M}_4$ of *Introduction to the 4×4 Matr
 
 The regular representation adds one thing to the $2\times2$ reading: the positive definite form makes the Hermitian subspace a definite space on which the norm-one group acts, and that action is the two-to-one cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ of the identity component of the Lorentz group. The Frobenius norm of the regular matrix is twice the definite norm of the element.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^2=-e_0$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$; sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_\mu^2=-e_t$; $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; scalar part $\mathrm{Sc}$; natural conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$, Hermitian conjugation ${}^{*}={}^{\natural}\circ\bar{\cdot}$; sesquilinear product $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$; sign matrix $E=\operatorname{diag}(1,-1,-1,-1)$.
 
 ## The Representation
 
@@ -16,10 +16,10 @@ $$
 \mathsf{M}_4:\mathbb{B}\longrightarrow M_4(\mathbb{C}),
 $$
 
-and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_0,e_1,e_2,e_3$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies
+and it is fixed by its values on the basis, the rest following by $\mathbb{C}$-linearity: in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its $m$-th column is the coordinate column of the product $\tilde{Q}e_m$. It satisfies
 
 $$
-\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
+\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})=\mathsf{M}_4(\tilde{P}\tilde{Q}),\qquad \mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger},\qquad \operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_t,\qquad \det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2 ,
 $$
 
 so $\mathsf{M}_4$ is a $*$-representation for the Hermitian conjugation and the conjugate transpose.
@@ -36,7 +36,7 @@ so the sesquilinear product is read on the regular matrices by conjugating and t
 
 *Proof.* $\tilde{P}\star\tilde{Q}=\tilde{P}\tilde{Q}^{*}$, the representation is multiplicative, and $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$ by the $*$-property.
 
-**The square and the unit.** At $\tilde{P}=\tilde{Q}$ the theorem gives the square $\mathsf{M}_4(\tilde{Q}\star\tilde{Q})=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\dagger}$, a positive semidefinite matrix whatever $\tilde{Q}$ is, which is the matrix form of the fact that $\tilde{Q}\tilde{Q}^{*}$ is a sum of Hermitian squares; the identity matrix $I_4=\mathsf{M}_4(e_0)$ is a **right unit alone** of the product, its left action being the conjugate transpose.
+**The square and the unit.** At $\tilde{P}=\tilde{Q}$ the theorem gives the square $\mathsf{M}_4(\tilde{Q}\star\tilde{Q})=\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(\tilde{Q})^{\dagger}$, a positive semidefinite matrix whatever $\tilde{Q}$ is, which is the matrix form of the fact that $\tilde{Q}\tilde{Q}^{*}$ is a sum of Hermitian squares; the identity matrix $I_4=\mathsf{M}_4(e_t)$ is a **right unit alone** of the product, its left action being the conjugate transpose.
 
 **The units.** The units of the algebra are the elements of non-zero determinant, so under $\mathsf{M}_4$ their images form the group $\mathsf{M}_4(\mathbb{B}^{\times})\cong GL_2(\mathbb{C})$ inside $GL_4(\mathbb{C})$; the norm-one group $\{\tilde{A}:\langle\tilde{A},\tilde{A}\rangle_{\natural}=1\}$ is $SL_2(\mathbb{C})$, whose regular matrices have determinant one.
 
@@ -62,7 +62,7 @@ so the Frobenius norm of the regular matrix is twice the definite norm of the el
 
 **The signature and the null set.** The pairing is positive definite: on the sixteen complex coordinates of $M_4(\mathbb{C})$ it has signature $(32,0)$, and its null set is $\{0\}$ alone.
 
-**The automorphism group.** The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the unitary group $U(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $U(4)\times U(4)$ modulo the common centre, which is the part that also preserves the algebra structure.
+**The automorphism group.** The Hilbert–Schmidt pairing on $M_4(\mathbb{C})$ has automorphism group the unitary group $\mathrm{U}(16)$, of real dimension $256$; among these, the structure-preserving maps $X\mapsto UXV^{\dagger}$ form the subgroup $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the common centre, which is the part that also preserves the algebra structure.
 
 **The two-sided action and the double cover.** The positive definite form makes the Hermitian subspace $\mathbb{M}_+$ a definite space of real dimension $4$, and the norm-one group $\tilde{G}=\{\tilde{A}:\langle\tilde{A}\rangle_{\natural}=1\}=SL_2(\mathbb{C})$ acts on it by $\tilde{Q}\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$, preserving the determinant:
 
@@ -70,64 +70,64 @@ $$
 \langle\tilde{A}\tilde{Q}\tilde{A}^{*},\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural},\qquad \tilde{A}\in\tilde{G}.
 $$
 
-The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_0\}$, the two-to-one cover of the identity component of the orthogonal group of the restricted form; it is read on the module in *Biquaternion Spin Geometry*.
+The action defines the surjective homomorphism $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm e_t\}$, the two-to-one cover of the identity component of the orthogonal group of the restricted form; it is read on the module in *Biquaternion Spin Geometry*.
 
 **Proposition (the image is the identity component).** The image of the two-sided action is the identity component $SO^{+}(1,3)$.
 
-*Proof.* The action $(\tilde{A},\tilde{Q})\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$ has kernel $\{\pm e_0\}$ and its image is the subgroup of $SO^{+}(1,3)$ generated by the one-parameter families $\tilde{A}(t)=\exp(t\tilde X)$, which are the rotations and boosts of the restricted form; the image is the whole identity component.
+*Proof.* The action $(\tilde{A},\tilde{Q})\mapsto\tilde{A}\tilde{Q}\tilde{A}^{*}$ has kernel $\{\pm e_t\}$ and its image is the subgroup of $SO^{+}(1,3)$ generated by the one-parameter families $\tilde{A}(t)=\exp(t\tilde X)$, which are the rotations and boosts of the restricted form; the image is the whole identity component.
 
 ## Worked Examples
 
-**The identity.** Let $\tilde{Q}=e_0$. Then $\mathsf{M}_4(e_0)=I_4$, $\lVert\mathsf{M}_4(e_0)\rVert_F^2=4=4\lVert e_0\rVert_E^2$, and $\tfrac12\operatorname{Tr}(I_4^{\dagger}I_4)=2=2\langle e_0,e_0\rangle_{*}$.
+**The identity.** Let $\tilde{Q}=e_t$. Then $\mathsf{M}_4(e_t)=I_4$, $\lVert\mathsf{M}_4(e_t)\rVert_F^2=4=4\lVert e_t\rVert_E^2$, and $\tfrac12\operatorname{Tr}(I_4^{\dagger}I_4)=2=2\langle e_t,e_t\rangle_{*}$.
 
-**A Hermitian element.** Let $\tilde{Q}=e_0+ie_3$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_0+2ie_3+(ie_3)^2=2e_0+2ie_3=2\tilde{Q}$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde{Q}\rVert_E^2=8$.
+**A Hermitian element.** Let $\tilde{Q}=e_t+i\vec e_z$. Then $\tilde{Q}^{*}=\tilde{Q}$ and $\mathsf{M}_4(\tilde{Q})^{\dagger}=\mathsf{M}_4(\tilde{Q})$, so the regular matrix is Hermitian; the square is $\tilde{Q}\star\tilde{Q}=\tilde{Q}^2=e_t+2i\vec e_z+(i\vec e_z)^2=2e_t+2i\vec e_z=2\tilde{Q}$, a positive semidefinite element, and the pairing at the two equal arguments is $4\lVert\tilde{Q}\rVert_E^2=8$.
 
-**A zero divisor.** Let $\tilde{Q}=e_0+ie_1$. Then $\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
+**A zero divisor.** Let $\tilde{Q}=e_t+i\vec e_x$. Then $\det\mathsf{M}_4(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}^2=0$ and the regular matrix is singular of rank two, while $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F^2=4\lVert\tilde{Q}\rVert_E^2=8$: the element is a zero divisor and yet a definite one for the general plain sesquilinear form.
 
 ## The Matrices
 
 **The generators.** The regular model is fixed on the basis by four matrices:
 
 $$
-\mathsf{M}_4(e_0)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
-\mathsf{M}_4(e_1)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\mathsf{M}_4(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
+\mathsf{M}_4(\vec e_x)=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 $$
 $$
-\mathsf{M}_4(e_2)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-\mathsf{M}_4(e_3)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+\mathsf{M}_4(\vec e_y)=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+\mathsf{M}_4(\vec e_z)=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
 A general element is the block matrix
 
 $$
 \mathsf{M}_4(\tilde Q)=\begin{pmatrix}A&B\\-B&A\end{pmatrix},\qquad
-A=\begin{pmatrix}Q_0&-Q_1\\Q_1&Q_0\end{pmatrix},\qquad
-B=\begin{pmatrix}-Q_2&-Q_3\\-Q_3&Q_2\end{pmatrix},
+A=\begin{pmatrix}Q_t&-Q_x\\Q_x&Q_t\end{pmatrix},\qquad
+B=\begin{pmatrix}-Q_y&-Q_z\\-Q_z&Q_y\end{pmatrix},
 $$
 
-The general element has trace $4Q_0$ and determinant $\langle\tilde Q\rangle_{\natural}^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.
+The general element has trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^2$, with the Hermitian conjugation carried to the conjugate transpose, $\mathsf{M}_4(\tilde Q^{*})=\mathsf{M}_4(\tilde Q)^{\dagger}$.
 
-**The product, entry by entry.** A vector unit is anti-Hermitian, so $\mathsf{M}_4(e_2)^{\dagger}=-\mathsf{M}_4(e_2)$, and the product at the pair $e_1,e_2$ is
+**The product, entry by entry.** A vector unit is anti-Hermitian, so $\mathsf{M}_4(\vec e_y)^{\dagger}=-\mathsf{M}_4(\vec e_y)$, and the product at the pair $\vec e_x,\vec e_y$ is
 
 $$
-\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)^{\dagger}=-\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=-\mathsf{M}_4(e_3),
+\mathsf{M}_4(\vec e_x)\mathsf{M}_4(\vec e_y)^{\dagger}=-\mathsf{M}_4(\vec e_x)\mathsf{M}_4(\vec e_y)=-\mathsf{M}_4(\vec e_z),
 $$
 
-which is $e_1\star e_2=e_1e_2^{*}=-e_3$, the relation $e_1e_2=e_3$ and the anti-Hermiticity of $e_2$ carrying the sign.
+which is $\vec e_x\star \vec e_y=\vec e_x\vec e_y^{*}=-\vec e_z$, the relation $\vec e_x\vec e_y=\vec e_z$ and the anti-Hermiticity of $\vec e_y$ carrying the sign.
 
-**The right unit, entry by entry.** The identity matrix is a right unit and not a left one, $I_4\star Y=Y^{\dagger}$ against $Y\star I_4=Y$; at $Y=\mathsf{M}_4(e_1)$ the two differ, the left action returning the negative, $\mathsf{M}_4(e_1)^{\dagger}=-\mathsf{M}_4(e_1)\neq\mathsf{M}_4(e_1)$.
+**The right unit, entry by entry.** The identity matrix is a right unit and not a left one, $I_4\star Y=Y^{\dagger}$ against $Y\star I_4=Y$; at $Y=\mathsf{M}_4(\vec e_x)$ the two differ, the left action returning the negative, $\mathsf{M}_4(\vec e_x)^{\dagger}=-\mathsf{M}_4(\vec e_x)\neq\mathsf{M}_4(\vec e_x)$.
 
-**The Frobenius norm, entry by entry.** The regular matrix of a vector unit has four entries $\pm1$ and the remaining twelve zero, so $\lVert\mathsf{M}_4(e_1)\rVert_F^2=4$, in agreement with the general $\lVert\mathsf{M}_4(\tilde Q)\rVert_F^2=4\sum_\mu\lvert Q_\mu\rvert^2$; the value of the square is the positive semidefinite matrix $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde Q)^{\dagger}$.
+**The Frobenius norm, entry by entry.** The regular matrix of a vector unit has four entries $\pm1$ and the remaining twelve zero, so $\lVert\mathsf{M}_4(\vec e_x)\rVert_F^2=4$, in agreement with the general $\lVert\mathsf{M}_4(\tilde Q)\rVert_F^2=4\sum_\mu\lvert Q_\mu\rvert^2$; the value of the square is the positive semidefinite matrix $\mathsf{M}_4(\tilde Q)\mathsf{M}_4(\tilde Q)^{\dagger}$.
 
 ## Summary
 
-The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, and it reads the sesquilinear product as the product with the conjugate-transposed second factor, $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{Q},\tilde{P}\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, with Frobenius norm $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F=2\lVert\tilde{Q}\rVert_E$ and null set $\{0\}$; its automorphism group is $U(16)$, whose algebra-preserving part is $U(4)\times U(4)$ modulo the centre. The two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb{C})$.
+The left regular representation is a $*$-representation, $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$, and it reads the sesquilinear product as the product with the conjugate-transposed second factor, $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})^{\dagger}$, whose square is always positive semidefinite. The general plain sesquilinear form of the group is the Hilbert–Schmidt pairing $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{Q},\tilde{P}\rangle_{*}$, positive definite of signature $(32,0)$ on the matrices, with Frobenius norm $\lVert\mathsf{M}_4(\tilde{Q})\rVert_F=2\lVert\tilde{Q}\rVert_E$ and null set $\{0\}$; its automorphism group is $\mathrm{U}(16)$, whose algebra-preserving part is $\mathrm{U}(4)\times \mathrm{U}(4)$ modulo the centre. The two-sided action of the norm-one group $SL_2(\mathbb{C})$ on the Hermitian subspace gives the double cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$, and the units of the algebra appear as the matrices of $GL_2(\mathbb{C})$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf{M}_4(\tilde{Q})$ | the $4\times4$ regular matrix, $\operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_0$ |
+| $\mathsf{M}_4(\tilde{Q})$ | the $4\times4$ regular matrix, $\operatorname{Tr}\mathsf{M}_4(\tilde{Q})=4Q_t$ |
 | $\mathsf{M}_4(\tilde{Q}^{*})=\mathsf{M}_4(\tilde{Q})^{\dagger}$ | the Hermitian conjugation is the conjugate transpose |
 | $\mathsf{M}_4(\tilde{P}\star\tilde{Q})=\mathsf{M}_4(\tilde{P})\mathsf{M}_4(\tilde{Q})^{\dagger}$ | the sesquilinear product on the regular matrices |
 | $\tfrac12\operatorname{Tr}(\mathsf{M}_4(\tilde{P})^{\dagger}\mathsf{M}_4(\tilde{Q}))=2\langle\tilde{Q},\tilde{P}\rangle_{*}$ | the general plain sesquilinear form as the Hilbert–Schmidt pairing |

@@ -8,7 +8,7 @@ The classification of the algebra literature answers the question with a single 
 
 The article is organised as follows. A first section recalls the pseudoautomorphism and its matrix. A second states the division-ring trichotomy and computes $C^{2}$ in each case. A third reads the trichotomy as the three classes of particles, charged, neutral and truly neutral, and identifies the biquaternion algebra's place in it. A fourth section separates what the framework supplies from what it transcribes, and a closing section lists the open questions.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and the companion CPT article. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and matrix realization $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. Its real forms used below are $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$, equivalently the complexification $\mathrm{Cl}_{0,2}\otimes_{\mathbb{R}}\mathbb{C}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the sectors are $\mathbb{M}_-$ (material, anti-Hermitian) and $\mathbb{M}_+$ (informational, Hermitian); and the spinor module is $S=\mathbb{C}^2$. The discrete operations are written $C$, $P$, $T$ as in the CPT article, and their algebra-level representatives are the fundamental automorphisms of the same article's Clifford section.
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and the companion CPT article. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, central scalar imaginary $i$, and matrix realization $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. Its real forms used below are $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$, $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$, equivalently the complexification $\mathrm{Cl}_{0,2}\otimes_{\mathbb{R}}\mathbb{C}$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the sectors are $\mathbb{M}_-$ (material, anti-Hermitian) and $\mathbb{M}_+$ (informational, Hermitian); and the spinor module is $S=\mathbb{C}^2$. The discrete operations are written $C$, $P$, $T$ as in the CPT article, and their algebra-level representatives are the fundamental automorphisms of the same article's Clifford section.
 
 - Companion article *The CPT Theorem in Biquaternionic Form*, for the explicit $C[\psi]=i\gamma^2\psi^{*}$ and for the Clifford classification of the operations as the fundamental automorphisms and the charge-conjugation pseudoautomorphism.
 - The mathematics articles *Division Rings*, *Central Simple Algebras and the Brauer Group* and *The Brauer Wall Group and the Eightfold Way*, for the division ring as an isomorphism invariant of a real or complex algebra.
@@ -37,16 +37,16 @@ which is the property that distinguishes it from the inner automorphisms impleme
 On spinors the pseudoautomorphism acts through the antisymmetric symbol. If $\xi^{\alpha}$ is a spinor of the fundamental representation of $\mathrm{Spin}^{+}(1,3)\cong\mathrm{SL}(2,\mathbb{C})$, the conjugated spinor is
 
 $$
-\bar{\xi}^{\,\dot{\alpha}}=\Pi^{\dot{\alpha}\alpha}\,\xi_{\alpha},
+\bar{\xi}^{\,\bar{\alpha}}=\Pi^{\bar{\alpha}\alpha}\,\xi_{\alpha},
 $$
 
 and conjugating twice returns
 
 $$
-\bar{\bar{\xi}}^{\,\alpha}=\Pi^{\alpha\dot{\alpha}}\bigl(\Pi^{\beta\dot{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi^{\alpha},
+\bar{\bar{\xi}}^{\,\alpha}=\Pi^{\alpha\bar{\alpha}}\bigl(\Pi^{\beta\bar{\alpha}}\xi_{\beta}\bigr)^{*}=\pm\,\xi^{\alpha},
 $$
 
-the sign being that of $\Pi\dot{\Pi}$ — the product of $\Pi$ with its own conjugate — so that the relation between a particle and its antiparticle is controlled entirely by $\Pi$. This is the first appearance of the division ring in the question: the allowed matrices $\Pi$ are not arbitrary, and which ones occur is fixed by the algebra's division ring.
+the sign being that of $\Pi\bar{\Pi}$ — the product of $\Pi$ with its own conjugate — so that the relation between a particle and its antiparticle is controlled entirely by $\Pi$. This is the first appearance of the division ring in the question: the allowed matrices $\Pi$ are not arbitrary, and which ones occur is fixed by the algebra's division ring.
 
 ## The Division-Ring Trichotomy
 
@@ -55,7 +55,7 @@ The classification is a theorem of the Clifford-algebra literature and is transc
 | division ring $K$ | $n-m\bmod 8$ | matrix $\Pi$ | map $C$ |
 |---|---|---|---|
 | $\mathbb{R}$ | $0,2$ | $\Pi\propto I$ | trivial (identity) |
-| $\mathbb{H}$ | $4,6$ | $\Pi$ a product of generators, $\Pi\dot{\Pi}=\pm I$ | particle–antiparticle interchange |
+| $\mathbb{H}$ | $4,6$ | $\Pi$ a product of generators, $\Pi\bar{\Pi}=\pm I$ | particle–antiparticle interchange |
 | $\mathbb{C}$ | complex algebra $F=\mathbb{C}$ | $\Pi$ a product of generators | conjugation, non-trivial |
 | $\mathbb{R}\oplus\mathbb{R}$, $\mathbb{H}\oplus\mathbb{H}$ | $1$, $5$ | as in the corresponding one-ring case | as above |
 
@@ -65,10 +65,10 @@ The load-bearing case is the first. Over a **real** division ring the pseudoauto
 
 ## The Meaning of $C^{2}$
 
-The sign in $\bar{\bar{\xi}}=\pm\xi$ is the square of charge conjugation, and it is worth isolating because $C^{2}=1$ versus $C^{2}=-1$ is the difference between an operation of order two and one of order four. The value is read from $\Pi\dot{\Pi}$:
+The sign in $\bar{\bar{\xi}}=\pm\xi$ is the square of charge conjugation, and it is worth isolating because $C^{2}=1$ versus $C^{2}=-1$ is the difference between an operation of order two and one of order four. The value is read from $\Pi\bar{\Pi}$:
 
-- For a **real** division ring, $\Pi\propto I$, so $\Pi\dot{\Pi}=I$ and $C^{2}=1$; the conjugation is an involution, and trivially so.
-- For a **quaternionic** division ring, $\Pi\dot{\Pi}=+I$ when the generator counts $a,b$ are $\equiv0,1\pmod 4$ and $\Pi\dot{\Pi}=-I$ when $a,b\equiv2,3\pmod 4$. For the fundamental representation of $\mathrm{Spin}^{+}(1,3)$, built on $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, the counts give $a-b\equiv0\pmod 4$, so $\Pi\dot{\Pi}=I$ and $C^{2}=1$ once more. That the fundamental representation has $C^{2}=1$ is an invariant fact of the spinor structure, and it is the algebraic expression of the standard requirement that the free Dirac equation admit an involutive charge conjugation.
+- For a **real** division ring, $\Pi\propto I$, so $\Pi\bar{\Pi}=I$ and $C^{2}=1$; the conjugation is an involution, and trivially so.
+- For a **quaternionic** division ring, $\Pi\bar{\Pi}=+I$ when the generator counts $a,b$ are $\equiv0,1\pmod 4$ and $\Pi\bar{\Pi}=-I$ when $a,b\equiv2,3\pmod 4$. For the fundamental representation of $\mathrm{Spin}^{+}(1,3)$, built on $\mathrm{Cl}_{0,2}\cong\mathbb{H}$, the counts give $a-b\equiv0\pmod 4$, so $\Pi\bar{\Pi}=I$ and $C^{2}=1$ once more. That the fundamental representation has $C^{2}=1$ is an invariant fact of the spinor structure, and it is the algebraic expression of the standard requirement that the free Dirac equation admit an involutive charge conjugation.
 
 ### The Independence of $C^{2}$
 
@@ -107,7 +107,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 **Established, and recomputed.**
 
 - The charge-conjugation pseudoautomorphism is $\bar{A}=\Pi A^{*}\Pi^{-1}$, conjugate-linear, with $\Pi\gamma_{\vec u_a}\Pi^{-1}=-\gamma_{\vec u_a}$; it is not an automorphism of the real form, and this is the algebra-level form of the CPT article's finding that $C$'s internal matrix is odd.
-- The twice-conjugated spinor is $\bar{\bar{\xi}}^{\,\alpha}=\pm\xi^{\alpha}$, with the sign the sign of $\Pi\dot{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
+- The twice-conjugated spinor is $\bar{\bar{\xi}}^{\,\alpha}=\pm\xi^{\alpha}$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ on the quaternionic algebra the sign is $+1$, so $C^{2}=1$. This is the spinor-structure expression of the standard requirement.
 - Over a real division ring the matrix is $\Pi\propto I$ and the pseudoautomorphism is the identity; the corresponding particles are truly neutral. The three charge classes $+1$, $0$, $\bar{0}$ are respectively the complex representations, the real quaternionic representations, and the real representations of real type.
 
 **Transcribed, not derived.**
@@ -136,7 +136,7 @@ The interpretation is not a derivation, and it does not add a new field content 
 
 ## Summary
 
-Charge conjugation is the pseudoautomorphism $\bar{A}=\Pi A^{*}\Pi^{-1}$ of a real Clifford algebra, and the matrix $\Pi$ that implements it is fixed by the algebra's division ring. Over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity and the conjugation is trivial; over a quaternionic ring $K\cong\mathbb{H}$ it is a genuine product of generators and the conjugation interchanges particle and antiparticle; over the complex field it is a conjugation between conjugate representations. The three cases are the three charge classes: charged particles at $Ϙ=+1$, neutral particles with antiparticles at $Ϙ=0$, and truly neutral particles at $Ϙ=\bar{0}$. The twice-conjugated spinor is $\bar{\bar{\xi}}=\pm\xi$, with the sign the sign of $\Pi\dot{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ the sign is $+1$, so $C^{2}=1$, an invariant fact of the spinor structure and the algebraic expression of the standard requirement on charge conjugation.
+Charge conjugation is the pseudoautomorphism $\bar{A}=\Pi A^{*}\Pi^{-1}$ of a real Clifford algebra, and the matrix $\Pi$ that implements it is fixed by the algebra's division ring. Over a real division ring $K\cong\mathbb{R}$ it is proportional to the identity and the conjugation is trivial; over a quaternionic ring $K\cong\mathbb{H}$ it is a genuine product of generators and the conjugation interchanges particle and antiparticle; over the complex field it is a conjugation between conjugate representations. The three cases are the three charge classes: charged particles at $Ϙ=+1$, neutral particles with antiparticles at $Ϙ=0$, and truly neutral particles at $Ϙ=\bar{0}$. The twice-conjugated spinor is $\bar{\bar{\xi}}=\pm\xi$, with the sign the sign of $\Pi\bar{\Pi}$; for the fundamental representation of $\mathrm{Spin}^{+}(1,3)$ the sign is $+1$, so $C^{2}=1$, an invariant fact of the spinor structure and the algebraic expression of the standard requirement on charge conjugation.
 
 The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}\mathrm{l}_{2}$, the charged case, and it contains the real forms $\mathrm{Cl}_{0,2}\cong\mathbb{H}$ and $\mathrm{Cl}_{2,0}\cong M_2(\mathbb{R})$ that carry the neutral and truly neutral cases. The division ring therefore places the three charge classes in one algebra: the photon's real self-conjugacy is the case $K\cong\mathbb{R}$, the neutron's neutrality is the case $K\cong\mathbb{H}$, and the charged fields are the complexification. What is transcribed is the classification and the physical assignments; what is established is the algebra-level form of the pseudoautomorphism, the identity case over a real division ring, and the sign of $C^{2}$.
 
@@ -149,8 +149,8 @@ The biquaternion framework's algebra is the complex Clifford algebra $\mathbb{C}
 | $K$ | Division ring of $\mathrm{Cl}_{n,m}$: $\mathbb{R}$ if $p-q\equiv0,2$, $\mathbb{H}$ if $p-q\equiv4,6\pmod 8$ |
 | $A\mapsto\bar{A}=\Pi A^{*}\Pi^{-1}$ | Charge-conjugation pseudoautomorphism; conjugate-linear |
 | $\Pi$ | Charge-conjugation matrix; $\Pi\gamma_{\vec u_a}\Pi^{-1}=-\gamma_{\vec u_a}$, fixed only up to a scalar |
-| $\bar{\xi}^{\,\dot\alpha}=\Pi^{\dot\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
-| $\Pi\dot{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
+| $\bar{\xi}^{\,\bar\alpha}=\Pi^{\bar\alpha\alpha}\xi_\alpha$ | Conjugated spinor of the fundamental representation |
+| $\Pi\bar{\Pi}=\pm I$ | Determines $C^{2}$: $+I\Rightarrow C^{2}=1$, $-I\Rightarrow C^{2}=-1$ |
 | $C[\psi]=i\gamma^{2}\psi^{*}$ | Module form of charge conjugation (CPT article) |
 | $Ϙ=+1,0,\bar{0}$ | Charged, neutral, truly neutral charge states |
 | $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ | Real-quaternion subspace, $\cong\mathrm{Cl}_{0,2}$, the quaternionic real form |

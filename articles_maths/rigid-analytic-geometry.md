@@ -129,7 +129,7 @@ and the supremum is attained.
 
 ### Affinoid Subdomains
 
-**Definition.** Let $A$ be an affinoid algebra and $X = \operatorname{Sp} A$. A subset $U \subseteq X$ is an **affinoid subdomain** if there are an affinoid algebra $A_U$ and a morphism of affinoid algebras $A \to A_U$ such that the induced map $\operatorname{Sp} A_U \to \operatorname{Sp} A$ is a bijection onto $U$ and is **universal** for this property: every morphism $A \to B$ of affinoid algebras whose induced map $\operatorname{Sp} B \to \operatorname{Sp} A$ lands in $U$ factors uniquely through $A \to A_U$. The three basic classes, all of which are affinoid subdomains, are:
+**Definition.** Let $A$ be an affinoid algebra and $X = \operatorname{Sp} A$. A subset $\Omega \subseteq X$ is an **affinoid subdomain** if there are an affinoid algebra $A_\Omega$ and a morphism of affinoid algebras $A \to A_\Omega$ such that the induced map $\operatorname{Sp} A_\Omega \to \operatorname{Sp} A$ is a bijection onto $\Omega$ and is **universal** for this property: every morphism $A \to B$ of affinoid algebras whose induced map $\operatorname{Sp} B \to \operatorname{Sp} A$ lands in $\Omega$ factors uniquely through $A \to A_\Omega$. The three basic classes, all of which are affinoid subdomains, are:
 
 **(a)** the **Weierstrass domain** $X(f_1, \dots, f_r) = \{x : \lvert f_i(x) \rvert \leq 1\}$, with algebra $A\langle f_1, \dots, f_r\rangle$ obtained by adjoining the $f_i$;
 
@@ -146,7 +146,7 @@ and the supremum is attained.
 **Definition.** Let $X = \operatorname{Sp} A$. The **weak G-topology** on $X$ is the Grothendieck topology (in the sense of *Sheaves on Sites*) whose
 
 - **admissible open sets** are the finite unions of rational subdomains,
-- **admissible coverings** are the finite coverings by rational subdomains $U_i$ that satisfy **Tate's condition**: there are finitely many $f_1, \dots, f_n \in A$ with $\lvert f_j(x) \rvert \leq 1$ for all $x \in U$ and $\sup_j \lvert f_j(x) \rvert = 1$ for every $x \in U$, such that each of the sets $\{x \in U : \lvert f_j(x) \rvert = 1\}$ is contained in one of the covering sets $U_i$.
+- **admissible coverings** are the finite coverings by rational subdomains $\Omega_i$ that satisfy **Tate's condition**: there are finitely many $f_1, \dots, f_n \in A$ with $\lvert f_j(x) \rvert \leq 1$ for all $x \in \Omega$ and $\sup_j \lvert f_j(x) \rvert = 1$ for every $x \in \Omega$, such that each of the sets $\{x \in \Omega : \lvert f_j(x) \rvert = 1\}$ is contained in one of the covering sets $\Omega_i$.
 
 The **strong G-topology** is the Grothendieck topology whose admissible open sets are the unions of affinoid subdomains that admit an admissible covering, and whose admissible coverings are those that refine to finite affinoid coverings. The weak G-topology generates the strong one, and both give the same sheaf theory on affinoid spaces.
 
@@ -154,9 +154,9 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 
 ### Tate's Acyclicity Theorem
 
-**Definition.** The **structure presheaf** on $X = \operatorname{Sp} A$ assigns to an affinoid subdomain $U \subseteq X$ the algebra $A_U$ of the definition, and to an inclusion $V \subseteq U$ the canonical restriction homomorphism $A_U \to A_V$.
+**Definition.** The **structure presheaf** on $X = \operatorname{Sp} A$ assigns to an affinoid subdomain $\Omega \subseteq X$ the algebra $A_\Omega$ of the definition, and to an inclusion $V \subseteq \Omega$ the canonical restriction homomorphism $A_\Omega \to A_V$.
 
-**Theorem (Tate's acyclicity).** Let $X = \operatorname{Sp} A$ be an affinoid space. Then the structure presheaf is a sheaf for the weak G-topology: for every admissible covering $\{U_i\}$ of an admissible open $U$ and every family $f_i \in A_{U_i}$ with $f_i = f_j$ on $U_i \cap U_j$, there is a unique $f \in A_U$ restricting to each $f_i$. Moreover the higher cohomology of the structure sheaf vanishes on affinoid spaces: $H^q(U, O_X) = 0$ for all $q > 0$ and all affinoid subdomains $U$.
+**Theorem (Tate's acyclicity).** Let $X = \operatorname{Sp} A$ be an affinoid space. Then the structure presheaf is a sheaf for the weak G-topology: for every admissible covering $\{\Omega_i\}$ of an admissible open $\Omega$ and every family $f_i \in A_{\Omega_i}$ with $f_i = f_j$ on $\Omega_i \cap \Omega_j$, there is a unique $f \in A_\Omega$ restricting to each $f_i$. Moreover the higher cohomology of the structure sheaf vanishes on affinoid spaces: $H^q(\Omega, O_X) = 0$ for all $q > 0$ and all affinoid subdomains $\Omega$.
 
 **Proof.** The statement is Tate's theorem; the sheaf property is proved from the algebra of the covering, using the Weierstrass division theorem to compare the algebras of different affine pieces and the Tate condition to control the intersections, and the vanishing of higher cohomology follows from the sheaf property together with the finite acyclicity of the covering. The proofs are standard and are given in full in the references; the vanishing statement is quoted here as the foundational theorem of the subject.
 
@@ -170,7 +170,7 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 
 ### Definition and Morphisms
 
-**Definition.** A **rigid analytic space** over $K$ is a triple $(X, \mathcal{T}_X, O_X)$ consisting of a set $X$, a Grothendieck topology $\mathcal{T}_X$ on it, and a sheaf of $K$-algebras $O_X$ on the site, such that there is an admissible covering of $X$ by admissible open sets $U_i$ with $(U_i, O_X\vert_{U_i})$ isomorphic to an affinoid space $(\operatorname{Sp} A_i, O_{\operatorname{Sp} A_i})$. A **morphism** of rigid spaces is a morphism of the underlying G-ringed spaces, that is, a map $f : X \to Y$ which pulls admissible opens back to admissible opens and which is a morphism of sheaves $f^{-1}O_Y \to O_X$; equivalently, a morphism is a family of morphisms of affinoid algebras compatible with the local identifications.
+**Definition.** A **rigid analytic space** over $K$ is a triple $(X, \mathcal{T}_X, O_X)$ consisting of a set $X$, a Grothendieck topology $\mathcal{T}_X$ on it, and a sheaf of $K$-algebras $O_X$ on the site, such that there is an admissible covering of $X$ by admissible open sets $\Omega_i$ with $(\Omega_i, O_X\vert_{\Omega_i})$ isomorphic to an affinoid space $(\operatorname{Sp} A_i, O_{\operatorname{Sp} A_i})$. A **morphism** of rigid spaces is a morphism of the underlying G-ringed spaces, that is, a map $f : X \to Y$ which pulls admissible opens back to admissible opens and which is a morphism of sheaves $f^{-1}O_Y \to O_X$; equivalently, a morphism is a family of morphisms of affinoid algebras compatible with the local identifications.
 
 **Proposition.** The rigid analytic spaces over $K$ form a category with fibre products, and the affinoid spaces form a full subcategory.
 
@@ -192,7 +192,7 @@ The **strong G-topology** is the Grothendieck topology whose admissible open set
 
 **Definition.** Let $X$ be a rigid space. An $O_X$-module $\mathcal{F}$ is **coherent** if it is a sheaf for the G-topology and if there is an admissible covering by affinoids $\operatorname{Sp} A_i$ on which $\mathcal{F}$ is the sheaf associated to a finitely generated $A_i$-module.
 
-**Theorem (Kiehl).** Let $X = \operatorname{Sp} A$ be an affinoid space. The functor $\mathcal{F} \mapsto \mathcal{F}(X)$ is an equivalence between the category of coherent $O_X$-modules and the category of finitely generated $A$-modules. Moreover $H^q(X, \mathcal{F}) = 0$ for every coherent $\mathcal{F}$ and every $q > 0$, and the cohomology of a coherent sheaf on an admissible open $U$ is that of the corresponding module over the affinoid algebra of $U$.
+**Theorem (Kiehl).** Let $X = \operatorname{Sp} A$ be an affinoid space. The functor $\mathcal{F} \mapsto \mathcal{F}(X)$ is an equivalence between the category of coherent $O_X$-modules and the category of finitely generated $A$-modules. Moreover $H^q(X, \mathcal{F}) = 0$ for every coherent $\mathcal{F}$ and every $q > 0$, and the cohomology of a coherent sheaf on an admissible open $\Omega$ is that of the corresponding module over the affinoid algebra of $\Omega$.
 
 **Proof.** The statement is Kiehl's theorem; the sheaf-theoretic part is Tate's acyclicity theorem applied to the associated modules, and the equivalence is by the same division arguments that prove the structure theorem for affinoid algebras. The higher cohomology vanishes because the coverings in the weak G-topology are finite and acyclic and the associated module is finitely presented; the proofs are standard.
 
@@ -254,7 +254,7 @@ The constructions above are geometric: they use the valuation only through the n
 | $X(f_1, \dots, f_r; g_1, \dots, g_s)$ | Laurent domain $\{\lvert f_i \rvert \leq 1, \lvert g_j \rvert \geq 1\}$ |
 | $X(f_1, \dots, f_r/g)$ | Rational domain $\{\lvert f_i \rvert \leq \lvert g \rvert\}$ |
 | $O_X$ | The structure sheaf for the rigid (G-)topology |
-| $H^q(U, O_X)$ | Higher cohomology of the structure sheaf, vanishing on affinoids |
+| $H^q(\Omega, O_X)$ | Higher cohomology of the structure sheaf, vanishing on affinoids |
 | $\mathbb{A}^{n,\mathrm{rig}}$, $\mathbb{P}^{1,\mathrm{rig}}$ | The rigid affine and projective spaces |
 | $X^{\mathrm{an}}$ | Analytification of an algebraic variety |
 | $\operatorname{Coh}(X)$ | The category of coherent sheaves on $X$ |

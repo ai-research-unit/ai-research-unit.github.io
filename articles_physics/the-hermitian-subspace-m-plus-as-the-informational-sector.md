@@ -10,7 +10,7 @@ The **algebraic identification** of $\mathbb{M}_+$ with the operator algebra of 
 
 The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled. Then the physical hypothesis is stated clearly, with the honest position on what it does and does not claim. Then the action of $\mathbb{M}_+$ on $\mathbb{M}_-$ and the algebraic identification with the qubit operator algebra are developed. The distinguished elements of $\mathbb{M}_+$ are collected as examples, and the article closes with open questions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**. In vacuum, $c = c_0$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t + \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_t$ denotes the **vacuum speed of light**. In vacuum, $c = c_t$.
 
 ## Basic Definition and Properties
 
@@ -25,37 +25,37 @@ $$
 where $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. Explicitly, a biquaternion is in $\mathbb{M}_+$ if and only if it has the form
 
 $$
-\tilde{Q} = q_0\,e_0 + i q'_1\,e_1 + i q'_2\,e_2 + i q'_3\,e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+\tilde{Q} = q_t\,e_t + i q'_x\,\vec e_x + i q'_y\,\vec e_y + i q'_z\,\vec e_z, \qquad q_t, q'_x, q'_y, q'_z \in \mathbb{R}.
 $$
 
-The scalar part is **real** and the vector part is **purely imaginary**. Equivalently, if we write $\tilde{Q} = Q_0 e_0 + \vec Q$, then $\tilde{Q} \in \mathbb{M}_+$ iff $Q_0$ is real and $Q_1, Q_2, Q_3$ are purely imaginary — that is, $Q_0 = q_0$ and $Q_k = iq'_k$.
+The scalar part is **real** and the vector part is **purely imaginary**. Equivalently, if we write $\tilde{Q} = Q_t e_t + \vec Q$, then $\tilde{Q} \in \mathbb{M}_+$ iff $Q_t$ is real and $Q_x, Q_y, Q_z$ are purely imaginary — that is, $Q_t = q_t$ and $Q_k = iq'_k$.
 
 **The two writings.** The four real parameters are the components of the informational coordinate, the temporal one scaled by $c$:
 
 $$
-\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3, \qquad q_0 = ct',\;\; q'_1 = x',\;\; q'_2 = y',\;\; q'_3 = z' .
+\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z = (ct')\,e_t + (ix')\,\vec e_x + (iy')\,\vec e_y + (iz')\,\vec e_z, \qquad q_t = ct',\;\; q'_x = x',\;\; q'_y = y',\;\; q'_z = z' .
 $$
 
-The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_+$ is the **three vectors** $q'_k$ — the space. The temporal parameter $q_0 = ct'$ is unprimed and real. The four parameters are the real and imaginary parts of the four complex coefficients of a general biquaternion, $Q_\mu = q_\mu + iq'_\mu$, read off in the pattern that defines this sector: scalar real, vector imaginary.
+The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_+$ is the **three vectors** $q'_k$ — the space. The temporal parameter $q_t = ct'$ is unprimed and real. The four parameters are the real and imaginary parts of the four complex coefficients of a general biquaternion, $Q_\mu = q_\mu + iq'_\mu$, read off in the pattern that defines this sector: scalar real, vector imaginary.
 
-**The same writing under the letter of an operator.** Quantum physics writes the sector's parameter form with $h_0, h_1, h_2, h_3$ in place of $q_0, q'_1, q'_2, q'_3$:
+**The same writing under the letter of an operator.** Quantum physics writes the sector's parameter form with $h_t, h_x, h_y, h_z$ in place of $q_t, q'_x, q'_y, q'_z$:
 
 $$
-\tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R},
+\tilde{H} = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R},
 $$
 
-with $h_0 = q_0 = ct'$ and $h_k = q'_k = x'_k$. It is not a third writing: the parameters are the same four, and only their letters change to the ones quantum physics uses for a Hermitian operator, which is the usual naming of an element of this sector. Under the module dictionary $e_0 \leftrightarrow I_2$, $ie_k \leftrightarrow \sigma_k$, its matrix image is $\tilde{H} = h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$, the general Hermitian $2\times2$ matrix of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. Two letter cautions go with it: unadorned $\langle\tilde P,\tilde Q\rangle_{*}$ is the Hermitian form of §*The Hermitian Forms* below, so the element carries the tilde, and unadorned $h$ is the Planck constant, so the coefficients $h_\mu$ are read from context.
+with $h_t = q_t = ct'$ and $h_k = q'_k = x'_k$. It is not a third writing: the parameters are the same four, and only their letters change to the ones quantum physics uses for a Hermitian operator, which is the usual naming of an element of this sector. Under the module dictionary $e_t \leftrightarrow I_2$, $i\vec e_k \leftrightarrow \sigma_k$, its matrix image is $\tilde{H} = h_tI_2 + h_x\sigma_1 + h_y\sigma_2 + h_z\sigma_3$, the general Hermitian $2\times2$ matrix of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. Two letter cautions go with it: unadorned $\langle\tilde P,\tilde Q\rangle_{*}$ is the Hermitian form of §*The Hermitian Forms* below, so the element carries the tilde, and unadorned $h$ is the Planck constant, so the coefficients $h_\mu$ are read from context.
 
 A natural basis of $\mathbb{M}_+$ is
 
 $$
-\{e_0,\; i\,e_1,\; i\,e_2,\; i\,e_3\}.
+\{e_t,\; i\,\vec e_x,\; i\,\vec e_y,\; i\,\vec e_z\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_0e_0 + i\vec q_a$ and $\tilde{R} = r_0e_0 + i\vec v$ with $q_0, r_0$ real and $\vec q_a, \vec v$ real vectors,
+As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(i\vec e_x)(i\vec e_y) = -\vec e_z$, whose vector coefficient is real, so the product lies outside the subspace. The obstruction is the antisymmetric part of the product. For $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde{R} = r_te_t + i\vec v$ with $q_t, r_t$ real and $\vec q_a, \vec v$ real vectors,
 
 $$
-\tilde{Q}\tilde{R} = \left(q_0r_0 + (\vec q_a,\vec v)\right)e_0 + i\left(q_0\vec v + r_0\vec q_a\right) - \vec q_a\times\vec v,
+\tilde{Q}\tilde{R} = \left(q_tr_t + (\vec q_a,\vec v)\right)e_t + i\left(q_t\vec v + r_t\vec q_a\right) - \vec q_a\times\vec v,
 $$
 
 so the product stays in the sector exactly when the real vector $\vec q_a\times\vec v$ vanishes, that is when the two elements commute; the antisymmetric part alone leaves, and it leaves as the commutator
@@ -64,7 +64,7 @@ $$
 \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = -2\,\vec q_a\times\vec v \in \mathbb{M}_- .
 $$
 
-The symmetrised product therefore always stays in the sector, while the commutator leaves it whenever it is not zero, and the square is the commuting case $\tilde{R} = \tilde{Q}$: it is the one product of an element with an element that can never witness the failure of closure, and for $\tilde{Q} = q_0e_0 + i\vec q'$ it is $\tilde{Q}^2 = q_0^2 + |\vec q'|^2 + 2iq_0\vec q'$. The product rule in its four complex forms, one for each pair of the remarkable subspaces, is computed in *Remarkable Subspaces and the Four General Products*.
+The symmetrised product therefore always stays in the sector, while the commutator leaves it whenever it is not zero, and the square is the commuting case $\tilde{R} = \tilde{Q}$: it is the one product of an element with an element that can never witness the failure of closure, and for $\tilde{Q} = q_te_t + i\vec q'$ it is $\tilde{Q}^2 = q_t^2 + |\vec q'|^2 + 2iq_t\vec q'$. The product rule in its four complex forms, one for each pair of the remarkable subspaces, is computed in *Remarkable Subspaces and the Four General Products*.
 
 ### The Defining Involution
 
@@ -77,66 +77,66 @@ $$
 which is an involution: applying it twice returns the original element, $(\tilde{Q}^{*})^{*} = \tilde{Q}$. Write the general biquaternion out in full, with the real and the imaginary part of each of its four coefficients,
 
 $$
-\tilde{Q} = (q_0 + iq'_0)\,e_0 + (q_1 + iq'_1)\,e_1 + (q_2 + iq'_2)\,e_2 + (q_3 + iq'_3)\,e_3, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+\tilde{Q} = (q_t + iq'_t)\,e_t + (q_x + iq'_x)\,\vec e_x + (q_y + iq'_y)\,\vec e_y + (q_z + iq'_z)\,\vec e_z, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
 Quaternion conjugation negates the three vector units and leaves the unit, the scalar imaginary, and every coefficient untouched,
 
 $$
-\tilde{Q}^{\natural} = (q_0 + iq'_0)\,e_0 - (q_1 + iq'_1)\,e_1 - (q_2 + iq'_2)\,e_2 - (q_3 + iq'_3)\,e_3,
+\tilde{Q}^{\natural} = (q_t + iq'_t)\,e_t - (q_x + iq'_x)\,\vec e_x - (q_y + iq'_y)\,\vec e_y - (q_z + iq'_z)\,\vec e_z,
 $$
 
 and complex conjugation then replaces $i$ by $-i$ throughout, leaving the quaternion units fixed, so that
 
 $$
-\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = (q_0 - iq'_0)\,e_0 - (q_1 - iq'_1)\,e_1 - (q_2 - iq'_2)\,e_2 - (q_3 - iq'_3)\,e_3 ,
+\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = (q_t - iq'_t)\,e_t - (q_x - iq'_x)\,\vec e_x - (q_y - iq'_y)\,\vec e_y - (q_z - iq'_z)\,\vec e_z ,
 $$
 
 so that the scalar coefficient is negated in its imaginary part and each vector coefficient in its real part. Coordinate by coordinate,
 
-| | $q_0$ | $q'_0$ | $q_1$ | $q'_1$ | $q_2$ | $q'_2$ | $q_3$ | $q'_3$ |
+| | $q_t$ | $q'_t$ | $q_x$ | $q'_x$ | $q_y$ | $q'_y$ | $q_z$ | $q'_z$ |
 |---|---|---|---|---|---|---|---|---|
-| image under ${}^{*}$ | $q_0$ | $-q'_0$ | $-q_1$ | $q'_1$ | $-q_2$ | $q'_2$ | $-q_3$ | $q'_3$ |
-| $\tilde{Q}^{*} = \tilde{Q}$ requires | free | $q'_0 = 0$ | $q_1 = 0$ | free | $q_2 = 0$ | free | $q_3 = 0$ | free |
+| image under ${}^{*}$ | $q_t$ | $-q'_t$ | $-q_x$ | $q'_x$ | $-q_y$ | $q'_y$ | $-q_z$ | $q'_z$ |
+| $\tilde{Q}^{*} = \tilde{Q}$ requires | free | $q'_t = 0$ | $q_x = 0$ | free | $q_y = 0$ | free | $q_z = 0$ | free |
 
-**The fixed space.** The two sides of $\tilde{Q}^{*} = \tilde{Q}$ must agree in each of the four units $e_0, e_1, e_2, e_3$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
+**The fixed space.** The two sides of $\tilde{Q}^{*} = \tilde{Q}$ must agree in each of the four units $e_t, \vec e_x, \vec e_y, \vec e_z$, and within a unit they must agree separately in the real and the imaginary part. That is four complex conditions, hence eight real ones, and they read
 
 $$
-q_0 - iq'_0 = q_0 + iq'_0 \iff q'_0 = 0, \qquad
+q_t - iq'_t = q_t + iq'_t \iff q'_t = 0, \qquad
 -q_k + iq'_k = q_k + iq'_k \iff q_k = 0 \qquad (k = 1, 2, 3),
 $$
 
-the first from the scalar unit and the remaining three from the vector units. The solutions are the elements with $q'_0 = 0$ and $q_1 = q_2 = q_3 = 0$, that is,
+the first from the scalar unit and the remaining three from the vector units. The solutions are the elements with $q'_t = 0$ and $q_x = q_y = q_z = 0$, that is,
 
 $$
-\tilde{Q}^{*} = \tilde{Q} \iff \tilde{Q} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 .
+\tilde{Q}^{*} = \tilde{Q} \iff \tilde{Q} = q_t\,e_t + iq'_x\,\vec e_x + iq'_y\,\vec e_y + iq'_z\,\vec e_z .
 $$
 
-**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = q_0\,e_0 - iq'_1\,e_1 - iq'_2\,e_2 - iq'_3\,e_3$, hence $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = q_0\,e_0 + iq'_1\,e_1 + iq'_2\,e_2 + iq'_3\,e_3 = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q_0, q'_1, q'_2, q'_3$, which is the parametrisation recorded above: the scalar coefficient is real, the three vector coefficients are purely imaginary, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q'_0 = 0$ and $q_k = 0$.
+**Conversely**, every element of this form is fixed. For such an element $\tilde{Q}^{\natural} = q_t\,e_t - iq'_x\,\vec e_x - iq'_y\,\vec e_y - iq'_z\,\vec e_z$, hence $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}} = q_t\,e_t + iq'_x\,\vec e_x + iq'_y\,\vec e_y + iq'_z\,\vec e_z = \tilde{Q}$. The two directions together say that the displayed set is *exactly* the fixed space. The coordinates that survive are the four $q_t, q'_x, q'_y, q'_z$, which is the parametrisation recorded above: the scalar coefficient is real, the three vector coefficients are purely imaginary, and the fixed space is this four-dimensional real subspace, carved out of the eight real coordinates by the four $\mathbb{R}$-linear equations $q'_t = 0$ and $q_k = 0$.
 
 ### Properties
 
 **Quadratic form.** The **biquaternion norm** restricts to a real quadratic form on $\mathbb{M}_+$:
 
 $$
-\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (x')^2 - (y')^2 - (z')^2.
+\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + (iq'_x)^2 + (iq'_y)^2 + (iq'_z)^2 = q_t^2 - (q'_x)^2 - (q'_y)^2 - (q'_z)^2 = c^2(t')^2 - (x')^2 - (y')^2 - (z')^2.
 $$
 
-This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_1, q'_2, q'_3$). The single positive direction is the temporal one, so the form is Lorentzian with a distinguished timelike axis in the sector's own coordinates.
+This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_x, q'_y, q'_z$). The single positive direction is the temporal one, so the form is Lorentzian with a distinguished timelike axis in the sector's own coordinates.
 
 **Zero divisors.** The biquaternion norm vanishes on the cone
 
 $$
-q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2, \qquad \text{that is} \qquad c^2(t')^2 = (x')^2 + (y')^2 + (z')^2,
+q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2, \qquad \text{that is} \qquad c^2(t')^2 = (x')^2 + (y')^2 + (z')^2,
 $$
 
-which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, connected) and the two components of the region $N > 0$ ($q_0 > |\vec q'|$ and $q_0 < -|\vec q'|$).
+which is a double cone with apex at the origin. The complement of the cone has three connected components: the region $N < 0$ ($q_t^2 < (q'_x)^2 + (q'_y)^2 + (q'_z)^2$, connected) and the two components of the region $N > 0$ ($q_t > |\vec q'|$ and $q_t < -|\vec q'|$).
 
 **Not a division algebra.** The presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra: there are nonzero elements of $\mathbb{M}_+$ with no inverse in $\mathbb{B}$.
 
-**Multiplication by $i$.** Since $i$ is central, $i\mathbb{M}_+$ is again a four-dimensional real subspace. It is **not** $\mathbb{M}_+$ itself: multiplying a Hermitian element by $i$ produces an anti-Hermitian one. The sector is therefore not closed under multiplication by the central scalar, which is the visible sign that the Hermitian condition is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. Under quaternion conjugation the sector is preserved: conjugation negates the vector part and leaves the scalar part alone, so $q_0 + i\vec q' \mapsto q_0 - i\vec q'$ stays in $\mathbb{M}_+$.
+**Multiplication by $i$.** Since $i$ is central, $i\mathbb{M}_+$ is again a four-dimensional real subspace. It is **not** $\mathbb{M}_+$ itself: multiplying a Hermitian element by $i$ produces an anti-Hermitian one. The sector is therefore not closed under multiplication by the central scalar, which is the visible sign that the Hermitian condition is $\mathbb{R}$-linear and not $\mathbb{C}$-linear. Under quaternion conjugation the sector is preserved: conjugation negates the vector part and leaves the scalar part alone, so $q_t + i\vec q' \mapsto q_t - i\vec q'$ stays in $\mathbb{M}_+$.
 
-**The parameter pattern.** The defining property of the sector is visible in the parameters alone: the scalar coefficient is real and the three vector coefficients are imaginary. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ therefore contributes exactly one real number, and the prime selects which one — for the scalar it is the real part $q_0$, for the three vectors the imaginary parts $q'_1, q'_2, q'_3$. This is why a single conjugation carves a four-dimensional real subspace out of an eight-dimensional real algebra: it fixes one real number in each complex coefficient, in the pattern real-scalar, imaginary-vector.
+**The parameter pattern.** The defining property of the sector is visible in the parameters alone: the scalar coefficient is real and the three vector coefficients are imaginary. Each of the four complex coefficients $Q_\mu = q_\mu + iq'_\mu$ therefore contributes exactly one real number, and the prime selects which one — for the scalar it is the real part $q_t$, for the three vectors the imaginary parts $q'_x, q'_y, q'_z$. This is why a single conjugation carves a four-dimensional real subspace out of an eight-dimensional real algebra: it fixes one real number in each complex coefficient, in the pattern real-scalar, imaginary-vector.
 
 ## Physical Meaning
 
@@ -150,16 +150,16 @@ In this interpretation:
 
 - A **state** of the informational sector is an element $\tilde{\rho} \in \mathbb{M}_+$ that is Hermitian, positive, and of trace one.
 - An **observable** of the informational sector is a general Hermitian element $\tilde{Q} \in \mathbb{M}_+$.
-- **Evolution** is generated by rotor conjugation $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$, with $\tilde{U}$ a **matrix-unitary** biquaternion, $\tilde{U}\tilde{U}^{*} = e_0$. Unit biquaternion norm is not enough: it admits the boosts, which do not preserve the trace and so do not map states to states.
+- **Evolution** is generated by rotor conjugation $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^{*}$, with $\tilde{U}$ a **matrix-unitary** biquaternion, $\tilde{U}\tilde{U}^{*} = e_t$. Unit biquaternion norm is not enough: it admits the boosts, which do not preserve the trace and so do not map states to states.
 - **Measurement** is the idempotent projection $\tilde{\rho} \mapsto \tilde\Pi\tilde{\rho}\tilde\Pi$.
 - **Expectation values** are given by the trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{Q})$.
 
 ### The Sector's Own Coordinates
 
-The coordinates of the sector carry the $i$ in a definite place, and this placement is what gives the sector its character. With the temporal parameter $q_0 = ct'$ real and the three spatial parameters $q'_1, q'_2, q'_3$ imaginary, the general element is
+The coordinates of the sector carry the $i$ in a definite place, and this placement is what gives the sector its character. With the temporal parameter $q_t = ct'$ real and the three spatial parameters $q'_x, q'_y, q'_z$ imaginary, the general element is
 
 $$
-\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3.
+\tilde{Q} = q_te_t + iq'_x\vec e_x + iq'_y\vec e_y + iq'_z\vec e_z = (ct')\,e_t + (ix')\,\vec e_x + (iy')\,\vec e_y + (iz')\,\vec e_z.
 $$
 
 The temporal direction therefore carries a real coordinate while the three spatial directions carry imaginary ones. Two consequences follow. First, the biquaternion norm has signature $(1,3)$, so the temporal axis is the single positive direction and the three spatial axes are the negative ones. Second, it is the vectors of this sector, not its scalar, that carry the $i$ — which is why the vectors are the primed parameters while the scalar is not. The placement of the $i$ is a property of the sector, fixed by the conjugation that defines it.
@@ -231,7 +231,7 @@ so the image is anti-Hermitian, i.e., in $\mathbb{M}_-$. The action maps the mat
 
 **2. The action is linear in $\tilde{Q}_-$.** This follows from the bilinearity of the biquaternion product.
 
-**3. The action preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm.** If $\tilde{Q}_+\tilde{Q}^{\natural}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $\langle\tilde{Q}_-\rangle_{\natural} = \tilde{Q}_-\tilde{Q}^{\natural}_-$: by multiplicativity of the biquaternion norm, $\langle\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^{*}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural}\langle\tilde{Q}_-\rangle_{\natural}\langle\tilde{Q}_+\rangle_{\natural}^* = \langle\tilde{Q}_-\rangle_{\natural}$ when $\langle\tilde{Q}_+\rangle_{\natural} = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the biquaternion norm and not on $\tilde{Q}_+\tilde{Q}_+^{*}$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^{*} = \tilde{Q}_+^2 = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^{*} = e_0$.
+**3. The action preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm.** If $\tilde{Q}_+\tilde{Q}^{\natural}_+ = e_t$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $\langle\tilde{Q}_-\rangle_{\natural} = \tilde{Q}_-\tilde{Q}^{\natural}_-$: by multiplicativity of the biquaternion norm, $\langle\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^{*}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural}\langle\tilde{Q}_-\rangle_{\natural}\langle\tilde{Q}_+\rangle_{\natural}^* = \langle\tilde{Q}_-\rangle_{\natural}$ when $\langle\tilde{Q}_+\rangle_{\natural} = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the biquaternion norm and not on $\tilde{Q}_+\tilde{Q}_+^{*}$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^{*} = \tilde{Q}_+^2 = \cosh\psi + i\sinh\psi\,\vec u_{\mathrm b} \neq e_t$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^{*} = e_t$.
 
 **4. The action is a group action.** Compositions of actions compose:
 
@@ -252,13 +252,13 @@ This is the algebraic content of the interpretation of $\mathbb{M}_+$ as "inform
 
 The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unit-norm elements** ($\tilde{Q}\tilde{Q}^{\natural} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{U}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
+**Unit-norm elements** ($\tilde{Q}\tilde{Q}^{\natural} = e_t$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the biquaternion norm and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{U}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^{*} = e_t$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
-**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_0$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state projectors $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$. These correspond to quantum-mechanical measurements.
+**Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the biquaternion norm (unless $\tilde{Q} = e_t$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde\Pi\tilde{Q}_-\tilde\Pi$. Examples: the pure-state projectors $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$. These correspond to quantum-mechanical measurements.
 
 The **dichotomy between reversible and irreversible actions** is intrinsic to the structure of $\mathbb{M}_+$: a norm-preserving rotor against a norm-destroying projection. On the material sector, where the acting element is a Lorentz rotor, the two are the Lorentz transformations and the measurements; read on the informational sector, where the acting element must preserve the trace, the reversible class narrows to the **matrix-unitary** elements of §*The Correspondence*, and the pair is exactly the quantum-information dichotomy between unitary evolution and measurement.
 
-Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is **decoherence**: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the **vacuum** of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum as a Minimal Idempotent*.
+Both ends of the dichotomy have their physics names, and both are owned by later articles, but the statements belong here. The idempotent end is **decoherence**: the irreversible projection of a state onto an idempotent is the algebraic form of a measurement, and the projection onto a minimal left ideal is what a measurement completes. The distinguished projection of the sector is the **vacuum** of a single fermionic mode, the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, which is simultaneously a pure state, a rank-one projector and a zero divisor. The two are *Decoherence as Idempotent Projection* and *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 ### The Trace Formula
 
@@ -268,10 +268,10 @@ $$
 \langle \tilde{Q} \rangle_{\tilde\Pi} = \mathrm{Tr}(\tilde\Pi\tilde{Q}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde{Q}) = 2\langle\tilde\Pi,\tilde{Q}\rangle
 $$
 
-is **real**. It has the form of a **quantum-mechanical expectation value**: the trace of the product of a state and an observable. For example, if $\tilde\Pi = \tfrac{1}{2}(e_0 + i\vec u)$ and $\tilde{Q} = h_0 e_0 + i\vec h$, then
+is **real**. It has the form of a **quantum-mechanical expectation value**: the trace of the product of a state and an observable. For example, if $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec u)$ and $\tilde{Q} = h_t e_t + i\vec h$, then
 
 $$
-\langle \tilde{Q} \rangle_{\tilde\Pi} = h_0 + \vec u\cdot\vec h,
+\langle \tilde{Q} \rangle_{\tilde\Pi} = h_t + \vec u\cdot\vec h,
 $$
 
 which is the standard spin-1/2 expectation value along the direction $\vec u$. For an idempotent and a state the same pairing is the **probability formula** $p_\pm=\mathrm{Tr}(\tilde\Pi_{1,2}(\vec u)\tilde\rho)=\tfrac12(1\pm\vec u\cdot\vec r)$; the derivation of the rule from the algebra, and its comparison with the postulate it replaces, are *The Born Rule as a Trace Formula — Derivation and Comparison*.
@@ -282,13 +282,13 @@ What the trace form gives is the probability formula; what it does not give is t
 
 The four forms of *Conventions in the Biquaternion Universe* are read on $\mathbb{M}_+$ in *Remarkable Subspaces and the Four Forms*, and the interpretation says in one line what the informational sector is not: **the sector carries no area pairing.**
 
-**Every form is real on the sector, so each is its own real part.** An element of $\mathbb{M}_+$ is $a_0e_0 + i\vec p$ with $a_0$ and $\vec p$ real, and each of the four forms takes real values on a pair of such elements. The imaginary part of each of the four therefore **vanishes identically on $\mathbb{M}_+$**, and every form is a real symmetric bilinear form in four real variables, recovered from its own diagonal. There is no second, independent pairing on the sector; its whole pairing structure is one symmetric form per form.
+**Every form is real on the sector, so each is its own real part.** An element of $\mathbb{M}_+$ is $a_te_t + i\vec p$ with $a_t$ and $\vec p$ real, and each of the four forms takes real values on a pair of such elements. The imaginary part of each of the four therefore **vanishes identically on $\mathbb{M}_+$**, and every form is a real symmetric bilinear form in four real variables, recovered from its own diagonal. There is no second, independent pairing on the sector; its whole pairing structure is one symmetric form per form.
 
-**The four forms collapse in pairs, and the defining involution is the reason.** With $\tilde P = c_0e_0 + i\vec q$ and $\tilde Q = a_0e_0 + i\vec p$,
+**The four forms collapse in pairs, and the defining involution is the reason.** With $\tilde P = c_te_t + i\vec q$ and $\tilde Q = a_te_t + i\vec p$,
 
 $$
-\langle\tilde P,\tilde Q\rangle_{*} = a_0c_0 + (\vec p,\vec q), \qquad
-\langle\tilde P,\tilde Q\rangle_{\natural} = \langle\tilde P,\tilde Q\rangle_{\natural*} = a_0c_0 - (\vec p,\vec q).
+\langle\tilde P,\tilde Q\rangle_{*} = a_tc_t + (\vec p,\vec q), \qquad
+\langle\tilde P,\tilde Q\rangle_{\natural} = \langle\tilde P,\tilde Q\rangle_{\natural*} = a_tc_t - (\vec p,\vec q).
 $$
 
 The first pair is the positive definite form of signature $(4,0)$, the Euclidean square; the second is indefinite of signature $(1,3)$, its one positive direction being the temporal one, and its null cone the sector's light cone. The reason for the collapse is the definition of the sector and nothing else: $\mathbb{M}_+$ is the fixed space of the Hermitian conjugation, so $\tilde Q^{*} = \tilde Q$ on it, and the star being the identity in the second slot is exactly what makes the general plain sesquilinear form equal the general plain bilinear one. This is why the Born pairing of this article needs no second slot on the sector.
@@ -307,7 +307,7 @@ Eight statements of the sections above are not properties of the vector space $\
 
 **2. The form makes the algebra a Hilbert space.** The form $\mathrm{Sc}(\tilde R^{*}\tilde S)$ of §*The Hermitian Forms* is positive definite, of signature $(8,0)$ on the real space $\mathbb{B}\cong\mathbb{R}^8$, so $\mathbb{B}$ is a finite-dimensional Hilbert space, the trace formula is continuous in its norm, and the topology the physics uses is the Euclidean one. The completion of the sesqualgebra with respect to that norm is a later and separate construction; nothing above needs it. *The Euclidean Topology of the Biquaternion Algebra*; *The Completion of a Sesqualgebra with a Form*.
 
-**3. The level sets are the groups the physics uses.** Each of the four forms singles out a level set, and the physics reads three of them. The level set of the unit form, $Q^{*}Q=e_0$, is the unitary slice $U(\mathbb{B})\cong U(2)$, the internal unitary group of the evolution. The level set of the norm form, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is the norm-one group $\mathbb{B}^{\times}_{1}$, the Lorentz rotors. The Euclidean sphere $S^{7}$, the level set of the general plain sesquilinear form, is **not** used, and the reason is that the general plain bilinear form is not multiplicative: the witness is the element $e_1+ie_2$, whose Euclidean norm is $\sqrt2$ while $\sum_\mu Q_\mu^{2}=0$, so the sphere contains zero divisors and is not a group at all. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *The Euclidean Topology of the Biquaternion Algebra*.
+**3. The level sets are the groups the physics uses.** Each of the four forms singles out a level set, and the physics reads three of them. The level set of the unit form, $Q^{*}Q=e_t$, is the unitary slice $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$, the internal unitary group of the evolution. The level set of the norm form, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is the norm-one group $\mathbb{B}^{\times}_{1}$, the Lorentz rotors. The Euclidean sphere $S^{7}$, the level set of the general plain sesquilinear form, is **not** used, and the reason is that the general plain bilinear form is not multiplicative: the witness is the element $\vec e_x+i\vec e_y$, whose Euclidean norm is $\sqrt2$ while $\sum_\mu Q_\mu^{2}=0$, so the sphere contains zero divisors and is not a group at all. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *The Euclidean Topology of the Biquaternion Algebra*.
 
 **4. The operator dictionary is the adjointness dictionary.** The observables are the self-adjoint operators and they are exactly $\mathbb{M}_+$: each is the reading $L_{\tilde H}$, $\tilde H\in\mathbb{M}_+$, whose eigenvalues are the real numbers a measurement returns, and each Hermitian element is the representative $\tilde H=iA$ of a **material element** $A\in\mathbb{M}_-$, which is what is observed. Generators are the skew-adjoint elements, that is $\mathbb{M}_-$; unitaries are the slice of the first item above. This is why the series of mathematical articles is titled "with Hermitian Adjoint": the physical roles are read from the adjoint of one element and nothing else. *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 
@@ -317,35 +317,35 @@ Eight statements of the sections above are not properties of the vector space $\
 
 The **material element** is the object observed; the projector in $\mathbb{M}_+$ is the outcome. The measurement pairs them through the central $i$.
 
-**7. Two pairings, because one of them is not Hermitian.** The Lorentzian interval on $\mathbb{M}_-$ is the quaternion **bilinear** form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, the second slot without the star, of signature $(-,+,+,+)$ on the four real directions $ict\,e_0,\vec x$. It is excluded from the Witt classification of Hermitian forms for exactly one reason: it is not Hermitian for the dagger, being complex-valued, indefinite and isotropic on the null cone, and the two types of form must not be placed in the same classification. The framework therefore needs two pairings and not one — $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ for probability, $\langle\cdot\rangle_{\natural}$ for the metric — and on each sector the two agree up to sign, $\langle\tilde P,\tilde Q\rangle_{*}=\pm\langle\tilde P,\tilde Q\rangle$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\pm\langle\tilde P,\tilde Q\rangle_{\natural}$, with $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint*.
+**7. Two pairings, because one of them is not Hermitian.** The Lorentzian interval on $\mathbb{M}_-$ is the quaternion **bilinear** form $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, the second slot without the star, of signature $(-,+,+,+)$ on the four real directions $ict\,e_t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. It is excluded from the Witt classification of Hermitian forms for exactly one reason: it is not Hermitian for the dagger, being complex-valued, indefinite and isotropic on the null cone, and the two types of form must not be placed in the same classification. The framework therefore needs two pairings and not one — $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ for probability, $\langle\cdot\rangle_{\natural}$ for the metric — and on each sector the two agree up to sign, $\langle\tilde P,\tilde Q\rangle_{*}=\pm\langle\tilde P,\tilde Q\rangle$ and $\langle\tilde P,\tilde Q\rangle_{\natural*}=\pm\langle\tilde P,\tilde Q\rangle_{\natural}$, with $+$ on $\mathbb{M}_+$ and $-$ on $\mathbb{M}_-$. *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; *Hermitian Forms over the Biquaternioid Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 
-**8. The two pairings have no alternating companion on the sector.** §*The Four Forms on the Sector, and the Absence of an Area Pairing*: the four forms restricted to $\mathbb{M}_+$ are real-valued, so their imaginary parts vanish and the sector carries no alternating companion and no conjugate pair of its own, since $i\mathbb{M}_+=\mathbb{M}_-$; every canonical pair of the framework has one leg in each sector, the two times $e_0$ and $ie_0$ in the complex time sector and the three spatial pairs $(e_k,ie_k)$ in the complex space sector (*Other Remarkable Subspaces*). The statement is a property of the restriction of a form to a subspace and of where the multiplication by the central imaginary closes, and it is owned, for the remarkable subspaces at once, by *Remarkable Subspaces and the Four Forms* — with the four forms themselves, their two slots and their four names in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and the convention of the four pairings in *Conventions in the Biquaternion Universe*.
+**8. The two pairings have no alternating companion on the sector.** §*The Four Forms on the Sector, and the Absence of an Area Pairing*: the four forms restricted to $\mathbb{M}_+$ are real-valued, so their imaginary parts vanish and the sector carries no alternating companion and no conjugate pair of its own, since $i\mathbb{M}_+=\mathbb{M}_-$; every canonical pair of the framework has one leg in each sector, the two times $e_t$ and $ie_t$ in the complex time sector and the three spatial pairs $(\vec e_k,i\vec e_k)$ in the complex space sector (*Other Remarkable Subspaces*). The statement is a property of the restriction of a form to a subspace and of where the multiplication by the central imaginary closes, and it is owned, for the remarkable subspaces at once, by *Remarkable Subspaces and the Four Forms* — with the four forms themselves, their two slots and their four names in *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and the convention of the four pairings in *Conventions in the Biquaternion Universe*.
 
 ### The Spectral Decomposition
 
-Every Hermitian element has a spectrum read off in closed form. Write $\tilde{Q} = h_0e_0 + i\vec h$ with $h_0$ real and $\vec h$ a real vector, and let $\vec u_h = \vec h/|\vec h|$ for $\vec h\neq0$. Then
+Every Hermitian element has a spectrum read off in closed form. Write $\tilde{Q} = h_te_t + i\vec h$ with $h_t$ real and $\vec h$ a real vector, and let $\vec u_h = \vec h/|\vec h|$ for $\vec h\neq0$. Then
 
 $$
-\tilde{Q} = \left(h_0 + |\vec h|\right)\tilde\Pi_1(\vec u_h) + \left(h_0 - |\vec h|\right)\tilde\Pi_2(\vec u_h),
+\tilde{Q} = \left(h_t + |\vec h|\right)\tilde\Pi_1(\vec u_h) + \left(h_t - |\vec h|\right)\tilde\Pi_2(\vec u_h),
 $$
 
 with the two idempotents of §*The Idempotents* along the axis $\vec u_h$. The two coefficients are the **eigenvalues**,
 
 $$
-\lambda_\pm = h_0 \pm |\vec h|,
+\lambda_\pm = h_t \pm |\vec h|,
 $$
 
-real, and the two idempotents are the **eigenprojectors**, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_0$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_0$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read
+real, and the two idempotents are the **eigenprojectors**, $\tilde{Q}\tilde\Pi_{1,2} = \lambda_\pm\tilde\Pi_{1,2}$. Because $\tilde\Pi_1 + \tilde\Pi_2 = e_t$ and $\tilde\Pi_1\tilde\Pi_2 = 0$, the pair is a resolution of the identity, and the formula is a genuine spectral decomposition: every Hermitian element of $\mathbb{M}_+$ is a real combination of two orthogonal idempotents, and the decomposition degenerates to $h_t$ alone exactly when $\vec h = 0$. The trace and the biquaternion norm read
 
 $$
-\mathrm{Tr}(\tilde{Q}) = 2h_0 = \lambda_+ + \lambda_-, \qquad \langle\tilde{Q}\rangle_{\natural} = h_0^2 - |\vec h|^2 = \lambda_+\lambda_-,
+\mathrm{Tr}(\tilde{Q}) = 2h_t = \lambda_+ + \lambda_-, \qquad \langle\tilde{Q}\rangle_{\natural} = h_t^2 - |\vec h|^2 = \lambda_+\lambda_-,
 $$
 
-so the norm is **indefinite**: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogous form $\mathrm{Tr}(H^2)$ is a sum of squares. Here positivity is a statement about the **eigenvalues** $h_0 \pm |\vec h|$, not about the biquaternion norm.
+so the norm is **indefinite**: it is negative exactly when the two eigenvalues have opposite signs. This is the difference from the ordinary Hermitian matrix case, where the analogous form $\mathrm{Tr}(H^2)$ is a sum of squares. Here positivity is a statement about the **eigenvalues** $h_t \pm |\vec h|$, not about the biquaternion norm.
 
 ### The Positive Cone and the Bloch Ball
 
-An element $\tilde{Q} \in \mathbb{M}_+$ is **positive** when it is $\tilde{R}^{*}\tilde{R}$ for some $\tilde{R}$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_0 \geq |\vec h|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the **trace-one slice**: with $\tilde\rho = \tfrac{1}{2}(e_0 + i\vec r)$ one has $\mathrm{Tr}(\tilde\rho) = 1$, and writing $\vec r = r\vec u$ the spectral decomposition gives
+An element $\tilde{Q} \in \mathbb{M}_+$ is **positive** when it is $\tilde{R}^{*}\tilde{R}$ for some $\tilde{R}$, equivalently when its spectrum lies in $[0,\infty)$, equivalently, by the decomposition above, when $h_t \geq |\vec h|$. The positive elements form a cone with apex at the origin, and its interior is the set of Hermitian elements with strictly positive spectrum. The one-parameter family through the identity is the **trace-one slice**: with $\tilde\rho = \tfrac{1}{2}(e_t + i\vec r)$ one has $\mathrm{Tr}(\tilde\rho) = 1$, and writing $\vec r = r\vec u$ the spectral decomposition gives
 
 $$
 \tilde\rho = \frac{1+r}{2}\,\tilde\Pi_1(\vec u) + \frac{1-r}{2}\,\tilde\Pi_2(\vec u),
@@ -354,7 +354,7 @@ $$
 so **$\tilde\rho$ is positive exactly when $|\vec r| \leq 1$**. This is an iff, and its two ends are the two ends of the ball:
 
 - $|\vec r| = 1$: one eigenvalue is $1$ and the other $0$, the element is an idempotent $\tilde\Pi_{1,2}(\vec u)$, a **pure state**; these points are the two-sphere of §*The Idempotents*.
-- $|\vec r| = 0$: $\tilde\rho = \tfrac{1}{2}e_0$, the **maximally mixed** state.
+- $|\vec r| = 0$: $\tilde\rho = \tfrac{1}{2}e_t$, the **maximally mixed** state.
 
 The intermediate values $0 < |\vec r| < 1$ are the **mixed states**, and the whole set is the **Bloch ball**, the unit ball of the three-dimensional real vector part. The convexity is manifest in the formula: $\tilde\rho$ is a convex combination of two orthogonal idempotents with weights $(1\pm r)/2$, which sum to $1$. The pure states form the boundary sphere and the mixed states the interior, so that a state is pure exactly when it is idempotent — the two notions coincide in the sector and nowhere else. Because $\mathbb{M}_+$ is a real vector space of dimension $4$ and the trace-one condition is one real equation, the state space is three-dimensional, as it must be for a two-state system.
 
@@ -364,12 +364,12 @@ One structural fact joins the ball to the material sector and is stated here rat
 
 ### States, Effects and Observables
 
-The four families that live in the sector are nested, and each is carved out by the conditions imposed on the element, not by a single mark. With the general element $\tilde{Q} = h_0e_0 + i\vec h$ of §*The Spectral Decomposition*, so that $\mathrm{Tr}(\tilde{Q}) = 2h_0$ and the eigenvalues are $h_0 \pm |\vec h|$:
+The four families that live in the sector are nested, and each is carved out by the conditions imposed on the element, not by a single mark. With the general element $\tilde{Q} = h_te_t + i\vec h$ of §*The Spectral Decomposition*, so that $\mathrm{Tr}(\tilde{Q}) = 2h_t$ and the eigenvalues are $h_t \pm |\vec h|$:
 
 | Family | Condition | Shape |
 |---|---|---|
 | Observables | $\tilde{Q} \in \mathbb{M}_+$, no further condition | the whole sector, real dimension four |
-| Effects | $0 \leq \tilde{Q} \leq e_0$, that is $\lvert h_0 - \tfrac12\rvert + \lvert\vec h\rvert \leq \tfrac12$, equivalently $\lvert\vec h\rvert \leq \min(h_0, 1-h_0)$ | the operator interval (effect body) |
+| Effects | $0 \leq \tilde{Q} \leq e_t$, that is $\lvert h_t - \tfrac12\rvert + \lvert\vec h\rvert \leq \tfrac12$, equivalently $\lvert\vec h\rvert \leq \min(h_t, 1-h_t)$ | the operator interval (effect body) |
 | States | $\mathrm{Tr}(\tilde{Q}) = 1$ and $\tilde{Q} \geq 0$ | the Bloch ball, $\lvert\vec h\rvert \leq \tfrac12$ |
 | Pure states | $\mathrm{Tr}(\tilde{Q}) = 1$ and $\langle\tilde{Q}\rangle_{\natural} = 0$ | the Bloch sphere, $\lvert\vec h\rvert = \tfrac12$ |
 
@@ -379,7 +379,7 @@ $$
 \text{pure states} \subsetneq \text{states} \subsetneq \text{effects} \subsetneq \text{observables}.
 $$
 
-Neither condition separates the families on its own. The trace alone does not: a Hermitian element of trace one whose spectrum straddles zero is not a state. The positivity alone does not either: $2e_0$ is positive and is not a state. **Idempotency marks the boundary and nothing else.** The Hermitian idempotents of the sector are $0$, $e_0$, and the $\tilde\Pi_{1,2}(\vec u)$ of the sphere (§*The Idempotents*), and of these exactly the last have trace one; the condition $\tilde\Pi^{2} = \tilde\Pi$ therefore singles out the **pure** states among the elements of trace one, and a general observable is not idempotent. A state is told from an observable by its trace and its positivity, not by any idempotency, and the idempotency separates the pure from the mixed within the states.
+Neither condition separates the families on its own. The trace alone does not: a Hermitian element of trace one whose spectrum straddles zero is not a state. The positivity alone does not either: $2e_t$ is positive and is not a state. **Idempotency marks the boundary and nothing else.** The Hermitian idempotents of the sector are $0$, $e_t$, and the $\tilde\Pi_{1,2}(\vec u)$ of the sphere (§*The Idempotents*), and of these exactly the last have trace one; the condition $\tilde\Pi^{2} = \tilde\Pi$ therefore singles out the **pure** states among the elements of trace one, and a general observable is not idempotent. A state is told from an observable by its trace and its positivity, not by any idempotency, and the idempotency separates the pure from the mixed within the states.
 
 **The separator the sector supplies is the biquaternion norm.** On the trace-one slice the positivity is the condition $\langle\tilde{Q}\rangle_{\natural} \geq 0$, since $\langle\tilde\rho\rangle_{\natural} = \tfrac14(1-r^{2})$ of §*The Positive Cone and the Bloch Ball*, so
 
@@ -398,13 +398,13 @@ The two sectors are not closed under the product in a haphazard way; the antisym
 | commutator $[\tilde{Q},\tilde{R}]$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 | anticommutator $\{\tilde{Q},\tilde{R}\}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
 
-In coordinates the rule is transparent. For two Hermitian elements $\tilde{Q} = q_0e_0 + i\vec q_a$ and $\tilde{R} = r_0e_0 + i\vec v$ the product rule of §*Definition and Basis* gives
+In coordinates the rule is transparent. For two Hermitian elements $\tilde{Q} = q_te_t + i\vec q_a$ and $\tilde{R} = r_te_t + i\vec v$ the product rule of §*Definition and Basis* gives
 
 $$
-[\tilde{Q},\tilde{R}] = -2\,\vec q_a\times\vec v \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} = 2\left(q_0r_0 + (\vec q_a,\vec v)\right)e_0 + 2i\left(q_0\vec v + r_0\vec q_a\right) \in \mathbb{M}_+,
+[\tilde{Q},\tilde{R}] = -2\,\vec q_a\times\vec v \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} = 2\left(q_tr_t + (\vec q_a,\vec v)\right)e_t + 2i\left(q_t\vec v + r_t\vec q_a\right) \in \mathbb{M}_+,
 $$
 
-and for two anti-Hermitian elements $\tilde{Q} = iq'_0e_0 + \vec q$, $\tilde{R} = ir'_0e_0 + \vec r$ the same computation gives
+and for two anti-Hermitian elements $\tilde{Q} = iq'_te_t + \vec q$, $\tilde{R} = ir'_te_t + \vec r$ the same computation gives
 
 $$
 [\tilde{Q},\tilde{R}] = 2\,\vec q\times\vec r \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{R}\} \in \mathbb{M}_+.
@@ -426,16 +426,16 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | State space $\mathbb{C}^2$ | Spinor module of $\mathbb{B}$ |
 | Basis of the state space | $\{\tilde{\Pi}_+,\tilde{T}\}$: one idempotent and one nilpotent, Gram matrix $\tfrac{1}{2}I_2$ |
 | Density matrix $\rho$ (Hermitian, positive, trace 1) | Element $\tilde{\rho} \in \mathbb{M}_+$ (Hermitian, positive, trace 1) |
-| Pure state $\lvert\psi\rangle\langle\psi\rvert$ | Idempotent $\tfrac{1}{2}(e_0 + i\vec u)$ |
+| Pure state $\lvert\psi\rangle\langle\psi\rvert$ | Idempotent $\tfrac{1}{2}(e_t + i\vec u)$ |
 | Observable (Hermitian operator) | Hermitian element $\tilde{Q} \in \mathbb{M}_+$ |
-| Unitary gate $U$ | **Matrix-unitary** element $\tilde{U}$, $\tilde{U}\tilde{U}^{*} = e_0$: a rotation rotor up to a central phase, the $U(2)$ of the framework, whose effective action on the Bloch ball is $SO(3)$. The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_0$ of $SL(2,\mathbb{C})$ is a different one and also carries the boosts, which are Hermitian and not unitary |
+| Unitary gate $U$ | **Matrix-unitary** element $\tilde{U}$, $\tilde{U}\tilde{U}^{*} = e_t$: a rotation rotor up to a central phase, the $\mathrm{U}(2)$ of the framework, whose effective action on the Bloch ball is $SO(3)$. The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_t$ of $SL(2,\mathbb{C})$ is a different one and also carries the boosts, which are Hermitian and not unitary |
 | Expectation value $\mathrm{Tr}(\rho H)$ | Trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{Q})$ |
 | Reversible evolution $U\rho U^\dagger$ | Rotor conjugation $\tilde{U}\tilde{\rho}\tilde{U}^{*}$ |
 | Projective measurement $\rho \mapsto P\rho P$ | Idempotent projection $\tilde{\rho} \mapsto \tilde\Pi\tilde{\rho}\tilde\Pi$ |
 
 The correspondence is not an analogy. **It is the same mathematics**, expressed in two different notations: the Hermitian elements of the algebra are the operators of a two-state system.
 
-The state space in the right-hand column is the spinor module $S=\mathbb{B}\tilde{\Pi}_+=\mathbb{C}\{\tilde{\Pi}_+,\tilde{T}\}$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, spanned by the idempotent $\tilde{\Pi}_+=\tfrac12(e_0+ie_3)$ and the **nilpotent** $\tilde{T}=\tfrac12(ie_1+e_2)$. The distinction of the two is what the table means by a basis: $\tilde{\Pi}_+^{2}=\tilde{\Pi}_+$, while $\tilde{T}^{2}=0$ and $\tilde{T}^{*}=\tfrac12(ie_1-e_2)\neq\tilde{T}$, so $\tilde{T}$ is **not** a state — it is the off-diagonal half of the Peirce decomposition. A general spinor is the pair $s_1\tilde{\Pi}_++s_2\tilde{T}$ of complex coefficients, the Born pairing restricted to the module has Gram matrix $\tfrac12 I_2$, and $\langle\psi,\psi\rangle_{*}=\tfrac12(\lvert s_1\rvert^{2}+\lvert s_2\rvert^{2})$ is positive definite. The two states of the two-state system are carried by the two **coefficients**, as in $\mathbb{C}^2$, and not by the two basis elements; the module is a genuine Hilbert space, and not the isotropic module that a general Clifford algebra can present. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+The state space in the right-hand column is the spinor module $S=\mathbb{B}\tilde{\Pi}_+=\mathbb{C}\{\tilde{\Pi}_+,\tilde{T}\}$ of *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, spanned by the idempotent $\tilde{\Pi}_+=\tfrac12(e_t+i\vec e_z)$ and the **nilpotent** $\tilde{T}=\tfrac12(i\vec e_x+\vec e_y)$. The distinction of the two is what the table means by a basis: $\tilde{\Pi}_+^{2}=\tilde{\Pi}_+$, while $\tilde{T}^{2}=0$ and $\tilde{T}^{*}=\tfrac12(i\vec e_x-\vec e_y)\neq\tilde{T}$, so $\tilde{T}$ is **not** a state — it is the off-diagonal half of the Peirce decomposition. A general spinor is the pair $s_1\tilde{\Pi}_++s_2\tilde{T}$ of complex coefficients, the Born pairing restricted to the module has Gram matrix $\tfrac12 I_2$, and $\langle\psi,\psi\rangle_{*}=\tfrac12(\lvert s_1\rvert^{2}+\lvert s_2\rvert^{2})$ is positive definite. The two states of the two-state system are carried by the two **coefficients**, as in $\mathbb{C}^2$, and not by the two basis elements; the module is a genuine Hilbert space, and not the isotropic module that a general Clifford algebra can present. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 ### What the Correspondence Is and Is Not
 
@@ -453,7 +453,7 @@ The correspondence with quantum information is closely related to the **spin-1/2
 The difference is:
 
 - In spin-1/2, the operators generate the **compact** group $SU(2)$ (rotations).
-- In $\mathbb{M}_+$, the Hermitian elements are a **real four-dimensional space and not a group**: exponentiated, the traceless ones $i\vec h$ with $\vec h$ real give the **non-compact** boosts of $SL(2,\mathbb{C})$, and the central one $h_0e_0$ gives a dilation, $\exp(h_0)e_0$, which is not of unit norm. Their products with the rotation rotors — the unit-norm elements $\exp(\theta\vec u)$, whose generators $\vec u$ are anti-Hermitian — generate all of $SL(2,\mathbb{C})$.
+- In $\mathbb{M}_+$, the Hermitian elements are a **real four-dimensional space and not a group**: exponentiated, the traceless ones $i\vec h$ with $\vec h$ real give the **non-compact** boosts of $SL(2,\mathbb{C})$, and the central one $h_te_t$ gives a dilation, $\exp(h_t)e_t$, which is not of unit norm. Their products with the rotation rotors — the unit-norm elements $\exp(\theta\vec u)$, whose generators $\vec u$ are anti-Hermitian — generate all of $SL(2,\mathbb{C})$.
 
 The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the observables include the boost generators $i\vec h$ alongside the rotation generators, so the group they act in is the Lorentz group rather than the rotation group.
 
@@ -472,10 +472,10 @@ The companion articles already contain several distinguished elements of $\mathb
 The **boost biquaternion**
 
 $$
-\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_0,
+\tilde{U} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_{\mathrm b}, \qquad \vec u_{\mathrm b}^2 = -e_t,
 $$
 
-lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde{U}^{*} = \tilde{U}$) and has unit norm ($\tilde{U}\tilde{U}^{\natural} = e_0$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
+lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\vec u_{\mathrm b}$ is purely imaginary. It is Hermitian ($\tilde{U}^{*} = \tilde{U}$) and has unit norm ($\tilde{U}\tilde{U}^{\natural} = e_t$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.
 
 The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the **prototype** of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{U} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$. For pure boosts, $\tilde{U}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{U}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{U}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.
 
@@ -484,7 +484,7 @@ The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is t
 The **idempotents** of $\mathbb{B}$ of the form
 
 $$
-\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_0 \pm i\vec u\right), \qquad \vec u^2 = -e_0, \; \vec u \text{ a real unit pure quaternion},
+\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\vec u\right), \qquad \vec u^2 = -e_t, \; \vec u \text{ a real unit pure quaternion},
 $$
 
 lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vector part $\pm \tfrac{1}{2} i \vec u$ is purely imaginary. They satisfy:
@@ -498,32 +498,32 @@ These are the biquaternion analogues of **pure-state density matrices** of quant
 **Why they are idempotent.** The single fact behind the whole family is the sign
 
 $$
-(i\vec u)^2 = i^2\,\vec u^2 = (-1)(-e_0) = +e_0,
+(i\vec u)^2 = i^2\,\vec u^2 = (-1)(-e_t) = +e_t,
 $$
 
-which is the opposite of the material sector's $\vec q^2 = -|\vec q|^2e_0$ for a real vector $\vec q$. With it,
+which is the opposite of the material sector's $\vec q^2 = -|\vec q|^2e_t$ for a real vector $\vec q$. With it,
 
 $$
-\tilde\Pi_{1,2}^2 = \tfrac{1}{4}\left(e_0 \pm 2i\vec u + (i\vec u)^2\right) = \tfrac{1}{4}\left(e_0 \pm 2i\vec u + e_0\right) = \tilde\Pi_{1,2} .
+\tilde\Pi_{1,2}^2 = \tfrac{1}{4}\left(e_t \pm 2i\vec u + (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t \pm 2i\vec u + e_t\right) = \tilde\Pi_{1,2} .
 $$
 
-The two minus signs cancel: the minus from $i^2$ and the minus from the square of a real vector. In the material sector there is only the second of them, so the corresponding combination is not idempotent — $\tfrac{1}{2}(e_0 + \vec q)$ fails, and indeed $\mathbb{M}_-$ contains no nontrivial idempotent at all. This one sign is why the idempotents, the positive cone and the spectral decomposition all live in $\mathbb{M}_+$ and not in $\mathbb{M}_-$.
+The two minus signs cancel: the minus from $i^2$ and the minus from the square of a real vector. In the material sector there is only the second of them, so the corresponding combination is not idempotent — $\tfrac{1}{2}(e_t + \vec q)$ fails, and indeed $\mathbb{M}_-$ contains no nontrivial idempotent at all. This one sign is why the idempotents, the positive cone and the spectral decomposition all live in $\mathbb{M}_+$ and not in $\mathbb{M}_-$.
 
 **Orthogonality and completeness.** The two idempotents along one axis are complementary and orthogonal,
 
 $$
-\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u) = e_0, \qquad \tilde\Pi_1(\vec u)\,\tilde\Pi_2(\vec u) = \tilde\Pi_2\tilde\Pi_1 = 0,
+\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u) = e_t, \qquad \tilde\Pi_1(\vec u)\,\tilde\Pi_2(\vec u) = \tilde\Pi_2\tilde\Pi_1 = 0,
 $$
 
-because $\tfrac{1}{4}\left(e_0 + i\vec u\right)\left(e_0 - i\vec u\right) = \tfrac{1}{4}\left(e_0 - (i\vec u)^2\right) = 0$. The pair is a **complete orthogonal pair**, a frame of the algebra, and it is what the spectral decomposition of §*The Spectral Decomposition* is written in.
+because $\tfrac{1}{4}\left(e_t + i\vec u\right)\left(e_t - i\vec u\right) = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = 0$. The pair is a **complete orthogonal pair**, a frame of the algebra, and it is what the spectral decomposition of §*The Spectral Decomposition* is written in.
 
 **Every pure state is a zero divisor.** The biquaternion norm of the idempotent vanishes identically on the sphere,
 
 $$
-N\!\left(\tilde\Pi_{1,2}(\vec u)\right) = \tfrac{1}{4}\left(e_0 - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_0 - e_0\right) = 0,
+N\!\left(\tilde\Pi_{1,2}(\vec u)\right) = \tfrac{1}{4}\left(e_t - (i\vec u)^2\right) = \tfrac{1}{4}\left(e_t - e_t\right) = 0,
 $$
 
-as the product $\tilde\Pi_1\tilde\Pi_2 = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $\langle\tilde\rho\rangle_{\natural} = \tfrac{1}{4}(1 - r^2)$ for $\tilde\rho = \tfrac{1}{2}(e_0 + i\vec r)$.
+as the product $\tilde\Pi_1\tilde\Pi_2 = 0$ already witnesses with both factors nonzero. So the pure states sit on the zero-divisor cone, while a general mixed state does not: the norm is $\langle\tilde\rho\rangle_{\natural} = \tfrac{1}{4}(1 - r^2)$ for $\tilde\rho = \tfrac{1}{2}(e_t + i\vec r)$.
 
 ### The Hermitian Forms
 
@@ -538,17 +538,17 @@ The Hermitian form is the natural "weight" or "energy" of the element $\tilde{Q}
 
 ### The Identity
 
-The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial state or the identity operator.
+The identity $e_t$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial state or the identity operator.
 
 ### Summary of the Elements of $\mathbb{M}_+$
 
 | Object | Structure | Role |
 |---|---|---|
-| Identity $e_0$ | Real scalar | Identity operator |
+| Identity $e_t$ | Real scalar | Identity operator |
 | Boost biquaternion $\tilde{U}$ | Hermitian, unit norm | Lorentz boost rotor |
 | Idempotent $\tilde\Pi_{1,2}(\vec u)$ | Hermitian, idempotent, trace 1 | Pure state / projector |
-| Mixed state $\tilde\rho = \tfrac{1}{2}(e_0 + i\vec r)$, $|\vec r| \leq 1$ | Hermitian, positive, trace 1 | Density matrix (Bloch ball) |
-| Observable $\tilde{Q} = h_0e_0 + i\vec h$ | Hermitian, eigenvalues $h_0 \pm |\vec h|$ | Observable with spectral decomposition |
+| Mixed state $\tilde\rho = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$ | Hermitian, positive, trace 1 | Density matrix (Bloch ball) |
+| Observable $\tilde{Q} = h_te_t + i\vec h$ | Hermitian, eigenvalues $h_t \pm |\vec h|$ | Observable with spectral decomposition |
 | Hermitian form $\tilde{Q}\tilde{Q}^{*}$ | Hermitian, positive scalar part | Weight of an element |
 
 The common feature of these objects is that they are **Hermitian** (fixed under ${}^{*}$). This is what defines membership in $\mathbb{M}_+$.
@@ -561,11 +561,11 @@ Two further readings of the state space can be named. Read as **quantum logic**,
 
 ## Summary
 
-The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.
+The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its biquaternion norm has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$, and the Hermitian forms $\tilde{Q}\tilde{Q}^{*}$.
 
-The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between the norm-preserving rotors and the idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement — the reversible class being narrowed to the matrix-unitary elements when the action is on states — the idempotent end being the decoherence of a measurement and the minimal idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ the vacuum of a single fermionic mode.
+The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$. The action is linear, preserves $\mathbb{M}_-$, and preserves the biquaternion norm when $\tilde{Q}_+$ has unit norm. The natural dichotomy between the norm-preserving rotors and the idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement — the reversible class being narrowed to the matrix-unitary elements when the action is on states — the idempotent end being the decoherence of a measurement and the minimal idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ the vacuum of a single fermionic mode.
 
-Two further structures are carried by the sector and are developed above. Every Hermitian element has a **spectral decomposition** $\tilde{Q} = (h_0 + |\vec h|)\tilde\Pi_1(\vec u_h) + (h_0 - |\vec h|)\tilde\Pi_2(\vec u_h)$ into two orthogonal idempotents, with real eigenvalues $h_0 \pm |\vec h|$, and the **positive elements** are those with $h_0 \geq |\vec h|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_0 + i\vec r)$ with $|\vec r| \leq 1$, the **Bloch ball**: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\vec u)^2 = +e_0$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.
+Two further structures are carried by the sector and are developed above. Every Hermitian element has a **spectral decomposition** $\tilde{Q} = (h_t + |\vec h|)\tilde\Pi_1(\vec u_h) + (h_t - |\vec h|)\tilde\Pi_2(\vec u_h)$ into two orthogonal idempotents, with real eigenvalues $h_t \pm |\vec h|$, and the **positive elements** are those with $h_t \geq |\vec h|$. On the trace-one slice the positive elements are exactly the $\tilde\rho = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, the **Bloch ball**: the boundary sphere is the pure states, the interior the mixed states, and the centre the maximally mixed state. The whole family rests on one sign, $(i\vec u)^2 = +e_t$, which is what makes a Hermitian vector square to $+1$ and the corresponding combination idempotent.
 
 The product of two elements of one sector is governed by a single rule: the two brackets always land in **opposite** sectors — on two elements of one sector the **commutator** lands in $\mathbb{M}_-$ and the **anticommutator** in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — since ${}^{*}$ is an anti-automorphism. $\mathbb{M}_+$ is therefore a Jordan algebra for the anticommutator and $\mathbb{M}_-$ a Lie algebra for the commutator, and neither sector is closed under the other bracket. The square of an element of either sector always lies in $\mathbb{M}_+$, which is why a square can never witness the failure of closure.
 
@@ -580,16 +580,16 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
+| $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector; parameters $q_t, q'_x, q'_y, q'_z$, with $q_t = ct'$ |
 | $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
-| $\tilde{Q} = q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\vec x'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
+| $\tilde{Q} = q_te_t + iq'_k\vec e_k = (ct')\,e_t + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Informational element, both writings; $q_t = ct'$, $q'_k = x'_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{\natural} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{*} = e_0$ | Gate (matrix-unitary element): the reversible evolution of a state |
-| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_0 \pm i\vec u)$ | Idempotent (pure-state projector) of unit trace |
-| $\tilde\rho = \tfrac{1}{2}(e_0 + i\vec r)$, $|\vec r| \leq 1$ | Density matrix (Bloch ball); $\vec r$ the Bloch vector |
-| $\lambda_\pm = h_0 \pm |\vec h|$ | Eigenvalues of the Hermitian element $h_0e_0 + i\vec h$ |
+| $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
+| $\tilde{U} \in \mathbb{B}$, $\tilde{U}\tilde{U}^{*} = e_t$ | Gate (matrix-unitary element): the reversible evolution of a state |
+| $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure-state projector) of unit trace |
+| $\tilde\rho = \tfrac{1}{2}(e_t + i\vec r)$, $|\vec r| \leq 1$ | Density matrix (Bloch ball); $\vec r$ the Bloch vector |
+| $\lambda_\pm = h_t \pm |\vec h|$ | Eigenvalues of the Hermitian element $h_te_t + i\vec h$ |
 | $[\tilde{Q},\tilde{R}]$, $\{\tilde{Q},\tilde{R}\}$ | Commutator and anticommutator; the two always land in opposite sectors — on two elements of one sector the first in $\mathbb{M}_-$ and the second in $\mathbb{M}_+$, exchanged on two elements of different sectors |
 | $\tilde{Q}$ | General Hermitian element (observable) |
 | $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^{*}$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
@@ -611,7 +611,7 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the algebraic structure of the Clifford algebra $\mathrm{Cl}_{1,3}$.
 - Asher Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1993), for the operational interpretation of states, observables, and measurements used here.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{M}_+$ among the remarkable subspaces.
-- Within the corpus, the structures used above are developed for their own sake in *Biquaternion Spectral Theory* (the spectral decomposition and the eigenvalues $Q_0 \pm iB$), *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (the positive cone and the trace-one slice), *Hermitian Idempotents and the Peirce Decomposition* (the idempotents), *The 12 Products of the Biquaternioid Complex Space* (the bracket table, the $\mathbb{Z}/2$-grading of the two sectors and the symmetrised product), and the product rule of the remarkable subspaces is *Remarkable Subspaces and the Four General Products*.
+- Within the corpus, the structures used above are developed for their own sake in *Biquaternion Spectral Theory* (the spectral decomposition and the eigenvalues $Q_t \pm iB$), *Positivity and the Hermitian Cone of the Biquaternioid Algebra with Hermitian Adjoint* (the positive cone and the trace-one slice), *Hermitian Idempotents and the Peirce Decomposition* (the idempotents), *The 12 Products of the Biquaternioid Complex Space* (the bracket table, the $\mathbb{Z}/2$-grading of the two sectors and the symmetrised product), and the product rule of the remarkable subspaces is *Remarkable Subspaces and the Four General Products*.
 - The sesqualgebra side of §*The Sesqualgebra Behind the Reading* is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (the Hilbert–Schmidt pairing) and *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint* (the dagger sandwich of the evolution and the measurement).
 - The forms and the topology of the same section are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (the four forms, their Gram matrices, their signatures, the level sets and the isometry groups) and *Zero Divisors of the General Quaternionic Algebra* (the zero divisors of $\langle\cdot\rangle_{\natural}$).
 - The four forms read on the sector itself — their real and imaginary parts, the collapse of the four into two and the vanishing of the alternating companion — are *Remarkable Subspaces and the Four Forms*; the two sectors on which the alternating companion is instead non-degenerate are *Other Remarkable Subspaces*.

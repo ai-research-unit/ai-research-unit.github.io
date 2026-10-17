@@ -19,7 +19,7 @@ The conventions are those fixed for the category. $K$ is a local field, $c$ is a
 
 **Definition.** Let $(K,c)$ be a local field with involution. A form $h$ is **Hermitian** if $h(x,y)=c(h(y,x))$, and **symmetric** if $c=\mathrm{id}$ and $h(x,y)=h(y,x)$. A Hermitian form over a non-Archimedean $(K,c)$ is **nondegenerate** if its matrix $H$ is invertible.
 
-**Proposition.** The isometry group of a nondegenerate Hermitian form is the unitary group $U(H)=\{g:g^*Hg=H\}$, a closed subgroup of $\mathrm{GL}_n(K)$, compact modulo the scalars when $K$ is non-Archimedean. The forms on $K^n$ correspond to the $c$-Hermitian matrices, and the isometry classes correspond to the orbits of $\mathrm{GL}_n(K)$ acting by $H\mapsto g^*Hg$.
+**Proposition.** The isometry group of a nondegenerate Hermitian form is the unitary group $\mathrm{U}(H)=\{g:g^*Hg=H\}$, a closed subgroup of $\mathrm{GL}_n(K)$, compact modulo the scalars when $K$ is non-Archimedean. The forms on $K^n$ correspond to the $c$-Hermitian matrices, and the isometry classes correspond to the orbits of $\mathrm{GL}_n(K)$ acting by $H\mapsto g^*Hg$.
 
 **Proof.** This is the definition of the isometry group and the change-of-basis formula for the matrix of a form; the compactness statement is the standard property of the unitary groups over a non-Archimedean field, in *Local Fields*.
 
@@ -55,7 +55,7 @@ The conventions are those fixed for the category. $K$ is a local field, $c$ is a
 
 **Example ($K=\mathbb{R}$).** The standard form $x_1^2+\dots+x_p^2-x_{p+1}^2-\dots-x_n^2$ has signature $(p,n-p)$; the isometry group is $O(p,n-p)$.
 
-**Example ($K=\mathbb{C}$, $c$ the conjugation).** The form $\sum|x_i|^2$ has signature $(n,0)$ and isometry group the unitary group $U(n)$; the form $\sum_{i\le p}|x_i|^2-\sum_{i>p}|x_i|^2$ has signature $(p,n-p)$.
+**Example ($K=\mathbb{C}$, $c$ the conjugation).** The form $\sum|x_i|^2$ has signature $(n,0)$ and isometry group the unitary group $\mathrm{U}(n)$; the form $\sum_{i\le p}|x_i|^2-\sum_{i>p}|x_i|^2$ has signature $(p,n-p)$.
 
 **Example ($K=\mathbb{Q}_p$, $c=\mathrm{id}$).** The forms $\langle1,1,\dots,1\rangle$ of rank $r$ have discriminant $1$ and Hasse invariants varying with $r$ and $p$; the form $\langle1,-1\rangle$ is hyperbolic and represents zero.
 
@@ -81,7 +81,7 @@ Over a local field with involution, a Hermitian form is a sesquilinear form equa
 | $\operatorname{disc}(H)=\det H\in K_0^\times/N(K^\times)$ | Discriminant |
 | $s(H)\in\{\pm1\}$ | Hasse invariant |
 | $N$ | Norm of a quadratic extension |
-| $U(H)$ | Isometry group |
+| $\mathrm{U}(H)$ | Isometry group |
 
 ## Further Reading
 

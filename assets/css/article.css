@@ -114,11 +114,16 @@
    `######` of a menu is a title. An article entry is not a heading, it is a
    paragraph whose only element child is the link, so the level is carried by the
    markup itself and the menu needs no `-`, `--` or `---` in the source either.
-   Every band rule is scoped to a menu page by `:has(> h4)`. That test is exact:
-   the menus are the only pages that use the topic-band level — no article and no
-   other root page contains an `h4` — so an article page never matches and its own
-   headings keep their plain style. The invariant to preserve is that the menus
-   are the only pages carrying an `h4`. The deepest a menu reaches is `######`
+   Every band rule is scoped to a menu page by the entry signature,
+   `:has(> p > a:only-child)`: a page is a menu exactly when its body carries an
+   article entry. An `h4` would not do as the test, because a shallow menu can
+   stop at `h3` and carry no `h4` at all — `physics.md` is such a menu, and a
+   test on `h4` left its chapters and categories unbanded. The entry signature
+   is present in every menu and in no article: of the 2,562 built article pages,
+   none has a paragraph whose only element child is a link, so an article page
+   never matches and its own headings keep their plain style. The invariant to
+   preserve is that the menus are the only pages carrying an entry paragraph.
+   The deepest a menu reaches is `######`
    (the Biquaternions → Algebra block of `maths.md`, where a section, the twelve
    structures and their field tags take the last three levels), and no page
    carries a `#######`, which markdown would not render as a heading anyway.
@@ -129,7 +134,7 @@
    outline an h2 and the h3 under it can otherwise read alike, so the chapter
    also takes the largest gap of the four. The menu-only fill replaces the
    bottom rule the generic h2 carries, which would add a second edge below it. */
-.article-body:has(> h4) > h2 {
+.article-body:has(> p > a:only-child) > h2 {
   font-family: var(--font-ui);
   font-size: var(--size-h2);
   font-weight: 700;
@@ -143,7 +148,7 @@
 }
 /* Level 3 — the category band, one notch softer than the chapter: a lighter
    fill, half the bar and a text tone below full black. */
-.article-body:has(> h4) > h3:not(:has(a)) {
+.article-body:has(> p > a:only-child) > h3:not(:has(a)) {
   font-family: var(--font-ui);
   font-size: 1.5rem;
   font-weight: 700;
@@ -157,7 +162,7 @@
 /* Level 4 — the topic band. Same size as the article titles (--size-h3), so it
    is never smaller than the entries it holds. Its fill is a neutral grey, kept
    one notch above the sub-topic tag and below the category band. */
-.article-body:has(> h4) > h4 {
+.article-body:has(> p > a:only-child) > h4 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
@@ -176,7 +181,7 @@
    The square is drawn, not typed: a glyph would be one font away from an emoji
    square, while an empty box of 0.5em takes the exact hue of the topic band's
    bar and needs no fallback. The source keeps the bare title. */
-.article-body:has(> h4) > h5 {
+.article-body:has(> p > a:only-child) > h5 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
@@ -187,7 +192,7 @@
   margin-top: 1.2rem;
   margin-bottom: 0.3rem;
 }
-.article-body:has(> h4) > h5::before {
+.article-body:has(> p > a:only-child) > h5::before {
   content: "";
   display: inline-block;
   width: 0.5em;
@@ -208,7 +213,7 @@
    (--size-h3), the same invariant the two levels above obey, so a label is
    never smaller than the entries it holds. It is a title, not an entry: the
    tone is grey where an entry is accent blue. */
-.article-body:has(> h4) > h6 {
+.article-body:has(> p > a:only-child) > h6 {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 700;
@@ -219,14 +224,14 @@
   margin-top: 0.9rem;
   margin-bottom: 0.2rem;
 }
-.article-body:has(> h4) > h6::before {
+.article-body:has(> p > a:only-child) > h6::before {
   content: "- ";
 }
 /* The article entry. A paragraph whose only element child is the link, so a
    prose paragraph that happens to contain a link is not caught. Size and weight
    are the old entry level (`--size-h3`, weight 600): the entry reads as before,
    it is only no longer a heading. */
-.article-body:has(> h4) > p:has(> a:only-child) {
+.article-body:has(> p > a:only-child) > p:has(> a:only-child) {
   font-family: var(--font-ui);
   font-size: var(--size-h3);
   font-weight: 600;

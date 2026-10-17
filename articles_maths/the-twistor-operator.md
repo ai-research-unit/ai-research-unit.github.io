@@ -143,7 +143,7 @@ a bundle of projective lines with fibre $\mathbb{CP}^1$; a point of $Z(M)$ is a 
 
 ### The Flat Conformal Model
 
-On $\mathbb{R}^n$ with the Euclidean metric the twistor equation reads $\partial_X\sigma+\frac1nX\cdot\sum_ie_i\partial_i\sigma=0$. Taking $\sigma$ constant gives a twistor spinor with $D\sigma=0$; taking $\sigma(x)=x\cdot\eta$ for a constant spinor $\eta$ gives a twistor spinor with $D\sigma=-n\eta$, since $D(x\cdot\eta)=\sum_ie_i\partial_i(x\cdot\eta)=\sum_ie_ie_i\eta=-n\eta$. The space spanned by the constants and these linear fields is of dimension $2\dim\Delta_n$, attained in the flat model, and it is the representation of the conformal group by the twistor distribution.
+On $\mathbb{R}^n$ with the Euclidean metric the twistor equation reads $\partial_X\sigma+\frac1nX\cdot\sum_ie_i\partial/\partial x_i\,\sigma=0$. Taking $\sigma$ constant gives a twistor spinor with $D\sigma=0$; taking $\sigma(x)=x\cdot\eta$ for a constant spinor $\eta$ gives a twistor spinor with $D\sigma=-n\eta$, since $D(x\cdot\eta)=\sum_ie_i\partial/\partial x_i(x\cdot\eta)=\sum_ie_ie_i\eta=-n\eta$. The space spanned by the constants and these linear fields is of dimension $2\dim\Delta_n$, attained in the flat model, and it is the representation of the conformal group by the twistor distribution.
 
 ### The Round Sphere
 

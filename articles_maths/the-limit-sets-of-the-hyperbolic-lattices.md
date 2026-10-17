@@ -8,7 +8,7 @@ The article is careful about one thing from the outset. The hyperboloid lives in
 
 The model, the hyperboloid, the sheet and the boundary are from *Split-Quaternions and Hyperbolic Geometry*; the units, the adjoint action and the Lorentz group are from *Split-Quaternion Rotations and the Lorentz Group*; the group theory of the discrete groups, the limit set and the critical exponent are from *Kleinian and Fuchsian Groups*; the hyperbolic geometry of Part IV is *Hyperbolic Geometry*; the dimension of the limit set of a hyperbolic group is *The Dimension of the Boundary of a Hyperbolic Group*; the Apollonian gasket and the inversions are from *Möbius and Lie Sphere Geometry*; and the dimension itself is *Fractal Geometry*'s. No physics is invoked.
 
-Throughout, $V=\operatorname{span}\{e_1,e_2,e_3\}$, $\langle\cdot\rangle_{\natural}$ is the form of signature $(2,1)$ on $V$, $\langle\cdot,\cdot\rangle_{\natural}$ its polar form, $\mathbb{H}^{+}$ the timelike sheet $\{v\in V: \langle v\rangle_{\natural}=1\}$ of *Split-Quaternions and Hyperbolic Geometry*, and $\partial\mathbb{H}^{+}$ is the boundary, the set of isotropic directions. The group is $\Gamma\subset\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$.
+Throughout, $V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, $\langle\cdot\rangle_{\natural}$ is the form of signature $(2,1)$ on $V$, $\langle\cdot,\cdot\rangle_{\natural}$ its polar form, $\mathbb{H}^{+}$ the timelike sheet $\{v\in V: \langle v\rangle_{\natural}=1\}$ of *Split-Quaternions and Hyperbolic Geometry*, and $\partial\mathbb{H}^{+}$ is the boundary, the set of isotropic directions. The group is $\Gamma\subset\operatorname{PSL}_2(\mathbb{R})\cong\operatorname{SO}^{+}(2,1)$.
 
 ## The Hyperboloid and the Boundary
 
@@ -83,7 +83,7 @@ The split-quaternion units act on the hyperboloid of the three-dimensional vecto
 
 | Symbol | Meaning |
 |---|---|
-| $V=\operatorname{span}\{e_1,e_2,e_3\}$ | The three-dimensional vector subspace |
+| $V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | The three-dimensional vector subspace |
 | $\langle\cdot\rangle_{\natural}$, $B$ | The form of signature $(2,1)$ and its polar form |
 | $\mathbb{H}^{+}=\{v\in V:\langle v\rangle_{\natural}=1\}$ | The timelike sheet, the hyperbolic plane |
 | $\partial\mathbb{H}^{+}$ | The circle at infinity, the isotropic directions |

@@ -12,7 +12,7 @@ $$
 \langle\tilde{K}\rangle_{\natural} = 0 ,
 $$
 
-which is the four-wavevector $\tilde{K} = \frac{i\omega}{c}e_0 + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with rotor $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
+which is the four-wavevector $\tilde{K} = \frac{i\omega}{c}e_t + \vec k$ of the plane-wave exercise written with $\vec k = \frac{\omega}{c}\vec u_k$. The claim is that for a boost with rotor $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ (Hermitian, of unit norm, $w$ the rapidity and $\vec u$ the boost direction) there is a **unit real quaternion** $\tilde{u}$ and a positive scalar $\exp(d)$ for which
 
 $$
 \boxed{\;
@@ -24,7 +24,7 @@ $$
 
 Since $\tilde{u}$ is a real quaternion, $\tilde{u}^{\natural} = \tilde{u}^{-1}$ and the action $\tilde{u}\,\cdot\,\tilde{u}^{\natural}$ is a **rotation of physical space**; the scalar $\exp(d)$ is a dilation. A boost of a wave, then, is not a mixture of three effects but a similarity of Euclidean three-space, the same one acting on the wave element and on the field.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the scalar imaginary $i$ central with $i^2 = -1$. A **real vector** is $\vec v = v_1e_1 + v_2e_2 + v_3e_3$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k = -e_0$. The scalar imaginary multiplies likewise, so $i\vec u_k$ is imaginary-vector. The material sector $\mathbb{M}_-$ carries the four-vectors, the Hermitian sector $\mathbb{M}_+$ carries the boost rotors, and $i\mathbb{M}_+ = \mathbb{M}_-$. The field is taken in vacuum, $c = c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U^{\natural}\tilde{F}\tilde U$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, and the scalar imaginary $i$ central with $i^2 = -1$. A **real vector** is $\vec v = v_1\vec e_x + v_2\vec e_y + v_3\vec e_z$ with the $v_k$ real; the arrow denotes a pure element, so a unit vector is written $\vec u_k$ with $\vec u_k\vec u_k = -e_t$. The scalar imaginary multiplies likewise, so $i\vec u_k$ is imaginary-vector. The material sector $\mathbb{M}_-$ carries the four-vectors, the Hermitian sector $\mathbb{M}_+$ carries the boost rotors, and $i\mathbb{M}_+ = \mathbb{M}_-$. The field is taken in vacuum, $c = c_0$, where the source-free Maxwell system is Lorentz covariant and the field strength transforms in the bivector representation $\tilde{F}\mapsto\tilde U^{\natural}\tilde{F}\tilde U$ (*Exercise: Duality Rotation and the Riemann–Silberstein Vector*, Problem 5); the field-strength normalization cancels from the statement, which is homogeneous in $\tilde{F}$. Throughout, $\vec v$ is reserved for particle and frame velocities.
 
 ## The Null Wave Element and the Pacwoman Property
 
@@ -36,12 +36,12 @@ $$
 \vec u_k\left(i + \vec u_k\right) \;=\; \left(i + \vec u_k\right)\vec u_k \;=\; i\left(i + \vec u_k\right).
 $$
 
-**Proof.** Expanding, $\vec u_k(i + \vec u_k) = i\vec u_k + \vec u_k\vec u_k = i\vec u_k - e_0$ using $\vec u_k\vec u_k = -e_0$ and the centrality of $i$; and $(i + \vec u_k)\vec u_k = i\vec u_k + \vec u_k\vec u_k = i\vec u_k - e_0$. On the other hand $i(i + \vec u_k) = i^2 + i\vec u_k = i\vec u_k - e_0$. The three expressions agree.
+**Proof.** Expanding, $\vec u_k(i + \vec u_k) = i\vec u_k + \vec u_k\vec u_k = i\vec u_k - e_t$ using $\vec u_k\vec u_k = -e_t$ and the centrality of $i$; and $(i + \vec u_k)\vec u_k = i\vec u_k + \vec u_k\vec u_k = i\vec u_k - e_t$. On the other hand $i(i + \vec u_k) = i^2 + i\vec u_k = i\vec u_k - e_t$. The three expressions agree.
 
-The lemma says that right-multiplication by $\vec u_k$ acts on the null element $i+\vec u_k$ exactly as multiplication by the scalar $i$ does. The name records the same statement in the form $k(1+k) = 1+k$ of the source, where $k$ is the null paravector $1+\vec u_k$ of the algebra of physical space; in the series basis the null paravector is the Hermitian element $e_0 + i\vec u_k$ and its gobbling factor is $i\vec u_k$:
+The lemma says that right-multiplication by $\vec u_k$ acts on the null element $i+\vec u_k$ exactly as multiplication by the scalar $i$ does. The name records the same statement in the form $k(1+k) = 1+k$ of the source, where $k$ is the null paravector $1+\vec u_k$ of the algebra of physical space; in the series basis the null paravector is the Hermitian element $e_t + i\vec u_k$ and its gobbling factor is $i\vec u_k$:
 
 $$
-\left(i\vec u_k\right)\left(e_0 + i\vec u_k\right) \;=\; \left(e_0 + i\vec u_k\right)\left(i\vec u_k\right) \;=\; e_0 + i\vec u_k.
+\left(i\vec u_k\right)\left(e_t + i\vec u_k\right) \;=\; \left(e_t + i\vec u_k\right)\left(i\vec u_k\right) \;=\; e_t + i\vec u_k.
 $$
 
 **The nullity of the wave element.** The lemma is why $\tilde{K} = \frac{\omega}{c}(i+\vec u_k)$ has vanishing norm. Indeed $\tilde{K}^{\natural} = \frac{\omega}{c}(i-\vec u_k)$ and
@@ -51,24 +51,24 @@ $$
 = \frac{\omega^2}{c^2}\left(i^2 - \vec u_k\vec u_k\right) = \frac{\omega^2}{c^2}\left(-1 + 1\right) = 0,
 $$
 
-because $\vec u_k\vec u_k = -e_0$. The null element is a zero divisor of $\mathbb{B}$ (*Zero Divisors of the Biquaternion Algebra*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
+because $\vec u_k\vec u_k = -e_t$. The null element is a zero divisor of $\mathbb{B}$ (*Zero Divisors of the Biquaternion Algebra*, *The Light Cone as the Biquaternion Zero-Divisor Cone*), and this is the algebraic form of the statement that light has no rest frame.
 
 ## The Null Flag and the Flagpole
 
-The null element $e_0+i\vec u_k$ has a geometric interpretation, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_0+i\vec u_k$ itself, and the flag is the two-plane transverse to $\vec u_k$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\vec u_k(e_0+i\vec u_k) = e_0+i\vec u_k$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
+The null element $e_t+i\vec u_k$ has a geometric interpretation, due to Penrose, that the pacwoman lemma makes precise. A **null flag** in Minkowski space is a lightlike direction together with a plane containing it: the direction is the **flagpole**, and the plane is the **flag**. For the wave element the flagpole is the lightlike paravector $e_t+i\vec u_k$ itself, and the flag is the two-plane transverse to $\vec u_k$; the electric field of a plane wave lies in the flag, and the magnetic field is the flag swept along the flagpole as the wave propagates. Transversality of the electromagnetic field is the statement that the amplitude has no component along the flagpole; the pacwoman identity $i\vec u_k(e_t+i\vec u_k) = e_t+i\vec u_k$ is the statement that the flagpole absorbs its own direction without leaving the null cone.
 
 The flagpole is also a **pure state**. The element
 
 $$
-\tilde\Pi = \tfrac12\left(e_0 + i\vec u_k\right)
+\tilde\Pi = \tfrac12\left(e_t + i\vec u_k\right)
 $$
 
-is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a projector; and it is exactly the rank-one projector $\tilde\Pi_1(\vec u_k) = \tfrac12(e_0+i\vec u_k)$ of the idempotent convention of *Conventions in the Biquaternion Universe*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the projector removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously a projector of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
+is idempotent, $\tilde\Pi^2 = \tilde\Pi$, and Hermitian, $\tilde\Pi^{*} = \tilde\Pi$, so it is a projector; and it is exactly the rank-one projector $\tilde\Pi_1(\vec u_k) = \tfrac12(e_t+i\vec u_k)$ of the idempotent convention of *Conventions in the Biquaternion Universe*. The square of the un-normalised flagpole is $2\tilde\Pi$ rather than $\tilde\Pi$, which is the sense in which the flagpole is twice a state: the natural normalisation of the null direction carries the factor two that the projector removes. The set of null elements is the light cone, and the light cone is the zero-divisor cone (*The Light Cone as the Biquaternion Zero-Divisor Cone*); the flagpole is therefore a null direction that is simultaneously a projector of the informational sector, and the two readings — a lightlike vector and a pure state — are the two faces of the same eight parameters.
 
 
 ## The Boost of the Null Wave Element
 
-Let $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ be the boost rotor, so that $\tilde U$ is Hermitian ($\tilde U^{*} = \tilde U$), $\tilde U^{\natural} = \tilde U^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\vec u$, and $\langle\tilde U\rangle_{\natural} = e_0$ (*The Lorentz Transformation as a Biquaternionic Rotation*). The pacwoman lemma turns the product of the rotor with the null element into a product of a *dilation–rotation factor* with the same null element.
+Let $\tilde U = \cosh\frac{w}{2} + i\sinh\frac{w}{2}\vec u$ be the boost rotor, so that $\tilde U$ is Hermitian ($\tilde U^{*} = \tilde U$), $\tilde U^{\natural} = \tilde U^{-1} = \cosh\frac{w}{2} - i\sinh\frac{w}{2}\vec u$, and $\langle\tilde U\rangle_{\natural} = e_t$ (*The Lorentz Transformation as a Biquaternionic Rotation*). The pacwoman lemma turns the product of the rotor with the null element into a product of a *dilation–rotation factor* with the same null element.
 
 **Proposition (the factorisation).** For every unit real $\vec u$ and $\vec u_k$,
 
@@ -107,16 +107,16 @@ $$
 contains the null element no longer: it is a real quaternion, that is an element of $\mathbb H_{\mathbb B}$, and it is the product of the dilation and the rotation. The product $\vec u\vec u_k$ of two unit real vectors is a unit real quaternion, and with the quaternion product rule $\vec q\vec k = -\vec q\cdot\vec k + \vec q\times\vec k$ it separates into its scalar and vector parts,
 
 $$
-\vec u\vec u_k \;=\; -\cos\alpha\,e_0 + \vec u\times\vec u_k,
+\vec u\vec u_k \;=\; -\cos\alpha\,e_t + \vec u\times\vec u_k,
 \qquad
 \cos\alpha = \vec u\cdot\vec u_k,
 $$
 
-so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)e_0 + \sinh\frac{w}{2}\,\vec u\times\vec u_k$ is a scalar plus a real vector, with
+so that $\tilde{D} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)e_t + \sinh\frac{w}{2}\,\vec u\times\vec u_k$ is a scalar plus a real vector, with
 
 $$
-\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)^2e_0 + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_k\right|^2 e_0
-= \left(\cosh w - \sinh w\cos\alpha\right)e_0 ,
+\tilde{D}\tilde{D}^{\natural} = \left(\cosh\frac{w}{2} - \sinh\frac{w}{2}\cos\alpha\right)^2e_t + \left|\sinh\frac{w}{2}\,\vec u\times\vec u_k\right|^2 e_t
+= \left(\cosh w - \sinh w\cos\alpha\right)e_t ,
 $$
 
 using $|\vec u\times\vec u_k|^2 = \sin^2\alpha$. Every real quaternion of positive norm is a positive scalar times a unit real quaternion, and $\tilde{D} = \exp(d/2)\tilde{u}$ with
@@ -223,7 +223,7 @@ Transversely the dilation is $\gamma$ — the transverse Doppler factor — and 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}$, $e_0 = 1, e_k$ | Biquaternion algebra, quaternion basis with $e_k^2 = -e_0$ |
+| $\mathbb{B}$, $e_t = 1, \vec e_k$ | Biquaternion algebra, quaternion basis with $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$, central |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_\pm$ | Real-quaternion, Hermitian and anti-Hermitian subspaces |
 | $\vec k = k\vec u_k = \frac{\omega}{c}\vec u_k$ | Wavevector, $k = \omega/c$, $\vec u_k$ its unit direction |

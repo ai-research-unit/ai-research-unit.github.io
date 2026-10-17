@@ -26,15 +26,15 @@ $$
 and it is fixed by its values on the basis, the rest following by $\mathbb{R}$-linearity. The generators are assigned the matrices
 
 $$
-\mathsf{M}_2(1) = I, \quad \mathsf{M}_2(e_1) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
-\mathsf{M}_2(e_2) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
-\mathsf{M}_2(e_3) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
+\mathsf{M}_2(1) = I, \quad \mathsf{M}_2(\vec e_x) = J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_2(\vec e_y) = K = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
+\mathsf{M}_2(\vec e_z) = D = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix},
 $$
 
 so that on a general element
 
 $$
-\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0 - q_3 & q_2 - q_1 \\ q_1 + q_2 & q_0 + q_3 \end{pmatrix}.
+\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = \begin{pmatrix} q_t - q_z & q_y - q_x \\ q_x + q_y & q_t + q_z \end{pmatrix}.
 $$
 
 The defining representation is the model in which every statement of this article is computed.
@@ -42,17 +42,17 @@ The defining representation is the model in which every statement of this articl
 **The check.** The assignment is the right one because the four matrices multiply as the four generators do. Squaring the vector images,
 
 $$
-\mathsf{M}_2(e_1)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\mathsf{M}_2(1), \qquad
-\mathsf{M}_2(e_2)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(1),
+\mathsf{M}_2(\vec e_x)^2 = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix} = -\mathsf{M}_2(1), \qquad
+\mathsf{M}_2(\vec e_y)^2 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}^2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(1),
 $$
 
-and the same gives $\mathsf{M}_2(e_3)^2 = \mathsf{M}_2(1)$; so $e_1^2 = -1$, $e_2^2 = e_3^2 = 1$ are reproduced. Multiplying the first two,
+and the same gives $\mathsf{M}_2(\vec e_z)^2 = \mathsf{M}_2(1)$; so $\vec e_x^2 = -1$, $\vec e_y^2 = \vec e_z^2 = 1$ are reproduced. Multiplying the first two,
 
 $$
-\mathsf{M}_2(e_1)\mathsf{M}_2(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(e_3),
+\mathsf{M}_2(\vec e_x)\mathsf{M}_2(\vec e_y) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix} = \mathsf{M}_2(\vec e_z),
 $$
 
-reproducing $e_1e_2 = e_3$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
+reproducing $\vec e_x\vec e_y = \vec e_z$. Those relations are the whole multiplication table of $\mathbb{H}_{\mathrm{s}}$, so the correspondence of bases is an isomorphism of algebras and not a formal analogy.
 
 ## Existence
 
@@ -105,10 +105,10 @@ The determinant of the matrix model is the split-quaternion norm, a quadratic fo
 **Proof.** The determinant computation is (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*). For the trace,
 
 $$
-\operatorname{tr}\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = (q_0 - q_3) + (q_0 + q_3) = 2q_0 = 2\operatorname{Sc}(\tilde q).
+\operatorname{tr}\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = (q_t - q_z) + (q_t + q_z) = 2q_t = 2\operatorname{Sc}(\tilde q).
 $$
 
-The vanishing of the trace on $V$ is the case $q_0 = 0$.
+The vanishing of the trace on $V$ is the case $q_t = 0$.
 
 **Corollary (Formulas in the Model).** For every $\tilde q$,
 
@@ -137,9 +137,9 @@ The distinguished subspaces of the algebra correspond to the following subspaces
 | Subspace of $\mathbb{H}_{\mathrm{s}}$ | Image in $M_2(\mathbb{R})$ | Description |
 |---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $\mathbb{R} I$ | the scalar matrices |
-| $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices |
-| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$ | the symmetric matrices with equal diagonal |
-| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$ | the diagonal matrices |
+| $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $\mathrm{SL}_2(\mathbb{R})$ | the traceless matrices |
+| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | $\left\{\begin{pmatrix}p & q \\ q & p\end{pmatrix}\right\}$ | the symmetric matrices with equal diagonal |
+| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | $\left\{\begin{pmatrix}p & 0 \\ 0 & q\end{pmatrix}\right\}$ | the diagonal matrices |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_1$, $\tilde\pi_1 \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_w}$, $R_{\ell_v}$ | maximal isotropic subspaces |
 | $\mathbb{H}_{\mathrm{s}} \tilde\pi_2$, $\tilde\pi_2 \mathbb{H}_{\mathrm{s}}$ | $K_{\ell_v}$, $R_{\ell_w}$ | maximal isotropic subspaces |
 
@@ -168,7 +168,7 @@ $$
 
 **Theorem (Irreducibility).** The defining module is simple: it has no nonzero proper submodule. Consequently the defining representation is irreducible, and it is the unique irreducible representation of the algebra up to equivalence.
 
-**Proof.** The submodules of the defining module are the $\mathsf{M}_2(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\mathsf{M}_2$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 e_1$ lies in $W$, so $e_1 \in W$, and then $E_{12}e_1 = e_2 \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $e_2 \in W$ and then $e_1 \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in *Split-Quaternion Element Representations*.
+**Proof.** The submodules of the defining module are the $\mathsf{M}_2(\mathbb{H}_{\mathrm{s}})$-invariant subspaces of $\mathbb{R}^2$, and since $\mathsf{M}_2$ is surjective these are exactly the $M_2(\mathbb{R})$-invariant subspaces, that is, the subspaces stable under every $2 \times 2$ matrix. Let $W \neq 0$ be such a subspace and let $v = (v_1,v_2) \in W$ be nonzero. If $v_1 \neq 0$ then $E_{11}v = v_1 \vec e_x$ lies in $W$, so $\vec e_x \in W$, and then $E_{12}\vec e_x = \vec e_y \in W$; if $v_1 = 0$ then $v_2 \neq 0$ and the same argument with the roles exchanged gives $\vec e_y \in W$ and then $\vec e_x \in W$. Hence $W$ contains both standard basis vectors and is the whole space. The uniqueness is the classification of the modules of a simple algebra, treated in *Split-Quaternion Element Representations*.
 
 The defining module is the concrete reason the matrix model is the right one: an eight-dimensional algebra cannot be a matrix algebra of this size, but a four-dimensional simple algebra is exactly a full matrix algebra over $\mathbb{R}$, and the module of the model is the module that the algebra realises.
 
@@ -200,7 +200,7 @@ The algebra is treated later in Part V, under Split-Biquaternions; nothing of it
 
 ## Summary
 
-The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\mathsf{M}_2(q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3) = \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.
+The split-quaternion algebra has a faithful real matrix representation of degree $2$, the defining representation $\mathsf{M}_2(q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z) = \begin{pmatrix} q_t-q_z & q_y-q_x \\ q_x+q_y & q_t+q_z\end{pmatrix}$, and no faithful representation of lower degree. The representation is unique up to conjugacy: every unital algebra homomorphism $\mathbb{H}_{\mathrm{s}} \to M_2(\mathbb{R})$ is an isomorphism, and any two differ by conjugation by an invertible matrix. The automorphism group of the algebra is $\mathrm{PGL}_2(\mathbb{R})$, acting by inner automorphisms.
 
 The determinant of the model is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, of signature $(2,2)$, and the trace is twice the scalar part; the vector subspace is the traceless part, and conjugation is the adjugate. The image of the algebra is the whole of $M_2(\mathbb{R})$, and the distinguished subspaces of the algebra correspond to the scalar matrices, the traceless matrices, the diagonal subalgebra, the symmetric subalgebra, the minimal ideals and the two families of maximal isotropic subspaces. The defining module $\mathbb{R}^2$ is simple, and it is the unique irreducible module of the algebra.
 
@@ -211,8 +211,8 @@ The quaternion algebra has no faithful real degree-two representation, because a
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\Psi$ | a matrix representation of $\mathbb{H}_{\mathrm{s}}$ | this article |
-| $\mathsf{M}_2$ | the defining representation, $\tilde q \mapsto \begin{pmatrix} q_0-q_3 & q_2-q_1 \\ q_1+q_2 & q_0+q_3\end{pmatrix}$ | *Split-Quaternion Algebra* |
-| $I, J, K, D$ | the images of $1, e_1, e_2, e_3$ | this article |
+| $\mathsf{M}_2$ | the defining representation, $\tilde q \mapsto \begin{pmatrix} q_t-q_z & q_y-q_x \\ q_x+q_y & q_t+q_z\end{pmatrix}$ | *Split-Quaternion Algebra* |
+| $I, J, K, D$ | the images of $1, \vec e_x, \vec e_y, \vec e_z$ | this article |
 | $\operatorname{Int}_P$ | conjugation by $P$, $M \mapsto PMP^{-1}$ | this article |
 | $\operatorname{Aut}(\mathbb{H}_{\mathrm{s}}) \cong \mathrm{PGL}_2(\mathbb{R})$ | the automorphism group | this article |
 | $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$ | the determinant as norm | this article |

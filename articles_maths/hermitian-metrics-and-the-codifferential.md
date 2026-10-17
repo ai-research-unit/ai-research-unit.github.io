@@ -50,7 +50,7 @@ and it is the same operator as the Riemannian codifferential of *The Codifferent
 
 *Proof.* The general formula $\delta=(-1)^{r(k+1)+1}\star d\star$ of the codifferential in real dimension $r$ becomes $\delta=-\star d\star$ when $r=2m$ is even, because $(-1)^{2m(k+1)+1}=(-1)^{\text{even}+1}=-1$. The adjointness is the integration by parts proved in *The Codifferential*, and the Hermitian pairing induces the same $L^2$ inner product as the Riemannian one on the complex-valued forms, so the adjoint operator is the same. The local formula $\delta\omega=-\sum_i\iota_{e_i}\nabla_{e_i}\omega$ of *The Codifferential* holds as well.
 
-**Example.** On $\mathbb{C}$ with the Euclidean metric, $m=1$, $2m=2$, and $\delta = -\star d\star$ on the forms of the plane: on a function $f$, $\delta f=0$; on the $1$-form $\alpha = a\,dx + b\,dy$, $\delta\alpha = -(\partial_x a + \partial_y b)$, the negative divergence; on the $2$-form $h\,dx\wedge dy$, $\delta = 0$. The signs are those of the Euclidean Hodge theory.
+**Example.** On $\mathbb{C}$ with the Euclidean metric, $m=1$, $2m=2$, and $\delta = -\star d\star$ on the forms of the plane: on a function $f$, $\delta f=0$; on the $1$-form $\alpha = a\,dx + b\,dy$, $\delta\alpha = -(\partial/\partial x a + \partial/\partial y b)$, the negative divergence; on the $2$-form $h\,dx\wedge dy$, $\delta = 0$. The signs are those of the Euclidean Hodge theory.
 
 ## The Bidegree Split of the Codifferential
 

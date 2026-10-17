@@ -30,11 +30,11 @@ The indices with $\rho(i)=i$ are **fixed branches**; the pairs $\{i,\rho(i)\}$ w
 
 **Theorem (the coding intertwines the involution).** Let $\pi:\partial\mathcal{T}\to\Lambda$ be the coding map of the iterated function system, and let $R^{\mathrm{flip}}(x_1x_2\cdots)=\rho(x_1)\rho(x_2)\cdots$ be the **letterwise flip** of the boundary. Then
 $$
-R\circ\pi=\pi\circR^{\mathrm{flip}} ,
+R\circ\pi=\pi\circ R^{\mathrm{flip}} ,
 $$
 so that $R^{\mathrm{flip}}$ is the coding-level form of the involution.
 
-*Proof.* $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tauR^{\mathrm{flip}}$.
+*Proof.* $R\pi(x\xi)=R S_x\pi(\xi)=S_{\rho(x)}R\pi(\xi)=S_{\rho(x)}\pi(R^{\mathrm{flip}}\xi)=\pi(\rho(x)R^{\mathrm{flip}}\xi)=\pi(R^{\mathrm{flip}}(x\xi))$, by the exchange relation, the induction, and the definition of the coding. The letterwise flip is the time reversal of the one-sided shift, and it commutes with the shift: $R^{\mathrm{flip}}\tau=\tau R^{\mathrm{flip}}$.
 
 ## The Limit Dynamical System and Its Reversal
 
@@ -97,7 +97,7 @@ A **reversible iterated function system** is one equipped with an **involution**
 | $\rho$, $\rho^2=\mathrm{id}$ | The permutation of the branches |
 | $R\circ S_i=S_{\rho(i)}\circ R$ | The exchange relation |
 | $R^{\mathrm{flip}}(x_1x_2\cdots)=\rho(x_1)\rho(x_2)\cdots$ | The letterwise flip of the boundary |
-| $R\circ\pi=\pi\circR^{\mathrm{flip}}$ | The intertwining of the coding |
+| $R\circ\pi=\pi\circ R^{\mathrm{flip}}$ | The intertwining of the coding |
 | $T_v$, $\rho(v)=v$ | The tiles and the fixed tiles |
 | $\mathrm{Fix}(R)$ | The fixed points of the involution |
 | $\mathrm{Fix}(R)\cap\mathcal{J}_G$ | The fixed part of the limit space |

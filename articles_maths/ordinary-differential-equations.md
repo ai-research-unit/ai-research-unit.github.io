@@ -244,7 +244,7 @@ $$
 The function $G$ is continuous, $G(x,s)$ solves $L_xG = 0$ for $x \neq s$ and satisfies the boundary conditions in $x$, and at $x = s$ its derivatives up to order $n-2$ are continuous while
 
 $$
-\partial_x^{n-1}G(s^+,s) - \partial_x^{n-1}G(s^-,s) = \frac{1}{a_n(s)} ,
+\partial/\partial x^{n-1}G(s^+,s) - \partial/\partial x^{n-1}G(s^-,s) = \frac{1}{a_n(s)} ,
 $$
 
 where $a_n$ is the leading coefficient of $L$.
@@ -257,7 +257,7 @@ $$
 G(x,s) = \begin{cases} x(1-s), & x \le s,\\ s(1-x), & x > s,\end{cases}
 $$
 
-which is symmetric, continuous, piecewise linear and vanishes at both endpoints; the jump in $\partial_xG$ at $x=s$ is $-1$, matching the leading coefficient $-1$.
+which is symmetric, continuous, piecewise linear and vanishes at both endpoints; the jump in $\partial/\partial x\,G$ at $x=s$ is $-1$, matching the leading coefficient $-1$.
 
 The Green's function is the kernel of the inverse of the differential operator, and its symmetry $G(x,s) = G(s,x)$ for a self-adjoint problem is the symmetry of the inverse operator. The theory of the inverse as a bounded operator, and of the problem as a Fredholm equation when the homogeneous problem is nontrivial, is the Fredholm theory of operators.
 
@@ -398,7 +398,7 @@ with the same $\tilde X^{(n)}, X^{(n)}$ built from $q$ alone — the powers of $
 
 ### Equilibria and Linearisation
 
-**Definition.** For an autonomous equation $y' = f(y)$ a point $y_*$ is an **equilibrium** if $f(y_*) = 0$, and the equilibrium is **stable** if for every neighbourhood $U$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq U$ for all $t \ge 0$; it is **asymptotically stable** if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and **unstable** if it is not stable.
+**Definition.** For an autonomous equation $y' = f(y)$ a point $y_*$ is an **equilibrium** if $f(y_*) = 0$, and the equilibrium is **stable** if for every neighbourhood $\Omega$ of $y_*$ there is a neighbourhood $V$ with $\varphi_t(V) \subseteq \Omega$ for all $t \ge 0$; it is **asymptotically stable** if in addition $\varphi_t(y) \to y_*$ as $t \to \infty$ for $y$ in some neighbourhood, and **unstable** if it is not stable.
 
 **Theorem (linearisation).** Let $f$ be of class $C^1$ near an equilibrium $y_*$, with derivative $A = Df(y_*)$. Then:
 

@@ -78,10 +78,10 @@ for homogeneous $f, g$; the **tangent sheaf** $\mathcal{T}_M$ is the sheaf of ve
 **Theorem (smoothness).** The tangent sheaf of a supermanifold is locally free over the structure sheaf, of rank $(p \mid q)$; a local frame in a superchart is
 
 $$
-\partial_{x_1}, \ldots, \partial_{x_p}, \ \partial_{\xi_1}, \ldots, \partial_{\xi_q},
+\partial/\partial x_1, \ldots, \partial/\partial x_p, \ \partial/\partial\xi_1, \ldots, \partial/\partial\xi_q,
 $$
 
-with the $x$-derivatives even and the $\xi$-derivatives odd, and the derivatives with respect to the odd coordinates are the left derivatives of *Grassmann Variables and Berezin Integration*. Hence a supermanifold is **smooth** in the graded sense, and every vector field is locally $X = \sum_i f_i\,\partial_{x_i} + \sum_j g_j\,\partial_{\xi_j}$ with the appropriate parities.
+with the $x$-derivatives even and the $\xi$-derivatives odd, and the derivatives with respect to the odd coordinates are the left derivatives of *Grassmann Variables and Berezin Integration*. Hence a supermanifold is **smooth** in the graded sense, and every vector field is locally $X = \sum_i f_i\,\partial/\partial x_i + \sum_j g_j\,\partial/\partial\xi_j$ with the appropriate parities.
 
 **Proof sketch.** The chain rule in the super setting gives the transformation of the frame under a change of supercoordinates, and the invertibility of the transformation matrix on the even part (the Jacobian of the body diffeomorphism, which is invertible) together with the triangular form of the odd-odd block shows that the frame is a basis of the module of derivations; the local freeness follows.
 
@@ -107,7 +107,7 @@ $$
 Q = \sum_i dx_i\,\frac{\partial}{\partial x_i},
 $$
 
-which is odd because $dx_i$ and $\partial_{x_i}$ are odd and even respectively; the relation $d^2 = 0$, equivalently $[Q,Q] = 0$, is the integrability of the odd field, and the cohomology of $Q$ is the de Rham cohomology of $M$. This is the fundamental example of a supermanifold that is not a manifold, and it identifies the differential forms of *Differential Forms and Stokes' Theorem* with the functions on an odd manifold.
+which is odd because $dx_i$ and $\partial/\partial x_i$ are odd and even respectively; the relation $d^2 = 0$, equivalently $[Q,Q] = 0$, is the integrability of the odd field, and the cohomology of $Q$ is the de Rham cohomology of $M$. This is the fundamental example of a supermanifold that is not a manifold, and it identifies the differential forms of *Differential Forms and Stokes' Theorem* with the functions on an odd manifold.
 
 ## Differential Forms and the Berezinian
 
@@ -171,7 +171,7 @@ the even part of the coefficient; this is the shape of every superspace integral
 
 **Theorem (the odd tangent bundle).** For a smooth manifold $M$ of dimension $p$, the odd tangent bundle $\Pi TM$ is a supermanifold of dimension $(p \mid p)$ whose algebra of functions is the algebra of differential forms, $\mathcal{O}_{\Pi TM} = \Omega^\bullet(M)$; each differential form on $M$ is a function on $\Pi TM$, and the exterior derivative is an odd vector field $Q$ with $[Q, Q] = 0$. The same construction for a vector bundle $E$ of rank $r$ gives a supermanifold $\Pi E$ of dimension $(p \mid r)$ whose functions are the sections of $\Lambda E^*$, and the Berezinian line bundle of $\Pi E$ is computed from the determinant lines of $E$ and of the body.
 
-**Proof sketch.** A function on $\Pi TM$ is locally a polynomial in the odd coordinates $dx_i$ with coefficients functions on $M$, which is a differential form, and the parity of $dx_i$ is odd; the odd vector field $Q = \sum_i dx_i\,\partial_{x_i}$ realises the exterior derivative, and $Q^2 = 0$ as an operator is $d^2 = 0$, equivalently $[Q,Q] = 0$ since $Q$ is odd. For the bundle case the same computation is applied fibrewise, and the Berezinian follows from the rank count of the cotangent sheaf of $\Pi E$, of rank $(p\mid r)$.
+**Proof sketch.** A function on $\Pi TM$ is locally a polynomial in the odd coordinates $dx_i$ with coefficients functions on $M$, which is a differential form, and the parity of $dx_i$ is odd; the odd vector field $Q = \sum_i dx_i\,\partial/\partial x_i$ realises the exterior derivative, and $Q^2 = 0$ as an operator is $d^2 = 0$, equivalently $[Q,Q] = 0$ since $Q$ is odd. For the bundle case the same computation is applied fibrewise, and the Berezinian follows from the rank count of the cotangent sheaf of $\Pi E$, of rank $(p\mid r)$.
 
 **Example (the odd total space and the classical structure).** For $E = TM$ the manifold $\Pi E$ is $\Pi TM$ and the functions are the forms; for $E$ the trivial bundle of rank $r$ over a point, $\Pi E = \mathbb{R}^{0\mid r}$ is the odd affine space. The construction $\Pi$ is the identity on the underlying body and reverses the parity of the fibres, so $\Pi\Pi E = E$ up to the canonical identification; the odd bundles are the objects on which the odd vector fields of the theory naturally live, and the Berezinian line bundle of $\Pi E$ is the determinant line bundle of $E$ raised to the appropriate power.
 
@@ -185,7 +185,7 @@ the even part of the coefficient; this is the shape of every superspace integral
 
 Graded algebra provides a $\mathbb{Z}/2$-grading, the Koszul sign rule and the Grassmann algebra on odd generators, with the bicommutative algebras and the Berezinian as its main structures; a supermanifold of dimension $(p\mid q)$ is a topological space with an atlas modelled on $\mathbb{R}^p$ with $q$ odd coordinates, whose structure sheaf is locally $C^\infty(U)\otimes\Lambda_q$. The odd coordinates are nilpotent, so a supermanifold has a body manifold of dimension $p$ obtained by killing the odd directions, and it is an infinitesimal thickening of its body; the sheaf-theoretic (Berezin–Leites) definition is equivalent to the concrete one and is stated but not used.
 
-The tangent sheaf is the sheaf of superderivations of the structure sheaf, locally free of rank $(p\mid q)$ — the smoothness theorem — with an even and an odd part; the vector fields form a sheaf of Lie superalgebras under the superbracket $[X,Y] = XY - (-1)^{|X||Y|}YX$. The differential forms are the exterior algebra of the cotangent sheaf, with the super exterior derivative and the graded de Rham complex; the parity-reversal functor $\Pi$ turns the tangent bundle into the odd tangent bundle $\Pi TM$ of dimension $(p\mid p)$, whose functions are the differential forms on $M$ and whose odd vector field $Q = \sum_i dx_i\,\partial_{x_i}$ encodes the exterior derivative with $[Q,Q] = 0$. The Berezinian line bundle generalises the determinant line bundle, with transition functions the Berezinian $\operatorname{Ber}(X) = \det(A - BD^{-1}C)\det(D)^{-1}$ of the Jacobian, and the integration of a compactly supported section is a finite algebraic operation, with the measure transforming by the inverse Berezinian of the Jacobian; the super vector bundles, connections and characteristic classes are the graded versions of the ordinary theory, and the analytic aspects — the Berezin measure, the heat kernel and the functional integral — belong to Part III.
+The tangent sheaf is the sheaf of superderivations of the structure sheaf, locally free of rank $(p\mid q)$ — the smoothness theorem — with an even and an odd part; the vector fields form a sheaf of Lie superalgebras under the superbracket $[X,Y] = XY - (-1)^{|X||Y|}YX$. The differential forms are the exterior algebra of the cotangent sheaf, with the super exterior derivative and the graded de Rham complex; the parity-reversal functor $\Pi$ turns the tangent bundle into the odd tangent bundle $\Pi TM$ of dimension $(p\mid p)$, whose functions are the differential forms on $M$ and whose odd vector field $Q = \sum_i dx_i\,\partial/\partial x_i$ encodes the exterior derivative with $[Q,Q] = 0$. The Berezinian line bundle generalises the determinant line bundle, with transition functions the Berezinian $\operatorname{Ber}(X) = \det(A - BD^{-1}C)\det(D)^{-1}$ of the Jacobian, and the integration of a compactly supported section is a finite algebraic operation, with the measure transforming by the inverse Berezinian of the Jacobian; the super vector bundles, connections and characteristic classes are the graded versions of the ordinary theory, and the analytic aspects — the Berezin measure, the heat kernel and the functional integral — belong to Part III.
 
 ## Summary of Notation
 
@@ -199,11 +199,11 @@ The tangent sheaf is the sheaf of superderivations of the structure sheaf, local
 | $M_{\mathrm{red}}$ | Body manifold, of dimension $p$ |
 | $\mathcal{O}_M$ | Structure sheaf; locally $C^\infty(U)\otimes\Lambda_q$ |
 | $\mathcal{T}_M$ | Tangent sheaf of superderivations; locally free of rank $(p\mid q)$ |
-| $\partial_{x_i}$, $\partial_{\xi_j}$ | Even and odd frame of the tangent sheaf |
+| $\partial/\partial x_i$, $\partial/\partial\xi_j$ | Even and odd frame of the tangent sheaf |
 | $[X,Y] = XY - (-1)^{\vert X\vert\vert Y\vert}YX$ | Superbracket; Lie superalgebra of vector fields |
 | $\Omega^\bullet(M)$, $d$ | Differential forms; super exterior derivative, $d^2 = 0$ |
 | $\Pi E$, $\Pi TM$ | Parity reversal; odd bundle, odd tangent bundle |
-| $Q = \sum_i dx_i\,\partial_{x_i}$ | de Rham odd vector field; $[Q,Q] = 0$ |
+| $Q = \sum_i dx_i\,\partial/\partial x_i$ | de Rham odd vector field; $[Q,Q] = 0$ |
 | $\operatorname{Ber}(M)$ | Berezinian line bundle; graded determinant line |
 | $\operatorname{Ber}(X) = \det(A-BD^{-1}C)\det(D)^{-1}$ | Berezinian of an even supermatrix |
 | $\int_M s$ | Integration of a Berezinian section; top-coefficient extraction |

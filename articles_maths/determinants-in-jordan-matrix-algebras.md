@@ -12,9 +12,9 @@ and it extends to the **Cartan factor of type 6**, the exceptional algebra $H_3(
 
 The source is J. Hamhalter, O. F. K. Kalenda and A. M. Peralta, *Determinants in Jordan matrix algebras*, arXiv:2110.10458v2 [math.OA] (2021). The authors' original motivation is the structure of the unitary elements of the Cartan factor of type 6, which the determinant is built to serve; the determinant turns out to be of interest on its own. The auxiliary results on finite tripotents and finite $\mathrm{JBW}^*$-triples are taken from the same authors' earlier article.
 
-The article is placed at the operator-algebraic end of the Jordan group. It assumes the Jordan algebra and the idempotent Peirce decomposition of *Jordan Algebras* and *Hermitian Idempotents and the Peirce Decomposition*; the Jordan triple system of *Jordan Triples with an Involution*; the exceptional algebras and the Albert algebra of *Special and Exceptional Jordan Algebras*; the biquaternion algebra with its two involutions, its product table and its matrix chart of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*; and the octonions of *Octonion Algebra*. The JB\*-triple apparatus — tripotents, their Peirce decomposition relative to a tripotent rather than to an idempotent, minimal and unitary tripotents, frames and rank, and the Cartan factors — is not available elsewhere in the corpus and is therefore developed here, in the second section, before it is used. The determinant defined here is not the classical determinant of *Linear Maps and Matrices* and does not generalise it by restriction; it is a new function on a new domain, and the two agree only through the squaring identity recorded below. The entire presentation is over $\mathbb{C}$ and $\mathbb{R}$; no physical vocabulary is used.
+The article is placed at the operator-algebraic end of the Jordan group. It assumes the Jordan algebra and the idempotent Peirce decomposition of *Jordan Algebras* and *Hermitian Idempotents and the Peirce Decomposition*; the Jordan triple system of *Jordan Triples with an Involution*; the exceptional algebras and the Albert algebra of *Special and Exceptional Jordan Algebras*; the biquaternion algebra with its two involutions, its product table and its matrix chart of *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. The JB\*-triple apparatus — tripotents, their Peirce decomposition relative to a tripotent rather than to an idempotent, minimal and unitary tripotents, frames and rank, and the Cartan factors — is not available elsewhere in the corpus and is therefore developed here, in the second section, before it is used. The determinant defined here is not the classical determinant of *Linear Maps and Matrices* and does not generalise it by restriction; it is a new function on a new domain, and the two agree only through the squaring identity recorded below. The entire presentation is over $\mathbb{C}$ and $\mathbb{R}$; no physical vocabulary is used.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$, $e_1e_2 = e_3$, a general element $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and the complex norm $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; the maps $^{\natural}$ and $^*$ are the two involutions introduced below. The octonion algebra $\mathbb{O}$ is the real one of *Octonion Algebra*, with basis $e_0 = 1, e_1,\dots,e_7$, and $\mathbb{O}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$ is its complexification. The **linear** involution of an algebra is written $^{\natural}$ and the **conjugate-linear** involution $^{*}$; on matrices they act entrywise and transpose, $x^{\natural}_{ij} = x^{\natural}_{ji}$ and $x^{*}_{ij} = x^{*}_{ji}$. The determinant of the source is written $\Delta$, and its variants $\Delta_n$ and $\Delta_{n,e}$ are distinguished by their subscripts.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_x \vec e_y = \vec e_z$, a general element $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and the complex norm $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; the maps $^{\natural}$ and $^*$ are the two involutions introduced below. The octonion algebra $\mathbb{O}$ is the real one with basis $e_0 = 1, e_1,\dots,e_7$, and $\mathbb{O}_{\mathbb{C}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{O}$ is its complexification. The **linear** involution of an algebra is written $^{\natural}$ and the **conjugate-linear** involution $^{*}$; on matrices they act entrywise and transpose, $x^{\natural}_{ij} = x^{\natural}_{ji}$ and $x^{*}_{ij} = x^{*}_{ji}$. The determinant of the source is written $\Delta$, and its variants $\Delta_n$ and $\Delta_{n,e}$ are distinguished by their subscripts.
 
 ## Jordan Matrix Algebras
 
@@ -25,7 +25,7 @@ A **Jordan algebra** is a commutative algebra whose product satisfies the Jordan
 A **JB-algebra** is a real Jordan Banach algebra satisfying $\lVert x\rVert^2 \leq \lVert x^2+y^2\rVert$ for all $x,y$. A **JB\*-algebra** is a complex Jordan Banach algebra with a conjugate-linear involution $^*$ satisfying the axiom of the normed theory,
 
 $$
-\lVert x\rVert^3 = \lVert \mathcal U_x(x^*)\rVert , \qquad \mathcal U_x(y) = 2\,x\bullet(x\bullet y) - (x\bullet x)\bullet y ,
+\lVert x\rVert^3 = \lVert \mathrm{Jor}_x(x^*)\rVert , \qquad \mathrm{Jor}_x(y) = 2\,x\bullet(x\bullet y) - (x\bullet x)\bullet y ,
 $$
 
 so that every C\*-algebra is a JB\*-algebra under the symmetrised product of *Jordan Algebras of Sesqualgebras*.
@@ -50,7 +50,7 @@ $$
 \{x,y,z\} = (x\bullet y^*)\bullet z + (z\bullet y^*)\bullet x - (x\bullet z)\bullet y^*,
 $$
 
-the ternary product generated by the binary one. The quadratic operator of a JB\*-algebra is $\mathcal U_a(x) = 2\,a\bullet(a\bullet x) - (a\bullet a)\bullet x$, which in the C\*-case is $\mathcal U_a(x) = axa$; it satisfies $\mathcal U_a(1) = a^2$. In a unital JB\*-algebra the unital triple automorphisms are exactly the Jordan \*-automorphisms, since $\{a,1,b\} = a\bullet b$ and $a^* = \{1,a,1\}$.
+the ternary product generated by the binary one. The quadratic operator of a JB\*-algebra is $\mathrm{Jor}_a(x) = 2\,a\bullet(a\bullet x) - (a\bullet a)\bullet x$, which in the C\*-case is $\mathrm{Jor}_a(x) = axa$; it satisfies $\mathrm{Jor}_a(1) = a^2$. In a unital JB\*-algebra the unital triple automorphisms are exactly the Jordan \*-automorphisms, since $\{a,1,b\} = a\bullet b$ and $a^* = \{1,a,1\}$.
 
 The **Peirce decomposition** of $E$ relative to a tripotent $e$ is the eigenspace decomposition of $L(e,e)$, the operator $x\mapsto\{e,x,e\}$ that the source writes $\mathfrak{Q}(e)$, with the eigenvalues $1, \tfrac12, 0$,
 
@@ -106,7 +106,7 @@ x_1+ix_2 & x_3+ix_4\\
 \qquad x_1,\dots,x_4 \in \mathbb{C},
 $$
 
-in which $(x_1,x_2,x_3,x_4)$ are the complex coordinates of $\tilde Q$ in the basis $1,e_1,e_2,e_3$, so that $e_1,e_2,e_3$ go to $i\sigma_3,i\sigma_2,i\sigma_1$, the quaternion units are the pure imaginary Pauli matrices and the scalar $i$ is the central imaginary unit. Three properties of this chart are used repeatedly.
+in which $(x_1,x_2,x_3,x_4)$ are the complex coordinates of $\tilde Q$ in the basis $1,\vec e_x,\vec e_y,\vec e_z$, so that $\vec e_x,\vec e_y,\vec e_z$ go to $i\sigma_3,i\sigma_2,i\sigma_1$, the quaternion units are the pure imaginary Pauli matrices and the scalar $i$ is the central imaginary unit. Three properties of this chart are used repeatedly.
 
 1. It is multiplicative: the image of a product is the product of the images.
 2. The determinant of the $2\times 2$ image of $\tilde Q$ is the complex norm, $\det\iota(\tilde Q) = \tilde Q\tilde Q^{\natural} = \sum_\mu Q_\mu^2$. This is the biquaternion norm of *Norm and Invertibility in the General Quaternionic Algebra* read as a determinant.
@@ -296,7 +296,7 @@ The constraint is a quadratic condition on $\alpha$. In the second family $\alph
 
 ### Automorphisms
 
-The automorphisms used in the proofs are of two kinds. Exchanging two rows of a matrix of $C_6$ and then the corresponding two columns defines a Jordan \*-automorphism $\mathcal U_{k,l}$ of $C_6$. It is the shift $x\mapsto\{\tilde U,x^{*},\tilde U\}$ by the symmetry $\tilde U$ that is the corresponding permutation matrix; a shift by a unitary element is a triple automorphism, and this one fixes the unit and is therefore a Jordan \*-automorphism. Since $\tilde U\bullet \tilde U = 1$ the shift reads $\{\tilde U,x^{*},\tilde U\} = 2\,\tilde U\bullet(x\bullet \tilde U) - x = uxu$, which is exactly the exchange of the two rows and columns.
+The automorphisms used in the proofs are of two kinds. Exchanging two rows of a matrix of $C_6$ and then the corresponding two columns defines a Jordan \*-automorphism $\mathrm{Jor}_{k,l}$ of $C_6$. It is the shift $x\mapsto\{\tilde U,x^{*},\tilde U\}$ by the symmetry $\tilde U$ that is the corresponding permutation matrix; a shift by a unitary element is a triple automorphism, and this one fixes the unit and is therefore a Jordan \*-automorphism. Since $\tilde U\bullet \tilde U = 1$ the shift reads $\{\tilde U,x^{*},\tilde U\} = 2\,\tilde U\bullet(x\bullet \tilde U) - x = uxu$, which is exactly the exchange of the two rows and columns.
 
 The second kind is induced from the octonions. A linear bijection $T$ of $\mathbb{O}_{\mathbb{C}}$ is an **asymmetric triple isomorphism** if it preserves the asymmetric triple product,
 
@@ -304,7 +304,7 @@ $$
 T\bigl((xy^{*})z\bigr) = \bigl(T(x)T(y)^{*}\bigr)T(z),
 $$
 
-and it is **hermitian** if in addition $T(\overline x) = \overline{T(x)}$; it then preserves $\mathbb{O}$. A hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ induces a Jordan \*-automorphism $T^{\mathrm{aut}}$ of $C_6$ acting on the three off-diagonal octonion entries, and conjugating $T^{\mathrm{aut}}$ by the row and column exchanges $\mathcal U_{k,l}$ produces three further automorphisms $T^{\mathrm{aut}}_1,T^{\mathrm{aut}}_2,T^{\mathrm{aut}}_3$. These automorphisms normalise an octonion: for any nonzero $\tilde U\in\mathbb{O}$ there is an asymmetric triple isomorphism carrying $\tilde U$ into the real line $\operatorname{span}\{e_0\}$, an automorphism carrying $\tilde U$ into $\operatorname{span}\{e_0,e_1\}$, and an automorphism fixing $e_1$ and carrying $\tilde U$ into $\operatorname{span}\{e_0,e_1,e_2\}$. These are the normalisations used to bring a minimal projection of $C_6$ into one of the three canonical forms above.
+and it is **hermitian** if in addition $T(\overline x) = \overline{T(x)}$; it then preserves $\mathbb{O}$. A hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ induces a Jordan \*-automorphism $T^{\mathrm{aut}}$ of $C_6$ acting on the three off-diagonal octonion entries, and conjugating $T^{\mathrm{aut}}$ by the row and column exchanges $\mathrm{Jor}_{k,l}$ produces three further automorphisms $T^{\mathrm{aut}}_1,T^{\mathrm{aut}}_2,T^{\mathrm{aut}}_3$. These automorphisms normalise an octonion: for any nonzero $\tilde U\in\mathbb{O}$ there is an asymmetric triple isomorphism carrying $\tilde U$ into the real line $\operatorname{span}\{e_0\}$, an automorphism carrying $\tilde U$ into $\operatorname{span}\{e_0,e_1\}$, and an automorphism fixing $e_1$ and carrying $\tilde U$ into $\operatorname{span}\{e_0,e_1,e_2\}$. These are the normalisations used to bring a minimal projection of $C_6$ into one of the three canonical forms above.
 
 ## The Determinant on the Cartan Factor
 
@@ -316,10 +316,10 @@ The determinant has so far been defined on the unitaries of $C_6$ and, separatel
 
 1. There is a unitary $\tilde U\in C_6$ with $x = \{\tilde U,x,\tilde U\}$.
 2. For such a $\tilde U$ there are real numbers $\alpha_1,\alpha_2,\alpha_3$ and mutually orthogonal minimal tripotents $\tilde\Pi_1,\tilde\Pi_2,\tilde\Pi_3$ with $\tilde\Pi_j\leq \tilde U$ and $x = \alpha_1\tilde\Pi_1+\alpha_2\tilde\Pi_2+\alpha_3\tilde\Pi_3$; the triple $(\alpha_1,\alpha_2,\alpha_3)$ is unique up to reordering, and for a real number $\alpha$ the sum $\sum_{\alpha_j = \alpha}\tilde\Pi_j$ is determined.
-3. Setting $\Delta_\tilde U(x) = \alpha_1\alpha_2\alpha_3$ gives a quantity which, when $x$ is unitary, equals the determinant of the unitary case, and which, when $x$ and $\tilde U$ lie in $H_3(\mathbb{B})$, equals the relative determinant $\Delta_{3,\tilde U}(x)$.
+3. Setting $\Delta_{\tilde U}(x) = \alpha_1\alpha_2\alpha_3$ gives a quantity which, when $x$ is unitary, equals the determinant of the unitary case, and which, when $x$ and $\tilde U$ lie in $H_3(\mathbb{B})$, equals the relative determinant $\Delta_{3,\tilde U}(x)$.
 4. The product
     $$
-    \Delta(x) = \Delta_\tilde U(x)\cdot\Delta(\tilde U)
+    \Delta(x) = \Delta_{\tilde U}(x)\cdot\Delta(\tilde U)
     $$
     does not depend on the choice of $\tilde U$ among the unitaries of the first item; it coincides with the determinant of the unitary case when $x$ is unitary, and with $\Delta_3(x)$ when $x\in H_3(\mathbb{B})$.
 5. Every Jordan \*-automorphism of $C_6$ preserves $\Delta$.
@@ -365,7 +365,7 @@ A determinant is defined on the Hermitian matrices of biquaternions $H_n(\mathbb
 | $E_2(e),E_1(e),E_0(e)$ | Peirce spaces of a tripotent $e$ |
 | $\Delta_n$, $\Delta_{n,e}$ | Determinant on $H_n(\mathbb{B})$, and relative to a unitary $e$ |
 | $\Delta$, $\Delta_e$ | Determinant on $C_6$, and relative to a unitary $e$ |
-| $\mathcal U_{k,l}$ | Jordan \*-automorphism of $C_6$ exchanging rows and columns $k,l$ |
+| $\mathrm{Jor}_{k,l}$ | Jordan \*-automorphism of $C_6$ exchanging rows and columns $k,l$ |
 | $T^{\mathrm{aut}}$ | Jordan \*-automorphism of $C_6$ induced by a hermitian asymmetric triple isomorphism $T$ of $\mathbb{O}_{\mathbb{C}}$ |
 
 ## Further Reading

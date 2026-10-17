@@ -13,14 +13,14 @@ The division between what is established and what is only transcribed is kept ex
 - **Established, and recomputed below.** The three operations on the spinor-module Dirac field,
   $$
   C[\psi]=\eta_C\,\psi^{*},\qquad
-  P[\psi](t,\vec x)=\gamma^0\,\psi(t,-\vec x),\qquad
-  T[\psi](t,\vec x)=\eta_T\,\psi^{*}(-t,\vec x),
+  P[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\gamma^0\,\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\qquad
+  T[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\eta_T\,\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
   $$
-  with $\eta_C=i\gamma^2$ and $\eta_T=\gamma^1\gamma^3$, each maps every solution of the free equation $(i\gamma^\mu\partial_\mu-m)\psi=0$ to a solution. Each was verified separately on the differential equation, on three on-shell momenta and on a superposition of both frequency branches. $T$ is anti-unitary, $T[i\psi]=-i\,T[\psi]$, so it conjugates the scalar imaginary. $C$ and $P$ anticommute with $\gamma_5$ and exchange the chiral halves; $T$ commutes with $\gamma_5$ and preserves them; hence $CPT$ preserves chirality. $C$ exchanges the two frequency branches, so at the operator level it exchanges the particle and antiparticle modes. Of the internal matrices, $T$'s factor $\gamma^1\gamma^3=-e_2$ is an even element of $\mathrm{Cl}_{1,3}^{+}\cong\mathbb{B}$ (a real quaternion), while $C$'s $i\gamma^2$ and $P$'s $\gamma^0$ are **odd** and have no representative in $\mathbb{B}$. The composition $\Theta=C\circ P\circ T$ acts as $\Theta[\psi](x)=\eta_{CPT}\,\psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$; in the phase convention above, $\eta_{CPT}=\gamma_5=i\omega$. Here $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element, the element the framework identifies with the biquaternion scalar imaginary, and on the Dirac module $i$ acts as $\mathrm{diag}(i,-i)=\omega$.
+  with $\eta_C=i\gamma^2$ and $\eta_T=\gamma^1\gamma^3$, each maps every solution of the free equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ to a solution. Each was verified separately on the differential equation, on three on-shell momenta and on a superposition of both frequency branches. $T$ is anti-unitary, $T[i\psi]=-i\,T[\psi]$, so it conjugates the scalar imaginary. $C$ and $P$ anticommute with $\gamma_5$ and exchange the chiral halves; $T$ commutes with $\gamma_5$ and preserves them; hence $CPT$ preserves chirality. $C$ exchanges the two frequency branches, so at the operator level it exchanges the particle and antiparticle modes. Of the internal matrices, $T$'s factor $\gamma^1\gamma^3=-\vec e_y$ is an even element of $\mathrm{Cl}_{1,3}^{+}\cong\mathbb{B}$ (a real quaternion), while $C$'s $i\gamma^2$ and $P$'s $\gamma^0$ are **odd** and have no representative in $\mathbb{B}$. The composition $\Theta=C\circ P\circ T$ acts as $\Theta[\psi](x)=\eta_{CPT}\,\psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$; in the phase convention above, $\eta_{CPT}=\gamma_5=i\omega$. Here $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element, the element the framework identifies with the biquaternion scalar imaginary, and on the Dirac module $i$ acts as $\mathrm{diag}(i,-i)=\omega$.
 - **Transcribed, not derived.** The CPT theorem itself, together with the hypotheses that prove it: locality, Hermiticity of the Lagrangian, Lorentz invariance, positivity and spin–statistics. The computation below exhibits the composition as a symmetry of *one* free equation; it does not show that the composition survives interactions, which is the content of the theorem. Nothing here derives CPT from the biquaternion algebra. Also transcribed is the Clifford-algebra classification of the operations as the fundamental automorphisms of $\mathrm{Cl}_{n,m}$ together with the charge-conjugation pseudoautomorphism, which is recorded below as a second interpretation of the same eight operations and as the source of their $\mathbb{Z}_2\times\mathbb{Z}_2\times\mathbb{Z}_2$ group structure.
 - **Gap, left visible.** The framework does not fix a $\mathbb{B}$-intrinsic form of $C$ and $P$: their internal matrices are odd Clifford elements, outside $\mathbb{B}$, so they are operations of the Clifford algebra or of the module, not inner operations of the biquaternion algebra. Whether they admit a $\mathbb{B}$-intrinsic realization is unbuilt. Separately, the parent's mass term is the linear chiral pair of the Dirac article, whose spinor representative is the massive Dirac equation verified above to be $C$-invariant; the algebra's anti-linear object is the real structure $\flat=-{}^{*}$, a separate Majorana-type pairing, and whether $C$ is a symmetry of the single-field equation built on $\flat$ is the open reading developed in the neutrino companion.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\ne k$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}=\mathbb{C}e_0$ is the centre. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex, i.e. conjugation of the coefficients), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the anti-Hermitian conjugate is $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{R})=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R})$ and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and the Dirac module is $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, $\dim_{\mathbb{C}}\Delta=4$. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, with $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_k\partial_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$; the trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, inherited unchanged. The biquaternion Dirac field is $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$, with massless equation $\tilde{\nabla}\tilde{\Psi}=0$ and massive equation the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, and its spinor-module representative $\psi$ satisfies $(i\gamma^\mu\partial_\mu-m)\psi=0$.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\ne\nu$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $\vec e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}=\mathbb{C}e_t$ is the centre. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex, i.e. conjugation of the coefficients), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); the anti-Hermitian conjugate is $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$. The matrix realization is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, satisfying $\mathsf{M}_2(\tilde{Q}\tilde{R})=\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{R})$ and $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$. The spinor module is $S=\mathbb{C}^2$, the unique simple left $\mathbb{B}$-module, carrying the left-handed Weyl representation $(\tfrac12,0)$, and the Dirac module is $\Delta=S\oplus\bar{S}=(\tfrac12,0)\oplus(0,\tfrac12)$, $\dim_{\mathbb{C}}\Delta=4$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, with $\tilde{\nabla}^{\natural}=e_t\partial/\partial Q_t-\vec e_k\partial/\partial Q_k$ and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$; the trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, inherited unchanged. The biquaternion Dirac field is $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$, with massless equation $\tilde{\nabla}\tilde{\Psi}=0$ and massive equation the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$, and its spinor-module representative $\psi$ satisfies $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$.
 
 We use the **block representation** of the gamma matrices of the canonical-quantization and spin–statistics articles,
 $$
@@ -41,17 +41,17 @@ Three different structures are in play, and the article's first task is to keep 
 
 **The Clifford algebra and its even part.** The gamma matrices generate $\mathrm{Cl}_{1,3}(\mathbb{R})$, of real dimension $16$. Its **even subalgebra** is spanned by the identity, the six bivectors $\gamma^\mu\gamma^\nu$, and the volume element $\omega$, and is isomorphic to $\mathbb{B}$; the biquaternion units correspond to spatial bivectors by
 $$
-e_1\mapsto\gamma^2\gamma^3,\qquad e_2\mapsto\gamma^3\gamma^1,\qquad e_3\mapsto\gamma^1\gamma^2,
+\vec e_x\mapsto\gamma^2\gamma^3,\qquad \vec e_y\mapsto\gamma^3\gamma^1,\qquad \vec e_z\mapsto\gamma^1\gamma^2,
 $$
-and the scalar imaginary to the volume element $\omega$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. (The ordering in the last entry is fixed by the metric $g=\mathrm{diag}(+1,-1,-1,-1)$ used here, under which $(\gamma^2\gamma^3)(\gamma^3\gamma^1)=\gamma^1\gamma^2$; the parent Dirac article's opposite metric reverses the sign of the third bivector. What matters below is only that the map is a homomorphism, and with this ordering it is one, with each image squaring to $-e_0$.) The **odd part** — the span of the individual generators $\gamma^\mu$ — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality operator $\gamma_5$ anticommutes with every generator and hence commutes with every even element; it is a Lorentz-invariant label.
+and the scalar imaginary to the volume element $\omega$ — the corpus's identification, which belongs to this isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ and is not a statement about the matrix realization $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ used elsewhere in this article. (The ordering in the last entry is fixed by the metric $g=\mathrm{diag}(+1,-1,-1,-1)$ used here, under which $(\gamma^2\gamma^3)(\gamma^3\gamma^1)=\gamma^1\gamma^2$; the parent Dirac article's opposite metric reverses the sign of the third bivector. What matters below is only that the map is a homomorphism, and with this ordering it is one, with each image squaring to $-e_t$.) The **odd part** — the span of the individual generators $\gamma^\mu$ — is *not* contained in $\mathbb{B}$. This matters below: an even element acts on the Dirac module block-diagonally, preserving each chiral half, while an odd element acts off-diagonally and **exchanges the two chiral halves**. The chirality operator $\gamma_5$ anticommutes with every generator and hence commutes with every even element; it is a Lorentz-invariant label.
 
 **The three conjugations of the algebra.** They are distinct maps, and they behave differently on the sectors and on the scalar imaginary:
 
 | Map | Action on coefficients | Scalar imaginary | Effect on $S\oplus\bar S$ |
 |---|---|---|---|
-| Quaternion ${}^{\natural}$ | $(Q_0,Q_k)\mapsto(Q_0,-Q_k)$ | $i\mapsto i$ | real-linear, anti-automorphism |
+| Quaternion ${}^{\natural}$ | $(Q_t,Q_k)\mapsto(Q_t,-Q_k)$ | $i\mapsto i$ | real-linear, anti-automorphism |
 | Complex $\bar{\cdot}$ | $Q_\mu\mapsto Q_\mu^{*}$ | $i\mapsto -i$ | the real structure relating $S$ to $\bar{S}$ |
-| Hermitian ${}^{*}=({}^{\natural})^{\,*}$ | $(Q_0,Q_k)\mapsto(Q_0^{*},-Q_k^{*})$ | $i\mapsto -i$ | $+1$ on $\mathbb{M}_+$, $-1$ on $\mathbb{M}_-$ |
+| Hermitian ${}^{*}=({}^{\natural})^{\,*}$ | $(Q_t,Q_k)\mapsto(Q_t^{*},-Q_k^{*})$ | $i\mapsto -i$ | $+1$ on $\mathbb{M}_+$, $-1$ on $\mathbb{M}_-$ |
 
 All three **preserve each sector** $\mathbb{M}_-$ and $\mathbb{M}_+$. The map that exchanges the sectors is not a conjugation at all: it is multiplication by the central scalar imaginary,
 $$
@@ -61,14 +61,14 @@ and $i$ commutes with everything, so it is neither an anti-linear map nor an inv
 
 **The discrete operations are module operations.** $C$, $P$ and $T$ act on the Dirac spinor, not on the algebra element. Their internal matrices are drawn from the Clifford algebra, and the three cases differ:
 
-- $T$ has internal matrix $\gamma^1\gamma^3=-\gamma^3\gamma^1=-e_2$, an **even** element, i.e. a biquaternion (a real quaternion, in $\mathbb{H}_{\mathbb{B}}$). Its module action is left multiplication by an element of $\mathbb{B}$.
+- $T$ has internal matrix $\gamma^1\gamma^3=-\gamma^3\gamma^1=-\vec e_y$, an **even** element, i.e. a biquaternion (a real quaternion, in $\mathbb{H}_{\mathbb{B}}$). Its module action is left multiplication by an element of $\mathbb{B}$.
 - $C$ and $P$ have internal matrices $i\gamma^2$ and $\gamma^0$, both **odd**: they are not elements of $\mathbb{B}$, and they exchange the chiral halves. Charge conjugation and parity are therefore not inner operations of the biquaternion algebra.
 
 None of the three is a sector swap, and none of them needs the sector split to be stated.
 
 ## The Three Operations Built Explicitly
 
-Let $\psi$ solve the free Dirac equation $(i\gamma^\mu\partial_\mu-m)\psi=0$. A discrete operation is a map $\psi\mapsto\psi'$ whose output also solves the equation. We take the operations in the standard form: $C$ is local and anti-linear, $P$ is a spatial reflection and linear, $T$ is a time reflection and anti-linear. Each is defined by an internal matrix $\eta$ fixed by the requirement that the transformed field satisfy the same equation, and the requirement determines $\eta$ up to a phase, which is a convention.
+Let $\psi$ solve the free Dirac equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$. A discrete operation is a map $\psi\mapsto\psi'$ whose output also solves the equation. We take the operations in the standard form: $C$ is local and anti-linear, $P$ is a spatial reflection and linear, $T$ is a time reflection and anti-linear. Each is defined by an internal matrix $\eta$ fixed by the requirement that the transformed field satisfy the same equation, and the requirement determines $\eta$ up to a phase, which is a convention.
 
 ### Charge conjugation
 
@@ -78,10 +78,10 @@ C[\psi]=\eta_C\,\psi^{*},\qquad \eta_C=i\gamma^2 .
 $$
 Then
 $$
-(i\gamma^\mu\partial_\mu-m)\,C[\psi]
-=\eta_C\Big(i\,\eta_C^{-1}\gamma^\mu\eta_C\,\partial_\mu-m\Big)\psi^{*},
+(i\gamma^\mu\partial/\partial Q_\mu-m)\,C[\psi]
+=\eta_C\Big(i\,\eta_C^{-1}\gamma^\mu\eta_C\,\partial/\partial Q_\mu-m\Big)\psi^{*},
 $$
-while the complex conjugate of the Dirac equation is $(-i\gamma^{\mu*}\partial_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
+while the complex conjugate of the Dirac equation is $(-i\gamma^{\mu*}\partial/\partial Q_\mu-m)\psi^{*}=0$. The two agree, so that $C[\psi]$ solves the equation, precisely when
 $$
 \eta_C^{-1}\gamma^\mu\eta_C=-\gamma^{\mu*},\qquad\text{equivalently}\qquad \eta_C\gamma^{\mu*}\eta_C^{-1}=-\gamma^\mu .
 $$
@@ -91,13 +91,13 @@ For the block gamma matrices, $\gamma^{0*}=\gamma^0$, $\gamma^{1*}=\gamma^1$, $\
 
 Define
 $$
-P[\psi](t,\vec x)=\eta_P\,\psi(t,-\vec x),\qquad \eta_P=\gamma^0 .
+P[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\eta_P\,\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),\qquad \eta_P=\gamma^0 .
 $$
 Only the spatial derivatives change sign, and
 $$
-(i\gamma^\mu\partial_\mu-m)\,P[\psi]
-=\eta_P\Big(i\,\eta_P^{-1}\gamma^0\eta_P\,\partial_0
--i\,\eta_P^{-1}\gamma^k\eta_P\,\partial_k-m\Big)\psi(t,-\vec x),
+(i\gamma^\mu\partial/\partial Q_\mu-m)\,P[\psi]
+=\eta_P\Big(i\,\eta_P^{-1}\gamma^0\eta_P\,\partial/\partial Q_t
+-i\,\eta_P^{-1}\gamma^k\eta_P\,\partial/\partial Q_k-m\Big)\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 so $P[\psi]$ solves the equation when
 $$
@@ -109,15 +109,15 @@ i.e. when $\eta_P$ commutes with $\gamma^0$ and anticommutes with each $\gamma^k
 
 Define
 $$
-T[\psi](t,\vec x)=\eta_T\,\psi^{*}(-t,\vec x),\qquad \eta_T=\gamma^1\gamma^3 .
+T[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\eta_T\,\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\qquad \eta_T=\gamma^1\gamma^3 .
 $$
 The time derivative changes sign, the spatial derivatives do not, and the field is conjugated:
 $$
-(i\gamma^\mu\partial_\mu-m)\,T[\psi]
-=\eta_T\Big(-i\,\eta_T^{-1}\gamma^0\eta_T\,\partial_0
-+i\,\eta_T^{-1}\gamma^k\eta_T\,\partial_k-m\Big)\psi^{*},
+(i\gamma^\mu\partial/\partial Q_\mu-m)\,T[\psi]
+=\eta_T\Big(-i\,\eta_T^{-1}\gamma^0\eta_T\,\partial/\partial Q_t
++i\,\eta_T^{-1}\gamma^k\eta_T\,\partial/\partial Q_k-m\Big)\psi^{*},
 $$
-evaluated at $(-t,\vec x)$, to be matched against the conjugate equation at the same argument. This requires
+evaluated at $(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, to be matched against the conjugate equation at the same argument. This requires
 $$
 \eta_T^{-1}\gamma^0\eta_T=\gamma^{0*},\qquad
 \eta_T^{-1}\gamma^k\eta_T=-\gamma^{k*} .
@@ -130,15 +130,15 @@ The conjugation in $T$ is not a calculational convenience; it is the definition 
 $$
 T[i\psi]=\eta_T(i\psi)^{*}=\eta_T(-i)\psi^{*}=-i\,\eta_T\psi^{*}=-i\,T[\psi].
 $$
-An anti-linear map with this property conjugates the scalar imaginary, and this is the sense in which $T$ is anti-unitary and $C$, which is also anti-linear, is not: $C$ does not carry a time reflection, and in the standard classification the anti-unitary discrete symmetry is $T$. The framework's single scalar imaginary $i$ — the same $i$ that appears in the $ict$ gradient and in the volume element $\omega$ — is exactly what the conjugation negates. We record this because a time reversal written without the conjugation (as $T:\psi\mapsto\eta_T\psi(-t,\vec x)$) is a different, linear map, and is *not* a symmetry of the Dirac equation.
+An anti-linear map with this property conjugates the scalar imaginary, and this is the sense in which $T$ is anti-unitary and $C$, which is also anti-linear, is not: $C$ does not carry a time reflection, and in the standard classification the anti-unitary discrete symmetry is $T$. The framework's single scalar imaginary $i$ — the same $i$ that appears in the $ict$ gradient and in the volume element $\omega$ — is exactly what the conjugation negates. We record this because a time reversal written without the conjugation (as $T:\psi\mapsto\eta_T\psi(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$) is a different, linear map, and is *not* a symmetry of the Dirac equation.
 
 The three operations are collected below. The last column records the chirality action that follows from the parity of the internal matrix.
 
 | Operation | Action on $\psi$ | $\eta$ | Linear? | Chirality |
 |---|---|---|---|---|
 | $C$ | $\eta_C\,\psi^{*}(x)$ | $i\gamma^2$ (odd) | anti-linear | flips |
-| $P$ | $\eta_P\,\psi(t,-\vec x)$ | $\gamma^0$ (odd) | linear | flips |
-| $T$ | $\eta_T\,\psi^{*}(-t,\vec x)$ | $\gamma^1\gamma^3=-e_2$ (even) | anti-linear | preserves |
+| $P$ | $\eta_P\,\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | $\gamma^0$ (odd) | linear | flips |
+| $T$ | $\eta_T\,\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | $\gamma^1\gamma^3=-\vec e_y$ (even) | anti-linear | preserves |
 
 Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not fixed by the requirement that the equation be preserved; only the intertwining identities are, and they fix the internal matrix only up to an arbitrary nonzero complex multiple. The companion on the electron uses $C=i\gamma^2\gamma^0$ acting on $\bar{\psi}^{T}$, which corresponds to $\eta_C=i\gamma^2$ here, and we follow that alignment. Second, the individual phases are not observable; what is observable is the composition, and changing a phase changes the internal factor of the composition, which is why the composition must be checked independently (next section).
 
@@ -147,9 +147,9 @@ Two remarks on conventions. First, the phases of $\eta_C$ and $\eta_T$ are not f
 The verification was carried out on the differential equation itself, not only on a momentum-space identity, and on cases other than the one that suggested the definitions. The working field was the general solution
 $$
 \psi=(\not p+m)\chi\,\exp(-ip\cdot x)+(\not p-m)\chi'\,\exp(+ip\cdot x),
-\qquad p\cdot x=E_{\vec p}t-\vec p\cdot\vec x,\quad E_{\vec p}^2=\vec p^2+m^2,
+\qquad p\cdot x=E_{\vec p}t-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),\quad E_{\vec p}^2=\vec p^2+m^2,
 $$
-with $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ and $\chi,\chi'$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(i\gamma^\mu\partial_\mu-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
+with $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ and $\chi,\chi'$ arbitrary constant spinors; the first branch is positive-frequency and the second negative-frequency, and their sum is a general solution of the free equation by linearity. Substituting, conjugating and reflecting as the definitions require, the residual $(i\gamma^\mu\partial/\partial Q_\mu-m)$ acting on each transform was reduced symbolically and found to vanish. The checks were run for the three parameter sets
 $$
 (m,\vec p)=(3,(1,2,2)),\qquad (5,(3,4,0)),\qquad (\tfrac{7}{2},(1,0,-2)),
 $$
@@ -169,17 +169,17 @@ The individual checks are worth a word each, because they test different parts o
 Two negative results belong here, to prevent a future pass from claiming more than was checked.
 
 - The verification is of the **free** equation. Nothing was checked for a field with a local interaction, and no claim is made there. The reason the free check cannot be promoted is stated at the end of this article: the CPT theorem is precisely the statement that the composition survives interactions when the factors do not, and a free-field identity contains no information about that.
-- The operation $T$ was *not* defined as the linear map $\psi\mapsto\eta_T\psi(-t,\vec x)$ that is sometimes written. That map does not preserve the equation; the check was performed with the conjugation present.
+- The operation $T$ was *not* defined as the linear map $\psi\mapsto\eta_T\psi(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ that is sometimes written. That map does not preserve the equation; the check was performed with the conjugation present.
 
 ## The Algebra's Conjugations Are Not the Discrete Operations
 
 The temptation that the trap names is to identify one of the operations $C$, $P$, $T$ with one of the algebra's conjugations, or to read the particle–antiparticle pair as the sector pair. Three independent facts close the identification.
 
-**First, the conjugations preserve both sectors.** For a general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, membership in $\mathbb{M}_-$ means $Q_0$ purely imaginary and $Q_1,Q_2,Q_3$ real, and membership in $\mathbb{M}_+$ means $Q_0$ real and $Q_1,Q_2,Q_3$ purely imaginary. Each of ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ maps either condition to itself: conjugation negates the scalar or the vector coefficients but does not interchange the two patterns. The Hermitian conjugate is the identity on $\mathbb{M}_+$ and minus the identity on $\mathbb{M}_-$, so it *defines* the sectors rather than exchanging them. The map that interchanges them is $i\,\mathbb{M}_\pm=\mathbb{M}_\mp$, and $i$ is central, hence not a conjugation and not anti-linear. A particle–antiparticle or chiral-conjugate pair therefore cannot be placed one member in each sector.
+**First, the conjugations preserve both sectors.** For a general element $\tilde{Q}=\sum_\mu Q_\mu e_\mu$, membership in $\mathbb{M}_-$ means $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real, and membership in $\mathbb{M}_+$ means $Q_t$ real and $Q_x,Q_y,Q_z$ purely imaginary. Each of ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ maps either condition to itself: conjugation negates the scalar or the vector coefficients but does not interchange the two patterns. The Hermitian conjugate is the identity on $\mathbb{M}_+$ and minus the identity on $\mathbb{M}_-$, so it *defines* the sectors rather than exchanging them. The map that interchanges them is $i\,\mathbb{M}_\pm=\mathbb{M}_\mp$, and $i$ is central, hence not a conjugation and not anti-linear. A particle–antiparticle or chiral-conjugate pair therefore cannot be placed one member in each sector.
 
 **Second, the sector split and the chirality split are different decompositions of different objects.** The chiral projectors $P_{L,R}=\tfrac12(I_4\mp\gamma_5)$ act on the Dirac module $\Delta=S\oplus\bar S$ of complex dimension four. The sector projectors act on the algebra $\mathbb{B}$ of real dimension eight. They share no projector, and the electron article reaches the same conclusion from the physical side. Recorded here only because a reader who has just seen $C$ and $P$ exchange the chiral halves might try to read that exchange as a sector exchange; it is not one.
 
-**Third, the operations are module maps, and only $T$'s internal matrix belongs to the algebra.** $T$'s factor $\gamma^1\gamma^3=-e_2$ lies in $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ and acts by left multiplication; $C$'s $i\gamma^2$ and $P$'s $\gamma^0$ are odd and act off-diagonally, exchanging $S$ and $\bar{S}$. The odd part of $\mathrm{Cl}_{1,3}$ is not contained in the even subalgebra, so $C$ and $P$ have no representative in $\mathbb{B}$. This is the sharp form of the framework's difficulty with the discrete operations: the algebra contains the operations that preserve chirality ($T$, and the even Lorentz action) and does not contain those that exchange it ($C$ and $P$). The electroweakly relevant fact that $C$ and $P$ are precisely the operations Nature violates separately, while their product with $T$ is the one that survives, is not explained by this structure; it is the theorem's content, and it is imported.
+**Third, the operations are module maps, and only $T$'s internal matrix belongs to the algebra.** $T$'s factor $\gamma^1\gamma^3=-\vec e_y$ lies in $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$ and acts by left multiplication; $C$'s $i\gamma^2$ and $P$'s $\gamma^0$ are odd and act off-diagonally, exchanging $S$ and $\bar{S}$. The odd part of $\mathrm{Cl}_{1,3}$ is not contained in the even subalgebra, so $C$ and $P$ have no representative in $\mathbb{B}$. This is the sharp form of the framework's difficulty with the discrete operations: the algebra contains the operations that preserve chirality ($T$, and the even Lorentz action) and does not contain those that exchange it ($C$ and $P$). The electroweakly relevant fact that $C$ and $P$ are precisely the operations Nature violates separately, while their product with $T$ is the one that survives, is not explained by this structure; it is the theorem's content, and it is imported.
 
 The anti-linear part of $C$ and of $T$ is exactly the algebra's complex conjugation $\bar{\cdot}$. This is the same real-structure operation that relates $S$ to $\bar S$ and that distinguishes the two chiral halves inside the simple algebra, and it is what supplies the anti-linear part of the discrete operations. It is *not* the mass. The parent's mass term is the linear chiral pair of the Dirac article, and the algebra's anti-linear real structure $\flat=-{}^{*}$ is a separate, order-reversing conjugation whose pairing is a Majorana-type coupling. The discrete operations are symmetries of the kinetic equation; the real structure is a dynamical pairing.
 
@@ -187,9 +187,9 @@ The anti-linear part of $C$ and of $T$ is exactly the algebra's complex conjugat
 
 Compose the three operations in the order $C$, then $P$, then $T$, and write $\Theta=C\circ P\circ T$. Because $C$ and $T$ are anti-linear, the composition must be evaluated as a composition, not by multiplying the three internal matrices. Applied to a field $\psi$,
 $$
-\psi\xrightarrow{\;T\;}\eta_T\,\psi^{*}(-t,\vec x)
-\xrightarrow{\;P\;}\eta_P\eta_T\,\psi^{*}(-t,-\vec x)
-\xrightarrow{\;C\;}\eta_C\big(\eta_P\eta_T\big)^{*}\psi(-t,-\vec x),
+\psi\xrightarrow{\;T\;}\eta_T\,\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)
+\xrightarrow{\;P\;}\eta_P\eta_T\,\psi^{*}(-t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))
+\xrightarrow{\;C\;}\eta_C\big(\eta_P\eta_T\big)^{*}\psi(-t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)),
 $$
 so that
 $$
@@ -204,7 +204,7 @@ The agreement with the naive product in *this* convention is an accident of real
 
 The composition has the following verified properties.
 
-- **It is a symmetry of the free equation.** $\Theta[\psi]$ solves $(i\gamma^\mu\partial_\mu-m)\psi=0$ whenever $\psi$ does. This was checked on all three parameter sets and with both frequency branches present.
+- **It is a symmetry of the free equation.** $\Theta[\psi]$ solves $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ whenever $\psi$ does. This was checked on all three parameter sets and with both frequency branches present.
 - **It is complex-linear.** $\Theta[i\psi]=+i\,\Theta[\psi]$: the two anti-linear factors $C$ and $T$ combine into a linear map on the field, since $\Theta[\psi](x)=\eta_{CPT}\psi(-x)$ carries no conjugation. (The standard $CPT$ *operator* on the mode algebra is anti-unitary; that operator is not constructed here, and it is the field map that this article defines.)
 - **It reverses both the spacetime argument and the charge.** The argument is $-x$, and because $C$ exchanges the frequency branches, a particle is mapped to an antiparticle.
 - **It preserves chirality.** $C$ and $P$ each flip chirality and $T$ preserves it; the composition flips it twice. Equivalently, $\eta_{CPT}=i\omega$ commutes with $\gamma_5$, consistent with the fact that $\eta_{CPT}$ is an even element of the Clifford algebra.
@@ -227,7 +227,7 @@ A second interpretation of the same eight operations comes from the Clifford-alg
 | $A\mapsto \tilde{A}$ | reversion | $(-1)^{k(k-1)/2}$ |
 | $A\mapsto A^{\mathrm{rev}}$ | conjugation ($=\tilde{\star}$) | $(-1)^{k(k+1)/2}$ |
 
-The conjugation is the composite of the involution and the reversion, so the non-trivial maps form $\{1,\star,\sim,\mathrm{rev}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$. These are exactly the intrinsic maps that the corpus's *Clifford Algebra Representation* computes for $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, where the generators are the grade-one elements $ie_k$: the grade involution is the algebra's complex conjugation $\bar{\cdot}$, reversion is the Hermitian conjugation ${}^{*}$, and their composite, the Clifford conjugation, is the quaternion conjugation ${}^{\natural}$. The classification is therefore not foreign to the algebra; it names maps the algebra already has.
+The conjugation is the composite of the involution and the reversion, so the non-trivial maps form $\{1,\star,\sim,\mathrm{rev}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$. These are exactly the intrinsic maps that the corpus's *Clifford Algebra Representation* computes for $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, where the generators are the grade-one elements $i\vec e_k$: the grade involution is the algebra's complex conjugation $\bar{\cdot}$, reversion is the Hermitian conjugation ${}^{*}$, and their composite, the Clifford conjugation, is the quaternion conjugation ${}^{\natural}$. The classification is therefore not foreign to the algebra; it names maps the algebra already has.
 
 **The correspondence with $P$ and $T$.** The literature attaches the discrete operations to these maps by the dictionary: space inversion $P$ is the involutive automorphism $A\to A^{\star}$; time reversal $T$ is the antiautomorphism $A\to\tilde{A}$; and the full reflection $PT$ is the antiautomorphism $A\to A^{\mathrm{rev}}$. The four operations obtained from these by composing with charge conjugation, $C$, $CP$, $CT$ and $CPT$, correspond to the correspondingly twisted maps. Every operation is then a product of the three generators $P$, $T$ and $C$, each of order two, and the eight products close on themselves:
 
@@ -243,7 +243,7 @@ $$
 A\;\mapsto\;\bar{A}=\Pi\,A^{*}\,\Pi^{-1},
 $$
 
-the **complex conjugation** of the algebra element followed by the inner automorphism by a matrix $\Pi$. Here $\Pi$ is a product of Clifford generators and is determined only up to a scalar, and it does not preserve the real subalgebra — it conjugates the generators with a sign, $\Pi\gamma_{a^{\mathrm{fop}}}\Pi^{-1}=-\gamma_{a^{\mathrm{fop}}}$ — which is exactly why the map is a *pseudo*automorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. Theorem 1 of the source fixes the form of $\Pi$ by the division ring of the real subalgebra: for a real division ring $K\cong\mathbb{R}$ it is proportional to the unit matrix, and for a quaternionic one $K\cong\mathbb{H}$ it is a product of generators with $\Pi\dot{\Pi}=\pm I$. The matrix $\Pi$ is the charge-conjugation matrix, and it is at the algebra level the object that the module computation above fixes to $\eta_C=i\gamma^2$ up to the free phase; the classification is also where that free phase comes from, since $\Pi$ is determined only up to a scalar. The twisted character of $C$ — that it is not one of the algebra's three untwisted involutions — is the classification's form of this article's operational finding that $C$'s internal matrix is **odd** and outside $\mathbb{B}$.
+the **complex conjugation** of the algebra element followed by the inner automorphism by a matrix $\Pi$. Here $\Pi$ is a product of Clifford generators and is determined only up to a scalar, and it does not preserve the real subalgebra — it conjugates the generators with a sign, $\Pi\gamma_{a^{\mathrm{fop}}}\Pi^{-1}=-\gamma_{a^{\mathrm{fop}}}$ — which is exactly why the map is a *pseudo*automorphism rather than an automorphism of $\mathrm{Cl}_{n,m}$. Theorem 1 of the source fixes the form of $\Pi$ by the division ring of the real subalgebra: for a real division ring $K\cong\mathbb{R}$ it is proportional to the unit matrix, and for a quaternionic one $K\cong\mathbb{H}$ it is a product of generators with $\Pi\bar{\Pi}=\pm I$. The matrix $\Pi$ is the charge-conjugation matrix, and it is at the algebra level the object that the module computation above fixes to $\eta_C=i\gamma^2$ up to the free phase; the classification is also where that free phase comes from, since $\Pi$ is determined only up to a scalar. The twisted character of $C$ — that it is not one of the algebra's three untwisted involutions — is the classification's form of this article's operational finding that $C$'s internal matrix is **odd** and outside $\mathbb{B}$.
 
 **The level distinction, kept explicit.** The classification is a statement about $\mathrm{Cl}_{n,m}$ and its intrinsic maps; the operations of this article are maps of the Dirac **module**, defined by intertwiners and verified on the free equation. Passing from one to the other is a matter of the representation theory — of which inner element of the Clifford algebra implements a given automorphism on the spinor module — and this article does not carry it out. The correspondence above is therefore recorded as **transcribed**, from the Clifford treatment of the discrete symmetries, and it is stated as a correspondence of classifications rather than as a derivation of $\eta_C$ or $\eta_T$ from the algebra's involutions. What it adds to the explicit computation is structural: the eight operations are the fundamental automorphisms and their charge-conjugation twists, and the algebra's three conjugations $\bar{\cdot}$, ${}^{*}$ and ${}^{\natural}$ are the three non-trivial fundamental maps.
 
@@ -261,11 +261,11 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 **Established, and recomputed.**
 
-- The three operations $C[\psi]=i\gamma^2\psi^{*}$, $P[\psi]=\gamma^0\psi(t,-\vec x)$ and $T[\psi]=\gamma^1\gamma^3\psi^{*}(-t,\vec x)$ each preserve the free Dirac equation, verified on the differential equation for three on-shell momenta and on a superposition of both frequency branches.
+- The three operations $C[\psi]=i\gamma^2\psi^{*}$, $P[\psi]=\gamma^0\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ and $T[\psi]=\gamma^1\gamma^3\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ each preserve the free Dirac equation, verified on the differential equation for three on-shell momenta and on a superposition of both frequency branches.
 - $T$ is anti-unitary, $T[i\psi]=-i\,T[\psi]$; $C$ is anti-linear; $P$ is linear.
 - $C$ and $P$ anticommute with $\gamma_5$ and exchange the chiral halves; $T$ commutes with $\gamma_5$; $CPT$ preserves chirality.
 - $C$ exchanges the frequency branches, hence the particle and antiparticle modes.
-- Of the internal matrices, $\gamma^1\gamma^3=-e_2$ is even and belongs to $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$, while $i\gamma^2$ and $\gamma^0$ are odd and do not belong to $\mathbb{B}$.
+- Of the internal matrices, $\gamma^1\gamma^3=-\vec e_y$ is even and belongs to $\mathbb{H}_{\mathbb{B}}\subset\mathbb{B}$, while $i\gamma^2$ and $\gamma^0$ are odd and do not belong to $\mathbb{B}$.
 - The algebra's conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ preserve both sectors; ${}^{*}$ is $+1$ on $\mathbb{M}_+$ and $-1$ on $\mathbb{M}_-$; the sector swap is the central multiplication by $i$. No discrete operation is a sector swap.
 - The composition $\Theta=C\circ P\circ T$ acts as $\eta_{CPT}\psi(-x)$ with $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$, verified as a composition; in the aligned convention $\eta_{CPT}=i\omega=\gamma_5$, with $\omega$ the volume element identified with the scalar imaginary. The naive product differs from the true composition once the phases are not real.
 - The algebra's three conjugations are the three non-trivial fundamental automorphisms of its Clifford form: $\bar{\cdot}$ is the grade involution, ${}^{*}$ the reversion, and ${}^{\natural}$ their composite, the Clifford conjugation. This is the companion *Clifford Algebra Representation*'s computation, not a new claim, and it is the one point where the Clifford classification and the algebra meet without transcription.
@@ -302,9 +302,9 @@ the **complex conjugation** of the algebra element followed by the inner automor
 
 ## Summary
 
-The biquaternion framework carries the three discrete operations on its spinor-module Dirac field. Charge conjugation is $C[\psi]=i\gamma^2\psi^{*}$; parity is $P[\psi](t,\vec x)=\gamma^0\psi(t,-\vec x)$; time reversal is $T[\psi](t,\vec x)=\gamma^1\gamma^3\psi^{*}(-t,\vec x)$. Each was verified separately to preserve the free equation $(i\gamma^\mu\partial_\mu-m)\psi=0$, on the differential equation, for three on-shell momenta and on a superposition of both frequency branches. Time reversal is anti-unitary, $T[i\psi]=-i\,T[\psi]$, and so conjugates the framework's scalar imaginary. Charge conjugation and parity anticommute with $\gamma_5$ and exchange the chiral halves; time reversal commutes with $\gamma_5$; the composition preserves chirality.
+The biquaternion framework carries the three discrete operations on its spinor-module Dirac field. Charge conjugation is $C[\psi]=i\gamma^2\psi^{*}$; parity is $P[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\gamma^0\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$; time reversal is $T[\psi](t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\gamma^1\gamma^3\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. Each was verified separately to preserve the free equation $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$, on the differential equation, for three on-shell momenta and on a superposition of both frequency branches. Time reversal is anti-unitary, $T[i\psi]=-i\,T[\psi]$, and so conjugates the framework's scalar imaginary. Charge conjugation and parity anticommute with $\gamma_5$ and exchange the chiral halves; time reversal commutes with $\gamma_5$; the composition preserves chirality.
 
-The operations are kept distinct from the algebra's own conjugations. The quaternion, complex and Hermitian conjugates all preserve both sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, and the Hermitian conjugate defines them; the sector swap is multiplication by the central scalar imaginary $i$, which is not a conjugation. The transition between the two sectors is therefore not the particle–antiparticle or chiral-conjugate transition; the temptation to read it so is the trap the companion articles record, and it is refuted by the fixed-point definitions. Of the internal matrices, only $\gamma^1\gamma^3=-e_2$ is even and belongs to the biquaternion algebra; $i\gamma^2$ and $\gamma^0$ are odd, so charge conjugation and parity are operations of the Clifford algebra and the module, not inner operations of $\mathbb{B}$.
+The operations are kept distinct from the algebra's own conjugations. The quaternion, complex and Hermitian conjugates all preserve both sectors $\mathbb{M}_-$ and $\mathbb{M}_+$, and the Hermitian conjugate defines them; the sector swap is multiplication by the central scalar imaginary $i$, which is not a conjugation. The transition between the two sectors is therefore not the particle–antiparticle or chiral-conjugate transition; the temptation to read it so is the trap the companion articles record, and it is refuted by the fixed-point definitions. Of the internal matrices, only $\gamma^1\gamma^3=-\vec e_y$ is even and belongs to the biquaternion algebra; $i\gamma^2$ and $\gamma^0$ are odd, so charge conjugation and parity are operations of the Clifford algebra and the module, not inner operations of $\mathbb{B}$.
 
 The composition was checked as a composition. Because $C$ and $T$ are anti-linear, $\Theta=C\circ P\circ T$ has internal factor $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$, equal to $i\omega=\gamma_5$ in the convention used here, where $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ is the volume element the framework identifies with the scalar imaginary. The composition is complex-linear, maps particles to antiparticles, and preserves chirality. What the framework establishes is that the free Dirac equation carries these operations and their composition, with the anti-linearity supplied by the algebra's complex conjugation in $C$ and $T$; what it transcribes is the CPT theorem. A free-field check is not the theorem, whose content is the survival of the composition under interactions, and the $\mathbb{B}$-intrinsic forms of $C$ and $P$ remain open.
 
@@ -315,25 +315,25 @@ The Clifford-algebra literature supplies a second interpretation of the same eig
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ $(j\ne k)$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ $(\mu\ne\nu)$ |
 | $i$ | Scalar imaginary, $i^2=-1$; the matrix realization gives $iI_2$ on the module, and the Clifford isomorphism $\mathbb{B}\to\mathrm{Cl}_{1,3}^{+}$ (a different map from $\mathsf{M}_2$) sends it to $\omega$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Real-quaternion subspace; centre |
+| $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Real-quaternion subspace; centre |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex, and Hermitian conjugations |
 | $\tilde{Q}^{\flat}=-\tilde{Q}^{*}$ | Anti-Hermitian conjugate; the algebra's real structure, $\mathbb{C}$-antilinear and order-reversing |
-| $\mathsf{M}_2(e_k)=-i\sigma_k,\ \mathsf{M}_2(i)=iI_2$ | Matrix realization, $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ |
+| $\mathsf{M}_2(\vec e_k)=-i\sigma_k,\ \mathsf{M}_2(i)=iI_2$ | Matrix realization, $\mathsf{M}_2(\tilde{Q}^{*})=\mathsf{M}_2(\tilde{Q})^{\dagger}$ |
 | $S=\mathbb{C}^2=(\tfrac12,0)$, $\bar{S}=(0,\tfrac12)$, $\Delta=S\oplus\bar{S}$ | Spinor module, conjugate, Dirac module |
-| $\tilde{\nabla}=e_0\partial_{ict}+e_k\partial_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
+| $\tilde{\nabla}=e_t\partial/\partial Q_t+\vec e_k\partial/\partial Q_k$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient and d'Alembertian |
 | $\tilde{\Psi}$, $\tilde{\Psi}^{\flat}$ | Biquaternion Dirac field and its anti-Hermitian conjugate |
-| $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(i\gamma^\mu\partial_\mu-m)\psi=0$ |
+| $\psi=(\psi_L,\psi_R)^{T}$ | Spinor-module representative; $(i\gamma^\mu\partial/\partial Q_\mu-m)\psi=0$ |
 | $\gamma^\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Block gamma matrices and Clifford metric; $\eta=-g$ |
-| $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ | Feynman slash; $p\cdot x=E_{\vec p}t-\vec p\cdot\vec x$ |
+| $\not p=\gamma^0E_{\vec p}-\boldsymbol{\gamma}\cdot\vec p$ | Feynman slash; $p\cdot x=E_{\vec p}t-\vec p\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ |
 | $\gamma_5=i\omega$, $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ | Chirality operator and volume element; $\eta_{CPT}=i\omega=\gamma_5$ |
 | $P_{L,R}=\tfrac12(I_4\mp\gamma_5)$ | Chiral projectors |
 | $w^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (solutions article) |
 | $C[\psi]=i\gamma^2\psi^{*}$ | Charge conjugation (anti-linear); $\eta_C\gamma^{\mu*}\eta_C^{-1}=-\gamma^\mu$ |
-| $P[\psi]=\gamma^0\psi(t,-\vec x)$ | Parity (linear); $\eta_P^{-1}\gamma^0\eta_P=\gamma^0$, $\eta_P^{-1}\gamma^k\eta_P=-\gamma^k$ |
-| $T[\psi]=\gamma^1\gamma^3\psi^{*}(-t,\vec x)$ | Time reversal (anti-unitary); $\gamma^1\gamma^3=-e_2$ |
+| $P[\psi]=\gamma^0\psi(t,-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ | Parity (linear); $\eta_P^{-1}\gamma^0\eta_P=\gamma^0$, $\eta_P^{-1}\gamma^k\eta_P=-\gamma^k$ |
+| $T[\psi]=\gamma^1\gamma^3\psi^{*}(-t,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Time reversal (anti-unitary); $\gamma^1\gamma^3=-\vec e_y$ |
 | $\Theta=C\circ P\circ T$ | CPT composition; $\Theta[\psi](x)=\eta_{CPT}\psi(-x)$ |
 | $\eta_{CPT}=\eta_C\eta_P^{*}\eta_T^{*}$ | Internal factor of the composition |
 | $A^{\star}$, $\tilde{A}$, $A^{\mathrm{rev}}$ | Fundamental automorphisms of $\mathrm{Cl}_{n,m}$: grade involution, reversion, Clifford conjugation; on $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ they are $\bar{\cdot}$, ${}^{*}$, ${}^{\natural}$ |

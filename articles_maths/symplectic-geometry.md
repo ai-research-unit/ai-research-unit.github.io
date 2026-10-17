@@ -77,7 +77,7 @@ where $X^\#$ is the fundamental vector field of the coadjoint action generated b
 
 The central local fact of symplectic geometry is that a symplectic form has no local invariants at all.
 
-**Theorem (Darboux).** Let $(M, \omega)$ be a symplectic manifold of dimension $2m$. About every point $x \in M$ there is a chart $(U, x_1, \ldots, x_m, y_1, \ldots, y_m)$ centred at $x$ in which
+**Theorem (Darboux).** Let $(M, \omega)$ be a symplectic manifold of dimension $2m$. About every point $x \in M$ there is a chart $(\Xi, x_1, \ldots, x_m, y_1, \ldots, y_m)$ centred at $x$ in which
 
 $$
 \omega = \sum_{i=1}^{m} dx_i \wedge dy_i .
@@ -161,7 +161,7 @@ is a homomorphism of Lie algebras from $(C^\infty(M), -\{\cdot,\cdot\})$ onto th
 
 **Proof.** The image is closed under the commutator, because $[X_f, X_g] = -X_{\{f,g\}} = X_{-\{f,g\}}$; with the bracket $-\{\cdot,\cdot\}$ on functions, the identity is the statement that $f\mapsto X_f$ preserves the bracket. The kernel consists of the functions with $df = 0$, that is, the locally constant functions. If $f$ is locally constant then $\{f,g\} = X_g(f) = 0$ for every $g$, so it is central; conversely a central $f$ has $\omega(X_f, X_g) = 0$ for all $g$ and hence $X_f = 0$, so $f$ is locally constant.
 
-**Remark.** The identity $[X_f, X_g] = -X_{\{f,g\}}$ explains the sign that appears between the two descriptions: the map $f\mapsto X_f$ is a homomorphism for the bracket or for its negative, but not for both, and the convention chosen here is the one that makes $\iota_{X_f}\omega = df$ hold. The Hamiltonian vector field is the infinitesimal generator of a one-parameter group of symplectomorphisms, because $\mathcal{L}_{X_f}\omega = d\,\iota_{X_f}\omega + \iota_{X_f}d\omega = d^2f = 0$. The flow itself is the solution of the ordinary differential equation $\dot{x} = X_f(x)$, and that differential equation, its existence theory and its long-time behaviour are treated in Part III, where the limit and the derivative of a curve are available.
+**Remark.** The identity $[X_f, X_g] = -X_{\{f,g\}}$ explains the sign that appears between the two descriptions: the map $f\mapsto X_f$ is a homomorphism for the bracket or for its negative, but not for both, and the convention chosen here is the one that makes $\iota_{X_f}\omega = df$ hold. The Hamiltonian vector field is the infinitesimal generator of a one-parameter group of symplectomorphisms, because $\mathcal{L}_{X_f}\omega = d\,\iota_{X_f}\omega + \iota_{X_f}d\omega = d^2f = 0$. The flow itself is the solution of the ordinary differential equation $dx/dt = X_f(x)$, and that differential equation, its existence theory and its long-time behaviour are treated in Part III, where the limit and the derivative of a curve are available.
 
 ## Symplectomorphisms and the Flux
 
@@ -197,7 +197,7 @@ is exact, the last map sending $X$ to the class $[\iota_X\omega]$.
 
 **Example.** Let $N \subseteq Q$ be a submanifold. Its **conormal bundle** $\nu^*N \subseteq T^*Q$ consists of the covectors annihilating $TN$. It is Lagrangian: in adapted coordinates with $N$ given by $q^{k+1} = \cdots = q^m = 0$, it is described by $q^{k+1} = \cdots = q^m = p_1 = \cdots = p_k = 0$, on which $\omega = \sum_i dq^i\wedge dp_i$ vanishes, and its dimension is $m$. The zero section is the case $N = Q$.
 
-**Theorem (Lagrangian neighbourhood theorem).** Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $U$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : U \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.
+**Theorem (Lagrangian neighbourhood theorem).** Let $L$ be a closed Lagrangian submanifold of a symplectic manifold $(M, \omega)$. Then there is a neighbourhood $\Xi$ of $L$ in $M$, a neighbourhood $V$ of the zero section of $T^*L$ and a symplectomorphism $\Phi : \Xi \to V$ that restricts to the identity on $L$, where $T^*L$ carries the form $-d\theta$ of its tautological form.
 
 **Proof sketch.** The bundle isomorphism $TL^{\perp} \cong T^*L$ identifies the normal bundle of $L$ with $T^*L$, and the exponential map of an auxiliary Riemannian metric provides a diffeomorphism from a neighbourhood of the zero section of $TL^{\perp}$ to a neighbourhood of $L$. Pulling $\omega$ back to $T^*L$ gives a closed form agreeing with the standard form along the zero section; the Moser argument of the Darboux theorem, applied with the linear homotopy between the two forms and the fact that they are cohomologous, produces a diffeomorphism of a possibly smaller neighbourhood correcting the difference.
 
@@ -245,7 +245,7 @@ where $i : \mu^{-1}(0) \hookrightarrow M$ is the inclusion and $\pi : \mu^{-1}(0
 
 **Proof sketch.** The regular-value theorem makes $\mu^{-1}(0)$ a submanifold and the quotient a manifold; the tangent space to an orbit is the space of fundamental vector fields, which are Hamiltonian, and the $2$-form $i^*\omega$ annihilates the orbit directions because $\omega(X^{\#}, \cdot) = d\mu_X$ vanishes on $\mu^{-1}(0)$; so $i^*\omega$ descends along $\pi$ and is nondegenerate on the quotient by dimension count, the quotient being symplectic of the stated dimension.
 
-**Example.** Take $G = U(1)$ acting on $\mathbb{C}^n$ by scalar multiplication with momentum map $\mu(z) = c - |z|^2/2$, where $c > 0$ is a constant; the level $\mu^{-1}(0)$ is the sphere $|z|^2 = 2c$, and the reduced space $\mu^{-1}(0)/U(1)$ is the complex projective space $\mathbb{CP}^{n-1}$, with the induced form the Fubini–Study form. This is the standard construction of the projective spaces as symplectic quotients, and it is the first appearance of the Kähler structures developed.
+**Example.** Take $G = \mathrm{U}(1)$ acting on $\mathbb{C}^n$ by scalar multiplication with momentum map $\mu(z) = c - |z|^2/2$, where $c > 0$ is a constant; the level $\mu^{-1}(0)$ is the sphere $|z|^2 = 2c$, and the reduced space $\mu^{-1}(0)/\mathrm{U}(1)$ is the complex projective space $\mathbb{CP}^{n-1}$, with the induced form the Fubini–Study form. This is the standard construction of the projective spaces as symplectic quotients, and it is the first appearance of the Kähler structures developed.
 
 **Remark.** Reduction is the origin of most of the nontrivial examples of symplectic manifolds, and it is the exact symplectic analogue of the quotient of a manifold by a group action. Its representation-theoretic refinement, the orbit method, identifies the coadjoint orbits of a Lie group with the symplectic manifolds carrying its irreducible representations; the Lie-theoretic input is that of *Lie Groups*, and the applications to representations belong there and to *Representation Theory of Locally Compact Groups*.
 

@@ -13,7 +13,7 @@ has for its null set the zero-divisor cone of the algebra. This article develops
 
 The form itself, its polarisation and its quadratic space are *Norm and Invertibility in the General Quaternionic Algebra*; the remarkable subspaces and their restriction matrices are *Remarkable Subspaces under the General Quaternionic Algebra*; the classification of the isotropic elements is *Zero Divisors of the Biquaternion Algebra*; the projective picture of the cone, the quadric surface, the Klein quadric and the Plücker embedding are *The Null Quadric and Its Projective Geometry*; and the invertibility criterion that makes the cone the boundary of the group of units is *Norm and Invertibility in the General Quaternionic Algebra*. The topology of the cone, its dimension, its apex and its link are *The Topology of the Zero-Divisor Cone*; the index, the defect and the signature of the realified form are *The Realification of the Four Forms*, and their values on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu$, $q_\mu,q'_\mu\in\mathbb{R}$, so that $\tilde{Q}=\sum_\mu q_\mu e_\mu+\sum_\mu q'_\mu\,ie_\mu$ on the eight real basis elements. The norm is $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$, and $\|\tilde Q\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$ is the definite norm of the coefficient space.
 
 ## The Null Cone
 
@@ -38,13 +38,13 @@ The projective geometry of the cone is *The Null Quadric and Its Projective Geom
 **Proposition (the maximal totally isotropic planes).** Over $\mathbb{C}$ the maximal totally isotropic dimension is $2$, and the maximal totally isotropic subspaces are the planes of two families. The two planes
 
 $$
-W_{+}=\mathbb{C}\{e_0+ie_1,\;e_2+ie_3\},\qquad
-W_{-}=\mathbb{C}\{e_0+ie_1,\;e_2-ie_3\}
+W_{+}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y+i\vec e_z\},\qquad
+W_{-}=\mathbb{C}\{e_t+i\vec e_x,\;\vec e_y-i\vec e_z\}
 $$
 
 are totally isotropic, one from each family; through each non-singular point of the cone passes one plane of each family, and two planes of the same family meet only at the origin, while two planes of the two families meet along a line.
 
-*Proof.* On the generators of $W_+$ the form vanishes, $\langle e_0+ie_1,e_0+ie_1\rangle=1+i^{2}=0$, $\langle e_2+ie_3,e_2+ie_3\rangle=1+i^{2}=0$ and $\langle e_0+ie_1,e_2+ie_3\rangle=0$, and the same computation holds for $W_-$; a $\mathbb{C}$-bilinear form vanishing on a generating set vanishes on the span, so both planes are totally isotropic. The two differ in the sign carried by the $e_3$ direction, and that is what puts them in different families: $W_+\cap W_-=\mathbb{C}(e_0+ie_1)$, a line, so the two planes meet rather than being skew, while the planes of a single family, such as $\mathbb{C}\{e_0+ie_1,e_2+ie_3\}$ and its sign-mirror $\mathbb{C}\{e_0-ie_1,e_2-ie_3\}$, intersect only at the origin. The upper bound is the Witt index of the form, which is $2$ over $\mathbb{C}$: the two-dimensional plane $\mathbb{C}\{e_0+ie_2,\;e_1+ie_3\}$ is totally isotropic and of dimension $2$, and no three-dimensional subspace can be isotropic because the form is non-degenerate of rank $4$. The two families are those attached to the quadric in *The Null Quadric and Its Projective Geometry*.
+*Proof.* On the generators of $W_+$ the form vanishes, $\langle e_t+i\vec e_x,e_t+i\vec e_x\rangle=1+i^{2}=0$, $\langle \vec e_y+i\vec e_z,\vec e_y+i\vec e_z\rangle=1+i^{2}=0$ and $\langle e_t+i\vec e_x,\vec e_y+i\vec e_z\rangle=0$, and the same computation holds for $W_-$; a $\mathbb{C}$-bilinear form vanishing on a generating set vanishes on the span, so both planes are totally isotropic. The two differ in the sign carried by the $\vec e_z$ direction, and that is what puts them in different families: $W_+\cap W_-=\mathbb{C}(e_t+i\vec e_x)$, a line, so the two planes meet rather than being skew, while the planes of a single family, such as $\mathbb{C}\{e_t+i\vec e_x,\vec e_y+i\vec e_z\}$ and its sign-mirror $\mathbb{C}\{e_t-i\vec e_x,\vec e_y-i\vec e_z\}$, intersect only at the origin. The upper bound is the Witt index of the form, which is $2$ over $\mathbb{C}$: the two-dimensional plane $\mathbb{C}\{e_t+i\vec e_y,\;\vec e_x+i\vec e_z\}$ is totally isotropic and of dimension $2$, and no three-dimensional subspace can be isotropic because the form is non-degenerate of rank $4$. The two families are those attached to the quadric in *The Null Quadric and Its Projective Geometry*.
 
 **Corollary (the maximal totally isotropic dimension of the realified form).** The realified form of signature $(4,4)$ has maximal totally isotropic real dimension $4$.
 
@@ -64,7 +64,7 @@ $$
 
 so the left ideal $\mathbb{B}\tilde Q$ is totally isotropic; it has complex dimension $2$, and a totally isotropic subspace of the four-dimensional complex algebra has complex dimension at most $2$, since the form is non-degenerate of Witt index $2$. So $\mathbb{B}\tilde Q$ is maximal, and conversely a maximal totally isotropic left ideal is generated by a null element and is minimal. The right-handed statements are the mirror.
 
-The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi,\vec\Upsilon_1,f,\vec\Upsilon_2$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, where $\tilde\Pi=\tfrac12(e_0+ie_1)$, $f=e_0-\tilde\Pi$, $\vec\Upsilon_1=e_3+ie_2$ and $\vec\Upsilon_2=e_3-ie_2$, the Gram matrix of the form is
+The theorem is not an equality of families: the maximal totally isotropic subspaces form a larger family than the one-sided ideals, and the two families meet in the minimal ideals. In the Peirce basis $\tilde\Pi,\vec\Upsilon_x,f,\vec\Upsilon_y$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, where $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$, $f=e_t-\tilde\Pi$, $\vec\Upsilon_x=\vec e_z+i\vec e_y$ and $\vec\Upsilon_y=\vec e_z-i\vec e_y$, the Gram matrix of the form is
 
 $$
 \begin{pmatrix}
@@ -75,19 +75,19 @@ $$
 \end{pmatrix},
 $$
 
-an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\vec\Upsilon_1$ with the nilpotent line $\mathbb{C}\vec\Upsilon_2$. The two minimal left ideals $\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_1$ and $\mathbb{B}f=\mathbb{C}f\oplus\mathbb{C}\vec\Upsilon_2$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\vec\Upsilon_2$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal, since it mixes the two.
+an antidiagonal matrix: **the form is hyperbolic in the Peirce basis, and the four Peirce lines are paired by it**, the idempotent line $\mathbb{C}\tilde\Pi$ with the idempotent line $\mathbb{C}f$ and the nilpotent line $\mathbb{C}\vec\Upsilon_x$ with the nilpotent line $\mathbb{C}\vec\Upsilon_y$. The two minimal left ideals $\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\vec\Upsilon_x$ and $\mathbb{B}f=\mathbb{C}f\oplus\mathbb{C}\vec\Upsilon_y$ are maximal totally isotropic by the theorem, and the span of $\tilde\Pi$ and $\vec\Upsilon_y$, one line from each, is a maximal totally isotropic subspace that is **not** a left ideal, since it mixes the two.
 
 **Corollary (the isotropic lines of the remarkable subspaces).** Since the null elements of the form are exactly the zero divisors, its isotropic lines inside the remarkable subspaces are their zero-divisor lines, tabulated in *Remarkable Subspaces under the General Quaternionic Algebra*, §*The Isotropic Lines of the Indefinite Restrictions*; no isotropic subspace beyond a line lies inside a single one of the remarkable subspaces, since each restriction is non-degenerate.
 
 ## Worked Examples
 
-**A null vector of the vector subspace.** For $\tilde Q=e_1+ie_2$ the norm is $1+i^{2}=0$, so the element lies on the cone and is a zero divisor; it is one of the isotropic directions of the vector subspace, a point of the conic $\sum_kQ_k^{2}=0$.
+**A null vector of the vector subspace.** For $\tilde Q=\vec e_x+i\vec e_y$ the norm is $1+i^{2}=0$, so the element lies on the cone and is a zero divisor; it is one of the isotropic directions of the vector subspace, a point of the conic $\sum_kQ_k^{2}=0$.
 
-**A non-pure null element.** For $\tilde Q=e_0+ie_1$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *Zero Divisors of the Biquaternion Algebra*.
+**A non-pure null element.** For $\tilde Q=e_t+i\vec e_x$ the norm is again $1+i^{2}=0$, but the element is not pure: it is a non-pure zero divisor, so the cone has points outside the pure cone of the vector subspace, and the classification of the two families is *Zero Divisors of the Biquaternion Algebra*.
 
-**A point of each family.** On the complex generators displayed, $\langle e_0+ie_1,e_2+ie_3\rangle_{\natural}=0$ and $\langle e_0+ie_1,e_2-ie_3\rangle_{\natural}=0$, so the line $\mathbb{C}(e_0+ie_1)$ lies in one plane of each family; the two planes $W_+$ and $W_-$ meet along it, as the proposition records.
+**A point of each family.** On the complex generators displayed, $\langle e_t+i\vec e_x,\vec e_y+i\vec e_z\rangle_{\natural}=0$ and $\langle e_t+i\vec e_x,\vec e_y-i\vec e_z\rangle_{\natural}=0$, so the line $\mathbb{C}(e_t+i\vec e_x)$ lies in one plane of each family; the two planes $W_+$ and $W_-$ meet along it, as the proposition records.
 
-**A unit outside the cone.** For $\tilde Q=e_0+e_1$ the norm is $1+1=2\neq0$, so the element is a unit and lies off the cone: the cone is exactly the zero-divisor set.
+**A unit outside the cone.** For $\tilde Q=e_t+\vec e_x$ the norm is $1+1=2\neq0$, so the element is a unit and lies off the cone: the cone is exactly the zero-divisor set.
 
 ## Summary
 
@@ -100,7 +100,7 @@ The null cone of the general quaternionic bilinear form is $\sum_\mu Q_\mu^2=0$,
 | $\mathcal N_{\natural}=\{\tilde Q:\sum_\mu Q_\mu^2=0\}$ | The null cone of the general quaternionic bilinear form |
 | real dimension $6$ | Its dimension in $\mathbb B$; complex dimension $3$ |
 | $\mathcal N_{\natural}\setminus\{0\}$ | The zero-divisor set of the algebra |
-| $W_+=\mathbb{C}\{e_0+ie_1,e_2+ie_3\}$, $W_-=\mathbb{C}\{e_0+ie_1,e_2-ie_3\}$ | The two maximal totally isotropic planes, one from each family |
+| $W_+=\mathbb{C}\{e_t+i\vec e_x,\vec e_y+i\vec e_z\}$, $W_-=\mathbb{C}\{e_t+i\vec e_x,\vec e_y-i\vec e_z\}$ | The two maximal totally isotropic planes, one from each family |
 | index $4$ | The number of negative directions of the realified form on $\mathbb{R}^8$ |
 
 ## Further Reading

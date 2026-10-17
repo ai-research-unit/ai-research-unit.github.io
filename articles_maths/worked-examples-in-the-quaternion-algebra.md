@@ -8,50 +8,50 @@ This article works the constructions of the quaternion algebra on explicit eleme
 The element worked throughout is
 
 $$
-\tilde q = 1 + 2e_1 - e_2 + 3e_3,
+\tilde q = 1 + 2\vec e_x - \vec e_y + 3\vec e_z,
 $$
 
-with scalar part $q_0 = 1$ and vector part $\vec q = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
+with scalar part $q_t = 1$ and vector part $\vec q = 2\vec e_x - \vec e_y + 3\vec e_z$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
 
-Throughout, the basis is $e_0 = 1, e_1, e_2, e_3$ with
+Throughout, the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with
 
 $$
-e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0, \qquad e_1e_2 = e_3, \quad e_2e_3 = e_1, \quad e_3e_1 = e_2,
+\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = \vec e_x\vec e_y\vec e_z = -e_t, \qquad \vec e_x\vec e_y = \vec e_z, \quad \vec e_y\vec e_z = \vec e_x, \quad \vec e_z\vec e_x = \vec e_y,
 $$
 
-and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the quaternion norm $\langle\cdot\rangle_{\natural}$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
+and the products in the opposite order are the negatives. A quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, the conjugate is $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, and the quaternion norm $\langle\cdot\rangle_{\natural}$ is that of *Quaternion Norm and Invertibility*, named here and not defined again.
 
 ## The Three Involutions
 
 **Definition.** The three **involutions** of the quaternion algebra are the real-linear maps
 
 $$
-\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3, \qquad -\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad -\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3,
+\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z, \qquad -\tilde{q}^{\natural} = -q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \qquad -\tilde q = -q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z,
 $$
 
 called quaternion, vector and total conjugation. Each is an involution: applying it twice returns $\tilde q$.
 
 **Proposition.** The three involutions are ${}^{\natural}$, $-{}^{\natural}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.
 
-*Proof.* The first negates the vector part and fixes the scalar part, $q_0-\vec q$; the second is its negative, $-q_0+\vec q = -(q_0-\vec q)$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\vec q$. Composing the sign changes independently in the two parts gives the Klein four-group.
+*Proof.* The first negates the vector part and fixes the scalar part, $q_t-\vec q$; the second is its negative, $-q_t+\vec q = -(q_t-\vec q)$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_t-\vec q$. Composing the sign changes independently in the two parts gives the Klein four-group.
 
-**Worked values.** For $\tilde q = 1+2e_1-e_2+3e_3$,
+**Worked values.** For $\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z$,
 
 $$
-\tilde{q}^{\natural} = 1-2e_1+e_2-3e_3, \qquad -\tilde{q}^{\natural} = -1+2e_1-e_2+3e_3, \qquad -\tilde q = -1-2e_1+e_2-3e_3.
+\tilde{q}^{\natural} = 1-2\vec e_x+\vec e_y-3\vec e_z, \qquad -\tilde{q}^{\natural} = -1+2\vec e_x-\vec e_y+3\vec e_z, \qquad -\tilde q = -1-2\vec e_x+\vec e_y-3\vec e_z.
 $$
 
 **Proposition (fixed-point subspaces).** The fixed points of the three involutions are
 
 $$
-\{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0, \qquad
+\{\tilde q : \tilde{q}^{\natural} = \tilde q\} = \mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t, \qquad
 \{\tilde q : -\tilde{q}^{\natural} = \tilde q\} = \operatorname{Im}\mathbb{H}, \qquad
 \{\tilde q : -\tilde q = \tilde q\} = \{0\},
 $$
 
 of dimensions $1$, $3$ and $0$.
 
-*Proof.* $\tilde{q}^{\natural} = \tilde q$ gives $\vec q = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
+*Proof.* $\tilde{q}^{\natural} = \tilde q$ gives $\vec q = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_t = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
 
 So the scalar axis, the imaginary three-space and the origin are the fixed sets, and they are exactly the images of the projections onto the scalar part, the vector part and zero. The first is a subalgebra isomorphic to $\mathbb{R}$; the second is not, because the product of two of its elements has a scalar part.
 
@@ -61,23 +61,23 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\tilde\xi = p_0+\vec p$. Then $\tilde\xi^2 = p_0^2-\langle \vec p\rangle_{\natural}+2p_0\vec p$, so $\tilde\xi^2 = -1$ gives $2p_0\vec p = 0$ and $p_0^2-\langle \vec p\rangle_{\natural} = -1$. If $p_0\neq0$ then $\vec p = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $\langle \vec p\rangle_{\natural} = 1$.
+*Proof.* Write $\tilde\xi = \xi_t+\vec\xi$. Then $\tilde\xi^2 = \xi_t^2-\langle \vec\xi\rangle_{\natural}+2\xi_t\vec\xi$, so $\tilde\xi^2 = -1$ gives $2\xi_t\vec\xi = 0$ and $\xi_t^2-\langle \vec\xi\rangle_{\natural} = -1$. If $\xi_t\neq0$ then $\vec\xi = 0$ and $\xi_t^2 = -1$, impossible, so $\xi_t = 0$ and $\langle \vec\xi\rangle_{\natural} = 1$.
 
 **Worked roots.** The element
 
 $$
-\tilde\xi = \frac{e_1+e_2+e_3}{\sqrt3}
+\tilde\xi = \frac{\vec e_x+\vec e_y+\vec e_z}{\sqrt3}
 $$
 
 is a root of $-1$: its square is
 
 $$
-\tilde\xi^2 = \tfrac13\bigl(e_1^2+e_2^2+e_3^2+e_1e_2+e_2e_1+e_2e_3+e_3e_2+e_3e_1+e_1e_3\bigr) = \tfrac13(-3+0) = -1,
+\tilde\xi^2 = \tfrac13\bigl(\vec e_x^2+\vec e_y^2+\vec e_z^2+\vec e_x\vec e_y+\vec e_y\vec e_x+\vec e_y\vec e_z+\vec e_z\vec e_y+\vec e_z\vec e_x+\vec e_x\vec e_z\bigr) = \tfrac13(-3+0) = -1,
 $$
 
-because the off-diagonal products cancel in pairs and each square is $-1$. The element $e_2$ is a root, and so is the whole sphere $u_1e_1+u_2e_2+u_3e_3$ with $u_1^2+u_2^2+u_3^2 = 1$.
+because the off-diagonal products cancel in pairs and each square is $-1$. The element $\vec e_y$ is a root, and so is the whole sphere $u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ with $u_x^2+u_y^2+u_z^2 = 1$.
 
-**The roots of $+1$.** For comparison, $\eta^2 = 1$ has only the solutions $\eta = \pm1$, because $(\eta-1)(\eta+1) = 0$ and there are no zero divisors; in particular $e_2$ is a root of $-1$ but no pure quaternion is a root of $+1$.
+**The roots of $+1$.** For comparison, $\eta^2 = 1$ has only the solutions $\eta = \pm1$, because $(\eta-1)(\eta+1) = 0$ and there are no zero divisors; in particular $\vec e_y$ is a root of $-1$ but no pure quaternion is a root of $+1$.
 
 ## The Conjugation Action
 
@@ -86,35 +86,35 @@ because the off-diagonal products cancel in pairs and each square is $-1$. The e
 **Worked computation.** Take the unit quaternion
 
 $$
-u = \exp\!\Bigl(\frac{\pi}{4}e_1\Bigr) = \cos\frac{\pi}{4} + e_1\sin\frac{\pi}{4} = \frac{1+e_1}{\sqrt2},
+u = \exp\!\Bigl(\frac{\pi}{4}\vec e_x\Bigr) = \cos\frac{\pi}{4} + \vec e_x\sin\frac{\pi}{4} = \frac{1+\vec e_x}{\sqrt2},
 $$
 
-so that $u^{-1} = u^{\natural} = (1-e_1)/\sqrt2$. Then on the imaginary basis,
+so that $u^{-1} = u^{\natural} = (1-\vec e_x)/\sqrt2$. Then on the imaginary basis,
 
 $$
-u\,e_1\,u^{-1} = e_1, \qquad u\,e_2\,u^{-1} = e_3, \qquad u\,e_3\,u^{-1} = -e_2.
+u\,\vec e_x\,u^{-1} = \vec e_x, \qquad u\,\vec e_y\,u^{-1} = \vec e_z, \qquad u\,\vec e_z\,u^{-1} = -\vec e_y.
 $$
 
-For instance, $ue_2 = \tfrac{1}{\sqrt2}(e_2+e_1e_2) = \tfrac{1}{\sqrt2}(e_2+e_3)$, and multiplying on the right by $u^{-1}$ gives
+For instance, $u\vec e_y = \tfrac{1}{\sqrt2}(\vec e_y+\vec e_x\vec e_y) = \tfrac{1}{\sqrt2}(\vec e_y+\vec e_z)$, and multiplying on the right by $u^{-1}$ gives
 
 $$
-ue_2u^{-1} = \tfrac12(e_2+e_3)(1-e_1) = \tfrac12\bigl(e_2+e_3-e_2e_1-e_3e_1\bigr) = \tfrac12(e_2+e_3+e_3-e_2) = e_3.
+u\vec e_yu^{-1} = \tfrac12(\vec e_y+\vec e_z)(1-\vec e_x) = \tfrac12\bigl(\vec e_y+\vec e_z-\vec e_y\vec e_x-\vec e_z\vec e_x\bigr) = \tfrac12(\vec e_y+\vec e_z+\vec e_z-\vec e_y) = \vec e_z.
 $$
 
-So $\operatorname{Ad}_u$ fixes $e_1$ and carries $e_2$ to $e_3$ and $e_3$ to $-e_2$; its matrix in the basis $(e_1,e_2,e_3)$ is
+So $\operatorname{Ad}_u$ fixes $\vec e_x$ and carries $\vec e_y$ to $\vec e_z$ and $\vec e_z$ to $-\vec e_y$; its matrix in the basis $(\vec e_x,\vec e_y,\vec e_z)$ is
 
 $$
 R_u = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & -1 \\ 0 & 1 & 0 \end{pmatrix},
 $$
 
-and it agrees with the general formula $R_{\tilde q} = \bigl(1-2(q_2^2+q_3^2),\,2(q_1q_2-q_0q_3),\,2(q_1q_3+q_0q_2);\ \dots\bigr)$ at $q_0 = q_1 = 1/\sqrt2$, $q_2 = q_3 = 0$. The reading of $R_u$ as the quarter turn about $e_1$, and of the assignment $u\mapsto R_u$ as the two-to-one covering $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, is in *Quaternion Rotations and Reflections*.
+and it agrees with the general formula $R_{\tilde q} = \bigl(1-2(q_y^2+q_z^2),\,2(q_xq_y-q_tq_z),\,2(q_xq_z+q_tq_y);\ \dots\bigr)$ at $q_t = q_x = 1/\sqrt2$, $q_y = q_z = 0$. The reading of $R_u$ as the quarter turn about $\vec e_x$, and of the assignment $u\mapsto R_u$ as the two-to-one covering $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, is in *Quaternion Rotations and Reflections*.
 
 ## The Matrix Images
 
 **The $2\times2$ complex image.** Under the isomorphism $\mathsf{M}_2$ of *Quaternion 2x2 Matrix Element Representation*, fixed by
 
 $$
-e_0\mapsto I, \qquad e_1\mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad e_2\mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad e_3\mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+e_t\mapsto I, \qquad \vec e_x\mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad \vec e_y\mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad \vec e_z\mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
 $$
 
 the worked element has image
@@ -123,7 +123,7 @@ $$
 \mathsf{M}_2(\tilde q) = \begin{pmatrix} 1-3i & 1-2i \\ -1-2i & 1+3i \end{pmatrix}.
 $$
 
-Its trace is $2q_0 = 2$ and its determinant is $\langle\tilde q\rangle_{\natural} = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_0$ and $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$.
+Its trace is $2q_t = 2$ and its determinant is $\langle\tilde q\rangle_{\natural} = 15$, in agreement with the general identities $\operatorname{tr}\mathsf{M}_2(\tilde q) = 2q_t$ and $\det\mathsf{M}_2(\tilde q) = \langle\tilde q\rangle_{\natural}$.
 
 $$
 \mathsf{M}_4(\tilde q) = \begin{pmatrix}
@@ -134,23 +134,23 @@ $$
 \end{pmatrix}.
 $$
 
-Its trace is $4q_0 = 4$, its determinant is $\langle\tilde q\rangle_{\natural}^2 = 225$, and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$.
+Its trace is $4q_t = 4$, its determinant is $\langle\tilde q\rangle_{\natural}^2 = 225$, and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I = \langle\tilde q\rangle_{\natural}I$.
 
 ## Summary
 
-The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(e_1+e_2+e_3)/\sqrt3$ is a worked root of the first equation.
+The three involutions of the quaternion algebra are quaternion, vector and total conjugation, given by negating the vector part, the scalar part, or both, with fixed-point subspaces the scalar line, the imaginary three-space and the origin. The roots of $-1$ are the pure imaginary quaternions of norm one, forming a two-sphere, while the roots of $+1$ are only $\pm1$; the element $(\vec e_x+\vec e_y+\vec e_z)/\sqrt3$ is a worked root of the first equation.
 
-The conjugation action of the unit $u = (1+e_1)/\sqrt2$ maps $e_1$ to $e_1$ and $e_2$ to $e_3$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2e_1-e_2+3e_3$, whose quaternion norm is $\langle\tilde q\rangle_{\natural} = 15$, the $2\times2$ complex image $\mathsf{M}_2(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
+The conjugation action of the unit $u = (1+\vec e_x)/\sqrt2$ maps $\vec e_x$ to $\vec e_x$ and $\vec e_y$ to $\vec e_z$, with matrix $R_u$ matching the general formula; the geometric reading of $R_u$ and the covering $Sp(1)\to SO(3)$ are in *Quaternion Rotations and Reflections*. For the worked element $\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z$, whose quaternion norm is $\langle\tilde q\rangle_{\natural} = 15$, the $2\times2$ complex image $\mathsf{M}_2(\tilde q)$ has trace $2$ and determinant $15$, and the $4\times4$ real Cayley image $\mathsf{M}_4(\tilde q)$ has trace $4$, determinant $225$ and $\mathsf{M}_4(\tilde q)^{T}\mathsf{M}_4(\tilde q) = 15\,I$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | The quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Basis, $e_k^2 = -e_0$, $e_1e_2 = e_3$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Worked element $\tilde q = 1+2e_1-e_2+3e_3$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Basis, $\vec e_k^2 = -e_t$, $\vec e_x\vec e_y = \vec e_z$ |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | Worked element $\tilde q = 1+2\vec e_x-\vec e_y+3\vec e_z$ |
 | $\tilde{q}^{\natural}, -\tilde{q}^{\natural}, -\tilde q$ | Quaternion, vector and total conjugation |
-| $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_0$ | Fixed space of ${}^{\natural}$ |
+| $\mathbb{R}_{\mathbb{H}} = \mathbb{R}e_t$ | Fixed space of ${}^{\natural}$ |
 | $\operatorname{Im}\mathbb{H}$ | Fixed space of $\tilde{\cdot}$ |
 | $\langle\cdot\rangle_{\natural}$ | Quaternion norm, from *Quaternion Norm and Invertibility*; $\langle\tilde q\rangle_{\natural} = 15$ for the worked element |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{\natural}$ | Conjugation action |

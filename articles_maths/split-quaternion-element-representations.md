@@ -14,10 +14,10 @@ The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $
 A **representation** of $\mathbb{H}_{\mathrm{s}}$ is a real vector space $M$ with a bilinear map $\mathbb{H}_{\mathrm{s}} \times M \to M$, $(\tilde q,v) \mapsto \tilde q \cdot v$, such that
 
 $$
-\tilde q \cdot (\tilde p \cdot v) = (\tilde q \tilde p) \cdot v, \qquad 1 \cdot v = v
+\tilde q_1 \cdot (\tilde q_2 \cdot v) = (\tilde q_1 \tilde q_2) \cdot v, \qquad 1 \cdot v = v
 $$
 
-for all $\tilde q,\tilde p \in \mathbb{H}_{\mathrm{s}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}_{\mathrm{s}} \to \operatorname{End}_{\mathbb{R}}(M)$. A **module** is a representation; the two words are used interchangeably, and a module is **simple** or **irreducible** when it has no submodule other than $0$ and itself. The representation is **finite-dimensional** when $M$ is.
+for all $\tilde q_1,\tilde q_2 \in \mathbb{H}_{\mathrm{s}}$ and $v \in M$. Equivalently, a representation is a unital algebra homomorphism $\rho : \mathbb{H}_{\mathrm{s}} \to \operatorname{End}_{\mathbb{R}}(M)$. A **module** is a representation; the two words are used interchangeably, and a module is **simple** or **irreducible** when it has no submodule other than $0$ and itself. The representation is **finite-dimensional** when $M$ is.
 
 By (*Split-Quaternion Algebra*, §*The Centre and Simplicity*) the algebra is simple and non-commutative, so the kernel of a unital homomorphism $\rho$ is a two-sided ideal, hence $0$ or all of $\mathbb{H}_{\mathrm{s}}$; it is not all, because $\rho(1) = \mathrm{id}$. Every representation of a nonzero module is therefore faithful.
 
@@ -26,22 +26,22 @@ By (*Split-Quaternion Algebra*, §*The Centre and Simplicity*) the algebra is si
 The **left regular representation** is the algebra acting on itself by left multiplication:
 
 $$
-\lambda(\tilde q) \tilde p = \tilde q \tilde p .
+\lambda(\tilde q_1) \tilde q_2 = \tilde q_1 \tilde q_2 .
 $$
 
-It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The **right regular representation** $\varrho(\tilde q) \tilde p = \tilde p \tilde q$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of *Quaternion Element Representations*, §*The Left and Right Regular Representations*. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)
+It is the representation on the four-dimensional space $\mathbb{H}_{\mathrm{s}}$, and its image is the four-dimensional subalgebra of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{s}})$ isomorphic to $\mathbb{H}_{\mathrm{s}}$. The **right regular representation** $\varrho(\tilde q_1) \tilde q_2 = \tilde q_2 \tilde q_1$ is an algebra anti-homomorphism, and composing it with the conjugation makes it a left representation isomorphic to the left regular one, exactly as in the quaternion case of *Quaternion Element Representations*, §*The Left and Right Regular Representations*. (The right regular representation is written $\varrho$; the letter $\rho$ denotes the reversal of the algebra.)
 
 ### The Idempotent Decomposition
 
 The idempotents give a decomposition of every representation.
 
-**Theorem (The Idempotent Splitting).** Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm e_2)$ be the non-central idempotents. Then
+**Theorem (The Idempotent Splitting).** Let $M$ be a representation and let $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ be the non-central idempotents. Then
 
 $$
 M = \tilde\pi_1 M \oplus \tilde\pi_2 M
 $$
 
-as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(e_2)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
+as real vector spaces. In the case of the simple module the summands are the eigenspaces of $\mathsf{M}_2(\vec e_y)$ on $\mathbb{R}^2$, the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$, and in the algebra the corresponding objects are the minimal ideals $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$.
 
 **Proof.** The identities $\tilde\pi_1 + \tilde\pi_2 = 1$ and $\tilde\pi_1\tilde\pi_2 = 0$ give $v = \tilde\pi_1v + \tilde\pi_2v$ for every $v$, so the sum is all of $M$; and if $v \in \tilde\pi_1M \cap \tilde\pi_2M$, say $v = \tilde\pi_1v'$, then $v = \tilde\pi_1v$ because $\tilde\pi_1^2 = \tilde\pi_1$, while $v = \tilde\pi_2v''$ gives $\tilde\pi_1v = \tilde\pi_1\tilde\pi_2v'' = 0$; hence $v = 0$ and the sum is direct. Both summands are invariant under $\tilde\pi_1$ and $\tilde\pi_2$, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ and $\tilde\pi_1\tilde\pi_2 = 0$. For the last statement, $\mathsf{M}_2(\tilde\pi_1)$ and $\mathsf{M}_2(\tilde\pi_2)$ are the rank-one projections of (*Split-Quaternion Matrix Element Representations*, §*The Image as a Linear Subspace*), with images $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$.
 
@@ -55,7 +55,7 @@ $$
 
 so $\dim_{\mathbb{R}} M = 2d$, every module has even dimension, and the isomorphism class of $M$ is determined by its dimension alone.
 
-**Proof.** Let $e = E_{11} = \mathsf{M}_2\big(\tfrac12(1 - e_3)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps
+**Proof.** Let $e = E_{11} = \mathsf{M}_2\big(\tfrac12(1 - \vec e_z)\big)$ and $f = E_{22} = 1 - e$ be the two complementary rank-one idempotents. Since $e + f = 1$, every $v$ is $ev + fv$ with $ev \in eV$ and $fv \in fV$, so $M = eV + fV$; applying $e$ to a relation $v_1 + v_2 = 0$ with $v_1 \in eV$ gives $v_1 = 0$, so the sum is direct. The maps
 
 $$
 eV \longrightarrow fV, \quad w \longmapsto E_{21}w, \qquad fV \longrightarrow eV, \quad u \longmapsto E_{12}u
@@ -149,7 +149,7 @@ $$
 \mathbb{H}_{\mathrm{s}}\text{-}\mathbf{mod} \longrightarrow \mathrm{SL}_2(\mathbb{R})\text{-}\mathbf{mod}
 $$
 
-sends a module $M$ to the same space with the action $u \cdot v = [u, v]$ extended bilinearly, and it is exact and faithful. The two theories are not the same, and the difference is sharp.
+sends a module $M$ to the same space with the action $\vec q \cdot v = [\vec q, v]$ extended bilinearly, and it is exact and faithful. The two theories are not the same, and the difference is sharp.
 
 **Theorem (The Lie Irreducibles Do Not Lift).** The finite-dimensional irreducible $\mathrm{SL}_2(\mathbb{R})$-modules are the symmetric powers $\operatorname{Sym}^n(\mathbb{R}^2)$ of the standard module, of dimension $n+1$ for $n \geq 0$, by *Representations of Lie Algebras*, §*The Example of $\mathrm{SL}(2)$*. Among them exactly one carries the structure of a representation of the associative algebra $\mathbb{H}_{\mathrm{s}}$, namely $\operatorname{Sym}^1(\mathbb{R}^2) = \mathbb{R}^2$. Consequently the representation theory of the Lie algebra is strictly larger than that of the algebra.
 
@@ -157,7 +157,7 @@ sends a module $M$ to the same space with the action $u \cdot v = [u, v]$ extend
 
 **Corollary (The Trivial Lie Module Does Not Lift).** The one-dimensional trivial $\mathrm{SL}_2(\mathbb{R})$-module is not a representation of $\mathbb{H}_{\mathrm{s}}$, in accordance with the corollary of the classification that the algebra has no one-dimensional representation.
 
-**Remark.** The relation between the two representation theories is the usual one for an enveloping algebra: $\mathbb{H}_{\mathrm{s}}$ is the quotient of the universal enveloping algebra $U(\mathrm{SL}_2(\mathbb{R}))$ by the annihilator of its two-dimensional irreducible module, so a $U(\mathrm{SL}_2)$-module descends to $\mathbb{H}_{\mathrm{s}}$ exactly when it is a sum of copies of that module. The enveloping algebra itself is infinite-dimensional, by *Universal Enveloping Algebras*, and its representation theory is strictly richer.
+**Remark.** The relation between the two representation theories is the usual one for an enveloping algebra: $\mathbb{H}_{\mathrm{s}}$ is the quotient of the universal enveloping algebra $\mathrm{U}(\mathrm{SL}_2(\mathbb{R}))$ by the annihilator of its two-dimensional irreducible module, so a $\mathrm{U}(\mathrm{SL}_2)$-module descends to $\mathbb{H}_{\mathrm{s}}$ exactly when it is a sum of copies of that module. The enveloping algebra itself is infinite-dimensional, by *Universal Enveloping Algebras*, and its representation theory is strictly richer.
 
 ## The Double Cover of the Lorentz Group of Signature $(2,1)$
 

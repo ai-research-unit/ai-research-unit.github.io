@@ -13,7 +13,7 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 - Companion article *The Path Integral in Biquaternionic Form*, for the sum-over-paths framework of the series.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation, the gauge scalar, and the covariant derivative.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_0+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\vec p^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $e_j \vec e_k=-\delta_{jk}e_t+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_t+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial^2/\partial Q_t^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\vec p^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
 
 ## The Functional Integral for a Gauge Field
 
@@ -48,15 +48,15 @@ with $\mathrm{Vol}(\mathcal{G})$ the volume of the gauge group — an infinite f
 
 ### The Biquaternion Form of the Measure
 
-The measure is a product over the four material components. Because the material sector decomposes as $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$ with $V$ the vector part, the measure can be written as a product over the scalar-direction component and the three vector-direction components,
+The measure is a product over the four material components. Because the material sector decomposes as $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_t\}\oplus V$ with $V$ the vector part, the measure can be written as a product over the scalar-direction component and the three vector-direction components,
 
 $$
 \mathcal{D}\tilde{A} = \mathcal{D}A_0\;\mathcal{D}\vec A,
 \qquad
-\tilde{A} = iA_0e_0+\sum_{k=1}^{3}A_ke_k ,
+\tilde{A} = iA_0e_t+\sum_{k=1}^{3}A_k\vec e_k ,
 $$
 
-with $A_0$ and $A_k$ the real component fields in the $ict$ convention. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_0\partial_{ict}\Gamma+\sum_ke_k\partial_k\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
+with $A_0$ and $A_k$ the real component fields in the $ict$ convention. The gradient part of the gauge transformation is $\tilde{\nabla}\Gamma=e_t\partial/\partial Q_t\,\Gamma+\sum_k\vec e_k\,\partial/\partial Q_k\,\Gamma$, so the orbit direction is spanned by the four derivatives of the single gauge function $\Gamma$; this is why the orbit is one-dimensional at each spacetime point and why a single gauge-fixing condition suffices.
 
 ## Gauge Fixing: The Faddeev–Popov Construction
 
@@ -87,9 +87,9 @@ in which the gauge-group integral has been absorbed and only the gauge-fixed con
 For the abelian theory the gauge-fixing condition can be taken linear and covariant,
 
 $$
-G[\tilde{A}] = \partial_\mu A^\mu-\omega,
+G[\tilde{A}] = \langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega,
 \qquad
-S=\partial_\mu A^\mu ,
+S=\langle\tilde\nabla,\tilde A\rangle_{\natural} ,
 $$
 
 with $\omega$ a fixed function. Under a gauge transformation $S\mapsto S-\Box\Gamma$, so the condition $G[\tilde{A}^\Gamma]=0$ is $S-\Box\Gamma-\omega=0$, i.e., $\Box\Gamma=S-\omega$. The Faddeev–Popov determinant is the Jacobian of the map $\Gamma\mapsto G[\tilde{A}^\Gamma]$, which is the operator $-\Box$ acting on $\Gamma$; the identity $1=\Delta[\tilde{A}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}^\Gamma])$ fixes it to be the determinant of that variation, the reciprocal of the factor the delta functional alone would contribute:
@@ -104,8 +104,8 @@ up to a sign convention. This is **independent of $\tilde{A}$**: it is a constan
 The delta functional is represented by introducing the Nakanishi–Lautrup field $B$ and writing
 
 $$
-\delta\!\left(\partial_\mu A^\mu-\omega\right)
-= \int\mathcal{D}B\;\exp(i\int d^4x\,B(\partial_\mu A^\mu-\omega)),
+\delta\!\left(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega\right)
+= \int\mathcal{D}B\;\exp(i\int d^4x\,B(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega)),
 $$
 
 and the $\omega$-dependence is removed by averaging over $\omega$ with the Gaussian weight
@@ -117,10 +117,10 @@ $$
 which reproduces the gauge-fixing Lagrangian of the BRST construction. Completing the square in the combined $B,\omega$ integral, $-\omega^2/(2\xi)-B\omega=-\frac{1}{2\xi}(\omega+\xi B)^2+\tfrac{\xi}{2}B^2$, leaves precisely
 
 $$
-\mathcal{L}_{\mathrm{gf}} = B\,\partial_\mu A^\mu + \tfrac{\xi}{2}B^2 ,
+\mathcal{L}_{\mathrm{gf}} = B\,\langle\tilde\nabla,\tilde A\rangle_{\natural} + \tfrac{\xi}{2}B^2 ,
 $$
 
-the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\partial_\mu A^\mu)^2$, whose momentum-space quadratic form $K^{\mu\nu}=p^2\eta^{\mu\nu}+(1-\xi^{-1})p^\mu p^\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
+the term of the BRST companion, and its elimination of $B$ returns $-\tfrac{1}{2\xi}(\langle\tilde\nabla,\tilde A\rangle_{\natural})^2$, whose momentum-space quadratic form $K^{\mu\nu}=p^2\eta^{\mu\nu}+(1-\xi^{-1})p^\mu p^\nu$ is the one inverted below. The two routes — the canonical subsidiary condition and the path-integral gauge fixing — therefore rejoin at the same Lagrangian.
 
 ### The Non-Abelian Determinant
 
@@ -245,7 +245,7 @@ Second, the Faddeev–Popov determinant is a functional of the potential that is
 
 Third, the ghosts that represent the non-abelian determinant are Grassmann-odd, and the algebra has no odd elements; they live in the Grassmann envelope of the BRST construction. The path integral over the gauge field alone is an integral over $\mathbb{M}_-$-valued configurations, but the full gauge-fixed integral is over the envelope.
 
-The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\partial_\mu A^\mu=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ at each point, and the delta functional $\delta(\partial_\mu A^\mu-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
+The gauge-fixing condition itself has a natural biquaternionic form. The gauge scalar $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ is what a gauge transformation shifts, $S\mapsto S-\Box\Gamma$, and the covariant condition $\langle\tilde\nabla,\tilde A\rangle_{\natural}=0$ is the statement that this scalar vanishes. A gauge choice is therefore a choice of value for the scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ at each point, and the delta functional $\delta(\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega)$ is a delta on that scalar. The canonical companion arrives at the same condition as a constraint — the Gauss law, which is first class and generates the gauge transformations — and the path-integral route arrives at it as a gauge-fixing function; the two are the same scalar, and the choice of gauge is the choice of its value.
 
 ## What the Algebra Supplies and What It Imports
 
@@ -285,7 +285,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 | $S[\tilde{A}]=\int d^4x\,(-\tfrac14F_{\mu\nu}F^{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
 | $\tilde{A}^\Gamma=\tilde{A}-\tilde{\nabla}\Gamma$, $S[\tilde{A}^\Gamma]=S[\tilde{A}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |
-| $G[\tilde{A}]=\partial_\mu A^\mu-\omega$ | Gauge-fixing condition |
+| $G[\tilde{A}]=\langle\tilde\nabla,\tilde A\rangle_{\natural}-\omega$ | Gauge-fixing condition |
 | $1=\Delta[\tilde{A}]\int\mathcal{D}\Gamma\,\delta(G[\tilde{A}^\Gamma])$ | Faddeev–Popov identity |
 | $\Delta[\tilde{A}]$ | Faddeev–Popov determinant; gauge invariant |
 | $\Delta=\det(-\Box)$ (abelian) | Field-independent determinant; no ghosts |

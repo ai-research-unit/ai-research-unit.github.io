@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form is indefinite, so its nonzero level sets are neither spheres nor compact: they are hyperboloids, and the geometry they carry is hyperbolic rather than elliptic. This article describes the three sign level sets of the form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ — the positive set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, the negative set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}$ and the null set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ — and the two models of hyperbolic space that the sign sets produce: the **complex hyperbolic space** of positive definite complex lines, which is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ and coincides with the symmetric space $U(1,3)/(U(1)\times U(3))$ of *The Krein Cartan Decomposition of the Operator Algebra*, and the **real hyperbolic space** $H^{3}$ of the Minkowski slice, which is the sheet of the real hyperboloid. The isotropic structure at the boundary is *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the cone of the form is *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*.
+The general quaternionic sesquilinear form is indefinite, so its nonzero level sets are neither spheres nor compact: they are hyperboloids, and the geometry they carry is hyperbolic rather than elliptic. This article describes the three sign level sets of the form $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ — the positive set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}$, the negative set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}$ and the null set $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}$ — and the two models of hyperbolic space that the sign sets produce: the **complex hyperbolic space** of positive definite complex lines, which is the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ and coincides with the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ of *The Krein Cartan Decomposition of the Operator Algebra*, and the **real hyperbolic space** $H^{3}$ of the Minkowski slice, which is the sheet of the real hyperboloid. The isotropic structure at the boundary is *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the cone of the form is *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra*.
 
-**Conventions.** $e_0=1$, $e_k^{2}=-e_0$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the general quaternionic sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general plain sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{*}$.
+**Conventions.** $e_t=1$, $\vec e_k^{2}=-e_t$, central scalar imaginary $i$, $\mathrm{Sc}$ the scalar part; the general quaternionic sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{\natural*}=\sum_{\mu}\varepsilon_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general plain sesquilinear form is $\langle\tilde{Q}',\tilde{Q}\rangle_{*}=\sum_{\mu}\bar Q_{\mu}Q'_{\mu}$ with $\|\tilde{Q}\|_E^{2}=\langle\tilde{Q},\tilde{Q}\rangle_{*}$.
 
 ## The Three Level Sets
 
@@ -34,15 +34,15 @@ all three of real dimension $7$; the first is homotopy equivalent to $S^{1}$, th
 
 **Proof.** For the first, the map $\tilde{Q}\mapsto c/\|c\|_E$ is defined on the positive region, since $\|c\|_E>\|v\|_E\ge0$ forces $c\neq0$; for fixed $c$ the vector part ranges over the open ball of radius $\|c\|_E$, a contractible set, so the projection onto $\mathbb{C}\setminus\{0\}\simeq S^{1}$ is a homotopy equivalence. For the second, $\|v\|_E>\|c\|_E$ forces $v\neq0$, and the projection onto $v/\|v\|_E\in S^{5}$ has contractible fibres again.
 
-**Theorem (the positive lines form the complex hyperbolic ball).** The positive lines are exactly the lines $\mathbb{C}(e_0+\tilde{R})$ with $\|\tilde{R}\|_E<1$; the assignment $\tilde{R}\mapsto\mathbb{C}(e_0+\tilde{R})$ is a bijection of the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ onto the set of positive lines. That set is therefore a real manifold of dimension $6$, isomorphic as a homogeneous space to
+**Theorem (the positive lines form the complex hyperbolic ball).** The positive lines are exactly the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E<1$; the assignment $\tilde{R}\mapsto\mathbb{C}(e_t+\tilde{R})$ is a bijection of the open unit ball of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ onto the set of positive lines. That set is therefore a real manifold of dimension $6$, isomorphic as a homogeneous space to
 
 $$
-U(1,3)/(U(1)\times U(3)),
+\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3)),
 $$
 
-the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $U(1,3)$ of the general quaternionic sesquilinear form acts on it transitively with the stabiliser $U(1)\times U(3)$ of a positive line.
+the **complex hyperbolic space** $\mathbb{CH}^{3}$, and the isometry group $\mathrm{U}(1,3)$ of the general quaternionic sesquilinear form acts on it transitively with the stabiliser $\mathrm{U}(1)\times \mathrm{U}(3)$ of a positive line.
 
-**Proof.** A positive line is not contained in $\mathbb{V}_{\mathbb{B}}$, since the form is negative definite there; choosing the unique representative $e_0+\tilde{R}$ and using $\langle e_0+\tilde{R},e_0+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$ shows that positivity is exactly $\|\tilde{R}\|_E<1$, and the assignment is bijective. The stabiliser of the line $\mathbb{C}e_0$ in $U(1,3)$ consists of the isometries preserving the canonical fundamental decomposition, which is $U(1)\times U(3)$ (*The Krein Isometry Group and Its $J$-Contractions*), whence the homogeneous description; the two realisations agree because both are the symmetric space of the same Cartan pair (*The Krein Cartan Decomposition of the Operator Algebra*).
+**Proof.** A positive line is not contained in $\mathbb{V}_{\mathbb{B}}$, since the form is negative definite there; choosing the unique representative $e_t+\tilde{R}$ and using $\langle e_t+\tilde{R},e_t+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$ shows that positivity is exactly $\|\tilde{R}\|_E<1$, and the assignment is bijective. The stabiliser of the line $\mathbb{C}e_t$ in $\mathrm{U}(1,3)$ consists of the isometries preserving the canonical fundamental decomposition, which is $\mathrm{U}(1)\times \mathrm{U}(3)$ (*The Krein Isometry Group and Its $J$-Contractions*), whence the homogeneous description; the two realisations agree because both are the symmetric space of the same Cartan pair (*The Krein Cartan Decomposition of the Operator Algebra*).
 
 **Remark (the boundary).** By *The Isotropic Structure of the General Quaternionic Sesqualgebra* the closure of the ball adds the isotropic lines, $\|\tilde{R}\|_E=1$, a copy of $S^{5}$: it is the boundary sphere of the complex hyperbolic ball, of real dimension $5$, while the ball itself has real dimension $6$.
 
@@ -64,9 +64,9 @@ which is Kähler, complete, of constant negative holomorphic sectional curvature
 
 **Proof.** The metric is the Bergman metric of the unit ball of $\mathbb{C}^{3}$, invariant under the biholomorphisms of the ball, and the isometry group of the general quaternionic sesquilinear form is the group of these biholomorphisms (*The Krein Isometry Group and Its $J$-Contractions*); completeness and the constant curvature are the standard properties of the ball, and the boundary is at infinite distance because the metric blows up at $\|\tilde{R}\|_E=1$.
 
-**Theorem (the complex geodesics).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde{R}\neq0$ is the disc $\{z\,\tilde{R}/\|\tilde{R}\|_E:|z|<1\}$. The real geodesics are the curves that solve the geodesic equation; the complex ones are the images of these discs under $U(1,3)$.
+**Theorem (the complex geodesics).** The intersection of the ball with a complex line is a copy of the unit disc, totally geodesic in $\mathbb{CH}^{3}$ and isometric to $\mathbb{CH}^{1}$; the geodesic through the origin and a point $\tilde{R}\neq0$ is the disc $\{z\,\tilde{R}/\|\tilde{R}\|_E:|z|<1\}$. The real geodesics are the curves that solve the geodesic equation; the complex ones are the images of these discs under $\mathrm{U}(1,3)$.
 
-**Proof.** A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:|z|<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde{R}$ under an isometry because $U(1,3)$ is transitive on the complex lines that carry positive vectors.
+**Proof.** A complex line $\mathbb{C}w$ meets the ball in the disc $\{z\,w/\|w\|_E:|z|<1\}$, which contains $0$ and the boundary point $w/\|w\|_E$; the restriction of the Bergman metric to a complex line is a multiple of the Poincaré metric of the disc, so the disc is totally geodesic, and every complex line is the image of $\mathbb{C}\tilde{R}$ under an isometry because $\mathrm{U}(1,3)$ is transitive on the complex lines that carry positive vectors.
 
 **Theorem (the totally real slices).** The Minkowski slice $\mathbb{H}_{\mathbb{B}}$ meets the ball in the real unit ball of $\mathbb{R}^{3}$, and the Bergman metric restricts to the Poincaré metric of the real hyperbolic space $H^{3}$; the slice is totally geodesic and totally real in $\mathbb{CH}^{3}$.
 
@@ -77,14 +77,14 @@ which is Kähler, complete, of constant negative holomorphic sectional curvature
 **Theorem (the real hyperboloids).** On the Hermitian subspace $\mathbb{M}_{+}$ and on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the general quaternionic sesquilinear form is the interval form of Minkowski space, and with the real coordinates $q$,
 
 $$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_0^{2}-q_1^{2}-q_2^{2}-q_3^{2}.
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=q_t^{2}-q_x^{2}-q_y^{2}-q_z^{2}.
 $$
 
-The positive level set is the two-sheeted hyperboloid, whose sheet $q_0>0$ is given by $q_0=\sqrt{1+\|\vec q\|^{2}}$ with $\vec q\in\mathbb{R}^{3}$ free, hence is $\mathbb{R}^{3}$; the negative level set is the one-sheeted hyperboloid $q_0^{2}=\|\vec q\|^{2}-1$, diffeomorphic to $S^{2}\times\mathbb{R}$; and the null set is the light cone, of two nappes.
+The positive level set is the two-sheeted hyperboloid, whose sheet $q_t>0$ is given by $q_t=\sqrt{1+\|\vec q\|^{2}}$ with $\vec q\in\mathbb{R}^{3}$ free, hence is $\mathbb{R}^{3}$; the negative level set is the one-sheeted hyperboloid $q_t^{2}=\|\vec q\|^{2}-1$, diffeomorphic to $S^{2}\times\mathbb{R}$; and the null set is the light cone, of two nappes.
 
-**Proof.** The restricted form is $\sum_{\mu}\varepsilon_{\mu}q_{\mu}^{2}$ in the four real coordinates of the slice (*The Krein Gram Matrix and the Restrictions of the Form*). Solving $q_0^{2}-\|\vec q\|^{2}=1$ for $q_0$ gives the two sheets, each parametrised by $\vec q\in\mathbb{R}^{3}$. Solving $q_0^{2}-\|\vec q\|^{2}=-1$ gives $\|\vec q\|\ge1$ with $q_0$ free, so the set is $\mathbb{R}\times S^{2}$ by the direction of $\vec q$. The null equation factors as $(q_0-\|\vec q\|)(q_0+\|\vec q\|)=0$, giving the two nappes of the light cone.
+**Proof.** The restricted form is $\sum_{\mu}\varepsilon_{\mu}q_{\mu}^{2}$ in the four real coordinates of the slice (*The Krein Gram Matrix and the Restrictions of the Form*). Solving $q_t^{2}-\|\vec q\|^{2}=1$ for $q_t$ gives the two sheets, each parametrised by $\vec q\in\mathbb{R}^{3}$. Solving $q_t^{2}-\|\vec q\|^{2}=-1$ gives $\|\vec q\|\ge1$ with $q_t$ free, so the set is $\mathbb{R}\times S^{2}$ by the direction of $\vec q$. The null equation factors as $(q_t-\|\vec q\|)(q_t+\|\vec q\|)=0$, giving the two nappes of the light cone.
 
-**Corollary (the hyperboloid model of $H^{3}$).** The sheet $q_0=\sqrt{1+\|\vec q\|^{2}} $ carries the Riemannian metric induced by the Lorentz form and is the **hyperboloid model of the real hyperbolic space** $H^{3}$; the Lorentz boosts of *Biquaternion Rotations and Lorentz Transformations* act on it by its isometries. The complex hyperbolic ball of the preceding section is the complexification of this picture: dimension $6$ instead of $3$, the sphere $S^{5}$ instead of $S^{2}$, and the group $U(1,3)$ instead of the Lorentz group.
+**Corollary (the hyperboloid model of $H^{3}$).** The sheet $q_t=\sqrt{1+\|\vec q\|^{2}} $ carries the Riemannian metric induced by the Lorentz form and is the **hyperboloid model of the real hyperbolic space** $H^{3}$; the Lorentz boosts of *Biquaternion Rotations and Lorentz Transformations* act on it by its isometries. The complex hyperbolic ball of the preceding section is the complexification of this picture: dimension $6$ instead of $3$, the sphere $S^{5}$ instead of $S^{2}$, and the group $\mathrm{U}(1,3)$ instead of the Lorentz group.
 
 ## The Krein Cone and the Level Sets
 
@@ -127,9 +127,9 @@ the closed cone of *Indefinite Positivity and the Krein Cone of the Biquaternioi
 
 **Proof.** The set is the zero set of the single non-constant real polynomial $\sum_\mu\varepsilon_\mu|Q_\mu|^{2}$, whose partial derivatives with respect to the four real coordinates of $c$ and the six of $v$ are $2(c,-v)\neq0$ off the origin, so the apex is the only singular point; the cone at each radius is the product of the spheres of that radius in the two factors, and the link and homotopy follow from it. This is the real companion of the complex cone of *The Topology of the Zero-Divisor Cone*.
 
-**Theorem (the isotropic lines form $S^{5}$).** The isotropic complex lines of the general quaternionic sesquilinear form are exactly the lines $\mathbb{C}(e_0+\tilde{R})$ with $\|\tilde{R}\|_E=1$, so the assignment $\tilde{R}\mapsto\mathbb{C}(e_0+\tilde{R})$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.
+**Theorem (the isotropic lines form $S^{5}$).** The isotropic complex lines of the general quaternionic sesquilinear form are exactly the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E=1$, so the assignment $\tilde{R}\mapsto\mathbb{C}(e_t+\tilde{R})$ is a bijection from the unit sphere of $\mathbb{V}_{\mathbb{B}}\cong\mathbb{C}^{3}$ — a copy of $S^{5}$ — onto the set of isotropic lines.
 
-**Proof.** An isotropic line $\mathbb{C}\tilde{Q}$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$, hence $\|c\|_E=\|v\|_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling it gives exactly one representative of the form $e_0+\tilde{R}$. For that representative $\langle e_0+\tilde{R},e_0+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$, so the line is isotropic exactly for $\|\tilde{R}\|_E=1$; and distinct points $\tilde{R}$ of the unit sphere give distinct lines, since $e_0+\tilde{R}$ and $e_0+\tilde{R}'$ span the same line only if $\tilde{R}=\tilde{R}'$. This is the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the open ball $\|\tilde{R}\|_E<1$.
+**Proof.** An isotropic line $\mathbb{C}\tilde{Q}$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$, hence $\|c\|_E=\|v\|_E$, so it is not contained in $\mathbb{V}_{\mathbb{B}}$ and admits a representative with nonzero scalar part; scaling it gives exactly one representative of the form $e_t+\tilde{R}$. For that representative $\langle e_t+\tilde{R},e_t+\tilde{R}\rangle_{\natural*}=1-\|\tilde{R}\|_E^{2}$, so the line is isotropic exactly for $\|\tilde{R}\|_E=1$; and distinct points $\tilde{R}$ of the unit sphere give distinct lines, since $e_t+\tilde{R}$ and $e_t+\tilde{R}'$ span the same line only if $\tilde{R}=\tilde{R}'$. This is the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the open ball $\|\tilde{R}\|_E<1$.
 
 **Proposition (the shape of the Krein cone).** The Krein cone $P_K$ is closed and contractible, being star-shaped with respect to the origin, and its interior of directions is homotopy equivalent to a circle,
 
@@ -143,31 +143,31 @@ its boundary is the Krein null set.
 
 ## Worked Examples
 
-**A point of the positive level set.** $\tilde{Q}=e_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$, on the positive set, the base point of the ball.
+**A point of the positive level set.** $\tilde{Q}=e_t$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$, on the positive set, the base point of the ball.
 
-**A point of the negative level set.** $\tilde{Q}=e_1+e_2$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-2$, so $\tilde{Q}/\sqrt2$ has square $-1$.
+**A point of the negative level set.** $\tilde{Q}=\vec e_x+\vec e_y$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-2$, so $\tilde{Q}/\sqrt2$ has square $-1$.
 
-**Two points of the null set.** $e_0+e_1$ and $(e_0+e_1)/\sqrt2$: the first has square $0$ and norm $2$, the second square $0$ and Euclidean norm $1$; the second is on the link, and both are on the boundary of the ball.
+**Two points of the null set.** $e_t+\vec e_x$ and $(e_t+\vec e_x)/\sqrt2$: the first has square $0$ and norm $2$, the second square $0$ and Euclidean norm $1$; the second is on the link, and both are on the boundary of the ball.
 
-**A line inside the ball.** $\mathbb{C}(e_0+\tfrac12e_1)$: $\|\tilde{R}\|_E=\tfrac12<1$, a positive line, a point of the complex hyperbolic ball.
+**A line inside the ball.** $\mathbb{C}(e_t+\tfrac12\vec e_x)$: $\|\tilde{R}\|_E=\tfrac12<1$, a positive line, a point of the complex hyperbolic ball.
 
-**A line on the boundary.** $\mathbb{C}(e_0+e_1)$: $\|\tilde{R}\|_E=1$, an isotropic line, a point of the boundary sphere $S^{5}$.
+**A line on the boundary.** $\mathbb{C}(e_t+\vec e_x)$: $\|\tilde{R}\|_E=1$, an isotropic line, a point of the boundary sphere $S^{5}$.
 
-**A real timelike line.** $\tilde{Q}=e_0+\tfrac12e_1$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Minkowski hyperboloid sheet.
+**A real timelike line.** $\tilde{Q}=e_t+\tfrac12\vec e_x$ in $\mathbb{H}_{\mathbb{B}}$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=\tfrac34>0$, a point of the Minkowski hyperboloid sheet.
 
-**A point of a higher positive level.** $\tilde{Q}=2e_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=4$, in the interior of the Krein cone, on the level $t=4$; the real scaling by $s=2$ carries $e_0$ to it.
+**A point of a higher positive level.** $\tilde{Q}=2e_t$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=4$, in the interior of the Krein cone, on the level $t=4$; the real scaling by $s=2$ carries $e_t$ to it.
 
-**The antipode.** $\tilde{Q}=-e_0$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$, the same positive level as $e_0$; the two are the same positive line, and the phase by $-1$ identifies them.
+**The antipode.** $\tilde{Q}=-e_t$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1$, the same positive level as $e_t$; the two are the same positive line, and the phase by $-1$ identifies them.
 
-**A negative element and the cone.** $\tilde{Q}=e_1$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1<0$, so it lies outside the Krein cone, on the negative level set.
+**A negative element and the cone.** $\tilde{Q}=\vec e_x$: $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1<0$, so it lies outside the Krein cone, on the negative level set.
 
-**A phase orbit.** $e_0$ and $ie_0$: both on the unit positive level set, both positive, the same positive line; the phase circle acts on the level set and the orbit is the fibre of the bundle over $\mathbb{CH}^{3}$.
+**A phase orbit.** $e_t$ and $ie_t$: both on the unit positive level set, both positive, the same positive line; the phase circle acts on the level set and the orbit is the fibre of the bundle over $\mathbb{CH}^{3}$.
 
-**A nonzero norm level.** $\{\langle\tilde{Q}\rangle_{\natural}=1\}$ is a complex hypersurface of real dimension $6$ through the four units $e_0,e_1,e_2,e_3$, each with $\langle\cdot\rangle_{\natural}=1$; it is not a real hyperboloid, and its real points include the sphere $\sum_\mu q_\mu^{2}=1$ of the real slice.
+**A nonzero norm level.** $\{\langle\tilde{Q}\rangle_{\natural}=1\}$ is a complex hypersurface of real dimension $6$ through the four units $e_t,\vec e_x,\vec e_y,\vec e_z$, each with $\langle\cdot\rangle_{\natural}=1$; it is not a real hyperboloid, and its real points include the sphere $\sum_\mu q_\mu^{2}=1$ of the real slice.
 
 ## Summary
 
-The sign level sets of the general quaternionic sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_0+\tilde{R})$ with $\|\tilde{R}\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=U(1,3)/(U(1)\times U(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_0=\sqrt{1+\|\vec q\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone. The phase circle acts freely on the positive level set with quotient $\mathbb{CH}^{3}$, and real scaling relates the positive levels; the ball carries the Bergman metric, complete and of constant negative holomorphic curvature, whose complex geodesics are the intersections with the complex lines and whose totally geodesic real slices are the Minkowski hyperboloids. The Krein cone is the union of the non-negative levels, its interior the positive region and its boundary the null set; the norm's nonzero levels, by contrast, are complex hypersurfaces of real dimension $6$, and only its zero set is a cone.
+The sign level sets of the general quaternionic sesquilinear form are the hyperboloids $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6}\simeq S^{1}$ and $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}\simeq S^{5}$, and the null set $S^{1}\times S^{5}\times\mathbb{R}_{>0}\simeq S^{1}\times S^{5}$; all are non-compact of real dimension $7$, in contrast with the compact Euclidean sphere $S^{7}$. The positive region $\{\|c\|_E>\|v\|_E\}$ retracts onto the circle of phases and the negative region onto $S^{5}$. The positive lines are the lines $\mathbb{C}(e_t+\tilde{R})$ with $\|\tilde{R}\|_E<1$, so they form the open unit ball of $\mathbb{C}^{3}$, of real dimension $6$, which is the complex hyperbolic space $\mathbb{CH}^{3}=\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ with boundary the isotropic sphere $S^{5}$. On a Minkowski slice the same picture degenerates to the sheet $q_t=\sqrt{1+\|\vec q\|^{2}}$ of the real hyperboloid, the hyperboloid model of the real hyperbolic space $H^{3}$, the one-sheeted hyperboloid $S^{2}\times\mathbb{R}$, and the two nappes of the light cone. The phase circle acts freely on the positive level set with quotient $\mathbb{CH}^{3}$, and real scaling relates the positive levels; the ball carries the Bergman metric, complete and of constant negative holomorphic curvature, whose complex geodesics are the intersections with the complex lines and whose totally geodesic real slices are the Minkowski hyperboloids. The Krein cone is the union of the non-negative levels, its interior the positive region and its boundary the null set; the norm's nonzero levels, by contrast, are complex hypersurfaces of real dimension $6$, and only its zero set is a cone.
 
 ## Summary of Notation
 
@@ -177,10 +177,10 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 | $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2}$ | The negative level set; $\simeq S^{5}$ |
 | $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0\}\cong S^{1}\times S^{5}\times\mathbb{R}_{>0}$ | The null set |
 | $\mathcal{P}=\{\lVert c\rVert_E>\lVert v\rVert_E\}$ | The positive region; $\simeq S^{1}$ |
-| $\mathbb{C}(e_0+\tilde R)$, $\lVert\tilde R\rVert_E<1$ | The positive lines; the ball of $\mathbb{C}^{3}$ |
-| $\mathbb{CH}^{3}=U(1,3)/(U(1)\times U(3))$ | The complex hyperbolic space of positive lines |
-| $q_0^{2}-\lVert\vec q\rVert^{2}=\pm1$ | The real hyperboloids in a Minkowski slice |
-| $q_0=\sqrt{1+\lVert\vec q\rVert^{2}}$ | The hyperboloid model of $H^{3}$ |
+| $\mathbb{C}(e_t+\tilde R)$, $\lVert\tilde R\rVert_E<1$ | The positive lines; the ball of $\mathbb{C}^{3}$ |
+| $\mathbb{CH}^{3}=\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$ | The complex hyperbolic space of positive lines |
+| $q_t^{2}-\lVert\vec q\rVert^{2}=\pm1$ | The real hyperboloids in a Minkowski slice |
+| $q_t=\sqrt{1+\lVert\vec q\rVert^{2}}$ | The hyperboloid model of $H^{3}$ |
 | $S^{1}$ phase and $\mathbb{R}_{>0}$ scaling | The actions on the level sets; the positive level is an $S^{1}$-bundle over $\mathbb{CH}^{3}$ |
 | $ds^{2}$ of §*The Metric of the Ball and Its Geodesics* | The Bergman metric of the ball; complete, constant negative curvature |
 | $P_K=\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}\ge0\}$ | The Krein cone: origin, positive region, null set |
@@ -192,7 +192,7 @@ The sign level sets of the general quaternionic sesquilinear form are the hyperb
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the boundary sphere and the null cone
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the parametrisation of the maximal positive definite subspaces
 - *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the cone and its interior
-- *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the symmetric space $U(1,3)/(U(1)\times U(3))$
+- *The Krein Cartan Decomposition of the Operator Algebra* (`articles_maths/the-krein-cartan-decomposition-of-the-operator-algebra.md`), for the symmetric space $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))$
 - *Biquaternion Rotations and Lorentz Transformations* (`articles_maths/biquaternion-rotations-and-lorentz-transformations.md`), for the boosts acting on the Minkowski hyperboloid
 - *The Euclidean Topology of the Biquaternion Algebra* (`articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md`), for the compact sphere used here for contrast
 - *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the definite companion and its spheres

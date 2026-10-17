@@ -17,9 +17,9 @@ The article on *The Real Numbers* may be consulted for the concrete theory of th
 
 **(T1)** $\emptyset \in \tau$ and $X \in \tau$;
 
-**(T2)** if $U_i \in \tau$ for all $i \in I$, then $\bigcup_{i \in I} U_i \in \tau$;
+**(T2)** if $\Omega_i \in \tau$ for all $i \in I$, then $\bigcup_{i \in I} \Omega_i \in \tau$;
 
-**(T3)** if $U, V \in \tau$, then $U \cap V \in \tau$, and hence any finite intersection of open sets is open.
+**(T3)** if $\Omega, V \in \tau$, then $\Omega \cap V \in \tau$, and hence any finite intersection of open sets is open.
 
 A **topological space** is a pair $(X, \tau)$; when no confusion can arise one writes $X$. A set $F \subseteq X$ is **closed** if its complement $X \setminus F$ is open. By De Morgan's laws, the closed sets are closed under finite unions and arbitrary intersections, contain $\emptyset$ and $X$, and the axioms (T1)–(T3) could equally well be stated for closed sets.
 
@@ -31,18 +31,18 @@ $$
 
 which is not open.
 
-**Definition.** A **neighbourhood** of a point $x \in X$ is a subset $N \subseteq X$ containing an open set $U$ with $x \in U$. A neighbourhood need not be open. A family $\mathcal{N}_x$ of neighbourhoods of $x$ is a **neighbourhood base** at $x$ if every neighbourhood of $x$ contains a member of $\mathcal{N}_x$.
+**Definition.** A **neighbourhood** of a point $x \in X$ is a subset $N \subseteq X$ containing an open set $\Omega$ with $x \in \Omega$. A neighbourhood need not be open. A family $\mathcal{N}_x$ of neighbourhoods of $x$ is a **neighbourhood base** at $x$ if every neighbourhood of $x$ contains a member of $\mathcal{N}_x$.
 
 **Definition.** The **interior** $\operatorname{int} A$ of a set $A$ is the union of all open sets contained in $A$, an open set; $A$ is open exactly when $A = \operatorname{int} A$. The **closure** $\overline{A}$ is the intersection of all closed sets containing $A$, a closed set; $A$ is closed exactly when $A = \overline{A}$. The **boundary** is $\partial A = \overline{A} \cap \overline{X \setminus A}$, and the three sets $\operatorname{int} A$, $\partial A$ and $\operatorname{int}(X \setminus A)$ partition $X$:
 
 $$
-\operatorname{int} A = \bigcup \{U : U \text{ open}, \ U \subseteq A\}, \qquad
+\operatorname{int} A = \bigcup \{\Omega : \Omega \text{ open}, \ \Omega \subseteq A\}, \qquad
 \overline{A} = \bigcap \{F : F \text{ closed}, \ A \subseteq F\}.
 $$
 
 **Proposition.** Let $A \subseteq X$. Then $x \in \overline{A}$ if and only if every neighbourhood of $x$ meets $A$. Consequently $x \in \operatorname{int} A$ if and only if $A$ is a neighbourhood of $x$, and $X = \operatorname{int} A \sqcup \partial A \sqcup \operatorname{int}(X \setminus A)$.
 
-**Proof.** If $x \notin \overline{A}$ then $X \setminus \overline{A}$ is an open neighbourhood of $x$ disjoint from $A$. Conversely if $N$ is a neighbourhood of $x$ disjoint from $A$, choose an open $U \subseteq N$ with $x \in U$; then $U \cap A = \emptyset$, so $X \setminus U$ is a closed set containing $A$, hence $\overline{A} \subseteq X \setminus U$ and $x \notin \overline{A}$. The second claim follows from the first applied to $X \setminus A$.
+**Proof.** If $x \notin \overline{A}$ then $X \setminus \overline{A}$ is an open neighbourhood of $x$ disjoint from $A$. Conversely if $N$ is a neighbourhood of $x$ disjoint from $A$, choose an open $\Omega \subseteq N$ with $x \in \Omega$; then $\Omega \cap A = \emptyset$, so $X \setminus \Omega$ is a closed set containing $A$, hence $\overline{A} \subseteq X \setminus \Omega$ and $x \notin \overline{A}$. The second claim follows from the first applied to $X \setminus A$.
 
 ### Examples and Comparisons
 
@@ -66,19 +66,19 @@ The comparison of topologies is not a technicality. In a topological group the g
 
 **Proposition (base criterion).** A family $\mathcal{B}$ of subsets of $X$ is a base for some topology on $X$ if and only if $\bigcup \mathcal{B} = X$ and for all $B_1, B_2 \in \mathcal{B}$ and every $x \in B_1 \cap B_2$ there is $B_3 \in \mathcal{B}$ with $x \in B_3 \subseteq B_1 \cap B_2$. The sets that are unions of members of $\mathcal{B}$ then form a topology, the **generated** topology.
 
-**Proof.** The conditions are necessary because $X$ is open in the generated topology, hence a union of base elements, and $B_1 \cap B_2$ is open, hence a union of base elements through each of its points. They are sufficient because the empty union gives $\emptyset$, the covering condition gives $X$, arbitrary unions are unions, and if $U = \bigcup B_i$ and $V = \bigcup C_j$, then $U \cap V = \bigcup_{i,j} B_i \cap C_j$, and each $B_i \cap C_j$ is a union of base elements by the hypothesis applied at each of its points.
+**Proof.** The conditions are necessary because $X$ is open in the generated topology, hence a union of base elements, and $B_1 \cap B_2$ is open, hence a union of base elements through each of its points. They are sufficient because the empty union gives $\emptyset$, the covering condition gives $X$, arbitrary unions are unions, and if $\Omega = \bigcup B_i$ and $V = \bigcup C_j$, then $\Omega \cap V = \bigcup_{i,j} B_i \cap C_j$, and each $B_i \cap C_j$ is a union of base elements by the hypothesis applied at each of its points.
 
 **Definition.** A topological space is **first countable** if every point has a countable neighbourhood base, and **second countable** if it has a countable base. First countability is a local condition, inherited by subspaces and countable products; second countability is inherited by subspaces and countable products, and implies separability and the Lindelöf property.
 
 **Proposition.** In a first countable space, the closure of $A$ is the set of limits of sequences in $A$: $x \in \overline{A}$ if and only if some sequence in $A$ converges to $x$. In a second countable space every open cover has a countable subcover.
 
-**Proof.** If $x \in \overline{A}$ and $(U_n)$ is a decreasing countable neighbourhood base at $x$, choose $a_n \in A \cap U_n$, which is nonempty by the closure criterion; then $a_n \to x$. Conversely a limit of points of $A$ lies in $\overline{A}$. The second statement follows by choosing, for each $x$ in the space, a base element $B_x$ containing $x$ and contained in some member of the cover, and reducing to the countable set of the $B_x$.
+**Proof.** If $x \in \overline{A}$ and $(\Omega_n)$ is a decreasing countable neighbourhood base at $x$, choose $a_n \in A \cap \Omega_n$, which is nonempty by the closure criterion; then $a_n \to x$. Conversely a limit of points of $A$ lies in $\overline{A}$. The second statement follows by choosing, for each $x$ in the space, a base element $B_x$ containing $x$ and contained in some member of the cover, and reducing to the countable set of the $B_x$.
 
 ### Neighbourhood Bases at a Point
 
 For many constructions it is the neighbourhood base at a single point that matters, and for groups that point is the identity.
 
-**Proposition.** Let $\mathcal{N}_x$ be a neighbourhood base at $x$, consisting of open sets. Then $U \subseteq X$ is a neighbourhood of $x$ if and only if $U$ contains a member of $\mathcal{N}_x$; and the data $(\mathcal{N}_x)_{x \in X}$ determines the topology, since $U$ is open if and only if $U$ is a neighbourhood of each of its points.
+**Proposition.** Let $\mathcal{N}_x$ be a neighbourhood base at $x$, consisting of open sets. Then $\Omega \subseteq X$ is a neighbourhood of $x$ if and only if $\Omega$ contains a member of $\mathcal{N}_x$; and the data $(\mathcal{N}_x)_{x \in X}$ determines the topology, since $\Omega$ is open if and only if $\Omega$ is a neighbourhood of each of its points.
 
 **Proof.** Immediate from the definitions.
 
@@ -88,13 +88,13 @@ This is the form in which the topology of a topological group will be specified:
 
 ### Continuity
 
-**Definition.** Let $X$ and $Y$ be topological spaces. A function $f : X \to Y$ is **continuous at** $x \in X$ if for every neighbourhood $V$ of $f(x)$ there is a neighbourhood $U$ of $x$ with $f(U) \subseteq V$. It is **continuous** if it is continuous at every point, equivalently if $f^{-1}(V)$ is open in $X$ for every open $V \subseteq Y$; equivalently, by the proposition on neighbourhood bases, if
+**Definition.** Let $X$ and $Y$ be topological spaces. A function $f : X \to Y$ is **continuous at** $x \in X$ if for every neighbourhood $V$ of $f(x)$ there is a neighbourhood $\Omega$ of $x$ with $f(\Omega) \subseteq V$. It is **continuous** if it is continuous at every point, equivalently if $f^{-1}(V)$ is open in $X$ for every open $V \subseteq Y$; equivalently, by the proposition on neighbourhood bases, if
 
 $$
-\forall x \in X \ \ \forall V \ni f(x) \ \ \exists U \ni x : \ f(U) \subseteq V .
+\forall x \in X \ \ \forall V \ni f(x) \ \ \exists \Omega \ni x : \ f(\Omega) \subseteq V .
 $$
 
-**Theorem.** For $f : X \to Y$ the following are equivalent: (a) $f$ is continuous; (b) $f^{-1}(F)$ is closed for every closed $F \subseteq Y$; (c) $f(\overline{A}) \subseteq \overline{f(A)}$ for every $A \subseteq X$; (d) for every $x \in X$ and every neighbourhood $V$ of $f(x)$ there is a neighbourhood $U$ of $x$ with $f(U) \subseteq V$.
+**Theorem.** For $f : X \to Y$ the following are equivalent: (a) $f$ is continuous; (b) $f^{-1}(F)$ is closed for every closed $F \subseteq Y$; (c) $f(\overline{A}) \subseteq \overline{f(A)}$ for every $A \subseteq X$; (d) for every $x \in X$ and every neighbourhood $V$ of $f(x)$ there is a neighbourhood $\Omega$ of $x$ with $f(\Omega) \subseteq V$.
 
 **Proof.** (a) $\Leftrightarrow$ (b) by complements. (a) $\Leftrightarrow$ (c): if $f$ is continuous and $x \in \overline{A}$, then every neighbourhood $V$ of $f(x)$ has open preimage containing $x$, which meets $A$, so $V$ meets $f(A)$ and $f(x) \in \overline{f(A)}$. Conversely if (c) holds and $V \subseteq Y$ is open, put $A = X \setminus f^{-1}(V)$; then $f(\overline{A}) \subseteq \overline{f(A)} \subseteq Y \setminus V$, so $\overline{A} \subseteq X \setminus f^{-1}(V)$ and $f^{-1}(V)$ is open. (a) $\Leftrightarrow$ (d) is the definition.
 
@@ -116,23 +116,23 @@ The two theorems say that topological spaces and continuous maps form a category
 
 ### Subspaces
 
-**Definition.** Let $(X, \tau)$ be a topological space and $A \subseteq X$. The **subspace topology** on $A$ is $\tau_A = \{U \cap A : U \in \tau\}$. The map $A \hookrightarrow X$ is then continuous, and $\tau_A$ is the coarsest topology on $A$ making the inclusion continuous; it is the **initial** topology with respect to the single map $A \to X$.
+**Definition.** Let $(X, \tau)$ be a topological space and $A \subseteq X$. The **subspace topology** on $A$ is $\tau_A = \{\Omega \cap A : \Omega \in \tau\}$. The map $A \hookrightarrow X$ is then continuous, and $\tau_A$ is the coarsest topology on $A$ making the inclusion continuous; it is the **initial** topology with respect to the single map $A \to X$.
 
 The subspace topology is characterised by a universal property: a map $f : Z \to A$ is continuous if and only if the composite $Z \to A \hookrightarrow X$ is continuous. Closed sets of the subspace are the intersections $A \cap F$ with $F$ closed in $X$; the closure of $B \subseteq A$ in the subspace topology is $\overline B \cap A$, where $\overline B$ is the closure in $X$.
 
 ### Products
 
-**Definition.** Let $(X_i)_{i \in I}$ be topological spaces. The **product topology** on $X = \prod_i X_i$ is the topology generated by the subbase consisting of the sets $\pi_i^{-1}(U_i)$ for $i \in I$ and $U_i$ open in $X_i$, where $\pi_i : X \to X_i$ is the projection. A base is given by the products $\prod_i U_i$ with $U_i$ open in $X_i$ and $U_i = X_i$ for all but finitely many $i$, that is,
+**Definition.** Let $(X_i)_{i \in I}$ be topological spaces. The **product topology** on $X = \prod_i X_i$ is the topology generated by the subbase consisting of the sets $\pi_i^{-1}(\Omega_i)$ for $i \in I$ and $\Omega_i$ open in $X_i$, where $\pi_i : X \to X_i$ is the projection. A base is given by the products $\prod_i \Omega_i$ with $\Omega_i$ open in $X_i$ and $\Omega_i = X_i$ for all but finitely many $i$, that is,
 
 $$
-\mathcal{B} = \Big\{ \prod_{i \in I} U_i : U_i \text{ open in } X_i, \ U_i = X_i \text{ for all but finitely many } i \Big\}.
+\mathcal{B} = \Big\{ \prod_{i \in I} \Omega_i : \Omega_i \text{ open in } X_i, \ \Omega_i = X_i \text{ for all but finitely many } i \Big\}.
 $$
 
 The restriction "all but finitely many" is essential and is the difference between the product topology and the box topology; only the former has the characteristic property of the theorem below when $I$ is infinite.
 
 **Theorem (characteristic property).** The product topology is the coarsest topology making every projection $\pi_i$ continuous, and a map $f : Z \to \prod_i X_i$ is continuous if and only if every composite $\pi_i \circ f$ is continuous.
 
-**Proof.** The topology generated by the $\pi_i^{-1}(U_i)$ is by construction the coarsest making all $\pi_i$ continuous, and it is the topology whose base is displayed above. If $f$ is continuous then so is each $\pi_i \circ f$. Conversely, if each $\pi_i \circ f$ is continuous, then $f^{-1}(\pi_i^{-1}(U_i)) = (\pi_i\circ f)^{-1}(U_i)$ is open, and these sets generate the product topology, so $f^{-1}$ of every open set is open.
+**Proof.** The topology generated by the $\pi_i^{-1}(\Omega_i)$ is by construction the coarsest making all $\pi_i$ continuous, and it is the topology whose base is displayed above. If $f$ is continuous then so is each $\pi_i \circ f$. Conversely, if each $\pi_i \circ f$ is continuous, then $f^{-1}(\pi_i^{-1}(\Omega_i)) = (\pi_i\circ f)^{-1}(\Omega_i)$ is open, and these sets generate the product topology, so $f^{-1}$ of every open set is open.
 
 **Theorem.** If $f_i : X_i \to Y_i$ are continuous, then $\prod_i f_i : \prod_i X_i \to \prod_i Y_i$ is continuous. The projections are open maps. A sequence in a countable product converges if and only if each coordinate sequence converges.
 
@@ -162,19 +162,19 @@ Sequences are insufficient in general topological spaces: the closure of a set n
 
 ### Nets
 
-**Definition.** A **directed set** is a pair $(A, \leq)$ with $\leq$ reflexive and transitive such that every two elements have an upper bound. A **net** in $X$ is a function $A \to X$, written $(x_\alpha)_{\alpha \in A}$. It **converges** to $x \in X$ if for every neighbourhood $U$ of $x$ there is $\alpha_0$ with $x_\alpha \in U$ for all $\alpha \geq \alpha_0$; one writes $x_\alpha \to x$. The net **has $x$ as a cluster point** if for every neighbourhood $U$ of $x$ and every $\alpha$ there is $\beta \geq \alpha$ with $x_\beta \in U$. In symbols,
+**Definition.** A **directed set** is a pair $(A, \leq)$ with $\leq$ reflexive and transitive such that every two elements have an upper bound. A **net** in $X$ is a function $A \to X$, written $(x_\alpha)_{\alpha \in A}$. It **converges** to $x \in X$ if for every neighbourhood $\Omega$ of $x$ there is $\alpha_0$ with $x_\alpha \in \Omega$ for all $\alpha \geq \alpha_0$; one writes $x_\alpha \to x$. The net **has $x$ as a cluster point** if for every neighbourhood $\Omega$ of $x$ and every $\alpha$ there is $\beta \geq \alpha$ with $x_\beta \in \Omega$. In symbols,
 
 $$
-x_\alpha \to x \iff \forall U \ni x \ \ \exists \alpha_0 \ \ \forall \alpha \geq \alpha_0 : \ x_\alpha \in U .
+x_\alpha \to x \iff \forall \Omega \ni x \ \ \exists \alpha_0 \ \ \forall \alpha \geq \alpha_0 : \ x_\alpha \in \Omega .
 $$
 
 **Theorem.** Let $A \subseteq X$. Then $x \in \overline{A}$ if and only if there is a net in $A$ converging to $x$.
 
-**Proof.** If $x \in \overline{A}$, direct the neighbourhoods of $x$ by reverse inclusion and choose $x_U \in U \cap A$, nonempty by the closure criterion; the resulting net converges to $x$. Conversely, if $x_\alpha \in A$ and $x_\alpha \to x$, then every neighbourhood of $x$ meets $A$, so $x \in \overline{A}$.
+**Proof.** If $x \in \overline{A}$, direct the neighbourhoods of $x$ by reverse inclusion and choose $x_\Omega \in \Omega \cap A$, nonempty by the closure criterion; the resulting net converges to $x$. Conversely, if $x_\alpha \in A$ and $x_\alpha \to x$, then every neighbourhood of $x$ meets $A$, so $x \in \overline{A}$.
 
 **Theorem.** A map $f : X \to Y$ is continuous if and only if $x_\alpha \to x$ in $X$ implies $f(x_\alpha) \to f(x)$ in $Y$.
 
-**Proof.** If $f$ is continuous and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so eventually $x_\alpha \in f^{-1}(V)$ and $f(x_\alpha) \in V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; for every neighbourhood $U$ of $x$ choose $x_U \in U \setminus f^{-1}(V)$. Then $x_U \to x$ but $f(x_U) \notin V$, so $f(x_U) \not\to f(x)$.
+**Proof.** If $f$ is continuous and $V$ is a neighbourhood of $f(x)$, then $f^{-1}(V)$ is a neighbourhood of $x$, so eventually $x_\alpha \in f^{-1}(V)$ and $f(x_\alpha) \in V$. Conversely, if $f$ is not continuous at $x$, there is a neighbourhood $V$ of $f(x)$ with $f^{-1}(V)$ not a neighbourhood of $x$; for every neighbourhood $\Omega$ of $x$ choose $x_\Omega \in \Omega \setminus f^{-1}(V)$. Then $x_\Omega \to x$ but $f(x_\Omega) \notin V$, so $f(x_\Omega) \not\to f(x)$.
 
 ### Filters
 
@@ -184,7 +184,7 @@ The neighbourhood filter $\mathcal{N}_x$ of all neighbourhoods of $x$ is the fil
 
 **Theorem.** A set $A$ is closed if and only if no filter that contains $A$ and converges in $X$ converges to a point outside $A$; equivalently, if a filter on $A$ converges in $X$ to $x$, then $x \in A$. A space is Hausdorff if and only if every filter converges to at most one point.
 
-**Proof.** If $A$ is closed, $A \in \mathcal{F}$ and $\mathcal{F} \to x \notin A$, then $X \setminus A$ is a neighbourhood of $x$, so $X \setminus A \in \mathcal{F}$ and $\emptyset = A \cap (X \setminus A) \in \mathcal{F}$, impossible. Conversely if $A$ is not closed pick $x \in \overline{A} \setminus A$; the family $\{A \cap U : U \in \mathcal{N}_x\}$ is a filter base on $A$, since a finite intersection of its members contains $A \cap (U_1 \cap \cdots \cap U_n)$, and the filter it generates contains $A$ and converges to $x \notin A$. For the second statement, if $x \neq y$ have disjoint neighbourhoods $U, V$, a filter converging to both would contain $U \cap V = \emptyset$; conversely, if some two distinct points $x, y$ have no disjoint neighbourhoods, then the family $\{U \cap V : U \in \mathcal{N}_x, V \in \mathcal{N}_y\}$ consists of nonempty sets and a finite intersection of its members contains $(\bigcap_i U_i) \cap (\bigcap_i V_i)$, so it is a filter base; the filter it generates contains $\mathcal{N}_x$ and $\mathcal{N}_y$ and therefore converges to both $x$ and $y$.
+**Proof.** If $A$ is closed, $A \in \mathcal{F}$ and $\mathcal{F} \to x \notin A$, then $X \setminus A$ is a neighbourhood of $x$, so $X \setminus A \in \mathcal{F}$ and $\emptyset = A \cap (X \setminus A) \in \mathcal{F}$, impossible. Conversely if $A$ is not closed pick $x \in \overline{A} \setminus A$; the family $\{A \cap \Omega : \Omega \in \mathcal{N}_x\}$ is a filter base on $A$, since a finite intersection of its members contains $A \cap (\Omega_1 \cap \cdots \cap \Omega_n)$, and the filter it generates contains $A$ and converges to $x \notin A$. For the second statement, if $x \neq y$ have disjoint neighbourhoods $\Omega, V$, a filter converging to both would contain $\Omega \cap V = \emptyset$; conversely, if some two distinct points $x, y$ have no disjoint neighbourhoods, then the family $\{\Omega \cap V : \Omega \in \mathcal{N}_x, V \in \mathcal{N}_y\}$ consists of nonempty sets and a finite intersection of its members contains $(\bigcap_i \Omega_i) \cap (\bigcap_i V_i)$, so it is a filter base; the filter it generates contains $\mathcal{N}_x$ and $\mathcal{N}_y$ and therefore converges to both $x$ and $y$.
 
 ### Equivalence and Ultrafilters
 
@@ -194,7 +194,7 @@ A net $(x_\alpha)_{\alpha \in A}$ generates the filter of sets containing some t
 
 **Theorem.** A space $X$ is compact if and only if every ultrafilter on $X$ converges. It is compact and Hausdorff if and only if every ultrafilter converges to a unique point.
 
-**Proof.** If $X$ is compact and an ultrafilter $\mathcal{U}$ converges at no point, then for every $x$ there is a neighbourhood $U_x \notin \mathcal{U}$, and by maximality $X \setminus U_x \in \mathcal{U}$. Finitely many of the $U_x$ cover $X$, so the intersection of the corresponding complements is empty and $\emptyset \in \mathcal{U}$, a contradiction. Conversely, if every ultrafilter converges and $\{U_i\}$ is an open cover with no finite subcover, the complements $X \setminus U_i$ have the finite intersection property — a finite intersection of them is the complement of a finite union, which is nonempty — so they generate a filter, hence are contained in an ultrafilter $\mathcal{U}$. A limit point of $\mathcal{U}$ lies in some $U_i$, and $U_i$, being a neighbourhood of that point, then belongs to $\mathcal{U}$; but $\mathcal{U}$ also contains $X \setminus U_i$, and $U_i \cap (X \setminus U_i) = \emptyset$, a contradiction. Uniqueness in the Hausdorff case is the preceding theorem.
+**Proof.** If $X$ is compact and an ultrafilter $\mathcal{U}$ converges at no point, then for every $x$ there is a neighbourhood $\Omega_x \notin \mathcal{U}$, and by maximality $X \setminus \Omega_x \in \mathcal{U}$. Finitely many of the $\Omega_x$ cover $X$, so the intersection of the corresponding complements is empty and $\emptyset \in \mathcal{U}$, a contradiction. Conversely, if every ultrafilter converges and $\{\Omega_i\}$ is an open cover with no finite subcover, the complements $X \setminus \Omega_i$ have the finite intersection property — a finite intersection of them is the complement of a finite union, which is nonempty — so they generate a filter, hence are contained in an ultrafilter $\mathcal{U}$. A limit point of $\mathcal{U}$ lies in some $\Omega_i$, and $\Omega_i$, being a neighbourhood of that point, then belongs to $\mathcal{U}$; but $\mathcal{U}$ also contains $X \setminus \Omega_i$, and $\Omega_i \cap (X \setminus \Omega_i) = \emptyset$, a contradiction. Uniqueness in the Hausdorff case is the preceding theorem.
 
 ## Separation Axioms
 
@@ -218,7 +218,7 @@ hold, and they do not reverse in general: the cofinite topology on an infinite s
 
 **Proposition.** A space is Hausdorff if and only if the diagonal $\Delta_X = \{(x, x)\} \subseteq X \times X$ is closed. If $f, g : X \to Y$ are continuous with $Y$ Hausdorff, then the set $\{x : f(x) = g(x)\}$ is closed; in particular a continuous map into a Hausdorff space is determined by its values on a dense subset.
 
-**Proof.** $\Delta_X$ is closed exactly when for $x \neq y$ there are basic open sets $U, V$ with $(x, y) \in U \times V$ disjoint from $\Delta_X$, that is, $U \cap V = \emptyset$. For the second statement apply the first to $X \to Y \times Y$, $x \mapsto (f(x), g(x))$.
+**Proof.** $\Delta_X$ is closed exactly when for $x \neq y$ there are basic open sets $\Omega, V$ with $(x, y) \in \Omega \times V$ disjoint from $\Delta_X$, that is, $\Omega \cap V = \emptyset$. For the second statement apply the first to $X \to Y \times Y$, $x \mapsto (f(x), g(x))$.
 
 ### The Separation Theorems
 
@@ -242,11 +242,11 @@ Both are standard, and each implies the other; Urysohn's lemma is the source of 
 
 **Theorem.** Continuous images of connected spaces are connected. If $A \subseteq X$ is connected and $A \subseteq B \subseteq \overline{A}$, then $B$ is connected. Arbitrary unions of connected sets with a common point are connected.
 
-**Proof.** If $f : X \to Y$ is continuous and $f(X) = U \sqcup V$ with $U, V$ disjoint nonempty open, then $X = f^{-1}(U) \sqcup f^{-1}(V)$ is a separation. If $B = U \sqcup V$ is a separation with $U, V$ open in $B$, then $A \cap U$ and $A \cap V$ are open in $A$ and cannot both be nonempty; say $A \subseteq U$. Then $A \subseteq B \setminus V$, which is closed in $B$, so $\overline{A} \cap B \subseteq B \setminus V$ and $V = \emptyset$, a contradiction. For a union, any separation restricts to a separation of each connected set, forcing each to lie on one side; the common point forces all on the same side.
+**Proof.** If $f : X \to Y$ is continuous and $f(X) = \Omega \sqcup V$ with $\Omega, V$ disjoint nonempty open, then $X = f^{-1}(\Omega) \sqcup f^{-1}(V)$ is a separation. If $B = \Omega \sqcup V$ is a separation with $\Omega, V$ open in $B$, then $A \cap \Omega$ and $A \cap V$ are open in $A$ and cannot both be nonempty; say $A \subseteq \Omega$. Then $A \subseteq B \setminus V$, which is closed in $B$, so $\overline{A} \cap B \subseteq B \setminus V$ and $V = \emptyset$, a contradiction. For a union, any separation restricts to a separation of each connected set, forcing each to lie on one side; the common point forces all on the same side.
 
 **Theorem.** The connected subsets of $\mathbb{R}$ are exactly the intervals. In particular $\mathbb{R}$ and every interval are connected, and the intermediate value theorem is the statement that the continuous image of an interval is an interval.
 
-**Proof.** A subset with a gap $a < c < b$, $a, b \in A$, $c \notin A$, is separated by $A \cap (-\infty, c)$ and $A \cap (c, \infty)$, so a connected subset is an interval. Conversely, if an interval $J$ had a separation $J = U \sqcup V$ with $U, V$ nonempty and open in $J$, pick $u \in U$, $v \in V$ and let $s = \sup(U \cap [u, v])$, a point of $J$ lying between $u$ and $v$ and in the closure of $U \cap [u, v]$. Since $U$ and $V$ partition $J$, the point $s$ lies in one of them; if $s \in U$, openness of $U$ in $J$ gives points of $U \cap [u, v]$ above $s$, contradicting the defining property of the supremum, and if $s \in V$, openness of $V$ gives a whole interval around $s$ inside $V$, so that $\sup(U \cap [u,v]) < s$, again a contradiction.
+**Proof.** A subset with a gap $a < c < b$, $a, b \in A$, $c \notin A$, is separated by $A \cap (-\infty, c)$ and $A \cap (c, \infty)$, so a connected subset is an interval. Conversely, if an interval $J$ had a separation $J = \Omega \sqcup V$ with $\Omega, V$ nonempty and open in $J$, pick $u \in \Omega$, $v \in V$ and let $s = \sup(\Omega \cap [u, v])$, a point of $J$ lying between $u$ and $v$ and in the closure of $\Omega \cap [u, v]$. Since $\Omega$ and $V$ partition $J$, the point $s$ lies in one of them; if $s \in \Omega$, openness of $\Omega$ in $J$ gives points of $\Omega \cap [u, v]$ above $s$, contradicting the defining property of the supremum, and if $s \in V$, openness of $V$ gives a whole interval around $s$ inside $V$, so that $\sup(\Omega \cap [u,v]) < s$, again a contradiction.
 
 ### Components and Path Connectedness
 
@@ -278,13 +278,13 @@ Both are standard, and each implies the other; Urysohn's lemma is the source of 
 
 **Proof.** For the first, add the complement to an open cover of the closed subset. For the second, if $K$ is compact in a Hausdorff $X$ and $x \notin K$, separate $x$ from each point of $K$; compactness gives finitely many neighbourhoods whose intersection is disjoint from a neighbourhood of $K$, so $X \setminus K$ is open. For the third, the preimage of a cover is a cover. Normality was stated above.
 
-**Theorem (tube lemma).** Let $Y$ be compact and let $N$ be an open set in $X \times Y$ containing $\{x_0\} \times Y$. Then there is a neighbourhood $U$ of $x_0$ with $U \times Y \subseteq N$.
+**Theorem (tube lemma).** Let $Y$ be compact and let $N$ be an open set in $X \times Y$ containing $\{x_0\} \times Y$. Then there is a neighbourhood $\Omega$ of $x_0$ with $\Omega \times Y \subseteq N$.
 
-**Proof.** For each $y \in Y$ choose a basic neighbourhood $U_y \times V_y \subseteq N$ of $(x_0, y)$; finitely many $V_y$ cover $Y$, and $U = \bigcap U_y$ works.
+**Proof.** For each $y \in Y$ choose a basic neighbourhood $\Omega_y \times V_y \subseteq N$ of $(x_0, y)$; finitely many $V_y$ cover $Y$, and $\Omega = \bigcap \Omega_y$ works.
 
 **Corollary.** The product of finitely many compact spaces is compact.
 
-**Proof.** For two spaces, let $\{W_i\}$ be an open cover of $X \times Y$. For $x \in X$ the slice $\{x\} \times Y$ is compact, being homeomorphic to the compact space $Y$, so it is covered by finitely many of the $W_i$; their union is an open set containing the slice, so the tube lemma gives a neighbourhood $U_x$ of $x$ with $U_x \times Y$ covered by those same finitely many members of the cover. Finitely many of the $U_x$ cover $X$ by compactness, and the corresponding finitely many members of $\{W_i\}$ then cover $X \times Y$. Induction gives the finite case.
+**Proof.** For two spaces, let $\{W_i\}$ be an open cover of $X \times Y$. For $x \in X$ the slice $\{x\} \times Y$ is compact, being homeomorphic to the compact space $Y$, so it is covered by finitely many of the $W_i$; their union is an open set containing the slice, so the tube lemma gives a neighbourhood $\Omega_x$ of $x$ with $\Omega_x \times Y$ covered by those same finitely many members of the cover. Finitely many of the $\Omega_x$ cover $X$ by compactness, and the corresponding finitely many members of $\{W_i\}$ then cover $X \times Y$. Induction gives the finite case.
 
 **Theorem (Tychonoff).** An arbitrary product of compact spaces is compact: if each $X_i$ is compact, then so is
 
@@ -332,14 +332,14 @@ Nets and filters give equivalent accounts of convergence; a space is Hausdorff e
 |---|---|
 | $X, Y, Z$ | Topological spaces |
 | $\tau$ | A topology; a family of open sets |
-| $U, V$ | Open sets; $F$ closed |
+| $\Omega, V$ | Open sets; $F$ closed |
 | $N$ | Neighbourhood of a point; need not be open |
 | $\operatorname{int} A$, $\overline{A}$, $\partial A$ | Interior, closure and boundary of $A$ |
 | $x \in \overline{A}$ | Closure criterion: every neighbourhood of $x$ meets $A$ |
 | $\mathcal{B}$, $\mathcal{S}$ | Base and subbase for a topology |
 | $f : X \to Y$ continuous | $f^{-1}(V)$ open for every open $V$ |
 | $X \cong Y$ | Homeomorphic spaces |
-| $A \subseteq X$ | Subspace topology $U \cap A$ |
+| $A \subseteq X$ | Subspace topology $\Omega \cap A$ |
 | $X \times Y$, $\prod_i X_i$, $\pi_i$ | Product and projections; product topology |
 | $X/{\sim}$, $q : X \to Y$ | Quotient (identification) topology and quotient map |
 | $S^1$, $T^n$, $\mathbb{R}P^n$, $\mathbb{C}P^n$ | Standard quotients |

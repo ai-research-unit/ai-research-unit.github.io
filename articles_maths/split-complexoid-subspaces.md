@@ -7,14 +7,14 @@ The distinguished subspaces of $\mathbb{D}$ are the fixed and anti-fixed spaces 
 
 The single non-trivial involution is the conjugation $\bar{\cdot}$: it is the only involution distinct from the identity, and the idempotent conjugation coincides with it. Each involution splits the algebra into a fixed space and an anti-fixed space, so there is one decomposition into two lines, namely the scalar–split-vector decomposition, and there is a second, finer decomposition, the idempotent one, not induced by an involution. Every number below is recomputed from the definitions by comparison of coefficients.
 
-**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $A = a+ja'$; conjugate $\bar A = a-ja'$; idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$; idempotent coordinates $A_\pm = a\pm a'$; norm $\langle A\rangle = A\bar A = a^2-a'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.
+**Conventions.** The algebra is $\mathbb{D} = \mathbb{R}[x]/(x^2-1)$, with basis $1$, $j$, $j^2 = +1$; general element $Q = q+jq'$; conjugate $\bar Q = q-jq'$; idempotents $\Pi_1 = \tfrac12(1+j)$ and $\Pi_2 = \tfrac12(1-j)$; idempotent coordinates $q_+ = q+q'$ and $q_- = q-q'$; norm $\langle Q\rangle = Q\bar Q = q^2-q'^2$. The algebra is commutative, so there is no Hermitian decomposition; that slot of the four-dimensional case is empty here.
 
 ## The Two Involutions
 
-The algebra carries two involutions: the split-complex conjugation $\bar{A} = a-ja'$ and the idempotent conjugation (the swap) $\tilde{A} = (a-a')\Pi_1 + (a+a')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:
+The algebra carries two involutions: the split-complex conjugation $\bar{Q} = q-jq'$ and the idempotent conjugation (the swap) $\tilde{Q} = (q-q')\Pi_1 + (q+q')\Pi_2$. Each is an $\mathbb{R}$-linear map of order two, and on $\mathbb{D}$ they coincide:
 
 $$
-A = (a-a')\Pi_1 + (a+a')\Pi_2 = (a-a')\tfrac{1+j}{2} + (a+a')\tfrac{1-j}{2} = a - j a' = \bar A.
+Q = (q-q')\Pi_1 + (q+q')\Pi_2 = (q-q')\tfrac{1+j}{2} + (q+q')\tfrac{1-j}{2} = q - j q' = \bar Q.
 $$
 
 So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the map sending an element to its "conjugate with respect to the idempotent basis" produces no second structure. Here the whole involution content is a single non-trivial map.
@@ -23,12 +23,12 @@ So there is one involution worth naming, the conjugation $\bar{\cdot}$, and the 
 
 The involution $\bar{\cdot}$ splits $\mathbb{D}$ into its fixed line and its anti-fixed line, and the idempotent basis adds the two finer lines.
 
-| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra? | restricted $N$ |
+| subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra? | restricted $\langle\cdot\rangle$ |
 |---|---|---|---|---|---|
-| $\mathbb{R}_{\mathbb{D}}$ | $\bar A = A$ | $1$ | $1$ | yes, $\cong\mathbb{R}$ | $a^2$, positive definite |
-| $j\mathbb{R}_{\mathbb{D}}$ | $\bar A = -A$ | $j$ | $1$ | no | $-a'^2$, negative definite |
-| $\mathbb{R}\Pi_1$ | $A_- = 0$ | $\Pi_1$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
-| $\mathbb{R}\Pi_2$ | $A_+ = 0$ | $\Pi_2$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
+| $\mathbb{R}_{\mathbb{D}}$ | $\bar Q = Q$ | $1$ | $1$ | yes, $\cong\mathbb{R}$ | $q^2$, positive definite |
+| $j\mathbb{R}_{\mathbb{D}}$ | $\bar Q = -Q$ | $j$ | $1$ | no | $-q'^2$, negative definite |
+| $\mathbb{R}\Pi_1$ | $q_- = 0$ | $\Pi_1$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
+| $\mathbb{R}\Pi_2$ | $q_+ = 0$ | $\Pi_2$ | $1$ | ideal, $\cong\mathbb{R}$ | $0$ |
 
 Two of these are the members of a decomposition induced by the involution, and two are the members of the idempotent decomposition. The first pair is a decomposition into complementary eigenspaces; the second pair is a decomposition into complementary ideals.
 
@@ -37,35 +37,35 @@ Two of these are the members of a decomposition induced by the involution, and t
 The involution gives the **scalar–split-vector decomposition**
 
 $$
-\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad A = A_r + j A_i, \qquad A_r = \tfrac12(A+\bar A), \quad A_i = \tfrac12 j^{-1}(A-\bar A) = a',
+\mathbb{D} = \mathbb{R}_{\mathbb{D}} \oplus j\mathbb{R}_{\mathbb{D}}, \qquad Q = q_r + j q_i, \qquad q_r = \tfrac12(Q+\bar Q), \quad q_i = \tfrac12 j^{-1}(Q-\bar Q) = q',
 $$
 
 and the idempotent basis gives the **idempotent decomposition**
 
 $$
-\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad A = A_+\Pi_1 + A_-\Pi_2, \qquad A_\pm = A\Pi_{1,2} = a\pm a'.
+\mathbb{D} = \mathbb{R}\Pi_1 \oplus \mathbb{R}\Pi_2, \qquad Q = q_+\Pi_1 + q_-\Pi_2, \qquad q_+ = Q\Pi_1 = q+q', \quad q_- = Q\Pi_2 = q-q'.
 $$
 
 The two decompositions are related by the coefficient change-of-basis in the plane $\mathbb{D}\cong\mathbb{R}^2$:
 
 $$
-A_+ = A_r + A_i, \qquad A_- = A_r - A_i,
+q_+ = q_r + q_i, \qquad q_- = q_r - q_i,
 $$
 
 so the change from the eigenbasis $\{1, j\}$ of the involution to the idempotent basis $\{\Pi_1, \Pi_2\}$ is the linear map
 
 $$
-\begin{pmatrix} A_+ \\ A_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} A_r \\ A_i \end{pmatrix}.
+\begin{pmatrix} q_+ \\ q_- \end{pmatrix} = \begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix} \begin{pmatrix} q_r \\ q_i \end{pmatrix}.
 $$
 
 Here there are two such decompositions, and only the first is induced by an involution.
 
 ## The Four Coordinate Lines
 
-The two real coordinates of $\mathbb{D}$ are $(a,a')$, in the basis $\{1,j\}$. They group into the two lines
+The two real coordinates of $\mathbb{D}$ are $(q,q')$, in the basis $\{1,j\}$. They group into the two lines
 
 $$
-\langle 1\rangle = \{(a,0)\}, \qquad \langle j\rangle = \{(0,a')\},
+\langle 1\rangle = \{(q,0)\}, \qquad \langle j\rangle = \{(0,q')\},
 $$
 
 the real and split imaginary coordinate lines. In the idempotent basis the same plane is grouped into the two lines
@@ -78,10 +78,10 @@ the two diagonal directions. The four lines are pairwise distinct: the coordinat
 
 | line | basis | coordinates | slope |
 |---|---|---|---|
-| real line | $1$ | $a' = 0$ | $0$ |
-| split imaginary line | $j$ | $a = 0$ | $\infty$ |
-| positive idempotent line | $\Pi_1$ | $a = a'$ | $+1$ |
-| negative idempotent line | $\Pi_2$ | $a = -a'$ | $-1$ |
+| real line | $1$ | $q' = 0$ | $0$ |
+| split imaginary line | $j$ | $q = 0$ | $\infty$ |
+| positive idempotent line | $\Pi_1$ | $q = q'$ | $+1$ |
+| negative idempotent line | $\Pi_2$ | $q = -q'$ | $-1$ |
 
 ## The Intersections
 
@@ -138,8 +138,8 @@ The conjugation $\bar{\cdot}$ preserves each of the four lines, acting on each b
 
 | line | $\bar{\cdot}$ action | eigenvalue |
 |---|---|---|
-| $\mathbb{R}_{\mathbb{D}}$ | $\bar A = A$ | $+1$ |
-| $j\mathbb{R}_{\mathbb{D}}$ | $\bar A = -A$ | $-1$ |
+| $\mathbb{R}_{\mathbb{D}}$ | $\bar Q = Q$ | $+1$ |
+| $j\mathbb{R}_{\mathbb{D}}$ | $\bar Q = -Q$ | $-1$ |
 | $\mathbb{R}\Pi_1$ | $\overline{\lambda \Pi_1} = \lambda \Pi_2$ | swaps with $\mathbb{R}\Pi_2$ |
 | $\mathbb{R}\Pi_2$ | $\overline{\lambda \Pi_2} = \lambda \Pi_1$ | swaps with $\mathbb{R}\Pi_1$ |
 
@@ -149,7 +149,7 @@ $$
 \bar \Pi_1 = \tfrac12(1-j) = \Pi_2, \qquad \bar \Pi_2 = \tfrac12(1+j) = \Pi_1.
 $$
 
-So the involution is diagonal on the eigenbasis and the swap on the idempotent basis. In the four-dimensional case the four involutions act on the remarkable subspaces with mixed signs; here a single involution acts with the two signs on its own eigenspaces, and interchanges the two idempotent lines. The action table is the whole of the involution information, and it is consistent with the earlier statement $A = \bar A$: the idempotent swap is neither more nor less than the conjugation.
+So the involution is diagonal on the eigenbasis and the swap on the idempotent basis. In the four-dimensional case the four involutions act on the remarkable subspaces with mixed signs; here a single involution acts with the two signs on its own eigenspaces, and interchanges the two idempotent lines. The action table is the whole of the involution information, and it is consistent with the earlier statement $Q = \bar Q$: the idempotent swap is neither more nor less than the conjugation.
 
 ## The Norm on Each Line
 
@@ -157,8 +157,8 @@ The restricted norm is definite on the two eigenlines and identically zero on th
 
 | line | restricted $\langle\cdot\rangle$ | signature | zero divisors on the line |
 |---|---|---|---|
-| $\mathbb{R}_{\mathbb{D}}$ | $\langle a\rangle = a^2$ | positive definite | none |
-| $j\mathbb{R}_{\mathbb{D}}$ | $\langle j a'\rangle = -a'^2$ | negative definite | none |
+| $\mathbb{R}_{\mathbb{D}}$ | $\langle q\rangle = q^2$ | positive definite | none |
+| $j\mathbb{R}_{\mathbb{D}}$ | $\langle j q'\rangle = -q'^2$ | negative definite | none |
 | $\mathbb{R}\Pi_1$ | $\langle \lambda \Pi_1\rangle = 0$ | zero | all nonzero elements |
 | $\mathbb{R}\Pi_2$ | $\langle \lambda \Pi_2\rangle = 0$ | zero | all nonzero elements |
 
@@ -174,13 +174,13 @@ $$
 \mathbb{R}_{\mathbb{C}} = \{a\}, \quad i\mathbb{R}_{\mathbb{C}} = \{ia'\},
 $$
 
-exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-a'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
+exactly two distinguished subspaces, both of dimension $1$. The difference from $\mathbb{D}$ is that the norm on $i\mathbb{R}_{\mathbb{C}}$ is $\langle ia'\rangle = a'^2$, **positive definite**, whereas on $j\mathbb{R}_{\mathbb{D}}$ it is $-q'^2$; and that $\mathbb{C}$ has no idempotent decomposition, because $\mathbb{C}$ has no idempotents other than $0$ and $1$ (the equation $\zeta^2 = \zeta$ in a field forces $\zeta = 0$ or $1$). So the split-complex algebra has the same two involutive lines as $\mathbb{C}$ but with the sign of the imaginary line reversed, and it has in addition the two idempotent lines, which the field does not possess. This is the precise way in which the subspace theory of $\mathbb{D}$ is the indefinite enrichment of the subspace theory of $\mathbb{C}$.
 
 | feature | $\mathbb{C}$ | $\mathbb{D}$ |
 |---|---|---|
 | non-trivial involutions | $1$ | $1$ |
 | involutive lines | $\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$ | $\mathbb{R}_{\mathbb{D}}$, $j\mathbb{R}_{\mathbb{D}}$ |
-| norm on the anti-fixed line | $+a'^2$ (definite) | $-a'^2$ (definite) |
+| norm on the anti-fixed line | $+a'^2$ (definite) | $-q'^2$ (definite) |
 | idempotents beyond $0,1$ | none | $\Pi_1, \Pi_2$ |
 | idempotent lines | none | $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ |
 | isotropic lines | none | both idempotent lines |
@@ -189,37 +189,37 @@ exactly two distinguished subspaces, both of dimension $1$. The difference from 
 
 ### An Element in All Four Lines
 
-Take $A = 4+3j$. Its eigenline coordinates are
+Take $Q = 4+3j$. Its eigenline coordinates are
 
 $$
-A_r = \tfrac12(A+\bar A) = 4, \qquad A_i = \tfrac12 j^{-1}(A-\bar A) = 3,
+q_r = \tfrac12(Q+\bar Q) = 4, \qquad q_i = \tfrac12 j^{-1}(Q-\bar Q) = 3,
 $$
 
-so $A$ lies in the plane spanned by the two eigenlines with both coordinates nonzero. Its idempotent coordinates are
+so $Q$ lies in the plane spanned by the two eigenlines with both coordinates nonzero. Its idempotent coordinates are
 
 $$
-A_+ = a+a' = 7, \qquad A_- = a-a' = 1,
+q_+ = q+q' = 7, \qquad q_- = q-q' = 1,
 $$
 
-both nonzero, so $A$ is a unit; and $A = 4 + 3 j = 7\Pi_1 + 1\Pi_2$, an identity checked directly in the two bases.
+both nonzero, so $Q$ is a unit; and $Q = 4 + 3 j = 7\Pi_1 + 1\Pi_2$, an identity checked directly in the two bases.
 
 ### A Pair of Lines That Spans the Plane
 
-The lines $\mathbb{R}_{\mathbb{D}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $A = j a'$ along them,
+The lines $\mathbb{R}_{\mathbb{D}}$ and $\mathbb{R}\Pi_1$ have intersection $0$ and dimensions $1+1=2$, so they span the plane; decomposing $Q = j q'$ along them,
 
 $$
-j a' = -a' + 2a' \Pi_1,
+j q' = -q' + 2q' \Pi_1,
 $$
 
 since $2\Pi_1 = 1 + j$. The coefficients are unique because the intersection is the origin, which is the content of the sum table.
 
 ### The Involution on Both Bases
 
-For $A = 4+3j$ the involution gives $\bar A = 4-3j$; in the eigenbasis this flips the sign of the second coordinate, and in the idempotent basis it swaps the coordinates $7 \leftrightarrow 1$, since $A = 7\Pi_1 + 1\Pi_2$ and $\bar A = 1\Pi_1 + 7\Pi_2$. Both readings agree, and the arithmetic is the statement $\bar A = 7\Pi_2 + 1\Pi_1$.
+For $Q = 4+3j$ the involution gives $\bar Q = 4-3j$; in the eigenbasis this flips the sign of the second coordinate, and in the idempotent basis it swaps the coordinates $7 \leftrightarrow 1$, since $Q = 7\Pi_1 + 1\Pi_2$ and $\bar Q = 1\Pi_1 + 7\Pi_2$. Both readings agree, and the arithmetic is the statement $\bar Q = 7\Pi_2 + 1\Pi_1$.
 
 ## Summary
 
-The split-complex algebra has one non-trivial involution, the conjugation $\bar A = a-ja'$, which coincides with the idempotent conjugation. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.
+The split-complex algebra has one non-trivial involution, the conjugation $\bar Q = q-jq'$, which coincides with the idempotent conjugation. It defines the real line $\mathbb{R}_{\mathbb{D}}$ and the split imaginary line $j\mathbb{R}_{\mathbb{D}}$, its fixed and anti-fixed spaces, and the plane splits as their direct sum; the idempotent basis defines the two finer lines $\mathbb{R}\Pi_1$ and $\mathbb{R}\Pi_2$, and the plane splits as their direct sum as well. The four lines are pairwise independent, every pair of distinct lines spans the whole plane, and the restricted norm is definite on the two eigenlines and identically zero on the two idempotent lines, which are exactly the isotropic lines.
 
 There is no remarkable-subspace lattice, because there is only one non-trivial involution; the involution lattice is the single edge $\{0\}\subset\mathbb{Z}/2$ on the two eigenlines, and the idempotent lines form a second, non-involution decomposition. Compared with $\mathbb{C}$, the split-complex algebra has the same two involutive lines but with the imaginary line's norm reversed in sign, and it has in addition the two idempotent lines, which the field lacks because it has no nontrivial idempotents.
 
@@ -228,16 +228,16 @@ There is no remarkable-subspace lattice, because there is only one non-trivial i
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{D}$ | Split complex algebra |
-| $A = a + j a'$ | General split complex number |
-| $\bar{A} = a - j a'$ | The unique non-trivial involution |
-| $\tilde{A} = \bar{A}$ | Idempotent conjugation; equal to $\bar{A}$ |
+| $Q = q + j q'$ | General split complex number |
+| $\bar{Q} = q - j q'$ | The unique non-trivial involution |
+| $\tilde{Q} = \bar{Q}$ | Idempotent conjugation; equal to $\bar{Q}$ |
 | $\mathbb{R}_{\mathbb{D}}$ | Real subspace, $+1$ eigenspace of $\bar{\cdot}$ |
 | $j\mathbb{R}_{\mathbb{D}}$ | Split imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
-| $\Pi_{1,2} = \tfrac12(1\pm j)$ | Idempotents, basis of the finer decomposition |
+| $\Pi_1 = \tfrac12(1+j)$, $\Pi_2 = \tfrac12(1-j)$ | Idempotents, basis of the finer decomposition |
 | $\mathbb{R}\Pi_1, \mathbb{R}\Pi_2$ | The two isotropic lines |
-| $A_r = a, A_i = a'$ | Eigenline coordinates |
-| $A_\pm = a\pm a'$ | Idempotent coordinates |
-| $\langle A\rangle = a^2-a'^2$ | Norm, zero on the idempotent lines |
+| $q_r = q, q_i = q'$ | Eigenline coordinates |
+| $q_+ = q+q'$, $q_- = q-q'$ | Idempotent coordinates |
+| $\langle Q\rangle = q^2-q'^2$ | Norm, zero on the idempotent lines |
 | $\langle\,\cdot\,\rangle$ | Real span of the listed elements |
 
 ## Further Reading

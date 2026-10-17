@@ -151,7 +151,7 @@ the real matrices. The real form of $M_n(\mathbb{C})$ with the conjugate transpo
 
 ### The Biquaternion Algebra
 
-Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the complex algebra of *Introduction to the Biquaternion Algebra*, with the coordinate basis $e_0, e_1, e_2, e_3$ and the two conjugations of that article: the coefficient conjugation $\bar{\cdot}$ and the involution $\natural$ that negates the vector units, with the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ\natural$. The coefficient conjugation
+Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ as the complex algebra of *Introduction to the Biquaternion Algebra*, with the coordinate basis $e_t, \vec e_x, \vec e_y, \vec e_z$ and the two conjugations of that article: the coefficient conjugation $\bar{\cdot}$ and the involution $\natural$ that negates the vector units, with the Hermitian conjugation ${}^{*}=\bar{\cdot}\circ\natural$. The coefficient conjugation
 
 $$
 \alpha=\bar{\cdot}, \qquad \alpha(z\,e_\nu)=\varsigma(z)\,e_\nu,
@@ -160,7 +160,7 @@ $$
 is a $\varsigma$-semilinear automorphism of order two: it conjugates the coefficients and fixes the units, so it multiplies on products. Its fixed set is the quaternion part,
 
 $$
-\mathbb{B}^{\bar{\cdot}} = \mathbb{R}e_0\oplus\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3 \cong \mathbb{H},
+\mathbb{B}^{\bar{\cdot}} = \mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z \cong \mathbb{H},
 $$
 
 the biquaternions with real coefficients. So the quaternion algebra is a real form of the biquaternion algebra, $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{B}$, which is the statement of *The Realification and the Effect of the Change of Scalars*; the datum involution ${}^{*}$ restricts to $\natural$ on the form, and $\natural$ is the quaternion conjugation. The base involution of this case is trivial, because $R=\mathbb{R}$; the twist is not in the base but in the coefficient conjugation of the complex object, and the real form is cut by that conjugation and not by $\varsigma$.

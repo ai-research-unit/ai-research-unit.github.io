@@ -11,9 +11,9 @@ $$
 O(V,\beta) = \{\,g \in GL(V) : \beta(gx,gy) = \beta(x,y) \ \text{for all } x,y \in V\,\},
 $$
 
-the Hermitian case reading the same way with the form sesquilinear in the second variable and the alternating case with $\beta$ alternating; the symmetric, Hermitian and alternating forms give the three classical families. That is all that is taken from outside this article. The general construction of $O(V, g)$, $U(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is not covered here. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
+the Hermitian case reading the same way with the form sesquilinear in the second variable and the alternating case with $\beta$ alternating; the symmetric, Hermitian and alternating forms give the three classical families. That is all that is taken from outside this article. The general construction of $O(V, g)$, $\mathrm{U}(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is not covered here. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm is $N(q) = q q^{\natural}$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, the norm is $N(q) = q q^{\natural}$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
 
 ## Matrices, Determinants and the Two Linear Groups
 
@@ -71,7 +71,7 @@ and $O(n) = O(n, \mathbb{R})$.
 
 **Proof.** The kernel of a homomorphism is normal and the surjectivity is exhibited. For connectedness, every element of $SO(n)$ is a product of rotations of coordinate planes, and each rotation of a plane can be joined to the identity by a path inside that plane; this is the standard generation of $SO(n)$ by plane rotations, and it exhibits a path. A closed subgroup of index $2$ is both open and closed, so the components of $O(n)$ are $SO(n)$ and the other coset.
 
-For $n = 2$ the group $SO(2)$ consists of the matrices $\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$ and is isomorphic to the circle group $S^1 = U(1)$; for $n = 1$, $O(1) = \{\pm 1\}$ and $SO(1) = \{1\}$. Every element of $O(n)$ is a product of at most $n$ reflections of hyperplanes, a theorem of Cartan and Dieudonné, proved in the cited literature.
+For $n = 2$ the group $SO(2)$ consists of the matrices $\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$ and is isomorphic to the circle group $S^1 = \mathrm{U}(1)$; for $n = 1$, $O(1) = \{\pm 1\}$ and $SO(1) = \{1\}$. Every element of $O(n)$ is a product of at most $n$ reflections of hyperplanes, a theorem of Cartan and Dieudonné, proved in the cited literature.
 
 ## The Unitary Group
 
@@ -85,21 +85,21 @@ $$
 
 which is $\mathbb{C}$-linear in the second argument, conjugate-linear in the first, and satisfies $h(y, x) = (h(x,y))^{\natural}$. Over $\mathbb{R}$ it is the standard symmetric form again; the new case is $\mathbb{K} = \mathbb{C}$.
 
-**Definition.** The **unitary group** is $U(n) = \{A \in GL_n(\mathbb{C}) : h(Ax, Ay) = h(x, y) \text{ for all } x, y\}$, and the **special unitary group** is $SU(n) = U(n) \cap SL_n(\mathbb{C})$.
+**Definition.** The **unitary group** is $\mathrm{U}(n) = \{A \in GL_n(\mathbb{C}) : h(Ax, Ay) = h(x, y) \text{ for all } x, y\}$, and the **special unitary group** is $SU(n) = \mathrm{U}(n) \cap SL_n(\mathbb{C})$.
 
-**Proposition (matrix form).** With $A^* = \overline{A}^{\,T}$ the conjugate transpose, $U(n) = \{A \in GL_n(\mathbb{C}) : A^* A = I\}$; equivalently the columns of $A$ are orthonormal for $h$. Moreover $\det A \in S^1$ for $A \in U(n)$, the determinant $\det : U(n) \to S^1$ is surjective, and $U(n)/SU(n) \cong S^1$.
+**Proposition (matrix form).** With $A^* = \overline{A}^{\,T}$ the conjugate transpose, $\mathrm{U}(n) = \{A \in GL_n(\mathbb{C}) : A^* A = I\}$; equivalently the columns of $A$ are orthonormal for $h$. Moreover $\det A \in S^1$ for $A \in \mathrm{U}(n)$, the determinant $\det : \mathrm{U}(n) \to S^1$ is surjective, and $\mathrm{U}(n)/SU(n) \cong S^1$.
 
 **Proof.** The $(i,j)$ entry of $A^* A$ is $h(Ae_i, Ae_j)$, so the argument of the orthogonal case applies with conjugation inserted: the form is non-degenerate and the Gram matrix determines the map. From $A^* A = I$ we get $1 = \det(A^*A) = \overline{\det A} \det A = |\det A|^2$, so $\det A \in S^1$. The map $\operatorname{diag}(\lambda, 1, \ldots, 1)$ is unitary of determinant $\lambda$ for every $\lambda \in S^1$, so the determinant is onto $S^1$, and $SU(n)$ is its kernel.
 
-For $n = 1$, $U(1) = S^1$ and $SU(1) = \{1\}$.
+For $n = 1$, $\mathrm{U}(1) = S^1$ and $SU(1) = \{1\}$.
 
 ### Determinant, Centre and Decomposition
 
-**Theorem.** $U(n)$ is a compact connected subgroup of $GL_n(\mathbb{C})$, and $U(n) \cong (SU(n) \times U(1))/\mu_n$, where $\mu_n \subseteq U(1)$ is the group of $n$-th roots of unity embedded diagonally as scalar matrices.
+**Theorem.** $\mathrm{U}(n)$ is a compact connected subgroup of $GL_n(\mathbb{C})$, and $\mathrm{U}(n) \cong (SU(n) \times \mathrm{U}(1))/\mu_n$, where $\mu_n \subseteq \mathrm{U}(1)$ is the group of $n$-th roots of unity embedded diagonally as scalar matrices.
 
-**Proof.** The entries satisfy the closed bounded conditions of the orthogonal case with conjugation and absolute values, so $U(n)$ is compact; connectedness follows because every unitary matrix is diagonalised by a unitary change of basis and the eigenvalues can be joined to $1$ along the circle. For the decomposition, let $A \in U(n)$ and $\lambda = \det A \in S^1$; choose $\mu \in S^1$ with $\mu^n = \lambda$ and write $A = \mu \cdot (\mu^{-1} A)$; the second factor is unitary of determinant $\mu^{-n}\lambda = 1$, hence lies in $SU(n)$. The pair $(\mu^{-1} A, \mu)$ is determined by $A$ up to multiplication by $(\omega^{-1}, \omega)$ with $\omega \in \mu_n$, which gives the asserted quotient.
+**Proof.** The entries satisfy the closed bounded conditions of the orthogonal case with conjugation and absolute values, so $\mathrm{U}(n)$ is compact; connectedness follows because every unitary matrix is diagonalised by a unitary change of basis and the eigenvalues can be joined to $1$ along the circle. For the decomposition, let $A \in \mathrm{U}(n)$ and $\lambda = \det A \in S^1$; choose $\mu \in S^1$ with $\mu^n = \lambda$ and write $A = \mu \cdot (\mu^{-1} A)$; the second factor is unitary of determinant $\mu^{-n}\lambda = 1$, hence lies in $SU(n)$. The pair $(\mu^{-1} A, \mu)$ is determined by $A$ up to multiplication by $(\omega^{-1}, \omega)$ with $\omega \in \mu_n$, which gives the asserted quotient.
 
-**Theorem (centres).** $Z(U(n)) = \{\lambda I : \lambda \in S^1\} \cong S^1$ and $Z(SU(n)) = \{\lambda I : \lambda^n = 1\} \cong \mathbb{Z}/n\mathbb{Z}$. In particular $Z(SU(2)) = \{\pm I\}$.
+**Theorem (centres).** $Z(\mathrm{U}(n)) = \{\lambda I : \lambda \in S^1\} \cong S^1$ and $Z(SU(n)) = \{\lambda I : \lambda^n = 1\} \cong \mathbb{Z}/n\mathbb{Z}$. In particular $Z(SU(2)) = \{\pm I\}$.
 
 **Proof.** If $A$ commutes with every unitary matrix it commutes with every diagonal unitary matrix, so $A$ is diagonal: comparing the $(i,j)$ entries of $AD = DA$ for a diagonal $D$ with distinct eigenvalues gives $A_{ij}(D_{jj} - D_{ii}) = 0$, hence $A_{ij} = 0$ for $i \neq j$, and diagonal unitaries with distinct eigenvalues exist in abundance. The same argument applies inside $SU(n)$, using diagonal unitaries of determinant $1$ with distinct entries, whose existence requires only that $n \geq 2$. A diagonal $A$ that commutes with a permutation matrix is unchanged by the corresponding permutation of its entries; for $n \geq 3$ a $3$-cycle of determinant $1$ lies in $SU(n)$ and moves any triple, so all diagonal entries of $A$ are equal, while for $n = 2$ the matrix $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} \in SU(2)$ forces $\operatorname{diag}(\lambda_1, \lambda_2)$ to have $\lambda_1 = \lambda_2$ by direct comparison. Hence $A = \lambda I$ in both groups, the unitarity gives $|\lambda| = 1$, and the additional condition $\det A = 1$ gives $\lambda^n = 1$. Conversely these matrices are central, and the maps $\lambda \mapsto \lambda I$ identify the centres with $S^1$ and with the group of $n$-th roots of unity.
 
@@ -131,11 +131,11 @@ the group of $\mathbb{H}$-linear maps of $\mathbb{H}^n$ preserving $h$.
 
 ### Sp(n) Inside SU(2n)
 
-Since $\mathbb{H}$ is a two-dimensional complex vector space, with $i \in \mathbb{C}$ acting as left multiplication by $e_1$, the identification $\mathbb{H}^n \cong \mathbb{C}^{2n}$ carries $\mathbb{H}$-linear maps to $\mathbb{C}$-linear maps. The quaternionic form $h$ has real part a Hermitian form on $\mathbb{C}^{2n}$, so there is an injective homomorphism $Sp(n) \to U(2n)$.
+Since $\mathbb{H}$ is a two-dimensional complex vector space, with $i \in \mathbb{C}$ acting as left multiplication by $\vec e_x$, the identification $\mathbb{H}^n \cong \mathbb{C}^{2n}$ carries $\mathbb{H}$-linear maps to $\mathbb{C}$-linear maps. The quaternionic form $h$ has real part a Hermitian form on $\mathbb{C}^{2n}$, so there is an injective homomorphism $Sp(n) \to \mathrm{U}(2n)$.
 
 **Theorem.** Under this identification $Sp(n) \subseteq SU(2n)$; that is, the complex determinant of the image of every element of $Sp(n)$ is $1$.
 
-**Proof.** The complex determinant is a continuous homomorphism $\det : Sp(n) \to S^1$, since the image lies in $U(2n)$. Its derivative at the identity is the trace of the complex $2n \times 2n$ matrix, which for the image of a quaternionic matrix $X$ is $2\,\mathrm{Sc}(\operatorname{tr}_{\mathbb{H}} X)$: the diagonal $2 \times 2$ block of $X_{ii}$ contributes the trace $2\,\mathrm{Sc}(X_{ii})$. The Lie algebra of $Sp(n)$ consists of the quaternionic matrices with $X^* = -X$, and for such a matrix $\operatorname{tr}_{\mathbb{H}} X$ is a pure quaternion, because $(\operatorname{tr} X)^* = \operatorname{tr}(X^*) = -\operatorname{tr} X$. Hence the trace vanishes on the Lie algebra and the determinant has derivative zero; since $Sp(n)$ is connected and is generated by exponentials of its Lie algebra, $\det \equiv 1$.
+**Proof.** The complex determinant is a continuous homomorphism $\det : Sp(n) \to S^1$, since the image lies in $\mathrm{U}(2n)$. Its derivative at the identity is the trace of the complex $2n \times 2n$ matrix, which for the image of a quaternionic matrix $X$ is $2\,\mathrm{Sc}(\operatorname{tr}_{\mathbb{H}} X)$: the diagonal $2 \times 2$ block of $X_{ii}$ contributes the trace $2\,\mathrm{Sc}(X_{ii})$. The Lie algebra of $Sp(n)$ consists of the quaternionic matrices with $X^* = -X$, and for such a matrix $\operatorname{tr}_{\mathbb{H}} X$ is a pure quaternion, because $(\operatorname{tr} X)^* = \operatorname{tr}(X^*) = -\operatorname{tr} X$. Hence the trace vanishes on the Lie algebra and the determinant has derivative zero; since $Sp(n)$ is connected and is generated by exponentials of its Lie algebra, $\det \equiv 1$.
 
 So the compact symplectic group is a subgroup of the special unitary group: $Sp(1) = SU(2)$, and $Sp(n) \subseteq SU(2n)$ for every $n$.
 
@@ -147,7 +147,7 @@ The symbol $Sp$ carries two standard meanings that must be distinguished. In thi
 
 ### The Representation of the Quaternion Algebra
 
-Write a quaternion as $q = z + w j$ with $z = a + b i$ and $w = c + d i$, where $i = e_1$, $j = e_2$ and $i j = e_3$; this is the splitting $\mathbb{H} = \mathbb{C} \oplus \mathbb{C} j$ with $j^2 = -1$ and $j z = \bar z j$.
+Write a quaternion as $q = z + w j$ with $z = a + b i$ and $w = c + d i$, where $i = \vec e_x$, $j = \vec e_y$ and $i j = \vec e_z$; this is the splitting $\mathbb{H} = \mathbb{C} \oplus \mathbb{C} j$ with $j^2 = -1$ and $j z = \bar z j$.
 
 **Theorem.** The map
 
@@ -172,7 +172,7 @@ $$
 \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
 $$
 
-the images of the quaternion units are $\rho(e_1) = i\sigma_z$, $\rho(e_2) = i\sigma_y$ and $\rho(e_3) = i\sigma_x$. These satisfy $\rho(e_k)^2 = -I$ and $\rho(e_1)\rho(e_2) = \rho(e_3)$, so they realise the quaternion relations, and the general element of $\mathbb{H}$ is represented as $aI + i(b \sigma_z + c \sigma_y + d \sigma_x)$.
+the images of the quaternion units are $\rho(\vec e_x) = i\sigma_z$, $\rho(\vec e_y) = i\sigma_y$ and $\rho(\vec e_z) = i\sigma_x$. These satisfy $\rho(\vec e_k)^2 = -I$ and $\rho(\vec e_x)\rho(\vec e_y) = \rho(\vec e_z)$, so they realise the quaternion relations, and the general element of $\mathbb{H}$ is represented as $aI + i(b \sigma_z + c \sigma_y + d \sigma_x)$.
 
 ### The Group of Unit Quaternions
 
@@ -202,9 +202,9 @@ $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
 
-**Proof.** If $x$ is pure and $u$ is a unit then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = e_1, e_2, e_3$, so $u$ commutes with $e_1, e_2, e_3$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
+**Proof.** If $x$ is pure and $u$ is a unit then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = \vec e_x, \vec e_y, \vec e_z$, so $u$ commutes with $\vec e_x, \vec e_y, \vec e_z$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
 
-**Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_1(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
+**Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_x(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
 
 ### The Rotation Angle
 
@@ -214,13 +214,13 @@ is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \c
 
 The proposition explains the two-to-one cover: the quaternions $u$ and $-u$ give the same rotation, and a rotation through $2\pi$ about any axis corresponds to $\theta = 2\pi$, hence to $u = \cos \pi + \sin \pi \, n = -1$, which is not the identity of $\mathbb{H}^1$; the path $t \mapsto \cos(\pi t) + \sin(\pi t) n$ in $S^3$ joins $1$ to $-1$ and closes only after two full turns.
 
-**Example.** Take $u = \cos(\pi/4) + \sin(\pi/4)e_3 = (1 + e_3)/\sqrt 2$, so the expected rotation is through $\pi/2$ about the $e_3$-axis. Using $e_3 e_1 = e_2$, $e_1 e_3 = -e_2$, $e_2 e_3 = e_1$ and $e_3 e_2 = -e_1$, one computes $e_3 e_1 e_3 = e_2 e_3 = e_1$, hence
+**Example.** Take $u = \cos(\pi/4) + \sin(\pi/4)\vec e_z = (1 + \vec e_z)/\sqrt 2$, so the expected rotation is through $\pi/2$ about the $\vec e_z$-axis. Using $\vec e_z \vec e_x = \vec e_y$, $\vec e_x \vec e_z = -\vec e_y$, $\vec e_y \vec e_z = \vec e_x$ and $\vec e_z \vec e_y = -\vec e_x$, one computes $\vec e_z \vec e_x \vec e_z = \vec e_y \vec e_z = \vec e_x$, hence
 
 $$
-u \, e_1 \, u^{\natural} = \tfrac{1}{2}(1 + e_3) e_1 (1 - e_3) = \tfrac{1}{2}(e_1 + e_2)(1 - e_3) = \tfrac{1}{2}(e_1 + e_2 + e_2 - e_1) = e_2 ,
+u \, \vec e_x \, u^{\natural} = \tfrac{1}{2}(1 + \vec e_z) \vec e_x (1 - \vec e_z) = \tfrac{1}{2}(\vec e_x + \vec e_y)(1 - \vec e_z) = \tfrac{1}{2}(\vec e_x + \vec e_y + \vec e_y - \vec e_x) = \vec e_y ,
 $$
 
-and similarly $u e_2  u^{\natural} = -e_1$ and $u e_3  u^{\natural} = e_3$. So $\varphi_u$ is the rotation of the $(e_1, e_2)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + e_3)^2 = e_3$, and indeed $\varphi_{e_3}$ is the rotation through $\pi$ about $e_3$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\varphi_{u v} = \varphi_u \circ \varphi_v$ because $\varphi$ is a homomorphism.
+and similarly $u \vec e_y  u^{\natural} = -\vec e_x$ and $u \vec e_z  u^{\natural} = \vec e_z$. So $\varphi_u$ is the rotation of the $(\vec e_x, \vec e_y)$-plane through $\pi/2$, as predicted. Squaring, $u^2 = \tfrac{1}{2}(1 + \vec e_z)^2 = \vec e_z$, and indeed $\varphi_{\vec e_z}$ is the rotation through $\pi$ about $\vec e_z$, with trace $4 \cdot 0^2 - 1 = -1 = 1 + 2\cos \pi$. The example also shows that the quaternion product computes the composite of rotations: $\varphi_{u v} = \varphi_u \circ \varphi_v$ because $\varphi$ is a homomorphism.
 
 ### SO(4) from Two Copies of SU(2)
 
@@ -250,7 +250,7 @@ The double covers above are the first of a family of low-dimensional coincidence
 
 | Isomorphism | Dimensions | Reason |
 |---|---|---|
-| $SO(2) \cong U(1) = S^1$ | $1$ | the rotation matrices are $\exp(i\theta)$ |
+| $SO(2) \cong \mathrm{U}(1) = S^1$ | $1$ | the rotation matrices are $\exp(i\theta)$ |
 | $SU(2) \cong Sp(1) \cong \mathbb{H}^1 \cong S^3$ | $3$ | the representation $\rho$ |
 | $SO(3) \cong SU(2)/\{\pm I\} = PSU(2)$ | $3$ | conjugation by unit quaternions |
 | $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ | $6$ | the two-sided action |
@@ -267,7 +267,7 @@ The definitions are collected here, with the invariants used throughout. In the 
 |---|---|---|---|
 | $O(n)$ | $A^T A = I$, real | $n(n-1)/2$ | skew-symmetric matrices |
 | $SO(n)$ | $A^T A = I$, $\det A = 1$ | $n(n-1)/2$ | skew-symmetric matrices |
-| $U(n)$ | $A^* A = I$, complex | $n^2$ | skew-Hermitian matrices |
+| $\mathrm{U}(n)$ | $A^* A = I$, complex | $n^2$ | skew-Hermitian matrices |
 | $SU(n)$ | $A^* A = I$, $\det A = 1$ | $n^2 - 1$ | skew-Hermitian, trace zero |
 | $Sp(n)$ | $A^* A = I$, quaternionic | $n(2n+1)$ | quaternionic skew-Hermitian |
 
@@ -275,17 +275,17 @@ The definitions are collected here, with the invariants used throughout. In the 
 |---|---|---|---|---|
 | $O(n)$ | yes | no, two components | $\{\pm I\}$ | $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ |
 | $SO(n)$ | yes | yes | $\{\pm I\}$ for even $n \geq 4$, trivial for odd $n \geq 3$ | $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ |
-| $U(n)$ | yes | yes | $U(1)$ | $\mathbb{Z}$ |
+| $\mathrm{U}(n)$ | yes | yes | $\mathrm{U}(1)$ | $\mathbb{Z}$ |
 | $SU(n)$ | yes | yes | $\mathbb{Z}/n\mathbb{Z}$ | trivial |
 | $Sp(n)$ | yes | yes | $\{\pm I\} \cong \mathbb{Z}/2\mathbb{Z}$ | trivial |
 
-**Remark.** The determinant constraints read: $\det A = \pm 1$ for $A \in O(n)$; $|\det A| = 1$ for $A \in U(n)$, with $\det$ surjecting onto the circle; and $\det A = 1$ for $A \in Sp(n)$ in the sense of the complex determinant of its image in $SU(2n)$, the quaternionic determinant itself requiring the Dieudonné construction. Indeed the Dieudonné determinant of a quaternionic matrix takes values in the abelianization $\mathbb{H}^\times/[\mathbb{H}^\times, \mathbb{H}^\times] \cong \mathbb{R}_{>0}$, since the polar decomposition $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times S^3$ together with the perfectness of $S^3 = SU(2)$ identifies the commutator subgroup with the unit sphere; on $Sp(n)$ its absolute value is $1$, because an isometry of $\mathbb{H}^n$ induces an isometry of the top exterior power.
+**Remark.** The determinant constraints read: $\det A = \pm 1$ for $A \in O(n)$; $|\det A| = 1$ for $A \in \mathrm{U}(n)$, with $\det$ surjecting onto the circle; and $\det A = 1$ for $A \in Sp(n)$ in the sense of the complex determinant of its image in $SU(2n)$, the quaternionic determinant itself requiring the Dieudonné construction. Indeed the Dieudonné determinant of a quaternionic matrix takes values in the abelianization $\mathbb{H}^\times/[\mathbb{H}^\times, \mathbb{H}^\times] \cong \mathbb{R}_{>0}$, since the polar decomposition $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times S^3$ together with the perfectness of $S^3 = SU(2)$ identifies the commutator subgroup with the unit sphere; on $Sp(n)$ its absolute value is $1$, because an isometry of $\mathbb{H}^n$ induces an isometry of the top exterior power.
 
 **Remark.** All five families are closed subgroups of a general linear group over $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$, hence topological groups, and the five compact ones among them ($O$, $SO$, $U$, $SU$, $Sp$) are the basic examples of compact Lie groups. Their topological properties used here — compactness, connectedness, the covering maps and the fundamental groups — are stated as standard; the topological frame is from *Topological Groups*, written in parallel.
 
 ## Summary
 
-The classical groups are the transformation groups of a vector space equipped with a form, and their matrix forms are read off from the preservation of the form. The orthogonal group $O(n)$ is $\{A : A^TA = I\}$, compact, with $\det A = \pm 1$, and its kernel-of-determinant $SO(n)$ is the connected component of the identity, isomorphic to $S^1$ when $n = 2$. The unitary group $U(n) = \{A : A^*A = I\}$ is compact and connected with determinant of modulus one, and $U(n) \cong (SU(n) \times U(1))/\mu_n$, while the centres are the scalar matrices, so $Z(SU(n)) \cong \mathbb{Z}/n\mathbb{Z}$. The compact symplectic group $Sp(n)$ is the quaternionic unitary group, of dimension $n(2n+1)$, contained in $SU(2n)$; the two uses of the symbol $Sp$ in the literature are distinguished by rank versus the dimension of the space acted on.
+The classical groups are the transformation groups of a vector space equipped with a form, and their matrix forms are read off from the preservation of the form. The orthogonal group $O(n)$ is $\{A : A^TA = I\}$, compact, with $\det A = \pm 1$, and its kernel-of-determinant $SO(n)$ is the connected component of the identity, isomorphic to $S^1$ when $n = 2$. The unitary group $\mathrm{U}(n) = \{A : A^*A = I\}$ is compact and connected with determinant of modulus one, and $\mathrm{U}(n) \cong (SU(n) \times \mathrm{U}(1))/\mu_n$, while the centres are the scalar matrices, so $Z(SU(n)) \cong \mathbb{Z}/n\mathbb{Z}$. The compact symplectic group $Sp(n)$ is the quaternionic unitary group, of dimension $n(2n+1)$, contained in $SU(2n)$; the two uses of the symbol $Sp$ in the literature are distinguished by rank versus the dimension of the space acted on.
 
 The representations of the quaternion algebra make the lowest cases explicit. The map $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ is an algebra isomorphism of $\mathbb{H}$ with a subalgebra of $M_2(\mathbb{C})$ and has determinant $N(q)$, so the unit quaternions are exactly $SU(2)$, a group isomorphic to $S^3$ and to $Sp(1)$. Conjugation by a unit quaternion is a rotation of the pure quaternions with trace $4a^2 - 1$, hence a rotation through the angle determined by $a = \cos(\theta/2)$ and an axis given by the vector part: the assignment $u \mapsto (x \mapsto ux u^{\natural})$ is a surjective homomorphism $\mathbb{H}^1 \to SO(3)$ with kernel $\{\pm 1\}$, exhibiting $SO(3) \cong \mathbb{RP}^3 = SU(2)/\{\pm I\}$ and the two-to-one cover. The two-sided action $(u,v) \mapsto (q \mapsto uqv^{\natural})$ gives the surjection $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$ with kernel $\{\pm(1,1)\}$, so $SO(4) \cong (SU(2) \times SU(2))/\{\pm(I,I)\}$ and $SO(4)$ is not simple. The remaining low-dimensional coincidences, $SO(5) \cong Sp(2)/\{\pm I\}$ and $SO(6) \cong SU(4)/\{\pm I\}$, follow the same pattern at the level of root systems and are cited as standard.
 
@@ -299,14 +299,14 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $O(n, K)$, $O(n)$ | Orthogonal group of $g$; $O(n) = O(n, \mathbb{R})$ |
 | $SO(n, K)$ | Special orthogonal group, kernel of the determinant on $O(n,K)$ |
 | $h(x, y) = \sum_i \overline{x_i} y_i$ | Standard Hermitian form |
-| $U(n)$, $SU(n)$ | Unitary and special unitary groups |
+| $\mathrm{U}(n)$, $SU(n)$ | Unitary and special unitary groups |
 | $PSU(n)$ | $SU(n)/Z(SU(n))$ |
 | $Sp(n)$ | Compact symplectic (quaternionic unitary) group, $A^*A = I$ over $\mathbb{H}$ |
 | $Sp(2n, K)$ | Symplectic group of an alternating form, as in the companion article |
 | $\mathbb{H}$, $N(q) = q q^{\natural}$, $\mathrm{Sc}$, $\mathrm{Vect}$ | Quaternions, norm, scalar and vector parts |
 | $\mathbb{H}^1 = S^3$ | Unit quaternions; also written $Sp(1)$ |
 | $\rho(z + wj) = \begin{pmatrix} z & w \\ -\bar w & \bar z \end{pmatrix}$ | Representation of $\mathbb{H}$ in $M_2(\mathbb{C})$, determinant $N(q)$ |
-| $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(e_1) = i\sigma_z$, $\rho(e_2) = i\sigma_y$, $\rho(e_3) = i\sigma_x$ |
+| $\sigma_x, \sigma_y, \sigma_z$ | Pauli matrices; $\rho(\vec e_x) = i\sigma_z$, $\rho(\vec e_y) = i\sigma_y$, $\rho(\vec e_z) = i\sigma_x$ |
 | $\varphi_u(x) = u x u^{\natural}$ | Rotation by a unit quaternion; kernel $\{\pm 1\}$ of $\mathbb{H}^1 \to SO(3)$ |
 | $\psi_{(u,v)}(q) = u q  v^{\natural}$ | The map $\mathbb{H}^1 \times \mathbb{H}^1 \to SO(4)$, kernel $\{\pm(1,1)\}$ |
 | $S^{n-1}$, $\mathbb{RP}^3$ | Unit sphere; $SO(3) \cong \mathbb{RP}^3$ |

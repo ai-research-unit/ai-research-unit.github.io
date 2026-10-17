@@ -35,21 +35,21 @@ In every case $\langle \exp v\rangle_{\natural} = 1$, so $\exp v$ lies in the no
 
 **Proof.** For $v \in V$ one has $v^2 = -\langle v\rangle_{\natural}$ because the generators anticommute, as in the multiplication table of (*Split-Quaternion Algebra*, §*The Multiplication Table*). If $v^2 = -\lambda$ is a scalar then the even and odd parts of the series are the power series of the displayed functions, by the standard reduction of a power series of an element with scalar square. The split-quaternion norm: $\langle \exp v\rangle_{\natural} = c_0^2 + c_1^2 \langle v\rangle_{\natural}$ because $1$ and $v$ are orthogonal, and the identity $\cos^2 + \sin^2 = 1$ or $\cosh^2 - \sinh^2 = 1$ gives $1$ in all three cases; the nilpotent case gives $\langle 1+v\rangle_{\natural} = 1$.
 
-**Theorem (Factoring the Exponential).** For $\tilde q = q_0 + v$ with $q_0$ real and $v \in V$,
+**Theorem (Factoring the Exponential).** For $\tilde q = q_t + v$ with $q_t$ real and $v \in V$,
 
 $$
-\exp \tilde q = \exp(q_0) \exp v ,
+\exp \tilde q = \exp(q_t) \exp v ,
 $$
 
 and hence
 
 $$
-\langle\exp \tilde q\rangle_{\natural} = \exp(2q_0) > 0 .
+\langle\exp \tilde q\rangle_{\natural} = \exp(2q_t) > 0 .
 $$
 
-The exponential is therefore never zero and always invertible, its split-quaternion norm is $\exp(2q_0)$, and it maps $\mathbb{H}_{\mathrm{s}}$ into the open set $\{N > 0\}$ of units.
+The exponential is therefore never zero and always invertible, its split-quaternion norm is $\exp(2q_t)$, and it maps $\mathbb{H}_{\mathrm{s}}$ into the open set $\{N > 0\}$ of units.
 
-**Proof.** The scalar $q_0$ is central and commutes with $v$, so the series splits, $\exp(q_0+v) = \exp(q_0)\exp v$; the split-quaternion norm follows from multiplicativity and the theorem above.
+**Proof.** The scalar $q_t$ is central and commutes with $v$, so the series splits, $\exp(q_t+v) = \exp(q_t)\exp v$; the split-quaternion norm follows from multiplicativity and the theorem above.
 
 **Theorem (The Image of the Exponential).** The image is
 
@@ -57,25 +57,25 @@ $$
 \exp(\mathbb{H}_{\mathrm{s}}) = \big\{\tilde q : \langle\tilde q\rangle_{\natural} > 0,\ \operatorname{Sc}(\tilde q) > -\sqrt{\langle\tilde q\rangle_{\natural}}\big\} \cup \{\tilde q \in \mathbb{R} : \tilde q < 0\},
 $$
 
-the open set on which the split-quaternion norm is positive and the scalar part exceeds $-\sqrt{N}$, together with the negative scalar line. Equivalently, it is the set $\{N>0,\ \operatorname{Sc} \geq -\sqrt N\}$ with the elements $q_0 + v$ removed for which $q_0 < 0$ and $v \neq 0$ is nilpotent, these being exactly the non-scalar elements with $\operatorname{Sc} = -\sqrt N$.
+the open set on which the split-quaternion norm is positive and the scalar part exceeds $-\sqrt{N}$, together with the negative scalar line. Equivalently, it is the set $\{N>0,\ \operatorname{Sc} \geq -\sqrt N\}$ with the elements $q_t + v$ removed for which $q_t < 0$ and $v \neq 0$ is nilpotent, these being exactly the non-scalar elements with $\operatorname{Sc} = -\sqrt N$.
 
-In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(\tilde q) < -\sqrt{\langle\tilde q\rangle_{\natural}}$ are not exponentials, the element $\tilde q = -3+2e_3$, with $\langle\tilde q\rangle_{\natural} = 9-4 = 5$ and $\operatorname{Sc}(\tilde q) = -3 < -\sqrt5$, being an example, and neither are the boundary elements: the element $\tilde q = -1+e_1+e_2$, with $\langle\tilde q\rangle_{\natural} = 1$ and $\operatorname{Sc}(\tilde q) = -1 = -\sqrt{\langle\tilde q\rangle_{\natural}}$, is one of them.
+In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(\tilde q) < -\sqrt{\langle\tilde q\rangle_{\natural}}$ are not exponentials, the element $\tilde q = -3+2\vec e_z$, with $\langle\tilde q\rangle_{\natural} = 9-4 = 5$ and $\operatorname{Sc}(\tilde q) = -3 < -\sqrt5$, being an example, and neither are the boundary elements: the element $\tilde q = -1+\vec e_x+\vec e_y$, with $\langle\tilde q\rangle_{\natural} = 1$ and $\operatorname{Sc}(\tilde q) = -1 = -\sqrt{\langle\tilde q\rangle_{\natural}}$, is one of them.
 
-**Proof.** The roots of the characteristic polynomial $\lambda^2 - 2\operatorname{Sc}(\tilde q)\lambda + \langle\tilde q\rangle_{\natural}$ of $\tilde q$ are carried by the exponential to the roots of the characteristic polynomial of $\exp\tilde q$, so the question is which elements are exponential values. If $\tilde a = \exp\tilde q$, then $\langle\tilde a\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, and a negative root of $\tilde a$ comes from a root $\alpha \pm \mathrm{i}\pi$ of $\tilde q$ with an odd multiple of $\pi$; the two roots are then distinct, so $\mathbb{R}[\tilde q]$ is a split algebra and $\exp\tilde q$ is central, equal to $-\exp(\alpha)$. A non-central element of the image therefore has no negative root, which for positive norm is exactly $\operatorname{Sc}\tilde a > -\sqrt{\langle\tilde a\rangle_{\natural}}$. Conversely, if $\langle\tilde a\rangle_{\natural} > 0$ and $\operatorname{Sc}\tilde a > -\sqrt{\langle\tilde a\rangle_{\natural}}$, then either the two roots of $\tilde a$ are real and positive, when a real logarithm exists term by term in the roots, or they are a non-real conjugate pair $\alpha \pm \mathrm{i}\beta$, when the element $\tilde q = s + t(\tilde a - \operatorname{Sc}\tilde a)$ with $s, t \in \mathbb{R}$ and $t\beta \in (0,\pi)$ determined by $\tan(t\beta) = \beta/\alpha$ and $\exp(s)\cos(t\beta) = \alpha$ satisfies $\exp\tilde q = \tilde a$; and the negative scalars are attained, $-\mu = \exp(\log\mu + \pi\tilde\xi)$ for every root $\tilde\xi$ of $-1$. Finally, a non-central element with $\langle\tilde a\rangle_{\natural} > 0$ and $\operatorname{Sc}\tilde a = -\sqrt{\langle\tilde a\rangle_{\natural}}$ has the negative root $-\sqrt{\langle\tilde a\rangle_{\natural}}$ repeated, so it generates the dual-number algebra and is not an exponential. Translating back gives $N > 0$, $\operatorname{Sc} > -\sqrt N$, and the boundary described by $\operatorname{Sc} = -\sqrt N$, that is $\langle\operatorname{Vec}\tilde q\rangle_{\natural} = 0$ with $\operatorname{Sc}(\tilde q) < 0$.
+**Proof.** The roots of the characteristic polynomial $\lambda^2 - 2\operatorname{Sc}(\tilde q)\lambda + \langle\tilde q\rangle_{\natural}$ of $\tilde q$ are carried by the exponential to the roots of the characteristic polynomial of $\exp\tilde q$, so the question is which elements are exponential values. If $\tilde q_2 = \exp\tilde q$, then $\langle\tilde q_2\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, and a negative root of $\tilde q_2$ comes from a root $\alpha \pm \mathrm{i}\pi$ of $\tilde q$ with an odd multiple of $\pi$; the two roots are then distinct, so $\mathbb{R}[\tilde q]$ is a split algebra and $\exp\tilde q$ is central, equal to $-\exp(\alpha)$. A non-central element of the image therefore has no negative root, which for positive norm is exactly $\operatorname{Sc}\tilde q_2 > -\sqrt{\langle\tilde q_2\rangle_{\natural}}$. Conversely, if $\langle\tilde q_2\rangle_{\natural} > 0$ and $\operatorname{Sc}\tilde q_2 > -\sqrt{\langle\tilde q_2\rangle_{\natural}}$, then either the two roots of $\tilde q_2$ are real and positive, when a real logarithm exists term by term in the roots, or they are a non-real conjugate pair $\alpha \pm \mathrm{i}\beta$, when the element $\tilde q = s + t(\tilde q_2 - \operatorname{Sc}\tilde q_2)$ with $s, t \in \mathbb{R}$ and $t\beta \in (0,\pi)$ determined by $\tan(t\beta) = \beta/\alpha$ and $\exp(s)\cos(t\beta) = \alpha$ satisfies $\exp\tilde q = \tilde q_2$; and the negative scalars are attained, $-\mu = \exp(\log\mu + \pi\tilde\xi)$ for every root $\tilde\xi$ of $-1$. Finally, a non-central element with $\langle\tilde q_2\rangle_{\natural} > 0$ and $\operatorname{Sc}\tilde q_2 = -\sqrt{\langle\tilde q_2\rangle_{\natural}}$ has the negative root $-\sqrt{\langle\tilde q_2\rangle_{\natural}}$ repeated, so it generates the dual-number algebra and is not an exponential. Translating back gives $N > 0$, $\operatorname{Sc} > -\sqrt N$, and the boundary described by $\operatorname{Sc} = -\sqrt N$, that is $\langle\operatorname{Vec}\tilde q\rangle_{\natural} = 0$ with $\operatorname{Sc}(\tilde q) < 0$.
 
-**Theorem (The Kernel of the Exponential).** The solutions of $\exp \tilde p = 1$ are
+**Theorem (The Kernel of the Exponential).** The solutions of $\exp \tilde q = 1$ are
 
 $$
-\tilde p = 0 \quad\text{or}\quad \tilde p = 2\pi k\,\tilde\xi \quad (k \in \mathbb{Z}\setminus\{0\}, \ \tilde\xi \in V, \ \langle\tilde\xi\rangle_{\natural} = 1).
+\tilde q = 0 \quad\text{or}\quad \tilde q = 2\pi k\,\tilde\xi \quad (k \in \mathbb{Z}\setminus\{0\}, \ \tilde\xi \in V, \ \langle\tilde\xi\rangle_{\natural} = 1).
 $$
 
 Hence the kernel of the exponential is the union of the scaled copies $2\pi k\,\Sigma$ of the sphere $\Sigma$ of the roots of $-1$, together with the origin; the exponential is not injective and is periodic along the whole root set of $-1$.
 
-**Proof.** Write $\tilde p = q_0 + v$. From $\exp \tilde p = \exp(q_0)\exp v = 1$ and $\langle\exp \tilde p\rangle_{\natural} = \exp(2q_0)$ one gets $q_0 = 0$, and then $\exp v = 1$ with the three cases of the first theorem: for $\lambda = 0$ one needs $1 + v = 1$, so $v = 0$; for $\lambda > 0$ one needs $\cos\sqrt{\lambda} = 1$ and $\sin\sqrt{\lambda} = 0$, so $\sqrt{\lambda} = 2\pi k$ with $k \neq 0$; for $\lambda < 0$ one needs $\cosh\sqrt{-\lambda} = 1$, which forces $v = 0$. The elements with $\lambda = (2\pi k)^2$ and $\langle v\rangle_{\natural} > 0$ are exactly the multiples $2\pi k\tilde\xi$ of the roots of $-1$ by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
+**Proof.** Write $\tilde q = q_t + v$. From $\exp \tilde q = \exp(q_t)\exp v = 1$ and $\langle\exp \tilde q\rangle_{\natural} = \exp(2q_t)$ one gets $q_t = 0$, and then $\exp v = 1$ with the three cases of the first theorem: for $\lambda = 0$ one needs $1 + v = 1$, so $v = 0$; for $\lambda > 0$ one needs $\cos\sqrt{\lambda} = 1$ and $\sin\sqrt{\lambda} = 0$, so $\sqrt{\lambda} = 2\pi k$ with $k \neq 0$; for $\lambda < 0$ one needs $\cosh\sqrt{-\lambda} = 1$, which forces $v = 0$. The elements with $\lambda = (2\pi k)^2$ and $\langle v\rangle_{\natural} > 0$ are exactly the multiples $2\pi k\tilde\xi$ of the roots of $-1$ by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
 
 **Corollary (The Two Real Periods).** Along a commutative subalgebra generated by an element of square $-1$ the exponential has period $2\pi$; along a split-complex subalgebra there is no real period, and the exponential of a split-complex element is injective on each branch of the positive cone. The two behaviours coexist in the algebra and must not be interchanged.
 
-**Proof.** The first is the case $\tilde\xi^2=-1$ of the kernel; the second is the formula $\exp(q_0 + q_2 e_2) = \exp(q_0)(\cosh q_2 + e_2\sinh q_2)$, whose components $\exp(q_0\pm q_2)$ are injective in the two null coordinates, with no periodicity.
+**Proof.** The first is the case $\tilde\xi^2=-1$ of the kernel; the second is the formula $\exp(q_t + q_y \vec e_y) = \exp(q_t)(\cosh q_y + \vec e_y\sinh q_y)$, whose components $\exp(q_t\pm q_y)$ are injective in the two null coordinates, with no periodicity.
 
 ## Trigonometric and Hyperbolic Functions
 
@@ -144,14 +144,14 @@ $$
 and on the open set where it holds the exponential is a local diffeomorphism with a smooth local inverse, mapping the open set $\{N>0,\ \operatorname{Sc} > -\sqrt N\}$ onto itself. The failure set is exactly
 
 $$
-\big\{\tilde q = q_0 + v : \langle v\rangle_{\natural} = (\pi k)^2,\ k \geq 1\big\},
+\big\{\tilde q = q_t + v : \langle v\rangle_{\natural} = (\pi k)^2,\ k \geq 1\big\},
 $$
 
-on which the two roots of the characteristic polynomial of $\tilde q$ are $q_0 \pm \pi k\,\mathrm{i}$ and the exponential folds: the simplest failure point is $\tilde q = \pi e_1$, where $\exp(\pi e_1) = -1$. On the norm-one group the logarithm takes values in $V$, $\log(1+v) = v$ for every nilpotent $v \in V$ of square zero, and the logarithm is multivalued exactly at the nonzero real scalars and at the elements with $\langle\operatorname{Vec}\tilde q\rangle_{\natural} > 0$, whose characteristic polynomial has a non-real pair of roots: at those points the infinitely many values differ by the kernel of the preceding section, while at the elements whose characteristic polynomial has real positive roots the value is unique, the logarithm being a polynomial in the element there.
+on which the two roots of the characteristic polynomial of $\tilde q$ are $q_t \pm \pi k\,\mathrm{i}$ and the exponential folds: the simplest failure point is $\tilde q = \pi \vec e_x$, where $\exp(\pi \vec e_x) = -1$. On the norm-one group the logarithm takes values in $V$, $\log(1+v) = v$ for every nilpotent $v \in V$ of square zero, and the logarithm is multivalued exactly at the nonzero real scalars and at the elements with $\langle\operatorname{Vec}\tilde q\rangle_{\natural} > 0$, whose characteristic polynomial has a non-real pair of roots: at those points the infinitely many values differ by the kernel of the preceding section, while at the elements whose characteristic polynomial has real positive roots the value is unique, the logarithm being a polynomial in the element there.
 
-**Proof.** The roots of the characteristic polynomial of $\tilde q$ have sum $2\operatorname{Sc}(\tilde q)$ and product $\langle\tilde q\rangle_{\natural}$, so they are $\operatorname{Sc}(\tilde q) \pm \sqrt{\operatorname{Sc}(\tilde q)^2 - \langle\tilde q\rangle_{\natural}}$ with $\operatorname{Sc}(\tilde q)^2 - \langle\tilde q\rangle_{\natural} = -\langle\operatorname{Vec}\tilde q\rangle_{\natural}$; the derivative of the exponential at $\tilde q$ is singular exactly when the characteristic polynomial has two roots differing by a nonzero multiple of $2\pi\mathrm{i}$, the divided difference of the exponential being zero in that case. In the real case the difference of the eigenvalues is $2\sqrt{-\langle\operatorname{Vec}\tilde q\rangle_{\natural}}$, real and nonzero unless $\langle\operatorname{Vec}\tilde q\rangle_{\natural} = 0$, where the eigenvalues coincide and the derivative is still invertible; in the complex case the difference is $2\mathrm{i}\sqrt{\langle\operatorname{Vec}\tilde q\rangle_{\natural}}$, which is a nonzero multiple of $2\pi\mathrm{i}$ exactly when $\sqrt{\langle\operatorname{Vec} \tilde q\rangle_{\natural}} = \pi k$. At $\tilde q = \pi e_1$ one has $\exp(\pi e_1) = \cos\pi + e_1\sin\pi = -1$, so the value is a negative scalar and two distinct points of the domain share it, which is the folding. The nilpotent case is the finite series $\log(1+v) = v - v^2/2 + \dots = v$, and the multivaluedness at the scalars and at the elements with timelike vector part is the ambiguity of the arguments of the roots of the characteristic polynomial, the various values differing by multiples of $2\pi$ times a complex structure that commutes with the logarithm.
+**Proof.** The roots of the characteristic polynomial of $\tilde q$ have sum $2\operatorname{Sc}(\tilde q)$ and product $\langle\tilde q\rangle_{\natural}$, so they are $\operatorname{Sc}(\tilde q) \pm \sqrt{\operatorname{Sc}(\tilde q)^2 - \langle\tilde q\rangle_{\natural}}$ with $\operatorname{Sc}(\tilde q)^2 - \langle\tilde q\rangle_{\natural} = -\langle\operatorname{Vec}\tilde q\rangle_{\natural}$; the derivative of the exponential at $\tilde q$ is singular exactly when the characteristic polynomial has two roots differing by a nonzero multiple of $2\pi\mathrm{i}$, the divided difference of the exponential being zero in that case. In the real case the difference of the eigenvalues is $2\sqrt{-\langle\operatorname{Vec}\tilde q\rangle_{\natural}}$, real and nonzero unless $\langle\operatorname{Vec}\tilde q\rangle_{\natural} = 0$, where the eigenvalues coincide and the derivative is still invertible; in the complex case the difference is $2\mathrm{i}\sqrt{\langle\operatorname{Vec}\tilde q\rangle_{\natural}}$, which is a nonzero multiple of $2\pi\mathrm{i}$ exactly when $\sqrt{\langle\operatorname{Vec} \tilde q\rangle_{\natural}} = \pi k$. At $\tilde q = \pi \vec e_x$ one has $\exp(\pi \vec e_x) = \cos\pi + \vec e_x\sin\pi = -1$, so the value is a negative scalar and two distinct points of the domain share it, which is the folding. The nilpotent case is the finite series $\log(1+v) = v - v^2/2 + \dots = v$, and the multivaluedness at the scalars and at the elements with timelike vector part is the ambiguity of the arguments of the roots of the characteristic polynomial, the various values differing by multiples of $2\pi$ times a complex structure that commutes with the logarithm.
 
-**Corollary (The Logarithm on the Split-Complex Plane).** On the positive component of the split-complex plane, in the null coordinates $\tilde q = p\,n_+ + q\,n_-$ with $n_\pm = \tfrac12(1\pm e_2)$ and $p,q > 0$,
+**Corollary (The Logarithm on the Split-Complex Plane).** On the positive component of the split-complex plane, in the null coordinates $\tilde q = p\,n_+ + q\,n_-$ with $n_\pm = \tfrac12(1\pm \vec e_y)$ and $p,q > 0$,
 
 $$
 \log \tilde q = (\log p)\, n_+ + (\log q)\, n_- ,
@@ -163,7 +163,7 @@ which shows again the absence of a real period in the split directions and the p
 
 ## Power Functions and Roots of Unity
 
-**Definition.** For real $\alpha$ and $\tilde q$ in the domain of a branch of the logarithm, the **power** is $\tilde q^\alpha = \exp(\alpha\log \tilde q)$; the **$n$-th roots** are the solutions of $\tilde p^n = \tilde q$.
+**Definition.** For real $\alpha$ and $\tilde q$ in the domain of a branch of the logarithm, the **power** is $\tilde q^\alpha = \exp(\alpha\log \tilde q)$; the **$n$-th roots** are the solutions of $\tilde q_2^n = \tilde q$.
 
 **Theorem (The Split Roots of Unity).** The elements $\tilde\pi_1 + \lambda \tilde\pi_2$ with $\lambda \in \{\pm 1\}$ satisfy
 
@@ -171,13 +171,13 @@ $$
 (\tilde\pi_1 + \lambda \tilde\pi_2)^n = \tilde\pi_1 + \lambda^n \tilde\pi_2, \qquad (\lambda = \pm 1),
 $$
 
-so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_1 - \tilde\pi_2$ has $e_2^2 = 1$ and is a root of unity of order two; the reflection $e_3$ is likewise of order two. The roots of unity in the elliptic plane are the elements $\cos\theta + \tilde\xi\sin\theta$ with $\tilde\xi^2 = -1$ and $\theta$ a rational multiple of $2\pi$, in accordance with the kernel of the exponential.
+so $1$ is a root of unity of every order, while $\vec e_y = \tilde\pi_1 - \tilde\pi_2$ has $\vec e_y^2 = 1$ and is a root of unity of order two; the reflection $\vec e_z$ is likewise of order two. The roots of unity in the elliptic plane are the elements $\cos\theta + \tilde\xi\sin\theta$ with $\tilde\xi^2 = -1$ and $\theta$ a rational multiple of $2\pi$, in accordance with the kernel of the exponential.
 
-**Proof.** The first identity follows from $\tilde\pi_1\tilde\pi_2 = 0$ and $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ by the binomial theorem, the cross terms vanishing. The order-two statements are $e_2^2 = e_3^2 = 1$, and the elliptic elements are the one-parameter subgroups of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
+**Proof.** The first identity follows from $\tilde\pi_1\tilde\pi_2 = 0$ and $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2}$ by the binomial theorem, the cross terms vanishing. The order-two statements are $\vec e_y^2 = \vec e_z^2 = 1$, and the elliptic elements are the one-parameter subgroups of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 
-**Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $\tilde p^2 = 1$ are $\tilde p = \pm 1$ together with the elements $\tilde p = 2p - 1$ for $p$ a nontrivial idempotent; equivalently they are the roots of $+1$ in the vector subspace, the reflections, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $\tilde q^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
+**Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $\tilde q_2^2 = 1$ are $\tilde q_2 = \pm 1$ together with the elements $\tilde q_2 = 2\tilde\pi - 1$ for $\tilde\pi$ a nontrivial idempotent; equivalently they are the roots of $+1$ in the vector subspace, the reflections, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $\tilde q^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
 
-**Proof.** $\tilde p^2 = 1$ is $(\tilde p-1)(\tilde p+1) = 0$; the minimal polynomial of $\tilde p$ divides $(t-1)(t+1)$, so $\tilde p$ is semisimple with roots in $\{\pm1\}$; if $\tilde p \neq \pm1$ it has both roots and $p = (\tilde p+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*Distribution of the Zero Divisors*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
+**Proof.** $\tilde q_2^2 = 1$ is $(\tilde q_2-1)(\tilde q_2+1) = 0$; the minimal polynomial of $\tilde q_2$ divides $(t-1)(t+1)$, so $\tilde q_2$ is semisimple with roots in $\{\pm1\}$; if $\tilde q_2 \neq \pm1$ it has both roots and $\tilde\pi = (\tilde q_2+1)/2$ is a nontrivial idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*Distribution of the Zero Divisors*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section.
 
 ## Non-Commutativity and the One-Variable Case
 
@@ -185,11 +185,11 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_1 - \tilde\pi_2
 
 **Proof.** In a commutative subalgebra the binomial theorem applies to the series, and the subalgebra is isomorphic to $\mathbb{C}$ or to $\mathbb{D}$ according to the sign of $\tilde\xi^2$.
 
-**Theorem (The General Case).** For general $\tilde q,\tilde p$ the identities fail: $\exp(\tilde q+\tilde p) \neq \exp \tilde q\exp \tilde p$ unless $\tilde q \tilde p = \tilde p\tilde q$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $(\exp \tilde q)^{\natural} = \exp\tilde{q}^{\natural}$, $\langle\exp \tilde q\rangle_{\natural} = \exp(2\operatorname{Sc}(\tilde q))$, and $\exp \tilde q$ is a unit for every $\tilde q$.
+**Theorem (The General Case).** For general $\tilde q_1,\tilde q_2$ the identities fail: $\exp(\tilde q_1+\tilde q_2) \neq \exp \tilde q_1\exp \tilde q_2$ unless $\tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $(\exp \tilde q)^{\natural} = \exp\tilde{q}^{\natural}$, $\langle\exp \tilde q\rangle_{\natural} = \exp(2\operatorname{Sc}(\tilde q))$, and $\exp \tilde q$ is a unit for every $\tilde q$.
 
 **Proof.** The failure of the addition formula is the non-commutativity of the series; the conjugation identity and the split-quaternion norm formula are the theorems above.
 
-**Corollary (The Trap of the Split-Complex Case).** In the split-complex plane the exponential is $\exp(q_0 + q_2e_2) = \exp(q_0)(\cosh q_2 + e_2\sinh q_2)$ and its image is one component of the positive cone, not the whole of it; the corresponding statement in the split-quaternion algebra is the theorem on the image of the exponential, and neither statement should be read off the other. In particular the sinusoidal and hyperbolic parts of $\exp v$ for $v \in V$ depend on the sign of $\langle v\rangle_{\natural}$, so an identity valid for one sign of the split-quaternion norm is generally false for the other.
+**Corollary (The Trap of the Split-Complex Case).** In the split-complex plane the exponential is $\exp(q_t + q_y\vec e_y) = \exp(q_t)(\cosh q_y + \vec e_y\sinh q_y)$ and its image is one component of the positive cone, not the whole of it; the corresponding statement in the split-quaternion algebra is the theorem on the image of the exponential, and neither statement should be read off the other. In particular the sinusoidal and hyperbolic parts of $\exp v$ for $v \in V$ depend on the sign of $\langle v\rangle_{\natural}$, so an identity valid for one sign of the split-quaternion norm is generally false for the other.
 
 **Proof.** The split-complex formula is *Split-Complex Special Functions*, and the general statement is the theorem on the exponential of a vector above.
 
@@ -197,7 +197,7 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_1 - \tilde\pi_2
 
 | Object | Value or identity | Domain or hypothesis |
 |---|---|---|
-| $\exp(q_0+v)$ | $\exp(q_0)\exp v$ | $q_0$ real, $v \in V$ |
+| $\exp(q_t+v)$ | $\exp(q_t)\exp v$ | $q_t$ real, $v \in V$ |
 | $\exp v$ | $c_0(\langle v\rangle_{\natural}) + c_1(\langle v\rangle_{\natural})v$ | all $v \in V$ |
 | $\exp v$ | $1 + v$ | $\langle v\rangle_{\natural} = 0$ |
 | $\langle\exp \tilde q\rangle_{\natural}$ | $\exp(2\operatorname{Sc}(\tilde q))$ | all $\tilde q$ |
@@ -206,13 +206,13 @@ so $1$ is a root of unity of every order, while $e_2 = \tilde\pi_1 - \tilde\pi_2
 | $\cos^2v+\sin^2v$ | $1$ | $v \in V$, $\langle v\rangle_{\natural} \neq 0$ |
 | $\cosh^2v-\sinh^2v$ | $1$ | $v \in V$, $\langle v\rangle_{\natural} \neq 0$ |
 | $(\exp \tilde q)^{\natural}$ | $\exp\tilde{q}^{\natural}$ | all $\tilde q$ |
-| $\exp(\tilde q+\tilde p)$ | $\exp \tilde q\exp \tilde p$ | if and only if $\tilde q \tilde p = \tilde p\tilde q$ |
+| $\exp(\tilde q_1+\tilde q_2)$ | $\exp \tilde q_1\exp \tilde q_2$ | if and only if $\tilde q_1 \tilde q_2 = \tilde q_2\tilde q_1$ |
 | $\log(1+v)$ | $v$ | $v$ nilpotent |
 | $(\tilde\pi_1 + \lambda \tilde\pi_2)^n$ | $\tilde\pi_1 + \lambda^n\tilde\pi_2$ | $\lambda = \pm1$ |
 
 ## Summary
 
-The exponential converges everywhere and factors as $\exp(q_0+v) = \exp(q_0)\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the split-quaternion norm of $v$; it is never zero, its split-quaternion norm is $\exp(2\operatorname{Sc}(\tilde q))$, and its image is the set of elements of positive norm whose scalar part exceeds $-\sqrt{N}$ together with the negative scalars, so it is not surjective onto the units. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
+The exponential converges everywhere and factors as $\exp(q_t+v) = \exp(q_t)\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the split-quaternion norm of $v$; it is never zero, its split-quaternion norm is $\exp(2\operatorname{Sc}(\tilde q))$, and its image is the set of elements of positive norm whose scalar part exceeds $-\sqrt{N}$ together with the negative scalars, so it is not surjective onto the units. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
 
 The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|\langle v\rangle_{\natural}|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the split-quaternion norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the split-quaternion norm commute with the exponential in the expected way. The logarithm exists on the image of the exponential, that is where the scalar part exceeds $-\sqrt{N}$ or where the element is a negative scalar; it is $v$ on the nilpotents, it is a pair of real logarithms in the split-complex null coordinates, and it is multivalued exactly at the nonzero real scalars and at the elements with $\langle\operatorname{Vec}\tilde q\rangle_{\natural} > 0$, the several values differing by the kernel of the exponential. The roots of unity include the split elements $\tilde\pi_1 + \lambda \tilde\pi_2$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
 
@@ -224,7 +224,7 @@ The trigonometric and hyperbolic functions are the parity parts of the exponenti
 | $c_0(\lambda)$, $c_1(\lambda)$ | the coefficient functions of $\exp v$ | this article |
 | $\Sigma$ | the sphere of the roots of $-1$ | *Split-Quaternion Roots of Minus One* |
 | $\cos$, $\sin$, $\cosh$, $\sinh$ | the trigonometric and hyperbolic series | this article |
-| $n_\pm = \tfrac12(1\pm e_2)$ | the null basis of the split-complex plane | *Split-Quaternion Algebra* |
+| $n_\pm = \tfrac12(1\pm \vec e_y)$ | the null basis of the split-complex plane | *Split-Quaternion Algebra* |
 | $\tilde q^\alpha = \exp(\alpha\log \tilde q)$ | the power function | this article |
 | $\tilde\pi_1 + \lambda \tilde\pi_2$ | the split roots of unity | this article |
 | BCH | the Baker–Campbell–Hausdorff correction | this article |

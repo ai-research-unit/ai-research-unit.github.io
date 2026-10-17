@@ -8,9 +8,9 @@ The article turns on one computation, the multiplicativity of $-\nu\tilde q\nu$,
 
 The treatment is mathematical throughout. No physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. A unit vector is an element of the imaginary subspace with unit quaternion norm; it is a direction in $\mathbb{R}^3$ and nothing else.
 
-The quaternion algebra and its basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the conjugate, the quaternion norm and the absence of zero divisors are from *Quaternion Algebra* and *Quaternion Norm and Invertibility*; the inner automorphism $\iota_u(\tilde q) = u\tilde q u^{-1}$ and the theorem that every automorphism of $\mathbb{H}$ is inner are from *Quaternion Automorphisms and Derivations*; the adjoint action, the plane reflection $\rho_v$, the half-angle formula and the composition $\rho_{v_1}\rho_{v_2} = \operatorname{Ad}_{v_1v_2}$ are from *Quaternion Rotations and Reflections*; the three coordinate involutions, the sign matrix, the Klein group and the recovery of the conjugate from the three coordinate involutions are from *Quaternion Augmented Statistics*; the sphere of unit vectors, identified with $Sp(1)/U(1)$, is from *Quaternion Roots of Minus One*.
+The quaternion algebra and its basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, the conjugate, the quaternion norm and the absence of zero divisors are from *Quaternion Algebra* and *Quaternion Norm and Invertibility*; the inner automorphism $\iota_u(\tilde q) = u\tilde q u^{-1}$ and the theorem that every automorphism of $\mathbb{H}$ is inner are from *Quaternion Automorphisms and Derivations*; the adjoint action, the plane reflection $\rho_v$, the half-angle formula and the composition $\rho_{v_1}\rho_{v_2} = \operatorname{Ad}_{v_1v_2}$ are from *Quaternion Rotations and Reflections*; the three coordinate involutions, the sign matrix, the Klein group and the recovery of the conjugate from the three coordinate involutions are from *Quaternion Augmented Statistics*; the sphere of unit vectors, identified with $Sp(1)/\mathrm{U}(1)$, is from *Quaternion Roots of Minus One*.
 
-Throughout, a quaternion is $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ with scalar part $q_0 = \mathrm{Sc}\,\tilde q$ and vector part $\vec q = \mathrm{Vect}\,\tilde q = q_1e_1+q_2e_2+q_3e_3\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, the real inner product on $\operatorname{Im}\mathbb{H}$ is $\langle\vec q,\vec p\rangle = \mathrm{Sc}(\vec q\vec p^{\natural}) = \sum_{k=1}^{3}q_kp_k$ with $|\vec q|^2 = \langle\vec q,\vec q\rangle$, and a **unit vector** is an element $\nu\in\operatorname{Im}\mathbb{H}$ with $\langle \nu\rangle_{\natural} = 1$. For a unit vector $\nu$ one has $\nu^2 = -e_0$ and $\nu^{-1} = \bar\nu = -\nu$. The units of $\mathbb{H}$ are the non-zero elements, and $Sp(1)$ is the unit sphere.
+Throughout, a quaternion is $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with scalar part $q_t = \mathrm{Sc}\,\tilde q$ and vector part $\vec q = \mathrm{Vect}\,\tilde q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\operatorname{Im}\mathbb{H}$, the conjugate is $\tilde{q}^{\natural} = q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = |\tilde q|^2$, the real inner product on $\operatorname{Im}\mathbb{H}$ is $\langle\vec q,\vec p\rangle = \mathrm{Sc}(\vec q\vec p^{\natural}) = \sum_{k=1}^{3}q_kp_k$ with $|\vec q|^2 = \langle\vec q,\vec q\rangle$, and a **unit vector** is an element $\nu\in\operatorname{Im}\mathbb{H}$ with $\langle \nu\rangle_{\natural} = 1$. For a unit vector $\nu$ one has $\nu^2 = -e_t$ and $\nu^{-1} = \bar\nu = -\nu$. The units of $\mathbb{H}$ are the non-zero elements, and $Sp(1)$ is the unit sphere.
 
 The source of the arrangement is the paper of Ell and Sangwine, *Quaternion Involutions* (arXiv:math/0506034): the axioms, the infinitude of the family, the reflection reading, the composition theorems, the recovery of the conjugate and the projection formulas are theirs. The notation is the corpus's. Where the source writes $\tilde q^{\nu}$ for the value $-\nu\tilde q\nu$, this article writes $\iota_\nu(\tilde q)$, the inner-automorphism notation of *Quaternion Automorphisms and Derivations*, to which the involution is a specialisation.
 
@@ -26,21 +26,21 @@ The source of the arrangement is the paper of Ell and Sangwine, *Quaternion Invo
 
 A map satisfying 1 and 2 together with the reversed product rule $f(\tilde p\tilde q) = f(\tilde q)f(\tilde p)$ is an **anti-involution**.
 
-**Remark (why all three axioms).** Axiom 1 alone admits too much. The real-linear map that fixes $e_0$ and $e_1$ and exchanges $e_2$ and $e_3$ is its own inverse, so it satisfies Axioms 1 and 2, and it fails Axiom 3: it sends the product $e_2e_3 = e_1$, which it fixes, to $e_3e_2 = -e_1$. It is Axiom 3 that forces the shape found in the next section, and the failure is not removable by a change of sign.
+**Remark (why all three axioms).** Axiom 1 alone admits too much. The real-linear map that fixes $e_t$ and $\vec e_x$ and exchanges $\vec e_y$ and $\vec e_z$ is its own inverse, so it satisfies Axioms 1 and 2, and it fails Axiom 3: it sends the product $\vec e_y\vec e_z = \vec e_x$, which it fixes, to $\vec e_z\vec e_y = -\vec e_x$. It is Axiom 3 that forces the shape found in the next section, and the failure is not removable by a change of sign.
 
-**Proposition.** An involution fixes $e_0$, and is a unital algebra automorphism of order dividing two; conversely every unital algebra automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$ is an involution.
+**Proposition.** An involution fixes $e_t$, and is a unital algebra automorphism of order dividing two; conversely every unital algebra automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$ is an involution.
 
-*Proof.* For an involution $f$, put $\tilde e = f(e_0)$. Then $\tilde e = f(e_0) = f(e_0e_0) = f(e_0)f(e_0) = \tilde e^2$, so $\tilde e$ is idempotent. It is not zero: were $\tilde e = 0$, then $e_0 = f(f(e_0)) = f(\tilde e) = f(0) = 0$, which is false. An idempotent $\tilde e$ in $\mathbb{H}$ satisfies $\tilde e(\tilde e-e_0) = 0$, and $\mathbb{H}$ has no zero divisors, so $\tilde e = 0$ or $\tilde e = e_0$; hence $f(e_0) = e_0$. Axioms 2 and 3 then say exactly that $f$ is a unital $\mathbb{R}$-algebra endomorphism, and Axiom 1 makes it bijective with inverse $f$. The converse is immediate from the definition of a unital automorphism.
+*Proof.* For an involution $f$, put $\tilde\pi = f(e_t)$. Then $\tilde\pi = f(e_t) = f(e_te_t) = f(e_t)f(e_t) = \tilde\pi^2$, so $\tilde\pi$ is idempotent. It is not zero: were $\tilde\pi = 0$, then $e_t = f(f(e_t)) = f(\tilde\pi) = f(0) = 0$, which is false. An idempotent $\tilde\pi$ in $\mathbb{H}$ satisfies $\tilde\pi(\tilde\pi-e_t) = 0$, and $\mathbb{H}$ has no zero divisors, so $\tilde\pi = 0$ or $\tilde\pi = e_t$; hence $f(e_t) = e_t$. Axioms 2 and 3 then say exactly that $f$ is a unital $\mathbb{R}$-algebra endomorphism, and Axiom 1 makes it bijective with inverse $f$. The converse is immediate from the definition of a unital automorphism.
 
 ### The Conjugate Is an Anti-Involution
 
 **Theorem.** Quaternion conjugation is an anti-involution, and is not an involution.
 
-*Proof.* Conjugation is $\mathbb{R}$-linear and satisfies $(\tilde p\tilde q)^{\natural} = \tilde{q}^{\natural}\tilde{p}^{\natural}$, the reversed product rule, and it is its own inverse; so it satisfies Axioms 1 and 2 and the reversed form of Axiom 3. It fails Axiom 3: $(e_1 e_2)^{\natural} = e_3^{\natural} = -e_3$, while $e_1^{\natural}e_2^{\natural} = (-e_1)(-e_2) = e_1e_2 = e_3$.
+*Proof.* Conjugation is $\mathbb{R}$-linear and satisfies $(\tilde p\tilde q)^{\natural} = \tilde{q}^{\natural}\tilde{p}^{\natural}$, the reversed product rule, and it is its own inverse; so it satisfies Axioms 1 and 2 and the reversed form of Axiom 3. It fails Axiom 3: $(\vec e_x \vec e_y)^{\natural} = \vec e_z^{\natural} = -\vec e_z$, while $\vec e_x^{\natural}\vec e_y^{\natural} = (-\vec e_x)(-\vec e_y) = \vec e_x\vec e_y = \vec e_z$.
 
 **Corollary.** The anti-involutions of $\mathbb{H}$ are the conjugate $\tilde q\mapsto\tilde{q}^{\natural}$ and the maps $\tilde q\mapsto-\nu\tilde{q}^{\natural}\nu$ for unit vectors $\nu$, that is the composite $\iota_\nu\circ{}^{\natural}$ of an involution with the conjugate.
 
-*Proof.* Let $f$ be an anti-involution. From the reversed product rule at $\tilde p = \tilde q = e_0$ one gets $f(e_0) = f(e_0)^2$, and $f(e_0)\neq0$ because $f$ is its own inverse; as above $f(e_0) = e_0$, so $f$ fixes $e_0$. Then $g = f\circ{}^{\natural}$ is multiplicative, since both $f$ and conjugation reverse products, and it fixes $e_0$ and is bijective, so it is a unital automorphism; by *Quaternion Automorphisms and Derivations* it is $\iota_u$ for a unit $u$, and $f = \iota_u\circ{}^{\natural}$. Computing, $f(f(\tilde q)) = u^2\tilde q u^{-2} = \iota_{u^2}(\tilde q)$, so $f$ is an anti-involution exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the conjugate, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $f(\tilde q) = t\nu\tilde{q}^{\natural}(t\nu)^{-1} = \nu\tilde{q}^{\natural}\nu^{-1} = -\nu\tilde{q}^{\natural}\nu$.
+*Proof.* Let $f$ be an anti-involution. From the reversed product rule at $\tilde p = \tilde q = e_t$ one gets $f(e_t) = f(e_t)^2$, and $f(e_t)\neq0$ because $f$ is its own inverse; as above $f(e_t) = e_t$, so $f$ fixes $e_t$. Then $g = f\circ{}^{\natural}$ is multiplicative, since both $f$ and conjugation reverse products, and it fixes $e_t$ and is bijective, so it is a unital automorphism; by *Quaternion Automorphisms and Derivations* it is $\iota_u$ for a unit $u$, and $f = \iota_u\circ{}^{\natural}$. Computing, $f(f(\tilde q)) = u^2\tilde q u^{-2} = \iota_{u^2}(\tilde q)$, so $f$ is an anti-involution exactly when $u^2$ is real, that is when $u$ is real or pure imaginary; a real $u$ gives the conjugate, and a pure $u$ is $u = t\nu$ with $t\neq0$ real and $\nu$ a unit vector, giving $f(\tilde q) = t\nu\tilde{q}^{\natural}(t\nu)^{-1} = \nu\tilde{q}^{\natural}\nu^{-1} = -\nu\tilde{q}^{\natural}\nu$.
 
 **Remark (the terminology of the corpus).** The corpus calls ${}^{\natural}$, $-{}^{\natural}$ and $-\mathrm{id}$ *the three involutions* of the algebra in *Worked Examples in the Quaternion Algebra* and in *The Scalar and Vector Subspaces of $\mathbb{H}$*, and *Quaternion Augmented Statistics* defines an involution by $\iota^2 = \mathrm{id}$ alone. In the sense of this article only the conjugate is an anti-involution, and the maps $-{}^{\natural}$ and $-\mathrm{id}$ are neither involutions nor anti-involutions. For $-\mathrm{id}$ the product $(-\tilde p)(-\tilde q)$ equals $\tilde p\tilde q$, while multiplicativity would need it to equal $-\tilde p\tilde q$ and the reversed rule would need it to equal $-\tilde q\tilde p$; for $-{}^{\natural}$ the product $(-\tilde{p}^{\natural})(-\tilde{q}^{\natural})$ equals $\tilde{p}^{\natural}\tilde{q}^{\natural}$, which is neither $-(\tilde p\tilde q)^{\natural} = -\tilde{q}^{\natural}\tilde{p}^{\natural}$ nor its reverse $-\tilde{p}^{\natural}\tilde{q}^{\natural}$. The maps $\iota_k$ of *Quaternion Augmented Statistics* are involutions in the sense of this article as well, and are the coordinate instances of the family classified next; it is the multiplicative sense that carries the classification.
 
@@ -56,15 +56,15 @@ $$
 
 is an involution of $\mathbb{H}$, and conversely the involutions of $\mathbb{H}$ are $\mathrm{id}$ and the maps $\iota_\nu$ with $\nu$ a unit vector. Hence $\mathbb{H}$ has infinitely many involutions. Moreover $\iota_\nu = \iota_\omega$ exactly when $\omega = \pm\nu$, so the non-trivial involutions are parametrised by the axis lines $\mathbb{R}\nu$, that is by the projective plane of directions of $\mathbb{R}^3$.
 
-*Proof.* (a) The map is the inner automorphism of *Quaternion Automorphisms and Derivations*, hence multiplicative, and it is $\mathbb{R}$-linear; it is its own inverse because $\iota_\nu(\iota_\nu(\tilde q)) = \nu^2\tilde q\nu^{-2} = (-e_0)\tilde q(-e_0) = \tilde q$. The second form follows from $\nu^{-1} = -\nu$. (b) Conversely, let $f$ be an involution; by the proposition of the previous section it is a unital automorphism of order dividing two; by Skolem–Noether it is inner, $f = \iota_u$ for a unit $u$; and $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is central, that is real. Writing $u = u_0+\vec q_a$ with vector part $\vec q_a$, one has $u^2 = u_0^2-\langle \vec q_a\rangle_{\natural}+2u_0\vec q_a$, real precisely when $u_0 = 0$ or $\vec q_a = 0$. The second case is $u$ real, giving the identity; the first is $u$ pure imaginary, $u = t\nu$ with $t$ real and $\nu$ a unit vector, and $\iota_u = \iota_\nu$. (c) For the parametrisation, $\iota_\nu$ fixes the plane $\operatorname{span}(e_0,\nu)$ pointwise and no more, so $\iota_\nu = \iota_\omega$ forces $\operatorname{span}(e_0,\nu) = \operatorname{span}(e_0,\omega)$, hence $\omega = \pm\nu$; the converse is the identity $\nu\tilde q\nu^{-1} = (-\nu)\tilde q(-\nu)^{-1}$.
+*Proof.* (a) The map is the inner automorphism of *Quaternion Automorphisms and Derivations*, hence multiplicative, and it is $\mathbb{R}$-linear; it is its own inverse because $\iota_\nu(\iota_\nu(\tilde q)) = \nu^2\tilde q\nu^{-2} = (-e_t)\tilde q(-e_t) = \tilde q$. The second form follows from $\nu^{-1} = -\nu$. (b) Conversely, let $f$ be an involution; by the proposition of the previous section it is a unital automorphism of order dividing two; by Skolem–Noether it is inner, $f = \iota_u$ for a unit $u$; and $\iota_u^2 = \iota_{u^2} = \mathrm{id}$ exactly when $u^2$ is central, that is real. Writing $u = u_t+\vec q_a$ with vector part $\vec q_a$, one has $u^2 = u_t^2-\langle \vec q_a\rangle_{\natural}+2u_t\vec q_a$, real precisely when $u_t = 0$ or $\vec q_a = 0$. The second case is $u$ real, giving the identity; the first is $u$ pure imaginary, $u = t\nu$ with $t$ real and $\nu$ a unit vector, and $\iota_u = \iota_\nu$. (c) For the parametrisation, $\iota_\nu$ fixes the plane $\operatorname{span}(e_t,\nu)$ pointwise and no more, so $\iota_\nu = \iota_\omega$ forces $\operatorname{span}(e_t,\nu) = \operatorname{span}(e_t,\omega)$, hence $\omega = \pm\nu$; the converse is the identity $\nu\tilde q\nu^{-1} = (-\nu)\tilde q(-\nu)^{-1}$.
 
-**Corollary.** The involutions $\iota_\nu$ of the coordinate axes are the three maps $\iota_k$ of *Quaternion Augmented Statistics*, and the involution about the axis $e_1$ is the half-turn of the example of *Quaternion Automorphisms and Derivations*.
+**Corollary.** The involutions $\iota_\nu$ of the coordinate axes are the three maps $\iota_k$ of *Quaternion Augmented Statistics*, and the involution about the axis $\vec e_x$ is the half-turn of the example of *Quaternion Automorphisms and Derivations*.
 
 ### Not Every Self-Inverse Sandwich Is an Involution
 
 **Proposition.** For unit vectors $\nu_1,\nu_2$ the map $g(\tilde q) = \nu_1\tilde q\nu_2$ is its own inverse, $g^2 = \mathrm{id}$. It is multiplicative, hence an involution, exactly when $\nu_2 = -\nu_1$, and then it is $\iota_{\nu_1}$. In particular a map $\nu_1\tilde q\nu_2$ with $\nu_2\neq-\nu_1$ is self-inverse and is not an involution.
 
-*Proof.* The square is $g(g(\tilde q)) = \nu_1^2\tilde q\nu_2^2 = \tilde q$, since $\nu_1^2 = \nu_2^2 = -e_0$. For multiplicativity, $g(\tilde p)g(\tilde q) = \nu_1\tilde p\nu_2\nu_1\tilde q\nu_2$ and $g(\tilde p\tilde q) = \nu_1\tilde p\tilde q\nu_2$; the two agree for all $\tilde p,\tilde q$ exactly when $\nu_2\nu_1 = e_0$ — set $\tilde p = \tilde q = e_0$ and cancel — that is exactly when $\nu_2 = \nu_1^{-1} = -\nu_1$, and then $g(\tilde q) = -\nu_1\tilde q\nu_1 = \iota_{\nu_1}(\tilde q)$.
+*Proof.* The square is $g(g(\tilde q)) = \nu_1^2\tilde q\nu_2^2 = \tilde q$, since $\nu_1^2 = \nu_2^2 = -e_t$. For multiplicativity, $g(\tilde p)g(\tilde q) = \nu_1\tilde p\nu_2\nu_1\tilde q\nu_2$ and $g(\tilde p\tilde q) = \nu_1\tilde p\tilde q\nu_2$; the two agree for all $\tilde p,\tilde q$ exactly when $\nu_2\nu_1 = e_t$ — set $\tilde p = \tilde q = e_t$ and cancel — that is exactly when $\nu_2 = \nu_1^{-1} = -\nu_1$, and then $g(\tilde q) = -\nu_1\tilde q\nu_1 = \iota_{\nu_1}(\tilde q)$.
 
 The proposition is the reason Axiom 3 is not redundant: the self-inverse sandwiches of that shape form a four-dimensional family, the involutions a two-dimensional one, the projective plane.
 
@@ -72,15 +72,15 @@ The proposition is the reason Axiom 3 is not redundant: the self-inverse sandwic
 
 ### The Line Reflection
 
-**Theorem.** Let $\nu$ be a unit vector and $\tilde q = q_0+\vec q$ its scalar and vector decomposition. Then
+**Theorem.** Let $\nu$ be a unit vector and $\tilde q = q_t+\vec q$ its scalar and vector decomposition. Then
 
 $$
-\iota_\nu(\tilde q) = q_0-\nu\vec q\nu = q_0+2\langle\vec q,\nu\rangle\nu-\vec q.
+\iota_\nu(\tilde q) = q_t-\nu\vec q\nu = q_t+2\langle\vec q,\nu\rangle\nu-\vec q.
 $$
 
-Consequently $\iota_\nu$ fixes the scalar part, fixes the vector part parallel to $\nu$ and negates the vector part perpendicular to $\nu$: on the vector subspace $\operatorname{Im}\mathbb{H}$ it is the reflection in the line $\mathbb{R}\nu$, equivalently the rotation by $\pi$ about $\nu$. On $\mathbb{H}$ it fixes the plane $\operatorname{span}(e_0,\nu)$ pointwise and negates its orthogonal complement $\nu^{\perp}$ pointwise.
+Consequently $\iota_\nu$ fixes the scalar part, fixes the vector part parallel to $\nu$ and negates the vector part perpendicular to $\nu$: on the vector subspace $\operatorname{Im}\mathbb{H}$ it is the reflection in the line $\mathbb{R}\nu$, equivalently the rotation by $\pi$ about $\nu$. On $\mathbb{H}$ it fixes the plane $\operatorname{span}(e_t,\nu)$ pointwise and negates its orthogonal complement $\nu^{\perp}$ pointwise.
 
-*Proof.* Since $\nu e_0\nu^{-1} = e_0$, the map fixes the scalar part. For pure $\vec q$ one has $\nu\vec q = \nu\times\vec q-\langle\nu,\vec q\rangle$ and $\vec q\nu = -\nu\times\vec q-\langle\nu,\vec q\rangle$ from the product formula of *Quaternion Algebra*, so $\nu\vec q\nu = (\nu\times\vec q)\nu-\langle\nu,\vec q\rangle\nu = \vec q-2\langle\nu,\vec q\rangle\nu$, using $(\nu\times\vec q)\nu = (\nu\times\vec q)\times\nu = \vec q-\langle\nu,\vec q\rangle\nu$; hence $-\nu\vec q\nu = 2\langle\vec q,\nu\rangle\nu-\vec q$. The right-hand side fixes $\vec q$ when $\vec q$ is parallel to $\nu$ and negates it when $\langle\vec q,\nu\rangle = 0$, so on $\operatorname{Im}\mathbb{H}$ the map is the reflection in the line $\mathbb{R}\nu$, equivalently the rotation by $\pi$ about $\nu$. Adding the fixed scalar line gives the fixed plane $\operatorname{span}(e_0,\nu)$ and the anti-fixed plane $\nu^{\perp}$.
+*Proof.* Since $\nu e_t\nu^{-1} = e_t$, the map fixes the scalar part. For pure $\vec q$ one has $\nu\vec q = \nu\times\vec q-\langle\nu,\vec q\rangle$ and $\vec q\nu = -\nu\times\vec q-\langle\nu,\vec q\rangle$ from the product formula of *Quaternion Algebra*, so $\nu\vec q\nu = (\nu\times\vec q)\nu-\langle\nu,\vec q\rangle\nu = \vec q-2\langle\nu,\vec q\rangle\nu$, using $(\nu\times\vec q)\nu = (\nu\times\vec q)\times\nu = \vec q-\langle\nu,\vec q\rangle\nu$; hence $-\nu\vec q\nu = 2\langle\vec q,\nu\rangle\nu-\vec q$. The right-hand side fixes $\vec q$ when $\vec q$ is parallel to $\nu$ and negates it when $\langle\vec q,\nu\rangle = 0$, so on $\operatorname{Im}\mathbb{H}$ the map is the reflection in the line $\mathbb{R}\nu$, equivalently the rotation by $\pi$ about $\nu$. Adding the fixed scalar line gives the fixed plane $\operatorname{span}(e_t,\nu)$ and the anti-fixed plane $\nu^{\perp}$.
 
 **Corollary (parallel and perpendicular elements).** For a unit vector $\nu$, $\iota_\nu(\tilde q) = \tilde q$ when $\vec q$ is parallel to $\nu$, and $\iota_\nu(\tilde q) = \tilde{q}^{\natural}$ when $\vec q$ is perpendicular to $\nu$.
 
@@ -94,7 +94,7 @@ $$
 \rho_\nu(\tilde q) = -\nu\tilde q\nu^{-1},
 $$
 
-which on $\operatorname{Im}\mathbb{H}$ equals $\tilde q-2\langle\tilde q,\nu\rangle\nu$ and is the reflection in the **plane** $\nu^{\perp}$; on $\mathbb{H}$ it also negates the scalar line, $\rho_\nu(e_0) = -e_0$. Since $\nu^{-1} = -\nu$, one has $\rho_\nu = -\iota_\nu$: the involution and the plane reflection are the two reflections attached to the axis $\nu$, and the sign between them is exactly the difference between reflecting in the line and reflecting in the plane. The plane reflection is orientation-reversing on $\operatorname{Im}\mathbb{H}$ and the involution is orientation-preserving there, the determinants being $-1$ and $+1$.
+which on $\operatorname{Im}\mathbb{H}$ equals $\tilde q-2\langle\tilde q,\nu\rangle\nu$ and is the reflection in the **plane** $\nu^{\perp}$; on $\mathbb{H}$ it also negates the scalar line, $\rho_\nu(e_t) = -e_t$. Since $\nu^{-1} = -\nu$, one has $\rho_\nu = -\iota_\nu$: the involution and the plane reflection are the two reflections attached to the axis $\nu$, and the sign between them is exactly the difference between reflecting in the line and reflecting in the plane. The plane reflection is orientation-reversing on $\operatorname{Im}\mathbb{H}$ and the involution is orientation-preserving there, the determinants being $-1$ and $+1$.
 
 ## Composition of Involutions
 
@@ -132,7 +132,7 @@ is a group under composition, isomorphic to $\mathbb{Z}/2\times\mathbb{Z}/2$. Th
 
 *Proof.* Each member is its own inverse by the first theorem of the section. For the products, $\iota_{\nu_1}\iota_{\nu_2} = \iota_{\nu_1\times\nu_2}$ and $\nu_1\times\nu_2$ is one of $\pm\nu_3$, so the product is $\iota_{\nu_3}$; the other pairs are the same up to the order of the factors, which the commutation makes immaterial, and the sign of the axis is immaterial by the parametrisation theorem. For the triple, $(\iota_{\nu_1}\iota_{\nu_2})\iota_{\nu_3} = \iota_{\nu_3}\iota_{\nu_3} = \mathrm{id}$.
 
-**Remark.** This is the general form of the sign matrix and of the Klein group of *Quaternion Augmented Statistics*, where the perpendicular triple is the coordinate one $e_1,e_2,e_3$ and the four maps are $\mathrm{id},\iota_1,\iota_2,\iota_3$; the four maps there are the four characters of the group, and the group is the same group.
+**Remark.** This is the general form of the sign matrix and of the Klein group of *Quaternion Augmented Statistics*, where the perpendicular triple is the coordinate one $\vec e_x,\vec e_y,\vec e_z$ and the four maps are $\mathrm{id},\iota_1,\iota_2,\iota_3$; the four maps there are the four characters of the group, and the group is the same group.
 
 ### The Composite Is a Rotation
 
@@ -159,10 +159,10 @@ $$
 $$
 \tilde{q}^{\natural} = \tfrac12\bigl(\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)-\tilde q\bigr),
 \qquad
-q_0 = \tfrac14\bigl(\tilde q+\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)\bigr).
+q_t = \tfrac14\bigl(\tilde q+\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q)\bigr).
 $$
 
-*Proof.* Write $\tilde q = q_0+\vec q$. Each involution fixes $q_0$ and, by the lemma, the three together send $\vec q$ to $-\vec q$, so $\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q) = 3q_0-\vec q$. The first identity becomes $\tfrac12(3q_0-\vec q-q_0-\vec q) = q_0-\vec q = \tilde{q}^{\natural}$, and the second becomes $\tfrac14(q_0+\vec q+3q_0-\vec q) = q_0$.
+*Proof.* Write $\tilde q = q_t+\vec q$. Each involution fixes $q_t$ and, by the lemma, the three together send $\vec q$ to $-\vec q$, so $\iota_{\nu_1}(\tilde q)+\iota_{\nu_2}(\tilde q)+\iota_{\nu_3}(\tilde q) = 3q_t-\vec q$. The first identity becomes $\tfrac12(3q_t-\vec q-q_t-\vec q) = q_t-\vec q = \tilde{q}^{\natural}$, and the second becomes $\tfrac14(q_t+\vec q+3q_t-\vec q) = q_t$.
 
 **Remark.** The conjugate, which is the only anti-involution among the four maps, is a fixed integer combination of the three involutions: the anti-involution is generated by the involutions even though it is not one of them. For the coordinate triple this is the recovery formula of *Quaternion Augmented Statistics*, $\tilde{q}^{\natural} = \tfrac12(\iota_1\tilde q+\iota_2\tilde q+\iota_3\tilde q-\tilde q)$; the general form holds for every mutually perpendicular triple.
 
@@ -184,17 +184,17 @@ and $\vec q = \vec q_{\parallel\nu}+\vec q_{\perp\nu}$, the first component para
 
 ### Projection of a Quaternion
 
-**Theorem.** With $\tilde q = q_0+\vec q$ and $\nu$ a unit vector,
+**Theorem.** With $\tilde q = q_t+\vec q$ and $\nu$ a unit vector,
 
 $$
-\tfrac12\bigl(\tilde q+\iota_\nu(\tilde q)\bigr) = q_0+\langle\vec q,\nu\rangle\nu,
+\tfrac12\bigl(\tilde q+\iota_\nu(\tilde q)\bigr) = q_t+\langle\vec q,\nu\rangle\nu,
 \qquad
 \tfrac12\bigl(\tilde q-\iota_\nu(\tilde q)\bigr) = \vec q-\langle\vec q,\nu\rangle\nu.
 $$
 
-The first component lies in the plane $\operatorname{span}(e_0,\nu)$, the Argand plane of the axis, and carries the scalar part; the second is a vector perpendicular to $\nu$.
+The first component lies in the plane $\operatorname{span}(e_t,\nu)$, the Argand plane of the axis, and carries the scalar part; the second is a vector perpendicular to $\nu$.
 
-*Proof.* The involution fixes $q_0$; applying the vector theorem to $\vec q$ gives the two expressions.
+*Proof.* The involution fixes $q_t$; applying the vector theorem to $\vec q$ gives the two expressions.
 
 ### The Resolution in an Orthonormal Frame
 
@@ -224,21 +224,21 @@ The resolution is the computation the involutions were introduced for: the four 
 
 ## Summary
 
-An involution of $\mathbb{H}$ is a real-linear self-inverse multiplicative map; multiplicativity is not implied by the other two axioms, and the map that exchanges $e_2$ and $e_3$ while fixing $e_0$ and $e_1$ shows it. Quaternion conjugation is an anti-involution and not an involution, and the anti-involutions are exactly the conjugate and its twists $\tilde q\mapsto-\nu\tilde{q}^{\natural}\nu$ by the involutions.
+An involution of $\mathbb{H}$ is a real-linear self-inverse multiplicative map; multiplicativity is not implied by the other two axioms, and the map that exchanges $\vec e_y$ and $\vec e_z$ while fixing $e_t$ and $\vec e_x$ shows it. Quaternion conjugation is an anti-involution and not an involution, and the anti-involutions are exactly the conjugate and its twists $\tilde q\mapsto-\nu\tilde{q}^{\natural}\nu$ by the involutions.
 
 The involutions of $\mathbb{H}$ are the identity together with the maps $\iota_\nu(\tilde q) = \nu\tilde q\nu^{-1} = -\nu\tilde q\nu$, one for each unit vector $\nu$; since $\iota_\nu = \iota_{-\nu}$, the non-trivial involutions are parametrised by the axis lines, that is by the projective plane, and the family is infinite. The class contains the three coordinate involutions $\iota_k$ of *Quaternion Augmented Statistics* and the half-turn example of *Quaternion Automorphisms and Derivations*.
 
 An involution fixes the scalar part and the axis line and negates the perpendicular plane; on the imaginary subspace it is the reflection in the axis line, equivalently the rotation by $\pi$ about the axis, and it is the negative of the plane reflection $\rho_\nu$ of *Quaternion Rotations and Reflections*. Two involutions compose to the inner automorphism $\operatorname{Ad}_{\nu_1\nu_2}$, which is a rotation about $\nu_1\times\nu_2$ through twice the angle between the axes; perpendicular involutions commute, the involutions of a mutually perpendicular triple form a Klein four-group, and the product of two perpendicular ones is the involution about the third axis.
 
-Three mutually perpendicular involutions recover the conjugate and the scalar part, $\tilde{q}^{\natural} = \tfrac12(\iota_{\nu_1}\tilde q+\iota_{\nu_2}\tilde q+\iota_{\nu_3}\tilde q-\tilde q)$ and $q_0 = \tfrac14(\tilde q+\iota_{\nu_1}\tilde q+\iota_{\nu_2}\tilde q+\iota_{\nu_3}\tilde q)$; for the coordinate triple this is the recovery formula of *Quaternion Augmented Statistics*. The projection of a vector or a quaternion on an axis is $\tfrac12$ of the element plus or minus its involution, with the parallel component lying in the Argand plane of the axis, and the two formulas resolve any quaternion in any mutually perpendicular triple of axes, which is the constructive content of the family.
+Three mutually perpendicular involutions recover the conjugate and the scalar part, $\tilde{q}^{\natural} = \tfrac12(\iota_{\nu_1}\tilde q+\iota_{\nu_2}\tilde q+\iota_{\nu_3}\tilde q-\tilde q)$ and $q_t = \tfrac14(\tilde q+\iota_{\nu_1}\tilde q+\iota_{\nu_2}\tilde q+\iota_{\nu_3}\tilde q)$; for the coordinate triple this is the recovery formula of *Quaternion Augmented Statistics*. The projection of a vector or a quaternion on an axis is $\tfrac12$ of the element plus or minus its involution, with the parallel component lying in the Argand plane of the axis, and the two formulas resolve any quaternion in any mutually perpendicular triple of axes, which is the constructive content of the family.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0e_0+q_1e_1+q_2e_2+q_3e_3$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
+| $\tilde q = q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | General quaternion, scalar part $q_t$, vector part $\vec q$ |
 | $\mathrm{Sc}, \mathrm{Vect}$ | Scalar and vector part functionals |
 | $\tilde{q}^{\natural}$ | Quaternion conjugate, an anti-involution |
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \lvert\tilde q\rvert^2$ | Quaternion norm and modulus |
@@ -251,7 +251,7 @@ Three mutually perpendicular involutions recover the conjugate and the scalar pa
 | $\tilde q^{\nu} = -\nu\tilde q\nu$ | The source's notation for the value of $\iota_\nu$ |
 | $\operatorname{Ad}_{\tilde q}(\tilde p) = \tilde q\tilde p\tilde q^{-1}$ | Adjoint action and inner automorphism |
 | $\rho_\nu(\tilde q) = -\nu\tilde q\nu^{-1} = -\iota_\nu(\tilde q)$ | Plane reflection of the axis $\nu$ |
-| $\operatorname{span}(e_0,\nu)$ | Argand plane of the axis $\nu$ |
+| $\operatorname{span}(e_t,\nu)$ | Argand plane of the axis $\nu$ |
 | $\nu_1,\nu_2,\nu_3$ mutually perpendicular | Orthonormal frame of axes |
 | $\mathbb{R}\nu$ | Axis line; the involutions are parametrised by the axis lines |
 

@@ -30,7 +30,7 @@ is compared, is *Square Roots of a General Element in the General Plain Algebra*
 **Definition (square root of an element).** Let $\star$ be a product on $\mathbb{H}$ and let
 $\tilde a\in\mathbb{H}$. A **square root of $\tilde a$ in $\star$** is an element $\tilde\xi$ with
 $\tilde\xi\star\tilde\xi=\tilde a$. The roots of a central value are the special case
-$\tilde a=\lambda e_0$ (*Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, §*The Element
+$\tilde a=\lambda e_t$ (*Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*, §*The Element
 Vocabulary*).
 
 Throughout this article the product is the antisymmetric plain multiplication $\times$, and
@@ -124,7 +124,7 @@ unital, and its square-root equation $\tilde\xi^2=\tilde a$ is a genuine classif
 (*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of a General Element in the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*).
 The block is the antisymmetric half of that product, and the comparison is the comparison of a square
 map that is zero with a square map that is not. The parent's square is
-$\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\vec\xi\rvert^2\bigr]e_0$, whose image and
+$\tilde\xi^2=2\xi_t\tilde\xi-\bigl[\xi_t^2+\lvert\vec\xi\rvert^2\bigr]e_t$, whose image and
 kernel are proper; the block's square map is the zero map, whose image is the origin and whose kernel
 is the whole space. Over $\mathbb{R}$ the parent's square roots of the origin are the origin alone,
 the plain product being a division product, while the block's are the whole space; and the parent's
@@ -134,7 +134,7 @@ six-structure table: the two antisymmetric structures have the whole space as th
 and no root of any other central value.
 
 **Remark (the removal of the scalar part).** The parent's square carries a central part
-$\xi_0^2-\lvert\vec\xi\rvert^2$ and a vector part $2\xi_0\vec\xi$; the block removes the
+$\xi_t^2-\lvert\vec\xi\rvert^2$ and a vector part $2\xi_t\vec\xi$; the block removes the
 scalar part of the product, and with it the central part of the square. The equation
 $\tilde\xi\times\tilde\xi=\tilde a$ is the parent's square-root equation with the central coordinate
 deleted, and with the central coordinate deleted the equation collapses to the statement that
@@ -162,7 +162,7 @@ the parent's two-point and two-sphere families have no counterpart in the block.
 | $\tilde\xi\times\tilde\xi=\tilde a$ | the square-root equation, equivalent to $0=\tilde a$ |
 | $\mathbb{H}$ | the square roots of the origin, the kernel of the square map |
 | $\{0\}$ | the image of the square map, the only right side with square roots |
-| $\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\vec\xi\rvert^2\bigr]e_0$ | the square of the parent plain product, with its central part and its vector part |
+| $\tilde\xi^2=2\xi_t\tilde\xi-\bigl[\xi_t^2+\lvert\vec\xi\rvert^2\bigr]e_t$ | the square of the parent plain product, with its central part and its vector part |
 | $\vec\xi\times\vec q$ | the cross product of the two vector parts, the value of the block |
 
 ## Further Reading

@@ -20,39 +20,39 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_0, e_1, e_2, e_3\}$. It also carries its product, the one defined and studied in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Introduction to the Biquaternion Algebra*. Its centre is the scalar line $\mathbb{C}e_0$, spanned over $\mathbb{R}$ by $e_0$ and $ie_0$, and it is one of the remarkable real subspaces of the group.
+read here as a $\mathbb{C}$-vector space: an additive group with a scalar multiplication by the complex numbers. It is therefore **four-dimensional** over $\mathbb{C}$, with complex basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$. It also carries its product, the one defined and studied in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; the product is $\mathbb{C}$-bilinear, so the scalars may be moved through it, and it makes $\mathbb{B}$ an algebra over $\mathbb{C}$, a reading developed in *Introduction to the Biquaternion Algebra*. Its centre is the scalar line $\mathbb{C}e_t$, spanned over $\mathbb{R}$ by $e_t$ and $ie_t$, and it is one of the remarkable real subspaces of the group.
 
 ### Developed Form
 
 A general biquaternion is written in developed form as
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
 or, more compactly, as
 
 $$
-\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C}.
+\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C}.
 $$
 
 We write
 
 $$
-\tilde{Q} = Q_0 + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k e_k,
+\tilde{Q} = Q_t + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k \vec e_k,
 $$
 
-where $Q_0$ is the **complex scalar part** and $\vec Q$ is the **complex vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{B}$, not a four-vector.
+where $Q_t$ is the **complex scalar part** and $\vec Q$ is the **complex vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{B}$, not a four-vector.
 
 Each complex coefficient is written in terms of its real and imaginary parts:
 
 $$
-Q_0 = q_0 + i q'_0, \qquad Q_k = q_k + i q'_k, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+Q_t = q_t + i q'_t, \qquad Q_k = q_k + i q'_k, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with all quaternion units: $i e_k = e_k i$. Multiplication by it is a real-linear map $J$ of $\mathbb{B}$ with $J^2 = -\mathrm{id}$, the complex structure of the real reading; the operator and the reading it builds are *Biquaternions as a Vector Space over $\mathbb{R}$*.
+The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with all quaternion units: $i \vec e_k = \vec e_k i$. Multiplication by it is a real-linear map $J$ of $\mathbb{B}$ with $J^2 = -\mathrm{id}$, the complex structure of the real reading; the operator and the reading it builds are *Biquaternions as a Vector Space over $\mathbb{R}$*.
 
-In the complex coordinates, $\tilde{Q}$ is the four-tuple $(Q_0, Q_1, Q_2, Q_3)$.
+In the complex coordinates, $\tilde{Q}$ is the four-tuple $(Q_t, Q_x, Q_y, Q_z)$.
 
 ### The Coordinate Systems
 
@@ -61,24 +61,24 @@ The same element is written in three coordinate systems, and all three are used 
 **Real coordinates.** Splitting each complex coefficient as $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$ gives a list of eight real numbers on the real basis:
 
 $$
-\tilde{Q} = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 + q'_0(ie_0) + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3).
+\tilde{Q} = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z + q'_t(ie_t) + q'_x(i\vec e_x) + q'_y(i\vec e_y) + q'_z(i\vec e_z).
 $$
 
-**Complex coordinates.** Collecting the eight real numbers into four complex ones gives the developed form, four complex coordinates $(Q_0, Q_1, Q_2, Q_3)$ on the complex basis $\{e_0, e_1, e_2, e_3\}$.
+**Complex coordinates.** Collecting the eight real numbers into four complex ones gives the developed form, four complex coordinates $(Q_t, Q_x, Q_y, Q_z)$ on the complex basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$.
 
 **Quaternionic coordinates.** Collecting them by the scalar imaginary instead gives
 
 $$
-\tilde{Q} = h_1 + ih_2, \qquad h_1 = \sum_{\mu=0}^{3} q_\mu e_\mu \in \mathbb{H}, \qquad h_2 = \sum_{\mu=0}^{3} q'_\mu e_\mu \in \mathbb{H},
+\tilde{Q} = h_1 + ih_2, \qquad h_1 = \sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu \in \mathbb{H}, \qquad h_2 = \sum_{\mu\in\{t,x,y,z\}} q'_\mu e_\mu \in \mathbb{H},
 $$
 
 a real quaternion plus $i$ times another real quaternion. The decomposition is unique, so in this view an element is a **pair of quaternions**.
 
 | coordinates | basis | count | scalars |
 |---|---|---|---|
-| real | $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$ | $8$ | $\mathbb{R}$ |
-| complex | $e_0, e_1, e_2, e_3$ | $4$ | $\mathbb{C}$ |
-| quaternionic | $e_0, ie_0$ | $2$ | $\mathbb{H}$ |
+| real | $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$ | $8$ | $\mathbb{R}$ |
+| complex | $e_t, \vec e_x, \vec e_y, \vec e_z$ | $4$ | $\mathbb{C}$ |
+| quaternionic | $e_t, ie_t$ | $2$ | $\mathbb{H}$ |
 
 The three rows count the same element against three scalar systems, and all three are used below. The first row is the coordinate list of the real reading of *Biquaternions as a Vector Space over $\mathbb{R}$*; the eight real coordinates and the four complex ones differ only in how the eight real numbers are gathered.
 
@@ -89,25 +89,25 @@ There are **four** natural conjugations on $\mathbb{B}$. The first three are obt
 **Quaternion conjugation** $\tilde{Q}^{\natural}$:
 
 $$
-\tilde{Q}^{\natural} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3.
+\tilde{Q}^{\natural} = Q_t e_t - Q_x \vec e_x - Q_y \vec e_y - Q_z \vec e_z.
 $$
 
 **Complex conjugation** $\bar{\tilde{Q}}$:
 
 $$
-\bar{\tilde{Q}} = \bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
+\bar{\tilde{Q}} = \bar{Q_t} e_t + \bar{Q_x} \vec e_x + \bar{Q_y} \vec e_y + \bar{Q_z} \vec e_z.
 $$
 
 **Hermitian conjugation** $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$:
 
 $$
-\tilde{Q}^{*} = \bar{Q_0} e_0 - \bar{Q_1} e_1 - \bar{Q_2} e_2 - \bar{Q_3} e_3.
+\tilde{Q}^{*} = \bar{Q_t} e_t - \bar{Q_x} \vec e_x - \bar{Q_y} \vec e_y - \bar{Q_z} \vec e_z.
 $$
 
 **Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^{*}$:
 
 $$
-\tilde{Q}^\flat = -\bar{Q_0} e_0 + \bar{Q_1} e_1 + \bar{Q_2} e_2 + \bar{Q_3} e_3.
+\tilde{Q}^\flat = -\bar{Q_t} e_t + \bar{Q_x} \vec e_x + \bar{Q_y} \vec e_y + \bar{Q_z} \vec e_z.
 $$
 
 Each conjugation is an involution: applying it twice returns the original biquaternion. Each therefore splits $\mathbb{B}$ into a fixed space and an anti-fixed space, and each of the two is a real vector subspace of $\mathbb{B}$. The first three have distinct eigenspaces, six in all; the reversal $\flat = -{}^{*}$ reproduces the two eigenspaces of ${}^{*}$ with the signs exchanged and adds no new one. These are the **remarkable subspaces** of $\mathbb{B}$, defined one to a section in *Introduction to the Remarkable Subspaces* and tabulated in *Comparison of the Remarkable Subspaces*.
@@ -116,9 +116,9 @@ The two anti-automorphisms ${}^{\natural}$ and ${}^{*}$, the Klein four-group th
 
 ## Summary
 
-The biquaternion algebra read over the complex scalars is the set $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, a complex vector space of dimension four on the basis $e_0 = 1, e_1, e_2, e_3$, with $e_k^2 = -e_0$. The central element $i$ satisfies $i^2 = -1$ and commutes with the quaternion units, and its multiples form the scalar line $\mathbb{C}e_0$, the centre, one of the remarkable real subspaces.
+The biquaternion algebra read over the complex scalars is the set $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, a complex vector space of dimension four on the basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, with $\vec e_k^2 = -e_t$. The central element $i$ satisfies $i^2 = -1$ and commutes with the quaternion units, and its multiples form the scalar line $\mathbb{C}e_t$, the centre, one of the remarkable real subspaces.
 
-The same element is written in three coordinate systems: eight real coordinates on the real basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, four complex coordinates on the complex basis, and two quaternionic coordinates as a pair of real quaternions. The complex action is the linear structure of this article; the same set with the scalars cut down to $\mathbb{R}$, of dimension eight, and the complex structure $J$ that returns one reading from the other, are *Biquaternions as a Vector Space over $\mathbb{R}$*.
+The same element is written in three coordinate systems: eight real coordinates on the real basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, four complex coordinates on the complex basis, and two quaternionic coordinates as a pair of real quaternions. The complex action is the linear structure of this article; the same set with the scalars cut down to $\mathbb{R}$, of dimension eight, and the complex structure $J$ that returns one reading from the other, are *Biquaternions as a Vector Space over $\mathbb{R}$*.
 
 It carries four natural conjugations, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and $\flat = -{}^{*}$, of which the first three are commuting involutions; the group they form is *The Group of Involutions*. They define the remarkable real subspaces of $\mathbb{B}$, defined one to a section in *Introduction to the Remarkable Subspaces*, and the three direct-sum decompositions they cut out are *Decompositions Along the Remarkable Subspaces*; the coordinate blocks, the intersections, the sums and the action of the conjugations upon the remarkable subspaces are *Comparison of the Remarkable Subspaces*.
 
@@ -132,17 +132,17 @@ The product read as the multiplication of an algebra is *Introduction to the Biq
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
 | $\mathbb{B}$ | Biquaternion algebra, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $e_0 = 1$ | Identity |
-| $e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
-| $i$ | Scalar imaginary, $i^2 = -1$, commutes with $e_k$ |
+| $e_t = 1$ | Identity |
+| $\vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
+| $i$ | Scalar imaginary, $i^2 = -1$, commutes with $\vec e_k$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General biquaternion |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient, with $q_\mu, q'_\mu \in \mathbb{R}$ |
-| $Q_0$ | Complex scalar part |
+| $Q_t$ | Complex scalar part |
 | $\vec Q$ | Complex vector part |
 | $J : \tilde{Q} \mapsto i\tilde{Q}$ | the real-linear complex structure, $J^2 = -\mathrm{id}$ |
-| $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$ | Quaternion conjugate |
-| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$ | Complex conjugate |
-| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$ | Hermitian conjugate |
+| $\tilde{Q}^{\natural} = Q_t e_t - \vec Q$ | Quaternion conjugate |
+| $\bar{\tilde{Q}} = \bar{Q_t} e_t + \vec Q^*$ | Complex conjugate |
+| $\tilde{Q}^{*} = \bar{Q_t} e_t - \vec Q^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\overline{\tilde{Q}^{\natural}} = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 
 ## Further Reading

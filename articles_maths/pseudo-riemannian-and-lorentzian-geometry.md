@@ -72,7 +72,7 @@ $$
 and in a coordinate frame it has the Christoffel symbols
 
 $$
-\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial_{x^i}g_{jl} + \partial_{x^j}g_{il} - \partial_{x^l}g_{ij}\bigr).
+\Gamma^k_{ij} = \frac{1}{2}\sum_l g^{kl}\bigl(\partial/\partial x^i\,g_{jl} + \partial/\partial x^j\,g_{il} - \partial/\partial x^l\,g_{ij}\bigr).
 $$
 
 **Proof.** The proof of the Riemannian case used only the nondegeneracy of $g$: the right-hand side of the Koszul formula is a tensor, and since the pairing $g(\,\cdot\,, \,\cdot\,)$ is nondegenerate, a vector field is determined by its pairings with all $Z$. Metricity and torsion-freeness follow by substitution exactly as before.

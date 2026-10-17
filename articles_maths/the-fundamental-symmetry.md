@@ -58,7 +58,7 @@ are the positive definite and the negative definite parts of a fundamental decom
 
 ## Non-Uniqueness and the Angular Operator
 
-**Theorem (parametrisation of the symmetries).** Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $Q_{+}^{\max}}$, each of which is the **graph**
+**Theorem (parametrisation of the symmetries).** Let $V = V_{+}\oplus V_{-}$ be a fundamental decomposition with symmetry $J$. The fundamental symmetries of $V$ correspond bijectively to the maximal positive definite subspaces $Q_{+}^{\max}$, each of which is the **graph**
 $$
 M_T = \{\, x_{+} + Tx_{+} : x_{+}\in V_{+} \,\}
 $$
@@ -68,7 +68,7 @@ $$
 $$
 Distinct $T$ give distinct symmetries, and the correspondence is a bijection.
 
-**Proof.** Let $Q_{+}^{\max}}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $Q_{+}^{\max}}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dimQ_{+}^{\max}} = \dim V_{+}$; so $Q_{+}^{\max}}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $Q_{+}^{\max}}$ definite and maximal makes $J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $Q_{+}^{\max}}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapstoJ$ is a bijection.
+**Proof.** Let $Q_{+}^{\max}$ be a maximal positive definite subspace and project it to $V_{+}$ along $V_{-}$. The projection is injective, since a nonzero element of $Q_{+}^{\max}\cap V_{-}$ would be both positive and negative, and it is surjective because $\dim Q_{+}^{\max} = \dim V_{+}$; so $Q_{+}^{\max}$ is the graph $M_T$ of a linear $T$. For $x = x_{+} + Tx_{+}$ one has $\langle x,x\rangle = [Jx,x] = [x_{+},x_{+}] + [Tx_{+},Tx_{+}] = \|x_{+}\|^{2} - \|Tx_{+}\|^{2}$, the two summands being orthogonal, and this is positive for every $x\neq0$ exactly when $\|Tx_{+}\| < \|x_{+}\|$ whenever $x_{+}\neq0$. The rest is the preceding proposition: $Q_{+}^{\max}$ definite and maximal makes $J = +\mathrm{id}$ on it and $-\mathrm{id}$ on its definite orthogonal complement a fundamental symmetry, and $Q_{+}^{\max}$ is recovered as the $+1$-eigenspace, so the map $T\mapsto M_T\mapsto J$ is a bijection.
 
 **Definition.** The operator $T$ above is the **angular operator** between the two decompositions, and its contraction constant measures the opening between their positive parts: $T = 0$ exactly when the two positive parts coincide.
 

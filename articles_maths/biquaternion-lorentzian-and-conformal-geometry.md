@@ -6,7 +6,7 @@ The biquaternion algebra carries two real slices whose geometries differ, and th
 
 The article presupposes the biquaternion norm and its real forms (*Norm and Invertibility in the General Quaternionic Algebra*), which fixed the signatures $(4,4)$, $(1,1)$, $(3,3)$, $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$, and the projective picture of the null quadric (*The Null Quadric and Its Projective Geometry*), whose rulings and real forms are used here. The pseudo-Riemannian, Lorentzian and conformal articles of Part IV are cited and not restated.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Criterion*, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The criterion of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Criterion*, is used without proof: $\langle\tilde{Q}\rangle_{\natural}\neq0$ if and only if $\tilde{Q}$ is invertible, and $\langle\tilde{Q}\rangle_{\natural}=0$ with $\tilde{Q}\neq0$ if and only if $\tilde{Q}$ is a zero divisor.
 
 ---
 
@@ -19,19 +19,19 @@ In the Cayley–Klein picture a geometry is its group of motions, and the geomet
 - a **neutral** form, the realification of signature $(4,4)$, gives a split geometry, whose real quadric is ruled by real lines;
 - the degenerate case, the **null** form, is the null cone and its projective quadric — the figure rather than a space.
 
-The same algebra carries the several geometries at once, and the passage from one to another is a change of real form, not a change of algebra. The group of motions is the invariant of the geometry: $Sp(1)=S^3$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and its quotient $\mathbb{B}^\times_1/\{\pm e_0\}\cong SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_0\}\cong SO(4)$ for the two-sided action on the Euclidean form. These are the isometries, and they preserve a form; the full symmetry group of the algebra is wider, because an automorphism need not preserve any form (*Biquaternion Automorphisms and Derivations*).
+The same algebra carries the several geometries at once, and the passage from one to another is a change of real form, not a change of algebra. The group of motions is the invariant of the geometry: $Sp(1)=S^3$ for the definite form, $\mathbb{B}^\times_1\cong Spin(1,3)$ and its quotient $\mathbb{B}^\times_1/\{\pm e_t\}\cong SO^+(1,3)$ for the Lorentzian one, and $(S^3\times S^3)/\{\pm e_t\}\cong SO(4)$ for the two-sided action on the Euclidean form. These are the isometries, and they preserve a form; the full symmetry group of the algebra is wider, because an automorphism need not preserve any form (*Biquaternion Automorphisms and Derivations*).
 
 ## The Lorentzian Slice and Its Light Cone
 
-By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_0)^2+q_1^2+q_2^2+q_3^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
+By the table of *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{M}_-$ is real of signature $(3,1)$, and on $\mathbb{M}_+$ it is $(1,3)$; in real coordinates $\tilde{Q}=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\in\mathbb{M}_-$ this reads $\langle\tilde{Q}\rangle_{\natural}=-(q'_t)^2+q_x^2+q_y^2+q_z^2$. Either subspace is thereby identified with Minkowski space $\mathbb{R}^{1,3}$, and its null set,
 
 $$
-\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_0)^2=q_1^2+q_2^2+q_3^2,
+\langle\tilde{Q}\rangle_{\natural}=0\iff(q'_t)^2=q_x^2+q_y^2+q_z^2,
 $$
 
 is the **light cone**, a double cone with apex at the origin. With this identification, the **null biquaternions of the Minkowski subspace** are exactly the elements of the light cone.
 
-Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_0=\pm1/\sqrt2$ and $q_1^2+q_2^2+q_3^2=1/2$, so the link of the light cone is the disjoint union
+Intersecting with the unit sphere of $\mathbb{M}_-\cong\mathbb{R}^4$ gives $q'_t=\pm1/\sqrt2$ and $q_x^2+q_y^2+q_z^2=1/2$, so the link of the light cone is the disjoint union
 
 $$
 S^2\sqcup S^2,

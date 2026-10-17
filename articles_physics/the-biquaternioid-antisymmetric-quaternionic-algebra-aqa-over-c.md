@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$; the conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$; the conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**; it is a bracket, not an associative product. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
-- **The absence of a unit.** The structure has no unit: $e_0$ annihilates it. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
+- **The absence of a unit.** The structure has no unit: $e_t$ annihilates it. Owner: *Introduction to the Antisymmetric Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised quaternionic product. Owner: *Norm and Invertibility in the Antisymmetric Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set of the structure. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -36,7 +36,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 
 ## Physical Interpretation
 
-- **The Jacobi failure is the algebraic origin of the boost obstruction.** The non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\vec Q-Q_0\vec P$: the failure of this band and the framework's superselection statement are two statements of one fact, the boosts being informational generators and the informational generators not forming an algebra.
+- **The Jacobi failure is the algebraic origin of the boost obstruction.** The non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\vec Q-Q_t\vec P$: the failure of this band and the framework's superselection statement are two statements of one fact, the boosts being informational generators and the informational generators not forming an algebra.
 - **The mixed term reads as the boost and the missing Lie structure as the non-compactness of the informational generators.** The commutator of two boosts is a rotation, so the material bracket closes where the informational one does not, which is the framework's interpretation of the Cartan decomposition.
 - **The invariant bilinear forms are the two surviving pairings**, one compact and one Lorentzian, which is the same dichotomy the four forms carry and the same pair that a change of the local complex structure separates.
 - **Read as generators, the operators fail.** The commutator of two multiplications is the multiplication of the value plus the deviation, so the operators generate no Lie algebra and exponentiate to no group.
@@ -57,11 +57,11 @@ The biquaternioid antisymmetric quaternionic algebra is the structure $\tilde P\
 | $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
 | the Jacobi failure | the obstruction; no Lie algebra |
 | $D(\tilde A,\tilde B)$ | the deviation; the defect of the bracket |
-| $P_0\vec Q-Q_0\vec P$ | the mixed term; the boost |
+| $P_0\vec Q-Q_t\vec P$ | the mixed term; the boost |
 | $[\,\mathrm{boost},\mathrm{boost}\,]=$ rotation | the Cartan decomposition read on the bracket |
-| $e_0\star\tilde X=0$ | the absence of a unit |
+| $e_t\star\tilde X=0$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}},\ \mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
-| $U(2)$ | the group reached off these operators, by the associative one-sided action |
+| $\mathrm{U}(2)$ | the group reached off these operators, by the associative one-sided action |
 
 ## Further Reading
 

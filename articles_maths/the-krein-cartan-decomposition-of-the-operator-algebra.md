@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $U(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
+The general quaternionic sesquilinear form on $\mathbb{B}$ induces on the algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ — a copy of $M_4(\mathbb{C})$ — an adjoint, an involution, a Lie algebra and a symmetric space, and the whole of the indefinite operator theory of this category is written in those terms. This article sets up that structure: the **three adjoints** of the operator algebra (the transpose of the general quaternionic bilinear form, the Hermitian adjoint, the Krein adjoint), the **three involutions** they define and the three classical Lie algebras that are their fixed spaces — the complex orthogonal algebra, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$; the **Krein decomposition** $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into $J$-skew and $J$-self-adjoint operators; the involution $T\mapsto(T^{\dagger})^{-1}$ of the group and the reason it is *not* a Cartan involution; and the Cartan involution of $\mathrm{U}(1,3)$ itself, whose symmetric space is the complex hyperbolic space of *The Krein Level Sets and the Hyperbolic Structure*. The group is *The Krein Isometry Group and Its $J$-Contractions*; the individual operators are *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_0,e_1,e_2,e_3$; the general plain sesquilinear form has Gram matrix $\mathrm{I}_4$, the general quaternionic bilinear form $\mathrm{I}_4$ and the general quaternionic sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
+**Conventions.** $\mathbb{B}\cong\mathbb{C}^{4}$ with coefficient basis $e_t,\vec e_x,\vec e_y,\vec e_z$; the general plain sesquilinear form has Gram matrix $\mathrm{I}_4$, the general quaternionic bilinear form $\mathrm{I}_4$ and the general quaternionic sesquilinear form $E=\mathrm{diag}(1,-1,-1,-1)$; $J={}^{\natural}$ with matrix $E$; the Krein adjoint of an operator $M$ is $M^{\dagger}=JM^{*}J$, where $M^{*}$ is the conjugate transpose; and $\mathfrak{g}=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the real Lie algebra of all $\mathbb{C}$-linear operators, of real dimension $32$.
 
 ## The Three Adjoints of the Operator Algebra
 
@@ -39,7 +39,7 @@ $$
 \mathfrak{g}^{\theta_{J}}=\{M:M^{\dagger}=-M\}=\mathfrak{u}(1,3),
 $$
 
-of real dimensions $12$, $16$ and $16$; each is closed under the commutator bracket, and the three are the Lie algebras of the isometry groups $O_4(\mathbb{C})$, $U(4)$ and $U(1,3)$ of the three pairings.
+of real dimensions $12$, $16$ and $16$; each is closed under the commutator bracket, and the three are the Lie algebras of the isometry groups $O_4(\mathbb{C})$, $\mathrm{U}(4)$ and $\mathrm{U}(1,3)$ of the three pairings.
 
 **Proof.** The fixed conditions are the defining equations $\mathfrak{so}_n$, $\mathfrak{u}(n)$ and $\mathfrak{u}(n,m)$; closure under the bracket is the standard fact for the fixed space of an involution that is an automorphism of the bracket, which each is, because $M\mapsto-M^{\mathsf T}$, $M\mapsto-M^{*}$ and $M\mapsto-M^{\dagger}$ satisfy $(MN)^{\sigma}=M^{\sigma}N^{\sigma}$ up to the sign pattern of a Lie algebra involution.
 
@@ -87,15 +87,15 @@ $$
 \theta_{J}(T)=\bigl(T^{\dagger}\bigr)^{-1}.
 $$
 
-**Theorem (the fixed group is $U(1,3)$).** The map $\theta_{J}$ is an involution with fixed group exactly the Krein isometry group $U_{J}(\mathbb{B})\cong U(1,3)$; its differential at the identity is the involution $\theta_{J}(M)=-M^{\dagger}$ of $\mathfrak{g}$ and its fixed algebra is $\mathfrak{k}=\mathfrak{u}(1,3)$.
+**Theorem (the fixed group is $\mathrm{U}(1,3)$).** The map $\theta_{J}$ is an involution with fixed group exactly the Krein isometry group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$; its differential at the identity is the involution $\theta_{J}(M)=-M^{\dagger}$ of $\mathfrak{g}$ and its fixed algebra is $\mathfrak{k}=\mathfrak{u}(1,3)$.
 
-**Proof.** $\theta_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$; the fixed condition $\theta_{J}(T)=T$ is $T^{\dagger}T=\mathrm{id}$, the definition of $J$-unitarity, and the group is $U(1,3)$.
+**Proof.** $\theta_{J}^{2}(T)=\bigl((T^{\dagger})^{-1}\bigr)^{\dagger}{}^{-1}=(T^{\dagger\dagger})^{-1}{}^{-1}=T$, using $(S^{-1})^{\dagger}=(S^{\dagger})^{-1}$; the fixed condition $\theta_{J}(T)=T$ is $T^{\dagger}T=\mathrm{id}$, the definition of $J$-unitarity, and the group is $\mathrm{U}(1,3)$.
 
-**Theorem (the involution is not Cartan).** The fixed group $U_{J}(\mathbb{B})\cong U(1,3)$ of $\theta_{J}$ is non-compact, so $\theta_{J}$ is not a Cartan involution of $GL(\mathbb{B})$: the fixed group of a Cartan involution is compact by definition.
+**Theorem (the involution is not Cartan).** The fixed group $U_{J}(\mathbb{B})\cong \mathrm{U}(1,3)$ of $\theta_{J}$ is non-compact, so $\theta_{J}$ is not a Cartan involution of $GL(\mathbb{B})$: the fixed group of a Cartan involution is compact by definition.
 
-**Proof.** $U(1,3)$ contains the boosts, which are unbounded (*The Krein Isometry Group and Its $J$-Contractions*).
+**Proof.** $\mathrm{U}(1,3)$ contains the boosts, which are unbounded (*The Krein Isometry Group and Its $J$-Contractions*).
 
-## The Cartan Involution of $U(1,3)$
+## The Cartan Involution of $\mathrm{U}(1,3)$
 
 **Theorem (the Cartan involution).** The restriction of the definite involution
 
@@ -103,7 +103,7 @@ $$
 \theta_{0}(T)=(T^{*})^{-1}
 $$
 
-to the Krein isometry group is a Cartan involution of $U(1,3)$; its fixed group is the maximal compact subgroup $U(1)\times U(3)$, and its differential $\theta_{0}(M)=-M^{*}$ splits
+to the Krein isometry group is a Cartan involution of $\mathrm{U}(1,3)$; its fixed group is the maximal compact subgroup $\mathrm{U}(1)\times \mathrm{U}(3)$, and its differential $\theta_{0}(M)=-M^{*}$ splits
 
 $$
 \mathfrak{u}(1,3)=\mathfrak{k}_{0}\oplus\mathfrak{p}_{0},
@@ -113,12 +113,12 @@ $$
 \dim_{\mathbb{R}}\mathfrak{k}_{0}=10,\quad \dim_{\mathbb{R}}\mathfrak{p}_{0}=6 .
 $$
 
-**Proof.** For $T\in U(1,3)$, that is $T^{*}ET=E$, the operator $T^{*}$ is again in $U(1,3)$ and $\theta_{0}$ preserves the group; its fixed elements are the isometries that are unitary for $\langle\cdot,\cdot\rangle$, i.e. $U(4)\cap U(1,3)=U(1)\times U(3)$. The differential is $-M^{*}$, whose fixed algebra on $\mathfrak{u}(1,3)$ is $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$ of real dimension $1+9=10$, leaving $\mathfrak{p}_{0}$ of dimension $16-10=6$; the fixed group is compact, which is the definition of a Cartan involution.
+**Proof.** For $T\in \mathrm{U}(1,3)$, that is $T^{*}ET=E$, the operator $T^{*}$ is again in $\mathrm{U}(1,3)$ and $\theta_{0}$ preserves the group; its fixed elements are the isometries that are unitary for $\langle\cdot,\cdot\rangle$, i.e. $\mathrm{U}(4)\cap \mathrm{U}(1,3)=\mathrm{U}(1)\times \mathrm{U}(3)$. The differential is $-M^{*}$, whose fixed algebra on $\mathfrak{u}(1,3)$ is $\mathfrak{u}(1)\oplus\mathfrak{u}(3)$ of real dimension $1+9=10$, leaving $\mathfrak{p}_{0}$ of dimension $16-10=6$; the fixed group is compact, which is the definition of a Cartan involution.
 
 **Corollary (the symmetric space).** The quotient
 
 $$
-U(1,3)\,/\,\bigl(U(1)\times U(3)\bigr)
+\mathrm{U}(1,3)\,/\,\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)
 $$
 
 is a Riemannian symmetric space of real dimension $6$, and it is the complex hyperbolic space $\mathbb{CH}^{3}$ of *The Krein Level Sets and the Hyperbolic Structure*, realised as the space of maximal positive definite subspaces, that is the open unit ball of $\mathbb{C}^{3}$.
@@ -126,7 +126,7 @@ is a Riemannian symmetric space of real dimension $6$, and it is the complex hyp
 **Proof.** The quotient of a Lie group by a maximal compact subgroup is a symmetric space of non-compact type, of dimension $\dim\mathfrak{p}_{0}=6$; the identification with the space of positive lines and with the ball is the parametrisation of the maximal positive definite subspaces. The Cartan decomposition of the group is
 
 $$
-U(1,3)=\bigl(U(1)\times U(3)\bigr)\cdot\exp(\mathfrak{p}_{0}),
+\mathrm{U}(1,3)=\bigl(\mathrm{U}(1)\times \mathrm{U}(3)\bigr)\cdot\exp(\mathfrak{p}_{0}),
 $$
 
 the compact part followed by the hyperbolic part, whose exponentials are the boosts and their conjugates.
@@ -149,13 +149,13 @@ the compact part followed by the hyperbolic part, whose exponentials are the boo
 
 **A $J$-skew element.** $M=JL$, where $L$ is any definite-skew operator; $M^{\dagger}=-M$, so $M\in\mathfrak{k}=\mathfrak{u}(1,3)$.
 
-**A boost generator.** The derivative at $t=0$ of the boost $T_{t}$ of *The Krein Isometry Group and Its $J$-Contractions* is the operator $H$ with $H e_0=e_1$, $H e_1=e_0$, $H e_2=H e_3=0$; it is $J$-self-adjoint, $H^{\dagger}=H$, hence an element of $\mathfrak{p}_{0}$, the hyperbolic part, and its exponential is the boost.
+**A boost generator.** The derivative at $t=0$ of the boost $T_{t}$ of *The Krein Isometry Group and Its $J$-Contractions* is the operator $H$ with $H e_t=\vec e_x$, $H \vec e_x=e_t$, $H \vec e_y=H \vec e_z=0$; it is $J$-self-adjoint, $H^{\dagger}=H$, hence an element of $\mathfrak{p}_{0}$, the hyperbolic part, and its exponential is the boost.
 
-**A compact generator.** $M=L_{ie_0}$: skew-Hermitian and $J$-skew, an element of $\mathfrak{k}_{0}=\mathfrak{u}(1)\oplus\mathfrak{u}(3)$.
+**A compact generator.** $M=L_{ie_t}$: skew-Hermitian and $J$-skew, an element of $\mathfrak{k}_{0}=\mathfrak{u}(1)\oplus\mathfrak{u}(3)$.
 
 ## Summary
 
-The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_4(\mathbb{C})=GL_4(\mathbb{C})$, of real dimension $32$, and the three pairings of the algebra give its three adjoints: the transpose $M^{\mathsf T}$ for the general quaternionic bilinear form, the Hermitian adjoint $M^{*}$, and the Krein adjoint $M^{\dagger}=JM^{*}J$. The corresponding involutions $M\mapsto-M^{\sigma}$ have the fixed algebras $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$, of real dimensions $12$, $16$ and $16$. The Krein involution splits $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew operators $\mathfrak{k}=\mathfrak{u}(1,3)$ and the $J$-self-adjoint operators $\mathfrak{p}=J\cdot\mathrm{Herm}_4$, each of dimension $16$; $\mathfrak{k}$ is a Lie algebra, $\mathfrak{p}$ a Jordan algebra, and the bracket of $\mathfrak{k}$ with $\mathfrak{p}$ stays in $\mathfrak{p}$. On the group the involution $T\mapsto(T^{\dagger})^{-1}$ has fixed group the non-compact $U(1,3)$, so it is not a Cartan involution; the Cartan involution is the restriction of $T\mapsto(T^{*})^{-1}$, whose fixed group is the maximal compact $U(1)\times U(3)$, with $\dim\mathfrak{k}_{0}=10$ and $\dim\mathfrak{p}_{0}=6$, and whose symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of real dimension $6$. The trace form of $\mathfrak{u}(1,3)$ has signature $(6,10)$, positive on the hyperbolic part and negative on the compact part, and the $J$-positive cone sits inside the Jordan algebra $\mathfrak{p}$.
+The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_4(\mathbb{C})=GL_4(\mathbb{C})$, of real dimension $32$, and the three pairings of the algebra give its three adjoints: the transpose $M^{\mathsf T}$ for the general quaternionic bilinear form, the Hermitian adjoint $M^{*}$, and the Krein adjoint $M^{\dagger}=JM^{*}J$. The corresponding involutions $M\mapsto-M^{\sigma}$ have the fixed algebras $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$ and $\mathfrak{u}(1,3)$, of real dimensions $12$, $16$ and $16$. The Krein involution splits $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ into the $J$-skew operators $\mathfrak{k}=\mathfrak{u}(1,3)$ and the $J$-self-adjoint operators $\mathfrak{p}=J\cdot\mathrm{Herm}_4$, each of dimension $16$; $\mathfrak{k}$ is a Lie algebra, $\mathfrak{p}$ a Jordan algebra, and the bracket of $\mathfrak{k}$ with $\mathfrak{p}$ stays in $\mathfrak{p}$. On the group the involution $T\mapsto(T^{\dagger})^{-1}$ has fixed group the non-compact $\mathrm{U}(1,3)$, so it is not a Cartan involution; the Cartan involution is the restriction of $T\mapsto(T^{*})^{-1}$, whose fixed group is the maximal compact $\mathrm{U}(1)\times \mathrm{U}(3)$, with $\dim\mathfrak{k}_{0}=10$ and $\dim\mathfrak{p}_{0}=6$, and whose symmetric space is the complex hyperbolic space $\mathbb{CH}^{3}$ of real dimension $6$. The trace form of $\mathfrak{u}(1,3)$ has signature $(6,10)$, positive on the hyperbolic part and negative on the compact part, and the $J$-positive cone sits inside the Jordan algebra $\mathfrak{p}$.
 
 ## Summary of Notation
 
@@ -167,15 +167,15 @@ The algebra of $\mathbb{C}$-linear operators of $\mathbb{B}$ is $\mathfrak{g}=M_
 | $\mathfrak{so}_4(\mathbb{C})$, $\mathfrak{u}(4)$, $\mathfrak{u}(1,3)$ | The three fixed algebras; dimensions $12$, $16$, $16$ |
 | $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$ | The Krein decomposition |
 | $\mathfrak{k}=\mathfrak{u}(1,3)$, $\mathfrak{p}=J\cdot\mathrm{Herm}_4$ | The $J$-skew and $J$-self-adjoint parts |
-| $\theta_{J}(T)=(T^{\dagger})^{-1}$ | The group involution; fixed group $U(1,3)$, non-compact |
-| $\theta_{0}(T)=(T^{*})^{-1}$, $U(1)\times U(3)$ | The Cartan involution and its fixed group |
-| $U(1,3)/(U(1)\times U(3))\cong\mathbb{CH}^{3}$ | The symmetric space of real dimension $6$ |
+| $\theta_{J}(T)=(T^{\dagger})^{-1}$ | The group involution; fixed group $\mathrm{U}(1,3)$, non-compact |
+| $\theta_{0}(T)=(T^{*})^{-1}$, $\mathrm{U}(1)\times \mathrm{U}(3)$ | The Cartan involution and its fixed group |
+| $\mathrm{U}(1,3)/(\mathrm{U}(1)\times \mathrm{U}(3))\cong\mathbb{CH}^{3}$ | The symmetric space of real dimension $6$ |
 | $(6,10)$ | The signature of the trace form of $\mathfrak{u}(1,3)$ |
 
 ## Further Reading
 
 - *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the three pairings, their isometry groups and their signatures
-- *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for $U(1,3)$, its maximal compact part and the boosts
+- *The Krein Isometry Group and Its J-Contractions* (`articles_maths/the-krein-isometry-group-and-its-j-contractions.md`), for $\mathrm{U}(1,3)$, its maximal compact part and the boosts
 - *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the Krein adjoint of the algebra's families
 - *Indefinite Positivity and the Krein Cone of the Biquaternioid Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the $J$-positive cone inside the Jordan part
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the complex hyperbolic space as the space of positive lines

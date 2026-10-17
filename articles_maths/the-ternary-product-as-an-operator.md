@@ -151,18 +151,18 @@ The ternary operator of the pair $(x,x)$ is the quadratic object of the Jordan t
 **Theorem (the quadratic representation).** Let $A$ be commutative and let $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, so that the derived operation is the product. Then
 
 $$
-\Theta_{x,x}(z)=x^{2}z=U_x(z), \qquad \{x,z,x\}=xzx=U_x(z),
+\Theta_{x,x}(z)=x^{2}z=\mathrm{Jor}_x(z), \qquad \{x,z,x\}=xzx=\mathrm{Jor}_x(z),
 $$
 
-where $U_x$ is the quadratic representation of the Jordan algebra of the product; equivalently
+where $\mathrm{Jor}_x$ is the quadratic representation of the Jordan algebra of the product; equivalently
 
 $$
-U_x=2T_{x,1}^{2}-T_{x^{2},1},
+\mathrm{Jor}_x=2T_{x,1}^{2}-T_{x^{2},1},
 $$
 
 the operator $T_{x,1}$ being the plain left multiplication, $T_{x,1}(z)=xz$.
 
-**Proof.** With $*=\mathrm{id}$ the ternary product is $xy^{*}z=xyz$ and the commutativity gives $xyz=x^{2}z$ for $y=x$; the middle slot gives $xzx=x^{2}z$. The identity $U_x=2T_{x,1}^{2}-T_{x^{2},1}$ is the classical form of the quadratic representation in a commutative associative algebra, read on $z$: $2x(xz)-x^{2}z=x^{2}z$.
+**Proof.** With $*=\mathrm{id}$ the ternary product is $xy^{*}z=xyz$ and the commutativity gives $xyz=x^{2}z$ for $y=x$; the middle slot gives $xzx=x^{2}z$. The identity $\mathrm{Jor}_x=2T_{x,1}^{2}-T_{x^{2},1}$ is the classical form of the quadratic representation in a commutative associative algebra, read on $z$: $2x(xz)-x^{2}z=x^{2}z$.
 
 **Remark.** The quadratic representation is therefore the diagonal of the pair map, the case $x=y$ of the ternary operator, and the two readings of the theorem are the two slots in which the quadratic variable may sit. In the sesquilinear case the diagonal $\Theta_{x,x}$ is the plain left multiplication by $x\star x=xx^{*}$, the square of the element in the derived sense, and it is the operator $z\mapsto xx^{*}z$ and not the classical $z\mapsto xzx$; the difference is the involution, and it is what the degenerate case recovers.
 
@@ -178,7 +178,7 @@ Let $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the conjugation
 
 ## Summary
 
-The ternary product of a sesqualgebra is an operator attached to a pair, $\Theta_{x,y}(z)=\{x,y,z\}=xy^{*}z$, linear in its argument, linear in the first parameter and $\varsigma$-semilinear in the second, so that the pair map is $R$-bilinear on $A\times A^{\varsigma}$. Read in its third slot it is the plain left multiplication by the derived product, $\Theta_{x,y}=T_{x\star y,1}$; read in its middle slot it is the sandwich $S_{x,z}$; read in its first slot it is the plain right multiplication by $y^{*}z$. The pair is visible in the operator only through the derived product, and over a unital sesqualgebra the pairs produce the whole left regular family, an algebra isomorphic to $A$, so the third slot carries no new operator. The operators are closed under the commutator, where $[\Theta_{x,y},\Theta_{u,v}]=T_{[x\star y,u\star v],1}$, hence under the triple commutator, and they are the operator form of the Lie triple system of *Lie Algebras of Sesqualgebras*. The companion of the Lie layer, $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$, is an inner derivation, the difference of a plain left and a plain right multiplication, and the pairs produce the image of the commutator subalgebra under the adjoint map, isomorphic to $[A,A]/([A,A]\cap Z(A))$. The contrast is the content of the article: the Jordan layer produces one-sided operators and the Lie layer produces derivations, and the involution is visible in the pair of the first family and absent from the second. In the commutative degenerate case the diagonal $\Theta_{x,x}$ is the quadratic representation $U_x=2P_x^{2}-P_{x^{2}}$, and the classical form $z\mapsto xzx$ is the middle-slot reading of the same operator.
+The ternary product of a sesqualgebra is an operator attached to a pair, $\Theta_{x,y}(z)=\{x,y,z\}=xy^{*}z$, linear in its argument, linear in the first parameter and $\varsigma$-semilinear in the second, so that the pair map is $R$-bilinear on $A\times A^{\varsigma}$. Read in its third slot it is the plain left multiplication by the derived product, $\Theta_{x,y}=T_{x\star y,1}$; read in its middle slot it is the sandwich $S_{x,z}$; read in its first slot it is the plain right multiplication by $y^{*}z$. The pair is visible in the operator only through the derived product, and over a unital sesqualgebra the pairs produce the whole left regular family, an algebra isomorphic to $A$, so the third slot carries no new operator. The operators are closed under the commutator, where $[\Theta_{x,y},\Theta_{u,v}]=T_{[x\star y,u\star v],1}$, hence under the triple commutator, and they are the operator form of the Lie triple system of *Lie Algebras of Sesqualgebras*. The companion of the Lie layer, $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$, is an inner derivation, the difference of a plain left and a plain right multiplication, and the pairs produce the image of the commutator subalgebra under the adjoint map, isomorphic to $[A,A]/([A,A]\cap Z(A))$. The contrast is the content of the article: the Jordan layer produces one-sided operators and the Lie layer produces derivations, and the involution is visible in the pair of the first family and absent from the second. In the commutative degenerate case the diagonal $\Theta_{x,x}$ is the quadratic representation $\mathrm{Jor}_x=2P_x^{2}-P_{x^{2}}$, and the classical form $z\mapsto xzx$ is the middle-slot reading of the same operator.
 
 ## Summary of Notation
 
@@ -191,7 +191,7 @@ The ternary product of a sesqualgebra is an operator attached to a pair, $\Theta
 | $[\Theta_{x,y},\Theta_{u,v}]=T_{[x\star y,u\star v],1}$ | the operators under the commutator |
 | $\mathrm{ad}_{[x,y]}(z)=[[x,y],z]$ | the Lie companion of the pair, the inner derivation of the pair |
 | $\mathrm{ad}_{[x,y]}=T_{[x,y],1}-T_{1,[x,y]}$ | the Lie companion as a difference of one-sided operators |
-| $U_x=2T_{x,1}^{2}-T_{x^{2},1}=\Theta_{x,x}$ | the quadratic representation in the commutative degenerate case |
+| $\mathrm{Jor}_x=2T_{x,1}^{2}-T_{x^{2},1}=\Theta_{x,x}$ | the quadratic representation in the commutative degenerate case |
 | $\{x,y,z\}$ | the ternary product, owned by *The Sesquilinear Associator and the Ternary Product* |
 
 ## Further Reading

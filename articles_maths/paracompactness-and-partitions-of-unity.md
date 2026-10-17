@@ -13,7 +13,7 @@ The article develops paracompactness, its equivalent formulations, the shrinking
 
 ### Covers and Refinements
 
-**Definition.** Let $X$ be a topological space. A family $\mathcal{U} = (U_s)_{s \in S}$ of subsets of $X$ is a **cover** of $X$ if $\bigcup_s U_s = X$, an **open cover** if every $U_s$ is open, and a **closed cover** if every $U_s$ is closed. A family $\mathcal{V} = (V_t)_{t \in T}$ is a **refinement** of $\mathcal{U}$ if for every $t$ there is $s$ with $V_t \subseteq U_s$; it is an **open refinement** if its members are open. The refinement is **point finite** if every point lies in finitely many members, **locally finite** if every point has a neighbourhood meeting finitely many members, and **σ-locally finite** if it is a countable union of locally finite families.
+**Definition.** Let $X$ be a topological space. A family $\mathcal{U} = (\Omega_s)_{s \in S}$ of subsets of $X$ is a **cover** of $X$ if $\bigcup_s \Omega_s = X$, an **open cover** if every $\Omega_s$ is open, and a **closed cover** if every $\Omega_s$ is closed. A family $\mathcal{V} = (V_t)_{t \in T}$ is a **refinement** of $\mathcal{U}$ if for every $t$ there is $s$ with $V_t \subseteq \Omega_s$; it is an **open refinement** if its members are open. The refinement is **point finite** if every point lies in finitely many members, **locally finite** if every point has a neighbourhood meeting finitely many members, and **σ-locally finite** if it is a countable union of locally finite families.
 
 The definitions of local finiteness and discrete families were given in *Metrisation and Separation Axioms*, where their use in the Nagata–Smirnov theorem was recorded. Three elementary facts about locally finite families are used repeatedly and are stated together.
 
@@ -47,9 +47,9 @@ The definition is stated for the open cover itself and not merely for an arbitra
 
 **Remark.** The regularity hypothesis is not a convenience. Without it the four conditions differ, and the definition of paracompactness is conventionally given by (i), the form that behaves well under the constructions of the next sections.
 
-**Theorem (Dieudonné).** A paracompact Hausdorff space is normal, hence $T_4$, and every paracompact Hausdorff space is collectionwise normal: for every discrete family $(F_s)$ of closed sets there is a discrete family $(U_s)$ of open sets with $F_s \subseteq U_s$.
+**Theorem (Dieudonné).** A paracompact Hausdorff space is normal, hence $T_4$, and every paracompact Hausdorff space is collectionwise normal: for every discrete family $(F_s)$ of closed sets there is a discrete family $(\Omega_s)$ of open sets with $F_s \subseteq \Omega_s$.
 
-**Proof sketch.** Let $F$ and $G$ be disjoint closed sets and let $\mathcal{U}$ be a locally finite open refinement of the open cover $\{X \setminus F, X \setminus G\}$. Write $\mathcal{U} = \mathcal{U}_F \cup \mathcal{U}_G$ according to which member of the cover each set refines, and put $U = \bigcup \{V : V \in \mathcal{U}_F\}$ and $W = \bigcup\{V : V \in \mathcal{U}_G\}$. Local finiteness makes the closures of the sets in $\mathcal{U}_F$ locally finite, so $\overline{U} \subseteq X \setminus G$; symmetrically $\overline{W} \subseteq X \setminus F$. Hence $U \supseteq F$, $W \supseteq G$, and $U \cap W = \emptyset$. Collectionwise normality is the same argument with the discrete family decomposed by a well-ordering and the locally finite cover refined one closed set at a time; it is a theorem of Bing that every metrisable space is collectionwise normal.
+**Proof sketch.** Let $F$ and $G$ be disjoint closed sets and let $\mathcal{U}$ be a locally finite open refinement of the open cover $\{X \setminus F, X \setminus G\}$. Write $\mathcal{U} = \mathcal{U}_F \cup \mathcal{U}_G$ according to which member of the cover each set refines, and put $\Omega = \bigcup \{V : V \in \mathcal{U}_F\}$ and $W = \bigcup\{V : V \in \mathcal{U}_G\}$. Local finiteness makes the closures of the sets in $\mathcal{U}_F$ locally finite, so $\overline{U} \subseteq X \setminus G$; symmetrically $\overline{W} \subseteq X \setminus F$. Hence $\Omega \supseteq F$, $W \supseteq G$, and $\Omega \cap W = \emptyset$. Collectionwise normality is the same argument with the discrete family decomposed by a well-ordering and the locally finite cover refined one closed set at a time; it is a theorem of Bing that every metrisable space is collectionwise normal.
 
 **Corollary.** Every paracompact Hausdorff space is normal, and every regular paracompact space is normal. Every compact Hausdorff space is paracompact, and every Lindelöf regular space is paracompact: a countable subcover is trivially σ-locally finite, and the shrinking of the previous theorem makes it locally finite.
 
@@ -57,19 +57,19 @@ The definition is stated for the open cover itself and not merely for an arbitra
 
 The tool that turns a locally finite cover into a partition of unity is the possibility of shrinking each member of a cover while retaining the covering property.
 
-**Lemma (shrinking lemma).** Let $X$ be normal and let $(U_s)_{s \in S}$ be a point-finite open cover of $X$. Then there is an open cover $(V_s)_{s \in S}$ indexed by the same set with $\overline{V_s} \subseteq U_s$ for every $s$.
+**Lemma (shrinking lemma).** Let $X$ be normal and let $(\Omega_s)_{s \in S}$ be a point-finite open cover of $X$. Then there is an open cover $(V_s)_{s \in S}$ indexed by the same set with $\overline{V_s} \subseteq \Omega_s$ for every $s$.
 
-**Proof.** Well-order $S$. For each $s$ put $B_s = X \setminus \bigcup_{t > s} U_t$, a closed set. One constructs, by transfinite induction on $s$, open sets $V_s$ with
+**Proof.** Well-order $S$. For each $s$ put $B_s = X \setminus \bigcup_{t > s} \Omega_t$, a closed set. One constructs, by transfinite induction on $s$, open sets $V_s$ with
 $$
-\overline{V_s} \subseteq U_s, \qquad B_s \subseteq \bigcup_{t \leq s} V_t .
+\overline{V_s} \subseteq \Omega_s, \qquad B_s \subseteq \bigcup_{t \leq s} V_t .
 $$
 At the successor step $s$, suppose the second condition holds at every $t < s$ and put
 $$
 C = B_s \setminus \bigcup_{t < s} V_t .
 $$
-Then $C$ is closed, and $C \subseteq U_s$: if $x \in C$ and $x \notin U_s$, then by point finiteness the set of indices $r$ with $x \in U_r$ is finite, and since $x \in B_s$ no such index exceeds $s$ and $s$ is not among them, so there is a largest index $t < s$ with $x \in U_t$; the induction hypothesis at $t$ gives $B_t \subseteq \bigcup_{r \leq t} V_r$, and $x \in B_t$ because $x \notin U_r$ for every $r > t$, so $x \in \bigcup_{r \leq t} V_r \subseteq \bigcup_{r<s} V_r$, contradicting $x \in C$. As $C$ and $X \setminus U_s$ are disjoint closed sets, normality supplies an open $V_s$ with $C \subseteq V_s \subseteq \overline{V_s} \subseteq U_s$, which restores the two conditions at $s$. To see that the $V_s$ cover $X$, let $x \in X$; by point finiteness the set of indices $r$ with $x \in U_r$ is finite and nonempty, so it has a largest element $s$, and $x \in B_s$ because no index beyond $s$ carries $x$; the second condition at $s$ then gives $x \in \bigcup_{t \leq s} V_t$. The well-ordering serves only to run the induction, and a Zorn's lemma formulation avoids it.
+Then $C$ is closed, and $C \subseteq \Omega_s$: if $x \in C$ and $x \notin \Omega_s$, then by point finiteness the set of indices $r$ with $x \in \Omega_r$ is finite, and since $x \in B_s$ no such index exceeds $s$ and $s$ is not among them, so there is a largest index $t < s$ with $x \in \Omega_t$; the induction hypothesis at $t$ gives $B_t \subseteq \bigcup_{r \leq t} V_r$, and $x \in B_t$ because $x \notin \Omega_r$ for every $r > t$, so $x \in \bigcup_{r \leq t} V_r \subseteq \bigcup_{r<s} V_r$, contradicting $x \in C$. As $C$ and $X \setminus \Omega_s$ are disjoint closed sets, normality supplies an open $V_s$ with $C \subseteq V_s \subseteq \overline{V_s} \subseteq \Omega_s$, which restores the two conditions at $s$. To see that the $V_s$ cover $X$, let $x \in X$; by point finiteness the set of indices $r$ with $x \in \Omega_r$ is finite and nonempty, so it has a largest element $s$, and $x \in B_s$ because no index beyond $s$ carries $x$; the second condition at $s$ then gives $x \in \bigcup_{t \leq s} V_t$. The well-ordering serves only to run the induction, and a Zorn's lemma formulation avoids it.
 
-**Corollary.** A point-finite open cover of a normal space can be shrunk to a closed cover $(F_s)$ with $F_s \subseteq U_s$; and if the original cover is locally finite, so is the shrunk cover, and the same conclusion holds in every paracompact space.
+**Corollary.** A point-finite open cover of a normal space can be shrunk to a closed cover $(F_s)$ with $F_s \subseteq \Omega_s$; and if the original cover is locally finite, so is the shrunk cover, and the same conclusion holds in every paracompact space.
 
 **Remark.** Point finiteness is what the transfinite induction consumes: it guarantees that at each point the set of indices carrying that point is finite and nonempty, so that it has a largest element, which is what recovers the covering at the end of the argument. For a locally finite cover it is automatic, and the locally finite case is the one the partition of unity needs.
 
@@ -89,7 +89,7 @@ is contained in some member of the cover;
 
 **(iv)** $X$ is normal and every open cover has a locally finite refinement.
 
-**Proof sketch.** (i) $\Rightarrow$ (iv) is Dieudonné's theorem together with the definition. (iv) $\Rightarrow$ (iii): given an open cover $\mathcal{U}$, refine it by a locally finite open cover, shrink it by the shrinking lemma to a closed cover $(F_s)$, and let $\mathcal{V}$ be a locally finite open cover with $V_s \supseteq F_s$ and $\overline{V_s} \subseteq U_s$; then the star of $V_s$ with respect to $\mathcal{V}$ lies in $U_s$, by local finiteness. (iii) $\Rightarrow$ (ii): a star refinement of an open cover is in particular a refinement, and regularity follows from the star condition applied to a cover by a point and its complement. Spaces satisfying (iii) are called **fully normal**, and the equivalence with paracompactness for $T_1$ spaces is Stone's theorem.
+**Proof sketch.** (i) $\Rightarrow$ (iv) is Dieudonné's theorem together with the definition. (iv) $\Rightarrow$ (iii): given an open cover $\mathcal{U}$, refine it by a locally finite open cover, shrink it by the shrinking lemma to a closed cover $(F_s)$, and let $\mathcal{V}$ be a locally finite open cover with $V_s \supseteq F_s$ and $\overline{V_s} \subseteq \Omega_s$; then the star of $V_s$ with respect to $\mathcal{V}$ lies in $\Omega_s$, by local finiteness. (iii) $\Rightarrow$ (ii): a star refinement of an open cover is in particular a refinement, and regularity follows from the star condition applied to a cover by a point and its complement. Spaces satisfying (iii) are called **fully normal**, and the equivalence with paracompactness for $T_1$ spaces is Stone's theorem.
 
 ## Paracompactness and Metrisability
 
@@ -97,11 +97,11 @@ is contained in some member of the cover;
 
 **Theorem (Stone).** Every metrisable space is paracompact. Indeed, every open cover of a metrisable space has a σ-discrete open refinement.
 
-**Proof sketch.** Let $d$ be a metric and $\mathcal{U}$ an open cover. For a nonempty subset $A \subseteq X$ and $\epsilon > 0$ write $U_\epsilon(A) = \{x : d(x, A) < \epsilon\}$. Choose, for each $n \in \mathbb{N}$, a maximal $2^{-n}$-separated subset $S_n$ of $X$, so that the balls $B(x, 2^{-n})$ with $x \in S_n$ cover $X$ and the balls $B(x, 2^{-n-1})$ are pairwise disjoint. For fixed $n$ and $U \in \mathcal{U}$, let
+**Proof sketch.** Let $d$ be a metric and $\mathcal{U}$ an open cover. For a nonempty subset $A \subseteq X$ and $\epsilon > 0$ write $\Omega_\epsilon(A) = \{x : d(x, A) < \epsilon\}$. Choose, for each $n \in \mathbb{N}$, a maximal $2^{-n}$-separated subset $S_n$ of $X$, so that the balls $B(x, 2^{-n})$ with $x \in S_n$ cover $X$ and the balls $B(x, 2^{-n-1})$ are pairwise disjoint. For fixed $n$ and $\Omega \in \mathcal{U}$, let
 $$
-\mathcal{A}_{n,U} = \{\, B(x, 2^{-n}) : x \in S_n,\ x \notin U \,\},
+\mathcal{A}_{n,\Omega} = \{\, B(x, 2^{-n}) : x \in S_n,\ x \notin \Omega \,\},
 $$
-and use the separability of the covers by $S_n$ to assign each such ball to a cover member containing it in a locally finite fashion; the resulting family, taken over all $n$ and all $U$, is a σ-discrete refinement of $\mathcal{U}$. The key point is that the balls of a fixed scale are disjoint, so a point meets at most one member from each $S_n$, which gives σ-discreteness and hence local finiteness.
+and use the separability of the covers by $S_n$ to assign each such ball to a cover member containing it in a locally finite fashion; the resulting family, taken over all $n$ and all $\Omega$, is a σ-discrete refinement of $\mathcal{U}$. The key point is that the balls of a fixed scale are disjoint, so a point meets at most one member from each $S_n$, which gives σ-discreteness and hence local finiteness.
 
 ### The Smirnov Metrisation Theorem
 
@@ -109,7 +109,7 @@ and use the separability of the covers by $S_n$ to assign each such ball to a co
 
 Here **locally metrisable** means that every point has a metrisable neighbourhood.
 
-**Proof sketch.** If $X$ is metrisable, then every subspace is metrisable, so $X$ is locally metrisable, and paracompactness is Stone's theorem. Conversely, by local metrisability and paracompactness choose a locally finite open cover $(U_s)_{s \in S}$ with every $U_s$ metrisable — refine a cover of $X$ by metrisable neighbourhoods, then refine the result to a locally finite open cover. Each $U_s$ is metrisable, so by the necessary direction of the Nagata–Smirnov theorem it has a σ-locally finite base $\mathcal{B}_s$; write $\mathcal{B}_s = \bigcup_n \mathcal{B}_{s,n}$ with each $\mathcal{B}_{s,n}$ locally finite in $U_s$. The union $\mathcal{B} = \bigcup_n \bigcup_s \mathcal{B}_{s,n}$ is a base of $X$: for $x$ and an open neighbourhood $W$ of $x$, one of the $U_s$ contains $x$, and a member of $\mathcal{B}_s$ lies between $x$ and $W \cap U_s$. It is σ-locally finite: for fixed $n$, the family $\bigcup_s \mathcal{B}_{s,n}$ is locally finite at $x$, because $x$ lies in finitely many $U_s$ and in each of those a neighbourhood meets finitely many members of $\mathcal{B}_{s,n}$. Thus $X$ is regular with a σ-locally finite base, and the Nagata–Smirnov theorem of the previous article makes it metrisable. This is the argument of Smirnov, in the form in which it reduces to Nagata–Smirnov.
+**Proof sketch.** If $X$ is metrisable, then every subspace is metrisable, so $X$ is locally metrisable, and paracompactness is Stone's theorem. Conversely, by local metrisability and paracompactness choose a locally finite open cover $(\Omega_s)_{s \in S}$ with every $\Omega_s$ metrisable — refine a cover of $X$ by metrisable neighbourhoods, then refine the result to a locally finite open cover. Each $\Omega_s$ is metrisable, so by the necessary direction of the Nagata–Smirnov theorem it has a σ-locally finite base $\mathcal{B}_s$; write $\mathcal{B}_s = \bigcup_n \mathcal{B}_{s,n}$ with each $\mathcal{B}_{s,n}$ locally finite in $\Omega_s$. The union $\mathcal{B} = \bigcup_n \bigcup_s \mathcal{B}_{s,n}$ is a base of $X$: for $x$ and an open neighbourhood $W$ of $x$, one of the $\Omega_s$ contains $x$, and a member of $\mathcal{B}_s$ lies between $x$ and $W \cap \Omega_s$. It is σ-locally finite: for fixed $n$, the family $\bigcup_s \mathcal{B}_{s,n}$ is locally finite at $x$, because $x$ lies in finitely many $\Omega_s$ and in each of those a neighbourhood meets finitely many members of $\mathcal{B}_{s,n}$. Thus $X$ is regular with a σ-locally finite base, and the Nagata–Smirnov theorem of the previous article makes it metrisable. This is the argument of Smirnov, in the form in which it reduces to Nagata–Smirnov.
 
 **Corollary.** A paracompact space with a σ-locally finite base is metrisable, since σ-local finiteness of the base supplies local metrisability. This is the Nagata–Smirnov theorem of the previous article, recovered here as a corollary of Smirnov's theorem.
 
@@ -127,11 +127,11 @@ Here **locally metrisable** means that every point has a metrisable neighbourhoo
 
 ### Definitions
 
-**Definition.** Let $X$ be a topological space and let $\mathcal{U} = (U_s)_{s \in S}$ be an open cover. A family $(\varphi_s)_{s \in S}$ of continuous functions $\varphi_s : X \to [0,1]$ is a **partition of unity subordinate to** $\mathcal{U}$ if
+**Definition.** Let $X$ be a topological space and let $\mathcal{U} = (\Omega_s)_{s \in S}$ be an open cover. A family $(\varphi_s)_{s \in S}$ of continuous functions $\varphi_s : X \to [0,1]$ is a **partition of unity subordinate to** $\mathcal{U}$ if
 
 **(P1)** the family of supports $\operatorname{supp} \varphi_s = \overline{\{x : \varphi_s(x) \neq 0\}}$ is locally finite;
 
-**(P2)** $\operatorname{supp} \varphi_s \subseteq U_s$ for every $s$;
+**(P2)** $\operatorname{supp} \varphi_s \subseteq \Omega_s$ for every $s$;
 
 **(P3)** $\sum_s \varphi_s(x) = 1$ for every $x \in X$.
 
@@ -139,17 +139,17 @@ The sum in (P3) is a finite sum at each point by (P1), and it is a continuous fu
 
 **Lemma.** Let $(\varphi_s)_{s \in S}$ be a partition of unity on $X$ subordinate to the open cover $\mathcal{U}$. Then the family of open sets $W_s = \varphi_s^{-1}(0,1]$ is a locally finite open refinement of $\mathcal{U}$.
 
-**Proof.** Each $W_s$ is open as the preimage of an open set under a continuous map, and $W_s \subseteq \operatorname{supp}\varphi_s \subseteq U_s$. The family is locally finite because $\operatorname{supp} \varphi_s$ is and $W_s \subseteq \operatorname{supp} \varphi_s$. It covers $X$, since at each point the sum of the $\varphi_s$ is $1$, so some $\varphi_s$ is positive.
+**Proof.** Each $W_s$ is open as the preimage of an open set under a continuous map, and $W_s \subseteq \operatorname{supp}\varphi_s \subseteq \Omega_s$. The family is locally finite because $\operatorname{supp} \varphi_s$ is and $W_s \subseteq \operatorname{supp} \varphi_s$. It covers $X$, since at each point the sum of the $\varphi_s$ is $1$, so some $\varphi_s$ is positive.
 
 ### Existence
 
 **Theorem.** A Hausdorff space $X$ is paracompact if and only if every open cover of $X$ admits a partition of unity subordinate to it.
 
-**Proof.** Suppose $\mathcal{U}$ is an open cover of the paracompact Hausdorff space $X$. Refine it to a locally finite open cover $\mathcal{W} = (W_t)_{t \in T}$, and choose $s(t)$ with $W_t \subseteq U_{s(t)}$. By the shrinking lemma applied to the normal space $X$ — paracompact Hausdorff is normal by Dieudonné's theorem — the cover $\mathcal{W}$ can be shrunk to a locally finite open cover $\mathcal{V} = (V_t)$ with $\overline{V_t} \subseteq W_t$, and then to a closed cover $(F_t)$ with $F_t \subseteq V_t$. For each $t$, Urysohn's lemma applied to the disjoint closed sets $F_t$ and $X \setminus V_t$ in the normal space $X$ produces a continuous $\psi_t : X \to [0,1]$ with $\psi_t = 1$ on $F_t$ and $\psi_t = 0$ outside $V_t$, so that $\operatorname{supp}\psi_t \subseteq \overline{V_t} \subseteq W_t \subseteq U_{s(t)}$. The family $(\psi_t)$ is locally finite, since each support lies in the corresponding member of the locally finite cover $\mathcal{W}$; and at every point some $\psi_t$ is positive, because the $F_t$ cover $X$. Hence
+**Proof.** Suppose $\mathcal{U}$ is an open cover of the paracompact Hausdorff space $X$. Refine it to a locally finite open cover $\mathcal{W} = (W_t)_{t \in T}$, and choose $s(t)$ with $W_t \subseteq \Omega_{s(t)}$. By the shrinking lemma applied to the normal space $X$ — paracompact Hausdorff is normal by Dieudonné's theorem — the cover $\mathcal{W}$ can be shrunk to a locally finite open cover $\mathcal{V} = (V_t)$ with $\overline{V_t} \subseteq W_t$, and then to a closed cover $(F_t)$ with $F_t \subseteq V_t$. For each $t$, Urysohn's lemma applied to the disjoint closed sets $F_t$ and $X \setminus V_t$ in the normal space $X$ produces a continuous $\psi_t : X \to [0,1]$ with $\psi_t = 1$ on $F_t$ and $\psi_t = 0$ outside $V_t$, so that $\operatorname{supp}\psi_t \subseteq \overline{V_t} \subseteq W_t \subseteq \Omega_{s(t)}$. The family $(\psi_t)$ is locally finite, since each support lies in the corresponding member of the locally finite cover $\mathcal{W}$; and at every point some $\psi_t$ is positive, because the $F_t$ cover $X$. Hence
 $$
 \psi = \sum_t \psi_t
 $$
-is a continuous strictly positive function. Define $\varphi_t = \psi_t / \psi$; the family $(\varphi_t)$ is a locally finite partition of unity with $\operatorname{supp}\varphi_t \subseteq U_{s(t)}$. To obtain a partition indexed by $S$ and subordinate to $\mathcal{U}$, put $\varphi_s = \sum_{t : s(t) = s} \varphi_t$, a locally finite sum. Conversely, if every open cover admits a subordinate partition of unity, the lemma produces a locally finite open refinement of the cover, so $X$ is paracompact.
+is a continuous strictly positive function. Define $\varphi_t = \psi_t / \psi$; the family $(\varphi_t)$ is a locally finite partition of unity with $\operatorname{supp}\varphi_t \subseteq \Omega_{s(t)}$. To obtain a partition indexed by $S$ and subordinate to $\mathcal{U}$, put $\varphi_s = \sum_{t : s(t) = s} \varphi_t$, a locally finite sum. Conversely, if every open cover admits a subordinate partition of unity, the lemma produces a locally finite open refinement of the cover, so $X$ is paracompact.
 
 **Corollary.** In a paracompact Hausdorff space every open cover has a locally finite partition of unity subordinate to it, and the family of supports of such a partition is a locally finite closed refinement of the cover.
 
@@ -157,13 +157,13 @@ is a continuous strictly positive function. Define $\varphi_t = \psi_t / \psi$; 
 
 ### Gluing with Partitions of Unity
 
-**Theorem (gluing lemma).** Let $\mathcal{U} = (U_s)$ be an open cover of a paracompact Hausdorff space $X$ and let $f_s : U_s \to \mathbb{R}$ be continuous. If the functions agree on the overlaps, that is $f_s = f_t$ on $U_s \cap U_t$ for all $s, t$, then there is a unique continuous $f : X \to \mathbb{R}$ with $f|_{U_s} = f_s$.
+**Theorem (gluing lemma).** Let $\mathcal{U} = (\Omega_s)$ be an open cover of a paracompact Hausdorff space $X$ and let $f_s : \Omega_s \to \mathbb{R}$ be continuous. If the functions agree on the overlaps, that is $f_s = f_t$ on $\Omega_s \cap \Omega_t$ for all $s, t$, then there is a unique continuous $f : X \to \mathbb{R}$ with $f|_{\Omega_s} = f_s$.
 
-**Proof.** Uniqueness is clear, since the $U_s$ cover. For existence, let $(\varphi_s)$ be a partition of unity subordinate to the cover and define the $s$-th term $g_s$ on $X$ by $g_s(x) = \varphi_s(x) f_s(x)$ for $x \in U_s$ and $g_s(x) = 0$ otherwise. Each $g_s$ is continuous: at a point outside $\operatorname{supp}\varphi_s$ the function $\varphi_s$ vanishes identically on a neighbourhood, and at a point of $U_s$ the function $g_s$ is a product of continuous functions, the factor $f_s$ being bounded near the point and the factor $\varphi_s$ tending to $0$ where $\varphi_s$ does. Since $\operatorname{supp}\varphi_s \subseteq U_s$, the value $f_s(x)$ is defined wherever $g_s(x) \neq 0$, so the definition is consistent. Put
+**Proof.** Uniqueness is clear, since the $\Omega_s$ cover. For existence, let $(\varphi_s)$ be a partition of unity subordinate to the cover and define the $s$-th term $g_s$ on $X$ by $g_s(x) = \varphi_s(x) f_s(x)$ for $x \in \Omega_s$ and $g_s(x) = 0$ otherwise. Each $g_s$ is continuous: at a point outside $\operatorname{supp}\varphi_s$ the function $\varphi_s$ vanishes identically on a neighbourhood, and at a point of $\Omega_s$ the function $g_s$ is a product of continuous functions, the factor $f_s$ being bounded near the point and the factor $\varphi_s$ tending to $0$ where $\varphi_s$ does. Since $\operatorname{supp}\varphi_s \subseteq \Omega_s$, the value $f_s(x)$ is defined wherever $g_s(x) \neq 0$, so the definition is consistent. Put
 $$
 f(x) = \sum_s g_s(x) = \sum_s \varphi_s(x) \, f_s(x).
 $$
-The sum is finite at each point and locally finite as a family, so $f$ is continuous, and on $U_s$ the value is $\sum_t \varphi_t(x) f_t(x) = f_s(x)$, because the terms with $\varphi_t(x) \neq 0$ have $f_t(x) = f_s(x)$ by the agreement on overlaps and the weights sum to $1$.
+The sum is finite at each point and locally finite as a family, so $f$ is continuous, and on $\Omega_s$ the value is $\sum_t \varphi_t(x) f_t(x) = f_s(x)$, because the terms with $\varphi_t(x) \neq 0$ have $f_t(x) = f_s(x)$ by the agreement on overlaps and the weights sum to $1$.
 
 **Corollary (local-to-global for functions).** A continuous real-valued function defined on a neighbourhood of each point of a paracompact Hausdorff space, with agreement on overlaps, extends to the whole space. The statement is the reason partitions of unity are the standard gluing device: the data are local, the assembled function is global, and no compatibility beyond agreement on overlaps is needed.
 
@@ -183,17 +183,17 @@ The star refinement of the previous section is a combinatorial condition on cove
 
 **Theorem.** For a $T_1$ space $X$, the following are equivalent: $X$ is paracompact Hausdorff; every open cover of $X$ has an open star refinement; every open cover of $X$ has an open barycentric refinement.
 
-**Proof sketch.** A star refinement is a barycentric refinement, and a barycentric refinement $\mathcal{V}$ of $\mathcal{U}$ can be improved to a star refinement by passing to the cover by the sets $\operatorname{st}(V, \mathcal{V})$, so the last two conditions are equivalent. A paracompact Hausdorff space has open star refinements by the shrinking argument of the characterisation theorem above. Conversely, an open star refinement of a cover is a refinement of it, and the star condition applied to the cover $\{X \setminus F, U\}$ for a closed set $F$ and an open set $U \supseteq F$ gives regularity; a barycentric refinement argument then produces a locally finite refinement, hence paracompactness.
+**Proof sketch.** A star refinement is a barycentric refinement, and a barycentric refinement $\mathcal{V}$ of $\mathcal{U}$ can be improved to a star refinement by passing to the cover by the sets $\operatorname{st}(V, \mathcal{V})$, so the last two conditions are equivalent. A paracompact Hausdorff space has open star refinements by the shrinking argument of the characterisation theorem above. Conversely, an open star refinement of a cover is a refinement of it, and the star condition applied to the cover $\{X \setminus F, \Omega\}$ for a closed set $F$ and an open set $\Omega \supseteq F$ gives regularity; a barycentric refinement argument then produces a locally finite refinement, hence paracompactness.
 
 **Remark.** The notion of a star refinement is the point at which the theory of paracompactness meets the theory of uniform spaces. In the covering formulation, a uniformity on $X$ is a family of covers closed under refinement and under star refinement, and the decisive theorem of Stone is that a Hausdorff space $X$ is paracompact if and only if its open covers form a base for a compatible uniformity — equivalently, if and only if every open cover has an open star refinement. The metric and uniform notions themselves, and the completion of a uniform space, belong to *Metric, Uniform and Complete Spaces*; the present article uses only the covering form, and the nerve construction below is what makes the covering form computable.
 
 ### The Nerve of a Cover
 
-**Definition.** Let $\mathcal{U} = (U_s)_{s \in S}$ be a locally finite open cover of a normal space. The **nerve** of $\mathcal{U}$ is the abstract simplicial complex $N(\mathcal{U})$ whose vertices are the indices $s$ and whose simplices are the finite sets of indices with nonempty intersection. The **barycentric cover** of $\mathcal{U}$ is the cover, indexed by the simplices of the nerve, whose member over a simplex $\sigma$ is $\bigcap_{s \in \sigma} U_s$.
+**Definition.** Let $\mathcal{U} = (\Omega_s)_{s \in S}$ be a locally finite open cover of a normal space. The **nerve** of $\mathcal{U}$ is the abstract simplicial complex $N(\mathcal{U})$ whose vertices are the indices $s$ and whose simplices are the finite sets of indices with nonempty intersection. The **barycentric cover** of $\mathcal{U}$ is the cover, indexed by the simplices of the nerve, whose member over a simplex $\sigma$ is $\bigcap_{s \in \sigma} \Omega_s$.
 
 **Proposition.** The barycentric cover of a locally finite open cover of a normal space is an open cover refining it; and the nerve of a cover is a locally finite simplicial complex exactly when every member of the cover meets only finitely many of the other members, a condition on the cover that is stronger than local finiteness.
 
-**Proof.** A point $x$ belongs to $\bigcap_{s \in \sigma} U_s$ for the finite set $\sigma$ of indices with $x \in U_s$, so the barycentric sets cover; each is contained in every $U_s$ with $s \in \sigma$, so the cover refines. The nerve is locally finite exactly when every vertex lies in finitely many simplices, and a vertex $s$ lies in a simplex $\sigma$ exactly when $U_s$ meets $\bigcap_{t \in \sigma \setminus \{s\}} U_t$, so local finiteness of the nerve says that $U_s$ meets only finitely many of the other members. This is stronger than the local finiteness of the cover: the cover consisting of the whole space $X$ together with a locally finite family of proper subsets is locally finite, and its nerve has a vertex lying in every simplex the family determines.
+**Proof.** A point $x$ belongs to $\bigcap_{s \in \sigma} \Omega_s$ for the finite set $\sigma$ of indices with $x \in \Omega_s$, so the barycentric sets cover; each is contained in every $\Omega_s$ with $s \in \sigma$, so the cover refines. The nerve is locally finite exactly when every vertex lies in finitely many simplices, and a vertex $s$ lies in a simplex $\sigma$ exactly when $\Omega_s$ meets $\bigcap_{t \in \sigma \setminus \{s\}} \Omega_t$, so local finiteness of the nerve says that $\Omega_s$ meets only finitely many of the other members. This is stronger than the local finiteness of the cover: the cover consisting of the whole space $X$ together with a locally finite family of proper subsets is locally finite, and its nerve has a vertex lying in every simplex the family determines.
 
 **Remark.** The nerve is the combinatorial skeleton of the cover, and the assignment of a point of $X$ to the simplex of the indices whose sets contain it is the **nerve map**. For a locally finite cover of a paracompact Hausdorff space, the nerve map is continuous when the nerve is given the weak topology and the point is sent to the barycentric coordinate vector; this is the construction behind the homotopy-theoretic classification of covers, and it belongs, where the simplicial and singular theories make it precise. The present article records only the covering statement, since the topological realization of the nerve is a construction of that category.
 
@@ -235,7 +235,7 @@ A **partition of unity** subordinate to an open cover is a locally finite family
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{U} = (U_s)_{s \in S}$ | An open cover of a space $X$ |
+| $\mathcal{U} = (\Omega_s)_{s \in S}$ | An open cover of a space $X$ |
 | Refinement | A family each of whose members lies in a member of $\mathcal{U}$ |
 | point finite, locally finite, σ-locally finite, discrete | Finiteness conditions on a family of sets |
 | paracompact | Every open cover has a locally finite open refinement |
@@ -251,7 +251,7 @@ A **partition of unity** subordinate to an open cover is a locally finite family
 | $L$, $[0,\omega_1)$, $[0,\omega_1]$ | Long line and ordinal spaces |
 | $\beta\mathbb{N}$ | Stone space of ultrafilters on $\mathbb{N}$ |
 | $\mathcal{W}, \mathcal{V}, (F_t)$ | Locally finite open refinement, its shrinking, and the closed cover inside it |
-| $d_s$, $U_s$ | Local metrics and metrisable open sets in Smirnov's theorem |
+| $d_s$, $\Omega_s$ | Local metrics and metrisable open sets in Smirnov's theorem |
 
 
 

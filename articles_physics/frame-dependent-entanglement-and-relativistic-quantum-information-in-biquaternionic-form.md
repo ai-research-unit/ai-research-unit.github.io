@@ -14,7 +14,7 @@ The findings are stated in advance.
 4. **The symmetric two-branch case is a dephasing channel.** When the momentum branches are symmetric about the boost axis, the two Wigner rotations are rotations about a common axis by opposite angles, and their average is the dephasing of the spin about that axis: the Bloch component along the Wigner axis is preserved and the transverse components are damped by $\cos\alpha$, where $\alpha$ is the Wigner angle.
 5. **The $SL(2,\mathbb{C})$-invariant concurrence is a spinor concurrence.** In the spinor description, $\tilde{\Lambda}\otimes\tilde{\Lambda}$ acts with unit determinant on each factor and leaves the symplectic concurrence $|\psi^{\mathsf T}(\epsilon\otimes\epsilon)\psi|$ exactly invariant; the frame dependence appears only after normalization, i.e. only for configurations with momentum spread, which is the algebraic statement that the effect is kinematic rather than dynamical.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, Hermitian sector $\mathbb{M}_+$, anti-Hermitian sector $\mathbb{M}_-$, and the matrix model $\Phi$. The two-qubit space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. The Wigner rotation of the relativistic-qubit companion is $\tilde{W}(\tilde{\Lambda},\tilde{V}) = \tilde{\Lambda}_{\tilde{V}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{V}}^{-1}\in SU(2)$, acting on a spin state by conjugation.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the little group, the Wigner rotation, and the distinction between the spinor action and the spin-state rotation.
@@ -38,11 +38,11 @@ $$
 $$
 extended linearly. On the singlet,
 $$
-\tilde\Pi_{\mathrm{singlet}} = \tfrac14\bigl(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\bigr),
+\tilde\Pi_{\mathrm{singlet}} = \tfrac14\bigl(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\bigr),
 $$
 the partial trace kills the traceless tensor terms and returns the maximally mixed state,
 $$
-\mathrm{Tr}_2\bigl(\tilde\Pi_{\mathrm{singlet}}\bigr) = \tfrac12 e_0 ,
+\mathrm{Tr}_2\bigl(\tilde\Pi_{\mathrm{singlet}}\bigr) = \tfrac12 e_t ,
 $$
 whose von Neumann entropy is $\log 2$: the mixedness of the reduced state is the algebraic residue of the entanglement of the joint state.
 
@@ -91,13 +91,13 @@ The theorem is worth stating because it is the exact sense in which the framewor
 
 ### A worked sharp-momentum instance
 
-The theorem is easily checked in an instance that also supplies the Wigner rotor used below. Let particle $A$ have speed $0.5c$ and momentum making angle $\theta = 0.8$ with the boost axis $\vec u_z$, and let particle $B$ have momentum along $\vec u_z$, so that $\tilde{W}_B = e_0$. For a boost of rapidity $\psi = 1$ the Wigner rotor of $A$ is
+The theorem is easily checked in an instance that also supplies the Wigner rotor used below. Let particle $A$ have speed $0.5c$ and momentum making angle $\theta = 0.8$ with the boost axis $\vec u_z$, and let particle $B$ have momentum along $\vec u_z$, so that $\tilde{W}_B = e_t$. For a boost of rapidity $\psi = 1$ the Wigner rotor of $A$ is
 $$
-\tilde{W}_A = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\vec u_y
-= 0.995308\,e_0 + 0.096756\,\vec u_y,
+\tilde{W}_A = \cos\frac{\alpha}{2}\,e_t + \sin\frac{\alpha}{2}\,\vec u_y
+= 0.995308\,e_t + 0.096756\,\vec u_y,
 \qquad \alpha = 0.193815\ \text{rad} = 11.1048^\circ ,
 $$
-a rotation about $\vec u_y\propto\vec u_z\times\vec u_{\mathrm b}$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_0$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
+a rotation about $\vec u_y\propto\vec u_z\times\vec u_{\mathrm b}$, as the geometry requires. Starting from $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, the spin state is rotated by $\tilde{W}_A\otimes e_t$ and its concurrence is $1.00000000$; the reduced state of $A$ is the maximally mixed state carried to a rotated maximally mixed state, hence unchanged, and the reduced entropy remains $\log 2$. This is the theorem in one instance: at sharp momentum the boost is a local unitary and every entanglement measure is invariant.
 
 ## Momentum Superposition and the Frame Dependence
 
@@ -126,9 +126,9 @@ First, the channel is unitary — hence entanglement-preserving — if and only 
 
 ### The symmetric two-branch case: a dephasing channel
 
-The simplest instance is sharp enough to be worked in closed form. Let particle $A$ have a momentum in a symmetric superposition of two directions making angles $\pm\theta$ with the boost axis in a common plane, and let particle $B$ have a sharp momentum parallel to the boost axis, so that $\tilde{W}_B = e_0$ and the boost acts on $A$ alone. By the symmetry, the two branch rotations are
+The simplest instance is sharp enough to be worked in closed form. Let particle $A$ have a momentum in a symmetric superposition of two directions making angles $\pm\theta$ with the boost axis in a common plane, and let particle $B$ have a sharp momentum parallel to the boost axis, so that $\tilde{W}_B = e_t$ and the boost acts on $A$ alone. By the symmetry, the two branch rotations are
 $$
-\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_0 \pm \sin\frac{\alpha}{2}\,\vec u_{\mathrm r},
+\tilde{W}_{A,\pm} = \cos\frac{\alpha}{2}\,e_t \pm \sin\frac{\alpha}{2}\,\vec u_{\mathrm r},
 \qquad \alpha = \alpha(\psi,\theta),
 $$
 rotations about a common axis $\vec u_{\mathrm r}$ by opposite angles, and the channel is
@@ -174,7 +174,7 @@ The comparison of the two tables isolates the origin of the effect: what matters
 
 The channel of the previous subsection is **unital**: each branch rotates the identity into the identity,
 $$
-\sum_i w_i\,\tilde{W}_i\,e_0\,\tilde{W}_i^{*} = \sum_i w_i\,e_0 = e_0 ,
+\sum_i w_i\,\tilde{W}_i\,e_t\,\tilde{W}_i^{*} = \sum_i w_i\,e_t = e_t ,
 $$
 because every Wigner rotor is unitary. The maximally mixed spin state is therefore fixed, and the fully mixed state is a fixed point of every frame transformation. A consequence is worth recording: for the state $|\chi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$ the marginal of each particle is maximally mixed, and it remains maximally mixed under the boost, so the entire frame dependence of the concurrence is invisible in the single-particle marginals. The effect is a change in the *correlations* of the pair, not in the statistics of either particle alone. This is also why the boost cannot be used to signal: the marginal of the un-boosted particle is untouched, by the cyclicity of the partial trace, and the change in the joint state is only visible to an observer who has access to both particles and knows the momentum distribution.
 
@@ -202,7 +202,7 @@ The channel above is controlled by one number per branch, the Wigner angle, and 
 
 **Definition.** An element of $SU(2)$ is a unit real quaternion, and every such element is a rotation,
 $$
-\tilde{W} = \cos\frac{\alpha}{2}\,e_0 + \sin\frac{\alpha}{2}\,\vec u_{\mathrm r}, \qquad |\vec u_{\mathrm r}| = 1 ,
+\tilde{W} = \cos\frac{\alpha}{2}\,e_t + \sin\frac{\alpha}{2}\,\vec u_{\mathrm r}, \qquad |\vec u_{\mathrm r}| = 1 ,
 $$
 with $\alpha$ the **Wigner angle** and $\vec u_{\mathrm r}$ the rotation axis. For a boost of rapidity $\psi$ along $\vec u_z$ and a particle of rapidity $\chi$ along a direction making angle $\theta$ with the boost axis, the axis is perpendicular to both,
 $$
@@ -210,7 +210,7 @@ $$
 $$
 and the angle depends on $\theta$ in a way that the following checks determine.
 
-**Vanishing at the endpoints.** At $\theta = 0$ and $\theta = \pi$ the momentum is collinear with the boost, the two boosts are along one line and commute, and the Wigner rotation is the identity. This is verified directly: the rotor is $e_0$ up to the $10^{-6}$ of floating-point arithmetic at both endpoints.
+**Vanishing at the endpoints.** At $\theta = 0$ and $\theta = \pi$ the momentum is collinear with the boost, the two boosts are along one line and commute, and the Wigner rotation is the identity. This is verified directly: the rotor is $e_t$ up to the $10^{-6}$ of floating-point arithmetic at both endpoints.
 
 **Exact at perpendicular momentum.** For $\theta = \pi/2$ the angle is given exactly by
 $$
@@ -262,7 +262,7 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 |---|---|
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra |
 | $\mathrm{Tr}_2$ | Partial trace over the second factor |
-| $\tilde\Pi_{\mathrm{singlet}} = \tfrac14\sum_{k=0}^{3}e_k\otimes e_k$ | Singlet idempotent |
+| $\tilde\Pi_{\mathrm{singlet}} = \tfrac14\sum_{k\in\{t,x,y,z\}}\vec e_k\otimes \vec e_k$ | Singlet idempotent |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $C(|\Psi\rangle) = \|\langle\Psi|\tilde{\Psi}|\Psi^{*}\rangle\|$ | Concurrence, $\tilde{\Psi}=(i\sigma_2)\otimes(i\sigma_2)$ |
 | $E = S(\mathrm{Tr}_2\tilde\Pi)$ | Entanglement entropy of a pure state |

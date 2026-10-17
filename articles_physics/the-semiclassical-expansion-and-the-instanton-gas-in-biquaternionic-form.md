@@ -16,7 +16,7 @@ $$
 S=\frac{1}{2g^2}\int\mathrm{Tr}\bigl(F_{\mu\nu}F^{\mu\nu}\bigr)\ge\frac{8\pi^2}{g^2}|Ϙ| ,
 $$
 
-with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
+with equality for self-dual or anti-self-dual fields. The Lorentzian signature appears only where the continuation is discussed, and there $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$ is the series d'Alembertian. As throughout the corpus, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
 
 
 
@@ -98,7 +98,7 @@ Z(\theta) \;=\; \sum_{Ϙ\in\mathbb Z} \exp(iϘ\theta)\,Z_Ϙ ,
 $$
 
 
-the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta\rangle=-i\partial_\theta|\theta\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta\rangle$ superposition is the unique one that is, up to the standard subtleties.
+the sign in the ket being the one for which the topological charge operator acts as $Ϙ^{\mathrm{fop}}|\theta\rangle=-i\partial/\partial\theta|\theta\rangle$; and the sum is the Fourier transform of the charge distribution. The construction is exactly the one that makes the partition function depend on the topological angle and preserves the cluster decomposition: a definite-$Ϙ$ superposition is not clustered, while the $|\theta\rangle$ superposition is the unique one that is, up to the standard subtleties.
 
 The theta dependence enters through the combination
 
@@ -193,7 +193,7 @@ when the flavours are massive, and vanishes when any flavour is massless. The re
 
 The framework's role in the semiclassical expansion is the supply of the saddle and its moduli, and it is worth stating precisely what that amounts to.
 
-- **The saddle is the framework's.** The self-dual connection is the BPST instanton built in $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}\subset\mathbb M_-$, and its action is fixed by the Bogomolny bound. The instanton is an object of the algebra's non-abelian factor and not of the abelian centre: the companion article *Instantons and Solitons in Biquaternionic Form* showed that a smooth abelian configuration of finite action has $Ϙ=0$ on $\mathbb R^4$, so the semiclassical expansion of the Maxwell sector has no instanton saddle at all.
+- **The saddle is the framework's.** The self-dual connection is the BPST instanton built in $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb M_-$, and its action is fixed by the Bogomolny bound. The instanton is an object of the algebra's non-abelian factor and not of the abelian centre: the companion article *Instantons and Solitons in Biquaternionic Form* showed that a smooth abelian configuration of finite action has $Ϙ=0$ on $\mathbb R^4$, so the semiclassical expansion of the Maxwell sector has no instanton saddle at all.
 - **The density is the framework's in the abelian case and the matrix trace otherwise.** The theta term's integrand is the topological density. In the abelian sector it is proportional to the invariant $I_2=\vec E\cdot\vec B$; in the non-abelian sector it is $\mathrm{Tr}(F\wedge F)$ with the matrix trace, which the rank-two, single-slot biquaternion norm does not supply. The semiclassical sum over sectors is therefore written in components rather than in the biquaternion-norm invariant calculus.
 - **The moduli are the framework's.** The collective-coordinate measure integrates over the ADHM moduli space, whose dimension $8k$ and physical dimension $8k-3$ come from the quaternionic quotient of *The ADHM Construction and Biquaternion Instanton Data*. The five collective coordinates of the charge-one saddle are the quaternionic datum $\rho$ together with the translations of the quaternionic coordinate.
 - **The dynamics is imported.** The measure, the Faddeev–Popov procedure, the one-loop determinants, the beta function and the numerical prefactors are quantum field theory. The algebra is a complexified classical structure; it contains no $\hbar$, no running coupling and no action principle of its own. The semiclassical expansion is thus a physical use of the framework's topology that the framework itself cannot validate; it is validated by the standard quantum field theory of the companion quantisation articles.
@@ -215,7 +215,7 @@ The dilute instanton gas exponentiates the one-instanton weight into a pressure 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
-| $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{e_1,e_2,e_3\}$ | Compact factor; home of the instanton |
+| $\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact factor; home of the instanton |
 | $\mathcal A_\mu$, $F_{\mu\nu}$ | Gauge connection and curvature |
 | $Ϙ=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological charge |
 | $S=\frac{1}{2g^2}\int\mathrm{Tr}(F_{\mu\nu}F^{\mu\nu})$ | Euclidean action |

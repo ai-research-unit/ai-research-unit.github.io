@@ -82,7 +82,7 @@ so the one-parameter groups of symmetries are the exponentials of the skew-adjoi
 **Proposition.** The operator involution is an involutive anti-automorphism of the algebra $\operatorname{End}(V)$, it makes the algebra a `*`-algebra, and its interaction with a subalgebra is what the unitary group of the form is defined by:
 
 $$
-U(V,h) = \{T : T^{*}T = \operatorname{id}\} = \{T : T^{*} = T^{-1}\}.
+\mathrm{U}(V,h) = \{T : T^{*}T = \operatorname{id}\} = \{T : T^{*} = T^{-1}\}.
 $$
 
 **Proof.** The anti-automorphism and the involution are the proposition of the previous section; the characterisation of the unitary group is the definition.
@@ -115,7 +115,7 @@ because $\rho(\sigma(g)) = \rho(g)^{-1}$ is equivalent to $\rho(g)\rho(\sigma(g)
 
 **Example (the orthogonal group).** Let $h = Q$ be a quadratic form of signature $(n,m)$ and $G = O(n,m)$; the adjoint is $T^{*} = J^{-1}T^{\mathrm{tr}}J$, the symmetry operators satisfy $g^{*} = g^{-1}$, and the operator involution is the transpose-adjoint of *The Orthogonal Group and the Involutive Automorphism*. The Cartan involution $\theta(g) = JgJ^{-1}$ of the elements is **not** the adjoint in general: for the defining representation, $\theta(g)$ is the identity on the block-diagonal $K$ and $-1$ on $\mathfrak{n}$, while $g^{*} = g^{-1}$; the two coincide only for the elements with $JgJ^{-1} = g^{-1}$, which is a proper subset unless the group is abelian.
 
-**Example (the unitary group).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = U(n,m)$; the adjoint is the conjugate transpose $T^{*} = J^{-1}T^{\dagger}J$, and the symmetry operators satisfy $g^{*} = g^{-1}$. The Cartan involution $\theta(g) = JgJ^{-1}$ of the elements does **not** satisfy $\rho(\theta(g)) = \rho(g)^{*}$ in the defining representation: the condition is $JgJ^{-1} = g^{-1}$, which holds only for the elements of order two that commute with $J$, and it fails for a rotation of the definite part through an angle other than $0$ or $\pi$. The defining representation of a nonabelian unitary group is therefore not a `*`-representation for the Cartan involution, which is the generic behaviour of the theorem.
+**Example (the unitary group).** Let $h$ be a Hermitian form of signature $(n,m)$ and $G = \mathrm{U}(n,m)$; the adjoint is the conjugate transpose $T^{*} = J^{-1}T^{\dagger}J$, and the symmetry operators satisfy $g^{*} = g^{-1}$. The Cartan involution $\theta(g) = JgJ^{-1}$ of the elements does **not** satisfy $\rho(\theta(g)) = \rho(g)^{*}$ in the defining representation: the condition is $JgJ^{-1} = g^{-1}$, which holds only for the elements of order two that commute with $J$, and it fails for a rotation of the definite part through an angle other than $0$ or $\pi$. The defining representation of a nonabelian unitary group is therefore not a `*`-representation for the Cartan involution, which is the generic behaviour of the theorem.
 
 **Example (the symmetric group of a figure).** Let $F$ be a figure in a Euclidean space and $G = \operatorname{Sym}(F)$ its symmetry group, a subgroup of $O(n)$; the invariant form is the Euclidean one, the adjoint is the transpose, and every symmetry satisfies $g^{*} = g^{-1}$. The operator involution inverts the rotations and fixes the reflections, so the reflections are Hermitian ($g^{*} = g$) as well as unitary, while a rotation through an angle other than $0$ or $\pi$ is unitary and not Hermitian; the picture is the finite case of the general theory.
 
@@ -123,7 +123,7 @@ because $\rho(\sigma(g)) = \rho(g)^{-1}$ is equivalent to $\rho(g)\rho(\sigma(g)
 
 ## Summary
 
-A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of an operator by $h(Tu,v) = h(u,T^{*}v)$; the adjoint is a conjugate-linear involutive anti-automorphism, so the operator algebra is a `*`-algebra, and the Hermitian, unitary and normal operators are defined by $T^{*} = T$, $T^{*}T = \operatorname{id}$ and $T^{*}T = TT^{*}$. Every symmetry operator is unitary, $g^{*} = g^{-1}$, and the unitary operators of the form are exactly the isometries, so the symmetry group is a subgroup of the unitary group $U(V,h)$ and its Lie algebra consists of the skew-adjoint operators; for the orthogonal group the adjoint is the transpose-adjoint and for the unitary group the conjugate transpose. The involution $T \mapsto T^{*}$ on the operators and the involution $\sigma$ on the elements of the group are two different structures: the identity $\rho(\sigma(g)) = \rho(g)^{*}$ holds exactly when $\rho(g\sigma(g)) = \operatorname{id}$ for all $g$, so it holds for an abelian image with the inversion and, when $\sigma$ is an automorphism, it forces the image to be abelian; it is proved for the representations that have it and never assumed. The adjoint of the standard operators of the group is the subject of the following articles of this group.
+A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of an operator by $h(Tu,v) = h(u,T^{*}v)$; the adjoint is a conjugate-linear involutive anti-automorphism, so the operator algebra is a `*`-algebra, and the Hermitian, unitary and normal operators are defined by $T^{*} = T$, $T^{*}T = \operatorname{id}$ and $T^{*}T = TT^{*}$. Every symmetry operator is unitary, $g^{*} = g^{-1}$, and the unitary operators of the form are exactly the isometries, so the symmetry group is a subgroup of the unitary group $\mathrm{U}(V,h)$ and its Lie algebra consists of the skew-adjoint operators; for the orthogonal group the adjoint is the transpose-adjoint and for the unitary group the conjugate transpose. The involution $T \mapsto T^{*}$ on the operators and the involution $\sigma$ on the elements of the group are two different structures: the identity $\rho(\sigma(g)) = \rho(g)^{*}$ holds exactly when $\rho(g\sigma(g)) = \operatorname{id}$ for all $g$, so it holds for an abelian image with the inversion and, when $\sigma$ is an automorphism, it forces the image to be abelian; it is proved for the representations that have it and never assumed. The adjoint of the standard operators of the group is the subject of the following articles of this group.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ A form $h$ invariant under a symmetry group $G$ defines the adjoint $T^{*}$ of a
 | $T^{*} = T$, $T^{*}T = \operatorname{id}$ | Hermitian and unitary operators |
 | $g^{*} = g^{-1}$ | every symmetry operator is unitary |
 | $\{X : X^{*} = -X\}$ | the Lie algebra of the symmetry group |
-| $U(V,h)$ | the unitary group of the form; $\{T : T^{*}T = \operatorname{id}\}$ |
+| $\mathrm{U}(V,h)$ | the unitary group of the form; $\{T : T^{*}T = \operatorname{id}\}$ |
 | $T \mapsto T^{*}$ | the operator involution; a `*`-algebra structure |
 | $\sigma(g) = (g^{*})^{-1}$ | the Cartan involution manufactured from the form |
 | $\rho(\sigma(g)) = \rho(g)^{*}$ | the `*`-representation identity; proved, not assumed |

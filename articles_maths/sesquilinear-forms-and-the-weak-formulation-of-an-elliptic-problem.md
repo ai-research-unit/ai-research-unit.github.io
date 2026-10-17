@@ -5,13 +5,13 @@
 An elliptic equation is solved in the weak sense by transposing it onto a sesquilinear form. For the operator
 
 $$
-Lu = -\sum_{i,j}\partial_i\bigl(a_{ij}\,\partial_ju\bigr) + \sum_j b_j\,\partial_ju + c\,u
+Lu = -\sum_{i,j}\partial/\partial x_i\bigl(a_{ij}\,\partial/\partial x_j\,u\bigr) + \sum_j b_j\,\partial/\partial x_j\,u + c\,u
 $$
 
 the form
 
 $$
-\mathfrak{a}(u,v) = \int_\Omega\Bigl(\sum_{i,j}a_{ij}\,\partial_ju\,\overline{\partial_iv} + \sum_j b_j\,\partial_ju\,\bar v + c\,u\,\bar v\Bigr)dx
+\mathfrak{a}(u,v) = \int_\Omega\Bigl(\sum_{i,j}a_{ij}\,\partial/\partial x_j\,u\,\overline{\partial/\partial x_i\,v} + \sum_j b_j\,\partial/\partial x_j\,u\,\bar v + c\,u\,\bar v\Bigr)dx
 $$
 
 is obtained from the equation by one integration by parts, and it is defined on the first-order Sobolev space rather than on the second-order space of the classical problem. The equation $Lu=f$ then asks for a $u$ with $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every admissible test function $v$; the boundary condition that the derivatives alone do not see is imposed by restricting the test space, and the derivative that falls on $u$ in the equation falls on $v$ in the form, so the equation makes sense for a $u$ with only one weak derivative. This is the **weak formulation**, and its existence theory is the Lax–Milgram theorem: boundedness and coercivity of the form produce a unique solution.
@@ -25,7 +25,7 @@ The Sobolev spaces $H^1(\Omega)$, $H^1_0(\Omega)$, the weak derivative, the trac
 **Definition.** Let $\Omega\subseteq\mathbb{R}^n$ be a bounded open set with Lipschitz boundary, let the coefficients $a_{ij},b_j,c$ be bounded measurable functions on $\Omega$, and let $A=(a_{ij})$ be a real matrix-valued function. The **sesquilinear form of the operator** is
 
 $$
-\mathfrak{a}(u,v) = \int_\Omega\Bigl(\sum_{i,j}a_{ij}\,\partial_ju\,\overline{\partial_iv} + \sum_j b_j\,\partial_ju\,\bar v + c\,u\,\bar v\Bigr)dx ,
+\mathfrak{a}(u,v) = \int_\Omega\Bigl(\sum_{i,j}a_{ij}\,\partial/\partial x_j\,u\,\overline{\partial/\partial x_i\,v} + \sum_j b_j\,\partial/\partial x_j\,u\,\bar v + c\,u\,\bar v\Bigr)dx ,
 $$
 
 defined for $u,v\in H^1(\Omega)$; the **elliptic form** is the case $b=0$ with $A$ symmetric,
@@ -48,7 +48,7 @@ $$
 
 with $C$ depending on $\Lambda$, $M$ and $n$; the form is a bounded sesquilinear form on $H^1(\Omega)$.
 
-*Proof.* The estimate is the Cauchy–Schwarz inequality applied to each term of the sum: $|A\nabla u\cdot\overline{\nabla v}|\le\Lambda|\nabla u||\nabla v|$, $|b_j\partial_ju\bar v|\le\|b_j\|_\infty|\nabla u||v|$ and $|cu\bar v|\le\|c\|_\infty|u||v|$, followed by $|\nabla u||v|\le\frac12(|\nabla u|^2+|v|^2)$ and integration; the constants combine into $C$.
+*Proof.* The estimate is the Cauchy–Schwarz inequality applied to each term of the sum: $|A\nabla u\cdot\overline{\nabla v}|\le\Lambda|\nabla u||\nabla v|$, $|b_j\partial/\partial x_j\,u\bar v|\le\|b_j\|_\infty|\nabla u||v|$ and $|cu\bar v|\le\|c\|_\infty|u||v|$, followed by $|\nabla u||v|\le\frac12(|\nabla u|^2+|v|^2)$ and integration; the constants combine into $C$.
 
 **Theorem (coercivity of the elliptic form).** Let $A$ be symmetric and **uniformly elliptic**, $\lambda|\xi|^2\le A(x)\xi\cdot\xi\le\Lambda|\xi|^2$ with $\lambda>0$, and let $c\ge0$ be bounded. Then the elliptic form is coercive on $H^1_0(\Omega)$:
 
@@ -62,7 +62,7 @@ where $C_P$ is the Poincaré constant; that is, $\operatorname{Re}\mathfrak{a}(u
 
 **Theorem (the Hermitian case).** The form $\mathfrak{a}$ is Hermitian, $\mathfrak{a}(u,v)=\overline{\mathfrak{a}(v,u)}$, if and only if $A=A^{\mathsf T}$ and $b=0$ with $c$ real; in that case the operator is formally self-adjoint, the form is the Hermitian form of the self-adjoint problem, and $\mathfrak{a}(u,u)$ is real.
 
-*Proof.* Exchanging $u$ and $v$ and conjugating gives $\overline{\mathfrak{a}(v,u)}=\int(\sum a_{ji}\partial_iu\overline{\partial_jv}+\sum\bar b_j\partial_j\bar u\,v+\bar cu\bar v)$; comparing the terms with $\mathfrak{a}(u,v)$ gives $a_{ij}=\bar a_{ji}$, $b_j=0$ and $c=\bar c$. Since the coefficients are real, $a_{ij}=a_{ji}$ for all $i,j$ is $A=A^{\mathsf T}$, and then $\mathfrak{a}(u,u)$ is real.
+*Proof.* Exchanging $u$ and $v$ and conjugating gives $\overline{\mathfrak{a}(v,u)}=\int(\sum a_{ji}\partial/\partial x_i\,u\overline{\partial/\partial x_j\,v}+\sum\bar b_j\partial/\partial x_j\,\bar u\,v+\bar cu\bar v)$; comparing the terms with $\mathfrak{a}(u,v)$ gives $a_{ij}=\bar a_{ji}$, $b_j=0$ and $c=\bar c$. Since the coefficients are real, $a_{ij}=a_{ji}$ for all $i,j$ is $A=A^{\mathsf T}$, and then $\mathfrak{a}(u,u)$ is real.
 
 ## The Weak Formulation
 
@@ -96,15 +96,15 @@ $$
 \mathfrak{a}(u,v) = \langle f,v\rangle + \langle g,\gamma v\rangle_{\partial\Omega} \qquad \text{for every } v\in H^1(\Omega) ,
 $$
 
-and if $u\in H^2(\Omega)$ then $Lu=f$ on $\Omega$ and $\partial_\nu u = g$ on $\partial\Omega$ in the trace sense, where $\partial_\nu$ is the co-normal derivative of the form.
+and if $u\in H^2(\Omega)$ then $Lu=f$ on $\Omega$ and $\partial/\partial\nu u = g$ on $\partial\Omega$ in the trace sense, where $\partial/\partial\nu$ is the co-normal derivative of the form.
 
-*Proof.* The functional is bounded on $H^1(\Omega)$ because the trace maps $H^1(\Omega)$ boundedly into $L^2(\partial\Omega)$ by *Sobolev Spaces and Weak Solutions*; Lax–Milgram gives the unique $u$. For a smooth $u$, the Green formula applied to a test function $v\in C_c^\infty(\Omega)$ gives $Lu=f$, and applied to a general $v$ after subtracting the interior equation gives $\langle\partial_\nu u,v\rangle_{\partial\Omega}=\langle g,v\rangle_{\partial\Omega}$, whence the co-normal condition.
+*Proof.* The functional is bounded on $H^1(\Omega)$ because the trace maps $H^1(\Omega)$ boundedly into $L^2(\partial\Omega)$ by *Sobolev Spaces and Weak Solutions*; Lax–Milgram gives the unique $u$. For a smooth $u$, the Green formula applied to a test function $v\in C_c^\infty(\Omega)$ gives $Lu=f$, and applied to a general $v$ after subtracting the interior equation gives $\langle\partial/\partial\nu u,v\rangle_{\partial\Omega}=\langle g,v\rangle_{\partial\Omega}$, whence the co-normal condition.
 
 **Theorem (the interior weak condition).** For the Dirichlet problem the condition $u=0$ on $\partial\Omega$ is imposed in the trace sense, that is $\gamma u=0$, and every $u\in H^1_0(\Omega)$ has this property; conversely the weak solution with $f\in L^2(\Omega)$ and a coercive form is the unique $H^1_0$ function solving the equation.
 
 *Proof.* The trace of a function of $H^1_0(\Omega)$ vanishes because the trace is continuous and the test functions have trace zero; the vanishing of the trace characterises $H^1_0(\Omega)$ when the boundary is Lipschitz. The uniqueness is the existence theorem.
 
-**Remark (Robin and mixed conditions).** A **Robin condition** $\partial_\nu u+\sigma u=h$ is natural for the form with the boundary term $\langle\sigma u,v\rangle_{\partial\Omega}$; it is coercive on $H^1(\Omega)$ when $\sigma\ge0$ and the form is elliptic. A **mixed condition**, Dirichlet on part of the boundary and Neumann on the rest, is handled by the space of $H^1$ functions vanishing on the Dirichlet part, which is closed and on which the Poincaré inequality holds; the boundary form of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory* is what selects which conditions are admissible.
+**Remark (Robin and mixed conditions).** A **Robin condition** $\partial/\partial\nu u+\sigma u=h$ is natural for the form with the boundary term $\langle\sigma u,v\rangle_{\partial\Omega}$; it is coercive on $H^1(\Omega)$ when $\sigma\ge0$ and the form is elliptic. A **mixed condition**, Dirichlet on part of the boundary and Neumann on the rest, is handled by the space of $H^1$ functions vanishing on the Dirichlet part, which is closed and on which the Poincaré inequality holds; the boundary form of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory* is what selects which conditions are admissible.
 
 ## The Solution Operator and Regularity
 
@@ -128,7 +128,7 @@ when the boundary is smooth and the Dirichlet condition is imposed; in particula
 
 ## Summary
 
-The elliptic operator $L=-\sum\partial_i(a_{ij}\partial_j\cdot)+\sum b_j\partial_j\cdot+c$ is read through its sesquilinear form $\mathfrak{a}(u,v)=\int(\sum a_{ij}\partial_ju\overline{\partial_iv}+\sum b_j\partial_ju\bar v+cu\bar v)$, defined on $H^1(\Omega)$, linear in $u$ and conjugate-linear in $v$, and recovered from the operator by the Green formula. For bounded coefficients the form is bounded, $|\mathfrak{a}(u,v)|\le C\|u\|_{H^1}\|v\|_{H^1}$; for a symmetric uniformly elliptic matrix $A$ with $c$ bounded below it is coercive on $H^1_0(\Omega)$, $\mathfrak{a}(u,u)\ge c\|u\|^2_{H^1}$, by the ellipticity and the Poincaré inequality; and it is Hermitian exactly when $A$ is symmetric, $b=0$ and $c$ is real, which is the formal self-adjointness of the operator.
+The elliptic operator $L=-\sum\partial/\partial x_i(a_{ij}\partial/\partial x_j\cdot)+\sum b_j\partial/\partial x_j\cdot+c$ is read through its sesquilinear form $\mathfrak{a}(u,v)=\int(\sum a_{ij}\partial/\partial x_j\,u\overline{\partial/\partial x_i\,v}+\sum b_j\partial/\partial x_j\,u\bar v+cu\bar v)$, defined on $H^1(\Omega)$, linear in $u$ and conjugate-linear in $v$, and recovered from the operator by the Green formula. For bounded coefficients the form is bounded, $|\mathfrak{a}(u,v)|\le C\|u\|_{H^1}\|v\|_{H^1}$; for a symmetric uniformly elliptic matrix $A$ with $c$ bounded below it is coercive on $H^1_0(\Omega)$, $\mathfrak{a}(u,u)\ge c\|u\|^2_{H^1}$, by the ellipticity and the Poincaré inequality; and it is Hermitian exactly when $A$ is symmetric, $b=0$ and $c$ is real, which is the formal self-adjointness of the operator.
 
 A weak solution of the Dirichlet problem is a $u\in H^1_0(\Omega)$ with $\mathfrak{a}(u,v)=\langle f,v\rangle$ for every test function, the boundary condition being imposed by the test space; for a bounded coercive form and $f\in L^2$ the Lax–Milgram theorem of *Sesquilinear Forms and the Lax–Milgram Theorem* gives a unique weak solution with $\|u\|_{H^1}\le\|f\|_{L^2}/c$, and for a smooth solution the weak and classical problems agree. The solution operator $S$ is bounded and injective, and elliptic regularity places its range in $H^2_{\mathrm{loc}}$; on a smooth bounded domain it factors through $H^2\cap H^1_0$ and is compact. When the form is not coercive but only satisfies Gårding's inequality, a shift and the Fredholm alternative give the solvability of the general problem.
 
@@ -138,7 +138,7 @@ A weak solution of the Dirichlet problem is a $u\in H^1_0(\Omega)$ with $\mathfr
 |---|---|
 | $\Omega$ | Bounded open set with Lipschitz boundary |
 | $a_{ij},b_j,c$ | Coefficients of the second-order elliptic operator |
-| $L$ | Elliptic operator $-\sum\partial_i(a_{ij}\partial_j\cdot)+\sum b_j\partial_j\cdot+c$ |
+| $L$ | Elliptic operator $-\sum\partial/\partial x_i(a_{ij}\partial/\partial x_j\cdot)+\sum b_j\partial/\partial x_j\cdot+c$ |
 | $\mathfrak{a}(u,v)$ | Sesquilinear form of the operator |
 | $\Lambda$, $\lambda$ | Bounds of the coefficient matrix $A$ |
 | $H^1(\Omega)$, $H^1_0(\Omega)$ | Sobolev space, and the closure of the test functions |

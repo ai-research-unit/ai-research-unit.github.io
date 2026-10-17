@@ -145,19 +145,19 @@ the union of the discs of radius $n$, and the **Berkovich projective line** is o
 
 **Theorem (comparison of topologies).** Let $X = \operatorname{Sp} A$ be an affinoid space with its weak G-topology and let $M(A)$ be its Berkovich spectrum.
 
-**(a)** For every affinoid subdomain $U \subseteq X$ the set
+**(a)** For every affinoid subdomain $\Omega \subseteq X$ the set
 
 $$
-U^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } U\}
+\Omega^{\mathrm{an}} = \{x \in M(A) : \lvert f \rvert_x \leq 1 \text{ for every } f \in A \text{ with } \lvert f \rvert \leq 1 \text{ on } \Omega\}
 $$
 
-is a closed subset of $M(A)$, the assignment $U \mapsto U^{\mathrm{an}}$ preserves inclusions and finite intersections, its classical points are exactly the points of $U$, and the family of the $U^{\mathrm{an}}$ generates the topology of $M(A)$: the Berkovich topology is the coarsest topology in which all the sets $U^{\mathrm{an}}$ are closed.
+is a closed subset of $M(A)$, the assignment $\Omega \mapsto \Omega^{\mathrm{an}}$ preserves inclusions and finite intersections, its classical points are exactly the points of $\Omega$, and the family of the $\Omega^{\mathrm{an}}$ generates the topology of $M(A)$: the Berkovich topology is the coarsest topology in which all the sets $\Omega^{\mathrm{an}}$ are closed.
 
-**(b)** The assignment $U \mapsto U^{\mathrm{an}}$ is compatible with the structure sheaves, and the global sections of the structure sheaf of $M(A)$ are $A$.
+**(b)** The assignment $\Omega \mapsto \Omega^{\mathrm{an}}$ is compatible with the structure sheaves, and the global sections of the structure sheaf of $M(A)$ are $A$.
 
 **(c)** The coherent sheaves on the Berkovich space $M(A)$ are the sheaves associated to finitely generated $A$-modules, and their higher cohomology vanishes on affinoids, as in Kiehl's theorem.
 
-**Proof.** (a) Each $U^{\mathrm{an}}$ is an intersection of the closed sets $\{x : \lvert f\rvert_x\leq1\}$, hence closed, and the classical points of $U^{\mathrm{an}}$ are the maximal ideals $\mathrm{M}$ at which $\lvert f(\mathrm{M})\rvert\leq1$ for all $f$ that are bounded by $1$ on $U$, which by the universal property of the affinoid algebra $A_U$ is exactly $U$. The generation statement is Berkovich's comparison theorem for analytic domains. (b) and (c) follow by transporting the rigid structure sheaf across the comparison, using Tate's acyclicity and Kiehl's theorem of *Rigid Analytic Geometry*.
+**Proof.** (a) Each $\Omega^{\mathrm{an}}$ is an intersection of the closed sets $\{x : \lvert f\rvert_x\leq1\}$, hence closed, and the classical points of $\Omega^{\mathrm{an}}$ are the maximal ideals $\mathrm{M}$ at which $\lvert f(\mathrm{M})\rvert\leq1$ for all $f$ that are bounded by $1$ on $\Omega$, which by the universal property of the affinoid algebra $A_\Omega$ is exactly $\Omega$. The generation statement is Berkovich's comparison theorem for analytic domains. (b) and (c) follow by transporting the rigid structure sheaf across the comparison, using Tate's acyclicity and Kiehl's theorem of *Rigid Analytic Geometry*.
 
 **Remark.** The passage from rigid to Berkovich is a passage from a Grothendieck topology to a genuine topology, and the two carry the same coherent sheaf theory. The advantage of the Berkovich presentation is that connectedness, compactness and path-connectedness become properties of an ordinary topological space, and that fibre products and proper maps behave as in algebraic geometry. The rigid presentation retains the advantage that its points are exactly the classical points, so statements about the maximal spectrum are stated directly.
 

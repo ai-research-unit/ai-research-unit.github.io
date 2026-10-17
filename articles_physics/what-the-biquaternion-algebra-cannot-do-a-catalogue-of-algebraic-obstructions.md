@@ -8,7 +8,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 **The obstructions, in summary.** They fall into six groups, and the grouping is itself informative.
 
-*Commutativity and the centre.* The algebra is not commutative; its centre is the two-real-dimensional $\mathbb{C}e_0$; it has no non-trivial central idempotents; and its centre acts trivially on the pure states. The consequences are that the framework has no canonical classical bit, no intrinsic superselection structure, no observable global phase, and no internal determination of its own parameters.
+*Commutativity and the centre.* The algebra is not commutative; its centre is the two-real-dimensional $\mathbb{C}e_t$; it has no non-trivial central idempotents; and its centre acts trivially on the pure states. The consequences are that the framework has no canonical classical bit, no intrinsic superselection structure, no observable global phase, and no internal determination of its own parameters.
 
 *The two quadratic forms.* The Hermitian form is positive definite but trace-relative; the biquaternion norm is canonical but indefinite and vanishes on non-zero elements; neither alone can serve as the probability norm. The consequence is that the framework needs two forms, and that the statistically distinguished metric of mixed states cannot be read from either.
 
@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. States are $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. States are $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 ## How an Obstruction Is Certified
 
@@ -30,7 +30,7 @@ An item enters this catalogue only if it satisfies three conditions, and the con
 
 **1. The statement is purely algebraic.** It says that no element, subspace, or operation of $\mathbb{B}$ has a stated property. Statements about what a human has not yet computed, or about what a particular representation does not exhibit, do not qualify; the obstruction must be a property of the algebra itself.
 
-**2. The proof is from the algebra's defining relations.** The relations are $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and the centrality of $i$. Every proof below uses these, together with standard facts about finite-dimensional matrix algebras — transitivity of $U(2)$ on the rank-one projections, the tensor-dimension count, the innerness of the derivations of a central simple algebra, cyclicity of the trace, and the Bures/Fisher metric — each of which is identified as standard at the point where it is used.
+**2. The proof is from the algebra's defining relations.** The relations are $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu\neq\nu$, and the centrality of $i$. Every proof below uses these, together with standard facts about finite-dimensional matrix algebras — transitivity of $\mathrm{U}(2)$ on the rank-one projections, the tensor-dimension count, the innerness of the derivations of a central simple algebra, cyclicity of the trace, and the Bures/Fisher metric — each of which is identified as standard at the point where it is used.
 
 **3. The consequence and the remedy are both stated.** An obstruction without a consequence is idle, and an obstruction without a remedy is a counsel of despair. Each item therefore names what must be adjoined, chosen, or imported for the framework to proceed: a maximal commutative subalgebra, an extension to modules and function algebras, a statistical metric, or a physical posit.
 
@@ -42,7 +42,7 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 
 **Statement.** There is no maximal commutative subalgebra $\mathbb{A}\subset\mathbb{B}$ that is invariant under the full symmetry group of the algebra. Equivalently, no classical bit is singled out by the algebra's own structure.
 
-**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_0-\tilde\Pi(\vec u)\}$ for unit $\vec u\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $U(2)$. A subalgebra invariant under all of $U(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
+**Proof.** The maximal commutative subalgebras are the $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$ for unit $\vec u\in\mathbb{R}^3$; the family is parametrized by $\mathbb{RP}^2$ and is permuted transitively by the adjoint action of $\mathrm{U}(2)$. A subalgebra invariant under all of $\mathrm{U}(2)$ would have to be fixed by a transitive group action on a space with more than one point, which is impossible. The only commutative subalgebra invariant under the whole adjoint action is the centre, which is not maximal.
 
 **Consequence.** The framework has no preferred pointer basis and no canonical classical bit. Every classical interpretation of the algebra requires a choice of axis, and the choice is not derivable from the algebra.
 
@@ -50,13 +50,13 @@ The catalogue is deliberately non-relativistic and structural. Obstructions that
 
 ### O2. There are no non-trivial central idempotents
 
-**Statement.** The only idempotents in the centre $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ are $0$ and $e_0$. Consequently $\mathbb{B}$ has no non-trivial two-sided ideals and no superselection sectors.
+**Statement.** The only idempotents in the centre $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ are $0$ and $e_t$. Consequently $\mathbb{B}$ has no non-trivial two-sided ideals and no superselection sectors.
 
-**Proof.** A central idempotent is $\tilde{C}=c\,e_0$ with $c\in\mathbb{C}$ and
+**Proof.** A central idempotent is $\tilde{C}=c\,e_t$ with $c\in\mathbb{C}$ and
 $$
 \tilde{C}^2=\tilde{C}\iff c^2=c\iff c\in\{0,1\},
 $$
-so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $\mathbb{B}\tilde{C}$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}$ for $\tilde{Q}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\mathsf{M}_2$.
+so the solutions are exactly $0$ and $e_t$. The corresponding two-sided ideals $\mathbb{B}\tilde{C}$ are $0$ and $\mathbb{B}$. The statement that a non-zero element generates the whole algebra, $\mathbb{B}\tilde{Q}\mathbb{B}=\mathbb{B}$ for $\tilde{Q}\neq0$, is the standard statement that $M_2(\mathbb{C})$ is simple, transported by the isomorphism $\mathsf{M}_2$.
 
 **Consequence.** The framework cannot split itself into non-interfering branches labelled by central projections. Superposition across any two subspaces of the state module remains coherent unless coherence is destroyed by an external mechanism; the algebra provides no internal superselection rule.
 
@@ -64,7 +64,7 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 ### O3. The centre acts trivially on the state space
 
-**Statement.** The kernel of the action of the invertible group $\mathbb{B}^\times$ on the projective state space is the centre, $\mathbb{C}^\times e_0$. Hence no central data is observable at the level of states.
+**Statement.** The kernel of the action of the invertible group $\mathbb{B}^\times$ on the projective state space is the centre, $\mathbb{C}^\times e_t$. Hence no central data is observable at the level of states.
 
 **Proof.** A central element acts on the module by scalar multiplication, $\tilde{C}\psi=\lambda\psi$, so it fixes every ray. Conversely, if $\tilde{U}$ fixes every ray then for each $\psi$ there is $\lambda(\psi)\in\mathbb{C}$ with $\tilde{U}\psi=\lambda(\psi)\psi$; linearity forces $\lambda$ to be constant and $\tilde{U}$ to be a scalar, hence central.
 
@@ -76,9 +76,9 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** No operation of $\mathbb{B}$ fixes the numerical values of the parameters — $\hbar$, masses, couplings — that appear as central elements in the framework's equations. The centre is the store of these parameters, not their source.
 
-**Proof.** The centre is $\mathbb{C}e_0$, and every central element commutes with every element of the algebra. A relation internal to the algebra can therefore only constrain central elements by algebraic equations such as $\tilde{C}^2=\tilde{C}$ (whose solutions are $0$ and $e_0$), never by a numerical condition selecting one real multiple over another. Any equation that determines a parameter must involve data external to the algebra.
+**Proof.** The centre is $\mathbb{C}e_t$, and every central element commutes with every element of the algebra. A relation internal to the algebra can therefore only constrain central elements by algebraic equations such as $\tilde{C}^2=\tilde{C}$ (whose solutions are $0$ and $e_t$), never by a numerical condition selecting one real multiple over another. Any equation that determines a parameter must involve data external to the algebra.
 
-**Consequence.** Dimensional analysis and renormalization aside, the framework cannot predict the spectrum of its own parameters from its structure; the mass coefficient $m e_0$, for example, is an input.
+**Consequence.** Dimensional analysis and renormalization aside, the framework cannot predict the spectrum of its own parameters from its structure; the mass coefficient $m e_t$, for example, is an input.
 
 **Remedy.** Import the parameters as physical data, or embed the algebra in a larger structure whose relations fix them. The catalogue records the limit so that the framework is not credited with a derivation it does not perform.
 
@@ -88,7 +88,7 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, so definiteness is not defined there at all. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $\langle h_0e_0+i\vec h\rangle_{\natural}=(h_0^2-|\vec h|^2)e_0$, of signature $(1,3)$; on the algebra it is $\langle\tilde{Q}\rangle_{\natural}=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $\langle ie_1\rangle_{\natural}=-e_0$, so neither sign is definite there.
+**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $\langle h_0e_t+i\vec h\rangle_{\natural}=(h_0^2-|\vec h|^2)e_t$, of signature $(1,3)$; on the algebra it is $\langle\tilde{Q}\rangle_{\natural}=(x_0^2+x_1^2+x_2^2+x_3^2)e_t$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_t+i\vec e_x$ has $\langle\tilde{H}\rangle_{\natural} = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_t=0$ while $\tilde{H}\neq0$, and $\tilde{H}=i\vec e_x$ has $\langle i\vec e_x\rangle_{\natural}=-e_t$, so neither sign is definite there.
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
@@ -98,11 +98,11 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** The radical of the biquaternion norm is non-trivial: there are non-zero $\tilde{Q}$ with $\langle\tilde{Q}\rangle_{\natural}=0$, and every null element is orthogonal to itself in the associated bilinear form. In particular the whole pure-state boundary is null.
 
-**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\vec u)=e_0-\tilde\Pi(\vec u)$ and hence
+**Proof.** For the pure-state projector, $\tilde{P}^{\natural}(\vec u)=e_t-\tilde\Pi(\vec u)$ and hence
 $$
-N\bigl(\tilde\Pi(\vec u)\bigr)=\tilde\Pi(\vec u)\,\tilde{P}^{\natural}(\vec u)=\tilde\Pi(\vec u)\bigl(e_0-\tilde\Pi(\vec u)\bigr)=0
+N\bigl(\tilde\Pi(\vec u)\bigr)=\tilde\Pi(\vec u)\,\tilde{P}^{\natural}(\vec u)=\tilde\Pi(\vec u)\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
 $$
-for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_0\pm ie_k$ are null non-zero vectors, since $\langle e_0\pm ie_k\rangle_{\natural}=(1-1)e_0=0$.
+for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property $\tilde{P}^2=\tilde{P}$ together with $\tilde{P}\tilde{P}^{\natural}=0$ characterises the boundary of the state space. Likewise $e_t\pm i\vec e_\mu$ are null non-zero vectors, since $\langle e_t\pm i\vec e_\mu\rangle_{\natural}=(1-1)e_t=0$.
 
 **Consequence.** The state space is the boundary of the cone of a degenerate quadratic form. One cannot speak of the "length" of a state; the metric must be obtained as the second variation on the null boundary, and not from the form's value at a point.
 
@@ -112,9 +112,9 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Statement.** There is no quadratic form on $\mathbb{B}$ that is simultaneously positive definite and independent of an arbitrary normalization. The Hermitian form is positive definite but depends on the trace normalization; the biquaternion norm is canonical but indefinite.
 
-**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_0)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
+**Proof.** The Hermitian form is determined by the trace, and the trace is normalised by $\mathrm{Tr}(e_t)=2$, a convention fixed by the degree of the matrix model; replacing $\mathrm{Tr}$ by $c\,\mathrm{Tr}$ for positive $c$ gives another positive definite form, so the positivity is canonical but the scale is not. The biquaternion norm is determined by the algebra's product alone, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
 
-**Consequence.** All probabilities, distances and normalizations in the framework are trace-relative. The trace normalization is a posit, and the numerical factors of the Fubini–Study metric are statements in the normalization $\mathrm{Tr}(e_0)=2$.
+**Consequence.** All probabilities, distances and normalizations in the framework are trace-relative. The trace normalization is a posit, and the numerical factors of the Fubini–Study metric are statements in the normalization $\mathrm{Tr}(e_t)=2$.
 
 **Remedy.** State the normalization with every numerical claim, as the corpus does; the invariant content of any such claim is the statement that survives a rescaling of the trace.
 
@@ -122,7 +122,7 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Statement.** The quadratic form of the algebra cannot generate the statistically distinguished metric of the mixed states. It supplies the flat Euclidean form $\tfrac14|d\vec r|^2$ on the whole ball, whereas the distinguished metric is the Bures metric.
 
-**Proof.** For a state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and any displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the biquaternion norm is $-\langle\delta\tilde{\rho}\rangle_{\natural}=\tfrac14|\delta\vec r|^2$, with no dependence on the radial direction; the quadratic form is the same at every point of the ball. The Bures metric is $\tfrac14\bigl(|d\vec r|^2+(\vec r\cdot d\vec r)^2/(1-r^2)\bigr)$, which agrees with the flat form only at the centre $r=0$ and on tangential displacements at the boundary $r=1$. The two differ in the interior, and the difference is precisely the radial distinguishability term.
+**Proof.** For a state $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ and any displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the biquaternion norm is $-\langle\delta\tilde{\rho}\rangle_{\natural}=\tfrac14|\delta\vec r|^2$, with no dependence on the radial direction; the quadratic form is the same at every point of the ball. The Bures metric is $\tfrac14\bigl(|d\vec r|^2+(\vec r\cdot d\vec r)^2/(1-r^2)\bigr)$, which agrees with the flat form only at the centre $r=0$ and on tangential displacements at the boundary $r=1$. The two differ in the interior, and the difference is precisely the radial distinguishability term.
 
 **Consequence.** The algebra's form fixes the geometry of the pure states and the geometry at the maximally mixed state, and nothing in between. Claims about the metrical structure of mixed states require an import from quantum information theory.
 
@@ -140,13 +140,13 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 ### O10. The invariance group of the biquaternion norm is not the symmetry group of the states
 
-**Statement.** The group of invertible elements preserving the biquaternion norm under conjugation is $G_N=U(1)\cdot SL(2,\mathbb{C})$, strictly larger than the unitary group $U(2)$ that preserves the Hermitian form and acts on the state space. The algebra's quadratic form and its state-space geometry therefore have different symmetries.
+**Statement.** The group of invertible elements preserving the biquaternion norm under conjugation is $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, strictly larger than the unitary group $\mathrm{U}(2)$ that preserves the Hermitian form and acts on the state space. The algebra's quadratic form and its state-space geometry therefore have different symmetries.
 
-**Proof.** From the multiplicativity of the determinant, $\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}=|\langle\tilde{U}\rangle_{\natural}|^2\langle\tilde{Q}\rangle_{\natural}$, so the biquaternion norm is preserved exactly by the elements with $|\langle\tilde{U}\rangle_{\natural}|=1$; the group is seven-real-dimensional and contains $U(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $U(2)$.
+**Proof.** From the multiplicativity of the determinant, $\langle\tilde{U}\tilde{Q}\tilde{U}^{*}\rangle_{\natural}=|\langle\tilde{U}\rangle_{\natural}|^2\langle\tilde{Q}\rangle_{\natural}$, so the biquaternion norm is preserved exactly by the elements with $|\langle\tilde{U}\rangle_{\natural}|=1$; the group is seven-real-dimensional and contains $\mathrm{U}(2)$, which is four-real-dimensional. The element $\mathrm{diag}(\lambda,\lambda^{-1})$ with real $\lambda\neq1$ is in $G_N$ but not in $\mathrm{U}(2)$.
 
 **Consequence.** One cannot identify "the symmetry group" of the framework by asking which transformations preserve the biquaternion norm: the answer is larger than the group of physical symmetries and includes transformations that change the Hermitian norm of states.
 
-**Remedy.** Distinguish the two preservation problems explicitly. Unitarity is the preservation of the Hermitian norm and its group is $U(2)$; invariance of the biquaternion norm — the determinant, in the matrix model — is the strictly different condition $|\det M(\tilde{U})|=1$, which defines a larger group and has no direct quantum-mechanical interpretation.
+**Remedy.** Distinguish the two preservation problems explicitly. Unitarity is the preservation of the Hermitian norm and its group is $\mathrm{U}(2)$; invariance of the biquaternion norm — the determinant, in the matrix model — is the strictly different condition $|\det M(\tilde{U})|=1$, which defines a larger group and has no direct quantum-mechanical interpretation.
 
 ## III. Obstructions of Finite Dimension and Zero Divisors
 
@@ -156,23 +156,23 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Proof.** The complementary pure-state projectors satisfy
 $$
-\tilde\Pi(\vec u)\,\bigl(e_0-\tilde\Pi(\vec u)\bigr)=0
+\tilde\Pi(\vec u)\,\bigl(e_t-\tilde\Pi(\vec u)\bigr)=0
 $$
 for every unit $\vec u$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}\neq0$, and the zero divisors are the elements of vanishing norm.
 
-**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $\langle\tilde{P}\rangle_{\natural}=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|<1$ has $\langle\tilde{\rho}\rangle_{\natural}=\tfrac14(1-r^2)e_0\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
+**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $\langle\tilde{P}\rangle_{\natural}=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$ has $\langle\tilde{\rho}\rangle_{\natural}=\tfrac14(1-r^2)e_t\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
 **Remedy.** None is needed; the structure is that of a matrix algebra, and the relevant group for transformations is $\mathbb{B}^\times$, acting on the module. The point of recording the obstruction is that "the quaternions are a division algebra" does not survive complexification, and the biquaternion algebra must not be used as if it did.
 
 ### O12. There are no canonical commutation relations inside the algebra
 
-**Statement.** There are no elements $\tilde{Q},\tilde{P}\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda e_0$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
+**Statement.** There are no elements $\tilde{Q},\tilde{P}\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda e_t$, and no finite-dimensional module of $\mathbb{B}$ carries such a pair either.
 
 **Proof.** The trace of any commutator vanishes,
 $$
 \mathrm{Tr}\bigl([\tilde{Q},\tilde{P}]\bigr)=\mathrm{Tr}\bigl(\tilde{Q}\tilde{P}\bigr)-\mathrm{Tr}\bigl(\tilde{P}\tilde{Q}\bigr)=0,
 $$
-by cyclicity, whereas $\mathrm{Tr}(\lambda e_0)=2\lambda\neq0$. The same argument applies in any finite-dimensional representation, since the trace there is also cyclic.
+by cyclicity, whereas $\mathrm{Tr}(\lambda e_t)=2\lambda\neq0$. The same argument applies in any finite-dimensional representation, since the trace there is also cyclic.
 
 **Consequence.** The Heisenberg algebra, and with it position, momentum, and the creation and annihilation operators, cannot be internalised in $\mathbb{B}$. They require an infinite-dimensional extension.
 
@@ -202,11 +202,11 @@ and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\con
 
 ### O14. The norm-preserving unit is forced into the centre
 
-**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_0$. A dynamics $i\hbar\,\partial_t\psi=J\tilde{H}\psi$ preserves the Hermitian norm for every Hermitian $\tilde{H}$ only if $J=\pm i$.
+**Statement.** There is no quantum dynamics over $\mathbb{B}$ that preserves the Hermitian norm for every Hermitian generator and whose unit is a non-central root of $-e_t$. A dynamics $i\hbar\,\partial/\partial t\psi=J\tilde{H}\psi$ preserves the Hermitian norm for every Hermitian $\tilde{H}$ only if $J=\pm i$.
 
-**Proof.** The generator is $G=-\hbar^{-1}J\tilde{H}$, so $G^{*}=-\hbar^{-1}\tilde{H}J^\dagger$; anti-Hermiticity of $G$ for all Hermitian $\tilde{H}$ therefore reads $-\tilde{H}J^\dagger=J\tilde{H}$ for all Hermitian $\tilde{H}$, which at $\tilde{H}=e_0$ forces $J^\dagger=-J$ (so a general root of $-e_0$, which need not be anti-Hermitian, is excluded) and then requires $\tilde{H}J=J\tilde{H}$ for all Hermitian $\tilde{H}$, hence $J$ central. The central roots of $-e_0$ are $\pm i$. The non-central root $J=e_3$ with $\tilde{H}=ie_1$ gives $G=-\hbar^{-1}ie_2$, which is Hermitian and generates a non-unitary flow.
+**Proof.** The generator is $G=-\hbar^{-1}J\tilde{H}$, so $G^{*}=-\hbar^{-1}\tilde{H}J^\dagger$; anti-Hermiticity of $G$ for all Hermitian $\tilde{H}$ therefore reads $-\tilde{H}J^\dagger=J\tilde{H}$ for all Hermitian $\tilde{H}$, which at $\tilde{H}=e_t$ forces $J^\dagger=-J$ (so a general root of $-e_t$, which need not be anti-Hermitian, is excluded) and then requires $\tilde{H}J=J\tilde{H}$ for all Hermitian $\tilde{H}$, hence $J$ central. The central roots of $-e_t$ are $\pm i$. The non-central root $J=\vec e_z$ with $\tilde{H}=i\vec e_x$ gives $G=-\hbar^{-1}i\vec e_y$, which is Hermitian and generates a non-unitary flow.
 
-**Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum physics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as a matrix algebra over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $J=e_1$ gives $G=-\hbar^{-1}e_1\tilde{H}$, which is anti-Hermitian for precisely those Hermitian $\tilde{H}$ commuting with $e_1$, and Hermitian — hence norm-violating — for $\tilde{H}=ie_2$, say. The alternative units $e_1,e_2,e_3$, and more generally the unit pure real quaternions, are roots of $-e_0$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $ie_k$ are not roots of $-e_0$ at all, since $(ie_k)^2=+e_0$.
+**Consequence.** The framework cannot realise a genuinely "biquaternionic" quantum physics whose evolution preserves the norm for the full class of Hermitian generators: that demand collapses the scalar field to the centre $\mathbb{C}$, and the algebra acts as a matrix algebra over that field. A non-central unit is not excluded outright, but its reach is exactly its commutant: $J=\vec e_x$ gives $G=-\hbar^{-1}\vec e_x\tilde{H}$, which is anti-Hermitian for precisely those Hermitian $\tilde{H}$ commuting with $\vec e_x$, and Hermitian — hence norm-violating — for $\tilde{H}=i\vec e_y$, say. The alternative units $\vec e_x,\vec e_y,\vec e_z$, and more generally the unit pure real quaternions, are roots of $-e_t$ and are available as algebraic structures, but not as units of a norm-preserving dynamics; the elements $i\vec e_\mu$ are not roots of $-e_t$ at all, since $(i\vec e_\mu)^2=+e_t$.
 
 **Remedy.** Either give up norm preservation — which departs from quantum physics — or restrict the class of generators to those commuting with the chosen $J$ — which singles out a subtheory. The framework's own choice is the third: accept that the scalar field is $\mathbb{C}$, and read $\mathbb{B}$ as an algebra of operators over it, which is what makes the state space, the trace pairing and the unitarity group work.
 
@@ -216,9 +216,9 @@ and under the matrix model $M_2(\mathbb{C})\otimes_\mathbb{C}M_2(\mathbb{C})\con
 
 **Statement.** The decomposition $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ is not a grading of the associative algebra: $\mathbb{M}_+$ is not a subalgebra, and the product of two Hermitian elements need not be Hermitian. The decomposition is a grading of the commutator only.
 
-**Proof.** For the Hermitian elements $ie_1,ie_2$,
+**Proof.** For the Hermitian elements $i\vec e_x,i\vec e_y$,
 $$
-(ie_1)(ie_2)=i^2e_1e_2=-e_3\in\mathbb{M}_-,
+(i\vec e_x)(i\vec e_y)=i^2\vec e_x \vec e_y=-\vec e_z\in\mathbb{M}_-,
 $$
 which is anti-Hermitian; so $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$. More precisely, products and commutators behave as
 $$
@@ -238,9 +238,9 @@ the last two verified numerically on random elements of each sector. The commuta
 
 **Statement.** Multiplication by $i$ exchanges the two sectors, $i\mathbb{M}_+=\mathbb{M}_-$, so $\mathbb{M}_+$ is not a complex vector space. The Hermitian sector cannot be a complex Hilbert space in its own right.
 
-**Proof.** For every basis element of $\mathbb{M}_+$, $i(ie_k)=-e_k$ and $i e_0=ie_0$, so
+**Proof.** For every basis element of $\mathbb{M}_+$, $i(i\vec e_\mu)=-\vec e_\mu$ and $i e_t=ie_t$, so
 $$
-i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}=\mathbb{M}_- .
+i\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}=\mathbb{M}_- .
 $$
 
 Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.
@@ -253,11 +253,11 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no distinguished minimal left ideal of $\mathbb{B}$; the module $\mathbb{B}\tilde\Pi_+$ depends on the idempotent $\tilde\Pi_+$, and different choices give isomorphic but distinct submodules.
 
-**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_3=\tfrac12(e_0+ie_1)$ generate distinct ideals related by a unitary conjugation.
+**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_3=\tfrac12(e_t+i\vec e_x)$ generate distinct ideals related by a unitary conjugation.
 
 **Consequence.** The identification of the two components of a spinor, and hence the split into material and informational parts, requires a choice of basis; the state space is canonical only up to unitary equivalence. Physical predictions are invariant under the choice, but the bookkeeping is not.
 
-**Remedy.** Fix the idempotent once and for all — the corpus fixes $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ — and verify that any statement of interest is invariant under unitary change of $\tilde\Pi_+$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
+**Remedy.** Fix the idempotent once and for all — the corpus fixes $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ — and verify that any statement of interest is invariant under unitary change of $\tilde\Pi_+$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
 
 ## V. Obstructions of Dynamics and Interpretation
 
@@ -265,7 +265,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** There is no element or operation of $\mathbb{B}$ that represents the time derivative or selects a Hamiltonian. The dynamics must be supplied from outside.
 
-**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial_t\psi=J\tilde{H}\psi$ therefore introduces both $\partial_t$ and $\tilde{H}$ as external data.
+**Proof.** The derivations of a finite-dimensional central simple algebra are inner: every derivation of $\mathbb{B}$ is of the form $\mathrm{ad}_{\tilde{Q}}$ for some $\tilde{Q}$. Every such derivation is frozen on the centre and generates a conjugation flow; none of them is a distinguished time translation, and there is no element of the algebra that can be picked out as the generator of physical time. The Schrödinger equation $i\hbar\partial/\partial t\psi=J\tilde{H}\psi$ therefore introduces both $\partial/\partial t$ and $\tilde{H}$ as external data.
 
 **Consequence.** The framework derives no arrow of time and no equation of motion from its algebra; the dynamical law is a posit, and so is the identification of the central parameters that accompany it.
 
@@ -285,9 +285,9 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** The algebra contains no scale: it is invariant under the simultaneous rescaling of all its elements, and it admits no relation that could fix a mass, a length, or an energy.
 
-**Proof.** Every defining relation $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$, $i^2=-1$ is scale-free. A central element $\lambda e_0$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
+**Proof.** Every defining relation $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$, $i^2=-1$ is scale-free. A central element $\lambda e_t$ satisfies no equation with a numerical solution by O4; and the biquaternion norm is quadratic, so it rescales by the square of the element. No combination of the relations produces a number with the dimensions of a physical scale.
 
-**Consequence.** The framework cannot explain the origin of mass or of any dimensionful parameter; masses enter through central coefficients such as $m e_0$.
+**Consequence.** The framework cannot explain the origin of mass or of any dimensionful parameter; masses enter through central coefficients such as $m e_t$.
 
 **Remedy.** Import the scales as data, or obtain them from a structure external to the algebra — a dynamical mechanism, a boundary condition, or a symmetry-breaking sector. The catalogue records that they are not algebraic consequences of $\mathbb{B}$.
 
@@ -309,7 +309,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Statement.** Every operation that $\mathbb{B}$ supplies is a **multiplication** — left multiplication on the spinor module, the adjoint action on the algebra, the central phase — and a multiplication acts on the two chiral components of a Dirac module with the **same** matrix. The algebra therefore cannot supply, as a multiplication, any operation that gives the two chiralities inequivalent representations or exchanges them in a single step: the chiral gauge coupling that the electroweak theory requires, the internal matrices of charge conjugation and parity, the parity-reflecting frame element $\gamma^0$ and the energy-sign split built on it, and the odd form of a first-order operator (the Feynman slash). None of these has a representative in $\mathbb{B}$.
 
-**Proof.** $\mathbb{B}\cong M_2(\mathbb{C})=\mathrm{End}(S)$, with $S$ the unique simple module, of complex dimension two. Every left $\mathbb{B}$-module is a direct sum of copies of $S$, and the left action of $\tilde B\in\mathbb{B}$ on such a sum is block diagonal, the same matrix $M(\tilde B)$ on every copy. That action commutes with the chirality grading of the module; an exchange of the two chiral components is off-diagonal and is not of that form. Both halves were checked in the explicit model $\mathsf{M}_2(e_0)=I$, $\mathsf{M}_2(e_k)=-i\sigma_k$: with the grading $\mathrm{diag}(I_2,-I_2)$ a generic left action commutes with it, while $\gamma^0$ anticommutes with it and is not equal to any $\mathrm{diag}(M,M)$. The corpus records the consequence object by object: the central phase is vector-like so its cubic trace cancels (*Anomalies and Anomaly Cancellation*); the non-abelian action is left multiplication and cannot give the two chiralities inequivalent representations (*Custodial Symmetry and the Rho Parameter*); the chiral coupling is the layer the framework does not reach (*The W and Z Bosons*); the internal matrices of $C$ and $P$ are odd and have no representative in $\mathbb{B}$ (*The CPT Theorem*). These are one property, stated four times.
+**Proof.** $\mathbb{B}\cong M_2(\mathbb{C})=\mathrm{End}(S)$, with $S$ the unique simple module, of complex dimension two. Every left $\mathbb{B}$-module is a direct sum of copies of $S$, and the left action of $\tilde B\in\mathbb{B}$ on such a sum is block diagonal, the same matrix $M(\tilde B)$ on every copy. That action commutes with the chirality grading of the module; an exchange of the two chiral components is off-diagonal and is not of that form. Both halves were checked in the explicit model $\mathsf{M}_2(e_t)=I$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$: with the grading $\mathrm{diag}(I_2,-I_2)$ a generic left action commutes with it, while $\gamma^0$ anticommutes with it and is not equal to any $\mathrm{diag}(M,M)$. The corpus records the consequence object by object: the central phase is vector-like so its cubic trace cancels (*Anomalies and Anomaly Cancellation*); the non-abelian action is left multiplication and cannot give the two chiralities inequivalent representations (*Custodial Symmetry and the Rho Parameter*); the chiral coupling is the layer the framework does not reach (*The W and Z Bosons*); the internal matrices of $C$ and $P$ are odd and have no representative in $\mathbb{B}$ (*The CPT Theorem*). These are one property, stated four times.
 
 **Consequence.** The framework's entire apparatus — the gradient, the rotors, the gauge actions, the mass, the phase — is multiplicative and therefore vector-like. The discrete operations and the energy-sign split are not defects of a particular realization but consequences of the mechanism that carries them. The Feynman slash is the mildest instance: because $\mathbb{B}$ carries a first-order operator of its own, the even gradient $\tilde{\nabla}$, the slash's *role* is taken over inside the algebra, so it is a change of notation rather than a loss. The others have no such substitute.
 
@@ -323,7 +323,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Proof.** The failure is the **associator defect** of the parent product and not an accident of the witness.
 
-**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $P_0\vec Q-Q_0\vec P$ (*The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
+**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $P_0\vec Q-Q_t\vec P$ (*The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
 
 **Remedy.** Read the failure measurements as the low operations of a **higher structure**: the associator and the Jacobi defect are the first terms of an $A_\infty$ and an $L_\infty$ algebra, and the repair is to state the higher identities rather than to look for a bracket that closes (*The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$*; *A-Infinity and L-Infinity Algebras*).
 
@@ -331,7 +331,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 | Obstruction | Algebraic locus | Remedy |
 |---|---|---|
-| O1 no canonical MASA | transitive $U(2)$ action on the axis | choose a context |
+| O1 no canonical MASA | transitive $\mathrm{U}(2)$ action on the axis | choose a context |
 | O2 no central idempotents | $\mathbb{B}$ a factor | adjoin a label algebra |
 | O3 centre acts trivially on states | $Z(\mathbb{B})\cong\mathbb{C}$ | none needed |
 | O4 parameters not determined | centrality of the parameters | import the data |
@@ -340,7 +340,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 | O7 no form both canonical and positive | trace normalization | state the normalization |
 | O8 no Bures metric | flat quadratic form | import the Fisher metric |
 | O9 no intrinsic norm | representation required | fix the representation once |
-| O10 $G_N\neq U(2)$ | determinant multiplicativity | separate the two preservation problems |
+| O10 $G_N\neq \mathrm{U}(2)$ | determinant multiplicativity | separate the two preservation problems |
 | O11 zero divisors | $\mathbb{B}\cong M_2(\mathbb{C})$ | none needed |
 | O12 no commutator with a central value | cyclicity of the trace | pass to function modules |
 | O13 no internal tensor factorization | dimension count | use $\mathbb{B}^{\otimes n}$ |
@@ -379,11 +379,11 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Canonical-versus-positive interpretation.** The three quadratic obstructions O5–O7 are one trade-off: the form the algebra fixes canonically, the norm, is indefinite and vanishes on non-zero elements, while the positive form is trace-relative and canonical only up to its scale. Read physically, the canonical form of a relativistic element is indefinite — the norm is the interval, of signature $(3,1)$ on the material sector — so a positive probability cannot be read from the algebra's own form and must be added, which is the algebraic shape of why a relativistic one-particle description needs an added positive structure rather than an available one. Boundary: the obstructions and the trace-relative repair are proved above and in *Conventions in the Biquaternion Universe*; the indefinite inner product of a quantised gauge field is imported, and whether its identification with the norm on $\mathbb{M}_-$ has content beyond the coincidence of signatures is asked and not settled in *Canonical Quantization of the Biquaternion Maxwell Field*; the interpretation adds no derivation.
 - **One-mode interpretation.** O12 and O13 read together say that the algebra carries one mode and no internal composition: it has no canonical commutation relation and no internal tensor factorisation, while the two-mode arena is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. Read physically, the biquaternion algebra is intrinsically a **one-mode (one-qubit) theory**: the single-mode truncation is exact, the many-mode theory is the tensor tower built over it, and the framework's finite content is exactly one fermionic mode (*Fock Space and Creation/Annihilation Operators in Biquaternionic Form*). Boundary: the interpretation names the mode count and does not supply a field algebra, whose brackets are imported (O12).
 - **Basis-freedom interpretation.** O1, O16 and O17 are one statement read on the states: the algebra has no canonical maximal commutative subalgebra, the Hermitian sector no intrinsic complex structure, and the state module no canonical idempotent, so no basis is singled out. Read physically, the framework has no preferred classical frame and no pointer basis of its own — the basis of a measurement is a choice and not a datum of the algebra — which is the algebraic form of the basis-independence of quantum mechanics and the reason the classical sector is a limit rather than a subspace (*The Centre of the Biquaternion Algebra as the Classical Sector*). Boundary: basis-independence is shared with ordinary quantum mechanics; the interpretation states its algebraic origin and does not address the selection rule (O19).
-- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\vec\Upsilon_1=\tfrac12(ie_1-e_2)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
+- **Mass is a breaking, not a product.** O22 read forwards: since a multiplication acts identically on the two chiral components and cannot couple them, a mass term is not a product of the algebra but a breaking, which the conventions realise as the right multiplication by $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 
 ## Summary
 
-The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the structural spine of the non-relativistic theory, and this article has catalogued its algebraic obstructions in seven groups. In commutativity and the centre: there is no canonical maximal commutative subalgebra, no non-trivial central idempotent, no observable central data, and no internal determination of the theory's parameters, because the centre is the two-real-dimensional $\mathbb{C}e_0$ and it acts trivially on states. In the quadratic forms: the biquaternion norm is indefinite and vanishes on non-zero states, the Hermitian form is positive but trace-relative, no single form is both canonical and positive, and the statistically distinguished metric of mixed states is not the algebra's flat form; the invariance group of the biquaternion norm, $G_N=U(1)\cdot SL(2,\mathbb{C})$, is strictly larger than the unitary group. In finite dimension and zero divisors: the algebra is not a division algebra, it carries no canonical commutation relation, it admits no internal tensor factorization, and a unit that preserves the norm for every Hermitian generator is forced into the centre, so no genuinely biquaternionic quantum physics with a uniform norm-preserving evolution exists. In the sector structure: the split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ grades the commutator but not the product, the Hermitian sector carries no intrinsic complex structure, and the state module depends on a non-canonical choice of idempotent. In dynamics and interpretation: the algebra contains no time, no Hamiltonian, no preferred basis, no scale, and no stable classical sector under a generic evolution. In the module action: every operation the algebra supplies is a multiplication, and a multiplication acts identically on the two chiral components of a Dirac module, so the framework's apparatus is vector-like by construction and the chiral structure, the discrete operations and the energy-sign split are external. In the brackets: the one Lie product of the twelve is the plain bracket, and the three brackets that carry a conjugation fail, so no bracket the framework's interference and quantum pairings need is a Lie algebra, and the failures are read as the first operations of a higher structure.
+The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the structural spine of the non-relativistic theory, and this article has catalogued its algebraic obstructions in seven groups. In commutativity and the centre: there is no canonical maximal commutative subalgebra, no non-trivial central idempotent, no observable central data, and no internal determination of the theory's parameters, because the centre is the two-real-dimensional $\mathbb{C}e_t$ and it acts trivially on states. In the quadratic forms: the biquaternion norm is indefinite and vanishes on non-zero states, the Hermitian form is positive but trace-relative, no single form is both canonical and positive, and the statistically distinguished metric of mixed states is not the algebra's flat form; the invariance group of the biquaternion norm, $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, is strictly larger than the unitary group. In finite dimension and zero divisors: the algebra is not a division algebra, it carries no canonical commutation relation, it admits no internal tensor factorization, and a unit that preserves the norm for every Hermitian generator is forced into the centre, so no genuinely biquaternionic quantum physics with a uniform norm-preserving evolution exists. In the sector structure: the split $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ grades the commutator but not the product, the Hermitian sector carries no intrinsic complex structure, and the state module depends on a non-canonical choice of idempotent. In dynamics and interpretation: the algebra contains no time, no Hamiltonian, no preferred basis, no scale, and no stable classical sector under a generic evolution. In the module action: every operation the algebra supplies is a multiplication, and a multiplication acts identically on the two chiral components of a Dirac module, so the framework's apparatus is vector-like by construction and the chiral structure, the discrete operations and the energy-sign split are external. In the brackets: the one Lie product of the twelve is the plain bracket, and the three brackets that carry a conjugation fail, so no bracket the framework's interference and quantum pairings need is a Lie algebra, and the failures are read as the first operations of a higher structure.
 
 Each obstruction is proved from the defining relations and is stated with its consequence and its remedy. The catalogue's purpose is not to fault the framework but to locate exactly where its algebra's resources end: at a chosen context, an extended module, an imported statistical metric, or a physical posit. Most of the obstructions are shared with ordinary complex quantum physics and are not peculiar to the biquaternion setting; the distinctive ones concern the coexistence of two forms, the non-algebraic nature of the sector split, the centralisation of the unit, the minimality of the classical sector, and the chirality-blindness of multiplication — and these are the items on which the framework should be judged.
 
@@ -392,20 +392,20 @@ Each obstruction is proved from the defining relations and is stated with its co
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
-| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
+| $Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{C}_{\mathbb{B}}$ |
+| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\mathbb{B}^{\times}=\{N\neq0\}$ |
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
-| $\tilde\Pi(\vec u)=\tfrac12(e_0+i\vec u)$ | Pure state, null under $\langle\cdot\rangle_{\natural}$ |
+| $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state, null under $\langle\cdot\rangle_{\natural}$ |
 | $\mathbb{A}_{\vec u}$ | Maximal commutative subalgebra |
-| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
-| $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
-| $U(2)$ | Norm-preserving (unitary) group |
-| $G_N=U(1)\cdot SL(2,\mathbb{C})$ | Biquaternion-norm-preserving group, $\dim_\mathbb{R}=7$ |
+| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
+| $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |
+| $\mathrm{U}(2)$ | Norm-preserving (unitary) group |
+| $G_N=\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ | Biquaternion-norm-preserving group, $\dim_\mathbb{R}=7$ |
 | $\mathrm{ad}_{\tilde{Q}}$ | Inner derivation $[\tilde{Q},\cdot]$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

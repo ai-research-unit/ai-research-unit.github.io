@@ -50,14 +50,14 @@ $$
 and $N(x) = 0$ if and only if $x = 0$; hence $N$ is anisotropic. The norm form of $\sigma(x)$ is the $\sigma$-image of the norm form, $N(\sigma(x)) = \sigma(N(x))$, and the norm-one set
 
 $$
-U(D,\sigma) = \{x\in D^\times : N(x) = 1\}
+\mathrm{U}(D,\sigma) = \{x\in D^\times : N(x) = 1\}
 $$
 
 is a closed subgroup of $D^\times$.
 
 **Proof.** $\sigma(x\sigma(x)) = \sigma(\sigma(x))\sigma(x) = x\sigma(x)$, so the value is self-adjoint; in a division ring a product of nonzero elements is nonzero, so $N(x) = 0$ only for $x = 0$; and $N(\sigma(x)) = \sigma(x)\sigma(\sigma(x)) = \sigma(x)x = \sigma(N(x))$. For the subgroup: if $N(u) = 1$ then $\sigma(u)u = \sigma(u\sigma(u)) = \sigma(N(u)) = 1$, so $\sigma(u) = u^{-1}$ and $N(u^{-1}) = u^{-1}\sigma(u)^{-1} = u^{-1}u = 1$; and if $N(u) = N(v) = 1$ then $N(uv) = uv\,\sigma(v)\sigma(u) = u\,(v\sigma(v))\,\sigma(u) = u\,\sigma(u) = 1$, the middle factor telescoping. Closedness is the continuity of $N$ on $D^\times$.
 
-**Corollary (multiplicativity in the commutative case only).** If $D$ is a field the norm form is multiplicative, $N(xy) = N(x)N(y)$, and $U(D,\sigma)$ is the kernel of $N$ on the units; in the noncommutative case $N$ is multiplicative on the elements whose norm is central, and the norm-one condition $N(u) = 1$ implies $\sigma(u) = u^{-1}$, so $U(D,\sigma)$ is contained in the inverted set $I(D,\sigma)$.
+**Corollary (multiplicativity in the commutative case only).** If $D$ is a field the norm form is multiplicative, $N(xy) = N(x)N(y)$, and $\mathrm{U}(D,\sigma)$ is the kernel of $N$ on the units; in the noncommutative case $N$ is multiplicative on the elements whose norm is central, and the norm-one condition $N(u) = 1$ implies $\sigma(u) = u^{-1}$, so $\mathrm{U}(D,\sigma)$ is contained in the inverted set $I(D,\sigma)$.
 
 **Proof.** In the commutative case $\sigma(xy) = \sigma(y)\sigma(x) = \sigma(x)\sigma(y)$; in general $N(uv) = u\,N(v)\,\sigma(u)$, which is $N(u)N(v)$ when $N(v)$ is central, and the implication $N(u)=1\Rightarrow\sigma(u)=u^{-1}$ is the computation of the theorem.
 
@@ -73,7 +73,7 @@ is a closed subgroup of $D^\times$.
 
 ## Examples
 
-**Example (the quaternions $\mathbb{H}$).** With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_1e_1 + q_2e_2 + q_3e_3$, and $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.
+**Example (the quaternions $\mathbb{H}$).** With the quaternion conjugation $\tilde q^{\natural}$, the involution is an anti-automorphism of order two of the first kind, fixing the centre $\mathbb{R}$; the self-adjoint elements are the reals, the skew elements are the pure quaternions $q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, and $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = |\tilde q|^2$ is the square of the norm. The decomposition $\mathbb{H} = \mathbb{R}\oplus\mathbb{R}^3$ is topological, and the norm-one set is the compact sphere.
 
 **Example ($\mathbb{C}$ with the conjugation).** The field of complex numbers is a topological division ring with the conjugation, an involution of the second kind because its centre is $\mathbb{C}$ and the involution acts nontrivially on it; the self-adjoint elements are the reals, a closed subfield of index two, and $N(Z) = Z\bar Z = |Z|^2$.
 
@@ -99,7 +99,7 @@ Topologically, a continuous involution is a homeomorphism, the self-adjoint and 
 | $\mathrm{Skew}(D) = \{x : \sigma(x) = -x\}$ | Skew elements, closed |
 | $D = D^\sigma\oplus\mathrm{Skew}(D)$ | Topological direct sum when $2$ is invertible |
 | $N(x) = x\sigma(x)$ | Norm form, self-adjoint and anisotropic |
-| $U(D,\sigma)$ | Norm-one set, closed in $D^\times$ |
+| $\mathrm{U}(D,\sigma)$ | Norm-one set, closed in $D^\times$ |
 | $I(D,\sigma) = \{x : \sigma(x) = x^{-1}\}$ | Inverted set, the unitary elements |
 | First kind, second kind | $\sigma$ fixes $Z(D)$ pointwise, or not |
 | $\widehat{D}^{\widehat\sigma} = \widehat{D^\sigma}$ | The completion in the isometric valued case |

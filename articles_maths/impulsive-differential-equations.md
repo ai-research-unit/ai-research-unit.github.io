@@ -110,7 +110,7 @@ the sum being finite on every compact interval when the impulse times are locall
 
 ### Lyapunov Functions with Jumps
 
-**Definition.** For the impulsive system with impulse times $(\tau_k)$ the **jump operator** at time $t$ associated with the impulsive equation $y' = f(t,y)$ is the map sending the pre-jump value to the post-jump value; a **Lyapunov function** is a continuous positive definite $V : \mathbb{R}\times X \to \mathbb{R}$ that is continuously differentiable off the impulse times, whose derivative $\dot V(t,y) = \partial_tV + \partial_yV\cdot f(t,y)$ along the continuous flow is nonpositive, and whose jumps satisfy
+**Definition.** For the impulsive system with impulse times $(\tau_k)$ the **jump operator** at time $t$ associated with the impulsive equation $y' = f(t,y)$ is the map sending the pre-jump value to the post-jump value; a **Lyapunov function** is a continuous positive definite $V : \mathbb{R}\times X \to \mathbb{R}$ that is continuously differentiable off the impulse times, whose derivative $\left(dV/dt\right)(t,y) = \partial/\partial t\,V + \partial/\partial y\,V\cdot f(t,y)$ along the continuous flow is nonpositive, and whose jumps satisfy
 
 $$
 V\bigl(\tau_k^+, y(\tau_k^+)\bigr) \le V\bigl(\tau_k^-, y(\tau_k^-)\bigr)
@@ -118,9 +118,9 @@ $$
 
 along solutions.
 
-**Theorem (stability).** If such a Lyapunov function exists with $\dot V \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $\dot V \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.
+**Theorem (stability).** If such a Lyapunov function exists with $dV/dt \le 0$ and nonincreasing jumps, the zero solution is stable; if in addition $dV/dt \le -w(\|y\|)$ for a positive definite $w$ and the jumps satisfy $V(\tau_k^+,y^+) \le (1 - d_k)V(\tau_k^-,y^-)$ with $d_k \ge 0$ and $\sum_k d_k = \infty$, the zero solution is asymptotically stable.
 
-*Proof.* Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $\dot V \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$.
+*Proof.* Between impulses $V(\tau_k^+,y(t))$ is nonincreasing by $dV/dt \le 0$, and the jump hypothesis makes it nonincreasing across the impulses as well; so $V$ is a nonincreasing function of time along the solution, and positive definiteness gives stability exactly as in the direct method of Lyapunov for ordinary equations. Under the stronger hypotheses the total decrement is infinite, so $V \to 0$ and, by positive definiteness, $y \to 0$.
 
 **Corollary (linear systems).** For the linear impulsive system with constant $A$ and jumps $B_k$, the quadratic $V(y) = y^*y$ gives
 
@@ -128,7 +128,7 @@ $$
 V(y(\tau_k^+)) = \|(I+B_k)y(\tau_k^-)\|^2 \le \|I+B_k\|^2\,V(y(\tau_k^-)),
 $$
 
-and the derivative along the flow is $\dot V = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le \exp(-2\beta_k)$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.
+and the derivative along the flow is $dV/dt = y^*(A^*+A)y$. Hence if $A^*+A \le -2\alpha I$ and $\|I+B_k\|^2 \le \exp(-2\beta_k)$ with $\alpha$ and the $\beta_k$ giving an infinite total decrement, the zero solution is asymptotically stable.
 
 *Proof.* Immediate from the theorem applied to the quadratic; the infinite decrement condition is $\sum_k(\beta_k) = \infty$ when the impulses are separated in a bounded way, more precisely when the inter-impulse times are bounded above, so that the continuous decrement $\alpha \cdot$ (time) is not lost.
 
@@ -199,7 +199,7 @@ The measure-driven formulation $dy = F(t,y)\,d\mu$ replaces the discrete list of
 | $M$ | Monodromy matrix over one period |
 | Floquet multipliers, exponents | Eigenvalues of $M$ and of its logarithm $C$ |
 | $\rho(M)$ | Spectral radius of the jump matrix, $\rho(M)=\lim_n\|M^n\|^{1/n}$ |
-| $V(t,y)$ | Lyapunov function; $\dot V$ its derivative along the flow |
+| $V(t,y)$ | Lyapunov function; $dV/dt$ its derivative along the flow |
 | $d_k$ | Fractional decrement $V(\tau_k^+,y^+)\le(1-d_k)V(\tau_k^-,y^-)$ |
 | $\mu$, $\delta_{\tau}$ | Impulse measure and Dirac measure at $\tau$ |
 | $dy = F(t,y)\,d\mu$ | Measure-driven (Stieltjes) formulation |

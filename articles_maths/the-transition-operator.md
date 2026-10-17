@@ -59,7 +59,7 @@ R_\lambda-R_\mu=(\mu-\lambda)R_\lambda R_\mu,\qquad (\lambda-L)R_\lambda=\mathrm
 $$
 and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
-*Proof.* The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial_t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.
+*Proof.* The resolvent identity is the algebra of $\int_0^\infty \exp(-\lambda t)P_t\,dt$ with the semigroup law, and the two identities are the integration by parts of $\partial/\partial t(P_tf)=-\exp(-\lambda t)\cdot$; the uniqueness is the maximum principle for $\lambda-L$, obtained by taking the Laplace transform of the semigroup and using the contraction property. This is the classical resolvent calculus of a semigroup.
 
 ### The Hille–Yosida characterisation
 
@@ -73,9 +73,9 @@ and $R_\lambda f$ is the unique solution of $\lambda u-Lu=f$.
 
 **Theorem (Kolmogorov equations).** Let the transition semigroup be Feller with generator $L$ and let the process be non-explosive. Then for $f\in\mathcal D(L)$ the function $u(t,x)=P_tf(x)$ solves the **backward equation**
 $$
-\partial_t u=Lu,\qquad u(0,x)=f(x),
+\partial/\partial t u=Lu,\qquad u(0,x)=f(x),
 $$
-and the transition kernels solve the **forward equation** $\partial_t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.
+and the transition kernels solve the **forward equation** $\partial/\partial t p_t=p_tL$ in the weak sense. For a finite state space both reduce to $P_t=\exp(tL)$, and for a general state space $P_tf=\lim_n(I-\tfrac tnL)^{-n}f$ on $\mathcal D(L)$.
 
 *Proof.* The backward equation is the semigroup law differentiated at $t=0$ in the space variable; the forward equation is the same statement read on the measures, where the generator acts as the transpose $L^*$ on the predual. The exponential formula is the Hille–Yosida approximation.
 
@@ -88,7 +88,7 @@ $$
 
 **Theorem.** The $Q$-matrix acts on finitely supported functions by $Lf(x)=\sum_y q_{xy}f(y)$, and on a finite state space the semigroup is the matrix exponential $P_t=\exp(tQ)$.
 
-*Proof.* The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial_tP_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.
+*Proof.* The action is the definition of $Q$ as the derivative at the origin; the matrix exponential solves $\partial/\partial t\,P_t=P_tQ=QP_t$ in finite dimension, which is the two Kolmogorov equations.
 
 ## The Invariant Measures of the Semigroup
 
@@ -147,11 +147,11 @@ A transition semigroup is a family $\{P_t\}_{t\ge0}$ of Markov kernels with $P_0
 | $C_0(E)$, Feller | continuous functions vanishing at infinity; preservation and continuity |
 | $Lf=\lim_{t\to0}(P_tf-f)/t$ | generator, domain $\mathcal D(L)$ |
 | $R_\lambda=(\lambda-L)^{-1}=\int_0^\infty \exp(-\lambda t)P_t\,dt$ | resolvent |
-| $P_t=\exp(tL)$, $\partial_t u=Lu$ | exponential formula and Kolmogorov backward equation |
+| $P_t=\exp(tL)$, $\partial/\partial t u=Lu$ | exponential formula and Kolmogorov backward equation |
 | $q_{xy}$, $Q$ | generator matrix and its action on finitely supported functions |
 | $\pi P_t=\pi$, $\pi(Lf)=0$ | invariant measure, its generator characterisation |
 | $\widehat{P_tf}(\xi)=\exp(-t|\xi|^2/2)\mathcal F f$ | heat semigroup on $\mathbb R^d$ |
-| $L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial_x^2-\theta x\partial_x$ | Brownian and Ornstein–Uhlenbeck generators |
+| $L=\frac12\Delta$, $L=\frac{\sigma^2}{2}\partial^2/\partial x^2-\theta x\partial/\partial x$ | Brownian and Ornstein–Uhlenbeck generators |
 
 ## Further Reading
 

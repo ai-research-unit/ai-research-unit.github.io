@@ -104,10 +104,10 @@ $$
 the **unitary group** of the form is
 
 $$
-U(1,1) = \{A \in GL_2(\mathbb{C}) : A^{*} J A = J\} ,
+\mathrm{U}(1,1) = \{A \in GL_2(\mathbb{C}) : A^{*} J A = J\} ,
 $$
 
-with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitary group $SU(1,1)$ is the subgroup of determinant one; the projective group is $PU(1,1) = U(1,1)/\{\pm 1\}$.
+with $A^* = \bar{A}^{\mathsf T}$ the conjugate transpose, and the special unitary group $SU(1,1)$ is the subgroup of determinant one; the projective group is $PU(1,1) = \mathrm{U}(1,1)/\{\pm 1\}$.
 
 **Theorem.** The adjoint of a matrix $A$ with respect to $J$ is $A^{\dagger} = J^{-1}A^{*}J$, the unitary elements are those with $A^{\dagger} = A^{-1}$, and the projective unitary group of the form of signature $(1,1)$ is the real Möbius group,
 
@@ -138,7 +138,7 @@ The two forms correspond to the two classes of the Galois cohomology $H^1(\mathb
 
 ## Summary
 
-The Möbius operators are the fractional linear transformations of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and the **complex conjugation** $\iota(z) = \bar z$ is an anti-Möbius involution of the sphere fixing the real projective line pointwise. The conjugation acts on the group by $\sigma(M_A) = M_{\bar A}$, an involutive automorphism of the group of the operators, and its fixed subgroup is the **real Möbius group** $PSL_2(\mathbb{R})$, the group of the real fractional linear maps, which acts on the upper half-plane as the isometry group of the hyperbolic plane and whose involution action on the plane is the reflection in the imaginary axis. The adjoint with respect to the Hermitian form of signature $(1,1)$ gives the unitary group $U(1,1)$, and the projective unitary group of the form is the real Möbius group, $PU(1,1) \cong PSU(1,1) \cong PSL_2(\mathbb{R})$, so the fixed subgroup of the involution and the projective unitary group coincide and the representation is a projective $*$-representation; the agreement is proved and not assumed. The complex group has exactly two real forms up to conjugacy, the split $PSL_2(\mathbb{R})$ of the conjugation and the compact $PSU(2) \cong SO(3)$ of the quaternionic involution, corresponding to the two classes of the Galois cohomology.
+The Möbius operators are the fractional linear transformations of the Riemann sphere, realised by the matrices of $PGL_2(\mathbb{C})$ up to the scalars, and the **complex conjugation** $\iota(z) = \bar z$ is an anti-Möbius involution of the sphere fixing the real projective line pointwise. The conjugation acts on the group by $\sigma(M_A) = M_{\bar A}$, an involutive automorphism of the group of the operators, and its fixed subgroup is the **real Möbius group** $PSL_2(\mathbb{R})$, the group of the real fractional linear maps, which acts on the upper half-plane as the isometry group of the hyperbolic plane and whose involution action on the plane is the reflection in the imaginary axis. The adjoint with respect to the Hermitian form of signature $(1,1)$ gives the unitary group $\mathrm{U}(1,1)$, and the projective unitary group of the form is the real Möbius group, $PU(1,1) \cong PSU(1,1) \cong PSL_2(\mathbb{R})$, so the fixed subgroup of the involution and the projective unitary group coincide and the representation is a projective $*$-representation; the agreement is proved and not assumed. The complex group has exactly two real forms up to conjugacy, the split $PSL_2(\mathbb{R})$ of the conjugation and the compact $PSU(2) \cong SO(3)$ of the quaternionic involution, corresponding to the two classes of the Galois cohomology.
 
 ## Summary of Notation
 
@@ -152,7 +152,7 @@ The Möbius operators are the fractional linear transformations of the Riemann s
 | $PGL_2(\mathbb{C})^{\sigma} = PSL_2(\mathbb{R})$ | Real Möbius group, the fixed subgroup |
 | $J = \operatorname{diag}(1,-1)$ | Hermitian form of signature $(1,1)$ |
 | $A^{\dagger} = J^{-1}A^{*}J$ | Adjoint with respect to $J$ |
-| $U(1,1)$, $SU(1,1)$, $PU(1,1)$ | Unitary groups of the form of signature $(1,1)$ |
+| $\mathrm{U}(1,1)$, $SU(1,1)$, $PU(1,1)$ | Unitary groups of the form of signature $(1,1)$ |
 | $PU(1,1) \cong PSL_2(\mathbb{R})$ | Agreement of the unitary and the real Möbius groups |
 | $PSU(2) \cong SO(3)$ | Compact real form of $PSL_2(\mathbb{C})$ |
 | $\mathbb{H}^2 = \{z : \operatorname{Im} z > 0\}$ | Upper half-plane of the hyperbolic plane |

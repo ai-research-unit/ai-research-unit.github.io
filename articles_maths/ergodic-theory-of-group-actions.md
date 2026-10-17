@@ -129,17 +129,17 @@ $$
 \frac{|gF_n \triangle F_n|}{|F_n|} \longrightarrow 0 \qquad \text{for every } g \in G,
 $$
 
-a **Følner sequence**; the definition extends to a locally compact group by replacing cardinality with Haar measure, $|F| = \mu_G(F)$, and the sequence may be taken increasing and exhausting $G$. Abelian, nilpotent and solvable groups are amenable, as are all compact groups and all finite groups; the free group $F_2$ is not, and neither is a connected semisimple Lie group with no compact factors.
+a **Følner sequence**; the definition extends to a locally compact group by replacing cardinality with Haar measure, $|F| = \m\eta_G(F)$, and the sequence may be taken increasing and exhausting $G$. Abelian, nilpotent and solvable groups are amenable, as are all compact groups and all finite groups; the free group $F_2$ is not, and neither is a connected semisimple Lie group with no compact factors.
 
 **Theorem (mean ergodic theorem for amenable groups).** Let $G$ be an amenable locally compact group acting on $(X,\mathcal{B},\mu)$ by measure-preserving transformations, let $\{F_n\}$ be a Følner sequence, and let $P$ be the projection onto the invariant vectors of the Koopman representation. Then for every $f \in L^2(X,\mu)$,
 
 $$
-\frac{1}{\mu_G(F_n)}\int_{F_n} U_g f \, dg \longrightarrow P f \qquad \text{in } L^2(X,\mu).
+\frac{1}{\m\eta_G(F_n)}\int_{F_n} U_g f \, dg \longrightarrow P f \qquad \text{in } L^2(X,\mu).
 $$
 
-*Proof.* The operator $A_n f = \mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ is a contraction of $L^2$ and commutes with the action, since $U_h A_n U_h^{-1}$ is the average over $hF_n$ and Følner convergence gives $\|A_n - U_h A_n U_h^{-1}\| \to 0$ for each $h$. On invariant vectors $A_n f = f$; on the closed span of $\{U_g f - f\}$ the average tends to $0$ by the Følner condition. The two pieces exhaust $L^2$ as in the abelian case, and a uniform bound plus density completes the argument.
+*Proof.* The operator $A_n f = \m\eta_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ is a contraction of $L^2$ and commutes with the action, since $U_h A_n U_h^{-1}$ is the average over $hF_n$ and Følner convergence gives $\|A_n - U_h A_n U_h^{-1}\| \to 0$ for each $h$. On invariant vectors $A_n f = f$; on the closed span of $\{U_g f - f\}$ the average tends to $0$ by the Følner condition. The two pieces exhaust $L^2$ as in the abelian case, and a uniform bound plus density completes the argument.
 
-**Corollary (equidistribution of Følner averages).** If the action is ergodic, then for every $f \in L^1(X,\mu)$ the averages $\mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ converge to $\int f \, d\mu$ in $L^1$; for a $\mathbb{Z}$-action with $F_n = \{0, 1, \dots, n-1\}$ this is the von Neumann theorem in $L^1$.
+**Corollary (equidistribution of Følner averages).** If the action is ergodic, then for every $f \in L^1(X,\mu)$ the averages $\m\eta_G(F_n)^{-1}\int_{F_n} U_g f \, dg$ converge to $\int f \, d\mu$ in $L^1$; for a $\mathbb{Z}$-action with $F_n = \{0, 1, \dots, n-1\}$ this is the von Neumann theorem in $L^1$.
 
 The passage from $L^2$ to $L^1$ uses that $L^2$ is dense in $L^1$ for a probability measure; this is the reason the mean ergodic theorem is easiest in the $L^2$ setting.
 
@@ -148,12 +148,12 @@ The passage from $L^2$ to $L^1$ uses that $L^2$ is dense in $L^1$ for a probabil
 **Theorem (pointwise ergodic theorem for amenable groups; Lindenstrauss).** Let $G$ be an amenable locally compact group acting on $(X,\mathcal{B},\mu)$ and let $\{F_n\}$ be a tempered Følner sequence. Then for every $f \in L^1(X,\mu)$ the averages
 
 $$
-\frac{1}{\mu_G(F_n)}\int_{F_n} f(gx) \, dg
+\frac{1}{\m\eta_G(F_n)}\int_{F_n} f(gx) \, dg
 $$
 
 converge a.e. to the conditional expectation $\mathbb{E}[f \mid \mathcal{I}]$ of $f$ with respect to the invariant $\sigma$-algebra $\mathcal{I}$. In particular, for an ergodic action the limit is the constant $\int f \, d\mu$.
 
-The theorem is stated here as the group-action form of the pointwise result; for $G = \mathbb{Z}$ it is Birkhoff's theorem, whose proof by the maximal inequality and the upcrossing argument is in the cited literature. The Følner form requires the Følner sequence to be **tempered**, a mild growth condition $\mu_G(F_1 \cdots F_n) \leq C \mu_G(F_n)$ that every amenable group admits, and it is for such sequences that the maximal inequality holds. For groups with a word metric one may use balls in place of Følner sets when the group has subexponential growth, but not in general.
+The theorem is stated here as the group-action form of the pointwise result; for $G = \mathbb{Z}$ it is Birkhoff's theorem, whose proof by the maximal inequality and the upcrossing argument is in the cited literature. The Følner form requires the Følner sequence to be **tempered**, a mild growth condition $\m\eta_G(F_1 \cdots F_n) \leq C \m\eta_G(F_n)$ that every amenable group admits, and it is for such sequences that the maximal inequality holds. For groups with a word metric one may use balls in place of Følner sets when the group has subexponential growth, but not in general.
 
 ## Ergodicity Criteria for Group Actions
 
@@ -161,29 +161,29 @@ The theorem is stated here as the group-action form of the pointwise result; for
 
 The first criterion is a contraction property of the group, and it explains why the geodesic flow is ergodic once the horocycle flow is: a function of the diagonal direction is forced to be constant along the contracted unipotent direction.
 
-**Theorem (Mautner phenomenon).** Let $a_s$ and $u_t$ be one-parameter groups of measure-preserving transformations of $(X,\mathcal{B},\mu)$ satisfying the commutation relation
+**Theorem (Mautner phenomenon).** Let $a_s$ and $\eta_t$ be one-parameter groups of measure-preserving transformations of $(X,\mathcal{B},\mu)$ satisfying the commutation relation
 
 $$
-a_s u_t a_s^{-1} = u_{\exp(\lambda s) t}, \qquad \lambda > 0,
+a_s \eta_t a_s^{-1} = \eta_{\exp(\lambda s) t}, \qquad \lambda > 0,
 $$
 
-so that the conjugates $a_s u_t a_s^{-1}$ shrink to the identity as $s \to -\infty$. Then every measurable function invariant under the $a_s$ is invariant under every $u_t$.
+so that the conjugates $a_s \eta_t a_s^{-1}$ shrink to the identity as $s \to -\infty$. Then every measurable function invariant under the $a_s$ is invariant under every $\eta_t$.
 
-*Proof.* Let $f \in L^2(X,\mu)$ satisfy $f \circ a_s = f$ a.e. for every $s$, and fix $t$. For each $s > 0$ the relation gives $u_t = a_s u_{\exp(-\lambda s) t} a_s^{-1}$, so
+*Proof.* Let $f \in L^2(X,\mu)$ satisfy $f \circ a_s = f$ a.e. for every $s$, and fix $t$. For each $s > 0$ the relation gives $\eta_t = a_s \eta_{\exp(-\lambda s) t} a_s^{-1}$, so
 
 $$
-f \circ u_t = f \circ a_s \circ u_{\exp(-\lambda s) t} \circ a_s^{-1} = (f \circ u_{\exp(-\lambda s)t}) \circ a_s^{-1},
+f \circ \eta_t = f \circ a_s \circ \eta_{\exp(-\lambda s) t} \circ a_s^{-1} = (f \circ \eta_{\exp(-\lambda s)t}) \circ a_s^{-1},
 $$
 
 using the invariance of $f$ under $a_s$ on the left. Since each $a_s^{-1}$ preserves $\mu$,
 
 $$
-\|f \circ u_t - f\|_2^2 = \bigl\|(f \circ u_{\exp(-\lambda s)t} - f) \circ a_s^{-1}\bigr\|_2^2 = \|f \circ u_{\exp(-\lambda s) t} - f\|_2^2.
+\|f \circ \eta_t - f\|_2^2 = \bigl\|(f \circ \eta_{\exp(-\lambda s)t} - f) \circ a_s^{-1}\bigr\|_2^2 = \|f \circ \eta_{\exp(-\lambda s) t} - f\|_2^2.
 $$
 
-As $s \to +\infty$ one has $\exp(-\lambda s)t \to 0$, and the map $t \mapsto f \circ u_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ u_t = f$ a.e. for every $t$.
+As $s \to +\infty$ one has $\exp(-\lambda s)t \to 0$, and the map $t \mapsto f \circ \eta_t$ is strongly continuous at $t = 0$ because a measurable measure-preserving flow acts strongly continuously on $L^2$; hence the right-hand side tends to $0$. Therefore $f \circ \eta_t = f$ a.e. for every $t$.
 
-**Corollary.** If the unipotent flow $u_t$ acts ergodically on $(X,\mu)$ and $a_s$ contracts $u_t$ as in the theorem, then the flow $a_s$ acts ergodically too: an invariant function of the diagonal flow is invariant under the unipotent flow, hence constant.
+**Corollary.** If the unipotent flow $\eta_t$ acts ergodically on $(X,\mu)$ and $a_s$ contracts $\eta_t$ as in the theorem, then the flow $a_s$ acts ergodically too: an invariant function of the diagonal flow is invariant under the unipotent flow, hence constant.
 
 This is the mechanism by which the ergodicity of the horocycle flow propagates to the geodesic flow on $G/\Gamma$ with $G = SL_2(\mathbb{R})$; the same contraction argument, with the roles of $U^+$ and $U^-$ interchanged, supplies invariance under the opposite horospherical subgroup, and the two together force invariance under the ambient group.
 
@@ -266,18 +266,18 @@ A rotation is never mixing: the eigenfunction computation shows $\langle U_{T_a}
 **Example (the geodesic and horocycle flows).** Let $G = SL_2(\mathbb{R})$, let $\Gamma = SL_2(\mathbb{Z})$, and let $X = G/\Gamma$ with its finite $G$-invariant measure. The **horocycle flow** is the flow of the unipotent subgroup
 
 $$
-u_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}, \qquad U = \left\{u_t : t \in \mathbb{R}\right\},
+\eta_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}, \qquad U = \left\{\eta_t : t \in \mathbb{R}\right\},
 $$
 
-and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(\exp(t/2), \exp(-t/2))\}$. The Mautner relation $a_s u_t a_s^{-1} = u_{\exp(-s)t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed.
+and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(\exp(t/2), \exp(-t/2))\}$. The Mautner relation $a_s \eta_t a_s^{-1} = \eta_{\exp(-s)t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed.
 
-**Example (flows on nilmanifolds).** Let $N$ be a simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. The action of $u_t$ on $N/\Gamma$ is ergodic if and only if the flow is not confined to a smaller closed orbit, and the general principle — that the orbit closure is a submanifold and the flow is uniquely ergodic on it — is the content of Ratner's topological theorem for unipotent flows. The rotation flow of the two-torus, the special case in which $N = \mathbb{R}^2$ and $\Gamma = \mathbb{Z}^2$, is the elementary instance; the Heisenberg nilmanifold is the first genuinely non-abelian case and exhibits a unipotent flow that is mixing in the direction of the centre and periodic in the transverse direction.
+**Example (flows on nilmanifolds).** Let $N$ be a simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{\eta_t\}$ be a one-parameter subgroup. The action of $\eta_t$ on $N/\Gamma$ is ergodic if and only if the flow is not confined to a smaller closed orbit, and the general principle — that the orbit closure is a submanifold and the flow is uniquely ergodic on it — is the content of Ratner's topological theorem for unipotent flows. The rotation flow of the two-torus, the special case in which $N = \mathbb{R}^2$ and $\Gamma = \mathbb{Z}^2$, is the elementary instance; the Heisenberg nilmanifold is the first genuinely non-abelian case and exhibits a unipotent flow that is mixing in the direction of the centre and periodic in the transverse direction.
 
 ## Summary
 
 An action of a locally compact group $G$ by measure-preserving transformations of a probability space $(X,\mathcal{B},\mu)$ is ergodic when every invariant set has measure $0$ or $1$, equivalently when every invariant measurable function is constant a.e., and the Koopman representation $U_g f(x) = f(g^{-1}x)$ turns this into the condition that the constants are the only invariant vectors of a unitary representation of $G$. Mixing is the decay $\mu(gA \cap B) \to \mu(A)\mu(B)$ as $g \to \infty$, equivalently the vanishing of the matrix coefficients of the Koopman representation on the mean-zero part; weak mixing replaces the limit by a Følner average and is equivalent to the ergodicity of the product action; and mixing of higher order strengthens the decay of correlations for several translates at once.
 
-For an amenable group, a Følner sequence $\{F_n\}$ supplies the averaging sets, and the mean ergodic theorem asserts that $\mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg \to Pf$ in $L^2$, with $Pf$ the projection onto the invariant vectors; the pointwise theorem of Lindenstrauss asserts convergence a.e. to the conditional expectation on the invariant $\sigma$-algebra for tempered Følner sequences. For a single transformation these are the von Neumann and Birkhoff theorems, stated here as standard with their proofs in the cited literature.
+For an amenable group, a Følner sequence $\{F_n\}$ supplies the averaging sets, and the mean ergodic theorem asserts that $\m\eta_G(F_n)^{-1}\int_{F_n} U_g f \, dg \to Pf$ in $L^2$, with $Pf$ the projection onto the invariant vectors; the pointwise theorem of Lindenstrauss asserts convergence a.e. to the conditional expectation on the invariant $\sigma$-algebra for tempered Følner sequences. For a single transformation these are the von Neumann and Birkhoff theorems, stated here as standard with their proofs in the cited literature.
 
 The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \to e$; Moore's theorem gives the ergodicity of every non-compact closed subgroup of an irreducible lattice quotient, and the Howe–Moore theorem gives the decay at infinity of the matrix coefficients of a representation without invariant vectors, hence the mixing of an ergodic homogeneous action. Hopf's ratio ergodic theorem is the form of the ergodic theorem that survives the absence of a finite invariant measure, and orbit equivalence — with Dye's theorem that all ergodic amenable actions on a standard non-atomic space are orbit-equivalent — is the coarsest measure-theoretic equivalence of actions. The examples are the rationally independent translations of a torus, which are ergodic and never mixing; the Bernoulli shift, mixing of all orders; the hyperbolic torus automorphisms; and the horocycle and geodesic flows on $SL_2(\mathbb{Z})\backslash SL_2(\mathbb{R})$, where the Mautner relation between the unipotent and diagonal subgroups is what carries ergodicity from one to the other.
 
@@ -286,7 +286,7 @@ The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \t
 | Symbol | Meaning |
 |---|---|
 | $(X, \mathcal{B}, \mu)$ | Probability space, $\mu(X)=1$, of an action |
-| $G$, $e$, $dx$, $\mu_G$ | Locally compact second countable group, identity, left Haar measure |
+| $G$, $e$, $dx$, $\m\eta_G$ | Locally compact second countable group, identity, left Haar measure |
 | $gx$, $gA$ | Action of $g$ on a point, on a set |
 | a.e. | Almost everywhere; the probabilistic synonym *almost surely* is not used |
 | invariant, ergodic | $\mu(gA\triangle A)=0$ for all $g$; every invariant set has measure $0$ or $1$ |
@@ -298,14 +298,14 @@ The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \t
 | mixing of order $k$ | joint decay for $k$ translates with $g_i g_j^{-1}\to\infty$ |
 | $F_n$ | Følner sequence: $\lvert gF_n\triangle F_n\rvert/\lvert F_n\rvert\to0$ |
 | amenable | existence of a Følner sequence (Part II, *Amenable Groups*) |
-| tempered | growth condition $\mu_G(F_1\cdots F_n)\le C\mu_G(F_n)$ on a Følner sequence |
-| Mautner | $a_s u_t a_s^{-1}=u_{\exp(\lambda s)t}$: $A$-invariant functions are $u_t$-invariant |
+| tempered | growth condition $\m\eta_G(F_1\cdots F_n)\le C\m\eta_G(F_n)$ on a Følner sequence |
+| Mautner | $a_s \eta_t a_s^{-1}=\eta_{\exp(\lambda s)t}$: $A$-invariant functions are $\eta_t$-invariant |
 | Moore's theorem | each non-compact factor acts ergodically on the quotient by an irreducible lattice |
 | Howe–Moore | matrix coefficients of an invariant-free representation vanish at infinity |
 | orbit equivalence | measure isomorphism carrying orbits to orbits |
 | Kac's lemma | expected return time to $A$ is $1/\mu(A)$ |
 | $T_a(x)=x+a$ | Translation of the torus $T^n=\mathbb{R}^n/\mathbb{Z}^n$ |
-| $u_t$, $a_s$ | Horocycle and diagonal (geodesic) one-parameter subgroups of $SL_2(\mathbb{R})$ |
+| $\eta_t$, $a_s$ | Horocycle and diagonal (geodesic) one-parameter subgroups of $SL_2(\mathbb{R})$ |
 
 
 

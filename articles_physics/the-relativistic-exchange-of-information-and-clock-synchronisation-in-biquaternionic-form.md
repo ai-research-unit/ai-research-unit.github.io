@@ -8,7 +8,7 @@ The two themes are one. A signal is a null displacement, and a null displacement
 
 The article develops the following.
 
-- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta\vec x = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t_{\mathrm{ret}} = t - \vec u_{\mathrm s}\cdot\vec x/c$, $t_{\mathrm{adv}} = t + \vec u_{\mathrm s}\cdot\vec x/c$ are constant along the outgoing and incoming rays.
+- **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is a zero divisor. Writing the signal direction as $\vec u_{\mathrm s}$, the null condition is $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded and advanced combinations $t_{\mathrm{ret}} = t - \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t_{\mathrm{adv}} = t + \vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ are constant along the outgoing and incoming rays.
 - **Clocks read proper time.** The proper time of a worldline is the integral of $\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}/c$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 - **Einstein synchronisation is the round trip.** The reflection event is assigned the mid-time, $t_2 = (t_1+t_3)/2$, and the distance is $L = c(t_3-t_1)/2$. The assignment fixes the one-way speed of light by convention; only the round-trip speed is directly measured.
 - **The exchange of frequency is the k-factor.** The ratio of received to emitted intervals between two relatively moving observers is Bondi's $k = \sqrt{(1+\beta)/(1-\beta)}$, the reciprocal of the longitudinal Doppler factor of the companion article *Exercise: The Relativistic Doppler Effect*, and $k$-factors multiply under composition.
@@ -18,23 +18,23 @@ The article develops the following.
 
 The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\vec a$ of imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \vec x$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_\mu^2 = -e_t$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_t+\vec a$ of imaginary scalar part and real vector part. The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial Q_t+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
 ## Signals as Null Displacements
 
 ### The Null Condition Between Two Events
 
-Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = ic\,t_A\,e_0 + \vec x_A$, and a receiver at the event $B$ with $\tilde{Q}_B = ic\,t_B\,e_0 + \vec x_B$. The displacement is
+Let an emitter be at the event $A$ with coordinate $\tilde{Q}_A = ic\,t_A\,e_t + x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, and a receiver at the event $B$ with $\tilde{Q}_B = ic\,t_B\,e_t + x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z$. The displacement is
 
 $$
-\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta t\,e_0 + \Delta\vec x,
-\qquad \Delta t = t_B - t_A, \quad \Delta\vec x = \vec x_B - \vec x_A,
+\tilde{Q}_{BA} = \tilde{Q}_B - \tilde{Q}_A = ic\,\Delta t\,e_t + \Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z),
+\qquad \Delta t = t_B - t_A, \quad \Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z - (x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z),
 $$
 
-with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\Delta t)^2 + |\Delta\vec x|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
+with biquaternion norm $\langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2(\Delta t)^2 + |\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2$. A light signal travelling from $A$ to $B$ covers the spatial separation at speed $c$, so
 
 $$
-|\Delta\vec x| = c\,\Delta t,
+|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t,
 \qquad
 \langle\tilde{Q}_{BA}\rangle_{\natural} = 0 :
 $$
@@ -44,7 +44,7 @@ $$
 Writing the propagation direction as the real unit vector $\vec u_{\mathrm s}$, the null condition becomes the vector equation
 
 $$
-\Delta\vec x = \pm c\,\Delta t\,\vec u_{\mathrm s},
+\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t\,\vec u_{\mathrm s},
 $$
 
 the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\mathrm s}$ or along $-\vec u_{\mathrm s}$. The two directional solutions are the two sheets of the local cone, and the sign is the time orientation: with $\Delta t > 0$ the displacement is future-directed.
@@ -54,15 +54,15 @@ the sign selecting whether the signal travels from $A$ to $B$ along $+\vec u_{\m
 It is useful to package the two directions into the retarded and advanced coordinates
 
 $$
-t_{\mathrm{ret}} = t - \frac{\vec u_{\mathrm s}\cdot\vec x}{c},
+t_{\mathrm{ret}} = t - \frac{\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c},
 \qquad
-t_{\mathrm{adv}} = t + \frac{\vec u_{\mathrm s}\cdot\vec x}{c}.
+t_{\mathrm{adv}} = t + \frac{\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}.
 $$
 
-Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $t_{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $t_{\mathrm{adv}}$ is constant. The verification is one line: if $\vec x(t) = \vec x_0 + c(t-t_0)\vec u_{\mathrm s}$ then
+Along an outgoing signal propagating in the $+\vec u_{\mathrm s}$ direction the coordinate $t_{\mathrm{ret}}$ is constant, and along an incoming signal propagating in the $-\vec u_{\mathrm s}$ direction the coordinate $t_{\mathrm{adv}}$ is constant. The verification is one line: if $x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z = x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z + c(t-t_0)\vec u_{\mathrm s}$ then
 
 $$
-t_{\mathrm{ret}}(t) = t - \frac{\vec u_{\mathrm s}\cdot\vec x_0}{c} - (t-t_0) = t_0 - \frac{\vec u_{\mathrm s}\cdot\vec x_0}{c},
+t_{\mathrm{ret}}(t) = t - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c} - (t-t_0) = t_0 - \frac{\vec u_{\mathrm s}\cdot(x_0\,\vec e_x+y_0\,\vec e_y+z_0\,\vec e_z)}{c},
 $$
 
 independent of $t$, while $t_{\mathrm{adv}}$ increases at rate $2$; and conversely for the incoming ray.
@@ -73,10 +73,10 @@ $$
 \langle\tilde{Q}_{BA}\rangle_{\natural} = -c^2\,\Delta t_{\mathrm{ret}}\,\Delta t_{\mathrm{adv}} .
 $$
 
-A signal therefore satisfies $\Delta t_{\mathrm{ret}} = 0$ or $\Delta t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde{K} = i\omega/c\,e_0 + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
+A signal therefore satisfies $\Delta t_{\mathrm{ret}} = 0$ or $\Delta t_{\mathrm{adv}} = 0$, and a null plane wave has a phase proportional to one of them. For a wave of four-wavevector $\tilde{K} = i\omega/c\,e_t + \vec k$ propagating along $\vec u_k$, the phase of the companion article *Exercise: The Relativistic Doppler Effect*,
 
 $$
-\Phi = \mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right) = \vec k\cdot\vec x - \omega t = -\omega\left(t - \frac{\vec u_k\cdot\vec x}{c}\right) = -\omega\,t_{\mathrm{ret}},
+\Phi = \mathrm{Sc}\!\left(\tilde{K}\tilde{Q}^{\natural}\right) = \vec k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) - \omega t = -\omega\left(t - \frac{\vec u_k\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{c}\right) = -\omega\,t_{\mathrm{ret}},
 $$
 
 is the retarded coordinate multiplied by the frequency. The algebra's phase invariant is thus the statement that an exchange is labelled by a single null coordinate, and it is this coordinate that the signal carries from emitter to receiver.
@@ -93,8 +93,8 @@ A clock is a physical system that measures the interval along its own worldline.
 
 $$
 c\,d\tau = \sqrt{-\,\langle d\tilde{Q}\rangle_{\natural}}
-= \sqrt{-\left(ic\,dt\right)^2 - d\vec x^2}
-= \sqrt{c^2\,dt^2 - d\vec x^2},
+= \sqrt{-\left(ic\,dt\right)^2 -(dx^2+dy^2+dz^2)}
+= \sqrt{c^2\,dt^2 -(dx^2+dy^2+dz^2)},
 $$
 
 the positive root being taken because $d\tilde{Q}$ is timelike along a physical worldline, so that $\langle d\tilde{Q}\rangle_{\natural} < 0$ and $-\langle d\tilde{Q}\rangle_{\natural} > 0$. Factoring the coordinate time,
@@ -102,7 +102,7 @@ the positive root being taken because $d\tilde{Q}$ is timelike along a physical 
 $$
 d\tau = \sqrt{1 - \frac{\vec v^2}{c^2}}\;dt = \frac{dt}{\gamma},
 \qquad
-\vec v = \frac{d\vec x}{dt},
+\vec v = \frac{d(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}{dt},
 \qquad
 \gamma = \left(1-\frac{\vec v^2}{c^2}\right)^{-1/2},
 $$
@@ -123,7 +123,7 @@ Differentiating the worldline with respect to proper time gives the **four-veloc
 $$
 \tilde{V} = \frac{d\tilde{Q}}{d\tau}
 = \frac{d\tilde{Q}}{dt}\frac{dt}{d\tau}
-= \gamma\left(ic\,e_0 + \vec v\right),
+= \gamma\left(ic\,e_t + \vec v\right),
 $$
 
 an element of $\mathbb{M}_-$ whose biquaternion norm is fixed:
@@ -132,7 +132,7 @@ $$
 \langle\tilde{V}\rangle_{\natural} = \gamma^2\left((ic)^2 + \vec v^2\right) = \gamma^2\left(-c^2+t_{\mathrm{adv}}^2\right) = -c^2 .
 $$
 
-Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_0$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
+Every clock, whatever its state of motion, carries a four-velocity of the same biquaternion norm $-c^2$. This normalization is the algebraic statement that proper time is the parameter with respect to which the four-velocity is a unit vector of $\mathbb{M}_-$, and it is the object in terms of which the frequency exchange of the next sections is written. A clock at rest has $\tilde{V} = ic\,e_t$; a clock moving with velocity $\vec v$ has the four-velocity above. The two are related by the boost rotor, and the relation between their interpretations is the content of the twins' effect below.
 
 ## The Radar Method and Einstein Synchronisation
 
@@ -146,7 +146,7 @@ $$
 \langle\tilde{Q}_A' - \tilde{Q}_B\rangle_{\natural} = 0,
 $$
 
-with $\tilde{Q}_A' = ic\,t_3\,e_0+\vec x_A$ the reception event at the mirror's home position. Since $\vec x_A' = \vec x_A$, the spatial separation is the same on both legs, $|\vec x_B-\vec x_A| = L$, and the null conditions read
+with $\tilde{Q}_A' = ic\,t_3\,e_t+x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$ the reception event at the mirror's home position. Since $x_A'\,\vec e_x+y_A'\,\vec e_y+z_A'\,\vec e_z = x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z$, the spatial separation is the same on both legs, $|x_B\,\vec e_x+y_B\,\vec e_y+z_B\,\vec e_z-(x_A\,\vec e_x+y_A\,\vec e_y+z_A\,\vec e_z)| = L$, and the null conditions read
 
 $$
 c^2(t_2-t_1)^2 = L^2,
@@ -182,7 +182,7 @@ independent of $\varepsilon$. The one-way speed of light is therefore convention
 
 ### Two Frames, Two Conventions
 
-A second consequence of defining simultaneity by exchange is that two inertial frames generally adopt incompatible conventions. If frame $S'$ moves with velocity $\vec v_b$ along $e_1$ relative to $S$, and each frame synchronises its own clocks by the radar rule with $\varepsilon = \tfrac12$, then the hypersurface $t' = \mathrm{const}$ is not a hypersurface $t = \mathrm{const}$. The discrepancy is computed in the next section from the boost, and it is the relativity of simultaneity. It is not an imperfection of the radar method; it is the statement that the method is frame-relative, and it is why the exchange of information between frames must be described by a Lorentz transformation rather than by a Galilean one.
+A second consequence of defining simultaneity by exchange is that two inertial frames generally adopt incompatible conventions. If frame $S'$ moves with velocity $\vec v_b$ along $\vec e_x$ relative to $S$, and each frame synchronises its own clocks by the radar rule with $\varepsilon = \tfrac12$, then the hypersurface $t' = \mathrm{const}$ is not a hypersurface $t = \mathrm{const}$. The discrepancy is computed in the next section from the boost, and it is the relativity of simultaneity. It is not an imperfection of the radar method; it is the statement that the method is frame-relative, and it is why the exchange of information between frames must be described by a Lorentz transformation rather than by a Galilean one.
 
 ## The k-Factor and the Exchange of Frequency
 
@@ -242,20 +242,20 @@ The k-factor is a Lorentz scalar in the following limited sense: it is the ratio
 
 ### The Relativity of Simultaneity
 
-Let frame $S'$ move with velocity $\vec v_b = v_b\,\vec u_1$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S'$ to those of $S$ is the rotor conjugation with the boost biquaternion
+Let frame $S'$ move with velocity $\vec v_b = v_b\,\vec u_x$ relative to frame $S$, and let each frame synchronise its clocks by the Einstein rule. The transformation from the coordinates of $S'$ to those of $S$ is the rotor conjugation with the boost biquaternion
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_1,
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\vec u_x,
 \qquad
 \tanh\psi = \frac{v_b}{c},
 $$
 
-of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_0 + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta t$ and $\vec A = \Delta\vec x$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
+of the companion article *The Lorentz Transformation as a Biquaternionic Rotation*. For a displacement $\tilde{A} = i a\,e_t + \vec A$ of $\mathbb{M}_-$, with $a = c\,\Delta t$ and $\vec A = \Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar component transforms by the component action verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*:
 
 $$
 a = \gamma\left(a' + \beta A'_\parallel\right),
 \qquad
-A'_\parallel = \vec u_1\cdot\vec A',
+A'_\parallel = \vec u_x\cdot\vec A',
 $$
 
 the inverse of the relations $a' = \gamma(a-\beta A_\parallel)$, $A'_\parallel = \gamma(A_\parallel-\beta a)$. The sign is the direction convention of the parent articles: the rotor with vector part $+\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ carries $S$ to the frame moving with $+\vec v_b$, and the inverse relation above carries $S'$ back to $S$.
@@ -343,9 +343,9 @@ The conventions and the results taken over from the relativity series are those 
 
 The exchange of information and the synchronisation of clocks are built from the same objects: the null displacements of the material sector and the biquaternion norm along worldlines.
 
-1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta\vec x| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta\vec x = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded coordinate $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot\vec x/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t_{\mathrm{ret}}$.
+1. **Signals are null displacements.** Two events are joined by a light signal exactly when their displacement is null, $|\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)| = c\,\Delta t$, that is, when it is a zero divisor of $\mathbb{B}$. The signal direction satisfies $\Delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \pm c\,\Delta t\,\vec u_{\mathrm s}$, and the retarded coordinate $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ is constant along an outgoing ray. A null plane wave has phase $\Phi = -\omega t_{\mathrm{ret}}$.
 
-2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau = \gamma(ic\,e_0+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
+2. **Clocks read proper time.** The proper time is $\Delta\tau = \int\sqrt{-\langle d\tilde{Q}\rangle_{\natural}}/c = \int\sqrt{1-\vec v^2/c^2}\,dt$, and the clock four-velocity is $\tilde{V} = d\tilde{Q}/d\tau = \gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$.
 
 3. **Einstein synchronisation is the round trip.** For emission at $t_1$, reflection at $t_2$, reception at $t_3$, the null conditions give $t_2 = (t_1+t_3)/2$ and the distance $L = c(t_3-t_1)/2$. The split of the round trip into one-way times is fixed by the convention $t_2 = t_1+\varepsilon(t_3-t_1)$; the round-trip time is independent of $\varepsilon$, and only the two-way speed of light is measured.
 
@@ -364,20 +364,20 @@ The exchange of information and the synchronisation of clocks are built from the
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
-| $\tilde{Q} = ic\,t\,e_0+\vec x$ | Material four-position |
+| $\tilde{Q} = ic\,t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material four-position |
 | $\tilde{Q}_{BA} = \tilde{Q}_B-\tilde{Q}_A$ | Displacement from $A$ to $B$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
 | $\mathrm{Sc}$ | Scalar projection |
 | $\vec u_{\mathrm s}$ | Propagation direction |
-| $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot\vec x/c$, $t_{\mathrm{adv}} = t+\vec u_{\mathrm s}\cdot\vec x/c$ | Retarded and advanced radar coordinates |
-| $\tilde{K} = i\omega/c\,e_0+\vec k$ | Four-wavevector |
+| $t_{\mathrm{ret}} = t-\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$, $t_{\mathrm{adv}} = t+\vec u_{\mathrm s}\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ | Retarded and advanced radar coordinates |
+| $\tilde{K} = i\omega/c\,e_t+\vec k$ | Four-wavevector |
 | $\Phi = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t_{\mathrm{ret}}$ | Plane-wave phase |
 | $\tau$, $\Delta\tau$ | Proper time |
-| $\tilde{V} = \gamma(ic\,e_0+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
+| $\tilde{V} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}\rangle_{\natural}=-c^2$ | Clock four-velocity |
 | $\beta = v_b/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$ | Boost rotor, $\tanh\psi=\beta$ |
 | $t_1,t_2,t_3$ | Emission, reflection and reception times of the radar round trip |

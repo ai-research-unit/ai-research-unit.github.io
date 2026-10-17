@@ -41,7 +41,7 @@ The isomorphism is $X \mapsto X - iJX \in T^{1,0}M$ with inverse $v\mapsto \math
 
 **Proof.** For $X \in TM$, $J(X - iJX) = JX - iJ^2X = JX + iX = i(X - iJX)$ and $J(X+iJX) = JX + iJ^2X = JX - iX = -i(X+iJX)$; since $X = \frac12[(X-iJX) + (X+iJX)]$, the two eigenbundles span $T_{\mathbb{C}}M$ and, having distinct eigenvalues, are independent. Conjugation exchanges them because $J$ is real.
 
-**Example.** On $\mathbb{R}^{2n}$ with coordinates $x_1,\ldots,x_n, y_1,\ldots,y_n$, put $J\partial_{x_i} = \partial_{y_i}$ and $J\partial_{y_i} = -\partial_{x_i}$. Then $J^2 = -\mathrm{id}$, and with $z_i = x_i + iy_i$ the fields $\partial_{z_i} = \frac12(\partial_{x_i} - i\partial_{y_i})$ span $T^{1,0}$ and the fields $\partial_{\bar z_i} = \frac12(\partial_{x_i}+i\partial_{y_i})$ span $T^{0,1}$. This is the **standard complex structure** on $\mathbb{C}^n$.
+**Example.** On $\mathbb{R}^{2n}$ with coordinates $x_1,\ldots,x_n, y_1,\ldots,y_n$, put $J\partial/\partial x_i = \partial/\partial y_i$ and $J\partial/\partial y_i = -\partial/\partial x_i$. Then $J^2 = -\mathrm{id}$, and with $z_i = x_i + iy_i$ the fields $\partial/\partial z_i = \frac12(\partial/\partial x_i - i\partial/\partial y_i)$ span $T^{1,0}$ and the fields $\partial/\partial\bar z_i = \frac12(\partial/\partial x_i+i\partial/\partial y_i)$ span $T^{0,1}$. This is the **standard complex structure** on $\mathbb{C}^n$.
 
 **Example.** Every complex manifold — one with an atlas whose transition functions are holomorphic — carries a canonical almost complex structure: the multiplication by $i$ on the holomorphic tangent bundle. The almost complex structure is thus the pointwise shadow of a complex structure, and the question of when the shadow determines the structure is the subject of the next section.
 
@@ -82,7 +82,7 @@ $$
 **Example (a non-integrable almost complex structure).** On $\mathbb{R}^4$ with coordinates $x, y, z, t$ define
 
 $$
-J\partial_x = \partial_y + z\,\partial_z, \quad J\partial_y = -\partial_x - z\,\partial_t, \quad J\partial_z = \partial_t, \quad J\partial_t = -\partial_z .
+J\partial/\partial x = \partial/\partial y + z\,\partial/\partial z, \quad J\partial/\partial y = -\partial/\partial x - z\,\partial/\partial t, \quad J\partial/\partial z = \partial/\partial t, \quad J\partial/\partial t = -\partial/\partial z .
 $$
 
 The matrix of $J$ in the coordinate frame is
@@ -92,20 +92,20 @@ $$
 and one checks $J^2 = -\mathrm{id}$ for every value of $z$. Computing the Nijenhuis tensor on the coordinate fields gives
 
 $$
-N_J(\partial_x, \partial_z) = \partial_t \neq 0,
+N_J(\partial/\partial x, \partial/\partial z) = \partial/\partial t \neq 0,
 $$
 
-so $J$ is not integrable: no holomorphic coordinates exist near any point. The example shows that the integrability condition is a genuine restriction and that the tensor $N_J$ is the obstruction. The structure is a member of the family obtained from the displayed matrix by replacing the entry $z$ with a function $a$ of the coordinates, that is, by $J\partial_x = \partial_y + a\,\partial_z$, $J\partial_y = -\partial_x - a\,\partial_t$, $J\partial_z = \partial_t$, $J\partial_t = -\partial_z$. One computes
+so $J$ is not integrable: no holomorphic coordinates exist near any point. The example shows that the integrability condition is a genuine restriction and that the tensor $N_J$ is the obstruction. The structure is a member of the family obtained from the displayed matrix by replacing the entry $z$ with a function $a$ of the coordinates, that is, by $J\partial/\partial x = \partial/\partial y + a\,\partial/\partial z$, $J\partial/\partial y = -\partial/\partial x - a\,\partial/\partial t$, $J\partial/\partial z = \partial/\partial t$, $J\partial/\partial t = -\partial/\partial z$. One computes
 
 $$
-N_J(\partial_x,\partial_z) = -a_t\,\partial_z + a_z\,\partial_t, \qquad N_J(\partial_x,\partial_y) = a\,a_t\,\partial_z - a\,a_z\,\partial_t,
+N_J(\partial/\partial x,\partial/\partial z) = -a_t\,\partial/\partial z + a_z\,\partial/\partial t, \qquad N_J(\partial/\partial x,\partial/\partial y) = a\,a_t\,\partial/\partial z - a\,a_z\,\partial/\partial t,
 $$
 
 $$
-N_J(\partial_x,\partial_t) = a_z\,\partial_z + a_t\,\partial_t, \qquad N_J(\partial_y,\partial_z) = a_t\,\partial_t + a_z\,\partial_z, \qquad N_J(\partial_y,\partial_t) = a_t\,\partial_z - a_z\,\partial_t,
+N_J(\partial/\partial x,\partial/\partial t) = a_z\,\partial/\partial z + a_t\,\partial/\partial t, \qquad N_J(\partial/\partial y,\partial/\partial z) = a_t\,\partial/\partial t + a_z\,\partial/\partial z, \qquad N_J(\partial/\partial y,\partial/\partial t) = a_t\,\partial/\partial z - a_z\,\partial/\partial t,
 $$
 
-and $N_J(\partial_z,\partial_t)=0$. Since $N_J$ is tensorial it suffices to test the coordinate fields, so the tensor vanishes identically exactly when $a_z = a_t = 0$, that is, when $a$ depends only on $x$ and $y$. The choice $a = z$ gives the non-integrable structure above, while a constant $a$ gives the standard structure of $\mathbb{C}^2$ pulled back by the shear $v = z - ay + it$.
+and $N_J(\partial/\partial z,\partial/\partial t)=0$. Since $N_J$ is tensorial it suffices to test the coordinate fields, so the tensor vanishes identically exactly when $a_z = a_t = 0$, that is, when $a$ depends only on $x$ and $y$. The choice $a = z$ gives the non-integrable structure above, while a constant $a$ gives the standard structure of $\mathbb{C}^2$ pulled back by the shear $v = z - ay + it$.
 
 **Remark.** The Nijenhuis tensor measures the failure of the integrability of the eigenbundle $T^{0,1}$: the $(0,2)$-component of the Lie bracket of two $(0,1)$-fields is a constant multiple of the tensor, so it vanishes identically exactly when $N_J = 0$, which says that $T^{0,1}$ is a Lie subalgebra of the complexified fields and hence, by Frobenius, tangent to a foliation by complex submanifolds. In the language of the article *Differential Forms and Stokes' Theorem*, the almost complex structure is integrable exactly when the ideal generated by the $(0,1)$-forms in the complexified exterior algebra is a differential ideal. The complex structures of dimension two are therefore automatic, the octonionic structure on $S^6$ is the standard non-integrable example, and the integrable structures are the complex manifolds.
 
@@ -173,7 +173,7 @@ is Hermitian, and the assignment is a projection onto the Hermitian metrics amon
 
 **Proof.** Compute $g(JX,JY) = \frac12(g_0(JX,JY) + g_0(J^2X, J^2Y)) = \frac12(g_0(JX,JY)+g_0(X,Y)) = g(X,Y)$, so $g$ is invariant; it is symmetric because $g_0$ is, and positive definite because it is half the sum of two positive definite forms.
 
-**Remark.** A Hermitian metric is exactly a Riemannian metric for which the structure group of the frame bundle reduces further, from $GL(n,\mathbb{C})$ to the unitary group $U(n)$; the reduction is that of *Fibre Bundles, Connections and Curvature*, and the associated form $\Omega$ is the $(1,1)$-form whose nondegeneracy and closedness govern the Kähler condition. The metric $g$ and the form $\Omega$ determine one another given $J$; the notation $g(JX,Y)$ for the fundamental form is the one fixed for this category, and it is the form that is written $\Omega$ throughout, the Kähler form of the companion article *Kähler Geometry*, being written in parallel.
+**Remark.** A Hermitian metric is exactly a Riemannian metric for which the structure group of the frame bundle reduces further, from $GL(n,\mathbb{C})$ to the unitary group $\mathrm{U}(n)$; the reduction is that of *Fibre Bundles, Connections and Curvature*, and the associated form $\Omega$ is the $(1,1)$-form whose nondegeneracy and closedness govern the Kähler condition. The metric $g$ and the form $\Omega$ determine one another given $J$; the notation $g(JX,Y)$ for the fundamental form is the one fixed for this category, and it is the form that is written $\Omega$ throughout, the Kähler form of the companion article *Kähler Geometry*, being written in parallel.
 
 **Proposition (Wirtinger).** Let $(M,J,g)$ be almost Hermitian with fundamental form $\Omega$ and let $V \subseteq T_xM$ be an oriented real $2k$-plane with oriented orthonormal basis $u_1, \ldots, u_{2k}$. Then
 
@@ -219,11 +219,11 @@ which is a matrix of $(1,1)$-forms.
 
 **Remark.** The Chern classes of a Hermitian holomorphic vector bundle are the Chern–Weil classes of $\frac{i}{2\pi}\Theta$, and they are independent of the metric; that construction and the splitting principle belong to *Characteristic Classes*, earlier in this Part. In the Kähler case the Chern connection coincides with the Levi-Civita connection of $g$: the Levi-Civita connection preserves $J$ exactly when $\Omega$ is closed, and then it satisfies (a), (b) and (c) and is unique. The condition $\nabla J = 0$ for the Levi-Civita connection is therefore equivalent to the Kähler condition $d\Omega = 0$, and this is the bridge to *Kähler Geometry*.
 
-**Remark (the almost Hermitian classes).** For an almost Hermitian manifold whose almost complex structure need not be integrable, the Levi-Civita connection generally fails to preserve $J$, and the tensor $\nabla J$ together with $d\Omega$ defines the **Gray–Hervella classes** of almost Hermitian structures. They are the four $U(n)$-modules $W_1, W_2, W_3, W_4$ in which the covariant derivative of $\Omega$ can lie, and the notable classes are: **nearly Kähler** ($\nabla J$ totally antisymmetric, only $W_1$), **almost Kähler** ($d\Omega = 0$, only $W_2$), **Hermitian** ($J$ integrable, only $W_3\oplus W_4$), and **Kähler** (all four zero). The classes organise the intermediate geometries between the almost complex and the Kähler settings and are the source of the nearly Kähler six-sphere, whose structure is the round metric with the octonionic $J$ and which is not Kähler.
+**Remark (the almost Hermitian classes).** For an almost Hermitian manifold whose almost complex structure need not be integrable, the Levi-Civita connection generally fails to preserve $J$, and the tensor $\nabla J$ together with $d\Omega$ defines the **Gray–Hervella classes** of almost Hermitian structures. They are the four $\mathrm{U}(n)$-modules $W_1, W_2, W_3, W_4$ in which the covariant derivative of $\Omega$ can lie, and the notable classes are: **nearly Kähler** ($\nabla J$ totally antisymmetric, only $W_1$), **almost Kähler** ($d\Omega = 0$, only $W_2$), **Hermitian** ($J$ integrable, only $W_3\oplus W_4$), and **Kähler** (all four zero). The classes organise the intermediate geometries between the almost complex and the Kähler settings and are the source of the nearly Kähler six-sphere, whose structure is the round metric with the octonionic $J$ and which is not Kähler.
 
 ## Examples
 
-**Example (complex Euclidean space).** On $\mathbb{C}^n$ with the standard $J$ and the Euclidean metric $g$, the fundamental form is $\Omega = \sum_i dx_i\wedge dy_i$: indeed $\Omega(\partial_{x_i},\partial_{y_i}) = g(J\partial_{x_i},\partial_{y_i}) = g(\partial_{y_i},\partial_{y_i}) = 1$, and $\Omega$ is alternating. Since the coefficients are constant, $d\Omega=0$ and the structure is Kähler. This is the model Hermitian structure, and its Chern connection is the flat connection.
+**Example (complex Euclidean space).** On $\mathbb{C}^n$ with the standard $J$ and the Euclidean metric $g$, the fundamental form is $\Omega = \sum_i dx_i\wedge dy_i$: indeed $\Omega(\partial/\partial x_i,\partial/\partial y_i) = g(J\partial/\partial x_i,\partial/\partial y_i) = g(\partial/\partial y_i,\partial/\partial y_i) = 1$, and $\Omega$ is alternating. Since the coefficients are constant, $d\Omega=0$ and the structure is Kähler. This is the model Hermitian structure, and its Chern connection is the flat connection.
 
 **Example (complex tori).** A quotient $M = \mathbb{C}^n/\Lambda$ by a lattice is a complex manifold with the induced flat Hermitian structure; the fundamental form and the Chern connection descend, and $d\Omega=0$, so a complex torus with the flat metric is Kähler. A torus that is not algebraic nevertheless carries this Hermitian structure, and the Hermitian geometry of a general compact complex manifold is not accessible from the algebraic theory alone.
 
@@ -241,7 +241,7 @@ which is a matrix of $(1,1)$-forms.
 
 An almost complex structure is a bundle endomorphism $J$ with $J^2=-\mathrm{id}$; it forces the dimension to be even, complexifies the tangent bundle into the eigenbundles $T^{1,0}\oplus T^{0,1}$ of $\pm i$, and reduces the structure group to $GL(n,\mathbb{C})$. It is integrable — equivalent to a complex structure, that is, to holomorphic charts — exactly when the Nijenhuis tensor $N_J(X,Y) = [JX,JY]-J[X,JY]-J[JX,Y]-[X,Y]$ vanishes; on a surface this is automatic, and the octonionic structure on $S^6$ is the standard counterexample.
 
-On a complex manifold the complexified forms split into types with $d=\partial+\bar\partial$, $\bar\partial^2=0$, and the Dolbeault cohomology $H^{n,m}_{\bar\partial}$ is defined; its finiteness and Hodge theory are deferred to Part III, where the analysis is available. A Hermitian metric is a metric with $g(JX,JY)=g(X,Y)$, equivalently a metric whose structure group reduces to $U(n)$; its fundamental form $\Omega(X,Y)=g(JX,Y)$ is a real $(1,1)$-form, and $g$ is recovered from $\Omega$ and $J$. Hermitian metrics exist on every almost complex manifold, and the Wirtinger inequality makes $\Omega^k/k!$ a calibration for complex submanifolds.
+On a complex manifold the complexified forms split into types with $d=\partial+\bar\partial$, $\bar\partial^2=0$, and the Dolbeault cohomology $H^{n,m}_{\bar\partial}$ is defined; its finiteness and Hodge theory are deferred to Part III, where the analysis is available. A Hermitian metric is a metric with $g(JX,JY)=g(X,Y)$, equivalently a metric whose structure group reduces to $\mathrm{U}(n)$; its fundamental form $\Omega(X,Y)=g(JX,Y)$ is a real $(1,1)$-form, and $g$ is recovered from $\Omega$ and $J$. Hermitian metrics exist on every almost complex manifold, and the Wirtinger inequality makes $\Omega^k/k!$ a calibration for complex submanifolds.
 
 Every Hermitian manifold carries a unique Chern connection, the one connection with $\nabla g = 0$, $\nabla J = 0$ and torsion of type $(1,1)$; in a holomorphic frame its connection form is $h^{-1}\partial h$ and its curvature is a matrix of $(1,1)$-forms. The Kähler manifolds are exactly those for which the Chern connection is torsion-free and hence the Levi-Civita connection, equivalently $d\Omega=0$; the general almost Hermitian structures are classified by the Gray–Hervella modules $W_1,\ldots,W_4$, with nearly Kähler, almost Kähler, Hermitian and Kähler as the distinguished cases.
 
@@ -257,11 +257,11 @@ Every Hermitian manifold carries a unique Chern connection, the one connection w
 | $\partial$, $\bar\partial$ | Type decomposition of $d$ on a complex manifold; $\bar\partial^2=0$ |
 | $H^{n,m}_{\bar\partial}(M)$ | Dolbeault cohomology |
 | $g$ | Riemannian metric (from *Riemannian Geometry*) |
-| Hermitian metric | $g(JX,JY) = g(X,Y)$; structure group reduces to $U(n)$ |
+| Hermitian metric | $g(JX,JY) = g(X,Y)$; structure group reduces to $\mathrm{U}(n)$ |
 | $\Omega(X,Y) = g(JX,Y)$ | Fundamental form; real $(1,1)$-form; $g(X,Y)=\Omega(X,JY)$ |
 | $h(v,w) = g_{\mathbb{C}}(v,\bar w)$ | Hermitian form on $T^{1,0}$; positive definite, with $h(X-iJX, X-iJX) = 2\,g(X,X)$ for real $X$ |
 | $\Omega^{\wedge k}/k!$ | Calibration; Wirtinger inequality $\vert\Omega^{\wedge k}(u_1,\ldots,u_{2k})\vert \le k!$ on an oriented orthonormal basis |
-| $h_{i\bar j} = g(\partial_{z^i},\partial_{\bar z^j})$, $\Omega = i\sum h_{i\bar j}dz^i\wedge d\bar z^j$ | Local expressions in holomorphic coordinates |
+| $h_{i\bar j} = g(\partial/\partial z^i,\partial/\partial\bar z^j)$, $\Omega = i\sum h_{i\bar j}dz^i\wedge d\bar z^j$ | Local expressions in holomorphic coordinates |
 | $\theta = h^{-1}\partial h$ | Chern connection $1$-form in a holomorphic frame |
 | $\Theta = \bar\partial\theta$ | Chern curvature, of type $(1,1)$ |
 | $W_1,\ldots,W_4$ | Gray–Hervella classes of almost Hermitian structures |

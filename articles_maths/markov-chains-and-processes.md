@@ -163,7 +163,7 @@ The Hille–Yosida theorem is the functional-analytic characterisation of the ge
 
 **Definition.** A **continuous-time Markov chain** on a countable state space is a family $\{X_t\}_{t\geq0}$ with the Markov property in continuous time and transition probabilities $p_t(x,y)$; the **$Q$-matrix** or **generator** has entries $q_{xy} = \lim_{t\to0}(p_t(x,y) - \delta_{xy})/t$ and satisfies $q_{xy} \geq 0$ for $x \neq y$ and $\sum_y q_{xy} = 0$.
 
-**Theorem (Kolmogorov equations).** For a continuous-time Markov chain with generator $Q$, the transition probabilities satisfy the **backward equation** $\partial_t p_t = Qp_t$ and, when the chain is non-explosive, the **forward equation** $\partial_tp_t = p_tQ$; for a finite state space both reduce to $P_t = \exp(tQ)$.
+**Theorem (Kolmogorov equations).** For a continuous-time Markov chain with generator $Q$, the transition probabilities satisfy the **backward equation** $\partial/\partial t p_t = Qp_t$ and, when the chain is non-explosive, the **forward equation** $\partial/\partial t\,p_t = p_tQ$; for a finite state space both reduce to $P_t = \exp(tQ)$.
 
 **Example (the Poisson process).** Let $X_t$ be the number of arrivals by time $t$ with rate $\lambda > 0$: the increments are independent, stationary, with $X_{t+s} - X_s \sim \mathrm{Pois}(\lambda t)$. The Poisson process is the continuous-time Markov chain with $q_{n,n+1} = \lambda$ and $q_{n,n} = -\lambda$, its holding times are independent exponentials of rate $\lambda$, and its generator is the difference operator $(Lf)(n) = \lambda(f(n+1)-f(n))$. The Poisson process is the prototypical point process, and it is the building block of the jump processes and of the Itô integral with respect to a Poisson random measure.
 

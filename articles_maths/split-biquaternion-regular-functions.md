@@ -5,30 +5,30 @@
 
 This article studies **regular** (equivalently **monogenic**) split-biquaternion-valued functions, that is, the solutions of the first-order system $\tilde{\nabla}F^{\mathrm{fn}} = 0$ defined by the split biquaternion Cauchy–Riemann operator on a four-dimensional real subspace. It follows *Split-Biquaternion Analysis*, where the operator and its conjugate are constructed, and it records the system of equations, the examples, the harmonicity and factorization of the d'Alembertian, the role of the zero divisors, and the relations to the biquaternion regular functions and to Clifford analysis. The treatment is purely mathematical; no physical interpretation is used, and the operator is only ever called the **Cauchy–Riemann operator**, never by any older name.
 
-Throughout, $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, the units satisfy $e_0 = 1$, $e_1^2 = e_2^2 = e_3^2 = -e_0$ and $e_1e_2 = e_3$, and $j$ is the central split complex unit with $j^2 = +e_0$. On a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$ with real coordinates $Q_0,Q_1,Q_2,Q_3$ we write $\partial_\mu = \partial/\partial Q_\mu$.
+Throughout, $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, the units satisfy $e_t = 1$, $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, and $j$ is the central split complex unit with $j^2 = +e_t$. On a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$ with real coordinates $Q_t,Q_x,Q_y,Q_z$ we write $\partial/\partial Q_\mu = \partial/\partial Q_\mu$.
 
 ## The Variable and Its Structure
 
 A **complex structure** on a real vector space is a real-linear map $J$ with $J^2 = -\mathrm{id}$. The split biquaternion algebra carries the two commuting structures
 
 $$
-J_j(\tilde{Q}) = j\tilde{Q} , \qquad J_1(\tilde{Q}) = e_1\tilde{Q} ,
+J_j(\tilde{Q}) = j\tilde{Q} , \qquad J_1(\tilde{Q}) = \vec e_x\tilde{Q} ,
 $$
 
-but they are not interchangeable: $J_j$ is the coefficient structure and it does not complexify the algebra, since $j^2 = +e_0$ and the coefficients lie in the split complex algebra $\mathbb{D}$. The genuinely complex structure is $J_1$, which complexifies the plane spanned by $e_0, e_1$ and singles out the commutative subalgebra
+but they are not interchangeable: $J_j$ is the coefficient structure and it does not complexify the algebra, since $j^2 = +e_t$ and the coefficients lie in the split complex algebra $\mathbb{D}$. The genuinely complex structure is $J_1$, which complexifies the plane spanned by $e_t, \vec e_x$ and singles out the commutative subalgebra
 
 $$
-\mathbb{D}[e_1] = \{a e_0 + b e_1 : a, b \in \mathbb{D}\} \cong \mathbb{D} \otimes \mathbb{C} ,
+\mathbb{D}[\vec e_x] = \{a e_t + b \vec e_x : a, b \in \mathbb{D}\} \cong \mathbb{D} \otimes \mathbb{C} ,
 $$
 
-in which $e_1$ is the imaginary unit. Restricting to real coefficients, the subalgebra $\mathbb{R}[e_1] = \mathrm{span}_{\mathbb{R}}\{e_0, e_1\} \cong \mathbb{C}$ is the classical complex plane of quaternionic analysis.
+in which $\vec e_x$ is the imaginary unit. Restricting to real coefficients, the subalgebra $\mathbb{R}[\vec e_x] = \mathrm{span}_{\mathbb{R}}\{e_t, \vec e_x\} \cong \mathbb{C}$ is the classical complex plane of quaternionic analysis.
 
 ## The Cauchy–Riemann Operator and Its Conjugate
 
 **Definition.** The **split biquaternion Cauchy–Riemann operator** on $V$ and its **quaternion conjugate** are
 
 $$
-\tilde{\nabla} = \sum_{\mu=0}^{3} e_\mu \frac{\partial}{\partial Q_\mu} , \qquad \tilde{\nabla}^{\natural} = e_0 \frac{\partial}{\partial Q_0} - \sum_{k=1}^{3} e_k \frac{\partial}{\partial Q_k} .
+\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu \frac{\partial}{\partial Q_\mu} , \qquad \tilde{\nabla}^{\natural} = e_t \frac{\partial}{\partial Q_t} - \sum_{k=1}^{3} \vec e_k \frac{\partial}{\partial Q_k} .
 $$
 
 On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ this is the quaternion Cauchy–Riemann operator of Fueter's theory; on the full algebra it acts coefficientwise, and on the idempotent decomposition it splits as
@@ -42,12 +42,12 @@ where on the right $\tilde{\nabla}$ is the quaternion operator acting on each id
 **Theorem.** The operator factors the scalar d'Alembertian:
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2\right) e_0 .
+\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Box := \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right) e_t .
 $$
 
-**Proof.** The units satisfy $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_0$, so the cross terms cancel in the product, leaving the sum of the second derivatives.
+**Proof.** The units satisfy $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_t$, so the cross terms cancel in the product, leaving the sum of the second derivatives.
 
-The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solution is the Cauchy kernel; it must not be confused with $\tilde{\nabla}^2 = (\partial_0^2-\Delta) + 2\sum_k e_k\partial_0\partial_k$, which is split-biquaternion-valued and is not the d'Alembertian.
+The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solution is the Cauchy kernel; it must not be confused with $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2-\Delta) + 2\sum_k \vec e_k\partial^2/(\partial Q_t\,\partial Q_k)$, which is split-biquaternion-valued and is not the d'Alembertian.
 
 ## Regular Functions and the System of Equations
 
@@ -55,25 +55,25 @@ The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solu
 
 **Convention.** In this category **regular** without qualification means **left-regular**, $\tilde{\nabla}F^{\mathrm{fn}} = 0$; the operator inverted in the integral theory is the first-order operator $\tilde{\nabla}$, not $\Box$ and not $\tilde{\nabla}^2$.
 
-**Theorem (regularity system).** Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1e_1 + F_2e_2 + F_3e_3$, the function $F^{\mathrm{fn}}$ is left-regular if and only if
+**Theorem (regularity system).** Writing $F^{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1\vec e_x + F_2\vec e_y + F_3\vec e_z$, the function $F^{\mathrm{fn}}$ is left-regular if and only if
 
 $$
-\partial_0 F_0 = \mathrm{div}\,\vec F , \qquad \partial_0\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 ,
+\partial/\partial Q_t F_0 = \mathrm{div}\,\vec F , \qquad \partial/\partial Q_t\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 ,
 $$
 
 a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\vec F$.
 
-**Proof.** Expanding $\tilde{\nabla}F^{\mathrm{fn}} = \sum_\mu\sum_\nu (\partial_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*).
+**Proof.** Expanding $\tilde{\nabla}F^{\mathrm{fn}} = \sum_\mu\sum_\nu (\partial/\partial Q_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*).
 
-On the quaternion subspace, where the coefficients are real, the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_0$, so the system is elliptic and its regular functions are real-analytic. On an indefinite four-dimensional subspace, where the coordinate along the split direction enters the symbol with the opposite sign, the principal symbol degenerates on the null cone and the system is no longer elliptic.
+On the quaternion subspace, where the coefficients are real, the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_t$, so the system is elliptic and its regular functions are real-analytic. On an indefinite four-dimensional subspace, where the coordinate along the split direction enters the symbol with the opposite sign, the principal symbol degenerates on the null cone and the system is no longer elliptic.
 
 ## Examples and Basic Properties
 
 **Constants.** A constant $F^{\mathrm{fn}} = \tilde{C}$ is regular on any subspace, and the constants form an eight-dimensional real space of regular functions.
 
-**Powers of a single-plane variable.** On the quaternion subspace, with $A = Q_0 + Q_1 e_1$, every classical holomorphic function of $A$, extended by constancy in $Q_2, Q_3$, is regular; in particular $\tilde{\nabla} A = e_0 e_0 + e_1 e_1 = 0$.
+**Powers of a single-plane variable.** On the quaternion subspace, with $A = Q_t + Q_x \vec e_x$, every classical holomorphic function of $A$, extended by constancy in $Q_y, Q_z$, is regular; in particular $\tilde{\nabla} A = e_t e_t + \vec e_x \vec e_x = 0$.
 
-**The coordinate function is not regular.** $\tilde{\nabla}\tilde{Q} = \sum_\mu e_\mu e_\mu = e_0 - 3e_0 = -2e_0 \neq 0$, so the identity function is not regular, in contrast with the complex case.
+**The coordinate function is not regular.** $\tilde{\nabla}\tilde{Q} = \sum_\mu e_\mu e_\mu = e_t - 3e_t = -2e_t \neq 0$, so the identity function is not regular, in contrast with the complex case.
 
 **The Cauchy kernel.** On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, which is a division algebra, the function
 
@@ -81,7 +81,7 @@ $$
 G^{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|_E^4}
 $$
 
-is regular for $\tilde{Q} \neq 0$ and is the fundamental solution of $\tilde{\nabla}$; the proof uses $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ and therefore needs the real coefficients of that subspace. On the full algebra, where the coefficients lie in $\mathbb{D}$, this identity fails because the coefficient part of $\tilde{Q}^{\natural}\tilde{Q}$ is $\langle\tilde{Q}\rangle_{\natural}$, a split complex number rather than a positive real one.
+is regular for $\tilde{Q} \neq 0$ and is the fundamental solution of $\tilde{\nabla}$; the proof uses $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ and therefore needs the real coefficients of that subspace. On the full algebra, where the coefficients lie in $\mathbb{D}$, this identity fails because the coefficient part of $\tilde{Q}^{\natural}\tilde{Q}$ is $\langle\tilde{Q}\rangle_{\natural}$, a split complex number rather than a positive real one.
 
 **Closure.** Regular functions are closed under addition and under right multiplication by constants, $\tilde{\nabla}(F^{\mathrm{fn}}\tilde{C}) = (\tilde{\nabla}F^{\mathrm{fn}})\tilde{C} = 0$; they are stable under right multiplication by constants but not under left multiplication, because left multiplication by a general constant does not commute past the units.
 
@@ -90,12 +90,12 @@ is regular for $\tilde{Q} \neq 0$ and is the fundamental solution of $\tilde{\na
 **Theorem.** Every left-regular function is harmonic for the d'Alembertian:
 
 $$
-\BoxF^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial_0^2 + \partial_1^2 + \partial_2^2 + \partial_3^2\right)e_0 .
+\Box F^{\mathrm{fn}} = \tilde{\nabla}^{\natural}\left(\tilde{\nabla}F^{\mathrm{fn}}\right) = 0 , \qquad \Box = \left(\partial^2/\partial Q_t^2 + \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2\right)e_t .
 $$
 
 **Proof.** Apply $\tilde{\nabla}^{\natural}$ to $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and use the factorization.
 
-The converse fails: $Q_0$ is harmonic but $\tilde{\nabla}Q_0 = e_0 \neq 0$. On the quaternion subspace the d'Alembertian is the ordinary Laplacian in four real variables, so every regular function there is harmonic in the classical sense; on an indefinite subspace it is a wave operator, and the elliptic tools of the complex theory — the mean value property, the maximum principle and Liouville's theorem — are not available.
+The converse fails: $Q_t$ is harmonic but $\tilde{\nabla}Q_t = e_t \neq 0$. On the quaternion subspace the d'Alembertian is the ordinary Laplacian in four real variables, so every regular function there is harmonic in the classical sense; on an indefinite subspace it is a wave operator, and the elliptic tools of the complex theory — the mean value property, the maximum principle and Liouville's theorem — are not available.
 
 **Corollary.** The idempotent components of a regular function are separately regular, $\tilde{\nabla}F^{\mathrm{fn}}_\pm = 0$, and hence separately harmonic; regularity on the full algebra is thus the pair of quaternionic regularities, and the theory splits along the two halves. This is the analytic form of the algebra decomposition, and it is a genuine difference from the biquaternion case, where the algebra is simple and no such splitting exists.
 
@@ -103,34 +103,34 @@ The converse fails: $Q_0$ is harmonic but $\tilde{\nabla}Q_0 = e_0 \neq 0$. On t
 
 In the complex theory the variable ranges over a field and every nonzero element is invertible; in the split biquaternion algebra this fails, and every failure of the complex analogy on the full algebra is traceable to the zero divisors.
 
-**The inverse is local.** The naive quotient $\tilde{A}/\tilde{Q} = \tilde{A}\tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$ requires $\langle\tilde{Q}\rangle_{\natural}$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
+**The inverse is local.** The naive quotient $\tilde{Q}_1/\tilde{Q}_2 = \tilde{Q}_1\tilde{Q}_2^{\natural}\langle\tilde{Q}_2\rangle_{\natural}^{-1}$ requires $\langle\tilde{Q}_2\rangle_{\natural}$ to be a unit of $\mathbb{D}$, that is requires $\tilde{Q}_2$ to lie off the zero divisor locus $Z = \mathbb{H}\tilde\Pi_1\cup\mathbb{H}\tilde\Pi_2$, the union of the two four-dimensional ideals. On $Z$ there is no inverse and no difference quotient, and since $Z$ has dimension four rather than being a hypersurface, the naive definition of differentiability with respect to the variable fails on a positive-dimensional set. This is the reason the standard definition of regularity uses four real variables rather than one algebra variable, exactly as in the biquaternion case.
 
-**The kernel is local.** The Cauchy kernel $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined off the origin, but its regularity rests on the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_0$ which holds only where the coefficients are real. On the full algebra, where $\langle\tilde{Q}\rangle_{\natural}$ is split complex, the corresponding homogeneous kernel is $\tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$ up to a power, and it is undefined on the zero divisor locus; on an indefinite subspace it is not a fundamental solution, and the characteristic set of the operator is the null cone there.
+**The kernel is local.** The Cauchy kernel $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is defined off the origin, but its regularity rests on the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|_E^2 e_t$ which holds only where the coefficients are real. On the full algebra, where $\langle\tilde{Q}\rangle_{\natural}$ is split complex, the corresponding homogeneous kernel is $\tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$ up to a power, and it is undefined on the zero divisor locus; on an indefinite subspace it is not a fundamental solution, and the characteristic set of the operator is the null cone there.
 
 **The characteristic set.** On an indefinite subspace the principal symbol vanishes on the null cone of the relevant real form, so the operator factors a wave operator there rather than the Laplacian; the null cone is simultaneously the characteristic set, a subset of the zero divisor locus, and the place where the kernel ceases to be regular. Every regular function on the full algebra therefore obeys its equations on the complement of $Z$, and any integral representation must restrict either to the quaternion subspace, where $Z$ is empty, or to domains avoiding $Z$.
 
 ## The Relation to the Biquaternion Case and to Clifford Analysis
 
-Restricting to real quaternion-valued functions on the quaternion subspace recovers Fueter's quaternionic analysis in full, since that subspace is a division algebra; the split biquaternion theory is the extension obtained by allowing the coefficients to run over $\mathbb{D}$. The biquaternion case replaces $\mathbb{D}$ by $\mathbb{C}$: the norm there is complex, the zero divisors are the null quadric of an isotropic form and form a hypersurface, and the Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is a genuine fundamental solution on the whole algebra off the origin. In the split biquaternion case the split-biquaternion norm is anisotropic and the zero divisors form the union of two linear subspaces, so the singular set of the naive inverse is a union of two four-dimensional subspaces rather than a quadric hypersurface. The regularity system, the harmonicity and the factorization of the d'Alembertian are formally identical in the two cases, since both rest on the same Clifford relation among $e_0,e_1,e_2,e_3$; what differs is the coefficient algebra and hence the invertibility.
+Restricting to real quaternion-valued functions on the quaternion subspace recovers Fueter's quaternionic analysis in full, since that subspace is a division algebra; the split biquaternion theory is the extension obtained by allowing the coefficients to run over $\mathbb{D}$. The biquaternion case replaces $\mathbb{D}$ by $\mathbb{C}$: the norm there is complex, the zero divisors are the null quadric of an isotropic form and form a hypersurface, and the Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is a genuine fundamental solution on the whole algebra off the origin. In the split biquaternion case the split-biquaternion norm is anisotropic and the zero divisors form the union of two linear subspaces, so the singular set of the naive inverse is a union of two four-dimensional subspaces rather than a quadric hypersurface. The regularity system, the harmonicity and the factorization of the d'Alembertian are formally identical in the two cases, since both rest on the same Clifford relation among $e_t,\vec e_x,\vec e_y,\vec e_z$; what differs is the coefficient algebra and hence the invertibility.
 
-The general setting is Clifford analysis. On the subsystem generated by $e_0,e_1,e_2,e_3$ with the negative definite relations, the regular functions are the monogenic functions of the Clifford algebra $\mathrm{Cl}_{0,3}$; allowing the coefficients to be split complex replaces the complex coefficient field by $\mathbb{D}$ and introduces the zero divisors. The bridge between the single-plane and the hypercomplex notions is the Fueter–Sce construction, in which the appropriate power of the Laplacian converts a slice-regular function of one complex variable into a monogenic function of four real variables; for the split biquaternion setting this is treated in *Fueter Theory for Split-Biquaternions*.
+The general setting is Clifford analysis. On the subsystem generated by $e_t,\vec e_x,\vec e_y,\vec e_z$ with the negative definite relations, the regular functions are the monogenic functions of the Clifford algebra $\mathrm{Cl}_{0,3}$; allowing the coefficients to be split complex replaces the complex coefficient field by $\mathbb{D}$ and introduces the zero divisors. The bridge between the single-plane and the hypercomplex notions is the Fueter–Sce construction, in which the appropriate power of the Laplacian converts a slice-regular function of one complex variable into a monogenic function of four real variables; for the split biquaternion setting this is treated in *Fueter Theory for Split-Biquaternions*.
 
 ## Summary
 
-The split biquaternion Cauchy–Riemann operator $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ act on a four-dimensional real subspace, factor the scalar d'Alembertian $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial_0^2+\Delta)e_0$, and define left-regular and right-regular functions by $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and $F^{\mathrm{fn}}\tilde{\nabla} = 0$. Regularity is equivalent to the four-equation Cauchy–Riemann–Fueter system coupling the scalar and vector parts through divergence, gradient and curl, which is elliptic on the quaternion subspace and degenerate on the indefinite subspaces, where its characteristic set is the null cone. Every regular function is harmonic, the converse failing already for $Q_0$; and because the algebra is a product of two quaternion algebras, regularity is the pair of quaternionic regularities on the two idempotent components, a splitting that has no counterpart in the simple biquaternion algebra. The zero divisors, which form the union of the two four-dimensional ideals rather than a quadric hypersurface, make the inverse and the difference quotient local, since $\langle\tilde{Q}\rangle_{\natural}$ must be a unit of $\mathbb{D}$; they are the analytic obstruction on the full algebra and on the indefinite sectors, while on the quaternion subspace, a division algebra, the Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is a genuine regular fundamental solution. The theory recovers Fueter's quaternionic analysis on the quaternion subspace and is the $\mathbb{D}$-coefficient case of Clifford analysis; the transition from single-plane holomorphy is the Fueter–Sce construction.
+The split biquaternion Cauchy–Riemann operator $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$ act on a four-dimensional real subspace, factor the scalar d'Alembertian $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial^2/\partial Q_t^2+\Delta)e_t$, and define left-regular and right-regular functions by $\tilde{\nabla}F^{\mathrm{fn}} = 0$ and $F^{\mathrm{fn}}\tilde{\nabla} = 0$. Regularity is equivalent to the four-equation Cauchy–Riemann–Fueter system coupling the scalar and vector parts through divergence, gradient and curl, which is elliptic on the quaternion subspace and degenerate on the indefinite subspaces, where its characteristic set is the null cone. Every regular function is harmonic, the converse failing already for $Q_t$; and because the algebra is a product of two quaternion algebras, regularity is the pair of quaternionic regularities on the two idempotent components, a splitting that has no counterpart in the simple biquaternion algebra. The zero divisors, which form the union of the two four-dimensional ideals rather than a quadric hypersurface, make the inverse and the difference quotient local, since $\langle\tilde{Q}\rangle_{\natural}$ must be a unit of $\mathbb{D}$; they are the analytic obstruction on the full algebra and on the indefinite sectors, while on the quaternion subspace, a division algebra, the Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ is a genuine regular fundamental solution. The theory recovers Fueter's quaternionic analysis on the quaternion subspace and is the $\mathbb{D}$-coefficient case of Clifford analysis; the transition from single-plane holomorphy is the Fueter–Sce construction.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{H}\oplus\mathbb{H}$ | Split biquaternion algebra |
-| $e_0,e_1,e_2,e_3$ | Algebra basis, $e_0 = 1$, $e_k^2 = -e_0$ |
-| $j$ | Central split complex unit, $j^2 = +e_0$ |
-| $V$ | Four-dimensional real subspace with coordinates $Q_0,\dots,Q_3$ |
-| $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ | Split biquaternion Cauchy–Riemann operator |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Algebra basis, $e_t = 1$, $\vec e_k^2 = -e_t$ |
+| $j$ | Central split complex unit, $j^2 = +e_t$ |
+| $V$ | Four-dimensional real subspace with coordinates $Q_t,\dots,Q_z$ |
+| $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial Q_\mu$ | Split biquaternion Cauchy–Riemann operator |
 | $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of $\tilde{\nabla}$ |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial_0^2+\Delta)e_0$ | d'Alembertian, scalar |
-| $\tilde{\nabla}^2 = (\partial_0^2-\Delta) + 2\sum_k e_k\partial_0\partial_k$ | Square of the operator, not the d'Alembertian |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial^2/\partial Q_t^2+\Delta)e_t$ | d'Alembertian, scalar |
+| $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2-\Delta) + 2\sum_k \vec e_k\partial^2/(\partial Q_t\,\partial Q_k)$ | Square of the operator, not the d'Alembertian |
 | $\tilde{\nabla}F^{\mathrm{fn}} = 0$ | Left-regular (monogenic) condition |
 | $G^{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ | Cauchy kernel on the quaternion subspace |
 | $\|\tilde{Q}\|_E^2 = \sum_\mu(q_\mu^2+q'^2_\mu)$ | Euclidean norm squared |

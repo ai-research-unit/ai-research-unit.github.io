@@ -88,10 +88,10 @@ So the KMS condition is intrinsically an imaginary-time statement. Without imagi
 The material sector $\mathbb{M}_-$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form
 
 $$
-\tilde{Q}_- = i q'_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q}_- = i q'_t\, e_t + q_x\, \vec e_x + q_y\, \vec e_y + q_z\, \vec e_z, \qquad q'_t, q_x, q_y, q_z \in \mathbb{R}.
 $$
 
-The first coefficient is **imaginary** ($i q'_0$), and the three remaining coefficients are **real**. In the physical identification, $q'_0 = c t$ where $t$ is time, so the first coefficient is $i c t$.
+The first coefficient is **imaginary** ($i q'_t$), and the three remaining coefficients are **real**. In the physical identification, $q'_t = c t$ where $t$ is time, so the first coefficient is $i c t$.
 
 The imaginary character of the time coordinate is **intrinsic** to the material sector. It is not introduced by analytic continuation, and it is not the result of a Wick rotation. It is the algebraic structure of the subspace: the time coordinate multiplies the imaginary unit $i$, which is the fundamental scalar of the biquaternion algebra.
 
@@ -107,7 +107,7 @@ which is the ordinary Lorentzian wave operator. The wave operator has the same f
 
 ### Statement
 
-Let $\tilde{A}$ and $\tilde{B}$ be elements of the biquaternion algebra $\mathbb{B}$ (interpreted as observables), and let $\omega_\beta$ be a thermal state on the algebra, i.e., a positive linear functional $\omega_\beta : \mathbb{B} \to \mathbb{C}$ with $\omega_\beta(e_0) = 1$. Define the thermal correlation function
+Let $\tilde{A}$ and $\tilde{B}$ be elements of the biquaternion algebra $\mathbb{B}$ (interpreted as observables), and let $\omega_\beta$ be a thermal state on the algebra, i.e., a positive linear functional $\omega_\beta : \mathbb{B} \to \mathbb{C}$ with $\omega_\beta(e_t) = 1$. Define the thermal correlation function
 
 $$
 F_{\tilde{A}\tilde{B}}(t) = \omega_\beta\big(\tilde{A}\, \alpha_t(\tilde{B})\big),
@@ -156,9 +156,9 @@ The thermal formalism downstream of the KMS condition is usually reached by a Wi
 
 **The alternative route, which needs no rotation.** The imaginary direction is already in the material sector, so the thermal construction can stay there. The wave biquaternion is kept as the material element
 $$
-\tilde{k}_E = i\omega_n e_0 + \vec p \in \mathbb{M}_- ,
+\tilde{k}_E = i\omega_n e_t + \vec p \in \mathbb{M}_- ,
 $$
-and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $\langle\tilde{k}_E\rangle_{\natural} = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = \langle -\omega_n e_0+\vec p\rangle_{\natural}$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
+and its positivity is carried by the **Hermitian form**, $\langle\tilde{k}_E,\tilde{k}_E\rangle_{*} = \omega_n^2 + \vec p^2 = k_E^2 \ge 0$, a real scalar by construction; the biquaternion norm of the same element, $\langle\tilde{k}_E\rangle_{\natural} = -\omega_n^2+\vec p^2$, is indefinite and cannot serve. The two routes agree by the identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$, so they give the same propagator and the same frequencies; the alternative is developed in *The Matsubara Thermal Formalism in Biquaternionic Form*.
 
 **Where the positivity comes from.** The thermal correlator's positivity is not an extra assumption of the thermal theory: it is the central-root case of the Bochner theorem for the biquaternion transform. The kernel $\exp(i\omega_n\tau)$ is the exponential of the central root $\rho = i$, which is skew-adjoint, $\rho^{*}=-\rho$, and degenerate, and skew-adjointness is exactly the criterion under which the theorem holds — the central imaginary and the real roots being the roots for which the transform of a positive measure is positive definite (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*).
 
@@ -185,7 +185,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 - The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time coordinate $ict$.
 - The complexification of $\mathbb{M}_-$ as the full algebra $\mathbb{B}$.
 - The modular Hamiltonian $K = -\log \rho$ is a Hermitian element of the algebra, hence lies in $\mathbb{M}_+$.
-- The identity $\langle i\omega_n e_0+\vec p,\,i\omega_n e_0+\vec p\rangle_{*} = \langle -\omega_n e_0+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
+- The identity $\langle i\omega_n e_t+\vec p,\,i\omega_n e_t+\vec p\rangle_{*} = \langle -\omega_n e_t+\vec p\rangle_{\natural}$ between the Hermitian form at a material element and the biquaternion norm at the rotated one; the material-sector thermal route and the rotated route therefore agree.
 
 **Interpretation.**
 
@@ -221,11 +221,11 @@ The KMS condition is the correct abstract characterization of thermal equilibriu
 
 The KMS condition has imaginary time built into it. The analytic continuation $t \to t + i\beta$ is not a convenience; it is the content of the condition.
 
-The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_0 = ct$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
+The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, acquires a natural algebraic interpretation in this sector. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_t = ct$ by an imaginary amount, and the complexified time direction in which the KMS continuation takes place is the sum of the imaginary time direction of $\mathbb{M}_-$ and the real time direction of $\mathbb{M}_+$.
 
 The modular Hamiltonian $K = -\log \rho$ of the KMS condition is a Hermitian element of the algebra, and therefore lies in the informational sector $\mathbb{M}_+$. This is an algebraic fact, not an interpretation. Its interpretive content is that the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural interpretation of the KMS condition, in which the material and informational sectors are connected through the thermal structure.
 
-The thermal formalism downstream of the condition is usually reached by the Wick rotation, and it is reached without one: the wave biquaternion can stay in $\mathbb{M}_-$ as $i\omega_n e_0+\vec p$, where its positivity is the Hermitian form's, and the thermal correlator's positivity is the central-root case of the Bochner theorem. The rotation is the standard route; the material-sector route is the alternative, and the two agree by an identity.
+The thermal formalism downstream of the condition is usually reached by the Wick rotation, and it is reached without one: the wave biquaternion can stay in $\mathbb{M}_-$ as $i\omega_n e_t+\vec p$, where its positivity is the Hermitian form's, and the thermal correlator's positivity is the central-root case of the Bochner theorem. The rotation is the standard route; the material-sector route is the alternative, and the two agree by an identity.
 
 The reformulation is an interpretation, not a derivation. The KMS condition is established physics; the biquaternion framework provides a natural setting for it, but does not derive it. Whether the reformulation leads to new results is an open question.
 
@@ -244,7 +244,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $\alpha_t$ | Heisenberg evolution |
 | $F_{AB}(t)$ | Thermal correlation function (complex-valued) |
 | $F_{AB}(t + i\beta) = F_{BA}(-t)$ | KMS condition |
-| $\tilde{k}_E = i\omega_n e_0+\vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |
+| $\tilde{k}_E = i\omega_n e_t+\vec p \in \mathbb{M}_-$ | Euclidean wave biquaternion of the material (no-rotation) route |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*} = \mathrm{Sc}(\tilde{P}\tilde{Q}^{*}) = \sum_\mu P_\mu\overline{Q_\mu}$ | Hermitian form; carries the thermal positivity without a rotation |
 | $K = -\log \rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |

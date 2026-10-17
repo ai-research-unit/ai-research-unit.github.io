@@ -12,7 +12,7 @@ the map that pairs $\tilde A$ with the second slot of the multiplication. The ma
 
 The block is *Introduction to the Antisymmetric Quaternionic Sesqualgebra*; its pairing with the form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; its diagonal and the failure of the Jacobi identity are *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the form is *The Krein Gram Matrix and the Restrictions of the Form*. This article owns the operators of the block.
 
-**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$; a generic element $\tilde Q=Q_0e_0+\vec Q$; the product is $\diamond$ and the form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
+**Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$; a generic element $\tilde Q=Q_te_t+\vec Q$; the product is $\diamond$ and the form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, linear in the first argument and conjugate-linear in the second. The real basis of the algebra is ordered as $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, so that a real-linear map of the space is an eight-by-eight real matrix in it.
 
 ## The Left Multiplication
 
@@ -35,20 +35,20 @@ and it depends on $\tilde A$ through $\vec A$ alone.
 
 ### The Matrix, the Rank and the Kernel
 
-**Proposition (the matrix for a vector element).** For $\tilde A=e_1$, in the ordered real basis $(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ the map kills $e_0,e_1,ie_0,ie_1$ and acts as
+**Proposition (the matrix for a vector element).** For $\tilde A=\vec e_x$, in the ordered real basis $(e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z)$ the map kills $e_t,\vec e_x,ie_t,i\vec e_x$ and acts as
 
 $$
-e_2\mapsto e_3,\quad e_3\mapsto-e_2,\quad ie_2\mapsto-ie_3,\quad ie_3\mapsto ie_2,
+\vec e_y\mapsto \vec e_z,\quad \vec e_z\mapsto-\vec e_y,\quad i\vec e_y\mapsto-i\vec e_z,\quad i\vec e_z\mapsto i\vec e_y,
 $$
 
-so, on the vector subspace, its matrix is the conjugate-linear map given by the two-by-two skew block in the $(e_2,e_3)$ directions composed with the coefficient conjugation: $e_2\mapsto e_3$ while $ie_2\mapsto-ie_3=-\mathrm{i}\,e_3$, so the map does not commute with $i$ and is conjugate-linear, as the class demands.
+so, on the vector subspace, its matrix is the conjugate-linear map given by the two-by-two skew block in the $(\vec e_y,\vec e_z)$ directions composed with the coefficient conjugation: $\vec e_y\mapsto \vec e_z$ while $i\vec e_y\mapsto-i\vec e_z=-\mathrm{i}\,\vec e_z$, so the map does not commute with $i$ and is conjugate-linear, as the class demands.
 
-*Proof.* Direct evaluation of $\vec A\times\overline{\vec R}$ at $\vec A=e_1$ on the real basis: $e_1\times e_2=e_3$, $e_1\times e_3=-e_2$, $e_1\times(ie_2)=-ie_3$, $e_1\times(ie_3)=ie_2$, and $e_1\times e_1=0$, with the centre killed.
+*Proof.* Direct evaluation of $\vec A\times\overline{\vec R}$ at $\vec A=\vec e_x$ on the real basis: $\vec e_x\times \vec e_y=\vec e_z$, $\vec e_x\times \vec e_z=-\vec e_y$, $\vec e_x\times(i\vec e_y)=-i\vec e_z$, $\vec e_x\times(i\vec e_z)=i\vec e_y$, and $\vec e_x\times \vec e_x=0$, with the centre killed.
 
 **Theorem (the rank, the kernel and the image).** For a nonzero vector element $\tilde A$ with $\vec A\neq0$,
 
 $$
-\ker L_{\tilde A}=\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A},\qquad
+\ker L_{\tilde A}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A},\qquad
 \mathrm{im}\,L_{\tilde A}=\{\vec V\in\mathrm{Vect}(\mathbb{B}):(\vec A,\vec V)=0\},
 $$
 
@@ -96,14 +96,14 @@ $$
 \mathrm{Der}(\diamond)=\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R}),
 $$
 
-where the first summand consists of the maps $\tilde Q\mapsto\lambda(Q_0)e_0$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
+where the first summand consists of the maps $\tilde Q\mapsto\lambda(Q_t)e_t$ for $\mathbb{R}$-linear $\lambda:\mathbb{C}\to\mathbb{C}$, of real dimension $4$, and the second consists of the complex-linear skew maps of the vector part with real entries, of real dimension $3$.
 
-*Proof.* Let $D\tilde Q=\lambda(Q_0)e_0+D_V(\vec Q)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec P\times\overline{\vec Q})=D_V\vec P\times\overline{\vec Q}+\vec P\times\overline{D_V\vec Q}$; taking $\vec P,\vec Q$ real reduces it to $D_V(\vec P\times\vec Q)=D_V\vec P\times\vec Q+\vec P\times D_V\vec Q$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.
+*Proof.* Let $D\tilde Q=\lambda(Q_t)e_t+D_V(\vec Q)$. Substituting into the defining identity and using that the block kills the centre in both slots, the centre part $\lambda$ cancels on both sides for every $\mathbb{R}$-linear $\lambda$, which gives the first summand. On the vector part, the identity reads $D_V(\vec P\times\overline{\vec Q})=D_V\vec P\times\overline{\vec Q}+\vec P\times\overline{D_V\vec Q}$; taking $\vec P,\vec Q$ real reduces it to $D_V(\vec P\times\vec Q)=D_V\vec P\times\vec Q+\vec P\times D_V\vec Q$, the classical derivation condition for the cross product, whose solutions are the skew maps of $\mathbb{R}^{3}$; and taking one argument imaginary forces the entries to be real, so the second summand is $\mathfrak{so}(3,\mathbb{R})$, of real dimension $3$. The two summands are independent, and no derivation mixes the centre with the vector part, since a map carrying the centre into the vector part fails the identity on a real pair. The total dimension is $4+3=7$.
 
 **Theorem (the structure group).** The group of invertible real-linear maps preserving the block contains the subgroup
 
 $$
-\bigl\{\tilde Q\mapsto\lambda(Q_0)e_0+g\vec Q\ :\ \lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}\cong GL(2,\mathbb{R})\times SO(3,\mathbb{R}),
+\bigl\{\tilde Q\mapsto\lambda(Q_t)e_t+g\vec Q\ :\ \lambda\in GL_{\mathbb{R}}(\mathbb{C}),\ g\in SO(3,\mathbb{R})\bigr\}\cong GL(2,\mathbb{R})\times SO(3,\mathbb{R}),
 $$
 
 of real dimension $4+3=7$; its Lie algebra is $\mathrm{Der}(\diamond)$.
@@ -152,14 +152,14 @@ and it vanishes exactly when $L_{\tilde A}\tilde R=0$.
 
 ## Summary
 
-The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
+The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is conjugate-linear, kills the centre, has rank $4$, nullity $4$ and trace $0$, with kernel $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ and image the complex plane orthogonal to $\vec A$; its adjoint with respect to the Krein form is its negative, $L_{\tilde A}^{\dagger}=-L_{\tilde A}$, in the conjugate-linear class that the block forces. The derivations of the block form the seven-dimensional real space $\mathrm{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})\oplus\mathfrak{so}(3,\mathbb{R})$, the scalar maps of the centre together with the real skew maps of the vector part, and the structure group contains $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ with that Lie algebra; a reflection of the vector part fails to preserve the block. The square of a left multiplication is the complex-linear map $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$, the composition of two is complex-linear, and the conjugate invariant is $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}\le0$. The operator calculus of the associative and the bilinear blocks is replaced at every step by the conjugate-linear class of the block.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ | the left multiplication, conjugate-linear |
-| $\ker L_{\tilde A}=\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ | the kernel, of real dimension $4$ |
+| $\ker L_{\tilde A}=\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec A}$ | the kernel, of real dimension $4$ |
 | $\mathrm{im}\,L_{\tilde A}=\{\vec V:(\vec A,\vec V)=0\}$ | the image, a complex plane |
 | rank $4$, nullity $4$, trace $0$ | the invariants of the operator |
 | $L_{\tilde A}^{\dagger}=-L_{\tilde A}$ | the adjoint, conjugate-linear |
@@ -167,7 +167,7 @@ The left multiplication $L_{\tilde A}\tilde R=\vec A\times\overline{\vec R}$ is 
 | $GL(2,\mathbb{R})\times SO(3,\mathbb{R})$ | the structure group |
 | $L_{\tilde A}^2\tilde R=\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$ | the square of the operator |
 | $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, $L_{\tilde A}L_{\overline{\vec A}}\tilde R=\vec A\times(\vec A\times\vec R)$ | the conjugate operator and the two products |
-| $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-|\vec A\times\overline{\vec R}|^{2}$ | the conjugate invariant |
+| $\langle L_{\tilde A}\tilde R,L_{\tilde A}\tilde R\rangle_{\natural*}=-\lvert\vec A\times\overline{\vec R}\rvert^{2}$ | the conjugate invariant |
 
 ## Further Reading
 

@@ -91,7 +91,7 @@ $$
 
 **Theorem (Baire).** A complete metric space is not the union of countably many nowhere dense subsets; equivalently, a countable intersection of dense open subsets of a complete metric space is dense.
 
-*Proof.* Standard: given dense open $G_n$ and a nonempty open $U$, choose a closed ball $\overline B_1 \subseteq G_1 \cap U$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap U$.
+*Proof.* Standard: given dense open $G_n$ and a nonempty open $\Omega$, choose a closed ball $\overline B_1 \subseteq G_1 \cap \Omega$ of radius $<1$, then $\overline B_{k+1}\subseteq G_{k+1}\cap B_k$ of radius $<2^{-k}$; the centres form a Cauchy sequence whose limit lies in every $G_n \cap \Omega$.
 
 ### Uniform Boundedness
 

@@ -57,7 +57,7 @@ $$
 \mathrm{Sh}_{\Gamma}(X_K)\simeq\mathrm{Sh}(X).
 $$
 
-*Proof.* The pair is adjoint, as in *Equivariant Sheaves and Descent*; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $U\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(U)^{\Gamma}\otimes_kK\to\mathcal{M}(U)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of *Descent Theory*.
+*Proof.* The pair is adjoint, as in *Equivariant Sheaves and Descent*; the unit and the counit are checked on the sections. A section of the counit over a $\Gamma$-invariant open set $\Omega\subseteq X_K$ is a $\Gamma$-equivariant map $\mathcal{M}(\Omega)^{\Gamma}\otimes_kK\to\mathcal{M}(\Omega)$, which is the multiplication by the coefficients; it is an isomorphism by the descent lemma: an element of a $\Gamma$-module that is fixed splits as $m=\sum_{\gamma}\gamma(\lambda)m_{\gamma}$ with a normal basis $\{\lambda\}$ of $K/k$. The unit is the analogous computation, and the effectiveness is the faithful flatness of $K$ over $k$, which is the descent theorem of *Descent Theory*.
 
 **Corollary (the structure sheaf and the vector bundles).** The structure sheaf descends, $\mathcal{O}_X=\mathcal{O}_{X_K}^{\Gamma}$; the base change identifies the locally free sheaves of finite rank on $X$ with the $\Gamma$-equivariant locally free sheaves on $X_K$, and the descent is effective for all quasicoherent sheaves when $X$ is a scheme over $k$.
 

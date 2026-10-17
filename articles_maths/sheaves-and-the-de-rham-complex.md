@@ -11,7 +11,7 @@ $$
 
 with $n = \dim M$, whose cohomology $H^k_{dR}(M)$ is the de Rham cohomology of the written *Differential Forms and Stokes' Theorem*, where the forms, the exterior derivative, the identity $d^2 = 0$, the Poincaré lemma, the integration of top forms and Stokes' theorem are developed. That article also states the theorem of de Rham, $H^k_{dR}(M)\cong H^k(M;\mathbb{R})$, and its proof is sketched there by the Mayer–Vietoris comparison of the two theories. The present article gives the **sheaf-theoretic** account of the same theorem, which is not a second proof but a second organisation of it, and which is the reason the de Rham complex appears wherever sheaf cohomology is used. The object studied is not the complex of global forms but the **complex of sheaves** of forms, and the single local statement on which everything rests is the Poincaré lemma.
 
-The argument has three steps. First, the presheaf assigning to an open set $U\subseteq M$ the forms $\Omega^k(U)$ is a sheaf $\Omega^k$ of $C^\infty$-modules, the exterior derivative is a morphism of sheaves $d : \Omega^k\to\Omega^{k+1}$ with $d^2 = 0$, and the complex of sheaves
+The argument has three steps. First, the presheaf assigning to an open set $\Xi\subseteq M$ the forms $\Omega^k(\Xi)$ is a sheaf $\Omega^k$ of $C^\infty$-modules, the exterior derivative is a morphism of sheaves $d : \Omega^k\to\Omega^{k+1}$ with $d^2 = 0$, and the complex of sheaves
 
 $$
 0 \to \underline{\mathbb{R}} \to \Omega^0 \xrightarrow{\ d\ } \Omega^1 \xrightarrow{\ d\ } \Omega^2 \to \cdots
@@ -29,13 +29,13 @@ The article cites the written *Differential Forms and Stokes' Theorem* for every
 
 ## The Sheaf of Differential Forms
 
-**Definition.** Let $M$ be a smooth manifold of dimension $n$. For $k \geq 0$ let $\Omega^k$ denote the **sheaf of differential $k$-forms** on $M$: its sections over an open set $U \subseteq M$ are the smooth $k$-forms on $U$ in the sense of the written *Differential Forms and Stokes' Theorem*, and its restriction maps are the restrictions of forms. The sheaf axioms hold because being a smooth form is a local condition on the coefficients in the charts of the manifold, and the global sections of $\Omega^k$ are the forms $\Omega^k(M)$ of that article; the notation
+**Definition.** Let $M$ be a smooth manifold of dimension $n$. For $k \geq 0$ let $\Omega^k$ denote the **sheaf of differential $k$-forms** on $M$: its sections over an open set $\Xi \subseteq M$ are the smooth $k$-forms on $\Xi$ in the sense of the written *Differential Forms and Stokes' Theorem*, and its restriction maps are the restrictions of forms. The sheaf axioms hold because being a smooth form is a local condition on the coefficients in the charts of the manifold, and the global sections of $\Omega^k$ are the forms $\Omega^k(M)$ of that article; the notation
 
 $$
 \Gamma(M,\Omega^k) = \Omega^k(M)
 $$
 
-is used throughout, so that the sheaf $\Omega^k$ and the space of forms over $M$ are distinguished in print without changing the written article's symbol for the latter. One has $\Omega^0(U) = C^\infty(U)$, so that $\Omega^0$ is the sheaf of smooth functions, and $\Omega^k = 0$ for $k > n$ as sheaves, since the bundles vanish there.
+is used throughout, so that the sheaf $\Omega^k$ and the space of forms over $M$ are distinguished in print without changing the written article's symbol for the latter. One has $\Omega^0(\Xi) = C^\infty(\Xi)$, so that $\Omega^0$ is the sheaf of smooth functions, and $\Omega^k = 0$ for $k > n$ as sheaves, since the bundles vanish there.
 
 **Theorem (the de Rham complex of sheaves).** The exterior derivative is a morphism of sheaves
 
@@ -67,7 +67,7 @@ is exact: the kernel of $d$ on smooth functions on a connected open subset is th
 
 ## The Poincaré Lemma as a Local Statement
 
-**Theorem (Poincaré lemma).** Let $U\subseteq\mathbb{R}^n$ be a star-shaped open set, in particular an open ball. Then every closed form of positive degree on $U$ is exact: $H^k_{dR}(U) = 0$ for $k\geq 1$, and $H^0_{dR}(U) = \mathbb{R}$. This is the written article's Poincaré lemma, with its proof by the homotopy operator $h$ satisfying $dh + hd = \mathrm{id}$; it is quoted here and not reproved.
+**Theorem (Poincaré lemma).** Let $\Xi\subseteq\mathbb{R}^n$ be a star-shaped open set, in particular an open ball. Then every closed form of positive degree on $\Xi$ is exact: $H^k_{dR}(\Xi) = 0$ for $k\geq 1$, and $H^0_{dR}(\Xi) = \mathbb{R}$. This is the written article's Poincaré lemma, with its proof by the homotopy operator $h$ satisfying $dh + hd = \mathrm{id}$; it is quoted here and not reproved.
 
 **Theorem (the de Rham complex is a resolution of the constant sheaf).** Let $M$ be a smooth manifold. The complex of sheaves
 
@@ -77,15 +77,15 @@ $$
 
 is exact: its cohomology sheaves vanish in positive degree, so it is a **resolution** of the constant sheaf $\underline{\mathbb{R}}$ by the sheaves of forms.
 
-*Proof.* Exactness of a sequence of sheaves is checked on stalks. The stalk of $\Omega^k$ at $x\in M$ is $\varinjlim_{U\ni x}\Omega^k(U)$, the colimit over the open neighbourhoods of $x$, and the complex of stalks is the colimit of the complexes of the sections over the neighbourhoods. Suppose a germ of a closed $k$-form is given, $k\geq 1$, represented by a closed form $\omega$ on a neighbourhood $V$ of $x$. Choose an open coordinate ball $B\subseteq V$ containing $x$; the restriction $\omega|_B$ is closed on the star-shaped set $B$, hence by the Poincaré lemma $\omega|_B = d\eta$ for a form $\eta$ on $B$, so the germ of $\omega$ is a coboundary in the stalk complex. Hence the cohomology sheaf vanishes in degree $k\geq 1$. In degree $0$ the cohomology sheaf is the kernel of $d$ on $\Omega^0$, which is $\underline{\mathbb{R}}$ by the previous theorem.
+*Proof.* Exactness of a sequence of sheaves is checked on stalks. The stalk of $\Omega^k$ at $x\in M$ is $\varinjlim_{\Xi\ni x}\Omega^k(\Xi)$, the colimit over the open neighbourhoods of $x$, and the complex of stalks is the colimit of the complexes of the sections over the neighbourhoods. Suppose a germ of a closed $k$-form is given, $k\geq 1$, represented by a closed form $\omega$ on a neighbourhood $V$ of $x$. Choose an open coordinate ball $B\subseteq V$ containing $x$; the restriction $\omega|_B$ is closed on the star-shaped set $B$, hence by the Poincaré lemma $\omega|_B = d\eta$ for a form $\eta$ on $B$, so the germ of $\omega$ is a coboundary in the stalk complex. Hence the cohomology sheaf vanishes in degree $k\geq 1$. In degree $0$ the cohomology sheaf is the kernel of $d$ on $\Omega^0$, which is $\underline{\mathbb{R}}$ by the previous theorem.
 
-**Corollary (local triviality of the de Rham complex).** For every point $x\in M$ there is a neighbourhood $U$ of $x$ such that $H^k_{dR}(U) = 0$ for $k\geq 1$ and $H^0_{dR}(U) = \mathbb{R}$; that is, the de Rham complex of $M$ is locally a resolution of the constants. Consequently $\Omega^\bullet$ is a **fine resolution** of $\underline{\mathbb{R}}$ in the sense of the next section, and the local statement of the Poincaré lemma, and not any global statement, is what the sheaf-theoretic proof of the de Rham theorem uses.
+**Corollary (local triviality of the de Rham complex).** For every point $x\in M$ there is a neighbourhood $\Xi$ of $x$ such that $H^k_{dR}(\Xi) = 0$ for $k\geq 1$ and $H^0_{dR}(\Xi) = \mathbb{R}$; that is, the de Rham complex of $M$ is locally a resolution of the constants. Consequently $\Omega^\bullet$ is a **fine resolution** of $\underline{\mathbb{R}}$ in the sense of the next section, and the local statement of the Poincaré lemma, and not any global statement, is what the sheaf-theoretic proof of the de Rham theorem uses.
 
 **Remark (the failure of the global statement).** On a non-contractible manifold the global Poincaré lemma fails, and the failure is measured by the cohomology: for the circle, $H^1_{dR}(S^1) = \mathbb{R}$ and the closed form $d\theta$ on each of the two arcs does not extend to a global form on the circle, which is the sheaf-theoretic statement that the sequence of global sections is not surjective at $\Omega^1$. The example is the de Rham analogue of the exponential sequence of *Presheaves and Sheaves*, and it is the reason the obstruction is a class in $H^1$ rather than a failure of exactness.
 
 ## Fine Sheaves and the Acyclicity of the Forms
 
-**Definition.** Let $\mathcal{R}$ be a sheaf of commutative rings on $M$. A sheaf $\mathcal{F}$ of $\mathcal{R}$-modules is **fine** if for every locally finite open cover $\{U_i\}$ of $M$ there is a partition of unity subordinate to it: elements $\eta_i \in \mathcal{R}(M)$ with $\operatorname{Supp}\eta_i \subseteq U_i$, the family of supports locally finite, and $\sum_i\eta_i = 1$. A sheaf of $\mathcal{R}$-modules is fine as soon as the structure sheaf $\mathcal{R}$ is fine and $\mathcal{F}$ is a module over it, since the $\eta_i$ act by multiplication.
+**Definition.** Let $\mathcal{R}$ be a sheaf of commutative rings on $M$. A sheaf $\mathcal{F}$ of $\mathcal{R}$-modules is **fine** if for every locally finite open cover $\{\Xi_i\}$ of $M$ there is a partition of unity subordinate to it: elements $\eta_i \in \mathcal{R}(M)$ with $\operatorname{Supp}\eta_i \subseteq \Xi_i$, the family of supports locally finite, and $\sum_i\eta_i = 1$. A sheaf of $\mathcal{R}$-modules is fine as soon as the structure sheaf $\mathcal{R}$ is fine and $\mathcal{F}$ is a module over it, since the $\eta_i$ act by multiplication.
 
 **Theorem (the sheaves of forms are fine).** Let $M$ be a smooth manifold and let $C^\infty = \Omega^0$ be the sheaf of smooth functions, a sheaf of commutative rings. Then:
 
@@ -127,7 +127,7 @@ $$
 E_1^{n,m} = H^n\bigl(\check C^\bullet(\mathcal{U},\Omega^m)\bigr) = \begin{cases} \Omega^q(M), & n = 0,\\ 0, & n > 0,\end{cases}
 $$
 
-with $d_1$ the exterior derivative; hence $E_2^{0,m} = H^m_{dR}(M)$ on the axis $n=0$, and the double complex computes the hypercohomology of the de Rham resolution, so $H^m_{dR}(M)\cong\mathbb{H}^q(M,\Omega^\bullet) = H^q(M,\underline{\mathbb{R}})$. The filtration by $n$ has instead $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{H}^m_{dR})$, with $\mathcal{H}^m_{dR}$ the presheaf $U\mapsto H^m_{dR}(U)$, and the induced differential is the Čech differential; on a good cover this presheaf is concentrated in degree $m=0$, so $E_2^{n,0} = \check H^n(\mathcal{U},\underline{\mathbb{R}})$ on the bottom row, and Leray's theorem identifies it with $H^n(M,\underline{\mathbb{R}})$. The two filtrations of the same double complex have the same abutment, and their comparison is the de Rham theorem; the construction uses the hypercohomology of a complex of sheaves described in *Derived Functors and Sheaf Cohomology*.
+with $d_1$ the exterior derivative; hence $E_2^{0,m} = H^m_{dR}(M)$ on the axis $n=0$, and the double complex computes the hypercohomology of the de Rham resolution, so $H^m_{dR}(M)\cong\mathbb{H}^q(M,\Omega^\bullet) = H^q(M,\underline{\mathbb{R}})$. The filtration by $n$ has instead $E_1^{n,m} = \check C^n(\mathcal{U},\mathcal{H}^m_{dR})$, with $\mathcal{H}^m_{dR}$ the presheaf $\Xi\mapsto H^m_{dR}(\Xi)$, and the induced differential is the Čech differential; on a good cover this presheaf is concentrated in degree $m=0$, so $E_2^{n,0} = \check H^n(\mathcal{U},\underline{\mathbb{R}})$ on the bottom row, and Leray's theorem identifies it with $H^n(M,\underline{\mathbb{R}})$. The two filtrations of the same double complex have the same abutment, and their comparison is the de Rham theorem; the construction uses the hypercohomology of a complex of sheaves described in *Derived Functors and Sheaf Cohomology*.
 
 **Remark (the relative case).** The theorem is not a statement about forms alone: the same argument applies to any resolution of $\underline{\mathbb{R}}$ by acyclic sheaves on $M$, and gives the comparison of the cohomology of the resolution with the cohomology of $M$ with real coefficients. The characteristic classes of a vector bundle over $M$ are represented by the Chern and Pontryagin forms built from the curvature of a connection, as in the written *Fibre Bundles, Connections and Curvature*; the de Rham theorem then identifies the cohomology classes they define with the singular characteristic classes, and the resulting comparison of the graded rings is the Chern–Weil theory, which is not developed here.
 
@@ -155,7 +155,7 @@ $$
  which is the de Rham form of the Poincaré duality of *Poincaré Duality*, and which identifies the compactly supported cohomology with the dual of the de Rham cohomology.
 3. For $M = \mathbb{R}^n$, $H^k_{c,dR}(\mathbb{R}^n) = \mathbb{R}$ for $k = n$ and $0$ otherwise; for the compact manifold $S^n$ the compactly supported cohomology coincides with the ordinary de Rham cohomology, so $H^k_{c,dR}(S^n) = \mathbb{R}$ for $k = 0$ and $k = n$ and $0$ otherwise, in agreement with the compactly supported groups of *Sheaf Cohomology*.
 
-*Proof.* (1) The compactly supported forms are exactly the sections over $M$ of the sheaf obtained by extending by zero the sheaf of forms on the open subsets: the presheaf $U\mapsto\Omega^k_c(U)$ is not a sheaf, but its sheafification is $\Omega^k$, and the compactly supported cohomology is computed by the complex of sections with support in a family, in the sense of *Sheaf Cohomology*; comparing with the compactly supported singular cochains, which compute $H^k_c$, gives the isomorphism. (2) The wedge product of a closed form and a compactly supported closed form is compactly supported and closed, and the integral depends only on the classes by Stokes' theorem; the pairing is nondegenerate by the Poincaré duality of the written article's Hodge-theoretic corollary, the harmonic representatives of the two cohomologies pairing by the integral of their wedge product. (3) is the computation of the compactly supported cohomology of $\mathbb{R}^n$ and of the sphere recorded in *Sheaf Cohomology*, together with (1).
+*Proof.* (1) The compactly supported forms are exactly the sections over $M$ of the sheaf obtained by extending by zero the sheaf of forms on the open subsets: the presheaf $\Xi\mapsto\Omega^k_c(\Xi)$ is not a sheaf, but its sheafification is $\Omega^k$, and the compactly supported cohomology is computed by the complex of sections with support in a family, in the sense of *Sheaf Cohomology*; comparing with the compactly supported singular cochains, which compute $H^k_c$, gives the isomorphism. (2) The wedge product of a closed form and a compactly supported closed form is compactly supported and closed, and the integral depends only on the classes by Stokes' theorem; the pairing is nondegenerate by the Poincaré duality of the written article's Hodge-theoretic corollary, the harmonic representatives of the two cohomologies pairing by the integral of their wedge product. (3) is the computation of the compactly supported cohomology of $\mathbb{R}^n$ and of the sphere recorded in *Sheaf Cohomology*, together with (1).
 
 ### Two Further Instances
 
@@ -185,7 +185,7 @@ The de Rham complex is moreover a sheaf of commutative differential graded algeb
 
 | Symbol | Meaning |
 |---|---|
-| $\Omega^k$ | sheaf of differential $k$-forms; $\Omega^k(U)$ = forms on $U$ |
+| $\Omega^k$ | sheaf of differential $k$-forms; $\Omega^k(\Xi)$ = forms on $\Xi$ |
 | $\Omega^k(M) = \Gamma(M,\Omega^k)$ | global $k$-forms, as in the written *Differential Forms and Stokes' Theorem* |
 | $d$ | exterior derivative, a morphism of sheaves; $d^2 = 0$ |
 | $\underline{\mathbb{R}}$ | constant sheaf of locally constant real functions; kernel of $d$ on $\Omega^0$ |

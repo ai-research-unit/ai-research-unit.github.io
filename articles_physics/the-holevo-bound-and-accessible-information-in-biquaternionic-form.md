@@ -33,17 +33,17 @@ An **ensemble** is a finite family of states with weights:
 $$
 \mathcal{E} = \bigl\{p_x,\ \tilde{\rho}_x\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
+\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_t + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
 $$
 
 The **average state** is the convex combination
 
 $$
-\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\vec r}\bigr),
+\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_t + i\bar{\vec r}\bigr),
 \qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
 $$
 
-which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,
+which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,
 
 $$
 S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
@@ -57,10 +57,10 @@ as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read
 A **measurement** with outcome label $y$ is a **positive operator-valued measure**: a family of Hermitian elements
 
 $$
-\tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_0 ,
+\tilde{E}_y \geq 0, \qquad \sum_y \tilde{E}_y = e_t ,
 $$
 
-each of which is an **effect**, $0\leq\tilde{E}_y\leq e_0$. The probability of outcome $y$ given the state $\tilde{\rho}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_0$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{\rho}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
+each of which is an **effect**, $0\leq\tilde{E}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{\rho}_x$ is the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$; positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_y = e_t$ ensures $\sum_y p(y|x) = \mathrm{Tr}(\tilde{\rho}_x) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y'} = \delta_{yy'}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.
 
 For every measurement, the outcome distribution is $p_y = \sum_x p_x p(y|x) = \mathrm{Tr}(\tilde{\rho}^{\natural}\tilde{E}_y)$, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.
 
@@ -195,16 +195,16 @@ Let the ensemble be two orthogonal pure states with equal weights,
 
 $$
 p_0 = p_1 = \tfrac12, \qquad
-\tilde{\rho}_0 = \tilde\Pi_1(\vec u_3), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\vec u_3) .
+\tilde{\rho}_0 = \tilde\Pi_1(\vec u_z), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\vec u_z) .
 $$
 
-The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_0$, so
+The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so
 
 $$
-\chi = S(\tfrac12 e_0) = \log 2 .
+\chi = S(\tfrac12 e_t) = \log 2 .
 $$
 
-The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_3)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \chi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
+The projective measurement in the basis $\{\tilde\Pi_{1,2}(\vec u_z)\}$ gives $p(y|x) = \delta_{xy}$, a noiseless channel, so $I(X:Y) = \log 2 = H(X)$. The bound is saturated: $I_{\mathrm{acc}} = \chi = \log2$. This is the maximal value for a qubit, and it is attained exactly when the ensemble is an orthogonal decomposition with weights equal to the probabilities of a projective measurement.
 
 ### Two non-orthogonal pure states
 
@@ -214,7 +214,7 @@ $$
 c = \bigl|\langle \psi_0|\psi_1\rangle\bigr| \in [0,1] .
 $$
 
-The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_0$ and
+The average state has Bloch vector of length $c$, so its biquaternion norm is $\tfrac14(1-c^2)e_t$ and
 
 $$
 \chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+c}{2}\right).
@@ -242,10 +242,10 @@ The gap is the price of non-orthogonality: as the two states become more alike, 
 For an ensemble of mixed states the Holevo quantity is strictly less than the entropy of the average state, because the individual entropies are subtracted. Take two states with Bloch vectors of length $r$ along opposite directions, equally weighted:
 
 $$
-\tilde{\rho}_\pm = \tfrac12\bigl(e_0 \pm i\,r\,\vec u_3\bigr), \qquad p_\pm = \tfrac12 .
+\tilde{\rho}_\pm = \tfrac12\bigl(e_t \pm i\,r\,\vec u_z\bigr), \qquad p_\pm = \tfrac12 .
 $$
 
-The average is $\tfrac12 e_0$, so $S(\tilde{\rho}^{\natural}) = \log2$, while each state has entropy $h\!\left(\tfrac{1+r}{2}\right)$. Hence
+The average is $\tfrac12 e_t$, so $S(\tilde{\rho}^{\natural}) = \log2$, while each state has entropy $h\!\left(\tfrac{1+r}{2}\right)$. Hence
 
 $$
 \chi = \log 2 - h\!\left(\frac{1+r}{2}\right),
@@ -283,7 +283,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 ## Summary
 
-An ensemble in the informational sector is a family of states $\{p_x,\tilde{\rho}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_0$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
+An ensemble in the informational sector is a family of states $\{p_x,\tilde{\rho}_x\}$ in $\mathbb{M}_+$ with an average state $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$. A measurement is a POVM $\{\tilde{E}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the trace pairing $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is
 
 $$
 \chi(\mathcal{E}) = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x),
@@ -302,16 +302,16 @@ its proof being the data-processing inequality applied to the measurement channe
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_k^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho}_x = \tfrac12(e_0 + i\vec r_x)$ | Ensemble state |
+| $\tilde{\rho}_x = \tfrac12(e_t + i\vec r_x)$ | Ensemble state |
 | $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$ | Average state |
-| $\tilde{E}_y \geq 0$, $\sum_y\tilde{E}_y = e_0$ | POVM (effects) |
+| $\tilde{E}_y \geq 0$, $\sum_y\tilde{E}_y = e_t$ | POVM (effects) |
 | $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{\rho}_x\tilde{E}_y)$ | Outcome probability (Born rule) |
 | $I_{\mathrm{acc}} = \max_{\{\tilde{E}_y\}} I(X:Y)$ | Accessible information |
 | $\chi = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x)$ | Holevo quantity |
 | $S(\tilde{\rho}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
-| $\langle\tilde{\rho}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_0$ | Biquaternion norm of the average state |
+| $\langle\tilde{\rho}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$ | Biquaternion norm of the average state |
 | $\chi = \langle\langle\tilde{\rho}^{\natural}\rangle_{\natural}\rangle_{*}$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
 | $\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{\rho}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
 | $I(X:Y)\leq\chi\leq\log2$ | Holevo bound and qubit ceiling |

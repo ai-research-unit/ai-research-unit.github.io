@@ -90,14 +90,14 @@ and their images are subspaces of dimension $n$. The map $L$ is an algebra homom
 
 The asymmetry between $L$ and $R$ is the whole difficulty of the noncommutative case. As a transformation of $A$, a left multiplication by a noncentral element is not $A$-linear; it is the action itself rather than a map commuting with the action.
 
-**Example.** For $\mathbb{B}$ on the basis $(e_0,e_1,e_2,e_3)$,
+**Example.** For $\mathbb{B}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
 
 $$
-L(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
-R(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
+L(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}, \qquad
+R(\vec e_x) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & -1 & 0 \end{pmatrix}.
 $$
 
-The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(e_1)^{\mathsf T} = -L(e_1)$ and likewise for $R(e_1)$.
+The two agree on their first two rows and differ in the sign of the last two, and both are skew, $L(\vec e_x)^{\mathsf T} = -L(\vec e_x)$ and likewise for $R(\vec e_x)$.
 
 ### The $A$-Linear Operators
 
@@ -171,9 +171,9 @@ $$
 \operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \subset \mathfrak{skew}_4(\mathbb{C}) \subset M_4(\mathbb{C}).
 $$
 
-Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(e_1)$, $L(e_2)$ and $L(e_3)$, while $L(e_0) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary *The Orthogonal Lie Algebra* of Part II supplies.
+Both inclusions on the right have been checked on explicit bases: the three derivation matrices are skew, as are $L(\vec e_x)$, $L(\vec e_y)$ and $L(\vec e_z)$, while $L(e_t) = I$ is not. The transposition is the one of the trace pairing, a bare pairing used only to define the subspace; no length, no signature and no orthogonal group is formed from it, so this is the boundary *The Orthogonal Lie Algebra* of Part II supplies.
 
-Two finer statements sharpen the picture. First, the element $L(e_0) = I$ is the identity operator and is not skew, while $L(e_1)$, $L(e_2)$, $L(e_3)$ are skew, so that
+Two finer statements sharpen the picture. First, the element $L(e_t) = I$ is the identity operator and is not skew, while $L(\vec e_x)$, $L(\vec e_y)$, $L(\vec e_z)$ are skew, so that
 
 $$
 L(\mathbb{B}) = \mathbb{C}\cdot I \ \oplus\ L(\text{pure}),
@@ -339,7 +339,7 @@ $$
 
 of real dimension $6$. The automorphism group acquires a second coset from complex conjugation, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PSL_2(\mathbb{C}) \rtimes \mathbb{Z}/2$, again of dimension $6$. The identification of this six-dimensional space with the orthogonal Lie algebra of a form of signature $(3,1)$ needs the form, belongs to Part II, and is named only.
 
-**The two three-dimensional pieces.** The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{e_k}$ and $b_k = \mathrm{ad}_{i e_k}$ for $k = 1,2,3$, the brackets are
+**The two three-dimensional pieces.** The six real derivations of $\mathbb{B}$ split into two three-dimensional pieces. Writing $r_k = \mathrm{ad}_{\vec e_k}$ and $b_k = \mathrm{ad}_{i \vec e_k}$ for $k = 1,2,3$, the brackets are
 
 $$
 [r_i, r_j] = 2\varepsilon_{ijk} r_k, \qquad [r_i, b_j] = 2\varepsilon_{ijk} b_k, \qquad [b_i, b_j] = -2\varepsilon_{ijk} r_k .
@@ -375,7 +375,7 @@ Running the same computation over the three two-dimensional algebras shows the d
 | $Z(A)$ | Centre of $A$, a subspace of $A$ |
 | $\exp(\delta)$ | Exponential of a nilpotent derivation, an automorphism |
 | $\mathfrak{skew}_n(k) = \{X : X^{\mathsf T} + X = 0\}$ | Skew operators relative to the trace pairing |
-| $r_k = \mathrm{ad}_{e_k}$, $b_k = \mathrm{ad}_{ie_k}$ | The two three-dimensional pieces of $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ |
+| $r_k = \mathrm{ad}_{\vec e_k}$, $b_k = \mathrm{ad}_{i\vec e_k}$ | The two three-dimensional pieces of $\operatorname{Der}_{\mathbb{R}}(\mathbb{B})$ |
 | $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B}$ | Real, complex, quaternion and biquaternion algebras |
 | $\mathbb{D}$, $\mathbb{D}'$ | Split complex numbers and dual numbers |
 

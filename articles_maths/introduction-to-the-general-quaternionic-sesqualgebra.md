@@ -4,11 +4,11 @@
 
 The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, defined side by side in *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*. Two of the four are the multiplication of an algebra over $\mathbb{C}$ in the broad sense, the two whose second slot is read without a conjugation, and two are the multiplication of a **sesqualgebra** over $\mathbb{C}$ with its conjugation as base involution, the two whose second slot carries the star; the first reading of each pair is *Introduction to the Biquaternion Algebra* and *Introduction to the General Plain Sesqualgebra*, and the second reading of each pair is the isotope of the first by the natural conjugation. This article is the fourth reading: the **general quaternionic sesquilinear product** $\tilde P^{\natural}\tilde Q^{*}$ is additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second, so it satisfies the two scalar rules of *Sesqualgebras* and is the multiplication of a sesqualgebra over the conjugation, and it is the product of the four that fails to be the **derived operation** $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$ of the algebra with its involution. Once the multiplication is in place, the article reads off what the two scalar rules give it: the tensor product and its two factor embeddings, the scalar action that is not a structure map, the trivial centre, the generators and the presentation of the underlying plain algebra, and the one-element subalgebras.
 
-The consequences differ from the sibling reading in every place where the first slot matters. There the product is the derived operation, the unit is a right unit, the involution exchanges the two slots, the idempotents are the Hermitian idempotents of the algebra, the squares generate the algebraic positive cone and the ternary product is an algebraic $J^{*}$-algebra. Here the product carries the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot as well: **there is no unit on either side**, the two one-sided actions of $e_0$ being the two conjugations of the algebra; the involution does not exchange the slots, and what it produces instead is the plain product in the reversed order; the idempotents are not the Hermitian ones, and they form a two-parameter family in the quaternion subspace; the square is not fixed by the involution in general and its scalar part carries the signs of the four coordinates, the three vector squares entering negatively; and the ternary product, although it has the parity of an algebraic $J^{*}$-algebra, **fails the Jordan triple identity**. The article is therefore the record of what the sesquilinear axioms alone force, read on the product of the four that fails to be the derived one.
+The consequences differ from the sibling reading in every place where the first slot matters. There the product is the derived operation, the unit is a right unit, the involution exchanges the two slots, the idempotents are the Hermitian idempotents of the algebra, the squares generate the algebraic positive cone and the ternary product is an algebraic $J^{*}$-algebra. Here the product carries the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot as well: **there is no unit on either side**, the two one-sided actions of $e_t$ being the two conjugations of the algebra; the involution does not exchange the slots, and what it produces instead is the plain product in the reversed order; the idempotents are not the Hermitian ones, and they form a two-parameter family in the quaternion subspace; the square is not fixed by the involution in general and its scalar part carries the signs of the four coordinates, the three vector squares entering negatively; and the ternary product, although it has the parity of an algebraic $J^{*}$-algebra, **fails the Jordan triple identity**. The article is therefore the record of what the sesquilinear axioms alone force, read on the product of the four that fails to be the derived one.
 
 The boundaries are stated at once. The product is not defined here, and neither are the four general products as a family: the coordinate rule and the four names are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*, whose sesquilinear row is the one read below. The other three readings and the general theory that each of them uses are the three articles *Introduction to the Biquaternion Algebra*, *Introduction to the General Plain Sesqualgebra* and *Introduction to the General Quaternionic Algebra*, and nothing of theirs is repeated here; where the present product differs from the general plain sesquilinear one, the difference is stated and the sibling is named. The elements, the basis, the conjugations and the remarkable subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, the two halves cut out by the involution being the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Zero Divisors of the Biquaternion Algebra*, the idempotents of the algebra are *Idempotents of the General Plain Algebra*, the simplicity of the ring is *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and the two bilinear articles are the ones named in the sentence above. The general theory is the sesquilinear block: the definition is *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the operator readings are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, the two halves are *Hermitian and Skew-Hermitian Elements*, and the ideals are *Ideals and Quotients of a Sesqualgebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$, with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The base involution of the sesqualgebra is the complex conjugation $\varsigma(z)=\bar z$. The plain product is written $\tilde P\tilde Q$, the general plain sesquilinear product of the sibling article is written $\tilde P\tilde Q^{*}$, and the product of this article is written $\star$, with
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{k\in\{x,y,z\}}Q_ke_k$, and $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$, with $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ and $\varepsilon=(1,-1,-1,-1)$. The base involution of the sesqualgebra is the complex conjugation $\varsigma(z)=\bar z$. The plain product is written $\tilde P\tilde Q$, the general plain sesquilinear product of the sibling article is written $\tilde P\tilde Q^{*}$, and the product of this article is written $\star$, with
 
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}
@@ -24,16 +24,16 @@ throughout, the natural conjugation ${}^{\natural}$ acting in the first slot and
 
 $$
 \star \; : \; \mathbb{B}\times\mathbb{B}\longrightarrow\mathbb{B} , \qquad
-(\tilde P,\tilde Q)\longmapsto \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu ,
+(\tilde P,\tilde Q)\longmapsto \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}\varepsilon_\mu\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu ,
 $$
 
-the general quaternionic sesquilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_0,\dots,e_3$ and the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
+the general quaternionic sesquilinear product of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; each of the sixteen products $e_\mu e_\nu$ is a basis element up to sign, so the double sum is a complex combination of $e_t,\dots,\vec e_z$ and the rule is a map into $\mathbb{B}$ and is well defined. On the four coordinates it reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}\bigr)
-+\bigl(-P_0\overline{Q_1}-P_1\overline{Q_0}+P_2\overline{Q_3}-P_3\overline{Q_2}\bigr)e_1
-+\bigl(-P_0\overline{Q_2}-P_1\overline{Q_3}-P_2\overline{Q_0}+P_3\overline{Q_1}\bigr)e_2
-+\bigl(-P_0\overline{Q_3}+P_1\overline{Q_2}-P_2\overline{Q_1}-P_3\overline{Q_0}\bigr)e_3 ,
+\tilde P\star\tilde Q=\bigl(P_t\overline{Q_t}-P_x\overline{Q_x}-P_y\overline{Q_y}-P_z\overline{Q_z}\bigr)
++\bigl(-P_t\overline{Q_x}-P_x\overline{Q_t}+P_y\overline{Q_z}-P_z\overline{Q_y}\bigr)\vec e_x
++\bigl(-P_t\overline{Q_y}-P_x\overline{Q_z}-P_y\overline{Q_t}+P_z\overline{Q_x}\bigr)\vec e_y
++\bigl(-P_t\overline{Q_z}+P_x\overline{Q_y}-P_y\overline{Q_x}-P_z\overline{Q_t}\bigr)\vec e_z ,
 $$
 
 The rule is the general plain sesquilinear product with the first factor read through the $\mathbb{C}$-linear ${}^{\natural}$ as well, which is the insertion that will turn out to change every property that involves the first slot.
@@ -43,10 +43,10 @@ The rule is the general plain sesquilinear product with the first factor read th
 Collecting the scalar part and the vector part of the two elements, the vector part of the first negated and that of the second read through the coefficientwise conjugate, the same product reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr)-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q} .
+\tilde P\star\tilde Q=\bigl(P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr)-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q} .
 $$
 
-Both displays are quoted from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; its scalar part is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$.
+Both displays are quoted from *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*; its scalar part is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$.
 
 ### The Two Scalar Rules
 
@@ -66,22 +66,22 @@ $$
 
 **Proposition.** The products of the basis elements are $e_\mu\star e_\nu=\varepsilon_\mu\varepsilon_\nu\,e_\mu e_\nu$, and they are
 
-| $\star$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
+| $\star$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $e_0$ | $e_0$ | $-e_1$ | $-e_2$ | $-e_3$ |
-| $e_1$ | $-e_1$ | $-e_0$ | $e_3$ | $-e_2$ |
-| $e_2$ | $-e_2$ | $-e_3$ | $-e_0$ | $e_1$ |
-| $e_3$ | $-e_3$ | $e_2$ | $-e_1$ | $-e_0$ |
+| $e_t$ | $e_t$ | $-\vec e_x$ | $-\vec e_y$ | $-\vec e_z$ |
+| $\vec e_x$ | $-\vec e_x$ | $-e_t$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $-\vec e_y$ | $-\vec e_z$ | $-e_t$ | $\vec e_x$ |
+| $\vec e_z$ | $-\vec e_z$ | $\vec e_y$ | $-\vec e_x$ | $-e_t$ |
 
 **Proof.** Read from the rule: $e_\mu\star e_\nu=\varepsilon_\mu(e_\mu)^{\natural}\,\varepsilon_\nu(e_\nu)^{*}=\varepsilon_\mu\varepsilon_\nu\,e_\mu e_\nu$, and the entries are the products of the quaternion units, multiplied by the two signs.
 
-The table differs from the $\natural$-bilinear table of *Introduction to the General Quaternionic Algebra* in one block: its first row and its first column are both the negated basis, $e_0\star e_\nu=-e_\nu$ and $e_\mu\star e_0=-e_\mu$ for $\mu,\nu\neq0$ with $e_0\star e_0=e_0$, while there the first row was the identity row; and its three-by-three block is the quaternion table itself and not its negative. The whole difference is the star in the second slot, which negates the vector units there and leaves the scalar unit alone.
+The table differs from the $\natural$-bilinear table of *Introduction to the General Quaternionic Algebra* in one block: its first row and its first column are both the negated basis, $e_t\star e_\nu=-e_\nu$ and $e_\mu\star e_t=-e_\mu$ for $\mu,\nu\neq t$ with $e_t\star e_t=e_t$, while there the first row was the identity row; and its three-by-three block is the quaternion table itself and not its negative. The whole difference is the star in the second slot, which negates the vector units there and leaves the scalar unit alone.
 
 ### The Product Is Not the Derived Operation
 
-**Theorem.** The general plain sesquilinear product $\tilde P\tilde Q^{*}$ is the **derived operation** of $\mathbb{B}$ read as the associative algebra with its conjugate-linear involution ${}^{*}$, and the general quaternionic sesquilinear product is not: in the notation of *Sesqualgebras*, the map $\sigma(\tilde Y)=e_0\star\tilde Y$ satisfies condition (i), being the involution ${}^{*}$ itself, and fails condition (ii), so that no involution of the algebra makes the product the value of the plain product on a conjugated pair.
+**Theorem.** The general plain sesquilinear product $\tilde P\tilde Q^{*}$ is the **derived operation** of $\mathbb{B}$ read as the associative algebra with its conjugate-linear involution ${}^{*}$, and the general quaternionic sesquilinear product is not: in the notation of *Sesqualgebras*, the map $\sigma(\tilde Y)=e_t\star\tilde Y$ satisfies condition (i), being the involution ${}^{*}$ itself, and fails condition (ii), so that no involution of the algebra makes the product the value of the plain product on a conjugated pair.
 
-**Proof.** The first clause is the theorem of *Introduction to the General Plain Sesqualgebra*, and it is repeated here only to fix the comparison. For the second, $e_0\star\tilde Y=e_0^{\natural}\tilde Y^{*}=\tilde Y^{*}$, so $\sigma={}^{*}$, which is conjugate-linear and involutive, and (i) holds; condition (ii) would read $\tilde P^{\natural}\tilde Q^{*}=\tilde P\tilde Q^{*}$ for every pair, and at $\tilde Q=e_0$ this is $\tilde P^{\natural}=\tilde P$ for every $\tilde P$, which fails at $\tilde P=e_1$, where the two sides are $-e_1$ and $e_1$. Equivalently the product has no right unit, as the next section shows, and the sibling article records that the failure of (ii) is the same statement.
+**Proof.** The first clause is the theorem of *Introduction to the General Plain Sesqualgebra*, and it is repeated here only to fix the comparison. For the second, $e_t\star\tilde Y=e_t^{\natural}\tilde Y^{*}=\tilde Y^{*}$, so $\sigma={}^{*}$, which is conjugate-linear and involutive, and (i) holds; condition (ii) would read $\tilde P^{\natural}\tilde Q^{*}=\tilde P\tilde Q^{*}$ for every pair, and at $\tilde Q=e_t$ this is $\tilde P^{\natural}=\tilde P$ for every $\tilde P$, which fails at $\tilde P=\vec e_x$, where the two sides are $-\vec e_x$ and $\vec e_x$. Equivalently the product has no right unit, as the next section shows, and the sibling article records that the failure of (ii) is the same statement.
 
 **Corollary.** The product is the **isotope** of the derived operation by the natural conjugation: $\tilde P\star\tilde Q=\natural(\tilde P)\,\tilde Q^{*}$, with $\natural$ the $\mathbb{C}$-linear anti-automorphism and bijection of §*The Isotope Interpretation*. The two sesquilinear products of the four are therefore the derived operation and its $\natural$-isotope, exactly as the two bilinear products are the plain multiplication and its $\natural$-isotope, and in both pairs the second is the first with the $\mathbb{C}$-linear insertion that the *derived operation* test rejects (*Comparison Between the Four General Products*, *Which of the Four Is a Sesquilinear Multiplication*).
 
@@ -89,23 +89,23 @@ The table differs from the $\natural$-bilinear table of *Introduction to the Gen
 
 ### The Left Action Is the Star
 
-**Proposition.** The unit acts on the left by the involution: $e_0\star\tilde Q=\tilde Q^{*}$ for every $\tilde Q$. In particular $e_0$ is not a left unit, and the map $\tilde Q\mapsto e_0\star\tilde Q$ is conjugate-linear, being the star.
+**Proposition.** The unit acts on the left by the involution: $e_t\star\tilde Q=\tilde Q^{*}$ for every $\tilde Q$. In particular $e_t$ is not a left unit, and the map $\tilde Q\mapsto e_t\star\tilde Q$ is conjugate-linear, being the star.
 
-**Proof.** $e_0^{\natural}=e_0$, so $e_0\star\tilde Q=e_0\tilde Q^{*}=\tilde Q^{*}$, and the star is conjugate-linear and not the identity.
+**Proof.** $e_t^{\natural}=e_t$, so $e_t\star\tilde Q=e_t\tilde Q^{*}=\tilde Q^{*}$, and the star is conjugate-linear and not the identity.
 
 ### The Right Action Is the Natural Conjugation
 
-**Proposition.** The unit acts on the right by the natural conjugation: $\tilde P\star e_0=\tilde P^{\natural}$ for every $\tilde P$. In particular $e_0$ is not a right unit.
+**Proposition.** The unit acts on the right by the natural conjugation: $\tilde P\star e_t=\tilde P^{\natural}$ for every $\tilde P$. In particular $e_t$ is not a right unit.
 
-**Proof.** $e_0^{*}=e_0$, so $\tilde P\star e_0=\tilde P^{\natural}e_0=\tilde P^{\natural}$, and $\natural$ is not the identity.
+**Proof.** $e_t^{*}=e_t$, so $\tilde P\star e_t=\tilde P^{\natural}e_t=\tilde P^{\natural}$, and $\natural$ is not the identity.
 
 ### No Unit on Either Side
 
 **Proposition.** The multiplication has **no unit on either side**.
 
-**Proof.** A left unit $\tilde E$ satisfies $\tilde E\star\tilde Q=\tilde Q$ for every $\tilde Q$, and at $\tilde Q=e_0$ this reads $\tilde E\star e_0=\tilde E^{\natural}=e_0$, whence $\tilde E=e_0$; but $e_0\star e_1=e_1^{*}=-e_1\neq e_1$, so $e_0$ is not a left unit and there is none. A right unit $\tilde E$ satisfies $\tilde P\star\tilde E=\tilde P$ for every $\tilde P$, and at $\tilde P=e_0$ this reads $e_0\star\tilde E=\tilde E^{*}=e_0$, whence $\tilde E=e_0$; but $e_1\star e_0=e_1^{\natural}=-e_1\neq e_1$, so $e_0$ is not a right unit either.
+**Proof.** A left unit $\tilde E$ satisfies $\tilde E\star\tilde Q=\tilde Q$ for every $\tilde Q$, and at $\tilde Q=e_t$ this reads $\tilde E\star e_t=\tilde E^{\natural}=e_t$, whence $\tilde E=e_t$; but $e_t\star \vec e_x=\vec e_x^{*}=-\vec e_x\neq \vec e_x$, so $e_t$ is not a left unit and there is none. A right unit $\tilde E$ satisfies $\tilde P\star\tilde E=\tilde P$ for every $\tilde P$, and at $\tilde P=e_t$ this reads $e_t\star\tilde E=\tilde E^{*}=e_t$, whence $\tilde E=e_t$; but $\vec e_x\star e_t=\vec e_x^{\natural}=-\vec e_x\neq \vec e_x$, so $e_t$ is not a right unit either.
 
-**Remark.** The two one-sided actions of $e_0$ are the two conjugations of the algebra, ${}^{*}$ on the left and ${}^{\natural}$ on the right, and no element plays the part of a unit on either side; this is the sharpest single difference from the sibling product, where the first of the two actions is the identity and $e_0$ is a right unit. The comparison of the four records it in the row "$1$ is a right identity", which reads yes only for the general plain sesquilinear product and no for the two $\natural$-products, and it is the reason the same article excludes the fourth product from the derived operation.
+**Remark.** The two one-sided actions of $e_t$ are the two conjugations of the algebra, ${}^{*}$ on the left and ${}^{\natural}$ on the right, and no element plays the part of a unit on either side; this is the sharpest single difference from the sibling product, where the first of the two actions is the identity and $e_t$ is a right unit. The comparison of the four records it in the row "$1$ is a right identity", which reads yes only for the general plain sesquilinear product and no for the two $\natural$-products, and it is the reason the same article excludes the fourth product from the derived operation.
 
 ## The Axioms and What They Do Not Force
 
@@ -113,7 +113,7 @@ The table differs from the $\natural$-bilinear table of *Introduction to the Gen
 
 **Theorem.** The multiplication is neither associative nor commutative; a sesqualgebra of full type with a nontrivial involution is never associative, by the collapse theorem of *Sesqualgebras*, and $\mathbb{B}$ is of full type.
 
-**Proof of the collapse, quoted.** If a product satisfying the two scalar rules with a nontrivial $\varsigma$ is associative, then the two scalar rules for $\lambda$ and associativity applied to $\lambda(\tilde P\tilde Q)=(\lambda\tilde P)\tilde Q=\tilde P(\lambda\tilde Q)$ force the involution to be trivial on the scalars that act; the argument is *The Collapse at the Identity* of *Sesqualgebras*, and it is the same for the sibling product. Two witnesses settle the two axioms here directly: $(e_0\star e_1)\star e_1=(-e_1)\star e_1=e_0$ while $e_0\star(e_1\star e_1)=e_0\star(-e_0)=-e_0$, so the product is not associative; and $e_1\star e_2=e_3$ while $e_2\star e_1=-e_3$, so it is not commutative.
+**Proof of the collapse, quoted.** If a product satisfying the two scalar rules with a nontrivial $\varsigma$ is associative, then the two scalar rules for $\lambda$ and associativity applied to $\lambda(\tilde P\tilde Q)=(\lambda\tilde P)\tilde Q=\tilde P(\lambda\tilde Q)$ force the involution to be trivial on the scalars that act; the argument is *The Collapse at the Identity* of *Sesqualgebras*, and it is the same for the sibling product. Two witnesses settle the two axioms here directly: $(e_t\star \vec e_x)\star \vec e_x=(-\vec e_x)\star \vec e_x=e_t$ while $e_t\star(\vec e_x\star \vec e_x)=e_t\star(-e_t)=-e_t$, so the product is not associative; and $\vec e_x\star \vec e_y=\vec e_z$ while $\vec e_y\star \vec e_x=-\vec e_z$, so it is not commutative.
 
 ### The Associator
 
@@ -133,10 +133,10 @@ $$
 
 **Remark.** The associator is a sum of two terms of opposite parity in the second variable and the same parity in the first and the third, and it vanishes under none of the standard hypotheses; the product has no identity on either side, so the associator is not the instrument of an associativity theory for this algebra, and the structural object that survives is the ternary product of §*The Ternary Product*.
 
-**Remark (the witnesses and the count).** The associator is nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean witnesses $(e_0,e_0,e_1)$ and $(e_0,e_1,e_1)$, where the display gives
+**Remark (the witnesses and the count).** The associator is nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean witnesses $(e_t,e_t,\vec e_x)$ and $(e_t,\vec e_x,\vec e_x)$, where the display gives
 
 $$
-[e_0,e_0,e_1]=-2e_1,\qquad [e_0,e_1,e_1]=2e_0 .
+[e_t,e_t,\vec e_x]=-2\vec e_x,\qquad [e_t,\vec e_x,\vec e_x]=2e_t .
 $$
 
 The two witnesses show that the associator is **not confined to one grade**: one value is pure vector and the other pure scalar, so the defect of composition is neither a purely central shift nor a purely vectorial one, unlike the defects of the antisymmetric half, which are pure vector.
@@ -145,9 +145,9 @@ The two witnesses show that the associator is **not confined to one grade**: one
 
 **Proposition.** The multiplication is **not flexible** and **not power associative**.
 
-**Proof.** The flexible law $(\tilde P\star\tilde Q)\star\tilde P=\tilde P\star(\tilde Q\star\tilde P)$ fails at $\tilde P=ie_0$, $\tilde Q=e_0$, where the two sides are $e_0$ and $-e_0$ (*Comparison Between the Four General Products*); and the degree-three identity $\tilde P\star(\tilde P\star\tilde P)=(\tilde P\star\tilde P)\star\tilde P$ fails at $\tilde P=ie_3$, where the two sides are $ie_3$ and $-ie_3$.
+**Proof.** The flexible law $(\tilde P\star\tilde Q)\star\tilde P=\tilde P\star(\tilde Q\star\tilde P)$ fails at $\tilde P=ie_t$, $\tilde Q=e_t$, where the two sides are $e_t$ and $-e_t$ (*Comparison Between the Four General Products*); and the degree-three identity $\tilde P\star(\tilde P\star\tilde P)=(\tilde P\star\tilde P)\star\tilde P$ fails at $\tilde P=i\vec e_z$, where the two sides are $i\vec e_z$ and $-i\vec e_z$.
 
-**Remark.** The witness of the degree-three identity is the same one the comparison records for this product, and it is worth reading: $\tilde P=ie_3$ is not a zero divisor and $\tilde P\star\tilde P=-e_0$ is a scalar, so the two bracketings of the triple product differ by the star in the second slot acting on the scalar line, which is the single place where the conjugation in that slot bites.
+**Remark.** The witness of the degree-three identity is the same one the comparison records for this product, and it is worth reading: $\tilde P=i\vec e_z$ is not a zero divisor and $\tilde P\star\tilde P=-e_t$ is a scalar, so the two bracketings of the triple product differ by the star in the second slot acting on the scalar line, which is the single place where the conjugation in that slot bites.
 
 ### The Algebra Structure
 
@@ -159,9 +159,9 @@ The two witnesses show that the associator is **not confined to one grade**: one
 
 ### The Tensor Product
 
-The underlying space of $\mathbb{B}$ is the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the two $\mathbb{R}$-algebras $\mathbb{C}$ and $\mathbb{H}$, and the general plain bilinear product is the product of the tensor product of algebras, $(A\otimes h)(A'\otimes h')=(AA')\otimes(hh')$, read under the identification $1\otimes e_k\mapsto e_k$, $i\otimes e_k\mapsto ie_k$ (*Introduction to the Biquaternion Algebra*, §*The Multiplication as a Scalar Extension*). The multiplication of this article is **not** a product of the tensor product: a product induced by the tensor product of the two $\mathbb{R}$-algebras is $\mathbb{C}$-bilinear, since the imaginary scalar is central in the first factor, whereas $\star$ is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second (§*The Two Scalar Rules*). What the tensor product gives the block is the underlying space, its two factor embeddings, and the statement that a product additive in each variable is determined by its values on a basis.
+The underlying space of $\mathbb{B}$ is the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the two $\mathbb{R}$-algebras $\mathbb{C}$ and $\mathbb{H}$, and the general plain bilinear product is the product of the tensor product of algebras, $(A_1\otimes h_1)(A_2\otimes h_2)=(A_1A_2)\otimes(h_1h_2)$, read under the identification $1\otimes e_k\mapsto e_k$, $i\otimes e_k\mapsto ie_k$ (*Introduction to the Biquaternion Algebra*, §*The Multiplication as a Scalar Extension*). The multiplication of this article is **not** a product of the tensor product: a product induced by the tensor product of the two $\mathbb{R}$-algebras is $\mathbb{C}$-bilinear, since the imaginary scalar is central in the first factor, whereas $\star$ is $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second (§*The Two Scalar Rules*). What the tensor product gives the block is the underlying space, its two factor embeddings, and the statement that a product additive in each variable is determined by its values on a basis.
 
-**Proposition.** The multiplication is $\mathbb{R}$-bilinear, and it is determined by its values on the eight real basis elements $e_0,\dots,e_3,ie_0,\dots,ie_3$; equivalently, by its values on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ together with the two slot parities.
+**Proposition.** The multiplication is $\mathbb{R}$-bilinear, and it is determined by its values on the eight real basis elements $e_t,\dots,\vec e_z,ie_t,\dots,i\vec e_z$; equivalently, by its values on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ together with the two slot parities.
 
 **Proof.** Additivity in each variable and the two scalar rules give $\mathbb{R}$-bilinearity. For the determination, write $\tilde P=p+ip'$ and $\tilde Q=q+iq'$ with $p,p',q,q'\in\mathbb{H}_{\mathbb{B}}$; expanding by additivity and the parities, $(\lambda\tilde P)\star\tilde Q=\lambda(\tilde P\star\tilde Q)$ and $\tilde P\star(\lambda\tilde Q)=\bar\lambda(\tilde P\star\tilde Q)$ for $\lambda=i$, gives
 
@@ -176,11 +176,11 @@ so that the four values on $\mathbb{H}_{\mathbb{B}}$ determine the value everywh
 The two factor embeddings
 
 $$
-\mathbb{C}\longrightarrow\mathbb{B}, \quad A\longmapsto A\otimes 1=Ae_0 , \qquad
+\mathbb{C}\longrightarrow\mathbb{B}, \quad A\longmapsto A\otimes 1=Ae_t , \qquad
 \mathbb{H}\longrightarrow\mathbb{B}, \quad h\longmapsto 1\otimes h ,
 $$
 
-have images that do **not** commute here. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ of *Introduction to the Remarkable Subspaces*, and on it the multiplication is the conjugate of the reversed quaternion product. The failure of the images to commute is the failure of the structure map read on the two embeddings: for $\lambda\in\mathbb{C}$ and a real quaternion $q$ one has $(\lambda e_0)\star q=\lambda q^{\natural}=\lambda\overline{q}$ and $q\star(\lambda e_0)=\overline{\lambda}\,q^{\natural}=\overline{\lambda}\,\overline{q}$, which agree for every $q$ only when $\lambda$ is real. In the plain algebra the two images commute and the scalar is central; here they do not, and the scalar line is not the centre.
+have images that do **not** commute here. The second image is the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ of *Introduction to the Remarkable Subspaces*, and on it the multiplication is the conjugate of the reversed quaternion product. The failure of the images to commute is the failure of the structure map read on the two embeddings: for $\lambda\in\mathbb{C}$ and a real quaternion $q$ one has $(\lambda e_t)\star q=\lambda q^{\natural}=\lambda\overline{q}$ and $q\star(\lambda e_t)=\overline{\lambda}\,q^{\natural}=\overline{\lambda}\,\overline{q}$, which agree for every $q$ only when $\lambda$ is real. In the plain algebra the two images commute and the scalar is central; here they do not, and the scalar line is not the centre.
 
 **Proposition.** For $p,q\in\mathbb{H}_{\mathbb{B}}$,
 
@@ -190,7 +190,7 @@ $$
 
 the quaternion conjugate of the plain product taken in the reversed order.
 
-**Proof.** The coefficients of $p$ and $q$ are real, so $p^{\natural}=\overline{p}$ and $q^{*}=\overline{q^{\natural}}=\overline{q}$; the quaternion conjugation is anti-multiplicative, hence $\overline{p}\,\overline{q}=\overline{qp}$. On the basis, $e_1\star e_2=e_3=\overline{e_2e_1}$, while the plain product in the written order gives $\overline{e_1e_2}=-e_3$.
+**Proof.** The coefficients of $p$ and $q$ are real, so $p^{\natural}=\overline{p}$ and $q^{*}=\overline{q^{\natural}}=\overline{q}$; the quaternion conjugation is anti-multiplicative, hence $\overline{p}\,\overline{q}=\overline{qp}$. On the basis, $\vec e_x\star \vec e_y=\vec e_z=\overline{\vec e_y \vec e_x}$, while the plain product in the written order gives $\overline{\vec e_x \vec e_y}=-\vec e_z$.
 
 So the block is the complexification of the real quaternion space, and not the complexification of the quaternion algebra: on the real quaternion subspace the multiplication is not the quaternion product but its reversed conjugate, and the complex structure of the space, the scalar action by $i$, follows the two parities of the product, being $\mathbb{C}$-linear in the first slot and conjugate-linear in the second, so it is not a complex structure of the multiplication (§*The Two Scalar Rules*, §*The Scalars Are Not the Centre*).
 
@@ -198,10 +198,10 @@ So the block is the complexification of the real quaternion space, and not the c
 
 ### The Structure Map
 
-The scalars of an algebra enter through the homomorphism $\varphi:\mathbb{C}\to Z(\mathbb{B})$, $\varphi(A)=Ae_0$, whose image is the scalar line $\mathbb{C}e_0$. **Here there is no such homomorphism for the multiplication of this article.** The image would be the line $\mathbb{C}e_0$, which is not central (§*The Scalars Are Not the Centre*), and $\varphi$ is not multiplicative, since
+The scalars of an algebra enter through the homomorphism $\varphi:\mathbb{C}\to Z(\mathbb{B})$, $\varphi(A)=Ae_t$, whose image is the scalar line $\mathbb{C}e_t$. **Here there is no such homomorphism for the multiplication of this article.** The image would be the line $\mathbb{C}e_t$, which is not central (§*The Scalars Are Not the Centre*), and $\varphi$ is not multiplicative, since
 
 $$
-\varphi(z)\star\varphi(w)=ze_0\star we_0=z\overline{w}\,e_0=\varphi(z\overline{w})\neq\varphi(zw)
+\varphi(z)\star\varphi(w)=ze_t\star we_t=z\overline{w}\,e_t=\varphi(z\overline{w})\neq\varphi(zw)
 $$
 
 for every non-real $w$ and $z\neq 0$. What survives is the scalar action $\mathbb{C}\times\mathbb{B}\to\mathbb{B}$, $A\cdot\tilde Q=A\tilde Q$, applied to the four coefficients, and it is compatible with the product in the first slot alone:
@@ -218,8 +218,8 @@ The first identity is the $\mathbb{C}$-linearity of the first slot and the secon
 **The gate, applied here, is empty.** For an algebra, a complex structure compatible with the product is the same thing as a central element $j$ with $j^2=-1$, the scalar action being $(a+ib)\tilde X=a\tilde X+bj\tilde X$ (*Introduction to the Biquaternion Algebra*, §*The Gate: a Central Element of Square $-1$*). Here no element plays the part, because the centre is trivial: there is no central element at all, and a fortiori none of square $-1$. The scalar imaginary $i$, which has $i^2=-1$, is not central, and its failure is one computation:
 
 $$
-(ie_0)\star e_1=ie_0\cdot e_1^{*}=ie_0\cdot(-e_1)=-ie_1 , \qquad
-e_1\star(ie_0)=e_1^{\natural}\cdot(ie_0)^{*}=(-e_1)(-ie_0)=ie_1 .
+(ie_t)\star \vec e_x=ie_t\cdot \vec e_x^{*}=ie_t\cdot(-\vec e_x)=-i\vec e_x , \qquad
+\vec e_x\star(ie_t)=\vec e_x^{\natural}\cdot(ie_t)^{*}=(-\vec e_x)(-ie_t)=i\vec e_x .
 $$
 
 The complex structure of the underlying space is therefore not a complex structure of the multiplication; it is carried by the first slot, where the scalar action is linear, and it does not pass to the second, where the scalar action is conjugate-linear. In a sesqualgebra the two parities are part of the definition, through the base involution $\varsigma$, and they are not read off from a central element.
@@ -232,41 +232,41 @@ $$
 Z(\mathbb{B})=\{\tilde X:\tilde X\star\tilde Y=\tilde Y\star\tilde X \text{ for every } \tilde Y\}=0 .
 $$
 
-**Proof.** Let $\tilde X$ be central. Testing against $\tilde Y=e_0$ and using the two one-sided actions, $\tilde X\star e_0=\tilde X^{\natural}$ and $e_0\star\tilde X=\tilde X^{*}$, so $\tilde X^{\natural}=\tilde X^{*}$; on the four coordinates this reads $\varepsilon_\nu X_\nu=\varepsilon_\nu\overline{X_\nu}$, hence every $X_\nu$ is real and $\tilde X\in\mathbb{H}_{\mathbb{B}}$. For a real $\tilde X=x_0+x_1e_1+x_2e_2+x_3e_3$ one has $\tilde X^{\natural}=\overline{\tilde X}=x_0-x_1e_1-x_2e_2-x_3e_3$ (the natural conjugation is the quaternion conjugation on the real subspace) and $\tilde X^{*}=\overline{\tilde X}$, while $(ie_2)^{\natural}=-ie_2$ and $(ie_2)^{*}=ie_2$. Testing against $\tilde Y=ie_2$ gives $\tilde X\star ie_2=\overline{\tilde X}\,ie_2$ and $ie_2\star\tilde X=-ie_2\overline{\tilde X}$, so centrality forces $\overline{\tilde X}e_2+e_2\overline{\tilde X}=0$. The quaternion product is $\overline{\tilde X}e_2+e_2\overline{\tilde X}=2x_0e_2+2x_2e_0$, hence $x_0=x_2=0$; the tests against $ie_1$ and $ie_3$ give $x_1=x_3=0$ in the same way. Therefore $\tilde X=0$, and no nonzero element is central.
+**Proof.** Let $\tilde X$ be central. Testing against $\tilde Y=e_t$ and using the two one-sided actions, $\tilde X\star e_t=\tilde X^{\natural}$ and $e_t\star\tilde X=\tilde X^{*}$, so $\tilde X^{\natural}=\tilde X^{*}$; on the four coordinates this reads $\varepsilon_\nu X_\nu=\varepsilon_\nu\overline{X_\nu}$, hence every $X_\nu$ is real and $\tilde X\in\mathbb{H}_{\mathbb{B}}$. For a real $\tilde X=x_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z$ one has $\tilde X^{\natural}=\overline{\tilde X}=x_t-x_x\vec e_x-x_y\vec e_y-x_z\vec e_z$ (the natural conjugation is the quaternion conjugation on the real subspace) and $\tilde X^{*}=\overline{\tilde X}$, while $(i\vec e_y)^{\natural}=-i\vec e_y$ and $(i\vec e_y)^{*}=i\vec e_y$. Testing against $\tilde Y=i\vec e_y$ gives $\tilde X\star i\vec e_y=\overline{\tilde X}\,i\vec e_y$ and $i\vec e_y\star\tilde X=-i\vec e_y\overline{\tilde X}$, so centrality forces $\overline{\tilde X}\vec e_y+\vec e_y\overline{\tilde X}=0$. The quaternion product is $\overline{\tilde X}\vec e_y+\vec e_y\overline{\tilde X}=2x_t\vec e_y+2x_y e_t$, hence $x_t=x_y=0$; the tests against $i\vec e_x$ and $i\vec e_z$ give $x_x=x_z=0$ in the same way. Therefore $\tilde X=0$, and no nonzero element is central.
 
-**Corollary.** The block is **not a central sesqualgebra**: its scalar line and its centre are disjoint but for $0$, since the first is $\mathbb{C}e_0$ and the second is $0$. This is the sharpest structural difference from the plain row, whose centre is $\mathbb{C}e_0$ (*Introduction to the Biquaternion Algebra*, §*The Scalars Are the Centre*); there the scalars are the centre, here the scalar action is one-sided and reaches no centre.
+**Corollary.** The block is **not a central sesqualgebra**: its scalar line and its centre are disjoint but for $0$, since the first is $\mathbb{C}e_t$ and the second is $0$. This is the sharpest structural difference from the plain row, whose centre is $\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*, §*The Scalars Are the Centre*); there the scalars are the centre, here the scalar action is one-sided and reaches no centre.
 
 ### Simplicity and the Absence of Division
 
-**Proposition.** The block is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is §*Simplicity*, with the ideal theory of *Ideals and Quotients of a Sesqualgebra*, cited and not repeated. Since the centre is trivial and is not the scalar line, the block is simple and **not central simple**: the scalar line $\mathbb{C}e_0$ is a proper subspace of $\mathbb{B}$ that meets the centre only at $0$.
+**Proposition.** The block is **simple**: its only two-sided ideals are $0$ and $\mathbb{B}$. This is §*Simplicity*, with the ideal theory of *Ideals and Quotients of a Sesqualgebra*, cited and not repeated. Since the centre is trivial and is not the scalar line, the block is simple and **not central simple**: the scalar line $\mathbb{C}e_t$ is a proper subspace of $\mathbb{B}$ that meets the centre only at $0$.
 
 **Proposition.** The sesqualgebra is **not a division algebra**.
 
-**Proof.** The element $e_0+ie_1$ is nonzero and its square vanishes,
+**Proof.** The element $e_t+i\vec e_x$ is nonzero and its square vanishes,
 
 $$
-(e_0+ie_1)\star(e_0+ie_1)=(e_0-ie_1)(e_0+ie_1)=e_0-(ie_1)^2=e_0-i^2e_1^2=e_0-e_0=0 ,
+(e_t+i\vec e_x)\star(e_t+i\vec e_x)=(e_t-i\vec e_x)(e_t+i\vec e_x)=e_t-(i\vec e_x)^2=e_t-i^2\vec e_x^2=e_t-e_t=0 ,
 $$
 
-so $e_0+ie_1$ is a nonzero nilpotent of index two, hence a zero divisor, and the product has no division. It has no unit and no inverse either, the two one-sided actions of $e_0$ being the two conjugations; the substitute of the block for invertibility is the group of units of the **plain** algebra, and it is *Norm and Invertibility in the General Quaternionic Sesqualgebra*. The zero divisors and the nilpotents are *Zero Divisors of the General Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
+so $e_t+i\vec e_x$ is a nonzero nilpotent of index two, hence a zero divisor, and the product has no division. It has no unit and no inverse either, the two one-sided actions of $e_t$ being the two conjugations; the substitute of the block for invertibility is the group of units of the **plain** algebra, and it is *Norm and Invertibility in the General Quaternionic Sesqualgebra*. The zero divisors and the nilpotents are *Zero Divisors of the General Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ## Generators and the Presentation
 
 ### The Generators
 
-**Proposition.** The plain algebra $\mathbb{B}$ is generated, as a $\mathbb{C}$-algebra with unit, by $e_1$ and $e_2$; and the sesqualgebra, whose multiplication differs from the plain one by the $\mathbb{C}$-linear natural conjugation inserted in the first slot, is generated by the same two elements.
+**Proposition.** The plain algebra $\mathbb{B}$ is generated, as a $\mathbb{C}$-algebra with unit, by $\vec e_x$ and $\vec e_y$; and the sesqualgebra, whose multiplication differs from the plain one by the $\mathbb{C}$-linear natural conjugation inserted in the first slot, is generated by the same two elements.
 
-**Proof.** In the plain algebra the relations $e_1^2=-e_0$ and $e_1e_2=e_3$ of the table give the identity and the fourth unit from $e_1$ and $e_2$, and the four basis elements span (*Introduction to the Biquaternion Algebra*, §*The Generators*). In the block the same two relations read $e_1\star e_1=-e_0$ and $e_1\star e_2=e_3$, so the identity and the fourth unit are again reached; the scalar action supplies the complex coefficients in the first slot, and every element is a $\mathbb{C}$-combination of $e_0,e_1,e_2,e_3$.
+**Proof.** In the plain algebra the relations $\vec e_x^2=-e_t$ and $\vec e_x \vec e_y=\vec e_z$ of the table give the identity and the fourth unit from $\vec e_x$ and $\vec e_y$, and the four basis elements span (*Introduction to the Biquaternion Algebra*, §*The Generators*). In the block the same two relations read $\vec e_x\star \vec e_x=-e_t$ and $\vec e_x\star \vec e_y=\vec e_z$, so the identity and the fourth unit are again reached; the scalar action supplies the complex coefficients in the first slot, and every element is a $\mathbb{C}$-combination of $e_t,\vec e_x,\vec e_y,\vec e_z$.
 
 ### The Relations and the Presentation
 
-**Proposition.** The generators $e_1,e_2$ satisfy the quaternion relations read in the product,
+**Proposition.** The generators $\vec e_x,\vec e_y$ satisfy the quaternion relations read in the product,
 
 $$
-e_1\star e_1=e_2\star e_2=-e_0 , \qquad e_1\star e_2+e_2\star e_1=0 ,
+\vec e_x\star \vec e_x=\vec e_y\star \vec e_y=-e_t , \qquad \vec e_x\star \vec e_y+\vec e_y\star \vec e_x=0 ,
 $$
 
-and $e_1\star e_2=e_3$ returns the third imaginary unit. The relations do **not present the sesqualgebra** as a quotient of a free associative algebra, because the product is not associative and no such quotient is a sesqualgebra of this type; what they present is the underlying plain algebra,
+and $\vec e_x\star \vec e_y=\vec e_z$ returns the third imaginary unit. The relations do **not present the sesqualgebra** as a quotient of a free associative algebra, because the product is not associative and no such quotient is a sesqualgebra of this type; what they present is the underlying plain algebra,
 
 $$
 \mathbb{B}\cong\mathbb{C}\langle E_1,E_2\rangle\big/\bigl(E_1^2+1,\;E_2^2+1,\;E_1E_2+E_2E_1\bigr) ,
@@ -278,21 +278,21 @@ of §*The Relations and the Presentation* of *Introduction to the Biquaternion A
 
 ## The Subalgebra Generated by One Element
 
-The model reads the unital subalgebra $\mathbb{C}[\tilde Q]=\mathbb{C}e_0+\mathbb{C}\tilde Q+\mathbb{C}\tilde Q^2+\cdots$ from the identity $\tilde Q^2=\bigl(Q_0^2-(\vec Q,\vec Q)\bigr)+2Q_0\vec Q$, which puts the square in $\mathbb{C}e_0+\mathbb{C}\tilde Q$ and makes that plane a commutative subalgebra of dimension at most two over $\mathbb{C}$ (*Introduction to the Biquaternion Algebra*, §*The Subalgebra Generated by One Element*). **That identity fails here**, and with it the whole reading.
+The model reads the unital subalgebra $\mathbb{C}[\tilde Q]=\mathbb{C}e_t+\mathbb{C}\tilde Q+\mathbb{C}\tilde Q^y+\cdots$ from the identity $\tilde Q^y=\bigl(Q_t^2-(\vec Q,\vec Q)\bigr)+2Q_t\vec Q$, which puts the square in $\mathbb{C}e_t+\mathbb{C}\tilde Q$ and makes that plane a commutative subalgebra of dimension at most two over $\mathbb{C}$ (*Introduction to the Biquaternion Algebra*, §*The Subalgebra Generated by One Element*). **That identity fails here**, and with it the whole reading.
 
-**Proposition.** For a generic element $\tilde Q$ the three elements $e_0,\tilde Q,\tilde Q\star\tilde Q$ are linearly independent over $\mathbb{C}$, so the square does not lie in $\mathbb{C}e_0+\mathbb{C}\tilde Q$; and the multiplication is not power associative, since at $\tilde Q=ie_3$ the two cubings differ,
+**Proposition.** For a generic element $\tilde Q$ the three elements $e_t,\tilde Q,\tilde Q\star\tilde Q$ are linearly independent over $\mathbb{C}$, so the square does not lie in $\mathbb{C}e_t+\mathbb{C}\tilde Q$; and the multiplication is not power associative, since at $\tilde Q=i\vec e_z$ the two cubings differ,
 
 $$
-ie_3\star(ie_3\star ie_3)=ie_3 , \qquad (ie_3\star ie_3)\star ie_3=-ie_3 .
+i\vec e_z\star(i\vec e_z\star i\vec e_z)=i\vec e_z , \qquad (i\vec e_z\star i\vec e_z)\star i\vec e_z=-i\vec e_z .
 $$
 
-**Proof.** The square is $\tilde Q\star\tilde Q=\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$ (§*The Square and the Two Halves*); the identity of the model would place it in $\mathbb{C}e_0+\mathbb{C}\tilde Q$, and a recomputation of the complex rank of $e_0,\tilde Q,\tilde Q\star\tilde Q$ on random elements gives three, not two, for a generic $\tilde Q$. The two cubings are those of §*The Flexibility and the Degree-Three Identity*, where the failure is recorded.
+**Proof.** The square is $\tilde Q\star\tilde Q=\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$ (§*The Square and the Two Halves*); the identity of the model would place it in $\mathbb{C}e_t+\mathbb{C}\tilde Q$, and a recomputation of the complex rank of $e_t,\tilde Q,\tilde Q\star\tilde Q$ on random elements gives three, not two, for a generic $\tilde Q$. The two cubings are those of §*The Flexibility and the Degree-Three Identity*, where the failure is recorded.
 
 **Proposition.** The subalgebra generated by a generic element is the whole space. The left-nested powers $\tilde Q,\tilde Q\star\tilde Q,(\tilde Q\star\tilde Q)\star\tilde Q,\dots$ of a generic element span the whole space, of real dimension eight and complex dimension four, so the smallest subalgebra containing $\tilde Q$ is $\mathbb{B}$ itself.
 
 **Proof.** The span of the words in $\tilde Q$ is stable under the product by construction and is the smallest subalgebra containing $\tilde Q$; it contains the left-nested powers, and a recomputation on random elements gives complex rank four, the full complex dimension of $\mathbb{B}$, for the powers alone. Hence the generated subalgebra is $\mathbb{B}$.
 
-**Remark.** The proper subalgebras generated by one element are not only the scalar line. The scalar line $\mathbb{C}e_0$ **is** a subalgebra, of complex dimension one, with the multiplication $ze_0\star we_0=z\overline{w}\,e_0$, conjugate-symmetric and not commutative; it is the subalgebra generated by $ie_0$, whose left-nested powers are $ie_0,e_0,-ie_0,-e_0,\dots$, and it is the only one-dimensional case generated by a single element. But two-dimensional cases abound. Every element of the real quaternion subspace generates at most a two-dimensional subalgebra, because for real $\tilde Q$ the two conjugations coincide with the quaternion conjugation, so $\tilde Q\star e_0=e_0\star\tilde Q=\overline{\tilde Q}$ and $\tilde Q\star\tilde Q=\overline{\tilde Q^{2}}$ both lie in $\mathbb{C}e_0+\mathbb{C}\tilde Q$: the algebra generated by $e_1$ is $\mathbb{C}e_0\oplus\mathbb{C}e_1$, and that generated by the nilpotent $e_0+ie_1$ is $\mathbb{C}e_0\oplus\mathbb{C}(e_0+ie_1)$. What the block loses is the model's guarantee rather than the subalgebras themselves: the model has a two-dimensional subalgebra at **every** element, and the block has one only on the degenerate locus, the algebra of a generic element being the whole space, of complex dimension four. None of these one-generator subalgebras is commutative either, the scalar line included, because the scalar action is conjugate-linear in the second slot; the commutative plane of the model is exactly what that conjugate-linear slot removes.
+**Remark.** The proper subalgebras generated by one element are not only the scalar line. The scalar line $\mathbb{C}e_t$ **is** a subalgebra, of complex dimension one, with the multiplication $ze_t\star we_t=z\overline{w}\,e_t$, conjugate-symmetric and not commutative; it is the subalgebra generated by $ie_t$, whose left-nested powers are $ie_t,e_t,-ie_t,-e_t,\dots$, and it is the only one-dimensional case generated by a single element. But two-dimensional cases abound. Every element of the real quaternion subspace generates at most a two-dimensional subalgebra, because for real $\tilde Q$ the two conjugations coincide with the quaternion conjugation, so $\tilde Q\star e_t=e_t\star\tilde Q=\overline{\tilde Q}$ and $\tilde Q\star\tilde Q=\overline{\tilde Q^{2}}$ both lie in $\mathbb{C}e_t+\mathbb{C}\tilde Q$: the algebra generated by $\vec e_x$ is $\mathbb{C}e_t\oplus\mathbb{C}\vec e_x$, and that generated by the nilpotent $e_t+i\vec e_x$ is $\mathbb{C}e_t\oplus\mathbb{C}(e_t+i\vec e_x)$. What the block loses is the model's guarantee rather than the subalgebras themselves: the model has a two-dimensional subalgebra at **every** element, and the block has one only on the degenerate locus, the algebra of a generic element being the whole space, of complex dimension four. None of these one-generator subalgebras is commutative either, the scalar line included, because the scalar action is conjugate-linear in the second slot; the commutative plane of the model is exactly what that conjugate-linear slot removes.
 
 ## The Involution and the Two Halves
 
@@ -322,13 +322,13 @@ of *Hermitian and Skew-Hermitian Elements*, *Introduction to the Remarkable Subs
 **Proposition.** The multiplication does not preserve the two halves: the product of two Hermitian elements can be skew-Hermitian. The square of an element of either half is a scalar, the central scalar $\tilde P^{\natural}\tilde P$ with the sign of the half,
 
 $$
-\tilde P\star\tilde P=\Bigl(\sum_{\mu=0}^{3}P_\mu^2\Bigr)e_0 \ \ (\tilde P\in\mathbb{M}_+) , \qquad
-\tilde P\star\tilde P=-\Bigl(\sum_{\mu=0}^{3}P_\mu^2\Bigr)e_0 \ \ (\tilde P\in\mathbb{M}_-) ,
+\tilde P\star\tilde P=\Bigl(\sum_{\mu\in\{t,x,y,z\}}P_\mu^2\Bigr)e_t \ \ (\tilde P\in\mathbb{M}_+) , \qquad
+\tilde P\star\tilde P=-\Bigl(\sum_{\mu\in\{t,x,y,z\}}P_\mu^2\Bigr)e_t \ \ (\tilde P\in\mathbb{M}_-) ,
 $$
 
 so in particular the square of an element of either half is fixed by the involution.
 
-**Proof.** For the first clause take $\tilde P=ie_1$ and $\tilde Q=ie_2$, both Hermitian; then $\tilde P\star\tilde Q=(-ie_1)(ie_2)=e_3$, and $e_3$ is skew-Hermitian, $e_3^{*}=-e_3$. For the second, let $\tilde P=P_0+\vec P\in\mathbb{M}_+$, so that $P_0$ is real, $\vec P$ is purely imaginary and $\overline{\tilde P}=\tilde P^{\natural}$, while $\tilde P^{*}=\tilde P$; then $\tilde P\star\tilde P=\tilde P^{\natural}\tilde P^{*}=\tilde P^{\natural}\tilde P=\bigl(\sum_\mu P_\mu^2\bigr)e_0$, the two factors commuting and $\tilde P^{\natural}\tilde P$ being the central scalar on which the square turns. Let $\tilde P\in\mathbb{M}_-$: then $P_0$ is purely imaginary and $\vec P$ is real, so $\overline{\tilde P}=-\tilde P^{\natural}$ and $\tilde P^{*}=-\tilde P$, whence $\tilde P\star\tilde P=\tilde P^{\natural}\tilde P^{*}=-\tilde P^{\natural}\tilde P=-\bigl(\sum_\mu P_\mu^2\bigr)e_0$.
+**Proof.** For the first clause take $\tilde P=i\vec e_x$ and $\tilde Q=i\vec e_y$, both Hermitian; then $\tilde P\star\tilde Q=(-i\vec e_x)(i\vec e_y)=\vec e_z$, and $\vec e_z$ is skew-Hermitian, $\vec e_z^{*}=-\vec e_z$. For the second, let $\tilde P=P_t+\vec P\in\mathbb{M}_+$, so that $P_t$ is real, $\vec P$ is purely imaginary and $\overline{\tilde P}=\tilde P^{\natural}$, while $\tilde P^{*}=\tilde P$; then $\tilde P\star\tilde P=\tilde P^{\natural}\tilde P^{*}=\tilde P^{\natural}\tilde P=\bigl(\sum_\mu P_\mu^2\bigr)e_t$, the two factors commuting and $\tilde P^{\natural}\tilde P$ being the central scalar on which the square turns. Let $\tilde P\in\mathbb{M}_-$: then $P_t$ is purely imaginary and $\vec P$ is real, so $\overline{\tilde P}=-\tilde P^{\natural}$ and $\tilde P^{*}=-\tilde P$, whence $\tilde P\star\tilde P=\tilde P^{\natural}\tilde P^{*}=-\tilde P^{\natural}\tilde P=-\bigl(\sum_\mu P_\mu^2\bigr)e_t$.
 
 **Remark.** The sibling proves that its product is Hermitian-symmetric, that is that the involution exchanges its two slots, and then reads the two halves as the involution's fixed and anti-fixed subspaces of the multiplication. Here the involution does not exchange the slots, and the halves are the halves of the algebra; the multiplication reads them by the proposition above, which is what is left of the sibling's theorem when the first slot carries the natural conjugation.
 
@@ -343,7 +343,7 @@ $$
 \tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{*}\tilde{P}^{\natural}\bigr),
 $$
 
-and both are sesquilinear over $\mathbb{C}$: the skew half is the cross product $\vec P\times\overline{\vec Q}$, vector-valued, and the symmetric half carries the general quaternionic sesquilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ in its scalar part. They are the conjugate-symmetric and skew-conjugate-symmetric parts of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*, and they **are** the operations $\mathrm{SQS}$ and $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the biquaternion instance of the two bare halves of both sesqualgebras is *The 12 Products of the Biquaternioid Complex Space*, §*The Other Exchange, and the Class It Keeps*.
+and both are sesquilinear over $\mathbb{C}$: the skew half is the cross product $\vec P\times\overline{\vec Q}$, vector-valued, and the symmetric half carries the general quaternionic sesquilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$ in its scalar part. They are the conjugate-symmetric and skew-conjugate-symmetric parts of *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*, and they **are** the operations $\mathrm{SQS}$ and $\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the biquaternion instance of the two bare halves of both sesqualgebras is *The 12 Products of the Biquaternioid Complex Space*, §*The Other Exchange, and the Class It Keeps*.
 
 ## The Square, the Idempotents and the Ternary Product
 
@@ -358,10 +358,10 @@ $$
 its scalar part is the sum of the four coordinates read at the two equal arguments,
 
 $$
-\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu Q_\mu\overline{Q_\mu}=|Q_0|^2-|Q_1|^2-|Q_2|^2-|Q_3|^2 ,
+\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu Q_\mu\overline{Q_\mu}=|Q_t|^2-|Q_x|^2-|Q_y|^2-|Q_z|^2 ,
 $$
 
-the three vector squares entering negatively; and on the two halves the square is the central scalar $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$, with the sign $+$ on $\mathbb{M}_+$ and the sign $-$ on $\mathbb{M}_-$.
+the three vector squares entering negatively; and on the two halves the square is the central scalar $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$, with the sign $+$ on $\mathbb{M}_+$ and the sign $-$ on $\mathbb{M}_-$.
 
 **Proof.** The first display is the two conjugations of the rule read on equal arguments, and the second is the scalar–vector form: the dot product enters negatively and the two vector terms cancel. The scalar part is the scalar part $\mathrm{Sc}(\tilde P\tilde Q^{*})$ of the four-general-products article with the first factor read through ${}^{\natural}$, which is $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ at $\tilde P=\tilde Q$. The last clause is the proposition of §*The Product Does Not Exchange the Halves*, where the two signs are computed.
 
@@ -375,17 +375,17 @@ $$
 \overline{\tilde Q}\,\tilde Q=\tilde Q^{\natural} ,
 $$
 
-and among the elements of the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ they are $0$, $e_0$, and the **two-parameter family**
+and among the elements of the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ they are $0$, $e_t$, and the **two-parameter family**
 
 $$
-\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \quad (\vec u,\vec u)=1 ,
+\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u , \qquad \vec u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \quad (\vec u,\vec u)=1 ,
 $$
 
 a two-parameter family in the real three-dimensional vector subspace.
 
-**Proof.** The equation $\tilde Q\star\tilde Q=\tilde Q$ reads $(\overline{\tilde Q}\tilde Q)^{\natural}=\tilde Q$; applying ${}^{\natural}$ to both sides, which is an involution, gives the criterion. On the quaternion subspace the coefficients are real, so $\overline{\tilde Q}=\tilde Q^{\natural}$ and the criterion reads $\tilde Q^{2}=\tilde Q^{\natural}$; with $\tilde Q=Q_0+\vec Q$ the plain square is $\bigl(Q_0^{2}-(\vec Q,\vec Q)\bigr)+2Q_0\vec Q$, so the scalar coordinates give $Q_0^{2}-(\vec Q,\vec Q)=Q_0$ and the vector coordinates give $(2Q_0+1)\vec Q=0$. If $\vec Q=0$ then $Q_0\in\{0,1\}$ and the solutions are $0$ and $e_0$; if $\vec Q\neq0$ then $Q_0=-\tfrac12$ and $(\vec Q,\vec Q)=Q_0^{2}-Q_0=\tfrac34$, which is the family.
+**Proof.** The equation $\tilde Q\star\tilde Q=\tilde Q$ reads $(\overline{\tilde Q}\tilde Q)^{\natural}=\tilde Q$; applying ${}^{\natural}$ to both sides, which is an involution, gives the criterion. On the quaternion subspace the coefficients are real, so $\overline{\tilde Q}=\tilde Q^{\natural}$ and the criterion reads $\tilde Q^{2}=\tilde Q^{\natural}$; with $\tilde Q=Q_t+\vec Q$ the plain square is $\bigl(Q_t^{2}-(\vec Q,\vec Q)\bigr)+2Q_t\vec Q$, so the scalar coordinates give $Q_t^{2}-(\vec Q,\vec Q)=Q_t$ and the vector coordinates give $(2Q_t+1)\vec Q=0$. If $\vec Q=0$ then $Q_t\in\{0,1\}$ and the solutions are $0$ and $e_t$; if $\vec Q\neq0$ then $Q_t=-\tfrac12$ and $(\vec Q,\vec Q)=Q_t^{2}-Q_t=\tfrac34$, which is the family.
 
-**Remark.** The idempotents of this multiplication are therefore not the idempotents of the algebra and not the idempotents of the sibling multiplication. The sibling proves that its idempotents are exactly the Hermitian idempotents of the algebra, $0$, $e_0$ and the pure states $\tfrac12(e_0+\tilde\Xi)$ with $\vec u$ a real unit vector; here those elements are **not** idempotent, each of them having $\tilde\Pi\star\tilde\Pi=0$, since it is a zero divisor of the algebra (*Zero Divisors of the Biquaternion Algebra*) and its square in the other product is the central scalar $\tilde Q^{\natural}\tilde Q$. The idempotents here beyond the two trivial ones are the family above, and the family is outside the Hermitian subspace: $\tilde\Pi(\vec u)$ has real vector part, so $\tilde\Pi(\vec u)^{*}\neq\tilde\Pi(\vec u)$. Their central scalar $\tilde P^{\natural}\tilde P$ is $e_0$ and the scalar part of their square is $-\tfrac12$, and they are the elements of $\mathbb{B}$ that are idempotent for the fourth product and for it alone among the four.
+**Remark.** The idempotents of this multiplication are therefore not the idempotents of the algebra and not the idempotents of the sibling multiplication. The sibling proves that its idempotents are exactly the Hermitian idempotents of the algebra, $0$, $e_t$ and the pure states $\tfrac12(e_t+\tilde\Xi)$ with $\vec u$ a real unit vector; here those elements are **not** idempotent, each of them having $\tilde\Pi\star\tilde\Pi=0$, since it is a zero divisor of the algebra (*Zero Divisors of the Biquaternion Algebra*) and its square in the other product is the central scalar $\tilde Q^{\natural}\tilde Q$. The idempotents here beyond the two trivial ones are the family above, and the family is outside the Hermitian subspace: $\tilde\Pi(\vec u)$ has real vector part, so $\tilde\Pi(\vec u)^{*}\neq\tilde\Pi(\vec u)$. Their central scalar $\tilde P^{\natural}\tilde P$ is $e_t$ and the scalar part of their square is $-\tfrac12$, and they are the elements of $\mathbb{B}$ that are idempotent for the fourth product and for it alone among the four.
 
 ### The Ternary Product
 
@@ -409,9 +409,9 @@ $$
 \{x,y,\{u,v,w\}\}=\{\{x,y,u\},v,w\}-\{u,\{y,x,v\},w\}+\{u,v,\{x,y,w\}\}
 $$
 
-of *Algebraic J\*-Algebras*. At the basis elements $(x,y,u,v,w)=(e_0,e_1,e_0,e_2,e_0)$ the two sides are $e_3$ and $-3e_3$.
+of *Algebraic J\*-Algebras*. At the basis elements $(x,y,u,v,w)=(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the two sides are $\vec e_z$ and $-3\vec e_z$.
 
-**Proof.** The bar conjugates the coefficients, which are real on the basis, so $\overline{e_0}=e_0$ and $\overline{e_k}=e_k$ for $k=1,2,3$. The left-hand side is $\{e_0,e_1,\{e_0,e_2,e_0\}\}$; the inner bracket is $\overline{e_2}e_0e_0=e_2$, and the outer one is $\overline{e_1}e_0e_2=e_1e_2=e_3$. The right-hand side is $\{\{e_0,e_1,e_0\},e_2,e_0\}-\{e_0,\{e_1,e_0,e_2\},e_0\}+\{e_0,e_2,\{e_0,e_1,e_0\}\}$; the first bracket is $\{e_0,e_1,e_0\}=\overline{e_1}e_0e_0=e_1$, and $\{e_1,e_2,e_0\}=\overline{e_2}e_1e_0=e_2e_1=-e_3$; the middle inner bracket is $\{e_1,e_0,e_2\}=\overline{e_0}e_1e_2=e_1e_2=e_3$, and $\{e_0,e_3,e_0\}=\overline{e_3}e_0e_0=e_3$; the third bracket is again $e_1$, and $\{e_0,e_2,e_1\}=\overline{e_2}e_0e_1=e_2e_1=-e_3$. The sum is $-e_3-e_3-e_3=-3e_3$, which differs from $e_3$.
+**Proof.** The bar conjugates the coefficients, which are real on the basis, so $\overline{e_t}=e_t$ and $\overline{e_k}=e_k$ for $k=1,2,3$. The left-hand side is $\{e_t,\vec e_x,\{e_t,\vec e_y,e_t\}\}$; the inner bracket is $\overline{\vec e_y}e_t e_t=\vec e_y$, and the outer one is $\overline{\vec e_x}e_t \vec e_y=\vec e_x \vec e_y=\vec e_z$. The right-hand side is $\{\{e_t,\vec e_x,e_t\},\vec e_y,e_t\}-\{e_t,\{\vec e_x,e_t,\vec e_y\},e_t\}+\{e_t,\vec e_y,\{e_t,\vec e_x,e_t\}\}$; the first bracket is $\{e_t,\vec e_x,e_t\}=\overline{\vec e_x}e_t e_t=\vec e_x$, and $\{\vec e_x,\vec e_y,e_t\}=\overline{\vec e_y}\vec e_x e_t=\vec e_y \vec e_x=-\vec e_z$; the middle inner bracket is $\{\vec e_x,e_t,\vec e_y\}=\overline{e_t}\vec e_x \vec e_y=\vec e_x \vec e_y=\vec e_z$, and $\{e_t,\vec e_z,e_t\}=\overline{\vec e_z}e_t e_t=\vec e_z$; the third bracket is again $\vec e_x$, and $\{e_t,\vec e_y,\vec e_x\}=\overline{\vec e_y}e_t \vec e_x=\vec e_y \vec e_x=-\vec e_z$. The sum is $-\vec e_z-\vec e_z-\vec e_z=-3\vec e_z$, which differs from $\vec e_z$.
 
 **Corollary.** The ternary product has the parity of an algebraic $J^{*}$-algebra but not its identity, so the general theorems of *Algebraic J\*-Algebras*, *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product* do not apply to the fourth product's ternary reading. The reason is the one the section *The Product Is Not the Derived Operation* isolates: the model of the theory is the **middle** model $\tilde X\tilde Y^{*}\tilde Z$, which does satisfy the identity, and the ternary product of this multiplication is the **left** model $\tilde X^{*}\tilde Y\tilde Z$, the two being the same formula read with the involution in the first rather than in the middle slot. The insertion of ${}^{\natural}$ in the first slot of the multiplication is what transposes the two, and no identity survives the transposition.
 
@@ -419,7 +419,7 @@ of *Algebraic J\*-Algebras*. At the basis elements $(x,y,u,v,w)=(e_0,e_1,e_0,e_2
 
 ### The First Slot Is the Source
 
-The failures of the multiplication are not independent, and the section separates the ones the first slot owns from the ones it does not. Three are the work of the **first slot** alone, and §*The Isotope Interpretation* names them: the absence of a unit on either side (the sibling product has $e_0$ on the right), the failure of the slot exchange of §*The Product Does Not Exchange the Halves*, and the failure of the Jordan triple identity of the ternary reading (the sibling's ternary product is the middle model and satisfies the identity). The same insertion also removes the product's status as the derived operation of the algebra with an involution.
+The failures of the multiplication are not independent, and the section separates the ones the first slot owns from the ones it does not. Three are the work of the **first slot** alone, and §*The Isotope Interpretation* names them: the absence of a unit on either side (the sibling product has $e_t$ on the right), the failure of the slot exchange of §*The Product Does Not Exchange the Halves*, and the failure of the Jordan triple identity of the ternary reading (the sibling's ternary product is the middle model and satisfies the identity). The same insertion also removes the product's status as the derived operation of the algebra with an involution.
 
 The remaining failures are **not** the first slot's work, and the article says so plainly. Non-commutativity, non-associativity, non-flexibility and the failure of the degree-three identity are shared with the sibling product that inserts nothing in the first slot. On the eight-element basis the general plain sesquilinear product fails associativity on $256$ of the $512$ triples, commutativity on $32$ of the $64$ pairs, flexibility on $32$ of the $64$ pairs and the degree-three identity at $4$ of the $8$ elements; the fourth product fails at exactly the same counts. What separates the two is therefore not composition but the **pair (no unit, no Jordan triple)**: the fourth product loses both, the sibling loses neither.
 
@@ -431,9 +431,9 @@ The remaining failures are **not** the first slot's work, and the article says s
 
 **Theorem.** The only two-sided ideals of the sesqualgebra $(\mathbb{B},\star)$ are $0$ and $\mathbb{B}$.
 
-**Proof.** Let $I$ be a two-sided ideal, so that $\tilde A\star\tilde X\in I$ and $\tilde X\star\tilde A\in I$ for every $\tilde A\in\mathbb{B}$ and $\tilde X\in I$. The first condition with $\tilde A=e_0$ gives $\tilde X^{*}\in I$, and the second gives $\tilde X^{\natural}\in I$: the ideal is stable under both conjugations. The first condition then reads that $\tilde A^{\natural}\tilde X^{*}\in I$ for every $\tilde A$ and $\tilde X\in I$; as $\tilde X$ runs over $I$ the element $\tilde X^{*}$ runs over $I$, and as $\tilde A$ runs over $\mathbb{B}$ so does $\tilde A^{\natural}$, whence $\mathbb{B}I\subseteq I$. The second condition reads that $\tilde X^{\natural}\tilde A^{*}\in I$, and gives $I\mathbb{B}\subseteq I$ in the same way. Hence $I$ is a two-sided ideal of the ring $\mathbb{B}$, which is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, so $I$ is $0$ or $\mathbb{B}$.
+**Proof.** Let $I$ be a two-sided ideal, so that $\tilde A\star\tilde X\in I$ and $\tilde X\star\tilde A\in I$ for every $\tilde A\in\mathbb{B}$ and $\tilde X\in I$. The first condition with $\tilde A=e_t$ gives $\tilde X^{*}\in I$, and the second gives $\tilde X^{\natural}\in I$: the ideal is stable under both conjugations. The first condition then reads that $\tilde A^{\natural}\tilde X^{*}\in I$ for every $\tilde A$ and $\tilde X\in I$; as $\tilde X$ runs over $I$ the element $\tilde X^{*}$ runs over $I$, and as $\tilde A$ runs over $\mathbb{B}$ so does $\tilde A^{\natural}$, whence $\mathbb{B}I\subseteq I$. The second condition reads that $\tilde X^{\natural}\tilde A^{*}\in I$, and gives $I\mathbb{B}\subseteq I$ in the same way. Hence $I$ is a two-sided ideal of the ring $\mathbb{B}$, which is simple by *Ideals and Peirce Decomposition of the Biquaternion Algebra*, so $I$ is $0$ or $\mathbb{B}$.
 
-**Remark.** The conclusion is the one the sibling reaches, and by the same route, but the route uses both one-sided actions of $e_0$ here: the star produces the ${}^{*}$-stability and the natural conjugation the ${}^{\natural}$-stability, and neither would suffice alone, since a one-sided ideal condition gives only one of the two. In the theory of *Ideals and Quotients of a Sesqualgebra* the ideals are the two-sided ideals of the algebra, so the answer here is the same as for the two readings already established.
+**Remark.** The conclusion is the one the sibling reaches, and by the same route, but the route uses both one-sided actions of $e_t$ here: the star produces the ${}^{*}$-stability and the natural conjugation the ${}^{\natural}$-stability, and neither would suffice alone, since a one-sided ideal condition gives only one of the two. In the theory of *Ideals and Quotients of a Sesqualgebra* the ideals are the two-sided ideals of the algebra, so the answer here is the same as for the two readings already established.
 
 ### The Left Multiplications
 
@@ -454,7 +454,7 @@ so the composition of two of them is $\mathbb{C}$-linear in $\tilde X$ and is no
 **Proposition.** The scalar part of the multiplication is
 
 $$
-\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3} ,
+\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu P_\mu\overline{Q_\mu}=P_t\overline{Q_t}-P_x\overline{Q_x}-P_y\overline{Q_y}-P_z\overline{Q_z} ,
 $$
 
 and the multiplication is that scalar part read coefficientwise against the basis, with the two signs of the two conjugations.
@@ -467,7 +467,7 @@ and the multiplication is that scalar part read coefficientwise against the basi
 
 ### Which of the Four Is a Sesquilinear Multiplication
 
-The row of the table of *Comparison Between the Four General Products* headed "multiplication of a sesqualgebra over $\mathbb{C}$" is read with the definition of *Sesqualgebras* and with nothing added to it, and it reads no, no, yes, yes: the two products carrying the star are **both** multiplications of a sesqualgebra over the conjugation, since the first slot of either is read by a map that is $\mathbb{C}$-linear, and the two bilinear products are the trivial-involution collapse of the same definition. The two are separated not by the scalar rules but by the **unit**: the general plain sesquilinear product has $e_0$ on the right, $\tilde P\tilde Q^{*}$ with $\tilde Q=e_0$ returning $\tilde P$, and the general quaternionic sesquilinear product has not, as §*No Unit on Either Side* proves.
+The row of the table of *Comparison Between the Four General Products* headed "multiplication of a sesqualgebra over $\mathbb{C}$" is read with the definition of *Sesqualgebras* and with nothing added to it, and it reads no, no, yes, yes: the two products carrying the star are **both** multiplications of a sesqualgebra over the conjugation, since the first slot of either is read by a map that is $\mathbb{C}$-linear, and the two bilinear products are the trivial-involution collapse of the same definition. The two are separated not by the scalar rules but by the **unit**: the general plain sesquilinear product has $e_t$ on the right, $\tilde P\tilde Q^{*}$ with $\tilde Q=e_t$ returning $\tilde P$, and the general quaternionic sesquilinear product has not, as §*No Unit on Either Side* proves.
 
 The sharper division is the one of the **derived operation**. The general theory of *Sesqualgebras* builds a multiplication from the algebra and its involution by inserting the involution in the second slot, $\tilde X\star\tilde Y=\tilde X\tilde Y^{*}$, and the sibling article proves that the general plain sesquilinear product is that construction for the pair $(\mathbb{B},{}^{*})$. The product of this article inserts the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot as well, and §*The Product Is Not the Derived Operation* proves that this is not the derived operation of any involution of the algebra: condition (i) holds because the first row is the star itself, and condition (ii) fails because it would force ${}^{\natural}$ to be the identity. **The classification of the four** is therefore: one multiplication of an associative unital algebra, the plain product; one multiplication of a sesqualgebra that is the derived operation of the algebra with its star, the general plain sesquilinear product; and the two $\natural$-products, which are the two $\natural$-isotopes of those two, the $\natural$-bilinear product of *Introduction to the General Quaternionic Algebra* and the $\natural$-sesquilinear product of this article.
 
@@ -493,30 +493,30 @@ $$
 \boxed{\ \text{With the general quaternionic sesquilinear product, } \mathbb{B} \text{ is a four-dimensional sesqualgebra over } (\mathbb{C},\varsigma) \text{ with no unit on either side, neither associative nor commutative, and not the derived operation.}\ }
 $$
 
-Its two one-sided actions of $e_0$ are the two conjugations, $\tilde Q^{*}$ on the left and $\tilde Q^{\natural}$ on the right, so no element is a unit on either side; its table has the unit followed by the negated quaternion units as first row and as first column, and the quaternion table on the imaginary block; its associator is $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$; it is not flexible and not power associative, and its left multiplications do not form a monoid, the composition $L_{\tilde A}\circ L_{\tilde B}$ being the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde B}$, linear where each $L$ is conjugate-linear. The multiplication is $\mathbb{R}$-bilinear and is not a product of the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, being semilinear in its second slot; on the real quaternion subspace it is the reversed conjugate $\overline{qp}$ of the quaternion product; the scalar action $\varphi(A)=Ae_0$ is not multiplicative, $\varphi(z)\star\varphi(w)=\varphi(z\overline{w})$, its image $\mathbb{C}e_0$ is not central, and the centre is trivial, $Z(\mathbb{B})=0$, so the block is a simple sesqualgebra that is not central and not a division algebra, with the nilpotent $e_0+ie_1$ as witness. The star of a product is the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so the involution does not exchange the two slots; the square is $\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$, its scalar part is $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu}$, and on the two halves it is the real scalar $\pm\bigl(\sum_\mu Q_\mu^2\bigr)e_0$, the Hermitian idempotents of the algebra having a vanishing square in the multiplication. The idempotents are $0$, $e_0$ and the family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ in the real vector subspace, the family alone lying outside the Hermitian subspace. The ternary product is $\overline{\tilde Q}\tilde P\tilde R$, the left model $\tilde X^{*}\tilde Y\tilde Z$; it has the parity of an algebraic $J^{*}$-algebra and fails the Jordan triple identity, at $(e_0,e_1,e_0,e_2,e_0)$ with the two sides $e_3$ and $-3e_3$. The sesqualgebra is simple, its ideals being $0$ and $\mathbb{B}$, and its scalar part is $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. The generators $e_1,e_2$ present the underlying plain algebra and not the sesqualgebra, and the one-element subalgebra of a generic element is the whole space, of complex dimension four, while the elements of the real quaternion subspace generate only two-dimensional subalgebras; no one-generator subalgebra is commutative.
+Its two one-sided actions of $e_t$ are the two conjugations, $\tilde Q^{*}$ on the left and $\tilde Q^{\natural}$ on the right, so no element is a unit on either side; its table has the unit followed by the negated quaternion units as first row and as first column, and the quaternion table on the imaginary block; its associator is $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$; it is not flexible and not power associative, and its left multiplications do not form a monoid, the composition $L_{\tilde A}\circ L_{\tilde B}$ being the sandwich $\tilde A^{\natural}(\cdot)\overline{\tilde B}$, linear where each $L$ is conjugate-linear. The multiplication is $\mathbb{R}$-bilinear and is not a product of the tensor product $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, being semilinear in its second slot; on the real quaternion subspace it is the reversed conjugate $\overline{qp}$ of the quaternion product; the scalar action $\varphi(A)=Ae_t$ is not multiplicative, $\varphi(z)\star\varphi(w)=\varphi(z\overline{w})$, its image $\mathbb{C}e_t$ is not central, and the centre is trivial, $Z(\mathbb{B})=0$, so the block is a simple sesqualgebra that is not central and not a division algebra, with the nilpotent $e_t+i\vec e_x$ as witness. The star of a product is the plain product in the reversed order, $(\tilde P\star\tilde Q)^{*}=\tilde Q\overline{\tilde P}$, so the involution does not exchange the two slots; the square is $\bigl(\overline{\tilde Q}\tilde Q\bigr)^{\natural}$, its scalar part is $\sum_\mu\varepsilon_\mu Q_\mu\overline{Q_\mu}$, and on the two halves it is the real scalar $\pm\bigl(\sum_\mu Q_\mu^2\bigr)e_t$, the Hermitian idempotents of the algebra having a vanishing square in the multiplication. The idempotents are $0$, $e_t$ and the family $-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$ with $(\vec u,\vec u)=1$ in the real vector subspace, the family alone lying outside the Hermitian subspace. The ternary product is $\overline{\tilde Q}\tilde P\tilde R$, the left model $\tilde X^{*}\tilde Y\tilde Z$; it has the parity of an algebraic $J^{*}$-algebra and fails the Jordan triple identity, at $(e_t,\vec e_x,e_t,\vec e_y,e_t)$ with the two sides $\vec e_z$ and $-3\vec e_z$. The sesqualgebra is simple, its ideals being $0$ and $\mathbb{B}$, and its scalar part is $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$. The generators $\vec e_x,\vec e_y$ present the underlying plain algebra and not the sesqualgebra, and the one-element subalgebra of a generic element is the whole space, of complex dimension four, while the elements of the real quaternion subspace generate only two-dimensional subalgebras; no one-generator subalgebra is commutative.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, read here with the general quaternionic sesquilinear multiplication |
-| $e_0,e_1,e_2,e_3$ | complex basis; $e_0$ the unit, $e_k$ the quaternion units |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | complex basis; $e_t$ the unit, $e_k$ the quaternion units |
 | $i$ | scalar imaginary, $i^2=-1$; central for the plain product, not for the multiplication of this article |
-| $\tilde Q=Q_0e_0+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_kQ_ke_k$ |
-| $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | the real quaternion subspace, on which $p\star q=\overline{qp}$ |
+| $\tilde Q=Q_te_t+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_kQ_ke_k$ |
+| $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the real quaternion subspace, on which $p\star q=\overline{qp}$ |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the natural, the coefficientwise and the star conjugation |
 | $\varsigma(z)=\bar z$ | the base involution of the sesqualgebra |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugations on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ and $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
-| $\sigma$ | the first row, $\sigma(\tilde Q)=e_0\star\tilde Q=\tilde Q^{*}$ |
+| $\sigma$ | the first row, $\sigma(\tilde Q)=e_t\star\tilde Q=\tilde Q^{*}$ |
 | $[\tilde P,\tilde Q,\tilde R]$ | the associator, $\overline{\tilde Q}\tilde P\tilde R^{*}-\tilde P^{\natural}\tilde R\overline{\tilde Q}$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the skew-Hermitian subspaces, the fixed and the anti-fixed sets of ${}^{*}$ |
 | $Z(\mathbb{B})=0$ | the centre of the multiplication, trivial |
-| $\varphi(A)=Ae_0$ | the scalar action; its image $\mathbb{C}e_0$ is a subalgebra but is not central |
-| $\sum_\mu Q_\mu^{2}$ | the central scalar of the square on either half, $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ |
+| $\varphi(A)=Ae_t$ | the scalar action; its image $\mathbb{C}e_t$ is a subalgebra but is not central |
+| $\sum_\mu Q_\mu^{2}$ | the central scalar of the square on either half, $\tilde Q\star\tilde Q=\pm\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ |
 | $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the scalar part of the multiplication, with $\varepsilon=(1,-1,-1,-1)$ |
 | $\{\tilde P,\tilde Q,\tilde R\}=\overline{\tilde Q}\tilde P\tilde R$ | the ternary product, the left model $\tilde X^{*}\tilde Y\tilde Z$ |
-| $\tilde\Pi(\vec u)=-\tfrac12e_0+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$ | the nontrivial idempotents of the multiplication, in the real vector subspace |
+| $\tilde\Pi(\vec u)=-\tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, $(\vec u,\vec u)=1$ | the nontrivial idempotents of the multiplication, in the real vector subspace |
 
 ## Further Reading
 
@@ -530,4 +530,4 @@ Its two one-sided actions of $e_0$ are the two conjugations, $\tilde Q^{*}$ on t
 - *Introduction to the General Quaternionic Algebra* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the same insertion of ${}^{\natural}$ in a bilinear product, where the square is scalar and the left multiplications form a monoid.
 - *The Sesquilinear Associator and the Ternary Product* (`articles_maths/the-sesquilinear-associator-and-the-ternary-product.md`), for the associator and the ternary product of a sesqualgebra, whose model is the middle model $\tilde X\tilde Y^{*}\tilde Z$.
 - *Algebraic J\*-Algebras* (`articles_maths/algebraic-j-star-algebras.md`), for the Jordan triple identity, the two models and the parity of a ternary product.
-- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the Hermitian idempotents $\tfrac12(e_0+\tilde\Xi)$ of the algebra, which are not idempotent for the multiplication of this article and have a vanishing square in it.
+- *Square Roots of One and the Idempotents of the Biquaternion Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the Hermitian idempotents $\tfrac12(e_t+\tilde\Xi)$ of the algebra, which are not idempotent for the multiplication of this article and have a vanishing square in it.

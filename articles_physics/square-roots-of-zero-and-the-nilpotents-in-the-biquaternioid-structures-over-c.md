@@ -37,19 +37,19 @@ $\mathbb{C}$* and *Annihilators in the Biquaternioid Structures over $\mathbb{C}
 owns the lightlike displacements and the nilpotents.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_k^{2}=-e_0$;
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$;
 $i$ is central with $i^{2}=-1$. The conjugations are ${}^{\natural}$, $\bar{\cdot}$ and
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
-$C(\tilde P)e_0=\tilde P^{\natural}\tilde P$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$, and the **cone** is
+$C(\tilde P)e_t=\tilde P^{\natural}\tilde P$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$, and the **cone** is
 $\mathcal{C}=\{C=0\}$. An element is
-**pure** when $P_0=0$; the material coordinate is $\tilde P=i c t\,e_0+\vec x$. The four square-zero
+**pure** when $P_0=0$; the material coordinate is $\tilde P=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. The four square-zero
 sets of the four general products are written $Z_1$ (plain), $Z_2$ (natural), $Z_3$ (plain sesquilinear)
 and $Z_4$ (quaternionic sesquilinear). The twelve structures are cited by their three-letter names.
 
 ## The Root Set of Zero Is a Cone
 
 **A signed root set is a level set; the root set of $0$ is a cone.** For each structure the equation
-$\tilde\Xi\star\tilde\Xi=\lambda e_0$ with $\lambda\neq0$ cuts a level set of the square, while
+$\tilde\Xi\star\tilde\Xi=\lambda e_t$ with $\lambda\neq0$ cuts a level set of the square, while
 $\lambda=0$ cuts the zero set of the same function, and the zero set of a quadratic function is a cone: it
 is closed under scaling, it contains the origin and it sets a direction and no magnitude. The signed
 values set a magnitude, the value $0$ sets a direction, and that difference is the first physical fact of
@@ -58,17 +58,17 @@ $\{\tilde\Upsilon:\tilde\Upsilon\star\tilde\Upsilon=0\}$, origin included, and i
 nilpotent set of the structure.
 
 **In the plain product, the pure isotropic cone.** The plain square of a pure element is
-$-(\vec\Xi,\vec\Xi)e_0$, so the nonzero roots of $0$ are the pure elements with
+$-(\vec\Xi,\vec\Xi)e_t$, so the nonzero roots of $0$ are the pure elements with
 $(\vec\Xi,\vec\Xi)=0$. Written with real vectors as $\tilde\Xi=\vec q+i\vec v$, the equations
 are $\vec q^{2}=\vec v^{2}$ and $\vec q\cdot\vec v=0$; the root set is the **pure isotropic
-cone** $\{\Xi_0=0,\ \Xi_1^{2}+\Xi_2^{2}+\Xi_3^{2}=0\}$, of real dimension four, and it is one component of
+cone** $\{\Xi_0=0,\ \Xi_x^{2}+\Xi_y^{2}+\Xi_z^{2}=0\}$, of real dimension four, and it is one component of
 the plain cone $(\vec\Xi,\vec\Xi)=0$. The other component is the non-pure cone, the multiples of
 the projectors, and the two components meet at the origin alone. The physical interpretation is the lightlike
 displacement, the solution set of the wave equation, and the owner is *The Light Cone as the Biquaternion
 Zero-Divisor Cone*.
 
 **In the natural product, the whole cone.** The natural square is the central square
-$C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi$, so the equation is the vanishing of the complex norm and
+$C(\tilde\Xi)e_t=\tilde\Xi^{\natural}\tilde\Xi$, so the equation is the vanishing of the complex norm and
 the root set is the **whole cone** $\mathcal{C}=\{C=0\}$, of real dimension six. The natural product
 reads masslessness completely, and the three shells of the interval are the root sets of the three named
 values: the shell $C=-1$, the cone $C=0$ and the shell $C=+1$.
@@ -80,17 +80,17 @@ non-invertible. A probability is non-invertible for the reason that it is a prob
 is lightlike.
 
 **In the gauge band, a proper subfamily of the cone.** The fourth product's square vanishes on the
-subfamily $\{\overline{\tilde\Xi}\tilde\Xi=0\}$, a proper subfamily of the cone containing $e_0+ie_1$ and
-missing $ie_0+e_1+e_2+ie_3$. In the parametrisation $\tilde\Xi=c(\vec u+it)$ the square is the central
-$c^{2}(t^{2}-1)e_0$, so the parametrised family meets the cone at the slopes $\lvert t\rvert=1$, while the
+subfamily $\{\overline{\tilde\Xi}\tilde\Xi=0\}$, a proper subfamily of the cone containing $e_t+i\vec e_x$ and
+missing $ie_t+\vec e_x+\vec e_y+i\vec e_z$. In the parametrisation $\tilde\Xi=c(\vec u+it)$ the square is the central
+$c^{2}(t^{2}-1)e_t$, so the parametrised family meets the cone at the slopes $\lvert t\rvert=1$, while the
 full square-zero set of the structure is wider; the parametrised description and the full
 description are both recorded in the mathematics companion, which owns the set. The owner of the
 indefinite metric is *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
 
 **In the four antisymmetric structures.** The square of the two alternating brackets vanishes
 identically, so the whole space is the root set of $0$; the square of the two conjugate-alternating
-brackets is a pure vector, and its vanishing admits the unit $e_0$, whose bracket square vanishes there,
-so their root set of $0$ lies outside the cone and contains $e_0$.
+brackets is a pure vector, and its vanishing admits the unit $e_t$, whose bracket square vanishes there,
+so their root set of $0$ lies outside the cone and contains $e_t$.
 
 **A signed root is a unit and a nonzero root of $0$ is a zero divisor.** The central square is the
 criterion of invertibility: $C\neq0$ is invertible and $C=0$ is a zero divisor. A signed root has
@@ -100,7 +100,7 @@ middle is not. The rank-drop reading of the same fact, rank two massive and rank
 Rank and the Positivity of the Dagger*.
 
 **The two sub-families inside the cone.** The cone of roots of $0$ splits as the cone itself does. The
-**pure** roots, $\Xi_0=0$ with $(\vec\Xi,\vec\Xi)=0$, are the nilpotent lightlike displacements of
+**pure** roots, $\Xi_t=0$ with $(\vec\Xi,\vec\Xi)=0$, are the nilpotent lightlike displacements of
 the vector subspace; the **non-pure** family, reached only in the structures whose square is not the plain
 square, consists of the square-zero elements of the indefinite bands and carries the lightlike family
 $c(\vec u\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
@@ -146,7 +146,7 @@ The mathematics companion computes the four square-zero sets of the four general
 | GPA | the pure isotropic cone $\{P_0=0,(\vec P,\vec P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
 | GPS | the origin alone | $0$ | the probability band has no nonzero square-zero element |
 | GQA | the whole cone $\mathcal{C}$ | $6$ | every lightlike element is self-annihilating in the interval band |
-| GQS | the subfamily $\overline{\tilde P}\tilde P=0$, containing $e_0+ie_1$ | $4$ | a proper part of the lightlike family of the gauge band |
+| GQS | the subfamily $\overline{\tilde P}\tilde P=0$, containing $e_t+i\vec e_x$ | $4$ | a proper part of the lightlike family of the gauge band |
 
 - **The composition band.** The plain square vanishes on the pure cone, of real dimension four, so a
   lightlike displacement of the composition is a pure direction with vanishing square. The non-pure cone
@@ -162,7 +162,7 @@ The mathematics companion computes the four square-zero sets of the four general
   non-alternating structures, and the physical interpretation is that the band whose value is the interval knows
   masslessness completely.
 - **The gauge band.** The fourth square vanishes on the subfamily $\overline{\tilde P}\tilde P=0$, which
-  contains $e_0+ie_1$ and misses $ie_0+e_1+e_2+ie_3$. It is a proper subfamily of the cone, so the gauge
+  contains $e_t+i\vec e_x$ and misses $ie_t+\vec e_x+\vec e_y+i\vec e_z$. It is a proper subfamily of the cone, so the gauge
   band has lightlike elements that are not square-zero: the fourth product distinguishes a part of the
   lightlike family. The owner is *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
 
@@ -199,7 +199,7 @@ Dagger*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is the natural product and its square is the central element $C(\tilde P)e_0$; the equation is
+The product is the natural product and its square is the central element $C(\tilde P)e_t$; the equation is
 the vanishing of the norm, so the root set of $0$ is the whole cone $\mathcal{C}$. Every lightlike element
 is self-annihilating, and the set coincides with the zero-divisor set, origin included. The reading is
 *The Cone and the Massless Particles in the Biquaternioid Structures over $\mathbb{C}$*.
@@ -208,7 +208,7 @@ is self-annihilating, and the set coincides with the zero-divisor set, origin in
 
 The product is the fourth product and its square is $\tilde P^{\natural}\tilde P^{*}$, equivalent to
 $\overline{\tilde P}\tilde P$. The root set of $0$ is the subfamily $\{\overline{\tilde P}\tilde P=0\}$,
-a proper subfamily of the cone containing $e_0+ie_1$: a proper part of the lightlike family. The reading
+a proper subfamily of the cone containing $e_t+i\vec e_x$: a proper part of the lightlike family. The reading
 is *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
@@ -219,13 +219,13 @@ they are zero divisors of the symmetrised block in addition. The reading is *The
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
-The product is the scalar-valued symmetrisation and its square is $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$,
+The product is the scalar-valued symmetrisation and its square is $\mathrm{Sc}(\tilde P\tilde P^{*})e_t$,
 so the root set of $0$ is $\{0\}$ alone, for the same definiteness. The reading is *Why Probability Values
 Are Central: the Symmetric Sesquilinear Product and Its Cone*.
 
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
 
-The product is the scalar-valued symmetrisation and its square is $C(\tilde P)e_0$, so the root set of $0$
+The product is the scalar-valued symmetrisation and its square is $C(\tilde P)e_t$, so the root set of $0$
 is the whole cone, as for $\mathrm{GQA}$. The same lightlike family is self-annihilating. The reading is
 *The Biquaternioid Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$*.
 
@@ -246,7 +246,7 @@ reading is *The Operators of the Twelve Structures: Multiplication, Adjoint and 
 
 The product is the antisymmetrisation and its square is half the difference between the Hermitian square
 and its conjugate, so the equation is equivalent to $\tilde P\tilde P^{*}$ being central. The root set of
-$0$ is that subfamily; it lies outside the cone and contains the unit $e_0$, whose conjugate-bracket
+$0$ is that subfamily; it lies outside the cone and contains the unit $e_t$, whose conjugate-bracket
 square vanishes. The reading is *Zero Divisors as a Physical Locus in Biquaternionic Form*.
 
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
@@ -260,7 +260,7 @@ and Bracket* and *The Biquaternioid Antisymmetric Quaternionic Algebra (AQA) ove
 The product is the antisymmetric part of the fourth product and its square is half the difference between
 $\tilde P^{\natural}\tilde P^{*}$ and its conjugate, so the equation is equivalent to
 $\tilde P^{\natural}\tilde P^{*}$ being fixed by the coefficientwise conjugation. The root set of $0$ is
-that subfamily, which lies outside the cone and contains the unit $e_0$. The reading is *The Cross Product
+that subfamily, which lies outside the cone and contains the unit $e_t$. The reading is *The Cross Product
 of a Vector with Its Conjugate: the Antisymmetric Gauge Product* and *A Bracket Invisible on the Real
 Forms: the Complex Witness of the Jacobi Failure*.
 
@@ -272,11 +272,11 @@ The table collects the square of each structure, its root set of $0$ and the phy
 |---|---|---|---|
 | GPA | $\tilde P^{2}$ | the pure isotropic cone, dim 4 | the pure lightlike displacements of the composition |
 | GPS | $\tilde P\tilde P^{*}$ | the origin alone | no lightlike element in the probability band |
-| GQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | every lightlike element is self-annihilating |
+| GQA | $C(\tilde P)e_t$ | the whole cone $\mathcal{C}$ | every lightlike element is self-annihilating |
 | GQS | $\overline{\tilde P}\tilde P$ | the subfamily $\overline{\tilde P}\tilde P=0$ | a proper part of the lightlike family |
 | SPA | $\tilde P^{2}$ | the pure isotropic cone | the same displacements, now zero divisors of the block |
-| SPS | $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$ | the origin alone | the same |
-| SQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | the same |
+| SPS | $\mathrm{Sc}(\tilde P\tilde P^{*})e_t$ | the origin alone | the same |
+| SQA | $C(\tilde P)e_t$ | the whole cone $\mathcal{C}$ | the same |
 | SQS | the real part | the subfamily $\overline{\tilde P}\tilde P=0$ | the same as the general partner |
 | APA | $0$ | the whole space | every infinitesimal rotation is square-zero |
 | APS | the pure part | the subfamily with $\tilde P\tilde P^{*}$ central | the unit is square-zero for the conjugate bracket |
@@ -297,7 +297,7 @@ Four kinds of row occur, and each is a physical statement.
   lightlike element in the band that measures probability, and the owner is *Mass, Rank and the
   Positivity of the Dagger*.
 - **The two rows outside the cone.** The antisymmetric sesquilinear structures have a root set of $0$ that
-  is **not** inside the cone and that contains the unit $e_0$; the physical interpretation is that the conjugate
+  is **not** inside the cone and that contains the unit $e_t$; the physical interpretation is that the conjugate
   bracket annihilates the identity, so the global phase is an infinitesimal object of that bracket. The
   root set of those two rows is not a lightlike set at all, and the corpus reads the same rows as the ones
   the bracket is invisible on in *Zero Divisors as a Physical Locus in Biquaternionic Form*.
@@ -336,11 +336,11 @@ probability and not because it is lightlike.
 |---|---|---|
 | the four square-zero sets are the pure cone, the whole cone, the origin and the subfamily $\overline{\tilde P}\tilde P=0$ | mathematics companion | cited |
 | a square-zero element lies in its own annihilator | mathematics companion; *Annihilators in the Biquaternioid Structures over $\mathbb{C}$* | cited |
-| the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | mathematics companion; recomputed $e_1+ie_2\in Z_1\setminus Z_4$ and $e_0+ie_1\in Z_4\setminus Z_1$ | verified |
-| $e_1+ie_2$ is square-zero in GPA and GQA and lies on the cone | mathematics companion; recomputed | verified |
-| $e_0+ie_1$ is square-zero in GQS and $ie_0+e_1+e_2+ie_3$ is not | mathematics companion; recomputed | verified |
+| the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | mathematics companion; recomputed $\vec e_x+i\vec e_y\in Z_1\setminus Z_4$ and $e_t+i\vec e_x\in Z_4\setminus Z_1$ | verified |
+| $\vec e_x+i\vec e_y$ is square-zero in GPA and GQA and lies on the cone | mathematics companion; recomputed | verified |
+| $e_t+i\vec e_x$ is square-zero in GQS and $ie_t+\vec e_x+\vec e_y+i\vec e_z$ is not | mathematics companion; recomputed | verified |
 | GPS and SPS have the origin alone as square-zero set | mathematics companion; recomputed on samples | cited |
-| the two alternating structures have the whole space, the two conjugate-alternating ones a set containing $e_0$ outside the cone | mathematics companion; recomputed that $e_0$ is square-zero in APS and AQS | verified |
+| the two alternating structures have the whole space, the two conjugate-alternating ones a set containing $e_t$ outside the cone | mathematics companion; recomputed that $e_t$ is square-zero in APS and AQS | verified |
 | the two sets agree exactly for GQA and the two alternating structures | mathematics companion | cited |
 | the physical interpretations (lightlike displacement, absence in the probability band, gap made of states, the one-mode fermionic ladder, the odd nilpotents) | this article; owners cited in the text | interpretation |
 | the BRST charge $\mathcal{Q}$ is nilpotent because the gauge-algebra Jacobi identity follows from associativity | *BRST Symmetry in Biquaternionic Form* | cited |
@@ -355,7 +355,7 @@ the lightlike displacement, read in the light cone articles. The second is exact
 square-zero class contains the fermionic ladder operators of a single mode. Separating the two jobs is the
 content of this section.
 
-**The lightlike displacement.** The material pure nilpotents $Q_0=0$, $(\vec Q,\vec Q)=0$ are the
+**The lightlike displacement.** The material pure nilpotents $Q_t=0$, $(\vec Q,\vec Q)=0$ are the
 lightlike directions, and the natural product squares every cone element to zero. The physical particle is
 the photon, and *The Null Four-Momentum: What the Cone Derives and What It Does Not* fixes how far
 the identification goes. A nilpotent has a direction and no magnitude; its square vanishing is the
@@ -366,41 +366,41 @@ a null vector.
 Biquaternionic Form* is the pair
 
 $$
-\vec\Upsilon_1=\tfrac12(ie_1-e_2),\qquad \vec\Upsilon_2=\tfrac12(ie_1+e_2),
+\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y),\qquad \vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y),
 $$
 
 and a direct computation gives
 
 $$
-\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0,\qquad
-\vec\Upsilon_1\vec\Upsilon_2=\tilde\Pi_+,\qquad
-\vec\Upsilon_2\vec\Upsilon_1=\tilde\Pi_-,\qquad
-\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0,
+\vec\Upsilon_x^{2}=\vec\Upsilon_y^{2}=0,\qquad
+\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+,\qquad
+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-,\qquad
+\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,
 $$
 
-with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ the vacuum and occupied
-projectors of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $ie_3$ is a root of $+1$,
-$(ie_3)^2=e_0$, and the two are its associated idempotents. The creation and annihilation operators
+with $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ the vacuum and occupied
+projectors of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $i\vec e_z$ is a root of $+1$,
+$(i\vec e_z)^2=e_t$, and the two are its associated idempotents. The creation and annihilation operators
 of a single fermionic mode are therefore **nilpotents of the algebra itself**, and the canonical
-anticommutator $\{\tilde a,\tilde a^\dagger\}=e_0$ is the statement that a square-zero pair multiplies to
+anticommutator $\{\tilde a,\tilde a^\dagger\}=e_t$ is the statement that a square-zero pair multiplies to
 the identity. Pauli exclusion is the vanishing square: $\tilde\Upsilon^{2}=0$ says that a second
 application of the same step gives nothing, which is exactly the algebraic form of the statement that a
 mode cannot be occupied twice. The vacuum is the product of the two steps,
-$\tilde\Pi_+=\vec\Upsilon_1\vec\Upsilon_2$, so the state and the ladder are not independent objects:
+$\tilde\Pi_+=\vec\Upsilon_x\vec\Upsilon_y$, so the state and the ladder are not independent objects:
 the state is what the nilpotent pair creates. *The Spin–Statistics Theorem in Biquaternionic Form* fixes
 the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form* gives the
 two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
 
 **Why the ladder is the nilpotent one.** *The Biquaternion Vacuum as a Minimal Idempotent* records that
 the algebra contains no bosonic ladder: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy
-$[\tilde a,\tilde a^\dagger]=e_0$, because a commutator has vanishing trace while
-$\mathrm{Tr}(e_0)=2$. The trace argument selects the anticommutator, hence the fermionic statistics, for
+$[\tilde a,\tilde a^\dagger]=e_t$, because a commutator has vanishing trace while
+$\mathrm{Tr}(e_t)=2$. The trace argument selects the anticommutator, hence the fermionic statistics, for
 this algebra's ladder, and the nilpotent class is the class that can carry it. The nilpotent article
 therefore belongs beside the idempotent article for a reason sharper than a shared position on the cone:
 the state is the idempotent and the ladder is the nilpotent, and the two are the two halves of one mode.
 
 **A nilpotent generates a truncated flow.** A nilpotent has no higher powers, so its exponential truncates
-at first order: $\exp(t\tilde\Upsilon)=e_0+t\tilde\Upsilon$. A nilpotent is therefore an **infinitesimal**
+at first order: $\exp(t\tilde\Upsilon)=e_t+t\tilde\Upsilon$. A nilpotent is therefore an **infinitesimal**
 generator whose one-parameter group is a straight line rather than a circle, in contrast with a root of
 $-1$, whose exponential is a full rotation. This is the algebraic form of the distinction between a
 translation and a rotation, and it is why the nilpotent is read as a displacement: the flow it generates
@@ -476,7 +476,7 @@ the discretised symbol, and what it says is that the square-zero set of a lattic
 **Nilpotency is why the Wick theorem is exact.** *The Wick Theorem in Biquaternionic Form* observes that
 for a **single fermionic mode** the theorem is not an approximation or a statement about vacuum
 expectation values in a large space: because the mode operators are square-zero,
-$\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0$, every product of more than two mode operators collapses, so
+$\vec\Upsilon_x^{2}=\vec\Upsilon_y^{2}=0$, every product of more than two mode operators collapses, so
 the four-point and six-point contractions reduce to products of the single two-point contraction with the
 fermionic signs. The identity is then an **exact operator identity** in a four-real-dimensional subalgebra,
 proved by exhibiting both sides. Nilpotency is therefore what makes the fermionic contraction **terminate**:
@@ -507,8 +507,8 @@ sharp: nilpotency is what a mode operator does, not what a hole is.
 Transformation in Biquaternionic Form* relates a spin-$\tfrac12$ chain to a chain of fermionic modes, and its
 framework finding is that at one site there is nothing to transform. The spin ladder and the fermionic mode
 are the **same element** of $\mathbb{B}$: the parents' operators
-$\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$ satisfy $\tilde a^{2}=0$ and
-$\{\tilde a,\tilde a^\dagger\}=e_0$ inside the algebra, so the square-zero mode is not adjoined but found.
+$\tilde a=\tfrac12(i\vec e_x-\vec e_y)$, $\tilde a^\dagger=\tfrac12(i\vec e_x+\vec e_y)$ satisfy $\tilde a^{2}=0$ and
+$\{\tilde a,\tilde a^\dagger\}=e_t$ inside the algebra, so the square-zero mode is not adjoined but found.
 The Jordan–Wigner string — the product of the other sites' fermion parities — has an empty product at one
 site, and the article states the consequence exactly: the transformation is the **choice of a square root of
 the spin algebra**, and the string is its branch cut. The reading is that nilpotency is the algebra's native
@@ -518,7 +518,7 @@ grading that the map fails to preserve, appears only when a second site exists.
 **The eikonal avoids the cone.** *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic
 Form* gives a sharp negative result, and it is worth recording because it bounds the nilpotent's reach. In
 the semiclassical limit the phase is a central element $\exp(iS/\hbar)$ and the momentum is the real quaternion
-$\nabla S=\sum_k(\partial_kS)e_k$; the Hamilton–Jacobi equation is the **biquaternion norm** of that momentum
+$\nabla S=\sum_k(\partial/\partial Q_k\,S)\vec e_k$; the Hamilton–Jacobi equation is the **biquaternion norm** of that momentum
 equated to the kinetic energy, $\langle \nabla S\rangle_{\natural}=2m(E-V)$. The article's own statement is then exact: "the null
 (zero divisor) cone is not reached by the phase gradient, whose biquaternion norm is fixed by the energy
 defect and vanishes only where the classical particle stops". So the semiclassical momentum is never a
@@ -543,10 +543,10 @@ has length two, and the same square-zero identity that creates the raising opera
 
 **The null direction makes the unit group infinite.** *Biquaternion Orders and Finite Groups of Units* shows
 the same vanishing square doing arithmetic. For a null element $P$ (so $\langle P\rangle_{\natural}=0$, hence $P^2=0$), the element
-$e_0+P$ is a **unit**, with inverse $e_0-P$, and $(e_0+P)^n=e_0+nP$: a nilpotent direction generates an
+$e_t+P$ is a **unit**, with inverse $e_t-P$, and $(e_t+P)^n=e_t+nP$: a nilpotent direction generates an
 infinite cyclic subgroup of the unit group. The article's own reading is exact and is the one to keep: the
 real orders have finite unit groups, the complex order does not, and the difference is the **light cone** —
-the null direction is the nilpotent one, it lies on $c^2t^2=\vec x^2$, and it generates a
+the null direction is the nilpotent one, it lies on $c^2t^2=x^2+y^2+z^2$, and it generates a
 translation-like one-parameter group without bound, while the finite unit groups sit in the real sector,
 where the norm is definite and no null direction exists. So the zero of the norm is what makes a unit group
 infinite, and the algebraic statement of the light cone's presence is the infinite unit group of the complex
@@ -554,8 +554,8 @@ order.
 
 **Nilpotency is the endpoint of a contraction.** *Squeezing Beyond the Biquaternion Algebra* shows where
 the nilpotent comes from as a limit. A **contraction** rescales generators so that some commutators and some
-norms go to zero; for $E_2=\epsilon e_2$, $E_3=\epsilon e_3$ the article verifies numerically that
-$[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ **vanish together** as $\epsilon\to0$ (at
+norms go to zero; for $E_2=\epsilon \vec e_y$, $E_3=\epsilon \vec e_z$ the article verifies numerically that
+$[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_t$ **vanish together** as $\epsilon\to0$ (at
 $\epsilon=1,0.1,0.01$ the values are $2,2\times10^{-2},2\times10^{-4}$ and $1,10^{-2},10^{-4}$). The limit
 is an algebra in which $E_2$ and $E_3$ are nilpotent and mutually annihilating, and the article states the
 mechanism exactly: "zero divisors are what survive when a quadratic structure is squeezed until its metric
@@ -574,7 +574,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   is a zero divisor.
 - The value $0$ is the one that carries the **direction** of the photon, and the root of $0$ **is** the
   massless element: the corpus reads it as a point of the celestial sphere together with a phase, the
-  phase being the little-group $U(1)$. The lightlike displacement, the null four-momentum and the Dirac
+  phase being the little-group $\mathrm{U}(1)$. The lightlike displacement, the null four-momentum and the Dirac
   point are the same algebraic object in the three bands that reach it.
 - The branch-point reading of the value $0$ — the merging of the two roots of a nonzero value at the
   massless limit — belongs to *Square Roots of a General Element in the Biquaternioid Structures over $\mathbb{C}$* and is cited, not restated.
@@ -599,8 +599,8 @@ definite structural reason — so the contraction limit is the one degeneration 
   difference is made of the states. A state is a zero divisor that is idempotent, a lightlike displacement
   is a zero divisor that is nilpotent.
 - The one-mode fermionic ladder is a pair of nilpotents, with
-  $\vec\Upsilon_1^{2}=\vec\Upsilon_2^{2}=0$ and
-  $\{\vec\Upsilon_1,\vec\Upsilon_2\}=e_0$, whose product is the vacuum projector. Nilpotency is Pauli
+  $\vec\Upsilon_x^{2}=\vec\Upsilon_y^{2}=0$ and
+  $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$, whose product is the vacuum projector. Nilpotency is Pauli
   exclusion, and the trace obstruction is why the algebra's ladder is fermionic.
 - The same equation $\mathcal{Q}^{2}=0$ governs the odd nilpotents of the corpus: the BRST charge, whose cohomology
   $\ker \mathcal{Q}/\mathrm{im}\,\mathcal{Q}$ is the physical state space, and the supercharge, whose anticommutator is the
@@ -641,7 +641,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   the identity splits into at most two orthogonal idempotents, and no three-level module exists: the algebra
   has two levels, and the third is not inside it.
 - Nilpotency is what makes a unit group infinite. In *Biquaternion Orders and Finite Groups of Units* a null
-  element $P$ gives the unit $e_0+P$, with inverse $e_0-P$ and $(e_0+P)^n=e_0+nP$, so a null direction
+  element $P$ gives the unit $e_t+P$, with inverse $e_t-P$ and $(e_t+P)^n=e_t+nP$, so a null direction
   generates an unbounded cyclic subgroup: the infinite unit group of the complex order is the arithmetic
   statement that the light cone is present.
 - Nilpotency is not a continuum artefact: the algebra's own **discrete lattice** already contains the cone.
@@ -653,7 +653,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   orders carry no coupling and no dynamics; the structural point is that the null direction survives
   discretisation.
 - Nilpotency is the endpoint of a contraction. *Squeezing Beyond the Biquaternion Algebra* degenerates the
-  norm by rescaling generators, $[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_0$ vanishing together, so
+  norm by rescaling generators, $[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_t$ vanishing together, so
   invertible elements become nilpotent zero divisors and the cone is the limiting locus of that degeneration.
 
 ## Summary
@@ -679,10 +679,10 @@ element theory of the algebra.
 ## Summary of Notation
 
 - $\tilde\Upsilon$ a square-zero element, $\tilde\Upsilon\star\tilde\Upsilon=0$; a nilpotent of index two.
-- $C(\tilde Q)e_0=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
+- $C(\tilde Q)e_t=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
-- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\vec x$; $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.
+- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$.
 - The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading

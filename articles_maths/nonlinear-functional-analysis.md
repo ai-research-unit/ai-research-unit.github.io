@@ -55,9 +55,9 @@ the integral being the Bochner integral of a continuous $Y$-valued function; the
 
 ### Local Invertibility
 
-**Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $D \subseteq X$ open, $f:D\to Y$ of class $C^k$ for some $k \ge1$, and let $x_0 \in D$ be such that $f'(x_0)$ is invertible in $B(X,Y)$. Then there are open neighbourhoods $U$ of $x_0$ and $V$ of $f(x_0)$ such that $f:U\to V$ is a bijection with a $C^k$ inverse; moreover $g=f^{-1}$ satisfies $g'(y)=f'(g(y))^{-1}$, and if $f$ is real analytic the same is true of $g$.
+**Theorem (inverse function theorem).** Let $X,Y$ be Banach spaces, $D \subseteq X$ open, $f:D\to Y$ of class $C^k$ for some $k \ge1$, and let $x_0 \in D$ be such that $f'(x_0)$ is invertible in $B(X,Y)$. Then there are open neighbourhoods $\Omega$ of $x_0$ and $V$ of $f(x_0)$ such that $f:\Omega\to V$ is a bijection with a $C^k$ inverse; moreover $g=f^{-1}$ satisfies $g'(y)=f'(g(y))^{-1}$, and if $f$ is real analytic the same is true of $g$.
 
-*Proof (sketch).* Compose with the inverse of $f'(x_0)$ to assume $f'(x_0)=I$, and consider the map $T(x)=x-f(x)+y$ for a fixed $y$ near $f(x_0)$; a solution of $f(x)=y$ is a fixed point of $T$. Near $x_0$ the derivative $T'(x)=I-f'(x)$ has norm at most $\frac12$, so $T$ is a contraction on a suitable closed ball, and the contraction mapping principle below gives a unique fixed point. The bounds are uniform for $y$ in a neighbourhood of $f(x_0)$, which gives the bijection $U\to V$. For the differentiability of the inverse, write $g=f^{-1}$ and $x=g(y)$; applying $f'(x)^{-1}$ to the expansion $k=f(x+h)-f(x)=f'(x)h+o(\|h\|)$ with $h=g(y+k)-g(y)$ gives $g(y+k)-g(y)=f'(g(y))^{-1}k+o(\|k\|)$, whence $g'(y)=f'(g(y))^{-1}$; its continuity, together with the higher derivatives and the analytic statement, follows by induction.
+*Proof (sketch).* Compose with the inverse of $f'(x_0)$ to assume $f'(x_0)=I$, and consider the map $T(x)=x-f(x)+y$ for a fixed $y$ near $f(x_0)$; a solution of $f(x)=y$ is a fixed point of $T$. Near $x_0$ the derivative $T'(x)=I-f'(x)$ has norm at most $\frac12$, so $T$ is a contraction on a suitable closed ball, and the contraction mapping principle below gives a unique fixed point. The bounds are uniform for $y$ in a neighbourhood of $f(x_0)$, which gives the bijection $\Omega\to V$. For the differentiability of the inverse, write $g=f^{-1}$ and $x=g(y)$; applying $f'(x)^{-1}$ to the expansion $k=f(x+h)-f(x)=f'(x)h+o(\|h\|)$ with $h=g(y+k)-g(y)$ gives $g(y+k)-g(y)=f'(g(y))^{-1}k+o(\|k\|)$, whence $g'(y)=f'(g(y))^{-1}$; its continuity, together with the higher derivatives and the analytic statement, follows by induction.
 
 **Lemma (contraction mapping principle).** Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction, $d(Tx,Ty)\le\kappa\,d(x,y)$ with $\kappa<1$. Then $T$ has a unique fixed point $x^*$, and for every $x$ the iterates $T^nx$ converge to $x^*$ with $d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}d(x,Tx)$.
 
@@ -69,13 +69,13 @@ The principle is the fixed-point theorem of the metric setting and is proved by 
 
 ### Implicit Functions and Level Sets
 
-**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial_yF(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $U$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\varphi:U\to W$ with $\varphi(x_0)=y_0$ and
+**Theorem (implicit function theorem).** Let $X,Y,Z$ be Banach spaces, let $\Omega \subseteq X\times Y$ be open, and let $F:\Omega\to Z$ be of class $C^k$ with $F(x_0,y_0)=0$. If the partial derivative $\partial/\partial y\,F(x_0,y_0) \in B(Y,Z)$ is invertible, then there are neighbourhoods $\Omega$ of $x_0$ and $W$ of $y_0$ and a $C^k$ map $\varphi:\Omega\to W$ with $\varphi(x_0)=y_0$ and
 
 $$
-F(x,y)=0 \text{ in } U\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial_yF(x,\varphi(x))\bigr)^{-1}\partial_xF(x,\varphi(x)).
+F(x,y)=0 \text{ in } \Omega\times W \iff y=\varphi(x); \qquad \varphi'(x)=-\bigl(\partial/\partial y\,F(x,\varphi(x))\bigr)^{-1}\partial/\partial x\,F(x,\varphi(x)).
 $$
 
-*Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial_xF&\partial_yF\end{pmatrix}$.
+*Proof.* Apply the inverse function theorem to $(x,y)\mapsto(x,F(x,y))$, whose derivative at $(x_0,y_0)$ is the invertible operator with matrix $\begin{pmatrix}I&0\\\partial/\partial x\,F&\partial/\partial y\,F\end{pmatrix}$.
 
 **Theorem (constant rank and local surjectivity).** Let $f:D\to Y$ be $C^1$, $x_0 \in D$, and suppose $f'(x_0)$ is surjective with a complemented kernel (always the case when $X,Y$ are Hilbert spaces, or when $f'(x_0)$ is Fredholm). Then there are neighbourhoods of $x_0$ and of $f(x_0)$ and a diffeomorphism under which $f$ becomes a linear projection; in particular $f$ is locally surjective at $x_0$ and there is a constant $C$ with, for $y$ near $f(x_0)$, a solution $x$ of $f(x)=y$ satisfying
 
@@ -209,7 +209,7 @@ $$
 \eta\bigl(\{F\le c+\epsilon\}\bigr)\subseteq\{F\le c-\epsilon\}, \qquad \eta(u)=u \text{ whenever } |F(u)-c|>\delta .
 $$
 
-*Proof (sketch).* One constructs a pseudogradient vector field $v(u)$ with $\langle F'(u),v(u)\rangle\ge\frac12\|F'(u)\|^2$ and $\|v(u)\|\le\|F'(u)\|$, and lets $\eta$ be the time-one map of the flow $-\dot u=v(u)$ on the region where $F'\neq0$; the Palais–Smale condition ensures that the flow exists for the required time and that the region $\{c-\epsilon\le F\le c+\epsilon,\ F'=0\}$ is empty for small $\epsilon$.
+*Proof (sketch).* One constructs a pseudogradient vector field $v(u)$ with $\langle F'(u),v(u)\rangle\ge\frac12\|F'(u)\|^2$ and $\|v(u)\|\le\|F'(u)\|$, and lets $\eta$ be the time-one map of the flow $-du/dt=v(u)$ on the region where $F'\neq0$; the Palais–Smale condition ensures that the flow exists for the required time and that the region $\{c-\epsilon\le F\le c+\epsilon,\ F'=0\}$ is empty for small $\epsilon$.
 
 ### The Minimax Principle and the Mountain Pass
 

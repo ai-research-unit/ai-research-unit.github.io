@@ -15,7 +15,7 @@ annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **symmetric plain multiplication**
 $$
 \tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)
-=(p_0q_0-\vec p\cdot\vec q)e_0+p_0\vec q+q_0\vec p,
+=(p_0q_t-\vec p\cdot\vec q)e_t+p_0\vec q+q_t\vec p,
 $$
 the Jordan product (*Introduction to the Symmetric Plain Algebra of Quaternions*). It is
 commutative, so the left and the right multiplication by an element are one operator and the two
@@ -57,7 +57,7 @@ $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, and the plain product is a division al
 nonzero element annihilates anything; the block is where that changes.
 
 **Remark (only the annihilator, not the ideal).** The annihilator of a zero divisor is a subspace,
-not a two-sided ideal: the plane of a pure element does not contain $e_0$, and it is not carried
+not a two-sided ideal: the plane of a pure element does not contain $e_t$, and it is not carried
 into itself by the product with an arbitrary element. It is the vanishing of the operator, not an
 algebraic ideal, that the block carries, and the block has no proper ideal because the ambient
 algebra is simple.
@@ -84,17 +84,17 @@ Symmetric Plain Algebra*, §*The Criterion*). The annihilator of a pure element 
 **Theorem (the annihilator of a pure element).** For a nonzero pure element $\tilde p=\vec p$,
 $$
 A_\bullet(\vec p)=B_\bullet(\vec p)
-=\{\tilde q=q_0e_0+\vec q:\ q_0=0,\ \vec p\cdot\vec q=0\},
+=\{\tilde q=q_te_t+\vec q:\ q_t=0,\ \vec p\cdot\vec q=0\},
 $$
 the plane of the vector subspace orthogonal to $\vec p$, of real dimension two.
 
-*Proof.* For a pure element, $\vec p\bullet\tilde q=-(\vec p\cdot\vec q)e_0+q_0\vec p$,
-which vanishes exactly when $q_0=0$ and $\vec p\cdot\vec q=0$. In the three-dimensional
+*Proof.* For a pure element, $\vec p\bullet\tilde q=-(\vec p\cdot\vec q)e_t+q_t\vec p$,
+which vanishes exactly when $q_t=0$ and $\vec p\cdot\vec q=0$. In the three-dimensional
 vector subspace the single equation $\vec p\cdot\vec q=0$ has a solution space of real
 dimension two.
 
 **Remark (the element is not its own partner).** The square of a pure element is
-$\vec p\bullet\vec p=-|\vec p|^2e_0$, which is nonzero for $\vec p\neq0$. The element
+$\vec p\bullet\vec p=-|\vec p|^2e_t$, which is nonzero for $\vec p\neq0$. The element
 is therefore not orthogonal to itself, and a nonzero pure element does not lie in its own
 annihilator; the line $\mathbb{R}\vec p$ meets the plane only at the origin.
 
@@ -107,8 +107,8 @@ next section computes.
 
 ## The Multiplication Operator and the Rank
 
-**Proposition (the operator and its invariants).** In the basis $e_0,e_1,e_2,e_3$ the operator
-$L^{\bullet}_{\tilde p}$ of an element $\tilde p=p_0e_0+\vec p$ has matrix
+**Proposition (the operator and its invariants).** In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the operator
+$L^{\bullet}_{\tilde p}$ of an element $\tilde p=p_0e_t+\vec p$ has matrix
 $$
 \begin{pmatrix}
 p_0 & -p_1 & -p_2 & -p_3 \\
@@ -135,12 +135,12 @@ annihilator of $\tilde p$ are
 | $\tilde p$ | $\operatorname{rank}L^{\bullet}_{\tilde p}$ | $\dim\ker L^{\bullet}_{\tilde p}$ | $\ker L^{\bullet}_{\tilde p}$ |
 |---|---|---|---|
 | $0$ | $0$ | $4$ | $\mathbb{H}$ |
-| $\tilde p\neq0$, $p_0=0$ | $2$ | $2$ | $\{\tilde q:q_0=0,\ \vec p\cdot\vec q=0\}$ |
+| $\tilde p\neq0$, $p_0=0$ | $2$ | $2$ | $\{\tilde q:q_t=0,\ \vec p\cdot\vec q=0\}$ |
 | $p_0\neq0$ | $4$ | $0$ | $\{0\}$ |
 
 *Proof.* A nonzero pure element has $p_0=0$: its first column is $\vec p$ and the other three
-columns are the multiples $-p_ke_0$ of the scalar direction, so the columns span
-$\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of dimension two, and the rank is two. The kernel is the
+columns are the multiples $-p_ke_t$ of the scalar direction, so the columns span
+$\mathbb{R}e_t\oplus\mathbb{R}\vec p$, of dimension two, and the rank is two. The kernel is the
 plane of the pure elements orthogonal to $\vec p$, of real dimension two. A non-pure element has
 $p_0\neq0$: the determinant $p_0^2N(\tilde p)$ is nonzero because the norm
 $N(\tilde p)=p_0^2+|\vec p|^2$ is positive definite, so the rank is four and the kernel is
@@ -156,7 +156,7 @@ again: the plane is the kernel of a rank-two operator, and a unit has the empty 
 rank-four operator.
 
 **The key difference from the complex block.** In the complex symmetric plain algebra the
-annihilator had a second value: the scalar family $\{Q_0\neq0,\ C(\tilde Q)=0\}$ annihilated a
+annihilator had a second value: the scalar family $\{Q_t\neq0,\ C(\tilde Q)=0\}$ annihilated a
 complex line. Over $\mathbb{R}$ that family is empty, because the central square
 $C(\tilde p)=p_0^2+|\vec p|^2$ vanishes only at $\tilde p=0$. The complex line therefore does
 not occur, and over $\mathbb{R}$ the annihilator of an element is either $\{0\}$ or a real plane,
@@ -168,12 +168,12 @@ criterion to the single clause $p_0=0$, collapses the annihilator to the plane a
 Over $\mathbb{R}$ the remarkable subspaces are the scalar line, which is the centre, and the vector
 subspace (*Introduction to the Remarkable Subspaces of the Quaternions*).
 
-**The centre.** A nonzero central element $\tilde p=\lambda e_0$ is not pure, so its annihilator is
-$\{0\}$: the centre annihilates nothing, and the unit $e_0$ in particular kills no partner.
+**The centre.** A nonzero central element $\tilde p=\lambda e_t$ is not pure, so its annihilator is
+$\{0\}$: the centre annihilates nothing, and the unit $e_t$ in particular kills no partner.
 
 **The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has the plane annihilator of
 §*The Annihilator of an Element*, and that plane already lies inside the vector subspace: the
-product $\vec p\bullet\tilde q=-(\vec p\cdot\vec q)e_0+q_0\vec p$ vanishes exactly on
+product $\vec p\bullet\tilde q=-(\vec p\cdot\vec q)e_t+q_t\vec p$ vanishes exactly on
 the pure elements orthogonal to $\vec p$, so the annihilator is the two-plane
 $\vec p^{\perp}\cap\mathrm{Vect}(\mathbb{H})$ and it does not leave the subspace. The element
 itself is not in it, the line $\mathbb{R}\vec p$ being the orthogonal complement of that plane
@@ -185,9 +185,9 @@ The annihilator of an element in a product is the set of partners the element ki
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 plain multiplication is commutative, so the two annihilators of an element coincide and are the
 kernel of the one operator
-$\tilde p\bullet\tilde q=(p_0q_0-\vec p\cdot\vec q)e_0+p_0\vec q+q_0\vec p$, of trace
+$\tilde p\bullet\tilde q=(p_0q_t-\vec p\cdot\vec q)e_t+p_0\vec q+q_t\vec p$, of trace
 $4p_0$ and determinant $p_0^2N(\tilde p)$. A nonzero pure element annihilates the real plane
-$\{\tilde q:q_0=0,\ \vec p\cdot\vec q=0\}$ inside the vector subspace, a nonzero non-pure
+$\{\tilde q:q_t=0,\ \vec p\cdot\vec q=0\}$ inside the vector subspace, a nonzero non-pure
 element annihilates nothing, and the origin annihilates the whole space. Over $\mathbb{R}$ the
 second family of the complex block is empty: the annihilator of an element is either $\{0\}$ or a
 real plane, and no annihilator is a line. On the remarkable subspaces the centre annihilates
@@ -202,7 +202,7 @@ which does not contain the element.
 | $A_\bullet(\tilde p),B_\bullet(\tilde p)$ | the left and the right annihilator of $\tilde p$ in the block, equal because the block is commutative |
 | $L^{\bullet}_{\tilde p}$ | the left multiplication operator, $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$, whose kernel is the annihilator |
 | $\operatorname{tr}L^{\bullet}_{\tilde p}=4p_0$, $\det L^{\bullet}_{\tilde p}=p_0^2N(\tilde p)$ | the trace and the determinant of the operator |
-| $\{\tilde q:q_0=0,\ \vec p\cdot\vec q=0\}$ | the annihilator of a nonzero pure element, a real plane |
+| $\{\tilde q:q_t=0,\ \vec p\cdot\vec q=0\}$ | the annihilator of a nonzero pure element, a real plane |
 | $\mathbb{H}$ | the annihilator of the origin |
 | $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$ | the norm, the central square, positive definite over $\mathbb{R}$ |
 

@@ -45,10 +45,10 @@ $$
 so the units are the elements off the two lines $x = \pm y$, and the nonzero elements on those lines are zero divisors. The idempotents
 
 $$
-\Pi_1 = \tfrac{1}{2}(1+j), \qquad \Pi_2 = \tfrac{1}{2}(1-j)
+\Pi_x = \tfrac{1}{2}(1+j), \qquad \Pi_y = \tfrac{1}{2}(1-j)
 $$
 
-satisfy $\Pi_1^2 = \Pi_1$, $\Pi_2^2 = \Pi_2$, $\Pi_1\Pi_2 = 0$, $\Pi_1 + \Pi_2 = 1$, and exhibit the isomorphism $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, $x + jy \mapsto (x+y, x-y)$. Through this isomorphism the ideals are $0$, $\mathbb{R}\Pi_1$, $\mathbb{R}\Pi_2$ and $\mathbb{D}$: the algebra is semisimple (it is a product of two fields) but not simple, and it is not a domain. The relation $\Pi_1\Pi_2 = 0$ with both factors nonzero is the archetype of a zero-divisor pair.
+satisfy $\Pi_x^2 = \Pi_x$, $\Pi_y^2 = \Pi_y$, $\Pi_x\Pi_y = 0$, $\Pi_x + \Pi_y = 1$, and exhibit the isomorphism $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, $x + jy \mapsto (x+y, x-y)$. Through this isomorphism the ideals are $0$, $\mathbb{R}\Pi_x$, $\mathbb{R}\Pi_y$ and $\mathbb{D}$: the algebra is semisimple (it is a product of two fields) but not simple, and it is not a domain. The relation $\Pi_x\Pi_y = 0$ with both factors nonzero is the archetype of a zero-divisor pair.
 
 ### The Dual Numbers
 
@@ -64,7 +64,7 @@ and every element of the maximal ideal $(\varepsilon)$ is nilpotent, hence a zer
 
 ### The Quaternions
 
-$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_0 = 1$, $e_1, e_2, e_3$, $e_k^2 = -e_0$ and $e_1e_2 = e_3$ cyclically. Every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
+$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically. Every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
 
 ### The Split Biquaternions
 
@@ -78,9 +78,9 @@ So $\mathbb{H}_{\mathbb{D}}$ is a product of two copies of $\mathbb{H}$: it is s
 
 ## The Biquaternion Algebra
 
-$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its centre is the copy of $\mathbb{C}$ spanned by $e_0$.
+$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$. Its centre is the copy of $\mathbb{C}$ spanned by $e_t$.
 
-Unlike the quaternion case, the element $i e_0 + e_1$ is a zero divisor, $(i e_0 + e_1)(i e_0 - e_1) = -1 + 1 = 0$. Thus $\mathbb{B}$ has zero divisors and is not a division algebra. As a $\mathbb{C}$-algebra it is isomorphic to $M_2(\mathbb{C})$, so it is simple, with only the trivial two-sided ideals, and its centre is $\mathbb{C}$. It is the standard example of a simple algebra that is not a division algebra, and the two phenomena — simplicity and zero divisors — coexist because the ground field is $\mathbb{C}$ rather than $\mathbb{R}$.
+Unlike the quaternion case, the element $i e_t + \vec e_x$ is a zero divisor, $(i e_t + \vec e_x)(i e_t - \vec e_x) = -1 + 1 = 0$. Thus $\mathbb{B}$ has zero divisors and is not a division algebra. As a $\mathbb{C}$-algebra it is isomorphic to $M_2(\mathbb{C})$, so it is simple, with only the trivial two-sided ideals, and its centre is $\mathbb{C}$. It is the standard example of a simple algebra that is not a division algebra, and the two phenomena — simplicity and zero divisors — coexist because the ground field is $\mathbb{C}$ rather than $\mathbb{R}$.
 
 ## The General Framework
 
@@ -102,13 +102,13 @@ These two theorems explain the entries of the table. The split complex numbers d
 
 Three of the entries in the table are worth computing rather than quoting.
 
-**The centre of $\mathbb{H}$.** Let $q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$ commute with $e_1$. Then
+**The centre of $\mathbb{H}$.** Let $q = q_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$ commute with $\vec e_x$. Then
 
 $$
-qe_1 = -q_1 + q_0e_1 - q_2e_3 + q_3e_2, \qquad e_1q = -q_1 + q_0e_1 + q_2e_3 - q_3e_2,
+q\vec e_x = -q_x + q_t\vec e_x - q_y\vec e_z + q_z\vec e_y, \qquad \vec e_xq = -q_x + q_t\vec e_x + q_y\vec e_z - q_z\vec e_y,
 $$
 
-so $q_2 = q_3 = 0$. Commuting with $e_2$ in the same way gives $q_1 = q_3 = 0$. Hence $q = q_0 \in \mathbb{R}$, and $Z(\mathbb{H}) = \mathbb{R}$.
+so $q_y = q_z = 0$. Commuting with $\vec e_y$ in the same way gives $q_x = q_z = 0$. Hence $q = q_t \in \mathbb{R}$, and $Z(\mathbb{H}) = \mathbb{R}$.
 
 **The centre of $M_n(k)$.** If $A$ commutes with every matrix unit $E_{ij}$, then for every $i,j$,
 
@@ -118,7 +118,7 @@ $$
 
 which on comparing the two sides forces $A_{ii} = A_{jj}$ for all $i,j$ and $A_{rs} = 0$ for $r \neq s$. Hence $A = \lambda I_n$, and $Z(M_n(k)) = kI_n$.
 
-**The centre of $\mathbb{H}_{\mathbb{D}}$.** Since $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\times\mathbb{H}$, the centre is $Z(\mathbb{H})\times Z(\mathbb{H}) \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; under the identification $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$ this is the copy $\mathbb{D}\otimes 1$ spanned by $e_0$ and $j$, as claimed.
+**The centre of $\mathbb{H}_{\mathbb{D}}$.** Since $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\times\mathbb{H}$, the centre is $Z(\mathbb{H})\times Z(\mathbb{H}) \cong \mathbb{R}\times\mathbb{R} \cong \mathbb{D}$; under the identification $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$ this is the copy $\mathbb{D}\otimes 1$ spanned by $e_t$ and $j$, as claimed.
 
 **The centre of $k[G]$.** An element $\sum_g a_g g$ commutes with every $h \in G$ precisely when the coefficient function $a : G \to k$ is constant on conjugacy classes; hence the centre has a basis of **class sums** and dimension equal to the number of conjugacy classes.
 
@@ -132,7 +132,7 @@ The unit group is determined in each of the division-algebra-like cases, and the
 | $\mathbb{D}'$ | $x \neq 0$ | $\varepsilon$ |
 | $\mathbb{H}$ | $q \neq 0$ | none |
 | $\mathbb{H}_{\mathbb{D}}$ | the relevant value is a unit of $\mathbb{D}$ | $1 + j$ |
-| $\mathbb{B}$ | the relevant value is nonzero | $ie_0 + e_1$ |
+| $\mathbb{B}$ | the relevant value is nonzero | $ie_t + \vec e_x$ |
 
 In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{D}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{D}'$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, there are no non-units besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{H}_{\mathbb{D}}$ the relevant product takes values in $\mathbb{D}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{D}$, as for $u = 1+j$, with value $2 + 2j$.
 
@@ -180,7 +180,7 @@ The table at the head of the article records the data for each algebra.
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 | $\mathbb{D}$ | Split complex numbers, unit $j$, $j^2 = +1$ |
 | $\mathbb{D}'$ | Dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
-| $\mathbb{H}$ | Quaternions, basis $e_0 = 1, e_1, e_2, e_3$ |
+| $\mathbb{H}$ | Quaternions, basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ |
 | $\mathbb{H}_{\mathbb{D}}$ | Split biquaternions, $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, $\dim_\mathbb{R} = 8$ |
 | $\mathbb{B}$ | Biquaternions, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ |
 | $M_n(k)$ | $n\times n$ matrices over $k$ |

@@ -6,14 +6,14 @@ This is one of the worked exercises in the relativity series. It applies the boo
 
 The discrete Thomas–Wigner rotation is already in the corpus: the product of two non-collinear boost rotors is a boost times a rotation, and its angle is known. This exercise takes only the distinct part of the subject — the **continuous limit**. A particle that is accelerated has a different instantaneous rest frame at every instant. Two rest frames a lab-time interval $dt$ apart are related by a Wigner rotation, and the limit $dt\to0$ defines an angular velocity, the **Thomas precession** $\vec\omega_T$. The exercise derives that rate, fixes its direction by a computation on a geometry that can actually see the direction, and connects it to the factor $\tfrac12$ in the spin–orbit coupling.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2=e_3$, and the scalar imaginary $i$ with $i^2=-1$, commuting with every $e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors, and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, the centre of the algebra. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged, but no object of the informational sector arises below, so it is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_0+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_0+\vec p$, and the four-force $\tilde{F}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ satisfying $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y=\vec e_z$, and the scalar imaginary $i$ with $i^2=-1$, commuting with every $\vec e_k$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part, the material sector), the Hermitian subspace $\mathbb{M}_+$ (real scalar part, imaginary vector part, the informational sector), with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$, the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ of the rotation rotors, and the complex scalar subspace $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$, the centre of the algebra. The biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, the quaternion conjugate $\tilde{Q}^{\natural}$, the Hermitian conjugate $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_t$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ is inherited unchanged, but no object of the informational sector arises below, so it is recorded and not used. The four-velocity $\tilde{V}=\gamma(ic\,e_t+\vec v)$ with $\langle\tilde{V}\rangle_{\natural}=-c^2$ and $\gamma=(1-\vec v^2/c^2)^{-1/2}$, the four-momentum $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$, and the four-force $\tilde{F}=d\tilde{P}/d\tau \in \mathbb{M}_-$. The boost biquaternion
 $$
 \tilde{\Lambda}_{\vec v_b}=\cosh\frac{\psi_b}{2}+i\sinh\frac{\psi_b}{2}\vec u,
 \qquad \tanh\psi_b=\frac{v_b}{c},
 $$
-which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dt$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_0,e_1,e_2,e_3)$.
+which is Hermitian, lies in $\mathbb{M}_+$, and has unit norm. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; $\vec v$ is the particle velocity, $\vec a=d\vec v/dt$ its lab acceleration, and $\vec u$ is a unit direction. Components are taken in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$.
 
-**The boost-rotor direction, stated once.** In this series the rotor $\tilde{\Lambda}_{\vec v_b}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde{\Lambda}_{\vec v_b}\tilde{Q}\tilde{\Lambda}_{\vec v_b}^{*}$, it carries the lab to the frame moving with $+\vec v_b$, and for the particle four-velocity $\tilde{V}$ it is the lab-to-rest rotor that satisfies $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*} = ic\,e_0$. Its quaternion conjugate is the inverse, $\tilde{\Lambda}^{\natural}_{\vec v_b}=\tilde{\Lambda}_{\vec v_b}^{-1}=\tilde{\Lambda}_{-\vec v_b}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
+**The boost-rotor direction, stated once.** In this series the rotor $\tilde{\Lambda}_{\vec v_b}$ is the **lab-to-frame** rotor: acting on a four-vector by $\tilde{Q}\mapsto\tilde{\Lambda}_{\vec v_b}\tilde{Q}\tilde{\Lambda}_{\vec v_b}^{*}$, it carries the lab to the frame moving with $+\vec v_b$, and for the particle four-velocity $\tilde{V}$ it is the lab-to-rest rotor that satisfies $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*} = ic\,e_t$. Its quaternion conjugate is the inverse, $\tilde{\Lambda}^{\natural}_{\vec v_b}=\tilde{\Lambda}_{\vec v_b}^{-1}=\tilde{\Lambda}_{-\vec v_b}$. This direction is *not* stated in the parent article; it is the gap recorded in *Exercise: Boosting a Four-Velocity and Rapidity Composition*, Problem 4. Problem 3 below checks what that ambiguity does and does not do to the Thomas-precession sign.
 
 **What is to be shown.** Problem 1 identifies the rotor that relates two neighbouring instantaneous rest frames. Problem 2 takes the continuous limit and derives the Thomas precession rate $\vec\omega_T$. Problem 3 checks the sign on a non-collinear geometry, where alone the sign is visible, and separates the manipulations that flip it from those that do not. Problem 4 treats uniform circular motion, recovers the retrograde rotation and the "Thomas half", and connects the result to the spin–orbit coupling. Problem 5 states what the parent articles do and do not supply.
 
@@ -37,12 +37,12 @@ and identify $\tilde{u}$ as the Thomas–Wigner rotation of the interval $dt$.
 
 **(c)** Express the angle and axis of $\tilde{u}$ through the parent's Wigner-angle formula.
 
-**Solution. (a)** The rotor $\tilde{\Lambda}_{\vec v}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde{\Lambda}_{\vec v}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, one has $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*}=ic\,e_0$, and every four-vector $\tilde{Q}$ has components
+**Solution. (a)** The rotor $\tilde{\Lambda}_{\vec v}$ carries the lab to the rest frame at time $t$: by the parent's relation $\tilde{\Lambda}_{\vec v}=\sqrt{-\tfrac{i}{c}\tilde{V}^{\natural}}$, one has $\tilde{\Lambda}_{\vec v}\tilde{V}\tilde{\Lambda}_{\vec v}^{*}=ic\,e_t$, and every four-vector $\tilde{Q}$ has components
 $$
 \tilde{Q}'=\tilde{\Lambda}_{\vec v}\tilde{Q}\tilde{\Lambda}_{\vec v}^{*}
 \tag{3}
 $$
-in that rest frame. At $t+dt$ the same construction with $\vec v+d\vec v$ gives $\tilde{Q}''=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{Q}\tilde{\Lambda}_{\vec v+d\vec v}^{*}$. Since $\tilde{\Lambda}_{\vec v}$ is Hermitian and of unit norm, $\tilde{\Lambda}_{\vec v}^{*}=\tilde{\Lambda}_{\vec v}$ and $\tilde{\Lambda}_{\vec v}^{*}\tilde{\Lambda}_{\vec v}=e_0$, so
+in that rest frame. At $t+dt$ the same construction with $\vec v+d\vec v$ gives $\tilde{Q}''=\tilde{\Lambda}_{\vec v+d\vec v}\tilde{Q}\tilde{\Lambda}_{\vec v+d\vec v}^{*}$. Since $\tilde{\Lambda}_{\vec v}$ is Hermitian and of unit norm, $\tilde{\Lambda}_{\vec v}^{*}=\tilde{\Lambda}_{\vec v}$ and $\tilde{\Lambda}_{\vec v}^{*}\tilde{\Lambda}_{\vec v}=e_t$, so
 $$
 \tilde{Q}''=\tilde{M}\,\tilde{Q}'\,\tilde{M}^{*},
 \qquad
@@ -50,16 +50,16 @@ $$
 $$
 which is (1). The direction matters: $\tilde{\Lambda}_{\vec v}^{-1}=\tilde{\Lambda}^{\natural}_{\vec v}=\tilde{\Lambda}_{-\vec v}$ is the inverse boost, not the same boost.
 
-**(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde{M}\rangle_{\natural}=e_0$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde{M}=\tilde{B}\tilde{u}$ with $\tilde{B}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $t+dt$ relative to the rest frame at $t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
+**(b)** The product of two unit-norm biquaternions is unit-norm, so $\langle\tilde{M}\rangle_{\natural}=e_t$. The parent's polar decomposition theorem gives the unique Cartan form $\tilde{M}=\tilde{B}\tilde{u}$ with $\tilde{B}$ a boost of positive-definite matrix image and $\tilde{u}$ a unit real quaternion, i.e. a spatial rotation. The factor $\tilde{u}$ is the rotation of the rest frame at $t+dt$ relative to the rest frame at $t$; it is the **Thomas–Wigner rotation** of the interval. It is a rotation and not a boost because the transformation between two frames with the same four-velocity direction of motion but different orientation is a rotation of their spatial triads.
 
-**(c)** Write (1) as a product in the order written, $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$, with $\tilde{\Lambda}_1=\tilde{\Lambda}_{\vec v+d\vec v}$ the first factor and $\tilde{\Lambda}_2=\tilde{\Lambda}^{\natural}_{\vec v}=\tilde{\Lambda}_{-\vec v}$ the second. Let $\vec u_1=\vec u_{\vec v+d\vec v}$ and $\vec u_2=-\vec u_v$ be their directions and $\psi_1,\psi_2$ their rapidities, $\tanh\psi_1=|\vec v+d\vec v|/c$, $\tanh\psi_2=v/c$. The parent's boxed result for the product $\tilde{\Lambda}_1\tilde{\Lambda}_2$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
+**(c)** Write (1) as a product in the order written, $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$, with $\tilde{\Lambda}_1=\tilde{\Lambda}_{\vec v+d\vec v}$ the first factor and $\tilde{\Lambda}_2=\tilde{\Lambda}^{\natural}_{\vec v}=\tilde{\Lambda}_{-\vec v}$ the second. Let $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$ be their directions and $\psi_1,\psi_2$ their rapidities, $\tanh\psi_1=|\vec v+d\vec v|/c$, $\tanh\psi_2=v/c$. The parent's boxed result for the product $\tilde{\Lambda}_1\tilde{\Lambda}_2$ of two boost rotors then applies with the rotation angle $\theta_W$ of $\tilde{u}$ given by
 $$
 \tan\frac{\theta_W}{2}
 =\frac{\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\sin\varphi}
 {\cosh\frac{\psi_1}{2}\,\cosh\frac{\psi_2}{2}+\sinh\frac{\psi_1}{2}\,\sinh\frac{\psi_2}{2}\,\cos\varphi},
 \tag{4}
 $$
-where $\varphi$ is the angle between $\vec u_1$ and $\vec u_2$, i.e. between $\vec u_{\vec v+d\vec v}$ and $-\vec u_v$. The axis is the parent's: for the product written in this order it is $-\vec u_{\vec u_1\times\vec u_2}$. This form of the answer is exact for the finite step $dt$; the next problem takes the limit.
+where $\varphi$ is the angle between $\vec u_x$ and $\vec u_y$, i.e. between $\vec u_{\vec v+d\vec v}$ and $-\vec u_v$. The axis is the parent's: for the product written in this order it is $-\vec u_{\vec u_x\times\vec u_y}$. This form of the answer is exact for the finite step $dt$; the next problem takes the limit.
 
 ## Problem 2: The Thomas Precession Rate
 
@@ -80,7 +80,7 @@ $$
 \tag{6}
 $$
 
-*The angle $\varphi$.* The direction $\vec u_2=-\vec u_v$ is fixed; the direction $\vec u_1=\vec u_{\vec v+d\vec v}$ turns away from $\vec u_v$ by the small angle $\delta$ with
+*The angle $\varphi$.* The direction $\vec u_y=-\vec u_v$ is fixed; the direction $\vec u_x=\vec u_{\vec v+d\vec v}$ turns away from $\vec u_v$ by the small angle $\delta$ with
 $$
 \delta=\frac{|\vec a_\perp|}{v}\,dt+O(dt^2).
 \tag{7}
@@ -151,9 +151,9 @@ $$
 $$
 which follows from $v^2/c^2=1-\gamma^{-2}$ and $\gamma^2-1=(\gamma-1)(\gamma+1)$. Substituting (14) into (13) gives the magnitude in (5).
 
-*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$ in the order written gives the axis $-\vec u_{\vec u_1\times\vec u_2}$, where $\vec u_1=\vec u_{\vec v+d\vec v}$ and $\vec u_2=-\vec u_v$. Then
+*The direction.* In the notation of Problem 1(c), the parent's axis rule for the product $\tilde{M}=\tilde{\Lambda}_1\tilde{\Lambda}_2$ in the order written gives the axis $-\vec u_{\vec u_x\times\vec u_y}$, where $\vec u_x=\vec u_{\vec v+d\vec v}$ and $\vec u_y=-\vec u_v$. Then
 $$
--\vec u_1\times\vec u_2
+-\vec u_x\times\vec u_y
 =-\vec u_{\vec v+d\vec v}\times(-\vec u_v)
 =\vec u_{\vec v+d\vec v}\times\vec u_v
 =\left(\vec u_v+\frac{\vec a_\perp}{v}dt\right)\times\vec u_v
@@ -177,7 +177,7 @@ The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the 
 
 **(a)** Show that a collinear geometry ($\vec a\parallel\vec v$), and equally a single boost, gives $\vec\omega_T=0$ and therefore cannot distinguish the two signs.
 
-**(b)** Compute $\vec\omega_T$ explicitly for $\vec v=v\,e_1$, $\vec a=a\,e_2$, an orthogonal non-collinear geometry, both from (5) and directly from the parent's formula (4).
+**(b)** Compute $\vec\omega_T$ explicitly for $\vec v=v\,\vec e_x$, $\vec a=a\,\vec e_y$, an orthogonal non-collinear geometry, both from (5) and directly from the parent's formula (4).
 
 **(c)** Show that the sign in (5) is carried by the order of the two factors in (1): the reverse-order rotor $\tilde{M}_{\mathrm{rev}}=\tilde{\Lambda}_{\vec v}^{-1}\tilde{\Lambda}_{\vec v+d\vec v}$ has the opposite rotation factor $\tilde{u}^{-1}$ and flips $\vec\omega_T$. Then determine whether the unstated direction of the boost rotor — reading $\tilde{\Lambda}_{\vec v}$ as the rest-to-lab rotor — also flips it.
 
@@ -185,29 +185,29 @@ The factor $\tfrac12$ is the "Thomas half". It is not put in by hand: it is the 
 
 **Solution. (a)** If $\vec a\parallel\vec v$ then $\vec a\times\vec v=0$, and (5) gives $\vec\omega_T=0$ with either sign convention. A single boost likewise produces no rotation — a lone boost rotor is Hermitian and lies in $\mathbb{M}_+$, and only the composition of two non-collinear boosts leaves a rotation — so a check performed on one boost, or on any collinear case, verifies nothing about the sign: a formula fitted to the case that suggested it is confirmed by that case and by no other.
 
-**(b)** Take $\vec v=v\,e_1$ and $\vec a=a\,e_2$ with $v,a>0$, so $\vec a_\perp=\vec a$ and
+**(b)** Take $\vec v=v\,\vec e_x$ and $\vec a=a\,\vec e_y$ with $v,a>0$, so $\vec a_\perp=\vec a$ and
 $$
-\vec a\times\vec v=a\,e_2\times v\,e_1=-av\,e_3 .
+\vec a\times\vec v=a\,\vec e_y\times v\,\vec e_x=-av\,\vec e_z .
 $$
 Equation (5) gives
 $$
-\vec\omega_T=-\frac{\gamma^2}{\gamma+1}\frac{av}{c^2}\,e_3 .
+\vec\omega_T=-\frac{\gamma^2}{\gamma+1}\frac{av}{c^2}\,\vec e_z .
 \tag{16}
 $$
-Directly from the parent's formula: here $d\vec v=a\,dt\,e_2$, $\psi_1=\psi_2=\psi+O(dt^2)$ (the acceleration is perpendicular to $\vec v$, so $d\psi=0$ by (9)), $\delta=a\,dt/v$, and $\varphi=\pi-\delta$. Then (4) collapses to
+Directly from the parent's formula: here $d\vec v=a\,dt\,\vec e_y$, $\psi_1=\psi_2=\psi+O(dt^2)$ (the acceleration is perpendicular to $\vec v$, so $d\psi=0$ by (9)), $\delta=a\,dt/v$, and $\varphi=\pi-\delta$. Then (4) collapses to
 $$
 \tan\frac{\theta_W}{2}=\frac{\sinh^2\frac{\psi}{2}\sin\delta}{\cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2}\cos\delta}
 =\sinh^2\frac{\psi}{2}\,\delta+O(dt^2),
 $$
-and the parent's axis rule places the rotation along $-(\vec u_1\times\vec u_2)$: in the basis used, $\vec u_1=\vec u_{\vec v+d\vec v}=e_1+\frac{a\,dt}{v}e_2$ is the direction of the first factor $\tilde{\Lambda}_{\vec v+d\vec v}$, $\vec u_2=-\vec u_v=-e_1$ that of the second factor $\tilde{\Lambda}^{\natural}_{\vec v}$, and
+and the parent's axis rule places the rotation along $-(\vec u_x\times\vec u_y)$: in the basis used, $\vec u_x=\vec u_{\vec v+d\vec v}=\vec e_x+\frac{a\,dt}{v}\vec e_y$ is the direction of the first factor $\tilde{\Lambda}_{\vec v+d\vec v}$, $\vec u_y=-\vec u_v=-\vec e_x$ that of the second factor $\tilde{\Lambda}^{\natural}_{\vec v}$, and
 $$
--\vec u_1\times\vec u_2=-\left(e_1+\frac{a\,dt}{v}e_2\right)\times(-e_1)=\left(e_1+\frac{a\,dt}{v}e_2\right)\times e_1=\frac{a\,dt}{v}\,e_2\times e_1=-\frac{a\,dt}{v}\,e_3,
+-\vec u_x\times\vec u_y=-\left(\vec e_x+\frac{a\,dt}{v}\vec e_y\right)\times(-\vec e_x)=\left(\vec e_x+\frac{a\,dt}{v}\vec e_y\right)\times \vec e_x=\frac{a\,dt}{v}\,\vec e_y\times \vec e_x=-\frac{a\,dt}{v}\,\vec e_z,
 $$
-which is the direction of $\vec a\times\vec v=a\,e_2\times v\,e_1=-av\,e_3$. The sign in (16) is therefore not a convention chosen at the end: it is what the parent's own formula produces, once the composition order is the one in (1).
+which is the direction of $\vec a\times\vec v=a\,\vec e_y\times v\,\vec e_x=-av\,\vec e_z$. The sign in (16) is therefore not a convention chosen at the end: it is what the parent's own formula produces, once the composition order is the one in (1).
 
 For $v=0.6c$ and $a$ such that $av/c^2=|a\times v|/c^2=0.6$ per unit time (units $c=1$), $\gamma=1.25$, $\gamma^2/(\gamma+1)=0.694444$, and
 $$
-|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-e_3 .
+|\vec\omega_T|=0.694444\times0.6=0.4166667\ \text{rad per unit lab time},\qquad \text{direction }-\vec e_z .
 $$
 The parent's formula (4) evaluated on the same step gives $\theta_W/dt=0.41666667$ rad per unit time, to the printed digits.
 
@@ -215,15 +215,15 @@ The parent's formula (4) evaluated on the same step gives $\theta_W/dt=0.4166666
 
 The rotor *direction* is a separate question, and it is settled by the same computation. If $\tilde{\Lambda}_{\vec v}$ is read as the rest-to-lab rotor, the lab-to-rest rotor is $\tilde{\Lambda}_{\vec v}^{-1}$, and the interval rotor built from it is $\tilde{M}'=\tilde{\Lambda}_{\vec v+d\vec v}^{-1}\tilde{\Lambda}_{\vec v}$, which inverts each factor of $\tilde{M}$ while keeping the order. To first order in $dt$ its rotation vector is the *same* as that of $\tilde{M}$, not the opposite one: inverting both factors together changes the boost part but not the first-order rotation. So the unstated direction of the parent's rotor, applied consistently, does not by itself flip the sign; the sign is fixed by the order of composition. That the sign is nevertheless delicate is why (5) is stated with its axis and not with its magnitude alone.
 
-**(d)** *Numerical verification.* The biquaternion product (1) was formed directly, and $\tilde{u}$ extracted by polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde{B}^{-1}\tilde{M}$, with $\tilde{u}$ a unit real quaternion and $\theta_W$ read from $\mathrm{Sc}(\tilde{u})=\cos(\theta_W/2)$. On randomly generated non-collinear pairs $(\vec v,\vec a)$, restricted to $|\vec v|<c$, the computed rotation vector agreed with (5) to better than $10^{-10}$ in units $c=1$, in both magnitude and direction. The special case $\vec v=0.6c\,e_1$, $\vec a\perp\vec v$ reproduced $0.41666667$ as above. The reverse-order rotor $\tilde{M}_{\mathrm{rev}}$ reproduced the same magnitude with the opposite axis, while the consistently inverted reading $\tilde{M}'$ reproduced the same axis as (5), both to the same precision.
+**(d)** *Numerical verification.* The biquaternion product (1) was formed directly, and $\tilde{u}$ extracted by polar decomposition $\tilde{M}=\tilde{B}\tilde{u}$, $\tilde{B}=\sqrt{\tilde{M}\tilde{M}^{*}}$, $\tilde{u}=\tilde{B}^{-1}\tilde{M}$, with $\tilde{u}$ a unit real quaternion and $\theta_W$ read from $\mathrm{Sc}(\tilde{u})=\cos(\theta_W/2)$. On randomly generated non-collinear pairs $(\vec v,\vec a)$, restricted to $|\vec v|<c$, the computed rotation vector agreed with (5) to better than $10^{-10}$ in units $c=1$, in both magnitude and direction. The special case $\vec v=0.6c\,\vec e_x$, $\vec a\perp\vec v$ reproduced $0.41666667$ as above. The reverse-order rotor $\tilde{M}_{\mathrm{rev}}$ reproduced the same magnitude with the opposite axis, while the consistently inverted reading $\tilde{M}'$ reproduced the same axis as (5), both to the same precision.
 
 ## Problem 4: Uniform Circular Motion, the Retrograde Rotation, and the Thomas Half
 
-**Statement.** A particle moves on a circle of radius $R$ at constant speed $v$ in the lab, with angular velocity $\vec\Omega=\Omega\,e_3$, so that its acceleration is centripetal, $\vec a=-\Omega^2\vec r$, and $\vec v=\vec\Omega\times\vec r$, where $\vec r$ is the position on the circle, $|\vec r|=R$.
+**Statement.** A particle moves on a circle of radius $R$ at constant speed $v$ in the lab, with angular velocity $\vec\Omega=\Omega\,\vec e_z$, so that its acceleration is centripetal, $\vec a=-\Omega^2\vec r$, and $\vec v=\vec\Omega\times\vec r$, where $\vec r$ is the position on the circle, $|\vec r|=R$.
 
-**(a)** Show that $\vec a\times\vec v=-\Omega v^2\,e_3$ and hence, from (5),
+**(a)** Show that $\vec a\times\vec v=-\Omega v^2\,\vec e_z$ and hence, from (5),
 $$
-\vec\omega_T=-(\gamma-1)\Omega\,e_3 .
+\vec\omega_T=-(\gamma-1)\Omega\,\vec e_z .
 \tag{17}
 $$
 **(b)** Show that over one orbit the frame precesses by $\Delta\theta=-2\pi(\gamma-1)$, i.e. *retrograde*, and that in the non-relativistic limit the ratio of the Thomas precession to the orbital angular velocity is $-\tfrac12 v^2/c^2$.
@@ -234,9 +234,9 @@ $$
 $$
 \vec a\times\vec v=(-\Omega^2\vec r)\times(\vec\Omega\times\vec r)
 =-\Omega^2 R^2\,\vec\Omega
-=-\Omega v^2\,e_3 .
+=-\Omega v^2\,\vec e_z .
 $$
-Equation (5) gives $\vec\omega_T=\frac{\gamma^2}{\gamma+1}(-\Omega v^2/c^2)e_3$. Using $v^2/c^2=1-\gamma^{-2}$,
+Equation (5) gives $\vec\omega_T=\frac{\gamma^2}{\gamma+1}(-\Omega v^2/c^2)\vec e_z$. Using $v^2/c^2=1-\gamma^{-2}$,
 $$
 \frac{\gamma^2}{\gamma+1}\left(1-\frac{1}{\gamma^2}\right)
 =\frac{\gamma^2-1}{\gamma+1}=\gamma-1,
@@ -250,7 +250,7 @@ $$
 $$
 i.e. $\Delta\theta=-2\pi(\gamma-1)$. In the non-relativistic limit $\gamma-1\approx v^2/2c^2$, so $\omega_T/\Omega\approx-\tfrac12 v^2/c^2$: the precession is half the orbital rate, to leading order, and opposite in sense. Formally the factor $\tfrac12$ is the value of $\gamma^2/(\gamma+1)$ at $\gamma=1$, first displayed in (15).
 
-**(c)** The four-force of the parent article is $\tilde{F}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_0+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{M}_-$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. *Exercise: The Non-Relativistic Limit and the Pauli Equation* records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.
+**(c)** The four-force of the parent article is $\tilde{F}=i\gamma\frac{ϙ}{c}(\vec E\cdot\vec v)e_t+\gamma ϙ(\vec E+\vec v\times\vec B)\in\mathbb{M}_-$, and under a magnetic field a spin is torqued at the Larmor rate. The kinematic precession (5) is a separate, purely kinematical contribution, present even with no torque: it is the rotation of the instantaneous rest frame relative to a non-rotating one. In the standard non-relativistic treatment of the spin–orbit coupling, the naive boost of the electron to its instantaneous rest frame gives a rest-frame magnetic field and hence a spin–orbit term twice as large as the observed one; the Thomas precession contributes $-\tfrac12$ of the naive Larmor precession, leaving the observed $\tfrac12$. *Exercise: The Non-Relativistic Limit and the Pauli Equation* records exactly this: the coefficient of the spin–orbit term carries the "Thomas factor of $\tfrac12$", and "a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value." The present exercise supplies the kinematics behind that factor: (15) is the leading rate, half of $\vec a\times\vec v/c^2$, and (17) is its exact circular-orbit form.
 
 ## Problem 5: What the Parents Supply, and Where the Gap Is
 
@@ -278,7 +278,7 @@ $$
 $$
 along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\frac{1}{2c^2}\vec a\times\vec v$ — the Thomas half. Only the transverse part of the acceleration precesses the frame.
 
-3. **The sign.** A collinear geometry gives zero and cannot test the sign; the orthogonal geometry $\vec v=v\,e_1$, $\vec a=a\,e_2$ gives $\vec\omega_T$ along $\vec a\times\vec v$, as the parent's own formula requires. Reversing the composition order (using the inverse interval rotor) flips the sign, while inverting each boost rotor together — the unstated-direction interpretation — leaves it unchanged.
+3. **The sign.** A collinear geometry gives zero and cannot test the sign; the orthogonal geometry $\vec v=v\,\vec e_x$, $\vec a=a\,\vec e_y$ gives $\vec\omega_T$ along $\vec a\times\vec v$, as the parent's own formula requires. Reversing the composition order (using the inverse interval rotor) flips the sign, while inverting each boost rotor together — the unstated-direction interpretation — leaves it unchanged.
 
 4. **Circular motion.** For uniform circular motion the frame precesses retrograde at $\omega_T=(\gamma-1)\Omega$, i.e. by $-2\pi(\gamma-1)$ per orbit, half the orbital rate to leading order; this is the kinematic origin of the factor $\tfrac12$ in the spin–orbit coupling recorded in the non-relativistic-limit exercise.
 
@@ -291,13 +291,13 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; scalar (central) subspace |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{Q}^{\natural}$, $\tilde{Q}^{*}=\overline{\tilde{Q}^{\natural}}$ | Quaternion conjugate, Hermitian conjugate |
-| $\tilde{V}=\gamma(ic\,e_0+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
-| $\tilde{P}=m\tilde{V}=iE/c\,e_0+\vec p$ | Four-momentum |
+| $\tilde{V}=\gamma(ic\,e_t+\vec v)$ | Four-velocity, $\langle\tilde{V}\rangle_{\natural}=-c^2$ |
+| $\tilde{P}=m\tilde{V}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{F}=d\tilde{P}/d\tau$ | Four-force, in $\mathbb{M}_-$ |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
 | $\psi$, $\tanh\psi=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
@@ -307,7 +307,7 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde{B}$, $\tilde{u}$ | Boost and rotation factors of $\tilde{M}=\tilde{B}\tilde{u}$ |
 | $\theta_W$ | Thomas–Wigner rotation angle of the interval |
 | $\vec\omega_T$ | Thomas precession angular velocity |
-| $\vec\Omega=\Omega\,e_3$ | Orbital angular velocity (circular motion) |
+| $\vec\Omega=\Omega\,\vec e_z$ | Orbital angular velocity (circular motion) |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

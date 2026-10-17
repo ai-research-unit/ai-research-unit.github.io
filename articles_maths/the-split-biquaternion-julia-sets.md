@@ -8,7 +8,7 @@ The family and its reduction are *The Split-Biquaternion Quadratic Family*; the 
 
 The article owns the topology of the split-biquaternion Julia set as a product, the description of its components and dust, the split-complex scalar slice and its square connectedness locus, the solid-of-revolution description of the factors, the symmetry of the fractal, and the comparison with the biquaternion case.
 
-**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, $\tilde\Pi_{1,2}=\tfrac12(e_0\pm j)$; $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ and $J_{\tilde C}=\partial K_{\tilde C}$; for a quaternion parameter $\tilde c\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ are written $K_{\tilde c}$ and $J_{\tilde c}$.
+**Standing convention.** $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ via $\tilde Q=\tilde Q_+\tilde\Pi_1+\tilde Q_-\tilde\Pi_2$, $\tilde\Pi_{1,2}=\tfrac12(e_t\pm j)$; $K_{\tilde C}=K_{\tilde C_+}\times K_{\tilde C_-}$ and $J_{\tilde C}=\partial K_{\tilde C}$; for a quaternion parameter $\tilde c\in\mathbb{H}$ the filled Julia set and the Julia set of $f_{\tilde c}(\tilde q)=\tilde q^2+\tilde c$ are written $K_{\tilde c}$ and $J_{\tilde c}$.
 
 ## The Product Structure of the Fractal
 
@@ -51,10 +51,10 @@ $$
 
 ## The Split-Complex Scalar Slice
 
-**Theorem (the $\mathbb{D}$-line).** Let $\tilde C=\lambda e_0$ with $\lambda\in\mathbb{D}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde C_\pm=\lambda_\pm e_0$ are real, and the connectedness locus of the family restricted to the $\mathbb{D}$-line is the square
+**Theorem (the $\mathbb{D}$-line).** Let $\tilde C=\lambda e_t$ with $\lambda\in\mathbb{D}$, and write $\lambda=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm\in\mathbb{R}$. Then $\tilde C_\pm=\lambda_\pm e_t$ are real, and the connectedness locus of the family restricted to the $\mathbb{D}$-line is the square
 
 $$
-\bigl\{\lambda\in\mathbb{D} : K_{\lambda e_0} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\} ,
+\bigl\{\lambda\in\mathbb{D} : K_{\lambda e_t} \text{ connected}\bigr\}\;=\;\{\lambda : \lambda_+\in[-2,\tfrac14],\ \lambda_-\in[-2,\tfrac14]\} ,
 $$
 
 the square of the real Mandelbrot interval.

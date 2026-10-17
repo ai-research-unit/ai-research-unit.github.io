@@ -6,7 +6,7 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$; the conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$; the conjugations are the natural one $\tilde Q^{\natural}$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
@@ -42,7 +42,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 - **The adjoint is a reversal of the parameter.** Transporting a direction across the pairing reverses its sense, which is the operator form of the axial character of the cross product.
 - **The operators do not close to a Lie algebra.** The band does not supply the internal symmetry algebra of the frame; the closure that exists is the cross-product closure of the real quaternion forms, invisible to a computation with real coefficients.
 - **The complex witness is a statement about where a failure can be seen.** A bracket whose Jacobi failure needs an element off the real forms is a bracket that no real form can diagnose, so the complex structure is not a convenience but the carrier of the obstruction; the choice of which real form a point of the algebra uses is a choice of embedding, and the failure is a failure of the complex object that each of its real sectors hides.
-- **The failure is structural, not accidental.** The two failures of the framework — the associator and the Jacobi defect — are the low operations of one higher structure, so the corpus's negative results are the first measurements of a positive object. Boundary: a labelled programme; a non-closing bracket is the signature of a symmetry that is higher rather than of a symmetry that is absent, the strict group remaining $U(2)$.
+- **The failure is structural, not accidental.** The two failures of the framework — the associator and the Jacobi defect — are the low operations of one higher structure, so the corpus's negative results are the first measurements of a positive object. Boundary: a labelled programme; a non-closing bracket is the signature of a symmetry that is higher rather than of a symmetry that is absent, the strict group remaining $\mathrm{U}(2)$.
 - **Three rows, three adjoints on one algebra.** The transpose swaps the sides, the Hermitian adjoint conjugates and keeps the side, and the indefinite adjoint negates the parameter and keeps the side; the placement of the band among the twelve is that it is the row where the bracket fails, the adjoint negates, and the metric remains a gauge metric and not a state space.
 
 ## Summary
@@ -60,8 +60,8 @@ The biquaternioid antisymmetric quaternionic sesqualgebra is the structure $\til
 | the complex witness | the element off the real forms that exhibits the Jacobi failure |
 | $L^{\star}_{\tilde P}$, $R^{\star}_{\tilde P}$ | the one-sided operators; the left image is the plane perpendicular to $\tilde P$ |
 | $J={}^{\natural}$ | the fundamental symmetry; the indefinite adjoint negates the parameter |
-| $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$ | the vector subspace; the values of the product |
-| $U(2)$ | the strict group of the framework; unchanged by the reading |
+| $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the product |
+| $\mathrm{U}(2)$ | the strict group of the framework; unchanged by the reading |
 
 ## Further Reading
 

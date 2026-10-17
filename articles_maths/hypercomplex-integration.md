@@ -8,7 +8,7 @@ The preceding articles built the differential side of hypercomplex analysis: a g
 The treatment is general. The particular systems of categories 26 to 29 have their own explicit kernels, residues and expansions, and those computations are not repeated here; what is common to all of them is the shape of the integral theorems, and it is that shape that this article fixes. Throughout, $(A,D)$ is an elliptic hypercomplex system in the sense of *Hypercomplex Analysis*: $A$ is a finite-dimensional unital associative real algebra of dimension $m$ with basis $e_0 = 1, \dots, e_{m-1}$,
 
 $$
-D = \partial_0 + \sum_{k \geq 1} B_k \partial_k, \qquad \bar D = \partial_0 - \sum_{k\geq1} B_k\partial_k, \qquad D\bar D = \bar D D = \Delta,
+D = \partial/\partial x_0 + \sum_{k \geq 1} B_k \partial/\partial x_k, \qquad \bar D = \partial/\partial x_0 - \sum_{k\geq1} B_k\partial/\partial x_k, \qquad D\bar D = \bar D D = \Delta,
 $$
 
 the coefficients satisfying $B_jB_k + B_kB_j = -2\delta_{jk}$ and $B_k^2 = -1$. The conormal element $\nu_B = \sum_\alpha \nu_\alpha B_\alpha$ of *Regularity and the Cauchy–Riemann Operator* is used throughout, and $E$ denotes a fundamental solution of $D$, so that $E(x-y)$ is a Cauchy kernel.
@@ -60,7 +60,7 @@ This is the analogue of $\oint f\,dz = 0$ for a holomorphic function: the bounda
 **Proposition (when the curve theorem holds).** The form $\omega = f\,d\xi$ is closed if and only if
 
 $$
-\partial_\alpha f\, B_\beta = \partial_\beta f\, B_\alpha \qquad \text{for all } \alpha, \beta,
+\partial/\partial x_\alpha f\, B_\beta = \partial/\partial x_\beta f\, B_\alpha \qquad \text{for all } \alpha, \beta,
 $$
 
 with $B_0 = 1$. This condition is equivalent to regularity for the complex system, and is strictly stronger than regularity in general.
@@ -68,18 +68,18 @@ with $B_0 = 1$. This condition is equivalent to regularity for the complex syste
 *Proof.* The exterior derivative is
 
 $$
-d(f\,d\xi) = df \wedge d\xi = \sum_{\alpha < \beta} \bigl(\partial_\alpha f\, B_\beta - \partial_\beta f\, B_\alpha\bigr)\, d\xi_\alpha \wedge d\xi_\beta,
+d(f\,d\xi) = df \wedge d\xi = \sum_{\alpha < \beta} \bigl(\partial/\partial x_\alpha f\, B_\beta - \partial/\partial x_\beta f\, B_\alpha\bigr)\, d\xi_\alpha \wedge d\xi_\beta,
 $$
 
-since $d\xi = \sum_\beta B_\beta\, d\xi_\beta$ and $f$ is $A$-valued. Hence closure is the stated system of equations. For the complex system, the equations with $(\alpha,\beta) = (0,1)$ read $\partial_0 f\, i = \partial_1 f$, that is $\partial_1 f = i\,\partial_0 f$; then
+since $d\xi = \sum_\beta B_\beta\, d\xi_\beta$ and $f$ is $A$-valued. Hence closure is the stated system of equations. For the complex system, the equations with $(\alpha,\beta) = (0,1)$ read $\partial/\partial x_0 f\, i = \partial/\partial x_1 f$, that is $\partial/\partial x_1 f = i\,\partial/\partial x_0 f$; then
 
 $$
-\partial_0 f + i\,\partial_1 f = \partial_0 f + i\,(i\,\partial_0 f) = \partial_0 f - \partial_0 f = 0,
+\partial/\partial x_0 f + i\,\partial/\partial x_1 f = \partial/\partial x_0 f + i\,(i\,\partial/\partial x_0 f) = \partial/\partial x_0 f - \partial/\partial x_0 f = 0,
 $$
 
-so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial_1 f = -\partial_0 f$, or $\partial_1 f = i\,\partial_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$.
+so $Df = 0$, and conversely $Df = 0$ gives $i\,\partial/\partial x_1 f = -\partial/\partial x_0 f$, or $\partial/\partial x_1 f = i\,\partial/\partial x_0 f$. The general system imposes one $A$-valued condition per pair $(\alpha,\beta)$, that is, $m\binom{m}{2}$ real equations against the $m^2$ real equations of $Df = 0$; for $m \geq 4$ these are more, and the extra conditions need not follow — as the next proposition shows for $A = \mathbb{H}$.
 
-**Theorem (the classical Cauchy theorem).** For the complex system $A = \mathbb{C}$, $D = \partial_0 + i\partial_1$, a $C^1$ function is left regular if and only if the form $f\,d\xi$ is closed; hence on a simply connected domain
+**Theorem (the classical Cauchy theorem).** For the complex system $A = \mathbb{C}$, $D = \partial/\partial x_0 + i\partial/\partial x_1$, a $C^1$ function is left regular if and only if the form $f\,d\xi$ is closed; hence on a simply connected domain
 
 $$
 \int_\gamma f\,d\xi = 0
@@ -98,7 +98,7 @@ $$
 It is left regular, since
 
 $$
-D f = e_0\,\partial_0 f + e_1\,\partial_1 f = e_0(-e_1) + e_1 e_0 = -e_1 + e_1 = 0 .
+D f = e_0\,\partial/\partial x_0 f + e_1\,\partial/\partial x_1 f = e_0(-e_1) + e_1 e_0 = -e_1 + e_1 = 0 .
 $$
 
 Let $\gamma(t) = r\cos t\, e_1 + r \sin t\, e_2$ for $t \in [0, 2\pi]$, a closed circle in the plane spanned by $e_1, e_2$. Along $\gamma$ one has $q_0 = 0$ and $q_1 = r\cos t$, so $f(\gamma(t)) = r\cos t$, and $\gamma'(t) = -r\sin t\, e_1 + r\cos t\, e_2$. Therefore
@@ -139,7 +139,7 @@ $$
 \int_\gamma f\,d\xi = \Pi_1\int_{\gamma_+}f_+\,d\xi_+ + \Pi_2\int_{\gamma_-}f_-\,d\xi_-,
 $$
 
-where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{D}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial_0fj = \partial_1f$ for a left regular $f = f_+(\xi_-)\Pi_1 + f_-(\xi_+)\Pi_2$ reads $-2f_+'(\xi_-)\Pi_1 + 2f_-'(\xi_+)\Pi_2 = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
+where $\gamma_\pm$ are the projections of $\gamma$ onto the two characteristic coordinates. Each term is an ordinary real line integral, and no single Cauchy formula can represent their sum; this is the idempotent form of the failure of a Cauchy integral formula in $\mathbb{D}$ recorded. The curve form of Cauchy's theorem fails too: the closure condition $\partial/\partial x_0\,fj = \partial/\partial x_1\,f$ for a left regular $f = f_+(\xi_-)\Pi_1 + f_-(\xi_+)\Pi_2$ reads $-2f_+'(\xi_-)\Pi_1 + 2f_-'(\xi_+)\Pi_2 = 0$, so it holds only for constant $f$, while the hypersurface form above holds for every regular $f$. The two statements are not in conflict: the curve theorem is the closedness of the form, the hypersurface theorem is the divergence theorem for $D$.
 
 **Remark (path independence and zero divisors).** Path independence of $\int_\gamma f\,d\xi$ is governed by the closedness of the form, exactly as in the classical theory: on a simply connected domain a closed form is exact, and the primitive is built by integration, an operation that uses no division. The zero divisors enter elsewhere. First, a primitive is a function that is left $A$-differentiable with derivative $f$, so where $f$ takes a non-invertible value the differential is a non-invertible linear map and the inverse-function arguments that the classical theory uses locally are unavailable. Second, an expansion of a regular function at a singularity requires powers of $\xi - x_0$, and where $\xi - x_0$ is a zero divisor no such expansion exists; the singularities of a kernel supported on the null cone therefore have no Laurent description, which is why the residue calculus of the general theory is stated as an integral over a small sphere rather than as a coefficient extraction. Third, in an algebra with idempotents the integral splits, and the components that contribute nothing are exactly those in which the integrand is constant along the corresponding characteristic direction.
 
@@ -153,7 +153,7 @@ $$
 G(x + h) = G(x) + f(x)\,h + o(\|h\|).
 $$
 
-A primitive in this sense is left $A$-differentiable with derivative $f$, and by the rigidity theorem of *Hypercomplex Analysis* such functions are scarce: over $\mathbb{H}$ the only left $\mathbb{H}$-differentiable functions are the affine ones. A primitive of a given $f$ therefore exists only when the form $f\,d\xi$ is exact, which by the closure computation requires the stronger condition $\partial_\alpha f\,B_\beta = \partial_\beta f\,B_\alpha$.
+A primitive in this sense is left $A$-differentiable with derivative $f$, and by the rigidity theorem of *Hypercomplex Analysis* such functions are scarce: over $\mathbb{H}$ the only left $\mathbb{H}$-differentiable functions are the affine ones. A primitive of a given $f$ therefore exists only when the form $f\,d\xi$ is exact, which by the closure computation requires the stronger condition $\partial/\partial x_\alpha f\,B_\beta = \partial/\partial x_\beta f\,B_\alpha$.
 
 **Proposition (primitives and exactness).** A function $f$ has a primitive on $\Omega$ if and only if the form $f\,d\xi$ is exact on $\Omega$. If $\Omega$ is simply connected and $f\,d\xi$ is closed, then
 
@@ -191,13 +191,13 @@ for a normalising constant $C$ depending on the kernel; in particular $\|f(x_0)\
 
 ## Singularities, Residues and Expansions
 
-**Definition.** Let $x_0 \in A$ and let $f$ be left regular on a punctured neighbourhood $\dot U = U \setminus \{x_0\}$ but not on $U$. The **residue** of $f$ at $x_0$ is the element
+**Definition.** Let $x_0 \in A$ and let $f$ be left regular on a punctured neighbourhood $U^{\times} = U \setminus \{x_0\}$ but not on $U$. The **residue** of $f$ at $x_0$ is the element
 
 $$
 \operatorname{Res}_{x_0} f = \int_{\partial B(x_0,\epsilon)} \nu_B(y)\, f(y)\, dS(y) \in A,
 $$
 
-for $0 < \epsilon$ small enough that $B(x_0,\epsilon) \setminus \{x_0\} \subseteq \dot U$ and independent of $\epsilon$.
+for $0 < \epsilon$ small enough that $B(x_0,\epsilon) \setminus \{x_0\} \subseteq U^{\times}$ and independent of $\epsilon$.
 
 *Proof of independence of $\epsilon$.* The difference of the integrals over two spheres is the boundary integral of a regular function over the region between them, which vanishes by Cauchy–Goursat.
 
@@ -251,7 +251,7 @@ The Cauchy transform and the jump formula are the abstract content of the integr
 
 ## Summary
 
-The **hypercomplex line integral** $\int_\gamma f\,d\xi = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ and its right-handed analogue are the basic integrals of the theory; they satisfy the estimate $\|\int_\gamma f\,d\xi\| \leq \sup\|f\|\,\ell(\gamma)$. The **Cauchy–Goursat theorem** is the hypersurface statement $\int_{\partial\Omega}\nu_B f\,dS = 0$ for a left regular function, and it is the general integral theorem of hypercomplex analysis. The curve version, $\oint f\,d\xi = 0$ for a closed path, holds exactly when the form $f\,d\xi$ is closed, that is when $\partial_\alpha f\,B_\beta = \partial_\beta f\,B_\alpha$ for all $\alpha,\beta$; for the complex system this condition is equivalent to regularity, giving Cauchy's theorem, primitives and Morera's theorem. It **fails** in general: over $\mathbb{H}$ the regular function $f(q) = q_1 - e_1 q_0$ has $\int_\gamma f\,d\xi = \pi r^2 e_2 \neq 0$ over a circle of radius $r$, so regularity does not force closed curve integrals, and over $\mathbb{H}$ only constant functions possess primitives.
+The **hypercomplex line integral** $\int_\gamma f\,d\xi = \int_a^b f(\gamma(t))\gamma'(t)\,dt$ and its right-handed analogue are the basic integrals of the theory; they satisfy the estimate $\|\int_\gamma f\,d\xi\| \leq \sup\|f\|\,\ell(\gamma)$. The **Cauchy–Goursat theorem** is the hypersurface statement $\int_{\partial\Omega}\nu_B f\,dS = 0$ for a left regular function, and it is the general integral theorem of hypercomplex analysis. The curve version, $\oint f\,d\xi = 0$ for a closed path, holds exactly when the form $f\,d\xi$ is closed, that is when $\partial/\partial x_\alpha f\,B_\beta = \partial/\partial x_\beta f\,B_\alpha$ for all $\alpha,\beta$; for the complex system this condition is equivalent to regularity, giving Cauchy's theorem, primitives and Morera's theorem. It **fails** in general: over $\mathbb{H}$ the regular function $f(q) = q_1 - e_1 q_0$ has $\int_\gamma f\,d\xi = \pi r^2 e_2 \neq 0$ over a circle of radius $r$, so regularity does not force closed curve integrals, and over $\mathbb{H}$ only constant functions possess primitives.
 
 The **Cauchy integral formula** $f(x) = \int_{\partial\Omega}E(x-y)\nu_B(y)f(y)dS(y)$ represents a regular function by its boundary values against the Cauchy kernel $E = \bar D\Phi$, and yields the Cauchy inequalities. **Residues** are defined as integrals over small spheres, and the residue theorem sums them; regular functions have power series expansions whose coefficient spaces are the finite-dimensional spaces $\mathcal{M}_\nu(A,D)$ of solid spherical monogenics, whose explicit description is system-specific. The **Cauchy transform** $\mathcal{C}h$ is regular inside $\Omega$, and the **jump formula** $\mathcal{C}^+h - \mathcal{C}^-h = h$ recovers the density from the difference of the inside and outside values.
 

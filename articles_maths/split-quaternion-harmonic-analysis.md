@@ -9,10 +9,10 @@ The split-quaternion algebra, its split-quaternion norm and its units are assume
 
 ## The Additive Group and Its Dual
 
-**Theorem (The Group and Its Dual).** The additive group of the algebra, identified with $\mathbb{R}^4$ through the coordinates $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, is a locally compact abelian group, with the Lebesgue measure as its Haar measure. Its dual is again $\mathbb{R}^4$, identified with the frequency vectors $\xi = \alpha + \beta e_1 + \gamma e_2 + \delta e_3$, the pairing being the Euclidean scalar product of the coordinate vectors and the characters being the complex-valued functions
+**Theorem (The Group and Its Dual).** The additive group of the algebra, identified with $\mathbb{R}^4$ through the coordinates $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, is a locally compact abelian group, with the Lebesgue measure as its Haar measure. Its dual is again $\mathbb{R}^4$, identified with the frequency vectors $\xi = \alpha + \beta \vec e_x + \gamma \vec e_y + \delta \vec e_z$, the pairing being the Euclidean scalar product of the coordinate vectors and the characters being the complex-valued functions
 
 $$
-\chi_\xi(\tilde q) = \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle), \qquad \langle \tilde q,\xi\rangle = q_0\alpha + q_1\beta + q_2\gamma + q_3\delta ,
+\chi_\xi(\tilde q) = \exp(2\pi \mathrm{i}\langle \tilde q,\xi\rangle), \qquad \langle \tilde q,\xi\rangle = q_t\alpha + q_x\beta + q_y\gamma + q_z\delta ,
 $$
 
 Pontryagin duality holds, and the dual group is equipped with the dual Haar measure.
@@ -62,7 +62,7 @@ the transform extends to a unitary operator on $L^2(\mathbb{H}_{\mathrm{s}},\mat
 **Definition.** The **convolution** of two algebra-valued functions is
 
 $$
-(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde p)\,g(\tilde q-\tilde p)\,\mathrm{d}\tilde p ,
+(f * g)(\tilde q) = \int_{\mathbb{H}_{\mathrm{s}}} f(\tilde q_2)\,g(\tilde q-\tilde q_2)\,\mathrm{d}\tilde q_2 ,
 $$
 
 with the product of the algebra inside the integral.
@@ -75,11 +75,11 @@ $$
 
 the product being the product of the algebra.
 
-**Proof.** Substituting $\tilde r = \tilde q-\tilde p$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.
+**Proof.** Substituting $\tilde q_2 = \tilde q-\tilde q_3$ in the transform of $f*g$ and using the multiplicativity of the characters, which are scalar, separates the double integral into the product of the two transforms; the algebra product factors out because the character is central.
 
 **Corollary (The Transform Is an Algebra Homomorphism).** The Fourier transform carries convolution to the pointwise product of the algebra and the direct sum to the sum, both products taken in the same order; it is therefore an isomorphism of the convolution algebra onto the algebra of algebra-valued functions with the pointwise product. The convolution is associative, because the algebra product is, but it is **not** commutative: $\widehat{f*g} = \mathcal F f\mathcal F g$ while $\widehat{g*f} = \mathcal F g\mathcal F f$, and the two differ as soon as the values of the transforms fail to commute. The transform is an isomorphism onto the pointwise-product algebra, not onto a commutative algebra, and the non-commutativity of the algebra is exactly what is transported.
 
-**Proof.** The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = e_1k$ and $g = e_2k$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$ and $(g*f)(0) = -e_3\int k(\tilde p)k(-\tilde p)\,\mathrm{d}\tilde p$, which differ. Associativity is $\widehat{(f*g)*h} = (\mathcal F f\mathcal F g)\mathcal F h = (\mathcal F f)(\mathcal F g\mathcal F h)$.
+**Proof.** The theorem and the inversion formula give the isomorphism; for the failure of commutativity take $f = \vec e_xk$ and $g = \vec e_yk$ with a fixed integrable $k$ of positive square integral: then $(f*g)(0) = \vec e_z\int k(\tilde q_2)k(-\tilde q_2)\,\mathrm{d}\tilde q_2$ and $(g*f)(0) = -\vec e_z\int k(\tilde q_2)k(-\tilde q_2)\,\mathrm{d}\tilde q_2$, which differ. Associativity is $\widehat{(f*g)*h} = (\mathcal F f\mathcal F g)\mathcal F h = (\mathcal F f)(\mathcal F g\mathcal F h)$.
 
 ### Approximate Identities and Young's Inequality
 
@@ -117,17 +117,17 @@ so the exponential kernel itself is never a zero divisor, and the transform is w
 
 **Proof.** *Split-Quaternion Elementary Functions*, §*The Exponential*, applied to the element $-\tilde q\xi$.
 
-**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $\exp(-\tilde q\xi)$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde p$, and
+**Theorem (The Inversion Degenerates on the Null Cone).** The kernel $\exp(-\tilde q\xi)$ is not a character of the group: it is algebra-valued and not multiplicative in $\tilde q$. The inversion of $\mathcal{F}$ requires, in its natural derivation by integration by parts in the frequency variable, the inverse of the difference variable $\tilde q-\tilde q_2$, and
 
 $$
-(\tilde q-\tilde p)^{-1} = \frac{\overline{\tilde q-\tilde p}}{\langle\tilde q-\tilde p\rangle_{\natural}}
+(\tilde q-\tilde q_2)^{-1} = \frac{\overline{\tilde q-\tilde q_2}}{\langle\tilde q-\tilde q_2\rangle_{\natural}}
 $$
 
-exists exactly when $\langle\tilde q-\tilde p\rangle_{\natural} \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
+exists exactly when $\langle\tilde q-\tilde q_2\rangle_{\natural} \neq 0$, that is off the null cone. On the null cone the reciprocal does not exist, the derivation of the inversion formula fails, and the transform is not invertible by a kernel of the same shape.
 
-**Proof.** The inverse of an element is $u^{\natural}/\langle u\rangle_{\natural}$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $\langle u\rangle_{\natural} = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $\exp(-(\tilde q+\tilde p)\xi) \neq \exp(-\tilde q\xi)\exp(-\tilde p\xi)$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
+**Proof.** The inverse of an element is $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*, which likewise gives that $\langle\tilde q\rangle_{\natural} = 0$ exactly on the zero divisors. The non-multiplicativity of the kernel is immediate from the non-commutativity: $\exp(-(\tilde q+\tilde q_2)\xi) \neq \exp(-\tilde q\xi)\exp(-\tilde q_2\xi)$ unless $\tilde q$ and $\xi$ commute, by *Split-Quaternion Elementary Functions*, §*Non-Commutativity and the One-Variable Case*.
 
-**Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = e_1\partial_{q_1} + e_2\partial_{q_2} + e_3\partial_{q_3}$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
+**Theorem (The Vanishing Determinant, Stated Precisely).** Let $D = \vec e_x\partial/\partial q_x + \vec e_y\partial/\partial q_y + \vec e_z\partial/\partial q_z$ be the vector operator and let the transform be the group transform of the preceding section, whose linearity allows differentiating under the integral. Then
 
 $$
 \widehat{Df}(\xi) = -2\pi \mathrm{i}\;\xi\, (\mathcal F f)(\xi),
@@ -135,7 +135,7 @@ $$
 
 so that the **symbol** of the operator is the frequency vector $\xi \in V$; the symbol is invertible exactly when $\xi$ is a unit, that is exactly when $\langle \xi\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
 
-**Proof.** Integration by parts in each coordinate gives $\widehat{\partial_i f} = -2\pi\mathrm{i}\xi_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of *Split-Quaternion Norm and Invertibility*.
+**Proof.** Integration by parts in each coordinate gives $\widehat{\partial/\partial q_i f} = -2\pi\mathrm{i}\xi_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of *Split-Quaternion Norm and Invertibility*.
 
 **Corollary (The Transform of the Fundamental Solution Is Singular on the Cone).** Let $E_D$ be the fundamental solution of $D$ of *Split-Quaternion Integration*, §*The Fundamental Solution*. Then, with the principal value of the reciprocal,
 
@@ -182,7 +182,7 @@ The quaternion column is the content of *Quaternion Harmonic Analysis* and the s
 
 The additive group of the split-quaternion algebra is a locally compact abelian group, identified with $\mathbb{R}^4$, with dual $\mathbb{R}^4$ and scalar characters $\chi_\xi(\tilde q) = \exp(2\pi\mathrm{i}\langle \tilde q,\xi\rangle)$. The Fourier transform of the group is the fourfold scalar transform applied to the components, with inversion and Plancherel; the convolution theorem holds with the algebra product, because the characters are scalar, so the transform is an isomorphism of the convolution algebra onto the pointwise product algebra; the convolution is associative because the algebra product is, and it is not commutative, because the algebra product is not.
 
-The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $\langle \exp(u)\rangle_{\natural} = \exp(2\operatorname{Sc}u) > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\xi$, invertible exactly when $\langle \xi\rangle_{\natural}\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\mathcal F E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. The symbol is the frequency $\xi$ itself, and it is singular exactly on the null cone.
+The algebra-kernel transform uses the exponential of the algebra as kernel. The kernel is never a zero divisor, since $\langle \exp(\tilde q)\rangle_{\natural} = \exp(2\operatorname{Sc}\tilde q) > 0$, but it is not a character, and the inversion formula requires the reciprocal of the difference variable, which exists exactly off the null cone; the transform degenerates there. For the vector operator the symbol is the frequency vector $\xi$, invertible exactly when $\langle \xi\rangle_{\natural}\neq0$; the singular frequencies form the null cone, which is the characteristic variety of the operator and the zero divisor set. The transformed fundamental solution is $\mathcal F E_D = -(2\pi\mathrm{i}\xi)^{-1} = \xi/(2\pi\mathrm{i}\langle \xi\rangle_{\natural})$, a distribution whose singular support is exactly the null cone, and the vanishing determinant is thus the frequency-space explanation of the cone-supported fundamental solution and of the failure of the elliptic theory. The symbol is the frequency $\xi$ itself, and it is singular exactly on the null cone.
 
 The comparison with the quaternion case is sharp: there the split-quaternion norm vanishes only at the origin, the symbol is invertible at every nonzero frequency, and the transformed fundamental solution is singular at a point; in the split case the split-quaternion norm vanishes on a cone and every degeneracy is located there. The split-complex case is the two-dimensional model of the same phenomenon, with the two isotropic lines in place of the cone. The eight-dimensional relative is a later system of Part V, named only.
 

@@ -6,7 +6,7 @@ This article introduces the representation theory of the quaternion algebra. The
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over a field $F$ of characteristic not two.
 
-Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
+Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
 ## The Algebra and Its Ground Field
 
@@ -48,7 +48,7 @@ Because $\mathbb{H}$ is not commutative, there are two distinct regular represen
 
 **Left regular representation.** $\mathsf{M}_4(\tilde q) r = \tilde q r$.
 
-**Right regular representation.** $\mathsf{M}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_4^{R}(\tilde q) \mathsf{M}_4^{R}(\tilde q') = \mathsf{M}_4^{R}(\tilde q' \tilde q)$.
+**Right regular representation.** $\mathsf{M}_4^{R}(\tilde q) r = r \tilde q$. This is a right action rather than a left one: $\mathsf{M}_4^{R}(\tilde q_1) \mathsf{M}_4^{R}(\tilde q_2) = \mathsf{M}_4^{R}(\tilde q_2 \tilde q_1)$.
 
 Composing the right action with the anti-automorphism $\tilde q \mapsto \tilde{q}^{\natural}$ gives a left representation $\mathsf{M}_4^{R}(\tilde q) r = r \tilde{q}^{\natural}$, and the map $r \mapsto \bar{r}$ intertwines it with $\mathsf{M}_4$, so the two regular representations are isomorphic.
 
@@ -100,7 +100,7 @@ The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{H}}(
 
 **Schur's lemma.** If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{H}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{H}}(V, V) \cong \mathbb{H}$.
 
-**Dimension count.** For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus \tilde q}$,
+**Dimension count.** For $V \cong \mathbb{H}^{\oplus p}$ and $W \cong \mathbb{H}^{\oplus q}$,
 
 $$
 \dim_F \operatorname{Hom}_{\mathbb{H}}(V, W) = 4 pq.
@@ -132,7 +132,7 @@ So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the centre. The
 
 As a central simple algebra over $F$, the quaternion algebra $\mathbb{H}$ has a class in the Brauer group $\operatorname{Br}(F)$. This class is trivial if and only if $\mathbb{H}$ is isomorphic to the matrix algebra $M_2(F)$, which happens if and only if the quaternion algebra splits over $F$. The quaternion algebra is a division algebra precisely when its class in the Brauer group is non-trivial.
 
-**Example.** Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $e_1^2 = e_2^2 = e_3^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.
+**Example.** Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.
 
 ## The Representation Ring
 
@@ -228,7 +228,7 @@ $$
 \tilde q \cdot (v \otimes w) = (\tilde q \cdot v) \otimes (\tilde q \cdot w).
 $$
 
-This is a representation because the diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism: $\Delta(\tilde q) \Delta(\tilde q') = (\tilde q \tilde q') \otimes (\tilde q \tilde q') = \Delta(\tilde q \tilde q')$.
+This is a representation because the diagonal map $\Delta(\tilde q) = \tilde q \otimes \tilde q$ is an algebra homomorphism: $\Delta(\tilde q_1) \Delta(\tilde q_2) = (\tilde q_1 \tilde q_2) \otimes (\tilde q_1 \tilde q_2) = \Delta(\tilde q_1 \tilde q_2)$.
 
 ### Basic Properties
 

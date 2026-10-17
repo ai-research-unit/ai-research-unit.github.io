@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **Hermitian vector bundle** is a complex vector bundle whose fibres carry Hermitian inner products, varying smoothly with the base point. The metric is the datum that makes the fibres into Hilbert spaces of finite dimension; it is a conjugate-linear identification of the bundle with its dual, and it reduces the structure group of the bundle from $GL(k,\mathbb{C})$ to the unitary group $U(k)$. A **connection** on the bundle is compatible with the metric when it differentiates the inner product by the Leibniz rule; on a *holomorphic* bundle the metric and the holomorphic structure together single out exactly one such connection, the **Chern connection**.
+A **Hermitian vector bundle** is a complex vector bundle whose fibres carry Hermitian inner products, varying smoothly with the base point. The metric is the datum that makes the fibres into Hilbert spaces of finite dimension; it is a conjugate-linear identification of the bundle with its dual, and it reduces the structure group of the bundle from $GL(k,\mathbb{C})$ to the unitary group $\mathrm{U}(k)$. A **connection** on the bundle is compatible with the metric when it differentiates the inner product by the Leibniz rule; on a *holomorphic* bundle the metric and the holomorphic structure together single out exactly one such connection, the **Chern connection**.
 
 The article develops the Hermitian bundles and their connections. It defines the Hermitian metric, reads it as the conjugate-linear isomorphism $\bar E \to E^*$ — the involution on the fibres that the group of this Part records — and identifies the unitary reductions of the structure group. It develops the metric-compatible connections, the affine space they form, and the naive adjointness interpretation that the operator group of this category uses. It then defines the holomorphic structure as a $\bar\partial$-operator, states the existence and uniqueness of the connection compatible with the metric and the holomorphic structure — the Chern connection — and computes its local form and its curvature.
 
@@ -24,7 +24,7 @@ $$
 h(s,t) = \sum_{a,b} \bar s^a\, h_{ab}\, t^b = \bar s^{\,T} H\, t .
 $$
 
-Under a change of frame $e' = eg$ the matrix transforms by $H' = g^* H g$, the transformation rule of a Hermitian form, and the bundles with a Hermitian metric are exactly the bundles whose structure group is reducible to the unitary group $U(k)$.
+Under a change of frame $e' = eg$ the matrix transforms by $H' = g^* H g$, the transformation rule of a Hermitian form, and the bundles with a Hermitian metric are exactly the bundles whose structure group is reducible to the unitary group $\mathrm{U}(k)$.
 
 **Proposition (the metric as a conjugate-linear isomorphism).** The Hermitian metric induces a conjugate-linear bundle isomorphism
 
@@ -40,9 +40,9 @@ where $\bar E$ is the **conjugate bundle**, the bundle with the same underlying 
 
 ### The Unitary Frame Bundle
 
-**Proposition.** The Hermitian metrics on $E$ are in bijective correspondence with the reductions of the structure group of $E$ from $GL(k,\mathbb{C})$ to $U(k)$, that is, with the subbundles of the frame bundle whose structure group is the unitary group.
+**Proposition.** The Hermitian metrics on $E$ are in bijective correspondence with the reductions of the structure group of $E$ from $GL(k,\mathbb{C})$ to $\mathrm{U}(k)$, that is, with the subbundles of the frame bundle whose structure group is the unitary group.
 
-*Proof.* A reduction to $U(k)$ is an atlas of frames whose transition functions take values in $U(k)$; in such a frame the matrix of $h$ is the identity, and two frames of the reduction are related by a unitary matrix, so the metric is well defined. Conversely, given $h$, the Gram–Schmidt process applied to any frame produces a local $h$-orthonormal frame, and the transition functions between two such frames are unitary because both are orthonormal for the same metric. The two constructions are inverse.
+*Proof.* A reduction to $\mathrm{U}(k)$ is an atlas of frames whose transition functions take values in $\mathrm{U}(k)$; in such a frame the matrix of $h$ is the identity, and two frames of the reduction are related by a unitary matrix, so the metric is well defined. Conversely, given $h$, the Gram–Schmidt process applied to any frame produces a local $h$-orthonormal frame, and the transition functions between two such frames are unitary because both are orthonormal for the same metric. The two constructions are inverse.
 
 ## Metric-Compatible Connections
 
@@ -142,7 +142,7 @@ $$
 
 ## Summary
 
-A Hermitian metric on a complex vector bundle is a smooth family of inner products, locally a positive-definite Hermitian matrix $H$ transforming by $H'=g^*Hg$; it is equivalent to a reduction of the structure group to $U(k)$, and it is a conjugate-linear isomorphism $\flat:\bar E\to E^*$, the involution that this group of the Part records. A connection is metric-compatible when $d\,h(s,t)=h(\nabla s,t)+h(s,\nabla t)$, equivalently $dH=\omega^*H+H\omega$; the metric-compatible connections form an affine space modelled on the $h$-anti-Hermitian endomorphism-valued $1$-forms, and the condition is the self-adjointness of the connection with respect to the fibrewise metric.
+A Hermitian metric on a complex vector bundle is a smooth family of inner products, locally a positive-definite Hermitian matrix $H$ transforming by $H'=g^*Hg$; it is equivalent to a reduction of the structure group to $\mathrm{U}(k)$, and it is a conjugate-linear isomorphism $\flat:\bar E\to E^*$, the involution that this group of the Part records. A connection is metric-compatible when $d\,h(s,t)=h(\nabla s,t)+h(s,\nabla t)$, equivalently $dH=\omega^*H+H\omega$; the metric-compatible connections form an affine space modelled on the $h$-anti-Hermitian endomorphism-valued $1$-forms, and the condition is the self-adjointness of the connection with respect to the fibrewise metric.
 
 A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, the integrability condition; a holomorphic frame is one in which it is the componentwise $\bar\partial$. On a holomorphic Hermitian bundle there is a unique connection compatible with both the metric and the holomorphic structure, the Chern connection; in a holomorphic frame its connection form is $\omega=H^{-1}\partial H$, of type $(1,0)$, and its curvature is $\Theta=\bar\partial(H^{-1}\partial H)$, of type $(1,1)$ and skew-Hermitian. On a line bundle $\Theta=\bar\partial\partial\log h$, the local model of the first Chern form, and the general Chern forms of the Hermitian bundle are the subject of the next article.
 
@@ -155,7 +155,7 @@ A holomorphic structure is a $\bar\partial$-operator with $\bar\partial_E^2=0$, 
 | $H = (h_{ab})$, $H' = g^*Hg$ | Metric matrix in a frame and its change of frame |
 | $\bar E$ | Conjugate bundle; the opposite complex structure on the same real bundle |
 | $\flat : \bar E \to E^*$, $s\mapsto h(s,\cdot)$ | Conjugate-linear isomorphism given by the metric |
-| $U(k)$, unitary frame bundle | Reduction of the structure group by a Hermitian metric |
+| $\mathrm{U}(k)$, unitary frame bundle | Reduction of the structure group by a Hermitian metric |
 | $d\,h(s,t) = h(\nabla s,t)+h(s,\nabla t)$ | Metric compatibility |
 | $dH = \omega^*H + H\omega$ | Metric compatibility in a frame; $\omega^*=\bar\omega^{\,T}$ |
 | $\mathfrak{u}(E,h)$, $\theta^*=-\theta$ | The affine space of metric connections; anti-Hermitian difference |

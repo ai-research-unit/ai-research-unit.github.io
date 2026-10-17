@@ -10,7 +10,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 #### Introduction to the Biquaternion Algebra
 
 - [Introduction to the Biquaternion Algebra](../articles_maths/introduction-to-the-biquaternion-algebra.html)
-- [The Four Products, Their Forms and Their Algebraic Norms](../articles_maths/the-four-products-their-forms-and-their-algebraic-norms.html)
+- [The Products, Their Forms and Their Algebraic Norms](../articles_maths/the-products-their-forms-and-their-algebraic-norms.html)
 
 #### Properties of the Biquaternion Algebra over $\mathbb{C}$
 
@@ -87,6 +87,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 ### Analysis
 
 - [Biquaternion Analysis](../articles_maths/biquaternion-analysis.html)
+- [The Differential Operators, the Products, the Forms and the D'Alembertian](../articles_maths/the-differential-operators-the-products-the-forms-and-the-d-alembertian.html)
 - [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html)
 - [Biquaternion Spectral Theory](../articles_maths/biquaternion-spectral-theory.html)
 - [The Hermitian Sylvester Equation](../articles_maths/the-hermitian-sylvester-equation.html)
@@ -147,7 +148,7 @@ The four blocks of the study read as a division of labour with the physics. Alge
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.
 - The mathematical study is organised in four blocks: *Algebra*, *Topology*, *Analysis* and *Geometry*, and each block carries a part of the physics.
-- The article carries the direct links to all eighty-four entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
+- The article carries the direct links to all eighty-five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
 - The twelve structures the complex space carries, collected in the mathematics category *Biquaternioid Algebraic Structures*, and the neighbouring systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
 
 ## Summary of Notation
@@ -155,8 +156,8 @@ The four blocks of the study read as a division of labour with the physics. Alge
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, of complex dimension four and real dimension eight |
-| $e_0,e_1,e_2,e_3$ | the quaternion basis, $e_0$ the unit and $e_1,e_2,e_3$ the vector units |
-| $i$ | the central imaginary unit; with $e_0$ it generates the centre $\mathbb{C}_{\mathbb{B}}$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion basis, $e_t$ the unit and $\vec e_x,\vec e_y,\vec e_z$ the vector units |
+| $i$ | the central imaginary unit; with $e_t$ it generates the centre $\mathbb{C}_{\mathbb{B}}$ |
 | $\tilde{Q}=\sum_\mu Q_\mu e_\mu$ | a general element, with complex coefficients $Q_\mu$ |
 | $\bar{\cdot}$, ${}^{\natural}$, ${}^{*}$, $\flat$ | the four conjugations: quaternion, complex, Hermitian and reversal |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ | the remarkable subspaces |

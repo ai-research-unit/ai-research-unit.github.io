@@ -16,7 +16,7 @@ The presentation is split three ways, as in the companions.
 
 The article is organised as follows. The next section states the equation and its three forms and proves the equivalence. A section then treats the charge-conjugation eigenstates and the ELKO companion. A section counts the independent solutions against the Dirac count. A closing section separates what the framework supplies, transcribes, and does not supply.
 
-**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and $i$ the scalar imaginary. The matrix realisation is $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The Clifford generators are taken in the **block (chiral) basis** of the series,
+**Conventions.** We use those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, $\vec e_x \vec e_y=\vec e_z$, and $i$ the scalar imaginary. The matrix realisation is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The Clifford generators are taken in the **block (chiral) basis** of the series,
 
 $$
 \gamma^{0}=\begin{pmatrix}0&I_2\\ I_2&0\end{pmatrix},\qquad
@@ -26,7 +26,7 @@ $$
 with $g=\mathrm{diag}(+,-,-,-)$ so that $\{\gamma^{\mu},\gamma^{\nu}\}=2g^{\mu\nu}I_4$, and $\gamma_5=i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}=\mathrm{diag}(-I_2,I_2)$. The Dirac module is $\Delta=S\oplus\bar S$, a Dirac spinor is $\Psi=(\psi_L,\psi_R)^{T}$, and the charge conjugation is $\psi^{c}=C\bar\psi^{T}=C\gamma^{0T}\psi^{*}$. The d'Alembertian is the series convention
 
 $$
-\Box=\partial_{ict}^{2}+\Delta=\Delta-\frac{1}{c^{2}}\partial_t^{2},
+\Box=\partial^2/\partial Q_t^2+\Delta=\Delta+ \partial^2/\partial Q_t^2,
 $$
 
 so that the relativistic second-order equation reads $(\Box-m^{2})\psi=0$ in natural units, and the mass is measured in inverse-length units where a distinction is needed. The symbols $\sigma^{\mu}=(I_2,\boldsymbol{\sigma})$ and $\bar\sigma^{\mu}=(I_2,-\boldsymbol{\sigma})$ are the two-component Weyl vectors, and $\epsilon=i\sigma_2$ is the real antisymmetric $2\times2$ matrix, $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$, the symplectic form of the spinor module.
@@ -262,7 +262,7 @@ The Majorana equation is the relativistic wave equation of a spin-$\tfrac12$ fie
 | $\epsilon=i\sigma_2$ | Symplectic form; $\epsilon^{T}=-\epsilon$, $\epsilon^{2}=-I_2$ |
 | $D_L=i\bar\sigma^{\mu}\partial_\mu-m\epsilon(\,\cdot\,)^{*}$ | Two-component Majorana operator |
 | $W_L=i\bar\sigma^{\mu}\partial_\mu$, $W_R=i\sigma^{\mu}\partial_\mu$ | Weyl operators; $W_RW_L=\Box$ |
-| $\Box=\Delta-\partial_t^{2}$ | d'Alembertian, series convention |
+| $\Box=\Delta-\partial^2/\partial t^2$ | d'Alembertian, series convention |
 
 ## Further Reading
 

@@ -2,29 +2,29 @@
 
 ## Introduction
 
-The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu=0}^{3}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
+The general quaternionic bilinear form of the biquaternion algebra, $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}P_\mu Q_\mu$, is non-degenerate, and a non-degenerate form in four variables has a projective geometry: its null set is a quadric. This article is that geometry. The quadric, the two rulings of its null planes, its polarity and its automorphism group are the projective reading of the form, and they sit beside the affine reading of the same form on the algebra and on the remarkable real subspaces.
 
 The article is the companion of *The Isotropic Structure of the General Quaternionic Algebra*, which reads the same form affinely — the cone of real dimension $6$, its isotropic lines, its restrictions to the remarkable subspaces — and of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which owns the form and its diagonal. The cone whose projectivisation is the quadric is studied as a topological space, with no form entering, in *The Topology of the Zero-Divisor Cone*; the real forms of the form and their signatures are *Norm and Invertibility in the General Quaternionic Algebra*, §*The Algebraic Norm on the Remarkable Subspaces*; the Lorentzian and conformal reading of the real slices is *Biquaternion Lorentzian and Conformal Geometry*; the algebra and its fixed-point subspaces are *The Biquaternioid as a Vector Space over $\mathbb{C}$*; and the classical groups that act are *Lie Groups*.
 
 **Scope.** The article owns the Segre embedding of the two rulings into $\mathbb{P}^3$, the projective quadric $Q^2$ with its real points, the Klein–Plücker geometry of the lines of $\mathbb{P}^3$ in which $Q^2$ sits, the polarity and the tangency it induces, and the automorphism group of the complex quadric. No physics is invoked and no new result about the algebra is claimed.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, and $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$, and $\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})=\sum_\mu P_\mu Q_\mu$; the projectivised null cone is $\mathbb{P}(\mathcal{N})\subset\mathbb{P}^3$.
 
 ## The Segre Embedding
 
 Choose on $\mathbb{B}$ the linear coordinates
 
 $$
-Z_0=Q_0-iQ_3,\qquad Z_1=-iQ_1-Q_2,\qquad Z_2=-iQ_1+Q_2,\qquad Z_3=Q_0+iQ_3,
+Z_0=Q_t-iQ_z,\qquad Z_1=-iQ_x-Q_y,\qquad Z_2=-iQ_x+Q_y,\qquad Z_3=Q_t+iQ_z,
 $$
 
-an invertible $\mathbb{C}$-linear change of the coordinates $Q_0,\dots,Q_3$. In them the form is a split form,
+an invertible $\mathbb{C}$-linear change of the coordinates $Q_t,\dots,Q_z$. In them the form is a split form,
 
 $$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu=0}^{3}Q_\mu^2=Z_0Z_3-Z_1Z_2,
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^2=Z_0Z_3-Z_1Z_2,
 $$
 
-since $Z_0Z_3=(Q_0-iQ_3)(Q_0+iQ_3)=Q_0^2+Q_3^2$ and $Z_1Z_2=(-iQ_1-Q_2)(-iQ_1+Q_2)=-Q_1^2-Q_2^2$. The null cone is therefore the affine hypersurface $Z_0Z_3=Z_1Z_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
+since $Z_0Z_3=(Q_t-iQ_z)(Q_t+iQ_z)=Q_t^2+Q_z^2$ and $Z_1Z_2=(-iQ_x-Q_y)(-iQ_x+Q_y)=-Q_x^2-Q_y^2$. The null cone is therefore the affine hypersurface $Z_0Z_3=Z_1Z_2$, and each of its nonzero points is a pair of one-dimensional subspaces of $\mathbb{C}^2$. Indeed, for nonzero $u=(\alpha,\beta)$ and $v=(\gamma,\delta)$ the point
 
 $$
 (Z_0,Z_1,Z_2,Z_3)=(\alpha\gamma,\alpha\delta,\beta\gamma,\beta\delta)

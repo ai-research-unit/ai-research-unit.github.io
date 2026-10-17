@@ -11,11 +11,11 @@ $$
 \langle T\tilde y,\tilde z\rangle=\langle\tilde y,T^{\dagger}\tilde z\rangle \qquad\text{for all }\tilde y,\tilde z .
 $$
 
-**Theorem.** For the plain pairing $\langle\tilde p,\tilde q\rangle=\operatorname{Sc}(\tilde p\tilde q)$,
+**Theorem.** For the plain pairing $\langle\tilde q_1,\tilde q_2\rangle=\operatorname{Sc}(\tilde q_1\tilde q_2)$,
 $$
 L_{\tilde x}^{\dagger}=R_{\tilde x} , \qquad R_{\tilde x}^{\dagger}=L_{\tilde x} ;
 $$
-for the quaternion pairing $\langle\tilde p,\tilde q\rangle_{\natural}=\operatorname{Sc}(\tilde p^{\natural}\tilde q)$,
+for the quaternion pairing $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\operatorname{Sc}(\tilde q_1^{\natural}\tilde q_2)$,
 $$
 L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}} , \qquad R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}} .
 $$
@@ -26,9 +26,9 @@ The two rules are one rule: the adjoint of a regular operator is the regular ope
 
 ## Worked Examples
 
-**Example 1 (the two adjoints of $L_{e_1}$).** The left multiplication by $e_1$ sends $\tilde y=y_0e_0+y_1e_1+y_2e_2+y_3e_3$ to $e_1\tilde y=-y_1e_0+y_0e_1-y_3e_2+y_2e_3$. With respect to the plain pairing its adjoint is $R_{e_1}$, no sign, and with respect to the quaternion pairing its adjoint is $L_{e_1^{\natural}}=L_{-e_1}$, the left multiplication by $-e_1$. The two adjoints differ by the sign carried by the conjugation.
+**Example 1 (the two adjoints of $L_{\vec e_x}$).** The left multiplication by $\vec e_x$ sends $\tilde y=y_0e_t+y_1\vec e_x+y_2\vec e_y+y_3\vec e_z$ to $\vec e_x\tilde y=-y_1e_t+y_0\vec e_x-y_3\vec e_y+y_2\vec e_z$. With respect to the plain pairing its adjoint is $R_{\vec e_x}$, no sign, and with respect to the quaternion pairing its adjoint is $L_{\vec e_x^{\natural}}=L_{-\vec e_x}$, the left multiplication by $-\vec e_x$. The two adjoints differ by the sign carried by the conjugation.
 
-**Example 2 (a general element).** For $\tilde x=x_0+\vec x$, the plain adjoint of $L_{\tilde x}$ is $R_{\tilde x}=R_{x_0+\vec x}$, which differs from $L_{\tilde x}$ exactly when $\vec x\neq0$, the plain product being non-commutative; the quaternion adjoint is $L_{\tilde x^{\natural}}=L_{x_0-\vec x}$. The two adjoints coincide, and are both $L_{x_0}$, exactly when $\tilde x$ is real, the scalar line being the centre.
+**Example 2 (a general element).** For $\tilde x=x_0+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the plain adjoint of $L_{\tilde x}$ is $R_{\tilde x}=R_{x_0+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z}$, which differs from $L_{\tilde x}$ exactly when $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\neq0$, the plain product being non-commutative; the quaternion adjoint is $L_{\tilde x^{\natural}}=L_{x_0-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)}$. The two adjoints coincide, and are both $L_{x_0}$, exactly when $\tilde x$ is real, the scalar line being the centre.
 
 **Example 3 (the matrix model).** In the matrix model of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, above this article in this category, the operator $L_{\tilde x}$ is left multiplication by the matrix $S=\mathsf{M}_2(\tilde x)$. The quaternion pairing is the Hermitian pairing $\tfrac12\operatorname{Tr}(S^{\dagger}T)$, and its adjoint is left multiplication by $S^{\dagger}=\mathsf{M}_2(\tilde x^{\natural})$, the **conjugate transpose**. The plain pairing is the bilinear pairing $\tfrac12\operatorname{Tr}(ST)$, and its adjoint is the **transpose** of *Association and the Transpose on the Quaternion Algebra*, $L_{\tilde x}^{\sim}=R_{\tilde x}$, which is right multiplication by $S$. The two names separate in the four real coordinates of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, above this article in this category: there the plain adjoint has matrix $D\mathsf{M}_4(\tilde x)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the matrix transpose conjugated by the signature matrix, whereas the quaternion adjoint carries the plain transpose, $\mathsf{M}_4(\tilde x^{\natural})=\mathsf{M}_4(\tilde x)^{\mathsf T}$. This is the matrix form of the two rules and the reason the quaternion one is named the conjugate transpose.
 

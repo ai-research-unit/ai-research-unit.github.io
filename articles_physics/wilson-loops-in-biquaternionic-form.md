@@ -13,7 +13,7 @@ The article is organized as follows. The holonomy is defined for the abelian and
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the covariant derivative.
 - Companion article *The Photon in Biquaternionic Form*, for the massless one-particle state.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}=iA_0e_0+\vec A\in\mathbb{M}_-$ and the connection one-form is $\tilde{A}=\tilde{A}_\mu dx^\mu$. The field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with the component form $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ in the abelian case. The gauge group is realized by the commutator, in the physics normalization with the Hermitian generators $T^a=ie_a\in\mathbb{M}_+$ obeying $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ with the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}\subset\mathbb{M}_-$; the generators are $T^a=ie_a$ in the fundamental representation, normalized so that the trace $\mathrm{Tr}$ is the matrix trace in that representation, equal to twice the scalar part for the quaternion realization. The coupling is $g$ and the path ordering is denoted $\mathcal{P}$. Natural units are used.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is $\tilde{A}=iA_te_t+\vec A\in\mathbb{M}_-$ and the connection one-form is $\tilde{A}=\tilde{A}_\mu dx^\mu$. The field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, with the component form $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ in the abelian case. The gauge group is realized by the commutator, in the physics normalization with the Hermitian generators $T^a=ie_a\in\mathbb{M}_+$ obeying $[T^a,T^b]=2i\varepsilon^{abc}T^c=if^{abc}T^c$ with the real structure constants $f^{abc}=2\varepsilon^{abc}$; equivalently, in its anti-Hermitian normalization the same algebra is the compact form $\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{M}_-$; the generators are $T^a=ie_a$ in the fundamental representation, normalized so that the trace $\mathrm{Tr}$ is the matrix trace in that representation, equal to twice the scalar part for the quaternion realization. The coupling is $g$ and the path ordering is denoted $\mathcal{P}$. Natural units are used.
 
 ## The Holonomy of the Connection
 
@@ -26,7 +26,7 @@ W(C) = \exp\left(i\oint_C A_\mu\,dx^\mu\right)
 = \exp\left(\oint_C \mathrm{Sc}\!\left(\tilde{A}_\mu\right)dx^\mu\right),
 $$
 
-where the second form records that the $i$ of the phase is carried by the material sector itself: for the abelian field the potential is taken along the scalar direction, $\tilde{A}_\mu=iA_\mu e_0$, so that $\mathrm{Sc}(\tilde{A}_\mu)=iA_\mu$ and the line integral is a central imaginary scalar whose exponential is a phase. The definition is a functional of the curve and a functional of the connection, and it is an element of $U(1)$ — a phase. Its gauge transformation is the content of the following section.
+where the second form records that the $i$ of the phase is carried by the material sector itself: for the abelian field the potential is taken along the scalar direction, $\tilde{A}_\mu=iA_\mu e_t$, so that $\mathrm{Sc}(\tilde{A}_\mu)=iA_\mu$ and the line integral is a central imaginary scalar whose exponential is a phase. The definition is a functional of the curve and a functional of the connection, and it is an element of $\mathrm{U}(1)$ — a phase. Its gauge transformation is the content of the following section.
 
 ### The Non-Abelian Wilson Loop
 
@@ -37,7 +37,7 @@ W(C) = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C A_\mu\,dx^\mu\right)
 = \mathrm{Tr}\,\mathcal{P}\exp\left(i\oint_C A^a_\mu T^a\,dx^\mu\right),
 $$
 
-where the generators $T^a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $ie_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_0$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
+where the generators $T^a$ are realized in the informational sector of the algebra. Without the trace, the holonomy is a group element $U(C)=\mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$; with the trace it is a gauge-invariant number. In the quaternion realization the generators are the imaginary units $ie_a$, the group element is a unit quaternion $Q$, and the trace is $2Q_t$ — twice the scalar part. The Wilson loop is therefore, in the framework's own terms, the scalar part of the holonomy element of the informational sector, and the connection whose holonomy it is lies in the material sector. The loop is a bilinear object that joins the two sectors.
 
 ## Gauge Invariance and Stokes' Theorem
 
@@ -89,13 +89,13 @@ $$
 
 in the abelian case, and in the non-abelian case as $W=1+ia^2F^a_{\mu\nu}T^a+O(a^4)$, so the loop exponentiates the field strength. This was verified for a small abelian plaquette of side $a=10^{-3}$: the ratio of the deviation of the plaquette from unity to $a^2F$ was unity to six significant figures. The small loop is therefore an algebraic probe of $\tilde{F}$, and the two gauge-invariant scalars that can be built from $\tilde{F}$ in the framework are visible in the loop at second order.
 
-Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)e_k$, its square is a central element,
+Those scalars are the biquaternion content of the Maxwell field. Writing the field strength as $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, its square is a central element,
 
 $$
-\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_0 + 2i\,\vec E\cdot\vec H\,e_0 ,
+\tilde{F}^2 = \left(|\vec E|^2-|\vec H|^2\right)e_t + 2i\,\vec E\cdot\vec H\,e_t ,
 $$
 
-so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $e_k=-i\sigma_k$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.
+so that the two Lorentz invariants of the Maxwell field — the difference of the squared field magnitudes and the pseudoscalar $\vec E\cdot\vec H$ — are the real and imaginary scalar parts of $\tilde{F}^2$. This was verified with the $2\times2$ representation $\vec e_k=-i\sigma_k$: for random fields the matrix square of $\tilde{F}$ equaled $ (|\vec E|^2-|\vec H|^2+2i\vec E\cdot\vec H)I_2$ to machine precision. The statement is the framework's: in a biquaternion algebra the square of the field strength is automatically central, and both invariants are read from the single element $\tilde{F}^2$ as its two scalar parts. The Wilson loop of a small loop is the exponentiation of the field strength that this element describes, and the two invariants are its second-order content.
 
 ### The Constant Field
 
@@ -254,10 +254,10 @@ The Wilson loop is the trace of the holonomy of the gauge connection around a cl
 
 For the abelian theory the loop is $\exp(i\oint A_\mu dx^\mu)$; it is invariant under the gradient shift because the integral of a total derivative around a closed curve vanishes, and Stokes' theorem makes it the exponential of the enclosed flux. For the non-abelian theory the holonomy is a path-ordered exponential transforming by conjugation at the base point, and the trace is invariant; this was verified for the quaternion realization, where the real part of the trace was unchanged under random site gauge transformations while the untraced holonomy changed by conjugation.
 
-For a small loop the holonomy expands as $W=1+ia^2F_{\mu\nu}+O(a^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)e_k$, the square of the field strength is central,
+For a small loop the holonomy expands as $W=1+ia^2F_{\mu\nu}+O(a^4)$, verified to six significant figures on a plaquette, so that the loop exponentiates the field strength. Writing $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$, the square of the field strength is central,
 
 $$
-\tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_0+2i\,\vec E\cdot\vec H\,e_0 ,
+\tilde{F}^2=\left(|\vec E|^2-|\vec H|^2\right)e_t+2i\,\vec E\cdot\vec H\,e_t ,
 $$
 
 verified in the $2\times2$ representation, so that the two Lorentz invariants of the Maxwell field are the real and imaginary scalar parts of the single element $\tilde{F}^2$. The quantum loop $\langle W(C)\rangle$ is the order parameter of the gauge theory: a perimeter law signals screening and an area law confinement, with the rectangular loop giving the static potential. The loop equation is the Schwinger–Dyson constraint on the loop, standard and cited. What the algebra supplies is the carrier, the holonomy's group element, the trace as a scalar part, the conjugation law, the small-loop expansion, and the central element $\tilde{F}^2$; what it does not supply is the gauge group, the string tension, the lattice regularization, or any empirical content.
@@ -276,8 +276,8 @@ verified in the $2\times2$ representation, so that the two Lorentz invariants of
 | $U(C)\mapsto Q\,U(C)\,Q^{-1}$ | Conjugation of the holonomy; trace invariant |
 | $\oint_C A_\mu dx^\mu=\frac12\int_S F_{\mu\nu}d\Sigma^{\mu\nu}$ | Stokes' theorem; loop equals enclosed flux |
 | $W=1+i a^2F_{\mu\nu}+O(a^4)$ | Small-loop expansion; exponentiated field strength |
-| $\tilde{F}=\sum_k(iE_k-H_k)e_k$ | Field strength biquaternion |
-| $\tilde{F}^2=(E^2-H^2)e_0+2i(E\cdot H)e_0$ | Central element; its two scalar parts are the Maxwell invariants (verified) |
+| $\tilde{F}=\sum_k(iE_k-H_k)\vec e_k$ | Field strength biquaternion |
+| $\tilde{F}^2=(E^2-H^2)e_t+2i(E\cdot H)e_t$ | Central element; its two scalar parts are the Maxwell invariants (verified) |
 | $\langle W(C)\rangle\sim \exp(-\kappa\,\mathrm{perim})$ / $\exp(-\sigma\,\mathrm{area})$ | Perimeter law (screening) / area law (confinement) |
 | $\sigma$ | String tension |
 

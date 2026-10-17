@@ -41,7 +41,7 @@ $$
 
 and the Cesàro means are $\sigma_N f = f * F_N$.
 
-**Theorem (Fejér).** If $f : \mathbb{T} \to \mathbb{C}$ is continuous, then $\sigma_N f \to f$ uniformly on $\mathbb{T}$. If $f \in L^{n}(\mathbb{T})$ for $1 \le p < \infty$, then $\sigma_N f \to f$ in $L^{n}(\mathbb{T})$.
+**Theorem (Fejér).** If $f : \mathbb{T} \to \mathbb{C}$ is continuous, then $\sigma_N f \to f$ uniformly on $\mathbb{T}$. If $f \in L^{r}(\mathbb{T})$ for $1 \le r < \infty$, then $\sigma_N f \to f$ in $L^{r}(\mathbb{T})$.
 
 The Fejér kernel is non-negative, has integral $1$, and concentrates at the origin, which is why the Cesàro means behave better than the partial sums.
 
@@ -61,7 +61,7 @@ $$
 \sum_{n \in \mathbb{Z}} (\mathcal F f)(n) \overline{(\mathcal F g)(n)} = \int_0^1 f(a) \overline{g(a)} \, da.
 $$
 
-**Theorem (Riemann–Lebesgue).** If $f \in L^1(\mathbb{T})$, then $(\mathcal F f)(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^{n}(\mathbb{T})$ for $1 \le p < \infty$.
+**Theorem (Riemann–Lebesgue).** If $f \in L^1(\mathbb{T})$, then $(\mathcal F f)(n) \to 0$ as $|n| \to \infty$. The trigonometric polynomials are dense in $L^{r}(\mathbb{T})$ for $1 \le r < \infty$.
 
 ## The Fourier Transform on the Line
 
@@ -169,15 +169,15 @@ $$
 
 defined whenever the integral converges for almost every $a$. Convolution is commutative, associative, bilinear, and translation invariant: $(\tau_a f) * g = \tau_a (f * g)$ for $\tau_a f(b) = f(b - a)$.
 
-**Young's inequality.** If $1 \le p, q, r \le \infty$ and $\frac{1}{p} + \frac{1}{q} = \frac{1}{r} + 1$, then
+**Young's inequality.** If $1 \le r, s, t \le \infty$ and $\frac{1}{r} + \frac{1}{s} = \frac{1}{t} + 1$, then
 
 $$
-\|f * g\|_r \le \|f\|_p \, \|g\|_q.
+\|f * g\|_t \le \|f\|_r \, \|g\|_s.
 $$
 
-In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_p \le \|f\|_1 \|g\|_p$.
+In particular $\|f * g\|_1 \le \|f\|_1 \|g\|_1$ and $\|f * g\|_r \le \|f\|_1 \|g\|_r$.
 
-**Continuity.** If $f \in L^{n}$ and $g \in L^1$ with $1 \le p < \infty$, then $f * g \in L^{n}$ and $\|f * g\|_p \le \|f\|_p \|g\|_1$. If $f \in L^\infty$ and $g \in L^1$, then $f * g$ is bounded and uniformly continuous, with $\|f * g\|_\infty \le \|f\|_\infty \|g\|_1$.
+**Continuity.** If $f \in L^{r}$ and $g \in L^1$ with $1 \le r < \infty$, then $f * g \in L^{r}$ and $\|f * g\|_r \le \|f\|_r \|g\|_1$. If $f \in L^\infty$ and $g \in L^1$, then $f * g$ is bounded and uniformly continuous, with $\|f * g\|_\infty \le \|f\|_\infty \|g\|_1$.
 
 ### The Convolution Theorem
 
@@ -203,7 +203,7 @@ $$
 
 The last condition says that the mass of $\phi_\epsilon$ concentrates near the origin.
 
-**Theorem.** If $(\phi_\epsilon)$ is an approximate identity and $f \in L^{n}(\mathbb{R}^n)$ with $1 \le p < \infty$, then $\|f * \phi_\epsilon - f\|_p \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{n}$, then $(f * \phi_\epsilon)(a) \to f(a)$.
+**Theorem.** If $(\phi_\epsilon)$ is an approximate identity and $f \in L^{r}(\mathbb{R}^n)$ with $1 \le r < \infty$, then $\|f * \phi_\epsilon - f\|_r \to 0$. If $f \in L^\infty$ is uniformly continuous, then $f * \phi_\epsilon \to f$ uniformly. If $a$ is a Lebesgue point of $f \in L^{r}$, then $(f * \phi_\epsilon)(a) \to f(a)$.
 
 ## The Schwartz Space and Tempered Distributions
 
@@ -215,7 +215,7 @@ The **Schwartz space** $\mathcal{S}(\mathbb{R}^n)$ is the set of smooth $\phi$ w
 
 ### Tempered Distributions
 
-A **tempered distribution** is a continuous linear functional on $\mathcal{S}(\mathbb{R}^n)$; the space is denoted $\mathcal{S}'(\mathbb{R}^n)$ and contains $L^{n}(\mathbb{R}^n)$ for $1 \le p \le \infty$, all finite measures, and all polynomials. The operations are defined by duality:
+A **tempered distribution** is a continuous linear functional on $\mathcal{S}(\mathbb{R}^n)$; the space is denoted $\mathcal{S}'(\mathbb{R}^n)$ and contains $L^{r}(\mathbb{R}^n)$ for $1 \le r \le \infty$, all finite measures, and all polynomials. The operations are defined by duality:
 
 - **Differentiation:** $\langle \partial^\alpha T, \phi \rangle = (-1)^{|\alpha|} \langle T, \partial^\alpha \phi \rangle$.
 - **Multiplication:** for $f$ smooth of polynomial growth, $\langle f T, \phi \rangle = \langle T, f \phi \rangle$.
@@ -243,9 +243,9 @@ $$
 
 **Proof.** For each $a$ with $Mf(a) > \lambda$ choose a ball $B(a, r_a)$ with average exceeding $\lambda$. These balls cover the level set; a Vitali covering argument extracts a disjoint subcollection $B_j$ whose $3$-fold dilates cover it. Hence $|\{Mf > \lambda\}| \le 3^n \sum_j |B_j| \le 3^n \lambda^{-1} \|f\|_1$.
 
-**Theorem.** For $1 < p \le \infty$ there is $C_{n,p}$ with $\|Mf\|_p \le C_{n,p} \|f\|_p$.
+**Theorem.** For $1 < r \le \infty$ there is $C_{n,r}$ with $\|Mf\|_r \le C_{n,r} \|f\|_r$.
 
-The case $p = \infty$ is immediate; the case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(a) \gtrsim 1/a$ for large $a$, and $1/a \notin L^1$.
+The case $r = \infty$ is immediate; the case $1 < r < \infty$ follows from the weak $(1,1)$ estimate and the $L^\infty$ estimate by interpolation. The operator $M$ is not bounded on $L^1$: for $f = \mathbf{1}_{[0,1]}$ on $\mathbb{R}$ one has $Mf(a) \gtrsim 1/a$ for large $a$, and $1/a \notin L^1$.
 
 ### The Lebesgue Differentiation Theorem
 
@@ -265,14 +265,14 @@ A point where the conclusion holds is a **Lebesgue point** of $f$. The maximal f
 
 ### Definition
 
-The **Hilbert transform** of $f \in L^{n}(\mathbb{R})$, $1 \le p < \infty$, is the principal value integral
+The **Hilbert transform** of $f \in L^{r}(\mathbb{R})$, $1 \le r < \infty$, is the principal value integral
 
 $$
 Hf(a) = \frac{1}{\pi} \, \mathrm{p.v.} \int_{\mathbb{R}} \frac{f(a - t)}{t} \, dt
 = \frac{1}{\pi} \lim_{\epsilon \to 0} \int_{|t| > \epsilon} \frac{f(a - t)}{t} \, dt.
 $$
 
-The singular integral converges almost everywhere for $f$ in $L^{n}$, $1 \le p < \infty$, and in $L^2$ it converges in norm.
+The singular integral converges almost everywhere for $f$ in $L^{r}$, $1 \le r < \infty$, and in $L^2$ it converges in norm.
 
 ### The Fourier Multiplier
 
@@ -300,39 +300,39 @@ $$
 
 so $H$ is a skew-adjoint isometry of $L^2(\mathbb{R})$, the operator corresponding to the conjugate-function operator of Fourier series.
 
-**Boundedness on $L^{n}$.** The Hilbert transform is bounded on $L^{n}(\mathbb{R})$ for every $1 < p < \infty$: there is $C_p$ with $\|Hf\|_p \le C_p \|f\|_p$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.
+**Boundedness on $L^{r}$.** The Hilbert transform is bounded on $L^{r}(\mathbb{R})$ for every $1 < r < \infty$: there is $C_r$ with $\|Hf\|_r \le C_r \|f\|_r$ (the Riesz theorem for the conjugate function). It is not bounded on $L^1$ and not bounded on $L^\infty$.
 
-**Weak $(1,1)$.** For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^{n}$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^{n}$ bounds.
+**Weak $(1,1)$.** For $f \in L^1(\mathbb{R})$ there is $C$ with $|\{a : |Hf(a)| > \lambda\}| \le C \lambda^{-1} \|f\|_1$ (Kolmogorov). Together with the $L^2$ isometry this yields the $L^{r}$ bounds by interpolation. The truncated maximal Hilbert transform $H^* f = \sup_{\epsilon > 0} |H_\epsilon f|$ obeys the same weak $(1,1)$ and strong $L^{r}$ bounds.
 
-## Interpolation and $L^{n}$ Theory
+## Interpolation and $L^{r}$ Theory
 
 ### The Riesz–Thorin Theorem
 
-**Theorem (Riesz–Thorin).** Let $1 \le p_0, p_1, q_0, q_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{n}_0}$ to $L^{m}_0}$ with norm $M_0$ and from $L^{n}_1}$ to $L^{m}_1}$ with norm $M_1$. For $0 < \theta < 1$ define
+**Theorem (Riesz–Thorin).** Let $1 \le r_0, r_1, s_0, s_1 \le \infty$ and let $T$ be a linear operator bounded from $L^{r_0}$ to $L^{s_0}$ with norm $M_0$ and from $L^{r_1}$ to $L^{s_1}$ with norm $M_1$. For $0 < \theta < 1$ define
 
 $$
-\frac{1}{p} = \frac{1 - \theta}{p_0} + \frac{\theta}{p_1}, \qquad \frac{1}{q} = \frac{1 - \theta}{q_0} + \frac{\theta}{q_1}.
+\frac{1}{r} = \frac{1 - \theta}{r_0} + \frac{\theta}{r_1}, \qquad \frac{1}{s} = \frac{1 - \theta}{s_0} + \frac{\theta}{s_1}.
 $$
 
-Then $T$ is bounded from $L^{n}$ to $L^{m}$ with norm at most $M_0^{1 - \theta} M_1^{\theta}$.
+Then $T$ is bounded from $L^{r}$ to $L^{s}$ with norm at most $M_0^{1 - \theta} M_1^{\theta}$.
 
 The conclusion holds for sublinear operators as well; the extension of the theorem to sublinear operators is standard.
 
 ### The Hausdorff–Young Theorem
 
-**Theorem (Hausdorff–Young).** Let $1 \le p \le 2$ and let $q$ be the conjugate exponent, $\frac{1}{p} + \frac{1}{q} = 1$. If $f \in L^{n}(\mathbb{R}^n)$, then $\mathcal F f \in L^{m}(\mathbb{R}^n)$ and
+**Theorem (Hausdorff–Young).** Let $1 \le r \le 2$ and let $s$ be the conjugate exponent, $\frac{1}{r} + \frac{1}{s} = 1$. If $f \in L^{r}(\mathbb{R}^n)$, then $\mathcal F f \in L^{s}(\mathbb{R}^n)$ and
 
 $$
-\|\mathcal F f\|_q \le \|f\|_p.
+\|\mathcal F f\|_s \le \|f\|_r.
 $$
 
-**Proof.** The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(p_0, q_0) = (1, \infty)$ and $(p_1, q_1) = (2, 2)$ gives the result.
+**Proof.** The transform is bounded $L^1 \to L^\infty$ with norm $1$ and $L^2 \to L^2$ with norm $1$ by Plancherel. Riesz–Thorin interpolation between $(r_0, s_0) = (1, \infty)$ and $(r_1, s_1) = (2, 2)$ gives the result.
 
-The endpoints are sharp: at $p = 1$ the transform is bounded but need not be integrable, and at $p = 2$ it is an isometry. For $p > 2$ the inequality fails, because the Fourier transform of an $L^{n}$ function need not lie in $L^{m}$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.
+The endpoints are sharp: at $r = 1$ the transform is bounded but need not be integrable, and at $r = 2$ it is an isometry. For $r > 2$ the inequality fails, because the Fourier transform of an $L^{r}$ function need not lie in $L^{s}$; the defining integral need not converge absolutely, so the transform is taken in the distributional sense.
 
 ### The Marcinkiewicz Interpolation Theorem
 
-**Theorem (Marcinkiewicz).** Let $T$ be a sublinear operator of weak type $(p_0, p_0)$ and weak type $(p_1, p_1)$, where $1 \le p_0 < p_1 \le \infty$. Then $T$ is of strong type $(p, p)$ for every $p_0 < p < p_1$. This is the distribution-function form of interpolation; it produces the $L^{n}$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.
+**Theorem (Marcinkiewicz).** Let $T$ be a sublinear operator of weak type $(r_0, r_0)$ and weak type $(r_1, r_1)$, where $1 \le r_0 < r_1 \le \infty$. Then $T$ is of strong type $(r, r)$ for every $r_0 < r < r_1$. This is the distribution-function form of interpolation; it produces the $L^{r}$ bounds for the Hilbert transform and the maximal function from their weak endpoint estimates.
 
 ## Littlewood–Paley Theory
 
@@ -348,23 +348,23 @@ $$
 S f(a) = \left( \sum_{j \in \mathbb{Z}} |\Delta_j f(a)|^2 \right)^{\!1/2}.
 $$
 
-**Theorem (Littlewood–Paley).** For $1 < p < \infty$ there are constants depending only on $n$, $p$, and $\psi$ such that
+**Theorem (Littlewood–Paley).** For $1 < r < \infty$ there are constants depending only on $n$, $r$, and $\psi$ such that
 
 $$
-c_{n,p} \|f\|_p \le \|S f\|_p \le C_{n,p} \|f\|_p.
+c_{n,r} \|f\|_r \le \|S f\|_r \le C_{n,r} \|f\|_r.
 $$
 
-For $p = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\xi)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
+For $r = 2$ the two-sided bound follows from Plancherel: because at most finitely many annuli overlap at each frequency and their multipliers sum to $1$, the quantity $\sum_j |\hat{\psi}(2^{-j}\xi)|^2$ is bounded above and below on $\mathbb{R}^n \setminus \{0\}$.
 
 ### Bernstein Inequalities
 
-**Theorem (Bernstein).** Suppose the Fourier transform of $f$ is supported in $\{|\xi| \le R\}$. Then for every multi-index $\alpha$ and all $1 \le p \le q \le \infty$,
+**Theorem (Bernstein).** Suppose the Fourier transform of $f$ is supported in $\{|\xi| \le R\}$. Then for every multi-index $\alpha$ and all $1 \le r \le s \le \infty$,
 
 $$
-\|\partial^\alpha f\|_q \le C R^{|\alpha| + n(1/p - 1/q)} \|f\|_p,
+\|\partial^\alpha f\|_s \le C R^{|\alpha| + n(1/r - 1/s)} \|f\|_r,
 $$
 
-with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\xi| \le 2R\}$, then $\|\partial^\alpha f\|_p \ge c R^{|\alpha|} \|f\|_p$ for a constant $c > 0$ independent of $R$ and $f$.
+with $C$ independent of $R$ and $f$. Conversely, if the support lies in $\{R/2 \le |\xi| \le 2R\}$, then $\|\partial^\alpha f\|_r \ge c R^{|\alpha|} \|f\|_r$ for a constant $c > 0$ independent of $R$ and $f$.
 
 These inequalities are the mechanism by which Littlewood–Paley theory converts frequency localization into size estimates; they underlie multiplier theorems and Sobolev embedding.
 
@@ -372,17 +372,17 @@ These inequalities are the mechanism by which Littlewood–Paley theory converts
 
 ### Definition
 
-For an integer $k \ge 0$ and $1 \le p \le \infty$, the **Sobolev space** $W^{k,n}(\mathbb{R}^n)$ is the set of $f \in L^{n}(\mathbb{R}^n)$ whose distributional derivatives $\partial^\alpha f$ of order $|\alpha| \le k$ all lie in $L^{n}$, with
+For an integer $k \ge 0$ and $1 \le r \le \infty$, the **Sobolev space** $W^{k,r}(\mathbb{R}^n)$ is the set of $f \in L^{r}(\mathbb{R}^n)$ whose distributional derivatives $\partial^\alpha f$ of order $|\alpha| \le k$ all lie in $L^{r}$, with
 
 $$
-\|f\|_{W^{k,n}} = \left( \sum_{|\alpha| \le k} \|\partial^\alpha f\|_p^p \right)^{\!1/p}
+\|f\|_{W^{k,r}} = \left( \sum_{|\alpha| \le k} \|\partial^\alpha f\|_r^r \right)^{\!1/r}
 $$
 
-for $p < \infty$, and the corresponding supremum for $p = \infty$.
+for $r < \infty$, and the corresponding supremum for $r = \infty$.
 
 ### Characterization by the Fourier Transform
 
-For $p = 2$ the Fourier transform gives a complete description. For real $s$, the **Sobolev space** $H^s(\mathbb{R}^n)$ is the set of tempered distributions $f$ with
+For $r = 2$ the Fourier transform gives a complete description. For real $s$, the **Sobolev space** $H^s(\mathbb{R}^n)$ is the set of tempered distributions $f$ with
 
 $$
 \|f\|_{H^s}^2 = \int_{\mathbb{R}^n} (1 + |\xi|^2)^s \, |(\mathcal F f)(\xi)|^2 \, d\xi < \infty.
@@ -390,11 +390,11 @@ $$
 
 **Theorem.** For every real $s$, $H^s(\mathbb{R}^n)$ is a Hilbert space under the inner product $\langle f, g \rangle_{H^s} = \int (1 + |\xi|^2)^s (\mathcal F f)(\xi) \overline{(\mathcal F g)(\xi)} d\xi$, and the Fourier transform is a unitary isomorphism onto $L^2(\mathbb{R}^n, (1 + |\xi|^2)^s d\xi)$. For $s = k$ a non-negative integer, $H^k(\mathbb{R}^n) = W^{k,2}(\mathbb{R}^n)$ with equivalent norms.
 
-The **homogeneous** Sobolev space $\dot{H}^s$ uses the seminorm $\|f\|_{\dot{H}^s}^2 = \int |\xi|^{2s} |(\mathcal F f)(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.
+The **homogeneous** Sobolev space $\mathring{H}^s$ uses the seminorm $\|f\|_{\mathring{H}^s}^2 = \int |\xi|^{2s} |(\mathcal F f)(\xi)|^2 d\xi$, and $\partial^\alpha : H^s \to H^{s - |\alpha|}$ is bounded for all real $s$.
 
 ### Sobolev Embedding
 
-**Theorem (Sobolev embedding).** Let $k \ge 1$ and $1 \le p < \infty$. If $k < n/p$, then $W^{k,n}(\mathbb{R}^n) \subset L^{m}(\mathbb{R}^n)$ continuously for $\frac{1}{q} = \frac{1}{p} - \frac{k}{n}$. If $k = n/p$, then $W^{k,n}(\mathbb{R}^n) \subset L^{m}(\mathbb{R}^n)$ for every $p \le q < \infty$. If $k > n/p$, then $W^{k,n}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/p$, after modification on a null set.
+**Theorem (Sobolev embedding).** Let $k \ge 1$ and $1 \le r < \infty$. If $k < n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ continuously for $\frac{1}{s} = \frac{1}{r} - \frac{k}{n}$. If $k = n/r$, then $W^{k,r}(\mathbb{R}^n) \subset L^{s}(\mathbb{R}^n)$ for every $r \le s < \infty$. If $k > n/r$, then $W^{k,r}(\mathbb{R}^n) \subset C^m(\mathbb{R}^n)$ for $m < k - n/r$, after modification on a null set.
 
 **Theorem.** If $s > n/2$, then every class in $H^s(\mathbb{R}^n)$ has a representative in $C_0(\mathbb{R}^n)$, and $\|f\|_\infty \le C_{n,s} \|f\|_{H^s}$.
 
@@ -404,9 +404,9 @@ The **homogeneous** Sobolev space $\dot{H}^s$ uses the seminorm $\|f\|_{\dot{H}^
 
 For $0 < \alpha < n$ the **Riesz potential** of order $\alpha$ is the operator $\widehat{I_\alpha f}(\xi) = |\xi|^{-\alpha} (\mathcal F f)(\xi)$, the fractional integral $(-\Delta)^{-\alpha/2}$ up to a constant.
 
-**Theorem (Hardy–Littlewood–Sobolev).** If $0 < \alpha < n$, $1 < p < q < \infty$, and $\frac{1}{q} = \frac{1}{p} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_q \le C_{n, \alpha, p} \|f\|_p$.
+**Theorem (Hardy–Littlewood–Sobolev).** If $0 < \alpha < n$, $1 < r < s < \infty$, and $\frac{1}{s} = \frac{1}{r} - \frac{\alpha}{n}$, then $\|I_\alpha f\|_s \le C_{n, \alpha, r} \|f\|_r$.
 
-The Riesz potential saturates the Sobolev embedding: it maps $L^{n}$ into $L^{m}$ in exactly the range dictated by a gain of $\alpha$ derivatives.
+The Riesz potential saturates the Sobolev embedding: it maps $L^{r}$ into $L^{s}$ in exactly the range dictated by a gain of $\alpha$ derivatives.
 
 ## The Uncertainty Principle
 
@@ -447,7 +447,7 @@ These statements are the qualitative counterparts of the Heisenberg inequality: 
 
 Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $(\mathcal F f)(\xi) = \int_{\mathbb{R}} f(a)\exp(-2\pi i\xi a)\,da$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
 
-Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^{n}$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.
+Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^{r}$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.
 
 The remaining sections take up the finer structure of the subject: the Littlewood–Paley decomposition, the Sobolev spaces and their role in regularity, and the uncertainty principle in its Heisenberg form, which bounds a function and its transform simultaneously.
 
@@ -469,7 +469,7 @@ The remaining sections take up the finer structure of the subject: the Littlewoo
 | $Hf$ | Hilbert transform |
 | $S f$ | Littlewood–Paley square function |
 | $\Delta_j$ | Littlewood–Paley frequency projection |
-| $W^{k,n}(\mathbb{R}^n)$ | Sobolev space, integer order |
+| $W^{k,r}(\mathbb{R}^n)$ | Sobolev space, integer order |
 | $H^s(\mathbb{R}^n)$ | Sobolev space, real order |
 | $I_\alpha$ | Riesz potential |
 

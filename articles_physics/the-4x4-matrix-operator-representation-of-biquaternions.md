@@ -4,9 +4,9 @@
 
 Physically this is the statement, already made in the element article, that the Lorentz transformation of a four-vector is a product of a left multiplication and a right multiplication in the algebra; what is added here is that the product is a matrix whose invariants are real and non-negative, so that the transformation the algebra performs is measured by two scalars.
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_0 = 1, e_1, e_2, e_3$, where $e_k^2 = -e_0$ and $e_1e_2 = e_3$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$. The left and right regular representations $\mathsf{M}_4, \mathsf{M}_4^{R}$ of $\mathbb{B}$ on itself, in the coefficient basis $e_0, e_1, e_2, e_3$, are those of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the four-dimensional complex algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, where $\vec e_k^2 = -e_t$ and $\vec e_x \vec e_y = \vec e_z$, with central scalar imaginary $i$, and with general element $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$. The left and right regular representations $\mathsf{M}_4, \mathsf{M}_4^{R}$ of $\mathbb{B}$ on itself, in the coefficient basis $e_t, \vec e_x, \vec e_y, \vec e_z$, are those of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
-That article writes an element by *one* of its two multiplications, and finds the matrix of left multiplication, $\mathsf{M}_4^{L}(\tilde{Q})$, with $\det\mathsf{M}_4^{L}(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^{2}$ and $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 4Q_0$. This article writes the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* in the same basis,
+That article writes an element by *one* of its two multiplications, and finds the matrix of left multiplication, $\mathsf{M}_4^{L}(\tilde{Q})$, with $\det\mathsf{M}_4^{L}(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^{2}$ and $\operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 4Q_t$. This article writes the Hermitian sandwich of *Biquaternion Rotations and Lorentz Transformations* in the same basis,
 
 $$
 \operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\,\tilde S\,\tilde{Q}^{*}.
@@ -22,26 +22,26 @@ and each such map is fixed by its values on the basis of the operand, the rest f
 
 The first result is that the sandwich needs **both** multiplications at once: it is the left multiplication by $\tilde{Q}$ composed with the right multiplication by $\tilde{Q}^{*}$. The operator is therefore a product of two matrices already in the corpus, and everything about it — the closed form, the determinant, the trace, the spectrum, the rank — is read from that product.
 
-The article owns the composition identity, the closed form of the operator matrix in the coefficient basis, the spectrum $\lambda_i\bar{\lambda}_j$ with the determinant $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$ and the trace $4\lvert Q_0\rvert^{2}$ read off it, the real $8 \times 8$ form, and the separation of the two regimes at matrix level. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; the congruence picture in the matrix algebra and the module side belong to other coordinate systems and are not repeated here. The spectral theory of the *element* matrix $\mathsf{M}_4^{L}(\tilde{Q})$ — eigenvalues, Cayley–Hamilton, eigenspaces — is *Biquaternion Spectral Theory* and is not repeated here, although the operator's spectrum is stated below because it is a different matrix.
+The article owns the composition identity, the closed form of the operator matrix in the coefficient basis, the spectrum $\lambda_i\bar{\lambda}_j$ with the determinant $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$ and the trace $4\lvert Q_t\rvert^{2}$ read off it, the real $8 \times 8$ form, and the separation of the two regimes at matrix level. The component computation of the same operator is *The Four-Vector Operator Representation of Biquaternions*; the congruence picture in the matrix algebra and the module side belong to other coordinate systems and are not repeated here. The spectral theory of the *element* matrix $\mathsf{M}_4^{L}(\tilde{Q})$ — eigenvalues, Cayley–Hamilton, eigenspaces — is *Biquaternion Spectral Theory* and is not repeated here, although the operator's spectrum is stated below because it is a different matrix.
 
-**Conventions.** The regular matrices in the basis $e_0, e_1, e_2, e_3$ are
+**Conventions.** The regular matrices in the basis $e_t, \vec e_x, \vec e_y, \vec e_z$ are
 
 $$
 \mathsf{M}_4^{L}(\tilde{Q}) = \begin{pmatrix}
-Q_0 & -Q_1 & -Q_2 & -Q_3 \\
-Q_1 & Q_0 & -Q_3 & Q_2 \\
-Q_2 & Q_3 & Q_0 & -Q_1 \\
-Q_3 & -Q_2 & Q_1 & Q_0
+Q_t & -Q_x & -Q_y & -Q_z \\
+Q_x & Q_t & -Q_z & Q_y \\
+Q_y & Q_z & Q_t & -Q_x \\
+Q_z & -Q_y & Q_x & Q_t
 \end{pmatrix}, \qquad
 \mathsf{M}_4^{R}(\tilde{Q}) = \begin{pmatrix}
-Q_0 & -Q_1 & -Q_2 & -Q_3 \\
-Q_1 & Q_0 & Q_3 & -Q_2 \\
-Q_2 & -Q_3 & Q_0 & Q_1 \\
-Q_3 & Q_2 & -Q_1 & Q_0
+Q_t & -Q_x & -Q_y & -Q_z \\
+Q_x & Q_t & Q_z & -Q_y \\
+Q_y & -Q_z & Q_t & Q_x \\
+Q_z & Q_y & -Q_x & Q_t
 \end{pmatrix},
 $$
 
-with $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf T}D$ and $D = \operatorname{diag}(-1,1,1,1)$. Only the coefficient basis is used here, as in the element article; the basis elements are the four coefficient directions of the four-vector article, so the four columns of the operator below are attached to $e_0$, the vector directions, and the composite directions.
+with $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf T}D$ and $D = \operatorname{diag}(-1,1,1,1)$. Only the coefficient basis is used here, as in the element article; the basis elements are the four coefficient directions of the four-vector article, so the four columns of the operator below are attached to $e_t$, the vector directions, and the composite directions.
 
 ## The Operator Is a Product of the Two Regular Matrices
 
@@ -69,7 +69,7 @@ $$
 
 the conjugate transpose of the regular matrix.
 
-**Proof.** Both sides are conjugate-linear in $\tilde{Q}$, so it suffices to check the eight real basis elements. On $e_0$ both sides are $I$; on $ie_0$ both are $-iI$; on $e_k$ the left side is $-\mathsf{M}_4(e_k)$, whose columns are the products $-e_ke_j$, and the right side is $\mathsf{M}_4(e_k)^{\dagger} = \mathsf{M}_4(e_k)^{\mathsf T} = -\mathsf{M}_4(e_k)$, since left multiplication by a vector unit is skew-symmetric, as the products $e_ke_j$ read off the columns show; on $ie_k$ both sides are $i\mathsf{M}_4(e_k)$, the transpose identity being applied once more.
+**Proof.** Both sides are conjugate-linear in $\tilde{Q}$, so it suffices to check the eight real basis elements. On $e_t$ both sides are $I$; on $ie_t$ both are $-iI$; on $\vec e_k$ the left side is $-\mathsf{M}_4(\vec e_k)$, whose columns are the products $-\vec e_k e_j$, and the right side is $\mathsf{M}_4(\vec e_k)^{\dagger} = \mathsf{M}_4(\vec e_k)^{\mathsf T} = -\mathsf{M}_4(\vec e_k)$, since left multiplication by a vector unit is skew-symmetric, as the products $\vec e_k e_j$ read off the columns show; on $i\vec e_k$ both sides are $i\mathsf{M}_4(\vec e_k)$, the transpose identity being applied once more.
 
 **Corollary (closed form on the coefficient space).** Using $\mathsf{M}_4^{R}(\tilde{Q}^{*}) = D\mathsf{M}_4^{L}(\tilde{Q}^{*})^{\mathsf T}D$ and the lemma,
 
@@ -90,13 +90,13 @@ $$
 Consequently
 
 $$
-\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}, \qquad
+\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}, \qquad
 \det\operatorname{H}_{\tilde{Q}} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4} .
 $$
 
-**Proof.** Let $\mathsf{M}_4(\tilde{Q}) = P\,\mathrm{diag}(\lambda_1,\lambda_2)\,P^{-1}$. On the matrix side the operator is $X \mapsto \mathsf{M}_4(\tilde{Q})X\mathsf{M}_4(\tilde{Q})^{\dagger}$, and in the transformed variable $Y = P^{-1}X(P^{-1})^{\dagger}$ it acts as $Y \mapsto \mathrm{diag}(\lambda_1,\lambda_2)\,Y\,\mathrm{diag}(\bar{\lambda}_1,\bar{\lambda}_2)$, which multiplies the matrix unit $E_{ij}$ by $\lambda_i\bar{\lambda}_j$. The four matrix units are therefore eigenvectors. For the trace, $\sum_{ij}\lambda_i\bar{\lambda}_j = \bigl(\textstyle\sum_i\lambda_i\bigr)\bigl(\textstyle\sum_j\bar{\lambda}_j\bigr) = \lvert\lambda_1+\lambda_2\rvert^{2} = \lvert\operatorname{Tr}\mathsf{M}_4(\tilde{Q})\rvert^{2} = \lvert 2Q_0\rvert^{2}$, and $\operatorname{Tr}\mathsf{M}_4(\tilde{Q}) = 2Q_0$ is the trace statement of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. For the determinant, the four eigenvalues multiply to $\lvert\lambda_1\rvert^{2}\lvert\lambda_2\rvert^{2}\lvert\lambda_1\bar{\lambda}_2\rvert^{2}$, which simplifies to $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$; the identification $\lambda_1\lambda_2 = \det\mathsf{M}_4(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$ is the determinant statement of the same article.
+**Proof.** Let $\mathsf{M}_4(\tilde{Q}) = P\,\mathrm{diag}(\lambda_1,\lambda_2)\,P^{-1}$. On the matrix side the operator is $X \mapsto \mathsf{M}_4(\tilde{Q})X\mathsf{M}_4(\tilde{Q})^{\dagger}$, and in the transformed variable $Y = P^{-1}X(P^{-1})^{\dagger}$ it acts as $Y \mapsto \mathrm{diag}(\lambda_1,\lambda_2)\,Y\,\mathrm{diag}(\bar{\lambda}_1,\bar{\lambda}_2)$, which multiplies the matrix unit $E_{ij}$ by $\lambda_i\bar{\lambda}_j$. The four matrix units are therefore eigenvectors. For the trace, $\sum_{ij}\lambda_i\bar{\lambda}_j = \bigl(\textstyle\sum_i\lambda_i\bigr)\bigl(\textstyle\sum_j\bar{\lambda}_j\bigr) = \lvert\lambda_1+\lambda_2\rvert^{2} = \lvert\operatorname{Tr}\mathsf{M}_4(\tilde{Q})\rvert^{2} = \lvert 2Q_t\rvert^{2}$, and $\operatorname{Tr}\mathsf{M}_4(\tilde{Q}) = 2Q_t$ is the trace statement of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. For the determinant, the four eigenvalues multiply to $\lvert\lambda_1\rvert^{2}\lvert\lambda_2\rvert^{2}\lvert\lambda_1\bar{\lambda}_2\rvert^{2}$, which simplifies to $\lvert\lambda_1\lambda_2\rvert^{4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$; the identification $\lambda_1\lambda_2 = \det\mathsf{M}_4(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$ is the determinant statement of the same article.
 
-The two invariants are **real and non-negative for every operand**, and they are not the invariants of the element matrix: the element $\mathsf{M}_4^{L}(\tilde{Q})$ has determinant $\langle\tilde{Q}\rangle_{\natural}^{2}$, which is complex, and trace $4Q_0$, which is complex. The operator has thrown away the phase, exactly as the blindness to the phase of *Biquaternion Rotations and Lorentz Transformations* requires, and what remains is a modulus. The trace has a **physical interpretation**: it is four times the squared time coordinate of the operand, so the operator remembers the time component of the element that produces it and the squared modulus of everything else only through the determinant.
+The two invariants are **real and non-negative for every operand**, and they are not the invariants of the element matrix: the element $\mathsf{M}_4^{L}(\tilde{Q})$ has determinant $\langle\tilde{Q}\rangle_{\natural}^{2}$, which is complex, and trace $4Q_t$, which is complex. The operator has thrown away the phase, exactly as the blindness to the phase of *Biquaternion Rotations and Lorentz Transformations* requires, and what remains is a modulus. The trace has a **physical interpretation**: it is four times the squared time coordinate of the operand, so the operator remembers the time component of the element that produces it and the squared modulus of everything else only through the determinant.
 
 **Corollary (the operator is invertible exactly off the light cone).** $\operatorname{H}_{\tilde{Q}}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural} \neq 0$, and $\lvert\det\operatorname{H}_{\tilde{Q}}\rvert^{1/4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert$.
 
@@ -124,7 +124,7 @@ a product of one left and one right multiplication, both invertible.
 
 **Proof.** The rank statement is the rank theorem above; the invertibility is $\det\operatorname{H}_{\tilde{Q}} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4} \neq 0$; the preservation of rank is the elementary fact that a congruence by an invertible matrix has the same rank as its argument, and the invertibility of each factor follows from $\det\mathsf{M}_4^{L}(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}^{2} \neq 0$ and $\det\mathsf{M}_4^{R}(\tilde{Q}^{*}) = \langle\tilde{Q}^{*}\rangle_{\natural}^{2} = \overline{\langle\tilde{Q}\rangle_{\natural}}^{2} \neq 0$.
 
-**Example.** For $\tilde{Q} = e_0 + e_1$ one has $N = 2$ and
+**Example.** For $\tilde{Q} = e_t + \vec e_x$ one has $N = 2$ and
 
 $$
 \operatorname{H}_{\tilde{Q}} = \begin{pmatrix}
@@ -136,11 +136,11 @@ $$
 \qquad \operatorname{Tr} = 4 = 4\lvert 1\rvert^{2}, \qquad \det = 16 = \lvert 2\rvert^{4} = N^{4}.
 $$
 
-The trace and the determinant are real, in agreement with the theorem; the matrix itself is not Hermitian, and its eigenvalues are $\{2, 2, 2i, -2i\}$, which are the four general products $\lambda_i\bar{\lambda}_j$ of the eigenvalues $\lambda = 1 \pm i$ of $\mathsf{M}_4(e_0+e_1)$: $(1+i)(1-i) = 2$ twice, and $(1\pm i)^2 = \pm 2i$.
+The trace and the determinant are real, in agreement with the theorem; the matrix itself is not Hermitian, and its eigenvalues are $\{2, 2, 2i, -2i\}$, which are the four general products $\lambda_i\bar{\lambda}_j$ of the eigenvalues $\lambda = 1 \pm i$ of $\mathsf{M}_4(e_t+\vec e_x)$: $(1+i)(1-i) = 2$ twice, and $(1\pm i)^2 = \pm 2i$.
 
-**Example (a physical boost).** For the rotor $\tilde{Q} = \tfrac53e_0 + \tfrac43ie_3$ of *Biquaternion Rotations and Lorentz Transformations*, of norm one and of rapidity $\psi = 2\ln 3$, the matrix is $\mathsf{M}_4(\tilde{Q}) = \mathrm{diag}(3,\tfrac13)$, so the operator has the four eigenvalues $9, 1, 1, \tfrac19$, of determinant $1 = \lvert N\rvert^{4}$ and trace $\tfrac{100}{9} = 4(\tfrac53)^{2}$; the eigenvalue $9 = \exp(\psi)$ is the doubled rapidity, the operand having stored $3 = \exp(\psi/2)$.
+**Example (a physical boost).** For the rotor $\tilde{Q} = \tfrac53e_t + \tfrac43i\vec e_z$ of *Biquaternion Rotations and Lorentz Transformations*, of norm one and of rapidity $\psi = 2\ln 3$, the matrix is $\mathsf{M}_4(\tilde{Q}) = \mathrm{diag}(3,\tfrac13)$, so the operator has the four eigenvalues $9, 1, 1, \tfrac19$, of determinant $1 = \lvert N\rvert^{4}$ and trace $\tfrac{100}{9} = 4(\tfrac53)^{2}$; the eigenvalue $9 = \exp(\psi)$ is the doubled rapidity, the operand having stored $3 = \exp(\psi/2)$.
 
-**The operator group.** Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_0\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the remarkable subspaces and the orbits are *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
+**The operator group.** Restricted to the unit-norm slice, the set of operators is the image of $SL(2,\mathbb{C})$ and is the Lorentz group with kernel $\{\pm e_t\}$; over all units it is the set of dilated Lorentz transformations $\mathbb{R}_{>0} \times SO^{+}(1,3)$, and it has lost the phase circle. The geometric statement, the action on the remarkable subspaces and the orbits are *Biquaternion Rotations and Lorentz Transformations* and *The Sandwich Action in Subspaces*.
 
 ## The Case $\langle\tilde{Q}\rangle_{\natural} = 0$
 
@@ -149,14 +149,14 @@ On the light cone the two factors of the product are singular, and the operator 
 **Theorem (the singular case).** Let $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q} \neq 0$. Then $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$, and
 
 $$
-\operatorname{H}_{\tilde{Q}} \circ \operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\,\operatorname{H}_{\tilde{Q}} .
+\operatorname{H}_{\tilde{Q}} \circ \operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}\,\operatorname{H}_{\tilde{Q}} .
 $$
 
-The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_0 = 0$ the operator is nilpotent, $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_0 \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_0\rvert^{2}$ and is a scaled projection.
+The image is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, and its generator, normalised, is a minimal idempotent of $\mathbb{B}$. If $Q_t = 0$ the operator is nilpotent, $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 0$, so all four eigenvalues vanish; if $Q_t \neq 0$ the operator has the single nonzero eigenvalue $4\lvert Q_t\rvert^{2}$ and is a scaled projection.
 
-**Proof.** The rank is the rank theorem above; for the square, a rank-one endomorphism satisfies $T^{2} = (\operatorname{Tr}T)\,T$ and $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, so $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\operatorname{H}_{\tilde{Q}}$. For the eigenvalues: with $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_0\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_0 = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent.
+**Proof.** The rank is the rank theorem above; for the square, a rank-one endomorphism satisfies $T^{2} = (\operatorname{Tr}T)\,T$ and $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}$, so $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}\operatorname{H}_{\tilde{Q}}$. For the eigenvalues: with $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 1$ the operator is, after a change of basis, a single nonzero entry, hence its eigenvalues are $4\lvert Q_t\rvert^{2}$ once and $0$ three times, the trace being additive. When $Q_t = 0$ the trace vanishes and one eigenvalue of a rank-one operator is zero, so the operator is nilpotent.
 
-**Example (nilpotent).** For $\tilde{Q} = e_1 + ie_2$, a null operand with $Q_0 = 0$,
+**Example (nilpotent).** For $\tilde{Q} = \vec e_x + i\vec e_y$, a null operand with $Q_t = 0$,
 
 $$
 \operatorname{H}_{\tilde{Q}} = \begin{pmatrix}
@@ -167,9 +167,9 @@ $$
 \end{pmatrix}, \qquad \operatorname{rank} = 1, \qquad \operatorname{Tr} = 0, \qquad \det = 0 .
 $$
 
-The two middle columns vanish and the first and fourth are $\pm 2(e_0 + ie_3)$: the image is the line $\mathbb{C}\tilde\Pi_+$ with $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$, where $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents; and the matrix squares to zero. The four eigenvalues are all zero although the rank is one, which is the sharp statement that a null operator is not diagonalisable: the collapse is not a change of eigenvalue but a loss of rank.
+The two middle columns vanish and the first and fourth are $\pm 2(e_t + i\vec e_z)$: the image is the line $\mathbb{C}\tilde\Pi_+$ with $\tilde\Pi_+ = \tfrac12(e_t+i\vec e_z)$, where $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_- = \tfrac12(e_t-i\vec e_z)$ are its associated idempotents; and the matrix squares to zero. The four eigenvalues are all zero although the rank is one, which is the sharp statement that a null operator is not diagonalisable: the collapse is not a change of eigenvalue but a loss of rank.
 
-**Example (projection).** For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_-$, a null operand with $Q_0 = \tfrac12$,
+**Example (projection).** For $\tilde{Q} = \tfrac12(e_t - i\vec e_z) = \tilde\Pi_-$, a null operand with $Q_t = \tfrac12$,
 
 $$
 \operatorname{H}_{\tilde{Q}} = \begin{pmatrix}
@@ -182,7 +182,7 @@ $$
 
 The first column is $\tilde\Pi_-$ and the fourth is $i\tilde\Pi_-$; the single nonzero eigenvalue of the operator is $1 = 4\lvert\tfrac12\rvert^{2}$, so the operator is exactly the projection onto its own image line.
 
-The contrast between the two examples is the whole content of the two regimes at matrix level: both operators have rank one and determinant zero, both send the whole coefficient space onto one line, and they are separated by the single real number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, which vanishes exactly when the collapse is nilpotent. In the invertible case the determinant is $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4} \neq 0$ and no collapse occurs at all.
+The contrast between the two examples is the whole content of the two regimes at matrix level: both operators have rank one and determinant zero, both send the whole coefficient space onto one line, and they are separated by the single real number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}$, which vanishes exactly when the collapse is nilpotent. In the invertible case the determinant is $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4} \neq 0$ and no collapse occurs at all.
 
 Physically, off the light cone the operand is a legitimate frame change and the operator is invertible; on the light cone the operand is a null direction and its operator is singular, able to create nothing but a single lightlike Hermitian line, so a null element generates no motion. This is the operator form of the identification of the light cone with the zero-divisor locus of the algebra, whose causal use is *Biquaternion Rotations and Lorentz Transformations*.
 
@@ -190,16 +190,16 @@ Physically, off the light cone the operand is a legitimate frame change and the 
 
 ## The Real $8 \times 8$ Form
 
-Regarded over $\mathbb{R}$ in the basis $e_0, e_1, e_2, e_3, ie_0, ie_1, ie_2, ie_3$, the operator is real-linear and is an $8 \times 8$ real matrix; the element article performs the same realification for $\mathsf{M}_4$. The eight coordinates are the eight real parameters of the framework, so in this form the operator is the transformation of the material and informational four-vectors written as one real linear map.
+Regarded over $\mathbb{R}$ in the basis $e_t, \vec e_x, \vec e_y, \vec e_z, ie_t, i\vec e_x, i\vec e_y, i\vec e_z$, the operator is real-linear and is an $8 \times 8$ real matrix; the element article performs the same realification for $\mathsf{M}_4$. The eight coordinates are the eight real parameters of the framework, so in this form the operator is the transformation of the material and informational four-vectors written as one real linear map.
 
 **Proposition (the realified operator).** The realification of $\operatorname{H}_{\tilde{Q}}$ satisfies
 
 $$
 \det_{\mathbb{R}}\bigl(\operatorname{H}_{\tilde{Q}}\bigr) = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{8}, \qquad
-\operatorname{Tr}_{\mathbb{R}}\bigl(\operatorname{H}_{\tilde{Q}}\bigr) = 8\lvert Q_0\rvert^{2} .
+\operatorname{Tr}_{\mathbb{R}}\bigl(\operatorname{H}_{\tilde{Q}}\bigr) = 8\lvert Q_t\rvert^{2} .
 $$
 
-**Proof.** Realification replaces each complex eigenvalue $\lambda$ of a complex-linear endomorphism by the pair $\lambda, \bar{\lambda}$; the four eigenvalues $\lambda_i\bar{\lambda}_j$ have modulus $\lvert\lambda_i\rvert\lvert\lambda_j\rvert$, each of which is already real, so the eigenvalues occur in conjugate pairs of equal modulus and the real determinant is the square of the complex one, $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{8}$. The real trace is twice the real part of the complex trace, and $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ is real, hence $8\lvert Q_0\rvert^{2}$.
+**Proof.** Realification replaces each complex eigenvalue $\lambda$ of a complex-linear endomorphism by the pair $\lambda, \bar{\lambda}$; the four eigenvalues $\lambda_i\bar{\lambda}_j$ have modulus $\lvert\lambda_i\rvert\lvert\lambda_j\rvert$, each of which is already real, so the eigenvalues occur in conjugate pairs of equal modulus and the real determinant is the square of the complex one, $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{8}$. The real trace is twice the real part of the complex trace, and $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}$ is real, hence $8\lvert Q_t\rvert^{2}$.
 
 The dimension doubles for the same reason as in the element article: $\mathbb{B}$ is a complex space regarded as a real one by restriction of scalars, and each complex coordinate becomes two real ones. The doubling changes the exponents — $4 \to 8$ on the determinant, the factor $2$ on the trace — and nothing else.
 
@@ -211,15 +211,15 @@ The operator reads as a process written as a product of two regular maps, and th
 
 The sandwich of an element is a product of the two regular matrices: $\operatorname{H}_{\tilde{Q}} = \mathsf{M}_4^{L}(\tilde{Q})\mathsf{M}_4^{R}(\tilde{Q}^{*})$, the left multiplication by the operand composed with the right multiplication by its Hermitian conjugate, which in the coefficient basis is the matrix $\mathsf{M}_4^{L}(\tilde{Q})\,D\,\mathsf{M}_4^{L}(\tilde{Q})^{*}\,D$ with $D = \operatorname{diag}(-1,1,1,1)$. Every entry is sesquilinear in the coefficients, so the operator is quadratic in the operand and linear in the argument. It is a congruence and not a similarity, which is the matrix-level reason it is not multiplicative, and physically it is the product of the two chiral multiplications by which the corpus writes a Lorentz transformation.
 
-Its invariants are real and non-negative in every case. When $\mathsf{M}_4(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1, \lambda_2$, the operator is diagonalisable with eigenvalues the four general products $\lambda_i\bar{\lambda}_j$; hence $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = \lvert\lambda_1+\lambda_2\rvert^{2} = 4\lvert Q_0\rvert^{2}$ and $\det\operatorname{H}_{\tilde{Q}} = \lvert\lambda_1\lambda_2\rvert^{4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$. Over $\mathbb{R}$ the operator is $8 \times 8$ with determinant $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{8}$ and trace $8\lvert Q_0\rvert^{2}$. For the boost rotor $\tfrac53e_0 + \tfrac43ie_3$ the four eigenvalues are $9, 1, 1, \tfrac19$, and the eigenvalue $9$ is the doubled rapidity of the motion.
+Its invariants are real and non-negative in every case. When $\mathsf{M}_4(\tilde{Q})$ is diagonalisable with eigenvalues $\lambda_1, \lambda_2$, the operator is diagonalisable with eigenvalues the four general products $\lambda_i\bar{\lambda}_j$; hence $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = \lvert\lambda_1+\lambda_2\rvert^{2} = 4\lvert Q_t\rvert^{2}$ and $\det\operatorname{H}_{\tilde{Q}} = \lvert\lambda_1\lambda_2\rvert^{4} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$. Over $\mathbb{R}$ the operator is $8 \times 8$ with determinant $\lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{8}$ and trace $8\lvert Q_t\rvert^{2}$. For the boost rotor $\tfrac53e_t + \tfrac43i\vec e_z$ the four eigenvalues are $9, 1, 1, \tfrac19$, and the eigenvalue $9$ is the doubled rapidity of the motion.
 
-The two regimes are separated by the vanishing of those invariants. Off the light cone the determinant is nonzero, the operator lies in $GL(4,\mathbb{C})$, it is the product of two invertible regular matrices, and it preserves rank; on the unit-norm slice it is the Lorentz group. On the cone the operator has rank one, its image is the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent, and it satisfies $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\operatorname{H}_{\tilde{Q}}$. The single number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$ then separates the two faces of the collapse: it vanishes for $\tilde{Q} = e_1+ie_2$, where all four eigenvalues are zero and the operator is nilpotent, and equals $1$ for $\tilde{Q} = \tfrac12(e_0-ie_3)$, where the operator is the projection onto the idempotent that generates its image.
+The two regimes are separated by the vanishing of those invariants. Off the light cone the determinant is nonzero, the operator lies in $GL(4,\mathbb{C})$, it is the product of two invertible regular matrices, and it preserves rank; on the unit-norm slice it is the Lorentz group. On the cone the operator has rank one, its image is the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent, and it satisfies $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}\operatorname{H}_{\tilde{Q}}$. The single number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}$ then separates the two faces of the collapse: it vanishes for $\tilde{Q} = \vec e_x+i\vec e_y$, where all four eigenvalues are zero and the operator is nilpotent, and equals $1$ for $\tilde{Q} = \tfrac12(e_t-i\vec e_z)$, where the operator is the projection onto the idempotent that generates its image.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathsf{M}_4^{L}(\tilde{Q}), \mathsf{M}_4^{R}(\tilde{Q})$ | left and right regular matrices in the basis $e_0,e_1,e_2,e_3$ |
+| $\mathsf{M}_4^{L}(\tilde{Q}), \mathsf{M}_4^{R}(\tilde{Q})$ | left and right regular matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 | $D = \operatorname{diag}(-1,1,1,1)$ | fixed sign matrix, $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf T}D$ |
 | $\mathsf{M}_4^{L}(\tilde{Q}^{*}) = \mathsf{M}_4^{L}(\tilde{Q})^{\dagger}$ | the regular matrix respects the dagger |
 | $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ | the Hermitian sandwich, the operator of the operand |
@@ -227,11 +227,11 @@ The two regimes are separated by the vanishing of those invariants. Off the ligh
 | $\operatorname{H}_{\tilde{Q}} = \mathsf{M}_4^{L}(\tilde{Q})D\mathsf{M}_4^{L}(\tilde{Q})^{*}D$ | closed form in the coefficient basis |
 | $\lambda_1,\lambda_2$ | eigenvalues of $\mathsf{M}_4(\tilde{Q})$ |
 | $\lambda_i\bar{\lambda}_j$ | eigenvalues of $\operatorname{H}_{\tilde{Q}}$ when $\mathsf{M}_4(\tilde{Q})$ is diagonalisable |
-| $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2} = \lvert\operatorname{Tr}\mathsf{M}_4(\tilde{Q})\rvert^{2}$ | trace of the operator, always real |
+| $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2} = \lvert\operatorname{Tr}\mathsf{M}_4(\tilde{Q})\rvert^{2}$ | trace of the operator, always real |
 | $\det\operatorname{H}_{\tilde{Q}} = \lvert \langle\tilde{Q}\rangle_{\natural}\rvert^{4}$ | determinant of the operator; nonzero exactly off the cone |
 | $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = 4$ or $1$ | off the light cone, and on it |
-| $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}\operatorname{H}_{\tilde{Q}}$, $N = 0$ | nilpotent if $Q_0 = 0$, projection up to scale otherwise |
-| $\det_{\mathbb{R}} = \lvert N\rvert^{8}$, $\operatorname{Tr}_{\mathbb{R}} = 8\lvert Q_0\rvert^{2}$ | the real $8\times8$ form |
+| $\operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{Q}} = 4\lvert Q_t\rvert^{2}\operatorname{H}_{\tilde{Q}}$, $N = 0$ | nilpotent if $Q_t = 0$, projection up to scale otherwise |
+| $\det_{\mathbb{R}} = \lvert N\rvert^{8}$, $\operatorname{Tr}_{\mathbb{R}} = 8\lvert Q_t\rvert^{2}$ | the real $8\times8$ form |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

@@ -15,9 +15,9 @@ The prerequisites are *Convex Analysis* in this category, which supplies the sub
 
 ### Lipschitz Functions and Rademacher's Theorem
 
-**Definition.** A function $f:\mathbb{R}^n\to\mathbb{R}$ is **locally Lipschitz** at $x$ if there are a neighbourhood $U$ of $x$ and $L\geq0$ with $\lvert f(u)-f(b)\rvert\leq L\lvert u-b\rvert$ for all $u,b\in U$. The **one-sided directional derivative** is $f'(x;d) = \lim_{t\downarrow0}t^{-1}(f(x+td)-f(x))$ when the limit exists.
+**Definition.** A function $f:\mathbb{R}^n\to\mathbb{R}$ is **locally Lipschitz** at $x$ if there are a neighbourhood $\Xi$ of $x$ and $L\geq0$ with $\lvert f(u)-f(b)\rvert\leq L\lvert u-b\rvert$ for all $u,b\in \Xi$. The **one-sided directional derivative** is $f'(x;d) = \lim_{t\downarrow0}t^{-1}(f(x+td)-f(x))$ when the limit exists.
 
-**Theorem (Rademacher).** A function that is locally Lipschitz on an open set $U\subseteq\mathbb{R}^n$ is differentiable at almost every point of $U$, and its gradient there is locally bounded; for every $x\in U$ and every direction $d$ the difference quotients $t^{-1}(f(x+td)-f(x))$, $0<t<t_0$, are bounded by the Lipschitz constant, so the upper one-sided derivative $\limsup_{t\downarrow0}t^{-1}(f(x+td)-f(x))$ is finite, and the one-sided derivative $f'(x;d)$ exists exactly when that upper derivative equals the corresponding lower one.
+**Theorem (Rademacher).** A function that is locally Lipschitz on an open set $\Xi\subseteq\mathbb{R}^n$ is differentiable at almost every point of $\Xi$, and its gradient there is locally bounded; for every $x\in \Xi$ and every direction $d$ the difference quotients $t^{-1}(f(x+td)-f(x))$, $0<t<t_0$, are bounded by the Lipschitz constant, so the upper one-sided derivative $\limsup_{t\downarrow0}t^{-1}(f(x+td)-f(x))$ is finite, and the one-sided derivative $f'(x;d)$ exists exactly when that upper derivative equals the corresponding lower one.
 
 **Proof sketch.** The one-dimensional case is the theorem that a monotone function is differentiable almost everywhere, applied to the restriction of $f$ to each line; the $n$-dimensional case follows from the one-dimensional one by averaging over the directions of a finite set spanning $\mathbb{R}^n$ and using the Lipschitz bound to control the difference between the directional quotients of the various directions.
 
@@ -101,9 +101,9 @@ In particular every lower semicontinuous functional bounded below on a complete 
 
 ### Metric Regularity and the Lyusternik–Graves Theorem
 
-**Definition.** A set-valued map $F:\mathbb{R}^n\rightrightarrows\mathbb{R}^m$ is **metrically regular** around $(\bar x,\bar y)\in\operatorname{gph}F$ if there is $\kappa>0$ and a neighbourhood $U$ of $(\bar x,\bar y)$ with
+**Definition.** A set-valued map $F:\mathbb{R}^n\rightrightarrows\mathbb{R}^m$ is **metrically regular** around $(\bar x,\bar y)\in\operatorname{gph}F$ if there is $\kappa>0$ and a neighbourhood $\Xi$ of $(\bar x,\bar y)$ with
 $$
-\operatorname{dist}\bigl(x,F^{-1}(y)\bigr)\leq\kappa\,\operatorname{dist}\bigl(y,F(x)\bigr)\qquad\text{for all } (x,y)\in U .
+\operatorname{dist}\bigl(x,F^{-1}(y)\bigr)\leq\kappa\,\operatorname{dist}\bigl(y,F(x)\bigr)\qquad\text{for all } (x,y)\in \Xi .
 $$
 **Theorem (Lyusternik–Graves; the inverse function theorem).** If $F$ is single-valued and strictly differentiable at $\bar x$ with surjective derivative $\nabla F(\bar x)$, then $F$ is metrically regular around $(\bar x,F(\bar x))$; consequently the inverse map is locally single-valued, Lipschitz and defined on a neighbourhood of $F(\bar x)$. More generally, for a set-valued $F$ with closed graph the metric regularity is equivalent to the kernel condition $D^*F(\bar x,\bar y)(0) = \{0\}$, where the **coderivative** is
 $$

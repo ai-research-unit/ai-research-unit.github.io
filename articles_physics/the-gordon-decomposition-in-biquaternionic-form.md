@@ -10,7 +10,7 @@ This article states the identity, proves it, gives its momentum-space form and i
 
 The article is organised as follows. The next section states the identity and proves it. A section gives the momentum-space form used in scattering. A section reads the two terms physically. A section gives the massless generalisation. A section records the angular-momentum and stress-tensor relatives and the electromagnetic (Pauli-moment) consequence. A section gives the biquaternion interpretation. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$, the generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$, the bivector is $\sigma^{\mu\nu} = \frac{i}{2}[\gamma^\mu,\gamma^\nu]$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
+The conventions are those of the companion articles. The Clifford metric is $g = \mathrm{diag}(+1,-1,-1,-1)$, the generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$, the bivector is $\sigma^{\mu\nu} = \frac{i}{2}[\gamma^\mu,\gamma^\nu]$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$, central scalar imaginary $i$, and the dictionary $\mathsf{M}_2$ of the companion articles. The mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
 
 ## The Identity
 
@@ -104,7 +104,7 @@ because $\sigma^{\mu\nu}$ is constant and antisymmetric. Dividing by $2m$ gives 
 
 ### A note on the total divergence
 
-The spin term is not separately conserved; its divergence contributes to $\partial_\mu j^\mu$ together with the convection term. What is separately meaningful is the **integrated** spin density, which is the magnetic moment, and the split of the current as a sum of two covariantly defined pieces. The total divergence is what makes the second term a "bound" current rather than a transport current: it can be removed from the current at the price of a surface term, and cannot be removed from the associated moment.
+The spin term is not separately conserved; its divergence contributes to $\langle\tilde\nabla,\tilde j\rangle_{\natural}$ together with the convection term. What is separately meaningful is the **integrated** spin density, which is the magnetic moment, and the split of the current as a sum of two covariantly defined pieces. The total divergence is what makes the second term a "bound" current rather than a transport current: it can be removed from the current at the price of a surface term, and cannot be removed from the associated moment.
 
 ## The Momentum-Space Form
 
@@ -271,17 +271,17 @@ $$
 \gamma^\mu\gamma^\nu = g^{\mu\nu}I_4 - i\sigma^{\mu\nu},
 $$
 
-the two pieces being respectively the **metric** (one number per pair of indices, symmetric, and in the algebra's terms central) and the **bivector** (antisymmetric, and in the algebra's terms the six-dimensional subspace spanned by the directions $e_k$ and $ie_k$). The Gordon decomposition is the statement that on shell the current splits in exactly this way: the convection term is the metric–central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies $\sigma^{\mu\nu}$, a bivector, and is therefore an informational-sector object, while the tree-level convection term is central.
+the two pieces being respectively the **metric** (one number per pair of indices, symmetric, and in the algebra's terms central) and the **bivector** (antisymmetric, and in the algebra's terms the six-dimensional subspace spanned by the directions $\vec e_k$ and $i\vec e_k$). The Gordon decomposition is the statement that on shell the current splits in exactly this way: the convection term is the metric–central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies $\sigma^{\mu\nu}$, a bivector, and is therefore an informational-sector object, while the tree-level convection term is central.
 
 The dictionary assigns the six bivectors to the six directions,
 
 $$
-\mathsf{M}_2(e_k) = \gamma^k\gamma^l,
+\mathsf{M}_2(\vec e_k) = \gamma^k\gamma^l,
 \qquad
-\mathsf{M}_2(ie_k) = \gamma^0\gamma^k,
+\mathsf{M}_2(i\vec e_k) = \gamma^0\gamma^k,
 $$
 
-so that the **rotation-type** generators (the magnetic, spin-like ones) sit at the elements $ie_k \in \mathbb{M}_+$, the informational sector, and the **boost-type** generators at $e_k \in \mathbb{M}_-$, the material sector. The magnetic (spin) part of the Gordon split is therefore an $\mathbb{M}_+$ structure — the same sector as the spin itself — and the convection part is the central metric direction. The sector labels are not decoration: they are the algebraic form of the statement that the convection term is the orbital transport and the spin term is the intrinsic moment.
+so that the **rotation-type** generators (the magnetic, spin-like ones) sit at the elements $i\vec e_k \in \mathbb{M}_+$, the informational sector, and the **boost-type** generators at $\vec e_k \in \mathbb{M}_-$, the material sector. The magnetic (spin) part of the Gordon split is therefore an $\mathbb{M}_+$ structure — the same sector as the spin itself — and the convection part is the central metric direction. The sector labels are not decoration: they are the algebraic form of the statement that the convection term is the orbital transport and the spin term is the intrinsic moment.
 
 ### What the framework does not supply
 

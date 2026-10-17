@@ -40,7 +40,7 @@ for every admissible $f$. Conversely, if $E$ and $E'$ are two fundamental soluti
 
 **Example (the Newtonian potential operator).** Let $L=-\Delta$ and let $\Phi$ be the Newtonian potential of *Distributions and Fundamental Solutions*, $-\Delta\Phi=\delta$. Then $T_\Phi f=\Phi*f$ solves $-\Delta u=f$ for compactly supported $f$, and when $n\ge3$ it is the solution that vanishes at infinity; the general solution is $T_\Phi f+h$ with $h$ harmonic, and in the tempered class the ambiguity is exactly the harmonic polynomials. The operator $T_\Phi$ gains two derivatives: it maps the compactly supported distributions into $C^\infty$ away from the support of $f$, and it maps $H^s(\mathbb{R}^n)$ into $H^{s+2}_{\mathrm{loc}}(\mathbb{R}^n)$, so it inverts the Laplacian and improves regularity at the same time.
 
-**Example (the heat and wave operators).** Let $L=\partial_t-\Delta$ on $\mathbb{R}^n\times\mathbb{R}$ and let $E$ be the heat kernel of *Distributions and Fundamental Solutions*. Then $T_E$ is the **heat semigroup**: $(T_Ef)(x,t)=\int E(x-y,t)f(y)\,dy$ for $t>0$, $T_E$ is a strongly continuous semigroup of contractions on $L^{n}$, and it solves the Cauchy problem of the heat equation. For the wave operator $\Box=\partial_t^2-\Delta_x$ the fundamental solution supported in the forward cone defines the **wave propagator**, and its finite support is finite propagation speed. Both operators are convolution operators of *Convolution Operators*, and their semigroup and group properties are those of *Unbounded Operators and Spectral Measures*.
+**Example (the heat and wave operators).** Let $L=\partial/\partial t-\Delta$ on $\mathbb{R}^n\times\mathbb{R}$ and let $E$ be the heat kernel of *Distributions and Fundamental Solutions*. Then $T_E$ is the **heat semigroup**: $(T_Ef)(x,t)=\int E(x-y,t)f(y)\,dy$ for $t>0$, $T_E$ is a strongly continuous semigroup of contractions on $L^{n}$, and it solves the Cauchy problem of the heat equation. For the wave operator $\Box=\partial^2/\partial t^2-\Delta_x$ the fundamental solution supported in the forward cone defines the **wave propagator**, and its finite support is finite propagation speed. Both operators are convolution operators of *Convolution Operators*, and their semigroup and group properties are those of *Unbounded Operators and Spectral Measures*.
 
 ### Composition and the Inverse of a Product
 
@@ -60,7 +60,7 @@ $$
 
 using the constant coefficients to move $L_2$ onto $E_2$ and the convolution with $\delta$. The commutativity is that of convolution.
 
-**Example (the semigroup law).** For the heat kernel $E_t(x)=(4\pi t)^{-n/2}\exp(-|x|^2/(4t))$ the composition theorem reads $E_t*E_s=E_{t+s}$, which is the semigroup law in kernel form, and $T_{E_t}T_{E_s}=T_{E_{t+s}}$ is the semigroup in operator form; the identity $\partial_t-\Delta_x$ applied to $E_t$ gives the delta at $(0,0)$ by the convolution theorem.
+**Example (the semigroup law).** For the heat kernel $E_t(x)=(4\pi t)^{-n/2}\exp(-|x|^2/(4t))$ the composition theorem reads $E_t*E_s=E_{t+s}$, which is the semigroup law in kernel form, and $T_{E_t}T_{E_s}=T_{E_{t+s}}$ is the semigroup in operator form; the identity $\partial/\partial t-\Delta_x$ applied to $E_t$ gives the delta at $(0,0)$ by the convolution theorem.
 
 ## The Symbol and the Multiplier
 
@@ -79,9 +79,9 @@ in the sense that the distribution $1/\sigma_L(\xi)$ is the Fourier transform of
 | Operator $L$ | Fundamental solution $E$ | Multiplier $1/\sigma_L(\xi)$ | Inverse on |
 |---|---|---|---|
 | $-\Delta$ | Newtonian potential $\Phi$ | $1/|\xi|^2$ | $\mathcal{S}$, up to harmonic term |
-| $\partial_t-\Delta$ | heat kernel | $1/(i\tau+|\xi|^2)$ | causal $f$, $t>0$ |
+| $\partial/\partial t-\Delta$ | heat kernel | $1/(i\tau+|\xi|^2)$ | causal $f$, $t>0$ |
 | $\Box$ | cone-supported solution | $1/(\tau^2-|\xi|^2)$ | causal $f$ |
-| $\partial_x$ | Heaviside step | $1/(i\xi)$ | $\mathcal{S}$ modulo constants |
+| $\partial/\partial x$ | Heaviside step | $1/(i\xi)$ | $\mathcal{S}$ modulo constants |
 | $1-d^2/dx^2$ | $\tfrac12\exp(-|x|)$ | $1/(1+\xi^2)$ | all of $L^2$ |
 
 The first four multipliers are unbounded at the zeros of the symbol and the operators gain derivatives or lose support; the last is bounded, and $T_E$ is a bounded operator on $L^2$ with norm $1$, the multiplier $1/(1+\xi^2)$ having supremum $1$. The gain of two derivatives by the Newtonian potential operator and the boundedness of the resolvent kernel of $1-d^2/dx^2$ are the two extremes: whether the inverse gains regularity or is bounded is decided by the behaviour of $1/\sigma_L$ at infinity and near its singularities.
@@ -90,7 +90,7 @@ The first four multipliers are unbounded at the zeros of the symbol and the oper
 
 *Proof.* If $E$ and $E'$ are tempered fundamental solutions, then $E-E'$ is tempered and $L(E-E')=0$, so it vanishes under the hypothesis; conversely a tempered solution $h$ of $Lh=0$ may be added to any fundamental solution, and $E+h$ is a fundamental solution because $L$ is linear. The operator $T_E$ therefore differs from $T_{E'}$ by $T_h$ on the distributions for which both are defined.
 
-**Example (the primitive and the Hilbert transform).** For $L=\partial_x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the **Hilbert transform**, whose multiplier is $-i\,\mathrm{sgn}(\xi)$ and whose relation to the two one-sided primitives is the subject of *Real Harmonic Analysis*. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.
+**Example (the primitive and the Hilbert transform).** For $L=\partial/\partial x$ on $\mathbb{R}$ the Heaviside function $H$ is a fundamental solution, and $T_Hf(x)=\int_{-\infty}^x f(y)\,dy$ is the primitive vanishing at $-\infty$; it is not bounded on $L^2$, and the bounded operator that inverts the derivative on the line is the **Hilbert transform**, whose multiplier is $-i\,\mathrm{sgn}(\xi)$ and whose relation to the two one-sided primitives is the subject of *Real Harmonic Analysis*. The example shows that the choice of fundamental solution is a choice of boundary behaviour at infinity, not merely of formula.
 
 ## The Adjoint Fundamental Solution
 
@@ -165,7 +165,7 @@ For an operator with variable coefficients the convolution reading fails and is 
 | $S$, $S'$ | Smoothing remainders of the parametrix |
 | $\sigma_L(\xi)$ | Symbol of $L$ |
 | $\Phi$ | Newtonian potential, fundamental solution of $-\Delta$ |
-| $\Box$ | Wave operator $\partial_t^2-\Delta_x$ |
+| $\Box$ | Wave operator $\partial^2/\partial t^2-\Delta_x$ |
 | $1/\sigma_L$ | Fourier multiplier of $T_E$ |
 | $E^{\dagger}(x)=\overline{E(-x)}$ | Reflected conjugate, fundamental solution of $L^{\dagger}$ |
 | $T_{E^{\dagger}}$ | Adjoint of $T_E$, inverse of $L^{\dagger}$ |

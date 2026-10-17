@@ -25,7 +25,7 @@ Throughout, $(F, v)$ is a non-Archimedean field with value group $\Gamma$, valua
 
 **Proof.** The degree statement is the algebraic fact that the fixed field of an order-two automorphism has index at most two, and exactly two when the involution is nontrivial, by *Involutive Valued Fields*; it does not use the valuation. When $\sigma$ is isometric, $\mathcal{O}$ is stable and $\mathcal{O}\cap F^\sigma$ is the valuation ring of the restricted valuation on $F^\sigma$; when it is not isometric, every valuation ring is moved and there is no compatible restriction on the whole of $F^\sigma$ from the given one. The norm statement is $\sigma(N(x)) = \sigma(x)\sigma^2(x) = N(x)$.
 
-**Corollary (the trace and the norm).** For $x\in F$ the elements $x + \sigma(x)$ and $N(x) = x\sigma(x)$ lie in $F^\sigma$; the norm is multiplicative, $N(xy) = N(x)N(y)$, the norm-one set $U(F,\sigma) = \{x\in F^\times : N(x) = 1\}$ is a subgroup, and the norm form is anisotropic in the sense that $N(x) = 0$ only for $x = 0$.
+**Corollary (the trace and the norm).** For $x\in F$ the elements $x + \sigma(x)$ and $N(x) = x\sigma(x)$ lie in $F^\sigma$; the norm is multiplicative, $N(xy) = N(x)N(y)$, the norm-one set $\mathrm{U}(F,\sigma) = \{x\in F^\times : N(x) = 1\}$ is a subgroup, and the norm form is anisotropic in the sense that $N(x) = 0$ only for $x = 0$.
 
 **Proof.** The trace and norm lie in the fixed field as in the quadratic extension; multiplicativity is $\sigma(xy) = \sigma(x)\sigma(y)$ for a commutative field; anisotropy is that a field has no zero divisors.
 
@@ -95,7 +95,7 @@ Under completion and spherical completion the isometric structure is preserved: 
 | $\bar\sigma(x+\mathrm{M}) = \sigma(x)+\mathrm{M}$ | The residue involution, when $\sigma$ is isometric |
 | $F^\sigma$, $[F : F^\sigma] = 2$ | The fixed field |
 | $N(x) = x\sigma(x)$, $v(N(x)) = 2v(x)$ | The norm form in the isometric case |
-| $U(F,\sigma)$ | The norm-one subgroup |
+| $\mathrm{U}(F,\sigma)$ | The norm-one subgroup |
 | $\widehat{F}$, $\widehat{F}^{\widehat\sigma} = \widehat{F^\sigma}$ | The completion and its involution |
 | $k(t)$, $t\mapsto \pm t^{\pm 1}$ | The function field and its involutions |
 | $\operatorname{PGL}_2(k)$ | The $k$-automorphisms of $k(t)$ |

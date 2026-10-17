@@ -34,7 +34,7 @@ The operators $\ell_{g}$ are the symmetries of the action. They are homeomorphis
 
 **Proof.** This is the corresponding theorem of *The Orbit Map*: the quotient topology makes $\pi$ continuous, the orbits are the classes of the relation, and the openness uses only that each $\ell_{g}$ is a homeomorphism, since $\pi^{-1}(\pi(A)) = \bigcup_{g \in G}\ell_{g}(A)$ is a union of open sets when $A$ is open.
 
-**Corollary.** The orbit map is a quotient map in the strong sense: a set $U \subseteq X/G$ is open if and only if $\pi^{-1}(U)$ is open, and a map out of $X/G$ is continuous if and only if its composite with $\pi$ is continuous.
+**Corollary.** The orbit map is a quotient map in the strong sense: a set $\Omega \subseteq X/G$ is open if and only if $\pi^{-1}(\Omega)$ is open, and a map out of $X/G$ is continuous if and only if its composite with $\pi$ is continuous.
 
 **Proof.** The two statements are the definition of the quotient topology and its universal property, both in *The Orbit Map*.
 

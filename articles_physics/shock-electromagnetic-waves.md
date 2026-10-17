@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\tilde{\nabla}^{\natural}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\tilde{\nabla}^{\natural}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial^2/\partial Q_t^2 + \Delta$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -33,7 +33,7 @@ $$
 Applying $\tilde{\nabla}^{\natural}$ to both sides and using $\Box = \tilde{\nabla}^{\natural}\tilde{\nabla}$ gives the wave equation
 
 $$
-\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
+\Box \tilde{F} = 0, \qquad \Box = \partial^2/\partial Q_t^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
 $$
 
 This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.
@@ -50,7 +50,7 @@ i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones.
 
 ### The Propagation of Smoothness
 
-In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(\vec x, 0)$ is $C^\infty$, then so is $\tilde{F}(\vec x, t)$ for every $t > 0$.
+In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, 0)$ is $C^\infty$, then so is $\tilde{F}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, t)$ for every $t > 0$.
 
 The reason is that the solution operator is a Fourier multiplier: in the frequency domain, the solution is obtained by multiplying the initial data by a bounded function. The multiplier does not create new singularities; it only propagates the existing ones.
 
@@ -78,13 +78,13 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \vec u$ for a spatial surface and $\tilde{n} = i\nu_t\,e_0 + \vec u$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
+The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \vec u$ for a spatial surface and $\tilde{n} = i\nu_t\,e_t + \vec u$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
 
 $$
-\partial_\mu \tilde{F} = \{\partial_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
+\partial/\partial Q_\mu \tilde{F} = \{\partial/\partial Q_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
 $$
 
-where $\{\partial_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.
+where $\{\partial/\partial Q_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.
 
 ### The Jump Condition
 
@@ -120,7 +120,7 @@ The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific st
 
 ### A Constant Zeroth-Order Term Does Not Change the Jump Condition
 
-The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial_\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
+The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
 
 $$
 \nabla^+B = \{\nabla^+B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
@@ -134,7 +134,7 @@ $$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_0 + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
 [b] + i(\vec u,[\vec B]) = 0 ,
@@ -179,9 +179,9 @@ which is the electric-energy component of the electromagnetic Rankine–Hugoniot
 The A-field is not the only object whose discontinuities the programme considers. The **charge–current field** $\tilde{\Theta} = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are **not** transverse in general. In a free field that field obeys the first-order system
 
 $$
-\partial_\tau\rho + \mathrm{div}\,\vec J = 0,
+\partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0,
 \qquad
-\nabla\rho + \partial_\tau\vec J - i\,\mathrm{rot}\,\vec J = 0,
+\nabla\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
 which is the scalar and vector part of $D^-\tilde{\Theta} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
@@ -234,13 +234,13 @@ where $I = |\vec E|^2$ is the intensity and $n_2$ is the nonlinear refractive in
 For a plane wave propagating in a Kerr medium, the wave equation for the envelope is approximately
 
 $$
-\partial_t \tilde{F} + c(I)\,\partial_x \tilde{F} = 0,
+\partial/\partial t \tilde{F} + c(I)\,\partial/\partial Q_x \tilde{F} = 0,
 $$
 
-where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial_t\phi + c(\phi)\partial_x\phi = 0$, the equation can be written in conservation form
+where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $\phi$ satisfying $\partial/\partial t\phi + c(\phi)\partial/\partial Q_x\phi = 0$, the equation can be written in conservation form
 
 $$
-\partial_t\phi + \partial_x f(\phi) = 0, \qquad f'(\phi) = c(\phi),
+\partial/\partial t\phi + \partial/\partial Q_x f(\phi) = 0, \qquad f'(\phi) = c(\phi),
 $$
 
 where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.
@@ -284,13 +284,13 @@ Magnetohydrodynamics is the setting in which the fluid and electromagnetic descr
 For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\eta$, the magnetic field obeys
 
 $$
-\partial_t\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
+\partial/\partial t\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
 $$
 
 while the vorticity of the same flow, $\vec\omega = \nabla\times\vec v$, obeys the Helmholtz equation
 
 $$
-\partial_t\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
+\partial/\partial t\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
 $$
 
 with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
@@ -302,7 +302,7 @@ $$
 so that each is of the advection–diffusion type
 
 $$
-\partial_t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
+\partial/\partial t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
 $$
 
 with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
@@ -405,9 +405,9 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 |---|---|
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
-| $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k \partial_k$ | Biquaternionic gradient |
-| $\Box = \partial_{ict}^2 + \Delta$ | d'Alembertian |
-| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\vec u$ for spatial, $i\nu_t e_0 + \vec u$ for general) |
+| $\tilde{\nabla} = e_t\partial/\partial Q_t + \sum_\mu \vec e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\Box = \partial^2/\partial Q_t^2 + \Delta$ | d'Alembertian |
+| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\vec u$ for spatial, $i\nu_t e_t + \vec u$ for general) |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength) |
 | $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |

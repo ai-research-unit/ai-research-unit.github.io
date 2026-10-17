@@ -11,7 +11,7 @@ The answer to the question of the title is therefore a negative one, and it agre
 
 The four general products, their relations and their comparison are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, *Relations Between the Four General Products* and *Comparison Between the Four General Products*; the four pairings and their Gram matrices are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the four adjoints and the reading of the family names are *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the conjugations and their group are *The Group of Involutions*; the signed sandwich and its reflection formula are *The Signed Sandwich on a Clifford Algebra* and *Two-Sided Operators with the Signed Product*. The article is pure algebra.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_0}e_0+\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_0}e_0-\overline{Q_1}e_1-\overline{Q_2}e_2-\overline{Q_3}e_3$. The vector subspace is $V=\mathbb{C}\{e_1,e_2,e_3\}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\ne0$, and $\mathrm{Sc}$ is the scalar part.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; $i$ is the central scalar imaginary; a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The three conjugations used are the natural conjugation $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficient conjugation $\bar{\tilde Q}=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z$, and the Hermitian conjugation $\tilde Q^{*}=\tilde Q^{\natural\bar{\bar{\cdot}}}=\overline{Q_t}e_t-\overline{Q_x}\vec e_x-\overline{Q_y}\vec e_y-\overline{Q_z}\vec e_z$. The vector subspace is $V=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}$, the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, an element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\ne0$, and $\mathrm{Sc}$ is the scalar part.
 
 ## The Four General Products Are One Multiplication with Two Insertions
 
@@ -54,7 +54,7 @@ $$
 \langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
 $$
 
-with Gram matrices in the basis $e_0,e_1,e_2,e_3$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
+with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.
 
 *Proof.* $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and on the basis units the two insertions act by $e_\mu^{\natural}=\varepsilon_\mu e_\mu$ and $e_\mu^{*}=\varepsilon_\mu e_\mu$, the coordinates of the units being real, so that the sign $\varepsilon_\mu$ cancels as soon as the unit is read through one of the two insertions. The Gram matrix is therefore $\varepsilon$ exactly when the two insertions agree, that is for the plain product and for the general quaternionic sesquilinear one, and $1$ when they differ, that is $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$. The four pairings are distinct as maps — two are bilinear and two sesquilinear in the second argument, and no two agree on complex coefficients — while two pairs of them share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by a sign.
 
@@ -90,20 +90,20 @@ The products do not supply 1, and they supply the *repertoire* of 2 without choo
 
 ## One Element, Four Operators
 
-### The Four Operators of $e_1$
+### The Four Operators of $\vec e_x$
 
-Fix the element $\tilde A=e_1$, a unit with $\langle e_1\rangle_{\natural}=-e_0$, so that $e_1^{-1}=-e_1$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
+Fix the element $\tilde A=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
 
 $$
 \begin{aligned}
-\text{no insertion:}\quad & L_{e_1}R_{e_1^{-1}} & \tilde X&\longmapsto e_1\tilde X e_1^{-1},\\
-\text{sign }\natural\text{ on the left:}\quad & L_{e_1^{\natural}}R_{e_1^{-1}} & \tilde X&\longmapsto e_1^{\natural}\tilde X e_1^{-1},\\
-\text{star on the right:}\quad & L_{e_1}R_{(e_1^{*})^{-1}} & \tilde X&\longmapsto e_1\tilde X (e_1^{*})^{-1},\\
-\text{both:}\quad & L_{e_1^{\natural}}R_{(e_1^{*})^{-1}} & \tilde X&\longmapsto e_1^{\natural}\tilde X(e_1^{*})^{-1}.
+\text{no insertion:}\quad & L_{\vec e_x}R_{\vec e_x^{-1}} & \tilde X&\longmapsto \vec e_x\tilde X \vec e_x^{-1},\\
+\text{sign }\natural\text{ on the left:}\quad & L_{\vec e_x^{\natural}}R_{\vec e_x^{-1}} & \tilde X&\longmapsto \vec e_x^{\natural}\tilde X \vec e_x^{-1},\\
+\text{star on the right:}\quad & L_{\vec e_x}R_{(\vec e_x^{*})^{-1}} & \tilde X&\longmapsto \vec e_x\tilde X (\vec e_x^{*})^{-1},\\
+\text{both:}\quad & L_{\vec e_x^{\natural}}R_{(\vec e_x^{*})^{-1}} & \tilde X&\longmapsto \vec e_x^{\natural}\tilde X(\vec e_x^{*})^{-1}.
 \end{aligned}
 $$
 
-For $e_1$ the two conjugations are $\natural(e_1)=-e_1$ and $e_1^{*}=-e_1$, so the four operators are two, and in the basis $e_0,e_1,e_2,e_3$ they are
+For $\vec e_x$ the two conjugations are $\natural(\vec e_x)=-\vec e_x$ and $\vec e_x^{*}=-\vec e_x$, so the four operators are two, and in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ they are
 
 $$
 \operatorname{diag}(1,1,-1,-1)
@@ -140,7 +140,7 @@ $$
 
 with determinant of the restriction $+1$ and $-1$. The two insertions that read the right factor through ${}^{*}$ behave differently, and the proposition below says exactly how.
 
-*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde R+\tilde R\tilde A=2\langle\tilde A,\tilde R\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_0$.
+*Proof.* For $\tilde A\in V$ the sign reads the parameter as $\tilde A^{\natural}=-\tilde A$, so that $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$; the identity $L_{\tilde A}R_{\tilde A^{-1}}\big|_{V}=-\rho_{\tilde A}$ is the reflection formula of the Clifford algebra in the convention $\mathfrak{Q}(\tilde A)=\langle\tilde A,\tilde A\rangle<0$, equivalently $\tilde A\tilde R+\tilde R\tilde A=2\langle\tilde A,\tilde R\rangle$ and $\tilde A^{2}=\mathfrak{Q}(\tilde A)e_t$.
 
 **Proposition (the star insertions leave $V$ in general).** For $\tilde A\in V$ the right factor of the starred insertions is $(\tilde A^{*})^{-1}=-(\bar{\tilde A})^{-1}$, so the two starred operators are $-L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$ and $+L_{\tilde A}R_{(\bar{\tilde A})^{-1}}$. They keep $V$ stable exactly when $\bar{\tilde A}$ is a scalar multiple of $\tilde A$, that is when the coefficient vector of $\tilde A$ is a complex multiple of a real one. When it is, and only then, a determinant on $V$ is defined: it is $-1$ for the star insertion and $+1$ for the both insertion when the coefficient vector is real, the two are exchanged when it is purely imaginary, and for a coefficient vector that is a non-real, non-imaginary complex multiple of a real one the restriction is neither $\pm\rho_{\tilde A}$ nor form-preserving. For a generic complex parameter, $V$ is not preserved and the starred insertions are read on the algebra and not on $V$.
 
@@ -154,7 +154,7 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 ### The Sign Is Invisible on the Centre and on Even Parameters
 
-**Proposition.** If $\tilde A$ is central, $\tilde A=a_0e_0$, then the sign insertion changes nothing, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=L_{\tilde A}R_{\tilde A^{-1}}$. If $\tilde A\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$.
+**Proposition.** If $\tilde A$ is central, $\tilde A=a_0e_t$, then the sign insertion changes nothing, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=L_{\tilde A}R_{\tilde A^{-1}}$. If $\tilde A\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}=-L_{\tilde A}R_{\tilde A^{-1}}$.
 
 *Proof.* $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute.
 
@@ -162,28 +162,28 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 | $\tilde A$ | none | sign | star | both |
 |---|---|---|---|---|
-| $e_0$ | $+1$ | $+1$ | $+1$ | $+1$ |
-| $i e_0$ | $+1$ | $+1$ | $-1$ | $-1$ |
-| $e_1$ | $+1$ | $-1$ | $-1$ | $+1$ |
-| $e_1+e_2$ | $+1$ | $-1$ | $-1$ | $+1$ |
-| $i e_1$ | $+1$ | $-1$ | $+1$ | $-1$ |
-| $e_0+e_1$ | $+1$ | $0$ | $0$ | $+1$ |
+| $e_t$ | $+1$ | $+1$ | $+1$ | $+1$ |
+| $i e_t$ | $+1$ | $+1$ | $-1$ | $-1$ |
+| $\vec e_x$ | $+1$ | $-1$ | $-1$ | $+1$ |
+| $\vec e_x+\vec e_y$ | $+1$ | $-1$ | $-1$ | $+1$ |
+| $i \vec e_x$ | $+1$ | $-1$ | $+1$ | $-1$ |
+| $e_t+\vec e_x$ | $+1$ | $0$ | $0$ | $+1$ |
 
 The zero entries are the starred insertions of a mixed parameter, whose operator does not preserve $V$, so that the restricted determinant is $0$ and is not a rotation-reflection marker; the star and both columns are read on $V$ only for the rows whose parameter has a real or purely imaginary coefficient vector.
 
-*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde A^{*})^{-1}=i e_0$, which gives $-e_0$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
+*Proof.* The rows are the computed determinants; the first row is the identity on $V$; the second row shows that a central imaginary parameter, on which the sign is invisible, is still separated by the conjugate-linear insertion, $(\tilde A^{*})^{-1}=i e_t$, which gives $-e_t$ on the left factor and hence $-\mathrm{id}$ on $V$; the third and fourth rows are the theorem above; the fifth row is a purely imaginary vector, on which the star insertion coincides with the plain one and the both insertion with the sign, so that the determinants are those of the third row read with the two insertions exchanged; the last row is a mixed parameter, whose starred operators do not keep $V$ stable.
 
 **Remark (the two central rows).** The proposition and the table together show the two independent choices: the *sign* $\natural$ is invisible on the centre and reads only the odd part, while the *star* is invisible on the real directions and reads the coefficient imaginary. Neither is a property of the product; both are properties of the insertion into the chosen element.
 
 ## Which Involution Is "the Sign" Is Itself a Choice
 
-**Remark (the corpus fixes the sign by a formula).** The biquaternion corpus calls $\natural$ the sign and uses it throughout, but the map that plays the role of the sign is a choice among the involutions of the algebra. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie_k$, has the grades $\text{grade }0=\mathbb{R}e_0$, $\text{grade }1=\mathrm{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$, $\text{grade }2=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$, $\text{grade }3=\mathbb{R}ie_0$, and in that reading
+**Remark (the corpus fixes the sign by a formula).** The biquaternion corpus calls $\natural$ the sign and uses it throughout, but the map that plays the role of the sign is a choice among the involutions of the algebra. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto i\vec e_k$, has the grades $\text{grade }0=\mathbb{R}e_t$, $\text{grade }1=\mathrm{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$, $\text{grade }2=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, $\text{grade }3=\mathbb{R}ie_t$, and in that reading
 
-| map on $\mathbb{B}$ | Clifford partner | signs on grades $0,1,2,3$ | coefficient sign vector on $e_0,e_1,e_2,e_3$ |
+| map on $\mathbb{B}$ | Clifford partner | signs on grades $0,1,2,3$ | coefficient sign vector on $e_t,\vec e_x,\vec e_y,\vec e_z$ |
 |---|---|---|---|
 | quaternion conjugation $\natural$ | Clifford conjugation $\alpha(X^{r})$ | $+,-,-,+$ | $(1,-1,-1,-1)$ |
-| complex conjugation $\bar{\cdot}$ | grade involution $\alpha$ | $+,-,+,-$ | fixes $e_1,e_2,e_3$, reverses $i$ |
-| Hermitian conjugation ${}^{*}$ | reversion $X^{r}$ | $+,+,-,-$ | $-1$ on $e_1,e_2,e_3$ and $-1$ on $ie_0$ |
+| complex conjugation $\bar{\cdot}$ | grade involution $\alpha$ | $+,-,+,-$ | fixes $\vec e_x,\vec e_y,\vec e_z$, reverses $i$ |
+| Hermitian conjugation ${}^{*}$ | reversion $X^{r}$ | $+,+,-,-$ | $-1$ on $\vec e_x,\vec e_y,\vec e_z$ and $-1$ on $ie_t$ |
 
 So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is *not* the grade involution of that Clifford reading: the grade involution is the coefficient conjugation, and on $V$, which is the grade-two part there, it is the identity. Two consequences follow, and both answer the question of the title. First, the corpus's choice of $\natural$ as the sign is a convention of the biquaternion model, fixed by the coefficient formula and not by an abstract parity. Second, the reflection theorem is nevertheless not a convention: with the sign $\natural$ it holds, and with the grade involution, which is trivial on $V$, it fails.
 
@@ -191,7 +191,7 @@ So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is
 
 ## Summary
 
-The four general products of the biquaternion algebra are one multiplication with a conjugation inserted independently into each of the two slots. They therefore share the multiplication table of the units, and they determine the four pairings — their scalar parts — and with the pairings the four adjoints and the names of the four operator families. They do not determine an operator. An operator needs an element, and it needs an insertion: which involution, if any, is put on the element and on which side, and whether the sign goes into the parameter or into the argument. The element $e_1$ read through the four insertions gives two operators, $\operatorname{diag}(1,1,-1,-1)$ and $\operatorname{diag}(-1,-1,1,1)$, and on the vector subspace they are $-\rho_{e_1}$ and $\rho_{e_1}$: the plain product gives $-\rho_{e_1}$, and the reflection is reached only through the sign. On the four-dimensional algebra both have determinant $+1$, so rotation and reflection are read on the vector subspace. Finally, which map plays the role of the sign is itself chosen: the biquaternion corpus fixes it as the natural conjugation $\natural$, whose sign vector is $(1,-1,-1,-1)$, and that is a convention of the model, whereas the identity "the reflection needs the sign" is a theorem. The answer to the question is therefore: no, the product does not decide between a rotation and a reflection; the algebra and its product come first, and the operator is obtained from them by choosing the element and the insertion.
+The four general products of the biquaternion algebra are one multiplication with a conjugation inserted independently into each of the two slots. They therefore share the multiplication table of the units, and they determine the four pairings — their scalar parts — and with the pairings the four adjoints and the names of the four operator families. They do not determine an operator. An operator needs an element, and it needs an insertion: which involution, if any, is put on the element and on which side, and whether the sign goes into the parameter or into the argument. The element $\vec e_x$ read through the four insertions gives two operators, $\operatorname{diag}(1,1,-1,-1)$ and $\operatorname{diag}(-1,-1,1,1)$, and on the vector subspace they are $-\rho_{\vec e_x}$ and $\rho_{\vec e_x}$: the plain product gives $-\rho_{\vec e_x}$, and the reflection is reached only through the sign. On the four-dimensional algebra both have determinant $+1$, so rotation and reflection are read on the vector subspace. Finally, which map plays the role of the sign is itself chosen: the biquaternion corpus fixes it as the natural conjugation $\natural$, whose sign vector is $(1,-1,-1,-1)$, and that is a convention of the model, whereas the identity "the reflection needs the sign" is a theorem. The answer to the question is therefore: no, the product does not decide between a rotation and a reflection; the algebra and its product come first, and the operator is obtained from them by choosing the element and the insertion.
 
 ## Summary of Notation
 
@@ -204,7 +204,7 @@ The four general products of the biquaternion algebra are one multiplication wit
 | $L_{\tilde A}R_{\tilde B}$ | a two-sided operator; $L_{\tilde A}R_{\tilde A^{-1}}$ the inner automorphism of the plain product |
 | $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, $\tilde X\mapsto\tilde A\tilde X^{\natural}\tilde A^{-1}$ | the sign inserted in the parameter, and in the argument |
 | $\rho_{\tilde A}$ | the reflection of $V$ in $\tilde A^{\perp}$; the plain product gives $-\rho_{\tilde A}$, the sign gives $\rho_{\tilde A}$ |
-| $\operatorname{diag}(1,1,-1,-1)$, $\operatorname{diag}(-1,-1,1,1)$ | the two operators of $e_1$, and their restrictions $\operatorname{diag}(1,-1,-1)$, $\operatorname{diag}(-1,1,1)$ to $V$ |
+| $\operatorname{diag}(1,1,-1,-1)$, $\operatorname{diag}(-1,-1,1,1)$ | the two operators of $\vec e_x$, and their restrictions $\operatorname{diag}(1,-1,-1)$, $\operatorname{diag}(-1,1,1)$ to $V$ |
 
 ## Further Reading
 

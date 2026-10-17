@@ -7,7 +7,7 @@ This article introduces harmonic analysis on the quaternion space as the study o
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers.
 
-Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
+Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.
 
 Here the quaternion norm is positive definite, every non-zero $\xi$ is invertible, and the kernel is everywhere defined; there is no vanishing-norm restriction to record.
 
@@ -24,10 +24,10 @@ $$
 where the exponential is the ordinary complex exponential, and the pairing is
 
 $$
-\langle \xi, \tilde q \rangle = \operatorname{Re}(\xi^{\natural} \tilde q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
+\langle \xi, \tilde q \rangle = \operatorname{Re}(\xi^{\natural} \tilde q) = \xi_t q_t + \xi_x q_x + \xi_y q_y + \xi_z q_z.
 $$
 
-Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_0 - \vec\xi$ gives $\xi^{\natural} \tilde q = (\xi_0 - \vec\xi)(q_0 + \vec q)$, whose real part is $\xi_0 q_0 + \vec\xi \cdot \vec q$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
+Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_t - \vec\xi$ gives $\xi^{\natural} \tilde q = (\xi_t - \vec\xi)(q_t + \vec q)$, whose real part is $\xi_t q_t + \vec\xi \cdot \vec q$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
 
 So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.
 
@@ -71,18 +71,18 @@ The three transforms are related but not equivalent, and the choice depends on t
 
 ### The Structure of the Transform
 
-Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) e_1 + f_2(\tilde q) e_2 + f_3(\tilde q) e_3$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.
+Write $f(\tilde q) = f_0(\tilde q) + f_1(\tilde q) \vec e_x + f_2(\tilde q) \vec e_y + f_3(\tilde q) \vec e_z$ with $f_\mu : \mathbb{H} \to \mathbb{R}$. Then the quaternion Fourier transform decomposes into four real Fourier transforms, one for each component, with the kernel depending on the choice of $\omega$.
 
-For the simplest case $\omega = e_1$, the kernel is
+For the simplest case $\omega = \vec e_x$, the kernel is
 
 $$
-\exp(-2\pi e_1 \operatorname{Re}(\xi^{\natural} \tilde q)) = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) - e_1 \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
+\exp(-2\pi \vec e_x \operatorname{Re}(\xi^{\natural} \tilde q)) = \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) - \vec e_x \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)).
 $$
 
 So the transform is
 
 $$
-(\mathcal F f)(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq - e_1 \int f(\tilde q) \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq.
+(\mathcal F f)(\xi) = \int f(\tilde q) \cos(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq - \vec e_x \int f(\tilde q) \sin(2\pi \operatorname{Re}(\xi^{\natural} \tilde q)) \, dq.
 $$
 
 The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.
@@ -138,40 +138,40 @@ The inversion formula holds because the kernel is bounded and the transform is e
 The transform above acts on $\mathbb{H}\cong\mathbb{R}^4$ and uses a single unit $\omega$. Signal and image processing uses a different quaternion Fourier transform: the variable is $\mathbb{R}^2$, one unit is assigned to each variable, and the product is written in a fixed order,
 
 $$
-\mathcal{F}(f)(\omega_1,\omega_2) = \int_a^b\int_a^b f(q_1,q_2)\, \exp(-2\pi e_1 \omega_1 q_1) \exp(-2\pi e_2 \omega_2 q_2)\, dq_1 dq_2,
+\mathcal{F}(f)(\omega_1,\omega_2) = \int_a^b\int_a^b f(q_x,q_y)\, \exp(-2\pi \vec e_x \omega_1 q_x) \exp(-2\pi \vec e_y \omega_2 q_y)\, dq_1 dq_2,
 $$
 
-for $f : [a,b]\times[a,b] \to \mathbb{H}$. The order is part of the definition: the two exponential factors rotate in different planes, and $e_1e_2 = e_3 = -e_2e_1$, so they do not commute. The factor $2\pi$ sits in the kernel, as everywhere in this article; the signal-processing literature writes the same kernel without it, which is the substitution $\omega_i \mapsto 2\pi\omega_i$.
+for $f : [a,b]\times[a,b] \to \mathbb{H}$. The order is part of the definition: the two exponential factors rotate in different planes, and $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$, so they do not commute. The factor $2\pi$ sits in the kernel, as everywhere in this article; the signal-processing literature writes the same kernel without it, which is the substitution $\omega_i \mapsto 2\pi\omega_i$.
 
 The transform above has the kernel on the **right** of $f$; call it $\mathcal{F}_{\mathrm{r}}$. The mirror form $\mathcal{F}_{\mathrm{l}}$ has the kernel on the **left**, and it is a genuinely different transform, not a relabelling of the same one. The literature's names are the reverse of this article's: Ell and Sangwine call the transform whose exponential stands on the left of the signal the *left-sided* one, while the list of the three transforms above names the kernel-right transform left-sided. The words **kernel-right** and **kernel-left** are used below.
 
 **The Closed Form.** With $c_i = 2\pi\omega_iq_i$, the kernel splits into four real-coefficient terms,
 
 $$
-\exp(-2\pi e_1 \omega_1 q_1)\exp(-2\pi e_2 \omega_2 q_2) = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 + e_3\sin c_1\sin c_2,
+\exp(-2\pi \vec e_x \omega_1 q_x)\exp(-2\pi \vec e_y \omega_2 q_y) = \cos c_1\cos c_2 - \vec e_x\sin c_1\cos c_2 - \vec e_y\cos c_1\sin c_2 + \vec e_z\sin c_1\sin c_2,
 $$
 
 and the transform is the sum $\mathcal{F}(f) = \Phi_0 + \Phi_1 + \Phi_2 + \Phi_3$ of the four integrals over $[a,b]^2$
 
 $$
-\Phi_0 = \int f\cos c_1\cos c_2, \qquad \Phi_1 = -\int f e_1\sin c_1\cos c_2,
+\Phi_0 = \int f\cos c_1\cos c_2, \qquad \Phi_1 = -\int f \vec e_x\sin c_1\cos c_2,
 $$
 $$
-\Phi_2 = -\int f e_2\cos c_1\sin c_2, \qquad \Phi_3 = \int f e_3\sin c_1\sin c_2.
+\Phi_2 = -\int f \vec e_y\cos c_1\sin c_2, \qquad \Phi_3 = \int f \vec e_z\sin c_1\sin c_2.
 $$
 
-Each term multiplies the whole of the $\mathbb{H}$-valued $f$ on the right by $1$, $e_1$, $e_2$ or $e_3$: the four terms are the four components of one $\mathbb{H}$-valued transform, not four real transforms.
+Each term multiplies the whole of the $\mathbb{H}$-valued $f$ on the right by $1$, $\vec e_x$, $\vec e_y$ or $\vec e_z$: the four terms are the four components of one $\mathbb{H}$-valued transform, not four real transforms.
 
-**The sign of the $e_3$ term is the whole difference between the two orders.** The kernel-left form is the same object with the opposite sign on $e_3$,
+**The sign of the $\vec e_z$ term is the whole difference between the two orders.** The kernel-left form is the same object with the opposite sign on $\vec e_z$,
 
 $$
-\exp(-2\pi e_2 \omega_2 q_2)\exp(-2\pi e_1 \omega_1 q_1) = \cos c_1\cos c_2 - e_1\sin c_1\cos c_2 - e_2\cos c_1\sin c_2 - e_3\sin c_1\sin c_2,
+\exp(-2\pi \vec e_y \omega_2 q_y)\exp(-2\pi \vec e_x \omega_1 q_x) = \cos c_1\cos c_2 - \vec e_x\sin c_1\cos c_2 - \vec e_y\cos c_1\sin c_2 - \vec e_z\sin c_1\sin c_2,
 $$
 
 and the two kernels are conjugates,
 
 $$
-\overline{\exp(-2\pi e_1 \omega_1 q_1)\exp(-2\pi e_2 \omega_2 q_2)} = \exp(2\pi e_2 \omega_2 q_2)\exp(2\pi e_1 \omega_1 q_1),
+\overline{\exp(-2\pi \vec e_x \omega_1 q_x)\exp(-2\pi \vec e_y \omega_2 q_y)} = \exp(2\pi \vec e_y \omega_2 q_y)\exp(2\pi \vec e_x \omega_1 q_x),
 $$
 
 where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$.
@@ -193,7 +193,7 @@ where the right-hand side is the kernel-left form at $(-\omega_1,-\omega_2)$.
 
 All ten hold to round-off. They are the parity bookkeeping of the kernel: reversal of $\omega_2$ flips the terms built on $\sin c_2$, that is $\Phi_2$ and $\Phi_3$; reversal of $\omega_1$ flips $\Phi_1$ and $\Phi_3$; the two reversals together flip $\Phi_1$ and $\Phi_2$; and adding and subtracting the resulting pairs separates the four terms.
 
-**The Side of the Kernel Is Not Optional.** The reversal relation $\mathcal{F}(f)(-\omega_1,-\omega_2) = \mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)$ is often printed, and it is derived by replacing $\exp(2\pi e_1\omega_1q_1)\exp(2\pi e_2\omega_2q_2)$ with $\exp(-2\pi e_2\omega_2q_2)\exp(-2\pi e_1\omega_1q_1)$. That replacement is invalid: the two are conjugates, as the identity above shows. Numerically, on a $10\times10$ grid at $(\omega_1,\omega_2) = (0.09,0.13)$ the two sides differ by about $10$ for $f \equiv 1$ and by about $12$ for a general quaternionic $f$.
+**The Side of the Kernel Is Not Optional.** The reversal relation $\mathcal{F}(f)(-\omega_1,-\omega_2) = \mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)$ is often printed, and it is derived by replacing $\exp(2\pi \vec e_x\omega_1q_x)\exp(2\pi \vec e_y\omega_2q_y)$ with $\exp(-2\pi \vec e_y\omega_2q_y)\exp(-2\pi \vec e_x\omega_1q_x)$. That replacement is invalid: the two are conjugates, as the identity above shows. Numerically, on a $10\times10$ grid at $(\omega_1,\omega_2) = (0.09,0.13)$ the two sides differ by about $10$ for $f \equiv 1$ and by about $12$ for a general quaternionic $f$.
 
 What is true is weaker. For $f$ whose values commute with the kernel — in particular for any scalar-valued $f$ — the two sides are conjugates of one another,
 
@@ -201,31 +201,31 @@ $$
 \mathcal{F}_{\mathrm{r}}(f)(-\omega_1,-\omega_2) = \overline{\mathcal{F}_{\mathrm{l}}(f)(\omega_1,\omega_2)},
 $$
 
-which was checked exactly for $f \equiv 1$ and for a scalar-valued $f$. For a general $\mathbb{H}$-valued $f$ the two orderings differ by the commutator of the values with the kernel as well: for $f = e_1$ at one point and one frequency the two orderings differ by about $0.8$, so the two sides are not related by conjugation at all. The same slip recurs in the reversal property of the measure transform below, and again in the step that interchanges an integral against a measure with an integral over frequency.
+which was checked exactly for $f \equiv 1$ and for a scalar-valued $f$. For a general $\mathbb{H}$-valued $f$ the two orderings differ by the commutator of the values with the kernel as well: for $f = \vec e_x$ at one point and one frequency the two orderings differ by about $0.8$, so the two sides are not related by conjugation at all. The same slip recurs in the reversal property of the measure transform below, and again in the step that interchanges an integral against a measure with an integral over frequency.
 
 **The Riemann–Lebesgue Lemma with a Rate.** The lemma above is qualitative. In the two-dimensional case the decay rate is explicit, and the kernel standing on the right of $f$ makes the integration by parts unambiguous. If $f$ vanishes at the boundary of the square and $\omega_1 \ne 0$, then
 
 $$
-\mathcal{F}(f)(\omega_1,\omega_2) = -\frac{1}{2\pi e_1\omega_1}\int_a^b\int_a^b \partial_{q_1}f(q_1,q_2)\, \exp(-2\pi e_1\omega_1q_1)\exp(-2\pi e_2\omega_2q_2)\, dq_1 dq_2,
+\mathcal{F}(f)(\omega_1,\omega_2) = -\frac{1}{2\pi \vec e_x\omega_1}\int_a^b\int_a^b \partial/\partial q_x\,f(q_x,q_y)\, \exp(-2\pi \vec e_x\omega_1q_x)\exp(-2\pi \vec e_y\omega_2q_y)\, dq_1 dq_2,
 $$
 
 because the boundary terms vanish, so
 
 $$
-\lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \lVert f\rVert_{L^1}, \qquad \lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \frac{\lVert \partial_{q_1}f\rVert_{L^1}}{2\pi\lvert\omega_1\rvert},
+\lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \lVert f\rVert_{L^1}, \qquad \lvert \mathcal{F}(f)(\omega_1,\omega_2)\rvert \le \frac{\lVert \partial/\partial q_x\,f\rVert_{L^1}}{2\pi\lvert\omega_1\rvert},
 $$
 
-and the same with $q_2$ and $\omega_2$. Hence $\mathcal{F}(f)$ is bounded and uniformly continuous, and it tends to zero as either frequency tends to infinity, uniformly in the other frequency. The first bound holds for every frequency; the second only for $\omega_i \ne 0$. Both were checked for $f = (1-q_1^2)^2(1-q_2^2)^2$ on $[-1,1]^2$, where $\lVert f\rVert_{L^1} = (16/15)^2 = 1.1378$ and $\lVert \partial_{q_1}f\rVert_{L^1} = 32/15 = 2.1333$, at six frequencies including the cases $\omega_1 = 0$ and $\omega_2 = 0$.
+and the same with $q_y$ and $\omega_2$. Hence $\mathcal{F}(f)$ is bounded and uniformly continuous, and it tends to zero as either frequency tends to infinity, uniformly in the other frequency. The first bound holds for every frequency; the second only for $\omega_i \ne 0$. Both were checked for $f = (1-q_x^2)^2(1-q_y^2)^2$ on $[-1,1]^2$, where $\lVert f\rVert_{L^1} = (16/15)^2 = 1.1378$ and $\lVert \partial/\partial q_x\,f\rVert_{L^1} = 32/15 = 2.1333$, at six frequencies including the cases $\omega_1 = 0$ and $\omega_2 = 0$.
 
 ### The Transform of a Measure
 
 **Definition.** Let $\mu$ be a finite positive Borel measure on $\mathbb{R}^2$. Its two transforms are
 
 $$
-\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} \exp(-2\pi e_1\omega_1q_1)\exp(-2\pi e_2\omega_2q_2)\, d\mu(q_1,q_2),
+\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} \exp(-2\pi \vec e_x\omega_1q_x)\exp(-2\pi \vec e_y\omega_2q_y)\, d\mu(q_x,q_y),
 $$
 $$
-\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} \exp(-2\pi e_2\omega_2q_2)\exp(-2\pi e_1\omega_1q_1)\, d\mu(q_1,q_2).
+\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2) = \int_{\mathbb{R}^2} \exp(-2\pi \vec e_y\omega_2q_y)\exp(-2\pi \vec e_x\omega_1q_x)\, d\mu(q_x,q_y).
 $$
 
 For a measure with density $f$ these are the transforms of the previous subsection. Written against $d\mu$ they are defined for measures with no density, which is what the Fourier analysis of probability measures needs. The kernel has modulus one, so both integrals converge absolutely.
@@ -234,7 +234,7 @@ For a measure with density $f$ these are the transforms of the previous subsecti
 
 **Reversal.** $\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2) = \overline{\mathcal{F}_{\mathrm{l}}(\mu)(\omega_1,\omega_2)}$, and likewise with the two orders exchanged: reversal of the frequency conjugates and exchanges the orders. The relation is often printed without the conjugation, which is the same slip as above; with the conjugation it is exact on a seven-point probability measure.
 
-**Cosine and $e_3$ parts.** $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int(\cos c_1\cos c_2 + e_3\sin c_1\sin c_2)\,d\mu$, and $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{l}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int\cos c_1\cos c_2\,d\mu$. Both are exact, and they are the measure form of the first and fifth reversal identities above.
+**Cosine and $\vec e_z$ parts.** $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{r}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int(\cos c_1\cos c_2 + \vec e_z\sin c_1\sin c_2)\,d\mu$, and $\mathcal{F}_{\mathrm{r}}(\mu)(\omega_1,\omega_2)+\mathcal{F}_{\mathrm{l}}(\mu)(-\omega_1,-\omega_2)$ equals $2\int\cos c_1\cos c_2\,d\mu$. Both are exact, and they are the measure form of the first and fifth reversal identities above.
 
 **Positive definiteness.** A bounded continuous $\mathbb{H}$-valued function $g$ on $\mathbb{R}^2$ is **positive definite** when
 
@@ -268,7 +268,7 @@ whenever the integral converges. This is the convolution on the additive group $
 
 **Associativity.** $(f * g) * h = f * (g * h)$.
 
-**Young's inequality.** If $1/p + 1/\tilde q = 1/r + 1$ with $1 \leq p, \tilde q, r \leq \infty$, then
+**Young's inequality.** If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then
 
 $$
 \|f * g\|_r \leq \|f\|_p \|g\|_q,
@@ -319,7 +319,7 @@ A **tempered distribution** on $\mathbb{H}$ is a continuous linear functional on
 **Differentiation.** For $T \in \mathcal{S}'(\mathbb{H})$ and $\phi \in \mathcal{S}(\mathbb{H})$,
 
 $$
-\langle \partial_\mu T, \phi \rangle = -\langle T, \partial_\mu \phi \rangle, \qquad \mu = 0, 1, 2, 3.
+\langle \partial/\partial q_\mu T, \phi \rangle = -\langle T, \partial/\partial q_\mu \phi \rangle, \qquad \mu\in\{t,x,y,z\}.
 $$
 
 **Multiplication by a function.** For $f \in C^\infty(\mathbb{H})$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{H})$,
@@ -445,7 +445,7 @@ $$
 $$
 
 $$
-|\langle\tilde q,r\rangle_{\natural*} - \langle\tilde q',r\rangle_{\natural*}| \leq C \frac{|\tilde q - \tilde q'|^\delta}{|\tilde q - r|^{4+\delta}}, \qquad |\tilde q - \tilde q'| < \frac{1}{2} |\tilde q - r|,
+|\langle\tilde q_1,r\rangle_{\natural*} - \langle\tilde q_2,r\rangle_{\natural*}| \leq C \frac{|\tilde q_1 - \tilde q_2|^\delta}{|\tilde q_1 - r|^{4+\delta}}, \qquad |\tilde q_1 - \tilde q_2| < \frac{1}{2} |\tilde q_1 - r|,
 $$
 
 and the analogous estimate in the second variable, for some $\delta > 0$. The power $4$ is the dimension of $\mathbb{H}$ as a real vector space.
@@ -468,7 +468,7 @@ $$
 \mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
 $$
 
-where the power is the quaternion power. Because the variable $t$ is real and the quaternion $s$ appears only in the exponent, the integral converges for $s_0$ in the appropriate range.
+where the power is the quaternion power. Because the variable $t$ is real and the quaternion $s$ appears only in the exponent, the integral converges for $s_t$ in the appropriate range.
 
 ### Relation to the Quaternion Fourier Transform
 
@@ -591,8 +591,8 @@ The section on the structure principle states what organises the subject: whenev
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis |
+| $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | General quaternion |
 | $\omega$ | Unit pure quaternion |
 | $\chi_\xi(\tilde q) = \exp(2\pi \omega \operatorname{Re}(\xi^{\natural} \tilde q))$ | Quaternion character |
 | $\mathcal F f$ | Quaternion Fourier transform |

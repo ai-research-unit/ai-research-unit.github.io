@@ -71,7 +71,7 @@ $$
 \frac{\overleftarrow{\partial}}{\partial\theta_i} = (-1)^{k-1}\, \frac{\partial}{\partial\theta_i}.
 $$
 
-Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\overleftarrow{\partial}_i f = \sum_k (-1)^{k-1} (\partial_i f)_k$ where $(\partial_i f)_k$ is the degree-$k$ component of $\partial_i f$.
+Consequently the two derivatives agree on monomials of odd degree and differ by a sign on monomials of even degree, and for a general element $f$ one has $\overleftarrow{\partial}/\partial\theta_i\,f = \sum_k (-1)^{k-1} (\partial/\partial\theta_i\,f)_k$ where $(\partial/\partial\theta_i\,f)_k$ is the degree-$k$ component of $\partial/\partial\theta_i\,f$.
 
 **Proof.** In a monomial of degree $k$ containing $\theta_i$ at position $j$, its removal by the left derivative gives the sign $(-1)^{j-1}$ and its removal by the right derivative gives the sign $(-1)^{k-j}$, since $\theta_i$ must pass the $k-j$ factors to its right. The ratio is $(-1)^{k-j-j+1} = (-1)^{k+1} = (-1)^{k-1}$.
 
@@ -119,7 +119,7 @@ $$
 I(\theta_1\theta_2\cdots\theta_n) = 1, \qquad I\left(\frac{\partial f}{\partial\theta_i}\right) = 0 \ \text{for all } f \text{ and all } i.
 $$
 
-**Proof.** The first condition fixes $I$ on the top monomial and hence, by linearity and the basis theorem, the functional is determined by its values on the basis; the second condition forces $I(\theta_I) = 0$ unless $I$ is the full set, because $\theta_I = \partial_{\theta_i}\theta_{I \cup \{i\}}$ up to sign whenever $i \notin I$.
+**Proof.** The first condition fixes $I$ on the top monomial and hence, by linearity and the basis theorem, the functional is determined by its values on the basis; the second condition forces $I(\theta_I) = 0$ unless $I$ is the full set, because $\theta_I = \partial/\partial\theta_i\,\theta_{I \cup \{i\}}$ up to sign whenever $i \notin I$.
 
 **Definition.** The integral over a subset of the variables, written $\int f\, d\theta_{i_1}\cdots d\theta_{i_k}$, is the composition of the corresponding partial integrations; it is a function of the remaining odd variables.
 
@@ -143,7 +143,7 @@ $$
 \int \left(\frac{\partial f}{\partial\theta_i} g\right) d\theta = -(-1)^{|f|} \int \left( f\, \frac{\partial g}{\partial\theta_i} \right) d\theta.
 $$
 
-**Proof.** (a) is linearity of the coefficient extraction. For (b), both $\theta$ and $\theta + \eta$ have the same linear span and the same top monomial, and the coefficient of the top monomial is unchanged by the translation, since the shift contributes only lower-degree terms after expansion: expanding $f(\theta+\eta)$ by the Leibniz rule, the extra terms each contain a factor $\eta$ and a product in which some $\theta_i$ is missing, hence have degree less than $n$ and top coefficient zero. For (c), the first identity is the characterisation of the integral; the second follows from (b) of the Leibniz proposition applied to $\int \partial_i(fg)\,d\theta = 0$.
+**Proof.** (a) is linearity of the coefficient extraction. For (b), both $\theta$ and $\theta + \eta$ have the same linear span and the same top monomial, and the coefficient of the top monomial is unchanged by the translation, since the shift contributes only lower-degree terms after expansion: expanding $f(\theta+\eta)$ by the Leibniz rule, the extra terms each contain a factor $\eta$ and a product in which some $\theta_i$ is missing, hence have degree less than $n$ and top coefficient zero. For (c), the first identity is the characterisation of the integral; the second follows from (b) of the Leibniz proposition applied to $\int \partial/\partial\theta_i(fg)\,d\theta = 0$.
 
 ### Change of Variables
 
@@ -251,7 +251,7 @@ so that $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2} = (2\pi
 
 The Grassmann algebra on $n$ odd generators is the exterior algebra of an $n$-dimensional odd module, with basis the squarefree monomials and rank $2^n$; a function of odd variables is a polynomial of degree at most $n$. Differentiation with respect to an odd variable is the removal of that variable with the sign of the transpositions required, left and right derivatives differing by $(-1)^{k-1}$ on a monomial of degree $k$, and the derivatives anticommute and satisfy a graded Leibniz rule.
 
-The Berezin integral is the linear functional extracting the top coefficient, equivalently the composition $\partial_{\theta_n}\cdots\partial_{\theta_1}$ of left derivatives. It is linear, invariant under odd translations, satisfies integration by parts, and obeys the Fubini rule for iterated integration. Under a linear change of odd variables $\theta = N\eta$ it scales by $\det(N)^{-1}$, the inverse of the determinant of the change of variables, in contrast with the bosonic Jacobian.
+The Berezin integral is the linear functional extracting the top coefficient, equivalently the composition $\partial/\partial\theta_n\cdots\partial/\partial\theta_1$ of left derivatives. It is linear, invariant under odd translations, satisfies integration by parts, and obeys the Fubini rule for iterated integration. Under a linear change of odd variables $\theta = N\eta$ it scales by $\det(N)^{-1}$, the inverse of the determinant of the change of variables, in contrast with the bosonic Jacobian.
 
 The Gaussian integral over odd variables gives the Pfaffian, $\int \exp(\frac12\theta^TA\theta)d\theta = \operatorname{Pf}(A)$ for an alternating matrix $A$, whose square is the determinant; the conjunction of the odd Gaussian with an ordinary Gaussian over even variables gives, up to $(2\pi)^{p/2}$, the inverse square root of the Berezinian, and the top-degree pairing of complementary exterior powers is perfect. The whole calculus is finite and algebraic.
 
@@ -266,7 +266,7 @@ The Gaussian integral over odd variables gives the Pfaffian, $\int \exp(\frac12\
 | $\theta_I$, $I = \{i_1 < \cdots < i_k\}$ | Squarefree monomial; basis of $\Lambda(V)$, rank $2^n$ |
 | $c_{\{1,\ldots,n\}}$ | Top coefficient of $f(\theta) = \sum_I c_I\theta_I$ |
 | $\dfrac{\partial}{\partial\theta_i}$, $\dfrac{\overleftarrow{\partial}}{\partial\theta_i}$ | Left and right derivatives; differ by $(-1)^{k-1}$ in degree $k$ |
-| $\int f\, d\theta = c_{\{1,\ldots,n\}} = \partial_{\theta_n}\cdots\partial_{\theta_1} f$ | Berezin integral |
+| $\int f\, d\theta = c_{\{1,\ldots,n\}} = \partial/\partial\theta_n\cdots\partial/\partial\theta_1 f$ | Berezin integral |
 | $\int f(\theta+\eta)\,d\theta = \int f(\theta)\,d\theta$ | Translation invariance for a constant odd shift $\eta$ |
 | $\theta = N\eta \Rightarrow \int f\,d\theta = \det(N)^{-1}\int f(N\eta)\,d\eta$ | Berezinian change of variables; Jacobian factor is an inverse determinant |
 | $\int \exp(\frac12\theta^T A\theta)d\theta = \operatorname{Pf}(A)$ | Odd Gaussian integral |

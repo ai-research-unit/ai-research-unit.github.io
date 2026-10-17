@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **two-sided operators** of the general quaternionic bilinear product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ of *Introduction to the General Quaternionic Algebra* are the products of a left and a right multiplication, with the left one carrying the conjugation of the product and the right one the plain product of the block:
+The **two-sided operators** of the general quaternionic bilinear product $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ of *Introduction to the General Quaternionic Algebra* are the products of a left and a right multiplication, with the left one carrying the conjugation of the product and the right one the plain product of the block:
 
 $$
 T_{\tilde a,\tilde b}(\tilde q) = \tilde a \star \tilde q \cdot \tilde b = \tilde a^{\natural}\tilde q\,\tilde b = L_{\tilde a^{\natural}}R_{\tilde b} .
@@ -10,7 +10,7 @@ $$
 
 They are the elementary sandwiches of the block, and their family carries the whole operator calculus of the algebra: a composition law, an adjoint for each of the two forms of the space, and the fact — the *type* of the family — that the sandwiches span every real-linear operator of $\mathbb{H}$. The left factor is the left multiplication by the conjugated parameter, $L_{\tilde a^{\natural}}$. This article establishes those four facts and compares them with the plain algebra of the same space, where the left multiplication does not carry the conjugation and the two laws are correspondingly different. The one-sided families are *One-Sided Operators on the General Quaternionic Algebra*, below this article in this category, and the left family with its monoid *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, above this article in this category; the forms are *The Isotropic Structure of the General Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The elements are $\tilde p = \sum_\mu p_\mu e_\mu$ with the conjugation ${}^{\natural}$ negating $e_1,e_2,e_3$; the product is $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$; the two forms of the space are the plain form $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$ and the quaternionic form $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural}) = \sum_\mu p_\mu q_\mu$ of signature $(4,0)$; a right multiplication is the plain one, $R_{\tilde b}(\tilde q) = \tilde q\tilde b$.
+**Conventions.** The elements are $\tilde q_1 = \sum_\mu q_{1\mu} e_\mu$ with the conjugation ${}^{\natural}$ negating $\vec e_x,\vec e_y,\vec e_z$; the product is $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$; the two forms of the space are the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$ of signature $(1,3)$ and the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural}) = \sum_\mu q_{1\mu} q_{2\mu}$ of signature $(4,0)$; a right multiplication is the plain one, $R_{\tilde b}(\tilde q) = \tilde q\tilde b$.
 
 ## The Family
 
@@ -46,49 +46,49 @@ $$
 \alpha,\beta,\alpha',\beta' \neq 0 : \quad L_{\alpha}R_{\beta} = L_{\alpha'}R_{\beta'} \iff \alpha' = \mu\alpha \text{ and } \beta' = \mu^{-1}\beta \text{ for some } \mu \in \mathbb{R}^\times .
 $$
 
-*Proof.* The equality $L_\alpha R_\beta = 0$ says $\alpha\tilde q\beta = 0$ for every $\tilde q$; at $\tilde q = e_0$ this is $\alpha\beta = 0$, and in a division algebra a product vanishes exactly when a factor does, so $\alpha = 0$ or $\beta = 0$, and conversely. Assume now all four parameters nonzero and $\alpha\tilde q\beta = \alpha'\tilde q\beta'$ for every $\tilde q$. Multiply on the left by $\alpha^{-1}$ and put $\gamma = \alpha^{-1}\alpha'$, so that $\tilde q\beta = \gamma\tilde q\beta'$ for every $\tilde q$. At $\tilde q = e_0$ this gives $\beta = \gamma\beta'$, whence $\beta' = \gamma^{-1}\beta$; substituting back gives $(\tilde q\gamma - \gamma\tilde q)\beta' = 0$ for every $\tilde q$, and since $\beta' \neq 0$ the parameter $\gamma$ is central, that is $\gamma = \mu$ real and nonzero. Therefore $\alpha' = \alpha\gamma = \mu\alpha$ and $\beta' = \mu^{-1}\beta$. Conversely, if $\alpha' = \mu\alpha$ and $\beta' = \mu^{-1}\beta$ then $L_{\alpha'}R_{\beta'} = L_{\mu\alpha}R_{\mu^{-1}\beta} = L_\alpha R_\beta$, because the scalar is central.
+*Proof.* The equality $L_\alpha R_\beta = 0$ says $\alpha\tilde q\beta = 0$ for every $\tilde q$; at $\tilde q = e_t$ this is $\alpha\beta = 0$, and in a division algebra a product vanishes exactly when a factor does, so $\alpha = 0$ or $\beta = 0$, and conversely. Assume now all four parameters nonzero and $\alpha\tilde q\beta = \alpha'\tilde q\beta'$ for every $\tilde q$. Multiply on the left by $\alpha^{-1}$ and put $\gamma = \alpha^{-1}\alpha'$, so that $\tilde q\beta = \gamma\tilde q\beta'$ for every $\tilde q$. At $\tilde q = e_t$ this gives $\beta = \gamma\beta'$, whence $\beta' = \gamma^{-1}\beta$; substituting back gives $(\tilde q\gamma - \gamma\tilde q)\beta' = 0$ for every $\tilde q$, and since $\beta' \neq 0$ the parameter $\gamma$ is central, that is $\gamma = \mu$ real and nonzero. Therefore $\alpha' = \alpha\gamma = \mu\alpha$ and $\beta' = \mu^{-1}\beta$. Conversely, if $\alpha' = \mu\alpha$ and $\beta' = \mu^{-1}\beta$ then $L_{\alpha'}R_{\beta'} = L_{\mu\alpha}R_{\mu^{-1}\beta} = L_\alpha R_\beta$, because the scalar is central.
 
-**Corollary (the monoid and the kernel).** The family is a monoid under composition, with identity $T_{e_0,e_0} = \mathrm{id}$; the map $(\tilde a,\tilde b) \mapsto T_{\tilde a,\tilde b}$ is a homomorphism of monoids onto the family from the product of two opposite monoids, $(\mathbb{H}^{\mathrm{opp}})^2$ with the multiplication of the parameters in both places, and its kernel — the preimage of the identity — is the one-parameter group
+**Corollary (the monoid and the kernel).** The family is a monoid under composition, with identity $T_{e_t,e_t} = \mathrm{id}$; the map $(\tilde a,\tilde b) \mapsto T_{\tilde a,\tilde b}$ is a homomorphism of monoids onto the family from the product of two opposite monoids, $(\mathbb{H}^{\mathrm{opp}})^2$ with the multiplication of the parameters in both places, and its kernel — the preimage of the identity — is the one-parameter group
 
 $$
 \{(\lambda,\lambda^{-1}) : \lambda \in \mathbb{R}^\times\} \cong \mathbb{R}^\times .
 $$
 
-*Proof.* Closure is the law, and $T_{e_0,e_0}(\tilde q) = e_0^{\natural}\tilde q e_0 = \tilde q$. The homomorphism reads the law as the multiplication of the parameters with both places reversed, which is the opposite law in each place. For the kernel, $T_{\tilde a,\tilde b} = \mathrm{id}$ forces $T_{\tilde a,\tilde b}$ nonzero, hence $\tilde a \neq 0$ and $\tilde b \neq 0$; the agree-as-operators criterion applied to the pairs $(\tilde a^{\natural},\tilde b)$ and $(e_0,e_0)$ then gives $\tilde a^{\natural} = \mu e_0$ and $\tilde b = \mu^{-1}e_0$ with a single real $\mu \neq 0$, that is $\tilde a = \mu$ and $\tilde b = \mu^{-1}$ real scalars. Hence the kernel is the displayed one-parameter group. The two-element set $\{(\pm e_0,\pm e_0)\}$ is the part of it inside the integral scalars, not the whole kernel.
+*Proof.* Closure is the law, and $T_{e_t,e_t}(\tilde q) = e_t^{\natural}\tilde q e_t = \tilde q$. The homomorphism reads the law as the multiplication of the parameters with both places reversed, which is the opposite law in each place. For the kernel, $T_{\tilde a,\tilde b} = \mathrm{id}$ forces $T_{\tilde a,\tilde b}$ nonzero, hence $\tilde a \neq 0$ and $\tilde b \neq 0$; the agree-as-operators criterion applied to the pairs $(\tilde a^{\natural},\tilde b)$ and $(e_t,e_t)$ then gives $\tilde a^{\natural} = \mu e_t$ and $\tilde b = \mu^{-1}e_t$ with a single real $\mu \neq 0$, that is $\tilde a = \mu$ and $\tilde b = \mu^{-1}$ real scalars. Hence the kernel is the displayed one-parameter group. The two-element set $\{(\pm e_t,\pm e_t)\}$ is the part of it inside the integral scalars, not the whole kernel.
 
-**Corollary (the one-parameter redundancy).** The parametrisation is not injective: $T_{\lambda\tilde a,\lambda^{-1}\tilde b} = T_{\tilde a,\tilde b}$ for every real $\lambda \neq 0$, because the scalar commutes with everything. The family is therefore a quotient of $(\mathbb{H}^{\mathrm{opp}})^2$ by the diagonal scalars, and the two-sided operators of a given parameter pair are the same operator along the two one-parameter lines of the scaling. The kernel of the previous corollary is exactly the diagonal scaling line through $(e_0,e_0)$.
+**Corollary (the one-parameter redundancy).** The parametrisation is not injective: $T_{\lambda\tilde a,\lambda^{-1}\tilde b} = T_{\tilde a,\tilde b}$ for every real $\lambda \neq 0$, because the scalar commutes with everything. The family is therefore a quotient of $(\mathbb{H}^{\mathrm{opp}})^2$ by the diagonal scalars, and the two-sided operators of a given parameter pair are the same operator along the two one-parameter lines of the scaling. The kernel of the previous corollary is exactly the diagonal scaling line through $(e_t,e_t)$.
 
 **Corollary (the units).** $T_{\tilde a,\tilde b}$ is invertible exactly when $\tilde a \neq 0$ and $\tilde b \neq 0$, with inverse $T_{\tilde a^{-1},\tilde b^{-1}}$.
 
-*Proof.* By the law, $T_{\tilde a,\tilde b}T_{\tilde a^{-1},\tilde b^{-1}} = T_{\tilde a^{-1}\tilde a,\tilde b^{-1}\tilde b} = T_{e_0,e_0}$; conversely an invertible two-sided operator has a nonzero value at $e_0$ on both sides, $\tilde a^{\natural}\tilde b \neq 0$, so both parameters are nonzero. The inverses are taken in the plain algebra, where every nonzero element has one.
+*Proof.* By the law, $T_{\tilde a,\tilde b}T_{\tilde a^{-1},\tilde b^{-1}} = T_{\tilde a^{-1}\tilde a,\tilde b^{-1}\tilde b} = T_{e_t,e_t}$; conversely an invertible two-sided operator has a nonzero value at $e_t$ on both sides, $\tilde a^{\natural}\tilde b \neq 0$, so both parameters are nonzero. The inverses are taken in the plain algebra, where every nonzero element has one.
 
 ## The Adjoint
 
 Each form of the space defines a transpose on the operators, and the two transposes of a sandwich are other sandwiches with the parameters conjugated and swapped.
 
-**Theorem (the transpose for the plain form).** With respect to the plain form $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$, the transpose of a two-sided operator is
+**Theorem (the transpose for the plain form).** With respect to the plain form $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$, the transpose of a two-sided operator is
 
 $$
 T_{\tilde a,\tilde b}^{\sim} = T_{\tilde b^{\natural},\tilde a^{\natural}} = L_{\tilde b}R_{\tilde a^{\natural}} .
 $$
 
-*Proof.* The transpose is characterised by $\langle T\tilde p,\tilde q\rangle = \langle\tilde p,T^{\sim}\tilde q\rangle$. For $T = T_{\tilde a,\tilde b}$,
+*Proof.* The transpose is characterised by $\langle T\tilde q_1,\tilde q_2\rangle = \langle\tilde q_1,T^{\sim}\tilde q_2\rangle$. For $T = T_{\tilde a,\tilde b}$,
 $$
-\mathrm B\bigl(T\tilde p,\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde p\tilde b\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde p\,\tilde b\tilde q\tilde a^{\natural}\bigr) ,
+\mathrm B\bigl(T\tilde q_1,\tilde q_2\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde q_1\tilde b\tilde q_2\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,\tilde b\tilde q_2\tilde a^{\natural}\bigr) ,
 $$
-by the cyclic invariance of the scalar part, and the last is $\langle\tilde p,\tilde b\tilde q\tilde a^{\natural}\rangle = \langle\tilde p,T_{\tilde b^{\natural},\tilde a^{\natural}}\tilde q\rangle$, since $(\tilde b^{\natural})^{\natural}\tilde q\tilde a^{\natural} = \tilde b\tilde q\tilde a^{\natural}$.
+by the cyclic invariance of the scalar part, and the last is $\langle\tilde q_1,\tilde b\tilde q_2\tilde a^{\natural}\rangle = \langle\tilde q_1,T_{\tilde b^{\natural},\tilde a^{\natural}}\tilde q_2\rangle$, since $(\tilde b^{\natural})^{\natural}\tilde q_2\tilde a^{\natural} = \tilde b\tilde q_2\tilde a^{\natural}$.
 
-**Theorem (the transpose for the quaternionic form).** With respect to the quaternionic form $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is
+**Theorem (the transpose for the quaternionic form).** With respect to the quaternionic form $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ of signature $(4,0)$, the transpose of a two-sided operator is
 
 $$
 T_{\tilde a,\tilde b}^{\dagger} = T_{\tilde a^{\natural},\tilde b^{\natural}} .
 $$
 
-*Proof.* The characterisation is $\langle T\tilde p,\tilde q\rangle_{\natural} = \langle\tilde p,T^{\dagger}\tilde q\rangle_{\natural}$, and
+*Proof.* The characterisation is $\langle T\tilde q_1,\tilde q_2\rangle_{\natural} = \langle\tilde q_1,T^{\dagger}\tilde q_2\rangle_{\natural}$, and
 $$
-N\bigl(T\tilde p,\tilde q\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde p\tilde b\tilde q^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde p\,\tilde b\tilde q^{\natural}\tilde a^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde p\,(\tilde a\tilde q\tilde b^{\natural})^{\natural}\bigr) ,
+N\bigl(T\tilde q_1,\tilde q_2\bigr) = \mathrm{Sc}\bigl(\tilde a^{\natural}\tilde q_1\tilde b\tilde q_2^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,\tilde b\tilde q_2^{\natural}\tilde a^{\natural}\bigr) = \mathrm{Sc}\bigl(\tilde q_1\,(\tilde a\tilde q_2\tilde b^{\natural})^{\natural}\bigr) ,
 $$
-using that $(\tilde a\tilde q\tilde b^{\natural})^{\natural} = \tilde b\tilde q^{\natural}\tilde a^{\natural}$; the last is $\langle\tilde p,\tilde a\tilde q\tilde b^{\natural}\rangle_{\natural} = \langle\tilde p,T_{\tilde a^{\natural},\tilde b^{\natural}}\tilde q\rangle_{\natural}$, since $(\tilde a^{\natural})^{\natural}\tilde q\tilde b^{\natural} = \tilde a\tilde q\tilde b^{\natural}$.
+using that $(\tilde a\tilde q_2\tilde b^{\natural})^{\natural} = \tilde b\tilde q_2^{\natural}\tilde a^{\natural}$; the last is $\langle\tilde q_1,\tilde a\tilde q_2\tilde b^{\natural}\rangle_{\natural} = \langle\tilde q_1,T_{\tilde a^{\natural},\tilde b^{\natural}}\tilde q_2\rangle_{\natural}$, since $(\tilde a^{\natural})^{\natural}\tilde q_2\tilde b^{\natural} = \tilde a\tilde q_2\tilde b^{\natural}$.
 
 **Corollary (the two transposes and the comparison).** The plain transpose swaps the two parameters and conjugates them both, $T^{\sim}_{\tilde a,\tilde b} = T_{\tilde b^{\natural},\tilde a^{\natural}}$; the quaternionic transpose keeps the two parameters in place and conjugates them both, $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$. For a nonzero sandwich, the two transposes coincide exactly when the two parameters are proportional over $\mathbb{R}$,
 
@@ -124,7 +124,7 @@ The two criteria are stated for a nonzero sandwich because the zero operators $T
 
 ## Summary
 
-The two-sided operators of the quaternionic product are $T_{\tilde a,\tilde b}(\tilde q) = \tilde a^{\natural}\tilde q\tilde b$, the sandwiches of the conjugated left multiplication $L_{\tilde a^{\natural}}$ with the plain right multiplication $R_{\tilde b}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $T_{e_0,e_0}$ and composition law $T_{\tilde a,\tilde b}T_{\tilde c,\tilde d} = T_{\tilde c\tilde a,\tilde d\tilde b}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $T_{\tilde a^{-1},\tilde b^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde a,\tilde b} = T_{\tilde b^{\natural},\tilde a^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero sandwich is plain-self-transpose exactly for $\tilde b \in \mathbb{R}\tilde a^{\natural}$. The plain algebra has the same family of operators with the plain sandwiches, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
+The two-sided operators of the quaternionic product are $T_{\tilde a,\tilde b}(\tilde q) = \tilde a^{\natural}\tilde q\tilde b$, the sandwiches of the conjugated left multiplication $L_{\tilde a^{\natural}}$ with the plain right multiplication $R_{\tilde b}$. They span every real-linear operator of $\mathbb{H}$; two of them agree exactly on parameter pairs differing by a real scalar, so the family is a quotient of the parameter space by that scaling. They form a monoid with identity $T_{e_t,e_t}$ and composition law $T_{\tilde a,\tilde b}T_{\tilde c,\tilde d} = T_{\tilde c\tilde a,\tilde d\tilde b}$ reversing **both** parameters, the identity being reached exactly on the one-parameter kernel $\{(\lambda,\lambda^{-1})\}$; the invertible elements are those with both parameters nonzero, with inverse $T_{\tilde a^{-1},\tilde b^{-1}}$. The transpose for the plain form swaps and conjugates the two parameters, $T^{\sim}_{\tilde a,\tilde b} = T_{\tilde b^{\natural},\tilde a^{\natural}}$; the transpose for the quaternionic form keeps the places and conjugates, $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$; the two coincide on the real-proportional parameters, and a nonzero sandwich is plain-self-transpose exactly for $\tilde b \in \mathbb{R}\tilde a^{\natural}$. The plain algebra has the same family of operators with the plain sandwiches, the composition law reversing one parameter, and the transpose swapping the parameters without conjugating; the whole difference is the conjugation that the first slot of the quaternionic product inserts.
 
 ## Summary of Notation
 
@@ -138,8 +138,8 @@ The two-sided operators of the quaternionic product are $T_{\tilde a,\tilde b}(\
 | $T^{\dagger}_{\tilde a,\tilde b} = T_{\tilde a^{\natural},\tilde b^{\natural}}$ | the transpose for the quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $T^{\sim}_{\tilde a,\tilde b} = T^{\dagger}_{\tilde a,\tilde b} \iff \tilde b \in \mathbb{R}\tilde a$ | the two transposes coincide on proportional parameters |
 | $T_{\tilde a,\tilde b} = T^{\sim}_{\tilde a,\tilde b} \iff \tilde b \in \mathbb{R}\tilde a^{\natural}$ | the plain self-transpose parameters |
-| $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q)$ | the plain form, of signature $(1,3)$ |
-| $\langle\tilde p,\tilde q\rangle_{\natural} = \mathrm{Sc}(\tilde p\tilde q^{\natural})$ | the quaternionic form, of signature $(4,0)$ |
+| $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2)$ | the plain form, of signature $(1,3)$ |
+| $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ | the quaternionic form, of signature $(4,0)$ |
 
 ## Further Reading
 

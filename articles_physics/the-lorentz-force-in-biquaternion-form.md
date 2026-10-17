@@ -33,14 +33,14 @@ $$
 
 and the field strength keeps the canonical form $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ of the field-strength article.
 
-The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_0e_0 + \tilde{Q}_1e_1 + \tilde{Q}_2e_2 + \tilde{Q}_3e_3$ is $\bar{X} = \tilde{Q}_0e_0 - \vec Q$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
+The conventions are those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and the scalar imaginary is $i$ (central, $i^2 = -1$). The conjugate of a biquaternion $\tilde{Q} = \tilde{Q}_te_t + \tilde{Q}_x\vec e_x + \tilde{Q}_y\vec e_y + \tilde{Q}_z\vec e_z$ is $\bar{X} = \tilde{Q}_te_t - \vec Q$, its complex conjugate is $\tilde{Q}^* = \sum_\mu \tilde{Q}_\mu^* e_\mu$, and its Hermitian conjugate is $\tilde{Q}^{*} = \bar{X}^{\,*} = \sum_\mu \tilde{Q}_\mu^* e_\mu$ with the vector components negated. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, $\vec v$ is the particle velocity, $\vec v_b$ is a frame (boost) velocity, and $\vec B = \mu\vec H$ is the magnetic induction.
 
 ## The Lorentz Four-Force in Component Form
 
 The component form is the established result, and it is the starting point of everything that follows. For a particle of charge $ϙ$ and velocity $\vec v$ in fields $\vec E$ and $\vec B$, the **Lorentz four-force biquaternion** is
 
 $$
-\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
+\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
 where
@@ -49,13 +49,13 @@ $$
 \gamma = \frac{1}{\sqrt{1 - \vec v^2/c^2}}
 $$
 
-is the Lorentz factor. The scalar part is purely imaginary and the vector part is real, so $\tilde{K}$ lies in the anti-Hermitian subspace $\mathbb{M}_-$, like the four-velocity $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ and the four-momentum $\tilde{P} = m\tilde{V}$. Writing $\vec f = ϙ(\vec E + \vec v\times\vec B)$ for the (relativistic) three-force and $P_{\text{mech}} = \vec f\cdot\vec v = ϙ\,\vec E\cdot\vec v$ for the mechanical power, the component form reads
+is the Lorentz factor. The scalar part is purely imaginary and the vector part is real, so $\tilde{K}$ lies in the anti-Hermitian subspace $\mathbb{M}_-$, like the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ and the four-momentum $\tilde{P} = m\tilde{V}$. Writing $\vec f = ϙ(\vec E + \vec v\times\vec B)$ for the (relativistic) three-force and $P_{\text{mech}} = \vec f\cdot\vec v = ϙ\,\vec E\cdot\vec v$ for the mechanical power, the component form reads
 
 $$
-\tilde{K} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_0 + \gamma\,\vec f.
+\tilde{K} = i\,\frac{\gamma P_{\text{mech}}}{c}\,e_t + \gamma\,\vec f.
 $$
 
-This is the biquaternion transcription of the Minkowski force $K^\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict$ convention, so the coefficient of $e_0$ is the $ict$ time component $K^0$.
+This is the biquaternion transcription of the Minkowski force $K^\mu = (i\gamma P_{\text{mech}}/c,\ \gamma\vec f)$ in the $ict$ convention, so the coefficient of $e_t$ is the $ict$ time component $K^0$.
 
 **Origin in the field tensor.** The component form is the contraction $K^\mu = ϙ\,F^{\mu\nu}v_\nu$. In the $ict$ convention the metric is Euclidean, so no metric factor arises and $v_\nu = v^\nu = (i\gamma c,\ \gamma\vec v)$. The field tensor is the one fixed by the field-strength article,
 
@@ -143,7 +143,7 @@ $$
 
 The combination that extracts $\vec E$ is $\tilde{F} + \tilde{F}^{*} = 2i\sqrt{\epsilon}\,\vec E$; the combination that extracts $\vec B$ is $\tilde{F}^{*} - \tilde{F} = 2\sqrt{\mu}\,\vec H = 2\vec B/\sqrt{\mu}$. So the correct product formula must involve both $\tilde{F}$ and $\tilde{F}^{*}$. This is the technical reason the earlier article anticipated "the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$": the two objects $\tilde{F}$ and $\tilde{F}^{*}$ are the self-dual and anti-self-dual halves of the field tensor, and the Lorentz force pairs the four-velocity with both.
 
-**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde\Lambda(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $\dot{\tilde\Lambda} = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $\dot{\tilde{P}} = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
+**A different route.** The obstruction above is real but it is not the only way to the force. If one lets the boost rotor of the particle depend on proper time — the **eigenspinor** $\tilde\Lambda(\tau)$ of *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* — then the force arises from a **linear** source rather than a product: $d\tilde\Lambda/d\tau = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(ϙ/m)\tilde{F}^{*}$, and the equation of motion is $d\tilde{P}/d\tau = P_{\mathbb{M}_-}(\tilde\Omega\tilde{P})$. The force is still not a single product of $\tilde{F}$ with $\tilde{V}$, so the finding of this section stands; what the eigenspinor shows is that the product formula of the next section is a *derived* corollary of a linear evolution, not the primitive statement of the law. The two routes agree on every configuration, and the agreement was checked in the eigenspinor article.
 
 ## The Biquaternion Product Formula
 
@@ -332,9 +332,9 @@ The product formula makes the relation between the four-force and the kinematic 
 The four-velocity and four-momentum are
 
 $$
-\tilde{V} = \gamma\left(ic\,e_0 + \vec v\right),
+\tilde{V} = \gamma\left(ic\,e_t + \vec v\right),
 \qquad
-\tilde{P} = m\tilde{V} = i\,\frac{E}{c}\,e_0 + \vec p,
+\tilde{P} = m\tilde{V} = i\,\frac{E}{c}\,e_t + \vec p,
 $$
 
 with $E = \gamma mc^2$ and $\vec p = \gamma m\vec v$, and they satisfy the normalization and mass-shell conditions
@@ -424,7 +424,7 @@ in every frame. The scalar measures the electric field in the particle's rest fr
 The invariants $I_1, I_2$ determine the Lorentz type of the field, and therefore the possible shapes of the force. The classification, established in the field-strength article, is the following.
 
 - **Null field** ($I_1 = I_2 = 0$). Then $\vec E\perp\vec B$ and $|\vec E| = c|\vec B|$ pointwise, and no Lorentz transformation can remove either field. The field is radiative. The biquaternion norm of the field vanishes, and $\tilde{F}$ is a zero divisor of $\mathbb{B}$.
-- **Electric type** ($I_2 = 0$, $I_1 > 0$). Then there is a frame in which $\vec B = 0$, with $\vec E^2 = I_1$. In that frame the four-force is $\tilde{K} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_0 + \gamma ϙ\,\vec E$: purely electric.
+- **Electric type** ($I_2 = 0$, $I_1 > 0$). Then there is a frame in which $\vec B = 0$, with $\vec E^2 = I_1$. In that frame the four-force is $\tilde{K} = i\gamma ϙ(\vec E\cdot\vec v)/c\,e_t + \gamma ϙ\,\vec E$: purely electric.
 - **Magnetic type** ($I_2 = 0$, $I_1 < 0$). Then there is a frame in which $\vec E = 0$, with $c^2\vec B^2 = -I_1$. In that frame the four-force is $\tilde{K} = \gamma ϙ(\vec v\times\vec B)$: purely magnetic, and no work is done.
 - **Generic field** ($I_2 \neq 0$). Then no frame removes either field, but there is a frame in which $\vec E$ and $\vec B$ are parallel, with magnitudes determined by the two invariants through
 
@@ -501,7 +501,7 @@ $$
 \vec K' = \vec K + \frac{\gamma_b - 1}{v_b^2}\left(\vec v_b\cdot\vec K\right)\vec v_b - \gamma_b\,\frac{K^0}{c}\,\vec v_b.
 $$
 
-Written in the biquaternion variables, with $\tilde{K} = K^0e_0 + \vec K$ and $\tilde{K}' = K'^0e_0 + \vec K'$, these are exactly the components of $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
+Written in the biquaternion variables, with $\tilde{K} = K^0e_t + \vec K$ and $\tilde{K}' = K'^0e_t + \vec K'$, these are exactly the components of $\tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$. The verification is direct: the rotor conjugation and the component formulas agree to machine precision at random boosts and random forces (maximum discrepancy of order $10^{-15}$).
 
 **How the field transforms.** The field strength is *not* a four-vector, and it does not transform like one. Under the same boost it transforms in the rank-two (bivector) representation,
 
@@ -548,7 +548,7 @@ $$
 where $\rho_E = \mathrm{div}\,\vec D$ and $\rho_H = -\mathrm{div}\,\vec B$ are the electric and magnetic charge densities, $\vec j_E$ and $\vec j_H$ the corresponding currents, $\vec D = \epsilon\vec E$, and $\vec B = \mu\vec H$. Let a second field have A-field
 
 $$
-\vec\mathcal A' = \sqrt{\epsilon}\,\vec E' + i\sqrt{\mu}\,\vec H' = -i\tilde{F}',
+\vec{\mathcal A}' = \sqrt{\epsilon}\,\vec E' + i\sqrt{\mu}\,\vec H' = -i\tilde{F}',
 $$
 
 the dual field strength of *The Magnetic-Charge–Mass Hypothesis* (the Maxwell article's A-field in its own sign convention). The programme's **power–force biquaternion** is the product
@@ -560,11 +560,11 @@ $$
 Its scalar and vector parts were recomputed here and are
 
 $$
-\mathrm{Sc}\big(\tilde{\mathcal F}\big) = \big(\vec\mathcal A',\vec J\big)
+\mathrm{Sc}\big(\tilde{\mathcal F}\big) = \big(\vec{\mathcal A}',\vec J\big)
 = \frac{1}{c}\left(\vec E'\cdot\vec j_E + \vec H'\cdot\vec j_H\right)
 + i\left(\vec B'\cdot\vec j_E - \vec D'\cdot\vec j_H\right),
 \qquad
-\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\rho\,\vec\mathcal A' + \big[\vec\mathcal A',\vec J\big],
+\mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\rho\,\vec{\mathcal A}' + \big[\vec{\mathcal A}',\vec J\big],
 $$
 
 where $(\cdot,\cdot)$ is the general plain bilinear form $\sum_k F_kG_k$. The scalar part is a **power density**: its real part is the rate at which the electric and gravimagnetic fields do work on their currents, and its imaginary part is the corresponding magnetic-charge quantity.
@@ -575,7 +575,7 @@ $$
 \mathrm{Vect}\big(\tilde{\mathcal F}\big) = -\,i\left(\vec F_H + i\,\vec F_E\right),
 \qquad
 \vec F_H + i\,\vec F_E = i\,\mathrm{Vect}\big(\tilde{\mathcal F}\big)
-= \rho\,\vec\mathcal A' - i\,\vec J\times\vec\mathcal A' ,
+= \rho\,\vec{\mathcal A}' - i\,\vec J\times\vec{\mathcal A}' ,
 $$
 
 so that $\vec F_E = \mathrm{Re}\,\mathrm{Vect}(\tilde{\mathcal F})$ and $\vec F_H = -\mathrm{Im}\,\mathrm{Vect}(\tilde{\mathcal F})$. Expanding with the definitions above gives the four terms of the first half with their coefficients,
@@ -618,7 +618,7 @@ Two things must be kept apart in using it. First, it is a *formal* correspondenc
 The Lorentz four-force has the component form
 
 $$
-\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
+\tilde{K} = i\,\frac{\gamma ϙ}{c}\left(\vec E\cdot\vec v\right)e_t + \gamma ϙ\left(\vec E + \vec v\times\vec B\right),
 $$
 
 which is the contraction $K^\mu = ϙF^{\mu\nu}v_\nu$ written in the biquaternion basis, and it lies in the anti-Hermitian subspace $\mathbb{M}_-$. Its expression as a biquaternion product of the field strength and the four-velocity is not the real part of $\tilde{F}\tilde{V}$ — that object has the wrong reality structure and lies outside $\mathbb{M}_-$ — but the anti-Hermitian projection of $\tilde{V}\tilde{F}$:
@@ -632,14 +632,14 @@ Equivalently, $\tilde{K} = -\frac{ϙ}{2c\sqrt{\epsilon}}(\tilde{V}\tilde{F} + \t
 
 The structural consequences are these. The four-force is orthogonal to the four-momentum, $\tilde{K}\tilde{P}^{\natural} + \tilde{P}\tilde{K}^{\natural} = 0$, so the mass shell $\tilde{P}\tilde{P}^{\natural} = -m^2c^2$ is preserved and the rest mass is unchanged by the Lorentz force. The force's biquaternion norm $\langle\tilde{K}\rangle_{\natural}$ is a Lorentz scalar equal to $ϙ^2\vec E_{\text{rest}}^2$, the squared electric field in the particle's rest frame. The field invariants $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$ classify the field as null, electric, magnetic, or generic, and thereby fix the simplest possible shape of the force and, for a uniform field, the characteristic rates of the motion: the eigenvalues of the field matrix solve $\lambda^4 - (I_1/c^2)\lambda^2 - I_2^2/c^2 = 0$. In the null case a null eigenvector $k$ of the field matrix gives one further invariant of the motion, $k\cdot P$. Finally, under boosts the four-force transforms in the vector representation, $\tilde{K}' = \tilde{\Lambda}\tilde{K}\tilde{\Lambda}^{*}$, while the field transforms in the bivector representation, $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, and the product formula is covariant under the pair.
 
-At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = -\tilde{\Theta}\circ\vec\mathcal A'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
+At the level of densities the companion programme replaces the per-particle force by the power–force biquaternion $\tilde{\mathcal F} = -\tilde{\Theta}\circ\vec{\mathcal A}'$, whose scalar part is a power density and whose vector part splits into a Coulomb, a gravitational, a Lorentz and an electromass term; it is the density counterpart of the same product, with the per-particle $\tilde{K}$ and the per-volume $\tilde{\mathcal F}$ kept strictly apart.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) subspaces |
 | $\tilde{Q}^{*} = \bar{X}^{\,*}$ | Hermitian conjugate |
@@ -657,12 +657,12 @@ At the level of densities the companion programme replaces the per-particle forc
 | $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor of the particle |
 | $\gamma_b = 1/\sqrt{1-\vec v_b^2/c^2}$ | Lorentz factor of the boost |
 | $\tau$ | Proper time |
-| $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity biquaternion |
+| $\tilde{V} = \gamma(ic\,e_t + \vec v)$ | Four-velocity biquaternion |
 | $\tilde{P} = m\tilde{V}$ | Four-momentum biquaternion |
 | $\tilde{K} = d\tilde{P}/d\tau$ | Four-force (Minkowski force) biquaternion |
-| $\vec\mathcal A = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength, complex three-vector) |
+| $\vec{\mathcal A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength, complex three-vector) |
 | $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion of a field |
-| $\tilde{\mathcal F} = -\tilde{\Theta}\circ\vec\mathcal A'$ | Power–force density biquaternion (per unit volume; not $\tilde{K}$) |
+| $\tilde{\mathcal F} = -\tilde{\Theta}\circ\vec{\mathcal A}'$ | Power–force density biquaternion (per unit volume; not $\tilde{K}$) |
 | $\rho_E, \rho_H$, $\vec j_E, \vec j_H$ | Electric and magnetic charge and current densities |
 | $\vec D = \epsilon\vec E$, $\vec B = \mu\vec H$ | Electric displacement and magnetic induction |
 | $\vec f = ϙ(\vec E + \vec v\times\vec B)$ | Relativistic three-force |

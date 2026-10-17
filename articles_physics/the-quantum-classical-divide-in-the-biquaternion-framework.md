@@ -8,13 +8,13 @@ A recent paper by Korolkova, Sánchez-Soto, and Leuchs (arXiv:2405.15692, 2024) 
 
 This article asks a specific question: does the biquaternion framework developed in the companion articles have a natural home for the operational criterion, and if so, does it add anything to it?
 
-The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde{U}$ (with $\tilde{U}\tilde{U}^{*} = e_0$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
+The answer to the first part is yes. The framework already distinguishes between two kinds of operation: unitary elements $\tilde{U}$ (with $\tilde{U}\tilde{U}^{*} = e_t$) generate reversible evolution by rotor conjugation; idempotent elements $\tilde\Pi$ (with $\tilde\Pi^2 = \tilde\Pi$) generate irreversible projection by the sandwich operation. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs — count the idempotents applied to the two partitions — is exactly the framework's reversible/irreversible dichotomy applied to the specific setting of non-separability. The framework gives the criterion an algebraic home.
 
 The answer to the second part is a qualified **not yet**. The framework expresses the criterion cleanly, and it suggests a structural reason for *why* the criterion works — the material/informational split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$. But it does not yet predict anything the operational criterion does not already predict, and it does not yet specify the dynamics of the cross-sector coupling that would be needed to make the structural reason a dynamical reason. The framework sharpens the criterion; it does not extend it.
 
 The article is organized as follows. Section 2 presents the operational criterion in the paper's own terms. Section 3 gives the criterion in the framework's language: idempotent/unitary on the two partitions. Section 4 maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. Section 5 discusses the *fundamental versus derived* distinction that the framework suggests but the operational criterion does not require. Section 6 states what the framework adds and what remains open. Section 7 concludes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Operational Criterion
 
@@ -55,7 +55,7 @@ The paper's key move is to treat the "excitation" as the decisive feature. A mod
 
 The biquaternion framework has a structural feature that maps directly onto this operational criterion. Two kinds of acting element are distinguished in the algebra:
 
-- **Unitary elements** $\tilde{U} \in \mathbb{B}$ satisfy $\tilde{U}\tilde{U}^{*} = e_0$ and act on states by **rotor conjugation**:
+- **Unitary elements** $\tilde{U} \in \mathbb{B}$ satisfy $\tilde{U}\tilde{U}^{*} = e_t$ and act on states by **rotor conjugation**:
 $$
 \tilde{\rho} \;\longmapsto\; \tilde{U}\,\tilde{\rho}\,\tilde{U}^{*}.
 $$
@@ -80,7 +80,7 @@ where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents correspond
 **Classical non-separability: one idempotent, one unitary.** A bipartite state $\tilde{\rho}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
 $$
-p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_0\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde{U}_A^{(k)}\otimes e_0\bigr)\circ \tilde{\rho}\circ\bigl(\tilde{U}_A^{(k){}^{*}}\otimes e_0\bigr)\right),
+p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde{U}_A^{(k)}\otimes e_t\bigr)\circ \tilde{\rho}\circ\bigl(\tilde{U}_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
 using the cyclicity of the trace. This is a **single trace formula**, preceded by a unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde{U}_A^{(k)}$ acts only on $A$ and the trace is cyclic:
@@ -99,7 +99,7 @@ $$
 
 Two idempotents, or one idempotent and one unitary. The framework's reversible/irreversible dichotomy is the operational criterion, stated in the framework's native vocabulary.
 
-This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_0$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
+This is not a coincidence. It is a structural fact of the algebra: the two kinds of acting element are distinguished by their algebraic properties ($\tilde{U}\tilde{U}^{*} = e_t$ vs. $\tilde\Pi^2 = \tilde\Pi$), and their physical roles (reversible evolution vs. irreversible measurement) follow from these properties. The operational criterion of Korolkova, Sánchez-Soto, and Leuchs is thus the *physical content*, in the setting of non-separability, of an algebraic distinction that the framework already contains.
 
 ## The Four Subsets Mapped to the Framework
 
@@ -112,7 +112,7 @@ Two distinct excitations, one in each partition. The joint state is a non-separa
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
 $$
-P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right),
+P_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
 $$
 
 and the joint probability is the trace pairing with $\tilde\Pi_A(a^{\mathrm{fop}})\otimes \tilde\Pi_B(b^{\mathrm{fop}})$. This is the case treated in Exercise: Entanglement Entropy and the Partial Trace and Q6.
@@ -206,12 +206,12 @@ The paper and the framework are complementary. The paper tells us what to look f
 | $\mathbb{M}_-$ | Material sector (anti-Hermitian): four-vectors, classical fields |
 | $\mathbb{M}_+$ | Informational sector (Hermitian): states, observables, excitations |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde\Pi_A^{(i)}, \tilde\Pi_B^{(j)}$ | Idempotents on partitions $A,B$ (measurements) |
 | $\tilde{U}_A^{(k)}$ | Unitary on partition $A$ (filter, sorter, basis choice) |
 | $p(i,j) = \mathrm{Tr}((\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)})\circ \tilde{\rho})$ | Joint probability, quantum case |
-| $p(j\mid k) = \mathrm{Tr}((e_0\otimes \tilde\Pi_B^{(j)})\circ(\tilde{U}_A^{(k)}\otimes e_0)\circ \tilde{\rho}\circ(\tilde{U}_A^{(k){}^{*}}\otimes e_0))$ | Conditional probability, classical case |
+| $p(j\mid k) = \mathrm{Tr}((e_t\otimes \tilde\Pi_B^{(j)})\circ(\tilde{U}_A^{(k)}\otimes e_t)\circ \tilde{\rho}\circ(\tilde{U}_A^{(k){}^{*}}\otimes e_t))$ | Conditional probability, classical case |
 | $\tilde\Pi_A \otimes \tilde\Pi_B$ | Quantum: two idempotents, statistical correlation |
 | $\tilde{U}_A \otimes \tilde\Pi_B$ | Classical: one idempotent, one unitary |
 | $W_{ij} = \langle E_i^* E_j\rangle$ | Coherence matrix (derived element) |

@@ -4,17 +4,17 @@
 
 The complex field is the one-dimensional complex algebra, and this article reads on it the general classes of element: the zero divisors, the annihilators, the idempotents, the nilpotents, the roots, the ideals and the modules. The answer is short and it is the answer of a field. Most of these classes are empty or two-point on $\mathbb{C}$, and the work of the article is to say which, to prove it, and to account for the collapse.
 
-The article is a consolidation, not a translation. On $\mathbb{C}$ the classes are not numerous enough to carry an article each, so they are gathered here as sections. Nothing is proved twice: the products $AC$ and $A\bar C$ are *The Two Products of the Complexoid Space*, the two forms $B=N=AC$ and $H=K=A\bar C$ and the two algebraic norms $A^{2}$ and $A\bar A$ are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, and the norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The classes are those of the general study of the twelve algebraic structures. The field property behind every emptiness is *The Specificities of the Complex Algebra*, below this article in this category.
+The article is a consolidation, not a translation. On $\mathbb{C}$ the classes are not numerous enough to carry an article each, so they are gathered here as sections. Nothing is proved twice: the products $Q_1Q_2$ and $Q_1\bar Q_2$ are *The Two Products of the Complexoid Space*, the two forms $\langle Q_1,Q_2\rangle=\langle Q_1,Q_2\rangle_{\natural}=Q_1Q_2$ and $\langle Q_1,Q_2\rangle_{*}=\langle Q_1,Q_2\rangle_{\natural*}=Q_1\bar Q_2$ and the two algebraic norms $Q_1^{2}$ and $Q_1\bar Q_1$ are *The Two Forms and the Two Algebraic Norms of the Complexoid Space*, and the norm, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The classes are those of the general study of the twelve algebraic structures. The field property behind every emptiness is *The Specificities of the Complex Algebra*, below this article in this category.
 
-**Interpretation and notation.** The base involution is the complex conjugation $\bar A=a-ia'$; the Hermitian conjugation is the bar, ${}^{*}=\bar{\cdot}$. The two products are the general plain bilinear product $AC$, the multiplication of the field, and the general plain sesquilinear product $A\bar C$. The element is $A=a+ia'$, a second element is $C=c+ic'$, and their product is $AC=(ac-a'c')+i(ac'+a'c)$. The brackets $\langle\cdot,\cdot\rangle$ and $\langle\cdot\rangle_{*}$, with their quaternionic and Krein companions, name the four forms and are never used for elements. A class of element is defined with respect to a product, and every class below is read in both products.
+**Interpretation and notation.** The base involution is the complex conjugation $\bar Q_1=q_1-iq'_1$; the Hermitian conjugation is the bar, ${}^{*}=\bar{\cdot}$. The two products are the general plain bilinear product $Q_1Q_2$, the multiplication of the field, and the general plain sesquilinear product $Q_1\bar Q_2$. The element is $Q_1=q_1+iq'_1$, a second element is $Q_2=q_2+iq'_2$, and their product is $Q_1Q_2=(q_1q_2-q'_1q'_2)+i(q_1q'_2+q'_1q_2)$. The brackets $\langle\cdot,\cdot\rangle$ and $\langle\cdot,\cdot\rangle_{*}$, with their quaternionic and Krein companions, name the four forms and are never used for elements. A class of element is defined with respect to a product, and every class below is read in both products.
 
 ## The Zero Divisors and the Annihilators
 
-**Definition.** An element $A$ is a **zero divisor** of a product when $A\neq0$ and some $C\neq0$ has $AC=0$ or $CA=0$; the **annihilator** of $A\neq0$ is the set of the $C$ with $AC=0$ (the left annihilator) or with $CA=0$ (the right annihilator).
+**Definition.** An element $Q_1$ is a **zero divisor** of a product when $Q_1\neq0$ and some $Q_2\neq0$ has $Q_1Q_2=0$ or $Q_2Q_1=0$; the **annihilator** of $Q_1\neq0$ is the set of the $Q_2$ with $Q_1Q_2=0$ (the left annihilator) or with $Q_2Q_1=0$ (the right annihilator).
 
 **Theorem.** In either product $\mathbb{C}$ has no zero divisor, and the annihilator of every nonzero element is $\{0\}$ on both sides.
 
-**Proof.** For the plain product, let $AC=0$ with $A\neq0$. Since $\mathbb{C}$ is a field, $A$ is invertible, and $C=A^{-1}(AC)=0$; the same on the other side. For the sesquilinear product, $A\bar C=0$ with $A\neq0$ gives $\bar C=A^{-1}0=0$, hence $C=0$; and $C\bar A=0$ with $A\neq0$ gives $C=0$. The annihilator statements are the same computation read as a set.
+**Proof.** For the plain product, let $Q_1Q_2=0$ with $Q_1\neq0$. Since $\mathbb{C}$ is a field, $Q_1$ is invertible, and $Q_2=Q_1^{-1}(Q_1Q_2)=0$; the same on the other side. For the sesquilinear product, $Q_1\bar Q_2=0$ with $Q_1\neq0$ gives $\bar Q_2=Q_1^{-1}0=0$, hence $Q_2=0$; and $Q_2\bar Q_1=0$ with $Q_1\neq0$ gives $Q_2=0$. The annihilator statements are the same computation read as a set.
 
 **Remark (the collapse of the cone).** On $\mathbb{C}$ the zero divisors and the nontrivial annihilators both collapse, and they collapse for the same reason: an element is invertible exactly when it is nonzero.
 
@@ -36,7 +36,7 @@ The article is a consolidation, not a translation. On $\mathbb{C}$ the classes a
 
 **Proof.** For the plain product, $\Upsilon^{2}=0=\Upsilon\cdot\Upsilon$ forces $\Upsilon=0$ by the absence of zero divisors. For the sesquilinear product, $\Upsilon\bar\Upsilon=(u^{2}+u'^{2})$, where $\Upsilon=u+iu'$, and a sum of two real squares vanishes only at $u=u'=0$.
 
-**Remark.** The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $H(\Upsilon)$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.
+**Remark.** The second computation is also the reason the sesquilinear square of an element is a non-negative real, the value $\langle\Upsilon\rangle_{*}$ of the definite algebraic norm; the square-zero set of the sesquilinear product is the origin alone.
 
 ## The Roots of the Distinguished Values
 
@@ -66,9 +66,9 @@ with real part $\sqrt{(r+a)/2}$ and imaginary part a real multiple of $a'$; on t
 
 **Theorem.** The complex field has exactly two two-sided ideals, $\{0\}$ and $\mathbb{C}$; it is simple; every nonzero ideal is the whole ring, and the quotient by a nonzero ideal is the zero ring.
 
-**Proof.** Let $\mathrm{M}$ be a nonzero ideal and let $A\in\mathrm{M}$ with $A\neq0$. Since $A$ is invertible, $1=A^{-1}A\in\mathrm{M}$, and an ideal containing $1$ is the whole ring. Hence no proper nonzero ideal exists.
+**Proof.** Let $\mathrm{M}$ be a nonzero ideal and let $Q_1\in\mathrm{M}$ with $Q_1\neq0$. Since $Q_1$ is invertible, $1=Q_1^{-1}Q_1\in\mathrm{M}$, and an ideal containing $1$ is the whole ring. Hence no proper nonzero ideal exists.
 
-**Remark.** The ideal $\mathbb{C}A$ generated by a nonzero element is $\mathbb{C}$, the ideal generated by a square-zero element is $\{0\}$, and the two-sided ideals of the plain and of the sesquilinear product coincide as sets, both being the ring ideals of the field.
+**Remark.** The ideal $\mathbb{C}Q_1$ generated by a nonzero element is $\mathbb{C}$, the ideal generated by a square-zero element is $\{0\}$, and the two-sided ideals of the plain and of the sesquilinear product coincide as sets, both being the ring ideals of the field.
 
 ## The Modules
 
@@ -87,9 +87,9 @@ Read on the complex field, these classes of element are the classes of a field. 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{C}$ | the complex field, the one-dimensional complex algebra |
-| $A=a+ia'$, $C=c+ic'$ | two complex elements, with the real coordinates $a,a'$ and $c,c'$ |
-| $\bar A=a-ia'$ | the complex conjugation, the base involution; ${}^{*}=\bar{\cdot}$ |
-| $AC$, $A\bar C$ | the general plain bilinear and the general plain sesquilinear product |
+| $Q_1=q_1+iq'_1$, $Q_2=q_2+iq'_2$ | two complex elements, with the real coordinates $q_1,q'_1$ and $q_2,q'_2$ |
+| $\bar Q_1=q_1-iq'_1$ | the complex conjugation, the base involution; ${}^{*}=\bar{\cdot}$ |
+| $Q_1Q_2$, $Q_1\bar Q_2$ | the general plain bilinear and the general plain sesquilinear product |
 | $\Pi$ | an idempotent, with no tilde in the complex layer |
 | $\Upsilon$ | a nilpotent, with no tilde in the complex layer |
 | $\Xi$ | a root of $-1$, with no tilde in the complex layer |

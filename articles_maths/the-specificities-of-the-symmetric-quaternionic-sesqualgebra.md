@@ -33,16 +33,16 @@ Sesqualgebra*, *Square Roots of a General Element in the Algebraic Structures ov
 Sesqualgebra*; and its operators are *The Multiplication Operators of the Symmetric Quaternionic
 Sesqualgebra*, where the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness that the law delivers is computed.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
-$e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\vec Q=\sum_kQ_ke_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
-$e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
-${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde X)=X_0$ is the scalar part;
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$,
+$\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
+scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+$\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
+${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde X)=X_t$ is the scalar part;
 $\varepsilon=(1,-1,-1,-1)$; and
 
 $$
 \langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}
-=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})
+=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})
 $$
 
 is the Krein form. The twelve structures are the four general products
@@ -81,12 +81,12 @@ each is invariant under the change of the product, so they can be tested one str
 Biquaternions* is
 
 $$
-\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P;
+\tilde P\star\tilde Q=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P;
 $$
 
 the bracket is $\langle\tilde P,\tilde Q\rangle_{\natural*}$ and is the scalar part, which is (C2). For (C1), conjugate the product with the arguments exchanged and use that the two
 conjugations are anti-automorphisms of the plain product: the scalar bracket is fixed because $\langle\cdot,\cdot\rangle_{\natural*}$ is
-Hermitian, and the vector part $-Q_0\overline{\vec P}-\overline{Q_0}\vec P$ is the same as the vector
+Hermitian, and the vector part $-Q_t\overline{\vec P}-\overline{Q_t}\vec P$ is the same as the vector
 part of $\tilde P\star\tilde Q$. So $\overline{\tilde Q\star\tilde P}=\tilde P\star\tilde Q$.
 
 ## The Criterion
@@ -101,7 +101,7 @@ $\mathrm{SQS}$ is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian pro
 
 **Theorem (the isolation).** Among the twelve structures of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, the block is the only $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian product.
 
-*Proof.* The block satisfies both clauses by §*The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $e_1$ and $ie_1$, where the bilinear form differs from $\langle\cdot,\cdot\rangle_{\natural*}$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(e_1,e_2)$, where the two sides are opposite signs of $e_3$, GQS satisfying the scalar-part identity while GPS fails it at $e_1$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $e_1$, its scalar part being the definite form $|P_0|^2+\lVert\vec P\rVert^2$ and not $\langle\cdot,\cdot\rangle_{\natural*}$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
+*Proof.* The block satisfies both clauses by §*The Law: Being $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(i\vec e_x,\vec e_x)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $\vec e_x$ and $i\vec e_x$, where the bilinear form differs from $\langle\cdot,\cdot\rangle_{\natural*}$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(\vec e_x,\vec e_y)$, where the two sides are opposite signs of $\vec e_z$, GQS satisfying the scalar-part identity while GPS fails it at $\vec e_x$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $\vec e_x$, its scalar part being the definite form $|P_t|^2+\lVert\vec P\rVert^2$ and not $\langle\cdot,\cdot\rangle_{\natural*}$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
 
 | family | structures | conjugate-symmetry | scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ |
 |---|---|---|---|
@@ -119,7 +119,7 @@ The isolation is sharp, and each clause alone is satisfied by another structure:
 
 **The scalar part is the form, not a value.** The clause (C2) makes the scalar projection of the product the
 Krein form, so the diagonal of the block is
-$\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$; the
+$\tilde Q\star\tilde Q=\langle\tilde Q,\tilde Q\rangle_{\natural*}e_t-Q_t\overline{\vec Q}-\overline{Q_t}\vec Q$; the
 non-centrality of the diagonal, the shape of the idempotents and the square-zero cone all follow from that
 one formula, as in *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic
 Sesqualgebra*, *Idempotents of the Symmetric Quaternionic Sesqualgebra* and *Nilpotents of the Symmetric
@@ -139,7 +139,7 @@ Quaternionic Sesqualgebra*, and it is the operator form of the law.
 
 **The element theory is governed by the law.** The two clauses fix the scalar part and the exchange; the
 class of an element of the block — regular, pure zero divisor, non-pure zero divisor — is then decided by
-the scalar coordinate $Q_0$ and the central square $C(\tilde Q)$, and not by the form $\langle\cdot,\cdot\rangle_{\natural*}$, as in *Zero
+the scalar coordinate $Q_t$ and the central square $C(\tilde Q)$, and not by the form $\langle\cdot,\cdot\rangle_{\natural*}$, as in *Zero
 Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
 **The boundary.** A product with the scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ but without the symmetry, such as $\mathrm{GQS}$, has a
@@ -150,9 +150,9 @@ of the first boundary nor the vanishing vector part of the second.
 
 ## Worked Examples
 
-**The block at the witness $(e_0,e_1)$.** $\mathrm{SQS}(e_0,e_1)=-e_1$ and $\overline{\mathrm{SQS}(e_1,e_0)}=\overline{-e_1}=-e_1$, so conjugate-symmetry holds; and $\mathrm{Sc}(\mathrm{SQS}(e_0,e_1))=0=\langle e_0,e_1\rangle_{\natural*}$, so the scalar-part identity holds.
+**The block at the witness $(e_t,\vec e_x)$.** $\mathrm{SQS}(e_t,\vec e_x)=-\vec e_x$ and $\overline{\mathrm{SQS}(\vec e_x,e_t)}=\overline{-\vec e_x}=-\vec e_x$, so conjugate-symmetry holds; and $\mathrm{Sc}(\mathrm{SQS}(e_t,\vec e_x))=0=\langle e_t,\vec e_x\rangle_{\natural*}$, so the scalar-part identity holds.
 
-**The scalar-part identity at a complex element.** $\mathrm{Sc}(\mathrm{SQS}(ie_1,ie_1))=\langle ie_1,ie_1\rangle_{\natural*}=-1$, the Hermitian form reading the modulus of the complex coefficient; a bilinear product cannot see it. This is the clause that separates the block from the bilinear structures, and the reason the block's scalar part is $\langle\cdot,\cdot\rangle_{\natural*}$ and not the complex bilinear form.
+**The scalar-part identity at a complex element.** $\mathrm{Sc}(\mathrm{SQS}(i\vec e_x,i\vec e_x))=\langle i\vec e_x,i\vec e_x\rangle_{\natural*}=-1$, the Hermitian form reading the modulus of the complex coefficient; a bilinear product cannot see it. This is the clause that separates the block from the bilinear structures, and the reason the block's scalar part is $\langle\cdot,\cdot\rangle_{\natural*}$ and not the complex bilinear form.
 
 **The two clauses at the boundaries.** The general quaternionic sesquilinear product $\mathrm{GQS}$ has scalar part $\langle\cdot,\cdot\rangle_{\natural*}$ and fails conjugate-symmetry, and the symmetric plain sesquilinear part $\mathrm{SPS}$ is conjugate-symmetric with a definite scalar part; the block is the one product that carries both, neither the extra cross term of the first nor the central diagonal of the second.
 
@@ -162,8 +162,8 @@ The block is isolated among the twelve structures of the biquaternion complex sp
 $\langle\cdot,\cdot\rangle_{\natural*}$-Hermitian: the product is conjugate-symmetric,
 $\tilde P\star\tilde Q=\overline{\tilde Q\star\tilde P}$, and its scalar part is the Krein form,
 $\mathrm{Sc}(\tilde P\star\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}$. The block satisfies both clauses; the eleven other
-structures each fail at least one, the failures being read at the pairs $(ie_1,e_1)$ and $(e_1,e_2)$ and at
-the elements $e_1$ and $ie_1$. The criterion is sharp: deleting the conjugate-symmetry admits the general quaternionic sesquilinear
+structures each fail at least one, the failures being read at the pairs $(i\vec e_x,\vec e_x)$ and $(\vec e_x,\vec e_y)$ and at
+the elements $\vec e_x$ and $i\vec e_x$. The criterion is sharp: deleting the conjugate-symmetry admits the general quaternionic sesquilinear
 product $\mathrm{GQS}$, and deleting the scalar-part identity admits the symmetric plain sesquilinear part
 $\mathrm{SPS}$; the block is the meeting point of the two, with the scalar part of the first and the symmetry
 of the second. The law delivers the diagonal formula with the Krein form in its scalar part, the
@@ -178,7 +178,7 @@ square.
 | $\mathrm{SQS}$ | the block, the symmetric quaternionic sesquilinear product |
 | $\tilde P\circ\tilde Q=\overline{\tilde Q\circ\tilde P}$ | the clause (C1), conjugate-symmetry |
 | $\mathrm{Sc}(\tilde P\circ\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}$ | the clause (C2), the scalar-part identity |
-| $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | the Krein form, the scalar part of the block |
+| $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$ | the Krein form, the scalar part of the block |
 | $\mathrm{GQS}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
 | $\mathrm{SPS}$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
 | $\langle L^{\star}_{\tilde A}\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |

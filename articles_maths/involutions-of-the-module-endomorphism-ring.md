@@ -105,7 +105,7 @@ Thus an involution of $E$ is exactly a direct-sum decomposition $E=P\oplus Q$ wi
 
 ### The self-adjoint squares and the pairing
 
-**Proposition.** For a pairing involution and $f \in E$ the operators $f^{*}f$ and $ff^{*}$ are self-adjoint, and $f$ is unitary exactly when both are the identity. Hence the fixed part determines the unitary group, $U(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}$, but different involutions can have isomorphic — even equal-dimensional — fixed parts and different unitary groups.
+**Proposition.** For a pairing involution and $f \in E$ the operators $f^{*}f$ and $ff^{*}$ are self-adjoint, and $f$ is unitary exactly when both are the identity. Hence the fixed part determines the unitary group, $\mathrm{U}(M)=\{f : f^{*}f=ff^{*}=\mathrm{id}\}$, but different involutions can have isomorphic — even equal-dimensional — fixed parts and different unitary groups.
 
 *Proof.* The self-adjointness and the unitary characterisation are *Module Operators with an Involution*; the last clause is a warning, since the unitary group is defined by the involution and not by the isomorphism class of the fixed part alone.
 

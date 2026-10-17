@@ -6,19 +6,19 @@ The dedicated articles of this chapter own the standard realizations of the biqu
 
 1. the **Clifford identification**, a biquaternion read inside the even Clifford algebra $\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$;
 2. the **conjugation action**, a biquaternion read as the inner automorphism $\tilde T\mapsto\tilde Q\tilde T\tilde Q^{-1}$ of the algebra;
-3. the **arrays of several biquaternions**, an object of the ring $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, which is not a realization of a single element.
+3. the **arrays of several biquaternions**, an object of the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$, which is not a realization of a single element.
 
 The word *representation* is used here in the sense of a concrete realization of the algebra as a collection of computable objects, and *algebraic* contrasts with *polar*: the realizations below use only the algebra operations, the central scalar imaginary and the underlying complex vector space structure, never the exponential or the roots of $-1$. The technical sense of representation theory — a homomorphism into the endomorphisms of a vector space — is used only in the conjugation action, which is a representation in both senses, and its module-theoretic counterpart is the subject of *Introduction to Biquaternion Element Representations*.
 
 The treatment is algebraic and self-contained. The Clifford identification is established here; the change of scalars that exhibits it as a real reading of the algebra is *The Realification and the Effect of the Change of Scalars*, and the inner automorphisms are placed here from *Biquaternion Automorphisms and Derivations*. The array structure is treated nowhere else.
 
-Throughout, the conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Introduction to the Biquaternion Algebra*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and
+Throughout, the conventions are those of *The Biquaternioid as a Vector Space over $\mathbb{C}$* and *Introduction to the Biquaternion Algebra*: the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t=1$, $\vec e_\mu^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, the central scalar imaginary $i$ with $i^2=-1$, and
 
 $$
-\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu,\qquad Q_\mu=q_\mu+iq'_\mu\in\mathbb{C},\quad q_\mu,q'_\mu\in\mathbb{R}.
+\tilde Q=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu,\qquad Q_\mu=q_\mu+iq'_\mu\in\mathbb{C},\quad q_\mu,q'_\mu\in\mathbb{R}.
 $$
 
-The quaternion subspace is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,e_2,e_3\}$, the Hermitian subspace is $\mathbb{M}_+$, the scalar imaginary spans $\mathbb{C}_{\mathbb{B}}$, and the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$.
+The quaternion subspace is $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the Hermitian subspace is $\mathbb{M}_+$, the scalar imaginary spans $\mathbb{C}_{\mathbb{B}}$, and the norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$.
 
 ## The Clifford Algebra Identification
 
@@ -30,17 +30,17 @@ $$
 \gamma_\mu\gamma_\nu+\gamma_\nu\gamma_\mu=2g_{\mu\nu}\mathrm{I},\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-so that $\gamma_0^2=+\mathrm{I}$ and $\gamma_k^2=-\mathrm{I}$ for $k=1,2,3$. A real basis is the identity, the four vectors, the six bivectors, the four trivectors and the pseudoscalar $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The **even subalgebra** $\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, spanned by the identity, the six bivectors and the pseudoscalar, has real dimension eight.
+so that $\gamma_0^2=+\mathrm{I}$ and $\gamma_\mu^2=-\mathrm{I}$ for $\mu\in\{x,y,z\}$. A real basis is the identity, the four vectors, the six bivectors, the four trivectors and the pseudoscalar $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$. The **even subalgebra** $\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, spanned by the identity, the six bivectors and the pseudoscalar, has real dimension eight.
 
 ### Theorem
 
 The biquaternion algebra is the even Clifford algebra of the Minkowski form,
 
 $$
-\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R}),\qquad e_1\mapsto\gamma_2\gamma_3,\quad e_2\mapsto\gamma_3\gamma_1,\quad e_3\mapsto\gamma_1\gamma_2,\qquad i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3 .
+\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R}),\qquad \vec e_x\mapsto\gamma_2\gamma_3,\quad \vec e_y\mapsto\gamma_3\gamma_1,\quad \vec e_z\mapsto\gamma_1\gamma_2,\qquad i\mapsto-\omega=-\gamma_0\gamma_1\gamma_2\gamma_3 .
 $$
 
-*Proof.* The three spacelike bivectors $\gamma_2\gamma_3,\gamma_3\gamma_1,\gamma_1\gamma_2$ anticommute pairwise and each squares to $-\mathrm{I}$, so they satisfy the quaternion relations: $(\gamma_j\gamma_k)^2=-\gamma_j^2\gamma_k^2=-(-1)(-1)=-1$ and $\gamma_2\gamma_3\cdot\gamma_3\gamma_1=\gamma_2\gamma_3\gamma_3\gamma_1=-\gamma_2\gamma_1=\gamma_1\gamma_2$. The pseudoscalar $\omega$ is central in the even subalgebra and $\omega^2=-1$, so $-\omega$ is a central square root of $-1$ commuting with them. Hence $\mathbb{C}[\omega]\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, embeds in $\mathrm{Cl}^{+}_{1,3}$, which also has real dimension eight, so the embedding is an isomorphism. The isomorphism is one of $\mathbb{C}$-algebras, $\omega$ playing the role of the scalar imaginary, so the Clifford reading is a second reading of the same ring and not a second structure; the change of scalars that exhibits it as a real reading is *The Realification and the Effect of the Change of Scalars*.
+*Proof.* The three spacelike bivectors $\gamma_2\gamma_3,\gamma_3\gamma_1,\gamma_1\gamma_2$ anticommute pairwise and each squares to $-\mathrm{I}$, so they satisfy the quaternion relations: $(\gamma_\rho\gamma_\mu)^2=-\gamma_\rho^2\gamma_\mu^2=-(-1)(-1)=-1$ and $\gamma_2\gamma_3\cdot\gamma_3\gamma_1=\gamma_2\gamma_3\gamma_3\gamma_1=-\gamma_2\gamma_1=\gamma_1\gamma_2$. The pseudoscalar $\omega$ is central in the even subalgebra and $\omega^2=-1$, so $-\omega$ is a central square root of $-1$ commuting with them. Hence $\mathbb{C}[\omega]\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, embeds in $\mathrm{Cl}^{+}_{1,3}$, which also has real dimension eight, so the embedding is an isomorphism. The isomorphism is one of $\mathbb{C}$-algebras, $\omega$ playing the role of the scalar imaginary, so the Clifford reading is a second reading of the same ring and not a second structure; the change of scalars that exhibits it as a real reading is *The Realification and the Effect of the Change of Scalars*.
 
 ### The Dictionary of the Basis
 
@@ -48,16 +48,16 @@ Under this isomorphism the quaternion units are the spacelike bivectors and the 
 
 | biquaternion | Clifford element |
 |---|---|
-| $e_0$ | $\mathrm{I}$ |
-| $e_1$ | $\gamma_2\gamma_3$ |
-| $e_2$ | $\gamma_3\gamma_1$ |
-| $e_3$ | $\gamma_1\gamma_2$ |
-| $i e_1$ | $\gamma_0\gamma_1$ |
-| $i e_2$ | $\gamma_0\gamma_2$ |
-| $i e_3$ | $\gamma_0\gamma_3$ |
+| $e_t$ | $\mathrm{I}$ |
+| $\vec e_x$ | $\gamma_2\gamma_3$ |
+| $\vec e_y$ | $\gamma_3\gamma_1$ |
+| $\vec e_z$ | $\gamma_1\gamma_2$ |
+| $i \vec e_x$ | $\gamma_0\gamma_1$ |
+| $i \vec e_y$ | $\gamma_0\gamma_2$ |
+| $i \vec e_z$ | $\gamma_0\gamma_3$ |
 | $i$ | $-\omega$ |
 
-so the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the span of the identity and the spacelike bivectors, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the span of the pseudoscalar and the timelike bivectors, and the scalar imaginary is minus the pseudoscalar. The two products agree — the Clifford product of even elements is even — and the Clifford norm on the even part is the biquaternion norm; the reversion ${}^{\natural}$ gives the natural conjugation and the norm is its reversion square. The Hermitian subspace $\mathbb{M}_+=\operatorname{span}_{\mathbb{R}}\{e_0,ie_1,ie_2,ie_3\}$ corresponds to the identity together with the timelike bivectors, the boost directions, and the anti-Hermitian subspace $\mathbb{M}_-$ to the pseudoscalar together with the spacelike bivectors; neither is closed under the Clifford product, the product of two timelike bivectors being spacelike.
+so the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the span of the identity and the spacelike bivectors, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the span of the pseudoscalar and the timelike bivectors, and the scalar imaginary is minus the pseudoscalar. The two products agree — the Clifford product of even elements is even — and the Clifford norm on the even part is the biquaternion norm; the reversion ${}^{\natural}$ gives the natural conjugation and the norm is its reversion square. The Hermitian subspace $\mathbb{M}_+=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ corresponds to the identity together with the timelike bivectors, the boost directions, and the anti-Hermitian subspace $\mathbb{M}_-$ to the pseudoscalar together with the spacelike bivectors; neither is closed under the Clifford product, the product of two timelike bivectors being spacelike.
 
 ### Why the Identification Is Useful
 
@@ -85,7 +85,7 @@ $$
 =\operatorname{Ad}_{\tilde Q}(\tilde T)\operatorname{Ad}_{\tilde Q}(\tilde S),
 $$
 
-and it fixes $e_0$ and is inverted by $\operatorname{Ad}_{\tilde Q^{-1}}$. Multiplicativity here is unconditional, unlike the sandwich, which is multiplicative exactly on the unitary elements. Because $\mathbb{C}$ is central, $\operatorname{Ad}_{\lambda\tilde Q}=\operatorname{Ad}_{\tilde Q}$ for every nonzero $\lambda\in\mathbb{C}$.
+and it fixes $e_t$ and is inverted by $\operatorname{Ad}_{\tilde Q^{-1}}$. Multiplicativity here is unconditional, unlike the sandwich, which is multiplicative exactly on the unitary elements. Because $\mathbb{C}$ is central, $\operatorname{Ad}_{\lambda\tilde Q}=\operatorname{Ad}_{\tilde Q}$ for every nonzero $\lambda\in\mathbb{C}$.
 
 ### The Kernel Is the Centre
 
@@ -108,7 +108,7 @@ and over $\mathbb{R}$ complex conjugation adds one conjugate-linear coset; the g
 For a unitary element the dagger is the inverse, $\tilde Q^{*}=\tilde Q^{-1}$, so the sandwich of *Biquaternion Rotations and Lorentz Transformations* coincides with the conjugation action,
 
 $$
-\operatorname{H}_{\tilde Q}=\operatorname{Ad}_{\tilde Q}\qquad(\tilde Q^{*}\tilde Q=e_0),
+\operatorname{H}_{\tilde Q}=\operatorname{Ad}_{\tilde Q}\qquad(\tilde Q^{*}\tilde Q=e_t),
 $$
 
 and on the unitary slice it is this automorphism that the multiplicativity criterion of the sandwich detects. In general the two differ by a right factor, since
@@ -140,7 +140,7 @@ This class is the one named by the structure theorem of *Biquaternion Rotations 
 
 ### The Two Minimal Left Ideals
 
-With the idempotents $\tilde\Pi_\pm=\tfrac12(e_0\pm ie_3)$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, the two halves of the algebra are the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$. Left multiplication preserves each, while the conjugation action carries each to a minimal left ideal, since it is an automorphism:
+With the idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, the two halves of the algebra are the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$. Left multiplication preserves each, while the conjugation action carries each to a minimal left ideal, since it is an automorphism:
 
 $$
 \operatorname{Ad}_{\tilde Q}\bigl(\mathbb{B}\tilde\Pi_+\bigr)=\mathbb{B}\bigl(\tilde Q\tilde\Pi_+\tilde Q^{-1}\bigr),
@@ -148,13 +148,13 @@ $$
 \tilde Q\tilde\Pi_+\tilde Q^{-1}=\tilde\Pi_+\iff\tilde Q\tilde\Pi_+=\tilde\Pi_+\tilde Q .
 $$
 
-A unit that does not commute with $\tilde\Pi_+$ therefore moves the halving, and $\tilde Q\tilde\Pi_+\tilde Q^{-1}$ is again an idempotent generating a minimal left ideal. The two halves are **exchanged** by $\tilde Q=ie_1$, for which
+A unit that does not commute with $\tilde\Pi_+$ therefore moves the halving, and $\tilde Q\tilde\Pi_+\tilde Q^{-1}$ is again an idempotent generating a minimal left ideal. The two halves are **exchanged** by $\tilde Q=i\vec e_x$, for which
 
 $$
-(ie_1)\,\tilde\Pi_+\,(ie_1)^{-1}=\tilde\Pi_- ,
+(i\vec e_x)\,\tilde\Pi_+\,(i\vec e_x)^{-1}=\tilde\Pi_- ,
 $$
 
-while for a generic unit the image is a third idempotent, neither $\tilde\Pi_+$ nor $\tilde\Pi_-$: the exchange is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $\tilde\Pi_+$, that is the elements of $\mathrm{span}_{\mathbb{C}}\{e_0,e_3\}$; being unitary is not sufficient, since $e_1$ is unitary and does not commute with $\tilde\Pi_+$.
+while for a generic unit the image is a third idempotent, neither $\tilde\Pi_+$ nor $\tilde\Pi_-$: the exchange is the special case, not the rule. The units that leave the halving untouched are exactly those commuting with $\tilde\Pi_+$, that is the elements of $\mathrm{span}_{\mathbb{C}}\{e_t,\vec e_z\}$; being unitary is not sufficient, since $\vec e_x$ is unitary and does not commute with $\tilde\Pi_+$.
 
 ## Matrix Representations of Several Biquaternions
 
@@ -163,42 +163,42 @@ while for a generic unit the image is a third idempotent, neither $\tilde\Pi_+$ 
 Every realization above writes **one** element. The corpus also uses **several** elements at once, arranged in a rectangular array: an array of size $n\times m$ with entries in $\mathbb{B}$ is written
 
 $$
-\tilde{\mathcal{Q}}=\bigl(\tilde Q_{ij}\bigr)\in\mathbb{B}^{n\times m},\qquad\tilde Q_{ij}\in\mathbb{B}.
+\tilde{\mathcal{Q}}=\bigl(\tilde Q_{\lambda\rho}\bigr)\in\mathbb{B}^{n\times m},\qquad\tilde Q_{\lambda\rho}\in\mathbb{B}.
 $$
 
-This is not a realization of the algebra $\mathbb{B}$: the entries are biquaternions, and the array is an object of the larger ring $M_n(\mathbb{B})$ when it is square. It is recorded here because it is assembled from the realization $\mathsf{M}_2$, and because it is the form in which the applied articles compute — its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
+This is not a realization of the algebra $\mathbb{B}$: the entries are biquaternions, and the array is an object of the larger ring $M_\nu(\mathbb{B})$ when it is square. It is recorded here because it is assembled from the realization $\mathsf{M}_2$, and because it is the form in which the applied articles compute — its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
 
 Two writings of the same array are used. In the **entrywise writing** it is a collection of $nm$ biquaternions. In the **component writing** it is a collection of four complex matrices,
 
 $$
-\tilde{\mathcal{Q}}=e_0Q_0+e_1Q_1+e_2Q_2+e_3Q_3,\qquad Q_\mu\in\mathbb{C}^{n\times m},
+\tilde{\mathcal{Q}}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z,\qquad Q_\mu\in\mathbb{C}^{n\times m},
 $$
 
 where $Q_\mu$ gathers the $\mu$-th coefficients of all the entries and the product by $e_\mu$ is entrywise. Either writing holds $4nm$ complex numbers, that is $8nm$ real numbers; the two carry the same information.
 
 ### The Array Ring
 
-For $n=m$, entrywise addition and the matrix product make $\mathbb{B}^{n\times n}$ a unital associative ring, the full matrix ring $M_n(\mathbb{B})$. Multiplication is non-commutative for two independent reasons: the entries are multiplied in the non-commutative algebra $\mathbb{B}$, and the array product is the matrix product. Since $\mathbb{B}$ is not a division algebra, neither is the array ring; it has zero divisors already at $n=1$, from the zero divisors of the algebra. The structure of the ring is fixed by the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$:
+For $n=m$, entrywise addition and the matrix product make $\mathbb{B}^{n\times n}$ a unital associative ring, the full matrix ring $M_\nu(\mathbb{B})$. Multiplication is non-commutative for two independent reasons: the entries are multiplied in the non-commutative algebra $\mathbb{B}$, and the array product is the matrix product. Since $\mathbb{B}$ is not a division algebra, neither is the array ring; it has zero divisors already at $n=1$, from the zero divisors of the algebra. The structure of the ring is fixed by the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$:
 
 $$
-M_n(\mathbb{B})\cong M_n\bigl(M_2(\mathbb{C})\bigr)\cong M_{2n}(\mathbb{C}).
+M_\nu(\mathbb{B})\cong M_\nu\bigl(M_2(\mathbb{C})\bigr)\cong M_{2\nu}(\mathbb{C}).
 $$
 
-So an $n\times n$ array of biquaternions **is** the full complex matrix algebra of twice the size; every isomorphism-invariant statement about $M_n(\mathbb{B})$ is a statement about complex matrices of size $2n$.
+So an $n\times n$ array of biquaternions **is** the full complex matrix algebra of twice the size; every isomorphism-invariant statement about $M_\nu(\mathbb{B})$ is a statement about complex matrices of size $2n$.
 
 ### The Image of an Array
 
 The realization $\mathsf{M}_2$ extends to arrays entry by entry: replace every entry by its $2\times2$ matrix, and read the result as a complex matrix of size $2n\times2m$,
 
 $$
-\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_{\mu=0}^{3}\mathsf{M}_2(e_\mu)\otimes Q_\mu ,
+\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_{\mu\in\{t,x,y,z\}}\mathsf{M}_2(e_\mu)\otimes Q_\mu ,
 $$
 
-where $\otimes$ is the Kronecker product and $\mathsf{M}_2(e_0)=\mathrm{I}_2$. The order of the two factors fixes which index runs where; we keep $\mathsf{M}_2(e_\mu)$ first, so that the quadrants of the image, of size $n\times m$, are the block indices and the array indices run inside each block. The other order assembles the same data with the array indices outside, $\sum_\mu Q_\mu\otimes\mathsf{M}_2(e_\mu)=(\mathsf{M}_2(\tilde Q_{ij}))$, so that the block in position $(i,j)$ is the image of the entry; the properties below hold in both orders and only the block reading differs. Three properties carry the correspondence, each exact:
+where $\otimes$ is the Kronecker product and $\mathsf{M}_2(e_t)=\mathrm{I}_2$. The order of the two factors fixes which index runs where; we keep $\mathsf{M}_2(e_\mu)$ first, so that the quadrants of the image, of size $n\times m$, are the block indices and the array indices run inside each block. The other order assembles the same data with the array indices outside, $\sum_\mu Q_\mu\otimes\mathsf{M}_2(e_\mu)=(\mathsf{M}_2(\tilde Q_{\lambda\rho}))$, so that the block in position $(i,j)$ is the image of the entry; the properties below hold in both orders and only the block reading differs. Three properties carry the correspondence, each exact:
 
-1. **Products.** When the sizes are conformable, the image of the product is the product of the images, $\mathsf{M}_2(\tilde{\mathcal{P}}\tilde{\mathcal{Q}})=\mathsf{M}_2(\tilde{\mathcal{P}})\mathsf{M}_2(\tilde{\mathcal{Q}})$; this is the explicit form of $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$.
-2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\operatorname{tr}\mathsf{M}_2(\tilde{\mathcal{Q}})=2\operatorname{tr}Q_0=2\operatorname{Sc}$ summed over the diagonal; it is a complex number, and it vanishes for a traceless scalar component.
-3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{ij}=(\tilde Q_{ji})^{*}$, carries the image to the conjugate transpose, $\mathsf{M}_2(\tilde{\mathcal{Q}}^{\dagger})=\mathsf{M}_2(\tilde{\mathcal{Q}})^{\dagger}$.
+1. **Products.** When the sizes are conformable, the image of the product is the product of the images, $\mathsf{M}_2(\tilde{\mathcal{P}}\tilde{\mathcal{Q}})=\mathsf{M}_2(\tilde{\mathcal{P}})\mathsf{M}_2(\tilde{\mathcal{Q}})$; this is the explicit form of $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
+2. **Trace.** For a square array the trace of the image is twice the trace of the scalar component matrix, $\operatorname{tr}\mathsf{M}_2(\tilde{\mathcal{Q}})=2\operatorname{tr}Q_t=2\operatorname{Sc}$ summed over the diagonal; it is a complex number, and it vanishes for a traceless scalar component.
+3. **Dagger.** Transposing the array and applying the Hermitian conjugation to each entry, $(\tilde{\mathcal{Q}}^{\dagger})_{\lambda\rho}=(\tilde Q_{\rho\lambda})^{*}$, carries the image to the conjugate transpose, $\mathsf{M}_2(\tilde{\mathcal{Q}}^{\dagger})=\mathsf{M}_2(\tilde{\mathcal{Q}})^{\dagger}$.
 
 ### Examples
 
@@ -207,16 +207,16 @@ The smallest cases each show a different face of the correspondence; in the orde
 | several biquaternions | image | what it shows |
 |---|---|---|
 | the one-entry array $[\tilde Q]$ | $\mathsf{M}_2(\tilde Q)$, of size $2\times2$ | the $2\times2$ realization is the one-entry case |
-| the array unit, $e_0$ in position $(i,j)$ and zero elsewhere | $\mathrm{I}_2\otimes E_{ij}$ | the array units carry the algebra identity |
-| a single nonzero entry, $\tilde Q$ in position $(i,j)$ | $\mathsf{M}_2(\tilde Q)\otimes E_{ij}$ | the image of the entry sits in the block position of the entry |
-| the constant diagonal array, every diagonal entry $\tilde Q$ | $\mathsf{M}_2(\tilde Q)\otimes\mathrm{I}_n$ | the algebra index and the array index assemble independently |
+| the array unit, $e_t$ in position $(i,j)$ and zero elsewhere | $\mathrm{I}_2\otimes E_{\lambda\rho}$ | the array units carry the algebra identity |
+| a single nonzero entry, $\tilde Q$ in position $(i,j)$ | $\mathsf{M}_2(\tilde Q)\otimes E_{\lambda\rho}$ | the image of the entry sits in the block position of the entry |
+| the constant diagonal array, every diagonal entry $\tilde Q$ | $\mathsf{M}_2(\tilde Q)\otimes\mathrm{I}_\nu$ | the algebra index and the array index assemble independently |
 | a general $2\times2$ array of biquaternions | a general $4\times4$ complex matrix | a $2\times2$ array already fills a full complex matrix of twice the size |
 
 The one-entry case is worth stating separately: the $2\times2$ realization is not a different construction from the array, it is the array of size $1\times1$. The $2\times2$ array image is the first case in which the two index levels are visible at once, one being the array and the other the matrix realization of the algebra; and the last row is the dimension count, a $2\times2$ array of biquaternions holding sixteen complex numbers, exactly as a general $4\times4$ complex matrix does.
 
 ### Which Realization the Array Is Not
 
-The image $\mathsf{M}_2(\tilde{\mathcal{Q}})$ is **not** the left regular matrix $\mathsf{M}_4(\tilde Q)$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. That matrix is the image of the operator of left multiplication by one element on the algebra, a $4\times4$ array of complex numbers for that element; the array image here is the image of the array's own entries. The two coincide in size only when the array is $2\times2$, and even then they are different objects: the regular matrix is block diagonal in a basis adapted to the two minimal left ideals, with $\mathsf{M}_2(\tilde Q)$ in both diagonal blocks, while the image of a general $2\times2$ array of biquaternions is a general $4\times4$ complex matrix. What the two share is the underlying isomorphism, written out at the element level by $\mathsf{M}_2$ and at the array level by $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$.
+The image $\mathsf{M}_2(\tilde{\mathcal{Q}})$ is **not** the left regular matrix $\mathsf{M}_4(\tilde Q)$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. That matrix is the image of the operator of left multiplication by one element on the algebra, a $4\times4$ array of complex numbers for that element; the array image here is the image of the array's own entries. The two coincide in size only when the array is $2\times2$, and even then they are different objects: the regular matrix is block diagonal in a basis adapted to the two minimal left ideals, with $\mathsf{M}_2(\tilde Q)$ in both diagonal blocks, while the image of a general $2\times2$ array of biquaternions is a general $4\times4$ complex matrix. What the two share is the underlying isomorphism, written out at the element level by $\mathsf{M}_2$ and at the array level by $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$.
 
 ## Relations Between the Representations
 
@@ -224,7 +224,7 @@ The image $\mathsf{M}_2(\tilde{\mathcal{Q}})$ is **not** the left regular matrix
 
 **The conjugation action and the sandwich.** The conjugation action coincides with the dagger sandwich exactly on the unitary elements, and in general the sandwich is the inner automorphism followed by right multiplication by the Hermitian positive element $\tilde Q\tilde Q^{*}$, as recorded above.
 
-**The conjugation action and the minimal left ideals.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_+$, for instance $ie_1$; a unit commuting with $\tilde\Pi_+$ leaves the halving alone.
+**The conjugation action and the minimal left ideals.** Because it is an automorphism, the conjugation action permutes the two minimal left ideals, and it exchanges them for any unit not commuting with $\tilde\Pi_+$, for instance $i\vec e_x$; a unit commuting with $\tilde\Pi_+$ leaves the halving alone.
 
 **The regular realization and the minimal left ideals.** The left regular matrix of $\mathsf{M}_4$ is the left action on the two minimal left ideals taken twice: since $\mathsf{M}_2(\tilde Q\tilde T)=\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde T)$, reading the columns of $\mathsf{M}_2(\tilde T)$ gives an isomorphism of left $\mathbb{B}$-modules $\mathbb{B}\to\mathbb{C}^2\oplus\mathbb{C}^2$, and in a basis of $\mathbb{B}$ made of a basis of $\mathbb{B}\tilde\Pi_+$ followed by one of $\mathbb{B}\tilde\Pi_-$ the regular matrix is block diagonal with $\mathsf{M}_2(\tilde Q)$ in both blocks. This is why the $2\times2$ and $4\times4$ accounts cannot disagree about $\mathsf{M}_2$: the second contains the first twice.
 
@@ -244,29 +244,29 @@ The choices belonging to the other realizations are recorded in their own articl
 
 The biquaternion algebra has two algebraic realizations that are not the subject of a dedicated article. The first is the **Clifford identification** $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, with the quaternion units mapped to the spacelike bivectors, the imaginary quaternion units to the timelike ones, and $i\mapsto-\gamma_0\gamma_1\gamma_2\gamma_3$ under $g=\mathrm{diag}(+1,-1,-1,-1)$, which carries the Clifford product to the biquaternion product and the Clifford norm to the biquaternion norm, exhibits the quaternion subspace as the identity together with the spacelike bivectors and the anti-quaternion subspace as the pseudoscalar together with the timelike ones, and locates $\mathbb{B}$ among the real forms of its complexification. It is an isomorphism of $\mathbb{C}$-algebras and a second reading of the same ring; the change of scalars that exhibits it as a real reading is *The Realification and the Effect of the Change of Scalars*.
 
-The second is the **conjugation action** $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$, an algebra automorphism of $\mathbb{B}$ for every unit, with kernel the centre, so that the image is the whole automorphism group $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$ by Skolem–Noether; it coincides with the dagger sandwich on the unitary elements and differs from it in general by the Hermitian positive right factor $\tilde Q\tilde Q^{*}$, it preserves the centre and the vector subspace for every unit and the other four remarkable subspaces exactly for the complex multiples of a real quaternion, equivalently the units with $\tilde Q\tilde Q^{*}$ central, and it permutes the two minimal left ideals, exchanging them for a unit not commuting with $\tilde\Pi_+$, such as $ie_1$. The inner automorphisms are *Biquaternion Automorphisms and Derivations*.
+The second is the **conjugation action** $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$, an algebra automorphism of $\mathbb{B}$ for every unit, with kernel the centre, so that the image is the whole automorphism group $\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$ by Skolem–Noether; it coincides with the dagger sandwich on the unitary elements and differs from it in general by the Hermitian positive right factor $\tilde Q\tilde Q^{*}$, it preserves the centre and the vector subspace for every unit and the other four remarkable subspaces exactly for the complex multiples of a real quaternion, equivalently the units with $\tilde Q\tilde Q^{*}$ central, and it permutes the two minimal left ideals, exchanging them for a unit not commuting with $\tilde\Pi_+$, such as $i\vec e_x$. The inner automorphisms are *Biquaternion Automorphisms and Derivations*.
 
-The third structure is not a realization of a single element. An **array of several biquaternions** is the ring $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ when square, its entrywise image $\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and the image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
+The third structure is not a realization of a single element. An **array of several biquaternions** is the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ when square, its entrywise image $\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ is a complex matrix of twice the size, and the image preserves products, traces and daggers; the one-entry array is the $2\times2$ realization itself. The array is the form the applied articles compute with, and its arithmetic is the physics companion *The Computational Cost of Biquaternion Arithmetic*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $e_0,e_1,e_2,e_3$ | Basis, $e_0=1$, $e_k^2=-e_0$ |
+| $e_t,\vec e_x,\vec e_y,\vec e_z$ | Basis, $e_t=1$, $\vec e_\mu^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $Q_\mu=q_\mu+iq'_\mu$ | Complex coefficients of $\tilde Q=\sum_\mu Q_\mu e_\mu$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$, $g=\mathrm{diag}(+1,-1,-1,-1)$ |
-| $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ | Clifford generators, $\gamma_0^2=+\mathrm{I}$, $\gamma_k^2=-\mathrm{I}$ |
+| $\gamma_0,\gamma_1,\gamma_2,\gamma_3$ | Clifford generators, $\gamma_0^2=+\mathrm{I}$, $\gamma_\mu^2=-\mathrm{I}$ |
 | $\omega=\gamma_0\gamma_1\gamma_2\gamma_3$ | Pseudoscalar, $\omega^2=-1$, central in $\mathrm{Cl}^{+}_{1,3}$ |
-| $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$ | Clifford identification, $e_k\mapsto$ spacelike bivectors, $i\mapsto-\omega$ |
+| $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$ | Clifford identification, $\vec e_\mu\mapsto$ spacelike bivectors, $i\mapsto-\omega$ |
 | $\operatorname{Ad}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{-1}$ | Conjugation action, the inner automorphism |
 | $\operatorname{H}_{\tilde Q}(\tilde T)=\tilde Q\tilde T\tilde Q^{*}$ | The dagger sandwich, equal to $\operatorname{Ad}_{\tilde Q}$ on the unitary elements |
-| $\tilde\Pi_\pm=\tfrac12(e_0\pm ie_3)$ | Idempotents, the minimal left ideals $\mathbb{B}\tilde\Pi_\pm$ |
-| $\mathsf{M}_2$ | Algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_0)=\mathrm{I}_2$ |
-| $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n=m$ the ring $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ |
-| $\tilde{\mathcal{Q}}=e_0Q_0+e_1Q_1+e_2Q_2+e_3Q_3$ | Component writing, $Q_\mu\in\mathbb{C}^{n\times m}$ |
+| $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Idempotents, the minimal left ideals $\mathbb{B}\tilde\Pi_\pm$ |
+| $\mathsf{M}_2$ | Algebra isomorphism $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_t)=\mathrm{I}_2$ |
+| $\mathbb{B}^{n\times m}$ | Array of several biquaternions; for $n=m$ the ring $M_\nu(\mathbb{B})\cong M_{2\nu}(\mathbb{C})$ |
+| $\tilde{\mathcal{Q}}=e_tQ_t+\vec e_xQ_x+\vec e_yQ_y+\vec e_zQ_z$ | Component writing, $Q_\mu\in\mathbb{C}^{n\times m}$ |
 | $\mathsf{M}_2(\tilde{\mathcal{Q}})=\sum_\mu\mathsf{M}_2(e_\mu)\otimes Q_\mu$ | Entrywise image, a $2n\times2m$ complex matrix |
 
 ## Further Reading
@@ -274,6 +274,6 @@ The third structure is not a realization of a single element. An **array of seve
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2nd ed. 2001), for the even Clifford algebra $\mathrm{Cl}^{+}_{1,3}$ and its identification with the biquaternions.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge, 1995), for the classification of real Clifford algebras and the real forms of the complexification.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for inner automorphisms, Skolem–Noether and matrix algebras.
-- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for central simple algebras, inner automorphisms and the structure of $M_n(\mathbb{B})$.
+- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for central simple algebras, inner automorphisms and the structure of $M_\nu(\mathbb{B})$.
 - S. J. Sangwine, T. A. Ell and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* 21 (2011) 607–636, for the array representations of several biquaternions and their arithmetic.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the matrix representations of biquaternions.

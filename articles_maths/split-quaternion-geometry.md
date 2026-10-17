@@ -12,13 +12,13 @@ The split-quaternion algebra, its vector subspace $V$, its split-quaternion norm
 **Definition.** The two quadratic forms of the system are
 
 $$
-N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad \langle\tilde q\rangle_{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2,
+N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad \langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
 $$
 
 of signature $(2,2)$ on the four-dimensional algebra, and its restriction
 
 $$
-N|_{V} : V \to \mathbb{R}, \quad \langle q_1 e_1 + q_2 e_2 + q_3 e_3\rangle_{\natural} = q_1^2 - q_2^2 - q_3^2,
+N|_{V} : V \to \mathbb{R}, \quad \langle q_x \vec e_x + q_y \vec e_y + q_z \vec e_z\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2,
 $$
 
 of signature $(2,1)$ on the three-dimensional vector subspace. The two associated geometries are the **projective geometry** of the quadric $N = 0$ in $\mathbb{P}^3$, on the algebra, and the **Lorentzian geometry** of the vector subspace with the form of signature $(2,1)$.
@@ -34,32 +34,32 @@ The two geometries are genuinely different, and the geometry of the algebra is n
 **Definition.** The **null quadric** of the algebra is the real projective quadric
 
 $$
-Q = \{[\tilde q] \in \mathbb{P}^3 : \langle\tilde q\rangle_{\natural} = 0\} = \{[\tilde q] : \tilde q \neq 0, \ \langle\tilde q\rangle_{\natural} = 0\},
+\mathcal{Q} = \{[\tilde q] \in \mathbb{P}^3 : \langle\tilde q\rangle_{\natural} = 0\} = \{[\tilde q] : \tilde q \neq 0, \ \langle\tilde q\rangle_{\natural} = 0\},
 $$
 
 that is, the set of isotropic lines of the form.
 
-**Theorem (The Quadric Is Doubly Ruled).** The quadric $Q$ is a smooth surface, and it is the union of the projective lines of the two families of maximal isotropic planes of (*Split-Quaternion Zero Divisors*, §*The Two Families*):
+**Theorem (The Quadric Is Doubly Ruled).** The quadric $\mathcal{Q}$ is a smooth surface, and it is the union of the projective lines of the two families of maximal isotropic planes of (*Split-Quaternion Zero Divisors*, §*The Two Families*):
 
 $$
-Q = \bigcup_{P \in \mathcal{K}} \mathbb{P}(P) = \bigcup_{P \in \mathcal{R}} \mathbb{P}(P),
+\mathcal{Q} = \bigcup_{P \in \mathcal{K}} \mathbb{P}(P) = \bigcup_{P \in \mathcal{R}} \mathbb{P}(P),
 $$
 
-where $\mathbb{P}(P)$ denotes the projective line of the plane $P$. Every point of $Q$ lies in exactly one plane of each family; the two families are each parametrised by a projective line and are exchanged by the anti-automorphism $\tau$.
+where $\mathbb{P}(P)$ denotes the projective line of the plane $P$. Every point of $\mathcal{Q}$ lies in exactly one plane of each family; the two families are each parametrised by a projective line and are exchanged by the anti-automorphism $\tau$.
 
-**Proof.** An isotropic line lies in a maximal totally isotropic plane by *Split-Quaternion Zero Divisors*, §*The Two Families*, and in exactly one plane of each family by the corollary of the theorem on the two families there. Each $\mathbb{P}(P)$ is a projective line contained in $Q$, since $P$ is totally isotropic; and the union of these lines is $Q$, because every isotropic line lies in some plane of the family.
+**Proof.** An isotropic line lies in a maximal totally isotropic plane by *Split-Quaternion Zero Divisors*, §*The Two Families*, and in exactly one plane of each family by the corollary of the theorem on the two families there. Each $\mathbb{P}(P)$ is a projective line contained in $\mathcal{Q}$, since $P$ is totally isotropic; and the union of these lines is $\mathcal{Q}$, because every isotropic line lies in some plane of the family.
 
-**Corollary (The Quadric Is a Torus).** The quadric $Q$ is homeomorphic to a two-dimensional torus: $Q \cong S^1 \times S^1$.
+**Corollary (The Quadric Is a Torus).** The quadric $\mathcal{Q}$ is homeomorphic to a two-dimensional torus: $\mathcal{Q} \cong S^1 \times S^1$.
 
-**Proof.** Send a point of $Q$ to the pair consisting of the plane of the first family containing it, which is a point of the projective line parametrising that family, and its position inside that plane, which is a point of $\mathbb{P}(P) \cong \mathbb{P}^1$. The theorem shows that the map is a bijection; each parametrising projective line is a circle over the reals, so the product is a torus.
+**Proof.** Send a point of $\mathcal{Q}$ to the pair consisting of the plane of the first family containing it, which is a point of the projective line parametrising that family, and its position inside that plane, which is a point of $\mathbb{P}(P) \cong \mathbb{P}^1$. The theorem shows that the map is a bijection; each parametrising projective line is a circle over the reals, so the product is a torus.
 
-**Corollary (The Ruling in Coordinates).** In the angular coordinates of *Split-Quaternion Norm and Invertibility*, §*Isotropy*, a point of $Q$ is the line of $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$, and the ruling is described by the two combinations $\alpha+\beta$ and $\alpha-\beta$: one family of planes is the family of loci of constant $\alpha+\beta$, and the other the family of loci of constant $\alpha-\beta$. The identification $(\alpha,\beta) \sim (\alpha+\pi,\beta+\pi)$ leaves both combinations of angles unchanged, so the two combinations are coordinates on the torus of lines, and the two rulings are its two families of circles.
+**Corollary (The Ruling in Coordinates).** In the angular coordinates of *Split-Quaternion Norm and Invertibility*, §*Isotropy*, a point of $\mathcal{Q}$ is the line of $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$, and the ruling is described by the two combinations $\alpha+\beta$ and $\alpha-\beta$: one family of planes is the family of loci of constant $\alpha+\beta$, and the other the family of loci of constant $\alpha-\beta$. The identification $(\alpha,\beta) \sim (\alpha+\pi,\beta+\pi)$ leaves both combinations of angles unchanged, so the two combinations are coordinates on the torus of lines, and the two rulings are its two families of circles.
 
 The quadric is the projective image of the ruling by maximal isotropic planes, and it is the natural projective object of the system: a smooth quadric surface with the two rulings, on which the algebra's structure group acts.
 
-**Theorem (The Group Action on the Quadric).** The unit group acts on $Q$ by conjugation, and the action descends to an action of $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, of dimension three, on the torus $Q$; the kernel of the action is the centre $\mathbb{R}^{\times}$ of the unit group.
+**Theorem (The Group Action on the Quadric).** The unit group acts on $\mathcal{Q}$ by conjugation, and the action descends to an action of $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, of dimension three, on the torus $\mathcal{Q}$; the kernel of the action is the centre $\mathbb{R}^{\times}$ of the unit group.
 
-**Proof.** Conjugation by a unit is an algebra automorphism and preserves $\langle\cdot\rangle_{\natural}$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $Q$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
+**Proof.** Conjugation by a unit is an algebra automorphism and preserves $\langle\cdot\rangle_{\natural}$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $\mathcal{Q}$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*.
 
 ## The Unit Hyperboloids and Their Metrics
 
@@ -83,7 +83,7 @@ The quadric $U$ in $\mathbb{R}^{2,2}$ is the three-dimensional Lorentzian space 
 2. The set $\{v \in V : \langle v\rangle_{\natural} = -1\}$ is a one-sheeted hyperboloid, connected. The induced form $\langle\cdot,\cdot\rangle$ is indefinite of signature $(1,1)$ on it, and it is a Lorentzian surface, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser the one-parameter hyperbolic subgroup.
 3. The set $\{v \in V : \langle v\rangle_{\natural} = 0\}$ is the light cone, a singular cone on the circle of isotropic lines.
 
-**Proof.** *Induced metric.* At $v = e_1$ the tangent space to the level set $\{N=1\}$ is $v^{\perp} = \operatorname{span}\{e_2,e_3\}$, on which $B$ is negative definite; the group acts transitively on the level set by *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, so definiteness holds everywhere and the metric is Riemannian up to sign. At $v = e_2$ the tangent space to the level set $\{N=-1\}$ is $v^{\perp} = \operatorname{span}\{e_1,e_3\}$, on which $B = q'^2_1 - q'^2_3$ is indefinite of signature $(1,1)$, and transitivity again carries the statement everywhere. The curvature and the identification of each sheet with the hyperbolic plane are the hyperboloid model of *Hyperbolic Geometry*; the model built on the split-quaternions is *Split-Quaternions and Hyperbolic Geometry*. *Singularity of the cone.* The gradient of the restricted form vanishes at the origin, and the cone is a cone on its link, which is the circle of isotropic lines. The stabilisers are those computed in *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
+**Proof.** *Induced metric.* At $v = \vec e_x$ the tangent space to the level set $\{N=1\}$ is $v^{\perp} = \operatorname{span}\{\vec e_y,\vec e_z\}$, on which $B$ is negative definite; the group acts transitively on the level set by *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, so definiteness holds everywhere and the metric is Riemannian up to sign. At $v = \vec e_y$ the tangent space to the level set $\{N=-1\}$ is $v^{\perp} = \operatorname{span}\{\vec e_x,\vec e_z\}$, on which $B = q_x^2 - q_z^2$ is indefinite of signature $(1,1)$, and transitivity again carries the statement everywhere. The curvature and the identification of each sheet with the hyperbolic plane are the hyperboloid model of *Hyperbolic Geometry*; the model built on the split-quaternions is *Split-Quaternions and Hyperbolic Geometry*. *Singularity of the cone.* The gradient of the restricted form vanishes at the origin, and the cone is a cone on its link, which is the circle of isotropic lines. The stabilisers are those computed in *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
 
 **Corollary (The Three Geometries of the Level Sets).** The level sets of the two forms give three geometries of different character: the Riemannian hyperbolic plane on each sheet of the timelike hyperboloid, the Lorentzian geometry of the one-sheeted hyperboloid and of the four-dimensional unit hyperboloid, and the degenerate light-cone geometry of the null level set. All three are acted on by the same group $\mathrm{SO}^{+}(2,1)$ in the vector subspace, and by the norm-one group in the algebra.
 
@@ -153,16 +153,16 @@ Every distinguished subspace of the algebra inherits a form, and the inherited f
 
 | Subspace | Inherited form | Geometry |
 |---|---|---|
-| $S = \mathbb{R}\cdot 1$ | $q_0^2$ | definite; the unit level set is $\{\pm 1\}$ |
-| $V$ | $q_1^2 - q_2^2 - q_3^2$, signature $(2,1)$ | the Lorentzian geometry of the vector subspace |
-| $\mathbb{R}[e_1] = \operatorname{span}\{1,e_1\}$ | $q_0^2 + q_1^2$ | definite; a copy of the complex plane as a metric plane |
-| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $q_0^2 - q_2^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_2)$; the unit hyperbola $q_0^2 - q_2^2 = 1$ |
-| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $q_0^2 - q_3^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_3)$ |
+| $S = \mathbb{R}\cdot 1$ | $q_t^2$ | definite; the unit level set is $\{\pm 1\}$ |
+| $V$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the Lorentzian geometry of the vector subspace |
+| $\mathbb{R}[\vec e_x] = \operatorname{span}\{1,\vec e_x\}$ | $q_t^2 + q_x^2$ | definite; a copy of the complex plane as a metric plane |
+| $\mathbb{D}_2 = \operatorname{span}\{1,\vec e_y\}$ | $q_t^2 - q_y^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_y)$; the unit hyperbola $q_t^2 - q_y^2 = 1$ |
+| $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | $q_t^2 - q_z^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm \vec e_z)$ |
 | $\mathbb{H}_{\mathrm{s}}\tilde\pi_{1,2}$, $\tilde\pi_{1,2}\mathbb{H}_{\mathrm{s}}$ | identically zero | isotropic planes, ruling the quadric |
 
-**Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_0^2 - q_2^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[e_1]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
+**Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $q_t^2 - q_y^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[\vec e_x]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
 
-**Proof.** The forms are read from the split-quaternion norm on the corresponding coordinates. In the null basis $n_{\pm} = \tfrac12(1 \pm e_2)$ of the split-complex subalgebra the form $q_0^2 - q_2^2$ becomes a product, $\langle p n_+ + q n_-\rangle_{\natural} = pq$, so the null lines are the coordinate axes and the hyperbola is $pq = 1$; hyperbolic rotations are the maps $(p,q)\mapsto(\lambda p, \lambda^{-1} q)$, and the invariant distance is $\log(\lambda)$. The definite case is the standard Euclidean geometry of the plane.
+**Proof.** The forms are read from the split-quaternion norm on the corresponding coordinates. In the null basis $n_{\pm} = \tfrac12(1 \pm \vec e_y)$ of the split-complex subalgebra the form $q_t^2 - q_y^2$ becomes a product, $\langle p n_+ + q n_-\rangle_{\natural} = pq$, so the null lines are the coordinate axes and the hyperbola is $pq = 1$; hyperbolic rotations are the maps $(p,q)\mapsto(\lambda p, \lambda^{-1} q)$, and the invariant distance is $\log(\lambda)$. The definite case is the standard Euclidean geometry of the plane.
 
 ## Comparison with the Neighbouring Systems
 
@@ -180,7 +180,7 @@ The quaternion column is the definite geometry of *Quaternion Geometry*, in whic
 
 ## Summary
 
-The split-quaternion system carries two quadratic forms: the form $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(2,2)$ on the four-dimensional algebra, and its restriction of signature $(2,1)$ to the three-dimensional vector subspace. The first determines the projective null quadric $Q$, a smooth doubly ruled surface homeomorphic to a torus, whose two rulings are the families of maximal isotropic planes; the unit group acts on it through $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The set $\{N=1\}$ in the algebra is the connected Lorentzian three-manifold $U \cong \mathrm{SL}_2(\mathbb{R})$ with a bi-invariant metric of signature $(2,1)$.
+The split-quaternion system carries two quadratic forms: the form $\langle\cdot,\cdot\rangle_{\natural}$ of signature $(2,2)$ on the four-dimensional algebra, and its restriction of signature $(2,1)$ to the three-dimensional vector subspace. The first determines the projective null quadric $\mathcal{Q}$, a smooth doubly ruled surface homeomorphic to a torus, whose two rulings are the families of maximal isotropic planes; the unit group acts on it through $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The set $\{N=1\}$ in the algebra is the connected Lorentzian three-manifold $U \cong \mathrm{SL}_2(\mathbb{R})$ with a bi-invariant metric of signature $(2,1)$.
 
 The second form determines the Lorentzian geometry of the vector subspace. The level set $\langle\cdot,\cdot\rangle_{\natural}=1$ is a two-sheeted hyperboloid, each sheet a copy of the hyperbolic plane with the metric $-B$ and the group $\mathrm{SO}^{+}(2,1)$ acting transitively with stabiliser $SO(2)$; the level set $\langle\cdot\rangle_{\natural}=-1$ is a connected one-sheeted hyperboloid with an induced Lorentzian metric; and the level set $\langle\cdot\rangle_{\natural}=0$ is the light cone, a singular cone on the circle of isotropic lines. The nonzero vectors split into the timelike, lightlike and spacelike classes, so the full causal trichotomy is present, unlike in the quaternion case, where the form is definite and only the sphere occurs. The isometry group of the restricted form is $O(2,1)$ with identity component $\mathrm{PSL}_2(\mathbb{R})$, and the algebra automorphisms form the smaller group $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ inside the six-dimensional isometry group $O(2,2)$ of the full form. The eight-dimensional relative is a later system of Part V, named only.
 
@@ -188,11 +188,11 @@ The second form determines the Lorentzian geometry of the vector subspace. The l
 
 | Symbol | Meaning | Article |
 |---|---|---|
-| $\langle\tilde q\rangle_{\natural} = q_0^2+q_1^2-q_2^2-q_3^2$ | the form of signature $(2,2)$ on the algebra | *Split-Quaternion Algebra* |
-| $N|_{V} = q_1^2-q_2^2-q_3^2$ | the restricted form of signature $(2,1)$ | *Split-Quaternion Algebra* |
-| $Q \subset \mathbb{P}^3$ | the projective null quadric, the set of isotropic lines | this article |
+| $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the form of signature $(2,2)$ on the algebra | *Split-Quaternion Algebra* |
+| $N|_{V} = q_x^2-q_y^2-q_z^2$ | the restricted form of signature $(2,1)$ | *Split-Quaternion Algebra* |
+| $\mathcal{Q} \subset \mathbb{P}^3$ | the projective null quadric, the set of isotropic lines | this article |
 | $\mathcal{K}$, $\mathcal{R}$ | the two families of maximal isotropic planes | *Split-Quaternion Zero Divisors* |
-| $Q \cong S^1 \times S^1$ | the quadric as a torus, with its rulings | this article |
+| $\mathcal{Q} \cong S^1 \times S^1$ | the quadric as a torus, with its rulings | this article |
 | $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the unit quadric in the algebra, a Lorentzian three-manifold | this article |
 | $\{N=1\}$, $\{N=-1\}$, $\{N=0\}$ in $V$ | the two-sheeted hyperboloid, the one-sheeted hyperboloid, the light cone | this article |
 | $-B$ on a sheet | the hyperbolic metric of curvature $-1$ | this article |

@@ -7,10 +7,10 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}}$ carries three involutions
 
 The group is the Klein four-group, and the lattice of fixed spaces is a three-element refinement of the coordinate-block decomposition of *Split-Quaternion Relations Between Subspaces*. The article is self-contained in its algebra but relies on the individual articles for the definitions of the subspaces.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, e_1, e_2, e_3$, a general element $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, conjugation $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$, and the two further involutions
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}}$, with basis $1, \vec e_x, \vec e_y, \vec e_z$, a general element $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, conjugation $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$, and the two further involutions
 
 $$
-\alpha : (e_1, e_2, e_3) \mapsto (-e_1, -e_2, e_3), \qquad \rho : (e_1, e_2, e_3) \mapsto (e_1, e_2, -e_3).
+\alpha : (\vec e_x, \vec e_y, \vec e_z) \mapsto (-\vec e_x, -\vec e_y, \vec e_z), \qquad \rho : (\vec e_x, \vec e_y, \vec e_z) \mapsto (\vec e_x, \vec e_y, -\vec e_z).
 $$
 
 The scalar and vector subspaces and the split-complex planes are $S, V, \mathbb{D}_2, \mathbb{D}_3$ of *Split-Quaternion Relations Between Subspaces*. All three involutions fix $\mathbb{R}$ pointwise and are $\mathbb{R}$-linear.
@@ -21,9 +21,9 @@ Each involution is a linear map $T : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\ma
 
 | involution | definition on generators | type |
 |---|---|---|
-| conjugation ${}^{\natural}$ | $e_k \mapsto -e_k$ | anti-automorphism |
-| principal $\alpha$ | $e_1,e_2 \mapsto -e_1,-e_2$; $e_3 \mapsto e_3$ | automorphism |
-| reversal $\rho$ | $e_1,e_2 \mapsto e_1,e_2$; $e_3 \mapsto -e_3$ | anti-automorphism |
+| conjugation ${}^{\natural}$ | $\vec e_k \mapsto -\vec e_k$ | anti-automorphism |
+| principal $\alpha$ | $\vec e_x,\vec e_y \mapsto -\vec e_x,-\vec e_y$; $\vec e_z \mapsto \vec e_z$ | automorphism |
+| reversal $\rho$ | $\vec e_x,\vec e_y \mapsto \vec e_x,\vec e_y$; $\vec e_z \mapsto -\vec e_z$ | anti-automorphism |
 
 ### (Anti)linearity
 
@@ -31,13 +31,13 @@ All three are $\mathbb{R}$-linear and fix the real scalars; none is $\mathbb{C}$
 
 ### (Anti)automorphism properties
 
-**Proposition.** For all $\tilde q, \tilde p \in \mathbb{H}_{\mathrm{s}}$,
+**Proposition.** For all $\tilde q_1, \tilde q_2 \in \mathbb{H}_{\mathrm{s}}$,
 
 $$
-\alpha(\tilde q \tilde p) = \alpha(\tilde q)\alpha(\tilde p), \qquad \rho(\tilde q \tilde p) = \rho(\tilde p)\rho(\tilde q), \qquad (\tilde q \tilde p)^{\natural} = \tilde p^{\natural}\,\tilde{q}^{\natural}.
+\alpha(\tilde q_1 \tilde q_2) = \alpha(\tilde q_1)\alpha(\tilde q_2), \qquad \rho(\tilde q_1 \tilde q_2) = \rho(\tilde q_2)\rho(\tilde q_1), \qquad (\tilde q_1 \tilde q_2)^{\natural} = \tilde q_2^{\natural}\,\tilde q_1^{\natural}.
 $$
 
-**Proof.** It suffices to check the generators, using $e_3 = e_1 e_2$. For $\alpha$: $\alpha(e_1)\alpha(e_2) = (-e_1)(-e_2) = e_1 e_2 = e_3 = \alpha(e_3)$, and the squares are preserved. For $\rho$: $\rho(e_2)\rho(e_1) = e_2 e_1 = -e_3 = \rho(e_3)$. For the conjugation: $e_2^{\natural}e_1^{\natural} = (-e_2)(-e_1) = e_2 e_1 = -e_3 = e_3^{\natural}$.
+**Proof.** It suffices to check the generators, using $\vec e_z = \vec e_x \vec e_y$. For $\alpha$: $\alpha(\vec e_x)\alpha(\vec e_y) = (-\vec e_x)(-\vec e_y) = \vec e_x \vec e_y = \vec e_z = \alpha(\vec e_z)$, and the squares are preserved. For $\rho$: $\rho(\vec e_y)\rho(\vec e_x) = \vec e_y \vec e_x = -\vec e_z = \rho(\vec e_z)$. For the conjugation: $\vec e_y^{\natural}\vec e_x^{\natural} = (-\vec e_y)(-\vec e_x) = \vec e_y \vec e_x = -\vec e_z = \vec e_z^{\natural}$.
 
 ## The Group They Generate
 
@@ -80,34 +80,34 @@ For an involution $T$ the algebra splits as $\operatorname{Fix}(T) \oplus \opera
 
 | $T$ | $\operatorname{Fix}(T)$ | $\dim$ | $\operatorname{Anti}(T)$ | $\dim$ |
 |---|---|---|---|---|
-| ${}^{\natural}$ | $S = \operatorname{span}\{1\}$ | $1$ | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | $3$ |
-| $\alpha$ | $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $2$ | $\operatorname{span}\{e_1,e_2\}$ | $2$ |
-| $\rho$ | $\operatorname{span}\{1,e_1,e_2\}$ | $3$ | $\mathbb{R} e_3$ | $1$ |
+| ${}^{\natural}$ | $S = \operatorname{span}\{1\}$ | $1$ | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | $3$ |
+| $\alpha$ | $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ | $2$ | $\operatorname{span}\{\vec e_x,\vec e_y\}$ | $2$ |
+| $\rho$ | $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ | $3$ | $\mathbb{R} \vec e_z$ | $1$ |
 
 ### The Eigenspace Lattice
 
 Because $G$ is abelian, every element of $G$ preserves the eigenspaces of every other element, so the eigenspaces are nested with respect to the common decomposition and form a lattice under inclusion:
 
 $$
-\{0\} \;\subset\; S \;\subset\; \operatorname{span}\{e_1,e_2\} \;\subset\; \operatorname{span}\{1,e_1,e_2\} \;\subset\; \mathbb{H}_{\mathrm{s}},
+\{0\} \;\subset\; S \;\subset\; \operatorname{span}\{\vec e_x,\vec e_y\} \;\subset\; \operatorname{span}\{1,\vec e_x,\vec e_y\} \;\subset\; \mathbb{H}_{\mathrm{s}},
 $$
 
-the eigenspaces of dimension $2$ being the two $\pm1$ eigenspaces of the single involution $\alpha$, namely $\mathbb{D}_3$ and $\operatorname{span}\{e_1,e_2\}$, and the eigenspaces of dimension $3$ being $V$ and $\operatorname{span}\{1,e_1,e_2\}$. The eigenspaces of the three involutions, their intersections and their common refinement, in terms of the coordinate blocks $\langle 1\rangle, \langle e_1\rangle, \langle e_2\rangle, \langle e_3\rangle$ of *Split-Quaternion Relations Between Subspaces*, are:
+the eigenspaces of dimension $2$ being the two $\pm1$ eigenspaces of the single involution $\alpha$, namely $\mathbb{D}_3$ and $\operatorname{span}\{\vec e_x,\vec e_y\}$, and the eigenspaces of dimension $3$ being $V$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$. The eigenspaces of the three involutions, their intersections and their common refinement, in terms of the coordinate blocks $\langle 1\rangle, \langle \vec e_x\rangle, \langle \vec e_y\rangle, \langle \vec e_z\rangle$ of *Split-Quaternion Relations Between Subspaces*, are:
 
 | subspace | blocks | dimension | eigenspace of |
 |---|---|---|---|
 | $\{0\}$ | — | $0$ | — |
 | $S$ | $\langle 1\rangle$ | $1$ | $+1$ for ${}^{\natural}, \alpha, \rho$ |
-| $\mathbb{R} e_3$ | $\langle e_3\rangle$ | $1$ | $-1$ for ${}^{\natural}, \rho$; $+1$ for $\alpha$ |
-| $\mathbb{R} e_1$ | $\langle e_1\rangle$ | $1$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
-| $\mathbb{R} e_2$ | $\langle e_2\rangle$ | $1$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
-| $\mathbb{D}_3$ | $\langle 1\rangle\oplus\langle e_3\rangle$ | $2$ | $+1$ for $\alpha$ |
-| $\operatorname{span}\{e_1,e_2\}$ | $\langle e_1\rangle\oplus\langle e_2\rangle$ | $2$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
-| $\operatorname{span}\{1,e_1,e_2\}$ | $\langle 1\rangle\oplus\langle e_1\rangle\oplus\langle e_2\rangle$ | $3$ | $+1$ for $\rho$ |
-| $V$ | $\langle e_1\rangle\oplus\langle e_2\rangle\oplus\langle e_3\rangle$ | $3$ | $-1$ for ${}^{\natural}$ |
+| $\mathbb{R} \vec e_z$ | $\langle \vec e_z\rangle$ | $1$ | $-1$ for ${}^{\natural}, \rho$; $+1$ for $\alpha$ |
+| $\mathbb{R} \vec e_x$ | $\langle \vec e_x\rangle$ | $1$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
+| $\mathbb{R} \vec e_y$ | $\langle \vec e_y\rangle$ | $1$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
+| $\mathbb{D}_3$ | $\langle 1\rangle\oplus\langle \vec e_z\rangle$ | $2$ | $+1$ for $\alpha$ |
+| $\operatorname{span}\{\vec e_x,\vec e_y\}$ | $\langle \vec e_x\rangle\oplus\langle \vec e_y\rangle$ | $2$ | $-1$ for ${}^{\natural}, \alpha$; $+1$ for $\rho$ |
+| $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ | $\langle 1\rangle\oplus\langle \vec e_x\rangle\oplus\langle \vec e_y\rangle$ | $3$ | $+1$ for $\rho$ |
+| $V$ | $\langle \vec e_x\rangle\oplus\langle \vec e_y\rangle\oplus\langle \vec e_z\rangle$ | $3$ | $-1$ for ${}^{\natural}$ |
 | $\mathbb{H}_{\mathrm{s}}$ | all four | $4$ | — |
 
-The lattice is the refinement of the coordinate-block decomposition by the eigenspace data of the three involutions. The subspaces listed are the eigenspaces of the involutions, their intersections and their common refinement; the wider family of subspaces fixed by $G$ as a **set** is larger, since $\alpha$ acts as $-1$ on $\operatorname{span}\{e_1,e_2\}$ and a sign change fixes every line of that plane, so that every line of $\operatorname{span}\{e_1,e_2\}$ is also $G$-invariant. Within the eigenspace lattice a subspace is fixed pointwise by some nonzero element of $G$ exactly when its blocks all carry the same sign under that element.
+The lattice is the refinement of the coordinate-block decomposition by the eigenspace data of the three involutions. The subspaces listed are the eigenspaces of the involutions, their intersections and their common refinement; the wider family of subspaces fixed by $G$ as a **set** is larger, since $\alpha$ acts as $-1$ on $\operatorname{span}\{\vec e_x,\vec e_y\}$ and a sign change fixes every line of that plane, so that every line of $\operatorname{span}\{\vec e_x,\vec e_y\}$ is also $G$-invariant. Within the eigenspace lattice a subspace is fixed pointwise by some nonzero element of $G$ exactly when its blocks all carry the same sign under that element.
 
 ## The Orbits and the Orbit–Stabiliser Count
 
@@ -116,27 +116,27 @@ The group $G$ acts on $\mathbb{H}_{\mathrm{s}}$ by the four sign patterns tabula
 **Theorem.** The orbit of a general element consists of the four elements
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \quad \tilde{q}^{\natural}, \quad \alpha(\tilde q), \quad \rho(\tilde q),
+\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z, \quad \tilde{q}^{\natural}, \quad \alpha(\tilde q), \quad \rho(\tilde q),
 $$
 
 with $\tilde q$ repeated exactly when $G$ does not act freely at $\tilde q$. The possible orbit sizes and stabilisers are:
 
 | orbit size | stabiliser | condition on $\tilde q$ |
 |---|---|---|
-| $4$ | $\{\operatorname{id}\}$ | $(q_1,q_2) \neq (0,0)$ and $q_3 \neq 0$ |
-| $2$ | $\{\operatorname{id}, \rho\}$ | $q_3 = 0$, $(q_1,q_2) \neq (0,0)$ |
-| $2$ | $\{\operatorname{id}, \alpha\}$ | $q_1 = q_2 = 0$, $q_3 \neq 0$ |
-| $1$ | $G$ | $q_1 = q_2 = q_3 = 0$, i.e. $\tilde q \in S$ |
+| $4$ | $\{\operatorname{id}\}$ | $(q_x,q_y) \neq (0,0)$ and $q_z \neq 0$ |
+| $2$ | $\{\operatorname{id}, \rho\}$ | $q_z = 0$, $(q_x,q_y) \neq (0,0)$ |
+| $2$ | $\{\operatorname{id}, \alpha\}$ | $q_x = q_y = 0$, $q_z \neq 0$ |
+| $1$ | $G$ | $q_x = q_y = q_z = 0$, i.e. $\tilde q \in S$ |
 
-**Proof.** For generic $\tilde q$ with $q_1,q_2,q_3 \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_3 = 0$ but $(q_1,q_2) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $e_1$ and $e_2$, and $\tilde{q}^{\natural}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_1 = q_2 = 0$ and $q_3 \neq 0$, then $\alpha$ fixes $\tilde q$ while ${}^{\natural}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$.
+**Proof.** For generic $\tilde q$ with $q_x,q_y,q_z \neq 0$, the four images are distinct, so $|\operatorname{Orb}(\tilde q)| = 4$ and the stabiliser is trivial. If $q_z = 0$ but $(q_x,q_y) \neq (0,0)$, the images of $\tilde q$ and $\rho(\tilde q)$ coincide, since $\rho$ fixes $\vec e_x$ and $\vec e_y$, and $\tilde{q}^{\natural}, \alpha(\tilde q)$ coincide for the same reason; the orbit has size $2$ and the stabiliser is $\{\operatorname{id},\rho\}$. If $q_x = q_y = 0$ and $q_z \neq 0$, then $\alpha$ fixes $\tilde q$ while ${}^{\natural}$ and $\rho$ coincide, giving size $2$ and stabiliser $\{\operatorname{id},\alpha\}$. If $\tilde q \in S$ then every element of $G$ fixes $\tilde q$, giving the singleton orbit and stabiliser $G$.
 
-The count is exact because $G$ acts in the $(q_1,q_2,q_3)$-coordinates through the subgroup
+The count is exact because $G$ acts in the $(q_x,q_y,q_z)$-coordinates through the subgroup
 
 $$
 H = \{\, (0,0,0),\, (1,1,1),\, (1,1,0),\, (0,0,1) \,\} \subset (\mathbb{Z}/2)^3,
 $$
 
-of order $4$, where $1$ means a sign flip; equivalently ${}^{\natural}, \alpha, \rho$ flip the sign patterns $(q_1,q_2,q_3)$, $(q_1,q_2)$, $(q_3)$. The orbit of $(q_1,q_2,q_3)$ has size $|H| / |\operatorname{Stab}|$, and the stabiliser is the subgroup of $H$ generated by the sign flips of the vanishing coordinates of $(q_1,q_2,q_3)$, which is the content of the table.
+of order $4$, where $1$ means a sign flip; equivalently ${}^{\natural}, \alpha, \rho$ flip the sign patterns $(q_x,q_y,q_z)$, $(q_x,q_y)$, $(q_z)$. The orbit of $(q_x,q_y,q_z)$ has size $|H| / |\operatorname{Stab}|$, and the stabiliser is the subgroup of $H$ generated by the sign flips of the vanishing coordinates of $(q_x,q_y,q_z)$, which is the content of the table.
 
 ## The Reduction of the Labelled Spaces
 
@@ -145,36 +145,36 @@ Each of the four blocks and each of the distinguished subspaces carries a **trip
 | space | ${}^{\natural}$ | $\alpha$ | $\rho$ |
 |---|---|---|---|
 | $\langle 1\rangle$ | $+$ | $+$ | $+$ |
-| $\langle e_1\rangle$ | $-$ | $-$ | $+$ |
-| $\langle e_2\rangle$ | $-$ | $-$ | $+$ |
-| $\langle e_3\rangle$ | $-$ | $+$ | $-$ |
+| $\langle \vec e_x\rangle$ | $-$ | $-$ | $+$ |
+| $\langle \vec e_y\rangle$ | $-$ | $-$ | $+$ |
+| $\langle \vec e_z\rangle$ | $-$ | $+$ | $-$ |
 | $S$ | $+$ | $+$ | $+$ |
-| $\mathbb{R} e_3$ | $-$ | $+$ | $-$ |
-| $\operatorname{span}\{e_1,e_2\}$ | $-$ | $-$ | $+$ |
-| $\mathbb{D}_3$ | mixed on $\{1,e_3\}$ | $+$ | mixed |
-| $V$ | $-$ | mixed on $\{e_1,e_2,e_3\}$ | mixed |
+| $\mathbb{R} \vec e_z$ | $-$ | $+$ | $-$ |
+| $\operatorname{span}\{\vec e_x,\vec e_y\}$ | $-$ | $-$ | $+$ |
+| $\mathbb{D}_3$ | mixed on $\{1,\vec e_z\}$ | $+$ | mixed |
+| $V$ | $-$ | mixed on $\{\vec e_x,\vec e_y,\vec e_z\}$ | mixed |
 
-The two lines $\langle e_1\rangle$ and $\langle e_2\rangle$ carry the same triple pattern and are therefore not separated by $G$; this is the lattice-theoretic reason for the unsplittable plane of *Split-Quaternion Subspaces and the Involutions*. Only the line $\langle e_3\rangle$ carries a distinct pattern, $(-,+,-)$.
+The two lines $\langle \vec e_x\rangle$ and $\langle \vec e_y\rangle$ carry the same triple pattern and are therefore not separated by $G$; this is the lattice-theoretic reason for the unsplittable plane of *Split-Quaternion Subspaces and the Involutions*. Only the line $\langle \vec e_z\rangle$ carries a distinct pattern, $(-,+,-)$.
 
 ## The Relation to the Involution Lattice of $\mathbb{B}$
 
-The biquaternion article *The Group of Involutions* treats four involutions — the conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}{}^{\natural}$ and the anti-Hermitian one $\flat = -{}^{*}$ — which generate a larger group, and *Comparison of the Remarkable Subspaces* treats the richer lattice they produce, because $\mathbb{B}$ has eight real coordinates and four involutions. The split-quaternion lattice differs in two structural ways. First, three involutions generate the Klein four-group, so the composition table is the simplest of all nontrivial groups and the whole group is determined by any two of the involutions. Second, the eigenspace lattice has a **maximum chain** of length four, $\{0\} \subset S \subset \operatorname{span}\{e_1,e_2\} \subset \operatorname{span}\{1,e_1,e_2\} \subset \mathbb{H}_{\mathrm{s}}$, and the vector subspace $V$ lies outside it; the lattice has two incomparable three-dimensional elements $V$ and $\operatorname{span}\{1,e_1,e_2\}$ rather than a single maximal proper subspace as a chain would give. Nothing biquaternion-specific — the two commuting complex structures, the Hermitian pairing — is invoked here.
+The biquaternion article *The Group of Involutions* treats four involutions — the conjugation ${}^{\natural}$, the complex conjugation $\bar{\cdot}$, the Hermitian conjugation ${}^{*} = \bar{\cdot}{}^{\natural}$ and the anti-Hermitian one $\flat = -{}^{*}$ — which generate a larger group, and *Comparison of the Remarkable Subspaces* treats the richer lattice they produce, because $\mathbb{B}$ has eight real coordinates and four involutions. The split-quaternion lattice differs in two structural ways. First, three involutions generate the Klein four-group, so the composition table is the simplest of all nontrivial groups and the whole group is determined by any two of the involutions. Second, the eigenspace lattice has a **maximum chain** of length four, $\{0\} \subset S \subset \operatorname{span}\{\vec e_x,\vec e_y\} \subset \operatorname{span}\{1,\vec e_x,\vec e_y\} \subset \mathbb{H}_{\mathrm{s}}$, and the vector subspace $V$ lies outside it; the lattice has two incomparable three-dimensional elements $V$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$ rather than a single maximal proper subspace as a chain would give. Nothing biquaternion-specific — the two commuting complex structures, the Hermitian pairing — is invoked here.
 
 ## Examples
 
-**Example (an element of each orbit size).** The element $\tilde q = 5 + 2e_1 + 3e_2 + 4e_3$ has orbit size $4$ with trivial stabiliser; the element $\tilde q = 5 + 2e_1 + 3e_2$ has orbit $\{\tilde q, \tilde{q}^{\natural}\}$ of size $2$ with stabiliser $\{\operatorname{id},\rho\}$; the element $\tilde q = 5 + 4e_3$ has orbit size $2$ with stabiliser $\{\operatorname{id},\alpha\}$; and the scalar $\tilde q = 5$ has orbit size $1$ with stabiliser $G$.
+**Example (an element of each orbit size).** The element $\tilde q = 5 + 2\vec e_x + 3\vec e_y + 4\vec e_z$ has orbit size $4$ with trivial stabiliser; the element $\tilde q = 5 + 2\vec e_x + 3\vec e_y$ has orbit $\{\tilde q, \tilde{q}^{\natural}\}$ of size $2$ with stabiliser $\{\operatorname{id},\rho\}$; the element $\tilde q = 5 + 4\vec e_z$ has orbit size $2$ with stabiliser $\{\operatorname{id},\alpha\}$; and the scalar $\tilde q = 5$ has orbit size $1$ with stabiliser $G$.
 
-**Example (the stabiliser of a vector).** For $e_3$ the images are $e_3^{\natural} = -e_3$, $\alpha(e_3) = e_3$, $\rho(e_3) = -e_3$, so the orbit is $\{e_3, -e_3\}$ of size $2$ and the stabiliser is $\{\operatorname{id}, \alpha\}$. For the vector $e_1 + e_2$ the images are ${}^{\natural}(e_1+e_2) = -e_1-e_2$, $\alpha(e_1+e_2) = -e_1-e_2$, $\rho(e_1+e_2) = e_1+e_2$, so the stabiliser is $\{\operatorname{id}, \rho\}$. The vector $e_1 + e_3$, by contrast, has the four images $e_1+e_3$, $-e_1-e_3$, $-e_1+e_3$, $e_1-e_3$, all distinct, so its stabiliser is trivial.
+**Example (the stabiliser of a vector).** For $\vec e_z$ the images are $\vec e_z^{\natural} = -\vec e_z$, $\alpha(\vec e_z) = \vec e_z$, $\rho(\vec e_z) = -\vec e_z$, so the orbit is $\{\vec e_z, -\vec e_z\}$ of size $2$ and the stabiliser is $\{\operatorname{id}, \alpha\}$. For the vector $\vec e_x + \vec e_y$ the images are ${}^{\natural}(\vec e_x+\vec e_y) = -\vec e_x-\vec e_y$, $\alpha(\vec e_x+\vec e_y) = -\vec e_x-\vec e_y$, $\rho(\vec e_x+\vec e_y) = \vec e_x+\vec e_y$, so the stabiliser is $\{\operatorname{id}, \rho\}$. The vector $\vec e_x + \vec e_z$, by contrast, has the four images $\vec e_x+\vec e_z$, $-\vec e_x-\vec e_z$, $-\vec e_x+\vec e_z$, $\vec e_x-\vec e_z$, all distinct, so its stabiliser is trivial.
 
-**Example (an element with mixed pattern).** For $\tilde q = 2 + e_1 + e_3$, the images are $\tilde{q}^{\natural} = 2 - e_1 - e_3$, $\alpha(\tilde q) = 2 - e_1 + e_3$, $\rho(\tilde q) = 2 + e_1 - e_3$, all distinct, so the orbit has size $4$ and the stabiliser is trivial; the sign pattern of $\tilde q$ itself is not a single triple because $\tilde q$ is a mixed element, only its coordinates carry triples.
+**Example (an element with mixed pattern).** For $\tilde q = 2 + \vec e_x + \vec e_z$, the images are $\tilde{q}^{\natural} = 2 - \vec e_x - \vec e_z$, $\alpha(\tilde q) = 2 - \vec e_x + \vec e_z$, $\rho(\tilde q) = 2 + \vec e_x - \vec e_z$, all distinct, so the orbit has size $4$ and the stabiliser is trivial; the sign pattern of $\tilde q$ itself is not a single triple because $\tilde q$ is a mixed element, only its coordinates carry triples.
 
-**Example (composition verified on an element).** For $\tilde q = 1 + e_2$: $\alpha(\rho(\tilde q)) = \alpha(1 - e_2) = 1 - e_2 = \tilde{q}^{\natural}$, and $\rho(\alpha(\tilde q)) = \rho(1 - e_2) = 1 - e_2 = \tilde{q}^{\natural}$, confirming ${}^{\natural} = \alpha\rho = \rho\alpha$.
+**Example (composition verified on an element).** For $\tilde q = 1 + \vec e_y$: $\alpha(\rho(\tilde q)) = \alpha(1 - \vec e_y) = 1 - \vec e_y = \tilde{q}^{\natural}$, and $\rho(\alpha(\tilde q)) = \rho(1 - \vec e_y) = 1 - \vec e_y = \tilde{q}^{\natural}$, confirming ${}^{\natural} = \alpha\rho = \rho\alpha$.
 
 ## Summary
 
 The split-quaternion algebra carries three $\mathbb{R}$-linear involutions — the conjugation ${}^{\natural}$ (an anti-automorphism), the principal involution $\alpha$ (an automorphism) and the reversal $\rho$ (an anti-automorphism) — related by ${}^{\natural} = \alpha\rho = \rho\alpha$. Together they form the Klein four-group $G \cong \mathbb{Z}/2\times\mathbb{Z}/2$, whose composition table is the one above; ${}^{\natural}$ is the product of the other two, so $\alpha$ and $\rho$ generate.
 
-The fixed spaces of the three involutions are $S = \operatorname{span}\{1\}$, $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ and $\operatorname{span}\{1,e_1,e_2\}$, with anti-fixed spaces $V$, $\operatorname{span}\{e_1,e_2\}$ and $\mathbb{R} e_3$. The lattice of eigenspaces is the coordinate-block decomposition refined by the sign data, with the maximum chain $\{0\} \subset S \subset \operatorname{span}\{e_1,e_2\} \subset \operatorname{span}\{1,e_1,e_2\} \subset \mathbb{H}_{\mathrm{s}}$. The group acts on the algebra by four sign patterns; the orbit–stabiliser theorem gives orbit sizes $1, 2$ or $4$ with the stabilisers tabulated, the generic orbit having size $4$ and trivial stabiliser and the scalar orbit being a fixed point. The lines $\langle e_1\rangle$ and $\langle e_2\rangle$ carry the same triple sign pattern and are not separated by the involution group. This lattice is the split-quaternion analogue of the biquaternion involution lattice, with three involutions in place of four and a Klein four-group in place of the larger group.
+The fixed spaces of the three involutions are $S = \operatorname{span}\{1\}$, $\mathbb{D}_3 = \operatorname{span}\{1,\vec e_z\}$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$, with anti-fixed spaces $V$, $\operatorname{span}\{\vec e_x,\vec e_y\}$ and $\mathbb{R} \vec e_z$. The lattice of eigenspaces is the coordinate-block decomposition refined by the sign data, with the maximum chain $\{0\} \subset S \subset \operatorname{span}\{\vec e_x,\vec e_y\} \subset \operatorname{span}\{1,\vec e_x,\vec e_y\} \subset \mathbb{H}_{\mathrm{s}}$. The group acts on the algebra by four sign patterns; the orbit–stabiliser theorem gives orbit sizes $1, 2$ or $4$ with the stabilisers tabulated, the generic orbit having size $4$ and trivial stabiliser and the scalar orbit being a fixed point. The lines $\langle \vec e_x\rangle$ and $\langle \vec e_y\rangle$ carry the same triple sign pattern and are not separated by the involution group. This lattice is the split-quaternion analogue of the biquaternion involution lattice, with three involutions in place of four and a Klein four-group in place of the larger group.
 
 ## Summary of Notation
 
@@ -185,7 +185,7 @@ The fixed spaces of the three involutions are $S = \operatorname{span}\{1\}$, $\
 | $G = \{\operatorname{id},\alpha,\rho,{}^{\natural}\}$ | the Klein four-group generated by the involutions | this article |
 | $\operatorname{Fix}(T)$, $\operatorname{Anti}(T)$ | the $+1$ and $-1$ eigenspaces of an involution $T$ | this article |
 | $S, V, \mathbb{D}_2, \mathbb{D}_3$ | the distinguished subspaces | *Split-Quaternion Relations Between Subspaces* |
-| $\langle 1\rangle,\langle e_1\rangle,\langle e_2\rangle,\langle e_3\rangle$ | the four coordinate blocks | *Split-Quaternion Relations Between Subspaces* |
+| $\langle 1\rangle,\langle \vec e_x\rangle,\langle \vec e_y\rangle,\langle \vec e_z\rangle$ | the four coordinate blocks | *Split-Quaternion Relations Between Subspaces* |
 | $({}^{\natural},\alpha,\rho)$, $(-,+,-)$ … | triple sign patterns | this article |
 | $\operatorname{Orb}(\tilde q)$, $\operatorname{Stab}(\tilde q)$ | orbit and stabiliser under $G$ | this article |
 | $\operatorname{Aut}(G) \cong S_3$ | the automorphisms of the Klein four-group | this article |

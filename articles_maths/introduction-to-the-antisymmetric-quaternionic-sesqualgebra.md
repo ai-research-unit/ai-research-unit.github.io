@@ -13,7 +13,7 @@ scalar part zero and vector part the cross product of the vector part of the fir
 
 The reading is one of the twelve operations of the corpus; the general construction of the parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, the product it splits is *Introduction to the General Quaternionic Sesqualgebra*, the sesquilinear obstruction behind its failing law is *Lie Algebras of Sesqualgebras*, and the block that reads the symmetric half is *Introduction to the Symmetric Quaternionic Sesqualgebra*. This article owns the block as a multiplication: the rule, the class, the conjugate-alternation, the pure-vector image, the absence of a unit, the sixteen products of the basis, the non-vanishing diagonal, the failure of the Jacobi identity, and the placement of the block among the twelve. The diagonal and the conjugate cross product are developed in *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*; the pairing with the Krein form is *The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra*; the remarkable subspaces are *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*; the operators are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*; and the two matrix models are *Introduction to the Symmetric Quaternionic Sesqualgebra*. The element theory of the block is the cycle *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*, *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*, *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, *Idempotents of the Antisymmetric Quaternionic Sesqualgebra* and *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, and its closing criterion, with the verdict on the eleven other structures, is *The Specificities of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, central scalar imaginary $i$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product, $\times$ the cross product of the vector parts, and $\overline{\vec Q}=\sum_k\overline{Q_k}e_k$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates $e_1,e_2,e_3$, the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and the Krein form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second, as the scalar part of the product $\tilde P^{\natural}\tilde Q^{*}$. The operation of the block is written $\diamond$; the comment of the menu entry writes it $\wedge$, and this article prefers $\diamond$ because $\wedge$ names the plain outer product $\vec P\times\vec Q$ of *Introduction to the Antisymmetric Plain Algebra*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, central scalar imaginary $i$ and $\vec e_x \vec e_y=\vec e_z$, so that $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_\mu \vec e_\nu=-\vec e_\nu \vec e_\mu$ for $\mu\neq\nu$. A generic element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=\sum_{\mu\in\{x,y,z\}}Q_\mu\vec e_\mu$ and $Q_\mu\in\mathbb{C}$; $(\vec P,\vec Q)=\sum_\mu P_\mu Q_\mu$ is the complex bilinear dot product, $\times$ the cross product of the vector parts, and $\overline{\vec Q}=\sum_\mu\overline{Q_\mu}\vec e_\mu$ the coefficientwise conjugate of the vector part. The natural conjugation ${}^{\natural}$ negates $\vec e_x,\vec e_y,\vec e_z$, the Hermitian conjugation is ${}^{*}={}^{\natural}\circ\bar{\cdot}$, and the Krein form is $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$, linear in the first argument and conjugate-linear in the second, as the scalar part of the product $\tilde P^{\natural}\tilde Q^{*}$. The operation of the block is written $\diamond$; the comment of the menu entry writes it $\wedge$, and this article prefers $\diamond$ because $\wedge$ names the plain outer product $\vec P\times\vec Q$ of *Introduction to the Antisymmetric Plain Algebra*.
 
 ## The Split of the Quaternionic Sesquilinear Product
 
@@ -40,18 +40,18 @@ so the scalar part of the value is zero and its vector part is $\vec P\times\ove
 *Proof.* The product $\tilde P^{\natural}\tilde Q^{*}$ of *Introduction to the General Quaternionic Sesqualgebra* has the scalar–vector form
 
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q} .
+\tilde P^{\natural}\tilde Q^{*}=\bigl[P_t\overline{Q_t}-(\vec P,\overline{\vec Q})\bigr]-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q} .
 $$
 
-The swapped product $\tilde Q^{\natural}\tilde P^{*}$ has the same form with $\tilde P$ and $\tilde Q$ exchanged, and its conjugate is $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$, the second term of the rule. Subtracting the conjugate of the swapped form from the form and halving: the scalar parts cancel because $P_0\overline{Q_0}-\overline{Q_0}P_0=0$ and $(P,\overline{\vec Q})-(\overline{\vec Q},\vec P)=0$, the two arguments of the dot product being equal; the two mixed terms are equal and cancel in the subtraction, since the mixed term of the exchanged form is $-\bigl(Q_0\overline{\vec P}+\overline{P_0}\vec Q\bigr)$ and its conjugate is $-\bigl(P_0\overline{\vec Q}+\overline{Q_0}\vec P\bigr)$, the mixed term of the form; and the two cross terms add, $\vec P\times\overline{\vec Q}+\overline{\vec Q\times\overline{\vec P}}=2\,\vec P\times\overline{\vec Q}$, since $\overline{\vec Q\times\overline{\vec P}}=\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$. The half is therefore $\vec P\times\overline{\vec Q}$, of scalar part zero.
+The swapped product $\tilde Q^{\natural}\tilde P^{*}$ has the same form with $\tilde P$ and $\tilde Q$ exchanged, and its conjugate is $\overline{\tilde Q^{\natural}\tilde P^{*}}=\tilde Q^{*}\tilde P^{\natural}$, the second term of the rule. Subtracting the conjugate of the swapped form from the form and halving: the scalar parts cancel because $P_t\overline{Q_t}-\overline{Q_t}P_t=0$ and $(\vec P,\overline{\vec Q})-(\overline{\vec Q},\vec P)=0$, the two arguments of the dot product being equal; the two mixed terms are equal and cancel in the subtraction, since the mixed term of the exchanged form is $-\bigl(Q_t\overline{\vec P}+\overline{P_t}\vec Q\bigr)$ and its conjugate is $-\bigl(P_t\overline{\vec Q}+\overline{Q_t}\vec P\bigr)$, the mixed term of the form; and the two cross terms add, $\vec P\times\overline{\vec Q}+\overline{\vec Q\times\overline{\vec P}}=2\,\vec P\times\overline{\vec Q}$, since $\overline{\vec Q\times\overline{\vec P}}=\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$. The half is therefore $\vec P\times\overline{\vec Q}$, of scalar part zero.
 
 **Proposition (coordinate rule).** In the coordinates of the two arguments,
 
 $$
-\tilde P\diamond\tilde Q=\bigl(P_2\overline{Q_3}-P_3\overline{Q_2}\bigr)e_1+\bigl(P_3\overline{Q_1}-P_1\overline{Q_3}\bigr)e_2+\bigl(P_1\overline{Q_2}-P_2\overline{Q_1}\bigr)e_3.
+\tilde P\diamond\tilde Q=\bigl(P_y\overline{Q_z}-P_z\overline{Q_y}\bigr)\vec e_x+\bigl(P_z\overline{Q_x}-P_x\overline{Q_z}\bigr)\vec e_y+\bigl(P_x\overline{Q_y}-P_y\overline{Q_x}\bigr)\vec e_z.
 $$
 
-*Proof.* The displayed cross product of the vector parts, in the quaternion basis with $e_1e_2=e_3$.
+*Proof.* The displayed cross product of the vector parts, in the quaternion basis with $\vec e_x \vec e_y=\vec e_z$.
 
 ### The Class
 
@@ -86,7 +86,7 @@ The symmetry is the antisymmetry of the block read through the conjugate of the 
 
 **Proposition.** The block has **no unit**: there is no element $\tilde E$ with $\tilde E\diamond\tilde Q=\tilde Q$ for all $\tilde Q$, on either side.
 
-*Proof.* A value of the block is pure vector, while a general $\tilde Q$ has a scalar part; for $\tilde Q=e_0$ every left value $\tilde E\diamond e_0$ is zero, so no $\tilde E$ can reproduce $e_0$. The same argument on the right.
+*Proof.* A value of the block is pure vector, while a general $\tilde Q$ has a scalar part; for $\tilde Q=e_t$ every left value $\tilde E\diamond e_t$ is zero, so no $\tilde E$ can reproduce $e_t$. The same argument on the right.
 
 The absence of a unit is shared with the other seven parts of the twelve: of the twelve operations, only the plain product and the symmetric plain product carry a two-sided unit, and only the natural product and the plain sesquilinear product carry a one-sided one.
 
@@ -94,12 +94,12 @@ The absence of a unit is shared with the other seven parts of the twelve: of the
 
 **Proposition.** The products of the basis elements are
 
-| $\diamond$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ |
+| $\diamond$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
-| $e_0$ | $0$ | $0$ | $0$ | $0$ |
-| $e_1$ | $0$ | $0$ | $e_3$ | $-e_2$ |
-| $e_2$ | $0$ | $-e_3$ | $0$ | $e_1$ |
-| $e_3$ | $0$ | $e_2$ | $-e_1$ | $0$ |
+| $e_t$ | $0$ | $0$ | $0$ | $0$ |
+| $\vec e_x$ | $0$ | $0$ | $\vec e_z$ | $-\vec e_y$ |
+| $\vec e_y$ | $0$ | $-\vec e_z$ | $0$ | $\vec e_x$ |
+| $\vec e_z$ | $0$ | $\vec e_y$ | $-\vec e_x$ | $0$ |
 
 *Proof.* The basis elements are real, so $\overline{\vec Q}=\vec Q$ and the block is the ordinary cross product; the table is the cross-product table, with the first row and column zero because a scalar has zero vector part.
 
@@ -119,9 +119,9 @@ $$
 \vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b,
 $$
 
-so that at $\tilde Q=e_1+ie_2$ the value is $-2ie_3$.
+so that at $\tilde Q=\vec e_x+i\vec e_y$ the value is $-2i\vec e_z$.
 
-*Proof.* The rule with $\tilde P=\tilde Q$; and $\vec Q\times\overline{\vec Q}=(\vec a+i\vec b)\times(\vec a-i\vec b)=-i\,\vec a\times\vec b+i\,\vec b\times\vec a=-2i\,\vec a\times\vec b$, the two real cross products cancelling. At $\tilde Q=e_1+ie_2$ one has $\vec a=e_1$, $\vec b=e_2$ and $\vec a\times\vec b=e_3$.
+*Proof.* The rule with $\tilde P=\tilde Q$; and $\vec Q\times\overline{\vec Q}=(\vec a+i\vec b)\times(\vec a-i\vec b)=-i\,\vec a\times\vec b+i\,\vec b\times\vec a=-2i\,\vec a\times\vec b$, the two real cross products cancelling. At $\tilde Q=\vec e_x+i\vec e_y$ one has $\vec a=\vec e_x$, $\vec b=\vec e_y$ and $\vec a\times\vec b=\vec e_z$.
 
 **Remark (the diagonal against the plain block).** The diagonal of $\mathrm{AQS}$ is the **vector part of the square** in the sense of the conjugate half-difference: $\tilde Q\diamond\tilde Q=\tfrac12\bigl(\tilde Q^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde Q^{*}}\,\bigr)$, the imaginary half of the square $\tilde Q^{\natural}\tilde Q^{*}$ of the general quaternionic sesquilinear product, whose theory is *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*. This is the bridge to the square article, and it is exact: the block is the conjugate half-difference of the two orders of the square, and it is not the vector part of the value $\tilde Q^{\natural}\tilde Q^{*}$ itself, which differs from the diagonal off the elements whose square has a real scalar part and a purely imaginary vector part.
 
@@ -139,13 +139,13 @@ $$
 (\tilde P\diamond\tilde Q)\diamond\tilde R+(\tilde Q\diamond\tilde R)\diamond\tilde P+(\tilde R\diamond\tilde P)\diamond\tilde Q,
 $$
 
-the triple $(\tilde P,\tilde Q,\tilde R)=(e_1,e_1,ie_2)$ gives the value $-2ie_2$, which is not zero.
+the triple $(\tilde P,\tilde Q,\tilde R)=(\vec e_x,\vec e_x,i\vec e_y)$ gives the value $-2i\vec e_y$, which is not zero.
 
-*Proof.* The catalogue *The 12 Products of the Biquaternioid Complex Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $e_1\diamond e_1=0$, $e_1\diamond ie_2=\mathbf{e_1}\times\overline{ie_2}=e_1\times(-ie_2)=-ie_3$ and $ie_2\diamond e_1=(ie_2)\times e_1=i(e_2\times e_1)=-ie_3$. Hence the three reassociations are $(e_1\diamond e_1)\diamond ie_2=0$, $(e_1\diamond ie_2)\diamond e_1=(-ie_3)\diamond e_1=(-ie_3)\times e_1=-ie_2$ and $(ie_2\diamond e_1)\diamond e_1=(-ie_3)\diamond e_1=-ie_2$, whose sum is $-2ie_2$.
+*Proof.* The catalogue *The 12 Products of the Biquaternioid Complex Space* declares the cyclic sum as the sum of the three reassociations displayed, and records the witness and the value; both are recomputed here on the cross-product table. The three inner values are $\vec e_x\diamond \vec e_x=0$, $\vec e_x\diamond i\vec e_y=\vec e_x\times\overline{i\vec e_y}=\vec e_x\times(-i\vec e_y)=-i\vec e_z$ and $i\vec e_y\diamond \vec e_x=(i\vec e_y)\times \vec e_x=i(\vec e_y\times \vec e_x)=-i\vec e_z$. Hence the three reassociations are $(\vec e_x\diamond \vec e_x)\diamond i\vec e_y=0$, $(\vec e_x\diamond i\vec e_y)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=(-i\vec e_z)\times \vec e_x=-i\vec e_y$ and $(i\vec e_y\diamond \vec e_x)\diamond \vec e_x=(-i\vec e_z)\diamond \vec e_x=-i\vec e_y$, whose sum is $-2i\vec e_y$.
 
-**Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde R]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2ie_2$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
+**Remark (the declaration of the cyclic sum).** The corpus declares the cyclic sum as the sum of the three reassociations, and the recomputation above uses that declaration. The older order of the inner brackets, $[[\tilde P,\tilde Q],\tilde R]+\cdots$ with $[\tilde P,\tilde Q]=2(\tilde P\diamond\tilde Q)$, and the sum of the reassociations do not have the same display; the value $-2i\vec e_y$ recorded here is the value of the declared sum, and it is the one tabulated in the catalogue.
 
-**Remark (the smallest witness needs a complex element).** The witness uses the complex element $ie_2$ and no triple of the real basis: on real elements the block is the ordinary cross product of *Introduction to the Antisymmetric Plain Algebra*, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and, of the six identity failures the corpus declares (the three Jacobi failures of the antisymmetric parts and the three Jordan failures of the symmetric parts), it is the only one whose witness needs an element off the real basis. It is not the only failure of the complex space: the two sesquilinear antisymmetric parts fail the Jordan identity as soon as a complex element enters, though the corpus does not ask it of them.
+**Remark (the smallest witness needs a complex element).** The witness uses the complex element $i\vec e_y$ and no triple of the real basis: on real elements the block is the ordinary cross product of *Introduction to the Antisymmetric Plain Algebra*, whose Jacobi identity is the classical one and holds, so a real witness cannot exist. The failure is therefore a genuine feature of the complex structure and of the conjugate-linear slot, and, of the six identity failures the corpus declares (the three Jacobi failures of the antisymmetric parts and the three Jordan failures of the symmetric parts), it is the only one whose witness needs an element off the real basis. It is not the only failure of the complex space: the two sesquilinear antisymmetric parts fail the Jordan identity as soon as a complex element enters, though the corpus does not ask it of them.
 
 ### The Coincidence with the Plain Block on the Real Part
 
@@ -203,18 +203,18 @@ $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q},
 $$
 
-the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2ie_3$ at $e_1+ie_2$. The Jacobi identity fails, with the witness $(e_1,e_1,ie_2)$ whose declared cyclic sum is $-2ie_2$; the witness needs a complex element, and on the real elements the block coincides with $\mathrm{APA}$, so the failure is invisible there. The product reconstructs as $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
+the conjugate cross product, the only operation of the twelve whose value is a single cross-product term with the second argument conjugated. It is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-alternating, pure-vector-valued with image $\mathrm{Vect}(\mathbb{B})$, and has no unit. Its diagonal does not vanish, $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$ at $\vec Q=\vec a+i\vec b$, and it is $-2i\vec e_z$ at $\vec e_x+i\vec e_y$. The Jacobi identity fails, with the witness $(\vec e_x,\vec e_x,i\vec e_y)$ whose declared cyclic sum is $-2i\vec e_y$; the witness needs a complex element, and on the real elements the block coincides with $\mathrm{APA}$, so the failure is invisible there. The product reconstructs as $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$, the half-sum and the half-difference of the two orders of the square of the quaternionic sesquilinear product.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})$ | the conjugate cross product, the multiplication of the block |
-| $\mathbb{B}^{\diamond}$ | the biquaternion space with the conjugate cross product |
+| $\mathbb{B}$ with $\diamond$ | the biquaternion space with the conjugate cross product |
 | $\mathrm{AQS}$ | the name of the operation among the twelve |
 | $\vec P\times\overline{\vec Q}$ | the scalar–vector rule of the block |
 | $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ | the diagonal, non-vanishing in general |
-| $(e_1,e_1,ie_2)\mapsto-2ie_2$ | the Jacobi witness |
+| $(\vec e_x,\vec e_x,i\vec e_y)\mapsto-2i\vec e_y$ | the Jacobi witness |
 | $\mathrm{APA}=\vec P\times\vec Q$ | the real coincidence of the block |
 | $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ | the reconstruction of the quaternionic sesquilinear product |
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form of the block's pairing |

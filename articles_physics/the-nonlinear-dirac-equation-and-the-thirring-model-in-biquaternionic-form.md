@@ -12,7 +12,7 @@ What the framework does **not** supply is equally definite, and follows from the
 
 The article is organised as follows. The next section explains why a self-interaction is cubic and how geometry produces one. A section states the Thirring and Soler models. A section gives the Einstein–Cartan torsion route and the Hehl–Datta equation. A section lists the local bilinears and the channel each model uses. A section gives the biquaternion interpretation. A short section records the verified two-dimensional relations. The closing sections are the open questions, the summary, the notation table and the literature.
 
-The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_k^2 = -e_0$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
+The conventions are those of the companion articles. The Clifford generators satisfy $\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu}I_4$ with $g = \mathrm{diag}(+1,-1,-1,-1)$, the chirality operator is $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ with $\gamma_5^2 = I_4$, and the Dirac adjoint is $\bar\psi = \psi^\dagger\gamma^0$. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_k^2 = -e_t$, central imaginary $i$, and the mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$.
 
 ## Why the Dirac Equation Becomes Nonlinear
 
@@ -21,7 +21,7 @@ The conventions are those of the companion articles. The Clifford generators sat
 The free Dirac equation is linear, and its solutions form a vector space. A self-interaction is a term in the equation that is built from the field itself, and the lowest non-trivial such term that is compatible with the symmetries is quadratic in the **bilinears**. Since a bilinear is quadratic in $\psi$, a product of two bilinears is quartic in the field; an equation obtained by adding such a term to the Dirac equation, or by varying an action containing it, is called nonlinear even though the resulting Euler–Lagrange equation is often cubic in the field once one factor is used as the source. This is the sense in which the axial-axial term below is "cubic": writing $B(\psi)$ for the bilinear built from the field, the equation is
 
 $$
-\left(i\gamma^\mu\partial_\mu - m\right)\psi + B(\psi)\,\psi = 0,
+\left(i\gamma^\mu\partial/\partial Q_\mu - m\right)\psi + B(\psi)\,\psi = 0,
 $$
 
 in which the bilinear is quadratic in $\psi$ and the explicit field supplies the third power.
@@ -104,7 +104,7 @@ The table is the article's organising object. The Soler and NJL models act in th
 
 ### The interaction is bosonic, so the central phase passes through it
 
-A quartic product of two bilinears is even in the fermion field, so it is invariant under the central phase $\tilde\Psi \mapsto \exp(i\alpha)\tilde\Psi$ and carries fermion number zero. In the framework's terms it is built from the algebra's **central scalar invariants**, and it therefore does not disturb the exact vector $U(1)$ the companion articles emphasise: the symmetry the mass breaks is the axial one, and the phase symmetry survives even a strong self-interaction. This is why a self-interaction can generate a mass dynamically without conflicting with the conservation of fermion number, which is the whole content of the NJL mechanism.
+A quartic product of two bilinears is even in the fermion field, so it is invariant under the central phase $\tilde\Psi \mapsto \exp(i\alpha)\tilde\Psi$ and carries fermion number zero. In the framework's terms it is built from the algebra's **central scalar invariants**, and it therefore does not disturb the exact vector $\mathrm{U}(1)$ the companion articles emphasise: the symmetry the mass breaks is the axial one, and the phase symmetry survives even a strong self-interaction. This is why a self-interaction can generate a mass dynamically without conflicting with the conservation of fermion number, which is the whole content of the NJL mechanism.
 
 ### The three channels in the framework's sectors
 
@@ -112,7 +112,7 @@ The three channels of the table map onto three different structures the framewor
 
 - **The scalar density $S$ is the mass channel.** The framework's mass term is the linear, chirality-off-diagonal pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R$. An interaction in the $S$ channel adds to that term, so the Soler and NJL models are, in the framework's terms, models in which the mass is allowed to be a function of the state rather than a fixed parameter. The companion article on the chiral condensate states the consequence: the condensate $\langle S\rangle$ is the order parameter and the self-consistent mass is the gap equation.
 - **The vector current $V^\mu$ is the material-sector current.** The companion articles on minimal coupling and on the Gordon decomposition place the conserved current in $\mathbb{M}_-$, the material sector; the Thirring interaction is the square of that object. Its being the same channel as the axial one in two dimensions is the two-dimensional accident (the Hodge duality of the currents) that makes the Thirring model a one-coupling theory.
-- **The axial current $A^\mu$ is the channel conjugate to the mass.** The linear mass breaks the axial symmetry and gives the axial-current divergence $\partial_\mu j_5^\mu = 2im\,\bar\psi\gamma_5\psi$; the torsion-induced interaction is built from $A^\mu$ itself. An axial-axial attraction is therefore a coupling in the channel whose conserved charge the mass destroys, which is exactly the channel in which a strong coupling can restore the symmetry by generating a mass — the mechanism the condensate article treats.
+- **The axial current $A^\mu$ is the channel conjugate to the mass.** The linear mass breaks the axial symmetry and gives the axial-current divergence $\partial/\partial Q_\mu j_5^\mu = 2im\,\bar\psi\gamma_5\psi$; the torsion-induced interaction is built from $A^\mu$ itself. An axial-axial attraction is therefore a coupling in the channel whose conserved charge the mass destroys, which is exactly the channel in which a strong coupling can restore the symmetry by generating a mass — the mechanism the condensate article treats.
 
 ### What the framework does not supply
 
@@ -152,7 +152,7 @@ The biquaternion interpretation places the channels. The scalar density is the m
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_k^2 = -e_0$, central $i$ |
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $e_k^2 = -e_t$, central $i$ |
 | $\bar\psi = \psi^\dagger\gamma^0$ | Dirac adjoint (carries the Clifford-odd $\gamma^0$) |
 | $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, $\gamma_5^2 = I_4$ | Chirality operator |
 | $S = \bar\psi\psi$ | Scalar density (mass channel) |

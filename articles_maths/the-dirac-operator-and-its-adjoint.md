@@ -149,7 +149,7 @@ The differential-geometric self-adjointness is the analytic shadow of the algebr
 
 ## Examples
 
-**Example (the flat torus).** On the flat torus $T^{n}$ with the product spin structure the spinor bundle is trivial and the operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial_i$; it is self-adjoint, its adjoint is itself, its spectrum is the set of $\pm|\xi|$ for the Fourier modes $\xi$, and the nonzero eigenvalues occur in opposite pairs; the kernels of $D^{\pm}$ have equal dimension and the index vanishes, as the $\hat A$-genus of a flat torus does.
+**Example (the flat torus).** On the flat torus $T^{n}$ with the product spin structure the spinor bundle is trivial and the operator is the constant-coefficient operator $D=\sum_ic(e_i)\partial/\partial x_i$; it is self-adjoint, its adjoint is itself, its spectrum is the set of $\pm|\xi|$ for the Fourier modes $\xi$, and the nonzero eigenvalues occur in opposite pairs; the kernels of $D^{\pm}$ have equal dimension and the index vanishes, as the $\hat A$-genus of a flat torus does.
 
 **Example (the round sphere).** On $S^{n}$ with the round metric the operator is self-adjoint with $\tau D\tau^{-1}=-D$, so its spectrum is symmetric; the square is the Lichnerowicz Laplacian with the constant positive scalar curvature, and the vanishing theorem gives the absence of harmonic spinors; the adjoint of $D^{+}$ is $D^{-}$ and the index is zero.
 

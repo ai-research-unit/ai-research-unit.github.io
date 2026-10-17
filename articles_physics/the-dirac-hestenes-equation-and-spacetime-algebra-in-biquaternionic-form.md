@@ -108,7 +108,7 @@ $$
 eA \;\mapsto\; eA - \nabla\alpha(x) ,
 $$
 
-a **right** multiplication by the phase rotor, accompanied by the gauge transformation of the potential. This is the STA face of the local $U(1)$ that the framework's minimal-coupling article localizes in the centre; note again that the phase acts on the right of the spinor.
+a **right** multiplication by the phase rotor, accompanied by the gauge transformation of the potential. This is the STA face of the local $\mathrm{U}(1)$ that the framework's minimal-coupling article localizes in the centre; note again that the phase acts on the right of the spinor.
 
 ### The discrete symmetries
 
@@ -136,7 +136,7 @@ The correspondence begins with a dimension count that is exact, not approximate.
 
 ### The two imaginaries are one
 
-The framework carries a **central** imaginary unit $i$, written explicitly in its basis $e_0=1,e_1,e_2,e_3$ with $i$ commuting with everything. The STA carries the **pseudoscalar** $I = \gamma_0\gamma_1\gamma_2\gamma_3$, with $I^2=-1$. On the even subalgebra — which is where the spinor lives — $I$ commutes with every element, and so it *is* a central imaginary unit. The framework's $i$ and the STA's $I$ are therefore not two different objects but the same one, seen from the two conventions. This also explains why the framework's complexification is natural rather than an extraneous addition: the $i$ was always geometric.
+The framework carries a **central** imaginary unit $i$, written explicitly in its basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $i$ commuting with everything. The STA carries the **pseudoscalar** $I = \gamma_0\gamma_1\gamma_2\gamma_3$, with $I^2=-1$. On the even subalgebra — which is where the spinor lives — $I$ commutes with every element, and so it *is* a central imaginary unit. The framework's $i$ and the STA's $I$ are therefore not two different objects but the same one, seen from the two conventions. This also explains why the framework's complexification is natural rather than an extraneous addition: the $i$ was always geometric.
 
 ### The Clifford-odd $\gamma_0$ and the right action
 

@@ -145,7 +145,7 @@ derivative. The kernel is
 $$
 K(x,y)=\min(x,y),
 $$
-and the reproducing property is exact: $\partial_y\min(x,y)=\mathbf 1_{\{y<x\}}$ away from $y=x$, so
+and the reproducing property is exact: $\partial/\partial y\,\min(x,y)=\mathbf 1_{\{y<x\}}$ away from $y=x$, so
 $$
 \langle f,K(\cdot,x)\rangle=\int_0^1f'(y)\mathbf 1_{\{y<x\}}\,dy=f(x)-f(0)=f(x) .
 $$

@@ -14,7 +14,7 @@ The earlier exercises treated a single qubit, an entangled pair in the singlet s
 The exercise is built directly on the parent articles. The two-qubit arena — the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, its trace, and the partial traces — is fixed by *Entangled Subsystems in the Biquaternion Framework*. The four Bell idempotents $P_\epsilon$ and their classification by the sign pattern $\epsilon_1\epsilon_2\epsilon_3=+1$ are fixed by *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The correlation function
 
 $$
-E(\vec u_1, \vec u_2) = \mathrm{Tr}\!\left(P_\epsilon\circ\bigl((i\vec u_1)\otimes(i\vec u_2)\bigr)\right) = -\sum_{j=1}^{3}\epsilon_j\,a_j b_j
+E(\vec u_1, \vec u_2) = \mathrm{Tr}\!\left(P_\epsilon\circ\bigl((i\vec u_1)\otimes(i\vec u_2)\bigr)\right) = -\sum_{j\in\{x,y,z\}}\epsilon_j\,a_j b_j
 $$
 
 is the result of *Exercise: The Correlation Function of the Bell States*, and it is the input to every quantum computation below. No Bell projector is re-derived; the exercise applies the parent results.
@@ -25,10 +25,10 @@ First, **the framework reproduces both bounds; it does not explain why nature st
 
 Second, the sharp bound is obtained **after** the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and the cyclic products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; $i$ is the scalar imaginary, $i^2=-1$. On a single factor the trace is twice the scalar part, $\mathrm{Tr}_\mathbb{B}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$, and on the tensor product $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, with $\mathrm{Tr}_\mathbb{B}(e_0)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*,
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $e_k^2 = -e_t$ and the cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; $i$ is the scalar imaginary, $i^2=-1$. On a single factor the trace is twice the scalar part, $\mathrm{Tr}_\mathbb{B}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$, and on the tensor product $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$, with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(e_k)=0$. The isomorphism is the one fixed by *Quantum Physics in Biquaternionic Form*,
 
 $$
-e_0\mapsto I_2,\qquad e_1\mapsto -i\sigma_1,\qquad e_2\mapsto -i\sigma_2,\qquad e_3\mapsto -i\sigma_3,
+e_t\mapsto I_2,\qquad \vec e_x\mapsto -i\sigma_1,\qquad \vec e_y\mapsto -i\sigma_2,\qquad \vec e_z\mapsto -i\sigma_3,
 $$
 
 where $\sigma_1,\sigma_2,\sigma_3$ are the Pauli matrices; the image of $ie_k$ is $\sigma_k$. The three Pauli matrices are also written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
@@ -120,7 +120,7 @@ This is the classical (CHSH) bound. It is tight: the deterministic model $A_\lam
 The parent exercise computed the correlation function of each Bell state. Its result is
 
 $$
-E(\vec u_1, \vec u_2) = -\sum_{j=1}^{3}\epsilon_j\,a_j b_j = \vec u_1^T T\,\vec u_2,
+E(\vec u_1, \vec u_2) = -\sum_{j\in\{x,y,z\}}\epsilon_j\,a_j b_j = \vec u_1^T T\,\vec u_2,
 \qquad
 T = -\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3),
 $$
@@ -139,7 +139,7 @@ Only the singlet has $T=-I$ and hence the rotationally invariant correlation $E=
 Substituting into the CHSH combination, for a state with sign pattern $\epsilon$,
 
 $$
-S_\epsilon = -\sum_{j=1}^{3}\epsilon_j\bigl(a_jb_j - a_jb'_j + a'_jb_j + a'_jb'_j\bigr).
+S_\epsilon = -\sum_{j\in\{x,y,z\}}\epsilon_j\bigl(a_jb_j - a_jb'_j + a'_jb_j + a'_jb'_j\bigr).
 $$
 
 For the singlet, $\epsilon_j=+1$ for all $j$, so
@@ -175,7 +175,7 @@ $$
 
 realize this configuration, and direct substitution gives $S_{\Psi^-}=-2\sqrt{2}$; reversing the signs of $\vec u_1$ and $\vec u_1'$ gives $+2\sqrt{2}$.
 
-Now consider the other three Bell states. They are related to the singlet by **local unitary operations**: the parent article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* shows that conjugating $P_{\Phi^+}$ by the unit real quaternions $e_0,e_1,e_2,e_3$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.
+Now consider the other three Bell states. They are related to the singlet by **local unitary operations**: the parent article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* shows that conjugating $P_{\Phi^+}$ by the unit real quaternions $e_t,\vec e_x,\vec e_y,\vec e_z$ on the first factor permutes the four Bell idempotents. In Hilbert-space terms the four Bell states lie in a single local-unitary orbit. The CHSH maximum is invariant under local unitaries, because a local unitary simply maps the set of measurement directions onto itself; the maximum for each Bell state is therefore also $2\sqrt{2}$.
 
 The explicit optimal configuration for a non-singlet Bell state is worth recording. Its correlation matrix $T=-\mathrm{diag}(\epsilon)$ has diagonal entries $T_{jj}=-\epsilon_j$, two of which are equal because $\epsilon_1\epsilon_2\epsilon_3=+1$ guarantees at least two equal signs. Choose the plane spanned by the two axes $j,k$ with $\epsilon_j=\epsilon_k$, put $\vec u_1,\vec u_1'$ along those two axes, and put $\vec u_2,\vec u_2'$ at $\pm45^\circ$ within that plane,
 
@@ -275,7 +275,7 @@ and every statement about $S$ is a statement about $\tilde{\mathcal{S}}$.
 By linearity of the trace pairing, the expectation of $\tilde{\mathcal{S}}$ on $P_\epsilon$ is the CHSH combination of the four single-setting correlations. The parent result $E(\vec u_1,\vec u_2)=-\sum_j\epsilon_j a_jb_j$ gives immediately
 
 $$
-S_\epsilon = -\sum_{j=1}^{3}\epsilon_j\bigl(a_jb_j - a_jb'_j + a'_jb_j + a'_jb'_j\bigr),
+S_\epsilon = -\sum_{j\in\{x,y,z\}}\epsilon_j\bigl(a_jb_j - a_jb'_j + a'_jb_j + a'_jb'_j\bigr),
 $$
 
 which is exactly the standard expression of Step 3. For the singlet, $\epsilon_j=+1$, and
@@ -287,7 +287,7 @@ $$
 
 The optimization of Step 4 is then carried out in the algebra exactly as before, since it uses only the real vectors $\vec u_1,\vec u_1',\vec u_2,\vec u_2'$ and the bilinear form. The result is the same: $|S_\epsilon|=2\sqrt{2}$ for every Bell state.
 
-It is worth recording the same content in the language of **joint probabilities**, because that is the form in which the CHSH combination enters the operational discussion of the companion article *The Quantum–Classical Divide in the Biquaternion Framework*. With the single-qubit idempotents $\tilde\Pi(\pm\vec u_1)=\tfrac12(e_0\pm i\vec u_1)$, the joint probability of outcomes $\pm,\pm$ is the Born pairing applied twice:
+It is worth recording the same content in the language of **joint probabilities**, because that is the form in which the CHSH combination enters the operational discussion of the companion article *The Quantum–Classical Divide in the Biquaternion Framework*. With the single-qubit idempotents $\tilde\Pi(\pm\vec u_1)=\tfrac12(e_t\pm i\vec u_1)$, the joint probability of outcomes $\pm,\pm$ is the Born pairing applied twice:
 
 $$
 p_\epsilon(\pm,\pm\mid\vec u_1,\vec u_2)
@@ -317,18 +317,18 @@ $$
 \tilde{\mathcal{S}}^2 = \tilde{Q}^2 + \tilde{R}^2 + XY + YX .
 $$
 
-Each term is evaluated with the quaternion multiplication rules. First, $\vec u_1^2=-e_0$ and $(\vec u_2-\vec u_2')^2=-|\vec u_2-\vec u_2'|^2e_0=-2(1-c)e_0$ with $c=\vec u_2\cdot\vec u_2'$, so
+Each term is evaluated with the quaternion multiplication rules. First, $\vec u_1^2=-e_t$ and $(\vec u_2-\vec u_2')^2=-|\vec u_2-\vec u_2'|^2e_t=-2(1-c)e_t$ with $c=\vec u_2\cdot\vec u_2'$, so
 
 $$
-\tilde{Q}^2 = \vec u_1^2\otimes(\vec u_2-\vec u_2')^2 = (-e_0)\otimes\bigl(-2(1-c)e_0\bigr) = 2(1-c)\,e_0\otimes e_0 .
+\tilde{Q}^2 = \vec u_1^2\otimes(\vec u_2-\vec u_2')^2 = (-e_t)\otimes\bigl(-2(1-c)e_t\bigr) = 2(1-c)\,e_t\otimes e_t .
 $$
 
-Similarly, $(\vec u_2+\vec u_2')^2=-2(1+c)e_0$, so
+Similarly, $(\vec u_2+\vec u_2')^2=-2(1+c)e_t$, so
 
 $$
-\tilde{R}^2 = 2(1+c)\,e_0\otimes e_0,
+\tilde{R}^2 = 2(1+c)\,e_t\otimes e_t,
 \qquad
-\tilde{Q}^2+\tilde{R}^2 = 4\,e_0\otimes e_0 .
+\tilde{Q}^2+\tilde{R}^2 = 4\,e_t\otimes e_t .
 $$
 
 For the cross terms, the anti-commutativity of distinct quaternion units gives
@@ -349,7 +349,7 @@ Collecting the pieces,
 
 $$
 \boxed{\;\tilde{\mathcal{S}}^2
-= 4\Bigl(e_0\otimes e_0 + (\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\Bigr).\;}
+= 4\Bigl(e_t\otimes e_t + (\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\Bigr).\;}
 $$
 
 This is the biquaternion form of the Bell-operator identity. The square of the CHSH element is the identity of the algebra plus a single tensor product of two cross products.
@@ -371,7 +371,7 @@ The image of $\tilde{\mathcal{S}}^2$ is therefore $4\bigl[I\otimes I-(u\cdot\bol
 It is at this point that the gap flagged in the introduction becomes concrete. The bound above is a statement about **eigenvalues of the matrix image**, i.e. about the spectral norm of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The framework's own positive-definite norm — the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, which corresponds to the Frobenius norm of the matrix image — is not strong enough to give it. Indeed, taking the trace of the boxed identity,
 
 $$
-\mathrm{Tr}\bigl(\tilde{\mathcal{S}}^2\bigr) = 4\,\mathrm{Tr}(e_0\otimes e_0) + 4\,\mathrm{Tr}\bigl((\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\bigr) = 16 + 0 = 16,
+\mathrm{Tr}\bigl(\tilde{\mathcal{S}}^2\bigr) = 4\,\mathrm{Tr}(e_t\otimes e_t) + 4\,\mathrm{Tr}\bigl((\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\bigr) = 16 + 0 = 16,
 $$
 
 because the cross-product factor is traceless in each tensor factor. The Frobenius norm of $\tilde{\mathcal{S}}$ is accordingly $4$ for every configuration, and the Cauchy–Schwarz bound on the Born pairing with a state of unit Frobenius norm is $|S|\le4$ — the trivial no-signaling bound, not $2\sqrt{2}$. The Euclidean form does not distinguish the singlet's alignment of the four settings from a generic one. The sharp bound requires the spectral norm, and that norm is carried by the matrix representation, not by the algebra's own quadratic form. We leave this as a labelled gap rather than presenting the algebra as if it contained the bound on its own.
@@ -398,7 +398,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 
 **1. The CHSH combination is one element of the algebra.** In the standard formulation the Bell operator is a sum of four tensor products of Pauli observables. In the framework it is the single Hermitian element $\tilde{\mathcal{S}}\in\mathbb{M}_+\otimes\mathbb{M}_+$, and the CHSH quantity is its Born pairing with the state. The inequality is a statement about the spectrum of one algebraic element.
 
-**2. Its square is the identity plus one cross term.** The identity $\tilde{\mathcal{S}}^2=4\bigl(e_0\otimes e_0+(\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\bigr)$ is the biquaternion content of Tsirelson's bound. The cross products are the only place the two parties' settings meet, and it is their bounded length, $|\vec u_1\times\vec u_1'|\le1$ and $|\vec u_2\times\vec u_2'|\le1$, that caps the violation.
+**2. Its square is the identity plus one cross term.** The identity $\tilde{\mathcal{S}}^2=4\bigl(e_t\otimes e_t+(\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\bigr)$ is the biquaternion content of Tsirelson's bound. The cross products are the only place the two parties' settings meet, and it is their bounded length, $|\vec u_1\times\vec u_1'|\le1$ and $|\vec u_2\times\vec u_2'|\le1$, that caps the violation.
 
 **3. The four Bell states are a single local-unitary orbit, and they all saturate the bound.** The orbit statement is a result of the Bell-basis parent article; the invariance of the CHSH maximum under local unitaries transfers the singlet's value $2\sqrt{2}$ to its three companions. The explicit non-singlet configurations of Step 4 use the measurement plane spanned by the two equal-sign entries of $\epsilon$.
 
@@ -411,7 +411,7 @@ so that $S=1-(-1)+1+1=4$; its single-party outcomes are unbiased, so it cannot t
 **Problem 1 (Werner states and the threshold for violation).** Consider the two-qubit Werner state
 
 $$
-\tilde{\rho}_p = p\,P_{\mathrm{singlet}} + (1-p)\,\tfrac14\,e_0\otimes e_0,
+\tilde{\rho}_p = p\,P_{\mathrm{singlet}} + (1-p)\,\tfrac14\,e_t\otimes e_t,
 \qquad 0\le p\le1 .
 $$
 
@@ -444,7 +444,7 @@ $$
 and the parent correlation function gives the same $S_\epsilon$ as the standard formulation. The Bell-operator identity becomes the algebra identity
 
 $$
-\tilde{\mathcal{S}}^2 = 4\Bigl(e_0\otimes e_0 + (\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\Bigr),
+\tilde{\mathcal{S}}^2 = 4\Bigl(e_t\otimes e_t + (\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2')\Bigr),
 $$
 
 whose image has eigenvalues $4(1\mp|u||v|)$; the bound $|u||v|\le1$ gives Tsirelson's value $2\sqrt2$. The CHSH quantity is thus a statement about the square of one element of $\mathbb{M}_+\otimes\mathbb{M}_+$, and the four Bell states, being a single local-unitary orbit, all attain the bound.
@@ -458,21 +458,21 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit tensor-product algebra |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
-| $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, cyclic products |
+| $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $e_k^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathrm{Tr}_\mathbb{B}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$ | Trace on a single factor |
 | $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
-| $e_0\mapsto I_2,\ e_k\mapsto-i\sigma_k$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $ie_k$ is $\sigma_k$ |
+| $e_t\mapsto I_2,\ e_k\mapsto-i\sigma_k$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $ie_k$ is $\sigma_k$ |
 | $\vec u_1,\vec u_1',\vec u_2,\vec u_2'$ | Alice's and Bob's measurement directions |
 | $A=\vec u_1\cdot\boldsymbol{\sigma},\ A'=\vec u_1'\cdot\boldsymbol{\sigma},\ B=\vec u_2\cdot\boldsymbol{\sigma},\ B'=\vec u_2'\cdot\boldsymbol{\sigma}$ | Single-qubit observables, spectrum $\{\pm1\}$ |
-| $P_\epsilon=\tfrac14(e_0\otimes e_0+\sum_j\epsilon_j\,e_j\otimes e_j)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
+| $P_\epsilon=\tfrac14(e_t\otimes e_t+\sum_j\epsilon_j\,e_j\otimes e_j)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $E(\vec u_1,\vec u_2)=\mathrm{Tr}(P_\epsilon\circ((i\vec u_1)\otimes(i\vec u_2)))=-\sum_j\epsilon_j a_jb_j$ | Correlation function |
 | $T_{jk}=\langle\sigma_j\otimes\sigma_k\rangle=-\epsilon_j\delta_{jk}$ | Correlation matrix of a Bell state |
 | $S=E(\vec u_1,\vec u_2)-E(\vec u_1,\vec u_2')+E(\vec u_1',\vec u_2)+E(\vec u_1',\vec u_2')$ | CHSH combination |
 | $S=A\otimes B-A\otimes B'+A'\otimes B+A'\otimes B'$ | Bell operator |
 | $S^2=4I+[A,A']\otimes[B,B']=4I-4(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})$ | Operator identity behind the bound |
 | $\tilde{\mathcal{S}}$ | CHSH element of $\mathbb{M}_+\otimes\mathbb{M}_+$ |
-| $\tilde{\mathcal{S}}^2=4(e_0\otimes e_0+(\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2'))$ | Biquaternion square identity |
+| $\tilde{\mathcal{S}}^2=4(e_t\otimes e_t+(\vec u_1\times\vec u_1')\otimes(\vec u_2\times\vec u_2'))$ | Biquaternion square identity |
 | $u=\vec u_1\times\vec u_1',\ v=\vec u_2\times\vec u_2'$ | Cross products controlling the bound |
 | $\lvert S\rvert\le2$ | Classical (CHSH) bound |
 | $\lvert S\rvert\le2\sqrt{2}$ | Tsirelson's bound |

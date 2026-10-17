@@ -22,7 +22,7 @@ they are idempotent, $\mathrm{Sc}+\mathrm{vec}=\operatorname{id}$, and they cut 
 
 Let $\nu$ be a unit imaginary quaternion and let $\iota_\nu(\tilde q)=\nu \tilde q\nu^{-1}$ be the inner involution of *Quaternion Involutions and Projections*. Its fixed space is the plane
 $$
-\mathbb{C}_\nu=\mathbb{R}e_0\oplus\mathbb{R}\nu=\{a+b\nu:a,b\in\mathbb{R}\},
+\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu=\{a+b\nu:a,b\in\mathbb{R}\},
 $$
 a commutative two-dimensional subalgebra, and its anti-fixed space is the orthogonal complement $\nu^\perp=\{\vec q\in\mathrm{Vect}(\mathbb{H}):\nu\cdot\vec q=0\}$, a plane. The eigenspace decomposition is therefore
 $$
@@ -46,7 +46,7 @@ The axis supplies a second involution beside the inner one, the **twist**
 $$
 \alpha_\nu={}^{\natural}\circ\iota_\nu=\iota_\nu\circ{}^{\natural}, \qquad \alpha_\nu(\tilde q)=\nu \tilde q^{\natural}\nu^{-1},
 $$
-of *Quaternion Involutions and Projections*. It is an involutive anti-automorphism: $\alpha_\nu^2=\operatorname{id}$ on the elements and $\alpha_\nu(\tilde p\tilde q)=\alpha_\nu(\tilde q)\alpha_\nu(\tilde p)$ on the product, and it fixes every element of the plane
+of *Quaternion Involutions and Projections*. It is an involutive anti-automorphism: $\alpha_\nu^2=\operatorname{id}$ on the elements and $\alpha_\nu(\tilde q_1\tilde q_2)=\alpha_\nu(\tilde q_2)\alpha_\nu(\tilde q_1)$ on the product, and it fixes every element of the plane
 $$
 \mathbb{R}_{\mathbb{H}}\oplus\nu^\perp=\{a+\vec q:a\in\mathbb{R},\ \vec q\in\nu^\perp\},
 $$
@@ -56,7 +56,7 @@ $$
 $$
 with the projections $\tilde q\mapsto\tfrac12(\tilde q+\alpha_\nu\tilde q)$ onto the plane and $\tilde q\mapsto\tfrac12(\tilde q-\alpha_\nu\tilde q)$ onto the axis line. The twist is the companion of the inner involution on the same axis: $\iota_\nu$ isolates the negated plane $\nu^\perp$ against the axis plane $\mathbb{C}_\nu$, and $\alpha_\nu$ isolates the axis line against the scalar line and that plane. The three involutions ${}^{\natural}$, $\iota_\nu$ and $\alpha_\nu$ thus cut the orthogonal splitting $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\nu\oplus\nu^\perp$ into its three two-sided groupings, and the twist decomposition is the one in which the axis line stands alone.
 
-The plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ is not a subalgebra: for $\nu=e_1$ the units $e_2$ and $e_3$ of the plane multiply to $e_1$, outside it. The decomposition depends on the axis $\mathbb{R}\nu$ and not on the unit chosen to name it, and the negative twist $-\alpha_\nu$ cuts the same two eigenspaces with the labels exchanged, as the reflection does for the inner involution.
+The plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ is not a subalgebra: for $\nu=\vec e_x$ the units $\vec e_y$ and $\vec e_z$ of the plane multiply to $\vec e_x$, outside it. The decomposition depends on the axis $\mathbb{R}\nu$ and not on the unit chosen to name it, and the negative twist $-\alpha_\nu$ cuts the same two eigenspaces with the labels exchanged, as the reflection does for the inner involution.
 
 ## The Polar Decomposition
 
@@ -70,13 +70,13 @@ $$
 $$
 The element $u$ is a **unit quaternion** (a **rotor**), and $\tilde q=|\tilde q|u$ is the **polar decomposition** of $\tilde q$. The decomposition is unique: the modulus is the non-negative root of the norm and the rotor is then forced. It multiplies two factors of different nature — a positive scalar and an element of the unit sphere — and it is not additive. The polar element, its argument and its axis are *Quaternion Polar Element Representation*, below this article in this category; the unit sphere $N=1$ is the group of rotors, whose topology is *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 
-On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_0$; a pure element $\vec q$ has square $\vec q^2=-\langle \vec q\rangle_{\natural}$ and rotor $\vec q/|\vec q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.
+On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_t$; a pure element $\vec q$ has square $\vec q^2=-\langle \vec q\rangle_{\natural}$ and rotor $\vec q/|\vec q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.
 
 ## There Are Exactly These
 
 **Theorem.** The additive decompositions of $\mathbb{H}$ cut out by its involutions, and the multiplicative decomposition cut out by the norm, are exactly these four: the scalar–vector decomposition of dimensions $1+3$, the axis decomposition of dimensions $2+2$ along a unit imaginary, the twist decomposition of dimensions $3+1$ along the same axis, and the polar decomposition.
 
-**Proof.** The involutions available on the elements of $\mathbb{H}$, up to sign, are of three kinds, by *Quaternion Involutions and Projections*. The coordinate involution is ${}^{\natural}$ and its negative, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}$ and $\mathrm{Vect}(\mathbb{H})$, giving the scalar–vector decomposition; the inner involutions are the $\iota_\nu$, one per axis line, and their negatives $\rho_\nu$, with the two eigenspaces $\mathbb{C}_\nu$ and $\nu^\perp$, giving the axis decomposition; and the twists are the $\alpha_\nu={}^{\natural}\iota_\nu$, one per axis line, and their negatives, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and $\mathbb{R}\nu$, giving the twist decomposition. No other involution is available, and the eigenspace decomposition of an involution is determined by it, so the additive list is complete. For the multiplicative one, the norm is the only quadratic form on the element with $\langle\tilde p\tilde q\rangle_{\natural}=\langle\tilde p\rangle_{\natural}\langle\tilde q\rangle_{\natural}$ and positive values, its positive square root is the modulus, and normalising by it gives the rotor; there is no second multiplicative decomposition, the modulus being one-dimensional.
+**Proof.** The involutions available on the elements of $\mathbb{H}$, up to sign, are of three kinds, by *Quaternion Involutions and Projections*. The coordinate involution is ${}^{\natural}$ and its negative, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}$ and $\mathrm{Vect}(\mathbb{H})$, giving the scalar–vector decomposition; the inner involutions are the $\iota_\nu$, one per axis line, and their negatives $\rho_\nu$, with the two eigenspaces $\mathbb{C}_\nu$ and $\nu^\perp$, giving the axis decomposition; and the twists are the $\alpha_\nu={}^{\natural}\iota_\nu$, one per axis line, and their negatives, with the two eigenspaces $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ and $\mathbb{R}\nu$, giving the twist decomposition. No other involution is available, and the eigenspace decomposition of an involution is determined by it, so the additive list is complete. For the multiplicative one, the norm is the only quadratic form on the element with $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ and positive values, its positive square root is the modulus, and normalising by it gives the rotor; there is no second multiplicative decomposition, the modulus being one-dimensional.
 
 ## Summary
 
@@ -87,7 +87,7 @@ The quaternion algebra decomposes four ways. Additively by the natural sign into
 | symbol | meaning |
 |---|---|
 | $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$ | the scalar–vector decomposition, dimensions $1+3$ |
-| $\mathbb{C}_\nu=\mathbb{R}e_0\oplus\mathbb{R}\nu$ | the plane of the inner involution $\iota_\nu$, a commutative subalgebra |
+| $\mathbb{C}_\nu=\mathbb{R}e_t\oplus\mathbb{R}\nu$ | the plane of the inner involution $\iota_\nu$, a commutative subalgebra |
 | $\nu^\perp$ | the orthogonal plane, the anti-fixed space of $\iota_\nu$ |
 | $\mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp$ | the axis decomposition, dimensions $2+2$ |
 | $\alpha_\nu={}^{\natural}\iota_\nu$ | the twist, the involutive anti-automorphism of the axis |

@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 Earlier exercises treated a single qubit: a single measurement (Exercise: Measuring Spin Along an Arbitrary Direction), time evolution (Exercise: Spin Precession in a Magnetic Field), and successive measurements (Exercise: Successive Measurements of Spin). This exercise treats a **two-qubit system**, and introduces the first genuinely quantum-mechanical correlation: **entanglement**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The trace on $\mathbb{B}\otimes\mathbb{B}$ is the tensor product of the traces on each factor: $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_k^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The trace on $\mathbb{B}\otimes\mathbb{B}$ is the tensor product of the traces on each factor: $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Exercise
 
@@ -95,43 +95,43 @@ $$
 
 ### Step 1: The state
 
-In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_0 + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
+In the biquaternion framework, a single-qubit pure state is an idempotent of $\mathbb{M}_+$, of the form $P(\vec u_m) = \tfrac{1}{2}(e_t + i\vec u_m)$. For a **two-qubit system**, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, and a two-qubit pure state is an idempotent of $\mathbb{M}_+\otimes\mathbb{M}_+$.
 
 The singlet state corresponds to the idempotent
 
 $$
-P_{\mathrm{singlet}} = \frac{1}{4}\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
+P_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 
 *Idempotency.* Using $(x\otimes y)\circ(z\otimes w) = (x\circ z)\otimes(y\circ w)$ and the quaternion multiplication rules,
 
 $$
-P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\sum_{j,k=0}^{3}(e_j\circ e_k)\otimes(e_j\circ e_k).
+P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\sum_{\mu,\nu\in\{t,x,y,z\}}(e_\mu\circ \vec e_\nu)\otimes(e_\mu\circ \vec e_\nu).
 $$
 
-For the diagonal pairs $j = k$, the product $e_j\circ e_j$ equals $e_0$ for $j = 0$ and $-e_0$ for $j = 1, 2, 3$. In both cases the tensor product $(e_j\circ e_j)\otimes(e_j\circ e_j)$ equals $e_0\otimes e_0$, so the four diagonal terms contribute $4\,e_0\otimes e_0$ in total.
+For the diagonal pairs $\mu = \nu$, the product $e_\mu\circ e_\mu$ equals $e_t$ for $\mu = t$ and $-e_t$ for $\mu\in\{x,y,z\}$. In both cases the tensor product $(e_\mu\circ e_\mu)\otimes(e_\mu\circ e_\mu)$ equals $e_t\otimes e_t$, so the four diagonal terms contribute $4\,e_t\otimes e_t$ in total.
 
-For the off-diagonal pairs $j \neq k$, the twelve ordered pairs $(j,k)$ with $j \neq k$ group into six unordered pairs $\{j,k\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{0,k\}$), the products $e_0 e_k$ and $e_k e_0$ are both equal to $e_k$, so the two terms $e_k\otimes e_k$ coincide; for pairs not involving the identity (of the form $\{j,k\}$ with $j, k \in \{1,2,3\}$), the products $e_j e_k = \epsilon_{jkl} e_l$ and $e_k e_j = -\epsilon_{jkl} e_l$ are opposites, and the tensor product squares the sign, so again the two terms $e_l\otimes e_l$ coincide. Concretely, the three pairs involving $e_0$ contribute $2\,e_k\otimes e_k$ for $k = 1, 2, 3$, and the three pairs not involving $e_0$ contribute $2\,e_l\otimes e_l$ for $l$ equal to the remaining index. Summing, each of $e_1\otimes e_1$, $e_2\otimes e_2$, $e_3\otimes e_3$ appears four times, and the off-diagonal terms contribute
+For the off-diagonal pairs $\mu \neq \nu$, the twelve ordered pairs $(\mu,\nu)$ with $\mu \neq \nu$ group into six unordered pairs $\{\mu,\nu\}$. Each unordered pair contributes two terms to the sum, and in every case the two terms are equal: for pairs involving the identity (of the form $\{t,\nu\}$), the products $e_t \vec e_\nu$ and $\vec e_\nu e_t$ are both equal to $\vec e_\nu$, so the two terms $\vec e_\nu\otimes \vec e_\nu$ coincide; for pairs not involving the identity (of the form $\{\mu,\nu\}$ with $\mu, \nu \in \{x,y,z\}$), the products $e_\mu \vec e_\nu = \epsilon_{\mu\nu\lambda} e_\lambda$ and $\vec e_\nu e_\mu = -\epsilon_{\mu\nu\lambda} e_\lambda$ are opposites, and the tensor product squares the sign, so again the two terms $e_\lambda\otimes e_\lambda$ coincide. Concretely, the three pairs involving $e_t$ contribute $2\,\vec e_k\otimes \vec e_k$ for $k = 1, 2, 3$, and the three pairs not involving $e_t$ contribute $2\,e_\lambda\otimes e_\lambda$ for $\lambda$ equal to the remaining index. Summing, each of $\vec e_x\otimes \vec e_x$, $\vec e_y\otimes \vec e_y$, $\vec e_z\otimes \vec e_z$ appears four times, and the off-diagonal terms contribute
 
 $$
-4\left(e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right).
+4\left(\vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$
 
 Combining the diagonal and off-diagonal contributions,
 
 $$
-P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3\right) = P_{\mathrm{singlet}}.
+P_{\mathrm{singlet}}\circ P_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = P_{\mathrm{singlet}}.
 $$
 
-*Trace.* The trace is $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}(e_j)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_j) = 2$ for $j = 0$ (since $\mathrm{Tr}_\mathbb{B}(e_0) = 2$) and $0$ for $j = 1, 2, 3$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
+*Trace.* The trace is $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_\mu)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_\mu) = 2$ for $\mu = t$ (since $\mathrm{Tr}_\mathbb{B}(e_t) = 2$) and $0$ for $\mu\in\{x,y,z\}$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(P_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
 
 ### Step 2: The measurement operators
 
-The single-qubit projector onto spin-up along $\vec u_a$ is the idempotent $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$. The joint measurement operator is the tensor product
+The single-qubit projector onto spin-up along $\vec u_a$ is the idempotent $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$. The joint measurement operator is the tensor product
 
 $$
-P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_0 + i\vec u_a\right)\otimes\left(e_0 + i\vec u_b\right).
+P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b) = \frac{1}{4}\left(e_t + i\vec u_a\right)\otimes\left(e_t + i\vec u_b\right).
 $$
 
 ### Step 3: The probability
@@ -145,20 +145,20 @@ $$
 Computing the product,
 
 $$
-P_{\mathrm{singlet}}\circ P_{++} = \frac{1}{16}\sum_{j=0}^{3}\left[e_j(e_0 + i\vec u_a)\right]\otimes\left[e_j(e_0 + i\vec u_b)\right].
+P_{\mathrm{singlet}}\circ P_{++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
 Applying the tensor-product trace,
 
 $$
-p(+,+) = \frac{1}{16}\sum_{j=0}^{3}\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\vec u_a)\right]\cdot\mathrm{Tr}_\mathbb{B}\!\left[e_j(e_0 + i\vec u_b)\right].
+p(+,+) = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}\!\left[e_\mu(e_t + i\vec u_a)\right]\cdot\mathrm{Tr}_\mathbb{B}\!\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
-**Term $j = 0$.** $\mathrm{Tr}_\mathbb{B}(e_0 + i\vec u_a) = 2$, and similarly for $\vec u_b$. Contribution: $2\cdot 2 = 4$.
+**Term $\mu = t$.** $\mathrm{Tr}_\mathbb{B}(e_t + i\vec u_a) = 2$, and similarly for $\vec u_b$. Contribution: $2\cdot 2 = 4$.
 
-**Terms $j = 1, 2, 3$.** We have $e_j(e_0 + i\vec u_a) = e_j + ie_j\vec u_a$. The scalar part of $e_j\vec u_a$ is $-\vec u_a_j e_0$, so $\mathrm{Tr}_\mathbb{B}(e_j\vec u_a) = -2\vec u_a_j$ and $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\vec u_a) = -2i\vec u_a_j$. Similarly $\mathrm{Tr}_\mathbb{B}(e_j + ie_j\vec u_b) = -2i\vec u_b_j$. Contribution of term $j$: $(-2i\vec u_a_j)(-2i\vec u_b_j) = -4\vec u_a_j\vec u_b_j$.
+**Terms $\mu\in\{x,y,z\}$.** We have $e_\mu(e_t + i\vec u_a) = e_\mu + ie_\mu\vec u_a$. The scalar part of $e_\mu\vec u_a$ is $-\vec {u_a}_\mu e_t$, so $\mathrm{Tr}_\mathbb{B}(e_\mu\vec u_a) = -2\vec {u_a}_\mu$ and $\mathrm{Tr}_\mathbb{B}(e_\mu + ie_\mu\vec u_a) = -2i\vec {u_a}_\mu$. Similarly $\mathrm{Tr}_\mathbb{B}(e_\mu + ie_\mu\vec u_b) = -2i\vec {u_b}_\mu$. Contribution of term $j$: $(-2i\vec {u_a}_\mu)(-2i\vec {u_b}_\mu) = -4\vec {u_a}_\mu\vec {u_b}_\mu$.
 
-Summing over $j = 1, 2, 3$: $-4\,\vec u_a\cdot\vec u_b$.
+Summing over $\mu\in\{x,y,z\}$: $-4\,\vec u_a\cdot\vec u_b$.
 
 **Total.** $p(+,+) = \frac{1}{16}\left(4 - 4\,\vec u_a\cdot\vec u_b\right) = \frac{1}{4}\left(1 - \vec u_a\cdot\vec u_b\right)$.
 
@@ -216,9 +216,9 @@ $$
 
 the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
-**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k e_k\otimes e_k$ in the singlet idempotent, which couple the two qubits.
+**3. The correlations arise from the tensor-product structure.** The single-qubit projectors $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $P_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_k \vec e_k\otimes \vec e_k$ in the singlet idempotent, which couple the two qubits.
 
-**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $e_k\vec u_a$ and $e_k\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
+**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
 **5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\Psi^-\rangle\langle\Psi^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{M}_+\otimes\mathbb{M}_+$, with the Born rule given by the tensor-product trace.**
 
@@ -251,12 +251,12 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{M}_+$ | Hermitian subspace (states, observables) |
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
+| $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_k^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $|\Psi^-\rangle$ | Singlet state |
-| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
-| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_0 + i\vec u_a)$ | Single-qubit projector |
+| $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_k \vec e_k\otimes \vec e_k)$ | Singlet idempotent |
+| $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit projector |
 | $P_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint projector |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 

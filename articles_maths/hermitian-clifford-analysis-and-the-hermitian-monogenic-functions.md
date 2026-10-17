@@ -46,8 +46,8 @@ $$
 and the corresponding Wirtinger derivatives are
 
 $$
-\partial_{z_j} = \tfrac12\bigl(\partial_{2j-1}-i\,\partial_{2j}\bigr) , \qquad
-\partial_{\bar z_j} = \tfrac12\bigl(\partial_{2j-1}+i\,\partial_{2j}\bigr) .
+\partial/\partial z_j = \tfrac12\bigl(\partial/\partial x_{2j-1}-i\,\partial/\partial x_{2j}\bigr) , \qquad
+\partial/\partial\bar z_j = \tfrac12\bigl(\partial/\partial x_{2j-1}+i\,\partial/\partial x_{2j}\bigr) .
 $$
 
 ### The Witt Basis
@@ -89,47 +89,47 @@ Conjugation*; here it is the algebraic skeleton of the split.
 **Definition.** The **Hermitian Dirac operators** are
 
 $$
-\partial_{\underline{z}} = \sum_{j=1}^{n} f_j\,\partial_{z_j} , \qquad
-\partial_{\bar z} = \sum_{j=1}^{n} f_j^{*}\,\partial_{\bar z_j} .
+\partial/\partial\underline z = \sum_{j=1}^{n} f_j\,\partial/\partial z_j , \qquad
+\partial/\partial\bar z = \sum_{j=1}^{n} f_j^{*}\,\partial/\partial\bar z_j .
 $$
 
 **Theorem (the two operators split the Euclidean one and the Laplacian).** The Euclidean operator
-$D=\sum_{a=1}^{2n}e_a\partial_a$ and the two Hermitian operators satisfy
+$D=\sum_{a=1}^{2n}e_a\partial/\partial x_a$ and the two Hermitian operators satisfy
 
 $$
-D = 2\bigl(\partial_{\underline{z}}-\partial_{\bar z}\bigr) ,
+D = 2\bigl(\partial/\partial\underline z-\partial/\partial\bar z\bigr) ,
 \qquad
-\{\partial_{\underline{z}},\partial_{\bar z}\} = \tfrac14\,\Delta_{2n} .
+\{\partial/\partial\underline z,\partial/\partial\bar z\} = \tfrac14\,\Delta_{2n} .
 $$
 
 Moreover each operator is isotropic,
 
 $$
-\partial_{\underline{z}}^2 = 0 , \qquad \partial_{\bar z}^2 = 0 ,
+(\partial/\partial\underline z)^2 = 0 , \qquad (\partial/\partial\bar z)^2 = 0 ,
 $$
 
-so that the pair $(\partial_{\underline{z}},\partial_{\bar z})$ is a complex of first-order
+so that the pair $(\partial/\partial\underline z,\partial/\partial\bar z)$ is a complex of first-order
 operators whose anticommutator is the Laplacian.
 
 *Proof.* Write $e_{2j-1}=f_j-f_j^{*}$ and $e_{2j}=-i(f_j+f_j^{*})$, and
-$\partial_{2j-1}=\partial_{z_j}+\partial_{\bar z_j}$,
-$\partial_{2j}=i(\partial_{z_j}-\partial_{\bar z_j})$; then
+$\partial/\partial x_{2j-1}=\partial/\partial z_j+\partial/\partial\bar z_j$,
+$\partial/\partial x_{2j}=i(\partial/\partial z_j-\partial/\partial\bar z_j)$; then
 
 $$
-e_{2j-1}\partial_{2j-1}+e_{2j}\partial_{2j}
-=(f_j-f_j^{*})\bigl(\partial_{z_j}+\partial_{\bar z_j}\bigr)
-+(f_j+f_j^{*})\bigl(\partial_{z_j}-\partial_{\bar z_j}\bigr)
-=2\bigl(f_j\partial_{z_j}-f_j^{*}\partial_{\bar z_j}\bigr),
+e_{2j-1}\partial/\partial x_{2j-1}+e_{2j}\partial/\partial x_{2j}
+=(f_j-f_j^{*})\bigl(\partial/\partial z_j+\partial/\partial\bar z_j\bigr)
++(f_j+f_j^{*})\bigl(\partial/\partial z_j-\partial/\partial\bar z_j\bigr)
+=2\bigl(f_j\partial/\partial z_j-f_j^{*}\partial/\partial\bar z_j\bigr),
 $$
 
 and summing over $j$ gives the first identity. For the second, the anticommutator sums the diagonal
 pairing of the Witt basis against the mixed Wirtinger derivatives:
-$\{\partial_{\underline z},\partial_{\bar z}\}=\sum_j\partial_{z_j}\partial_{\bar z_j} =\tfrac14\sum_j(\partial_{2j-1}^2+\partial_{2j}^2)=\tfrac14\Delta_{2n}$.
+$\{\partial/\partial\underline z,\partial/\partial\bar z\}=\sum_j\partial/\partial z_j\,\partial/\partial\bar z_j =\tfrac14\sum_j(\partial^2/\partial x_{2j-1}^2+\partial^2/\partial x_{2j}^2)=\tfrac14\Delta_{2n}$.
 The squares vanish because $f_jf_k=-f_kf_j$ while
-$\partial_{z_j}\partial_{z_k}=\partial_{z_k}\partial_{z_j}$, and the same with daggers.
+$\partial/\partial z_j\,\partial/\partial z_k=\partial/\partial z_k\,\partial/\partial z_j$, and the same with daggers.
 
 **Corollary (the differential complex).** The two operators make
-$\mathcal{E}(\Omega;\mathcal{S})\xrightarrow{\ \partial_{\bar z}\ }\mathcal{E}\xrightarrow{\ \partial_{\underline z}\ }$
+$\mathcal{E}(\Omega;\mathcal{S})\xrightarrow{\ \partial/\partial\bar z\ }\mathcal{E}\xrightarrow{\ \partial/\partial\underline z\ }$
 a complex, and the associated graded of the algebra they generate is the exterior algebra on the
 $f_j,f_j^{*}$; the class of functions annihilated by both is the kernel of the Laplacian by the
 anticommutation relation.
@@ -140,29 +140,29 @@ anticommutation relation.
 **Hermitian monogenic** when
 
 $$
-\partial_{\underline{z}}f = 0 \quad\text{and}\quad \partial_{\bar z}f = 0 .
+\partial/\partial\underline z\,f = 0 \quad\text{and}\quad \partial/\partial\bar z\,f = 0 .
 $$
 
 **Proposition (Hermitian monogenicity implies monogenicity).** Every Hermitian monogenic function is
 monogenic and harmonic:
-$\ker\partial_{\underline z}\cap\ker\partial_{\bar z}\subseteq\ker D\subseteq \ker\Delta_{2n}$. The
+$\ker\partial/\partial\underline z\cap\ker\partial/\partial\bar z\subseteq\ker D\subseteq \ker\Delta_{2n}$. The
 converse fails, and the class of Hermitian monogenic functions is strictly smaller than the class of
 monogenic functions.
 
-*Proof.* The two equations give $Df=2(\partial_{\underline z}-\partial_{\bar z})f=0$, so $f$ is
-monogenic; $\partial_{\underline z}f=\partial_{\bar z}f=0$ gives
-$\Delta_{2n}f=4(\partial_{\underline z}\partial_{\bar z}+\partial_{\bar z}\partial_{\underline z})f=0$.
+*Proof.* The two equations give $Df=2(\partial/\partial\underline z-\partial/\partial\bar z)f=0$, so $f$ is
+monogenic; $\partial/\partial\underline z\,f=\partial/\partial\bar z\,f=0$ gives
+$\Delta_{2n}f=4(\partial/\partial\underline z\,\partial/\partial\bar z+\partial/\partial\bar z\,\partial/\partial\underline z)f=0$.
 For the converse: the Hermitian system is a pair of equations where monogenicity is one, so the
 simultaneous kernel is in general strictly smaller, the two coinciding only when the pair assembles
 a single equation. The strictness is recorded for the quaternionic refinement in *Clifford
 Analysis*, and it occurs in the complex refinement as soon as the value module is not scalar; the
 reason is visible in the algebra, since the Witt basis elements $f_j$ are zero divisors, so
-$\partial_{\underline z}f=0$ does not force the vanishing of each component $\partial_{z_j}f$.
+$\partial/\partial\underline z\,f=0$ does not force the vanishing of each component $\partial/\partial z_j\,f$.
 
 **Remark (the class is a system, not an equation).** The vanishing of each of the two operators
-alone defines a class in which the Laplacian does not vanish — $\partial_{\underline z}f=0$ alone
-gives $0=\Delta_{2n}f=4\partial_{\bar z}\partial_{\underline z}f$, so only
-$\partial_{\bar z}\partial_{\underline z}f=0$, and the second derivative is not required to vanish.
+alone defines a class in which the Laplacian does not vanish — $\partial/\partial\underline z\,f=0$ alone
+gives $0=\Delta_{2n}f=4\partial/\partial\bar z\,\partial/\partial\underline z\,f$, so only
+$\partial/\partial\bar z\,\partial/\partial\underline z\,f=0$, and the second derivative is not required to vanish.
 The simultaneous system is what makes the class a theory: Hermitian monogenic functions are the
 solutions of an overdetermined elliptic system, and their rigidity — they satisfy the maximum
 principle, the mean value property, Liouville's theorem and the identity theorem as harmonic
@@ -173,13 +173,13 @@ functions — is inherited from the Laplacian.
 ### The Unitary Group
 
 **Theorem (invariance).** The two Hermitian Dirac operators, and hence the class of Hermitian
-monogenic functions, are invariant under the natural action of the unitary group $U(n)$ on
-$\mathbb{C}^n$: a $U(n)$-transformation of the variables lifts to a Clifford-algebra automorphism
+monogenic functions, are invariant under the natural action of the unitary group $\mathrm{U}(n)$ on
+$\mathbb{C}^n$: a $\mathrm{U}(n)$-transformation of the variables lifts to a Clifford-algebra automorphism
 (an element of $\mathrm{Spin}(2n)$) under which the Witt basis is transformed among itself, and
-$(\partial_{\underline z},\partial_{\bar z})$ is carried to itself.
+$(\partial/\partial\underline z,\partial/\partial\bar z)$ is carried to itself.
 
 *Proof.* The unitary group is the stabiliser of the complex structure in the orthogonal group; an
-element $g\in U(n)$ acts on $\mathbb{C}^n=\mathbb{R}^{2n}$ by an orthogonal transformation commuting
+element $g\in \mathrm{U}(n)$ acts on $\mathbb{C}^n=\mathbb{R}^{2n}$ by an orthogonal transformation commuting
 with the complex structure, and its lift into $\mathrm{Spin}(2n)$ acts on the vectors
 $e_{2j-1},e_{2j}$ by the same orthogonal map. Such a map carries the $(1,0)$-vectors $f_j$ to linear
 combinations of the $(1,0)$-vectors and preserves the splitting, so it preserves the two operators.
@@ -188,14 +188,14 @@ combinations of the $(1,0)$-vectors and preserves the splitting, so it preserves
 the Hermitian pair is invariant under the larger unitary structure of the space, and the class of
 Hermitian monogenic functions is the smallest class carrying that invariance. This is the reason the
 refinement is a statement about the *operator*: the single Cauchy–Riemann equation is replaced by
-the pair, and the symmetry group grows to $U(n)$.
+the pair, and the symmetry group grows to $\mathrm{U}(n)$.
 
 ### The Relation to Holomorphy
 
-**Remark (the underlying complex variables).** The operator $\partial_{\bar z}$ alone is the
+**Remark (the underlying complex variables).** The operator $\partial/\partial\bar z$ alone is the
 anti-holomorphic Cauchy–Riemann operator of the variables $z_1,\dots,z_n$, acting on the values by
 $f_j^{*}$, and its vanishing alone defines a class of functions that are holomorphic in the $z_j$ in
-the Clifford-module sense. The Hermitian system adds the vanishing of $\partial_{\underline z}$. In
+the Clifford-module sense. The Hermitian system adds the vanishing of $\partial/\partial\underline z$. In
 the special cases in which the value module and the two operators assemble the same equation,
 Hermitian monogenicity is equivalent to holomorphy in the $z_j$; in the general case it is strictly
 stronger, and the extra rigidity is exactly what the unitary invariance demands. The general
@@ -203,7 +203,7 @@ several-variable theory — the Hartogs phenomenon, the domains of holomorphy, t
 *Several Complex Variables*'s; the Clifford-module refinement is the subject here.
 
 **Example (the scalar case $n=1$).** For $n=1$ the pair reduces to two operators in $\mathbb{C}$,
-$\partial_{\bar z}=\tfrac12(\partial_1+i\partial_2)f_1^{*}$ and its conjugate; in the scalar model
+$\partial/\partial\bar z=\tfrac12(\partial/\partial x_1+i\partial/\partial x_2)f_1^{*}$ and its conjugate; in the scalar model
 $f_1,f_1^{*}$ act as the idempotents of a minimal left ideal, and the Hermitian monogenic functions
 are the holomorphic functions of $z$ valued in the ideal. This is the case in which the refinement
 is holomorphy itself, recorded in *Complex Analysis*.
@@ -212,7 +212,7 @@ is holomorphy itself, recorded in *Complex Analysis*.
 
 **Remark (the Hermitian Fischer decomposition).** The Hermitian system has its own Fischer
 decomposition: the space of homogeneous polynomials is decomposed into the simultaneous kernels of
-$\partial_{\underline z}$ and $\partial_{\bar z}$, multiplied by the appropriate powers of the
+$\partial/\partial\underline z$ and $\partial/\partial\bar z$, multiplied by the appropriate powers of the
 Hermitian variables. The decomposition is finer than the monogenic one of *The Fischer Operator*,
 because the simultaneous kernel is smaller, and its layers are indexed by pairs of multi-indices
 rather than by a single degree. The operator-algebraic form of the decomposition, and the bivariate
@@ -223,7 +223,7 @@ Decomposition*; the dimension count of the Hermitian monogenic pieces is recorde
 **Remark (the operator, split).** Read as an operator, the Hermitian refinement replaces the single
 operator $D$ by the pair, replaces the single symbol by the pair of symbols $c(\sum_jf_j\xi_{z_j})$
 and $c(\sum_jf_j^{*}\xi_{\bar z_j})$, and replaces the factorisation $D^2=-\Delta$ by the
-anticommutation relation $\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta$. The whole
+anticommutation relation $\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta$. The whole
 of the refinement — integral formulae, boundary values, module structure — rests on the last
 identity, and it is the two-operator case of the matrix device that *Clifford Analysis* records for
 the four-operator quaternionic theory.
@@ -233,16 +233,16 @@ the four-operator quaternionic theory.
 In $\mathbb{R}^{2n}$ read as $\mathbb{C}^n$, with $z_j=x_{2j-1}+ix_{2j}$, the Witt basis
 $f_j=\tfrac12(e_{2j-1}+ie_{2j})$, $f_j^{*}=-\tfrac12(e_{2j-1}-ie_{2j})$ consists of isotropic
 elements with $\{f_j,f_k^{*}\}=\delta_{jk}$ and all other anticommutators zero. The **Hermitian
-Dirac operators** $\partial_{\underline z}=\sum_jf_j\partial_{z_j}$ and
-$\partial_{\bar z}=\sum_jf_j^{*}\partial_{\bar z_j}$ are isotropic,
-$\partial_{\underline z}^2=\partial_{\bar z}^2=0$, and satisfy
-$\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$; the Euclidean operator splits
-as $D=2(\partial_{\underline z}-\partial_{\bar z})$. A function is **Hermitian monogenic** when both
+Dirac operators** $\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$ and
+$\partial/\partial\bar z=\sum_jf_j^{*}\partial/\partial\bar z_j$ are isotropic,
+$(\partial/\partial\underline z)^2=(\partial/\partial\bar z)^2=0$, and satisfy
+$\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$; the Euclidean operator splits
+as $D=2(\partial/\partial\underline z-\partial/\partial\bar z)$. A function is **Hermitian monogenic** when both
 operators annihilate it; such a function is monogenic and harmonic, and the class is strictly
 smaller than the monogenic class, the system being overdetermined and elliptic. The pair and the
-class are invariant under the unitary group $U(n)$, which acts by the lift into $\mathrm{Spin}(2n)$;
+class are invariant under the unitary group $\mathrm{U}(n)$, which acts by the lift into $\mathrm{Spin}(2n)$;
 the single operator is invariant only under $SO(2n)$, so the refinement trades one equation for a
-pair and gains the unitary structure. The operator $\partial_{\bar z}$ alone is the anti-holomorphic
+pair and gains the unitary structure. The operator $\partial/\partial\bar z$ alone is the anti-holomorphic
 Cauchy–Riemann operator in the $z_j$, and in special cases Hermitian monogenicity is holomorphy. The
 quaternionic case with four operators is *Hermitian Quaternionic Analysis and the Conjugate
 Cauchy–Riemann Operator*; the Fischer decomposition and the bivariate representation are *The
@@ -256,15 +256,15 @@ Analysis*.
 |---|---|
 | $N=2n$, $\mathbb{R}^{2n}\cong\mathbb{C}^n$ | Ambient space and its complex structure |
 | $z_j=x_{2j-1}+ix_{2j}$, $\bar z_j$ | Complex coordinates |
-| $\partial_{z_j},\partial_{\bar z_j}$ | Wirtinger derivatives |
+| $\partial/\partial z_j,\partial/\partial\bar z_j$ | Wirtinger derivatives |
 | $f_j=\tfrac12(e_{2j-1}+ie_{2j})$ | Witt basis, $(1,0)$ part |
 | $f_j^{*}=-\tfrac12(e_{2j-1}-ie_{2j})$ | Witt basis, $(0,1)$ part; $\{f_j,f_k^{*}\}=\delta_{jk}$ |
-| $\partial_{\underline z}=\sum_jf_j\partial_{z_j}$ | Hermitian Dirac operator, $(1,0)$ |
-| $\partial_{\bar z}=\sum_jf_j^*\partial_{\bar z_j}$ | Hermitian Dirac operator, $(0,1)$ |
-| $\partial_{\underline z}^2=\partial_{\bar z}^2=0$, $\{\partial_{\underline z},\partial_{\bar z}\}=\tfrac14\Delta_{2n}$ | Isotropy and the split of the Laplacian |
-| $D=2(\partial_{\underline z}-\partial_{\bar z})$ | Splitting of the Euclidean operator |
-| $\partial_{\underline z}f=\partial_{\bar z}f=0$ | Hermitian monogenicity |
-| $U(n)$ | Invariance group of the pair |
+| $\partial/\partial\underline z=\sum_jf_j\partial/\partial z_j$ | Hermitian Dirac operator, $(1,0)$ |
+| $\partial/\partial\bar z=\sum_jf_j^*\partial/\partial\bar z_j$ | Hermitian Dirac operator, $(0,1)$ |
+| $(\partial/\partial\underline z)^2=(\partial/\partial\bar z)^2=0$, $\{\partial/\partial\underline z,\partial/\partial\bar z\}=\tfrac14\Delta_{2n}$ | Isotropy and the split of the Laplacian |
+| $D=2(\partial/\partial\underline z-\partial/\partial\bar z)$ | Splitting of the Euclidean operator |
+| $\partial/\partial\underline z\,f=\partial/\partial\bar z\,f=0$ | Hermitian monogenicity |
+| $\mathrm{U}(n)$ | Invariance group of the pair |
 
 ## Further Reading
 

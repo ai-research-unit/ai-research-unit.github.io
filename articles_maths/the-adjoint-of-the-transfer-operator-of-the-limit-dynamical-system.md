@@ -52,7 +52,7 @@ so that $\langle L_\varphi f,g\rangle=\langle f,U_\varphi g\rangle$ for all $f,g
 
 **Definition.** Let $R$ be the involution of *Reversible Iterated Function Systems and the Involution* and let $R_*f=f\circ R$ be the induced operator on functions, a unitary self-adjoint involution because $R_*\mu=\mu$. The **reversed transfer operator** is
 $$
-\tilde L_\varphi=R_*\,L_\varphi^{\,*}\,R_*=R_*U_\varphi R_* ,
+L_\varphi^{\mathrm{rev}}=R_*\,L_\varphi^{\,*}\,R_*=R_*U_\varphi R_* ,
 $$
 the transfer operator read through the reversal of the kernel.
 
@@ -78,7 +78,7 @@ that is, symmetric for the **twisted Hermitian form** $\langle f,g\rangle_R=\lan
 
 ### The Complex Eigenvalues and the Covariance
 
-**Theorem (the pairing of the eigenvalues).** If $L_\varphi f=\lambda f$ and $f\ne0$ then there is a function $\tilde f$ with $L_\varphi^*\tilde f=\bar\lambda\tilde f$ and $\tilde f=R_*f$ in the reversible case; the spectrum of $L_\varphi$ is invariant under the conjugation $\lambda\mapsto\bar\lambda$, and under the reversal $\lambda\mapsto\bar\lambda$ it is also mapped to the spectrum of the reversed kernel; the Perron eigenvalue $1$ is real, simple and equal to its own conjugate.
+**Theorem (the pairing of the eigenvalues).** If $L_\varphi f=\lambda f$ and $f\ne0$ then there is a function $g$ with $L_\varphi^*g=\bar\lambda g$ and $g=R_*f$ in the reversible case; the spectrum of $L_\varphi$ is invariant under the conjugation $\lambda\mapsto\bar\lambda$, and under the reversal $\lambda\mapsto\bar\lambda$ it is also mapped to the spectrum of the reversed kernel; the Perron eigenvalue $1$ is real, simple and equal to its own conjugate.
 
 *Proof.* The conjugation pairing is the corollary above; the reversal pairing is the theorem on the reversed kernel, which identifies $L_\varphi^*$ with its own reversal, so a $\lambda$-eigenfunction of $L_\varphi$ produces a $\bar\lambda$-eigenfunction of the reversed kernel related by $R_*$. The Perron eigenvalue is real by the Perron–Frobenius theorem of *The Transfer Operator*.
 
@@ -130,7 +130,7 @@ The transfer operator $L_\varphi f(x)=\sum_{\varphi(y)=x}\delta(y)f(y)$ is bound
 | $L_\varphi^*=U_\varphi$, $f\mapsto f\circ\varphi$ | The adjoint, the Koopman operator |
 | $L_\varphi U_\varphi=d$ on the fibres | The failure of the isometry |
 | $R_*f=f\circ R$ | The operator of the involution |
-| $\tilde L_\varphi=R_*L_\varphi^*R_*$ | The reversed kernel |
+| $L_\varphi^{\mathrm{rev}}=R_*L_\varphi^*R_*$ | The reversed kernel |
 | $\langle f,g\rangle_R=\langle R_*f,g\rangle$ | The twisted Hermitian form |
 | $\operatorname{spec}L_\varphi=\overline{\operatorname{spec}U_\varphi}$ | The conjugate spectra |
 | $C_n(f,g)=\langle L_\varphi^{\,n}f,g\rangle-\ldots$ | The correlation and its decay |

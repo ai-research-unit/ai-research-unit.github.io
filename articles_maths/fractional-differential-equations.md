@@ -7,7 +7,7 @@ The theory of differential equations becomes richer when the order of differenti
 
 The building blocks are three. First, the **fractional integral** $I^\alpha$ of order $\alpha>0$, a convolution of the function with the power kernel $t^{\alpha-1}/\Gamma(\alpha)$, which is defined whenever the function is locally integrable and which satisfies the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Second, the **fractional derivatives**, of which two are in use: the Riemann–Liouville derivative $D^\alpha$, defined by differentiating the fractional integral, and the Caputo derivative ${}^C D^\alpha$, defined by fractionally integrating the ordinary derivative. The two differ by the contribution of the initial values and are suited to different problems; the Caputo derivative is the one for which the initial conditions of a fractional differential equation are the ordinary ones. Third, the **Mittag-Leffler function** $E_\alpha$, which is to the fractional equations what the exponential is to the ordinary ones: $y(t) = y_0E_\alpha(\lambda t^\alpha)$ solves $D^\alpha y = \lambda y$.
 
-The article proceeds from the fractional integral and the two derivatives, through their composition laws and their Laplace transforms, to the Mittag-Leffler function and its asymptotic behaviour, and then to the three levels of the theory. For the fractional ordinary equation $D^\alpha y = f(t,y)$ the Cauchy problem is equivalent to a weakly singular Volterra integral equation, and the Picard iteration of *Ordinary Differential Equations* applies with the contraction factor $LT^\alpha/\Gamma(\alpha+1)$ on a short interval, giving existence and uniqueness; the linear equation is solved by the Mittag-Leffler function, whose algebraic large-time decay is the characteristic feature of the sub-exponential regime $0<\alpha<1$. For the fractional partial equation ${}^C D_t^\alpha u = \Delta u$ the solution is a fractional diffusion, given in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, whose mean square displacement grows as $t^\alpha$ rather than as $t$ and whose transition density is not Gaussian. For the operator theory, the fractional powers of an operator are defined by a Bochner integral against the resolution of the identity or against a semigroup, and this connects the subject to the semigroups and evolution equations of this Part, where the generation theory of the operators $\exp(-tA)$ is developed. The whole theory is developed over $\mathbb{R}$ or $\mathbb{R}^n$; the target space is a Banach space $X$ over $\mathbb{K}$, and the integrals are those of *Measure Theory and Integration*.
+The article proceeds from the fractional integral and the two derivatives, through their composition laws and their Laplace transforms, to the Mittag-Leffler function and its asymptotic behaviour, and then to the three levels of the theory. For the fractional ordinary equation $D^\alpha y = f(t,y)$ the Cauchy problem is equivalent to a weakly singular Volterra integral equation, and the Picard iteration of *Ordinary Differential Equations* applies with the contraction factor $LT^\alpha/\Gamma(\alpha+1)$ on a short interval, giving existence and uniqueness; the linear equation is solved by the Mittag-Leffler function, whose algebraic large-time decay is the characteristic feature of the sub-exponential regime $0<\alpha<1$. For the fractional partial equation ${}^C D_t^\alpha w = \Delta w$ the solution is a fractional diffusion, given in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, whose mean square displacement grows as $t^\alpha$ rather than as $t$ and whose transition density is not Gaussian. For the operator theory, the fractional powers of an operator are defined by a Bochner integral against the resolution of the identity or against a semigroup, and this connects the subject to the semigroups and evolution equations of this Part, where the generation theory of the operators $\exp(-tA)$ is developed. The whole theory is developed over $\mathbb{R}$ or $\mathbb{R}^n$; the target space is a Banach space $X$ over $\mathbb{K}$, and the integrals are those of *Measure Theory and Integration*.
 
 ## Fractional Integrals and Derivatives
 
@@ -182,7 +182,7 @@ and more generally the solution with $y(0)=y_0$ of ${}^C D_0^\alpha y - \lambda 
 **Definition.** Let $\alpha\in(0,1]$. The **time-fractional diffusion equation** is
 
 $$
-{}^C D_{0}^\alpha u(x,t) = \Delta u(x,t), \qquad u(x,0)=f(x),
+{}^C D_{0}^\alpha w(x,t) = \Delta w(x,t), \qquad w(x,0)=f(x),
 $$
 
 on $\mathbb{R}^n\times(0,\infty)$; for $\alpha=1$ it is the heat equation of the classical theory, and for $\alpha<1$ it is a **subdiffusion**.
@@ -190,16 +190,16 @@ on $\mathbb{R}^n\times(0,\infty)$; for $\alpha=1$ it is the heat equation of the
 **Theorem (solution by the Fourier transform).** For $f$ bounded and continuous, the solution is
 
 $$
-\mathcal F u(\xi,t) = E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)(\mathcal F f)(\xi),
+\mathcal F w(\xi,t) = E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)(\mathcal F f)(\xi),
 $$
 
-so that $u(\cdot,t) = f * K_t^{(\alpha)}$ with the **fractional heat kernel**
+so that $w(\cdot,t) = f * K_t^{(\alpha)}$ with the **fractional heat kernel**
 
 $$
 K_t^{(\alpha)}(x) = \frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\exp(ix\cdot\xi)E_\alpha\bigl(-|\xi|^2t^\alpha\bigr)d\xi .
 $$
 
-*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\mathcal F u = -|\xi|^2\mathcal F u$ with $\mathcal F u(\xi,0)=(\mathcal F f)(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.
+*Proof.* Taking the Fourier transform in $x$ turns the equation into the fractional ordinary equation ${}^C D_0^\alpha\mathcal F w = -|\xi|^2\mathcal F w$ with $\mathcal F w(\xi,0)=(\mathcal F f)(\xi)$, whose solution is the Mittag-Leffler function by the preceding theorem.
 
 **Theorem (subdiffusive scaling).** The kernel $K_t^{(\alpha)}$ is a probability density for each $t>0$, it is self-similar,
 
@@ -247,7 +247,7 @@ The two formulas coincide on their common domain and give the fractional power i
 
 The fractional integral $I_a^\alpha f(t) = \frac{1}{\Gamma(\alpha)}\int_a^t(t-s)^{\alpha-1}f(s)ds$ is defined for every $\alpha>0$ and obeys the semigroup law $I^\alpha I^\beta = I^{\alpha+\beta}$. Differentiating it gives the Riemann–Liouville derivative $D_a^\alpha = D^nI^{n-\alpha}$, and fractionally integrating the ordinary derivative gives the Caputo derivative ${}^C D_a^\alpha = I^{n-\alpha}D^n$ with $n=\lceil\alpha\rceil$; the two agree on functions whose first $n$ derivatives vanish at $a$ and differ in general by a polynomial, and both reduce to $f^{(n)}$ when $\alpha=n$ is an integer. The Caputo derivative is the one whose initial conditions are ordinary values, and $D_a^\alpha$ annihilates constants while the Riemann–Liouville derivative does not. The Grünwald–Letnikov finite-difference formula gives an equivalent, manifestly nonlocal definition.
 
-The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\beta)$ is the special function of the subject; its Laplace transform is $s^{-\beta}/(1-\lambda s^{-\alpha})$, and for $0<\alpha<1$ it decays algebraically, $E_\alpha(-\lambda t^\alpha)\sim t^{-\alpha}/(\lambda\Gamma(1-\alpha))$, rather than exponentially. The Cauchy problem ${}^C D_0^\alpha y = f(t,y)$ with $n$ initial values is equivalent to a weakly singular Volterra integral equation, and Picard iteration gives existence and uniqueness on an interval whose length is governed by the factor $LT^\alpha/\Gamma(\alpha+1)$; the linear equation ${}^C D_0^\alpha y = \lambda y$ has the solution $y_0E_\alpha(\lambda t^\alpha)$. The time-fractional diffusion equation ${}^C D_t^\alpha u = \Delta u$ is solved in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, its kernel is self-similar with the scaling $t^{\alpha/2}$ and heavy tails, and its mean square displacement grows as $t^\alpha$, which is subdiffusion. Fractional powers of a closed sectorial operator are defined by a Bochner integral against the resolvent, or equivalently against a bounded semigroup, $A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}\exp(-tA)dt$; the generation theory behind that formula belongs to the semigroups and evolution equations of this Part.
+The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\beta)$ is the special function of the subject; its Laplace transform is $s^{-\beta}/(1-\lambda s^{-\alpha})$, and for $0<\alpha<1$ it decays algebraically, $E_\alpha(-\lambda t^\alpha)\sim t^{-\alpha}/(\lambda\Gamma(1-\alpha))$, rather than exponentially. The Cauchy problem ${}^C D_0^\alpha y = f(t,y)$ with $n$ initial values is equivalent to a weakly singular Volterra integral equation, and Picard iteration gives existence and uniqueness on an interval whose length is governed by the factor $LT^\alpha/\Gamma(\alpha+1)$; the linear equation ${}^C D_0^\alpha y = \lambda y$ has the solution $y_0E_\alpha(\lambda t^\alpha)$. The time-fractional diffusion equation ${}^C D_t^\alpha w = \Delta w$ is solved in Fourier variables by $E_\alpha(-|\xi|^2t^\alpha)$, its kernel is self-similar with the scaling $t^{\alpha/2}$ and heavy tails, and its mean square displacement grows as $t^\alpha$, which is subdiffusion. Fractional powers of a closed sectorial operator are defined by a Bochner integral against the resolvent, or equivalently against a bounded semigroup, $A^{-\alpha} = \frac{1}{\Gamma(\alpha)}\int_0^\infty t^{\alpha-1}\exp(-tA)dt$; the generation theory behind that formula belongs to the semigroups and evolution equations of this Part.
 
 ## Summary of Notation
 
@@ -263,7 +263,7 @@ The Mittag-Leffler function $E_{\alpha,\beta}(z) = \sum_kz^k/\Gamma(\alpha k+\be
 | $E_{\alpha,\beta}$ | Mittag-Leffler function, $E_\alpha = E_{\alpha,1}$ |
 | $\lambda$ | Coefficient of the linear fractional equation |
 | $K_t^{(\alpha)}$ | Fractional heat kernel of order $\alpha$ |
-| ${}^C D_t^\alpha u = \Delta u$ | Time-fractional diffusion equation |
+| ${}^C D_t^\alpha w = \Delta w$ | Time-fractional diffusion equation |
 | $A^{-\alpha}$, $A^\alpha$ | Fractional powers of a sectorial operator $A$ |
 | $X$ | Banach target space |
 | subdiffusion | Mean square displacement growing as $t^\alpha$, $\alpha<1$ |
