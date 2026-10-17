@@ -77,11 +77,11 @@ $$</p>
 <p>$$
 \{i\,e_t,\; \vec e_x,\; \vec e_y,\; \vec e_z\}.
 $$</p>
-<p>As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is <strong>not</strong> a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_t$, whose scalar part is real, so the product lies outside. It <strong>is</strong> closed under the commutator, and the bracket is read directly off the coordinates: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Y} = ir'_0e_t + \vec r$,</p>
+<p>As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is <strong>not</strong> a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_t$, whose scalar part is real, so the product lies outside. It <strong>is</strong> closed under the commutator, and the bracket is read directly off the coordinates: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Q}_1 = ir'_0e_t + \vec r$,</p>
 <p>$$
-[\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q} = 2\,\vec q\times\vec r,
+[\tilde{Q},\tilde{Q}_1] = \tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q} = 2\,\vec q\times\vec r,
 $$</p>
-<p>a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article <em>The 12 Products of the Biquaternioid Complex Space</em>.</p>
+<p>a pure real vector, so the bracket image is the three-dimensional real vector part and the temporal direction $ie_0$ is central for the bracket. With that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, the direct sum of the central line and that three-dimensional bracket algebra. The symmetrised product, by contrast, always lies in the Hermitian subspace, $\tilde{Q}\tilde{Q}_1 + \tilde{Q}_1\tilde{Q} \in \mathbb{M}_+$, so the product of two elements of $\mathbb{M}_-$ lies in $\mathbb{M}_+$ exactly when the two commute. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life; the bracket, the $\mathbb{Z}/2$-grading it puts on the two sectors and the compact real form are the subject of the companion article <em>The 12 Products of the Biquaternioid Complex Space</em>.</p>
 <h3 id="the-defining-involution">The Defining Involution</h3>
 <p>The subspace is the fixed space of the <strong>anti-Hermitian conjugation</strong></p>
 <p>$$
@@ -189,7 +189,7 @@ $$</p>
 \langle\tilde{Q}\rangle_{\natural} = 0 \quad \Longleftrightarrow \quad (q'_0)^2 = q_x^2 + q_y^2 + q_z^2 \quad \Longleftrightarrow \quad c^2t^2 = x^2 + y^2 + z^2,
 $$</p>
 <p>where $q'_0$ is the (real) time component and $q_x, q_y, q_z$ are the spatial components — the sector-parameter writing on the left, the coordinate writing on the right. This is a double cone in $\mathbb{R}^4$ with apex at the origin.</p>
-<p>The nonzero elements of the light cone are <strong>zero divisors</strong> of the biquaternion algebra: they are nonzero elements $\tilde{Q}$ for which there exists a nonzero $\tilde{Y}$ with $\tilde{Q}\tilde{Y} = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the <strong>characteristic cone</strong> of the wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$.</p>
+<p>The nonzero elements of the light cone are <strong>zero divisors</strong> of the biquaternion algebra: they are nonzero elements $\tilde{Q}$ for which there exists a nonzero $\tilde{Q}_1$ with $\tilde{Q}\tilde{Q}_1 = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the <strong>characteristic cone</strong> of the wave operator $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural}$.</p>
 <p>From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the <strong>null four-vectors</strong>: the four-vectors of light signals, which have zero rest mass and propagate at the speed of light. The massless particles of relativistic physics correspond to the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.</p>
 <h2 id="advanced-algebraic-properties">Advanced Algebraic Properties</h2>
 <h3 id="the-lorentz-group">The Lorentz Group</h3>
@@ -201,9 +201,9 @@ $$</p>
 <p>The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation <strong>preserves</strong> $\mathbb{M}_-$: if $\tilde{Q} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} \in \mathbb{M}_-$.</p>
 <p>This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.</p>
 <h3 id="the-bracket-algebra">The Bracket Algebra</h3>
-<p>The material sector is a Lie algebra, and the bracket is written out in §<em>Definition and Basis</em>: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Y} = ir'_0e_t + \vec r$,</p>
+<p>The material sector is a Lie algebra, and the bracket is written out in §<em>Definition and Basis</em>: for $\tilde{Q} = iq'_0e_t + \vec q$ and $\tilde{Q}_1 = ir'_0e_t + \vec r$,</p>
 <p>$$
-[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r,
+[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r,
 $$</p>
 <p>twice the vector product of the two spatial parts. Three structural facts follow at once.</p>
 <p><strong>The time coordinates never enter.</strong> The bracket depends only on $\vec q$ and $\vec r$; the imaginary scalars $q'_0$ and $r'_0$ cancel identically. The temporal direction $ie_0$ is therefore <strong>central for the bracket</strong>, and the four-dimensional Lie algebra is the direct sum of the central line and a three-dimensional algebra,</p>
@@ -214,13 +214,13 @@ $$</p>
 <p><strong>The derived algebra is the compact real form.</strong> On $\vec q,\vec r$ the bracket is twice the ordinary vector product of $\mathbb{R}^3$, so the derived algebra is the real span $\mathrm{K} = \langle \vec e_x,\vec e_y,\vec e_z\rangle$ of the three real vector units — the compact real form $\mathfrak{su}(2)$, the same three-dimensional space that $\mathbb{M}_-$ shares with the quaternion subspace, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = \mathrm{K}$. The explicit bracket in that basis is $[e_j,e_k] = 2\sum_l\epsilon_{jkl}e_l$. Taken whole, $\mathbb{M}_-$ with this bracket is the real Lie algebra $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$: a compact Lie algebra of dimension $4$, with a one-dimensional centre and a simple part. The Lie-algebraic life of the four-vectors is therefore an $\mathfrak{su}(2)$ acting on the spatial part, with the time direction as an inert central direction; the full algebra, its $\mathbb{Z}/2$-grading by the involution and its fellow brackets are the subject of <em>The 12 Products of the Biquaternioid Complex Space</em>.</p>
 <p><strong>The symmetrised product goes to the other sector.</strong> The commutator stays in $\mathbb{M}_-$; the anticommutator goes to the opposite sector,</p>
 <p>$$
-\{\tilde{Q},\tilde{Y}\} = \tilde{Q}\tilde{Y} + \tilde{Y}\tilde{Q} \in \mathbb{M}_+,
+\{\tilde{Q},\tilde{Q}_1\} = \tilde{Q}\tilde{Q}_1 + \tilde{Q}_1\tilde{Q} \in \mathbb{M}_+,
 $$</p>
 <p>for any two elements of $\mathbb{M}_-$. In particular the <strong>square</strong> of every element of $\mathbb{M}_-$ lies in $\mathbb{M}_+$,</p>
 <p>$$
 \tilde{Q}^2 = -\left((q'_0)^2 + |\vec q|^2\right)e_t + 2iq'_0\vec q,
 $$</p>
-<p>with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\vec q\times\vec r$ is the exact obstruction: it vanishes precisely when $\vec q$ and $\vec r$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Y}$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, §<em>The Bracket Table of the Two Sectors</em>.</p>
+<p>with a real scalar part and an imaginary vector part. The product of two elements of $\mathbb{M}_-$ lands in $\mathbb{M}_+$ exactly in the commuting case, so the bracket $2\,\vec q\times\vec r$ is the exact obstruction: it vanishes precisely when $\vec q$ and $\vec r$ are parallel, which is the condition for the product $\tilde{Q}\tilde{Q}_1$ to stay Hermitian. This alternation is one case of the general rule of the algebra — on two elements of one sector the commutator lands in $\mathbb{M}_-$ and the anticommutator in $\mathbb{M}_+$, and on two elements of different sectors the two are exchanged — and is tabulated in the companion article <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em>, §<em>The Bracket Table of the Two Sectors</em>.</p>
 <h3 id="the-four-forms-on-the-sector-and-the-absence-of-an-area-pairing">The Four Forms on the Sector, and the Absence of an Area Pairing</h3>
 <p>The four forms of <em>Conventions in the Biquaternion Universe</em> are read on $\mathbb{M}_-$ in that article and in <em>Remarkable Subspaces and the Four Forms</em>, and the interpretation is the mirror of the informational one: <strong>the material sector carries no area pairing either.</strong></p>
 <p><strong>Every form is real on the sector, so each is its own real part.</strong> An element of $\mathbb{M}_-$ is $ib_0e_t + \vec q$ with $b_0$ and $\vec q$ real, and each of the four forms takes real values on a pair of such elements. The imaginary part of each of the four therefore <strong>vanishes identically on $\mathbb{M}_-$</strong>, and every form is a real symmetric bilinear form in four real variables, recovered from its own diagonal. Like the informational sector, the material sector has in each form one symmetric pairing and no second one.</p>
@@ -315,7 +315,7 @@ $$</p>
 <p>The <strong>light cone</strong> of Minkowski space is the zero divisor cone of $\mathbb{M}_-$: the null four-vectors of light-like propagation are exactly the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.</p>
 <p>The subspace $\mathbb{M}_-$ is specifically the <strong>representation</strong> of the Lorentz group.</p>
 <p>Read as pairings, the four forms restricted to $\mathbb{M}_-$ are all real-valued, so the sector carries <strong>no area pairing and no conjugate pair of its own</strong>: no two of its directions are exchanged by the central imaginary, since $i\mathbb{M}_-=\mathbb{M}_+$. Every canonical pair of the framework has one leg in each sector: the two times $e_t$ and $ie_0$ in the complex time sector, and the three spatial pairs $(e_k,ie_k)$ in the complex space sector (<em>Other Remarkable Subspaces</em>). The sector carries one symmetric form per form — the interval $\langle\cdot\rangle_{\natural}$ of signature $(3,1)$, its negative the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}$, the Euclidean square and its negative the general plain bilinear form $\langle\tilde P,\tilde Q\rangle$ — and the two sesquilinear forms are the negatives of the two bilinear ones because the Hermitian conjugation is minus the identity on the sector. The alternating companion that the four forms carry on the complex time and the complex space sector is identically zero here, as it is on the informational sector: <strong>the two physical sectors are the phase-free ones, and the area pairing belongs to the complex sectors</strong> (<em>Remarkable Subspaces and the Four Forms</em>, <em>Other Remarkable Subspaces</em>).</p>
-<p>With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the <strong>square</strong> of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.</p>
+<p>With the commutator, $\mathbb{M}_-$ is also a Lie algebra: the bracket is twice the vector product of the spatial parts, $[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r$, so the time direction is central and the algebra is $\mathfrak{u}(2) = \mathbb{R}ie_0 \oplus \mathfrak{su}(2)$. The commutator stays in $\mathbb{M}_-$ and the anticommutator goes to $\mathbb{M}_+$, so the <strong>square</strong> of every element of $\mathbb{M}_-$ lies in the Hermitian subspace, and a product of two elements of $\mathbb{M}_-$ is Hermitian exactly when the two commute. The two sectors are thus interlocked: the antisymmetric part of a product of four-vectors carries the Lie-algebraic, material structure, and the symmetric part carries the Jordan-theoretic, informational one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -370,11 +370,11 @@ $$</p>
 <td>Rotor conjugation</td>
 </tr>
 <tr>
-<td>$[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r$</td>
+<td>$[\tilde{Q},\tilde{Q}_1] = 2\,\vec q\times\vec r$</td>
 <td>Commutator on $\mathbb{M}_-$: twice the vector product, lands in $\mathbb{M}_-$</td>
 </tr>
 <tr>
-<td>$\{\tilde{Q},\tilde{Y}\} \in \mathbb{M}_+$</td>
+<td>$\{\tilde{Q},\tilde{Q}_1\} \in \mathbb{M}_+$</td>
 <td>Anticommutator on $\mathbb{M}_-$: lands in the informational sector</td>
 </tr>
 <tr>

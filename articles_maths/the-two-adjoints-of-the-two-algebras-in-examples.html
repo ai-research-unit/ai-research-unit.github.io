@@ -53,33 +53,33 @@
 <h2 id="introduction">Introduction</h2>
 <p>Each of the two general products carries an adjoint calculus, one adjoint for each pairing, and this article gathers the two rules and works them on examples. The plain product gives the transpose of the regular operators with respect to the plain pairing; the quaternionic product gives the conjugate transpose with respect to the quaternion pairing. The article is a synthesis: the operator calculus is <em>Association and the Transpose on the Quaternion Algebra</em> and the two operator articles of the general quaternionic block, above this article in this category, and the two forms that define them are <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>, above this article in this category.</p>
 <h2 id="the-two-adjoint-rules">The Two Adjoint Rules</h2>
-<p><strong>Definition.</strong> Let $L_{\tilde x}(\tilde y)=\tilde x\tilde y$ and $R_{\tilde x}(\tilde y)=\tilde y\tilde x$ be the left and the right multiplication of the plain product, and let $\langle\cdot,\cdot\rangle$ be a pairing. The <strong>adjoint</strong> of an operator $T$ is the operator $T^{\dagger}$ with
+<p><strong>Definition.</strong> Let $L_{\tilde q_3}(\tilde q_4)=\tilde q_3\tilde q_4$ and $R_{\tilde q_3}(\tilde q_4)=\tilde q_4\tilde q_3$ be the left and the right multiplication of the plain product, and let $\langle\cdot,\cdot\rangle$ be a pairing. The <strong>adjoint</strong> of an operator $T$ is the operator $T^{\dagger}$ with
 $$
-\langle T\tilde y,\tilde z\rangle=\langle\tilde y,T^{\dagger}\tilde z\rangle \qquad\text{for all }\tilde y,\tilde z .
+\langle T\tilde q_4,\tilde q_5\rangle=\langle\tilde q_4,T^{\dagger}\tilde q_5\rangle \qquad\text{for all }\tilde q_4,\tilde q_5.
 $$</p>
 <p><strong>Theorem.</strong> For the plain pairing $\langle\tilde q_1,\tilde q_2\rangle=\operatorname{Sc}(\tilde q_1\tilde q_2)$,
 $$
-L_{\tilde x}^{\dagger}=R_{\tilde x} , \qquad R_{\tilde x}^{\dagger}=L_{\tilde x} ;
+L_{\tilde q_3}^{\dagger}=R_{\tilde q_3} , \qquad R_{\tilde q_3}^{\dagger}=L_{\tilde q_3} ;
 $$
 for the quaternion pairing $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\operatorname{Sc}(\tilde q_1^{\natural}\tilde q_2)$,
 $$
-L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}} , \qquad R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}} .
+L_{\tilde q_3}^{\dagger}=L_{\tilde q_3^{\natural}} , \qquad R_{\tilde q_3}^{\dagger}=R_{\tilde q_3^{\natural}} .
 $$</p>
-<p><strong>Proof.</strong> For the plain product, $\langle L_{\tilde x}\tilde y,\tilde z\rangle=\operatorname{Sc}(\tilde x\tilde y\tilde z)$ and $\langle\tilde y,R_{\tilde x}\tilde z\rangle=\operatorname{Sc}(\tilde y\tilde z\tilde x)$; the two are equal by the invariance of the scalar part under the cyclic permutation of a product, $\operatorname{Sc}(abc)=\operatorname{Sc}(bca)=\operatorname{Sc}(cab)$. The second identity follows by symmetry, or by taking the adjoint of the first. For the quaternionic product, $\langle L_{\tilde x}\tilde y,\tilde z\rangle_{\natural}=\operatorname{Sc}((\tilde x\tilde y)^{\natural}\tilde z)=\operatorname{Sc}(\tilde y^{\natural}\tilde x^{\natural}\tilde z)=\langle\tilde y,L_{\tilde x^{\natural}}\tilde z\rangle_{\natural}$, using $(\tilde x\tilde y)^{\natural}=\tilde y^{\natural}\tilde x^{\natural}$; the right-hand identity is the same computation with the cyclic order carried the other way, $\langle R_{\tilde x}\tilde y,\tilde z\rangle_{\natural}=\operatorname{Sc}((\tilde y\tilde x)^{\natural}\tilde z)=\operatorname{Sc}(\tilde x^{\natural}\tilde y^{\natural}\tilde z)=\langle\tilde y,R_{\tilde x^{\natural}}\tilde z\rangle_{\natural}$.</p>
+<p><strong>Proof.</strong> For the plain product, $\langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle=\operatorname{Sc}(\tilde q_3\tilde q_4\tilde q_5)$ and $\langle\tilde q_4,R_{\tilde q_3}\tilde q_5\rangle=\operatorname{Sc}(\tilde q_4\tilde q_5\tilde q_3)$; the two are equal by the invariance of the scalar part under the cyclic permutation of a product, $\operatorname{Sc}(abc)=\operatorname{Sc}(bca)=\operatorname{Sc}(cab)$. The second identity follows by symmetry, or by taking the adjoint of the first. For the quaternionic product, $\langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_{\natural}=\operatorname{Sc}((\tilde q_3\tilde q_4)^{\natural}\tilde q_5)=\operatorname{Sc}(\tilde q_4^{\natural}\tilde q_3^{\natural}\tilde q_5)=\langle\tilde q_4,L_{\tilde q_3^{\natural}}\tilde q_5\rangle_{\natural}$, using $(\tilde q_3\tilde q_4)^{\natural}=\tilde q_4^{\natural}\tilde q_3^{\natural}$; the right-hand identity is the same computation with the cyclic order carried the other way, $\langle R_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_{\natural}=\operatorname{Sc}((\tilde q_4\tilde q_3)^{\natural}\tilde q_5)=\operatorname{Sc}(\tilde q_3^{\natural}\tilde q_4^{\natural}\tilde q_5)=\langle\tilde q_4,R_{\tilde q_3^{\natural}}\tilde q_5\rangle_{\natural}$.</p>
 <p>The two rules are one rule: the adjoint of a regular operator is the regular operator whose parameter is the parameter's conjugate, and the conjugation moves from the parameter to the side on which the plain pairing is read, because the plain pairing does not conjugate and the quaternion pairing does.</p>
 <h2 id="worked-examples">Worked Examples</h2>
-<p><strong>Example 1 (the two adjoints of $L_{\vec e_x}$).</strong> The left multiplication by $\vec e_x$ sends $\tilde y=y_0e_t+y_1\vec e_x+y_2\vec e_y+y_3\vec e_z$ to $\vec e_x\tilde y=-y_1e_t+y_0\vec e_x-y_3\vec e_y+y_2\vec e_z$. With respect to the plain pairing its adjoint is $R_{\vec e_x}$, no sign, and with respect to the quaternion pairing its adjoint is $L_{\vec e_x^{\natural}}=L_{-\vec e_x}$, the left multiplication by $-\vec e_x$. The two adjoints differ by the sign carried by the conjugation.</p>
-<p><strong>Example 2 (a general element).</strong> For $\tilde x=x_0+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$, the plain adjoint of $L_{\tilde x}$ is $R_{\tilde x}=R_{x_0+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z}$, which differs from $L_{\tilde x}$ exactly when $(x_1\vec e_x+x_2\vec e_y+x_3\vec e_z)\neq0$, the plain product being non-commutative; the quaternion adjoint is $L_{\tilde x^{\natural}}=L_{x_0-(x_1\vec e_x+x_2\vec e_y+x_3\vec e_z)}$. The two adjoints coincide, and are both $L_{x_0}$, exactly when $\tilde x$ is real, the scalar line being the centre.</p>
-<p><strong>Example 3 (the matrix model).</strong> In the matrix model of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, above this article in this category, the operator $L_{\tilde x}$ is left multiplication by the matrix $S=\mathsf{M}_2(\tilde x)$. The quaternion pairing is the Hermitian pairing $\tfrac12\operatorname{Tr}(S^{\dagger}T)$, and its adjoint is left multiplication by $S^{\dagger}=\mathsf{M}_2(\tilde x^{\natural})$, the <strong>conjugate transpose</strong>. The plain pairing is the bilinear pairing $\tfrac12\operatorname{Tr}(ST)$, and its adjoint is the <strong>transpose</strong> of <em>Association and the Transpose on the Quaternion Algebra</em>, $L_{\tilde x}^{\sim}=R_{\tilde x}$, which is right multiplication by $S$. The two names separate in the four real coordinates of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, above this article in this category: there the plain adjoint has matrix $D\mathsf{M}_4(\tilde x)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the matrix transpose conjugated by the signature matrix, whereas the quaternion adjoint carries the plain transpose, $\mathsf{M}_4(\tilde x^{\natural})=\mathsf{M}_4(\tilde x)^{\mathsf T}$. This is the matrix form of the two rules and the reason the quaternion one is named the conjugate transpose.</p>
+<p><strong>Example 1 (the two adjoints of $L_{\vec e_x}$).</strong> The left multiplication by $\vec e_x$ sends $\tilde q_4=q_{4,0}e_t+q_{4,1}\vec e_x+q_{4,2}\vec e_y+q_{4,3}\vec e_z$ to $\vec e_x\tilde q_4=-q_{4,1}e_t+q_{4,0}\vec e_x-q_{4,3}\vec e_y+q_{4,2}\vec e_z$. With respect to the plain pairing its adjoint is $R_{\vec e_x}$, no sign, and with respect to the quaternion pairing its adjoint is $L_{\vec e_x^{\natural}}=L_{-\vec e_x}$, the left multiplication by $-\vec e_x$. The two adjoints differ by the sign carried by the conjugation.</p>
+<p><strong>Example 2 (a general element).</strong> For $\tilde q_3=q_{3,0}+q_{3,1}\vec e_x+q_{3,2}\vec e_y+q_{3,3}\vec e_z$, the plain adjoint of $L_{\tilde q_3}$ is $R_{\tilde q_3}=R_{q_{3,0}+q_{3,1}\vec e_x+q_{3,2}\vec e_y+q_{3,3}\vec e_z}$, which differs from $L_{\tilde q_3}$ exactly when $(q_{3,1}\vec e_x+q_{3,2}\vec e_y+q_{3,3}\vec e_z)\neq0$, the plain product being non-commutative; the quaternion adjoint is $L_{\tilde q_3^{\natural}}=L_{q_{3,0}-(q_{3,1}\vec e_x+q_{3,2}\vec e_y+q_{3,3}\vec e_z)}$. The two adjoints coincide, and are both $L_{q_{3,0}}$, exactly when $\tilde q_3$ is real, the scalar line being the centre.</p>
+<p><strong>Example 3 (the matrix model).</strong> In the matrix model of <em>Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions</em>, above this article in this category, the operator $L_{\tilde q_3}$ is left multiplication by the matrix $S=\mathsf{M}_2(\tilde q_3)$. The quaternion pairing is the Hermitian pairing $\tfrac12\operatorname{Tr}(S^{\dagger}T)$, and its adjoint is left multiplication by $S^{\dagger}=\mathsf{M}_2(\tilde q_3^{\natural})$, the <strong>conjugate transpose</strong>. The plain pairing is the bilinear pairing $\tfrac12\operatorname{Tr}(ST)$, and its adjoint is the <strong>transpose</strong> of <em>Association and the Transpose on the Quaternion Algebra</em>, $L_{\tilde q_3}^{\sim}=R_{\tilde q_3}$, which is right multiplication by $S$. The two names separate in the four real coordinates of <em>Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions</em>, above this article in this category: there the plain adjoint has matrix $D\mathsf{M}_4(\tilde q_3)^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the matrix transpose conjugated by the signature matrix, whereas the quaternion adjoint carries the plain transpose, $\mathsf{M}_4(\tilde q_3^{\natural})=\mathsf{M}_4(\tilde q_3)^{\mathsf T}$. This is the matrix form of the two rules and the reason the quaternion one is named the conjugate transpose.</p>
 <h2 id="identity-relations">Identity Relations</h2>
 <p>The two rules are the statements that the adjoint of a one-sided multiplication returns the parameter to its own side:
 $$
-\langle L_{\tilde x}\tilde y,\tilde z\rangle_B=\langle\tilde y,R_{\tilde x}\tilde z\rangle_B , \qquad
-\langle L_{\tilde x}\tilde y,\tilde z\rangle_N=\langle\tilde y,L_{\tilde x^{\natural}}\tilde z\rangle_N ,
+\langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_B=\langle\tilde q_4,R_{\tilde q_3}\tilde q_5\rangle_B , \qquad
+\langle L_{\tilde q_3}\tilde q_4,\tilde q_5\rangle_N=\langle\tilde q_4,L_{\tilde q_3^{\natural}}\tilde q_5\rangle_N ,
 $$
-and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde y\mapsto\tilde x\tilde y\tilde z$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $\langle\tilde y^{\natural},\tilde z^{\natural}\rangle_{\natural}=\overline{\langle\tilde y,\tilde z\rangle_{\natural}}=\langle\tilde y,\tilde z\rangle_{\natural}$, the pairing being real valued.</p>
+and the transposition relations of the two-sided operators follow by composing them, the adjoint of the sandwich $\tilde q_4\mapsto\tilde q_3\tilde q_4\tilde q_5$ swapping the two parameters and conjugating both in the quaternion case. The conjugation preserves the quaternion pairing, $\langle\tilde q_4^{\natural},\tilde q_5^{\natural}\rangle_{\natural}=\overline{\langle\tilde q_4,\tilde q_5\rangle_{\natural}}=\langle\tilde q_4,\tilde q_5\rangle_{\natural}$, the pairing being real valued.</p>
 <h2 id="summary">Summary</h2>
-<p>The plain product has the adjoint rule $L_{\tilde x}^{\dagger}=R_{\tilde x}$ and $R_{\tilde x}^{\dagger}=L_{\tilde x}$ for the plain pairing, the transpose in the matrix model; the quaternionic product has $L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}}$ and $R_{\tilde x}^{\dagger}=R_{\tilde x^{\natural}}$ for the quaternion pairing, the conjugate transpose in the matrix model. Both rules say that passing to the adjoint conjugates the parameter and keeps it on its own side, the plain pairing conjugating nothing and the quaternion pairing conjugating on its first slot.</p>
+<p>The plain product has the adjoint rule $L_{\tilde q_3}^{\dagger}=R_{\tilde q_3}$ and $R_{\tilde q_3}^{\dagger}=L_{\tilde q_3}$ for the plain pairing, the transpose in the matrix model; the quaternionic product has $L_{\tilde q_3}^{\dagger}=L_{\tilde q_3^{\natural}}$ and $R_{\tilde q_3}^{\dagger}=R_{\tilde q_3^{\natural}}$ for the quaternion pairing, the conjugate transpose in the matrix model. Both rules say that passing to the adjoint conjugates the parameter and keeps it on its own side, the plain pairing conjugating nothing and the quaternion pairing conjugating on its first slot.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -90,19 +90,19 @@ and the transposition relations of the two-sided operators follow by composing t
 </thead>
 <tbody>
 <tr>
-<td>$L_{\tilde x}$, $R_{\tilde x}$</td>
-<td>left and right multiplication by $\tilde x$</td>
+<td>$L_{\tilde q_3}$, $R_{\tilde q_3}$</td>
+<td>left and right multiplication by $\tilde q_3$</td>
 </tr>
 <tr>
 <td>$\dagger$</td>
 <td>the adjoint with respect to a named pairing</td>
 </tr>
 <tr>
-<td>$L_{\tilde x}^{\dagger}=R_{\tilde x}$</td>
+<td>$L_{\tilde q_3}^{\dagger}=R_{\tilde q_3}$</td>
 <td>the plain adjoint rule</td>
 </tr>
 <tr>
-<td>$L_{\tilde x}^{\dagger}=L_{\tilde x^{\natural}}$</td>
+<td>$L_{\tilde q_3}^{\dagger}=L_{\tilde q_3^{\natural}}$</td>
 <td>the quaternion adjoint rule</td>
 </tr>
 <tr>

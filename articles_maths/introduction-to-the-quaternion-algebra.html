@@ -118,13 +118,13 @@ $$</p>
 <p><strong>Corollary.</strong> The product is bilinear, and it is determined by its values on the sixteen basis pairs: a bilinear product on $\mathbb{R}^4$ is the same datum as a table of sixteen products of basis elements.</p>
 <h2 id="the-algebra-axioms">The Algebra Axioms</h2>
 <p><strong>Theorem (associativity).</strong> $(\tilde q_1\tilde q_2)\tilde q_3=\tilde q_1(\tilde q_2\tilde q_3)$ for all $\tilde q_1,\tilde q_2,\tilde q_3\in\mathbb{H}$.</p>
-<p><em>Proof.</em> Let $L_{\tilde a}$ be the left multiplication $\tilde q\mapsto\tilde a\tilde q$, a linear map of $\mathbb{R}^4$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the maps</p>
+<p><em>Proof.</em> Let $L_{\tilde q_4}$ be the left multiplication $\tilde q\mapsto\tilde q_4\tilde q$, a linear map of $\mathbb{R}^4$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the maps</p>
 <p>$$
 L_{\vec e_x}=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
 \qquad
 L_{\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix}
 $$</p>
-<p>satisfy $L_{\vec e_x}^2=L_{\vec e_y}^2=-\mathrm I_4$ and $L_{\vec e_x}L_{\vec e_y}=-L_{\vec e_y}L_{\vec e_x}$, as a direct matrix computation shows; set $L_{\vec e_z}=L_{\vec e_x}L_{\vec e_y}$ and $L_{e_t}=\mathrm I_4$. Since $L$ is additive in its subscript and $\{e_\mu\}$ is a basis, the assignment $\tilde a\mapsto L_{\tilde a}$ is linear; and it is multiplicative on the basis: $L_{\vec e_x \vec e_x}=L_{-e_t}=-\mathrm I_4=L_{\vec e_x}^2$, likewise for $\vec e_y$, and $L_{\vec e_x \vec e_y}=L_{\vec e_z}=L_{\vec e_x}L_{\vec e_y}$, $L_{\vec e_y \vec e_x}=-L_{\vec e_z}=L_{\vec e_y}L_{\vec e_x}$. Every product of basis elements is a word in $\vec e_x,\vec e_y$ with a sign, so linearity propagates the four checks to $L_{\tilde q_1\tilde q_2}=L_{\tilde q_1}L_{\tilde q_2}$ for all $\tilde q_1,\tilde q_2$. Applying both sides to $\tilde q_3$ gives the associativity.</p>
+<p>satisfy $L_{\vec e_x}^2=L_{\vec e_y}^2=-\mathrm I_4$ and $L_{\vec e_x}L_{\vec e_y}=-L_{\vec e_y}L_{\vec e_x}$, as a direct matrix computation shows; set $L_{\vec e_z}=L_{\vec e_x}L_{\vec e_y}$ and $L_{e_t}=\mathrm I_4$. Since $L$ is additive in its subscript and $\{e_\mu\}$ is a basis, the assignment $\tilde q_4\mapsto L_{\tilde q_4}$ is linear; and it is multiplicative on the basis: $L_{\vec e_x \vec e_x}=L_{-e_t}=-\mathrm I_4=L_{\vec e_x}^2$, likewise for $\vec e_y$, and $L_{\vec e_x \vec e_y}=L_{\vec e_z}=L_{\vec e_x}L_{\vec e_y}$, $L_{\vec e_y \vec e_x}=-L_{\vec e_z}=L_{\vec e_y}L_{\vec e_x}$. Every product of basis elements is a word in $\vec e_x,\vec e_y$ with a sign, so linearity propagates the four checks to $L_{\tilde q_1\tilde q_2}=L_{\tilde q_1}L_{\tilde q_2}$ for all $\tilde q_1,\tilde q_2$. Applying both sides to $\tilde q_3$ gives the associativity.</p>
 <p><strong>Theorem (the unit).</strong> $e_t$ is a two-sided unit: $e_t\tilde q=\tilde qe_t=\tilde q$.</p>
 <p><em>Proof.</em> The first row and the first column of the table.</p>
 <p><strong>Proposition (non-commutativity).</strong> $\mathbb{H}$ is not commutative: $\vec e_x \vec e_y=\vec e_z$ while $\vec e_y \vec e_x=-\vec e_z$.</p>
@@ -184,8 +184,8 @@ $$</p>
 <td>The quaternion norm, from <em>Norm and Invertibility in the Quaternion Algebra</em>, below this article in this category</td>
 </tr>
 <tr>
-<td>$L_{\tilde a}$</td>
-<td>Left multiplication $\tilde q\mapsto\tilde a\tilde q$</td>
+<td>$L_{\tilde q_4}$</td>
+<td>Left multiplication $\tilde q\mapsto\tilde q_4\tilde q$</td>
 </tr>
 <tr>
 <td>$\mathbb{R}[\tilde q]$</td>

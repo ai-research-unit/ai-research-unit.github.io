@@ -228,9 +228,9 @@ $$</p>
 <p>The high-temperature limit is exactly where the convergence condition of the second section acts. The qubit's $Z\to2$ is finite, so the limit exists and gives $S\to\log2$. For the harmonic oscillator, $Z\to\infty$ as $\beta\to0^+$, so no state at $\beta=0$ exists and the entropy has no finite high-temperature limit. That difference is invisible in the finite-level formulas alone; it is a property of the spectrum, and it is why the convergence of $Z$ was treated above as content.</p>
 <h2 id="the-kms-condition-as-the-characterisation-of-the-same-state">The KMS Condition as the Characterisation of the Same State</h2>
 <p>The Gibbs state is one description of thermal equilibrium; the KMS condition is another, and the companion article on the KMS condition shows that they describe the same state, not two facts that happen to agree.</p>
-<p>In the framework, with operators $\tilde A,\tilde B\in\mathbb{B}$ and thermal state $\omega_\beta$, the correlation function $F_{\tilde A\tilde B}(t)=\omega_\beta(\tilde A\,\alpha_t(\tilde B))$ extends analytically to the strip $0<\mathrm{Im}\,t<\beta$ and satisfies the boundary relation</p>
+<p>In the framework, with operators $\tilde A,\tilde Q_1\in\mathbb{B}$ and thermal state $\omega_\beta$, the correlation function $F_{\tilde A\tilde Q_1}(t)=\omega_\beta(\tilde A\,\alpha_t(\tilde Q_1))$ extends analytically to the strip $0<\mathrm{Im}\,t<\beta$ and satisfies the boundary relation</p>
 <p>$$
-F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t).
+F_{\tilde A\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde A}(-t).
 $$</p>
 <p>By the Haag–Hugenholtz–Winnink theorem this relation characterises the thermal state at inverse temperature $\beta$, and the Gibbs state satisfies it; the two are the same state. The framework's contribution is the location of the objects. The analytic continuation is a shift in the complexified time plane whose imaginary direction is the time coordinate $ict$ of $\mathbb{M}_-$ and whose real direction is the time coordinate of $\mathbb{M}_+$, as the KMS article states, and the <strong>modular Hamiltonian</strong></p>
 <p>$$
@@ -247,7 +247,7 @@ $$</p>
 <p>Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_\beta=\exp(-\beta\tilde H)/Z$, read through the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The trace is the scalar extraction, so the partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta\tilde H))=2\exp(-\beta h_0)\cosh(\beta|\vec h|)$ for a qubit, and every thermal average is twice a scalar part.</p>
 <p>The Gibbs state exists only when $Z$ converges: always for a finite-level system, and in the half-plane $\mathrm{Re}\,\beta>0$ for a spectrum unbounded above. The infinite-temperature boundary $\beta\to0$ is where the condition matters, and it separates the qubit ($Z\to2$) from the oscillator ($Z\to\infty$).</p>
 <p>The thermodynamic functionals of the state are the internal energy $E=\mathrm{Tr}(\tilde{Ϛ}\tilde H)$, the entropy $S=-\mathrm{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_0-|\vec h|\tanh x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_0-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $x=\beta|\vec h|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.</p>
-<p>The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}]=\mathrm{Tr}(\tilde{Ϛ}\tilde H)-\beta^{-1}S[\tilde{Ϛ}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_0-|\vec h|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}=\tfrac12e_t$, $E=h_0$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $K=-\log\tilde{Ϛ}=\beta(\tilde H-Fe_t)$ lies in $\mathbb{M}_+$.</p>
+<p>The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}]=\mathrm{Tr}(\tilde{Ϛ}\tilde H)-\beta^{-1}S[\tilde{Ϛ}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_0-|\vec h|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}=\tfrac12e_t$, $E=h_0$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde A\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde A}(-t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $K=-\log\tilde{Ϛ}=\beta(\tilde H-Fe_t)$ lies in $\mathbb{M}_+$.</p>
 <p>The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{M}_+$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{M}_-$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -335,7 +335,7 @@ $$</p>
 <td>Modular Hamiltonian (in $\mathbb{M}_+$)</td>
 </tr>
 <tr>
-<td>$F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$</td>
+<td>$F_{\tilde A\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde A}(-t)$</td>
 <td>KMS boundary relation</td>
 </tr>
 <tr>

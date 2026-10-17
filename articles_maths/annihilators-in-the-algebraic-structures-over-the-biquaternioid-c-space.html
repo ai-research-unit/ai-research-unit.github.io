@@ -56,9 +56,9 @@
 <h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
 <p><strong>Definition.</strong> Let $\star$ be a product on $\mathbb{B}$ and let $\tilde P\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde P$ in $\star$ are</p>
 <p>$$
-A_\star(\tilde P)=\{\tilde X:\tilde P\star\tilde X=0\},\qquad B_\star(\tilde P)=\{\tilde X:\tilde X\star\tilde P=0\},
+A_\star(\tilde P)=\{\tilde Q_1:\tilde P\star\tilde Q_1=0\},\qquad B_\star(\tilde P)=\{\tilde Q_1:\tilde Q_1\star\tilde P=0\},
 $$</p>
-<p>and the <strong>two-sided annihilator</strong> is their intersection. Each is the kernel of one of the two multiplications $L_{\tilde P}$ and $R_{\tilde P}$, so each is a complex subspace. Its dimension is the number of free complex parameters left by the equation $\tilde P\star\tilde X=0$, and that is how each set below is solved and stated.</p>
+<p>and the <strong>two-sided annihilator</strong> is their intersection. Each is the kernel of one of the two multiplications $L_{\tilde P}$ and $R_{\tilde P}$, so each is a complex subspace. Its dimension is the number of free complex parameters left by the equation $\tilde P\star\tilde Q_1=0$, and that is how each set below is solved and stated.</p>
 <p><strong>The mark of the block.</strong> Following the owner articles, the annihilator of a block is written with the mark of that block in place of the star: $A_\bullet$ for a commutative block ($\mathrm{SPA}$), $A_\wedge$ for an alternating plain block ($\mathrm{APA}$) and $A_\diamond$ for an alternating or conjugate-alternating block ($\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$). The mark names the same left annihilator as $A_\star$; it is kept here because it is the symbol the owner article uses.</p>
 <p><strong>Three words, each with its equation.</strong>
 - The <strong>cone</strong> is the single complex equation $\mathrm{Norm}(\tilde P)=P_t^{2}+P_x^{2}+P_y^{2}+P_z^{2}=0$, the vanishing of the norm $\langle\cdot\rangle_{\natural}$ of the element, which the owner articles write $\mathrm{Norm}(\tilde P)$ or $C(\tilde P)$. An element off the cone is invertible, $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$; a nonzero element on the cone is a zero divisor of the plain product.
@@ -69,9 +69,9 @@ $$
 \langle\tilde Q\rangle=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},\qquad \langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}+\lvert\vec Q\rvert^{2},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},\qquad \langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2},
 $$
 carried by the pairs $(\mathrm{GPA},\mathrm{SPA})$, $(\mathrm{GPS},\mathrm{SPS})$, $(\mathrm{GQA},\mathrm{SQA})$ and $(\mathrm{GQS},\mathrm{SQS})$ in that order. <strong>The norm that decides every annihilator below is the third of the four, $\langle\cdot\rangle_{\natural}$</strong>, the general quaternionic bilinear algebraic norm, $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, also called the <strong>reduced norm</strong> $\mathrm{Norm}(\tilde Q)$ in the owner articles and equal to the determinant of the $2\times2$ model. After <em>Conventions in Mathematics</em> §<em>The form convention and the norm convention</em>, $\mathrm{Norm}$ is the <strong>generic norm of a statement</strong>: it is instantiated, for the statement at hand, by the norm that statement uses, and in this article every statement uses the norm $\langle\cdot\rangle_{\natural}$ of the element it names. The four carried norms do not all decide, and the plain one does not decide at all: at $\tilde P=e_t+\vec e_x$ the plain algebraic norm is $\langle\cdot\rangle=0$ while the norm of the statement is $\langle\cdot\rangle_{\natural}=2$ and the element is invertible, $\tilde P^{-1}=\tfrac12(e_t-\vec e_x)$. The two sesquilinear norms $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ cut the hyperplanes of $\mathrm{SPS}$ and $\mathrm{SQS}$ and never decide an inverse, since $\langle\cdot\rangle_{*}$ is definite and $\langle\cdot\rangle_{\natural*}$ is indefinite. <strong>Every statement below names its norm</strong>: the deciding norm is written $\langle\cdot\rangle_{\natural}$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by $\langle\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The four antisymmetrisations carry no algebraic norm, and their annihilators are read from the vector part alone.</p>
-<p>In the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of the space $\mathbb{B}$, with $i$ the unit of the complex coefficients, write $\tilde P=P_te_t+\vec P$, and likewise $\tilde Q=Q_te_t+\vec Q$ and $\tilde X=X_te_t+\vec X$, where $\vec P=P_x\vec e_x+P_y\vec e_y+P_z\vec e_z$; then $\tilde P^{\natural}=P_te_t-\vec P$ and $\tilde P^{*}=\overline{P_t}e_t-\overline{\vec P}$. The <strong>dot product</strong> is $(\vec P,\vec X)=\sum_{\mu\in\{x,y,z\}}P_\mu X_\mu$, the <strong>cross product</strong> is $\vec P\times\vec X$, and $(\vec P,\vec P)$ is read the same way.</p>
+<p>In the units $e_t,\vec e_x,\vec e_y,\vec e_z$ of the space $\mathbb{B}$, with $i$ the unit of the complex coefficients, write $\tilde P=P_te_t+\vec P$, and likewise $\tilde Q=Q_te_t+\vec Q$ and $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, where $\vec P=P_x\vec e_x+P_y\vec e_y+P_z\vec e_z$; then $\tilde P^{\natural}=P_te_t-\vec P$ and $\tilde P^{*}=\overline{P_t}e_t-\overline{\vec P}$. The <strong>dot product</strong> is $(\vec P,\vec Q_1)=\sum_{\mu\in\{x,y,z\}}P_\mu Q_{1\mu}$, the <strong>cross product</strong> is $\vec P\times\vec Q_1$, and $(\vec P,\vec P)$ is read the same way.</p>
 <p>The two-sided annihilator lies in the zero-divisor set together with $0$, because a partner that kills every element kills one; the two sets differ wherever a zero divisor is not a killer, and that gap is <em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
-<p><strong>The annihilator and the zero divisors.</strong> <strong>Whatever nonzero biquaternion $\tilde P$ is taken, every nonzero element of its annihilator is a zero divisor of the same product, and for the four general products the whole annihilator lies inside the cone.</strong> The two notions are one condition read twice: $\tilde P$ is a <strong>left zero divisor</strong> of $\star$ exactly when its left annihilator is not $\{0\}$, and a <strong>right zero divisor</strong> exactly when its right annihilator is not $\{0\}$ (<em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>). The annihilator is therefore the zero-divisor condition with its witnesses displayed: when $\tilde P\neq0$ kills $\tilde X\neq0$, the element $\tilde X$ is a right zero divisor of $\star$ with witness $\tilde P$, so every nonzero element of the left annihilator is a right zero divisor, $A_\star(\tilde P)\setminus\{0\}\subseteq Z_\star$, and likewise $B_\star(\tilde P)\setminus\{0\}$ consists of left zero divisors. <strong>On the four general products the annihilator lies on the cone.</strong> There the zero-divisor set is the punctured cone, $Z_\star=\mathcal{C}\setminus\{0\}$ (<em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>), and with the apex added the whole annihilator is inside the cone, $A_\star(\tilde P)\subseteq\mathcal{C}$ and $B_\star(\tilde P)\subseteq\mathcal{C}$ at every $\tilde P\neq0$; the two planes of a zero divisor, the line of the plain algebra and the plane of the natural product, are totally isotropic subspaces of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$. <strong>The order of the two sentences matters.</strong> The containment $A_\star(\tilde P)\subseteq\mathcal{C}$ presupposes a cone, and the cone is the zero-divisor set of the four general products alone. In the eight derived structures the zero-divisor set is strictly larger than the cone, the whole punctured space $\mathbb{B}\setminus\{0\}$ in $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ and the enlarged set $(\{P_t=0\}\cup\mathcal{C})\setminus\{0\}$ in $\mathrm{SPA}$ and $\mathrm{SQS}$ (<em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>); the annihilator is still inside the zero-divisor set of its structure, but it leaves the cone: in $\mathrm{SPA}$ at the pure element $\vec e_z$ the annihilator is the plane $\{X_t=0,\ X_z=0\}$, which contains the unit $\vec e_x$ of norm $\langle\cdot\rangle_{\natural}=1$. <strong>The origin is the one element to read with care.</strong> The annihilator of $\tilde P=0$ is $\{0\}$ or all of $\mathbb{B}$, the zero of $\mathbb{B}$ is never a zero divisor, and the sentence "the annihilator of $\tilde P$ consists of zero divisors" therefore holds for the four general products at $\tilde P\neq0$; at $\tilde P=0$ the whole space is its own annihilator and the origin within it is the one exemption.</p>
+<p><strong>The annihilator and the zero divisors.</strong> <strong>Whatever nonzero biquaternion $\tilde P$ is taken, every nonzero element of its annihilator is a zero divisor of the same product, and for the four general products the whole annihilator lies inside the cone.</strong> The two notions are one condition read twice: $\tilde P$ is a <strong>left zero divisor</strong> of $\star$ exactly when its left annihilator is not $\{0\}$, and a <strong>right zero divisor</strong> exactly when its right annihilator is not $\{0\}$ (<em>Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>). The annihilator is therefore the zero-divisor condition with its witnesses displayed: when $\tilde P\neq0$ kills $\tilde Q_1\neq0$, the element $\tilde Q_1$ is a right zero divisor of $\star$ with witness $\tilde P$, so every nonzero element of the left annihilator is a right zero divisor, $A_\star(\tilde P)\setminus\{0\}\subseteq Z_\star$, and likewise $B_\star(\tilde P)\setminus\{0\}$ consists of left zero divisors. <strong>On the four general products the annihilator lies on the cone.</strong> There the zero-divisor set is the punctured cone, $Z_\star=\mathcal{C}\setminus\{0\}$ (<em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>), and with the apex added the whole annihilator is inside the cone, $A_\star(\tilde P)\subseteq\mathcal{C}$ and $B_\star(\tilde P)\subseteq\mathcal{C}$ at every $\tilde P\neq0$; the two planes of a zero divisor, the line of the plain algebra and the plane of the natural product, are totally isotropic subspaces of the quadratic form $\langle\cdot,\cdot\rangle_{\natural}$. <strong>The order of the two sentences matters.</strong> The containment $A_\star(\tilde P)\subseteq\mathcal{C}$ presupposes a cone, and the cone is the zero-divisor set of the four general products alone. In the eight derived structures the zero-divisor set is strictly larger than the cone, the whole punctured space $\mathbb{B}\setminus\{0\}$ in $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$ and the enlarged set $(\{P_t=0\}\cup\mathcal{C})\setminus\{0\}$ in $\mathrm{SPA}$ and $\mathrm{SQS}$ (<em>Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>); the annihilator is still inside the zero-divisor set of its structure, but it leaves the cone: in $\mathrm{SPA}$ at the pure element $\vec e_z$ the annihilator is the plane $\{Q_{1t}=0,\ Q_{1z}=0\}$, which contains the unit $\vec e_x$ of norm $\langle\cdot\rangle_{\natural}=1$. <strong>The origin is the one element to read with care.</strong> The annihilator of $\tilde P=0$ is $\{0\}$ or all of $\mathbb{B}$, the zero of $\mathbb{B}$ is never a zero divisor, and the sentence "the annihilator of $\tilde P$ consists of zero divisors" therefore holds for the four general products at $\tilde P\neq0$; at $\tilde P=0$ the whole space is its own annihilator and the origin within it is the one exemption.</p>
 <h2 id="the-twelve-structures-and-their-annihilators">The Twelve Structures and their Annihilators</h2>
 <p>The four general products split into the twelve structures through the class-preserving exchange (<em>The 12 Products of the Biquaternioid Complex Space</em>). Each structure is read below with its product written out, the criterion in coordinates, and the annihilator with its generators displayed. The twelve are in the order of <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>.</p>
 <h3 id="math113-the-general-plain-algebra">$\mathrm{GPA}$, the general plain algebra</h3>
@@ -80,7 +80,7 @@ $$
 \tilde P\tilde Q=\bigl(P_tQ_t-(\vec P,\vec Q)\bigr)e_t+P_t\vec Q+Q_t\vec P+\vec P\times\vec Q .
 $$</p>
 <p><strong>The plain product carries the algebraic norm $\langle\tilde P\rangle=P_t^{2}-P_x^{2}-P_y^{2}-P_z^{2}$, and its inverse and its annihilators are decided by the norm $\langle\tilde P\rangle_{\natural}$, not by $\langle\cdot\rangle$.</strong></p>
-<p><strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the two annihilators are $\{0\}$.</strong> Then $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$ and $\tilde P\tilde X=0$ gives $\tilde X=0$, and the same on the right.</p>
+<p><strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the two annihilators are $\{0\}$.</strong> Then $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$ and $\tilde P\tilde Q_1=0$ gives $\tilde Q_1=0$, and the same on the right.</p>
 <p><strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the two annihilators are distinct complex planes that share the line $\mathbb{C}\tilde P^{\natural}$.</strong> At the non-pure element $e_t+i\vec e_x$ the left annihilator is the plane of $e_t-i\vec e_x$ and $\vec e_z+i\vec e_y$, and the right annihilator is the plane of $e_t-i\vec e_x$ and $\vec e_z-i\vec e_y$:
 $$
 A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},\qquad B_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z-i\vec e_y\}.
@@ -94,19 +94,19 @@ In each line the first generator is $\tilde P^{\natural}$, so the two planes sha
 <h3 id="math140-the-general-plain-sesqualgebra">$\mathrm{GPS}$, the general plain sesqualgebra</h3>
 <p>The product is $\tilde P\tilde Q^{*}$, the plain product with the Hermitian conjugation in the second slot. It is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$ at every element.</p>
 <p><strong>The product carries the algebraic norm $\langle\cdot\rangle_{*}$, definite, and the criterion of the cone is the norm $\langle\tilde P\rangle_{\natural}$.</strong></p>
-<p><strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is $\{0\}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of the Hermitian conjugates of the $\tilde Z$ with $\tilde P\tilde Z=0$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$:
+<p><strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is $\{0\}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of the Hermitian conjugates of the $\tilde Q_2$ with $\tilde P\tilde Q_2=0$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$:
 $$
-A_\star(\tilde P)=A_{\text{plain}}(\tilde P)^{*},\qquad A_{\text{plain}}(\tilde P)=\{\tilde Z:\tilde P\tilde Z=0\},
+A_\star(\tilde P)=A_{\text{plain}}(\tilde P)^{*},\qquad A_{\text{plain}}(\tilde P)=\{\tilde Q_2:\tilde P\tilde Q_2=0\},
 $$
-where $A_{\text{plain}}(\tilde P)$ is the kernel of the plain left multiplication, the object solved in §<em>$\mathrm{GPA}$, the general plain algebra</em>. The equation $\tilde P\tilde X^{*}=0$ is solved by $\tilde X=\tilde Z^{*}$ with $\tilde Z\in A_{\text{plain}}(\tilde P)$, and the Hermitian conjugation is a bijection. At the element $e_t+i\vec e_x$, of norm zero, the plane is
+where $A_{\text{plain}}(\tilde P)$ is the kernel of the plain left multiplication, the object solved in §<em>$\mathrm{GPA}$, the general plain algebra</em>. The equation $\tilde P\tilde Q_1^{*}=0$ is solved by $\tilde Q_1=\tilde Q_2^{*}$ with $\tilde Q_2\in A_{\text{plain}}(\tilde P)$, and the Hermitian conjugation is a bijection. At the element $e_t+i\vec e_x$, of norm zero, the plane is
 $$
 A_\star(e_t+i\vec e_x)=\mathbb{C}\{\vec e_x+ie_t,\ \vec e_y+i\vec e_z\}.
 $$</p>
 <p><em>Annihilators of the General Plain Sesqualgebra</em> owns the rank and the plane.</p>
 <h3 id="math160-the-general-quaternionic-algebra">$\mathrm{GQA}$, the general quaternionic algebra</h3>
-<p>The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first slot. It is the plain product of $\tilde P^{\natural}$ and $\tilde X$.</p>
+<p>The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first slot. It is the plain product of $\tilde P^{\natural}$ and $\tilde Q_1$.</p>
 <p><strong>The natural product carries the algebraic norm $\langle\cdot\rangle_{\natural}$, and here the carried norm is the deciding one, $\langle\tilde P\rangle_{\natural}=\mathrm{Norm}(\tilde P)$.</strong></p>
-<p><strong>The two annihilators are always equal, and in every case they equal the plain annihilator of $\tilde P^{\natural}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, they are $\{0\}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, they are the complex plane of dimension two that contains the line $\mathbb{C}\tilde P$.</strong> At $\tilde P=0$ they are all of $\mathbb{B}$. The equality is the natural conjugation applied to $\tilde P^{\natural}\tilde X=0$, which gives $\tilde X^{\natural}\tilde P=0$. At the pure element $\vec e_x+i\vec e_y$ and at the non-pure element $e_t+i\vec e_x$, both of norm zero, the plane contains the element itself:
+<p><strong>The two annihilators are always equal, and in every case they equal the plain annihilator of $\tilde P^{\natural}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, they are $\{0\}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, they are the complex plane of dimension two that contains the line $\mathbb{C}\tilde P$.</strong> At $\tilde P=0$ they are all of $\mathbb{B}$. The equality is the natural conjugation applied to $\tilde P^{\natural}\tilde Q_1=0$, which gives $\tilde Q_1^{\natural}\tilde P=0$. At the pure element $\vec e_x+i\vec e_y$ and at the non-pure element $e_t+i\vec e_x$, both of norm zero, the plane contains the element itself:
 $$
 A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x+i\vec e_y,\ \vec e_z-ie_t\},\qquad A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\}.
 $$
@@ -131,7 +131,7 @@ It is commutative, so $A_\bullet(\tilde P)=B_\bullet(\tilde P)$ at every element
 <p><strong>The criterion of the three cases is the norm $\langle\cdot\rangle_{\natural}$ together with the scalar part $P_t$.</strong>
 - <strong>At an element with $P_t$ not zero and with nonzero norm $\langle\tilde P\rangle_{\natural}$, the annihilator is $\{0\}$</strong>, the element being invertible in the plain product.
 - <strong>At an element with $P_t$ not zero and with vanishing norm $\langle\tilde P\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde P^{\natural}$</strong>, since the vector equation forces $\vec Q=-(Q_t/P_t)\vec P$ and the scalar equation then forces the vanishing of the norm $\langle\tilde P\rangle_{\natural}$.
-- <strong>At a nonzero element with $P_t=0$, the annihilator is the plane $\{X_t=0,\ (\vec P,\vec X)=0\}$</strong>, because a pure element times $\tilde X$ is $-(\vec P,\vec X)e_t+X_t\vec P$; at $\tilde P=0$ it is all of $\mathbb{B}$.</p>
+- <strong>At a nonzero element with $P_t=0$, the annihilator is the plane $\{Q_{1t}=0,\ (\vec P,\vec Q_1)=0\}$</strong>, because a pure element times $\tilde Q_1$ is $-(\vec P,\vec Q_1)e_t+Q_{1t}\vec P$; at $\tilde P=0$ it is all of $\mathbb{B}$.</p>
 <p>Two worked elements show the two families. At the pure element $\vec e_x$ the annihilator is the plane of the pure elements orthogonal to $\vec e_x$, and at the non-pure element $e_t+i\vec e_x$ it is the line of the natural conjugate:
 $$
 A_\bullet(\vec e_x)=\mathbb{C}\{\vec e_y,\vec e_z\},\qquad A_\bullet(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x\}.
@@ -145,12 +145,12 @@ $$
 $$
 It is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$, and the equation is the single complex equation
 $$
-P_t\overline{X_t}+(\vec P,\overline{\vec X})=0 .
+P_t\overline{Q_{1t}}+(\vec P,\overline{\vec Q_1})=0 .
 $$</p>
-<p><strong>The symmetrisation carries the same algebraic norm $\langle\cdot\rangle_{*}$, definite, and the annihilator is the polar hyperplane of that norm, $\langle\tilde P,\tilde X\rangle_{*}=0$, which is the displayed equation. The norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and decides no inverse, the cone being decided by $\langle\cdot\rangle_{\natural}$.</strong></p>
+<p><strong>The symmetrisation carries the same algebraic norm $\langle\cdot\rangle_{*}$, definite, and the annihilator is the polar hyperplane of that norm, $\langle\tilde P,\tilde Q_1\rangle_{*}=0$, which is the displayed equation. The norm $\langle\cdot\rangle_{*}$ vanishes at the origin alone and decides no inverse, the cone being decided by $\langle\cdot\rangle_{\natural}$.</strong></p>
 <p><strong>At every nonzero $\tilde P$ the annihilator is the hyperplane of complex dimension three cut out by this equation.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the unit $e_t$ the hyperplane is the vector subspace:
 $$
-A_\star(e_t)=\{\tilde X:X_t=0\}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}.
+A_\star(e_t)=\{\tilde Q_1:Q_{1t}=0\}=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\}.
 $$
 The form $\langle\cdot,\cdot\rangle_{*}$ is definite, so no nonzero element is isotropic and the annihilator is never larger than a hyperplane. This is the Hermitian twin of the symmetric quaternionic algebra: the same hyperplane of the same dimension, cut by the other form.</p>
 <p><em>Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> owns the hyperplane.</p>
@@ -159,11 +159,11 @@ The form $\langle\cdot,\cdot\rangle_{*}$ is definite, so no nonzero element is i
 $$
 \tilde P\star\tilde Q=\langle\tilde P,\tilde Q\rangle_{\natural}e_t,\qquad \langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q) .
 $$
-It is commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$ at every element, and the equation $\tilde P\star\tilde X=0$ is the single complex equation
+It is commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$ at every element, and the equation $\tilde P\star\tilde Q_1=0$ is the single complex equation
 $$
-P_tX_t+(\vec P,\vec X)=0 .
+P_tQ_{1t}+(\vec P,\vec Q_1)=0 .
 $$</p>
-<p><strong>At every nonzero $\tilde P$ the annihilator is the hyperplane of complex dimension three cut out by this equation.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. <strong>The symmetrisation carries the same algebraic norm $\langle\cdot\rangle_{\natural}$, which is the deciding norm, and the hyperplane is its polar form at $\tilde X$, $\langle\tilde P,\tilde X\rangle_{\natural}=0$.</strong></p>
+<p><strong>At every nonzero $\tilde P$ the annihilator is the hyperplane of complex dimension three cut out by this equation.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. <strong>The symmetrisation carries the same algebraic norm $\langle\cdot\rangle_{\natural}$, which is the deciding norm, and the hyperplane is its polar form at $\tilde Q_1$, $\langle\tilde P,\tilde Q_1\rangle_{\natural}=0$.</strong></p>
 <p>At the unit $e_t$ the hyperplane is the vector subspace, and at the isotropic element $\vec e_x+i\vec e_y$ the element lies in its own annihilator:
 $$
 A_\star(e_t)=\mathbb{C}\{\vec e_x,\vec e_y,\vec e_z\},\qquad \vec e_x+i\vec e_y\in A_\star(\vec e_x+i\vec e_y).
@@ -173,14 +173,14 @@ The element $\vec e_x+i\vec e_y$ is isotropic, $(\vec P,\vec P)=1-1=0$, and an i
 <h3 id="math255-the-symmetric-quaternionic-sesqualgebra">$\mathrm{SQS}$, the symmetric quaternionic sesqualgebra</h3>
 <p>The product is the symmetrisation of the preceding one; it is conjugate-commutative, so $A_\star(\tilde P)=B_\star(\tilde P)$, and its equation is
 $$
-\tilde P^{\natural}\tilde X^{*}+\overline{\tilde X^{\natural}\tilde P^{*}}=0 .
+\tilde P^{\natural}\tilde Q_1^{*}+\overline{\tilde Q_1^{\natural}\tilde P^{*}}=0 .
 $$</p>
-<p><strong>The symmetrisation carries the algebraic norm $\langle\cdot\rangle_{\natural*}$, $\langle\tilde P\rangle_{\natural*}=|P_t|^{2}-|\vec P|^{2}$, indefinite.</strong> <strong>The annihilator lies in the polar hyperplane $\langle\tilde P,\tilde X\rangle_{\natural*}=0$, and the norm $\langle\cdot\rangle_{\natural}$ together with the scalar part $P_t$ decides its dimension.</strong></p>
-<p><strong>At an element whose scalar part is zero, the annihilator is the plane $\{X_t=0,\ (\vec P,\overline{\vec X})=0\}$.</strong> <strong>At a non-pure element of the cone, the annihilator is the line $\mathbb{C}\tilde P^{*}$.</strong> <strong>At a non-pure element off the cone, the annihilator is $\{0\}$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the pure element $\vec e_x+i\vec e_y$ the annihilator is that plane, and at the non-pure element $e_t+i\vec e_x$ it is the line of the element:
+<p><strong>The symmetrisation carries the algebraic norm $\langle\cdot\rangle_{\natural*}$, $\langle\tilde P\rangle_{\natural*}=|P_t|^{2}-|\vec P|^{2}$, indefinite.</strong> <strong>The annihilator lies in the polar hyperplane $\langle\tilde P,\tilde Q_1\rangle_{\natural*}=0$, and the norm $\langle\cdot\rangle_{\natural}$ together with the scalar part $P_t$ decides its dimension.</strong></p>
+<p><strong>At an element whose scalar part is zero, the annihilator is the plane $\{Q_{1t}=0,\ (\vec P,\overline{\vec Q_1})=0\}$.</strong> <strong>At a non-pure element of the cone, the annihilator is the line $\mathbb{C}\tilde P^{*}$.</strong> <strong>At a non-pure element off the cone, the annihilator is $\{0\}$.</strong> At $\tilde P=0$ the annihilator is all of $\mathbb{B}$. At the pure element $\vec e_x+i\vec e_y$ the annihilator is that plane, and at the non-pure element $e_t+i\vec e_x$ it is the line of the element:
 $$
 A_\star(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x-i\vec e_y,\ \vec e_z\},\qquad A_\star(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x\}.
 $$
-At a pure element the scalar part of $\tilde X$ vanishes and its vector part runs over the line conjugate-orthogonal to $\vec P$, so the annihilator is always a plane of dimension two, whether or not the pure element is a zero divisor; at a non-pure element of the cone the whole of $\tilde X$ is pinned to the line of $\tilde P^{*}$, and off the cone only $\tilde X=0$ is killed. The block separates the two families of its zero-divisor set by the size of the annihilator, a plane at a pure element against a line at a non-pure one.</p>
+At a pure element the scalar part of $\tilde Q_1$ vanishes and its vector part runs over the line conjugate-orthogonal to $\vec P$, so the annihilator is always a plane of dimension two, whether or not the pure element is a zero divisor; at a non-pure element of the cone the whole of $\tilde Q_1$ is pinned to the line of $\tilde P^{*}$, and off the cone only $\tilde Q_1=0$ is killed. The block separates the two families of its zero-divisor set by the size of the annihilator, a plane at a pure element against a line at a non-pure one.</p>
 <p><em>Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> owns the two families.</p>
 <h3 id="math277-the-antisymmetric-plain-algebra">$\mathrm{APA}$, the antisymmetric plain algebra</h3>
 <p>The product is the commutator
@@ -189,7 +189,7 @@ $$
 $$
 the cross product of the two vector parts, an alternating product.</p>
 <p><strong>The commutator carries no algebraic norm, because it vanishes at the two equal arguments, and the vector part alone decides the annihilator.</strong></p>
-<p><strong>At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$</strong>, because a scalar element has no vector part and kills every partner. <strong>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_t\oplus\mathbb{C}\vec P$.</strong> Writing $\tilde X=X_te_t+\vec X$, the product is $\vec P\times\vec X$, which vanishes exactly on the line $\mathbb{C}\vec P$, and the scalar slot $X_t$ is free. For example, at the two elements $\vec e_x$ and $e_t+2\vec e_x$ the annihilator is the same plane, spanned by the centre and the vector part:
+<p><strong>At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$</strong>, because a scalar element has no vector part and kills every partner. <strong>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_t\oplus\mathbb{C}\vec P$.</strong> Writing $\tilde Q_1=Q_{1t}e_t+\vec Q_1$, the product is $\vec P\times\vec Q_1$, which vanishes exactly on the line $\mathbb{C}\vec P$, and the scalar slot $Q_{1t}$ is free. For example, at the two elements $\vec e_x$ and $e_t+2\vec e_x$ the annihilator is the same plane, spanned by the centre and the vector part:
 $$
 A_\wedge(\vec e_x)=A_\wedge(e_t+2\vec e_x)=\mathbb{C}\{e_t,\vec e_x\}.
 $$
@@ -198,15 +198,15 @@ The block is alternating, so every element lies in its own annihilator and every
 <h3 id="math289-the-antisymmetric-plain-sesqualgebra">$\mathrm{APS}$, the antisymmetric plain sesqualgebra</h3>
 <p>The product is the antisymmetrisation of the plain sesquilinear product, the vector part of $\tilde P\tilde Q^{*}$. It is conjugate-alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$.</p>
 <p><strong>The antisymmetrisation carries no algebraic norm, and the norm $\langle\tilde P\rangle_{\natural}$ decides.</strong></p>
-<p><strong>The common annihilator is the set of the Hermitian conjugates of the $\tilde Z$ with $\tilde P\tilde Z$ central.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, it is the line $\mathbb{C}\overline{\tilde P}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, it is the plane $A_{\text{plain}}(\tilde P)^{*}$.</strong> At $\tilde P=0$ it is all of $\mathbb{B}$:
+<p><strong>The common annihilator is the set of the Hermitian conjugates of the $\tilde Q_2$ with $\tilde P\tilde Q_2$ central.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, it is the line $\mathbb{C}\overline{\tilde P}$.</strong> <strong>When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, it is the plane $A_{\text{plain}}(\tilde P)^{*}$.</strong> At $\tilde P=0$ it is all of $\mathbb{B}$:
 $$
-A_\diamond(\tilde P)=\{\tilde Z^{*}:\tilde P\tilde Z\in\mathbb{C}_{\mathbb{B}}\}.
+A_\diamond(\tilde P)=\{\tilde Q_2^{*}:\tilde P\tilde Q_2\in\mathbb{C}_{\mathbb{B}}\}.
 $$
 At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the single solution line is $\mathbb{C}\overline{\tilde P}$, the conjugate of the element, which at the real element $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ is the line of the element itself; at the element $\vec e_x+i\vec e_y$, of norm zero, the annihilator is the plane
 $$
 A_\diamond(e_t+2\vec e_x+3\vec e_y+4\vec e_z)=\mathbb{C}\{e_t+2\vec e_x+3\vec e_y+4\vec e_z\},\qquad A_\diamond(\vec e_x+i\vec e_y)=\mathbb{C}\{\vec e_x-i\vec e_y,\ e_t+i\vec e_z\}.
 $$
-At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the equations $\tilde P\tilde Z=\lambda e_t$ have the single solution line $\mathbb{C}\tilde P^{-1}$, whose star is the line $\mathbb{C}\overline{\tilde P}$ of the conjugate element; at an element of the cone they have the plane displayed, and that plane is the star-image of the plain annihilator, $A_\diamond(\tilde P)=\{\tilde Z^{*}:\tilde P\tilde Z=0\}=A_{\text{plain}}(\tilde P)^{*}$. The block reads the invertibility of the plain product and not its own zero divisors, because it has none. Its product is conjugate-alternating, $\tilde P\diamond\tilde P+\overline{\tilde P\diamond\tilde P}=0$, so the element lies in its own annihilator exactly when $\tilde P\diamond\tilde P$ vanishes, which happens at every element with real coefficients and fails at some elements with complex coefficients, for instance at $\tilde P=\vec e_x+i\vec e_y$.</p>
+At an element of nonzero norm $\langle\cdot\rangle_{\natural}$ the equations $\tilde P\tilde Q_2=\lambda e_t$ have the single solution line $\mathbb{C}\tilde P^{-1}$, whose star is the line $\mathbb{C}\overline{\tilde P}$ of the conjugate element; at an element of the cone they have the plane displayed, and that plane is the star-image of the plain annihilator, $A_\diamond(\tilde P)=\{\tilde Q_2^{*}:\tilde P\tilde Q_2=0\}=A_{\text{plain}}(\tilde P)^{*}$. The block reads the invertibility of the plain product and not its own zero divisors, because it has none. Its product is conjugate-alternating, $\tilde P\diamond\tilde P+\overline{\tilde P\diamond\tilde P}=0$, so the element lies in its own annihilator exactly when $\tilde P\diamond\tilde P$ vanishes, which happens at every element with real coefficients and fails at some elements with complex coefficients, for instance at $\tilde P=\vec e_x+i\vec e_y$.</p>
 <p><em>Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> owns the theorem and the two cases.</p>
 <h3 id="math316-the-antisymmetric-quaternionic-algebra">$\mathrm{AQA}$, the antisymmetric quaternionic algebra</h3>
 <p>The product is the antisymmetrisation, the quaternionic cross product, whose value has the vector part
@@ -222,7 +222,7 @@ $$
 The element $e_t$ has norm $\langle\cdot\rangle_{\natural}=1$ and its annihilator is the centre, of dimension one; the element $\vec e_x+i\vec e_y$ has norm $\langle\cdot\rangle_{\natural}=0$ and its annihilator is a plane, of dimension two.</p>
 <p><em>Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em> owns the rank table and the plane.</p>
 <h3 id="math333-the-antisymmetric-quaternionic-sesqualgebra">$\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra</h3>
-<p>The product is the antisymmetrisation of the general quaternionic sesquilinear product; it is the conjugate cross product $\vec P\times\overline{\vec X}$, conjugate-alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$.</p>
+<p>The product is the antisymmetrisation of the general quaternionic sesquilinear product; it is the conjugate cross product $\vec P\times\overline{\vec Q_1}$, conjugate-alternating, so $A_\diamond(\tilde P)=B_\diamond(\tilde P)$.</p>
 <p><strong>The antisymmetrisation carries no algebraic norm, and the conjugate of the vector part decides.</strong></p>
 <p><strong>At an element whose vector part is not zero, the annihilator is the plane $\mathbb{C}e_t\oplus\mathbb{C}\overline{\vec P}$.</strong> <strong>At an element whose vector part is zero, the annihilator is all of $\mathbb{B}$.</strong> At the non-central element $\vec e_x+i\vec e_y$ the annihilator is the plane of the centre together with the conjugate line, and at the central element $e_t$ it is all of $\mathbb{B}$:
 $$
@@ -233,7 +233,7 @@ The operator depends on the vector part alone and only through its conjugate, so
 <h2 id="results">Results</h2>
 <p>The twelve are tabulated with the annihilator of a general element, the case split written out in each cell, and the two theorems that hold across them are stated below.</p>
 <h3 id="the-twelve-annihilators">The Twelve Annihilators</h3>
-<p><strong>Read the cells.</strong> The deciding norm is $\langle\cdot\rangle_{\natural}$, $\langle\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde P)=P_t^{2}+P_x^{2}+P_y^{2}+P_z^{2}$, the general quaternionic bilinear algebraic norm and the third of the four; it vanishes exactly at the zero divisors of the four general products. Every cell names $\langle\cdot\rangle_{\natural}$ where the cone decides, and the two symmetrisations of sesquilinear products name their own norm as well, $\langle\tilde P,\tilde X\rangle_{*}=0$ for $\mathrm{SPS}$ and $\langle\tilde P,\tilde X\rangle_{\natural*}=0$ for $\mathrm{SQS}$. The four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$ and the two products that carry each are stated at the head of the article. The vector part of $\tilde P$ is $\vec P$, and the parts of the partner $\tilde X$ are $X_t$ and $\vec X$. The form $\langle\cdot,\cdot\rangle_{\natural}$ of the symmetric quaternionic algebra is $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$, and the form $\langle\cdot,\cdot\rangle_{*}$ of the symmetric plain sesqualgebra is $\langle\tilde P,\tilde Q\rangle_{*}=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})$. The span notation $\mathbb{C}\{u,v\}$ is the complex span of $u$ and $v$. Each cell gives the annihilator of a general element, case by case, and every set it names can be checked by multiplying a generator into the product.</p>
+<p><strong>Read the cells.</strong> The deciding norm is $\langle\cdot\rangle_{\natural}$, $\langle\tilde P\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde P)=P_t^{2}+P_x^{2}+P_y^{2}+P_z^{2}$, the general quaternionic bilinear algebraic norm and the third of the four; it vanishes exactly at the zero divisors of the four general products. Every cell names $\langle\cdot\rangle_{\natural}$ where the cone decides, and the two symmetrisations of sesquilinear products name their own norm as well, $\langle\tilde P,\tilde Q_1\rangle_{*}=0$ for $\mathrm{SPS}$ and $\langle\tilde P,\tilde Q_1\rangle_{\natural*}=0$ for $\mathrm{SQS}$. The four algebraic norms $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{\natural*}$ and the two products that carry each are stated at the head of the article. The vector part of $\tilde P$ is $\vec P$, and the parts of the partner $\tilde Q_1$ are $Q_{1t}$ and $\vec Q_1$. The form $\langle\cdot,\cdot\rangle_{\natural}$ of the symmetric quaternionic algebra is $\langle\tilde P,\tilde Q\rangle_{\natural}=P_tQ_t+(\vec P,\vec Q)$, and the form $\langle\cdot,\cdot\rangle_{*}$ of the symmetric plain sesqualgebra is $\langle\tilde P,\tilde Q\rangle_{*}=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})$. The span notation $\mathbb{C}\{u,v\}$ is the complex span of $u$ and $v$. Each cell gives the annihilator of a general element, case by case, and every set it names can be checked by multiplying a generator into the product.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -256,7 +256,7 @@ The operator depends on the vector part alone and only through its conjugate, so
 <td>the plain sesqualgebra</td>
 <td>$\mathrm{GPS}$</td>
 <td>$\tilde P\tilde Q^{*}$</td>
-<td>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is $\{0\}$. When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of dimension two formed by the conjugates $\tilde Z^{*}$ of the solutions $\tilde Z$ of $\tilde P\tilde Z=0$ in the plain product. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is $\{0\}$. When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of dimension two formed by the conjugates $\tilde Q_2^{*}$ of the solutions $\tilde Q_2$ of $\tilde P\tilde Q_2=0$ in the plain product. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
@@ -277,28 +277,28 @@ The operator depends on the vector part alone and only through its conjugate, so
 <td>the plain algebra</td>
 <td>$\mathrm{SPA}$</td>
 <td>$\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</td>
-<td>At a nonzero element whose scalar part $P_t$ is zero, the annihilator is the plane $\{X_t=0,\ (\vec P,\vec X)=0\}$. At an element with $P_t$ not zero and with vanishing norm $\langle\tilde P\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde P^{\natural}$. At an element with $P_t$ not zero and with nonzero norm $\langle\tilde P\rangle_{\natural}$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>At a nonzero element whose scalar part $P_t$ is zero, the annihilator is the plane $\{Q_{1t}=0,\ (\vec P,\vec Q_1)=0\}$. At an element with $P_t$ not zero and with vanishing norm $\langle\tilde P\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde P^{\natural}$. At an element with $P_t$ not zero and with nonzero norm $\langle\tilde P\rangle_{\natural}$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
 <td>the plain sesqualgebra</td>
 <td>$\mathrm{SPS}$</td>
 <td>$\langle\tilde P,\tilde Q\rangle_{*}e_t$</td>
-<td>At a nonzero element, the annihilator is the hyperplane $\langle\tilde P,\tilde X\rangle_{*}=0$, that is $P_t\overline{X_t}+(\vec P,\overline{\vec X})=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>At a nonzero element, the annihilator is the hyperplane $\langle\tilde P,\tilde Q_1\rangle_{*}=0$, that is $P_t\overline{Q_{1t}}+(\vec P,\overline{\vec Q_1})=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
 <td>the quaternionic algebra</td>
 <td>$\mathrm{SQA}$</td>
 <td>$\langle\tilde P,\tilde Q\rangle_{\natural}e_t$</td>
-<td>At a nonzero element, the annihilator is the hyperplane $\langle\tilde P,\tilde X\rangle_{\natural}=0$, that is $P_tX_t+(\vec P,\vec X)=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>At a nonzero element, the annihilator is the hyperplane $\langle\tilde P,\tilde Q_1\rangle_{\natural}=0$, that is $P_tQ_{1t}+(\vec P,\vec Q_1)=0$, of dimension three. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
 <td>the quaternionic sesqualgebra</td>
 <td>$\mathrm{SQS}$</td>
 <td>the symmetrisation</td>
-<td>At a nonzero element whose scalar part $P_t$ is zero, the annihilator is the plane cut by the two equations $X_t=0$ and $\langle\tilde P,\tilde X\rangle_{\natural*}=0$. At an element with $P_t$ not zero and with vanishing norm $\langle\tilde P\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde P^{*}$. At an element with $P_t$ not zero and with nonzero norm $\langle\tilde P\rangle_{\natural}$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>At a nonzero element whose scalar part $P_t$ is zero, the annihilator is the plane cut by the two equations $Q_{1t}=0$ and $\langle\tilde P,\tilde Q_1\rangle_{\natural*}=0$. At an element with $P_t$ not zero and with vanishing norm $\langle\tilde P\rangle_{\natural}$, the annihilator is the line $\mathbb{C}\tilde P^{*}$. At an element with $P_t$ not zero and with nonzero norm $\langle\tilde P\rangle_{\natural}$, the annihilator is $\{0\}$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
@@ -312,14 +312,14 @@ The operator depends on the vector part alone and only through its conjugate, so
 <td>the plain sesqualgebra</td>
 <td>$\mathrm{APS}$</td>
 <td>the antisymmetrisation</td>
-<td>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is the line $\mathbb{C}\overline{\tilde P}$. When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of the conjugates of the solutions of $\tilde P\tilde Z=0$ in the plain product, which is the same plane as in the general plain sesqualgebra. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>When the norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is the line $\mathbb{C}\overline{\tilde P}$. When the norm $\langle\tilde P\rangle_{\natural}$ is zero at a nonzero element, the annihilator is the plane of the conjugates of the solutions of $\tilde P\tilde Q_2=0$ in the plain product, which is the same plane as in the general plain sesqualgebra. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
 <td>the quaternionic algebra</td>
 <td>$\mathrm{AQA}$</td>
 <td>the antisymmetrisation</td>
-<td>At an element whose vector part is not zero and whose norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is the line $\mathbb{C}\tilde P$. At an element whose vector part is not zero and whose norm $\langle\tilde P\rangle_{\natural}$ is zero, the annihilator is the plane of the solutions of $P_t\vec X-X_t\vec P-\vec P\times\vec X=0$, and that plane contains the line $\mathbb{C}\tilde P$. At an element whose vector part is zero and which is not zero, the annihilator is the line $\mathbb{C}e_t$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
+<td>At an element whose vector part is not zero and whose norm $\langle\tilde P\rangle_{\natural}$ is not zero, the annihilator is the line $\mathbb{C}\tilde P$. At an element whose vector part is not zero and whose norm $\langle\tilde P\rangle_{\natural}$ is zero, the annihilator is the plane of the solutions of $P_t\vec Q_1-Q_{1t}\vec P-\vec P\times\vec Q_1=0$, and that plane contains the line $\mathbb{C}\tilde P$. At an element whose vector part is zero and which is not zero, the annihilator is the line $\mathbb{C}e_t$. At $\tilde P=0$, the annihilator is all of $\mathbb{B}$.</td>
 <td>the two sides are equal</td>
 </tr>
 <tr>
@@ -342,19 +342,19 @@ $$
 A_{\natural}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural}),\qquad A_{*}(\tilde P)=A_{\text{plain}}(\tilde P)^{*},\qquad A_{\natural*}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})^{*},
 $$
 and the two sides coincide for the natural product and for the general plain sesquilinear product, while for the plain product and for the general quaternionic sesquilinear product they differ.</p>
-<p><em>Proof.</em> The first identity is $\tilde P^{\natural}\tilde X=0$ read as the plain product of $\tilde P^{\natural}$ and $\tilde X$. For the second, the substitution $\tilde X=\tilde Z^{*}$ turns $\tilde P\tilde X^{*}=0$ into $\tilde P\tilde Z=0$, and the Hermitian conjugation is a bijection, so the plane is the star-image of the plain plane; the third is the first and the second composed. The coincidences are the theorem of §<em>The Two One-Sided Annihilators</em>.</p>
+<p><em>Proof.</em> The first identity is $\tilde P^{\natural}\tilde Q_1=0$ read as the plain product of $\tilde P^{\natural}$ and $\tilde Q_1$. For the second, the substitution $\tilde Q_1=\tilde Q_2^{*}$ turns $\tilde P\tilde Q_1^{*}=0$ into $\tilde P\tilde Q_2=0$, and the Hermitian conjugation is a bijection, so the plane is the star-image of the plain plane; the third is the first and the second composed. The coincidences are the theorem of §<em>The Two One-Sided Annihilators</em>.</p>
 <p><strong>Example.</strong> Take $\tilde P=e_t+i\vec e_x$, whose norm $\langle\cdot\rangle_{\natural}$ is $1-1=0$. The plain plane is
 $$
 A_{\text{plain}}(e_t+i\vec e_x)=\mathbb{C}\{e_t-i\vec e_x,\ \vec e_z+i\vec e_y\},
 $$
 the general plain sesquilinear plane is the star-image of the first, $A_{*}(e_t+i\vec e_x)=\mathbb{C}\{\vec e_x+ie_t,\ \vec e_y+i\vec e_z\}$, which is the plane of §<em>$\mathrm{GPS}$, the general plain sesqualgebra</em>; the natural plane is $A_{\natural}(e_t+i\vec e_x)=A_{\text{plain}}(e_t-i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y+i\vec e_z\}$, which is the plane of §<em>$\mathrm{GQA}$, the general quaternionic algebra</em>; and the general quaternionic sesquilinear plane is $A_{\natural*}(e_t+i\vec e_x)=\mathbb{C}\{e_t+i\vec e_x,\ \vec e_y-i\vec e_z\}$, the plane of §<em>$\mathrm{GQS}$, the general quaternionic sesqualgebra</em>. The four planes are the plain plane and its two conjugate images, and each one-sided plane of the four general products is read off the plain one.</p>
 <h2 id="summary">Summary</h2>
-<p>The annihilator of an element in a product is the set of partners that it kills on one side or the other; it is the solution set of the equation $\tilde P\star\tilde X=0$, and its dimension is the number of free complex parameters in that equation. The twelve products of the biquaternion space give twelve solutions, each written above with its case split and the generators of each set.</p>
+<p>The annihilator of an element in a product is the set of partners that it kills on one side or the other; it is the solution set of the equation $\tilde P\star\tilde Q_1=0$, and its dimension is the number of free complex parameters in that equation. The twelve products of the biquaternion space give twelve solutions, each written above with its case split and the generators of each set.</p>
 <p>Five facts summarize the twelve structures.</p>
 <ul>
 <li>The two one-sided annihilators are equal in ten of the twelve structures. They differ in exactly two, the plain product and the general quaternionic sesquilinear product, and only at an element of norm zero. There they are two distinct planes that share the line $\mathbb{C}\tilde P^{\natural}$ in the plain product and the line $\mathbb{C}\tilde P^{*}$ in the general quaternionic sesquilinear product. In the plain product at $\vec e_x+i\vec e_y$, for example, the left annihilator is $\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t+i\vec e_z\}$ and the right annihilator is $\mathbb{C}\{\vec e_x+i\vec e_y,\ e_t-i\vec e_z\}$.</li>
 <li>In two structures some element kills every partner. The two are the antisymmetric plain algebra and the antisymmetric quaternionic sesqualgebra, and the elements that kill every partner are exactly the scalar ones, the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$.</li>
-<li>In two structures the annihilator of every nonzero element is a hyperplane of dimension three. In the symmetric quaternionic algebra it is the hyperplane $P_tX_t+(\vec P,\vec X)=0$, and in the symmetric plain sesqualgebra it is the hyperplane $P_t\overline{X_t}+(\vec P,\overline{\vec X})=0$.</li>
+<li>In two structures the annihilator of every nonzero element is a hyperplane of dimension three. In the symmetric quaternionic algebra it is the hyperplane $P_tQ_{1t}+(\vec P,\vec Q_1)=0$, and in the symmetric plain sesqualgebra it is the hyperplane $P_t\overline{Q_{1t}}+(\vec P,\overline{\vec Q_1})=0$.</li>
 <li>In the two alternating structures every element lies in its own annihilator, because $\tilde P\diamond\tilde P=0$, and the two are the antisymmetric plain algebra and the antisymmetric quaternionic algebra. In the two conjugate-alternating structures, the antisymmetric plain sesqualgebra and the antisymmetric quaternionic sesqualgebra, the element lies in its own annihilator exactly when $\tilde P\diamond\tilde P$ vanishes, which is so at every element with real coefficients and can fail at an element with complex coefficients. In the other eight structures only some elements do.</li>
 <li>In the four general products an element of nonzero norm $\langle\cdot\rangle_{\natural}$ is invertible and its annihilator is $\{0\}$. At an element of norm $\langle\cdot\rangle_{\natural}$ zero the four planes are one plane read through the two conjugations, $A_{\natural}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})$, $A_{*}(\tilde P)=A_{\text{plain}}(\tilde P)^{*}$ and $A_{\natural*}(\tilde P)=A_{\text{plain}}(\tilde P^{\natural})^{*}$.</li>
 </ul>
@@ -385,7 +385,7 @@ the general plain sesquilinear plane is the star-image of the first, $A_{*}(e_t+
 <td>the left annihilators in the plain, the general plain sesquilinear, the natural and the general quaternionic sesquilinear product</td>
 </tr>
 <tr>
-<td>$A_{\text{plain}}(\tilde P)=\{\tilde Z:\tilde P\tilde Z=0\}$</td>
+<td>$A_{\text{plain}}(\tilde P)=\{\tilde Q_2:\tilde P\tilde Q_2=0\}$</td>
 <td>the kernel of the left multiplication in the plain product, $A_{\text{plain}}(\tilde P)$</td>
 </tr>
 <tr>
@@ -410,7 +410,7 @@ the general plain sesquilinear plane is the star-image of the first, $A_{*}(e_t+
 </tr>
 <tr>
 <td>$\tilde P^{\perp}$</td>
-<td>the hyperplane $\{\langle\tilde P,\tilde X\rangle_{\natural}=0\}$ or $\{\langle\tilde P,\tilde X\rangle_{*}=0\}$</td>
+<td>the hyperplane $\{\langle\tilde P,\tilde Q_1\rangle_{\natural}=0\}$ or $\{\langle\tilde P,\tilde Q_1\rangle_{*}=0\}$</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, $\mathrm{Vect}(\mathbb{B})$</td>
@@ -422,7 +422,7 @@ the general plain sesquilinear plane is the star-image of the first, $A_{*}(e_t+
 </tr>
 <tr>
 <td>${}^{*}$, ${}^{\natural}$</td>
-<td>the Hermitian conjugation, $\overline{X_t}e_t-\sum_{\mu\in\{x,y,z\}}\overline{X_\mu}\vec e_\mu$, and the natural conjugation, $X_te_t-\vec X$</td>
+<td>the Hermitian conjugation, $\overline{Q_{1t}}e_t-\sum_{\mu\in\{x,y,z\}}\overline{Q_{1\mu}}\vec e_\mu$, and the natural conjugation, $Q_{1t}e_t-\vec Q_1$</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2$</td>

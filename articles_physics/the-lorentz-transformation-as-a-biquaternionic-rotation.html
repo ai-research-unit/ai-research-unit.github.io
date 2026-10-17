@@ -158,24 +158,24 @@ $$</p>
 <h3 id="the-action-on-any-biquaternion">The Action on Any Biquaternion</h3>
 <p>The rotor conjugation is written above for four-vectors, and it is worth stating that it is defined on <strong>every</strong> biquaternion, because that is what the field-theory articles need. Put</p>
 <p>$$
-\Phi_{\tilde{\Lambda}}(\tilde{B}) := \tilde{\Lambda}\,\tilde{B}\,\tilde{\Lambda}^{*}
-\qquad\text{for any } \tilde{B} \in \mathbb{B}.
+\Phi_{\tilde{\Lambda}}(\tilde{Q}_1) := \tilde{\Lambda}\,\tilde{Q}_1\,\tilde{\Lambda}^{*}
+\qquad\text{for any } \tilde{Q}_1 \in \mathbb{B}.
 $$</p>
 <p>Three properties follow from the fact that ${}^{*}$ is an involution and reverses products, and each was checked by direct expansion.</p>
-<p><strong>It preserves both sectors.</strong> If $\tilde{B}^{*} = \pm\tilde{B}$ then</p>
+<p><strong>It preserves both sectors.</strong> If $\tilde{Q}_1^{*} = \pm\tilde{Q}_1$ then</p>
 <p>$$
-\bigl(\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*}\bigr)^{\dagger}
-= \tilde{\Lambda}\,\tilde{B}^{*}\,\tilde{\Lambda}^{*}
-= \pm\,\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*},
+\bigl(\tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*}\bigr)^{\dagger}
+= \tilde{\Lambda}\,\tilde{Q}_1^{*}\,\tilde{\Lambda}^{*}
+= \pm\,\tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*},
 $$</p>
 <p>so $\Phi_{\tilde{\Lambda}}$ maps $\mathbb{M}_-$ to itself, as the article already states for four-vectors, and equally maps $\mathbb{M}_+$ to itself. The field biquaternions of the electro-gravimagnetic programme therefore all transform by the same formula: the potential and the charge–current lie in $\mathbb{M}_-$, and the field strength and the power–force lie in $\mathbb{M}_+$, so each is carried to an element of its own sector by the conjugation whose component form that programme works out boost by boost. No second transformation law is needed, which is the reason the programme's transformation lemma agrees with the corpus's rotor action term for term.</p>
 <p><strong>It is not an algebra automorphism.</strong> For a product,</p>
 <p>$$
-\Phi_{\tilde{\Lambda}}(\tilde{B}\tilde{C}) = \tilde{\Lambda}\tilde{B}\tilde{C}\tilde{\Lambda}^{*},
+\Phi_{\tilde{\Lambda}}(\tilde{Q}_1\tilde{Q}_2) = \tilde{\Lambda}\tilde{Q}_1\tilde{Q}_2\tilde{\Lambda}^{*},
 \qquad
-\Phi_{\tilde{\Lambda}}(\tilde{B})\,\Phi_{\tilde{\Lambda}}(\tilde{C}) = \tilde{\Lambda}\tilde{B}\,\tilde{\Lambda}^{*}\tilde{\Lambda}\,\tilde{C}\tilde{\Lambda}^{*},
+\Phi_{\tilde{\Lambda}}(\tilde{Q}_1)\,\Phi_{\tilde{\Lambda}}(\tilde{Q}_2) = \tilde{\Lambda}\tilde{Q}_1\,\tilde{\Lambda}^{*}\tilde{\Lambda}\,\tilde{Q}_2\tilde{\Lambda}^{*},
 $$</p>
-<p>and these differ by the insertion of $\tilde{\Lambda}^{*}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a <strong>real</strong> quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{B}\mapsto\tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{-1}$.</p>
+<p>and these differ by the insertion of $\tilde{\Lambda}^{*}\tilde{\Lambda}$. They agree exactly when $\tilde{\Lambda}^{*} = \tilde{\Lambda}^{-1}$, that is, when $\tilde{\Lambda}$ is a <strong>real</strong> quaternion, which is the case of a pure spatial rotation. For a boost the rotor is Hermitian, $\tilde{\Lambda}^{*} = \tilde{\Lambda}$, so $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^{2} \neq 1$ and the map is not multiplicative. The conjugation is a ${}^{*}$-conjugation, not the inner automorphism $\tilde{Q}_1\mapsto\tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{-1}$.</p>
 <p><strong>It does not fix the centre.</strong> The same fact shows where the formula must not be used. On a central scalar, $\Phi_{\tilde{\Lambda}}(b\,e_t) = b\,\tilde{\Lambda}\tilde{\Lambda}^{*} = b\,\tilde{\Lambda}^2$, which is not central — for a boost it has a vector part proportional to $\vec u_{\mathrm b}$. Central elements are therefore not carried to central elements, and the conjugation is meaningful on the sectors, whose elements are the physical quantities that transform, rather than on the algebra as a whole. This is consistent with the four-vector reading: the invariant object of the conjugation is the biquaternion norm, and the norm is quadratic in a sector element, not linear in an arbitrary one.</p>
 <h3 id="verification-against-component-formulas">Verification Against Component Formulas</h3>
 <p>The rotor conjugation can be verified against the standard component formulas for a Lorentz boost. Take a four-potential $\tilde{A} = i\phi/c\,e_t + \vec A$, and apply the rotor conjugation with $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u_{\mathrm b}$.</p>

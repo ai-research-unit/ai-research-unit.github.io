@@ -78,9 +78,9 @@ $$
 The centre is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C}$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$, the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and on $\mathbb{M}_+$ with $\tilde{H}=h_te_t+i\vec h$ one has $\langle\tilde{H}\rangle_{\natural}=(h_t^2-|\vec h|^2)e_t$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A root of $-e_t$ is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2=-e_t$. The roots that can serve as the unit of a norm-preserving dynamics are the <strong>anti-Hermitian</strong> ones, $\tilde{\Xi}^{*}=-\tilde{\Xi}$; among these the central roots are $\pm i$ and the rest are the unit pure real quaternions. A general root of $-e_t$ need not be anti-Hermitian, as $\tilde{\Xi}=\vec e_x+i\vec e_y-\vec e_z$ shows, and the condition of norm preservation at $\tilde{H}=e_t$ is what forces $\tilde{\Xi}^{*}=-\tilde{\Xi}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ and a pure state is $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$.</p>
 <h2 id="the-two-norms">The Two Norms</h2>
 <p>The word "norm" carries two distinct objects in this framework, and the whole article turns on not confusing them.</p>
-<p><strong>The Hermitian norm.</strong> For $\tilde{Q},\tilde{Y}\in\mathbb{B}$ define
+<p><strong>The Hermitian norm.</strong> For $\tilde{Q},\tilde{Q}_1\in\mathbb{B}$ define
 $$
-\langle\tilde{Q},\tilde{Y}\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Y}\bigr),
+\langle\tilde{Q},\tilde{Q}_1\rangle_{\dagger}=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}_1\bigr),
 \qquad
 \|\tilde{Q}\|_{\dagger}^2=\mathrm{Tr}\bigl(\tilde{Q}^{*}\tilde{Q}\bigr).
 $$
@@ -89,14 +89,14 @@ $$
 \|\tilde{Q}\|_{\dagger}^2
 =2\bigl(|x_t|^2+|x_x|^2+|x_y|^2+|x_z|^2\bigr)>0\quad(\tilde{Q}\neq0).
 $$
-This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Y}))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.</p>
+This form is positive definite of signature $(8,0)$ on the real eight-dimensional algebra. It is the Hilbert–Schmidt form of the matrix model, $\langle \tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{tr}(M(\tilde{Q})^\dagger M(\tilde{Q}_1))$ with $\mathrm{tr}$ the ordinary $2\times2$ matrix trace, and its restriction to the state module is the quantity $\mathrm{Tr}(\psi^\dagger\psi)$ that normalizes spinors. This is the norm whose preservation is the unitarity statement of quantum physics: the Born probability $\mathrm{Tr}(\tilde{P}\tilde{H})$ is written with the trace, and the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q})$ of two states is the boundary case of this norm.</p>
 <p><strong>The biquaternion norm.</strong> The second object is
 $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\bigl(x_t^2+x_x^2+x_y^2+x_z^2\bigr)e_t\in\mathbb{C}_{\mathbb{B}},
 $$
 a quadratic form with values in the <strong>centre</strong>, not in $\mathbb{R}$. Its coefficient is the determinant of the matrix model, $\langle\tilde{Q}\rangle_{\natural}e_t=\det M(\tilde{Q})\,e_t$, so $\langle\cdot\rangle_{\natural}$ is multiplicative,
 $$
-\langle\tilde{Q}\tilde{Y}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Y}\rangle_{\natural},
+\langle\tilde{Q}\tilde{Q}_1\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural},
 $$
 and it is indefinite on $\mathbb{M}_+$: for $\tilde{H}=h_te_t+i\vec h$ one has $\langle\tilde{H}\rangle_{\natural}=(h_t^2-|\vec h|^2)e_t$, of signature $(1,3)$. Its null cone is the pure-state boundary of the Bloch ball.</p>
 <p>The two norms differ in every structural respect that matters here. The Hermitian norm is real-valued and positive definite; the biquaternion norm is centre-valued and indefinite. The Hermitian norm is preserved by the left action of the unitaries on the state module; the biquaternion norm is preserved by the left action of the unit-norm elements $SL(2,\mathbb{C})$. The Hermitian norm detects the state; the biquaternion norm detects the determinant. A reader who asks "which norm does the framework use" is asking a question with two correct answers, and the answer depends on whether the object at hand is a state overlap or a determinant.</p>
@@ -120,21 +120,21 @@ $$
 So the action is unital, $\Gamma_{\tilde{U}}(e_t)=e_t$, if and only if $\tilde{U}\tilde{U}^{*}=e_t$, i.e. if and only if $\tilde{U}$ is unitary.</p>
 <p><strong>Its defect is $\tilde{U}^{*}\tilde{U}$.</strong> Compute the product of two images:
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})\,\Gamma_{\tilde{U}}(\tilde{Y})
-=\tilde{U}\tilde{Q}\tilde{U}^{*}\tilde{U}\tilde{Y}\tilde{U}^{*}
-=\tilde{U}\tilde{Q}\bigl(\tilde{U}^{*}\tilde{U}\bigr)\tilde{Y}\tilde{U}^{*} .
+\Gamma_{\tilde{U}}(\tilde{Q})\,\Gamma_{\tilde{U}}(\tilde{Q}_1)
+=\tilde{U}\tilde{Q}\tilde{U}^{*}\tilde{U}\tilde{Q}_1\tilde{U}^{*}
+=\tilde{U}\tilde{Q}\bigl(\tilde{U}^{*}\tilde{U}\bigr)\tilde{Q}_1\tilde{U}^{*} .
 $$
-Compare with $\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y})=\tilde{U}\tilde{Q}\tilde{Y}\tilde{U}^{*}$. The two agree for all $\tilde{Q},\tilde{Y}$ if and only if
+Compare with $\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Q}_1)=\tilde{U}\tilde{Q}\tilde{Q}_1\tilde{U}^{*}$. The two agree for all $\tilde{Q},\tilde{Q}_1$ if and only if
 $$
-\tilde{U}^{*}\tilde{U}\,\tilde{Y}=\tilde{Y}\qquad\text{for all }\tilde{Y},
+\tilde{U}^{*}\tilde{U}\,\tilde{Q}_1=\tilde{Q}_1\qquad\text{for all }\tilde{Q}_1,
 $$
 which holds if and only if $\tilde{U}^{*}\tilde{U}=e_t$. This is the <strong>defect</strong> of the action.</p>
-<p><strong>The centrality statement.</strong> If the defect is central, $\tilde{U}^{*}\tilde{U}=\lambda e_t$ with $\lambda\in\mathbb{C}_{\mathbb{B}}$, then it commutes past $\tilde{Y}$ and
+<p><strong>The centrality statement.</strong> If the defect is central, $\tilde{U}^{*}\tilde{U}=\lambda e_t$ with $\lambda\in\mathbb{C}_{\mathbb{B}}$, then it commutes past $\tilde{Q}_1$ and
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})
-=\lambda\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
+\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Q}_1)
+=\lambda\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Q}_1),
 $$
-so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism <strong>up to the central scalar $\lambda$</strong>. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{Q},\tilde{Y}$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
+so that $\Gamma_{\tilde{U}}$ is an algebra homomorphism <strong>up to the central scalar $\lambda$</strong>. The failure of multiplicativity is then a scalar — the same number for every pair $\tilde{Q},\tilde{Q}_1$ — rather than an operator-valued anomaly that distorts each product differently. Centrality of the defect is exactly the condition that the anomaly is scalar; and the scalar is $1$, i.e. the action is multiplicative, exactly when $\tilde{U}$ is unitary:
 $$
 \Gamma_{\tilde{U}}\text{ multiplicative}
 \iff \tilde{U}^{*}\tilde{U}=e_t
@@ -163,7 +163,7 @@ $$
 =\langle\varphi|\tilde{Z}\varphi\rangle^2 .
 $$
 The preserved value is $\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q})=1$, so $\langle\varphi|\tilde{Z}\varphi\rangle^2=1$ for every unit $\varphi$; positivity gives $\langle\varphi|\tilde{Z}\varphi\rangle=1$ for all unit $\varphi$, hence $\tilde{Z}=e_t$.</p>
-<p>The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Y})$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.</p>
+<p>The theorem extends from the norm to the pairing by polarization, and it extends to the trace pairing $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)$ on $\mathbb{M}_+$ by the same argument applied to Hermitian elements. The physical content is that the Born probabilities of two states are preserved under $\Gamma_{\tilde{U}}$ exactly when $\tilde{U}$ is unitary, which is the standard statement of unitarity in the framework's language.</p>
 <h3 id="part-2-the-biquaternion-norm">Part 2: the biquaternion norm</h3>
 <p><strong>Theorem 2.</strong> Let $\tilde{U}\in\mathbb{B}^{\times}$. The conjugation scales the biquaternion norm by a central scalar,
 $$
@@ -230,7 +230,7 @@ the general plain sesquilinear algebraic norm interpretation the scalar part alo
 $$
 \mathrm{U}(2)=\mathrm{U}(1)\cdot SU(2),\qquad \tilde{U}=\lambda\tilde u_{\mathrm r},\quad |\lambda|=1,\quad \langle\tilde u_{\mathrm r}\rangle_{\natural}=e_t ,
 $$
-and the phase is invisible to conjugation, $\Gamma_{\lambda e_t}=\mathrm{id}$, so only the $SU(2)$ part acts; and that part is a <strong>unit real quaternion</strong>, so for it the bar is the identity and the natural sign and the star agree, $\bar{\tilde u_{\mathrm r}}=\tilde u_{\mathrm r}$, $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{-1}$. The four forms are $\mathrm{Sc}(\tilde{Z}^{a}\tilde{Y}^{b})$ with $a$ the identity or the natural sign on the first slot and $b$ the identity or the star on the second; with the bar trivial and the natural sign equal to the star, each dressing is carried along by the automorphism $\Gamma_{\tilde u_{\mathrm r}}$, and each of the four forms is preserved by the multiplicativity of $\Gamma_{\tilde u_{\mathrm r}}$ together with $\mathrm{Sc}(\tilde u_{\mathrm r}\tilde{X}\tilde u_{\mathrm r}^{*})=\mathrm{Sc}(\tilde{X})$.</p>
+and the phase is invisible to conjugation, $\Gamma_{\lambda e_t}=\mathrm{id}$, so only the $SU(2)$ part acts; and that part is a <strong>unit real quaternion</strong>, so for it the bar is the identity and the natural sign and the star agree, $\bar{\tilde u_{\mathrm r}}=\tilde u_{\mathrm r}$, $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{-1}$. The four forms are $\mathrm{Sc}(\tilde{Z}^{a}\tilde{Q}_1^{b})$ with $a$ the identity or the natural sign on the first slot and $b$ the identity or the star on the second; with the bar trivial and the natural sign equal to the star, each dressing is carried along by the automorphism $\Gamma_{\tilde u_{\mathrm r}}$, and each of the four forms is preserved by the multiplicativity of $\Gamma_{\tilde u_{\mathrm r}}$ together with $\mathrm{Sc}(\tilde u_{\mathrm r}\tilde{Q}_2\tilde u_{\mathrm r}^{*})=\mathrm{Sc}(\tilde{Q}_2)$.</p>
 <p><strong>Which group preserves which pair.</strong> The four forms are not preserved by the same larger group, and the split follows the first slot. The two forms that carry the natural sign there — the general quaternionic bilinear form and the Krein form — scale by the <strong>central factor</strong> $\lvert \langle\tilde{U}\rangle_{\natural}\rvert^{2}$ under a conjugation,
 $$
 \langle\Gamma_{\tilde{U}}\tilde{P},\Gamma_{\tilde{U}}\tilde{Q}\rangle_{\natural}=\lvert \langle\tilde{U}\rangle_{\natural}\rvert^{2}\langle\tilde{P},\tilde{Q}\rangle_{\natural},
@@ -251,9 +251,9 @@ $$
 \tilde{U}^{*}\tilde{U}=\mathrm{diag}(\lambda^2,\lambda^{-2}),
 $$
 which is not central for $\lambda\neq1$, so $\Gamma_{\tilde{U}}$ is not multiplicative and does not preserve the Hermitian norm. Concretely, on the pure state $\tilde{P}=\tfrac12(e_t+i \vec e_x)$ the trace pairing of $\tilde{P}$ with itself is $1$ before and $\mathrm{Tr}(\Gamma_{\tilde{U}}\tilde{P})^2=\tfrac14(\lambda^2+\lambda^{-2})^2=\cosh^2 2t$ after, while the biquaternion norm $\langle\cdot\rangle_{\natural}$ stays at $0$ on this null element. The example makes the two norms' disagreement explicit: the biquaternion norm sees only the determinant, and the determinant is blind to $\lambda$.</p>
-<p><strong>Example 2: a central scaling.</strong> Take $\tilde{U}=\lambda_t e_t$ with $\lambda_t>0$, $\lambda_t\neq1$. This defect is central, $\tilde{U}^{*}\tilde{U}=\lambda_t^2e_t$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_t^2$: for all $\tilde{Q},\tilde{Y}$,
+<p><strong>Example 2: a central scaling.</strong> Take $\tilde{U}=\lambda_t e_t$ with $\lambda_t>0$, $\lambda_t\neq1$. This defect is central, $\tilde{U}^{*}\tilde{U}=\lambda_t^2e_t$, so $\Gamma_{\tilde{U}}$ is a homomorphism up to the central scalar $\lambda_t^2$: for all $\tilde{Q},\tilde{Q}_1$,
 $$
-\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Y})=\lambda_t^2\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Y}),
+\Gamma_{\tilde{U}}(\tilde{Q})\Gamma_{\tilde{U}}(\tilde{Q}_1)=\lambda_t^2\,\Gamma_{\tilde{U}}(\tilde{Q}\tilde{Q}_1),
 \qquad
 \Gamma_{\tilde{U}}(\tilde{Q})=\lambda_t^2\tilde{Q}.
 $$
@@ -363,7 +363,7 @@ $$</p>
 <td>Biquaternion norm, centre-valued</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$</td>
+<td>$\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$</td>
 <td>Hermitian (Hilbert–Schmidt) pairing</td>
 </tr>
 <tr>

@@ -111,17 +111,17 @@ kernel and not by the trace.</p>
 <h2 id="composition-and-the-algebra-of-operators">Composition and the Algebra of Operators</h2>
 <p><strong>Proposition (the composition law).</strong> The multiplication operators compose by</p>
 <p>$$
-L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B} = A_t\,L^{\star}_{\tilde B},
+L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1} = A_t\,L^{\star}_{\tilde Q_1},
 $$</p>
 <p>and the family $\{L^{\star}_{\tilde A}:\tilde A\in\mathbb{B}\}$ is a complex vector space of dimension $4$, the
 <strong>monoid of multiplications</strong> of the block.</p>
-<p><em>Proof.</em> $L^{\star}_{\tilde A}(L^{\star}_{\tilde B}\tilde R)=L^{\star}_{\tilde A}\bigl(\langle\tilde B,\tilde R\rangle_{\natural}e_t\bigr)=\langle\tilde B,\tilde R\rangle_{\natural}\langle\tilde A,e_t\rangle_{\natural}e_t=A_t\langle\tilde B,\tilde R\rangle_{\natural}e_t=A_tL^{\star}_{\tilde B}\tilde R$.</p>
+<p><em>Proof.</em> $L^{\star}_{\tilde A}(L^{\star}_{\tilde Q_1}\tilde R)=L^{\star}_{\tilde A}\bigl(\langle\tilde Q_1,\tilde R\rangle_{\natural}e_t\bigr)=\langle\tilde Q_1,\tilde R\rangle_{\natural}\langle\tilde A,e_t\rangle_{\natural}e_t=A_t\langle\tilde Q_1,\tilde R\rangle_{\natural}e_t=A_tL^{\star}_{\tilde Q_1}\tilde R$.</p>
 <p><strong>Corollary (the map is faithful but not multiplicative).</strong> The map $\tilde A\mapsto L^{\star}_{\tilde A}$ is
 injective, its kernel being the radical $\{0\}$ of the operation, so the operator family represents the algebra
 faithfully as a vector space. It is <strong>not</strong> a representation of the operation: the composition law compares
-$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}=A_tL^{\star}_{\tilde B}$ with
-$L^{\star}_{\tilde A\star\tilde B}=\langle\tilde A,\tilde B\rangle_{\natural}L^{\star}_{e_t}$, and the two differ, as at
-$\tilde A=\vec e_x$, $\tilde B=\vec e_x$, where the first is $0$ and the second is $L^{\star}_{e_t}\ne0$. The monoid of
+$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$ with
+$L^{\star}_{\tilde A\star\tilde Q_1}=\langle\tilde A,\tilde Q_1\rangle_{\natural}L^{\star}_{e_t}$, and the two differ, as at
+$\tilde A=\vec e_x$, $\tilde Q_1=\vec e_x$, where the first is $0$ and the second is $L^{\star}_{e_t}\ne0$. The monoid of
 multiplications is not commutative either, $L^{\star}_{e_t}\circ L^{\star}_{\vec e_x}=L^{\star}_{\vec e_x}$ while
 $L^{\star}_{\vec e_x}\circ L^{\star}_{e_t}=0$, although the operation is commutative.</p>
 <p><strong>Remark (the operator algebra in the basis).</strong> The four operators $L^{\star}_{e_\mu}$ are the matrices with a
@@ -136,47 +136,47 @@ part of a multiplier.</p>
 <p><strong>Definition.</strong> The <strong>adjoint</strong> of a complex-linear map $T$ with respect to $\langle\cdot\rangle_{\natural}$ is the linear map $T^{\dagger}$
 determined by</p>
 <p>$$
-N\bigl(T\tilde X,\tilde Y\bigr) = N\bigl(\tilde X,T^{\dagger}\tilde Y\bigr) \qquad
-\text{for all } \tilde X,\tilde Y\in\mathbb{B},
+N\bigl(T\tilde Q_2,\tilde Q_3\bigr) = N\bigl(\tilde Q_2,T^{\dagger}\tilde Q_3\bigr) \qquad
+\text{for all } \tilde Q_2,\tilde Q_3\in\mathbb{B},
 $$</p>
 <p>which exists and is unique because $\langle\cdot\rangle_{\natural}$ is non-degenerate.</p>
 <p><strong>Proposition (the adjoint of a multiplication).</strong> For every $\tilde A$,</p>
 <p>$$
-\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde Y = \sum_\mu A_\mu Y_t\,e_\mu ,
+\bigl(L^{\star}_{\tilde A}\bigr)^{\dagger}\tilde Q_3 = \sum_\mu A_\mu Q_{3t}\,e_\mu ,
 \qquad\text{and}\qquad
 L^{\star}_{\tilde A}\ \text{is self-adjoint}\quad\Longleftrightarrow\quad \tilde A\in\mathbb{C}e_t .
 $$</p>
-<p><em>Proof.</em> $\langle L^{\star}_{\tilde A}\tilde X,\tilde Y\rangle_{\natural}=N\bigl(\langle\tilde A,\tilde X\rangle_{\natural}e_t,\tilde Y\bigr)=\langle\tilde A,\tilde X\rangle_{\natural}Y_t=\sum_\mu A_\mu X_\mu Y_t$, and $\langle\tilde X,\sum_\mu A_\mu Y_te_\mu\rangle_{\natural}=\sum_\mu X_\mu A_\mu Y_t$; the two agree for all $\tilde X$, which gives the displayed adjoint. For
-self-adjointness, compare the adjoint with $L^{\star}_{\tilde A}\tilde Y=\langle\tilde A,\tilde Y\rangle_{\natural}e_t$: the identity
-$\sum_\mu A_\mu Y_te_\mu=\bigl(\sum_\mu A_\mu Y_\mu\bigr)e_t$ for all $\tilde Y$ forces $A_\mu=0$ for
+<p><em>Proof.</em> $\langle L^{\star}_{\tilde A}\tilde Q_2,\tilde Q_3\rangle_{\natural}=N\bigl(\langle\tilde A,\tilde Q_2\rangle_{\natural}e_t,\tilde Q_3\bigr)=\langle\tilde A,\tilde Q_2\rangle_{\natural}Q_{3t}=\sum_\mu A_\mu Q_{2\mu} Q_{3t}$, and $\langle\tilde Q_2,\sum_\mu A_\mu Q_{3t}e_\mu\rangle_{\natural}=\sum_\mu Q_{2\mu} A_\mu Q_{3t}$; the two agree for all $\tilde Q_2$, which gives the displayed adjoint. For
+self-adjointness, compare the adjoint with $L^{\star}_{\tilde A}\tilde Q_3=\langle\tilde A,\tilde Q_3\rangle_{\natural}e_t$: the identity
+$\sum_\mu A_\mu Q_{3t}e_\mu=\bigl(\sum_\mu A_\mu Q_{3\mu}\bigr)e_t$ for all $\tilde Q_3$ forces $A_\mu=0$ for
 $\mu\in\{x,y,z\}$.</p>
 <p><strong>Remark (the adjoint is the operator of a linear form).</strong> The adjoint
-$\tilde Y\mapsto\sum_\mu A_\mu Y_te_\mu$ scales the whole element $\tilde A$ by the scalar part of the
+$\tilde Q_3\mapsto\sum_\mu A_\mu Q_{3t}e_\mu$ scales the whole element $\tilde A$ by the scalar part of the
 argument, so its value lies in the line $\mathbb{C}\tilde A$ and carries a vector part whenever $\tilde A$ is
 not central; the multiplication, by contrast, has a central value for every argument. The two also read
-different data: the adjoint depends on the argument through $Y_t$ alone, while the multiplication reads it
+different data: the adjoint depends on the argument through $Q_{3t}$ alone, while the multiplication reads it
 through the full pairing $\langle\tilde A,\cdot\rangle_{\natural}$, so the multiplication is self-adjoint exactly for a central
-multiplier, the case $L^{\star}_{A_te_t}\tilde X=A_tX_te_t$, in which it too reads only the scalar part.</p>
+multiplier, the case $L^{\star}_{A_te_t}\tilde Q_2=A_tQ_{2t}e_t$, in which it too reads only the scalar part.</p>
 <h2 id="the-two-groups-of-linear-maps">The Two Groups of Linear Maps</h2>
 <p><strong>Definition.</strong> The <strong>group of linear maps preserving the form</strong> is</p>
 <p>$$
-G_N = \{T\in GL(\mathbb{B}): \langle T\tilde X,T\tilde Y\rangle_{\natural}=\langle\tilde X,\tilde Y\rangle_{\natural}
-\text{ for all } \tilde X,\tilde Y\},
+G_N = \{T\in GL(\mathbb{B}): \langle T\tilde Q_2,T\tilde Q_3\rangle_{\natural}=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}
+\text{ for all } \tilde Q_2,\tilde Q_3\},
 $$</p>
 <p>and the <strong>group of transformations preserving the product</strong> is</p>
 <p>$$
-G_{\star} = \{T\in GL(\mathbb{B}): T(\tilde X\star\tilde Y)=(T\tilde X)\star(T\tilde Y)
-\text{ for all } \tilde X,\tilde Y\}.
+G_{\star} = \{T\in GL(\mathbb{B}): T(\tilde Q_2\star\tilde Q_3)=(T\tilde Q_2)\star(T\tilde Q_3)
+\text{ for all } \tilde Q_2,\tilde Q_3\}.
 $$</p>
 <p><strong>Proposition (the two matrix conditions).</strong> In the basis, with $G=I_4$ the Gram matrix of $N$,</p>
 <p>$$
 T\in G_N \quad\Longleftrightarrow\quad T^{\mathsf T}T=I_4, \qquad
 T\in G_{\star} \quad\Longleftrightarrow\quad T^{\mathsf T}T=I_4 \ \text{and}\ T e_t=e_t .
 $$</p>
-<p><em>Proof.</em> The first equivalence is the invariant form written on the coordinates: $\langle T\tilde X,T\tilde Y\rangle_{\natural}=(T\tilde X)^{\mathsf T}(T\tilde Y)=\tilde X^{\mathsf T}T^{\mathsf T}T\tilde Y$, and this is $\langle\tilde X,\tilde Y\rangle_{\natural}$
-for all $\tilde X,\tilde Y$ exactly when $T^{\mathsf T}T=I_4$. For the second, $T(\tilde X\star\tilde Y)=\langle\tilde X,\tilde Y\rangle_{\natural}Te_t$ must equal $(T\tilde X)\star(T\tilde Y)=\langle T\tilde X,T\tilde Y\rangle_{\natural}e_t$; taking
-$\tilde X=\tilde Y=e_t$ gives $Te_t=\langle Te_t,Te_t\rangle_{\natural}e_t$, so $Te_t=\lambda e_t$ with $\lambda=\lambda^2$ and,
-$T$ being invertible, $\lambda=1$; then $\langle T\tilde X,T\tilde Y\rangle_{\natural}=\langle\tilde X,\tilde Y\rangle_{\natural}$, which is
+<p><em>Proof.</em> The first equivalence is the invariant form written on the coordinates: $\langle T\tilde Q_2,T\tilde Q_3\rangle_{\natural}=(T\tilde Q_2)^{\mathsf T}(T\tilde Q_3)=\tilde Q_2^{\mathsf T}T^{\mathsf T}T\tilde Q_3$, and this is $\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}$
+for all $\tilde Q_2,\tilde Q_3$ exactly when $T^{\mathsf T}T=I_4$. For the second, $T(\tilde Q_2\star\tilde Q_3)=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}Te_t$ must equal $(T\tilde Q_2)\star(T\tilde Q_3)=\langle T\tilde Q_2,T\tilde Q_3\rangle_{\natural}e_t$; taking
+$\tilde Q_2=\tilde Q_3=e_t$ gives $Te_t=\langle Te_t,Te_t\rangle_{\natural}e_t$, so $Te_t=\lambda e_t$ with $\lambda=\lambda^2$ and,
+$T$ being invertible, $\lambda=1$; then $\langle T\tilde Q_2,T\tilde Q_3\rangle_{\natural}=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}$, which is
 $T^{\mathsf T}T=I_4$.</p>
 <p><strong>Corollary (dimensions and Lie algebras).</strong> Over $\mathbb{C}$, the group $G_N$ has complex dimension $6$ and
 its Lie algebra is $\{X:X^{\mathsf T}+X=0\}$, the space of antisymmetric matrices, of complex dimension $6$.
@@ -191,11 +191,11 @@ dimension $3$. The diagonal sign maps satisfy $T^{\mathsf T}T=I_4$ and fix $e_t$
 <p><strong>Remark (the structure group).</strong> The <strong>structure group</strong> of the block is the group of invertible linear maps
 that transport the product to a nonzero scalar multiple of itself,</p>
 <p>$$
-G^{\mathrm{str}}_{\star} = \{T\in GL(\mathbb{B}): T(\tilde X\star\tilde Y)=\lambda\,(T\tilde X)\star(T\tilde Y)
+G^{\mathrm{str}}_{\star} = \{T\in GL(\mathbb{B}): T(\tilde Q_2\star\tilde Q_3)=\lambda\,(T\tilde Q_2)\star(T\tilde Q_3)
 \text{ for some } \lambda\in\mathbb{C}^{\times}\}.
 $$</p>
 <p>The computation of the proposition gives the conditions $Te_t\in\mathbb{C}e_t$ and
-$\langle T\tilde X,T\tilde Y\rangle_{\natural}=\mu \langle\tilde X,\tilde Y\rangle_{\natural}$ for a nonzero scalar $\mu$, that is
+$\langle T\tilde Q_2,T\tilde Q_3\rangle_{\natural}=\mu \langle\tilde Q_2,\tilde Q_3\rangle_{\natural}$ for a nonzero scalar $\mu$, that is
 $T^{\mathsf T}T=\mu I_4$ together with the invariance of the central line. The form-preserving group is the
 case $\mu=1$ of the rescaling condition, with no requirement on $Te_t$; the group preserving the product is
 the intersection with $Te_t=e_t$, and there the value $\mu=1$ is forced back, since
@@ -209,33 +209,33 @@ the product is not the same as preserving it, exactly as for a quadratic form.</
 <h2 id="the-derivations-of-the-block">The Derivations of the Block</h2>
 <p><strong>Definition.</strong> A <strong>derivation</strong> of the block is a complex-linear map $D$ with</p>
 <p>$$
-D(\tilde X\star\tilde Y) = (D\tilde X)\star\tilde Y + \tilde X\star(D\tilde Y)
-\qquad\text{for all } \tilde X,\tilde Y\in\mathbb{B}.
+D(\tilde Q_2\star\tilde Q_3) = (D\tilde Q_2)\star\tilde Q_3 + \tilde Q_2\star(D\tilde Q_3)
+\qquad\text{for all } \tilde Q_2,\tilde Q_3\in\mathbb{B}.
 $$</p>
 <p><strong>Proposition (the weight, and its vanishing).</strong> A derivation is the same thing as a complex-linear map
 $D$ satisfying $D e_t=\delta e_t$ and</p>
 <p>$$
-\langle D\tilde X,\tilde Y\rangle_{\natural} + \langle\tilde X,D\tilde Y\rangle_{\natural} = \delta\,\langle\tilde X,\tilde Y\rangle_{\natural}
-\qquad\text{for all } \tilde X,\tilde Y ,
+\langle D\tilde Q_2,\tilde Q_3\rangle_{\natural} + \langle\tilde Q_2,D\tilde Q_3\rangle_{\natural} = \delta\,\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}
+\qquad\text{for all } \tilde Q_2,\tilde Q_3 ,
 $$</p>
-<p>for one complex number $\delta$. The weight is forced to be zero: at $\tilde X=\tilde Y=e_t$ the identity
+<p>for one complex number $\delta$. The weight is forced to be zero: at $\tilde Q_2=\tilde Q_3=e_t$ the identity
 reads $De_t=2(De_t)_te_t$, which with $De_t=\delta e_t$ is $\delta=2\delta$. Every derivation therefore has
 $De_t=0$ and $D^{\mathsf T}+D=0$, and these maps, the Lie algebra of $G_N$ cut by $De_t=0$, form the whole
 derivation algebra, of complex dimension $3$.</p>
-<p><em>Proof.</em> Writing the definition on the value, $D(\tilde X\star\tilde Y)=\langle\tilde X,\tilde Y\rangle_{\natural}De_t$ and
-$(D\tilde X)\star\tilde Y+\tilde X\star(D\tilde Y)=\bigl(\langle D\tilde X,\tilde Y\rangle_{\natural}+\langle\tilde X,D\tilde Y\rangle_{\natural}\bigr)e_t$.
+<p><em>Proof.</em> Writing the definition on the value, $D(\tilde Q_2\star\tilde Q_3)=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}De_t$ and
+$(D\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(D\tilde Q_3)=\bigl(\langle D\tilde Q_2,\tilde Q_3\rangle_{\natural}+\langle\tilde Q_2,D\tilde Q_3\rangle_{\natural}\bigr)e_t$.
 The vector part of the equality forces $De_t$ to be central, $De_t=\delta e_t$, and the central part is the
-displayed identity. At $\tilde X=\tilde Y=e_t$ that identity gives
+displayed identity. At $\tilde Q_2=\tilde Q_3=e_t$ that identity gives
 $De_t=\langle De_t,e_t\rangle_{\natural}e_t+\langle e_t,De_t\rangle_{\natural}e_t=2(De_t)_te_t$, and $(De_t)_t=\delta$, so $\delta=0$. With $\delta=0$ the
-identity is $\langle D\tilde X,\tilde Y\rangle_{\natural}+\langle\tilde X,D\tilde Y\rangle_{\natural}=0$, that is $D^{\mathsf T}+D=0$ in the basis, together
+identity is $\langle D\tilde Q_2,\tilde Q_3\rangle_{\natural}+\langle\tilde Q_2,D\tilde Q_3\rangle_{\natural}=0$, that is $D^{\mathsf T}+D=0$ in the basis, together
 with $De_t=0$; antisymmetric matrices killing $e_t$ form the complex dimension $3$ space displayed.</p>
 <p><strong>Remark (the inner derivations vanish).</strong> The inner derivations of the operation are the maps
-$\tilde X\mapsto \tilde A\star\tilde X-\tilde X\star\tilde A$, and they vanish identically because the
+$\tilde Q_2\mapsto \tilde A\star\tilde Q_2-\tilde Q_2\star\tilde A$, and they vanish identically because the
 operation is commutative; the derivation algebra of the block is therefore entirely made of outer
 derivations. The bracket of two multiplication operators,
-$[L^{\star}_{\tilde A},L^{\star}_{\tilde B}]=A_tL^{\star}_{\tilde B}-B_tL^{\star}_{\tilde A}$, is <strong>not</strong> a derivation: its value on $\tilde X\star\tilde Y$
-is zero, while the sum $(D\tilde X)\star\tilde Y+\tilde X\star(D\tilde Y)$ is
-$\bigl(A_t\langle\tilde B,\tilde X\rangle_{\natural}-B_t\langle\tilde A,\tilde X\rangle_{\natural}\bigr)Y_te_t+\bigl(A_t\langle\tilde B,\tilde Y\rangle_{\natural}-B_t\langle\tilde A,\tilde Y\rangle_{\natural}\bigr)X_te_t$,
+$[L^{\star}_{\tilde A},L^{\star}_{\tilde Q_1}]=A_tL^{\star}_{\tilde Q_1}-Q_{1t}L^{\star}_{\tilde A}$, is <strong>not</strong> a derivation: its value on $\tilde Q_2\star\tilde Q_3$
+is zero, while the sum $(D\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(D\tilde Q_3)$ is
+$\bigl(A_t\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}-Q_{1t}\langle\tilde A,\tilde Q_2\rangle_{\natural}\bigr)Q_{3t}e_t+\bigl(A_t\langle\tilde Q_1,\tilde Q_3\rangle_{\natural}-Q_{1t}\langle\tilde A,\tilde Q_3\rangle_{\natural}\bigr)Q_{2t}e_t$,
 which does not vanish in general; the operator layer is not a Lie algebra of derivations here, in contrast with
 the associative case.</p>
 <h2 id="summary">Summary</h2>
@@ -244,14 +244,14 @@ $L^{\star}_{\tilde A}\tilde R=\langle\tilde A,\tilde R\rangle_{\natural}e_t$, wi
 coordinates of $\tilde A$ in the first row and zero elsewhere. Every nonzero multiplication has rank $1$, image
 the central line $\mathbb{C}e_t$ and kernel the hyperplane $\langle\tilde A,\cdot\rangle_{\natural}=0$ of complex dimension $3$; its
 trace is $A_t$ and its determinant is $0$. The multiplications compose by
-$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}=A_tL^{\star}_{\tilde B}$: the family is a faithful
+$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$: the family is a faithful
 $4$-dimensional vector space of operators, its operators are the matrices with a single nonzero row, and it is
 neither commutative nor multiplicative. The adjoint of $L^{\star}_{\tilde A}$ with respect to $\langle\cdot\rangle_{\natural}$ is the map
-$\tilde Y\mapsto\sum_\mu A_\mu Y_te_\mu$, and the multiplication is self-adjoint exactly when the multiplier is
+$\tilde Q_3\mapsto\sum_\mu A_\mu Q_{3t}e_\mu$, and the multiplication is self-adjoint exactly when the multiplier is
 central. The group preserving the form is $\{T:T^{\mathsf T}T=I_4\}$, of complex dimension $6$, and the group
 preserving the product is its subgroup with $Te_t=e_t$, of complex dimension $3$, containing the diagonal sign
 maps; the structure group rescales the form and the product. A derivation is a map with $De_t=\delta e_t$ and
-$\langle D\tilde X,\tilde Y\rangle_{\natural}+\langle\tilde X,D\tilde Y\rangle_{\natural}=\delta \langle\tilde X,\tilde Y\rangle_{\natural}$, where the weight $\delta$ is forced
+$\langle D\tilde Q_2,\tilde Q_3\rangle_{\natural}+\langle\tilde Q_2,D\tilde Q_3\rangle_{\natural}=\delta \langle\tilde Q_2,\tilde Q_3\rangle_{\natural}$, where the weight $\delta$ is forced
 to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\mathsf T}+D=0\}$, entirely outer.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -275,7 +275,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 <td>its invariants for $\tilde A\ne0$</td>
 </tr>
 <tr>
-<td>$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}=A_tL^{\star}_{\tilde B}$</td>
+<td>$L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_1}=A_tL^{\star}_{\tilde Q_1}$</td>
 <td>the composition law</td>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ to be $0$; the derivation algebra is the $3$-dimensional space $\{De_t=0,\ D^{\m
 <td>the structure group, transporting the product to a scalar multiple</td>
 </tr>
 <tr>
-<td>$D(\tilde X\star\tilde Y)=(D\tilde X)\star\tilde Y+\tilde X\star(D\tilde Y)$</td>
+<td>$D(\tilde Q_2\star\tilde Q_3)=(D\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(D\tilde Q_3)$</td>
 <td>the derivation condition</td>
 </tr>
 </tbody>
