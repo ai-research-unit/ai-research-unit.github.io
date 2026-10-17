@@ -64,10 +64,10 @@
 </ul>
 <h2 id="the-polarization-biquaternions">The Polarization Biquaternions</h2>
 <h3 id="linear-and-circular-polarizations-in-the-material-sector">Linear and circular polarizations in the material sector</h3>
-<p>A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde P = i(\omega/c)e_t + \vec k$ has a polarization biquaternion that is a pure vector, $\tilde{\varepsilon} = \vec\varepsilon$, and the field-strength biquaternion of the wave is
+<p>A plane-wave solution of the source-free Maxwell equations with wave biquaternion $\tilde P_\gamma = i(\omega/c)e_t + \vec k$ has a polarization biquaternion that is a pure vector, $\tilde{\varepsilon} = \vec\varepsilon$, and the field-strength biquaternion of the wave is
 $$
 \tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H
-= \tilde P\,\tilde{\varepsilon} \quad\text{up to a phase and a normalisation},
+= \tilde P_\gamma\,\tilde{\varepsilon} \quad\text{up to a phase and a normalisation},
 $$
 so that the electric and magnetic fields are the real and imaginary parts of the same quaternion. Transversality is the condition
 $$
@@ -201,13 +201,13 @@ which is the analogue of the linear degree $P(\theta)$ above: it equals one forw
 $$
 \omega' = \frac{\omega}{1 + \dfrac{\hbar\omega}{mc^2}\,(1-\cos\theta)} ,
 $$
-the <strong>Compton shift</strong>, where $\theta$ is the scattering angle. It follows from the conservation of the four-momentum, $\tilde P + \tilde{P} = \tilde P' + \tilde{P}'$, together with the on-shell conditions
+the <strong>Compton shift</strong>, where $\theta$ is the scattering angle. It follows from the conservation of the four-momentum, $\tilde P_\gamma + \tilde P_e = \tilde P_\gamma' + \tilde P_e'$, together with the on-shell conditions
 $$
-\langle\tilde P\rangle_{\natural} = 0 , \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2 ,
+\langle\tilde P_\gamma\rangle_{\natural} = 0 , \qquad \langle\tilde P_e\rangle_{\natural} = -m^2c^2 ,
 $$
 and it is the biquaternion-norm statement of the kinematics: the photon stays on the null cone and the electron stays on its mass shell. The formula was verified by an independent route: for four scattering angles and four incident energies (0.1, 0.511, 2 and 10 MeV) the recoil four-momentum reconstructed from energy–momentum conservation satisfied $E_e^2 - p^2c^2 = m^2c^4$ to $3\times10^{-14}$ MeV$^2$, so the shifted frequency is the one that puts the electron back on shell. No approximation beyond the rest-frame kinematics and the plane-wave conditions enters, and the derivation is the standard one; the note that belongs to this series is that the kinematics is a statement entirely about the biquaternion norm on the two momenta.</p>
 <h3 id="the-recoil-electron">The recoil electron</h3>
-<p>The shift is one half of the kinematics; the other half is the recoil. In the laboratory frame the initial electron is at rest, $\tilde{P} = mc\,e_t$ up to the $ict$ factor, and conservation of the four-momentum fixes the recoil momentum to $\tilde{P}' = \tilde{P} + \tilde P - \tilde P'$, whose components have the standard form: energy $E' = mc^2 + \hbar\omega - \hbar\omega'$, and momentum in the scattering plane with the electron recoiling at the complement of the photon angle. The reconstruction was part of the numerical check above, where the recoil four-momentum was verified to sit on the electron mass shell to $3\times10^{-14}$ MeV$^2$; what matters for the polarization algebra is that the recoil direction $\vec u_k\times\vec u_k'$ (the normal to the scattering plane) and the electron spin direction are both material-sector vectors, so the spin asymmetry of the previous section pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\hbar(\omega - \omega')$, and this recoil is the physical origin of the dimensionless scale $x$.</p>
+<p>The shift is one half of the kinematics; the other half is the recoil. In the laboratory frame the initial electron is at rest, $\tilde P_e = mc\,e_t$ up to the $ict$ factor, and conservation of the four-momentum fixes the recoil momentum to $\tilde P_e' = \tilde P_e + \tilde P_\gamma - \tilde P_\gamma'$, whose components have the standard form: energy $E' = mc^2 + \hbar\omega - \hbar\omega'$, and momentum in the scattering plane with the electron recoiling at the complement of the photon angle. The reconstruction was part of the numerical check above, where the recoil four-momentum was verified to sit on the electron mass shell to $3\times10^{-14}$ MeV$^2$; what matters for the polarization algebra is that the recoil direction $\vec u_k\times\vec u_k'$ (the normal to the scattering plane) and the electron spin direction are both material-sector vectors, so the spin asymmetry of the previous section pairs two objects of the same sector. The electron's recoil is also what distinguishes the quantum from the classical problem: in the Thomson limit the recoil momentum is negligible and the electron remains effectively at rest, while in the Compton regime the recoil carries away the energy difference $\hbar(\omega - \omega')$, and this recoil is the physical origin of the dimensionless scale $x$.</p>
 <h3 id="the-kleinnishina-cross-section">The Klein–Nishina cross-section</h3>
 <p>The quantum differential cross-section for unpolarized photons and electrons is the Klein–Nishina formula,
 $$
@@ -266,7 +266,7 @@ the photon polarizations entering through this pairing and the electron spin thr
 <p>The polarization <strong>states are native</strong>: the transverse plane is the orthogonal complement of the propagation direction in the vector part of $\mathbb{M}_-$, defined by the algebra's own biquaternion norm, and the circular basis is the eigenbasis of left multiplication by $\vec u_k$. This is not a reinterpretation of an external structure; it is the algebra's multiplication acting on its own vectors.</p>
 <p>The polarization <strong>statistics is the biquaternion norm</strong>: the degree of polarization is read off $\langle\tilde{Ϛ}\rangle_{\natural}$, the pure states are the cone, and depolarization is the interior. The beam's coherence and the framework's indefinite form are therefore the same object.</p>
 <p>The scattering <strong>amplitude is a pairing</strong>: the Thomson amplitude is $\mathrm{Sc}(\tilde{\varepsilon}'^\dagger\tilde{\varepsilon})$, the cross-section is its modulus squared, and the polarization sum is the transverse projector. Every ingredient is one of the algebra's two pairings applied to polarization vectors, exactly as the action article's Lagrangians are pairings of fields and gradients.</p>
-<p>The <strong>mass enters as the one external scale</strong>: the Klein–Nishina function depends only on $x = \hbar\omega/mc^2$, the Thomson cross-section is its $x\to0$ limit, and the conformal invariance of the previous article is what makes that limit special. In the biquaternion-norm language the electron's mass is $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$ and the photon's is $\langle\tilde P\rangle_{\natural} = 0$, so the process is the collision of a timelike and a null biquaternion-norm eigenvector, and the scale $x$ is the ratio of the null vector's energy to the timelike vector's mass.</p>
+<p>The <strong>mass enters as the one external scale</strong>: the Klein–Nishina function depends only on $x = \hbar\omega/mc^2$, the Thomson cross-section is its $x\to0$ limit, and the conformal invariance of the previous article is what makes that limit special. In the biquaternion-norm language the electron's mass is $\langle\tilde P_e\rangle_{\natural} = -m^2c^2$ and the photon's is $\langle\tilde P_\gamma\rangle_{\natural} = 0$, so the process is the collision of a timelike and a null biquaternion-norm eigenvector, and the scale $x$ is the ratio of the null vector's energy to the timelike vector's mass.</p>
 <p>What the framework does <strong>not</strong> supply is the dynamics. The Thomson cross-section and the Klein–Nishina formula are consequences of the Maxwell–Dirac action and its quantisation, not of the algebra; the algebra organises the polarization bookkeeping and exhibits the states, the observables, and the geometric factors as elements of one structure, but the $r_e^2$ and the $(\omega'/\omega)^2$ come from the field theory. This is the same boundary the photon article draws: the framework transcribes the standard physics faithfully, and the specific facts attached to the photon and the electron are supplied from outside.</p>
 <h2 id="summary">Summary</h2>
 <p>The polarization algebra of photon–electron scattering in the biquaternion framework places the photon's polarization in the vector part of the material sector, the beam's coherence in the Hermitian sector, and the scattering geometry in the transverse projector of the material sector.</p>
@@ -282,12 +282,12 @@ the photon polarizations entering through this pairing and the electron spin thr
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P = i(\omega/c)e_t+\vec k$</td>
-<td>Photon wave biquaternion; $\langle\tilde P\rangle_{\natural} = 0$</td>
+<td>$\tilde P_\gamma = i(\omega/c)e_t+\vec k$</td>
+<td>Photon wave biquaternion; $\langle\tilde P_\gamma\rangle_{\natural} = 0$</td>
 </tr>
 <tr>
-<td>$\tilde{P}$</td>
-<td>Electron four-momentum; $\langle\tilde{P}\rangle_{\natural} = -m^2c^2$</td>
+<td>$\tilde P_e$</td>
+<td>Electron four-momentum; $\langle\tilde P_e\rangle_{\natural} = -m^2c^2$</td>
 </tr>
 <tr>
 <td>$\varepsilon^{\mathrm{fop}}, {\varepsilon^{\mathrm{fop}}}'$</td>

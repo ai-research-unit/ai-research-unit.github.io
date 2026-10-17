@@ -93,8 +93,8 @@
 <td>Idempotent, projector</td>
 <td>$\Pi_te_t+\vec\Pi$, with $\tilde\Pi^2=\tilde\Pi$</td>
 <td>$\mathbb{B}$; $\mathbb{M}_+$ when $\tilde\Pi^{*}=\tilde\Pi$</td>
-<td>A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module</td>
-<td>270</td>
+<td>A Hermitian idempotent is a pure state; $\mathbb{B}\tilde\Pi$ is the minimal left ideal, the state module. The retarded pure state of the moving-charge exercise is $\tilde\Pi(\vec u_R)=\tfrac12(e_t+i\vec u_R)$</td>
+<td>271</td>
 </tr>
 <tr>
 <td>$\tilde\Xi$</td>
@@ -157,16 +157,16 @@
 <td>Unit real quaternion rotor</td>
 <td>$\cos\frac{\theta}{2}e_t+\sin\frac{\theta}{2}\vec u_{\mathrm r}$</td>
 <td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
-<td>The spatial rotation of the polar word; unitary under every product</td>
-<td>11</td>
+<td>The rotor of the polar word and of every rotation here, the rotating frame included; half-angle $\theta/2$, axis $\vec u_{\mathrm r}$; unitary under every product</td>
+<td>16</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm L}$</td>
-<td>Lorentz rotor</td>
-<td>$\tilde U_{\mathrm L}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
-<td>$\langle\tilde U_{\mathrm L}\rangle_{\natural}=1$, $\tilde U_{\mathrm L}\tilde U_{\mathrm L}^{\natural}=e_t$</td>
-<td>The Lorentz transformation: factors $3$ and $4$ of the polar word multiplied, not the boost alone; $\tilde\Lambda$ of the physics articles, $\tilde U_{\mathrm L}$ where $\tilde\Lambda$ is the eigenspinor</td>
-<td>3</td>
+<td>$\tilde u_H$</td>
+<td>Evolution rotor</td>
+<td>$\exp(-i\tilde H_Rt/\hbar)=\exp(-\frac{\tilde\Omega t}{2}\vec u_R)$</td>
+<td>$\mathbb{H}_{\mathbb{B}}$, norm one</td>
+<td>The same rotor for the evolution inside that frame: axis $\vec u_R$, angle $\tilde\Omega t$</td>
+<td>1</td>
 </tr>
 </tbody>
 </table></div>
@@ -190,6 +190,14 @@
 <td>Operator, $\mathbb{B}$-valued</td>
 <td>Its conjugate $\tilde\nabla^{\natural}=e_t\partial_t-\vec e_k\partial_k$ is the second factor of $\Box$</td>
 <td>204</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>Gauge-covariant derivative</td>
+<td>$\tilde D=\tilde\nabla+i\kappa\mathcal A$</td>
+<td>Operator, $\mathbb{B}$-valued</td>
+<td>The gauge-principle, minimal-coupling, Yang–Mills, instanton and Stueckelberg articles. Its $e_t$ coefficient is $\partial/\partial Q_t+i\kappa\mathcal A_t$, so the operator is read with its scalar part; on the curvature it acts as $\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$, the Yang–Mills current. The component $D_\mu=\partial/\partial Q_\mu+i\kappa\mathcal A_\mu$ carries no tilde</td>
+<td>24</td>
 </tr>
 </tbody>
 </table></div>
@@ -236,8 +244,8 @@
 <td>Future null four-vector of a pure state</td>
 <td>$\tilde{\mathcal L}=i\tilde\Pi(u)\in\mathbb{M}_-$</td>
 <td>$\mathbb{M}_-$</td>
-<td>$\langle\tilde{\mathcal L}\rangle_{\natural}=0$; the scalar part $i/2$ is complex, so the majuscule, §<em>The Elements and their Coefficients</em></td>
-<td>1</td>
+<td>$\langle\tilde{\mathcal L}\rangle_{\natural}=0$; the scalar part $i/2$ is complex, so the majuscule, §<em>The Elements and their Coefficients</em>. The retarded instance of the moving-charge exercise is $\tilde{\mathcal L}_{\mathrm{ret}}=\tilde{\mathcal L}(\vec u_R)$, whose null factor is $-2\tilde{\mathcal L}_{\mathrm{ret}}=\vec u_R-ie_t$</td>
+<td>2</td>
 </tr>
 <tr>
 <td>$\tilde J$</td>
@@ -263,9 +271,18 @@
 <td>The gradient of the retarded time: $\tilde\nabla^{\natural}\tilde Q=\tilde K_{\mathrm{ret}}\,d\tilde Q/dt_r$ for a source depending on $t_r$ alone. It is a zero divisor, $\langle\tilde K_{\mathrm{ret}}\rangle_{\natural}=0$, so it is null and not unitary at any $\kappa$</td>
 <td>1</td>
 </tr>
+<tr>
+<td>$\tilde Q_{\mathrm d}$</td>
+<td>Gauge parameter of the linearized diffeomorphism</td>
+<td>$\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial\tilde Q_{\mathrm d}/\partial Q_\mu$; $\xi_\nu=\langle\tilde Q_{\mathrm d},\varepsilon_\nu\rangle_{\natural}$</td>
+<td>$\mathbb{M}_-$</td>
+<td>The image of the diffeomorphism vector, one element of $\mathbb{M}_-$ whose four components remove four of the ten, $16=10+6\to6$. A parameter, not a connection; the central scalar $\Gamma$ of $\tilde A\mapsto\tilde A-\tilde\nabla\Gamma$ is the abelian case</td>
+<td>4</td>
+</tr>
 </tbody>
 </table></div>
 <p>$\tilde j$ no longer occurs: the normalised current density it named is the same object as $\sqrt{\mu}\,\tilde J$, and it is written that way. The lowercase letter was a duplicate of $\tilde J$, not a distinct quantity.</p>
+<p>The parameter does not take the letter $\Delta$. $\Delta$ is the Laplacian, the central scalar operator of $\Box=\partial^2/\partial Q_t^2+\Delta$, and a tilde on a central glyph claims a quaternionic factor that is not there; the letter is also the Dirac module $\Delta=S\oplus\bar S$, the BCS gap, the conformal weight, the horizon function and the Faddeev–Popov determinant. The parameter is a bound element, so it takes a role subscript on the Q family, $\tilde Q_{\mathrm d}$, as $\tilde K_{\mathrm{ret}}$ and $\tilde Q_{\log}$ do. The operator is unaffected: an operator carries the mark of its element, and $\partial/\partial Q_\mu$ is scalar and carries none.</p>
 <h3 id="the-fields">The Fields</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -367,38 +384,10 @@
 <tbody>
 <tr>
 <td>$\tilde\chi$</td>
-<td>Spinor component</td>
-<td>—</td>
-<td>A component spinor of the algebra, as in $(\tilde\phi,\tilde\chi)^{\mathsf T}$</td>
-<td>6</td>
-</tr>
-<tr>
-<td>$\tilde D$</td>
-<td>Gauge-covariant derivative</td>
-<td>$\tilde D\tilde F=\tilde\nabla\tilde F+i\kappa[\mathcal A,\tilde F]$</td>
-<td>The Yang–Mills and instanton articles; also a polynomial $\tilde D(s^2)$ in the Bhabha article</td>
-<td>24</td>
-</tr>
-<tr>
-<td>$\tilde\Delta\in\mathbb{M}_-$</td>
-<td>Gauge four-vector</td>
-<td>$\delta\tilde E_\mu\mapsto\delta\tilde E_\mu-\partial_\mu\tilde\Delta$</td>
-<td>—</td>
+<td>Spinor of the state module</td>
+<td>$\tilde\chi\in\mathbb{B}\tilde\Pi$, $\tilde\chi\tilde\Pi=\tilde\chi$; $\tilde\chi=a\tilde\Pi+b\vec e_x\tilde\Pi$, $a,b\in\mathbb{C}$</td>
+<td>A second spinor beside $\tilde\psi$: the lower (small) spinor in the Dirac basis, as in $(\tilde\phi,\tilde\chi)^{\mathsf T}$, and the second argument of $\tilde\psi\tilde\chi^{*}$, $\varepsilon(\tilde\psi,\tilde\chi)$ and $\mathfrak{b}(\tilde\psi,\tilde\chi)$. It is not a four-vector: it has two complex components, and the four-vector is the bilinear $\tilde\psi\tilde\chi^{*}$. A matrix column is written $\chi$, without the tilde</td>
 <td>4</td>
-</tr>
-<tr>
-<td>$\tilde{\not D}$</td>
-<td>Slashed Dirac operator</td>
-<td>$\tilde{\not D}=\tilde E^\mu D_\mu$</td>
-<td>$\tilde{\not D}^2=\Box_g-\tfrac14R$</td>
-<td>2</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal F}$</td>
-<td>Non-abelian field strength</td>
-<td>$\tilde{\mathcal F}=\tilde\nabla\mathcal A+\tfrac12[\mathcal A,\mathcal A]$</td>
-<td>The curvature of the Yang–Mills, instanton, anomaly and path-integral articles; the non-abelian analogue of $\tilde F$</td>
-<td>5</td>
 </tr>
 <tr>
 <td>$\tilde{\mathcal F}$</td>
@@ -448,34 +437,6 @@
 <td>$\tilde\mu=\mu_k\vec e_k$</td>
 <td>The classical magnetic moment, a pure real quaternion</td>
 <td>1</td>
-</tr>
-<tr>
-<td>$\tilde N$</td>
-<td>Null vector on a boundary ray</td>
-<td>$g(\tilde N,\tilde N)=0$, $\xi=[\tilde N]$</td>
-<td>One role only: the null vector of <em>Split-Biquaternions and Hyperbolic Geometry</em>, whose ray is a point of $\partial H^3$ and whose normalisation is fixed in the notation row of that article</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde N$</td>
-<td>Number operator</td>
-<td>$\tilde N=\tilde a^\dagger\tilde a$</td>
-<td>The algebra number operator of the oscillator and Fock articles, with the truncation $\tilde N_{\mathrm{tr}}=\tfrac12(e_t-i\vec e_z)$ and the Tavis–Cummings excitation number $\tilde N_{\mathrm{exc}}=a^\dagger a+\tilde J_3/\hbar+N/2$. Bound where introduced, never a free element</td>
-<td>15</td>
-</tr>
-<tr>
-<td>$\tilde{\mathcal N}$</td>
-<td>Retarded direction</td>
-<td>$\tilde{\mathcal N}=\vec u_R-ie_t$</td>
-<td>In the field of a moving charge</td>
-<td>1</td>
-</tr>
-<tr>
-<td>$\tilde n$</td>
-<td>Outward unit normal</td>
-<td>—</td>
-<td>The biquaternion-valued outward unit normal of the Stokes theorem</td>
-<td>6</td>
 </tr>
 <tr>
 <td>$\tilde\omega$</td>
@@ -548,13 +509,6 @@
 <td>4</td>
 </tr>
 <tr>
-<td>$\tilde\Sigma$</td>
-<td>Root of $+1$</td>
-<td>$\tilde\Sigma^2=e_t$</td>
-<td>With $\tilde\Pi=\tfrac12(e_t+\tilde\Sigma)$</td>
-<td>5</td>
-</tr>
-<tr>
 <td>$\tilde\sigma$</td>
 <td>State element</td>
 <td>—</td>
@@ -562,24 +516,21 @@
 <td>13</td>
 </tr>
 <tr>
-<td>$\tilde W$</td>
-<td>W-boson gauge field</td>
-<td>$\tilde W=\sum_a\tilde W^aT^a$</td>
-<td>The electroweak article; the generators $T^a=\tfrac12e_a$ are algebra elements, so the gauge field is an element and not a matrix; its field strength is $\tilde{\mathcal W}=\tilde\nabla\tilde W+\tfrac{g}{2}[\tilde W,\tilde W]$</td>
-<td>42</td>
-</tr>
-<tr>
 <td>$\tilde{\mathcal W}$</td>
-<td>Weak field strength or an energy density</td>
-<td>$\tilde{\mathcal W}=\tilde\nabla\tilde W+\tfrac{g}{2}[\tilde W,\tilde W]$</td>
-<td>In the electroweak article; $\tilde{\mathcal W}=\tfrac12\tilde F\tilde F^*$ in the gauge article</td>
-<td>2</td>
+<td>Energy–momentum biquaternion of the electromagnetic field</td>
+<td>$\tilde{\mathcal W}=\tfrac12\tilde F\tilde F^{*}=We_t+\tfrac{i}{c}\vec S$</td>
+<td>A Hermitian element of $\mathbb{M}_+$, the density of the Poynting balance; the electroweak field strength is the tensor $W^a_{\mu\nu}$, which carries no tilde</td>
+<td>1</td>
 </tr>
 </tbody>
 </table></div>
+<p>$\tilde\Sigma$ is not a root glyph. The root of $+1$ is $\tilde\Xi$, and <em>Square Roots of One and the Idempotents of the General Plain Sesqualgebra</em> now writes it so throughout. The four articles of the electro-gravimagnetic programme keep $\tilde\Sigma$ as a bound energy–momentum biquaternion, the object of the $\tilde{\mathcal W}$ row; the glyph is not generic and it is not a root.</p>
 <p>The wave four-vector and the unit four-velocity are written $\tilde P/\hbar$ and $\tilde V/c$. Each is a quotient of an object already in the list, so neither takes a glyph of its own, and the rows that stood for them are removed.</p>
 <p>$\tilde\tau$ no longer occurs: its one use was the pure torque of <em>Rigid-Body Dynamics and the Biquaternion Rotor</em>, now written $\vec\tau$.</p>
-<h3 id="the-bound-roles-of-math260">The Bound Roles of $\tilde R$</h3>
+<p>$\tilde{\mathcal N}$ no longer occurs. The null factor of the retarded-time gradient is $\vec u_R-ie_t=-2\tilde{\mathcal L}(\vec u_R)=-2i\tilde\Pi(\vec u_R)$: it is $-2$ times the future null four-vector of a pure state of section 1, so it takes no glyph of its own, and the row that stood for it is removed. The row also misnamed it a direction; the direction is the pure vector $\vec u_R$. <em>Exercise: The Electromagnetic Field of a Moving Charge</em> binds the object at the point of use as $\tilde{\mathcal L}_{\mathrm{ret}}=\tilde{\mathcal L}(\vec u_R)$.</p>
+<p>$\tilde W$ no longer occurs as a gauge field. The electroweak connection is written in the tensor formalism, $W^a_\mu$ with a Lie-algebra index and a spacetime index, and its curvature $W^a_{\mu\nu}$; neither is a single element, and the tilde marks an element. The W and Z article now writes $\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_a W^a_{\mu\nu}W^{a\,\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu}$. The letter remains in section 3 for its generic use in the algebra articles.</p>
+<p><strong>The pass on $\tilde\chi$.</strong> The glyph occurred in six articles. Four use it as a spinor of the state module: the lower (small) component of the Dirac spinor in the Dirac and Pauli articles, and the second spinor of the bilinears and pairings in the scalar-field and Klein-Gordon articles. The other two, the set-builder of the Schrödinger article and the conjugation identity of the ideals article, used it as a generic element; both are now written $\tilde Q$, and the row counts the four spinor articles.</p>
+<h3 id="the-bound-roles-of-math281">The Bound Roles of $\tilde R$</h3>
 <p>$\tilde R$ is not a generic glyph. After the electric-source role was removed, its uses are bound where the letter is introduced, and they fall into two roles that do not co-occur in one article.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -731,8 +682,8 @@ so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is
 <td>General element of the algebra</td>
 <td>—</td>
 <td>A general element; a basis element of the spinor module</td>
-<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced. The physics articles also use it as the W-boson field.</td>
-<td>42</td>
+<td>Write $\tilde Q$, $\tilde Q_1$ or $\tilde Q_2$, or bind the letter where it is introduced.</td>
+<td>41</td>
 </tr>
 <tr>
 <td>$\tilde w$</td>
@@ -813,6 +764,14 @@ so the normalised combination $i\rho/\sqrt{\epsilon}\,e_t+\sqrt{\mu}\,\vec J$ is
 <td>It is Hermitian, but it is not the general Hermitian observable of section 1, and the rule keeps the tilde for that object alone</td>
 <td>Drop the tilde, or write the energy as the section 1 observable when the statement is about the observable.</td>
 <td>223</td>
+</tr>
+<tr>
+<td>$\tilde D$</td>
+<td>Polynomial in $s^2$</td>
+<td>$\tilde D(s^2)=\kappa(s^2-m_1^2)(s^2-m_2^2)\cdots(s^2-m_k^2)$</td>
+<td>The determinant $D(p)=\det(\Gamma(p)+mE)$ of the Bhabha and spin-mass articles, written as a function of $s^2$ alone; a central scalar, with no quaternionic factor</td>
+<td>Drop the tilde, $D(s^2)=\kappa(s^2-m_1^2)(s^2-m_2^2)\cdots(s^2-m_k^2)$.</td>
+<td>24</td>
 </tr>
 </tbody>
 </table></div>

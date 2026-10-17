@@ -97,7 +97,7 @@ $$</p>
 [\tilde{F}]_S = \tilde{F}^+ - \tilde{F}^-,
 $$</p>
 <p>where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.</p>
-<p>The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \vec u$ for a spatial surface and $\tilde{n} = i\nu_t\,e_t + \vec u$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then</p>
+<p>The distributional derivative of a discontinuous function acquires a surface term. Let $\tilde U_{\mathrm n}$ be the unit normal to $S$ in the $ict$ convention, $\tilde U_{\mathrm n} = i\nu_t\,e_t + \vec u$ with $\nu_t^2 + \lvert\vec u\rvert^2 = 1$, and let $\delta_S$ be the surface delta distribution. For a spatial surface $\nu_t = 0$, and the normal is the pure $\vec u$. Then</p>
 <p>$$
 \partial/\partial Q_\mu \tilde{F} = \{\partial/\partial Q_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
 $$</p>
@@ -105,15 +105,15 @@ $$</p>
 <h3 id="the-jump-condition">The Jump Condition</h3>
 <p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}$ in a homogeneous medium, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = 0.
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0.
 $$</p>
-<p><strong>Consequence for a homogeneous medium.</strong> In a homogeneous medium, the normal $\tilde{n}$ is invertible for any <strong>non-characteristic</strong> surface. For such surfaces, the jump condition $\tilde{n}[\tilde{F}]_S = 0$ forces the jump to vanish:</p>
+<p><strong>Consequence for a homogeneous medium.</strong> In a homogeneous medium, the normal $\tilde U_{\mathrm n}$ is invertible for any <strong>non-characteristic</strong> surface. For such surfaces, the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ forces the jump to vanish:</p>
 <p>$$
 [\tilde{F}]_S = 0 \qquad \text{(non-characteristic surface, homogeneous medium)}.
 $$</p>
 <p>So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.</p>
-<p><strong>Consequence for a characteristic surface.</strong> If the surface is <strong>characteristic</strong> (the light cone, $\tilde{n}\tilde{n}^{\natural} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.</p>
-<p><strong>Remark on material interfaces.</strong> At a <strong>material interface</strong> (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.</p>
+<p><strong>Consequence for a characteristic surface.</strong> If the surface is <strong>characteristic</strong> (the light cone, $\tilde U_{\mathrm n}\tilde U_{\mathrm n}^{\natural} = 0$), then $\tilde U_{\mathrm n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.</p>
+<p><strong>Remark on material interfaces.</strong> At a <strong>material interface</strong> (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$ in a homogeneous medium.</p>
 <h3 id="the-light-cone-condition">The Light-Cone Condition</h3>
 <p>If the surface $S$ is a <strong>characteristic</strong> surface (the light cone), the jump condition admits nontrivial solutions. On the light cone, the normal is a zero divisor, and the jump condition becomes the <strong>wave-front condition</strong></p>
 <p>$$
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 \{n_0 + i\vec u\}\circ[B]_F = 0 .
 $$</p>
-<p>The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,</p>
+<p>The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde U_{\mathrm n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec u) = \vec u - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde U_{\mathrm n} = i\nu_t e_t + \vec u$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,</p>
 <p>$$
 [b] + i(\vec u,[\vec B]) = 0 ,
 \qquad
@@ -160,7 +160,7 @@ $$</p>
 <p>$$
 [W]_{F_t} = c^{-1}\,(\vec u,[\vec P]_{F_t}),
 $$</p>
-<p>which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S$.</p>
+<p>which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{P}]_S$.</p>
 <h3 id="the-shock-waves-of-the-chargecurrent-field">The Shock Waves of the Charge–Current Field</h3>
 <p>The field strength is not the only object whose discontinuities the programme considers. The <strong>charge–current field</strong> $\tilde J_{\mathrm{eg}} = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are <strong>not</strong> transverse in general. In a free field that field obeys the first-order system</p>
 <p>$$
@@ -258,13 +258,13 @@ $$</p>
 \tilde{\nabla}\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\mathrm{eff}},
 $$</p>
 <p>where $\tilde J_{\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde J_{\mathrm{eff}} \to \tilde J$; in a linear medium, $\tilde J_{\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.</p>
-<h3 id="the-shock-as-a-jump-in-math170">The Shock as a Jump in $\tilde J_{\mathrm{eff}}$</h3>
+<h3 id="the-shock-as-a-jump-in-math172">The Shock as a Jump in $\tilde J_{\mathrm{eff}}$</h3>
 <p>A shock front is a surface $S$ across which the effective four-current $\tilde J_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde J_{\mathrm{eff}} \text{ is continuous across } S,
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde J_{\mathrm{eff}} \text{ is continuous across } S,
 $$</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\mathrm{eff}}]_S \quad \text{when } \tilde J_{\mathrm{eff}} \text{ jumps across } S.
+\tilde U_{\mathrm n}\,[\tilde{F}]_S = -\sqrt{\mu}\,[\tilde J_{\mathrm{eff}}]_S \quad \text{when } \tilde J_{\mathrm{eff}} \text{ jumps across } S.
 $$</p>
 <p>In the linear vacuum case, $\tilde J_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\sqrt{\mu}\,\tilde{J}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
 <h3 id="the-characteristic-structure">The Characteristic Structure</h3>
@@ -273,9 +273,9 @@ $$</p>
 <h2 id="the-energy-jump-across-a-shock-front">The Energy Jump Across a Shock Front</h2>
 <p>For a shock front in a nonlinear medium, the <strong>energy</strong> of the electromagnetic field is not conserved across the shock: some of the energy is dissipated into the medium. The jump in the biquaternionic energy–momentum is related to the flux of energy–momentum across the front.</p>
 <h3 id="the-jump-relation">The Jump Relation</h3>
-<p>Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde{n}$, the jump satisfies</p>
+<p>Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde U_{\mathrm n}$, the jump satisfies</p>
 <p>$$
-[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S,
+[\tilde U_{\mathrm n}\tilde{W}]_S = -[\tilde{P}]_S,
 $$</p>
 <p>where $\tilde{P}$ is the biquaternionic power–force density. This is the biquaternionic form of the <strong>Rankine–Hugoniot condition</strong> for electromagnetic shocks, and it is the counterpart of the standard conservation-law relation for fluid shocks.</p>
 <p>The physical content is the same as in the fluid case: the jump in the flux of energy–momentum across the shock is balanced by the work done by the medium on the field.</p>
@@ -344,8 +344,8 @@ $$</p>
 <td>d'Alembertian</td>
 </tr>
 <tr>
-<td>$\tilde{n}$</td>
-<td>Biquaternion-valued normal to the surface ($\vec u$ for spatial, $i\nu_t e_t + \vec u$ for general)</td>
+<td>$\tilde U_{\mathrm n}$</td>
+<td>Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $ict$ convention; the spatial case is the pure $\vec u$</td>
 </tr>
 <tr>
 <td>$[\tilde{F}]_S$</td>
