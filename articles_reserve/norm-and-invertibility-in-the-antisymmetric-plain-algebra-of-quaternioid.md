@@ -114,12 +114,12 @@ that a product carries is a nonzero central-valued map.
 
 *Proof.* The first identity is alternation, $\tilde x\times\tilde x=0$ for every $\tilde x$, by
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. For the second, the natural
-conjugate is $\tilde x^{\natural}=x_0e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and the value of the block on a pair is the cross
+conjugate is $\tilde x^{\natural}=x_0e_t-\vec x$, and the value of the block on a pair is the cross
 product of the vector parts, so
-$\tilde x\times\tilde x^{\natural}=(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\times(-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))=-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0$.
+$\tilde x\times\tilde x^{\natural}=\vec x\times(-\vec x)=-\vec x\times\vec x=0$.
 
 The vanishing is total: the block removes the scalar part of the parent, and with it the parent's
-central-valued form $N(\tilde x)=x_0^2+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$. What the block keeps is a pair of
+central-valued form $N(\tilde x)=x_0^2+\lvert\vec x\rvert^2$. What the block keeps is a pair of
 forms on the whole space, and the word *norm* is read here as the absent central-valued quadratic
 form, not as a norm on a space.
 
@@ -134,12 +134,12 @@ $\varphi(\tilde p,\tilde q)=p_0q_t$, the product of the two scalar parts.
 
 **Proposition (the operator trace form).** For all $\tilde a,\tilde b$,
 $K(\tilde a,\tilde b)=-2\,\vec a\cdot\vec b=-2\,(a_1b_1+a_2b_2+a_3b_3)$; on the diagonal
-$K(\tilde x,\tilde x)=-2\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$. The Gram matrix of $K$ in the basis is
+$K(\tilde x,\tilde x)=-2\lvert\vec x\rvert^2$. The Gram matrix of $K$ in the basis is
 $\operatorname{diag}(0,-2,-2,-2)$, the rank of $K$ is three, its radical is the centre
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$, and on the vector subspace $K$ is non-degenerate.
 
 *Proof.* The operator $L_{\tilde a}$ kills the scalar direction, its first column being zero, and acts
-on the vector part by $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\vec a\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so it is the block matrix
+on the vector part by $\vec x\mapsto\vec a\times\vec x$, so it is the block matrix
 $\operatorname{diag}(0,C_{\vec a})$ with $C_{\vec a}$ the cross-product matrix of $\vec a$.
 The composition is $\operatorname{diag}(0,C_{\vec a}C_{\vec b})$, of trace
 $\operatorname{Tr}(C_{\vec a}C_{\vec b})$, the scalar block contributing nothing. For
@@ -159,7 +159,7 @@ K\bigl(\tilde p\times\tilde x,\tilde q\bigr)+K\bigl(\tilde x,\tilde p\times\tild
 $$
 
 *Proof.* For $K$ the left equation reads
-$-2(\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))\cdot\vec q-2\,(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot(\vec p\times\vec q)=0$, the
+$-2(\vec p\times\vec x)\cdot\vec q-2\,\vec x\cdot(\vec p\times\vec q)=0$, the
 antisymmetry of the scalar triple product, the two terms being opposite. For $\varphi$ both terms
 vanish outright, because $\tilde p\times\tilde x$ is a pure vector and the scalar-part form is zero
 whenever one argument is central. The symmetry of $K$ is that of $\vec a\cdot\vec b$, and that
@@ -217,7 +217,7 @@ The antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec 
 on either side, hence no invertible element and an empty group of units: every value of the block is a
 pure vector, and the inverse equation $\tilde p\times\tilde q=e_t$ has no solution. The block has no
 algebraic norm, its square vanishing by alternation and its conjugated square
-$(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\times(-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$ vanishing too, so the central-valued parent norm is lost with the scalar
+$\vec x\times(-\vec x)$ vanishing too, so the central-valued parent norm is lost with the scalar
 part. What survives are two independent invariant symmetric forms, the operator trace form
 $K(\tilde a,\tilde b)=-2\,\vec a\cdot\vec b$, of Gram matrix
 $\operatorname{diag}(0,-2,-2,-2)$, rank three and radical the centre, which is the Killing form of the

@@ -66,10 +66,10 @@ The common cause is not an accident: the idempotent equation and the root of $+1
 **Remark (an element that is not an idempotent but has a projector).** The element $e_t$ is not an idempotent of the block, since $e_t\diamond e_t=0$; it is nevertheless the element whose left multiplication is a projector, because
 
 $$
-L_{e_t}\tilde x=e_t\diamond\tilde x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z , \qquad L_{e_t}^{2}=L_{e_t},
+L_{e_t}\tilde x=e_t\diamond\tilde x=\vec x , \qquad L_{e_t}^{2}=L_{e_t},
 $$
 
-the projection onto the vector subspace along the centre. The right multiplication is the negative of that projection, $\tilde x\diamond e_t=-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, and it is a projector as well up to the sign. The element and its operator are two different objects, and the block separates them: the element $e_t$ is not idempotent, while the operator $L_{e_t}$ is idempotent. The separation, the exact projector class of the block and the comparison with the other five are *The Specificities of the Antisymmetric Quaternionic Algebra*; what is recorded here is only that the idempotent equation of the block and the projector equation of its operators are not the same equation.
+the projection onto the vector subspace along the centre. The right multiplication is the negative of that projection, $\tilde x\diamond e_t=-\vec x$, and it is a projector as well up to the sign. The element and its operator are two different objects, and the block separates them: the element $e_t$ is not idempotent, while the operator $L_{e_t}$ is idempotent. The separation, the exact projector class of the block and the comparison with the other five are *The Specificities of the Antisymmetric Quaternionic Algebra*; what is recorded here is only that the idempotent equation of the block and the projector equation of its operators are not the same equation.
 
 ## Summary
 

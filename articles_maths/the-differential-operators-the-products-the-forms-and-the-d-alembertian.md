@@ -54,7 +54,7 @@ $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 $$
 
-whose tilde marks the operator and not a value (*Conventions in Mathematics*, §*The Gradient*; *Biquaternion Analysis*),
+whose tilde marks its scalar part beside its vector part (*Conventions in Mathematics*, §*The Gradient*; *Biquaternion Analysis*),
 with its quaternion conjugate $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and
 $\varepsilon=(1,-1,-1,-1)$. Write $\nabla=\sum_k\vec e_k\,\partial/\partial Q_k$ for the spatial gradient, with divergence
 $\nabla\cdot\vec F$ and curl $\nabla\times\vec F$, and

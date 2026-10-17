@@ -28,7 +28,7 @@ The word "information" is used in its physical, signal-theoretic sense: a signal
 An event is an element of the material sector,
 
 $$
-\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z, \qquad (x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = x\,\vec e_x + y\,\vec e_y + z\,\vec e_z,
+\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,
 $$
 
 with $t, x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde{Q} \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is

@@ -6,7 +6,7 @@ The relativistic particle is the simplest physical object the biquaternion frame
 
 Two facts from the algebra organize the whole account, and they are worth stating at the outset.
 
-**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, and the Minkowski interval of a displacement is the biquaternion norm
+**The interval is the biquaternion norm.** The material coordinate is the anti-Hermitian biquaternion $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z \in \mathbb{M}_-$, and the Minkowski interval of a displacement is the biquaternion norm
 
 $$
 \langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\,d\overline{\tilde{Q}} = (ic\,dt)^2 +dx^2+dy^2+dz^2 = -c^2dt^2 +dx^2+dy^2+dz^2 .

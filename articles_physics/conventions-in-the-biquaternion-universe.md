@@ -198,10 +198,9 @@ The glyphs a reader meets in every article are collected here, before the conjug
 
 The rows are the glyphs of the quaternion and biquaternion layers, gathered here because the conjugations of the next section are read on them.
 
-## The Conjugations and the Adjoint
+## The Conjugations
 
-The biquaternion algebra carries four natural involutions, all of them used in the series, together with
-the adjoint of an operator, which belongs to the operators and not to the algebra:
+The biquaternion algebra carries four natural involutions, all of them used in the series:
 
 | Map | Mark | What it is |
 |---|---|---|
@@ -209,7 +208,6 @@ the adjoint of an operator, which belongs to the operators and not to the algebr
 | Quaternion conjugation | ${}^{\natural}$ | The intrinsic conjugate: it fixes the scalars and negates the vectors |
 | Hermitian conjugation | ${}^{*}$ | The involution of the algebra, $\bar{\cdot}\circ{}^{\natural}$ |
 | Anti-Hermitian conjugation | ${}^{\flat} = -{}^{*}$ | The negative of the star |
-| Operator adjoint | ${}^{\dagger}$ | The adjoint of an operator, $(L_a)^{\dagger} = L_{a^{*}}$ |
 
 Which of the marks has a sense depends on the system, since a mark degenerates wherever the structure it conjugates is absent. The examples below fix it system by system.
 
@@ -234,10 +232,6 @@ $$
 $$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_te_t - \bar Q_x\vec e_x - \bar Q_y\vec e_y - \bar Q_z\vec e_z, \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$
-
-The dagger is the **general adjoint**. It is written on an operator and never on an element, and it is the same in every system. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. Where the adjoint in view is the obvious one, the text writes the two marks together, the dagger first and the star second, so that the coincidence is apparent on the page: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $\Theta_{\tilde Q}^{\dagger}=\Theta_{\tilde Q}^{*}=\Theta_{\tilde Q^{*}}$ (*One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
-
-**The mark is not a fifth conjugation.** The four conjugations of the algebra are the bar, the natural sign, the star and the flat; there is no other. An object that is also an operator — the left multiplication $L_a$, the right multiplication $R_a$, the sandwich $\operatorname{H}_{\tilde{Q}}$ — carries the dagger as that operator, and the mark then belongs to the operator and not to the element that generates it: $(L_a)^{\dagger}=L_{a^{*}}$, which is also $(L_a)^{*}$, the adjoint in view being the one of the definite form. Where a text writes a dagger on an element, the writing is an abuse, and the mark that was meant is the star, the Hermitian conjugation, or the natural sign, the quaternion conjugation, according to the conjugation in view. The series writes the elements with the four marks of the table and reserves the dagger for the general adjoint of the operators.
 
 **The biquaternion norm.** The natural sign carries the algebra's **biquaternion norm**,
 
@@ -601,6 +595,8 @@ The phase gate of the gate articles is a rotation about $\vec e_z$, a non-centra
 
 ## The Special Elements: Root, Idempotent and Nilpotent
 
+**The special glyphs are notational.** A root $\tilde\Xi$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.
+
 ### The Root Convention
 
 The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
@@ -624,8 +620,6 @@ The root glyph is therefore **split by the case rule**, and the split is the rea
 | $\tilde{\xi}$ | A root of $1$ of the quaternion or split-quaternion layer |
 | $\tilde{\Xi}$ | A root of $1$ of the biquaternion or split-biquaternion layer |
 
-The convention is one of **notation, not of substance**: an element written $\tilde{\Xi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be a root of $1$.
-
 ### The Idempotent Convention
 
 The convention of *The Elements and their Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
@@ -648,8 +642,6 @@ The idempotent glyph is therefore **split by the case rule**, and the split is t
 | $\Pi_\pm$ | An idempotent of the reduced biquaternion layer, in the mathematical corpus |
 | $\tilde{\pi}$ | An idempotent of the quaternion or split-quaternion layer, in the mathematical corpus |
 | $\tilde{\Pi}$ | An idempotent, a projector or a pure state of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates |
-
-The convention is one of **notation, not of substance**: an element written $\tilde{\Pi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be idempotent, and the glyph records that knowledge at the point of use; a passage that needs a generic idempotent variable writes $\tilde{\Pi}$.
 
 ### The Nilpotent Convention
 
@@ -678,8 +670,6 @@ The nilpotent glyph is therefore **split by the case rule**, and the split is th
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer |
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, and the minimal left ideal $\mathbb{B}\tilde{\Upsilon}$ it generates |
 | $\vec{\Upsilon}$, $\vec{\nu}$ | A pure nilpotent, written with the arrow and without the tilde by the priority rule of §*Pure Elements and their Coefficients* |
-
-The convention is one of **notation, not of substance**: an element written $\tilde{\nu}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be nilpotent.
 
 The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, the off-diagonal Peirce units of *Ideals and Peirce Decomposition of the Biquaternion Algebra* exchanged by the star. The truncated ladder of *The Biquaternion Vacuum as a Minimal Idempotent* and of the Fock, vacuum and matrix-representation articles is this pair: those articles write it $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$ wherever the algebra element is meant, and keep the ladder letters for the abstract operators.
 
@@ -756,6 +746,38 @@ On the units $\operatorname{Tr}(e_t) = 2$ and $\operatorname{Tr}(\vec e_k) = 0$,
 
 **A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_t$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
 
+**A matrix carries no tilde.** The tilde marks an element of the algebra, not its image. The identity is $I_n$, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_4(e_t)=I_4$, and the image of an element is written $\mathsf{M}_2(\tilde Q)$ or $\mathsf{M}_4(\tilde Q)$, with the tilde inside the argument. A matrix of biquaternions, whose entries are elements, is written $\tilde{\mathcal Q}$; the tilde there belongs to the entries and not to the array. The identity matrix never takes a tilde.
+
+## The Operators
+
+**An operator acting by multiplication is the element it multiplies by.** Every element acts on the algebra, on the left $L_{\tilde Q}$ or on the right $R_{\tilde Q}$, and an operator whose letter is the letter of an element **is** that element. The glyph of the operator is therefore the glyph of its element, and the marks are read on it as on the element: the tilde marks the quaternionic element read with its scalar part, the arrow the pure element read on its vector part alone. Neither mark says that a glyph is an operator, and no mark is added to say it.
+
+**The named operators.** The structural operators take an upright capital letter and carry the element in the subscript, where it keeps its own mark:
+
+| Operator | Glyph |
+|---|---|
+| left multiplication | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ |
+| right multiplication | $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ |
+| two-sided | $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A\tilde X\tilde B$ |
+| sandwich | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
+| inner derivation | $\operatorname{ad}_{\tilde A}(\tilde X)=[\tilde A,\tilde X]$ |
+| automorphism | $\operatorname{Ad}_{\tilde A}$ |
+
+The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.
+
+**The two marks on a glyph that is also an operator.** An operator read through its element follows the element rule in full.
+
+- A glyph read with its scalar part, four components: the tilde. The canonical momentum $\tilde p=p_te_t+\vec p$, the Legendre conjugate of $\tilde q$; the biquaternionic gradient $\tilde\nabla$ of §*The Gradient*; the gauge-covariant derivative $\tilde D$.
+- A pure glyph, three components: the arrow. The momentum operator $\vec p=-i\hbar\nabla=\vec e_kp_k$.
+
+The gradient decides the case cleanly: $\tilde\nabla$ is not pure, because its $e_t$ term carries $\partial/\partial Q_t$, while $\nabla=\vec e_k\,\partial/\partial Q_k$ is pure and keeps the fixed glyph of §*The Gradient*, which carries no second mark.
+
+**The case follows the layer.** The arrow does not change the case: a pure operator of the quaternion layer stays lower case, $\vec p$, and one of the biquaternion layer takes the upper case, $\vec P$. Where the letter already names another object of the layer, a subscript fixes the operator, $\vec P_{\mathrm{op}}$, or the explicit form $-i\hbar\vec\nabla$ is used. The three-momentum and the momentum operator share $\vec p$, as an eigenvalue and its operator do.
+
+**The dagger.** The dagger is the general adjoint of an operator, never of an element: $(L_a)^{\dagger}=L_{a^{*}}$. Several adjoints arise at once — one for each form, and one for each of the sandwiches — and the dagger is the mark that covers them all, of which the others are the instances. It is not a fifth conjugation: it belongs to the operators and not to the algebra. Where a dagger is written on an element the writing is an abuse: the mark that was meant is the star for the Hermitian conjugation, or the natural sign for the quaternion conjugation, according to the conjugation in view. The dagger is added to the glyph and does not replace the element's mark: the arrow states purity, which the adjoint preserves, so $\vec p^{\dagger}$ is again a pure operator; the tilde states a glyph read with its scalar part, which the adjoint also preserves, so $\tilde\nabla$ keeps its tilde. Where the adjoint in view is the one of the definite form, the two marks are written together, dagger first: $(L_a)^{\dagger}=(L_a)^{*}=L_{a^{*}}$ and $\tilde\nabla^{\dagger}=\tilde\nabla^{*}=\tilde\nabla^{\natural}$.
+
+**The Fock exception.** A Fock operator is not an element of the algebra; its superscript $\mathrm{fop}$ and the order of the two marks are fixed in §*The Superscripts*.
+
 ## Conventions for Derivation
 
 In this work, subscripts denote vector components, not partial derivatives as in the PDE convention; every partial derivative is written explicitly with $\partial$ followed by its variable, and no subscript is ever attached to the $\partial$. A subscript is therefore a component index, as in $v_x$ for the component of a velocity along an axis, or a label, as in $\tilde U_{\mathrm r}$; it never denotes a derivative. The derivative with respect to a coordinate is written $\partial/\partial Q_\mu$, and in a fixed direction $\partial/\partial Q_t$, $\partial/\partial Q_x$, $\partial/\partial Q_y$ or $\partial/\partial Q_z$; a coordinate is never left under the $\partial$, so none of the abbreviated spellings occurs, and the rule admits no exception, neither on a free index nor on any other. A derivative with respect to a variable that is not a coordinate is written the same way, its variable named in full: the Lagrangian derivative puts the function in the numerator, $\partial L/\partial u$, so that where a PDE text writes $L_u$ and $L_p$ the corpus writes $\partial L/\partial u$ and $\partial L/\partial p$; the second derivative has the same shape, $\partial^2 L/\partial u^2$. The function is named in the numerator whenever it is a letter of its own, as for a Lagrangian, a Hamiltonian or a generating function; the slashed form $\partial/\partial u$ is kept where the symbol is an operator or where the operand is a compound expression rather than a single letter. The time derivative $\partial/\partial Q_t$ is the imaginary-time derivative: on the material sector, where $Q_t=ict$, it equals $-\frac{i}{c}\,\partial/\partial t$, and $t$ is not one of the coordinates, so the real-time partial derivative is written out as $\partial/\partial t$. The rule holds on every object of the series, whether the letter names an element of the algebra, an element-valued field, a kernel or an operator.
@@ -784,7 +806,7 @@ $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu}=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
 $$
 
-whose tilde marks the operator and not a value, with its **quaternion conjugate**, the involution of the norm,
+whose tilde marks its scalar part beside its vector part, with its **quaternion conjugate**, the involution of the norm,
 
 $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu}
@@ -995,7 +1017,7 @@ $$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
 $$
 
-is the **anti-Hermitian conjugation**, the negative of the star, and the algebra's **real structure** (§*The Conjugations and the Adjoint*). The sign convention on the two sectors is what makes $\mathbb{M}_-$ the material sector, and $\flat$'s fixed space is that sector (§*The Remarkable Subspaces*).
+is the **anti-Hermitian conjugation**, the negative of the star, and the algebra's **real structure** (§*The Conjugations*). The sign convention on the two sectors is what makes $\mathbb{M}_-$ the material sector, and $\flat$'s fixed space is that sector (§*The Remarkable Subspaces*).
 
 ### What $\flat$ Is For
 
@@ -1018,17 +1040,15 @@ Two superscript tokens run beside the marks of the elements and the marks of the
 | $^{\mathrm{fop}}$ | a Fock-operator glyph | an operator on the Fock space, the Fock-operator mark |
 | $^{\mathrm{opp}}$ | an algebra name | the opposite algebra, the algebra with the reversed product |
 
-The tilde and the arrow are marks of the **elements**: the tilde the quaternionic factor, the arrow the vector part of a named element and a pure element read on its own. None of them says that a glyph is an operator, and no mark is needed to say it, because on this algebra **an operator is a multiplication by an element**. Every element acts on the algebra, on the left $L_{\tilde Q}$ or on the right $R_{\tilde Q}$, so an operator whose letter is the letter of an element **is** that element and keeps the element's glyph. The Hamiltonian $H$, the number $N$, the momentum $p$, the position $x$, the spin $S$ and the boosts $S_x,S_y,S_z,S_t$ of the chiral article are elements acting by multiplication and are written with **no mark**; so are the structural operators, the left and right multiplications $L_{\tilde Q}$ and $R_{\tilde Q}$, the sandwich $\operatorname{H}_{\tilde Q}$, the derivations, the automorphisms, and the rotation rotor $\tilde u$, an element of $Sp(1)$ and an operator only through its action.
-
-**The mark, and its one use.** The single exception is the **Fock layer**, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:
+**The mark, and its one use.** The marks of the elements say what a glyph **is**, not that it is an **operator** (§*The Operators*). The single exception is the **Fock layer**, whose operators act on a Fock space and are **not** elements of the algebra. Only these carry the upright superscript $\mathrm{fop}$, set on the glyph and read as part of it:
 
 $$
 a^{\mathrm{fop}},\quad b^{\mathrm{fop}},\quad a^{\mathrm{fop}\dagger},\quad b^{\mathrm{fop}\dagger},\quad \psi^{\mathrm{fop}},\quad N^{\mathrm{fop}},\quad H^{\mathrm{fop}},\quad F^{\mathrm{fop}},\quad Ϙ^{\mathrm{fop}},\quad U^{\mathrm{fop}} .
 $$
 
-The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $p=-i\hbar\nabla$ is written $p$ and never $p^{\mathrm{fop}}$, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_k=\tfrac{\hbar}{2}\sigma_k$ is written $S_k$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no mark. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the mark, $a^{\mathrm{fop}}$.
+The mark says exactly one thing — the glyph is not an element, it is an operator on the Fock space — and it is written on nothing else. It is not a general mark of operators: the momentum $\vec p=-i\hbar\nabla$ keeps its element glyph and never takes the Fock mark, the quadratures $x$ and $p$ of the oscillator are written $x$ and $p$, the spin $S_k=\tfrac{\hbar}{2}\sigma_k$ is written $S_k$, and the parity, charge-conjugation and time-reversal maps $P$, $C$ and $T$ carry no mark. Where a ladder is meant as an element of the algebra it is written with the element's glyph, the truncated pair $\vec\Upsilon_1,\vec\Upsilon_2$, and the abstract ladder operator keeps the mark, $a^{\mathrm{fop}}$.
 
-**It combines with the dagger, the mark first.** The dagger is the general adjoint (§*The Conjugations and the Adjoint*); the superscript marks the Fock operator. Where both are written on the same glyph, the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$. The dagger alone never says that its glyph is an operator, and the superscript alone never says that the Fock operator is self-adjoint; the two are read together, so that $a^{\mathrm{fop}\dagger}$ is the adjoint of the ladder and $N^{\mathrm{fop}}$ is written without an adjoint because it is self-adjoint.
+**It combines with the dagger, the mark first.** The dagger is the general adjoint (§*The Operators*); the superscript marks the Fock operator. Where both are written on the same glyph, the Fock mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$. The dagger alone never says that its glyph is an operator, and the superscript alone never says that the Fock operator is self-adjoint; the two are read together, so that $a^{\mathrm{fop}\dagger}$ is the adjoint of the ladder and $N^{\mathrm{fop}}$ is written without an adjoint because it is self-adjoint.
 
 **The opposite algebra carries a different token.** The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an **algebra name**, where the Fock mark is written on a **Fock-operator glyph**. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.
 

@@ -139,8 +139,8 @@ $N(\lambda e_t,\tilde x)=\lambda x_0$, so its annihilator is $\{x_0=0\}$, the ve
 centre is therefore the subspace whose nonzero elements annihilate exactly the vector subspace.
 
 **The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has
-$N(\vec p,\tilde x)=(\vec p,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so its annihilator is the hyperplane
-$\{\tilde x:(\vec p,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0\}$. It contains the centre and, inside the vector subspace, the
+$N(\vec p,\tilde x)=(\vec p,\vec x)$, so its annihilator is the hyperplane
+$\{\tilde x:(\vec p,\vec x)=0\}$. It contains the centre and, inside the vector subspace, the
 real plane orthogonal to $\vec p$; the element $\vec p$ never lies in the annihilator,
 because $(\vec p,\vec p)>0$ for $\vec p\neq0$. On the vector subspace the annihilator
 meets the subspace in a plane, of dimension two, and the missing dimension is the scalar one.

@@ -6,7 +6,7 @@ In the symmetric quaternionic block the square of an element is a scalar multipl
 multiple is the quaternion form:
 
 $$
-\tilde x\star\tilde x=N(\tilde x)e_t=\bigl(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\bigr)e_t .
+\tilde x\star\tilde x=N(\tilde x)e_t=\bigl(x_0^{2}+|\vec x|^{2}\bigr)e_t .
 $$
 
 This article reads the two classes of element that the squaring map of the block keeps or returns: the
@@ -26,8 +26,8 @@ its coefficient are *Introduction to the Symmetric Quaternionic Algebra of Quate
 
 **The results.** The roots of $+e_t$ in the block are the elements of the level set $N=1$, the unit
 sphere $\mathrm{Sp}(1)$ of the quaternion algebra, of real dimension three; they contain the central
-pair $\pm e_t$, the units $\vec e_x,\vec e_y,\vec e_z$ and their negatives, and every element $x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with
-$x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}=1$, and they are the orbit of $e_t$ under the group $\mathrm{Sp}(1)$ of the
+pair $\pm e_t$, the units $\vec e_x,\vec e_y,\vec e_z$ and their negatives, and every element $x_0e_t+\vec x$ with
+$x_0^{2}+|\vec x|^{2}=1$, and they are the orbit of $e_t$ under the group $\mathrm{Sp}(1)$ of the
 parent plain product. The idempotents of the block are $0$ and $e_t$ alone, and the block has no
 non-trivial idempotent. The two sets are not related by the halving map that carries the roots of $+1$
 onto the idempotents of the parent: the map $\tilde\xi\mapsto\tfrac12(e_t+\tilde\xi)$ produces an
@@ -53,12 +53,12 @@ its namesake, which records the same pair $\{0,e_t\}$ for the block over $\mathb
 continuum in the parent.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with
-$x=x_1$, $y=x_2$, $z=x_3$. The **quaternion conjugation** is
-$\tilde x^{\natural}=x_0e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; on $\mathbb{R}$ the bar is the identity and the star coincides
+$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+\vec x$, with
+$\vec x=x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$. The **quaternion conjugation** is
+$\tilde x^{\natural}=x_0e_t-\vec x$; on $\mathbb{R}$ the bar is the identity and the star coincides
 with the natural sign ${}^{\natural}$. The **quaternion form** is
 $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$, with diagonal
-$N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}=(x_0,x_1,x_2,x_3)\cdot(x_0,x_1,x_2,x_3)$, and the **symmetric
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}=(x_0,x_1,x_2,x_3)\cdot(x_0,x_1,x_2,x_3)$, and the **symmetric
 quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$. The centre is the scalar line
 $\mathbb{R}e_t$ and the vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. A
@@ -88,7 +88,7 @@ gives the stated identity.
 $e_t$, and the only element whose square vanishes is the origin: the map
 $\tilde x\mapsto N(\tilde x)$ is a sum of four squares.
 
-*Proof.* $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\geq0$, and a sum of squares vanishes only when every
+*Proof.* $N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq0$, and a sum of squares vanishes only when every
 coordinate vanishes.
 
 **Theorem (the reduction of the root equation).** Let $\lambda$ be real. The equation
@@ -125,13 +125,13 @@ minus one. The set is stable under the plain product by the multiplicativity
 $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$, so it is the group of unit quaternions.
 
 **Corollary (the members of the class).** The root set contains the two central roots $\pm e_t$, the
-three units $\vec e_x,\vec e_y,\vec e_z$ and their negatives, and every element $x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with
-$x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}=1$; read over the vector part, it is the two graphs
-$x_0=\pm\sqrt{1-|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}}$ over the set $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|\leq1$ of the vector subspace.
+three units $\vec e_x,\vec e_y,\vec e_z$ and their negatives, and every element $x_0e_t+\vec x$ with
+$x_0^{2}+|\vec x|^{2}=1$; read over the vector part, it is the two graphs
+$x_0=\pm\sqrt{1-|\vec x|^{2}}$ over the set $|\vec x|\leq1$ of the vector subspace.
 
 *Proof.* $N(e_t)=N(\vec e_k)=1$ for the four units, and $N(-\tilde x)=N(\tilde x)$ for the sign; the
 displayed elements are exactly the elements with $N(\tilde x)=1$, and solving for $x_0$ gives the two
-graphs, which meet at the set $|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|=1$ of the vector subspace.
+graphs, which meet at the set $|\vec x|=1$ of the vector subspace.
 
 **Remark (the root set is the unit group of the parent, not a group of the block).** The level set
 $\{N=1\}$ is the group $\mathrm{Sp}(1)$ of unit quaternions under the plain product of $\mathbb{H}$, of
@@ -145,7 +145,7 @@ product $\star$.
 **Corollary (the roots of $+e_t$ as an orbit).** The root set of $+e_t$ is the orbit of the canonical
 root $e_t$ under multiplication by the unit quaternions in the parent plain product: every root is
 $\tilde\xi=\tilde u$ with $\tilde u\in\mathrm{Sp}(1)$, and the three coordinates of the vector part of
-$\tilde u$, subject to $x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}=1$, are the three free parameters of the solution.
+$\tilde u$, subject to $x_0^{2}+|\vec x|^{2}=1$, are the three free parameters of the solution.
 
 *Proof.* The root set is $\{N=1\}=\mathrm{Sp}(1)$, and $\tilde u\cdot e_t=\tilde u$ in the parent plain
 product, so the orbit is the whole set; the parameters are the coordinates of the vector part, with the
@@ -189,9 +189,9 @@ no two-sided unit, so the complement and a complete orthogonal system are not av
 $\tilde\pi\star\tilde\pi=\tilde\pi$ if and only if $\tilde\pi\in\{0,e_t\}$.
 
 *Proof.* The square of the block is
-$\tilde\pi\star\tilde\pi=N(\tilde\pi)e_t=(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2})e_t$, while
-$\tilde\pi=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; the equality of the two elements forces the vector part of the right-hand
-side to vanish, hence $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=0$, and then the scalar equation $x_0^{2}=x_0$, whose solutions are
+$\tilde\pi\star\tilde\pi=N(\tilde\pi)e_t=(x_0^{2}+|\vec x|^{2})e_t$, while
+$\tilde\pi=x_0e_t+\vec x$; the equality of the two elements forces the vector part of the right-hand
+side to vanish, hence $\vec x=0$, and then the scalar equation $x_0^{2}=x_0$, whose solutions are
 $x_0=0$ and $x_0=1$. Both values are idempotents: $0\star0=0$ and
 $e_t\star e_t=N(e_t)e_t=e_t$.
 
@@ -338,7 +338,7 @@ orthogonality that the parent's theory uses require the unit that the block does
 | symbol | meaning |
 |---|---|
 | $\tilde x\star\tilde x=N(\tilde x)e_t$ | the square of the block, always central |
-| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the definite quaternion form, the coefficient of the square |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite quaternion form, the coefficient of the square |
 | $\{\tilde\xi:\tilde\xi\star\tilde\xi=e_t\}=\{N=1\}=\mathrm{Sp}(1)$ | the roots of $+e_t$, the unit sphere of real dimension three |
 | $\tilde\xi=\tilde u$, $\tilde u\in\mathrm{Sp}(1)$ | the roots of $+e_t$ as an orbit, with three free parameters |
 | $\{\tilde\xi:\tilde\xi\star\tilde\xi=-e_t\}=\varnothing$ | the roots of $-e_t$, empty by definiteness |

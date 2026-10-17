@@ -117,7 +117,7 @@ so the sandwich operator of $Q_{\pm,1}\otimes Q_{\pm,2}^{\mathrm{opp}}$ is the l
 
 **Theorem (no derivations).** Every derivation of $\mathbb{B}_{\mathrm{r}}$ into itself is zero.
 
-*Proof.* A derivation satisfies $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$. Evaluating on the idempotents, $D(\Pi_{i})=D(\Pi_{i}^{2})=2\Pi_{i}D(\Pi_{i})$, so $(2\Pi_{i}-1)D(\Pi_{i})=0$; but $2\Pi_{i}-1=\pm j$, a unit, so $D(\Pi_{i})=0$ for $i\in\{+,-\}$. A derivation vanishing on the spanning set $1,\Pi_+,\Pi_-$ is zero.
+*Proof.* A derivation satisfies $D(1)=D(1\cdot1)=2D(1)$, so $D(1)=0$. Evaluating on the idempotents, $D(\Pi_\pm)=D(\Pi_\pm^{2})=2\Pi_\pm D(\Pi_\pm)$, so $(2\Pi_\pm-1)D(\Pi_\pm)=0$; but $2\Pi_\pm-1=\pm j$, a unit, so $D(\Pi_\pm)=0$. A derivation vanishing on the spanning set $1,\Pi_+,\Pi_-$ is zero.
 
 **Corollary (no inner derivations).** Because the algebra is commutative every inner derivation vanishes, $\mathrm{ad}_{Q_{\pm,2}}(Q_{\pm,1})=Q_{\pm,2}Q_{\pm,1}-Q_{\pm,1} Q_{\pm,2}=0$; the identification of $\mathrm{ad}$ with the zero map is the whole of the derivation algebra, and the theorem shows there is nothing else either.
 

@@ -65,7 +65,7 @@ a map $\mathbb{B}_{\mathrm{r}}\to\mathbb{C}\times\mathbb{C}$.
 
 **Theorem.** $\iota$ is an isomorphism of $\mathbb{C}$-algebras onto $\mathbb{C}\times\mathbb{C}$: it is $\mathbb{C}$-linear, bijective, $\iota(1)=(1,1)$, and $\iota(Q_{\pm,1}Q_{\pm,2})=(Q_{1++}Q_{2++},\,Q_{1--}Q_{2--})=\iota(Q_{\pm,1})\iota(Q_{\pm,2})$, where $Q_{i++}$ and $Q_{i--}$ are the two coordinates of $Q_{\pm,i}$.
 
-*Proof.* The map is linear; it is bijective because every pair $(Q_{++},Q_{--})$ is the image of $Q_\pm=\tfrac12\bigl((Q_{++}+Q_{--})+(Q_{++}-Q_{--})j\bigr)$; and the product is componentwise because the idempotents satisfy $\Pi_{i}\Pi_{j}=\delta_{ij}\Pi_{i}$.
+*Proof.* The map is linear; it is bijective because every pair $(Q_{++},Q_{--})$ is the image of $Q_\pm=\tfrac12\bigl((Q_{++}+Q_{--})+(Q_{++}-Q_{--})j\bigr)$; and the product is componentwise because the idempotents satisfy $\Pi_+\Pi_-=0$ and $\Pi_\pm^{2}=\Pi_\pm$.
 
 **Corollary (the two characters are its coordinates).** The two coordinates of $\iota$ are the two characters $\lambda_+(Q_\pm)=Q_{++}$ and $\lambda_-(Q_\pm)=Q_{--}$ of *Introduction to Reduced Biquaternion Element Representations*; the idempotent-coordinate representation is the representation in which the algebra is the visible direct product, and every other representation of the block is this one in another alphabet.
 

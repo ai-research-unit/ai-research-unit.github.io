@@ -89,7 +89,7 @@ and the kernel is all of $\mathbb{H}$.
 is annihilated, $\tilde p\in A_\diamond(\tilde p)$, by alternation; for a nonzero element the
 annihilator is exactly the line that $\tilde p$ spans.
 
-**Example.** At the scalar unit $e_t$ the operator is $L_{e_t}\tilde x=x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, which vanishes
+**Example.** At the scalar unit $e_t$ the operator is $L_{e_t}\tilde x=\vec x$, which vanishes
 exactly on the centre $\mathbb{R}e_t$, of real dimension one. At a nonzero pure element $\vec p$
 the annihilator is the line $\mathbb{R}\vec p$, inside the vector subspace. The real block has
 no isotropic vector, so the line is the only value the annihilator takes away from the origin.
@@ -179,12 +179,12 @@ for every element of the subspace; the kernel of the restricted operator is the 
 ambient kernel with the subspace.
 
 **The centre.** A nonzero central element $\tilde p=\lambda e_t$ has
-$L_{\lambda e_t}\tilde x=\lambda(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the scalar multiple of the projection onto the vector
+$L_{\lambda e_t}\tilde x=\lambda\vec x$, the scalar multiple of the projection onto the vector
 subspace, so its annihilator is the centre $\mathbb{R}e_t$: the central elements annihilate the
 centre alone.
 
 **The vector subspace.** On the vector subspace, where $p_0=0$ and $\tilde x$ is pure, the
-operation is the negative cross product $\tilde p\diamond\tilde x=-\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The
+operation is the negative cross product $\tilde p\diamond\tilde x=-\vec p\times\vec x$. The
 annihilator of a nonzero pure element meets the vector subspace in the line $\mathbb{R}\vec p$
 and is that line in the ambient space; the plane $\mathbb{R}e_t\oplus\mathbb{R}\vec p$ of the
 plain twin, which would add the centre, does not occur here.

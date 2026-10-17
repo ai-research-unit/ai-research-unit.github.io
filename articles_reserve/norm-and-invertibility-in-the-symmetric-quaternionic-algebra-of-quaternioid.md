@@ -25,12 +25,12 @@ The two definitions of the algebra are quoted, and the rest of the article is th
 **Proposition (the norm is the diagonal).** For every $\tilde x$ the square of the block is the central element
 
 $$
-\tilde x\star\tilde x=N(\tilde x)e_t,\qquad N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2},
+\tilde x\star\tilde x=N(\tilde x)e_t,\qquad N(\tilde x)=x_0^{2}+|\vec x|^{2},
 $$
 
 so the algebraic norm of the block is the definite quaternion form $N$.
 
-*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_t$ by the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, and $N(\tilde x,\tilde x)=x_0^{2}+(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\cdot(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=N(\tilde x)$.
+*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_t$ by the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, and $N(\tilde x,\tilde x)=x_0^{2}+\vec x\cdot\vec x=N(\tilde x)$.
 
 **Theorem (the algebraic norm is the multiplicative form of the plain product).** The algebraic norm of the block is the quaternion norm of the algebra,
 
@@ -46,7 +46,7 @@ $$
 
 The form is positive definite, of Gram matrix $I_4$, of rank $4$, with radical $\{0\}$.
 
-*Proof.* The identity $\tilde q\tilde q^{\natural}=N(\tilde q)e_t$, the multiplicativity and the inverse criterion are *Norm and Invertibility in the General Plain Algebra*, where the quaternion norm is owned, and the identification with the quaternion algebraic norm $N_Q$ is *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*; the polarisation is the expansion of $\tilde p\star\tilde p=N(\tilde p)e_t$ at $\tilde p+\tilde q$ by bilinearity; and the Gram matrix and the definiteness are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, where $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ and $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ is a sum of four squares vanishing only at the origin.
+*Proof.* The identity $\tilde q\tilde q^{\natural}=N(\tilde q)e_t$, the multiplicativity and the inverse criterion are *Norm and Invertibility in the General Plain Algebra*, where the quaternion norm is owned, and the identification with the quaternion algebraic norm $N_Q$ is *The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space*; the polarisation is the expansion of $\tilde p\star\tilde p=N(\tilde p)e_t$ at $\tilde p+\tilde q$ by bilinearity; and the Gram matrix and the definiteness are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, where $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ is a sum of four squares vanishing only at the origin.
 
 **Theorem (the norm is not multiplicative for the block).** For the product of the block the norm is the square of the coefficient,
 
@@ -123,7 +123,7 @@ $$
 
 ## Summary
 
-The symmetric quaternionic block reads its algebraic norm on its diagonal: the norm is the quaternion form $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$, positive definite of Gram matrix $I_4$ and radical $\{0\}$, and it is the same form that the plain product carries as its multiplicative norm, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$. For the block the form is not multiplicative, $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$, with the witness $(\vec e_x,\vec e_y)$ giving $0$ against $1$. The block has no unit, no one-sided unit, no inverse and no group of units; the element $e_t$ is a unit of the central line alone, and the equation $\tilde A\star\tilde X=e_t$ is solvable for $\tilde A\neq0$ without producing an inverse. The non-isotropic class is the whole punctured space, which is exactly the group of units of the plain product with the inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$, and the isotropic class is the origin alone.
+The symmetric quaternionic block reads its algebraic norm on its diagonal: the norm is the quaternion form $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, positive definite of Gram matrix $I_4$ and radical $\{0\}$, and it is the same form that the plain product carries as its multiplicative norm, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$. For the block the form is not multiplicative, $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$, with the witness $(\vec e_x,\vec e_y)$ giving $0$ against $1$. The block has no unit, no one-sided unit, no inverse and no group of units; the element $e_t$ is a unit of the central line alone, and the equation $\tilde A\star\tilde X=e_t$ is solvable for $\tilde A\neq0$ without producing an inverse. The non-isotropic class is the whole punctured space, which is exactly the group of units of the plain product with the inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$, and the isotropic class is the origin alone.
 
 ## Summary of Notation
 

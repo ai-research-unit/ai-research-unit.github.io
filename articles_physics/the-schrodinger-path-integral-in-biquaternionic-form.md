@@ -114,11 +114,11 @@ $$
 \exp\left[\frac{i}{\hbar}\sum_{k=0}^{N-1}\left(\frac{m|x_{k+1}\,\vec e_x+y_{k+1}\,\vec e_y+z_{k+1}\,\vec e_z-(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x_k\,\vec e_x+y_k\,\vec e_y+z_k\,\vec e_z)\right)\right]e_t,
 $$
 
-with $\varepsilon=t/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]=\int_0^t L\,dt'$ and the multiple integral becomes the formal path integral
+with $\varepsilon=t/N$, $(x_0,y_0,z_0)=(x_i,y_i,z_i)$, $(x_N,y_N,z_N)=(x_f,y_f,z_f)$. In the continuum limit the sum in the exponent becomes the action $S[x,y,z]=\int_0^t L\,dt'$ and the multiple integral becomes the formal path integral
 
 $$
 \tilde K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,0)
-=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\;\exp(\,iS[x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]/\hbar)\,e_t .
+=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\;\exp(\,iS[x,y,z]/\hbar)\,e_t .
 $$
 
 The measure $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ is defined by the limit above; it is the product of the position integrations, including the Gaussian normalisation factors. The kernel is central term by term, hence in the limit: the path integral for a spin-0 particle is a complex scalar, and the module factor is untouched. The measure is not supplied by the algebra — the paths are trajectories in the material sector's configuration space, and the algebra labels their endpoints and supplies the phase — and this is one of the gaps the companion article records.
@@ -325,7 +325,7 @@ $$
 \exp\left[\frac{i}{\hbar}\left(\frac{m|x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)|^2}{2\varepsilon}-\varepsilon V(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\right)\right]e_t+O(\varepsilon^2),
 $$
 
-and the Trotter product of these kernels gives the sum over paths $\tilde K=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\,\exp(iS[x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]/\hbar)e_t$.
+and the Trotter product of these kernels gives the sum over paths $\tilde K=\int\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z\,\exp(iS[x,y,z]/\hbar)e_t$.
 
 The free kernel is $K_0=(m/2\pi i\hbar t)^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t)$, with the composition law verified on a two-packet superposition to a relative error of order $10^{-14}$. The harmonic-oscillator kernel is
 
@@ -353,7 +353,7 @@ The semiclassical limit of the path integral is the van Vleck kernel $K\approx(2
 | $\tilde K(x_f\,\vec e_x+y_f\,\vec e_y+z_f\,\vec e_z,t_f;x_i\,\vec e_x+y_i\,\vec e_y+z_i\,\vec e_z,t_i)=Ke_t$ | Position kernel; central |
 | $\tilde K_\varepsilon(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | Short-time kernel; phase $=\frac{i}{\hbar}(L\varepsilon)$ |
 | $\mathcal{D}x\,\mathcal{D}y\,\mathcal{D}z$ | Path-integral measure; defined by the Trotter limit |
-| $S[x\,\vec e_x+y\,\vec e_y+z\,\vec e_z]=\int L\,dt$ | Action; real scalar |
+| $S[x,y,z]=\int L\,dt$ | Action; real scalar |
 | $K_0=(m/2\pi i\hbar t)^{3/2}\exp(im|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^2/2\hbar t)$ | Free kernel |
 | $K_\omega$ | Oscillator kernel; poles at $\omega t=n\pi$ |
 | $S_{\mathrm{cl}}=\frac{m\omega}{2\sin\omega t}[(x^2+x_0^2)\cos\omega t-2xx_0]$ | Oscillator classical action |

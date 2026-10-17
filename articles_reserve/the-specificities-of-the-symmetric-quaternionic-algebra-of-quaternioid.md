@@ -6,7 +6,7 @@ This article collects the properties that single the symmetric quaternionic alge
 
 **Boundaries.** The product and its laws are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Algebra*, above this article in this category; the roots of a central value are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*, above this article in this category; the definitions are *Definitions for the Study of the Algebraic Structures over the Quaternioid $\mathbb{R}$ Space*; the form and its definiteness are *The 2 Forms over the Quaternioid $\mathbb{R}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=\sum_kx_k\vec e_k$. The **quaternion conjugation** is $\tilde x^{\natural}=x_0e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ and $N(\tilde x)=N(\tilde x,\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+\vec x$ with $\vec x=\sum_kx_k\vec e_k$. The **quaternion conjugation** is $\tilde x^{\natural}=x_0e_t-\vec x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ and $N(\tilde x)=N(\tilde x,\tilde x)=x_0^{2}+|\vec x|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$.
 
 ## The Scalar Law
 
@@ -26,7 +26,7 @@ $$
 **Theorem (definiteness).** The coefficient of the block is positive definite:
 
 $$
-N(\tilde x,\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\geq0,\qquad N(\tilde x,\tilde x)=0\iff\tilde x=0 .
+N(\tilde x,\tilde x)=x_0^{2}+|\vec x|^{2}\geq0,\qquad N(\tilde x,\tilde x)=0\iff\tilde x=0 .
 $$
 
 Equivalently, the form is anisotropic: it has no nonzero isotropic element, and its radical is $\{0\}$.
@@ -51,9 +51,9 @@ Equivalently, the form is anisotropic: it has no nonzero isotropic element, and 
 
 **Theorem (the idempotents).** An element $\tilde x$ satisfies $\tilde x\star\tilde x=\tilde x$ if and only if $\tilde x\in\{0,e_t\}$.
 
-*Proof.* The square is $N(\tilde x)e_t=(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2})e_t$, while $\tilde x=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$; equality forces the vector part of $\tilde x$ to vanish, $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=0$, and then $x_0^{2}=x_0$, whose solutions are $x_0=0$ and $x_0=1$. So the idempotents are $0$ and $e_t$.
+*Proof.* The square is $N(\tilde x)e_t=(x_0^{2}+|\vec x|^{2})e_t$, while $\tilde x=x_0e_t+\vec x$; equality forces the vector part of $\tilde x$ to vanish, $\vec x=0$, and then $x_0^{2}=x_0$, whose solutions are $x_0=0$ and $x_0=1$. So the idempotents are $0$ and $e_t$.
 
-**Remark (the idempotents are the central ones, and only those).** The block has no idempotent in the vector subspace and none off the centre; the reduction $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z=0$ in the proof is the entire restriction of the block to the diagonal of the quaternionic row. The companion plain block has the same two idempotents but reaches them with a different computation (*The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*).
+**Remark (the idempotents are the central ones, and only those).** The block has no idempotent in the vector subspace and none off the centre; the reduction $\vec x=0$ in the proof is the entire restriction of the block to the diagonal of the quaternionic row. The companion plain block has the same two idempotents but reaches them with a different computation (*The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*).
 
 ## The Nilpotents and the Square-Zero Elements
 
@@ -69,7 +69,7 @@ $$
 
 **Theorem (the nilpotents and their index).** An element $\tilde x$ is a nilpotent of the block if and only if $\tilde x$ is pure, that is $x_0=0$; and every nonzero pure element has index three. The only element whose square vanishes is $0$.
 
-*Proof.* By the powers formula, $\tilde x^{\star3}=N(\tilde x)x_0e_t$. If $x_0=0$ then the cube vanishes; a pure nonzero element has $N(\tilde x)=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\neq0$, so its square is $N(\tilde x)e_t\neq0$ and it is not square-zero, and its index is exactly three. If $x_0\neq0$, then $N(\tilde x)x_0\neq0$, because $N(\tilde x)\geq|x_0|^{2}>0$, so the cube is nonzero and, by the formula, every higher power is nonzero; the element is not nilpotent. The square vanishes only when $N(\tilde x)=0$, that is only at $\tilde x=0$, by definiteness.
+*Proof.* By the powers formula, $\tilde x^{\star3}=N(\tilde x)x_0e_t$. If $x_0=0$ then the cube vanishes; a pure nonzero element has $N(\tilde x)=|\vec x|^{2}\neq0$, so its square is $N(\tilde x)e_t\neq0$ and it is not square-zero, and its index is exactly three. If $x_0\neq0$, then $N(\tilde x)x_0\neq0$, because $N(\tilde x)\geq|x_0|^{2}>0$, so the cube is nonzero and, by the formula, every higher power is nonzero; the element is not nilpotent. The square vanishes only when $N(\tilde x)=0$, that is only at $\tilde x=0$, by definiteness.
 
 **Corollary (the two classes).** The nilpotent set of the block is the vector subspace,
 
@@ -102,7 +102,7 @@ The symmetric quaternionic block is commutative with central values $\tilde p\st
 | symbol | meaning |
 |---|---|
 | $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$ | the product; values in the scalar line |
-| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the definite coefficient; anisotropic, radical $\{0\}$ |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite coefficient; anisotropic, radical $\{0\}$ |
 | $\{0,e_t\}$ | the idempotents |
 | $\operatorname{Im}\mathbb{H}=\{\tilde x:x_0=0\}$ | the nilpotents; each nonzero one has index three |
 | $\{0\}$ | the square-zero elements |

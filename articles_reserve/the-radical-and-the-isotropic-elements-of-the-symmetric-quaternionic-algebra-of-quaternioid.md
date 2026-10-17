@@ -40,7 +40,7 @@ $$
 \{\tilde x:\tilde x\star\tilde x=0\}=\{0\}.
 $$
 
-*Proof.* The square is $N(\tilde x)e_t=(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2})e_t$, a sum of squares; it vanishes exactly when every coordinate of $\tilde x$ vanishes.
+*Proof.* The square is $N(\tilde x)e_t=(x_0^{2}+|\vec x|^{2})e_t$, a sum of squares; it vanishes exactly when every coordinate of $\tilde x$ vanishes.
 
 **Remark (isotropy and zero divisors are pulled apart).** In many products the isotropic set and the zero-divisor set agree up to the origin; here they are opposite extremes. The isotropic set is the single point $\{0\}$, because the coefficient is definite; the zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$, because the vanishing of a product involves a *pair* of elements and not a single one (*Zero Divisors of the Symmetric Quaternionic Algebra*). The block is therefore anisotropic and, at the same time, has no regular element except $0$. Neither statement contradicts the other, and the two together are the specific feature of the block.
 
@@ -49,7 +49,7 @@ $$
 **Theorem (the cone of squares is a half-line).** For every $\tilde x$ the square is a nonnegative multiple of $e_t$,
 
 $$
-\tilde x\star\tilde x=N(\tilde x)e_t,\qquad N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\geq0,
+\tilde x\star\tilde x=N(\tilde x)e_t,\qquad N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq0,
 $$
 
 and the set of values $\tilde x\star\tilde x$ as $\tilde x$ ranges over the block is the closed half-line $\mathbb{R}_{\geq0}e_t$.
@@ -82,7 +82,7 @@ The symmetric quaternionic block is non-degenerate and anisotropic: its coeffici
 |---|---|
 | $\operatorname{Rad}(\star)=\operatorname{rad}(N)$ | the radical; $\{0\}$ by definiteness |
 | $\{\tilde x:\tilde x\star\tilde x=0\}=\{0\}$ | the isotropic elements |
-| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the definite coefficient, Gram matrix $I_4$ |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite coefficient, Gram matrix $I_4$ |
 | $\mathbb{R}_{\geq0}e_t$ | the cone of squares |
 | $\{\tilde x:N(\tilde x)=\lambda\}$, $\lambda>0$ | the square roots of a positive central element |
 

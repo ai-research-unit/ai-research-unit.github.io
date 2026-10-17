@@ -35,14 +35,14 @@ The programme's postulate is the companion article's, and the first thing this p
 to read it as an ontology. The postulate is
 
 $$
-\nabla^{+}\tilde{A} = \tilde{\Theta},
+\nabla^{+}\tilde{A} = \tilde J,
 \qquad
 \nabla^{\pm} = \partial_\tau \pm i\nabla ,
 \qquad
-\tilde{\Theta} = i\rho + \vec J ,
+\tilde J = i\rho + \vec J ,
 $$
 
-with $\tilde{A}$ the tension biquaternion and $\tilde{\Theta}$ the charge–current biquaternion. On its
+with $\tilde{A}$ the tension biquaternion and $\tilde J$ the charge–current biquaternion. On its
 left is the field, on its right the charges and currents, and the relation says that the sources are
 the bigradient of the field.
 
@@ -90,7 +90,7 @@ so that $\partial_\tau \to -i\omega$. Substituting into the postulate gives the 
 equation**,
 
 $$
-\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 \qquad
 \nabla^{\pm}_{\omega} = \omega \pm \nabla ,
 $$
@@ -145,14 +145,14 @@ monochromatic source,
 
 $$
 \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\right\},
+= i\,\nabla^{+}_{\omega}\left\{\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \psi(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\right\},
 $$
 
 so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
 generalized functions of slow growth — tempered distributions — which is what makes the convolved
 sources here and the layered sources of the light section below legitimate rather than formal. For a
-**concentrated charge**, $\tilde{\Theta} = -i\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the kernel is
+**concentrated charge**, $\tilde J = -i\,\delta(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, the kernel is
 evaluated at once and the result is the **elementary photon**: a spherical EGM wave whose scalar and
 vector amplitudes are
 
@@ -245,7 +245,7 @@ Because the source enters linearly, the representations compose. Every emitted m
 a superposition of elementary photons weighted by the source,
 
 $$
-\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = i\,\tilde{\Theta}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{\Phi}^{0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
+\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) = i\,\tilde J(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega) * \tilde{\Phi}^{0}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega),
 $$
 
 the convolution being over the spatial variables, so the elementary photon is the kernel of the map
@@ -373,8 +373,8 @@ reads its monochromatic solutions as **photons**. The programme's own statement 
 line: take the classical biquaternion form of Maxwell's equations, whose field biquaternion is
 required to have no scalar part, and **drop that restriction**; the returned scalar part is the ether
 density and the vector part carries the electric and gravimagnetic fields. The algebra is the
-companion articles': the postulate $\nabla^{+}\tilde{A} = \tilde{\Theta}$, the monochromatic reduction
-$\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde{\Theta}$ with
+companion articles': the postulate $\nabla^{+}\tilde{A} = \tilde J$, the monochromatic reduction
+$\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J$ with
 $\nabla^{\pm}_{\omega} = \omega \pm \nabla$, and the factorisation
 $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
@@ -408,13 +408,13 @@ clearest statement of what the programme assumes.
 | $\tilde{A} = i\alpha + \vec{\mathcal A}$ | Biquaternion of tension; $\alpha$ is the density of the ether |
 | $\vec{\mathcal A} = \sqrt{\epsilon}\vec E + i\sqrt{\mu}\vec H$ | A-field, the companion article's field |
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
-| $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion (corpus symbol) |
+| $\tilde J = i\rho + \vec J$ | Charge–current biquaternion (corpus symbol) |
 | $\nabla^{\pm} = \partial_\tau \pm i\nabla$ | Mutual complex gradients of the postulate |
 | $\nabla = e_{1}\partial/\partial x+e_{2}\partial/\partial y+e_{3}\partial/\partial z$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
 | $\tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)$ | Biamplitude, $\tilde{A}(\tau,x\,\vec e_x+y\,\vec e_y+z\,\vec e_z) = \tilde{\Phi}(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z,\omega)\exp(-i\omega\tau)$ |
-| $\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde{\Theta}$ | The photon equation |
+| $\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde J$ | The photon equation |
 | $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$ | Helmholtz factorisation of the photon equation |
 | $\psi = -\exp(\,i\omega r)/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\psi = \delta$ |
 | $\tilde{\Phi}^{0}$ | Elementary photon, the kernel of the source-to-field map |
@@ -435,7 +435,7 @@ clearest statement of what the programme assumes.
   Applied Physics* **7**(1) (2020) 96–101, doi:10.14445/23500301/IJAP-V7I1P114, the paper recorded
   here.
 - *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*, for the programme's field
-  theory, its postulate $\nabla^{+}\tilde{A} = \tilde{\Theta}$, the magnetic-charge–mass hypothesis, its
+  theory, its postulate $\nabla^{+}\tilde{A} = \tilde J$, the magnetic-charge–mass hypothesis, its
   Newton-law analogues and its empirical claims.
 - *Harmonic Elementary Particles and the Periodic System of Atoms*, for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the

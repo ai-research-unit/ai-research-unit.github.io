@@ -41,12 +41,12 @@ the Symmetric Quaternionic Algebra*; the realization $\mathsf{M}_2$, its trace a
 *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and
-$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, with
-$x=x_1$, $y=x_2$, $z=x_3$. The **quaternion conjugation** is
-$\tilde x^{\natural}=x_0e_t-(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; on $\mathbb{R}$ the bar is the identity and the star coincides
+$\vec e_x\vec e_y=\vec e_z$; an element is $\tilde x=x_0e_t+\vec x$, with
+$\vec x=x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$. The **quaternion conjugation** is
+$\tilde x^{\natural}=x_0e_t-\vec x$; on $\mathbb{R}$ the bar is the identity and the star coincides
 with the natural sign ${}^{\natural}$. The **quaternion form** is
 $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$, with diagonal
-$N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$, and the **symmetric quaternionic product** is
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}$, and the **symmetric quaternionic product** is
 $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$. The centre is the scalar line $\mathbb{R}e_t$ and the
 vector subspace is
 $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}=\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$. The
@@ -94,7 +94,7 @@ Other Real Blocks*.
 
 **Remark (the collapse of the isotropic cone).** In the biquaternion block the roots of $0$ form the
 punctured isotropic cone $\{N=0\}\setminus\{0\}$, of complex dimension three, with two families of
-generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ is definite, the
+generators; over $\mathbb{R}$ the coefficient $N(\tilde\xi)=x_0^{2}+|\vec x|^{2}$ is definite, the
 isotropic locus $\{N=0\}$ collapses to the origin, and the punctured cone is empty. The block's
 isotropic elements are none but the origin and its radical is $\{0\}$ (*The Radical and the Isotropic
 Elements of the Symmetric Quaternionic Algebra*), so the root set of $0$ is a single point and not a
@@ -136,7 +136,7 @@ $N(\tilde x)=0$, that is at $\tilde x=0$, or when $k\geq3$ and $x_0=0$.
 block has no nonzero square-zero element; equivalently, the elements whose square vanishes form the
 origin alone, as §*The Roots of Zero* states, and the root set of $0$ is that same singleton.
 
-*Proof.* The square is $N(\tilde x)e_t$, and $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ vanishes only at the
+*Proof.* The square is $N(\tilde x)e_t$, and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ vanishes only at the
 origin; the origin has the vanishing square and is the only element that does.
 
 ## The Nilpotents
@@ -164,10 +164,10 @@ element is a nilpotent of index exactly three.
 
 *Proof.* By the power formula the cube is $\tilde x^{\star3}=N(\tilde x)x_0e_t$. If $x_0=0$ the cube
 vanishes, so the index is at most three. If $x_0\neq0$, then
-$N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
+$N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq x_0^{2}>0$, so $N(\tilde x)x_0\neq0$ and the cube is nonzero;
 by the formula $N(\tilde x)x_0^{k-2}\neq0$ for every $k\geq2$, so no power vanishes and $\tilde x$ is
 not a nilpotent. Hence a nilpotent has $x_0=0$. Conversely a nonzero pure element has
-$N(\tilde x)=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}>0$, so its square is $N(\tilde x)e_t\neq0$ and its cube is $0$: its index
+$N(\tilde x)=|\vec x|^{2}>0$, so its square is $N(\tilde x)e_t\neq0$ and its cube is $0$: its index
 is exactly three, and not two.
 
 ### The Index
@@ -263,7 +263,7 @@ reduces to the zero matrix, because a nonzero pure element has $N(\tilde x)>0$ w
 of the model has $N(\tilde x)=0$ and is the image of the origin.
 
 *Proof.* The trace and the determinant are the invariants of the model; a pure element has $x_0=0$,
-hence a trace-free matrix, and $\det=N(\tilde x)=|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}>0$ for a nonzero pure element, so the
+hence a trace-free matrix, and $\det=N(\tilde x)=|\vec x|^{2}>0$ for a nonzero pure element, so the
 matrix is not singular; a singular matrix of the model has $\det=N(\tilde x)=0$, hence $\tilde x=0$ by
 definiteness. The criteria of the preceding sections give the index.
 
@@ -291,7 +291,7 @@ this block and invisible in the other three: here the cube, and not the square, 
 The powers of the symmetric quaternionic block obey $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_t$ from
 the square on, so the cube vanishes exactly on the pure elements and no higher power vanishes off the
 origin. The roots of $0$ are the origin alone, since the square is the definite form
-$N(\tilde x)e_t=(x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2})e_t$ and a sum of squares vanishes only at the origin; the
+$N(\tilde x)e_t=(x_0^{2}+|\vec x|^{2})e_t$ and a sum of squares vanishes only at the origin; the
 square-zero set is the single point $\{0\}$, there is no nonzero square-zero element, and the block has
 no nilpotent of index two. The nilpotents are the nonzero pure quaternions,
 $\operatorname{Im}\mathbb{H}\setminus\{0\}$, each of index exactly three; there is no nilpotent of index
@@ -307,7 +307,7 @@ singular branch of the complex chapter collapses, and the trace-free branch alon
 | symbol | meaning |
 |---|---|
 | $\tilde x\star\tilde x=N(\tilde x)e_t$ | the square of the block, always central |
-| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the definite quaternion form, the coefficient of the square |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite quaternion form, the coefficient of the square |
 | $\{\tilde\xi:\tilde\xi\star\tilde\xi=0\}=\{0\}$ | the root set of $0$, the square-zero set |
 | $\tilde x^{\star k}=N(\tilde x)x_0^{k-2}e_t$, $k\geq2$ | the powers of the block |
 | nilpotent $\tilde\nu$ | nonzero $\tilde x$ with $\tilde x^{\star k}=0$; here the nonzero pure elements |

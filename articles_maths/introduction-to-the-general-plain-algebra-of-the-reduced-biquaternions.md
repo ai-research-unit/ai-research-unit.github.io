@@ -68,7 +68,7 @@ Q_{\pm,1}Q_{\pm,2}=(Q_{1++}Q_{2++},\;Q_{1--}Q_{2--}),
 $$
 the product being componentwise.
 
-*Proof.* The idempotents are orthogonal, $\Pi_+\Pi_-=0$, and idempotent, $\Pi_{i}^{2}=\Pi_{i}$ (*Reduced Biquaternion Space*); expanding $(Q_{1++}\Pi_++Q_{1--}\Pi_-)(Q_{2++}\Pi_++Q_{2--}\Pi_-)$ kills the crossed terms and gives $Q_{1++}Q_{2++}\Pi_++Q_{1--}Q_{2--}\Pi_-$.
+*Proof.* The idempotents are orthogonal, $\Pi_+\Pi_-=0$, and idempotent, $\Pi_\pm^{2}=\Pi_\pm$ (*Reduced Biquaternion Space*); expanding $(Q_{1++}\Pi_++Q_{1--}\Pi_-)(Q_{2++}\Pi_++Q_{2--}\Pi_-)$ kills the crossed terms and gives $Q_{1++}Q_{2++}\Pi_++Q_{1--}Q_{2--}\Pi_-$.
 
 The proposition is the reason every question about the algebra splits into two questions about the complex numbers, and it is used in every article of the block.
 

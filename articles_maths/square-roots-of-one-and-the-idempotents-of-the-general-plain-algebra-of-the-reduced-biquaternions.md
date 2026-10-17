@@ -10,11 +10,11 @@ and the **idempotents** are the four elements
 $$
 0,\quad 1,\quad \Pi_+=\tfrac12(1+j),\quad \Pi_-=\tfrac12(1-j).
 $$
-The two lists are exchanged by the **halving map** $Q_\pm\mapsto\tfrac12(1+Q_\pm)$, which sends a root of one to an idempotent and back; the two nontrivial idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+\Pi_-=0$, and each carries a **projection**, the map $Q_\pm\mapsto\Pi_{i}Q_\pm$, so that the algebra resolves as the sum of the two idempotent lines.
+The two lists are exchanged by the **halving map** $Q_\pm\mapsto\tfrac12(1+Q_\pm)$, which sends a root of one to an idempotent and back; the two nontrivial idempotents are complementary and orthogonal, $\Pi_++\Pi_-=1$ and $\Pi_+\Pi_-=0$, and the two projections are $Q_\pm\mapsto\Pi_+Q_\pm$ and $Q_\pm\mapsto\Pi_-Q_\pm$, so that the algebra resolves as the sum of the two idempotent lines.
 
 The computation is short because the multiplication is componentwise in the idempotent coordinates: for $Q_\pm=(Q_{++},Q_{--})$, with $Q_{++}=Q_++Q_-$ and $Q_{--}=Q_+-Q_-$, one has $Q_\pm^{2}=(Q_{++}^{2},Q_{--}^{2})$, so $Q_\pm^{2}=1$ is the pair of complex equations $Q_{++}^{2}=1$, $Q_{--}^{2}=1$ and $Q_\pm^{2}=Q_\pm$ is the pair $Q_{++}^{2}=Q_{++}$, $Q_{--}^{2}=Q_{--}$. Every list of solutions is therefore a product of two complex lists, and the four figures come from the two solutions $\pm1$ and the two solutions $0,1$ of the complex equations.
 
-**The results.** The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_+,\Pi_-$, of which $\Pi_+$ and $\Pi_-$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, below this article in this category. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{i}}=\Pi_{i}$.
+**The results.** The roots of one are $1,-1,j,-j$, and they form a group isomorphic to $\mathbb{Z}_{2}\times\mathbb{Z}_{2}$ under the multiplication. The idempotents are $0,1,\Pi_+,\Pi_-$, of which $\Pi_+$ and $\Pi_-$ are the nontrivial ones and are complementary, orthogonal and zero divisors. Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the two projections are the Peirce projections onto the two lines, and the Peirce decomposition itself is *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*, below this article in this category. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$.
 
 **Boundaries.** The algebra, its product and its structure as a direct product of two fields are *Introduction to the Algebra of the Reduced Biquaternions*, above this article in this category. The involutions and the idempotents' behaviour under them are *The Two Involutions and the Group of Involutions*, above this article. The zero divisors and the two lines are *Zero Divisors of the Algebra of the Reduced Biquaternions*, above this article; the annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*, above this article; and the roots of zero and the nilpotents are *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, below this article. The Peirce decomposition into the ideals the idempotents carry is *Ideals and Peirce Decomposition*, below this article in this category.
 
@@ -87,7 +87,7 @@ $$
 
 **Corollary (the idempotents and the roots of one).** The two nontrivial idempotents are $\Pi_+=\tfrac12(1+j)$ and $\Pi_-=\tfrac12(1-j)$, the halves of the sum and the difference of the identity and the root $j$ of one.
 
-*Proof.* The two displays are the definitions; the root of one used is $j$, since $j^{2}=1$ is what makes $\Pi_{i}^{2}=\Pi_{i}$.
+*Proof.* The two displays are the definitions; the root of one used is $j$, since $j^{2}=1$ is what makes $\Pi_\pm^{2}=\Pi_\pm$.
 
 ## The Projections
 
@@ -133,9 +133,9 @@ and every element has the unique decomposition $Q_\pm=P_{\Pi_+}(Q_\pm)+P_{\Pi_-}
 
 **The natural sign and the star both exchange the two nontrivial idempotents, and only the bar fixes every idempotent.**
 
-**Theorem.** $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, and $\overline{\Pi_{i}}=\Pi_{i}$; the flat sends each idempotent to the negative of the other, $\Pi_+^{\flat}=-\Pi_-$ and $\Pi_-^{\flat}=-\Pi_+$, which is not an idempotent.
+**Theorem.** $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$, $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, and $\overline{\Pi_+}=\Pi_+$, $\overline{\Pi_-}=\Pi_-$; the flat sends each idempotent to the negative of the other, $\Pi_+^{\flat}=-\Pi_-$ and $\Pi_-^{\flat}=-\Pi_+$, which is not an idempotent.
 
-*Proof.* $\Pi_+^{\natural}=\tfrac12(1+j)^{\natural}=\tfrac12(1-j)=\Pi_-$, and $\Pi_-^{\natural}=\Pi_+$ (*The Two Involutions and the Group of Involutions*); the bar conjugates the coefficients of $\Pi_{i}=\tfrac12\pm\tfrac12 j$, which are real, so it fixes $\Pi_{i}$; the star is $\bar{\cdot}\circ{}^{\natural}$, so $\Pi_+^{*}=\overline{\Pi_+^{\natural}}=\overline{\Pi_-}=\Pi_-$ and $\Pi_-^{*}=\Pi_+$, the star exchanging the two as the natural sign does. The flat is $-{}^{*}$, so it sends $\Pi_{i}$ to the negative of the other idempotent.
+*Proof.* $\Pi_+^{\natural}=\tfrac12(1+j)^{\natural}=\tfrac12(1-j)=\Pi_-$, and $\Pi_-^{\natural}=\Pi_+$ (*The Two Involutions and the Group of Involutions*); the bar conjugates the coefficients of $\Pi_\pm=\tfrac12\pm\tfrac12 j$, which are real, so it fixes each idempotent; the star is $\bar{\cdot}\circ{}^{\natural}$, so $\Pi_+^{*}=\overline{\Pi_+^{\natural}}=\overline{\Pi_-}=\Pi_-$ and $\Pi_-^{*}=\Pi_+$, the star exchanging the two as the natural sign does. The flat is $-{}^{*}$, so it sends each idempotent to the negative of the other.
 
 **Corollary (the involution swaps the two lines).** The natural sign restricts to a $\mathbb{C}$-linear exchange of the two idempotent lines, $\mathbb{C}\Pi_+\leftrightarrow\mathbb{C}\Pi_-$, and the two lines are therefore conjugate under the intrinsic conjugate.
 
@@ -172,7 +172,7 @@ $$
 \Pi_+^{2}=\Pi_+,\quad \Pi_-^{2}=\Pi_-,\quad \Pi_+\Pi_-=0,\quad \Pi_++\Pi_-=1 .
 $$
 
-Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(Q_\pm)=(Q_++Q_-)\Pi_+$ and $P_{\Pi_-}(Q_\pm)=(Q_+-Q_-)\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_{i}}=\Pi_{i}$. The **halving map** $H(Q_\pm)=\tfrac12(1+Q_\pm)$ is a bijection from the roots of one onto the idempotents, with inverse $e\mapsto2e-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.
+Each idempotent $e$ carries the projection $P_{e}(Q_\pm)=eQ_\pm$, with $P_{\Pi_+}+P_{\Pi_-}=\mathrm{id}$, $P_{e}^{2}=P_{e}$ and $P_{\Pi_+}P_{\Pi_-}=0$; the explicit projections are $P_{\Pi_+}(Q_\pm)=(Q_++Q_-)\Pi_+$ and $P_{\Pi_-}(Q_\pm)=(Q_+-Q_-)\Pi_-$, and they give the resolution of the identity and the decomposition $\mathbb{B}_{\mathrm{r}}=\mathbb{C}\Pi_+\oplus\mathbb{C}\Pi_-$. The **natural sign** and the **star** both exchange the two nontrivial idempotents, $\Pi_+^{\natural}=\Pi_-=\Pi_+^{*}$ and $\Pi_-^{\natural}=\Pi_+=\Pi_-^{*}$, while only the bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$. The **halving map** $H(Q_\pm)=\tfrac12(1+Q_\pm)$ is a bijection from the roots of one onto the idempotents, with inverse $e\mapsto2e-1$, and it sends $-1$ to $0$, $j$ to $\Pi_+$ and $-j$ to $\Pi_-$.
 
 ## Summary of Notation
 

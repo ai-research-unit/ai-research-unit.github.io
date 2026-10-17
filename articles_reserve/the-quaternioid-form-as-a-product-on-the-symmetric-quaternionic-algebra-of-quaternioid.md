@@ -108,7 +108,7 @@ and the product is recovered from the form by $\tilde p\star\tilde q=N(\tilde p,
 
 ## Summary
 
-The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation.
+The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_t$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation.
 
 ## Summary of Notation
 
@@ -116,7 +116,7 @@ The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_t+\vec p
 |---|---|
 | $N(\tilde p,\tilde q)=p_0q_t+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, the coefficient of the product |
 | $B(\tilde p,\tilde q)=p_0q_t-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite of signature $(1,3)$ |
-| $N(\tilde x)=x_0^{2}+|x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|^{2}$ | the quadratic form, positive definite of signature $(4,0)$ |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the quadratic form, positive definite of signature $(4,0)$ |
 | $I_4$ | the Gram matrix $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ |
 | $\operatorname{rad}(N)=\{0\}$ | the radical of the non-degenerate form |
 | $2N(\tilde p,\tilde q)=N(\tilde p+\tilde q)-N(\tilde p)-N(\tilde q)$ | the polarisation |

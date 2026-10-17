@@ -29,7 +29,7 @@ The two **bilinear** products split: the general plain bilinear product has no n
 
 *Proof.* In the idempotent coordinates $Q_\pm=(Q_{++},Q_{--})$ the product is componentwise, so $Q_\pm^{2}=(Q_{++}^{2},Q_{--}^{2})$ (*Introduction to the Algebra of the Reduced Biquaternions*). The equation $Q_\pm^{2}=0$ is the pair $Q_{++}^{2}=0$, $Q_{--}^{2}=0$; a complex number of square zero is $0$, so $Q_{++}=Q_{--}=0$ and $Q_\pm=0$.
 
-**Corollary (the two lines are not roots of zero of the multiplication).** The nonzero elements of the two idempotent lines are zero divisors, $2Q_{++}\Pi_+\cdot\Pi_-=0$, but they are not square-zero: $(2Q_{++}\Pi_+)^{2}=4Q_{++}^{2}\Pi_+\neq0$ for $Q_{++}\neq0$.
+**Corollary (the two lines are not roots of zero of the multiplication).** The nonzero elements of the two idempotent lines are zero divisors, $Q_{++}\Pi_+\cdot\Pi_-=Q_{--}\Pi_-\cdot\Pi_+=0$, but they are not square-zero: $(Q_{++}\Pi_+)^{2}=Q_{++}^{2}\Pi_+\neq0$ for $Q_{++}\neq0$, and $(Q_{--}\Pi_-)^{2}=Q_{--}^{2}\Pi_-\neq0$ for $Q_{--}\neq0$.
 
 ### The Algebra Is Reduced
 
@@ -104,13 +104,13 @@ so the quaternionic bilinear product and the plain sesquilinear product are nilp
 
 *Proof.* Both square-zero sets are the cone by the theorems above; an element whose square vanishes has every left-nested higher power vanishing as well, so the index is two.
 
-**Theorem (index three of the quaternionic sesquilinear product).** For $Q_\pm=2Q_{++}\Pi_+$ with $Q_{++}\neq0$,
+**Theorem (index three of the quaternionic sesquilinear product).** For $Q_\pm=Q_{++}\Pi_+$ with $Q_{++}\neq0$,
 $$
 Q_\pm^{\natural}Q_\pm^{*}\neq0,\qquad (Q_\pm^{\natural}Q_\pm^{*})^{\natural}Q_\pm^{*}=0,
 $$
-and likewise for $Q_\pm=2Q_{++}\Pi_-$; the quaternionic sesquilinear product has nilpotency index three on the two lines and no nilpotent outside them.
+and likewise for $Q_\pm=Q_{--}\Pi_-$; the quaternionic sesquilinear product has nilpotency index three on the two lines and no nilpotent outside them.
 
-*Proof.* Write $Q_\pm=Q_+(1+j)=2Q_+\Pi_+$. Then $Q_\pm^{\natural}=Q_+(1-j)=2Q_+\Pi_-$ and $Q_\pm^{*}=\bar Q_+(1-j)=2\bar Q_+\Pi_-$, so
+*Proof.* Write $Q_\pm=Q_+(1+j)=2Q_+\Pi_+=Q_{++}\Pi_+$. Then $Q_\pm^{\natural}=Q_+(1-j)=2Q_+\Pi_-$ and $Q_\pm^{*}=\bar Q_+(1-j)=2\bar Q_+\Pi_-$, so
 $$
 Q_\pm^{\natural}Q_\pm^{*}=Q_+(1-j)\bar Q_+(1-j)=|Q_+|^{2}(1-j)^{2}=2|Q_+|^{2}(1-j)\neq0,
 $$

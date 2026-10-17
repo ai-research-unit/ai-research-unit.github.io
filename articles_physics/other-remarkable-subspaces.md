@@ -102,7 +102,7 @@ The same map $i$ **exchanges** the other two, $i\,\mathbb{H}_{\mathbb{B}} = i\ma
 
 ## The Physical Coordinates
 
-The dictionary assigns one real parameter to each real coordinate: $q_t = ct'$ and $q'_t = ct$ for the two times, and $q_k = (x, y, z)$, $q'_k = (x', y', z')$ for the two spaces, with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the material space and $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = i(x' \vec e_x + y' \vec e_y + z' \vec e_z)$ the informational space. The two temporal writings are the informational $ct'$ and the material $ict$; the two spatial writings are the material $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the informational $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. The four sectors take them as follows.
+The dictionary assigns one real parameter to each real coordinate: $q_t = ct'$ and $q'_t = ct$ for the two times, and $q_k = (x, y, z)$, $q'_k = (x', y', z')$ for the two spaces, with $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ the material space and $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ the informational space. The two temporal writings are the informational $ct'$ and the material $ict$; the two spatial writings are the material $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ and the informational $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$. The four sectors take them as follows.
 
 ### The Two Times on One Complex Axis
 
@@ -213,7 +213,7 @@ Read as pairings, the first two of the four carry an **area pairing** and the la
 | $i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$ | The scalar imaginary exchanges the real and the imaginary sector (the Wick rotation) |
 | $q_t = ct'$, $q'_t = ct$ | Informational time $ct'$ and material time $ict$ |
 | $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ | Material space |
-| $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z) = i(x' \vec e_x + y' \vec e_y + z' \vec e_z)$ | Informational space |
+| $i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | Informational space |
 | $ct'\,e_t + ict\,e_t$ | The complex time sector: both times on one complex axis |
 | $x\,\vec e_x+y\,\vec e_y+z\,\vec e_z + i(x'\,\vec e_x+y'\,\vec e_y+z'\,\vec e_z)$ | The complex space sector: both spaces in one complex vector |
 | the area pairing | The alternating companion of the four forms: non-degenerate on the complex time sector, of rank $2$, and on the complex space sector, of rank $6$, where it pairs each direction with its partner under multiplication by $i$; zero on the real and on the imaginary sector |

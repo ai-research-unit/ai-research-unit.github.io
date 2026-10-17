@@ -110,7 +110,7 @@ $$
 
 So $c$ is the conversion factor that turns the statement "time is imaginary" into a statement about lengths. The phase $i$ says that the temporal direction is the imaginary one; the scale $c$ says how much imaginary time corresponds to a unit of physical time, and therefore how the temporal direction is measured against the three spatial directions. Given the phase and the scale, the metric is determined.
 
-For constant $c$ the metric is $c^2\left(-dt^2+dx^2+dy^2+dz^2/c^2\right)$, so after the constant rescaling $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the metric is a field of local forms,
+For constant $c$ the metric is $c^2\left(-dt^2+(dx^2+dy^2+dz^2)/c^2\right)$, so after the constant rescaling $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\to(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/c$ it is $c^2$ times the Minkowski metric: the null structure is Minkowski's and the coordinate speed of light is $c$. For varying $c$ the metric is a field of local forms,
 $$
 g(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=\mathrm{diag}\!\left(-c(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)^2,\,1,\,1,\,1\right),
 $$

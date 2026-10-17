@@ -78,7 +78,7 @@ $$
 \left[e_a, e_b\right] = 2\varepsilon_{abc}e_c
 $$
 
-shows that the span of the three $e_a$ closes on itself, and the adjoint action of a group element $\tilde g = \exp(\tilde\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ rotates the triplet,
+shows that the span of the three $e_a$ closes on itself, and the adjoint action of a group element $\tilde g = \exp(\vec\alpha/2)\in\mathbb{H}^1_{\mathbb{B}}$ rotates the triplet,
 
 $$
 \tilde\pi \;\longmapsto\; \tilde g\,\tilde\pi\,\tilde g^{-1} ,

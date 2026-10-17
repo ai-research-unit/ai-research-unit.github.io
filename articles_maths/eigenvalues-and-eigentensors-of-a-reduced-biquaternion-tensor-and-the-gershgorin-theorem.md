@@ -27,7 +27,7 @@ $$
 A_{(1)}X_{(1)}=\lambda_{(1)}X_{(1)},\qquad A_{(2)}X_{(2)}=\lambda_{(2)}X_{(2)}.
 $$
 
-*Proof.* The idempotents are orthogonal and $\Pi_{i}\Pi_{j}=\delta_{ij}\Pi_{i}$, and the algebra is commutative, so $AX=A_{(1)}X_{(1)}\Pi_++A_{(2)}X_{(2)}\Pi_-$ and $\lambda X=\lambda_{(1)}X_{(1)}\Pi_++\lambda_{(2)}X_{(2)}\Pi_-$; the two sides are equal exactly when the two coordinates are equal.
+*Proof.* The idempotents are orthogonal and idempotent, $\Pi_+\Pi_-=0$ and $\Pi_\pm^{2}=\Pi_\pm$, and the algebra is commutative, so $AX=A_{(1)}X_{(1)}\Pi_++A_{(2)}X_{(2)}\Pi_-$ and $\lambda X=\lambda_{(1)}X_{(1)}\Pi_++\lambda_{(2)}X_{(2)}\Pi_-$; the two sides are equal exactly when the two coordinates are equal.
 
 ## The Spectrum as the Union of the Two Coordinate Spectra
 

@@ -235,21 +235,21 @@ S_{\mathrm{rot}}[\tilde u]=\frac{\lambda}{2}\int \mathrm{Sc}\!\left(d\tilde u/dt
 =\frac{\lambda}{2}\int \langle\,d\tilde u/dt\rangle_{\natural}\,dt ,
 $$
 
-the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde u$ subject to the constraint $\langle\tilde u\rangle_{\natural}=e_t$ means varying within the group; writing $\delta\tilde u=\tilde u\,\delta\tilde\theta$ with $\delta\tilde\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde u^{\natural}\delta\tilde u)=0$ forces $\delta\tilde\theta$ to have zero scalar part), the first variation of the action becomes
+the rotational kinetic energy of a body with a single principal moment $\lambda$. Varying $\tilde u$ subject to the constraint $\langle\tilde u\rangle_{\natural}=e_t$ means varying within the group; writing $\delta\tilde u=\tilde u\,\delta\vec\theta$ with $\delta\vec\theta$ a pure real quaternion vanishing at the endpoints (the constraint $\mathrm{Sc}(\tilde u^{\natural}\delta\tilde u)=0$ forces $\delta\vec\theta$ to have zero scalar part), the first variation of the action becomes
 
 $$
 \delta S_{\mathrm{rot}}=\lambda\int\mathrm{Sc}\!\left(d\tilde u/dt\,\overline{\delta\,d\tilde u/dt}\right)dt
 =-\lambda\int\mathrm{Sc}\!\left(d^2\tilde u/dt^2\,\overline{\delta\tilde u}\right)dt
-=\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/dt^2\;\delta\tilde\theta\right)dt ,
+=\lambda\int\mathrm{Sc}\!\left(\tilde u^{\natural}\,d^2\tilde u/dt^2\;\delta\vec\theta\right)dt ,
 $$
 
-using $\delta\tilde u=\tilde u\,\delta\tilde\theta$, $\overline{\delta\tilde u}=-\delta\tilde\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\tilde\theta$ gives
+using $\delta\tilde u=\tilde u\,\delta\vec\theta$, $\overline{\delta\tilde u}=-\delta\vec\theta\,\tilde u^{\natural}$, and the cyclicity of the scalar part. Stationarity for all pure $\delta\vec\theta$ gives
 
 $$
 \mathrm{Ve}\!\left(\tilde u^{\natural}\,d^2\tilde u/dt^2\right)=0 ,
 $$
 
-the **geodesic equation on the group**. Writing $\tilde\eta=\tilde u^{\natural}d\tilde u/dt$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/dt^2=d\tilde\eta/dt+\tilde\eta^2$ with $\tilde\eta^2$ a real scalar; the equation therefore says that the vector part of $d\tilde\eta/dt$ vanishes, and since $\tilde\eta$ is pure real for all $t$ this is $d\tilde\eta/dt=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde u^{\natural}d\tilde u/dt)=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
+the **geodesic equation on the group**. Writing $\vec\eta=\tilde u^{\natural}d\tilde u/dt$, a real pure quaternion by the constraint — its scalar part is $\tfrac{1}{2}\tfrac{d}{dt}\langle\tilde u\rangle_{\natural} = \langle\tilde u,\tilde u\rangle_{\natural}=0$ — one has $\tilde u^{\natural}d^2\tilde u/dt^2=d\vec\eta/dt+\vec\eta^2$ with $\vec\eta^2$ a real scalar; the equation therefore says that the vector part of $d\vec\eta/dt$ vanishes, and since $\vec\eta$ is pure real for all $t$ this is $d\vec\eta/dt=0$. Equivalently, the equation with the constraint is $\frac{d}{dt}(\tilde u^{\natural}d\tilde u/dt)=0$: the **body angular velocity is constant**. Its solutions are the one-parameter subgroups, and the **classical rotor path is**
 
 $$
 \boxed{\;\tilde u(t)=\tilde u(0)\,\exp\!\left(+\tfrac{1}{2}\tilde\omega_b t\right),\qquad \tilde\omega_b\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-,\;}

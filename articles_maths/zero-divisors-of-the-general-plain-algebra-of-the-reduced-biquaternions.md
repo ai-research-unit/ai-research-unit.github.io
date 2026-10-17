@@ -56,7 +56,7 @@ real two-planes through the origin, and they meet only at $0$.
 
 **Corollary (the cone is homogeneous and two-component).** If $Q_\pm$ is in the cone and $\lambda\in\mathbb{C}^{\times}$, then $\lambda Q_\pm$ is in the cone, and it lies on the same line; the cone has two connected components up to the origin, the two lines.
 
-*Proof.* $\lambda(c\Pi_i)=(\lambda c)\Pi_i$ for $c\in\mathbb{C}$ stays on the line, and $\lambda\neq0$ keeps the element nonzero; the two lines are connected after removing the origin, being punctured complex lines, and they meet only at the origin, so the components are the two.
+*Proof.* $\lambda(c\Pi_\pm)=(\lambda c)\Pi_\pm$ for $c\in\mathbb{C}$ stays on its line, and $\lambda\neq0$ keeps the element nonzero; the two lines are connected after removing the origin, being punctured complex lines, and they meet only at the origin, so the components are the two.
 
 ### The Degeneracy
 

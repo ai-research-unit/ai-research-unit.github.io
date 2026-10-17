@@ -89,8 +89,8 @@ $$
 For a noncentral element it is the real plane spanned by the centre and the vector part of the
 element, of real dimension two; for a central element every element is annihilated.
 
-*Proof.* If $\vec p\neq0$, the equation $\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0$ holds exactly when
-$x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is parallel to $\vec p$, a line of the vector subspace, and the scalar coordinate
+*Proof.* If $\vec p\neq0$, the equation $\vec p\times\vec x=0$ holds exactly when
+$\vec x$ is parallel to $\vec p$, a line of the vector subspace, and the scalar coordinate
 $x_0$ is free and adds the centre; with the centre that is the plane
 $\mathbb{R}e_t\oplus\mathbb{R}\vec p$, of real dimension two. If $\tilde p=\lambda e_t$ with
 $\lambda\neq0$, then $\tilde p\times\tilde x=\lambda e_t\times\tilde x=0$ for every $\tilde x$. The
@@ -111,7 +111,7 @@ $$
 \end{pmatrix},
 $$
 where $C_{\vec p}=[\vec p]_\times$ is the $3\times3$ skew matrix of the cross product
-$(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$.
+$\vec x\mapsto\vec p\times\vec x$.
 
 *Proof.* The first column is zero, because the scalar direction of $\tilde p$ is invisible and
 $\tilde p\times e_t=\vec p\times\mathbf 0=0$; the remaining three columns are
@@ -152,8 +152,8 @@ $\mathbb{H}\cong\mathbb{R}^4$.
 skew matrix of odd size is singular, its rank is even, and it is nonzero. The matrix of
 $L_{\tilde p}$ is $\operatorname{diag}(0,C_{\vec p})$, of the same rank two, and its kernel is
 the direct sum of the kernel $\mathbb{R}e_t$ of the scalar direction and the kernel of
-$C_{\vec p}$, which is $\mathbb{R}\vec p$ because $\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0$ exactly when
-$x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ is parallel to $\vec p$. At $\vec p=0$ the operator is zero and the kernel is the
+$C_{\vec p}$, which is $\mathbb{R}\vec p$ because $\vec p\times\vec x=0$ exactly when
+$\vec x$ is parallel to $\vec p$. At $\vec p=0$ the operator is zero and the kernel is the
 whole space. The kernel equals the displayed span on every tested noncentral element, computed
 exactly on a grid of $100$ elements of $\mathbb{Q}$.
 
@@ -237,7 +237,7 @@ sibling article reads the same plane, of complex dimension two.
 | $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $A_\times(\tilde p),B_\times(\tilde p)$ | the left and the right annihilator of $\tilde p$ in the block, equal because the block is alternating |
 | $L_{\tilde p}$ | the left multiplication operator, $L_{\tilde p}\tilde x=\tilde p\times\tilde x$, whose kernel is the annihilator |
-| $C_{\vec p}=[\vec p]_\times$ | the $3\times3$ skew matrix of the cross product $(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)\mapsto\vec p\times(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, so that the matrix of $L_{\tilde p}$ is $\operatorname{diag}(0,C_{\vec p})$ |
+| $C_{\vec p}=[\vec p]_\times$ | the $3\times3$ skew matrix of the cross product $\vec x\mapsto\vec p\times\vec x$, so that the matrix of $L_{\tilde p}$ is $\operatorname{diag}(0,C_{\vec p})$ |
 | $\chi_{L_{\tilde p}}(t)=t^{2}(t^{2}+|\vec p|^{2})$ | the characteristic polynomial of the operator |
 | $\mathbb{R}e_t\oplus\mathbb{R}\vec p$ | the annihilator of a noncentral element $\tilde p$, a real plane of dimension two |
 | $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_t$ | the centre, on which the operator vanishes and the annihilator is the whole space |

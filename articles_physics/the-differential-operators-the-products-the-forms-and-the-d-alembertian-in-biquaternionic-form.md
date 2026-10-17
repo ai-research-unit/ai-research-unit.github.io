@@ -61,7 +61,7 @@ $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu}=e_t\frac{\partial}{\partial Q_t}+\vec e_x\frac{\partial}{\partial Q_x}+\vec e_y\frac{\partial}{\partial Q_y}+\vec e_z\frac{\partial}{\partial Q_z},
 $$
 
-whose tilde marks the operator and not a value, with its **quaternion conjugate**, the involution of the norm,
+whose tilde marks its scalar part beside its vector part, with its **quaternion conjugate**, the involution of the norm,
 
 $$
 \tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu}

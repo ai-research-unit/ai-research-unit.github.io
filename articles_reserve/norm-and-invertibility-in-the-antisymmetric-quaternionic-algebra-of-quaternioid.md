@@ -47,7 +47,7 @@ Two quadratic objects survive the loss of the scalar part. The first is the scal
 
 *Proof.* The value $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ is a sum of pure terms, hence of zero scalar part, so the diagonal $\operatorname{Sc}(\tilde x\diamond\tilde x)$ is the zero function; a vanishing quadratic form is not an algebraic norm.
 
-**Remark (the two canonical quadratics of the block).** The operation being alternating, the square vanishes identically, $\tilde x\diamond\tilde x=0$, and the conjugated square is the pure vector $\tilde x\diamond\tilde x^{\natural}=-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. The conjugated square is central exactly when $x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)=0$, that is on the union of the centre $\mathbb{R}e_t$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$, and at $\tilde x=e_t+\vec e_x$ it takes the value $-2\vec e_x$; neither canonical quadratic is central-valued at every element.
+**Remark (the two canonical quadratics of the block).** The operation being alternating, the square vanishes identically, $\tilde x\diamond\tilde x=0$, and the conjugated square is the pure vector $\tilde x\diamond\tilde x^{\natural}=-2x_0\vec x$. The conjugated square is central exactly when $x_0\vec x=0$, that is on the union of the centre $\mathbb{R}e_t$ and the vector subspace $\mathrm{Vect}(\mathbb{H})$, and at $\tilde x=e_t+\vec e_x$ it takes the value $-2\vec e_x$; neither canonical quadratic is central-valued at every element.
 
 ## The Two Surviving Quadratics
 
@@ -72,8 +72,8 @@ Two quadratic objects survive the loss of the scalar part, one from the scalar c
 | $Q$ | $Q(e_t\diamond e_t)$ | $Q(e_t)Q(e_t)$ | multiplicative at $(e_t,e_t)$ |
 |---|---|---|---|
 | $\varphi(\tilde x)=x_0^2$ | $0$ | $1$ | no |
-| $K(\tilde x,\tilde x)=3x_0^2-2\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$ | $0$ | $9$ | no |
-| $N(\tilde x)=x_0^2+\lvert x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\rvert^2$ | $0$ | $1$ | no |
+| $K(\tilde x,\tilde x)=3x_0^2-2\lvert\vec x\rvert^2$ | $0$ | $9$ | no |
+| $N(\tilde x)=x_0^2+\lvert\vec x\rvert^2$ | $0$ | $1$ | no |
 
 *Proof.* The square of $e_t$ in the block is $e_t\diamond e_t=0$ by alternation, and every quadratic object annihilates the origin, so the left side is zero in the three rows. On the right, $\varphi(e_t)=1$ gives $1$, $K(e_t,e_t)=3$ gives $9$, and $N(e_t)=1$ gives $1$. The three right-hand values are distinct, $\varphi$ forgetting the vector part, $K$ weighting the scalar coordinate by three and the vector coordinates by minus two, and $N$ weighting all four by one; since the two sides differ in each row, none is multiplicative.
 
@@ -83,7 +83,7 @@ Two quadratic objects survive the loss of the scalar part, one from the scalar c
 
 ## Summary
 
-The antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde x\diamond\tilde y=e_t$ has no solution because every value is a pure vector. The algebraic norm of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, so the diagonal is the zero function, and a vanishing quadratic form is not an algebraic norm: the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$, central exactly on the centre and the vector subspace. Two quadratic objects survive: the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_t$, of rank one, invariant, radical and isotropic cone the vector subspace; and the operator trace form $K(\tilde A,\tilde B)=3A_0B_0-2(\vec A,\vec B)$, non-degenerate of signature $(1,3)$ and not invariant. Neither is multiplicative, and at $(e_t,e_t)$ the left side vanishes while the right side is $1$, $9$, $1$ for $\varphi$, $K$ and $N$. The norm $N$ of the parent product is a form of a different product; no invertibility criterion is transferred, and the place of both the norm and the inverse is taken by their absence.
+The antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec q-q_t\vec p-\vec p\times\vec q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde x\diamond\tilde y=e_t$ has no solution because every value is a pure vector. The algebraic norm of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, so the diagonal is the zero function, and a vanishing quadratic form is not an algebraic norm: the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2x_0\vec x$, central exactly on the centre and the vector subspace. Two quadratic objects survive: the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_t$, of rank one, invariant, radical and isotropic cone the vector subspace; and the operator trace form $K(\tilde A,\tilde B)=3A_0B_0-2(\vec A,\vec B)$, non-degenerate of signature $(1,3)$ and not invariant. Neither is multiplicative, and at $(e_t,e_t)$ the left side vanishes while the right side is $1$, $9$, $1$ for $\varphi$, $K$ and $N$. The norm $N$ of the parent product is a form of a different product; no invertibility criterion is transferred, and the place of both the norm and the inverse is taken by their absence.
 
 ## Summary of Notation
 
@@ -92,7 +92,7 @@ The antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec 
 | $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_t\vec p-\vec p\times\vec q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\mathrm{Sc}(\tilde p\diamond\tilde q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde x)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
-| $\tilde x\diamond\tilde x=0$, $\tilde x\diamond\tilde x^{\natural}=-2x_0(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ | the square vanishes; the conjugated square is a pure vector |
+| $\tilde x\diamond\tilde x=0$, $\tilde x\diamond\tilde x^{\natural}=-2x_0\vec x$ | the square vanishes; the conjugated square is a pure vector |
 | $\varphi(\tilde p,\tilde q)=p_0q_t$ | the scalar-part form, rank one, invariant, radical the vector subspace |
 | $K(\tilde A,\tilde B)=3A_0B_0-2(\vec A,\vec B)$ | the operator trace form, non-degenerate of signature $(1,3)$, not invariant |
 | $L_{\tilde p}$: trace $3p_0$, determinant $0$, rank $3$, kernel $\mathbb{R}\tilde p$ | the left multiplication and its invariants |

@@ -176,7 +176,7 @@ which is the electric-energy component of the electromagnetic Rankine–Hugoniot
 
 ### The Shock Waves of the Charge–Current Field
 
-The A-field is not the only object whose discontinuities the programme considers. The **charge–current field** $\tilde{\Theta} = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are **not** transverse in general. In a free field that field obeys the first-order system
+The A-field is not the only object whose discontinuities the programme considers. The **charge–current field** $\tilde J = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are **not** transverse in general. In a free field that field obeys the first-order system
 
 $$
 \partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0,
@@ -184,7 +184,7 @@ $$
 \nabla\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
-which is the scalar and vector part of $D^-\tilde{\Theta} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
+which is the scalar and vector part of $D^-\tilde J = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
 
 $$
 [\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),
@@ -395,7 +395,7 @@ Shock electromagnetic waves are not a feature of linear Maxwell equations in vac
 
 Shock electromagnetic waves **are** a feature of nonlinear media and plasmas. In a Kerr medium, the intensity-dependent refractive index causes the wave profile to steepen, and a shock forms in finite time. In a plasma, the coupling of the electromagnetic field to the charged matter produces a rich variety of shock structures.
 
-The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\vec u$ unpacks into a joint jump system for $\vec E$ and $\vec H$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\vec u,[\vec P])$ closing the distributional conservation law. The **charge–current field** $\tilde{\Theta} = i\rho + \vec J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally **not** transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.
+The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\vec u$ unpacks into a joint jump system for $\vec E$ and $\vec H$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\vec u,[\vec P])$ closing the distributional conservation law. The **charge–current field** $\tilde J = i\rho + \vec J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally **not** transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.
 
 The treatment of shock electromagnetic waves in the biquaternion framework is therefore a treatment of the **linear skeleton** of a nonlinear theory. It describes the geometry of the shock front and the conservation laws that the shock must satisfy, but it does not describe the nonlinear dynamics that creates the shock. That dynamics is the subject of nonlinear optics and plasma physics, and the biquaternion framework provides a natural language for expressing it.
 
@@ -410,7 +410,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $\tilde{n}$ | Biquaternion-valued normal to the surface ($\vec u$ for spatial, $i\nu_t e_t + \vec u$ for general) |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
 | $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength) |
-| $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
+| $\tilde J = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |
 | $\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H$ | Combined complex current |
 | $\vec m$ | Unit normal to the charge–current front |

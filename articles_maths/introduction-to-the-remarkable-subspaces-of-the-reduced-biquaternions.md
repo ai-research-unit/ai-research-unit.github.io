@@ -112,7 +112,7 @@ $$
 $$
 where $\mathbf 1,\mathbf j$ are the coordinate vectors; the lines are spanned by the vectors $\tfrac12(1,0,1,0)$ and $\tfrac12(0,1,0,1)$ for $\mathbb{C}\Pi_+$ and $\tfrac12(1,0,-1,0)$, $\tfrac12(0,1,0,-1)$ for $\mathbb{C}\Pi_-$. They are not the spans of pairs of basis elements, and in the matrix model of *The Algebra in the $2\times2$ Matrix Element Representation of the Reduced Biquaternions* they are the two coordinate lines of the diagonal algebra.
 
-**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_{i}}=\Pi_{i}$, while the natural sign and the star exchange them, $\Pi_+^{\natural}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}^{\natural}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
+**Remark (the involutions on the idempotent lines).** The bar fixes each idempotent, $\overline{\Pi_+}=\Pi_+$ and $\overline{\Pi_-}=\Pi_-$, while the natural sign and the star exchange them, $\Pi_+^{\natural}=\Pi_+^{*}=\Pi_-$, so the two lines are exchanged by ${}^{\natural}$ and ${}^{*}$ and fixed by the bar. This is the behaviour of *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions*, and it is the reason the idempotent lines are not among the fixed spaces of the three involutions.
 
 ## The Relations between the Spaces
 
@@ -157,11 +157,11 @@ All the other pairs sum to a real three-dimensional space, since their intersect
 | $\mathbb{R}\{i,ij\}$ | $i(a+bj)$ | $-(a^{2}-b^{2})$ | split |
 | $\mathbb{R}\{1,ij\}$ | $a+bij$ | $a^{2}+b^{2}$ | positive definite |
 | $\mathbb{R}\{i,j\}$ | $ai+bj$ | $-(a^{2}+b^{2})$ | negative definite |
-| $\mathbb{C}\Pi_+,\mathbb{C}\Pi_-$ | $x\Pi_{i}$ | $0$ | zero |
+| $\mathbb{C}\Pi_+,\mathbb{C}\Pi_-$ | $x\Pi_\pm$ | $0$ | zero |
 
 with $a,b\in\mathbb{R}$.
 
-*Proof.* Substitute each parametrisation into $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$: for $Q_\pm=a+bj$ the coordinates are $Q_+=a$, $Q_-=b$, so $N=a^{2}-b^{2}$; for $Q_\pm=a+bij$ they are $Q_+=a$, $Q_-=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $Q_\pm=ai+bj$ they are $Q_+=ai$, $Q_-=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $Q_\pm=x\Pi_{i}$ the coordinates have $Q_+\pm Q_-=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
+*Proof.* Substitute each parametrisation into $\langle Q_\pm\rangle_{\natural}=Q_+^{2}-Q_-^{2}$: for $Q_\pm=a+bj$ the coordinates are $Q_+=a$, $Q_-=b$, so $N=a^{2}-b^{2}$; for $Q_\pm=a+bij$ they are $Q_+=a$, $Q_-=ib$, so $N=a^{2}-(ib)^{2}=a^{2}+b^{2}$; for $Q_\pm=ai+bj$ they are $Q_+=ai$, $Q_-=b$, so $N=(ai)^{2}-b^{2}=-(a^{2}+b^{2})$; and for $Q_\pm=x\Pi_+$ or $Q_\pm=x\Pi_-$ the coordinates have $Q_+\pm Q_-=0$, so $N=0$. The complex cases are the two complex lines and the two split planes.
 
 **Corollary (the zero divisors).** The two idempotent lines are exactly the null set of the norm, and their nonzero elements are the zero divisors of *Zero Divisors of the Algebra of the Reduced Biquaternions*; the Hermitian and anti-Hermitian subspaces are the two kinds of element on which the norm has a definite sign, and the real subalgebra and its $i$-multiple are the two split planes.
 
