@@ -32,33 +32,33 @@ $$
 
 **Corollary (the association is immaterial).** $A$ is unchanged when the two multiplications are associated in the other order, $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm{Sc}((\tilde q_1\tilde q_2)\tilde q_3)=\mathrm{Sc}(\tilde q_1(\tilde q_2\tilde q_3))$, by associativity alone; cyclic invariance is the additional statement that the two arguments can be moved without changing the value.
 
-**Definition.** The association functional defines the **sandwich operators** $T_{\tilde a,\tilde b}=L_{\tilde a}R_{\tilde b}$, $\tilde q\mapsto\tilde a\tilde q\tilde b$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
+**Definition.** The association functional defines the **sandwich operators** $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$, and $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm B(L_{\tilde q_1}R_{\tilde q_3}\tilde q_2,e_t)$ reads the functional through one of them.
 
 ## The Transposes of the One-Sided Operators
 
 **Definition.** For a real-linear operator $T$ of $\mathbb{H}$ the **transpose** $T^{\sim}$ is the operator with $\langle T\tilde q_1,\tilde q_2\rangle=\langle\tilde q_1,T^{\sim}\tilde q_2\rangle$ for all $\tilde q_1,\tilde q_2$. Non-degeneracy of $\mathrm B$ makes $T^{\sim}$ unique, and $T\mapsto T^{\sim}$ is an anti-automorphism of the operator algebra.
 
-**Theorem.** $L_{\tilde a}^{\sim}=R_{\tilde a}$ and $R_{\tilde b}^{\sim}=L_{\tilde b}$.
+**Theorem.** $L_{\tilde q_4}^{\sim}=R_{\tilde q_4}$ and $R_{\tilde q_5}^{\sim}=L_{\tilde q_5}$.
 
-*Proof.* $\langle L_{\tilde a}\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde a\tilde q_1\tilde q_2)$ and $\langle\tilde q_1,R_{\tilde a}\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde a)$, equal by cyclic invariance of the association functional; hence $L_{\tilde a}^{\sim}=R_{\tilde a}$, and the second is the mirror with the two sides swapped.
+*Proof.* $\langle L_{\tilde q_4}\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_4\tilde q_1\tilde q_2)$ and $\langle\tilde q_1,R_{\tilde q_4}\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_4)$, equal by cyclic invariance of the association functional; hence $L_{\tilde q_4}^{\sim}=R_{\tilde q_4}$, and the second is the mirror with the two sides swapped.
 
-**Corollary.** $L_{\tilde a}$ is self-transpose exactly when $\tilde a$ is central; the self-transpose left multiplications are the scalar ones.
+**Corollary.** $L_{\tilde q_4}$ is self-transpose exactly when $\tilde q_4$ is central; the self-transpose left multiplications are the scalar ones.
 
-*Proof.* $L_{\tilde a}=R_{\tilde a}$ exactly when $\tilde a$ commutes with every element, that is, by the centre theorem, when $\tilde a\in\mathbb{R}e_t$.
+*Proof.* $L_{\tilde q_4}=R_{\tilde q_4}$ exactly when $\tilde q_4$ commutes with every element, that is, by the centre theorem, when $\tilde q_4\in\mathbb{R}e_t$.
 
 ## The Transpose of a Two-Sided Operator
 
-**Theorem.** For the sandwich $T_{\tilde a,\tilde b}=L_{\tilde a}R_{\tilde b}$, $\tilde q\mapsto\tilde a\tilde q\tilde b$,
+**Theorem.** For the sandwich $T_{\tilde q_4,\tilde q_5}=L_{\tilde q_4}R_{\tilde q_5}$, $\tilde q\mapsto\tilde q_4\tilde q\tilde q_5$,
 
 $$
-T_{\tilde a,\tilde b}^{\sim}=L_{\tilde b}R_{\tilde a}=T_{\tilde b,\tilde a}.
+T_{\tilde q_4,\tilde q_5}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}=T_{\tilde q_5,\tilde q_4}.
 $$
 
-*Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $T_{\tilde a,\tilde b}^{\sim}=(L_{\tilde a}R_{\tilde b})^{\sim}=R_{\tilde b}^{\sim}L_{\tilde a}^{\sim}=L_{\tilde b}R_{\tilde a}$, which is $T_{\tilde b,\tilde a}$.
+*Proof.* The transpose is an anti-automorphism, $(\tilde q_1\tilde q_2)^{\sim}=\tilde q_2^{\sim}\tilde q_1^{\sim}$, so $T_{\tilde q_4,\tilde q_5}^{\sim}=(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=R_{\tilde q_5}^{\sim}L_{\tilde q_4}^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$, which is $T_{\tilde q_5,\tilde q_4}$.
 
-**Corollary.** The sandwich is self-transpose exactly when $\tilde b\in\mathbb{R}\tilde a$ or $\tilde a\in\mathbb{R}\tilde b$.
+**Corollary.** The sandwich is self-transpose exactly when $\tilde q_5\in\mathbb{R}\tilde q_4$ or $\tilde q_4\in\mathbb{R}\tilde q_5$.
 
-*Proof.* The equality $L_{\tilde a}R_{\tilde b}=L_{\tilde b}R_{\tilde a}$ says $\tilde a\tilde q\tilde b=\tilde b\tilde q\tilde a$ for every $\tilde q$. At $\tilde q=e_t$ it gives $\tilde a\tilde b=\tilde b\tilde a$, so $\tilde b$ commutes with $\tilde a$; if $\tilde b=\mu\tilde a$ for some real $\mu$ the two sides are equal, which is the sufficiency. Conversely, either $\tilde a$ is central, and then the identity reads $\tilde q\tilde a\tilde b=\tilde b\tilde q\tilde a$, that is $\tilde q\tilde c=\tilde c\tilde q$ with $\tilde c=\tilde a\tilde b$ central because $\tilde a$ is and $\tilde b$ commutes with it, so $\tilde b$ is central too and $\tilde b\in\mathbb{R}\tilde a$; or $\tilde a$ is not central, its commutant is the plane $\mathbb{R}e_t+\mathbb{R}\tilde a$, and $\tilde b=\lambda+\mu\tilde a$ gives $\tilde a\tilde q\tilde b-\tilde b\tilde q\tilde a=\lambda(\tilde a\tilde q-\tilde q\tilde a)$, which vanishes for all $\tilde q$ only if $\lambda=0$, that is $\tilde b\in\mathbb{R}\tilde a$. The degenerate cases $\tilde a=0$ or $\tilde b=0$ are included, both sides being $0$.
+*Proof.* The equality $L_{\tilde q_4}R_{\tilde q_5}=L_{\tilde q_5}R_{\tilde q_4}$ says $\tilde q_4\tilde q\tilde q_5=\tilde q_5\tilde q\tilde q_4$ for every $\tilde q$. At $\tilde q=e_t$ it gives $\tilde q_4\tilde q_5=\tilde q_5\tilde q_4$, so $\tilde q_5$ commutes with $\tilde q_4$; if $\tilde q_5=\mu\tilde q_4$ for some real $\mu$ the two sides are equal, which is the sufficiency. Conversely, either $\tilde q_4$ is central, and then the identity reads $\tilde q\tilde q_4\tilde q_5=\tilde q_5\tilde q\tilde q_4$, that is $\tilde q\tilde c=\tilde c\tilde q$ with $\tilde c=\tilde q_4\tilde q_5$ central because $\tilde q_4$ is and $\tilde q_5$ commutes with it, so $\tilde q_5$ is central too and $\tilde q_5\in\mathbb{R}\tilde q_4$; or $\tilde q_4$ is not central, its commutant is the plane $\mathbb{R}e_t+\mathbb{R}\tilde q_4$, and $\tilde q_5=\lambda+\mu\tilde q_4$ gives $\tilde q_4\tilde q\tilde q_5-\tilde q_5\tilde q\tilde q_4=\lambda(\tilde q_4\tilde q-\tilde q\tilde q_4)$, which vanishes for all $\tilde q$ only if $\lambda=0$, that is $\tilde q_5\in\mathbb{R}\tilde q_4$. The degenerate cases $\tilde q_4=0$ or $\tilde q_5=0$ are included, both sides being $0$.
 
 **Theorem (the natural sign is self-transpose).** The operator $\natural:\tilde q\mapsto\tilde q^{\natural}$ satisfies $\natural^{\sim}=\natural$.
 
@@ -74,7 +74,7 @@ $$
 
 *Proof.* For all $\tilde q_1,\tilde q_2$, $\langle T\tilde q_1,\tilde q_2\rangle=(Gq_1)^{\mathsf T}Dq_2=q_1^{\mathsf T}G^{\mathsf T}Dq_2$ and $\langle\tilde q_1,T^{\sim}\tilde q_2\rangle=q_1^{\mathsf T}D(G^{\sim}q_2)=q_1^{\mathsf T}DG^{\sim}q_2$, where $q_1,q_2$ are the coordinate columns; equating the two for all $q_1,q_2$ gives $G^{\mathsf T}D=DG^{\sim}$, that is $G^{\sim}=D^{-1}G^{\mathsf T}D=D\,G^{\mathsf T}D$ because $D^{-1}=D= D^{\mathsf T}$.
 
-**Corollary.** The transpose matrix is the matrix transpose conjugated by the signature matrix; in particular the transposes of $L_{\tilde a}$ and $R_{\tilde a}$ are obtained by $L_{\tilde a}^{\sim}=D\,L_{\tilde a}^{\mathsf T}D=R_{\tilde a}$ and $R_{\tilde a}^{\sim}=D\,R_{\tilde a}^{\mathsf T}D=L_{\tilde a}$.
+**Corollary.** The transpose matrix is the matrix transpose conjugated by the signature matrix; in particular the transposes of $L_{\tilde q_4}$ and $R_{\tilde q_4}$ are obtained by $L_{\tilde q_4}^{\sim}=D\,L_{\tilde q_4}^{\mathsf T}D=R_{\tilde q_4}$ and $R_{\tilde q_4}^{\sim}=D\,R_{\tilde q_4}^{\mathsf T}D=L_{\tilde q_4}$.
 
 *Proof.* The formula applied to the matrix of each operator, with the identifications of the theorem above.
 
@@ -82,9 +82,9 @@ $$
 
 | Operator | Transpose |
 |---|---|
-| $L_{\tilde a}$ | $R_{\tilde a}$ |
-| $R_{\tilde b}$ | $L_{\tilde b}$ |
-| $L_{\tilde a}R_{\tilde b}$ | $L_{\tilde b}R_{\tilde a}$ |
+| $L_{\tilde q_4}$ | $R_{\tilde q_4}$ |
+| $R_{\tilde q_5}$ | $L_{\tilde q_5}$ |
+| $L_{\tilde q_4}R_{\tilde q_5}$ | $L_{\tilde q_5}R_{\tilde q_4}$ |
 | $\natural$ | $\natural$ |
 
 *Proof.* The four statements above.
@@ -103,7 +103,7 @@ $$
 
 ## Summary
 
-The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ is symmetric, non-degenerate and indefinite of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$. The association functional $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde a}^{\sim}=R_{\tilde a}$, $R_{\tilde b}^{\sim}=L_{\tilde b}$, $(L_{\tilde a}R_{\tilde b})^{\sim}=L_{\tilde b}R_{\tilde a}$ and $\natural^{\sim}=\natural$.
+The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ is symmetric, non-degenerate and indefinite of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$. The association functional $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde q_4}^{\sim}=R_{\tilde q_4}$, $R_{\tilde q_5}^{\sim}=L_{\tilde q_5}$, $(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$ and $\natural^{\sim}=\natural$.
 
 ## Summary of Notation
 
@@ -113,7 +113,7 @@ The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\til
 | $A(\tilde q_1,\tilde q_2,\tilde q_3)=\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)$ | The association functional |
 | $D=\operatorname{diag}(1,-1,-1,-1)$ | Gram matrix of $\mathrm B$ |
 | $T^{\sim}$ | Transpose of the operator $T$ |
-| $L_{\tilde a},R_{\tilde b}$ | Left and right multiplications |
+| $L_{\tilde q_4},R_{\tilde q_5}$ | Left and right multiplications |
 | $\natural$ | The natural sign, the quaternion conjugation |
 
 ## Further Reading

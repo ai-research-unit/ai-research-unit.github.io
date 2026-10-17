@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde q
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde x=\tilde p\tilde x\tilde q$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the derivations of the plain algebra are those of *The Multiplication Operators of the General Plain Algebra*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. An element is $\tilde q=q_te_t+\vec q$ with $\vec q=\sum_{k=1}^{3}q_k\vec e_k$ and $q_\mu\in\mathbb{R}$; the plain left and right multiplications are $L_{\tilde p}\tilde q=\tilde p\tilde q$ and $R_{\tilde p}\tilde q=\tilde q\tilde p$, the two-sided operator is $M_{\tilde p,\tilde q}\tilde q_4=\tilde p\tilde q_4\tilde q$, the trace form is $\tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}(\tilde q_1\bullet\tilde q_2)$, and the derivations of the plain algebra are those of *The Multiplication Operators of the General Plain Algebra*.
 
 ## The Multiplication Operators
 
@@ -71,7 +71,7 @@ $$
 
 and, more generally, $\bigl[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}\bigr]$ is a **derivation** of the block for all $\tilde p,\tilde q$.
 
-*Proof.* The equivalence of the Jordan identity with $[L_{\tilde x},L_{\tilde x^{\bullet2}}]=0$ is the standard operator form quoted in *Jordan Algebras*; the derivation property of $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$ is the same statement applied to the linearised identity, and both are the algebra of the symmetrisation.
+*Proof.* The equivalence of the Jordan identity with $[L_{\tilde q_4},L_{\tilde q_4^{\bullet2}}]=0$ is the standard operator form quoted in *Jordan Algebras*; the derivation property of $[L^{\bullet}_{\tilde p},L^{\bullet}_{\tilde q}]$ is the same statement applied to the linearised identity, and both are the algebra of the symmetrisation.
 
 ### The Inner Derivations
 
@@ -112,7 +112,7 @@ $$
 
 and no derivation is a multiplication by an element.
 
-*Proof.* The derivation algebra is three-dimensional and coincides with the inner derivations by the general theory of degree-two Jordan algebras; an element-multiplication $L^{\bullet}_{\tilde a}$ is a derivation only if $\tilde a\bullet(\tilde q_1\bullet\tilde q_2)=( \tilde a\bullet\tilde q_1)\bullet\tilde q_2+\tilde q_1\bullet(\tilde a\bullet\tilde q_2)$ for all $\tilde q_1,\tilde q_2$, which forces $\tilde a=0$ by the non-associativity at $\vec e_x,\vec e_y$.
+*Proof.* The derivation algebra is three-dimensional and coincides with the inner derivations by the general theory of degree-two Jordan algebras; an element-multiplication $L^{\bullet}_{\tilde q_5}$ is a derivation only if $\tilde q_5\bullet(\tilde q_1\bullet\tilde q_2)=( \tilde q_5\bullet\tilde q_1)\bullet\tilde q_2+\tilde q_1\bullet(\tilde q_5\bullet\tilde q_2)$ for all $\tilde q_1,\tilde q_2$, which forces $\tilde q_5=0$ by the non-associativity at $\vec e_x,\vec e_y$.
 
 ### Skewness for the Trace Form
 

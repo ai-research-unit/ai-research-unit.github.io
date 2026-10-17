@@ -20,7 +20,7 @@ For a two-sided ideal $I$, the **quotient algebra** $A/I$ is the set of cosets w
 
 **Theorem.** Over $\mathbb{C}$, the only two-sided ideals of $\mathbb{B}$ are $0$ and $\mathbb{B}$. Equivalently, $\mathbb{B}$ is a **simple** $\mathbb{C}$-algebra.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every unit $\tilde B \in \mathbb{B}$ the conjugate $\tilde B\tilde{Q}\tilde B^{-1}$ lies in $I$, since $I$ is two-sided.
+**Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every unit $\tilde Q_3 \in \mathbb{B}$ the conjugate $\tilde Q_3\tilde{Q}\tilde Q_3^{-1}$ lies in $I$, since $I$ is two-sided.
 
 Average the conjugates over the finite group $\{\pm e_t, \pm \vec e_x, \pm \vec e_y, \pm \vec e_z\}$. For $\mu = 1, 2, 3$, conjugation by $e_\mu$ fixes $e_t$ and $e_\mu$ and reverses the other two imaginary units, while conjugation by $e_t$ is the identity; in each case $e_\mu$ and $-e_\mu$ give the same conjugate, and the sum over the four representatives $e_t, \vec e_x, \vec e_y, \vec e_z$ is
 

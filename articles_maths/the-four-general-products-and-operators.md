@@ -73,7 +73,7 @@ $$
 (L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}},
 $$
 
-and for the two-sided operator $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde B})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde B^{\ast}}$, $(L_{\tilde A}R_{\tilde B})^{N}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$, $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$.
+and for the two-sided operator $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde Q_1})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde Q_1^{\ast}}$, $(L_{\tilde A}R_{\tilde Q_1})^{N}=L_{\tilde A^{\natural}}R_{\tilde Q_1^{\natural}}$, $(L_{\tilde A}R_{\tilde Q_1})^{\natural\ast}=L_{\bar{\tilde Q_1}}R_{\bar{\tilde A}}$.
 
 *Proof.* *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, where all sixteen cases are verified on the pairs of basis elements.
 
@@ -96,10 +96,10 @@ Fix the element $\tilde A=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natu
 
 $$
 \begin{aligned}
-\text{no insertion:}\quad & L_{\vec e_x}R_{\vec e_x^{-1}} & \tilde X&\longmapsto \vec e_x\tilde X \vec e_x^{-1},\\
-\text{sign }\natural\text{ on the left:}\quad & L_{\vec e_x^{\natural}}R_{\vec e_x^{-1}} & \tilde X&\longmapsto \vec e_x^{\natural}\tilde X \vec e_x^{-1},\\
-\text{star on the right:}\quad & L_{\vec e_x}R_{(\vec e_x^{*})^{-1}} & \tilde X&\longmapsto \vec e_x\tilde X (\vec e_x^{*})^{-1},\\
-\text{both:}\quad & L_{\vec e_x^{\natural}}R_{(\vec e_x^{*})^{-1}} & \tilde X&\longmapsto \vec e_x^{\natural}\tilde X(\vec e_x^{*})^{-1}.
+\text{no insertion:}\quad & L_{\vec e_x}R_{\vec e_x^{-1}} & \tilde Q_2&\longmapsto \vec e_x\tilde Q_2 \vec e_x^{-1},\\
+\text{sign }\natural\text{ on the left:}\quad & L_{\vec e_x^{\natural}}R_{\vec e_x^{-1}} & \tilde Q_2&\longmapsto \vec e_x^{\natural}\tilde Q_2 \vec e_x^{-1},\\
+\text{star on the right:}\quad & L_{\vec e_x}R_{(\vec e_x^{*})^{-1}} & \tilde Q_2&\longmapsto \vec e_x\tilde Q_2 (\vec e_x^{*})^{-1},\\
+\text{both:}\quad & L_{\vec e_x^{\natural}}R_{(\vec e_x^{*})^{-1}} & \tilde Q_2&\longmapsto \vec e_x^{\natural}\tilde Q_2(\vec e_x^{*})^{-1}.
 \end{aligned}
 $$
 
@@ -150,7 +150,7 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 **Corollary (where a determinant plus one lives).** On the algebra $\mathbb{B}$ itself, of complex dimension four, all four operators have determinant $+1$; the sign shows in the determinant only on the odd-dimensional restriction $V$, or on a real form of odd dimension. A "rotation" and a "reflection" are therefore read on $V$.
 
-*Proof.* The operators are products $L_{\tilde A}R_{\tilde B}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde A})\det(R_{\tilde B})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
+*Proof.* The operators are products $L_{\tilde A}R_{\tilde Q_1}$, whose determinant on $\mathbb{B}$ is $\det(L_{\tilde A})\det(R_{\tilde Q_1})$, and for a four-dimensional space the sign $-1$ on a parameter contributes the factor $(-1)^{4}=+1$.
 
 ### The Sign Is Invisible on the Centre and on Even Parameters
 
@@ -187,7 +187,7 @@ The zero entries are the starred insertions of a mixed parameter, whose operator
 
 So the corpus's "sign" is the map with the sign vector $(1,-1,-1,-1)$, and it is *not* the grade involution of that Clifford reading: the grade involution is the coefficient conjugation, and on $V$, which is the grade-two part there, it is the identity. Two consequences follow, and both answer the question of the title. First, the corpus's choice of $\natural$ as the sign is a convention of the biquaternion model, fixed by the coefficient formula and not by an abstract parity. Second, the reflection theorem is nevertheless not a convention: with the sign $\natural$ it holds, and with the grade involution, which is trivial on $V$, it fails.
 
-**Remark (parameter or argument).** The sign may be inserted in the **parameter**, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, which is the *signed inner conjugation* of the corpus, or in the **argument**, $\tilde X\mapsto\tilde A\,\tilde X^{\natural}\,\tilde A^{-1}$, which is the *signed sandwich* of *The Signed Sandwich on a Clifford Algebra*. On the vector subspace the two agree, because both act by the sign $-\mathrm{id}$ there; on the whole algebra they differ, and the general corpus keeps the two families apart on purpose, the one twisting the parameter and the other the argument.
+**Remark (parameter or argument).** The sign may be inserted in the **parameter**, $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, which is the *signed inner conjugation* of the corpus, or in the **argument**, $\tilde Q_2\mapsto\tilde A\,\tilde Q_2^{\natural}\,\tilde A^{-1}$, which is the *signed sandwich* of *The Signed Sandwich on a Clifford Algebra*. On the vector subspace the two agree, because both act by the sign $-\mathrm{id}$ there; on the whole algebra they differ, and the general corpus keeps the two families apart on purpose, the one twisting the parameter and the other the argument.
 
 ## Summary
 
@@ -201,8 +201,8 @@ The four general products of the biquaternion algebra are one multiplication wit
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
 | ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | the sign, the coefficient conjugation, the Hermitian conjugation; $\natural$ has sign vector $(1,-1,-1,-1)$ |
-| $L_{\tilde A}R_{\tilde B}$ | a two-sided operator; $L_{\tilde A}R_{\tilde A^{-1}}$ the inner automorphism of the plain product |
-| $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, $\tilde X\mapsto\tilde A\tilde X^{\natural}\tilde A^{-1}$ | the sign inserted in the parameter, and in the argument |
+| $L_{\tilde A}R_{\tilde Q_1}$ | a two-sided operator; $L_{\tilde A}R_{\tilde A^{-1}}$ the inner automorphism of the plain product |
+| $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, $\tilde Q_2\mapsto\tilde A\tilde Q_2^{\natural}\tilde A^{-1}$ | the sign inserted in the parameter, and in the argument |
 | $\rho_{\tilde A}$ | the reflection of $V$ in $\tilde A^{\perp}$; the plain product gives $-\rho_{\tilde A}$, the sign gives $\rho_{\tilde A}$ |
 | $\operatorname{diag}(1,1,-1,-1)$, $\operatorname{diag}(-1,-1,1,1)$ | the two operators of $\vec e_x$, and their restrictions $\operatorname{diag}(1,-1,-1)$, $\operatorname{diag}(-1,1,1)$ to $V$ |
 

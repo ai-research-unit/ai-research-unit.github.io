@@ -91,7 +91,7 @@ since $\langle\tilde{U}\rangle_{\natural}=e_t$ and the biquaternion norm is cent
 
 - **Translation.** A shift does not preserve $\langle\cdot\rangle_{\natural}$ pointwise, but it preserves the interval between two points,
 $$
-N\bigl((\tilde{Q}+\tilde{A})-(\tilde{Y}+\tilde{A})\bigr)=\langle\tilde{Q}-\tilde{Y}\rangle_{\natural},
+N\bigl((\tilde{Q}+\tilde{A})-(\tilde{Q}_1+\tilde{A})\bigr)=\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural},
 $$
 so it maps null displacements to null displacements. This is the parent article's observation that the interval survives translation.
 
@@ -114,7 +114,7 @@ and this displays both what the algebra provides and what it withholds. Three po
 
 **The generator is not a unit-norm biquaternion.** The element $\tilde{G}=\sqrt{\lambda}e_t$ has biquaternion norm $\langle\tilde{G}\rangle_{\natural}=\lambda\,e_t\ne e_t$ for $\lambda\ne1$, so it lies outside $SL(2,\mathbb{C})$. The rotor group acts by isometries and preserves $\langle\cdot\rangle_{\natural}$; the dilation scales $\langle\cdot\rangle_{\natural}$, so it cannot be a member of that group. The dilation is realizable *by* the algebra but is not *of* the group of the algebra.
 
-**The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Y})$ is not $(\lambda\tilde{Q})(\lambda\tilde{Y})$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
+**The dilation is not an algebra automorphism.** Multiplication by a scalar is linear but not multiplicative: $\lambda(\tilde{Q}\tilde{Q}_1)$ is not $(\lambda\tilde{Q})(\lambda\tilde{Q}_1)$ for $\lambda\ne1$, a defect that was checked by direct computation on a non-commuting pair. So the dilation, unlike the rotations, cannot be read as a relabelling of the algebra's own product.
 
 **The dilation generator is not an inner derivation.** Its finite form, extended to all of $\mathbb{B}$ as $\lambda$ times the identity, has trace $8\lambda\ne0$; every inner derivation $\mathrm{ad}_{\tilde{A}}=[\tilde{A},\cdot\,]$ of the eight-dimensional algebra is traceless, and the infinitesimal generator likewise has trace $8$. The trace of $\mathrm{ad}_{\tilde{A}}$ was computed in a real basis for several random $\tilde{A}$ and vanishes, against $8$ for the identity. So no element of $\mathbb{B}$ generates the dilation by commutator. This is the precise sense in which one of the fifteen parameters sits half inside the algebra: expressible, but not a group element and not an inner derivation.
 

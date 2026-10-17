@@ -55,8 +55,8 @@ Throughout this article the product is the block.
 ## Definition
 
 **Definition (unit and inverse of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
-$\tilde E$ is a **left unit of $\star$** when $\tilde E\star\tilde X=\tilde X$ for every $\tilde X$, a
-**right unit of $\star$** when $\tilde X\star\tilde E=\tilde X$ for every $\tilde X$, and a **unit of
+$\tilde E$ is a **left unit of $\star$** when $\tilde E\star\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, a
+**right unit of $\star$** when $\tilde Q_1\star\tilde E=\tilde Q_1$ for every $\tilde Q_1$, and a **unit of
 $\star$** when it is both; a unital product has a unit. An element $\tilde Q$ is **invertible in $\star$**
 when there is a unit $\tilde E$ of $\star$ and an element $\tilde Q^{-1}$ with
 $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$; the invertible elements form the **group
@@ -67,7 +67,7 @@ the product is the block.
 
 ## The Absence of a Unit and of an Inverse
 
-**The block has no unit, so no element has an inverse and the group of units is empty; the unit candidate $e_t$ is not a unit and acts by the two conjugations, $e_t\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_t=\tilde X^{\natural}$.**
+**The block has no unit, so no element has an inverse and the group of units is empty; the unit candidate $e_t$ is not a unit and acts by the two conjugations, $e_t\star\tilde Q_1=\tilde Q_1^{*}$ and $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$.**
 
 **Theorem (the block has no unit).** The block has no left unit and no right unit; in particular it has no
 unit.
@@ -89,8 +89,8 @@ relation of an inverse has no right-hand side and no element satisfies it. The g
 the invertible elements, hence empty.
 
 **Remark (what $e_t$ does instead).** The unit candidate $e_t$ is not a unit, but its two one-sided actions
-are the two conjugations, $e_t\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_t=\tilde X^{\natural}$, so
-$e_t\star\tilde X=\tilde X$ holds exactly for the Hermitian elements and $\tilde X\star e_t=\tilde X$
+are the two conjugations, $e_t\star\tilde Q_1=\tilde Q_1^{*}$ and $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$, so
+$e_t\star\tilde Q_1=\tilde Q_1$ holds exactly for the Hermitian elements and $\tilde Q_1\star e_t=\tilde Q_1$
 exactly for the real ones; on $e_t+\vec e_x$, $e_t\star(e_t+\vec e_x)=e_t-\vec e_x$, so the unit candidate fails at the
 first witness. The two actions are *The Two One-Sided Actions and the Absence of a Unit*.
 
@@ -166,13 +166,13 @@ The absence of a unit does not leave the block without an invertibility notion; 
 of the element by the injectivity of its multiplication operator.
 
 **Theorem (the element and its operator).** For $\tilde Q\in\mathbb{B}$ the left multiplication
-$L^{\star}_{\tilde Q}:\tilde X\mapsto\tilde Q\star\tilde X$ is injective if and only if $\tilde Q$ is
+$L^{\star}_{\tilde Q}:\tilde Q_1\mapsto\tilde Q\star\tilde Q_1$ is injective if and only if $\tilde Q$ is
 regular, and then it is a conjugate-linear bijection of $\mathbb{B}$; when $\tilde Q$ is a zero divisor the
 rank is six in the non-pure family $\{Q_t\neq0,\ C(\tilde Q)=0\}$ and four in the pure family $\{Q_t=0\}$,
 and the rank is zero at the origin.
 
 *Proof.* The kernel of $L^{\star}_{\tilde Q}$ is the annihilator
-$A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\}$, of real dimension zero, two and four according to
+$A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\}$, of real dimension zero, two and four according to
 whether $\tilde Q$ is regular, a non-pure zero divisor or a pure zero divisor
 (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*), and of dimension eight at the origin; the rank
 is eight minus the dimension of the kernel. The origin is neither regular nor a zero divisor, so it is the
@@ -214,7 +214,7 @@ the Symmetric Quaternionic Sesqualgebra*.
 
 ## Worked Examples
 
-**A value with no inverse.** $\tilde Q=\vec e_x$: the equation $\vec e_x\star\tilde Y=\tilde E$ has no solution with a
+**A value with no inverse.** $\tilde Q=\vec e_x$: the equation $\vec e_x\star\tilde Q_2=\tilde E$ has no solution with a
 unit $\tilde E$, since there is no unit; and $\tilde Q$ is a pure zero divisor, so its left multiplication
 has rank four and is not injective.
 
@@ -231,8 +231,8 @@ block; it is an idempotent and a root of $+1$ and not a unit.
 ## Summary
 
 The block has no unit, so no element has an inverse and the group of units is empty; the unit candidate $e_t$
-acts by the two conjugations instead, $e_t\star\tilde X=\tilde X^{*}$ and
-$\tilde X\star e_t=\tilde X^{\natural}$. It carries one algebraic norm, the diagonal of its scalar-part form,
+acts by the two conjugations instead, $e_t\star\tilde Q_1=\tilde Q_1^{*}$ and
+$\tilde Q_1\star e_t=\tilde Q_1^{\natural}$. It carries one algebraic norm, the diagonal of its scalar-part form,
 the symmetric quaternionic sesquilinear algebraic norm
 
 $$
@@ -254,7 +254,7 @@ central square, not by $\langle\cdot\rangle_{\natural*}$.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde E\star\tilde X=\tilde X$ (left), $\tilde X\star\tilde E=\tilde X$ (right) | the unit equations; the block has no solution |
+| $\tilde E\star\tilde Q_1=\tilde Q_1$ (left), $\tilde Q_1\star\tilde E=\tilde Q_1$ (right) | the unit equations; the block has no solution |
 | $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$ | the inverse equation; empty without a unit |
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar-part form of the product |
 | $\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |

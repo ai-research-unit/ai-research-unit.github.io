@@ -14,7 +14,7 @@ the second of the four general products of the biquaternion algebra $\mathbb{B}$
 For an element $\tilde P$ the **left multiplication** is the map on $\mathbb{B}$ obtained by fixing $\tilde P$ in the first slot,
 
 $$
-L_{\tilde P}(\tilde X) = \tilde P\star\tilde X = \tilde P^{\natural}\tilde X ,
+L_{\tilde P}(\tilde Q_1) = \tilde P\star\tilde Q_1= \tilde P^{\natural}\tilde Q_1,
 $$
 
 a linear endomorphism of $\mathbb{B}$. For an arbitrary non-associative product the composite of two left multiplications has no reason to be a left multiplication. Here it always is.
@@ -25,7 +25,7 @@ $$
 L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P} ,
 $$
 
-the product on the right being the *plain* product of the algebra, so that the set of left multiplications is a monoid isomorphic to the **opposite** of the multiplicative monoid of $\mathbb{B}$ — although $\star$ is not associative. Second, the right multiplications of the product do not close under composition, and the closed family on the right is the twisted one $\tilde X\mapsto\tilde X\tilde P^{\natural}$, whose law is the **direct** one, $\varrho_{\tilde P}\circ \varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$. Third, the mixed composites $L_{\tilde P}\circ \varrho_{\tilde Q}$ commute and span the full endomorphism algebra, the multiplication algebra of $\mathbb{B}$, of dimension sixteen. Fourth, this is exactly the row of the property table of *Comparison Between the Four General Products* on the left multiplications, which reads yes for the two bilinear products and no for the two sesquilinear ones.
+the product on the right being the *plain* product of the algebra, so that the set of left multiplications is a monoid isomorphic to the **opposite** of the multiplicative monoid of $\mathbb{B}$ — although $\star$ is not associative. Second, the right multiplications of the product do not close under composition, and the closed family on the right is the twisted one $\tilde Q_1\mapsto\tilde Q_1\tilde P^{\natural}$, whose law is the **direct** one, $\varrho_{\tilde P}\circ \varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$. Third, the mixed composites $L_{\tilde P}\circ \varrho_{\tilde Q}$ commute and span the full endomorphism algebra, the multiplication algebra of $\mathbb{B}$, of dimension sixteen. Fourth, this is exactly the row of the property table of *Comparison Between the Four General Products* on the left multiplications, which reads yes for the two bilinear products and no for the two sesquilinear ones.
 
 ## The Left Multiplications
 
@@ -37,10 +37,10 @@ $$
 
 where $\tilde R\tilde P$ is the plain product of the algebra.
 
-**Proof.** For every $\tilde X$,
+**Proof.** For every $\tilde Q_1$,
 
 $$
-L_{\tilde P}\bigl(L_{\tilde R}(\tilde X)\bigr) = \tilde P^{\natural}\bigl(\tilde R^{\natural}\tilde X\bigr) = \bigl(\tilde P^{\natural}\tilde R^{\natural}\bigr)\tilde X = \bigl(\tilde R\tilde P\bigr)^{\natural}\tilde X = L_{\tilde R\tilde P}(\tilde X) ,
+L_{\tilde P}\bigl(L_{\tilde R}(\tilde Q_1)\bigr) = \tilde P^{\natural}\bigl(\tilde R^{\natural}\tilde Q_1\bigr) = \bigl(\tilde P^{\natural}\tilde R^{\natural}\bigr)\tilde Q_1= \bigl(\tilde R\tilde P\bigr)^{\natural}\tilde Q_1= L_{\tilde R\tilde P}(\tilde Q_1) ,
 $$
 
 using the associativity of the plain product in the middle step and the fact that ${}^{\natural}$ is an anti-automorphism of order two, $\tilde P^{\natural}\tilde R^{\natural} = (\tilde R\tilde P)^{\natural}$, in the third.
@@ -55,7 +55,7 @@ $$
 
 the opposite of the multiplicative monoid of $\mathbb{B}$.
 
-**Proof.** Closure and the identity are read off the law: $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ is again a left multiplication, and $L_{e_t}(\tilde X) = e_t^{\natural}\tilde X = \tilde X$. The law $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ is exactly the statement that the assignment reverses the order of a product, so it is an anti-homomorphism; it is surjective onto $M_L$ by definition and injective because $L_{\tilde P} = L_{\tilde R}$ forces $\tilde P^{\natural} = L_{\tilde P}(e_t) = L_{\tilde R}(e_t) = \tilde R^{\natural}$ and hence $\tilde P = \tilde R$.
+**Proof.** Closure and the identity are read off the law: $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ is again a left multiplication, and $L_{e_t}(\tilde Q_1) = e_t^{\natural}\tilde Q_1= \tilde Q_1$. The law $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ is exactly the statement that the assignment reverses the order of a product, so it is an anti-homomorphism; it is surjective onto $M_L$ by definition and injective because $L_{\tilde P} = L_{\tilde R}$ forces $\tilde P^{\natural} = L_{\tilde P}(e_t) = L_{\tilde R}(e_t) = \tilde R^{\natural}$ and hence $\tilde P = \tilde R$.
 
 **Corollary (the units).** The left multiplication $L_{\tilde P}$ is invertible in $M_L$ exactly when $\tilde P$ is a unit of the algebra, that is exactly when $\langle\tilde P\rangle_{\natural} \neq 0$; the group of units of $M_L$ is therefore isomorphic to the group $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ with reversed product.
 
@@ -65,19 +65,19 @@ the opposite of the multiplicative monoid of $\mathbb{B}$.
 
 ## The Right Multiplications
 
-**Theorem (the right multiplications of the product do not close).** Let $R_{\tilde P}(\tilde X) = \tilde X\star\tilde P = \tilde X^{\natural}\tilde P$ be the right multiplication of $\star$ by $\tilde P$. Then the composite of two of them is
+**Theorem (the right multiplications of the product do not close).** Let $R_{\tilde P}(\tilde Q_1) = \tilde Q_1\star\tilde P = \tilde Q_1^{\natural}\tilde P$ be the right multiplication of $\star$ by $\tilde P$. Then the composite of two of them is
 
 $$
-R_{\tilde P}\circ R_{\tilde Q}(\tilde X) = \bigl(\tilde X^{\natural}\tilde Q\bigr)^{\natural}\tilde P = \tilde Q^{\natural}\,\tilde X\,\tilde P ,
+R_{\tilde P}\circ R_{\tilde Q}(\tilde Q_1) = \bigl(\tilde Q_1^{\natural}\tilde Q\bigr)^{\natural}\tilde P = \tilde Q^{\natural}\,\tilde Q_1\,\tilde P ,
 $$
 
-which is the plain product of $\tilde Q^{\natural}$, $\tilde X$ and $\tilde P$ in that order; and it is not a right multiplication of $\star$ unless it happens to coincide with one. At $\tilde P = \tilde Q = \vec e_x$ the composite sends $e_t$ to $e_t$ and $\vec e_x$ to $\vec e_x$, whereas a right multiplication $\tilde X\mapsto\tilde X^{\natural}\tilde A$ with the same value at $e_t$ has $\tilde A = e_t$ and sends $\vec e_x$ to $-\vec e_x$.
+which is the plain product of $\tilde Q^{\natural}$, $\tilde Q_1$ and $\tilde P$ in that order; and it is not a right multiplication of $\star$ unless it happens to coincide with one. At $\tilde P = \tilde Q = \vec e_x$ the composite sends $e_t$ to $e_t$ and $\vec e_x$ to $\vec e_x$, whereas a right multiplication $\tilde Q_1\mapsto\tilde Q_1^{\natural}\tilde A$ with the same value at $e_t$ has $\tilde A = e_t$ and sends $\vec e_x$ to $-\vec e_x$.
 
-**Proof.** The first display is the computation $(\tilde X^{\natural}\tilde Q)^{\natural} = \tilde Q^{\natural}\tilde X$ followed by the plain product with $\tilde P$; the witness is the evaluation $R_{\vec e_x}R_{\vec e_x}(e_t) = e_t$ and $R_{\vec e_x}R_{\vec e_x}(\vec e_x) = \vec e_x$.
+**Proof.** The first display is the computation $(\tilde Q_1^{\natural}\tilde Q)^{\natural} = \tilde Q^{\natural}\tilde Q_1$ followed by the plain product with $\tilde P$; the witness is the evaluation $R_{\vec e_x}R_{\vec e_x}(e_t) = e_t$ and $R_{\vec e_x}R_{\vec e_x}(\vec e_x) = \vec e_x$.
 
 The family that does close on the right is the one with the conjugation on the side of the multiplier, the mirror of the left multiplications.
 
-**Theorem (the twisted right multiplications).** Define $\varrho_{\tilde P}(\tilde X) = \tilde X\,\tilde P^{\natural}$, the plain right multiplication by $\tilde P^{\natural}$. Then
+**Theorem (the twisted right multiplications).** Define $\varrho_{\tilde P}(\tilde Q_1) = \tilde Q_1\,\tilde P^{\natural}$, the plain right multiplication by $\tilde P^{\natural}$. Then
 
 $$
 \varrho_{\tilde P}\circ \varrho_{\tilde R} = \varrho_{\tilde P\tilde R} ,
@@ -85,25 +85,25 @@ $$
 
 the **direct** law, and $M_R = \{\varrho_{\tilde P}\}$ is a monoid containing $\varrho_{e_t} = \mathrm{id}_{\mathbb{B}}$ and isomorphic to the multiplicative monoid $\mathbb{B}$ itself.
 
-**Proof.** $\varrho_{\tilde P}(\varrho_{\tilde R}(\tilde X)) = \tilde X\tilde R^{\natural}\tilde P^{\natural} = \tilde X(\tilde P\tilde R)^{\natural} = \varrho_{\tilde P\tilde R}(\tilde X)$, by the associativity of the plain product and the anti-automorphism property; the identity is $\varrho_{e_t}(\tilde X) = \tilde X e_t^{\natural} = \tilde X$, and injectivity is read at $e_t$ as before.
+**Proof.** $\varrho_{\tilde P}(\varrho_{\tilde R}(\tilde Q_1)) = \tilde Q_1\tilde R^{\natural}\tilde P^{\natural} = \tilde Q_1(\tilde P\tilde R)^{\natural} = \varrho_{\tilde P\tilde R}(\tilde Q_1)$, by the associativity of the plain product and the anti-automorphism property; the identity is $\varrho_{e_t}(\tilde Q_1) = \tilde Q_1e_t^{\natural} = \tilde Q_1$, and injectivity is read at $e_t$ as before.
 
-**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde P^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L^{\mathrm{plain}}_{\tilde P^{\natural}}\}$ and the right family is $M_R = \{R^{\mathrm{plain}}_{\tilde P^{\natural}}\}$, with $M_L\cong\mathbb{B}^{\mathrm{opp}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ and $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
+**Remark (why the two laws are opposite).** The asymmetry is the asymmetry of the product itself: in $\tilde P\star\tilde Q_1= \tilde P^{\natural}\tilde Q_1$ the conjugation sits on the **first** slot, so the left multiplication is the plain left multiplication by $\tilde P^{\natural}$ and the right multiplication of the product is not the plain right multiplication by anything. Writing both operators with the conjugation attached to the multiplier restores the mirror symmetry: the left family is $M_L = \{L^{\mathrm{plain}}_{\tilde P^{\natural}}\}$ and the right family is $M_R = \{R^{\mathrm{plain}}_{\tilde P^{\natural}}\}$, with $M_L\cong\mathbb{B}^{\mathrm{opp}}$ and $M_R\cong\mathbb{B}$. The pair of laws $L_{\tilde P}L_{\tilde R} = L_{\tilde R\tilde P}$ and $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ is the exact form in which the two-sidedness of the plain product survives the twisting of a single slot.
 
 ## The Mixed Compositions
 
 **Theorem (the mixed composites commute).** For all $\tilde P,\tilde Q \in \mathbb{B}$,
 
 $$
-L_{\tilde P}\circ \varrho_{\tilde Q} = \varrho_{\tilde Q}\circ L_{\tilde P} , \qquad L_{\tilde P}\circ \varrho_{\tilde Q}(\tilde X) = \tilde P^{\natural}\tilde X\tilde Q^{\natural} .
+L_{\tilde P}\circ \varrho_{\tilde Q} = \varrho_{\tilde Q}\circ L_{\tilde P} , \qquad L_{\tilde P}\circ \varrho_{\tilde Q}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1\tilde Q^{\natural} .
 $$
 
-**Proof.** Both sides send $\tilde X$ to $\tilde P^{\natural}\tilde X\tilde Q^{\natural}$ by the associativity of the plain product.
+**Proof.** Both sides send $\tilde Q_1$ to $\tilde P^{\natural}\tilde Q_1\tilde Q^{\natural}$ by the associativity of the plain product.
 
 **Theorem (the multiplication algebra).** The complex span of the operators $\{L_{\tilde P}\circ \varrho_{\tilde Q} : \tilde P,\tilde Q \in \mathbb{B}\}$ is closed under composition and is all of the endomorphism algebra $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen.
 
-**Proof.** Closure: $\bigl(L_{\tilde P}\varrho_{\tilde Q}\bigr)\bigl(L_{\tilde A}\varrho_{\tilde B}\bigr) = L_{\tilde P}L_{\tilde A}\varrho_{\tilde Q}\varrho_{\tilde B} = L_{\tilde A\tilde P}\varrho_{\tilde Q\tilde B}$, by the two composition laws and the commutation of the mixed pair. For the dimension, $\mathbb{B}$ is isomorphic to the matrix algebra $M_2(\mathbb{C})$, and the operators of the form $\tilde X\mapsto \tilde P\tilde X\tilde Q$ on $M_2(\mathbb{C})$ span the whole $\mathrm{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, of dimension $4^2 = 16$, because the elementary matrices realise every prescribed action on a matrix unit. The twist ${}^{\natural}$ is a bijection of $\mathbb{B}$, so the family $\{L_{\tilde P}\varrho_{\tilde Q}\}$ has the same span.
+**Proof.** Closure: $\bigl(L_{\tilde P}\varrho_{\tilde Q}\bigr)\bigl(L_{\tilde A}\varrho_{\tilde Q_2}\bigr) = L_{\tilde P}L_{\tilde A}\varrho_{\tilde Q}\varrho_{\tilde Q_2} = L_{\tilde A\tilde P}\varrho_{\tilde Q\tilde Q_2}$, by the two composition laws and the commutation of the mixed pair. For the dimension, $\mathbb{B}$ is isomorphic to the matrix algebra $M_2(\mathbb{C})$, and the operators of the form $\tilde Q_1\mapsto \tilde P\tilde Q_1\tilde Q$ on $M_2(\mathbb{C})$ span the whole $\mathrm{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, of dimension $4^2 = 16$, because the elementary matrices realise every prescribed action on a matrix unit. The twist ${}^{\natural}$ is a bijection of $\mathbb{B}$, so the family $\{L_{\tilde P}\varrho_{\tilde Q}\}$ has the same span.
 
-**Remark.** The closure computation is the pleasant surprise of the section: the two composition laws have opposite orders, and the opposite orders cancel in the mixed composite, $L_{\tilde P}L_{\tilde A}\varrho_{\tilde Q}\varrho_{\tilde B} = L_{\tilde A\tilde P}\varrho_{\tilde Q\tilde B}$, which is again of the required form. The algebra generated is therefore not merely a monoid but a full matrix algebra, and it carries no trace of the failure of associativity of $\star$; the failure is visible on the element level, not on the level of the operators.
+**Remark.** The closure computation is the pleasant surprise of the section: the two composition laws have opposite orders, and the opposite orders cancel in the mixed composite, $L_{\tilde P}L_{\tilde A}\varrho_{\tilde Q}\varrho_{\tilde Q_2} = L_{\tilde A\tilde P}\varrho_{\tilde Q\tilde Q_2}$, which is again of the required form. The algebra generated is therefore not merely a monoid but a full matrix algebra, and it carries no trace of the failure of associativity of $\star$; the failure is visible on the element level, not on the level of the operators.
 
 **Remark (which pair commutes).** What commutes is $L_{\tilde P}$ with the **twisted** right multiplication $\varrho_{\tilde Q}$, not with the right multiplication of the product: $L_{\tilde P}$ and $R_{\tilde P}$ do not commute, and at $\tilde P = \vec e_z$ the two composites send $e_t$ to $e_t$ and to $-e_t$, since $L_{\vec e_z}R_{\vec e_z}(e_t) = e_t$ and $R_{\vec e_z}L_{\vec e_z}(e_t) = -e_t$. This is the failure of flexibility of the third article read at the level of the operators, and it is why the multiplication algebra is built from $L$ and $\varrho$ and not from $L$ and $R$.
 
@@ -124,7 +124,7 @@ The two bilinear columns are the two this article has just settled: for the asso
 
 ## Summary
 
-The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X) = \tilde P^{\natural}\tilde X$, and they compose by the reversed law $L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_t}$, and $\tilde P\mapsto L_{\tilde P}$ is an isomorphism $M_L\cong\mathbb{B}^{\mathrm{opp}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q^{\natural}\tilde X\tilde P$; the closed family is the twisted one $\varrho_{\tilde P}(\tilde X) = \tilde X\tilde P^{\natural}$, with the direct law $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde P}\varrho_{\tilde Q} = \varrho_{\tilde Q}L_{\tilde P}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
+The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde Q_1) = \tilde P^{\natural}\tilde Q_1$, and they compose by the reversed law $L_{\tilde P}\circ L_{\tilde R} = L_{\tilde R\tilde P}$, the product on the right being the plain product of the algebra; the set $M_L$ is a monoid with identity $L_{e_t}$, and $\tilde P\mapsto L_{\tilde P}$ is an isomorphism $M_L\cong\mathbb{B}^{\mathrm{opp}}$ onto the opposite of the multiplicative monoid, although $\star$ is not associative. The right multiplications of $\star$ do not close, their composite being $\tilde Q^{\natural}\tilde Q_1\tilde P$; the closed family is the twisted one $\varrho_{\tilde P}(\tilde Q_1) = \tilde Q_1\tilde P^{\natural}$, with the direct law $\varrho_{\tilde P}\varrho_{\tilde R} = \varrho_{\tilde P\tilde R}$ and $M_R\cong\mathbb{B}$. The mixed composites commute, $L_{\tilde P}\varrho_{\tilde Q} = \varrho_{\tilde Q}L_{\tilde P}$, are closed under composition, and span the whole endomorphism algebra, of dimension sixteen. This is the row of the property table on the left multiplications, where the two bilinear products read yes and the two sesquilinear ones read no; it is the batch's one positive structure theorem, and its content is that the associativity of the plain product, read through the anti-automorphism ${}^{\natural}$, is exactly what survives as the composition law of the operators.
 
 ## Summary of Notation
 
@@ -136,9 +136,9 @@ The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)
 | ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_t - \vec P$ |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
-| $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ |
-| $R_{\tilde P}$ | the right multiplication of the product, $\tilde X\mapsto\tilde X\star\tilde P = \tilde X^{\natural}\tilde P$ |
-| $\varrho_{\tilde P}$ | the twisted right multiplication $\tilde X\mapsto\tilde X\tilde P^{\natural}$ |
+| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1= \tilde P^{\natural}\tilde Q_1$ |
+| $R_{\tilde P}$ | the right multiplication of the product, $\tilde Q_1\mapsto\tilde Q_1\star\tilde P = \tilde Q_1^{\natural}\tilde P$ |
+| $\varrho_{\tilde P}$ | the twisted right multiplication $\tilde Q_1\mapsto\tilde Q_1\tilde P^{\natural}$ |
 | $M_L$, $M_R$ | the monoids of left and of twisted right multiplications |
 | $M_L \cong \mathbb{B}^{\mathrm{opp}}$, $M_R \cong \mathbb{B}$ | the two isomorphism statements |
 | $\langle\tilde P\rangle_{\natural}$ | the norm, so that $\tilde P$ is a unit exactly when $\langle\tilde P\rangle_{\natural}\neq0$ |

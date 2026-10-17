@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The twisted two-sided operator $\Theta_{\tilde A}(\tilde Y)=\tilde A\tilde Y\tilde A^{\natural}$ is an automorphism of the general quaternionic bilinear form exactly when $\langle\tilde A\rangle_{\natural}=\pm1$, and it is multiplicative in the parameter, $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$. The set of parameters with $N=\pm1$ is therefore a group that acts on the algebra by automorphisms through $\Theta$, and the assignment is two-to-one; this article reads the group, its two constituents, the versors and the sandwich they carry on the vector subspace, and the reflections of that subspace.
+The twisted two-sided operator $\Theta_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1\tilde A^{\natural}$ is an automorphism of the general quaternionic bilinear form exactly when $\langle\tilde A\rangle_{\natural}=\pm1$, and it is multiplicative in the parameter, $\Theta_{\tilde A}\Theta_{\tilde Q_2}=\Theta_{\tilde A\tilde Q_2}$. The set of parameters with $N=\pm1$ is therefore a group that acts on the algebra by automorphisms through $\Theta$, and the assignment is two-to-one; this article reads the group, its two constituents, the versors and the sandwich they carry on the vector subspace, and the reflections of that subspace.
 
 The two constituents are the **pin group** $\mathrm{Pin}=\{\tilde A\in\mathbb{B}^\times:\langle\tilde A\rangle_{\natural}=\pm1\}$ and the **spin group** $\mathrm{Spin}=\{\tilde A\in\mathbb{B}^\times:\langle\tilde A\rangle_{\natural}=1\}$, the latter of index two. The twisted operator is *Two-Sided Operators on the General Quaternionic Algebra*; the one-sided factors are *One-Sided Operators on the General Quaternionic Algebra*; the form and its orthogonal group are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*; the unit group into which both groups sit is *The Biquaternion Unit Group as a Topological Group*; the general Clifford theory of the pin and spin groups is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, of which this is the biquaternion instance; and the vector subspace and the reflection are *Introduction to the Remarkable Subspaces* and *Biquaternion Rotations and Lorentz Transformations*.
 
@@ -20,7 +20,7 @@ $$
 
 **Proposition (they are groups, and $\mathrm{Spin}$ has index two).** Both are subgroups of the unit group, closed under multiplication and inverse; $\mathrm{Spin}=\mathrm{Pin}\cap\ker N$ is normal of index two in $\mathrm{Pin}$, and the quotient is $\mathrm{Pin}/\mathrm{Spin}\cong\{\pm1\}$ through the norm.
 
-*Proof.* The norm is multiplicative and central, so if $\langle\tilde A\rangle_{\natural},\langle\tilde B\rangle_{\natural}\in\{\pm1\}$ then $\langle\tilde A\tilde B\rangle_{\natural}\in\{\pm1\}$ and $\langle\tilde A^{-1}\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{-1}=\langle\tilde A\rangle_{\natural}$; this makes $\mathrm{Pin}$ a group and $\mathrm{Spin}$, its norm-one part, a subgroup. The norm is a homomorphism onto $\{\pm1\}$ on $\mathrm{Pin}$, hence $\mathrm{Pin}/\mathrm{Spin}\cong\{\pm1\}$.
+*Proof.* The norm is multiplicative and central, so if $\langle\tilde A\rangle_{\natural},\langle\tilde Q_2\rangle_{\natural}\in\{\pm1\}$ then $\langle\tilde A\tilde Q_2\rangle_{\natural}\in\{\pm1\}$ and $\langle\tilde A^{-1}\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{-1}=\langle\tilde A\rangle_{\natural}$; this makes $\mathrm{Pin}$ a group and $\mathrm{Spin}$, its norm-one part, a subgroup. The norm is a homomorphism onto $\{\pm1\}$ on $\mathrm{Pin}$, hence $\mathrm{Pin}/\mathrm{Spin}\cong\{\pm1\}$.
 
 **Remark (the two constituents and the real shadow).** $\mathrm{Pin}$ is the disjoint union $\mathrm{Spin}\sqcup\{N=-1\}$: the norm-one shell, a complex hypersurface of complex dimension $3$, and the norm-minus-one shell, its $i$-translate, since $\langle i\tilde A\rangle_{\natural}=i^{2}\langle\tilde A\rangle_{\natural}=-\langle\tilde A\rangle_{\natural}$ and the two shells are the same set moved by the central scalar $i$. On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the norm is positive definite, $\langle\tilde Q\rangle_{\natural}=\sum_\mu q_\mu^{2}\geq0$, so only the condition $\langle\cdot\rangle_{\natural}=1$ is met there, on the norm-one set $S^{3}\cong SU(2)\cong\mathrm{Spin}(3)$, and no element of $\mathbb{H}_{\mathbb{B}}$ has norm minus one; the norm-minus-one elements need the imaginary directions, the simplest being $ie_t$. On the complex algebra both shells meet the null cone.
 
@@ -43,7 +43,7 @@ $$
 \mathrm{Pin}/\{\pm e_t\}\ \cong\ \{\Theta_{\tilde A}:\langle\tilde A\rangle_{\natural}=\pm1\}\ \subset\ O(\mathbb{B},N).
 $$
 
-*Proof.* The composition law $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$ makes the assignment a homomorphism; the preservation condition is $\langle\Theta_{\tilde A}\tilde X\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{2}\langle\tilde X\rangle_{\natural}$, which is preservation exactly for $\langle\tilde A\rangle_{\natural}=\pm1$; and the kernel is $\{\pm e_t\}$ by the injectivity up to sign of the assignment, $\Theta_{\tilde A}=\Theta_{\tilde B}$ for units being $\tilde B=\pm\tilde A$.
+*Proof.* The composition law $\Theta_{\tilde A}\Theta_{\tilde Q_2}=\Theta_{\tilde A\tilde Q_2}$ makes the assignment a homomorphism; the preservation condition is $\langle\Theta_{\tilde A}\tilde Q_1\rangle_{\natural}=\langle\tilde A\rangle_{\natural}^{2}\langle\tilde Q_1\rangle_{\natural}$, which is preservation exactly for $\langle\tilde A\rangle_{\natural}=\pm1$; and the kernel is $\{\pm e_t\}$ by the injectivity up to sign of the assignment, $\Theta_{\tilde A}=\Theta_{\tilde Q_2}$ for units being $\tilde Q_2=\pm\tilde A$.
 
 **Proposition (the norm-one image is the rotation group of the vector subspace).** On $\mathrm{Spin}$ the twisted operator is the inner automorphism, $\Theta_{\tilde A}=\mathrm{Ad}_{\tilde A}$ for $\langle\tilde A\rangle_{\natural}=1$, and the image is the group of inner automorphisms of the algebra,
 
@@ -55,7 +55,7 @@ of complex dimension $3$, acting on $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus V$
 
 *Proof.* On the norm-one shell $\tilde A^{\natural}=\tilde A^{-1}$ and the operator is $\langle\tilde A\rangle_{\natural}\mathrm{Ad}_{\tilde A}=\mathrm{Ad}_{\tilde A}$, an algebra automorphism; a conjugation fixes the centre and preserves the trace-zero subspace $V$, and every automorphism of $\mathbb{B}\cong M_2(\mathbb{C})$ is inner by the Skolem–Noether theorem, while a scalar may be rescaled to norm one over $\mathbb{C}$, so the image is the whole inner automorphism group; $\mathrm{Inn}(M_2(\mathbb{C}))=PGL_2(\mathbb{C})$, and $PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ is the classical isomorphism, acting on the three-dimensional traceless subspace by the rotations preserving the norm. The kernel is again $\{\pm e_t\}$, which is the classical two-to-one cover.
 
-**Remark (what the norm-minus-one part adds).** The elements of norm minus one give operators that are multiplicative up to the sign, $\Theta_{\tilde A}(\tilde Y)\Theta_{\tilde A}(\tilde Z)=\langle\tilde A\rangle_{\natural}\Theta_{\tilde A}(\tilde Y\tilde Z)=-\Theta_{\tilde A}(\tilde Y\tilde Z)$; they are automorphisms of the form all the same, and they are exactly the coset that makes the cover $\mathrm{Pin}\to\{\Theta\}$ larger than the rotation cover. The two cosets of $\mathrm{Spin}$ in $\mathrm{Pin}$ cover the automorphisms and the twisted maps.
+**Remark (what the norm-minus-one part adds).** The elements of norm minus one give operators that are multiplicative up to the sign, $\Theta_{\tilde A}(\tilde Q_1)\Theta_{\tilde A}(\tilde Q_3)=\langle\tilde A\rangle_{\natural}\Theta_{\tilde A}(\tilde Q_1\tilde Q_3)=-\Theta_{\tilde A}(\tilde Q_1\tilde Q_3)$; they are automorphisms of the form all the same, and they are exactly the coset that makes the cover $\mathrm{Pin}\to\{\Theta\}$ larger than the rotation cover. The two cosets of $\mathrm{Spin}$ in $\mathrm{Pin}$ cover the automorphisms and the twisted maps.
 
 ## Versors and the Sandwich Action
 
@@ -142,8 +142,8 @@ The pin group of the general quaternionic bilinear form is $\mathrm{Pin}=\{\tild
 |---|---|
 | $\mathrm{Pin}=\{N=\pm1\}$ | The pin group; two cosets, kernel of the cover $\{\pm e_t\}$ |
 | $\mathrm{Spin}=\{N=1\}=\ker N$ | The spin group; index two, normal; $SL_2(\mathbb{C})$ |
-| $\Theta_{\tilde A}(\tilde Y)=\tilde A\tilde Y\tilde A^{\natural}$ | The action of the pin group on the algebra |
-| $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$, kernel $\{\pm e_t\}$ | The two-to-one cover |
+| $\Theta_{\tilde A}(\tilde Q_1)=\tilde A\tilde Q_1\tilde A^{\natural}$ | The action of the pin group on the algebra |
+| $\Theta_{\tilde A}\Theta_{\tilde Q_2}=\Theta_{\tilde A\tilde Q_2}$, kernel $\{\pm e_t\}$ | The two-to-one cover |
 | $\Theta(\mathrm{Spin})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace |
 | $\tilde R_1\cdots\tilde R_k$, $\langle\tilde R_j\rangle_{\natural}\neq0$ | A versor, and the Lipschitz group it generates |
 | $\langle\tilde A\rangle_{\natural}=\prod_jN(\tilde R_j)$ | The norm multiplies over the factors of a versor |

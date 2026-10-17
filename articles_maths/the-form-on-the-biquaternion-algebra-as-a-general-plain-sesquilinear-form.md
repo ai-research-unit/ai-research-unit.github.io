@@ -65,7 +65,7 @@ $$
 h(\tilde{P}\tilde{Q},\tilde{R}) = h(\tilde{Q},\tilde{P}^{*}\tilde{R}), \qquad \text{equivalently} \qquad (L_{\tilde{P}})^{h} = L_{\tilde{P}^{*}} .
 $$
 
-Hence $(\mathbb{B},{}^{*},h)$ is an object of the layer, the left multiplications of the sesqualgebra $\tilde{P} \star \tilde{X} = \tilde{P}\tilde{X}^{*}$ are the layer's $\varsigma$-semilinear operators and the right multiplications its $R$-linear ones, and every operator statement of the layer applies to it as *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* records.
+Hence $(\mathbb{B},{}^{*},h)$ is an object of the layer, the left multiplications of the sesqualgebra $\tilde{P} \star \tilde{Q}_1 = \tilde{P}\tilde{Q}_1^{*}$ are the layer's $\varsigma$-semilinear operators and the right multiplications its $R$-linear ones, and every operator statement of the layer applies to it as *The Left and Right Multiplications of the Biquaternioid Sesqualgebra* records.
 
 *Proof.* The Hermitian property is $\operatorname{Sc}(\tilde{P}\tilde{Q}^{*}) = \varsigma(\operatorname{Sc}(\tilde{Q}\tilde{P}^{*}))$, and the diagonal is $\sum_{\mu}\lvert Q_{\mu}\rvert^{2}$, coefficientwise, so the form is positive definite and its Gram matrix is $\mathrm{I}_{4}$; this is *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, §*The Four Forms* and §*The Table of the Four Forms*, and the Hilbert structure is *Norm and Invertibility in the General Quaternionic Algebra*, §*The Norm and the Hermitian Form*. For the compatibility, expand the right side,
 
@@ -118,7 +118,7 @@ of which the second equality is the self-adjointness, and on the eigenspaces $g$
 **Theorem (the unitary slice).** The unitary elements of the layer, $U = \{\tilde{U} : \tilde{U}^{*}\tilde{U} = e_{0}\} = \{\tilde{U} : \tilde{U}\tilde{U}^{*} = e_{0}\}$, form a group acting on the right and on the left by isometries of $h$,
 
 $$
-h(\tilde{U}\tilde{X},\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{Y}) = h(\tilde{X}\tilde{U},\tilde{Y}\tilde{U}),
+h(\tilde{U}\tilde{Q}_1,\tilde{U}\tilde{Q}_2) = h(\tilde{Q}_1,\tilde{Q}_2) = h(\tilde{Q}_1\tilde{U},\tilde{Q}_2\tilde{U}),
 $$
 
 and on the slice
@@ -127,9 +127,9 @@ $$
 h(\tilde{U},\tilde{U}) = 1, \qquad g(\tilde{U},\tilde{U}) = 2\lvert U_{0}\rvert^{2} - 1 \in [-1,1],
 $$
 
-so the slice lies in the set $\{\tilde{X} : \lvert g(\tilde{X},\tilde{X})\rvert \leq h(\tilde{X},\tilde{X}) = 1\}$ of the definite form and meets the $g$-null set exactly in the set $\lvert U_{0}\rvert = 1/\sqrt{2}$ of the "balanced" unitary elements. The slice is the layer's unitary group, and as a group it is $\mathrm{U}(2)$.
+so the slice lies in the set $\{\tilde{Q}_1 : \lvert g(\tilde{Q}_1,\tilde{Q}_1)\rvert \leq h(\tilde{Q}_1,\tilde{Q}_1) = 1\}$ of the definite form and meets the $g$-null set exactly in the set $\lvert U_{0}\rvert = 1/\sqrt{2}$ of the "balanced" unitary elements. The slice is the layer's unitary group, and as a group it is $\mathrm{U}(2)$.
 
-*Proof.* The isometry is the compatibility read twice, $h(\tilde{U}\tilde{X},\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{U}^{*}\tilde{U}\tilde{Y}) = h(\tilde{X},\tilde{Y})$, and the same on the right; the value $h(\tilde{U},\tilde{U}) = \operatorname{Sc}(\tilde{U}\tilde{U}^{*}) = \operatorname{Sc}(e_{0}) = 1$; for the indefinite form, $g(\tilde{U},\tilde{U}) = \sum_{\mu}\varepsilon_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - \sum_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - 1$ because $\sum_{\mu}\lvert U_{\mu}\rvert^{2} = 1$. The group is *The Unitary Group of the Biquaternion Algebra*, where the identification with $\mathrm{U}(2)$ and the identification of the isometry property with $\tilde{U}^{*}\tilde{U} = e_{0}$ are established.
+*Proof.* The isometry is the compatibility read twice, $h(\tilde{U}\tilde{Q}_1,\tilde{U}\tilde{Q}_2) = h(\tilde{Q}_1,\tilde{U}^{*}\tilde{U}\tilde{Q}_2) = h(\tilde{Q}_1,\tilde{Q}_2)$, and the same on the right; the value $h(\tilde{U},\tilde{U}) = \operatorname{Sc}(\tilde{U}\tilde{U}^{*}) = \operatorname{Sc}(e_{0}) = 1$; for the indefinite form, $g(\tilde{U},\tilde{U}) = \sum_{\mu}\varepsilon_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - \sum_{\mu}\lvert U_{\mu}\rvert^{2} = 2\lvert U_{0}\rvert^{2} - 1$ because $\sum_{\mu}\lvert U_{\mu}\rvert^{2} = 1$. The group is *The Unitary Group of the Biquaternion Algebra*, where the identification with $\mathrm{U}(2)$ and the identification of the isometry property with $\tilde{U}^{*}\tilde{U} = e_{0}$ are established.
 
 **Remark (the layer's unitary group and the isometry group of the indefinite form).** The elements of the slice are exactly the elements preserving $h$, which is the layer's unitary group of the pair $(\mathbb{B},{}^{*},h)$, and the operators preserving the indefinite form $g$ form the indefinite unitary group $\mathrm{U}(1,3)$ of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, §*The Isometry Groups of the Four Forms*; the two are different objects, the first an isometry group of the layer's form and the second the isometry group of a form on the algebra. The unitary slice is the layer's object and *The Unitary Group of the Biquaternion Algebra* is its article; the $g$-isometries are *Unitary and Isometric Operators of the Form* read in the indefinite signature, and their spectral theory is *The Indefinite Spectra of the Operators on the Biquaternion Algebra* and *The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra*.
 

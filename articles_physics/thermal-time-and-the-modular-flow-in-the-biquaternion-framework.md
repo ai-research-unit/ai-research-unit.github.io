@@ -168,11 +168,11 @@ The statement "the state defines the time" is not a reinterpretation of a pre-ex
 
 The state is a KMS state with respect to the inverse of its own modular flow, at the modular inverse temperature. Concretely, with the orientation convention of the KMS and Tomita–Takesaki companion articles, in which the flow carrying the boundary relation is $\sigma_{-t}$,
 $$
-F_{\tilde A\tilde B}(t)=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A\,\alpha_t(\tilde B)\big),
+F_{\tilde A\tilde Q_1}(t)=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A\,\alpha_t(\tilde Q_1)\big),
 \qquad
-\alpha_t\big(\tilde B\big)=\tilde{Ϛ}^{-it}\tilde B\,\tilde{Ϛ}^{\,it},
+\alpha_t\big(\tilde Q_1\big)=\tilde{Ϛ}^{-it}\tilde Q_1\,\tilde{Ϛ}^{\,it},
 \qquad
-F_{\tilde A\tilde B}(t+i)=F_{\tilde B\tilde A}(-t),
+F_{\tilde A\tilde Q_1}(t+i)=F_{\tilde Q_1\tilde A}(-t),
 $$
 and the boundary relation was verified on the faithful state of the Reeh–Schlieder companion article, the two sides there agreeing to below $10^{-14}$. The modular flow and the KMS property are therefore two statements of the same fact — the state is thermal for $\sigma_{-t}$ — and thermal time is the name of the modular flow.
 
@@ -247,7 +247,7 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 | $\tilde K=-\log\tilde{Ϛ}\in\mathbb{M}_+$ | Modular Hamiltonian |
 | $\exp(-tb\gamma)=\cos(bt)e_t-\sin(bt)\gamma$ | Unit-quaternion generator of the flow |
 | $T=\pi/b$ | Period of the finite flow |
-| $\alpha_t(\tilde B)=\tilde{Ϛ}^{-it}\tilde B\tilde{Ϛ}^{it}$ | KMS orientation (companion convention) |
+| $\alpha_t(\tilde Q_1)=\tilde{Ϛ}^{-it}\tilde Q_1\tilde{Ϛ}^{it}$ | KMS orientation (companion convention) |
 | $t=is$ | Imaginary (material-sector) time; rotation becomes boost |
 
 ## Further Reading

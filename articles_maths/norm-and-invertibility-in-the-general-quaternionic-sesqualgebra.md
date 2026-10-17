@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde X = \tilde X\star\tilde E = \tilde X$ for every $\tilde X$, an **inverse** of $\tilde X$ is an element $\tilde Y$ with $\tilde X\star\tilde Y = \tilde Y\star\tilde X = \tilde E$, and $\tilde X$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
+A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde Q_1 = \tilde Q_1\star\tilde E = \tilde Q_1$ for every $\tilde Q_1$, an **inverse** of $\tilde Q_1$ is an element $\tilde Q_2$ with $\tilde Q_1\star\tilde Q_2 = \tilde Q_2\star\tilde Q_1 = \tilde E$, and $\tilde Q_1$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}

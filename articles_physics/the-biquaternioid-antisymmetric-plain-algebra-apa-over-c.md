@@ -13,7 +13,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ is $\mathbb{R}$-bilinear, $\mathbb{C}$-bilinear and **antisymmetric**, $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$; it vanishes on the centre and its values lie in the vector subspace. Its class among the twelve structures is that of an antisymmetric algebra. Owner: *Introduction to the Antisymmetric Plain Algebra*.
-- **The absence of a unit.** $e_t$ annihilates the structure, $e_t\star\tilde X=0$, so the structure has no unit and no identity element at all. Owner: *Introduction to the Antisymmetric Plain Algebra*.
+- **The absence of a unit.** $e_t$ annihilates the structure, $e_t\star\tilde Q_1=0$, so the structure has no unit and no identity element at all. Owner: *Introduction to the Antisymmetric Plain Algebra*.
 - **The algebraic norm and invertibility.** The norm of the structure and the invertibility criterion of the antisymmetrised product. Owner: *Norm and Invertibility in the Antisymmetric Plain Algebra*.
 - **Zero divisors.** The zero-divisor set of the product. Owner: *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
 - **Annihilators.** The annihilators of an element under the product. Owner: *Annihilators in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*.
@@ -55,7 +55,7 @@ The biquaternioid antisymmetric plain algebra is the structure $\tilde P\star\ti
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | the antisymmetric plain product, $\mathrm{APA}$ |
 | $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_t=0\}$ | the vector subspace; the values of the bracket |
-| $e_t\star\tilde X=0$ | the absence of a unit |
+| $e_t\star\tilde Q_1=0$ | the absence of a unit |
 | $[\tilde P,\tilde Q]$, the Jacobi identity | the Lie algebra of the material sector |
 | $\vec P\times\vec Q$ | the cross product; the bracket on the material vectors |
 | $\mathrm{ad}_{\tilde P}$ | the adjoint action; the derivation of the bracket |

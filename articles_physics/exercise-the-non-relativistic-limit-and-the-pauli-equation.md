@@ -12,7 +12,7 @@ Five problems are worked:
 4. the Hermiticity of every term, and which terms lie in the Hermitian subspace $\mathbb M_+$ and which do not;
 5. the physical dimensions of every term.
 
-**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t\,\tilde\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
+**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial t\,\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
 
 **Conventions.** The biquaternion algebra is $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$, the basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$, and $i$ is the scalar imaginary. The subspace $\mathbb M_+$ is the Hermitian subspace (real scalar, imaginary vector) and $\mathbb M_-$ the anti-Hermitian subspace (imaginary scalar, real vector), with $\mathbb B=\mathbb M_+\oplus\mathbb M_-$ and $i\mathbb M_\pm=\mathbb M_\mp$. The isomorphism, written $\mathsf{M}_2$ as in the companion Dirac article, is $e_t\mapsto I_2$, $\vec e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$, so that $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\sigma_k\leftrightarrow i\vec e_k$. (The same letter $\mathsf{M}_2$ denotes the electrostatic potential in $A^\mu=(\mathsf{M}_2,\vec A)$, as in the parent; the two uses are distinguished by their arguments.) The gamma matrices are the parent's Dirac-basis matrices,
 
@@ -47,24 +47,24 @@ $$
 
 The even operator $E$ is the electrostatic energy and the odd operator $O$ is what couples the upper and lower components.
 
-*Step 2: factoring out the rest energy.* Write $\psi=\exp(-imc^2t/\hbar)(\tilde\phi,\tilde\chi)^{\mathsf T}$. Substituting and cancelling the common phase gives the parent's two coupled equations,
+*Step 2: factoring out the rest energy.* Write $\psi=\exp(-imc^2t/\hbar)(\phi,\chi)^{\mathsf T}$. Substituting and cancelling the common phase gives the parent's two coupled equations,
 
 $$
-i\hbar\,\partial/\partial t\,\tilde\phi=c\,\boldsymbol\sigma\cdot\vec\pi\,\tilde\chi+ϙ\mathsf{M}_2\tilde\phi,
+i\hbar\,\partial/\partial t\,\phi=c\,\boldsymbol\sigma\cdot\vec\pi\,\chi+ϙ\mathsf{M}_2\phi,
 \qquad
-i\hbar\,\partial/\partial t\,\tilde\chi=c\,\boldsymbol\sigma\cdot\vec\pi\,\tilde\phi-2mc^2\tilde\chi+ϙ\mathsf{M}_2\tilde\chi .
+i\hbar\,\partial/\partial t\,\chi=c\,\boldsymbol\sigma\cdot\vec\pi\,\phi-2mc^2\chi+ϙ\mathsf{M}_2\chi .
 $$
 
-*Step 3: the leading elimination.* The term $2mc^2\tilde\chi$ dominates the second equation whenever the fields, the kinetic energy and $\partial/\partial t\,\tilde\chi$ are small compared with $mc^2$. Neglecting the other terms there,
+*Step 3: the leading elimination.* The term $2mc^2\chi$ dominates the second equation whenever the fields, the kinetic energy and $\partial/\partial t\,\chi$ are small compared with $mc^2$. Neglecting the other terms there,
 
 $$
-\tilde\chi=\frac{\boldsymbol\sigma\cdot\vec\pi}{2mc}\,\tilde\phi+O(c^{-3}),
+\chi=\frac{\boldsymbol\sigma\cdot\vec\pi}{2mc}\,\phi+O(c^{-3}),
 $$
 
-so the small component is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\tilde\chi$ exactly at this order:
+so the small component is of relative order $v/c$, as it must be. Substituting into the first equation eliminates $\chi$ exactly at this order:
 
 $$
-i\hbar\,\partial/\partial t\,\tilde\phi=\left[\frac{(\boldsymbol\sigma\cdot\vec\pi)^2}{2m}+ϙ\mathsf{M}_2\right]\tilde\phi .
+i\hbar\,\partial/\partial t\,\phi=\left[\frac{(\boldsymbol\sigma\cdot\vec\pi)^2}{2m}+ϙ\mathsf{M}_2\right]\phi .
 $$
 
 *Step 4: the systematic transformation.* The approximation of Step 3 is the first term of a controlled expansion. The Foldy–Wouthuysen generator is $S=S_1+S_2+\cdots$ with
@@ -115,7 +115,7 @@ $$
 where the evaluation of $\vec\pi\times\vec\pi$ is carried out in Problem 2. Subtracting the rest energy,
 
 $$
-\boxed{\;i\hbar\,\partial/\partial t\,\tilde\phi=\left[\frac{(p-ϙ\vec A)^2}{2m}+ϙ\Phi-\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\tilde\phi\;}
+\boxed{\;i\hbar\,\partial/\partial t\,\phi=\left[\frac{(p-ϙ\vec A)^2}{2m}+ϙ\Phi-\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B\right]\phi\;}
 $$
 
 which is the Pauli equation exactly as the parent reports it. The coefficient $1/2m$ is the whole content of the $g=2$ result of Problem 2: it is produced by the $2mc^2$ in the denominator of the small-component elimination, not put in by hand.
@@ -165,7 +165,7 @@ $$
 =\vec\pi^2-ϙ\hbar\,\boldsymbol\sigma\cdot\vec B ,
 $$
 
-which is the parent's result, with $\hbar$ restored. The coefficient carries no power of $c$: the two factors of $c$ in the elimination cancel, since $\tilde\chi=\boldsymbol\sigma\cdot\vec\pi/(2mc)\,\tilde\phi$ is multiplied by $c\,\boldsymbol\sigma\cdot\vec\pi$ in the first equation. The identification $\vec S=\tfrac\hbar2\boldsymbol\sigma$ gives the spin term
+which is the parent's result, with $\hbar$ restored. The coefficient carries no power of $c$: the two factors of $c$ in the elimination cancel, since $\chi=\boldsymbol\sigma\cdot\vec\pi/(2mc)\,\phi$ is multiplied by $c\,\boldsymbol\sigma\cdot\vec\pi$ in the first equation. The identification $\vec S=\tfrac\hbar2\boldsymbol\sigma$ gives the spin term
 
 $$
 -\frac{ϙ\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B=-\frac{ϙ}{m}\,\vec S\cdot\vec B=-\vec\mu\cdot\vec B .
@@ -338,7 +338,7 @@ The pattern is informative. The leading terms ($\vec\pi^2/2m$, $ϙ\mathsf{M}_2$,
 The non-relativistic limit of the biquaternion Dirac equation was carried through in five steps.
 
 The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}\beta O$, produces the Pauli Hamiltonian
-$i\hbar\partial/\partial t\,\tilde\phi=\big[\vec\pi^2/2m+ϙ\Phi-(ϙ\hbar/2m)\boldsymbol\sigma\cdot\vec B\big]\tilde\phi$,
+$i\hbar\partial/\partial t\,\phi=\big[\vec\pi^2/2m+ϙ\Phi-(ϙ\hbar/2m)\boldsymbol\sigma\cdot\vec B\big]\phi$,
 reproducing the parent article. The minimal substitution $\vec\pi=p-ϙ\vec A$ gives $[\pi_i,\pi_j]=i\hbar ϙ\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-ϙ\hbar\boldsymbol\sigma\cdot\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(ϙ/m)\vec S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$ the second Foldy–Wouthuysen step adds the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$, the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(ϙ\hbar^2/8m^2c^2)\nabla\cdot\vec E$, and the spin–orbit coupling $-(ϙ\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($\beta mc^2$, $\beta O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — together with the sector-exchanging rest-energy phase; the parent's mass term is the linear coupling between the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.

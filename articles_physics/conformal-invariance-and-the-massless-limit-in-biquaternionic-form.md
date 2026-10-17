@@ -141,13 +141,13 @@ G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} = \frac{1}{4\pi^2 \langle\t
 $$
 is the conformal two-point function of a field of weight $\Delta = 1$. Two properties make this identification exact. First, it is the unique function of the interval with the right scaling: the conformal covariance of a two-point function requires
 $$
-\bigl\langle\phi(\tilde{Q})\phi(\tilde{Y})\bigr\rangle = \frac{\text{const}}{\langle\tilde{Q}-\tilde{Y}\rangle_{\natural}^{\Delta}} \qquad\text{with } \Delta = 1 ,
+\bigl\langle\phi(\tilde{Q})\phi(\tilde{Q}_1)\bigr\rangle = \frac{\text{const}}{\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural}^{\Delta}} \qquad\text{with } \Delta = 1 ,
 $$
-and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Y}) = 1/(4\pi^2\langle\tilde{Q}-\tilde{Y}\rangle_{\natural})$. Second, it obeys the inversion covariance of a weight-one two-point function,
+and the kernel has exactly this form, since $G_{\mathrm{inv}}(\tilde{Q}-\tilde{Q}_1) = 1/(4\pi^2\langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural})$. Second, it obeys the inversion covariance of a weight-one two-point function,
 $$
-G\bigl(I(\tilde{Q})-I(\tilde{Y})\bigr) = \langle\tilde{Q}\rangle_{\natural}^{\Delta}\langle\tilde{Y}\rangle_{\natural}^{\Delta}\,G(\tilde{Q}-\tilde{Y}) \Big|_{\Delta=1} ,
+G\bigl(I(\tilde{Q})-I(\tilde{Q}_1)\bigr) = \langle\tilde{Q}\rangle_{\natural}^{\Delta}\langle\tilde{Q}_1\rangle_{\natural}^{\Delta}\,G(\tilde{Q}-\tilde{Q}_1) \Big|_{\Delta=1} ,
 $$
-which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Y})|^2 = \langle\tilde{Q}-\tilde{Y}\rangle_{\natural}/(\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Y}\rangle_{\natural})$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
+which was verified on two hundred random off-cone pairs with a maximum relative error of $5\times10^{-16}$. The consistency of the two statements is exact: $|I(\tilde{Q})-I(\tilde{Q}_1)|^2 = \langle\tilde{Q}-\tilde{Q}_1\rangle_{\natural}/(\langle\tilde{Q}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural})$, so the two-point function's covariance follows from the geometry of the inversion rather than being imposed. The two-point function of the massless theory is therefore not merely a Green's function that happens to be scale invariant: it is the unique conformally covariant two-point function, and its exponent is the conformal weight of the field. This is the sharpest link between the operator article and the conformal statement: the invariant kernel *is* the conformal two-point function, and the massless limit of the massive kernel is the limit in which the conformal weight exists.
 
 ## The Massless Limit
 

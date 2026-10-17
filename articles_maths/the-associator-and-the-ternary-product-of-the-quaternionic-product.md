@@ -107,7 +107,7 @@ $$
 
 In particular the ternary product is central-valued, and it depends only on the scalar coordinates $P_t,Q_t,R_t$ and on the pairings $\beta$ among the three arguments.
 
-**Proof.** By the lemma each inner symmetrisation is a central multiple of $e_t$. For a central element $\lambda e_t$ one has $(\lambda e_t)\bullet\tilde X = \lambda\,(e_t\bullet\tilde X) = \lambda X_te_t$, because $e_t\bullet\tilde X = \tfrac12(e_t\star\tilde X + \tilde X\star e_t) = \tfrac12(\tilde X + \tilde X^{\natural}) = X_te_t$. Applying this to the three terms gives $\beta(\tilde P,\tilde Q)R_te_t$, $\beta(\tilde R,\tilde Q)P_te_t$ and $-\beta(\tilde P,\tilde R)Q_te_t$, whose sum is displayed.
+**Proof.** By the lemma each inner symmetrisation is a central multiple of $e_t$. For a central element $\lambda e_t$ one has $(\lambda e_t)\bullet\tilde Q_1 = \lambda\,(e_t\bullet\tilde Q_1) = \lambda Q_{1t}e_t$, because $e_t\bullet\tilde Q_1 = \tfrac12(e_t\star\tilde Q_1 + \tilde Q_1\star e_t) = \tfrac12(\tilde Q_1 + \tilde Q_1^{\natural}) = Q_{1t}e_t$. Applying this to the three terms gives $\beta(\tilde P,\tilde Q)R_te_t$, $\beta(\tilde R,\tilde Q)P_te_t$ and $-\beta(\tilde P,\tilde R)Q_te_t$, whose sum is displayed.
 
 **Example.** At $\tilde P = \tilde Q = \tilde R = e_t$ every pairing is $1$ and every scalar coordinate is $1$, so the value is $(1+1-1)e_t = e_t$; at $\tilde P = \tilde Q = \tilde R = \vec e_z$ the pairings are still $1$ but the scalar coordinates vanish, so the value is $0$. The ternary product does not vanish on every triple of nonzero elements; its value is the displayed scalar combination, and it vanishes exactly when $\beta(\tilde P,\tilde Q)R_t + \beta(\tilde R,\tilde Q)P_t = \beta(\tilde P,\tilde R)Q_t$.
 

@@ -114,15 +114,15 @@ $$
 
 ### Power-Associativity
 
-**Proposition (the operation is not power-associative).** The bracketings of the fourth power do not agree. At $\tilde X=e_t+\vec e_x$, whose square is $\tilde X\star\tilde X=2e_t$,
+**Proposition (the operation is not power-associative).** The bracketings of the fourth power do not agree. At $\tilde Q_1=e_t+\vec e_x$, whose square is $\tilde Q_1\star\tilde Q_1=2e_t$,
 
 $$
-(\tilde X\star\tilde X)\star(\tilde X\star\tilde X)=4e_t\neq 2e_t=\bigl((\tilde X\star\tilde X)\star\tilde X\bigr)\star\tilde X .
+(\tilde Q_1\star\tilde Q_1)\star(\tilde Q_1\star\tilde Q_1)=4e_t\neq 2e_t=\bigl((\tilde Q_1\star\tilde Q_1)\star\tilde Q_1\bigr)\star\tilde Q_1.
 $$
 
-*Proof.* $\tilde X\star\tilde X=\langle\tilde X\rangle_{\natural}e_t=2e_t$. On the left the product is $2e_t\star2e_t=4e_t$. On the right, $(\tilde X\star\tilde X)\star\tilde X=2e_t\star\tilde X=2X_te_t=2e_t$, and $2e_t\star\tilde X=2e_t$ again; so the right side is $2e_t$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.
+*Proof.* $\tilde Q_1\star\tilde Q_1=\langle\tilde Q_1\rangle_{\natural}e_t=2e_t$. On the left the product is $2e_t\star2e_t=4e_t$. On the right, $(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1=2e_t\star\tilde Q_1=2Q_{1t}e_t=2e_t$, and $2e_t\star\tilde Q_1=2e_t$ again; so the right side is $2e_t$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.
 
-The three-element powers agree, since $\tilde X\star(\tilde X\star\tilde X)=(\tilde X\star\tilde X)\star\tilde X$ by commutativity; the failure appears at the fourth power, the first power at which two essentially different bracketings exist.
+The three-element powers agree, since $\tilde Q_1\star(\tilde Q_1\star\tilde Q_1)=(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1$ by commutativity; the failure appears at the fourth power, the first power at which two essentially different bracketings exist.
 
 ### The Two Classical Identities
 
@@ -140,12 +140,12 @@ fails, and at $\tilde P=\tilde Q=\vec e_x$ the two sides are $0$ and $e_t$.
 **Proposition (the Jacobi identity fails).** For the same product the identity
 
 $$
-\tilde X\star(\tilde Y\star\tilde Z)+\tilde Y\star(\tilde Z\star\tilde X)+\tilde Z\star(\tilde X\star\tilde Y)=0
+\tilde Q_1\star(\tilde Q_2\star\tilde Q_3)+\tilde Q_2\star(\tilde Q_3\star\tilde Q_1)+\tilde Q_3\star(\tilde Q_1\star\tilde Q_2)=0
 $$
 
-fails, and at $\tilde X=\tilde Y=\tilde Z=e_t$ its left side is $3e_t$.
+fails, and at $\tilde Q_1=\tilde Q_2=\tilde Q_3=e_t$ its left side is $3e_t$.
 
-*Proof.* $\tilde Y\star\tilde Z=\langle\tilde Y,\tilde Z\rangle_{\natural}e_t$, so the first term is $X_t\langle\tilde Y,\tilde Z\rangle_{\natural}e_t$ and the sum is $\bigl(X_t\langle\tilde Y,\tilde Z\rangle_{\natural}+Y_t\langle\tilde Z,\tilde X\rangle_{\natural}+Z_t\langle\tilde X,\tilde Y\rangle_{\natural}\bigr)e_t$, which at the three units is $3e_t$.
+*Proof.* $\tilde Q_2\star\tilde Q_3=\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}e_t$, so the first term is $Q_{1t}\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}e_t$ and the sum is $\bigl(Q_{1t}\langle\tilde Q_2,\tilde Q_3\rangle_{\natural}+Q_{2t}\langle\tilde Q_3,\tilde Q_1\rangle_{\natural}+Q_{3t}\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}\bigr)e_t$, which at the three units is $3e_t$.
 
 **Proposition (the alternating law fails).** The operation is not alternating: $e_t\star e_t=e_t\neq0$, so there is an element whose square does not vanish.
 

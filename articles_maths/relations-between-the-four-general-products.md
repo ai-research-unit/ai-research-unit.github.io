@@ -73,7 +73,7 @@ which holds in particular for every central $\tilde P$, the vector part being ze
 
 ## The Conjugate of a Product
 
-Conjugating a product conjugates the factors and reverses their order, by the two anti-automorphism rules $(\tilde X\tilde Y)^{\natural}=\tilde Y^{\natural}\tilde X^{\natural}$ and $(\tilde X\tilde Y)^{*}=\tilde Y^{*}\tilde X^{*}$. Applied to the four general products,
+Conjugating a product conjugates the factors and reverses their order, by the two anti-automorphism rules $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$. Applied to the four general products,
 
 $$
 (\tilde P\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural} , \qquad
@@ -180,12 +180,12 @@ Deleting the cross term, the first and the third rows are reflections of each ot
 
 ## The Left Multiplications
 
-The left multiplications of the four general products are the general plain bilinear ones read through the two conjugations. Writing $L_{\tilde P}$ and $R_{\tilde P}$ for the left and right multiplications of the general plain bilinear product, $\tilde X\mapsto\tilde P\tilde X$ and $\tilde X\mapsto\tilde X\tilde P$,
+The left multiplications of the four general products are the general plain bilinear ones read through the two conjugations. Writing $L_{\tilde P}$ and $R_{\tilde P}$ for the left and right multiplications of the general plain bilinear product, $\tilde Q_1\mapsto\tilde P\tilde Q_1$ and $\tilde Q_1\mapsto\tilde Q_1\tilde P$,
 
 $$
-\tilde P\tilde X^{*}=\bigl(R_{\tilde P^{*}}(\tilde X)\bigr)^{*} , \qquad
-\tilde P^{\natural}\tilde X=L_{\tilde P^{\natural}}(\tilde X) , \qquad
-\tilde P^{\natural}\tilde X^{*}=\bigl(R_{\bar{\tilde P}}(\tilde X)\bigr)^{*} .
+\tilde P\tilde Q_1^{*}=\bigl(R_{\tilde P^{*}}(\tilde Q_1)\bigr)^{*} , \qquad
+\tilde P^{\natural}\tilde Q_1=L_{\tilde P^{\natural}}(\tilde Q_1) , \qquad
+\tilde P^{\natural}\tilde Q_1^{*}=\bigl(R_{\bar{\tilde P}}(\tilde Q_1)\bigr)^{*} .
 $$
 
 The ${}^{\natural}$-product is the left multiplication of the general plain bilinear product re-indexed by the natural sign; the other two are the conjugates of the right multiplications of the general plain bilinear product by the star and by the conjugate of the first factor. The distinction decides which of the four general products have a monoid of left multiplications, and it is worth recording, although the property table itself is *Comparison Between the Four General Products*.
@@ -204,12 +204,12 @@ since $\tilde P^{\natural}\tilde R^{\natural}=(\tilde R\tilde P)^{\natural}$; th
 For the two sesquilinear products the composition leaves the class. For the ${}^{*}$-product,
 
 $$
-L^{*}_{\tilde P}\circ L^{*}_{\tilde R}(\tilde X)
-=\tilde P\bigl(\tilde R\tilde X^{*}\bigr)^{*}
-=\tilde P\tilde X\tilde R^{*} ,
+L^{*}_{\tilde P}\circ L^{*}_{\tilde R}(\tilde Q_1)
+=\tilde P\bigl(\tilde R\tilde Q_1^{*}\bigr)^{*}
+=\tilde P\tilde Q_1\tilde R^{*} ,
 $$
 
-which is $\mathbb{C}$-linear in $\tilde X$; every left multiplication of the ${}^{*}$-product is conjugate-linear, so the composition is not one of them, and the left multiplications of the ${}^{*}$-product do not form a monoid. The same computation with $\overline{\tilde P}$ in place of $\tilde P$ settles the fourth operation, whose left multiplications are the conjugates of the right multiplications of the general plain bilinear product: the composition of two of them is linear and the class is not closed.
+which is $\mathbb{C}$-linear in $\tilde Q_1$; every left multiplication of the ${}^{*}$-product is conjugate-linear, so the composition is not one of them, and the left multiplications of the ${}^{*}$-product do not form a monoid. The same computation with $\overline{\tilde P}$ in place of $\tilde P$ settles the fourth operation, whose left multiplications are the conjugates of the right multiplications of the general plain bilinear product: the composition of two of them is linear and the class is not closed.
 
 ## The Restriction to the Quaternion Subspace
 

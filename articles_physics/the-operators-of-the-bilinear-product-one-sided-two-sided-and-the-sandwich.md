@@ -11,7 +11,7 @@ R_{\tilde P}(\tilde R)=\tilde R\tilde P,\qquad
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}} .
 $$
 
-The left and the right multiplication are the two one-sided operators, their products $L_{\tilde A}R_{\tilde B}$ are
+The left and the right multiplication are the two one-sided operators, their products $L_{\tilde A}R_{\tilde Q_1}$ are
 the two-sided ones, and the **sandwich** is the algebraic norm two-sided operator in which the right parameter is the
 conjugate of the left one. The composition laws of the two families, and the interpretation of the multiplication as a
 process, belong to *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the
@@ -26,8 +26,8 @@ of the product itself, its associate $F^{\approx}$ is the transpose, and the tra
 
 $$
 \bigl(L_{\tilde A}\bigr)^{\approx}=R_{\tilde A},\qquad
-\bigl(R_{\tilde B}\bigr)^{\approx}=L_{\tilde B},\qquad
-\bigl(L_{\tilde A}R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}R_{\tilde A}.
+\bigl(R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1},\qquad
+\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde A}.
 $$
 
 Association therefore **swaps the two sides** without conjugating the parameter, and it is the only one of the four
@@ -59,10 +59,10 @@ unitary one, the measurement update for a Hermitian idempotent.
 The block carries two one-sided operators and their products:
 
 $$
-L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B},\qquad
-R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A},\qquad
-L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A},\qquad
-\bigl(L_{\tilde A}R_{\tilde B}\bigr)\circ\bigl(L_{\tilde C}R_{\tilde D}\bigr)=L_{\tilde A\tilde C}R_{\tilde D\tilde B}.
+L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1},\qquad
+R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A},\qquad
+L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A},\qquad
+\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)\circ\bigl(L_{\tilde Q_2}R_{\tilde D}\bigr)=L_{\tilde A\tilde Q_2}R_{\tilde D\tilde Q_1}.
 $$
 
 The first two say that the left multiplications reproduce the algebra and the right multiplications reproduce the
@@ -97,7 +97,7 @@ $$
 \Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\mathrm{H}_{\tilde Q},
 $$
 
-the algebraic norm pair $(\tilde A,\tilde B)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
+the algebraic norm pair $(\tilde A,\tilde Q_1)=(\tilde Q,\tilde Q^{*})$ of the two-sided family, with the two boundary cases
 $\Theta_{e_t}=\mathrm{id}$ and $R_{\tilde Q}=L_{e_t}R_{\tilde Q}$, $L_{\tilde Q}=L_{\tilde Q}R_{e_t}$.
 
 The sandwich is one of the four objects the corpus calls an action, and it is the only one of them whose two slots are
@@ -106,23 +106,23 @@ Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions*.
 
 ## The Adjoint of the Plain Form Swaps the Sides
 
-**Theorem (association swaps the two families).** For all $\tilde A,\tilde B,\tilde X,\tilde Y\in\mathbb{B}$,
+**Theorem (association swaps the two families).** For all $\tilde A,\tilde Q_1,\tilde Q_3,\tilde Q_4\in\mathbb{B}$,
 
 $$
-\bigl\langle L_{\tilde A}\tilde X,\tilde Y\bigr\rangle=\bigl\langle\tilde X,R_{\tilde A}\tilde Y\bigr\rangle,
+\bigl\langle L_{\tilde A}\tilde Q_3,\tilde Q_4\bigr\rangle=\bigl\langle\tilde Q_3,R_{\tilde A}\tilde Q_4\bigr\rangle,
 \qquad\text{that is}\qquad
 \bigl(L_{\tilde A}\bigr)^{\approx}=R_{\tilde A},\qquad
-\bigl(R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}.
+\bigl(R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}.
 $$
 
 *Proof.* The scalar part is invariant under cyclic permutation of the factors, so
-$\mathrm{Sc}(\tilde A\tilde X\tilde Y)=\mathrm{Sc}(\tilde X\tilde Y\tilde A)$, which is the cross identity; the form is
+$\mathrm{Sc}(\tilde A\tilde Q_3\tilde Q_4)=\mathrm{Sc}(\tilde Q_3\tilde Q_4\tilde A)$, which is the cross identity; the form is
 non-degenerate, so the associate is the operator displayed.
 
-**Theorem (the adjoint of a two-sided operator).** For all $\tilde A,\tilde B$,
+**Theorem (the adjoint of a two-sided operator).** For all $\tilde A,\tilde Q_1$,
 
 $$
-\bigl(L_{\tilde A}R_{\tilde B}\bigr)^{\approx}=L_{\tilde B}R_{\tilde A},
+\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)^{\approx}=L_{\tilde Q_1}R_{\tilde A},
 $$
 
 the two parameters exchanging their places.
@@ -155,27 +155,27 @@ L_{\tilde A}\ \text{self-adjoint}\iff \tilde A\ \text{central},\qquad
 L_{\tilde A}\ \text{skew-adjoint}\iff \tilde A=0,
 $$
 
-and the same two criteria hold on the right with $\tilde B$ in place of $\tilde A$.
+and the same two criteria hold on the right with $\tilde Q_1$ in place of $\tilde A$.
 
 *Proof.* By the swap theorem, self-adjointness of $L_{\tilde A}$ is $R_{\tilde A}=L_{\tilde A}$, that is
-$\tilde A\tilde Y=\tilde Y\tilde A$ for every $\tilde Y$, which is centrality; skew-adjointness is
-$\tilde A\tilde Y=-\tilde Y\tilde A$ for every $\tilde Y$, and at $\tilde Y=e_t$ this reads $\tilde A=-\tilde A$, so
+$\tilde A\tilde Q_4=\tilde Q_4\tilde A$ for every $\tilde Q_4$, which is centrality; skew-adjointness is
+$\tilde A\tilde Q_4=-\tilde Q_4\tilde A$ for every $\tilde Q_4$, and at $\tilde Q_4=e_t$ this reads $\tilde A=-\tilde A$, so
 $\tilde A=0$.
 
 **Theorem (the two-sided types).** For $\tilde A\neq0$,
 
 $$
-L_{\tilde A}R_{\tilde B}\ \text{self-adjoint}\iff \tilde B=\lambda\tilde A\ \text{for some }\lambda\in\mathbb{C},
+L_{\tilde A}R_{\tilde Q_1}\ \text{self-adjoint}\iff \tilde Q_1=\lambda\tilde A\ \text{for some }\lambda\in\mathbb{C},
 \qquad
-L_{\tilde A}R_{\tilde B}\ \text{skew-adjoint}\iff L_{\tilde A}R_{\tilde B}=0 .
+L_{\tilde A}R_{\tilde Q_1}\ \text{skew-adjoint}\iff L_{\tilde A}R_{\tilde Q_1}=0 .
 $$
 
-*Proof.* Self-adjointness is $L_{\tilde B}R_{\tilde A}=L_{\tilde A}R_{\tilde B}$ by the swap, that is
-$\tilde B\tilde Y\tilde A=\tilde A\tilde Y\tilde B$ for all $\tilde Y$; at $\tilde Y=e_t$ the parameters commute, and
-substituting $\tilde Y=\tilde A^{-1}\tilde C\tilde A^{-1}$ for a unit $\tilde A$ gives that $\tilde B\tilde A^{-1}$ is
-central. Skew-adjointness gives $\mathrm{Sc}(\tilde Y\tilde A\tilde B)=0$ for all $\tilde Y$, hence $\tilde A\tilde B=0$
-and symmetrically $\tilde B\tilde A=0$, and then the defining identity at $\tilde Y=e_t$ reads
-$\tilde B\tilde A=-\tilde A\tilde B$, so both products vanish; the remaining cases were settled by elimination.
+*Proof.* Self-adjointness is $L_{\tilde Q_1}R_{\tilde A}=L_{\tilde A}R_{\tilde Q_1}$ by the swap, that is
+$\tilde Q_1\tilde Q_4\tilde A=\tilde A\tilde Q_4\tilde Q_1$ for all $\tilde Q_4$; at $\tilde Q_4=e_t$ the parameters commute, and
+substituting $\tilde Q_4=\tilde A^{-1}\tilde Q_2\tilde A^{-1}$ for a unit $\tilde A$ gives that $\tilde Q_1\tilde A^{-1}$ is
+central. Skew-adjointness gives $\mathrm{Sc}(\tilde Q_4\tilde A\tilde Q_1)=0$ for all $\tilde Q_4$, hence $\tilde A\tilde Q_1=0$
+and symmetrically $\tilde Q_1\tilde A=0$, and then the defining identity at $\tilde Q_4=e_t$ reads
+$\tilde Q_1\tilde A=-\tilde A\tilde Q_1$, so both products vanish; the remaining cases were settled by elimination.
 
 **Corollary (the types of the sandwich).** The sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is
 self-adjoint for the plain form **exactly when the parameter lies in one of the two sectors**:
@@ -218,7 +218,7 @@ of the antisymmetric band, and its operators are read in the antisymmetric block
 **Theorem (the one-sided automorphisms of the form).** The left multiplication $L_{\tilde A}$ preserves the plain form,
 
 $$
-B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=\langle\tilde X,\tilde Y\rangle\qquad\text{for all }\tilde X,\tilde Y,
+B\bigl(L_{\tilde A}\tilde Q_3,L_{\tilde A}\tilde Q_4\bigr)=\langle\tilde Q_3,\tilde Q_4\rangle\qquad\text{for all }\tilde Q_3,\tilde Q_4,
 $$
 
 if and only if $\tilde A=\pm e_t$, that is $L_{\tilde A}=\pm\mathrm{id}$; the same criterion holds on the right.
@@ -226,35 +226,35 @@ if and only if $\tilde A=\pm e_t$, that is $L_{\tilde A}=\pm\mathrm{id}$; the sa
 *Proof.* Using the swap and the symmetry of the form,
 
 $$
-B\bigl(L_{\tilde A}\tilde X,L_{\tilde A}\tilde Y\bigr)=\mathrm{Sc}\bigl(\tilde A\tilde X\tilde A\tilde Y\bigr)
-=B\bigl(\tilde X,\tilde A\tilde Y\tilde A\bigr),
+B\bigl(L_{\tilde A}\tilde Q_3,L_{\tilde A}\tilde Q_4\bigr)=\mathrm{Sc}\bigl(\tilde A\tilde Q_3\tilde A\tilde Q_4\bigr)
+=B\bigl(\tilde Q_3,\tilde A\tilde Q_4\tilde A\bigr),
 $$
 
-so preservation is $\tilde A\tilde Y\tilde A=\tilde Y$ for all $\tilde Y$. At
-$\tilde Y=e_t$ this gives $\tilde A^{2}=e_t$ and centrality, and a central element of square $e_t$ is $\pm e_t$.
+so preservation is $\tilde A\tilde Q_4\tilde A=\tilde Q_4$ for all $\tilde Q_4$. At
+$\tilde Q_4=e_t$ this gives $\tilde A^{2}=e_t$ and centrality, and a central element of square $e_t$ is $\pm e_t$.
 
-**Theorem (the two-sided automorphisms of the form).** The two-sided operator $L_{\tilde A}R_{\tilde B}$ preserves the
-plain form if and only if $\tilde B\tilde A=\pm e_t$, that is $\tilde B=\pm\tilde A^{-1}$; the operator is then
+**Theorem (the two-sided automorphisms of the form).** The two-sided operator $L_{\tilde A}R_{\tilde Q_1}$ preserves the
+plain form if and only if $\tilde Q_1\tilde A=\pm e_t$, that is $\tilde Q_1=\pm\tilde A^{-1}$; the operator is then
 $\pm\mathrm{Ad}_{\tilde A}$, the inner automorphism of the unit $\tilde A$ up to sign, and $\mathrm{Ad}_{\tilde A}$
 itself preserves the form.
 
-**Theorem (the multiplicative operators).** The operator $L_{\tilde A}R_{\tilde B}$ is multiplicative if and only if
-$\tilde A\tilde B=e_t$, that is $\tilde B=\tilde A^{-1}$:
+**Theorem (the multiplicative operators).** The operator $L_{\tilde A}R_{\tilde Q_1}$ is multiplicative if and only if
+$\tilde A\tilde Q_1=e_t$, that is $\tilde Q_1=\tilde A^{-1}$:
 
 $$
-\bigl(L_{\tilde A}R_{\tilde B}\tilde X\bigr)\bigl(L_{\tilde A}R_{\tilde B}\tilde Y\bigr)
-=\bigl(L_{\tilde A}R_{\tilde B}\bigr)(\tilde X\tilde Y)
-\qquad\text{for all }\tilde X,\tilde Y,
+\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_4\bigr)
+=\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4)
+\qquad\text{for all }\tilde Q_3,\tilde Q_4,
 $$
 
 and the operator is then the inner automorphism $\mathrm{Ad}_{\tilde A}$.
 
-**Corollary (the partial law of the central product).** If the product $\tilde B\tilde A$ is merely central, the
+**Corollary (the partial law of the central product).** If the product $\tilde Q_1\tilde A$ is merely central, the
 operator is still multiplicative up to that central scalar:
 
 $$
-\bigl(L_{\tilde A}R_{\tilde B}\tilde X\bigr)\bigl(L_{\tilde A}R_{\tilde B}\tilde Y\bigr)
-=\tilde B\tilde A\,\bigl(L_{\tilde A}R_{\tilde B}\bigr)(\tilde X\tilde Y),
+\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_3\bigr)\bigl(L_{\tilde A}R_{\tilde Q_1}\tilde Q_4\bigr)
+=\tilde Q_1\tilde A\,\bigl(L_{\tilde A}R_{\tilde Q_1}\bigr)(\tilde Q_3\tilde Q_4),
 $$
 
 and no norm enters the multiplier.
@@ -271,7 +271,7 @@ criteria are conditions on the **product of the two parameters**, in which no no
 quaternionic block carries the correspondingly stronger law,
 
 $$
-\Theta_{\tilde A}(\tilde X)\Theta_{\tilde A}(\tilde Y)=\langle\tilde A\rangle_{\natural}\,\Theta_{\tilde A}(\tilde X\tilde Y)
+\Theta_{\tilde A}(\tilde Q_3)\Theta_{\tilde A}(\tilde Q_4)=\langle\tilde A\rangle_{\natural}\,\Theta_{\tilde A}(\tilde Q_3\tilde Q_4)
 \qquad\text{for every parameter,}
 $$
 
@@ -306,10 +306,10 @@ nilpotent $\vec\Upsilon_x$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an is
 multiplication by $\vec\Upsilon_y$ carries the complement onto $S$. A central element, by contrast, has equal left and
 right actions and can move nothing.
 
-*Proof.* The commutation is the third composition law, which makes every $R_{\tilde B}$ a module map; the two nilpotent
+*Proof.* The commutation is the third composition law, which makes every $R_{\tilde Q_1}$ a module map; the two nilpotent
 carriers are computed on the basis in *The Complementary Space of the Spinor Space in the Biquaternion Algebra*,
 §*The Isomorphism Is Right Multiplication, Not a Relabelling*, and the actuality of the isomorphism follows from the two ideals being
-simple of the same dimension. For a central $\tilde C$, $L_{\tilde C}=R_{\tilde C}$, so the right action preserves each
+simple of the same dimension. For a central $\tilde Q_2$, $L_{\tilde Q_2}=R_{\tilde Q_2}$, so the right action preserves each
 ideal.
 
 **Theorem (the double centraliser).** An operator commutes with every left multiplication if and only if it is a right
@@ -317,7 +317,7 @@ multiplication, and an operator commuting with both families is a central scalar
 
 $$
 \{S:SL_{\tilde A}=L_{\tilde A}S\ \forall\tilde A\}=R(\mathbb{B}),\qquad
-\{S:SL_{\tilde A}=L_{\tilde A}S,\ SR_{\tilde B}=R_{\tilde B}S\ \forall\tilde A,\tilde B\}=\mathbb{C}\,\mathrm{id}.
+\{S:SL_{\tilde A}=L_{\tilde A}S,\ SR_{\tilde Q_1}=R_{\tilde Q_1}S\ \forall\tilde A,\tilde Q_1\}=\mathbb{C}\,\mathrm{id}.
 $$
 
 *Proof.* The commutant of the left regular representation is the right one, computed by evaluating at $e_t$; the
@@ -454,12 +454,12 @@ idempotent — give the same symmetry verdict for the first and the third and a 
 second, and the case separates the two questions the block asks about an operator: **which form it is symmetric for**
 and **which motion it generates**.
 
-**A numerical check.** For random elements the five identities $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$,
-$R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$, $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$,
-$\langle L_{\tilde A}\tilde X,\tilde Y\rangle=\langle\tilde X,R_{\tilde A}\tilde Y\rangle$ and
-$(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ hold to machine precision; the type criteria were
+**A numerical check.** For random elements the five identities $L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1}$,
+$R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$, $L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A}$,
+$\langle L_{\tilde A}\tilde Q_3,\tilde Q_4\rangle=\langle\tilde Q_3,R_{\tilde A}\tilde Q_4\rangle$ and
+$(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$ hold to machine precision; the type criteria were
 checked on random, central, pure, null and unit parameters; the sandwich criterion holds on the two sectors and fails
-off them; the form-preserving criteria hold exactly at $\tilde A=\pm e_t$ and $\tilde B\tilde A=\pm e_t$; and the two
+off them; the form-preserving criteria hold exactly at $\tilde A=\pm e_t$ and $\tilde Q_1\tilde A=\pm e_t$; and the two
 conjugations of the boost case were compared element by element.
 
 ## The Bound
@@ -490,17 +490,17 @@ general plain row is the only row with an enveloping operator algebra, and the s
 
 ## The Ledger
 
-**Proved.** The one-sided operators $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ and
-$R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$ are $\mathbb{C}$-linear and injective in the parameter, they commute, their
+**Proved.** The one-sided operators $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$ and
+$R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$ are $\mathbb{C}$-linear and injective in the parameter, they commute, their
 sixteen products span $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, and composition reverses the second slot; the associate
 of the plain form, $F^{\approx}$, is the transpose, and it **swaps** the two families,
-$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$; a
+$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$; a
 one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for the zero parameter; a
 two-sided operator is self-adjoint exactly when its parameters are proportional and skew-adjoint only when it vanishes;
 the sandwich $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ is self-adjoint exactly when $\tilde Q$ lies in a sector,
 so the measurement update and the material conjugation qualify and a generic Lorentz parameter does not; the one-sided
 form-preserving operators are $\pm\mathrm{id}$ and the two-sided ones are the $\pm\mathrm{Ad}_{\tilde A}$ with
-$\tilde B\tilde A=\pm e_t$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
+$\tilde Q_1\tilde A=\pm e_t$; the multiplicative ones are the inner automorphisms, with the central-product partial law;
 the commutant of the left regular representation is the right one and the bicommutant is the scalars; and the sandwich
 and the inner automorphism agree exactly on the unitary parameters.
 
@@ -527,13 +527,13 @@ the identity, and the central phase is the one operation the state space cannot 
 
 ## Summary
 
-The operators of the general plain algebra are the left and the right multiplications, $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$
-and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, and their products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$,
+The operators of the general plain algebra are the left and the right multiplications, $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$
+and $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$, and their products $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_4)=\tilde A\tilde Q_4\tilde Q_1$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
 $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_t-\vec P\!\cdot\!\vec Q$ of Gram matrix
 $\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $\langle\cdot,\cdot\rangle$ **swaps the two sides**:
-$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$. Every
+$(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
 zero, a two-sided one exactly when its two parameters are proportional, and the sandwich
 $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ exactly when the parameter lies in a sector — so the measurement
@@ -555,20 +555,20 @@ the naming.
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$ |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | General plain bilinear form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
 | $F^{\approx}$ | The associate, or transpose, for $\langle\cdot,\cdot\rangle$ |
-| $L_{\tilde A}(\tilde Y)=\tilde A\tilde Y$ | Left multiplication; the left regular representation |
-| $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$ | Right multiplication; anti-multiplicative in the parameter |
-| $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$ | Two-sided operator; the decomposable tensors |
+| $L_{\tilde A}(\tilde Q_4)=\tilde A\tilde Q_4$ | Left multiplication; the left regular representation |
+| $R_{\tilde Q_1}(\tilde Q_4)=\tilde Q_4\tilde Q_1$ | Right multiplication; anti-multiplicative in the parameter |
+| $L_{\tilde A}R_{\tilde Q_1}(\tilde Q_4)=\tilde A\tilde Q_4\tilde Q_1$ | Two-sided operator; the decomposable tensors |
 | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\mathrm{H}_{\tilde Q}$ | The sandwich; the one action form |
-| $L_{\tilde A}L_{\tilde B}=L_{\tilde A\tilde B}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde B\tilde A}$ | Composition laws |
-| $L_{\tilde A}R_{\tilde B}=R_{\tilde B}L_{\tilde A}$ | The two families commute |
-| $(L_{\tilde A})^{\approx}=R_{\tilde A}$ | Association swaps the sides; $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ |
+| $L_{\tilde A}L_{\tilde Q_1}=L_{\tilde A\tilde Q_1}$, $R_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1\tilde A}$ | Composition laws |
+| $L_{\tilde A}R_{\tilde Q_1}=R_{\tilde Q_1}L_{\tilde A}$ | The two families commute |
+| $(L_{\tilde A})^{\approx}=R_{\tilde A}$ | Association swaps the sides; $(L_{\tilde A}R_{\tilde Q_1})^{\approx}=L_{\tilde Q_1}R_{\tilde A}$ |
 | Self-adjoint $L_{\tilde A}\iff\tilde A$ central | One-sided type criterion; skew sector $\{0\}$ |
-| Self-adjoint $L_{\tilde A}R_{\tilde B}\iff\tilde B=\lambda\tilde A$ | Two-sided type criterion |
+| Self-adjoint $L_{\tilde A}R_{\tilde Q_1}\iff\tilde Q_1=\lambda\tilde A$ | Two-sided type criterion |
 | $\Theta_{\tilde Q}$ self-adjoint $\iff\tilde Q\in\mathbb{M}_\pm$ | The sector criterion of the sandwich |
 | $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle\iff\tilde A=\pm e_t$ | One-sided automorphisms of the form |
-| $\tilde B\tilde A=\pm e_t\iff L_{\tilde A}R_{\tilde B}=\pm\mathrm{Ad}_{\tilde A}$ | Two-sided automorphisms of the form |
-| $\tilde A\tilde B=e_t\iff L_{\tilde A}R_{\tilde B}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
-| $\tilde B\tilde A$ central $\implies$ multiplicative up to $\tilde B\tilde A$ | The partial law; no norm enters |
+| $\tilde Q_1\tilde A=\pm e_t\iff L_{\tilde A}R_{\tilde Q_1}=\pm\mathrm{Ad}_{\tilde A}$ | Two-sided automorphisms of the form |
+| $\tilde A\tilde Q_1=e_t\iff L_{\tilde A}R_{\tilde Q_1}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
+| $\tilde Q_1\tilde A$ central $\implies$ multiplicative up to $\tilde Q_1\tilde A$ | The partial law; no norm enters |
 | $\{S:SL_{\tilde A}=L_{\tilde A}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
 | $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_t$ | The two conjugations agree on the unitary slice |
 | $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
@@ -577,11 +577,11 @@ the naming.
 
 - Mathematics article *One-Sided Operators on the Biquaternion Algebra*
 (`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`), for $L_{\tilde A}$ and
-$R_{\tilde B}$, the composition laws, the swap $(L_{\tilde A})^{\approx}=R_{\tilde A}$, the type criteria and the
+$R_{\tilde Q_1}$, the composition laws, the swap $(L_{\tilde A})^{\approx}=R_{\tilde A}$, the type criteria and the
 one-sided form-preserving theorem.
 - Mathematics article *Two-Sided Operators on the Biquaternion Algebra*
 (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), the companion, for
-$L_{\tilde A}R_{\tilde B}$, the swap adjoint, the self-adjointness criterion $\tilde B=\lambda\tilde A$, the trivial
+$L_{\tilde A}R_{\tilde Q_1}$, the swap adjoint, the self-adjointness criterion $\tilde Q_1=\lambda\tilde A$, the trivial
 skew sector, the form-preserving and multiplicative criteria and the partial law of the central product.
 - Mathematics article *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*
 (`articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.md`), for the associate $F^{\approx}$, the

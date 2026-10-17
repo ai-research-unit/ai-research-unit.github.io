@@ -113,13 +113,13 @@ So the reversible and the irreversible are one algebraic operation under two nor
 One more structural fact is used repeatedly. For two elements of the same sector,
 
 $$
-[\tilde{Q},\tilde{Y}] \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{Y}\} \in \mathbb{M}_+ .
+[\tilde{Q},\tilde{Q}_3] \in \mathbb{M}_-, \qquad \{\tilde{Q},\tilde{Q}_3\} \in \mathbb{M}_+ .
 $$
 
 The commutator always lands in the material sector and the anticommutator in the informational one. On $\mathbb{M}_-$ the commutator is explicit and minimal,
 
 $$
-[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r \qquad (\tilde{Q} = iq'_te_t+\vec q,\ \tilde{Y} = ir'_te_t+\vec r),
+[\tilde{Q},\tilde{Q}_3] = 2\,\vec q\times\vec r \qquad (\tilde{Q} = iq'_te_t+\vec q,\ \tilde{Q}_3 = ir'_te_t+\vec r),
 $$
 
 twice the spatial cross product, with the time direction absent: the time axis is central for the bracket. Hence $\mathbb{M}_-$ is closed under the commutator and is a Lie algebra, $\mathfrak{u}(2) = \mathbb{R}ie_t\oplus\mathfrak{su}(2)$, of dimension four; $\mathbb{M}_+$ is closed under the anticommutator and is a Jordan algebra, not a Lie algebra. Neither sector is closed under the product, so both the rotor group and the state module live in the full algebra.
@@ -140,7 +140,7 @@ a real form of signature $(3,1)$. Position, velocity, momentum, energy–momentu
 
 4. **The causal structure is an algebraic locus.** $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone. Its nonzero elements are precisely the elements with no inverse — $3ie_t+\vec e_x+2\vec e_y+2\vec e_z$ has $N=-9+1+4+4=0$, so it is a zero divisor. So the light cone, massless propagation and the failure of division are one fact seen three ways.
 
-5. **Rotations are the bracket.** $[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r$, so angular momentum and the rotation generators are the commutator of the sector, and the Lie algebra is $\mathfrak{u}(2)$.
+5. **Rotations are the bracket.** $[\tilde{Q},\tilde{Q}_3] = 2\,\vec q\times\vec r$, so angular momentum and the rotation generators are the commutator of the sector, and the Lie algebra is $\mathfrak{u}(2)$.
 
 **What the material sector does not supply.** No scale, no preferred time direction, no Hamiltonian and no equation of motion. The kinematics of relativity is in the algebra; its dynamics comes from outside.
 
@@ -208,7 +208,7 @@ Every row is a theorem about $\mathbb{B}$ and its subspaces alone, provable from
 | The sectors are the fixed spaces | $\mathbb{M}_-$ is the fixed space of $-{}^{*}$, $\mathbb{M}_+$ of ${}^{*}$; each of four real dimensions; $\mathbb{B} = \mathbb{M}_-\oplus\mathbb{M}_+$; $i$ exchanges them |
 | The norm | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; real on each sector, of signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$; multiplicative |
 | The matrix dictionary | $\mathsf{M}_2$ is an isomorphism onto $M_2(\mathbb{C})$, $\mathsf{M}_2(\tilde{Q}^{*}) = \mathsf{M}_2(\tilde{Q})^{\dagger}$, $\det\mathsf{M}_2(\tilde{Q}) = \langle\tilde{Q}\rangle_{\natural}$, $\mathrm{Tr}\,\mathsf{M}_2(\tilde{Q}) = 2Q_t$; $\mathbb{M}_+\mapsto$ Hermitian, $\mathbb{M}_-\mapsto$ skew-Hermitian |
-| The bracket of the material sector | $[\tilde{Q},\tilde{Y}] = 2\,\vec q\times\vec r$; $\mathbb{M}_-\cong\mathfrak{u}(2)$ as a Lie algebra |
+| The bracket of the material sector | $[\tilde{Q},\tilde{Q}_3] = 2\,\vec q\times\vec r$; $\mathbb{M}_-\cong\mathfrak{u}(2)$ as a Lie algebra |
 | The interlock | On two elements of one sector: commutator in $\mathbb{M}_-$, anticommutator in $\mathbb{M}_+$; the square of an element of either sector lies in $\mathbb{M}_+$ |
 | One action form | $\langle\tilde{A}\tilde{Q}\tilde{A}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}$ for $\langle\tilde{A}\rangle_{\natural} = 1$; $\Gamma$ preserves both sectors |
 

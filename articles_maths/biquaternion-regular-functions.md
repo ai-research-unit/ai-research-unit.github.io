@@ -86,7 +86,7 @@ which vanishes when $\xi_t^2 = \xi_x^2 + \xi_y^2 + \xi_z^2$. Thus on the indefin
 
 ## Examples of Regular Functions
 
-**Constants.** If $F^{\mathrm{fn}}(\tilde{Q}) = \tilde{C}$ is constant, then $\tilde{\nabla}F^{\mathrm{fn}} = 0$ on any subspace; the constants form an eight-real-dimensional space of regular functions.
+**Constants.** If $F^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}_1$ is constant, then $\tilde{\nabla}F^{\mathrm{fn}} = 0$ on any subspace; the constants form an eight-real-dimensional space of regular functions.
 
 **Powers of a single-plane variable.** On $\mathbb{H}_{\mathbb{B}}$, with $A = q_t + \vec e_x q_x$, every $A^n$, $n \geq 0$, is regular, being holomorphic in $A$ and independent of $q_y, q_z$; for $n = 1$ directly, $\tilde{\nabla} A = e_t \cdot e_t + \vec e_x \cdot \vec e_x = e_t - e_t = 0$. The negative power $(A - w)^{-1}$ is regular away from $A = w$, and more generally every classical holomorphic function of $A$, extended by constancy in the orthogonal directions, is regular. These are the regular **linear** and power functions.
 
@@ -94,7 +94,7 @@ which vanishes when $\xi_t^2 = \xi_x^2 + \xi_y^2 + \xi_z^2$. Thus on the indefin
 
 **The Cauchy kernel.** On $\mathbb{H}_{\mathbb{B}}$, $G^{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ satisfies $\tilde{\nabla}G^{\mathrm{fn}} = 0$ for $\tilde{Q} \neq 0$; it is the fundamental solution of $\tilde{\nabla}$ and is singular only at the origin, since $\mathbb{H}_{\mathbb{B}}$ has no zero divisors.
 
-**Closure properties.** Regular functions are closed under addition, under right multiplication by constants, $\tilde{\nabla}(F^{\mathrm{fn}}\tilde{C}) = (\tilde{\nabla}F^{\mathrm{fn}})\tilde{C} = 0$, and under left multiplication by complex scalars, since $\lambda$ is central. Left multiplication by a **general** constant does not preserve regularity: on $\mathbb{H}_{\mathbb{B}}$, $\tilde{\nabla}(\vec e_y A) = e_t \vec e_y + \vec e_x \vec e_y \vec e_x = \vec e_y + \vec e_z \vec e_x = 2\vec e_y \neq 0$. Thus the regular functions form a right $\mathbb{B}$-module under pointwise right multiplication by constants, but not a left module. Similarly $\tilde{\nabla}(cA) = c + \vec e_x c \vec e_x = 2(c_2 \vec e_y + c_3 \vec e_z)$, so $cA$ is regular exactly when $c \in \mathbb{C}[\vec e_x]$.
+**Closure properties.** Regular functions are closed under addition, under right multiplication by constants, $\tilde{\nabla}(F^{\mathrm{fn}}\tilde{Q}_1) = (\tilde{\nabla}F^{\mathrm{fn}})\tilde{Q}_1 = 0$, and under left multiplication by complex scalars, since $\lambda$ is central. Left multiplication by a **general** constant does not preserve regularity: on $\mathbb{H}_{\mathbb{B}}$, $\tilde{\nabla}(\vec e_y A) = e_t \vec e_y + \vec e_x \vec e_y \vec e_x = \vec e_y + \vec e_z \vec e_x = 2\vec e_y \neq 0$. Thus the regular functions form a right $\mathbb{B}$-module under pointwise right multiplication by constants, but not a left module. Similarly $\tilde{\nabla}(cA) = c + \vec e_x c \vec e_x = 2(c_2 \vec e_y + c_3 \vec e_z)$, so $cA$ is regular exactly when $c \in \mathbb{C}[\vec e_x]$.
 
 ## Harmonicity and the Factorization of the Laplacian
 

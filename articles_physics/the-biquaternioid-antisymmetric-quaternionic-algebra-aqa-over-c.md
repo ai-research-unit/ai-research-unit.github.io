@@ -22,7 +22,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Antisy
 ### Advanced Properties
 
 - **The specificities.** What the structure adds to its general product and what it shares with the other eleven. Owner: *The Specificities of the Antisymmetric Quaternionic Algebra*.
-- **The Jacobi failure and the associator defect.** The **Jacobi identity fails**; the defect is controlled by the associator of the parent product, and the deviation $D(\tilde A,\tilde B)$ measures it. Owner: *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*.
+- **The Jacobi failure and the associator defect.** The **Jacobi identity fails**; the defect is controlled by the associator of the parent product, and the deviation $D(\tilde A,\tilde Q_1)$ measures it. Owner: *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*.
 - **The invariant bilinear forms.** The structure has **no non-degenerate invariant bilinear form**, so the adjoint has to be imported and then leaves the family; the two surviving pairings, one compact and one Lorentzian. Owner: *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*.
 - **The remarkable subspaces and the realification.** The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra*, *The Realification of the Eight Derived Structures*.
 
@@ -56,10 +56,10 @@ The biquaternioid antisymmetric quaternionic algebra is the structure $\tilde P\
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the antisymmetric quaternionic product, $\mathrm{AQA}$ |
 | $\tilde P\star\tilde Q=-\tilde Q\star\tilde P$ | antisymmetry |
 | the Jacobi failure | the obstruction; no Lie algebra |
-| $D(\tilde A,\tilde B)$ | the deviation; the defect of the bracket |
+| $D(\tilde A,\tilde Q_1)$ | the deviation; the defect of the bracket |
 | $P_0\vec Q-Q_t\vec P$ | the mixed term; the boost |
 | $[\,\mathrm{boost},\mathrm{boost}\,]=$ rotation | the Cartan decomposition read on the bracket |
-| $e_t\star\tilde X=0$ | the absence of a unit |
+| $e_t\star\tilde Q_1=0$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}},\ \mathrm{Vect}(\mathbb{B})$ | the centre and the vector subspace |
 | $\mathrm{U}(2)$ | the group reached off these operators, by the associative one-sided action |
 

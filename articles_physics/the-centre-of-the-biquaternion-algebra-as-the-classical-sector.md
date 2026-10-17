@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is 
 
 The centre is small. Writing $\tilde{Q}=x_0e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$, one finds
 $$
-Z(\mathbb{B})=\bigl\{\tilde{Q}:\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}\ \ \forall\tilde{Y}\bigr\}
+Z(\mathbb{B})=\bigl\{\tilde{Q}:\tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}\ \ \forall\tilde{Q}_1\bigr\}
 =\bigl\{x_0e_t:\ x_0\in\mathbb{C}\bigr\}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}\cong\mathbb{C},
 $$
 a **two-real-dimensional** commutative subalgebra, with Hermitian part
@@ -31,13 +31,13 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t)=2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Q}_1\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=\langle\tilde{Q}\rangle_{\natural}$. A state is $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$.
 
 ## The Centre: Definition and Computation
 
 **Definition.** The centre of $\mathbb{B}$ is the set of elements that commute with every element,
 $$
-Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}\ \text{for all }\tilde{Y}\in\mathbb{B}\bigr\}.
+Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}\ \text{for all }\tilde{Q}_1\in\mathbb{B}\bigr\}.
 $$
 Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_t,\vec e_x,\vec e_y,\vec e_z,i$, an element is central if and only if it commutes with $\vec e_x,\vec e_y,\vec e_z$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_t$ is automatic because $e_t$ is the unit.
 
@@ -79,7 +79,7 @@ $$
 $$
 which is holomorphic rather than Hermitian: it is positive definite on the Hermitian part of the centre, $\langle ae_t\rangle_{\natural}=a^2e_t\geq0$ for $a\in\mathbb{R}$, negative definite on its anti-Hermitian part, $\langle ibe_t\rangle_{\natural}=-b^2e_t\leq0$ for $b\in\mathbb{R}$, and complex-valued on the rest of the complex centre, where the form is non-degenerate and vanishes only at $\lambda=0$. The two forms therefore behave on the centre exactly as they behave on the whole algebra — one Hermitian, one holomorphic/quadratic — and the centre is the smallest subspace on which both are visible, with the Hermitian form positive definite and the biquaternion norm indefinite (on the complexified directions). The verification of $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ for representative $\lambda$ is elementary and was checked numerically.
 
-**Commutativity and associativity.** The centre is commutative, $\tilde{Q}\tilde{Y}=\tilde{Y}\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
+**Commutativity and associativity.** The centre is commutative, $\tilde{Q}\tilde{Q}_1=\tilde{Q}_1\tilde{Q}$, and associative, being a subalgebra; its multiplication is complex multiplication,
 $$
 (\lambda e_t)(\mu e_t)=(\lambda\mu)e_t ,
 $$
@@ -97,7 +97,7 @@ $$
 $$
 This is the operational characterization of the classical sector: it is the set of algebraic objects that no symmetry of the framework can move. Since the adjoint action descends to the rotations of the Bloch sphere, the rotation-invariant Hermitian observables are the real multiples of the identity, and there is exactly a one-parameter family of them.
 
-**3. Vanishing of the inner derivations.** The inner derivation attached to $\tilde{Q}$ is $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$. The centre is the common kernel,
+**3. Vanishing of the inner derivations.** The inner derivation attached to $\tilde{Q}$ is $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$. The centre is the common kernel,
 $$
 Z(\mathbb{B})=\bigcap_{\tilde{Q}\in\mathbb{B}}\ker\bigl(\mathrm{ad}_{\tilde{Q}}\bigr),
 $$
@@ -107,10 +107,10 @@ and since the derivations are the infinitesimal symmetries, this is the infinite
 $$
 \tilde{Q}\in Z(\mathbb{B})
 \iff
-\mathrm{Tr}\bigl(\tilde{Q}\tilde{Y}\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Y})
-\quad\text{for all }\tilde{Y}\in\mathbb{B}.
+\mathrm{Tr}\bigl(\tilde{Q}\tilde{Q}_1\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Q}_1)
+\quad\text{for all }\tilde{Q}_1\in\mathbb{B}.
 $$
-The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_t)\tilde{Y}\bigr)=0$ for all $\tilde{Y}$, and the trace pairing is non-degenerate, so the bracket vanishes. The **physical interpretation** is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
+The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_t)\tilde{Q}_1\bigr)=0$ for all $\tilde{Q}_1$, and the trace pairing is non-degenerate, so the bracket vanishes. The **physical interpretation** is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
 
 **5. The matrix-model characterization.** Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.
 
@@ -314,7 +314,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ |
 | $\mathrm{Ad}_{\tilde{U}}(\tilde{Q})=\tilde{U}\tilde{Q}\tilde{U}^{-1}$ | Adjoint (inner) action |
-| $\mathrm{ad}_{\tilde{Q}}(\tilde{Y})=[\tilde{Q},\tilde{Y}]$ | Inner derivation |
+| $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |
 | $\mathbb{A}_{\vec u}=\mathrm{span}_\mathbb{C}\{\tilde\Pi(\vec u),e_t-\tilde\Pi(\vec u)\}$ | Maximal commutative subalgebra (MASA) |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure-state projection, $|\vec u|=1$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ |

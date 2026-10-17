@@ -154,7 +154,7 @@ them: each of the three leaves the subspace and enters the centre.
 and even on the centre, where the restriction is the multiplication of $\mathbb{C}$, the unit $e_t$ is a unit
 of the restricted centre and not of the algebra. The element $e_t$ acts on every subspace by the projection of
 the scalar part, $\tilde A\star e_t=A_te_t$, which is the identity only on the centre. For every nonzero
-$\tilde A$ the equation $\tilde A\star\tilde X=e_t$ has the affine hyperplane $\langle\tilde A,\tilde X\rangle_{\natural}=1$ of
+$\tilde A$ the equation $\tilde A\star\tilde Q_1=e_t$ has the affine hyperplane $\langle\tilde A,\tilde Q_1\rangle_{\natural}=1$ of
 solutions, since the form is non-degenerate; but there is no unit, so no element is invertible in the sense of
 the operation.
 

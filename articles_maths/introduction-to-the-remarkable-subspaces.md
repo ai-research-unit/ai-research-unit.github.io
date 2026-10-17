@@ -218,22 +218,22 @@ $$
 the pair is a complete orthogonal pair of idempotents, a **frame**, and each member is primitive and generates a minimal right ideal. The frame cuts the algebra into the four pieces $\tilde\Pi\mathbb{B}\tilde\Pi$, $\tilde\Pi\mathbb{B}(e_t-\tilde\Pi)$, $(e_t-\tilde\Pi)\mathbb{B}\tilde\Pi$ and $(e_t-\tilde\Pi)\mathbb{B}(e_t-\tilde\Pi)$, each of real dimension $2$, so that the eight-dimensional algebra splits into four pieces of dimension two; none of the four is a sum of coordinate blocks, in contrast with the remarkable subspaces, every one of which is a sum of blocks. **Third, the projection.** The idempotent is the projection onto $\mathbb{B}\tilde\Pi$ along $\mathbb{B}(e_t - \tilde\Pi)$:
 
 $$
-\tilde\Pi\tilde{X}\tilde\Pi = \tilde{X}\tilde\Pi \quad (\tilde{X} \in \mathbb{B}\tilde\Pi) , \qquad \tilde\Pi\tilde{Y}\tilde\Pi = 0 \quad (\tilde{Y} \in \mathbb{B}(e_t - \tilde\Pi)) .
+\tilde\Pi\tilde{Q}_3\tilde\Pi = \tilde{Q}_3\tilde\Pi \quad (\tilde{Q}_3 \in \mathbb{B}\tilde\Pi) , \qquad \tilde\Pi\tilde{Q}_4\tilde\Pi = 0 \quad (\tilde{Q}_4 \in \mathbb{B}(e_t - \tilde\Pi)) .
 $$
 
 **The ideals.** Let $\tilde\Pi = \tfrac{1}{2}(e_t + i\vec q_a)$ be a Hermitian idempotent and $f = e_t - \tilde\Pi = \tfrac{1}{2}(e_t - i\vec q_a)$ its complement. The annihilators are the complement ideals themselves,
 
 $$
-I_{\tilde\Pi} = \left\{\tilde X : \tilde X\tilde\Pi = 0\right\} = \left\{\tilde X\,f : \tilde X \in \mathbb{B}\right\} = \mathbb{B}f , \qquad J_{\tilde\Pi} = f\mathbb{B} ,
+I_{\tilde\Pi} = \left\{\tilde Q_3 : \tilde Q_3\tilde\Pi = 0\right\} = \left\{\tilde Q_3\,f : \tilde Q_3 \in \mathbb{B}\right\} = \mathbb{B}f , \qquad J_{\tilde\Pi} = f\mathbb{B} ,
 $$
 
-the first because $\tilde X\tilde\Pi = 0$ leaves $\tilde X = \tilde X(\tilde\Pi + f) = \tilde X f$, and conversely $(\tilde X f)\tilde\Pi = \tilde X f\tilde\Pi = 0$. Here $\tilde\Pi$ is not nilpotent, so the second alternative of the theorem applies and
+the first because $\tilde Q_3\tilde\Pi = 0$ leaves $\tilde Q_3 = \tilde Q_3(\tilde\Pi + f) = \tilde Q_3 f$, and conversely $(\tilde Q_3 f)\tilde\Pi = \tilde Q_3 f\tilde\Pi = 0$. Here $\tilde\Pi$ is not nilpotent, so the second alternative of the theorem applies and
 
 $$
 \mathbb{B} = \mathbb{B}\tilde\Pi \oplus \mathbb{B}f = \tilde\Pi\mathbb{B} \oplus f\mathbb{B} ,
 $$
 
-four nonzero proper one-sided ideals, all minimal, all of real dimension $4$, arranged in two complementary pairs. The four are the halves of the Peirce decomposition. Expanding $\tilde X$ as $\tilde\Pi\tilde X\tilde\Pi + \tilde\Pi\tilde X f + f\tilde X\tilde\Pi + f\tilde X f$ gives
+four nonzero proper one-sided ideals, all minimal, all of real dimension $4$, arranged in two complementary pairs. The four are the halves of the Peirce decomposition. Expanding $\tilde Q_3$ as $\tilde\Pi\tilde Q_3\tilde\Pi + \tilde\Pi\tilde Q_3 f + f\tilde Q_3\tilde\Pi + f\tilde Q_3 f$ gives
 
 $$
 \mathbb{B} = \tilde\Pi\mathbb{B}\tilde\Pi \oplus \tilde\Pi\mathbb{B}f \oplus f\mathbb{B}\tilde\Pi \oplus f\mathbb{B}f ,
@@ -368,7 +368,7 @@ $$
 \mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q} .
 $$
 
-**Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde X\vec P)\vec P = \tilde X\vec P^2 = 0$ for every $\tilde X$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde X)\vec P = 0$ on the left instead.
+**Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde Q_3\vec P)\vec P = \tilde Q_3\vec P^2 = 0$ for every $\tilde Q_3$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde Q_3)\vec P = 0$ on the left instead.
 
 The subspaces of the remarkable subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by the sections above; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
 

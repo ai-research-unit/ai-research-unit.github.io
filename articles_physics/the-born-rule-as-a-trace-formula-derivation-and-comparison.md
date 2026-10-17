@@ -24,7 +24,7 @@ $$
 \mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)=2h_0 .
 $$
 
-It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Y})=\mathrm{Tr}(\tilde{Y}\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Y})=Q_tY_0-\sum_kQ_kY_k$ is symmetric, and **normalized** by $\mathrm{Tr}(e_t)=2$, the dimension of the algebra's representation. It defines the **trace pairing**
+It is **tracial**, $\mathrm{Tr}(\tilde{Q}\tilde{Q}_1)=\mathrm{Tr}(\tilde{Q}_1\tilde{Q})$, because $\mathrm{Sc}(\tilde{Q}\tilde{Q}_1)=Q_tQ_{1,0}-\sum_kQ_kQ_{1k}$ is symmetric, and **normalized** by $\mathrm{Tr}(e_t)=2$, the dimension of the algebra's representation. It defines the **trace pairing**
 
 $$
 \mathrm{Tr}(\tilde{H}\tilde{H}')=2(h_0h'_0+\vec h\cdot\vec h'),

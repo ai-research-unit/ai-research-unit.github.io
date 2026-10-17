@@ -92,10 +92,10 @@ while the doubled block is $2\,(ie_t\diamond \vec e_x)=-2i\vec e_x$, the defect 
 
 ## The Failure of the Jacobi Identity
 
-**Definition.** For an operation $b$, additive in each variable, the **cyclic sum** of $b$ at the triple $(\tilde X,\tilde Y,\tilde Z)$ is
+**Definition.** For an operation $b$, additive in each variable, the **cyclic sum** of $b$ at the triple $(\tilde Q_1,\tilde Q_2,\tilde Q_3)$ is
 
 $$
-\mathrm{cyc}\,\mathfrak{b}(\tilde X,\tilde Y,\tilde Z)=b\bigl(\mathfrak{b}(\tilde X,\tilde Y),\tilde Z\bigr)+b\bigl(\mathfrak{b}(\tilde Y,\tilde Z),\tilde X\bigr)+b\bigl(\mathfrak{b}(\tilde Z,\tilde X),\tilde Y\bigr),
+\mathrm{cyc}\,\mathfrak{b}(\tilde Q_1,\tilde Q_2,\tilde Q_3)=b\bigl(\mathfrak{b}(\tilde Q_1,\tilde Q_2),\tilde Q_3\bigr)+b\bigl(\mathfrak{b}(\tilde Q_2,\tilde Q_3),\tilde Q_1\bigr)+b\bigl(\mathfrak{b}(\tilde Q_3,\tilde Q_1),\tilde Q_2\bigr),
 $$
 
 the outer form of *The Symmetric and Antisymmetric Parts of an Algebra Product*, §*Lie-Admissible Algebras*. The operation $b$ satisfies the Jacobi identity exactly when its cyclic sum vanishes for all triples; the factor $\tfrac12$ of the block is carried by $b$, so a bracket written without it has its cyclic sum multiplied by four.
@@ -177,7 +177,7 @@ The diagonal of the block is the vector part of the square, $\tilde Q\diamond\ti
 | $\tilde Q\tilde Q^{*}=\langle\tilde Q,\tilde Q\rangle_{*}e_t$ | the criterion for the square-zero elements |
 | $[\tilde P,\tilde Q]_{\varsigma}=\tilde P\tilde Q^{*}-\tilde Q\tilde P^{*}$ | the sesquilinear commutator, the bare antisymmetrisation |
 | $\overline{\tilde Q\tilde P^{*}}-\tilde Q\tilde P^{*}$ | the defect between the bracket and twice the block |
-| $\mathrm{cyc}\,\mathfrak{b}(\tilde X,\tilde Y,\tilde Z)$ | the cyclic sum, with the factor $\tfrac12$ carried by $b$ |
+| $\mathrm{cyc}\,\mathfrak{b}(\tilde Q_1,\tilde Q_2,\tilde Q_3)$ | the cyclic sum, with the factor $\tfrac12$ carried by $b$ |
 | $\mathrm{AQA},\mathrm{AQS}$ | the two sibling failing brackets, $\vec P\times$ and conjugate variants |
 
 ## Further Reading

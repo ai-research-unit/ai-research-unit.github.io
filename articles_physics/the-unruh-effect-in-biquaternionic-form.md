@@ -133,7 +133,7 @@ $$
 so that $K=-\log\rho$ is Hermitian and therefore lies in $\mathbb{M}_+$. It states that the KMS correlation functions are analytic in the strip $0<\mathrm{Im}\,t<\beta$ and satisfy
 
 $$
-F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t),
+F_{\tilde A\tilde{Q}_1}(t+i\beta) = F_{\tilde{Q}_1\tilde A}(-t),
 $$
 
 and it records the imaginary time of $\mathbb{M}_-$ as intrinsic.
@@ -231,7 +231,7 @@ The last display is the **KMS boundary relation** of the parent, with $A=B=\phi(
 Two remarks keep the derivation honest.
 
 - **The relation is a periodicity, not a decay.** The two-point function is periodic in imaginary proper time with period $\beta$; it is not that the correlations fall off. Periodicity in imaginary time is exactly the parent's characterization of a thermal state, and it is what makes the Matsubara formalism work.
-- **The operator exchange is automatic here.** The general KMS relation exchanges $\tilde A$ and $\tilde B$. For the two-point function of a single Hermitian field, $W$ is even, so $W(\delta\tau+i\beta)=W(-\delta\tau)$ also reads $W(\delta\tau+i\beta)=W(\delta\tau)$. The general relation is recovered by keeping the operators distinct, as in the parent.
+- **The operator exchange is automatic here.** The general KMS relation exchanges $\tilde A$ and $\tilde{Q}_1$. For the two-point function of a single Hermitian field, $W$ is even, so $W(\delta\tau+i\beta)=W(-\delta\tau)$ also reads $W(\delta\tau+i\beta)=W(\delta\tau)$. The general relation is recovered by keeping the operators distinct, as in the parent.
 
 ### Frequency Space and the Planck Factor
 
@@ -326,7 +326,7 @@ in agreement with the imaginary-time route. The two computations are independent
 
 ## The Statistics
 
-The Unruh temperature does not depend on the statistics of the field. The KMS boundary relation $F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$ is the same for bosons and fermions; what differs is the **time-ordered** correlation function, which is antiperiodic for fermions and periodic for bosons, the parent's statement. The strip, and therefore the temperature, is the same. What changes for a fermionic field is the response of a detector and the sign structure of the Matsubara sum; that is the parent's fermionic twist, and it needs the $\mathbb{Z}/2$ grading that the parent records as absent from $\mathbb{B}$ in general and that the Fock-space article realizes only for a single mode. The thermal character of the accelerated vacuum is thus statistics-independent, and the framework's open grading question is orthogonal to the Unruh temperature.
+The Unruh temperature does not depend on the statistics of the field. The KMS boundary relation $F_{\tilde A\tilde{Q}_1}(t+i\beta)=F_{\tilde{Q}_1\tilde A}(-t)$ is the same for bosons and fermions; what differs is the **time-ordered** correlation function, which is antiperiodic for fermions and periodic for bosons, the parent's statement. The strip, and therefore the temperature, is the same. What changes for a fermionic field is the response of a detector and the sign structure of the Matsubara sum; that is the parent's fermionic twist, and it needs the $\mathbb{Z}/2$ grading that the parent records as absent from $\mathbb{B}$ in general and that the Fock-space article realizes only for a single mode. The thermal character of the accelerated vacuum is thus statistics-independent, and the framework's open grading question is orthogonal to the Unruh temperature.
 
 ## What Is Established, What Is Interpretation, and the Gaps
 

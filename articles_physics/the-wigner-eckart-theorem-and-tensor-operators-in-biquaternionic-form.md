@@ -217,10 +217,10 @@ with $c_j=\langle j\|\tilde V\|j\rangle/\langle j\|\tilde J\|j\rangle$, where th
 Rank-$2$ tensor operators are built by coupling two rank-$1$ operators with the Clebsch–Gordan coefficients of the coupling $1\otimes1\to2$:
 
 $$
-\tilde T^{(2)}_\mu=\sum_{\mu_1+\mu_2=\mu}\langle 1,\mu_1;1,\mu_2|2,\mu\rangle\,\tilde A_{\mu_1}\tilde B_{\mu_2} .
+\tilde T^{(2)}_\mu=\sum_{\mu_1+\mu_2=\mu}\langle 1,\mu_1;1,\mu_2|2,\mu\rangle\,\tilde A_{\mu_1}\tilde Q_{1,\mu_2} .
 $$
 
-Because the coupling coefficients satisfy the same recursions as the states, the resulting family satisfies the rank-$2$ commutation relations. This was checked explicitly: with $\tilde A=\tilde B=\tilde S^{(1)}$ (the one-particle spherical vector on the two-spin space) and with the $1\otimes1$ coefficients of the companion problem, the five operators $\tilde T^{(2)}_\mu$, $\mu=-2,\dots,2$, satisfy
+Because the coupling coefficients satisfy the same recursions as the states, the resulting family satisfies the rank-$2$ commutation relations. This was checked explicitly: with $\tilde A=\tilde Q_1=\tilde S^{(1)}$ (the one-particle spherical vector on the two-spin space) and with the $1\otimes1$ coefficients of the companion problem, the five operators $\tilde T^{(2)}_\mu$, $\mu=-2,\dots,2$, satisfy
 
 $$
 [\tilde S_3,\tilde T^{(2)}_\mu]=\hbar \mu\,\tilde T^{(2)}_\mu,\qquad

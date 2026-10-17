@@ -33,7 +33,7 @@ $$
 \tilde{Q}^{\natural} = (a_0 + ib_0)e_t - (a_1 + ib_1)\vec e_x - (a_2 + ib_2)\vec e_y - (a_3 + ib_3)\vec e_z .
 $$
 
-It is $\mathbb{C}$-**linear**, because it fixes $i$, and it is an anti-automorphism, $(\tilde{A}\tilde{B})^{\natural} = \tilde{B}^{\natural}\,\tilde{A}^{\natural}$.
+It is $\mathbb{C}$-**linear**, because it fixes $i$, and it is an anti-automorphism, $(\tilde{A}\tilde{Q}_1)^{\natural} = \tilde{Q}_1^{\natural}\,\tilde{A}^{\natural}$.
 
 **Complex conjugation** negates the scalar imaginary and fixes the units:
 
@@ -41,7 +41,7 @@ $$
 \bar{\tilde{Q}} = (a_0 - ib_0)e_t + (a_1 - ib_1)\vec e_x + (a_2 - ib_2)\vec e_y + (a_3 - ib_3)\vec e_z .
 $$
 
-It is $\mathbb{C}$-**antilinear**, $\overline{(\alpha\tilde{A})} = \bar{\alpha}\,\bar{\tilde{A}}$, and it is an automorphism, $\overline{(\tilde{A}\tilde{B})} = \bar{\tilde{A}}\,\bar{\tilde{B}}$.
+It is $\mathbb{C}$-**antilinear**, $\overline{(\alpha\tilde{A})} = \bar{\alpha}\,\bar{\tilde{A}}$, and it is an automorphism, $\overline{(\tilde{A}\tilde{Q}_1)} = \bar{\tilde{A}}\,\bar{\tilde{Q}_1}$.
 
 Composing them gives the two Hermitian conjugations of the series. Because one factor is linear and the other antilinear, each composite is antilinear:
 
@@ -50,7 +50,7 @@ $$
 \tilde{Q}^\flat = -\tilde{Q}^{*} .
 $$
 
-Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{B})^\flat = -\tilde{B}^\flat\tilde{A}^\flat$, and that sign is its only departure from an ordinary anti-automorphism. The two differ by the central sign alone, and that sign is what moves the fixed space from one sector to the other.
+Both are anti-automorphisms; the second carries a sign, $(\tilde{A}\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{A}^\flat$, and that sign is its only departure from an ordinary anti-automorphism. The two differ by the central sign alone, and that sign is what moves the fixed space from one sector to the other.
 
 | involution | action on generators | $\mathbb{C}$-linearity | character | fixed space |
 |---|---|---|---|---|
@@ -310,7 +310,7 @@ The algebra's real structure is retained, and the companion articles use the ant
 
 **The $\mathbb{M}_\pm$ split itself.** The material and informational sectors are the fixed spaces of $\flat$ and ${}^{*}$, and the framework's identification of $\mathbb{M}_-$ with material space is the statement that the field is anti-Hermitian. The sign convention by which $\flat$ acts as $+$ on $\mathbb{M}_-$ and $-$ on $\mathbb{M}_+$ *is* the convention that makes $\mathbb{M}_-$ the material sector; the two are one convention seen twice.
 
-**Bilinear pairings and the trace.** The invariant pairings of the series are built on $\flat$, and their order-reversing-with-a-twist character, $(\tilde{A}\tilde{B})^\flat = -\tilde{B}^\flat\tilde{A}^\flat$, is what makes the trace a scalar and not a matrix.
+**Bilinear pairings and the trace.** The invariant pairings of the series are built on $\flat$, and their order-reversing-with-a-twist character, $(\tilde{A}\tilde{Q}_1)^\flat = -\tilde{Q}_1^\flat\tilde{A}^\flat$, is what makes the trace a scalar and not a matrix.
 
 **Kramers degeneracy and antiunitary symmetry.** An antiunitary operator squaring to $-1$ forces every level to be at least doubly degenerate. The theorem is available to the antilinear maps alone — no linear involution yields the conclusion, whatever its spectrum. The framework's real structure is itself an involution, $\flat^2 = +1$, so it is not an operator of that kind: the degeneracy belongs to the antilinear symmetries built on the structure, and the theorem is the sharpest reason the distinction between an antilinear symmetry and a linear one has content.
 

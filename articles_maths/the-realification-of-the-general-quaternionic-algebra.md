@@ -18,11 +18,11 @@ $$
 $$
 and the product is the same multiplication table on the same elements. **Restriction of scalars** takes the $\mathbb{C}$-algebra to an $\mathbb{R}$-algebra; there is no new multiplication, only a smaller field. The complex structure is the operator
 $$
-J:\tilde Y\mapsto i\tilde Y,\qquad J^2=-\mathrm{id},
+J:\tilde Q_1\mapsto i\tilde Q_1,\qquad J^2=-\mathrm{id},
 $$
 an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ that has no real eigenvalue, and it is the realification of the central scalar $i$: it is left multiplication by $i$, so $J=L_i$ in the notation of §*The Real Operators and the Trace Form*. It is $\mathbb{C}$-linear as well, since
 $$
-J(\lambda\tilde Y)=i\lambda\tilde Y=\lambda\,i\tilde Y=\lambda J(\tilde Y)\qquad(\lambda\in\mathbb{C}),
+J(\lambda\tilde Q_1)=i\lambda\tilde Q_1=\lambda\,i\tilde Q_1=\lambda J(\tilde Q_1)\qquad(\lambda\in\mathbb{C}),
 $$
 by the centrality of $i$: $J$ commutes with itself, so the criterion for $\mathbb{C}$-linearity of §*The Realification of a Linear Map* is met trivially. What the passage to $\mathbb{R}$ adds is not a new operator but the **visibility** of this one: over $\mathbb{C}$ it is nothing but the scalar $i$, and it is in the real reading that the $\mathbb{C}$-linear maps are singled out as exactly those commuting with it.
 
@@ -32,13 +32,13 @@ What moves is every notion that names the field or the linear structure. The dim
 
 ## The Second Slot and the Centre
 
-Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an **algebra** and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$ the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{C}_{\mathbb{B}}$-linear: for every $\tilde Y$ the left multiplication
+Over $\mathbb{C}$ the product is $\mathbb{C}$-bilinear, so it is an **algebra** and not a sesqualgebra, and its second slot is $\mathbb{C}$-linear. Read over $\mathbb{R}$ the product remains $\mathbb{R}$-bilinear and its second slot is $\mathbb{C}_{\mathbb{B}}$-linear: for every $\tilde Q_1$ the left multiplication
 $$
-L_{\tilde Y}:\tilde Z\mapsto\tilde Y\star\tilde Z
+L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2
 $$
-is $\mathbb{C}$-linear over $\mathbb{C}$ — since ${}^{\natural}$ is $\mathbb{C}$-linear and the plain product is $\mathbb{C}$-bilinear, $\tilde Y\star(\lambda\tilde Z)=\lambda(\tilde Y\star\tilde Z)$ for $\lambda\in\mathbb{C}$ — and it is therefore $\mathbb{R}$-linear on $\mathbb{R}^8$ and commutes with the complex structure, $L_{\tilde Y}J=JL_{\tilde Y}$, which is the criterion for $\mathbb{C}_{\mathbb{B}}$-linearity (*The Realification and the Effect of the Change of Scalars*, §*The Realification of a Linear Map*). The passage therefore **does not change the kind** of this product.
+is $\mathbb{C}$-linear over $\mathbb{C}$ — since ${}^{\natural}$ is $\mathbb{C}$-linear and the plain product is $\mathbb{C}$-bilinear, $\tilde Q_1\star(\lambda\tilde Q_2)=\lambda(\tilde Q_1\star\tilde Q_2)$ for $\lambda\in\mathbb{C}$ — and it is therefore $\mathbb{R}$-linear on $\mathbb{R}^8$ and commutes with the complex structure, $L_{\tilde Q_1}J=JL_{\tilde Q_1}$, which is the criterion for $\mathbb{C}_{\mathbb{B}}$-linearity (*The Realification and the Effect of the Change of Scalars*, §*The Realification of a Linear Map*). The passage therefore **does not change the kind** of this product.
 
-Both slots are $\mathbb{C}$-linear here, so the right multiplication $R_{\tilde Y}:\tilde Z\mapsto\tilde Z\star\tilde Y$ commutes with $J$ as well, $R_{\tilde Y}J=JR_{\tilde Y}$, and the pair of commutations is the mark of the $A$ family. In the six $S$ structures of the twelve the second slot is conjugate-linear, so $L_{\tilde Y}$ anticommutes with $J$ there, and the two block shapes of the passage separate the families exactly as the criterion does.
+Both slots are $\mathbb{C}$-linear here, so the right multiplication $R_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_2\star\tilde Q_1$ commutes with $J$ as well, $R_{\tilde Q_1}J=JR_{\tilde Q_1}$, and the pair of commutations is the mark of the $A$ family. In the six $S$ structures of the twelve the second slot is conjugate-linear, so $L_{\tilde Q_1}$ anticommutes with $J$ there, and the two block shapes of the passage separate the families exactly as the criterion does.
 
 In the real basis the criterion takes a block form. If the complex matrix of a $\mathbb{C}$-linear endomorphism on a $\mathbb{C}$-basis is $A+iB$, the real matrix of the same map on the doubled basis is
 $$
@@ -73,11 +73,11 @@ one real equation, so its zero set is a real hypersurface of dimension $7$ (*The
 
 The left and the right multiplications by an element,
 $$
-L_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y,\qquad R_{\tilde X}:\tilde Y\mapsto\tilde Y\star\tilde X,
+L_{\tilde Q_3}:\tilde Q_1\mapsto\tilde Q_3\star\tilde Q_1,\qquad R_{\tilde Q_3}:\tilde Q_1\mapsto\tilde Q_1\star\tilde Q_3,
 $$
 are $\mathbb{C}$-linear over $\mathbb{C}$ and hence $\mathbb{R}$-linear on $\mathbb{R}^8$, and both commute with $J$ by §*The Second Slot and the Centre*; in the real basis their matrices have the block shape above. Their traces carry the dimension ratio, the complex trace counting $\mathrm{Sc}$ with the factor $4$ and the real trace with the factor $8$,
 $$
-\operatorname{Tr}_{\mathbb{R}}(L_{\tilde X})=8\operatorname{Re}\mathrm{Sc}(\tilde X)=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}(L_{\tilde X}).
+\operatorname{Tr}_{\mathbb{R}}(L_{\tilde Q_3})=8\operatorname{Re}\mathrm{Sc}(\tilde Q_3)=2\operatorname{Re}\operatorname{Tr}_{\mathbb{C}}(L_{\tilde Q_3}).
 $$
 
 The trace form of the product is
@@ -136,7 +136,7 @@ Read over $\mathbb{R}$ the General Quaternionic Algebra is the same product on t
 | $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | the general quaternionic bilinear form carried by the product |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, the form of the trace form |
 | $\operatorname{diag}(\mathrm{I}_4,-\mathrm{I}_4)$ | Gram matrix of the realified form $\langle\cdot,\cdot\rangle_{\natural}$, of signature $(4,4)$ |
-| $L_{\tilde X}$, $R_{\tilde X}$ | the left and the right multiplications, $\mathbb{C}_{\mathbb{B}}$-linear on $\mathbb{R}^8$ |
+| $L_{\tilde Q_3}$, $R_{\tilde Q_3}$ | the left and the right multiplications, $\mathbb{C}_{\mathbb{B}}$-linear on $\mathbb{R}^8$ |
 | $\tau(\tilde P,\tilde Q)=\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P}L_{\tilde Q})$ | the trace form, $=8\operatorname{Re}\langle\tilde P,\tilde Q\rangle$, signature $(4,4)$ |
 | $\mathbb{H}_{\mathbb{B}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$ | the real form closed under the product, with $\mathbb{B}=\mathbb{H}_{\mathbb{B}}\oplus i\mathbb{H}_{\mathbb{B}}$ |
 

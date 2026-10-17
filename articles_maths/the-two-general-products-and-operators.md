@@ -12,7 +12,7 @@ $$
 L_{\tilde p}(\tilde q)=\tilde p\tilde q , \quad R_{\tilde p}(\tilde q)=\tilde q\tilde p , \quad L^{\natural}_{\tilde p}(\tilde q)=\tilde p^{\natural}\tilde q , \quad R^{\natural}_{\tilde p}(\tilde q)=\tilde q^{\natural}\tilde p .
 $$
 
-The **plain form** is $\langle\tilde x,\tilde y\rangle=\mathrm{Sc}(\tilde x\tilde y)$ and the **quaternion form** is $\langle\tilde x,\tilde y\rangle_{\natural}=\mathrm{Sc}(\tilde x^{\natural}\tilde y)$; the adjoint of an operator is taken with respect to one of the two, and it is written ${}^{\dagger}$ for $B$ and ${}^{*}$ for $N$.
+The **plain form** is $\langle\tilde q_4,\tilde q_5\rangle=\mathrm{Sc}(\tilde q_4\tilde q_5)$ and the **quaternion form** is $\langle\tilde q_4,\tilde q_5\rangle_{\natural}=\mathrm{Sc}(\tilde q_4^{\natural}\tilde q_5)$; the adjoint of an operator is taken with respect to one of the two, and it is written ${}^{\dagger}$ for $B$ and ${}^{*}$ for $N$.
 
 ## The Four Operators
 
@@ -70,7 +70,7 @@ The enveloping algebra is the one owned by *The Enveloping Operator Algebra of t
 
 ## The Adjoints With Respect to the Two Forms
 
-The two forms of the space are $\langle\tilde x,\tilde y\rangle=\mathrm{Sc}(\tilde x\tilde y)$ and $\langle\tilde x,\tilde y\rangle_{\natural}=\mathrm{Sc}(\tilde x^{\natural}\tilde y)$, and each operator has an adjoint with respect to each.
+The two forms of the space are $\langle\tilde q_4,\tilde q_5\rangle=\mathrm{Sc}(\tilde q_4\tilde q_5)$ and $\langle\tilde q_4,\tilde q_5\rangle_{\natural}=\mathrm{Sc}(\tilde q_4^{\natural}\tilde q_5)$, and each operator has an adjoint with respect to each.
 
 **Theorem (the adjoint table).** The conjugation $\natural$ is self-adjoint with respect to both forms, and the four operators have the adjoints
 
@@ -81,7 +81,7 @@ The two forms of the space are $\langle\tilde x,\tilde y\rangle=\mathrm{Sc}(\til
 | $L^{\natural}_{\tilde p}$ | $R_{\tilde p^{\natural}}$ | $L_{\tilde p}$ |
 | $R^{\natural}_{\tilde p}$ | $R^{\natural}_{\tilde p^{\natural}}$ | $L_{\tilde p}\circ\natural$ |
 
-*Proof.* The self-adjointness of $\natural$ is $\langle\tilde x^{\natural},\tilde y\rangle=\langle\tilde x,\tilde y^{\natural}\rangle$ and $\langle\tilde x^{\natural},\tilde y\rangle_{\natural}=\langle\tilde x,\tilde y^{\natural}\rangle_{\natural}$, both read from $\mathrm{Sc}(\tilde x^{\natural}\tilde y^{\natural})=\mathrm{Sc}(\tilde x\tilde y)$. For the four rows: $\langle L_{\tilde p}\tilde x,\tilde y\rangle=\mathrm{Sc}(\tilde p\tilde x\tilde y)=\mathrm{Sc}(\tilde x\tilde y\tilde p)=\langle\tilde x,R_{\tilde p}\tilde y\rangle$ by the cyclicity of the scalar part; $\langle L_{\tilde p}\tilde x,\tilde y\rangle_{\natural}=\mathrm{Sc}((\tilde p\tilde x)^{\natural}\tilde y)=\mathrm{Sc}(\tilde x^{\natural}\tilde p^{\natural}\tilde y)=\langle\tilde x,L_{\tilde p^{\natural}}\tilde y\rangle_{\natural}$; and the three remaining rows follow from the twins identities and the one just proved.
+*Proof.* The self-adjointness of $\natural$ is $\langle\tilde q_4^{\natural},\tilde q_5\rangle=\langle\tilde q_4,\tilde q_5^{\natural}\rangle$ and $\langle\tilde q_4^{\natural},\tilde q_5\rangle_{\natural}=\langle\tilde q_4,\tilde q_5^{\natural}\rangle_{\natural}$, both read from $\mathrm{Sc}(\tilde q_4^{\natural}\tilde q_5^{\natural})=\mathrm{Sc}(\tilde q_4\tilde q_5)$. For the four rows: $\langle L_{\tilde p}\tilde q_4,\tilde q_5\rangle=\mathrm{Sc}(\tilde p\tilde q_4\tilde q_5)=\mathrm{Sc}(\tilde q_4\tilde q_5\tilde p)=\langle\tilde q_4,R_{\tilde p}\tilde q_5\rangle$ by the cyclicity of the scalar part; $\langle L_{\tilde p}\tilde q_4,\tilde q_5\rangle_{\natural}=\mathrm{Sc}((\tilde p\tilde q_4)^{\natural}\tilde q_5)=\mathrm{Sc}(\tilde q_4^{\natural}\tilde p^{\natural}\tilde q_5)=\langle\tilde q_4,L_{\tilde p^{\natural}}\tilde q_5\rangle_{\natural}$; and the three remaining rows follow from the twins identities and the one just proved.
 
 So with respect to the plain form, the left and the right multiplications are adjoint to one another, $L_{\tilde p}^{\dagger}=R_{\tilde p}$ and $R_{\tilde p}^{\dagger}=L_{\tilde p}$, and with respect to the quaternion form the plain and the quaternionic left multiplications are adjoint to one another, $L_{\tilde p}^{*}=L_{\tilde p^{\natural}}$ and $(L^{\natural}_{\tilde p})^{*}=L_{\tilde p}$.
 
@@ -109,7 +109,7 @@ The composition laws are $L_{\tilde p}L_{\tilde r}=L_{\tilde p\tilde r}$, $R_{\t
 | $R^{\natural}_{\tilde p}=\natural\circ L^{\natural}_{\tilde p}$, $R_{\tilde p}=\natural\circ L^{\natural}_{\tilde p}\circ\natural$ | the right multiplications through the shared left ones |
 | $L^{\natural}_{\tilde p}L^{\natural}_{\tilde r}=L^{\natural}_{\tilde r\tilde p}$ | the reversed composition |
 | $(\tilde q_2^{\natural}\tilde q_1-\tilde q_1^{\natural}\tilde q_2^{\natural})\tilde q_3$ | the associator, the value of the defect |
-| $\langle\tilde x,\tilde y\rangle=\mathrm{Sc}(\tilde x\tilde y)$, $\langle\tilde x,\tilde y\rangle_{\natural}=\mathrm{Sc}(\tilde x^{\natural}\tilde y)$ | the plain form and the quaternion form |
+| $\langle\tilde q_4,\tilde q_5\rangle=\mathrm{Sc}(\tilde q_4\tilde q_5)$, $\langle\tilde q_4,\tilde q_5\rangle_{\natural}=\mathrm{Sc}(\tilde q_4^{\natural}\tilde q_5)$ | the plain form and the quaternion form |
 | $L_{\tilde p}^{\dagger}=R_{\tilde p}$, $L_{\tilde p}^{*}=L_{\tilde p^{\natural}}$ | two adjoints of the plain left multiplication |
 | $\mathrm{End}_{\mathbb{R}}(\mathbb{H})$ | the enveloping algebra, spanned by $L_{\tilde p}R_{\tilde r}$ |
 

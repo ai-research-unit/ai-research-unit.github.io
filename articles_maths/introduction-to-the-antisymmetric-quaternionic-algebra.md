@@ -81,9 +81,9 @@ of complex dimension three and real dimension six; the centre $\mathbb{C}_{\math
 
 **Remark (the two sides of the identity).** The element $e_t$ is a left identity on the vector subspace, $e_t\diamond\tilde Q = \vec Q$, but it is not a two-sided identity there. The right multiplication by $e_t$ is the negative of the identity on the vector subspace, $\tilde P\diamond e_t = -\vec P$, and the two differ by the sign. The asymmetry is the asymmetry of the parent product, which has $e_t$ as a unit on the left only, and it is the reason no element that acts on one side acts on the other. In particular $e_t\diamond\tilde Q = \vec Q$ recovers the vector part of $\tilde Q$ and discards the scalar part, so even on the image the left action of $e_t$ is the identity and its right action is its negative.
 
-**Proposition (no unit).** The operation has no unit on the left and none on the right; equivalently, there is no $\tilde E$ with $\tilde E\diamond\tilde X = \tilde X$ for all $\tilde X$, and none with $\tilde X\diamond\tilde E = \tilde X$ for all $\tilde X$.
+**Proposition (no unit).** The operation has no unit on the left and none on the right; equivalently, there is no $\tilde E$ with $\tilde E\diamond\tilde Q_1= \tilde Q_1$ for all $\tilde Q_1$, and none with $\tilde Q_1\diamond\tilde E = \tilde Q_1$ for all $\tilde Q_1$.
 
-*Proof.* A left unit $\tilde E$ would give, at $\tilde X = e_t$, the value $\tilde E\diamond e_t = -\vec E$, which would have to equal $e_t$; but $-\vec E$ is a pure vector and $e_t$ is not, so there is no left unit. A right unit would give, again at $\tilde X = e_t$, the value $e_t\diamond\tilde E = \vec E$, which would have to equal $e_t$, impossible for the same reason.
+*Proof.* A left unit $\tilde E$ would give, at $\tilde Q_1= e_t$, the value $\tilde E\diamond e_t = -\vec E$, which would have to equal $e_t$; but $-\vec E$ is a pure vector and $e_t$ is not, so there is no left unit. A right unit would give, again at $\tilde Q_1= e_t$, the value $e_t\diamond\tilde E = \vec E$, which would have to equal $e_t$, impossible for the same reason.
 
 The absence is the one of the symmetric half as well: the parent product has a left unit and no right one, and the removal of the central part removes the left unit with it. The element $e_t$ remains the only candidate, and it fails on the side on which the parent product fails.
 
@@ -106,9 +106,9 @@ The sixteen entries are therefore of four kinds: the zero diagonal of four entri
 
 ## The Square and Its Polarisation
 
-**Proposition (the square vanishes identically).** For every element $\tilde X$,
+**Proposition (the square vanishes identically).** For every element $\tilde Q_1$,
 $$
-\mathfrak{Q}(\tilde X)=\tilde X\diamond\tilde X=0 ,
+\mathfrak{Q}(\tilde Q_1)=\tilde Q_1\diamond\tilde Q_1=0 ,
 $$
 and the polarisation of the square vanishes as well,
 $$
@@ -120,7 +120,7 @@ The operation is an alternating bilinear form, its quadratic form $\mathfrak{Q}$
 not recovered from its square.
 
 *Proof.* The vanishing of the square is the alternation of the proposition on the explicit form,
-$\tilde X\diamond\tilde X=P_t\vec P-P_t\vec P-\vec P\times\vec P=0$. The polarised
+$\tilde Q_1\diamond\tilde Q_1=P_t\vec P-P_t\vec P-\vec P\times\vec P=0$. The polarised
 expression is the sum of the two values $\tilde P\diamond\tilde Q$ and $\tilde Q\diamond\tilde P$,
 which cancel by alternation; equivalently, the polarisation of a quadratic form that is
 identically zero is the zero bilinear form. Since the operation is alternating, the values at
@@ -146,7 +146,7 @@ root of $+1$, while its roots of $0$ are all the nonzero elements
 (*Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* and
 *Square Roots of a General Element in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). Each of the five
-is a reading of the display $\tilde X\diamond\tilde X=0$.
+is a reading of the display $\tilde Q_1\diamond\tilde Q_1=0$.
 
 ## The Commutator and the Two Halves
 
@@ -191,7 +191,7 @@ with $\mathrm{GQA}$ the parent product, $\mathrm{SQA}$ its symmetric half and $\
 
 ## Summary
 
-The antisymmetric quaternionic multiplication is the antisymmetric part of the general quaternionic product, $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$, the quaternionic product with its scalar part removed; it is $\mathbb{C}$-bilinear and alternating, its diagonal vanishes, and half the quaternionic bracket $[\tilde P,\tilde Q]_{\natural}$ is the same operation. Its image is the whole vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three, and it contains no nonzero central element; the element $e_t$ is a left identity on the vector subspace and the negative of the identity on the right, and the operation has no unit on either side. On the basis the sixteen brackets split into the zero diagonal, the mixed entries $e_t\diamond \vec e_\nu=\vec e_\nu$ and $\vec e_\nu\diamond e_t=-\vec e_\nu$, and the six entries between distinct pure vectors, which are the negatives of the cross products. The operation fails the Jacobi identity, with the witness $(e_t,\vec e_x,\vec e_y)$ whose cyclic sum is $-\vec e_z$, and it is one of the four antisymmetric parts of the twelve that are not Lie products; its failure enters through the mixed scalar-vector terms, since on the pure vectors alone it is the cross product up to sign, and it satisfies the identity there. The square $\tilde X\diamond\tilde X$ vanishes identically, so the quadratic form of the operation is the zero form, its polarisation carries no information, and the whole element theory of the block follows: every element is a nilpotent, the origin is the only idempotent, every nonzero element is a two-sided zero divisor, and the block has no root of $-1$ and none of $+1$ while its roots of $0$ are all the nonzero elements. The two halves reconstruct the parent, $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$, and the failure and its associator defect, the invariant forms, the remarkable subspaces, the operators and the matrix models are the articles that follow.
+The antisymmetric quaternionic multiplication is the antisymmetric part of the general quaternionic product, $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_t\vec Q-Q_t\vec P-\vec P\times\vec Q$, the quaternionic product with its scalar part removed; it is $\mathbb{C}$-bilinear and alternating, its diagonal vanishes, and half the quaternionic bracket $[\tilde P,\tilde Q]_{\natural}$ is the same operation. Its image is the whole vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimension three, and it contains no nonzero central element; the element $e_t$ is a left identity on the vector subspace and the negative of the identity on the right, and the operation has no unit on either side. On the basis the sixteen brackets split into the zero diagonal, the mixed entries $e_t\diamond \vec e_\nu=\vec e_\nu$ and $\vec e_\nu\diamond e_t=-\vec e_\nu$, and the six entries between distinct pure vectors, which are the negatives of the cross products. The operation fails the Jacobi identity, with the witness $(e_t,\vec e_x,\vec e_y)$ whose cyclic sum is $-\vec e_z$, and it is one of the four antisymmetric parts of the twelve that are not Lie products; its failure enters through the mixed scalar-vector terms, since on the pure vectors alone it is the cross product up to sign, and it satisfies the identity there. The square $\tilde Q_1\diamond\tilde Q_1$ vanishes identically, so the quadratic form of the operation is the zero form, its polarisation carries no information, and the whole element theory of the block follows: every element is a nilpotent, the origin is the only idempotent, every nonzero element is a two-sided zero divisor, and the block has no root of $-1$ and none of $+1$ while its roots of $0$ are all the nonzero elements. The two halves reconstruct the parent, $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$, and the failure and its associator defect, the invariant forms, the remarkable subspaces, the operators and the matrix models are the articles that follow.
 
 ## Summary of Notation
 

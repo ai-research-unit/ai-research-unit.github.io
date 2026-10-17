@@ -153,17 +153,17 @@ The Jacobi sum is therefore $0+\vec e_y+\vec e_y=2\vec e_y\neq0$. The same compu
 
 ### The Bracket and the Involution
 
-**Proposition.** For all $\tilde X,\tilde Y$,
+**Proposition.** For all $\tilde Q_1,\tilde Q_2$,
 
 $$
-[\tilde X,e_t]_\varsigma=\tilde X-\tilde X^{*} , \qquad [\tilde X,\tilde Y]_\varsigma=0\text{ for all }\tilde X,\tilde Y \iff {}^{*}=\mathrm{id}\text{ and }\mathbb{B}\text{ is commutative} ,
+[\tilde Q_1,e_t]_\varsigma=\tilde Q_1-\tilde Q_1^{*} , \qquad [\tilde Q_1,\tilde Q_2]_\varsigma=0\text{ for all }\tilde Q_1,\tilde Q_2 \iff {}^{*}=\mathrm{id}\text{ and }\mathbb{B}\text{ is commutative} ,
 $$
 
-and the bracket does not commute with the involution: $[\tilde X,\tilde Y]_\varsigma^{*}=[\tilde Y,\tilde X]_\varsigma$, which differs from $[\tilde X^{*},\tilde Y^{*}]_\varsigma$ in general.
+and the bracket does not commute with the involution: $[\tilde Q_1,\tilde Q_2]_\varsigma^{*}=[\tilde Q_2,\tilde Q_1]_\varsigma$, which differs from $[\tilde Q_1^{*},\tilde Q_2^{*}]_\varsigma$ in general.
 
-**Proof.** The first display is the proposition of *The Sesquilinear Commutator*, §*The Vanishing and the Involution*, read on $\mathbb{B}$; its vanishing for all $\tilde X$ is the criterion that the involution is trivial, which it is not here. For the last statement, the witness of that article in the matrix model is $\tilde X=\tfrac12(i\vec e_x-\vec e_y)$ and $\tilde Y=\tfrac12(e_t+i\vec e_z)$: the bracket vanishes, while the bracket of the conjugates is $\vec e_y$.
+**Proof.** The first display is the proposition of *The Sesquilinear Commutator*, §*The Vanishing and the Involution*, read on $\mathbb{B}$; its vanishing for all $\tilde Q_1$ is the criterion that the involution is trivial, which it is not here. For the last statement, the witness of that article in the matrix model is $\tilde X=\tfrac12(i\vec e_x-\vec e_y)$ and $\tilde Y=\tfrac12(e_t+i\vec e_z)$: the bracket vanishes, while the bracket of the conjugates is $\vec e_y$.
 
-**Remark.** The bracket therefore detects the involution on the diagonal, $[\tilde X,e_t]_\varsigma=\tilde X-\tilde X^{*}$, and its vanishing is exactly the Hermitian condition; the bracket measures the asymmetry between the two slots that the involution produces, and it vanishes on the fixed field and on nothing else.
+**Remark.** The bracket therefore detects the involution on the diagonal, $[\tilde Q_1,e_t]_\varsigma=\tilde Q_1-\tilde Q_1^{*}$, and its vanishing is exactly the Hermitian condition; the bracket measures the asymmetry between the two slots that the involution produces, and it vanishes on the fixed field and on nothing else.
 
 ## The Symmetrised Product
 

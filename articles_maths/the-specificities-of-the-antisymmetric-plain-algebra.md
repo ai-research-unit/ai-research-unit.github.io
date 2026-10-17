@@ -14,7 +14,7 @@ criteria and the Casimir element, the enveloping algebra and the matrix models �
 states the exact reason, in one law, and then separates the twelve.
 
 The reason is the **Leibniz identity**, the statement that the left multiplication
-$L^{\star}_{\tilde X}$ is a derivation of the product for every element. For an alternating product
+$L^{\star}_{\tilde Q_1}$ is a derivation of the product for every element. For an alternating product
 that identity is equivalent to the **Jacobi identity**, and the block is the only one of the twelve
 structures on which it holds at every element; equivalently, the block is the only **Lie product**
 among the twelve. Each of the eleven others is built from the four general products by twisting a
@@ -27,8 +27,8 @@ The consequence is the point of the article. Only in the antisymmetric plain alg
 and the quotient, the derived algebra, the Killing form, the Cartan criteria, the Casimir element,
 the enveloping algebra and the matrix models available as **theorems**. Elsewhere single elements do
 behave well — the zero element gives the zero operator in all twelve, and in the associative general
-plain product the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$ is a derivation for
-every element though $L_{\tilde X}$ is not — and no other structure carries the theory. The one
+plain product the commutator $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ is a derivation for
+every element though $L_{\tilde Q_1}$ is not — and no other structure carries the theory. The one
 genuine boundary case is the antisymmetric quaternionic product, whose bracket is alternating but
 which fails the Jacobi identity; it is *The Jacobi Failure and the Associator Defect of the
 Antisymmetric Quaternionic Algebra*, and it is stated here only as the boundary of the criterion.
@@ -49,9 +49,9 @@ plain algebra the only Lie product.
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
 $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. The product written $\star$ is
 a generic one, its identity stated at each use. The **left multiplication** of a product $\star$ by
-$\tilde X$ is $L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$, and the **adjoint map** is
-$\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$, so that for an
-alternating product $\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X}$. The twelve structures are
+$\tilde Q_1$ is $L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$, and the **adjoint map** is
+$\mathrm{ad}^{\star}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1$, so that for an
+alternating product $\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1}$. The twelve structures are
 coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*: the code has
 three letters, the first $\mathrm G$, $\mathrm S$ or $\mathrm A$ for the general product or its
 symmetrisation or antisymmetrisation, the second $\mathrm P$ or $\mathrm Q$ for the plain or the
@@ -63,37 +63,37 @@ as in $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$.
 **Definition (the Leibniz identity).** Let $\star$ be a product on $\mathbb{B}$. The product
 satisfies the **Leibniz identity** when
 $$
-L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z
-+\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)\qquad\text{for all }\tilde X,\tilde Y,\tilde Z,
+L^{\star}_{\tilde Q_1}(\tilde Q_2\star\tilde Q_3)=(L^{\star}_{\tilde Q_1}\tilde Q_2)\star\tilde Q_3
++\tilde Q_2\star(L^{\star}_{\tilde Q_1}\tilde Q_3)\qquad\text{for all }\tilde Q_1,\tilde Q_2,\tilde Q_3,
 $$
 equivalently
 $$
-\tilde X\star(\tilde Y\star\tilde Z)=(\tilde X\star\tilde Y)\star\tilde Z
-+\tilde Y\star(\tilde X\star\tilde Z)\qquad\text{for all }\tilde X,\tilde Y,\tilde Z .
+\tilde Q_1\star(\tilde Q_2\star\tilde Q_3)=(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3
++\tilde Q_2\star(\tilde Q_1\star\tilde Q_3)\qquad\text{for all }\tilde Q_1,\tilde Q_2,\tilde Q_3 .
 $$
-The operator $L^{\star}_{\tilde X}$ is then a **derivation** of $\star$ for every $\tilde X$.
+The operator $L^{\star}_{\tilde Q_1}$ is then a **derivation** of $\star$ for every $\tilde Q_1$.
 
 **Theorem (the criterion).** Let $\star$ be an **alternating** product. Then $\star$ satisfies the
 Leibniz identity if and only if it satisfies the Jacobi identity.
 
 *Proof.* Write
 $$
-\Lambda(\tilde X,\tilde Y,\tilde Z)=\tilde X\star(\tilde Y\star\tilde Z)
--(\tilde X\star\tilde Y)\star\tilde Z-\tilde Y\star(\tilde X\star\tilde Z)
+\Lambda(\tilde Q_1,\tilde Q_2,\tilde Q_3)=\tilde Q_1\star(\tilde Q_2\star\tilde Q_3)
+-(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3-\tilde Q_2\star(\tilde Q_1\star\tilde Q_3)
 $$
 for the Leibniz defect and
 $$
-J(\tilde X,\tilde Y,\tilde Z)=(\tilde X\star\tilde Y)\star\tilde Z
-+(\tilde Y\star\tilde Z)\star\tilde X+(\tilde Z\star\tilde X)\star\tilde Y
+J(\tilde Q_1,\tilde Q_2,\tilde Q_3)=(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3
++(\tilde Q_2\star\tilde Q_3)\star\tilde Q_1+(\tilde Q_3\star\tilde Q_1)\star\tilde Q_2
 $$
 for the cyclic sum. Alternation reverses each of the last two products, so the Leibniz defect is
 $$
-\Lambda=-(\tilde Y\star\tilde Z)\star\tilde X-(\tilde X\star\tilde Y)\star\tilde Z
-+(\tilde X\star\tilde Z)\star\tilde Y .
+\Lambda=-(\tilde Q_2\star\tilde Q_3)\star\tilde Q_1-(\tilde Q_1\star\tilde Q_2)\star\tilde Q_3
++(\tilde Q_1\star\tilde Q_3)\star\tilde Q_2 .
 $$
-The last summand is $-(\tilde Z\star\tilde X)\star\tilde Y$ by the alternation of the two inner
-factors, $(\tilde X\star\tilde Z)=-(\tilde Z\star\tilde X)$, so the bracket is exactly
-$-J(\tilde X,\tilde Y,\tilde Z)$. Hence $\Lambda$ vanishes identically if and only if $J$ does,
+The last summand is $-(\tilde Q_3\star\tilde Q_1)\star\tilde Q_2$ by the alternation of the two inner
+factors, $(\tilde Q_1\star\tilde Q_3)=-(\tilde Q_3\star\tilde Q_1)$, so the bracket is exactly
+$-J(\tilde Q_1,\tilde Q_2,\tilde Q_3)$. Hence $\Lambda$ vanishes identically if and only if $J$ does,
 which is the criterion. Computed exactly on general elements of $\mathbb{Q}(i)$ coefficients and
 on triples of the units.
 
@@ -101,45 +101,45 @@ on triples of the units.
 and satisfies the Jacobi identity, so it satisfies the Leibniz identity: every left multiplication
 of the block is a derivation,
 $$
-L_{\tilde X}(\tilde Y\wedge\tilde Z)=(L_{\tilde X}\tilde Y)\wedge\tilde Z
-+\tilde Y\wedge(L_{\tilde X}\tilde Z),\qquad
-L_{\tilde X}\tilde Y=\tilde X\wedge\tilde Y .
+L_{\tilde Q_1}(\tilde Q_2\wedge\tilde Q_3)=(L_{\tilde Q_1}\tilde Q_2)\wedge\tilde Q_3
++\tilde Q_2\wedge(L_{\tilde Q_1}\tilde Q_3),\qquad
+L_{\tilde Q_1}\tilde Q_2=\tilde Q_1\wedge\tilde Q_2 .
 $$
 
 *Proof.* The alternation and the Jacobi identity are *Introduction to the Antisymmetric Plain
 Algebra of Biquaternions*; the criterion above turns them into the Leibniz identity. The direct
 reason is *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*: the
-adjoint $\mathrm{ad}_{\tilde X}=2L_{\tilde X}$ is a derivation because the bracket is the
+adjoint $\mathrm{ad}_{\tilde Q_1}=2L_{\tilde Q_1}$ is a derivation because the bracket is the
 half-commutator of an associative product, and the halving carries the Leibniz rule of the
 associativity to the block.
 
 ## The Operator Identity and the Adjoint Representation
 
-**Proposition (the adjoint reading).** For an alternating product $\star$ and every $\tilde X$,
+**Proposition (the adjoint reading).** For an alternating product $\star$ and every $\tilde Q_1$,
 $$
-\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X},
+\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1},
 $$
 so the Leibniz identity is the statement that the adjoint maps of $\star$ are derivations of
 $\star$; for the block this is the statement that the left multiplications, which are the adjoint
 maps of the block's own bracket, form a representation of the bracket by derivations,
 $$
-\mathrm{ad}^{\wedge}_{\tilde X\wedge\tilde Y}=[\mathrm{ad}^{\wedge}_{\tilde X},\mathrm{ad}^{\wedge}_{\tilde Y}],
+\mathrm{ad}^{\wedge}_{\tilde Q_1\wedge\tilde Q_2}=[\mathrm{ad}^{\wedge}_{\tilde Q_1},\mathrm{ad}^{\wedge}_{\tilde Q_2}],
 \qquad
-\mathrm{ad}^{\wedge}_{\tilde X}(\tilde Y\wedge\tilde Z)
-=\mathrm{ad}^{\wedge}_{\tilde X}\tilde Y\wedge\tilde Z+\tilde Y\wedge\mathrm{ad}^{\wedge}_{\tilde X}\tilde Z ,
+\mathrm{ad}^{\wedge}_{\tilde Q_1}(\tilde Q_2\wedge\tilde Q_3)
+=\mathrm{ad}^{\wedge}_{\tilde Q_1}\tilde Q_2\wedge\tilde Q_3+\tilde Q_2\wedge\mathrm{ad}^{\wedge}_{\tilde Q_1}\tilde Q_3 ,
 \qquad
-\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}=\tilde X\wedge\cdot .
+\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}=\tilde Q_1\wedge\cdot .
 $$
 
 *Proof.* For an alternating product the adjoint is twice the left multiplication,
-$\mathrm{ad}^{\star}_{\tilde X}=2L^{\star}_{\tilde X}$, because
-$\tilde X\star\tilde Y-\tilde Y\star\tilde X=2\,\tilde X\star\tilde Y$. The bracket's own operator
-is the halved adjoint $\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}$, and its two identities are
-the operator form of the Jacobi identity, $[L_{\tilde X},L_{\tilde Y}]=L_{\tilde X\wedge\tilde Y}$,
+$\mathrm{ad}^{\star}_{\tilde Q_1}=2L^{\star}_{\tilde Q_1}$, because
+$\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1=2\,\tilde Q_1\star\tilde Q_2$. The bracket's own operator
+is the halved adjoint $\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}$, and its two identities are
+the operator form of the Jacobi identity, $[L_{\tilde Q_1},L_{\tilde Q_2}]=L_{\tilde Q_1\wedge\tilde Q_2}$,
 and the Leibniz identity carried to the bracket. The doubled adjoint carries the factor two
 throughout,
 $$
-\mathrm{ad}_{\tilde X\wedge\tilde Y}=\tfrac12\,[\mathrm{ad}_{\tilde X},\mathrm{ad}_{\tilde Y}],
+\mathrm{ad}_{\tilde Q_1\wedge\tilde Q_2}=\tfrac12\,[\mathrm{ad}_{\tilde Q_1},\mathrm{ad}_{\tilde Q_2}],
 $$
 which is the identity of the source article read with the doubled adjoint. Both are
 *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, where the two
@@ -176,7 +176,7 @@ One law separates the block from the other eleven. The block's product is **alte
 | the antisymmetric quaternionic product | AQA | yes | no | fails by the Jacobi defect at $(e_t,\vec e_x,\vec e_y)$ |
 | the six sesquilinear structures | GPS, SPS, APS, GQS, SQS, AQS | no | — | fails by non-alternation |
 
-The isolation is about the **law** and not about isolated elements, and the distinction is the boundary of the claim. Single elements of the other structures do give derivations — the zero element gives the zero operator in all twelve, and in the associative general plain product the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$ is a derivation for every element — but no other structure carries the law, and the theory needs the law at every element and not a case of it. The article therefore refuses the false strengthening "no other structure has a derivation" and states the true one: only here is every left multiplication a derivation.
+The isolation is about the **law** and not about isolated elements, and the distinction is the boundary of the claim. Single elements of the other structures do give derivations — the zero element gives the zero operator in all twelve, and in the associative general plain product the commutator $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ is a derivation for every element — but no other structure carries the law, and the theory needs the law at every element and not a case of it. The article therefore refuses the false strengthening "no other structure has a derivation" and states the true one: only here is every left multiplication a derivation.
 
 ## What the Criterion Delivers
 
@@ -222,15 +222,15 @@ a Lie product in the sense fixed here.
 Two statements are easily confused and are kept apart here.
 
 1. **As a law, the Leibniz identity is exactly the threshold.** The statement that
-$L^{\star}_{\tilde X}$ is a derivation for every $\tilde X$, equivalently that the product is a
+$L^{\star}_{\tilde Q_1}$ is a derivation for every $\tilde Q_1$, equivalently that the product is a
 Lie product in the presence of alternation, is satisfied by the antisymmetric plain product and
 by no other of the twelve.
 2. **As a statement about one element, the identity can hold outside the block.** An operator
-$L^{\star}_{\tilde X}$ may be a derivation in a structure that is not a Lie product, because the
+$L^{\star}_{\tilde Q_1}$ may be a derivation in a structure that is not a Lie product, because the
 identity is then demanded at one element and not at all of them. The zero element gives the zero
 operator, a derivation, in all twelve; in the associative general plain product the derivation is
-the commutator $\mathrm{ad}_{\tilde X}=L_{\tilde X}-R_{\tilde X}$, the difference of the two
-multiplications and not $L_{\tilde X}$ alone, and it exists for every element; and the derived
+the commutator $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$, the difference of the two
+multiplications and not $L_{\tilde Q_1}$ alone, and it exists for every element; and the derived
 subalgebra $\mathrm{Vect}(\mathbb{B})$ of the antisymmetric quaternionic product is a Lie algebra
 under the restriction, although the product on the whole space is not (*The Jacobi Failure and the
 Associator Defect of the Antisymmetric Quaternionic Algebra*).
@@ -251,7 +251,7 @@ whose every left multiplication is a derivation, equivalently the only **Lie pro
 identity, at every element,
 
 $$
-L_{\tilde X}(\tilde Y\star\tilde Z)=(L_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L_{\tilde X}\tilde Z) .
+L_{\tilde Q_1}(\tilde Q_2\star\tilde Q_3)=(L_{\tilde Q_1}\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(L_{\tilde Q_1}\tilde Q_3) .
 $$
 
 For an alternating product that identity is
@@ -270,10 +270,10 @@ elements.
 | symbol | meaning |
 |---|---|
 | $\star$ | a generic product, specified at each use |
-| $L^{\star}_{\tilde X}:\tilde Y\mapsto\tilde X\star\tilde Y$ | the left multiplication of a product |
-| $\mathrm{ad}^{\star}_{\tilde X}\tilde Y=\tilde X\star\tilde Y-\tilde Y\star\tilde X$ | the adjoint map, equal to $2L^{\star}_{\tilde X}$ for an alternating product |
-| $\mathrm{ad}^{\wedge}_{\tilde X}=L_{\tilde X}=\tilde X\wedge\cdot$ | the adjoint of the block's own bracket, the halved adjoint |
-| $L^{\star}_{\tilde X}(\tilde Y\star\tilde Z)=(L^{\star}_{\tilde X}\tilde Y)\star\tilde Z+\tilde Y\star(L^{\star}_{\tilde X}\tilde Z)$ | the Leibniz identity, the criterion |
+| $L^{\star}_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\star\tilde Q_2$ | the left multiplication of a product |
+| $\mathrm{ad}^{\star}_{\tilde Q_1}\tilde Q_2=\tilde Q_1\star\tilde Q_2-\tilde Q_2\star\tilde Q_1$ | the adjoint map, equal to $2L^{\star}_{\tilde Q_1}$ for an alternating product |
+| $\mathrm{ad}^{\wedge}_{\tilde Q_1}=L_{\tilde Q_1}=\tilde Q_1\wedge\cdot$ | the adjoint of the block's own bracket, the halved adjoint |
+| $L^{\star}_{\tilde Q_1}(\tilde Q_2\star\tilde Q_3)=(L^{\star}_{\tilde Q_1}\tilde Q_2)\star\tilde Q_3+\tilde Q_2\star(L^{\star}_{\tilde Q_1}\tilde Q_3)$ | the Leibniz identity, the criterion |
 | $\Lambda=-J$ | the Leibniz defect is the negative of the cyclic sum, for an alternating product |
 | $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space* |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$ | the kernel of the adjoint representation, the centre of the bracket |

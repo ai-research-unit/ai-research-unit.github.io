@@ -37,9 +37,9 @@ $$
 $$
 carries eight real numbers, and only its scalar part, and only the real part of that, is invariant under the central phase and compatible with the Lorentz action. The framework therefore builds its Lagrangians from two pairings, both supplied by the involution lattice:
 $$
-\text{bilinear invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{B}\bigr) ,
+\text{bilinear invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{\natural}\tilde{Q}_1\bigr) ,
 \qquad
-\text{Hermitian invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{*}\tilde{B}\bigr) .
+\text{Hermitian invariant:}\quad \mathrm{Sc}\bigl(\tilde{A}^{*}\tilde{Q}_1\bigr) .
 $$
 The first is the biquaternion norm's polarisation and is what makes the free-particle action a Lorentz scalar; the second is positive definite and is what a complex field needs. The distinction is not academic: the bilinear pairing is indefinite, so a Lagrangian built from it alone has the wrong sign for the energy on the time-like part of the field, while the Hermitian pairing is definite and gives the standard positive kinetic terms.
 
@@ -51,7 +51,7 @@ $$
 = \mathrm{Sc}\bigl(\delta\tilde{\Phi}^{*}\tilde{\Phi}\bigr) + \mathrm{Sc}\bigl(\tilde{\Phi}^{*}\delta\tilde{\Phi}\bigr)
 = 2\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde{\Phi}^{*}\delta\tilde{\Phi}\bigr) ,
 $$
-because $\mathrm{Sc}(\tilde{A}^{*}\tilde{B}) = \sum_\mu A_\mu^*B_\mu$ and the two terms are complex conjugates. It is the algebraic statement that the Hermitian norm is real and that its gradient is twice the Hermitian pairing; it is the variational shadow of the involution lattice's positive-definite form.
+because $\mathrm{Sc}(\tilde{A}^{*}\tilde{Q}_1) = \sum_\mu A_\mu^*Q_{1\mu}$ and the two terms are complex conjugates. It is the algebraic statement that the Hermitian norm is real and that its gradient is twice the Hermitian pairing; it is the variational shadow of the involution lattice's positive-definite form.
 
 ### The biquaternionic Euler–Lagrange equation
 
@@ -257,9 +257,9 @@ N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{Q}\rang
 $$
 which follows from its multiplicativity. The biquaternion norm of a product factorises,
 $$
-\langle\tilde{A}\tilde{B}\rangle_{\natural} = \tilde{A}\tilde{B}\,\overline{\tilde{A}\tilde{B}} = \tilde{A}\tilde{B}\tilde{B}^{\natural}\tilde{A}^{\natural} = \tilde{A}\,\langle\tilde{B}\rangle_{\natural}\,\tilde{A}^{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{B}\rangle_{\natural} ,
+\langle\tilde{A}\tilde{Q}_1\rangle_{\natural} = \tilde{A}\tilde{Q}_1\,\overline{\tilde{A}\tilde{Q}_1} = \tilde{A}\tilde{Q}_1\tilde{Q}_1^{\natural}\tilde{A}^{\natural} = \tilde{A}\,\langle\tilde{Q}_1\rangle_{\natural}\,\tilde{A}^{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural} ,
 $$
-because $\langle\tilde{B}\rangle_{\natural}$ is a central scalar; and the dagger of an element carries the conjugate norm, $\langle\tilde{A}^{*}\rangle_{\natural} = \overline{\langle\tilde{A}\rangle_{\natural}}$. Hence
+because $\langle\tilde{Q}_1\rangle_{\natural}$ is a central scalar; and the dagger of an element carries the conjugate norm, $\langle\tilde{A}^{*}\rangle_{\natural} = \overline{\langle\tilde{A}\rangle_{\natural}}$. Hence
 $$
 N\bigl(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}\bigr) = \langle\tilde{\Lambda}\rangle_{\natural}\,\langle\tilde{Q}\rangle_{\natural}\,\langle\tilde{\Lambda}^{*}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural}\,\bigl|\langle\tilde{\Lambda}\rangle_{\natural}\bigr|^2 = \langle\tilde{Q}\rangle_{\natural} ,
 $$
@@ -291,7 +291,7 @@ The variational and the operator routes are two views of one structure. The acti
 
 ## Summary
 
-The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{B}) = \langle\tilde{A},\tilde{B}\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde{A}^{*}\tilde{B})$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ was verified on random biquaternions.
+The relativistic action of the framework is a real scalar functional, $S = \int\mathcal{L}\,d^4x$, and the stationary-action principle, $\delta S = 0$ for variations vanishing on the boundary, derives the equations of motion from it. Reality and Lorentz invariance require the Lagrangian to be built from the framework's two invariant pairings, the bilinear $\mathrm{Sc}(\tilde{A}^{\natural}\tilde{Q}_1) = \langle\tilde{A},\tilde{Q}_1\rangle_{\natural}$ and the Hermitian $\mathrm{Sc}(\tilde{A}^{*}\tilde{Q}_1)$; the elementary variation $\delta\,\mathrm{Sc}(\tilde{\Phi}^{*}\tilde{\Phi}) = 2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{\Phi}^{*}\delta\tilde{\Phi})$ was verified on random biquaternions.
 
 The particle action is
 $$

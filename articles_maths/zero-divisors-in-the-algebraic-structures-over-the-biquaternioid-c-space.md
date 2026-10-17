@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. A nonzero $\tilde Q\in\mathbb{B}$ is a **zero divisor of $\star$** when it kills a nonzero partner: when $\tilde Q\star\tilde X=0$ or $\tilde X\star\tilde Q=0$ for some nonzero $\tilde X$. The first case makes it a left zero divisor, the second a right zero divisor, and an element of both kinds a two-sided zero divisor.
+Let $\star$ be a product on the biquaternion algebra $\mathbb{B}$. A nonzero $\tilde Q\in\mathbb{B}$ is a **zero divisor of $\star$** when it kills a nonzero partner: when $\tilde Q\star\tilde Q_1=0$ or $\tilde Q_1\star\tilde Q=0$ for some nonzero $\tilde Q_1$. The first case makes it a left zero divisor, the second a right zero divisor, and an element of both kinds a two-sided zero divisor.
 
 **The twelve names.** The algebra carries twelve products, so the generic definition poses twelve questions; this article answers them once for all twelve. Each of the twelve products has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the first slot, $\mathrm P$ plain and $\mathrm Q$ quaternionic; the third is the family, $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra over $\mathbb{C}$. The twelve are read in the four families and the three operations of *The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 

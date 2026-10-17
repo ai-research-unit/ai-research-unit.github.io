@@ -25,7 +25,7 @@ The bracket and its Jacobi identity are established in *Introduction to the Anti
 **Definition.** The **centre** of $\mathfrak{g}$ is
 
 $$
-\mathfrak{z}(\mathfrak{g})=\{\tilde P\in\mathbb{B}:\tilde P\wedge\tilde X=0\text{ for all }\tilde X\in\mathbb{B}\}.
+\mathfrak{z}(\mathfrak{g})=\{\tilde P\in\mathbb{B}:\tilde P\wedge\tilde Q_1=0\text{ for all }\tilde Q_1\in\mathbb{B}\}.
 $$
 
 **Theorem (the centre is the centre of the algebra).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P$ lies in $\mathfrak{z}(\mathfrak{g})$; its vector part is zero, $\vec P=0$; and $\tilde P$ lies in $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t$, the centre of the biquaternion algebra. Hence
@@ -36,7 +36,7 @@ $$
 
 of complex dimension one and real dimension two.
 
-*Proof.* The bracket depends only on the vector parts, $\tilde P\wedge\tilde X=\vec P\times\vec X$, so it vanishes for every $\tilde X$ exactly when $\vec P\times\vec X=0$ for every vector $\vec X$. If $\vec P\neq0$, a vector $\vec X$ that is not parallel to $\vec P$ gives a nonzero cross product, so the condition forces $\vec P=0$; conversely $\vec P=0$ gives $\tilde P\in\mathbb{C}e_t$. The centre of the biquaternion algebra is $\mathbb{C}e_t$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.
+*Proof.* The bracket depends only on the vector parts, $\tilde P\wedge\tilde Q_1=\vec P\times\vec Q_1$, so it vanishes for every $\tilde Q_1$ exactly when $\vec P\times\vec Q_1=0$ for every vector $\vec Q_1$. If $\vec P\neq0$, a vector $\vec Q_1$ that is not parallel to $\vec P$ gives a nonzero cross product, so the condition forces $\vec P=0$; conversely $\vec P=0$ gives $\tilde P\in\mathbb{C}e_t$. The centre of the biquaternion algebra is $\mathbb{C}e_t$, the complex multiples of the unit, because the quaternion units anticommute off the scalar direction; the second equivalence is that standard fact.
 
 **Remark.** The centre of the bracket and the centre of the algebra are therefore the same subspace, and it is the first structural coincidence of the block: **the elements the bracket cannot see are exactly the central elements of the multiplication, the complex multiples of $e_t$.** The centre is abelian under the bracket, and it is annihilated by the adjoint of every element.
 

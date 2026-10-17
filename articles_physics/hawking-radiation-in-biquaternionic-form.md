@@ -165,7 +165,7 @@ with $\kappa_\omega=c/(2r_s)$ the surface gravity in the frequency normalization
 
 ### The Same KMS Statement in Different Coordinates
 
-The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|ct|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\hbar a/(2\pi c k_B)$. The KMS condition is the parent's boundary relation $F_{\tilde A\tilde B}(t+i\beta)=F_{\tilde B\tilde A}(-t)$ with the strip $0<\mathrm{Im}\,t<\beta$.
+The sibling article's result, in the notation of this series, is this. The Minkowski vacuum restricted to the right Rindler wedge $R=\{x>|ct|\}$ satisfies the KMS condition with respect to the boost flow at inverse temperature $\beta=2\pi c/a$ in the acceleration normalization, equivalently $\beta=2\pi/a_\omega$ with $a_\omega=a/c$ the frequency-normalized acceleration; the temperature is $T=\hbar a/(2\pi c k_B)$. The KMS condition is the parent's boundary relation $F_{\tilde A\tilde Q_1}(t+i\beta)=F_{\tilde Q_1\tilde A}(-t)$ with the strip $0<\mathrm{Im}\,t<\beta$.
 
 The Hawking statement is the same condition, stated on the same kind of flow. For the vacuum of a collapsing background — the **Unruh vacuum**, empty on past null infinity, or the **Hartle–Hawking vacuum**, regular on the horizon and thermal on both sides — restricted to the exterior region, the KMS condition holds with respect to the horizon-generating Killing flow $\partial/\partial t$ at
 
@@ -199,7 +199,7 @@ independent of $r$ for the Tolman interpretation, and the near-horizon limit of 
 The parent, *The KMS Condition and the Biquaternion Framework*, states the condition as
 
 $$
-F_{\tilde A\tilde B}(t+i\beta) = F_{\tilde B\tilde A}(-t),
+F_{\tilde A\tilde Q_1}(t+i\beta) = F_{\tilde Q_1\tilde A}(-t),
 \qquad
 0<\mathrm{Im}\,t<\beta,
 \qquad

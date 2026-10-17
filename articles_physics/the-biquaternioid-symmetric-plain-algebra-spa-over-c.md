@@ -56,7 +56,7 @@ The biquaternioid symmetric plain algebra is the structure $\tilde P\star\tilde 
 | $e_t$ | the two-sided unit of the structure |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the trace form; invariant and indefinite |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace, twice the scalar part |
-| $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]$ | the order defects; the generators of the block, of dimension three |
+| $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde Q_1}]$ | the order defects; the generators of the block, of dimension three |
 | $\mathbb{M}_+$ | the Hermitian sector; the Jordan algebra of the observables |
 | $\mathbb{M}_-,\mathbb{M}_+$ | the material and informational sectors |
 | $S_{\tilde P,\tilde P}$ | the quadratic representation; the sandwich as the isometry of the band |

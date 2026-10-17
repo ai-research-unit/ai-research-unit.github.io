@@ -52,7 +52,7 @@ The contrast that fixes the idea is with a structure that *does* carry a scale. 
 A rescaling $\tilde{Q}\mapsto\lambda\tilde{Q}$ with $\lambda>0$ is real-linear, but it is not an algebra homomorphism:
 
 $$
-(\lambda\tilde{A})(\lambda\tilde{B})=\lambda^2\tilde{A}\tilde{B}\neq\lambda(\tilde{A}\tilde{B}).
+(\lambda\tilde{A})(\lambda\tilde{Q}_1)=\lambda^2\tilde{A}\tilde{Q}_1\neq\lambda(\tilde{A}\tilde{Q}_1).
 $$
 
 This is worth stating carefully, because the algebraic fact has a **physical interpretation**. The multiplication of the algebra is not invariant under a rescaling of its elements — the product of two rescaled elements acquires a factor $\lambda^2$ — so the scale of an element of the algebra is not a redundancy of the algebra. It is data the algebra does not contain, and which must therefore be supplied by the identification that says what the element represents. When the framework says that $\tilde{Q}=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ *is* a displacement in metres, it is supplying that data. Nothing in the algebra did it.

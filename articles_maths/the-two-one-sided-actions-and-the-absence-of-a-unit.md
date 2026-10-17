@@ -89,7 +89,7 @@ and applying the involution ${}^{*}$ gives $\tilde E = e_t$. With $\tilde E = e_
 
 **Corollary.** The multiplication has no two-sided unit. Consequently no element has a left inverse or a right inverse, and the product defines no group of units.
 
-**Proof.** A two-sided unit is a left unit and a right unit at once, and neither exists. An inverse of $\tilde A$ is an element $\tilde B$ with $\tilde A \star \tilde B = \tilde B \star \tilde A = \tilde U$ where $\tilde U$ is a unit of the multiplication; with no unit, the notion is empty.
+**Proof.** A two-sided unit is a left unit and a right unit at once, and neither exists. An inverse of $\tilde A$ is an element $\tilde Q_1$ with $\tilde A \star \tilde Q_1 = \tilde Q_1 \star \tilde A = \tilde U$ where $\tilde U$ is a unit of the multiplication; with no unit, the notion is empty.
 
 **Caution.** The words *unit* and *inverse* must be used with the multiplication of this group and not with the plain product of the algebra. The algebra $\mathbb{B}$ has a group of units, the elements of nonzero norm $\langle\tilde P\rangle_{\natural} \neq 0$, and its unit group is $GL_2(\mathbb{C})$ through the matrix realization, with the norm-one subgroup $SL_2(\mathbb{C})$ (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, *Ideals and Peirce Decomposition of the Biquaternion Algebra*); that group belongs to the plain product and to the algebra, not to $\star$. An element such as an idempotent $\tilde\Pi(\mu)$ of *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* is a unit of the algebra and not a unit of the multiplication, and it satisfies $\tilde\Pi \star \tilde\Pi = \tilde\Pi$ all the same.
 
@@ -100,7 +100,7 @@ and applying the involution ${}^{*}$ gives $\tilde E = e_t$. With $\tilde E = e_
 **Definition.** The **first row** of the multiplication is the map
 
 $$
-\sigma(\tilde Y) = e_t \star \tilde Y = \tilde Y^{*} ,
+\sigma(\tilde Q_2) = e_t \star \tilde Q_2 = \tilde Q_2^{*} ,
 $$
 
 obtained by holding the first argument at $e_t$, in the notation of *Sesqualgebras* §*The Standard Example*.
@@ -111,15 +111,15 @@ By the first proposition above, the first row of the multiplication is the star 
 
 The general theory asks whether a sesquilinear product is the **derived operation** $x \star y = xy^{*}$ of an associative algebra with a conjugate-linear involution. It is exactly then that the first row is such an involution and rebuilds the product; stated as in *Introduction to the General Plain Sesqualgebra* §*Which of the Four Is a Sesquilinear Multiplication* and in *Sesqualgebras* §*The Standard Example*, the two conditions are:
 
-(i) $\sigma$ is a conjugate-linear involution of the algebra: $\sigma(\lambda\tilde Y) = \bar\lambda\,\sigma(\tilde Y)$, $\sigma^{2} = \mathrm{id}$, $\sigma(\tilde X\tilde Y) = \sigma(\tilde Y)\sigma(\tilde X)$ and $\sigma(e_t) = e_t$;
+(i) $\sigma$ is a conjugate-linear involution of the algebra: $\sigma(\lambda\tilde Q_2) = \bar\lambda\,\sigma(\tilde Q_2)$, $\sigma^{2} = \mathrm{id}$, $\sigma(\tilde Q_3\tilde Q_2) = \sigma(\tilde Q_2)\sigma(\tilde Q_3)$ and $\sigma(e_t) = e_t$;
 
-(ii) $\sigma$ rebuilds the product: $\tilde X \star \tilde Y = \tilde X\,\sigma(\tilde Y)$ for all $\tilde X, \tilde Y$.
+(ii) $\sigma$ rebuilds the product: $\tilde Q_3 \star \tilde Q_2 = \tilde Q_3\,\sigma(\tilde Q_2)$ for all $\tilde Q_3, \tilde Q_2$.
 
 **Theorem (the first row passes one condition and fails the other).** For the general quaternionic sesquilinear product, $\sigma = {}^{*}$ satisfies condition (i) and fails condition (ii); consequently the product is not the derived operation of the algebra with any involution.
 
-**Proof.** Condition (i): the star conjugation is conjugate-linear, involutive, anti-multiplicative and fixes $e_t$, which is the statement that it is the involution of the derived operation (*The Group of Involutions*, *Introduction to the Biquaternion Algebra*). So (i) holds. Condition (ii) with $\sigma = {}^{*}$ would read $\tilde X^{\natural}\tilde Y^{*} = \tilde X\tilde Y^{*}$ for all $\tilde X, \tilde Y$; at $\tilde Y = e_t$ this is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which fails at $\tilde X = \vec e_x$, where the two sides are $-\vec e_x$ and $\vec e_x$. So (ii) fails.
+**Proof.** Condition (i): the star conjugation is conjugate-linear, involutive, anti-multiplicative and fixes $e_t$, which is the statement that it is the involution of the derived operation (*The Group of Involutions*, *Introduction to the Biquaternion Algebra*). So (i) holds. Condition (ii) with $\sigma = {}^{*}$ would read $\tilde Q_3^{\natural}\tilde Q_2^{*} = \tilde Q_3\tilde Q_2^{*}$ for all $\tilde Q_3, \tilde Q_2$; at $\tilde Q_2 = e_t$ this is $\tilde Q_3^{\natural} = \tilde Q_3$ for every $\tilde Q_3$, which fails at $\tilde Q_3 = \vec e_x$, where the two sides are $-\vec e_x$ and $\vec e_x$. So (ii) fails.
 
-**Remark.** The failure of (ii) is the absence of a right unit, read in the second slot: with $\tilde Y = e_t$, condition (ii) says $\tilde X \star e_t = \tilde X\sigma(e_t) = \tilde X$, that is $\tilde X^{\natural} = \tilde X$ for every $\tilde X$, which is exactly the statement that $e_t$ is a right unit of the multiplication. The two forms of the same failure are the derived-operation test and the right-unit test, and the theorem is their equivalence for this product.
+**Remark.** The failure of (ii) is the absence of a right unit, read in the second slot: with $\tilde Q_2 = e_t$, condition (ii) says $\tilde Q_3 \star e_t = \tilde Q_3\sigma(e_t) = \tilde Q_3$, that is $\tilde Q_3^{\natural} = \tilde Q_3$ for every $\tilde Q_3$, which is exactly the statement that $e_t$ is a right unit of the multiplication. The two forms of the same failure are the derived-operation test and the right-unit test, and the theorem is their equivalence for this product.
 
 ### The Isotope Interpretation
 
@@ -207,7 +207,7 @@ With no unit, the derived vocabulary of an algebra has to be replaced, and the g
 | $\tilde P\tilde Q^{*}$ | none | $e_t$ |
 | $\tilde P^{\natural}\tilde Q^{*}$ | none | none |
 
-**Proof.** The plain product is the associative product of the algebra and has the two-sided unit $e_t$. For the sibling bilinear product, $e_t \star \tilde Y = e_t^{\natural}\tilde Y = \tilde Y$ because ${}^{\natural}$ fixes $e_t$, so $e_t$ is a left unit, and there is no right one (*Introduction to the General Quaternionic Algebra* §*The Unit*). For the sibling sesquilinear product, $\tilde Y \star e_t = \tilde Y e_t^{*} = \tilde Y$, so $e_t$ is a right unit, and there is no left one (*Introduction to the General Plain Sesqualgebra* §*The Right Unit*). The fourth row is the two theorems of this article, in the form that both actions of $e_t$ are conjugations and neither is the identity.
+**Proof.** The plain product is the associative product of the algebra and has the two-sided unit $e_t$. For the sibling bilinear product, $e_t \star \tilde Q_2 = e_t^{\natural}\tilde Q_2 = \tilde Q_2$ because ${}^{\natural}$ fixes $e_t$, so $e_t$ is a left unit, and there is no right one (*Introduction to the General Quaternionic Algebra* §*The Unit*). For the sibling sesquilinear product, $\tilde Q_2 \star e_t = \tilde Q_2 e_t^{*} = \tilde Q_2$, so $e_t$ is a right unit, and there is no left one (*Introduction to the General Plain Sesqualgebra* §*The Right Unit*). The fourth row is the two theorems of this article, in the form that both actions of $e_t$ are conjugations and neither is the identity.
 
 **Remark.** The four rows are the sharpest reading of the two slots. Each of the four general products makes one of the two slots the identity and the other slot the twist: the two bilinear products put the twist in the first slot and the identity in the second, one of them losing the right unit and the other the left; the sibling sesquilinear product has the twist in the second slot and the identity in the first, keeping the right unit; and this product puts a twist in both slots, keeping neither. The table is the unit row of the comparison of the four general products, *Comparison Between the Four General Products*, read with the two actions of this article.
 
@@ -224,9 +224,9 @@ The two one-sided actions of $e_t$ under the general quaternionic sesquilinear m
 | $\tilde Q \star e_t = \tilde Q^{\natural}$ | the right action of $e_t$, the natural conjugation |
 | $\bar{\cdot} = {}^{\natural} \circ {}^{*}$ | the coefficientwise conjugation, the composite of the two actions |
 | $\{ \mathrm{id}, {}^{\natural}, {}^{*}, \bar{\cdot} \}$ | the group of involutions, the Klein four-group |
-| $\sigma(\tilde Y) = e_t \star \tilde Y = \tilde Y^{*}$ | the first row of the multiplication |
+| $\sigma(\tilde Q_2) = e_t \star \tilde Q_2 = \tilde Q_2^{*}$ | the first row of the multiplication |
 | (i) | $\sigma$ is a conjugate-linear involution of the algebra |
-| (ii) | $\tilde X \star \tilde Y = \tilde X\,\sigma(\tilde Y)$ |
+| (ii) | $\tilde Q_3 \star \tilde Q_2 = \tilde Q_3\,\sigma(\tilde Q_2)$ |
 | $\tilde P \star \tilde Q = {}^{\natural}(\tilde P)\,\tilde Q^{*}$ | the product as the isotope of the derived operation |
 | $\mathbb{C}_{\mathbb{B}}, \mathrm{Vect}(\mathbb{B}), \mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_{+}, \mathbb{M}_{-}$ | the remarkable subspaces |
 | $e_t \star e_t = e_t$ | the unit candidate as the trivial idempotent of the multiplication |

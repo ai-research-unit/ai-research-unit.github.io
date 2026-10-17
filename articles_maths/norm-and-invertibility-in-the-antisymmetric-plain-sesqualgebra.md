@@ -26,7 +26,7 @@ Both notions of the title are therefore **absences**. The block has no two-sided
 
 The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
-**Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde X=\tilde X$ for every $\tilde X$, a **right unit** when $\tilde X\star e=\tilde X$ for every $\tilde X$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
+**Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, a **right unit** when $\tilde Q_1\star e=\tilde Q_1$ for every $\tilde Q_1$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
 **Definition (inverse and group of units).** Let $\star$ be a unital product with identity $e$. An element $\tilde Q$ is **left-invertible of $\star$** when there is $\tilde R$ with $\tilde R\star\tilde Q=e$, **right-invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=e$, and **invertible** when there is $\tilde R$ with $\tilde Q\star\tilde R=\tilde R\star\tilde Q=e$. Such an $\tilde R$ is the **inverse of $\tilde Q$**, and in an associative unital product the invertible elements form the **group of units**.
 
@@ -34,9 +34,9 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 
 ## The Absence of a Unit
 
-**The block has neither a left unit nor a right unit:** there is no element $\tilde u$ with $\tilde u\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde u=\tilde X$ for every $\tilde X$, because every value of the block is a pure vector of scalar part zero while $e_t$ has scalar part one.
+**The block has neither a left unit nor a right unit:** there is no element $\tilde u$ with $\tilde u\diamond\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, and none with $\tilde Q_1\diamond\tilde u=\tilde Q_1$ for every $\tilde Q_1$, because every value of the block is a pure vector of scalar part zero while $e_t$ has scalar part one.
 
-**Theorem (no unit).** The block has neither a left unit nor a right unit. There is no element $\tilde u$ with $\tilde u\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde u=\tilde X$ for every $\tilde X$.
+**Theorem (no unit).** The block has neither a left unit nor a right unit. There is no element $\tilde u$ with $\tilde u\diamond\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$, and none with $\tilde Q_1\diamond\tilde u=\tilde Q_1$ for every $\tilde Q_1$.
 
 *Proof.* The two one-sided actions of $e_t$ are
 
@@ -44,7 +44,7 @@ $$
 \tilde P\diamond e_t=\vec P,\qquad e_t\diamond\tilde Q=-\overline{\vec Q},
 $$
 
-the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde X=e_t$, the equation $\tilde u\diamond e_t=e_t$, that is $\vec q=e_t$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde X=e_t$, the equation $e_t\diamond\tilde u=e_t$, that is $-\overline{\vec q}=e_t$; the same parity of the scalar part forbids it.
+the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $\tilde u\diamond e_t=e_t$, that is $\vec q=e_t$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde Q_1=e_t$, the equation $e_t\diamond\tilde u=e_t$, that is $-\overline{\vec q}=e_t$; the same parity of the scalar part forbids it.
 
 The obstruction is the projection: every value of the block is a pure vector, so its scalar part vanishes, while the unit $e_t$ has scalar part one. The block cannot see the unit of the space on either side, and the two displays above are the two one-sided actions that replace it. The parent product $\tilde P\tilde Q^{*}$ has the right unit $e_t$, and the block destroys it: the right-unit equation survives on the vector subspace alone and fails at every element with a non-zero scalar part.
 

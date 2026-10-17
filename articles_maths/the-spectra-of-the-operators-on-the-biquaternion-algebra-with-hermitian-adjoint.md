@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$, and let $L_{\tilde C}$, $R_{\tilde D}$, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ be the one-sided and two-sided operators of *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*. This article computes their spectra on the Hermitian space $(\tilde S,\tilde R)=\mathrm{Sc}(\tilde{S}^{*}\tilde R)$, which is the biquaternion instance of *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_{2}(\mathbb{C})$ with the Hermitian conjugation ${}^{*}$, and let $L_{\tilde Q_1}$, $R_{\tilde D}$, $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ be the one-sided and two-sided operators of *One-Sided Operators on the General Plain Sesqualgebra* and *Two-Sided Operators on the General Plain Sesqualgebra*. This article computes their spectra on the Hermitian space $(\tilde S,\tilde R)=\mathrm{Sc}(\tilde{S}^{*}\tilde R)$, which is the biquaternion instance of *The Spectra of Self-Adjoint Operators with Hermitian Adjoint*.
 
 The results are complete and explicit. **The one-sided operators have the spectrum of the element, each eigenvalue twice; the two-sided operator has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$; the inner derivation has the pairwise differences $\lambda_{i}-\lambda_{j}$; and the Sylvester operator has the pairwise sums $\lambda_{i}+\mu_{j}$.** The four statements are one statement: on the algebra seen as $\mathbb{C}^{2}\otimes(\mathbb{C}^{2})^{*}$, left multiplication acts on the first factor, right multiplication on the second, and every operator of the corpus is a function of the two. The element-level theory is *Biquaternion Spectral Theory*; this article is the operator-level theory, and the two must be kept apart: an element has a spectrum, an operator has a spectrum, and the second is built from the first by the rules below.
 
@@ -13,36 +13,36 @@ The results are complete and explicit. **The one-sided operators have the spectr
 **Proposition (the operators as Kronecker products).** On $\mathbb{C}^{4}$,
 
 $$
-L_{\tilde C} = \mathsf{M}_2(\tilde C)\otimes I_{2},\qquad R_{\tilde D} = I_{2}\otimes \mathsf{M}_2(\tilde D)^{T},\qquad \Theta_{\tilde{Q}} = \mathsf{M}_2(\tilde{Q})\otimes (\mathsf{M}_2(\tilde{Q}))^{\natural},
+L_{\tilde Q_1} = \mathsf{M}_2(\tilde Q_1)\otimes I_{2},\qquad R_{\tilde D} = I_{2}\otimes \mathsf{M}_2(\tilde D)^{T},\qquad \Theta_{\tilde{Q}} = \mathsf{M}_2(\tilde{Q})\otimes (\mathsf{M}_2(\tilde{Q}))^{\natural},
 $$
 
-and the Sylvester operator is $L_{\tilde C}+R_{\tilde D}=\mathsf{M}_2(\tilde C)\otimes I_{2}+I_{2}\otimes\mathsf{M}_2(\tilde D)^{T}$.
+and the Sylvester operator is $L_{\tilde Q_1}+R_{\tilde D}=\mathsf{M}_2(\tilde Q_1)\otimes I_{2}+I_{2}\otimes\mathsf{M}_2(\tilde D)^{T}$.
 
-*Proof.* $L_{\tilde C}(\tilde R)=\tilde C\tilde R$ acts on the index of the first tensor factor and $R_{\tilde D}(\tilde R)=\tilde R\tilde D$ on the second; in row-major order the matrix of $\tilde R\mapsto \tilde R\tilde D$ is $I\otimes\mathsf{M}_2(\tilde D)^{T}$, and $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ gives $\mathsf{M}_2(\tilde{Q})\otimes(\mathsf{M}_2(\tilde{Q}))^{\natural}$ since $\mathsf{M}_2(\tilde{Q}^{*})=(\mathsf{M}_2(\tilde{Q}))^{\natural}$.
+*Proof.* $L_{\tilde Q_1}(\tilde R)=\tilde Q_1\tilde R$ acts on the index of the first tensor factor and $R_{\tilde D}(\tilde R)=\tilde R\tilde D$ on the second; in row-major order the matrix of $\tilde R\mapsto \tilde R\tilde D$ is $I\otimes\mathsf{M}_2(\tilde D)^{T}$, and $\Theta_{\tilde{Q}}=L_{\tilde{Q}}R_{\tilde{Q}^{*}}$ gives $\mathsf{M}_2(\tilde{Q})\otimes(\mathsf{M}_2(\tilde{Q}))^{\natural}$ since $\mathsf{M}_2(\tilde{Q}^{*})=(\mathsf{M}_2(\tilde{Q}))^{\natural}$.
 
 **Remark (the Hermitian space and the Kronecker identification).** The vectorisation above is the **coordinate** vectorisation of the basis $e_{\mu}$; the general plain sesquilinear form of the article is $(\tilde S,\tilde R)=\mathrm{Sc}(\tilde{S}^{*}\tilde R)=\sum_{\mu}S_{\mu}^{*}V_{\mu}$, whose Gram matrix in that basis is the identity. The Kronecker formulas are therefore spectral statements about the operators on the Hermitian space, and the computed spectra below are the spectra with respect to $(\cdot,\cdot)$.
 
 ## The Spectrum of a One-Sided Operator
 
-**Theorem (the one-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde C)$, repeated with algebraic multiplicity. Then
+**Theorem (the one-sided spectrum).** Let $\lambda_{1},\lambda_{2}$ be the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$, repeated with algebraic multiplicity. Then
 
 $$
-\mathrm{spec}(L_{\tilde C}) = \{\lambda_{1},\lambda_{2},\lambda_{1},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{2},\mu_{1},\mu_{2}\},
+\mathrm{spec}(L_{\tilde Q_1}) = \{\lambda_{1},\lambda_{2},\lambda_{1},\lambda_{2}\},\qquad \mathrm{spec}(R_{\tilde D}) = \{\mu_{1},\mu_{2},\mu_{1},\mu_{2}\},
 $$
 
-each eigenvalue with multiplicity two, and the characteristic polynomials are $\chi_{L_{\tilde C}}(t)=\chi_{\mathsf{M}_2(\tilde C)}(t)^{2}$ and $\chi_{R_{\tilde D}}(t)=\chi_{\mathsf{M}_2(\tilde D)}(t)^{2}$.
+each eigenvalue with multiplicity two, and the characteristic polynomials are $\chi_{L_{\tilde Q_1}}(t)=\chi_{\mathsf{M}_2(\tilde Q_1)}(t)^{2}$ and $\chi_{R_{\tilde D}}(t)=\chi_{\mathsf{M}_2(\tilde D)}(t)^{2}$.
 
-*Proof.* By the Kronecker rule the eigenvalues of $A\otimes B$ are the products of the eigenvalues, so the eigenvalues of $\mathsf{M}_2(\tilde C)\otimes I$ are those of $\mathsf{M}_2(\tilde C)$, each twice; the same for $I\otimes\mathsf{M}_2(\tilde D)^{T}$, whose second factor has the eigenvalues of $\mathsf{M}_2(\tilde D)$.
+*Proof.* By the Kronecker rule the eigenvalues of $A\otimes B$ are the products of the eigenvalues, so the eigenvalues of $\mathsf{M}_2(\tilde Q_1)\otimes I$ are those of $\mathsf{M}_2(\tilde Q_1)$, each twice; the same for $I\otimes\mathsf{M}_2(\tilde D)^{T}$, whose second factor has the eigenvalues of $\mathsf{M}_2(\tilde D)$.
 
-**Corollary (the type criteria at the level of spectra).** $L_{\tilde C}$ is self-adjoint exactly when $\mathsf{M}_2(\tilde C)$ is Hermitian, and then its spectrum is real; $L_{\tilde C}$ is skew-adjoint exactly when $\mathsf{M}_2(\tilde C)$ is anti-Hermitian, and then its spectrum is purely imaginary; $L_{\tilde C}$ is unitary exactly when $\mathsf{M}_2(\tilde C)$ is unitary, and then its spectrum is on the unit circle; $L_{\tilde C}$ is **normal** exactly when $\mathsf{M}_2(\tilde C)$ is normal, since $L_{\tilde C}L_{\tilde C}^{*}=L_{\tilde C\tilde{C}^{*}}$ and $L_{\tilde C}^{*}L_{\tilde C}=L_{\tilde{C}^{*}\tilde C}$ coincide exactly when $\tilde C\tilde{C}^{*}=\tilde{C}^{*}\tilde C$.
+**Corollary (the type criteria at the level of spectra).** $L_{\tilde Q_1}$ is self-adjoint exactly when $\mathsf{M}_2(\tilde Q_1)$ is Hermitian, and then its spectrum is real; $L_{\tilde Q_1}$ is skew-adjoint exactly when $\mathsf{M}_2(\tilde Q_1)$ is anti-Hermitian, and then its spectrum is purely imaginary; $L_{\tilde Q_1}$ is unitary exactly when $\mathsf{M}_2(\tilde Q_1)$ is unitary, and then its spectrum is on the unit circle; $L_{\tilde Q_1}$ is **normal** exactly when $\mathsf{M}_2(\tilde Q_1)$ is normal, since $L_{\tilde Q_1}L_{\tilde Q_1}^{*}=L_{\tilde Q_1\tilde{Q}_1^{*}}$ and $L_{\tilde Q_1}^{*}L_{\tilde Q_1}=L_{\tilde{Q}_1^{*}\tilde Q_1}$ coincide exactly when $\tilde Q_1\tilde{Q}_1^{*}=\tilde{Q}_1^{*}\tilde Q_1$.
 
-**Corollary (the spectrum of the inner derivation).** The inner derivation $\mathrm{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ has
+**Corollary (the spectrum of the inner derivation).** The inner derivation $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ has
 
 $$
-\mathrm{spec}(\mathrm{ad}_{\tilde C}) = \{\lambda_{i}-\lambda_{j}\ :\ i,j=1,2\},
+\mathrm{spec}(\mathrm{ad}_{\tilde Q_1}) = \{\lambda_{i}-\lambda_{j}\ :\ i,j=1,2\},
 $$
 
-that is, the four pairwise differences of the eigenvalues of $\mathsf{M}_2(\tilde C)$, with the two differences $\lambda_{1}-\lambda_{2}$ and $\lambda_{2}-\lambda_{1}$ and the double eigenvalue $0$. For a Hermitian $\tilde C$ the spectrum is real and the nonzero values $\pm(\lambda_{1}-\lambda_{2})$ are the **roots** of the Cartan pair: the derivation acts diagonally on the algebra with the roots as weights. This is the spectral content of *Biquaternion Automorphisms and Derivations*.
+that is, the four pairwise differences of the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$, with the two differences $\lambda_{1}-\lambda_{2}$ and $\lambda_{2}-\lambda_{1}$ and the double eigenvalue $0$. For a Hermitian $\tilde Q_1$ the spectrum is real and the nonzero values $\pm(\lambda_{1}-\lambda_{2})$ are the **roots** of the Cartan pair: the derivation acts diagonally on the algebra with the roots as weights. This is the spectral content of *Biquaternion Automorphisms and Derivations*.
 
 ## The Spectrum of a Two-Sided Operator
 
@@ -84,21 +84,21 @@ so $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $p=2$ or $q=2$, th
 
 ## The Spectrum of the Sylvester Operator
 
-**Theorem (the Sylvester spectrum).** For the operator $L_{\tilde C}+R_{\tilde D}$ whose equation is the Sylvester equation $\tilde CX+X\tilde D=c$,
+**Theorem (the Sylvester spectrum).** For the operator $L_{\tilde Q_1}+R_{\tilde D}$ whose equation is the Sylvester equation $\tilde Q_1X+X\tilde D=c$,
 
 $$
-\mathrm{spec}(L_{\tilde C}+R_{\tilde D}) = \{\lambda_{i}+\mu_{j}\ :\ i,j=1,2\},\qquad \det(L_{\tilde C}+R_{\tilde D}) = \prod_{i,j}(\lambda_{i}+\mu_{j}),
+\mathrm{spec}(L_{\tilde Q_1}+R_{\tilde D}) = \{\lambda_{i}+\mu_{j}\ :\ i,j=1,2\},\qquad \det(L_{\tilde Q_1}+R_{\tilde D}) = \prod_{i,j}(\lambda_{i}+\mu_{j}),
 $$
 
-where $\lambda_{i}$ are the eigenvalues of $\mathsf{M}_2(\tilde C)$ and $\mu_{j}$ those of $\mathsf{M}_2(\tilde D)$. The operator is invertible exactly when no eigenvalue of $\mathsf{M}_2(\tilde C)$ is the negative of an eigenvalue of $\mathsf{M}_2(\tilde D)$.
+where $\lambda_{i}$ are the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ and $\mu_{j}$ those of $\mathsf{M}_2(\tilde D)$. The operator is invertible exactly when no eigenvalue of $\mathsf{M}_2(\tilde Q_1)$ is the negative of an eigenvalue of $\mathsf{M}_2(\tilde D)$.
 
-*Proof.* Immediate from $L_{\tilde C}+R_{\tilde D}=\mathsf{M}_2(\tilde C)\otimes I+I\otimes\mathsf{M}_2(\tilde D)^{T}$ and the additivity of the spectrum under Kronecker sums for the first factor terms; verified on random pairs, together with the determinant formula.
+*Proof.* Immediate from $L_{\tilde Q_1}+R_{\tilde D}=\mathsf{M}_2(\tilde Q_1)\otimes I+I\otimes\mathsf{M}_2(\tilde D)^{T}$ and the additivity of the spectrum under Kronecker sums for the first factor terms; verified on random pairs, together with the determinant formula.
 
-**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde C}+R_{\tilde D})^{*}=L_{\tilde{C}^{*}}+R_{\tilde{D}^{*}}$, so $L_{\tilde C}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde C}+R_{\tilde{C}^{*}}$ is self-adjoint exactly when $\tilde C$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. This is the operator side of the Hermitian Sylvester equation, developed in *The Hermitian Sylvester Equation*.
+**Corollary (the self-adjoint Sylvester operator).** $(L_{\tilde Q_1}+R_{\tilde D})^{*}=L_{\tilde{Q}_1^{*}}+R_{\tilde{D}^{*}}$, so $L_{\tilde Q_1}+R_{\tilde D}$ is self-adjoint exactly when both parameters are Hermitian, and the Lyapunov operator $L_{\tilde Q_1}+R_{\tilde{Q}_1^{*}}$ is self-adjoint exactly when $\tilde Q_1$ is Hermitian, with the real spectrum $\{\lambda_{i}+\overline{\lambda_{j}}\}=\{\lambda_{i}+\lambda_{j}\}$ for $\lambda_{i}$ real. This is the operator side of the Hermitian Sylvester equation, developed in *The Hermitian Sylvester Equation*.
 
 ## Worked Examples
 
-**The identity and the central scalars.** $\mathrm{spec}(L_{e_{0}})=\{1,1,1,1\}$; $\mathrm{spec}(L_{e_{3}})=\{i,-i,i,-i\}$, purely imaginary, consistent with $e_{3}$ anti-Hermitian and $L_{e_{3}}$ skew-adjoint; $\mathrm{spec}(L_{ie_{3}})=\{1,1,-1,-1\}$, real, consistent with $ie_{3}$ Hermitian and $L_{ie_{3}}$ self-adjoint. For $\tilde C=e_{1}$, of spectrum $\{i,-i\}$, $L_{e_{1}}$ has spectrum $\{i,i,-i,-i\}$: skew-adjoint, of spectrum on the imaginary axis, since $e_{1}\in\mathbb{M}_-$.
+**The identity and the central scalars.** $\mathrm{spec}(L_{e_{0}})=\{1,1,1,1\}$; $\mathrm{spec}(L_{e_{3}})=\{i,-i,i,-i\}$, purely imaginary, consistent with $e_{3}$ anti-Hermitian and $L_{e_{3}}$ skew-adjoint; $\mathrm{spec}(L_{ie_{3}})=\{1,1,-1,-1\}$, real, consistent with $ie_{3}$ Hermitian and $L_{ie_{3}}$ self-adjoint. For $\tilde Q_1=e_{1}$, of spectrum $\{i,-i\}$, $L_{e_{1}}$ has spectrum $\{i,i,-i,-i\}$: skew-adjoint, of spectrum on the imaginary axis, since $e_{1}\in\mathbb{M}_-$.
 
 **A Hermitian element with indefinite inertia.** For $\tilde{Q}=e_{3}$: $\mathsf{M}_2(e_{3})$ has eigenvalues $\{i,-i\}$, inertia $(1,1)$, and the four general products are $i\cdot(-i)=1$, $i\cdot i=-1$, $(-i)\cdot(-i)=-1$, $(-i)\cdot i=1$, so $\mathrm{spec}(\Theta_{e_{3}})=\{1,-1,-1,1\}$ and the signature of $\Theta_{e_{3}}$ is $(p^{2}+q^{2},2pq)=(2,2)$: the sandwich of an indefinite Hermitian element has two positive and two negative eigenvalues. For $\tilde{Q}=ie_{3}$ the element differs from $e_{3}$ by the central phase $i$ and $\mathsf{M}_2(\tilde{Q})=\sigma_{3}$ has eigenvalues $\{1,-1\}$; the sandwich is the *same* operator, $\Theta_{ie_{3}}=\Theta_{e_{3}}$, so the phase shows up in the element's spectrum and not at all in the operator's. This is the phase blindness of *Two-Sided Operators on the General Plain Sesqualgebra*, visible at the level of the spectrum.
 
@@ -116,7 +116,7 @@ not real: the two coherence eigenvalues $\lambda_{1}\overline{\lambda_{2}}=2i$ a
 
 ## Summary
 
-On the Hermitian space of the biquaternion algebra, the operators of the corpus have explicit spectra: $\mathrm{spec}(L_{\tilde C})=\mathrm{spec}(\mathsf{M}_2(\tilde C))$ with each eigenvalue twice, the same for $R_{\tilde D}$; the inner derivation $\mathrm{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ has the pairwise differences $\lambda_{i}-\lambda_{j}$, the roots of the Cartan pair when $\tilde C$ is Hermitian; the two-sided operator $\Theta_{\tilde{Q}}$ has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$, the populations $\lvert\lambda_{i}\rvert^{2}$ and the coherences $\lambda_{i}\overline{\lambda_{j}}$; and the Sylvester operator $L_{\tilde C}+R_{\tilde D}$ has the pairwise sums $\lambda_{i}+\mu_{j}$. From these: $\mathrm{tr}(\Theta_{\tilde{Q}})=\lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2}$ and $\det(\Theta_{\tilde{Q}})=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4}$; $\Theta_{\tilde{Q}}$ is self-adjoint exactly when $\tilde{Q}$ is Hermitian up to a central phase and then its signature is $(p^{2}+q^{2},2pq)$ for the inertia $(n,m)$ of $\tilde{Q}$; $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $\tilde{Q}$ is Hermitian up to phase and semidefinite; $L_{\tilde C}+R_{\tilde D}$ is invertible exactly when $\mathsf{M}_2(\tilde C)$ and $-\mathsf{M}_2(\tilde D)$ share no eigenvalue and self-adjoint exactly when both parameters are Hermitian.
+On the Hermitian space of the biquaternion algebra, the operators of the corpus have explicit spectra: $\mathrm{spec}(L_{\tilde Q_1})=\mathrm{spec}(\mathsf{M}_2(\tilde Q_1))$ with each eigenvalue twice, the same for $R_{\tilde D}$; the inner derivation $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ has the pairwise differences $\lambda_{i}-\lambda_{j}$, the roots of the Cartan pair when $\tilde Q_1$ is Hermitian; the two-sided operator $\Theta_{\tilde{Q}}$ has the pairwise products $\lambda_{i}\overline{\lambda_{j}}$, the populations $\lvert\lambda_{i}\rvert^{2}$ and the coherences $\lambda_{i}\overline{\lambda_{j}}$; and the Sylvester operator $L_{\tilde Q_1}+R_{\tilde D}$ has the pairwise sums $\lambda_{i}+\mu_{j}$. From these: $\mathrm{tr}(\Theta_{\tilde{Q}})=\lvert\operatorname{tr}\mathsf{M}_2(\tilde{Q})\rvert^{2}$ and $\det(\Theta_{\tilde{Q}})=\lvert\det\mathsf{M}_2(\tilde{Q})\rvert^{4}$; $\Theta_{\tilde{Q}}$ is self-adjoint exactly when $\tilde{Q}$ is Hermitian up to a central phase and then its signature is $(p^{2}+q^{2},2pq)$ for the inertia $(n,m)$ of $\tilde{Q}$; $\Theta_{\tilde{Q}}$ is positive semidefinite exactly when $\tilde{Q}$ is Hermitian up to phase and semidefinite; $L_{\tilde Q_1}+R_{\tilde D}$ is invertible exactly when $\mathsf{M}_2(\tilde Q_1)$ and $-\mathsf{M}_2(\tilde D)$ share no eigenvalue and self-adjoint exactly when both parameters are Hermitian.
 
 ## Summary of Notation
 
@@ -124,11 +124,11 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 |---|---|
 | $\mathsf{M}_2(\tilde{Q})$ | The $2\times2$ matrix of $\tilde{Q}$ in the matrix model |
 | $\mathrm{vec}$ | Row-major vectorisation onto $\mathbb{C}^{4}$ in the basis $e_{\mu}$ |
-| $L_{\tilde C}=\mathsf{M}_2(\tilde C)\otimes I$ | Left multiplication; spectrum $\lambda_{i}$, each twice |
+| $L_{\tilde Q_1}=\mathsf{M}_2(\tilde Q_1)\otimes I$ | Left multiplication; spectrum $\lambda_{i}$, each twice |
 | $R_{\tilde D}=I\otimes\mathsf{M}_2(\tilde D)^{T}$ | Right multiplication; spectrum $\mu_{j}$, each twice |
 | $\Theta_{\tilde{Q}}=\mathsf{M}_2(\tilde{Q})\otimes(\mathsf{M}_2(\tilde{Q}))^{\natural}$ | Two-sided operator; spectrum $\lambda_{i}\overline{\lambda_{j}}$ |
-| $\mathrm{ad}_{\tilde C}=L_{\tilde C}-R_{\tilde C}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
-| $L_{\tilde C}+R_{\tilde D}$ | Sylvester operator; spectrum $\lambda_{i}+\mu_{j}$ |
+| $\mathrm{ad}_{\tilde Q_1}=L_{\tilde Q_1}-R_{\tilde Q_1}$ | Inner derivation; spectrum $\lambda_{i}-\lambda_{j}$ |
+| $L_{\tilde Q_1}+R_{\tilde D}$ | Sylvester operator; spectrum $\lambda_{i}+\mu_{j}$ |
 | $(n,m)$ | Inertia of a Hermitian element; $\mathrm{sig}(\Theta_{\tilde{Q}})=(p^{2}+q^{2},2pq)$ |
 | $(\tilde S,\tilde R)=\mathrm{Sc}(\tilde{S}^{*}\tilde R)$ | The general plain sesquilinear form of the spectra |
 
@@ -138,7 +138,7 @@ On the Hermitian space of the biquaternion algebra, the operators of the corpus 
 - *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the spectra of **elements**: the element-level theory that this article uses and does not repeat.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general operator-level theory of the adjoint.
 - *One-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`) and *Two-Sided Operators on the General Plain Sesqualgebra* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the definitions, the type criteria and the composition laws.
-- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the solvability and the solution of $\tilde CX+X\tilde D=c$.
+- *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the solvability and the solution of $\tilde Q_1X+X\tilde D=c$.
 - *Completely Positive Maps of the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity statements at the level of maps.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations and their weights.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable real subspaces

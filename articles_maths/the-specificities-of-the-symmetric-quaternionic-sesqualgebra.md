@@ -37,7 +37,7 @@ Sesqualgebra*, where the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness tha
 $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
 scalar imaginary $i$; $\vec Q=\sum_kQ_k\vec e_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
 $\vec e_x,\vec e_y,\vec e_z$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
-${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde X)=X_t$ is the scalar part;
+${}^{*}={}^{\natural}\circ\bar{\cdot}$; $\mathrm{Sc}(\tilde Q_1)=Q_{1t}$ is the scalar part;
 $\varepsilon=(1,-1,-1,-1)$; and
 
 $$
@@ -129,8 +129,8 @@ Quaternionic Sesqualgebra*.
 compatibility involution, gives the operator identity
 
 $$
-K\bigl(L^{\star}_{\tilde A}\tilde X,\tilde Y\bigr)
-=\overline{K\bigl(\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\bigr)} ,
+K\bigl(L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\bigr)
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\bigr)} ,
 $$
 
 so the adjoint of the left multiplication by $\tilde A$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is the left multiplication by
@@ -181,7 +181,7 @@ square.
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})$ | the Krein form, the scalar part of the block |
 | $\mathrm{GQS}$ | the boundary of (C1): scalar part $\langle\cdot,\cdot\rangle_{\natural*}$, no symmetry |
 | $\mathrm{SPS}$ | the boundary of (C2): conjugate-symmetric, definite scalar part |
-| $\langle L^{\star}_{\tilde A}\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |
+| $\langle L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_2\rangle_{\natural*}}$ | the $\langle\cdot,\cdot\rangle_{\natural*}$-adjointness delivered by the law |
 
 ## Further Reading
 

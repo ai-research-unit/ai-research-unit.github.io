@@ -35,7 +35,7 @@ $$
 
 The scalar part is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and the vector part is the mixed term $-P_t\overline{\vec Q}-\overline{Q_t}\vec P$.
 
-*Proof.* Write the plain product of two quaternions as $\tilde X\tilde Y=[X_tY_t-(\vec X,\vec Y)]+X_t\vec Y+Y_t\vec X+\vec X\times\vec Y$. For the first order put $\tilde X=\tilde P^{\natural}$, of scalar part $P_t$ and vector part $-\vec P$, and $\tilde Y=\tilde Q^{*}$, of scalar part $\overline{Q_t}$ and vector part $-\overline{\vec Q}$: the vector part of the product is $-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}$. For the second order the same computation with the factors exchanged gives $-P_t\overline{\vec Q}-\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$, since $\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\vec P\times\overline{\vec Q}$, and their scalar parts are equal, since $\mathrm{Sc}(\tilde X\tilde Y)=\mathrm{Sc}(\tilde Y\tilde X)$; the half-sum is the displayed value.
+*Proof.* Write the plain product of two quaternions as $\tilde Q_1\tilde Q_2=[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. For the first order put $\tilde Q_1=\tilde P^{\natural}$, of scalar part $P_t$ and vector part $-\vec P$, and $\tilde Q_2=\tilde Q^{*}$, of scalar part $\overline{Q_t}$ and vector part $-\overline{\vec Q}$: the vector part of the product is $-P_t\overline{\vec Q}-\overline{Q_t}\vec P+\vec P\times\overline{\vec Q}$. For the second order the same computation with the factors exchanged gives $-P_t\overline{\vec Q}-\overline{Q_t}\vec P-\vec P\times\overline{\vec Q}$, since $\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\vec P\times\overline{\vec Q}$, and their scalar parts are equal, since $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\mathrm{Sc}(\tilde Q_2\tilde Q_1)$; the half-sum is the displayed value.
 
 **Corollary (the two projections of the value).** The scalar part of the value is a complex multiple of $e_t$, and the vector part of the value is a complex vector in $\mathbf{e}=\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$; concretely
 
@@ -77,7 +77,7 @@ $$
 \tilde P\star\tilde Q=\bigl[\mathrm{SPA}(\overline{\tilde Q},\tilde P)\bigr]^{\natural},
 $$
 
-where $\mathrm{SPA}(\tilde X,\tilde Y)=\tfrac12(\tilde X\tilde Y+\tilde Y\tilde X)$ is the symmetric plain product.
+where $\mathrm{SPA}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product.
 
 *Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q}\tilde P)^{\natural}=\tilde P^{\natural}(\overline{\tilde Q})^{\natural}=\tilde P^{\natural}\tilde Q^{*}$, since $(\overline{\tilde Q})^{\natural}=\tilde Q^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde P\star\tilde Q=\bigl[\tfrac12(\overline{\tilde Q}\tilde P+\tilde P\overline{\tilde Q})\bigr]^{\natural}=\bigl[\mathrm{SPA}(\overline{\tilde Q},\tilde P)\bigr]^{\natural}$.
 

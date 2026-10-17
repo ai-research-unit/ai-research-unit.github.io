@@ -8,7 +8,7 @@ $$
 \kappa(\tilde P,\tilde Q)=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr),
 $$
 
-where $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$ is the adjoint operator of the bracket. The form is computed on general elements of the algebra and on the units; its invariance and its symmetry are established; its radical, which is the centre $\mathbb{C}_{\mathbb{B}}$, is identified; its relation to the general plain bilinear form on the vector subspace is shown to be a single constant; the Killing data — rank, radical, definite or indefinite character — are read on the basis and on the remarkable subspaces with their isotropic elements; and the Cartan criteria are read on it, together with the Casimir element the form defines.
+where $\operatorname{ad}_{\tilde P}(\tilde Q_1)=\tilde P\wedge\tilde Q_1$ is the adjoint operator of the bracket. The form is computed on general elements of the algebra and on the units; its invariance and its symmetry are established; its radical, which is the centre $\mathbb{C}_{\mathbb{B}}$, is identified; its relation to the general plain bilinear form on the vector subspace is shown to be a single constant; the Killing data — rank, radical, definite or indefinite character — are read on the basis and on the remarkable subspaces with their isotropic elements; and the Cartan criteria are read on it, together with the Casimir element the form defines.
 
 The bracket and its structure are used from *The Lie Algebra of the Antisymmetric Plain Algebra*, where the centre, the derived algebra and the identifications $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$, $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_t\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$ are established. The plain bilinear form $\langle\tilde P,\tilde Q\rangle=\operatorname{Sc}(\tilde P\tilde Q)$ and its pairings are *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space* and *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; their reading under the general plain form is *Remarkable Subspaces and the Four Forms*; the general theory of the Killing form, of the Cartan criteria and of the Casimir element is *The Killing Form Operator*, *Structure of Lie Algebras* and *The Casimir Operator*; and the operators of the block, which are the adjoints here, are *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*. The form is a two-variable operation on a module; the squared vector form $\vec Q\cdot\vec Q$ that appears below is a quadratic form on the vector part and not a norm of the algebra.
 
@@ -17,7 +17,7 @@ The bracket and its structure are used from *The Lie Algebra of the Antisymmetri
 **Definition.** For $\tilde P\in\mathbb{B}$ the **adjoint** of $\tilde P$ is the $\mathbb{C}$-linear endomorphism
 
 $$
-\operatorname{ad}_{\tilde P}:\mathbb{B}\to\mathbb{B},\qquad \operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X,
+\operatorname{ad}_{\tilde P}:\mathbb{B}\to\mathbb{B},\qquad \operatorname{ad}_{\tilde P}(\tilde Q_1)=\tilde P\wedge\tilde Q_1,
 $$
 
 and $\operatorname{ad}:\mathfrak{g}\to\operatorname{End}(\mathbb{B})$, $\tilde P\mapsto\operatorname{ad}_{\tilde P}$, is the adjoint representation of the block.
@@ -25,12 +25,12 @@ and $\operatorname{ad}:\mathfrak{g}\to\operatorname{End}(\mathbb{B})$, $\tilde P
 **Proposition (the adjoint is the cross product).** For $\tilde P=\sum_\mu P_\mu e_\mu$ the adjoint acts by the cross product of the vector part,
 
 $$
-\operatorname{ad}_{\tilde P}(\tilde X)=\vec P\times\vec X,
+\operatorname{ad}_{\tilde P}(\tilde Q_1)=\vec P\times\vec Q_1,
 $$
 
 so its kernel is the complex plane $\mathbb{C}e_t\oplus\mathbb{C}\vec P$ when $\vec P\neq0$ and the whole space when $\vec P=0$, and its rank is $0$ on the centre and $2$ elsewhere. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ its matrix is block diagonal, with a first column and a first row of zeros and the $3\times3$ matrix of the cross product by $\vec P$ on the vector part.
 
-*Proof.* The bracket depends only on the vector parts, so $\operatorname{ad}_{\tilde P}(\tilde X)=\vec P\times\vec X$. The kernel of the cross product by $\vec P$ is the line $\mathbb{C}\vec P$ together with the central direction, a complex plane when $\vec P\neq0$; the matrix statement follows because the first coordinate is annihilated. The ranks were verified exactly on general elements and on the basis.
+*Proof.* The bracket depends only on the vector parts, so $\operatorname{ad}_{\tilde P}(\tilde Q_1)=\vec P\times\vec Q_1$. The kernel of the cross product by $\vec P$ is the line $\mathbb{C}\vec P$ together with the central direction, a complex plane when $\vec P\neq0$; the matrix statement follows because the first coordinate is annihilated. The ranks were verified exactly on general elements and on the basis.
 
 **Definition.** The **trace form** of the block is the bilinear form
 
@@ -88,39 +88,39 @@ and the ratio of the two forms is the constant $2$. For the commutator reading o
 
 ## Invariance and Symmetry
 
-**Theorem.** The form is symmetric and invariant: for all $\tilde P,\tilde Q,\tilde X$,
+**Theorem.** The form is symmetric and invariant: for all $\tilde P,\tilde Q,\tilde Q_1$,
 
 $$
 \kappa(\tilde P,\tilde Q)=\kappa(\tilde Q,\tilde P),\qquad
-\kappa\bigl(\operatorname{ad}_{\tilde P}\tilde X,\tilde Q\bigr)+\kappa\bigl(\tilde X,\operatorname{ad}_{\tilde P}\tilde Q\bigr)=0,
+\kappa\bigl(\operatorname{ad}_{\tilde P}\tilde Q_1,\tilde Q\bigr)+\kappa\bigl(\tilde Q_1,\operatorname{ad}_{\tilde P}\tilde Q\bigr)=0,
 $$
 
-equivalently $\kappa([\tilde P,\tilde X],\tilde Q)=\kappa(\tilde P,[\tilde X,\tilde Q])$.
+equivalently $\kappa([\tilde P,\tilde Q_1],\tilde Q)=\kappa(\tilde P,[\tilde Q_1,\tilde Q])$.
 
-*Proof.* The trace is invariant under cyclic permutation and the adjoint is a homomorphism for the bracket, $\operatorname{ad}_{\tilde P\wedge\tilde X}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde X}]$, by the Jacobi identity; hence, using $\operatorname{Tr}([A,B]C)=\operatorname{Tr}(A[B,C])$,
+*Proof.* The trace is invariant under cyclic permutation and the adjoint is a homomorphism for the bracket, $\operatorname{ad}_{\tilde P\wedge\tilde Q_1}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q_1}]$, by the Jacobi identity; hence, using $\operatorname{Tr}([A,B]C)=\operatorname{Tr}(A[B,C])$,
 
 $$
-\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P\wedge\tilde X}\operatorname{ad}_{\tilde Q}\bigr)
-=\operatorname{Tr}\bigl([\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde X}]\operatorname{ad}_{\tilde Q}\bigr)
-=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\,[\operatorname{ad}_{\tilde X},\operatorname{ad}_{\tilde Q}]\bigr)
-=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde X\wedge\tilde Q}\bigr),
+\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P\wedge\tilde Q_1}\operatorname{ad}_{\tilde Q}\bigr)
+=\operatorname{Tr}\bigl([\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q_1}]\operatorname{ad}_{\tilde Q}\bigr)
+=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\,[\operatorname{ad}_{\tilde Q_1},\operatorname{ad}_{\tilde Q}]\bigr)
+=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q_1\wedge\tilde Q}\bigr),
 $$
 
-that is $\kappa(\tilde P\wedge\tilde X,\tilde Q)=\kappa(\tilde P,\tilde X\wedge\tilde Q)$, which in terms of the commutator is the displayed equivalence by the factor $2$ carried through both slots. The symmetry is the symmetry of the trace under the interchange of the two factors together with the anticommutativity of the bracket, or the symmetry of $\vec P\cdot\vec Q$ in the formula of the previous section.
+that is $\kappa(\tilde P\wedge\tilde Q_1,\tilde Q)=\kappa(\tilde P,\tilde Q_1\wedge\tilde Q)$, which in terms of the commutator is the displayed equivalence by the factor $2$ carried through both slots. The symmetry is the symmetry of the trace under the interchange of the two factors together with the anticommutativity of the bracket, or the symmetry of $\vec P\cdot\vec Q$ in the formula of the previous section.
 
-**Remark.** The invariance is the statement that the adjoint operators are the skew elements for $\kappa$, $\kappa(\operatorname{ad}_{\tilde P}\tilde X,\tilde Q)+\kappa(\tilde X,\operatorname{ad}_{\tilde P}\tilde Q)=0$; the form is what makes the adjoint representation orthogonal in the sense of the block, and it is the input of the Casimir element below. The general statement that a Killing form is invariant and symmetric is *The Killing Form Operator*.
+**Remark.** The invariance is the statement that the adjoint operators are the skew elements for $\kappa$, $\kappa(\operatorname{ad}_{\tilde P}\tilde Q_1,\tilde Q)+\kappa(\tilde Q_1,\operatorname{ad}_{\tilde P}\tilde Q)=0$; the form is what makes the adjoint representation orthogonal in the sense of the block, and it is the input of the Casimir element below. The general statement that a Killing form is invariant and symmetric is *The Killing Form Operator*.
 
 ## The Radical and the Rank
 
 **Theorem (the radical is the centre).** The radical of $\kappa$,
 
 $$
-\operatorname{rad}\kappa=\{\tilde P:\kappa(\tilde P,\tilde X)=0\text{ for all }\tilde X\in\mathbb{B}\},
+\operatorname{rad}\kappa=\{\tilde P:\kappa(\tilde P,\tilde Q_1)=0\text{ for all }\tilde Q_1\in\mathbb{B}\},
 $$
 
 is the centre $\mathbb{C}_{\mathbb{B}}$, of complex dimension one and real dimension two. Hence $\kappa$ is degenerate, of complex rank $3$ and real rank $6$, and its restriction to the vector subspace is nondegenerate.
 
-*Proof.* By the formula $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$, the condition $\kappa(\tilde P,\tilde X)=0$ for all $\tilde X$ is $\vec P\cdot\vec X=0$ for all vectors $\vec X$, which forces $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$. On the vector subspace the form is a nonzero multiple of the scalar product, whose radical is zero, so the restriction is nondegenerate and the rank is the complex dimension three. Computed exactly on the basis and on general elements.
+*Proof.* By the formula $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$, the condition $\kappa(\tilde P,\tilde Q_1)=0$ for all $\tilde Q_1$ is $\vec P\cdot\vec Q_1=0$ for all vectors $\vec Q_1$, which forces $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t=\mathbb{C}_{\mathbb{B}}$. On the vector subspace the form is a nonzero multiple of the scalar product, whose radical is zero, so the restriction is nondegenerate and the rank is the complex dimension three. Computed exactly on the basis and on general elements.
 
 **Corollary (the Killing data).** On the vector subspace the Gram matrix in the real basis $(\vec e_x,\vec e_y,\vec e_z,i\vec e_x,i\vec e_y,i\vec e_z)$ is $\operatorname{diag}(-2,-2,-2,2,2,2)$, of real signature $(3,3)$ and determinant $(-2)^3\cdot2^3=-64$; on the complex basis $(\vec e_x,\vec e_y,\vec e_z)$ the Gram matrix is $-2\,\mathrm{I}_3$, of complex determinant $-8$. The form is negative on the real vector directions and positive on the imaginary ones, and it is degenerate.
 
@@ -199,7 +199,7 @@ The Killing form of the antisymmetric plain algebra is $\kappa(\tilde P,\tilde Q
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X=\vec P\times\vec X$ | the adjoint of the bracket, the cross product of the vector part (written $\operatorname{ad}^{\wedge}_{\tilde P}$ in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, where the block's adjoint $[\tilde P,\cdot\,]$ is twice it) |
+| $\operatorname{ad}_{\tilde P}(\tilde Q_1)=\tilde P\wedge\tilde Q_1=\vec P\times\vec Q_1$ | the adjoint of the bracket, the cross product of the vector part (written $\operatorname{ad}^{\wedge}_{\tilde P}$ in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, where the block's adjoint $[\tilde P,\cdot\,]$ is twice it) |
 | $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})$ | the Killing form of the block |
 | $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$ | the form on general elements |
 | $\operatorname{diag}(0,-2,-2,-2)$ | its Gram matrix in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ |

@@ -16,9 +16,9 @@ $$
 \qquad
 \mathcal{N}_{\tilde{Ϛ}} = \big\{\tilde A : \mathrm{Tr}(\tilde{Ϛ}\,\tilde A^{*} \tilde A)=0\big\},
 \qquad
-\langle \tilde A,\tilde B\rangle_{\tilde{Ϛ}} = \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde B\big),
+\langle \tilde A,\tilde Q_1\rangle_{\tilde{Ϛ}} = \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde Q_1\big),
 $$
-with $\pi_{\tilde{Ϛ}}(\tilde A)[\tilde B] = [\tilde A\tilde B]$ and cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$. Its dimension depends on the state:
+with $\pi_{\tilde{Ϛ}}(\tilde A)[\tilde Q_1] = [\tilde A\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$. Its dimension depends on the state:
 $$
 \dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}} = 2\,\mathrm{rank}\,\tilde{Ϛ}
 = \begin{cases} 2 & \tilde{Ϛ} \text{ a minimal idempotent (pure)}, \\[2pt] 4 & \tilde{Ϛ} \text{ of full rank (all mixed states, including the trace state)}.\end{cases}
@@ -36,17 +36,17 @@ The article proceeds as follows. The next section recalls the GNS theorem. The s
 
 Let $\mathcal{A}$ be a unital $*$-algebra over $\mathbb{C}$ with a norm making it a $C^*$-algebra, and let $\omega:\mathcal{A}\to\mathbb{C}$ be a **state**: linear, positive in the sense $\omega(\tilde A^{*} \tilde A)\ge 0$ for all $\tilde A$, and normalized, $\omega(e)=1$. Define the sesquilinear form
 $$
-\langle \tilde A,\tilde B\rangle_\omega \;=\; \omega\big(\tilde A^{*} \tilde B\big).
+\langle \tilde A,\tilde Q_1\rangle_\omega \;=\; \omega\big(\tilde A^{*} \tilde Q_1\big).
 $$
 Positivity and the Cauchy–Schwarz inequality make this a positive semidefinite Hermitian form. Its **radical** is
 $$
 \mathcal{N}_\omega \;=\; \big\{\tilde A\in\mathcal{A} : \langle \tilde A,\tilde A\rangle_\omega = 0\big\} \;=\; \big\{\tilde A : \omega(\tilde A^{*} \tilde A)=0\big\},
 $$
-a left ideal because $\langle \tilde B\tilde A,\tilde B\tilde A\rangle_\omega = \omega(\tilde A^{*}\tilde B^{*}\tilde B\tilde A)\le \|\tilde B^{*}\tilde B\|\,\omega(\tilde A^{*}\tilde A)$. The quotient $\mathcal{H}_\omega = \mathcal{A}/\mathcal{N}_\omega$, completed in the induced norm, is a Hilbert space. Write $[\tilde A]$ for the class of $\tilde A$.
+a left ideal because $\langle \tilde Q_1\tilde A,\tilde Q_1\tilde A\rangle_\omega = \omega(\tilde A^{*}\tilde Q_1^{*}\tilde Q_1\tilde A)\le \|\tilde Q_1^{*}\tilde Q_1\|\,\omega(\tilde A^{*}\tilde A)$. The quotient $\mathcal{H}_\omega = \mathcal{A}/\mathcal{N}_\omega$, completed in the induced norm, is a Hilbert space. Write $[\tilde A]$ for the class of $\tilde A$.
 
 > **GNS theorem.** With $\mathcal{H}_\omega$ as above, the assignment
 > $$
-> \pi_\omega(\tilde A)[\tilde B] \;=\; [\tilde A\tilde B]
+> \pi_\omega(\tilde A)[\tilde Q_1] \;=\; [\tilde A\tilde Q_1]
 > $$
 > is a well-defined $*$-representation of $\mathcal{A}$ on $\mathcal{H}_\omega$, the vector $\Omega_\omega=[e]$ is **cyclic** (the set $\pi_\omega(\mathcal{A})\Omega_\omega$ is dense), and $\omega(\tilde A)=\langle\Omega_\omega|\pi_\omega(\tilde A)|\Omega_\omega\rangle$. The triple $(\mathcal{H}_\omega,\pi_\omega,\Omega_\omega)$ is unique up to unitary equivalence.
 
@@ -87,7 +87,7 @@ Three cases are the ones that matter below.
 
 Specialize the general construction. With $\omega(\tilde A)=\mathrm{Tr}(\tilde{Ϛ}\tilde A)$ the inner product is
 $$
-\langle \tilde A,\tilde B\rangle_{\tilde{Ϛ}} \;=\; \omega\big(\tilde A^{*}\tilde B\big) \;=\; \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*} \tilde B\big),
+\langle \tilde A,\tilde Q_1\rangle_{\tilde{Ϛ}} \;=\; \omega\big(\tilde A^{*}\tilde Q_1\big) \;=\; \mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*} \tilde Q_1\big),
 $$
 and the radical, the Hilbert space, the representation, and the cyclic vector are
 $$
@@ -95,7 +95,7 @@ $$
 \qquad
 \mathcal{H}_{\tilde{Ϛ}} = \mathbb{B}/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
-\pi_{\tilde{Ϛ}}(\tilde A)[\tilde B]=[\tilde A\tilde B],
+\pi_{\tilde{Ϛ}}(\tilde A)[\tilde Q_1]=[\tilde A\tilde Q_1],
 \qquad
 \Omega_{\tilde{Ϛ}} = [e_t].
 $$
@@ -113,17 +113,17 @@ and it vanishes exactly when $\tilde A \tilde\Pi_+=0$, i.e. when the image of $\
 $$
 \mathcal{H}_{\tilde\Pi_+} \;\cong\; \mathbb{B}\tilde\Pi_+ \;\cong\; \mathbb{C}^2 .
 $$
-Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of article 1. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_+\tilde A^{*}\tilde B)$ sees only the first column of the matrices.
+Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of article 1. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_+\tilde A^{*}\tilde Q_1)$ sees only the first column of the matrices.
 
 **The trace state.** Take $\tilde{Ϛ} = \tfrac12 e_t$. Then
 $$
-\langle \tilde A,\tilde B\rangle_{\mathrm{tr}} = \tfrac12\mathrm{Tr}\big(\tilde A^{*}\tilde B\big),
+\langle \tilde A,\tilde Q_1\rangle_{\mathrm{tr}} = \tfrac12\mathrm{Tr}\big(\tilde A^{*}\tilde Q_1\big),
 $$
 the Hilbert–Schmidt inner product, whose radical is trivial: $\mathrm{Tr}(\tilde A^{*}\tilde A)=\|\mathsf{M}_2(\tilde A)\|_{\mathrm{HS}}^2 = 0$ only for $\tilde A=0$. Hence
 $$
 \mathcal{H}_{\mathrm{tr}} \;\cong\; \mathbb{B} \;\cong\; \mathbb{C}^4,
 \qquad
-\pi_{\mathrm{tr}}(\tilde A)[\tilde B] = [\tilde A\tilde B],
+\pi_{\mathrm{tr}}(\tilde A)[\tilde Q_1] = [\tilde A\tilde Q_1],
 $$
 the **regular representation**, of complex dimension four. The Gram matrix of the four basis elements has rank four.
 
@@ -192,9 +192,9 @@ One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynam
 $$
 \tau(\tilde A) \;=\; \tfrac12 \mathrm{Tr}(\tilde A) \;=\; \mathrm{Sc}(\tilde A).
 $$
-It is the unique tracial state — the unique state with $\tau(\tilde A\tilde B)=\tau(\tilde B\tilde A)$ for all $\tilde A,\tilde B$ — and it is invariant under every inner automorphism, $\tau(\tilde U\tilde A\tilde U^{-1})=\tau(\tilde A)$ for every unitary $\tilde U$. Its GNS space is the whole algebra with the Hilbert–Schmidt inner product, and its representation is the regular representation,
+It is the unique tracial state — the unique state with $\tau(\tilde A\tilde Q_1)=\tau(\tilde Q_1\tilde A)$ for all $\tilde A,\tilde Q_1$ — and it is invariant under every inner automorphism, $\tau(\tilde U\tilde A\tilde U^{-1})=\tau(\tilde A)$ for every unitary $\tilde U$. Its GNS space is the whole algebra with the Hilbert–Schmidt inner product, and its representation is the regular representation,
 $$
-\pi_\tau(\tilde A)\tilde B = \tilde A\tilde B ,
+\pi_\tau(\tilde A)\tilde Q_1 = \tilde A\tilde Q_1 ,
 $$
 so every element of the algebra appears as a "state" in the reconstruction. The trace state is maximally mixed, and its modular operator is the identity; its modular Hamiltonian is the zero element.
 
@@ -230,7 +230,7 @@ $$
 
 is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G,\mu)$, with the regular representation and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
 
-**Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde A,\tilde B\rangle_\omega = \mathrm{Tr}(\tilde{Ϛ}\,\tilde A^{*}\tilde B)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
+**Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde A,\tilde Q_1\rangle_\omega = \mathrm{Tr}(\tilde{Ϛ}\,\tilde A^{*}\tilde Q_1)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
 
 **Scope.** The theorem is abelian, and the framework's mode algebra is not: it is the CAR algebra of one fermionic mode in $\mathbb{B}$, or the Weyl algebra of an imported bosonic module, and neither is the convolution algebra of an abelian group. The passage from a measure to a state of those algebras is not the abelian passage, and it is not taken here. What is used is the finite-dimensional statement of this article together with the classical abelian theorem as an external fact; the existence direction of that theorem, from positivity back to the measure, is not needed.
 
@@ -263,9 +263,9 @@ For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the GNS construct
 $$
 \mathcal{H}_{\tilde{Ϛ}} = \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}},
 \qquad
-\langle \tilde A,\tilde B\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde B\big),
+\langle \tilde A,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde Q_1\big),
 \qquad
-\pi_{\tilde{Ϛ}}(\tilde A)[\tilde B]=[\tilde A\tilde B],
+\pi_{\tilde{Ϛ}}(\tilde A)[\tilde Q_1]=[\tilde A\tilde Q_1],
 \qquad
 \Omega_{\tilde{Ϛ}}=[e_t],
 $$
@@ -274,7 +274,7 @@ For the **vacuum** $\tilde{Ϛ}=\tilde\Pi_+$ the dimension is two, the space is t
 
 The construction carries the finite-dimensional Tomita–Takesaki structure: the modular operator is $\Delta_{\tilde{Ϛ}}(\tilde A)=\tilde{Ϛ}\tilde A\tilde{Ϛ}^{-1}$, the modular conjugation is $J(\tilde A)=\tilde A^{*}$ with $J\Delta_{\tilde{Ϛ}}J^{-1}=\Delta_{\tilde{Ϛ}}^{-1}$, and the modular Hamiltonian $K=-\log\tilde{Ϛ}$ is Hermitian, hence an element of $\mathbb{M}_+$. For a Gibbs state it reads $K=\beta\tilde H+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
 
-A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2$ of the measure, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde A^{*}\tilde B)$, which is the inner product this article uses.
+A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2$ of the measure, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}\tilde A^{*}\tilde Q_1)$, which is the inner product this article uses.
 
 The GNS construction supplies the bridge from the vacuum state of *The Biquaternion Vacuum as a Minimal Idempotent* to the operator-algebraic tools of the articles that follow: the reconstructed module carries the mode algebra, the cyclic vector carries the contraction, and the modular operator carries the thermal structure.
 
@@ -291,10 +291,10 @@ The GNS construction supplies the bridge from the vacuum state of *The Biquatern
 | $\tilde{Ϛ}=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde A)=\tfrac12\mathrm{Tr}(\tilde A)$ | Trace state; unique tracial state; Bloch centre |
-| $\langle\tilde A,\tilde B\rangle_\omega=\omega(\tilde A^{*}\tilde B)$ | GNS inner product |
+| $\langle\tilde A,\tilde Q_1\rangle_\omega=\omega(\tilde A^{*}\tilde Q_1)$ | GNS inner product |
 | $\mathcal{N}_\omega=\{\tilde A:\omega(\tilde A^{*}\tilde A)=0\}$ | Radical of the state |
 | $\mathcal{H}_\omega=\mathbb{B}/\mathcal{N}_\omega$ | GNS Hilbert space |
-| $\pi_\omega(\tilde A)[\tilde B]=[\tilde A\tilde B]$ | GNS (left-regular) representation |
+| $\pi_\omega(\tilde A)[\tilde Q_1]=[\tilde A\tilde Q_1]$ | GNS (left-regular) representation |
 | $\Omega_\omega=[e_t]$ | Cyclic (vacuum) vector |
 | $\dim_\mathbb{C}\mathcal{H}_{\tilde{Ϛ}}=2\,\mathrm{rank}\,\tilde{Ϛ}$ | GNS dimension ($2$ pure, $4$ full-rank/mixed) |
 | $\Delta_{\tilde{Ϛ}}(\tilde A)=\tilde{Ϛ}\tilde A\tilde{Ϛ}^{-1}$ | Modular operator |

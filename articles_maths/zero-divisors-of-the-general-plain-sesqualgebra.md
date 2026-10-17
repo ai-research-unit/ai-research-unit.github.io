@@ -163,7 +163,7 @@ a zero divisor, of the non-pure family. The unit $e_t$ is not a zero divisor, $c
 | sides | left and right, generally distinct sets of partners | left and right, with the same annihilator |
 | pure family | $Q_t=0$, isotropic, the nonzero nilpotents of index two | $Q_t=0$, isotropic, the nonzero nilpotents of index three |
 | non-pure family | $Q_t\neq0$, multiples of idempotents, not nilpotent | the same; those that are block-idempotent are the Hermitian ones |
-| annihilator of a zero divisor | the plain annihilator $\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$, of dimension two; the two sides are generally different | the same space carried through the involution, of dimension two, equal on the two sides |
+| annihilator of a zero divisor | the plain annihilator $\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$, of dimension two; the two sides are generally different | the same space carried through the involution, of dimension two, equal on the two sides |
 
 The block's set is the common set of the four general products, and the coincidence is a theorem of
 the space and not a property of the block (*Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*). What the block adds
@@ -183,7 +183,7 @@ $C(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)=0$ with $\tilde Q\neq0$. The **set** is the
 zero-divisor cone, of complex dimension three, which is the common set of the four general
 products, and every member is **two-sided**. The **annihilators** are equal on the two sides and
 are the image under the involution of the plain annihilator
-$\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$, a **complex plane of dimension two** for every
+$\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$, a **complex plane of dimension two** for every
 nonzero zero divisor and the origin otherwise; the two-sided annihilator is $\{0\}$. The **two
 families** of the parent are inherited as a partition of the elements, since the partition is read
 on the scalar coordinate: the pure family has $Q_t=0$ and isotropic vector part, and the non-pure
@@ -204,7 +204,7 @@ annihilators, and changes the index.
 | $\mathcal{Z}_\star=\{\tilde Q\neq0:C(\tilde Q)=0\}$ | the zero-divisor set, the nonzero cone |
 | $\tilde Q\star\tilde R=0\Leftrightarrow\tilde Q\tilde R^{*}=0$ | the annihilation equation |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and the right annihilators, equal |
-| $\langle\tilde Q\rangle_{\natural*}^{*}$, $\langle\tilde Q\rangle_{\natural*}=\{\tilde Z:\tilde Q\tilde Z=0\}$ | the common annihilator, the plain annihilator carried through the involution |
+| $\langle\tilde Q\rangle_{\natural*}^{*}$, $\langle\tilde Q\rangle_{\natural*}=\{\tilde Q_1:\tilde Q\tilde Q_1=0\}$ | the common annihilator, the plain annihilator carried through the involution |
 | $Q_t=0$ | the pure family, isotropic: the nilpotents of the block, index three |
 | $Q_t\neq0$ | the non-pure family, multiples of the idempotents, not nilpotent |
 | $\tfrac12(e_t+\tilde\Xi)$ | the Hermitian idempotents, zero divisors and block idempotents |

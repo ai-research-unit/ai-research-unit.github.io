@@ -173,7 +173,7 @@ $$
 
 **Remark.** The two actions of the unit by multiplication are therefore the identity and a conjugation: the left action is the identity, $e_t\star\tilde Q=\tilde Q$, and the right action is the natural conjugation, $\tilde Q\star e_t=\tilde Q^{\natural}$. Neither is a two-sided unit, and no element of $\mathbb{B}$ is one, so the multiplication has a unit on one side alone. The left multiplications nonetheless compose, in reversed order, by the proposition below, and that is why the comparison of the four records a monoid of left multiplications for this product although the product has no two-sided unit.
 
-**Proposition (the left multiplications).** The left multiplications $L_{\tilde P}(\tilde X)=\tilde P\star\tilde X$ compose in the reversed order of the algebra,
+**Proposition (the left multiplications).** The left multiplications $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ compose in the reversed order of the algebra,
 
 $$
 L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P} ,
@@ -181,7 +181,7 @@ $$
 
 so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B}$.
 
-**Proof.** $L_{\tilde P}(L_{\tilde R}(\tilde X))=\tilde P^{\natural}(\tilde R^{\natural}\tilde X)=(\tilde R\tilde P)^{\natural}\tilde X=L_{\tilde R\tilde P}(\tilde X)$, using the anti-multiplicativity of $\natural$ twice.
+**Proof.** $L_{\tilde P}(L_{\tilde R}(\tilde Q_1))=\tilde P^{\natural}(\tilde R^{\natural}\tilde Q_1)=(\tilde R\tilde P)^{\natural}\tilde Q_1=L_{\tilde R\tilde P}(\tilde Q_1)$, using the anti-multiplicativity of $\natural$ twice.
 
 ### Non-Commutativity and the Centre
 
@@ -191,7 +191,7 @@ so they form a monoid anti-isomorphic to the multiplicative monoid of $\mathbb{B
 
 **Proposition (the centre is trivial).** No nonzero element of $\mathbb{B}$ commutes with every element for the multiplication $\star$.
 
-**Proof.** Let $\tilde C$ satisfy $\tilde C\star\tilde X=\tilde X\star\tilde C$ for every $\tilde X$. At $\tilde X=e_t$ it reads $\tilde C\star e_t=\tilde C^{\natural}$ on the left and $e_t\star\tilde C=\tilde C$ on the right, so $\tilde C^{\natural}=\tilde C$ and $\tilde C$ has zero vector part, $\tilde C=Ce_t$. The identity then reads $C\tilde X$ on the left, since $\tilde C\star\tilde X=\tilde C^{\natural}\tilde X=C\tilde X$, and $C\tilde X^{\natural}$ on the right, so $C\tilde X=C\tilde X^{\natural}$ for every $\tilde X$; at $\tilde X=\vec e_x$ this is $C\vec e_x=-C\vec e_x$, whence $C=0$.
+**Proof.** Let $\tilde Q_2$ satisfy $\tilde Q_2\star\tilde Q_1=\tilde Q_1\star\tilde Q_2$ for every $\tilde Q_1$. At $\tilde Q_1=e_t$ it reads $\tilde Q_2\star e_t=\tilde Q_2^{\natural}$ on the left and $e_t\star\tilde Q_2=\tilde Q_2$ on the right, so $\tilde Q_2^{\natural}=\tilde Q_2$ and $\tilde Q_2$ has zero vector part, $\tilde Q_2=Q_{2t}e_t$. The identity then reads $Q_{2t}\tilde Q_1$ on the left, since $\tilde Q_2\star\tilde Q_1=\tilde Q_2^{\natural}\tilde Q_1=Q_{2t}\tilde Q_1$, and $Q_{2t}\tilde Q_1^{\natural}$ on the right, so $Q_{2t}\tilde Q_1=Q_{2t}\tilde Q_1^{\natural}$ for every $\tilde Q_1$; at $\tilde Q_1=\vec e_x$ this is $Q_{2t}\vec e_x=-Q_{2t}\vec e_x$, whence $Q_{2t}=0$.
 
 **Remark.** The product has no centre at all, and this separates it sharply from the plain product, whose centre is the scalar line $\mathbb{C}e_t$ (*Introduction to the Biquaternion Algebra*). The complex scalars still act, by the corollary of the preceding section, and their action is left multiplication by $\varphi(A)=Ae_t$, since $\natural$ fixes the scalar line and $A\tilde Q=(Ae_t)\star\tilde Q$; but the element $\varphi(A)$ that represents the action is not central, $\tilde Q\star(Ae_t)=A\tilde Q^{\natural}$. Centrality is an axiom of the associative reading and not of the bilinear one: a $\mathbb{C}$-bilinear product needs its scalars to act compatibly in both slots, which $\star$ does, and needs no central element to represent them, which $\star$ does not have.
 
@@ -312,7 +312,7 @@ The first display is the second identity solved for the $\natural$-product, and 
 
 The comparison of the four settles the question of the two-sided object at once: the two rows that name the categories read yes, yes, no, no for the bilinear kind and no, no, yes, yes for the sesquilinear one, the two bilinear products being the ones that define an algebra over $\mathbb{C}$ in the broad sense (*Comparison Between the Four General Products*). Within the bilinear pair, **exactly one product is the multiplication of an associative unital algebra, and it is the plain product**: the $\natural$-product is $\mathbb{C}$-bilinear, not associative and unital on the left alone, which is the theorem of *Introduction to the Biquaternion Algebra*.
 
-The sharper test of the *derived operation* of *Sesqualgebras* separates the pair in the same way and for the same reason. Let $\sigma(\tilde Y)=e_t\star\tilde Y$ be the first row of the product, as in the sibling article. Here $\sigma$ is the identity, since $\natural$ fixes $e_t$, so $\sigma$ is not conjugate-linear and condition (i) fails; and condition (ii), $\tilde P\star\tilde Q=\tilde P\sigma(\tilde Q)$, would read $\tilde P^{\natural}\tilde Q=\tilde P\tilde Q$, which fails at $\tilde P=\vec e_x$ and $\tilde Q=e_t$. The $\natural$-product therefore fails both conditions, and it is not the derived operation of the algebra with an involution on either side; the correction it needs is not a conjugation in the second slot but the $\mathbb{C}$-linear conjugation inserted in the first, which is the isotope of §*The Product as the Plain Product with the Conjugation Inserted*.
+The sharper test of the *derived operation* of *Sesqualgebras* separates the pair in the same way and for the same reason. Let $\sigma(\tilde Q_3)=e_t\star\tilde Q_3$ be the first row of the product, as in the sibling article. Here $\sigma$ is the identity, since $\natural$ fixes $e_t$, so $\sigma$ is not conjugate-linear and condition (i) fails; and condition (ii), $\tilde P\star\tilde Q=\tilde P\sigma(\tilde Q)$, would read $\tilde P^{\natural}\tilde Q=\tilde P\tilde Q$, which fails at $\tilde P=\vec e_x$ and $\tilde Q=e_t$. The $\natural$-product therefore fails both conditions, and it is not the derived operation of the algebra with an involution on either side; the correction it needs is not a conjugation in the second slot but the $\mathbb{C}$-linear conjugation inserted in the first, which is the isotope of §*The Product as the Plain Product with the Conjugation Inserted*.
 
 **The classification of the four.** One product is the multiplication of an associative unital algebra, the plain one; one is a $\mathbb{C}$-bilinear multiplication that keeps only the left unit and the reversed composition of the left multiplications, the $\natural$-product, which is the isotope of the first; and two are the multiplications of a sesqualgebra over the conjugation, of which one, the general plain sesquilinear product, is the derived operation of the algebra with its star, while the fourth, the general quaternionic sesquilinear product, is the isotope of that derived operation by the same conjugation and the subject of *Introduction to the General Quaternionic Sesqualgebra*.
 
@@ -346,7 +346,7 @@ Its table has $e_t$ on the diagonal, the identity row and the negated column, an
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of the article |
 | $\varepsilon=(1,-1,-1,-1)$ | the signs of the conjugation on the basis, $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$ |
 | $[\tilde P,\tilde Q,\tilde R]$ | the associator, $(\tilde Q^{\natural}\tilde P-\tilde P^{\natural}\tilde Q^{\natural})\tilde R$ |
-| $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X$, with $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P}$ |
+| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, with $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde R\tilde P}$ |
 | $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_t+\mathbb{R}\vec e_x+\mathbb{R}\vec e_y+\mathbb{R}\vec e_z$ | the quaternion subspace, on which $\star$ is $\bar hg$ |
 | $\sum_\mu Q_\mu^2$ | the scalar coefficient of the square, $\tilde Q\star\tilde Q=\bigl(\sum_\mu Q_\mu^2\bigr)e_t$ |
 

@@ -58,17 +58,17 @@ $$
 
 ## The Reflections
 
-**Theorem (the reflections).** Let $\tilde u \in V$ with $\langle\tilde u\rangle_{\natural} = 1$. Then for $\tilde x \in V$,
+**Theorem (the reflections).** Let $\tilde u \in V$ with $\langle\tilde u\rangle_{\natural} = 1$. Then for $\tilde q_3 \in V$,
 
 $$
-\tilde u\tilde x\tilde u = \tilde x - 2\langle\tilde u,\tilde x\rangle_{\natural}\tilde u , \qquad \operatorname{Ad}_{\tilde u}(\tilde x) = \tilde u\tilde x\tilde u^{-1} = 2\langle\tilde u,\tilde x\rangle_{\natural}\tilde u - \tilde x ,
+\tilde u\tilde q_3\tilde u = \tilde q_3 - 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u , \qquad \operatorname{Ad}_{\tilde u}(\tilde q_3) = \tilde u\tilde q_3\tilde u^{-1} = 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u - \tilde q_3 ,
 $$
 
-where $\langle\tilde u,\tilde x\rangle_{\natural}$ is the polar form restricted to $V$. The first map is the reflection in the hyperplane $\tilde u^{\perp}$, and the second is its negative, the rotation by $\pi$ about the axis $\mathbb{R}\tilde u$. On the scalar line the same operators act as the negation, $\tilde u s \tilde u = -s$ for $s \in \mathbb{R}e_t$.
+where $\langle\tilde u,\tilde q_3\rangle_{\natural}$ is the polar form restricted to $V$. The first map is the reflection in the hyperplane $\tilde u^{\perp}$, and the second is its negative, the rotation by $\pi$ about the axis $\mathbb{R}\tilde u$. On the scalar line the same operators act as the negation, $\tilde u s \tilde u = -s$ for $s \in \mathbb{R}e_t$.
 
-*Proof.* For a pure unit $\tilde u$ one has $\tilde u^{-1} = \tilde u^{\natural} = -\tilde u$ and $\tilde u^2 = -e_t$, so $\operatorname{Ad}_{\tilde u} = -\tilde u(\ )\tilde u$; expanding $\tilde u\tilde x\tilde u$ for pure $\tilde u,\tilde x$ with the multiplication table gives $\tilde x - 2\langle\tilde u,\tilde x\rangle_{\natural}\tilde u$, the reflection that fixes the plane $\tilde u^{\perp}$ and negates the line $\mathbb{R}\tilde u$. The second display is its negative, which fixes the line and negates the plane. For a scalar $\tilde x = se_t$ one has $\tilde u s\tilde u = s\tilde u^2 = -s$, as displayed.
+*Proof.* For a pure unit $\tilde u$ one has $\tilde u^{-1} = \tilde u^{\natural} = -\tilde u$ and $\tilde u^2 = -e_t$, so $\operatorname{Ad}_{\tilde u} = -\tilde u(\ )\tilde u$; expanding $\tilde u\tilde q_3\tilde u$ for pure $\tilde u,\tilde q_3$ with the multiplication table gives $\tilde q_3 - 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u$, the reflection that fixes the plane $\tilde u^{\perp}$ and negates the line $\mathbb{R}\tilde u$. The second display is its negative, which fixes the line and negates the plane. For a scalar $\tilde q_3 = se_t$ one has $\tilde u s\tilde u = s\tilde u^2 = -s$, as displayed.
 
-**Corollary.** The unit quaternion $\tilde u$ is the versor of the reflection $\tilde x \mapsto \tilde u\tilde x\tilde u$, and the two units $\pm\tilde u$ realise the same inner automorphism; every element of the image of $\operatorname{Ad}$ on $V$ is a product of such rotations, hence a rotation, and the reflection in the hyperplane perpendicular to a vector of the three-dimensional space is the map the pure unit realises.
+**Corollary.** The unit quaternion $\tilde u$ is the versor of the reflection $\tilde q_3 \mapsto \tilde u\tilde q_3\tilde u$, and the two units $\pm\tilde u$ realise the same inner automorphism; every element of the image of $\operatorname{Ad}$ on $V$ is a product of such rotations, hence a rotation, and the reflection in the hyperplane perpendicular to a vector of the three-dimensional space is the map the pure unit realises.
 
 ## The Comparison with the Plain Algebra
 
@@ -88,7 +88,7 @@ where $\langle\tilde u,\tilde x\rangle_{\natural}$ is the polar form restricted 
 
 ## Summary
 
-The form of the general quaternionic algebra of quaternions is the definite quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$, multiplicative under the product. Its shells are the levels $N = \lambda \geq 0$; the shell $N = 1$ is the unit sphere $\mathbb{H}^1$, of real dimension three, it is closed under both products of the block and is a group under the plain one, the quaternionic product having a left unit alone. The pin and spin groups of the form are the shell itself, $\operatorname{Pin}(N) = \operatorname{Spin}(N) = \mathbb{H}^1$, the spin group being a group precisely because the norm is multiplicative; the chapter therefore has its pin and spin groups inside the algebra, where the plain chapter has them inside a Clifford algebra. The unit group acts by the inner automorphisms $\operatorname{Ad}_{\tilde q_1}(\tilde q_2) = \tilde q_1\tilde q_2\tilde q_1^{-1}$, with kernel $\{\pm e_t\}$ and $2$-to-$1$ image $SO(V,N)$ on the vector subspace; the normalised section selects one of the two units, by the sign of $q_t$ with a tie-break on the equator. A pure unit $\tilde u$ realises the reflection $\tilde x \mapsto \tilde u\tilde x\tilde u$ in the hyperplane perpendicular to it and the rotation by $\pi$ through its inner automorphism. Over $\mathbb{C}$ the form becomes isotropic, the shell becomes a non-compact quadric, and the compactness of the sphere is a property of the real member alone.
+The form of the general quaternionic algebra of quaternions is the definite quaternionic form $\langle\cdot,\cdot\rangle_{\natural}$, multiplicative under the product. Its shells are the levels $N = \lambda \geq 0$; the shell $N = 1$ is the unit sphere $\mathbb{H}^1$, of real dimension three, it is closed under both products of the block and is a group under the plain one, the quaternionic product having a left unit alone. The pin and spin groups of the form are the shell itself, $\operatorname{Pin}(N) = \operatorname{Spin}(N) = \mathbb{H}^1$, the spin group being a group precisely because the norm is multiplicative; the chapter therefore has its pin and spin groups inside the algebra, where the plain chapter has them inside a Clifford algebra. The unit group acts by the inner automorphisms $\operatorname{Ad}_{\tilde q_1}(\tilde q_2) = \tilde q_1\tilde q_2\tilde q_1^{-1}$, with kernel $\{\pm e_t\}$ and $2$-to-$1$ image $SO(V,N)$ on the vector subspace; the normalised section selects one of the two units, by the sign of $q_t$ with a tie-break on the equator. A pure unit $\tilde u$ realises the reflection $\tilde q_3 \mapsto \tilde u\tilde q_3\tilde u$ in the hyperplane perpendicular to it and the rotation by $\pi$ through its inner automorphism. Over $\mathbb{C}$ the form becomes isotropic, the shell becomes a non-compact quadric, and the compactness of the sphere is a property of the real member alone.
 
 ## Summary of Notation
 
@@ -99,7 +99,7 @@ The form of the general quaternionic algebra of quaternions is the definite quat
 | $\operatorname{Ad}_{\tilde q_1}(\tilde q_2) = \tilde q_1\tilde q_2\tilde q_1^{-1}$ | the inner automorphism of a unit |
 | $\{\pm e_t\}$ | the kernel of the inner action on the algebra |
 | $q_t > 0$, with a tie-break on the equator | the normalisation of the section |
-| $\tilde u\tilde x\tilde u = \tilde x - 2\langle\tilde u,\tilde x\rangle_{\natural}\tilde u$ | the reflection by a pure unit, for $\tilde x \in V$ |
+| $\tilde u\tilde q_3\tilde u = \tilde q_3 - 2\langle\tilde u,\tilde q_3\rangle_{\natural}\tilde u$ | the reflection by a pure unit, for $\tilde q_3 \in V$ |
 | $\mathrm \langle \tilde q\rangle = q_t^2 - \vec q \cdot \vec q$ | the plain form of the sibling block, indefinite of signature $(1,3)$ |
 
 ## Further Reading

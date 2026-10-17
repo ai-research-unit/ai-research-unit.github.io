@@ -56,11 +56,11 @@ This article describes the left, right and two-sided modules over the quaternion
 
 ## Semisimplicity and Torsion
 
-**Definition.** The **naive torsion submodule** of a left $\mathbb{H}$-module $M$ is $T(M)=\{m\in M: \tilde a m=0\text{ for some }\tilde a\neq0\}$.
+**Definition.** The **naive torsion submodule** of a left $\mathbb{H}$-module $M$ is $T(M)=\{m\in M: \tilde q m=0\text{ for some }\tilde q\neq0\}$.
 
 **Theorem.** $T(M)=0$ for every module, the category of left $\mathbb{H}$-modules is semisimple, every submodule is a direct summand, and every module is a direct sum of copies of the simple module ${}_\mathbb{H}\mathbb{H}$.
 
-*Proof.* A non-zero element of $\mathbb{H}$ is invertible, so $\tilde a m=0$ with $\tilde a\neq0$ gives $m=\tilde a^{-1}\tilde a m=0$; this is the vanishing of the naive torsion. Every module is free, hence a direct sum of copies of ${}_\mathbb{H}\mathbb{H}$, which is simple; a direct sum of simple modules is semisimple, every short exact sequence of such modules splits, and every submodule is a summand.
+*Proof.* A non-zero element of $\mathbb{H}$ is invertible, so $\tilde q m=0$ with $\tilde q\neq0$ gives $m=\tilde q^{-1}\tilde q m=0$; this is the vanishing of the naive torsion. Every module is free, hence a direct sum of copies of ${}_\mathbb{H}\mathbb{H}$, which is simple; a direct sum of simple modules is semisimple, every short exact sequence of such modules splits, and every submodule is a summand.
 
 **Corollary.** The algebra $\mathbb{H}$ is left and right semisimple, its global dimension is $0$, every module is projective and injective, and the free module of rank $n$ is the direct sum of $n$ copies of ${}_\mathbb{H}\mathbb{H}$.
 

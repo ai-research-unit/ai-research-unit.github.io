@@ -203,7 +203,7 @@ a two-dimensional commutative ${}^{*}$-subalgebra of $\mathbb{B}$, isomorphic to
 1. **Idempotent:** $(\Phi^{\mathrm{deph}}_1)^2 = \Phi^{\mathrm{deph}}_1$.
 2. **Trace preserving:** $\mathrm{Tr}(\Phi^{\mathrm{deph}}_1(\tilde{Q})) = \mathrm{Tr}(\tilde{Q})$.
 3. **Unital:** $\Phi^{\mathrm{deph}}_1(e_t) = e_t$.
-4. **Module property:** $\Phi^{\mathrm{deph}}_1(\tilde{A}\tilde{Q}\tilde{B}) = \tilde{A}\,\Phi^{\mathrm{deph}}_1(\tilde{Q})\,\tilde{B}$ for all $\tilde{A}, \tilde{B} \in A$.
+4. **Module property:** $\Phi^{\mathrm{deph}}_1(\tilde{A}\tilde{Q}\tilde{Q}_1) = \tilde{A}\,\Phi^{\mathrm{deph}}_1(\tilde{Q})\,\tilde{Q}_1$ for all $\tilde{A}, \tilde{Q}_1 \in A$.
 5. **Self-adjointness for the trace pairing:** $\mathrm{Tr}(\Phi^{\mathrm{deph}}_1(\tilde{Q})\,\tilde{A}) = \mathrm{Tr}(\tilde{Q}\,\tilde{A})$ for all $\tilde{A} \in A$.
 
 Properties 1–5 are the defining properties of the **trace-preserving conditional expectation** onto $A$. Because the trace pairing $\mathrm{Tr}(\tilde{H}\tilde{K}) = 2(h_0k_0 + \vec h\cdot\vec k)$ is positive definite on $\mathbb{M}_+$, property 5 says that, restricted to Hermitian elements, $\Phi^{\mathrm{deph}}_1$ is exactly the **orthogonal projection** of $\mathbb{M}_+$ onto the Hermitian part of $A$, namely $\mathrm{span}_{\mathbb{R}}\{e_t, i\vec u\}$: it is the closest pointer-diagonal operator to $\tilde{Q}$ in the Hilbert–Schmidt geometry. Equivalently, in the pointer basis,

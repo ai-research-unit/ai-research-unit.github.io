@@ -9,7 +9,7 @@ $$
 \mathrm{Sc}\bigl(\tilde Q\star\tilde Q\bigr)=\sum_{\mu\in\{t,x,y,z\}}Q_\mu\overline{Q_\mu}=\sum_{\mu\in\{t,x,y,z\}}\lvert Q_\mu\rvert^{2} .
 $$
 
-That scalar part is a nonnegative real number, and it vanishes only at $\tilde Q=0$, so the square of a nonzero element is a nonzero Hermitian element and the square map has no kernel beyond zero. The sums of the squares form the **cone of squares** of the multiplication, and it is the subject of this article: the cone is closed under addition, it is carried into itself by the scalars of the square semiring of the base, it is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and it is **proper**, so the preorder it defines is a partial order.
+That scalar part is a nonnegative real number, and it vanishes only at $\tilde Q=0$, so the square of a nonzero element is a nonzero Hermitian element and the square map has no kernel beyond zero. The sums of the squares form the **cone of squares** of the multiplication, and it is the subject of this article: the cone is closed under addition, it is carried into itself by the scalars of the square semiring of the base, it is invariant under the congruence $\tilde Q_1\mapsto\tilde Q_2^{*}\tilde Q_1\tilde Q_2$, and it is **proper**, so the preorder it defines is a partial order.
 
 The cone is the biquaternion instance of the algebraic positive cone of *Hermitian Squares and the Algebraic Positive Cone*, the cone of the sums of the squares $x^{*}x$ of an involutive algebra; the sesquilinear square is the derived square $x\star x=xx^{*}$ of that article, so the two cones are the same set. In the biquaternion case the second square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ also carries the name, and the caution is the one *Introduction to the General Plain Sesqualgebra* records: the two squares agree on the real subspace and differ elsewhere, and only the first one is the square of the multiplication.
 
@@ -151,17 +151,17 @@ and for every $\lambda\in\mathbb{R}_{\ge0}$ the cone is preserved, $\lambda\,C(\
 
 ### Congruence
 
-**Proposition.** Let $\tilde C\in C(\mathbb{B})$ and $\tilde X\in\mathbb{B}$. Then the **congruence** of $\tilde C$ by $\tilde X$,
+**Proposition.** Let $\tilde Q_1\in C(\mathbb{B})$ and $\tilde Q_2\in\mathbb{B}$. Then the **congruence** of $\tilde Q_1$ by $\tilde Q_2$,
 
 $$
-\tilde C\longmapsto\tilde X^{*}\,\tilde C\,\tilde X ,
+\tilde Q_1\longmapsto\tilde Q_2^{*}\,\tilde Q_1\,\tilde Q_2 ,
 $$
 
 is again an element of the cone, so the congruence of every element carries the cone into itself.
 
-**Proof.** This is the invariance of the algebraic positive cone under the congruence, *Hermitian Squares and the Algebraic Positive Cone*, §*Congruence*: it suffices to treat $\tilde C=\tilde Y^{*}\tilde Y$ and to use the associativity of the algebra, $\tilde X^{*}(\tilde Y^{*}\tilde Y)\tilde X=(\tilde Y\tilde X)^{*}(\tilde Y\tilde X)$. The general element is a sum of such.
+**Proof.** This is the invariance of the algebraic positive cone under the congruence, *Hermitian Squares and the Algebraic Positive Cone*, §*Congruence*: it suffices to treat $\tilde Q_1=\tilde Q_3^{*}\tilde Q_3$ and to use the associativity of the algebra, $\tilde Q_2^{*}(\tilde Q_3^{*}\tilde Q_3)\tilde Q_2=(\tilde Q_3\tilde Q_2)^{*}(\tilde Q_3\tilde Q_2)$. The general element is a sum of such.
 
-**Remark.** The congruence is built from the algebra product, not from the multiplication alone, and that is why the proposition needs the associativity of the algebra. It is the algebraic content of the statement that the positive elements stay positive under a change of frame; for an invertible $\tilde X$ the congruence is a bijection of the cone.
+**Remark.** The congruence is built from the algebra product, not from the multiplication alone, and that is why the proposition needs the associativity of the algebra. It is the algebraic content of the statement that the positive elements stay positive under a change of frame; for an invertible $\tilde Q_2$ the congruence is a bijection of the cone.
 
 ### Properness
 
@@ -171,9 +171,9 @@ $$
 C(\mathbb{B})\cap\bigl(-C(\mathbb{B})\bigr)=\{0\} ,
 $$
 
-so the preorder $\tilde X\preceq\tilde Y$ defined by $\tilde Y-\tilde X\in C(\mathbb{B})$ is a partial order.
+so the preorder $\tilde Q_2\preceq\tilde Q_3$ defined by $\tilde Q_3-\tilde Q_2\in C(\mathbb{B})$ is a partial order.
 
-**Proof.** Take the additive map $f=\mathrm{Re}\circ\mathrm{Sc}:\mathbb{B}\to\mathbb{R}$, which is additive because the scalar part is additive and the real part is additive. On a square, $f(\tilde Q\star\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ by §*The Square of an Element*, which is a nonnegative real number and is strictly positive for $\tilde Q\neq0$. The sufficient criterion for properness of *Hermitian Squares and the Algebraic Positive Cone*, §*The Order*, therefore applies with $K=\mathbb{R}$, and gives $C(\mathbb{B})\cap(-C(\mathbb{B}))=\{0\}$ and $f(\tilde c)>0$ for every nonzero $\tilde c\in C(\mathbb{B})$. The preorder is a partial order by the same article.
+**Proof.** Take the additive map $f=\mathrm{Re}\circ\mathrm{Sc}:\mathbb{B}\to\mathbb{R}$, which is additive because the scalar part is additive and the real part is additive. On a square, $f(\tilde Q\star\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ by §*The Square of an Element*, which is a nonnegative real number and is strictly positive for $\tilde Q\neq0$. The sufficient criterion for properness of *Hermitian Squares and the Algebraic Positive Cone*, §*The Order*, therefore applies with $K=\mathbb{R}$, and gives $C(\mathbb{B})\cap(-C(\mathbb{B}))=\{0\}$ and $f(\tilde Q_4)>0$ for every nonzero $\tilde Q_4\in C(\mathbb{B})$. The preorder is a partial order by the same article.
 
 **Remark.** Properness is the point at which the biquaternion cone differs from the cones of the two bilinear products: for the products $\tilde P\tilde Q$ and $\tilde P^{\natural}\tilde Q$ the involution is trivial on the scalars and the cone of the squares is not proper, by the non-proper examples of *Hermitian Squares and the Algebraic Positive Cone*. The conjugation in the involution is exactly what makes the square a sum of modulus squares and the cone proper, and the next section reads the criterion in the coordinates.
 
@@ -260,7 +260,7 @@ $$
 
 ## Summary
 
-The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{M}_+$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde C\mapsto\tilde X^{*}\tilde C\tilde X$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The natural square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
+The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$; it is Hermitian, its scalar part is the sum of the modulus squares of the four coordinates, and it vanishes only at the origin. The sums of the squares form the cone $C(\mathbb{B})$, which contains $0$, is closed under addition, is contained in the Hermitian subspace $\mathbb{M}_+$ whose additive hull it generates, is preserved by the nonnegative real scalars, is invariant under the congruence $\tilde Q_1\mapsto\tilde Q_2^{*}\tilde Q_1\tilde Q_2$, and is proper, so the preorder it defines is a partial order. The cone is the algebraic positive cone of the algebra with the involution ${}^{*}$, the biquaternion instance of *Hermitian Squares and the Algebraic Positive Cone*, and it is proper where the cones of the two bilinear products are not. The natural square $\tilde Q\tilde Q^{\natural}=\bigl(\sum_\mu Q_\mu^{2}\bigr)e_t$ vanishes on the zero divisors, and the square of the multiplication vanishes at the origin alone; the cone is built from the first of the two squares and not the second.
 
 ## Summary of Notation
 
@@ -273,7 +273,7 @@ The square of the sesquilinear multiplication is $\tilde Q\star\tilde Q=\tilde Q
 | $\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the scalar part of the square, nonnegative real |
 | $C(\mathbb{B})=\{\sum_i\tilde Q_i\star\tilde Q_i\}$ | the cone of squares |
 | $Q(\mathbb{C})=\mathbb{R}_{\ge0}$ | the square semiring of the base |
-| $\tilde X\preceq\tilde Y\iff\tilde Y-\tilde X\in C(\mathbb{B})$ | the preorder of the cone |
+| $\tilde Q_2\preceq\tilde Q_3\iff\tilde Q_3-\tilde Q_2\in C(\mathbb{B})$ | the preorder of the cone |
 | $f=\mathrm{Re}\circ\mathrm{Sc}$ | the strict positive functional that proves properness |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian subspaces |
 | $\sum_\mu Q_\mu^{2}$ | the general plain bilinear sum, vanishing on the zero divisors |

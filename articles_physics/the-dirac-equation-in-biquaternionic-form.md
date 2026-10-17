@@ -460,7 +460,7 @@ $$
 the **anti-Hermitian conjugate** $\flat = -{}^{*}$. It is a $\mathbb{C}$-**antilinear** involution, and it is order-reversing with a twist,
 
 $$
-\left(\tilde{A}\tilde{B}\right)^\flat = -\,\tilde{B}^\flat\tilde{A}^\flat ,
+\left(\tilde{A}\tilde{Q}_1\right)^\flat = -\,\tilde{Q}_1^\flat\tilde{A}^\flat ,
 $$
 
 the sign being the only difference from an ordinary anti-automorphism, and it acts by a sign on the two Hermitian sectors,

@@ -6,8 +6,8 @@ The zero divisor of a product is a property of one element alone: it says that *
 partner exists that the element kills. The annihilator says *which* partners those are, and it is
 the finer object. It is the set of elements killed by a fixed element,
 $$
-A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
-B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\},\qquad
+B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\},
 $$
 the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
@@ -38,8 +38,8 @@ zero-divisor set and its coincidence with the other three general products are t
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
 $\star$ are
 $$
-A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
-B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\},\qquad
+B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\}.
 $$
 They are the kernels of the left and the right multiplication, and they are nonzero exactly when
 $\tilde Q$ is a zero divisor of the corresponding side.
@@ -48,10 +48,10 @@ Throughout this article the product is the **general quaternionic sesquimultipli
 and unqualified, *annihilator* means the annihilator of $\star$. The one-sided multiplications are
 the operators
 $$
-L_{\tilde P}\tilde X=\tilde P^{\natural}\tilde X^{*},\qquad
-R_{\tilde P}\tilde X=\tilde X^{\natural}\tilde P^{*},
+L_{\tilde P}\tilde Q_1=\tilde P^{\natural}\tilde Q_1^{*},\qquad
+R_{\tilde P}\tilde Q_1=\tilde Q_1^{\natural}\tilde P^{*},
 $$
-both conjugate-linear in $\tilde X$, with kernel a complex subspace. The block is the sibling of
+both conjugate-linear in $\tilde Q_1$, with kernel a complex subspace. The block is the sibling of
 the general plain sesqualgebra and of the general quaternionic algebra, whose annihilators are
 *Annihilators of the General Plain Sesqualgebra* and *Annihilators of the General Quaternionic
 Algebra*.
@@ -62,15 +62,15 @@ Algebra*.
 
 **Theorem (the left annihilator and the plain annihilator).** For every $\tilde Q$,
 $$
-A_\star(\tilde Q)=\bigl\{\tilde Z^{*}:\tilde Z\in \langle\tilde Q^{\natural}\rangle_{\natural*}\bigr\}=\langle\tilde Q^{\natural}\rangle_{\natural*}^{*},
-\qquad \langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\},
+A_\star(\tilde Q)=\bigl\{\tilde Q_2^{*}:\tilde Q_2\in \langle\tilde Q^{\natural}\rangle_{\natural*}\bigr\}=\langle\tilde Q^{\natural}\rangle_{\natural*}^{*},
+\qquad \langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Q_2:\tilde Q^{\natural}\tilde Q_2=0\},
 $$
 the image under the involution of the plain annihilator of $\tilde Q^{\natural}$. For a nonzero
 element of the cone the left annihilator is of complex dimension two, and off the cone it is
 $\{0\}$.
 
-*Proof.* The element $\tilde X$ lies in $A_\star(\tilde Q)$ exactly when
-$\tilde Q^{\natural}\tilde X^{*}=0$, that is exactly when $\tilde X^{*}$ lies in the plain left
+*Proof.* The element $\tilde Q_1$ lies in $A_\star(\tilde Q)$ exactly when
+$\tilde Q^{\natural}\tilde Q_1^{*}=0$, that is exactly when $\tilde Q_1^{*}$ lies in the plain left
 annihilator of $\tilde Q^{\natural}$; the star is a bijection, so the annihilator is its image. The
 dimension is that of the plain annihilator, two when $\tilde Q^{\natural}$ is a nonzero plain zero
 divisor, which is exactly $C(\tilde Q^{\natural})=C(\tilde Q)=0$, and zero otherwise.
@@ -80,7 +80,7 @@ of the cone the two annihilators $A_\star(\tilde Q)$ and $B_\star(\tilde Q)$ are
 planes.
 
 *Proof.* Both are of complex dimension two on the cone: the first by the preceding theorem, and the
-second is the same computation with $\tilde X^{\natural}\tilde Q^{*}=0$, whose left multiplication
+second is the same computation with $\tilde Q_1^{\natural}\tilde Q^{*}=0$, whose left multiplication
 by $\tilde Q^{*}$ has the same rank as that by $\tilde Q^{\natural}$. They are distinct by the
 examples below, whose second generators differ.
 
@@ -109,7 +109,7 @@ $\tilde P$ are
 | $\tilde P\neq0$, $C(\tilde P)=0$ | $0$ | $2$ | $2$ |
 
 *Proof.* The star is a bijection, so $L_{\tilde P}$ has the same rank and kernel as the
-multiplication $\tilde Z\mapsto\tilde P^{\natural}\tilde Z$ of the general quaternionic algebra,
+multiplication $\tilde Q_2\mapsto\tilde P^{\natural}\tilde Q_2$ of the general quaternionic algebra,
 whose rank is four for a unit of the plain product and two for a nonzero zero divisor.
 
 ## The Dichotomy by the Cone
@@ -128,8 +128,8 @@ two sides by its single involution. In the meeting of the two signs the coincide
 **On the centre the annihilator is $\{0\}$; on the vector subspace a nonzero element has a complex-plane annihilator exactly when its vector part is isotropic; and on the Hermitian and anti-Hermitian subspaces the two annihilators meet in the conjugate of the plain annihilator, the distinction of the sides being read off the anti-Hermitian directions.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_t$ has
-$L_{\lambda e_t}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\tilde X$ with
-$\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
+$L_{\lambda e_t}\tilde Q_1=\lambda\tilde Q_1^{*}$, whose kernel is the set of the $\tilde Q_1$ with
+$\tilde Q_1^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
 annihilator is $\{0\}$.
 
 **The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
@@ -145,7 +145,7 @@ distinction between the sides is read off the anti-Hermitian directions.
 
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. The general
-quaternionic sesquimultiplication $\tilde P\star\tilde X=\tilde P^{\natural}\tilde X^{*}$ carries
+quaternionic sesquimultiplication $\tilde P\star\tilde Q_1=\tilde P^{\natural}\tilde Q_1^{*}$ carries
 both the natural conjugation and the star, and its two annihilators of an element are **distinct**.
 The left annihilator is the star of the plain annihilator of $\tilde P^{\natural}$, and the right
 annihilator is the corresponding object of the other side; both are $\{0\}$ off the cone and
@@ -159,7 +159,7 @@ meeting of the two involution signs is exactly what makes the two sides two agai
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquimultiplication, the operation $\mathrm{GQS}$, the product with both involution signs |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, distinct on the cone |
-| $\langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Z:\tilde Q^{\natural}\tilde Z=0\}$ | the plain left annihilator of $\tilde Q^{\natural}$, whose star is the left annihilator of the block |
+| $\langle\tilde Q^{\natural}\rangle_{\natural*}=\{\tilde Q_2:\tilde Q^{\natural}\tilde Q_2=0\}$ | the plain left annihilator of $\tilde Q^{\natural}$, whose star is the left annihilator of the block |
 | $\langle\tilde Q^{\natural}\rangle_{\natural*}^{*}$ | the left annihilator of the block, the star of the plain annihilator |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the criterion of the cone |
 | the two complex planes on the cone | the two annihilators of a nonzero zero divisor, distinct |

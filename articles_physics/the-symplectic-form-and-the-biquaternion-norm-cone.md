@@ -74,7 +74,7 @@ $$
 +i\bigl(\vec q\cdot\vec s-\vec p\cdot\vec r\bigr).\;}
 $$
 
-The real part is the Euclidean pairing of the two phase-space points, and the imaginary part is an antisymmetric pairing. Both statements follow from $\mathrm{Sc}(\tilde a\tilde b)=-\vec a\cdot\vec b$ for pure real quaternions, applied term by term.
+The real part is the Euclidean pairing of the two phase-space points, and the imaginary part is an antisymmetric pairing. Both statements follow from $\mathrm{Sc}(\tilde q_1\tilde q_2)=-\vec q_1\cdot\vec q_2$ for pure real quaternions, applied term by term.
 
 ### The Metric and the Symplectic Form
 

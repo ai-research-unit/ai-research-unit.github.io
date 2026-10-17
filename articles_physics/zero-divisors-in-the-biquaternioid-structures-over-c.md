@@ -8,8 +8,8 @@ with *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{
 product cannot invert, and the physical question is what that set means in each of the twelve structures.
 
 A **zero divisor** of a product is a nonzero element $\tilde Q$ that annihilates some nonzero element: there
-is a nonzero $\tilde X$ with $\tilde Q\cdot\tilde X=0$ (a left zero divisor), or with
-$\tilde X\cdot\tilde Q=0$ (a right zero divisor). An element is a zero divisor exactly when it has no inverse
+is a nonzero $\tilde Q_1$ with $\tilde Q\cdot\tilde Q_1=0$ (a left zero divisor), or with
+$\tilde Q_1\cdot\tilde Q=0$ (a right zero divisor). An element is a zero divisor exactly when it has no inverse
 in the product. Physically, a zero divisor is an operation that sends a nonzero object to zero: it is not
 invertible, nothing can undo it, and it marks a direction in which composition degenerates.
 
@@ -151,7 +151,7 @@ twelve readings in one place.
 
 The product is the plain product $\tilde P\tilde Q$, and its zero-divisor set is the punctured cone
 $\mathcal{C}\setminus\{0\}$. Off the cone the norm does not vanish and the acting map
-$L_{\tilde P}:\tilde X\mapsto\tilde P\tilde X$ is invertible, with the two-sided inverse
+$L_{\tilde P}:\tilde Q_1\mapsto\tilde P\tilde Q_1$ is invertible, with the two-sided inverse
 $\tilde P^{\natural}/\langle\tilde P\rangle_{\natural}$; on the cone the map drops rank and destroys its argument. The physical
 statement is that the composition of operations degenerates exactly on the light cone, so the cone is at
 once the locus of lightlike propagation and the boundary between the reversible and the irreversible

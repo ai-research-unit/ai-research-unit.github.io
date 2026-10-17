@@ -48,9 +48,9 @@ nonzero at $[\vec e_x,e_t,e_t] = 2\vec e_x$ and at $24$ of the $64$ basis triple
 
 ## The Two One-Sided Actions
 
-**Theorem (the left action).** The left multiplications $L_{\tilde p}(\tilde x) = \tilde p \star \tilde x = \tilde p^{\natural}\tilde x$ satisfy $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$, so the family $\{L_{\tilde p}\}$ is closed under composition and is a monoid isomorphic to the opposite algebra $\mathbb{H}^{\mathrm{opp}}$; the assignment $\tilde p \mapsto L_{\tilde p}$ is injective.
+**Theorem (the left action).** The left multiplications $L_{\tilde p}(\tilde q_4) = \tilde p \star \tilde q_4 = \tilde p^{\natural}\tilde q_4$ satisfy $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$, so the family $\{L_{\tilde p}\}$ is closed under composition and is a monoid isomorphic to the opposite algebra $\mathbb{H}^{\mathrm{opp}}$; the assignment $\tilde p \mapsto L_{\tilde p}$ is injective.
 
-**Theorem (the right side).** The honest right multiplications $\tilde x \mapsto \tilde x \star \tilde p$ do **not** close under composition. The twisted right multiplications $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ do close, with the direct law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$, so that $\{\varrho_{\tilde p}\} \cong \mathbb{H}$ on the right; the two families do not commute in general.
+**Theorem (the right side).** The honest right multiplications $\tilde q_4 \mapsto \tilde q_4 \star \tilde p$ do **not** close under composition. The twisted right multiplications $\varrho_{\tilde p}(\tilde q_4) = \tilde q_4\tilde p^{\natural}$ do close, with the direct law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$, so that $\{\varrho_{\tilde p}\} \cong \mathbb{H}$ on the right; the two families do not commute in general.
 
 *Proof.* All three statements are computed in *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*, below this article in this category, and again by the operator articles of the block (*One-Sided Operators on the General Quaternionic Algebra*, below this article in this category). The reason for the asymmetry is the same as the reason for the missing right unit: the conjugation sits in the first slot, so a product read from the right conjugates the wrong factor.
 
@@ -99,8 +99,8 @@ The general quaternionic algebra is left-unital and not unital; its product is n
 | $\tilde q_1 \star \tilde q_2 = \tilde q_1^{\natural}\tilde q_2$ | the general quaternionic bilinear product |
 | $e_t$ | the left unit, and not a right one |
 | $[\tilde q_1,\tilde q_2,\tilde q_3]$ | the associator |
-| $L_{\tilde p}(\tilde x) = \tilde p^{\natural}\tilde x$ | the left multiplication, law $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$ |
-| $\varrho_{\tilde p}(\tilde x) = \tilde x\tilde p^{\natural}$ | the twisted right multiplication, law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$ |
+| $L_{\tilde p}(\tilde q_4) = \tilde p^{\natural}\tilde q_4$ | the left multiplication, law $L_{\tilde p}L_{\tilde q} = L_{\tilde q\tilde p}$ |
+| $\varrho_{\tilde p}(\tilde q_4) = \tilde q_4\tilde p^{\natural}$ | the twisted right multiplication, law $\varrho_{\tilde p}\varrho_{\tilde q} = \varrho_{\tilde p\tilde q}$ |
 | $\tilde\pi$ | an idempotent, here $0$ or $e_t$ |
 | $\natural$ | the conjugation, fixing the scalar line and negating the vector subspace |
 

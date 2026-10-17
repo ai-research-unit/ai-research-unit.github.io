@@ -192,7 +192,7 @@ The plain idempotents are thus carried by the product into its nilpotent cone, a
 
 On the operator side the idempotents of the algebra recover their usual role, with the index conjugated.
 
-**Theorem (the projector criterion).** The left multiplication $L_{\tilde P}(\tilde X)=\tilde P\star\tilde X$ is a projector, $L_{\tilde P}^{2}=L_{\tilde P}$, if and only if $\tilde P$ is an idempotent of the plain product. Consequently the product has a family of projectors of complex dimension two, indexed by the plain idempotents, while its own idempotents are $0$ and $e_t$ alone.
+**Theorem (the projector criterion).** The left multiplication $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ is a projector, $L_{\tilde P}^{2}=L_{\tilde P}$, if and only if $\tilde P$ is an idempotent of the plain product. Consequently the product has a family of projectors of complex dimension two, indexed by the plain idempotents, while its own idempotents are $0$ and $e_t$ alone.
 
 **Proof.** $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ by the isotope identity, and the plain left multiplications are faithful; so $L_{\tilde P}^{2}=L_{\tilde P}$ exactly when $(\tilde P^{\natural})^2=\tilde P^{\natural}$, that is when $\tilde P$ is a plain idempotent. The family is the plain family of complex dimension two. The theorem and the monoid law $L_{\tilde P}L_{\tilde R}=L_{\tilde R\tilde P}$ are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*.
 
@@ -271,7 +271,7 @@ In the general quaternionic bilinear product the square of every element is the 
 | $\tilde\Xi$ | the imaginary vector roots of $-1$ |
 | $\tilde\Pi$ | an idempotent of the product; the nonzero ones are $e_t$ alone |
 | $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_t+\tilde\Xi)$ | the Hermitian idempotent over a real unit vector $\vec u$ |
-| $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X$, a projector iff $\tilde P$ is a plain idempotent |
+| $L_{\tilde P}$ | the left multiplication $\tilde Q_1\mapsto\tilde P\star\tilde Q_1$, a projector iff $\tilde P$ is a plain idempotent |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_{+},\mathbb{M}_{-}$ | the remarkable subspaces |
 
 ## Further Reading

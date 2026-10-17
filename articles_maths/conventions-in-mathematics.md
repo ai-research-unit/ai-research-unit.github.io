@@ -430,11 +430,11 @@ Outside them the letter keeps a single shape for a single meaning, and the font 
 
 | Operator | Glyph |
 |---|---|
-| left multiplication | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ |
-| right multiplication | $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ |
-| two-sided | $L_{\tilde A}R_{\tilde B}(\tilde X)=\tilde A\tilde X\tilde B$ |
+| left multiplication | $L_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1$ |
+| right multiplication | $R_{\tilde Q}(\tilde Q_1)=\tilde Q_1\tilde Q$ |
+| two-sided | $L_{\tilde A}R_{\tilde Q_2}(\tilde Q_1)=\tilde A\tilde Q_1\tilde Q_2$ |
 | sandwich | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}=\operatorname{H}_{\tilde Q}$ |
-| inner derivation | $\operatorname{ad}_{\tilde A}(\tilde X)=[\tilde A,\tilde X]$ |
+| inner derivation | $\operatorname{ad}_{\tilde A}(\tilde Q_1)=[\tilde A,\tilde Q_1]$ |
 | automorphism | $\operatorname{Ad}_{\tilde A}$ |
 
 The tilde sits in the subscript because it belongs to the element, not to the operator: $L_{\tilde Q}$ is an operator, $\tilde Q$ is the element that generates it.

@@ -7,10 +7,10 @@ Of the twelve operations of the corpus the block is the one whose value is the c
 **the value of the block is orthogonal to its own second argument in the Krein form,**
 
 $$
-\langle\tilde X\diamond\tilde Y,\tilde Y\rangle_{\natural*}=0 \qquad\text{for all }\tilde X,\tilde Y ,
+\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0 \qquad\text{for all }\tilde Q_1,\tilde Q_2 ,
 $$
 
-with $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ the Krein form of the row. The law holds for the block and for no other of the twelve; it is equivalent to the statement that the form induced by the left multiplication, $\beta_{\tilde X}(\tilde Y,\tilde Z)=\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}$, is alternating, and to the statement that the conjugate-linear left multiplication is skew-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$; and it is the source of the element theory of the block, since the absence of the unit, the emptiness of the roots of the central values, the absence of the nontrivial idempotents and the index of the nilpotents are all derived from it in one line each.
+with $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ the Krein form of the row. The law holds for the block and for no other of the twelve; it is equivalent to the statement that the form induced by the left multiplication, $\beta_{\tilde Q_1}(\tilde Q_2,\tilde Q_3)=\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}$, is alternating, and to the statement that the conjugate-linear left multiplication is skew-adjoint for $\langle\cdot,\cdot\rangle_{\natural*}$; and it is the source of the element theory of the block, since the absence of the unit, the emptiness of the roots of the central values, the absence of the nontrivial idempotents and the index of the nilpotents are all derived from it in one line each.
 
 The criterion is different in kind from the one of the model block. For the plain algebra the discriminating law is the left alternativity of the product, a law of the multiplication alone; for the block the discriminating law is a law of the multiplication against the form, and no law of the multiplication alone separates it from the symmetric half of its own row, as the isolation below shows. The block is therefore the member of the twelve whose specificity is form-theoretic, and this is the reason the article is the last of the block: it collects the law, isolates the block among the twelve, and points to the element theory the law governs.
 
@@ -30,64 +30,64 @@ The **induced form** of $\star$ by $\beta$ at an element $x$ is the form $\beta_
 
 **Definition (alternating form).** A form $\gamma$ in two arguments is **alternating** when $\gamma(y,y)=0$ for every $y$; when $\gamma$ is conjugate-linear in both arguments this is equivalent to the antisymmetry $\gamma(y,z)+\gamma(z,y)=0$.
 
-The law is read for the block with the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and with the induced forms $K_{\tilde X}(\tilde Y,\tilde Z)=\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}$. The form $\langle\cdot,\cdot\rangle_{\natural*}$ is conjugate-linear in its second argument and the block is conjugate-linear in its second slot, so the induced form is conjugate-linear in each of its two arguments, and the alternating condition for it is the antisymmetry with no conjugation, as in the second definition.
+The law is read for the block with the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ and with the induced forms $K_{\tilde Q_1}(\tilde Q_2,\tilde Q_3)=\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}$. The form $\langle\cdot,\cdot\rangle_{\natural*}$ is conjugate-linear in its second argument and the block is conjugate-linear in its second slot, so the induced form is conjugate-linear in each of its two arguments, and the alternating condition for it is the antisymmetry with no conjugation, as in the second definition.
 
 ## The Law of the Block
 
 **Theorem (the block is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its second argument).** For all biquaternions,
 
 $$
-\langle\tilde X\diamond\tilde Y,\tilde Y\rangle_{\natural*}=0 .
+\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0 .
 $$
 
-*Proof.* By the rule of the block, $\tilde X\diamond\tilde Y=\vec X\times\overline{\vec Y}$ is a pure vector, so its scalar coordinate is zero and the pairing reads $\langle\tilde X\diamond\tilde Y,\tilde Y\rangle_{\natural*}=-(\vec X\times\overline{\vec Y},\overline{\vec Y})$, the complex bilinear dot product of the value with the conjugate of the vector part of the second argument. The cross product is orthogonal to its second entry in the bilinear dot, $(\vec a\times\vec b,\vec b)=0$ for all $\vec a,\vec b$, and the identity with $\vec a=\vec X$ and $\vec b=\overline{\vec Y}$ gives the vanishing.
+*Proof.* By the rule of the block, $\tilde Q_1\diamond\tilde Q_2=\vec Q_1\times\overline{\vec Q_2}$ is a pure vector, so its scalar coordinate is zero and the pairing reads $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=-(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_2})$, the complex bilinear dot product of the value with the conjugate of the vector part of the second argument. The cross product is orthogonal to its second entry in the bilinear dot, $(\vec a\times\vec b,\vec b)=0$ for all $\vec a,\vec b$, and the identity with $\vec a=\vec Q_1$ and $\vec b=\overline{\vec Q_2}$ gives the vanishing.
 
 **Corollary (the induced form is alternating).** For all biquaternions,
 
 $$
-\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}+\langle\tilde X\diamond\tilde Z,\tilde Y\rangle_{\natural*}=0 ,
+\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}+\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}=0 ,
 $$
 
 that is, the form induced by the block at each element is alternating; equivalently,
 
 $$
-\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}=-\langle\tilde X\diamond\tilde Z,\tilde Y\rangle_{\natural*}.
+\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}=-\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}.
 $$
 
-*Proof.* The identity follows from the law by the expansion of the diagonal of the induced form: the form $K_{\tilde X}$ is conjugate-linear in each argument, so $K_{\tilde X}(\tilde Y+\tilde Z,\tilde Y+\tilde Z)$ expands into the four terms and the two diagonal terms vanish by the law, leaving $K_{\tilde X}(\tilde Y,\tilde Z)+K_{\tilde X}(\tilde Z,\tilde Y)=0$.
+*Proof.* The identity follows from the law by the expansion of the diagonal of the induced form: the form $K_{\tilde Q_1}$ is conjugate-linear in each argument, so $K_{\tilde Q_1}(\tilde Q_2+\tilde Q_3,\tilde Q_2+\tilde Q_3)$ expands into the four terms and the two diagonal terms vanish by the law, leaving $K_{\tilde Q_1}(\tilde Q_2,\tilde Q_3)+K_{\tilde Q_1}(\tilde Q_3,\tilde Q_2)=0$.
 
-**Corollary (the left multiplication is skew-adjoint).** For every $\tilde X$ the conjugate-linear left multiplication $L_{\tilde X}$ of the block satisfies
+**Corollary (the left multiplication is skew-adjoint).** For every $\tilde Q_1$ the conjugate-linear left multiplication $L_{\tilde Q_1}$ of the block satisfies
 
 $$
-L_{\tilde X}^{\dagger}=-L_{\tilde X}
+L_{\tilde Q_1}^{\dagger}=-L_{\tilde Q_1}
 $$
 
 for the adjoint with respect to the Krein form: the left multiplication is the negative of its own adjoint.
 
-*Proof.* The adjoint of a conjugate-linear map $T$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is defined by the identity $\langle T\tilde Y,\tilde Z\rangle_{\natural*}=\overline{\langle\tilde Y,T^{\dagger}\tilde Z\rangle_{\natural*}}$ in the conjugate-linear class, as *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* records. With $T=L_{\tilde X}$ and $T^{\dagger}=-L_{\tilde X}$ the identity reads $\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}=-\overline{\langle\tilde Y,\tilde X\diamond\tilde Z\rangle_{\natural*}}$, and the pairing is conjugate-symmetric, $\langle\tilde Y,\tilde W\rangle_{\natural*}=\overline{\langle\tilde W,\tilde Y\rangle_{\natural*}}$, so the right-hand side is $-\langle\tilde X\diamond\tilde Z,\tilde Y\rangle_{\natural*}$, which is the alternating identity of the corollary above. The reading of the adjoints and the class of the definition are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, where the adjoint of the left multiplication is computed and is the negative of the operator.
+*Proof.* The adjoint of a conjugate-linear map $T$ with respect to $\langle\cdot,\cdot\rangle_{\natural*}$ is defined by the identity $\langle T\tilde Q_2,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_2,T^{\dagger}\tilde Q_3\rangle_{\natural*}}$ in the conjugate-linear class, as *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* records. With $T=L_{\tilde Q_1}$ and $T^{\dagger}=-L_{\tilde Q_1}$ the identity reads $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}=-\overline{\langle\tilde Q_2,\tilde Q_1\diamond\tilde Q_3\rangle_{\natural*}}$, and the pairing is conjugate-symmetric, $\langle\tilde Q_2,\tilde W\rangle_{\natural*}=\overline{\langle\tilde W,\tilde Q_2\rangle_{\natural*}}$, so the right-hand side is $-\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}$, which is the alternating identity of the corollary above. The reading of the adjoints and the class of the definition are *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra*, where the adjoint of the left multiplication is computed and is the negative of the operator.
 
 **Remark (the law is the perpendicularity of the cross product).** The law is not an accident of the choice of the form: it is the classical statement that the cross product of two vectors is perpendicular to each of them, read through the form of the row. In the bilinear reading the cross product is orthogonal to both entries of the bilinear dot, and the second of the two orthogonality statements is the one that the pairing of the block carries, the conjugation of the second slot of the block and the conjugation of the second slot of the form matching so that the scalar coordinate of the value drops out. The block is thus the member of the twelve in which the geometric content of the cross product survives the transfer to the sesquilinear class, and the law is the whole of that survival.
 
 ## The Isolation among the Twelve
 
-**Theorem (no other product of the twelve satisfies the law).** For each of the eleven products $\star\neq\diamond$ there are biquaternions $\tilde X,\tilde Y$ with
+**Theorem (no other product of the twelve satisfies the law).** For each of the eleven products $\star\neq\diamond$ there are biquaternions $\tilde Q_1,\tilde Q_2$ with
 
 $$
-\langle\tilde X\star\tilde Y,\tilde Y\rangle_{\natural*}\neq0 .
+\langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}\neq0 .
 $$
 
 *Proof.* The witnesses are in the table, one entry per family; each is verified by the computation of the product and of the pairing, and the failure is genuine, that is the pairing is not zero and not merely undefined.
 
-| family | $\langle\tilde X\star\tilde Y,\tilde Y\rangle_{\natural*}$ | the witness |
+| family | $\langle\tilde Q_1\star\tilde Q_2,\tilde Q_2\rangle_{\natural*}$ | the witness |
 |---|---|---|
-| GPA | $2i$ | $\tilde X=\vec e_x$, $\tilde Y=\vec e_y+i\vec e_z$ |
-| GQA | $2i$ | $\tilde X=\vec e_y$, $\tilde Y=\vec e_x+i\vec e_z$ |
-| APA | $-2i$ | $\tilde X=\vec e_y$, $\tilde Y=\vec e_x+i\vec e_z$ |
-| AQA | $2i$ | $\tilde X=\vec e_y$, $\tilde Y=\vec e_x+i\vec e_z$ |
-| SPA | $-2$ | $\tilde X=\vec e_x$, $\tilde Y=e_t+\vec e_x$ |
-| SQA, SPS | $1$ | $\tilde X=\vec e_x$, $\tilde Y=e_t+\vec e_x$ |
-| APS | $-1$ | $\tilde X=\vec e_x$, $\tilde Y=e_t+\vec e_x$ |
-| GPS, GQS, SQS | $1$ | $\tilde X=e_t$, $\tilde Y=\vec e_x$ |
+| GPA | $2i$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ |
+| GQA | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| APA | $-2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| AQA | $2i$ | $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ |
+| SPA | $-2$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| SQA, SPS | $1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| APS | $-1$ | $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ |
+| GPS, GQS, SQS | $1$ | $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ |
 | **AQS** | $0$ at every pair | the law holds |
 
 The eleven failures separate by where the failure enters. Four fail already on the vector subspace: the two products of the bilinear rows, $\mathrm{GPA}$ and $\mathrm{GQA}$, whose second slot is not conjugated, together with their antisymmetric parts $\mathrm{APA}$ and $\mathrm{AQA}$. For these four the value on two pure vectors carries the cross product $\vec P\times\vec Q$ **without** the conjugation of the second argument, while the pairing is read against the conjugate of that argument, so the orthogonality of the cross product is not the orthogonality the form asks for. The other seven fail only off the vector subspace, at pairs in which at least one argument has a nonzero scalar coordinate: the four symmetric halves, whose value on two pure vectors is central, and the antisymmetric plain sesqualgebra $\mathrm{APS}$ with the two general sesquilinear products $\mathrm{GPS}$ and $\mathrm{GQS}$, whose value on two pure vectors is carried by the conjugate cross product. The block is the one product whose value is the cross product with the conjugate of the second argument, and the conjugation of the second slot of the block and the conjugation of the second slot of the form act in the same direction on the same entry.
@@ -98,13 +98,13 @@ The eleven failures separate by where the failure enters. Four fail already on t
 
 The law is the source of the element theory of the block, and the four deliveries below are one line each; each is computed in its own article.
 
-**No unit.** Suppose the block had a left unit $e$, so that $e\diamond\tilde X=\tilde X$ for every $\tilde X$. The law reads $\langle e\diamond\tilde X,\tilde X\rangle_{\natural*}=\langle\tilde X,\tilde X\rangle_{\natural*}=0$ for every $\tilde X$, so every element would be isotropic for $\langle\cdot,\cdot\rangle_{\natural*}$; but $\langle e_t,e_t\rangle_{\natural*}=1$, the unit of the parent algebra lying on the positive definite row of the form. The block has no left unit, and by the mirror reading no right unit. The element theory is *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*.
+**No unit.** Suppose the block had a left unit $e$, so that $e\diamond\tilde Q_1=\tilde Q_1$ for every $\tilde Q_1$. The law reads $\langle e\diamond\tilde Q_1,\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_1\rangle_{\natural*}=0$ for every $\tilde Q_1$, so every element would be isotropic for $\langle\cdot,\cdot\rangle_{\natural*}$; but $\langle e_t,e_t\rangle_{\natural*}=1$, the unit of the parent algebra lying on the positive definite row of the form. The block has no left unit, and by the mirror reading no right unit. The element theory is *Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra*.
 
-**No root of a nonzero central value.** Suppose $\tilde X\diamond\tilde X=\lambda e_t$ with $\lambda\neq0$. The law with the pair $(\tilde X,\tilde X)$ reads $\langle\lambda e_t,\tilde X\rangle_{\natural*}=\lambda\overline{X_t}=0$, so $X_t=0$; the square of an element with vanishing scalar coordinate is a pure vector, and it cannot be the nonzero central element $\lambda e_t$. The roots of $+1$, of $-1$ and of every nonzero central value are empty, and the roots of $0$ are the cone of the diagonal. The three equations are *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*.
+**No root of a nonzero central value.** Suppose $\tilde Q_1\diamond\tilde Q_1=\lambda e_t$ with $\lambda\neq0$. The law with the pair $(\tilde Q_1,\tilde Q_1)$ reads $\langle\lambda e_t,\tilde Q_1\rangle_{\natural*}=\lambda\overline{Q_{1t}}=0$, so $Q_{1t}=0$; the square of an element with vanishing scalar coordinate is a pure vector, and it cannot be the nonzero central element $\lambda e_t$. The roots of $+1$, of $-1$ and of every nonzero central value are empty, and the roots of $0$ are the cone of the diagonal. The three equations are *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Sesqualgebra*.
 
-**No nontrivial idempotent.** Suppose $\tilde X\diamond\tilde X=\tilde X$ with $\tilde X\neq0$. The law with the pair $(\tilde X,\tilde X)$ reads $\langle\tilde X,\tilde X\rangle_{\natural*}=0$, so $\tilde X$ is isotropic for $\langle\cdot,\cdot\rangle_{\natural*}$; and $\tilde X$ is a value of the block, so $X_t=0$, and the isotropy of a pure vector reads $-(\vec X,\overline{\vec X})=0$, that is the vanishing of the non-negative real sum $\sum_\mu\lvert X_\mu\rvert^{2}$, which gives $\vec X=0$. The only idempotent of the block is the origin. The idempotent set and the absent projector calculus are *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*.
+**No nontrivial idempotent.** Suppose $\tilde Q_1\diamond\tilde Q_1=\tilde Q_1$ with $\tilde Q_1\neq0$. The law with the pair $(\tilde Q_1,\tilde Q_1)$ reads $\langle\tilde Q_1,\tilde Q_1\rangle_{\natural*}=0$, so $\tilde Q_1$ is isotropic for $\langle\cdot,\cdot\rangle_{\natural*}$; and $\tilde Q_1$ is a value of the block, so $Q_{1t}=0$, and the isotropy of a pure vector reads $-(\vec Q_1,\overline{\vec Q_1})=0$, that is the vanishing of the non-negative real sum $\sum_\mu\lvert Q_{1\mu}\rvert^{2}$, which gives $\vec Q_1=0$. The only idempotent of the block is the origin. The idempotent set and the absent projector calculus are *Idempotents of the Antisymmetric Quaternionic Sesqualgebra*.
 
-**The index of the nilpotents is two or four.** The law written on the vector subspace is the orthogonality $(\vec X\times\overline{\vec Y},\overline{\vec Y})=0$ of the value to the conjugate of the second argument, and it is the identity that closes the recurrence of the left-nested powers of the block, $\vec q_{k+2}=-\overline{c}\,\vec q_k$ from the second power on, out of which the index two and the index four follow. The two classes and the recurrence are *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*.
+**The index of the nilpotents is two or four.** The law written on the vector subspace is the orthogonality $(\vec Q_1\times\overline{\vec Q_2},\overline{\vec Q_2})=0$ of the value to the conjugate of the second argument, and it is the identity that closes the recurrence of the left-nested powers of the block, $\vec q_{k+2}=-\overline{c}\,\vec q_k$ from the second power on, out of which the index two and the index four follow. The two classes and the recurrence are *Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*.
 
 **Remark (the law and the zero divisors).** One delivery of the element theory is not a consequence of the law: the fact that every nonzero element of the block is a two-sided zero divisor, with the annihilation pair $(\tilde A,\overline{\tilde A})$, is the reading of the rule and not of the law against the form. The law delivers the information on the diagonal of the multiplication, and the zero divisors are read on the off-diagonal pair of the element with its conjugate; the two are compared in *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, and the comparison is the reason the article is not a corollary of this one.
 
@@ -118,22 +118,22 @@ The law is the source of the element theory of the block, and the four deliverie
 
 ## Summary
 
-The block is the product of the twelve that is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its own second argument: $\langle\tilde X\diamond\tilde Y,\tilde Y\rangle_{\natural*}=0$ for all biquaternions, with $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein form of the row. The law is equivalent to the alternating character of the induced form $K_{\tilde X}(\tilde Y,\tilde Z)=\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}$ and to the skew-adjointness of the conjugate-linear left multiplication, $L_{\tilde X}^{\dagger}=-L_{\tilde X}$; it is the classical perpendicularity of the cross product transferred to the sesquilinear class; and it is satisfied by no other of the twelve, each of the other eleven failing on a witness. The law restricted to the pairs of pure vectors holds for eight of the twelve, so the criterion is the law on the whole space. The law delivers the element theory of the block: no unit, since a unit would make every element isotropic for a form that is positive at $e_t$; no root of a nonzero central value; no nontrivial idempotent, the isotropy together with the purity forcing the origin; and the index of the nilpotents at two and at four, through the recurrence of the left-nested powers. The zero-divisor set of the block is read from the rule and not from the law, and the criterion is form-theoretic, which is what separates the block from the symmetric half of its own row and makes the article the last of the block.
+The block is the product of the twelve that is $\langle\cdot,\cdot\rangle_{\natural*}$-orthogonal to its own second argument: $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0$ for all biquaternions, with $\langle\cdot,\cdot\rangle_{\natural*}$ the Krein form of the row. The law is equivalent to the alternating character of the induced form $K_{\tilde Q_1}(\tilde Q_2,\tilde Q_3)=\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}$ and to the skew-adjointness of the conjugate-linear left multiplication, $L_{\tilde Q_1}^{\dagger}=-L_{\tilde Q_1}$; it is the classical perpendicularity of the cross product transferred to the sesquilinear class; and it is satisfied by no other of the twelve, each of the other eleven failing on a witness. The law restricted to the pairs of pure vectors holds for eight of the twelve, so the criterion is the law on the whole space. The law delivers the element theory of the block: no unit, since a unit would make every element isotropic for a form that is positive at $e_t$; no root of a nonzero central value; no nontrivial idempotent, the isotropy together with the purity forcing the origin; and the index of the nilpotents at two and at four, through the recurrence of the left-nested powers. The zero-divisor set of the block is read from the rule and not from the law, and the criterion is form-theoretic, which is what separates the block from the symmetric half of its own row and makes the article the last of the block.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, linear in the first argument |
-| $\langle\tilde X\diamond\tilde Y,\tilde Y\rangle_{\natural*}=0$ | the law of the block |
-| $K_{\tilde X}(\tilde Y,\tilde Z)=\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}$ | the induced form at an element |
-| $\langle\tilde X\diamond\tilde Y,\tilde Z\rangle_{\natural*}=-\langle\tilde X\diamond\tilde Z,\tilde Y\rangle_{\natural*}$ | the alternating character of the induced form |
-| $L_{\tilde X}^{\dagger}=-L_{\tilde X}$ | the skew-adjointness of the left multiplication |
+| $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_2\rangle_{\natural*}=0$ | the law of the block |
+| $K_{\tilde Q_1}(\tilde Q_2,\tilde Q_3)=\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}$ | the induced form at an element |
+| $\langle\tilde Q_1\diamond\tilde Q_2,\tilde Q_3\rangle_{\natural*}=-\langle\tilde Q_1\diamond\tilde Q_3,\tilde Q_2\rangle_{\natural*}$ | the alternating character of the induced form |
+| $L_{\tilde Q_1}^{\dagger}=-L_{\tilde Q_1}$ | the skew-adjointness of the left multiplication |
 | $(\vec A,\vec B)=\sum_\mu A_\mu B_\mu$ | the complex bilinear dot product |
-| $\tilde X=\vec e_x$, $\tilde Y=\vec e_y+i\vec e_z$ | the witness for GPA |
-| $\tilde X=\vec e_y$, $\tilde Y=\vec e_x+i\vec e_z$ | the witness for GQA, APA and AQA |
-| $\tilde X=\vec e_x$, $\tilde Y=e_t+\vec e_x$ | the witness for SPA, SQA, SPS and APS |
-| $\tilde X=e_t$, $\tilde Y=\vec e_x$ | the witness for GPS, GQS and SQS |
+| $\tilde Q_1=\vec e_x$, $\tilde Q_2=\vec e_y+i\vec e_z$ | the witness for GPA |
+| $\tilde Q_1=\vec e_y$, $\tilde Q_2=\vec e_x+i\vec e_z$ | the witness for GQA, APA and AQA |
+| $\tilde Q_1=\vec e_x$, $\tilde Q_2=e_t+\vec e_x$ | the witness for SPA, SQA, SPS and APS |
+| $\tilde Q_1=e_t$, $\tilde Q_2=\vec e_x$ | the witness for GPS, GQS and SQS |
 
 ## Further Reading
 

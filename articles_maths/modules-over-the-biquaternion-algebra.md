@@ -40,7 +40,7 @@ the multiplication of the algebra itself.
 **Definition.** The left action and the right action of $\mathbb{B}$ on $(\mathbb{B},+)$, taken together, make it a **bimodule** ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$. The two actions commute,
 
 $$
-\tilde A(\tilde Q\tilde B)=(\tilde A\tilde Q)\tilde B \qquad (\tilde A,\tilde B,\tilde Q\in\mathbb{B}),
+\tilde A(\tilde Q\tilde Q_4)=(\tilde A\tilde Q)\tilde Q_4 \qquad (\tilde A,\tilde Q_4,\tilde Q\in\mathbb{B}),
 $$
 
 which is the associativity of $\mathbb{B}$ once more: the two scalar multiplications of the bimodule are the two readings of one product.
@@ -95,7 +95,7 @@ $$
 
 given by $m\otimes\tilde Q\mapsto m\tilde Q$ and $\tilde Q\otimes m\mapsto \tilde Q m$, with $m$ an element of the module in each case. For bimodules the same elements are the two-sided identity, ${}_{S}M_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\cong{}_{S}M_{\mathbb{B}}$ and ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}\otimes_{\mathbb{B}}{}_{\mathbb{B}}N_{T}\cong{}_{\mathbb{B}}N_{T}$, naturally in the outer module.
 
-**Proof.** The map $m\otimes\tilde Q\mapsto m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(m\tilde A)\otimes\tilde B$ and $m\otimes(\tilde A\tilde B)$ both go to $m(\tilde A\tilde B)=(m\tilde A)\tilde B$. Its inverse is $m\mapsto m\otimes e_t$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
+**Proof.** The map $m\otimes\tilde Q\mapsto m\tilde Q$ is well defined because the assignment is $\mathbb{B}$-balanced: it is additive in each variable, and $(m\tilde A)\otimes\tilde Q_4$ and $m\otimes(\tilde A\tilde Q_4)$ both go to $m(\tilde A\tilde Q_4)=(m\tilde A)\tilde Q_4$. Its inverse is $m\mapsto m\otimes e_t$, and uniqueness is the universal property of *The Balanced Product*. The left-handed statement is the mirror, and the bimodule statements follow by carrying the outer actions through both maps.
 
 **Remark (the categorical reading).** The isomorphisms above say that ${}_{\mathbb{B}}\mathbb{B}_{\mathbb{B}}$ is the unit of the tensor product of bimodules: tensoring a bimodule with the regular bimodule on either side returns it. This is the module-level form of the fact that the tensor product is a monoidal structure whose unit is the base object, and its categorical statement belongs to the general theory of module categories.
 

@@ -53,7 +53,7 @@ $$
 $$
 The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
-**The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde{A},\tilde{B}\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde{A}\tilde{B})=\mathrm{Sc}(\tilde{B}\tilde{A})$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
+**The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde{A},\tilde{Q}_1\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde{A}\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde{A})$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
 
 **The scope of the theorem.** The same argument applies in every finite-dimensional module of $\mathbb{B}$, since the trace there is cyclic as well. The obstruction is therefore not a quirk of the algebra's particular dimension. It is a statement about every finite-dimensional carrier: the relation cannot be assembled from finitely many levels.
 
@@ -157,7 +157,7 @@ The claim must not be overread, and the following are not asserted.
 | Item | Status |
 |---|---|
 | $[\tilde{Q},\tilde{P}]=\lambda\,i\,e_t$ with $\tilde{Q},\tilde{P}\in\mathbb{M}_+$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{Q},\tilde{P}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
-| Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde{A}\tilde{B})=\mathrm{Sc}(\tilde{B}\tilde{A})$ |
+| Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde{A}\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde{A})$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | $\mathbb{M}_+$ as an observable algebra | Hermitian $2\times2$ matrices, real dimension four; observables of one two-state system |
 | Position operator inside $\mathbb{B}$ | None; $\mathbb{B}$ has no element of continuous spectrum |

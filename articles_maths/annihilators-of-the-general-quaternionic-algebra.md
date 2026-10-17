@@ -6,8 +6,8 @@ The zero divisor of a product is a property of one element alone: it says that *
 partner exists that the element kills. The annihilator says *which* partners those are, and it is
 the finer object. It is the set of elements killed by a fixed element,
 $$
-A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
-B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\},\qquad
+B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\},
 $$
 the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
@@ -22,8 +22,8 @@ the product of the natural conjugate of the first factor with the second (*Intro
 General Quaternionic Algebra of Biquaternions*). It is neither commutative nor alternating, and yet
 a two-sided involution ties the two sides: the natural conjugation is a $\mathbb{C}$-linear
 anti-automorphism of order two, so it carries the left annihilator
-$\{\tilde X:\tilde X^{\natural}\tilde Q=0\}$ onto the right annihilator
-$\{\tilde Q^{\natural}\tilde X=0\}$, and the two annihilators of an element coincide. The
+$\{\tilde Q_1:\tilde Q_1^{\natural}\tilde Q=0\}$ onto the right annihilator
+$\{\tilde Q^{\natural}\tilde Q_1=0\}$, and the two annihilators of an element coincide. The
 annihilator vanishes off the zero-divisor cone $C(\tilde P)=0$ and is a complex plane on it. The
 article owns that reading, the operator with its rank, and the shape of the annihilator on the
 remarkable subspaces; the zero-divisor set and its comparison with the other three general products
@@ -39,8 +39,8 @@ are the cited article's.
 $\tilde Q\in\mathbb{B}$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in
 $\star$ are
 $$
-A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
-B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\},\qquad
+B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\}.
 $$
 They are the kernels of the left and the right multiplication, and they are nonzero exactly when
 $\tilde Q$ is a zero divisor of the corresponding side.
@@ -49,8 +49,8 @@ Throughout this article the product is the **general quaternionic multiplication
 unqualified, *annihilator* means the annihilator of $\star$. The left and the right multiplication
 are the operator
 $$
-L_{\tilde P}\tilde X=\tilde P\star\tilde X=\tilde P^{\natural}\tilde X,\qquad
-R_{\tilde P}\tilde X=\tilde X\star\tilde P=\tilde X^{\natural}\tilde P,
+L_{\tilde P}\tilde Q_1=\tilde P\star\tilde Q_1=\tilde P^{\natural}\tilde Q_1,\qquad
+R_{\tilde P}\tilde Q_1=\tilde Q_1\star\tilde P=\tilde Q_1^{\natural}\tilde P,
 $$
 a multiplication by the natural conjugate. The block is the sibling of the **general plain
 algebra**, whose annihilators are *Annihilators of the Biquaternion Algebra*, and the two share
@@ -65,11 +65,11 @@ $$
 B_\star(\tilde Q)=A_\star(\tilde Q).
 $$
 
-*Proof.* Let $\tilde X\in\mathbb{B}$. Applying the natural conjugation ${}^{\natural}$ to the
-equation $\tilde Q^{\natural}\tilde X=0$ gives $(\tilde Q^{\natural}\tilde X)^{\natural}=0$, which
-is $\tilde X^{\natural}\tilde Q=0$ because ${}^{\natural}$ is an anti-automorphism of order two;
+*Proof.* Let $\tilde Q_1\in\mathbb{B}$. Applying the natural conjugation ${}^{\natural}$ to the
+equation $\tilde Q^{\natural}\tilde Q_1=0$ gives $(\tilde Q^{\natural}\tilde Q_1)^{\natural}=0$, which
+is $\tilde Q_1^{\natural}\tilde Q=0$ because ${}^{\natural}$ is an anti-automorphism of order two;
 the argument reverses because ${}^{\natural}$ is a bijection of $\mathbb{B}$ onto itself. Hence
-$\tilde Q\star\tilde X=0$ exactly when $\tilde X\star\tilde Q=0$, and the two annihilators contain
+$\tilde Q\star\tilde Q_1=0$ exactly when $\tilde Q_1\star\tilde Q=0$, and the two annihilators contain
 exactly the same elements.
 
 The coincidence is a property of this product: it holds because ${}^{\natural}$ is a
@@ -154,11 +154,11 @@ than a plane on a cone. The annihilator is the invariant that separates the thre
 **On a nonzero central element the annihilator is $\{0\}$; on the vector subspace it is $\{0\}$ unless the vector part is isotropic, and a complex plane on the isotropic locus; and on the Hermitian and anti-Hermitian subspaces it is again a complex plane for a nonzero zero divisor.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_t$ has
-$L_{\lambda e_t}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
+$L_{\lambda e_t}\tilde Q_1=\lambda\tilde Q_1$, the scalar operator, so it is a unit of the plain
 product and its annihilator is $\{0\}$.
 
 **The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
-$L_{\vec P}\tilde X=-\vec P\tilde X$ and $C(\tilde P)=(\vec P,\vec P)$; its annihilator
+$L_{\vec P}\tilde Q_1=-\vec P\tilde Q_1$ and $C(\tilde P)=(\vec P,\vec P)$; its annihilator
 is $\{0\}$ unless the vector part is isotropic, and on the isotropic locus it is the complex plane
 of the elements the pure quaternion $\vec P$ kills by left multiplication.
 
@@ -171,7 +171,7 @@ Hermitian quaternion, a left ideal of the plain algebra.
 
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. The general
-quaternionic multiplication $\tilde P\star\tilde X=\tilde P^{\natural}\tilde X$ carries a
+quaternionic multiplication $\tilde P\star\tilde Q_1=\tilde P^{\natural}\tilde Q_1$ carries a
 $\mathbb{C}$-linear anti-automorphism of order two, so its two annihilators of an element always
 coincide. The operator $L_{\tilde P}$ has determinant $C(\tilde P)^{2}$ and trace $4P_t$: it is
 invertible off the cone and of rank two and kernel a complex plane on the cone, and the plane
@@ -185,7 +185,7 @@ one of the three with both properties.
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic multiplication, the operation $\mathrm{GQA}$ |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, equal by the anti-automorphism ${}^{\natural}$ |
-| $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P^{\natural}\tilde X$, whose kernel is the annihilator |
+| $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde Q_1=\tilde P^{\natural}\tilde Q_1$, whose kernel is the annihilator |
 | $\det L_{\tilde P}=C(\tilde P)^{2}$, $\operatorname{tr}L_{\tilde P}=4P_t$ | the determinant and the trace of the operator |
 | $\{0\}$ off the cone | the annihilator of an element of nonzero central square, a unit of the plain product |
 | the complex plane on the cone | the annihilator of a nonzero zero divisor, containing the element itself |

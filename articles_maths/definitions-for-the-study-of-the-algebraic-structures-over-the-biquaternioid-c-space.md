@@ -92,7 +92,7 @@ Both elements are required to be nonzero, and that is essential: the origin is n
 
 **Definition (annihilator).** Let $\star$ be a product and let $\tilde Q$ be a zero divisor of $\star$. The **left annihilator** and the **right annihilator** of $\tilde Q$ in $\star$ are the sets
 $$
-A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+A_\star(\tilde Q)=\{\tilde Q_1:\tilde Q\star\tilde Q_1=0\},\qquad B_\star(\tilde Q)=\{\tilde Q_1:\tilde Q_1\star\tilde Q=0\}.
 $$
 They are the kernels of the two one-sided multiplications of §7, they are nonzero exactly when $\tilde Q$ is a zero divisor of the corresponding side, and an element is a two-sided zero divisor exactly when both are nonzero.
 

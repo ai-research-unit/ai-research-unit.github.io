@@ -96,27 +96,27 @@ The two agree because $\langle\tilde A,\tilde R\rangle_{*}\overline{S_t} = \over
 
 ## The Composition and the Failure of Multiplicativity
 
-**Theorem (the four composition laws).** For all $\tilde A,\tilde B$,
+**Theorem (the four composition laws).** For all $\tilde A,\tilde Q_1$,
 
 $$
-L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_t\,R^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_t}\,R^{\star}_{\tilde B} , \qquad L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_t\,L^{\star}_{\tilde B} , \qquad R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_t}\,L^{\star}_{\tilde B} .
+L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} = A_t\,R^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde A}R^{\star}_{\tilde Q_1} = \overline{A_t}\,R^{\star}_{\tilde Q_1} , \qquad L^{\star}_{\tilde A}R^{\star}_{\tilde Q_1} = A_t\,L^{\star}_{\tilde Q_1} , \qquad R^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} = \overline{A_t}\,L^{\star}_{\tilde Q_1} .
 $$
 
 In particular the family of operators is closed under composition; the composition of two operators is again a rank-one operator of the family, scaled by the scalar part of the first parameter.
 
-*Proof.* $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\tilde R = L^{\star}_{\tilde A}\bigl(\langle\tilde B,\tilde R\rangle_{*}e_t\bigr) = H\bigl(\tilde A,\langle\tilde B,\tilde R\rangle_{*}e_t\bigr)e_t = \overline{\langle\tilde B,\tilde R\rangle_{*}}\,A_te_t = \langle\tilde R,\tilde B\rangle_{*}A_te_t = A_tR^{\star}_{\tilde B}\tilde R$; the other three are the same computation with the other slot, using $\langle e_t,\tilde A\rangle_{*} = \overline{A_t}$ for the right family.
+*Proof.* $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1}\tilde R = L^{\star}_{\tilde A}\bigl(\langle\tilde Q_1,\tilde R\rangle_{*}e_t\bigr) = H\bigl(\tilde A,\langle\tilde Q_1,\tilde R\rangle_{*}e_t\bigr)e_t = \overline{\langle\tilde Q_1,\tilde R\rangle_{*}}\,A_te_t = \langle\tilde R,\tilde Q_1\rangle_{*}A_te_t = A_tR^{\star}_{\tilde Q_1}\tilde R$; the other three are the same computation with the other slot, using $\langle e_t,\tilde A\rangle_{*} = \overline{A_t}$ for the right family.
 
 **Corollary (the failure of multiplicativity).** The assignment $\tilde A\mapsto L^{\star}_{\tilde A}$ is **not** multiplicative:
 
 $$
-L^{\star}_{\tilde A}L^{\star}_{\tilde B} \neq L^{\star}_{\tilde A\star\tilde B}
+L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} \neq L^{\star}_{\tilde A\star\tilde Q_1}
 $$
 
-in general, the left-hand side being $A_tR^{\star}_{\tilde B}$ and the right-hand side the operator of the central product $\tilde A\star\tilde B = \langle\tilde A,\tilde B\rangle_{*}e_t$, namely $\tilde R\mapsto \langle\tilde A,\tilde B\rangle_{*}\overline{R_t}e_t$.
+in general, the left-hand side being $A_tR^{\star}_{\tilde Q_1}$ and the right-hand side the operator of the central product $\tilde A\star\tilde Q_1 = \langle\tilde A,\tilde Q_1\rangle_{*}e_t$, namely $\tilde R\mapsto \langle\tilde A,\tilde Q_1\rangle_{*}\overline{R_t}e_t$.
 
-*Proof.* The two sides have the forms displayed in the two displays and differ already at generic $\tilde A,\tilde B$.
+*Proof.* The two sides have the forms displayed in the two displays and differ already at generic $\tilde A,\tilde Q_1$.
 
-**Remark (the contrast with the row's one-sided operators).** The one-sided operators of the general plain sesqualgebra satisfy $L_{\tilde A}L_{\tilde B} = L_{\tilde A\tilde B}$, a genuine multiplicativity (*One-Sided Operators on the General Plain Sesqualgebra*); the block's operators satisfy the composition laws above because the product is central and the parameter enters through its scalar part alone. The failure of multiplicativity, the conjugate-linearity and the rank-one image are three readings of the same collapse of the product onto the centre.
+**Remark (the contrast with the row's one-sided operators).** The one-sided operators of the general plain sesqualgebra satisfy $L_{\tilde A}L_{\tilde Q_1} = L_{\tilde A\tilde Q_1}$, a genuine multiplicativity (*One-Sided Operators on the General Plain Sesqualgebra*); the block's operators satisfy the composition laws above because the product is central and the parameter enters through its scalar part alone. The failure of multiplicativity, the conjugate-linearity and the rank-one image are three readings of the same collapse of the product onto the centre.
 
 ## The Group of Linear Maps Preserving the Form, and Its Lie Algebra
 
@@ -162,11 +162,11 @@ $$
 
 **The adjoint.** For $\tilde A = \vec e_x + i\vec e_y$, the identity $\langle L^{\star}_{\tilde A}\tilde R,\tilde S\rangle_{*} = \overline{\langle\tilde R,\overline{S_t}\tilde A\rangle_{*}}$ holds for all $\tilde R,\tilde S$, while the candidate $R^{\star}_{\tilde A}$ does not satisfy it; the adjoint of $L^{\star}_{\tilde A}$ is therefore the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde A$.
 
-**A composition.** The operators $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $A_tR^{\star}_{\tilde B}$ are equal, while $L^{\star}_{\tilde A}L^{\star}_{\tilde B}$ and $L^{\star}_{\tilde A\star\tilde B}$ differ in general; the composition of two operators of the family is not the operator of the product of their parameters.
+**A composition.** The operators $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1}$ and $A_tR^{\star}_{\tilde Q_1}$ are equal, while $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1}$ and $L^{\star}_{\tilde A\star\tilde Q_1}$ differ in general; the composition of two operators of the family is not the operator of the product of their parameters.
 
 ## Summary
 
-The multiplication operators of the block are $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ and $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_t$; the left family is **conjugate-linear** in its argument and the right family is **$\mathbb{C}$-linear**, and the two are the pointwise conjugates of one another, $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$. Every nonzero operator has **rank one**, image the centre and kernel the hyperplane $H(\tilde A,\cdot\,) = 0$ of real dimension six. The **traces** are $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, conjugate-linear in the parameter, and $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ in the conjugate-linear convention, the trace-level mark of the sesquilinear class against the bilinear quaternionic block. The **adjoint** of $L^{\star}_{\tilde A}$ with respect to $H$ is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde A$, which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$; a conjugate-linear operator has no adjoint in the linear convention, and the failure is the operator expression of the conjugate-linearity. The **composition** laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_tR^{\star}_{\tilde B}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde B} = \overline{A_t}R^{\star}_{\tilde B}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde B} = A_tL^{\star}_{\tilde B}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde B} = \overline{A_t}L^{\star}_{\tilde B}$, so the family is closed under composition but the assignment is **not multiplicative**, $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$. Finally the group $G_H$ of $\mathbb{C}$-linear maps preserving $H$ has the matrix condition $T^{\mathsf H}T = I_4$ and the Lie algebra $X^{\mathsf H} + X = 0$, the skew endomorphisms; the **automorphisms** of the block are the elements of $G_H$ fixing $e_t$, and the **structure group** is the group of similarities of $H$ fixing the line of the idempotent.
+The multiplication operators of the block are $L^{\star}_{\tilde A}\tilde R = \langle\tilde A,\tilde R\rangle_{*}e_t$ and $R^{\star}_{\tilde A}\tilde R = \langle\tilde R,\tilde A\rangle_{*}e_t$; the left family is **conjugate-linear** in its argument and the right family is **$\mathbb{C}$-linear**, and the two are the pointwise conjugates of one another, $R^{\star}_{\tilde A} = \overline{L^{\star}_{\tilde A}}$. Every nonzero operator has **rank one**, image the centre and kernel the hyperplane $H(\tilde A,\cdot\,) = 0$ of real dimension six. The **traces** are $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, conjugate-linear in the parameter, and $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ in the conjugate-linear convention, the trace-level mark of the sesquilinear class against the bilinear quaternionic block. The **adjoint** of $L^{\star}_{\tilde A}$ with respect to $H$ is the conjugate-linear map $\tilde S\mapsto\overline{S_t}\tilde A$, which is **neither** $L^{\star}_{\tilde A}$ nor $R^{\star}_{\tilde A}$; a conjugate-linear operator has no adjoint in the linear convention, and the failure is the operator expression of the conjugate-linearity. The **composition** laws are $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} = A_tR^{\star}_{\tilde Q_1}$, $R^{\star}_{\tilde A}R^{\star}_{\tilde Q_1} = \overline{A_t}R^{\star}_{\tilde Q_1}$, $L^{\star}_{\tilde A}R^{\star}_{\tilde Q_1} = A_tL^{\star}_{\tilde Q_1}$ and $R^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} = \overline{A_t}L^{\star}_{\tilde Q_1}$, so the family is closed under composition but the assignment is **not multiplicative**, $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1}\neq L^{\star}_{\tilde A\star\tilde Q_1}$. Finally the group $G_H$ of $\mathbb{C}$-linear maps preserving $H$ has the matrix condition $T^{\mathsf H}T = I_4$ and the Lie algebra $X^{\mathsf H} + X = 0$, the skew endomorphisms; the **automorphisms** of the block are the elements of $G_H$ fixing $e_t$, and the **structure group** is the group of similarities of $H$ fixing the line of the idempotent.
 
 ## Summary of Notation
 
@@ -178,8 +178,8 @@ The multiplication operators of the block are $L^{\star}_{\tilde A}\tilde R = \l
 | $\mathbb{C}_{\mathbb{B}}$, $\{H(\tilde A,\cdot\,) = 0\}$ | the image and the kernel of a nonzero operator; rank one |
 | $\operatorname{Tr}(R^{\star}_{\tilde A}) = \overline{A_t}$, $\operatorname{Tr}(L^{\star}_{\tilde A}) = A_t$ | the traces |
 | $(L^{\star}_{\tilde A})^{\dagger}\tilde S = \overline{S_t}\tilde A$ | the adjoint in the conjugate-linear convention |
-| $L^{\star}_{\tilde A}L^{\star}_{\tilde B} = A_tR^{\star}_{\tilde B}$, etc. | the four composition laws |
-| $L^{\star}_{\tilde A}L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$ | the failure of multiplicativity |
+| $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1} = A_tR^{\star}_{\tilde Q_1}$, etc. | the four composition laws |
+| $L^{\star}_{\tilde A}L^{\star}_{\tilde Q_1}\neq L^{\star}_{\tilde A\star\tilde Q_1}$ | the failure of multiplicativity |
 | $G_H$, $T^{\mathsf H}T = I_4$ | the group of linear maps preserving $H$ |
 | $X^{\mathsf H} + X = 0$ | its Lie algebra, the skew endomorphisms |
 | $\operatorname{Aut}(\star) = \{T\in G_H : Te_t = e_t\}$ | the automorphisms of the block |

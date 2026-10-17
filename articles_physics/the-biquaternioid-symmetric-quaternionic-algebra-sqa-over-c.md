@@ -58,7 +58,7 @@ The biquaternioid symmetric quaternionic algebra is the structure $\tilde P\star
 | $\langle\tilde P,\tilde Q\rangle_{\natural}=\sum_\mu P_\mu Q_\mu$ | the quaternion form; the coupling |
 | $\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the isotropic elements; the radical of the product |
-| $e_t\star\tilde X=\tilde X^{\natural}$ | the absence of a unit |
+| $e_t\star\tilde Q_1=\tilde Q_1^{\natural}$ | the absence of a unit |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | the centre; the line of the values |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $S_{\tilde P,\tilde P}$ | the two-sided operator; a scalar times a projection |

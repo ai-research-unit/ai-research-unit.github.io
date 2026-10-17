@@ -107,7 +107,7 @@ The kernel of the action on the algebra is thus the central circle, of one real 
 
 ### The Table
 
-| subspace | $\operatorname{H}_{\tilde{Q}}$, general unit | $\operatorname{H}_{\tilde u_{\mathrm r}$, real unit quaternion |
+| subspace | $\operatorname{H}_{\tilde{Q}}$, general unit | $\operatorname{H}_{\tilde u_{\mathrm r}}$, real unit quaternion |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ (centre) | no | yes |
 | $\mathrm{Vect}(\mathbb{B})$ (vector subspace) | no | yes |
@@ -194,7 +194,7 @@ The statement is confirmed by the numbers. For a rotation rotor with $\theta = \
 
 ### Both Vector Halves Rotate Together
 
-Because the scalar imaginary $i$ is central, $\operatorname{H}_{\tilde u_{\mathrm r}(i\vec w) = i\,\operatorname{H}_{\tilde u_{\mathrm r}(\vec w)$. The rotation therefore acts on the imaginary vector part $i\vec e_k$ and on the real vector part $\vec e_k$ by the same rotation of the same three-dimensional space, so the six-dimensional vector subspace is carried to itself by a single rotation acting complex-linearly. This is the operator statement of the fact that the quaternion rotation group acts on the complexified three-dimensional space, and it is why a rotation is an operator of the algebra rather than merely of the real slice.
+Because the scalar imaginary $i$ is central, $\operatorname{H}_{\tilde u_{\mathrm r}}(i\vec w) = i\,\operatorname{H}_{\tilde u_{\mathrm r}}(\vec w)$. The rotation therefore acts on the imaginary vector part $i\vec e_k$ and on the real vector part $\vec e_k$ by the same rotation of the same three-dimensional space, so the six-dimensional vector subspace is carried to itself by a single rotation acting complex-linearly. This is the operator statement of the fact that the quaternion rotation group acts on the complexified three-dimensional space, and it is why a rotation is an operator of the algebra rather than merely of the real slice.
 
 ## The Interval Is Preserved, the Product Is Not
 

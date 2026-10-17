@@ -14,17 +14,17 @@ $$
 \tilde\Upsilon^{\star k}=0\quad\text{for some }k\geq1,
 $$
 
-the power being the left-nested reading of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, $\tilde X^{\star k}=\bigl(\cdots(\tilde X\star\tilde X)\star\tilde X\cdots\bigr)$, which for the block is $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$. The two subjects are one subject: a root of $0$ is a square-zero element, that is a nilpotent of **index two**, and the nilpotents of the block are exactly the roots of $0$ that the emptiness of the root set pushes to the **next index**.
+the power being the left-nested reading of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, $\tilde Q_1^{\star k}=\bigl(\cdots(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1\cdots\bigr)$, which for the block is $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$. The two subjects are one subject: a root of $0$ is a square-zero element, that is a nilpotent of **index two**, and the nilpotents of the block are exactly the roots of $0$ that the emptiness of the root set pushes to the **next index**.
 
-The answer is not the parent's. The block has **no nonzero square-zero element**, so the root set of $0$ is empty and no nilpotent has index two; but it **has** nilpotents, of index three, and they are exactly the parent's **pure zero divisors**, the elements with vanishing scalar coordinate and isotropic vector part. The block therefore keeps the parent's nilpotent **set** — the pure cone $\{\Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}$ — and changes its **index**, from two to three, because its square is the Hermitian square $\tilde X\tilde X^{*}$ instead of the plain square $\tilde X^{2}$. The non-pure zero divisors of the parent are zero divisors of the block and are **not** nilpotents of it, so the implication of the parent, "the pure family is the nilpotent family", holds here in a transmuted form: the pure family is the nilpotent family and the index is three.
+The answer is not the parent's. The block has **no nonzero square-zero element**, so the root set of $0$ is empty and no nilpotent has index two; but it **has** nilpotents, of index three, and they are exactly the parent's **pure zero divisors**, the elements with vanishing scalar coordinate and isotropic vector part. The block therefore keeps the parent's nilpotent **set** — the pure cone $\{\Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}$ — and changes its **index**, from two to three, because its square is the Hermitian square $\tilde Q_1\tilde Q_1^{*}$ instead of the plain square $\tilde Q_1^{2}$. The non-pure zero divisors of the parent are zero divisors of the block and are **not** nilpotents of it, so the implication of the parent, "the pure family is the nilpotent family", holds here in a transmuted form: the pure family is the nilpotent family and the index is three.
 
-**The results.** The left-nested powers of the block are conjugate-linear iterations, $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and can exceed two. The scalar part of the square is $\sum_\mu\lvert X_\mu\rvert^{2}$, which vanishes only at the origin, so the root set of $0$ is empty and there is no nonzero square-zero element; the nonzero nilpotents are exactly the parent's pure zero divisors, the elements $\Upsilon_t=0$ with $C(\tilde\Upsilon)=(\vec\Upsilon,\vec\Upsilon)=0$, of index exactly three, $\tilde\Upsilon^{\star2}\neq0$ and $\tilde\Upsilon^{\star3}=0$. The nilpotent set is the nonzero pure isotropic cone, of complex dimension two, and it is the parent's set with the index changed from two to three; the non-pure zero divisors are not nilpotent.
+**The results.** The left-nested powers of the block are conjugate-linear iterations, $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_1)^{\dagger})$ and can exceed two. The scalar part of the square is $\sum_\mu\lvert Q_{1\mu}\rvert^{2}$, which vanishes only at the origin, so the root set of $0$ is empty and there is no nonzero square-zero element; the nonzero nilpotents are exactly the parent's pure zero divisors, the elements $\Upsilon_t=0$ with $C(\tilde\Upsilon)=(\vec\Upsilon,\vec\Upsilon)=0$, of index exactly three, $\tilde\Upsilon^{\star2}\neq0$ and $\tilde\Upsilon^{\star3}=0$. The nilpotent set is the nonzero pure isotropic cone, of complex dimension two, and it is the parent's set with the index changed from two to three; the non-pure zero divisors are not nilpotent.
 
 **Placement.** The article is the sixth entry of the *Common Theory* section of the block, after the roots of one and the idempotents and before the general value. It uses the product and the class of the introduction, the square and its scalar part from *Norm and Invertibility in the General Plain Sesqualgebra*, the reduction of the square from *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, the zero-divisor criterion from *Zero Divisors of the General Plain Sesqualgebra*, and the matrix model.
 
 **Boundaries.** The product, its class and its placement are *Introduction to the General Plain Sesqualgebra*; the relative definition of the power, the square-zero element, the nilpotent and the index of nilpotency is *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*, §*The Nilpotent*. The square-zero set of the block and of the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*; the nilpotents and the two families of the parent are *Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* and *Zero Divisors of the Biquaternion Algebra*; the matrix model that carries the powers is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the idempotents that the roots of $+1$ produce are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. The product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and the **central square** is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q)$. An element is **pure** when $Q_t=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), with $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde X$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and $Q_\mu\in\mathbb{C}$; the Hermitian conjugation is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_t}-\overline{\vec Q}$. The product is $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and the **central square** is $C(\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+(\vec Q,\vec Q)$. An element is **pure** when $Q_t=0$, that is when it lies in the vector part $\mathbb{C}\otimes\mathbb{R}^{3}$. A nilpotent is written $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), with $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$; a general element whose powers are at stake keeps the letter $\tilde Q_1$.
 
 The equations name a product, so the powers, the square-zero elements and the nilpotents are relative to it. Throughout this article the product is the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the general definition of the nilpotent is §*The Nilpotent* of *Definitions for the Study of the Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space*. The origin is a nilpotent, the **trivial** one, and the article is concerned with the nonzero ones.
 
@@ -46,19 +46,19 @@ A **root of $0$** is a nonzero element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\
 
 ## The Powers of the Block
 
-The left-nested powers of the block are conjugate-linear iterations, $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and not of the plain square, and it can be larger than two.
+The left-nested powers of the block are conjugate-linear iterations, $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$, so the index is a property of the pair $(\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_1)^{\dagger})$ and not of the plain square, and it can be larger than two.
 
-**Proposition (the powers are conjugate-linear iterations).** For every $\tilde X$ and every $k\geq1$,
+**Proposition (the powers are conjugate-linear iterations).** For every $\tilde Q_1$ and every $k\geq1$,
 
 $$
-\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1},
+\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1},
 $$
 
-so $\tilde X^{\star2}=\tilde X\tilde X^{*}$, $\tilde X^{\star3}=\tilde X\tilde X^{*}\tilde X^{*}$, and in the matrix model $\mathsf{M}_2(\tilde X^{\star k})=\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger(k-1)}$.
+so $\tilde Q_1^{\star2}=\tilde Q_1\tilde Q_1^{*}$, $\tilde Q_1^{\star3}=\tilde Q_1\tilde Q_1^{*}\tilde Q_1^{*}$, and in the matrix model $\mathsf{M}_2(\tilde Q_1^{\star k})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger(k-1)}$.
 
-*Proof.* By induction on the left-nested reading: $\tilde X^{\star(k+1)}=\tilde X^{\star k}\star\tilde X=\tilde X^{\star k}\tilde X^{*}=\tilde X(\tilde X^{*})^{k-1}\tilde X^{*}=\tilde X(\tilde X^{*})^{k}$. The matrix display is the multiplicativity $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde X^{*})=\mathsf{M}_2(\tilde X)^{\dagger}$.
+*Proof.* By induction on the left-nested reading: $\tilde Q_1^{\star(k+1)}=\tilde Q_1^{\star k}\star\tilde Q_1=\tilde Q_1^{\star k}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k-1}\tilde Q_1^{*}=\tilde Q_1(\tilde Q_1^{*})^{k}$. The matrix display is the multiplicativity $\mathsf{M}_2(\tilde P\star\tilde Q)=\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ and $\mathsf{M}_2(\tilde Q_1^{*})=\mathsf{M}_2(\tilde Q_1)^{\dagger}$.
 
-**Remark (why the index can be larger than two).** The square of the block is $\tilde X\tilde X^{*}$, the Hermitian square, and the iterated powers are the products of $\tilde X$ with the successive powers of the conjugate transpose. The index is therefore a property of the pair $(\mathsf{M}_2(\tilde X),\mathsf{M}_2(\tilde X)^{\dagger})$ and not of the plain square, and it can be larger than two even when the plain element is a square-zero element of index two.
+**Remark (why the index can be larger than two).** The square of the block is $\tilde Q_1\tilde Q_1^{*}$, the Hermitian square, and the iterated powers are the products of $\tilde Q_1$ with the successive powers of the conjugate transpose. The index is therefore a property of the pair $(\mathsf{M}_2(\tilde Q_1),\mathsf{M}_2(\tilde Q_1)^{\dagger})$ and not of the plain square, and it can be larger than two even when the plain element is a square-zero element of index two.
 
 ## The Criterion of the Nilpotent
 
@@ -101,7 +101,7 @@ the nonzero elements of the **pure isotropic cone**, of complex dimension two, w
 
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
-| square | $\tilde X^{2}$, bilinear, central | $\tilde X\star\tilde X=\tilde X\tilde X^{*}$, Hermitian |
+| square | $\tilde Q_1^{2}$, bilinear, central | $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$, Hermitian |
 | square-zero set | the pure isotropic cone | $\{0\}$ alone |
 | nilpotent set | the pure isotropic cone, index two | the pure isotropic cone, index three |
 | index | two, always | three, always |
@@ -112,7 +112,7 @@ The parent's **set** is kept and the parent's **index** is not: this is the whol
 
 ## Summary
 
-The powers of the general plain sesqualgebra are $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$, and the block has **no nonzero square-zero element**: the Hermitian square $\tilde X\star\tilde X=\tilde X\tilde X^{*}$ has scalar part $\sum_\mu\lvert X_\mu\rvert^{2}$, which vanishes only at the origin, so no nilpotent has index two and the root set of $0$ is empty. The origin is the **trivial** nilpotent, and the nonzero nilpotents are exactly the parent's **pure zero divisors**: with $\tilde\Upsilon$ a nilpotent, $\Upsilon_t=0$ and $C(\tilde\Upsilon)=(\vec\Upsilon,\vec\Upsilon)=0$, so the nilpotent set is the pure isotropic cone $\{\Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}$, of complex dimension two. The index is **exactly three**: $\tilde\Upsilon^{\star2}=\tilde\Upsilon\tilde\Upsilon^{*}\neq0$ and $\tilde\Upsilon^{\star3}=0$, proved directly for the pure elements and proved in the $2\times2$ matrix model, where the nilpotents are the rank-one traceless matrices and the condition is $\operatorname{Tr}=0$, that is $\Upsilon_t=0$. The non-pure zero divisors of the parent are zero divisors of the block and not nilpotents of it; the nilpotent set, the zero-divisor partition and the criterion $\Upsilon_t=0$ are inherited, and the index is changed from two to three.
+The powers of the general plain sesqualgebra are $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$, and the block has **no nonzero square-zero element**: the Hermitian square $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ has scalar part $\sum_\mu\lvert Q_{1\mu}\rvert^{2}$, which vanishes only at the origin, so no nilpotent has index two and the root set of $0$ is empty. The origin is the **trivial** nilpotent, and the nonzero nilpotents are exactly the parent's **pure zero divisors**: with $\tilde\Upsilon$ a nilpotent, $\Upsilon_t=0$ and $C(\tilde\Upsilon)=(\vec\Upsilon,\vec\Upsilon)=0$, so the nilpotent set is the pure isotropic cone $\{\Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0\}$, of complex dimension two. The index is **exactly three**: $\tilde\Upsilon^{\star2}=\tilde\Upsilon\tilde\Upsilon^{*}\neq0$ and $\tilde\Upsilon^{\star3}=0$, proved directly for the pure elements and proved in the $2\times2$ matrix model, where the nilpotents are the rank-one traceless matrices and the condition is $\operatorname{Tr}=0$, that is $\Upsilon_t=0$. The non-pure zero divisors of the parent are zero divisors of the block and not nilpotents of it; the nilpotent set, the zero-divisor partition and the criterion $\Upsilon_t=0$ are inherited, and the index is changed from two to three.
 
 ## Summary of Notation
 
@@ -120,15 +120,15 @@ The powers of the general plain sesqualgebra are $\tilde X^{\star k}=\tilde X(\t
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
 | $\tilde\Upsilon=\Upsilon_te_t+\vec\Upsilon$ | a nilpotent of the block |
-| $\tilde X^{\star k}=\tilde X(\tilde X^{*})^{k-1}$ | the left-nested power |
-| $\tilde X\star\tilde X=\tilde X\tilde X^{*}$ | the Hermitian square |
-| $\mathrm{Sc}(\tilde X\star\tilde X)=\sum_\mu\lvert X_\mu\rvert^{2}$ | the scalar part, definite: no nonzero square-zero element |
+| $\tilde Q_1^{\star k}=\tilde Q_1(\tilde Q_1^{*})^{k-1}$ | the left-nested power |
+| $\tilde Q_1\star\tilde Q_1=\tilde Q_1\tilde Q_1^{*}$ | the Hermitian square |
+| $\mathrm{Sc}(\tilde Q_1\star\tilde Q_1)=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ | the scalar part, definite: no nonzero square-zero element |
 | $\mathcal{R}(0)=\varnothing$ | no root of $0$ |
-| $C(\tilde X)=\sum_\mu X_\mu^{2}=X_t^{2}+(\vec X,\vec X)$ | the central square |
+| $C(\tilde Q_1)=\sum_\mu Q_{1\mu}^{2}=Q_{1t}^{2}+(\vec Q_1,\vec Q_1)$ | the central square |
 | $\Upsilon_t=0,\ (\vec\Upsilon,\vec\Upsilon)=0$ | the criterion of the nilpotent, the pure isotropic cone |
 | $\mathcal{N}_\star$ | the nilpotent set, the nonzero pure isotropic cone, complex dimension two |
 | index three | $\tilde\Upsilon^{\star2}\neq0$, $\tilde\Upsilon^{\star3}=0$ |
-| $\mathsf{M}_2(\tilde X^{\star k})=\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger(k-1)}$ | the powers in the matrix model, rank-one traceless for the nilpotents |
+| $\mathsf{M}_2(\tilde Q_1^{\star k})=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger(k-1)}$ | the powers in the matrix model, rank-one traceless for the nilpotents |
 
 ## Further Reading
 

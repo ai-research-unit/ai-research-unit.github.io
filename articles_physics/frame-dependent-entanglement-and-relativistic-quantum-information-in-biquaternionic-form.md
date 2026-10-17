@@ -34,7 +34,7 @@ $$
 $$
 and the reduced state of the first qubit is the **partial trace**
 $$
-\mathrm{Tr}_2:\ \mathbb{B}\otimes\mathbb{B}\to\mathbb{B}, \qquad \mathrm{Tr}_2(\tilde{A}\otimes\tilde{B}) = \tilde{A}\,\mathrm{Tr}_\mathbb{B}(\tilde{B}),
+\mathrm{Tr}_2:\ \mathbb{B}\otimes\mathbb{B}\to\mathbb{B}, \qquad \mathrm{Tr}_2(\tilde{A}\otimes\tilde{Q}_1) = \tilde{A}\,\mathrm{Tr}_\mathbb{B}(\tilde{Q}_1),
 $$
 extended linearly. On the singlet,
 $$

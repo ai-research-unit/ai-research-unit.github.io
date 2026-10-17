@@ -5,12 +5,12 @@
 The product $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ is conjugate-linear in its second argument, so the left multiplication by a fixed element is conjugate-linear and the right multiplication is linear. The two families are
 
 $$
-L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\tilde X,
+L^{\star}_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1,
 \qquad
-R^{\star}_{\tilde A}(\tilde X)=\tilde X\star\tilde A,
+R^{\star}_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A,
 $$
 
-and they are the operators of the block. The parity split is the first thing to record: $L^{\star}_{\tilde A}$ is $\bar{\cdot}$-semilinear, $R^{\star}_{\tilde A}$ is $\mathbb{C}$-linear, and the product of two left multiplications is therefore linear while a single left multiplication is conjugate-linear. This parity is the source of every departure of the block from the operator theory of an algebra: the composition $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}$ cannot equal $L^{\star}_{\tilde A\star\tilde B}$ off the zero operator, because the two have different parities.
+and they are the operators of the block. The parity split is the first thing to record: $L^{\star}_{\tilde A}$ is $\bar{\cdot}$-semilinear, $R^{\star}_{\tilde A}$ is $\mathbb{C}$-linear, and the product of two left multiplications is therefore linear while a single left multiplication is conjugate-linear. This parity is the source of every departure of the block from the operator theory of an algebra: the composition $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_2}$ cannot equal $L^{\star}_{\tilde A\star\tilde Q_2}$ off the zero operator, because the two have different parities.
 
 The article computes the operators in the real basis $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$. It records the matrices of the two families for the unit candidate $e_t$ and for $\vec e_x$, their ranks, which depend on the scalar part and the norm of $\tilde A$, and their traces, $0$ for the left family and $-4\mathrm{Re}(A_t)$ for the right family. It exhibits the four-dimensional image that the left multiplication acquires when the element lies in the vector subspace, a subspace that is not one of the remarkable subspaces. It computes the adjoint with respect to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$, and the $J$-self-adjointness it gives with the involution $J={}^{\natural}$. It then reads the group of linear maps preserving $\langle\cdot,\cdot\rangle_{\natural*}$ with its Lie algebra and the structure group of the block.
 
@@ -23,12 +23,12 @@ The operators of the general quaternionic sesquilinear product are *The Left and
 **Theorem (parity).** $L^{\star}_{\tilde A}$ is $\bar{\cdot}$-semilinear, $R^{\star}_{\tilde A}$ is $\mathbb{C}$-linear, and the two are related by the conjugate-commutativity,
 
 $$
-L^{\star}_{\tilde A}(\tilde X)=\overline{R^{\star}_{\tilde A}(\tilde X)}.
+L^{\star}_{\tilde A}(\tilde Q_1)=\overline{R^{\star}_{\tilde A}(\tilde Q_1)}.
 $$
 
-*Proof.* The product is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second; putting the fixed element in the first slot gives the linear right multiplication, and in the second slot the conjugate-linear left multiplication. Conjugate-commutativity reads $\tilde A\star\tilde X=\overline{\tilde X\star\tilde A}$, whose right side is $\overline{R^{\star}_{\tilde A}(\tilde X)}$, which is the displayed relation.
+*Proof.* The product is $\mathbb{C}$-linear in its first argument and $\bar{\cdot}$-semilinear in its second; putting the fixed element in the first slot gives the linear right multiplication, and in the second slot the conjugate-linear left multiplication. Conjugate-commutativity reads $\tilde A\star\tilde Q_1=\overline{\tilde Q_1\star\tilde A}$, whose right side is $\overline{R^{\star}_{\tilde A}(\tilde Q_1)}$, which is the displayed relation.
 
-**Corollary (the parity of the compositions).** The composition of two left multiplications is $\mathbb{C}$-linear, the composition of two right multiplications is $\mathbb{C}$-linear, and a single left multiplication is conjugate-linear. Hence $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B}$ whenever the left side is nonzero.
+**Corollary (the parity of the compositions).** The composition of two left multiplications is $\mathbb{C}$-linear, the composition of two right multiplications is $\mathbb{C}$-linear, and a single left multiplication is conjugate-linear. Hence $L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_2}\neq L^{\star}_{\tilde A\star\tilde Q_2}$ whenever the left side is nonzero.
 
 *Proof.* The composition of two conjugate-linear maps is linear; a single left multiplication is conjugate-linear; a map that is both is zero.
 
@@ -42,9 +42,9 @@ L^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,-1,1,1,1),
 R^{\star}_{e_t}=\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1).
 $$
 
-The first is the star conjugation $\tilde X\mapsto\tilde X^{*}$ and the second the natural conjugation $\tilde X\mapsto\tilde X^{\natural}$.
+The first is the star conjugation $\tilde Q_1\mapsto\tilde Q_1^{*}$ and the second the natural conjugation $\tilde Q_1\mapsto\tilde Q_1^{\natural}$.
 
-*Proof.* $L^{\star}_{e_t}(\tilde X)=e_t\star\tilde X=\tilde X^{*}=\tilde X^{\natural}\circ\bar{\cdot}$: the coefficient conjugation negates each imaginary coordinate and the natural conjugation negates the three vector directions, so the diagonal is $(1,-1,-1,-1)$ on the real coordinates followed by $(-1,1,1,1)$ on the imaginary ones, the display. $R^{\star}_{e_t}(\tilde X)=\tilde X\star e_t=\tilde X^{\natural}$, which on the real coordinates negates the three vector directions and leaves the imaginary coordinates' signs after the negation of the vector directions, giving the second display.
+*Proof.* $L^{\star}_{e_t}(\tilde Q_1)=e_t\star\tilde Q_1=\tilde Q_1^{*}=\tilde Q_1^{\natural}\circ\bar{\cdot}$: the coefficient conjugation negates each imaginary coordinate and the natural conjugation negates the three vector directions, so the diagonal is $(1,-1,-1,-1)$ on the real coordinates followed by $(-1,1,1,1)$ on the imaginary ones, the display. $R^{\star}_{e_t}(\tilde Q_1)=\tilde Q_1\star e_t=\tilde Q_1^{\natural}$, which on the real coordinates negates the three vector directions and leaves the imaginary coordinates' signs after the negation of the vector directions, giving the second display.
 
 **Theorem (the two operators of $\vec e_x$).** In the real basis,
 
@@ -72,7 +72,7 @@ the two blocks acting on the real coordinates $(e_t,\vec e_x,\vec e_y,\vec e_z)$
 
 *Proof.* On the real basis directions, $\vec e_x\star e_t=-\vec e_x$, $\vec e_x\star \vec e_x=-e_t$ and $\vec e_x\star \vec e_k=0$ for $k\in\{y,z\}$; on the imaginary directions, $\vec e_x\star ie_t=i\vec e_x$ and $\vec e_x\star i\vec e_x=ie_t$, with zero for $k\in\{y,z\}$, from the definition and the table. This gives the first display; the right multiplication is read from $e_t\star \vec e_x=-\vec e_x$, $\vec e_x\star \vec e_x=-e_t$, $ie_t\star \vec e_x=-i\vec e_x$, $i\vec e_x\star \vec e_x=-ie_t$, giving the second.
 
-**Remark (the general matrix).** For a general element $\tilde A$, the two matrices are obtained from the single rule $\tilde A\star\tilde X=\langle\tilde A,\tilde X\rangle_{\natural*}e_t-A_t\overline{\vec X}-\overline{X_t}\vec A$: the columns record the images of the basis elements, and the entries are the real and imaginary parts of the coefficients of $\tilde A$. The two special matrices above are the two cases in which the images are pure basis directions, and they show the block structure of the two families.
+**Remark (the general matrix).** For a general element $\tilde A$, the two matrices are obtained from the single rule $\tilde A\star\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural*}e_t-A_t\overline{\vec Q_1}-\overline{Q_{1t}}\vec A$: the columns record the images of the basis elements, and the entries are the real and imaginary parts of the coefficients of $\tilde A$. The two special matrices above are the two cases in which the images are pure basis directions, and they show the block structure of the two families.
 
 ## Rank, Image and Trace
 
@@ -90,7 +90,7 @@ $$
 
 where the rank is the rank of the real-linear operator on the eight-real-dimensional space.
 
-*Proof.* The two families have the same rank, because the two determinants agree, $\det L^{\star}_{\tilde A}=\det R^{\star}_{\tilde A}=|\langle\tilde A\rangle_{\natural}|^{2}|A_t|^{4}$ as real-linear operators in the real basis: a direct expansion of the two $8\times8$ matrices gives the product of the squared norm and the fourth power of the scalar part in each case, and the two determinants agree because $L^{\star}_{\tilde A}=C\circ R^{\star}_{\tilde A}$ with $C$ the coefficientwise conjugation, whose real matrix $\mathrm{diag}(1,1,1,1,-1,-1,-1,-1)$ has determinant $+1$, by the parity theorem. Hence the rank is eight exactly when $A_t\neq0$ and $\langle\tilde A\rangle_{\natural}\neq0$, and the remaining values are read directly: $\tilde A=0$ gives the zero map, and $A_t=0$ with $\tilde A\neq0$ gives rank four by the next corollary. In the remaining case $A_t\neq0$ the kernel is computed without the determinant. The vector part is $-A_t\overline{\vec X}-\overline{X_t}\vec A$, so it vanishes exactly when $\vec X=-(X_t/\overline{A_t})\overline{\vec A}$, which determines the vector part of a kernel element by its scalar coefficient; substituting this into the scalar part $A_t\overline{X_t}-\sum_kA_k\overline{X_k}$ leaves $\overline{X_t}\,\langle\tilde A\rangle_{\natural}/A_t$. The kernel is therefore zero when $\langle\tilde A\rangle_{\natural}\neq0$ and the complex line $\{\vec X=-(X_t/\overline{A_t})\overline{\vec A}\}$, of real dimension two, when $\langle\tilde A\rangle_{\natural}=0$; the rank is $8$ in the first case and $6$ in the second, and at $\tilde A=e_t+i\vec e_y$ that line is spanned by $e_t+i\vec e_y$ and $ie_t-\vec e_y$.
+*Proof.* The two families have the same rank, because the two determinants agree, $\det L^{\star}_{\tilde A}=\det R^{\star}_{\tilde A}=|\langle\tilde A\rangle_{\natural}|^{2}|A_t|^{4}$ as real-linear operators in the real basis: a direct expansion of the two $8\times8$ matrices gives the product of the squared norm and the fourth power of the scalar part in each case, and the two determinants agree because $L^{\star}_{\tilde A}=C\circ R^{\star}_{\tilde A}$ with $C$ the coefficientwise conjugation, whose real matrix $\mathrm{diag}(1,1,1,1,-1,-1,-1,-1)$ has determinant $+1$, by the parity theorem. Hence the rank is eight exactly when $A_t\neq0$ and $\langle\tilde A\rangle_{\natural}\neq0$, and the remaining values are read directly: $\tilde A=0$ gives the zero map, and $A_t=0$ with $\tilde A\neq0$ gives rank four by the next corollary. In the remaining case $A_t\neq0$ the kernel is computed without the determinant. The vector part is $-A_t\overline{\vec Q_1}-\overline{Q_{1t}}\vec A$, so it vanishes exactly when $\vec Q_1=-(Q_{1t}/\overline{A_t})\overline{\vec A}$, which determines the vector part of a kernel element by its scalar coefficient; substituting this into the scalar part $A_t\overline{Q_{1t}}-\sum_kA_k\overline{Q_{1k}}$ leaves $\overline{Q_{1t}}\,\langle\tilde A\rangle_{\natural}/A_t$. The kernel is therefore zero when $\langle\tilde A\rangle_{\natural}\neq0$ and the complex line $\{\vec Q_1=-(Q_{1t}/\overline{A_t})\overline{\vec A}\}$, of real dimension two, when $\langle\tilde A\rangle_{\natural}=0$; the rank is $8$ in the first case and $6$ in the second, and at $\tilde A=e_t+i\vec e_y$ that line is spanned by $e_t+i\vec e_y$ and $ie_t-\vec e_y$.
 
 **Corollary (the four-dimensional image).** For $\tilde A$ in the vector subspace, the image of $L^{\star}_{\tilde A}$ is a four-dimensional real subspace that is not one of the remarkable subspaces. For $\tilde A=\vec e_x$,
 
@@ -100,7 +100,7 @@ $$
 
 the sum of the complex line through $e_t$ and the complex line through $\vec e_x$.
 
-*Proof.* For $A_t=0$ the display reads $\tilde A\star\tilde X=\langle\tilde A,\tilde X\rangle_{\natural*}e_t-\overline{X_t}\vec A$, so the image is the sum of the complex line $\mathbb{C}e_t$ carried by the first term and the complex line $\mathbb{C}\vec A$ carried by $\bar X_t$, and the two lines are independent because $\vec A$ lies in the vector subspace; the image has real dimension four, and for $\tilde A=\vec e_x$ it is spanned by $\vec e_x\star \vec e_x=-e_t$, $\vec e_x\star e_t=-\vec e_x$, $\vec e_x\star i\vec e_x=ie_t$, $\vec e_x\star ie_t=i\vec e_x$, that is the displayed span. The image always contains the whole centre $\mathbb{C}e_t$, whereas each of the four four-dimensional subspaces of the remarkable subspaces meets the centre in a single real line, $\mathbb{R}e_t$ or $\mathbb{R}ie_t$; so the image is not one of the four, and it is neither the centre nor the vector subspace, whose real dimensions are two and six.
+*Proof.* For $A_t=0$ the display reads $\tilde A\star\tilde Q_1=\langle\tilde A,\tilde Q_1\rangle_{\natural*}e_t-\overline{Q_{1t}}\vec A$, so the image is the sum of the complex line $\mathbb{C}e_t$ carried by the first term and the complex line $\mathbb{C}\vec A$ carried by $\bar Q_{1t}$, and the two lines are independent because $\vec A$ lies in the vector subspace; the image has real dimension four, and for $\tilde A=\vec e_x$ it is spanned by $\vec e_x\star \vec e_x=-e_t$, $\vec e_x\star e_t=-\vec e_x$, $\vec e_x\star i\vec e_x=ie_t$, $\vec e_x\star ie_t=i\vec e_x$, that is the displayed span. The image always contains the whole centre $\mathbb{C}e_t$, whereas each of the four four-dimensional subspaces of the remarkable subspaces meets the centre in a single real line, $\mathbb{R}e_t$ or $\mathbb{R}ie_t$; so the image is not one of the four, and it is neither the centre nor the vector subspace, whose real dimensions are two and six.
 
 **Theorem (the traces).** For every element $\tilde A$,
 
@@ -123,20 +123,20 @@ the traces being the traces of the real-linear operators in the real basis.
 **Theorem (the defect).** The two families do not multiply:
 
 $$
-L^{\star}_{\tilde A}\circ L^{\star}_{\tilde B}\neq L^{\star}_{\tilde A\star\tilde B},
+L^{\star}_{\tilde A}\circ L^{\star}_{\tilde Q_2}\neq L^{\star}_{\tilde A\star\tilde Q_2},
 \qquad
-R^{\star}_{\tilde A}\circ R^{\star}_{\tilde B}\neq R^{\star}_{\tilde A\star\tilde B},
+R^{\star}_{\tilde A}\circ R^{\star}_{\tilde Q_2}\neq R^{\star}_{\tilde A\star\tilde Q_2},
 $$
 
 the defect of the left composition is the associator
 
 $$
-\tilde A\star(\tilde B\star\tilde X)-(\tilde A\star\tilde B)\star\tilde X,
+\tilde A\star(\tilde Q_2\star\tilde Q_1)-(\tilde A\star\tilde Q_2)\star\tilde Q_1,
 $$
 
-the defect of the right composition is the mirrored expression $(\tilde X\star\tilde B)\star\tilde A-\tilde X\star(\tilde A\star\tilde B)$, and each is nonzero on a general triple. For the left family the inequality is forced by parity, the composition being $\mathbb{C}$-linear and the single left multiplication conjugate-linear.
+the defect of the right composition is the mirrored expression $(\tilde Q_1\star\tilde Q_2)\star\tilde A-\tilde Q_1\star(\tilde A\star\tilde Q_2)$, and each is nonzero on a general triple. For the left family the inequality is forced by parity, the composition being $\mathbb{C}$-linear and the single left multiplication conjugate-linear.
 
-*Proof.* The defect of $L^{\star}$ at $\tilde X$ is the associator, and the defect of $R^{\star}$ is the same computation read with the factors in the other order. At $\tilde A=\tilde B=\tilde X=\vec e_x$ the associator is $\vec e_x\star(\vec e_x\star \vec e_x)-(\vec e_x\star \vec e_x)\star \vec e_x=\vec e_x\star(-e_t)-(-e_t)\star \vec e_x=\vec e_x-\vec e_x=0$; at a generic triple both defects are nonzero, since the block is not associative. For the left family, the composition of two conjugate-linear maps is linear, while $L^{\star}_{\tilde A\star\tilde B}$ is conjugate-linear, so the two agree only if both are zero.
+*Proof.* The defect of $L^{\star}$ at $\tilde Q_1$ is the associator, and the defect of $R^{\star}$ is the same computation read with the factors in the other order. At $\tilde A=\tilde Q_2=\tilde Q_1=\vec e_x$ the associator is $\vec e_x\star(\vec e_x\star \vec e_x)-(\vec e_x\star \vec e_x)\star \vec e_x=\vec e_x\star(-e_t)-(-e_t)\star \vec e_x=\vec e_x-\vec e_x=0$; at a generic triple both defects are nonzero, since the block is not associative. For the left family, the composition of two conjugate-linear maps is linear, while $L^{\star}_{\tilde A\star\tilde Q_2}$ is conjugate-linear, so the two agree only if both are zero.
 
 **Remark.** The block fails multiplicativity of the operators for two independent reasons: the associator, which is the ordinary defect of a non-associative product, and the parity, which the left family alone carries. The corresponding statement for the general quaternionic sesquilinear product is in *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*.
 
@@ -145,13 +145,13 @@ the defect of the right composition is the mirrored expression $(\tilde X\star\t
 **Theorem (the adjoint).** With respect to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$,
 
 $$
-K\bigl(L^{\star}_{\tilde A}\tilde X,\tilde Y\bigr)
-=\overline{K\bigl(\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\bigr)},
+K\bigl(L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_3\bigr)
+=\overline{K\bigl(\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_3\bigr)},
 $$
 
 so the adjoint of the left multiplication by $\tilde A$ is the left multiplication by $\tilde A^{\natural}$.
 
-*Proof.* This is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*: $\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,\tilde A^{\natural}\star\tilde Y\rangle_{\natural*}}$, which is exactly the display; the conjugate on the right is the parity correction of the conjugate-linear operator.
+*Proof.* This is the compatibility theorem of *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*: $\langle\tilde A\star\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_3\rangle_{\natural*}}$, which is exactly the display; the conjugate on the right is the parity correction of the conjugate-linear operator.
 
 **Corollary ($J$-self-adjointness).** The left multiplication by $\tilde A$ is self-adjoint with respect to $K$ exactly when $\tilde A^{\natural}=\tilde A$, that is on the centre $\mathbb{C}e_t$, the fixed set of the natural conjugation.
 
@@ -188,7 +188,7 @@ acting on the block.
 
 ## Worked Examples
 
-**The two operators at a general element.** $\tilde X=e_t+\vec e_x$: $L^{\star}_{e_t}\tilde X=\tilde X^{*}=e_t-\vec e_x$ and $R^{\star}_{e_t}\tilde X=\tilde X^{\natural}=e_t-\vec e_x$, the two operators agreeing on a real element; $L^{\star}_{\vec e_x}\tilde X=\vec e_x\star(e_t+\vec e_x)=-\vec e_x-e_t$.
+**The two operators at a general element.** $\tilde Q_1=e_t+\vec e_x$: $L^{\star}_{e_t}\tilde Q_1=\tilde Q_1^{*}=e_t-\vec e_x$ and $R^{\star}_{e_t}\tilde Q_1=\tilde Q_1^{\natural}=e_t-\vec e_x$, the two operators agreeing on a real element; $L^{\star}_{\vec e_x}\tilde Q_1=\vec e_x\star(e_t+\vec e_x)=-\vec e_x-e_t$.
 
 **A four-dimensional image.** For $\tilde A=\vec e_x$ the image is $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t,\vec e_x,i\vec e_x\}$: it contains the complex line $\mathbb{C}e_t$ and the complex line $\mathbb{C}\vec e_x$ and nothing else, and it is not among the remarkable subspaces.
 
@@ -202,19 +202,19 @@ acting on the block.
 
 ## Summary
 
-The operators of the block are $L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\tilde X$, conjugate-linear, and $R^{\star}_{\tilde A}(\tilde X)=\tilde X\star\tilde A$, linear, related by $L^{\star}_{\tilde A}(\tilde X)=\overline{R^{\star}_{\tilde A}(\tilde X)}$. In the real basis $L^{\star}_{e_t}$ is the star conjugation and $R^{\star}_{e_t}$ the natural conjugation, and the operators of $\vec e_x$ have the exhibited block matrices. The ranks of the two families, equal, are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ for $A_t\neq0$ with $\langle\tilde A\rangle_{\natural}\neq0$ and $6$ for $A_t\neq0$ with $\langle\tilde A\rangle_{\natural}=0$; the four-dimensional image at $\tilde A=\vec e_x$ is $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t,\vec e_x,i\vec e_x\}$, not one of the remarkable subspaces. The traces are $0$ for the left family and $-4\mathrm{Re}(A_t)$ for the right; the kernels are read from the ranks. The operators do not multiply: the left defect is the associator and the right defect its mirror, the left case being forced by parity. The adjoint with respect to $K$ is $\langle L^{\star}_{\tilde A}\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\rangle_{\natural*}}$, which gives the $J$-self-adjointness with $J={}^{\natural}$ on the centre $\mathbb{C}e_t$. The group of $\mathbb{C}$-linear maps preserving $K$ has real dimension sixteen and its matrices satisfy $M^{\dagger}EM=E$; the structure group of the block contains the four automorphisms $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$.
+The operators of the block are $L^{\star}_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$, conjugate-linear, and $R^{\star}_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A$, linear, related by $L^{\star}_{\tilde A}(\tilde Q_1)=\overline{R^{\star}_{\tilde A}(\tilde Q_1)}$. In the real basis $L^{\star}_{e_t}$ is the star conjugation and $R^{\star}_{e_t}$ the natural conjugation, and the operators of $\vec e_x$ have the exhibited block matrices. The ranks of the two families, equal, are $0$ at $\tilde A=0$, $4$ for $\tilde A$ in the vector subspace, $8$ for $A_t\neq0$ with $\langle\tilde A\rangle_{\natural}\neq0$ and $6$ for $A_t\neq0$ with $\langle\tilde A\rangle_{\natural}=0$; the four-dimensional image at $\tilde A=\vec e_x$ is $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t,\vec e_x,i\vec e_x\}$, not one of the remarkable subspaces. The traces are $0$ for the left family and $-4\mathrm{Re}(A_t)$ for the right; the kernels are read from the ranks. The operators do not multiply: the left defect is the associator and the right defect its mirror, the left case being forced by parity. The adjoint with respect to $K$ is $\langle L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_3\rangle_{\natural*}}$, which gives the $J$-self-adjointness with $J={}^{\natural}$ on the centre $\mathbb{C}e_t$. The group of $\mathbb{C}$-linear maps preserving $K$ has real dimension sixteen and its matrices satisfy $M^{\dagger}EM=E$; the structure group of the block contains the four automorphisms $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $L^{\star}_{\tilde A}(\tilde X)=\tilde A\star\tilde X$ | the left multiplication, conjugate-linear |
-| $R^{\star}_{\tilde A}(\tilde X)=\tilde X\star\tilde A$ | the right multiplication, linear |
-| $L^{\star}_{e_t}=\tilde X^{*}$, $R^{\star}_{e_t}=\tilde X^{\natural}$ | the two conjugations as operators |
+| $L^{\star}_{\tilde A}(\tilde Q_1)=\tilde A\star\tilde Q_1$ | the left multiplication, conjugate-linear |
+| $R^{\star}_{\tilde A}(\tilde Q_1)=\tilde Q_1\star\tilde A$ | the right multiplication, linear |
+| $L^{\star}_{e_t}=\tilde Q_1^{*}$, $R^{\star}_{e_t}=\tilde Q_1^{\natural}$ | the two conjugations as operators |
 | $\mathrm{rank}\,L^{\star}_{\tilde A}=\mathrm{rank}\,R^{\star}_{\tilde A}\in\{0,4,6,8\}$ | the rank of the two families |
 | $\mathrm{span}_{\mathbb{R}}\{e_t,ie_t,\vec e_x,i\vec e_x\}$ | the four-dimensional image at $\tilde A=\vec e_x$ |
 | $\mathrm{tr}\,L^{\star}_{\tilde A}=0$, $\mathrm{tr}\,R^{\star}_{\tilde A}=-4\mathrm{Re}(A_t)$ | the traces |
-| $\langle L^{\star}_{\tilde A}\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,L^{\star}_{\tilde A^{\natural}}\tilde Y\rangle_{\natural*}}$ | the adjoint with respect to $K$; $J={}^{\natural}$ |
+| $\langle L^{\star}_{\tilde A}\tilde Q_1,\tilde Q_3\rangle_{\natural*}=\overline{\langle\tilde Q_1,L^{\star}_{\tilde A^{\natural}}\tilde Q_3\rangle_{\natural*}}$ | the adjoint with respect to $K$; $J={}^{\natural}$ |
 | $M^{\dagger}EM=E$ | the condition of the group of linear maps preserving $K$ |
 | $\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\}$ | the automorphisms of the block exhibited |
 

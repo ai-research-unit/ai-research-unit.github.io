@@ -455,7 +455,7 @@ and preserves the Hermitian property, the trace, and the norm, hence the ball. W
 
 ### The Two Actors Are Not the Same Group
 
-The formula in question is not new here. *Biquaternion Rotations and Lorentz Transformations* defines the conjugation $\Phi_{\tilde{\Lambda}}(\tilde{B}) = \tilde{\Lambda}\tilde{B}\tilde{\Lambda}^{*}$ on the whole algebra and proves that it carries each of the two sectors to itself and preserves the norm on both. What the previous subsection adds is only the reading of that one map on the two sectors in turn, and the actor substituted into it. The two substitutions are:
+The formula in question is not new here. *Biquaternion Rotations and Lorentz Transformations* defines the conjugation $\Phi_{\tilde{\Lambda}}(\tilde{Q}_1) = \tilde{\Lambda}\tilde{Q}_1\tilde{\Lambda}^{*}$ on the whole algebra and proves that it carries each of the two sectors to itself and preserves the norm on both. What the previous subsection adds is only the reading of that one map on the two sectors in turn, and the actor substituted into it. The two substitutions are:
 
 $$
 \tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t
@@ -520,24 +520,24 @@ of trace $\cosh\phi$, a positive definite element of $\mathbb{M}_+$ that is not 
 
 ### The Sectors Are Anti-Isometric, Not Isomorphic
 
-The map above is a real-linear bijection, and it is tempting to read it as an isomorphism of the two sectors. It is not, and the failure is one line. Multiplication by $i$ is central, so $i(\tilde{Q}\tilde{Y}) = (i\tilde{Q})\tilde{Y} = \tilde{Q}(i\tilde{Y})$; but
+The map above is a real-linear bijection, and it is tempting to read it as an isomorphism of the two sectors. It is not, and the failure is one line. Multiplication by $i$ is central, so $i(\tilde{Q}\tilde{Q}_2) = (i\tilde{Q})\tilde{Q}_2 = \tilde{Q}(i\tilde{Q}_2)$; but
 
 $$
-(i\tilde{Q})(i\tilde{Y}) \;=\; i^2\,\tilde{Q}\tilde{Y} \;=\; -\,\tilde{Q}\tilde{Y},
+(i\tilde{Q})(i\tilde{Q}_2) \;=\; i^2\,\tilde{Q}\tilde{Q}_2 \;=\; -\,\tilde{Q}\tilde{Q}_2,
 $$
 
-which is not $i(\tilde{Q}\tilde{Y})$ unless $\tilde{Q}\tilde{Y} = 0$. So $i$ is not multiplicative, and the two sectors are not isomorphic as algebras. The correct product rule inside one sector is a **reversal**,
+which is not $i(\tilde{Q}\tilde{Q}_2)$ unless $\tilde{Q}\tilde{Q}_2 = 0$. So $i$ is not multiplicative, and the two sectors are not isomorphic as algebras. The correct product rule inside one sector is a **reversal**,
 
 $$
-(\tilde{Q}\tilde{Y})^{*} \;=\; \tilde{Y}\tilde{Q}
+(\tilde{Q}\tilde{Q}_2)^{*} \;=\; \tilde{Q}_2\tilde{Q}
 \qquad
-(\tilde{Q},\tilde{Y} \text{ in the same sector}),
+(\tilde{Q},\tilde{Q}_2 \text{ in the same sector}),
 $$
 
-from which three consequences follow at once. First, $\tilde{Q}\tilde{Y}$ is Hermitian exactly when $\tilde{Q}$ and $\tilde{Y}$ commute, and anti-Hermitian exactly when they anticommute. Second, both cases occur: $(ie_t)^2 = -e_t$ is Hermitian, a commuting pair, while $\vec e_x \vec e_y = \vec e_z$ is anti-Hermitian, an anticommuting pair. So neither sector is a subalgebra of $\mathbb{B}$, and a product of two material four-vectors can leave the material sector. Third, the commutator always returns:
+from which three consequences follow at once. First, $\tilde{Q}\tilde{Q}_2$ is Hermitian exactly when $\tilde{Q}$ and $\tilde{Q}_2$ commute, and anti-Hermitian exactly when they anticommute. Second, both cases occur: $(ie_t)^2 = -e_t$ is Hermitian, a commuting pair, while $\vec e_x \vec e_y = \vec e_z$ is anti-Hermitian, an anticommuting pair. So neither sector is a subalgebra of $\mathbb{B}$, and a product of two material four-vectors can leave the material sector. Third, the commutator always returns:
 
 $$
-(\tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q})^{*} \;=\; \tilde{Y}\tilde{Q} - \tilde{Q}\tilde{Y},
+(\tilde{Q}\tilde{Q}_2 - \tilde{Q}_2\tilde{Q})^{*} \;=\; \tilde{Q}_2\tilde{Q} - \tilde{Q}\tilde{Q}_2,
 \qquad\text{so}\qquad
 [\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_- .
 $$
@@ -567,7 +567,7 @@ The pure states are the boundary of the ball. Equivalently, they are the idempot
 
 Purity is $\mathrm{Tr}(\tilde{Ϛ}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$, so the Bloch radius is a measure of purity, and the linear entropy is $1 - \mathrm{Tr}(\tilde{Ϛ}^2) = 2\langle\tilde{Ϛ}\rangle_{\natural}$, twice the biquaternion norm. The von Neumann entropy depends only on $|\vec r|$, vanishing on the boundary and maximal, equal to $\log 2$, at the centre. The Uhlmann transition probability has the closed form $\tfrac{1}{2}\bigl(1 + \vec r\cdot\vec s + \sqrt{(1-|\vec r|^2)(1-|\vec s|^2)}\bigr)$, reducing on the boundary to $\cos^2(\theta/2)$. In every case the state space, its purity stratification, its entropy, and its fidelity are read off from the biquaternion norm and the trace on $\mathbb{M}_+$, without additional postulates.
 
-The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\tfrac{1}{2}(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$. The image is a state exactly at $ct = 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. On that slice the map turns positivity of a state into the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Y}) = -\tilde{Q}\tilde{Y} \neq i(\tilde{Q}\tilde{Y})$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
+The ball has a mirror interpretation in the material sector. The map $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ carries $\mathbb{M}_-$ onto $\mathbb{M}_+$, sends the material four-vector $ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$ to $\tfrac{1}{2}(ct\,e_t - i(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z))$, and satisfies $\mathrm{Tr}(\tilde{H}) = ct$ and $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$. The image is a state exactly at $ct = 1$, where it is $\tilde{Ϛ} = \tfrac{1}{2}(e_t + i\vec r)$ with $\vec r = -(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$. On that slice the map turns positivity of a state into the causal condition $ct \geq |x\,\vec e_x+y\,\vec e_y+z\,\vec e_z|$: the ball is the trace-one slice of the timelike cone, the pure states are its lightlike elements, and the maximally mixed state is the rest four-vector. The future cone maps onto the positive elements and the past cone onto the negative definite ones, so the trace sign, not the sign of the norm, selects the state sheet — which is why the past cone has no state interpretation here. Both interpretations use the one action $\Gamma_{\tilde{A}}(\tilde{Q}) = \tilde{A}\tilde{Q}\tilde{A}^{*}$, with a unit-norm rotor as actor on the material side and a unitary element on the informational side. The two actors are different groups: the unit-norm rotor gives the full Lorentz group, boosts included, while the unitary gives only the rotations of the ball, because unitarity is exactly the condition that preserves the trace and the trace-one slice is the state space. What the map is not is an algebra isomorphism: $i$ is not multiplicative, so $(i\tilde{Q})(i\tilde{Q}_2) = -\tilde{Q}\tilde{Q}_2 \neq i(\tilde{Q}\tilde{Q}_2)$; within a sector the product reverses the order, $(\tilde{Q}\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}$, so a product of two material elements need not be material, while the commutator always lands in $\mathbb{M}_-$. The two sectors are anti-isometric real quadratic spaces with $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, not isomorphic algebras.
 
 ## Summary of Notation
 
@@ -595,7 +595,7 @@ The ball has a mirror interpretation in the material sector. The map $\tilde{H} 
 | $[u|v] = u^{\dagger}\sigma_3 v$ | Indefinite $SU(1,1)$-invariant pairing on the spinor module |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | Mirror map carrying $\mathbb{M}_-$ onto $\mathbb{M}_+$ |
 | $\mathrm{Tr}(\tilde{H}) = ct$, $\langle\tilde{H}\rangle_{\natural} = -\tfrac{1}{4}\langle\tilde{Q}\rangle_{\natural}$ | Trace and norm under the mirror map |
-| $(\tilde{Q}\tilde{Y})^{*} = \tilde{Y}\tilde{Q}$ | Product rule within a sector; $[\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_-$ |
+| $(\tilde{Q}\tilde{Q}_2)^{*} = \tilde{Q}_2\tilde{Q}$ | Product rule within a sector; $[\mathbb{M}_\pm,\mathbb{M}_\pm] \subseteq \mathbb{M}_-$ |
 | $\tilde{Q} = r \exp(i\alpha)\tilde{B}\tilde{q}$ | Polar word: scale, central phase, boost factor, rotor |
 | $\tilde{B}$, $\tilde{q}$ | Boost factor, in $\mathbb{M}_+$ positive definite; rotor, in $Sp(1)$ |
 | $\tilde{B}\tilde{q}$, $\exp(i\alpha)\tilde{q}$ | The two actors: $SL(2,\mathbb{C})$ on the cone, $\mathrm{U}(2)$ on the slice; both meet at $Sp(1) = SU(2)$ |

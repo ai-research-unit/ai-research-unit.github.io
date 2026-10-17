@@ -61,7 +61,7 @@ The biquaternioid symmetric plain sesqualgebra is the structure $\tilde P\star\t
 | $R^{\star}_{\tilde A}$, $L^{\star}_{\tilde A}$ | the two one-sided operators of the band |
 | $\mathbb{M}_+$ | the informational sector; the state side |
 | $\mathrm{APS}$ | the antisymmetric sibling; the imaginary part, which carries the phase |
-| $e_t\star\tilde X=\tilde X^{*}$ | the absence of a unit |
+| $e_t\star\tilde Q_1=\tilde Q_1^{*}$ | the absence of a unit |
 
 ## Further Reading
 

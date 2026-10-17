@@ -124,7 +124,7 @@ a complex-linear map of the vector part, nonzero in general.
 
 *Proof.* $L_{\tilde A}^2\tilde R=\vec A\times\overline{\vec A\times\overline{\vec R}}$, and expanding the double cross product gives $\overline{\vec A}(\vec A,\vec R)-(\vec A,\overline{\vec A})\vec R$.
 
-**Remark (the composition of two left multiplications is complex-linear).** More generally $L_{\tilde A}L_{\tilde B}\tilde R=\vec A\times\overline{\vec B\times\overline{\vec R}}$, and the two conjugations cancel, so the composition is $\mathbb{C}$-linear; the family of left multiplications is therefore a real vector space whose products are complex-linear, stable under no complex-linear algebra structure on a single class.
+**Remark (the composition of two left multiplications is complex-linear).** More generally $L_{\tilde A}L_{\tilde Q_1}\tilde R=\vec A\times\overline{\vec Q_1\times\overline{\vec R}}$, and the two conjugations cancel, so the composition is $\mathbb{C}$-linear; the family of left multiplications is therefore a real vector space whose products are complex-linear, stable under no complex-linear algebra structure on a single class.
 
 **Proposition (the operator and its conjugate).** Define the **conjugate** of the left multiplication by $\overline{L}_{\tilde A}\tilde R=\overline{L_{\tilde A}\overline{\tilde R}}$, again conjugate-linear. Then $\overline{L}_{\tilde A}=L_{\overline{\vec A}}$, and
 

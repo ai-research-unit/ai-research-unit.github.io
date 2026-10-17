@@ -51,7 +51,7 @@ $$
 
 where the products on the right are the plain products of the algebra.
 
-**Proof.** For the left grouping, expanding the rule twice and using the anti-multiplicativity of ${}^{\natural}$ and $*$, together with $(\tilde X^{*})^{\natural} = \overline{\tilde X}$ and $(\tilde X^{\natural})^{*} = \overline{\tilde X}$ read on the coordinates,
+**Proof.** For the left grouping, expanding the rule twice and using the anti-multiplicativity of ${}^{\natural}$ and $*$, together with $(\tilde Q_1^{*})^{\natural} = \overline{\tilde Q_1}$ and $(\tilde Q_1^{\natural})^{*} = \overline{\tilde Q_1}$ read on the coordinates,
 
 $$
 (\tilde P \star \tilde Q) \star \tilde R = (\tilde P^{\natural}\tilde Q^{*})^{\natural}\tilde R^{*} = (\tilde Q^{*})^{\natural}(\tilde P^{\natural})^{\natural}\tilde R^{*} = \overline{\tilde Q}\,\tilde P\,\tilde R^{*} .

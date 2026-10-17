@@ -469,7 +469,7 @@ The **unit quaternions** (elements of $\mathbb{H}_{\mathbb{B}}$ with unit quater
 The **Lie algebra** of the unitary group is the space of anti-Hermitian elements, $\mathbb{M}_-$, with the commutator bracket:
 
 $$
-[\tilde{Q}, \tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q}, \qquad \tilde{Q}, \tilde{Y} \in \mathbb{M}_-.
+[\tilde{Q}, \tilde{Q}_1] = \tilde{Q}\tilde{Q}_1 - \tilde{Q}_1\tilde{Q}, \qquad \tilde{Q}, \tilde{Q}_1 \in \mathbb{M}_-.
 $$
 
 This is a Lie algebra structure on $\mathbb{M}_-$ (which is not a subalgebra of $\mathbb{B}$, but is a Lie algebra under the commutator). The exponential map sends $\mathbb{M}_-$ to the group of unitary biquaternions.
@@ -522,7 +522,7 @@ The intersection is the set of unit real quaternions. Its conjugation action rot
 **What distinguishes the two groups.** The two groups are subgroups of the same invertible elements, acting by the same formula, and what separates them is the algebraic character of the transformation. For a unitary rotor the conjugation is multiplicative,
 
 $$
-\tilde{U}\left(\tilde{Q}\tilde{Y}\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Y}\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
+\tilde{U}\left(\tilde{Q}\tilde{Q}_1\right)\tilde{U}^{*} = \left(\tilde{U}\tilde{Q}\tilde{U}^{*}\right)\left(\tilde{U}\tilde{Q}_1\tilde{U}^{*}\right), \qquad \tilde{U} \in \mathrm{U}(2),
 $$
 
 so it is an **automorphism** of $\mathbb{B}$; conjugation by a non-unitary element has no such property, and is only a **congruence**. The difference is visible in the quadratic forms each conjugation leaves invariant.

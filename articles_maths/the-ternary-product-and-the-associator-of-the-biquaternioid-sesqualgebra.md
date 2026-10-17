@@ -143,7 +143,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 ### The Biquaternions Are an Algebraic J*-Algebra
 
-**Theorem.** With the ternary product $\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the biquaternion algebra $\mathbb{B}$ is an algebraic $J^{*}$-algebra: the ternary product has the parity of §*The Ternary Product*, and it satisfies the Jordan triple identity.
+**Theorem.** With the ternary product $\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$, the biquaternion algebra $\mathbb{B}$ is an algebraic $J^{*}$-algebra: the ternary product has the parity of §*The Ternary Product*, and it satisfies the Jordan triple identity.
 
 **Proof.** The model theorem of *Algebraic J\*-Algebras*, §*The Derived Model*: for an associative $\mathbb{C}$-algebra with a conjugate-linear involution the formula $xyz\mapsto xy^{*}z$ is the **middle model**, and the middle model satisfies the Jordan triple identity, the proof being a finite expansion in the associativity of the algebra and the anti-multiplicativity of the involution. The biquaternion ternary product is the middle model read on $\mathbb{B}$ with the involution ${}^{*}$, so the identity holds and the parity was checked in §*The Ternary Product*. The abstract axioms of an algebraic $J^{*}$-algebra are those of *Algebraic J\*-Algebras*, §*The Axioms*.
 
@@ -151,7 +151,7 @@ for all $x,y,u,v,w$, the identity being the defining axiom of an algebraic $J^{*
 
 ### The Operator Interpretation
 
-**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Z\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$ and $\tilde X\mapsto\{\tilde X,\tilde Y,\tilde Z\}=\tilde X\tilde Y^{*}\tilde Z$, the ordinary left and right multiplications by $\tilde X\tilde Y^{*}$ and by $\tilde Y^{*}\tilde Z$; fixing the middle variable gives the conjugate-linear operator $\tilde Y\mapsto\{\tilde X,\tilde Y,\tilde Z\}$, which is the sandwich $S_{\tilde X,\tilde Z^{*}}$ of *The Sesquilinear Sandwich on the Biquaternioid*. The **quadratic representation** is the case $\tilde X=\tilde Z$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Z\mapsto\tilde Z\tilde Y^{*}\tilde Z=\tilde Z\star\tilde Y\star\tilde Z^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with the two parameters tied to one element.
+**Remark.** The ternary product has two operator readings that the corpus develops separately. Fixing the two outer variables gives the linear operators $\tilde Q_3\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$ and $\tilde Q_1\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}=\tilde Q_1\tilde Q_2^{*}\tilde Q_3$, the ordinary left and right multiplications by $\tilde Q_1\tilde Q_2^{*}$ and by $\tilde Q_2^{*}\tilde Q_3$; fixing the middle variable gives the conjugate-linear operator $\tilde Q_2\mapsto\{\tilde Q_1,\tilde Q_2,\tilde Q_3\}$, which is the sandwich $S_{\tilde Q_1,\tilde Q_3^{*}}$ of *The Sesquilinear Sandwich on the Biquaternioid*. The **quadratic representation** is the case $\tilde Q_1=\tilde Q_3$ of *The Ternary Product as an Operator*, and the conjugation of the middle variable is the adjoint of the ternary product of *The Adjoint of the Ternary Product*. On $\mathbb{B}$ the quadratic representation is $\tilde Q_3\mapsto\tilde Q_3\tilde Q_2^{*}\tilde Q_3=\tilde Q_3\star\tilde Q_2\star\tilde Q_3^{*}$, the sandwich of *The Sesquilinear Sandwich on the Biquaternioid* with the two parameters tied to one element.
 
 ## The Contrast with the Quaternionic Sibling
 
@@ -161,7 +161,7 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 ### The Failure for the Fourth Product
 
-**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde T,\tilde S,\tilde W)=(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$.
+**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde Q_1,\tilde Q_2,\tilde T,\tilde S,\tilde W)=(e_t,\vec e_x,e_t,\vec e_y,e_t)$ the left-hand side is $\vec e_z$ and the right-hand side is $-3\vec e_z$.
 
 **Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
 

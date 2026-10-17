@@ -34,13 +34,13 @@ The hypotheses are the standard Wightman ones: the fields are operator-valued di
 
 Cyclicity and separating are proved together, and both use the spectrum condition. The positivity of the energy-momentum spectrum makes the vacuum correlation functions the boundary values of functions analytic in a tube, and the edge-of-the-wedge theorem extends the vanishing of a correlation function from a real open set to the whole tube; that extension is what forces $\mathcal A(O)\Omega$ to be dense and what forces every local operator annihilating $\Omega$ to vanish.
 
-The separating direction is the half the modular structure uses directly, and it is the half the finite algebra cannot supply. Suppose $\tilde A\in\mathcal A(O)$ with $\tilde A\Omega=0$. For a test function $f$ supported near $O$ and a field operator $\tilde B$, consider the vacuum correlation function
+The separating direction is the half the modular structure uses directly, and it is the half the finite algebra cannot supply. Suppose $\tilde A\in\mathcal A(O)$ with $\tilde A\Omega=0$. For a test function $f$ supported near $O$ and a field operator $\tilde Q_1$, consider the vacuum correlation function
 $$
-F(x)=\big\langle\Omega\big|\,\tilde A(x)\,\tilde B\,\big|\Omega\big\rangle,
+F(x)=\big\langle\Omega\big|\,\tilde A(x)\,\tilde Q_1\,\big|\Omega\big\rangle,
 \qquad
 \tilde A(x)=\tilde U(x)\tilde A\,\tilde U(x)^{-1}.
 $$
-Its Fourier transform is supported in the closed forward light cone, by the positivity of the energy-momentum spectrum; the support condition makes $F$ the boundary value of a function analytic in a tube, and locality makes $F$ vanish on a spacelike-open set. The edge-of-the-wedge theorem then forces $F$ to vanish identically, and varying $\tilde B$ gives $\tilde A=0$. The two ingredients are not available in a general algebraic setting: positivity of the spectrum and locality. A finite-dimensional algebra carries neither, and this is the precise reason the separating half of the theorem has no finite-dimensional counterpart.
+Its Fourier transform is supported in the closed forward light cone, by the positivity of the energy-momentum spectrum; the support condition makes $F$ the boundary value of a function analytic in a tube, and locality makes $F$ vanish on a spacelike-open set. The edge-of-the-wedge theorem then forces $F$ to vanish identically, and varying $\tilde Q_1$ gives $\tilde A=0$. The two ingredients are not available in a general algebraic setting: positivity of the spectrum and locality. A finite-dimensional algebra carries neither, and this is the precise reason the separating half of the theorem has no finite-dimensional counterpart.
 
 ### Consequences
 
@@ -61,9 +61,9 @@ $$
 \qquad
 \mathcal{N}_{\tilde{Ϛ}}=\big\{\tilde A:\mathrm{Tr}(\tilde{Ϛ}\,\tilde A^{*}\tilde A)=0\big\},
 \qquad
-\langle\tilde A,\tilde B\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde B\big),
+\langle\tilde A,\tilde Q_1\rangle_{\tilde{Ϛ}}=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A^{*}\tilde Q_1\big),
 $$
-with representation $\pi_{\tilde{Ϛ}}(\tilde A)[\tilde B]=[\tilde A\tilde B]$ and cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde A]=\pi_{\tilde{Ϛ}}(\tilde A)\Omega_{\tilde{Ϛ}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}}(\mathbb{B})\Omega_{\tilde{Ϛ}}=\mathcal H_{\tilde{Ϛ}}$ exactly, not merely densely.
+with representation $\pi_{\tilde{Ϛ}}(\tilde A)[\tilde Q_1]=[\tilde A\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde A]=\pi_{\tilde{Ϛ}}(\tilde A)\Omega_{\tilde{Ϛ}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}}(\mathbb{B})\Omega_{\tilde{Ϛ}}=\mathcal H_{\tilde{Ϛ}}$ exactly, not merely densely.
 
 This is the finite-dimensional form of the cyclic half of the theorem, and in the finite-dimensional setting it is stronger than the field statement: the span is the whole space, not a dense subspace. The reason is that $\mathbb{B}$ is finite-dimensional and the quotient is a closed subspace; there is no room for a topological closure to differ from the algebraic span.
 
@@ -156,17 +156,17 @@ The generator is the commutator with the modular Hamiltonian, which is the finit
 
 ### The KMS Property of the Cyclic Vector
 
-A cyclic and separating vector of a modular algebra is a KMS state, at inverse temperature one in the modular parameter, for the inverse of the modular flow — the orientation convention of the KMS and Tomita–Takesaki companion articles, in which it is $\sigma_{-t}$ that carries the boundary relation. In the finite model this is a computation rather than an assertion. Let $\tilde A,\tilde B\in\mathbb{B}$ and let
+A cyclic and separating vector of a modular algebra is a KMS state, at inverse temperature one in the modular parameter, for the inverse of the modular flow — the orientation convention of the KMS and Tomita–Takesaki companion articles, in which it is $\sigma_{-t}$ that carries the boundary relation. In the finite model this is a computation rather than an assertion. Let $\tilde A,\tilde Q_1\in\mathbb{B}$ and let
 $$
-F_{\tilde A\tilde B}(t)=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A\,\alpha_t(\tilde B)\big),
+F_{\tilde A\tilde Q_1}(t)=\mathrm{Tr}\big(\tilde{Ϛ}\,\tilde A\,\alpha_t(\tilde Q_1)\big),
 \qquad
-\alpha_t\big(\tilde B\big)=\tilde{Ϛ}^{-it}\tilde B\,\tilde{Ϛ}^{\,it},
+\alpha_t\big(\tilde Q_1\big)=\tilde{Ϛ}^{-it}\tilde Q_1\,\tilde{Ϛ}^{\,it},
 $$
 the orientation convention of the KMS companion article, in which the correlation function is analytic in $0<\mathrm{Im}\,t<1$ and its boundary values obey
 $$
-F_{\tilde A\tilde B}(t+i)=F_{\tilde B\tilde A}(-t).
+F_{\tilde A\tilde Q_1}(t+i)=F_{\tilde Q_1\tilde A}(-t).
 $$
-This was checked on the faithful state with $\vec r=(0.3,-0.2,0.5)$ and the Hermitian pair $\tilde A=i \vec e_x$, $\tilde B=i \vec e_y$, both in $\mathbb{M}_+$: at $t=0.4$ both sides are $-0.4668024589-0.4724537771\,i$, the difference between them being below $10^{-14}$. The finite model thus exhibits the whole chain — a cyclic and separating vector, a modular flow, and the KMS property — for the faithful states of the biquaternion algebra.
+This was checked on the faithful state with $\vec r=(0.3,-0.2,0.5)$ and the Hermitian pair $\tilde A=i \vec e_x$, $\tilde Q_1=i \vec e_y$, both in $\mathbb{M}_+$: at $t=0.4$ both sides are $-0.4668024589-0.4724537771\,i$, the difference between them being below $10^{-14}$. The finite model thus exhibits the whole chain — a cyclic and separating vector, a modular flow, and the KMS property — for the faithful states of the biquaternion algebra.
 
 For the field vacuum the same chain holds with the inverse temperature fixed to $2\pi$ in units in which the modular flow is the boost: the state is KMS at $\beta=2\pi$ for the wedge modular flow, which is the Bisognano–Wichmann statement, and the thermal interpretation is the Unruh effect. Those are the companion articles' subjects and are referred to, not re-derived.
 

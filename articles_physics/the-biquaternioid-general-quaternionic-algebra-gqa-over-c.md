@@ -6,14 +6,14 @@ The biquaternioid complex space carries eleven structures beside the ordinary pr
 
 The mathematics of the structure is owned by the group *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ (informational) and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ (material) with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t=1$, $\vec e_k^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ (informational) and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ (material) with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde Q_1)=Q_{1t}$. All conventions are those of *Conventions in the Biquaternion Universe*.
 
 ## The Results
 
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-bilinear — it conjugates no coefficient — and it is not associative. Its class among the twelve structures is that of a general algebra. Owner: *Introduction to the General Quaternionic Algebra*.
-- **The unit.** $e_t$ is a **left** identity, $e_t\star\tilde X=\tilde X$, and not a right one, $\tilde X\star e_t=\tilde X^{\natural}$. The structure therefore has no two-sided unit, and this is the algebraic mark of the orientation of the material composition. Owner: *Introduction to the General Quaternionic Algebra*.
+- **The unit.** $e_t$ is a **left** identity, $e_t\star\tilde Q_1=\tilde Q_1$, and not a right one, $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$. The structure therefore has no two-sided unit, and this is the algebraic mark of the orientation of the material composition. Owner: *Introduction to the General Quaternionic Algebra*.
 - **The algebraic norm and invertibility.** The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$, which is **multiplicative** for the product, $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$, and is reversed by the central generator, $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$. The invertibility criterion is $\langle\tilde Q\rangle_{\natural}\neq0$, with the inverse $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. Owner: *Norm and Invertibility in the General Quaternionic Algebra*.
 - **Zero divisors.** The zero-divisor set is the cone $\{\langle\tilde Q\rangle_{\natural}=0\}$: the lightlike parameters, the causal cone of the structure. Owner: *Zero Divisors of the General Quaternionic Algebra*.
 - **Annihilators.** The left, the right and the two-sided annihilator of an element and the radical of the product. Owner: *Annihilators of the General Quaternionic Algebra*.
@@ -33,7 +33,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 
 ### Operators
 
-- **The two-sided and the one-sided operators.** The operators $\tilde X\mapsto\tilde A\star\tilde X$ and $\tilde X\mapsto\tilde X\star\tilde A$, their adjoints and their types; the left family is the opposite monoid and the right one does not close. Owners: *Two-Sided Operators on the General Quaternionic Algebra*, *One-Sided Operators on the General Quaternionic Algebra*.
+- **The two-sided and the one-sided operators.** The operators $\tilde Q_1\mapsto\tilde A\star\tilde Q_1$ and $\tilde Q_1\mapsto\tilde Q_1\star\tilde A$, their adjoints and their types; the left family is the opposite monoid and the right one does not close. Owners: *Two-Sided Operators on the General Quaternionic Algebra*, *One-Sided Operators on the General Quaternionic Algebra*.
 - **The pin and spin groups.** The two groups of the structure and the sandwich action they generate. Owner: *The Pin and Spin Groups of the General Quaternionic Algebra*.
 
 ### Representations
@@ -45,8 +45,8 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 - **The interval is the square of the composition, the mass its charge and the sign the sector.** The norm is multiplicative, so the casual character of a product is the product of the causal characters of its factors; the division of the parameters into the timelike, the null and the spacelike is therefore compatible with the composition. The central generator reverses the norm, so the exchange that ticks the clock also carries the sign of the interval, and the signature flip between the two sectors is one application of the tick. The interval is the form that a change of the local complex structure moves, so its sign at a point is data of the embedding and not of the algebra.
 - **The square map is the Born/measurement arrow.** The square $\tilde Q\mapsto\tilde Q^{2}$ is the only algebraic map that takes a material element to an informational one, so it is the framework's candidate for the algebraic step from a process to a probability. Boundary: the corpus's Born rule is the trace formula and not the square map alone; the reading names a shape and claims no derivation.
 - **The material composition is oriented and cannot measure.** With no right unit and two slots that are not the same, a form of this product cannot be a probability; a measurement needs positivity and idempotents, and the material composition has neither, while the informational sector has both. The absence is informative rather than defective. The composition defines a **monoid of operators and not an algebra**: the operations compose and the elements do not.
-- **The operators that preserve the interval are the Lorentz transformations.** The multiplications by a parameter of norm one preserve the interval, and the set of parameters on which the interval vanishes is the causal cone; left multiplication by a null parameter collapses the form, $\langle L_{\tilde P}\tilde X\rangle_{\natural}=0$ for every $\tilde X$, which is the operator picture of lightlike propagation.
-- **The sandwich is the inner automorphism scaled by the norm.** The sandwich $\tilde X\mapsto\tilde A\tilde X\tilde A^{\natural}$ is quadratic in its parameter and defined on every element; on the norm-one slice — the Lorentz parameters — it is the inner automorphism, and off the slice the two differ by the norm, which is the mass.
+- **The operators that preserve the interval are the Lorentz transformations.** The multiplications by a parameter of norm one preserve the interval, and the set of parameters on which the interval vanishes is the causal cone; left multiplication by a null parameter collapses the form, $\langle L_{\tilde P}\tilde Q_1\rangle_{\natural}=0$ for every $\tilde Q_1$, which is the operator picture of lightlike propagation.
+- **The sandwich is the inner automorphism scaled by the norm.** The sandwich $\tilde Q_1\mapsto\tilde A\tilde Q_1\tilde A^{\natural}$ is quadratic in its parameter and defined on every element; on the norm-one slice — the Lorentz parameters — it is the inner automorphism, and off the slice the two differ by the norm, which is the mass.
 - **The type criterion is the split of the interval.** A one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint exactly for a pure one, so the two populated sectors are the centre, which carries the time direction, and the vector subspace, which carries the three spatial directions. Read on the clock, the bracket touches no central coordinate and is invisible to the exchange.
 
 ## Summary
@@ -58,13 +58,13 @@ The biquaternioid general quaternionic algebra is the structure $\tilde P\star\t
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic product, $\mathrm{GQA}$ |
-| $e_t\star\tilde X=\tilde X$; $\tilde X\star e_t=\tilde X^{\natural}$ | a left unit; no right unit |
+| $e_t\star\tilde Q_1=\tilde Q_1$; $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$ | a left unit; no right unit |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$ | the algebraic norm; the interval |
 | $\langle\tilde P\star\tilde Q\rangle_{\natural}=\langle\tilde P\rangle_{\natural}\langle\tilde Q\rangle_{\natural}$ | multiplicativity of the norm |
 | $\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}$ | the norm reversal of the central generator |
 | $\{\langle\tilde Q\rangle_{\natural}=0\}$ | the causal cone; the lightlike parameters |
-| $L_{\tilde P}\tilde X=\tilde P^{\natural}\tilde X$ | the left multiplication; $\tilde P$ of norm one gives a Lorentz transformation |
-| $\tilde A\tilde X\tilde A^{\natural}$ | the sandwich; the inner automorphism scaled by the norm |
+| $L_{\tilde P}\tilde Q_1=\tilde P^{\natural}\tilde Q_1$ | the left multiplication; $\tilde P$ of norm one gives a Lorentz transformation |
+| $\tilde A\tilde Q_1\tilde A^{\natural}$ | the sandwich; the inner automorphism scaled by the norm |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the informational and material sectors |
 | $\langle\tilde P,\tilde Q\rangle$, $\langle\tilde P,\tilde Q\rangle_{\natural}$, $\langle\tilde P,\tilde Q\rangle_{*}$, $\langle\tilde P,\tilde Q\rangle_{\natural*}$ | the four algebraic norms of the grid |
 

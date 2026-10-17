@@ -43,7 +43,7 @@ $$
 
 which is the general definition of *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, §*The Two Parts Under Their Own Names*, read on the biquaternion product with the conjugation $\bar{\cdot}$.
 
-The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q\tilde P^{*}}=(\tilde P\tilde Q^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde X})=\tilde X^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde X-\tilde X^{\natural}\bigr)=\mathrm{Vect}(\tilde X)$ at $\tilde X=\tilde P\tilde Q^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the natural conjugate of the same value, and the two halves of the same element fall out.
+The equivalence of the two displays is the definition of the vector part. Indeed $\overline{\tilde Q\tilde P^{*}}=(\tilde P\tilde Q^{*})^{\natural}$ for the biquaternion product, since $\natural(\overline{\tilde Q_1})=\tilde Q_1^{*}$ and $\natural$ is an anti-automorphism, so that $\tfrac12\bigl(\tilde Q_1-\tilde Q_1^{\natural}\bigr)=\mathrm{Vect}(\tilde Q_1)$ at $\tilde Q_1=\tilde P\tilde Q^{*}$. That identity is the reason the two sesqualgebra rows of the row table admit the exchange *read on the value*: the conjugate transpose of the value is the natural conjugate of the same value, and the two halves of the same element fall out.
 
 Written on the coordinates, collecting the scalar and the vector parts and conjugating the second one,
 
@@ -135,10 +135,10 @@ $$
 
 The formula, the criterion for the vanishing and the cone that the diagonal traces are the subject of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*, below in this block, where they are computed; here the non-vanishing alone is recorded, because it is what forbids reading the block as a Lie product.
 
-**Theorem (the Jacobi identity fails).** Write, for an operation $b$, the **cyclic sum** at a triple $(\tilde X,\tilde Y,\tilde Z)$ as
+**Theorem (the Jacobi identity fails).** Write, for an operation $b$, the **cyclic sum** at a triple $(\tilde Q_1,\tilde Q_2,\tilde Q_3)$ as
 
 $$
-\mathrm{cyc}\,\mathfrak{b}(\tilde X,\tilde Y,\tilde Z)=b\bigl(\mathfrak{b}(\tilde X,\tilde Y),\tilde Z\bigr)+b\bigl(\mathfrak{b}(\tilde Y,\tilde Z),\tilde X\bigr)+b\bigl(\mathfrak{b}(\tilde Z,\tilde X),\tilde Y\bigr),
+\mathrm{cyc}\,\mathfrak{b}(\tilde Q_1,\tilde Q_2,\tilde Q_3)=b\bigl(\mathfrak{b}(\tilde Q_1,\tilde Q_2),\tilde Q_3\bigr)+b\bigl(\mathfrak{b}(\tilde Q_2,\tilde Q_3),\tilde Q_1\bigr)+b\bigl(\mathfrak{b}(\tilde Q_3,\tilde Q_1),\tilde Q_2\bigr),
 $$
 
 the outer form of *The Symmetric and Antisymmetric Parts of an Algebra Product*, §*Lie-Admissible Algebras*, with the factor $\tfrac12$ carried by $b$ itself. Then
@@ -195,7 +195,7 @@ The antisymmetric part of the general plain sesquilinear product is $\tilde P\di
 | $\mathrm{Vect}(\mathbb{B}),\mathbb{C}_{\mathbb{B}}$ | the vector subspace and the centre of the remarkable subspaces |
 | $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$ | conjugate-alternation, the law the block satisfies |
 | $\tilde Q\diamond\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the square |
-| $\mathrm{cyc}\,b$ | the cyclic sum $b(\mathfrak{b}(\tilde X,\tilde Y),\tilde Z)+b(\mathfrak{b}(\tilde Y,\tilde Z),\tilde X)+b(\mathfrak{b}(\tilde Z,\tilde X),\tilde Y)$ |
+| $\mathrm{cyc}\,b$ | the cyclic sum $b(\mathfrak{b}(\tilde Q_1,\tilde Q_2),\tilde Q_3)+b(\mathfrak{b}(\tilde Q_2,\tilde Q_3),\tilde Q_1)+b(\mathfrak{b}(\tilde Q_3,\tilde Q_1),\tilde Q_2)$ |
 
 ## Further Reading
 

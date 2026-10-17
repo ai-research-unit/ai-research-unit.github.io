@@ -100,14 +100,14 @@ $$
 =\mathrm{Sc}\bigl(\mathrm{SPA}(\overline{\tilde P},\tilde A)\,\mathrm{SPA}(\tilde Q,\overline{\tilde A})\bigr),
 $$
 
-where $\mathrm{SPA}(\tilde X,\tilde Y)=\tfrac12(\tilde X\tilde Y+\tilde Y\tilde X)$ is the symmetric plain product, and the defect is this value minus $\langle\tilde P,\tilde Q\rangle_{\natural*}$.
+where $\mathrm{SPA}(\tilde Q_1,\tilde Q_2)=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ is the symmetric plain product, and the defect is this value minus $\langle\tilde P,\tilde Q\rangle_{\natural*}$.
 
 *Proof.* The two identities
 
 $$
-(\tilde A\star\tilde X)^{\natural}=\mathrm{SPA}(\overline{\tilde X},\tilde A),
+(\tilde A\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde A),
 \qquad
-(\tilde A\star\tilde X)^{*}=\mathrm{SPA}(\tilde X,\overline{\tilde A})
+(\tilde A\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde A})
 $$
 
 follow from the definition of the block and the two anti-automorphism properties of ${}^{\natural}$ and ${}^{*}$. Then $\langle\tilde A\star\tilde P,\tilde A\star\tilde Q\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A\star\tilde P)^{\natural}(\tilde A\star\tilde Q)^{*}\bigr)$, which is the displayed value. On the pair $\tilde A=\tilde P=e_t+\vec e_x$, $\tilde Q=\vec e_x$ one has $\tilde A\star\tilde P=-2\vec e_x$ and $\tilde A\star\tilde Q=-e_t-\vec e_x$, so $\langle\tilde A\star\tilde P,\tilde A\star\tilde Q\rangle_{\natural*}=-2$ against $\langle\tilde P,\tilde Q\rangle_{\natural*}=\langle e_t+\vec e_x,\vec e_x\rangle_{\natural*}=-1$: the defect is $-1$ and the invariance fails.
@@ -115,22 +115,22 @@ follow from the definition of the block and the two anti-automorphism properties
 **Theorem (the compatibility that does hold).** The block and the form are tied by the adjoint relation
 
 $$
-\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,\tilde A^{\natural}\star\tilde Y\rangle_{\natural*}}.
+\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}.
 $$
 
-*Proof.* Use the two identities of the previous theorem, $(\tilde A\star\tilde X)^{\natural}=\mathrm{SPA}(\overline{\tilde X},\tilde A)$ and $(\tilde A\star\tilde X)^{*}=\mathrm{SPA}(\tilde X,\overline{\tilde A})$, together with $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$, the value of the natural conjugation on the two scalar products, and the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$. On the one hand
+*Proof.* Use the two identities of the previous theorem, $(\tilde A\star\tilde Q_1)^{\natural}=\mathrm{SPA}(\overline{\tilde Q_1},\tilde A)$ and $(\tilde A\star\tilde Q_1)^{*}=\mathrm{SPA}(\tilde Q_1,\overline{\tilde A})$, together with $\mathrm{Sc}(U)=\mathrm{Sc}(U^{\natural})$, the value of the natural conjugation on the two scalar products, and the cyclic invariance $\mathrm{Sc}(UV)=\mathrm{Sc}(VU)$. On the one hand
 
 $$
-\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A\star\tilde X)^{\natural}\tilde Y^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde X}\tilde A+\tilde A\overline{\tilde X})\tilde Y^{*}\bigr),
+\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A\star\tilde Q_1)^{\natural}\tilde Q_2^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_1}\tilde A+\tilde A\overline{\tilde Q_1})\tilde Q_2^{*}\bigr),
 $$
 
 and on the other, with the same identity read at the element $\tilde A^{\natural}$,
 
 $$
-\langle\tilde A^{\natural}\star\tilde Y,\tilde X\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A^{\natural}\star\tilde Y)^{\natural}\tilde X^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Y}\tilde A^{\natural}+\tilde A^{\natural}\overline{\tilde Y})\tilde X^{*}\bigr).
+\langle\tilde A^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\mathrm{Sc}\bigl((\tilde A^{\natural}\star\tilde Q_2)^{\natural}\tilde Q_1^{*}\bigr)=\tfrac12\,\mathrm{Sc}\bigl((\overline{\tilde Q_2}\tilde A^{\natural}+\tilde A^{\natural}\overline{\tilde Q_2})\tilde Q_1^{*}\bigr).
 $$
 
-The two agree term by term: the natural conjugation sends $\overline{\tilde X}\tilde A\tilde Y^{*}$ to $\overline{\tilde Y}\tilde A^{\natural}\tilde X^{*}$ and $\tilde A\overline{\tilde X}\tilde Y^{*}$ to $\overline{\tilde Y}\tilde X^{*}\tilde A^{\natural}$, since $(\overline{\tilde X})^{\natural}=\tilde X^{*}$ and $(\tilde Y^{*})^{\natural}=\overline{\tilde Y}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\langle\tilde A^{\natural}\star\tilde Y,\tilde X\rangle_{\natural*}=\overline{\langle\tilde X,\tilde A^{\natural}\star\tilde Y\rangle_{\natural*}}$ by the Hermitian symmetry of $\langle\cdot,\cdot\rangle_{\natural*}$, which is the display.
+The two agree term by term: the natural conjugation sends $\overline{\tilde Q_1}\tilde A\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde A^{\natural}\tilde Q_1^{*}$ and $\tilde A\overline{\tilde Q_1}\tilde Q_2^{*}$ to $\overline{\tilde Q_2}\tilde Q_1^{*}\tilde A^{\natural}$, since $(\overline{\tilde Q_1})^{\natural}=\tilde Q_1^{*}$ and $(\tilde Q_2^{*})^{\natural}=\overline{\tilde Q_2}$, and the scalar part is invariant under it; the second pair is then carried one onto the other by the cyclic invariance. Hence $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde A^{\natural}\star\tilde Q_2,\tilde Q_1\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ by the Hermitian symmetry of $\langle\cdot,\cdot\rangle_{\natural*}$, which is the display.
 
 **Remark.** The invariance fails, and the compatibility that holds is the adjoint relation rather than the multiplicativity. The distinction is the one of the whole block: the product is conjugate-linear in one slot, so its left multiplications do not preserve $\langle\cdot,\cdot\rangle_{\natural*}$ the way a group of linear maps does, and the form records the failure through the two identities of the adjoint theorem.
 
@@ -174,7 +174,7 @@ The first two are the two symmetric bilinear forms of the algebra and the last t
 
 ## Summary
 
-is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_t|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-\langle\tilde P,\tilde Q\rangle_{\natural*}$, and the compatibility that holds is the adjoint relation $\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,\tilde A^{\natural}\star\tilde Y\rangle_{\natural*}}$. Of the four scalar parts of the row, $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
+is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_t\overline{Q_t}-(\vec P,\overline{\vec Q})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_t|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-\langle\tilde P,\tilde Q\rangle_{\natural*}$, and the compatibility that holds is the adjoint relation $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$. Of the four scalar parts of the row, $\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{*}=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
 
 ## Summary of Notation
 
@@ -187,7 +187,7 @@ is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tild
 | $\mathrm{Sc}(\mathrm{SPA})=P_tQ_t-(\vec P,\vec Q)$ | the first symmetric bilinear scalar part |
 | $\mathrm{Sc}(\mathrm{SQA})=P_tQ_t+(\vec P,\vec Q)$ | the second symmetric bilinear scalar part |
 | $\langle\tilde P,\tilde Q\rangle_{*}=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})$ | the other Hermitian form, the scalar part of $\mathrm{SPS}$ |
-| $\langle\tilde A\star\tilde X,\tilde Y\rangle_{\natural*}=\overline{\langle\tilde X,\tilde A^{\natural}\star\tilde Y\rangle_{\natural*}}$ | the adjoint relation, the compatibility that holds |
+| $\langle\tilde A\star\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\overline{\langle\tilde Q_1,\tilde A^{\natural}\star\tilde Q_2\rangle_{\natural*}}$ | the adjoint relation, the compatibility that holds |
 
 ## Further Reading
 

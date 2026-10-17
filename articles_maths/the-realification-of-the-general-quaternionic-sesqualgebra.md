@@ -20,9 +20,9 @@ $$
 $$
 with the same addition and the same product: **restriction of scalars**, no new multiplication and a smaller field. The complex structure is
 $$
-J:\tilde Y\longmapsto i\tilde Y,\qquad J^2=-\mathrm{id},
+J:\tilde Q_1\longmapsto i\tilde Q_1,\qquad J^2=-\mathrm{id},
 $$
-an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ of square $-\mathrm{id}$; it commutes with itself, so it is $\mathbb{C}$-linear by the criterion $TJ=JT$, and it is **not** a left multiplication of this product, since $L_{ie_t}(\tilde Y)=(ie_t)^{\natural}\tilde Y^{*}=i\tilde Y^{*}\neq i\tilde Y$: the scalar action of the block is one-sided, and the complex structure belongs to the underlying space and not to the multiplication.
+an $\mathbb{R}$-linear endomorphism of $\mathbb{R}^8$ of square $-\mathrm{id}$; it commutes with itself, so it is $\mathbb{C}$-linear by the criterion $TJ=JT$, and it is **not** a left multiplication of this product, since $L_{ie_t}(\tilde Q_1)=(ie_t)^{\natural}\tilde Q_1^{*}=i\tilde Q_1^{*}\neq i\tilde Q_1$: the scalar action of the block is one-sided, and the complex structure belongs to the underlying space and not to the multiplication.
 
 The product is $\mathbb{C}$-linear in its first slot and $\varsigma$-semilinear in its second. Over $\mathbb{R}$ the involution $\varsigma$ restricts to the identity — the only automorphism of $\mathbb{R}$ is the identity — and a semilinear law with the identity involution **is** a bilinear law. The passage therefore **changes the kind** of this product: a **sesqualgebra over $(\mathbb{C},\varsigma)$** over $\mathbb{C}$, an **$\mathbb{R}$-algebra** on $\mathbb{R}^8$ in the broad sense. The distinction does not vanish; it migrates from the field to the scalar line, where it is the conjugate-linearity of the second slot over $\mathbb{C}_{\mathbb{B}}$, equivalently the anticommutation $LJ=-JL$ of every left multiplication with the complex structure, proved in §*The Second Slot and the Two One-Sided Multiplications* below. This is the general effect of §*The Effect on the Twelve Algebraic Structures* of *The Realification and the Effect of the Change of Scalars*, of which the block is the instance in the quaternionic sesquilinear row.
 
@@ -39,15 +39,15 @@ The product is $\mathbb{R}$-bilinear, because a $\mathbb{C}$-sesquilinear law is
 
 The last entry is worth a word, because the real reading states it in the language of the next section. The composition of two left multiplications is
 $$
-L_{\tilde A}\circ L_{\tilde B}(\tilde X)=\tilde A^{\natural}\tilde X\,\overline{\tilde B},
+L_{\tilde A}\circ L_{\tilde Q_2}(\tilde Q_3)=\tilde A^{\natural}\tilde Q_3\,\overline{\tilde Q_2},
 $$
-which is $\mathbb{C}$-linear in $\tilde X$ — the two conjugate-linear maps compose to a linear one — so the composite is a nonzero linear map wherever $\tilde A$ and $\tilde B$ are nonzero, and it is then no left multiplication, every left multiplication with a nonzero parameter being conjugate-linear; the family therefore contains no identity and is not closed under composition, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composite lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no nonzero left multiplication does.
+which is $\mathbb{C}$-linear in $\tilde Q_3$ — the two conjugate-linear maps compose to a linear one — so the composite is a nonzero linear map wherever $\tilde A$ and $\tilde Q_2$ are nonzero, and it is then no left multiplication, every left multiplication with a nonzero parameter being conjugate-linear; the family therefore contains no identity and is not closed under composition, and the block has the element theory of the sesquilinear structures without their operator theory. Read over $\mathbb{R}$, the composite lies in the commuting part of $\operatorname{End}_{\mathbb{R}}(\mathbb{R}^8)$ and no nonzero left multiplication does.
 
 ## The Second Slot and the Two One-Sided Multiplications
 
 Write
 $$
-L_{\tilde P}:\tilde X\longmapsto\tilde P\star\tilde X,\qquad R_{\tilde Q}:\tilde X\longmapsto\tilde X\star\tilde Q
+L_{\tilde P}:\tilde Q_3\longmapsto\tilde P\star\tilde Q_3,\qquad R_{\tilde Q}:\tilde Q_3\longmapsto\tilde Q_3\star\tilde Q
 $$
 for the left and the right multiplication.
 

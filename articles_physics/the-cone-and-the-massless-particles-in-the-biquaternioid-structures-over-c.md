@@ -103,7 +103,7 @@ two-sided inverse at all, and its one-sided inverse exists exactly off the cone,
 is not the distinguishing signal here. The operator signal agrees with the composition: the left
 multiplication is injective exactly off the cone, so the cone is the boundary of invertibility of the
 *operator* as well. What distinguishes the probability band is the second signal, the rank of the
-sesquilinear square: the square $\tilde X\star\tilde X$ is a Hermitian positive element of rank two off the
+sesquilinear square: the square $\tilde Q_1\star\tilde Q_1$ is a Hermitian positive element of rank two off the
 cone and of rank one on it. *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* proves the criterion and reads
 the rank drop as a mass label, rank two massive and rank one massless.
 
@@ -185,7 +185,7 @@ $\mathrm{APA}$ and $\mathrm{AQS}$.
 ### The twelve rows in one table
 
 The cone is one set, and the twelve rows meet it in different ways. The measurement is the **rank of the
-left multiplication**, the map $L_{\tilde P}(\tilde X)=\tilde P\star\tilde X$ read on the eight real
+left multiplication**, the map $L_{\tilde P}(\tilde Q_1)=\tilde P\star\tilde Q_1$ read on the eight real
 parameters of the algebra. Off the cone a row separates invertible from singular when that rank is eight,
 and the table gives the rank for a generic operand off the cone and for an operand on it; the two
 algebra-valued symmetric rows take two values on the cone, and their entry carries both.
@@ -389,14 +389,14 @@ In the composition band the nilpotent structure is elementary: an element square
 is pure and isotropic,
 
 $$
-\tilde X^{2}=0\quad(\tilde X\neq0)\ \Longleftrightarrow\ \tilde X\ \text{pure and isotropic}.
+\tilde Q_1^{2}=0\quad(\tilde Q_1\neq0)\ \Longleftrightarrow\ \tilde Q_1\ \text{pure and isotropic}.
 $$
 
-*Pure* means the scalar part vanishes, $\mathrm{Sc}(\tilde X)=X_0=0$. *Isotropic* means the vector part
-has vanishing square, $\sum_{k}X_k^{2}=0$. The two conditions together are the criterion
-$\det\mathsf{M}_2(\tilde X)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde X)=0$, which for a $2\times2$ matrix
+*Pure* means the scalar part vanishes, $\mathrm{Sc}(\tilde Q_1)=Q_{1,0}=0$. *Isotropic* means the vector part
+has vanishing square, $\sum_{k}Q_{1k}^{2}=0$. The two conditions together are the criterion
+$\det\mathsf{M}_2(\tilde Q_1)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde Q_1)=0$, which for a $2\times2$ matrix
 is exactly nilpotence, and the recomputation below confirms both directions on random elements and on the
-parametrised cone $X_1=1$, $X_2=i\cos t$, $X_3=i\sin t$, which satisfies $\sum_k X_k^{2}=1-1=0$ for every
+parametrised cone $Q_{1,1}=1$, $Q_{1,2}=i\cos t$, $Q_{1,3}=i\sin t$, which satisfies $\sum_k Q_{1k}^{2}=1-1=0$ for every
 $t$. The pure isotropic cone is therefore the square-zero locus, and its nilpotent index is **two**: the
 first power is nonzero and the second vanishes.
 
@@ -411,28 +411,28 @@ In the probability band the situation is opposite at the first step and sharper 
 part of the sesquilinear square is a sum of moduli,
 
 $$
-\mathrm{Sc}(\tilde X\star\tilde X)=\mathrm{Sc}(\tilde X\tilde X^{*})=\sum_\mu\lvert X_\mu\rvert^{2},
+\mathrm{Sc}(\tilde Q_1\star\tilde Q_1)=\mathrm{Sc}(\tilde Q_1\tilde Q_1^{*})=\sum_\mu\lvert Q_{1\mu}\rvert^{2},
 $$
 
 so it is positive for every nonzero element and vanishes only at the origin. Hence there is **no nonzero
 element whose sesquilinear square vanishes**: the square-zero elements of the composition band have no
 counterpart here at all.
 
-What the same pure isotropic cone does carry in this band is a higher index. For $\tilde X$ pure and
+What the same pure isotropic cone does carry in this band is a higher index. For $\tilde Q_1$ pure and
 isotropic, the first sesquilinear power is nonzero because its scalar part is a sum of moduli, while the
 third power vanishes,
 
 $$
-\tilde X\star\tilde X\neq0,
+\tilde Q_1\star\tilde Q_1\neq0,
 \qquad
-(\tilde X\star\tilde X)\star\tilde X=0,
+(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1=0,
 $$
 
 so the cone is nilpotent of **index three**. The matrix model shows why in one line:
-$\mathsf{M}_2(\tilde X)$ is nilpotent, $\mathsf{M}_2(\tilde X\star\tilde X)$ is
-$\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger}$, and the product
-$\mathsf{M}_2(\tilde X)\mathsf{M}_2(\tilde X)^{\dagger}\mathsf{M}_2(\tilde X)^{\dagger}$ vanishes for
-every nilpotent $\mathsf{M}_2(\tilde X)$.
+$\mathsf{M}_2(\tilde Q_1)$ is nilpotent, $\mathsf{M}_2(\tilde Q_1\star\tilde Q_1)$ is
+$\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger}$, and the product
+$\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_1)^{\dagger}\mathsf{M}_2(\tilde Q_1)^{\dagger}$ vanishes for
+every nilpotent $\mathsf{M}_2(\tilde Q_1)$.
 
 One qualification is needed, and it is the same qualification as in the composition band. The index three
 belongs to the **pure** part of the cone. An idempotent multiple is Hermitian and idempotent, so its
@@ -451,10 +451,10 @@ $100$ random elements and on the parametrised pure isotropic cone.
 | Claim | Recomputation |
 | --- | --- |
 | $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu^{2}$ | holds on every element drawn |
-| $\tilde X^{2}=0$ exactly for pure isotropic $\tilde X$ | both directions hold, random and parametrised |
-| $\mathrm{Sc}(\tilde X\star\tilde X)=\sum_\mu\lvert X_\mu\rvert^{2}$ | holds on every element drawn |
-| $\tilde X\star\tilde X\neq0$ for $\tilde X\neq0$ | holds on every nonzero element drawn |
-| $(\tilde X\star\tilde X)\star\tilde X=0$ on the pure isotropic cone | holds for every $t$ tested |
+| $\tilde Q_1^{2}=0$ exactly for pure isotropic $\tilde Q_1$ | both directions hold, random and parametrised |
+| $\mathrm{Sc}(\tilde Q_1\star\tilde Q_1)=\sum_\mu\lvert Q_{1\mu}\rvert^{2}$ | holds on every element drawn |
+| $\tilde Q_1\star\tilde Q_1\neq0$ for $\tilde Q_1\neq0$ | holds on every nonzero element drawn |
+| $(\tilde Q_1\star\tilde Q_1)\star\tilde Q_1=0$ on the pure isotropic cone | holds for every $t$ tested |
 | $\tilde\Pi\star\tilde\Pi\star\tilde\Pi=\tilde\Pi$ for $\tilde\Pi$ idempotent | holds |
 
 ## The Cone Is the Null Set of the Interval and of No Other Form
@@ -557,7 +557,7 @@ composition's own symmetry group preserves.
 
 Two facts about the material coordinates are worth separating here. The nilpotent cone of the composition
 band, the pure isotropic set of the nilpotent-index section, is the set of elements whose square vanishes;
-the roots of $0$ in the equation $\tilde X^{2}=0$ are exactly those nilpotents, and they are the subject of
+the roots of $0$ in the equation $\tilde Q_1^{2}=0$ are exactly those nilpotents, and they are the subject of
 *Square Roots of Zero and the Nilpotents: the Light Cone*. A general element of the
 light cone need not be nilpotent: the idempotent multiples of the cone have nonzero square, and they are
 the elements that carry the rank-one structure used in the next section.
@@ -614,23 +614,23 @@ symmetry organises. The operator face and the absorbing face are two readings of
 In the probability the cone is the boundary of the state cone, and the passage from the cone to the state
 space is one map.
 
-The sesquilinear square lands in the informational sector. For every $\tilde X$ the element
-$\tilde X\star\tilde X$ is Hermitian, its scalar part is real and its vector part is imaginary, so it lies
+The sesquilinear square lands in the informational sector. For every $\tilde Q_1$ the element
+$\tilde Q_1\star\tilde Q_1$ is Hermitian, its scalar part is real and its vector part is imaginary, so it lies
 in $\mathbb{M}_+$, and it is positive:
 
 $$
-\tilde X\star\tilde X\in\mathbb{M}_+,
+\tilde Q_1\star\tilde Q_1\in\mathbb{M}_+,
 \qquad
-\langle\tilde X\star\tilde X\rangle_{\natural}=\lvert \langle\tilde X\rangle_{\natural}\rvert^{2},
+\langle\tilde Q_1\star\tilde Q_1\rangle_{\natural}=\lvert \langle\tilde Q_1\rangle_{\natural}\rvert^{2},
 \qquad
-\mathrm{rank}\,\tilde X\star\tilde X=1\ \Longleftrightarrow\ \langle\tilde X\rangle_{\natural}=0.
+\mathrm{rank}\,\tilde Q_1\star\tilde Q_1=1\ \Longleftrightarrow\ \langle\tilde Q_1\rangle_{\natural}=0.
 $$
 
 Writing the image as $\alpha e_t+i\vec w$ with $\alpha$ real and $\vec w$ a real vector, the
 positivity is the inequality $\alpha\geq\lvert\vec w\rvert$, and the determinant identity is
 
 $$
-\alpha^{2}-\lvert\vec w\rvert^{2}=\lvert \langle\tilde X\rangle_{\natural}\rvert^{2}.
+\alpha^{2}-\lvert\vec w\rvert^{2}=\lvert \langle\tilde Q_1\rangle_{\natural}\rvert^{2}.
 $$
 
 Three statements follow, and together they are the band's reading of the cone.
@@ -852,7 +852,7 @@ fact that a probability weight is never sent to zero by an operation alone.
 The cone is where an operation's kernel stops being trivial, and the corpus reads the kernel directly.
 The **annihilator** of an element is the set of partners that it kills, so it is the kernel of the
 multiplication by it, and for a cone element it is a complex plane. Its elements are themselves cone
-elements: when $\tilde P\neq0$ kills $\tilde X\neq0$, the element $\tilde X$ is a zero divisor of the same
+elements: when $\tilde P\neq0$ kills $\tilde Q_1\neq0$, the element $\tilde Q_1$ is a zero divisor of the same
 product with witness $\tilde P$, and for the four general products, whose zero-divisor set is the cone,
 the whole annihilator lies on the cone. The sharp statement is that the killers of a lightlike element are
 lightlike: a null direction can be annihilated only along null directions, and a lightlike signal can be
@@ -896,7 +896,7 @@ mathematics in its companion *Annihilators in the Algebraic Structures over the 
 
 ### The cone as the root set of zero
 
-The cone is the solution set of the equation $\tilde X^{2}=0$ that is not the origin, and reading it as a
+The cone is the solution set of the equation $\tilde Q_1^{2}=0$ that is not the origin, and reading it as a
 **root set** is a face of its own. The root set of $0$ is a cone in every one of the twelve structures, and
 in the four general products it is a different part of the same cone, because the square is a different
 square while the zero-divisor set is one set:
@@ -1295,7 +1295,7 @@ non-invertible without being lightlike.
 - $\mathrm{Sc}$ scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$; $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$.
 - $\tilde P\tilde Q$ the plain product (composition, GPA); $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ the plain sesquilinear product (probability, GPS).
 - $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ the sector sign; $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ the probability weight; $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ the interval; $\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ the fourth form.
-- The cone is $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the zero-divisor set; pure means $\mathrm{Sc}\,\tilde X=0$, isotropic means $\sum_k X_k^{2}=0$.
+- The cone is $\{\tilde Q\neq0:\langle\tilde Q\rangle_{\natural}=0\}$, the zero-divisor set; pure means $\mathrm{Sc}\,\tilde Q_1=0$, isotropic means $\sum_k Q_{1k}^{2}=0$.
 - "The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_t$. The gauge metric has its own null set $\{\langle\cdot,\cdot\rangle_{\natural*}=0\}$.
 - The twelve rows: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.

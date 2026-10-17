@@ -315,33 +315,33 @@ $$
 The rest energy dominates the dynamics, so we factor it out by writing
 
 $$
-\psi = \exp(-imt)\begin{pmatrix} \tilde{\phi} \\ \tilde{\chi} \end{pmatrix}.
+\psi = \exp(-imt)\begin{pmatrix} \phi \\ \chi \end{pmatrix}.
 $$
 
 Substituting and cancelling the common phase gives the two coupled equations
 
 $$
-i\,\partial/\partial t\tilde{\phi} = \boldsymbol{\sigma}\cdot\vec\pi\,\tilde{\chi} + ϙ\Phi\,\tilde{\phi},
+i\,\partial/\partial t\phi = \boldsymbol{\sigma}\cdot\vec\pi\,\chi + ϙ\Phi\,\phi,
 \qquad
-i\,\partial/\partial t\tilde{\chi} = \boldsymbol{\sigma}\cdot\vec\pi\,\tilde{\phi} - 2m\,\tilde{\chi} + ϙ\Phi\,\tilde{\chi},
+i\,\partial/\partial t\chi = \boldsymbol{\sigma}\cdot\vec\pi\,\phi - 2m\,\chi + ϙ\Phi\,\chi,
 $$
 
 where $\vec\pi = p - ϙ\vec A$ is the kinetic momentum. The small component is the one multiplied by the large rest energy $2m$.
 
 ### Eliminating the small component
 
-If the fields and the kinetic energy are small compared with $mc^2$ and vary slowly, the term $2m\tilde{\chi}$ dominates the right-hand side of the second equation, and $\partial/\partial t\tilde{\chi}$ is negligible by comparison:
+If the fields and the kinetic energy are small compared with $mc^2$ and vary slowly, the term $2m\chi$ dominates the right-hand side of the second equation, and $\partial/\partial t\chi$ is negligible by comparison:
 
 $$
-0 \approx \boldsymbol{\sigma}\cdot\vec\pi\,\tilde{\phi} - 2m\,\tilde{\chi}
+0 \approx \boldsymbol{\sigma}\cdot\vec\pi\,\phi - 2m\,\chi
 \quad\Longrightarrow\quad
-\tilde{\chi} \approx \frac{\boldsymbol{\sigma}\cdot\vec\pi}{2m}\,\tilde{\phi}.
+\chi \approx \frac{\boldsymbol{\sigma}\cdot\vec\pi}{2m}\,\phi.
 $$
 
-This is the algebraic statement that the small component is generated from the large one by the velocity operator $\boldsymbol{\sigma}\cdot\vec\pi/2m$. Substituting into the first equation eliminates $\tilde{\chi}$ entirely and leaves an equation for the two-component spinor $\tilde{\phi}$:
+This is the algebraic statement that the small component is generated from the large one by the velocity operator $\boldsymbol{\sigma}\cdot\vec\pi/2m$. Substituting into the first equation eliminates $\chi$ entirely and leaves an equation for the two-component spinor $\phi$:
 
 $$
-i\,\partial/\partial t\tilde{\phi} = \left[ \frac{(\boldsymbol{\sigma}\cdot\vec\pi)^2}{2m} + ϙ\Phi \right]\tilde{\phi}.
+i\,\partial/\partial t\phi = \left[ \frac{(\boldsymbol{\sigma}\cdot\vec\pi)^2}{2m} + ϙ\Phi \right]\phi.
 $$
 
 ### The Pauli equation
@@ -367,13 +367,13 @@ $$
 and the two-component equation in natural units reads
 
 $$
-i\,\partial/\partial t\tilde{\phi} = \left[ \frac{\vec\pi^2}{2m} + ϙ\Phi - \frac{ϙ}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\tilde{\phi}.
+i\,\partial/\partial t\phi = \left[ \frac{\vec\pi^2}{2m} + ϙ\Phi - \frac{ϙ}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
 $$
 
 Restoring the explicit factors of $\hbar$ and writing $\vec\pi = p - ϙ\vec A$ with $p = -i\hbar\nabla$ gives the **Pauli equation**
 
 $$
-i\hbar\,\partial/\partial t\tilde{\phi} = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\tilde{\phi}.
+i\hbar\,\partial/\partial t\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi.
 $$
 
 The first two terms are the ordinary non-relativistic Hamiltonian of a charged particle; the third is the spin–magnetic coupling. This is the announced reduction of the biquaternionic Dirac equation to the Pauli equation: the four-component spinor has been reduced to a two-component spinor, and the spin has become an explicit dynamical variable.
@@ -410,10 +410,10 @@ The spin–magnetic coupling is therefore an observable of the informational sec
 
 ### The two-component spinor and its evolution
 
-The Pauli spinor $\tilde{\phi}$ is a two-component object, and its associated spin state is the idempotent
+The Pauli spinor $\phi$ is a two-component object, and its associated spin state is the idempotent
 
 $$
-\tilde{Ϛ}_\phi = \frac{\tilde{\phi}\,\tilde{\phi}^{*}}{\tilde{\phi}^{*}\tilde{\phi}} = \tfrac{1}{2}\left(e_t + i\,\vec u\right) \in \mathbb{M}_+ ,
+\tilde{Ϛ}_\phi = \frac{\phi\,\phi^{\dagger}}{\phi^{\dagger}\phi} = \tfrac{1}{2}\left(e_t + i\,\vec u\right) \in \mathbb{M}_+ ,
 $$
 
 with $\vec u$ the Bloch vector of the spin. The Pauli Hamiltonian is a Hermitian element $\tilde{H}_P = \frac{(p-ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m} i\vec B \in \mathbb{M}_+$, and the spin precesses by the corresponding rotor conjugation. For a uniform magnetic field, only the last term contributes to the spin motion, and the precession frequency is the Larmor frequency $\omega_L = ϙB/m$ (natural units), or $\omega_L = g\,ϙB/2m$ in the g-form; up to the sign of $ϙ$ this is the familiar spin precession. The two-component spinor description, the Pauli equation, and the precession are thus all consequences of the single biquaternionic Dirac equation.
@@ -444,7 +444,7 @@ The spinor bilinears have a clean biquaternion interpretation. The conserved vec
 In the non-relativistic limit, factoring out the rest energy and eliminating the small component reduces the four-component equation to the Pauli equation
 
 $$
-i\hbar\,\partial/\partial t\tilde{\phi} = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\tilde{\phi},
+i\hbar\,\partial/\partial t\phi = \left[ \frac{(p - ϙ\vec A)^2}{2m} + ϙ\Phi - \frac{ϙ\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B \right]\phi,
 $$
 
 whose spin term is the Hermitian observable $-\frac{ϙ\hbar}{2m} i\vec B \in \mathbb{M}_+$. The coefficient produced by the elimination is exactly the one required by $\vec\mu = g\frac{ϙ}{2m}\vec S$ with $g = 2$, so the gyromagnetic factor and the spin–magnetic coupling are consequences of the biquaternionic mass term rather than separate postulates. In the massless limit the equation splits into the two Weyl equations, with chirality locked to helicity, which is the starting point for the treatment of chirality with Weyl spinors.

@@ -219,7 +219,7 @@ In the framework's terms, all three are the statement that the trace pairing can
 
 ## Open Questions
 
-**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{A}\tilde{B}\rangle_{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{B}\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
+**1. The obstruction and the biquaternion norm.** No-cloning is an obstruction about the trace pairing. Is there a formulation in terms of the biquaternion norm of the tensor product, and does the biquaternion norm's multiplicativity, $\langle\tilde{A}\tilde{Q}_1\rangle_{\natural} = \langle\tilde{A}\rangle_{\natural}\langle\tilde{Q}_1\rangle_{\natural}$, play the role that the squared inner product plays in the unitary argument?
 
 **2. Cloning and the two sectors.** The algebra splits into $\mathbb{M}_-$ and $\mathbb{M}_+$; the obstruction is stated entirely in $\mathbb{M}_+$. Does the material sector constrain the class of admissible cloning machines, or is it inert here?
 

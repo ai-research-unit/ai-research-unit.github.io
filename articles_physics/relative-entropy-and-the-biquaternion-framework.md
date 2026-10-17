@@ -183,8 +183,8 @@ S(\omega\|\varphi)=\big\langle\Omega_\omega,\log\Delta_{\omega,\varphi}\,\Omega_
 $$
 It agrees with Umegaki's $S(\rho\|\sigma)$ when $M$ is a finite-dimensional matrix algebra and the two states are given by density matrices, and it is defined for the type III algebras of local quantum field theory, where no density matrix exists. The relative modular operator satisfies the **relative modular condition**, a two-point KMS-type boundary relation for the function
 $$
-(t,\tilde A,\tilde B)\longmapsto
-\omega\big(\tilde A\,\sigma_t^{\varphi,\omega}(\tilde B)\big),
+(t,\tilde A,\tilde Q_1)\longmapsto
+\omega\big(\tilde A\,\sigma_t^{\varphi,\omega}(\tilde Q_1)\big),
 $$
 where $\sigma^{(\varphi,\omega)}$ is the **Connes cocycle** flow relating the modular flows of the two states. Two facts connect this object to the rest of the subcategory: the relative modular operator of $\omega$ with itself is the modular operator $\Delta_\omega$ of the Tomita construction, and the modular Hamiltonian $K_\omega=-\log\Delta_\omega$ of the modular companions is the $(\omega,\omega)$ case of the object defined here. The relative entropy is thus the expectation of the logarithm of the relative modular operator in the state's own GNS vector, and the modular Hamiltonian is its diagonal.
 

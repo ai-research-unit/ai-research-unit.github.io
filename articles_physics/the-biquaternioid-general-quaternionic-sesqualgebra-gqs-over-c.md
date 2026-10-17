@@ -13,7 +13,7 @@ The mathematics of the structure is owned by the group *The Biquaternioid Genera
 ### Basic Properties
 
 - **The operation.** The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-sesquilinear, and it is not associative. It is the fourth product of the four general products, the one that conjugates both slots. Owner: *Introduction to the General Quaternionic Sesqualgebra*.
-- **The absence of a unit.** Neither slot has a unit: $e_t\star\tilde X=\tilde X^{*}$ and $\tilde X\star e_t=\tilde X^{\natural}$, so the structure is unital on no side. Owner: *The Two One-Sided Actions and the Absence of a Unit*.
+- **The absence of a unit.** Neither slot has a unit: $e_t\star\tilde Q_1=\tilde Q_1^{*}$ and $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$, so the structure is unital on no side. Owner: *The Two One-Sided Actions and the Absence of a Unit*.
 - **The algebraic norm and invertibility.** The norm is the Krein form $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, indefinite, of inertia $(1,3)$ over $\mathbb{C}$ and $(2,6)$ over $\mathbb{R}$; the invertibility criterion of the structure and its one-sided inverses. Owner: *Norm and Invertibility in the General Quaternionic Sesqualgebra*.
 - **The square and its two halves.** The square of the product splits into a Hermitian and an anti-Hermitian half, the two products $\mathrm{SQS}$ and $\mathrm{AQS}$. Owner: *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
 - **Zero divisors.** The zero-divisor set of the structure, and the null set of $\langle\tilde P,\tilde Q\rangle_{\natural*}$ that it contains. Owner: *Zero Divisors of the General Quaternionic Sesqualgebra*.
@@ -58,7 +58,7 @@ The biquaternioid general quaternionic sesqualgebra is the structure $\tilde P\s
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the fourth product; the general quaternionic sesquilinear product, $\mathrm{GQS}$ |
-| $e_t\star\tilde X=\tilde X^{*}$; $\tilde X\star e_t=\tilde X^{\natural}$ | no unit on either side |
+| $e_t\star\tilde Q_1=\tilde Q_1^{*}$; $\tilde Q_1\star e_t=\tilde Q_1^{\natural}$ | no unit on either side |
 | $\langle\tilde P,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the indefinite (Krein) form |
 | $\langle\tilde Q,\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}$ | the diagonal value; the Krein invariant |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector |

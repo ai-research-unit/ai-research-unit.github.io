@@ -30,7 +30,7 @@ and $\mathsf M_4(\vec e_z)=\mathsf M_4(\vec e_x)\mathsf M_4(\vec e_y)$, $\mathsf
 
 ## Standard Forms and Conventions
 
-**Conventions of the block.** The generic product is written by juxtaposition, never with the bracket $[\,]$; the basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit; the generic element is $\tilde q$; the natural sign is ${}^{\natural}$, the quaternion conjugation; $L_{\tilde a}$ and $R_{\tilde b}$ are the left and right multiplications; and $\tilde a[\,]\tilde b$ is Conway's sandwich $\tilde q\mapsto\tilde a\tilde q\tilde b$. Each name is used in one sense only.
+**Conventions of the block.** The generic product is written by juxtaposition, never with the bracket $[\,]$; the basis is $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the unit; the generic element is $\tilde q$; the natural sign is ${}^{\natural}$, the quaternion conjugation; $L_{\tilde q_3}$ and $R_{\tilde q_4}$ are the left and right multiplications; and $\tilde q_3[\,]\tilde q_4$ is Conway's sandwich $\tilde q\mapsto\tilde q_3\tilde q\tilde q_4$. Each name is used in one sense only.
 
 *Remark.* The conventions are collected here because the article is the last of the block and uses the whole apparatus: a reader who meets a symbol above reads its fixed sense here. The list is a convention and not a mathematical result.
 

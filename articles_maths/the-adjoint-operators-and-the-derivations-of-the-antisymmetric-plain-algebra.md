@@ -21,25 +21,25 @@ The bracket and its structure are used from *The Lie Algebra of the Antisymmetri
 **Definition.** For $\tilde P\in\mathbb{B}$ the **adjoint** of $\tilde P$ is the $\mathbb{C}$-linear endomorphism of $\mathbb{B}$
 
 $$
-\operatorname{ad}_{\tilde P}(\tilde X)=[\tilde P,\tilde X]=\tilde P\tilde X-\tilde X\tilde P,
+\operatorname{ad}_{\tilde P}(\tilde Q_1)=[\tilde P,\tilde Q_1]=\tilde P\tilde Q_1-\tilde Q_1\tilde P,
 $$
 
-the **halved adjoint** is $\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$, and the two are related by
+the **halved adjoint** is $\operatorname{ad}^{\wedge}_{\tilde P}(\tilde Q_1)=\tilde P\wedge\tilde Q_1$, and the two are related by
 
 $$
 \operatorname{ad}_{\tilde P}=2\,\operatorname{ad}^{\wedge}_{\tilde P},\qquad \operatorname{ad}^{\wedge}_{\tilde P}=\tfrac12\operatorname{ad}_{\tilde P}.
 $$
 
-**Theorem (the identity with the cross product).** For all $\tilde P,\tilde X$,
+**Theorem (the identity with the cross product).** For all $\tilde P,\tilde Q_1$,
 
 $$
-\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\vec P\times\vec X,\qquad
-\operatorname{ad}_{\tilde P}(\tilde X)=2\,(\vec P\times\vec X),
+\operatorname{ad}^{\wedge}_{\tilde P}(\tilde Q_1)=\vec P\times\vec Q_1,\qquad
+\operatorname{ad}_{\tilde P}(\tilde Q_1)=2\,(\vec P\times\vec Q_1),
 $$
 
 so the halved adjoint coincides with the operator $\vec P\times$ on the vector subspace and vanishes on the centre, and the adjoint is twice that operator.
 
-*Proof.* The commutator is twice the half-difference, $[\tilde P,\tilde X]=2(\tilde P\wedge\tilde X)$, and the halved bracket is the cross product of the vector parts; both statements are *Introduction to the Antisymmetric Plain Algebra*.
+*Proof.* The commutator is twice the half-difference, $[\tilde P,\tilde Q_1]=2(\tilde P\wedge\tilde Q_1)$, and the halved bracket is the cross product of the vector parts; both statements are *Introduction to the Antisymmetric Plain Algebra*.
 
 **Remark (which convention is which).** The menu of the block writes $\operatorname{ad}_{\tilde P}=[\tilde P,\ \cdot\ ]$ for the adjoint and records that it is **twice** the operator $\vec P\times$ on the vector subspace; the article writes the same, and it records the halved adjoint $\operatorname{ad}^{\wedge}_{\tilde P}=\vec P\times$ beside it because the block's bracket is the halved one and the Killing form of *The Killing Form of the Antisymmetric Plain Algebra* is taken with the halved adjoint, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})$. With the adjoint as fixed here the same form reads, as the complex trace of the endomorphisms of $\mathbb{B}$, $\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=4\kappa(\tilde P,\tilde Q)$; the factor is the factor $2$ of the halving, and the two readings are the same object. **The convention is fixed once: the adjoint of the article is $[\tilde P,\cdot]$, twice $\vec P\times$, and the form of the block is taken with the half of it.**
 
@@ -51,9 +51,9 @@ $$
 \ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_t,
 $$
 
-the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde P}(\tilde X)=0$ for $\tilde X\in\mathbb{C}_{\mathbb{B}}$.
+the centre of the algebra and of the bracket; and every adjoint annihilates the centre, $\operatorname{ad}_{\tilde P}(\tilde Q_1)=0$ for $\tilde Q_1\in\mathbb{C}_{\mathbb{B}}$.
 
-*Proof.* $\operatorname{ad}_{\tilde P}=0$ exactly when $[\tilde P,\tilde X]=0$ for all $\tilde X$, which by the cross-product formula is $\vec P\times\vec X=0$ for all $\vec X$, forcing $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*.
+*Proof.* $\operatorname{ad}_{\tilde P}=0$ exactly when $[\tilde P,\tilde Q_1]=0$ for all $\tilde Q_1$, which by the cross-product formula is $\vec P\times\vec Q_1=0$ for all $\vec Q_1$, forcing $\vec P=0$, that is $\tilde P\in\mathbb{C}e_t$. The last statement is that a central element commutes with everything, so the commutator with it is zero. This is *The Lie Algebra of the Antisymmetric Plain Algebra*, §*The Centre and the Quotient*.
 
 **Remark.** **The kernel of the adjoint representation is the centre, and the centre is also annihilated by every adjoint**: the first is the kernel of the map $\tilde P\mapsto\operatorname{ad}_{\tilde P}$, the second is the common kernel of the operators on the algebra, and the two statements together say that the centre is the whole carrier of the invisibility of the bracket.
 
@@ -117,7 +117,7 @@ of complex dimension three and real dimension six.
 **Theorem.** The outer derivations form a complex line, spanned by the derivation
 
 $$
-D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde X)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
+D_0:\quad D_0(e_t)=e_t,\qquad D_0(ie_t)=ie_t,\qquad D_0(\tilde Q_1)=0\ \text{ on }\ \mathrm{Vect}(\mathbb{B}),
 $$
 
 which scales the centre and annihilates the derived algebra; it is the derivation induced by the dual number $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ acting on the centre in the description below. Hence
@@ -254,8 +254,8 @@ The adjoint of the block is $\operatorname{ad}_{\tilde P}=[\tilde P,\cdot]$, equ
 
 | Symbol | Meaning |
 |---|---|
-| $\operatorname{ad}_{\tilde P}(\tilde X)=[\tilde P,\tilde X]=\tilde P\tilde X-\tilde X\tilde P$ | the adjoint of the block, twice $\vec P\times$ on the vector subspace |
-| $\operatorname{ad}^{\wedge}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X=\vec P\times\vec X$ | the halved adjoint, the adjoint of the block's own bracket |
+| $\operatorname{ad}_{\tilde P}(\tilde Q_1)=[\tilde P,\tilde Q_1]=\tilde P\tilde Q_1-\tilde Q_1\tilde P$ | the adjoint of the block, twice $\vec P\times$ on the vector subspace |
+| $\operatorname{ad}^{\wedge}_{\tilde P}(\tilde Q_1)=\tilde P\wedge\tilde Q_1=\vec P\times\vec Q_1$ | the halved adjoint, the adjoint of the block's own bracket |
 | $\ker\operatorname{ad}=\mathbb{C}_{\mathbb{B}}$ | the kernel of the adjoint representation, the centre |
 | $\operatorname{Tr}\operatorname{ad}_{\tilde P}=0$ | every adjoint has vanishing trace |
 | $\operatorname{Der}(\mathfrak{g})$ | the derivation algebra |
