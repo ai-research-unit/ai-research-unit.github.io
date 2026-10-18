@@ -56,13 +56,13 @@
 $$
 \langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}\!\left(\tilde{A}\tilde{B}^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the four-velocity $\tilde{V} = \gamma(ic\,e_t + \vec v)$ with $\langle\tilde{V}\rangle_{\natural} = -c^2$, and the four-momentum
 $$
 \tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_t + \vec p,
 \qquad \langle\tilde{P}\rangle_{\natural} = -m^2c^2,
 \qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ with $\tanh\psi = v_b/c$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$, and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$; the Poincaré pair $(\tilde{\Lambda},\tilde{a})$ acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.</p>
+The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\vec u$ with $\tanh\psi = v_b/c$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_t$, and the rotor conjugation $\tilde{R} \mapsto \tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}$; the Poincaré pair $(\tilde{\Lambda},\tilde{a})$ acting by $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}+\tilde{a}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged.</p>
 <p><strong>What is to be shown.</strong> The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.</p>
 <p><strong>Notation for the collision.</strong> Two initial bodies collide and produce $n-2$ final bodies,
 $$
@@ -106,7 +106,7 @@ $$
 = \tilde{\Lambda}\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right)\tilde{\Lambda}^{*} .
 $$
 If the unprimed difference vanishes, the primed one vanishes: the law holds in every frame related by a Lorentz transformation. This is the frame covariance of the conservation statement, and it is why a conservation law checked only in the frame that suggested it is not checked. The invariant content is carried by the <em>element</em> $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\in\mathbb{M}_-$, which transforms as a whole.</p>
-<p><em>Translation.</em> A Poincaré translation $(\tilde{\Lambda},\tilde{a})$ acts on the four-position by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$. The four-momentum of a free body is built from its four-velocity, $d\tilde{Q}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.</p>
+<p><em>Translation.</em> A Poincaré translation $(\tilde{\Lambda},\tilde{a})$ acts on the four-position by $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}+\tilde{a}$. The four-momentum of a free body is built from its four-velocity, $d\tilde{R}/d\tau$, which is unchanged by a shift of the origin; the shift also drops out of the interval between any two events. Hence each $\tilde{P}_a$ is translation-invariant, and so is the conservation law. Equivalently, in the Poincaré frame the four-momenta are the generators $P_\mu$ of the translation subgroup, and a translation acts on a plane wave of four-wavevector $\tilde P/\hbar$ by multiplication by a central scalar of unit modulus; this representation is checked in the closing section.</p>
 <p><strong>Solution (d).</strong> Take two equal masses $m_1 = m_2 = m$, units $c = 1$, and a projectile of total energy $E_1 = 3m$ striking the target at rest, with the collision elastic. The laboratory four-momenta are
 $$
 \tilde{P}_1 = i\,3m\,e_t + \sqrt{8}\,m\,\vec e_z,
@@ -452,7 +452,7 @@ so $\theta_3+\theta_4\to\theta^*/2+(\pi-\theta^*)/2 = \pi/2$. The two final part
 </tr>
 <tr>
 <td>$(\tilde{\Lambda},\tilde{a})$</td>
-<td>Poincaré transformation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$</td>
+<td>Poincaré transformation, $\tilde{R}\mapsto\tilde{\Lambda}\tilde{R}\tilde{\Lambda}^{*}+\tilde{a}$</td>
 </tr>
 <tr>
 <td>$\tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$</td>

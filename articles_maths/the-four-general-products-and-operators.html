@@ -60,29 +60,29 @@
 <h3 id="the-four-rules">The Four Rules</h3>
 <p><strong>Definition (the four general products).</strong> The four general products are</p>
 <p>$$
-\tilde P\tilde Q ,
+\tilde Q_1\tilde Q_2 ,
 \qquad
-\tilde P\tilde Q^{*} ,
+\tilde Q_1\tilde Q_2^{*} ,
 \qquad
-\tilde P^{\natural}\tilde Q ,
+\tilde Q_1^{\natural}\tilde Q_2 ,
 \qquad
-\tilde P^{\natural}\tilde Q^{*} ,
+\tilde Q_1^{\natural}\tilde Q_2^{*} ,
 $$</p>
 <p>the plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear product.</p>
 <p><strong>Proposition (one table, two insertions).</strong> The four rules multiply the coordinates on the same products $e_\mu e_\nu$ of the basis. They differ in one point alone: whether the coordinates of each of the two elements are used as they stand or taken from the conjugated element, the two elements being treated independently of one another. Equivalently, the four general products are the four members of the orbit</p>
 <p>$$
-\bigl\{K_1(\tilde P)\,K_2(\tilde Q)\;:\;K_1\in\{\mathrm{id},{}^{\natural}\},\;K_2\in\{\mathrm{id},{}^{*}\}\bigr\}
+\bigl\{K_1(\tilde Q_1)\,K_2(\tilde Q_2)\;:\;K_1\in\{\mathrm{id},{}^{\natural}\},\;K_2\in\{\mathrm{id},{}^{*}\}\bigr\}
 $$</p>
 <p>of a single rule under the insertion of a conjugation into the first slot and a conjugation into the second.</p>
-<p><em>Proof.</em> Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $P_\mu$ in the first factor and of $Q_\nu$ in the second.</p>
+<p><em>Proof.</em> Reading the four definitions side by side, the products $e_\mu e_\nu$ of the basis and the order of the factors are the same in all four; the only difference is the source of $Q_{1,\mu}$ in the first factor and of $Q_{2,\nu}$ in the second.</p>
 <p><strong>Remark (why "complex products").</strong> The word <em>complex</em> records the base field and not a second multiplication: the multiplication of the units is that of $\mathbb{H}$ extended to $\mathbb{C}$, and the four rules move over it. There is no product among the four that is not the plain one with an insertion.</p>
 <h3 id="one-multiplication-table-four-pairings">One Multiplication Table, Four Pairings</h3>
 <p><strong>Theorem (the scalar parts are the four pairings).</strong> The scalar parts of the four general products are the four pairings of the algebra,</p>
 <p>$$
-\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),\quad
-\langle\tilde P,\tilde Q\rangle_{\ast}=\mathrm{Sc}(\tilde P\tilde Q^{*}),\quad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),\quad
-\langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
+\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\ast}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural\ast}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}),
 $$</p>
 <p>with Gram matrices in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ equal to $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$.</p>
 <p><em>Proof.</em> $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon=(1,-1,-1,-1)$, and on the basis units the two insertions act by $e_\mu^{\natural}=\varepsilon_\mu e_\mu$ and $e_\mu^{*}=\varepsilon_\mu e_\mu$, the coordinates of the units being real, so that the sign $\varepsilon_\mu$ cancels as soon as the unit is read through one of the two insertions. The Gram matrix is therefore $\varepsilon$ exactly when the two insertions agree, that is for the plain product and for the general quaternionic sesquilinear one, and $1$ when they differ, that is $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$. The four pairings are distinct as maps — two are bilinear and two sesquilinear in the second argument, and no two agree on complex coefficients — while two pairs of them share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by a sign.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>Remark (the four insertions collapse).</strong> For a parameter that one of the conjugations fixes, the four operators are fewer than four: the sign insertion is invisible exactly when $\tilde A^{\natural}=\tilde A$, which holds for the central $\tilde A$, and the star insertion is invisible exactly when $\tilde A^{*}=\tilde A$, which holds for the parameters with real central coefficient and purely imaginary vector coefficients, the fixed space $\mathbb{M}_{+}$ of the Hermitian conjugation. For a vector $\tilde A\in V$ with real coefficients the four operators are two, $\pm L_{\tilde A}R_{\tilde A^{-1}}$; for a generic complex vector of $V$ the four are pairwise distinct. The number of distinct operators is therefore a property of the <em>element</em>, and not of the product.</p>
 <h2 id="rotation-reflection-and-where-the-sign-is-read">Rotation, Reflection, and Where the Sign Is Read</h2>
 <h3 id="the-plain-product-gives-minus-the-reflection">The Plain Product Gives Minus the Reflection</h3>
-<p><strong>Theorem (the reflection is reached only through the sign).</strong> Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$,</p>
+<p><strong>Theorem (the reflection is reached only through the sign).</strong> Let $\tilde A\in V$ be a vector with $\langle\tilde A\rangle_{\natural}\ne0$, and let $\rho_{\tilde A}$ be the reflection of $V$ in the hyperplane $\tilde A^{\perp}$ for the polar form of $q=-\sum_kQ_k^{2}$, which on $V$ is the general plain bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$,</p>
 <p>$$
 \rho_{\tilde A}(\tilde Q_3)=\tilde Q_3-\frac{2\langle\tilde Q_3,\tilde A\rangle}{\mathfrak{Q}(\tilde A)}\,\tilde A .
 $$</p>
@@ -256,7 +256,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$\tilde Q_1\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
 <td>the four general products: one table, the two insertions</td>
 </tr>
 <tr>

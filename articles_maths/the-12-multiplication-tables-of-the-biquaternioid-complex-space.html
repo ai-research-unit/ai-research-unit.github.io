@@ -65,11 +65,11 @@ $$</p>
 <p>The row index is the left factor and the column index the right one, so the table has one entry to each ordered pair of basis elements and sixteen entries in all.</p>
 <p><strong>Definition.</strong> Let $T=(T_{\mu\nu})$ be a $4\times4$ array of elements of $\mathbb{B}$. The <strong>bilinear reading</strong> of $T$ is the product $\star_T$ defined on general elements by</p>
 <p>$$
-\tilde P\star_T\tilde Q=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}P_\mu Q_\nu\,T_{\mu\nu},
+\tilde Q_1\star_T\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1,\mu} Q_{2,\nu}\,T_{\mu\nu},
 $$</p>
 <p>and the <strong>sesquilinear reading</strong> of $T$ is the product defined by</p>
 <p>$$
-\tilde P\star_T\tilde Q=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}P_\mu\overline{Q_\nu}\,T_{\mu\nu}.
+\tilde Q_1\star_T\tilde Q_2=\sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\nu}}\,T_{\mu\nu}.
 $$</p>
 <p>The two readings differ in one point alone: whether the second coordinate is used as it stands or through the coefficientwise conjugation.</p>
 <p><strong>Proposition (the class of a reading).</strong> The bilinear reading of a table is additive in each variable and $\mathbb{C}$-bilinear in both; the sesquilinear reading is additive in each variable, $\mathbb{C}$-linear in the first and conjugate-linear in the second.</p>
@@ -85,7 +85,7 @@ $$</p>
 <h2 id="the-twelve-tables">The Twelve Tables</h2>
 <p>The twelve tables are written below, one to a product, in the order general, symmetric, antisymmetric, and inside each group the order plain bilinear, quaternionic bilinear, plain sesquilinear, quaternionic sesquilinear. In every table the corner entry is the operation and the row index is the left factor.</p>
 <h3 id="the-four-general-tables">The Four General Tables</h3>
-<p><strong>$\mathrm{GPA}$, the general plain bilinear product $\tilde P\tilde Q$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in <em>Introduction to the Biquaternion Algebra</em>, §<em>The Multiplication Table</em>.</p>
+<p><strong>$\mathrm{GPA}$, the general plain bilinear product $\tilde Q_1\tilde Q_2$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in <em>Introduction to the Biquaternion Algebra</em>, §<em>The Multiplication Table</em>.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -128,7 +128,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The diagonal is $e_t,-e_t,-e_t,-e_t$; the imaginary block is the quaternion block. The table carries the antisymmetry of the three imaginary units, $\vec e_\nu \vec e_\lambda = -\vec e_\lambda \vec e_\nu$ for $\nu \neq \lambda$ in $\{x,y,z\}$.</p>
-<p><strong>$\mathrm{GQA}$, the general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
+<p><strong>$\mathrm{GQA}$, the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -171,7 +171,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is the quaternion table with the first imaginary factor negated, that is with the row sign changed on the three vector rows; the diagonal is $e_t$ throughout.</p>
-<p><strong>$\mathrm{GPS}$, the general plain sesquilinear product $\tilde P\tilde Q^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). It is the table read in <em>Introduction to the General Plain Sesqualgebra</em>, §<em>The Multiplication Table</em>, where it is computed as $e_\mu\star e_\nu=\varepsilon_\nu e_\mu e_\nu$.</p>
+<p><strong>$\mathrm{GPS}$, the general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$). It is the table read in <em>Introduction to the General Plain Sesqualgebra</em>, §<em>The Multiplication Table</em>, where it is computed as $e_\mu\star e_\nu=\varepsilon_\nu e_\mu e_\nu$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -214,7 +214,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The diagonal is $e_t$ throughout, the imaginary block anticommutes with the signs of the quaternion block, and the first row is the negation of the identity row, $e_t\star e_\nu=e^{*}_\nu$; the first row is the visible form of the one-sided unit.</p>
-<p><strong>$\mathrm{GQS}$, the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
+<p><strong>$\mathrm{GQS}$, the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -258,7 +258,7 @@ $$</p>
 </table></div>
 <p>The table is the table of $\mathrm{GPS}$ with the first slot read through the natural conjugation, that is with the row sign changed on the three vector rows; the diagonal is $e_t,-e_t,-e_t,-e_t$.</p>
 <h3 id="the-four-symmetric-tables">The Four Symmetric Tables</h3>
-<p><strong>$\mathrm{SPA}$, the symmetric plain bilinear product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Jordan product $\tilde P\bullet\tilde Q$).</p>
+<p><strong>$\mathrm{SPA}$, the symmetric plain bilinear product $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Jordan product $\tilde Q_1\bullet\tilde Q_2$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -301,7 +301,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is symmetric, and its off-diagonal imaginary block vanishes: the symmetrisation drops the cross product, and the table records the loss.</p>
-<p><strong>$\mathrm{SQA}$, the symmetric quaternionic bilinear product $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
+<p><strong>$\mathrm{SQA}$, the symmetric quaternionic bilinear product $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -344,7 +344,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is the identity table, $\delta_{\mu\nu}e_t$: the quaternion form $\langle\cdot,\cdot\rangle_{\natural}$ read as a product, with the whole vector structure of the product gone.</p>
-<p><strong>$\mathrm{SPS}$, the symmetric plain sesquilinear product $\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Sc}(\tilde P\tilde Q^{*})e_t$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a product).</p>
+<p><strong>$\mathrm{SPS}$, the symmetric plain sesquilinear product $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}+\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ read as a product).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -387,7 +387,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is the identity table again, $e_\mu\star e_\nu=\delta_{\mu\nu}e_t$, read on the basis in <em>Introduction to the Symmetric Plain Sesqualgebra</em>, §<em>The Multiplication Table of the Basis</em>.</p>
-<p><strong>$\mathrm{SQS}$, the symmetric quaternionic sesquilinear product $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
+<p><strong>$\mathrm{SQS}$, the symmetric quaternionic sesquilinear product $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}+\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -431,7 +431,7 @@ $$</p>
 </table></div>
 <p>The table is conjugate-symmetric, and its off-diagonal imaginary block vanishes; the first row and the first column are the two halves of the Hermitian conjugation, $e_t\star e_\nu=e^{*}_\nu$ and $e_\nu\star e_t=(e^{*}_\nu)^{\natural}$.</p>
 <h3 id="the-four-antisymmetric-tables">The Four Antisymmetric Tables</h3>
-<p><strong>$\mathrm{APA}$, the antisymmetric plain bilinear product $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Lie product $\tilde P\wedge\tilde Q$).</p>
+<p><strong>$\mathrm{APA}$, the antisymmetric plain bilinear product $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1)=\vec Q_1\times\vec Q_2$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear, the Lie product $\tilde Q_1\wedge\tilde Q_2$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -474,7 +474,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is alternating, its identity row and column vanish, and its imaginary block is the cross-product table of $\mathbb{C}^3$, read in <em>Introduction to the Antisymmetric Plain Algebra</em>, §<em>The Sixteen Brackets</em>.</p>
-<p><strong>$\mathrm{AQA}$, the antisymmetric quaternionic bilinear product $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
+<p><strong>$\mathrm{AQA}$, the antisymmetric quaternionic bilinear product $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q_2^{\natural}\tilde Q_1)$</strong> (the class $\mathrm A$, $\mathbb{C}$-bilinear).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -516,8 +516,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The table is alternating, but its identity row and column do <strong>not</strong> vanish: the block is the mixed term $P_t\vec Q-Q_t\vec P$ with the cross term removed, and the mixed term survives on the identity.</p>
-<p><strong>$\mathrm{APS}$, the antisymmetric plain sesquilinear product $\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)=\mathrm{Vect}(\tilde P\tilde Q^{*})$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
+<p>The table is alternating, but its identity row and column do <strong>not</strong> vanish: the block is the mixed term $Q_{1t}\vec Q_2-Q_{2t}\vec Q_1$ with the cross term removed, and the mixed term survives on the identity.</p>
+<p><strong>$\mathrm{APS}$, the antisymmetric plain sesquilinear product $\tfrac12\bigl(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1^{*}}\bigr)=\mathrm{Vect}(\tilde Q_1\tilde Q_2^{*})$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -560,7 +560,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The table is conjugate-alternating, its diagonal vanishes, and the first row and column are the negation of the vector part of the Hermitian conjugation.</p>
-<p><strong>$\mathrm{AQS}$, the antisymmetric quaternionic sesquilinear product $\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
+<p><strong>$\mathrm{AQS}$, the antisymmetric quaternionic sesquilinear product $\tfrac12\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}-\tilde Q_2^{*}\tilde Q_1^{\natural}\bigr)=\vec Q_1\times\overline{\vec Q_2}$</strong> (the class $\mathrm S$, sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$).</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -704,11 +704,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\star_T$, the bilinear reading</td>
-<td>$\tilde P\star_T\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu T_{\mu\nu}$</td>
+<td>$\tilde Q_1\star_T\tilde Q_2=\sum_{\mu,\nu}Q_{1,\mu} Q_{2,\nu} T_{\mu\nu}$</td>
 </tr>
 <tr>
 <td>the sesquilinear reading</td>
-<td>$\tilde P\star_T\tilde Q=\sum_{\mu,\nu}P_\mu\overline{Q_\nu}T_{\mu\nu}$</td>
+<td>$\tilde Q_1\star_T\tilde Q_2=\sum_{\mu,\nu}Q_{1,\mu}\overline{Q_{2,\nu}}T_{\mu\nu}$</td>
 </tr>
 <tr>
 <td>the class</td>
@@ -716,11 +716,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{GPA}$, $\mathrm{GQA}$</td>
-<td>the two general $\mathbb{C}$-bilinear products, $\tilde P\tilde Q$ and $\tilde P^{\natural}\tilde Q$</td>
+<td>the two general $\mathbb{C}$-bilinear products, $\tilde Q_1\tilde Q_2$ and $\tilde Q_1^{\natural}\tilde Q_2$</td>
 </tr>
 <tr>
 <td>$\mathrm{GPS}$, $\mathrm{GQS}$</td>
-<td>the two general sesquilinear products, $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>the two general sesquilinear products, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$</td>
 </tr>
 <tr>
 <td>$\mathrm{SPA}$, $\mathrm{SQA}$, $\mathrm{SPS}$, $\mathrm{SQS}$</td>

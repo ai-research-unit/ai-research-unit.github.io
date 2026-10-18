@@ -53,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The general plain sesqualgebra is the structure the biquaternion ring $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries when the plain product is read with the Hermitian conjugation in the second slot,
 $$
-\tilde P\star\tilde Q=\tilde P\tilde Q^{*},
+\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*},
 $$
 the general plain sesquilinear structure of <em>The Algebraic Structures over the Biquaternioid $\mathbb{C}$ Space</em>. Its product is additive in each variable, $\mathbb{C}$-linear in the first slot and $\varsigma$-semilinear in the second with $\varsigma(z)=\bar z$, so the structure is a <strong>sesqualgebra over $(\mathbb{C},\varsigma)$</strong>; the involution is the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, the product is the derived operation of the algebra $\mathbb{B}$ with that involution, and $e_t$ is a right unit and not a left one (<em>Introduction to the General Plain Sesqualgebra</em>). Read over $\mathbb{R}$ the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.</p>
 <p>The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the two criteria of $\mathbb{C}$-linearity and of conjugate-linearity, the two rules of the realification of a form and the table of the four effects are <strong>The Realification and the Effect of the Change of Scalars</strong>. This article gives what is specific to this product: the product as an $\mathbb{R}$-algebra and its real table, the law of its two slots over the centre with the two parities of its two families of multiplications, the realification of the form it carries with the signature that follows, the classes the reading leaves untouched with their real dimensions, and its real operators.</p>
@@ -140,11 +140,11 @@ and $\tilde A\mapsto R_{\tilde A}$ is an injective $\mathbb{R}$-algebra homomorp
 <h2 id="the-realified-form">The Realified Form</h2>
 <p>The product carries the general plain sesquilinear form, the Hermitian $\langle\cdot,\cdot\rangle_{*}$, which is its scalar part:
 $$
-\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_t\overline{Q_t}+(\vec P,\overline{\vec Q})=\sum_{\mu\in\{t,x,y,z\}}P_\mu\overline{Q_\mu},
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})=\sum_{\mu\in\{t,x,y,z\}}Q_{1,\mu}\overline{Q_{2,\mu}},
 $$
 with Gram matrix $\mathrm{I}_4$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and complex inertia $(4,0)$ (<em>The 4 Forms over the Biquaternioid $\mathbb{C}$ Space</em>). A Hermitian form realifies by the <strong>second rule</strong> of §<em>The Realification of a Form</em> of <em>The Realification and the Effect of the Change of Scalars</em>: the realification is the real part of the form, which is already real on the diagonal, its imaginary part is alternating and is no part of the realification, and its complex inertia is doubled rather than split. The realified form is therefore
 $$
-H_{\mathbb{R}}(\tilde P,\tilde Q)=\operatorname{Re}\langle\tilde P,\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\operatorname{Re}P_\mu\operatorname{Re}Q_\mu+\operatorname{Im}P_\mu\operatorname{Im}Q_\mu\bigr),
+H_{\mathbb{R}}(\tilde Q_1,\tilde Q_2)=\operatorname{Re}\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\operatorname{Re}Q_{1,\mu}\operatorname{Re}Q_{2,\mu}+\operatorname{Im}Q_{1,\mu}\operatorname{Im}Q_{2,\mu}\bigr),
 $$
 the <strong>ordinary Euclidean form</strong> of the eight real coordinates, of Gram matrix $\mathrm{I}_8$ and signature
 $$
@@ -153,16 +153,16 @@ $$
 It is positive definite, and its null set is the single element $0$: the form the block carries has no cone in the real reading, in contrast with the two bilinear forms of the corpus, whose realifications are split of signature $(4,4)$. The entry is the row <em>Hermitian</em> of the table of <em>The Realification of the Four Forms</em>, §<em>The Four Gram Matrices</em>.</p>
 <p>The imaginary part of $H$ is not lost in the passage, it is the second face of the form. On the eight real coordinates it is alternating and non-degenerate,
 $$
-\sigma(\tilde P,\tilde Q)=\operatorname{Im}\langle\tilde P,\tilde Q\rangle_{*},\qquad \sigma(\tilde P,\tilde Q)=-\sigma(\tilde Q,\tilde P),
+\sigma(\tilde Q_1,\tilde Q_2)=\operatorname{Im}\langle\tilde Q_1,\tilde Q_2\rangle_{*},\qquad \sigma(\tilde Q_1,\tilde Q_2)=-\sigma(\tilde Q_2,\tilde Q_1),
 $$
 a symplectic form of rank $8$, the sum of the canonical pairs of the four coordinate planes $(\vec e_k,i\vec e_k)$, of rank $2$ on the centre and rank $6$ on the vector subspace, tied to the Euclidean $g=H_{\mathbb{R}}$ by the Kähler identity
 $$
-\sigma(\tilde P,\tilde Q)=g(\tilde P,J\tilde Q),
+\sigma(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,J\tilde Q_2),
 $$
 so that the complex form the block carries shows in the real reading its two faces, the Euclidean $g=H_{\mathbb{R}}$ and the alternating $\sigma$ (<em>Remarkable Subspaces and the Four Forms</em>).</p>
 <p>The complex structure <strong>preserves</strong> the form,
 $$
-H_{\mathbb{R}}(J\tilde P,J\tilde Q)=+H_{\mathbb{R}}(\tilde P,\tilde Q),
+H_{\mathbb{R}}(J\tilde Q_1,J\tilde Q_2)=+H_{\mathbb{R}}(\tilde Q_1,\tilde Q_2),
 $$
 the opposite of the case of a bilinear form. The map $J$ is therefore an isometry of the Euclidean form, an element of the orthogonal group $O(8)$ in the real basis, and the $\mathbb{C}$-linear endomorphisms that preserve $\langle\cdot,\cdot\rangle_{*}$ form the unitary group $\mathrm{U}(4)$.</p>
 <p>The square of the block is positive for this form. The element $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ is Hermitian, and its scalar part is the squared Euclidean norm,
@@ -171,7 +171,7 @@ $$
 $$
 so the diagonal of the realified Hermitian form is the square of the real norm of the element, and the form the block carries is the positive definite one of the four forms of the corpus.</p>
 <h2 id="what-the-interpretation-leaves-untouched">What the Interpretation Leaves Untouched</h2>
-<p>Since $i$ lies in $\mathbb{B}$, an additive subgroup closed under left multiplication by every element is closed under multiplication by $i$, and the ideals, the idempotents, the zero divisors, the nilpotents and the units are the same in the two readings. The statement concerns the two readings of the block and not the block against the ring: the classes are cut out of the ring's for the product $\star$. The zero-divisor set of $\star$ is the cone of the norm and the common set of the four general products, and the invertibility criterion is the non-vanishing of $\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$ (<em>Zero Divisors of the General Plain Sesqualgebra</em>, <em>Norm and Invertibility in the General Plain Sesqualgebra</em>); the idempotents of the block are the Hermitian ones, and its nilpotents are those of the ring with the index moved from two to three. The right unit, the right ideals and the multiplicative monoid are the plain ones read at the conjugated index (<em>The Specificities of the General Plain Sesqualgebra</em>).</p>
+<p>Since $i$ lies in $\mathbb{B}$, an additive subgroup closed under left multiplication by every element is closed under multiplication by $i$, and the ideals, the idempotents, the zero divisors, the nilpotents and the units are the same in the two readings. The statement concerns the two readings of the block and not the block against the ring: the classes are cut out of the ring's for the product $\star$. The zero-divisor set of $\star$ is the cone of the norm and the common set of the four general products, and the invertibility criterion is the non-vanishing of $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ (<em>Zero Divisors of the General Plain Sesqualgebra</em>, <em>Norm and Invertibility in the General Plain Sesqualgebra</em>); the idempotents of the block are the Hermitian ones, and its nilpotents are those of the ring with the index moved from two to three. The right unit, the right ideals and the multiplicative monoid are the plain ones read at the conjugated index (<em>The Specificities of the General Plain Sesqualgebra</em>).</p>
 <p>What the real reading adds is the <strong>count</strong>: each of those classes becomes an eight-dimensional real problem with a dimension of its own.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -213,7 +213,7 @@ so the diagonal of the realified Hermitian form is the square of the real norm o
 <h2 id="the-real-operators">The Real Operators</h2>
 <p>The left and the right multiplications are $\mathbb{R}$-linear endomorphisms of $\mathbb{R}^8$, by §<em>The Realification of a Linear Map</em> of <em>The Realification and the Effect of the Change of Scalars</em>, and so are the other two kinds of operator they generate, the sesquilinear sandwich and the ordinary two-sided multiplication,
 $$
-S_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1^{*}\tilde Q^{*},\qquad T_{\tilde P,\tilde Q}(\tilde Q_1)=\tilde P\tilde Q_1\tilde Q .
+S_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3^{*}\tilde Q_2^{*},\qquad T_{\tilde Q_1,\tilde Q_2}(\tilde Q_3)=\tilde Q_1\tilde Q_3\tilde Q_2 .
 $$
 The four kinds split by parity in the same way as the two families: $T$ and $R$ are $\mathbb{C}$-linear and commute with $J$, $S$ and $L$ are conjugate-linear and anticommute with $J$. The composition laws are those of <em>The Left and Right Multiplications of the Biquaternioid Sesqualgebra</em>, and they are laws of the real operators:
 $$
@@ -232,7 +232,7 @@ The right family is a monoid under composition, generated by the right multiplic
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$</td>
+<td>$\tilde Q_1\star\tilde Q_2=\tilde Q_1\tilde Q_2^{*}$</td>
 <td>the product of the general plain sesqualgebra</td>
 </tr>
 <tr>
@@ -256,7 +256,7 @@ The right family is a monoid under composition, generated by the right multiplic
 <td>the right multiplications, $\mathbb{C}$-linear, the commuting summand; the plain right multiplication at the conjugated index</td>
 </tr>
 <tr>
-<td>$\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu P_\mu\overline{Q_\mu}$</td>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\star\tilde Q_2)=\sum_\mu Q_{1,\mu}\overline{Q_{2,\mu}}$</td>
 <td>the Hermitian form the product carries</td>
 </tr>
 <tr>
@@ -265,14 +265,14 @@ The right family is a monoid under composition, generated by the right multiplic
 </tr>
 <tr>
 <td>$g=H_{\mathbb{R}}$, $\sigma=\operatorname{Im}H$</td>
-<td>the Euclidean form and its companion, $\sigma(\tilde P,\tilde Q)=g(\tilde P,J\tilde Q)$, of rank $8$</td>
+<td>the Euclidean form and its companion, $\sigma(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,J\tilde Q_2)$, of rank $8$</td>
 </tr>
 <tr>
-<td>$\langle\tilde P\rangle_{\natural}=\tilde P\tilde P^{\natural}$</td>
+<td>$\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$</td>
 <td>the biquaternion norm, whose vanishing cuts the zero divisors and whose non-vanishing is the criterion of the units of the block</td>
 </tr>
 <tr>
-<td>$S_{\tilde P,\tilde Q}$, $T_{\tilde P,\tilde Q}$</td>
+<td>$S_{\tilde Q_1,\tilde Q_2}$, $T_{\tilde Q_1,\tilde Q_2}$</td>
 <td>the sesquilinear sandwich and the ordinary two-sided multiplication</td>
 </tr>
 </tbody>

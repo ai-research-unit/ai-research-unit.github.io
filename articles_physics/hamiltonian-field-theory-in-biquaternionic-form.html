@@ -53,7 +53,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The companion article <em>Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</em> ends where the finite-dimensional theory ends: one configuration biquaternion $\tilde q$, one momentum biquaternion $\tilde p$, one phase-space biquaternion $\tilde q+i\tilde p$, and a Poisson bracket on the functions of that finite collection of numbers. A field is not a finite collection of numbers. Its configuration is a <em>function</em> of the position, and the variational derivative replaces the partial derivative: the Legendre transform acts on a density, the momentum conjugate to the field is itself a function of the position, and the bracket that survives is a bracket on functionals. This article performs that transcription for the field the corpus actually uses — the central scalar field of the Klein–Gordon articles — and states plainly what the algebra supplies and what it does not.</p>
 <p>Two objects are built here, and they answer two different questions. The first is the <strong>Hamiltonian density</strong> $\mathcal H$, the Legendre transform of the Lagrangian density, which is also the energy density of the companion article on stress–energy; the second is the <strong>field Poisson bracket</strong>, the bracket on functionals of the field and its conjugate momentum, together with the continuity equation that the density satisfies along the motion. Their sum is the classical Hamiltonian field theory in biquaternion form. The article then says where the algebra's contribution stops: for a central field the bracket is the standard one, and the biquaternion content is the packaging of the density and the flux rather than a change of the bracket. The genuinely different Hamiltonian formalism for a field — the covariant one, in which the conjugate object is a <em>quadruple</em> of momenta rather than one momentum field — is named at the end and developed in the mathematical corpus.</p>
-<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors, the material and informational ones. The material coordinate is $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The central scalar field is $\tilde\Phi(\tilde Q)=\phi(\tilde Q)e_t$ with $\tilde Q\in\mathbb{M}_-$, its Lagrangian density is the one fixed by <em>Noether's Theorem in Biquaternionic Form</em> and used by <em>Canonical Quantization of the Biquaternion Klein–Gordon Field</em>,</p>
+<p>The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\varepsilon_{\mu\nu\lambda}\vec e_\lambda$; $i$ is central with $i^2=-1$; the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors, the material and informational ones. The material coordinate is $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial Q_t^2+\Delta$. The central scalar field is $\tilde\Phi(\tilde R)=\phi(\tilde R)e_t$ with $\tilde R\in\mathbb{M}_-$, its Lagrangian density is the one fixed by <em>Noether's Theorem in Biquaternionic Form</em> and used by <em>Canonical Quantization of the Biquaternion Klein–Gordon Field</em>,</p>
 <p>$$
 \mathcal{L}=-\mathrm{Sc}\!\left[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\right]-\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right]
 =\frac{1}{c^2}|\partial\phi/\partial t|^2-|\nabla\phi|^2-\mu^2|\phi|^2,
@@ -199,7 +199,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tilde\Phi=\phi\,e_t$</td>
-<td>The central scalar field, $\phi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde Q=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$</td>
+<td>The central scalar field, $\phi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R=ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z\in\mathbb{M}_-$</td>
 </tr>
 <tr>
 <td>$\mathcal{L}=\frac{1}{c^2}|\partial\phi/\partial t|^2-|\nabla\phi|^2-\mu^2|\phi|^2$</td>
@@ -254,12 +254,12 @@ $$</p>
 <td>The De Donder–Weyl Hamiltonian of the scalar field</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

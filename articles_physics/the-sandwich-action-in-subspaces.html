@@ -112,11 +112,11 @@ $$</p>
 <h3 id="the-kernel-of-the-operator">The Kernel of the Operator</h3>
 <p>The kernel of the sandwich on the algebra is the central circle $\mathrm{U}(1)e_t$, of one real dimension, computed in <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>The Kernel on the Whole Algebra</em> and cited here, not reproved: the sandwich is blind to a central phase and to nothing else. Inside a class the central units are $\mathbb{C}^\times e_t$ on the centre, $\mathbb{R}^\times e_t$ on the two halves and on the informational sector, $i\mathbb{R}^\times e_t$ on the antiquaternion subspace and on the material sector, and none at all on the vector subspace, whose only central element is the zero element. On the unit-norm slice $N = 1$, which is where the rotors live, every class maps to its operators two to one, with fibre $\{\pm e_t\}$: that is the double cover, and it is invisible in the class as a whole, where the sandwich still distinguishes the moduli.</p>
 <h3 id="the-operators-compose-as-the-elements-do">The Operators Compose as the Elements Do</h3>
-<p><strong>Proposition.</strong> For all units $\tilde{Q}, \tilde{R}$,</p>
+<p><strong>Proposition.</strong> For all units $\tilde{Q}, \tilde Q_1$,</p>
 <p>$$
-\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}} .
+\operatorname{H}_{\tilde{Q}\tilde Q_1} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde Q_1} .
 $$</p>
-<p><strong>Proof.</strong> $\operatorname{H}_{\tilde{Q}\tilde{R}}(\tilde S) = \tilde{Q}\tilde{R}\tilde S\tilde{R}^{*}\tilde{Q}^{*} = \operatorname{H}_{\tilde{Q}}\!\left(\operatorname{H}_{\tilde{R}}(\tilde S)\right)$.</p>
+<p><strong>Proof.</strong> $\operatorname{H}_{\tilde{Q}\tilde Q_1}(\tilde S) = \tilde{Q}\tilde Q_1\tilde S\tilde Q_1^{*}\tilde{Q}^{*} = \operatorname{H}_{\tilde{Q}}\!\left(\operatorname{H}_{\tilde Q_1}(\tilde S)\right)$.</p>
 <p>The identity is the statement that the sandwich is an action of the group of units, not merely a collection of linear maps: the individual maps are not algebra automorphisms, but they compose as their elements do. The case of rotors is stated in <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>Composition of Operators</em>; the identity holds for every unit, which is what the subspace interpretation needs. It is the tool that decomposes an operator whose element is a product, and it is used twice below.</p>
 <h2 id="the-centre-the-operator-of-a-complex-scalar">The Centre: the Operator of a Complex Scalar</h2>
 <h3 id="the-element-and-its-operator">The Element and Its Operator</h3>
@@ -201,23 +201,23 @@ $$</p>
 <p>For $\vec v$ in the vector subspace the element $i\vec v$ is again in the vector subspace, and by the central rule the two elements have the same operator. The traceless Hermitian elements $i\vec w$ with $\vec w$ a real vector, which are the vector-subspace part of the informational sector, therefore act exactly as the real vectors $\vec w$, and in particular a unit imaginary vector $i\vec u$ acts as the rotation by $\pi$ about $\vec u$ even though its element is Hermitian. This is the first appearance of a phenomenon that the two sectors will show again: the sector label of an element does not fix the type of its operator.</p>
 <h2 id="the-two-halves-the-rotations">The Two Halves: the Rotations</h2>
 <h3 id="the-quaternion-subspace">The Quaternion Subspace</h3>
-<p>Let $\tilde{R}$ be a real quaternion, $\tilde{R} = a_0e_t + a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde{R}^{*} = \tilde{R}^{\natural} = |\tilde{R}|^2\tilde{R}^{-1}$, with $\langle\tilde{R}\rangle_{\natural} = \langle\tilde{R},\tilde{R}\rangle_{\natural} = |\tilde{R}|^2$ a positive real, so the central rule gives</p>
+<p>Let $\tilde Q_2$ be a real quaternion, $\tilde Q_2 = a_0e_t + a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$ with real coefficients. Its Hermitian conjugate is its quaternion conjugate, $\tilde Q_2^{*} = \tilde Q_2^{\natural} = |\tilde Q_2|^2\tilde Q_2^{-1}$, with $\langle\tilde Q_2\rangle_{\natural} = \langle\tilde Q_2,\tilde Q_2\rangle_{\natural} = |\tilde Q_2|^2$ a positive real, so the central rule gives</p>
 <p>$$
-\operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\tilde u}(\tilde S) , \qquad \tilde u = \tilde{R}/|\tilde{R}| .
+\operatorname{H}_{\tilde Q_2}(\tilde S) = \tilde Q_2\,\tilde S\,\tilde Q_2^{\natural} = |\tilde Q_2|^2\,\operatorname{H}_{\tilde u}(\tilde S) , \qquad \tilde u = \tilde Q_2/|\tilde Q_2| .
 $$</p>
-<p>A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde{R} = |\tilde{R}|(\cos\theta + \sin\theta\,\vec u)$ with $\vec u$ a real unit vector,</p>
+<p>A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde Q_2 = |\tilde Q_2|(\cos\theta + \sin\theta\,\vec u)$ with $\vec u$ a real unit vector,</p>
 <p>$$
-\operatorname{H}_{\tilde{R}}(\vec v) = |\tilde{R}|^2\Bigl(\vec v\cos2\theta + (\vec u\times\vec v)\sin2\theta + \vec u\,(\vec u\cdot\vec v)(1-\cos2\theta)\Bigr) ,
+\operatorname{H}_{\tilde Q_2}(\vec v) = |\tilde Q_2|^2\Bigl(\vec v\cos2\theta + (\vec u\times\vec v)\sin2\theta + \vec u\,(\vec u\cdot\vec v)(1-\cos2\theta)\Bigr) ,
 $$</p>
-<p>which is the rotation of the real vector part through $2\theta$ about $\vec u$, scaled by $|\tilde{R}|^2$. The operator preserves all remarkable subspaces, and the kernel on the unit-norm slice is $\{\pm e_t\}$, so the map</p>
+<p>which is the rotation of the real vector part through $2\theta$ about $\vec u$, scaled by $|\tilde Q_2|^2$. The operator preserves all remarkable subspaces, and the kernel on the unit-norm slice is $\{\pm e_t\}$, so the map</p>
 <p>$$
 \mathrm{Sp}(1)\longrightarrow SO(3) , \qquad \tilde u\longmapsto\operatorname{H}_{\tilde u} ,
 $$</p>
 <p>is the two-fold cover of the rotation group. The doubling of the angle is the doubling recorded in <em>Biquaternion Rotations and Lorentz Transformations</em>; what the subspace adds is that on $\mathbb{H}_{\mathbb{B}}$ the sandwich acts as a rotation of the whole algebra, leaving the centre, the vector subspace and the two sectors in place.</p>
 <h3 id="the-antiquaternion-subspace-gives-the-same-operators">The Antiquaternion Subspace Gives the Same Operators</h3>
-<p>Let $\tilde{Q} = i\tilde{R}$ with $\tilde{R}$ a real quaternion, the general element of the antiquaternion subspace. Since $i$ is central, the operator is that of $\tilde{R}$:</p>
+<p>Let $\tilde{Q} = i\tilde Q_2$ with $\tilde Q_2$ a real quaternion, the general element of the antiquaternion subspace. Since $i$ is central, the operator is that of $\tilde Q_2$:</p>
 <p>$$
-\operatorname{H}_{i\tilde{R}} = \operatorname{H}_{\tilde{R}} .
+\operatorname{H}_{i\tilde Q_2} = \operatorname{H}_{\tilde Q_2} .
 $$</p>
 <p>The antiquaternion subspace therefore contributes no operator that the quaternion subspace does not already contribute, and the two halves are two ways of writing one family of rotations — the operator statement of the polar article's finding that the antiquaternion carries the same rotor with the phase frozen at $\pi/2$. Each half covers the rotation group twice, since the two signs are identified, and the two halves produce the same operators, so the union of the halves covers the rotation group four times over.</p>
 <h3 id="where-the-rotations-sit">Where the Rotations Sit</h3>
@@ -238,7 +238,7 @@ $$</p>
 <p>$$
 \tilde{U} = 1.060660172\,e_t + 0.353553391\,i\,\vec e_z , \qquad \langle\tilde{U}\rangle_{\natural} = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1 ,
 $$</p>
-<p>and the four-position $\tilde{Q} = icte_0 + 0.6ct\,\vec e_z$ of a world line of velocity $0.6c$, at $ct = 1$. Then</p>
+<p>and the four-position $\tilde{R} = icte_0 + 0.6ct\,\vec e_z$ of a world line of velocity $0.6c$, at $ct = 1$. Then</p>
 <p>$$
 \operatorname{H}_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U} = 0.8\,ie_0 ,
 $$</p>
@@ -264,11 +264,11 @@ $$</p>
 $$</p>
 <p>so that $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{\vec e_z}$: the transverse plane is negated and the time axis is carried to the four-velocity of rapidity $\operatorname{arcosh}7$. The example is the exact statement that a Hermitian element of negative biquaternion norm acts as a Lorentz operator with a rotation part, not as a boost.</p>
 <h3 id="the-material-sector-gives-the-same-operators">The Material Sector Gives the Same Operators</h3>
-<p>Let $\tilde{Q}$ be an element of the material sector, $\tilde{Q}^{*} = -\tilde{Q}$, so that $\tilde{Q} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. By the central rule with $z = i$,</p>
+<p>Let $\tilde{R}$ be an element of the material sector, $\tilde{R}^{*} = -\tilde{R}$, so that $\tilde{R} = ict\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$. By the central rule with $z = i$,</p>
 <p>$$
-\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{i\tilde{Q}} , \qquad i\tilde{Q}\in\mathbb{M}_+ ,
+\operatorname{H}_{\tilde{R}} = \operatorname{H}_{i\tilde{R}} , \qquad i\tilde{R}\in\mathbb{M}_+ ,
 $$</p>
-<p>so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{Q}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\vec u$ correspond exactly to the unit spacelike four-vectors $-\vec u$ and act as the rotations by $\pi$.</p>
+<p>so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{R}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\vec u$ correspond exactly to the unit spacelike four-vectors $-\vec u$ and act as the rotations by $\pi$.</p>
 <p><strong>Example.</strong> The element of the previous example, $\tilde{Q} = \sqrt3\,e_t + 2i\,\vec e_z$, has $i\tilde{Q} = \sqrt3\,ie_0 - 2\vec e_z$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3\vec e_z$ with the same right-hand side, so the two interpretations agree element by element, as the central rule requires.</p>
 <h2 id="the-operator-dictionary">The Operator Dictionary</h2>
 <p>The remarkable subspaces, the operator each produces, and the subspace's own interpretation, in one table. The kernel column records the kernel of the operator inside the class; on the unit-norm slice it reduces to the fibre $\{\pm e_t\}$ in every class.</p>
@@ -299,14 +299,14 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{H}_{\mathbb{B}}$</td>
-<td>$\tilde{R}$ real</td>
-<td>$|\tilde{R}|^2$ times the rotation through $2\theta$</td>
+<td>$\tilde Q_2$ real</td>
+<td>$|\tilde Q_2|^2$ times the rotation through $2\theta$</td>
 <td>$\mathbb{R}^\times e_t$</td>
 <td>the rotor</td>
 </tr>
 <tr>
 <td>$i\mathbb{H}_{\mathbb{B}}$</td>
-<td>$i\tilde{R}$</td>
+<td>$i\tilde Q_2$</td>
 <td>the same rotation</td>
 <td>$i\mathbb{R}^\times e_t$</td>
 <td>the same rotor, phase frozen</td>
@@ -320,8 +320,8 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{M}_-$</td>
-<td>$\tilde{Q} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
-<td>the same family as $\mathbb{M}_+$, through $i\tilde{Q}$</td>
+<td>$\tilde{R} = ict\,e_t+x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>the same family as $\mathbb{M}_+$, through $i\tilde{R}$</td>
 <td>$i\mathbb{R}^\times e_t$</td>
 <td>the four-vectors</td>
 </tr>
@@ -343,9 +343,9 @@ $$</p>
 <h3 id="an-imaginary-unit-vector">An Imaginary Unit Vector</h3>
 <p>$i\vec u = ie_1$: the same operator as $\vec e_x$, by the central rule, so a Hermitian element of the informational sector acts as a rotation by $\pi$; the sector label does not fix the type of the operator.</p>
 <h3 id="a-unit-quaternion">A Unit Quaternion</h3>
-<p>$\tilde{R} = \cos\frac{\pi}{6}e_t + \sin\frac{\pi}{6}\vec e_z$: the sandwich gives $\operatorname{H}_{\tilde{R}}(\vec e_x) = \frac12\vec e_x + \frac{\sqrt3}{2}\vec e_y$, the rotation through $\pi/3$ about $\vec e_z$, which is twice the angle $\pi/6$ in the element. The kernel is $\{\pm e_t\}$.</p>
+<p>$\tilde Q_2 = \cos\frac{\pi}{6}e_t + \sin\frac{\pi}{6}\vec e_z$: the sandwich gives $\operatorname{H}_{\tilde Q_2}(\vec e_x) = \frac12\vec e_x + \frac{\sqrt3}{2}\vec e_y$, the rotation through $\pi/3$ about $\vec e_z$, which is twice the angle $\pi/6$ in the element. The kernel is $\{\pm e_t\}$.</p>
 <h3 id="a-central-real-quaternion">A Central Real Quaternion</h3>
-<p>$\tilde{R} = 2e_t$: the element is central, so $\operatorname{H}_{\tilde{R}} = 4\,\mathrm{id}$; the example shows that the scalar of a real quaternion is the dilation $|\tilde{R}|^2$ of its operator, and that it disappears on the unit-norm slice.</p>
+<p>$\tilde Q_2 = 2e_t$: the element is central, so $\operatorname{H}_{\tilde Q_2} = 4\,\mathrm{id}$; the example shows that the scalar of a real quaternion is the dilation $|\tilde Q_2|^2$ of its operator, and that it disappears on the unit-norm slice.</p>
 <h3 id="a-boost-rotor">A Boost Rotor</h3>
 <p>$\beta = 0.6$, $\tilde{U} = 1.060660172e_t + 0.353553391ie_3$: $\operatorname{H}_{\tilde{U}}(ie_0+0.6\vec e_z) = 0.8ie_0$, the rest-frame four-position, and the time axis of the moving world line is carried to the rest frame.</p>
 <h3 id="a-hermitian-element-of-negative-biquaternion-norm">A Hermitian Element of Negative Biquaternion Norm</h3>
@@ -356,7 +356,7 @@ $$</p>
 <p>The sandwich reads as an isometry of the form of each subspace, and the article's own interpretation is that one map gives one symmetry per subspace. Read on the split, the sandwich is the reason a change of frame cannot mix the material and the informational data: the acting element keeps the grading, so the relativity of the frame and the sharpness of the split are compatible (<em>The Material-Informational Split as a Superselection Structure in Biquaternionic Form</em>). Read on the clock, the unit-norm slice of the sandwich is the group that moves the ledger and does not move the phase, which is why the temporal interpretation of the exchange and the transformation theory of the material sector are separate.</p>
 <h2 id="summary">Summary</h2>
 <p>The sandwich, restricted to the remarkable subspaces, produces four operator classes, because a central factor multiplies the sandwich by the squared modulus of its scalar: the scalar imaginary identifies the two halves and the two sectors, so an antiquaternion acts as its real quaternion and a four-vector acts as the informational element $i$ times it.</p>
-<p>The <strong>centre</strong> contributes only the dilations by the squared modulus of the biquaternion norm. The <strong>vector subspace</strong> contributes the similarities of the interval: an element of the vector subspace has a central square, $\vec v^2 = -\langle \vec v\rangle_{\natural}e_t$, and the sandwich preserves the causal type of every element while rescaling the interval by $|\langle \vec v\rangle_{\natural}|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all remarkable subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\vec v\vec v^{*} = |\vec v|^2e_t - \vec v\times\vec v^{*}$. The <strong>two halves</strong> contribute the rotations: a real quaternion acts as $|\tilde{R}|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_t\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The <strong>two sectors</strong> contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|\langle\tilde{Q}\rangle_{\natural}|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{U}\vec u$ and act as a boost composed with the rotation by $\pi$ about $\vec u$.</p>
+<p>The <strong>centre</strong> contributes only the dilations by the squared modulus of the biquaternion norm. The <strong>vector subspace</strong> contributes the similarities of the interval: an element of the vector subspace has a central square, $\vec v^2 = -\langle \vec v\rangle_{\natural}e_t$, and the sandwich preserves the causal type of every element while rescaling the interval by $|\langle \vec v\rangle_{\natural}|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all remarkable subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\vec v\vec v^{*} = |\vec v|^2e_t - \vec v\times\vec v^{*}$. The <strong>two halves</strong> contribute the rotations: a real quaternion acts as $|\tilde Q_2|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_t\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The <strong>two sectors</strong> contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|\langle\tilde{Q}\rangle_{\natural}|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{U}\vec u$ and act as a boost composed with the rotation by $\pi$ about $\vec u$.</p>
 <p>The type of the operator is therefore decided by the class of the acting element and, inside a class, by the element's biquaternion norm: the centre dilates, the vector subspace and the halves transform isometrically or almost so, and the sectors carry the Lorentz transformations on the unit-norm slice and the similarities off it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -376,7 +376,7 @@ $$</p>
 <td>the central rule, $z$ central</td>
 </tr>
 <tr>
-<td>$\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}}$</td>
+<td>$\operatorname{H}_{\tilde{Q}\tilde Q_1} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde Q_1}$</td>
 <td>the composition law</td>
 </tr>
 <tr>
@@ -420,16 +420,16 @@ $$</p>
 <td>the Lorentz group and the rotation group reached by the sandwich</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
-<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle$</td>
+<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$</td>
 </tr>
 </tbody>
 </table></div>

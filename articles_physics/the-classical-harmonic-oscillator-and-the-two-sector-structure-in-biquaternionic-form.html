@@ -72,7 +72,7 @@ md^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2 = -m\omega^2(x\,\vec e_x+y\,\vec 
 $$</p>
 <p>In the framework the worldline is the material-sector curve</p>
 <p>$$
-\tilde{Q}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z, \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z ,
+\tilde{R}(t) = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z, \qquad (x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z) = x(t)\,\vec e_x + y(t)\,\vec e_y + z(t)\,\vec e_z ,
 $$</p>
 <p>and the equation of motion is a statement about its vector part alone. The scalar direction $ie_t$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.</p>
 <p>For the present article it is enough to take the motion one-dimensional along a fixed direction $\vec u$, so that</p>
@@ -196,7 +196,7 @@ $$</p>
 <p><strong>The two first-order equations are the sector pair.</strong> The equation of motion, written as $dx/dt = \omega\varpi$ and $d\varpi/dt = -\omega x$, is a pair of real equations, one for each sector component. The pair is coupled, and the coupling constant is the frequency. In this interpretation the two sectors do carry the two equations of motion, and the phase advance is the coupling. This is the most one can say: the sectors are the two quadratures, and the oscillator is the coupling between them.</p>
 <p>A genuinely two-oscillator structure would require two independent complex amplitudes, hence a four-real-dimensional phase space and two frequencies. That is what a two-dimensional isotropic oscillator has, and it is not the structure of the centre. The centre is one complex dimension, and the two sectors are its real and imaginary axes.</p>
 <h2 id="summary">Summary</h2>
-<p>The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{Q} = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z$ with $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.</p>
+<p>The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{R} = ic\,t\,e_t + x(t)\,\vec e_x+y(t)\,\vec e_y+z(t)\,\vec e_z$ with $d^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)/dt^2 = -\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$; the restoring force $\vec F = -m\omega^2(x\,\vec e_x+y\,\vec e_y+z\,\vec e_z)$ is a real vector in $\mathbb{M}_-$ and is central about the origin.</p>
 <p>The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element</p>
 <p>$$
 \tilde{A} = a\,e_t = \underbrace{x\,e_t}_{\in \mathbb{M}_+} + \underbrace{i\,\frac{p}{m\omega}\,e_t}_{\in \mathbb{M}_-},
@@ -250,7 +250,7 @@ $$</p>
 <td>Imaginary axis of the phase plane (momentum quadrature)</td>
 </tr>
 <tr>
-<td>$\tilde{Q} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
+<td>$\tilde{R} = ic\,t\,e_t + x\,\vec e_x+y\,\vec e_y+z\,\vec e_z$</td>
 <td>Worldline, in $\mathbb{M}_-$</td>
 </tr>
 <tr>
@@ -306,16 +306,16 @@ $$</p>
 <td>Poisson bracket; bracket conventions of the companion article</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{\natural}$</td>
-<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\langle\tilde{Q}\rangle_{\natural}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$</td>
+<td>the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
-<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle$</td>
+<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>

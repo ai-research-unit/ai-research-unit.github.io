@@ -176,19 +176,19 @@ $$</p>
 <h2 id="the-thomas-rotor">The Thomas Rotor</h2>
 <p>The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\vec u_\omega=\vec u_{\vec a\times\vec v}$ be the unit axis and $\theta_T(t)$ the accumulated angle, $d\theta_T=\omega_T\,dt$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to</p>
 <p>$$
-\frac{d\tilde r}{dt}=\vec\omega_T\times\tilde r,
+\frac{d\vec r}{dt}=\vec\omega_T\times\vec r,
 \qquad
-\tilde r=r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
+\vec r=r_\mu \vec e_\mu\in\mathbb{H}_{\mathbb{B}},
 $$</p>
 <p>and, for constant $\vec\omega_T$, the solution is the rotor conjugation</p>
 <p>$$
-\tilde r(t)=\tilde{u}_T(t)\,\tilde r(0)\,\tilde{u}_T(t)^{*},
+\vec r(t)=\tilde{u}_T(t)\,\vec r(0)\,\tilde{u}_T(t)^{*},
 \qquad
 \tilde{u}_T(t)=\exp\!\left(\frac{\theta_T(t)}{2}\,\vec u_{\omega,\mu}\vec e_\mu\right),
 $$</p>
 <p>with $\tilde{u}_T$ a unit real quaternion. The frame turns through $\theta_T$ while the rotor turns through half that angle: this is the double-cover half-angle of the algebra, the same one that appears in the Larmor rotor and in the spin-$\tfrac12$ evolution. The generator form is the commutator</p>
 <p>$$
-\frac{d\tilde r}{dt}=\tfrac{1}{2}\left[\tilde r,\tilde\omega_T\right],
+\frac{d\vec r}{dt}=\tfrac{1}{2}\left[\vec r,\tilde\omega_T\right],
 \qquad
 \tilde\omega_T=-\omega_{T,\mu}\vec e_\mu ,
 $$</p>
@@ -395,7 +395,7 @@ $$</p>
 <td>Thomas rotor (half-angle)</td>
 </tr>
 <tr>
-<td>$\tilde r=r_\mu\vec e_\mu$</td>
+<td>$\vec r=r_\mu\vec e_\mu$</td>
 <td>Material spatial vector</td>
 </tr>
 <tr>
@@ -407,12 +407,12 @@ $$</p>
 <td>Scalar part, trace; $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde{P},\tilde{H}\rangle$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle$</td>
-<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle$</td>
+<td>the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$</td>
 </tr>
 <tr>
-<td>$\langle\tilde{P},\tilde{Q}\rangle_{*}$</td>
-<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
+<td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$</td>
+<td>the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$</td>
 </tr>
 </tbody>
 </table></div>
